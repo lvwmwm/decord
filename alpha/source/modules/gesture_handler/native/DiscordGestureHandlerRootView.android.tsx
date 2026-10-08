@@ -1,12 +1,12 @@
-// Module ID: 14413
-// Function ID: 14414
+// Module ID: 14639
+// Function ID: 14640
 // Name: DiscordGestureHandlerRootView
-// Dependencies: [19, 17, 21, 558, 576, 14414, 6147, 2]
+// Dependencies: [19, 17, 21, 558, 576, 14640, 6326, 2]
 
-// Module 14413 (DiscordGestureHandlerRootView)
+// Module 14639 (DiscordGestureHandlerRootView)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import DiscordGestureHandlerRootViewNativeComponentDefault from "DiscordGestureHandlerRootViewNativeComponent" /* 14414 */;
+import DiscordGestureHandlerRootViewNativeComponentDefault from "DiscordGestureHandlerRootViewNativeComponent" /* 14640 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -18,7 +18,7 @@ let TurboModuleRegistry;
 const jsx = Fragment.jsx;
 const enforcing = TurboModuleRegistry.getEnforcing("RNGestureHandlerModule");
 const styles = StyleSheet.create({ flex: { flex: 1 } });
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiscordGestureHandlerRootView(arg0) {
   let children;
   let style;
   const obj = react2;
@@ -37,7 +37,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = style;
   cResult[2] = tmp6;
   tmp4 = tmp6;
-}) : ((arg0) => {
+}) : (function DiscordGestureHandlerRootView(arg0) {
   let children;
   let style;
   ({ children, style } = arg0);

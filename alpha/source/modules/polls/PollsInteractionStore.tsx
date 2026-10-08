@@ -1,14 +1,14 @@
-// Module ID: 11099
-// Function ID: 11100
+// Module ID: 10464
+// Function ID: 10465
 // Name: PollsInteractionStore
-// Dependencies: [1254, 1259, 558, 576, 568, 11, 2]
+// Dependencies: [1266, 1271, 558, 576, 568, 11, 2]
 // Exports: clearChannelPollState, clearPollState, getPollState, updatePollState
 
-// Module 11099 (PollsInteractionStore)
+// Module 10464 (PollsInteractionStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import react from "react" /* 576 */;
-import module_1254 from "module_1254" /* 1254 */;
+import module_1266 from "module_1266" /* 1266 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require;
 
 let closure_3 = {};
-let closure_4 = module_1254.createWithEqualityFn((arg0) => {
+let closure_4 = module_1266.createWithEqualityFn((arg0) => {
   let closure_0 = arg0;
   let obj = {
     pollsByChannelId: {},
@@ -54,7 +54,7 @@ let closure_4 = module_1254.createWithEqualityFn((arg0) => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessagePollInteractions(arg0) {
   let tmp3;
   let closure_0 = arg0;
   let obj = react;
@@ -77,7 +77,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp3 = cResult[1];
   }
   return closure_4(tmp3, shallowEqualDefault);
-}) : ((arg0) => {
+}) : (function useMessagePollInteractions(arg0) {
   let closure_0 = arg0;
   return closure_4((arg0) => {
     closure_0 = arg0;
@@ -91,7 +91,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, shallowEqualDefault);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelPollInteractions(arg0) {
   let closure_0;
   let tmp3;
   _require = arg0;
@@ -113,7 +113,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp3 = cResult[1];
   }
   return closure_4(tmp3, shallowEqualDefault);
-}) : ((arg0) => {
+}) : (function useChannelPollInteractions(arg0) {
   let closure_0 = arg0;
   return closure_4((arg0) => {
     let tmp = arg0.pollsByChannelId[closure_0];

@@ -1,37 +1,37 @@
-// Module ID: 15101
-// Function ID: 15102
+// Module ID: 15363
+// Function ID: 15364
 // Name: SettingsAppearanceThemePickerScreen
-// Dependencies: [32, 19, 17, 4703, 1238, 1194, 1193, 1195, 1196, 1096, 21, 4896, 587, 1369, 1126, 15102, 12559, 15104, 558, 576, 1484, 573, 4794, 1197, 1241, 4593, 14994, 5991, 1491, 6664, 6688, 6026, 9317, 4618, 4733, 4702, 4897, 4900, 4595, 7516, 4892, 5916, 6023, 14995, 15106, 9318, 15112, 15124, 15133, 6626, 9096, 2]
+// Dependencies: [32, 19, 17, 4897, 1250, 1206, 1205, 1207, 1208, 1096, 21, 5090, 587, 1381, 1126, 15364, 12690, 15366, 558, 576, 1496, 573, 4988, 1209, 1253, 4785, 15256, 6174, 1503, 6841, 6865, 6212, 8505, 4810, 4927, 4896, 5091, 5094, 4787, 9239, 5086, 6189, 6209, 15257, 15368, 8752, 15374, 15386, 15395, 6803, 10340, 2]
 
-// Module 15101 (SettingsAppearanceThemePickerScreen)
+// Module 15363 (SettingsAppearanceThemePickerScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import intl4 from "intl" /* 1126 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1241 */;
-import themes from "themes" /* 4593 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import timing from "timing" /* 4897 */;
-import timingPresets from "timingPresets" /* 4900 */;
-import Pressables from "Pressables" /* 5916 */;
-import ThemeDarkIcon from "ThemeDarkIcon" /* 12559 */;
-import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 14994 */;
-import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 14995 */;
-import ThemeLightIcon from "ThemeLightIcon" /* 15102 */;
-import ThemeMidnightIcon from "ThemeMidnightIcon" /* 15104 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1253 */;
+import themes from "themes" /* 4785 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import timing from "timing" /* 5091 */;
+import timingPresets from "timingPresets" /* 5094 */;
+import Pressables from "Pressables" /* 6189 */;
+import ThemeDarkIcon from "ThemeDarkIcon" /* 12690 */;
+import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 15256 */;
+import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 15257 */;
+import ThemeLightIcon from "ThemeLightIcon" /* 15364 */;
+import ThemeMidnightIcon from "ThemeMidnightIcon" /* 15366 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4703 */;
-import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1238 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1194 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
-import ThemeConstants from "ThemeConstants" /* 1196 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4897 */;
+import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1250 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1206 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
+import ThemeConstants from "ThemeConstants" /* 1208 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -537,7 +537,7 @@ function ThemePicker(defaultIndex) {
   items10[1] = c15(SafeAreaPaddingView, obj15);
   return c15(View, obj13);
 }
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedThemePicker(arg0) {
   let arr3;
   let canGoBack;
   let hasOnyxNux;
@@ -789,7 +789,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp18;
   cResult[4] = found1;
   arr3 = found1;
-}) : ((canGoBack) => {
+}) : (function ConnectedThemePicker(canGoBack) {
   let c1;
   let c3;
   let c4;

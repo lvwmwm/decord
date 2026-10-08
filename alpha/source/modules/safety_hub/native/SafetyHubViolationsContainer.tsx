@@ -1,33 +1,33 @@
-// Module ID: 14574
-// Function ID: 14575
+// Module ID: 14835
+// Function ID: 14836
 // Name: SafetyHubViolationsContainer
-// Dependencies: [32, 19, 17, 8139, 8126, 1085, 21, 4896, 587, 558, 576, 4809, 1126, 4892, 13398, 10857, 9455, 8125, 11, 14575, 8127, 5099, 11503, 1987, 11507, 504, 1252, 11505, 2]
+// Dependencies: [32, 19, 17, 5920, 5921, 1085, 21, 5090, 587, 558, 576, 5003, 1126, 5086, 13698, 10508, 7013, 5927, 11, 14836, 5922, 5940, 11495, 1999, 11499, 504, 1264, 11497, 2]
 
-// Module 14574 (SafetyHubViolationsContainer)
+// Module 14835 (SafetyHubViolationsContainer)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import WarningIcon2 from "WarningIcon" /* 4809 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8125 */;
-import SafetyHubModels from "SafetyHubModels" /* 8127 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9455 */;
-import useSafetyHubClassifications from "useSafetyHubClassifications" /* 11505 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import WarningIcon2 from "WarningIcon" /* 5003 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import SafetyHubModels from "SafetyHubModels" /* 5922 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 5927 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 7013 */;
+import useSafetyHubClassifications from "useSafetyHubClassifications" /* 11497 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SafetyHubStore from "SafetyHubStore" /* 8139 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8126 */;
+import SafetyHubStore from "SafetyHubStore" /* 5920 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 5921 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let dependencyMap, importDefault, is_dsa_eligible, timestamp;
+let dependencyMap, importDefault, is_dsa_eligible, trackResult;
 
 let c9;
 let closure_12;
@@ -50,7 +50,6 @@ let size1;
 let unpackModuleId;
 function ClassificationDetail(classification) {
   let items2;
-  let items3;
   let obj4;
   let obj5;
   let tmp12;
@@ -123,12 +122,11 @@ function ClassificationDetail(classification) {
     onPress() {
       const obj = ModalActionCreatorsDefault;
       const obj2 = { classificationId: id, source: metroImportAll.StandingTab };
-      obj.pushLazy(asyncRequire(11503, dependencyMap.paths), obj2);
+      obj.pushLazy(asyncRequire(11495, dependencyMap.paths), obj2);
     },
     children: tmp12(closure_6, obj5)
   };
-  obj5 = { style: items2, children: items3 };
-  items2 = [tmp.detailContainerInner];
+  obj5 = { style: tmp.detailContainerInner, children: items2 };
   tmp12 = closure_12;
   tmp2Result = tmp2(guild_metadata[16]);
   if (isNewClassification) {
@@ -137,7 +135,7 @@ function ClassificationDetail(classification) {
     const obj6 = { timestamp: extractTimestampResult };
     tmp8Result = tmp8(closure_18, obj6);
   }
-  items3 = [tmp8Result, tmp8(tmp5(tmp3[13]).Text, { variant: "heading-md/normal", children: memo })];
+  items2 = [tmp8Result, tmp8(tmp5(tmp3[13]).Text, { variant: "heading-md/normal", children: memo })];
   return closure_11(closure_6, obj3);
 }
 ({ Pressable: hasOwnProperty, View: metroRequire } = react_native);
@@ -161,89 +159,61 @@ size = { height: 1, width: "100%", backgroundColor: nativeDefault.colors.BORDER_
 size1 = { display: "flex", alignItems: "center", justifyContent: "center", borderBottomEndRadius: nativeDefault.radii.xs, borderBottomStartRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, height: 29, width: 207 };
 let closure_14 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubViolationsHeader(arg0) {
   let ICON_MUTED;
   let count;
-  let items3;
-  let items4;
-  let items5;
+  let items;
+  let items1;
   let onClick;
   let opened;
   let status;
-  let tmp10;
-  let tmp5;
-  let tmp6;
-  let tmp9;
+  let tmp7;
+  let tmp8;
   const obj = react2;
-  const cResult = obj.c(33);
+  const cResult = obj.c(27);
   ({ count, onClick, opened, status } = arg0);
   const tmp4 = closure_14();
-  if (cResult[0] !== tmp4.header) {
-    const items = [tmp4.header];
-    cResult[0] = tmp4.header;
-    cResult[1] = items;
-    tmp5 = items;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] !== tmp4.iconBackground) {
-    const items1 = [tmp4.iconBackground];
-    cResult[2] = tmp4.iconBackground;
-    cResult[3] = items1;
-    tmp6 = items1;
-  } else {
-    tmp6 = cResult[3];
-  }
   const colors = nativeDefault.colors;
   if ("active" === status) {
     ICON_MUTED = colors.INTERACTIVE_TEXT_DEFAULT;
-    tmp9 = tmp8;
+    tmp7 = tmp6;
   } else {
     ICON_MUTED = colors.ICON_MUTED;
-    tmp9 = tmp8;
+    tmp7 = tmp6;
   }
-  if (cResult[4] !== ICON_MUTED) {
+  if (cResult[0] !== ICON_MUTED) {
     const obj2 = { color: ICON_MUTED, size: "xs" };
-    const tmp12 = unpackModuleId(WarningIcon2.WarningIcon, obj2);
-    cResult[4] = ICON_MUTED;
-    cResult[5] = tmp12;
-    tmp10 = tmp12;
+    const tmp10 = unpackModuleId(WarningIcon2.WarningIcon, obj2);
+    cResult[0] = ICON_MUTED;
+    cResult[1] = tmp10;
+    tmp8 = tmp10;
   } else {
-    tmp10 = cResult[5];
+    tmp8 = cResult[1];
   }
-  if (cResult[6] === tmp6) {
-    let tmp13;
-    let tmp15;
+  if (cResult[2] === tmp4.iconBackground) {
+    let tmp11;
     let formatToPlainStringResult;
-    if (cResult[7] === tmp10) {
-      tmp13 = cResult[8];
+    if (cResult[3] === tmp8) {
+      tmp11 = cResult[4];
     }
-    if (cResult[9] !== tmp4.headerTextContainer) {
-      const items2 = [tmp4.headerTextContainer];
-      cResult[9] = tmp4.headerTextContainer;
-      cResult[10] = items2;
-      tmp15 = items2;
-    } else {
-      tmp15 = cResult[10];
-    }
-    if (cResult[11] === count) {
-      let tmp16;
+    if (cResult[5] === count) {
+      let tmp13;
+      let tmp15;
       let tmp18;
-      let tmp21;
-      let tmp23;
-      if (cResult[12] === status) {
-        tmp16 = cResult[13];
+      let tmp20;
+      if (cResult[6] === status) {
+        tmp13 = cResult[7];
       }
-      if (cResult[14] !== tmp16) {
-        const obj3 = { variant: "heading-sm/semibold", children: tmp16 };
-        const tmp20 = unpackModuleId(Text_Text.Text, obj3);
-        cResult[14] = tmp16;
-        cResult[15] = tmp20;
-        tmp18 = tmp20;
+      if (cResult[8] !== tmp13) {
+        const obj3 = { variant: "heading-sm/semibold", children: tmp13 };
+        const tmp17 = unpackModuleId(Text_Text.Text, obj3);
+        cResult[8] = tmp13;
+        cResult[9] = tmp17;
+        tmp15 = tmp17;
       } else {
-        tmp18 = cResult[15];
+        tmp15 = cResult[9];
       }
-      if (cResult[16] !== status) {
+      if (cResult[10] !== status) {
         let stringResult;
         const intl2 = tmp(1126).intl;
         const string = intl2.string;
@@ -253,80 +223,79 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         } else {
           stringResult = string(t2.SzGV0g);
         }
-        cResult[16] = status;
-        cResult[17] = stringResult;
-        tmp21 = stringResult;
+        cResult[10] = status;
+        cResult[11] = stringResult;
+        tmp18 = stringResult;
       } else {
-        tmp21 = cResult[17];
+        tmp18 = cResult[11];
       }
-      if (cResult[18] !== tmp21) {
-        const obj4 = { variant: "text-xxs/normal", color: "text-muted", children: tmp21 };
-        const tmp25 = unpackModuleId(Text_Text.Text, obj4);
-        cResult[18] = tmp21;
-        cResult[19] = tmp25;
-        tmp23 = tmp25;
+      if (cResult[12] !== tmp18) {
+        const obj4 = { variant: "text-xxs/normal", color: "text-muted", children: tmp18 };
+        const tmp22 = unpackModuleId(Text_Text.Text, obj4);
+        cResult[12] = tmp18;
+        cResult[13] = tmp22;
+        tmp20 = tmp22;
       } else {
-        tmp23 = cResult[19];
+        tmp20 = cResult[13];
       }
-      if (cResult[20] === tmp23) {
-        if (cResult[21] === tmp15) {
-          let tmp26;
+      if (cResult[14] === tmp4.headerTextContainer) {
+        if (cResult[15] === tmp15) {
+          let tmp23;
           let ChevronSmallDownIcon;
-          if (cResult[22] === tmp18) {
-            tmp26 = cResult[23];
+          if (cResult[16] === tmp20) {
+            tmp23 = cResult[17];
           }
-          if (cResult[24] === opened) {
-            let tmp30;
-            if (cResult[25] === tmp4.chevron) {
-              tmp30 = cResult[26];
+          if (cResult[18] === opened) {
+            let tmp27;
+            if (cResult[19] === tmp4.chevron) {
+              tmp27 = cResult[20];
             }
-            if (cResult[27] === onClick) {
-              if (cResult[28] === tmp5) {
-                if (cResult[29] === tmp26) {
-                  if (cResult[30] === tmp30) {
-                    let tmp33;
-                    if (cResult[31] === tmp13) {
-                      tmp33 = cResult[32];
+            if (cResult[21] === onClick) {
+              if (cResult[22] === tmp4.header) {
+                if (cResult[23] === tmp11) {
+                  if (cResult[24] === tmp23) {
+                    let tmp30;
+                    if (cResult[25] === tmp27) {
+                      tmp30 = cResult[26];
                     }
-                    return tmp33;
+                    return tmp30;
                   }
                 }
               }
             }
-            const obj5 = { onPress: onClick, style: tmp5, children: items3 };
-            items3 = [tmp13, tmp26, tmp30];
-            const tmp35 = closure_12(tmp9(9455), obj5);
-            cResult[27] = onClick;
-            cResult[28] = tmp5;
-            cResult[29] = tmp26;
-            cResult[30] = tmp30;
-            cResult[31] = tmp13;
-            cResult[32] = tmp35;
-            tmp33 = tmp35;
+            const obj5 = { onPress: onClick, style: tmp4.header, children: items };
+            items = [tmp11, tmp23, tmp27];
+            const tmp32 = closure_12(tmp7(7013), obj5);
+            cResult[21] = onClick;
+            cResult[22] = tmp4.header;
+            cResult[23] = tmp11;
+            cResult[24] = tmp23;
+            cResult[25] = tmp27;
+            cResult[26] = tmp32;
+            tmp30 = tmp32;
           }
-          const tmp31 = unpackModuleId;
+          const tmp28 = unpackModuleId;
           if (opened) {
-            ChevronSmallDownIcon = tmp(13398).ChevronSmallUpIcon;
+            ChevronSmallDownIcon = tmp(13698).ChevronSmallUpIcon;
           } else {
-            ChevronSmallDownIcon = tmp(10857).ChevronSmallDownIcon;
+            ChevronSmallDownIcon = tmp(10508).ChevronSmallDownIcon;
           }
-          const obj6 = { size: "md", style: items4 };
-          items4 = [tmp4.chevron];
-          const tmp31Result = tmp31(ChevronSmallDownIcon, obj6);
-          cResult[24] = opened;
-          cResult[25] = tmp4.chevron;
-          cResult[26] = tmp31Result;
-          tmp30 = tmp31Result;
+          const obj6 = { size: "md", style: tmp4.chevron };
+          const tmp28Result = tmp28(ChevronSmallDownIcon, obj6);
+          cResult[18] = opened;
+          cResult[19] = tmp4.chevron;
+          cResult[20] = tmp28Result;
+          tmp27 = tmp28Result;
         }
       }
-      const obj7 = { style: tmp15, children: items5 };
-      items5 = [tmp18, tmp23];
-      const tmp29 = closure_12(metroRequire, obj7);
-      cResult[20] = tmp23;
-      cResult[21] = tmp15;
-      cResult[22] = tmp18;
-      cResult[23] = tmp29;
-      tmp26 = tmp29;
+      const obj7 = { style: tmp4.headerTextContainer, children: items1 };
+      items1 = [tmp15, tmp20];
+      const tmp26 = closure_12(metroRequire, obj7);
+      cResult[14] = tmp4.headerTextContainer;
+      cResult[15] = tmp15;
+      cResult[16] = tmp20;
+      cResult[17] = tmp26;
+      tmp23 = tmp26;
     }
     const intl = tmp(1126).intl;
     const formatToPlainString = intl.formatToPlainString;
@@ -340,26 +309,23 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj9 = { count: count.toString() };
       formatToPlainStringResult = formatToPlainString(fZAHBT, obj9);
     }
-    cResult[11] = count;
-    cResult[12] = status;
-    cResult[13] = formatToPlainStringResult;
-    tmp16 = formatToPlainStringResult;
+    cResult[5] = count;
+    cResult[6] = status;
+    cResult[7] = formatToPlainStringResult;
+    tmp13 = formatToPlainStringResult;
   }
-  const tmp14 = unpackModuleId(metroRequire, { style: tmp6, children: tmp10 });
-  cResult[6] = tmp6;
-  cResult[7] = tmp10;
-  cResult[8] = tmp14;
-  tmp13 = tmp14;
-}) : ((count) => {
+  const obj10 = { style: tmp4.iconBackground, children: tmp8 };
+  const tmp12 = unpackModuleId(metroRequire, obj10);
+  cResult[2] = tmp4.iconBackground;
+  cResult[3] = tmp8;
+  cResult[4] = tmp12;
+  tmp11 = tmp12;
+}) : (function SafetyHubViolationsHeader(count) {
   let ChevronSmallDownIcon;
   let WarningIcon;
   let formatToPlainStringResult;
   let items;
   let items1;
-  let items2;
-  let items3;
-  let items4;
-  let items5;
   let obj3;
   let onClick;
   let opened;
@@ -367,18 +333,15 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let stringResult;
   ({ onClick, opened, status } = count);
   const tmp = closure_14();
-  const obj = { onPress: onClick, style: items, children: items2 };
-  items = [tmp.header];
-  const obj2 = { style: items1, children: unpackModuleId(WarningIcon, obj3) };
-  items1 = [tmp.iconBackground];
+  const obj = { onPress: onClick, style: tmp.header, children: items };
+  const obj2 = { style: tmp.iconBackground, children: unpackModuleId(WarningIcon, obj3) };
   const tmp4 = TouchableHitBoxDefault;
   WarningIcon = WarningIcon2.WarningIcon;
   const colors = nativeDefault.colors;
   obj3 = { color: "active" === status ? colors.INTERACTIVE_TEXT_DEFAULT : colors.ICON_MUTED, size: "xs" };
-  items2 = [unpackModuleId(metroRequire, obj2), , ];
-  const obj4 = { style: items3, children: items4 };
-  items3 = [tmp.headerTextContainer];
-  const Text = tmp7(4892).Text;
+  items = [unpackModuleId(metroRequire, obj2), , ];
+  const obj4 = { style: tmp.headerTextContainer, children: items1 };
+  const Text = tmp7(5086).Text;
   const intl = tmp7(1126).intl;
   const formatToPlainString = intl.formatToPlainString;
   const t = tmp7(1126).t;
@@ -391,8 +354,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj6 = { count: count.count.toString() };
     formatToPlainStringResult = formatToPlainString(fZAHBT, obj6);
   }
-  items4 = [unpackModuleId(Text, { variant: "heading-sm/semibold", children: formatToPlainStringResult }), ];
-  const Text2 = tmp7(4892).Text;
+  items1 = [unpackModuleId(Text, { variant: "heading-sm/semibold", children: formatToPlainStringResult }), ];
+  const Text2 = tmp7(5086).Text;
   const intl2 = tmp7(1126).intl;
   const string = intl2.string;
   const t2 = tmp7(1126).t;
@@ -401,137 +364,114 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     stringResult = string(t2.SzGV0g);
   }
-  items4[1] = unpackModuleId(Text2, { variant: "text-xxs/normal", color: "text-muted", children: stringResult });
-  items2[1] = closure_12(metroRequire, obj4);
+  items1[1] = unpackModuleId(Text2, { variant: "text-xxs/normal", color: "text-muted", children: stringResult });
+  items[1] = closure_12(metroRequire, obj4);
   if (opened) {
-    ChevronSmallDownIcon = tmp7(13398).ChevronSmallUpIcon;
+    ChevronSmallDownIcon = tmp7(13698).ChevronSmallUpIcon;
   } else {
-    ChevronSmallDownIcon = tmp7(10857).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp7(10508).ChevronSmallDownIcon;
   }
-  const obj7 = { size: "md", style: items5 };
-  items5 = [tmp.chevron];
-  items2[2] = unpackModuleId(ChevronSmallDownIcon, obj7);
+  const obj7 = { size: "md", style: tmp.chevron };
+  items[2] = unpackModuleId(ChevronSmallDownIcon, obj7);
   return closure_12(tmp4, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  let intl;
-  let intl2;
-  let items1;
-  let tmp12;
-  let tmp5;
-  let tmp6;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(6);
-  const tmp4 = closure_14();
-  if (cResult[0] !== tmp4.emptyState) {
-    const items = [tmp4.emptyState];
-    cResult[0] = tmp4.emptyState;
-    cResult[1] = items;
-    tmp5 = items;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { variant: "heading-sm/extrabold", children: intl.string(intl4.t.reLFaV) };
-    const Text = tmp(4892).Text;
-    intl = tmp(1126).intl;
-    const tmp8 = unpackModuleId(Text, obj2);
-    cResult[2] = tmp8;
-    tmp6 = tmp8;
-  } else {
-    tmp6 = cResult[2];
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { variant: "text-xs/normal", children: intl2.string(intl4.t.ERdH1o) };
-    const Text2 = tmp(4892).Text;
-    intl2 = tmp(1126).intl;
-    const tmp11 = unpackModuleId(Text2, obj3);
-    cResult[3] = tmp11;
-    tmp9 = tmp11;
-  } else {
-    tmp9 = cResult[3];
-  }
-  if (cResult[4] !== tmp5) {
-    const obj4 = { style: tmp5, children: items1 };
-    items1 = [tmp6, tmp9];
-    const tmp15 = closure_12(metroRequire, obj4);
-    cResult[4] = tmp5;
-    cResult[5] = tmp15;
-    tmp12 = tmp15;
-  } else {
-    tmp12 = cResult[5];
-  }
-  return tmp12;
-}) : (() => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyActiveState() {
+  let first;
   let intl;
   let intl2;
   let items;
-  let items1;
-  const obj = { style: items, children: items1 };
-  items = [closure_14().emptyState];
+  let tmp11;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(4);
+  const tmp4 = closure_14();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { variant: "heading-sm/extrabold", children: intl.string(intl4.t.reLFaV) };
+    const Text = tmp(5086).Text;
+    intl = tmp(1126).intl;
+    const tmp7 = unpackModuleId(Text, obj2);
+    cResult[0] = tmp7;
+    first = tmp7;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { variant: "text-xs/normal", children: intl2.string(intl4.t.ERdH1o) };
+    const Text2 = tmp(5086).Text;
+    intl2 = tmp(1126).intl;
+    const tmp10 = unpackModuleId(Text2, obj3);
+    cResult[1] = tmp10;
+    tmp8 = tmp10;
+  } else {
+    tmp8 = cResult[1];
+  }
+  if (cResult[2] !== tmp4.emptyState) {
+    const obj4 = { style: tmp4.emptyState, children: items };
+    items = [first, tmp8];
+    const tmp14 = closure_12(metroRequire, obj4);
+    cResult[2] = tmp4.emptyState;
+    cResult[3] = tmp14;
+    tmp11 = tmp14;
+  } else {
+    tmp11 = cResult[3];
+  }
+  return tmp11;
+}) : (function EmptyActiveState() {
+  let intl;
+  let intl2;
+  let items;
+  const obj = { style: closure_14().emptyState, children: items };
   const obj2 = { variant: "heading-sm/extrabold", children: intl.string(intl4.t.reLFaV) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
-  items1 = [unpackModuleId(Text, obj2), ];
+  items = [unpackModuleId(Text, obj2), ];
   const obj3 = { variant: "text-xs/normal", children: intl2.string(intl4.t.ERdH1o) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
-  items1[1] = unpackModuleId(Text2, obj3);
+  items[1] = unpackModuleId(Text2, obj3);
   return closure_12(metroRequire, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyExpiredState() {
+  let first;
   let intl;
-  let tmp5;
-  let tmp6;
-  let tmp9;
+  let tmp8;
   const obj = react2;
-  const cResult = obj.c(5);
+  const cResult = obj.c(3);
   const tmp4 = closure_14();
-  if (cResult[0] !== tmp4.emptyState) {
-    const items = [tmp4.emptyState];
-    cResult[0] = tmp4.emptyState;
-    cResult[1] = items;
-    tmp5 = items;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "text-xs/normal", children: intl.string(intl4.t.RV3AXf) };
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     intl = tmp(1126).intl;
-    const tmp8 = unpackModuleId(Text, obj2);
-    cResult[2] = tmp8;
-    tmp6 = tmp8;
+    const tmp7 = unpackModuleId(Text, obj2);
+    cResult[0] = tmp7;
+    first = tmp7;
   } else {
-    tmp6 = cResult[2];
+    first = cResult[0];
   }
-  if (cResult[3] !== tmp5) {
-    const obj3 = { style: tmp5, children: tmp6 };
-    const tmp12 = unpackModuleId(metroRequire, obj3);
-    cResult[3] = tmp5;
-    cResult[4] = tmp12;
-    tmp9 = tmp12;
+  if (cResult[1] !== tmp4.emptyState) {
+    const obj3 = { style: tmp4.emptyState, children: first };
+    const tmp11 = unpackModuleId(metroRequire, obj3);
+    cResult[1] = tmp4.emptyState;
+    cResult[2] = tmp11;
+    tmp8 = tmp11;
   } else {
-    tmp9 = cResult[4];
+    tmp8 = cResult[2];
   }
-  return tmp9;
-}) : (() => {
+  return tmp8;
+}) : (function EmptyExpiredState() {
   let Text;
   let intl;
-  let items;
   let obj2;
-  const obj = { style: items, children: unpackModuleId(Text, obj2) };
-  items = [closure_14().emptyState];
+  const obj = { style: closure_14().emptyState, children: unpackModuleId(Text, obj2) };
   obj2 = { variant: "text-xs/normal", children: intl.string(intl4.t.RV3AXf) };
   Text = Text_Text.Text;
   intl = intl4.intl;
   return unpackModuleId(metroRequire, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((timestamp) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function RelativeIncidentTime(timestamp) {
   let tmp5;
   let tmp7;
   const obj = react2;
@@ -569,7 +509,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((timestamp) => 
   cResult[5] = tmp7;
   cResult[6] = tmp11;
   tmp10 = tmp11;
-}) : ((timestamp) => {
+}) : (function RelativeIncidentTime(timestamp) {
   let Text;
   let obj2;
   let obj3;
@@ -581,7 +521,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((timestamp) => 
   return unpackModuleId(metroRequire, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewBadge() {
   const obj = react2;
   const cResult = obj.c(9);
   const tmp4 = closure_14();
@@ -631,7 +571,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = tmp4.incidentDateNew;
   cResult[2] = items;
   tmp5 = items;
-}) : (() => {
+}) : (function NewBadge() {
   let Text;
   let intl;
   let items;
@@ -646,11 +586,10 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return unpackModuleId(metroRequire, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubViolationsContainer(arg0) {
   let classifications;
   let closure_1;
   let isDsaEligible;
-  let items2;
   let opened;
   let safetyHubAccountStanding;
   let stateFromStores;
@@ -660,7 +599,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp8;
   let tmp = opened;
   let obj = opened(576);
-  const cResult = obj.c(31);
+  const cResult = obj.c(29);
   ({ status, classifications } = arg0);
   const tmp4 = closure_14();
   const tmp5 = safetyHubAccountStanding(stateFromStores.useState(false), 2);
@@ -668,12 +607,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   importDefault = tmp5[1];
   [tmp8, dependencyMap] = safetyHubAccountStanding(stateFromStores.useState(3), 2);
   const tmp7 = safetyHubAccountStanding(stateFromStores.useState(3), 2);
-  const obj3 = opened(11507);
+  const obj3 = opened(11499);
   safetyHubAccountStanding = obj3.useSafetyHubAccountStanding();
   const obj2 = stateFromStores;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SafetyHubStore];
-    const fn = function x() {
+    const fn = function y() {
       return isDsaEligible.getIsDsaEligible();
     };
     cResult[0] = items;
@@ -696,8 +635,6 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (cResult[7] === stateFromStores) {
           let tmp16;
           let tmp17;
-          let tmp19;
-          let tmp20;
           if (cResult[8] === opened) {
             tmp16 = cResult[9];
             tmp17 = cResult[10];
@@ -706,163 +643,121 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const num9 = 3;
           class L {
             constructor() {
-              const tmp = first;
+              tmp = closure_0;
               if (tmp) {
-                const obj = { action: React4.ViewViolationsDropdown, account_standing: safetyHubAccountStanding.state, classification_ids: closure_5.map((id) => Number(id.id)), source: metroImportAll.StandingTab, is_violative_content_shown: false, is_dsa_eligible: stateFromStores };
-                const track = AnalyticsUtilsDefault.track;
-                const SAFETY_HUB_ACTION = AnalyticEvents.SAFETY_HUB_ACTION;
-                AnalyticsUtilsDefault;
-                track(SAFETY_HUB_ACTION, obj);
+                tmp2 = closure_1;
+                tmp3 = closure_2;
+                tmp4 = closure_1(closure_2[26]);
+                tmp5 = AnalyticEvents;
+                obj = { action: null, account_standing: null, classification_ids: null, source: null, is_violative_content_shown: false, is_dsa_eligible: null };
+                tmp6 = SafetyHubAnalyticsActions;
+                obj.action = SafetyHubAnalyticsActions.ViewViolationsDropdown;
+                tmp7 = closure_3;
+                obj.account_standing = closure_3.state;
+                tmp8 = closure_5;
+                track = tmp4.track;
+                SAFETY_HUB_ACTION = AnalyticEvents.SAFETY_HUB_ACTION;
+                obj.classification_ids = closure_5.map((id) => Number(id.id));
+                tmp9 = closure_8;
+                obj.source = closure_8.StandingTab;
+                tmp10 = closure_4;
+                obj.is_dsa_eligible = closure_4;
+                trackResult = track(SAFETY_HUB_ACTION, obj);
               }
+              return;
             }
-          }
-          if (cResult[11] !== tmp4.container) {
-            const items1 = [tmp4.container];
-            class L {
-              constructor() {
-                const tmp = first;
-                if (tmp) {
-                  const obj = { action: React4.ViewViolationsDropdown, account_standing: safetyHubAccountStanding.state, classification_ids: closure_5.map((id) => Number(id.id)), source: metroImportAll.StandingTab, is_violative_content_shown: false, is_dsa_eligible: stateFromStores };
-                  const track = AnalyticsUtilsDefault.track;
-                  const SAFETY_HUB_ACTION = AnalyticEvents.SAFETY_HUB_ACTION;
-                  AnalyticsUtilsDefault;
-                  track(SAFETY_HUB_ACTION, obj);
-                }
-              }
-            }
-            cResult[12] = items1;
-            tmp19 = items1;
-          } else {
-            tmp19 = cResult[12];
           }
           const _Symbol = Symbol;
-          if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-            const fn2 = function z() {
-              return closure_1((arg0) => !arg0);
-            };
-            cResult[13] = fn2;
+          if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+            class G {
+              constructor() {
+                return closure_1((arg0) => !arg0);
+              }
+            }
+            cResult[11] = G;
             class L {
               constructor() {
-                const tmp = first;
+                tmp = closure_0;
                 if (tmp) {
-                  const obj = { action: React4.ViewViolationsDropdown, account_standing: safetyHubAccountStanding.state, classification_ids: closure_5.map((id) => Number(id.id)), source: metroImportAll.StandingTab, is_violative_content_shown: false, is_dsa_eligible: stateFromStores };
-                  const track = AnalyticsUtilsDefault.track;
-                  const SAFETY_HUB_ACTION = AnalyticEvents.SAFETY_HUB_ACTION;
-                  AnalyticsUtilsDefault;
-                  track(SAFETY_HUB_ACTION, obj);
+                  tmp2 = closure_1;
+                  tmp3 = closure_2;
+                  tmp4 = closure_1(closure_2[26]);
+                  tmp5 = AnalyticEvents;
+                  obj = { action: null, account_standing: null, classification_ids: null, source: null, is_violative_content_shown: false, is_dsa_eligible: null };
+                  tmp6 = SafetyHubAnalyticsActions;
+                  obj.action = SafetyHubAnalyticsActions.ViewViolationsDropdown;
+                  tmp7 = closure_3;
+                  obj.account_standing = closure_3.state;
+                  tmp8 = closure_5;
+                  track = tmp4.track;
+                  SAFETY_HUB_ACTION = AnalyticEvents.SAFETY_HUB_ACTION;
+                  obj.classification_ids = closure_5.map((id) => Number(id.id));
+                  tmp9 = closure_8;
+                  obj.source = closure_8.StandingTab;
+                  tmp10 = closure_4;
+                  obj.is_dsa_eligible = closure_4;
+                  trackResult = track(SAFETY_HUB_ACTION, obj);
                 }
+                return;
               }
             }
           } else {
-            tmp20 = cResult[13];
-          }
-          if (cResult[14] === classifications.length) {
-            if (cResult[15] === opened) {
-              let tmp21;
-              if (cResult[16] === status) {
-                tmp21 = cResult[17];
+            class G {
+              constructor() {
+                return closure_1((arg0) => !arg0);
               }
-              if (cResult[18] === classifications.length) {
-                if (cResult[19] === tmp14) {
-                  if (cResult[20] === num9) {
-                    if (cResult[21] === opened) {
-                      if (cResult[22] === status) {
-                        if (cResult[23] === tmp4.moreButton) {
-                          if (cResult[24] === tmp4.moreButtonContainer) {
-                            let tmp25;
-                            if (cResult[25] === tmp4.separator) {
-                              tmp25 = cResult[26];
-                            }
-                            if (cResult[27] === tmp19) {
-                              if (cResult[28] === tmp21) {
-                                let tmp27;
-                                if (cResult[29] === tmp25) {
-                                  tmp27 = cResult[30];
-                                }
-                                return tmp27;
-                              }
-                            }
-                            class L {
-                              constructor() {
-                                const tmp = first;
-                                if (tmp) {
-                                  const obj = { action: React4.ViewViolationsDropdown, account_standing: safetyHubAccountStanding.state, classification_ids: closure_5.map((id) => Number(id.id)), source: metroImportAll.StandingTab, is_violative_content_shown: false, is_dsa_eligible: stateFromStores };
-                                  const track = AnalyticsUtilsDefault.track;
-                                  const SAFETY_HUB_ACTION = AnalyticEvents.SAFETY_HUB_ACTION;
-                                  AnalyticsUtilsDefault;
-                                  track(SAFETY_HUB_ACTION, obj);
-                                }
-                              }
-                            }
-                            const obj4 = { style: tmp19, children: items2 };
-                            items2 = [tmp21, tmp25];
-                            const tmp29 = closure_12(num9, obj4);
-                            cResult[27] = tmp19;
-                            cResult[28] = tmp21;
-                            cResult[29] = tmp25;
-                            cResult[30] = tmp29;
-                            tmp27 = tmp29;
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-              class L {
-                constructor() {
-                  const tmp = first;
-                  if (tmp) {
-                    const obj = { action: React4.ViewViolationsDropdown, account_standing: safetyHubAccountStanding.state, classification_ids: closure_5.map((id) => Number(id.id)), source: metroImportAll.StandingTab, is_violative_content_shown: false, is_dsa_eligible: stateFromStores };
-                    const track = AnalyticsUtilsDefault.track;
-                    const SAFETY_HUB_ACTION = AnalyticEvents.SAFETY_HUB_ACTION;
-                    AnalyticsUtilsDefault;
-                    track(SAFETY_HUB_ACTION, obj);
-                  }
-                }
-              }
-              cResult[18] = classifications.length;
-              cResult[19] = tmp14;
-              cResult[20] = num9;
-              cResult[21] = opened;
-              cResult[22] = status;
-              cResult[23] = tmp4.moreButton;
-              cResult[24] = tmp4.moreButtonContainer;
-              cResult[25] = tmp4.separator;
-              cResult[26] = opened;
-              tmp25 = tmp26;
             }
           }
-          const obj5 = { status, onClick: tmp20, opened, count: classifications.length };
-          const tmp24 = closure_11(closure_15, obj5);
-          cResult[14] = classifications.length;
-          cResult[15] = opened;
-          cResult[16] = status;
-          cResult[17] = tmp24;
-          tmp21 = tmp24;
+          if (cResult[12] === classifications.length) {
+            class G {
+              constructor() {
+                return closure_1((arg0) => !arg0);
+              }
+            }
+          }
+          const obj4 = { status, onClick: tmp19, opened, count: classifications.length };
+          cResult[12] = classifications.length;
+          cResult[13] = opened;
+          cResult[14] = status;
+          cResult[15] = closure_11(closure_15, obj4);
+          const tmp23 = closure_11(closure_15, obj4);
         }
       }
     }
     class L {
       constructor() {
-        const tmp = first;
+        tmp = closure_0;
         if (tmp) {
-          const obj = { action: React4.ViewViolationsDropdown, account_standing: safetyHubAccountStanding.state, classification_ids: closure_5.map((id) => Number(id.id)), source: metroImportAll.StandingTab, is_violative_content_shown: false, is_dsa_eligible: stateFromStores };
-          const track = AnalyticsUtilsDefault.track;
-          const SAFETY_HUB_ACTION = AnalyticEvents.SAFETY_HUB_ACTION;
-          AnalyticsUtilsDefault;
-          track(SAFETY_HUB_ACTION, obj);
+          tmp2 = closure_1;
+          tmp3 = closure_2;
+          tmp4 = closure_1(closure_2[26]);
+          tmp5 = AnalyticEvents;
+          obj = { action: null, account_standing: null, classification_ids: null, source: null, is_violative_content_shown: false, is_dsa_eligible: null };
+          tmp6 = SafetyHubAnalyticsActions;
+          obj.action = SafetyHubAnalyticsActions.ViewViolationsDropdown;
+          tmp7 = closure_3;
+          obj.account_standing = closure_3.state;
+          tmp8 = closure_5;
+          track = tmp4.track;
+          SAFETY_HUB_ACTION = AnalyticEvents.SAFETY_HUB_ACTION;
+          obj.classification_ids = closure_5.map((id) => Number(id.id));
+          tmp9 = closure_8;
+          obj.source = closure_8.StandingTab;
+          tmp10 = closure_4;
+          obj.is_dsa_eligible = closure_4;
+          trackResult = track(SAFETY_HUB_ACTION, obj);
         }
+        return;
       }
     }
-    const items3 = [opened, safetyHubAccountStanding.state, tmp14, stateFromStores];
+    const items1 = [opened, safetyHubAccountStanding.state, tmp14, stateFromStores];
     cResult[5] = safetyHubAccountStanding.state;
     cResult[6] = tmp14;
     cResult[7] = stateFromStores;
     cResult[8] = opened;
     cResult[9] = L;
-    cResult[10] = items3;
-    tmp17 = items3;
+    cResult[10] = items1;
+    tmp17 = items1;
     tmp16 = L;
   }
   const substr = classifications.slice(0, tmp8);
@@ -870,24 +765,19 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp8;
   cResult[4] = substr;
   tmp14 = substr;
-}) : ((arg0) => {
+}) : (function SafetyHubViolationsContainer(arg0) {
   let Text;
   let classifications;
   let closure_2;
   let closure_4;
   let intl;
-  let items10;
   let items3;
-  let items4;
   let items5;
-  let items7;
-  let items8;
-  let items9;
   let obj10;
   let obj11;
   let obj9;
   let status;
-  const f117457 = (classification) => {
+  const f118543 = (classification) => {
     const obj = { classification };
     return closure_1_11(ClassificationDetail, obj, classification.id);
   };
@@ -902,7 +792,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp4 = first1(is_dsa_eligible.useState(3), 2);
   first1 = tmp4[0];
   is_dsa_eligible = tmp4[1];
-  let obj = classifications(11507);
+  let obj = classifications(11499);
   const safetyHubAccountStanding = obj.useSafetyHubAccountStanding();
   const items = [memo];
   const obj2 = classifications(504);
@@ -924,9 +814,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (classifications.length - memo.length <= 3) {
     num = classifications.length - memo.length;
   }
-  const obj3 = { style: items3, children: items4 };
-  items3 = [tmp.container];
-  items4 = [, ];
+  const obj3 = { style: tmp.container, children: items3 };
+  items3 = [, ];
   const obj4 = {
     status,
     onClick() {
@@ -935,53 +824,49 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     opened,
     count: classifications.length
   };
-  items4[0] = closure_11(closure_15, obj4);
+  items3[0] = closure_11(closure_15, obj4);
   if (opened) {
-    const obj5 = { style: items5 };
-    items5 = [tmp.separator];
-    const items6 = [closure_11(stateFromStores, obj5), memo.length > 0 && memo.map(f117457), , , ];
+    const obj5 = { style: tmp.separator };
+    const items4 = [closure_11(stateFromStores, obj5), memo.length > 0 && memo.map(f118543), , , ];
     let tmp11Result = memo.length < classifications.length;
-    memo.length > 0 && memo.map(f117457);
+    memo.length > 0 && memo.map(f118543);
     if (tmp11Result) {
-      const obj7 = { style: items7 };
-      items7 = [tmp.separator];
-      const obj6 = { children: items8 };
-      items8 = [closure_11(stateFromStores, obj7), ];
-      const obj8 = { style: items9, children: closure_11(safetyHubAccountStanding, obj9) };
-      items9 = [tmp.moreButtonContainer];
+      const obj6 = { children: items5 };
+      const obj7 = { style: tmp.separator };
+      items5 = [closure_11(stateFromStores, obj7), ];
+      const obj8 = { style: tmp.moreButtonContainer, children: closure_11(safetyHubAccountStanding, obj9) };
       obj9 = {
-        style: items10,
+        style: tmp.moreButton,
         onPress() {
               return closure_4((arg0) => arg0 + num);
             },
         children: closure_11(Text, obj10)
       };
-      items10 = [tmp.moreButton];
       obj10 = { variant: "heading-sm/semibold", children: intl.format(classifications(1126).t["9Ml56H"], obj11) };
-      Text = tmp6(4892).Text;
+      Text = tmp6(5086).Text;
       intl = tmp6(1126).intl;
       obj11 = { nextPageSize: num };
-      items8[1] = closure_11(stateFromStores, obj8);
+      items5[1] = closure_11(stateFromStores, obj8);
       tmp11Result = tmp11(closure_13, obj6);
     }
-    items6[2] = tmp11Result;
-    items6[3] = 0 === memo.length && "active" === status && tmp13(closure_16, {});
+    items4[2] = tmp11Result;
+    items4[3] = 0 === memo.length && "active" === status && tmp13(closure_16, {});
     const tmp13Result = 0 === memo.length && "active" === status && tmp13(closure_16, {});
-    const obj12 = { children: items6 };
-    items6[4] = 0 === memo.length && "expired" === status && tmp13(closure_17, {});
+    const obj12 = { children: items4 };
+    items4[4] = 0 === memo.length && "expired" === status && tmp13(closure_17, {});
     const tmp13Result2 = 0 === memo.length && "expired" === status && tmp13(closure_17, {});
     opened = tmp11(tmp12, obj12);
   }
-  items4[1] = opened;
+  items3[1] = opened;
   return closure_12(stateFromStores, obj3);
 });
 let closure_21 = tmp6;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  let items1;
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedSafetyHubViolationsContainer() {
+  let items;
   let tmp3;
   const obj = react2;
-  const cResult = obj.c(10);
+  const cResult = obj.c(8);
   const tmp2 = closure_14();
   const obj2 = useSafetyHubClassifications;
   const activeSafetyHubClassifications = obj2.useActiveSafetyHubClassifications();
@@ -989,58 +874,48 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const expiredSafetyHubClassifications = obj3.useExpiredSafetyHubClassifications();
   if (0 !== activeSafetyHubClassifications.length) {
     let tmp4;
-    let tmp5;
-    let tmp9;
-    if (cResult[0] !== tmp2.connectedContainer) {
-      const items = [];
-      ({ connectedContainer: arr3[0], connectedContainer: tmp[0] } = tmp2);
-      cResult[1] = items;
-      tmp4 = items;
+    let tmp8;
+    if (cResult[0] !== activeSafetyHubClassifications) {
+      const obj4 = { status: "active", classifications: activeSafetyHubClassifications };
+      const tmp7 = unpackModuleId(closure_21, obj4);
+      cResult[0] = activeSafetyHubClassifications;
+      cResult[1] = tmp7;
+      tmp4 = tmp7;
     } else {
       tmp4 = cResult[1];
     }
-    if (cResult[2] !== activeSafetyHubClassifications) {
-      const obj4 = { status: "active", classifications: activeSafetyHubClassifications };
-      const tmp8 = unpackModuleId(closure_21, obj4);
-      cResult[2] = activeSafetyHubClassifications;
-      cResult[3] = tmp8;
-      tmp5 = tmp8;
-    } else {
-      tmp5 = cResult[3];
-    }
-    if (cResult[4] !== expiredSafetyHubClassifications) {
+    if (cResult[2] !== expiredSafetyHubClassifications) {
       const obj5 = { status: "expired", classifications: expiredSafetyHubClassifications };
-      const tmp12 = unpackModuleId(closure_21, obj5);
-      cResult[4] = expiredSafetyHubClassifications;
-      cResult[5] = tmp12;
-      tmp9 = tmp12;
+      const tmp11 = unpackModuleId(closure_21, obj5);
+      cResult[2] = expiredSafetyHubClassifications;
+      cResult[3] = tmp11;
+      tmp8 = tmp11;
     } else {
-      tmp9 = cResult[5];
+      tmp8 = cResult[3];
     }
-    if (cResult[6] === tmp4) {
-      if (cResult[7] === tmp5) {
-        let tmp13;
-        if (cResult[8] === tmp9) {
-          tmp13 = cResult[9];
+    if (cResult[4] === tmp2.connectedContainer) {
+      if (cResult[5] === tmp4) {
+        let tmp12;
+        if (cResult[6] === tmp8) {
+          tmp12 = cResult[7];
         }
-        tmp3 = tmp13;
+        tmp3 = tmp12;
       }
     }
-    const obj6 = { style: tmp4, children: items1 };
-    items1 = [tmp5, tmp9];
-    const tmp16 = closure_12(metroRequire, obj6);
-    cResult[6] = tmp4;
-    cResult[7] = tmp5;
-    cResult[8] = tmp9;
-    cResult[9] = tmp16;
-    tmp13 = tmp16;
+    const obj6 = { style: tmp2.connectedContainer, children: items };
+    items = [tmp4, tmp8];
+    const tmp15 = closure_12(metroRequire, obj6);
+    cResult[4] = tmp2.connectedContainer;
+    cResult[5] = tmp4;
+    cResult[6] = tmp8;
+    cResult[7] = tmp15;
+    tmp12 = tmp15;
   } else {
     tmp3 = null;
   }
   return tmp3;
-}) : (() => {
+}) : (function ConnectedSafetyHubViolationsContainer() {
   let items;
-  let items1;
   let tmp2;
   const tmp = closure_14();
   const obj = useSafetyHubClassifications;
@@ -1048,12 +923,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj2 = useSafetyHubClassifications;
   const expiredSafetyHubClassifications = obj2.useExpiredSafetyHubClassifications();
   if (0 !== activeSafetyHubClassifications.length) {
-    const obj3 = { style: items, children: items1 };
-    items = [tmp.connectedContainer];
+    const obj3 = { style: tmp.connectedContainer, children: items };
     const obj4 = { status: "active", classifications: activeSafetyHubClassifications };
-    items1 = [unpackModuleId(closure_21, obj4), ];
+    items = [unpackModuleId(closure_21, obj4), ];
     const obj5 = { status: "expired", classifications: expiredSafetyHubClassifications };
-    items1[1] = unpackModuleId(closure_21, obj5);
+    items[1] = unpackModuleId(closure_21, obj5);
     tmp2 = closure_12(metroRequire, obj3);
   } else {
     tmp2 = null;

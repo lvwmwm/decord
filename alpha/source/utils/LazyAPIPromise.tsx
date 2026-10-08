@@ -1,9 +1,9 @@
-// Module ID: 9217
-// Function ID: 9218
+// Module ID: 8504
+// Function ID: 8505
 // Name: LazyAPIPromise
-// Dependencies: [5, 32, 19, 558, 576, 5319, 2]
+// Dependencies: [5, 32, 19, 558, 576, 5631, 2]
 
-// Module 9217 (LazyAPIPromise)
+// Module 8504 (LazyAPIPromise)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require, c4, c5, dependencyMap;
 
 let _slicedToArray = _slicedToArray_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLazyAPIPromise(arg0, arg1) {
   let closure_0;
   let tmp3;
   let tmp5;
@@ -50,6 +50,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       tmp8 = items;
     }
     let obj2 = { loading: tmp3, error: tmp5 };
+    let num = 3;
     cResult[3] = tmp5;
     cResult[4] = tmp3;
     cResult[5] = obj2;
@@ -140,7 +141,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[1] = arg1;
   cResult[2] = execFn;
   tmp6 = execFn;
-}) : ((arg0, arg1) => {
+}) : (function useLazyAPIPromise(arg0, arg1) {
   let closure_2;
   let closure_3;
   let first;

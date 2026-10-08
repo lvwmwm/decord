@@ -1,27 +1,27 @@
-// Module ID: 15588
-// Function ID: 15589
+// Module ID: 15868
+// Function ID: 15869
 // Name: OrbsFlowTestModal
-// Dependencies: [32, 109, 19, 17, 21, 7568, 558, 576, 6503, 7509, 10675, 4896, 587, 4892, 15589, 5600, 4860, 11024, 1987, 1126, 6105, 5601, 11014, 11023, 6478, 15591, 6658, 2]
+// Dependencies: [32, 109, 19, 17, 21, 9279, 558, 576, 6679, 9232, 9588, 5090, 587, 5086, 15869, 5373, 5054, 11199, 1999, 1126, 6283, 5375, 11189, 11198, 6656, 15871, 6835, 2]
 
-// Module 15588 (OrbsFlowTestModal)
+// Module 15868 (OrbsFlowTestModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Stack_Stack from "Stack/Stack" /* 5600 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6478 */;
-import HeaderShared from "HeaderShared" /* 7509 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10675 */;
-import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 15589 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Stack_Stack from "Stack/Stack" /* 5373 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6656 */;
+import HeaderShared from "HeaderShared" /* 9232 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 9588 */;
+import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 15869 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 7568 */;
+import NativeStackView from "NativeStackView" /* 9279 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -36,8 +36,8 @@ let obj3;
 let obj4;
 let tmp;
 let tmp6;
-const LayerScope2 = tmp(6658);
-const OrbCheckoutMenuDefault = tmp6(15591);
+const LayerScope2 = tmp(6835);
+const OrbCheckoutMenuDefault = tmp6(15871);
 function BalanceWidgetPillSection() {
   let balance;
   let closure_1;
@@ -107,14 +107,14 @@ let closure_3 = ["children"];
 ({ jsx: c9, jsxs: c10 } = Fragment);
 let closure_11 = NativeStackView.createNativeStackNavigator();
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsFlowTestModal() {
   let accessibilityNativeStackOptions;
   let tmp3;
   let tmp4;
   let tmp9;
   let obj = accessibilityNativeStackOptions(576);
   const cResult = obj.c(5);
-  let obj2 = accessibilityNativeStackOptions(6503);
+  let obj2 = accessibilityNativeStackOptions(6679);
   accessibilityNativeStackOptions = obj2.useAccessibilityNativeStackOptions();
   if (cResult[0] !== accessibilityNativeStackOptions) {
     const fn = function n(navigation) {
@@ -167,7 +167,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = cResult[4];
   }
   return tmp9;
-}) : (() => {
+}) : (function OrbsFlowTestModal() {
   let closure_0;
   let obj3;
   let obj = require("Navigator");
@@ -213,7 +213,7 @@ obj3 = { padding: nativeDefault.space.PX_16 };
 obj4 = { flexDirection: "row", justifyContent: "center", marginBottom: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };
 let closure_12 = createStyles(obj);
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function BalanceWidgetMenuSection() {
   let items;
   let tmp5;
   let tmp8;
@@ -250,7 +250,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[4] = tmp5;
   cResult[5] = tmp13;
   tmp12 = tmp13;
-}) : (() => {
+}) : (function BalanceWidgetMenuSection() {
   let items;
   const tmp = closure_12();
   const obj = { spacing: 16, style: tmp.container, children: items };
@@ -262,7 +262,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return authStore(Stack, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const component = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const component = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsFlowTest() {
   let first;
   let items;
   let obj4;
@@ -329,7 +329,7 @@ const component = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[4] = insets.top;
   cResult[5] = obj5;
   tmp7 = obj5;
-}) : (() => {
+}) : (function OrbsFlowTest() {
   let items;
   let obj2;
   const tmp = closure_12();

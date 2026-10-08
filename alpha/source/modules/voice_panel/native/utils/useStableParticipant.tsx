@@ -1,24 +1,24 @@
-// Module ID: 17248
-// Function ID: 17249
+// Module ID: 17529
+// Function ID: 17530
 // Name: useStableParticipant
-// Dependencies: [4912, 502, 1999, 1377, 4917, 568, 558, 576, 5048, 7898, 9154, 504, 2]
+// Dependencies: [6041, 502, 2011, 1389, 5113, 568, 558, 576, 5405, 6058, 10720, 504, 2]
 // Exports: isStableActivityParticipant, isStableParticipantWithUser, isStableStreamParticipant, isStableUserParticipant, stableParticipantHasVideo
 
-// Module 17248 (useStableParticipant)
+// Module 17529 (useStableParticipant)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
-import CallConstants from "CallConstants" /* 4917 */;
-import NicknameUtils from "NicknameUtils" /* 5048 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 7898 */;
-import participantHasVideoDefault from "participantHasVideo" /* 9154 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4912 */;
+import CallConstants from "CallConstants" /* 5113 */;
+import NicknameUtils from "NicknameUtils" /* 5405 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 6058 */;
+import participantHasVideoDefault from "participantHasVideo" /* 10720 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import UserStore from "UserStore" /* 1377 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, id;
+let _require, dependencyMap;
 
 function areStableParticipantsEqual(arg0, arg1) {
   let tmp = arg0 === arg1;
@@ -29,7 +29,7 @@ function areStableParticipantsEqual(arg0, arg1) {
   return tmp;
 }
 const ParticipantTypes = CallConstants.ParticipantTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStableParticipant(id, arg1, arg2) {
   let closure_2;
   let first;
   _require = id;
@@ -80,7 +80,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) =>
         const user = UserStore.getUser(tmp);
         if (null != user) {
           const id3 = user.id;
-          const obj3 = { type: ParticipantTypes.USER, id, user, selfVideo: false, canRenderVideo: false, userNick: obj5.getName(closure_2, tmp3, user), userAvatarDecoration: obj6.getAvatarDecoration(user, closure_2), streamId: "Set", ringing: null, hasVideo: 465.988, isSelf: id3 === id1 };
+          const obj3 = { type: ParticipantTypes.USER, id, user, selfVideo: false, canRenderVideo: false, userNick: obj5.getName(closure_2, tmp3, user), userAvatarDecoration: obj6.getAvatarDecoration(user, closure_2), streamId: "Set", ringing: null, hasVideo: 0, isSelf: id3 === id1 };
           id1 = AuthenticationStore.getId();
           obj5 = NicknameUtils;
           obj6 = useAvatarDecoration;
@@ -130,7 +130,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) =>
   cResult[5] = items1;
   tmp10 = items1;
   tmp9 = fn;
-}) : ((id, arg1, arg2) => {
+}) : (function useStableParticipant(id, arg1, arg2) {
   let closure_2;
   _require = id;
   let closure_1 = arg1;
@@ -157,7 +157,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) =>
         const user = UserStore.getUser(tmp);
         if (null != user) {
           const id3 = user.id;
-          const obj3 = { type: ParticipantTypes.USER, id, user, selfVideo: false, canRenderVideo: false, userNick: obj5.getName(closure_2, tmp3, user), userAvatarDecoration: obj6.getAvatarDecoration(user, closure_2), streamId: "Set", ringing: null, hasVideo: 465.988, isSelf: id3 === id1 };
+          const obj3 = { type: ParticipantTypes.USER, id, user, selfVideo: false, canRenderVideo: false, userNick: obj5.getName(closure_2, tmp3, user), userAvatarDecoration: obj6.getAvatarDecoration(user, closure_2), streamId: "Set", ringing: null, hasVideo: 0, isSelf: id3 === id1 };
           id1 = AuthenticationStore.getId();
           obj5 = NicknameUtils;
           obj6 = useAvatarDecoration;

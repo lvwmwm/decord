@@ -1,47 +1,47 @@
-// Module ID: 10145
-// Function ID: 10146
+// Module ID: 9730
+// Function ID: 9731
 // Name: StickerDetailActionSheet
-// Dependencies: [5, 32, 19, 17, 2074, 1377, 5694, 10095, 1085, 6653, 21, 4896, 1369, 587, 558, 576, 10124, 9956, 9958, 4860, 4892, 1126, 4580, 10125, 4574, 504, 1484, 1252, 10139, 5601, 10144, 10126, 10132, 4534, 6694, 2028, 5435, 10146, 1987, 5076, 5712, 6730, 10147, 6895, 10140, 7588, 9661, 10148, 8924, 9962, 6652, 2]
+// Dependencies: [5, 32, 19, 17, 2086, 1389, 6035, 9679, 1085, 6830, 21, 5090, 1381, 587, 558, 576, 9709, 9483, 9485, 5054, 5086, 1126, 4772, 9710, 4766, 504, 1496, 1264, 9724, 5375, 9729, 9711, 9717, 4726, 6871, 2040, 5745, 9731, 1999, 5105, 6102, 6906, 9732, 7084, 9725, 9180, 9733, 9734, 8555, 9489, 6829, 2]
 
-// Module 10145 (StickerDetailActionSheet)
+// Module 9730 (StickerDetailActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4580 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import StickersUtils from "StickersUtils" /* 5435 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5712 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6653 */;
-import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6730 */;
-import openUserSettings from "openUserSettings" /* 6895 */;
-import StarIcon from "StarIcon" /* 9956 */;
-import StarOutlineIcon2 from "StarOutlineIcon" /* 9958 */;
-import StickersHooks from "StickersHooks" /* 10124 */;
-import StickersActionCreators from "StickersActionCreators" /* 10125 */;
-import stickers_StickersUtils from "stickers/StickersUtils" /* 10126 */;
-import openStickerPackDetailActionSheet from "openStickerPackDetailActionSheet" /* 10132 */;
-import showStickerDetailActionSheet from "showStickerDetailActionSheet" /* 10144 */;
-import openStickersPremiumUpsellAlertDefault from "openStickersPremiumUpsellAlert" /* 10148 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4772 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import StickersUtils from "StickersUtils" /* 5745 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6102 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6830 */;
+import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6906 */;
+import openUserSettings from "openUserSettings" /* 7084 */;
+import StarIcon from "StarIcon" /* 9483 */;
+import StarOutlineIcon2 from "StarOutlineIcon" /* 9485 */;
+import StickersHooks from "StickersHooks" /* 9709 */;
+import StickersActionCreators from "StickersActionCreators" /* 9710 */;
+import stickers_StickersUtils from "stickers/StickersUtils" /* 9711 */;
+import openStickerPackDetailActionSheet from "openStickerPackDetailActionSheet" /* 9717 */;
+import showStickerDetailActionSheet from "showStickerDetailActionSheet" /* 9729 */;
+import openStickersPremiumUpsellAlertDefault from "openStickersPremiumUpsellAlert" /* 9734 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import UserStore from "UserStore" /* 1377 */;
-import StickersStore from "StickersStore" /* 5694 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 10095 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import UserStore from "UserStore" /* 1389 */;
+import StickersStore from "StickersStore" /* 6035 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 9679 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const openStickerPackDetailActionSheetDefault = openStickerPackDetailActionSheet;
-let BottomSheet, _location, _require, c2, c3, containerWidth, dependencyMap, favoriteStickerResult, hideActionSheetResult, importDefault, obj1, openMana2Result, openManaResult, openResult, openResult1, tmp10, tmpResult1, unfavoriteStickerResult;
+let BottomSheet, _location, _require, c2, c3, dependencyMap, favoriteStickerResult, hideActionSheetResult, importDefault, obj1, openMana2Result, openManaResult, openResult, openResult1, tmp10, tmpResult1, unfavoriteStickerResult;
 
 let closure_12;
 let closure_14;
@@ -63,7 +63,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp;
-const ToastActionCreatorsDefault = tmp(4574);
+const ToastActionCreatorsDefault = tmp(4766);
 function UnavailableStickerDetail(arg0) {
   let MoreHorizontalIcon;
   let analyticsLocation;
@@ -106,7 +106,7 @@ function UnavailableStickerDetail(arg0) {
     if (null != stickerAssetUrl) {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { stickerUrl: tmp };
-      obj.openLazy(asyncRequire(10146, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
+      obj.openLazy(asyncRequire(9731, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
     }
   }, items1);
   items2 = [closure_21(tmp3(tmp4[44]), { sticker: renderableSticker, size: 48 }), , ];
@@ -169,7 +169,7 @@ obj5 = { tintColor: nativeDefault.colors.ICON_FEEDBACK_WARNING };
 obj6 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 let closure_24 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerFavorite(arg0) {
   let closure_0;
   let closure_2;
   let starIcon;
@@ -201,9 +201,9 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const tmp8 = closure_21;
         if (arg0) {
-          StarOutlineIcon = tmp9(9956).StarIcon;
+          StarOutlineIcon = tmp9(9483).StarIcon;
         } else {
-          StarOutlineIcon = tmp9(9958).StarOutlineIcon;
+          StarOutlineIcon = tmp9(9485).StarOutlineIcon;
         }
         return tmp8(StarOutlineIcon, { style });
       };
@@ -461,7 +461,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = arg0;
   cResult[2] = hasItem;
   tmp3 = hasItem;
-}) : ((arg0) => {
+}) : (function useStickerFavorite(arg0) {
   let closure_0;
   let hasItem;
   _require = arg0;
@@ -485,9 +485,9 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const tmp8 = closure_21;
     if (arg0) {
-      StarOutlineIcon = tmp9(9956).StarIcon;
+      StarOutlineIcon = tmp9(9483).StarIcon;
     } else {
-      StarOutlineIcon = tmp9(9958).StarOutlineIcon;
+      StarOutlineIcon = tmp9(9485).StarOutlineIcon;
     }
     return tmp8(StarOutlineIcon, { style });
   }, items);
@@ -561,7 +561,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function StandardStickerDetail(channel) {
   let DM_CHANNEL;
   let chatInputRef;
   let closure_1;
@@ -624,7 +624,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const tmpResult4 = tmp(pack_id[16]);
   const fetchStickerPack = tmpResult4.useFetchStickerPack(pack_id);
   const diff = require("useWindowDimensions")().width - 2 * closure_12;
-  containerWidth = diff;
+  const containerWidth = diff;
   const rounded = Math.floor(Math.min(ACTION_SHEET_MAX_WIDTH, diff - closure_13) / (closure_14 + closure_13));
   if (null != channel.guild_id) {
     DM_CHANNEL = constants.GUILD_CHANNEL;
@@ -673,79 +673,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
                     } else {
                       tmp25Result = tmp25(stateFromStores);
                     }
-                    class B {
-                      constructor(arg0) {
-                        closure_0 = channel;
-                        tmp = closure_5;
-                        intl = chatInputRef(pack_id[21]).intl;
-                        format = intl.format;
-                        t = chatInputRef(pack_id[21]).t;
-                        if (closure_5) {
-                          obj1 = { stickerPackName: null };
-                          obj1.stickerPackName = channel.name;
-                          formatResult = format(t.auckXz, obj1);
-                        } else {
-                          obj = { stickerPackName: null };
-                          obj.stickerPackName = channel.name;
-                          formatResult = format(t.OzB6e3, obj);
-                        }
-                        tmp5 = closure_1_21;
-                        tmp3 = closure_1_23;
-                        tmp4 = closure_1_22;
-                        obj9 = { variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: name };
-                        items = [, , , , ];
-                        items[0] = closure_1_21(chatInputRef(pack_id[20]).Text, obj9);
-                        obj10 = { style: closure_1.description, variant: "text-sm/medium", children: formatResult };
-                        items[1] = closure_1_21(chatInputRef(pack_id[20]).Text, obj10);
-                        tmp6 = closure_1;
-                        obj11 = { containerWidth: closure_7, stickers: null, rowSize: null };
-                        stickers = channel.stickers;
-                        tmp7 = closure_1(pack_id[28]);
-                        obj11.stickers = stickers.slice(0, closure_8);
-                        obj11.rowSize = closure_8;
-                        items[2] = closure_1_21(tmp7, obj11);
-                        tmp5Result = null;
-                        if (tmp) {
-                          tmp9 = closure_6;
-                          obj12 = { style: null };
-                          obj13 = { height: null };
-                          tmp10 = pack_id;
-                          obj13.height = tmp6(pack_id[13]).space.PX_16;
-                          obj12.style = obj13;
-                          tmp5Result = tmp5(closure_6, obj12);
-                        }
-                        items[3] = tmp5Result;
-                        if (tmp) {
-                          tmp11 = chatInputRef;
-                          tmp12 = pack_id;
-                          obj14 = { variant: "secondary", text: null, onPress: null };
-                          tmp13 = chatInputRef;
-                          tmp14 = pack_id;
-                          Button = chatInputRef(pack_id[29]).Button;
-                          intl2 = chatInputRef(pack_id[21]).intl;
-                          tmp15 = chatInputRef;
-                          tmp16 = pack_id;
-                          obj14.text = intl2.string(chatInputRef(pack_id[21]).t.GPy3Ar);
-                          obj14.onPress = function onPress() {
-                            const obj = showStickerDetailActionSheet;
-                            const result = obj.hideStickerDetailActionSheet();
-                            const tmp4 = closure_6;
-                            if (tmp4) {
-                              if (null != chatInputRef) {
-                                const tmpResult = stickers_StickersUtils;
-                                const result1 = tmpResult.openStickerPickerToPackId(tmp5, pack_id);
-                              }
-                            }
-                            const obj2 = { analyticsLocation, analyticsPopoutType: openStickerPackDetailActionSheet.AnalyticsPopoutType.STICKER_PACK_UPSELL, stickerPack };
-                            const tmp7 = openStickerPackDetailActionSheetDefault;
-                            tmp7(obj2);
-                          };
-                          tmp = tmp5(Button, obj14);
-                        }
-                        items[4] = tmp;
-                        return tmp3(tmp4, { children: items });
-                      }
-                    }
+                    cResult[22] = stateFromStores;
                     cResult[23] = tmp25;
                     cResult[24] = tmp25Result;
                     tmp26 = tmp25Result;
@@ -757,78 +685,69 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         }
       }
     }
-    class B {
-      constructor(arg0) {
-        closure_0 = channel;
-        tmp = closure_5;
-        intl = chatInputRef(pack_id[21]).intl;
-        format = intl.format;
-        t = chatInputRef(pack_id[21]).t;
-        if (closure_5) {
-          obj1 = { stickerPackName: null };
-          obj1.stickerPackName = channel.name;
-          formatResult = format(t.auckXz, obj1);
-        } else {
-          obj = { stickerPackName: null };
-          obj.stickerPackName = channel.name;
-          formatResult = format(t.OzB6e3, obj);
-        }
-        tmp5 = closure_1_21;
-        tmp3 = closure_1_23;
-        tmp4 = closure_1_22;
-        obj9 = { variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: name };
-        items = [, , , , ];
-        items[0] = closure_1_21(chatInputRef(pack_id[20]).Text, obj9);
-        obj10 = { style: closure_1.description, variant: "text-sm/medium", children: formatResult };
-        items[1] = closure_1_21(chatInputRef(pack_id[20]).Text, obj10);
-        tmp6 = closure_1;
-        obj11 = { containerWidth: closure_7, stickers: null, rowSize: null };
-        stickers = channel.stickers;
-        tmp7 = closure_1(pack_id[28]);
-        obj11.stickers = stickers.slice(0, closure_8);
-        obj11.rowSize = closure_8;
-        items[2] = closure_1_21(tmp7, obj11);
-        tmp5Result = null;
-        if (tmp) {
-          tmp9 = closure_6;
-          obj12 = { style: null };
-          obj13 = { height: null };
-          tmp10 = pack_id;
-          obj13.height = tmp6(pack_id[13]).space.PX_16;
-          obj12.style = obj13;
-          tmp5Result = tmp5(closure_6, obj12);
-        }
-        items[3] = tmp5Result;
-        if (tmp) {
-          tmp11 = chatInputRef;
-          tmp12 = pack_id;
-          obj14 = { variant: "secondary", text: null, onPress: null };
-          tmp13 = chatInputRef;
-          tmp14 = pack_id;
-          Button = chatInputRef(pack_id[29]).Button;
-          intl2 = chatInputRef(pack_id[21]).intl;
-          tmp15 = chatInputRef;
-          tmp16 = pack_id;
-          obj14.text = intl2.string(chatInputRef(pack_id[21]).t.GPy3Ar);
-          obj14.onPress = function onPress() {
-            const obj = showStickerDetailActionSheet;
-            const result = obj.hideStickerDetailActionSheet();
-            const tmp4 = closure_6;
-            if (tmp4) {
-              if (null != chatInputRef) {
-                const tmpResult = stickers_StickersUtils;
-                const result1 = tmpResult.openStickerPickerToPackId(tmp5, pack_id);
-              }
-            }
-            const obj2 = { analyticsLocation, analyticsPopoutType: openStickerPackDetailActionSheet.AnalyticsPopoutType.STICKER_PACK_UPSELL, stickerPack };
-            const tmp7 = openStickerPackDetailActionSheetDefault;
-            tmp7(obj2);
-          };
-          tmp = tmp5(Button, obj14);
-        }
-        items[4] = tmp;
-        return tmp3(tmp4, { children: items });
+    function upsellContent(name) {
+      let analyticsLocation;
+      let formatResult;
+      let intl2;
+      let obj7;
+      let stickers;
+      const stickerPack = name;
+      let tmp = stateFromStores1;
+      const intl = chatInputRef(pack_id[21]).intl;
+      const format = intl.format;
+      const t = chatInputRef(pack_id[21]).t;
+      if (stateFromStores1) {
+        let obj2 = { stickerPackName: name.name };
+        formatResult = format(t.auckXz, obj2);
+      } else {
+        let obj = { stickerPackName: name.name };
+        formatResult = format(t.OzB6e3, obj);
       }
+      const tmp5 = closure_1_21;
+      let tmp4 = closure_1_22;
+      const children = [, , , , ];
+      const obj3 = { variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: name };
+      children[0] = closure_1_21(chatInputRef(pack_id[20]).Text, obj3);
+      const obj4 = { style: closure_1.description, variant: "text-sm/medium", children: formatResult };
+      children[1] = closure_1_21(chatInputRef(pack_id[20]).Text, obj4);
+      const obj5 = { containerWidth, stickers: stickers.slice(0, rounded), rowSize: rounded };
+      stickers = name.stickers;
+      let tmp7 = closure_1(pack_id[28]);
+      children[2] = closure_1_21(tmp7, obj5);
+      let tmp5Result = null;
+      const tmp3 = closure_1_23;
+      const tmp6 = closure_1;
+      if (tmp) {
+        const obj6 = { style: obj7 };
+        obj7 = { height: tmp6(pack_id[13]).space.PX_16 };
+        tmp5Result = tmp5(closure_6, obj6);
+      }
+      children[3] = tmp5Result;
+      if (tmp) {
+        const obj8 = {
+          variant: "secondary",
+          text: intl2.string(chatInputRef(pack_id[21]).t.GPy3Ar),
+          onPress() {
+              const obj = showStickerDetailActionSheet;
+              const result = obj.hideStickerDetailActionSheet();
+              const tmp4 = closure_6;
+              if (tmp4) {
+                if (null != chatInputRef) {
+                  const tmpResult = stickers_StickersUtils;
+                  const result1 = tmpResult.openStickerPickerToPackId(tmp5, pack_id);
+                }
+              }
+              const obj2 = { analyticsLocation, analyticsPopoutType: openStickerPackDetailActionSheet.AnalyticsPopoutType.STICKER_PACK_UPSELL, stickerPack };
+              const tmp7 = openStickerPackDetailActionSheetDefault;
+              tmp7(obj2);
+            }
+        };
+        const Button = chatInputRef(pack_id[29]).Button;
+        intl2 = chatInputRef(pack_id[21]).intl;
+        tmp = tmp5(Button, obj8);
+      }
+      children[4] = tmp;
+      return tmp3(tmp4, { children });
     }
     cResult[12] = tmp19;
     cResult[13] = chatInputRef;
@@ -839,8 +758,8 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     cResult[18] = rounded;
     cResult[19] = pack_id;
     cResult[20] = tmp4.description;
-    cResult[21] = B;
-    tmp25 = B;
+    cResult[21] = upsellContent;
+    tmp25 = upsellContent;
   }
   class H {
     constructor() {
@@ -858,7 +777,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[11] = items2;
   tmp22 = items2;
   tmp21 = H;
-}) : ((chatInputRef) => {
+}) : (function StandardStickerDetail(chatInputRef) {
   let channel;
   let intl;
   let obj10;
@@ -867,6 +786,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   let tmp13Result;
   ({ sticker, channel } = chatInputRef);
   chatInputRef = chatInputRef.chatInputRef;
+  let memo;
   const pack_id = sticker.pack_id;
   const tmp = closure_24();
   const name = sticker.name;
@@ -881,7 +801,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const diff = chatInputRef(pack_id[26])().width - 2 * closure_12;
   const rounded = Math.floor(Math.min(ACTION_SHEET_MAX_WIDTH, diff - closure_13) / (closure_14 + closure_13));
   const items2 = [channel.guild_id];
-  const memo = stateFromStores.useMemo(() => {
+  memo = memo.useMemo(() => {
     let DM_CHANNEL;
     if (null != channel.guild_id) {
       DM_CHANNEL = constants.GUILD_CHANNEL;
@@ -891,7 +811,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     return { page: DM_CHANNEL, section: constants2.STICKER_POPOUT };
   }, items2);
   const items3 = [memo, stateFromStores];
-  const effect = stateFromStores.useEffect(() => {
+  const effect = memo.useEffect(() => {
     if (null != stateFromStores) {
       const obj2 = { location: memo, type: "Sticker Upsell Sheet", sticker_pack_id: tmp.id };
       const obj = AnalyticsUtilsDefault;
@@ -926,7 +846,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     if (stateFromStores1) {
       const obj9 = { style: obj10 };
       obj10 = { height: chatInputRef(pack_id[13]).space.PX_16 };
-      tmp15Result = tmp15(memo, obj9);
+      tmp15Result = tmp15(closure_6, obj9);
     }
     items4[3] = tmp15Result;
     let tmp15Result2 = stateFromStores1;
@@ -1030,7 +950,7 @@ function GuildStickerDetail(sticker) {
     if (null != stickerAssetUrl) {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { stickerUrl: tmp };
-      obj.openLazy(asyncRequire(10146, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
+      obj.openLazy(asyncRequire(9731, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
     }
   }, items1);
   analyticsLocation = obj.useMemo(() => {
@@ -1359,7 +1279,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const obj4 = { startExpanded: true, children: closure_21(metroRequire, obj5) };
     obj5 = { style: tmp4.content, children: tmp12 };
-    BottomSheet = tmp(6652).BottomSheet;
+    BottomSheet = tmp(6829).BottomSheet;
     const tmp28 = closure_21(BottomSheet, obj4);
     cResult[11] = tmp12;
     cResult[12] = tmp4.content;
@@ -1426,7 +1346,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const obj3 = { startExpanded: true, children: closure_21(metroRequire, obj4) };
     obj4 = { style: tmp.content, children: tmp7Result };
-    BottomSheet = tmp2(6652).BottomSheet;
+    BottomSheet = tmp2(6829).BottomSheet;
     return closure_21(BottomSheet, obj3);
   }
   tmp7Result = tmp7Result2;

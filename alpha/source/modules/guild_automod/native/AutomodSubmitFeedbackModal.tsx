@@ -1,33 +1,33 @@
-// Module ID: 11491
-// Function ID: 11492
+// Module ID: 11477
+// Function ID: 11478
 // Name: AutomodSubmitFeedbackModal
-// Dependencies: [32, 19, 17, 1085, 21, 4896, 587, 558, 576, 1126, 6890, 4815, 6626, 7040, 1618, 4892, 8924, 1188, 5601, 5076, 11492, 7039, 4573, 6503, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5090, 587, 558, 576, 1126, 7079, 5009, 6803, 7228, 1630, 5086, 8555, 1200, 5375, 5105, 11478, 7227, 4765, 6679, 2]
 
-// Module 11491 (AutomodSubmitFeedbackModal)
+// Module 11477 (AutomodSubmitFeedbackModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import ToastUtils from "ToastUtils" /* 4573 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4815 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5076 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6626 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 6890 */;
-import AutomodAlert from "AutomodAlert" /* 7039 */;
-import AutomodFeedback from "AutomodFeedback" /* 7040 */;
-import GuildAutomodActionCreators from "GuildAutomodActionCreators" /* 11492 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import ToastUtils from "ToastUtils" /* 4765 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5009 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5105 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6803 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7079 */;
+import AutomodAlert from "AutomodAlert" /* 7227 */;
+import AutomodFeedback from "AutomodFeedback" /* 7228 */;
+import GuildAutomodActionCreators from "GuildAutomodActionCreators" /* 11478 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let React, dependencyMap, onClose, onCloseModal, value;
+let React, dependencyMap, value;
 
 let metroImportAll;
 let metroImportDefault;
@@ -58,7 +58,7 @@ obj4 = { marginTop: 24, borderRadius: nativeDefault.radii.sm, backgroundColor: n
 rect = { position: "absolute", bottom: 0, left: 0, right: 0, paddingVertical: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 let closure_11 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Navbar(onClose) {
   let closeButtonContainer;
   let first;
   let header;
@@ -78,7 +78,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   }
   if (cResult[1] !== onClose) {
     const obj2 = { accessibilityLabel: first, onPress: onClose, source: AssetRegistryDefault };
-    const HeaderActionButton = tmp(6890).HeaderActionButton;
+    const HeaderActionButton = tmp(7079).HeaderActionButton;
     const tmp10 = metroImportDefault(HeaderActionButton, obj2);
     cResult[1] = onClose;
     cResult[2] = tmp10;
@@ -110,7 +110,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   cResult[4] = tmp7;
   cResult[5] = tmp12;
   tmp11 = tmp12;
-}) : ((onClose) => {
+}) : (function Navbar(onClose) {
   let HeaderActionButton;
   let intl;
   let obj;
@@ -126,13 +126,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   return metroImportDefault(SafeAreaPaddingView, rect);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubmitFeedbackScreen(arg0) {
   let bottom;
   let closure_2;
   let items;
   let left;
   let onSubmit;
-  let require;
   let right;
   let tmp6;
   let obj = react2;
@@ -145,13 +144,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp5 = useSafeAreaInsetsDefault();
   ({ left, right, bottom } = tmp5);
   if (cResult[0] !== tmp4.formRow) {
-    const fn = function l(children) {
+    function label(children) {
       const obj = { style: closure_2.formRow, variant: "text-md/semibold", color: "interactive-text-active", children };
       return metroImportDefault(Text_Text.Text, obj);
-    };
+    }
     cResult[0] = tmp4.formRow;
-    cResult[1] = fn;
-    tmp6 = fn;
+    cResult[1] = label;
+    tmp6 = label;
   } else {
     tmp6 = cResult[1];
   }
@@ -214,7 +213,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const mapped = feedbackOptions.map((value, index) => {
         let obj2;
         value = value.value;
-        const require = value;
+        require = value;
         const name = value.name;
         const Fragment = React.Fragment;
         const obj = {
@@ -343,7 +342,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = sum1;
   cResult[4] = obj10;
   tmp11 = obj10;
-}) : ((onSubmit) => {
+}) : (function SubmitFeedbackScreen(onSubmit) {
   let Button;
   let closure_2;
   let intl;
@@ -354,7 +353,6 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let items2;
   let left;
   let obj9;
-  let require;
   let right;
   ({ feedback: require, onChange: importDefault } = onSubmit);
   onSubmit = onSubmit.onSubmit;
@@ -383,7 +381,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let obj2;
       let obj3;
       value = value.value;
-      const require = value;
+      require = value;
       const name = value.name;
       const Fragment = React.Fragment;
       const obj = {
@@ -413,7 +411,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return closure_8(View, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCloseModal) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutomodSubmitFeedbackModal(onCloseModal) {
   let closure_3;
   let feedback_type;
   let obj = onCloseModal(feedback_type[8]);
@@ -427,11 +425,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCloseModal) => {
   feedback_type = tmp4[0];
   _slicedToArray = tmp4[1];
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function c(arg0) {
+    function handleChange(arg0) {
       closure_3(arg0);
-    };
-    cResult[0] = fn;
-    let first1 = fn;
+    }
+    cResult[0] = handleChange;
+    let first1 = handleChange;
   } else {
     first1 = cResult[0];
   }
@@ -470,7 +468,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCloseModal) => {
         customNavbar,
         headerLeft,
         render() {
-              const obj = { feedback, onChange, onSubmit };
+              const obj = { feedback, onChange: handleChange, onSubmit: handleSubmit };
               return closure_2_7(closure_2_13, obj);
             }
       };
@@ -482,27 +480,25 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCloseModal) => {
       tmp8 = obj3;
     }
   }
-  class S {
-    constructor() {
-      let channel;
-      let messageId;
-      const obj = AppAnalyticsUtils;
-      const obj2 = { feedback_type, message_id: automodDecision.messageId, content: automodDecision.messageContent, decision_id: automodDecision.decisionId };
-      obj.trackWithMetadata(AnalyticEvents.GUILD_AUTOMOD_FEEDBACK, obj2);
-      ({ messageId, channel } = automodDecision);
-      const obj3 = GuildAutomodActionCreators;
-      obj3.executeAlertAction(messageId, channel, AutomodAlert.AutomodAlertActionType.SUBMIT_FEEDBACK);
-      const obj4 = ToastUtils;
-      obj4.presentFeedbackSent();
-      onCloseModal();
-    }
+  function handleSubmit() {
+    let channel;
+    let messageId;
+    const obj = AppAnalyticsUtils;
+    const obj2 = { feedback_type, message_id: automodDecision.messageId, content: automodDecision.messageContent, decision_id: automodDecision.decisionId };
+    obj.trackWithMetadata(AnalyticEvents.GUILD_AUTOMOD_FEEDBACK, obj2);
+    ({ messageId, channel } = automodDecision);
+    const obj3 = GuildAutomodActionCreators;
+    obj3.executeAlertAction(messageId, channel, AutomodAlert.AutomodAlertActionType.SUBMIT_FEEDBACK);
+    const obj4 = ToastUtils;
+    obj4.presentFeedbackSent();
+    onCloseModal();
   }
   cResult[1] = automodDecision;
   cResult[2] = feedback_type;
   cResult[3] = onCloseModal;
-  cResult[4] = S;
-  tmp7 = S;
-}) : ((onCloseModal) => {
+  cResult[4] = handleSubmit;
+  tmp7 = handleSubmit;
+}) : (function AutomodSubmitFeedbackModal(onCloseModal) {
   let closure_3;
   let first;
   onCloseModal = onCloseModal.onCloseModal;
@@ -514,14 +510,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCloseModal) => {
   const items = [first, onCloseModal, automodDecision];
   const memo = react.useMemo(() => {
     let closure_1 = first;
-    function onChange(arg0) {
-      onSubmit(arg0);
+    function handleChange(arg0) {
+      handleSubmit(arg0);
     }
-    function onSubmit() {
+    function handleSubmit() {
       let channel;
       let messageId;
       const obj = onCloseModal(first[19]);
-      const obj2 = { feedback_type: onChange, message_id: feedback.messageId, content: feedback.messageContent, decision_id: feedback.decisionId };
+      const obj2 = { feedback_type: handleChange, message_id: feedback.messageId, content: feedback.messageContent, decision_id: feedback.decisionId };
       obj.trackWithMetadata(constants.GUILD_AUTOMOD_FEEDBACK, obj2);
       ({ messageId, channel } = feedback);
       const obj3 = onCloseModal(first[20]);
@@ -536,7 +532,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCloseModal) => {
       customNavbar,
       headerLeft,
       render() {
-        const obj = { feedback, onChange, onSubmit };
+        const obj = { feedback, onChange: handleChange, onSubmit: handleSubmit };
         return closure_2_7(closure_2_13, obj);
       }
     };

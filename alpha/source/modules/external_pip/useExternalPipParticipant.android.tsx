@@ -1,18 +1,18 @@
-// Module ID: 17187
-// Function ID: 17188
+// Module ID: 17468
+// Function ID: 17469
 // Name: useExternalPipParticipant
-// Dependencies: [32, 19, 4912, 502, 1999, 4919, 4917, 558, 576, 504, 2]
+// Dependencies: [32, 19, 6041, 502, 2011, 5108, 5113, 558, 576, 504, 2]
 
-// Module 17187 (useExternalPipParticipant)
+// Module 17468 (useExternalPipParticipant)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4912 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
-import CallConstants from "CallConstants" /* 4917 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
+import CallConstants from "CallConstants" /* 5113 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ function hasOnlySelfParticipant(participants, meId) {
 let react = react_mod;
 ({ isStreamParticipant: metroImportAll, ParticipantTypes: c9 } = CallConstants);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedParticipantStreamId) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSetHasActiveVideoOutputSink(selectedParticipantStreamId) {
   let tmp2;
   let tmp3;
   const obj = selectedParticipantStreamId(576);
@@ -76,24 +76,24 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedPartic
     tmp3 = cResult[2];
   }
   const effect = react.useEffect(tmp2, tmp3);
-}) : ((selectedParticipantStreamId) => {
+}) : (function useSetHasActiveVideoOutputSink(selectedParticipantStreamId) {
   selectedParticipantStreamId = selectedParticipantStreamId.selectedParticipantStreamId;
   const items = [selectedParticipantStreamId];
   const effect = react.useEffect(() => {
     let closure_0 = selectedParticipantStreamId;
     if (null != selectedParticipantStreamId) {
-      const useExternalPipParticipant = "useExternalPipParticipant";
+      const useExternalPipParticipant_str = "useExternalPipParticipant";
       let mediaEngine = MediaEngineStore.getMediaEngine();
-      mediaEngine.eachConnection((setHasActiveVideoOutputSink) => setHasActiveVideoOutputSink.setHasActiveVideoOutputSink(closure_0, true, useExternalPipParticipant));
+      mediaEngine.eachConnection((setHasActiveVideoOutputSink) => setHasActiveVideoOutputSink.setHasActiveVideoOutputSink(closure_0, true, useExternalPipParticipant_str));
       return () => {
         mediaEngine = mediaEngine.getMediaEngine();
-        mediaEngine.eachConnection((setHasActiveVideoOutputSink) => setHasActiveVideoOutputSink.setHasActiveVideoOutputSink(closure_1_0, false, useExternalPipParticipant));
+        mediaEngine.eachConnection((setHasActiveVideoOutputSink) => setHasActiveVideoOutputSink.setHasActiveVideoOutputSink(closure_1_0, false, useExternalPipParticipant_str));
       };
     }
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedParticipant(channelId) {
   let first;
   let focusedParticipantStreamId;
   let stateFromStoresObject;
@@ -141,7 +141,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
                     _setTimeout = setTimeout;
                     num = 3000;
                     closure_0 = setTimeout(() => {
-                      closure_1_3(() => { /* body not rendered: F153877 */ });
+                      closure_1_3(() => { /* body not rendered: F155418 */ });
                     }, 3000);
                     return () => {
                       clearTimeout(closure_0);
@@ -165,7 +165,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
                     _setTimeout = setTimeout;
                     num = 3000;
                     closure_0 = setTimeout(() => {
-                      closure_1_3(() => { /* body not rendered: F153877 */ });
+                      closure_1_3(() => { /* body not rendered: F155418 */ });
                     }, 3000);
                     return () => {
                       clearTimeout(closure_0);
@@ -191,7 +191,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
       tmp9 = items2;
     }
   }
-  const fn = function o() {
+  const fn = function l() {
     let id1;
     let streamId1;
     let tmp20;
@@ -319,14 +319,14 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
         return obj;
       }
     }
-    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "unicodeVersion" };
+    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "end" };
   };
   cResult[1] = channelId;
   cResult[2] = focusedParticipantStreamId;
   cResult[3] = meId;
   cResult[4] = fn;
   tmp8 = fn;
-}) : ((channelId) => {
+}) : (function useSelectedParticipant(channelId) {
   let closure_3;
   channelId = channelId.channelId;
   const focusedParticipantStreamId = channelId.focusedParticipantStreamId;
@@ -467,7 +467,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
         return obj;
       }
     }
-    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "unicodeVersion" };
+    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "end" };
   }, items1);
   const items2 = [stateFromStoresObject.selectedParticipantSpeaking];
   const effect = react.useEffect(() => {
@@ -485,7 +485,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   return stateFromStoresObject;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFocusedParticipant(channelId) {
   let first;
   let meId;
   let ref2;
@@ -512,7 +512,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
     const tmpResult = tmp(tmp2[9]);
     return tmpResult.useStateFromStoresObject(first, tmp6);
   }
-  const fn = function l() {
+  const fn = function u() {
     let obj;
     let tmp17;
     let tmp6;
@@ -593,7 +593,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   cResult[2] = meId;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((arg0) => {
+}) : (function useFocusedParticipant(arg0) {
   let ref2;
   ({ channelId: require, meId: dependencyMap } = arg0);
   react = undefined;
@@ -680,7 +680,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExternalPipParticipant() {
   let channelId;
   let focusedParticipantStreamId;
   let focusedParticipantType;
@@ -775,7 +775,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = stateFromStores1;
   cResult[4] = obj6;
   tmp9 = obj6;
-}) : (() => {
+}) : (function useExternalPipParticipant() {
   let focusedParticipantType;
   let focusedParticipantUserId;
   let id;

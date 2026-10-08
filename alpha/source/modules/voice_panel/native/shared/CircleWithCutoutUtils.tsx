@@ -1,12 +1,12 @@
-// Module ID: 9114
-// Function ID: 9115
+// Module ID: 10687
+// Function ID: 10688
 // Name: CircleWithCutoutUtils
-// Dependencies: [19, 21, 558, 576, 8169, 2]
+// Dependencies: [19, 21, 558, 576, 7550, 2]
 // Exports: getBadgeLeft, getBadgeTop, getCutoutCenterX, getCutoutCenterY
 
-// Module 9114 (CircleWithCutoutUtils)
+// Module 10687 (CircleWithCutoutUtils)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 8169 */;
+import inlineStyles from "inlineStyles" /* 7550 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -18,7 +18,7 @@ let c3;
 let closure_4;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let closure_5 = Math.PI / 180;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CircleWithCutout(arg0) {
   let circleFillColor;
   let circleRadius;
   let cutoutPositionInDegrees;
@@ -99,7 +99,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp22 = tmp24;
           }
           const obj3 = { children: React3(inlineStyles.Mask, obj4) };
-          const Defs = tmp(8169).Defs;
+          const Defs = tmp(7550).Defs;
           obj4 = { id: "mask", children: items1 };
           items1 = [tmp12, tmp15];
           const tmp21 = _false(Defs, obj3);
@@ -129,7 +129,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = cutoutPositionInDegrees;
   cResult[2] = sum;
   tmp6 = sum;
-}) : ((arg0) => {
+}) : (function CircleWithCutout(arg0) {
   let Mask;
   let circleFillColor;
   let circleRadius;

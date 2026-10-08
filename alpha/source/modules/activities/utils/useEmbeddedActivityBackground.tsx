@@ -1,24 +1,24 @@
-// Module ID: 9184
-// Function ID: 9185
+// Module ID: 10752
+// Function ID: 10753
 // Name: useEmbeddedActivityBackground
-// Dependencies: [32, 19, 558, 576, 7832, 2]
+// Dependencies: [32, 19, 558, 576, 8250, 2]
 
-// Module 9184 (useEmbeddedActivityBackground)
+// Module 10752 (useEmbeddedActivityBackground)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let applicationId;
+let nextPromise;
 
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
-let closure_4 = ["embedded_cover", "embedded_background"];
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
+let ref = ["embedded_cover", "embedded_background"];
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedActivityBackground(applicationId) {
   let closure_3;
   let format;
   let names;
-  let ref;
+  let tmp15;
   let tmp5;
   let tmp7;
   const tmp = applicationId;
@@ -57,60 +57,74 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
         }
         ref = obj2.useRef(names);
         if (cResult[5] !== names) {
-          const fn = function k() {
-            ref.current = names;
-          };
+          class B {
+            constructor() {
+              closure_4.current = closure_1;
+              return;
+            }
+          }
           cResult[5] = names;
-          cResult[6] = fn;
-          tmp10 = fn;
+          cResult[6] = B;
+          tmp10 = B;
         } else {
-          tmp10 = cResult[6];
+          class B {
+            constructor() {
+              closure_4.current = closure_1;
+              return;
+            }
+          }
         }
         const effect = obj2.useEffect(tmp10);
         if (cResult[7] !== applicationId) {
-          const fn2 = function y() {
-            const current = ref.current;
-            if (null != current) {
-              const tmp3 = names;
-              let obj = applicationId(names[4]);
-              const assets = obj.getAssets(tmp);
-              assets.then((result) => {
-                let tmp6;
-                closure_3(false);
-                const entries = Object.entries(result);
-                const obj = entries[Symbol.iterator]();
-                while (obj !== undefined) {
-                  let tmp5 = _slicedToArray(tmp3, 2);
-                  [r10020, tmp6] = tmp5;
-                  let tmp7 = tmp6;
-                  if (null != tmp6) {
-                    if ("" !== tmp7.id) {
-                      if (current.includes(tmp7.name)) {
-                        let tmp12 = _slicedToArray(tmp6.id);
-                        obj.return();
-                      }
-                    }
-                  }
-                  continue;
-                }
-              });
+          class O {
+            constructor() {
+              current = closure_4.current;
+              if (null != current) {
+                tmp2 = applicationId;
+                tmp3 = closure_1;
+                obj = applicationId(closure_1[4]);
+                assets = obj.getAssets(tmp);
+                nextPromise = assets.then(() => { /* body not rendered: F142083 */ });
+              }
+              return;
             }
-          };
+          }
           const items = [applicationId];
           cResult[7] = applicationId;
-          cResult[8] = fn2;
+          cResult[8] = O;
           cResult[9] = items;
           tmp13 = items;
-          tmp12 = fn2;
+          tmp12 = O;
         } else {
-          tmp12 = cResult[8];
+          class O {
+            constructor() {
+              current = closure_4.current;
+              if (null != current) {
+                tmp2 = applicationId;
+                tmp3 = closure_1;
+                obj = applicationId(closure_1[4]);
+                assets = obj.getAssets(tmp);
+                nextPromise = assets.then(() => { /* body not rendered: F142083 */ });
+              }
+              return;
+            }
+          }
           tmp13 = cResult[9];
         }
         const effect1 = obj2.useEffect(tmp12, tmp13);
         if (cResult[10] === tmp8) {
-          let tmp15;
-          if (cResult[11] === str2) {
-            tmp15 = cResult[12];
+          class O {
+            constructor() {
+              current = closure_4.current;
+              if (null != current) {
+                tmp2 = applicationId;
+                tmp3 = closure_1;
+                obj = applicationId(closure_1[4]);
+                assets = obj.getAssets(tmp);
+                nextPromise = assets.then(() => { /* body not rendered: F142083 */ });
+              }
+              return;
+            }
           }
           return tmp15;
         }
@@ -130,12 +144,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
   cResult[3] = size;
   cResult[4] = assetImage;
   tmp8 = assetImage;
-}) : ((applicationId) => {
+}) : (function useEmbeddedActivityBackground(applicationId) {
   let c2;
   let closure_3;
   let first;
   let names;
-  let ref;
   let tmp2;
   applicationId = applicationId.applicationId;
   ({ size, names } = applicationId);

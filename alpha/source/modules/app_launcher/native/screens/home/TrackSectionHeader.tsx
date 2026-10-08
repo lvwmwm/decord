@@ -1,30 +1,28 @@
-// Module ID: 11734
-// Function ID: 11735
+// Module ID: 11800
+// Function ID: 11801
 // Name: TrackSectionHeader
-// Dependencies: [8960, 558, 576, 1260, 8455, 2]
+// Dependencies: [11791, 558, 576, 1272, 8941, 2]
 
-// Module 11734 (TrackSectionHeader)
+// Module 11800 (TrackSectionHeader)
 import react from "react" /* 576 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8455 */;
-import AppLauncherStore from "AppLauncherStore" /* 8960 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8941 */;
+import AppLauncherStore from "AppLauncherStore" /* 11791 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let children;
-
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TrackSectionHeader(children) {
   children = children.children;
   closure_4(children.sectionName, children.numItems, children.numVisibleItems, children.viewed);
   return children;
-}) : ((children) => {
+}) : (function TrackSectionHeader(children) {
   children = children.children;
   closure_4(children.sectionName, children.numItems, children.numVisibleItems, children.viewed);
   return children;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? ((section_name, num_items, num_visible_items, arg3) => {
+let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackSectionHeader(section_name, num_items, num_visible_items, arg3) {
   let first;
   const obj = react;
   const cResult = obj.c(9);
@@ -68,7 +66,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? ((section_name, n
   cResult[3] = section_name;
   cResult[4] = obj3;
   tmp7 = obj3;
-}) : ((section_name, num_items, num_visible_items, disableTrack) => {
+}) : (function useTrackSectionHeader(section_name, num_items, num_visible_items, disableTrack) {
   const obj = { type: discord_common_AnalyticsUtils.ImpressionTypes.VIEW, name: discord_common_AnalyticsUtils.ImpressionNames.APP_LAUNCHER_SECTION, properties: { section_name, num_items, num_visible_items, source: AppLauncherStore.entrypoint() } };
   const items = [];
   const obj3 = { disableTrack: !disableTrack };

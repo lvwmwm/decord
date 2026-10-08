@@ -1,20 +1,20 @@
-// Module ID: 16298
-// Function ID: 16299
+// Module ID: 16558
+// Function ID: 16559
 // Name: isHomeDrawerChannelMuted
-// Dependencies: [4517, 2055, 5077, 558, 576, 504, 2]
+// Dependencies: [4709, 2067, 5971, 558, 576, 504, 2]
 
-// Module 16298 (isHomeDrawerChannelMuted)
+// Module 16558 (isHomeDrawerChannelMuted)
 import react from "react" /* 576 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4517 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
+import ChannelRecord from "ChannelRecord" /* 2067 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4709 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 const isThread = ChannelRecord.isThread;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsHomeDrawerChannelMuted() {
   let tmp4;
   let tmp5;
   let tmp6;
@@ -50,7 +50,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5, tmp6, get_initialized.statesWillNeverBeEqual);
-}) : (() => {
+}) : (function useIsHomeDrawerChannelMuted() {
   const items = [JoinedThreadsStore, UserGuildSettingsStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => {

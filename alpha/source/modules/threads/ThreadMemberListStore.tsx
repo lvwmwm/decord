@@ -1,26 +1,26 @@
-// Module ID: 9511
-// Function ID: 9512
+// Module ID: 8677
+// Function ID: 8678
 // Name: ThreadMemberListStore
-// Dependencies: [32, 2051, 2112, 6791, 4936, 5445, 1377, 1085, 12, 11, 4520, 4728, 1375, 504, 584, 2]
+// Dependencies: [32, 2063, 2124, 6966, 5106, 5755, 1389, 1085, 12, 11, 4712, 4922, 1387, 504, 584, 2]
 
-// Module 9511 (ThreadMemberListStore)
+// Module 8677 (ThreadMemberListStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4520 */;
-import UserUtilsDefault from "UserUtils" /* 4728 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4712 */;
+import UserUtilsDefault from "UserUtils" /* 4922 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 6791 */;
-import PresenceStore from "PresenceStore" /* 4936 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5445 */;
-import UserStore from "UserStore" /* 1377 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 6966 */;
+import PresenceStore from "PresenceStore" /* 5106 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5755 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
-let closure_13, set, subscribedThreadIds;
+let closure_13, set, subscribedThreadIds, version;
 
 let closure_12;
 let unpackModuleId;
@@ -374,7 +374,7 @@ class ThreadMemberListStore extends Store {
     });
   }
   getMemberListVersion(arg0) {
-    let version;
+    version = undefined;
     if (closure_13[arg0] != null) {
       version = tmp.version;
     }

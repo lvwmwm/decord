@@ -1,12 +1,12 @@
-// Module ID: 12940
-// Function ID: 12941
+// Module ID: 13219
+// Function ID: 13220
 // Name: useIsGameFriends
-// Dependencies: [32, 7155, 1085, 558, 576, 504, 5596, 2]
+// Dependencies: [32, 7335, 1085, 558, 576, 504, 5962, 2]
 
-// Module 12940 (useIsGameFriends)
+// Module 13219 (useIsGameFriends)
 import Constants from "Constants" /* 1085 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7155 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7335 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require;
 
 const RelationshipTypes = Constants.RelationshipTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsGameFriends(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -30,7 +30,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function u() {
+    const fn = function l() {
       const gameRelationshipsForUserByType = GameRelationshipStore.getGameRelationshipsForUserByType(closure_0, RelationshipTypes.FRIEND);
       const items = [gameRelationshipsForUserByType.length > 0, GameRelationshipStore.getGameRelationshipsVersion()];
       return items;
@@ -47,7 +47,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = require("get initialized");
   return _slicedToArray(tmpResult.useStateFromStores(first, tmp6, tmp7, require("SecondaryIndexMapUtils").isVersionEqual), 1)[0];
-}) : ((arg0) => {
+}) : (function useIsGameFriends(arg0) {
   let closure_0;
   _require = arg0;
   let items = [GameRelationshipStore];

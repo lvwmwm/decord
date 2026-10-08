@@ -1,30 +1,28 @@
-// Module ID: 16021
-// Function ID: 16022
+// Module ID: 16281
+// Function ID: 16282
 // Name: MessagesItemHappeningNow
-// Dependencies: [19, 17, 15129, 21, 11827, 587, 4896, 558, 576, 4586, 16022, 8503, 2]
+// Dependencies: [19, 17, 15391, 21, 11912, 587, 5090, 558, 576, 4778, 16282, 8987, 2]
 // Exports: getMessagesItemHappeningNowHeight
 
-// Module 16021 (MessagesItemHappeningNow)
+// Module 16281 (MessagesItemHappeningNow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4586 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 11827 */;
+import useToken from "useToken" /* 4778 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 11912 */;
 import react from "react" /* 19 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 15129 */;
-import createStyles from "createStyles" /* 4896 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15391 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let listRef;
 
 let HappeningNowItem;
 let closure_4;
 let tmp;
 let tmp4;
-const CutoutBackgroundContext = tmp(8503);
-const HappeningNowDefault = tmp4(16022);
+const CutoutBackgroundContext = tmp(8987);
+const HappeningNowDefault = tmp4(16282);
 const View = react_native.View;
 ({ HAPPENING_NOW_CARD_HEIGHT: closure_4, HappeningNowItem } = HappeningNowConstants);
 const jsx = Fragment.jsx;
@@ -36,7 +34,7 @@ let closure_7 = createStyles.createStyles((height) => {
   ({ height, paddingStart: nativeDefault.space.PX_8, overflow: "hidden" });
   return obj;
 });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRef) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemHappeningNow(listRef) {
   let tmp6;
   const obj = react2;
   const cResult = obj.c(5);
@@ -64,7 +62,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((l
   cResult[3] = tmp6;
   cResult[4] = tmp11;
   tmp10 = tmp11;
-}) : ((listRef) => {
+}) : (function MessagesItemHappeningNow(listRef) {
   listRef = listRef.listRef;
   const obj = useToken;
   ({ style: closure_7(React3 + obj.useToken(nativeDefault.modules.mobile.MESSAGES_ITEM_HAPPENING_NOW_PADDING_BOTTOM)).container, collapsable: false, children: null });

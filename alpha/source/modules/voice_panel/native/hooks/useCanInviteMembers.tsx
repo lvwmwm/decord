@@ -1,12 +1,12 @@
-// Module ID: 17245
-// Function ID: 17246
+// Module ID: 17526
+// Function ID: 17527
 // Name: useCanInviteMembers
-// Dependencies: [2051, 4515, 1096, 558, 576, 573, 2]
+// Dependencies: [2063, 4707, 1096, 558, 576, 573, 2]
 
-// Module 17245 (useCanInviteMembers)
+// Module 17526 (useCanInviteMembers)
 import Constants from "Constants" /* 1096 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require;
 
 const Permissions = Constants.Permissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanInviteMembers(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -49,7 +49,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(573);
   return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : ((arg0) => {
+}) : (function useCanInviteMembers(arg0) {
   let closure_0;
   _require = arg0;
   const items = [ChannelStore, PermissionStore];

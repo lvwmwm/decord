@@ -1,24 +1,24 @@
-// Module ID: 6663
-// Function ID: 6664
+// Module ID: 6840
+// Function ID: 6841
 // Name: ApplicationConnectionCard
-// Dependencies: [19, 5124, 1085, 21, 558, 576, 504, 6664, 6665, 1126, 6667, 6674, 1252, 5076, 6679, 2]
+// Dependencies: [19, 5436, 1085, 21, 558, 576, 504, 6841, 6842, 1126, 6844, 6851, 1264, 5105, 6856, 2]
 
-// Module 6663 (ApplicationConnectionCard)
+// Module 6840 (ApplicationConnectionCard)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5076 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6665 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5105 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6842 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5124 */;
+import ApplicationStore from "ApplicationStore" /* 5436 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let catchPromise, connection, tmp3, tmp4, tmp5, tmp8;
+let catchPromise, tmp3, tmp4, tmp5, tmp8;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((connection) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationConnectionCard(connection) {
   let _location;
   let analyticsLocations;
   let canStartAuthorization;
@@ -262,7 +262,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((connection) => {
   cResult[7] = items2;
   tmp11 = items2;
   tmp10 = L;
-}) : ((connection) => {
+}) : (function ApplicationConnectionCard(connection) {
   let canStartAuthorization;
   let fetched;
   let hasAlreadyLinked;

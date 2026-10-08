@@ -1,9 +1,9 @@
-// Module ID: 8782
-// Function ID: 8783
+// Module ID: 9128
+// Function ID: 9129
 // Name: TwoWayLinkDiscordConsent
-// Dependencies: [5, 32, 19, 17, 21, 3, 4896, 558, 576, 8774, 6684, 8749, 38, 5601, 1126, 6626, 6544, 2]
+// Dependencies: [5, 32, 19, 17, 21, 3, 5090, 558, 576, 9120, 6861, 9129, 38, 5375, 1126, 6803, 6720, 2]
 
-// Module 8782 (TwoWayLinkDiscordConsent)
+// Module 9128 (TwoWayLinkDiscordConsent)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -11,11 +11,11 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let callbackCode, v0;
+let v0;
 
 let c9;
 let metroImportAll;
@@ -27,7 +27,7 @@ let react = react_mod;
 const tmp4 = new LoggerDefault("TwoWayLinkDiscordConsentNative");
 let closure_10 = tmp4;
 let closure_11 = createStyles.createStyles({ scroller: { alignSelf: "stretch", flexShrink: 1 }, flex: { flex: 1 } });
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((callbackCode) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLinkDiscordConsent(callbackCode) {
   let appDetails;
   let body;
   let clientId;
@@ -200,17 +200,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((callbackCode) => {
       }
     })();
   });
-  const fn = function() {
+  function t1() {
     return closure_0(...arguments);
-  };
+  }
   cResult[0] = callbackCode;
   cResult[1] = callbackState;
   cResult[2] = onError;
   cResult[3] = onNext;
   cResult[4] = platformType;
-  cResult[5] = fn;
-  tmp6 = fn;
-}) : ((callbackCode) => {
+  cResult[5] = t1;
+  tmp6 = t1;
+}) : (function TwoWayLinkDiscordConsent(callbackCode) {
   let Button;
   let appDetails;
   let body;

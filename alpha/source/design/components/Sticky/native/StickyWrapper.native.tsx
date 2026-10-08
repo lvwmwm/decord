@@ -1,9 +1,9 @@
-// Module ID: 9794
-// Function ID: 9795
+// Module ID: 10358
+// Function ID: 10359
 // Name: StickyWrapper
-// Dependencies: [19, 17, 21, 558, 576, 1370, 2]
+// Dependencies: [19, 17, 21, 558, 576, 1382, 2]
 
-// Module 9794 (StickyWrapper)
+// Module 10358 (StickyWrapper)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -16,11 +16,11 @@ let c2;
 let c3;
 let closure_4;
 let tmp;
-const utils_PlatformUtils = tmp(1370);
+const utils_PlatformUtils = tmp(1382);
 ({ StyleSheet, View: c2 } = react_native);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 const styles = StyleSheet.create({ wrapper: { height: "100%", width: "100%" }, header: { zIndex: 1 }, androidHeader: { position: "absolute", top: 0, left: 0, right: 0 } });
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function StickyWrapper(arg0) {
   let children;
   let header;
   let items2;
@@ -81,7 +81,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = tmp6;
   cResult[8] = tmp13;
   tmp12 = tmp13;
-}) : ((header) => {
+}) : (function StickyWrapper(header) {
   let items;
   let items2;
   header = header.header;

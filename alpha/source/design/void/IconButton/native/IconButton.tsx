@@ -1,18 +1,18 @@
-// Module ID: 13291
-// Function ID: 13292
+// Module ID: 13434
+// Function ID: 13435
 // Name: IconButton/IconButton
-// Dependencies: [109, 19, 21, 4896, 587, 5627, 558, 576, 1188, 5916, 2]
+// Dependencies: [109, 19, 21, 5090, 587, 5974, 558, 576, 1200, 6189, 2]
 
-// Module 13291 (IconButton/IconButton)
+// Module 13434 (IconButton/IconButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import LegacyTokens from "LegacyTokens" /* 5627 */;
-import Pressables from "Pressables" /* 5916 */;
+import native from "native" /* 1200 */;
+import LegacyTokens from "LegacyTokens" /* 5974 */;
+import Pressables from "Pressables" /* 6189 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ obj4 = { borderRadius: Sizes.SMALL_24 / 2 };
 ({ tintColor: LegacyTokens.DARK_PRIMARY_300_LIGHT_PRIMARY_500 });
 let closure_7 = createStyles(obj2);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((accessibilityLabel) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SquareIconButton(accessibilityLabel) {
   let accessibilityHidden;
   let disableColor;
   let disabled;
@@ -62,9 +62,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((accessibilityLabel) 
         tmp7 = cResult[3];
       }
       if (size === obj.LARGE_40) {
-        REFRESH_SMALL_16 = tmp(1188).Icon.Sizes.MEDIUM;
+        REFRESH_SMALL_16 = tmp(1200).Icon.Sizes.MEDIUM;
       } else {
-        REFRESH_SMALL_16 = tmp(1188).Icon.Sizes.REFRESH_SMALL_16;
+        REFRESH_SMALL_16 = tmp(1200).Icon.Sizes.REFRESH_SMALL_16;
       }
       let icon = null;
       if (!disableColor) {
@@ -130,7 +130,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((accessibilityLabel) 
   cResult[2] = tmp4.container;
   cResult[3] = items1;
   tmp7 = items1;
-}) : ((size) => {
+}) : (function SquareIconButton(size) {
   let Icon;
   let REFRESH_SMALL_16;
   let accessibilityHidden;
@@ -162,17 +162,17 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((accessibilityLabel) 
     }
   }, items);
   let tmp6;
-  const PressableOpacity = size(5916).PressableOpacity;
+  const PressableOpacity = size(6189).PressableOpacity;
   if (!accessibilityHidden) {
     tmp6 = accessibilityLabel;
   }
   const obj = { accessibilityRole: "button", accessibilityLabel: tmp6, accessibilityElementsHidden: accessibilityHidden, onPress, disabled, style: items1, children: tmp3(Icon, obj2) };
   items1 = [tmp.container, style, memo];
-  Icon = tmp4(1188).Icon;
+  Icon = tmp4(1200).Icon;
   if (size === obj.LARGE_40) {
-    REFRESH_SMALL_16 = tmp4(1188).Icon.Sizes.MEDIUM;
+    REFRESH_SMALL_16 = tmp4(1200).Icon.Sizes.MEDIUM;
   } else {
-    REFRESH_SMALL_16 = tmp4(1188).Icon.Sizes.REFRESH_SMALL_16;
+    REFRESH_SMALL_16 = tmp4(1200).Icon.Sizes.REFRESH_SMALL_16;
   }
   let icon = null;
   obj2 = { size: REFRESH_SMALL_16, style: items2, disableColor, source };
@@ -185,7 +185,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((accessibilityLabel) 
 let closure_8 = tmp3;
 tmp3.Sizes = Sizes;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((disableColor) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CircularIconButton(disableColor) {
   let closure_0;
   let closure_1;
   let style;
@@ -198,27 +198,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((disableColor) => {
     ({ style, size } = disableColor);
     _require = size;
     disableColor = disableColor.disableColor;
+    const tmp8 = _objectWithoutProperties(disableColor, closure_2);
     cResult[0] = disableColor;
     cResult[1] = disableColor;
-    const tmp8 = _objectWithoutProperties(disableColor, closure_2);
-    class E {
-      constructor() {
-        tmp = closure_0;
-        tmp2 = closure_6;
-        if (closure_6.SMALL_24 === closure_0) {
-          tmp5 = closure_1;
-          return closure_1.smallCircular;
-        } else if (tmp2.MEDIUM_32 === tmp) {
-          tmp4 = closure_1;
-          return closure_1.mediumCircular;
-        } else if (tmp2.LARGE_40 === tmp) {
-          tmp3 = closure_1;
-          return closure_1.largeCircular;
-        } else {
-          return;
-        }
-      }
-    }
+    cResult[2] = tmp8;
     cResult[3] = size;
     cResult[4] = style;
     tmp5 = style;
@@ -247,6 +230,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((disableColor) => {
       tmp11 = cResult[9];
     }
     if (cResult[10] === tmp5) {
+      let tmp13;
+      if (cResult[11] === tmp11) {
+        tmp13 = cResult[12];
+      }
       if (cResult[13] === tmp2) {
         if (cResult[14] === tmp3) {
           if (cResult[15] === tmp4) {
@@ -260,24 +247,6 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((disableColor) => {
       }
       const merged = Object.assign(tmp3);
       const tmp20 = <closure_8 style={tmp13} size={tmp4} disableColor={tmp2} />;
-      class E {
-        constructor() {
-          tmp = closure_0;
-          tmp2 = closure_6;
-          if (closure_6.SMALL_24 === closure_0) {
-            tmp5 = closure_1;
-            return closure_1.smallCircular;
-          } else if (tmp2.MEDIUM_32 === tmp) {
-            tmp4 = closure_1;
-            return closure_1.mediumCircular;
-          } else if (tmp2.LARGE_40 === tmp) {
-            tmp3 = closure_1;
-            return closure_1.largeCircular;
-          } else {
-            return;
-          }
-        }
-      }
       cResult[13] = tmp2;
       cResult[14] = tmp3;
       cResult[15] = tmp4;
@@ -289,48 +258,22 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((disableColor) => {
     cResult[10] = tmp5;
     cResult[11] = tmp11;
     cResult[12] = items;
-    class E {
-      constructor() {
-        tmp = closure_0;
-        tmp2 = closure_6;
-        if (closure_6.SMALL_24 === closure_0) {
-          tmp5 = closure_1;
-          return closure_1.smallCircular;
-        } else if (tmp2.MEDIUM_32 === tmp) {
-          tmp4 = closure_1;
-          return closure_1.mediumCircular;
-        } else if (tmp2.LARGE_40 === tmp) {
-          tmp3 = closure_1;
-          return closure_1.largeCircular;
-        } else {
-          return;
-        }
-      }
-    }
+    tmp13 = items;
   }
-  class E {
-    constructor() {
-      tmp = closure_0;
-      tmp2 = closure_6;
-      if (closure_6.SMALL_24 === closure_0) {
-        tmp5 = closure_1;
-        return closure_1.smallCircular;
-      } else if (tmp2.MEDIUM_32 === tmp) {
-        tmp4 = closure_1;
-        return closure_1.mediumCircular;
-      } else if (tmp2.LARGE_40 === tmp) {
-        tmp3 = closure_1;
-        return closure_1.largeCircular;
-      } else {
-        return;
-      }
+  function getCircularStyle() {
+    if (obj.SMALL_24 === closure_0) {
+      return closure_1.smallCircular;
+    } else if (obj.MEDIUM_32 === closure_0) {
+      return closure_1.mediumCircular;
+    } else if (obj.LARGE_40 === closure_0) {
+      return closure_1.largeCircular;
     }
   }
   cResult[5] = tmp4;
   cResult[6] = tmp9;
-  cResult[7] = E;
-  tmp10 = E;
-}) : ((size) => {
+  cResult[7] = getCircularStyle;
+  tmp10 = getCircularStyle;
+}) : (function CircularIconButton(size) {
   let disableColor;
   let items;
   let largeCircular;

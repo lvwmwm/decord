@@ -1,20 +1,20 @@
-// Module ID: 15990
-// Function ID: 15991
+// Module ID: 16250
+// Function ID: 16251
 // Name: useHomeDrawerPeekHint
-// Dependencies: [32, 19, 4885, 15983, 1085, 2048, 4618, 2036, 558, 576, 1491, 15991, 504, 15985, 4704, 6901, 4897, 5604, 15988, 2]
+// Dependencies: [32, 19, 5079, 16243, 1085, 2060, 4810, 2048, 558, 576, 1503, 16251, 504, 16245, 4898, 7090, 5091, 5374, 16248, 2]
 
-// Module 15990 (useHomeDrawerPeekHint)
+// Module 16250 (useHomeDrawerPeekHint)
 import Constants from "Constants" /* 1085 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
-import spring from "spring" /* 5604 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 15988 */;
+import dismissible_content from "dismissible_content" /* 2048 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
+import spring from "spring" /* 5374 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16248 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import HomeDrawerStore from "HomeDrawerStore" /* 15983 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import HomeDrawerStore from "HomeDrawerStore" /* 16243 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let ref = { code: "function useHomeDrawerPeekHintTsx1(){const{gestureState,panel
 let closure_13 = { code: "function useHomeDrawerPeekHintTsx2(isDragged,wasDragged){const{isPeekGranted,runOnJS,handleDrawerDragged}=this.__closure;if(!isPeekGranted||wasDragged==null){return;}if(isDragged&&!wasDragged){runOnJS(handleDrawerDragged)();}}" };
 let __initData = { code: "function useHomeDrawerPeekHintTsx3(){const{gestureState,panelX,PEEK_HINT_DRAWER_DRAG_THRESHOLD}=this.__closure;return gestureState.get().active&&panelX.get()>PEEK_HINT_DRAWER_DRAG_THRESHOLD;}" };
 let __initData2 = { code: "function useHomeDrawerPeekHintTsx4(isDragged,wasDragged){const{isPeekGranted,runOnJS,handleDrawerDragged}=this.__closure;if(!isPeekGranted||wasDragged==null)return;if(isDragged&&!wasDragged){runOnJS(handleDrawerDragged)();}}" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHomeDrawerPeekHint(arg0, arg1) {
   let closure_0;
   let items;
   let noteInteraction;
@@ -136,7 +136,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
           obj = closure_0(closure_1[16]);
           obj1 = { duration: 1500, easing: closure_9 };
           result = set(obj.withTiming(40, obj1));
-          closure_13.current = setTimeout(() => { /* body not rendered: F145500 */ }, 2500);
+          closure_13.current = setTimeout(() => { /* body not rendered: F146988 */ }, 2500);
           return;
         }
       }
@@ -161,7 +161,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
           obj = closure_0(closure_1[16]);
           obj1 = { duration: 1500, easing: closure_9 };
           result = set(obj.withTiming(40, obj1));
-          closure_13.current = setTimeout(() => { /* body not rendered: F145500 */ }, 2500);
+          closure_13.current = setTimeout(() => { /* body not rendered: F146988 */ }, 2500);
           return;
         }
       }
@@ -184,7 +184,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
           obj = closure_0(closure_1[16]);
           obj1 = { duration: 1500, easing: closure_9 };
           result = set(obj.withTiming(40, obj1));
-          closure_13.current = setTimeout(() => { /* body not rendered: F145500 */ }, 2500);
+          closure_13.current = setTimeout(() => { /* body not rendered: F146988 */ }, 2500);
           return;
         }
       }
@@ -214,7 +214,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     cResult[8] = items1;
   }
   tmp24 = closure_10;
-}) : ((arg0, arg1) => {
+}) : (function useHomeDrawerPeekHint(arg0, arg1) {
   let closure_0;
   let noteInteraction;
   let ref4;

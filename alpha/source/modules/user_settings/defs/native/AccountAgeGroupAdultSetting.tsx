@@ -1,20 +1,20 @@
-// Module ID: 14554
-// Function ID: 14555
+// Module ID: 14815
+// Function ID: 14816
 // Name: AccountAgeGroupAdultSetting
-// Dependencies: [7645, 558, 5108, 5587, 14511, 11142, 1126, 2]
+// Dependencies: [7966, 558, 5905, 5918, 14771, 11262, 1126, 2]
 
-// Module 14554 (AccountAgeGroupAdultSetting)
+// Module 14815 (AccountAgeGroupAdultSetting)
 import intl2 from "intl" /* 1126 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5108 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5587 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14511 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5905 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5918 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14771 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccountAgeGroupAdultSettingPredicate() {
   const obj = AgeVerificationUtils;
   const isAgeVerified = obj.useIsAgeVerified();
   const obj2 = AgeVerificationUtils;
@@ -33,7 +33,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     hasAgeGatedFeatures = !isTinyBroncoSettingsEnabled;
   }
   return hasAgeGatedFeatures;
-}) : (() => {
+}) : (function useAccountAgeGroupAdultSettingPredicate() {
   const obj = AgeVerificationUtils;
   const isAgeVerified = obj.useIsAgeVerified();
   const obj2 = AgeVerificationUtils;

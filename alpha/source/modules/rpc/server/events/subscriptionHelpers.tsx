@@ -1,30 +1,27 @@
-// Module ID: 14362
-// Function ID: 14363
+// Module ID: 14589
+// Function ID: 14590
 // Name: subscriptionHelpers
-// Dependencies: [2050, 14321, 9000, 7200, 5323, 1085, 2011, 8738, 9025, 5919, 14322, 7221, 2]
+// Dependencies: [2062, 14546, 10612, 7379, 1085, 2023, 14547, 11127, 8302, 14548, 7401, 2]
 // Exports: getInitialSubscriptionPayload
 
-// Module 14362 (subscriptionHelpers)
+// Module 14589 (subscriptionHelpers)
 import Constants2 from "Constants" /* 1085 */;
-import Constants3 from "Constants" /* 5323 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5919 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7221 */;
-import FramesConstants from "FramesConstants" /* 8738 */;
-import useThermalState from "useThermalState" /* 9025 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14322 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 14321 */;
-import FramesStore from "FramesStore" /* 9000 */;
-import QuestStore from "QuestStore" /* 7200 */;
-import Constants from "Constants" /* 2011 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7401 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8302 */;
+import useThermalState from "useThermalState" /* 11127 */;
+import isPostMessageSocketDefault from "isPostMessageSocket" /* 14547 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14548 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 14546 */;
+import FramesStore from "FramesStore" /* 10612 */;
+import QuestStore from "QuestStore" /* 7379 */;
+import Constants from "Constants" /* 2023 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
 let metroImportDefault;
-const TransportTypes = Constants3.TransportTypes;
 const RPCEvents = Constants2.RPCEvents;
 ({ ActivityLayoutMode: metroImportDefault, ActivityScreenOrientation: metroImportAll } = Constants);
-const asLaunched = FramesConstants.asLaunched;
 const result = size.fileFinishedImporting("modules/rpc/server/events/subscriptionHelpers.tsx");
 
 export const getInitialSubscriptionPayload = function getInitialSubscriptionPayload(application, arg1, quest_id) {
@@ -64,16 +61,16 @@ export const getInitialSubscriptionPayload = function getInitialSubscriptionPayl
     }
     return tmp34;
   } else if (RPCEvents.FRAME_LAYOUT_MODE_UPDATE === arg1) {
-    if (application.source.type !== TransportTypes.POST_MESSAGE) {
-      return null;
-    } else {
-      const tmp27 = asLaunched(FramesStore.getFrameByIframeId(application.source.iframeId));
-      let tmp28 = null;
-      if (null != tmp27) {
-        tmp28 = { layout_mode: tmp27.data.layoutMode };
-        const obj7 = { layout_mode: tmp27.data.layoutMode };
+    if (isPostMessageSocketDefault(application)) {
+      const frameByEmbeddedContext = FramesStore.getFrameByEmbeddedContext(application.context, application.source.iframeId);
+      let tmp29 = null;
+      if (null != frameByEmbeddedContext) {
+        tmp29 = { layout_mode: frameByEmbeddedContext.data.layoutMode };
+        const obj7 = { layout_mode: frameByEmbeddedContext.data.layoutMode };
       }
-      return tmp28;
+      return tmp29;
+    } else {
+      return null;
     }
   } else if (RPCEvents.THERMAL_STATE_UPDATE === arg1) {
     const obj6 = useThermalState;

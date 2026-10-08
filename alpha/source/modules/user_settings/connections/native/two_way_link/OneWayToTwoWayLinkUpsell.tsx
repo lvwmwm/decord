@@ -1,22 +1,20 @@
-// Module ID: 14790
-// Function ID: 14791
+// Module ID: 15051
+// Function ID: 15052
 // Name: OneWayToTwoWayLinkUpsell
-// Dependencies: [19, 17, 1085, 2048, 21, 4896, 587, 5922, 558, 576, 1188, 10367, 4892, 1126, 5601, 2]
+// Dependencies: [19, 17, 1085, 2060, 21, 5090, 587, 5902, 558, 576, 1200, 9964, 5086, 1126, 5375, 2]
 
-// Module 14790 (OneWayToTwoWayLinkUpsell)
+// Module 15051 (OneWayToTwoWayLinkUpsell)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10367 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 9964 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import TextStyles_mod from "TextStyles" /* 5922 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import TextStyles_mod from "TextStyles" /* 5902 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let markAsDismissed;
 
 let metroImportDefault;
 let metroRequire;
@@ -39,7 +37,7 @@ TextStyles = TextStyles_mod;
 const merged1 = Object.assign(TextStyles(Fonts.PRIMARY_MEDIUM, nativeDefault.colors.TEXT_DEFAULT, 14));
 let closure_8 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneWayToTwoWayNewTag(markAsDismissed) {
   let tmp5;
   let tmp6;
   let tmp8;
@@ -65,7 +63,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed
   const effect = react.useEffect(tmp5, tmp6);
   if (cResult[3] !== tmp4.newContainer) {
     const obj2 = { containerStyle: tmp4.newContainer, variant: "text-xs/bold" };
-    const tmp10 = closure_6(tmp(1188).NewTag, obj2);
+    const tmp10 = closure_6(tmp(1200).NewTag, obj2);
     cResult[3] = tmp4.newContainer;
     cResult[4] = tmp10;
     tmp8 = tmp10;
@@ -73,16 +71,16 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed
     tmp8 = cResult[4];
   }
   return tmp8;
-}) : ((markAsDismissed) => {
+}) : (function OneWayToTwoWayNewTag(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
   const items = [markAsDismissed];
   const tmp = closure_8();
   const effect = react.useEffect(() => markAsDismissed(ContentDismissActionType.UNKNOWN), items);
   const obj = { containerStyle: tmp.newContainer, variant: "text-xs/bold" };
-  return closure_6(markAsDismissed(1188).NewTag, obj);
+  return closure_6(markAsDismissed(1200).NewTag, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneWayToTwoWayLinkUpsell(onPress) {
   let body;
   let img;
   let items;
@@ -156,7 +154,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
               }
               if (cResult[17] !== onPress) {
                 const obj3 = { text: tmp23, onPress };
-                const tmp27 = closure_6(tmp(5601).Button, obj3);
+                const tmp27 = closure_6(tmp(5375).Button, obj3);
                 cResult[17] = onPress;
                 cResult[18] = tmp27;
                 tmp25 = tmp27;
@@ -197,7 +195,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
               tmp28 = tmp31;
             }
             const obj6 = { style: tmp4.body, variant: "text-sm/medium", children: body };
-            const tmp21 = closure_6(tmp(4892).Text, obj6);
+            const tmp21 = closure_6(tmp(5086).Text, obj6);
             cResult[13] = body;
             cResult[14] = tmp4.body;
             cResult[15] = tmp21;
@@ -224,12 +222,12 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     tmp11 = tmp14;
   }
   const obj9 = { style: tmp4.title, variant: "text-md/semibold", children: title };
-  const tmp10 = closure_6(tmp(4892).Text, obj9);
+  const tmp10 = closure_6(tmp(5086).Text, obj9);
   cResult[2] = tmp4.title;
   cResult[3] = title;
   cResult[4] = tmp10;
   tmp9 = tmp10;
-}) : ((newIndicatorDismissibleContent) => {
+}) : (function OneWayToTwoWayLinkUpsell(newIndicatorDismissibleContent) {
   let Button;
   let body;
   let img;
@@ -261,14 +259,14 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   const obj3 = { style: tmp.titleContainer, children: items1 };
   items1 = [closure_6(SelectedDismissibleContentDefault, obj4), ];
   const obj5 = { style: tmp.title, variant: "text-md/semibold", children: title };
-  items1[1] = closure_6(newIndicatorDismissibleContent(4892).Text, obj5);
+  items1[1] = closure_6(newIndicatorDismissibleContent(5086).Text, obj5);
   items2 = [closure_7(View, obj3), img];
   items3 = [closure_7(View, obj2), , ];
   const obj6 = { style: tmp.body, variant: "text-sm/medium", children: body };
-  items3[1] = closure_6(newIndicatorDismissibleContent(4892).Text, obj6);
+  items3[1] = closure_6(newIndicatorDismissibleContent(5086).Text, obj6);
   const obj7 = { style: tmp.reconnectButton, children: closure_6(Button, obj8) };
   obj8 = { text: intl.string(newIndicatorDismissibleContent(1126).t.vD60Pv), onPress };
-  Button = newIndicatorDismissibleContent(5601).Button;
+  Button = newIndicatorDismissibleContent(5375).Button;
   intl = newIndicatorDismissibleContent(1126).intl;
   items3[2] = closure_6(View, obj7);
   return closure_7(View, obj);

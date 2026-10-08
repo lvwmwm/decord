@@ -1,24 +1,22 @@
-// Module ID: 12027
-// Function ID: 12028
+// Module ID: 12100
+// Function ID: 12101
 // Name: UpcomingEventsLongPressActionSheet
-// Dependencies: [19, 17, 2074, 5077, 5078, 21, 4896, 558, 576, 504, 5978, 1126, 6651, 1188, 12028, 8924, 6612, 4860, 12029, 12030, 6621, 6616, 6708, 2]
+// Dependencies: [19, 17, 2086, 5971, 5972, 21, 5090, 558, 576, 504, 6161, 1126, 6828, 1200, 12101, 8555, 6789, 5054, 12102, 12103, 6798, 6793, 6885, 2]
 
-// Module 12027 (UpcomingEventsLongPressActionSheet)
+// Module 12100 (UpcomingEventsLongPressActionSheet)
 import react_native from "react-native" /* 17 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import ReadStateConstants from "ReadStateConstants" /* 5078 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 6612 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6616 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6621 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import ReadStateConstants from "ReadStateConstants" /* 5972 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 6789 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6793 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6798 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let guildId;
 
 let metroImportAll;
 let metroImportDefault;
@@ -26,10 +24,12 @@ const View = react_native.View;
 const ReadStateTypes = ReadStateConstants.ReadStateTypes;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = createStyles.createStyles({ headerIcon: { marginRight: 16 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpcomingEventsLongPressActionSheet(guildId) {
   let first;
-  let intl;
+  let intl2;
+  let items2;
   let tmp11;
+  let tmp13;
   let tmp7;
   let tmp9;
   const tmp = guildId;
@@ -64,132 +64,83 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     tmp9 = cResult[3];
   }
   if (cResult[4] !== guildId) {
-    class F {
-      constructor() {
-        return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
-      }
-    }
+    const fn2 = function f() {
+      return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+    };
     cResult[4] = guildId;
-    cResult[5] = F;
-    tmp11 = F;
+    cResult[5] = fn2;
+    tmp11 = fn2;
   } else {
-    class F {
-      constructor() {
-        return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
-      }
-    }
+    tmp11 = cResult[5];
   }
   const tmpResult2 = tmp(504);
   const stateFromStores1 = tmpResult2.useStateFromStores(tmp9, tmp11);
   if (cResult[6] !== stateFromStores) {
-    class F {
-      constructor() {
-        return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
-      }
-    }
-    let obj2 = { guild: stateFromStores, size: tmp(5978).GuildIconSizes.LARGE };
-    const tmp15 = stateFromStores1(5978);
+    let obj2 = { guild: stateFromStores, size: tmp(6161).GuildIconSizes.LARGE };
+    const tmp16 = stateFromStores1(6161);
+    const tmp17 = closure_7(tmp16, obj2);
     cResult[6] = stateFromStores;
-    cResult[7] = closure_7(tmp15, obj2);
-    const tmp16 = closure_7(tmp15, obj2);
+    cResult[7] = tmp17;
+    tmp13 = tmp17;
   } else {
-    class F {
-      constructor() {
-        return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
-      }
-    }
+    tmp13 = cResult[7];
   }
   if (cResult[8] === tmp4.headerIcon) {
-    let tmp19;
-    let tmp23;
-    let tmp26;
-    class F {
-      constructor() {
-        return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
-      }
+    let tmp18;
+    let tmp20;
+    let tmp22;
+    let tmp25;
+    let tmp29;
+    let tmp32;
+    let tmp36;
+    let tmp39;
+    let tmp41;
+    if (cResult[9] === tmp13) {
+      tmp18 = cResult[10];
     }
     const _Symbol = Symbol;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      class F {
-        constructor() {
-          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
-        }
-      }
-      const stringResult = obj6.string(tmp(1126).t.tlopTM);
+      const intl = tmp(1126).intl;
+      const stringResult = intl.string(tmp(1126).t.tlopTM);
       cResult[11] = stringResult;
-      tmp19 = stringResult;
+      tmp20 = stringResult;
     } else {
-      class F {
-        constructor() {
-          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
-        }
-      }
+      tmp20 = cResult[11];
     }
-    if (cResult[12] !== tmp17) {
-      class F {
-        constructor() {
-          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
-        }
-      }
-      const obj3 = { leading: tmp17, title: tmp19 };
-      cResult[12] = tmp17;
-      cResult[13] = closure_7(tmp(6651).BottomSheetTitleHeader, obj3);
-      const tmp22 = closure_7(tmp(6651).BottomSheetTitleHeader, obj3);
+    if (cResult[12] !== tmp18) {
+      const obj3 = { leading: tmp18, title: tmp20 };
+      const tmp24 = closure_7(tmp(6828).BottomSheetTitleHeader, obj3);
+      cResult[12] = tmp18;
+      cResult[13] = tmp24;
+      tmp22 = tmp24;
     } else {
-      class F {
-        constructor() {
-          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
-        }
-      }
+      tmp22 = cResult[13];
     }
     const _Symbol2 = Symbol;
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-      class F {
-        constructor() {
-          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
-        }
-      }
-      const obj4 = { source: stateFromStores1(12028) };
-      const Icon = tmp(1188).Icon;
-      const tmp25 = closure_7(Icon, obj4);
-      cResult[14] = tmp25;
-      tmp23 = tmp25;
+      const obj4 = { source: stateFromStores1(12101) };
+      const Icon = tmp(1200).Icon;
+      const tmp28 = closure_7(Icon, obj4);
+      cResult[14] = tmp28;
+      tmp25 = tmp28;
     } else {
-      class F {
-        constructor() {
-          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
-        }
-      }
+      tmp25 = cResult[14];
     }
     const _Symbol3 = Symbol;
     if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-      class F {
-        constructor() {
-          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
-        }
-      }
-      const obj5 = { text: intl.string(tmp(1126).t.e6RscS) };
-      const FormLabel = tmp(8924).FormLabel;
-      intl = tmp(1126).intl;
-      const tmp27 = closure_7(FormLabel, obj5);
-      cResult[15] = tmp27;
-      tmp26 = tmp27;
+      const obj5 = { text: intl2.string(tmp(1126).t.e6RscS) };
+      const FormLabel = tmp(8555).FormLabel;
+      intl2 = tmp(1126).intl;
+      const tmp31 = closure_7(FormLabel, obj5);
+      cResult[15] = tmp31;
+      tmp29 = tmp31;
     } else {
-      class F {
-        constructor() {
-          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
-        }
-      }
+      tmp29 = cResult[15];
     }
     if (cResult[16] !== guildId) {
-      class F {
-        constructor() {
-          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
-        }
-      }
-      const obj7 = {
-        leading: tmp23,
-        label: tmp26,
+      const obj6 = {
+        leading: tmp25,
+        label: tmp29,
         onPress() {
               const obj = ReadStateActionCreators;
               obj.ackGuildFeature(guildId, ReadStateTypes.GUILD_EVENT);
@@ -197,102 +148,87 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               obj2.hideActionSheet();
             }
       };
+      const tmp34 = closure_7(tmp(8555).FormRow, obj6);
       cResult[16] = guildId;
-      cResult[17] = closure_7(tmp(8924).FormRow, obj7);
-      const tmp29 = closure_7(tmp(8924).FormRow, obj7);
+      cResult[17] = tmp34;
+      tmp32 = tmp34;
     } else {
-      class F {
-        constructor() {
-          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
-        }
-      }
+      tmp32 = cResult[17];
     }
-    const tmp30 = stateFromStores1(stateFromStores1 ? 12029 : 12030);
-    if (cResult[18] !== tmp30) {
-      class F {
-        constructor() {
-          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
-        }
-      }
-      const obj8 = { source: tmp30 };
-      cResult[18] = tmp30;
-      cResult[19] = closure_7(tmp(1188).Icon, obj8);
-      const tmp32 = closure_7(tmp(1188).Icon, obj8);
+    const tmp35 = stateFromStores1(stateFromStores1 ? 12102 : 12103);
+    if (cResult[18] !== tmp35) {
+      const obj7 = { source: tmp35 };
+      const tmp38 = closure_7(tmp(1200).Icon, obj7);
+      cResult[18] = tmp35;
+      cResult[19] = tmp38;
+      tmp36 = tmp38;
     } else {
-      class F {
-        constructor() {
-          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
-        }
-      }
+      tmp36 = cResult[19];
     }
     if (cResult[20] !== stateFromStores1) {
-      class F {
-        constructor() {
-          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
-        }
-      }
-      const string = tmp34.string;
+      let stringResult1;
+      const intl3 = tmp(1126).intl;
+      const string = intl3.string;
       const t = tmp(1126).t;
       if (stateFromStores1) {
-        class F {
-          constructor() {
-            return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
-          }
-        }
+        stringResult1 = string(t.COiLo0);
       } else {
-        class F {
-          constructor() {
-            return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
-          }
-        }
+        stringResult1 = string(t.ONG3Yz);
       }
       cResult[20] = stateFromStores1;
-      cResult[21] = tmp35;
+      cResult[21] = stringResult1;
+      tmp39 = stringResult1;
     } else {
-      class F {
-        constructor() {
-          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
-        }
-      }
+      tmp39 = cResult[21];
     }
-    if (cResult[22] !== tmp33) {
-      class F {
-        constructor() {
-          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
-        }
-      }
-      const obj9 = { text: tmp33 };
-      cResult[22] = tmp33;
-      cResult[23] = closure_7(tmp(8924).FormLabel, obj9);
-      const tmp37 = closure_7(tmp(8924).FormLabel, obj9);
+    if (cResult[22] !== tmp39) {
+      const obj8 = { text: tmp39 };
+      const tmp43 = closure_7(tmp(8555).FormLabel, obj8);
+      cResult[22] = tmp39;
+      cResult[23] = tmp43;
+      tmp41 = tmp43;
     } else {
-      class F {
-        constructor() {
-          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
-        }
-      }
+      tmp41 = cResult[23];
     }
     if (cResult[24] === guildId) {
-      class F {
-        constructor() {
-          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
-        }
+      let tmp44;
+      if (cResult[25] === stateFromStores1) {
+        tmp44 = cResult[26];
       }
-      if (cResult[27] === tmp31) {
-        class F {
-          constructor() {
-            return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+      if (cResult[27] === tmp36) {
+        if (cResult[28] === tmp41) {
+          let tmp45;
+          if (cResult[29] === tmp44) {
+            tmp45 = cResult[30];
           }
+          if (cResult[31] === tmp32) {
+            if (cResult[32] === tmp45) {
+              let tmp48;
+              if (cResult[33] === tmp22) {
+                tmp48 = cResult[34];
+              }
+              return tmp48;
+            }
+          }
+          const obj9 = { children: items2 };
+          items2 = [tmp22, tmp32, tmp45];
+          const tmp50 = closure_8(tmp(6885).ActionSheet, obj9);
+          cResult[31] = tmp32;
+          cResult[32] = tmp45;
+          cResult[33] = tmp22;
+          cResult[34] = tmp50;
+          tmp48 = tmp50;
         }
       }
-      const obj10 = { leading: tmp31, label: tmp36, onPress: tmp38 };
-      cResult[27] = tmp31;
-      cResult[28] = tmp36;
-      cResult[29] = tmp38;
-      cResult[30] = closure_7(tmp(8924).FormRow, obj10);
-      const tmp41 = closure_7(tmp(8924).FormRow, obj10);
+      const obj10 = { leading: tmp36, label: tmp41, onPress: tmp44 };
+      const tmp47 = closure_7(tmp(8555).FormRow, obj10);
+      cResult[27] = tmp36;
+      cResult[28] = tmp41;
+      cResult[29] = tmp44;
+      cResult[30] = tmp47;
+      tmp45 = tmp47;
     }
-    const fn2 = function w() {
+    const fn3 = function w() {
       const updateGuildNotificationSettings = NotificationSettingsModalActionCreatorsDefault.updateGuildNotificationSettings;
       const obj = { mute_scheduled_events: !stateFromStores1 };
       NotificationSettingsModalActionCreatorsDefault;
@@ -301,14 +237,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     };
     cResult[24] = guildId;
     cResult[25] = stateFromStores1;
-    cResult[26] = fn2;
+    cResult[26] = fn3;
+    tmp44 = fn3;
   }
   const obj11 = { style: tmp4.headerIcon, children: tmp13 };
+  const tmp19 = closure_7(View, obj11);
   cResult[8] = tmp4.headerIcon;
   cResult[9] = tmp13;
-  cResult[10] = closure_7(View, obj11);
-  const tmp18 = closure_7(View, obj11);
-}) : ((guildId) => {
+  cResult[10] = tmp19;
+  tmp18 = tmp19;
+}) : (function UpcomingEventsLongPressActionSheet(guildId) {
   let FormLabel;
   let FormLabel2;
   let Icon;
@@ -330,12 +268,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let obj2 = guildId(504);
   const items1 = [UserGuildSettingsStore];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId));
-  const ActionSheet = guildId(6708).ActionSheet;
+  const ActionSheet = guildId(6885).ActionSheet;
   const obj3 = { leading: closure_7(View, obj4), title: intl.string(guildId(1126).t.tlopTM) };
   obj4 = { style: tmp.headerIcon, children: closure_7(tmp9, obj5) };
-  const BottomSheetTitleHeader = guildId(6651).BottomSheetTitleHeader;
-  obj5 = { guild: stateFromStores, size: guildId(5978).GuildIconSizes.LARGE };
-  tmp9 = stateFromStores1(5978);
+  const BottomSheetTitleHeader = guildId(6828).BottomSheetTitleHeader;
+  obj5 = { guild: stateFromStores, size: guildId(6161).GuildIconSizes.LARGE };
+  tmp9 = stateFromStores1(6161);
   intl = guildId(1126).intl;
   const items2 = [closure_7(BottomSheetTitleHeader, obj3), , ];
   const obj6 = {
@@ -348,14 +286,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       obj2.hideActionSheet();
     }
   };
-  const FormRow = guildId(8924).FormRow;
-  obj7 = { source: stateFromStores1(12028) };
-  Icon = guildId(1188).Icon;
+  const FormRow = guildId(8555).FormRow;
+  obj7 = { source: stateFromStores1(12101) };
+  Icon = guildId(1200).Icon;
   obj8 = { text: intl2.string(guildId(1126).t.e6RscS) };
-  FormLabel = guildId(8924).FormLabel;
+  FormLabel = guildId(8555).FormLabel;
   intl2 = guildId(1126).intl;
   items2[1] = closure_7(FormRow, obj6);
-  const FormRow2 = guildId(8924).FormRow;
+  const FormRow2 = guildId(8555).FormRow;
   const obj9 = {
     leading: closure_7(Icon2, obj10),
     label: closure_7(FormLabel2, { text: stringResult }),
@@ -367,9 +305,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       const result = updateGuildNotificationSettings(guildId, obj, NotificationLabel.mutedEvents(!stateFromStores1));
     }
   };
-  obj10 = { source: stateFromStores1(stateFromStores1 ? 12029 : 12030) };
-  Icon2 = guildId(1188).Icon;
-  FormLabel2 = tmp2(8924).FormLabel;
+  obj10 = { source: stateFromStores1(stateFromStores1 ? 12102 : 12103) };
+  Icon2 = guildId(1200).Icon;
+  FormLabel2 = tmp2(8555).FormLabel;
   const intl3 = tmp2(1126).intl;
   const string = intl3.string;
   const t = tmp2(1126).t;

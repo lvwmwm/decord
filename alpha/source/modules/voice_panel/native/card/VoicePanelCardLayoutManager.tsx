@@ -1,20 +1,20 @@
-// Module ID: 11918
-// Function ID: 11919
+// Module ID: 11991
+// Function ID: 11992
 // Name: VoicePanelCardLayoutManager
-// Dependencies: [32, 19, 17, 4912, 11916, 11919, 4917, 558, 576, 4618, 9787, 568, 9154, 11920, 11921, 1259, 2]
+// Dependencies: [32, 19, 17, 6041, 11989, 11992, 5113, 558, 576, 4810, 10352, 568, 10720, 11993, 11994, 1271, 2]
 
-// Module 11918 (VoicePanelCardLayoutManager)
+// Module 11991 (VoicePanelCardLayoutManager)
 import react_native from "react-native" /* 17 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import react2 from "react" /* 576 */;
-import react_native2 from "react-native" /* 1259 */;
-import CallConstants from "CallConstants" /* 4917 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 9787 */;
+import react_native2 from "react-native" /* 1271 */;
+import CallConstants from "CallConstants" /* 5113 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10352 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4912 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11916 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11919 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11989 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11992 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ const VoicePanelCardItemType = VoicePanelConstants.VoicePanelCardItemType;
 const ParticipantTypes = CallConstants.ParticipantTypes;
 let closure_15 = { id: "invalid", type: VoicePanelCardItemType.PARTICIPANT, x: 0, y: 0, width: 0, height: 0, zIndex: 0 };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, getCardCoords) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCardLayoutCoordsSubscription(arg0, getCardCoords) {
   let closure_0;
   let sharedValue;
   _require = arg0;
@@ -97,7 +97,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, getCardCoords)
   cResult[4] = items;
   tmp7 = items;
   tmp6 = fn;
-}) : ((arg0, getCardCoords) => {
+}) : (function useCardLayoutCoordsSubscription(arg0, getCardCoords) {
   let closure_0;
   let sharedValue;
   _require = arg0;
@@ -127,7 +127,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, getCardCoords)
   return sharedValue;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, getTargetDimensions) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTargetDimensionsSubscription(id, getTargetDimensions) {
   let sharedValue;
   _require = id;
   const obj = require("react");
@@ -165,7 +165,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, getTargetDimensi
   cResult[4] = items;
   tmp6 = items;
   tmp5 = fn;
-}) : ((id, getTargetDimensions) => {
+}) : (function useTargetDimensionsSubscription(id, getTargetDimensions) {
   let sharedValue;
   _require = id;
   const useSharedValue = require("ReanimatedRexport").useSharedValue;
@@ -185,13 +185,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, getTargetDimensi
   return sharedValue;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((getLayoutKey) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useManagerSubscription(getLayoutKey) {
   let closure_129_1;
   let tmp2;
   let tmp5;
   let tmp6;
   let closure_0 = getLayoutKey;
-  let obj = react2;
+  const obj = react2;
   const cResult = obj.c(4);
   if (cResult[0] !== getLayoutKey) {
     const layoutKey = getLayoutKey.getLayoutKey();
@@ -201,12 +201,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((getLayoutKey) => {
   } else {
     tmp2 = cResult[1];
   }
-  let obj2 = react;
-  const tmp4 = _slicedToArray(react.useState(tmp2), 2);
-  [tmp5, closure_129_1] = tmp4;
+  [tmp5, closure_129_1] = react.useState(tmp2);
+  _slicedToArray(react.useState(tmp2), 2);
+  const obj2 = react;
   if (cResult[2] !== getLayoutKey) {
     const fn = function h() {
-      return layoutKey.subscribeToManager(() => onClose(layoutKey.getLayoutKey()));
+      return layoutKey.subscribeToManager(() => closure_1_1(layoutKey.getLayoutKey()));
     };
     cResult[2] = getLayoutKey;
     cResult[3] = fn;
@@ -216,7 +216,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((getLayoutKey) => {
   }
   const layoutEffect = obj2.useLayoutEffect(tmp6);
   return tmp5;
-}) : ((getLayoutKey) => {
+}) : (function useManagerSubscription(getLayoutKey) {
   let closure_129_1;
   let tmp2;
   let closure_0 = getLayoutKey;
@@ -991,7 +991,8 @@ class VoicePanelCardLayoutManager {
     const tmp = this.emitItemChanges && self.mounted;
     if (tmp) {
       self.emitItemChanges = false;
-      const obj = react_native2;
+      const tmp2 = require;
+      let obj = react_native2;
       obj.batchUpdates(() => {
         const managerSubscriptions = self.managerSubscriptions;
         for (const item10006 of managerSubscriptions) {

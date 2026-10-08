@@ -1,11 +1,11 @@
-// Module ID: 12183
-// Function ID: 12184
+// Module ID: 12262
+// Function ID: 12263
 // Name: useShowGuildPowerupRollbackSheet
-// Dependencies: [32, 19, 2048, 558, 576, 12184, 6901, 12186, 4860, 2]
+// Dependencies: [32, 19, 2060, 558, 576, 12263, 7090, 12265, 5054, 2]
 
-// Module 12183 (useShowGuildPowerupRollbackSheet)
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import openGuildPowerupRollbackSheetDefault from "openGuildPowerupRollbackSheet" /* 12186 */;
+// Module 12262 (useShowGuildPowerupRollbackSheet)
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import openGuildPowerupRollbackSheetDefault from "openGuildPowerupRollbackSheet" /* 12265 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -15,7 +15,7 @@ let dependencyMap;
 
 let _slicedToArray = _slicedToArray_mod;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowGuildPowerupRollbackSheet(arg0, arg1, arg2) {
   let closure_2;
   let first;
   let modalConfig;
@@ -24,15 +24,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
   let tmp = modalConfig;
   let obj = modalConfig(576);
   const cResult = obj.c(9);
-  ({ shouldShow, modalConfig } = first(12184)(arg0, arg1));
-  const tmp5 = first(12184)(arg0, arg1);
+  ({ shouldShow, modalConfig } = first(12263)(arg0, arg1));
+  const tmp5 = first(12263)(arg0, arg1);
   if (cResult[0] === modalConfig) {
     if (cResult[1] === shouldShow) {
       let tmp6;
       if (cResult[2] === (undefined !== arg2 && arg2)) {
         tmp6 = cResult[3];
       }
-      const tmpResult = tmp(6901);
+      const tmpResult = tmp(7090);
       const tmp11 = _slicedToArray(tmpResult.useSelectedDismissibleContent(tmp6), 2);
       first = tmp11[0];
       dependencyMap = tmp13;
@@ -49,7 +49,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
           const effect = obj3.useEffect(tmp14, tmp15);
         }
       }
-      let fn = function f() {
+      let fn = function b() {
         let bodies;
         let fn;
         let current = ref.current;
@@ -111,7 +111,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
   cResult[2] = undefined !== arg2 && arg2;
   cResult[3] = items1;
   tmp6 = items1;
-}) : ((arg0, arg1) => {
+}) : (function useShowGuildPowerupRollbackSheet(arg0, arg1) {
   let closure_2;
   let first;
   let modalConfig;
@@ -127,8 +127,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
   dependencyMap = undefined;
   _slicedToArray = undefined;
   let tmp = dependencyMap;
-  ({ shouldShow, modalConfig } = first(12184)(arg0, arg1));
-  const tmp2 = first(12184)(arg0, arg1);
+  ({ shouldShow, modalConfig } = first(12263)(arg0, arg1));
+  const tmp2 = first(12263)(arg0, arg1);
   if (shouldShow) {
     shouldShow = null != modalConfig;
   }
@@ -139,7 +139,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
   if (shouldShow) {
     items.push(modalConfig.dismissibleContent);
   }
-  let obj = modalConfig(6901);
+  let obj = modalConfig(7090);
   [first, tmp7] = obj.useSelectedDismissibleContent(items);
   dependencyMap = tmp7;
   _slicedToArray = react.useRef(false);

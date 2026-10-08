@@ -1,26 +1,24 @@
-// Module ID: 17025
-// Function ID: 17026
+// Module ID: 17306
+// Function ID: 17307
 // Name: InstantInviteSelfMeasurer
-// Dependencies: [19, 17, 21, 4896, 558, 576, 10682, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 10270, 2]
 
-// Module 17025 (InstantInviteSelfMeasurer)
+// Module 17306 (InstantInviteSelfMeasurer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import InstantInviteDefault from "InstantInvite" /* 10682 */;
+import InstantInviteDefault from "InstantInvite" /* 10270 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let type;
-
 let tmp;
-const InstantInvite = tmp(10682);
+const InstantInvite = tmp(10270);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ container: { position: "absolute", opacity: 0 } });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInviteSelfMeasurer(type) {
   let containerStyle;
   let item;
   let onMeasured;
@@ -89,7 +87,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((t
   cResult[1] = str;
   cResult[2] = fn;
   tmp5 = fn;
-}) : ((type) => {
+}) : (function InstantInviteSelfMeasurer(type) {
   let item;
   let onMeasured;
   let tmp2Result;

@@ -1,27 +1,26 @@
-// Module ID: 18038
-// Function ID: 18039
+// Module ID: 18325
+// Function ID: 18326
 // Name: useInviteApplicationBypassInfo
-// Dependencies: [4515, 1085, 558, 576, 504, 2]
+// Dependencies: [4707, 1085, 558, 576, 504, 2]
 
-// Module 18038 (useInviteApplicationBypassInfo)
-import PermissionStore from "PermissionStore" /* 4515 */;
+// Module 18325 (useInviteApplicationBypassInfo)
+import PermissionStore from "PermissionStore" /* 4707 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, features;
+let _require;
 
 let c3;
 let closure_4;
 ({ GuildFeatures: c3, Permissions: closure_4 } = Constants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  let closure_0;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInviteApplicationBypassInfo(features) {
   let first;
-  let obj2;
+  let tmp11;
   let tmp6;
   let tmp7;
-  _require = arg0;
+  _require = features;
   const obj = require("react");
   const cResult = obj.c(9);
   const tmp = _require;
@@ -32,97 +31,64 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     first = cResult[0];
   }
-  if (cResult[1] !== arg0) {
-    class E {
-      constructor() {
-        return closure_2.can(Permissions.KICK_MEMBERS, closure_0);
-      }
-    }
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = E;
+  if (cResult[1] !== features) {
+    const fn = function p() {
+      return PermissionStore.can(constants.KICK_MEMBERS, features);
+    };
+    const items1 = [features];
+    cResult[1] = features;
+    cResult[2] = fn;
     cResult[3] = items1;
     tmp7 = items1;
-    tmp6 = E;
+    tmp6 = fn;
   } else {
-    class E {
-      constructor() {
-        return closure_2.can(Permissions.KICK_MEMBERS, closure_0);
-      }
-    }
+    tmp6 = cResult[2];
     tmp7 = cResult[3];
   }
+  let features1;
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
   const tmp9 = cResult[4];
-  if (arg0 != null) {
-    class E {
-      constructor() {
-        return closure_2.can(Permissions.KICK_MEMBERS, closure_0);
-      }
-    }
+  if (features != null) {
+    features1 = features.features;
   }
-  if (tmp9 !== undefined) {
+  if (tmp9 !== features1) {
     let hasItem;
-    class E {
-      constructor() {
-        return closure_2.can(Permissions.KICK_MEMBERS, closure_0);
-      }
-    }
-    if (arg0 != null) {
-      class E {
-        constructor() {
-          return closure_2.can(Permissions.KICK_MEMBERS, closure_0);
-        }
-      }
-      hasItem = obj3.has(constants.MEMBER_VERIFICATION_MANUAL_APPROVAL);
+    if (features != null) {
+      features = features.features;
+      hasItem = features.has(constants.MEMBER_VERIFICATION_MANUAL_APPROVAL);
     }
     if (hasItem) {
       let hasItem1;
-      class E {
-        constructor() {
-          return closure_2.can(Permissions.KICK_MEMBERS, closure_0);
-        }
-      }
-      if (arg0 != null) {
-        class E {
-          constructor() {
-            return closure_2.can(Permissions.KICK_MEMBERS, closure_0);
-          }
-        }
-        hasItem1 = obj4.has(constants.MEMBER_VERIFICATION_GATE_ENABLED);
+      if (features != null) {
+        const features2 = features.features;
+        hasItem1 = features2.has(constants.MEMBER_VERIFICATION_GATE_ENABLED);
       }
       hasItem = hasItem1;
     }
-    if (arg0 != null) {
-      class E {
-        constructor() {
-          return closure_2.can(Permissions.KICK_MEMBERS, closure_0);
-        }
-      }
+    let features3;
+    if (features != null) {
+      features3 = features.features;
     }
-    cResult[4] = undefined;
+    cResult[4] = features3;
     cResult[5] = hasItem;
+    tmp11 = hasItem;
   } else {
-    class E {
-      constructor() {
-        return closure_2.can(Permissions.KICK_MEMBERS, closure_0);
-      }
-    }
+    tmp11 = cResult[5];
   }
-  if (cResult[6] === tmp10) {
-    class E {
-      constructor() {
-        return closure_2.can(Permissions.KICK_MEMBERS, closure_0);
-      }
+  if (cResult[6] === tmp11) {
+    let tmp19;
+    if (cResult[7] === (tmp11 && stateFromStores)) {
+      tmp19 = cResult[8];
     }
-    return obj2;
+    return tmp19;
   }
-  obj2 = { canCreateApplicationBypassInvites: tmp10 && stateFromStores, isManualApprovalGuild: tmp10 };
-  cResult[6] = tmp10;
-  cResult[7] = tmp10 && stateFromStores;
+  const obj2 = { canCreateApplicationBypassInvites: tmp11 && stateFromStores, isManualApprovalGuild: tmp11 };
+  cResult[6] = tmp11;
+  cResult[7] = tmp11 && stateFromStores;
   cResult[8] = obj2;
-}) : ((features) => {
+  tmp19 = obj2;
+}) : (function useInviteApplicationBypassInfo(features) {
   _require = features;
   const items = [PermissionStore];
   const items1 = [features];

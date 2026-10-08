@@ -1,24 +1,24 @@
-// Module ID: 7731
-// Function ID: 7732
+// Module ID: 8052
+// Function ID: 8053
 // Name: PremiumGroupUtils
-// Dependencies: [1377, 4548, 4728, 1126, 3233, 2, 7732]
+// Dependencies: [1389, 4740, 4922, 1126, 3277, 2, 8053]
 // Exports: getPremiumGroupInviteEmbedText, useCheckoutInstancePremiumGroupPurchaseEligibility, useIsEligibleForPremiumGroupMarketingMaterials, useIsEligibleForPremiumGroupNitroTabMarketingMaterials, useIsEligibleForPremiumGroupPurchase
 
-// Module 7731 (PremiumGroupUtils)
+// Module 8052 (PremiumGroupUtils)
 import intl7 from "intl" /* 1126 */;
-import _modDef3233 from "module_3233" /* 3233 */;
-import UserUtils from "UserUtils" /* 4728 */;
-import _mod7732 from "module_7732" /* 7732 */;
-import UserStore from "UserStore" /* 1377 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 4548 */;
+import _modDef3277 from "module_3277" /* 3277 */;
+import UserUtils from "UserUtils" /* 4922 */;
+import _mod8053 from "module_8053" /* 8053 */;
+import UserStore from "UserStore" /* 1389 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 4740 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 ({ getPremiumGroupProductName: closure_4, HELP_CENTER_LINK: hasOwnProperty } = PremiumGroupConstants);
 const result = size.fileFinishedImporting("modules/premium/premium_group/PremiumGroupUtils.native.tsx");
-for (const key10025 in _mod7732) {
-  exports[key10025] = _mod7732[key10025];
+for (const key10025 in _mod8053) {
+  exports[key10025] = _mod8053[key10025];
   continue;
 }
 
@@ -56,7 +56,7 @@ export const getPremiumGroupInviteEmbedText = function getPremiumGroupInviteEmbe
     }
     let tmp15 = null;
     if (null != tmp8) {
-      const obj2 = { message: intl4.format(_modDef3233.MkcFjx, obj3), header: intl5.formatToPlainString(_modDef3233["5uwv8J"], obj4), body: intl6.formatToPlainString(_modDef3233["AmE0B/"], obj6) };
+      const obj2 = { message: intl4.format(_modDef3277.MkcFjx, obj3), header: intl5.formatToPlainString(_modDef3277["5uwv8J"], obj4), body: intl6.formatToPlainString(_modDef3277["AmE0B/"], obj6) };
       intl4 = intl7.intl;
       obj3 = { receiverName: tmp8, premiumGroupProductName: tmp };
       intl5 = intl7.intl;
@@ -69,7 +69,7 @@ export const getPremiumGroupInviteEmbedText = function getPremiumGroupInviteEmbe
   } else {
     const obj = UserUtils;
     const nameFromUserResult1 = obj.nameFromUser(sender);
-    const obj7 = { message: intl.format(_modDef3233["51Kv/4"], obj8), header: intl2.string(_modDef3233.ssge1y), body: intl3.formatToPlainString(_modDef3233.tej76V, obj9) };
+    const obj7 = { message: intl.format(_modDef3277["51Kv/4"], obj8), header: intl2.string(_modDef3277.ssge1y), body: intl3.formatToPlainString(_modDef3277.tej76V, obj9) };
     intl = intl7.intl;
     obj8 = { senderName: nameFromUserResult1, premiumGroupProductName: tmp, helpCenterLink: hasOwnProperty };
     intl2 = intl7.intl;

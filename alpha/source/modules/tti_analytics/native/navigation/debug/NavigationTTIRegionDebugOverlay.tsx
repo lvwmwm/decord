@@ -1,25 +1,28 @@
-// Module ID: 16528
-// Function ID: 16529
+// Module ID: 16783
+// Function ID: 16784
 // Name: NavigationTTIRegionDebugOverlay
-// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 16521, 16523, 16526, 16525, 4892, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 587, 558, 576, 11513, 11514, 16781, 11516, 5086, 2]
 
-// Module 16528 (NavigationTTIRegionDebugOverlay)
+// Module 16783 (NavigationTTIRegionDebugOverlay)
+import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 16523 */;
-import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 16525 */;
-import NavigationTTIRegionDebugState from "NavigationTTIRegionDebugState" /* 16526 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 11514 */;
+import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 11516 */;
+import NavigationTTIRegionDebugState from "NavigationTTIRegionDebugState" /* 16781 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, obj1, tmp11;
+const require = globalThis.__r;
+let _require, dependencyMap;
 
 let StyleSheet;
+let c9;
 let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
@@ -31,18 +34,20 @@ let obj5;
 let obj6;
 let obj7;
 let obj8;
+let obj9;
 let rect;
 let rect1;
 let rect2;
 let rect3;
 let rect4;
+let rect5;
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ Pressable: hasOwnProperty, View: metroRequire, StyleSheet } = react_native);
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let closure_9 = ["time_start", "first_paint"];
+({ jsxs: metroImportDefault, jsx: metroImportAll, Fragment: c9 } = Fragment);
+let closure_10 = ["time_start", "first_paint", "first_contentful_paint"];
 let createStyles = createStyles_mod;
-let obj = { outline: obj2, includedOutline: obj3, excludedOutline: obj4, mixedOutline: obj5, violationOutline: obj6, badge: { position: "absolute", maxWidth: "48%" }, expandedBadge: { maxWidth: "92%" }, badgeText: obj7, includedBadge: rect, excludedBadge: rect1, mixedBadge: rect2, violationBadge: rect3, armedBadge: obj8, freezeControl: rect4, armedFreezeControl: { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO } };
+let obj = { outline: obj2, includedOutline: obj3, excludedOutline: obj4, mixedOutline: obj5, violationOutline: obj6, badge: { position: "absolute", maxWidth: "48%" }, expandedBadge: { maxWidth: "92%" }, badgeText: obj7, includedBadge: rect, excludedBadge: rect1, mixedBadge: rect2, violationBadge: rect3, armedBadge: obj8, freezeControl: rect4, armedFreezeControl: obj9, milestoneReadout: rect5 };
 obj2 = { zIndex: 10000, borderWidth: 2 };
 createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -57,10 +62,11 @@ rect2 = { top: 0, right: 0, backgroundColor: nativeDefault.colors.BACKGROUND_FEE
 rect3 = { top: 0, left: 0, backgroundColor: nativeDefault.colors.STATUS_DANGER };
 obj8 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
 rect4 = { position: "absolute", right: 0, bottom: 0, maxWidth: "60%", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
-({ backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO });
-let closure_10 = createStyles(obj);
+obj9 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
+rect5 = { position: "absolute", left: 0, bottom: 0, maxWidth: "55%", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
+let closure_11 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRenderedAtMs(name) {
   let first;
   let tracking;
   let obj = name(tracking[7]);
@@ -157,7 +163,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
   cResult[4] = tracking;
   cResult[5] = fn2;
   tmp4 = fn2;
-}) : ((name) => {
+}) : (function useRenderedAtMs(name) {
   name = name.name;
   const regionId = name.regionId;
   const tracking = name.tracking;
@@ -222,11 +228,250 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const f74227 = () => {
+function useNavigationTTIDebugFreezeTarget() {
 
-};
+}
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNavigationTTIMilestones(arg0) {
+  let closure_0;
+  let first;
+  let tmp3;
+  _require = arg0;
+  let obj = require("react");
+  const cResult = obj.c(9);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function l(arg0) {
+      const obj = NavigationSpanTrackerDefault;
+      return obj.subscribeDebugBundle(arg0);
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn2 = function u() {
+      let first_contentful_paint_ms;
+      let first_paint_ms;
+      if (null == closure_0) {
+        return "none";
+      } else {
+        const obj = NavigationSpanTrackerDefault;
+        const lastBundleForSurface = obj.getLastBundleForSurface(tmp.definition, tmp.navigationKey);
+        if (null == lastBundleForSurface) {
+          return "none";
+        } else {
+          ({ first_paint_ms, first_contentful_paint_ms } = lastBundleForSurface.navigation.spanTtiProperties);
+          const trace_id = lastBundleForSurface.navigation.spanTtiProperties.trace_id;
+          if (first_paint_ms == null) {
+            first_paint_ms = "";
+          }
+          if (first_contentful_paint_ms == null) {
+            first_contentful_paint_ms = "";
+          }
+          const _HermesInternal = HermesInternal;
+          return "" + trace_id + ":" + first_paint_ms + ":" + first_contentful_paint_ms;
+        }
+      }
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn2;
+    tmp3 = fn2;
+  } else {
+    tmp3 = cResult[2];
+  }
+  const str = react.useSyncExternalStore(first, tmp3, tmp3);
+  if ("none" === str) {
+    let tmp13;
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj2 = { firstPaintMs: null, firstContentfulPaintMs: null };
+      cResult[3] = obj2;
+      tmp13 = obj2;
+    } else {
+      tmp13 = cResult[3];
+    }
+    return tmp13;
+  } else {
+    let tmp4;
+    if (cResult[4] !== str) {
+      const parts = str.split(":");
+      cResult[4] = str;
+      cResult[5] = parts;
+      tmp4 = parts;
+    } else {
+      tmp4 = cResult[5];
+    }
+    const tmp7 = _slicedToArray(tmp4, 3);
+    let NumberResult = null;
+    if ("" !== tmp7[1]) {
+      const _Number = Number;
+      NumberResult = Number(tmp8);
+    }
+    let NumberResult1 = null;
+    if ("" !== tmp7[2]) {
+      const _Number2 = Number;
+      NumberResult1 = Number(tmp9);
+    }
+    if (cResult[6] === NumberResult) {
+      let tmp12;
+      if (cResult[7] === NumberResult1) {
+        tmp12 = cResult[8];
+      }
+      return tmp12;
+    }
+    const obj3 = { firstPaintMs: NumberResult, firstContentfulPaintMs: NumberResult1 };
+    cResult[6] = NumberResult;
+    cResult[7] = NumberResult1;
+    cResult[8] = obj3;
+    tmp12 = obj3;
+  }
+}) : (function useNavigationTTIMilestones(arg0) {
+  let NumberResult1;
+  let tmp5;
+  let tmp6;
+  let closure_0 = arg0;
+  const items = [arg0];
+  const callback = react.useCallback((arg0) => {
+    const obj = NavigationSpanTrackerDefault;
+    return obj.subscribeDebugBundle(arg0);
+  }, []);
+  const callback1 = react.useCallback(() => {
+    let first_contentful_paint_ms;
+    let first_paint_ms;
+    if (null == closure_0) {
+      return "none";
+    } else {
+      const obj = NavigationSpanTrackerDefault;
+      const lastBundleForSurface = obj.getLastBundleForSurface(tmp.definition, tmp.navigationKey);
+      if (null == lastBundleForSurface) {
+        return "none";
+      } else {
+        ({ first_paint_ms, first_contentful_paint_ms } = lastBundleForSurface.navigation.spanTtiProperties);
+        const trace_id = lastBundleForSurface.navigation.spanTtiProperties.trace_id;
+        if (first_paint_ms == null) {
+          first_paint_ms = "";
+        }
+        if (first_contentful_paint_ms == null) {
+          first_contentful_paint_ms = "";
+        }
+        const _HermesInternal = HermesInternal;
+        return "" + trace_id + ":" + first_paint_ms + ":" + first_contentful_paint_ms;
+      }
+    }
+  }, items);
+  const str = react.useSyncExternalStore(callback, callback1, callback1);
+  if ("none" === str) {
+    return { firstPaintMs: null, firstContentfulPaintMs: null };
+  } else {
+    [, tmp5, tmp6] = str.split(":");
+    let NumberResult = null;
+    if ("" !== tmp5) {
+      const _Number = Number;
+      NumberResult = Number(tmp5);
+    }
+    let obj = { firstPaintMs: NumberResult, firstContentfulPaintMs: NumberResult1 };
+    NumberResult1 = null;
+    if ("" !== tmp6) {
+      const _Number2 = Number;
+      NumberResult1 = Number(tmp6);
+    }
+    return obj;
+  }
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavigationTTIMilestoneReadout(surface) {
+  let firstContentfulPaintMs;
+  let firstPaintMs;
+  let items;
+  let items1;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(9);
+  surface = surface.surface;
+  const tmp4 = closure_11();
+  ({ firstPaintMs, firstContentfulPaintMs } = closure_14(surface));
+  let str = "waiting";
+  let str2 = "waiting";
+  closure_14(surface);
+  if (null != firstPaintMs) {
+    const _HermesInternal = HermesInternal;
+    str2 = "+" + firstPaintMs + "ms";
+  }
+  if (null != firstContentfulPaintMs) {
+    const _HermesInternal2 = HermesInternal;
+    str = "+" + firstContentfulPaintMs + "ms";
+  }
+  if (cResult[0] !== str2) {
+    const obj2 = { variant: "text-xs/bold", color: "none", children: items };
+    items = ["FP ", str2];
+    const tmp10 = metroImportDefault(Text_Text.Text, obj2);
+    cResult[0] = str2;
+    cResult[1] = tmp10;
+    tmp8 = tmp10;
+  } else {
+    tmp8 = cResult[1];
+  }
+  if (cResult[2] === str) {
+    if (cResult[3] === tmp4.badgeText) {
+      let tmp11;
+      if (cResult[4] === tmp8) {
+        tmp11 = cResult[5];
+      }
+      if (cResult[6] === tmp4.milestoneReadout) {
+        let tmp13;
+        if (cResult[7] === tmp11) {
+          tmp13 = cResult[8];
+        }
+        return tmp13;
+      }
+      const obj3 = { style: tmp4.milestoneReadout, pointerEvents: "none", accessible: false, children: tmp11 };
+      const tmp16 = metroImportAll(metroRequire, obj3);
+      cResult[6] = tmp4.milestoneReadout;
+      cResult[7] = tmp11;
+      cResult[8] = tmp16;
+      tmp13 = tmp16;
+    }
+  }
+  const obj4 = { variant: "text-xs/normal", color: "text-default", style: tmp4.badgeText, lineClamp: 1, accessible: false, children: items1 };
+  items1 = [tmp8, " \u00B7 FCP ", str];
+  const tmp12 = metroImportDefault(Text_Text.Text, obj4);
+  cResult[2] = str;
+  cResult[3] = tmp4.badgeText;
+  cResult[4] = tmp8;
+  cResult[5] = tmp12;
+  tmp11 = tmp12;
+}) : (function NavigationTTIMilestoneReadout(surface) {
+  let Text;
+  let firstContentfulPaintMs;
+  let firstPaintMs;
+  let items;
+  let items1;
+  let obj2;
+  surface = surface.surface;
+  const tmp = closure_11();
+  ({ firstPaintMs, firstContentfulPaintMs } = closure_14(surface));
+  let str = "waiting";
+  let str2 = "waiting";
+  closure_14(surface);
+  if (null != firstPaintMs) {
+    const _HermesInternal = HermesInternal;
+    str2 = "+" + firstPaintMs + "ms";
+  }
+  if (null != firstContentfulPaintMs) {
+    const _HermesInternal2 = HermesInternal;
+    str = "+" + firstContentfulPaintMs + "ms";
+  }
+  const obj = { style: tmp.milestoneReadout, pointerEvents: "none", accessible: false, children: metroImportDefault(Text, obj2) };
+  obj2 = { variant: "text-xs/normal", color: "text-default", style: tmp.badgeText, lineClamp: 1, accessible: false, children: items1 };
+  Text = Text_Text.Text;
+  const obj3 = { variant: "text-xs/bold", color: "none", children: items };
+  items = ["FP ", str2];
+  items1 = [metroImportDefault(Text_Text.Text, obj3), " \u00B7 FCP ", str];
+  return metroImportAll(metroRequire, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavigationTTIDebugFreezeControl(arg0) {
   let surface;
   let target;
   let tmp7;
@@ -234,7 +479,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj = surface(576);
   const cResult = obj.c(17);
   ({ target, surface } = arg0);
-  const tmp4 = closure_10();
+  const tmp4 = closure_11();
   let kind;
   if (target != null) {
     kind = target.kind;
@@ -256,9 +501,11 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if ("time_start" === name1) {
         str = "FREEZE: NEXT START";
-      } else {
+      } else if ("first_paint" === name1) {
         str = "FREEZE: NEXT FP";
-        if ("first_paint" !== name1) {
+      } else {
+        str = "FREEZE: NEXT FCP";
+        if ("first_contentful_paint" !== name1) {
           str = "FREEZE: OFF";
         }
       }
@@ -283,14 +530,14 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (cResult[6] === armedFreezeControl) {
         tmp12 = cResult[7];
       }
-      let str5 = "text-default";
+      let str6 = "text-default";
       if (null != target) {
-        str5 = "text-feedback-info";
+        str6 = "text-feedback-info";
       }
       if (cResult[8] === tmp7) {
         if (cResult[9] === tmp4.badgeText) {
           let tmp13;
-          if (cResult[10] === str5) {
+          if (cResult[10] === str6) {
             tmp13 = cResult[11];
           }
           if (cResult[12] === tmp10) {
@@ -305,71 +552,20 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
           let obj2 = { style: tmp12, hitSlop: name(587).space.PX_12, onPress: tmp10, accessibilityRole: "button", accessibilityLabel: tmp7, accessibilityHint: "Cycles the one-shot freeze point. Restart the app after a freeze.", children: tmp13 };
+          const tmp20 = closure_8(closure_5, obj2);
           cResult[12] = tmp10;
           cResult[13] = tmp7;
           cResult[14] = tmp12;
           cResult[15] = tmp13;
-          const tmp20 = closure_7(closure_5, obj2);
-          class T {
-            constructor() {
-              tmp = surface;
-              activeTraceId = null;
-              if (null != surface) {
-                tmp3 = closure_1;
-                tmp4 = closure_2;
-                obj = closure_1(closure_2[9]);
-                activeTraceId = obj.getActiveTraceId(tmp.definition, tmp.navigationKey);
-              }
-              if (null == name) {
-                tmp8 = closure_9;
-                first = closure_9[0];
-                if (first == null) {
-                  first = null;
-                }
-                tmp7 = first;
-              } else {
-                tmp6 = closure_9;
-                num = 1;
-                tmp7 = closure_9[closure_9.indexOf(closure_9, tmp5) + 1];
-                if (tmp7 == null) {
-                  tmp7 = null;
-                }
-              }
-              if (null == tmp7) {
-                tmp15 = closure_0;
-                tmp16 = closure_2;
-                obj4 = closure_0(closure_2[11]);
-                result = obj4.disarmNavigationTTIDebugFreeze();
-              } else {
-                tmp10 = closure_0;
-                tmp11 = closure_2;
-                tmp12 = closure_0(closure_2[11]);
-                obj1 = { kind: "milestone", name: null };
-                obj1.name = tmp7;
-                obj5 = { armedDuringTraceId: null, destinationKey: null };
-                obj5.armedDuringTraceId = activeTraceId;
-                navigationKey = undefined;
-                armNavigationTTIDebugFreeze = tmp12.armNavigationTTIDebugFreeze;
-                if (tmp != null) {
-                  navigationKey = tmp.navigationKey;
-                }
-                if (navigationKey == null) {
-                  navigationKey = null;
-                }
-                obj5.destinationKey = navigationKey;
-                result1 = armNavigationTTIDebugFreeze(obj1, obj5);
-              }
-              return;
-            }
-          }
+          cResult[16] = tmp20;
           tmp16 = tmp20;
         }
       }
-      let obj3 = { variant: "text-xs/bold", color: str5, style: tmp4.badgeText, lineClamp: 1, accessible: false, children: tmp7 };
-      const tmp15 = closure_7(tmp(4892).Text, obj3);
+      let obj3 = { variant: "text-xs/bold", color: str6, style: tmp4.badgeText, lineClamp: 1, accessible: false, children: tmp7 };
+      const tmp15 = closure_8(tmp(5086).Text, obj3);
       cResult[8] = tmp7;
       cResult[9] = tmp4.badgeText;
-      cResult[10] = str5;
+      cResult[10] = str6;
       cResult[11] = tmp15;
       tmp13 = tmp15;
     }
@@ -379,70 +575,56 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[7] = items;
     tmp12 = items;
   }
-  class T {
-    constructor() {
-      tmp = surface;
-      activeTraceId = null;
-      if (null != surface) {
-        tmp3 = closure_1;
-        tmp4 = closure_2;
-        obj = closure_1(closure_2[9]);
-        activeTraceId = obj.getActiveTraceId(tmp.definition, tmp.navigationKey);
+  function cycleTarget() {
+    let navigationKey;
+    let tmp7;
+    let activeTraceId = null;
+    if (null != surface) {
+      const obj = NavigationSpanTrackerDefault;
+      activeTraceId = obj.getActiveTraceId(tmp.definition, tmp.navigationKey);
+    }
+    if (null == name) {
+      let first = closure_10[0];
+      if (first == null) {
+        first = null;
       }
-      if (null == name) {
-        tmp8 = closure_9;
-        first = closure_9[0];
-        if (first == null) {
-          first = null;
-        }
-        tmp7 = first;
-      } else {
-        tmp6 = closure_9;
-        num = 1;
-        tmp7 = closure_9[closure_9.indexOf(closure_9, tmp5) + 1];
-        if (tmp7 == null) {
-          tmp7 = null;
-        }
+      tmp7 = first;
+    } else {
+      tmp7 = closure_10[closure_10.indexOf(closure_10, tmp5) + 1];
+      if (tmp7 == null) {
+        tmp7 = null;
       }
-      if (null == tmp7) {
-        tmp15 = closure_0;
-        tmp16 = closure_2;
-        obj4 = closure_0(closure_2[11]);
-        result = obj4.disarmNavigationTTIDebugFreeze();
-      } else {
-        tmp10 = closure_0;
-        tmp11 = closure_2;
-        tmp12 = closure_0(closure_2[11]);
-        obj1 = { kind: "milestone", name: null };
-        obj1.name = tmp7;
-        obj5 = { armedDuringTraceId: null, destinationKey: null };
-        obj5.armedDuringTraceId = activeTraceId;
-        navigationKey = undefined;
-        armNavigationTTIDebugFreeze = tmp12.armNavigationTTIDebugFreeze;
-        if (tmp != null) {
-          navigationKey = tmp.navigationKey;
-        }
-        if (navigationKey == null) {
-          navigationKey = null;
-        }
-        obj5.destinationKey = navigationKey;
-        result1 = armNavigationTTIDebugFreeze(obj1, obj5);
+    }
+    if (null == tmp7) {
+      const obj4 = NavigationTTIDebugFreeze;
+      const result = obj4.disarmNavigationTTIDebugFreeze();
+    } else {
+      const obj3 = { armedDuringTraceId: activeTraceId, destinationKey: navigationKey };
+      navigationKey = undefined;
+      const obj2 = { kind: "milestone", name: tmp7 };
+      const armNavigationTTIDebugFreeze = NavigationTTIDebugFreeze.armNavigationTTIDebugFreeze;
+      NavigationTTIDebugFreeze;
+      if (surface != null) {
+        navigationKey = tmp.navigationKey;
       }
-      return;
+      if (navigationKey == null) {
+        navigationKey = null;
+      }
+      const result1 = armNavigationTTIDebugFreeze(obj2, obj3);
     }
   }
   cResult[2] = name;
   cResult[3] = surface;
-  cResult[4] = T;
-  tmp10 = T;
-}) : ((arg0) => {
+  cResult[4] = cycleTarget;
+  tmp10 = cycleTarget;
+}) : (function NavigationTTIDebugFreezeControl(arg0) {
   let Text;
   let obj2;
   let require;
   let target;
   ({ target, surface: require } = arg0);
   let name;
-  const tmp = closure_10();
+  const tmp = closure_11();
   let kind;
   if (target != null) {
     kind = target.kind;
@@ -463,9 +645,11 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if ("time_start" === name1) {
       str = "FREEZE: NEXT START";
-    } else {
+    } else if ("first_paint" === name1) {
       str = "FREEZE: NEXT FP";
-      if ("first_paint" !== name1) {
+    } else {
+      str = "FREEZE: NEXT FCP";
+      if ("first_contentful_paint" !== name1) {
         str = "FREEZE: OFF";
       }
     }
@@ -479,7 +663,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj = {
     style: items,
     hitSlop: name(587).space.PX_12,
-    onPress() {
+    onPress: function cycleTarget() {
       let navigationKey;
       let tmp7;
       let activeTraceId = null;
@@ -488,13 +672,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         activeTraceId = obj.getActiveTraceId(tmp.definition, tmp.navigationKey);
       }
       if (null == name) {
-        let first = closure_9[0];
+        let first = closure_10[0];
         if (first == null) {
           first = null;
         }
         tmp7 = first;
       } else {
-        tmp7 = closure_9[closure_9.indexOf(closure_9, tmp5) + 1];
+        tmp7 = closure_10[closure_10.indexOf(closure_10, tmp5) + 1];
         if (tmp7 == null) {
           tmp7 = null;
         }
@@ -523,16 +707,16 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     children: tmp6(Text, obj2)
   };
   items[1] = armedFreezeControl;
-  let str4 = "text-default";
+  let str5 = "text-default";
   Text = Text_Text.Text;
   if (null != target) {
-    str4 = "text-feedback-info";
+    str5 = "text-feedback-info";
   }
-  obj2 = { variant: "text-xs/bold", color: str4, style: tmp.badgeText, lineClamp: 1, accessible: false, children: str };
-  return closure_7(tmp7, obj);
+  obj2 = { variant: "text-xs/bold", color: str5, style: tmp.badgeText, lineClamp: 1, accessible: false, children: str };
+  return closure_8(tmp7, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavigationTTIRegionDebugOverlay(name) {
   let closure_3;
   let closure_4;
   let descendantTracking;
@@ -540,6 +724,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
   let hierarchyDepth;
   let includedDescendants;
   let items;
+  let items1;
   let regionId;
   let tmp8;
   let tracking;
@@ -550,16 +735,16 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
   const cResult = obj.c(56);
   name = name.name;
   ({ regionId, tracking, descendantTracking, includedDescendants, excludedDescendants, hierarchyDepth, violation } = name);
-  const tmp4 = closure_10();
-  let obj2 = name(16521);
+  const tmp4 = closure_11();
+  let obj2 = name(11513);
   const navTTISurface = obj2.useNavTTISurface();
   const tmp6 = react;
   [tmp8, dependencyMap] = _slicedToArray(react.useState(false), 2);
   const tmp7 = _slicedToArray(react.useState(false), 2);
-  if (typeof f74227 === "function") {
+  if (typeof useNavigationTTIDebugFreezeTarget === "function") {
     const useSyncExternalStore = tmp6.useSyncExternalStore;
-    const subscribeNavigationTTIDebugFreezeTarget = tmp(16525).subscribeNavigationTTIDebugFreezeTarget;
-    const syncExternalStore = useSyncExternalStore(subscribeNavigationTTIDebugFreezeTarget, tmp(16525).getNavigationTTIDebugFreezeTarget, tmp(16525).getNavigationTTIDebugFreezeTarget);
+    const subscribeNavigationTTIDebugFreezeTarget = tmp(11516).subscribeNavigationTTIDebugFreezeTarget;
+    const syncExternalStore = useSyncExternalStore(subscribeNavigationTTIDebugFreezeTarget, tmp(11516).getNavigationTTIDebugFreezeTarget, tmp(11516).getNavigationTTIDebugFreezeTarget);
     if (cResult[0] === name) {
       if (cResult[1] === regionId) {
         let tmp10;
@@ -567,7 +752,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
         if (cResult[2] === tracking) {
           tmp10 = cResult[3];
         }
-        const tmp12 = closure_11(tmp10);
+        const tmp12 = closure_12(tmp10);
         let tmp15 = "exclude" === tracking;
         if (!tmp15) {
           tmp15 = tmp14;
@@ -767,27 +952,31 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
                                                                       }
                                                                       if (cResult[52] === tmp63) {
                                                                         if (cResult[53] === tmp67) {
-                                                                          let tmp71;
+                                                                          let tmp74;
                                                                           if (cResult[54] === tmp46) {
-                                                                            tmp71 = cResult[55];
+                                                                            tmp74 = cResult[55];
                                                                           }
-                                                                          return tmp71;
+                                                                          return tmp74;
                                                                         }
                                                                       }
                                                                       let obj3 = { style: tmp46, pointerEvents: "box-none", accessible: false, children: items };
                                                                       items = [tmp63, tmp67];
-                                                                      const tmp74 = closure_8(closure_6, obj3);
+                                                                      const tmp77 = closure_7(closure_6, obj3);
                                                                       cResult[52] = tmp63;
                                                                       cResult[53] = tmp67;
                                                                       cResult[54] = tmp46;
-                                                                      cResult[55] = tmp74;
-                                                                      tmp71 = tmp74;
+                                                                      cResult[55] = tmp77;
+                                                                      tmp74 = tmp77;
                                                                     }
                                                                   }
                                                                   let tmp68 = null;
                                                                   if (0 === hierarchyDepth) {
-                                                                    let obj4 = { target: syncExternalStore, surface: navTTISurface };
-                                                                    tmp68 = closure_7(closure_13, obj4);
+                                                                    let obj4 = { children: items1 };
+                                                                    const obj5 = { surface: navTTISurface };
+                                                                    items1 = [closure_8(closure_15, obj5), ];
+                                                                    const obj6 = { target: syncExternalStore, surface: navTTISurface };
+                                                                    items1[1] = closure_8(closure_16, obj6);
+                                                                    tmp68 = closure_7(closure_9, obj4);
                                                                   }
                                                                   cResult[48] = syncExternalStore;
                                                                   cResult[49] = hierarchyDepth;
@@ -803,8 +992,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
                                                     }
                                                   }
                                                 }
-                                                const obj5 = { style: tmp49, pointerEvents: str32, disabled: !(tmp15 || tmp17 && !tmp14), hitSlop: tmp41(587).space.PX_12, onPress: tmp50, accessible: tmp15 || tmp17 && !tmp14, accessibilityRole: str33, accessibilityState: tmp51, accessibilityLabel: combined2, accessibilityHint: tmp58, children: tmp59 };
-                                                const tmp66 = closure_7(closure_5, obj5);
+                                                const obj7 = { style: tmp49, pointerEvents: str32, disabled: !(tmp15 || tmp17 && !tmp14), hitSlop: tmp41(587).space.PX_12, onPress: tmp50, accessible: tmp15 || tmp17 && !tmp14, accessibilityRole: str33, accessibilityState: tmp51, accessibilityLabel: combined2, accessibilityHint: tmp58, children: tmp59 };
+                                                const tmp66 = closure_8(closure_5, obj7);
                                                 cResult[37] = tmp15 || tmp17 && !tmp14;
                                                 cResult[38] = tmp49;
                                                 cResult[39] = str32;
@@ -820,8 +1009,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
                                               }
                                             }
                                           }
-                                          const obj6 = { variant: "text-xs/bold", color: str30, style: tmp4.badgeText, lineClamp: num32, accessible: false, children: combined1 };
-                                          const tmp61 = closure_7(tmp(4892).Text, obj6);
+                                          const obj8 = { variant: "text-xs/bold", color: str30, style: tmp4.badgeText, lineClamp: num32, accessible: false, children: combined1 };
+                                          const tmp61 = closure_8(tmp(5086).Text, obj8);
                                           cResult[32] = combined1;
                                           cResult[33] = tmp4.badgeText;
                                           cResult[34] = num32;
@@ -832,7 +1021,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
                                         let tmp52;
                                         if (tmp15) {
                                           tmp52 = { expanded: tmp8 };
-                                          const obj7 = { expanded: tmp8 };
+                                          const obj9 = { expanded: tmp8 };
                                         }
                                         cResult[29] = tmp8;
                                         cResult[30] = tmp15;
@@ -841,28 +1030,28 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
                                       }
                                     }
                                   }
-                                  const items1 = [tmp4.badge, expandedBadge, includedBadge, armedBadge];
+                                  const items2 = [tmp4.badge, expandedBadge, includedBadge, armedBadge];
                                   cResult[24] = tmp4.badge;
                                   cResult[25] = armedBadge;
                                   cResult[26] = expandedBadge;
                                   cResult[27] = includedBadge;
-                                  cResult[28] = items1;
-                                  tmp49 = items1;
+                                  cResult[28] = items2;
+                                  tmp49 = items2;
                                 }
                               }
                             }
-                            const items2 = [tmp4.outline, tmp43, violationOutline, mixedOutline];
+                            const items3 = [tmp4.outline, tmp43, violationOutline, mixedOutline];
                             cResult[19] = tmp43;
                             cResult[20] = tmp4.outline;
                             cResult[21] = violationOutline;
                             cResult[22] = mixedOutline;
-                            cResult[23] = items2;
-                            tmp46 = items2;
+                            cResult[23] = items3;
+                            tmp46 = items3;
                           }
                         }
                       }
                     }
-                    const fn = function q() {
+                    function handleBadgePress() {
                       let navigationKey;
                       const tmp = closure_3;
                       if (tmp) {
@@ -895,13 +1084,13 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
                           }
                         }
                       }
-                    };
+                    }
                     cResult[13] = tmp17 && !tmp14;
                     cResult[14] = tmp15;
                     cResult[15] = "component" === kind && syncExternalStore.spanComponent === name;
                     cResult[16] = name;
                     cResult[17] = navTTISurface;
-                    cResult[18] = fn;
+                    cResult[18] = handleBadgePress;
                   }
                   const _HermesInternal5 = HermesInternal;
                   str24 = " \u00B7 " + combined;
@@ -938,16 +1127,16 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
         tmp22 = str5;
       }
     }
-    const obj8 = { name, regionId, tracking };
+    const obj10 = { name, regionId, tracking };
     cResult[0] = name;
     cResult[1] = regionId;
     cResult[2] = tracking;
-    cResult[3] = obj8;
-    tmp10 = obj8;
+    cResult[3] = obj10;
+    tmp10 = obj10;
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-}) : ((name) => {
+}) : (function NavigationTTIRegionDebugOverlay(name) {
   let Text;
   let _undefined;
   let c2;
@@ -956,10 +1145,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
   let combined2;
   let descendantTracking;
   let excludedDescendants;
-  let fn;
+  let handleBadgePress;
   let hierarchyDepth;
   let includedDescendants;
   let items2;
+  let items3;
   let num;
   let obj6;
   let str32;
@@ -976,22 +1166,22 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
   react = undefined;
   let closure_5;
   const regionId = name.regionId;
-  let tmp = closure_10();
+  let tmp = closure_11();
   let tmp2 = name;
   let tmp3 = dependencyMap;
-  let obj = name(16521);
+  let obj = name(11513);
   const navTTISurface = obj.useNavTTISurface();
   const tmp6 = _slicedToArray(react.useState(false), 2);
   [tmp7, c2] = tmp6;
   const tmp5 = react;
-  if (typeof f74227 === "function") {
+  if (typeof useNavigationTTIDebugFreezeTarget === "function") {
     let str5;
     let combined;
     const useSyncExternalStore = tmp5.useSyncExternalStore;
-    const subscribeNavigationTTIDebugFreezeTarget = tmp2(16525).subscribeNavigationTTIDebugFreezeTarget;
-    const syncExternalStore = useSyncExternalStore(subscribeNavigationTTIDebugFreezeTarget, tmp2(16525).getNavigationTTIDebugFreezeTarget, tmp2(16525).getNavigationTTIDebugFreezeTarget);
+    const subscribeNavigationTTIDebugFreezeTarget = tmp2(11516).subscribeNavigationTTIDebugFreezeTarget;
+    const syncExternalStore = useSyncExternalStore(subscribeNavigationTTIDebugFreezeTarget, tmp2(11516).getNavigationTTIDebugFreezeTarget, tmp2(11516).getNavigationTTIDebugFreezeTarget);
     let obj2 = { name, regionId, tracking };
-    const tmp10 = closure_11(obj2);
+    const tmp10 = closure_12(obj2);
     let tmp13 = "exclude" === tracking;
     if (!tmp13) {
       tmp13 = tmp12;
@@ -1089,7 +1279,6 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
       const rect = { top: result, right: result, bottom: result, left: result };
       items[1] = rect;
       const tmp38 = navTTISurface;
-      const tmp40 = closure_8;
       const tmp41 = closure_6;
       if (null != violation) {
         violationOutline = tmp.violationOutline;
@@ -1124,15 +1313,15 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
       if ("component" === kind && syncExternalStore.spanComponent === name) {
         armedBadge = tmp.armedBadge;
       }
-      let obj4 = { style: items1, pointerEvents: str32, disabled: !tmp19, hitSlop: tmp38(587).space.PX_12, onPress: fn, accessible: tmp19, accessibilityRole: str33, accessibilityState: tmp47, accessibilityLabel: combined2, accessibilityHint: tmp53, children: closure_7(Text, obj6) };
+      let obj4 = { style: items1, pointerEvents: str32, disabled: !tmp19, hitSlop: tmp38(587).space.PX_12, onPress: handleBadgePress, accessible: tmp19, accessibilityRole: str33, accessibilityState: tmp47, accessibilityLabel: combined2, accessibilityHint: tmp53, children: closure_8(Text, obj6) };
       items1[3] = armedBadge;
       str32 = "none";
       if (tmp13 || "include" === tracking && null == violation) {
         str32 = "auto";
       }
-      fn = undefined;
+      handleBadgePress = undefined;
       if (tmp13 || "include" === tracking && null == violation) {
-        fn = () => {
+        handleBadgePress = function handleBadgePress() {
           let navigationKey;
           const tmp = closure_3;
           if (tmp) {
@@ -1196,18 +1385,22 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
       }
       obj6 = { variant: "text-xs/bold", color: str30, style: tmp.badgeText, lineClamp: num, accessible: false, children: combined1 };
       num = 1;
-      Text = tmp2(4892).Text;
+      Text = tmp2(5086).Text;
       if (tmp7) {
         num = 3;
       }
-      items2 = [closure_7(tmp44, obj4), ];
-      let tmp43Result = null;
+      items2 = [closure_8(tmp44, obj4), ];
+      let tmp40Result = null;
       if (0 === hierarchyDepth) {
-        const obj7 = { target: syncExternalStore, surface: navTTISurface };
-        tmp43Result = tmp43(closure_13, obj7);
+        const obj7 = { children: items3 };
+        const obj8 = { surface: navTTISurface };
+        items3 = [closure_8(closure_15, obj8), ];
+        const obj9 = { target: syncExternalStore, surface: navTTISurface };
+        items3[1] = closure_8(closure_16, obj9);
+        tmp40Result = tmp40(closure_9, obj7);
       }
-      items2[1] = tmp43Result;
-      return tmp40(tmp41, obj3);
+      items2[1] = tmp40Result;
+      return closure_7(tmp41, obj3);
     }
     const _HermesInternal5 = HermesInternal;
     str24 = " \u00B7 " + combined;

@@ -1,19 +1,19 @@
-// Module ID: 6484
-// Function ID: 6485
+// Module ID: 6662
+// Function ID: 6663
 // Name: UserSettingsAccountActionCreators
-// Dependencies: [5, 1085, 6092, 584, 1282, 6089, 1112, 1398, 510, 6485, 6489, 6492, 6494, 2]
+// Dependencies: [5, 1085, 5939, 584, 1294, 5936, 1112, 1410, 510, 6663, 6667, 6669, 6671, 2]
 // Exports: accountDetailsClose, accountDetailsInit, clearErrors, disableAccount, getHarvestStatus, requestHarvest, resetAccount, resetAllPending, resetAllTryItOut, resetAndCloseUserProfileForm, resetPendingAccountChanges, resetPendingLegacyUsernameDisabled, resetPendingPrimaryGuildChanges, saveAccountChanges, saveProfileAndAccountChanges, updateAccount
 
-// Module 6484 (UserSettingsAccountActionCreators)
+// Module 6662 (UserSettingsAccountActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import router_utils from "router_utils" /* 1112 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6089 */;
-import trackUserAvatarUpdated from "trackUserAvatarUpdated" /* 6492 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6494 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 5936 */;
+import trackUserAvatarUpdated from "trackUserAvatarUpdated" /* 6669 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6671 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1085 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6092 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 5939 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;
@@ -228,7 +228,7 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
   if (undefined !== typingIndicatorStyle) {
     let result = null;
     if (null != typingIndicatorStyle) {
-      const obj3 = avatar(1398);
+      const obj3 = avatar(1410);
       result = obj3.serializeTypingIndicatorStyle(typingIndicatorStyle);
     }
     user.typing_indicator_style = result;
@@ -252,8 +252,8 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
     user.push_voip_provider = tmp15;
     user.push_voip_token = value2;
   }
-  const obj4 = { headers: tmpResult.buildHeadersForMd5({ [avatar(6489).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 }) };
-  tmpResult = tmp(6485);
+  const obj4 = { headers: tmpResult.buildHeadersForMd5({ [avatar(6667).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 }) };
+  tmpResult = tmp(6663);
   const promise = saveProfileAndAccountRequest(user, obj4);
   return promise.then((result) => {
     const obj = DispatcherDefault;

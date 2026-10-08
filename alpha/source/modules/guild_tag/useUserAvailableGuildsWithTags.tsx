@@ -1,12 +1,12 @@
-// Module ID: 14486
-// Function ID: 14487
+// Module ID: 14716
+// Function ID: 14717
 // Name: useUserAvailableGuildsWithTags
-// Dependencies: [2112, 2074, 558, 576, 7847, 504, 2]
+// Dependencies: [2124, 2086, 558, 576, 8265, 504, 2]
 
-// Module 14486 (useUserAvailableGuildsWithTags)
+// Module 14716 (useUserAvailableGuildsWithTags)
 import react from "react" /* 576 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ let guildsArray, selfMember;
 
 let tmp;
 const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserAvailableGuildsWithTags() {
   let tmp4;
   let tmp5;
   let obj = react;
@@ -57,7 +57,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStoresArray(tmp4, tmp5);
-}) : (() => {
+}) : (function useUserAvailableGuildsWithTags() {
   let obj = get_initialized;
   const items = [GuildStore, GuildMemberStore];
   return obj.useStateFromStoresArray(items, () => {

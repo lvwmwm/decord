@@ -1,13 +1,12 @@
-// Module ID: 7485
-// Function ID: 7486
+// Module ID: 12859
+// Function ID: 12860
 // Name: ScheduledMessageActionCreators
-// Dependencies: [32, 5, 1085, 2048, 584, 1282, 7486, 4704, 2036, 1390, 2]
+// Dependencies: [32, 5, 1085, 584, 1294, 9228, 1402, 2]
 // Exports: createScheduledMessage, deleteScheduledMessage, fetchScheduledMessages, sendScheduledMessageNow, updateScheduledMessage
 
-// Module 7485 (ScheduledMessageActionCreators)
+// Module 12859 (ScheduledMessageActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1085 */;
@@ -75,10 +74,10 @@ let obj = function _createScheduledMessage() {
             return obj5;
           } else {
             const obj6 = { type: "SCHEDULED_MESSAGES_CREATE_START", channelId };
-            const obj13 = closure_132_1(closure_132_2[4]);
-            obj13.dispatch(obj6);
+            const obj11 = closure_132_1(closure_132_2[3]);
+            obj11.dispatch(obj6);
             c6 = 1;
-            const HTTP = closure_132_0(closure_132_2[5]).HTTP;
+            const HTTP = closure_132_0(closure_132_2[4]).HTTP;
             const request = { url: closure_132_5.SCHEDULED_MESSAGES, body: obj7, rejectWithError: true };
             obj7 = { channel_id: channelId, content: attachments.content, scheduled_timestamp, flags: attachments.flags, message_reference: attachments.message_reference, allowed_mentions: attachments.allowed_mentions, sticker_ids: attachments.sticker_ids, poll: attachments.poll, attachments };
             attachments = attachments.attachments;
@@ -93,7 +92,7 @@ let obj = function _createScheduledMessage() {
           }
         } else if (2 === c7) {
           c6 = 0;
-          const scheduledMessageLogger = closure_132_0(closure_132_2[6]).scheduledMessageLogger;
+          const scheduledMessageLogger = closure_132_0(closure_132_2[5]).scheduledMessageLogger;
           scheduledMessageLogger.error("Failed to create scheduled message", tmp28);
           const body = tmp28.body;
           let message;
@@ -106,7 +105,7 @@ let obj = function _createScheduledMessage() {
           }
           errorMsg = message2;
           const obj9 = { type: "SCHEDULED_MESSAGES_CREATE_FAILURE", channelId, errorMsg };
-          const obj3 = closure_132_1(closure_132_2[4]);
+          const obj3 = closure_132_1(closure_132_2[3]);
           obj3.dispatch(obj9);
           throw tmp28;
         } else if (arg0 === 1) {
@@ -118,14 +117,11 @@ let obj = function _createScheduledMessage() {
           const obj12 = { value, done: true };
           return obj12;
         } else {
-          const obj14 = { type: "SCHEDULED_MESSAGES_CREATE_SUCCESS", channelId, scheduledMessageSend: obj10.convertServerScheduledMessageSend(value.body) };
-          const dispatch = closure_132_1(closure_132_2[4]).dispatch;
-          const tmp39 = closure_132_1(closure_132_2[4]);
-          obj10 = closure_132_0(closure_132_2[6]);
-          dispatch(obj14);
-          const obj15 = { dismissAction: closure_132_7.INDIRECT_ACTION };
-          const obj11 = closure_132_0(closure_132_2[7]);
-          const result = obj11.UNSAFE_markDismissibleContentAsDismissed(closure_132_0(closure_132_2[8]).DismissibleContent.SCHEDULED_MESSAGES_DRAFT_COACHMARK, obj15);
+          const obj13 = { type: "SCHEDULED_MESSAGES_CREATE_SUCCESS", channelId, scheduledMessageSend: obj10.convertServerScheduledMessageSend(value.body) };
+          const dispatch = closure_132_1(closure_132_2[3]).dispatch;
+          const tmp39 = closure_132_1(closure_132_2[3]);
+          obj10 = closure_132_0(closure_132_2[5]);
+          dispatch(obj13);
           c6 = 0;
           c8 = 3;
           obj = { value, done: true };
@@ -207,7 +203,7 @@ obj = function _updateScheduledMessage() {
             } else {
               let result;
               const obj7 = { type: "SCHEDULED_MESSAGES_UPDATE_START", scheduledMessageId };
-              const obj12 = closure_132_1(closure_132_2[4]);
+              const obj12 = closure_132_1(closure_132_2[3]);
               obj12.dispatch(obj7);
               c6 = 1;
               if (null == content) {
@@ -215,11 +211,11 @@ obj = function _updateScheduledMessage() {
                 result = items;
               } else {
                 const obj8 = { content, flags: removeFlag(content, closure_132_6.SUPPRESS_NOTIFICATIONS) };
-                const parseContentAndFlagsForSilentMessage = closure_132_0(closure_132_2[6]).parseContentAndFlagsForSilentMessage;
-                closure_132_0(closure_132_2[6]);
+                const parseContentAndFlagsForSilentMessage = closure_132_0(closure_132_2[5]).parseContentAndFlagsForSilentMessage;
+                closure_132_0(closure_132_2[5]);
                 content = c3;
-                removeFlag = closure_132_0(closure_132_2[9]).removeFlag;
-                closure_132_0(closure_132_2[9]);
+                removeFlag = closure_132_0(closure_132_2[6]).removeFlag;
+                closure_132_0(closure_132_2[6]);
                 if (c3 == null) {
                   content = 0;
                 }
@@ -229,7 +225,7 @@ obj = function _updateScheduledMessage() {
               closure_5 = closure_132_3(c4, 2);
               content2 = closure_5[0];
               flags = closure_5[1];
-              const HTTP = closure_132_0(closure_132_2[5]).HTTP;
+              const HTTP = closure_132_0(closure_132_2[4]).HTTP;
               const request = { url: closure_132_5.SCHEDULED_MESSAGE(scheduledMessageId), body: obj9, rejectWithError: true };
               const patch = HTTP.patch;
               c7 = 3;
@@ -241,7 +237,7 @@ obj = function _updateScheduledMessage() {
           } else if (2 === c7) {
             c6 = 0;
             let closure_10 = closure_5;
-            const scheduledMessageLogger = closure_132_0(closure_132_2[6]).scheduledMessageLogger;
+            const scheduledMessageLogger = closure_132_0(closure_132_2[5]).scheduledMessageLogger;
             scheduledMessageLogger.error("Failed to update scheduled message", closure_10);
             body = closure_10.body;
             let message;
@@ -254,7 +250,7 @@ obj = function _updateScheduledMessage() {
             }
             errorMsg = message2;
             const obj11 = { type: "SCHEDULED_MESSAGES_UPDATE_FAILURE", scheduledMessageId, errorMsg };
-            const obj4 = closure_132_1(closure_132_2[4]);
+            const obj4 = closure_132_1(closure_132_2[3]);
             obj4.dispatch(obj11);
             const _Error = Error;
             const self = this;
@@ -271,9 +267,9 @@ obj = function _updateScheduledMessage() {
           } else {
             body = value;
             obj = { type: "SCHEDULED_MESSAGES_UPDATE_SUCCESS", scheduledMessageSend: obj2.convertServerScheduledMessageSend(body.body) };
-            const dispatch = closure_132_1(closure_132_2[4]).dispatch;
-            closure_132_1(closure_132_2[4]);
-            obj2 = closure_132_0(closure_132_2[6]);
+            const dispatch = closure_132_1(closure_132_2[3]).dispatch;
+            closure_132_1(closure_132_2[3]);
+            obj2 = closure_132_0(closure_132_2[5]);
             dispatch(obj);
             c6 = 0;
             c8 = 3;
@@ -341,7 +337,7 @@ obj = function _deleteScheduledMessage() {
           } else if (1 === c6) {
             c5 = 0;
             closure_2 = closure_4;
-            const scheduledMessageLogger = closure_131_0(closure_131_2[6]).scheduledMessageLogger;
+            const scheduledMessageLogger = closure_131_0(closure_131_2[5]).scheduledMessageLogger;
             scheduledMessageLogger.error("Failed to cancel scheduled message", closure_2);
             const body = closure_2.body;
             let message;
@@ -354,7 +350,7 @@ obj = function _deleteScheduledMessage() {
             }
             errorMsg = message2;
             const obj8 = { type: "SCHEDULED_MESSAGES_DELETE_FAILURE", scheduledMessageId, errorMsg };
-            const obj4 = closure_131_1(closure_131_2[4]);
+            const obj4 = closure_131_1(closure_131_2[3]);
             obj4.dispatch(obj8);
             const _Error = Error;
             const self = this;
@@ -370,7 +366,7 @@ obj = function _deleteScheduledMessage() {
             return { value, done: true };
           } else {
             const obj11 = { type: "SCHEDULED_MESSAGES_DELETE_SUCCESS", scheduledMessageId };
-            obj = closure_131_1(closure_131_2[4]);
+            obj = closure_131_1(closure_131_2[3]);
             obj.dispatch(obj11);
             c5 = 0;
             c7 = 3;
@@ -436,7 +432,7 @@ obj = function _sendScheduledMessageNow() {
           } else if (1 === c6) {
             c5 = 0;
             closure_2 = closure_4;
-            const scheduledMessageLogger = closure_131_0(closure_131_2[6]).scheduledMessageLogger;
+            const scheduledMessageLogger = closure_131_0(closure_131_2[5]).scheduledMessageLogger;
             scheduledMessageLogger.error("Failed to send scheduled message now", closure_2);
             const body = closure_2.body;
             let message;
@@ -449,7 +445,7 @@ obj = function _sendScheduledMessageNow() {
             }
             errorMsg = message2;
             const obj8 = { type: "SCHEDULED_MESSAGES_SEND_NOW_FAILURE", scheduledMessageId, errorMsg };
-            const obj4 = closure_131_1(closure_131_2[4]);
+            const obj4 = closure_131_1(closure_131_2[3]);
             obj4.dispatch(obj8);
             const _Error = Error;
             const self = this;
@@ -465,7 +461,7 @@ obj = function _sendScheduledMessageNow() {
             return { value, done: true };
           } else {
             const obj11 = { type: "SCHEDULED_MESSAGES_SEND_NOW_SUCCESS", scheduledMessageId };
-            obj = closure_131_1(closure_131_2[4]);
+            obj = closure_131_1(closure_131_2[3]);
             obj.dispatch(obj11);
             c5 = 0;
             c7 = 3;
@@ -494,14 +490,14 @@ obj = function _getScheduledMessages() {
     const obj4 = { url: constants.SCHEDULED_MESSAGES, rejectWithError: true };
     await HTTP.get(obj4);
     const body = arg1.body;
-    return body.map(closure_128_0(closure_128_2[6]).convertServerScheduledMessageSend);
+    return body.map(closure_128_0(closure_128_2[5]).convertServerScheduledMessageSend);
   });
   return obj(...arguments);
 };
 obj = function _fetchScheduledMessages() {
   obj = _asyncToGenerator(async (arg0, value) => {
     function getScheduledMessages() {
-      return closure_1_12(...arguments);
+      return closure_1_11(...arguments);
     }
     if (c5 === 2) {
       c5 = 3;
@@ -544,10 +540,10 @@ obj = function _fetchScheduledMessages() {
           if (1 === c4) {
             c3 = 0;
             error = closure_2;
-            const scheduledMessageLogger2 = closure_129_0(closure_129_2[6]).scheduledMessageLogger;
+            const scheduledMessageLogger2 = closure_129_0(closure_129_2[5]).scheduledMessageLogger;
             scheduledMessageLogger2.error("Failed to fetch scheduled messages", error);
             const obj7 = { type: "FETCH_SCHEDULED_MESSAGES_FAILURE", error };
-            const obj4 = closure_129_1(closure_129_2[4]);
+            const obj4 = closure_129_1(closure_129_2[3]);
             obj4.dispatch(obj7);
           } else if (arg0 === 1) {
             c5 = 3;
@@ -559,10 +555,10 @@ obj = function _fetchScheduledMessages() {
             return obj8;
           } else {
             messages = value;
-            const scheduledMessageLogger = closure_129_0(closure_129_2[6]).scheduledMessageLogger;
+            const scheduledMessageLogger = closure_129_0(closure_129_2[5]).scheduledMessageLogger;
             scheduledMessageLogger.info("Fetched scheduled messages", messages);
             const obj9 = { type: "FETCH_SCHEDULED_MESSAGES_SUCCESS", messages };
-            obj = closure_129_1(closure_129_2[4]);
+            obj = closure_129_1(closure_129_2[3]);
             obj.dispatch(obj9);
             c3 = 0;
           }
@@ -583,7 +579,6 @@ obj = function _fetchScheduledMessages() {
   return obj(...arguments);
 };
 ({ Endpoints: hasOwnProperty, MessageFlags: metroRequire } = Constants);
-const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 let result = size.fileFinishedImporting("modules/scheduled_messages/ScheduledMessageActionCreators.tsx");
 
 export const createScheduledMessage = function createScheduledMessage() {

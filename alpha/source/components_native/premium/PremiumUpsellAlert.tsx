@@ -1,44 +1,42 @@
-// Module ID: 8857
-// Function ID: 8858
+// Module ID: 9400
+// Function ID: 9401
 // Name: PremiumUpsellAlert
-// Dependencies: [32, 19, 17, 1195, 1377, 1085, 8858, 1379, 21, 4896, 587, 4595, 4892, 558, 576, 6969, 1126, 4534, 8849, 8850, 4797, 4735, 8885, 8886, 8887, 8888, 8839, 8889, 8890, 8891, 8892, 504, 8091, 6705, 8848, 1484, 6664, 6688, 1252, 5597, 8893, 5324, 5981, 8894, 5790, 1188, 8895, 8852, 2]
+// Dependencies: [32, 19, 17, 1207, 1389, 1085, 9401, 1391, 21, 5090, 587, 4787, 5086, 558, 576, 7158, 1126, 4726, 9209, 9210, 4991, 4929, 9428, 9429, 9430, 9431, 9198, 9432, 9433, 9434, 9435, 504, 5258, 6882, 9208, 1496, 6841, 6865, 1264, 5392, 9436, 5636, 6164, 9437, 5394, 1200, 9438, 9212, 2]
 
-// Module 8857 (PremiumUpsellAlert)
+// Module 9400 (PremiumUpsellAlert)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PremiumUtils from "PremiumUtils" /* 4534 */;
-import native from "native" /* 4595 */;
-import shared from "shared" /* 4735 */;
-import useThemeDefault from "useTheme" /* 4797 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import FileSizeUtils from "FileSizeUtils" /* 5324 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 6969 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8091 */;
-import useMessageMaxLengthDefault from "useMessageMaxLength" /* 8839 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8849 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8850 */;
-import AppIconConstants from "AppIconConstants" /* 8858 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 8887 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 8888 */;
-import PremiumFeatureUtils from "PremiumFeatureUtils" /* 8893 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 8894 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PremiumUtils from "PremiumUtils" /* 4726 */;
+import native from "native" /* 4787 */;
+import shared from "shared" /* 4929 */;
+import useThemeDefault from "useTheme" /* 4991 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5258 */;
+import FileSizeUtils from "FileSizeUtils" /* 5636 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7158 */;
+import useMessageMaxLengthDefault from "useMessageMaxLength" /* 9198 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9209 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9210 */;
+import AppIconConstants from "AppIconConstants" /* 9401 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9430 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 9431 */;
+import PremiumFeatureUtils from "PremiumFeatureUtils" /* 9436 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 9437 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
-import UserStore from "UserStore" /* 1377 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let initialUpsellKey;
 
 let c10;
 let c9;
@@ -83,7 +81,7 @@ class UpsellItem extends PureComponent {
     items1 = [authStore2(metroRequire, obj2), , ];
     const obj3 = { style: tmp.upsellTitle, variant: "text-md/medium", color: "mobile-text-heading-primary", children: passiveTitle };
     const Text = Text_Text.Text;
-    const tmp2 = closure_15;
+    const tmp2 = authStore3;
     const tmp3 = hasOwnProperty;
     if (isInitial) {
       passiveTitle = activeTitle;
@@ -98,7 +96,7 @@ const prototype = UpsellItem.prototype;
 UpsellItem.contextType = native.ThemeContext;
 UpsellItem.defaultProps = { isInitial: false };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsellItem(arg0) {
   let alertWidth;
   let description;
   let image;
@@ -161,7 +159,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
               const obj4 = { style: tmp6, children: items };
               items = [tmp8, tmp12, tmp15];
-              const tmp21 = closure_15(hasOwnProperty, obj4);
+              const tmp21 = authStore3(hasOwnProperty, obj4);
               cResult[18] = tmp6;
               cResult[19] = tmp8;
               cResult[20] = tmp12;
@@ -203,7 +201,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = tmp5;
   cResult[5] = items2;
   tmp6 = items2;
-}) : ((upsellItem) => {
+}) : (function PremiumUpsellItem(upsellItem) {
   let alertWidth;
   let description;
   let imageStyle;
@@ -226,11 +224,11 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items2[1] = authStore2(Text_Text.Text, obj4);
   const obj5 = { style: legacyClassComponentStyles.premiumUpsellDescription, variant: "text-md/medium", children: description };
   items2[2] = authStore2(Text_Text.Text, obj5);
-  return closure_15(hasOwnProperty, obj2);
+  return authStore3(hasOwnProperty, obj2);
 });
 let closure_19 = tmp8;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalEmojiUpsell(arg0) {
   let alertWidth;
   let first;
   let tmp11;
@@ -345,7 +343,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = tmp23;
   cResult[9] = tmp26;
   tmp25 = tmp26;
-}) : ((arg0) => {
+}) : (function GlobalEmojiUpsell(arg0) {
   let alertWidth;
   let format2Result;
   let intl4;
@@ -402,7 +400,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return authStore2(closure_19, obj5);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnimatedEmojiUpsell(arg0) {
   let alertWidth;
   let first;
   let tmp10;
@@ -459,7 +457,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = tmp10;
   cResult[7] = tmp13;
   tmp12 = tmp13;
-}) : ((alertWidth) => {
+}) : (function AnimatedEmojiUpsell(alertWidth) {
   let formatResult;
   let intl;
   let obj2;
@@ -484,7 +482,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp(tmp2, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) => {
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGuildIdentityUpsell(alertWidth) {
   let tmp12;
   let tmp5Result;
   let tmp8;
@@ -498,9 +496,9 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) =>
   const tmp6 = useThemeDefault();
   const obj3 = shared;
   if (obj3.isThemeDark(tmp6)) {
-    tmp5Result = tmp5(8885);
+    tmp5Result = tmp5(9428);
   } else {
-    tmp5Result = tmp5(8886);
+    tmp5Result = tmp5(9429);
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
@@ -537,7 +535,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) =>
   cResult[6] = tmp12;
   cResult[7] = tmp14;
   tmp13 = tmp14;
-}) : ((alertWidth) => {
+}) : (function PremiumGuildIdentityUpsell(alertWidth) {
   let intl;
   let intl2;
   let obj4;
@@ -551,9 +549,9 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) =>
   const tmp6 = authStore2;
   const tmp7 = closure_19;
   if (obj3.isThemeDark(tmp5)) {
-    tmp4Result = tmp4(8885);
+    tmp4Result = tmp4(9428);
   } else {
-    tmp4Result = tmp4(8886);
+    tmp4Result = tmp4(9429);
   }
   obj4 = { image: tmp4Result, title: intl.string(intl6.t.OVN9la), description: intl2.string(intl6.t.j0dyAG) };
   intl = tmp(1126).intl;
@@ -561,7 +559,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) =>
   return tmp6(tmp7, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) => {
+let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomProfilesUpsell(alertWidth) {
   let first;
   let intl;
   let intl2;
@@ -592,7 +590,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) =>
   cResult[2] = legacyClassComponentStyles.customProfileUpsellImage;
   cResult[3] = tmp8;
   tmp7 = tmp8;
-}) : ((alertWidth) => {
+}) : (function CustomProfilesUpsell(alertWidth) {
   let intl;
   let intl2;
   let obj3;
@@ -605,7 +603,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) =>
   return authStore2(closure_19, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomAppIconsUpsell(arg0) {
   let alertWidth;
   let first;
   let imageSource;
@@ -684,7 +682,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = prop;
   cResult[3] = items;
   tmp10 = items;
-}) : ((imageSource) => {
+}) : (function CustomAppIconsUpsell(imageSource) {
   let intl;
   let intl2;
   let items;
@@ -715,7 +713,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp5(tmp6, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStickerUpsell(arg0) {
   let alertWidth;
   let first;
   let tmp10;
@@ -772,7 +770,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = tmp10;
   cResult[7] = tmp13;
   tmp12 = tmp13;
-}) : ((alertWidth) => {
+}) : (function GlobalStickerUpsell(alertWidth) {
   let formatResult;
   let intl;
   let obj2;
@@ -797,7 +795,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp(tmp2, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) => {
+let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function LongerMessageUpsell(alertWidth) {
   let first;
   let tmp11;
   let tmp5Result;
@@ -811,9 +809,9 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) =>
   const largerUpsellImage = legacyClassComponentStyles.largerUpsellImage;
   const obj3 = shared;
   if (obj3.isThemeDark(tmp6)) {
-    tmp5Result = tmp5(8889);
+    tmp5Result = tmp5(9432);
   } else {
-    tmp5Result = tmp5(8890);
+    tmp5Result = tmp5(9433);
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
@@ -860,7 +858,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) =>
   cResult[4] = tmp11;
   cResult[5] = obj6;
   tmp13 = obj6;
-}) : ((alertWidth) => {
+}) : (function LongerMessageUpsell(alertWidth) {
   let intl;
   let intl2;
   let obj4;
@@ -875,9 +873,9 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) =>
   const tmp7 = authStore2;
   const tmp8 = closure_19;
   if (obj3.isThemeDark(tmp5)) {
-    tmp4Result = tmp4(8889);
+    tmp4Result = tmp4(9432);
   } else {
-    tmp4Result = tmp4(8890);
+    tmp4Result = tmp4(9433);
   }
   obj4 = { image: tmp4Result, title: intl.string(intl6.t["8cjmTj"]), description: intl2.formatToPlainString(intl6.t.moN9wh, { maxLength: tmp6 }) };
   intl = tmp(1126).intl;
@@ -885,7 +883,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) =>
   return tmp7(tmp8, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) => {
+let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildCapUpsell(alertWidth) {
   let tmp12;
   let tmp5Result;
   let tmp8;
@@ -899,9 +897,9 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) =>
   const tmp6 = useThemeDefault();
   const obj3 = shared;
   if (obj3.isThemeDark(tmp6)) {
-    tmp5Result = tmp5(8891);
+    tmp5Result = tmp5(9434);
   } else {
-    tmp5Result = tmp5(8892);
+    tmp5Result = tmp5(9435);
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
@@ -938,7 +936,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) =>
   cResult[6] = tmp12;
   cResult[7] = tmp14;
   tmp13 = tmp14;
-}) : ((alertWidth) => {
+}) : (function GuildCapUpsell(alertWidth) {
   let intl;
   let intl2;
   let obj4;
@@ -952,9 +950,9 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) =>
   const tmp6 = authStore2;
   const tmp7 = closure_19;
   if (obj3.isThemeDark(tmp5)) {
-    tmp4Result = tmp4(8891);
+    tmp4Result = tmp4(9434);
   } else {
-    tmp4Result = tmp4(8892);
+    tmp4Result = tmp4(9435);
   }
   obj4 = { image: tmp4Result, title: intl.string(intl6.t["CoNXB+"]), description: intl2.format(intl6.t.mkXb2F, {}) };
   intl = tmp(1126).intl;
@@ -962,7 +960,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) =>
   return tmp6(tmp7, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadUpsell(arg0) {
   let alertWidth;
   let dataSavingMode;
   let intl;
@@ -990,13 +988,13 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult = get_initialized;
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function y(dataSavingMode) {
+    function toggleExtraCompression(dataSavingMode) {
       const obj = UserSettingsActionCreatorsDefault;
       const obj2 = { dataSavingMode };
       const result = obj.updatedUnsyncedSettings(obj2);
-    };
-    cResult[2] = fn2;
-    tmp8 = fn2;
+    }
+    cResult[2] = toggleExtraCompression;
+    tmp8 = toggleExtraCompression;
   } else {
     tmp8 = cResult[2];
   }
@@ -1020,7 +1018,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       let obj2 = { children: items1 };
       items1 = [tmp10, tmp12];
-      const tmp18 = closure_15(authStore3, obj2);
+      const tmp18 = authStore3(authStore4, obj2);
       cResult[9] = tmp10;
       cResult[10] = tmp12;
       cResult[11] = tmp18;
@@ -1029,7 +1027,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp13 = null;
     if (first) {
       const obj3 = { start: true, end: true, label: intl.string(intl6.t.ix8XIj), subLabel: intl2.string(intl6.t["wC0+Ph"]), value: stateFromStores, onValueChange: tmp8 };
-      const TableSwitchRow = tmp(6705).TableSwitchRow;
+      const TableSwitchRow = tmp(6882).TableSwitchRow;
       intl = tmp(1126).intl;
       intl2 = tmp(1126).intl;
       tmp13 = authStore2(TableSwitchRow, obj3);
@@ -1044,7 +1042,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = item;
   cResult[5] = tmp11;
   tmp10 = tmp11;
-}) : ((arg0) => {
+}) : (function UploadUpsell(arg0) {
   let alertWidth;
   let dataSavingMode;
   let intl;
@@ -1057,8 +1055,8 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const first = _slicedToArray(react.useState(!stateFromStores), 1)[0];
   const children = [authStore2(UpsellItem, { isInitial: true, upsellItem: item, alertWidth }, constants2.UPLOAD), ];
   let tmp7Result = null;
-  const tmp5 = closure_15;
-  const tmp6 = authStore3;
+  const tmp5 = authStore3;
+  const tmp6 = authStore4;
   const tmp7 = authStore2;
   if (first) {
     let obj2 = {
@@ -1067,13 +1065,13 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       label: intl.string(intl6.t.ix8XIj),
       subLabel: intl2.string(intl6.t["wC0+Ph"]),
       value: stateFromStores,
-      onValueChange(dataSavingMode) {
+      onValueChange: function toggleExtraCompression(dataSavingMode) {
           const obj = UserSettingsActionCreatorsDefault;
           const obj2 = { dataSavingMode };
           const result = obj.updatedUnsyncedSettings(obj2);
         }
     };
-    const TableSwitchRow = tmp(6705).TableSwitchRow;
+    const TableSwitchRow = tmp(6882).TableSwitchRow;
     intl = tmp(1126).intl;
     intl2 = tmp(1126).intl;
     tmp7Result = tmp7(TableSwitchRow, obj2);
@@ -1082,7 +1080,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp5(tmp6, { children });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialUpsellKey) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsellAlert(initialUpsellKey) {
   let analyticsLocations;
   let analyticsProperties;
   let current;
@@ -1133,7 +1131,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialUpsellKey) =>
   const tmp5Result = analyticsLocation(tmp2[36]);
   const analyticsLocations2 = tmp5Result(analyticsLocations, tmp5(tmp2[37]).PREMIUM_UPSELL_ALERT).analyticsLocations;
   if (cResult[2] !== analyticsLocation) {
-    class G {
+    class B {
       constructor() {
         const obj = AnalyticsUtilsDefault;
         const obj2 = { type: "Nitro Upsell", location: analyticsLocation };
@@ -1141,10 +1139,10 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialUpsellKey) =>
       }
     }
     cResult[2] = analyticsLocation;
-    cResult[3] = G;
-    tmp13 = G;
+    cResult[3] = B;
+    tmp13 = B;
   } else {
-    class G {
+    class B {
       constructor() {
         const obj = AnalyticsUtilsDefault;
         const obj2 = { type: "Nitro Upsell", location: analyticsLocation };
@@ -1158,7 +1156,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialUpsellKey) =>
   const useTier0UpsellContent = premiumUpsellConfig.useTier0UpsellContent;
   ({ getNitroText, onViewAllPerks } = premiumUpsellConfig);
   if (cResult[4] === analyticsLocation) {
-    class G {
+    class B {
       constructor() {
         const obj = AnalyticsUtilsDefault;
         const obj2 = { type: "Nitro Upsell", location: analyticsLocation };
@@ -1171,7 +1169,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialUpsellKey) =>
   cResult[5] = analyticsProperties;
   cResult[6] = useTier0UpsellContent;
   cResult[7] = obj3;
-}) : ((initialUpsellKey) => {
+}) : (function PremiumUpsellAlert(initialUpsellKey) {
   let alertWidth;
   let analyticsLocations;
   let analyticsProperties;

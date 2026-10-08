@@ -1,19 +1,19 @@
-// Module ID: 4609
-// Function ID: 4610
+// Module ID: 4801
+// Function ID: 4802
 // Name: ThemeContextFlags
-// Dependencies: [558, 576, 4599, 2]
+// Dependencies: [558, 576, 4791, 2]
 // Exports: hasThemeFlag, setThemeFlag
 
-// Module 4609 (ThemeContextFlags)
+// Module 4801 (ThemeContextFlags)
 import react from "react" /* 576 */;
-import ThemeContext from "ThemeContext" /* 4599 */;
+import ThemeContext from "ThemeContext" /* 4791 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 function hasThemeFlag(flags, MOBILE_DARK_GRADIENT_THEME_ENABLED) {
   return (flags.flags & MOBILE_DARK_GRADIENT_THEME_ENABLED) === MOBILE_DARK_GRADIENT_THEME_ENABLED;
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useThemeFlag(arg0) {
   const obj = react;
   const cResult = obj.c(3);
   const obj2 = ThemeContext;
@@ -29,7 +29,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = arg0;
   cResult[2] = (themeContext.flags & arg0) === arg0;
   tmp3 = tmp4;
-}) : ((arg0) => {
+}) : (function useThemeFlag(arg0) {
   const obj = ThemeContext;
   return (obj.useThemeContext().flags & arg0) === arg0;
 });

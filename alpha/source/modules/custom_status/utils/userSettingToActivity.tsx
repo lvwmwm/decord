@@ -1,14 +1,14 @@
-// Module ID: 10839
-// Function ID: 10840
+// Module ID: 10488
+// Function ID: 10489
 // Name: userSettingToActivity
-// Dependencies: [19, 5645, 1085, 4529, 558, 576, 2028, 504, 2]
+// Dependencies: [19, 5992, 1085, 4721, 558, 576, 2040, 504, 2]
 // Exports: getActivityFromCustomStatus
 
-// Module 10839 (userSettingToActivity)
+// Module 10488 (userSettingToActivity)
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4529 */;
-import EmojiStore from "EmojiStore" /* 5645 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4721 */;
+import EmojiStore from "EmojiStore" /* 5992 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -57,7 +57,7 @@ function _activityFromSetting(setting, stateFromStores) {
 }
 const useMemo = react.useMemo;
 const ActivityTypes = Constants.ActivityTypes;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCustomStatusActivity() {
   let emojiId;
   let first;
   let tmp8;
@@ -65,7 +65,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp = emojiId;
   const obj = emojiId(576);
   const cResult = obj.c(7);
-  const CustomStatusSetting = emojiId(2028).CustomStatusSetting;
+  const CustomStatusSetting = emojiId(2040).CustomStatusSetting;
   const setting = CustomStatusSetting.useSetting();
   emojiId = undefined;
   if (setting != null) {
@@ -116,7 +116,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[5] = setting;
   cResult[6] = tmp12;
   tmp11 = tmp12;
-}) : (() => {
+}) : (function useCustomStatusActivity() {
   let setting;
   let stateFromStores;
   const tmp = setting;

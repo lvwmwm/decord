@@ -1,18 +1,18 @@
-// Module ID: 9011
-// Function ID: 9012
+// Module ID: 11150
+// Function ID: 11151
 // Name: FramesNativeManager
-// Dependencies: [17, 9000, 1370, 9012, 9013, 5715, 1126, 1375, 584, 2]
+// Dependencies: [17, 10612, 1382, 10624, 11151, 5298, 1126, 1387, 584, 2]
 
-// Module 9011 (FramesNativeManager)
+// Module 11150 (FramesNativeManager)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1126 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5715 */;
-import react_nativeDefault from "react-native" /* 9012 */;
-import FramesStore from "FramesStore" /* 9000 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1370 */;
-import FramesManager from "FramesManager" /* 9013 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5298 */;
+import react_nativeDefault from "react-native" /* 10624 */;
+import FramesStore from "FramesStore" /* 10612 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1382 */;
+import FramesManager from "FramesManager" /* 11151 */;
 import size from "module_2" /* 2 */;
 
 const NativeEventEmitter = react_native.NativeEventEmitter;

@@ -1,16 +1,16 @@
-// Module ID: 15970
-// Function ID: 15971
+// Module ID: 16230
+// Function ID: 16231
 // Name: ChannelScreenAnimatedFrame
-// Dependencies: [19, 21, 4896, 587, 558, 576, 4618, 4897, 1188, 15968, 7518, 6626, 2]
+// Dependencies: [19, 21, 5090, 587, 558, 576, 4810, 5091, 1200, 16228, 9241, 6803, 2]
 
-// Module 15970 (ChannelScreenAnimatedFrame)
+// Module 16230 (ChannelScreenAnimatedFrame)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import timing from "timing" /* 4897 */;
-import PanelsConfig from "PanelsConfig" /* 15968 */;
+import native from "native" /* 1200 */;
+import timing from "timing" /* 5091 */;
+import PanelsConfig from "PanelsConfig" /* 16228 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ obj3 = { borderLeftColor: nativeDefault.colors.APP_FRAME_BORDER, borderLeftWidth
 let closure_4 = createStyles(obj);
 const __initData = { code: "function ChannelScreenAnimatedFrameTsx1(){const{translateX,maxWidth,isChatLockedOpen,withTiming,STANDARD_EASING,SIDE_PANEL_CLOSE_DURATION_MS,SIDE_PANEL_OPEN_DURATION_MS}=this.__closure;const hide=translateX.get()===maxWidth||isChatLockedOpen;return{opacity:withTiming(hide?0:1,{easing:STANDARD_EASING,duration:hide?SIDE_PANEL_CLOSE_DURATION_MS:SIDE_PANEL_OPEN_DURATION_MS})};}" };
 const __initData2 = { code: "function ChannelScreenAnimatedFrameTsx2(){const{translateX,maxWidth,isChatLockedOpen,withTiming,STANDARD_EASING,SIDE_PANEL_CLOSE_DURATION_MS,SIDE_PANEL_OPEN_DURATION_MS}=this.__closure;const hide=translateX.get()===maxWidth||isChatLockedOpen;return{opacity:withTiming(hide?0:1,{easing:STANDARD_EASING,duration:hide?SIDE_PANEL_CLOSE_DURATION_MS:SIDE_PANEL_OPEN_DURATION_MS})};}" };
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((translateX) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelScreenAnimatedFrame(translateX) {
   let isChatLockedOpen;
   let tmp = translateX;
   let obj = translateX(isChatLockedOpen[5]);
@@ -102,7 +102,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((translateX) => {
   cResult[3] = tmp4.splitDivider;
   cResult[4] = items;
   tmp7 = items;
-}) : ((translateX) => {
+}) : (function ChannelScreenAnimatedFrame(translateX) {
   translateX = translateX.translateX;
   const maxWidth = translateX.maxWidth;
   const isChatLockedOpen = translateX.isChatLockedOpen;

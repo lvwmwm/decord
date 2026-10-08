@@ -1,21 +1,19 @@
-// Module ID: 10083
-// Function ID: 10084
+// Module ID: 9666
+// Function ID: 9667
 // Name: usePressHorizontalAutocompleteItemHandler
-// Dependencies: [19, 1085, 558, 576, 10084, 2]
+// Dependencies: [19, 1085, 558, 576, 9667, 2]
 
-// Module 10083 (usePressHorizontalAutocompleteItemHandler)
+// Module 9666 (usePressHorizontalAutocompleteItemHandler)
 import Constants from "Constants" /* 1085 */;
-import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 10084 */;
+import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 9667 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let draftContent;
-
 let items = [, , , ];
 ({ USER: arr[0], ROLE: arr[1], CHANNEL: arr[2], EMOJI: arr[3] } = Constants.AutoCompleteResultTypes);
 const set = new Set(items);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((draftContent) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePressHorizontalAutocompleteItemHandler(draftContent) {
   let handleTextChange;
   let obj = draftContent(handleTextChange[3]);
   const cResult = obj.c(5);
@@ -47,7 +45,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((draftContent) => {
   cResult[3] = setSelection;
   cResult[4] = fn;
   tmp2 = fn;
-}) : ((draftContent) => {
+}) : (function usePressHorizontalAutocompleteItemHandler(draftContent) {
   draftContent = draftContent.draftContent;
   const handleTextChange = draftContent.handleTextChange;
   const setSelection = draftContent.setSelection;

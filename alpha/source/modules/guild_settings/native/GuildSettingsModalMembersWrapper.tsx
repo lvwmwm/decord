@@ -1,23 +1,21 @@
-// Module ID: 17869
-// Function ID: 17870
+// Module ID: 18156
+// Function ID: 18157
 // Name: GuildSettingsModalMembersWrapper
-// Dependencies: [19, 21, 558, 576, 6777, 16565, 16567, 2]
+// Dependencies: [19, 21, 558, 576, 6953, 16820, 16822, 2]
 
-// Module 17869 (GuildSettingsModalMembersWrapper)
+// Module 18156 (GuildSettingsModalMembersWrapper)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import canReviewGuildMemberApplications from "canReviewGuildMemberApplications" /* 6777 */;
-import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 16565 */;
-import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 16567 */;
+import canReviewGuildMemberApplications from "canReviewGuildMemberApplications" /* 6953 */;
+import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 16820 */;
+import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 16822 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let guildId;
-
 const jsx = Fragment.jsx;
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsModalMembersWrapper(guildId) {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(4);
@@ -43,10 +41,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId
     tmp3 = cResult[3];
   }
   return tmp3;
-}) : ((guildId) => {
+}) : (function GuildSettingsModalMembersWrapper(guildId) {
   guildId = guildId.guildId;
   const obj = canReviewGuildMemberApplications;
-  return jsx(importDefault(obj.useCanReviewGuildMemberApplications(guildId) ? 16565 : 16567), { guildId });
+  return jsx(importDefault(obj.useCanReviewGuildMemberApplications(guildId) ? 16820 : 16822), { guildId });
 }));
 const result = size.fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalMembersWrapper.tsx");
 

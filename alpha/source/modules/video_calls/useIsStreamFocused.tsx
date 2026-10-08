@@ -1,11 +1,11 @@
-// Module ID: 9187
-// Function ID: 9188
+// Module ID: 10755
+// Function ID: 10756
 // Name: useIsStreamFocused
-// Dependencies: [4912, 4917, 558, 576, 504, 2]
+// Dependencies: [6041, 5113, 558, 576, 504, 2]
 
-// Module 9187 (useIsStreamFocused)
-import CallConstants from "CallConstants" /* 4917 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4912 */;
+// Module 10755 (useIsStreamFocused)
+import CallConstants from "CallConstants" /* 5113 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 let _require;
 
 const isStreamParticipant = CallConstants.isStreamParticipant;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsStreamFocused(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -30,7 +30,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function s() {
+    const fn = function n() {
       let selectedParticipant = null;
       if (null != closure_0) {
         selectedParticipant = ChannelRTCStore.getSelectedParticipant(tmp);
@@ -54,7 +54,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp8 = cResult[4];
   }
   return tmp8;
-}) : ((arg0) => {
+}) : (function useIsStreamFocused(arg0) {
   let closure_0;
   _require = arg0;
   const items = [ChannelRTCStore];

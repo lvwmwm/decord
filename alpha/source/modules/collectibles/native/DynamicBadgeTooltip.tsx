@@ -1,14 +1,14 @@
-// Module ID: 12986
-// Function ID: 12987
+// Module ID: 13264
+// Function ID: 13265
 // Name: DynamicBadgeTooltip
-// Dependencies: [32, 19, 21, 558, 576, 1126, 9896, 5916, 2]
+// Dependencies: [32, 19, 21, 558, 576, 1126, 9376, 6189, 2]
 
-// Module 12986 (DynamicBadgeTooltip)
+// Module 13264 (DynamicBadgeTooltip)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import Pressables from "Pressables" /* 5916 */;
-import useTooltip from "useTooltip" /* 9896 */;
+import Pressables from "Pressables" /* 6189 */;
+import useTooltip from "useTooltip" /* 9376 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -18,13 +18,13 @@ let num, tmp;
 
 const jsx = Fragment.jsx;
 const hitSlop = { top: 14, bottom: 14, left: 14, right: 14 };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DynamicBadgeTooltip(arg0) {
   let accessibilityLabel;
   let children;
   let first;
   let first1;
   let obj4;
-  let tmp16;
+  let tmp15;
   let tmp9;
   let tooltipPosition;
   const obj = react2;
@@ -75,14 +75,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const tmpResult = useTooltip;
     const tooltip = tmpResult.useTooltip(ref, obj4);
     if (cResult[5] !== first) {
-      class E {
+      class D {
         constructor() {
           if (closure_0) {
             tmp = globalThis;
             _setTimeout = setTimeout;
             num = 2500;
-            closure_0 = setTimeout(() => { /* body not rendered: F143260 */ }, 2500);
-            return () => { /* body not rendered: F143261 */ };
+            closure_0 = setTimeout(() => { /* body not rendered: F144735 */ }, 2500);
+            return () => { /* body not rendered: F144736 */ };
           } else {
             return;
           }
@@ -90,19 +90,19 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const items = [first];
       cResult[5] = first;
-      cResult[6] = E;
+      cResult[6] = D;
       cResult[7] = items;
       tmp12 = items;
-      tmp11 = E;
+      tmp11 = D;
     } else {
-      class E {
+      class D {
         constructor() {
           if (closure_0) {
             tmp = globalThis;
             _setTimeout = setTimeout;
             num = 2500;
-            closure_0 = setTimeout(() => { /* body not rendered: F143260 */ }, 2500);
-            return () => { /* body not rendered: F143261 */ };
+            closure_0 = setTimeout(() => { /* body not rendered: F144735 */ }, 2500);
+            return () => { /* body not rendered: F144736 */ };
           } else {
             return;
           }
@@ -115,61 +115,40 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       class E {
         constructor() {
-          if (closure_0) {
-            tmp = globalThis;
-            _setTimeout = setTimeout;
-            num = 2500;
-            closure_0 = setTimeout(() => { /* body not rendered: F143260 */ }, 2500);
-            return () => { /* body not rendered: F143261 */ };
-          } else {
-            return;
-          }
+          tmp = closure_1(() => { /* body not rendered: F144737 */ });
+          return;
         }
       }
-      cResult[8] = tmp15;
-      tmp14 = tmp15;
+      cResult[8] = E;
+      tmp14 = E;
     } else {
       class E {
         constructor() {
-          if (closure_0) {
-            tmp = globalThis;
-            _setTimeout = setTimeout;
-            num = 2500;
-            closure_0 = setTimeout(() => { /* body not rendered: F143260 */ }, 2500);
-            return () => { /* body not rendered: F143261 */ };
-          } else {
-            return;
-          }
+          tmp = closure_1(() => { /* body not rendered: F144737 */ });
+          return;
         }
       }
     }
     if (cResult[9] === accessibilityLabel) {
       class E {
         constructor() {
-          if (closure_0) {
-            tmp = globalThis;
-            _setTimeout = setTimeout;
-            num = 2500;
-            closure_0 = setTimeout(() => { /* body not rendered: F143260 */ }, 2500);
-            return () => { /* body not rendered: F143261 */ };
-          } else {
-            return;
-          }
+          tmp = closure_1(() => { /* body not rendered: F144737 */ });
+          return;
         }
       }
-      return tmp16;
+      return tmp15;
     }
-    const tmp19 = jsx(Pressables.PressableOpacity, { ref, onPress: tmp14, hitSlop, accessibilityRole: "button", accessibilityLabel, accessibilityHint: first1, children });
+    const tmp18 = jsx(Pressables.PressableOpacity, { ref, onPress: tmp14, hitSlop, accessibilityRole: "button", accessibilityLabel, accessibilityHint: first1, children });
     cResult[9] = accessibilityLabel;
     cResult[10] = children;
-    cResult[11] = tmp19;
-    tmp16 = tmp19;
+    cResult[11] = tmp18;
+    tmp15 = tmp18;
   }
   obj4 = { position: str, label: first1, visible: first, onPress: tmp9 };
   cResult[2] = str;
   cResult[3] = first;
   cResult[4] = obj4;
-}) : ((tooltipPosition) => {
+}) : (function DynamicBadgeTooltip(tooltipPosition) {
   let accessibilityLabel;
   let children;
   let closure_2;

@@ -1,30 +1,30 @@
-// Module ID: 13400
-// Function ID: 13401
+// Module ID: 13700
+// Function ID: 13701
 // Name: GuildBoostingMarketingCtaBar
-// Dependencies: [32, 19, 17, 1377, 6918, 1085, 1379, 21, 1102, 4896, 587, 1188, 558, 4618, 4897, 576, 6664, 6688, 573, 13286, 7747, 7682, 4534, 5619, 10405, 8943, 1385, 13339, 13341, 13401, 1126, 4892, 5978, 13326, 5916, 6917, 13404, 13405, 5612, 5601, 13406, 2]
+// Dependencies: [32, 19, 17, 1389, 7107, 1085, 1391, 21, 1102, 5090, 587, 1200, 558, 4810, 5091, 576, 6841, 6865, 573, 13587, 8068, 8003, 4726, 5964, 10002, 9328, 1397, 13639, 13641, 13701, 1126, 5086, 6161, 13626, 6189, 7106, 13704, 13705, 5387, 5375, 13706, 2]
 
-// Module 13400 (GuildBoostingMarketingCtaBar)
+// Module 13700 (GuildBoostingMarketingCtaBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import timing from "timing" /* 4897 */;
-import BoostingActionCreators from "BoostingActionCreators" /* 5619 */;
-import openPremiumModalDefault from "openPremiumModal" /* 8943 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10405 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import timing from "timing" /* 5091 */;
+import BoostingActionCreators from "BoostingActionCreators" /* 5964 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9328 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10002 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore_mod from "UserStore" /* 1377 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 6918 */;
+import UserStore_mod from "UserStore" /* 1389 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7107 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import native from "native" /* 1188 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import native from "native" /* 1200 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap;
+let _require, dependencyMap, tmp3;
 
 let c10;
 let c9;
@@ -53,7 +53,7 @@ let closure_15 = createStyles(obj);
 const __initData = { code: "function GuildBoostingMarketingCtaBarTsx1(){const{withTiming,isVisible}=this.__closure;return{opacity:withTiming(isVisible?1:0,{duration:250})};}" };
 const __initData2 = { code: "function GuildBoostingMarketingCtaBarTsx2(){const{withTiming,isVisible}=this.__closure;return{opacity:withTiming(isVisible?1:0,{duration:250})};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((isVisible) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBoostCountAnimatedStyles(isVisible) {
   _require = isVisible;
   let obj = require("ReanimatedRexport");
   const fn = function o() {
@@ -71,7 +71,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((isVisible) => 
   fn.__initData = __initData;
   ({ withTiming: require("timing").withTiming, isVisible });
   return obj.useAnimatedStyle(fn);
-}) : ((isVisible) => {
+}) : (function useBoostCountAnimatedStyles(isVisible) {
   _require = isVisible;
   let obj = require("ReanimatedRexport");
   const fn = function o() {
@@ -91,7 +91,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((isVisible) => 
   return obj.useAnimatedStyle(fn);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostingMarketingCtaBar(guild) {
   let analyticsLocations;
   let arr3;
   let boostSlots;
@@ -100,9 +100,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   let headerContent;
   let heading;
   let intent;
-  let items10;
-  let items6;
-  let items7;
+  let items5;
+  let items8;
   let onLayout;
   let onResult;
   let premiumGroupRole;
@@ -123,18 +122,18 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const tmp5 = analyticsLocations(stateFromStores1.useState(false), 2);
   const first = tmp5[0];
   dependencyMap = tmp5[1];
-  const tmp8 = first(6664);
-  analyticsLocations = tmp8(first(6688).BOOSTED_GUILD_PERKS_MODAL).analyticsLocations;
+  const tmp8 = first(6841);
+  analyticsLocations = tmp8(first(6865).BOOSTED_GUILD_PERKS_MODAL).analyticsLocations;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    class T {
+    class C {
       constructor() {
         return ref.getCurrentUser();
       }
     }
     cResult[0] = items;
-    cResult[1] = T;
-    tmp10 = T;
+    cResult[1] = C;
+    tmp10 = C;
     tmp9 = items;
   } else {
     [tmp9, tmp10] = cResult;
@@ -185,29 +184,26 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       }
       const tmp19 = closure_18(first);
       const tmp20 = closure_18(!first);
-      const tmp7Result = first(13286);
-      const tmp7ResultResult = tmp7Result(fractionalPremiumInfo.endsAt, tmp(13286).CountDownMessageTypes.LONG_TIME_LEFT);
-      const tmpResult4 = tmp(7747);
+      const tmp7Result = first(13587);
+      const tmp7ResultResult = tmp7Result(fractionalPremiumInfo.endsAt, tmp(13587).CountDownMessageTypes.LONG_TIME_LEFT);
+      const tmpResult4 = tmp(8068);
       const isInReverseTrial = tmpResult4.useIsInReverseTrial();
-      const total = tmp7(7682)(guild.guild.id).total;
+      const total = tmp7(8003)(guild.guild.id).total;
       UserStore = obj2.useRef(-1);
       if (cResult[10] === first) {
         let tmp24;
         let tmp25;
         let tmp30;
         let tmp34;
-        let tmp43;
-        let tmp42;
-        let tmp41;
-        let tmp44;
-        let tmp49;
+        let tmp45;
+        let tmp50;
         if (cResult[11] === length) {
           tmp24 = cResult[12];
           tmp25 = cResult[13];
         }
         const effect = obj2.useEffect(tmp24, tmp25);
         if (cResult[14] !== stateFromStores) {
-          const tmp7Result3 = first(4534);
+          const tmp7Result3 = first(4726);
           const isPremiumResult = tmp7Result3.isPremium(stateFromStores);
           class H {
             constructor() {
@@ -222,7 +218,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           }
         }
         if (cResult[18] !== analyticsLocations) {
-          function ot() {
+          function handleNavigateToPremium() {
             let obj2;
             const obj = { analyticsLocation: obj2, analyticsLocations };
             obj2 = { page: constants.PREMIUM_GUILD_USER_MODAL, section: constants2.HEADER, object: metroImportAll.BUTTON_CTA };
@@ -234,15 +230,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
               return boostSlots.boostSlots;
             }
           }
-          cResult[19] = ot;
+          cResult[19] = handleNavigateToPremium;
         }
         const _Symbol = Symbol;
         if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-          function nt() {
+          function handleBoostCountPress() {
             window.clearTimeout(ref.current);
             closure_2((arg0) => !arg0);
           }
-          cResult[20] = nt;
+          cResult[20] = handleBoostCountPress;
           class H {
             constructor() {
               return boostSlots.boostSlots;
@@ -251,7 +247,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         } else {
           tmp30 = cResult[20];
         }
-        if (premiumGroupRole === tmp(1385).PremiumSubscriptionGroupRole.MEMBER) {
+        if (premiumGroupRole === tmp(1397).PremiumSubscriptionGroupRole.MEMBER) {
           let tmp35;
           if (cResult[21] !== tmp4.boostingUnavailablePill) {
             let obj3 = { style: tmp4.boostingUnavailablePill };
@@ -285,12 +281,28 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                 return boostSlots.boostSlots;
               }
             }
-            const tmp33 = closure_12(first(13341), obj4);
             cResult[23] = tmp7ResultResult;
             cResult[24] = isInReverseTrial;
             cResult[25] = tmp4.boostingUnavailablePill;
-            cResult[26] = tmp33;
-            tmp31 = tmp33;
+            cResult[26] = closure_12(first(13641), obj4);
+            closure_12(first(13641), obj4);
+            class V {
+              constructor() {
+                tmp = length > 0 || closure_1;
+                if (tmp) {
+                  tmp2 = closure_6;
+                  tmp3 = globalThis;
+                  _window = window;
+                  tmp4 = closure_14;
+                  closure_6.current = window.setTimeout(() => {
+                    closure_1_2((arg0) => !arg0);
+                  }, closure_14);
+                }
+                return () => {
+                  window.clearTimeout(ref.current);
+                };
+              }
+            }
           }
         }
         const _Symbol2 = Symbol;
@@ -309,28 +321,42 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           cResult[27] = point;
           cResult[28] = items2;
           cResult[29] = items3;
+          class V {
+            constructor() {
+              tmp = length > 0 || closure_1;
+              if (tmp) {
+                tmp2 = closure_6;
+                tmp3 = globalThis;
+                _window = window;
+                tmp4 = closure_14;
+                closure_6.current = window.setTimeout(() => {
+                  closure_1_2((arg0) => !arg0);
+                }, closure_14);
+              }
+              return () => {
+                window.clearTimeout(ref.current);
+              };
+            }
+          }
         }
         const _Symbol3 = Symbol;
         const gradient = tmp4.gradient;
-        if (cResult[30] === Symbol.for("react.memo_cache_sentinel")) {
-          const point1 = { x: 0.5, y: 0.5 };
-          const items4 = ["rgba(0, 0, 0, 0.7)", "rgba(0, 0, 0, 0)"];
-          const items5 = [0.12, 0.5];
-          class H {
-            constructor() {
-              return boostSlots.boostSlots;
+        class V {
+          constructor() {
+            tmp = length > 0 || closure_1;
+            if (tmp) {
+              tmp2 = closure_6;
+              tmp3 = globalThis;
+              _window = window;
+              tmp4 = closure_14;
+              closure_6.current = window.setTimeout(() => {
+                closure_1_2((arg0) => !arg0);
+              }, closure_14);
             }
+            return () => {
+              window.clearTimeout(ref.current);
+            };
           }
-          cResult[30] = point1;
-          cResult[31] = items4;
-          cResult[32] = items5;
-          tmp43 = items5;
-          tmp42 = items4;
-          tmp41 = point1;
-        } else {
-          tmp41 = cResult[30];
-          tmp42 = cResult[31];
-          tmp43 = cResult[32];
         }
         const gradient2 = tmp4.gradient;
         if (cResult[33] !== guild) {
@@ -340,10 +366,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
             }
           }
           cResult[33] = guild;
-          cResult[34] = tmp46;
-          tmp44 = tmp46;
+          cResult[34] = tmp47;
+          tmp45 = tmp47;
         } else {
-          tmp44 = cResult[34];
+          tmp45 = cResult[34];
         }
         const _Symbol4 = Symbol;
         ({ headerContent, heading } = tmp4);
@@ -364,43 +390,43 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
               return boostSlots.boostSlots;
             }
           }
-          const tmp51 = closure_12(tmp(4892).Heading, obj6);
+          const tmp52 = closure_12(tmp(5086).Heading, obj6);
           cResult[36] = tmp4.heading;
-          cResult[37] = tmp51;
-          tmp49 = tmp51;
+          cResult[37] = tmp52;
+          tmp50 = tmp52;
         } else {
-          tmp49 = cResult[37];
+          tmp50 = cResult[37];
         }
         if (cResult[38] === guild) {
           if (cResult[39] === tmp4.guildIcon) {
-            let tmp52;
+            let tmp53;
             if (cResult[40] === tmp4.guildIconText) {
-              tmp52 = cResult[41];
+              tmp53 = cResult[41];
             }
             if (cResult[42] === guild.name) {
-              let tmp56;
+              let tmp57;
               if (cResult[43] === tmp4.guildName) {
-                tmp56 = cResult[44];
+                tmp57 = cResult[44];
               }
               if (cResult[45] === tmp4.totalBoostCountWrapper) {
-                let tmp61;
                 let tmp62;
+                let tmp63;
                 if (cResult[46] === tmp20) {
-                  tmp61 = cResult[47];
+                  tmp62 = cResult[47];
                 }
                 if (cResult[48] !== tmp4.guildBoostCountIcon) {
-                  const obj7 = { style: tmp4.guildBoostCountIcon, source: first(13326), color: first(587).unsafe_rawColors.GUILD_BOOSTING_PINK, size: tmp(1188).Icon.Sizes.SMALL };
+                  const obj7 = { style: tmp4.guildBoostCountIcon, source: first(13626), color: first(587).unsafe_rawColors.GUILD_BOOSTING_PINK, size: tmp(1200).Icon.Sizes.SMALL };
                   class H {
                     constructor() {
                       return boostSlots.boostSlots;
                     }
                   }
-                  const tmp65 = closure_12(tmp64, obj7);
+                  const tmp66 = closure_12(tmp65, obj7);
                   cResult[48] = tmp4.guildBoostCountIcon;
-                  cResult[49] = tmp65;
-                  tmp62 = tmp65;
+                  cResult[49] = tmp66;
+                  tmp63 = tmp66;
                 } else {
-                  tmp62 = cResult[49];
+                  tmp63 = cResult[49];
                 }
                 const guildBoostCount = tmp4.guildBoostCount;
                 class H {
@@ -409,26 +435,26 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                   }
                 }
                 if (cResult[52] === tmp4.guildBoostCount) {
-                  let tmp67;
-                  if (cResult[53] === tmp66) {
-                    tmp67 = cResult[54];
+                  let tmp68;
+                  if (cResult[53] === tmp67) {
+                    tmp68 = cResult[54];
                   }
-                  if (cResult[55] === tmp61) {
-                    if (cResult[56] === tmp62) {
-                      let tmp70;
-                      if (cResult[57] === tmp67) {
-                        tmp70 = cResult[58];
+                  if (cResult[55] === tmp62) {
+                    if (cResult[56] === tmp63) {
+                      let tmp71;
+                      if (cResult[57] === tmp68) {
+                        tmp71 = cResult[58];
                       }
                       if (cResult[59] === tmp19) {
-                        let tmp74;
+                        let tmp75;
                         if (cResult[60] === tmp4.guildBoostCurrentUserCountWrapper) {
-                          tmp74 = cResult[61];
+                          tmp75 = cResult[61];
                         }
                         if (cResult[62] === tmp4.guildBoostCount) {
-                          let tmp75;
                           let tmp76;
+                          let tmp77;
                           if (cResult[63] === tmp4.guildBoostCurrentUserCount) {
-                            tmp75 = cResult[64];
+                            tmp76 = cResult[64];
                           }
                           if (cResult[65] !== length) {
                             const intl2 = tmp(1126).intl;
@@ -442,35 +468,35 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                             const formatResult = format(tmp(1126).t.xXb78j, obj8);
                             cResult[65] = length;
                             cResult[66] = formatResult;
-                            tmp76 = formatResult;
+                            tmp77 = formatResult;
                           } else {
-                            tmp76 = cResult[66];
+                            tmp77 = cResult[66];
                           }
-                          if (cResult[67] === tmp75) {
-                            let tmp78;
-                            if (cResult[68] === tmp76) {
-                              tmp78 = cResult[69];
+                          if (cResult[67] === tmp76) {
+                            let tmp79;
+                            if (cResult[68] === tmp77) {
+                              tmp79 = cResult[69];
                             }
-                            if (cResult[70] === tmp74) {
-                              let tmp80;
-                              if (cResult[71] === tmp78) {
-                                tmp80 = cResult[72];
+                            if (cResult[70] === tmp75) {
+                              let tmp81;
+                              if (cResult[71] === tmp79) {
+                                tmp81 = cResult[72];
                               }
                               if (cResult[73] === tmp4.guildBoostCountWrapper) {
-                                if (cResult[74] === tmp70) {
-                                  let tmp84;
-                                  if (cResult[75] === tmp80) {
-                                    tmp84 = cResult[76];
+                                if (cResult[74] === tmp71) {
+                                  let tmp85;
+                                  if (cResult[75] === tmp81) {
+                                    tmp85 = cResult[76];
                                   }
-                                  if (cResult[77] === tmp56) {
-                                    let tmp87;
-                                    if (cResult[78] === tmp84) {
-                                      tmp87 = cResult[79];
+                                  if (cResult[77] === tmp57) {
+                                    let tmp88;
+                                    if (cResult[78] === tmp85) {
+                                      tmp88 = cResult[79];
                                     }
                                     if (cResult[80] === tmp4.cta) {
-                                      let tmp91;
+                                      let tmp92;
                                       if (cResult[81] === tmp4.ctaPrimary) {
-                                        tmp91 = cResult[82];
+                                        tmp92 = cResult[82];
                                       }
                                       if (cResult[83] === fractionalPremiumInfo.fractionalState) {
                                         if (cResult[84] === guild) {
@@ -478,20 +504,20 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                                             if (cResult[86] === onResult) {
                                               if (cResult[87] === premiumGroupRole) {
                                                 if (cResult[88] === previousGuildSubscriptionSlot) {
-                                                  let tmp92;
-                                                  if (cResult[89] === tmp91) {
-                                                    tmp92 = cResult[90];
+                                                  let tmp93;
+                                                  if (cResult[89] === tmp92) {
+                                                    tmp93 = cResult[90];
                                                   }
                                                   if (cResult[91] === tmp34) {
                                                     if (cResult[92] === tmp4.headerContent) {
-                                                      if (cResult[93] === tmp49) {
-                                                        if (cResult[94] === tmp52) {
-                                                          if (cResult[95] === tmp87) {
-                                                            let tmp97;
-                                                            let tmp100;
-                                                            let tmp103;
-                                                            if (cResult[96] === tmp92) {
-                                                              tmp97 = cResult[97];
+                                                      if (cResult[93] === tmp50) {
+                                                        if (cResult[94] === tmp53) {
+                                                          if (cResult[95] === tmp88) {
+                                                            let tmp98;
+                                                            let tmp101;
+                                                            let tmp104;
+                                                            if (cResult[96] === tmp93) {
+                                                              tmp98 = cResult[97];
                                                             }
                                                             if (cResult[98] !== tmp4.headerStars) {
                                                               class H {
@@ -500,10 +526,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                                                                 }
                                                               }
                                                               cResult[98] = tmp4.headerStars;
-                                                              cResult[99] = tmp102;
-                                                              tmp100 = tmp102;
+                                                              cResult[99] = tmp103;
+                                                              tmp101 = tmp103;
                                                             } else {
-                                                              tmp100 = cResult[99];
+                                                              tmp101 = cResult[99];
                                                             }
                                                             if (cResult[100] !== tmp4.headerWave) {
                                                               class H {
@@ -512,25 +538,42 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                                                                 }
                                                               }
                                                               cResult[100] = tmp4.headerWave;
-                                                              cResult[101] = tmp105;
-                                                              tmp103 = tmp105;
+                                                              cResult[101] = tmp106;
+                                                              tmp104 = tmp106;
                                                             } else {
-                                                              tmp103 = cResult[101];
+                                                              tmp104 = cResult[101];
                                                             }
                                                             class H {
                                                               constructor() {
                                                                 return boostSlots.boostSlots;
                                                               }
                                                             }
-                                                            const obj11 = { angle: 0, angleCenter: tmp41, colors: tmp42, locations: tmp43, useAngle: true, style: gradient2, children: items6 };
-                                                            items6 = [tmp44, tmp97, tmp100, tmp103];
+                                                            const items4 = [tmp45, tmp98, tmp101, tmp104];
+                                                            const obj11 = { angle: 0, angleCenter: tmp42, colors: tmp43, locations: tmp44, useAngle: true, style: gradient2, children: null };
+                                                            class V {
+                                                              constructor() {
+                                                                tmp = length > 0 || closure_1;
+                                                                if (tmp) {
+                                                                  tmp2 = closure_6;
+                                                                  tmp3 = globalThis;
+                                                                  _window = window;
+                                                                  tmp4 = closure_14;
+                                                                  closure_6.current = window.setTimeout(() => {
+                                                                    closure_1_2((arg0) => !arg0);
+                                                                  }, closure_14);
+                                                                }
+                                                                return () => {
+                                                                  window.clearTimeout(ref.current);
+                                                                };
+                                                              }
+                                                            }
                                                             cResult[102] = tmp4.gradient;
-                                                            cResult[103] = tmp44;
-                                                            cResult[104] = tmp97;
-                                                            cResult[105] = tmp100;
-                                                            cResult[106] = tmp103;
-                                                            cResult[107] = closure_13(first(5612), obj11);
-                                                            const tmp108 = closure_13(first(5612), obj11);
+                                                            cResult[103] = tmp45;
+                                                            cResult[104] = tmp98;
+                                                            cResult[105] = tmp101;
+                                                            cResult[106] = tmp104;
+                                                            cResult[107] = closure_13(first(5387), obj11);
+                                                            const tmp109 = closure_13(first(5387), obj11);
                                                           }
                                                         }
                                                       }
@@ -541,17 +584,33 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                                                       return boostSlots.boostSlots;
                                                     }
                                                   }
-                                                  const obj12 = { style: headerContent, children: items7 };
-                                                  items7 = [tmp49, tmp52, tmp87, tmp34, tmp92];
-                                                  const tmp99 = closure_13(length, obj12);
-                                                  cResult[91] = tmp34;
+                                                  const obj13 = { style: headerContent, children: items5 };
+                                                  items5 = [tmp50, tmp53, tmp88, tmp34, tmp93];
+                                                  const tmp100 = closure_13(length, obj13);
+                                                  class V {
+                                                    constructor() {
+                                                      tmp = length > 0 || closure_1;
+                                                      if (tmp) {
+                                                        tmp2 = closure_6;
+                                                        tmp3 = globalThis;
+                                                        _window = window;
+                                                        tmp4 = closure_14;
+                                                        closure_6.current = window.setTimeout(() => {
+                                                          closure_1_2((arg0) => !arg0);
+                                                        }, closure_14);
+                                                      }
+                                                      return () => {
+                                                        window.clearTimeout(ref.current);
+                                                      };
+                                                    }
+                                                  }
                                                   cResult[92] = tmp4.headerContent;
-                                                  cResult[93] = tmp49;
-                                                  cResult[94] = tmp52;
-                                                  cResult[95] = tmp87;
-                                                  cResult[96] = tmp92;
-                                                  cResult[97] = tmp99;
-                                                  tmp97 = tmp99;
+                                                  cResult[93] = tmp50;
+                                                  cResult[94] = tmp53;
+                                                  cResult[95] = tmp88;
+                                                  cResult[96] = tmp93;
+                                                  cResult[97] = tmp100;
+                                                  tmp98 = tmp100;
                                                 }
                                               }
                                             }
@@ -563,50 +622,82 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                                           return boostSlots.boostSlots;
                                         }
                                       }
-                                      tmp94[0] = tmp91;
-                                      tmp94[1] = guild;
-                                      tmp94[2] = previousGuildSubscriptionSlot;
-                                      tmp94[3] = constants3.HEADER;
-                                      tmp94[4] = fractionalPremiumInfo.fractionalState;
-                                      tmp94[5] = premiumGroupRole;
-                                      tmp94[6] = intent;
-                                      tmp94[7] = onResult;
-                                      const tmp96 = closure_12(first(6917), tmp94);
-                                      cResult[83] = fractionalPremiumInfo.fractionalState;
+                                      tmp95[0] = tmp92;
+                                      tmp95[1] = guild;
+                                      tmp95[2] = previousGuildSubscriptionSlot;
+                                      tmp95[3] = constants3.HEADER;
+                                      tmp95[4] = fractionalPremiumInfo.fractionalState;
+                                      tmp95[5] = premiumGroupRole;
+                                      tmp95[6] = intent;
+                                      tmp95[7] = onResult;
+                                      const tmp97 = closure_12(first(7106), tmp95);
+                                      class V {
+                                        constructor() {
+                                          tmp = length > 0 || closure_1;
+                                          if (tmp) {
+                                            tmp2 = closure_6;
+                                            tmp3 = globalThis;
+                                            _window = window;
+                                            tmp4 = closure_14;
+                                            closure_6.current = window.setTimeout(() => {
+                                              closure_1_2((arg0) => !arg0);
+                                            }, closure_14);
+                                          }
+                                          return () => {
+                                            window.clearTimeout(ref.current);
+                                          };
+                                        }
+                                      }
                                       cResult[84] = guild;
                                       cResult[85] = intent;
                                       cResult[86] = onResult;
                                       cResult[87] = premiumGroupRole;
                                       cResult[88] = previousGuildSubscriptionSlot;
-                                      cResult[89] = tmp91;
-                                      cResult[90] = tmp96;
-                                      tmp92 = tmp96;
+                                      cResult[89] = tmp92;
+                                      cResult[90] = tmp97;
+                                      tmp93 = tmp97;
                                     }
-                                    const items8 = [, ];
+                                    const items6 = [, ];
                                     class H {
                                       constructor() {
                                         return boostSlots.boostSlots;
                                       }
                                     }
-                                    items8[1] = tmp4.ctaPrimary;
+                                    items6[1] = tmp4.ctaPrimary;
                                     cResult[80] = tmp4.cta;
                                     cResult[81] = tmp4.ctaPrimary;
-                                    cResult[82] = items8;
-                                    tmp91 = items8;
+                                    cResult[82] = items6;
+                                    tmp92 = items6;
                                   }
                                   class H {
                                     constructor() {
                                       return boostSlots.boostSlots;
                                     }
                                   }
-                                  tmp89[0] = tmp30;
-                                  const items9 = [tmp56, tmp84];
-                                  tmp89[1] = items9;
-                                  const tmp90 = closure_13(tmp(5916).PressableOpacity, tmp89);
-                                  cResult[77] = tmp56;
-                                  cResult[78] = tmp84;
-                                  cResult[79] = tmp90;
-                                  tmp87 = tmp90;
+                                  tmp90[0] = tmp30;
+                                  const items7 = [tmp57, tmp85];
+                                  tmp90[1] = items7;
+                                  cResult[77] = tmp57;
+                                  cResult[78] = tmp85;
+                                  const tmp91 = closure_13(tmp(6189).PressableOpacity, tmp90);
+                                  class V {
+                                    constructor() {
+                                      tmp = length > 0 || closure_1;
+                                      if (tmp) {
+                                        tmp2 = closure_6;
+                                        tmp3 = globalThis;
+                                        _window = window;
+                                        tmp4 = closure_14;
+                                        closure_6.current = window.setTimeout(() => {
+                                          closure_1_2((arg0) => !arg0);
+                                        }, closure_14);
+                                      }
+                                      return () => {
+                                        window.clearTimeout(ref.current);
+                                      };
+                                    }
+                                  }
+                                  tmp88 = tmp91;
                                 }
                               }
                               class H {
@@ -614,63 +705,80 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                                   return boostSlots.boostSlots;
                                 }
                               }
-                              const obj14 = { style: tmp60, children: items10 };
-                              items10 = [tmp70, tmp80];
-                              const tmp86 = closure_13(length, obj14);
+                              const obj14 = { style: tmp61, children: items8 };
+                              items8 = [tmp71, tmp81];
+                              const tmp87 = closure_13(length, obj14);
                               cResult[73] = tmp4.guildBoostCountWrapper;
-                              cResult[74] = tmp70;
-                              cResult[75] = tmp80;
-                              cResult[76] = tmp86;
-                              tmp84 = tmp86;
+                              cResult[74] = tmp71;
+                              class V {
+                                constructor() {
+                                  tmp = length > 0 || closure_1;
+                                  if (tmp) {
+                                    tmp2 = closure_6;
+                                    tmp3 = globalThis;
+                                    _window = window;
+                                    tmp4 = closure_14;
+                                    closure_6.current = window.setTimeout(() => {
+                                      closure_1_2((arg0) => !arg0);
+                                    }, closure_14);
+                                  }
+                                  return () => {
+                                    window.clearTimeout(ref.current);
+                                  };
+                                }
+                              }
+                              cResult[75] = tmp81;
+                              cResult[76] = tmp87;
+                              tmp85 = tmp87;
                             }
                             class H {
                               constructor() {
                                 return boostSlots.boostSlots;
                               }
                             }
-                            tmp82[0] = tmp74;
-                            tmp82[1] = tmp78;
-                            const tmp83 = closure_12(first(4618).View, tmp82);
-                            cResult[70] = tmp74;
-                            cResult[71] = tmp78;
-                            cResult[72] = tmp83;
-                            tmp80 = tmp83;
+                            tmp83[0] = tmp75;
+                            tmp83[1] = tmp79;
+                            const tmp84 = closure_12(first(4810).View, tmp83);
+                            cResult[70] = tmp75;
+                            cResult[71] = tmp79;
+                            cResult[72] = tmp84;
+                            tmp81 = tmp84;
                           }
                           class H {
                             constructor() {
                               return boostSlots.boostSlots;
                             }
                           }
-                          const obj15 = { style: tmp75, variant: "text-sm/bold", color: "text-overlay-light", children: tmp76 };
-                          const tmp79 = closure_12(tmp(4892).Text, obj15);
-                          cResult[67] = tmp75;
-                          cResult[68] = tmp76;
-                          cResult[69] = tmp79;
-                          tmp78 = tmp79;
+                          const obj15 = { style: tmp76, variant: "text-sm/bold", color: "text-overlay-light", children: tmp77 };
+                          const tmp80 = closure_12(tmp(5086).Text, obj15);
+                          cResult[67] = tmp76;
+                          cResult[68] = tmp77;
+                          cResult[69] = tmp80;
+                          tmp79 = tmp80;
                         }
-                        const items11 = [, ];
+                        const items9 = [, ];
                         class H {
                           constructor() {
                             return boostSlots.boostSlots;
                           }
                         }
-                        items11[1] = tmp4.guildBoostCurrentUserCount;
+                        items9[1] = tmp4.guildBoostCurrentUserCount;
                         cResult[62] = tmp4.guildBoostCount;
                         cResult[63] = tmp4.guildBoostCurrentUserCount;
-                        cResult[64] = items11;
-                        tmp75 = items11;
+                        cResult[64] = items9;
+                        tmp76 = items9;
                       }
-                      const items12 = [, ];
+                      const items10 = [, ];
                       class H {
                         constructor() {
                           return boostSlots.boostSlots;
                         }
                       }
-                      items12[1] = tmp4.guildBoostCurrentUserCountWrapper;
+                      items10[1] = tmp4.guildBoostCurrentUserCountWrapper;
                       cResult[59] = tmp19;
                       cResult[60] = tmp4.guildBoostCurrentUserCountWrapper;
-                      cResult[61] = items12;
-                      tmp74 = items12;
+                      cResult[61] = items10;
+                      tmp75 = items10;
                     }
                   }
                   class H {
@@ -678,78 +786,115 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                       return boostSlots.boostSlots;
                     }
                   }
-                  tmp72[0] = tmp61;
-                  const items13 = [tmp62, tmp67];
-                  tmp72[1] = items13;
-                  const tmp73 = closure_13(first(4618).View, tmp72);
-                  cResult[55] = tmp61;
-                  cResult[56] = tmp62;
-                  cResult[57] = tmp67;
-                  cResult[58] = tmp73;
-                  tmp70 = tmp73;
+                  tmp73[0] = tmp62;
+                  const items11 = [tmp63, tmp68];
+                  tmp73[1] = items11;
+                  const tmp74 = closure_13(first(4810).View, tmp73);
+                  cResult[55] = tmp62;
+                  cResult[56] = tmp63;
+                  class V {
+                    constructor() {
+                      tmp = length > 0 || closure_1;
+                      if (tmp) {
+                        tmp2 = closure_6;
+                        tmp3 = globalThis;
+                        _window = window;
+                        tmp4 = closure_14;
+                        closure_6.current = window.setTimeout(() => {
+                          closure_1_2((arg0) => !arg0);
+                        }, closure_14);
+                      }
+                      return () => {
+                        window.clearTimeout(ref.current);
+                      };
+                    }
+                  }
+                  cResult[58] = tmp74;
+                  tmp71 = tmp74;
                 }
-                const obj16 = { style: guildBoostCount, accessibilityRole: "header", variant: "text-sm/bold", color: "text-overlay-light", children: tmp66 };
-                const tmp69 = closure_12(tmp(4892).Text, obj16);
+                const obj16 = { style: guildBoostCount, accessibilityRole: "header", variant: "text-sm/bold", color: "text-overlay-light", children: tmp67 };
                 cResult[52] = tmp4.guildBoostCount;
-                cResult[53] = tmp66;
-                cResult[54] = tmp69;
-                tmp67 = tmp69;
+                cResult[53] = tmp67;
+                const tmp70 = closure_12(tmp(5086).Text, obj16);
+                class V {
+                  constructor() {
+                    tmp = length > 0 || closure_1;
+                    if (tmp) {
+                      tmp2 = closure_6;
+                      tmp3 = globalThis;
+                      _window = window;
+                      tmp4 = closure_14;
+                      closure_6.current = window.setTimeout(() => {
+                        closure_1_2((arg0) => !arg0);
+                      }, closure_14);
+                    }
+                    return () => {
+                      window.clearTimeout(ref.current);
+                    };
+                  }
+                }
+                tmp68 = tmp70;
               }
-              const items14 = [, ];
+              const items12 = [, ];
               class H {
                 constructor() {
                   return boostSlots.boostSlots;
                 }
               }
-              items14[1] = tmp4.totalBoostCountWrapper;
+              items12[1] = tmp4.totalBoostCountWrapper;
               cResult[45] = tmp4.totalBoostCountWrapper;
               cResult[46] = tmp20;
-              cResult[47] = items14;
-              tmp61 = items14;
+              cResult[47] = items12;
+              tmp62 = items12;
             }
             class H {
               constructor() {
                 return boostSlots.boostSlots;
               }
             }
-            tmp58[0] = tmp4.guildName;
-            tmp58[3] = guild.name;
-            const tmp59 = closure_12(tmp(4892).Text, tmp58);
+            tmp59[0] = tmp4.guildName;
+            tmp59[3] = guild.name;
+            const tmp60 = closure_12(tmp(5086).Text, tmp59);
             cResult[42] = guild.name;
             cResult[43] = tmp4.guildName;
-            cResult[44] = tmp59;
-            tmp56 = tmp59;
+            cResult[44] = tmp60;
+            tmp57 = tmp60;
           }
         }
-        ({ guildIcon: obj13.style, guildIconText: obj13.textStyle } = tmp4);
-        const obj17 = { style: null, textStyle: null, guild, size: tmp(5978).GuildIconSizes.LARGE };
-        const tmp7Result4 = first(5978);
-        const tmp55 = closure_12(tmp7Result4, obj17);
+        ({ guildIcon: obj12.style, guildIconText: obj12.textStyle } = tmp4);
+        const obj17 = { style: null, textStyle: null, guild, size: tmp(6161).GuildIconSizes.LARGE };
+        const tmp7Result4 = first(6161);
+        const tmp56 = closure_12(tmp7Result4, obj17);
         cResult[38] = guild;
         cResult[39] = tmp4.guildIcon;
         cResult[40] = tmp4.guildIconText;
-        cResult[41] = tmp55;
-        tmp52 = tmp55;
+        cResult[41] = tmp56;
+        tmp53 = tmp56;
       }
-      const fn = function k() {
-        const tmp = length > 0 || first;
-        if (tmp) {
-          const _window = window;
-          ref.current = window.setTimeout(() => {
-            closure_1_2((arg0) => !arg0);
-          }, closure_14);
+      class V {
+        constructor() {
+          tmp = length > 0 || closure_1;
+          if (tmp) {
+            tmp2 = closure_6;
+            tmp3 = globalThis;
+            _window = window;
+            tmp4 = closure_14;
+            closure_6.current = window.setTimeout(() => {
+              closure_1_2((arg0) => !arg0);
+            }, closure_14);
+          }
+          return () => {
+            window.clearTimeout(ref.current);
+          };
         }
-        return () => {
-          window.clearTimeout(ref.current);
-        };
-      };
-      const items15 = [first, length];
+      }
+      const items13 = [first, length];
       cResult[10] = first;
       cResult[11] = length;
-      cResult[12] = fn;
-      cResult[13] = items15;
-      tmp25 = items15;
-      tmp24 = fn;
+      cResult[12] = V;
+      cResult[13] = items13;
+      tmp25 = items13;
+      tmp24 = V;
     }
   }
   const found = arr3.filter((item) => null != tmp.premiumGuildSubscription && tmp.premiumGuildSubscription.guildId === guild.id);
@@ -758,7 +903,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   cResult[8] = arr3;
   cResult[9] = found;
   arr4 = found;
-}) : ((premiumGroupRole) => {
+}) : (function GuildBoostingMarketingCtaBar(premiumGroupRole) {
   let Button;
   let Icon2;
   let Text2;
@@ -802,8 +947,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const tmp2 = analyticsLocations(stateFromStores1.useState(false), 2);
   const first = tmp2[0];
   dependencyMap = tmp2[1];
-  const tmp6 = first(6664);
-  analyticsLocations = tmp6(first(6688).BOOSTED_GUILD_PERKS_MODAL).analyticsLocations;
+  const tmp6 = first(6841);
+  analyticsLocations = tmp6(first(6865).BOOSTED_GUILD_PERKS_MODAL).analyticsLocations;
   let obj = guild(573);
   const items = [ref];
   const stateFromStores = obj.useStateFromStores(items, () => ref.getCurrentUser());
@@ -818,11 +963,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   }, items2);
   const tmp11 = closure_18(first);
   const tmp12 = closure_18(!first);
-  const tmp13 = first(13286);
-  const tmp13Result = tmp13(fractionalPremiumInfo.endsAt, guild(13286).CountDownMessageTypes.LONG_TIME_LEFT);
-  let obj3 = guild(7747);
+  const tmp13 = first(13587);
+  const tmp13Result = tmp13(fractionalPremiumInfo.endsAt, guild(13587).CountDownMessageTypes.LONG_TIME_LEFT);
+  let obj3 = guild(8068);
   const isInReverseTrial = obj3.useIsInReverseTrial();
-  const total = first(7682)(premiumGroupRole.guild.id).total;
+  const total = first(8003)(premiumGroupRole.guild.id).total;
   ref = stateFromStores1.useRef(-1);
   const items3 = [first, memo];
   const effect = stateFromStores1.useEffect(() => {
@@ -837,21 +982,21 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       window.clearTimeout(ref.current);
     };
   }, items3);
-  let obj4 = first(4534);
+  let obj4 = first(4726);
   const isPremiumResult = obj4.isPremium(stateFromStores);
-  if (premiumGroupRole === guild(1385).PremiumSubscriptionGroupRole.MEMBER) {
+  if (premiumGroupRole === guild(1397).PremiumSubscriptionGroupRole.MEMBER) {
     const obj5 = { style: tmp.boostingUnavailablePill };
-    tmp19 = closure_12(tmp4(13339), obj5);
+    tmp19 = closure_12(tmp4(13639), obj5);
   } else {
     tmp19 = null;
     if (fractionalPremiumInfo.fractionalState !== FractionalPremiumStates.NONE) {
       const obj6 = { fpDurationText: tmp13Result, isInReverseTrial, style: tmp.boostingUnavailablePill };
-      tmp19 = closure_12(tmp4(13341), obj6);
+      tmp19 = closure_12(tmp4(13641), obj6);
     }
   }
   const obj7 = { onLayout, angle: 160, angleCenter: { x: 0.5, y: 0.5 }, colors: items4, locations: [0, 0.3221, 0.429, 0.7606, 1], useAngle: true, style: tmp.gradient, children: closure_13(tmp4Result3, obj8) };
   items4 = [, , , , ];
-  const tmp4Result = first(5612);
+  const tmp4Result = first(5387);
   items4[0] = first(587).unsafe_rawColors.PREMIUM_TIER_0_HEADER_GRADIENT_1;
   items4[1] = first(587).unsafe_rawColors.PREMIUM_TIER_0_HEADER_GRADIENT_2;
   items4[2] = first(587).unsafe_rawColors.PREMIUM_TIER_0_HEADER_GRADIENT_3;
@@ -859,46 +1004,46 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   items4[4] = first(587).unsafe_rawColors.PREMIUM_TIER_0_HEADER_GRADIENT_5;
   obj8 = { angle: 0, angleCenter: { x: 0.5, y: 0.5 }, colors: ["rgba(0, 0, 0, 0.7)", "rgba(0, 0, 0, 0)"], locations: [0.12, 0.5], useAngle: true, style: tmp.gradient, children: items5 };
   items5 = [, , , ];
-  tmp4Result3 = first(5612);
-  items5[0] = closure_12(first(13401), { guild });
+  tmp4Result3 = first(5387);
+  items5[0] = closure_12(first(13701), { guild });
   const obj9 = { style: tmp.headerContent, children: items6 };
   const obj10 = { style: tmp.heading, color: "text-overlay-light", variant: "display-sm", children: intl.string(guild(1126).t["AF+Tyh"]) };
-  const Heading = tmp7(4892).Heading;
+  const Heading = tmp7(5086).Heading;
   intl = tmp7(1126).intl;
   items6 = [closure_12(Heading, obj10), , , , ];
-  const obj11 = { style: tmp.guildIcon, textStyle: tmp.guildIconText, guild, size: guild(5978).GuildIconSizes.LARGE };
-  const tmp4Result4 = first(5978);
+  const obj11 = { style: tmp.guildIcon, textStyle: tmp.guildIconText, guild, size: guild(6161).GuildIconSizes.LARGE };
+  const tmp4Result4 = first(6161);
   items6[1] = closure_12(tmp4Result4, obj11);
   const obj12 = {
-    onPress() {
+    onPress: function handleBoostCountPress() {
       window.clearTimeout(ref.current);
       closure_2((arg0) => !arg0);
     },
     children: items7
   };
-  const PressableOpacity = tmp7(5916).PressableOpacity;
+  const PressableOpacity = tmp7(6189).PressableOpacity;
   items7 = [, ];
   const obj13 = { style: tmp.guildName, color: "text-overlay-light", variant: "text-md/bold", children: guild.name };
-  items7[0] = closure_12(guild(4892).Text, obj13);
+  items7[0] = closure_12(guild(5086).Text, obj13);
   const obj15 = { style: items8, children: items9 };
   items8 = [tmp12, tmp.totalBoostCountWrapper];
   const obj14 = { style: tmp.guildBoostCountWrapper, children: items10 };
-  View = tmp4(4618).View;
-  const obj16 = { style: tmp.guildBoostCountIcon, source: first(13326), color: first(587).unsafe_rawColors.GUILD_BOOSTING_PINK, size: guild(1188).Icon.Sizes.SMALL };
-  const Icon = tmp7(1188).Icon;
+  View = tmp4(4810).View;
+  const obj16 = { style: tmp.guildBoostCountIcon, source: first(13626), color: first(587).unsafe_rawColors.GUILD_BOOSTING_PINK, size: guild(1200).Icon.Sizes.SMALL };
+  const Icon = tmp7(1200).Icon;
   items9 = [closure_12(Icon, obj16), ];
   const obj17 = { style: tmp.guildBoostCount, accessibilityRole: "header", variant: "text-sm/bold", color: "text-overlay-light", children: intl2.format(guild(1126).t["pob/cL"], { subscriptions: total }) };
-  const Text = tmp7(4892).Text;
+  const Text = tmp7(5086).Text;
   intl2 = tmp7(1126).intl;
   items9[1] = closure_12(Text, obj17);
   items10 = [closure_13(View, obj15), ];
   const obj18 = { style: items11, children: closure_12(Text2, obj19) };
   items11 = [tmp11, tmp.guildBoostCurrentUserCountWrapper];
-  const View2 = tmp4(4618).View;
+  const View2 = tmp4(4810).View;
   obj19 = { style: items12, variant: "text-sm/bold", color: "text-overlay-light", children: intl3.format(guild(1126).t.xXb78j, { numSubscriptions: memo }) };
   items12 = [, ];
   ({ guildBoostCount: arr13[0], guildBoostCurrentUserCount: arr13[1] } = tmp);
-  Text2 = tmp7(4892).Text;
+  Text2 = tmp7(5086).Text;
   intl3 = tmp7(1126).intl;
   items10[1] = closure_12(View2, obj18);
   items7[1] = closure_13(memo, obj14);
@@ -907,23 +1052,23 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const obj20 = { styles: items13, guild, previousGuildSubscriptionSlot, analyticsSection: constants3.HEADER, fractionalPremiumState: fractionalPremiumInfo.fractionalState, premiumGroupRole, intent, onResult };
   items13 = [, ];
   ({ cta: arr14[0], ctaPrimary: arr14[1] } = tmp);
-  items6[4] = closure_12(first(6917), obj20);
+  items6[4] = closure_12(first(7106), obj20);
   items5[1] = closure_13(memo, obj9);
   const obj21 = { style: tmp.headerStars };
-  items5[2] = closure_12(first(13404), obj21);
+  items5[2] = closure_12(first(13704), obj21);
   const obj22 = { style: tmp.headerWave };
-  items5[3] = closure_12(first(13405), obj22);
+  items5[3] = closure_12(first(13705), obj22);
   const items14 = [closure_12(tmp4Result, obj7), ];
   const obj23 = { style: items15, children: closure_12(Button, obj26) };
   items15 = [, ];
   ({ cta: arr16[0], ctaSecondary: arr16[1] } = tmp);
-  Button = tmp7(5601).Button;
+  Button = tmp7(5375).Button;
   const tmp22 = closure_13;
   if (isPremiumResult) {
     const obj24 = {
       variant: "secondary",
       text: intl5.string(guild(1126).t["8MYSQw"]),
-      onPress() {
+      onPress: function handleGiftPress() {
           let obj4;
           const obj = BoostingActionCreators;
           obj.closeApplyBoostModal();
@@ -936,14 +1081,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       grow: true
     };
     intl5 = tmp7(1126).intl;
-    obj25 = { size: guild(1188).Icon.Sizes.SMALL, source: first(13406), style: tmp.giftIcon };
-    Icon2 = tmp7(1188).Icon;
+    obj25 = { size: guild(1200).Icon.Sizes.SMALL, source: first(13706), style: tmp.giftIcon };
+    Icon2 = tmp7(1200).Icon;
     obj26 = obj24;
   } else {
     obj26 = {
       variant: "secondary",
       text: intl4.string(guild(1126).t.pj0XBN),
-      onPress() {
+      onPress: function handleNavigateToPremium() {
           let obj2;
           const obj = { analyticsLocation: obj2, analyticsLocations };
           obj2 = { page: constants.PREMIUM_GUILD_USER_MODAL, section: constants2.HEADER, object: metroImportAll.BUTTON_CTA };

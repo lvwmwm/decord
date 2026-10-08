@@ -1,21 +1,21 @@
-// Module ID: 7197
-// Function ID: 7198
+// Module ID: 7376
+// Function ID: 7377
 // Name: AdDeliveryStore
-// Dependencies: [1102, 7198, 569, 5637, 504, 5636, 584, 2]
+// Dependencies: [1102, 7377, 569, 5984, 504, 5983, 584, 2]
 
-// Module 7197 (AdDeliveryStore)
+// Module 7376 (AdDeliveryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import AdPlacement from "AdPlacement" /* 5636 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 7198 */;
+import AdPlacement from "AdPlacement" /* 5983 */;
+import AdDecisionUtils from "AdDecisionUtils" /* 7377 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
 let tmp;
-const AdCreativeType = tmp(5637);
+const AdCreativeType = tmp(5984);
 let closure_9 = 30 * DurationsDefault.Millis.SECOND;
 let closure_10 = 10 * DurationsDefault.Millis.MINUTE;
 new Map();
@@ -53,25 +53,15 @@ class AdDeliveryStore extends Store {
     }
     return tmp3;
   }
-  getNoFillForPlacement(arg0, arg1) {
-    let obj = arg1;
-    if (arg1 === undefined) {
-      obj = {};
-    }
-    let flag = obj.includeExpired;
-    if (flag === undefined) {
-      flag = false;
-    }
+  getNoFillForPlacement(arg0) {
     const value = map.get(arg0);
     let tmp2 = null;
     if (null != value) {
-      let tmp5;
-      if (flag) {
+      const _Date = Date;
+      const sum = value.fetchedAt + value.ttlMillis;
+      let tmp5 = null;
+      if (sum >= Date.now()) {
         tmp5 = value;
-      } else {
-        const _Date = Date;
-        const sum = value.fetchedAt + value.ttlMillis;
-        tmp5 = null;
       }
       tmp2 = tmp5;
     }
@@ -138,6 +128,7 @@ let obj = {
     let fetchedAt;
     let isNoFill;
     let metadataSealed;
+    let noFillAdContentId;
     let obj3;
     let obj6;
     let placement;
@@ -145,7 +136,7 @@ let obj = {
     let quest;
     let responseTtlSeconds;
     let trafficMetadataSealed;
-    ({ creative, placement, adDecisionData, responseTtlSeconds, metadataSealed, trafficMetadataSealed, fetchedAt } = arg0);
+    ({ creative, noFillAdContentId, placement, adDecisionData, responseTtlSeconds, metadataSealed, trafficMetadataSealed, fetchedAt } = arg0);
     ({ quest, isNoFill, adContext, provenanceMetadataSealed } = arg0);
     closure_4 = Date.now();
     map = new Map(map);
@@ -159,7 +150,7 @@ let obj = {
           decision_id = adDecisionData.decision_id;
         }
         if (null != decision_id) {
-          const obj = { decisionId: adDecisionData.decision_id, metadataSealed, trafficMetadataSealed, fetchedAt, ttlMillis: obj3.resolveResponseTtl(responseTtlSeconds) };
+          const obj = { decisionId: adDecisionData.decision_id, adContentId: noFillAdContentId, metadataSealed, trafficMetadataSealed, fetchedAt, ttlMillis: obj3.resolveResponseTtl(responseTtlSeconds) };
           set = map.set;
           obj3 = AdDecisionUtils;
           const result1 = set(placement, obj);

@@ -1,21 +1,21 @@
-// Module ID: 9136
-// Function ID: 9137
+// Module ID: 10707
+// Function ID: 10708
 // Name: StreamQualityLiveIndicator
-// Dependencies: [19, 17, 1085, 1379, 4921, 21, 4896, 587, 558, 576, 9094, 9137, 6664, 4618, 4897, 1188, 8101, 9138, 1252, 8943, 8896, 4534, 5981, 8894, 5916, 2]
+// Dependencies: [19, 17, 1085, 1391, 5115, 21, 5090, 587, 558, 576, 10671, 9471, 6841, 4810, 5091, 1200, 5268, 10708, 1264, 9328, 9329, 4726, 6164, 9437, 6189, 2]
 
-// Module 9136 (StreamQualityLiveIndicator)
+// Module 10707 (StreamQualityLiveIndicator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import timing from "timing" /* 4897 */;
-import Constants2 from "Constants" /* 4921 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8896 */;
-import openPremiumModalDefault from "openPremiumModal" /* 8943 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import timing from "timing" /* 5091 */;
+import Constants2 from "Constants" /* 5115 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9328 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9329 */;
 import react from "react" /* 19 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const native = tmp(1188);
+const native = tmp(1200);
 let View = react_native.View;
 const AnalyticEvents = Constants.AnalyticEvents;
 ({ PremiumTypes: metroRequire, PremiumUpsellTypes: metroImportDefault } = PremiumConstants);
@@ -45,7 +45,7 @@ obj4 = { color: nativeDefault.unsafe_rawColors.PRIMARY_300 };
 let closure_11 = createStyles(obj);
 const __initData = { code: "function StreamQualityLiveIndicatorTsx1(){const{withTiming,reveal,STANDARD_EASING}=this.__closure;return{opacity:withTiming(reveal?1:0,{easing:STANDARD_EASING,duration:250})};}" };
 const __initData2 = { code: "function StreamQualityLiveIndicatorTsx2(){const{withTiming,reveal,STANDARD_EASING}=this.__closure;return{opacity:withTiming(reveal?1:0,{easing:STANDARD_EASING,duration:250})};}" };
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamQualityLiveIndicator(arg0) {
   let _location;
   let flag;
   let flag2;
@@ -141,7 +141,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 const tmp5Result = require("PremiumUtils");
                 tmp5Result.isPremium(participant.user, closure_6.TIER_1);
                 const tmp26 = closure_6;
-                class Q {
+                class C {
                   constructor() {
                     const obj = { analyticsLocation: _location, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_0_LEADING };
                     const tmp = openPremiumModalDefault;
@@ -206,7 +206,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                             const tmpResult5 = tmp(tmp2[16]);
                             const resolutionText = tmpResult5.getResolutionText(maxQuality.maxResolution);
                             cResult[28] = maxQuality.maxResolution;
-                            class Q {
+                            class C {
                               constructor() {
                                 const obj = { analyticsLocation: _location, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_0_LEADING };
                                 const tmp = openPremiumModalDefault;
@@ -222,7 +222,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                             const tmpResult6 = tmp(tmp2[16]);
                             const fPSText = tmpResult6.getFPSText(maxQuality.maxFrameRate);
                             cResult[30] = maxQuality.maxFrameRate;
-                            class Q {
+                            class C {
                               constructor() {
                                 const obj = { analyticsLocation: _location, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_0_LEADING };
                                 const tmp = openPremiumModalDefault;
@@ -234,7 +234,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                           } else {
                             tmp45 = cResult[31];
                           }
-                          class Q {
+                          class C {
                             constructor() {
                               const obj = { analyticsLocation: _location, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_0_LEADING };
                               const tmp = openPremiumModalDefault;
@@ -257,7 +257,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                 if (cResult[39] !== tmp4.liveTag) {
                                   const obj7 = { style: tmp4.liveTag };
                                   const tmp59 = closure_9(tmp(tmp2[15]).LiveTag, obj7);
-                                  class Q {
+                                  class C {
                                     constructor() {
                                       const obj = { analyticsLocation: _location, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_0_LEADING };
                                       const tmp = openPremiumModalDefault;
@@ -287,7 +287,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                         }
                                       }
                                       const obj8 = { pointerEvents: null, style: tmp32, children: tmp60 };
-                                      class Q {
+                                      class C {
                                         constructor() {
                                           const obj = { analyticsLocation: _location, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_0_LEADING };
                                           const tmp = openPremiumModalDefault;
@@ -303,7 +303,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                     }
                                   }
                                 }
-                                class Q {
+                                class C {
                                   constructor() {
                                     const obj = { analyticsLocation: _location, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_0_LEADING };
                                     const tmp = openPremiumModalDefault;
@@ -323,7 +323,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                 tmp60 = tmp63;
                               }
                             }
-                            class Q {
+                            class C {
                               constructor() {
                                 const obj = { analyticsLocation: _location, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_0_LEADING };
                                 const tmp = openPremiumModalDefault;
@@ -347,7 +347,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                           cResult[34] = tmp51;
                           tmp49 = tmp51;
                         }
-                        class Q {
+                        class C {
                           constructor() {
                             const obj = { analyticsLocation: _location, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_0_LEADING };
                             const tmp = openPremiumModalDefault;
@@ -365,7 +365,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       if (tmp37) {
                         const obj10 = { source: require("AssetRegistry"), style: null, resizeMode: "contain" };
                         const tmp5Result8 = require("FastImage");
-                        class Q {
+                        class C {
                           constructor() {
                             const obj = { analyticsLocation: _location, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_0_LEADING };
                             const tmp = openPremiumModalDefault;
@@ -374,7 +374,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         }
                         tmp37 = closure_9(tmp5Result8, obj10);
                       }
-                      class Q {
+                      class C {
                         constructor() {
                           const obj = { analyticsLocation: _location, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_0_LEADING };
                           const tmp = openPremiumModalDefault;
@@ -387,7 +387,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       tmp36 = tmp37;
                     }
                     const items2 = [tmp4.liveIndicator, ];
-                    class Q {
+                    class C {
                       constructor() {
                         const obj = { analyticsLocation: _location, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_0_LEADING };
                         const tmp = openPremiumModalDefault;
@@ -399,7 +399,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     cResult[21] = items2;
                     tmp34 = items2;
                   }
-                  class Q {
+                  class C {
                     constructor() {
                       const obj = { analyticsLocation: _location, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_0_LEADING };
                       const tmp = openPremiumModalDefault;
@@ -414,7 +414,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   tmp32 = tmp33;
                 }
               }
-              class Q {
+              class C {
                 constructor() {
                   const obj = { analyticsLocation: _location, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_0_LEADING };
                   const tmp = openPremiumModalDefault;
@@ -423,8 +423,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
               cResult[13] = _location;
               cResult[14] = analyticsLocations;
-              cResult[15] = Q;
-              tmp25 = Q;
+              cResult[15] = C;
+              tmp25 = C;
             }
           }
         }
@@ -458,7 +458,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = flag2;
   cResult[7] = fn2;
   tmp18 = fn2;
-}) : ((arg0) => {
+}) : (function StreamQualityLiveIndicator(arg0) {
   let PressableOpacity;
   let flag;
   let flag2;

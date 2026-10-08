@@ -1,31 +1,29 @@
-// Module ID: 16662
-// Function ID: 16663
+// Module ID: 16924
+// Function ID: 16925
 // Name: ConjureVersionRestoreConfirm
-// Dependencies: [32, 19, 21, 558, 576, 1126, 3753, 6081, 5997, 5720, 5716, 2]
+// Dependencies: [32, 19, 21, 558, 576, 1126, 3827, 6267, 6181, 5303, 5299, 2]
 // Exports: confirmRestoreVersion
 
-// Module 16662 (ConjureVersionRestoreConfirm)
+// Module 16924 (ConjureVersionRestoreConfirm)
 import react2 from "react" /* 576 */;
-import _modDef3753 from "module_3753" /* 3753 */;
-import useAlertStore from "useAlertStore" /* 5716 */;
+import _modDef3827 from "module_3827" /* 3827 */;
+import useAlertStore from "useAlertStore" /* 5299 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let matchingBackup;
-
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
 const intl7 = tmp(1126);
-const AlertModal2 = tmp(5720);
-const TableCheckboxRow2 = tmp(5997);
-const TableRowGroup2 = tmp(6081);
+const AlertModal2 = tmp(5303);
+const TableCheckboxRow2 = tmp(6181);
+const TableRowGroup2 = tmp(6267);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((matchingBackup) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureVersionRestoreAlert(matchingBackup) {
   let TableCheckboxRow;
   let first;
   let intl3;
@@ -45,9 +43,9 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((matchingBackup)
   [first, tmp6] = react.useState(false);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = intl7.intl;
-    const stringResult = intl.string(_modDef3753.NDY6Zv);
+    const stringResult = intl.string(_modDef3827.NDY6Zv);
     const intl2 = intl7.intl;
-    const stringResult1 = intl2.string(_modDef3753.z2x5zj);
+    const stringResult1 = intl2.string(_modDef3827.z2x5zj);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
     tmp7 = stringResult;
@@ -64,7 +62,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((matchingBackup)
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const intl5 = intl7.intl;
-      const stringResult2 = intl5.string(_modDef3753.K3Q49G);
+      const stringResult2 = intl5.string(_modDef3827.K3Q49G);
       cResult[5] = stringResult2;
       tmp16 = stringResult2;
     } else {
@@ -140,7 +138,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((matchingBackup)
   if (null != matchingBackup) {
     const obj6 = { hasIcons: false, children: hasOwnProperty(TableCheckboxRow, obj7) };
     const TableRowGroup = TableRowGroup2.TableRowGroup;
-    obj7 = { label: intl3.string(_modDef3753["+/pFME"]), subLabel: intl4.string(_modDef3753["+I112y"]), checked: first, onPress: tmp6 };
+    obj7 = { label: intl3.string(_modDef3827["+/pFME"]), subLabel: intl4.string(_modDef3827["+I112y"]), checked: first, onPress: tmp6 };
     TableCheckboxRow = TableCheckboxRow2.TableCheckboxRow;
     intl3 = intl7.intl;
     intl4 = intl7.intl;
@@ -150,7 +148,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((matchingBackup)
   cResult[3] = matchingBackup;
   cResult[4] = tmp13;
   tmp12 = tmp13;
-}) : ((matchingBackup) => {
+}) : (function ConjureVersionRestoreAlert(matchingBackup) {
   let TableCheckboxRow;
   let first;
   let intl;
@@ -168,16 +166,16 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((matchingBackup)
   const onConfirm = matchingBackup.onConfirm;
   first = undefined;
   [first, tmp3] = react.useState(false);
-  const obj = { title: intl.string(_modDef3753.NDY6Zv), content: intl2.string(_modDef3753.z2x5zj), extraContent: tmp4Result, actions: metroImportDefault(metroRequire, obj4) };
+  const obj = { title: intl.string(_modDef3827.NDY6Zv), content: intl2.string(_modDef3827.z2x5zj), extraContent: tmp4Result, actions: metroImportDefault(metroRequire, obj4) };
   const AlertModal = AlertModal2.AlertModal;
   intl = intl7.intl;
   intl2 = intl7.intl;
   tmp4Result = undefined;
   if (null != matchingBackup) {
     const obj2 = { hasIcons: false, children: hasOwnProperty(TableCheckboxRow, obj3) };
-    const TableRowGroup = tmp5(6081).TableRowGroup;
-    obj3 = { label: intl3.string(_modDef3753["+/pFME"]), subLabel: intl4.string(_modDef3753["+I112y"]), checked: first, onPress: tmp3 };
-    TableCheckboxRow = tmp5(5997).TableCheckboxRow;
+    const TableRowGroup = tmp5(6267).TableRowGroup;
+    obj3 = { label: intl3.string(_modDef3827["+/pFME"]), subLabel: intl4.string(_modDef3827["+I112y"]), checked: first, onPress: tmp3 };
+    TableCheckboxRow = tmp5(6181).TableCheckboxRow;
     intl3 = tmp5(1126).intl;
     intl4 = tmp5(1126).intl;
     tmp4Result = tmp4(TableRowGroup, obj2);
@@ -185,7 +183,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((matchingBackup)
   obj4 = { children: items };
   const obj5 = {
     variant: "primary",
-    text: intl5.string(_modDef3753.K3Q49G),
+    text: intl5.string(_modDef3827.K3Q49G),
     onPress() {
       let tmp2 = null;
       const tmp = onConfirm;
@@ -198,16 +196,16 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((matchingBackup)
       return tmp(tmp2);
     }
   };
-  const AlertActionButton = tmp5(5720).AlertActionButton;
+  const AlertActionButton = tmp5(5303).AlertActionButton;
   intl5 = tmp5(1126).intl;
   items = [hasOwnProperty(AlertActionButton, obj5), ];
   const obj6 = { variant: "secondary", text: intl6.string(intl7.t["ETE/oC"]) };
-  const AlertActionButton2 = tmp5(5720).AlertActionButton;
+  const AlertActionButton2 = tmp5(5303).AlertActionButton;
   intl6 = tmp5(1126).intl;
   items[1] = hasOwnProperty(AlertActionButton2, obj6);
   return hasOwnProperty(AlertModal, obj);
 });
-const result = size.fileFinishedImporting("modules/conjure/history/native/ConjureVersionRestoreConfirm.tsx");
+let result = size.fileFinishedImporting("modules/conjure/history/native/ConjureVersionRestoreConfirm.tsx");
 
 export const confirmRestoreVersion = function confirmRestoreVersion(arg0) {
   const openAlert = useAlertStore.openAlert;

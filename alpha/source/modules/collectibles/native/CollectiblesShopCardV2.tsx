@@ -1,31 +1,31 @@
-// Module ID: 8451
-// Function ID: 8452
+// Module ID: 8937
+// Function ID: 8938
 // Name: CollectiblesShopCardV2
-// Dependencies: [19, 17, 1193, 7066, 1087, 21, 4896, 587, 558, 576, 8452, 7077, 8453, 7860, 8456, 8457, 1126, 4574, 6664, 8516, 8518, 4735, 504, 7078, 4892, 8519, 8521, 8523, 8346, 8524, 8526, 8531, 8538, 5916, 8454, 4860, 7858, 4534, 8529, 8564, 8565, 1266, 2]
+// Dependencies: [19, 17, 1205, 7252, 1087, 21, 5090, 587, 558, 576, 8938, 7263, 8939, 8278, 8942, 8943, 1126, 4766, 6841, 9000, 9002, 4929, 504, 7264, 5086, 9003, 9006, 9008, 9005, 9009, 9011, 9016, 9023, 6189, 8940, 5054, 8276, 4726, 9014, 9048, 9049, 1278, 2]
 
-// Module 8451 (CollectiblesShopCardV2)
+// Module 8937 (CollectiblesShopCardV2)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7077 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7078 */;
-import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 7858 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8454 */;
-import DiceIcon from "DiceIcon" /* 8521 */;
-import LimitedTimeBadgeDefault from "LimitedTimeBadge" /* 8523 */;
-import OrbsIcon from "OrbsIcon" /* 8524 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7263 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7264 */;
+import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 8276 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8940 */;
+import DiceIcon from "DiceIcon" /* 9006 */;
+import LimitedTimeBadgeDefault from "LimitedTimeBadge" /* 9008 */;
+import OrbsIcon from "OrbsIcon" /* 9009 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7066 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7252 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let content, hideActionSheetResult, obj1, openResult, product;
+let content, hideActionSheetResult, obj1, openResult;
 
 let PixelRatio;
 let c10;
@@ -54,7 +54,7 @@ obj3 = { backgroundColor: nativeDefault.colors.WHITE };
 obj4 = { backgroundColor: nativeDefault.colors.BADGE_BACKGROUND_BRAND };
 let closure_12 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollectiblesShopCardInternalV2(product) {
   let busy;
   let cardStyle;
   let cardWidth;
@@ -235,7 +235,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
   cResult[1] = defaultVariantIndex;
   cResult[2] = selectedProduct;
   tmp6 = selectedProduct;
-}) : ((product) => {
+}) : (function CollectiblesShopCardInternalV2(product) {
   let Text;
   let cardStyle;
   let cardWidth;
@@ -461,7 +461,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
   return closure_10(PressableOpacity, obj7);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollectiblesShopCardV2Inner(product) {
   let analyticsLocations;
   let cardStyle;
   let cardWidth;
@@ -644,7 +644,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
   cResult[1] = defaultVariantIndex;
   cResult[2] = selectedProduct;
   tmp5 = selectedProduct;
-}) : ((product) => {
+}) : (function CollectiblesShopCardV2Inner(product) {
   let cardStyle;
   let cardWidth;
   let disableBundleStaticBackground;

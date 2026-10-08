@@ -1,52 +1,31 @@
 // Module ID: 4629
 // Function ID: 4630
-// Dependencies: [4621]
-// Exports: getHybridObjectConstructor
+// Dependencies: []
 
 // Module 4629
-import installedNitro1 from "installedNitro1" /* 4621 */;
-
-const map = new Map();
-
-export const getHybridObjectConstructor = function getHybridObjectConstructor(arg0) {
-  let closure_0 = arg0;
-  if (map.has(arg0)) {
-    return map.get(arg0);
-  } else {
-    function constructorFunc() {
-      const NitroModules = installedNitro1.NitroModules;
-      const hybridObject = NitroModules.createHybridObject(closure_0);
-      const prototypeOf = Object.getPrototypeOf(hybridObject);
-      if (constructorFunc.prototype !== prototypeOf) {
-        constructorFunc.prototype = prototypeOf;
-        constructorFunc.prototypeInitialized = true;
-      }
-      return hybridObject;
-    }
-    constructorFunc.prototypeInitialized = false;
-    let _Object = Object;
-    const _Symbol = Symbol;
-    const obj2 = {
-      value(arg0) {
-          if (!constructorFunc.prototypeInitialized) {
-            const NitroModules = installedNitro1.NitroModules;
-            const _Object = Object;
-            constructorFunc.prototype = Object.getPrototypeOf(NitroModules.createHybridObject(closure_0));
-            constructorFunc.prototypeInitialized = true;
-          }
-          let prototypeOf = Object.getPrototypeOf(arg0);
-          if (null != prototypeOf) {
-            while (prototypeOf !== constructorFunc.prototype) {
-              let _Object2 = Object;
-              prototypeOf = Object.getPrototypeOf(prototypeOf);
-            }
-            return true;
-          }
-          return false;
-        }
-    };
-    Object.defineProperty(constructorFunc, Symbol.hasInstance, obj2);
-    const result = obj.set(arg0, constructorFunc);
-    return constructorFunc;
+let obj3;
+let obj4;
+let obj5;
+let obj6;
+let obj7;
+if (Intl.ListFormat) {
+  const _Intl = Intl;
+  if (typeof Intl.ListFormat.__addLocaleData === "function") {
+    const _Intl2 = Intl;
+    const obj2 = { data: obj3, locale: "da" };
+    obj3 = { conjunction: obj4, disjunction: obj5, unit: obj6 };
+    obj4 = { long: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, narrow: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, short: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" } };
+    obj5 = { long: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" }, narrow: { end: "{0} el. {1}", middle: "{0}, {1}", pair: "{0} el. {1}", start: "{0}, {1}" }, short: { end: "{0} el. {1}", middle: "{0}, {1}", pair: "{0} el. {1}", start: "{0}, {1}" } };
+    obj6 = { long: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, narrow: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, short: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" } };
+    ListFormat.__addLocaleData(obj2);
   }
-};
+}
+let prop = globalThis.__FORMATJS_LISTFORMAT_DATA__;
+const _globalThis = globalThis;
+if (!prop) {
+  prop = [];
+}
+_globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
+const obj = { data: obj7, locale: "da" };
+obj7 = { conjunction: { long: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, narrow: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, short: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" }, narrow: { end: "{0} el. {1}", middle: "{0}, {1}", pair: "{0} el. {1}", start: "{0}, {1}" }, short: { end: "{0} el. {1}", middle: "{0}, {1}", pair: "{0} el. {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, narrow: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, short: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" } } };
+prop.push(obj);

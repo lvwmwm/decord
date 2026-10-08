@@ -1,27 +1,27 @@
-// Module ID: 16008
-// Function ID: 16009
+// Module ID: 16268
+// Function ID: 16269
 // Name: MessagesItemSuggestedFriend
-// Dependencies: [32, 19, 17, 4525, 1085, 21, 4896, 587, 10736, 7861, 1987, 573, 1126, 4728, 16009, 16010, 1252, 5916, 1188, 4892, 5601, 4847, 558, 576, 8404, 16007, 2]
+// Dependencies: [32, 19, 17, 4717, 1085, 21, 5090, 587, 10490, 8279, 1999, 573, 1126, 4922, 16269, 16270, 1264, 6189, 1200, 5086, 5375, 5041, 558, 576, 8600, 16267, 2]
 // Exports: getMessagesItemSuggestedFriendHeight
 
-// Module 16008 (MessagesItemSuggestedFriend)
+// Module 16268 (MessagesItemSuggestedFriend)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import UserUtilsDefault from "UserUtils" /* 4728 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10736 */;
-import LegendList from "LegendList" /* 16007 */;
-import FriendSuggestionUtils from "FriendSuggestionUtils" /* 16009 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16010 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import UserUtilsDefault from "UserUtils" /* 4922 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10490 */;
+import LegendList from "LegendList" /* 16267 */;
+import FriendSuggestionUtils from "FriendSuggestionUtils" /* 16269 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16270 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const defaultMVCPConfig = tmp(8404);
+const defaultMVCPConfig = tmp(8600);
 let react = react_mod;
 const View = react_native.View;
 ({ AnalyticEvents: metroImportDefault, RelationshipTypes: metroImportAll } = Constants);
@@ -72,7 +72,7 @@ let closure_12 = react.memo(function MessagesItemSuggestedFriendView(height) {
     return items;
   }, items);
   const callback = react.useCallback(() => {
-    const promise = asyncRequire(7861, dependencyMap.paths);
+    const promise = asyncRequire(8279, dependencyMap.paths);
     promise.then((result) => {
       const obj = { userId: suggestedFriend.user.id, localUser: suggestedFriend.user, location: "Messages Tab User Profile" };
       return result.default(obj);
@@ -165,7 +165,7 @@ let closure_12 = react.memo(function MessagesItemSuggestedFriendView(height) {
 let memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
 const memo2 = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemSuggestedFriendFast(arg0) {
   let tmp3;
   let tmp4;
   const obj = react2;
@@ -186,7 +186,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   cResult[1] = arg0;
   cResult[2] = tmp7;
   tmp5 = tmp7;
-}) : ((arg0) => {
+}) : (function MessagesItemSuggestedFriendFast(arg0) {
   let tmp2;
   let tmp3;
   const obj = { addedPressed: tmp2, setAddedPressed: tmp3 };
@@ -197,7 +197,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
 const memo3 = react.memo;
-const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((suggestedFriend) => {
+const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemSuggestedFriendFlash(suggestedFriend) {
   let tmp4;
   let tmp6;
   let tmp7;
@@ -231,7 +231,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((sugge
   cResult[4] = tmp7;
   cResult[5] = tmp10;
   tmp8 = tmp10;
-}) : ((suggestedFriend) => {
+}) : (function MessagesItemSuggestedFriendFlash(suggestedFriend) {
   let tmp2;
   let tmp3;
   const items = [suggestedFriend.suggestedFriend.user.id];
@@ -243,7 +243,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((sugge
   return React4(closure_12, obj2);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemSuggestedFriendLegend(arg0) {
   let tmp3;
   let tmp4;
   const obj = react2;
@@ -268,7 +268,7 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
   cResult[2] = tmp4;
   cResult[3] = tmp7;
   tmp5 = tmp7;
-}) : ((arg0) => {
+}) : (function MessagesItemSuggestedFriendLegend(arg0) {
   let tmp2;
   let tmp3;
   const obj = LegendList;

@@ -1,24 +1,24 @@
-// Module ID: 16587
-// Function ID: 16588
+// Module ID: 16842
+// Function ID: 16843
 // Name: ConjurePublishBlockedSheet
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 16588, 1126, 3753, 6651, 4892, 4860, 5601, 6708, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 16843, 1126, 3827, 6828, 5086, 5054, 5375, 6885, 2]
 // Exports: default
 
-// Module 16587 (ConjurePublishBlockedSheet)
+// Module 16842 (ConjurePublishBlockedSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import _modDef3753 from "module_3753" /* 3753 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6651 */;
-import ActionSheet2 from "ActionSheet" /* 6708 */;
-import conjurePublishBlockedReason from "conjurePublishBlockedReason" /* 16588 */;
+import _modDef3827 from "module_3827" /* 3827 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6828 */;
+import ActionSheet2 from "ActionSheet" /* 6885 */;
+import conjurePublishBlockedReason from "conjurePublishBlockedReason" /* 16843 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,11 +29,11 @@ let hasOwnProperty;
 let obj2;
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-const ConjurePublishBlockedSheet = "ConjurePublishBlockedSheet";
+const ConjurePublishBlockedSheet_str = "ConjurePublishBlockedSheet";
 let obj = { content: obj2 };
 obj2 = { gap: nativeDefault.space.PX_16 };
 let closure_7 = createStyles.createStyles(obj);
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePublishBlockedSheet(reason) {
   let items;
   let tmp10;
   let tmp13;
@@ -50,7 +50,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
   if (cResult[0] !== tmp5) {
     const intl = tmp(1126).intl;
     const string = intl.string;
-    const tmp8 = _modDef3753;
+    const tmp8 = _modDef3827;
     const stringResult = string(tmp5 ? tmp8.wQ4UyJ : tmp8.ZNGLFE);
     cResult[0] = tmp5;
     cResult[1] = stringResult;
@@ -71,7 +71,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
   if (cResult[4] !== tmp5) {
     const intl2 = tmp(1126).intl;
     const string2 = intl2.string;
-    const tmp15 = _modDef3753;
+    const tmp15 = _modDef3827;
     const string2Result = string2(tmp5 ? tmp15.Agqmbt : tmp15.ffxKGK);
     cResult[4] = tmp5;
     cResult[5] = string2Result;
@@ -95,7 +95,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
     if (tmp5) {
       BddRzS = tmp(1126).t.BddRzS;
     } else {
-      BddRzS = _modDef3753["/omTNx"];
+      BddRzS = _modDef3827["/omTNx"];
     }
     const string3Result = string3(BddRzS);
     cResult[8] = tmp5;
@@ -105,9 +105,9 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
     tmp20 = cResult[9];
   }
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function v() {
+    const fn = function _() {
       const obj = ActionSheetActionCreatorsDefault;
-      return obj.hideActionSheet(ConjurePublishBlockedSheet);
+      return obj.hideActionSheet(ConjurePublishBlockedSheet_str);
     };
     cResult[10] = fn;
     tmp24 = fn;
@@ -152,7 +152,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
   cResult[15] = tmp25;
   cResult[16] = tmp29;
   tmp28 = tmp29;
-}) : ((reason) => {
+}) : (function ConjurePublishBlockedSheet(reason) {
   let BddRzS;
   let ZNGLFE;
   let items;
@@ -168,7 +168,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
   const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   const intl = intl4.intl;
   const string = intl.string;
-  const tmp7 = _modDef3753;
+  const tmp7 = _modDef3827;
   if (tmp4) {
     ZNGLFE = tmp7.wQ4UyJ;
     tmp8 = tmp6;
@@ -179,14 +179,14 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
   let obj = { header: React3(BottomSheetTitleHeader, obj2), children: tmp9(tmp10, obj3) };
   obj2 = { title: string(ZNGLFE) };
   obj3 = { style: tmp.content, children: items };
-  const Text = tmp2(4892).Text;
+  const Text = tmp2(5086).Text;
   const intl2 = tmp2(1126).intl;
   const string2 = intl2.string;
-  const tmp8Result = tmp8(3753);
+  const tmp8Result = tmp8(3827);
   items = [, ];
   const obj4 = { variant: "text-md/normal", color: "text-muted", children: string2(tmp4 ? tmp8Result.Agqmbt : tmp8Result.ffxKGK) };
   items[0] = React3(Text, obj4);
-  const Button = tmp2(5601).Button;
+  const Button = tmp2(5375).Button;
   const intl3 = tmp2(1126).intl;
   const string3 = intl3.string;
   tmp10 = View;
@@ -194,14 +194,14 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
   if (tmp4) {
     BddRzS = tmp2(1126).t.BddRzS;
   } else {
-    BddRzS = tmp8(3753)["/omTNx"];
+    BddRzS = tmp8(3827)["/omTNx"];
   }
   const obj5 = {
     variant: "primary",
     text: string3(BddRzS),
     onPress() {
       const obj = ActionSheetActionCreatorsDefault;
-      return obj.hideActionSheet(ConjurePublishBlockedSheet);
+      return obj.hideActionSheet(ConjurePublishBlockedSheet_str);
     }
   };
   items[1] = React3(Button, obj5);
@@ -211,7 +211,7 @@ const result = size.fileFinishedImporting("modules/conjure/publish/native/Conjur
 
 export default function showConjurePublishBlockedSheet(reason) {
   let obj2;
-  const obj = { key: ConjurePublishBlockedSheet, content: React3(closure_8, obj2) };
+  const obj = { key: ConjurePublishBlockedSheet_str, content: React3(closure_8, obj2) };
   const showActionSheet = ActionSheetActionCreators.showActionSheet;
   obj2 = { reason };
   ActionSheetActionCreators;

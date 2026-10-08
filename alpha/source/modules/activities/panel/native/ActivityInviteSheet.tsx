@@ -1,29 +1,29 @@
-// Module ID: 17209
-// Function ID: 17210
+// Module ID: 17490
+// Function ID: 17491
 // Name: ActivityInviteSheet
-// Dependencies: [32, 19, 17, 9567, 9507, 1085, 7239, 1096, 21, 4896, 587, 558, 576, 9503, 6664, 6688, 4860, 7861, 9496, 11146, 504, 9521, 6651, 1126, 1188, 9523, 6554, 17210, 6652, 2]
+// Dependencies: [32, 19, 17, 8738, 8673, 1085, 7418, 1096, 21, 5090, 587, 558, 576, 8668, 6841, 6865, 5054, 8279, 8660, 11266, 504, 8691, 6828, 1126, 1200, 8693, 6730, 17491, 6829, 2]
 
-// Module 17209 (ActivityInviteSheet)
+// Module 17490 (ActivityInviteSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants2 from "Constants" /* 1085 */;
 import Constants3 from "Constants" /* 1096 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
-import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 9503 */;
-import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 9521 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
+import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 8668 */;
+import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 8691 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9567 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 9507 */;
-import Constants from "Constants" /* 7239 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 8738 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 8673 */;
+import Constants from "Constants" /* 7418 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet, activity, catchPromise1, cleanupPromise, closure_0, dependencyMap, hideActionSheetResult, obj1, set, tmp22, tmp23, tmp24;
+let BottomSheet, catchPromise1, cleanupPromise, closure_0, dependencyMap, obj1, set, tmp22, tmp23, tmp24;
 
 let c10;
 let closure_14;
@@ -50,7 +50,7 @@ size1 = { height: 16, width: "40%", margin: 16, borderRadius: nativeDefault.radi
 obj2 = { borderTopWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, marginTop: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_12, flexDirection: "column", gap: nativeDefault.space.PX_12 };
 let closure_16 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Loading() {
   let first;
   let items1;
   let tmp12;
@@ -98,12 +98,12 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const obj5 = { children: items1 };
   items1 = [tmp8, tmp12, first];
-  const tmp17 = closure_15(authStore2, obj5);
+  const tmp17 = authStore3(authStore2, obj5);
   cResult[5] = tmp8;
   cResult[6] = tmp12;
   cResult[7] = tmp17;
   tmp16 = tmp17;
-}) : (() => {
+}) : (function Loading() {
   let items1;
   let tmp2;
   const tmp = closure_16();
@@ -122,11 +122,12 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj4 = { style: tmp.placeholderLabel };
   items1[1] = tmp2(View, obj4);
   items1[2] = items;
-  return closure_15(authStore2, obj2);
+  return authStore3(authStore2, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityInviteSheet(activity) {
   let analyticsLocations;
+  let intl;
   let inviteSuggestionRows;
   let tmp17;
   let tmp8;
@@ -137,8 +138,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
   const cResult = obj.c(28);
   activity = activity.activity;
   const tmp4 = closure_16();
-  let tmp5 = analyticsLocations(6664);
-  analyticsLocations = tmp5(analyticsLocations(6688).ACTIVITY_INVITE_SHEET).analyticsLocations;
+  let tmp5 = analyticsLocations(6841);
+  analyticsLocations = tmp5(analyticsLocations(6865).ACTIVITY_INVITE_SHEET).analyticsLocations;
   let obj2 = react;
   let tmp6 = closure_3;
   [tmp8, dependencyMap] = closure_3(react.useState(null), 2);
@@ -146,7 +147,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     class S {
       constructor(arg0) {
-        return activity;
+        return arg0;
       }
     }
     cResult[0] = S;
@@ -154,7 +155,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
   } else {
     class S {
       constructor(arg0) {
-        return activity;
+        return arg0;
       }
     }
   }
@@ -164,7 +165,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
   if (activity.party != null) {
     class S {
       constructor(arg0) {
-        return activity;
+        return arg0;
       }
     }
   }
@@ -178,17 +179,16 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
     let tmp27;
     class S {
       constructor(arg0) {
-        return activity;
+        return arg0;
       }
     }
     if (cResult[4] !== analyticsLocations) {
       class H {
-        constructor(arg0) {
-          obj = closure_1(closure_2[16]);
-          hideActionSheetResult = obj.hideActionSheet();
-          obj1 = { userId: activity, sourceAnalyticsLocations: analyticsLocations };
-          tmp2 = closure_1(closure_2[17])(obj1);
-          return;
+        constructor(userId) {
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet();
+          const obj2 = { userId, sourceAnalyticsLocations: analyticsLocations };
+          showUserProfileActionSheetDefault(obj2);
         }
       }
       cResult[4] = analyticsLocations;
@@ -196,12 +196,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
       tmp12 = H;
     } else {
       class H {
-        constructor(arg0) {
-          obj = closure_1(closure_2[16]);
-          hideActionSheetResult = obj.hideActionSheet();
-          obj1 = { userId: activity, sourceAnalyticsLocations: analyticsLocations };
-          tmp2 = closure_1(closure_2[17])(obj1);
-          return;
+        constructor(userId) {
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet();
+          const obj2 = { userId, sourceAnalyticsLocations: analyticsLocations };
+          showUserProfileActionSheetDefault(obj2);
         }
       }
     }
@@ -217,7 +216,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
               id = party.id;
             }
             if (null != id) {
-              markInviteSent = function markInviteSent() { /* body not rendered: F148339 */ };
+              markInviteSent = function markInviteSent() {
+                if (null != id) {
+                  metroRequire(tmp, item.item.id, constants.SENT);
+                }
+              };
               tmp21 = closure_1_6;
               tmp22 = closure_1_10;
               tmp23 = closure_1_6(id, activity.item.id, closure_1_10.SENDING);
@@ -236,7 +239,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                   obj1.location = analyticsLocations(tmp25[15]).ACTIVITY_INVITE_SHEET;
                   sendActivityInviteResult = sendActivityInvite(obj1);
                   nextPromise = sendActivityInviteResult.then(markInviteSent);
-                  catchPromise = nextPromise.catch(() => { /* body not rendered: F148340 */ });
+                  catchPromise = nextPromise.catch((error) => {
+                    closure_1_2(String(error));
+                  });
                 } catch (tmp17) {
                   tmp18 = closure_2;
                   tmp19 = globalThis;
@@ -256,7 +261,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                   obj.location = analyticsLocations(tmp25[15]).ACTIVITY_INVITE_SHEET;
                   result = sendActivityInviteUser(obj);
                   nextPromise1 = result.then(markInviteSent);
-                  catchPromise1 = nextPromise1.catch(() => { /* body not rendered: F148341 */ });
+                  catchPromise1 = nextPromise1.catch((error) => closure_1_2(String(error)));
                 } catch (tmp8) {
                   tmp9 = closure_2;
                   tmp10 = globalThis;
@@ -284,7 +289,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
               id = party.id;
             }
             if (null != id) {
-              markInviteSent = function markInviteSent() { /* body not rendered: F148339 */ };
+              markInviteSent = function markInviteSent() {
+                if (null != id) {
+                  metroRequire(tmp, item.item.id, constants.SENT);
+                }
+              };
               tmp21 = closure_1_6;
               tmp22 = closure_1_10;
               tmp23 = closure_1_6(id, activity.item.id, closure_1_10.SENDING);
@@ -303,7 +312,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                   obj1.location = analyticsLocations(tmp25[15]).ACTIVITY_INVITE_SHEET;
                   sendActivityInviteResult = sendActivityInvite(obj1);
                   nextPromise = sendActivityInviteResult.then(markInviteSent);
-                  catchPromise = nextPromise.catch(() => { /* body not rendered: F148340 */ });
+                  catchPromise = nextPromise.catch((error) => {
+                    closure_1_2(String(error));
+                  });
                 } catch (tmp17) {
                   tmp18 = closure_2;
                   tmp19 = globalThis;
@@ -323,7 +334,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                   obj.location = analyticsLocations(tmp25[15]).ACTIVITY_INVITE_SHEET;
                   result = sendActivityInviteUser(obj);
                   nextPromise1 = result.then(markInviteSent);
-                  catchPromise1 = nextPromise1.catch(() => { /* body not rendered: F148341 */ });
+                  catchPromise1 = nextPromise1.catch((error) => closure_1_2(String(error)));
                 } catch (tmp8) {
                   tmp9 = closure_2;
                   tmp10 = globalThis;
@@ -350,7 +361,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
               id = party.id;
             }
             if (null != id) {
-              markInviteSent = function markInviteSent() { /* body not rendered: F148339 */ };
+              markInviteSent = function markInviteSent() {
+                if (null != id) {
+                  metroRequire(tmp, item.item.id, constants.SENT);
+                }
+              };
               tmp21 = closure_1_6;
               tmp22 = closure_1_10;
               tmp23 = closure_1_6(id, activity.item.id, closure_1_10.SENDING);
@@ -369,7 +384,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                   obj1.location = analyticsLocations(tmp25[15]).ACTIVITY_INVITE_SHEET;
                   sendActivityInviteResult = sendActivityInvite(obj1);
                   nextPromise = sendActivityInviteResult.then(markInviteSent);
-                  catchPromise = nextPromise.catch(() => { /* body not rendered: F148340 */ });
+                  catchPromise = nextPromise.catch((error) => {
+                    closure_1_2(String(error));
+                  });
                 } catch (tmp17) {
                   tmp18 = closure_2;
                   tmp19 = globalThis;
@@ -389,7 +406,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                   obj.location = analyticsLocations(tmp25[15]).ACTIVITY_INVITE_SHEET;
                   result = sendActivityInviteUser(obj);
                   nextPromise1 = result.then(markInviteSent);
-                  catchPromise1 = nextPromise1.catch(() => { /* body not rendered: F148341 */ });
+                  catchPromise1 = nextPromise1.catch((error) => closure_1_2(String(error)));
                 } catch (tmp8) {
                   tmp9 = closure_2;
                   tmp10 = globalThis;
@@ -403,14 +420,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
         }
       }
       const items = [InviteSuggestionsStore];
-      class U {
-        constructor() {
-          return closure_1_8.getInviteSuggestionRows();
-        }
-      }
+      const fn = function k() {
+        return inviteSuggestionRows.getInviteSuggestionRows();
+      };
       cResult[8] = items;
-      cResult[9] = U;
-      tmp15 = U;
+      cResult[9] = fn;
+      tmp15 = fn;
       tmp14 = items;
     } else {
       class V {
@@ -424,7 +439,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
               id = party.id;
             }
             if (null != id) {
-              markInviteSent = function markInviteSent() { /* body not rendered: F148339 */ };
+              markInviteSent = function markInviteSent() {
+                if (null != id) {
+                  metroRequire(tmp, item.item.id, constants.SENT);
+                }
+              };
               tmp21 = closure_1_6;
               tmp22 = closure_1_10;
               tmp23 = closure_1_6(id, activity.item.id, closure_1_10.SENDING);
@@ -443,7 +462,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                   obj1.location = analyticsLocations(tmp25[15]).ACTIVITY_INVITE_SHEET;
                   sendActivityInviteResult = sendActivityInvite(obj1);
                   nextPromise = sendActivityInviteResult.then(markInviteSent);
-                  catchPromise = nextPromise.catch(() => { /* body not rendered: F148340 */ });
+                  catchPromise = nextPromise.catch((error) => {
+                    closure_1_2(String(error));
+                  });
                 } catch (tmp17) {
                   tmp18 = closure_2;
                   tmp19 = globalThis;
@@ -463,7 +484,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                   obj.location = analyticsLocations(tmp25[15]).ACTIVITY_INVITE_SHEET;
                   result = sendActivityInviteUser(obj);
                   nextPromise1 = result.then(markInviteSent);
-                  catchPromise1 = nextPromise1.catch(() => { /* body not rendered: F148341 */ });
+                  catchPromise1 = nextPromise1.catch((error) => closure_1_2(String(error)));
                 } catch (tmp8) {
                   tmp9 = closure_2;
                   tmp10 = globalThis;
@@ -495,16 +516,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
           obj.inviteTargetType = InviteTargetTypes.EMBEDDED_APPLICATION;
           inviteSuggestions = loadInviteSuggestions(obj);
           catchPromise = inviteSuggestions.catch(NOOP_NULL);
-          cleanupPromise = catchPromise.finally(() => { /* body not rendered: F148342 */ });
+          cleanupPromise = catchPromise.finally(() => {
+            closure_1_4(false);
+          });
           return;
         }
       }
       const items1 = [];
-      class U {
-        constructor() {
-          return closure_1_8.getInviteSuggestionRows();
-        }
-      }
+      cResult[10] = F;
       cResult[11] = items1;
       tmp19 = items1;
       tmp18 = F;
@@ -520,7 +539,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
           obj.inviteTargetType = InviteTargetTypes.EMBEDDED_APPLICATION;
           inviteSuggestions = loadInviteSuggestions(obj);
           catchPromise = inviteSuggestions.catch(NOOP_NULL);
-          cleanupPromise = catchPromise.finally(() => { /* body not rendered: F148342 */ });
+          cleanupPromise = catchPromise.finally(() => {
+            closure_1_4(false);
+          });
           return;
         }
       }
@@ -541,17 +562,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
           obj.inviteTargetType = InviteTargetTypes.EMBEDDED_APPLICATION;
           inviteSuggestions = loadInviteSuggestions(obj);
           catchPromise = inviteSuggestions.catch(NOOP_NULL);
-          cleanupPromise = catchPromise.finally(() => { /* body not rendered: F148342 */ });
+          cleanupPromise = catchPromise.finally(() => {
+            closure_1_4(false);
+          });
           return;
         }
       }
-      const obj3 = { title: obj5.string(tmp(1126).t["OzOM/q"]) };
-      const BottomSheetTitleHeader = tmp(6651).BottomSheetTitleHeader;
-      class U {
-        constructor() {
-          return closure_1_8.getInviteSuggestionRows();
-        }
-      }
+      const obj3 = { title: intl.string(tmp(1126).t["OzOM/q"]) };
+      const BottomSheetTitleHeader = tmp(6828).BottomSheetTitleHeader;
+      intl = tmp(1126).intl;
       const tmp25 = closure_13(BottomSheetTitleHeader, obj3);
       cResult[12] = tmp25;
     } else {
@@ -566,7 +585,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
           obj.inviteTargetType = InviteTargetTypes.EMBEDDED_APPLICATION;
           inviteSuggestions = loadInviteSuggestions(obj);
           catchPromise = inviteSuggestions.catch(NOOP_NULL);
-          cleanupPromise = catchPromise.finally(() => { /* body not rendered: F148342 */ });
+          cleanupPromise = catchPromise.finally(() => {
+            closure_1_4(false);
+          });
           return;
         }
       }
@@ -583,7 +604,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
           obj.inviteTargetType = InviteTargetTypes.EMBEDDED_APPLICATION;
           inviteSuggestions = loadInviteSuggestions(obj);
           catchPromise = inviteSuggestions.catch(NOOP_NULL);
-          cleanupPromise = catchPromise.finally(() => { /* body not rendered: F148342 */ });
+          cleanupPromise = catchPromise.finally(() => {
+            closure_1_4(false);
+          });
           return;
         }
       }
@@ -600,17 +623,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
           obj.inviteTargetType = InviteTargetTypes.EMBEDDED_APPLICATION;
           inviteSuggestions = loadInviteSuggestions(obj);
           catchPromise = inviteSuggestions.catch(NOOP_NULL);
-          cleanupPromise = catchPromise.finally(() => { /* body not rendered: F148342 */ });
+          cleanupPromise = catchPromise.finally(() => {
+            closure_1_4(false);
+          });
           return;
         }
       }
-      const obj4 = { style: tmp4.emptyState, Illustration: tmp(9523).AppCrash, title: tmp8 };
-      class U {
-        constructor() {
-          return closure_1_8.getInviteSuggestionRows();
-        }
-      }
-      tmp27 = closure_13(tmp28, obj4);
+      const obj4 = { style: tmp4.emptyState, Illustration: tmp(8693).AppCrash, title: tmp8 };
+      const EmptyState = tmp(1200).EmptyState;
+      tmp27 = closure_13(EmptyState, obj4);
     } else {
       class F {
         constructor() {
@@ -623,7 +644,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
           obj.inviteTargetType = InviteTargetTypes.EMBEDDED_APPLICATION;
           inviteSuggestions = loadInviteSuggestions(obj);
           catchPromise = inviteSuggestions.catch(NOOP_NULL);
-          cleanupPromise = catchPromise.finally(() => { /* body not rendered: F148342 */ });
+          cleanupPromise = catchPromise.finally(() => {
+            closure_1_4(false);
+          });
           return;
         }
       }
@@ -636,17 +659,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
     cResult[18] = 0 === stateFromStores.length && !tmp17;
     class R {
       constructor(arg0) {
-        party = activity.party;
-        id = undefined;
+        const party = activity.party;
+        let id;
         if (party != null) {
           id = party.id;
         }
-        tmp3 = null;
+        let tmp3 = null;
         if (null != id) {
-          tmp4 = closure_3;
-          tmp5 = closure_3[id];
-          tmp6 = undefined;
-          if (tmp5 != null) {
+          let tmp6;
+          if (closure_3[id] != null) {
             tmp6 = tmp5[tmp2];
           }
           tmp3 = tmp6;
@@ -669,24 +690,24 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
         obj.inviteTargetType = InviteTargetTypes.EMBEDDED_APPLICATION;
         inviteSuggestions = loadInviteSuggestions(obj);
         catchPromise = inviteSuggestions.catch(NOOP_NULL);
-        cleanupPromise = catchPromise.finally(() => { /* body not rendered: F148342 */ });
+        cleanupPromise = catchPromise.finally(() => {
+          closure_1_4(false);
+        });
         return;
       }
     }
   }
   class R {
     constructor(arg0) {
-      party = activity.party;
-      id = undefined;
+      const party = activity.party;
+      let id;
       if (party != null) {
         id = party.id;
       }
-      tmp3 = null;
+      let tmp3 = null;
       if (null != id) {
-        tmp4 = closure_3;
-        tmp5 = closure_3[id];
-        tmp6 = undefined;
-        if (tmp5 != null) {
+        let tmp6;
+        if (closure_3[id] != null) {
           tmp6 = tmp5[tmp2];
         }
         tmp3 = tmp6;
@@ -697,7 +718,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
   cResult[1] = undefined;
   cResult[2] = tmp10;
   cResult[3] = R;
-}) : ((activity) => {
+}) : (function ActivityInviteSheet(activity) {
   let BottomSheetTitleHeader;
   let SearchField;
   let _undefined;
@@ -723,8 +744,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
   let tmp = closure_16();
   let tmp3 = dependencyMap;
   const tmp2 = analyticsLocations;
-  const tmp4 = analyticsLocations(6664);
-  analyticsLocations = tmp4(analyticsLocations(6688).ACTIVITY_INVITE_SHEET).analyticsLocations;
+  const tmp4 = analyticsLocations(6841);
+  analyticsLocations = tmp4(analyticsLocations(6865).ACTIVITY_INVITE_SHEET).analyticsLocations;
   let tmp5 = closure_3(react.useState(null), 2);
   [tmp6, c2] = tmp5;
   const tmp7 = closure_7((arg0) => arg0);
@@ -818,9 +839,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
   }, []);
   const tmp17 = closure_13;
   let obj2 = { value: analyticsLocations, children: tmp17(BottomSheet, obj3) };
-  const AnalyticsLocationProvider = tmp11(6664).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = tmp11(6841).AnalyticsLocationProvider;
   let tmp18 = null != tmp6;
-  BottomSheet = tmp11(6652).BottomSheet;
+  BottomSheet = tmp11(6829).BottomSheet;
   if (!tmp18) {
     tmp18 = !tmp15;
   }
@@ -829,11 +850,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
   }
   obj3 = { showGradient: tmp18, scrollable: true, startExpanded: true, header: tmp17(BottomSheetTitleHeader, obj4), children: tmp19Result };
   obj4 = { title: intl.string(activity(1126).t["OzOM/q"]) };
-  BottomSheetTitleHeader = tmp11(6651).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = tmp11(6828).BottomSheetTitleHeader;
   intl = tmp11(1126).intl;
   if (null != tmp6) {
-    const obj5 = { style: tmp.emptyState, Illustration: activity(9523).AppCrash, title: tmp6 };
-    const EmptyState2 = tmp11(1188).EmptyState;
+    const obj5 = { style: tmp.emptyState, Illustration: activity(8693).AppCrash, title: tmp6 };
+    const EmptyState2 = tmp11(1200).EmptyState;
     tmp19Result = tmp17(EmptyState2, obj5);
   } else if (0 === stateFromStores.length && tmp13) {
     tmp19Result = tmp17(closure_17, {});
@@ -841,20 +862,20 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
     let tmp17Result2;
     const obj6 = { children: tmp17(View, obj7) };
     obj7 = { style: tmp.searchAndShareContainer, children: tmp17(SearchField, obj8) };
-    obj8 = { size: "md", round: true, onChange: activity(9521).searchInviteSuggestions, placeholder: intl2.string(activity(1126).t.iI1gMg) };
-    SearchField = tmp11(6554).SearchField;
+    obj8 = { size: "md", round: true, onChange: activity(8691).searchInviteSuggestions, placeholder: intl2.string(activity(1126).t.iI1gMg) };
+    SearchField = tmp11(6730).SearchField;
     intl2 = tmp11(1126).intl;
     const items4 = [tmp17(View, obj6), ];
     const tmp19 = closure_15;
     const tmp20 = closure_14;
     if (0 === stateFromStores.length && !tmp13) {
       const obj9 = { style: tmp.emptyState, title: intl3.string(activity(1126).t.ojoWgX) };
-      const EmptyState = tmp11(1188).EmptyState;
+      const EmptyState = tmp11(1200).EmptyState;
       intl3 = tmp11(1126).intl;
       tmp17Result2 = tmp17(EmptyState, obj9);
     } else {
       const obj10 = { data: stateFromStores, error: tmp6, getSendState: callback, onInviteSent: callback2, onPressAvatar: callback1 };
-      tmp17Result2 = tmp17(tmp2(17210), obj10);
+      tmp17Result2 = tmp17(tmp2(17491), obj10);
     }
     const obj11 = { children: items4 };
     items4[1] = tmp17Result2;

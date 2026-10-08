@@ -1,20 +1,20 @@
-// Module ID: 14504
-// Function ID: 14505
+// Module ID: 14764
+// Function ID: 14765
 // Name: useMaybeFetchCollectiblesRecommendations
-// Dependencies: [19, 1377, 13024, 558, 576, 13025, 504, 14505, 2]
+// Dependencies: [19, 1389, 13302, 558, 576, 13303, 504, 14765, 2]
 
-// Module 14504 (useMaybeFetchCollectiblesRecommendations)
+// Module 14764 (useMaybeFetchCollectiblesRecommendations)
 import react from "react" /* 19 */;
-import CollectiblesRecommendationActionCreators from "CollectiblesRecommendationActionCreators" /* 14505 */;
-import UserStore from "UserStore" /* 1377 */;
-import CollectiblesRecommendationStore from "CollectiblesRecommendationStore" /* 13024 */;
+import CollectiblesRecommendationActionCreators from "CollectiblesRecommendationActionCreators" /* 14765 */;
+import UserStore from "UserStore" /* 1389 */;
+import CollectiblesRecommendationStore from "CollectiblesRecommendationStore" /* 13302 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;
 
 const useEffect = react.useEffect;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetchCollectiblesRecommendations() {
   let isEditProfileCollectiblesOrderingEnabled;
   let stateFromStores;
   let tmp10;
@@ -71,22 +71,24 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       stateFromStores1(tmp13, tmp14);
     }
   }
-  const fn3 = function h() {
-    const tmp = isEditProfileCollectiblesOrderingEnabled && null != stateFromStores && stateFromStores1;
-    if (tmp) {
-      const obj = CollectiblesRecommendationActionCreators;
-      const result = obj.maybeFetchCollectiblesRecommendations();
+  class F {
+    constructor() {
+      const tmp = isEditProfileCollectiblesOrderingEnabled && null != stateFromStores && stateFromStores1;
+      if (tmp) {
+        const obj = CollectiblesRecommendationActionCreators;
+        const result = obj.maybeFetchCollectiblesRecommendations();
+      }
     }
-  };
+  }
   const items2 = [isEditProfileCollectiblesOrderingEnabled, stateFromStores, stateFromStores1];
   cResult[4] = stateFromStores;
   cResult[5] = isEditProfileCollectiblesOrderingEnabled;
   cResult[6] = stateFromStores1;
-  cResult[7] = fn3;
+  cResult[7] = F;
   cResult[8] = items2;
   tmp14 = items2;
-  tmp13 = fn3;
-}) : (() => {
+  tmp13 = F;
+}) : (function useMaybeFetchCollectiblesRecommendations() {
   let isEditProfileCollectiblesOrderingEnabled;
   let stateFromStores;
   let obj = isEditProfileCollectiblesOrderingEnabled(stateFromStores[5]);

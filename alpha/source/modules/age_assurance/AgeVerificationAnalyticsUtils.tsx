@@ -1,14 +1,14 @@
-// Module ID: 8119
-// Function ID: 8120
+// Module ID: 5915
+// Function ID: 5916
 // Name: AgeVerificationAnalyticsUtils
-// Dependencies: [2051, 1085, 1252, 2, 8120]
+// Dependencies: [2063, 1085, 1264, 2, 5916]
 // Exports: trackAgeVerificationDmClicked, trackAgeVerificationModalClicked, trackAgeVerificationModalViewed, trackAgeVerificationToastViewed, trackNsfwSpaceWarningModalClicked, trackNsfwSpaceWarningModalViewed
 
-// Module 8119 (AgeVerificationAnalyticsUtils)
+// Module 5915 (AgeVerificationAnalyticsUtils)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import NsfwSpaceWarningModalType from "NsfwSpaceWarningModalType" /* 8120 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import NsfwSpaceWarningModalType from "NsfwSpaceWarningModalType" /* 5916 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

@@ -1,64 +1,80 @@
-// Module ID: 8405
-// Function ID: 8406
+// Module ID: 8902
+// Function ID: 8903
 // Name: GameProfileHorizontalScrollView
-// Dependencies: [19, 17, 21, 558, 576, 6147, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 6326, 2]
 
-// Module 8405 (GameProfileHorizontalScrollView)
+// Module 8902 (GameProfileHorizontalScrollView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6147 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6326 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let closure_2 = ["ref"];
 const ScrollView = react_native.ScrollView;
 const jsx = Fragment.jsx;
-const forwardRef = react.forwardRef;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
-  let first;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileHorizontalScrollView(ref) {
+  let tmp4;
+  let tmp5;
+  let tmp9;
   const obj = react2;
-  const cResult = obj.c(7);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { disallowInterruption: true };
-    cResult[0] = obj2;
-    first = obj2;
+  const cResult = obj.c(10);
+  if (cResult[0] !== ref) {
+    const tmp8 = _objectWithoutProperties(ref, closure_2);
+    cResult[0] = ref;
+    cResult[1] = tmp8;
+    cResult[2] = ref.ref;
+    tmp5 = ref;
+    tmp4 = tmp8;
   } else {
-    first = cResult[0];
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { disallowInterruption: true };
+    cResult[3] = obj2;
+    tmp9 = obj2;
+  } else {
+    tmp9 = cResult[3];
   }
   const tmpResult = LegacyBaseButton;
-  const nativeGesture = tmpResult.useNativeGesture(first);
-  if (cResult[1] === arg0) {
-    let tmp6;
-    if (cResult[2] === ref) {
-      tmp6 = cResult[3];
+  const nativeGesture = tmpResult.useNativeGesture(tmp9);
+  if (cResult[4] === tmp4) {
+    let tmp11;
+    if (cResult[5] === tmp5) {
+      tmp11 = cResult[6];
     }
-    if (cResult[4] === nativeGesture) {
-      let tmp9;
-      if (cResult[5] === tmp6) {
-        tmp9 = cResult[6];
+    if (cResult[7] === nativeGesture) {
+      let tmp14;
+      if (cResult[8] === tmp11) {
+        tmp14 = cResult[9];
       }
-      return tmp9;
+      return tmp14;
     }
-    const tmp11 = jsx(LegacyBaseButton.GestureDetector, { gesture: nativeGesture, children: tmp6 });
-    cResult[4] = nativeGesture;
-    cResult[5] = tmp6;
-    cResult[6] = tmp11;
-    tmp9 = tmp11;
+    const tmp16 = jsx(LegacyBaseButton.GestureDetector, { gesture: nativeGesture, children: tmp11 });
+    cResult[7] = nativeGesture;
+    cResult[8] = tmp11;
+    cResult[9] = tmp16;
+    tmp14 = tmp16;
   }
-  const merged = Object.assign(arg0);
-  const tmp8 = <ScrollView ref={arg1} horizontal nestedScrollEnabled />;
-  cResult[1] = arg0;
-  cResult[2] = ref;
-  cResult[3] = tmp8;
-  tmp6 = tmp8;
-}) : ((arg0, ref) => {
+  const merged = Object.assign(tmp4);
+  const tmp13 = <ScrollView ref={tmp5} horizontal nestedScrollEnabled />;
+  cResult[4] = tmp4;
+  cResult[5] = tmp5;
+  cResult[6] = tmp13;
+  tmp11 = tmp13;
+}) : (function GameProfileHorizontalScrollView(ref) {
+  ref = ref.ref;
+  const merged = Object.assign(ref, Object.assign({ ref: 0 }));
   const obj = LegacyBaseButton;
   const nativeGesture = obj.useNativeGesture({ disallowInterruption: true });
   const GestureDetector = LegacyBaseButton.GestureDetector;
-  const merged = Object.assign(arg0);
+  const merged1 = Object.assign(merged);
   return <GestureDetector gesture={nativeGesture}>{null}</GestureDetector>;
-}));
+});
 const result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileHorizontalScrollView.tsx");
 
-export default forwardRefResult;
+export default tmp3;

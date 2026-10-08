@@ -1,14 +1,14 @@
-// Module ID: 5600
-// Function ID: 5601
+// Module ID: 5373
+// Function ID: 5374
 // Name: Stack/Stack
-// Dependencies: [19, 17, 21, 4896, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 2]
 
-// Module 5600 (Stack/Stack)
+// Module 5373 (Stack/Stack)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let closure_4 = createStyles.createStyles((gap, arg1, alignItems, justifyContent
   }
   return { stack };
 });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Stack(arg0) {
   let align;
   let children;
   let direction;
@@ -78,7 +78,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp2Result.stack;
   cResult[2] = items;
   tmp4 = items;
-}) : ((spacing) => {
+}) : (function Stack(spacing) {
   let children;
   let onLayout;
   let style;

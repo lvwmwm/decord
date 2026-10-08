@@ -1,34 +1,33 @@
-// Module ID: 6674
-// Function ID: 6675
+// Module ID: 6851
+// Function ID: 6852
 // Name: GameIcon
-// Dependencies: [19, 17, 1379, 21, 4896, 587, 6675, 6676, 6677, 558, 576, 6678, 2]
+// Dependencies: [19, 17, 1391, 21, 5090, 587, 6852, 6853, 6854, 558, 576, 6855, 6164, 2]
 
-// Module 6674 (GameIcon)
+// Module 6851 (GameIcon)
+import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6675 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 6676 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 6677 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 6678 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6852 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 6853 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 6854 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 6855 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj;
 
-let c3;
-let closure_4;
 let obj4;
 let obj5;
 let size;
 let size1;
 let size2;
 let size3;
-({ Image: c3, View: closure_4 } = react_native);
+const View = react_native.View;
 const PremiumSubscriptionSKUs = PremiumConstants.PremiumSubscriptionSKUs;
 const jsx = Fragment.jsx;
 const GameIconSizes = { SIZE_24: "size_24", SMALL: "small", NORMAL: "normal", LARGE: "large" };
@@ -42,8 +41,8 @@ size2 = { width: obj2.normal, height: obj2.normal, borderRadius: nativeDefault.r
 size3 = { width: obj2.large, height: obj2.large, borderRadius: nativeDefault.radii.sm };
 obj4 = { borderRadius: nativeDefault.radii.none, tintColor: nativeDefault.colors.ICON_MUTED };
 obj5 = { borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden" };
-let closure_9 = createStyles(obj3);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_8 = createStyles(obj3);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameIcon(arg0) {
   let game;
   let skuId;
   let style;
@@ -53,7 +52,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (undefined === size) {
     size = obj.NORMAL;
   }
-  const tmp4 = closure_9();
+  const tmp4 = closure_8();
   if (cResult[0] === tmp4.large) {
     if (cResult[1] === tmp4.normal) {
       if (cResult[2] === tmp4.size24) {
@@ -90,13 +89,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                           }
                           return tmp30;
                         }
-                        const tmp33 = <React3 style={tmp24}>{tmp26}</React3>;
+                        const tmp33 = <View style={tmp24}>{tmp26}</View>;
                         cResult[27] = tmp24;
                         cResult[28] = tmp26;
                         cResult[29] = tmp33;
                         tmp30 = tmp33;
                       }
-                      const tmp29 = <_false style={tmp5[size]} source={tmp7} />;
+                      const tmp29 = jsx(FastImageDefault, { style: tmp5[size], source: tmp7 });
                       cResult[24] = tmp7;
                       cResult[25] = tmp5[size];
                       cResult[26] = tmp29;
@@ -184,14 +183,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-  const obj5 = { [closure_1_7.NORMAL]: tmp4.normal, [closure_1_7.SMALL]: tmp4.small, [closure_1_7.SIZE_24]: tmp4.size24, [closure_1_7.LARGE]: tmp4.large };
+  const obj5 = { [closure_1_6.NORMAL]: tmp4.normal, [closure_1_6.SMALL]: tmp4.small, [closure_1_6.SIZE_24]: tmp4.size24, [closure_1_6.LARGE]: tmp4.large };
   cResult[0] = tmp4.large;
   cResult[1] = tmp4.normal;
   cResult[2] = tmp4.size24;
   cResult[3] = tmp4.small;
   cResult[4] = obj5;
   tmp5 = obj5;
-}) : ((style) => {
+}) : (function GameIcon(style) {
   let game;
   let skuId;
   ({ game, skuId, size } = style);
@@ -199,8 +198,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     size = obj.NORMAL;
   }
   style = style.style;
-  const tmp2 = closure_9();
-  obj = { [closure_1_7.NORMAL]: tmp2.normal, [closure_1_7.SMALL]: tmp2.small, [closure_1_7.SIZE_24]: tmp2.size24, [closure_1_7.LARGE]: tmp2.large };
+  const tmp2 = closure_8();
+  obj = { [closure_1_6.NORMAL]: tmp2.normal, [closure_1_6.SMALL]: tmp2.small, [closure_1_6.SIZE_24]: tmp2.size24, [closure_1_6.LARGE]: tmp2.large };
   const items = [tmp2.gameIcon, obj[size], style];
   let tmp3;
   if (null != skuId) {
@@ -233,12 +232,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     items.push(tmp2.placeholder);
   }
   const items1 = [items, tmp2.entityWrapper];
-  return <React3 style={items1}>{null}</React3>;
+  return <View style={items1}>{null}</View>;
 });
-tmp5.Sizes = GameIconSizes;
+tmp4.Sizes = GameIconSizes;
 size = size_mod;
 const result = size.fileFinishedImporting("modules/game_detection/native/GameIcon.tsx");
 
-export default tmp5;
+export default tmp4;
 export { GameIconSizes };
 export const GameIconImageSize = obj2;

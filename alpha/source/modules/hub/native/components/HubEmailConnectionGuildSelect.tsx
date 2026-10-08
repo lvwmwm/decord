@@ -1,26 +1,26 @@
-// Module ID: 12421
-// Function ID: 12422
+// Module ID: 12517
+// Function ID: 12518
 // Name: HubEmailConnectionGuildSelect
-// Dependencies: [5, 32, 19, 17, 12400, 21, 4896, 587, 558, 576, 2066, 5978, 8924, 1126, 4892, 1618, 5601, 1188, 1490, 6890, 6555, 12414, 5319, 12409, 2]
+// Dependencies: [5, 32, 19, 17, 12496, 21, 5090, 587, 558, 576, 2078, 6161, 8555, 1126, 5086, 1630, 5375, 1200, 1502, 7079, 6731, 12510, 5631, 12505, 2]
 // Exports: default
 
-// Module 12421 (HubEmailConnectionGuildSelect)
+// Module 12517 (HubEmailConnectionGuildSelect)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2066 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import GuildIconDefault from "GuildIcon" /* 5978 */;
-import Form from "Form" /* 8924 */;
-import HubConstants from "HubConstants" /* 12400 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2078 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import GuildIconDefault from "GuildIcon" /* 6161 */;
+import Form from "Form" /* 8555 */;
+import HubConstants from "HubConstants" /* 12496 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp6;
-const native = tmp6(1188);
+const native = tmp6(1200);
 let react = react_mod;
 ({ View: metroRequire, FlatList: metroImportDefault } = react_native);
 const HubEmailConnectionSteps = HubConstants.HubEmailConnectionSteps;
@@ -49,7 +49,7 @@ obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, position: "a
 obj5 = { color: nativeDefault.unsafe_rawColors.RED_400, alignSelf: "center", fontSize: 14, marginVertical: 8 };
 let closure_11 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConnectionGuildSelectRow(arg0) {
   let guildInfo;
   let loading;
   let signup;
@@ -115,7 +115,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp5;
   cResult[4] = tmp12;
   tmp11 = tmp12;
-}) : ((guildInfo) => {
+}) : (function HubEmailConnectionGuildSelectRow(guildInfo) {
   let fromGuildBasic;
   let loading;
   let obj2;
@@ -137,7 +137,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_12 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConnectionGuildSelectHeader() {
   let first;
   let header;
   let title;
@@ -175,7 +175,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[4] = tmp7;
   cResult[5] = tmp11;
   tmp10 = tmp11;
-}) : (() => {
+}) : (function HubEmailConnectionGuildSelectHeader() {
   let Text;
   let intl;
   let obj2;
@@ -187,7 +187,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return React4(metroRequire, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConnectionGuildSelectFooter(arg0) {
   let anyErrorMessage;
   let errors;
   let items;
@@ -267,7 +267,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (tmp16Result) {
         const obj5 = { style: tmp4.error, children: anyErrorMessage };
         anyErrorMessage = undefined;
-        const LegacyText = tmp(1188).LegacyText;
+        const LegacyText = tmp(1200).LegacyText;
         const tmp16 = React4;
         if (errors != null) {
           anyErrorMessage = errors.getAnyErrorMessage();
@@ -291,7 +291,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp5;
   cResult[4] = items1;
   tmp6 = items1;
-}) : ((onFooterButtonPressed) => {
+}) : (function HubEmailConnectionGuildSelectFooter(onFooterButtonPressed) {
   let anyErrorMessage;
   let errors;
   let intl;

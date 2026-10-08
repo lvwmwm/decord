@@ -1,36 +1,36 @@
-// Module ID: 9711
-// Function ID: 9712
+// Module ID: 10916
+// Function ID: 10917
 // Name: FocusedExpandedControls
-// Dependencies: [19, 17, 4918, 502, 4921, 21, 4896, 587, 558, 576, 1188, 9712, 9713, 8924, 504, 9714, 1126, 1369, 9679, 9334, 9344, 9644, 9715, 9700, 9716, 9717, 2]
+// Dependencies: [19, 17, 5893, 502, 5115, 21, 5090, 587, 558, 576, 1200, 10917, 10918, 8555, 504, 10919, 1126, 1381, 10868, 8759, 8766, 10839, 10920, 10889, 10921, 10922, 2]
 
-// Module 9711 (FocusedExpandedControls)
+// Module 10916 (FocusedExpandedControls)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import Constants from "Constants" /* 4921 */;
-import Form from "Form" /* 8924 */;
-import CallsUtils from "CallsUtils" /* 9334 */;
-import showAudioOutputSelector from "showAudioOutputSelector" /* 9344 */;
-import useScreenshareUtilsDefault from "useScreenshareUtils" /* 9644 */;
-import VolumeSliderDefault from "VolumeSlider" /* 9679 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 9700 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9712 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9713 */;
-import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 9714 */;
-import useDeafStatesDefault from "useDeafStates" /* 9715 */;
+import native from "native" /* 1200 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import Constants from "Constants" /* 5115 */;
+import Form from "Form" /* 8555 */;
+import CallsUtils from "CallsUtils" /* 8759 */;
+import showAudioOutputSelector from "showAudioOutputSelector" /* 8766 */;
+import useScreenshareUtilsDefault from "useScreenshareUtils" /* 10839 */;
+import VolumeSliderDefault from "VolumeSlider" /* 10868 */;
+import VoiceActionUtils from "VoiceActionUtils" /* 10889 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10917 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10918 */;
+import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 10919 */;
+import useDeafStatesDefault from "useDeafStates" /* 10920 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4918 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5893 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channelId, lastActiveStream;
+let lastActiveStream;
 
 let c10;
 let c3;
@@ -49,7 +49,7 @@ createStyles = createStyles.createStyles;
 obj3 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 let closure_11 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((iconSource) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExpandedControlItemIcon(iconSource) {
   let items;
   const obj = react2;
   const cResult = obj.c(11);
@@ -107,14 +107,14 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((iconSource) =>
       return tmp8;
     }
     const obj5 = { size: native.Icon.Sizes.MEDIUM, source: iconSource, style: tmp4.formTintColor, disableColor: true };
-    const Icon = tmp(1188).Icon;
+    const Icon = tmp(1200).Icon;
     const tmp7 = metroImportAll(Icon, obj5);
     cResult[0] = iconSource;
     cResult[1] = tmp4.formTintColor;
     cResult[2] = tmp7;
     tmp5 = tmp7;
   }
-}) : ((iconSource) => {
+}) : (function ExpandedControlItemIcon(iconSource) {
   let items;
   iconSource = iconSource.iconSource;
   const showIconSparkle = iconSource.showIconSparkle;
@@ -139,7 +139,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((iconSource) =>
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExpandedControlItem(arg0) {
   let disabled;
   let iconSource;
   let label;
@@ -164,7 +164,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj2 = { tintColor: nativeDefault.unsafe_rawColors.BRAND_500, renderIosBackground: true, value: switchValue, disabled, onValueChange: onSwitchValueChange };
-    const FormSwitch = tmp(8924).FormSwitch;
+    const FormSwitch = tmp(8555).FormSwitch;
     const tmp10 = metroImportAll(FormSwitch, obj2);
     cResult[0] = disabled;
     cResult[1] = onSwitchValueChange;
@@ -217,7 +217,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = undefined !== showIconSparkle && showIconSparkle;
   cResult[6] = tmp12;
   tmp11 = tmp12;
-}) : ((iconSource) => {
+}) : (function ExpandedControlItem(iconSource) {
   let disabled;
   let label;
   let obj3;
@@ -249,7 +249,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroImportAll(FormRow, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamVolumeItem() {
   let effectiveVolume;
   let handleVolumeChange;
   let id;
@@ -359,7 +359,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       let tmp31 = null;
       if (null != stateFromStores) {
         const obj4 = { label: tmp26 };
-        tmp31 = metroImportAll(tmp(8924).FormRow, obj4);
+        tmp31 = metroImportAll(tmp(8555).FormRow, obj4);
       }
       cResult[14] = stateFromStores;
       cResult[15] = tmp26;
@@ -381,7 +381,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[9] = handleVolumeChange;
   cResult[10] = tmp25;
   tmp23 = tmp25;
-}) : (() => {
+}) : (function StreamVolumeItem() {
   let effectiveVolume;
   let handleVolumeChange;
   let id;
@@ -433,12 +433,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return tmp9Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AudioRouteButton(channelId) {
   let obj = channelId(576);
   const cResult = obj.c(7);
   channelId = channelId.channelId;
   const isConnectedToVoiceChannel = channelId.isConnectedToVoiceChannel;
-  const obj2 = channelId(9334);
+  const obj2 = channelId(8759);
   const routeSource = obj2.useMaskedSpeakerStates().routeSource;
   if (cResult[0] === channelId) {
     let tmp4;
@@ -477,7 +477,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[1] = isConnectedToVoiceChannel;
   cResult[2] = fn;
   tmp4 = fn;
-}) : ((arg0) => {
+}) : (function AudioRouteButton(arg0) {
   let intl;
   ({ channelId: require, isConnectedToVoiceChannel: importDefault } = arg0);
   let obj = CallsUtils;
@@ -493,7 +493,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   return closure_8(closure_13, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScreenshareButton(arg0) {
   let channel;
   let disabled;
   let imgSource;
@@ -527,7 +527,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = text;
   cResult[4] = tmp5;
   tmp4 = tmp5;
-}) : ((arg0) => {
+}) : (function ScreenshareButton(arg0) {
   let channel;
   let disabled;
   let imgSource;
@@ -546,7 +546,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp2(tmp3, { disabled: disabled2, onPress, iconSource, label });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeafenButton(disabled) {
   let tmp10;
   let tmp7;
   const obj = react2;
@@ -569,7 +569,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
     tmp7 = cResult[1];
   }
   const onPress = tmp7.onPress;
-  const tmp5Result = tmp5(tmp7.deaf ? 9716 : 9717);
+  const tmp5Result = tmp5(tmp7.deaf ? 10921 : 10922);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t.wjcRFX);
@@ -593,7 +593,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
   cResult[5] = tmp5Result;
   cResult[6] = tmp13;
   tmp12 = tmp13;
-}) : ((disabled) => {
+}) : (function DeafenButton(disabled) {
   let intl;
   let flag = disabled.disabled;
   const channel = disabled.channel;
@@ -603,7 +603,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
   const tmp3 = useDeafStatesDefault(channel);
   const obj = VoiceActionUtils;
   const deafHandler = obj.createDeafHandler(tmp3);
-  const obj2 = { disabled: flag, onPress: deafHandler.onPress, iconSource: importDefault(deafHandler.deaf ? 9716 : 9717), label: intl.string(intl3.t.wjcRFX) };
+  const obj2 = { disabled: flag, onPress: deafHandler.onPress, iconSource: importDefault(deafHandler.deaf ? 10921 : 10922), label: intl.string(intl3.t.wjcRFX) };
   intl = tmp4(1126).intl;
   return metroImportAll(closure_13, obj2);
 });

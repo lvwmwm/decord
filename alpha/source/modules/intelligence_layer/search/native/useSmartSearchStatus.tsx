@@ -1,19 +1,19 @@
-// Module ID: 16823
-// Function ID: 16824
+// Module ID: 17102
+// Function ID: 17103
 // Name: useSmartSearchStatus
-// Dependencies: [11984, 558, 576, 11985, 11983, 504, 2]
+// Dependencies: [12057, 558, 576, 12058, 12056, 504, 2]
 
-// Module 16823 (useSmartSearchStatus)
-import SmartSearchUtils from "SmartSearchUtils" /* 11983 */;
-import SmartSearchTypes from "SmartSearchTypes" /* 11985 */;
-import SmartSearchResultsStore from "SmartSearchResultsStore" /* 11984 */;
+// Module 17102 (useSmartSearchStatus)
+import SmartSearchUtils from "SmartSearchUtils" /* 12056 */;
+import SmartSearchTypes from "SmartSearchTypes" /* 12058 */;
+import SmartSearchResultsStore from "SmartSearchResultsStore" /* 12057 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSmartSearchStatus(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -52,7 +52,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresObject(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useSmartSearchStatus(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");

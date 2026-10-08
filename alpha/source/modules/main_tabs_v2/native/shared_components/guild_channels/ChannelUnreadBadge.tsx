@@ -1,35 +1,34 @@
-// Module ID: 15999
-// Function ID: 16000
+// Module ID: 16259
+// Function ID: 16260
 // Name: ChannelUnreadBadge
-// Dependencies: [19, 17, 11711, 5078, 21, 4896, 558, 11712, 5609, 7514, 2]
+// Dependencies: [19, 17, 11776, 5972, 21, 5090, 558, 11777, 5382, 9237, 2]
 
-// Module 15999 (ChannelUnreadBadge)
+// Module 16259 (ChannelUnreadBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ReadStateConstants from "ReadStateConstants" /* 5078 */;
-import useFontScale from "useFontScale" /* 5609 */;
-import shared_components_Badge from "shared_components/Badge" /* 7514 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11711 */;
-import ChannelListLayout from "ChannelListLayout" /* 11712 */;
+import useFontScale from "useFontScale" /* 5382 */;
+import ReadStateConstants from "ReadStateConstants" /* 5972 */;
+import shared_components_Badge from "shared_components/Badge" /* 9237 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11776 */;
+import ChannelListLayout from "ChannelListLayout" /* 11777 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const shared_components_BadgeDefault = shared_components_Badge;
-let panelVariant;
 
 const View = react_native.View;
 const MUTED_OPACITY_CONTENT = RedesignChannelListConstants.MUTED_OPACITY_CONTENT;
 const UnreadSetting = ReadStateConstants.UnreadSetting;
 const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ unreadBadge: { flexGrow: 0, flexShrink: 0, position: "absolute" }, unreadBadgePanel: { marginLeft: -16 } });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((panelVariant) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelUnreadBadge(panelVariant) {
   let isThread;
-  let items1;
   let launchpad;
   let layout;
   let muted;
+  let obj4;
   let resolvedUnreadSetting;
   let unread;
   panelVariant = panelVariant.panelVariant;
@@ -57,7 +56,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((p
     items[2] = isThread ? unreadBadge.positionThread : unreadBadge.position;
     const tmp3Result = ChannelListLayout;
     items[3] = tmp3Result.makeSizeStyle(layoutStyles.unreadBadge.size);
-    ({ classic: tmp, size: shared_components_Badge.CHANNEL_BADGE_SIZE * Math.max(tmp7, 1), badgeStyle: items1 });
+    ({ classic: tmp, size: shared_components_Badge.CHANNEL_BADGE_SIZE * Math.max(tmp7, 1), badgeStyle: obj4 });
     const _Math = Math;
     shared_components_BadgeDefault;
     if (resolvedUnreadSetting !== UnreadSetting.ALL_MESSAGES) {
@@ -65,17 +64,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((p
     } else {
       num2 = 1;
     }
-    items1 = [{ opacity: num2 }];
-    const obj4 = { opacity: num2 };
+    obj4 = { opacity: num2 };
     tmp9Result = tmp9(tmp10, obj2);
   }
   return tmp9Result;
-}) : ((panelVariant) => {
+}) : (function ChannelUnreadBadge(panelVariant) {
   let isThread;
-  let items1;
   let launchpad;
   let layout;
   let muted;
+  let obj4;
   let resolvedUnreadSetting;
   let unread;
   let flag = panelVariant.panelVariant;
@@ -102,7 +100,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((p
     items[2] = isThread ? unreadBadge.positionThread : unreadBadge.position;
     const tmp2Result = ChannelListLayout;
     items[3] = tmp2Result.makeSizeStyle(layoutStyles.unreadBadge.size);
-    ({ classic: flag, size: shared_components_Badge.CHANNEL_BADGE_SIZE * Math.max(tmp6, 1), badgeStyle: items1 });
+    ({ classic: flag, size: shared_components_Badge.CHANNEL_BADGE_SIZE * Math.max(tmp6, 1), badgeStyle: obj4 });
     const _Math = Math;
     shared_components_BadgeDefault;
     if (resolvedUnreadSetting !== UnreadSetting.ALL_MESSAGES) {
@@ -110,8 +108,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((p
     } else {
       num2 = 1;
     }
-    items1 = [{ opacity: num2 }];
-    const obj4 = { opacity: num2 };
+    obj4 = { opacity: num2 };
     tmp8Result = tmp8(tmp9, obj2);
   }
   return tmp8Result;

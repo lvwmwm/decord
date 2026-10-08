@@ -1,14 +1,14 @@
-// Module ID: 16749
-// Function ID: 16750
+// Module ID: 17024
+// Function ID: 17025
 // Name: ConjureSecretRequestState
-// Dependencies: [32, 19, 12924, 1126, 3753, 558, 576, 2]
+// Dependencies: [32, 19, 13073, 1126, 3827, 558, 576, 2]
 // Exports: secretRequestStatuses
 
-// Module 16749 (ConjureSecretRequestState)
+// Module 17024 (ConjureSecretRequestState)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import _modDef3753 from "module_3753" /* 3753 */;
-import ConjureChatStore from "ConjureChatStore" /* 12924 */;
+import _modDef3827 from "module_3827" /* 3827 */;
+import ConjureChatStore from "ConjureChatStore" /* 13073 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -20,15 +20,15 @@ function isSecretsSavedMessage(content) {
   const str = content.content;
   const trimmed = str.trim();
   const intl = intl3.intl;
-  let tmp5 = trimmed === intl.string(_modDef3753.UGqnoV);
+  let tmp5 = trimmed === intl.string(_modDef3827.UGqnoV);
   if (!tmp5) {
     const intl2 = intl3.intl;
-    tmp5 = trimmed === intl2.string(_modDef3753.sMQt5O);
+    tmp5 = trimmed === intl2.string(_modDef3827.sMQt5O);
   }
   return tmp5;
 }
 const turnSettled = ConjureChatStore.turnSettled;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cardId, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecretRequestStatusChanged(cardId, arg1) {
   let flag;
   let tmp6;
   let tmp7;
@@ -71,7 +71,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cardId, arg1) => {
   cResult[1] = arg1;
   cResult[2] = fn;
   tmp2 = fn;
-}) : ((cardId, arg1) => {
+}) : (function useSecretRequestStatusChanged(cardId, arg1) {
   let flag;
   let tmp2;
   let tmp3;

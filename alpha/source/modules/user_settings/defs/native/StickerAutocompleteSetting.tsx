@@ -1,14 +1,14 @@
-// Module ID: 15307
-// Function ID: 15308
+// Module ID: 15569
+// Function ID: 15570
 // Name: StickerAutocompleteSetting
-// Dependencies: [7645, 11142, 1126, 2028, 15300, 2]
+// Dependencies: [7966, 11262, 1126, 2040, 15562, 2]
 
-// Module 15307 (StickerAutocompleteSetting)
+// Module 15569 (StickerAutocompleteSetting)
 import intl2 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import UserSettingsText from "UserSettingsText" /* 15300 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import UserSettingsText from "UserSettingsText" /* 15562 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

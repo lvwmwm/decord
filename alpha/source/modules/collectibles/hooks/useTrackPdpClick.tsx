@@ -1,20 +1,20 @@
-// Module ID: 12984
-// Function ID: 12985
+// Module ID: 13262
+// Function ID: 13263
 // Name: useTrackPdpClick
-// Dependencies: [19, 1085, 558, 576, 8454, 7860, 7078, 1252, 2]
+// Dependencies: [19, 1085, 558, 576, 8940, 8278, 7264, 1264, 2]
 
-// Module 12984 (useTrackPdpClick)
+// Module 13262 (useTrackPdpClick)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7078 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7264 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let skuId, tmp3, trackResult;
+let tmp3, trackResult;
 
 const AnalyticEvents = Constants.AnalyticEvents;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackPdpClick(skuId) {
   let analyticsLocations;
   let tmp5;
   let tmp = skuId;
@@ -82,7 +82,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   cResult[7] = skuId;
   cResult[8] = I;
   tmp7 = I;
-}) : ((skuId) => {
+}) : (function useTrackPdpClick(skuId) {
   skuId = skuId.skuId;
   const productSkuIds = skuId.productSkuIds;
   const analyticsLocations = skuId.analyticsLocations;

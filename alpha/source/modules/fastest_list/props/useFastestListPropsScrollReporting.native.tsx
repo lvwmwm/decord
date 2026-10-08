@@ -1,20 +1,18 @@
-// Module ID: 6570
-// Function ID: 6571
+// Module ID: 6746
+// Function ID: 6747
 // Name: useFastestListPropsScrollReporting
-// Dependencies: [558, 576, 4618, 2]
+// Dependencies: [558, 576, 4810, 2]
 
-// Module 6570 (useFastestListPropsScrollReporting)
+// Module 6746 (useFastestListPropsScrollReporting)
 import react from "react" /* 576 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let scrollReporting;
-
 let tmp;
-const ReanimatedRexport = tmp(4618);
+const ReanimatedRexport = tmp(4810);
 const __initData = { code: "function useFastestListPropsScrollReportingNativeTsx1(event){const{scrollPosition,horizontal}=this.__closure;if(scrollPosition!=null){scrollPosition.set(horizontal?event.contentOffset.x:event.contentOffset.y);}}" };
 const __initData2 = { code: "function useFastestListPropsScrollReportingNativeTsx2(event){const{scrollPosition,horizontal}=this.__closure;if(scrollPosition!=null){scrollPosition.set(horizontal?event.contentOffset.x:event.contentOffset.y);}}" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollReporting, horizontal) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFastestListPropsScrollReporting(scrollReporting, horizontal) {
   let fn;
   let closure_0 = horizontal;
   let obj = react;
@@ -77,7 +75,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollReporting, h
     cResult[7] = obj6;
     tmp6 = obj6;
   }
-}) : ((scrollReporting, horizontal) => {
+}) : (function useFastestListPropsScrollReporting(scrollReporting, horizontal) {
   let closure_0 = horizontal;
   let scrollPosition;
   if ("animatedScrollPosition" === scrollReporting.scrollReporting) {

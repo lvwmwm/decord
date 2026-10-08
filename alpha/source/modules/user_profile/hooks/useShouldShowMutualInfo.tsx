@@ -1,20 +1,18 @@
-// Module ID: 12832
-// Function ID: 12833
+// Module ID: 12979
+// Function ID: 12980
 // Name: useShouldShowMutualInfo
-// Dependencies: [1377, 558, 576, 504, 12833, 2]
+// Dependencies: [1389, 558, 576, 504, 12980, 2]
 
-// Module 12832 (useShouldShowMutualInfo)
+// Module 12979 (useShouldShowMutualInfo)
 import react from "react" /* 576 */;
-import useIsUserProfileObfuscatedDefault from "useIsUserProfileObfuscated" /* 12833 */;
-import UserStore from "UserStore" /* 1377 */;
+import useIsUserProfileObfuscatedDefault from "useIsUserProfileObfuscated" /* 12980 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let id;
-
 let tmp;
 const get_initialized = tmp(504);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowMutualInfo(id) {
   let currentUser;
   let tmp4;
   let tmp5;
@@ -40,7 +38,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     id = stateFromStores.id;
   }
   return id !== id.id && !tmp8;
-}) : ((id) => {
+}) : (function useShouldShowMutualInfo(id) {
   let currentUser;
   const items = [UserStore];
   const obj = get_initialized;

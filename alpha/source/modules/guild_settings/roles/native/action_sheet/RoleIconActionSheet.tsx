@@ -1,21 +1,21 @@
-// Module ID: 17842
-// Function ID: 17843
+// Module ID: 18129
+// Function ID: 18130
 // Name: RoleIconActionSheet
-// Dependencies: [5, 19, 17827, 1085, 1380, 21, 558, 576, 504, 4860, 7287, 1481, 17843, 4573, 1126, 17839, 9879, 6651, 4892, 6000, 6708, 6081, 2]
+// Dependencies: [5, 19, 18114, 1085, 1392, 21, 558, 576, 504, 5054, 7741, 1493, 18130, 4765, 1126, 18126, 9359, 6828, 5086, 6184, 6885, 6267, 2]
 
-// Module 17842 (RoleIconActionSheet)
+// Module 18129 (RoleIconActionSheet)
 import Constants from "Constants" /* 1085 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 17839 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 18126 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 17827 */;
+import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 18114 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let _require, c3, c4, c7, c8, closure_0;
+let c3, c4, c7, c8, closure_0;
 
 let metroImportAll;
 let metroImportDefault;
@@ -23,7 +23,7 @@ const UPLOAD_SMALL_SIZE = Constants.UPLOAD_SMALL_SIZE;
 const EmojiIntention = EmojiConstants.EmojiIntention;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = ["image/png", "image/jpeg"];
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIconActionSheet(guildId) {
   let first;
   let intl;
   let intl2;
@@ -32,6 +32,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let items3;
   let obj5;
   let obj7;
+  let tmp12;
   let tmp6;
   let tmp7;
   let tmp = guildId;
@@ -113,7 +114,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         return tmp3;
       }
     }
-    _require = _asyncToGenerator(async (arg0, value) => {
+    guildId = _asyncToGenerator(async (arg0, value) => {
       let obj8;
       if (c4 === 2) {
         c4 = 3;
@@ -222,13 +223,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
   }
   if (cResult[6] === guildId) {
-    let tmp12;
-    let tmp14;
+    let tmp13;
+    let tmp15;
+    let tmp18;
     let tmp17;
-    let tmp16;
-    let tmp20;
-    let tmp22;
-    let tmp24;
+    let tmp23;
     class I {
       constructor() {
         const role = GuildSettingsRolesStore.getRole(roleId);
@@ -248,86 +247,156 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
     }
     if (cResult[9] !== roleId) {
-      class T {
+      class I {
         constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet();
-          const obj2 = GuildSettingsRolesActionCreators;
-          obj2.updateRoleIcon(roleId, null, null);
+          const role = GuildSettingsRolesStore.getRole(roleId);
+          let icon;
+          if (role != null) {
+            icon = role.icon;
+          }
+          let tmp3 = null != icon;
+          if (!tmp3) {
+            let unicodeEmoji;
+            if (role != null) {
+              unicodeEmoji = role.unicodeEmoji;
+            }
+            tmp3 = null != unicodeEmoji;
+          }
+          return tmp3;
         }
       }
       cResult[9] = roleId;
-      cResult[10] = T;
+      cResult[10] = tmp12;
     } else {
-      class T {
+      class I {
         constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet();
-          const obj2 = GuildSettingsRolesActionCreators;
-          obj2.updateRoleIcon(roleId, null, null);
+          const role = GuildSettingsRolesStore.getRole(roleId);
+          let icon;
+          if (role != null) {
+            icon = role.icon;
+          }
+          let tmp3 = null != icon;
+          if (!tmp3) {
+            let unicodeEmoji;
+            if (role != null) {
+              unicodeEmoji = role.unicodeEmoji;
+            }
+            tmp3 = null != unicodeEmoji;
+          }
+          return tmp3;
         }
       }
     }
     const _Symbol = Symbol;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      class T {
+      class I {
         constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet();
-          const obj2 = GuildSettingsRolesActionCreators;
-          obj2.updateRoleIcon(roleId, null, null);
+          const role = GuildSettingsRolesStore.getRole(roleId);
+          let icon;
+          if (role != null) {
+            icon = role.icon;
+          }
+          let tmp3 = null != icon;
+          if (!tmp3) {
+            let unicodeEmoji;
+            if (role != null) {
+              unicodeEmoji = role.unicodeEmoji;
+            }
+            tmp3 = null != unicodeEmoji;
+          }
+          return tmp3;
         }
       }
       let obj2 = { title: intl.string(tmp(1126).t.B9grJw) };
-      const BottomSheetTitleHeader = tmp(6651).BottomSheetTitleHeader;
+      const BottomSheetTitleHeader = tmp(6828).BottomSheetTitleHeader;
       intl = tmp(1126).intl;
-      const tmp13 = closure_7(BottomSheetTitleHeader, obj2);
-      cResult[11] = tmp13;
-      tmp12 = tmp13;
+      const tmp14 = closure_7(BottomSheetTitleHeader, obj2);
+      cResult[11] = tmp14;
+      tmp13 = tmp14;
     } else {
-      class T {
+      class I {
         constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet();
-          const obj2 = GuildSettingsRolesActionCreators;
-          obj2.updateRoleIcon(roleId, null, null);
+          const role = GuildSettingsRolesStore.getRole(roleId);
+          let icon;
+          if (role != null) {
+            icon = role.icon;
+          }
+          let tmp3 = null != icon;
+          if (!tmp3) {
+            let unicodeEmoji;
+            if (role != null) {
+              unicodeEmoji = role.unicodeEmoji;
+            }
+            tmp3 = null != unicodeEmoji;
+          }
+          return tmp3;
         }
       }
     }
     const _Symbol2 = Symbol;
     if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-      class T {
+      class I {
         constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet();
-          const obj2 = GuildSettingsRolesActionCreators;
-          obj2.updateRoleIcon(roleId, null, null);
+          const role = GuildSettingsRolesStore.getRole(roleId);
+          let icon;
+          if (role != null) {
+            icon = role.icon;
+          }
+          let tmp3 = null != icon;
+          if (!tmp3) {
+            let unicodeEmoji;
+            if (role != null) {
+              unicodeEmoji = role.unicodeEmoji;
+            }
+            tmp3 = null != unicodeEmoji;
+          }
+          return tmp3;
         }
       }
       let obj3 = { variant: "text-sm/medium", color: "text-muted", children: intl2.string(tmp(1126).t.I3YQeV) };
-      const Text = tmp(4892).Text;
+      const Text = tmp(5086).Text;
       intl2 = tmp(1126).intl;
-      const tmp15 = closure_7(Text, obj3);
-      cResult[12] = tmp15;
-      tmp14 = tmp15;
+      const tmp16 = closure_7(Text, obj3);
+      cResult[12] = tmp16;
+      tmp15 = tmp16;
     } else {
-      class T {
+      class I {
         constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet();
-          const obj2 = GuildSettingsRolesActionCreators;
-          obj2.updateRoleIcon(roleId, null, null);
+          const role = GuildSettingsRolesStore.getRole(roleId);
+          let icon;
+          if (role != null) {
+            icon = role.icon;
+          }
+          let tmp3 = null != icon;
+          if (!tmp3) {
+            let unicodeEmoji;
+            if (role != null) {
+              unicodeEmoji = role.unicodeEmoji;
+            }
+            tmp3 = null != unicodeEmoji;
+          }
+          return tmp3;
         }
       }
     }
     const _Symbol3 = Symbol;
     if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-      class T {
+      class I {
         constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet();
-          const obj2 = GuildSettingsRolesActionCreators;
-          obj2.updateRoleIcon(roleId, null, null);
+          const role = GuildSettingsRolesStore.getRole(roleId);
+          let icon;
+          if (role != null) {
+            icon = role.icon;
+          }
+          let tmp3 = null != icon;
+          if (!tmp3) {
+            let unicodeEmoji;
+            if (role != null) {
+              unicodeEmoji = role.unicodeEmoji;
+            }
+            tmp3 = null != unicodeEmoji;
+          }
+          return tmp3;
         }
       }
       const stringResult = obj5.string(tmp(1126).t.royWSB);
@@ -335,147 +404,246 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       const stringResult1 = intl3.string(tmp(1126).t["mz++Qq"]);
       cResult[13] = stringResult1;
       cResult[14] = stringResult;
-      tmp17 = stringResult;
-      tmp16 = stringResult1;
+      tmp18 = stringResult;
+      tmp17 = stringResult1;
     } else {
-      class T {
+      class I {
         constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet();
-          const obj2 = GuildSettingsRolesActionCreators;
-          obj2.updateRoleIcon(roleId, null, null);
+          const role = GuildSettingsRolesStore.getRole(roleId);
+          let icon;
+          if (role != null) {
+            icon = role.icon;
+          }
+          let tmp3 = null != icon;
+          if (!tmp3) {
+            let unicodeEmoji;
+            if (role != null) {
+              unicodeEmoji = role.unicodeEmoji;
+            }
+            tmp3 = null != unicodeEmoji;
+          }
+          return tmp3;
         }
       }
-      tmp17 = cResult[14];
+      tmp18 = cResult[14];
     }
     if (cResult[15] !== tmp9) {
-      class T {
+      class I {
         constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet();
-          const obj2 = GuildSettingsRolesActionCreators;
-          obj2.updateRoleIcon(roleId, null, null);
+          const role = GuildSettingsRolesStore.getRole(roleId);
+          let icon;
+          if (role != null) {
+            icon = role.icon;
+          }
+          let tmp3 = null != icon;
+          if (!tmp3) {
+            let unicodeEmoji;
+            if (role != null) {
+              unicodeEmoji = role.unicodeEmoji;
+            }
+            tmp3 = null != unicodeEmoji;
+          }
+          return tmp3;
         }
       }
-      let obj4 = { label: tmp17, subLabel: tmp16, onPress: tmp9 };
-      const tmp21 = closure_7(tmp(6000).TableRow, obj4);
+      let obj4 = { label: tmp18, subLabel: tmp17, onPress: tmp9 };
+      const tmp22 = closure_7(tmp(6184).TableRow, obj4);
       cResult[15] = tmp9;
-      cResult[16] = tmp21;
-      tmp20 = tmp21;
+      cResult[16] = tmp22;
     } else {
-      class T {
+      class I {
         constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet();
-          const obj2 = GuildSettingsRolesActionCreators;
-          obj2.updateRoleIcon(roleId, null, null);
+          const role = GuildSettingsRolesStore.getRole(roleId);
+          let icon;
+          if (role != null) {
+            icon = role.icon;
+          }
+          let tmp3 = null != icon;
+          if (!tmp3) {
+            let unicodeEmoji;
+            if (role != null) {
+              unicodeEmoji = role.unicodeEmoji;
+            }
+            tmp3 = null != unicodeEmoji;
+          }
+          return tmp3;
         }
       }
     }
     const _Symbol4 = Symbol;
     if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-      class T {
+      class I {
         constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet();
-          const obj2 = GuildSettingsRolesActionCreators;
-          obj2.updateRoleIcon(roleId, null, null);
+          const role = GuildSettingsRolesStore.getRole(roleId);
+          let icon;
+          if (role != null) {
+            icon = role.icon;
+          }
+          let tmp3 = null != icon;
+          if (!tmp3) {
+            let unicodeEmoji;
+            if (role != null) {
+              unicodeEmoji = role.unicodeEmoji;
+            }
+            tmp3 = null != unicodeEmoji;
+          }
+          return tmp3;
         }
       }
       const stringResult2 = obj7.string(tmp(1126).t["/Ny2wZ"]);
       cResult[17] = stringResult2;
-      tmp22 = stringResult2;
+      tmp23 = stringResult2;
     } else {
-      class T {
+      class I {
         constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet();
-          const obj2 = GuildSettingsRolesActionCreators;
-          obj2.updateRoleIcon(roleId, null, null);
+          const role = GuildSettingsRolesStore.getRole(roleId);
+          let icon;
+          if (role != null) {
+            icon = role.icon;
+          }
+          let tmp3 = null != icon;
+          if (!tmp3) {
+            let unicodeEmoji;
+            if (role != null) {
+              unicodeEmoji = role.unicodeEmoji;
+            }
+            tmp3 = null != unicodeEmoji;
+          }
+          return tmp3;
         }
       }
     }
     if (cResult[18] !== tmp10) {
-      class T {
+      class I {
         constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet();
-          const obj2 = GuildSettingsRolesActionCreators;
-          obj2.updateRoleIcon(roleId, null, null);
+          const role = GuildSettingsRolesStore.getRole(roleId);
+          let icon;
+          if (role != null) {
+            icon = role.icon;
+          }
+          let tmp3 = null != icon;
+          if (!tmp3) {
+            let unicodeEmoji;
+            if (role != null) {
+              unicodeEmoji = role.unicodeEmoji;
+            }
+            tmp3 = null != unicodeEmoji;
+          }
+          return tmp3;
         }
       }
-      let obj6 = { label: tmp22, onPress: tmp10 };
-      const tmp25 = closure_7(tmp(6000).TableRow, obj6);
+      let obj6 = { label: tmp23, onPress: tmp10 };
+      const tmp26 = closure_7(tmp(6184).TableRow, obj6);
       cResult[18] = tmp10;
-      cResult[19] = tmp25;
-      tmp24 = tmp25;
+      cResult[19] = tmp26;
     } else {
-      class T {
+      class I {
         constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet();
-          const obj2 = GuildSettingsRolesActionCreators;
-          obj2.updateRoleIcon(roleId, null, null);
+          const role = GuildSettingsRolesStore.getRole(roleId);
+          let icon;
+          if (role != null) {
+            icon = role.icon;
+          }
+          let tmp3 = null != icon;
+          if (!tmp3) {
+            let unicodeEmoji;
+            if (role != null) {
+              unicodeEmoji = role.unicodeEmoji;
+            }
+            tmp3 = null != unicodeEmoji;
+          }
+          return tmp3;
         }
       }
     }
     if (cResult[20] === tmp11) {
-      class T {
+      class I {
         constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet();
-          const obj2 = GuildSettingsRolesActionCreators;
-          obj2.updateRoleIcon(roleId, null, null);
+          const role = GuildSettingsRolesStore.getRole(roleId);
+          let icon;
+          if (role != null) {
+            icon = role.icon;
+          }
+          let tmp3 = null != icon;
+          if (!tmp3) {
+            let unicodeEmoji;
+            if (role != null) {
+              unicodeEmoji = role.unicodeEmoji;
+            }
+            tmp3 = null != unicodeEmoji;
+          }
+          return tmp3;
         }
       }
-      if (cResult[23] === tmp20) {
-        class T {
+      if (cResult[23] === tmp21) {
+        class I {
           constructor() {
-            const obj = ActionSheetActionCreatorsDefault;
-            obj.hideActionSheet();
-            const obj2 = GuildSettingsRolesActionCreators;
-            obj2.updateRoleIcon(roleId, null, null);
+            const role = GuildSettingsRolesStore.getRole(roleId);
+            let icon;
+            if (role != null) {
+              icon = role.icon;
+            }
+            let tmp3 = null != icon;
+            if (!tmp3) {
+              let unicodeEmoji;
+              if (role != null) {
+                unicodeEmoji = role.unicodeEmoji;
+              }
+              tmp3 = null != unicodeEmoji;
+            }
+            return tmp3;
           }
         }
       }
-      const tmp29 = closure_8;
+      const tmp30 = closure_8;
       let obj8 = { children: items2 };
-      items2 = [tmp12, tmp14, ];
-      const ActionSheet = tmp(6708).ActionSheet;
+      items2 = [tmp13, tmp15, ];
+      const ActionSheet = tmp(6885).ActionSheet;
       let obj9 = { hasIcons: false, children: items3 };
-      items3 = [tmp20, tmp24, tmp26];
-      items2[2] = closure_8(tmp(6081).TableRowGroup, obj9);
-      const tmp30 = closure_8(ActionSheet, obj8);
-      cResult[23] = tmp20;
-      cResult[24] = tmp24;
-      cResult[25] = tmp26;
-      cResult[26] = tmp30;
+      items3 = [tmp21, tmp25, tmp27];
+      items2[2] = closure_8(tmp(6267).TableRowGroup, obj9);
+      const tmp31 = closure_8(ActionSheet, obj8);
+      cResult[23] = tmp21;
+      cResult[24] = tmp25;
+      cResult[25] = tmp27;
+      cResult[26] = tmp31;
+      const tmp29 = tmp31;
     }
-    let tmp27 = null;
+    let tmp28 = null;
     if (stateFromStores) {
-      class T {
+      class I {
         constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet();
-          const obj2 = GuildSettingsRolesActionCreators;
-          obj2.updateRoleIcon(roleId, null, null);
+          const role = GuildSettingsRolesStore.getRole(roleId);
+          let icon;
+          if (role != null) {
+            icon = role.icon;
+          }
+          let tmp3 = null != icon;
+          if (!tmp3) {
+            let unicodeEmoji;
+            if (role != null) {
+              unicodeEmoji = role.unicodeEmoji;
+            }
+            tmp3 = null != unicodeEmoji;
+          }
+          return tmp3;
         }
       }
       const obj10 = { variant: "danger", label: intl4.string(tmp(1126).t["uY+Nk/"]), onPress: tmp11 };
-      const TableRow = tmp(6000).TableRow;
+      const TableRow = tmp(6184).TableRow;
       intl4 = tmp(1126).intl;
-      tmp27 = closure_7(TableRow, obj10);
+      tmp28 = closure_7(TableRow, obj10);
     }
     cResult[20] = tmp11;
     cResult[21] = stateFromStores;
-    cResult[22] = tmp27;
+    cResult[22] = tmp28;
   }
-  const fn = function v() {
+  function handleSelectEmoji() {
     const tmp = guildId(dependencyMap[16]);
     let obj = {
       guildId,
       pickerIntention: constants.COMMUNITY_CONTENT,
-      onPressEmoji: function() {
+      onPressEmoji() {
         return closure_0(...arguments);
       }
     };
@@ -566,11 +734,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
     });
     const result = openEmojiPickerActionSheet(obj, "stack");
-  };
+  }
   cResult[6] = guildId;
   cResult[7] = roleId;
-  cResult[8] = fn;
-}) : ((arg0) => {
+  cResult[8] = handleSelectEmoji;
+}) : (function RoleIconActionSheet(arg0) {
   let guildId;
   let intl;
   let intl2;
@@ -578,7 +746,6 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let intl4;
   let intl5;
   let intl6;
-  let require;
   let roleId;
   ({ guildId: require, roleId } = arg0);
   let obj = function _handleUploadImage2() {
@@ -713,7 +880,6 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let obj5 = {
     label: intl5.string(require("intl").t["/Ny2wZ"]),
     onPress: function handleSelectEmoji() {
-      let require;
       const tmp = require("openEmojiPickerActionSheet");
       obj = {
         guildId: require,

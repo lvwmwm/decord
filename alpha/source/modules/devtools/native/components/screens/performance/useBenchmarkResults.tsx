@@ -1,16 +1,16 @@
-// Module ID: 15629
-// Function ID: 15630
+// Module ID: 15909
+// Function ID: 15910
 // Name: useBenchmarkResults
 // Dependencies: [32, 19, 558, 576, 2]
 
-// Module 15629 (useBenchmarkResults)
+// Module 15909 (useBenchmarkResults)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBenchmarkResults() {
   let closure_129_0;
   let first;
   let tmp4;
@@ -44,7 +44,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function v(arg0) {
+    const fn2 = function k(arg0) {
       let ref;
       let closure_0 = arg0;
       closure_0((arg0) => {
@@ -61,42 +61,24 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp6 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor() {
-        return closure_1_0([]);
-      }
-    }
-    cResult[3] = S;
-    tmp7 = S;
+    const fn3 = function h() {
+      return closure_1_0([]);
+    };
+    cResult[3] = fn3;
+    tmp7 = fn3;
   } else {
-    class S {
-      constructor() {
-        return closure_1_0([]);
-      }
-    }
+    tmp7 = cResult[3];
   }
   if (cResult[4] !== tmp4) {
-    class S {
-      constructor() {
-        return closure_1_0([]);
-      }
-    }
-    tmp9[0] = tmp4;
-    tmp9[1] = tmp5;
-    tmp9[2] = tmp6;
-    tmp9[3] = tmp7;
+    const obj2 = { results: tmp4, addMount: tmp5, addScroll: tmp6, clear: tmp7 };
     cResult[4] = tmp4;
-    cResult[5] = tmp9;
-    tmp8 = tmp9;
+    cResult[5] = obj2;
+    tmp8 = obj2;
   } else {
-    class S {
-      constructor() {
-        return closure_1_0([]);
-      }
-    }
+    tmp8 = cResult[5];
   }
   return tmp8;
-}) : (() => {
+}) : (function useBenchmarkResults() {
   let closure_0;
   let first;
   [first, closure_0] = react.useState([]);

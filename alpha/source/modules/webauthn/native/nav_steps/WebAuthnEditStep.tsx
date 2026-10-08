@@ -1,16 +1,16 @@
-// Module ID: 14618
-// Function ID: 14619
+// Module ID: 14879
+// Function ID: 14880
 // Name: WebAuthnEditStep
-// Dependencies: [32, 19, 1085, 21, 4896, 587, 558, 576, 6497, 1490, 6093, 4574, 1126, 10396, 4798, 8924, 1188, 5601, 2]
+// Dependencies: [32, 19, 1085, 21, 5090, 587, 558, 576, 6674, 1502, 5945, 4766, 1126, 9993, 4992, 8555, 1200, 5375, 2]
 
-// Module 14618 (WebAuthnEditStep)
+// Module 14879 (WebAuthnEditStep)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6093 */;
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 5945 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ obj2 = { marginBottom: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
 obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
 let closure_8 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnEditStep() {
   let credential;
   let form;
   let inputField;
@@ -39,10 +39,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp = credential;
   let obj = credential(576);
   const cResult = obj.c(21);
-  const obj2 = credential(6497);
+  const obj2 = credential(6674);
   credential = obj2.useSettingNavigationRoute().params.credential;
   const tmp4 = closure_8();
-  const obj3 = credential(1490);
+  const obj3 = credential(1502);
   navigation = obj3.useNavigation();
   [tmp7, dependencyMap] = value(react.useState(false), 2);
   value(react.useState(false), 2);
@@ -80,7 +80,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               }
               const _Symbol2 = Symbol;
               if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-                const tmp22 = closure_6(tmp(8924).FormDivider, {});
+                const tmp22 = closure_6(tmp(8555).FormDivider, {});
                 cResult[11] = tmp22;
                 tmp20 = tmp22;
               } else {
@@ -112,7 +112,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   }
                   const obj4 = { style: form, children: items };
                   items = [tmp17, tmp20, tmp26];
-                  const tmp31 = closure_7(tmp(8924).Form, obj4);
+                  const tmp31 = closure_7(tmp(8555).Form, obj4);
                   cResult[17] = tmp4.form;
                   cResult[18] = tmp17;
                   cResult[19] = tmp26;
@@ -121,7 +121,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 }
               }
               const obj5 = { onPress: tmp13, disabled: tmp7 || "" === value, loading: tmp7, size: "lg", text: tmp24, grow: true };
-              const tmp28 = closure_6(tmp(5601).Button, obj5);
+              const tmp28 = closure_6(tmp(5375).Button, obj5);
               cResult[13] = tmp7;
               cResult[14] = tmp13;
               cResult[15] = tmp7 || "" === value;
@@ -131,8 +131,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
         }
       }
-      const obj6 = { showTopContainer: false, value, onChange: tmp10, style: inputField, error: tmp12, title: tmp15, placeholder: credential.name, disabled: tmp7, clearButtonVisibility: tmp(1188).ClearButtonVisibility.WITH_CONTENT, autoFocus: true, showBorder: true, required: true, large: true };
-      const FormInput = tmp(8924).FormInput;
+      const obj6 = { showTopContainer: false, value, onChange: tmp10, style: inputField, error: tmp12, title: tmp15, placeholder: credential.name, disabled: tmp7, clearButtonVisibility: tmp(1200).ClearButtonVisibility.WITH_CONTENT, autoFocus: true, showBorder: true, required: true, large: true };
+      const FormInput = tmp(8555).FormInput;
       const tmp19 = closure_6(FormInput, obj6);
       cResult[5] = credential.name;
       cResult[6] = tmp12;
@@ -143,7 +143,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       tmp17 = tmp19;
     }
   }
-  const fn = function l() {
+  function onPress() {
     const tmp = dependencyMap(true);
     react(null);
     let obj = WebAuthnActionCreators;
@@ -163,13 +163,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     catchPromise.finally(() => {
       closure_1_2(false);
     });
-  };
+  }
   cResult[0] = credential.id;
   cResult[1] = navigation;
   cResult[2] = value;
-  cResult[3] = fn;
-  tmp13 = fn;
-}) : (() => {
+  cResult[3] = onPress;
+  tmp13 = onPress;
+}) : (function WebAuthnEditStep() {
   let credential;
   let intl;
   let intl2;
@@ -179,10 +179,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp5;
   let value;
   let tmp = credential;
-  let obj = credential(6497);
+  let obj = credential(6674);
   credential = obj.useSettingNavigationRoute().params.credential;
   const tmp3 = closure_8();
-  const obj2 = credential(1490);
+  const obj2 = credential(1502);
   let closure_1 = obj2.useNavigation();
   [tmp5, dependencyMap] = value(react.useState(false), 2);
   value(react.useState(false), 2);
@@ -192,11 +192,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp9 = value(react.useState(null), 2);
   [tmp10, react] = tmp9;
   const obj3 = { style: tmp3.form, children: items };
-  const Form = credential(8924).Form;
-  const obj4 = { showTopContainer: false, value, onChange: tmp8, style: tmp3.inputField, error: tmp10, title: intl.string(credential(1126).t["Jzd+z/"]), placeholder: credential.name, disabled: tmp5, clearButtonVisibility: credential(1188).ClearButtonVisibility.WITH_CONTENT, autoFocus: true, showBorder: true, required: true, large: true };
-  const FormInput = credential(8924).FormInput;
+  const Form = credential(8555).Form;
+  const obj4 = { showTopContainer: false, value, onChange: tmp8, style: tmp3.inputField, error: tmp10, title: intl.string(credential(1126).t["Jzd+z/"]), placeholder: credential.name, disabled: tmp5, clearButtonVisibility: credential(1200).ClearButtonVisibility.WITH_CONTENT, autoFocus: true, showBorder: true, required: true, large: true };
+  const FormInput = credential(8555).FormInput;
   intl = credential(1126).intl;
-  items = [closure_6(FormInput, obj4), closure_6(credential(8924).FormDivider, {}), ];
+  items = [closure_6(FormInput, obj4), closure_6(credential(8555).FormDivider, {}), ];
   const obj5 = {
     onPress() {
       const tmp = dependencyMap(true);
@@ -226,7 +226,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     grow: true
   };
   tmp13 = tmp5;
-  const Button = credential(5601).Button;
+  const Button = credential(5375).Button;
   const tmp11 = closure_7;
   const tmp12 = closure_6;
   if (!tmp5) {

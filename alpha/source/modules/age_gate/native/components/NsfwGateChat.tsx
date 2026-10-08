@@ -1,18 +1,18 @@
-// Module ID: 12329
-// Function ID: 12330
+// Module ID: 12427
+// Function ID: 12428
 // Name: NsfwGateChat
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 12330, 1126, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 12428, 1126, 5086, 2]
 
-// Module 12329 (NsfwGateChat)
+// Module 12427 (NsfwGateChat)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12330 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12428 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, ali
 createStyles = createStyles.createStyles;
 obj3 = { height: StyleSheet.hairlineWidth, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 let closure_8 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwGateChat() {
   let items;
   let items1;
   let tmp14;
@@ -105,7 +105,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[7] = tmp16;
   cResult[8] = tmp20;
   tmp19 = tmp20;
-}) : (() => {
+}) : (function NsfwGateChat() {
   let intl;
   let items;
   let items1;

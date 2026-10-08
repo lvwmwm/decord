@@ -1,23 +1,23 @@
-// Module ID: 14294
-// Function ID: 14295
+// Module ID: 14118
+// Function ID: 14119
 // Name: Slider
-// Dependencies: [109, 19, 17, 21, 4896, 587, 558, 576, 4861, 4862, 7963, 2]
+// Dependencies: [109, 19, 17, 21, 5090, 587, 558, 576, 5055, 5056, 8380, 2]
 
-// Module 14294 (Slider)
+// Module 14118 (Slider)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import HapticUtils from "HapticUtils" /* 4861 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4862 */;
-import _modDef7963 from "module_7963" /* 7963 */;
+import HapticUtils from "HapticUtils" /* 5055 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5056 */;
+import _modDef8380 from "module_8380" /* 8380 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault, step;
+let _require, importDefault;
 
 let metroImportAll;
 let metroImportDefault;
@@ -36,7 +36,7 @@ obj3 = { backgroundColor: nativeDefault.colors.SLIDER_TRACK_BACKGROUND };
 obj4 = { marginRight: nativeDefault.space.PX_8 };
 obj5 = { marginLeft: nativeDefault.space.PX_8 };
 let closure_9 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((step) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Slider(step) {
   let closure_0;
   let closure_1;
   let endIcon;
@@ -141,7 +141,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((step) => {
           }
         }
         const obj4 = { style: tmp18, step: tmp7, onValueChange: tmp13, minimumTrackTintColor: tmp12.minimumTrackTintColor.backgroundColor, maximumTrackTintColor: tmp12.maximumTrackTintColor.backgroundColor, tapToSeek: true };
-        const tmp22 = _modDef7963;
+        const tmp22 = _modDef8380;
         const merged = Object.assign(tmp5);
         const tmp26 = closure_7(tmp22, obj4);
         cResult[16] = tmp13;
@@ -182,7 +182,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((step) => {
   cResult[8] = tmp7;
   cResult[9] = fn;
   tmp13 = fn;
-}) : ((step) => {
+}) : (function Slider(step) {
   let endIcon;
   let items1;
   let items2;
@@ -213,7 +213,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((step) => {
   }
   items1 = [tmp6, , ];
   const obj3 = { style: items2, step, onValueChange: callback, minimumTrackTintColor: tmp2.minimumTrackTintColor.backgroundColor, maximumTrackTintColor: tmp2.maximumTrackTintColor.backgroundColor, tapToSeek: true };
-  const tmp9 = step(7963);
+  const tmp9 = step(8380);
   const merged1 = Object.assign(merged);
   items2 = [tmp2.slider, style];
   items1[1] = closure_7(tmp9, obj3);

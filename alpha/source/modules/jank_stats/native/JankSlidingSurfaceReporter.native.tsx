@@ -1,14 +1,14 @@
-// Module ID: 15976
-// Function ID: 15977
+// Module ID: 16236
+// Function ID: 16237
 // Name: JankSlidingSurfaceReporter
-// Dependencies: [19, 15974, 558, 576, 15977, 15978, 4618, 2]
+// Dependencies: [19, 16234, 558, 576, 16237, 16238, 4810, 2]
 
-// Module 15976 (JankSlidingSurfaceReporter)
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import react_nativeDefault from "react-native" /* 15977 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 15978 */;
+// Module 16236 (JankSlidingSurfaceReporter)
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import react_nativeDefault from "react-native" /* 16237 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 16238 */;
 import react from "react" /* 19 */;
-import JankScreenConstants from "JankScreenConstants" /* 15974 */;
+import JankScreenConstants from "JankScreenConstants" /* 16234 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let __initData = { code: "function JankSlidingSurfaceReporterNativeTsx1(){const{
 let closure_7 = { code: "function JankSlidingSurfaceReporterNativeTsx2(current){const{openAt,closedAt,OPEN_SETTLED,CLOSED_SETTLED,MOVING,lastState,runOnJS,report,INTERACTION_NONE,INTERACTION_TRANSITION}=this.__closure;const openIsLower=openAt<closedAt;const atOpen=openIsLower?current<=openAt:current>=openAt;const atClosed=openIsLower?current>=closedAt:current<=closedAt;const state=atOpen?OPEN_SETTLED:atClosed?CLOSED_SETTLED:MOVING;const prevState=lastState.get();if(state===prevState){return;}lastState.set(state);if(state===OPEN_SETTLED){runOnJS(report)(true,INTERACTION_NONE);}else{if(state===CLOSED_SETTLED){runOnJS(report)(false,INTERACTION_NONE);}else{if(prevState===OPEN_SETTLED){runOnJS(report)(false,INTERACTION_TRANSITION);}else{if(prevState===CLOSED_SETTLED){runOnJS(report)(true,INTERACTION_TRANSITION);}}}}}" };
 let closure_8 = { code: "function JankSlidingSurfaceReporterNativeTsx3(){const{position}=this.__closure;return position.get();}" };
 const __initData2 = { code: "function JankSlidingSurfaceReporterNativeTsx4(current){const{openAt,closedAt,OPEN_SETTLED,CLOSED_SETTLED,MOVING,lastState,runOnJS,report,INTERACTION_NONE,INTERACTION_TRANSITION}=this.__closure;const openIsLower=openAt<closedAt;const atOpen=openIsLower?current<=openAt:current>=openAt;const atClosed=openIsLower?current>=closedAt:current<=closedAt;const state=atOpen?OPEN_SETTLED:atClosed?CLOSED_SETTLED:MOVING;const prevState=lastState.get();if(state===prevState)return;lastState.set(state);if(state===OPEN_SETTLED){runOnJS(report)(true,INTERACTION_NONE);}else if(state===CLOSED_SETTLED){runOnJS(report)(false,INTERACTION_NONE);}else if(prevState===OPEN_SETTLED){runOnJS(report)(false,INTERACTION_TRANSITION);}else if(prevState===CLOSED_SETTLED){runOnJS(report)(true,INTERACTION_TRANSITION);}}" };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((position) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function JankSlidingSurfaceReporter(position) {
   let closedAt;
   let obj4;
   let ref;
@@ -142,7 +142,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((position) => {
   cResult[2] = resolveOpenName;
   cResult[3] = obj6;
   tmp4 = obj6;
-}) : ((position) => {
+}) : (function JankSlidingSurfaceReporter(position) {
   position = position.position;
   const openAt = position.openAt;
   const closedAt = position.closedAt;

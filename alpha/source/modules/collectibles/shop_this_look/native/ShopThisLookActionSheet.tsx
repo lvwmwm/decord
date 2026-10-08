@@ -1,31 +1,31 @@
-// Module ID: 12820
-// Function ID: 12821
+// Module ID: 12967
+// Function ID: 12968
 // Name: ShopThisLookActionSheet
-// Dependencies: [19, 17, 7901, 6653, 6714, 21, 4896, 587, 8460, 4574, 1126, 558, 576, 8569, 504, 12821, 7077, 12823, 10782, 8526, 7897, 12824, 6664, 6688, 4860, 7065, 4892, 10854, 2]
+// Dependencies: [19, 17, 8320, 6830, 6891, 21, 5090, 587, 8946, 4766, 1126, 558, 576, 9053, 504, 12968, 7263, 12970, 12735, 9011, 8317, 12971, 6841, 6865, 5054, 7251, 5086, 10505, 2]
 
-// Module 12820 (ShopThisLookActionSheet)
+// Module 12967 (ShopThisLookActionSheet)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6653 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6688 */;
-import Constants from "Constants" /* 6714 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7065 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7077 */;
-import WishlistItemCardBase from "WishlistItemCardBase" /* 8460 */;
-import ShopThisLookUtils from "ShopThisLookUtils" /* 12821 */;
-import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 12823 */;
-import react_mod from "react" /* 19 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6830 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6865 */;
+import Constants from "Constants" /* 6891 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7251 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7263 */;
+import WishlistItemCardBase from "WishlistItemCardBase" /* 8946 */;
+import ShopThisLookUtils from "ShopThisLookUtils" /* 12968 */;
+import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 12970 */;
+import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import StorefrontProductStore from "StorefrontProductStore" /* 7901 */;
+import StorefrontProductStore_mod from "StorefrontProductStore" /* 8320 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, flag, ref, tmp5;
+let _require, dependencyMap, ref;
 
 let c10;
 let c9;
@@ -35,8 +35,8 @@ let obj2;
 let obj3;
 let obj4;
 let obj5;
-let react = react_mod;
 ({ ActivityIndicator: closure_4, View: hasOwnProperty } = react_native);
+let StorefrontProductStore = StorefrontProductStore_mod;
 const ACTION_SHEET_MAX_WIDTH = ActionSheetConstants.ACTION_SHEET_MAX_WIDTH;
 const UserProfileThemeTypes = Constants.UserProfileThemeTypes;
 ({ jsx: c9, jsxs: c10 } = Fragment);
@@ -50,12 +50,13 @@ obj5 = { zIndex: 1 };
 const merged = Object.assign(WishlistItemCardBase.CARD_TOP_RIGHT_OVERLAY_POSITION);
 let closure_11 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopThisLookCard(skuId) {
+  let closure_6;
   let first;
   let onPress;
-  let productType;
   let stateFromStores;
   let tmp10;
+  let tmp13;
   let tmp7;
   let tmp9;
   const tmp2 = stateFromStores;
@@ -82,220 +83,191 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     tmp7 = cResult[1];
   }
   if (cResult[2] !== skuId) {
-    class O {
-      constructor() {
-        productsForSku = closure_6.getProductsForSku(skuId);
-        found = undefined;
-        if (productsForSku != null) {
-          flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F143064 */ });
-          found = flatMapResult.find(() => { /* body not rendered: F143065 */ });
-        }
-        return found;
+    const fn = function v() {
+      const productsForSku = StorefrontProductStore.getProductsForSku(skuId);
+      let found;
+      if (productsForSku != null) {
+        const flatMapResult = productsForSku.flatMap((skus) => skus.skus);
+        found = flatMapResult.find((id) => id.id === skuId);
       }
-    }
+      return found;
+    };
     const items1 = [skuId];
     cResult[2] = skuId;
-    cResult[3] = O;
+    cResult[3] = fn;
     cResult[4] = items1;
     tmp10 = items1;
-    tmp9 = O;
+    tmp9 = fn;
   } else {
-    class O {
-      constructor() {
-        productsForSku = closure_6.getProductsForSku(skuId);
-        found = undefined;
-        if (productsForSku != null) {
-          flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F143064 */ });
-          found = flatMapResult.find(() => { /* body not rendered: F143065 */ });
-        }
-        return found;
-      }
-    }
+    tmp9 = cResult[3];
     tmp10 = cResult[4];
   }
-  const tmpResult2 = skuId(tmp2[14]);
-  stateFromStores = tmpResult2.useStateFromStores(tmp7, tmp9, tmp10);
+  const tmpResult5 = skuId(tmp2[14]);
+  stateFromStores = tmpResult5.useStateFromStores(tmp7, tmp9, tmp10);
+  let type;
   if (stateFromStores != null) {
-    class O {
-      constructor() {
-        productsForSku = closure_6.getProductsForSku(skuId);
-        found = undefined;
-        if (productsForSku != null) {
-          flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F143064 */ });
-          found = flatMapResult.find(() => { /* body not rendered: F143065 */ });
-        }
-        return found;
-      }
-    }
-    if (tmp13 != null) {
-      class O {
-        constructor() {
-          productsForSku = closure_6.getProductsForSku(skuId);
-          found = undefined;
-          if (productsForSku != null) {
-            flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F143064 */ });
-            found = flatMapResult.find(() => { /* body not rendered: F143065 */ });
-          }
-          return found;
-        }
-      }
-      if (tmp14 != null) {
-        class O {
-          constructor() {
-            productsForSku = closure_6.getProductsForSku(skuId);
-            found = undefined;
-            if (productsForSku != null) {
-              flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F143064 */ });
-              found = flatMapResult.find(() => { /* body not rendered: F143065 */ });
-            }
-            return found;
-          }
-        }
+    const tenantMetadata = stateFromStores.tenantMetadata;
+    if (tenantMetadata != null) {
+      const collectibles = tenantMetadata.collectibles;
+      if (collectibles != null) {
+        type = collectibles.type;
       }
     }
   }
-  react = tmp12;
   if (cResult[5] !== stateFromStores) {
-    class O {
-      constructor() {
-        productsForSku = closure_6.getProductsForSku(skuId);
-        found = undefined;
-        if (productsForSku != null) {
-          flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F143064 */ });
-          found = flatMapResult.find(() => { /* body not rendered: F143065 */ });
-        }
-        return found;
-      }
-    }
-    let result = obj5.isShoppableCollectibleSku(stateFromStores);
+    const tmpResult6 = skuId(tmp2[15]);
+    let result = tmpResult6.isShoppableCollectibleSku(stateFromStores);
     cResult[5] = stateFromStores;
     cResult[6] = result;
+    tmp13 = result;
   } else {
-    class O {
-      constructor() {
-        productsForSku = closure_6.getProductsForSku(skuId);
-        found = undefined;
-        if (productsForSku != null) {
-          flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F143064 */ });
-          found = flatMapResult.find(() => { /* body not rendered: F143065 */ });
-        }
-        return found;
-      }
-    }
+    tmp13 = cResult[6];
   }
-  result = tmp15;
+  let closure_4 = tmp13;
   if (null != product) {
-    class O {
-      constructor() {
-        productsForSku = closure_6.getProductsForSku(skuId);
-        found = undefined;
-        if (productsForSku != null) {
-          flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F143064 */ });
-          found = flatMapResult.find(() => { /* body not rendered: F143065 */ });
+    const tmpResult7 = skuId(tmp2[16]);
+    if (tmpResult7.getIsVariantProduct(product)) {
+      let tmp17;
+      if (cResult[7] === product.variants) {
+        let tmp16;
+        if (cResult[8] === skuId) {
+          tmp16 = cResult[9];
         }
-        return found;
-      }
-    }
-    if (obj6.getIsVariantProduct(product)) {
-      let tmp19;
-      class O {
-        constructor() {
-          productsForSku = closure_6.getProductsForSku(skuId);
-          found = undefined;
-          if (productsForSku != null) {
-            flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F143064 */ });
-            found = flatMapResult.find(() => { /* body not rendered: F143065 */ });
-          }
-          return found;
-        }
+        const _Math = Math;
+        const bound = Math.max(0, tmp16);
+        const tmpResult8 = skuId(tmp2[16]);
+        const selectedProduct = tmpResult8.getSelectedProduct(product, bound);
+        cResult[12] = product;
+        cResult[13] = bound;
+        cResult[14] = selectedProduct;
       }
       if (cResult[10] !== skuId) {
-        class O {
-          constructor() {
-            productsForSku = closure_6.getProductsForSku(skuId);
-            found = undefined;
-            if (productsForSku != null) {
-              flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F143064 */ });
-              found = flatMapResult.find(() => { /* body not rendered: F143065 */ });
-            }
-            return found;
-          }
-        }
+        const fn2 = function x(skuId) {
+          return skuId.skuId === skuId;
+        };
         cResult[10] = skuId;
-        cResult[11] = tmp20;
-        tmp19 = tmp20;
+        cResult[11] = fn2;
+        tmp17 = fn2;
       } else {
-        class O {
-          constructor() {
-            productsForSku = closure_6.getProductsForSku(skuId);
-            found = undefined;
-            if (productsForSku != null) {
-              flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F143064 */ });
-              found = flatMapResult.find(() => { /* body not rendered: F143065 */ });
-            }
-            return found;
-          }
-        }
+        tmp17 = cResult[11];
       }
       const variants = product.variants;
+      const findIndexResult = variants.findIndex(tmp17);
       cResult[7] = product.variants;
       cResult[8] = skuId;
-      cResult[9] = variants.findIndex(tmp19);
-      const findIndexResult = variants.findIndex(tmp19);
+      cResult[9] = findIndexResult;
+      tmp16 = findIndexResult;
     }
   }
-  ref = react.useRef(false);
-  if (cResult[15] === tmp15) {
-    class O {
-      constructor() {
-        productsForSku = closure_6.getProductsForSku(skuId);
-        found = undefined;
-        if (productsForSku != null) {
-          flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F143064 */ });
-          found = flatMapResult.find(() => { /* body not rendered: F143065 */ });
+  ref = type.useRef(false);
+  const obj8 = type;
+  if (cResult[15] === tmp13) {
+    if (cResult[16] === type) {
+      if (cResult[17] === stateFromStores) {
+        let tmp22;
+        let tmp23;
+        if (cResult[18] === skuId) {
+          tmp22 = cResult[19];
+          tmp23 = cResult[20];
         }
-        return found;
+        const effect = obj8.useEffect(tmp22, tmp23);
+        if (cResult[21] === tmp13) {
+          if (cResult[22] === type) {
+            let tmp25;
+            if (cResult[23] === skuId) {
+              tmp25 = cResult[24];
+            }
+            StorefrontProductStore = tmp25;
+            if (cResult[25] === onPress) {
+              if (cResult[28] !== tmp25) {
+                class K {
+                  constructor() {
+                    let intl;
+                    closure_6();
+                    const obj = { key: "SHOP_THIS_LOOK_ITEM_UNAVAILABLE", content: intl.string(intl3.t.YymRft) };
+                    const open = ToastActionCreatorsDefault.open;
+                    ToastActionCreatorsDefault;
+                    intl = intl3.intl;
+                    open(obj);
+                  }
+                }
+                cResult[28] = tmp25;
+                class V {
+                  constructor() {
+                    closure_6();
+                    onPress();
+                  }
+                }
+                cResult[29] = K;
+              } else {
+                class K {
+                  constructor() {
+                    let intl;
+                    closure_6();
+                    const obj = { key: "SHOP_THIS_LOOK_ITEM_UNAVAILABLE", content: intl.string(intl3.t.YymRft) };
+                    const open = ToastActionCreatorsDefault.open;
+                    ToastActionCreatorsDefault;
+                    intl = intl3.intl;
+                    open(obj);
+                  }
+                }
+              }
+              class V {
+                constructor() {
+                  closure_6();
+                  onPress();
+                }
+              }
+              return tmp28;
+            }
+            class V {
+              constructor() {
+                closure_6();
+                onPress();
+              }
+            }
+            cResult[25] = onPress;
+            cResult[26] = tmp25;
+            cResult[27] = V;
+          }
+        }
+        class N {
+          constructor() {
+            const obj = ShopThisLookAnalyticsUtils;
+            const obj2 = { action: ShopThisLookAnalyticsUtils.ShopThisLookRowAction.ROW_CLICKED, skuId, productType: type, isDisabled: !closure_4, source: UserProfileThemeTypes.ACTION_SHEET };
+            const result = obj.trackShopThisLookRowAction(obj2);
+          }
+        }
+        cResult[21] = tmp13;
+        cResult[22] = type;
+        cResult[23] = skuId;
+        cResult[24] = N;
+        tmp25 = N;
       }
     }
   }
   class D {
     constructor() {
-      current = null == closure_2;
+      const current = null == stateFromStores || ref.current;
       if (!current) {
-        tmp = closure_5;
-        current = closure_5.current;
+        ref.current = true;
+        const obj = { action: ShopThisLookAnalyticsUtils.ShopThisLookRowAction.ROW_VIEWED, skuId, productType: type, isDisabled: !closure_4, source: UserProfileThemeTypes.ACTION_SHEET };
+        const trackShopThisLookRowAction = ShopThisLookAnalyticsUtils.trackShopThisLookRowAction;
+        ShopThisLookAnalyticsUtils;
+        const result = trackShopThisLookRowAction(obj);
       }
-      if (!current) {
-        tmp2 = closure_5;
-        flag = true;
-        closure_5.current = true;
-        tmp3 = closure_0;
-        tmp4 = closure_2;
-        tmp5 = closure_0(closure_2[17]);
-        obj = { action: null, skuId: null, productType: null, isDisabled: null, source: null };
-        trackShopThisLookRowAction = tmp5.trackShopThisLookRowAction;
-        obj.action = closure_0(closure_2[17]).ShopThisLookRowAction.ROW_VIEWED;
-        tmp6 = skuId;
-        obj.skuId = skuId;
-        tmp7 = type;
-        obj.productType = type;
-        tmp8 = closure_4;
-        obj.isDisabled = !closure_4;
-        tmp9 = UserProfileThemeTypes;
-        obj.source = UserProfileThemeTypes.ACTION_SHEET;
-        result = trackShopThisLookRowAction(obj);
-      }
-      return;
     }
   }
-  const items2 = [stateFromStores, skuId, undefined, tmp15];
-  cResult[15] = tmp15;
-  cResult[16] = undefined;
+  const items2 = [stateFromStores, skuId, type, tmp13];
+  cResult[15] = tmp13;
+  cResult[16] = type;
   cResult[17] = stateFromStores;
   cResult[18] = skuId;
   cResult[19] = D;
   cResult[20] = items2;
-}) : ((skuId) => {
+  tmp23 = items2;
+  tmp22 = D;
+}) : (function ShopThisLookCard(skuId) {
   let c2;
   let items7;
   let onPress;
@@ -307,7 +279,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   let callback;
   const tmp = closure_11();
   let tmp2 = skuId;
-  let obj = skuId(8569);
+  let obj = skuId(9053);
   const collectiblesShopProduct = obj.useCollectiblesShopProduct(skuId, { needsCategory: false, shouldFetchProduct: false });
   const product = collectiblesShopProduct.product;
   dependencyMap = product;
@@ -350,7 +322,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
         const _Math = Math;
         const variants = tmp.variants;
         const bound = Math.max(0, variants.findIndex((skuId) => skuId.skuId === skuId));
-        const tmp2Result = tmp2(7077);
+        const tmp2Result = tmp2(7263);
         return tmp2Result.getSelectedProduct(c2, bound);
       } else {
         return c2;
@@ -389,7 +361,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
         },
       accessibilityHidden: true
     };
-    tmp22 = closure_9(onPress(8460), obj3);
+    tmp22 = closure_9(onPress(8946), obj3);
   } else {
     tmp22 = null;
     if (null != stateFromStores) {
@@ -397,7 +369,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
       if (memo) {
         const obj4 = { style: tmp.cardWrapper, children: items7 };
         const obj5 = { sku: stateFromStores, size, onPress: callback1 };
-        items7 = [closure_9(onPress(10782), obj5), ];
+        items7 = [closure_9(onPress(12735), obj5), ];
         let tmp19Result = null != memo1;
         const tmp17 = closure_10;
         const tmp18 = memo;
@@ -405,13 +377,13 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
         const tmp20 = onPress;
         if (tmp19Result) {
           const obj6 = { selectedProduct: memo1, style: tmp.wishlistButton };
-          tmp19Result = tmp19(tmp20(8526), obj6);
+          tmp19Result = tmp19(tmp20(9011), obj6);
         }
         items7[1] = tmp19Result;
         tmp17Result = tmp17(tmp18, obj4);
       } else {
-        const obj7 = { sku: stateFromStores, size, overlay: tmp2(8460).WishlistItemCardOverlay.LOCKED, onPress: tmp12 };
-        const tmp15 = onPress(10782);
+        const obj7 = { sku: stateFromStores, size, overlay: tmp2(8946).WishlistItemCardOverlay.LOCKED, onPress: tmp12 };
+        const tmp15 = onPress(12735);
         tmp17Result = closure_9(tmp15, obj7);
       }
       tmp22 = tmp17Result;
@@ -420,7 +392,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   return tmp22;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopThisLookActionSheet(arg0) {
   let analyticsLocations;
   let cardWidth;
   let closure_2;
@@ -444,7 +416,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(28);
   ({ userId, guildId } = arg0);
   const tmp4 = closure_11();
-  let obj2 = cardWidth(7897);
+  let obj2 = cardWidth(8317);
   const equippedCollectibleSkuIds = obj2.useEquippedCollectibleSkuIds(userId, guildId);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let obj3 = { maxWidth: ACTION_SHEET_MAX_WIDTH };
@@ -453,13 +425,13 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     first = cResult[0];
   }
-  const tmp8 = analyticsLocations(12824)(first);
+  const tmp8 = analyticsLocations(12971)(first);
   cardWidth = tmp8.cardWidth;
   ({ rowWidth, gap } = tmp8);
-  const tmp9 = analyticsLocations(6664);
-  analyticsLocations = tmp9(analyticsLocations(6688).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
+  const tmp9 = analyticsLocations(6841);
+  analyticsLocations = tmp9(analyticsLocations(6865).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
   if (cResult[1] !== analyticsLocations) {
-    const fn = function y(initialProductSkuId) {
+    const fn = function k(initialProductSkuId) {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
       const obj2 = CollectiblesActionCreators;
@@ -474,7 +446,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   dependencyMap = tmp10;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [analyticsLocations(6688).SHOP_THIS_LOOK_ACTION_SHEET];
+    const items = [analyticsLocations(6865).SHOP_THIS_LOOK_ACTION_SHEET];
     cResult[3] = items;
     tmp11 = items;
   } else {
@@ -499,7 +471,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[6] !== tmp4.description) {
     const obj4 = { variant: "text-sm/medium", color: "text-subtle", style: description, children: tmp14 };
-    const tmp18 = closure_9(cardWidth(4892).Text, obj4);
+    const tmp18 = closure_9(cardWidth(5086).Text, obj4);
     cResult[6] = tmp4.description;
     cResult[7] = tmp18;
     tmp16 = tmp18;
@@ -537,11 +509,11 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
             }
             const obj5 = { value: tmp11, children: closure_9(tmp7Result, obj6) };
-            const AnalyticsLocationProvider = tmp(6664).AnalyticsLocationProvider;
+            const AnalyticsLocationProvider = tmp(6841).AnalyticsLocationProvider;
             obj6 = { startExpanded: true, title: tmp12, children: closure_10(closure_5, obj7) };
             obj7 = { style: container, children: items1 };
             items1 = [tmp16, tmp24];
-            tmp7Result = analyticsLocations(10854);
+            tmp7Result = analyticsLocations(10505);
             const tmp33 = closure_9(AnalyticsLocationProvider, obj5);
             cResult[24] = tmp4.container;
             cResult[25] = tmp24;
@@ -596,7 +568,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[9] = rowWidth;
   cResult[10] = obj9;
   tmp19 = obj9;
-}) : ((arg0) => {
+}) : (function ShopThisLookActionSheet(arg0) {
   let c0;
   let closure_2;
   let gap;
@@ -618,10 +590,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj = require("useMaybeFetchEquippedCollectibleProducts");
   const equippedCollectibleSkuIds = obj.useEquippedCollectibleSkuIds(userId, guildId);
   let obj2 = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(12824)(obj2));
-  analyticsLocations(12824)(obj2);
-  const tmp3 = analyticsLocations(6664);
-  analyticsLocations = tmp3(analyticsLocations(6688).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
+  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(12971)(obj2));
+  analyticsLocations(12971)(obj2);
+  const tmp3 = analyticsLocations(6841);
+  analyticsLocations = tmp3(analyticsLocations(6865).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
   const items = [analyticsLocations];
   dependencyMap = react.useCallback((initialProductSkuId) => {
     const obj = ActionSheetActionCreatorsDefault;
@@ -632,9 +604,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items);
   let obj3 = { value: items1, children: closure_9(tmp4, obj4) };
   const AnalyticsLocationProvider = require("useAnalyticsLocations").AnalyticsLocationProvider;
-  items1 = [analyticsLocations(6688).SHOP_THIS_LOOK_ACTION_SHEET];
+  items1 = [analyticsLocations(6865).SHOP_THIS_LOOK_ACTION_SHEET];
   obj4 = { startExpanded: true, title: intl.string(require("intl").t.xNdRDO), children: closure_10(closure_5, obj5) };
-  tmp4 = analyticsLocations(10854);
+  tmp4 = analyticsLocations(10505);
   intl = require("intl").intl;
   obj5 = { style: tmp.container, children: items2 };
   const obj6 = { variant: "text-sm/medium", color: "text-subtle", style: tmp.description, children: intl2.string(require("intl").t["ws+0Lr"]) };

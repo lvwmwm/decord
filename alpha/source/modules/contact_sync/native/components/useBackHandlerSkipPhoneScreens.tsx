@@ -1,12 +1,12 @@
-// Module ID: 12359
-// Function ID: 12360
+// Module ID: 12455
+// Function ID: 12456
 // Name: useBackHandlerSkipPhoneScreens
-// Dependencies: [17, 12342, 558, 576, 6023, 2]
+// Dependencies: [17, 12438, 558, 576, 6209, 2]
 
-// Module 12359 (useBackHandlerSkipPhoneScreens)
+// Module 12455 (useBackHandlerSkipPhoneScreens)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12342 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12438 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,11 +14,11 @@ const require = globalThis.__r;
 let MinimizeApp, _require, dependencyMap;
 
 let tmp;
-const useNavigatorBackPressHandler = tmp(6023);
+const useNavigatorBackPressHandler = tmp(6209);
 const NativeModules = react_native.NativeModules;
 const ContactSyncScenes = ContactSyncConstants.ContactSyncScenes;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBackHandlerSkipPhoneScreens(arg0, arg1) {
   let closure_1;
   let state;
   _require = arg0;
@@ -31,10 +31,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     if (cResult[1] === arg0) {
       tmp4 = cResult[2];
     }
-    const tmpResult = tmp(6023);
+    const tmpResult = tmp(6209);
     tmpResult.useNavigatorBackPressHandler(tmp4);
   }
-  const fn = function o() {
+  const fn = function c() {
     if (null != closure_1) {
       tmp();
     } else {
@@ -53,7 +53,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[1] = arg0;
   cResult[2] = fn;
   tmp4 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useBackHandlerSkipPhoneScreens(arg0, arg1) {
   let closure_1;
   let state;
   _require = arg0;
@@ -76,12 +76,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBackHandlerMinimizeApp() {
   let first;
   const obj = react;
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t() {
+    const fn = function s() {
       MinimizeApp = MinimizeApp.MinimizeApp;
       MinimizeApp.minimizeApp();
       return true;
@@ -93,7 +93,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = useNavigatorBackPressHandler;
   tmpResult.useNavigatorBackPressHandler(first);
-}) : (() => {
+}) : (function useBackHandlerMinimizeApp() {
   const obj = useNavigatorBackPressHandler;
   obj.useNavigatorBackPressHandler(() => {
     MinimizeApp = MinimizeApp.MinimizeApp;

@@ -1,23 +1,23 @@
-// Module ID: 15914
-// Function ID: 15915
+// Module ID: 16173
+// Function ID: 16174
 // Name: RegistrationUtils
-// Dependencies: [19, 4877, 8426, 15906, 15907, 1085, 21, 1252, 558, 576, 15903, 6026, 2]
+// Dependencies: [19, 5071, 8663, 16165, 16166, 1085, 21, 1264, 558, 576, 16162, 6212, 2]
 // Exports: getCommonErrorDetails, getTrackRegTransition, hasAllRegistrationFieldsCompleted
 
-// Module 15914 (RegistrationUtils)
+// Module 16173 (RegistrationUtils)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import react from "react" /* 19 */;
-import InviteStore from "InviteStore" /* 4877 */;
-import DisplayedInviteStore from "DisplayedInviteStore" /* 8426 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 15906 */;
-import RegistrationConstants from "RegistrationConstants" /* 15907 */;
+import InviteStore from "InviteStore" /* 5071 */;
+import DisplayedInviteStore from "DisplayedInviteStore" /* 8663 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 16165 */;
+import RegistrationConstants from "RegistrationConstants" /* 16166 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, destinationStep;
+let _require;
 
 let c9;
 let metroImportAll;
@@ -105,7 +105,7 @@ function trackRegTransition(overrideRegistrationOptions) {
 ({ RegisterTransitionSteps: metroImportAll, RegistrationTransitionActionTypes: c9 } = RegistrationConstants);
 const AnalyticEvents = Constants.AnalyticEvents;
 const jsx = Fragment.jsx;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((destinationStep) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackButtonWithTracking(destinationStep) {
   let context;
   let onPress;
   const tmp = context;
@@ -137,27 +137,27 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((destinationStep) => 
       tmp6 = tmp11;
     }
   }
-  const fn = function o() {
+  function handlePress() {
     if (null != onPress) {
       metroRequire();
       const obj = { step: destinationStep, actionType: constants.VIEWED };
       context(obj);
       tmp();
     }
-  };
+  }
   cResult[0] = destinationStep;
   cResult[1] = onPress;
   cResult[2] = context;
-  cResult[3] = fn;
-  tmp5 = fn;
-}) : ((arg0) => {
+  cResult[3] = handlePress;
+  tmp5 = handlePress;
+}) : (function BackButtonWithTracking(arg0) {
   let closure_0;
   let step;
   _require = react.useContext(require("Auth").TrackRegistrationContext);
   ({ destinationStep: importDefault, onPress: dependencyMap } = arg0);
-  const HeaderBackButton = require("module_6026").HeaderBackButton;
+  const HeaderBackButton = require("module_6212").HeaderBackButton;
   const merged = Object.assign(arg0);
-  return <HeaderBackButton onPress={function onPress() {
+  return <HeaderBackButton onPress={function handlePress() {
     if (null != dependencyMap) {
       metroRequire();
       const obj = { step: importDefault, actionType: constants.VIEWED };

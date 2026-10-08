@@ -1,25 +1,23 @@
-// Module ID: 11671
-// Function ID: 11672
+// Module ID: 11736
+// Function ID: 11737
 // Name: useCanShowAppLauncherOnboarding
-// Dependencies: [32, 2051, 4786, 1377, 11672, 11673, 5795, 1102, 558, 576, 504, 11, 2036, 6901, 4704, 2]
+// Dependencies: [32, 2063, 4980, 1389, 11737, 11738, 5399, 1102, 558, 576, 504, 11, 2048, 7090, 4898, 2]
 
-// Module 11671 (useCanShowAppLauncherOnboarding)
+// Module 11736 (useCanShowAppLauncherOnboarding)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react from "react" /* 576 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5795 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6901 */;
+import dismissible_content from "dismissible_content" /* 2048 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5399 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7090 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4786 */;
-import UserStore from "UserStore" /* 1377 */;
-import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 11672 */;
-import AppLauncherOnboardingStore from "AppLauncherOnboardingStore" /* 11673 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4980 */;
+import UserStore from "UserStore" /* 1389 */;
+import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 11737 */;
+import AppLauncherOnboardingStore from "AppLauncherOnboardingStore" /* 11738 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channelId, currentTimeMs, guildId, isInCooldown;
 
 let tmp;
 const get_initialized = tmp(504);
@@ -31,7 +29,7 @@ let closure_12 = 14 * DurationsDefault.Millis.DAY;
 const HOUR = DurationsDefault.Millis.HOUR;
 const DAY = DurationsDefault.Millis.DAY;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsNewUser() {
   let currentUser;
   let tmp4;
   let tmp5;
@@ -63,7 +61,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = timestamp < obj3.extractTimestamp(stateFromStores.id) + closure_12;
   }
   return tmp9;
-}) : (() => {
+}) : (function useIsNewUser() {
   let currentUser;
   const items = [UserStore];
   const obj = get_initialized;
@@ -82,7 +80,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return tmp4;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsInSmallContext(guildId) {
   let first;
   let tmp6;
   const obj = guildId(576);
@@ -109,7 +107,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
   return null != stateFromStores && stateFromStores < 200;
-}) : ((guildId) => {
+}) : (function useIsInSmallContext(guildId) {
   guildId = guildId.guildId;
   const items = [GuildMemberCountStore];
   const obj = guildId(504);
@@ -117,7 +115,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   return null != stateFromStores && stateFromStores < 200;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentTimeMs) => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsInCooldown(currentTimeMs) {
   let lastSeenTimeMs;
   let tmp4;
   let tmp5;
@@ -139,7 +137,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentTimeMs)
   const tmpResult = get_initialized;
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   return null != stateFromStores && currentTimeMs < stateFromStores + HOUR;
-}) : ((currentTimeMs) => {
+}) : (function useIsInCooldown(currentTimeMs) {
   let lastSeenTimeMs;
   currentTimeMs = currentTimeMs.currentTimeMs;
   const items = [AppLauncherOnboardingPersistedStore];
@@ -148,7 +146,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentTimeMs)
   return null != stateFromStores && currentTimeMs < stateFromStores + HOUR;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((isInCooldown) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWillShowGlobalSearchOnboarding(isInCooldown) {
   let tmp4;
   let tmp7;
   const obj = react;
@@ -176,7 +174,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((isInCooldown) 
     tmp7 = cResult[3];
   }
   return tmp7;
-}) : ((isInCooldown) => {
+}) : (function useWillShowGlobalSearchOnboarding(isInCooldown) {
   const items = [];
   if (!isInCooldown.isInCooldown) {
     items.push(dismissible_content.DismissibleContent.APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING);
@@ -186,7 +184,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((isInCooldown) 
   return obj2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanShowAppLauncherOnboarding(channelId) {
   let first;
   let recentApplicationCommandMetadata;
   let recentMessageMetadata;
@@ -255,15 +253,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const willShowGlobalSearchOnboarding = closure_18(tmp15).willShowGlobalSearchOnboarding;
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [AppLauncherOnboardingStore];
-    class T {
+    class G {
       constructor() {
         const obj = { recentMessageMetadata: AppLauncherOnboardingStore.getRecentMessageMetadata(), recentApplicationCommandMetadata: AppLauncherOnboardingStore.getRecentApplicationCommandMetadata() };
         return obj;
       }
     }
     cResult[8] = items1;
-    cResult[9] = T;
-    tmp17 = T;
+    cResult[9] = G;
+    tmp17 = G;
     tmp16 = items1;
   } else {
     tmp16 = cResult[8];
@@ -274,14 +272,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   ({ recentMessageMetadata, recentApplicationCommandMetadata } = stateFromStoresObject);
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [AppLauncherOnboardingPersistedStore];
-    class P {
+    class L {
       constructor() {
         return triggeredOnboardingContentMetadata.getTriggeredOnboardingContentMetadata();
       }
     }
     cResult[10] = items2;
-    cResult[11] = P;
-    tmp21 = P;
+    cResult[11] = L;
+    tmp21 = L;
     tmp20 = items2;
   } else {
     tmp20 = cResult[10];
@@ -296,7 +294,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     }
     const recentMessageMetadata2 = tmp24.recentMessageMetadata;
     let tmp27 = null != recentMessageMetadata2;
-    class P {
+    class L {
       constructor() {
         return triggeredOnboardingContentMetadata.getTriggeredOnboardingContentMetadata();
       }
@@ -318,7 +316,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       }
       const recentApplicationCommandMetadata2 = tmp30.recentApplicationCommandMetadata;
       let tmp33 = null != recentApplicationCommandMetadata2;
-      class P {
+      class L {
         constructor() {
           return triggeredOnboardingContentMetadata.getTriggeredOnboardingContentMetadata();
         }
@@ -337,12 +335,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       if (recentApplicationCommandMetadata != null) {
         applicationId = recentApplicationCommandMetadata.applicationId;
       }
-      const tmpResult8 = channelId(4704);
-      result = tmpResult8.useIsDismissibleContentDismissed_UNSAFE(tmp(2036).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
-      const tmpResult9 = channelId(4704);
-      const result1 = tmpResult9.useIsDismissibleContentDismissed_UNSAFE(tmp(2036).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
-      const tmpResult10 = channelId(4704);
-      const result2 = tmpResult10.useIsDismissibleContentDismissed_UNSAFE(tmp(2036).DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
+      const tmpResult8 = channelId(4898);
+      result = tmpResult8.useIsDismissibleContentDismissed_UNSAFE(tmp(2048).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
+      const tmpResult9 = channelId(4898);
+      const result1 = tmpResult9.useIsDismissibleContentDismissed_UNSAFE(tmp(2048).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
+      const tmpResult10 = channelId(4898);
+      const result2 = tmpResult10.useIsDismissibleContentDismissed_UNSAFE(tmp(2048).DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
       if (cResult[18] === stateFromStores) {
         if (cResult[19] === channelId) {
           if (cResult[20] === result2) {
@@ -382,7 +380,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
         if (!tmp45) {
           tmp45 = result;
         }
-        class P {
+        class L {
           constructor() {
             return triggeredOnboardingContentMetadata.getTriggeredOnboardingContentMetadata();
           }
@@ -407,7 +405,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
         if (tmp48) {
           obj5.canShowOnboarding = true;
           obj5.canShowBotsBanner = stateFromStores1.canShowBotsBanner;
-          class P {
+          class L {
             constructor() {
               return triggeredOnboardingContentMetadata.getTriggeredOnboardingContentMetadata();
             }
@@ -443,7 +441,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[13] = recentMessageMetadata;
   cResult[14] = obj7;
   tmp24 = obj7;
-}) : ((channelId) => {
+}) : (function useCanShowAppLauncherOnboarding(channelId) {
   let applicationId;
   let recentApplicationCommandMetadata;
   let recentMessageMetadata;
@@ -491,13 +489,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     applicationId = recentApplicationCommandMetadata.applicationId;
   }
   const BUILT_IN = BuiltInSectionId.BUILT_IN;
-  const tmp2Result6 = channelId(4704);
-  result = tmp2Result6.useIsDismissibleContentDismissed_UNSAFE(tmp2(2036).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
-  const tmp2Result7 = channelId(4704);
-  let result1 = tmp2Result7.useIsDismissibleContentDismissed_UNSAFE(tmp2(2036).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
+  const tmp2Result6 = channelId(4898);
+  result = tmp2Result6.useIsDismissibleContentDismissed_UNSAFE(tmp2(2048).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
+  const tmp2Result7 = channelId(4898);
+  let result1 = tmp2Result7.useIsDismissibleContentDismissed_UNSAFE(tmp2(2048).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
   let tmp20 = null != stateFromStores1;
-  const tmp2Result8 = channelId(4704);
-  const result2 = tmp2Result8.useIsDismissibleContentDismissed_UNSAFE(tmp2(2036).DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
+  const tmp2Result8 = channelId(4898);
+  const result2 = tmp2Result8.useIsDismissibleContentDismissed_UNSAFE(tmp2(2048).DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
   if (tmp20) {
     tmp20 = stateFromStores1.channelId === channelId;
   }

@@ -1,10 +1,10 @@
-// Module ID: 4752
-// Function ID: 4753
+// Module ID: 4946
+// Function ID: 4947
 // Name: ScreenIndexFrozen
-// Dependencies: [19, 558, 576, 4618, 2]
+// Dependencies: [19, 558, 576, 4810, 2]
 // Exports: addFrozenScreenIndexesChangedListener, freezeScreenIndex, isScreenIndexFrozen, removeFrozenScreenIndexesChangedListener
 
-// Module 4752 (ScreenIndexFrozen)
+// Module 4946 (ScreenIndexFrozen)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -14,7 +14,7 @@ let _require;
 
 const set = new Set();
 const set1 = new Set();
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsScreenIndexFrozenSharedValue(arg0) {
   let closure_0;
   let sharedValue;
   _require = arg0;
@@ -32,7 +32,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const effect = react.useEffect(tmp3, tmp4);
     return sharedValue;
   }
-  let fn = function t() {
+  let fn = function c() {
     const fn = () => {
       const result = sharedValue.set(set.has(closure_1_0));
     };
@@ -48,7 +48,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = items;
   tmp4 = items;
   tmp3 = fn;
-}) : ((arg0) => {
+}) : (function useIsScreenIndexFrozenSharedValue(arg0) {
   let closure_0;
   let sharedValue;
   _require = arg0;

@@ -1,27 +1,25 @@
-// Module ID: 17059
-// Function ID: 17060
+// Module ID: 17340
+// Function ID: 17341
 // Name: ChannelSettingsChangeRTCRegion
-// Dependencies: [729, 19, 2051, 17010, 21, 4896, 587, 4595, 1126, 10075, 6078, 6079, 8924, 558, 576, 504, 38, 2]
+// Dependencies: [729, 19, 2063, 17291, 21, 5090, 587, 4787, 1126, 9648, 6264, 6265, 8555, 558, 576, 504, 38, 2]
 
-// Module 17059 (ChannelSettingsChangeRTCRegion)
+// Module 17340 (ChannelSettingsChangeRTCRegion)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 4595 */;
-import TableRadioRow from "TableRadioRow" /* 6078 */;
-import TableRadioGroup from "TableRadioGroup" /* 6079 */;
-import Form2 from "Form" /* 8924 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10075 */;
+import native from "native" /* 4787 */;
+import TableRadioRow from "TableRadioRow" /* 6264 */;
+import TableRadioGroup from "TableRadioGroup" /* 6265 */;
+import Form2 from "Form" /* 8555 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9648 */;
 import _toArray from "_toArray" /* 729 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import RegionStore from "RegionStore" /* 17010 */;
-import createStyles from "createStyles" /* 4896 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import RegionStore from "RegionStore" /* 17291 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channelId;
 
 let obj2;
 const jsx = Fragment.jsx;
@@ -75,7 +73,7 @@ class ChannelSettingsChangeRTCRegion extends PureComponent {
       c0 = null;
       tmp = null;
     }
-    let obj = self(10075);
+    let obj = self(9648);
     obj.updateChannel({ rtcRegion: tmp });
     self.setState({ submitting: true }, () => {
       const obj = ChannelSettingsActionCreatorsDefault;
@@ -107,7 +105,7 @@ class ChannelSettingsChangeRTCRegion extends PureComponent {
 }
 const prototype = ChannelSettingsChangeRTCRegion.prototype;
 ChannelSettingsChangeRTCRegion.contextType = native.ThemeContext;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedChannelSettingsChangeRTCRegion(channelId) {
   let first;
   let tmp6;
   let tmp9;
@@ -123,7 +121,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     first = cResult[0];
   }
   if (cResult[1] !== channelId) {
-    const fn = function o() {
+    const fn = function s() {
       return ChannelStore.getChannel(channelId);
     };
     cResult[1] = channelId;
@@ -144,7 +142,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     tmp9 = cResult[4];
   }
   return tmp9;
-}) : ((channelId) => {
+}) : (function ConnectedChannelSettingsChangeRTCRegion(channelId) {
   channelId = channelId.channelId;
   const items = [ChannelStore];
   const obj = channelId(504);

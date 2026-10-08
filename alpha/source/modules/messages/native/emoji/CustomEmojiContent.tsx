@@ -1,32 +1,32 @@
-// Module ID: 9954
-// Function ID: 9955
+// Module ID: 9481
+// Function ID: 9482
 // Name: CustomEmojiContent
-// Dependencies: [19, 17, 5646, 4705, 1377, 1085, 21, 4896, 587, 4534, 1252, 8943, 4860, 9948, 504, 6664, 5650, 4532, 4507, 9883, 6694, 2028, 9955, 6895, 9949, 9956, 9958, 4892, 1126, 4580, 9952, 4574, 9960, 1987, 7588, 1188, 5601, 5981, 9961, 8924, 9962, 9963, 2]
+// Dependencies: [19, 17, 5993, 4899, 1389, 1085, 21, 5090, 587, 4726, 1264, 9328, 5054, 9475, 504, 6841, 5997, 4724, 4699, 9363, 6871, 2040, 9482, 7084, 9476, 9483, 9485, 5086, 1126, 4772, 9479, 4766, 9487, 1999, 9180, 1200, 5375, 6164, 9488, 8555, 9489, 9490, 2]
 // Exports: default
 
-// Module 9954 (CustomEmojiContent)
+// Module 9481 (CustomEmojiContent)
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4534 */;
-import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4580 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import RoleSubscriptionEmojiUtilsAll from "RoleSubscriptionEmojiUtils" /* 5650 */;
-import openUserSettings from "openUserSettings" /* 6895 */;
-import openPremiumModalDefault from "openPremiumModal" /* 8943 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9952 */;
-import StarIcon2 from "StarIcon" /* 9956 */;
-import StarOutlineIcon2 from "StarOutlineIcon" /* 9958 */;
-import guild_GuildUtils from "guild/GuildUtils" /* 9961 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4726 */;
+import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4772 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import RoleSubscriptionEmojiUtilsAll from "RoleSubscriptionEmojiUtils" /* 5997 */;
+import openUserSettings from "openUserSettings" /* 7084 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9328 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9479 */;
+import StarIcon2 from "StarIcon" /* 9483 */;
+import StarOutlineIcon2 from "StarOutlineIcon" /* 9485 */;
+import guild_GuildUtils from "guild/GuildUtils" /* 9488 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5646 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
-import UserStore from "UserStore" /* 1377 */;
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5993 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -47,7 +47,7 @@ let obj8;
 let size;
 let tmp;
 let unpackModuleId;
-const ToastActionCreatorsDefault = tmp(4574);
+const ToastActionCreatorsDefault = tmp(4766);
 ({ Pressable: hasOwnProperty, View: metroRequire } = react_native);
 ({ UserSettingsSections: c10, AnalyticEvents: unpackModuleId, AnalyticsPages: closure_12, AnalyticsSections: map1 } = Constants);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = Fragment);
@@ -366,7 +366,7 @@ export default function CustomEmojiContent(emojiNode) {
       handleOpenEmojiOptionsMenu = function handleOpenEmojiOptionsMenu() {
         obj = ActionSheetActionCreatorsDefault;
         const obj2 = { emojiSrc: emojiNode.src };
-        obj.openLazy(asyncRequire(9960, dependencyMap.paths), "EmojiOptionsActionSheet", obj2, "stack");
+        obj.openLazy(asyncRequire(9487, dependencyMap.paths), "EmojiOptionsActionSheet", obj2, "stack");
       };
       intl3 = tmp2(tmp3[28]).intl;
       obj23 = { color: expressionSourceGuild(tmp3[8]).colors.INTERACTIVE_TEXT_DEFAULT };

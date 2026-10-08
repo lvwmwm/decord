@@ -1,16 +1,16 @@
-// Module ID: 17023
-// Function ID: 17024
+// Module ID: 17304
+// Function ID: 17305
 // Name: MessagePreview
-// Dependencies: [19, 8047, 1085, 21, 558, 576, 504, 1126, 16835, 13112, 2]
+// Dependencies: [19, 8456, 1085, 21, 558, 576, 504, 1126, 17114, 9314, 2]
 
-// Module 17023 (MessagePreview)
+// Module 17304 (MessagePreview)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import ChatPreview from "ChatPreview" /* 13112 */;
+import ChatPreview from "ChatPreview" /* 9314 */;
 import react from "react" /* 19 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 8047 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 8456 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ let AnalyticsSections;
 ({ AnalyticsSections, AnalyticsObjects } = Constants);
 const jsx = Fragment.jsx;
 const analyticsLocation = { section: AnalyticsSections.CHANNEL_SEARCH, object: AnalyticsObjects.CHANNEL_SEARCH };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePreview(arg0) {
   let channelId;
   let jumpTargetId;
   let messages;
@@ -63,7 +63,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      class C {
+      class S {
         constructor() {
           return () => {
             const obj = closure_1_1(closure_1_2[8]);
@@ -72,12 +72,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const items1 = [];
-      cResult[6] = C;
+      cResult[6] = S;
       cResult[7] = items1;
       tmp12 = items1;
-      tmp11 = C;
+      tmp11 = S;
     } else {
-      class C {
+      class S {
         constructor() {
           return () => {
             const obj = closure_1_1(closure_1_2[8]);
@@ -89,7 +89,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const effect = react.useEffect(tmp11, tmp12);
     if (cResult[8] === channelId) {
-      class C {
+      class S {
         constructor() {
           return () => {
             const obj = closure_1_1(closure_1_2[8]);
@@ -109,7 +109,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = onBeforeJumpToMessage;
   cResult[5] = obj3;
   tmp10 = obj3;
-}) : ((onBeforeJumpToMessage) => {
+}) : (function MessagePreview(onBeforeJumpToMessage) {
   onBeforeJumpToMessage = onBeforeJumpToMessage.onBeforeJumpToMessage;
   const channelId = onBeforeJumpToMessage.channelId;
   let obj = onBeforeJumpToMessage(504);
@@ -128,7 +128,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj = jumpTargetId(closure_1_2[8]);
     obj.clearMessages();
   }, []);
-  return jsx(onBeforeJumpToMessage(13112).ChatPreview, { channelId, messages, jumpToChatProps: memo, analyticsLocation });
+  return jsx(onBeforeJumpToMessage(9314).ChatPreview, { channelId, messages, jumpToChatProps: memo, analyticsLocation });
 });
 const result = size.fileFinishedImporting("components_native/common/MessagePreview.tsx");
 

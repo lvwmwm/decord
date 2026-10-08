@@ -1,23 +1,24 @@
-// Module ID: 6116
-// Function ID: 6117
+// Module ID: 6295
+// Function ID: 6296
 // Name: NativeTextInput
-// Dependencies: [19, 17, 1486, 1085, 21, 558, 576, 6117, 5597, 5777, 6118, 4595, 4588, 2]
+// Dependencies: [19, 17, 1498, 1085, 21, 558, 576, 6296, 5392, 5360, 6297, 4787, 4780, 2]
+// Exports: NativeTextInput
 
-// Module 6116 (NativeTextInput)
+// Module 6295 (NativeTextInput)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 4588 */;
-import native2 from "native" /* 4595 */;
-import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 6118 */;
+import native from "native" /* 4780 */;
+import native2 from "native" /* 4787 */;
+import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 6297 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1486 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1498 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, value;
+let _require, dependencyMap;
 
 let c10;
 let closure_4;
@@ -26,13 +27,13 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const useMountEffect = tmp(5597);
+const useMountEffect = tmp(5392);
 let react = react_mod;
 ({ Pressable: closure_4, TextInput: hasOwnProperty, StyleSheet: metroRequire, View: metroImportDefault } = react_native);
 const KeyboardThemes = Constants.KeyboardThemes;
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboardBlurring(arg0) {
   let closure_0;
   let tmp2;
   let tmp3;
@@ -66,7 +67,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp3 = cResult[2];
   }
   const effect = react.useEffect(tmp2, tmp3);
-}) : ((arg0) => {
+}) : (function useKeyboardBlurring(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   const effect = react.useEffect(() => {
@@ -87,7 +88,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_12 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((value, arg1) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useControlledValueProps(value, arg1) {
   let closure_0 = arg1;
   let tmp = require;
   let obj = react2;
@@ -113,7 +114,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((value, arg1) =
         const mountLayoutEffect = tmpResult.useMountLayoutEffect(tmp8);
         const _Symbol = Symbol;
         if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj2 = { value: "start", defaultValue: "unicodeVersion" };
+          const obj2 = { value: "Array", defaultValue: "Reflect" };
           cResult[8] = obj2;
           tmp11 = obj2;
         } else {
@@ -154,7 +155,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((value, arg1) =
   cResult[4] = items;
   tmp5 = items;
   tmp4 = fn;
-}) : ((value, arg1) => {
+}) : (function useControlledValueProps(value, arg1) {
   let closure_0 = arg1;
   value = value.value;
   const defaultValue = value.defaultValue;
@@ -179,10 +180,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((value, arg1) =
       current.setNativeProps(obj);
     }
   });
-  return { value: "start", defaultValue: "unicodeVersion" };
+  return { value: "Array", defaultValue: "Reflect" };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePanGestureWrapper(arg0) {
   let ref;
   let style;
   let tmp3;
@@ -259,7 +260,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = tmp4;
   cResult[7] = obj4;
   tmp8 = obj4;
-}) : ((arg0) => {
+}) : (function usePanGestureWrapper(arg0) {
   let onPress;
   let ref;
   let style;
@@ -311,30 +312,31 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   };
   return obj2;
 });
-const forwardRefResult = react.forwardRef((keyboardAppearance, ref2) => {
-  let tmp6Result4;
-  const ref = react.useRef(null);
-  closure_12(ref);
-  const tmp4 = useBottomSheetKeyboardHandlingDefault(keyboardAppearance);
-  const tmp5 = closure_13(keyboardAppearance, ref);
-  const panGestureWrapper = closure_14(ref).panGestureWrapper;
-  native2;
-  if (null == keyboardAppearance.keyboardAppearance) {
-    const tmp6Result = native;
-    keyboardAppearance.keyboardAppearance = tmp6Result.isThemeDark(tmp8) ? KeyboardThemes.DARK : KeyboardThemes.LIGHT;
-  }
-  const obj = { ref: tmp6Result4.mergeRefs(ref, ref2) };
-  const tmp6Result3 = native;
-  const merged = Object.assign(tmp6Result3.mergeProps(keyboardAppearance, tmp4, tmp5));
-  tmp6Result4 = native;
-  const tmp11 = authStore(hasOwnProperty, obj);
-  let panGestureWrapperResult = tmp11;
-  if (!keyboardAppearance.multiline) {
-    panGestureWrapperResult = panGestureWrapper(tmp11);
-  }
-  return panGestureWrapperResult;
-});
 const result = size.fileFinishedImporting("design/components/Input/native/NativeTextInput.native.tsx");
 
 export const useKeyboardBlurring = tmp4;
-export const NativeTextInput = forwardRefResult;
+export const NativeTextInput = function TextInput(ref) {
+  let tmp7Result4;
+  ref = ref.ref;
+  const merged = Object.assign(ref, Object.assign({ ref: 0 }));
+  const ref1 = react.useRef(null);
+  closure_12(ref1);
+  const tmp5 = useBottomSheetKeyboardHandlingDefault(merged);
+  const tmp6 = closure_13(merged, ref1);
+  const panGestureWrapper = closure_14(ref1).panGestureWrapper;
+  native2;
+  if (null == merged.keyboardAppearance) {
+    const tmp7Result = native;
+    merged.keyboardAppearance = tmp7Result.isThemeDark(tmp9) ? KeyboardThemes.DARK : KeyboardThemes.LIGHT;
+  }
+  const obj = { ref: tmp7Result4.mergeRefs(ref1, ref) };
+  const tmp7Result3 = native;
+  const merged1 = Object.assign(tmp7Result3.mergeProps(merged, tmp5, tmp6));
+  tmp7Result4 = native;
+  const tmp12 = authStore(hasOwnProperty, obj);
+  let panGestureWrapperResult = tmp12;
+  if (!merged.multiline) {
+    panGestureWrapperResult = panGestureWrapper(tmp12);
+  }
+  return panGestureWrapperResult;
+};

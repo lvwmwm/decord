@@ -1,19 +1,17 @@
-// Module ID: 9174
-// Function ID: 9175
+// Module ID: 10740
+// Function ID: 10741
 // Name: WebViewContext
-// Dependencies: [32, 19, 17, 21, 4896, 558, 576, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 558, 576, 2]
 
-// Module 9174 (WebViewContext)
+// Module 10740 (WebViewContext)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let children;
 
 let hasOwnProperty;
 let metroRequire;
@@ -21,7 +19,7 @@ const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 const context = react.createContext(0);
 let closure_8 = createStyles.createStyles({ placeholderWebView: { width: 2, height: 2, position: "absolute", opacity: 0 } });
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebViewContextProvider(children) {
   let closure_129_0;
   let first;
   let items;
@@ -34,7 +32,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   [tmp4, closure_129_0] = _slicedToArray(react.useState(0), 2);
   const tmp3 = _slicedToArray(react.useState(0), 2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function b(_nativeTag) {
+    const fn = function u(_nativeTag) {
       const tmp = _nativeTag;
       if (tmp) {
         closure_1_0(_nativeTag._nativeTag);
@@ -71,7 +69,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[5] = tmp6;
   cResult[6] = tmp11;
   tmp10 = tmp11;
-}) : ((children) => {
+}) : (function WebViewContextProvider(children) {
   let items1;
   children = children.children;
   let tmp = closure_8();

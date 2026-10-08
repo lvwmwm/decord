@@ -1,24 +1,24 @@
-// Module ID: 15695
-// Function ID: 15696
+// Module ID: 15975
+// Function ID: 15976
 // Name: UserSettingsDesignSystemPile
-// Dependencies: [32, 19, 17, 21, 4896, 1188, 5978, 558, 576, 5600, 4892, 6002, 12869, 1405, 14293, 12299, 10752, 12300, 8502, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 1200, 6161, 558, 576, 5373, 5086, 6186, 13018, 1417, 14117, 12397, 11617, 12398, 8986, 2]
 
-// Module 15695 (UserSettingsDesignSystemPile)
+// Module 15975 (UserSettingsDesignSystemPile)
 import react2 from "react" /* 576 */;
-import native from "native" /* 1188 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1405 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Stack_Stack from "Stack/Stack" /* 5600 */;
-import GuildIcon from "GuildIcon" /* 5978 */;
-import Card_Card from "Card/Card" /* 6002 */;
-import ClipView from "ClipView" /* 8502 */;
-import ListUtils from "ListUtils" /* 12300 */;
-import AvatarDuoPile2 from "AvatarDuoPile" /* 14293 */;
+import native from "native" /* 1200 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1417 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Stack_Stack from "Stack/Stack" /* 5373 */;
+import GuildIcon from "GuildIcon" /* 6161 */;
+import Card_Card from "Card/Card" /* 6186 */;
+import ClipView from "ClipView" /* 8986 */;
+import ListUtils from "ListUtils" /* 12398 */;
+import AvatarDuoPile2 from "AvatarDuoPile" /* 14117 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let items1 = [GuildIcon.GuildIconSizes.XSMALL, GuildIcon.GuildIconSizes.SMALL_32
 let closure_11 = ["Clyde", "Phibi", "Cap"];
 let closure_12 = ["test", "cats", "Evil Marcus", "robot overlords", "not a bug", "O M G"];
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SampleCard(arg0) {
   let children;
   let noScroll;
   let title;
@@ -96,7 +96,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = noScroll;
   cResult[6] = tmp12;
   tmp11 = tmp12;
-}) : ((arg0) => {
+}) : (function SampleCard(arg0) {
   let children;
   let noScroll;
   let title;
@@ -117,7 +117,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp4(Card, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsDesignSystemPile() {
   let first;
   let items2;
   let names;
@@ -370,7 +370,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp34 = cResult[7];
   }
   return tmp34;
-}) : (() => {
+}) : (function UserSettingsDesignSystemPile() {
   let names;
   let names2;
   let obj2;

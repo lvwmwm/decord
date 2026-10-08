@@ -1,17 +1,17 @@
-// Module ID: 6778
-// Function ID: 6779
+// Module ID: 6954
+// Function ID: 6955
 // Name: MemberSafetyPermissionsUtils
-// Dependencies: [32, 2070, 2074, 4515, 1377, 4519, 1085, 1097, 4520, 558, 576, 504, 2]
+// Dependencies: [32, 2082, 2086, 4707, 1389, 4711, 1085, 1097, 4712, 558, 576, 504, 2]
 // Exports: canAccessMemberSafetyPage, canBulkBanUser, canPruneGuildMembers, getContextForPermission, hasBulkBanningPermissions
 
-// Module 6778 (MemberSafetyPermissionsUtils)
+// Module 6954 (MemberSafetyPermissionsUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import GuildRecord from "GuildRecord" /* 2070 */;
-import MemberSafetyConstants from "MemberSafetyConstants" /* 4519 */;
+import GuildRecord from "GuildRecord" /* 2082 */;
+import MemberSafetyConstants from "MemberSafetyConstants" /* 4711 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import UserStore from "UserStore" /* 1377 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,7 @@ const isGuildOwner = GuildRecord.isGuildOwner;
 let closure_8 = MemberSafetyConstants.MemberSafetyPagePermissions;
 ({ GuildFeatures: c9, Permissions: c10 } = Constants);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanAccessMemberSafetyPage(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -64,7 +64,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : ((arg0) => {
+}) : (function useCanAccessMemberSafetyPage(arg0) {
   let closure_0;
   _require = arg0;
   const obj = require("get initialized");
@@ -83,7 +83,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_11 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanAccessBulkBanningFeature(arg0) {
   let closure_0;
   let first;
   let tmp8;
@@ -126,7 +126,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     stateFromStores = tmpResult.useStateFromStores(first, tmp8, tmp9);
   }
   return stateFromStores;
-}) : ((arg0) => {
+}) : (function useCanAccessBulkBanningFeature(arg0) {
   let closure_0;
   _require = arg0;
   let stateFromStores = closure_11(arg0);
@@ -148,7 +148,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return stateFromStores;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanAccessInviteCodeFeature(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -165,7 +165,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function o() {
+    const fn = function c() {
       const guild = GuildStore.getGuild(closure_0);
       const canResult = null != guild && PermissionStore.can(constants.MANAGE_GUILD, guild);
       return canResult;
@@ -182,7 +182,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : ((arg0) => {
+}) : (function useCanAccessInviteCodeFeature(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildStore, PermissionStore];
@@ -195,7 +195,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanBulkBanUser(arg0, arg1, arg2) {
   let closure_0;
   let closure_2;
   let first;
@@ -243,7 +243,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
   cResult[5] = items1;
   tmp8 = items1;
   tmp7 = fn;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useCanBulkBanUser(arg0, arg1, arg2) {
   let closure_0;
   let closure_2;
   _require = arg0;

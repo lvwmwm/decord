@@ -1,20 +1,18 @@
-// Module ID: 12767
-// Function ID: 12768
+// Module ID: 12915
+// Function ID: 12916
 // Name: SharedStateUtils
-// Dependencies: [32, 19, 558, 576, 8060, 2]
+// Dependencies: [32, 19, 558, 576, 8469, 2]
 
-// Module 12767 (SharedStateUtils)
+// Module 12915 (SharedStateUtils)
 import react2 from "react" /* 576 */;
-import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 8060 */;
+import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 8469 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let str;
-
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUrlParts(url) {
   let hostname;
   let protocol;
   let tmp4;
@@ -86,7 +84,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
   cResult[5] = tmp6;
   cResult[6] = url1;
   tmp8 = url1;
-}) : ((str) => {
+}) : (function useUrlParts(str) {
   let hostname;
   let protocol;
   let closure_0 = str;
@@ -109,7 +107,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
 });
 let closure_4 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalState(url) {
   let authorityPrefix;
   let first;
   let hostname;
@@ -156,7 +154,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
                 }
               }
             }
-            class S {
+            class O {
               constructor() {
                 onCancel();
                 if (onClose != null) {
@@ -182,7 +180,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
             cResult[16] = tmp9;
             tmp8 = tmp9;
           }
-          class S {
+          class O {
             constructor() {
               onCancel();
               if (onClose != null) {
@@ -192,13 +190,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
           }
           cResult[6] = onCancel;
           cResult[7] = onClose;
-          cResult[8] = S;
-          tmp7 = S;
+          cResult[8] = O;
+          tmp7 = O;
         }
       }
     }
   }
-  const fn = function s() {
+  const fn = function n() {
     const tmp = first;
     if (tmp) {
       trustUrl(url);
@@ -215,7 +213,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
   cResult[4] = url;
   cResult[5] = fn;
   tmp6 = fn;
-}) : ((url) => {
+}) : (function useModalState(url) {
   let authorityPrefix;
   let first;
   let hostname;

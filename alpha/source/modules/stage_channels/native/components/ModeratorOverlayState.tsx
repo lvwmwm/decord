@@ -1,16 +1,16 @@
-// Module ID: 9193
-// Function ID: 9194
+// Module ID: 10761
+// Function ID: 10762
 // Name: ModeratorOverlayState
-// Dependencies: [1254, 1259, 558, 576, 4498, 2]
+// Dependencies: [1266, 1271, 558, 576, 4690, 2]
 
-// Module 9193 (ModeratorOverlayState)
+// Module 10761 (ModeratorOverlayState)
 import react from "react" /* 576 */;
-import _slicedToArray from "_slicedToArray" /* 4498 */;
-import module_1254 from "module_1254" /* 1254 */;
+import _slicedToArray from "_slicedToArray" /* 4690 */;
+import module_1266 from "module_1266" /* 1266 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_2 = module_1254.createWithEqualityFn((arg0, arg1) => {
+let closure_2 = module_1266.createWithEqualityFn((arg0, arg1) => {
   let closure_0 = arg0;
   let closure_1 = arg1;
   let obj = {
@@ -28,7 +28,7 @@ let closure_2 = module_1254.createWithEqualityFn((arg0, arg1) => {
   new Set();
   return obj;
 });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModeratorOverlayChannelState(arg0) {
   let first;
   let tmp6;
   let closure_0 = arg0;
@@ -92,7 +92,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = obj2;
   cResult[4] = hasItem;
   tmp8 = hasItem;
-}) : ((arg0) => {
+}) : (function useModeratorOverlayChannelState(arg0) {
   let closure_0 = arg0;
   const obj = closure_2((overlayDismissedChannelIds) => overlayDismissedChannelIds.overlayDismissedChannelIds, _slicedToArray.shallow);
   let closure_1 = closure_2((dismissOverlay) => dismissOverlay.dismissOverlay, _slicedToArray.shallow);

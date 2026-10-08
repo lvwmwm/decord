@@ -1,24 +1,24 @@
-// Module ID: 10154
-// Function ID: 10155
+// Module ID: 9740
+// Function ID: 9741
 // Name: StickerPickerEmptyState
-// Dependencies: [32, 19, 17, 5694, 2031, 1085, 1379, 21, 4896, 558, 576, 10124, 10140, 6664, 6688, 504, 1252, 1126, 4892, 5916, 4861, 4862, 5981, 8894, 10148, 5601, 2]
+// Dependencies: [32, 19, 17, 6035, 2043, 1085, 1391, 21, 5090, 558, 576, 9709, 9725, 6841, 6865, 504, 1264, 1126, 5086, 6189, 5055, 5056, 6164, 9437, 9734, 5375, 2]
 
-// Module 10154 (StickerPickerEmptyState)
+// Module 9740 (StickerPickerEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import StickersConstants from "StickersConstants" /* 2031 */;
-import HapticUtils from "HapticUtils" /* 4861 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4862 */;
-import StickersHooks from "StickersHooks" /* 10124 */;
-import StickerDefault from "Sticker" /* 10140 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import StickersConstants from "StickersConstants" /* 2043 */;
+import HapticUtils from "HapticUtils" /* 5055 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5056 */;
+import StickersHooks from "StickersHooks" /* 9709 */;
+import StickerDefault from "Sticker" /* 9725 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 5694 */;
+import StickersStore from "StickersStore" /* 6035 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ const PremiumUpsellTypes = PremiumConstants.PremiumUpsellTypes;
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 let closure_13 = createStyles.createStyles({ header: { marginBottom: 8, textAlign: "center" }, blurb: { lineHeight: 18, textAlign: "center", marginBottom: 12 }, premiumButton: { marginTop: 20, alignSelf: "center", paddingLeft: 5, paddingRight: 10, flexGrow: 0 }, nitroWheel: { width: 32 }, stickersRow: { flexDirection: "row", alignSelf: "center" }, sticker: { paddingHorizontal: 2 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyStateSticker(arg0) {
   let isFocused;
   let sticker;
   const obj = react2;
@@ -63,7 +63,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = id;
   cResult[3] = tmp6;
   tmp5 = tmp6;
-}) : ((sticker) => {
+}) : (function EmptyStateSticker(sticker) {
   sticker = sticker.sticker;
   const isFocused = sticker.isFocused;
   const obj = StickersHooks;
@@ -99,7 +99,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   analyticsLocations = tmp6(analyticsLocations(first[14]).EMPTY_STATE).analyticsLocations;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [StickersStore];
-    const fn = function p() {
+    const fn = function b() {
       let stickerById;
       const mapped = EMPTY_STATE_STICKERS.map((item) => stickerById.getStickerById(item));
       return mapped.filter((item) => null != item);
@@ -312,8 +312,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   _require = tmp;
   let obj = require("StickersHooks");
   const fetchStickerPacks = obj.useFetchStickerPacks();
-  const tmp3 = analyticsLocations(6664);
-  analyticsLocations = tmp3(analyticsLocations(6688).EMPTY_STATE).analyticsLocations;
+  const tmp3 = analyticsLocations(6841);
+  analyticsLocations = tmp3(analyticsLocations(6865).EMPTY_STATE).analyticsLocations;
   let obj2 = require("get initialized");
   const items = [StickersStore];
   const stateFromStoresArray = obj2.useStateFromStoresArray(items, () => {
@@ -377,8 +377,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   };
   Button = require("components/Button/Button").Button;
-  obj9 = { source: analyticsLocations(8894), style: tmp.nitroWheel, resizeMode: "contain" };
-  tmp6 = analyticsLocations(5981);
+  obj9 = { source: analyticsLocations(9437), style: tmp.nitroWheel, resizeMode: "contain" };
+  tmp6 = analyticsLocations(6164);
   intl3 = require("intl").intl;
   items2[3] = closure_11(View, obj7);
   return closure_12(View, obj3);

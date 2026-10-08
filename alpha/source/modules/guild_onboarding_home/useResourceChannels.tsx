@@ -1,18 +1,18 @@
-// Module ID: 16554
-// Function ID: 16555
+// Module ID: 16809
+// Function ID: 16810
 // Name: useResourceChannels
-// Dependencies: [2051, 5083, 558, 576, 573, 2]
+// Dependencies: [2063, 6912, 558, 576, 573, 2]
 
-// Module 16554 (useResourceChannels)
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5083 */;
+// Module 16809 (useResourceChannels)
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 6912 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useResourceChannels(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -28,7 +28,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function s() {
+    const fn = function o() {
       let channel;
       const resourceChannels = GuildOnboardingHomeSettingsStore.getResourceChannels(closure_0);
       return resourceChannels.filter((channelId) => null != channel.getChannel(channelId.channelId));
@@ -41,7 +41,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(573);
   return tmpResult.useStateFromStoresArray(first, tmp7);
-}) : ((arg0) => {
+}) : (function useResourceChannels(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildOnboardingHomeSettingsStore, ChannelStore];

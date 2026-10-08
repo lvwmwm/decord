@@ -1,14 +1,14 @@
-// Module ID: 16306
-// Function ID: 16307
+// Module ID: 16566
+// Function ID: 16567
 // Name: TypingSubtitle
-// Dependencies: [19, 17, 21, 558, 576, 16305, 5819, 5871, 4892, 2]
+// Dependencies: [19, 17, 21, 558, 576, 16565, 8134, 8183, 5086, 2]
 
-// Module 16306 (TypingSubtitle)
+// Module 16566 (TypingSubtitle)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5819 */;
-import useSubtitleStyles from "useSubtitleStyles" /* 16305 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8134 */;
+import useSubtitleStyles from "useSubtitleStyles" /* 16565 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -18,7 +18,7 @@ let c3;
 let closure_4;
 const View = react_native.View;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TypingSubtitle(arg0) {
   let channel;
   let channelName;
   let guild;
@@ -48,7 +48,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           if (null != channelName) {
             const obj3 = { variant: "text-xs/medium", children: items };
             items = [channelName, "  \u00B7  "];
-            tmp11 = React3(tmp(4892).Text, obj3);
+            tmp11 = React3(tmp(5086).Text, obj3);
           }
           cResult[7] = channelName;
           cResult[8] = tmp11;
@@ -108,13 +108,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     channelIconComponentWithGuild = tmpResult.getChannelIconComponentWithGuild(channel, guild);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(5871).TextIcon;
+    channelIconComponentWithGuild = tmp(8183).TextIcon;
   }
   cResult[0] = channel;
   cResult[1] = guild;
   cResult[2] = channelIconComponentWithGuild;
   tmp5 = channelIconComponentWithGuild;
-}) : ((arg0) => {
+}) : (function TypingSubtitle(arg0) {
   let channel;
   let channelName;
   let guild;
@@ -132,7 +132,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     channelIconComponentWithGuild = tmpResult.getChannelIconComponentWithGuild(channel, guild);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(5871).TextIcon;
+    channelIconComponentWithGuild = tmp(8183).TextIcon;
   }
   let tmp7 = null;
   const obj2 = { style: subtitleStyles.subtitleRow, children: items };
@@ -144,11 +144,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items = [tmp7, ];
   let tmp5Result = null;
   const obj4 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, style: subtitleStyles.subtitleText, children: items2 };
-  const Text = tmp(4892).Text;
+  const Text = tmp(5086).Text;
   if (null != channelName) {
     const obj5 = { variant: "text-xs/medium", children: items1 };
     items1 = [channelName, "  \u00B7  "];
-    tmp5Result = tmp5(tmp(4892).Text, obj5);
+    tmp5Result = tmp5(tmp(5086).Text, obj5);
   }
   items2 = [tmp5Result, text];
   items[1] = React3(Text, obj4);

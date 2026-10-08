@@ -1,33 +1,34 @@
-// Module ID: 12527
-// Function ID: 12528
+// Module ID: 12623
+// Function ID: 12624
 // Name: NotificationSettingsMessageUnreadGuildActionSheet
-// Dependencies: [19, 5077, 1085, 5078, 1095, 21, 558, 576, 12517, 1126, 6621, 9865, 6616, 12528, 2]
+// Dependencies: [19, 5971, 1085, 5972, 1095, 21, 558, 576, 12613, 1126, 6798, 10425, 6793, 12624, 2]
 
-// Module 12527 (NotificationSettingsMessageUnreadGuildActionSheet)
+// Module 12623 (NotificationSettingsMessageUnreadGuildActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import ReadStateConstants from "ReadStateConstants" /* 5078 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6621 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 9865 */;
-import NotificationSettingsMessageUnreadActionSheetDefault from "NotificationSettingsMessageUnreadActionSheet" /* 12528 */;
+import ReadStateConstants from "ReadStateConstants" /* 5972 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6798 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10425 */;
+import NotificationSettingsMessageUnreadActionSheetDefault from "NotificationSettingsMessageUnreadActionSheet" /* 12624 */;
 import react from "react" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, guildId, tmp2, tmp6, tmp7;
+let _require;
 
 let tmp4;
-const NotificationSettingsUtils = tmp4(6616);
+const NotificationSettingsUtils = tmp4(6793);
 const UserNotificationSettings = Constants.UserNotificationSettings;
 const UnreadSetting = ReadStateConstants.UnreadSetting;
-const constants = UserSettingsConstants.GuildNotificationSettingsFlags;
+let closure_6 = UserSettingsConstants.GuildNotificationSettingsFlags;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotificationSettingsMessageUnreadGuildActionSheet(guildId) {
   let notification;
   let tmp5;
+  let tmp8;
   let unread;
   _require = guildId;
   let obj = require("react");
@@ -48,87 +49,45 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     tmp5 = cResult[1];
   }
   if (cResult[2] !== guildId.guildId) {
-    class E {
-      constructor(arg0) {
-        guildFlags = closure_3.getGuildFlags(closure_0.guildId);
-        tmp2 = closure_2;
-        tmp3 = closure_1(closure_2[10]);
-        updateGuildNotificationSettings = tmp3.updateGuildNotificationSettings;
-        guildId = closure_0.guildId;
-        tmp4 = closure_0;
-        tmp5 = closure_0(closure_2[11]);
-        withGuildUnreadFlags = tmp5.withGuildUnreadFlags;
-        if (guildId === UnreadSetting.ALL_MESSAGES) {
-          tmp7 = closure_6;
-          UNREADS_ONLY_MENTIONS = closure_6.UNREADS_ALL_MESSAGES;
-        } else {
-          tmp6 = closure_6;
-          UNREADS_ONLY_MENTIONS = closure_6.UNREADS_ONLY_MENTIONS;
-        }
-        obj = { flags: withGuildUnreadFlags(guildFlags, UNREADS_ONLY_MENTIONS) };
-        NotificationLabel = tmp4(tmp2[12]).NotificationLabel;
-        result = updateGuildNotificationSettings(guildId, obj, NotificationLabel.unreads(guildId));
-        return;
+    const fn = function c(toggleExpandedHistory) {
+      let UNREADS_ONLY_MENTIONS;
+      const guildFlags = UserGuildSettingsStore.getGuildFlags(guildId.guildId);
+      const updateGuildNotificationSettings = NotificationSettingsModalActionCreatorsDefault.updateGuildNotificationSettings;
+      guildId = guildId.guildId;
+      NotificationSettingsModalActionCreatorsDefault;
+      const withGuildUnreadFlags = notificationSettingsFlagUtils.withGuildUnreadFlags;
+      notificationSettingsFlagUtils;
+      if (toggleExpandedHistory === UnreadSetting.ALL_MESSAGES) {
+        UNREADS_ONLY_MENTIONS = constants.UNREADS_ALL_MESSAGES;
+      } else {
+        UNREADS_ONLY_MENTIONS = constants.UNREADS_ONLY_MENTIONS;
       }
-    }
+      const obj = { flags: withGuildUnreadFlags(guildFlags, UNREADS_ONLY_MENTIONS) };
+      const NotificationLabel = NotificationSettingsUtils.NotificationLabel;
+      const result = updateGuildNotificationSettings(guildId, obj, NotificationLabel.unreads(toggleExpandedHistory));
+    };
     cResult[2] = guildId.guildId;
-    cResult[3] = E;
+    cResult[3] = fn;
+    tmp8 = fn;
   } else {
-    class E {
-      constructor(arg0) {
-        guildFlags = closure_3.getGuildFlags(closure_0.guildId);
-        tmp2 = closure_2;
-        tmp3 = closure_1(closure_2[10]);
-        updateGuildNotificationSettings = tmp3.updateGuildNotificationSettings;
-        guildId = closure_0.guildId;
-        tmp4 = closure_0;
-        tmp5 = closure_0(closure_2[11]);
-        withGuildUnreadFlags = tmp5.withGuildUnreadFlags;
-        if (guildId === UnreadSetting.ALL_MESSAGES) {
-          tmp7 = closure_6;
-          UNREADS_ONLY_MENTIONS = closure_6.UNREADS_ALL_MESSAGES;
-        } else {
-          tmp6 = closure_6;
-          UNREADS_ONLY_MENTIONS = closure_6.UNREADS_ONLY_MENTIONS;
-        }
-        obj = { flags: withGuildUnreadFlags(guildFlags, UNREADS_ONLY_MENTIONS) };
-        NotificationLabel = tmp4(tmp2[12]).NotificationLabel;
-        result = updateGuildNotificationSettings(guildId, obj, NotificationLabel.unreads(guildId));
-        return;
-      }
-    }
+    tmp8 = cResult[3];
   }
   if (cResult[4] === tmp5) {
-    class E {
-      constructor(arg0) {
-        guildFlags = closure_3.getGuildFlags(closure_0.guildId);
-        tmp2 = closure_2;
-        tmp3 = closure_1(closure_2[10]);
-        updateGuildNotificationSettings = tmp3.updateGuildNotificationSettings;
-        guildId = closure_0.guildId;
-        tmp4 = closure_0;
-        tmp5 = closure_0(closure_2[11]);
-        withGuildUnreadFlags = tmp5.withGuildUnreadFlags;
-        if (guildId === UnreadSetting.ALL_MESSAGES) {
-          tmp7 = closure_6;
-          UNREADS_ONLY_MENTIONS = closure_6.UNREADS_ALL_MESSAGES;
-        } else {
-          tmp6 = closure_6;
-          UNREADS_ONLY_MENTIONS = closure_6.UNREADS_ONLY_MENTIONS;
-        }
-        obj = { flags: withGuildUnreadFlags(guildFlags, UNREADS_ONLY_MENTIONS) };
-        NotificationLabel = tmp4(tmp2[12]).NotificationLabel;
-        result = updateGuildNotificationSettings(guildId, obj, NotificationLabel.unreads(guildId));
-        return;
+    if (cResult[5] === tmp8) {
+      let tmp9;
+      if (cResult[6] === unread) {
+        tmp9 = cResult[7];
       }
+      return tmp9;
     }
   }
+  const tmp10 = jsx(NotificationSettingsMessageUnreadActionSheetDefault, { disabledMentionOnlyWithReason: tmp5, value: unread, onChange: tmp8 });
   cResult[4] = tmp5;
   cResult[5] = tmp8;
   cResult[6] = unread;
-  cResult[7] = jsx(NotificationSettingsMessageUnreadActionSheetDefault, { disabledMentionOnlyWithReason: tmp5, value: unread, onChange: tmp8 });
-  jsx(NotificationSettingsMessageUnreadActionSheetDefault, { disabledMentionOnlyWithReason: tmp5, value: unread, onChange: tmp8 });
-}) : ((guildId) => {
+  cResult[7] = tmp10;
+  tmp9 = tmp10;
+}) : (function NotificationSettingsMessageUnreadGuildActionSheet(guildId) {
   let notification;
   let unread;
   _require = guildId;

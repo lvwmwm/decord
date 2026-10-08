@@ -1,18 +1,18 @@
-// Module ID: 14496
-// Function ID: 14497
+// Module ID: 14756
+// Function ID: 14757
 // Name: useTabSelectedGuildId
-// Dependencies: [4705, 5623, 558, 576, 573, 2]
+// Dependencies: [4899, 5968, 558, 576, 573, 2]
 
-// Module 14496 (useTabSelectedGuildId)
+// Module 14756 (useTabSelectedGuildId)
 import react from "react" /* 576 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
-import SortedGuildStore from "SortedGuildStore" /* 5623 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
+import SortedGuildStore from "SortedGuildStore" /* 5968 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const useStateFromStores = tmp(573);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTabSelectedGuildId() {
   let flattenedGuildIds;
   let tmp4;
   let tmp5;
@@ -20,7 +20,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SelectedGuildStore, SortedGuildStore];
-    const fn = function n() {
+    const fn = function s() {
       let guildId = SelectedGuildStore.getGuildId();
       const lastSelectedGuildId = SelectedGuildStore.getLastSelectedGuildId();
       const first = flattenedGuildIds.getFlattenedGuildIds()[0];
@@ -41,7 +41,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = useStateFromStores;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useTabSelectedGuildId() {
   let flattenedGuildIds;
   const items = [SelectedGuildStore, SortedGuildStore];
   const obj = useStateFromStores;

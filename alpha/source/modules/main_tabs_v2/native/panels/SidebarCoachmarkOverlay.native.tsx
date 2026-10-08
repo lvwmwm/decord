@@ -1,21 +1,19 @@
-// Module ID: 16187
-// Function ID: 16188
+// Module ID: 16447
+// Function ID: 16448
 // Name: SidebarCoachmarkOverlay
-// Dependencies: [32, 19, 17, 1085, 21, 558, 576, 6659, 5991, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 558, 576, 6836, 6174, 2]
 
-// Module 16187 (SidebarCoachmarkOverlay)
+// Module 16447 (SidebarCoachmarkOverlay)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import useInitialValueDefault from "useInitialValue" /* 5991 */;
-import LayerContext from "LayerContext" /* 6659 */;
+import useInitialValueDefault from "useInitialValue" /* 6174 */;
+import LayerContext from "LayerContext" /* 6836 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let manager;
 
 let StyleSheet;
 let hasOwnProperty;
@@ -27,7 +25,7 @@ const NOOP = Constants.NOOP;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 const context = react.createContext(null);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SidebarCoachmarkOverlay(arg0) {
   let children;
   let enabled;
   let first;
@@ -82,7 +80,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tmp4;
   cResult[3] = tmp7;
   tmp6 = tmp7;
-}) : ((enabled) => {
+}) : (function SidebarCoachmarkOverlay(enabled) {
   let items;
   enabled = enabled.enabled;
   const children = enabled.children;
@@ -107,7 +105,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp2(Provider, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((manager) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function SidebarCoachmarkOverlayLayer(manager) {
   let first;
   let obj = manager(576);
   const cResult = obj.c(14);
@@ -153,7 +151,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((manager) => {
       let tmp9;
       const _Symbol = Symbol;
       if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-        const fn3 = function p(children) {
+        const fn3 = function _(children) {
           const obj = { children: children.component };
           return closure_1_7(React.Fragment, obj, children.key);
         };
@@ -184,7 +182,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((manager) => {
     cResult[13] = tmp16;
     tmp11 = tmp16;
   }
-  const fn = function f() {
+  const fn = function y() {
     let closure_0 = manager;
     manager.invalidate = () => closure_1_1({});
     return () => {
@@ -195,7 +193,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((manager) => {
   cResult[2] = manager;
   cResult[3] = fn;
   tmp4 = fn;
-}) : ((manager) => {
+}) : (function SidebarCoachmarkOverlayLayer(manager) {
   let items1;
   manager = manager.manager;
   let closure_1 = _slicedToArray(react.useState({}), 2)[1];

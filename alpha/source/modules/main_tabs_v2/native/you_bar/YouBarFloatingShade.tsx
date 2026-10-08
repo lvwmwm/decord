@@ -1,26 +1,26 @@
-// Module ID: 16377
-// Function ID: 16378
+// Module ID: 16637
+// Function ID: 16638
 // Name: YouBarFloatingShade
-// Dependencies: [19, 17, 4703, 14915, 16262, 21, 4896, 558, 576, 504, 4586, 587, 14917, 1484, 4745, 15986, 4702, 1103, 5612, 2]
+// Dependencies: [19, 17, 4897, 15177, 16522, 21, 5090, 558, 576, 504, 4778, 587, 15179, 1496, 4939, 16246, 4896, 1103, 5387, 2]
 
-// Module 16377 (YouBarFloatingShade)
+// Module 16637 (YouBarFloatingShade)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import useToken2 from "useToken" /* 4586 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4702 */;
-import useChatLayoutDefault from "useChatLayout" /* 4745 */;
-import LinearGradientDefault from "LinearGradient" /* 5612 */;
-import YouBarConstants from "YouBarConstants" /* 14915 */;
-import useYouBarTotalHeight from "useYouBarTotalHeight" /* 14917 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 16262 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import useToken2 from "useToken" /* 4778 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4896 */;
+import useChatLayoutDefault from "useChatLayout" /* 4939 */;
+import LinearGradientDefault from "LinearGradient" /* 5387 */;
+import YouBarConstants from "YouBarConstants" /* 15177 */;
+import useYouBarTotalHeight from "useYouBarTotalHeight" /* 15179 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 16522 */;
 import react from "react" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4703 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4897 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ const GUILD_LIST_WIDTH = GuildsBarConstants.GUILD_LIST_WIDTH;
 ({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
 let closure_10 = createStyles.createStyles({ container: { position: "absolute", bottom: 0, left: 0, right: 0 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarGradientBackground() {
   let gradientPreset;
   let tmp4;
   let tmp5;
@@ -60,7 +60,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     token = useToken(nativeDefault.colors.MOBILE_FLOATINGBAR_BACKGROUND_SCRIM);
   }
   return token;
-}) : (() => {
+}) : (function useYouBarGradientBackground() {
   let gradientPreset;
   const items = [ClientThemesBackgroundStore];
   const obj = get_initialized;
@@ -74,7 +74,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return token;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function YouBarFloatingShade() {
   let items1;
   let items2;
   let items5;
@@ -92,7 +92,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     width = tmp8 + GUILD_LIST_WIDTH;
   }
   const tmpResult = client_themes_ClientThemesUtils;
-  const gradientValue = tmpResult.useGradientValue(tmp(4702).GradientPercentage.END);
+  const gradientValue = tmpResult.useGradientValue(tmp(4896).GradientPercentage.END);
   const tmpResult4 = useToken2;
   const token = tmpResult4.useToken(tmp7(587).colors.BACKGROUND_BASE_LOWER);
   let tmp12 = closure_11();
@@ -261,7 +261,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   cResult[7] = tmp15;
   cResult[8] = tmp17;
   tmp16 = tmp17;
-}) : (() => {
+}) : (function YouBarFloatingShade() {
   let items;
   let items1;
   let items2;
@@ -276,7 +276,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     width = tmp7 + GUILD_LIST_WIDTH;
   }
   const tmp2Result = client_themes_ClientThemesUtils;
-  const gradientValue = tmp2Result.useGradientValue(tmp2(4702).GradientPercentage.END);
+  const gradientValue = tmp2Result.useGradientValue(tmp2(4896).GradientPercentage.END);
   const tmp2Result4 = useToken2;
   const token = tmp2Result4.useToken(tmp6(587).colors.BACKGROUND_BASE_LOWER);
   let tmp11 = closure_11();

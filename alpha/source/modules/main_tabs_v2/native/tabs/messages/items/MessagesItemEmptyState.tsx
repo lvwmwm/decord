@@ -1,20 +1,20 @@
-// Module ID: 16058
-// Function ID: 16059
+// Module ID: 16318
+// Function ID: 16319
 // Name: MessagesItemEmptyState
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4743, 16018, 1126, 4892, 5601, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 4937, 16278, 1126, 5086, 5375, 2]
 
-// Module 16058 (MessagesItemEmptyState)
+// Module 16318 (MessagesItemEmptyState)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import RootNavigationRef from "RootNavigationRef" /* 4743 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16018 */;
+import RootNavigationRef from "RootNavigationRef" /* 4937 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16278 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ createStyles = createStyles.createStyles;
 obj3 = { marginBottom: nativeDefault.space.PX_16, flexShrink: 1, flexGrow: 1 };
 obj4 = { marginBottom: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_8, textAlign: "center" };
 let closure_8 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemEmptyState() {
   let first;
   let intl3;
   let items;
@@ -120,7 +120,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     const _Symbol3 = Symbol;
     if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
       const obj5 = { text: intl3.string(intl4.t.zIJnA6), onPress: first, size: "lg" };
-      const Button = tmp(5601).Button;
+      const Button = tmp(5375).Button;
       intl3 = tmp(1126).intl;
       const tmp25 = metroRequire(Button, obj5);
       cResult[12] = tmp25;
@@ -155,7 +155,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   cResult[4] = tmp6;
   cResult[5] = tmp12;
   tmp11 = tmp12;
-}) : (() => {
+}) : (function MessagesItemEmptyState() {
   let intl;
   let intl2;
   let intl3;

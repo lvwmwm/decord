@@ -1,23 +1,21 @@
-// Module ID: 9438
-// Function ID: 9439
+// Module ID: 9100
+// Function ID: 9101
 // Name: NsfwServerInviteWarningAlert
-// Dependencies: [19, 21, 558, 576, 5720, 9439, 8117, 8119, 5720, 1126, 5716, 2]
+// Dependencies: [19, 21, 558, 576, 5303, 9101, 7492, 5915, 5303, 1126, 5299, 2]
 // Exports: showNsfwServerInviteWarningAlert
 
-// Module 9438 (NsfwServerInviteWarningAlert)
+// Module 9100 (NsfwServerInviteWarningAlert)
 import Fragment from "Fragment" /* 21 */;
-import useAlertStore from "useAlertStore" /* 5716 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8117 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8119 */;
+import useAlertStore from "useAlertStore" /* 5299 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5915 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7492 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp, tmp3, tmp5, tmp9;
-
 const jsx = Fragment.jsx;
 let c5 = "nsfw-server-invite-warning";
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwServerInviteWarningAlert(onConfirm) {
   let _confirm;
   let description;
   let tmp6;
@@ -51,10 +49,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
       }
       if (cResult[6] === _confirm.text) {
         if (cResult[7] === tmp8) {
+          let tmp9;
           let tmp13;
           let tmp15;
           let tmp18;
           let tmp21;
+          if (cResult[8] === str2) {
+            tmp9 = cResult[9];
+          }
           let str4 = "secondary";
           if (goBackIsPrimary) {
             str4 = "primary";
@@ -117,83 +119,36 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
           }
           cResult[14] = tmp9;
           cResult[15] = tmp15;
-          class A {
-            constructor() {
-              if (confirm.joins) {
-                tmp8 = onConfirm;
-                tmp9 = onConfirm();
-              } else {
-                tmp = closure_1;
-                tmp2 = closure_1();
-                tmp3 = closure_1;
-                tmp4 = closure_2;
-                tmp5 = closure_1(closure_2[6]);
-                obj = { entryPoint: null };
-                tmp6 = closure_0;
-                showAgeVerificationGetStartedModal = tmp5.showAgeVerificationGetStartedModal;
-                obj.entryPoint = closure_0(closure_2[7]).AgeVerificationModalEntryPoint.NSFW_AGE_GATE;
-                result = showAgeVerificationGetStartedModal(obj);
-              }
-              return;
-            }
-          }
+          cResult[16] = goBackIsPrimary;
           cResult[17] = tmp21;
           tmp20 = tmp21;
         }
       }
+      const tmp11 = jsx(onConfirm(_confirm[8]).AlertActionButton, { variant: str2, text: _confirm.text, onPress: tmp8 }, "confirm");
       cResult[6] = _confirm.text;
       cResult[7] = tmp8;
       cResult[8] = str2;
-      cResult[9] = jsx(onConfirm(_confirm[8]).AlertActionButton, { variant: str2, text: _confirm.text, onPress: tmp8 }, "confirm");
-      jsx(onConfirm(_confirm[8]).AlertActionButton, { variant: str2, text: _confirm.text, onPress: tmp8 }, "confirm");
-      class A {
-        constructor() {
-          if (confirm.joins) {
-            tmp8 = onConfirm;
-            tmp9 = onConfirm();
-          } else {
-            tmp = closure_1;
-            tmp2 = closure_1();
-            tmp3 = closure_1;
-            tmp4 = closure_2;
-            tmp5 = closure_1(closure_2[6]);
-            obj = { entryPoint: null };
-            tmp6 = closure_0;
-            showAgeVerificationGetStartedModal = tmp5.showAgeVerificationGetStartedModal;
-            obj.entryPoint = closure_0(closure_2[7]).AgeVerificationModalEntryPoint.NSFW_AGE_GATE;
-            result = showAgeVerificationGetStartedModal(obj);
-          }
-          return;
-        }
-      }
+      cResult[9] = tmp11;
+      tmp9 = tmp11;
     }
   }
-  class A {
-    constructor() {
-      if (confirm.joins) {
-        tmp8 = onConfirm;
-        tmp9 = onConfirm();
-      } else {
-        tmp = closure_1;
-        tmp2 = closure_1();
-        tmp3 = closure_1;
-        tmp4 = closure_2;
-        tmp5 = closure_1(closure_2[6]);
-        obj = { entryPoint: null };
-        tmp6 = closure_0;
-        showAgeVerificationGetStartedModal = tmp5.showAgeVerificationGetStartedModal;
-        obj.entryPoint = closure_0(closure_2[7]).AgeVerificationModalEntryPoint.NSFW_AGE_GATE;
-        result = showAgeVerificationGetStartedModal(obj);
-      }
-      return;
+  const fn = function v() {
+    if (_confirm.joins) {
+      onConfirm();
+    } else {
+      dismissModalCallback();
+      const obj = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.NSFW_AGE_GATE };
+      const showAgeVerificationGetStartedModal = AgeVerificationActionCreatorsDefault.showAgeVerificationGetStartedModal;
+      AgeVerificationActionCreatorsDefault;
+      const result = showAgeVerificationGetStartedModal(obj);
     }
-  }
+  };
   cResult[2] = _confirm.joins;
   cResult[3] = dismissModalCallback;
   cResult[4] = onConfirm;
-  cResult[5] = A;
-  tmp8 = A;
-}) : ((onConfirm) => {
+  cResult[5] = fn;
+  tmp8 = fn;
+}) : (function NsfwServerInviteWarningAlert(onConfirm) {
   let tmp10;
   onConfirm = onConfirm.onConfirm;
   let _confirm;

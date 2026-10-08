@@ -1,24 +1,24 @@
-// Module ID: 16163
-// Function ID: 16164
+// Module ID: 16423
+// Function ID: 16424
 // Name: GuildMFAWarning
-// Dependencies: [5, 19, 17, 1085, 21, 4896, 587, 10736, 2115, 1987, 4571, 558, 576, 16164, 1126, 4892, 1188, 5916, 2]
+// Dependencies: [5, 19, 17, 1085, 21, 5090, 587, 10490, 2127, 1999, 4763, 558, 576, 16424, 1126, 5086, 1200, 6189, 2]
 // Exports: getScaledGuildMFAWarningHeight
 
-// Module 16163 (GuildMFAWarning)
+// Module 16423 (GuildMFAWarning)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Pressables from "Pressables" /* 5916 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10736 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16164 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Pressables from "Pressables" /* 6189 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10490 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16424 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -100,7 +100,7 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: 10,
 createStyles = createStyles.createStyles;
 obj3 = { color: nativeDefault.unsafe_rawColors.BLUE_345, fontFamily: Fonts.PRIMARY_SEMIBOLD };
 let closure_8 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildMFAWarning() {
   let items;
   let items1;
   let items2;
@@ -141,7 +141,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[4] !== tmp4.MFAWarningLink) {
     const obj3 = { variant: "text-xs/medium", color: "text-default", children: items };
     items = [tmp10, ];
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     const obj4 = { style: MFAWarningLink, children: items1 };
     items1 = [" ", tmp12];
     items[1] = metroImportDefault(native.LegacyText, obj4);
@@ -169,7 +169,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[8] = tmp14;
   cResult[9] = tmp18;
   tmp17 = tmp18;
-}) : (() => {
+}) : (function GuildMFAWarning() {
   let items;
   let items1;
   let items2;

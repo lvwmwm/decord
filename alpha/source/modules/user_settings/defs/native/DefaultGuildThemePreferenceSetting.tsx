@@ -1,22 +1,22 @@
-// Module ID: 15145
-// Function ID: 15146
+// Module ID: 15407
+// Function ID: 15408
 // Name: DefaultGuildThemePreferenceSetting
-// Dependencies: [19, 7645, 2028, 558, 576, 1126, 1197, 11142, 4778, 2]
+// Dependencies: [19, 7966, 2040, 558, 576, 1126, 1209, 11262, 4972, 2]
 
-// Module 15145 (DefaultGuildThemePreferenceSetting)
+// Module 15407 (DefaultGuildThemePreferenceSetting)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 4778 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 4972 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDefaultGuildThemePreferenceOptions() {
   let first;
   let intl;
   let intl2;
@@ -35,17 +35,19 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => react.useMemo(() => {
-  let intl;
-  let intl2;
-  const obj = { label: intl.string(intl3.t.aN3RNQ), value: preloaded_user_settings.GuildThemeSourcePreference.GUILD };
-  intl = intl3.intl;
-  const items = [obj, ];
-  const obj2 = { label: intl2.string(intl3.t.js8y7t), value: preloaded_user_settings.GuildThemeSourcePreference.PERSONAL };
-  intl2 = intl3.intl;
-  items[1] = obj2;
-  return items;
-}, []));
+}) : (function useDefaultGuildThemePreferenceOptions() {
+  return react.useMemo(() => {
+    let intl;
+    let intl2;
+    const obj = { label: intl.string(intl3.t.aN3RNQ), value: preloaded_user_settings.GuildThemeSourcePreference.GUILD };
+    intl = intl3.intl;
+    const items = [obj, ];
+    const obj2 = { label: intl2.string(intl3.t.js8y7t), value: preloaded_user_settings.GuildThemeSourcePreference.PERSONAL };
+    intl2 = intl3.intl;
+    items[1] = obj2;
+    return items;
+  }, []);
+});
 let obj = {
   useTitle() {
     const intl = intl3.intl;

@@ -1,25 +1,25 @@
-// Module ID: 7025
-// Function ID: 7026
+// Module ID: 7213
+// Function ID: 7214
 // Name: ConnectionsHooks
-// Dependencies: [32, 19, 5447, 1377, 1085, 7026, 1102, 558, 576, 504, 7028, 12, 5449, 2]
+// Dependencies: [32, 19, 5757, 1389, 1085, 7214, 1102, 558, 576, 504, 7216, 12, 5759, 2]
 // Exports: useLegacyPlatformType
 
-// Module 7025 (ConnectionsHooks)
+// Module 7213 (ConnectionsHooks)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import PlatformsDefault from "Platforms" /* 5449 */;
-import KeyboardConstants from "KeyboardConstants" /* 7026 */;
+import PlatformsDefault from "Platforms" /* 5759 */;
+import KeyboardConstants from "KeyboardConstants" /* 7214 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5447 */;
-import UserStore from "UserStore" /* 1377 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5757 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, forUserProfile, set;
+let _require, set;
 
 let PlatformTypes;
 let metroImportDefault;
@@ -33,7 +33,7 @@ let items1 = [items];
 new Map(items1);
 let closure_12 = 30 * DurationsDefault.Millis.DAY;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((forUserProfile) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePlatformAllowed(forUserProfile) {
   let allowPlayStationStaging;
   let currentUser;
   let tmp4;
@@ -108,7 +108,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((forUserProfile) => {
   cResult[5] = forUserProfile;
   cResult[6] = fn2;
   tmp9 = fn2;
-}) : ((forUserProfile) => {
+}) : (function usePlatformAllowed(forUserProfile) {
   let currentUser;
   forUserProfile = forUserProfile.forUserProfile;
   let allowPlayStationStaging;
@@ -159,7 +159,7 @@ const items6 = [PlatformTypes.STEAM, 1];
 items3[3] = items6;
 const items7 = [PlatformTypes.TWITCH, 1];
 items3[4] = items7;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePlatforms() {
   let accounts;
   let tmp14;
   let tmp15;
@@ -216,7 +216,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
     return tmp13;
   }
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function h(type) {
+    const fn2 = function _(type) {
       let hasItem = set3.has(type.type);
       const obj = set3;
       if (hasItem) {
@@ -236,7 +236,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
     tmp14 = cResult[8];
   }
   if (cResult[9] !== tmp9) {
-    const fn3 = function v(type) {
+    const fn3 = function h(type) {
       return set.has(type.type);
     };
     cResult[9] = tmp9;
@@ -249,29 +249,23 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
     const fn4 = function w(hasMetadata) {
       return hasMetadata.hasMetadata;
     };
-    class P {
-      constructor(type) {
-        return !set2.has(type.type);
-      }
-    }
+    const fn5 = function v(type) {
+      return !set2.has(type.type);
+    };
     class E {
       constructor(name) {
         return name.name;
       }
     }
     cResult[11] = fn4;
-    cResult[12] = P;
+    cResult[12] = fn5;
     cResult[13] = E;
+    tmp17 = fn5;
     tmp16 = fn4;
-    tmp17 = P;
     tmp18 = E;
   } else {
     tmp16 = cResult[11];
-    class P {
-      constructor(type) {
-        return !set2.has(type.type);
-      }
-    }
+    tmp17 = cResult[12];
     class E {
       constructor(name) {
         return name.name;
@@ -281,13 +275,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   const sortBy = set(12).sortBy;
   set(12);
   const items1 = [tmp14, tmp15, tmp16, tmp17, tmp18];
-  const arr3 = set(5449);
+  const arr3 = set(5759);
   const sortByResult = sortBy(arr3.filter(tmp8), items1);
   cResult[5] = tmp9;
   cResult[6] = tmp8;
   cResult[7] = sortByResult;
   tmp13 = sortByResult;
-}) : (() => {
+}) : (function usePlatforms() {
   let accounts;
   let memo;
   let stateFromStores;
@@ -332,7 +326,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
 });
 const map1 = new Map(items3);
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmptyStatePlatforms() {
   let first;
   let tmp5;
   const obj = react2;
@@ -381,7 +375,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[2];
   }
   return tmp5;
-}) : (() => {
+}) : (function useEmptyStatePlatforms() {
   const tmp = closure_13({ forUserProfile: false });
   let closure_0 = tmp;
   let items = [tmp];

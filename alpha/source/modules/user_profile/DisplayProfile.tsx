@@ -1,12 +1,12 @@
-// Module ID: 7871
-// Function ID: 7872
+// Module ID: 8289
+// Function ID: 8290
 // Name: DisplayProfile
-// Dependencies: [1379, 7126, 4534, 1402, 7848, 2]
+// Dependencies: [1391, 7311, 4726, 1414, 8266, 2]
 
-// Module 7871 (DisplayProfile)
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import AvatarUtils from "AvatarUtils" /* 1402 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 7848 */;
+// Module 8289 (DisplayProfile)
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import AvatarUtils from "AvatarUtils" /* 1414 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8266 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -168,35 +168,35 @@ class DisplayProfile {
     const obj6 = { id: self.userId, banner: self.banner, canAnimate, size };
     guildMemberBannerURL = obj.getUserBannerURL(obj6);
   }
-  getPreviewBanner(pendingBanner, canAnimate, arg2) {
+  getPreviewBanner(bannerChange, setting, arg2) {
     let bannerURL;
     let num = arg2;
     if (arg2 === undefined) {
       num = 480;
     }
-    if (null != pendingBanner) {
+    if (null != bannerChange) {
       let imageUri;
-      if (canAnimate) {
-        imageUri = pendingBanner.imageUri;
+      if (setting) {
+        imageUri = bannerChange.imageUri;
       } else {
-        imageUri = pendingBanner.staticImageUri;
+        imageUri = bannerChange.staticImageUri;
         if (imageUri == null) {
-          imageUri = pendingBanner.imageUri;
+          imageUri = bannerChange.imageUri;
         }
       }
       bannerURL = imageUri;
     } else {
       const self = this;
-      if (null === pendingBanner) {
+      if (null === bannerChange) {
         let userBannerURL = null;
         if (self.isUsingGuildMemberBanner()) {
-          const obj3 = { id: self.userId, banner: self._userProfile.banner, canAnimate, size: num };
+          const obj3 = { id: self.userId, banner: self._userProfile.banner, canAnimate: setting, size: num };
           const obj2 = AvatarUtils;
           userBannerURL = obj2.getUserBannerURL(obj3);
         }
         bannerURL = userBannerURL;
       } else {
-        const obj = { canAnimate, size: num };
+        const obj = { canAnimate: setting, size: num };
         bannerURL = self.getBannerURL(obj);
       }
     }

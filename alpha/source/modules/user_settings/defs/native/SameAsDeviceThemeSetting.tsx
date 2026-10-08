@@ -1,22 +1,22 @@
-// Module ID: 15137
-// Function ID: 15138
+// Module ID: 15399
+// Function ID: 15400
 // Name: SameAsDeviceThemeSetting
-// Dependencies: [1193, 7645, 558, 576, 504, 14994, 11142, 1126, 2]
+// Dependencies: [1205, 7966, 558, 576, 504, 15256, 11262, 1126, 2]
 
-// Module 15137 (SameAsDeviceThemeSetting)
+// Module 15399 (SameAsDeviceThemeSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 14994 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 15256 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSameAsDeviceThemeValue() {
   let sameAsDeviceThemeEnabled;
   let tmp4;
   let tmp5;
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useSameAsDeviceThemeValue() {
   let sameAsDeviceThemeEnabled;
   const items = [ThemeStore];
   const obj = get_initialized;

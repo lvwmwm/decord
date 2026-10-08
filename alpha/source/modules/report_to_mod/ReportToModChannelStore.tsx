@@ -1,12 +1,12 @@
-// Module ID: 12447
-// Function ID: 12448
+// Module ID: 12543
+// Function ID: 12544
 // Name: ReportToModChannelStore
-// Dependencies: [570, 4756, 1259, 7204, 558, 576, 2]
+// Dependencies: [570, 4950, 1271, 7383, 558, 576, 2]
 
-// Module 12447 (ReportToModChannelStore)
+// Module 12543 (ReportToModChannelStore)
 import react from "react" /* 576 */;
 import module_570 from "module_570" /* 570 */;
-import combine_mod from "combine" /* 4756 */;
+import combine_mod from "combine" /* 4950 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ let obj2 = create(persist((arg0, arg1) => {
   };
   return obj;
 }, obj));
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowResolvedFlagsForChannel(arg0) {
   let tmp4;
   let closure_0 = arg0;
   const obj = react;
@@ -90,7 +90,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         cResult[9] = obj4;
         tmp4 = obj4;
       }
-      const fn = function n(arg0) {
+      const fn = function h(arg0) {
         return obj2.setShowResolvedFlags(closure_0, arg0);
       };
       cResult[4] = arg0;
@@ -108,7 +108,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = flag;
   }
   return tmp4;
-}) : ((arg0) => {
+}) : (function useShouldShowResolvedFlagsForChannel(arg0) {
   let obj3;
   let closure_0 = arg0;
   const obj = obj2();

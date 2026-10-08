@@ -1,57 +1,75 @@
-// Module ID: 7928
-// Function ID: 7929
+// Module ID: 8347
+// Function ID: 8348
 // Name: VisualEffectViewThemed
-// Dependencies: [19, 21, 558, 576, 4797, 4735, 5780, 2]
+// Dependencies: [109, 19, 21, 558, 576, 4991, 4929, 5363, 2]
 
-// Module 7928 (VisualEffectViewThemed)
+// Module 8347 (VisualEffectViewThemed)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import shared from "shared" /* 4735 */;
-import useThemeDefault from "useTheme" /* 4797 */;
+import useThemeDefault from "useTheme" /* 4991 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp3;
-const VisualEffectViewDefault = tmp3(5780);
+let tmp;
+let tmp9;
+const shared = tmp(4929);
+const VisualEffectViewDefault = tmp9(5363);
+let closure_3 = ["ref"];
 const jsx = Fragment.jsx;
-const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VisualEffectViewThemed(ref) {
+  let tmp4;
+  let tmp5;
   const obj = react2;
-  const cResult = obj.c(4);
+  const cResult = obj.c(7);
+  if (cResult[0] !== ref) {
+    const tmp8 = _objectWithoutProperties(ref, closure_3);
+    cResult[0] = ref;
+    cResult[1] = tmp8;
+    cResult[2] = ref.ref;
+    tmp5 = ref;
+    tmp4 = tmp8;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+  }
   let str = "dark";
-  const tmp4 = useThemeDefault();
-  const obj2 = shared;
-  if (obj2.isThemeLight(tmp4)) {
+  const tmp10 = useThemeDefault();
+  const tmpResult = shared;
+  if (tmpResult.isThemeLight(tmp10)) {
     str = "light";
   }
-  if (cResult[0] === str) {
-    if (cResult[1] === arg0) {
-      let tmp5;
-      if (cResult[2] === ref) {
-        tmp5 = cResult[3];
+  if (cResult[3] === str) {
+    if (cResult[4] === tmp4) {
+      let tmp11;
+      if (cResult[5] === tmp5) {
+        tmp11 = cResult[6];
       }
-      return tmp5;
+      return tmp11;
     }
   }
   VisualEffectViewDefault;
-  const merged = Object.assign(arg0);
-  const tmp8 = <tmp3Result ref={arg1} blurTheme={str} />;
-  cResult[0] = str;
-  cResult[1] = arg0;
-  cResult[2] = ref;
-  cResult[3] = tmp8;
-  tmp5 = tmp8;
-}) : ((arg0, ref) => {
+  const merged = Object.assign(tmp4);
+  const tmp14 = <tmp9Result ref={tmp5} blurTheme={str} />;
+  cResult[3] = str;
+  cResult[4] = tmp4;
+  cResult[5] = tmp5;
+  cResult[6] = tmp14;
+  tmp11 = tmp14;
+}) : (function VisualEffectViewThemed(ref) {
+  ref = ref.ref;
+  const merged = Object.assign(ref, Object.assign({ ref: 0 }));
   let str = "dark";
-  const tmp3 = useThemeDefault();
+  const tmp4 = useThemeDefault();
   const obj = shared;
-  if (obj.isThemeLight(tmp3)) {
+  if (obj.isThemeLight(tmp4)) {
     str = "light";
   }
   VisualEffectViewDefault;
-  const merged = Object.assign(arg0);
-  return <tmpResult ref={arg1} blurTheme={str} />;
-}));
+  const merged1 = Object.assign(merged);
+  return <tmp2Result ref={ref} blurTheme={str} />;
+});
 const result = size.fileFinishedImporting("modules/visual_effect_view/native/VisualEffectViewThemed.tsx");
 
-export default forwardRefResult;
+export default tmp3;

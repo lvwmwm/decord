@@ -1,17 +1,17 @@
-// Module ID: 7542
-// Function ID: 7543
+// Module ID: 8114
+// Function ID: 8115
 // Name: renderMessageMarkup
-// Dependencies: [7543, 4883, 2]
+// Dependencies: [8115, 5077, 2]
 // Exports: default, getInitialParserStateFromMessage, renderAutomodMessageMarkup, renderAutomodMessageMarkupToAST, renderMessageContentMarkup, renderMessageMarkupToAST, renderMessageMarkupToASTWithParser, renderMessageMarkupWithParser
 
-// Module 7542 (renderMessageMarkup)
-import MarkupUtilsDefault from "MarkupUtils" /* 4883 */;
-import MarkupPostProcessors from "MarkupPostProcessors" /* 7543 */;
+// Module 8114 (renderMessageMarkup)
+import MarkupUtilsDefault from "MarkupUtils" /* 5077 */;
+import MarkupPostProcessors from "MarkupPostProcessors" /* 8115 */;
 import size from "module_2" /* 2 */;
 
 let hasSpoilerEmbeds;
 
-const f95199 = (arg0) => {
+const f97143 = (arg0) => {
   let tmp = arg0;
   if (!Array.isArray(arg0)) {
     const items = [arg0];
@@ -157,9 +157,9 @@ export const renderMessageContentMarkup = function renderMessageContentMarkup(no
 };
 export const renderAutomodMessageMarkup = function renderAutomodMessageMarkup(arg0, highlightWord, channelId) {
   const obj = { allowLinks: false, allowDevLinks: false, allowEmojiLinks: false, allowGameMentions: false, mentionChannels: [], soundboardSounds: [], formatInline: false, noStyleAndInteraction: false, allowHeading: false, allowList: false, disableAutoBlockNewlines: true, highlightWord, disableAnimatedEmoji: false, channelId, muted: false };
-  return MarkupUtilsDefault.parseAutoModerationSystemMessage(arg0, true, obj, f95199);
+  return MarkupUtilsDefault.parseAutoModerationSystemMessage(arg0, true, obj, f97143);
 };
 export const renderAutomodMessageMarkupToAST = function renderAutomodMessageMarkupToAST(arg0, highlightWord, channelId) {
   const obj = { allowLinks: false, allowDevLinks: false, allowEmojiLinks: false, allowGameMentions: false, mentionChannels: [], soundboardSounds: [], formatInline: false, noStyleAndInteraction: false, allowHeading: false, allowList: false, disableAutoBlockNewlines: true, highlightWord, disableAnimatedEmoji: false, channelId, muted: false };
-  return MarkupUtilsDefault.parseAutoModerationSystemMessageToAST(arg0, true, obj, f95199);
+  return MarkupUtilsDefault.parseAutoModerationSystemMessageToAST(arg0, true, obj, f97143);
 };

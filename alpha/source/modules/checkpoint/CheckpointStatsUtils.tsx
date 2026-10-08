@@ -1,12 +1,12 @@
-// Module ID: 15537
-// Function ID: 15538
+// Module ID: 15799
+// Function ID: 15800
 // Name: CheckpointStatsUtils
-// Dependencies: [1391, 2066, 2]
+// Dependencies: [1403, 2078, 2]
 // Exports: statsFromServer
 
-// Module 15537 (CheckpointStatsUtils)
-import GuildRecordUtils from "GuildRecordUtils" /* 2066 */;
-import UserRecord from "UserRecord" /* 1391 */;
+// Module 15799 (CheckpointStatsUtils)
+import GuildRecordUtils from "GuildRecordUtils" /* 2078 */;
+import UserRecord from "UserRecord" /* 1403 */;
 import size from "module_2" /* 2 */;
 
 let game;

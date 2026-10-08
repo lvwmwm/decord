@@ -1,18 +1,18 @@
-// Module ID: 12958
-// Function ID: 12959
+// Module ID: 13237
+// Function ID: 13238
 // Name: MobileWishlistSuggestionsExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1452, 558, 576, 2]
 // Exports: getIsMobileWishlistSuggestionsEnabled
 
-// Module 12958 (MobileWishlistSuggestionsExperiment)
+// Module 13237 (MobileWishlistSuggestionsExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-07-smag-mobile-wishlist-suggestions", kind: "user", defaultConfig: { isEnabled: false }, variations: { 0: { isEnabled: false }, 1: { isEnabled: true } } };
 let closure_2 = ApexExperiment.createApexExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsMobileWishlistSuggestionsEnabled(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -25,7 +25,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2).isEnabled;
-}) : ((location) => {
+}) : (function useIsMobileWishlistSuggestionsEnabled(location) {
   const obj = { location };
   return closure_2.useConfig(obj).isEnabled;
 });

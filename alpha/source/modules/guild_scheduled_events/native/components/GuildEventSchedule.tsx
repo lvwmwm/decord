@@ -1,14 +1,14 @@
-// Module ID: 9220
-// Function ID: 9221
+// Module ID: 8515
+// Function ID: 8516
 // Name: GuildEventSchedule
-// Dependencies: [19, 21, 558, 576, 4467, 9198, 1126, 9221, 2]
+// Dependencies: [19, 21, 558, 576, 4659, 8496, 1126, 8516, 2]
 
-// Module 9220 (GuildEventSchedule)
+// Module 8515 (GuildEventSchedule)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
-import _modDef4467 from "module_4467" /* 4467 */;
-import ScheduleUtils from "ScheduleUtils" /* 9198 */;
-import GuildEventModalComponents from "GuildEventModalComponents" /* 9221 */;
+import _modDef4659 from "module_4659" /* 4659 */;
+import ScheduleUtils from "ScheduleUtils" /* 8496 */;
+import GuildEventModalComponents from "GuildEventModalComponents" /* 8516 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -18,21 +18,21 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventSchedule(onChange) {
   let first;
   let guildEvent;
-  let intl2;
   let intl3;
+  let intl4;
   let items;
   let recurrenceId;
   let schedule;
-  let tmp12;
+  let tmp11;
   let obj = react2;
   const cResult = obj.c(29);
   ({ guildEvent, recurrenceId, schedule } = onChange);
   onChange = onChange.onChange;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp6 = _modDef4467();
+    const tmp6 = _modDef4659();
     cResult[0] = tmp6;
     first = tmp6;
   } else {
@@ -41,18 +41,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
   if (cResult[1] === recurrenceId) {
     let tmp7;
     let tmp8;
+    let tmp9;
     if (cResult[2] === schedule) {
       tmp7 = cResult[3];
       tmp8 = cResult[4];
-      class C {
-        constructor(arg0) {
-          obj = {};
-          merged = Object.assign(schedule);
-          obj.startDate = onChange;
-          tmp2 = onChange(obj);
-          return;
-        }
-      }
+      tmp9 = cResult[5];
     }
     if (cResult[8] === onChange) {
       let tmp15;
@@ -61,107 +54,64 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
       }
       if (cResult[11] === onChange) {
         let tmp16;
-        let tmp19;
         let tmp18;
+        let tmp17;
         if (cResult[12] === schedule) {
           tmp16 = cResult[13];
         }
         const _Symbol = Symbol;
-        class T {
-          constructor(arg0) {
-            obj = {};
-            merged = Object.assign(schedule);
-            obj.endDate = onChange;
-            tmp2 = onChange(obj);
-            return;
-          }
-        }
+        const startDate = schedule.startDate;
         if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-          const string = tmp(1126).intl.string;
-          class T {
-            constructor(arg0) {
-              obj = {};
-              merged = Object.assign(schedule);
-              obj.endDate = onChange;
-              tmp2 = onChange(obj);
-              return;
-            }
-          }
           const intl = tmp(1126).intl;
-          const stringResult = intl.string(intl5.t["6dGmCD"]);
-          cResult[14] = tmp20;
-          cResult[15] = stringResult;
-          tmp19 = stringResult;
-          tmp18 = tmp20;
+          const stringResult = intl.string(intl5.t.kKOIwJ);
+          const intl2 = tmp(1126).intl;
+          const stringResult1 = intl2.string(intl5.t["6dGmCD"]);
+          cResult[14] = stringResult;
+          cResult[15] = stringResult1;
+          tmp18 = stringResult1;
+          tmp17 = stringResult;
         } else {
-          tmp18 = cResult[14];
-          tmp19 = cResult[15];
+          tmp17 = cResult[14];
+          tmp18 = cResult[15];
         }
         if (cResult[16] === tmp15) {
           if (cResult[17] === tmp8) {
-            let tmp22;
+            let tmp21;
             if (cResult[18] === schedule.startDate) {
-              tmp22 = cResult[19];
+              tmp21 = cResult[19];
             }
             if (cResult[20] === guildEvent.scheduled_end_time) {
               if (cResult[21] === tmp16) {
                 if (cResult[22] === tmp7) {
                   if (cResult[23] === tmp9) {
-                    let tmp25;
+                    let tmp24;
                     if (cResult[24] === schedule.endDate) {
-                      tmp25 = cResult[25];
+                      tmp24 = cResult[25];
                     }
-                    if (cResult[26] === tmp22) {
+                    if (cResult[26] === tmp21) {
                       let tmp28;
-                      if (cResult[27] === tmp25) {
+                      if (cResult[27] === tmp24) {
                         tmp28 = cResult[28];
                       }
                       return tmp28;
                     }
-                    class T {
-                      constructor(arg0) {
-                        obj = {};
-                        merged = Object.assign(schedule);
-                        obj.endDate = onChange;
-                        tmp2 = onChange(obj);
-                        return;
-                      }
-                    }
-                    const obj5 = { children: items };
-                    items = [tmp22, tmp25];
-                    const tmp30 = metroRequire(hasOwnProperty, obj5);
-                    cResult[26] = tmp22;
-                    cResult[27] = tmp25;
-                    cResult[28] = tmp30;
-                    tmp28 = tmp30;
+                    const obj3 = { children: items };
+                    items = [tmp21, tmp24];
+                    const tmp31 = metroRequire(hasOwnProperty, obj3);
+                    cResult[26] = tmp21;
+                    cResult[27] = tmp24;
+                    cResult[28] = tmp31;
+                    tmp28 = tmp31;
                   }
                 }
               }
             }
-            class T {
-              constructor(arg0) {
-                obj = {};
-                merged = Object.assign(schedule);
-                obj.endDate = onChange;
-                tmp2 = onChange(obj);
-                return;
-              }
-            }
             let tmp26 = null != guildEvent.scheduled_end_time;
             if (tmp26) {
-              const obj6 = { date: null, onChange: tmp16, minimumDate: tmp9, maximumDate: tmp7, dateLabel: intl2.string(intl5.t.CTLgZJ), timeLabel: intl3.string(intl5.t.j2RuXF) };
-              class T {
-                constructor(arg0) {
-                  obj = {};
-                  merged = Object.assign(schedule);
-                  obj.endDate = onChange;
-                  tmp2 = onChange(obj);
-                  return;
-                }
-              }
-              const GuildEventDatetime = tmp(9221).GuildEventDatetime;
-              intl2 = tmp(1126).intl;
+              const obj6 = { date: schedule.endDate, onChange: tmp16, minimumDate: tmp9, maximumDate: tmp7, dateLabel: intl3.string(intl5.t.CTLgZJ), timeLabel: intl4.string(intl5.t.j2RuXF) };
+              const GuildEventDatetime = tmp(8516).GuildEventDatetime;
               intl3 = tmp(1126).intl;
+              intl4 = tmp(1126).intl;
               tmp26 = React3(GuildEventDatetime, obj6);
             }
             cResult[20] = guildEvent.scheduled_end_time;
@@ -170,88 +120,63 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
             cResult[23] = tmp9;
             cResult[24] = schedule.endDate;
             cResult[25] = tmp26;
-            tmp25 = tmp26;
+            tmp24 = tmp26;
           }
         }
-        const obj7 = { date: tmp17, onChange: tmp15, minimumDate: first, maximumDate: tmp8, dateLabel: tmp18, timeLabel: tmp19 };
-        const tmp24 = React3(GuildEventModalComponents.GuildEventDatetime, obj7);
+        const obj7 = { date: startDate, onChange: tmp15, minimumDate: first, maximumDate: tmp8, dateLabel: tmp17, timeLabel: tmp18 };
+        const tmp23 = React3(GuildEventModalComponents.GuildEventDatetime, obj7);
         cResult[16] = tmp15;
         cResult[17] = tmp8;
         cResult[18] = schedule.startDate;
-        cResult[19] = tmp24;
-        tmp22 = tmp24;
+        cResult[19] = tmp23;
+        tmp21 = tmp23;
       }
-      class T {
-        constructor(arg0) {
-          obj = {};
-          merged = Object.assign(schedule);
-          obj.endDate = onChange;
-          tmp2 = onChange(obj);
-          return;
-        }
+      function handleChangeEventEndTime(endDate) {
+        const obj = { endDate };
+        const merged = Object.assign(schedule);
+        onChange(obj);
       }
       cResult[11] = onChange;
       cResult[12] = schedule;
-      cResult[13] = T;
-      tmp16 = T;
+      cResult[13] = handleChangeEventEndTime;
+      tmp16 = handleChangeEventEndTime;
     }
-    class C {
-      constructor(arg0) {
-        obj = {};
-        merged = Object.assign(schedule);
-        obj.startDate = onChange;
-        tmp2 = onChange(obj);
-        return;
-      }
+    function handleChangeEventStartTime(startDate) {
+      const obj = { startDate };
+      const merged = Object.assign(schedule);
+      onChange(obj);
     }
     cResult[8] = onChange;
     cResult[9] = schedule;
-    cResult[10] = C;
-    tmp15 = C;
+    cResult[10] = handleChangeEventStartTime;
+    tmp15 = handleChangeEventStartTime;
   }
-  const obj2 = _modDef4467();
+  const obj2 = _modDef4659();
   const addResult = obj2.add(ScheduleUtils.MAX_DAYS_AHEAD_AN_EVENT_CAN_START, "days");
   if (cResult[6] !== schedule.startDate) {
-    const obj3 = _modDef4467(schedule.startDate);
-    class T {
-      constructor(arg0) {
-        obj = {};
-        merged = Object.assign(schedule);
-        obj.endDate = onChange;
-        tmp2 = onChange(obj);
-        return;
-      }
-    }
-    const addResult1 = obj3.add(15, "minutes");
+    const obj4 = _modDef4659(schedule.startDate);
+    const addResult1 = obj4.add(15, "minutes");
     cResult[6] = schedule.startDate;
     cResult[7] = addResult1;
-    tmp12 = addResult1;
+    tmp11 = addResult1;
   } else {
-    tmp12 = cResult[7];
+    tmp11 = cResult[7];
   }
-  const obj4 = _modDef4467();
-  const addResult2 = obj4.add(ScheduleUtils.MAX_DAYS_AHEAD_AN_EVENT_CAN_END, "days");
+  const obj5 = _modDef4659();
+  const addResult2 = obj5.add(ScheduleUtils.MAX_DAYS_AHEAD_AN_EVENT_CAN_END, "days");
   if (null != recurrenceId) {
-    const add = addResult.add;
-    class T {
-      constructor(arg0) {
-        obj = {};
-        merged = Object.assign(schedule);
-        obj.endDate = onChange;
-        tmp2 = onChange(obj);
-        return;
-      }
-    }
+    addResult.add(ScheduleUtils.MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
     addResult2.add(ScheduleUtils.MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
   }
   cResult[1] = recurrenceId;
   cResult[2] = schedule;
   cResult[3] = addResult2;
   cResult[4] = addResult;
-  cResult[5] = tmp12;
+  cResult[5] = tmp11;
+  tmp9 = tmp11;
   tmp8 = addResult;
   tmp7 = addResult2;
-}) : ((schedule) => {
+}) : (function GuildEventSchedule(schedule) {
   let guildEvent;
   let intl;
   let intl2;
@@ -261,23 +186,23 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
   schedule = schedule.schedule;
   const onChange = schedule.onChange;
   ({ guildEvent, recurrenceId } = schedule);
-  const tmp2 = onChange(4467)();
-  let obj = onChange(4467)();
-  const addResult = obj.add(schedule(9198).MAX_DAYS_AHEAD_AN_EVENT_CAN_START, "days");
+  const tmp2 = onChange(4659)();
+  let obj = onChange(4659)();
+  const addResult = obj.add(schedule(8496).MAX_DAYS_AHEAD_AN_EVENT_CAN_START, "days");
   const items = [schedule.startDate];
   const memo = react.useMemo(() => {
-    const obj = _modDef4467(schedule.startDate);
+    const obj = _modDef4659(schedule.startDate);
     return obj.add(15, "minutes");
   }, items);
-  const obj3 = onChange(4467)();
-  const addResult1 = obj3.add(schedule(9198).MAX_DAYS_AHEAD_AN_EVENT_CAN_END, "days");
+  const obj3 = onChange(4659)();
+  const addResult1 = obj3.add(schedule(8496).MAX_DAYS_AHEAD_AN_EVENT_CAN_END, "days");
   if (null != recurrenceId) {
-    addResult.add(schedule(9198).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
-    addResult1.add(schedule(9198).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
+    addResult.add(schedule(8496).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
+    addResult1.add(schedule(8496).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
   }
   const obj2 = {
     date: schedule.startDate,
-    onChange(startDate) {
+    onChange: function handleChangeEventStartTime(startDate) {
       const obj = { startDate };
       const merged = Object.assign(schedule);
       onChange(obj);
@@ -287,7 +212,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
     dateLabel: intl.string(schedule(1126).t.kKOIwJ),
     timeLabel: intl2.string(schedule(1126).t["6dGmCD"])
   };
-  const GuildEventDatetime = tmp3(9221).GuildEventDatetime;
+  const GuildEventDatetime = tmp3(8516).GuildEventDatetime;
   intl = tmp3(1126).intl;
   intl2 = tmp3(1126).intl;
   const children = [closure_4(GuildEventDatetime, obj2), ];
@@ -298,7 +223,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
   if (tmp9Result) {
     const obj4 = {
       date: schedule.endDate,
-      onChange(endDate) {
+      onChange: function handleChangeEventEndTime(endDate) {
           const obj = { endDate };
           const merged = Object.assign(schedule);
           onChange(obj);
@@ -308,7 +233,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
       dateLabel: intl3.string(schedule(1126).t.CTLgZJ),
       timeLabel: intl4.string(schedule(1126).t.j2RuXF)
     };
-    const GuildEventDatetime2 = tmp3(9221).GuildEventDatetime;
+    const GuildEventDatetime2 = tmp3(8516).GuildEventDatetime;
     intl3 = tmp3(1126).intl;
     intl4 = tmp3(1126).intl;
     tmp9Result = tmp9(GuildEventDatetime2, obj4);

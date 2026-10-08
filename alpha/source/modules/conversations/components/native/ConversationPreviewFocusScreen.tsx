@@ -1,18 +1,18 @@
-// Module ID: 17067
-// Function ID: 17068
+// Module ID: 17348
+// Function ID: 17349
 // Name: ConversationPreviewFocusScreen
-// Dependencies: [19, 7121, 21, 558, 576, 1493, 504, 13111, 2]
+// Dependencies: [19, 7307, 21, 558, 576, 1505, 504, 9313, 2]
 
-// Module 17067 (ConversationPreviewFocusScreen)
+// Module 17348 (ConversationPreviewFocusScreen)
 import Fragment from "Fragment" /* 21 */;
-import ConversationFocusViewDefault from "ConversationFocusView" /* 13111 */;
+import ConversationFocusViewDefault from "ConversationFocusView" /* 9313 */;
 import react from "react" /* 19 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7121 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7307 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConversationPreviewFocusScreen() {
   let channelId;
   let conversationId;
   let first;
@@ -26,7 +26,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp9;
   let obj = conversationId(576);
   const cResult = obj.c(16);
-  const obj2 = conversationId(1493);
+  const obj2 = conversationId(1505);
   const params = obj2.useRoute().params;
   ({ channelId, conversationId } = params);
   const messageId = params.messageId;
@@ -38,7 +38,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   if (cResult[1] !== conversationId) {
-    const fn = function l() {
+    const fn = function o() {
       return ConversationPreviewStore.getHydratedMessages(conversationId);
     };
     const items1 = [conversationId];
@@ -114,14 +114,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[14] = startMessageId;
   cResult[15] = tmp15;
   tmp14 = tmp15;
-}) : (() => {
+}) : (function ConversationPreviewFocusScreen() {
   let channelId;
   let conversationId;
   let fullyHydrated;
   let isFullFetchPending;
   let messageId;
   let startMessageId;
-  let obj = conversationId(1493);
+  let obj = conversationId(1505);
   const params = obj.useRoute().params;
   conversationId = params.conversationId;
   ({ channelId, messageId } = params);

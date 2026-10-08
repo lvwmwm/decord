@@ -1,30 +1,30 @@
-// Module ID: 8359
-// Function ID: 8360
+// Module ID: 8857
+// Function ID: 8858
 // Name: GameProfileScreen
-// Dependencies: [32, 19, 17, 8360, 21, 4896, 587, 558, 576, 1126, 5601, 7852, 8361, 4571, 8352, 6822, 5903, 4618, 8364, 4897, 8365, 8370, 4860, 8387, 6119, 8388, 8390, 8601, 6656, 6652, 2]
+// Dependencies: [32, 19, 17, 8858, 21, 5090, 587, 558, 576, 1126, 5375, 8270, 8859, 4763, 8850, 6995, 8213, 4810, 8862, 5091, 8863, 8868, 5054, 8885, 6298, 8886, 8888, 9082, 6833, 6829, 2]
 
-// Module 8359 (GameProfileScreen)
+// Module 8857 (GameProfileScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4860 */;
-import timing from "timing" /* 4897 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8352 */;
-import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 8370 */;
-import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 8387 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5054 */;
+import timing from "timing" /* 5091 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8850 */;
+import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 8868 */;
+import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 8885 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameProfileStore from "GameProfileStore" /* 8360 */;
+import GameProfileStore from "GameProfileStore" /* 8858 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const GameProfileStoreLinksActionSheetDefault = GameProfileStoreLinksActionSheet;
-let current, gameId, ref, set, viewId;
+let current, ref, set, viewId;
 
 let c9;
 let hasOwnProperty;
@@ -43,7 +43,7 @@ createStyles = createStyles.createStyles;
 obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 let closure_11 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GetButton(onPress) {
   let first;
   let tmp6;
   let tmp8;
@@ -76,7 +76,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     tmp8 = cResult[3];
   }
   return tmp8;
-}) : ((onPress) => {
+}) : (function GetButton(onPress) {
   let intl;
   let intl2;
   onPress = onPress.onPress;
@@ -97,7 +97,7 @@ let closure_20 = { code: "function GameProfileScreenTsx8(){const{interpolate,sti
 let closure_21 = { code: "function GameProfileScreenTsx9(){const{scrollY,storeLinksSectionBottomY,STICKY_HEADER_HEIGHT}=this.__closure;return scrollY.get()>storeLinksSectionBottomY.get()-STICKY_HEADER_HEIGHT;}" };
 const __initData6 = { code: "function GameProfileScreenTsx10(shouldShow,prevShouldShow){const{runOnJS,setShowGetButton}=this.__closure;if(shouldShow!==prevShouldShow){runOnJS(setShowGetButton)(shouldShow);}}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileScreen(gameId) {
   let bottomSheetClose;
   let bottomSheetRef;
   let closure_14;
@@ -160,7 +160,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
   const sharedValue = tmpResult11.useSharedValue(0);
   STICKY_HEADER_HEIGHT = obj3.useRef(false);
   if (cResult[1] !== num) {
-    class B {
+    class D {
       constructor() {
         let tmp2 = num > 0;
         const tmp = num;
@@ -178,9 +178,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
       }
     }
     cResult[1] = num;
-    cResult[2] = B;
+    cResult[2] = D;
   } else {
-    class B {
+    class D {
       constructor() {
         let tmp2 = num > 0;
         const tmp = num;
@@ -199,7 +199,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
     }
   }
   if (data != null) {
-    class B {
+    class D {
       constructor() {
         let tmp2 = num > 0;
         const tmp = num;
@@ -223,7 +223,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
     let tmp43;
     let tmp48;
     let tmp47;
-    class B {
+    class D {
       constructor() {
         let tmp2 = num > 0;
         const tmp = num;
@@ -323,7 +323,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
     const gameProfileStoreWebsites = tmpResult18.useGameProfileStoreWebsites(data);
     if (cResult[6] !== gameProfileStoreWebsites) {
       let tmp40;
-      class B {
+      class D {
         constructor() {
           let tmp2 = num > 0;
           const tmp = num;
@@ -341,7 +341,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
         }
       }
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        class B {
+        class D {
           constructor() {
             let tmp2 = num > 0;
             const tmp = num;
@@ -361,7 +361,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
         cResult[8] = tmp41;
         tmp40 = tmp41;
       } else {
-        class B {
+        class D {
           constructor() {
             let tmp2 = num > 0;
             const tmp = num;
@@ -385,7 +385,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
       cResult[7] = found;
       tmp39 = found;
     } else {
-      class B {
+      class D {
         constructor() {
           let tmp2 = num > 0;
           const tmp = num;
@@ -407,7 +407,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
     __initData2 = obj3.useRef(undefined);
     __initData3 = obj3.useRef(null);
     if (cResult[9] !== name) {
-      class B {
+      class D {
         constructor() {
           let tmp2 = num > 0;
           const tmp = num;
@@ -431,7 +431,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
       tmp44 = items;
       tmp43 = tmp45;
     } else {
-      class B {
+      class D {
         constructor() {
           let tmp2 = num > 0;
           const tmp = num;
@@ -505,7 +505,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
   cResult[3] = sharedValue;
   cResult[4] = undefined;
   cResult[5] = obj8;
-}) : ((gameId) => {
+}) : (function GameProfileScreen(gameId) {
   let bottomSheetClose;
   let bottomSheetRef;
   let closure_4;

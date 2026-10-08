@@ -1,10 +1,10 @@
-// Module ID: 4755
-// Function ID: 4756
+// Module ID: 4949
+// Function ID: 4950
 // Name: ZustandStore
-// Dependencies: [1254, 4756, 1259, 558, 576, 2]
+// Dependencies: [1266, 4950, 1271, 558, 576, 2]
 // Exports: createZustandStore
 
-// Module 4755 (ZustandStore)
+// Module 4949 (ZustandStore)
 import react from "react" /* 576 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ export const createZustandStore = function createZustandStore(arg0) {
   _require = arg0;
   let tmp = _require;
   let tmp2 = dependencyMap;
-  let tmp3 = require("module_1254");
+  let tmp3 = require("module_1266");
   const createWithEqualityFn = tmp3.createWithEqualityFn;
   let obj = require("combine");
   dependencyMap = createWithEqualityFn(obj.subscribeWithSelector((arg0, arg1, arg2) => {
@@ -33,14 +33,14 @@ export const createZustandStore = function createZustandStore(arg0) {
     }, arg1, arg2);
   }));
   const obj2 = require("ReactCompilerGating");
-  const tmp4 = obj2.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  const tmp4 = obj2.isReactCompilerEnabled() ? (function useState(arg0, arg1) {
     let tmp = arg1;
     const tmp2 = closure_1;
     if (undefined === arg1) {
       tmp = defaultStatesAreEqual;
     }
     return tmp2(arg0, tmp);
-  }) : ((arg0) => {
+  }) : (function useState(arg0) {
     let tmp = arg1;
     if (arg1 === undefined) {
       tmp = defaultStatesAreEqual;
@@ -64,7 +64,7 @@ export const createZustandStore = function createZustandStore(arg0) {
       }
       return tmp2;
     },
-    useField: tmpResult.isReactCompilerEnabled() ? ((arg0, arg1) => {
+    useField: tmpResult.isReactCompilerEnabled() ? (function useField(arg0, arg1) {
       let tmp3;
       closure_0 = arg0;
       let tmp = arg1;
@@ -84,7 +84,7 @@ export const createZustandStore = function createZustandStore(arg0) {
         tmp3 = cResult[1];
       }
       return closure_2(tmp3, tmp);
-    }) : ((arg0) => {
+    }) : (function useField(arg0) {
       closure_0 = arg0;
       let tmp = arg1;
       if (arg1 === undefined) {

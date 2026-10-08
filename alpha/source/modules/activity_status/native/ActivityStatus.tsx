@@ -1,51 +1,50 @@
-// Module ID: 10622
-// Function ID: 10623
+// Module ID: 10220
+// Function ID: 10221
 // Name: ActivityStatus
-// Dependencies: [19, 17, 4936, 4525, 1377, 10623, 1085, 21, 4896, 558, 576, 504, 10624, 10625, 10626, 10627, 10632, 10633, 10640, 10642, 10631, 2]
+// Dependencies: [19, 17, 5106, 4717, 1389, 10221, 1085, 21, 5090, 558, 576, 504, 10222, 10223, 10224, 10225, 10230, 10231, 10240, 10242, 10229, 2]
 
-// Module 10622 (ActivityStatus)
+// Module 10220 (ActivityStatus)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
-import ActivityStatusConstants from "ActivityStatusConstants" /* 10623 */;
-import ApplicationStreamActivityStatusDefault from "ApplicationStreamActivityStatus" /* 10627 */;
-import ActivityStatusTextDefault from "ActivityStatusText" /* 10631 */;
-import isGameActivityDefault from "isGameActivity" /* 10632 */;
-import PresenceActivityStatusDefault from "PresenceActivityStatus" /* 10633 */;
-import VoiceActivityStatusDefault from "VoiceActivityStatus" /* 10640 */;
-import ActivityEmojiDefault from "ActivityEmoji" /* 10642 */;
+import ActivityStatusConstants from "ActivityStatusConstants" /* 10221 */;
+import ApplicationStreamActivityStatusDefault from "ApplicationStreamActivityStatus" /* 10225 */;
+import ActivityStatusTextDefault from "ActivityStatusText" /* 10229 */;
+import isGameActivityDefault from "isGameActivity" /* 10230 */;
+import PresenceActivityStatusDefault from "PresenceActivityStatus" /* 10231 */;
+import VoiceActivityStatusDefault from "VoiceActivityStatus" /* 10240 */;
+import ActivityEmojiDefault from "ActivityEmoji" /* 10242 */;
 import react from "react" /* 19 */;
-import PresenceStore_mod from "PresenceStore" /* 4936 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore_mod from "UserStore" /* 1377 */;
+import PresenceStore_mod from "PresenceStore" /* 5106 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let arr3, arr5, constants, hideText, obj1, tmp11, tmp15, tmp17, tmp18, tmp20, tmp21, tmp23, tmp27, tmp29, tmp33, tmp34, tmp5, tmp8, type, userId;
+let constants, type;
 
 let c10;
 let closure_12;
 let unpackModuleId;
 const View = react_native.View;
 let PresenceStore = PresenceStore_mod;
-let UserStore = UserStore_mod;
 const DOT_UNICODE = ActivityStatusConstants.DOT_UNICODE;
 const ActivityTypes = Constants.ActivityTypes;
 ({ jsx: c10, Fragment: unpackModuleId, jsxs: closure_12 } = Fragment);
-let hideIcon = createStyles.createStyles({ container: { flexDirection: "row", alignItems: "center", gap: 4 }, icon: { marginTop: 1 }, emoji: { marginRight: 0 } });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+let closure_13 = createStyles.createStyles({ container: { flexDirection: "row", alignItems: "center", gap: 4 }, icon: { marginTop: 1 }, emoji: { marginRight: 0 } });
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityStatus(userId) {
   let animate;
-  let closure_7;
   let emojiSize;
   let first;
   let guildId;
   let hideEmoji;
+  let hideIcon;
   let iconStyle;
   let maxFontSizeMultiplier;
   let obj2;
   let textStyle;
-  let tmp10;
+  let tmp11;
   let tmp7;
   let tmp9;
   const tmp = userId;
@@ -64,331 +63,266 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   PresenceStore = undefined === animate || animate;
   let closure_6 = undefined !== hideEmoji && hideEmoji;
   let tmp4 = hideIcon();
-  UserStore = tmp4;
+  let closure_7 = tmp4;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let tmp6 = UserStore;
-    let items = [UserStore];
+    let tmp6 = closure_7;
+    let items = [closure_7];
     cResult[0] = items;
     first = items;
   } else {
     first = cResult[0];
   }
   if (cResult[1] !== userId) {
-    class T {
-      constructor() {
-        return closure_7.getUser(userId);
-      }
-    }
+    const fn = function f() {
+      return UserStore.getUser(userId);
+    };
     cResult[1] = userId;
-    cResult[2] = T;
-    tmp7 = T;
+    cResult[2] = fn;
+    tmp7 = fn;
   } else {
-    class T {
-      constructor() {
-        return closure_7.getUser(userId);
-      }
-    }
+    tmp7 = cResult[2];
   }
   const tmpResult = tmp(tmp2[11]);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class T {
-      constructor() {
-        return closure_7.getUser(userId);
-      }
-    }
     let items1 = [PresenceStore];
     cResult[3] = items1;
     tmp9 = items1;
   } else {
-    class T {
-      constructor() {
-        return closure_7.getUser(userId);
-      }
-    }
+    tmp9 = cResult[3];
   }
   if (cResult[4] !== userId) {
     class G {
       constructor() {
-        return closure_5.getActivities(userId);
+        return PresenceStore.getActivities(userId);
       }
     }
     cResult[4] = userId;
     cResult[5] = G;
-    tmp10 = G;
+    tmp11 = G;
   } else {
     class G {
       constructor() {
-        return closure_5.getActivities(userId);
+        return PresenceStore.getActivities(userId);
       }
     }
   }
   const tmpResult4 = tmp(tmp2[11]);
-  const stateFromStores1 = tmpResult4.useStateFromStores(tmp9, tmp10);
-  const tmp13 = iconStyle(tmp2[12])(userId);
-  constants = tmp13;
-  const tmp12 = iconStyle;
+  const stateFromStores1 = tmpResult4.useStateFromStores(tmp9, tmp11);
+  let tmp14 = iconStyle(tmp2[12])(userId);
+  constants = tmp14;
+  const tmp13 = iconStyle;
   if (cResult[6] === guildId) {
-    let tmp14;
-    let tmp25;
     let tmp26;
+    let tmp27;
     class G {
       constructor() {
-        return closure_5.getActivities(userId);
+        return PresenceStore.getActivities(userId);
       }
     }
-    const voiceChannel = tmp12(tmp2[13])(obj2).voiceChannel;
+    const voiceChannel = tmp13(tmp2[13])(obj2).voiceChannel;
     if (cResult[9] !== stateFromStores1) {
       class G {
         constructor() {
-          return closure_5.getActivities(userId);
+          return PresenceStore.getActivities(userId);
         }
       }
       if (stateFromStores1 != null) {
         class G {
           constructor() {
-            return closure_5.getActivities(userId);
+            return PresenceStore.getActivities(userId);
           }
         }
       }
-      let tmp16 = null;
+      let tmp17 = null;
       if (null != undefined) {
         class G {
           constructor() {
-            return closure_5.getActivities(userId);
+            return PresenceStore.getActivities(userId);
           }
         }
-        if (tmp17 != null) {
+        if (tmp18 != null) {
           class G {
             constructor() {
-              return closure_5.getActivities(userId);
+              return PresenceStore.getActivities(userId);
             }
           }
         }
         if (undefined == null) {
           class G {
             constructor() {
-              return closure_5.getActivities(userId);
+              return PresenceStore.getActivities(userId);
             }
           }
         }
         if ("" !== undefined) {
           class G {
             constructor() {
-              return closure_5.getActivities(userId);
+              return PresenceStore.getActivities(userId);
             }
           }
         }
         if (null != null) {
           class G {
             constructor() {
-              return closure_5.getActivities(userId);
+              return PresenceStore.getActivities(userId);
             }
           }
         } else {
           class G {
             constructor() {
-              return closure_5.getActivities(userId);
+              return PresenceStore.getActivities(userId);
             }
           }
         }
-        tmp16 = tmp20;
+        tmp17 = tmp21;
       }
       cResult[9] = stateFromStores1;
-      cResult[10] = tmp16;
-      tmp14 = tmp16;
+      cResult[10] = tmp17;
     } else {
       class G {
         constructor() {
-          return closure_5.getActivities(userId);
+          return PresenceStore.getActivities(userId);
         }
       }
     }
-    let closure_11 = tmp14;
-    let tmp22 = null;
+    let closure_11 = tmp15;
     const useGameMentionsAsPlainText = tmp(tmp2[14]).useGameMentionsAsPlainText;
     tmp(tmp2[14]);
-    if (tmp14 != null) {
+    if (tmp15 != null) {
       class G {
         constructor() {
-          return closure_5.getActivities(userId);
+          return PresenceStore.getActivities(userId);
         }
       }
     }
-    const gameMentionsAsPlainText = useGameMentionsAsPlainText(tmp23);
+    const gameMentionsAsPlainText = useGameMentionsAsPlainText(tmp24);
     const _Symbol = Symbol;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
       class G {
         constructor() {
-          return closure_5.getActivities(userId);
+          return PresenceStore.getActivities(userId);
         }
       }
       let items2 = [closure_6];
       cResult[11] = items2;
-      tmp25 = items2;
+      tmp26 = items2;
     } else {
       class G {
         constructor() {
-          return closure_5.getActivities(userId);
+          return PresenceStore.getActivities(userId);
         }
       }
     }
     if (cResult[12] !== userId) {
       class G {
         constructor() {
-          return closure_5.getActivities(userId);
+          return PresenceStore.getActivities(userId);
         }
       }
       cResult[12] = userId;
-      cResult[13] = tmp27;
-      tmp26 = tmp27;
+      cResult[13] = tmp28;
+      tmp27 = tmp28;
     } else {
       class G {
         constructor() {
-          return closure_5.getActivities(userId);
+          return PresenceStore.getActivities(userId);
         }
       }
     }
     const tmpResult6 = tmp(tmp2[11]);
-    if (tmpResult6.useStateFromStores(tmp25, tmp26)) {
+    if (tmpResult6.useStateFromStores(tmp26, tmp27)) {
       class G {
         constructor() {
-          return closure_5.getActivities(userId);
+          return PresenceStore.getActivities(userId);
         }
       }
     } else {
       class G {
         constructor() {
-          return closure_5.getActivities(userId);
+          return PresenceStore.getActivities(userId);
         }
       }
       if (stateFromStores != null) {
         class G {
           constructor() {
-            return closure_5.getActivities(userId);
+            return PresenceStore.getActivities(userId);
           }
         }
       }
-      hideIcon = tmp29;
-      if (tmp14 != null) {
+      hideIcon = tmp30;
+      if (tmp15 != null) {
         class G {
           constructor() {
-            return closure_5.getActivities(userId);
+            return PresenceStore.getActivities(userId);
           }
         }
       }
-      hideText = tmp31;
+      const hideText = tmp32;
       if (cResult[14] === stateFromStores1) {
         class G {
           constructor() {
-            return closure_5.getActivities(userId);
+            return PresenceStore.getActivities(userId);
           }
         }
       }
-      class L {
-        constructor() {
-          if (null != closure_9) {
-            tmp23 = closure_1;
-            tmp24 = closure_2;
-            tmp22 = jsx;
-            arr3 = closure_8;
-            found = undefined;
-            tmp25 = closure_1(closure_2[15]);
-            if (closure_8 != null) {
-              tmp27 = closure_1;
-              tmp28 = closure_2;
-              found = arr3.find(closure_1(closure_2[16]));
-            }
-            obj1 = { game: null, iconStyle: null, textStyle: null, maxFontSizeMultiplier: null, hideIcon: null, hideText: null };
-            obj1.game = found;
-            tmp29 = closure_7;
-            items = [, ];
-            items[0] = closure_7.icon;
-            tmp30 = iconStyle;
-            items[1] = iconStyle;
-            obj1.iconStyle = items;
-            tmp31 = textStyle;
-            obj1.textStyle = textStyle;
-            tmp32 = maxFontSizeMultiplier;
-            obj1.maxFontSizeMultiplier = maxFontSizeMultiplier;
-            tmp33 = closure_13;
-            obj1.hideIcon = closure_13;
-            tmp34 = closure_14;
-            obj1.hideText = closure_14;
-            return tmp22(tmp25, obj1);
-          } else {
-            arr5 = closure_8;
-            found1 = undefined;
-            if (closure_8 != null) {
-              found1 = arr5.find(() => { /* body not rendered: F140790 */ });
-            }
-            if (null != found1) {
-              tmp13 = jsx;
-              tmp14 = closure_1;
-              tmp15 = closure_2;
-              obj4 = { activity: null, iconStyle: null, textStyle: null, maxFontSizeMultiplier: null, hideIcon: null, hideText: null };
-              obj4.activity = found1;
-              tmp16 = closure_7;
-              items1 = [, ];
-              items1[0] = closure_7.icon;
-              tmp17 = iconStyle;
-              items1[1] = iconStyle;
-              obj4.iconStyle = items1;
-              tmp18 = textStyle;
-              obj4.textStyle = textStyle;
-              tmp19 = maxFontSizeMultiplier;
-              obj4.maxFontSizeMultiplier = maxFontSizeMultiplier;
-              tmp20 = closure_13;
-              obj4.hideIcon = closure_13;
-              tmp21 = closure_14;
-              obj4.hideText = closure_14;
-              tmp3 = jsx(closure_1(closure_2[17]), obj4);
-            } else {
-              tmp3 = null;
-              if (null != voiceChannel) {
-                tmp4 = jsx;
-                tmp5 = closure_1;
-                tmp6 = closure_2;
-                obj = { channel: null, iconStyle: null, textStyle: null, maxFontSizeMultiplier: null, hideIcon: null, hideText: null };
-                obj.channel = tmp2;
-                tmp7 = closure_7;
-                items2 = [, ];
-                items2[0] = closure_7.icon;
-                tmp8 = iconStyle;
-                items2[1] = iconStyle;
-                obj.iconStyle = items2;
-                tmp9 = textStyle;
-                obj.textStyle = textStyle;
-                tmp10 = maxFontSizeMultiplier;
-                obj.maxFontSizeMultiplier = maxFontSizeMultiplier;
-                tmp11 = closure_13;
-                obj.hideIcon = closure_13;
-                tmp12 = closure_14;
-                obj.hideText = closure_14;
-                tmp3 = jsx(closure_1(closure_2[18]), obj);
-              }
-            }
-            return tmp3;
+      function renderActivity() {
+        let items;
+        let items1;
+        let items2;
+        if (null != constants) {
+          let found;
+          const arr3 = stateFromStores1;
+          const tmp22 = authStore;
+          const tmp25 = ApplicationStreamActivityStatusDefault;
+          if (stateFromStores1 != null) {
+            found = arr3.find(isGameActivityDefault);
           }
+          const obj2 = { game: found, iconStyle: items, textStyle, maxFontSizeMultiplier, hideIcon, hideText };
+          items = [closure_7.icon, iconStyle];
+          return tmp22(tmp25, obj2);
+        } else {
+          let tmp3;
+          let found1;
+          const arr5 = stateFromStores1;
+          if (stateFromStores1 != null) {
+            found1 = arr5.find((type) => {
+              type = type.type;
+              return type !== constants.CUSTOM_STATUS && type !== constants.HANG_STATUS;
+            });
+          }
+          if (null != found1) {
+            const obj3 = { activity: found1, iconStyle: items1, textStyle, maxFontSizeMultiplier, hideIcon, hideText };
+            items1 = [closure_7.icon, iconStyle];
+            tmp3 = authStore(PresenceActivityStatusDefault, obj3);
+          } else {
+            tmp3 = null;
+            if (null != voiceChannel) {
+              const obj = { channel: tmp2, iconStyle: items2, textStyle, maxFontSizeMultiplier, hideIcon, hideText };
+              items2 = [closure_7.icon, iconStyle];
+              tmp3 = authStore(VoiceActivityStatusDefault, obj);
+            }
+          }
+          return tmp3;
         }
       }
       cResult[14] = stateFromStores1;
-      cResult[15] = true === tmp28;
+      cResult[15] = true === tmp29;
       cResult[16] = null != undefined;
       cResult[17] = iconStyle;
       cResult[18] = maxFontSizeMultiplier;
-      cResult[19] = tmp13;
+      cResult[19] = tmp14;
       cResult[20] = tmp4.icon;
       cResult[21] = textStyle;
       cResult[22] = voiceChannel;
-      cResult[23] = L;
+      cResult[23] = renderActivity;
     }
   }
   obj2 = { userId, guildId };
   cResult[6] = guildId;
   cResult[7] = userId;
   cResult[8] = obj2;
-}) : ((userId) => {
+}) : (function ActivityStatus(userId) {
   let animate;
   let emojiSize;
   let iconStyle;
@@ -412,7 +346,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   if (flag === undefined) {
     flag = false;
   }
-  const tmp = hideIcon();
+  const tmp = closure_13();
   let tmp3 = dependencyMap;
   const items = [UserStore];
   const obj = userId(504);
@@ -420,8 +354,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   const items1 = [PresenceStore];
   const obj2 = userId(504);
   const stateFromStores1 = obj2.useStateFromStores(items1, () => PresenceStore.getActivities(userId));
-  const tmp6 = stateFromStores1(10624)(userId);
-  const voiceChannel = stateFromStores1(10625)({ userId, guildId }).voiceChannel;
+  const tmp6 = stateFromStores1(10222)(userId);
+  const voiceChannel = stateFromStores1(10223)({ userId, guildId }).voiceChannel;
   const items2 = [stateFromStores1];
   const memo = react.useMemo(() => {
     let found;
@@ -453,8 +387,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
     }
   }, items2);
   let state;
-  const useGameMentionsAsPlainText = userId(10626).useGameMentionsAsPlainText;
-  userId(10626);
+  const useGameMentionsAsPlainText = userId(10224).useGameMentionsAsPlainText;
+  userId(10224);
   const tmp2 = userId;
   if (memo != null) {
     state = memo.state;
@@ -477,9 +411,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
     if (null != tmp6) {
       let found;
       const tmp19 = closure_10;
-      const tmp5Result = stateFromStores1(10627);
+      const tmp5Result = stateFromStores1(10225);
       if (stateFromStores1 != null) {
-        found = stateFromStores1.find(tmp5(10632));
+        found = stateFromStores1.find(tmp5(10230));
       }
       const obj3 = { game: found, iconStyle: items4, textStyle, maxFontSizeMultiplier, hideIcon: true === bot, hideText: null != state1 };
       items4 = [tmp.icon, iconStyle];
@@ -495,13 +429,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
       if (null != found1) {
         const obj4 = { activity: found1, iconStyle: items5, textStyle, maxFontSizeMultiplier, hideIcon: true === bot, hideText: null != state1 };
         items5 = [tmp.icon, iconStyle];
-        tmp19Result = closure_10(tmp5(10633), obj4);
+        tmp19Result = closure_10(tmp5(10231), obj4);
       } else {
         tmp19Result = null;
         if (null != voiceChannel) {
           const obj5 = { channel: voiceChannel, iconStyle: items6, textStyle, maxFontSizeMultiplier, hideIcon: true === bot, hideText: null != state1 };
           items6 = [tmp.icon, iconStyle];
-          tmp19Result = closure_10(tmp5(10640), obj5);
+          tmp19Result = closure_10(tmp5(10240), obj5);
         }
       }
     }
@@ -517,13 +451,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
         }
         if (tmp26) {
           const obj6 = { emoji: memo.emoji, size: emojiSize, animate, style: tmp.emoji };
-          tmp26 = closure_10(tmp5(10642), obj6);
+          tmp26 = closure_10(tmp5(10242), obj6);
         }
         const items7 = [tmp26, ];
         let tmp28 = null != memo.state;
         if (tmp28) {
           const obj7 = { variant: "text-xs/normal", style: textStyle, maxFontSizeMultiplier, children: gameMentionsAsPlainText };
-          tmp28 = closure_10(tmp5(10631), obj7);
+          tmp28 = closure_10(tmp5(10229), obj7);
         }
         const obj8 = { children: items7 };
         items7[1] = tmp28;
@@ -541,7 +475,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
     }
     if (tmp32) {
       const obj10 = { variant: "text-xs/normal", style: textStyle, maxFontSizeMultiplier, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: DOT_UNICODE };
-      tmp32 = closure_10(tmp5(10631), obj10);
+      tmp32 = closure_10(tmp5(10229), obj10);
     }
     items8[1] = tmp32;
     items8[2] = tmp22;

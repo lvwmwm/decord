@@ -1,16 +1,16 @@
-// Module ID: 10650
-// Function ID: 10651
+// Module ID: 10250
+// Function ID: 10251
 // Name: useDisplayNameStylesEffectDefaultColors
-// Dependencies: [19, 1395, 558, 576, 4586, 587, 1103, 1396, 2]
+// Dependencies: [19, 1407, 558, 576, 4778, 587, 1103, 1408, 2]
 
-// Module 10650 (useDisplayNameStylesEffectDefaultColors)
+// Module 10250 (useDisplayNameStylesEffectDefaultColors)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1396 */;
-import useToken from "useToken" /* 4586 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1408 */;
+import useToken from "useToken" /* 4778 */;
 import react from "react" /* 19 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1395 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1407 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 ({ DISPLAY_NAME_STYLES_GRADIENT_PRESETS: closure_4, DISPLAY_NAME_STYLES_GUMMY_PRESETS: hasOwnProperty, DISPLAY_NAME_STYLES_PRISM_PRESETS: metroRequire } = DisplayNameStylesConstants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDisplayNameStylesEffectDefaultColors() {
   let tmp13;
   let tmp17;
   let tmp21;
@@ -171,7 +171,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[23] = tmp8;
   cResult[24] = obj3;
   tmp32 = obj3;
-}) : (() => {
+}) : (function useDisplayNameStylesEffectDefaultColors() {
   const hex2int = utils_ColorUtils.hex2int;
   utils_ColorUtils;
   let obj = useToken;

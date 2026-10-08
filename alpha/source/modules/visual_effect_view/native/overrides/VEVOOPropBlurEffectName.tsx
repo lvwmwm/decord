@@ -1,19 +1,19 @@
-// Module ID: 15884
-// Function ID: 15885
+// Module ID: 16143
+// Function ID: 16144
 // Name: VEVOOPropBlurEffectName
-// Dependencies: [32, 19, 5781, 21, 4896, 558, 576, 15880, 6706, 8924, 5782, 2]
+// Dependencies: [32, 19, 5364, 21, 5090, 558, 576, 16139, 6883, 8555, 5365, 2]
 
-// Module 15884 (VEVOOPropBlurEffectName)
+// Module 16143 (VEVOOPropBlurEffectName)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import VEVOOStore from "VEVOOStore" /* 5781 */;
+import VEVOOStore from "VEVOOStore" /* 5364 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_0, tmp2Result, tmpResult;
+let _require, closure_0;
 
 let closure_4;
 let hasOwnProperty;
@@ -24,16 +24,18 @@ let react = react_mod;
 ({ getVisualEffectViewOverrides: closure_4, setVisualEffectViewOverides: hasOwnProperty } = VEVOOStore);
 ({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = createStyles.createStyles({ radio: { fontSize: 14 } });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VEVOOPropBlurEffectName() {
   let closure_3;
+  let enabledSwitchStyle;
   let first;
   let first2;
   let tmp16;
   let visualEffectViewOverrideSharedStyles;
+  let zeroPaddingVertical;
   let tmp = _require;
   let tmp2 = visualEffectViewOverrideSharedStyles;
   let obj = require("react");
-  const cResult = obj.c(34);
+  const cResult = obj.c(32);
   _require = closure_9();
   const tmp4 = closure_9();
   const obj2 = require("VEVOO");
@@ -57,173 +59,119 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   const first3 = tmp6Result[0];
   let closure_7 = tmp6Result[1];
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    class O {
+    const fn = function _(blurEffectNameOverride) {
+      if (null != blurEffectNameOverride) {
+        closure_7(blurEffectNameOverride);
+      }
+      const obj = { blurEffectNameOverride };
+      const merged = Object.assign(React3());
+      hasOwnProperty(obj);
+    };
+    cResult[1] = fn;
+    tmp16 = fn;
+  } else {
+    tmp16 = cResult[1];
+  }
+  let closure_8 = tmp16;
+  ({ zeroPaddingVertical, enabledSwitchStyle } = visualEffectViewOverrideSharedStyles);
+  if (cResult[2] !== first3) {
+    class C {
       constructor(arg0) {
-        if (null != arg0) {
-          tmp = closure_7;
-          tmp2 = closure_7(arg0);
+        closure_5(arg0);
+        let tmp3;
+        const tmp2 = closure_8;
+        if (arg0) {
+          tmp3 = first3;
         }
-        obj = {};
-        merged = Object.assign(closure_4());
-        obj.blurEffectNameOverride = arg0;
-        tmp4 = closure_5(obj);
-        return;
+        tmp2(tmp3);
       }
     }
-    cResult[1] = O;
-    tmp16 = O;
+    cResult[2] = first3;
+    cResult[3] = C;
   } else {
-    class O {
+    class C {
       constructor(arg0) {
-        if (null != arg0) {
-          tmp = closure_7;
-          tmp2 = closure_7(arg0);
+        closure_5(arg0);
+        let tmp3;
+        const tmp2 = closure_8;
+        if (arg0) {
+          tmp3 = first3;
         }
-        obj = {};
-        merged = Object.assign(closure_4());
-        obj.blurEffectNameOverride = arg0;
-        tmp4 = closure_5(obj);
-        return;
+        tmp2(tmp3);
       }
     }
   }
-  O = tmp16;
-  if (cResult[2] !== visualEffectViewOverrideSharedStyles.zeroPaddingVertical) {
-    class O {
+  if (cResult[4] === first1) {
+    class C {
       constructor(arg0) {
-        if (null != arg0) {
-          tmp = closure_7;
-          tmp2 = closure_7(arg0);
-        }
-        obj = {};
-        merged = Object.assign(closure_4());
-        obj.blurEffectNameOverride = arg0;
-        tmp4 = closure_5(obj);
-        return;
-      }
-    }
-    ({ zeroPaddingVertical: tmp18[0], zeroPaddingVertical: tmp3[2] } = visualEffectViewOverrideSharedStyles);
-    cResult[3] = tmp18;
-  } else {
-    class O {
-      constructor(arg0) {
-        if (null != arg0) {
-          tmp = closure_7;
-          tmp2 = closure_7(arg0);
-        }
-        obj = {};
-        merged = Object.assign(closure_4());
-        obj.blurEffectNameOverride = arg0;
-        tmp4 = closure_5(obj);
-        return;
-      }
-    }
-  }
-  if (cResult[4] !== first3) {
-    class H {
-      constructor(arg0) {
-        tmp = closure_5(arg0);
-        tmp3 = undefined;
-        tmp2 = closure_8;
+        closure_5(arg0);
+        let tmp3;
+        const tmp2 = closure_8;
         if (arg0) {
-          tmp3 = closure_6;
+          tmp3 = first3;
         }
-        tmp2Result = tmp2(tmp3);
-        return;
-      }
-    }
-    cResult[4] = first3;
-    cResult[5] = H;
-  } else {
-    class H {
-      constructor(arg0) {
-        tmp = closure_5(arg0);
-        tmp3 = undefined;
-        tmp2 = closure_8;
-        if (arg0) {
-          tmp3 = closure_6;
-        }
-        tmp2Result = tmp2(tmp3);
-        return;
-      }
-    }
-  }
-  if (cResult[6] === first1) {
-    class H {
-      constructor(arg0) {
-        tmp = closure_5(arg0);
-        tmp3 = undefined;
-        tmp2 = closure_8;
-        if (arg0) {
-          tmp3 = closure_6;
-        }
-        tmp2Result = tmp2(tmp3);
-        return;
+        tmp2(tmp3);
       }
     }
     const _HermesInternal = HermesInternal;
     let str = "Theme: ";
     const combined = "Theme: " + first;
-    if (cResult[9] !== first) {
+    if (cResult[7] !== first) {
       class T {
         constructor() {
-          str = "Dark";
-          tmp = closure_3;
-          if ("Dark" === closure_2) {
+          let str = "Dark";
+          const tmp = closure_3;
+          if ("Dark" === first) {
             str = "Light";
           }
-          tmpResult = tmp(str);
-          return;
+          tmp(str);
         }
       }
-      cResult[9] = first;
-      cResult[10] = T;
+      cResult[7] = first;
+      cResult[8] = T;
     } else {
       class T {
         constructor() {
-          str = "Dark";
-          tmp = closure_3;
-          if ("Dark" === closure_2) {
+          let str = "Dark";
+          const tmp = closure_3;
+          if ("Dark" === first) {
             str = "Light";
           }
-          tmpResult = tmp(str);
-          return;
+          tmp(str);
         }
       }
     }
-    if (cResult[11] === visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal) {
+    if (cResult[9] === visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal) {
       class T {
         constructor() {
-          str = "Dark";
-          tmp = closure_3;
-          if ("Dark" === closure_2) {
+          let str = "Dark";
+          const tmp = closure_3;
+          if ("Dark" === first) {
             str = "Light";
           }
-          tmpResult = tmp(str);
-          return;
+          tmp(str);
         }
       }
     }
-    const obj4 = { label: combined, style: visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal, disabled: !first1, value: "Dark" === first, onValueChange: tmp23 };
-    cResult[11] = visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal;
-    cResult[12] = tmp23;
-    cResult[13] = combined;
-    cResult[14] = !first1;
-    cResult[15] = "Dark" === first;
-    cResult[16] = first3(tmp(tmp2[9]).FormSwitchRow, obj4);
-    const tmp27 = first3(tmp(tmp2[9]).FormSwitchRow, obj4);
+    const obj4 = { label: combined, style: visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal, disabled: !first1, value: "Dark" === first, onValueChange: tmp21 };
+    cResult[9] = visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal;
+    cResult[10] = tmp21;
+    cResult[11] = combined;
+    cResult[12] = !first1;
+    cResult[13] = "Dark" === first;
+    cResult[14] = first3(tmp(tmp2[9]).FormSwitchRow, obj4);
+    const tmp25 = first3(tmp(tmp2[9]).FormSwitchRow, obj4);
   }
-  cResult[6] = first1;
-  cResult[7] = tmp19;
-  cResult[8] = first3(tmp(tmp2[8]).FormSwitch, { value: first1, onValueChange: tmp19 });
-  first3(tmp(tmp2[8]).FormSwitch, { value: first1, onValueChange: tmp19 });
-}) : (() => {
+  cResult[4] = first1;
+  cResult[5] = tmp17;
+  cResult[6] = first3(tmp(tmp2[8]).FormSwitch, { value: first1, onValueChange: tmp17 });
+  first3(tmp(tmp2[8]).FormSwitch, { value: first1, onValueChange: tmp17 });
+}) : (function VEVOOPropBlurEffectName() {
   let closure_3;
   let closure_6;
   let closure_7;
   let first;
   let items;
-  let items1;
   let obj3;
   let obj4;
   let visualEffectViewOverrideSharedStyles;
@@ -246,8 +194,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     const merged = Object.assign(React3());
     hasOwnProperty(obj);
   }, []);
-  const obj2 = { style: items, label: "Blur Effect Name", disabled: !first1, leadingStyle: visualEffectViewOverrideSharedStyles.enabledSwitchStyle, leading: closure_6(require("FormSwitch").FormSwitch, obj3), subLabel: closure_8(closure_7, obj4) };
-  items = [visualEffectViewOverrideSharedStyles.zeroPaddingVertical];
+  const obj2 = { style: visualEffectViewOverrideSharedStyles.zeroPaddingVertical, label: "Blur Effect Name", disabled: !first1, leadingStyle: visualEffectViewOverrideSharedStyles.enabledSwitchStyle, leading: closure_6(require("FormSwitch").FormSwitch, obj3), subLabel: closure_8(closure_7, obj4) };
   const FormRow = require("Form").FormRow;
   obj3 = {
     value: first1,
@@ -261,7 +208,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
       tmp2(tmp3);
     }
   };
-  obj4 = { children: items1 };
+  obj4 = { children: items };
   const obj5 = {
     label: "Theme: " + first,
     style: visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal,
@@ -277,10 +224,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     }
   };
   const FormSwitchRow = require("Form").FormSwitchRow;
-  items1 = [closure_6(FormSwitchRow, obj5), ];
+  items = [closure_6(FormSwitchRow, obj5), ];
   const BLUR_EFFECT_NAMES = require("VisualEffectViewIOS").BLUR_EFFECT_NAMES;
   const found = BLUR_EFFECT_NAMES.filter((arr) => -1 !== arr.indexOf(first));
-  items1[1] = found.map((item, index) => {
+  items[1] = found.map((item, index) => {
     let items;
     closure_0 = item;
     const obj = {

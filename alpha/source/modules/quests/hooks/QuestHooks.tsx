@@ -1,67 +1,67 @@
-// Module ID: 10924
-// Function ID: 10925
+// Module ID: 10575
+// Function ID: 10576
 // Name: hooks/QuestHooks
-// Dependencies: [5, 32, 19, 7197, 2116, 2051, 5447, 1377, 7199, 7201, 7200, 5630, 1085, 1379, 558, 576, 504, 10925, 10007, 1369, 10028, 7196, 1102, 7219, 7221, 7224, 10018, 12, 1251, 10926, 10927, 10021, 10929, 2115, 10931, 5638, 10953, 7225, 6670, 9077, 10023, 10791, 5637, 10956, 1126, 1888, 5081, 5633, 7215, 4797, 4735, 10013, 4534, 10957, 1252, 1375, 10961, 10962, 2028, 5094, 5086, 2]
+// Dependencies: [5, 32, 19, 7376, 2128, 2063, 5757, 1389, 7378, 7380, 7379, 5977, 1085, 1391, 558, 576, 504, 10576, 9537, 1381, 6076, 7385, 1102, 7399, 7401, 7403, 9549, 12, 1263, 10577, 10578, 7375, 9552, 10580, 2127, 10582, 5985, 10604, 7404, 6847, 10607, 9554, 10482, 5984, 10610, 1126, 1900, 5741, 5980, 7395, 4991, 4929, 9544, 4726, 10611, 1264, 1387, 11154, 11155, 2040, 7472, 7465, 2]
 // Exports: useFetchQuestHomeBounties, useManuallyStartConsoleQuest, useQuestForMemberListSocialEntryPoint, useShouldShowPreviewToolTab
 
-// Module 10924 (hooks/QuestHooks)
+// Module 10575 (hooks/QuestHooks)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import intl7 from "intl" /* 1126 */;
-import _modDef1251 from "module_1251" /* 1251 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import NumberUtils from "NumberUtils" /* 1888 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import PremiumUtils from "PremiumUtils" /* 4534 */;
-import shared from "shared" /* 4735 */;
-import merged5 from "merged5" /* 5081 */;
-import QualtricsActionCreators from "QualtricsActionCreators" /* 5086 */;
-import SurveyActionTypes2 from "SurveyActionTypes" /* 5094 */;
-import QuestTypes from "QuestTypes" /* 5633 */;
-import AdCreativeType from "AdCreativeType" /* 5637 */;
-import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 5638 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6670 */;
-import QuestDataUtils from "QuestDataUtils" /* 7196 */;
-import ConsoleQuestUIStore from "ConsoleQuestUIStore" /* 7201 */;
-import AnalyticsActions from "AnalyticsActions" /* 7215 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7219 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7221 */;
-import QuestType from "QuestType" /* 7224 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7225 */;
-import QuestMatchingUtils from "QuestMatchingUtils" /* 9077 */;
-import QuestActionCreators from "QuestActionCreators" /* 10007 */;
-import AssetUtils from "AssetUtils" /* 10013 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 10018 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 10021 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 10023 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 10028 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10791 */;
-import RenewableEndDateSortExperimentDefault from "RenewableEndDateSortExperiment" /* 10926 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 10931 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 10953 */;
-import QuestConsoleStartError from "QuestConsoleStartError" /* 10956 */;
-import useRefocusOrLaunchActivityDefault from "useRefocusOrLaunchActivity" /* 10957 */;
+import _modDef1263 from "module_1263" /* 1263 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import NumberUtils from "NumberUtils" /* 1900 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
+import PremiumUtils from "PremiumUtils" /* 4726 */;
+import shared from "shared" /* 4929 */;
+import merged5 from "merged5" /* 5741 */;
+import QuestTypes from "QuestTypes" /* 5980 */;
+import AdCreativeType from "AdCreativeType" /* 5984 */;
+import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 5985 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 6076 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6847 */;
+import ConsoleQuestUIStore from "ConsoleQuestUIStore" /* 7380 */;
+import QuestExpirationUtils from "QuestExpirationUtils" /* 7385 */;
+import AnalyticsActions from "AnalyticsActions" /* 7395 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7399 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7401 */;
+import QuestType from "QuestType" /* 7403 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7404 */;
+import QualtricsActionCreators from "QualtricsActionCreators" /* 7465 */;
+import SurveyActionTypes2 from "SurveyActionTypes" /* 7472 */;
+import QuestActionCreators from "QuestActionCreators" /* 9537 */;
+import AssetUtils from "AssetUtils" /* 9544 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9549 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9552 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9554 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10482 */;
+import RenewableEndDateSortExperimentDefault from "RenewableEndDateSortExperiment" /* 10577 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 10582 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 10604 */;
+import QuestMatchingUtils from "QuestMatchingUtils" /* 10607 */;
+import QuestConsoleStartError from "QuestConsoleStartError" /* 10610 */;
+import useRefocusOrLaunchActivityDefault from "useRefocusOrLaunchActivity" /* 10611 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AdDeliveryStore_mod from "AdDeliveryStore" /* 7197 */;
-import LocaleStore_mod from "LocaleStore" /* 2116 */;
-import ChannelStore_mod from "ChannelStore" /* 2051 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5447 */;
-import UserStore from "UserStore" /* 1377 */;
-import BountyStore from "BountyStore" /* 7199 */;
-import QuestStore from "QuestStore" /* 7200 */;
-import QuestConstants from "QuestConstants" /* 5630 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7376 */;
+import LocaleStore_mod from "LocaleStore" /* 2128 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5757 */;
+import UserStore from "UserStore" /* 1389 */;
+import BountyStore from "BountyStore" /* 7378 */;
+import QuestStore from "QuestStore" /* 7379 */;
+import QuestConstants from "QuestConstants" /* 5977 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c1, c4, c5, dependencyMap, importDefault, map, questIds, selectedSortMethod, set;
+let _require, c1, c4, c5, dependencyMap, importDefault, map, set;
 
 let closure_14;
 let closure_15;
@@ -77,6 +77,8 @@ let closure_24;
 let closure_25;
 let closure_26;
 let closure_27;
+let tmp;
+const QuestDataUtils = tmp(7375);
 function defaultSortFn(id, id2, questHomeHero, get) {
   let num6;
   let tmp2 = id.id === closure_21;
@@ -106,7 +108,7 @@ function defaultSortFn(id, id2, questHomeHero, get) {
     }
     return num18;
   } else {
-    const obj10 = QuestDataUtils;
+    const obj10 = QuestExpirationUtils;
     const userStatus12 = id.userStatus;
     let claimedAt;
     const isQuestExpiredResult = obj10.isQuestExpired(id);
@@ -438,7 +440,7 @@ function doesQuestPassRewardFilter(config, arg1) {
     let hasInGameQuestRewardResult = obj.hasInGameQuestReward(config.config);
     const tmp2 = require;
     if (!hasInGameQuestRewardResult) {
-      const tmp2Result = tmp2(10018);
+      const tmp2Result = tmp2(9549);
       hasInGameQuestRewardResult = tmp2Result.hasQuestRewardCode(config.config);
     }
     return hasInGameQuestRewardResult;
@@ -543,7 +545,7 @@ function sortQuests(arr, arg1, arg2) {
   });
 }
 function seededQuestSortKey(arg0, arg1) {
-  const obj = _modDef1251;
+  const obj = _modDef1263;
   return obj.v3("" + arg0 + ":" + arg1) >>> 0;
 }
 function useAllQuests(quests, sortMethod) {
@@ -648,7 +650,7 @@ function useCompletedAndClaimedQuests(quests) {
   }, items1);
 }
 function isQuestHiddenFromQuestHome(userStatus) {
-  const obj = QuestDataUtils;
+  const obj = QuestExpirationUtils;
   let isQuestExpiredResult = obj.isQuestExpired(userStatus);
   if (isQuestExpiredResult) {
     const tmpResult = QuestDataUtils;
@@ -659,16 +661,14 @@ function isQuestHiddenFromQuestHome(userStatus) {
 let _asyncToGenerator = _asyncToGenerator_mod;
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
-let AdDeliveryStore = AdDeliveryStore_mod;
 let LocaleStore = LocaleStore_mod;
-let ChannelStore = ChannelStore_mod;
 const useConsoleQuestUIStore = ConsoleQuestUIStore.useConsoleQuestUIStore;
 ({ QuestTaskPlatform: closure_14, QuestsExperimentLocations: closure_15, MEMBER_LIST_SOCIAL_ENTRY_POINT_ALLOWED_TASK_TYPES: closure_16, QuestHomeSortMethods: closure_17, SORTED_QUEST_HOME_FILTER_GROUPS: closure_18, TaskFilterTypes: closure_19, RewardFilterTypes: closure_20, MOBILE_ORBS_INTRO_QUEST_ID: closure_21, ORBS_INTRO_QUEST_ID: closure_22, QuestVariants: closure_23 } = QuestConstants);
 ({ HelpdeskArticles: closure_24, PlatformTypes: closure_25, ThemeTypes: closure_26, AnalyticEvents: closure_27 } = Constants);
 const PremiumTypes = PremiumConstants.PremiumTypes;
 let c29 = -1;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuests(arg0) {
   let closure_2;
   let closure_5;
   let lastFetchedCurrentQuests;
@@ -696,7 +696,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   _require = tmp4;
   let obj3 = react;
   const tmp5 = lastFetchedCurrentQuests(react.useState(false), 2);
-  const first = tmp5[0];
+  const hasFetched = tmp5[0];
   dependencyMap = tmp5[1];
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [QuestStore];
@@ -717,16 +717,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const stateFromStoresArray = tmpResult.useStateFromStoresArray(tmp7, tmp8);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [QuestStore];
-    class T {
-      constructor() {
-        const excludedQuests = QuestStore.excludedQuests;
-        const items = [...excludedQuests.values()];
-        return items;
-      }
-    }
+    const fn2 = function h() {
+      const excludedQuests = QuestStore.excludedQuests;
+      const items = [...excludedQuests.values()];
+      return items;
+    };
     cResult[4] = items1;
-    cResult[5] = T;
-    tmp12 = T;
+    cResult[5] = fn2;
+    tmp12 = fn2;
     tmp11 = items1;
   } else {
     tmp11 = cResult[4];
@@ -736,14 +734,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const stateFromStoresArray1 = tmpResult4.useStateFromStoresArray(tmp11, tmp12);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [QuestStore];
-    class P {
-      constructor() {
-        return { isFetchingCurrentQuests: QuestStore.isFetchingCurrentQuests, lastFetchedCurrentQuests: QuestStore.lastFetchedCurrentQuests };
-      }
-    }
+    const fn3 = function v() {
+      return { isFetchingCurrentQuests: QuestStore.isFetchingCurrentQuests, lastFetchedCurrentQuests: QuestStore.lastFetchedCurrentQuests };
+    };
     cResult[6] = items2;
-    cResult[7] = P;
-    tmp16 = P;
+    cResult[7] = fn3;
+    tmp16 = fn3;
     tmp15 = items2;
   } else {
     tmp15 = cResult[6];
@@ -756,24 +752,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     const tmpResult6 = require("QuestsEligibility");
     const isEligibleForQuests = tmpResult6.getIsEligibleForQuests();
-    class P {
-      constructor() {
-        return { isFetchingCurrentQuests: QuestStore.isFetchingCurrentQuests, lastFetchedCurrentQuests: QuestStore.lastFetchedCurrentQuests };
-      }
-    }
+    cResult[8] = isEligibleForQuests;
     tmp19 = isEligibleForQuests;
   } else {
     tmp19 = cResult[8];
   }
   react = tmp19;
-  if (cResult[9] === first) {
+  if (cResult[9] === hasFetched) {
     if (cResult[10] === isFetchingCurrentQuests) {
       if (cResult[11] === lastFetchedCurrentQuests) {
         let tmp21;
         if (cResult[12] === tmp4.fetchPolicy) {
           tmp21 = cResult[13];
         }
-        if (cResult[14] === first) {
+        if (cResult[14] === hasFetched) {
           if (cResult[15] === isFetchingCurrentQuests) {
             if (cResult[16] === lastFetchedCurrentQuests) {
               if (cResult[17] === tmp4.callerSource) {
@@ -783,7 +775,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 }
                 const effect = obj3.useEffect(tmp21, tmp22);
                 if (cResult[20] === stateFromStoresArray1) {
-                  if (cResult[21] === first) {
+                  if (cResult[21] === hasFetched) {
                     if (cResult[22] === isFetchingCurrentQuests) {
                       let tmp24;
                       if (cResult[23] === stateFromStoresArray) {
@@ -793,37 +785,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     }
                   }
                 }
-                class P {
-                  constructor() {
-                    return { isFetchingCurrentQuests: QuestStore.isFetchingCurrentQuests, lastFetchedCurrentQuests: QuestStore.lastFetchedCurrentQuests };
-                  }
-                }
-                tmp25[0] = stateFromStoresArray;
-                tmp25[1] = stateFromStoresArray1;
-                tmp25[2] = isFetchingCurrentQuests;
-                tmp25[3] = first;
+                const obj4 = { quests: stateFromStoresArray, excludedQuests: stateFromStoresArray1, isFetchingCurrentQuests, hasFetched };
                 cResult[20] = stateFromStoresArray1;
-                cResult[21] = first;
+                cResult[21] = hasFetched;
                 cResult[22] = isFetchingCurrentQuests;
                 cResult[23] = stateFromStoresArray;
-                cResult[24] = tmp25;
-                tmp24 = tmp25;
+                cResult[24] = obj4;
+                tmp24 = obj4;
               }
             }
           }
         }
-        const items3 = [, , , , , ];
-        class P {
-          constructor() {
-            return { isFetchingCurrentQuests: QuestStore.isFetchingCurrentQuests, lastFetchedCurrentQuests: QuestStore.lastFetchedCurrentQuests };
-          }
-        }
-        items3[1] = tmp19;
-        items3[2] = first;
-        items3[3] = isFetchingCurrentQuests;
-        items3[4] = lastFetchedCurrentQuests;
-        items3[5] = tmp4.callerSource;
-        cResult[14] = first;
+        const items3 = [tmp4.fetchPolicy, tmp19, hasFetched, isFetchingCurrentQuests, lastFetchedCurrentQuests, tmp4.callerSource];
+        cResult[14] = hasFetched;
         cResult[15] = isFetchingCurrentQuests;
         cResult[16] = lastFetchedCurrentQuests;
         cResult[17] = tmp4.callerSource;
@@ -833,7 +807,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-  class F {
+  class I {
     constructor() {
       fetchPolicy = fetchPolicy.fetchPolicy;
       if ("cache-only" !== fetchPolicy) {
@@ -865,13 +839,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-  cResult[9] = first;
+  cResult[9] = hasFetched;
   cResult[10] = isFetchingCurrentQuests;
   cResult[11] = lastFetchedCurrentQuests;
   cResult[12] = tmp4.fetchPolicy;
-  cResult[13] = F;
-  tmp21 = F;
-}) : (() => {
+  cResult[13] = I;
+  tmp21 = I;
+}) : (function useQuests() {
   let closure_2;
   let obj = arg0;
   if (arg0 === undefined) {
@@ -901,7 +875,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const stateFromStoresObject = obj4.useStateFromStoresObject(items2, () => ({ isFetchingCurrentQuests: QuestStore.isFetchingCurrentQuests, lastFetchedCurrentQuests: QuestStore.lastFetchedCurrentQuests }));
   const isFetchingCurrentQuests = stateFromStoresObject.isFetchingCurrentQuests;
   lastFetchedCurrentQuests = stateFromStoresObject.lastFetchedCurrentQuests;
-  const obj5 = obj(10925);
+  const obj5 = obj(10576);
   isEligibleForQuests = obj5.getIsEligibleForQuests();
   const items3 = [obj.fetchPolicy, isEligibleForQuests, hasFetched, isFetchingCurrentQuests, lastFetchedCurrentQuests, obj.callerSource];
   const effect = isEligibleForQuests.useEffect(() => {
@@ -944,7 +918,7 @@ let closure_37 = {};
 let closure_38 = { questHomeHero: null, isQuestHomeHeroShelfEnabled: false, currentUserId: null, isRenewableEndDateSortEnabled: false, isMobileQuestHomeSortPriorityEnabled: false };
 const constants10 = { DESC: 0, [0]: "DESC", ASC: 1, [1]: "ASC" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSortMetadata() {
   let tmp12;
   let tmp14;
   let tmp4;
@@ -1007,7 +981,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     tmp14 = cResult[5];
   }
-  const MobileQuestHomeSortPriorityExperiment = tmp(10927).MobileQuestHomeSortPriorityExperiment;
+  const MobileQuestHomeSortPriorityExperiment = tmp(10578).MobileQuestHomeSortPriorityExperiment;
   const enabled2 = MobileQuestHomeSortPriorityExperiment.useConfig(tmp14).enabled;
   if (cResult[6] === stateFromStores1) {
     if (cResult[7] === enabled2) {
@@ -1030,7 +1004,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[10] = stateFromStores;
   cResult[11] = obj4;
   tmp16 = obj4;
-}) : (() => {
+}) : (function useSortMetadata() {
   let stateFromStores;
   let stateFromStores1;
   const items = [AdDeliveryStore];
@@ -1061,7 +1035,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 const QuestTabs = { ALL: "all", CLAIMED: "claimed", PREVIEW_TOOL: "preview_tool" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, sortMethod) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFilteredQuests(arg0, sortMethod) {
   let excludedQuests;
   let first;
   let hasFetched;
@@ -1121,7 +1095,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, sortMethod) =>
     continue;
   }
   return { quests: quests1, excludedQuests, isFetchingCurrentQuests, hasFetched };
-}) : ((arg0, sortMethod) => {
+}) : (function useFilteredQuests(arg0, sortMethod) {
   let excludedQuests;
   let hasFetched;
   let isFetchingCurrentQuests;
@@ -1165,7 +1139,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, sortMethod) =>
   return { quests: quests1, excludedQuests, isFetchingCurrentQuests, hasFetched };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClaimedQuests() {
   let obj3;
   let ref;
   let tmp12;
@@ -1256,7 +1230,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[7] = stateFromStoresArray;
   cResult[8] = stateFromStores;
   cResult[9] = obj3;
-}) : (() => {
+}) : (function useClaimedQuests() {
   let ref;
   _require = react.useRef(false);
   let obj = require("get initialized");
@@ -1280,7 +1254,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return { claimedQuests, isFetchingClaimedQuests };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExpiredQuestsMap() {
   let expiredQuestsMap;
   let tmp4;
   let tmp5;
@@ -1300,14 +1274,14 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useExpiredQuestsMap() {
   let expiredQuestsMap;
   const items = [QuestStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => expiredQuestsMap.getExpiredQuestsMap());
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((config, arg1) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowBonusOrbsUX(config, arg1) {
   let tmp5;
   let tmp7;
   const obj = react2;
@@ -1332,7 +1306,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((config, arg1) => {
     tmp7 = cResult[3];
   }
   let tmp9 = !tmp4;
-  const INELIGIBLE = tmp(10021).QuestOrbMultiplierEligibilityType.INELIGIBLE;
+  const INELIGIBLE = tmp(9552).QuestOrbMultiplierEligibilityType.INELIGIBLE;
   if (!tmp4) {
     tmp9 = tmp5;
   }
@@ -1343,7 +1317,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((config, arg1) => {
     tmp9 = arg1 !== INELIGIBLE;
   }
   return tmp9;
-}) : ((config, arg1) => {
+}) : (function useShouldShowBonusOrbsUX(config, arg1) {
   const tmp = closure_47(config);
   const obj = QuestRewardUtils;
   const result = obj.hasVirtualCurrencyReward(config.config);
@@ -1363,7 +1337,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((config, arg1) => {
   return tmp4;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestOrbRewardMultiplier(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -1401,7 +1375,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useQuestOrbRewardMultiplier(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -1418,7 +1392,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsQuestExpired(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -1451,7 +1425,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useIsQuestExpired(arg0) {
   let closure_0;
   _require = arg0;
   const items = [QuestStore];
@@ -1464,7 +1438,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_47 = tmp10;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsQuestAccessSuspended() {
   let tmp4;
   let tmp5;
   let tmp6;
@@ -1487,22 +1461,24 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5, tmp6);
-}) : (() => {
+}) : (function useIsQuestAccessSuspended() {
   const items = [QuestStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => QuestStore.isQuestAccessSuspended, []);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, channelId, arg2) => {
-  let closure_0;
+let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsQuestEligibleForMembersListPopout(userStatus, channelId, arg2) {
   let first;
   let tmp11;
   let tmp12;
   let tmp13;
   let tmp16;
   let tmp17;
+  let tmp20;
+  let tmp22;
+  let tmp23;
   let tmp8;
-  _require = arg0;
+  _require = userStatus;
   const tmp = _require;
   const obj = require("react");
   const cResult = obj.c(12);
@@ -1523,7 +1499,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, channelId, ar
     if (channelId != null) {
       channelId1 = channelId.channelId;
     }
-    const fn = function u() {
+    const fn = function o() {
       channelId = undefined;
       const getChannel = ChannelStore.getChannel;
       if (channelId != null) {
@@ -1560,86 +1536,73 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, channelId, ar
     tmp12 = cResult[4];
     tmp13 = cResult[5];
   }
-  const tmpResult4 = tmp(504);
-  const stateFromStores1 = tmpResult4.useStateFromStores(tmp11, tmp12, tmp13);
+  const tmpResult5 = tmp(504);
+  const stateFromStores1 = tmpResult5.useStateFromStores(tmp11, tmp12, tmp13);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const items3 = [UserStore];
-    class T {
-      constructor() {
-        currentUser = currentUser.getCurrentUser();
-        let id;
-        if (currentUser != null) {
-          id = currentUser.id;
-        }
-        return id;
+    const fn3 = function h() {
+      currentUser = currentUser.getCurrentUser();
+      let id;
+      if (currentUser != null) {
+        id = currentUser.id;
       }
-    }
+      return id;
+    };
     cResult[6] = items3;
-    cResult[7] = T;
-    tmp17 = T;
+    cResult[7] = fn3;
+    tmp17 = fn3;
     tmp16 = items3;
   } else {
     tmp16 = cResult[6];
     tmp17 = cResult[7];
   }
-  const tmpResult5 = tmp(504);
-  const stateFromStores2 = tmpResult5.useStateFromStores(tmp16, tmp17);
+  const tmpResult6 = tmp(504);
+  const stateFromStores2 = tmpResult6.useStateFromStores(tmp16, tmp17);
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     const items4 = [QuestStore];
-    class T {
-      constructor() {
-        currentUser = currentUser.getCurrentUser();
-        let id;
-        if (currentUser != null) {
-          id = currentUser.id;
-        }
-        return id;
-      }
-    }
     cResult[8] = items4;
-  }
-  if (cResult[9] !== arg0) {
-    class P {
-      constructor() {
-        const isQuestExpiredResult = null != closure_0 && QuestStore.isQuestExpired(tmp.id);
-        return isQuestExpiredResult;
-      }
-    }
-    const items5 = [arg0];
-    class T {
-      constructor() {
-        currentUser = currentUser.getCurrentUser();
-        let id;
-        if (currentUser != null) {
-          id = currentUser.id;
-        }
-        return id;
-      }
-    }
-    cResult[9] = arg0;
-    cResult[10] = P;
-    cResult[11] = items5;
+    tmp20 = items4;
   } else {
-    class P {
-      constructor() {
-        const isQuestExpiredResult = null != closure_0 && QuestStore.isQuestExpired(tmp.id);
-        return isQuestExpiredResult;
-      }
-    }
+    tmp20 = cResult[8];
   }
-  tmp(504);
-  if (null != arg0) {
-    class P {
-      constructor() {
-        const isQuestExpiredResult = null != closure_0 && QuestStore.isQuestExpired(tmp.id);
-        return isQuestExpiredResult;
+  if (cResult[9] !== userStatus) {
+    const fn4 = function v() {
+      const isQuestExpiredResult = null != userStatus && QuestStore.isQuestExpired(tmp.id);
+      return isQuestExpiredResult;
+    };
+    const items5 = [userStatus];
+    cResult[9] = userStatus;
+    cResult[10] = fn4;
+    cResult[11] = items5;
+    tmp23 = items5;
+    tmp22 = fn4;
+  } else {
+    tmp22 = cResult[10];
+    tmp23 = cResult[11];
+  }
+  const tmpResult7 = tmp(504);
+  if (null != userStatus) {
+    if (!stateFromStores1) {
+      if (!tmpResult7.useStateFromStores(tmp20, tmp22, tmp23)) {
+        if (stateFromStores2 !== arg2) {
+          userStatus = userStatus.userStatus;
+          let claimedAt;
+          if (userStatus != null) {
+            claimedAt = userStatus.claimedAt;
+          }
+          let tmp26 = null != claimedAt;
+          const tmpResult8 = tmp(7399);
+          if (tmp26) {
+            tmp26 = !tmpResult8.isStreamingAndCanWatch(channelId, stateFromStores);
+          }
+          return !tmp26;
+        }
       }
     }
   }
   return false;
-}) : ((userStatus, arg1, arg2) => {
+}) : (function useIsQuestEligibleForMembersListPopout(userStatus, channelId, arg2) {
   _require = userStatus;
-  let channelId = arg1;
   const tmp = _require;
   const items = [ChannelStore];
   const obj = require("get initialized");
@@ -1684,9 +1647,9 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, channelId, ar
             claimedAt = userStatus.claimedAt;
           }
           let tmp8 = null != claimedAt;
-          const tmpResult = tmp(7219);
+          const tmpResult = tmp(7399);
           if (tmp8) {
-            tmp8 = !tmpResult.isStreamingAndCanWatch(arg1, stateFromStores);
+            tmp8 = !tmpResult.isStreamingAndCanWatch(channelId, stateFromStores);
           }
           return !tmp8;
         }
@@ -1696,7 +1659,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, channelId, ar
   return false;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1) {
+let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestFormattedDate(arg0, arg1) {
   let locale;
   let tmp4;
   let tmp5;
@@ -1752,7 +1715,7 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1)
     tmp9 = toLocaleDateStringResult;
   }
   return str;
-}) : ((arg0) => {
+}) : (function useQuestFormattedDate(arg0) {
   let closure_0;
   let locale;
   _require = arg0;
@@ -1778,7 +1741,7 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1)
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
+let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnOpenGameClick(quest) {
   let ctaContent;
   let obj = quest(ctaContent[15]);
   const cResult = obj.c(6);
@@ -1786,7 +1749,7 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   const content = quest.content;
   ctaContent = quest.ctaContent;
   const sourceQuestContent = quest.sourceQuestContent;
-  obj2 = quest(ctaContent[32]);
+  obj2 = quest(ctaContent[33]);
   const getQuestImpressionId = obj2.useGetQuestImpressionId();
   if (cResult[0] === content) {
     if (cResult[1] === ctaContent) {
@@ -1802,7 +1765,7 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
     }
   }
   const fn = function s() {
-    if (quest.id !== afk) {
+    if (quest.id !== authStore6) {
       obj2 = { content, ctaContent, impressionId: getQuestImpressionId(), sourceQuestContent };
       const openGameLinkDirectly = QuestPlatformUtils.openGameLinkDirectly;
       QuestPlatformUtils;
@@ -1820,16 +1783,16 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   cResult[4] = sourceQuestContent;
   cResult[5] = fn;
   tmp3 = fn;
-}) : ((quest) => {
+}) : (function useOnOpenGameClick(quest) {
   quest = quest.quest;
   const content = quest.content;
   const ctaContent = quest.ctaContent;
   const sourceQuestContent = quest.sourceQuestContent;
-  let obj = quest(ctaContent[32]);
+  let obj = quest(ctaContent[33]);
   const getQuestImpressionId = obj.useGetQuestImpressionId();
   const items = [quest, content, ctaContent, getQuestImpressionId, sourceQuestContent];
   return react.useCallback(() => {
-    if (quest.id !== afk) {
+    if (quest.id !== authStore6) {
       obj2 = { content, ctaContent, impressionId: getQuestImpressionId(), sourceQuestContent };
       const openGameLinkDirectly = QuestPlatformUtils.openGameLinkDirectly;
       QuestPlatformUtils;
@@ -1842,7 +1805,7 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp15 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+let tmp15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsQuestProgressingOnDesktop(id) {
   let first;
   let tmp6;
   _require = id;
@@ -1868,7 +1831,7 @@ let tmp15 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useIsQuestProgressingOnDesktop(arg0) {
   let id;
   _require = arg0;
   const items = [QuestStore];
@@ -1877,7 +1840,7 @@ let tmp15 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
 });
 let closure_48 = tmp15;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
+let tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsQuestProgressingOnConsole(quest) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -1891,7 +1854,7 @@ let tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : ((arg0) => {
+}) : (function useIsQuestProgressingOnConsole(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   return react.useMemo(() => {
@@ -1901,7 +1864,7 @@ let tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
 });
 let closure_49 = tmp16;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp17 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+let tmp17 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsQuestProgressingVideoQuest(id) {
   let first;
   let tmp6;
   let tmp8;
@@ -1937,7 +1900,7 @@ let tmp17 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     tmp8 = cResult[4];
   }
   return tmp8;
-}) : ((arg0) => {
+}) : (function useIsQuestProgressingVideoQuest(arg0) {
   let id;
   _require = arg0;
   let obj = require("get initialized");
@@ -1950,7 +1913,7 @@ let tmp17 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
 });
 let closure_50 = tmp17;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsQuestProgressing(arg0) {
   let tmp = closure_48(arg0);
   const tmp2 = closure_49(arg0);
   const tmp3 = closure_50(arg0);
@@ -1961,7 +1924,7 @@ let tmp18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp = tmp3;
   }
   return tmp;
-}) : ((arg0) => {
+}) : (function useIsQuestProgressing(arg0) {
   let tmp = closure_48(arg0);
   const tmp2 = closure_49(arg0);
   const tmp3 = closure_50(arg0);
@@ -1987,7 +1950,7 @@ let tmp19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj = require("react");
   const cResult = obj.c(11);
   if (cResult[0] !== arg0) {
-    const fn = function o() {
+    const fn = function u() {
       const obj = QuestTaskUtils;
       return obj.getQuestTaskDetails(userStatus);
     };
@@ -2141,7 +2104,7 @@ let tmp19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_52 = tmp19;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp20 = ReactCompilerGating.isReactCompilerEnabled() ? ((config) => {
+let tmp20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useThirdPartyTaskDetails(config) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -2155,7 +2118,7 @@ let tmp20 = ReactCompilerGating.isReactCompilerEnabled() ? ((config) => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : ((arg0) => {
+}) : (function useThirdPartyTaskDetails(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   return react.useMemo(() => {
@@ -2165,7 +2128,7 @@ let tmp20 = ReactCompilerGating.isReactCompilerEnabled() ? ((config) => {
 });
 let closure_53 = tmp20;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp21 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
+let tmp21 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConnectedConsoleLinkOnClick(quest) {
   let sourceQuestContent;
   let tmp4;
   let tmp = quest;
@@ -2185,7 +2148,7 @@ let tmp21 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   }
   const tmp5 = closure_56(tmp4);
   let closure_3 = tmp5;
-  const tmpResult = tmp(tmp2[32]);
+  const tmpResult = tmp(tmp2[33]);
   const getQuestImpressionId = tmpResult.useGetQuestImpressionId();
   if (cResult[2] === getQuestImpressionId) {
     if (cResult[3] === quest) {
@@ -2221,13 +2184,13 @@ let tmp21 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   cResult[6] = tmp5;
   cResult[7] = fn;
   tmp7 = fn;
-}) : ((quest) => {
+}) : (function useConnectedConsoleLinkOnClick(quest) {
   let content;
   let sourceQuestContent;
   quest = quest.quest;
   ({ questContent: importDefault, sourceQuestContent: dependencyMap } = quest);
   let closure_3 = closure_56({ quest });
-  let obj = quest(10929);
+  let obj = quest(10580);
   let closure_4 = obj.useGetQuestImpressionId();
   return () => {
     const tmp = QuestPlatformUtils;
@@ -2245,7 +2208,7 @@ let tmp21 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp22 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+let tmp22 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetchApplicationForConsoleQuests(arg0) {
   let tmp17;
   let tmp2;
   const obj = react2;
@@ -2280,7 +2243,7 @@ let tmp22 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
     tmp17 = cResult[3];
   }
   return useGetOrFetchApplicationsDefault(tmp17);
-}) : ((arg0) => {
+}) : (function useGetOrFetchApplicationForConsoleQuests(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   const memo = react.useMemo(() => {
@@ -2300,7 +2263,7 @@ let tmp22 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
 });
 let closure_54 = tmp22;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? ((config) => {
+let tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestCollectibles(config) {
   let isFetching;
   let product;
   let tmp4;
@@ -2350,7 +2313,7 @@ const tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? ((config) => {
   cResult[6] = isFetching;
   cResult[7] = obj2;
   tmp10 = obj2;
-}) : ((config) => {
+}) : (function useQuestCollectibles(config) {
   const obj = QuestRewardUtils;
   const hasQuestCollectibles = obj.hasCollectiblesQuestReward(config);
   obj2 = QuestCopyUtils;
@@ -2369,7 +2332,7 @@ const tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? ((config) => {
   return { hasQuestCollectibles, avatarDecoration, isFetching };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestPreviewActions(arg0) {
   let closure_0;
   let tmp2;
   _require = arg0;
@@ -2410,7 +2373,7 @@ let tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = cResult[1];
   }
   return tmp2;
-}) : ((arg0) => {
+}) : (function useQuestPreviewActions(arg0) {
   let closure_0 = arg0;
   let items = [arg0];
   return react.useMemo(() => {
@@ -2438,14 +2401,14 @@ let tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       handleResetHasBeenSeenClick() {
         const items = [closure_1_0];
         const obj = closure_0(dependencyMap[18]);
-        return obj.markAdContentUnseen(closure_0(dependencyMap[42]).AdCreativeType.QUEST, items);
+        return obj.markAdContentUnseen(closure_0(dependencyMap[43]).AdCreativeType.QUEST, items);
       }
     };
     return obj;
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp25 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConnectedAccounts() {
   let accounts;
   let fetching;
   let tmp10;
@@ -2473,37 +2436,31 @@ const tmp25 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[2] !== accounts) {
     let tmp11;
     let tmp12;
-    let tmp14;
+    let tmp13;
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      class E {
-        constructor(revoked) {
-          return false === revoked.revoked;
-        }
-      }
-      cResult[6] = E;
-      tmp11 = E;
+      const fn2 = function p(revoked) {
+        return false === revoked.revoked;
+      };
+      cResult[6] = fn2;
+      tmp11 = fn2;
     } else {
-      class E {
-        constructor(revoked) {
-          return false === revoked.revoked;
-        }
-      }
+      tmp11 = cResult[6];
     }
     const found = accounts.filter(tmp11);
     const _Symbol2 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       class E {
-        constructor(revoked) {
-          return false === revoked.revoked;
+        constructor(type) {
+          return type.type === constants.XBOX;
         }
       }
-      cResult[7] = tmp13;
-      tmp12 = tmp13;
+      cResult[7] = E;
+      tmp12 = E;
     } else {
       class E {
-        constructor(revoked) {
-          return false === revoked.revoked;
+        constructor(type) {
+          return type.type === constants.XBOX;
         }
       }
     }
@@ -2516,7 +2473,7 @@ const tmp25 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       cResult[8] = C;
-      tmp14 = C;
+      tmp13 = C;
     } else {
       class C {
         constructor(type) {
@@ -2524,7 +2481,7 @@ const tmp25 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     }
-    const found2 = found.filter(tmp14);
+    const found2 = found.filter(tmp13);
     const combined = found1.concat(found2);
     cResult[2] = accounts;
     cResult[3] = found2;
@@ -2553,7 +2510,7 @@ const tmp25 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[10] = tmp10;
   cResult[11] = tmp9;
   cResult[12] = obj2;
-}) : (() => {
+}) : (function useConnectedAccounts() {
   let accounts;
   let obj = accounts(504);
   const items = [ConnectedAccountsStore];
@@ -2575,7 +2532,7 @@ const tmp25 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 let closure_55 = tmp25;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp26 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
+let tmp26 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWaitingForConsoleConnection(quest) {
   const obj = react2;
   const cResult = obj.c(4);
   quest = quest.quest;
@@ -2597,7 +2554,7 @@ const tmp26 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   cResult[2] = quest;
   cResult[3] = tmp7;
   tmp6 = tmp7;
-}) : ((quest) => {
+}) : (function useWaitingForConsoleConnection(quest) {
   quest = quest.quest;
   const prop = closure_55().xboxAndPlaystationAccounts;
   const length = prop.length;
@@ -2609,7 +2566,7 @@ const tmp26 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
 let closure_56 = tmp26;
 ReactCompilerGating = ReactCompilerGating_mod;
 let obj2 = { UNACCEPTED: 0, [0]: "UNACCEPTED", ACCEPTED: 1, [1]: "ACCEPTED", IN_PROGRESS: 2, [2]: "IN_PROGRESS", COMPLETED: 3, [3]: "COMPLETED", CLAIMED: 4, [4]: "CLAIMED" };
-const tmp27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp27 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestHowToHelpArticle() {
   let tmp10;
   let tmp7;
   let tmp8;
@@ -2671,7 +2628,7 @@ const tmp27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp19 = obj6;
   }
   tmp18 = tmp9;
-}) : (() => {
+}) : (function useQuestHowToHelpArticle() {
   const tmp = closure_55();
   const obj = HelpdeskUtilsDefault;
   const articleURL = obj.getArticleURL(constants7.QUEST_HOW_TO_PLAYSTATION);
@@ -2697,7 +2654,7 @@ const tmp27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   tmp9 = formatResult1;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp28 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus) => {
+let tmp28 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProgressState(userStatus) {
   let IN_PROGRESS;
   userStatus = userStatus.userStatus;
   let enrolledAt;
@@ -2729,7 +2686,7 @@ let tmp28 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus) => {
     IN_PROGRESS = tmp2 ? tmp8.ACCEPTED : tmp8.UNACCEPTED;
   }
   return IN_PROGRESS;
-}) : ((userStatus) => {
+}) : (function useProgressState(userStatus) {
   let IN_PROGRESS;
   userStatus = userStatus.userStatus;
   let enrolledAt;
@@ -2763,7 +2720,7 @@ let tmp28 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus) => {
   return IN_PROGRESS;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp29 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp29 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestCompletionDetails(arg0, arg1) {
   let locale;
   let tmp11;
   let tmp5;
@@ -2772,7 +2729,7 @@ let tmp29 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   const cResult = obj.c(11);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [LocaleStore];
-    const fn = function o() {
+    const fn = function u() {
       return locale.locale;
     };
     cResult[0] = items;
@@ -2837,7 +2794,7 @@ let tmp29 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   }
   const tmpResult2 = NumberUtils;
   combined = tmpResult2.formatPercent(stateFromStores, percentComplete, { roundingMode: "floor" });
-}) : ((arg0) => {
+}) : (function useQuestCompletionDetails(arg0) {
   let locale;
   let flag = arg1;
   if (arg1 === undefined) {
@@ -2873,7 +2830,7 @@ let tmp29 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   combined = tmpResult.formatPercent(stateFromStores, percentComplete, { roundingMode: "floor" });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp30 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp30 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedTaskPlatform(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -2902,7 +2859,7 @@ let tmp30 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
   if (cResult[3] !== arg0) {
-    const fn2 = function u(platform) {
+    const fn2 = function o(platform) {
       const obj = QuestActionCreators;
       return obj.selectTaskPlatform(closure_0, platform);
     };
@@ -2924,7 +2881,7 @@ let tmp30 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = stateFromStores;
   cResult[7] = items1;
   tmp9 = items1;
-}) : ((arg0) => {
+}) : (function useSelectedTaskPlatform(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -2939,17 +2896,17 @@ let tmp30 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_58 = tmp30;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp31 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
+const tmp31 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTaskPlatformScreen(id, arg1) {
   let CONSOLE;
   let closure_0;
-  let fn2;
+  let fn;
   let tmp10;
-  let tmp41;
   let tmp42;
   let tmp43;
   let tmp44;
+  let tmp45;
   let tmp46;
-  let tmp47;
+  let tmp48;
   let tmp5;
   let tmp7;
   const tmp = _require;
@@ -2959,7 +2916,7 @@ const tmp31 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
   [tmp5, r10016] = _slicedToArray(closure_58(id.id), 2);
   const tmp4 = _slicedToArray(closure_58(id.id), 2);
   if (cResult[0] !== id) {
-    const tmpResult = tmp(10931);
+    const tmpResult = tmp(10582);
     const result = tmpResult.supportedTaskPlatforms(id);
     cResult[0] = id;
     cResult[1] = result;
@@ -2988,28 +2945,32 @@ const tmp31 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
   const tmp13 = closure_48(id);
   const tmp14 = closure_49(id);
   if (cResult[6] !== arg1) {
-    let tmp17;
-    let tmp29;
+    let tmp30;
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function _() {
-        return null;
-      };
-      cResult[8] = fn;
-      tmp17 = fn;
+      class T {
+        constructor() {
+          return null;
+        }
+      }
+      cResult[8] = T;
     } else {
-      tmp17 = cResult[8];
+      class T {
+        constructor() {
+          return null;
+        }
+      }
     }
     const _Symbol2 = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      class Q {
+      class P {
         constructor() {
           return constants.DESKTOP;
         }
       }
-      cResult[9] = Q;
+      cResult[9] = P;
     } else {
-      class Q {
+      class P {
         constructor() {
           return constants.DESKTOP;
         }
@@ -3022,7 +2983,7 @@ const tmp31 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
           return constants.DESKTOP;
         }
       }
-      cResult[10] = P;
+      cResult[10] = tmp20;
     } else {
       class P {
         constructor() {
@@ -3037,7 +2998,7 @@ const tmp31 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
           return constants.DESKTOP;
         }
       }
-      cResult[11] = tmp21;
+      cResult[11] = tmp22;
     } else {
       class P {
         constructor() {
@@ -3052,7 +3013,7 @@ const tmp31 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
           return constants.DESKTOP;
         }
       }
-      cResult[12] = tmp23;
+      cResult[12] = tmp24;
     } else {
       class P {
         constructor() {
@@ -3097,7 +3058,7 @@ const tmp31 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
           return constants.CONSOLE;
         }
       }
-      cResult[15] = tmp27;
+      cResult[15] = tmp28;
     } else {
       class A {
         constructor() {
@@ -3107,14 +3068,14 @@ const tmp31 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
     }
     const _Symbol9 = Symbol;
     if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-      class F {
+      class I {
         constructor() {
           return constants.DESKTOP;
         }
       }
-      cResult[16] = F;
+      cResult[16] = I;
     } else {
-      class F {
+      class I {
         constructor() {
           return constants.DESKTOP;
         }
@@ -3122,75 +3083,75 @@ const tmp31 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
     }
     const _Symbol10 = Symbol;
     if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-      class I {
+      class F {
         constructor() {
           return constants.DESKTOP;
         }
       }
-      cResult[17] = I;
-      tmp29 = I;
+      cResult[17] = F;
+      tmp30 = F;
     } else {
-      class I {
+      class F {
         constructor() {
           return constants.DESKTOP;
         }
       }
     }
-    const str2 = tmp(5081);
+    const str2 = tmp(5741);
     const match = str2.match(arg1);
-    const obj3 = { taskType: tmp(5638).FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP };
+    const obj3 = { taskType: tmp(5985).FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP };
     const _with = match.with({ percentComplete: 0 }, tmp17).with;
     match.with({ percentComplete: 0 }, tmp17);
-    const obj4 = { taskType: tmp(5638).FirstPartyQuestTaskTypes.PLAY_ACTIVITY };
+    const obj4 = { taskType: tmp(5985).FirstPartyQuestTaskTypes.PLAY_ACTIVITY };
     const _with2 = _with(obj3, tmp18).with;
     _with(obj3, tmp18);
-    const obj5 = { taskType: tmp(5638).FirstPartyQuestTaskTypes.WATCH_VIDEO };
+    const obj5 = { taskType: tmp(5985).FirstPartyQuestTaskTypes.WATCH_VIDEO };
     const _with3 = _with2(obj4, tmp19).with;
     _with2(obj4, tmp19);
-    const obj6 = { taskType: tmp(5638).FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE };
-    const _with4 = _with3(obj5, tmp20).with;
-    _with3(obj5, tmp20);
-    const obj7 = { taskType: tmp(5638).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP };
-    const _with5 = _with4(obj6, tmp22).with;
-    _with4(obj6, tmp22);
-    const obj8 = { taskType: tmp(5638).FirstPartyQuestTaskTypes.PLAY_ON_XBOX };
-    const _with6 = _with5(obj7, tmp24).with;
-    _with5(obj7, tmp24);
-    const obj9 = { taskType: tmp(5638).FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION };
-    const _with7 = _with6(obj8, tmp25).with;
-    _with6(obj8, tmp25);
-    const obj10 = { taskType: tmp(5638).FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_GAME };
-    const _with8 = _with7(obj9, tmp26).with;
-    _with7(obj9, tmp26);
-    const obj11 = { taskType: tmp(5638).FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_ACTIVITY };
-    const _with9 = _with8(obj10, tmp28).with;
-    _with8(obj10, tmp28);
-    const _with9Result = _with9(obj11, tmp29);
+    const obj6 = { taskType: tmp(5985).FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE };
+    const _with4 = _with3(obj5, tmp21).with;
+    _with3(obj5, tmp21);
+    const obj7 = { taskType: tmp(5985).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP };
+    const _with5 = _with4(obj6, tmp23).with;
+    _with4(obj6, tmp23);
+    const obj8 = { taskType: tmp(5985).FirstPartyQuestTaskTypes.PLAY_ON_XBOX };
+    const _with6 = _with5(obj7, tmp25).with;
+    _with5(obj7, tmp25);
+    const obj9 = { taskType: tmp(5985).FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION };
+    const _with7 = _with6(obj8, tmp26).with;
+    _with6(obj8, tmp26);
+    const obj10 = { taskType: tmp(5985).FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_GAME };
+    const _with8 = _with7(obj9, tmp27).with;
+    _with7(obj9, tmp27);
+    const obj11 = { taskType: tmp(5985).FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_ACTIVITY };
+    const _with9 = _with8(obj10, tmp29).with;
+    _with8(obj10, tmp29);
+    const _with9Result = _with9(obj11, tmp30);
     cResult[6] = arg1;
     cResult[7] = _with9Result.exhaustive();
     const exhaustiveResult = _with9Result.exhaustive();
   } else {
-    class I {
+    class F {
       constructor() {
         return constants.DESKTOP;
       }
     }
   }
   if (tmp13) {
-    class I {
+    class F {
       constructor() {
         return constants.DESKTOP;
       }
     }
     CONSOLE = constants.DESKTOP;
   } else {
-    class I {
+    class F {
       constructor() {
         return constants.DESKTOP;
       }
     }
     if (tmp14) {
-      class I {
+      class F {
         constructor() {
           return constants.DESKTOP;
         }
@@ -3199,7 +3160,7 @@ const tmp31 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
     }
   }
   if (cResult[18] === CONSOLE) {
-    class I {
+    class F {
       constructor() {
         return constants.DESKTOP;
       }
@@ -3208,115 +3169,115 @@ const tmp31 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
   if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
     class M {
       constructor() {
-        return closure_0(dependencyMap[47]).TaskPlatformScreen.CONSOLE;
+        return closure_0(dependencyMap[48]).TaskPlatformScreen.CONSOLE;
       }
     }
     cResult[24] = M;
-    tmp41 = M;
+    tmp42 = M;
   } else {
     class M {
       constructor() {
-        return closure_0(dependencyMap[47]).TaskPlatformScreen.CONSOLE;
+        return closure_0(dependencyMap[48]).TaskPlatformScreen.CONSOLE;
       }
     }
   }
   if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
     class L {
       constructor() {
-        return closure_0(dependencyMap[47]).TaskPlatformScreen.DESKTOP;
+        return closure_0(dependencyMap[48]).TaskPlatformScreen.DESKTOP;
       }
     }
     cResult[25] = L;
-    tmp42 = L;
+    tmp43 = L;
   } else {
     class L {
       constructor() {
-        return closure_0(dependencyMap[47]).TaskPlatformScreen.DESKTOP;
+        return closure_0(dependencyMap[48]).TaskPlatformScreen.DESKTOP;
       }
     }
   }
   if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
     class N {
       constructor() {
-        return closure_0(dependencyMap[47]).TaskPlatformScreen.CONSOLE;
+        return closure_0(dependencyMap[48]).TaskPlatformScreen.CONSOLE;
       }
     }
     cResult[26] = N;
-    tmp43 = N;
+    tmp44 = N;
   } else {
     class N {
       constructor() {
-        return closure_0(dependencyMap[47]).TaskPlatformScreen.CONSOLE;
+        return closure_0(dependencyMap[48]).TaskPlatformScreen.CONSOLE;
       }
     }
   }
   if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
-    class N {
+    class H {
       constructor() {
-        return closure_0(dependencyMap[47]).TaskPlatformScreen.CONSOLE;
+        return closure_0(dependencyMap[48]).TaskPlatformScreen.DESKTOP;
       }
     }
-    cResult[27] = tmp45;
-    tmp44 = tmp45;
+    cResult[27] = H;
+    tmp45 = H;
   } else {
-    class N {
+    class H {
       constructor() {
-        return closure_0(dependencyMap[47]).TaskPlatformScreen.CONSOLE;
+        return closure_0(dependencyMap[48]).TaskPlatformScreen.DESKTOP;
       }
     }
   }
   if (cResult[28] === Symbol.for("react.memo_cache_sentinel")) {
     class H {
       constructor() {
-        return closure_0(dependencyMap[47]).TaskPlatformScreen.CONSOLE;
+        return closure_0(dependencyMap[48]).TaskPlatformScreen.DESKTOP;
       }
     }
-    cResult[28] = H;
-    tmp46 = H;
+    cResult[28] = tmp47;
+    tmp46 = tmp47;
   } else {
     class H {
       constructor() {
-        return closure_0(dependencyMap[47]).TaskPlatformScreen.CONSOLE;
+        return closure_0(dependencyMap[48]).TaskPlatformScreen.DESKTOP;
       }
     }
   }
   if (cResult[29] === Symbol.for("react.memo_cache_sentinel")) {
     class B {
       constructor() {
-        return closure_0(dependencyMap[47]).TaskPlatformScreen.DESKTOP;
+        return closure_0(dependencyMap[48]).TaskPlatformScreen.DESKTOP;
       }
     }
     cResult[29] = B;
-    tmp47 = B;
+    tmp48 = B;
   } else {
     class B {
       constructor() {
-        return closure_0(dependencyMap[47]).TaskPlatformScreen.DESKTOP;
+        return closure_0(dependencyMap[48]).TaskPlatformScreen.DESKTOP;
       }
     }
   }
   if (cResult[30] === tmp10) {
     class B {
       constructor() {
-        return closure_0(dependencyMap[47]).TaskPlatformScreen.DESKTOP;
+        return closure_0(dependencyMap[48]).TaskPlatformScreen.DESKTOP;
       }
     }
     const obj12 = { lastPlatformProgress: tmp15, currentProgressingPlatform: CONSOLE, selectedPlatform: tmp5 };
-    const str3 = tmp(5081);
+    const str3 = tmp(5741);
     const match1 = str3.match(obj12);
     const obj13 = { currentProgressingPlatform: constants.CONSOLE };
     const obj14 = { currentProgressingPlatform: constants.DESKTOP };
     const obj15 = { currentProgressingPlatform: null, lastPlatformProgress: constants.CONSOLE };
-    const withResult1 = match1.with(obj13, tmp41);
+    const withResult1 = match1.with(obj13, tmp42);
     const obj16 = { currentProgressingPlatform: null, lastPlatformProgress: constants.DESKTOP };
-    const withResult2 = withResult1.with(obj14, tmp42);
+    const withResult2 = withResult1.with(obj14, tmp43);
     const obj17 = { currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: constants.CONSOLE };
-    const withResult3 = withResult2.with(obj15, tmp43);
+    const withResult3 = withResult2.with(obj15, tmp44);
     const obj18 = { currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: constants.DESKTOP };
-    const withResult4 = withResult3.with(obj16, tmp44);
+    const withResult4 = withResult3.with(obj16, tmp45);
     const withResult5 = withResult4.with(obj17, tmp46);
-    const withResult6 = withResult5.with(obj18, tmp47);
-    const withResult7 = withResult6.with({ currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: null }, fn2);
+    const withResult6 = withResult5.with(obj18, tmp48);
+    const withResult7 = withResult6.with({ currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: null }, fn);
     cResult[18] = CONSOLE;
     cResult[19] = tmp10;
     cResult[20] = tmp7;
@@ -3325,7 +3286,7 @@ const tmp31 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
     cResult[23] = withResult7.exhaustive();
     const exhaustiveResult1 = withResult7.exhaustive();
   }
-  fn2 = function q() {
+  fn = function q() {
     if (closure_1) {
       let SELECT;
       const tmp2 = closure_0;
@@ -3339,8 +3300,8 @@ const tmp31 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
   };
   cResult[30] = tmp10;
   cResult[31] = tmp7;
-  cResult[32] = fn2;
-}) : ((id, arg1) => {
+  cResult[32] = fn;
+}) : (function useTaskPlatformScreen(id, arg1) {
   let DESKTOP;
   let hasItem1;
   let memo1;
@@ -3401,25 +3362,25 @@ const tmp31 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
       obj2 = { currentProgressingPlatform: constants.CONSOLE };
       const obj3 = { currentProgressingPlatform: constants.DESKTOP };
       const obj4 = { currentProgressingPlatform: null, lastPlatformProgress: constants.CONSOLE };
-      const withResult = match.with(obj2, () => id(selectedPlatform[47]).TaskPlatformScreen.CONSOLE);
+      const withResult = match.with(obj2, () => id(selectedPlatform[48]).TaskPlatformScreen.CONSOLE);
       const obj5 = { currentProgressingPlatform: null, lastPlatformProgress: constants.DESKTOP };
-      const withResult1 = withResult.with(obj3, () => id(selectedPlatform[47]).TaskPlatformScreen.DESKTOP);
+      const withResult1 = withResult.with(obj3, () => id(selectedPlatform[48]).TaskPlatformScreen.DESKTOP);
       const obj6 = { currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: constants.CONSOLE };
-      const withResult2 = withResult1.with(obj4, () => id(selectedPlatform[47]).TaskPlatformScreen.CONSOLE);
+      const withResult2 = withResult1.with(obj4, () => id(selectedPlatform[48]).TaskPlatformScreen.CONSOLE);
       const obj7 = { currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: constants.DESKTOP };
-      const withResult3 = withResult2.with(obj5, () => id(selectedPlatform[47]).TaskPlatformScreen.DESKTOP);
-      const withResult4 = withResult3.with(obj6, () => id(selectedPlatform[47]).TaskPlatformScreen.CONSOLE);
-      const withResult5 = withResult4.with(obj7, () => id(selectedPlatform[47]).TaskPlatformScreen.DESKTOP);
+      const withResult3 = withResult2.with(obj5, () => id(selectedPlatform[48]).TaskPlatformScreen.DESKTOP);
+      const withResult4 = withResult3.with(obj6, () => id(selectedPlatform[48]).TaskPlatformScreen.CONSOLE);
+      const withResult5 = withResult4.with(obj7, () => id(selectedPlatform[48]).TaskPlatformScreen.DESKTOP);
       const withResult6 = withResult5.with({ currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: null }, () => {
         if (hasItem1) {
           let SELECT;
           const tmp2 = hasItem;
           if (tmp2) {
-            SELECT = id(first[47]).TaskPlatformScreen.SELECT;
+            SELECT = id(first[48]).TaskPlatformScreen.SELECT;
           }
           return SELECT;
         }
-        const TaskPlatformScreen = id(first[47]).TaskPlatformScreen;
+        const TaskPlatformScreen = id(first[48]).TaskPlatformScreen;
         SELECT = tmp ? TaskPlatformScreen.CONSOLE : TaskPlatformScreen.DESKTOP;
       });
       return withResult6.exhaustive();
@@ -3431,7 +3392,7 @@ const tmp31 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
 });
 let closure_59 = tmp31;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp32 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus) => {
+const tmp32 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestWarningTips(userStatus) {
   const obj = react2;
   const cResult = obj.c(14);
   const tmp4 = closure_53(userStatus);
@@ -3520,7 +3481,7 @@ const tmp32 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus) => {
         tmp18 = items;
       }
       const tmpResult = PlatformUtils;
-      const isMacResult = tmpResult.isMac() && tmp5.taskType === tmp(5638).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP && tmp9;
+      const isMacResult = tmpResult.isMac() && tmp5.taskType === tmp(5985).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP && tmp9;
       cResult[6] = tmp9;
       cResult[7] = tmp5.taskType;
       cResult[8] = isMacResult;
@@ -3537,12 +3498,12 @@ const tmp32 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus) => {
     cResult[5] = tmp15;
     tmp14 = tmp15;
   }
-  const DESKTOP = tmp(5638).FirstPartyQuestTaskTypesSets.DESKTOP;
+  const DESKTOP = tmp(5985).FirstPartyQuestTaskTypesSets.DESKTOP;
   const hasItem = DESKTOP.has(tmp5.taskType) && tmp5.percentComplete > 0;
   ({ percentComplete: tmp3[0], taskType: tmp3[1] } = tmp5);
   cResult[2] = hasItem;
   tmp11 = hasItem;
-}) : ((userStatus) => {
+}) : (function useQuestWarningTips(userStatus) {
   const tmp = closure_53(userStatus);
   const tmp2 = closure_52(userStatus);
   const first = _slicedToArray(closure_59(userStatus, tmp2), 1)[0];
@@ -3586,7 +3547,7 @@ const tmp32 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus) => {
   }
   const tmp9Result4 = PlatformUtils;
   const items = [];
-  const isMacResult = tmp9Result4.isMac() && tmp2.taskType === tmp9(5638).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP && tmp6;
+  const isMacResult = tmp9Result4.isMac() && tmp2.taskType === tmp9(5985).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP && tmp6;
   if (isMacResult) {
     const push = items.push;
     const intl = tmp9(1126).intl;
@@ -3600,7 +3561,7 @@ const tmp32 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus) => {
   return items;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp33 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp33 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuest(arg0) {
   let quests;
   let tmp4;
   let tmp5;
@@ -3635,7 +3596,7 @@ const tmp33 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = stateFromStores;
   cResult[4] = value;
   tmp7 = value;
-}) : ((arg0) => {
+}) : (function useQuest(arg0) {
   let quests;
   const items = [QuestStore];
   const obj = get_initialized;
@@ -3647,7 +3608,7 @@ const tmp33 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return value;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp34 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId, arg1) => {
+const tmp34 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNonNullableQuest(questId, arg1) {
   let stateFromStores;
   _require = questId;
   let closure_1 = arg1;
@@ -3672,7 +3633,7 @@ const tmp34 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId, arg1) =>
       return stateFromStores;
     }
   }
-  const fn = function o() {
+  const fn = function u() {
     let obj3;
     if (null == stateFromStores) {
       const quests = QuestStore.quests;
@@ -3702,7 +3663,7 @@ const tmp34 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId, arg1) =>
   cResult[4] = items2;
   tmp4 = items2;
   tmp3 = fn;
-}) : ((questId, arg1) => {
+}) : (function useNonNullableQuest(questId, arg1) {
   let stateFromStores;
   _require = questId;
   let closure_1 = arg1;
@@ -3739,12 +3700,10 @@ const tmp34 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId, arg1) =>
   return stateFromStores;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp35 = ReactCompilerGating.isReactCompilerEnabled() ? ((mode) => {
+const tmp35 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestBarOrDockModeChangeTracking(mode) {
   let closure_0;
   let closure_2;
-  let closure_6;
   let closure_7;
-  let ref;
   let tmp2;
   let tmp3;
   let tmp4;
@@ -3781,13 +3740,13 @@ const tmp35 = ReactCompilerGating.isReactCompilerEnabled() ? ((mode) => {
           if (cResult[8] === sourceQuestContent) {
             tmp8 = cResult[9];
           }
-          AdDeliveryStore = tmp8;
+          let closure_6 = tmp8;
           if (tmp4 == null) {
             tmp4 = tmp2;
           }
           LocaleStore = tmp4;
           obj2 = sourceQuestContent;
-          ChannelStore = sourceQuestContent.useRef(null);
+          const ref = sourceQuestContent.useRef(null);
           if (cResult[10] === tmp4) {
             if (cResult[11] === mode) {
               let tmp10;
@@ -3814,15 +3773,7 @@ const tmp35 = ReactCompilerGating.isReactCompilerEnabled() ? ((mode) => {
                 }
               }
               const items = [tmp4, tmp8];
-              class E {
-                constructor() {
-                  const tmp = null != LocaleStore && ref.current !== mode;
-                  if (tmp) {
-                    closure_6(mode, ref.current);
-                    ref.current = mode;
-                  }
-                }
-              }
+              cResult[15] = tmp4;
               cResult[16] = tmp8;
               cResult[17] = C;
               cResult[18] = items;
@@ -3830,23 +3781,21 @@ const tmp35 = ReactCompilerGating.isReactCompilerEnabled() ? ((mode) => {
               tmp13 = C;
             }
           }
-          class E {
-            constructor() {
-              const tmp = null != LocaleStore && ref.current !== mode;
-              if (tmp) {
-                closure_6(mode, ref.current);
-                ref.current = mode;
-              }
+          const fn2 = function p() {
+            const tmp = null != LocaleStore && ref.current !== mode;
+            if (tmp) {
+              closure_6(mode, ref.current);
+              ref.current = mode;
             }
-          }
+          };
           const items1 = [mode, tmp4, tmp8];
           cResult[10] = tmp4;
           cResult[11] = mode;
           cResult[12] = tmp8;
-          cResult[13] = E;
+          cResult[13] = fn2;
           cResult[14] = items1;
           tmp11 = items1;
-          tmp10 = E;
+          tmp10 = fn2;
         }
       }
     }
@@ -3876,7 +3825,7 @@ const tmp35 = ReactCompilerGating.isReactCompilerEnabled() ? ((mode) => {
   cResult[8] = sourceQuestContent;
   cResult[9] = fn;
   tmp8 = fn;
-}) : ((mode) => {
+}) : (function useQuestBarOrDockModeChangeTracking(mode) {
   let closure_7;
   let tmp;
   let tmp2;
@@ -3930,7 +3879,7 @@ const tmp35 = ReactCompilerGating.isReactCompilerEnabled() ? ((mode) => {
   }) : undefined, items2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp36 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, DARK) => {
+const tmp36 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCosponsoredLogotypeAsset(arg0, DARK) {
   let closure_0;
   let first;
   let tmp6;
@@ -3946,7 +3895,7 @@ const tmp36 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, DARK) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function o() {
+    const fn = function u() {
       return QuestStore.getQuest(closure_0);
     };
     const items1 = [arg0];
@@ -3976,14 +3925,14 @@ const tmp36 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, DARK) => {
       tmp10 = tmp13;
     }
     const tmpResult4 = require("AssetUtils");
-    const questAsset = tmpResult4.getQuestAsset(stateFromStores, tmp(10013).QuestAssetType.COSPONSOR_LOGO_TYPE, tmp11);
+    const questAsset = tmpResult4.getQuestAsset(stateFromStores, tmp(9544).QuestAssetType.COSPONSOR_LOGO_TYPE, tmp11);
     cResult[4] = stateFromStores;
     cResult[5] = tmp11;
     cResult[6] = questAsset;
     tmp13 = questAsset;
   }
   return tmp10;
-}) : ((arg0, arg1) => {
+}) : (function useCosponsoredLogotypeAsset(arg0, arg1) {
   let closure_0;
   let closure_1;
   let stateFromStores;
@@ -4011,7 +3960,7 @@ const tmp36 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, DARK) => {
   }, items2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp37 = ReactCompilerGating.isReactCompilerEnabled() ? ((config) => {
+const tmp37 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClaimedCollectibleRewardMessage(config) {
   let currentUser;
   let formatToPlainStringResult5;
   let tmp4;
@@ -4097,7 +4046,7 @@ const tmp37 = ReactCompilerGating.isReactCompilerEnabled() ? ((config) => {
   cResult[5] = formatToPlainStringResult5;
   tmp9 = formatToPlainStringResult5;
   tmp8 = tmp18;
-}) : ((config) => {
+}) : (function useClaimedCollectibleRewardMessage(config) {
   let currentUser;
   const items = [UserStore];
   const obj = get_initialized;
@@ -4151,7 +4100,7 @@ const tmp37 = ReactCompilerGating.isReactCompilerEnabled() ? ((config) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp38 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
+let tmp38 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLaunchInGameActivityQuest(quest) {
   let tmp4;
   let tmp6;
   let tmp8;
@@ -4184,7 +4133,7 @@ let tmp38 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
     tmp8 = cResult[5];
   }
   return tmp8;
-}) : ((quest) => {
+}) : (function useLaunchInGameActivityQuest(quest) {
   let activityApplicationId;
   obj2 = { launchInGameActivity: useRefocusOrLaunchActivityDefault({ applicationId: activityApplicationId }) };
   const obj = QuestTaskUtils;
@@ -4192,7 +4141,7 @@ let tmp38 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   return obj2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp39 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp39 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPreviewerOnAnyQuest() {
   let tmp4;
   let tmp5;
   let tmp7;
@@ -4218,7 +4167,7 @@ const tmp39 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let tmp8;
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn2 = function u(preview) {
+      const fn2 = function o(preview) {
         return preview.preview;
       };
       cResult[4] = fn2;
@@ -4234,7 +4183,7 @@ const tmp39 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[3];
   }
   return tmp7;
-}) : (() => {
+}) : (function useIsPreviewerOnAnyQuest() {
   let items = [QuestStore];
   const obj = get_initialized;
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
@@ -4248,7 +4197,7 @@ let closure_60 = tmp39;
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp41 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus) => {
+const tmp41 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowQuestsActivityPanelItem(userStatus) {
   let tmp13;
   let tmp14;
   let tmp15;
@@ -4263,7 +4212,7 @@ let tmp41 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus) => {
     let isDismissedResult = null != userStatus1;
     if (isDismissedResult) {
       const tmpResult = QuestDataUtils;
-      isDismissedResult = tmpResult.isDismissed(userStatus.userStatus, tmp(5633).QuestContent.ACTIVITY_PANEL);
+      isDismissedResult = tmpResult.isDismissed(userStatus.userStatus, tmp(5980).QuestContent.ACTIVITY_PANEL);
     }
     cResult[0] = userStatus;
     cResult[1] = isDismissedResult;
@@ -4287,7 +4236,7 @@ let tmp41 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus) => {
   const tmp12 = null != claimedAt;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [QuestStore];
-    const fn = function u() {
+    const fn = function o() {
       return null != QuestStore.questEnrollmentBlockedUntil;
     };
     const items1 = [];
@@ -4314,7 +4263,7 @@ let tmp41 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus) => {
     tmp4 = stateFromStores;
   }
   return !tmp4;
-}) : ((userStatus) => {
+}) : (function useShouldShowQuestsActivityPanelItem(userStatus) {
   let userStatus1;
   if (userStatus != null) {
     userStatus1 = userStatus.userStatus;
@@ -4353,7 +4302,7 @@ let tmp41 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus) => {
   return !isDismissedResult;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp42 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp42 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestsWithPreviewAccess() {
   let tmp4;
   let tmp5;
   let tmp7;
@@ -4379,7 +4328,7 @@ let tmp42 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let tmp8;
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn2 = function u(preview) {
+      const fn2 = function o(preview) {
         return preview.preview;
       };
       cResult[4] = fn2;
@@ -4395,7 +4344,7 @@ let tmp42 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[3];
   }
   return tmp7;
-}) : (() => {
+}) : (function useQuestsWithPreviewAccess() {
   let stateFromStoresArray;
   let items = [QuestStore];
   const obj = stateFromStoresArray(504);
@@ -4408,13 +4357,13 @@ let tmp42 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return react.useMemo(() => stateFromStoresArray.filter((preview) => preview.preview), items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp43 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp43 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestHomeFilterOptions() {
   let first;
   let obj = react2;
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp3 = authStore4;
-    const mapped = authStore4.map((item) => {
+    const tmp3 = authStore5;
+    const mapped = authStore5.map((item) => {
       let tmp2;
       let tmp3;
       const obj = { heading: obj2.getFilterGroupHeadingText(tmp2), options: tmp3 };
@@ -4429,7 +4378,7 @@ let tmp43 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => {
+}) : (function useQuestHomeFilterOptions() {
   let closure_0 = closure_18;
   const items = [closure_18];
   return react.useMemo(() => closure_0.map((item) => {
@@ -4437,12 +4386,12 @@ let tmp43 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let tmp2;
     [tmp, tmp2] = item;
     const obj = { heading: obj2.getFilterGroupHeadingText(tmp), options: tmp2 };
-    obj2 = closure_1_0(closure_1_2[40]);
+    obj2 = closure_1_0(closure_1_2[41]);
     return obj;
   }), items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp44 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp44 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestHomeSortOptions() {
   let first;
   let tmp4;
   let obj = react2;
@@ -4467,16 +4416,18 @@ let tmp44 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : (() => react.useMemo(() => {
-  const keys = Object.keys(constants3);
-  return keys.map((item) => {
-    const obj = { label: obj2.getSortMethodText(closure_1_17[item]), value: closure_1_17[item] };
-    obj2 = closure_1_0(closure_1_2[40]);
-    return obj;
-  });
-}, []));
+}) : (function useQuestHomeSortOptions() {
+  return react.useMemo(() => {
+    const keys = Object.keys(constants3);
+    return keys.map((item) => {
+      const obj = { label: obj2.getSortMethodText(closure_1_17[item]), value: closure_1_17[item] };
+      obj2 = closure_1_0(closure_1_2[41]);
+      return obj;
+    });
+  }, []);
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp45 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedSortMethod) => {
+let tmp45 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestHomeSortingFilteringAnalytics(selectedSortMethod) {
   let numQuestsVisible;
   let tmp2;
   let tmp3;
@@ -4515,7 +4466,7 @@ const tmp45 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedSortMetho
     }
     const effect1 = obj2.useEffect(tmp5, tmp6);
   }
-  const fn2 = function u() {
+  const fn2 = function o() {
     let current;
     const mapped = selectedFilters.map((item) => item.filter);
     const obj = { filters: mapped, previous_filters: current, num_quests_visible: numQuestsVisible };
@@ -4537,7 +4488,7 @@ const tmp45 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedSortMetho
   cResult[6] = items1;
   tmp6 = items1;
   tmp5 = fn2;
-}) : ((selectedSortMethod) => {
+}) : (function useQuestHomeSortingFilteringAnalytics(selectedSortMethod) {
   selectedSortMethod = selectedSortMethod.selectedSortMethod;
   const selectedFilters = selectedSortMethod.selectedFilters;
   const numQuestsVisible = selectedSortMethod.numQuestsVisible;
@@ -4568,7 +4519,7 @@ const tmp45 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedSortMetho
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp46 = ReactCompilerGating.isReactCompilerEnabled() ? ((preview) => {
+let tmp46 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowQuestPreviewOverrides(preview) {
   let first;
   const obj = react2;
   const cResult = obj.c(1);
@@ -4585,7 +4536,7 @@ let tmp46 = ReactCompilerGating.isReactCompilerEnabled() ? ((preview) => {
   }
   preview = true === first || preview.preview;
   return preview;
-}) : ((preview) => {
+}) : (function useShouldShowQuestPreviewOverrides(preview) {
   preview = react.useMemo(() => {
     currentUser = currentUser.getCurrentUser();
     let isStaffResult;
@@ -4597,7 +4548,7 @@ let tmp46 = ReactCompilerGating.isReactCompilerEnabled() ? ((preview) => {
   return preview;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp47 = ReactCompilerGating.isReactCompilerEnabled() ? ((questIds) => {
+const tmp47 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestHomeHeroShelf(questIds) {
   let quests;
   let stateFromStores;
   let tmp4;
@@ -4688,7 +4639,7 @@ let tmp47 = ReactCompilerGating.isReactCompilerEnabled() ? ((questIds) => {
       }
     }
     const mapped = questIds.map(tmp11);
-    const found = mapped.filter(tmp(1375).isNotNullish);
+    const found = mapped.filter(tmp(1387).isNotNullish);
     const found1 = found.filter(tmp12);
     cResult[3] = questIds;
     cResult[4] = stateFromStores;
@@ -4718,7 +4669,7 @@ let tmp47 = ReactCompilerGating.isReactCompilerEnabled() ? ((questIds) => {
     }
   }
   return tmp9;
-}) : ((questIds) => {
+}) : (function useQuestHomeHeroShelf(questIds) {
   let quests;
   let stateFromStores;
   let obj = stateFromStores(504);
@@ -4755,7 +4706,7 @@ let closure_61 = tmp47;
 let closure_62 = 6 * DurationsDefault.Millis.HOUR;
 const MINUTE = DurationsDefault.Millis.MINUTE;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp48 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp48 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestHomeBounties() {
   let tmp4;
   let tmp5;
   const obj = react2;
@@ -4774,14 +4725,16 @@ const tmp48 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStoresObject(tmp4, tmp5);
-}) : (() => {
+}) : (function useQuestHomeBounties() {
   const items = [BountyStore];
   const obj = get_initialized;
   return obj.useStateFromStoresObject(items, () => ({ questHomeBounties: BountyStore.questHomeBounties, isFetching: BountyStore.isFetchingQuestHomeBounties }));
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let fn = () => closure_60();
-const tmp49 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus) => {
+function useShouldShowPreviewToolTab() {
+  return closure_60();
+}
+const tmp49 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestBarImpressionSurvey(userStatus) {
   let closure_2;
   _require = userStatus;
   let obj = require("react");
@@ -4818,7 +4771,7 @@ const tmp49 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus) => {
   cResult[2] = userStatus.id;
   cResult[3] = fn;
   tmp5 = fn;
-}) : ((userStatus) => {
+}) : (function useQuestBarImpressionSurvey(userStatus) {
   let closure_2;
   _require = userStatus;
   const DropsOptedOut = require("UserSettings").DropsOptedOut;
@@ -4875,7 +4828,7 @@ export const useQuestForMemberListSocialEntryPoint = function useQuestForMemberL
   const items1 = [arg0, stateFromStores, closure_54(Array.from(stateFromStores.values()))];
   const memo = react.useMemo(() => {
     const obj = utils_QuestUtils;
-    const result = obj.filterQuestsForSocialEntrypoints(stateFromStores, authStore3);
+    const result = obj.filterQuestsForSocialEntrypoints(stateFromStores, authStore4);
     obj2 = QuestMatchingUtils;
     return obj2.getQuestsFromActivities(result, closure_0);
   }, items1);
@@ -5023,7 +4976,7 @@ export const useCosponsoredLogotypeAsset = tmp36;
 export const useClaimedCollectibleRewardMessage = tmp37;
 export const useLaunchInGameActivityQuest = tmp38;
 export const useIsPreviewerOnAnyQuest = tmp39;
-export const useShouldShowPreviewToolTab = fn;
+export { useShouldShowPreviewToolTab };
 export const useShouldShowQuestsActivityPanelItem = tmp41;
 export const useQuestsWithPreviewAccess = tmp42;
 export const useQuestHomeFilterOptions = tmp43;
@@ -5044,7 +4997,7 @@ export const useFetchQuestHomeBounties = function useFetchQuestHomeBounties(arg0
   const previewAdCreativeIds = obj.previewAdCreativeIds;
   let enabled2;
   c3 = undefined;
-  const QuestHomeBountiesFeatureGateExperiment = previewAdCreativeIds(enabled2[56]).QuestHomeBountiesFeatureGateExperiment;
+  const QuestHomeBountiesFeatureGateExperiment = previewAdCreativeIds(enabled2[57]).QuestHomeBountiesFeatureGateExperiment;
   obj2 = { location: constants2.QUEST_HOME_MOBILE };
   const enabled = QuestHomeBountiesFeatureGateExperiment.useConfig(obj2).enabled;
   const BountyStaleRefreshQuestHomeExperiment = previewAdCreativeIds(enabled2[30]).BountyStaleRefreshQuestHomeExperiment;
@@ -5101,15 +5054,15 @@ export const useFetchQuestHomeBounties = function useFetchQuestHomeBounties(arg0
                   if (length.length > 0) {
                     c1 = 3;
                     c4 = 1;
-                    const obj6 = { value: obj5.fetchBountyPreview(length, _true(closure_2_2[47]).AdPlacement.VIDEO_MODAL_MOBILE), done: false };
-                    obj5 = _true(closure_2_2[57]);
+                    const obj6 = { value: obj5.fetchBountyPreview(length, _true(closure_2_2[48]).AdPlacement.VIDEO_MODAL_MOBILE), done: false };
+                    obj5 = _true(closure_2_2[58]);
                     return obj6;
                   }
                 }
                 c1 = 2;
                 c4 = 1;
-                const obj7 = { value: obj3.fetchQuestHomeBounties(_true(closure_2_2[47]).AdPlacement.VIDEO_MODAL_MOBILE), done: false };
-                obj3 = _true(closure_2_2[57]);
+                const obj7 = { value: obj3.fetchQuestHomeBounties(_true(closure_2_2[48]).AdPlacement.VIDEO_MODAL_MOBILE), done: false };
+                obj3 = _true(closure_2_2[58]);
                 return obj7;
               }
             } else if (1 === c1) {

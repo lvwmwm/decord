@@ -1,9 +1,9 @@
-// Module ID: 11669
-// Function ID: 11670
+// Module ID: 11734
+// Function ID: 11735
 // Name: useActivityShelfItemsSorting
-// Dependencies: [19, 558, 576, 2033, 8962, 1369, 1985, 2]
+// Dependencies: [19, 558, 576, 2045, 10627, 1381, 1997, 2]
 
-// Module 11669 (useActivityShelfItemsSorting)
+// Module 11734 (useActivityShelfItemsSorting)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -11,7 +11,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f108685 = (item) => {
+const f109079 = (item) => {
   closure_0 = item;
   const findIndexResult = items.findIndex((application) => application.application.id === closure_0);
   if (-1 !== findIndexResult) {
@@ -24,11 +24,11 @@ const f108685 = (item) => {
     closure_1 = closure_1 + 1;
   }
 };
-const f108686 = (item, index) => {
+const f109080 = (item, index) => {
   const items = [item, index];
   return items;
 };
-const f108687 = (item) => {
+const f109081 = (item) => {
   let tmp;
   [tmp] = item;
   const embeddedActivityConfig = tmp.application.embeddedActivityConfig;
@@ -49,7 +49,7 @@ const f108687 = (item) => {
   }
   return tmp8;
 };
-const f108688 = (item) => {
+const f109082 = (item) => {
   let tmp2;
   let tmp3;
   [tmp2, tmp3] = item;
@@ -69,12 +69,12 @@ const f108688 = (item) => {
     HermesBuiltin.arraySpread(items, items.slice(diff), arraySpreadResult + 1);
   }
 };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityShelfItemsSorting(arr) {
   let items2;
   let tmp4;
   const obj = items2(576);
   const cResult = obj.c(2);
-  const FrecencyUserSettingsActionCreators = items2(2033).FrecencyUserSettingsActionCreators;
+  const FrecencyUserSettingsActionCreators = items2(2045).FrecencyUserSettingsActionCreators;
   const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
   if (cResult[0] !== arr) {
     const items = [];
@@ -95,10 +95,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
     items2 = [];
     HermesBuiltin.arraySpread(items2, arr, 0);
     let c1 = 0;
-    const item1 = items1.forEach(f108685);
-    const mapped = items2.map(f108686);
-    const found = mapped.filter(f108687);
-    const item2 = found.forEach(f108688);
+    const item1 = items1.forEach(f109079);
+    const mapped = items2.map(f109080);
+    const found = mapped.filter(f109081);
+    const item2 = found.forEach(f109082);
     cResult[0] = arr;
     cResult[1] = items2;
     tmp4 = items2;
@@ -106,7 +106,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : ((arg0) => {
+}) : (function useActivityShelfItemsSorting(arg0) {
   _require = arg0;
   const FrecencyUserSettingsActionCreators = require("UserSettingsProtoActionCreators").FrecencyUserSettingsActionCreators;
   const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
@@ -128,10 +128,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
     const items2 = [...closure_0];
     items = items2;
     let closure_1 = 0;
-    const item1 = items1.forEach(f108685);
-    const mapped = items.map(f108686);
-    const found = mapped.filter(f108687);
-    const item2 = found.forEach(f108688);
+    const item1 = items1.forEach(f109079);
+    const mapped = items.map(f109080);
+    const found = mapped.filter(f109081);
+    const item2 = found.forEach(f109082);
     return items;
   }, items);
 });

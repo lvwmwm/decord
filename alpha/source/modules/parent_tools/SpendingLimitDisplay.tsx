@@ -1,17 +1,17 @@
-// Module ID: 14733
-// Function ID: 14734
+// Module ID: 14994
+// Function ID: 14995
 // Name: SpendingLimitDisplay
-// Dependencies: [1231, 7061, 1379, 558, 576, 504, 14644, 6750, 6751, 1126, 2521, 2]
+// Dependencies: [1243, 7247, 1391, 558, 576, 504, 14905, 6926, 6927, 1126, 2565, 2]
 
-// Module 14733 (SpendingLimitDisplay)
+// Module 14994 (SpendingLimitDisplay)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import _modDef2521 from "module_2521" /* 2521 */;
-import PriceUtils from "PriceUtils" /* 6750 */;
-import SpendingLimitUtils from "SpendingLimitUtils" /* 14644 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7061 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import _modDef2565 from "module_2565" /* 2565 */;
+import PriceUtils from "PriceUtils" /* 6926 */;
+import SpendingLimitUtils from "SpendingLimitUtils" /* 14905 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7247 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ function getSpendingLimitDisplayState(amount, arg1) {
       return { kind: "spent", monthlyText: formatRateResult };
     } else {
       let obj;
-      let num = tmp6(6751).CurrencyExponents[amount.currency];
+      let num = tmp6(6927).CurrencyExponents[amount.currency];
       if (num == null) {
         num = 2;
       }
@@ -44,7 +44,7 @@ function getSpendingLimitDisplayState(amount, arg1) {
         const intl = tmp6(1126).intl;
         formatToPlainString = intl.formatToPlainString;
         obj4 = { amount: tmp6Result.formatPrice(diff, currency) };
-        prop = _modDef2521["+Q+bU1"];
+        prop = _modDef2565["+Q+bU1"];
         obj = obj3;
         tmp6Result = PriceUtils;
       } else {
@@ -56,7 +56,7 @@ function getSpendingLimitDisplayState(amount, arg1) {
 }
 const SubscriptionIntervalTypes = PremiumConstants.SubscriptionIntervalTypes;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSpendingLimitFromUserSettings() {
   let settings;
   let tmp4;
   let tmp5;
@@ -91,7 +91,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5, undefined, SpendingLimitUtils.spendingLimitEqual);
-}) : (() => {
+}) : (function useSpendingLimitFromUserSettings() {
   let settings;
   let obj = get_initialized;
   const items = [UserSettingsProtoStore];
@@ -114,7 +114,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }, undefined, SpendingLimitUtils.spendingLimitEqual);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((amount) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSpendingLimitDisplayState(amount) {
   let monthlyPurchases;
   let tmp4;
   let tmp5;
@@ -122,7 +122,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((amount) => {
   const cResult = obj.c(5);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [FamilyCenterStore];
-    const fn = function u() {
+    const fn = function s() {
       return monthlyPurchases.getMonthlyPurchases();
     };
     cResult[0] = items;
@@ -153,7 +153,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((amount) => {
   cResult[3] = num3;
   cResult[4] = tmp9;
   tmp8 = tmp9;
-}) : ((arg0) => {
+}) : (function useSpendingLimitDisplayState(arg0) {
   let monthlyPurchases;
   const items = [FamilyCenterStore];
   const obj = get_initialized;

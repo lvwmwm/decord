@@ -1,22 +1,20 @@
-// Module ID: 17228
-// Function ID: 17229
+// Module ID: 17509
+// Function ID: 17510
 // Name: panel/LeaveActivityButton
-// Dependencies: [19, 9001, 21, 558, 576, 9011, 17218, 2]
+// Dependencies: [19, 6072, 21, 558, 576, 11150, 17499, 2]
 
-// Module 17228 (panel/LeaveActivityButton)
+// Module 17509 (panel/LeaveActivityButton)
 import Fragment from "Fragment" /* 21 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 9001 */;
-import FramesNativeManagerDefault from "FramesNativeManager" /* 9011 */;
-import LeaveActivityButton from "LeaveActivityButton" /* 17218 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6072 */;
+import FramesNativeManagerDefault from "FramesNativeManager" /* 11150 */;
+import LeaveActivityButton2 from "LeaveActivityButton" /* 17499 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let frame;
-
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((frame) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function LeaveActivityButton(frame) {
   let obj = frame(576);
   const cResult = obj.c(3);
   const tmp = frame;
@@ -29,7 +27,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((f
     }
     return tmp4;
   }
-  const tmp5 = jsx(tmp(17218).BaseLeaveActivityButton, {
+  const tmp5 = jsx(tmp(17499).BaseLeaveActivityButton, {
     onPress() {
       let id;
       setMode(ActivityPanelModes.DISCONNECTED);
@@ -43,9 +41,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((f
   cResult[1] = setMode;
   cResult[2] = tmp5;
   tmp4 = tmp5;
-}) : ((arg0) => {
+}) : (function LeaveActivityButton(arg0) {
   ({ frame: require, setMode: importDefault } = arg0);
-  return jsx(LeaveActivityButton.BaseLeaveActivityButton, {
+  return jsx(LeaveActivityButton2.BaseLeaveActivityButton, {
     onPress() {
       let id;
       importDefault(ActivityPanelModes.DISCONNECTED);

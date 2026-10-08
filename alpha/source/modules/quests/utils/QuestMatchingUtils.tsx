@@ -1,20 +1,20 @@
-// Module ID: 9077
-// Function ID: 9078
+// Module ID: 10607
+// Function ID: 10608
 // Name: QuestMatchingUtils
-// Dependencies: [32, 5124, 9078, 5630, 1085, 2011, 7221, 7196, 7219, 9079, 2]
+// Dependencies: [32, 5436, 10608, 5977, 1085, 2023, 7401, 7385, 7399, 10609, 2]
 // Exports: allPlayOnDesktopQuestsByApplicationId, getEligibleQuestsForApplicationId, getQuestApplicationIdsForRunningGame, getQuestByApplicationId, getQuestsFromActivities
 
-// Module 9077 (QuestMatchingUtils)
+// Module 10607 (QuestMatchingUtils)
 import Constants from "Constants" /* 1085 */;
-import Constants2 from "Constants" /* 2011 */;
-import QuestDataUtils from "QuestDataUtils" /* 7196 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7219 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7221 */;
-import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 9079 */;
+import Constants2 from "Constants" /* 2023 */;
+import QuestExpirationUtils from "QuestExpirationUtils" /* 7385 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7399 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7401 */;
+import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 10609 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ApplicationStore from "ApplicationStore" /* 5124 */;
-import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 9078 */;
-import QuestConstants from "QuestConstants" /* 5630 */;
+import ApplicationStore from "ApplicationStore" /* 5436 */;
+import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 10608 */;
+import QuestConstants from "QuestConstants" /* 5977 */;
 import size from "module_2" /* 2 */;
 
 let userStatus;
@@ -71,7 +71,7 @@ function getQuestByActivity(result, application_id) {
     [r10011, tmp4] = tmp3;
     let tmp5 = tmp4;
     if (questMatchesActivity(application_id, tmp4)) {
-      let obj2 = QuestDataUtils;
+      let obj2 = QuestExpirationUtils;
       if (!obj2.isQuestExpired(tmp5)) {
         obj.return();
         return tmp5;
@@ -103,7 +103,7 @@ export const getQuestByApplicationId = function getQuestByApplicationId(arg0, ar
     let tmp6 = tmp5;
     if (questMatchesApplicationId(arg1, tmp5)) {
       let tmp;
-      let obj2 = QuestDataUtils;
+      let obj2 = QuestExpirationUtils;
       if (!obj2.isQuestExpired(tmp6)) {
         tmp = tmp5;
         obj.return();
@@ -122,7 +122,7 @@ export const allPlayOnDesktopQuestsByApplicationId = function allPlayOnDesktopQu
     const allApplicationIds = obj.getAllApplicationIds(quest);
     let hasPlayOnDesktopTaskResult = null != allApplicationIds && allApplicationIds.some((item) => item === closure_0);
     if (hasPlayOnDesktopTaskResult) {
-      const tmpResult = QuestDataUtils;
+      const tmpResult = QuestExpirationUtils;
       hasPlayOnDesktopTaskResult = !tmpResult.isQuestExpired(quest);
     }
     if (hasPlayOnDesktopTaskResult) {
@@ -170,7 +170,7 @@ export const getEligibleQuestsForApplicationId = function getEligibleQuestsForAp
         canLaunchActivityResult = tmpResult.canLaunchActivity(userStatus);
       }
       if (canLaunchActivityResult) {
-        const tmpResult2 = QuestDataUtils;
+        const tmpResult2 = QuestExpirationUtils;
         canLaunchActivityResult = !tmpResult2.isQuestExpired(userStatus);
       }
       if (canLaunchActivityResult) {

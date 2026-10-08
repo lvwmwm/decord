@@ -1,22 +1,22 @@
-// Module ID: 14361
-// Function ID: 14362
+// Module ID: 14557
+// Function ID: 14558
 // Name: validateScope
-// Dependencies: [5323, 2]
+// Dependencies: [5635, 2]
 // Exports: default
 
-// Module 14361 (validateScope)
-import Constants from "Constants" /* 5323 */;
+// Module 14557 (validateScope)
+import Constants from "Constants" /* 5635 */;
 import size from "module_2" /* 2 */;
 
 const RPC_SCOPE_CONFIG = Constants.RPC_SCOPE_CONFIG;
 const result = size.fileFinishedImporting("modules/rpc/helpers/validateScope.tsx");
 
-export default function validateScope(arr, str) {
-  let closure_0 = arr;
+export default function validateScope(has, str) {
+  let closure_0 = has;
   if (null == str) {
     return true;
   } else if (typeof str === "string") {
-    return arr.includes(str);
+    return has.has(str);
   } else if (typeof str !== "object") {
     return false;
   } else {
@@ -24,7 +24,7 @@ export default function validateScope(arr, str) {
     const isArray = Array.isArray(obj);
     let tmp = !isArray;
     if (isArray) {
-      tmp = !obj.some((item) => closure_0.includes(item));
+      tmp = !obj.some((item) => set.has(item));
     }
     let tmp2 = !tmp;
     if (tmp) {
@@ -32,7 +32,7 @@ export default function validateScope(arr, str) {
       const isArray1 = Array.isArray(obj2);
       let tmp4 = !isArray1;
       if (isArray1) {
-        tmp4 = !obj2.every((item) => closure_0.includes(item));
+        tmp4 = !obj2.every((item) => set.has(item));
       }
       tmp2 = !tmp4;
     }

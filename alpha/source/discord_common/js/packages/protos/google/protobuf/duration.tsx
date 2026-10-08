@@ -1,15 +1,15 @@
-// Module ID: 7550
-// Function ID: 7551
+// Module ID: 8122
+// Function ID: 8123
 // Name: duration
-// Dependencies: [32, 1198, 2]
+// Dependencies: [32, 1210, 2]
 
-// Module 7550 (duration)
-import _mod1198 from "module_1198" /* 1198 */;
+// Module 8122 (duration)
+import _mod1210 from "module_1210" /* 1210 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const MessageType = _mod1198.MessageType;
+const MessageType = _mod1210.MessageType;
 class Duration$Type extends MessageType {
   constructor() {
     const items = [{ no: 1, name: "seconds", kind: "scalar", T: 3 }, { no: 2, name: "nanos", kind: "scalar", T: 5 }];
@@ -17,7 +17,7 @@ class Duration$Type extends MessageType {
     return tmp2;
   }
   internalJsonWrite(seconds) {
-    const PbLong = _mod1198.PbLong;
+    const PbLong = _mod1210.PbLong;
     const fromResult = PbLong.from(seconds.seconds);
     const toNumberResult = fromResult.toNumber();
     if (toNumberResult <= 315576000000) {
@@ -51,7 +51,7 @@ class Duration$Type extends MessageType {
       const _Error3 = Error;
       const self6 = this;
       const self7 = this;
-      const obj = _mod1198;
+      const obj = _mod1210;
       const error = new Error("Unable to parse Duration from JSON " + obj.typeofJsonValue(str) + ". Expected string.");
       throw error;
     } else {
@@ -68,7 +68,7 @@ class Duration$Type extends MessageType {
           const self = this;
           obj2 = this.create();
         }
-        const PbLong = _mod1198.PbLong;
+        const PbLong = _mod1210.PbLong;
         str = PbLong.from(match[1]);
         if (str.toNumber() <= 315576000000) {
           if (str.toNumber() >= -315576000000) {
@@ -96,9 +96,9 @@ class Duration$Type extends MessageType {
     const obj = { seconds: "0", nanos: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1198.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1210.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1198;
+      const tmpResult = _mod1210;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -138,7 +138,7 @@ class Duration$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1198.UnknownFieldHandler.onRead;
+                onRead = _mod1210.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -150,17 +150,17 @@ class Duration$Type extends MessageType {
   }
   internalBinaryWrite(seconds, tag, writeUnknownFields) {
     if ("0" !== seconds.seconds) {
-      const tagResult = tag.tag(1, _mod1198.WireType.Varint);
+      const tagResult = tag.tag(1, _mod1210.WireType.Varint);
       tagResult.int64(seconds.seconds);
     }
     if (0 !== seconds.nanos) {
-      const tagResult1 = tag.tag(2, _mod1198.WireType.Varint);
+      const tagResult1 = tag.tag(2, _mod1210.WireType.Varint);
       tagResult1.int32(seconds.nanos);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1198.UnknownFieldHandler.onWrite;
+        onWrite = _mod1210.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, seconds, tag);

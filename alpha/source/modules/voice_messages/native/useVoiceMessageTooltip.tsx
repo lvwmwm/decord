@@ -1,14 +1,14 @@
-// Module ID: 11902
-// Function ID: 11903
+// Module ID: 11975
+// Function ID: 11976
 // Name: useVoiceMessageTooltip
-// Dependencies: [19, 1486, 11587, 558, 576, 1126, 6117, 9896, 2]
+// Dependencies: [19, 1498, 11650, 558, 576, 1126, 6296, 9376, 2]
 
-// Module 11902 (useVoiceMessageTooltip)
+// Module 11975 (useVoiceMessageTooltip)
 import intl2 from "intl" /* 1126 */;
-import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6117 */;
+import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6296 */;
 import react from "react" /* 19 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1486 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 11587 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1498 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 11650 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 ({ hideVoiceMessagesTooltip: closure_4, showVoiceMessagesTooltip: hasOwnProperty, useVoiceMessagesUIStore: metroRequire } = VoiceMessagesUIStore);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceMessageTooltip() {
   let closure_0;
   let first;
   let tmp10;
@@ -65,7 +65,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       if (keyboardIsOpen) {
         let obj = useKeyboardIsOpen;
         keyboardIsOpen = obj.getKeyboardIsOpen({ includeCustomKeyboard: true });
-        let closure_1 = subscribeToKeyboardUIStore(() => {
+        let closure_1 = subscribeToKeyboardUIStore(function keyboardChangeListener() {
           const obj = closure_2_0(closure_2_1[6]);
           if (closure_0 !== obj.getKeyboardIsOpen({ includeCustomKeyboard: true })) {
             closure_2_4();
@@ -92,7 +92,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp11 = cResult[6];
   }
   const effect = obj2.useEffect(tmp10, tmp11);
-  const tmpResult = tmp(9896);
+  const tmpResult = tmp(9376);
   const tooltip = tmpResult.useTooltip(ref, tmp9);
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { tooltipTargetRef: ref, showVoiceMessagesTooltip };
@@ -102,7 +102,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp14 = cResult[7];
   }
   return tmp14;
-}) : (() => {
+}) : (function useVoiceMessageTooltip() {
   let visible;
   const ref = react.useRef(null);
   const tmp2 = closure_6((showVoiceMessagesTooltip) => showVoiceMessagesTooltip.showVoiceMessagesTooltip);
@@ -120,7 +120,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (keyboardIsOpen) {
       let obj = useKeyboardIsOpen;
       keyboardIsOpen = obj.getKeyboardIsOpen({ includeCustomKeyboard: true });
-      let closure_1 = subscribeToKeyboardUIStore(() => {
+      let closure_1 = subscribeToKeyboardUIStore(function keyboardChangeListener() {
         const obj = visible(closure_2_1[6]);
         if (closure_0 !== obj.getKeyboardIsOpen({ includeCustomKeyboard: true })) {
           closure_2_4();

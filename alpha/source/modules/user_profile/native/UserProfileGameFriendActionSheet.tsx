@@ -1,25 +1,25 @@
-// Module ID: 12902
-// Function ID: 12903
+// Module ID: 13051
+// Function ID: 13052
 // Name: UserProfileGameFriendActionSheet
-// Dependencies: [5, 32, 19, 17, 4525, 1085, 21, 4896, 587, 558, 576, 12301, 6024, 1188, 4892, 6704, 12903, 6670, 5048, 9447, 4573, 4860, 6708, 6651, 1126, 2]
+// Dependencies: [5, 32, 19, 17, 4717, 1085, 21, 5090, 587, 558, 576, 12399, 6210, 1200, 5086, 6881, 13052, 6847, 5405, 7004, 4765, 5054, 6885, 6828, 1126, 2]
 // Exports: default
 
-// Module 12902 (UserProfileGameFriendActionSheet)
+// Module 13051 (UserProfileGameFriendActionSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12301 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12399 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let _undefined, application;
+let _undefined;
 
 let c10;
 let metroImportDefault;
@@ -35,7 +35,7 @@ const RelationshipTypes = Constants.RelationshipTypes;
 let obj = { applicationNameWrapper: { flexDirection: "row", justifyContent: "flex-start", alignItems: "center", gap: 12 }, gameIcon: size };
 size = { width: 32, height: 32, borderRadius: nativeDefault.radii.sm };
 let closure_12 = createStyles.createStyles(obj);
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((application) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameFriendApplicationRow(application) {
   let items;
   let userDisplayName;
   let obj = application(userDisplayName[10]);
@@ -152,7 +152,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((application) =
   cResult[3] = userId;
   cResult[4] = fn;
   tmp5 = fn;
-}) : ((application) => {
+}) : (function GameFriendApplicationRow(application) {
   let items1;
   let obj2;
   let str;

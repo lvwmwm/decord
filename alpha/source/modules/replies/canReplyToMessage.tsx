@@ -1,17 +1,17 @@
-// Module ID: 7646
-// Function ID: 7647
+// Module ID: 7967
+// Function ID: 7968
 // Name: canReplyToMessage
-// Dependencies: [32, 4515, 1377, 1085, 1096, 1101, 558, 576, 6782, 7647, 504, 2]
+// Dependencies: [32, 4707, 1389, 1085, 1096, 1101, 558, 576, 6958, 7968, 504, 2]
 // Exports: canReplyToMessage
 
-// Module 7646 (canReplyToMessage)
+// Module 7967 (canReplyToMessage)
 import Constants2 from "Constants" /* 1096 */;
 import MessageTypes from "MessageTypes" /* 1101 */;
-import ThreadHooks from "ThreadHooks" /* 6782 */;
-import useUserCommunicationDisabled from "useUserCommunicationDisabled" /* 7647 */;
+import ThreadHooks from "ThreadHooks" /* 6958 */;
+import useUserCommunicationDisabled from "useUserCommunicationDisabled" /* 7968 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import UserStore from "UserStore" /* 1377 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -23,7 +23,7 @@ let hasOwnProperty;
 let metroRequire;
 ({ MessageFlags: hasOwnProperty, MessageStates: metroRequire } = Constants);
 const Permissions = Constants2.Permissions;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((getGuildId, hasFlag) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanReplyToMessage(getGuildId, hasFlag) {
   let tmp5;
   let tmp9;
   _require = getGuildId;
@@ -44,7 +44,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((getGuildId, hasFlag)
   } else {
     tmp5 = cResult[1];
   }
-  const tmpResult = tmp(7647);
+  const tmpResult = tmp(7968);
   const tmp8 = _slicedToArray(tmpResult.useCurrentUserCommunicationDisabled(tmp5), 2)[1];
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [PermissionStore];
@@ -94,7 +94,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((getGuildId, hasFlag)
     }
     return tmp14;
   }
-  const fn = function v() {
+  const fn = function y() {
     let tmp = null != getGuildId && null != hasFlag;
     if (tmp) {
       let hasItem;
@@ -116,7 +116,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((getGuildId, hasFlag)
   cResult[4] = hasFlag;
   cResult[5] = fn;
   tmp11 = fn;
-}) : ((getGuildId, hasFlag) => {
+}) : (function useCanReplyToMessage(getGuildId, hasFlag) {
   _require = getGuildId;
   dependencyMap = hasFlag;
   let tmp = _require;

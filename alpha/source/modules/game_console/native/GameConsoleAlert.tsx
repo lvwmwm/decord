@@ -1,25 +1,23 @@
-// Module ID: 9466
-// Function ID: 9467
+// Module ID: 10902
+// Function ID: 10903
 // Name: GameConsoleAlert
-// Dependencies: [19, 17, 4913, 21, 4896, 558, 576, 504, 4892, 2]
+// Dependencies: [19, 17, 5109, 21, 5090, 558, 576, 504, 5086, 2]
 
-// Module 9466 (GameConsoleAlert)
+// Module 10902 (GameConsoleAlert)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 4913 */;
+import GameConsoleStore from "GameConsoleStore" /* 5109 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let errorCodeMessage;
 
 let hasOwnProperty;
 let metroRequire;
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ errorCodeText: { marginTop: 16 }, alertBody: { marginTop: 0 }, container: { flex: 1 }, body: { marginTop: 16 } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((errorCodeMessage) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelfDismissibleAlertBody(errorCodeMessage) {
   let body;
   let dismissCallback;
   let items1;
@@ -136,7 +134,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((errorCodeMessage) 
   cResult[5] = items4;
   tmp10 = items4;
   tmp9 = fn2;
-}) : ((errorCodeMessage) => {
+}) : (function SelfDismissibleAlertBody(errorCodeMessage) {
   let body;
   let dismissCallback;
   let items2;

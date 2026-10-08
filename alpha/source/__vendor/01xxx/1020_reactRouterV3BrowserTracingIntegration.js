@@ -37,7 +37,7 @@ export const reactRouterV3BrowserTracingIntegration = function reactRouterV3Brow
       if (_location) {
         let tmp5 = require;
         const _location2 = feedbackAsyncIntegration.WINDOW.location;
-        const f134854 = (name) => {
+        const f136243 = (name) => {
           let obj3;
           let str = arg1;
           if (arg1 === undefined) {
@@ -47,7 +47,7 @@ export const reactRouterV3BrowserTracingIntegration = function reactRouterV3Brow
           const obj = feedbackAsyncIntegration;
           obj3 = { [closure_3_0(closure_3_1[1]).SEMANTIC_ATTRIBUTE_SENTRY_OP]: "pageload", [closure_3_0(closure_3_1[1]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN]: "auto.pageload.react.reactrouter_v3" };
           obj3[_mod693.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE] = str;
-          require = obj.startBrowserTracingPageLoadSpan(f134854, obj2);
+          require = obj.startBrowserTracingPageLoadSpan(f136243, obj2);
         };
         const pathname = _location2.pathname;
         let obj = { location: _location2, routes };
@@ -102,14 +102,14 @@ export const reactRouterV3BrowserTracingIntegration = function reactRouterV3Brow
               if (0 !== str2.length) {
                 let tmp9;
                 if ("/*" !== str2) {
-                  tmp9 = f150220(str2, "route");
+                  tmp9 = f151746(str2, "route");
                 }
                 return tmp9;
               }
-              tmp9 = f150220(str2);
+              tmp9 = f151746(str2);
             }
           }
-          return f150220(str2);
+          return f151746(str2);
         });
       }
       let listen = closure_5;
@@ -126,7 +126,7 @@ export const reactRouterV3BrowserTracingIntegration = function reactRouterV3Brow
           }
           if (!tmp) {
             let tmp2 = routes;
-            const f150220 = (name) => {
+            const f151746 = (name) => {
               let obj3;
               let str = arg1;
               if (arg1 === undefined) {
@@ -136,7 +136,7 @@ export const reactRouterV3BrowserTracingIntegration = function reactRouterV3Brow
               const obj = closure_0(closure_3_1[0]);
               obj3 = { [closure_3_0(closure_3_1[1]).SEMANTIC_ATTRIBUTE_SENTRY_OP]: "navigation", [closure_3_0(closure_3_1[1]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN]: "auto.navigation.react.reactrouter_v3" };
               obj3[closure_0(closure_3_1[1]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE] = str;
-              result = obj.startBrowserTracingNavigationSpan(f150220, obj2);
+              result = obj.startBrowserTracingNavigationSpan(f151746, obj2);
             };
             let str2 = action.pathname;
             let obj = { location: action, routes };
@@ -191,14 +191,14 @@ export const reactRouterV3BrowserTracingIntegration = function reactRouterV3Brow
                   if (0 !== str2.length) {
                     let tmp9;
                     if ("/*" !== str2) {
-                      tmp9 = f150220(str2, "route");
+                      tmp9 = f151746(str2, "route");
                     }
                     return tmp9;
                   }
-                  tmp9 = f150220(str2);
+                  tmp9 = f151746(str2);
                 }
               }
-              return f150220(str2);
+              return f151746(str2);
             });
           }
         });

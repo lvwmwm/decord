@@ -1,23 +1,23 @@
-// Module ID: 16967
-// Function ID: 16968
+// Module ID: 17248
+// Function ID: 17249
 // Name: ContactSuggestionRow
-// Dependencies: [109, 19, 4885, 1085, 21, 558, 576, 4728, 4618, 1126, 573, 16010, 16009, 16422, 1252, 16423, 10615, 2]
+// Dependencies: [109, 19, 5079, 1085, 21, 558, 576, 4922, 4810, 1126, 573, 16270, 16269, 16682, 1264, 16683, 10213, 2]
 
-// Module 16967 (ContactSuggestionRow)
+// Module 17248 (ContactSuggestionRow)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import UserUtilsDefault from "UserUtils" /* 4728 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16010 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import UserUtilsDefault from "UserUtils" /* 4922 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16270 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, importDefault, suggestedFriend;
+let _require, dependencyMap, importDefault;
 
 let c9;
 let metroImportAll;
@@ -26,7 +26,7 @@ let closure_3 = ["suggestedFriend", "added", "onAddSuggestion"];
 ({ AnalyticEvents: metroImportDefault, InstantInviteSources: metroImportAll, RelationshipTypes: c9 } = Constants);
 const jsx = Fragment.jsx;
 const constants4 = { ADD: "add" };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((suggestedFriend) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSuggestionRow(suggestedFriend) {
   let _location;
   let closure_0;
   let closure_1;
@@ -61,7 +61,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((suggestedFriend) =
     if (cResult[6] === tmp7.user) {
       tmp11 = cResult[7];
     }
-    const tmpResult = tmp(4618);
+    const tmpResult = tmp(4810);
     sharedValue = tmpResult.useSharedValue(false);
     if (cResult[8] === tmp4) {
       let tmp13;
@@ -98,7 +98,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((suggestedFriend) =
       }
       if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
         const items1 = [AccessibilityStore];
-        class T {
+        class I {
           constructor() {
             return useReducedMotion.useReducedMotion;
           }
@@ -109,8 +109,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((suggestedFriend) =
             const result = sharedValue.set(closure_0);
           }
         }
-        cResult[15] = T;
-        tmp21 = T;
+        cResult[15] = I;
+        tmp21 = I;
         tmp20 = items1;
       } else {
         tmp20 = cResult[14];
@@ -120,7 +120,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((suggestedFriend) =
       const stateFromStores = tmpResult3.useStateFromStores(tmp20, tmp21);
       if (cResult[16] === sharedValue) {
         if (cResult[17] === tmp5) {
-          class T {
+          class I {
             constructor() {
               return useReducedMotion.useReducedMotion;
             }
@@ -130,7 +130,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((suggestedFriend) =
             if (tmp7 != null) {
               const mutualFriendsCount = tmp7.mutualFriendsCount;
             }
-            class T {
+            class I {
               constructor() {
                 return useReducedMotion.useReducedMotion;
               }
@@ -141,7 +141,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((suggestedFriend) =
               const result = sharedValue.set(closure_0);
             }
           }
-          const tmpResult4 = tmp(16009);
+          const tmpResult4 = tmp(16269);
           const suggestedContactNameForSuggestion = tmpResult4.getSuggestedContactNameForSuggestion(tmp11, tmp7);
           cResult[20] = tmp7;
           cResult[21] = tmp11;
@@ -179,7 +179,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((suggestedFriend) =
     if (tmp7.friendSuggestionName.length > 0) {
       friendSuggestionName = tmp7.friendSuggestionName;
     }
-    class T {
+    class I {
       constructor() {
         return useReducedMotion.useReducedMotion;
       }
@@ -195,7 +195,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((suggestedFriend) =
   }
   const obj2 = UserUtilsDefault;
   friendSuggestionName = obj2.getName(tmp7.user);
-}) : ((suggestedFriend) => {
+}) : (function ContactSuggestionRow(suggestedFriend) {
   let useReducedMotion;
   suggestedFriend = suggestedFriend.suggestedFriend;
   const added = suggestedFriend.added;

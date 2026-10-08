@@ -1,14 +1,14 @@
-// Module ID: 15184
-// Function ID: 15185
+// Module ID: 15446
+// Function ID: 15447
 // Name: GummyStripesFromHue
-// Dependencies: [32, 19, 21, 4896, 558, 576, 1394, 4618, 14440, 2]
+// Dependencies: [32, 19, 21, 5090, 558, 576, 1406, 4810, 14665, 2]
 
-// Module 15184 (GummyStripesFromHue)
-import ColorPickerUtils from "ColorPickerUtils" /* 14440 */;
+// Module 15446 (GummyStripesFromHue)
+import ColorPickerUtils from "ColorPickerUtils" /* 14665 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let closure_6 = createStyles.createStyles({ stripe: { flex: 1 }, stripeOverlap: 
 let ReactCompilerGating = ReactCompilerGating_mod;
 const __initData = { code: "function GummyStripesFromHueTsx1(){const{hue,shift,hslToRgbWorklet,saturation,lightness}=this.__closure;const h=((hue.get()+shift)%360+360)%360;const[r,g,b]=hslToRgbWorklet({h:h,s:saturation,l:lightness});return{backgroundColor:\"rgb(\"+r+\", \"+g+\", \"+b+\")\"};}" };
 const __initData2 = { code: "function GummyStripesFromHueTsx2(){const{hue,shift,hslToRgbWorklet,saturation,lightness}=this.__closure;const h=((hue.get()+shift)%360+360)%360;const[r,g,b]=hslToRgbWorklet({h:h,s:saturation,l:lightness});return{backgroundColor:\"rgb(\"+r+\", \"+g+\", \"+b+\")\"};}" };
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((hue) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GummyStripesFromHue(hue) {
   let tmp4;
   let tmp6;
   let obj = hue(576);
@@ -27,7 +27,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((hue) => {
   const tmp = hue;
   hue = hue.hue;
   if (cResult[0] !== hue) {
-    const GUMMY_STRIPES = tmp(1394).GUMMY_STRIPES;
+    const GUMMY_STRIPES = tmp(1406).GUMMY_STRIPES;
     const mapped = GUMMY_STRIPES.map((hueShift, index) => {
       const obj = { hue, shift: hueShift.hueShift, saturation: hueShift.saturation, lightness: hueShift.lightness, overlap: index > 0 };
       return React3(closure_9, obj, index);
@@ -48,7 +48,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((hue) => {
     tmp6 = cResult[3];
   }
   return tmp6;
-}) : ((hue) => {
+}) : (function GummyStripesFromHue(hue) {
   let GUMMY_STRIPES;
   hue = hue.hue;
   let obj = {
@@ -57,11 +57,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((hue) => {
       return React3(closure_9, obj, index);
     })
   };
-  GUMMY_STRIPES = hue(1394).GUMMY_STRIPES;
+  GUMMY_STRIPES = hue(1406).GUMMY_STRIPES;
   return closure_4(closure_5, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((hue) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnimatedStripe(hue) {
   let items;
   let saturation;
   let obj = hue(saturation[5]);
@@ -107,7 +107,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((hue) => {
   cResult[2] = stripeOverlap;
   cResult[3] = tmp6;
   tmp5 = tmp6;
-}) : ((hue) => {
+}) : (function AnimatedStripe(hue) {
   hue = hue.hue;
   const shift = hue.shift;
   const saturation = hue.saturation;

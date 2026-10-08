@@ -1,12 +1,12 @@
-// Module ID: 16192
-// Function ID: 16193
+// Module ID: 16452
+// Function ID: 16453
 // Name: useTotalPossibleBoostCount
-// Dependencies: [19, 4774, 1085, 558, 576, 2]
+// Dependencies: [19, 4968, 1085, 558, 576, 2]
 
-// Module 16192 (useTotalPossibleBoostCount)
+// Module 16452 (useTotalPossibleBoostCount)
 import react from "react" /* 19 */;
 import react2 from "react" /* 576 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4774 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4968 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ let metroRequire;
 const useMemo = react.useMemo;
 ({ MULTIPLE_PURCHASEABLE_PREMIUM_FEATURES_BOOST_INFO: c3, PURCHASABLE_PREMIUM_FEATURES_BOOST_INFO: closure_4 } = GuildPowerupsConstants);
 ({ AppliedGuildBoostsRequiredForBoostedGuildTier: hasOwnProperty, BoostedGuildTiers: metroRequire, GuildFeatures: metroImportDefault } = Constants);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTotalPossibleBoostCount(features) {
   let closure_0 = features;
   const obj = react2;
   const cResult = obj.c(5);
@@ -85,7 +85,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
     cResult[4] = closure_1;
   }
   return num;
-}) : ((arg0) => {
+}) : (function useTotalPossibleBoostCount(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   return useMemo(() => {

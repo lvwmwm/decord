@@ -1,15 +1,15 @@
-// Module ID: 6822
-// Function ID: 6823
+// Module ID: 6995
+// Function ID: 6996
 // Name: useGame
-// Dependencies: [5, 19, 2007, 1085, 504, 1102, 6823, 558, 576, 2]
+// Dependencies: [5, 19, 2019, 1085, 504, 1102, 6996, 558, 576, 2]
 
-// Module 6822 (useGame)
+// Module 6995 (useGame)
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import GameActionCreators from "GameActionCreators" /* 6823 */;
+import GameActionCreators from "GameActionCreators" /* 6996 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GameStore from "GameStore" /* 2007 */;
+import GameStore from "GameStore" /* 2019 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -38,7 +38,7 @@ let obj = {
     }
     return tmp;
   },
-  load: function() {
+  load() {
     return closure_2(...arguments);
   },
   getIsLoading(arg0) {
@@ -111,7 +111,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
   }
 });
 const fetchStore = createFetchStore(GameStore, obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGames(arg0) {
   let closure_0;
   let tmp2;
   let tmp3;
@@ -119,7 +119,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = require("react");
   const cResult = obj.c(3);
   if (cResult[0] !== arg0) {
-    const fn = function n() {
+    const fn = function l() {
       let items = [
         ...closure_0.map((item) => {
           const items = [item];
@@ -139,7 +139,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp3 = cResult[2];
   }
   const effect = react.useEffect(tmp2, tmp3);
-}) : ((arg0) => {
+}) : (function useGames(arg0) {
   let closure_0 = arg0;
   let items = [arg0];
   const effect = react.useEffect(() => {

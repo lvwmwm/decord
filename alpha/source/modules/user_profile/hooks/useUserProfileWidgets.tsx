@@ -1,19 +1,19 @@
-// Module ID: 12720
-// Function ID: 12721
+// Module ID: 13212
+// Function ID: 13213
 // Name: useUserProfileWidgets
-// Dependencies: [502, 7124, 8623, 558, 576, 504, 2]
+// Dependencies: [502, 7309, 13094, 558, 576, 504, 2]
 
-// Module 12720 (useUserProfileWidgets)
+// Module 13212 (useUserProfileWidgets)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserProfileStore from "UserProfileStore" /* 7124 */;
-import WidgetStore from "WidgetStore" /* 8623 */;
+import UserProfileStore from "UserProfileStore" /* 7309 */;
+import WidgetStore from "WidgetStore" /* 13094 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfileWidgets(arg0) {
   let closure_0;
   let first;
   let pendingWidgets;
@@ -75,42 +75,93 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp13 = cResult[6];
   }
   if (cResult[7] !== arg0) {
-    const fn3 = function y() {
-      if (null == closure_0) {
-        return [];
-      } else {
-        const userProfile = UserProfileStore.getUserProfile(tmp);
-        let widgets;
-        if (userProfile != null) {
-          widgets = userProfile.widgets;
+    class F {
+      constructor() {
+        if (null == closure_0) {
+          return [];
+        } else {
+          const userProfile = UserProfileStore.getUserProfile(tmp);
+          let widgets;
+          if (userProfile != null) {
+            widgets = userProfile.widgets;
+          }
+          if (widgets == null) {
+            widgets = [];
+          }
+          return widgets;
         }
-        if (widgets == null) {
-          widgets = [];
-        }
-        return widgets;
       }
-    };
+    }
     const items4 = [arg0];
     cResult[7] = arg0;
-    cResult[8] = fn3;
+    cResult[8] = F;
     cResult[9] = items4;
     tmp16 = items4;
-    tmp15 = fn3;
+    tmp15 = F;
   } else {
-    tmp15 = cResult[8];
+    class F {
+      constructor() {
+        if (null == closure_0) {
+          return [];
+        } else {
+          const userProfile = UserProfileStore.getUserProfile(tmp);
+          let widgets;
+          if (userProfile != null) {
+            widgets = userProfile.widgets;
+          }
+          if (widgets == null) {
+            widgets = [];
+          }
+          return widgets;
+        }
+      }
+    }
     tmp16 = cResult[9];
   }
   const tmpResult4 = tmp(504);
   const stateFromStoresArray = tmpResult4.useStateFromStoresArray(tmp13, tmp15, tmp16);
   let tmp18 = stateFromStoresArray;
   if (stateFromStores) {
+    class F {
+      constructor() {
+        if (null == closure_0) {
+          return [];
+        } else {
+          const userProfile = UserProfileStore.getUserProfile(tmp);
+          let widgets;
+          if (userProfile != null) {
+            widgets = userProfile.widgets;
+          }
+          if (widgets == null) {
+            widgets = [];
+          }
+          return widgets;
+        }
+      }
+    }
     tmp18 = stateFromStoresArray;
     if (null !== stateFromStores1) {
-      tmp18 = stateFromStores1;
+      class F {
+        constructor() {
+          if (null == closure_0) {
+            return [];
+          } else {
+            const userProfile = UserProfileStore.getUserProfile(tmp);
+            let widgets;
+            if (userProfile != null) {
+              widgets = userProfile.widgets;
+            }
+            if (widgets == null) {
+              widgets = [];
+            }
+            return widgets;
+          }
+        }
+      }
     }
   }
   return tmp18;
-}) : ((arg0) => {
+}) : (function useUserProfileWidgets(arg0) {
   let closure_0;
   let pendingWidgets;
   _require = arg0;

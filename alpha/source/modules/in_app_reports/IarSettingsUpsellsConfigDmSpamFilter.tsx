@@ -1,14 +1,14 @@
-// Module ID: 8324
-// Function ID: 8325
+// Module ID: 7707
+// Function ID: 7708
 // Name: IarSettingsUpsellsConfigDmSpamFilter
-// Dependencies: [1126, 8313, 1106, 2028, 1197, 2]
+// Dependencies: [1126, 7696, 1106, 2040, 1209, 2]
 
-// Module 8324 (IarSettingsUpsellsConfigDmSpamFilter)
+// Module 7707 (IarSettingsUpsellsConfigDmSpamFilter)
 import ChannelTypes from "ChannelTypes" /* 1106 */;
 import intl2 from "intl" /* 1126 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import MenuTypes from "MenuTypes" /* 8313 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import MenuTypes from "MenuTypes" /* 7696 */;
 import size from "module_2" /* 2 */;
 
 let items;

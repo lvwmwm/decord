@@ -1,21 +1,21 @@
-// Module ID: 10676
-// Function ID: 10677
+// Module ID: 9589
+// Function ID: 9590
 // Name: ChatGDMCustomize
-// Dependencies: [5, 32, 19, 17, 2051, 1085, 21, 4896, 587, 6478, 504, 5049, 5991, 1402, 10677, 4909, 1126, 4574, 4806, 10678, 5916, 4892, 6105, 5601, 10680, 2]
+// Dependencies: [5, 32, 19, 17, 2063, 1085, 21, 5090, 587, 6656, 504, 5417, 6174, 1414, 9590, 7001, 1126, 4766, 5000, 9591, 6189, 5086, 6283, 5375, 9593, 2]
 
-// Module 10676 (ChatGDMCustomize)
+// Module 9589 (ChatGDMCustomize)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import size from "module_2" /* 2 */;
 
-let c4, c5, channelId, maxLength;
+let c4, c5, maxLength;
 
 let c10;
 let metroImportDefault;
@@ -42,7 +42,7 @@ obj5 = { marginVertical: nativeDefault.space.PX_16 };
 obj6 = { marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8, flexDirection: "row", alignItems: "center" };
 obj7 = { fontSize: 12, color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
 let closure_13 = createStyles(obj);
-const memoResult = react.memo(react.forwardRef((channelId, ref) => {
+const memoResult = react.memo(function ChatGDMCustomize(channelId) {
   let Text;
   let TextInput;
   let _undefined;
@@ -79,6 +79,7 @@ const memoResult = react.memo(react.forwardRef((channelId, ref) => {
   maxLength = undefined;
   c10 = undefined;
   let closure_11;
+  const ref = channelId.ref;
   let tmp = closure_13();
   let tmp3 = stateFromStores;
   const tmp4 = channelId;
@@ -388,7 +389,7 @@ const memoResult = react.memo(react.forwardRef((channelId, ref) => {
     tmp45Result2 = tmp45(tmp46, obj4);
   }
   return tmp45Result2;
-}));
+});
 const result = size.fileFinishedImporting("modules/group_dm/native/ChatGDMCustomize.tsx");
 
 export default memoResult;

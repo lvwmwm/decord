@@ -1,909 +1,963 @@
 // Module ID: 1564
 // Function ID: 1565
-// Dependencies: [32, 109, 19, 21, 1494, 1537, 1538, 1565, 1531, 1522, 1513, 1507, 1520, 1512, 1554, 1495, 1566, 1567, 1511, 1518, 1569, 1514, 1515, 1570, 1572, 1523, 1573, 1574, 1575, 1576, 1580, 1581, 1559, 1556, 1582, 1532, 1561]
-// Exports: useNavigationBuilder
+// Dependencies: [32, 1565, 1566, 1567, 1563, 1529, 1558]
+// Exports: getStateFromPath
 
 // Module 1564
-import Fragment from "Fragment" /* 21 */;
-import _createClass from "_createClass" /* 1494 */;
-import deepFreeze2 from "deepFreeze" /* 1511 */;
-import useLatestCallbackDefault from "useLatestCallback" /* 1512 */;
-import _mod1532 from "module_1532" /* 1532 */;
-import Screen from "Screen" /* 1537 */;
-import Group from "Group" /* 1538 */;
-import _mod1554 from "module_1554" /* 1554 */;
-import react2 from "react" /* 1556 */;
-import react3 from "react" /* 1559 */;
-import equalDefault from "equal" /* 1566 */;
-import NavigationStateListenerProvider2 from "NavigationStateListenerProvider" /* 1582 */;
+import findFocusedRoute from "findFocusedRoute" /* 1529 */;
+import extractAll from "extract" /* 1558 */;
+import _slicedToArray2 from "_slicedToArray" /* 1563 */;
+import arrayStartsWith from "arrayStartsWith" /* 1567 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import react from "react" /* 19 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap, importDefault, navigation;
+let closure_5, hasOwnProperty, set;
 
-let closure_3 = ["children", "layout", "screenOptions", "screenLayout", "screenListeners", "UNSTABLE_router"];
-const jsx = Fragment.jsx;
-const PrivateValueStore = _createClass.PrivateValueStore;
-function isNavigationState(state) {
-  let isArray = null != state && typeof state === "object" && "routes" in state;
-  if (isArray) {
-    const _Array = Array;
-    isArray = Array.isArray(state.routes);
+function prepareConfigResources(screens) {
+  function getInitialRoutes(initialRouteName) {
+    initialRouteName = undefined;
+    if (initialRouteName != null) {
+      initialRouteName = initialRouteName.initialRouteName;
+    }
+    const items = [];
+    if (initialRouteName) {
+      const obj = { initialRouteName: initialRouteName.initialRouteName, parentScreens: [] };
+      items.push(obj);
+    }
+    return items;
   }
-  return isArray;
-}
-function getRouteConfigsFromChildren(arg0) {
-  let layout;
-  let options;
-  const f84402 = function(arr, type) {
-    let combined;
-    if (react.isValidElement(type)) {
-      if (type.type === Screen.Screen) {
-        if (typeof type.props === "object") {
-          if (null !== type.props) {
-            if (typeof type.props.name === "string") {
-              if ("" !== type.props.name) {
-                if (undefined !== type.props.navigationKey) {
-                  const _Error3 = Error;
-                  const _JSON3 = JSON;
-                  const _HermesInternal4 = HermesInternal;
-                  const self3 = this;
-                  const self4 = this;
-                  const error = new Error("Got an invalid 'navigationKey' prop (" + JSON.stringify(type.props.navigationKey) + ") for the screen '" + type.props.name + "'. It must be a non-empty string or 'undefined'.");
-                  throw error;
+  function getSortedNormalizedConfigs(initialRoutes, screens) {
+    let obj = screens;
+    if (screens === undefined) {
+      obj = {};
+    }
+    const items = [];
+    const concat = items.concat;
+    const keys = Object.keys(obj);
+    const items1 = [...keys.map((item) => createNormalizedConfigs(item, obj, initialRoutes, [], [], []))];
+    const applyResult = concat.apply(items1);
+    const mapped = applyResult.map((item, order) => {
+      obj = { order };
+      const merged = Object.assign(item);
+      return obj;
+    });
+    return mapped.sort((segments, segments2) => {
+      obj = initialRoutes(closure_1_3[2]);
+      if (obj.isArrayEqual(segments.segments, segments2.segments)) {
+        let num9;
+        if (segments.routeNames.length <= segments2.routeNames.length) {
+          let num10;
+          if (segments2.routeNames.length <= segments.routeNames.length) {
+            num10 = segments.routeNames.length - segments2.routeNames.length || segments.order - segments2.order;
+          } else {
+            num10 = 1;
+            initialRoutes(closure_1_3[3]);
+          }
+          num9 = num10;
+        } else {
+          num9 = -1;
+          initialRoutes(closure_1_3[3]);
+        }
+        return num9;
+      } else {
+        const tmpResult5 = initialRoutes(closure_1_3[3]);
+        if (tmpResult5.arrayStartsWith(segments.segments, segments2.segments)) {
+          return -1;
+        } else {
+          const tmpResult6 = initialRoutes(closure_1_3[3]);
+          if (tmpResult6.arrayStartsWith(segments2.segments, segments.segments)) {
+            return 1;
+          } else {
+            const _Math = Math;
+            let num = 0;
+            if (0 < Math.max(segments.segments.length, segments2.segments.length)) {
+              while (null != segments.segments[num]) {
+                if (null == segments2.segments[num]) {
+                  return -1;
+                } else {
+                  let obj8 = segments.segments[num];
+                  let tmp11 = segments.segments[num];
+                  let tmp12 = segments2.segments[num];
+                  let startsWithResult = obj8.startsWith(":");
+                  let obj9 = segments2.segments[num];
+                  let startsWithResult1 = obj9.startsWith(":");
+                  let hasItem = startsWithResult;
+                  if (hasItem) {
+                    let obj4 = segments.segments[num];
+                    hasItem = obj4.includes("(");
+                  }
+                  let hasItem1 = startsWithResult1;
+                  if (hasItem1) {
+                    let obj5 = segments2.segments[num];
+                    hasItem1 = obj5.includes("(");
+                  }
+                  let tmp8 = "*" === tmp11;
+                  let tmp9 = "*" === tmp12;
+                  if (!tmp8) {
+                    if (!hasItem) {
+                      if (tmp8) {
+                        if (!tmp9) {
+                          return 1;
+                        }
+                      }
+                      if (tmp9) {
+                        if (!tmp8) {
+                          return -1;
+                        }
+                      }
+                      if (startsWithResult) {
+                        if (!startsWithResult1) {
+                          return 1;
+                        }
+                      }
+                      if (startsWithResult1) {
+                        if (!startsWithResult) {
+                          return -1;
+                        }
+                      }
+                      if (hasItem) {
+                        if (!hasItem1) {
+                          return -1;
+                        }
+                      }
+                      if (hasItem1) {
+                        if (!hasItem) {
+                          return 1;
+                        }
+                      }
+                    }
+                  }
+                  num = num + 1;
+                  let _Math2 = Math;
                 }
-                const obj2 = { keys: items, options, layout, props: type.props };
-                items = [];
-                items[HermesBuiltin.arraySpread(items, items, 0)] = type.props.navigationKey;
-                arr.push(obj2);
-                return arr;
               }
+              return 1;
             }
-            const _Error4 = Error;
-            const _JSON4 = JSON;
-            const _HermesInternal5 = HermesInternal;
-            const self5 = this;
-            const self6 = this;
-            const error1 = new Error("Got an invalid name (" + JSON.stringify(type.props.name) + ") for the screen. It must be a non-empty string.");
-            throw error1;
+            return segments.segments.length - segments2.segments.length;
           }
         }
-        const _Error5 = Error;
-        const self7 = this;
-        const self8 = this;
-        const error2 = new Error("Got an invalid element for screen.");
-        throw error2;
-      } else {
-        const tmp5 = type.type === obj.Fragment || type.type === tmp3(1538).Group;
-        if (tmp5) {
-          let items4;
-          const navigationKey = type.props.navigationKey;
-          if (undefined !== navigationKey) {
-            const _Error2 = Error;
-            const _JSON2 = JSON;
-            const _HermesInternal3 = HermesInternal;
-            const self = this;
-            const self2 = this;
-            const error3 = new Error("Got an invalid 'navigationKey' prop (" + JSON.stringify(type.props.navigationKey) + ") for the group. It must be a non-empty string or 'undefined'.");
-            throw error3;
-          }
-          const push = arr.push;
-          const children = type.props.children;
-          const tmp10 = getRouteConfigsFromChildren;
-          if (null != type.props.navigationKey) {
-            const items1 = [];
-            items1[HermesBuiltin.arraySpread(items1, items, 0)] = type.props.navigationKey;
-            items4 = items1;
-          } else {
-            items4 = items;
-          }
-          if (type.type !== Group.Group) {
-            let items3 = options;
-          } else if (null != options) {
-            const items2 = [];
-            items2[HermesBuiltin.arraySpread(items2, options, 0)] = type.props.screenOptions;
-            items3 = items2;
-          } else {
-            items3 = [type.props.screenOptions];
-          }
-          if (typeof type.props.screenLayout === "function") {
-            let screenLayout = type.props.screenLayout;
-          } else {
-            screenLayout = layout;
-          }
-          if (typeof tmp10 === "function") {
-            if (items4 === undefined) {
-              items4 = [];
+      }
+    });
+  }
+  let initialRoutes = getInitialRoutes(screens);
+  screens = undefined;
+  if (screens != null) {
+    screens = screens.screens;
+  }
+  const configs = getSortedNormalizedConfigs(initialRoutes, screens);
+  let replaced;
+  if (screens != null) {
+    if (screens.path != null) {
+      replaced = str.replace(/^\//, "");
+    }
+  }
+  let prefixRegex;
+  if (replaced) {
+    let str4 = replaced;
+    if (!replaced.endsWith("/")) {
+      const _HermesInternal = HermesInternal;
+      str4 = "" + replaced + "/";
+    }
+    const parts = str4.split("/");
+    let mapped = parts.map(getStaticSegmentPattern);
+    let tmp8 = globalThis;
+    const _RegExp = RegExp;
+    const _HermesInternal2 = HermesInternal;
+    const self = this;
+    const self2 = this;
+    prefixRegex = new RegExp("^" + mapped.join("/"));
+  }
+  let obj = {};
+  map = new Map();
+  const iter = configs[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp10 = nextResult;
+    let screen = nextResult.screen;
+    let arr2 = obj[screen];
+    if (arr2 == null) {
+      let items = [];
+      obj[screen] = items;
+      arr2 = items;
+    }
+    let tmp11 = nextResult;
+    let arr = arr2.push(tmp10);
+    let segments = tmp10.segments;
+    let joined = segments.join("/");
+    let tmp15 = checkForDuplicatedConfigs(map.get(joined), tmp10, joined);
+    let result = map.set(joined, tmp10);
+    continue;
+  }
+  return { initialRoutes, configs, configsByScreen: obj, prefixRegex };
+}
+function checkForDuplicatedConfigs(map, routeNames2, joined) {
+  const tmp = map;
+  if (tmp) {
+    let arrayStartsWithResult;
+    const routeNames = map.routeNames;
+    const routeNames1 = routeNames2.routeNames;
+    if (routeNames.length > routeNames1.length) {
+      const obj2 = arrayStartsWith;
+      arrayStartsWithResult = obj2.arrayStartsWith(routeNames, routeNames1);
+    } else {
+      const obj = arrayStartsWith;
+      arrayStartsWithResult = obj.arrayStartsWith(routeNames1, routeNames);
+    }
+    if (!arrayStartsWithResult) {
+      const _Error = Error;
+      joined = routeNames.join(" > ");
+      const _HermesInternal = HermesInternal;
+      const self = this;
+      const self2 = this;
+      const error = new Error("Found conflicting screens with the same pattern. The pattern '" + joined + "' resolves to both '" + joined + "' and '" + routeNames1.join(" > ") + "'. Patterns must be unique and cannot resolve to more than one screen.");
+      throw error;
+    }
+  }
+}
+let remainingPath = ["screen", "params", "initial", "path", "merge", "pop"];
+function getStaticSegmentPattern(arg0) {
+  const arr = Array.from(arg0, (str) => {
+    let encodeURIComponentResult = encodeURIComponent(str);
+    if (encodeURIComponentResult === str) {
+      str = str.charCodeAt(0);
+      const _HermesInternal = HermesInternal;
+      const str1 = str.toString(16);
+      const str3 = str1.padStart(2, "0");
+      encodeURIComponentResult = "%" + str3.toUpperCase();
+    }
+    const tmp2 = path(closure_1_3[1])(str);
+    return "(?:" + tmp2 + "|" + path(closure_1_3[1])(encodeURIComponentResult) + ")";
+  });
+  return arr.join("");
+}
+function getExplicitParamNames(parse) {
+  let obj = parse;
+  const _Object = Object;
+  if (parse == null) {
+    obj = {};
+  }
+  const entries1 = entries(obj);
+  set = undefined;
+  const mapped = entries1.map((item) => {
+    let tmp;
+    [tmp] = item;
+    return tmp;
+  });
+  if (mapped.length) {
+    const _Set = Set;
+    const self = this;
+    const self2 = this;
+    set = new Set(mapped);
+  }
+  return set;
+}
+const weakMap = new WeakMap();
+function matchAgainstConfigs(arg0, arg1, arg2, configs, configsByScreen) {
+  let items;
+  let closure_0 = arg1;
+  let closure_1 = arg2;
+  remainingPath = arg0;
+  function _loop(iter) {
+    closure_0 = iter;
+    if (iter.regex) {
+      if (canMatchFirstSegment(iter.segments[0], closure_0, closure_1)) {
+        const match = closure_5.match(iter.regex);
+        if (match) {
+          items = [];
+          let flag = false;
+          const routeNames = iter.routeNames;
+          iter = routeNames[Symbol.iterator]();
+          const nextResult = iter.next();
+          label0:
+          while (iter !== undefined) {
+            let tmp12 = nextResult;
+            let arr2 = configsByScreen[nextResult];
+            let found;
+            if (arr2 != null) {
+              found = arr2.find((segments) => {
+                const obj = closure_2_0(items[3]);
+                return obj.arrayStartsWith(segments.segments, segments.segments);
+              });
             }
-            const Children = obj.Children;
-            const items5 = [];
-            const toArrayResult = Children.toArray(children);
-            HermesBuiltin.arraySpread(items5, toArrayResult.reduce(f84402, []), 0);
-            HermesBuiltin.apply(push, items5, arr);
-            return arr;
+            let tmp15 = found;
+            let fromEntriesResult;
+            if (found) {
+              if (match.groups) {
+                let items1 = [];
+                let params = tmp15.params;
+                for (const item10051 of params) {
+                  let tmp20 = item10051;
+                  if (item10051.screen === tmp12) {
+                    let _HermesInternal = HermesInternal;
+                    let tmp56 = match.groups["param_" + tmp20.index];
+                    let tmp57 = tmp56;
+                    if (null != tmp56) {
+                      let tmp36Result;
+                      let _decodeURIComponent = decodeURIComponent;
+                      let decodeURIComponentResult = decodeURIComponent(tmp57);
+                      if (tmp20.regex) {
+                        if (tmp57 !== decodeURIComponentResult) {
+                          let regex = tmp20.regex;
+                          if (!regex.test(decodeURIComponentResult)) {
+                            flag = true;
+                            obj.return();
+                            break;
+                          }
+                          while (true) {
+                            let tmp43 = flag;
+                            if (tmp43) {
+                              iter.return();
+                              break label0;
+                            } else if (items1.length) {
+                              let _Object = Object;
+                              fromEntriesResult = Object.fromEntries(items1);
+                            }
+                            break label0;
+                          }
+                        }
+                      }
+                      let parse = tmp15.parse;
+                      let tmp34;
+                      if (parse != null) {
+                        tmp34 = parse[tmp20.name];
+                      }
+                      let items2 = [tmp20.name, ];
+                      let push = items1.push;
+                      if (tmp34) {
+                        tmp36Result = tmp36(decodeURIComponentResult);
+                      } else {
+                        tmp36Result = decodeURIComponentResult;
+                      }
+                      items2[1] = tmp36Result;
+                      let arr = push(items2);
+                    } else {
+                      let items3 = [tmp20.name, undefined];
+                      let arr3 = items1.push(items3);
+                    }
+                  }
+                  continue;
+                }
+              }
+              let num3 = 0;
+              if (!flag) {
+                let closure_1_4 = iter;
+                let str2 = "";
+                closure_5 = closure_5.replace(match[0], "");
+                num3 = 1;
+              }
+              return num3;
+            }
+            let tmp46 = fromEntriesResult;
+            if (tmp46) {
+              let _Object2 = Object;
+              if (Object.keys(fromEntriesResult).length) {
+                let obj2 = { name: tmp12, params: fromEntriesResult };
+                let arr4 = items.push(obj2);
+                continue;
+              }
+            }
+            let obj3 = { name: tmp12 };
+            let arr5 = items.push(obj3);
+          }
+        }
+      } else {
+        return 0;
+      }
+    } else {
+      return 0;
+    }
+  }
+  let iter = configs[Symbol.iterator]();
+  while (iter !== undefined) {
+    let _loopResult = _loop(iter.next());
+    if (0 !== _loopResult) {
+      if (1 === tmp2) {
+        iter.return();
+        break;
+      }
+      let obj = { routes: items, remainingPath, config: _slicedToArray };
+      return obj;
+    }
+    continue;
+  }
+}
+function canMatchFirstSegment(str, iter, arg2) {
+  let tmp = undefined === iter;
+  if (!tmp) {
+    let tmp3 = undefined !== str;
+    if (tmp3) {
+      const tmp4 = "*" !== str && !str.startsWith(":");
+      let tmp5 = !tmp4;
+      if (tmp4) {
+        tmp5 = str === iter || str === arg2;
+        const tmp6 = str === iter || str === arg2;
+      }
+      tmp3 = tmp5;
+    }
+    tmp = tmp3;
+  }
+  return tmp;
+}
+function createNormalizedConfigs(screen, arg1, arr, arr2, parentScreens, arr3) {
+  let closure_0 = arr;
+  const args = arr2;
+  let closure_3 = arr3;
+  let items = [];
+  arr3.push(screen);
+  parentScreens.push(screen);
+  if (typeof arg1[screen] === "string") {
+    const obj2 = { screen, path: arg1[screen] };
+    arr2.push(obj2);
+    let items1 = [];
+    const push4 = items.push;
+    HermesBuiltin.arraySpread(items1, arr3, 0);
+    let items2 = [];
+    HermesBuiltin.arraySpread(items2, arr2, 0);
+    push4(createConfigItem(screen, items1, items2));
+  } else if (typeof arg1[screen] === "object") {
+    const screens = tmp4.screens;
+    if (typeof arg1[screen].path === "string") {
+      if (arg1[screen].exact) {
+        if (null == arg1[screen].path) {
+          const _Error2 = Error;
+          const _HermesInternal2 = HermesInternal;
+          const self3 = this;
+          const self4 = this;
+          const error = new Error("Screen '" + screen + "' doesn't specify a 'path'. A 'path' needs to be specified when specifying 'exact: true'. If you don't want this screen in the URL, specify it as empty string, e.g. `path: ''`.");
+          throw error;
+        }
+      }
+      const items3 = [];
+      if (arg1[screen].alias) {
+        const alias = tmp4.alias;
+        for (const item10023 of alias) {
+          let tmp9 = item10023;
+          if (typeof item10023 === "string") {
+            let items4 = [];
+            let push = items3.push;
+            let arraySpreadResult8 = HermesBuiltin.arraySpread(items4, arr3, 0);
+            let items5 = [];
+            let obj = { screen, path: tmp9 };
+            items5[HermesBuiltin.arraySpread(items5, arr2, 0)] = obj;
+            let arr4 = push(createConfigItem(screen, items4, items5, tmp4.parse, tmp6));
+          } else if (typeof tmp9 === "object") {
+            let tmp13;
+            let items6 = [];
+            let push5 = items3.push;
+            let tmp75 = createConfigItem;
+            let arraySpreadResult9 = HermesBuiltin.arraySpread(items6, arr3, 0);
+            let obj3 = { screen: null, path: null };
+            let items7 = [];
+            if (tmp9.exact) {
+              obj3.screen = screen;
+              obj3.path = tmp9.path;
+              items7[0] = obj3;
+              tmp13 = items7;
+            } else {
+              obj3.screen = screen;
+              obj3.path = tmp9.path;
+              items7[HermesBuiltin.arraySpread(items7, arr2, 0)] = obj3;
+              tmp13 = items7;
+            }
+            let push5Result = push5(tmp75(screen, items6, tmp13, tmp9.parse, tmp6));
+          }
+          continue;
+        }
+      }
+      if (arg1[screen].exact) {
+        arr2.length = 0;
+      }
+      const obj4 = { screen, path: arg1[screen].path };
+      arr2.push(obj4);
+      const items8 = [];
+      const push2 = items.push;
+      HermesBuiltin.arraySpread(items8, arr3, 0);
+      const items9 = [];
+      HermesBuiltin.arraySpread(items9, arr2, 0);
+      push2(createConfigItem(screen, items8, items9, arg1[screen].parse, !tmp73));
+      const push3 = items.push;
+      const items10 = [];
+      HermesBuiltin.arraySpread(items10, items3, 0);
+      HermesBuiltin.apply(push3, items10, items);
+    }
+    if (typeof arg1[screen] !== "string") {
+      if (typeof arg1[screen].path !== "string") {
+        const alias1 = tmp4.alias;
+        let length;
+        if (alias1 != null) {
+          length = alias1.length;
+        }
+        if (length) {
+          const _Error = Error;
+          const _HermesInternal = HermesInternal;
+          const self = this;
+          const self2 = this;
+          const error1 = new Error("Screen '" + screen + "' doesn't specify a 'path'. A 'path' needs to be specified in order to use 'alias'.");
+          throw error1;
+        }
+      }
+    }
+    if (screens) {
+      if (arg1[screen].initialRouteName) {
+        const obj5 = { initialRouteName: arg1[screen].initialRouteName, parentScreens };
+        arr.push(obj5);
+      }
+      const _Object = Object;
+      const keys = Object.keys(screens);
+      const item = keys.forEach((item) => {
+        items = [...closure_1];
+        const items1 = [...closure_2];
+        const items2 = [...createNormalizedConfigs(item, screens, closure_0, items, items1, closure_3)];
+        items.push.apply(items2);
+      });
+    }
+  }
+  arr3.pop();
+  return items;
+}
+function createConfigItem(screen, items1, items2, parse, arg4) {
+  let regExp1;
+  let tmp11;
+  let tmp12;
+  let flag = arg4;
+  if (arg4 === undefined) {
+    flag = false;
+  }
+  let path;
+  let items = [];
+  function _loop2(screen) {
+    let closure_0 = screen;
+    const push = items.push;
+    let obj = _slicedToArray2;
+    const patternParts = obj.getPatternParts(path);
+    items = [
+      ...patternParts.map((item) => {
+        const obj = { screen };
+        const merged = Object.assign(item);
+        return obj;
+      })
+    ];
+    push.apply(items);
+  }
+  const iter = items2[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    path = nextResult.path;
+    let _loop2Result = _loop2(nextResult.screen);
+    continue;
+  }
+  let regExp;
+  if (items.length) {
+    const _RegExp = RegExp;
+    const mapped = items.map((param, index) => {
+      let str;
+      let tmp2;
+      if (param.param) {
+        let str5 = "[^/]+";
+        if (param.regex) {
+          const _HermesInternal2 = HermesInternal;
+          str5 = "(?:" + param.regex + ")|(?=[^/]*%[0-9A-F]{2})[^/]+";
+        }
+        let str8 = "";
+        if (param.optional) {
+          str8 = "?";
+        }
+        const _HermesInternal3 = HermesInternal;
+        str = "(((?<param_" + index + ">" + str5 + ")\\/)" + str8 + ")";
+      } else {
+        str = ".*\\/";
+        if ("*" !== param.segment) {
+          if (typeof getStaticSegmentPattern === "function") {
+            const _Array = Array;
+            let str3 = "";
+            let _HermesInternal = HermesInternal;
+            const arr = Array.from(tmp2, (str) => {
+              let encodeURIComponentResult = encodeURIComponent(str);
+              if (encodeURIComponentResult === str) {
+                str = str.charCodeAt(0);
+                const _HermesInternal = HermesInternal;
+                const str1 = str.toString(16);
+                const str3 = str1.padStart(2, "0");
+                encodeURIComponentResult = "%" + str3.toUpperCase();
+              }
+              const tmp2 = path(closure_1_3[1])(str);
+              return "(?:" + tmp2 + "|" + path(closure_1_3[1])(encodeURIComponentResult) + ")";
+            });
+            str = "" + arr.join("") + "\\/";
           } else {
             throw new TypeError("Trying to call a non-function");
           }
         }
       }
-    }
-    const _Error = Error;
-    if (react.isValidElement(type)) {
-      let name;
-      if (typeof type.type === "string") {
-        name = type.type;
-      } else {
-        type = type.type;
-        if (type != null) {
-          name = type.name;
-        }
+      return str;
+    });
+    let str = "";
+    let _HermesInternal = HermesInternal;
+    const str2 = ")$";
+    let str3 = "^(";
+    const self = this;
+    const self2 = this;
+    regExp = new RegExp("^(" + mapped.join("") + ")$");
+  }
+  items1 = [];
+  const mapped1 = items.map((segment) => segment.segment);
+  set = new Set();
+  const entries = items.entries();
+  const tmp7 = entries[Symbol.iterator]();
+  while (tmp7 !== undefined) {
+    let tmp10 = _slicedToArray(tmp8, 2);
+    [tmp11, tmp12] = tmp10;
+    let tmp13 = tmp12;
+    if (tmp12.param) {
+      let obj = { index: tmp11, screen: null, name: null, regex: regExp1 };
+      ({ screen: obj3.screen, param: obj3.name } = tmp13);
+      regExp1 = undefined;
+      let push = items1.push;
+      if (tmp13.regex) {
+        let _RegExp2 = RegExp;
+        let _HermesInternal2 = HermesInternal;
+        let self3 = this;
+        let self4 = this;
+        regExp1 = new RegExp("^(?:" + tmp13.regex + ")$");
       }
-      let str2 = "";
-      if (null != type.props) {
-        str2 = "";
-        if (typeof type.props === "object") {
-          str2 = "";
-          if ("name" in type.props) {
-            const props = type.props;
-            let name1;
-            if (props != null) {
-              name1 = props.name;
+      let arr = push(obj);
+      if (tmp13.screen === screen) {
+        let addResult = set.add(tmp13.param);
+      }
+    }
+    continue;
+  }
+  const obj2 = { screen, regex: regExp, segments: mapped1, params: items1, routeNames: items1, parse, explicitParamNames: getExplicitParamNames(parse), pathParamNames: set, hasNestedScreens: flag };
+  return obj2;
+}
+function findInitialRoute(name, items, initialRoutes) {
+  const iter = initialRoutes[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp2 = nextResult;
+    if (items.length === nextResult.parentScreens.length) {
+      let flag = true;
+      let num = 0;
+      if (0 < items.length) {
+        let obj = items[num];
+        while (0 === obj.localeCompare(tmp2.parentScreens[num])) {
+          let sum = num + 1;
+          num = sum;
+        }
+        flag = false;
+      }
+      let tmp7 = flag;
+      if (tmp7) {
+        let initialRouteName;
+        if (name !== tmp2.initialRouteName) {
+          initialRouteName = nextResult.initialRouteName;
+        }
+        iter.return();
+        return initialRouteName;
+      }
+    }
+    continue;
+  }
+}
+function createStateObject(arg0, arg1, arg2) {
+
+}
+function createNestedStateObject(str, items, initialRoutes, config) {
+  let items1;
+  let items2;
+  let items3;
+  let items4;
+  let items5;
+  let items6;
+  let items7;
+  let items8;
+  let obj10;
+  let obj17;
+  let obj20;
+  let obj8;
+  const arr = items.shift();
+  items = [];
+  const tmp2 = findInitialRoute(arr.name, items, initialRoutes);
+  items.push(arr.name);
+  if (typeof createStateObject === "function") {
+    let obj;
+    if (0 === items.length) {
+      let obj4;
+      if (tmp2) {
+        const obj2 = { index: 1, routes: items1 };
+        items1 = [{ name: tmp2 }, arr];
+        obj4 = obj2;
+        const obj3 = { name: tmp2 };
+      } else {
+        obj4 = { routes: items2 };
+        items2 = [arr];
+      }
+      obj = obj4;
+    } else if (tmp2) {
+      const obj5 = { index: 1, routes: items3 };
+      items3 = [{ name: tmp2 }, ];
+      const obj6 = { name: tmp2 };
+      const obj7 = { state: obj8 };
+      const merged = Object.assign(arr);
+      obj8 = { routes: [] };
+      items3[1] = obj7;
+      obj = obj5;
+    } else {
+      obj = { routes: items4 };
+      const obj9 = { state: obj10 };
+      const merged1 = Object.assign(arr);
+      items4 = [obj9];
+      obj10 = { routes: [] };
+    }
+    if (items.length > 0) {
+      let arr3 = items.shift();
+      let tmp25 = obj;
+      if (arr3) {
+        while (true) {
+          let tmp11 = findInitialRoute(arr3.name, items, initialRoutes);
+          let index = tmp25.index;
+          let tmp12 = arr3;
+          if (!index) {
+            index = tmp25.routes.length - 1;
+          }
+          if (typeof createStateObject !== "function") {
+            break;
+          } else {
+            let obj18;
+            if (0 === tmp16) {
+              let obj13;
+              if (tmp11) {
+                let obj11 = { index: 1, routes: items5 };
+                let obj12 = { name: tmp11 };
+                items5 = [obj12, arr3];
+                obj13 = obj11;
+              } else {
+                obj13 = { routes: items6 };
+                items6 = [arr3];
+              }
+              obj18 = obj13;
+            } else if (tmp11) {
+              let obj14 = { index: 1, routes: items7 };
+              let obj15 = { name: tmp11 };
+              items7 = [obj15, ];
+              let obj16 = { state: obj17 };
+              let merged2 = Object.assign(tmp12);
+              obj17 = { routes: [] };
+              items7[1] = obj16;
+              obj18 = obj14;
+            } else {
+              obj18 = { routes: items8 };
+              let obj19 = { state: obj20 };
+              let merged3 = Object.assign(tmp12);
+              obj20 = { routes: [] };
+              items8 = [obj19];
             }
-            str2 = "";
-            if (name1) {
-              const _HermesInternal = HermesInternal;
-              str2 = " for the screen '" + type.props.name + "'";
+            tmp14.state = obj18;
+            let state = tmp25;
+            if (items.length > 0) {
+              state = tmp25.routes[index].state;
             }
+            let arr4 = items.push(arr3.name);
+            arr3 = items.shift();
+            tmp25 = state;
           }
         }
-      }
-      const _HermesInternal2 = HermesInternal;
-      combined = "'" + name + "'" + str2;
-    } else if (typeof type === "object") {
-      const _JSON = JSON;
-      combined = JSON.stringify(type);
-    } else {
-      const _String = String;
-      const _HermesInternal6 = HermesInternal;
-      combined = "'" + String(type) + "'";
-    }
-    const _Error1 = new _Error("A navigator can only contain 'Screen', 'Group' or 'React.Fragment' as its direct children (found " + combined + "). To render this component in the navigator, pass it in the 'component' prop to 'Screen'.");
-    throw _Error1;
-  };
-  let items = [];
-  let c1;
-  let c2;
-  let Children = react.Children;
-  let toArrayResult = Children.toArray(arg0);
-  return toArrayResult.reduce(f84402, []);
-}
-function getStateFromParams(params1, type) {
-  let items;
-  let state;
-  if (params1 != null) {
-    state = params1.state;
-  }
-  if (typeof isNavigationState === "function") {
-    let isArray = null != state && typeof state === "object" && "routes" in state;
-    if (isArray) {
-      const _Array = Array;
-      isArray = Array.isArray(state.routes);
-    }
-    if (isArray) {
-      return state;
-    } else {
-      let screen;
-      if (params1 != null) {
-        screen = params1.screen;
-      }
-      if (typeof screen === "string") {
-        let initial;
-        if (params1 != null) {
-          initial = params1.initial;
-        }
-        if (false !== initial) {
-          const obj = { routes: items };
-          const obj3 = { name: null, params: null, path: null };
-          ({ screen: obj2.name, params: obj2.params, path: obj2.path } = params1);
-          items = [obj3];
-          return obj;
-        }
+        throw new TypeError("Trying to call a non-function");
       }
     }
+    const obj21 = findFocusedRoute;
+    const findFocusedRouteResult = obj21.findFocusedRoute(obj);
+    findFocusedRouteResult.path = str.replace(/\/$/, "");
+    let parse;
+    const tmp31 = parseQueryParams;
+    if (config != null) {
+      parse = config.parse;
+    }
+    let pathParamNames;
+    if (config != null) {
+      pathParamNames = config.pathParamNames;
+    }
+    let explicitParamNames;
+    if (config != null) {
+      explicitParamNames = config.explicitParamNames;
+    }
+    let hasNestedScreens;
+    if (config != null) {
+      hasNestedScreens = config.hasNestedScreens;
+    }
+    const tmp31Result = tmp31(str, parse, pathParamNames, explicitParamNames, hasNestedScreens, findFocusedRouteResult.params);
+    if (tmp31Result) {
+      const obj22 = {};
+      const merged4 = Object.assign(findFocusedRouteResult.params);
+      const merged5 = Object.assign(tmp31Result);
+      findFocusedRouteResult.params = obj22;
+    }
+    return obj;
   } else {
     throw new TypeError("Trying to call a non-function");
   }
 }
-
-export const useNavigationBuilder = function useNavigationBuilder(StackRouter, UNSTABLE_routeNamesChangeBehavior) {
-  let addKeyedListener;
-  let addListener;
-  let children;
-  let closure_2;
-  let closure_21;
-  let closure_22;
-  let closure_23;
-  let closure_24;
-  let closure_25;
-  let closure_33;
-  let hasItem;
-  let initialRouteName;
-  let key;
-  let key1;
-  let keyedListeners;
-  let listeners;
-  let obj13;
-  let obj9;
-  let resetResult;
-  let screenLayout;
-  let screenOptions;
-  let tmp26Result25;
-  let tmp34;
-  let tmp35;
-  let tmp41;
-  let tmp42;
-  _require = StackRouter;
-  importDefault = UNSTABLE_routeNamesChangeBehavior;
-  let tmp = _require;
-  let tmp2 = dependencyMap;
-  let obj = require("module_1565");
-  dependencyMap = obj.useRegisterNavigator();
-  const context = react.useContext(require("module_1531").NavigationRouteContext);
-  const context1 = react.useContext(require("react").ConsumedParamsContext);
-  let params;
-  if (context != null) {
-    params = context.params;
+function parseQueryParams(arr, arg1, arg2, has, arg4, screen) {
+  let closure_0 = arg1;
+  set = arg2;
+  if (arg2 === undefined) {
+    const _Set = Set;
+    const self = this;
+    const self2 = this;
+    set = new Set();
   }
-  let tmp5 = typeof params === "object";
-  if (typeof params === "object") {
-    tmp5 = null != context.params;
+  let flag = arg4;
+  if (arg4 === undefined) {
+    flag = false;
   }
-  if (tmp5) {
-    hasItem = undefined;
-    if (context1 != null) {
-      hasItem = context1.has(context.params);
+  let parsed;
+  const index = arr.indexOf("?");
+  let substr;
+  if (-1 !== index) {
+    substr = arr.slice(index + 1);
+  }
+  if (substr) {
+    const obj2 = extractAll;
+    parsed = obj2.parse(substr);
+  } else {
+    parsed = {};
+  }
+  for (const item10028 of set) {
+    delete obj[item10028];
+    continue;
+  }
+  if (arg1) {
+    const _Object = Object;
+    const keys = Object.keys(parsed);
+    const item = keys.forEach((item) => {
+      hasOwnProperty = Object.hasOwnProperty;
+      const callResult = hasOwnProperty.call(tmp, item) && typeof parsed[item] === "string";
+      if (callResult) {
+        parsed[item] = closure_0[item](parsed[item]);
+      }
+    });
+  }
+  if (flag) {
+    let hasItem;
+    if (has != null) {
+      hasItem = has.has("screen");
     }
-    tmp5 = hasItem;
-  }
-  hasItem = tmp5;
-  ({ layout: react, screenListeners: jsx, UNSTABLE_router: isNavigationState } = UNSTABLE_routeNamesChangeBehavior);
-  ({ children, screenOptions, screenLayout } = UNSTABLE_routeNamesChangeBehavior);
-  getRouteConfigsFromChildren = hasItem(UNSTABLE_routeNamesChangeBehavior, context);
-  const arr = getRouteConfigsFromChildren(children);
-  const tmpResult = tmp(1513);
-  const lazyValue = tmpResult.useLazyValue(function() {
-    if (null != initialRouteName.initialRouteName) {
-      if (arr.every((props) => props.props.name !== initialRouteName.initialRouteName)) {
-        const _Error = Error;
-        const _HermesInternal = HermesInternal;
-        const self = this;
-        const self2 = this;
-        const error = new Error("Couldn't find a screen named '" + tmp.initialRouteName + "' to use as 'initialRouteName'.");
-        throw error;
+    if (!hasItem) {
+      if (typeof parsed.screen === "string") {
+        for (const item10050 of remainingPath) {
+          let hasItem1;
+          if (has != null) {
+            hasItem1 = has.has(tmp15);
+          }
+          if (!hasItem1) {
+            delete obj[item10050];
+          }
+          continue;
+        }
+      } else {
+        screen = undefined;
+        if (screen != null) {
+          screen = screen.screen;
+        }
       }
     }
-    const tmp3 = StackRouter(initialRouteName);
-    if (null != isNavigationState) {
-      const obj = {};
-      const tmp4 = isNavigationState(tmp3);
-      const merged = Object.assign(tmp3);
-      const merged1 = Object.assign(tmp4);
-      return obj;
+  }
+  let tmp18;
+  if (Object.keys(parsed).length) {
+    tmp18 = parsed;
+  }
+  return tmp18;
+}
+
+export const getStateFromPath = function getStateFromPath(str, screens) {
+  let config;
+  let configs;
+  let configsByScreen;
+  let initialRoutes;
+  let prefixRegex;
+  let routes;
+  function getConfigResources(screens) {
+    const tmp = screens;
+    if (tmp) {
+      const value = weakMap.get(screens);
+      const obj = weakMap;
+      if (value) {
+        return value;
+      } else {
+        const tmp5 = prepareConfigResources(screens);
+        const result = obj.set(screens, tmp5);
+        return tmp5;
+      }
     } else {
-      return tmp3;
+      return prepareConfigResources();
     }
-  });
-  let mapped = arr.map((props) => props.props.name);
-  if (mapped.length) {
-    let obj2 = {};
-    let obj3 = {};
-    let obj4 = {};
-    const obj5 = {};
-    const iter = arr[Symbol.iterator]();
-    let tmp12 = arr;
+  }
+  let tmp = getConfigResources(screens);
+  ({ initialRoutes, configs, configsByScreen, prefixRegex } = tmp);
+  screens = undefined;
+  if (screens != null) {
+    screens = screens.screens;
+  }
+  str = str.replace(/\/+/g, "/");
+  const str2 = str.replace(/^\//, "");
+  const str3 = str2.replace(/\?.*$/, "");
+  const replaced = str3.replace(/%[0-9a-f]{2}/gi, (str) => str.toUpperCase());
+  let str4 = replaced;
+  if (!replaced.endsWith("/")) {
+    const _HermesInternal = HermesInternal;
+    str4 = "" + replaced + "/";
+  }
+  let str5 = str4;
+  if (prefixRegex) {
+    const match = str4.match(prefixRegex);
+    if (null != match) {
+      str5 = str4.slice(match[0].length);
+    }
+  }
+  if (undefined === screens) {
+    const items = [];
+    const parts = str5.split("/");
+    const iter = parts[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
-      let tmp15 = nextResult;
-      let name = nextResult.props.name;
-      let tmp16 = name;
-      if (name in obj2) {
-        let _Error2 = Error;
-        let _HermesInternal = HermesInternal;
-        let str2 = "')";
-        let str3 = "A navigator cannot contain multiple 'Screen' components with the same name (found duplicate screen named '";
-        let self3 = this;
-        let self4 = this;
-        let error = new Error("A navigator cannot contain multiple 'Screen' components with the same name (found duplicate screen named '" + tmp16 + "')");
-        throw error;
-      } else {
-        let tmp18 = nextResult;
-        obj2[tmp16] = tmp15;
-        obj3[tmp16] = tmp15.keys;
-        obj4[tmp16] = tmp15.props.initialParams;
-        let _Object = Object;
-        let obj6 = {};
-        obj6[tmp16] = tmp15.props.getId;
-        let merged = Object.assign(obj5, obj6);
-        continue;
+      if (nextResult) {
+        let obj = { name: decodeURIComponent(tmp33) };
+        let _decodeURIComponent2 = decodeURIComponent;
+        let push = items.push;
+        let arr = push(obj);
       }
+      continue;
     }
-    let items = [lazyValue.type];
-    const callback = react.useCallback((type) => undefined === type.type || type.type === lazyValue.type, items);
-    let items1 = [callback];
-    const callback1 = react.useCallback((stale) => {
-      const tmp = undefined !== stale && false === stale.stale && callback(stale);
-      return tmp;
-    }, items1);
-    let items2 = [mapped];
-    const callback2 = react.useCallback((routes) => {
-      routes = routes.routes;
-      return routes.every((name) => !mapped.includes(name.name));
-    }, items2);
-    const tmp26 = _require;
-    const context2 = react.useContext(require("react").NavigationStateContext);
-    let state = context2.state;
-    ({ getState: closure_21, setState: closure_22, setKey: closure_23, getKey: closure_24, getIsInitial: closure_25 } = context2);
-    const context3 = react.useContext(require("react").NavigationBuilderContext);
-    const getIsStateEmitted = context3.getIsStateEmitted;
-    const flag = false;
-    const onEmitEvent = context3.onEmitEvent;
-    react.useRef(false);
-    const ref2 = react.useRef(undefined);
-    const tmp31 = useLatestCallbackDefault((current) => {
-      if (ref.current) {
-        ref2.current = current;
-      } else {
-        closure_22(current);
-      }
+    let tmp36;
+    if (items.length) {
+      tmp36 = createNestedStateObject(str, items, initialRoutes);
+    }
+    return tmp36;
+  } else if ("/" === str5) {
+    const found = configs.find((segments) => {
+      segments = segments.segments;
+      return "" === segments.join("/");
     });
-    let closure_29 = tmp31;
-    let items3 = [state, lazyValue, callback];
-    const tmp33 = context1(react.useMemo(() => {
-      let initialState;
-      let items3;
-      if (ref.current) {
-        const tmp = ref2;
-        if (ref2.current) {
-          if (callback(tmp.current)) {
-            const items = [undefined, , , ];
-            if (callback1(tmp.current)) {
-              current = tmp.current;
-            } else {
-              obj2 = { routeNames: mapped, routeParamList: obj4, routeGetIdList: obj5 };
-              current = lazyValue.getRehydratedState(tmp.current, obj2);
-            }
-            items[1] = current;
-            items[2] = false;
-            items[3] = undefined;
-            return items;
-          }
-        }
-      }
-      const reduced = mapped.reduce((acc, item) => {
-        let params2;
-        let tmp5;
-        const initialParams = obj2[item].props.initialParams;
-        state = undefined;
-        if (context != null) {
-          const params = tmp.params;
-          if (params != null) {
-            state = params.state;
-          }
-        }
-        if (null == state) {
-          let initial;
-          if (context != null) {
-            const params3 = tmp.params;
-            if (params3 != null) {
-              initial = params3.initial;
-            }
-          }
-          if (false !== initial) {
-            let screen;
-            if (context != null) {
-              const params4 = tmp.params;
-              if (params4 != null) {
-                screen = params4.screen;
-              }
-            }
-            if (screen === item) {
-              params2 = tmp.params.params;
-            }
-          }
-        }
-        if (undefined !== initialParams) {
-          const obj = {};
-          const merged = Object.assign(initialParams);
-          const merged1 = Object.assign(params2);
-          tmp5 = obj;
-        }
-        acc[item] = tmp5;
-        return acc;
-      }, {});
-      let tmp5 = state;
-      if (undefined === state) {
-        state = undefined;
-        if (context != null) {
-          let params = tmp7.params;
-          if (params != null) {
-            state = params.state;
-          }
-        }
-        if (null == state) {
-          let screen;
-          if (context != null) {
-            let params2 = tmp7.params;
-            if (params2 != null) {
-              screen = params2.screen;
-            }
-          }
-          if (typeof screen !== "string") {
-            const tmp12 = hasItem;
-            if (!tmp12) {
-              const items1 = [undefined, , , ];
-              let obj = { routeNames: mapped, routeParamList: reduced, routeGetIdList: obj5 };
-              items1[1] = lazyValue.getInitialState(obj);
-              items1[2] = true;
-              items1[3] = undefined;
-              return items1;
-            }
-          } else {
-            let initial;
-            if (context != null) {
-              let params3 = tmp7.params;
-              if (params3 != null) {
-                initial = params3.initial;
-              }
-            }
-          }
-        }
-      }
-      let tmp15;
-      if (!hasItem) {
-        let params1;
-        if (context != null) {
-          params1 = context.params;
-        }
-        tmp15 = params1;
-      }
-      let tmp18;
-      if (tmp15) {
-        tmp18 = getStateFromParams(tmp15, lazyValue.type);
-      }
-      if (tmp18 == null) {
-        tmp18 = tmp5;
-      }
-      if (null == tmp18) {
-        obj3 = { routeNames: mapped, routeParamList: reduced, routeGetIdList: obj5 };
-        initialState = lazyValue.getInitialState(obj3);
-      } else {
-        obj4 = { routeNames: mapped, routeParamList: reduced, routeGetIdList: obj5 };
-        initialState = lazyValue.getRehydratedState(tmp18, obj4);
-      }
-      if (null != tmp18) {
-        if (callback(tmp18)) {
-          if ("lastUnhandled" === UNSTABLE_routeNamesChangeBehavior.UNSTABLE_routeNamesChangeBehavior) {
-            if (callback2(tmp18)) {
-              const items2 = [tmp18, initialState, true, tmp15];
-              items3 = items2;
-            }
-            return items3;
-          }
-        }
-      }
-      items3 = [undefined, initialState, false, ];
-      let tmp29;
-      if (!callback1(tmp5)) {
-        tmp29 = tmp15;
-      }
-      items3[3] = tmp29;
-    }, items3), 4);
-    [tmp34, tmp35] = tmp33;
-    let closure_30 = tmp35;
-    const tmp37 = tmp33[3];
-    const ref = react.useRef(obj3);
-    const insertionEffect = react.useInsertionEffect(() => {
-      ref.current = obj3;
-    });
-    let current = ref.current;
-    const _Object2 = Object;
-    let keys = Object.keys(obj3);
-    let found = keys.filter((item) => {
-      let tmp3 = null != tmp && null != tmp2;
-      if (tmp3) {
-        const obj = _mod1554;
-        tmp3 = !obj.isArrayEqual(tmp, tmp2);
-      }
-      return tmp3;
-    });
-    [tmp41, tmp42] = context1(react.useState(tmp34), 2);
-    context1(react.useState(tmp34), 2);
-    const tmp43 = "lastUnhandled" === UNSTABLE_routeNamesChangeBehavior.UNSTABLE_routeNamesChangeBehavior && tmp34 && tmp41 !== tmp34;
-    if (tmp43) {
-      tmp42(tmp34);
+    let tmp22;
+    if (found) {
+      const routeNames = found.routeNames;
+      tmp22 = createNestedStateObject(str, routeNames.map((name) => ({ name })), initialRoutes, found);
     }
-    let rehydratedState = tmp35;
-    let stateForRouteNamesChange = tmp35;
-    let c36 = false;
-    if (null != tmp41) {
-      if (!callback(tmp41)) {
-        tmp42(undefined);
-        rehydratedState = tmp35;
-      }
-      let params1;
-      if (context != null) {
-        params1 = context.params;
-      }
-      let c37 = tmp53;
-      let params2;
-      if (context != null) {
-        params2 = context.params;
-      }
-      let tmp55 = tmp53;
-      let tmp56 = rehydratedState;
-      if (params2) {
-        tmp55 = tmp53;
-        tmp56 = rehydratedState;
-        if (params1 !== tmp37) {
-          let flag4;
-          let tmp60;
-          if (isNavigationState(context.params.state)) {
-            if (!tmp5) {
-              c37 = true;
-              const tmp59 = arr(context.params, lazyValue.type);
-              flag4 = true;
-              if (null != tmp59) {
-                if ("lastUnhandled" === UNSTABLE_routeNamesChangeBehavior.UNSTABLE_routeNamesChangeBehavior) {
-                  if (callback2(tmp59)) {
-                    if (tmp59 !== tmp41) {
-                      tmp42(tmp59);
-                    }
-                  }
-                  tmp60 = resetResult;
-                  flag4 = true;
-                }
-                const CommonActions = tmp26(1495).CommonActions;
-                resetResult = CommonActions.reset(tmp59);
-              }
-            }
-            let stateForAction = null;
-            if (tmp60) {
-              const obj7 = { routeNames: mapped, routeParamList: obj4, routeGetIdList: obj5 };
-              stateForAction = lazyValue.getStateForAction(rehydratedState, tmp60, obj7);
-            }
-            if (null !== stateForAction) {
-              const obj8 = { routeNames: mapped, routeParamList: obj4, routeGetIdList: obj5 };
-              rehydratedState = lazyValue.getRehydratedState(stateForAction, obj8);
-            }
-            stateForRouteNamesChange = rehydratedState;
-            tmp56 = rehydratedState;
-            tmp55 = flag4;
-          }
-          flag4 = tmp53;
-          if (typeof context.params.screen === "string") {
-            if (false !== context.params.initial) {
-              flag4 = tmp53;
-            }
-            c37 = true;
-            if ("lastUnhandled" === UNSTABLE_routeNamesChangeBehavior.UNSTABLE_routeNamesChangeBehavior) {
-              if (!mapped.includes(context.params.screen)) {
-                const tmp64 = arr(context.params, lazyValue.type);
-                flag4 = true;
-                const tmp65 = null == tmp64 || equalDefault(tmp64, tmp41);
-                if (!tmp65) {
-                  tmp42(tmp64);
-                  flag4 = true;
-                }
-              }
-            }
-            const action = { type: "NAVIGATE", payload: obj9 };
-            tmp60 = action;
-            flag4 = true;
-            obj9 = { name: context.params.screen, params: context.params.params, path: context.params.path, merge: context.params.merge, pop: context.params.pop };
-          }
-        }
-      }
-      let items4 = [context1, tmp55, ];
-      let params3;
-      const useEffect = obj10.useEffect;
-      if (context != null) {
-        params3 = context.params;
-      }
-      items4[2] = params3;
-      const effect = useEffect(() => {
-        let tmp = context1 && c37;
-        const obj = context1;
-        if (tmp) {
-          let params;
-          if (context != null) {
-            params = context.params;
-          }
-          tmp = typeof params === "object";
-        }
-        if (tmp) {
-          tmp = null != context.params;
-        }
-        if (tmp) {
-          const result = obj.set(context.params, true);
-        }
-      }, items4);
-      let closure_38 = tmp35 !== tmp56;
-      const tmp26Result = tmp26(1567);
-      const scheduleUpdate = tmp26Result.useScheduleUpdate(() => {
-        const tmp = closure_38;
-        if (tmp) {
-          closure_29(stateForRouteNamesChange);
-          const tmp5 = c36;
-          if (tmp5) {
-            tmp42(undefined);
-          }
-        }
-      });
-      rehydratedState = tmp56;
-      const effect1 = obj10.useEffect(() => {
-        ref2.current = rehydratedState;
-      });
-      const ref3 = obj10.useRef(null);
-      const effect2 = obj10.useEffect(() => {
-        ref.current = false;
-        let tmp = closure_23(closure_2);
-        let tmp2 = closure_25();
-        if (tmp2) {
-          tmp2 = !getIsStateEmitted();
-        }
-        if (!tmp2) {
-          tmp2 = ref3.current === rehydratedState;
-        }
-        if (!tmp2) {
-          closure_29(rehydratedState);
-          ref3.current = rehydratedState;
-        }
-        return () => {
-          const tmp = undefined !== closure_1_21() && closure_1_24() === closure_1_2;
-          if (tmp) {
-            closure_1_22(undefined);
-            ref.current = true;
-          }
-          ref3.current = null;
-        };
-      }, []);
-      const tmp73 = useLatestCallbackDefault(() => {
-        let tmp = closure_21();
-        const deepFreeze = deepFreeze2.deepFreeze;
-        deepFreeze2;
-        if (!callback1(tmp)) {
-          tmp = closure_30;
-        }
-        return deepFreeze(tmp);
-      });
-      const tmp26Result14 = tmp26(1518);
-      const eventEmitter = tmp26Result14.useEventEmitter((target) => {
-        let tmp2;
-        let tmp3;
-        const items = [];
-        const routes = rehydratedState.routes;
-        if (target.target) {
-          let found = routes.find((key) => key.key === target.target);
-          let route = found;
-          let name;
-          if (found != null) {
-            name = found.name;
-          }
-          tmp3 = found;
-          if (name) {
-            items.push(found.name);
-            tmp3 = found;
-          }
-        } else {
-          route = routes[tmp2.index];
-          const push = items.push;
-          let _Object = Object;
-          let keys = Object.keys(obj2);
-          const items1 = [];
-          HermesBuiltin.arraySpread(items1, keys.filter((item) => {
-            let name;
-            if (route != null) {
-              name = route.name;
-            }
-            return name === item;
-          }), 0);
-          HermesBuiltin.apply(push, items1, items);
-        }
-        if (null != tmp3) {
-          if (null != closure_7) {
-            navigation = descriptors[tmp3.key].navigation;
-            const items2 = [];
-            const concat = items2.concat;
-            const items3 = [tmp26];
-            HermesBuiltin.arraySpread(items3, items.map((item) => obj2[item].props.listeners), 1);
-            const items4 = [];
-            HermesBuiltin.arraySpread(items4, items3.map((fn) => {
-              let tmp = fn;
-              if (typeof fn === "function") {
-                const obj = { route, navigation };
-                tmp = fn(obj);
-              }
-              const type = tmp;
-              mapped = undefined;
-              if (tmp) {
-                const _Object = Object;
-                const keys = Object.keys(tmp);
-                const found = keys.filter((item) => item === type.type);
-                mapped = found.map((item) => {
-                  let tmp2;
-                  if (type != null) {
-                    tmp2 = tmp[item];
-                  }
-                  return tmp2;
-                });
-              }
-              return mapped;
-            }), 0);
-            const applyResult1 = HermesBuiltin.apply(concat, items4, items2);
-            const found1 = applyResult1.filter((item, index, arr) => {
-              const tmp = item && arr.lastIndexOf(item) === index;
-              return tmp;
-            });
-            const item = found1.forEach((fn) => {
-              let tmp;
-              if (fn != null) {
-                tmp = fn(target);
-              }
-              return tmp;
-            });
-          }
-        }
-      }, onEmitEvent);
-      const obj11 = { state: tmp56, emitter: eventEmitter };
-      const tmp26Result15 = tmp26(1569);
-      const focusEvents = tmp26Result15.useFocusEvents(obj11);
-      const items5 = [eventEmitter, tmp56];
-      const effect3 = obj10.useEffect(() => {
-        const obj = { type: "state", data: obj2 };
-        obj2 = { state: rehydratedState };
-        eventEmitter.emit(obj);
-      }, items5);
-      const tmp26Result16 = tmp26(1514);
-      const childListeners = tmp26Result16.useChildListeners();
-      ({ listeners, addListener } = childListeners);
-      const tmp26Result17 = tmp26(1515);
-      const keyedChildListeners = tmp26Result17.useKeyedChildListeners();
-      ({ keyedListeners, addKeyedListener } = keyedChildListeners);
-      const obj12 = { router: lazyValue, getState: tmp73, setState: tmp31, key, actionListeners: listeners.action, beforeRemoveListeners: keyedListeners.beforeRemove, routerConfigOptions: obj13, emitter: eventEmitter };
-      key = undefined;
-      const useOnAction = tmp26(1570).useOnAction;
-      tmp26(1570);
-      if (context != null) {
-        key = context.key;
-      }
-      obj13 = { routeNames: mapped, routeParamList: obj4, routeGetIdList: obj5 };
-      const onAction = useOnAction(obj12);
-      const obj14 = { router: lazyValue, key: key1, getState: tmp73, setState: tmp31 };
-      key1 = undefined;
-      const useOnRouteFocus = tmp26(1572).useOnRouteFocus;
-      tmp26(1572);
-      if (context != null) {
-        key1 = context.key;
-      }
-      const onRouteFocus = useOnRouteFocus(obj14);
-      let closure_41 = obj10.useContext(tmp26(1523).UnhandledActionContext);
-      const obj15 = {
-        id: UNSTABLE_routeNamesChangeBehavior.id,
-        onAction,
-        onUnhandledAction: useLatestCallbackDefault((type) => {
-              let items;
-              let params;
-              let path;
-              if ("lastUnhandled" === UNSTABLE_routeNamesChangeBehavior.UNSTABLE_routeNamesChangeBehavior) {
-                if ("NAVIGATE" === type.type) {
-                  if (null != type.payload) {
-                    if ("name" in type.payload) {
-                      if (typeof type.payload.name === "string") {
-                        if (!mapped.includes(type.payload.name)) {
-                          const obj = { name: type.payload.name, params, path };
-                          params = undefined;
-                          if ("params" in type.payload) {
-                            if (typeof type.payload.params === "object") {
-                              if (null !== type.payload.params) {
-                                params = type.payload.params;
-                              }
-                            }
-                          }
-                          path = undefined;
-                          if ("path" in type.payload) {
-                            if (typeof type.payload.path === "string") {
-                              path = type.payload.path;
-                            }
-                          }
-                          obj2 = { routes: items };
-                          items = [obj];
-                          tmp42(obj2);
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-              if (closure_41 != null) {
-                tmp5(type);
-              }
-            }),
-        getState: tmp73,
-        state: tmp56,
-        emitter: eventEmitter,
-        router: lazyValue
-      };
-      const tmp26Result20 = tmp26(1573);
-      const navigationHelpers = tmp26Result20.useNavigationHelpers(obj15);
-      const obj16 = { navigation: navigationHelpers, focusedListeners: listeners.focus };
-      const tmp26Result21 = tmp26(1574);
-      const focusedListenersChildrenAdapter = tmp26Result21.useFocusedListenersChildrenAdapter(obj16);
-      const obj17 = { getState: tmp73, getStateListeners: keyedListeners.getState };
-      const tmp26Result22 = tmp26(1575);
-      const onGetState = tmp26Result22.useOnGetState(obj17);
-      const obj18 = { state: tmp56, screens: obj2, navigation: navigationHelpers, screenOptions, screenLayout, onAction, getState: tmp73, setState: tmp31, onRouteFocus, addListener, addKeyedListener, router: lazyValue, emitter: eventEmitter };
-      const tmp26Result23 = tmp26(1576);
-      const descriptors1 = tmp26Result23.useDescriptors(obj18);
-      const descriptors = descriptors1.descriptors;
-      const describe = descriptors1.describe;
-      const obj19 = { state: tmp56, navigation: navigationHelpers, descriptors };
-      const tmp26Result24 = tmp26(1580);
-      const currentRender = tmp26Result24.useCurrentRender(obj19);
-      const obj20 = {
-        state: tmp56,
-        navigation: navigationHelpers,
-        describe,
-        descriptors,
-        NavigationContent: tmp26Result25.useComponent((children) => {
-              if (null != react) {
-                const obj = { state: rehydratedState, descriptors, navigation: navigationHelpers, children };
-                tmp(obj);
-              }
-              const Provider = react3.NavigationMetaContext.Provider;
-              const Provider2 = react2.NavigationHelpersContext.Provider;
-              const NavigationStateListenerProvider = NavigationStateListenerProvider2.NavigationStateListenerProvider;
-              const Provider3 = _mod1532.FocusedRouteKeyContext.Provider;
-              return <Provider value="Array">{0}</Provider>;
-            })
-      };
-      tmp26Result25 = tmp26(1581);
-      return obj20;
-    }
-    let everyResult;
-    if (tmp41 != null) {
-      let routes = tmp41.routes;
-      everyResult = routes.every((name) => mapped.includes(name.name));
-    }
-    if (everyResult) {
-      let everyResult1;
-      if (tmp35 != null) {
-        const routes2 = tmp35.routes;
-        everyResult1 = routes2.every((name) => !mapped.includes(name.name));
-      }
-      if (everyResult1) {
-        c36 = true;
-        const obj21 = { routeNames: mapped, routeParamList: obj4, routeGetIdList: obj5 };
-        const rehydratedState1 = lazyValue.getRehydratedState(tmp41, obj21);
-        stateForRouteNamesChange = rehydratedState1;
-        rehydratedState = rehydratedState1;
-      }
-    }
-    rehydratedState = tmp35;
-    const tmp26Result26 = tmp26(1554);
-    const tmp49 = tmp26Result26.isArrayEqual(tmp35.routeNames, mapped) && 0 === found.length;
-    if (!tmp49) {
-      const obj22 = { routeNames: mapped, routeParamList: obj4, routeGetIdList: obj5, routeKeyChanges: found };
-      stateForRouteNamesChange = lazyValue.getStateForRouteNamesChange(tmp35, obj22);
-      rehydratedState = stateForRouteNamesChange;
-    }
+    return tmp22;
   } else {
-    const tmp7 = globalThis;
-    let _Error = Error;
-    let self = this;
-    let self2 = this;
-    const error1 = new Error("Couldn't find any screens for the navigator. Have you defined any screens as its children?");
-    throw error1;
+    const first = str5.split("/")[0];
+    try {
+      if (null != first) {
+        const _decodeURIComponent = decodeURIComponent;
+        decodeURIComponent(first);
+      }
+    } catch (err) {
+    }
+    ({ routes, config } = matchAgainstConfigs(str5, tmp8, first, configs, configsByScreen));
+    matchAgainstConfigs(str5, tmp8, first, configs, configsByScreen);
+    if (undefined !== routes) {
+      if (undefined !== config) {
+        return createNestedStateObject(str, routes, initialRoutes, config);
+      }
+    }
   }
 };

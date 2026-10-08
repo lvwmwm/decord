@@ -1,14 +1,14 @@
-// Module ID: 4598
-// Function ID: 4599
+// Module ID: 4790
+// Function ID: 4791
 // Name: useBadgeTextVariant
-// Dependencies: [558, 4599, 2]
+// Dependencies: [558, 4791, 2]
 
-// Module 4598 (useBadgeTextVariant)
-import ThemeContext from "ThemeContext" /* 4599 */;
+// Module 4790 (useBadgeTextVariant)
+import ThemeContext from "ThemeContext" /* 4791 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBadgeTextVariant() {
   const obj = ThemeContext;
   const themeContext = obj.useThemeContext();
   let enabledExperiments;
@@ -24,7 +24,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     str2 = "experimental/body-xs/semibold";
   }
   return str2;
-}) : (() => {
+}) : (function useBadgeTextVariant() {
   const obj = ThemeContext;
   const themeContext = obj.useThemeContext();
   let enabledExperiments;

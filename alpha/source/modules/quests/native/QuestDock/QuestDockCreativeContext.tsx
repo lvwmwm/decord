@@ -1,22 +1,20 @@
-// Module ID: 14940
-// Function ID: 14941
+// Module ID: 15202
+// Function ID: 15203
 // Name: QuestDockCreativeContext
-// Dependencies: [19, 21, 558, 576, 5637, 2]
+// Dependencies: [19, 21, 558, 576, 5984, 2]
 
-// Module 14940 (QuestDockCreativeContext)
+// Module 15202 (QuestDockCreativeContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import AdCreativeType from "AdCreativeType" /* 5637 */;
+import AdCreativeType from "AdCreativeType" /* 5984 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let children;
-
 const jsx = Fragment.jsx;
 const redux = react.createContext(null);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockQuestProvider(children) {
   const obj = react2;
   const cResult = obj.c(3);
   children = children.children;
@@ -33,9 +31,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[1] = tmp2;
   cResult[2] = tmp4;
   tmp3 = tmp4;
-}) : ((children) => <redux.Provider value={closure_5(arg0.quest)}>{arg0.children}</redux.Provider>);
+}) : (function QuestDockQuestProvider(children) {
+  return <redux.Provider value={closure_5(arg0.quest)}>{arg0.children}</redux.Provider>;
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockBountyProvider(children) {
   const obj = react2;
   const cResult = obj.c(3);
   children = children.children;
@@ -52,9 +52,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[1] = tmp2;
   cResult[2] = tmp4;
   tmp3 = tmp4;
-}) : ((bounty) => <redux.Provider value={closure_6(arg0.bounty)}>{arg0.children}</redux.Provider>);
+}) : (function QuestDockBountyProvider(bounty) {
+  return <redux.Provider value={closure_6(arg0.bounty)}>{arg0.children}</redux.Provider>;
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestDockQuest() {
   const context = react.useContext(redux);
   let type;
   if (context != null) {
@@ -69,7 +71,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   } else {
     return context.quest;
   }
-}) : (function() {
+}) : (function useQuestDockQuest() {
   const context = react.useContext(redux);
   let type;
   if (context != null) {
@@ -86,7 +88,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestCreative(quest) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -99,7 +101,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : ((quest) => {
+}) : (function useQuestCreative(quest) {
   const items = [quest];
   return react.useMemo(() => {
     const obj = { type: AdCreativeType.AdCreativeType.QUEST, quest };
@@ -108,7 +110,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
 });
 let closure_5 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestDockBounty() {
   const context = react.useContext(redux);
   let type;
   if (context != null) {
@@ -123,7 +125,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   } else {
     return context.bounty;
   }
-}) : (function() {
+}) : (function useQuestDockBounty() {
   const context = react.useContext(redux);
   let type;
   if (context != null) {
@@ -140,7 +142,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyCreative(bounty) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -153,7 +155,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : ((bounty) => {
+}) : (function useBountyCreative(bounty) {
   const items = [bounty];
   return react.useMemo(() => {
     const obj = { type: AdCreativeType.AdCreativeType.BOUNTY, bounty };
@@ -162,7 +164,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
 });
 let closure_6 = tmp7;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
+const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestDockCreative() {
   const context = react.useContext(redux);
   if (null == context) {
     const _Error = Error;
@@ -173,7 +175,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   } else {
     return context;
   }
-}) : (function() {
+}) : (function useQuestDockCreative() {
   const context = react.useContext(redux);
   if (null == context) {
     const _Error = Error;

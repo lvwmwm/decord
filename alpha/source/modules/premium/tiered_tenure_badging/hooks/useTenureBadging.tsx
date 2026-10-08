@@ -1,19 +1,19 @@
-// Module ID: 10888
-// Function ID: 10889
+// Module ID: 10539
+// Function ID: 10540
 // Name: useTenureBadging
-// Dependencies: [7124, 1377, 4540, 1379, 558, 576, 504, 10889, 1976, 7132, 10890, 2]
+// Dependencies: [7309, 1389, 4732, 1391, 558, 576, 504, 10540, 1988, 7318, 10541, 2]
 
-// Module 10888 (useTenureBadging)
+// Module 10539 (useTenureBadging)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1976 */;
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7132 */;
-import useTieredTenureBadgeForUser2 from "useTieredTenureBadgeForUser" /* 10889 */;
-import TenureBadgeWithheldStateExperiment from "TenureBadgeWithheldStateExperiment" /* 10890 */;
-import UserProfileStore from "UserProfileStore" /* 7124 */;
-import UserStore from "UserStore" /* 1377 */;
-import SubscriptionStore from "SubscriptionStore" /* 4540 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1988 */;
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7318 */;
+import useTieredTenureBadgeForUser2 from "useTieredTenureBadgeForUser" /* 10540 */;
+import TenureBadgeWithheldStateExperiment from "TenureBadgeWithheldStateExperiment" /* 10541 */;
+import UserProfileStore from "UserProfileStore" /* 7309 */;
+import UserStore from "UserStore" /* 1389 */;
+import SubscriptionStore from "SubscriptionStore" /* 4732 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let metroRequire;
 ({ PremiumTypes: hasOwnProperty, TENURE_BADGES: metroRequire } = PremiumConstants);
 const TieredTenureBadgeStatus = { UPCOMING: "upcoming", WITHHELD: "withheld", EARNED: "earned" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTieredTenureBadge() {
   let currentUser;
   let tmp4;
   let tmp5;
@@ -55,7 +55,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tieredTenureBadgeForUser = null;
   }
   return tieredTenureBadgeForUser;
-}) : (() => {
+}) : (function useTieredTenureBadge() {
   let currentUser;
   const items = [UserStore];
   const obj = get_initialized;
@@ -74,7 +74,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 let closure_8 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumSinceForUser(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -110,7 +110,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function usePremiumSinceForUser(arg0) {
   let closure_0;
   _require = arg0;
   const items = [UserProfileStore];
@@ -130,7 +130,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_9 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumSince() {
   let closure_0;
   let currentUser;
   let id;
@@ -205,7 +205,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     stateFromStores1 = tmp16(id);
   }
   return stateFromStores1;
-}) : (() => {
+}) : (function usePremiumSince() {
   let currentUser;
   let id;
   const items = [UserStore];
@@ -239,7 +239,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 let closure_10 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTieredTenureBadgesFromSubscriptionData() {
   let currentUser;
   let premiumTypeSubscription;
   let tmp4;
@@ -303,7 +303,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     return null;
   }
-}) : (() => {
+}) : (function useTieredTenureBadgesFromSubscriptionData() {
   let currentUser;
   let premiumTypeSubscription;
   const items = [UserStore];
@@ -316,7 +316,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj3 = PremiumTypeUtils;
   if (obj3.isPremiumExactly(stateFromStores, hasOwnProperty.TIER_2)) {
     let premiumSince;
-    const getEarnedTenureBadge = tmp(7132).getEarnedTenureBadge;
+    const getEarnedTenureBadge = tmp(7318).getEarnedTenureBadge;
     TieredTenureBadgeUtils;
     if (stateFromStores1 != null) {
       premiumSince = stateFromStores1.premiumSince;
@@ -326,7 +326,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return earnedTenureBadge;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTieredTenureEarnedOnDate() {
   let premiumTypeSubscription;
   let tmp5;
   let tmp6;
@@ -335,7 +335,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SubscriptionStore];
-    const fn = function n() {
+    const fn = function t() {
       return premiumTypeSubscription.getPremiumTypeSubscription();
     };
     cResult[0] = items;
@@ -370,7 +370,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   return tmp9;
-}) : (() => {
+}) : (function useTieredTenureEarnedOnDate() {
   let premiumTypeSubscription;
   const tmp = closure_8();
   const items = [SubscriptionStore];
@@ -391,7 +391,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 let closure_11 = tmp7;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTieredTenureBadgeData() {
   let currentUser;
   let tmp4;
   let tmp5;
@@ -483,7 +483,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return tmp21;
   }
-}) : (() => {
+}) : (function useTieredTenureBadgeData() {
   let currentUser;
   let tmpResult4;
   const obj = get_initialized;
@@ -528,7 +528,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTieredTenureBadgeDataForUser(arg0) {
   const obj = useTieredTenureBadgeForUser2;
   const tieredTenureBadgeForUser = obj.useTieredTenureBadgeForUser(arg0);
   let tmp2 = null;
@@ -536,7 +536,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = metroRequire[tieredTenureBadgeForUser];
   }
   return tmp2;
-}) : ((arg0) => {
+}) : (function useTieredTenureBadgeDataForUser(arg0) {
   const obj = useTieredTenureBadgeForUser2;
   const tieredTenureBadgeForUser = obj.useTieredTenureBadgeForUser(arg0);
   let tmp2 = null;

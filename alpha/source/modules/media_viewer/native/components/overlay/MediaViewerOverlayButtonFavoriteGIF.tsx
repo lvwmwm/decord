@@ -1,24 +1,22 @@
-// Module ID: 12782
-// Function ID: 12783
+// Module ID: 12929
+// Function ID: 12930
 // Name: MediaViewerOverlayButtonFavoriteGIF
-// Dependencies: [19, 21, 558, 576, 10103, 10107, 4574, 1126, 10118, 10105, 1232, 7950, 9956, 587, 9958, 8055, 2]
+// Dependencies: [19, 21, 558, 576, 9687, 9691, 4766, 1126, 9703, 9689, 1244, 8368, 9483, 587, 9485, 8464, 2]
 
-// Module 12782 (MediaViewerOverlayButtonFavoriteGIF)
+// Module 12929 (MediaViewerOverlayButtonFavoriteGIF)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1126 */;
-import frecency_user_settings from "frecency_user_settings" /* 1232 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10103 */;
-import GIFPickerUtils from "GIFPickerUtils" /* 10105 */;
-import GifIcon from "GifIcon" /* 10118 */;
+import frecency_user_settings from "frecency_user_settings" /* 1244 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import GIFPickerActionCreators from "GIFPickerActionCreators" /* 9687 */;
+import GIFPickerUtils from "GIFPickerUtils" /* 9689 */;
+import GifIcon from "GifIcon" /* 9703 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let source;
-
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GIFFavButton(source) {
   let isFavoriteGIF;
   let tmp4;
   let obj = source(isFavoriteGIF[3]);
@@ -112,7 +110,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
       }
     }
   }
-  const fn = function c() {
+  const fn = function u() {
     let GIFType;
     let intl;
     let intl2;
@@ -154,7 +152,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
   cResult[9] = uri;
   cResult[10] = fn;
   tmp7 = fn;
-}) : ((source) => {
+}) : (function GIFFavButton(source) {
   let tmp7Result;
   let tmp7Result2;
   source = source.source;

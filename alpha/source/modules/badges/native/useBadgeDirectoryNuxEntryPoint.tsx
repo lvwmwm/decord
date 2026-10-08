@@ -1,10 +1,10 @@
-// Module ID: 12907
-// Function ID: 12908
+// Module ID: 13056
+// Function ID: 13057
 // Name: useBadgeDirectoryNuxEntryPoint
-// Dependencies: [19, 2048, 558, 576, 2]
+// Dependencies: [19, 2060, 558, 576, 2]
 
-// Module 12907 (useBadgeDirectoryNuxEntryPoint)
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+// Module 13056 (useBadgeDirectoryNuxEntryPoint)
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBadgeDirectoryNuxEntryPoint(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -46,7 +46,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[1] = arg1;
   cResult[2] = fn;
   tmp3 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useBadgeDirectoryNuxEntryPoint(arg0, arg1) {
   let items;
   let closure_0 = arg0;
   let closure_1 = arg1;

@@ -1,26 +1,26 @@
-// Module ID: 10165
-// Function ID: 10166
+// Module ID: 9751
+// Function ID: 9752
 // Name: AutocompleteOptions
-// Dependencies: [7418, 7419, 5899, 5694, 2051, 2112, 2074, 1085, 5795, 5796, 10166, 1380, 12, 8963, 5628, 2028, 9515, 8597, 6847, 10167, 10125, 6850, 1402, 1126, 2]
+// Dependencies: [7893, 7894, 8211, 6035, 2063, 2124, 2086, 1085, 5399, 5400, 9752, 1392, 12, 9753, 5975, 2040, 8681, 8685, 9081, 7034, 9764, 9710, 7037, 1414, 1126, 2]
 // Exports: getAutocompleteOptions
 
-// Module 10165 (AutocompleteOptions)
+// Module 9751 (AutocompleteOptions)
 import intl2 from "intl" /* 1126 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5628 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5795 */;
-import executeCommandDefault from "executeCommand" /* 8963 */;
-import StickersActionCreators from "StickersActionCreators" /* 10125 */;
-import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 10166 */;
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 7418 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 7419 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 5899 */;
-import StickersStore from "StickersStore" /* 5694 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5399 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5975 */;
+import StickersActionCreators from "StickersActionCreators" /* 9710 */;
+import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 9752 */;
+import executeCommandDefault from "executeCommand" /* 9753 */;
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 7893 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 7894 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 8211 */;
+import StickersStore from "StickersStore" /* 6035 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import Constants from "Constants" /* 1085 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5796 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5400 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -133,8 +133,9 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
       const IncludeGameMentionsInAutocomplete = channel(flag2[15]).IncludeGameMentionsInAutocomplete;
       if (IncludeGameMentionsInAutocomplete.getSetting()) {
         if (0 !== query.length) {
-          const tmpResult = channel(flag2[16]);
-          let result = tmpResult.queryGamesAutocomplete(query, tmp(tmp2[17]).GameSearchSurface.CHAT_MENTION);
+          const queryGamesAutocomplete = channel(flag2[16]).queryGamesAutocomplete;
+          channel(flag2[16]);
+          let result = queryGamesAutocomplete(query, tmp(tmp2[17]).GameSearchFilterGroup.DEFAULT, tmp(tmp2[18]).GameSearchSurface.CHAT_MENTION);
           if (result == null) {
             result = [];
           }
@@ -151,12 +152,12 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
   items1 = [GameAutocompleteStore];
   let obj3 = {
     queryResults(str) {
-      const TimestampAutocompleteMobileExperiment = channel(flag2[18]).TimestampAutocompleteMobileExperiment;
+      const TimestampAutocompleteMobileExperiment = channel(flag2[19]).TimestampAutocompleteMobileExperiment;
       const items = [];
       const tmp = channel;
       const tmp2 = flag2;
       if (TimestampAutocompleteMobileExperiment.getConfig({ location: "timestamps autocomplete" }).enabled) {
-        const tmpResult = tmp(tmp2[19]);
+        const tmpResult = tmp(tmp2[20]);
         const result = tmpResult.queryTimestampSuggestions(str.trim());
         const iter = result[Symbol.iterator]();
         const nextResult = iter.next();
@@ -244,7 +245,7 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
               const stickerPacks = obj4.fetchStickerPacks();
             }
             const items2 = [query];
-            const items3 = [tmp5, (arg0, arg1) => arg1 === channel(flag2[21]).StickerSendability.SENDABLE];
+            const items3 = [tmp5, (arg0, arg1) => arg1 === channel(flag2[22]).StickerSendability.SENDABLE];
             flag2 = true;
             const tmp3Result = AutocompleteUtilsDefault;
             items1 = tmp3Result.queryStickers(items2, true, items3);
@@ -262,7 +263,7 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
             if (null != name.id) {
               const obj4 = { id: null, animated: null, size };
               ({ id: obj3.id, animated: obj3.animated } = name);
-              const obj2 = flag(flag2[22]);
+              const obj2 = flag(flag2[23]);
               url = obj2.getEmojiURL(obj4);
             } else {
               url = name.url;
@@ -292,7 +293,7 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
       return [];
     },
     matches(arg0, arg1, arg2) {
-      let tmp = 0 === arg2 && arg0 === closure_15;
+      let tmp = 0 === arg2 && arg0 === authStore3;
       if (tmp) {
         tmp = !(flag && 0 === arg1.length);
         const tmp4 = flag && 0 === arg1.length;
@@ -305,7 +306,7 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
       return [];
     },
     matches(arg0, arg1, arg2) {
-      return flag && 0 === arg2 && arg0 === closure_15 && 0 === arg1.length;
+      return flag && 0 === arg2 && arg0 === authStore3 && 0 === arg1.length;
     }
   };
   let obj8 = {

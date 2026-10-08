@@ -1,26 +1,26 @@
-// Module ID: 13362
-// Function ID: 13363
+// Module ID: 13662
+// Function ID: 13663
 // Name: GuildBoostingGuildList
-// Dependencies: [19, 17, 2074, 5623, 1085, 21, 4896, 587, 558, 576, 4797, 6855, 6494, 504, 7682, 5978, 4892, 10151, 1126, 13331, 9455, 2]
+// Dependencies: [19, 17, 2086, 5968, 1085, 21, 5090, 587, 558, 576, 4991, 7043, 6671, 504, 8003, 6161, 5086, 9737, 1126, 13631, 7013, 2]
 
-// Module 13362 (GuildBoostingGuildList)
+// Module 13662 (GuildBoostingGuildList)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import useThemeDefault from "useTheme" /* 4797 */;
-import GuildIconDefault from "GuildIcon" /* 5978 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6494 */;
-import transitionToGuild from "transitionToGuild" /* 6855 */;
-import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 7682 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9455 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10151 */;
-import BoostedGuildTierProgressCircleDefault from "BoostedGuildTierProgressCircle" /* 13331 */;
+import useThemeDefault from "useTheme" /* 4991 */;
+import GuildIconDefault from "GuildIcon" /* 6161 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6671 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 7013 */;
+import transitionToGuild from "transitionToGuild" /* 7043 */;
+import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 8003 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9737 */;
+import BoostedGuildTierProgressCircleDefault from "BoostedGuildTierProgressCircle" /* 13631 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import SortedGuildStore from "SortedGuildStore" /* 5623 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import SortedGuildStore from "SortedGuildStore" /* 5968 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let obj = { guildCard: obj2, guildIcon: { marginRight: 16 }, guildCardDescriptio
 obj2 = { padding: 12, paddingLeft: 16, borderRadius: nativeDefault.radii.xs, marginBottom: 8, minHeight: 96, flexDirection: "row", justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 let closure_10 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostingGuildListItem(guildId) {
   let tmp10;
   let tmp8;
   let obj = guildId(576);
@@ -47,14 +47,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const tmp4 = closure_10();
   useThemeDefault();
   if (cResult[0] !== guildId) {
-    const fn = function s() {
+    function handleSelectGuild() {
       const obj = transitionToGuild;
       obj.transitionToGuild(guildId, { state: { shouldShowSubscribeTooltip: true } });
       const obj2 = UserSettingsModalActionCreatorsDefault;
       obj2.close();
-    };
+    }
     cResult[0] = guildId;
-    cResult[1] = fn;
+    cResult[1] = handleSelectGuild;
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildStore];
@@ -102,14 +102,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         return GuildStore.getGuild(guildId);
       }
     }
-    let obj2 = { guild: stateFromStores, size: guildId(5978).GuildIconSizes.LARGE, style: tmp4.guildIcon, selected: false };
+    let obj2 = { guild: stateFromStores, size: guildId(6161).GuildIconSizes.LARGE, style: tmp4.guildIcon, selected: false };
     const tmp5Result2 = GuildIconDefault;
     cResult[5] = stateFromStores;
     cResult[6] = tmp4.guildIcon;
     cResult[7] = closure_8(tmp5Result2, obj2);
     const tmp16 = closure_8(tmp5Result2, obj2);
   }
-}) : ((guildId) => {
+}) : (function GuildBoostingGuildListItem(guildId) {
   let intl;
   let items1;
   let items2;
@@ -131,7 +131,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       style: tmp.guildCard,
       activeOpacity: 0.5,
       accessibilityRole: "button",
-      onPress() {
+      onPress: function handleSelectGuild() {
           const obj = transitionToGuild;
           obj.transitionToGuild(guildId, { state: { shouldShowSubscribeTooltip: true } });
           const obj2 = UserSettingsModalActionCreatorsDefault;
@@ -139,18 +139,18 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         },
       children: items1
     };
-    const obj3 = { guild: stateFromStores, size: guildId(5978).GuildIconSizes.LARGE, style: tmp.guildIcon, selected: false };
+    const obj3 = { guild: stateFromStores, size: guildId(6161).GuildIconSizes.LARGE, style: tmp.guildIcon, selected: false };
     const tmp2Result = TouchableHitBoxDefault;
     const tmp2Result2 = GuildIconDefault;
     items1 = [closure_8(tmp2Result2, obj3), , ];
     const obj4 = { style: tmp.guildCardDescription, children: items2 };
     const obj5 = { variant: "text-md/bold", children: stateFromStores.name };
-    items2 = [closure_8(guildId(4892).Text, obj5), ];
+    items2 = [closure_8(guildId(5086).Text, obj5), ];
     const obj6 = { style: tmp.subscriptionInfo, children: items3 };
     const obj7 = { source: AssetRegistryDefault, style: tmp.premiumGuildImage, resizeMode: "contain", resizeMethod: "resize" };
     items3 = [closure_8(closure_4, obj7), ];
     const obj8 = { variant: "text-xs/medium", children: intl.format(guildId(1126).t.If4iTS, obj9) };
-    const Text = tmp5(4892).Text;
+    const Text = tmp5(5086).Text;
     intl = tmp5(1126).intl;
     obj9 = { subscriberCount: tmp8 };
     items3[1] = closure_8(Text, obj8);
@@ -163,7 +163,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   return tmp9;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostingGuildList(arg0) {
   let flattenedGuildIds;
   let guildCount;
   let style;
@@ -232,7 +232,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = stateFromStores;
   cResult[4] = mapped;
   tmp7 = mapped;
-}) : ((guildCount) => {
+}) : (function GuildBoostingGuildList(guildCount) {
   let flattenedGuildIds;
   let substr;
   guildCount = guildCount.guildCount;

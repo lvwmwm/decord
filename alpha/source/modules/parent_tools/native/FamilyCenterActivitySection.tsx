@@ -1,25 +1,25 @@
-// Module ID: 14723
-// Function ID: 14724
+// Module ID: 14984
+// Function ID: 14985
 // Name: FamilyCenterActivitySection
-// Dependencies: [32, 19, 17, 7062, 21, 4896, 587, 558, 576, 8329, 8331, 14718, 4892, 11541, 1126, 2521, 14724, 5916, 2]
+// Dependencies: [32, 19, 17, 7248, 21, 5090, 587, 558, 576, 7712, 7714, 14979, 5086, 11555, 1126, 2565, 14985, 6189, 2]
 
-// Module 14723 (FamilyCenterActivitySection)
+// Module 14984 (FamilyCenterActivitySection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8329 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8331 */;
-import useFamilyCenterActivities from "useFamilyCenterActivities" /* 14718 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7712 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 7714 */;
+import useFamilyCenterActivities from "useFamilyCenterActivities" /* 14979 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7062 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7248 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, displayType;
+let dependencyMap;
 
 let c10;
 let c9;
@@ -40,7 +40,7 @@ createStyles = createStyles.createStyles;
 obj3 = { marginBottom: nativeDefault.space.PX_8 };
 let closure_11 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((displayType) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterActivitySectionHeader(displayType) {
   let items;
   const obj = react2;
   const cResult = obj.c(9);
@@ -104,7 +104,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((displayType) =
       let tmp17 = null;
       if (null !== tmp11) {
         const obj4 = { variant: "text-sm/medium", color: "text-muted", style: tmp4.description, children: tmp11 };
-        tmp17 = React4(tmp(4892).Text, obj4);
+        tmp17 = React4(tmp(5086).Text, obj4);
       }
       cResult[3] = tmp11;
       cResult[4] = tmp4.description;
@@ -119,7 +119,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((displayType) =
     tmp13 = tmp15;
   }
   length = actionsForDisplayType.length;
-}) : ((displayType) => {
+}) : (function FamilyCenterActivitySectionHeader(displayType) {
   displayType = displayType.displayType;
   const tmp = closure_11();
   let flag = useIsInAdultAgeGroupDefault();
@@ -160,7 +160,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((displayType) =
     const tmp14 = React4;
     if (null !== tmp10) {
       const obj3 = { variant: "text-sm/medium", color: "text-muted", style: tmp.description, children: tmp10 };
-      tmp14Result = tmp14(tmp3(4892).Text, obj3);
+      tmp14Result = tmp14(tmp3(5086).Text, obj3);
     }
     const obj6 = { children: items };
     items[1] = tmp14Result;
@@ -173,7 +173,7 @@ let obj4 = { container: { display: "flex" }, loadMoreContainer: { display: "flex
 obj5 = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", borderBottomRightRadius: nativeDefault.radii.sm, borderBottomLeftRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, width: "60%" };
 let closure_13 = createStyles.createStyles(obj4);
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((displayType) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterActivitySection(displayType) {
   let arr2;
   let first;
   let items;
@@ -192,9 +192,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((displayType) => {
   const cResult = obj.c(36);
   displayType = displayType.displayType;
   const tmp4 = closure_13();
-  const obj2 = displayType(14718);
+  const obj2 = displayType(14979);
   const actionsForDisplayType = obj2.useActionsForDisplayType(displayType);
-  const obj3 = displayType(14718);
+  const obj3 = displayType(14979);
   const actionTotalsForDisplayType = obj3.useActionTotalsForDisplayType(displayType);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = {};
@@ -203,7 +203,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((displayType) => {
   } else {
     first = cResult[0];
   }
-  const tmpResult = displayType(11541);
+  const tmpResult = displayType(11555);
   const familyCenterActions = tmpResult.useFamilyCenterActions(first);
   const loadMore = familyCenterActions.loadMore;
   const isMoreLoading = familyCenterActions.isMoreLoading;
@@ -276,8 +276,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((displayType) => {
                   obj8 = { style: tmp4.loadMoreButton, animating: true, color: "#fff", size: "small" };
                   tmp33Result = tmp33(tmp34, obj7);
                 } else {
-                  const obj9 = { style: tmp4.loadMore, accessibilityLabel: tmp13, accessibilityRole: "button", onPress: tmp12, children: closure_9(displayType(4892).Text, obj10) };
-                  const PressableOpacity = tmp(5916).PressableOpacity;
+                  const obj9 = { style: tmp4.loadMore, accessibilityLabel: tmp13, accessibilityRole: "button", onPress: tmp12, children: closure_9(displayType(5086).Text, obj10) };
+                  const PressableOpacity = tmp(6189).PressableOpacity;
                   obj10 = { style: tmp4.loadMoreButton, variant: "text-xs/semibold", color: "text-overlay-light", children: tmp13 };
                   tmp33Result = tmp33(PressableOpacity, obj9);
                 }
@@ -320,7 +320,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((displayType) => {
       const formatToPlainString = intl.formatToPlainString;
       const _Math = Math;
       const obj11 = { pageSize: Math.min(actionTotalsForDisplayType - substr.length, tmp8) };
-      const v7dMmJY = loadMore(2521)["7dMmJY"];
+      const v7dMmJY = loadMore(2565)["7dMmJY"];
       const container = tmp4.container;
       const formatToPlainStringResult = formatToPlainString(v7dMmJY, obj11);
       const tmp43 = closure_6;
@@ -389,7 +389,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((displayType) => {
   cResult[16] = loadMore;
   cResult[17] = fn;
   tmp19 = fn;
-}) : ((displayType) => {
+}) : (function FamilyCenterActivitySection(displayType) {
   let closure_2;
   let items1;
   let obj11;
@@ -397,11 +397,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((displayType) => {
   let tmp19Result;
   displayType = displayType.displayType;
   const tmp = closure_13();
-  let obj = displayType(14718);
+  let obj = displayType(14979);
   const actionsForDisplayType = obj.useActionsForDisplayType(displayType);
-  const obj2 = displayType(14718);
+  const obj2 = displayType(14979);
   const actionTotalsForDisplayType = obj2.useActionTotalsForDisplayType(displayType);
-  const obj3 = displayType(11541);
+  const obj3 = displayType(11555);
   const familyCenterActions = obj3.useFamilyCenterActions({});
   const loadMore = familyCenterActions.loadMore;
   const isMoreLoading = familyCenterActions.isMoreLoading;
@@ -417,7 +417,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((displayType) => {
     const formatToPlainString = intl.formatToPlainString;
     const _Math = Math;
     const obj4 = { pageSize: Math.min(actionTotalsForDisplayType - substr.length, tmp6) };
-    const v7dMmJY = loadMore(2521)["7dMmJY"];
+    const v7dMmJY = loadMore(2565)["7dMmJY"];
     const formatToPlainStringResult = formatToPlainString(v7dMmJY, obj4);
     const obj5 = { style: tmp.container, children: items1 };
     const obj6 = { displayType };
@@ -438,8 +438,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((displayType) => {
         obj9 = { style: tmp.loadMoreButton, animating: true, color: "#fff", size: "small" };
         tmp19Result = tmp19(tmp18, obj8);
       } else {
-        const obj10 = { style: tmp.loadMore, accessibilityLabel: formatToPlainStringResult, accessibilityRole: "button", onPress: tmp8, children: closure_9(displayType(4892).Text, obj11) };
-        const PressableOpacity = tmp2(5916).PressableOpacity;
+        const obj10 = { style: tmp.loadMore, accessibilityLabel: formatToPlainStringResult, accessibilityRole: "button", onPress: tmp8, children: closure_9(displayType(5086).Text, obj11) };
+        const PressableOpacity = tmp2(6189).PressableOpacity;
         obj11 = { style: tmp.loadMoreButton, variant: "text-xs/semibold", color: "text-overlay-light", children: formatToPlainStringResult };
         tmp19Result = tmp19(PressableOpacity, obj10);
       }

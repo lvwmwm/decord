@@ -1,17 +1,17 @@
-// Module ID: 14419
-// Function ID: 14420
+// Module ID: 14645
+// Function ID: 14646
 // Name: ThemedStatusBar
-// Dependencies: [19, 1193, 502, 21, 558, 576, 504, 4742, 4735, 9620, 9096, 2]
+// Dependencies: [19, 1205, 502, 21, 558, 576, 504, 4936, 4929, 10813, 10340, 2]
 
-// Module 14419 (ThemedStatusBar)
+// Module 14645 (ThemedStatusBar)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4742 */;
-import StatusBarDefault from "StatusBar" /* 9096 */;
-import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 9620 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4936 */;
+import StatusBarDefault from "StatusBar" /* 10340 */;
+import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 10813 */;
 import react from "react" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThemedStatusBar() {
   let authenticated;
   let theme;
   let tmp10;
@@ -97,7 +97,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp14 = cResult[5];
   }
   return tmp14;
-}) : (() => {
+}) : (function ThemedStatusBar() {
   let authenticated;
   let theme;
   let obj = get_initialized;

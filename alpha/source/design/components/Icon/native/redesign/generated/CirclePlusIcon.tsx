@@ -1,15 +1,15 @@
-// Module ID: 10996
-// Function ID: 10997
+// Module ID: 11220
+// Function ID: 11221
 // Name: CirclePlusIcon
-// Dependencies: [109, 19, 17, 21, 558, 576, 587, 10997, 4585, 10998, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 587, 11221, 4777, 11222, 2]
 
-// Module 10996 (CirclePlusIcon)
+// Module 11220 (CirclePlusIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage3 from "BaseIconImage" /* 4585 */;
-import AssetRegistry from "AssetRegistry" /* 10997 */;
-import AssetRegistry2 from "AssetRegistry" /* 10998 */;
+import BaseIconImage3 from "BaseIconImage" /* 4777 */;
+import AssetRegistry from "AssetRegistry" /* 11221 */;
+import AssetRegistry2 from "AssetRegistry" /* 11222 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -21,7 +21,7 @@ let metroRequire;
 let closure_3 = ["style", "secondaryColor", "color"];
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CirclePlusIcon(arg0) {
   let INTERACTIVE_ICON_DEFAULT;
   let color;
   let items2;
@@ -123,7 +123,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const obj4 = { source: tmp17, color: INTERACTIVE_ICON_DEFAULT, style: tmp19 };
-      const BaseIconImage2 = tmp2(4585).BaseIconImage;
+      const BaseIconImage2 = tmp2(4777).BaseIconImage;
       const merged = Object.assign(tmp5);
       const tmp27 = metroRequire(BaseIconImage2, obj4);
       cResult[14] = INTERACTIVE_ICON_DEFAULT;
@@ -134,7 +134,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const obj5 = { source: tmp12, color: str, style: tmp6 };
-  const BaseIconImage = tmp2(4585).BaseIconImage;
+  const BaseIconImage = tmp2(4777).BaseIconImage;
   const merged1 = Object.assign(tmp5);
   const tmp16 = metroRequire(BaseIconImage, obj5);
   cResult[6] = tmp5;
@@ -142,7 +142,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = tmp6;
   cResult[9] = tmp16;
   tmp14 = tmp16;
-}) : ((color) => {
+}) : (function CirclePlusIcon(color) {
   let items;
   let items2;
   let secondaryColor;

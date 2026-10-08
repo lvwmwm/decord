@@ -1,19 +1,19 @@
-// Module ID: 15515
-// Function ID: 15516
+// Module ID: 15777
+// Function ID: 15778
 // Name: MFAModal
-// Dependencies: [5, 109, 19, 17, 21, 558, 576, 6446, 5099, 1126, 15516, 6890, 4815, 6017, 15517, 15518, 15523, 15526, 15527, 15528, 6503, 5715, 2]
+// Dependencies: [5, 109, 19, 17, 21, 558, 576, 6624, 5940, 1126, 15778, 7079, 5009, 6203, 15779, 15780, 15785, 15788, 15789, 15790, 6679, 5298, 2]
 // Exports: openMFAModal
 
-// Module 15515 (MFAModal)
+// Module 15777 (MFAModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4815 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5715 */;
-import NavigatorHeader from "NavigatorHeader" /* 6017 */;
-import MFAUtils from "MFAUtils" /* 6446 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 6890 */;
-import MfaStepsTypes from "MfaStepsTypes" /* 15516 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5009 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5298 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+import NavigatorHeader from "NavigatorHeader" /* 6203 */;
+import MFAUtils from "MFAUtils" /* 6624 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7079 */;
+import MfaStepsTypes from "MfaStepsTypes" /* 15778 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -32,7 +32,7 @@ let _asyncToGenerator = _asyncToGenerator_mod;
 const jsx = Fragment.jsx;
 LogBox.ignoreLogs(["Non-serializable values were found in the navigation state"]);
 const MFA_MODAL_KEY = "MFA_MODAL_KEY";
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((cancel) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAModal(cancel) {
   let closure_2;
   let finish;
   let mfaChallenge;
@@ -73,7 +73,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((cancel) => {
     tmp8 = cResult[5];
   }
   let tmp13 = tmp8;
-  if (!tmp(6446).hasWebAuthn) {
+  if (!tmp(6624).hasWebAuthn) {
     if (cResult[7] !== tmp8.methods) {
       let tmp16;
       const _Symbol = Symbol;
@@ -150,7 +150,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((cancel) => {
           }
         }
       }
-      const obj3 = { name: tmp(15516).MfaScreens.SELECT, params: obj4 };
+      const obj3 = { name: tmp(15778).MfaScreens.SELECT, params: obj4 };
       obj4 = { mfaChallenge: tmp13, finish: tmp22 };
       cResult[19] = tmp22;
       cResult[20] = tmp13;
@@ -233,13 +233,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((cancel) => {
       }
     }
   });
-  const fn = function() {
+  function t3() {
     return closure_0(...arguments);
-  };
+  }
   cResult[13] = tmp13.ticket;
   cResult[14] = tmp7;
-  cResult[15] = fn;
-}) : ((mfaChallenge) => {
+  cResult[15] = t3;
+}) : (function MFAModal(mfaChallenge) {
   mfaChallenge = mfaChallenge.mfaChallenge;
   let finish = mfaChallenge.finish;
   const cancel = mfaChallenge.cancel;

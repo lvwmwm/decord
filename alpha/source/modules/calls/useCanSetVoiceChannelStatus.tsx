@@ -1,12 +1,12 @@
-// Module ID: 17283
-// Function ID: 17284
+// Module ID: 17564
+// Function ID: 17565
 // Name: useCanSetVoiceChannelStatus
-// Dependencies: [4515, 1096, 4520, 558, 576, 504, 2]
+// Dependencies: [4707, 1096, 4712, 558, 576, 504, 2]
 // Exports: _canSetVoiceChannelStatus, canSetVoiceChannelStatus
 
-// Module 17283 (useCanSetVoiceChannelStatus)
+// Module 17564 (useCanSetVoiceChannelStatus)
 import Constants from "Constants" /* 1096 */;
-import PermissionStore_mod from "PermissionStore" /* 4515 */;
+import PermissionStore_mod from "PermissionStore" /* 4707 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ function _canSetVoiceChannelStatus(arg0, arg1, arg2, arg3) {
     return canResult;
   });
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanSetVoiceChannelStatus(arg0, arg1, arg2) {
   let closure_0;
   let first;
   _require = arg0;
@@ -63,23 +63,31 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
       return tmpResult.useStateFromStores(first, tmp7, tmp8);
     }
   }
-  class S {
-    constructor() {
-      closure_1 = closure_3;
-      closure_2 = closure_1;
-      obj = closure_2 ? closure_5 : closure_4;
-      return obj.every(() => { /* body not rendered: F129576 */ });
-    }
-  }
+  const fn = function o() {
+    closure_1 = PermissionStore;
+    closure_2 = closure_1;
+    const obj = closure_2 ? items1 : items;
+    return obj.every((permission) => {
+      let canResult;
+      if (null == closure_2) {
+        canResult = closure_1.can(permission, context);
+      } else {
+        const obj2 = { permission, user: tmp, context };
+        const obj = PermissionStore(closure_2_2[2]);
+        canResult = obj.can(obj2);
+      }
+      return canResult;
+    });
+  };
   items1 = [arg0, undefined !== arg1 && arg1, arg2];
   cResult[1] = arg0;
   cResult[2] = undefined !== arg1 && arg1;
   cResult[3] = arg2;
-  cResult[4] = S;
+  cResult[4] = fn;
   cResult[5] = items1;
   tmp8 = items1;
-  tmp7 = S;
-}) : ((arg0) => {
+  tmp7 = fn;
+}) : (function useCanSetVoiceChannelStatus(arg0) {
   _require = arg0;
   let flag = arg1;
   if (arg1 === undefined) {

@@ -1,25 +1,25 @@
-// Module ID: 4779
-// Function ID: 4780
+// Module ID: 4973
+// Function ID: 4974
 // Name: ServerThemeExperiment
-// Dependencies: [1085, 4780, 4791, 558, 576, 2]
+// Dependencies: [1085, 4974, 4985, 558, 576, 2]
 // Exports: getServerThemeEnabled, getServerThemeRollbackEnabled, resolveServerThemeConfig
 
-// Module 4779 (ServerThemeExperiment)
+// Module 4973 (ServerThemeExperiment)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import createExperiment from "module_4780" /* 4780 */;
+import createExperiment from "module_4974" /* 4974 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let items;
 let tmp;
-const ServerThemeApexShadowExperiment2 = tmp(4791);
+const ServerThemeApexShadowExperiment2 = tmp(4985);
 const EMPTY_STRING_SNOWFLAKE_ID = Constants.EMPTY_STRING_SNOWFLAKE_ID;
 let obj = { kind: "guild", id: "2026-04_server_theme", label: "Server Theme", defaultConfig: { enabled: false, inExperiment: false, gatesApex: false, rollbackEnabled: false }, treatments: items };
 items = [{ id: 0, label: "Control", config: { enabled: false, inExperiment: true, gatesApex: false, rollbackEnabled: false } }, { id: 1, label: "Enable Server Theme", config: { enabled: true, inExperiment: true, gatesApex: false, rollbackEnabled: false } }, { id: 2, label: "Rollback UI for Server Theme", config: { enabled: true, inExperiment: true, gatesApex: false, rollbackEnabled: true } }];
 let experiment = createExperiment.createExperiment(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, location) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useServerThemeEnabled(guildId, location) {
   const obj = react;
   const cResult = obj.c(11);
   if (cResult[0] === guildId) {
@@ -85,7 +85,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, location) =
   cResult[1] = location;
   cResult[2] = obj4;
   tmp4 = obj4;
-}) : ((guildId, location) => {
+}) : (function useServerThemeEnabled(guildId, location) {
   const obj = { guildId, location };
   const tmp = experiment;
   experiment = experiment.useExperiment(obj, { autoTrackExposure: false });
@@ -106,7 +106,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, location) =
   return experiment.enabled;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, location) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useServerThemeRollbackEnabled(guildId, location) {
   const obj = react;
   const cResult = obj.c(11);
   if (cResult[0] === guildId) {
@@ -172,7 +172,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, location) =
   cResult[1] = location;
   cResult[2] = obj4;
   tmp4 = obj4;
-}) : ((guildId, location) => {
+}) : (function useServerThemeRollbackEnabled(guildId, location) {
   const obj = { guildId, location };
   const tmp = experiment;
   experiment = experiment.useExperiment(obj, { autoTrackExposure: false });

@@ -1,21 +1,21 @@
-// Module ID: 14916
-// Function ID: 14917
+// Module ID: 15178
+// Function ID: 15179
 // Name: QuestDockExternalCoordinationContext
-// Dependencies: [19, 14910, 5630, 14912, 21, 1102, 6578, 558, 576, 4618, 14911, 10007, 1369, 2]
+// Dependencies: [19, 15172, 5977, 15174, 21, 1102, 6754, 558, 576, 4810, 15173, 9537, 1381, 2]
 
-// Module 14916 (QuestDockExternalCoordinationContext)
+// Module 15178 (QuestDockExternalCoordinationContext)
 import Fragment from "Fragment" /* 21 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import QuestConstants from "QuestConstants" /* 5630 */;
-import QuestActionCreators from "QuestActionCreators" /* 10007 */;
-import QuestDockConstants from "QuestDockConstants" /* 14912 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import QuestConstants from "QuestConstants" /* 5977 */;
+import QuestActionCreators from "QuestActionCreators" /* 9537 */;
+import QuestDockConstants from "QuestDockConstants" /* 15174 */;
 import react from "react" /* 19 */;
-import QuestDockStore from "QuestDockStore" /* 14910 */;
+import QuestDockStore from "QuestDockStore" /* 15172 */;
 import "ReanimatedHelperTypes";
-import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 6578 */;
+import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 6754 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import size from "module_2" /* 2 */;
 
 let ReanimatedHelperTypes;
@@ -35,7 +35,7 @@ const createContext = react.createContext;
 ReanimatedHelperTypes = ReanimatedHelperTypes_mod;
 let context = createContext(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockExternalCoordinationContextProviderInner(children) {
   let sharedValue1;
   let sharedValue2;
   let obj = sharedValue1(sharedValue2[8]);
@@ -98,7 +98,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   cResult[1] = sharedValue2;
   cResult[2] = fn;
   tmp7 = fn;
-}) : ((children) => {
+}) : (function QuestDockExternalCoordinationContextProviderInner(children) {
   let setRestingQuestDockMode;
   let sharedValue;
   let sharedValue1;
@@ -133,7 +133,7 @@ const __initData4 = { code: "function QuestDockExternalCoordinationContextTsx4()
 const __initData5 = { code: "function QuestDockExternalCoordinationContextTsx5(nextMode,prevMode){const{runOnJS,cancelReopenQuestDock}=this.__closure;if(nextMode!==prevMode){runOnJS(cancelReopenQuestDock)();}}" };
 const __initData6 = { code: "function QuestDockExternalCoordinationContextTsx6(contentOffsetY,contentHeight,layoutHeight){const{isScrollHandlerEnabled,restingQuestDockMode,QuestDockMode,lastContentOffsetY,lastScrollEventSourceId,id,runOnJS,cancelReopenQuestDock,IS_ANDROID,scheduleReopenQuestDock,setRestingQuestDockMode,QUEST_DOCK_EXTERNAL_SCROLL_DELTA_THRESHOLD}=this.__closure;if(!isScrollHandlerEnabled.get())return;if(restingQuestDockMode.get()===QuestDockMode.SOFT_DISMISSED||restingQuestDockMode.get()===QuestDockMode.EXPANDED){return;}const lastContentOffsetYValue=lastContentOffsetY.get();lastContentOffsetY.set(contentOffsetY);if(lastContentOffsetYValue===contentOffsetY)return;const lastSourceId=lastScrollEventSourceId.get();if(id!=='guilds'){lastScrollEventSourceId.set(id);}const isFirstScrollEvent=id!=='guilds'&&id!==lastSourceId;if(isFirstScrollEvent)return;const isOverscrollingAtTop=contentOffsetY<0&&lastContentOffsetYValue<0;if(isOverscrollingAtTop){runOnJS(cancelReopenQuestDock)();return;}const hasLayoutData=layoutHeight!=null&&contentHeight!=null;const isOverscrollingAtBottom=hasLayoutData&&contentOffsetY+layoutHeight>=contentHeight;if(isOverscrollingAtBottom)return;const isScrolledToTop=contentOffsetY<=0&&(IS_ANDROID||lastContentOffsetYValue<=0);if(isScrolledToTop&&restingQuestDockMode.get()===QuestDockMode.CLOSED){if(IS_ANDROID){runOnJS(scheduleReopenQuestDock)();}else{runOnJS(setRestingQuestDockMode)(QuestDockMode.COLLAPSED);}return;}const isScrollingDown=contentOffsetY>lastContentOffsetYValue&&contentOffsetY>0&&lastContentOffsetYValue>0;const isScrollingUp=contentOffsetY<lastContentOffsetYValue;const scrollDistance=Math.abs(lastContentOffsetYValue-contentOffsetY);if(isScrollingDown&&restingQuestDockMode.get()===QuestDockMode.COLLAPSED){runOnJS(setRestingQuestDockMode)(QuestDockMode.CLOSED);}else if(isScrollingUp&&restingQuestDockMode.get()===QuestDockMode.CLOSED&&scrollDistance>=QUEST_DOCK_EXTERNAL_SCROLL_DELTA_THRESHOLD){runOnJS(scheduleReopenQuestDock)();}}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExternalScrollEventHandler(id) {
   let ref;
   let restingQuestDockMode;
   let setRestingQuestDockMode;
@@ -180,7 +180,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
       }
     }
     R = tmp7;
-    const fn2 = function v() {
+    const fn2 = function h() {
       return restingQuestDockMode.get();
     };
     let obj3 = { restingQuestDockMode };
@@ -188,7 +188,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     fn2.__workletHash = 14040596710288;
     let tmp9 = __initData;
     fn2.__initData = __initData;
-    const fn3 = function h(arg0, arg1) {
+    const fn3 = function v(arg0, arg1) {
       if (arg0 !== arg1) {
         const obj = ReanimatedRexport;
         obj.runOnJS(R)();
@@ -251,67 +251,65 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
         }
       }
     }
-    class H {
-      constructor(arg0, arg1, arg2) {
-        if (sharedValue1.get()) {
-          if (restingQuestDockMode.get() !== QuestDockMode.SOFT_DISMISSED) {
-            if (restingQuestDockMode.get() !== QuestDockMode.EXPANDED) {
-              const value = sharedValue.get();
-              const result = sharedValue.set(arg0);
-              if (value !== arg0) {
-                const value2 = lastScrollEventSourceId.get();
-                const obj5 = lastScrollEventSourceId;
-                if ("guilds" !== id) {
-                  const result1 = obj5.set(tmp35);
+    const fn4 = function x(arg0, arg1, arg2) {
+      if (sharedValue1.get()) {
+        if (restingQuestDockMode.get() !== QuestDockMode.SOFT_DISMISSED) {
+          if (restingQuestDockMode.get() !== QuestDockMode.EXPANDED) {
+            const value = sharedValue.get();
+            const result = sharedValue.set(arg0);
+            if (value !== arg0) {
+              const value2 = lastScrollEventSourceId.get();
+              const obj5 = lastScrollEventSourceId;
+              if ("guilds" !== id) {
+                const result1 = obj5.set(tmp35);
+              }
+              if ("guilds" === id) {
+                if (arg0 < 0) {
+                  if (value < 0) {
+                    const obj4 = ReanimatedRexport;
+                    obj4.runOnJS(R)();
+                  }
                 }
-                if ("guilds" === id) {
-                  if (arg0 < 0) {
-                    if (value < 0) {
-                      const obj4 = ReanimatedRexport;
-                      obj4.runOnJS(R)();
-                    }
-                  }
-                  if (arg0 <= 0) {
-                    if (IS_ANDROID) {
-                      if (restingQuestDockMode.get() === QuestDockMode.CLOSED) {
-                        const runOnJS = ReanimatedRexport.runOnJS;
-                        ReanimatedRexport;
-                        if (tmp6) {
-                          runOnJS(closure_5)();
-                        } else {
-                          runOnJS(setRestingQuestDockMode)(QuestDockMode.COLLAPSED);
-                        }
+                if (arg0 <= 0) {
+                  if (IS_ANDROID) {
+                    if (restingQuestDockMode.get() === QuestDockMode.CLOSED) {
+                      const runOnJS = ReanimatedRexport.runOnJS;
+                      ReanimatedRexport;
+                      if (tmp6) {
+                        runOnJS(closure_5)();
+                      } else {
+                        runOnJS(setRestingQuestDockMode)(QuestDockMode.COLLAPSED);
                       }
                     }
                   }
-                  const _Math = Math;
-                  const absolute = Math.abs(value - arg0);
-                  if (arg0 > value) {
-                    if (arg0 > 0) {
-                      if (value > 0) {
-                        if (restingQuestDockMode.get() === QuestDockMode.COLLAPSED) {
-                          const obj3 = ReanimatedRexport;
-                          obj3.runOnJS(setRestingQuestDockMode)(QuestDockMode.CLOSED);
-                        }
+                }
+                const _Math = Math;
+                const absolute = Math.abs(value - arg0);
+                if (arg0 > value) {
+                  if (arg0 > 0) {
+                    if (value > 0) {
+                      if (restingQuestDockMode.get() === QuestDockMode.COLLAPSED) {
+                        const obj3 = ReanimatedRexport;
+                        obj3.runOnJS(setRestingQuestDockMode)(QuestDockMode.CLOSED);
                       }
                     }
                   }
-                  const tmp9 = arg0 < value && obj.get() === tmp.CLOSED && absolute >= closure_5;
-                  if (tmp9) {
-                    const obj2 = ReanimatedRexport;
-                    obj2.runOnJS(closure_5)();
-                  }
+                }
+                const tmp9 = arg0 < value && obj.get() === tmp.CLOSED && absolute >= closure_5;
+                if (tmp9) {
+                  const obj2 = ReanimatedRexport;
+                  obj2.runOnJS(closure_5)();
                 }
               }
             }
           }
         }
       }
-    }
+    };
     let obj5 = { isScrollHandlerEnabled: sharedValue1, restingQuestDockMode, QuestDockMode, lastContentOffsetY: sharedValue, lastScrollEventSourceId, id, runOnJS: tmp(tmp2[9]).runOnJS, cancelReopenQuestDock: tmp7, IS_ANDROID, scheduleReopenQuestDock: tmp5, setRestingQuestDockMode, QUEST_DOCK_EXTERNAL_SCROLL_DELTA_THRESHOLD: closure_5 };
-    H.__closure = obj5;
-    H.__workletHash = 14112426222292;
-    H.__initData = __initData3;
+    fn4.__closure = obj5;
+    fn4.__workletHash = 14112426222292;
+    fn4.__initData = __initData3;
     cResult[7] = id;
     cResult[8] = sharedValue1;
     cResult[9] = sharedValue;
@@ -319,7 +317,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     cResult[11] = restingQuestDockMode;
     cResult[12] = tmp5;
     cResult[13] = setRestingQuestDockMode;
-    cResult[14] = H;
+    cResult[14] = fn4;
   }
   const fn = function c() {
     const tmp = ref;
@@ -337,7 +335,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   cResult[1] = setRestingQuestDockMode;
   cResult[2] = fn;
   tmp5 = fn;
-}) : ((id) => {
+}) : (function useExternalScrollEventHandler(id) {
   let ref;
   id = id.id;
   let restingQuestDockMode;

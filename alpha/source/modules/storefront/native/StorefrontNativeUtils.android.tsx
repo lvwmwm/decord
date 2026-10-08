@@ -1,19 +1,19 @@
-// Module ID: 10549
-// Function ID: 10550
+// Module ID: 10146
+// Function ID: 10147
 // Name: StorefrontNativeUtils
-// Dependencies: [19, 558, 576, 8901, 6931, 504, 2]
+// Dependencies: [19, 558, 576, 9334, 7120, 504, 2]
 
-// Module 10549 (StorefrontNativeUtils)
-import IAPStoreDefault from "IAPStore" /* 6931 */;
-import GPlayActionCreators from "GPlayActionCreators" /* 8901 */;
+// Module 10146 (StorefrontNativeUtils)
+import IAPStoreDefault from "IAPStore" /* 7120 */;
+import GPlayActionCreators from "GPlayActionCreators" /* 9334 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, sku;
+let _require;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormattedSKUPrice(sku) {
   let c0;
   let tmp11;
   let tmp12;
@@ -37,7 +37,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
   }
   _require = tmp5;
   if (cResult[0] !== tmp5) {
-    const fn = function t() {
+    const fn = function l() {
       if (null != c0) {
         const items = [tmp];
         const obj = GPlayActionCreators;
@@ -108,7 +108,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
     tmp15 = cResult[8];
   }
   return tmp15;
-}) : ((sku) => {
+}) : (function useFormattedSKUPrice(sku) {
   let c0;
   sku = sku.sku;
   _require = undefined;
@@ -134,7 +134,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
   }, items);
   const useStateFromStores = require("get initialized").useStateFromStores;
   const tmp4 = require("get initialized");
-  const items1 = [stateFromStores(6931)];
+  const items1 = [stateFromStores(7120)];
   const items2 = [tmp2];
   stateFromStores = useStateFromStores(items1, () => {
     let product = null;

@@ -1,19 +1,19 @@
-// Module ID: 11512
-// Function ID: 11513
+// Module ID: 11504
+// Function ID: 11505
 // Name: AppealIngestionSpeedBump
-// Dependencies: [19, 17, 8139, 8126, 1085, 21, 4896, 558, 576, 504, 11505, 11513, 1126, 11511, 11514, 11524, 11525, 4892, 2]
+// Dependencies: [19, 17, 5920, 5921, 1085, 21, 5090, 558, 576, 504, 11497, 11505, 1126, 11503, 11506, 11522, 11523, 5086, 2]
 
-// Module 11512 (AppealIngestionSpeedBump)
+// Module 11504 (AppealIngestionSpeedBump)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
-import AppealIngestionActivitySummaryDefault from "AppealIngestionActivitySummary" /* 11514 */;
-import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 11524 */;
-import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 11525 */;
+import AppealIngestionActivitySummaryDefault from "AppealIngestionActivitySummary" /* 11506 */;
+import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 11522 */;
+import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 11523 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8139 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8126 */;
+import SafetyHubStore from "SafetyHubStore" /* 5920 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 5921 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,22 +29,27 @@ const View = react_native.View;
 const EMPTY_STRING_SNOWFLAKE_ID = Constants.EMPTY_STRING_SNOWFLAKE_ID;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let closure_10 = createStyles.createStyles({ container: { flex: 1, alignSelf: "stretch", paddingHorizontal: 16 } });
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngestionSpeedBump(arg0) {
   let appealClassificationId;
   let arr2;
   let classification;
   let emitAppealIngestionEvent;
   let intl3;
+  let intl4;
+  let intl5;
+  let intl6;
+  let intl7;
   let isCoppa;
   let isDeveloperClassification;
   let isDsaEligible;
   let isSpam;
   let items1;
   let items2;
-  let tmp16;
-  let tmp20;
-  let tmp23;
-  let tmp27;
+  let tmp15;
+  let tmp17;
+  let tmp19;
+  let tmp22;
+  let tmp26;
   let tmp5;
   let tmp6;
   const obj = emitAppealIngestionEvent(576);
@@ -53,27 +58,25 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp4 = closure_10();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SafetyHubStore];
-    class A {
-      constructor() {
-        return appealClassificationId.getAppealClassificationId();
-      }
-    }
+    const fn = function _() {
+      return appealClassificationId.getAppealClassificationId();
+    };
     cResult[0] = items;
-    cResult[1] = A;
+    cResult[1] = fn;
     tmp5 = items;
-    tmp6 = A;
+    tmp6 = fn;
   } else {
     [tmp5, tmp6] = cResult;
   }
   const tmpResult = emitAppealIngestionEvent(504);
   let stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const useSafetyHubClassification = emitAppealIngestionEvent(11505).useSafetyHubClassification;
-  emitAppealIngestionEvent(11505);
+  const useSafetyHubClassification = emitAppealIngestionEvent(11497).useSafetyHubClassification;
+  emitAppealIngestionEvent(11497);
   if (stateFromStores == null) {
     stateFromStores = EMPTY_STRING_SNOWFLAKE_ID;
   }
   const safetyHubClassification = useSafetyHubClassification(stateFromStores);
-  const tmpResult4 = emitAppealIngestionEvent(11513);
+  const tmpResult4 = emitAppealIngestionEvent(11505);
   emitAppealIngestionEvent = tmpResult4.useEmitAppealIngestionEvent();
   ({ isDsaEligible, classification } = safetyHubClassification);
   let str;
@@ -95,10 +98,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (classification3 != null) {
       flagged_content1 = classification3.flagged_content;
     }
-    class A {
-      constructor() {
-        return appealClassificationId.getAppealClassificationId();
-      }
+    if (flagged_content1 == null) {
+      flagged_content1 = [];
     }
     const classification4 = safetyHubClassification.classification;
     let flagged_content2;
@@ -114,132 +115,97 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
     const stringResult = intl.string(emitAppealIngestionEvent(1126).t["C5q+pW"]);
-    class A {
-      constructor() {
-        return appealClassificationId.getAppealClassificationId();
-      }
-    }
     cResult[4] = stringResult;
-    tmp16 = stringResult;
+    tmp15 = stringResult;
   } else {
-    tmp16 = cResult[4];
+    tmp15 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(emitAppealIngestionEvent(1126).t.URt7VI);
-    class A {
-      constructor() {
-        return appealClassificationId.getAppealClassificationId();
-      }
-    }
     cResult[5] = stringResult1;
+    tmp17 = stringResult1;
+  } else {
+    tmp17 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { headerText: tmp16, subHeaderText: null };
-    class A {
-      constructor() {
-        return appealClassificationId.getAppealClassificationId();
-      }
-    }
-    const tmp22 = closure_8(emitAppealIngestionEvent(11511).AppealIngestionModalHeader, obj2);
-    cResult[6] = tmp22;
-    tmp20 = tmp22;
+    const obj2 = { headerText: tmp15, subHeaderText: tmp17 };
+    const tmp21 = closure_8(emitAppealIngestionEvent(11503).AppealIngestionModalHeader, obj2);
+    cResult[6] = tmp21;
+    tmp19 = tmp21;
   } else {
-    tmp20 = cResult[6];
+    tmp19 = cResult[6];
   }
   if (cResult[7] !== arr2) {
-    let tmp24 = arr2.length > 0;
-    if (tmp24) {
-      const obj3 = { flaggedContent: null };
-      class A {
-        constructor() {
-          return appealClassificationId.getAppealClassificationId();
-        }
-      }
-      tmp24 = closure_8(AppealIngestionActivitySummaryDefault, obj3);
-    }
-    class A {
-      constructor() {
-        return appealClassificationId.getAppealClassificationId();
-      }
+    let tmp23 = arr2.length > 0;
+    if (tmp23) {
+      const obj3 = { flaggedContent: arr2 };
+      tmp23 = closure_8(AppealIngestionActivitySummaryDefault, obj3);
     }
     cResult[7] = arr2;
-    cResult[8] = tmp24;
-    tmp23 = tmp24;
+    cResult[8] = tmp23;
+    tmp22 = tmp23;
   } else {
-    tmp23 = cResult[8];
+    tmp22 = cResult[8];
   }
   if (cResult[9] !== safetyHubClassification.classification) {
-    const obj4 = { classification: null };
-    class A {
-      constructor() {
-        return appealClassificationId.getAppealClassificationId();
-      }
-    }
-    const tmp30 = closure_8(AppealIngestionPolicySummaryDefault, obj4);
+    const obj4 = { classification: safetyHubClassification.classification };
+    const tmp29 = closure_8(AppealIngestionPolicySummaryDefault, obj4);
     cResult[9] = safetyHubClassification.classification;
-    cResult[10] = tmp30;
-    tmp27 = tmp30;
+    cResult[10] = tmp29;
+    tmp26 = tmp29;
   } else {
-    tmp27 = cResult[10];
+    tmp26 = cResult[10];
   }
   if (cResult[11] === emitAppealIngestionEvent) {
-    let tmp31;
+    let tmp30;
     if (cResult[12] === isCoppa) {
-      tmp31 = cResult[13];
+      tmp30 = cResult[13];
     }
     if (cResult[14] === emitAppealIngestionEvent) {
       if (cResult[15] === isCoppa) {
-        let tmp37;
+        let tmp36;
         if (cResult[16] === isSpam) {
-          tmp37 = cResult[17];
+          tmp36 = cResult[17];
         }
         if (cResult[18] === emitAppealIngestionEvent) {
-          let tmp39;
+          let tmp42;
           if (cResult[19] === isDeveloperClassification) {
-            tmp39 = cResult[20];
+            tmp42 = cResult[20];
           }
           if (cResult[21] === emitAppealIngestionEvent) {
             if (cResult[22] === isCoppa) {
-              let tmp41;
-              let tmp43;
+              let tmp48;
+              let tmp53;
               if (cResult[23] === str) {
-                tmp41 = cResult[24];
+                tmp48 = cResult[24];
               }
               if (cResult[25] !== isDsaEligible) {
-                let tmp44 = isDsaEligible;
-                if (tmp44) {
-                  const obj5 = { variant: "text-xs/normal", children: obj9.format(emitAppealIngestionEvent(1126).t.WMUgCX, {}) };
-                  const Text = tmp(4892).Text;
-                  class A {
-                    constructor() {
-                      return appealClassificationId.getAppealClassificationId();
-                    }
-                  }
-                  tmp44 = closure_8(Text, obj5);
+                let tmp54 = isDsaEligible;
+                if (tmp54) {
+                  const obj5 = { variant: "text-xs/normal", children: intl7.format(emitAppealIngestionEvent(1126).t.WMUgCX, {}) };
+                  const Text = tmp(5086).Text;
+                  intl7 = tmp(1126).intl;
+                  tmp54 = closure_8(Text, obj5);
                 }
-                class A {
-                  constructor() {
-                    return appealClassificationId.getAppealClassificationId();
-                  }
-                }
-                cResult[26] = tmp44;
-                tmp43 = tmp44;
+                cResult[25] = isDsaEligible;
+                cResult[26] = tmp54;
+                tmp53 = tmp54;
               } else {
-                tmp43 = cResult[26];
+                tmp53 = cResult[26];
               }
               if (cResult[27] === tmp4.container) {
-                if (cResult[28] === tmp37) {
-                  if (cResult[29] === tmp39) {
-                    if (cResult[30] === tmp41) {
-                      if (cResult[31] === tmp43) {
-                        if (cResult[32] === tmp23) {
-                          if (cResult[33] === tmp27) {
-                            let tmp46;
-                            if (cResult[34] === tmp31) {
-                              tmp46 = cResult[35];
+                if (cResult[28] === tmp36) {
+                  if (cResult[29] === tmp42) {
+                    if (cResult[30] === tmp48) {
+                      if (cResult[31] === tmp53) {
+                        if (cResult[32] === tmp22) {
+                          if (cResult[33] === tmp26) {
+                            let tmp56;
+                            if (cResult[34] === tmp30) {
+                              tmp56 = cResult[35];
                             }
-                            return tmp46;
+                            return tmp56;
                           }
                         }
                       }
@@ -247,85 +213,100 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   }
                 }
               }
-              class A {
-                constructor() {
-                  return appealClassificationId.getAppealClassificationId();
-                }
-              }
               const obj6 = { children: items1 };
-              items1 = [tmp20, ];
+              items1 = [tmp19, ];
               const obj7 = { style: tmp4.container, children: items2 };
-              items2 = [tmp23, tmp27, tmp31, tmp37, tmp39, tmp41, tmp43];
-              const AppealIngestionModalScreen = tmp(11511).AppealIngestionModalScreen;
+              items2 = [tmp22, tmp26, tmp30, tmp36, tmp42, tmp48, tmp53];
+              const AppealIngestionModalScreen = tmp(11503).AppealIngestionModalScreen;
               items1[1] = closure_9(View, obj7);
-              const tmp48 = closure_9(AppealIngestionModalScreen, obj6);
+              const tmp59 = closure_9(AppealIngestionModalScreen, obj6);
               cResult[27] = tmp4.container;
-              cResult[28] = tmp37;
-              cResult[29] = tmp39;
-              cResult[30] = tmp41;
-              cResult[31] = tmp43;
-              cResult[32] = tmp23;
-              cResult[33] = tmp27;
-              cResult[34] = tmp31;
-              cResult[35] = tmp48;
-              tmp46 = tmp48;
+              cResult[28] = tmp36;
+              cResult[29] = tmp42;
+              cResult[30] = tmp48;
+              cResult[31] = tmp53;
+              cResult[32] = tmp22;
+              cResult[33] = tmp26;
+              cResult[34] = tmp30;
+              cResult[35] = tmp59;
+              tmp56 = tmp59;
             }
           }
-          class A {
-            constructor() {
-              return appealClassificationId.getAppealClassificationId();
-            }
+          let tmp49 = !isCoppa;
+          if (tmp49) {
+            const obj8 = {
+              text: intl6.string(emitAppealIngestionEvent(1126).t["Vtyn/7"]),
+              url: str,
+              onPress() {
+                          return emitAppealIngestionEvent(hasOwnProperty.ClickLearnMoreLink);
+                        }
+            };
+            const tmp52 = AppealIngestionExternalLinkDefault;
+            intl6 = tmp(1126).intl;
+            tmp49 = closure_8(tmp52, obj8);
           }
           cResult[21] = emitAppealIngestionEvent;
           cResult[22] = isCoppa;
           cResult[23] = str;
-          cResult[24] = !isCoppa;
-          tmp41 = tmp42;
+          cResult[24] = tmp49;
+          tmp48 = tmp49;
         }
-        class A {
-          constructor() {
-            return appealClassificationId.getAppealClassificationId();
-          }
+        let tmp43 = isDeveloperClassification;
+        if (tmp43) {
+          const obj9 = {
+            text: intl5.string(emitAppealIngestionEvent(1126).t.n9cZTH),
+            url: constants.APP_APPEAL_LINK,
+            onPress() {
+                      return emitAppealIngestionEvent(hasOwnProperty.ClickAppAppealLink);
+                    }
+          };
+          const tmp46 = AppealIngestionExternalLinkDefault;
+          intl5 = tmp(1126).intl;
+          tmp43 = closure_8(tmp46, obj9);
         }
         cResult[18] = emitAppealIngestionEvent;
         cResult[19] = isDeveloperClassification;
-        cResult[20] = isDeveloperClassification;
-        tmp39 = tmp40;
+        cResult[20] = tmp43;
+        tmp42 = tmp43;
       }
     }
-    class A {
-      constructor() {
-        return appealClassificationId.getAppealClassificationId();
-      }
+    let tmp37 = isSpam && !isCoppa;
+    if (tmp37) {
+      const obj10 = {
+        text: intl4.string(emitAppealIngestionEvent(1126).t.NBsJvm),
+        url: constants.SPAM_LINK,
+        onPress() {
+              return emitAppealIngestionEvent(hasOwnProperty.ClickSpamWebformLink);
+            }
+      };
+      const tmp40 = AppealIngestionExternalLinkDefault;
+      intl4 = tmp(1126).intl;
+      tmp37 = closure_8(tmp40, obj10);
     }
     cResult[14] = emitAppealIngestionEvent;
     cResult[15] = isCoppa;
     cResult[16] = isSpam;
-    cResult[17] = isSpam && !isCoppa;
-    tmp37 = tmp38;
+    cResult[17] = tmp37;
+    tmp36 = tmp37;
   }
-  let tmp32 = isCoppa;
-  if (tmp32) {
-    const obj8 = {
+  let tmp31 = isCoppa;
+  if (tmp31) {
+    const obj11 = {
       text: intl3.string(emitAppealIngestionEvent(1126).t["gJs+kf"]),
       url: constants.AGE_VERIFICATION_LINK,
       onPress() {
           return emitAppealIngestionEvent(hasOwnProperty.ClickAgeVerificationLink);
         }
     };
-    class A {
-      constructor() {
-        return appealClassificationId.getAppealClassificationId();
-      }
-    }
+    const tmp34 = AppealIngestionExternalLinkDefault;
     intl3 = tmp(1126).intl;
-    tmp32 = closure_8(tmp35, obj8);
+    tmp31 = closure_8(tmp34, obj11);
   }
   cResult[11] = emitAppealIngestionEvent;
   cResult[12] = isCoppa;
-  cResult[13] = tmp32;
-  tmp31 = tmp32;
-}) : ((arg0) => {
+  cResult[13] = tmp31;
+  tmp30 = tmp31;
+}) : (function AppealIngestionSpeedBump(arg0) {
   let appealClassificationId;
   let classification;
   let closure_0;
@@ -373,7 +354,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const stringResult = intl.string(require("intl").t["C5q+pW"]);
   const intl2 = tmp2(1126).intl;
   const stringResult1 = intl2.string(require("intl").t.URt7VI);
-  const AppealIngestionModalScreen = tmp2(11511).AppealIngestionModalScreen;
+  const AppealIngestionModalScreen = tmp2(11503).AppealIngestionModalScreen;
   const items1 = [closure_8(require("AppealIngestionModal").AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), ];
   let tmp10Result = flagged_content.length > 0;
   const obj2 = { style: tmp.container, children: items2 };
@@ -444,7 +425,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items2[5] = tmp10Result4;
   if (isDsaEligible) {
     const obj9 = { variant: "text-xs/normal", children: intl7.format(require("intl").t.WMUgCX, {}) };
-    const Text = tmp2(4892).Text;
+    const Text = tmp2(5086).Text;
     intl7 = tmp2(1126).intl;
     isDsaEligible = tmp10(Text, obj9);
   }

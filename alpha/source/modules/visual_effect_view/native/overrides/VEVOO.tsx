@@ -1,19 +1,19 @@
-// Module ID: 15880
-// Function ID: 15881
+// Module ID: 16139
+// Function ID: 16140
 // Name: VEVOO
-// Dependencies: [19, 17, 4895, 585, 21, 4896, 587, 558, 576, 4618, 5604, 5605, 15881, 15883, 15884, 8924, 10643, 6024, 504, 15584, 2]
+// Dependencies: [19, 17, 5089, 585, 21, 5090, 587, 558, 576, 4810, 5374, 5378, 16140, 16142, 16143, 8555, 10243, 6210, 504, 15864, 2]
 
-// Module 15880 (VEVOO)
+// Module 16139 (VEVOO)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 585 */;
 import nativeDefault from "native" /* 587 */;
-import spring from "spring" /* 5604 */;
-import springPresets from "springPresets" /* 5605 */;
+import spring from "spring" /* 5374 */;
+import springPresets from "springPresets" /* 5378 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 4895 */;
+import DevSettingsStore from "DevSettingsStore" /* 5089 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ let closure_8 = createStyles(obj);
 const __initData = { code: "function VEVOOTsx1(){const{withSpring,y,px8,DEV_WIDGET_SIZE,springUnclamped,x}=this.__closure;return{top:withSpring(y.get()-px8+DEV_WIDGET_SIZE,springUnclamped),left:withSpring(x.get()-px8,springUnclamped)};}" };
 const __initData2 = { code: "function VEVOOTsx2(){const{withSpring,y,px8,DEV_WIDGET_SIZE,springUnclamped,x}=this.__closure;return{top:withSpring(y.get()-px8+DEV_WIDGET_SIZE,springUnclamped),left:withSpring(x.get()-px8,springUnclamped)};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function VisualEffectViewOverrideOverlay_(arg0) {
   let PX_8;
   let closure_0;
   let closure_1;
@@ -166,7 +166,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = animatedStyle;
   cResult[2] = items2;
   tmp7 = items2;
-}) : ((arg0) => {
+}) : (function VisualEffectViewOverrideOverlay_(arg0) {
   let FormSection;
   let closure_0;
   let closure_1;
@@ -216,7 +216,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return closure_7(View, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VisualEffectViewOverrideOverlay(arg0) {
   let tmp4;
   let tmp5;
   let obj = react2;
@@ -262,7 +262,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     tmp7 = tmp10;
   }
   return tmp7;
-}) : ((arg0) => {
+}) : (function VisualEffectViewOverrideOverlay(arg0) {
   let obj = get_initialized;
   const items = [DevSettingsStore];
   let tmp = null;

@@ -1,22 +1,20 @@
-// Module ID: 10763
-// Function ID: 10764
+// Module ID: 12717
+// Function ID: 12718
 // Name: useMobileCollectiblesPurchaseSKU
-// Dependencies: [109, 1377, 558, 576, 504, 8539, 10557, 2]
+// Dependencies: [109, 1389, 558, 576, 504, 9024, 10154, 2]
 
-// Module 10763 (useMobileCollectiblesPurchaseSKU)
+// Module 12717 (useMobileCollectiblesPurchaseSKU)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 8539 */;
-import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10557 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9024 */;
+import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10154 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let product;
-
 let closure_3 = ["product"];
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMobileCollectiblesPurchaseSKU(product) {
   let currentUser;
   let tmp10;
   let tmp4;
@@ -38,12 +36,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    const fn = function f() {
-      return currentUser.getCurrentUser();
-    };
+    class S {
+      constructor() {
+        return closure_1_5.getCurrentUser();
+      }
+    }
     cResult[3] = items;
-    cResult[4] = fn;
-    tmp10 = fn;
+    cResult[4] = S;
+    tmp10 = S;
     tmp9 = items;
   } else {
     tmp9 = cResult[3];
@@ -66,6 +66,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
       }
     }
     const obj2 = { skuId: tmp4.skuId, platformSkuId: tmp13, isFreeForStaffSelfPurchase: true };
+    class S {
+      constructor() {
+        return closure_1_5.getCurrentUser();
+      }
+    }
     const merged = Object.assign(tmp5);
     cResult[8] = tmp13;
     cResult[9] = tmp4.skuId;
@@ -79,7 +84,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
   cResult[6] = stateFromStores;
   cResult[7] = collectibleGoogleSkuId;
   tmp13 = collectibleGoogleSkuId;
-}) : ((product) => {
+}) : (function useMobileCollectiblesPurchaseSKU(product) {
   let currentUser;
   product = product.product;
   const merged = Object.assign(product, Object.assign({ product: 0 }));

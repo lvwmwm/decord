@@ -1,22 +1,22 @@
-// Module ID: 7740
-// Function ID: 7741
+// Module ID: 8061
+// Function ID: 8062
 // Name: PremiumSubscriptionOfferUtil
-// Dependencies: [32, 19, 4540, 1379, 558, 6969, 7741, 7742, 576, 504, 4467, 7743, 7744, 1985, 7747, 2]
+// Dependencies: [32, 19, 4732, 1391, 558, 7158, 8062, 8063, 576, 504, 4659, 8064, 8065, 1997, 8068, 2]
 // Exports: renewalInvoiceChurnDiscountInfo, useIsNUXEligible
 
-// Module 7740 (PremiumSubscriptionOfferUtil)
+// Module 8061 (PremiumSubscriptionOfferUtil)
 import react2 from "react" /* 576 */;
-import Server from "Server" /* 1985 */;
-import _modDef4467 from "module_4467" /* 4467 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 6969 */;
-import PremiumSubscriptionTrialUtil from "PremiumSubscriptionTrialUtil" /* 7741 */;
-import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 7742 */;
-import useDiscountOfferDefault from "useDiscountOffer" /* 7743 */;
-import ReverseTrialUtils from "ReverseTrialUtils" /* 7747 */;
+import Server from "Server" /* 1997 */;
+import _modDef4659 from "module_4659" /* 4659 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7158 */;
+import PremiumSubscriptionTrialUtil from "PremiumSubscriptionTrialUtil" /* 8062 */;
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8063 */;
+import useDiscountOfferDefault from "useDiscountOffer" /* 8064 */;
+import ReverseTrialUtils from "ReverseTrialUtils" /* 8068 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SubscriptionStore from "SubscriptionStore" /* 4540 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+import SubscriptionStore from "SubscriptionStore" /* 4732 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let metroRequire;
 let tmp;
 let unpackModuleId;
 const get_initialized = tmp(504);
-const UserOfferActionCreators = tmp(7744);
+const UserOfferActionCreators = tmp(8065);
 function getDiscountInfo(active_discount_id) {
   if (authStore !== active_discount_id) {
     if (closure_12 !== active_discount_id) {
@@ -49,7 +49,7 @@ function getDiscountInfo(active_discount_id) {
       } else {
         if (unpackModuleId !== active_discount_id) {
           if (authStore2 !== active_discount_id) {
-            if (closure_15 !== active_discount_id) {
+            if (authStore3 !== active_discount_id) {
               if (map1 === active_discount_id) {
                 return { duration: 1, percentage: 40, discountId: active_discount_id };
               } else if (metroRequire === active_discount_id) {
@@ -60,9 +60,9 @@ function getDiscountInfo(active_discount_id) {
                 return { duration: 12, percentage: 20, discountId: active_discount_id };
               } else if (React4 === active_discount_id) {
                 return { duration: 12, percentage: 30, discountId: active_discount_id };
-              } else if (authStore3 === active_discount_id) {
-                return { duration: 1, percentage: 40, discountId: active_discount_id };
               } else if (authStore4 === active_discount_id) {
+                return { duration: 1, percentage: 40, discountId: active_discount_id };
+              } else if (authStore5 === active_discount_id) {
                 return { duration: 3, percentage: 30, discountId: active_discount_id };
               } else if (closure_17 === active_discount_id) {
                 return { duration: 1, percentage: 30, discountId: active_discount_id };
@@ -78,7 +78,7 @@ function getDiscountInfo(active_discount_id) {
 }
 ({ PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID: metroRequire, PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID: metroImportDefault, PREMIUM_TIER_2_ANNUAL_V2_20_PERCENT_DISCOUNT_ID: metroImportAll, PREMIUM_TIER_2_ANNUAL_V2_30_PERCENT_DISCOUNT_ID: c9, PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: c10, PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: unpackModuleId, PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_30_PERCENT_DISCOUNT_ID: closure_12, PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID: map1, PREMIUM_TIER_2_LIKELIHOOD_DISCOUNT_ID: closure_14, PREMIUM_TIER_2_REACTIVATION_DISCOUNT_ID: closure_15, PREMIUM_TIER_2_REENGAGEMENT_1_MONTH_40_PERCENT_DISCOUNT_ID: closure_16, PREMIUM_TIER_2_REFERRAL_INCENTIVE_DISCOUNT_ID: closure_17, PREMIUM_GROUP_30_PERCENT_3_MONTH_DISCOUNT_ID: closure_18, PREMIUM_TIER_2_CHURN_1_MONTH_10_PERCENT_DISCOUNT_ID: closure_19, PREMIUM_TIER_2_CHURN_1_MONTH_50_PERCENT_DISCOUNT_ID: closure_20, CHURN_DISCOUNT_IDS: closure_21 } = PremiumConstants);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsInPremiumOfferExperience() {
   const obj = usePremiumTrialOffer;
   const premiumTrialOffer = obj.usePremiumTrialOffer();
   const obj2 = PremiumSubscriptionTrialUtil;
@@ -102,7 +102,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp6 = tmp5;
   }
   return tmp6;
-}) : (() => {
+}) : (function useIsInPremiumOfferExperience() {
   const obj = usePremiumTrialOffer;
   const premiumTrialOffer = obj.usePremiumTrialOffer();
   const obj2 = PremiumSubscriptionTrialUtil;
@@ -160,9 +160,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let tmp10 = null != prop;
     if (tmp10) {
       const _Date = Date;
-      const tmp12 = _modDef4467;
+      const tmp12 = _modDef4659;
       const tmp12Result = tmp12(Date.now());
-      tmp10 = tmp12Result <= _modDef4467(prop);
+      tmp10 = tmp12Result <= _modDef4659(prop);
     }
     cResult[2] = prop;
     cResult[3] = tmp10;
@@ -186,15 +186,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp4 = null != prop;
   if (tmp4) {
     const _Date = Date;
-    const tmp6 = _modDef4467;
+    const tmp6 = _modDef4659;
     const tmp6Result = tmp6(Date.now());
-    tmp4 = tmp6Result <= _modDef4467(prop);
+    tmp4 = tmp6Result <= _modDef4659(prop);
   }
   return tmp4;
 });
 let closure_22 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActiveDiscountInfo() {
   let premiumTypeSubscription;
   let tmp4;
   let tmp5;
@@ -231,7 +231,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = cResult[3];
   }
   return tmp9;
-}) : (() => {
+}) : (function useActiveDiscountInfo() {
   let premiumTypeSubscription;
   const items = [SubscriptionStore];
   const obj = get_initialized;
@@ -246,7 +246,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return getDiscountInfo(active_discount_id);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchChurnUserDiscountOffer(arg0) {
   let closure_129_0;
   let closure_129_2;
   let tmp11;
@@ -345,7 +345,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp18 = obj4;
     }
   }
-}) : ((arg0) => {
+}) : (function useFetchChurnUserDiscountOffer(arg0) {
   let closure_129_0;
   let closure_129_2;
   let tmp10;
@@ -402,7 +402,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldFetchChurnOffer() {
   let premiumTypeSubscription;
   let tmp4;
   let tmp5;
@@ -438,7 +438,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     hasPremiumNitroMonthly = !hasActiveTrial;
   }
   return hasPremiumNitroMonthly;
-}) : (() => {
+}) : (function useShouldFetchChurnOffer() {
   let premiumTypeSubscription;
   const items = [SubscriptionStore];
   const obj = get_initialized;
@@ -497,7 +497,7 @@ export const renewalInvoiceChurnDiscountInfo = function renewalInvoiceChurnDisco
   }
   return null;
 };
-export const useIsNUXEligible = () => {
+export const useIsNUXEligible = function useIsNUXEligible() {
   const obj = ReverseTrialUtils;
   return obj.useIsInReverseTrial();
 };

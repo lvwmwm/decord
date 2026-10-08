@@ -1,24 +1,23 @@
-// Module ID: 12848
-// Function ID: 12849
+// Module ID: 12997
+// Function ID: 12998
 // Name: useTimestampTickedNow
-// Dependencies: [32, 19, 4885, 1102, 558, 576, 504, 2046, 2]
+// Dependencies: [32, 19, 5079, 1102, 558, 576, 504, 2058, 2]
 
-// Module 12848 (useTimestampTickedNow)
+// Module 12997 (useTimestampTickedNow)
 import react2 from "react" /* 576 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault, startResult;
+let _require, importDefault;
 
 let tmp;
 const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  let obj4;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTimestampTickedNow(arg0) {
   let require;
   let result;
   let tmp10;
@@ -64,7 +63,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj3 = react;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
-    const fn2 = function w() {
+    const fn2 = function f() {
       return useReducedMotion.useReducedMotion;
     };
     cResult[3] = items;
@@ -92,60 +91,39 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   importDefault = result;
   if (cResult[5] !== result) {
-    class C {
-      constructor() {
-        interval = new closure_0(closure_1_2[7]).Interval();
-        closure_0 = interval;
-        startResult = interval.start(SECOND, () => {
-          const timestamp = Date.now();
-          const rounded = Math.floor(timestamp / DurationsDefault.Millis.SECOND);
-          interval(rounded * DurationsDefault.Millis.SECOND);
-        });
-        return () => interval.stop();
-      }
-    }
+    const fn3 = function _() {
+      const interval = new require("Timers").Interval();
+      interval.start(closure_1, () => {
+        const timestamp = Date.now();
+        const rounded = Math.floor(timestamp / DurationsDefault.Millis.SECOND);
+        interval(rounded * DurationsDefault.Millis.SECOND);
+      });
+      return () => interval.stop();
+    };
     const items1 = [result];
     cResult[5] = result;
-    cResult[6] = C;
+    cResult[6] = fn3;
     cResult[7] = items1;
     tmp16 = items1;
-    tmp15 = C;
+    tmp15 = fn3;
   } else {
-    class C {
-      constructor() {
-        interval = new closure_0(closure_1_2[7]).Interval();
-        closure_0 = interval;
-        startResult = interval.start(SECOND, () => {
-          const timestamp = Date.now();
-          const rounded = Math.floor(timestamp / DurationsDefault.Millis.SECOND);
-          interval(rounded * DurationsDefault.Millis.SECOND);
-        });
-        return () => interval.stop();
-      }
-    }
+    tmp15 = cResult[6];
     tmp16 = cResult[7];
   }
   const effect = obj3.useEffect(tmp15, tmp16);
   if (cResult[8] === tmp8) {
-    class C {
-      constructor() {
-        interval = new closure_0(closure_1_2[7]).Interval();
-        closure_0 = interval;
-        startResult = interval.start(SECOND, () => {
-          const timestamp = Date.now();
-          const rounded = Math.floor(timestamp / DurationsDefault.Millis.SECOND);
-          interval(rounded * DurationsDefault.Millis.SECOND);
-        });
-        return () => interval.stop();
-      }
+    let tmp18;
+    if (cResult[9] === tmp13) {
+      tmp18 = cResult[10];
     }
-    return obj4;
+    return tmp18;
   }
-  obj4 = { now: tmp8, slowTickMode: tmp13 };
+  const obj4 = { now: tmp8, slowTickMode: tmp13 };
   cResult[8] = tmp8;
   cResult[9] = tmp13;
   cResult[10] = obj4;
-}) : (() => {
+  tmp18 = obj4;
+}) : (function useTimestampTickedNow() {
   let _undefined;
   let closure_0;
   let hovered;

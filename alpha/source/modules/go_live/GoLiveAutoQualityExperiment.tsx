@@ -1,16 +1,16 @@
-// Module ID: 9648
-// Function ID: 9649
+// Module ID: 10843
+// Function ID: 10844
 // Name: GoLiveAutoQualityExperiment
-// Dependencies: [1246, 4942, 4943, 1441, 558, 576, 504, 510, 5038, 2]
+// Dependencies: [1258, 5269, 5210, 1453, 558, 576, 504, 510, 7438, 2]
 // Exports: getGoLiveAutoQualityExperimentConfig, maybeMigrateToAutoQuality
 
-// Module 9648 (GoLiveAutoQualityExperiment)
+// Module 10843 (GoLiveAutoQualityExperiment)
 import Storage3 from "Storage" /* 510 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 4943 */;
-import StreamActionCreators from "StreamActionCreators" /* 5038 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4942 */;
-import ApexExperiment from "apex/ApexExperiment" /* 1441 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5210 */;
+import StreamActionCreators from "StreamActionCreators" /* 7438 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1258 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5269 */;
+import ApexExperiment from "apex/ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ function getGoLiveAutoQualityExperimentConfig(location) {
   const obj = { location: location.location };
   return closure_6.getConfig(obj);
 }
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGoLiveAutoQualityExperimentConfig(location) {
   let _location;
   let config;
   let first;
@@ -60,7 +60,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((location) => {
+}) : (function useGoLiveAutoQualityExperimentConfig(location) {
   let config;
   location = location.location;
   let obj = location(504);

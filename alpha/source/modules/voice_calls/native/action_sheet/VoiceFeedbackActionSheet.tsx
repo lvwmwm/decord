@@ -1,22 +1,22 @@
-// Module ID: 17536
-// Function ID: 17537
+// Module ID: 17818
+// Function ID: 17819
 // Name: VoiceFeedbackActionSheet
-// Dependencies: [19, 1085, 11262, 21, 1252, 1126, 2783, 11265, 17530, 17537, 17531, 4860, 17532, 1987, 4573, 2]
+// Dependencies: [19, 1085, 9602, 21, 1264, 1126, 2827, 9605, 17812, 17819, 17813, 5054, 17814, 1999, 4765, 2]
 // Exports: default
 
-// Module 17536 (VoiceFeedbackActionSheet)
+// Module 17818 (VoiceFeedbackActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants2 from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import _modDef2783 from "module_2783" /* 2783 */;
-import ToastUtils from "ToastUtils" /* 4573 */;
-import FeedbackUtils from "FeedbackUtils" /* 11265 */;
-import FeedbackActionSheetV2Default from "FeedbackActionSheetV2" /* 17530 */;
-import shouldShowLogUploadForCategory from "shouldShowLogUploadForCategory" /* 17531 */;
-import trackVoiceFeedbackDefault from "trackVoiceFeedback" /* 17537 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import _modDef2827 from "module_2827" /* 2827 */;
+import ToastUtils from "ToastUtils" /* 4765 */;
+import FeedbackUtils from "FeedbackUtils" /* 9605 */;
+import FeedbackActionSheetV2Default from "FeedbackActionSheetV2" /* 17812 */;
+import shouldShowLogUploadForCategory from "shouldShowLogUploadForCategory" /* 17813 */;
+import trackVoiceFeedbackDefault from "trackVoiceFeedback" /* 17819 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 11262 */;
+import Constants from "Constants" /* 9602 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -59,35 +59,35 @@ export default function VoiceFeedbackActionSheet(analyticsData) {
   const intl = analyticsData(1126).intl;
   const stringResult = intl.string(analyticsData(1126).t.Ss6tlb);
   const intl2 = analyticsData(1126).intl;
-  let obj = { value: constants3.CONNECTION, label: intl3.string(_modDef2783.FVhMw6), problemsHeader: intl4.string(analyticsData(1126).t.FJmoxF), problemOptions: obj2.getConnectionFeedbackOptions(), freeformConfig: obj3 };
+  let obj = { value: constants3.CONNECTION, label: intl3.string(_modDef2827.FVhMw6), problemsHeader: intl4.string(analyticsData(1126).t.FJmoxF), problemOptions: obj2.getConnectionFeedbackOptions(), freeformConfig: obj3 };
   const stringResult1 = intl2.string(analyticsData(1126).t.tLi4cR);
   intl3 = analyticsData(1126).intl;
   intl4 = analyticsData(1126).intl;
-  obj2 = analyticsData(11265);
+  obj2 = analyticsData(9605);
   obj3 = { value: constants2.FREEFORM, label: intl5.string(analyticsData(1126).t.emlT91) };
   intl5 = analyticsData(1126).intl;
-  let obj4 = { value: constants3.AUDIO, label: intl6.string(_modDef2783.PL2l6A), problemsHeader: intl7.string(analyticsData(1126).t.FJmoxF), problemOptions: obj5.getAudioFeedbackOptions({ isMobile: true }), freeformConfig: obj6 };
+  let obj4 = { value: constants3.AUDIO, label: intl6.string(_modDef2827.PL2l6A), problemsHeader: intl7.string(analyticsData(1126).t.FJmoxF), problemOptions: obj5.getAudioFeedbackOptions({ isMobile: true }), freeformConfig: obj6 };
   intl6 = analyticsData(1126).intl;
   intl7 = analyticsData(1126).intl;
-  obj5 = analyticsData(11265);
+  obj5 = analyticsData(9605);
   obj6 = { value: constants.FREEFORM, label: intl8.string(analyticsData(1126).t.emlT91) };
   intl8 = analyticsData(1126).intl;
-  let obj7 = { value: constants3.VIDEO, label: intl9.string(_modDef2783["0WFzPh"]), problemsHeader: intl10.string(analyticsData(1126).t.FJmoxF), problemOptions: obj8.getVideoFeedbackOptions(), freeformConfig: obj9 };
+  let obj7 = { value: constants3.VIDEO, label: intl9.string(_modDef2827["0WFzPh"]), problemsHeader: intl10.string(analyticsData(1126).t.FJmoxF), problemOptions: obj8.getVideoFeedbackOptions(), freeformConfig: obj9 };
   intl9 = analyticsData(1126).intl;
   intl10 = analyticsData(1126).intl;
-  obj8 = analyticsData(11265);
+  obj8 = analyticsData(9605);
   obj9 = { value: constants6.FREEFORM, label: intl11.string(analyticsData(1126).t.emlT91) };
   intl11 = analyticsData(1126).intl;
-  const obj10 = { value: constants3.PEOPLE, label: intl12.string(_modDef2783.Moa3W9), problemsHeader: intl13.string(analyticsData(1126).t.FJmoxF), problemOptions: obj11.getPeopleFeedbackOptions(), freeformConfig: obj12 };
+  const obj10 = { value: constants3.PEOPLE, label: intl12.string(_modDef2827.Moa3W9), problemsHeader: intl13.string(analyticsData(1126).t.FJmoxF), problemOptions: obj11.getPeopleFeedbackOptions(), freeformConfig: obj12 };
   intl12 = analyticsData(1126).intl;
   intl13 = analyticsData(1126).intl;
-  obj11 = analyticsData(11265);
+  obj11 = analyticsData(9605);
   obj12 = { value: constants5.FREEFORM, label: intl14.string(analyticsData(1126).t.emlT91) };
   intl14 = analyticsData(1126).intl;
   FeedbackActionSheetV2Default;
   const intl15 = analyticsData(1126).intl;
   const items = [obj, obj4, obj7, obj10];
-  return <tmp3 headerLabel={stringResult} showHeaderCloseButton ratingBody={stringResult1} categoriesHeader={intl15.string(_modDef2783.tq8598)} optionsTree={items} trackOpen={trackOpen} trackReport={function trackReport(dontShowAgain) {
+  return <tmp3 headerLabel={stringResult} showHeaderCloseButton ratingBody={stringResult1} categoriesHeader={intl15.string(_modDef2827.tq8598)} optionsTree={items} trackOpen={trackOpen} trackReport={function trackReport(dontShowAgain) {
     let category;
     let feedback;
     let rating;
@@ -129,8 +129,8 @@ export default function VoiceFeedbackActionSheet(analyticsData) {
         if (obj3.shouldShowLogUploadForCategory(rating, category, reason)) {
           const obj7 = { mediaSessionId: null, rtcConnectionId: null };
           ({ media_session_id: obj6.mediaSessionId, rtc_connection_id: obj6.rtcConnectionId } = tmp7);
-          const tmp20Result = tmp20(4860);
-          tmp20Result.openLazy(asyncRequire(17532, dependencyMap.paths), "UploadLogs", obj7);
+          const tmp20Result = tmp20(5054);
+          tmp20Result.openLazy(asyncRequire(17814, dependencyMap.paths), "UploadLogs", obj7);
         }
       }
       const obj4 = ToastUtils;

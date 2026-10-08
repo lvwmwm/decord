@@ -1,27 +1,27 @@
-// Module ID: 10895
-// Function ID: 10896
+// Module ID: 10546
+// Function ID: 10547
 // Name: BadgeArtImage
-// Dependencies: [19, 17, 21, 558, 576, 1369, 8497, 5981, 8169, 2]
+// Dependencies: [19, 17, 21, 558, 576, 1381, 8981, 6164, 7550, 2]
 
-// Module 10895 (BadgeArtImage)
+// Module 10546 (BadgeArtImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import inlineStyles from "inlineStyles" /* 8169 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import inlineStyles from "inlineStyles" /* 7550 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault, obj1;
+let _require;
 
 function ignoreSvgError() {
 
 }
 const View = react_native.View;
 const jsx = Fragment.jsx;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeArtImage(arg0) {
   let animated;
   let enableAnimation;
   let fallbackUrl;
@@ -45,7 +45,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[1] === width) {
       tmp5 = cResult[2];
     }
-    importDefault = tmp5;
+    style = tmp5;
     if (cResult[3] === tmp4) {
       let tmp6;
       if (cResult[4] === tmp5) {
@@ -66,100 +66,32 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   tmp8 = cResult[14];
                 }
                 if (cResult[15] === tmp7) {
-                  let tmp15;
+                  let tmp14;
                   if (cResult[16] === tmp8) {
-                    tmp15 = cResult[17];
+                    tmp14 = cResult[17];
                   }
-                  return tmp15;
-                }
-                class E {
-                  constructor(arg0) {
-                    tmp = animated;
-                    if (tmp) {
-                      tmp3 = closure_2;
-                      tmp2 = closure_0;
-                      obj = closure_0(closure_2[5]);
-                      if (obj.isAndroid()) {
-                        tmp5 = jsx;
-                        tmp6 = closure_2;
-                        obj1 = { url: null, style: null, autoplay: true };
-                        obj1.url = arg0;
-                        tmp7 = closure_1;
-                        obj1.style = closure_1;
-                        tmp4 = jsx(tmp2(closure_2[6]).APNGPlayer, obj1);
-                      }
-                      return tmp4;
-                    }
-                    obj4 = { source: { uri: arg0 }, style: closure_1, resizeMode: "contain", enableAnimation: tmp };
-                    tmp4 = jsx(closure_1(closure_2[7]), obj4);
-                    return;
-                  }
+                  return tmp14;
                 }
                 const tmp17 = <View style={tmp7} aria-hidden>{tmp8}</View>;
                 cResult[15] = tmp7;
                 cResult[16] = tmp8;
                 cResult[17] = tmp17;
-                tmp15 = tmp17;
+                tmp14 = tmp17;
               }
             }
           }
         }
-        const first = url.split(/[?#]/)[0];
-        class E {
-          constructor(arg0) {
-            tmp = animated;
-            if (tmp) {
-              tmp3 = closure_2;
-              tmp2 = closure_0;
-              obj = closure_0(closure_2[5]);
-              if (obj.isAndroid()) {
-                tmp5 = jsx;
-                tmp6 = closure_2;
-                obj1 = { url: null, style: null, autoplay: true };
-                obj1.url = arg0;
-                tmp7 = closure_1;
-                obj1.style = closure_1;
-                tmp4 = jsx(tmp2(closure_2[6]).APNGPlayer, obj1);
-              }
-              return tmp4;
-            }
-            obj4 = { source: { uri: arg0 }, style: closure_1, resizeMode: "contain", enableAnimation: tmp };
-            tmp4 = jsx(closure_1(closure_2[7]), obj4);
-            return;
-          }
-        }
-        if (obj3.endsWith(".svg")) {
-          size = { uri: url, width: null, height, onError: ignoreSvgError, fallback: tmp6Result };
-          const tmp11 = jsx;
-          class E {
-            constructor(arg0) {
-              tmp = animated;
-              if (tmp) {
-                tmp3 = closure_2;
-                tmp2 = closure_0;
-                obj = closure_0(closure_2[5]);
-                if (obj.isAndroid()) {
-                  tmp5 = jsx;
-                  tmp6 = closure_2;
-                  obj1 = { url: null, style: null, autoplay: true };
-                  obj1.url = arg0;
-                  tmp7 = closure_1;
-                  obj1.style = closure_1;
-                  tmp4 = jsx(tmp2(closure_2[6]).APNGPlayer, obj1);
-                }
-                return tmp4;
-              }
-              obj4 = { source: { uri: arg0 }, style: closure_1, resizeMode: "contain", enableAnimation: tmp };
-              tmp4 = jsx(closure_1(closure_2[7]), obj4);
-              return;
-            }
-          }
+        const str = url.split(/[?#]/)[0];
+        const formatted = str.toLowerCase();
+        if (formatted.endsWith(".svg")) {
+          size = { uri: url, width, height, onError: ignoreSvgError, fallback: tmp6Result };
           tmp6Result = undefined;
-          const SvgUri = tmp(8169).SvgUri;
+          const SvgUri = tmp(7550).SvgUri;
+          const tmp10 = jsx;
           if (null != fallbackUrl) {
             tmp6Result = tmp6(fallbackUrl);
           }
-          tmp6Result1 = tmp11(SvgUri, size);
+          tmp6Result1 = tmp10(SvgUri, size);
         } else {
           tmp6Result1 = tmp6(url);
         }
@@ -171,70 +103,35 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         cResult[14] = tmp6Result1;
         tmp8 = tmp6Result1;
       }
-      const items = [, ];
-      class E {
-        constructor(arg0) {
-          tmp = animated;
-          if (tmp) {
-            tmp3 = closure_2;
-            tmp2 = closure_0;
-            obj = closure_0(closure_2[5]);
-            if (obj.isAndroid()) {
-              tmp5 = jsx;
-              tmp6 = closure_2;
-              obj1 = { url: null, style: null, autoplay: true };
-              obj1.url = arg0;
-              tmp7 = closure_1;
-              obj1.style = closure_1;
-              tmp4 = jsx(tmp2(closure_2[6]).APNGPlayer, obj1);
-            }
-            return tmp4;
-          }
-          obj4 = { source: { uri: arg0 }, style: closure_1, resizeMode: "contain", enableAnimation: tmp };
-          tmp4 = jsx(closure_1(closure_2[7]), obj4);
-          return;
-        }
-      }
-      items[1] = style;
+      const items = [tmp5, style];
       cResult[6] = tmp5;
       cResult[7] = style;
       cResult[8] = items;
       tmp7 = items;
     }
-    class E {
-      constructor(arg0) {
-        tmp = animated;
-        if (tmp) {
-          tmp3 = closure_2;
-          tmp2 = closure_0;
-          obj = closure_0(closure_2[5]);
-          if (obj.isAndroid()) {
-            tmp5 = jsx;
-            tmp6 = closure_2;
-            obj1 = { url: null, style: null, autoplay: true };
-            obj1.url = arg0;
-            tmp7 = closure_1;
-            obj1.style = closure_1;
-            tmp4 = jsx(tmp2(closure_2[6]).APNGPlayer, obj1);
-          }
-          return tmp4;
+    function raster(uri) {
+      if (enableAnimation) {
+        let tmp4;
+        const obj = PlatformUtils;
+        const tmp2 = require;
+        if (obj.isAndroid()) {
+          tmp4 = jsx(tmp2(8981).APNGPlayer, { url: uri, style, autoplay: true });
         }
-        obj4 = { source: { uri: arg0 }, style: closure_1, resizeMode: "contain", enableAnimation: tmp };
-        tmp4 = jsx(closure_1(closure_2[7]), obj4);
-        return;
+        return tmp4;
       }
+      tmp4 = jsx(FastImageDefault, { source: { uri }, style, resizeMode: "contain", enableAnimation });
     }
     cResult[3] = tmp4;
     cResult[4] = tmp5;
-    cResult[5] = E;
-    tmp6 = E;
+    cResult[5] = raster;
+    tmp6 = raster;
   }
   const size1 = { width, height };
   cResult[0] = height;
   cResult[1] = width;
   cResult[2] = size1;
   tmp5 = size1;
-}) : ((style) => {
+}) : (function BadgeArtImage(style) {
   let animated;
   let fallbackUrl;
   let height;
@@ -266,7 +163,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const tmp8Result = PlatformUtils;
         if (tmp8Result.isAndroid()) {
           const obj2 = { url: fallbackUrl, style: size, autoplay: true };
-          tmpResult = tmp(tmp8(8497).APNGPlayer, obj2);
+          tmpResult = tmp(tmp8(8981).APNGPlayer, obj2);
         }
         tmp12 = tmpResult;
       }
@@ -281,7 +178,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const tmp3 = require;
       if (obj4.isAndroid()) {
         const obj6 = { url, style: size, autoplay: true };
-        tmpResult2 = tmp(tmp3(8497).APNGPlayer, obj6);
+        tmpResult2 = tmp(tmp3(8981).APNGPlayer, obj6);
       }
     }
     const obj7 = { source: obj8, style: size, resizeMode: "contain", enableAnimation: animated };

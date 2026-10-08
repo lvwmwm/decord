@@ -1,18 +1,18 @@
-// Module ID: 13926
-// Function ID: 13927
+// Module ID: 14229
+// Function ID: 14230
 // Name: IconPill
-// Dependencies: [19, 17, 1096, 21, 4896, 587, 558, 576, 5603, 8941, 2]
+// Dependencies: [19, 17, 1096, 21, 5090, 587, 558, 576, 5377, 8572, 2]
 
-// Module 13926 (IconPill)
+// Module 14229 (IconPill)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
-import IconDefault from "Icon" /* 5603 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8941 */;
+import IconDefault from "Icon" /* 5377 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8572 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ createStyles = createStyles.createStyles;
 obj3 = { tintColor: nativeDefault.colors.TEXT_SUBTLE, marginRight: 4 };
 obj4 = { fontFamily: Fonts.PRIMARY_NORMAL, color: nativeDefault.colors.TEXT_SUBTLE, fontSize: 14, lineHeight: 18 };
 let closure_6 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconPill(arg0) {
   let IconComponent;
   let accessibilityLabel;
   let items;
@@ -119,7 +119,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp3.pillContainer;
   cResult[2] = items2;
   tmp4 = items2;
-}) : ((IconComponent) => {
+}) : (function IconPill(IconComponent) {
   let accessibilityLabel;
   let items;
   let items1;

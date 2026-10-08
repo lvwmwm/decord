@@ -1,17 +1,17 @@
-// Module ID: 12311
-// Function ID: 12312
+// Module ID: 12409
+// Function ID: 12410
 // Name: useProvisionalAccountApplication
-// Dependencies: [7155, 558, 576, 504, 6670, 2]
+// Dependencies: [7335, 558, 576, 504, 6847, 2]
 
-// Module 12311 (useProvisionalAccountApplication)
-import GameRelationshipStore from "GameRelationshipStore" /* 7155 */;
+// Module 12409 (useProvisionalAccountApplication)
+import GameRelationshipStore from "GameRelationshipStore" /* 7335 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProvisionalAccountApplication(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -40,7 +40,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
   const tmpResult2 = require("useGetOrFetchApplications");
   return tmpResult2.useGetOrFetchApplication(stateFromStores);
-}) : ((arg0) => {
+}) : (function useProvisionalAccountApplication(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GameRelationshipStore];

@@ -1,21 +1,21 @@
-// Module ID: 11179
-// Function ID: 11180
+// Module ID: 11296
+// Function ID: 11297
 // Name: ChannelsAndRolesModal
-// Dependencies: [32, 19, 17, 2074, 6603, 21, 4896, 587, 558, 576, 573, 6848, 1126, 9317, 9318, 11180, 11186, 10674, 2]
+// Dependencies: [32, 19, 17, 2086, 6779, 21, 5090, 587, 558, 576, 573, 7035, 1126, 8505, 8752, 11297, 11303, 9587, 2]
 
-// Module 11179 (ChannelsAndRolesModal)
+// Module 11296 (ChannelsAndRolesModal)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6603 */;
-import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 6848 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10674 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6779 */;
+import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7035 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 9587 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ createStyles = createStyles.createStyles;
 obj3 = { paddingHorizontal: nativeDefault.space.PX_12, paddingTop: nativeDefault.space.PX_16 };
 let closure_10 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelsAndRolesScreen(guildId) {
   let closure_1;
   let closure_3;
   let first;
@@ -138,7 +138,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
     }
   }
-  const fn = function y() {
+  const fn = function x() {
     const tmp = closure_1 || first1 !== GuildOnboardingTab.CUSTOMIZE;
     if (!tmp) {
       closure_3(GuildOnboardingTab.BROWSE);
@@ -151,7 +151,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[8] = first1;
   cResult[9] = fn;
   cResult[10] = items2;
-}) : ((guildId) => {
+}) : (function ChannelsAndRolesScreen(guildId) {
   let closure_1;
   let closure_3;
   let items1;
@@ -214,7 +214,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   return tmp14(View, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelsAndRolesModal(guildId) {
   let first;
   let tmp10;
   let tmp6;
@@ -241,7 +241,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   }
   const tmpResult = guildId(573);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  const tmp9 = defaultTab(6848)(stateFromStores);
+  const tmp9 = defaultTab(7035)(stateFromStores);
   const tmp8 = defaultTab;
   if (cResult[3] !== tmp9) {
     let stringResult;
@@ -272,7 +272,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       return tmp13;
     }
     const obj2 = { screenKey: "channelAndRolesModal", title: tmp10, render: tmp12 };
-    const tmp15 = closure_8(tmp8(10674), obj2);
+    const tmp15 = closure_8(tmp8(9587), obj2);
     cResult[8] = tmp10;
     cResult[9] = tmp12;
     cResult[10] = tmp15;
@@ -288,7 +288,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[6] = guildId;
   cResult[7] = I;
   tmp12 = I;
-}) : ((arg0) => {
+}) : (function ChannelsAndRolesModal(arg0) {
   let defaultTab;
   let guildId;
   let stringResult;

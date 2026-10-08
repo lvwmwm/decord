@@ -1,9 +1,9 @@
-// Module ID: 9145
-// Function ID: 9146
+// Module ID: 5219
+// Function ID: 5220
 // Name: ExternalPip
 // Dependencies: [17, 2]
 
-// Module 9145 (ExternalPip)
+// Module 5219 (ExternalPip)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 

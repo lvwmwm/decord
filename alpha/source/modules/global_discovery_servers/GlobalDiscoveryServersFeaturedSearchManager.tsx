@@ -1,14 +1,14 @@
-// Module ID: 18067
-// Function ID: 18068
+// Module ID: 18354
+// Function ID: 18355
 // Name: GlobalDiscoveryServersFeaturedSearchManager
-// Dependencies: [5, 13533, 9284, 1085, 6620, 18068, 584, 1282, 1478, 18069, 6854, 2]
+// Dependencies: [5, 13830, 8615, 1085, 6797, 18355, 584, 1294, 1490, 18356, 7042, 2]
 
-// Module 18067 (GlobalDiscoveryServersFeaturedSearchManager)
+// Module 18354 (GlobalDiscoveryServersFeaturedSearchManager)
 import Constants from "Constants" /* 1085 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9284 */;
-import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 13533 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8615 */;
+import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 13830 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6620 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6797 */;
 import size from "module_2" /* 2 */;
 
 let categoryId, closure_1, closure_4, constants;

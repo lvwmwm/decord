@@ -1,37 +1,37 @@
-// Module ID: 11826
-// Function ID: 11827
+// Module ID: 11911
+// Function ID: 11912
 // Name: PrivateChannelUserList
-// Dependencies: [32, 19, 17, 2051, 4525, 1377, 1085, 21, 558, 576, 6664, 504, 12, 1375, 11224, 11227, 11226, 4586, 587, 11827, 1126, 8346, 11828, 7861, 10611, 2]
+// Dependencies: [32, 19, 17, 2063, 4717, 1389, 1085, 21, 558, 576, 6841, 504, 12, 1387, 11339, 11342, 11341, 4778, 587, 11912, 1126, 9005, 11913, 8279, 10208, 2]
 
-// Module 11826 (PrivateChannelUserList)
+// Module 11911 (PrivateChannelUserList)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1126 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
-import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 11828 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
+import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 11913 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let arr1, channelId, valueResult;
+let arr1, valueResult;
 
 let c10;
 let c9;
 let closure_12;
 let tmp;
 let unpackModuleId;
-const NitroWheelIcon2 = tmp(8346);
+const NitroWheelIcon2 = tmp(9005);
 const View = react_native.View;
 ({ RelationshipTypes: c9, MAX_GROUP_DM_PARTICIPANTS: c10 } = Constants);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function PrivateChannelUserList(channelId) {
   let disableBottomSafeZone;
   let disableStickySections;
   let first;
@@ -539,7 +539,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   cResult[7] = stateFromStores;
   cResult[8] = !tmp4;
   cResult[9] = obj2;
-}) : ((channelId) => {
+}) : (function PrivateChannelUserList(channelId) {
   let _undefined;
   let c16;
   let disableBottomSafeZone;

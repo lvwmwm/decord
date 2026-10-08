@@ -1,25 +1,25 @@
-// Module ID: 14629
-// Function ID: 14630
+// Module ID: 14890
+// Function ID: 14891
 // Name: AccountIgnoredUsersSetting
-// Dependencies: [4525, 7645, 1085, 558, 576, 504, 1126, 11142, 6463, 14630, 2]
+// Dependencies: [4717, 7966, 1085, 558, 576, 504, 1126, 11262, 6641, 14891, 2]
 
-// Module 14629 (AccountIgnoredUsersSetting)
+// Module 14890 (AccountIgnoredUsersSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import EyeSlashIcon from "EyeSlashIcon" /* 6463 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
+import EyeSlashIcon from "EyeSlashIcon" /* 6641 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserSettingsSections = Constants.UserSettingsSections;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccountIgnoredUsersSettingDescription() {
   let ignoredIDs;
   let tmp4;
   let tmp5;
@@ -51,7 +51,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[3];
   }
   return tmp7;
-}) : (() => {
+}) : (function useAccountIgnoredUsersSettingDescription() {
   let ignoredIDs;
   const items = [RelationshipStore];
   const obj = get_initialized;

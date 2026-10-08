@@ -1,12 +1,12 @@
-// Module ID: 9079
-// Function ID: 9080
+// Module ID: 10609
+// Function ID: 10610
 // Name: getApplicationIdsForGame
-// Dependencies: [5124, 2007, 558, 576, 504, 2]
+// Dependencies: [5436, 2019, 558, 576, 504, 2]
 // Exports: default
 
-// Module 9079 (getApplicationIdsForGame)
-import ApplicationStore from "ApplicationStore" /* 5124 */;
-import GameStore from "GameStore" /* 2007 */;
+// Module 10609 (getApplicationIdsForGame)
+import ApplicationStore from "ApplicationStore" /* 5436 */;
+import GameStore from "GameStore" /* 2019 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ function getApplicationIdsForGame(gameId) {
   }
   return set;
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplicationIdsForGame(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -61,7 +61,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function s() {
+    const fn = function l() {
       const _Array = Array;
       set = new Set();
       if (null != closure_0) {
@@ -104,7 +104,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresArray(first, tmp7, tmp8);
-}) : ((arg0) => {
+}) : (function useApplicationIdsForGame(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GameStore, ApplicationStore];

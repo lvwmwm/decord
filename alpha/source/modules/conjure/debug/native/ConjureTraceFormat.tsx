@@ -1,23 +1,21 @@
-// Module ID: 16782
-// Function ID: 16783
+// Module ID: 17057
+// Function ID: 17058
 // Name: ConjureTraceFormat
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 16783, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 17058, 2]
 
-// Module 16782 (ConjureTraceFormat)
+// Module 17057 (ConjureTraceFormat)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let status;
-
 let obj2;
 let tmp;
-const debug_ConjureTraceFormat = tmp(16783);
+const debug_ConjureTraceFormat = tmp(17058);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -45,7 +43,7 @@ const obj13 = { dot: { width: 8, height: 8, borderRadius: 4 }, started: { backgr
 ({ backgroundColor: nativeDefault.colors.STATUS_POSITIVE });
 ({ backgroundColor: nativeDefault.colors.STATUS_DANGER });
 let closure_4 = createStyles3(obj13);
-const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
+const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraceStatusDot(status) {
   const obj = react2;
   const cResult = obj.c(8);
   status = status.status;
@@ -83,7 +81,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
   cResult[1] = tmp4[status];
   cResult[2] = items;
   tmp6 = items;
-}) : ((status) => {
+}) : (function TraceStatusDot(status) {
   status = status.status;
   const tmp = closure_4();
   const items = [tmp.dot, tmp[status]];

@@ -1,17 +1,17 @@
-// Module ID: 16971
-// Function ID: 16972
+// Module ID: 17252
+// Function ID: 17253
 // Name: FriendRequestsSettingsScreen
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 5918, 16972, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 10211, 17253, 2]
 
-// Module 16971 (FriendRequestsSettingsScreen)
+// Module 17252 (FriendRequestsSettingsScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5918 */;
-import UserSettingsFriendRequestsDefault from "UserSettingsFriendRequests" /* 16972 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10211 */;
+import UserSettingsFriendRequestsDefault from "UserSettingsFriendRequests" /* 17253 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ const ScrollView = react_native.ScrollView;
 let obj = { container: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, flex: 1, paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
 let closure_7 = createStyles.createStyles(obj);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FriendRequestsSettingsScreen() {
   let first;
   let items;
   let tmp12;
@@ -59,7 +59,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp12 = cResult[3];
   }
   return tmp12;
-}) : (() => {
+}) : (function FriendRequestsSettingsScreen() {
   let items;
   const obj = { children: items };
   items = [, ];

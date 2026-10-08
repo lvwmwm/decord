@@ -1,21 +1,21 @@
-// Module ID: 15378
-// Function ID: 15379
+// Module ID: 15640
+// Function ID: 15641
 // Name: UploadDebugLogsSetting
-// Dependencies: [5, 17, 1085, 21, 570, 1259, 558, 576, 1369, 12543, 4574, 4818, 1126, 11142, 2]
+// Dependencies: [5, 17, 1085, 21, 570, 1271, 558, 576, 1381, 12641, 4766, 5012, 1126, 11262, 2]
 
-// Module 15378 (UploadDebugLogsSetting)
+// Module 15640 (UploadDebugLogsSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4818 */;
-import DebugUploadManager from "DebugUploadManager" /* 12543 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5012 */;
+import DebugUploadManager from "DebugUploadManager" /* 12641 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2;
@@ -136,16 +136,16 @@ const jsx = Fragment.jsx;
 let closure_7 = module_570.create(() => ({ isDisabled: false, isUploading: false }));
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const f70461 = () => {
+function useIsUploadingDebugLogs() {
 
-};
+}
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUploadDebugLogsTrailing() {
   obj = react;
   const cResult = obj.c(2);
-  if (typeof f70461 === "function") {
+  if (typeof useIsUploadingDebugLogs === "function") {
     let tmp3;
     const isUploading = closure_7().isUploading;
     if (cResult[0] !== isUploading) {
@@ -163,8 +163,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-}) : (() => {
-  if (typeof f70461 === "function") {
+}) : (function useUploadDebugLogsTrailing() {
+  if (typeof useIsUploadingDebugLogs === "function") {
     let tmp2 = null;
     if (closure_7().isUploading) {
       tmp2 = <ActivityIndicator />;
@@ -174,7 +174,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     throw new TypeError("Trying to call a non-function");
   }
 });
-const fn = () => closure_7().isDisabled;
+function useIsUploadDebugLogsDisabled() {
+  return closure_7().isDisabled;
+}
 obj = {
   useTitle() {
     const intl = intl3.intl;
@@ -186,7 +188,7 @@ obj = {
     return obj(...arguments);
   },
   useTrailing: tmp4,
-  useIsDisabled: fn
+  useIsDisabled: useIsUploadDebugLogsDisabled
 };
 const pressable = SettingBuilders.createPressable(obj);
 const result2 = size.fileFinishedImporting("modules/user_settings/defs/native/UploadDebugLogsSetting.tsx");

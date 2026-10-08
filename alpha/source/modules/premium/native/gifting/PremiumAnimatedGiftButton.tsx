@@ -1,15 +1,15 @@
-// Module ID: 11893
-// Function ID: 11894
+// Module ID: 11966
+// Function ID: 11967
 // Name: PremiumAnimatedGiftButton
-// Dependencies: [19, 4885, 21, 4896, 587, 558, 576, 4586, 504, 1369, 4618, 5927, 5916, 2]
+// Dependencies: [19, 5079, 21, 5090, 587, 558, 576, 4778, 504, 1381, 4810, 6110, 6189, 2]
 
-// Module 11893 (PremiumAnimatedGiftButton)
+// Module 11966 (PremiumAnimatedGiftButton)
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import createStyles from "createStyles" /* 4896 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let closure_7 = createStyles.createStyles((width, marginHorizontal) => {
   size = { width, height: width, borderRadius: nativeDefault.radii.sm, marginHorizontal, display: "flex", alignItems: "center", justifyContent: "center" };
   return obj;
 });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumAnimatedGiftButton(arg0) {
   let accessibilityState;
   let active;
   let activeStyle;
@@ -72,7 +72,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult = tmp(504);
   stateFromStores = tmpResult.useStateFromStores(tmp10, tmp11);
   if (cResult[2] !== stateFromStores) {
-    class E {
+    class B {
       constructor() {
         tmp = closure_1;
         if (!tmp) {
@@ -105,9 +105,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return closure_1_5.useReducedMotion;
       }
     }
-    tmp14 = E;
+    tmp14 = B;
   } else {
-    class E {
+    class B {
       constructor() {
         tmp = closure_1;
         if (!tmp) {
@@ -136,7 +136,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   if (cResult[4] === channelId) {
-    class E {
+    class B {
       constructor() {
         tmp = closure_1;
         if (!tmp) {
@@ -170,7 +170,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     if (!stateFromStores) {
-      class E {
+      class B {
         constructor() {
           tmp = closure_1;
           if (!tmp) {
@@ -199,7 +199,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     if (active) {
-      class E {
+      class B {
         constructor() {
           tmp = closure_1;
           if (!tmp) {
@@ -228,7 +228,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     if (active) {
-      class E {
+      class B {
         constructor() {
           tmp = closure_1;
           if (!tmp) {
@@ -257,7 +257,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     if (cResult[7] === style) {
-      class E {
+      class B {
         constructor() {
           tmp = closure_1;
           if (!tmp) {
@@ -295,7 +295,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = channelId;
   cResult[5] = stateFromStores;
   cResult[6] = items2;
-}) : ((arg0) => {
+}) : (function PremiumAnimatedGiftButton(arg0) {
   let accessibilityState;
   let active;
   let activeStyle;
@@ -349,19 +349,19 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }, items1);
   let FadeOut;
-  const View = stateFromStores(4618).View;
+  const View = stateFromStores(4810).View;
   if (!stateFromStores) {
-    FadeOut = tmp(4618).FadeOut;
+    FadeOut = tmp(4810).FadeOut;
   }
   const items2 = [tmp7.containerRefresh, style, ];
-  const PressableOpacity = tmp(5916).PressableOpacity;
+  const PressableOpacity = tmp(6189).PressableOpacity;
   if (active) {
     active = !disabled;
   }
   if (active) {
     active = activeStyle;
   }
-  ({ style: items2, hitSlop: tmp14, accessibilityRole: "button", accessibilityState: obj7, children: jsx(tmp3(5927), obj8) });
+  ({ style: items2, hitSlop: tmp14, accessibilityRole: "button", accessibilityState: obj7, children: jsx(tmp3(6110), obj8) });
   items2[2] = active;
   tmp14 = undefined;
   if (bound > 0) {

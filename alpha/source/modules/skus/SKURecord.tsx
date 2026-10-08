@@ -1,14 +1,14 @@
-// Module ID: 5703
-// Function ID: 5704
+// Module ID: 6093
+// Function ID: 6094
 // Name: SKURecord
-// Dependencies: [1392, 2009, 5704, 1085, 4467, 5705, 5706, 1390, 2]
+// Dependencies: [1404, 2021, 6094, 1085, 4659, 6095, 6096, 1402, 2]
 
-// Module 5703 (SKURecord)
-import _modDef4467 from "module_4467" /* 4467 */;
-import SKUConstants from "SKUConstants" /* 5704 */;
-import getPricesFromServerDefault from "getPricesFromServer" /* 5705 */;
-import Record from "Record" /* 1392 */;
-import ApplicationRecord from "ApplicationRecord" /* 2009 */;
+// Module 6093 (SKURecord)
+import _modDef4659 from "module_4659" /* 4659 */;
+import SKUConstants from "SKUConstants" /* 6094 */;
+import getPricesFromServerDefault from "getPricesFromServer" /* 6095 */;
+import Record from "Record" /* 1404 */;
+import ApplicationRecord from "ApplicationRecord" /* 2021 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp15;
-const transformSKUTenantMetadataDefault = tmp15(5706);
+const transformSKUTenantMetadataDefault = tmp15(6096);
 const set = SKUConstants.THE_GAME_AWARD_WINNER_SKUS;
 ({ GIFTABLE_CURRENCIES: hasOwnProperty, OperatingSystems: metroRequire, SKUFlags: metroImportDefault, SKUTypes: metroImportAll } = Constants);
 class SKURecord extends Record {
@@ -68,11 +68,11 @@ class SKURecord extends Record {
     }
     tmp6 = null;
     if (null != id.release_date) {
-      tmp6 = _modDef4467(id.release_date);
+      tmp6 = _modDef4659(id.release_date);
     }
     tmp9 = null;
     if (null != id.preorder_release_at) {
-      tmp9 = _modDef4467(id.preorder_release_at);
+      tmp9 = _modDef4659(id.preorder_release_at);
     }
     ({ preorder_approximate_release_date: obj.preorderApproximateReleaseDate, summary: obj.summary } = id);
     new Set(id.features);
@@ -215,7 +215,7 @@ class SKURecord extends Record {
       const tmp = require;
       const tmp3 = metroImportDefault;
       if (!hasFlagResult) {
-        const tmpResult = tmp(1390);
+        const tmpResult = tmp(1402);
         hasFlagResult = tmpResult.hasFlag(self.flags, tmp3.PREMIUM_AND_DISTRIBUTION);
       }
       premium = hasFlagResult;

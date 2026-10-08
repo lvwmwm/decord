@@ -1,19 +1,19 @@
-// Module ID: 15785
-// Function ID: 15786
+// Module ID: 16043
+// Function ID: 16044
 // Name: ShopFlashList
-// Dependencies: [19, 21, 4896, 587, 558, 576, 15748, 8404, 1188, 7915, 1126, 2]
+// Dependencies: [19, 21, 5090, 587, 558, 576, 16006, 8600, 1200, 8334, 1126, 2]
 
-// Module 15785 (ShopFlashList)
+// Module 16043 (ShopFlashList)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import generated_NoResults from "generated/NoResults" /* 7915 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 8404 */;
-import useScrollToInitialIndexOnce2 from "useScrollToInitialIndexOnce" /* 15748 */;
+import native from "native" /* 1200 */;
+import generated_NoResults from "generated/NoResults" /* 8334 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 8600 */;
+import useScrollToInitialIndexOnce2 from "useScrollToInitialIndexOnce" /* 16006 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let obj = { contentContainer: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 let closure_4 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopFlashList(arg0) {
   let data;
   let getItemType;
   let initialScrollIndex;
@@ -67,7 +67,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = null != initialScrollIndex && initialScrollIndex > 0;
   cResult[2] = obj3;
   tmp7 = obj3;
-}) : ((initialScrollIndex) => {
+}) : (function ShopFlashList(initialScrollIndex) {
   let data;
   let getItemType;
   let renderItem;
@@ -86,7 +86,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return jsx(defaultMVCPConfig.FlashList, { ref, data, renderItem, showsVerticalScrollIndicator: false, ListEmptyComponent, initialScrollIndex, getItemType, contentContainerStyle: tmp2.contentContainer });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopEmptyState() {
   let first;
   let tmp5;
   const obj = react2;
@@ -99,7 +99,7 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() =>
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const EmptyState = tmp(1188).EmptyState;
+    const EmptyState = tmp(1200).EmptyState;
     const intl = tmp(1126).intl;
     const tmp7 = <EmptyState style={first} Illustration={generated_NoResults.NoResults} body={intl.string(intl2.t.eAn6z2)} />;
     cResult[1] = tmp7;
@@ -108,7 +108,7 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() =>
     tmp5 = cResult[1];
   }
   return tmp5;
-}) : (() => {
+}) : (function ShopEmptyState() {
   const EmptyState = native.EmptyState;
   const intl = intl2.intl;
   return <EmptyState style={{ marginTop: 42 }} Illustration={generated_NoResults.NoResults} body={intl.string(intl2.t.eAn6z2)} />;

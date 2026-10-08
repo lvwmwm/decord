@@ -1,20 +1,20 @@
-// Module ID: 7470
-// Function ID: 7471
+// Module ID: 13456
+// Function ID: 13457
 // Name: PoggermodeStore
-// Dependencies: [502, 2103, 7175, 7176, 1085, 4510, 2046, 7471, 1121, 504, 584, 2]
+// Dependencies: [502, 2115, 7354, 7355, 1085, 4702, 2058, 13457, 1121, 504, 584, 2]
 // Exports: getComboId, isComboing, shouldTrackMessage
 
-// Module 7470 (PoggermodeStore)
+// Module 13456 (PoggermodeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4510 */;
-import PoggermodeUtils from "PoggermodeUtils" /* 7471 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4702 */;
+import PoggermodeUtils from "PoggermodeUtils" /* 13457 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 7175 */;
-import PoggermodeConstants from "PoggermodeConstants" /* 7176 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 7354 */;
+import PoggermodeConstants from "PoggermodeConstants" /* 7355 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -61,7 +61,7 @@ function updateCombo(userId) {
   if (decayInterval1 == null) {
     const self = this;
     const self2 = this;
-    decayInterval1 = new obj2(2046).Interval();
+    decayInterval1 = new obj2(2058).Interval();
   }
   const result = obj.set("" + userId.userId + "-" + userId.channelId, obj2);
   if (flag) {
@@ -97,17 +97,21 @@ function updateCombo(userId) {
 ({ ShakeLevel: hasOwnProperty, ShakeLocation: metroRequire } = PoggermodeConstants);
 const ComponentActions = Constants.ComponentActions;
 const set = new Set();
-const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap((arg0) => {
+const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(function indexedBy(arg0) {
   const items = [, ];
   ({ userId: arr[0], channelId: arr[1] } = arg0);
   return items;
-}, (channelId) => "" + channelId.channelId + "-" + channelId.userId);
-const secondaryIndexMap1 = new SecondaryIndexMap.SecondaryIndexMap((combo) => {
+}, function sortBy(channelId) {
+  return "" + channelId.channelId + "-" + channelId.userId;
+});
+const secondaryIndexMap1 = new SecondaryIndexMap.SecondaryIndexMap(function indexedBy(combo) {
   const items = [, , ];
   ({ messageId: arr[0], channelId: arr[1] } = combo);
   items[2] = combo.combo.userId;
   return items;
-}, (channelId) => "" + channelId.channelId + "-" + channelId.combo.userId + "-" + channelId.messageId);
+}, function sortBy(channelId) {
+  return "" + channelId.channelId + "-" + channelId.combo.userId + "-" + channelId.messageId;
+});
 const Store = get_initializedDefault.Store;
 class PoggermodeStore extends Store {
   initialize() {

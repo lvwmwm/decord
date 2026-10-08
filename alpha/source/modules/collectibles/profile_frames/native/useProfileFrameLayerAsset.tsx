@@ -1,12 +1,12 @@
-// Module ID: 7905
-// Function ID: 7906
+// Module ID: 8324
+// Function ID: 8325
 // Name: useProfileFrameLayerAsset
-// Dependencies: [5, 32, 19, 17, 6714, 1974, 558, 576, 1886, 7906, 7907, 2]
+// Dependencies: [5, 32, 19, 17, 6891, 1986, 558, 576, 1898, 8325, 8326, 2]
 // Exports: isProfileFrameLayerShown
 
-// Module 7905 (useProfileFrameLayerAsset)
-import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 1974 */;
-import Constants from "Constants" /* 6714 */;
+// Module 8324 (useProfileFrameLayerAsset)
+import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 1986 */;
+import Constants from "Constants" /* 6891 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -15,11 +15,11 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _Promise, _require, c4, c5, frame, nextPromise, num2;
+let _Promise, _require, c4, c5, nextPromise, num2;
 
 let metroImportDefault;
 let metroRequire;
-const f96001 = (arg0) => {
+const f97618 = (arg0) => {
   closure_0 = arg0;
   size = size.getSize(closure_0, (arg0, arg1) => {
     if (arg0 > 0) {
@@ -46,7 +46,7 @@ function measureProfileFrameLayer(arg0) {
     if (null == value2) {
       const self = this;
       const self2 = this;
-      const promise = new Promise(f96001);
+      const promise = new Promise(f97618);
       const cleanupPromise = promise.finally(() => set.delete(closure_0));
       const result = obj.set(arg0, cleanupPromise);
       value2 = cleanupPromise;
@@ -149,7 +149,7 @@ const map1 = new Map();
 const set = new Set();
 const set1 = new Set();
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileFrameLayerAsset(arg0) {
   let layer;
   let skuId;
   let tmp10;
@@ -284,7 +284,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           if (null == resolved) {
             const self = this;
             const self2 = this;
-            const promise = new Promise(f96001);
+            const promise = new Promise(f97618);
             const cleanupPromise = promise.finally(() => set.delete(closure_0));
             const result = obj.set(tmp, cleanupPromise);
             resolved = cleanupPromise;
@@ -302,21 +302,21 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[6] = fn;
     tmp10 = fn;
   }
-  const tmpResult = tmp(1974);
-  const obj3 = { skuId, assetFormat: tmp(1974).CollectiblesItemAssetFormat.STATIC, assetId: layer.id };
+  const tmpResult = tmp(1986);
+  const obj3 = { skuId, assetFormat: tmp(1986).CollectiblesItemAssetFormat.STATIC, assetId: layer.id };
   const collectiblesItemAssetUrl = tmpResult.getCollectiblesItemAssetUrl(obj3);
   cResult[0] = layer;
   cResult[1] = skuId;
   cResult[2] = collectiblesItemAssetUrl;
   tmp4 = collectiblesItemAssetUrl;
-}) : ((width) => {
+}) : (function useProfileFrameLayerAsset(width) {
   let layer;
   let skuId;
   width = width.width;
   let collectiblesItemAssetUrl;
   ({ skuId, layer } = width);
-  obj = collectiblesItemAssetUrl(1974);
-  const obj2 = { skuId, assetFormat: collectiblesItemAssetUrl(1974).CollectiblesItemAssetFormat.STATIC, assetId: layer.id };
+  obj = collectiblesItemAssetUrl(1986);
+  const obj2 = { skuId, assetFormat: collectiblesItemAssetUrl(1986).CollectiblesItemAssetFormat.STATIC, assetId: layer.id };
   collectiblesItemAssetUrl = obj.getCollectiblesItemAssetUrl(obj2);
   let closure_1 = _slicedToArray(react.useReducer((arg0) => arg0 + 1, 0), 2)[1];
   const items = [collectiblesItemAssetUrl];
@@ -334,7 +334,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (null == resolved) {
           const self = this;
           const self2 = this;
-          const promise = new Promise(f96001);
+          const promise = new Promise(f97618);
           const cleanupPromise = promise.finally(() => set.delete(closure_0));
           let result = obj.set(tmp, cleanupPromise);
           resolved = cleanupPromise;
@@ -370,7 +370,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return { assetUrl, imageHeight };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((frame) => {
+const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreloadLayerImages(frame) {
   let closure_5;
   let containerWidth;
   let filterLayer;
@@ -668,7 +668,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((frame) => {
   cResult[13] = frame;
   cResult[14] = num13;
   tmp11 = num13;
-}) : ((frame) => {
+}) : (function usePreloadLayerImages(frame) {
   let containerWidth;
   let profileThemeType;
   frame = frame.frame;

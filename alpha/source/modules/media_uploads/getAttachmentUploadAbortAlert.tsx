@@ -1,13 +1,13 @@
-// Module ID: 8944
-// Function ID: 8945
+// Module ID: 12873
+// Function ID: 12874
 // Name: getAttachmentUploadAbortAlert
-// Dependencies: [1085, 1126, 7256, 2]
+// Dependencies: [1085, 1126, 7732, 2]
 // Exports: getAttachmentUploadAbortAlertContent
 
-// Module 8944 (getAttachmentUploadAbortAlert)
+// Module 12873 (getAttachmentUploadAbortAlert)
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
-import UploadUtils from "UploadUtils" /* 7256 */;
+import UploadUtils from "UploadUtils" /* 7732 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;

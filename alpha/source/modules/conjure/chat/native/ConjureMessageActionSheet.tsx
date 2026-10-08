@@ -1,29 +1,28 @@
-// Module ID: 16676
-// Function ID: 16677
+// Module ID: 16939
+// Function ID: 16940
 // Name: ConjureMessageActionSheet
-// Dependencies: [19, 21, 7861, 4860, 558, 576, 6695, 4574, 1126, 4849, 6704, 11448, 3753, 14926, 6708, 2]
+// Dependencies: [19, 21, 8279, 5054, 558, 576, 6872, 4766, 1126, 5043, 6881, 11431, 3827, 15188, 6885, 2]
 // Exports: openMessageAuthorProfile, showConjureMessageActions
 
-// Module 16676 (ConjureMessageActionSheet)
+// Module 16939 (ConjureMessageActionSheet)
 import intl4 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import CopyIcon from "CopyIcon" /* 4849 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4860 */;
-import ClipboardUtils from "ClipboardUtils" /* 6695 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import CopyIcon from "CopyIcon" /* 5043 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5054 */;
+import ClipboardUtils from "ClipboardUtils" /* 6872 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
-let content;
 
 let closure_4;
 let hasOwnProperty;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let c6 = "conjure-message-actions";
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((content) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMessageActionSheet(content) {
   let Icon;
   let Icon2;
   let Icon3;
@@ -213,7 +212,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((content) => {
   cResult[6] = content;
   cResult[7] = tmp4;
   cResult[8] = tmp9;
-}) : ((content) => {
+}) : (function ConjureMessageActionSheet(content) {
   let Icon;
   let Icon2;
   let Icon3;

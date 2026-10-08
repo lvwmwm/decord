@@ -1,28 +1,27 @@
-// Module ID: 9642
-// Function ID: 9643
+// Module ID: 10837
+// Function ID: 10838
 // Name: LottieIcon
-// Dependencies: [19, 17, 21, 558, 576, 587, 6111, 4602, 4586, 5928, 2]
+// Dependencies: [19, 17, 21, 558, 576, 587, 6291, 4794, 4778, 6111, 2]
 
-// Module 9642 (LottieIcon)
+// Module 10837 (LottieIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import LottieViewDefault from "LottieView" /* 5928 */;
+import LottieViewDefault from "LottieView" /* 6111 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let animation, playResult, playResult1, playResult2, tmp10, tmp11, tmp14, tmp15, tmp4, tmp9;
+let playResult, playResult1, playResult2, tmp10, tmp11, tmp14, tmp15, tmp4, tmp9;
 
 let tmp;
-const useToken = tmp(4586);
-const react3 = tmp(4602);
-const IconSize = tmp(6111);
+const useToken = tmp(4778);
+const react3 = tmp(4794);
+const IconSize = tmp(6291);
 const View = react_native.View;
 const jsx = Fragment.jsx;
-const forwardRef = react.forwardRef;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((animation, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LottieIcon(animation) {
   let autoPlay;
   let color;
   let dotLottie;
@@ -30,6 +29,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let layers;
   let markers;
   let opacity;
+  let ref;
   let tmp7;
   let useLottieDefaultColors;
   let width;
@@ -40,7 +40,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   animation = animation.animation;
   ({ dotLottie, size, color, opacity, markers, layers, autoPlay } = animation);
   let str = "md";
-  ({ width, height, useLottieDefaultColors } = animation);
+  ({ width, height, useLottieDefaultColors, ref } = animation);
   if (undefined !== size) {
     str = size;
   }
@@ -63,15 +63,15 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       let tmp13;
       const _Symbol = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        class R {
+        class F {
           constructor(arg0) {
             return "easteregg" === animation.name;
           }
         }
-        cResult[7] = R;
-        tmp13 = R;
+        cResult[7] = F;
+        tmp13 = F;
       } else {
-        class R {
+        class F {
           constructor(arg0) {
             return "easteregg" === animation.name;
           }
@@ -81,21 +81,21 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       cResult[5] = markers;
       cResult[6] = found;
     } else {
-      class R {
+      class F {
         constructor(arg0) {
           return "easteregg" === animation.name;
         }
       }
     }
     if (tmp11 != null) {
-      class R {
+      class F {
         constructor(arg0) {
           return "easteregg" === animation.name;
         }
       }
     }
     if (undefined == null) {
-      class R {
+      class F {
         constructor(arg0) {
           return "easteregg" === animation.name;
         }
@@ -103,44 +103,44 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     }
     let c4 = tmp16;
     if (tmp11 != null) {
-      class R {
+      class F {
         constructor(arg0) {
           return "easteregg" === animation.name;
         }
       }
     }
     if (undefined == null) {
-      class R {
+      class F {
         constructor(arg0) {
           return "easteregg" === animation.name;
         }
       }
     }
     const sum1 = tmp16 + tmp17;
-    const ref = react.useRef(null);
+    const ref1 = react.useRef(null);
     const enabled = react.useContext(react3.AccessibilityPreferencesContext).reducedMotion.enabled;
     if ("custom" === str) {
-      class R {
+      class F {
         constructor(arg0) {
           return "easteregg" === animation.name;
         }
       }
     }
     if ("custom" === str) {
-      class R {
+      class F {
         constructor(arg0) {
           return "easteregg" === animation.name;
         }
       }
     }
     if (cResult[8] === tmp5) {
-      class R {
+      class F {
         constructor(arg0) {
           return "easteregg" === animation.name;
         }
       }
       if (cResult[11] !== num) {
-        class R {
+        class F {
           constructor(arg0) {
             return "easteregg" === animation.name;
           }
@@ -149,7 +149,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
         cResult[11] = num;
         cResult[12] = tmp25;
       } else {
-        class R {
+        class F {
           constructor(arg0) {
             return "easteregg" === animation.name;
           }
@@ -158,13 +158,13 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       const tmpResult = useToken;
       const token = tmpResult.useToken(color);
       if (cResult[13] === layers) {
-        class R {
+        class F {
           constructor(arg0) {
             return "easteregg" === animation.name;
           }
         }
         if (cResult[16] === sum) {
-          class R {
+          class F {
             constructor(arg0) {
               return "easteregg" === animation.name;
             }
@@ -214,7 +214,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
         cResult[21] = K;
       }
       if (null != token) {
-        class R {
+        class F {
           constructor(arg0) {
             return "easteregg" === animation.name;
           }
@@ -230,7 +230,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     cResult[10] = size1;
   }
   if (cResult[3] !== animation) {
-    class R {
+    class F {
       constructor(arg0) {
         return "easteregg" === animation.name;
       }
@@ -274,7 +274,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     cResult[4] = tmp8;
     tmp7 = tmp8;
   } else {
-    class R {
+    class F {
       constructor(arg0) {
         return "easteregg" === animation.name;
       }
@@ -285,11 +285,12 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   cResult[1] = markers;
   cResult[2] = found1;
   tmp6 = found1;
-}) : ((dotLottie, ref) => {
+}) : (function LottieIcon(dotLottie) {
   let closure_129_0;
   let height;
   let layers;
   let markers;
+  let ref;
   let useLottieDefaultColors;
   let width;
   ({ animation: closure_129_0, size } = dotLottie);
@@ -310,12 +311,12 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   ({ markers, layers } = dotLottie);
   const autoPlay = dotLottie.autoPlay;
   let sum1;
-  ref = undefined;
+  let ref1;
   let enabled;
   let token;
   let callback;
   const tmp3 = require;
-  ({ width, height, useLottieDefaultColors } = dotLottie);
+  ({ width, height, useLottieDefaultColors, ref } = dotLottie);
   let tmp5 = IconSize.ICON_SIZE[size];
   const found = markers.find((name) => name.name === closure_1_0);
   const start = found.start;
@@ -337,7 +338,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     num3 = -1;
   }
   sum1 = num2 + num3;
-  ref = react.useRef(null);
+  ref1 = react.useRef(null);
   enabled = react.useContext(react3.AccessibilityPreferencesContext).reducedMotion.enabled;
   let tmp12 = tmp5;
   if ("custom" === size) {
@@ -362,20 +363,20 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   callback = obj.useCallback(() => {
     const tmp2 = enabled;
     if (tmp2) {
-      const current3 = ref.current;
+      const current3 = ref1.current;
       if (current3 != null) {
         current3.play(c4, c4);
       }
     } else {
       if (tmp) {
         if (num2 >= 0) {
-          const current2 = ref.current;
+          const current2 = ref1.current;
           if (current2 != null) {
             current2.play(tmp3, sum1);
           }
         }
       }
-      const current = ref.current;
+      const current = ref1.current;
       if (current != null) {
         current.play(start, c4);
       }
@@ -393,7 +394,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     if (tmp) {
       callback();
     } else {
-      const current = ref.current;
+      const current = ref1.current;
       if (current != null) {
         current.play(start, start);
       }
@@ -402,8 +403,8 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   LottieViewDefault;
   const items4 = [size1, { opacity: num }];
   return <tmp19 style={size1}>{null}</tmp19>;
-}));
+});
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/LottieIcon/native/LottieIcon.tsx");
 
-export const LottieIcon = forwardRefResult;
+export const LottieIcon = tmp2;

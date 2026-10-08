@@ -1,18 +1,16 @@
-// Module ID: 15752
-// Function ID: 15753
+// Module ID: 16010
+// Function ID: 16011
 // Name: CollectiblesCoachmarkScrollDismissContext
 // Dependencies: [19, 1096, 21, 558, 576, 2]
 // Exports: useCollectiblesCoachmarkScrollDismissContext
 
-// Module 15752 (CollectiblesCoachmarkScrollDismissContext)
+// Module 16010 (CollectiblesCoachmarkScrollDismissContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1096 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let children;
 
 const NOOP = Constants.NOOP;
 const jsx = Fragment.jsx;
@@ -26,7 +24,7 @@ const redux = react.createContext(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollectiblesCoachmarkScrollDismissProvider(children) {
   let first;
   let tmp3;
   let tmp4;
@@ -90,7 +88,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     tmp5 = cResult[4];
   }
   return tmp5;
-}) : ((children) => {
+}) : (function CollectiblesCoachmarkScrollDismissProvider(children) {
   children = children.children;
   let closure_0 = react.useRef(null);
   let closure_1 = react.useRef(null);
@@ -123,8 +121,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   const items = [callback, callback1];
   return <redux.Provider value={react.useMemo(() => ({ registerDismiss, handleDismissCoachmarkOnScroll: callback1 }), items)}>{children}</redux.Provider>;
 });
-let fn = () => react.useContext(redux);
+function useCollectiblesCoachmarkScrollDismissContext() {
+  return react.useContext(redux);
+}
 const result1 = size.fileFinishedImporting("modules/collectibles/native/CollectiblesCoachmarkScrollDismissContext.tsx");
 
-export const useCollectiblesCoachmarkScrollDismissContext = fn;
+export { useCollectiblesCoachmarkScrollDismissContext };
 export const CollectiblesCoachmarkScrollDismissProvider = tmp3;

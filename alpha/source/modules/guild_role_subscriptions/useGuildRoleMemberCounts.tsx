@@ -1,12 +1,12 @@
-// Module ID: 6629
-// Function ID: 6630
+// Module ID: 6806
+// Function ID: 6807
 // Name: useGuildRoleMemberCounts
-// Dependencies: [19, 6630, 558, 576, 504, 6631, 2]
+// Dependencies: [19, 6807, 558, 576, 504, 6808, 2]
 
-// Module 6629 (useGuildRoleMemberCounts)
-import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 6631 */;
+// Module 6806 (useGuildRoleMemberCounts)
+import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 6808 */;
 import react from "react" /* 19 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 6630 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 6807 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require;
 
 let closure_5 = {};
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildRoleMemberCounts(arg0, arg1) {
   let closure_0;
   _require = arg0;
   const tmp = _require;
@@ -76,7 +76,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[6] = items1;
   tmp10 = items1;
   tmp9 = fn2;
-}) : ((arg0) => {
+}) : (function useGuildRoleMemberCounts(arg0) {
   let closure_0;
   _require = arg0;
   let num = arg1;

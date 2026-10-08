@@ -1,19 +1,19 @@
-// Module ID: 5423
-// Function ID: 5424
+// Module ID: 5732
+// Function ID: 5733
 // Name: BillingPaymentGatewayActionCreators
-// Dependencies: [5, 1085, 1096, 3, 1282, 1126, 5412, 5424, 584, 38, 5425, 5426, 4556, 5319, 2]
+// Dependencies: [5, 1085, 1096, 3, 1294, 1126, 5721, 5733, 584, 38, 5734, 5735, 4748, 5631, 2]
 // Exports: confirmCardPaymentSource, confirmEPS, confirmPaymentElementSource, confirmPrzelewy24, createAdyenPaymentSourceToken, createAdyenPrepaidPaymentSource, createAdyenVaultablePaymentSource, createBraintreePaymentSource, createCardToken, createExpressCheckoutPaymentMethod, createPaymentSourceToken, createStripePaymentSource, paymentIntentSucceeded, submitElementsAndCreateStripePaymentMethod
 
-// Module 5423 (BillingPaymentGatewayActionCreators)
+// Module 5732 (BillingPaymentGatewayActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1126 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import BillingSharedActionCreators from "BillingSharedActionCreators" /* 5412 */;
-import react from "react" /* 5424 */;
-import StripeActionCreators from "StripeActionCreators" /* 5425 */;
-import StripeUtilsAll from "StripeUtils" /* 5426 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import BillingSharedActionCreators from "BillingSharedActionCreators" /* 5721 */;
+import react from "react" /* 5733 */;
+import StripeActionCreators from "StripeActionCreators" /* 5734 */;
+import StripeUtilsAll from "StripeUtils" /* 5735 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants_mod from "Constants" /* 1085 */;
 import Constants_mod2 from "Constants" /* 1096 */;
@@ -40,17 +40,19 @@ let obj = function _getClientSecret() {
   });
   return obj(...arguments);
 };
-function dispatchPaymentElementsConfirmationError(error, flag, stringResult) {
-  if (flag === undefined) {
+function dispatchPaymentElementsConfirmationError(error) {
+  let flag = arg1;
+  if (arg1 === undefined) {
     flag = true;
   }
-  if (stringResult === undefined) {
+  let stringResult = arg2;
+  if (arg2 === undefined) {
     const intl = intl2.intl;
     stringResult = intl.string(intl2.t.khEaRI);
   }
   obj = BillingSharedActionCreators;
-  const obj2 = { tags: { source: "payment_elements" } };
-  return obj.dispatchConfirmationError(error, flag, stringResult, obj2);
+  const obj2 = { captureException: flag, defaultErrorMessage: stringResult, captureExceptionOptions: { tags: { source: "payment_elements" } } };
+  return obj.dispatchConfirmationError(error, obj2);
 }
 obj = function _createCardToken() {
   obj = _asyncToGenerator(async (arg0, value) => {
@@ -778,8 +780,8 @@ obj = function _confirmPaymentElementSource() {
                           const intl = closure_1_0(closure_1_3[5]).intl;
                           const stringResult = intl.string(closure_1_0(closure_1_3[5]).t.khEaRI);
                           obj = closure_1_0(closure_1_3[6]);
-                          const obj2 = { tags: { source: "payment_elements" } };
-                          return obj.dispatchConfirmationError(error, true, stringResult, obj2);
+                          const obj2 = { captureException: true, defaultErrorMessage: stringResult, captureExceptionOptions: { tags: { source: "payment_elements" } } };
+                          return obj.dispatchConfirmationError(error, obj2);
                         }).setupIntent;
                         ref.current = setupIntent;
                         id = setupIntent.payment_method;
@@ -1273,10 +1275,9 @@ obj = function _createAdyenVaultablePaymentSource() {
     let c12 = 0;
     let c13 = 0;
     let c10 = 0;
-    const iter = (async function(arg0, value, arg2, arg3) {
-      let billingError;
-      let obj10;
-      let obj13;
+    const iter = (async (arg0, value, arg2, arg3) => {
+      let obj12;
+      let obj9;
       function performRedirect(adyen_redirect_url) {
         window.open(adyen_redirect_url);
       }
@@ -1294,7 +1295,7 @@ obj = function _createAdyenVaultablePaymentSource() {
       } else {
         try {
           let flag;
-          let obj9;
+          let obj10;
           let adyen_redirect_url;
           c13 = 2;
           if (0 === c12) {
@@ -1312,7 +1313,7 @@ obj = function _createAdyenVaultablePaymentSource() {
                 flag = false;
               }
               billingAddressToken = undefined;
-              obj9 = undefined;
+              obj10 = undefined;
               value = undefined;
               returnUrl = undefined;
               adyen_redirect_url = undefined;
@@ -1330,8 +1331,8 @@ obj = function _createAdyenVaultablePaymentSource() {
             } else {
               c12 = 2;
               c13 = 1;
-              const obj7 = { value: obj13.validatePaymentSourceBillingAddress(closure_0), done: false };
-              obj13 = closure_137_0(closure_137_3[6]);
+              const obj7 = { value: obj12.validatePaymentSourceBillingAddress(closure_0), done: false };
+              obj12 = closure_137_0(closure_137_3[6]);
               return obj7;
             }
           } else if (2 === c12) {
@@ -1343,7 +1344,7 @@ obj = function _createAdyenVaultablePaymentSource() {
               return { value, done: true };
             } else {
               billingAddressToken = value;
-              obj9 = { type: closure_137_8.get(closure_1) };
+              obj10 = { type: closure_137_8.get(closure_1) };
               paymentMethod = undefined;
               if (paymentMethod != null) {
                 paymentMethod = paymentMethod.paymentMethod;
@@ -1355,8 +1356,8 @@ obj = function _createAdyenVaultablePaymentSource() {
               const merged = Object.assign(billingAddressToken);
               c12 = 3;
               c13 = 1;
-              const obj11 = { value: obj10.popupBridgeState(closure_1), done: false };
-              obj10 = closure_137_0(closure_137_3[6]);
+              const obj11 = { value: obj9.popupBridgeState(closure_1), done: false };
+              obj9 = closure_137_0(closure_137_3[6]);
               return obj11;
             }
           } else if (3 === c12) {
@@ -1368,14 +1369,14 @@ obj = function _createAdyenVaultablePaymentSource() {
               return { value, done: true };
             } else {
               c6 = value;
-              const obj18 = closure_137_0(closure_137_3[4]);
-              const aPIBaseURL = obj18.getAPIBaseURL();
+              const obj17 = closure_137_0(closure_137_3[4]);
+              const aPIBaseURL = obj17.getAPIBaseURL();
               const BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX = closure_137_5.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX;
-              const tmp91 = closure_1;
+              const tmp73 = closure_1;
               if (value == null) {
                 c6 = "";
               }
-              returnUrl = aPIBaseURL + BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(tmp91, c6, "success");
+              returnUrl = aPIBaseURL + BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(tmp73, c6, "success");
               c10 = 1;
               value = {};
               const ADYEN = closure_137_6.ADYEN;
@@ -1383,32 +1384,14 @@ obj = function _createAdyenVaultablePaymentSource() {
               c12 = 5;
               c13 = 1;
               const obj14 = { billingAddressToken, analyticsLocation, returnUrl };
-              const obj6 = closure_137_0(closure_137_3[6]);
-              const obj15 = { value: obj6.createPaymentSource(ADYEN, JSON.stringify(obj9), closure_0, obj14, flag), done: false };
+              const obj5 = closure_137_0(closure_137_3[6]);
+              const obj15 = { value: obj5.createPaymentSource(ADYEN, JSON.stringify(obj10), closure_0, obj14, flag), done: false };
               return obj15;
             }
           } else if (4 === c12) {
             c10 = 0;
             let closure_10 = closure_11;
             if (closure_10.code !== closure_137_0(closure_137_3[12]).ErrorCodes.CONFIRMATION_REQUIRED) {
-              const dispatch = closure_137_1(closure_137_3[8]).dispatch;
-              let code;
-              closure_137_1(closure_137_3[8]);
-              const BillingError = closure_137_0(closure_137_3[13]).BillingError;
-              if (closure_10 != null) {
-                code = closure_10.code;
-              }
-              let message;
-              if (closure_10 != null) {
-                message = closure_10.message;
-              }
-              const _HermesInternal = HermesInternal;
-              const obj16 = { type: "BILLING_PAYMENT_SOURCE_CREATE_FAIL", error: billingError };
-              const combined = "Unable to create payment source token: code: " + code + " message: " + message;
-              const self = this;
-              const self2 = this;
-              billingError = new BillingError(combined, closure_137_0(closure_137_3[13]).BillingError.ErrorCodes.UNKNOWN);
-              dispatch(obj16);
               throw closure_10;
             } else {
               adyen_redirect_url = closure_10.fields.adyen_redirect_url;
@@ -1435,11 +1418,11 @@ obj = function _createAdyenVaultablePaymentSource() {
             c13 = 3;
             return { value, done: true };
           }
-        } catch (tmp77) {
-          closure_11 = tmp77;
+        } catch (tmp59) {
+          closure_11 = tmp59;
           if (0 === c10) {
             c13 = 3;
-            throw tmp77;
+            throw tmp59;
           } else {
             c12 = 4;
           }
@@ -1776,7 +1759,7 @@ Constants = Constants_mod2;
 const tmp4 = new LoggerDefault("BillingPaymentGatewayActionCreators.tsx");
 let closure_11 = tmp4;
 let closure_20 = { hasCreatedPaymentMethod: false };
-let items = [, ];
+const items = [, ];
 ({ CARD: arr[0], PAYMENT_REQUEST: arr[1] } = PaymentSourceTypes);
 const set = new Set(items);
 const result = size.fileFinishedImporting("modules/billing/actions/BillingPaymentGatewayActionCreators.tsx");

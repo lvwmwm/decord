@@ -1,41 +1,41 @@
-// Module ID: 11321
-// Function ID: 11322
+// Module ID: 11575
+// Function ID: 11576
 // Name: ForwardModal
-// Dependencies: [5, 32, 19, 17, 7116, 7121, 8021, 2051, 5116, 8047, 11322, 10605, 21, 4896, 587, 558, 576, 1484, 10724, 504, 11320, 11319, 6023, 11323, 4574, 1126, 1375, 11325, 5716, 11326, 7528, 4907, 11327, 11328, 5041, 4861, 4862, 4573, 6695, 6890, 4845, 1369, 10726, 5918, 10727, 11331, 10741, 2]
+// Dependencies: [5, 32, 19, 17, 7302, 7307, 8429, 2063, 5428, 8456, 11576, 10202, 21, 5090, 587, 558, 576, 1496, 11577, 504, 11573, 11572, 6209, 11579, 4766, 1126, 1387, 11581, 5299, 11582, 9251, 5101, 11583, 11584, 5410, 5055, 5056, 4765, 6872, 7079, 5039, 1381, 11587, 10211, 11588, 11598, 11612, 2]
 
-// Module 11321 (ForwardModal)
+// Module 11575 (ForwardModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import ToastUtils from "ToastUtils" /* 4573 */;
-import LinkIcon from "LinkIcon" /* 4845 */;
-import HapticUtils from "HapticUtils" /* 4861 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4862 */;
-import ChannelUtils from "ChannelUtils" /* 5041 */;
-import ClipboardUtils from "ClipboardUtils" /* 6695 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 6890 */;
-import UserRowConstants from "UserRowConstants" /* 10605 */;
-import formatResults from "formatResults" /* 10724 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 11319 */;
-import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 11320 */;
-import ForwardConstants from "ForwardConstants" /* 11322 */;
-import ForwardDestinationUtils from "ForwardDestinationUtils" /* 11323 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import ToastUtils from "ToastUtils" /* 4765 */;
+import LinkIcon from "LinkIcon" /* 5039 */;
+import HapticUtils from "HapticUtils" /* 5055 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5056 */;
+import ChannelUtils from "ChannelUtils" /* 5410 */;
+import ClipboardUtils from "ClipboardUtils" /* 6872 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7079 */;
+import UserRowConstants from "UserRowConstants" /* 10202 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 11572 */;
+import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 11573 */;
+import ForwardConstants from "ForwardConstants" /* 11576 */;
+import formatResults from "formatResults" /* 11577 */;
+import ForwardDestinationUtils from "ForwardDestinationUtils" /* 11579 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7116 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7121 */;
-import ICYMIStore_mod from "ICYMIStore" /* 8021 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import MessageStore from "MessageStore" /* 5116 */;
-import MessagePreviewStore_mod from "MessagePreviewStore" /* 8047 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7302 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7307 */;
+import ICYMIStore_mod from "ICYMIStore" /* 8429 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import MessageStore from "MessageStore" /* 5428 */;
+import MessagePreviewStore_mod from "MessagePreviewStore" /* 8456 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let failedDestinations, message;
+let failedDestinations;
 
 let closure_15;
 let closure_16;
@@ -49,7 +49,7 @@ let UserRowModes = UserRowConstants.UserRowModes;
 let obj = { container: obj2 };
 obj2 = { flex: 1, display: "flex", backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 let closure_17 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardModal(message) {
   let closure_9;
   let customSendHandler;
   let initialSelectedDestinations;
@@ -222,7 +222,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   cResult[11] = items4;
   tmp18 = items4;
   tmp17 = U;
-}) : ((message) => {
+}) : (function ForwardModal(message) {
   let c7;
   let formatToPlainStringResult;
   let intl3;
@@ -603,7 +603,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
         const HeaderActionButton = HeaderActionButton2.HeaderActionButton;
         const merged = Object.assign(arg0);
         intl = intl7.intl;
-        tmp = first(HeaderActionButton, obj);
+        tmp = authStore3(HeaderActionButton, obj);
       }
       return tmp;
     },

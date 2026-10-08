@@ -1,25 +1,25 @@
-// Module ID: 8501
-// Function ID: 8502
+// Module ID: 8985
+// Function ID: 8986
 // Name: CutoutableAvatarDecoration
-// Dependencies: [19, 17, 4885, 21, 558, 576, 573, 1402, 1369, 8502, 8498, 5981, 2]
+// Dependencies: [19, 17, 5079, 21, 558, 576, 573, 1414, 1381, 8986, 8982, 6164, 2]
 
-// Module 8501 (CutoutableAvatarDecoration)
+// Module 8985 (CutoutableAvatarDecoration)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import AvatarUtils from "AvatarUtils" /* 1402 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import ClipViewDefault from "ClipView" /* 8502 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import AvatarUtils from "AvatarUtils" /* 1414 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import ClipViewDefault from "ClipView" /* 8986 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CutoutableAvatarDecoration(arg0) {
   let animate;
   let avatarDecoration;
   let avatarDecorationUrl;
@@ -36,7 +36,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ size, avatarDecoration, decorationStyle, animate, cutout } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
-    const fn = function u() {
+    const fn = function s() {
       return useReducedMotion.useReducedMotion;
     };
     cResult[0] = items;
@@ -182,7 +182,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = size;
   cResult[5] = avatarDecorationURL;
   tmp9 = avatarDecorationURL;
-}) : ((size) => {
+}) : (function CutoutableAvatarDecoration(size) {
   let avatarDecorationUrl;
   let sizeStyle;
   let source;

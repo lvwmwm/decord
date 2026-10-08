@@ -1,20 +1,20 @@
-// Module ID: 17584
-// Function ID: 17585
+// Module ID: 17866
+// Function ID: 17867
 // Name: JankNavigationReporter
-// Dependencies: [4743, 15977, 15973, 15978, 4745, 2]
+// Dependencies: [4937, 16233, 16237, 16238, 4939, 2]
 
-// Module 17584 (JankNavigationReporter)
-import RootNavigationRef from "RootNavigationRef" /* 4743 */;
-import getJankScreenName from "getJankScreenName" /* 15973 */;
-import react_nativeDefault from "react-native" /* 15977 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 15978 */;
+// Module 17866 (JankNavigationReporter)
+import RootNavigationRef from "RootNavigationRef" /* 4937 */;
+import getJankScreenName from "getJankScreenName" /* 16233 */;
+import react_nativeDefault from "react-native" /* 16237 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 16238 */;
 import size from "module_2" /* 2 */;
 
 const getJankScreenNameDefault = getJankScreenName;
 
 class JankNavigationReporter {
   constructor() {
-    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "a" });
+    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Boolean", _screensBeforeDispatch: "end" });
   }
   attach() {
     const self = this;
@@ -35,8 +35,15 @@ class JankNavigationReporter {
   handleDispatch(noop) {
     const tmp = noop;
     if (!tmp) {
-      const obj = RootNavigationRef;
-      const rootNavigationRef = obj.getRootNavigationRef();
+      const self = this;
+      if (null == this._screensBeforeDispatch) {
+        const obj = { expectedScreenIds: null, chatScreens: null };
+        ({ expectedScreenIds: obj.expectedScreenIds, chatScreens: obj.chatScreens } = getJankScreenNameDefault());
+        self._screensBeforeDispatch = obj;
+        getJankScreenNameDefault();
+      }
+      const obj2 = RootNavigationRef;
+      const rootNavigationRef = obj2.getRootNavigationRef();
       let key;
       if (rootNavigationRef != null) {
         const getCurrentRoute = rootNavigationRef.getCurrentRoute;
@@ -47,34 +54,38 @@ class JankNavigationReporter {
           }
         }
       }
-      const self = this;
-      this._routeKeyAtDispatch = key;
-      const obj2 = react_nativeDefault;
-      if (obj2 != null) {
-        const result = obj2.beginScreenTransition();
+      self._routeKeyAtDispatch = key;
+      const obj3 = react_nativeDefault;
+      if (obj3 != null) {
+        const result = obj3.beginScreenTransition();
       }
     }
   }
   handleStateSettled() {
+    let chatScreens;
+    let closure_129_0;
     let expectedScreenIds;
     let focusedRoute;
+    const self = this;
+    this._screensBeforeDispatch = undefined;
+    const _screensBeforeDispatch = this._screensBeforeDispatch;
     const tmp3 = getJankScreenNameDefault();
-    const screen = tmp3.screen;
-    ({ expectedScreenIds, focusedRoute } = tmp3);
+    ({ screen: closure_129_0, expectedScreenIds } = tmp3);
+    ({ focusedRoute, chatScreens } = tmp3);
     const obj = getJankSurfaceName;
-    const result = obj.composeJankSurfaceName(() => screen);
+    const result = obj.composeJankSurfaceName(() => closure_1_0);
     const obj2 = react_nativeDefault;
     if (obj2 != null) {
       obj2.nameCurrentScreen(result, expectedScreenIds);
     }
-    if (this.shouldSettleInJS(focusedRoute)) {
+    if (self.shouldSettleInJS(focusedRoute, _screensBeforeDispatch, { expectedScreenIds, chatScreens })) {
       const tmpResult = react_nativeDefault;
       if (tmpResult != null) {
         tmpResult.settleCurrentScreen();
       }
     }
   }
-  shouldSettleInJS(focusedRoute) {
+  shouldSettleInJS(focusedRoute, _screensBeforeDispatch, chatScreens2) {
     let key;
     if (focusedRoute != null) {
       key = focusedRoute.key;
@@ -89,13 +100,21 @@ class JankNavigationReporter {
       if (focusedRoute != null) {
         name = focusedRoute.name;
       }
-      let isChatLockedOpen = name === getJankScreenName.CHAT_PANEL_ROUTE;
+      let tmp6 = name === getJankScreenName.CHAT_PANEL_ROUTE;
       const tmp4 = require;
-      if (isChatLockedOpen) {
-        const tmp4Result = tmp4(4745);
-        isChatLockedOpen = tmp4Result.getChatLayout().isChatLockedOpen;
+      if (tmp6) {
+        let chatScreens;
+        if (_screensBeforeDispatch != null) {
+          chatScreens = _screensBeforeDispatch.chatScreens;
+        }
+        let isChatLockedOpen = null != chatScreens && _screensBeforeDispatch.chatScreens === chatScreens2.chatScreens && _screensBeforeDispatch.expectedScreenIds === chatScreens2.expectedScreenIds;
+        if (!isChatLockedOpen) {
+          const tmp4Result = tmp4(4939);
+          isChatLockedOpen = tmp4Result.getChatLayout().isChatLockedOpen;
+        }
+        tmp6 = isChatLockedOpen;
       }
-      tmp2 = isChatLockedOpen;
+      tmp2 = tmp6;
     }
     return tmp2;
   }
@@ -104,4 +123,4 @@ const prototype = JankNavigationReporter.prototype;
 const prototype2 = JankNavigationReporter.prototype;
 let result = size.fileFinishedImporting("modules/jank_stats/native/JankNavigationReporter.android.tsx");
 
-export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "a" });
+export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Boolean", _screensBeforeDispatch: "end" });

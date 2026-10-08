@@ -1,23 +1,21 @@
-// Module ID: 10099
-// Function ID: 10100
+// Module ID: 9683
+// Function ID: 9684
 // Name: useExpressionPickerInsets
-// Dependencies: [19, 1085, 558, 576, 1618, 6478, 587, 2]
+// Dependencies: [19, 1085, 558, 576, 1630, 6656, 587, 2]
 
-// Module 10099 (useExpressionPickerInsets)
+// Module 9683 (useExpressionPickerInsets)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6478 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6656 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let hasCategories;
-
 let tmp;
 const nativeDefault = tmp(587);
 const EXPRESSION_FOOTER_HEIGHT = Constants.EXPRESSION_FOOTER_HEIGHT;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasCategories) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExpressionPickerInsets(hasCategories) {
   let first;
   let tmp5;
   const obj = react2;
@@ -31,7 +29,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasCategories) => 
   } else {
     first = cResult[0];
   }
-  const bottom2 = tmp3(6478)(first).insets.bottom;
+  const bottom2 = tmp3(6656)(first).insets.bottom;
   if (cResult[1] !== bottom) {
     const obj3 = { paddingBottom: bottom };
     cResult[1] = bottom;
@@ -58,7 +56,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasCategories) => 
   cResult[4] = sum1;
   cResult[5] = obj4;
   tmp8 = obj4;
-}) : ((hasCategories) => {
+}) : (function useExpressionPickerInsets(hasCategories) {
   let items;
   let sum;
   hasCategories = hasCategories.hasCategories;

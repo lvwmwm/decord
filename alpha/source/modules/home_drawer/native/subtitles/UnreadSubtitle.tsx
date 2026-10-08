@@ -1,12 +1,12 @@
-// Module ID: 16307
-// Function ID: 16308
+// Module ID: 16567
+// Function ID: 16568
 // Name: UnreadSubtitle
-// Dependencies: [19, 17, 21, 558, 576, 16305, 5819, 5871, 1126, 4892, 2]
+// Dependencies: [19, 17, 21, 558, 576, 16565, 8134, 8183, 1126, 5086, 2]
 
-// Module 16307 (UnreadSubtitle)
+// Module 16567 (UnreadSubtitle)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 4892 */;
+import Text_Text from "Text/Text" /* 5086 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ let dependencyMap;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadSubtitle(arg0) {
   let channel;
   let channelName;
   let closure_1;
@@ -25,7 +25,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = subtitleStyles(576);
   const cResult = obj.c(16);
   ({ guild, channel, channelName, count } = arg0);
-  const obj2 = subtitleStyles(16305);
+  const obj2 = subtitleStyles(16565);
   subtitleStyles = obj2.useSubtitleStyles();
   if (cResult[0] === channel) {
     let tmp5;
@@ -102,17 +102,17 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   let channelIconComponentWithGuild;
   if (null != channel) {
-    const tmpResult = subtitleStyles(5819);
+    const tmpResult = subtitleStyles(8134);
     channelIconComponentWithGuild = tmpResult.getChannelIconComponentWithGuild(channel, guild);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(5871).TextIcon;
+    channelIconComponentWithGuild = tmp(8183).TextIcon;
   }
   cResult[0] = channel;
   cResult[1] = guild;
   cResult[2] = channelIconComponentWithGuild;
   tmp5 = channelIconComponentWithGuild;
-}) : ((arg0) => {
+}) : (function UnreadSubtitle(arg0) {
   let channel;
   let channelName;
   let count;

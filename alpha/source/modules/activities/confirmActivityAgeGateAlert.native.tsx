@@ -1,36 +1,34 @@
-// Module ID: 9040
-// Function ID: 9041
+// Module ID: 10653
+// Function ID: 10654
 // Name: confirmActivityAgeGateAlert
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 9041, 4892, 1126, 5714, 1188, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 10654, 5086, 1126, 5297, 1200, 2]
 // Exports: confirmActivityAgeGateAlert
 
-// Module 9040 (confirmActivityAgeGateAlert)
+// Module 10653 (confirmActivityAgeGateAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5714 */;
-import ActivityAnnouncementDefault from "ActivityAnnouncement" /* 9041 */;
+import native from "native" /* 1200 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5297 */;
+import ActivityAnnouncementDefault from "ActivityAnnouncement" /* 10654 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let description;
 
 let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { alertContainer: { display: "flex", alignItems: "center", padding: 8 }, alertBodyText: obj2 };
 obj2 = { fontSize: 16, lineHeight: 24, color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, textAlign: "center" };
 let closure_6 = createStyles.createStyles(obj);
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((description) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmActivityGateContent(description) {
   let first;
   let items;
   const obj = react2;
@@ -70,7 +68,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((description) =>
   cResult[2] = tmp4.alertBodyText;
   cResult[3] = tmp10;
   tmp9 = tmp10;
-}) : ((description) => {
+}) : (function ConfirmActivityGateContent(description) {
   let items;
   description = description.description;
   const tmp = closure_6();

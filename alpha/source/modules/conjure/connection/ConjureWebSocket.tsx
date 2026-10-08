@@ -1,9 +1,9 @@
-// Module ID: 12931
-// Function ID: 12932
+// Module ID: 13081
+// Function ID: 13082
 // Name: ConjureWebSocket
 // Dependencies: [2]
 
-// Module 12931 (ConjureWebSocket)
+// Module 13081 (ConjureWebSocket)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/connection/ConjureWebSocket.tsx");
@@ -156,6 +156,19 @@ class ConjureWebSocket {
       const _JSON = JSON;
       const obj = { type: "load_history", cursor: olderHistoryCursor };
       socket.send(JSON.stringify(obj));
+    }
+  }
+  sendRefreshBrowserSessions() {
+    const self = this;
+    let tmp = null != this.socket;
+    if (tmp) {
+      const _WebSocket = WebSocket;
+      tmp = self.socket.readyState === WebSocket.OPEN;
+    }
+    if (tmp) {
+      const socket = self.socket;
+      const _JSON = JSON;
+      socket.send(JSON.stringify({ type: "refresh_browser_sessions" }));
     }
   }
   sendDebugStatusRequest() {

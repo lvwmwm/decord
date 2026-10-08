@@ -1,11 +1,11 @@
-// Module ID: 2083
-// Function ID: 2084
+// Module ID: 2095
+// Function ID: 2096
 // Name: Table
-// Dependencies: [5, 2084, 2085, 2]
+// Dependencies: [5, 2096, 2097, 2]
 
-// Module 2083 (Table)
-import Key from "Key" /* 2084 */;
-import TableId from "TableId" /* 2085 */;
+// Module 2095 (Table)
+import Key from "Key" /* 2096 */;
+import TableId from "TableId" /* 2097 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -138,10 +138,10 @@ class TableTransaction {
     let prefix;
     let Replace = arg1;
     if (arg1 === undefined) {
-      Replace = prefix(2085).ConflictOptions.Replace;
+      Replace = prefix(2097).ConflictOptions.Replace;
     }
     const transaction = this.transaction;
-    const obj = { type: "kv.put_many", table: this.tableId, cells: mapped, overwrite: Replace === prefix(2085).ConflictOptions.Replace };
+    const obj = { type: "kv.put_many", table: this.tableId, cells: mapped, overwrite: Replace === prefix(2097).ConflictOptions.Replace };
     prefix = this.prefix;
     mapped = arr;
     const add = transaction.add;
@@ -213,7 +213,7 @@ class Table {
     obj.messages = {
       getLatest(guildId) {
         const database = obj.database;
-        obj = { type: "messages.get_latest", table: obj.tableId, guildId };
+        obj = { type: "messages.get_latest", table: obj.tableId, messageKey: obj.prefix[0], guildId };
         return database.execute(obj, obj.defaultDebugTag);
       }
     };
@@ -355,10 +355,10 @@ class Table {
     if (arg1 === undefined) {
       const tmp = prefix;
       let tmp2 = dependencyMap;
-      Replace = prefix(2085).ConflictOptions.Replace;
+      Replace = prefix(2097).ConflictOptions.Replace;
     }
     const database = this.database;
-    let obj = { type: "kv.put_many", table: this.tableId, cells: mapped, overwrite: Replace === prefix(2085).ConflictOptions.Replace };
+    let obj = { type: "kv.put_many", table: this.tableId, cells: mapped, overwrite: Replace === prefix(2097).ConflictOptions.Replace };
     prefix = this.prefix;
     mapped = arr;
     const execute = database.execute;

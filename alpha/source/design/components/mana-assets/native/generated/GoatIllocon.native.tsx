@@ -1,18 +1,18 @@
-// Module ID: 16699
-// Function ID: 16700
+// Module ID: 16972
+// Function ID: 16973
 // Name: GoatIllocon
-// Dependencies: [21, 558, 576, 16700, 5981, 2]
+// Dependencies: [21, 558, 576, 16973, 6164, 2]
 
-// Module 16699 (GoatIllocon)
+// Module 16972 (GoatIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import _modDef16700 from "module_16700" /* 16700 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import _modDef16973 from "module_16973" /* 16973 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GoatIllocon(arg0) {
   let accessibilityLabel;
   let accessible;
   let first;
@@ -26,7 +26,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef16700 };
+    const obj2 = { uri: _modDef16973 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -34,10 +34,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[1] !== num) {
     const size1 = { width: num, height: num };
-    const items = [size1];
     cResult[1] = num;
-    cResult[2] = items;
-    tmp5 = items;
+    cResult[2] = size1;
+    tmp5 = size1;
   } else {
     tmp5 = cResult[2];
   }
@@ -59,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = tmp5;
   cResult[7] = tmp7;
   tmp6 = tmp7;
-}) : ((size) => {
+}) : (function GoatIllocon(size) {
   let accessibilityLabel;
   let accessible;
   let resizeMode;
@@ -68,10 +67,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num === undefined) {
     num = 64;
   }
-  const obj2 = { uri: _modDef16700 };
+  const obj2 = { uri: _modDef16973 };
   FastImageDefault;
-  const items = [{ width: num, height: num }];
-  return <tmp fadeDuration={0} source={obj2} style={items} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
+  return <tmp fadeDuration={0} source={obj2} style={{ width: num, height: num }} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
 });
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/GoatIllocon.native.tsx");
 

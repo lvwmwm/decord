@@ -1,19 +1,19 @@
-// Module ID: 14563
-// Function ID: 14564
+// Module ID: 14824
+// Function ID: 14825
 // Name: useAccountStandingStatusLabel
-// Dependencies: [558, 576, 11507, 11535, 14564, 1126, 14565, 2]
+// Dependencies: [558, 576, 11499, 11533, 14825, 1126, 14826, 2]
 
-// Module 14563 (useAccountStandingStatusLabel)
+// Module 14824 (useAccountStandingStatusLabel)
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import useSafetyHubAccountStanding from "useSafetyHubAccountStanding" /* 11507 */;
-import useSafetyHubInitialized from "useSafetyHubInitialized" /* 11535 */;
-import useSafetyHubFetchError from "useSafetyHubFetchError" /* 14564 */;
-import SafetyHubAccountStandingLabels from "SafetyHubAccountStandingLabels" /* 14565 */;
+import useSafetyHubAccountStanding from "useSafetyHubAccountStanding" /* 11499 */;
+import useSafetyHubInitialized from "useSafetyHubInitialized" /* 11533 */;
+import useSafetyHubFetchError from "useSafetyHubFetchError" /* 14825 */;
+import SafetyHubAccountStandingLabels from "SafetyHubAccountStandingLabels" /* 14826 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccountStandingStatusLabel() {
   const obj = react;
   const cResult = obj.c(5);
   const obj2 = useSafetyHubAccountStanding;
@@ -66,7 +66,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return tmp7;
   }
-}) : (() => {
+}) : (function useAccountStandingStatusLabel() {
   let formatToPlainStringResult;
   const obj = useSafetyHubAccountStanding;
   const safetyHubAccountStanding = obj.useSafetyHubAccountStanding();
@@ -81,7 +81,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return arg0;
         }
     };
-    formatToPlainStringResult = intl.formatToPlainString(tmp(14565).ACCOUNT_STANDING_SHORT_STATUS[safetyHubAccountStanding.state], obj4);
+    formatToPlainStringResult = intl.formatToPlainString(tmp(14826).ACCOUNT_STANDING_SHORT_STATUS[safetyHubAccountStanding.state], obj4);
   } else {
     let ZTNur7;
     const string = intl.string;

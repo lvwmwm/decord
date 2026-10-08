@@ -1,30 +1,29 @@
-// Module ID: 11987
-// Function ID: 11988
+// Module ID: 12060
+// Function ID: 12061
 // Name: SearchUtils
-// Dependencies: [32, 2051, 6091, 4513, 5107, 2074, 4525, 2103, 1377, 7524, 1085, 4467, 1126, 11988, 11, 11986, 12, 584, 5049, 4728, 11991, 2]
+// Dependencies: [32, 2063, 4705, 5931, 2086, 4717, 2115, 1389, 9247, 1085, 4659, 1126, 12061, 11, 12059, 12, 584, 5417, 4922, 12064, 2]
 // Exports: clearTokenCache, filterHasAnswer, getAutocompleteMode, getChannelActiveAgoTimestamp, getChannelDisplayName, getChannelIdFromSearchContext, getChannelPlaceholderName, getFlattenedAutocompleteResults, getGuildIdFromSearchContext, getIndexingErrorText, getNonTokenQuery, getQueryContentString, getQueryFromTokens, getSearchAnalyticsIds, getSearchContextId, getSearchHistoryStateId, getSearchOptionAnswer, getSearchQueryFromTokens, getSearchTabFetchId, getSelectionScope, getTabTitle, queryHasFilter, quoteChannelName, refreshSearchTokens, removeInvalidPrivateChannelSearchTokens, searchModeToSearchQueryParams, searchQueryParamsToSearchMode, setIncludeNSFW, showDatePicker, tokenizeQuery
 
-// Module 11987 (SearchUtils)
+// Module 12060 (SearchUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl11 from "intl" /* 1126 */;
-import _modDef4467 from "module_4467" /* 4467 */;
-import UserUtilsDefault from "UserUtils" /* 4728 */;
-import useChannelName from "useChannelName" /* 5049 */;
-import SearchConstants from "SearchConstants" /* 7524 */;
-import QueryTokenizerDefault from "QueryTokenizer" /* 11986 */;
-import SearchTokens from "SearchTokens" /* 11988 */;
-import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 11991 */;
+import _modDef4659 from "module_4659" /* 4659 */;
+import UserUtilsDefault from "UserUtils" /* 4922 */;
+import useChannelName from "useChannelName" /* 5417 */;
+import SearchConstants from "SearchConstants" /* 9247 */;
+import QueryTokenizerDefault from "QueryTokenizer" /* 12059 */;
+import SearchTokens from "SearchTokens" /* 12061 */;
+import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 12064 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import ConsentStore from "ConsentStore" /* 6091 */;
-import GuildChannelStore from "GuildChannelStore" /* 4513 */;
-import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 5107 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import UserStore from "UserStore" /* 1377 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildChannelStore from "GuildChannelStore" /* 4705 */;
+import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 5931 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -33,19 +32,18 @@ let addRule, closure_4, importDefault, results, set;
 
 let ME;
 let SearchTokenTypes;
-let closure_12;
 let closure_14;
 let closure_15;
 let closure_16;
 let closure_17;
-let closure_18;
-let closure_19;
-const f110069 = (arg0, arg1) => "\\" + arg1;
+let map1;
+let unpackModuleId;
+const f110404 = (arg0, arg1) => "\\" + arg1;
 const SearchTabs = SearchConstants.SearchTabs;
-({ SearchTypes: closure_12, SearchTokenTypes } = Constants);
-({ SearchPopoutModes: closure_14, IS_SEARCH_ANSWER_TOKEN: closure_15, IS_SEARCH_FILTER_TOKEN: closure_16, SearchModes: closure_17, ME, Consents: closure_18, GuildFeatures: closure_19 } = Constants);
-let c20 = 2592000;
-let c21 = 31536000;
+({ SearchTypes: unpackModuleId, SearchTokenTypes } = Constants);
+({ SearchPopoutModes: map1, IS_SEARCH_ANSWER_TOKEN: closure_14, IS_SEARCH_FILTER_TOKEN: closure_15, SearchModes: closure_16, ME, GuildFeatures: closure_17 } = Constants);
+let c18 = 2592000;
+let c19 = 31536000;
 const ShowDatePicker = { [SearchTokenTypes.FILTER_BEFORE]: true, [SearchTokenTypes.FILTER_AFTER]: true, [SearchTokenTypes.FILTER_ON]: true };
 let tmp4 = new QueryTokenizerDefault();
 const navigation = tmp4;
@@ -55,13 +53,13 @@ let result = size.fileFinishedImporting("modules/search/SearchUtils.tsx");
 
 export const getSearchContextId = function getSearchContextId(searchContext) {
   const type = searchContext.type;
-  if (constants.GUILD === type) {
+  if (unpackModuleId.GUILD === type) {
     return searchContext.guildId;
   } else {
-    if (constants.GUILD_CHANNEL !== type) {
-      if (constants.CHANNEL !== type) {
-        if (constants.THREAD !== type) {
-          return constants.DMS === type ? searchContext.type : undefined;
+    if (unpackModuleId.GUILD_CHANNEL !== type) {
+      if (unpackModuleId.CHANNEL !== type) {
+        if (unpackModuleId.THREAD !== type) {
+          return unpackModuleId.DMS === type ? searchContext.type : undefined;
         }
       }
     }
@@ -71,13 +69,13 @@ export const getSearchContextId = function getSearchContextId(searchContext) {
 export const getSearchHistoryStateId = function getSearchHistoryStateId(type) {
   let channelId;
   type = type.type;
-  if (constants.GUILD === type) {
+  if (unpackModuleId.GUILD === type) {
     channelId = type.guildId;
   } else {
-    if (constants.GUILD_CHANNEL !== type) {
-      if (constants.CHANNEL !== type) {
-        if (constants.THREAD !== type) {
-          if (constants.DMS === type) {
+    if (unpackModuleId.GUILD_CHANNEL !== type) {
+      if (unpackModuleId.CHANNEL !== type) {
+        if (unpackModuleId.THREAD !== type) {
+          if (unpackModuleId.DMS === type) {
             channelId = type.type;
           }
         }
@@ -90,13 +88,13 @@ export const getSearchHistoryStateId = function getSearchHistoryStateId(type) {
 export const getSearchTabFetchId = function getSearchTabFetchId(searchContext, tab, searchResultsQuery) {
   let channelId;
   const type = searchContext.type;
-  if (constants.GUILD === type) {
+  if (unpackModuleId.GUILD === type) {
     channelId = searchContext.guildId;
   } else {
-    if (constants.GUILD_CHANNEL !== type) {
-      if (constants.CHANNEL !== type) {
-        if (constants.THREAD !== type) {
-          if (constants.DMS === type) {
+    if (unpackModuleId.GUILD_CHANNEL !== type) {
+      if (unpackModuleId.CHANNEL !== type) {
+        if (unpackModuleId.THREAD !== type) {
+          if (unpackModuleId.DMS === type) {
             channelId = searchContext.type;
           }
         }
@@ -107,15 +105,15 @@ export const getSearchTabFetchId = function getSearchTabFetchId(searchContext, t
   return "" + channelId + "-" + tab + "-" + searchResultsQuery;
 };
 export const getChannelActiveAgoTimestamp = function getChannelActiveAgoTimestamp(cResult) {
-  const obj = _modDef4467();
-  const diffResult = obj.diff(_modDef4467(cResult), "s");
-  if (diffResult > c21) {
+  const obj = _modDef4659();
+  const diffResult = obj.diff(_modDef4659(cResult), "s");
+  if (diffResult > c19) {
     const _Math5 = Math;
     const rounded = Math.round(diffResult / tmp3);
     const intl7 = intl11.intl;
     const obj2 = { count: rounded };
     return intl7.formatToPlainString(intl11.t["7th+Mf"], obj2);
-  } else if (diffResult > c20) {
+  } else if (diffResult > c18) {
     const _Math4 = Math;
     const rounded1 = Math.round(diffResult / tmp21);
     const intl6 = intl11.intl;
@@ -149,10 +147,10 @@ export const getChannelActiveAgoTimestamp = function getChannelActiveAgoTimestam
 };
 export const getIndexingErrorText = function getIndexingErrorText(searchContext) {
   const type = searchContext.type;
-  if (constants.CHANNEL === type) {
+  if (unpackModuleId.CHANNEL === type) {
     const intl3 = intl11.intl;
     return intl3.string(intl11.t.Q0JJjv);
-  } else if (constants.DMS === type) {
+  } else if (unpackModuleId.DMS === type) {
     const intl2 = intl11.intl;
     return intl2.string(intl11.t.Br0xJA);
   } else {
@@ -162,10 +160,10 @@ export const getIndexingErrorText = function getIndexingErrorText(searchContext)
 };
 export const getGuildIdFromSearchContext = function getGuildIdFromSearchContext(searchContext) {
   const type = searchContext.type;
-  if (constants.GUILD_CHANNEL !== type) {
-    if (constants.GUILD !== type) {
-      if (constants.THREAD !== type) {
-        if (constants.CHANNEL === type) {
+  if (unpackModuleId.GUILD_CHANNEL !== type) {
+    if (unpackModuleId.GUILD !== type) {
+      if (unpackModuleId.THREAD !== type) {
+        if (unpackModuleId.CHANNEL === type) {
           const channel = ChannelStore.getChannel(searchContext.channelId);
           let guild_id;
           if (channel != null) {
@@ -185,9 +183,9 @@ export const getGuildIdFromSearchContext = function getGuildIdFromSearchContext(
 };
 export const getChannelIdFromSearchContext = function getChannelIdFromSearchContext(searchContext) {
   const type = searchContext.type;
-  if (constants.GUILD_CHANNEL !== type) {
-    if (constants.CHANNEL !== type) {
-      if (constants.THREAD !== type) {
+  if (unpackModuleId.GUILD_CHANNEL !== type) {
+    if (unpackModuleId.CHANNEL !== type) {
+      if (unpackModuleId.THREAD !== type) {
         return null;
       }
     }
@@ -309,7 +307,7 @@ export const getSearchQueryFromTokens = function getSearchQueryFromTokens(tokeni
   const obj = {};
   const item = tokenizeQueryResult.forEach(function(type) {
     function getQueryKey(type) {
-      const tmp = closure_1_1(closure_1_2[13])[type];
+      const tmp = closure_1_1(closure_1_2[12])[type];
       let str = null;
       if (null != tmp) {
         str = tmp.queryKey;
@@ -484,9 +482,9 @@ export const getAutocompleteMode = function getAutocompleteMode(cursorScope, tok
   }
   ({ currentToken, nextToken, previousToken } = obj);
   if (0 === tokens.length) {
-    return { type: constants2.EMPTY, filter: null, token: null };
+    return { type: map1.EMPTY, filter: null, token: null };
   } else if (null == currentToken) {
-    return { type: constants2.FILTER_ALL, filter: null, token: null };
+    return { type: map1.FILTER_ALL, filter: null, token: null };
   } else {
     const obj9 = SearchTokens;
     const tmp10 = require;
@@ -495,37 +493,37 @@ export const getAutocompleteMode = function getAutocompleteMode(cursorScope, tok
         if (nextToken.type !== QueryTokenizerDefault.NON_TOKEN_TYPE) {
           if (null != nextToken) {
             if (!regex.test(nextToken.type)) {
-              return { type: constants2.FILTER, filter: currentToken.type, token: null };
+              return { type: map1.FILTER, filter: currentToken.type, token: null };
             }
           }
         }
       }
-      return { type: constants2.FILTER, filter: currentToken.type, token: nextToken };
+      return { type: map1.FILTER, filter: currentToken.type, token: nextToken };
     }
     const tmp3 = importDefault;
     if (currentToken.type === QueryTokenizerDefault.NON_TOKEN_TYPE) {
       if (null != previousToken) {
         let obj7;
-        const tmp10Result = tmp10(11988);
+        const tmp10Result = tmp10(12061);
         if (tmp10Result.isSearchFilterTokenType(previousToken.type)) {
-          obj7 = { type: constants2.FILTER, filter: previousToken.type, token: currentToken };
-          const obj6 = { type: constants2.FILTER, filter: previousToken.type, token: currentToken };
+          obj7 = { type: map1.FILTER, filter: previousToken.type, token: currentToken };
+          const obj6 = { type: map1.FILTER, filter: previousToken.type, token: currentToken };
         }
         return obj7;
       }
     }
     let tmp4;
-    if (currentToken.type === tmp3(11986).NON_TOKEN_TYPE) {
+    if (currentToken.type === tmp3(12059).NON_TOKEN_TYPE) {
       tmp4 = currentToken;
     }
-    obj7 = { type: constants2.FILTER_ALL, filter: null, token: tmp4 };
+    obj7 = { type: map1.FILTER_ALL, filter: null, token: tmp4 };
   }
 };
 export const quoteChannelName = function quoteChannelName(channelName) {
   let combined = channelName;
   if (null != channelName.match(/([\\" ])/g)) {
     const _HermesInternal = HermesInternal;
-    combined = "\"" + channelName.replaceAll(/([\\"])/g, f110069) + "\"";
+    combined = "\"" + channelName.replaceAll(/([\\"])/g, f110404) + "\"";
   }
   return combined;
 };
@@ -546,12 +544,12 @@ export const getFlattenedAutocompleteResults = function getFlattenedAutocomplete
             let combined = str;
             if (null != text.text.match(/([\\" ])/g)) {
               const _HermesInternal = HermesInternal;
-              combined = "\"" + str.replaceAll(/([\\"])/g, f110069) + "\"";
+              combined = "\"" + str.replaceAll(/([\\"])/g, f110404) + "\"";
             }
             tmp = combined;
           }
           let combined1 = tmp;
-          if (results.type === constants.FILTER_ALL) {
+          if (results.type === map1.FILTER_ALL) {
             group = text.group;
             const tmp8 = SearchTokensDefault[group];
             let key;
@@ -677,7 +675,7 @@ export const getChannelDisplayName = function getChannelDisplayName(isDM) {
   let combined = str;
   if (null != str.match(/([\\" ])/g)) {
     const _HermesInternal = HermesInternal;
-    combined = "\"" + str.replaceAll(/([\\"])/g, f110069) + "\"";
+    combined = "\"" + str.replaceAll(/([\\"])/g, f110404) + "\"";
   }
   let combined1 = combined;
   if (flag) {
@@ -725,26 +723,24 @@ export const removeInvalidPrivateChannelSearchTokens = function removeInvalidPri
 export const getSearchAnalyticsIds = function getSearchAnalyticsIds(guildId, getSessionId) {
   const obj = isGuildLikeSearchContext;
   if (obj.isGuildLikeSearchContext(guildId)) {
-    if (ConsentStore.hasConsented(constants4.USAGE_STATISTICS)) {
-      const guild = GuildStore.getGuild(guildId.guildId);
-      let hasItem;
-      if (guild != null) {
-        const features = guild.features;
-        hasItem = features.has(constants5.DISCOVERABLE);
-      }
-      if (hasItem) {
-        const sessionId = getSessionId.getSessionId(guildId);
-        const queryId = getSessionId.getQueryId(guildId);
-        let tmp11 = null;
-        if (null != sessionId) {
-          tmp11 = null;
-          if (null != queryId) {
-            tmp11 = { search_session_id: sessionId, search_query_id: queryId };
-            const obj2 = { search_session_id: sessionId, search_query_id: queryId };
-          }
+    const guild = GuildStore.getGuild(guildId.guildId);
+    let hasItem;
+    if (guild != null) {
+      const features = guild.features;
+      hasItem = features.has(constants4.DISCOVERABLE);
+    }
+    if (hasItem) {
+      const sessionId = getSessionId.getSessionId(guildId);
+      const queryId = getSessionId.getQueryId(guildId);
+      let tmp9 = null;
+      if (null != sessionId) {
+        tmp9 = null;
+        if (null != queryId) {
+          tmp9 = { search_session_id: sessionId, search_query_id: queryId };
+          const obj2 = { search_session_id: sessionId, search_query_id: queryId };
         }
-        return tmp11;
       }
+      return tmp9;
     }
   }
   return null;

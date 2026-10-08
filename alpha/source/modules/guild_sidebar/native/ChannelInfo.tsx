@@ -1,43 +1,41 @@
-// Module ID: 16196
-// Function ID: 16197
+// Module ID: 16456
+// Function ID: 16457
 // Name: ChannelInfo
-// Dependencies: [19, 7056, 2074, 4515, 4911, 4915, 1085, 21, 4896, 558, 576, 504, 11687, 7539, 16197, 16184, 5042, 1188, 16198, 16199, 16095, 5581, 11936, 16081, 16200, 12850, 2]
+// Dependencies: [19, 7243, 2086, 4707, 6040, 5111, 1085, 21, 5090, 558, 576, 504, 11752, 9261, 16457, 16444, 5411, 1200, 16458, 16459, 16355, 5891, 12009, 16341, 16460, 12999, 2]
 
-// Module 16196 (ChannelInfo)
+// Module 16456 (ChannelInfo)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import StageMediaHooks from "StageMediaHooks" /* 5581 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 11687 */;
-import useShowConnectedUserLimitDefault from "useShowConnectedUserLimit" /* 11936 */;
-import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 16095 */;
-import ChannelBadgeDefault from "ChannelBadge" /* 16184 */;
-import showChannelBadgeDefault from "showChannelBadge" /* 16197 */;
-import ChannelItemEmbeddedActivitiesDefault from "ChannelItemEmbeddedActivities" /* 16199 */;
-import useVoiceChannelStartTime from "useVoiceChannelStartTime" /* 16200 */;
+import StageMediaHooks from "StageMediaHooks" /* 5891 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 11752 */;
+import useShowConnectedUserLimitDefault from "useShowConnectedUserLimit" /* 12009 */;
+import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 16355 */;
+import ChannelBadgeDefault from "ChannelBadge" /* 16444 */;
+import showChannelBadgeDefault from "showChannelBadge" /* 16457 */;
+import ChannelItemEmbeddedActivitiesDefault from "ChannelItemEmbeddedActivities" /* 16459 */;
+import useVoiceChannelStartTime from "useVoiceChannelStartTime" /* 16460 */;
 import react from "react" /* 19 */;
-import NewChannelsStore from "NewChannelsStore" /* 7056 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import ReadStateStore from "ReadStateStore" /* 4911 */;
-import VoiceStateStore from "VoiceStateStore" /* 4915 */;
+import NewChannelsStore from "NewChannelsStore" /* 7243 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
+import VoiceStateStore from "VoiceStateStore" /* 5111 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channel;
 
 let Fonts;
 let c9;
 let metroImportAll;
 let tmp;
-const Badges = tmp(12850);
+const Badges = tmp(12999);
 ({ GuildFeatures: metroImportAll, Permissions: c9, Fonts } = Constants);
 const jsx = Fragment.jsx;
 let obj = { activeTimestamp: { fontFamily: Fonts.CODE_NORMAL, fontSize: 12, lineHeight: 16 } };
 let closure_11 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelInfo(channel) {
   let enableActivities;
   let enableConnectedUserLimit;
   let first;
@@ -71,7 +69,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp8);
     ({ guild, mentionsCount, isMentionLowImportance, isNewChannel } = stateFromStoresObject);
     const tmp11 = useEmbeddedAppsForChannelDefault(channel);
-    const tmpResult4 = channel(7539);
+    const tmpResult4 = channel(9261);
     const unreadThreadsCountForParent = tmpResult4.useUnreadThreadsCountForParent(channel.guild_id, channel.id);
     const obj2 = { mentionsCount, isNewChannel, postsWithUnreadsCount: unreadThreadsCountForParent, muted };
     if (showChannelBadgeDefault(obj2)) {
@@ -119,12 +117,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
             hasItem = features.has(constants.COMMUNITY);
           }
           if (hasItem) {
-            const tmpResult5 = channel(5042);
+            const tmpResult5 = channel(5411);
             if (tmpResult5.hasStream(voiceStates)) {
               let tmp26;
               const _Symbol = Symbol;
               if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-                const tmp28 = jsx(channel(1188).LiveTag, {});
+                const tmp28 = jsx(channel(1200).LiveTag, {});
                 cResult[13] = tmp28;
                 tmp26 = tmp28;
               } else {
@@ -137,7 +135,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
       if (null != enableActivities) {
         if (enableActivities) {
-          const tmpResult6 = channel(16198);
+          const tmpResult6 = channel(16458);
           if (tmpResult6.showChannelItemEmbeddedActivities(tmp11)) {
             if (cResult[14] === tmp11) {
               let tmp23;
@@ -207,7 +205,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[2] = channel.id;
   cResult[3] = fn;
   tmp8 = fn;
-}) : ((channel) => {
+}) : (function ChannelInfo(channel) {
   let enableActivities;
   let enableConnectedUserLimit;
   let guild;
@@ -233,7 +231,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   ({ guild, mentionsCount, isNewChannel } = stateFromStoresObject);
   const isMentionLowImportance = stateFromStoresObject.isMentionLowImportance;
   const tmp5 = useEmbeddedAppsForChannelDefault(channel);
-  const obj2 = channel(7539);
+  const obj2 = channel(9261);
   const postsWithUnreadsCount = obj2.useUnreadThreadsCountForParent(channel.guild_id, channel.id);
   if (showChannelBadgeDefault({ mentionsCount, isNewChannel, postsWithUnreadsCount, muted })) {
     const obj3 = { mentionCount: mentionsCount, isMentionLowImportance, isNewChannel, postsWithUnreadsCount: tmp18, muted };
@@ -253,25 +251,25 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           hasItem = features.has(constants.COMMUNITY);
         }
         if (hasItem) {
-          const tmpResult = channel(5042);
+          const tmpResult = channel(5411);
           if (tmpResult.hasStream(voiceStates)) {
-            tmp11Result = jsx(tmp(1188).LiveTag, {});
+            tmp11Result = jsx(tmp(1200).LiveTag, {});
           }
         }
       }
     }
     if (null != enableActivities) {
       if (enableActivities) {
-        const tmpResult2 = channel(16198);
+        const tmpResult2 = channel(16458);
         if (tmpResult2.showChannelItemEmbeddedActivities(tmp5)) {
-          tmp11Result = jsx(tmp4(16199), { embeddedApps: tmp5, muted });
+          tmp11Result = jsx(tmp4(16459), { embeddedApps: tmp5, muted });
         }
       }
     }
     if (null != isSubscriptionGated) {
       if (null != needSubscriptionToAccess) {
         if (isSubscriptionGated) {
-          tmp11Result = jsx(tmp4(16095), { locked: needSubscriptionToAccess });
+          tmp11Result = jsx(tmp4(16355), { locked: needSubscriptionToAccess });
         }
       }
     }
@@ -296,7 +294,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   return tmp11Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function LimitAndDurationInfo(channel) {
   let first;
   let hasMedia;
   let hasVideo;
@@ -317,7 +315,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     first = cResult[0];
   }
   if (cResult[1] !== channel) {
-    const fn = function o() {
+    const fn = function s() {
       const hasVideoResult = VoiceStateStore.hasVideo(channel.id);
       let isGuildStageVoiceResult = channel.isGuildStageVoice();
       if (isGuildStageVoiceResult) {
@@ -356,7 +354,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
               return tmp16;
             }
           }
-          const tmp18 = jsx(tmp(16081).ConnectedUserLimit, { userCount: voiceStatesCount, video: hasVideo, channel });
+          const tmp18 = jsx(tmp(16341).ConnectedUserLimit, { userCount: voiceStatesCount, video: hasVideo, channel });
           cResult[8] = channel;
           cResult[9] = hasVideo;
           cResult[10] = voiceStatesCount;
@@ -384,7 +382,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[6] = hasVideo || hasMedia;
   cResult[7] = obj4;
   tmp10 = obj4;
-}) : ((channel) => {
+}) : (function LimitAndDurationInfo(channel) {
   let hasMedia;
   let hasVideo;
   let selected;
@@ -415,7 +413,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }
   if (tmp4(obj2)) {
     const obj3 = { userCount: voiceStatesCount, video: hasVideo, channel };
-    const ConnectedUserLimit = tmp(16081).ConnectedUserLimit;
+    const ConnectedUserLimit = tmp(16341).ConnectedUserLimit;
     if (!hasVideo) {
       hasVideo = hasMedia;
     }
@@ -427,7 +425,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   return tmp6Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function DurationInfo(channel) {
   const obj = react2;
   const cResult = obj.c(5);
   channel = channel.channel;
@@ -459,7 +457,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     tmp8 = tmp10;
   }
   return tmp6;
-}) : ((channel) => {
+}) : (function DurationInfo(channel) {
   channel = channel.channel;
   const tmp = closure_11();
   const obj = useVoiceChannelStartTime;

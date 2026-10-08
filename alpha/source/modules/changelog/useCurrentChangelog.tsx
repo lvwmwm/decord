@@ -1,29 +1,30 @@
-// Module ID: 7775
-// Function ID: 7776
+// Module ID: 8096
+// Function ID: 8097
 // Name: useCurrentChangelog
-// Dependencies: [19, 2116, 4910, 2102, 558, 576, 573, 7776, 2]
+// Dependencies: [19, 2128, 7002, 2114, 558, 576, 573, 8097, 2]
 
-// Module 7775 (useCurrentChangelog)
+// Module 8096 (useCurrentChangelog)
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
-import ChangelogConstants from "ChangelogConstants" /* 2102 */;
-import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 7776 */;
+import ChangelogConstants from "ChangelogConstants" /* 2114 */;
+import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8097 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
-import ChangelogStore from "ChangelogStore" /* 4910 */;
+import LocaleStore from "LocaleStore" /* 2128 */;
+import ChangelogStore from "ChangelogStore" /* 7002 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, importDefault;
 
 const ChangelogLoadState = ChangelogConstants.ChangelogLoadState;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChangelog(id, arg1) {
   let changelog;
+  let closure_1;
   let first;
   _require = id;
-  let closure_1 = arg1;
+  importDefault = arg1;
   let tmp = _require;
   let tmp2 = changelog;
   let obj = require("react");
@@ -82,7 +83,22 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
                 }
                 const obj3 = { id, changelog: defaultChangelog, loaded: tmp9 !== ChangelogLoadState.NOT_LOADED };
                 cResult[13] = defaultChangelog;
-                cResult[14] = id;
+                class C {
+                  constructor() {
+                    let tmp2 = null != id;
+                    const tmp = id;
+                    if (tmp2) {
+                      tmp2 = null == changelog;
+                    }
+                    if (tmp2) {
+                      tmp2 = loadState === ChangelogLoadState.NOT_LOADED;
+                    }
+                    if (tmp2) {
+                      const obj = ChangeLogActionCreatorsDefault;
+                      changelog = obj.fetchChangelog(tmp, closure_1);
+                    }
+                  }
+                }
                 cResult[15] = tmp9 !== ChangelogLoadState.NOT_LOADED;
                 cResult[16] = obj3;
                 tmp19 = obj3;
@@ -98,7 +114,22 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
               }
             }
             const obj4 = { id, changelog, loaded: loadState !== ChangelogLoadState.NOT_LOADED };
-            cResult[17] = changelog;
+            class C {
+              constructor() {
+                let tmp2 = null != id;
+                const tmp = id;
+                if (tmp2) {
+                  tmp2 = null == changelog;
+                }
+                if (tmp2) {
+                  tmp2 = loadState === ChangelogLoadState.NOT_LOADED;
+                }
+                if (tmp2) {
+                  const obj = ChangeLogActionCreatorsDefault;
+                  changelog = obj.fetchChangelog(tmp, closure_1);
+                }
+              }
+            }
             cResult[18] = id;
             cResult[19] = loadState !== ChangelogLoadState.NOT_LOADED;
             cResult[20] = obj4;
@@ -107,29 +138,31 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
         }
       }
     }
-    const fn2 = function f() {
-      let tmp2 = null != id;
-      const tmp = id;
-      if (tmp2) {
-        tmp2 = null == changelog;
+    class C {
+      constructor() {
+        let tmp2 = null != id;
+        const tmp = id;
+        if (tmp2) {
+          tmp2 = null == changelog;
+        }
+        if (tmp2) {
+          tmp2 = loadState === ChangelogLoadState.NOT_LOADED;
+        }
+        if (tmp2) {
+          const obj = ChangeLogActionCreatorsDefault;
+          changelog = obj.fetchChangelog(tmp, closure_1);
+        }
       }
-      if (tmp2) {
-        tmp2 = loadState === ChangelogLoadState.NOT_LOADED;
-      }
-      if (tmp2) {
-        const obj = ChangeLogActionCreatorsDefault;
-        changelog = obj.fetchChangelog(tmp, closure_1);
-      }
-    };
+    }
     const items1 = [id, changelog, loadState, arg1];
     cResult[5] = changelog;
     cResult[6] = id;
     cResult[7] = loadState;
     cResult[8] = arg1;
-    cResult[9] = fn2;
+    cResult[9] = C;
     cResult[10] = items1;
     tmp11 = items1;
-    tmp10 = fn2;
+    tmp10 = C;
   }
   const fn = function h() {
     let changelogLoadStatus1;
@@ -153,7 +186,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
   cResult[4] = items2;
   tmp7 = items2;
   tmp6 = fn;
-}) : ((id, arg1) => {
+}) : (function useChangelog(id, arg1) {
   let changelog;
   let defaultChangelog;
   let defaultLoadState;
@@ -212,7 +245,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
 });
 let closure_7 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentChangelog() {
   let changelog;
   let changelog2;
   let loaded;
@@ -257,14 +290,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const stateFromStores1 = tmpResult4.useStateFromStores(tmp8, tmp9);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [ChangelogStore];
-    class C {
-      constructor() {
-        return ChangelogStore.getConfig();
-      }
-    }
+    const fn3 = function f() {
+      return ChangelogStore.getConfig();
+    };
     cResult[4] = items2;
-    cResult[5] = C;
-    tmp13 = C;
+    cResult[5] = fn3;
+    tmp13 = fn3;
     tmp12 = items2;
   } else {
     tmp12 = cResult[4];
@@ -279,17 +310,27 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[6] === stateFromStores2) {
     let tmp17;
+    let tmp20;
+    let tmp19;
     if (cResult[7] === stateFromStores1) {
       tmp17 = cResult[8];
     }
     const _Symbol = Symbol;
-    class C {
-      constructor() {
-        return ChangelogStore.getConfig();
-      }
+    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+      const items3 = [ChangelogStore];
+      const fn4 = function b() {
+        return ChangelogStore.overrideId();
+      };
+      cResult[9] = items3;
+      cResult[10] = fn4;
+      tmp20 = fn4;
+      tmp19 = items3;
+    } else {
+      tmp19 = cResult[9];
+      tmp20 = cResult[10];
     }
     const tmpResult6 = useStateFromStores;
-    const stateFromStores3 = tmpResult6.useStateFromStores(tmp20, tmp21);
+    const stateFromStores3 = tmpResult6.useStateFromStores(tmp19, tmp20);
     ({ changelog, loaded } = closure_7(stateFromStores1, stateFromStores));
     closure_7(stateFromStores1, stateFromStores);
     ({ changelog: changelog2, loaded: loaded2 } = closure_7(stateFromStores3, stateFromStores));
@@ -304,12 +345,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return tmp28;
         }
       }
-      const obj2 = { id: null, changelog: changelog2, loaded: loaded2, clientTooOld: false };
-      class C {
-        constructor() {
-          return ChangelogStore.getConfig();
-        }
-      }
+      const obj2 = { id: stateFromStores3, changelog: changelog2, loaded: loaded2, clientTooOld: false };
       cResult[11] = changelog2;
       cResult[12] = stateFromStores3;
       cResult[13] = loaded2;
@@ -347,7 +383,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[7] = stateFromStores1;
   cResult[8] = tmp18;
   tmp17 = tmp18;
-}) : (() => {
+}) : (function useCurrentChangelog() {
   let changelog;
   let changelog2;
   let loaded;

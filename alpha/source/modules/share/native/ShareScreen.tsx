@@ -1,28 +1,28 @@
-// Module ID: 13730
-// Function ID: 13731
+// Module ID: 13952
+// Function ID: 13953
 // Name: ShareScreen
-// Dependencies: [5, 32, 19, 17, 2055, 2051, 4515, 1085, 11322, 10605, 21, 4896, 587, 1369, 1126, 13731, 10724, 13732, 13733, 1252, 7528, 4907, 8049, 8844, 11346, 1987, 5716, 13734, 13735, 6026, 7509, 1615, 6017, 10727, 13736, 2]
+// Dependencies: [5, 32, 19, 17, 2067, 2063, 4707, 1085, 11576, 10202, 21, 5090, 587, 1381, 1126, 13953, 11577, 13954, 13955, 1264, 9251, 5101, 8458, 9203, 11615, 1999, 5299, 13956, 13957, 6212, 9232, 1627, 6203, 11588, 13958, 2]
 // Exports: default
 
-// Module 13730 (ShareScreen)
+// Module 13952 (ShareScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import HeaderShared from "HeaderShared" /* 7509 */;
-import UserRowConstants from "UserRowConstants" /* 10605 */;
-import ForwardConstants from "ForwardConstants" /* 11322 */;
-import ShareAttachmentsDefault from "ShareAttachments" /* 13734 */;
-import ShareEmbedDefault from "ShareEmbed" /* 13735 */;
+import HeaderShared from "HeaderShared" /* 9232 */;
+import UserRowConstants from "UserRowConstants" /* 10202 */;
+import ForwardConstants from "ForwardConstants" /* 11576 */;
+import ShareAttachmentsDefault from "ShareAttachments" /* 13956 */;
+import ShareEmbedDefault from "ShareEmbed" /* 13957 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import ChannelRecord from "ChannelRecord" /* 2067 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1369 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
 import size from "module_2" /* 2 */;
 
 let attachment_mimetypes, c4, channelId, closure_0, closure_1, closure_4, destination;
@@ -476,12 +476,12 @@ export default function ShareScreen(appEntryKey) {
     let tmp4Result;
     if (null != embed) {
       const obj = { attachments: sharedContent.attachments, isRevamp: true };
-      const items = [authStore3(ShareAttachmentsDefault, obj), ];
+      const items = [authStore4(ShareAttachmentsDefault, obj), ];
       embed = undefined;
       const tmp10 = ShareEmbedDefault;
-      const tmp4 = authStore4;
+      const tmp4 = authStore5;
       const tmp5 = closure_17;
-      const tmp6 = authStore3;
+      const tmp6 = authStore4;
       if (embed != null) {
         embed = tmp.embed;
       }
@@ -512,7 +512,7 @@ export default function ShareScreen(appEntryKey) {
         const obj = { count: tmp2 };
         subtitle = intl.formatToPlainString(intl4.t["3Fbkir"], obj);
       }
-      return authStore3(HeaderShared.GenericHeaderTitle, { title, subtitle, subtitleColor: "text-feedback-warning", variant: "redesign/heading-18/bold" });
+      return authStore4(HeaderShared.GenericHeaderTitle, { title, subtitle, subtitleColor: "text-feedback-warning", variant: "redesign/heading-18/bold" });
     },
     headerTitleAlign: "center",
     headerLeft: headerCloseButton,

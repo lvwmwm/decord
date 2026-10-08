@@ -1,23 +1,23 @@
-// Module ID: 12036
-// Function ID: 12037
+// Module ID: 12109
+// Function ID: 12110
 // Name: DiceRollBar
-// Dependencies: [19, 17, 4885, 11586, 21, 4896, 587, 558, 576, 504, 4618, 4897, 1188, 12037, 8521, 4892, 2]
+// Dependencies: [19, 17, 5079, 11649, 21, 5090, 587, 558, 576, 504, 4810, 5091, 1200, 12110, 9006, 5086, 2]
 
-// Module 12036 (DiceRollBar)
+// Module 12109 (DiceRollBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
-import DiceRollStore from "DiceRollStore" /* 11586 */;
+import native from "native" /* 1200 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
+import DiceRollStore from "DiceRollStore" /* 11649 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channelId, set, set2;
+let set, set2;
 
 let metroImportAll;
 let metroImportDefault;
@@ -33,7 +33,7 @@ let closure_11 = { code: "function DiceRollBarTsx1(){const{useReducedMotion,heig
 let closure_12 = { code: "function DiceRollBarTsx2(){const{rotation}=this.__closure;return{transform:[{rotate:rotation.get()+\"deg\"}]};}" };
 const __initData = { code: "function DiceRollBarTsx3(){const{useReducedMotion,height,opacity,withTiming,ANIMATION_DURATION_MS,DECELERATED_EASING}=this.__closure;if(useReducedMotion){return{height:height.get(),opacity:opacity.get()};}return{height:withTiming(height.get(),{duration:ANIMATION_DURATION_MS,easing:DECELERATED_EASING}),opacity:withTiming(opacity.get(),{duration:ANIMATION_DURATION_MS,easing:DECELERATED_EASING})};}" };
 const __initData2 = { code: "function DiceRollBarTsx4(){const{rotation}=this.__closure;return{transform:[{rotate:rotation.get()+\"deg\"}]};}" };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiceRollBar(channelId) {
   let duration;
   let flag;
   let sharedValue1;
@@ -141,7 +141,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[6] = items2;
   tmp15 = items2;
   tmp14 = N;
-}) : ((channelId) => {
+}) : (function DiceRollBar(channelId) {
   let duration;
   let items3;
   let items4;

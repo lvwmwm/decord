@@ -1,23 +1,23 @@
-// Module ID: 16326
-// Function ID: 16327
+// Module ID: 16586
+// Function ID: 16587
 // Name: GuildsBarSeparator
-// Dependencies: [19, 21, 4896, 587, 558, 576, 15988, 4618, 6577, 4586, 5983, 2]
+// Dependencies: [19, 21, 5090, 587, 558, 576, 16248, 4810, 6753, 4778, 6166, 2]
 
-// Module 16326 (GuildsBarSeparator)
+// Module 16586 (GuildsBarSeparator)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4586 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6577 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 15988 */;
+import useToken from "useToken" /* 4778 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6753 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16248 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp3;
-const NativeViewDefault = tmp3(5983);
+const NativeViewDefault = tmp3(6166);
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles((width) => {
   const obj = { separator: size };
@@ -27,14 +27,14 @@ let closure_4 = createStyles.createStyles((width) => {
 const __initData = { code: "function GuildsBarSeparatorTsx1(){const{panelTranslateX,guildItemSize}=this.__closure;return{transform:[{scaleX:Math.max(1,(panelTranslateX.get()+guildItemSize)/guildItemSize)}]};}" };
 const __initData2 = { code: "function GuildsBarSeparatorTsx2(){const{panelTranslateX,guildItemSize}=this.__closure;return{transform:[{scaleX:Math.max(1,(panelTranslateX.get()+guildItemSize)/guildItemSize)}]};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildItemSize) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildsBarHomeDrawerSeparator(guildItemSize) {
   let obj = react2;
   const cResult = obj.c(3);
   guildItemSize = guildItemSize.guildItemSize;
   const tmp3 = closure_4(guildItemSize);
   const obj2 = useHomeDrawerGesture;
   const panelTranslateX = obj2.useHomeDrawerState().panelTranslateX;
-  const fn = function o() {
+  const fn = function n() {
     let items;
     const obj = { transform: items };
     items = [{ scaleX: Math.max(1, (panelTranslateX.get() + guildItemSize) / guildItemSize) }];
@@ -59,13 +59,13 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildItemSize) 
   cResult[1] = tmp3.separator;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((guildItemSize) => {
+}) : (function GuildsBarHomeDrawerSeparator(guildItemSize) {
   guildItemSize = guildItemSize.guildItemSize;
   const tmp = closure_4(guildItemSize);
   let obj = useHomeDrawerGesture;
   const panelTranslateX = obj.useHomeDrawerState().panelTranslateX;
   const obj2 = ReanimatedRexport;
-  const fn = function n() {
+  const fn = function o() {
     let items;
     const obj = { transform: items };
     items = [{ scaleX: Math.max(1, (panelTranslateX.get() + guildItemSize) / guildItemSize) }];
@@ -80,7 +80,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildItemSize) 
   return jsx(ReanimatedNativeViewDefault, { style: items });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildsBarSeparator() {
   let tmp6;
   const obj = react2;
   const cResult = obj.c(4);
@@ -108,7 +108,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     tmp6 = cResult[1];
   }
   return tmp6;
-}) : (() => {
+}) : (function GuildsBarSeparator() {
   let tmp5Result;
   const obj = useToken;
   const token = obj.useToken(nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE);

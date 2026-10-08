@@ -1,15 +1,15 @@
-// Module ID: 16219
-// Function ID: 16220
+// Module ID: 16479
+// Function ID: 16480
 // Name: OnboardingV2Utils
-// Dependencies: [2070, 2074, 1377, 1085, 558, 576, 504, 6773, 2]
+// Dependencies: [2082, 2086, 1389, 1085, 558, 576, 504, 6949, 2]
 // Exports: canSeeCreatorMonetizationOnboardingV2Upsell
 
-// Module 16219 (OnboardingV2Utils)
+// Module 16479 (OnboardingV2Utils)
 import Constants from "Constants" /* 1085 */;
-import GuildRecord from "GuildRecord" /* 2070 */;
-import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 6773 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import UserStore from "UserStore" /* 1377 */;
+import GuildRecord from "GuildRecord" /* 2082 */;
+import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 6949 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let _require;
 const isGuildOwner = GuildRecord.isGuildOwner;
 let items = [, , , , ];
 ({ CREATOR_MONETIZABLE_PROVISIONAL: arr[0], CREATOR_MONETIZABLE: arr[1], CREATOR_MONETIZABLE_WHITEGLOVE: arr[2], CREATOR_MONETIZABLE_DISABLED: arr[3], CREATOR_MONETIZABLE_RESTRICTED: arr[4] } = Constants.GuildFeatures);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanSeeCreatorMonetizationOnboardingV2Upsell(arg0) {
   let closure_0;
   let currentUser;
   let first;
@@ -99,7 +99,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[7] = isGuildOwner(stateFromStores, stateFromStores1);
     const tmp14 = isGuildOwner(stateFromStores, stateFromStores1);
   }
-}) : ((arg0) => {
+}) : (function useCanSeeCreatorMonetizationOnboardingV2Upsell(arg0) {
   let closure_0;
   let currentUser;
   let stateFromStores;

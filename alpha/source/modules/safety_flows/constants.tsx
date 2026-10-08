@@ -1,9 +1,9 @@
-// Module ID: 18105
-// Function ID: 18106
+// Module ID: 18392
+// Function ID: 18393
 // Name: constants
 // Dependencies: [2]
 
-// Module 18105 (constants)
+// Module 18392 (constants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/safety_flows/constants.tsx");

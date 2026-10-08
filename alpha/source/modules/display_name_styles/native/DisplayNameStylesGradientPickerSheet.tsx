@@ -1,25 +1,25 @@
-// Module ID: 15185
-// Function ID: 15186
+// Module ID: 15447
+// Function ID: 15448
 // Name: DisplayNameStylesGradientPickerSheet
-// Dependencies: [32, 19, 17, 1085, 21, 4896, 587, 15186, 558, 576, 10649, 1394, 15181, 4861, 1252, 4860, 14437, 6652, 1126, 5601, 15178, 1103, 5612, 15187, 12, 5916, 4583, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5090, 587, 15448, 558, 576, 10249, 1406, 15443, 5055, 1264, 5054, 14662, 6829, 1126, 5375, 15440, 1103, 5387, 15449, 12, 6189, 4775, 2]
 
-// Module 15185 (DisplayNameStylesGradientPickerSheet)
+// Module 15447 (DisplayNameStylesGradientPickerSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import HapticUtils from "HapticUtils" /* 4861 */;
-import ColorPickerConsts from "ColorPickerConsts" /* 15186 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import HapticUtils from "HapticUtils" /* 5055 */;
+import ColorPickerConsts from "ColorPickerConsts" /* 15448 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, importDefault, selectedColors, tmpResult;
+let BottomSheet, importDefault, tmpResult;
 
 let StyleSheet;
 let c10;
@@ -60,7 +60,7 @@ const merged1 = Object.assign(StyleSheet.absoluteFillObject);
 size1 = { width: ColorPickerConsts.CHECKMARK_SIZE, height: ColorPickerConsts.CHECKMARK_SIZE };
 obj10 = { alignSelf: "stretch", flexDirection: "row", marginHorizontal: nativeDefault.space.PX_8 };
 let closure_11 = createStyles(obj);
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedColors) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameStylesColorPickerSheet(selectedColors) {
   let body;
   let closure_1;
   let colors;
@@ -101,7 +101,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedColors) => {
         colors = first1.colors;
       }
       if (cResult[6] !== colors) {
-        class D {
+        class M {
           constructor(arg0) {
             closure_0 = selectedColors;
             num = closure_4[selectedColors];
@@ -115,7 +115,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedColors) => {
                           closure_0 = arg0;
                           const obj = onSelectColors(displayNameStylesEffectConfig[13]);
                           const result = obj.triggerHapticFeedback(onSelectColors(displayNameStylesEffectConfig[13]).HapticFeedbackTypes.IMPACT_MEDIUM);
-                          closure_1_5((arr) => arr.map(function() { /* body not rendered: F155234 */ }));
+                          closure_1_5((arr) => arr.map(function() { /* body not rendered: F156778 */ }));
                         },
               actionButtonVariant: "primary"
             };
@@ -124,9 +124,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedColors) => {
           }
         }
         cResult[6] = colors;
-        cResult[7] = D;
+        cResult[7] = M;
       } else {
-        class D {
+        class M {
           constructor(arg0) {
             closure_0 = selectedColors;
             num = closure_4[selectedColors];
@@ -140,7 +140,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedColors) => {
                           closure_0 = arg0;
                           const obj = onSelectColors(displayNameStylesEffectConfig[13]);
                           const result = obj.triggerHapticFeedback(onSelectColors(displayNameStylesEffectConfig[13]).HapticFeedbackTypes.IMPACT_MEDIUM);
-                          closure_1_5((arr) => arr.map(function() { /* body not rendered: F155234 */ }));
+                          closure_1_5((arr) => arr.map(function() { /* body not rendered: F156778 */ }));
                         },
               actionButtonVariant: "primary"
             };
@@ -149,7 +149,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedColors) => {
           }
         }
       }
-      D = tmp18;
+      M = tmp18;
       class R {
         constructor() {
           const first = closure_3[0];
@@ -255,19 +255,19 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedColors) => {
             }
           }
           if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-            class A {
-              constructor(arg0) {
-                const items = [...arg0];
-                closure_5(items);
+            class W {
+              constructor(color) {
+                const obj = onSelectColors(displayNameStylesEffectConfig[21]);
+                return obj.int2hex(color);
               }
             }
-            cResult[17] = tmp30;
-            tmp29 = tmp30;
+            cResult[17] = W;
+            tmp29 = W;
           } else {
-            class A {
-              constructor(arg0) {
-                const items = [...arg0];
-                closure_5(items);
+            class W {
+              constructor(color) {
+                const obj = onSelectColors(displayNameStylesEffectConfig[21]);
+                return obj.int2hex(color);
               }
             }
           }
@@ -290,10 +290,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedColors) => {
             }
           }
         } else {
-          class A {
-            constructor(arg0) {
-              const items = [...arg0];
-              closure_5(items);
+          class W {
+            constructor(color) {
+              const obj = onSelectColors(displayNameStylesEffectConfig[21]);
+              return obj.int2hex(color);
             }
           }
         }
@@ -314,10 +314,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedColors) => {
           }
         }
         if (cResult[20] === tmp4.gradient) {
-          class A {
-            constructor(arg0) {
-              const items = [...arg0];
-              closure_5(items);
+          class W {
+            constructor(color) {
+              const obj = onSelectColors(displayNameStylesEffectConfig[21]);
+              return obj.int2hex(color);
             }
           }
           const _Array = Array;
@@ -325,10 +325,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedColors) => {
           const dropperContainer = tmp4.dropperContainer;
           const arr = Array.from(obj6);
           if (cResult[23] === tmp18) {
-            class A {
-              constructor(arg0) {
-                const items = [...arg0];
-                closure_5(items);
+            class W {
+              constructor(color) {
+                const obj = onSelectColors(displayNameStylesEffectConfig[21]);
+                return obj.int2hex(color);
               }
             }
           }
@@ -339,7 +339,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedColors) => {
             const obj = {
               style: closure_1.dropper,
               onPress() {
-                return D(index);
+                return M(index);
               },
               accessibilityLabel: intl.formatToPlainString(onSelectColors(displayNameStylesEffectConfig[18]).t.n5Ve0L, obj2),
               accessibilityRole: "button",
@@ -347,7 +347,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedColors) => {
             };
             intl = onSelectColors(displayNameStylesEffectConfig[18]).intl;
             obj2 = { number: index + 1 };
-            return closure_1_8(D, obj, index);
+            return closure_1_8(M, obj, index);
           });
           class R {
             constructor() {
@@ -369,11 +369,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedColors) => {
           cResult[25] = arr;
           cResult[26] = mapped1;
         }
-        let obj7 = { style: gradient, colors: tmp28, start: tmp33, end: tmp34 };
+        let obj7 = { style: gradient, colors: tmp28, start: tmp32, end: tmp33 };
         cResult[20] = tmp4.gradient;
         cResult[21] = tmp28;
         cResult[22] = closure_8(tmp7(displayNameStylesEffectConfig[22]), obj7);
-        const tmp37 = closure_8(tmp7(displayNameStylesEffectConfig[22]), obj7);
+        const tmp36 = closure_8(tmp7(displayNameStylesEffectConfig[22]), obj7);
       }
       let obj8 = { title: name, trailing: tmp22 };
       cResult[12] = displayNameStylesEffectConfig.name;
@@ -384,10 +384,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedColors) => {
     let num = 3;
     cResult[3] = displayNameStylesEffectConfig.defaultColors;
     if (tmp8[0] != null) {
-      class A {
-        constructor(arg0) {
-          const items = [...arg0];
-          closure_5(items);
+      class W {
+        constructor(color) {
+          const obj = onSelectColors(displayNameStylesEffectConfig[21]);
+          return obj.int2hex(color);
         }
       }
     }
@@ -423,7 +423,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedColors) => {
   cResult[1] = onSelectColors;
   cResult[2] = fn;
   tmp10 = fn;
-}) : ((selectedColors) => {
+}) : (function DisplayNameStylesColorPickerSheet(selectedColors) {
   let Button;
   let Button2;
   let arr2;

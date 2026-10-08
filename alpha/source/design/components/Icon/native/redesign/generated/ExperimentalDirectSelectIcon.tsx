@@ -1,14 +1,14 @@
-// Module ID: 16585
-// Function ID: 16586
+// Module ID: 16840
+// Function ID: 16841
 // Name: ExperimentalDirectSelectIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 16586, 4585, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 16841, 4777, 2]
 
-// Module 16585 (ExperimentalDirectSelectIcon)
+// Module 16840 (ExperimentalDirectSelectIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4585 */;
-import AssetRegistry from "AssetRegistry" /* 16586 */;
+import BaseIconImage2 from "BaseIconImage" /* 4777 */;
+import AssetRegistry from "AssetRegistry" /* 16841 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 
 let closure_3 = ["style", "color"];
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExperimentalDirectSelectIcon(arg0) {
   let INTERACTIVE_ICON_DEFAULT;
   let color;
   let style;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4585).BaseIconImage;
+  const BaseIconImage = tmp(4777).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;
@@ -67,7 +67,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = tmp5;
   cResult[8] = tmp14;
   tmp12 = tmp14;
-}) : ((color) => {
+}) : (function ExperimentalDirectSelectIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   const style = color.style;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {

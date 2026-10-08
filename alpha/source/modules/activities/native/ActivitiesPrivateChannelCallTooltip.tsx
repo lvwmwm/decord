@@ -1,22 +1,21 @@
-// Module ID: 12477
-// Function ID: 12478
+// Module ID: 12573
+// Function ID: 12574
 // Name: ActivitiesPrivateChannelCallTooltip
-// Dependencies: [19, 17, 4885, 2011, 21, 4896, 558, 576, 504, 4618, 4897, 1126, 5601, 1188, 2]
+// Dependencies: [19, 17, 5079, 2023, 21, 5090, 558, 576, 504, 4810, 5091, 1126, 5375, 1200, 2]
 
-// Module 12477 (ActivitiesPrivateChannelCallTooltip)
+// Module 12573 (ActivitiesPrivateChannelCallTooltip)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 2011 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
+import Constants from "Constants" /* 2023 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import createStyles from "createStyles" /* 4896 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
-let onClosePress;
 
 let items;
 let obj2;
@@ -31,7 +30,8 @@ items = [{ rotateZ: "225deg" }];
 let closure_9 = createStyles.createStyles(obj);
 const __initData = { code: "function ActivitiesPrivateChannelCallTooltipTsx1(){const{withRepeat,withSequence,withTiming,OFFSET,translateBounceOffset,TIMING_CONFIG}=this.__closure;return{transform:[{translateY:withRepeat(withSequence(withTiming(OFFSET,{duration:0}),withTiming(OFFSET+translateBounceOffset,TIMING_CONFIG),withTiming(OFFSET,TIMING_CONFIG)),10)}]};}" };
 const __initData2 = { code: "function ActivitiesPrivateChannelCallTooltipTsx2(){const{withRepeat,withSequence,withTiming,OFFSET,translateBounceOffset,TIMING_CONFIG}=this.__closure;return{transform:[{translateY:withRepeat(withSequence(withTiming(OFFSET,{duration:0}),withTiming(OFFSET+translateBounceOffset,TIMING_CONFIG),withTiming(OFFSET,TIMING_CONFIG)),10)}]};}" };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClosePress) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitiesPrivateChannelCallTooltip(onClosePress) {
+  let arrow;
   let num3;
   let tmp5;
   let tmp6;
@@ -40,12 +40,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClosePress) => {
   let useReducedMotion;
   const tmp = num3;
   let obj = num3(576);
-  const cResult = obj.c(23);
+  const cResult = obj.c(21);
   onClosePress = onClosePress.onClosePress;
   const tmp4 = closure_9();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [AccessibilityStore];
-    const fn = function p() {
+    const fn = function w() {
       return useReducedMotion.useReducedMotion;
     };
     cResult[0] = items;
@@ -60,7 +60,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClosePress) => {
   if (tmpResult.useStateFromStores(tmp5, tmp6)) {
     num3 = 0;
   }
-  const tmpResult2 = tmp(4618);
+  const tmpResult2 = tmp(4810);
   class F {
     constructor() {
       let items;
@@ -84,92 +84,83 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClosePress) => {
       return obj;
     }
   }
-  let obj2 = { withRepeat: tmp(4618).withRepeat, withSequence: tmp(4618).withSequence, withTiming: tmp(4897).withTiming, OFFSET, translateBounceOffset: num3, TIMING_CONFIG };
+  let obj2 = { withRepeat: tmp(4810).withRepeat, withSequence: tmp(4810).withSequence, withTiming: tmp(5091).withTiming, OFFSET, translateBounceOffset: num3, TIMING_CONFIG };
   F.__closure = obj2;
   F.__workletHash = 4621705591670;
   F.__initData = __initData;
   const animatedStyle = tmpResult2.useAnimatedStyle(F);
   if (cResult[2] === animatedStyle) {
     let tmp9;
-    let tmp10;
-    let tmp12;
     let tmp11;
-    let tmp16;
-    let tmp18;
+    let tmp10;
+    let tmp15;
+    let tmp17;
     if (cResult[3] === tmp4.tooltipContainer) {
       tmp9 = cResult[4];
     }
-    ({ tooltip, tooltipText } = tmp4);
-    if (cResult[5] !== tmp4.arrow) {
-      const items1 = [tmp4.arrow];
-      cResult[5] = tmp4.arrow;
-      cResult[6] = items1;
-      tmp10 = items1;
-    } else {
-      tmp10 = cResult[6];
-    }
     const _Symbol = Symbol;
-    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+    ({ tooltip, tooltipText, arrow } = tmp4);
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const intl = tmp(1126).intl;
       let obj3 = { helpdeskUrl };
       const formatResult = intl.format(tmp(1126).t.xAW71b, obj3);
       const intl2 = tmp(1126).intl;
       const stringResult = intl2.string(tmp(1126).t.HOPqzR);
-      cResult[7] = formatResult;
-      cResult[8] = stringResult;
-      tmp12 = stringResult;
-      tmp11 = formatResult;
+      cResult[5] = formatResult;
+      cResult[6] = stringResult;
+      tmp11 = stringResult;
+      tmp10 = formatResult;
     } else {
-      tmp11 = cResult[7];
-      tmp12 = cResult[8];
+      tmp10 = cResult[5];
+      tmp11 = cResult[6];
     }
     const _Symbol2 = Symbol;
     const closeButtonWrapper = tmp4.closeButtonWrapper;
-    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       const intl3 = tmp(1126).intl;
       const stringResult1 = intl3.string(tmp(1126).t["NX+WJN"]);
-      cResult[9] = stringResult1;
-      tmp16 = stringResult1;
+      cResult[7] = stringResult1;
+      tmp15 = stringResult1;
     } else {
-      tmp16 = cResult[9];
+      tmp15 = cResult[7];
     }
-    if (cResult[10] !== onClosePress) {
-      const tmp20 = jsx(tmp(5601).Button, { text: tmp16, onPress: onClosePress, variant: "secondary", size: "sm", grow: true });
-      cResult[10] = onClosePress;
-      cResult[11] = tmp20;
-      tmp18 = tmp20;
+    if (cResult[8] !== onClosePress) {
+      const tmp19 = jsx(tmp(5375).Button, { text: tmp15, onPress: onClosePress, variant: "secondary", size: "sm", grow: true });
+      cResult[8] = onClosePress;
+      cResult[9] = tmp19;
+      tmp17 = tmp19;
     } else {
-      tmp18 = cResult[11];
+      tmp17 = cResult[9];
     }
-    if (cResult[12] === tmp4.closeButtonWrapper) {
-      let tmp21;
-      if (cResult[13] === tmp18) {
-        tmp21 = cResult[14];
+    if (cResult[10] === tmp4.closeButtonWrapper) {
+      let tmp20;
+      if (cResult[11] === tmp17) {
+        tmp20 = cResult[12];
       }
-      if (cResult[15] === tmp4.tooltip) {
-        if (cResult[16] === tmp4.tooltipText) {
-          if (cResult[17] === tmp21) {
-            if (cResult[20] === tmp25) {
-              let tmp28;
-              if (cResult[21] === tmp9) {
-                tmp28 = cResult[22];
+      if (cResult[13] === tmp4.arrow) {
+        if (cResult[14] === tmp4.tooltip) {
+          if (cResult[15] === tmp4.tooltipText) {
+            if (cResult[18] === tmp24) {
+              let tmp27;
+              if (cResult[19] === tmp9) {
+                tmp27 = cResult[20];
               }
-              return tmp28;
+              return tmp27;
             }
-            const tmp31 = jsx(ReanimatedRexportDefault.View, { style: tmp9, children: tmp25 });
-            cResult[20] = tmp25;
-            cResult[21] = tmp9;
-            cResult[22] = tmp31;
-            tmp28 = tmp31;
+            const tmp30 = jsx(ReanimatedRexportDefault.View, { style: tmp9, children: tmp24 });
+            cResult[18] = tmp24;
+            cResult[19] = tmp9;
+            cResult[20] = tmp30;
+            tmp27 = tmp30;
           }
         }
       }
-      cResult[15] = tmp4.tooltip;
-      cResult[16] = tmp4.tooltipText;
-      cResult[17] = tmp21;
-      cResult[18] = tmp10;
-      cResult[19] = jsx(tmp(1188).Tooltip, { containerStyle: tooltip, labelStyle: tooltipText, arrowStyle: tmp10, label: tmp11, title: tmp12, children: tmp21 });
-      jsx(tmp(1188).Tooltip, { containerStyle: tooltip, labelStyle: tooltipText, arrowStyle: tmp10, label: tmp11, title: tmp12, children: tmp21 });
+      cResult[13] = tmp4.arrow;
+      cResult[14] = tmp4.tooltip;
+      cResult[15] = tmp4.tooltipText;
+      cResult[16] = tmp20;
+      cResult[17] = jsx(tmp(1200).Tooltip, { containerStyle: tooltip, labelStyle: tooltipText, arrowStyle: arrow, label: tmp10, title: tmp11, children: tmp20 });
+      jsx(tmp(1200).Tooltip, { containerStyle: tooltip, labelStyle: tooltipText, arrowStyle: arrow, label: tmp10, title: tmp11, children: tmp20 });
       class F {
         constructor() {
           let items;
@@ -194,8 +185,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClosePress) => {
         }
       }
     }
-    const tmp24 = <View style={closeButtonWrapper}>{tmp18}</View>;
-    cResult[12] = tmp4.closeButtonWrapper;
+    const tmp23 = <View style={closeButtonWrapper}>{tmp17}</View>;
+    cResult[10] = tmp4.closeButtonWrapper;
     class F {
       constructor() {
         let items;
@@ -219,20 +210,19 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClosePress) => {
         return obj;
       }
     }
-    cResult[13] = tmp18;
-    cResult[14] = tmp24;
-    tmp21 = tmp24;
+    cResult[11] = tmp17;
+    cResult[12] = tmp23;
+    tmp20 = tmp23;
   }
-  const items2 = [tmp4.tooltipContainer, animatedStyle];
+  const items1 = [tmp4.tooltipContainer, animatedStyle];
   cResult[2] = animatedStyle;
   cResult[3] = tmp4.tooltipContainer;
-  cResult[4] = items2;
-  tmp9 = items2;
-}) : ((onClosePress) => {
+  cResult[4] = items1;
+  tmp9 = items1;
+}) : (function ActivitiesPrivateChannelCallTooltip(onClosePress) {
   let intl;
   let intl2;
   let intl3;
-  let items2;
   let obj5;
   let useReducedMotion;
   let num;
@@ -245,45 +235,42 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClosePress) => {
   if (obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion)) {
     num = 0;
   }
-  const tmp2Result = tmp2(4618);
-  class T {
-    constructor() {
-      let items;
-      let obj5;
-      let withRepeat;
-      let withSequence;
-      let withTimingResult;
-      let withTimingResult1;
-      const obj = { transform: items };
-      const obj2 = { translateY: withRepeat(withSequence(withTimingResult, withTimingResult1, obj5.withTiming(c7, TIMING_CONFIG)), 10) };
-      withRepeat = ReanimatedRexport.withRepeat;
-      ReanimatedRexport;
-      withSequence = ReanimatedRexport.withSequence;
-      ReanimatedRexport;
-      const obj3 = timing;
-      withTimingResult = obj3.withTiming(c7, { duration: 0 });
-      const obj4 = timing;
-      withTimingResult1 = obj4.withTiming(c7 + num, TIMING_CONFIG);
-      items = [obj2];
-      obj5 = timing;
-      return obj;
-    }
-  }
-  let obj2 = { withRepeat: tmp2(4618).withRepeat, withSequence: tmp2(4618).withSequence, withTiming: tmp2(4897).withTiming, OFFSET, translateBounceOffset: num, TIMING_CONFIG };
-  T.__closure = obj2;
-  T.__workletHash = 10615395921877;
-  T.__initData = __initData2;
-  const animatedStyle = tmp2Result.useAnimatedStyle(T);
+  const fn = function p() {
+    let items;
+    let obj5;
+    let withRepeat;
+    let withSequence;
+    let withTimingResult;
+    let withTimingResult1;
+    const obj = { transform: items };
+    const obj2 = { translateY: withRepeat(withSequence(withTimingResult, withTimingResult1, obj5.withTiming(c7, TIMING_CONFIG)), 10) };
+    withRepeat = ReanimatedRexport.withRepeat;
+    ReanimatedRexport;
+    withSequence = ReanimatedRexport.withSequence;
+    ReanimatedRexport;
+    const obj3 = timing;
+    withTimingResult = obj3.withTiming(c7, { duration: 0 });
+    const obj4 = timing;
+    withTimingResult1 = obj4.withTiming(c7 + num, TIMING_CONFIG);
+    items = [obj2];
+    obj5 = timing;
+    return obj;
+  };
+  const tmp2Result = tmp2(4810);
+  let obj2 = { withRepeat: tmp2(4810).withRepeat, withSequence: tmp2(4810).withSequence, withTiming: tmp2(5091).withTiming, OFFSET, translateBounceOffset: num, TIMING_CONFIG };
+  fn.__closure = obj2;
+  fn.__workletHash = 10615395921877;
+  fn.__initData = __initData2;
+  const animatedStyle = tmp2Result.useAnimatedStyle(fn);
   const items1 = [tmp.tooltipContainer, animatedStyle];
   View = ReanimatedRexportDefault.View;
-  let obj4 = { containerStyle: tmp.tooltip, labelStyle: tmp.tooltipText, arrowStyle: items2, label: intl.format(tmp2(1126).t.xAW71b, obj5), title: intl2.string(tmp2(1126).t.HOPqzR), children: null };
-  items2 = [tmp.arrow];
-  const Tooltip = tmp2(1188).Tooltip;
+  let obj4 = { containerStyle: tmp.tooltip, labelStyle: tmp.tooltipText, arrowStyle: tmp.arrow, label: intl.format(tmp2(1126).t.xAW71b, obj5), title: intl2.string(tmp2(1126).t.HOPqzR), children: null };
+  const Tooltip = tmp2(1200).Tooltip;
   intl = tmp2(1126).intl;
   obj5 = { helpdeskUrl };
   intl2 = tmp2(1126).intl;
   ({ text: intl3.string(tmp2(1126).t["NX+WJN"]), onPress: onClosePress, variant: "secondary", size: "sm", grow: true });
-  const Button = tmp2(5601).Button;
+  const Button = tmp2(5375).Button;
   intl3 = tmp2(1126).intl;
   return <View style={items1}>{null}</View>;
 });

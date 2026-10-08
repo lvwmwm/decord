@@ -1,18 +1,16 @@
-// Module ID: 11606
-// Function ID: 11607
+// Module ID: 11658
+// Function ID: 11659
 // Name: useTypingText
-// Dependencies: [32, 1377, 558, 576, 5048, 504, 1126, 2]
+// Dependencies: [32, 1389, 558, 576, 5405, 504, 1126, 2]
 
-// Module 11606 (useTypingText)
-import NicknameUtilsDefault from "NicknameUtils" /* 5048 */;
+// Module 11658 (useTypingText)
+import NicknameUtilsDefault from "NicknameUtils" /* 5405 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channelId;
-
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTypingText(channelId) {
   let first;
   let tmp10;
   let tmp11;
@@ -130,7 +128,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[5] = items1;
   tmp7 = items1;
   tmp6 = fn;
-}) : ((channelId) => {
+}) : (function useTypingText(channelId) {
   let tmp4;
   let tmp5;
   let tmp6;

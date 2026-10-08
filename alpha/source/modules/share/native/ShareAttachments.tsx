@@ -1,21 +1,21 @@
-// Module ID: 13734
-// Function ID: 13735
+// Module ID: 13956
+// Function ID: 13957
 // Name: ShareAttachments
-// Dependencies: [19, 17, 21, 4618, 5612, 1188, 4896, 587, 558, 576, 4897, 4733, 1126, 11056, 7287, 2]
+// Dependencies: [19, 17, 21, 4810, 5387, 1200, 5090, 587, 558, 576, 5091, 4927, 1126, 11884, 7741, 2]
 
-// Module 13734 (ShareAttachments)
+// Module 13956 (ShareAttachments)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import ColorUtils from "ColorUtils" /* 4733 */;
-import timing from "timing" /* 4897 */;
-import LinearGradientDefault from "LinearGradient" /* 5612 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 7287 */;
-import AttachmentPreviewDefault from "AttachmentPreview" /* 11056 */;
+import native from "native" /* 1200 */;
+import ColorUtils from "ColorUtils" /* 4927 */;
+import timing from "timing" /* 5091 */;
+import LinearGradientDefault from "LinearGradient" /* 5387 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 7741 */;
+import AttachmentPreviewDefault from "AttachmentPreview" /* 11884 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ const __initData3 = { code: "function ShareAttachmentsTsx3(event){const{contentO
 const __initData4 = { code: "function ShareAttachmentsTsx4(){const{withTiming,contentOffset,GRADIENT_EASING_CONFIG}=this.__closure;return{opacity:withTiming(contentOffset.get()<=0?0:1,GRADIENT_EASING_CONFIG)};}" };
 const __initData5 = { code: "function ShareAttachmentsTsx5(){const{withTiming,contentOffset,layoutWidth,contentWidth,GRADIENT_EASING_CONFIG}=this.__closure;return{opacity:withTiming(contentOffset.get()+layoutWidth.get()>=contentWidth.get()?0:1,GRADIENT_EASING_CONFIG)};}" };
 const __initData6 = { code: "function ShareAttachmentsTsx6(event){const{contentOffset,contentWidth,layoutWidth}=this.__closure;contentOffset.set(event.contentOffset.x);contentWidth.set(event.contentSize.width);layoutWidth.set(event.layoutMeasurement.width);}" };
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareAttachments(arg0) {
   let attachmentPreview;
   let attachments;
   let isRevamp;
@@ -382,7 +382,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[9] = tmp14;
     cResult[10] = items4;
   }
-}) : ((arg0) => {
+}) : (function ShareAttachments(arg0) {
   let attachments;
   let closure_0;
   let intl;

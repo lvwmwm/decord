@@ -1,11 +1,11 @@
-// Module ID: 15820
-// Function ID: 15821
+// Module ID: 16079
+// Function ID: 16080
 // Name: useAuthorizedSlayerApplications
-// Dependencies: [19, 6609, 558, 576, 504, 11161, 6672, 2]
+// Dependencies: [19, 6786, 558, 576, 504, 11283, 6849, 2]
 
-// Module 15820 (useAuthorizedSlayerApplications)
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6609 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6672 */;
+// Module 16079 (useAuthorizedSlayerApplications)
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6786 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6849 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -15,15 +15,15 @@ const AuthorizedAppsStore = AuthorizedAppsStore2;
 let _require, importDefault;
 
 const FetchState = AuthorizedAppsStore2.FetchState;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuthorizedSlayerApplications(arg0, arg1) {
   let closure_0;
   let closure_1;
   let fetchState;
   let obj2;
   let tmp10;
   let tmp11;
-  let tmp17;
   let tmp18;
+  let tmp19;
   let tmp4;
   let tmp5;
   let tmp8;
@@ -54,7 +54,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     tmp8 = cResult[2];
   }
   if (cResult[3] !== arg0) {
-    const fn2 = function f() {
+    const fn2 = function h() {
       let newestTokensForNonChildrenApplications;
       if (closure_0) {
         newestTokensForNonChildrenApplications = obj.getNewestTokensForNonChildrenApplications();
@@ -78,28 +78,37 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       let tmp15;
       const _Symbol = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const fn3 = function v(application) {
-          const obj = closure_0(dependencyMap[5]);
-          return obj.isSocialLayerSDKAuthorization(application.application, application.scopes);
-        };
-        cResult[8] = fn3;
-        tmp14 = fn3;
+        class F {
+          constructor(application) {
+            const obj = closure_0(dependencyMap[5]);
+            return obj.isSocialLayerSDKAuthorization(application.application, application.scopes);
+          }
+        }
+        cResult[8] = F;
+        tmp14 = F;
       } else {
-        tmp14 = cResult[8];
+        class F {
+          constructor(application) {
+            const obj = closure_0(dependencyMap[5]);
+            return obj.isSocialLayerSDKAuthorization(application.application, application.scopes);
+          }
+        }
       }
       const _Symbol2 = Symbol;
       if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        class A {
+        class F {
           constructor(application) {
-            return application.application;
+            const obj = closure_0(dependencyMap[5]);
+            return obj.isSocialLayerSDKAuthorization(application.application, application.scopes);
           }
         }
-        cResult[9] = A;
-        tmp15 = A;
+        cResult[9] = tmp16;
+        tmp15 = tmp16;
       } else {
-        class A {
+        class F {
           constructor(application) {
-            return application.application;
+            const obj = closure_0(dependencyMap[5]);
+            return obj.isSocialLayerSDKAuthorization(application.application, application.scopes);
           }
         }
       }
@@ -109,31 +118,35 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       cResult[7] = mapped;
       tmp13 = mapped;
     } else {
-      class A {
+      class F {
         constructor(application) {
-          return application.application;
+          const obj = closure_0(dependencyMap[5]);
+          return obj.isSocialLayerSDKAuthorization(application.application, application.scopes);
         }
       }
     }
     tmp11 = tmp13;
   } else {
-    class A {
+    class F {
       constructor(application) {
-        return application.application;
+        const obj = closure_0(dependencyMap[5]);
+        return obj.isSocialLayerSDKAuthorization(application.application, application.scopes);
       }
     }
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      class A {
+      class F {
         constructor(application) {
-          return application.application;
+          const obj = closure_0(dependencyMap[5]);
+          return obj.isSocialLayerSDKAuthorization(application.application, application.scopes);
         }
       }
       cResult[5] = tmp12;
       tmp11 = tmp12;
     } else {
-      class A {
+      class F {
         constructor(application) {
-          return application.application;
+          const obj = closure_0(dependencyMap[5]);
+          return obj.isSocialLayerSDKAuthorization(application.application, application.scopes);
         }
       }
     }
@@ -152,8 +165,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     cResult[10] = arg1;
     cResult[11] = E;
     cResult[12] = items2;
-    tmp18 = items2;
-    tmp17 = E;
+    tmp19 = items2;
+    tmp18 = E;
   } else {
     class E {
       constructor() {
@@ -164,11 +177,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
         }
       }
     }
-    tmp18 = cResult[12];
+    tmp19 = cResult[12];
   }
-  const effect = react.useEffect(tmp17, tmp18);
-  let tmp20 = stateFromStores !== FetchState.FETCHED;
-  if (tmp20) {
+  const effect = react.useEffect(tmp18, tmp19);
+  let tmp21 = stateFromStores !== FetchState.FETCHED;
+  if (tmp21) {
     class E {
       constructor() {
         const tmp = closure_1;
@@ -178,7 +191,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
         }
       }
     }
-    if (!tmp21) {
+    if (!tmp22) {
       class E {
         constructor() {
           const tmp = closure_1;
@@ -189,7 +202,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
         }
       }
     }
-    tmp20 = tmp21;
+    tmp21 = tmp22;
   }
   if (cResult[13] === tmp11) {
     class E {
@@ -203,11 +216,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     }
     return obj2;
   }
-  obj2 = { showLoadingIndicator: tmp20, slayerSdkApplications: tmp11 };
+  obj2 = { showLoadingIndicator: tmp21, slayerSdkApplications: tmp11 };
   cResult[13] = tmp11;
-  cResult[14] = tmp20;
+  cResult[14] = tmp21;
   cResult[15] = obj2;
-}) : ((arg0, arg1) => {
+}) : (function useAuthorizedSlayerApplications(arg0, arg1) {
   let closure_0;
   let fetchState;
   let stateFromStores1;

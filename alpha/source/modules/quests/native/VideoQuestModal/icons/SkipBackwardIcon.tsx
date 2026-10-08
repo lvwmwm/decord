@@ -1,11 +1,11 @@
-// Module ID: 14863
-// Function ID: 14864
+// Module ID: 15125
+// Function ID: 15126
 // Name: SkipBackwardIcon
-// Dependencies: [109, 19, 21, 558, 576, 8169, 2]
+// Dependencies: [109, 19, 21, 558, 576, 7550, 2]
 
-// Module 14863 (SkipBackwardIcon)
+// Module 15125 (SkipBackwardIcon)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 8169 */;
+import inlineStyles from "inlineStyles" /* 7550 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -18,7 +18,7 @@ let hasOwnProperty;
 let metroRequire;
 let closure_3 = ["width", "height", "color"];
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SkipBackwardIcon(arg0) {
   let color;
   let height;
   let items;
@@ -109,7 +109,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[14] = num7;
   cResult[15] = tmp21;
   tmp18 = tmp21;
-}) : ((width) => {
+}) : (function SkipBackwardIcon(width) {
   let items;
   let num = width.width;
   if (num === undefined) {

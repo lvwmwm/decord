@@ -1,29 +1,29 @@
-// Module ID: 7973
-// Function ID: 7974
+// Module ID: 8390
+// Function ID: 8391
 // Name: MediaModalSheetWrapper
-// Dependencies: [109, 19, 1085, 21, 558, 576, 6654, 4860, 7974, 2]
+// Dependencies: [109, 19, 1085, 21, 558, 576, 6831, 5054, 8391, 2]
 
-// Module 7973 (MediaModalSheetWrapper)
+// Module 8390 (MediaModalSheetWrapper)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, onCloseCallback;
+let _require;
 
 let closure_3 = ["onCloseCallback"];
 const MEDIA_MODAL_KEY = Constants.MEDIA_MODAL_KEY;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCloseCallback) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaModalSheetWrapper(onCloseCallback) {
   let closure_0;
   let context;
   let tmp10;
   let tmp11;
-  let tmp13;
+  let tmp16;
   let tmp4;
   const tmp = dependencyMap;
   let obj = require("react");
@@ -40,7 +40,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCloseCallback) =
     tmp4 = cResult[2];
   }
   const tmp8 = context;
-  context = react.useContext(context(6654));
+  context = react.useContext(context(6831));
   const obj2 = react;
   if (cResult[3] !== context) {
     const fn = function f() {
@@ -64,38 +64,51 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCloseCallback) =
   }
   const effect = obj2.useEffect(tmp10, tmp11);
   if (cResult[6] !== tmp3) {
-    const fn2 = function b() {
-      if (closure_0 != null) {
-        tmp();
+    class M {
+      constructor() {
+        if (closure_0 != null) {
+          tmp();
+        }
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet(MEDIA_MODAL_KEY);
       }
-      const obj = ActionSheetActionCreatorsDefault;
-      obj.hideActionSheet(MEDIA_MODAL_KEY);
-    };
+    }
     cResult[6] = tmp3;
-    cResult[7] = fn2;
-    tmp13 = fn2;
+    cResult[7] = M;
   } else {
-    tmp13 = cResult[7];
+    class M {
+      constructor() {
+        if (closure_0 != null) {
+          tmp();
+        }
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet(MEDIA_MODAL_KEY);
+      }
+    }
   }
   if (cResult[8] === tmp13) {
-    let tmp14;
-    if (cResult[9] === tmp4) {
-      tmp14 = cResult[10];
+    class M {
+      constructor() {
+        if (closure_0 != null) {
+          tmp();
+        }
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet(MEDIA_MODAL_KEY);
+      }
     }
-    return tmp14;
+    return tmp16;
   }
-  tmp8(7974);
+  tmp8(8391);
   const merged = Object.assign(tmp4);
-  const tmp17 = <tmp8Result onClose={tmp13} />;
+  tmp16 = <tmp8Result onClose={tmp13} />;
   cResult[8] = tmp13;
   cResult[9] = tmp4;
-  cResult[10] = tmp17;
-  tmp14 = tmp17;
-}) : ((onCloseCallback) => {
+  cResult[10] = tmp16;
+}) : (function MediaModalSheetWrapper(onCloseCallback) {
   onCloseCallback = onCloseCallback.onCloseCallback;
   const merged = Object.assign(onCloseCallback, Object.assign({ onCloseCallback: 0 }));
   let context;
-  context = react.useContext(context(6654));
+  context = react.useContext(context(6831));
   const items = [context];
   const effect = react.useEffect(() => {
     let transitionState;
@@ -114,7 +127,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCloseCallback) =
     const obj = ActionSheetActionCreatorsDefault;
     obj.hideActionSheet(MEDIA_MODAL_KEY);
   }, items1);
-  context(7974);
+  context(8391);
   const merged1 = Object.assign(merged);
   return <tmp5 onClose={callback} />;
 });

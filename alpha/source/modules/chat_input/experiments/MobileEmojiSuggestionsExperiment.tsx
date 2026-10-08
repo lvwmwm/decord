@@ -1,18 +1,18 @@
-// Module ID: 11590
-// Function ID: 11591
+// Module ID: 11653
+// Function ID: 11654
 // Name: MobileEmojiSuggestionsExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1452, 558, 576, 2]
 // Exports: getIsMobileEmojiSuggestionsConfig
 
-// Module 11590 (MobileEmojiSuggestionsExperiment)
+// Module 11653 (MobileEmojiSuggestionsExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-07-mobile-emoji-suggestions", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true, style: "large" }, 2: { enabled: true, style: "small" }, 3: { enabled: true, style: "button" } } };
 let closure_2 = ApexExperiment.createApexExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMobileEmojiSuggestionsConfig(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -26,7 +26,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2);
-}) : ((location) => {
+}) : (function useMobileEmojiSuggestionsConfig(location) {
   const obj = { location: location.location };
   return closure_2.useConfig(obj);
 });

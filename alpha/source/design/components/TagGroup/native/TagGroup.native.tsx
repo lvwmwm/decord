@@ -1,15 +1,15 @@
-// Module ID: 14270
-// Function ID: 14271
+// Module ID: 14094
+// Function ID: 14095
 // Name: TagGroup
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 14271, 14273, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 14095, 14097, 2]
 
-// Module 14270 (TagGroup)
+// Module 14094 (TagGroup)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import Tag from "Tag" /* 14273 */;
+import Tag from "Tag" /* 14097 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ const jsx = Fragment.jsx;
 let obj = { group: obj2, inline: { flexWrap: "nowrap", flexShrink: 1, overflow: "hidden" } };
 obj2 = { flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: nativeDefault.space.PX_8 };
 let closure_4 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TagGroup(arg0) {
   let items;
   let label;
   let layout;
@@ -91,7 +91,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp10 = mapped;
         }
       }
-      const fn = function h(item) {
+      const fn = function z(item) {
         return jsx(Tag.Tag, { item, size, variant: str, inline: "inline" === str2 }, item.id);
       };
       cResult[11] = str2;
@@ -115,7 +115,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = size;
   cResult[2] = defaultTagGroupSize;
   tmp4 = defaultTagGroupSize;
-}) : ((label) => {
+}) : (function TagGroup(label) {
   let items;
   let layout;
   let variant;

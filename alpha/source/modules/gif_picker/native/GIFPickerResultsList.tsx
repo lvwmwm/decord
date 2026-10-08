@@ -1,21 +1,21 @@
-// Module ID: 10115
-// Function ID: 10116
+// Module ID: 9700
+// Function ID: 9701
 // Name: GIFPickerResultsList
-// Dependencies: [32, 19, 21, 4896, 10106, 558, 576, 10099, 10116, 8404, 9939, 2]
+// Dependencies: [32, 19, 21, 5090, 9690, 558, 576, 9683, 9701, 8600, 9461, 2]
 
-// Module 10115 (GIFPickerResultsList)
+// Module 9700 (GIFPickerResultsList)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 10106 */;
-import GIFPickerItemView from "GIFPickerItemView" /* 10116 */;
+import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 9690 */;
+import GIFPickerItemView from "GIFPickerItemView" /* 9701 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const GIFPickerItemViewDefault = GIFPickerItemView;
-let obj1, set, src, tmp11, tmp13, tmp14, tmp15;
+let dependencyMap, set;
 
 let obj2;
 const jsx = Fragment.jsx;
@@ -33,7 +33,7 @@ let closure_8 = arr2.map(() => {
   return size;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useViewedItemIndexes() {
   let closure_129_0;
   let first;
   let tmp4;
@@ -42,7 +42,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj = react2;
   const cResult = obj.c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function s() {
+    const fn = function n() {
       set = new Set();
       return set;
     };
@@ -82,7 +82,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp6 = cResult[3];
   }
   return tmp6;
-}) : (() => {
+}) : (function useViewedItemIndexes() {
   let tmp = _slicedToArray(react.useState(() => {
     set = new Set();
     return set;
@@ -108,8 +108,9 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return obj;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((loading) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerResultsList(loading) {
   let ListFooterComponent;
+  let closure_2;
   let columnWidth;
   let columns;
   let first;
@@ -122,7 +123,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((loading) => {
   let tmp6;
   let tmp7;
   let viewedItemIndexes;
-  let obj = columnWidth(P[6]);
+  let obj = columnWidth(576);
   const cResult = obj.c(25);
   ({ columns, columnWidth } = loading);
   ({ resultItems, onPressGIF } = loading);
@@ -136,323 +137,188 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((loading) => {
   } else {
     first = cResult[0];
   }
-  const safeAreaBottomKeyboardAware = onPressGIF(tmp2[7])(first).safeAreaBottomKeyboardAware;
+  const safeAreaBottomKeyboardAware = onPressGIF(9683)(first).safeAreaBottomKeyboardAware;
   if (loading) {
     resultItems = closure_7;
   }
   if (cResult[1] !== columnWidth) {
-    class P {
-      constructor(arg0, arg1) {
-        obj = { height: columnWidth / (loading / arg1) };
-        return obj;
-      }
-    }
+    const fn = function _(arg0, arg1) {
+      return { height: columnWidth / (arg0 / arg1) };
+    };
     cResult[1] = columnWidth;
-    cResult[2] = P;
-    tmp6 = P;
+    cResult[2] = fn;
+    tmp6 = fn;
   } else {
-    class P {
-      constructor(arg0, arg1) {
-        obj = { height: columnWidth / (loading / arg1) };
-        return obj;
-      }
-    }
+    tmp6 = cResult[2];
   }
-  P = tmp6;
+  dependencyMap = tmp6;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class M {
-      constructor(arg0, arg1) {
-        src = undefined;
-        if (loading != null) {
-          src = loading.src;
-        }
-        if (src == null) {
-          tmp2 = arg1;
-          src = arg1.toString();
-        }
-        return src;
+    const fn2 = function k(src, arg1) {
+      src = undefined;
+      if (src != null) {
+        src = src.src;
       }
-    }
-    cResult[3] = M;
-    tmp7 = M;
+      if (src == null) {
+        src = arg1.toString();
+      }
+      return src;
+    };
+    cResult[3] = fn2;
+    tmp7 = fn2;
   } else {
-    class M {
-      constructor(arg0, arg1) {
-        src = undefined;
-        if (loading != null) {
-          src = loading.src;
-        }
-        if (src == null) {
-          tmp2 = arg1;
-          src = arg1.toString();
-        }
-        return src;
-      }
-    }
+    tmp7 = cResult[3];
   }
   let tmp8 = closure_9();
   ({ viewedItemIndexes, onViewableItemsChanged } = tmp8);
   if (cResult[4] === selectedGifSrc) {
-    class M {
-      constructor(arg0, arg1) {
-        src = undefined;
-        if (loading != null) {
-          src = loading.src;
-        }
-        if (src == null) {
-          tmp2 = arg1;
-          src = arg1.toString();
-        }
-        return src;
-      }
+    let tmp9;
+    if (cResult[5] === viewedItemIndexes) {
+      tmp9 = cResult[6];
     }
     if (cResult[7] === tmp6) {
-      let tmp16;
-      class M {
-        constructor(arg0, arg1) {
-          src = undefined;
-          if (loading != null) {
-            src = loading.src;
-          }
-          if (src == null) {
-            tmp2 = arg1;
-            src = arg1.toString();
-          }
-          return src;
-        }
+      let tmp10;
+      let tmp14;
+      let tmp15;
+      if (cResult[8] === onPressGIF) {
+        tmp10 = cResult[9];
       }
-      columnWidth(P[9]);
+      columnWidth(8600);
       class V {
         constructor(arg0) {
-          ({ item, index, extraData } = loading);
+          let extraData;
+          let index;
+          let item;
+          let tmp8;
+          ({ item, index, extraData } = arg0);
           if (null == item) {
-            tmp9 = closure_8;
             size = closure_8[index];
-            tmp10 = closure_2;
-            tmp11 = jsx;
-            tmp12 = closure_0;
-            tmp13 = closure_2;
-            obj1 = { height: null };
-            obj1.height = closure_2(size.width, size.height).height;
-            return jsx(closure_0(closure_2[8]).GIFPickerItemPlaceholder, obj1);
+            return jsx(GIFPickerItemView.GIFPickerItemPlaceholder, { height: closure_2(size.width, size.height).height });
           } else {
-            tmp14 = closure_2;
-            height = closure_2(item.width, item.height).height;
-            viewedItemIndexes = extraData.viewedItemIndexes;
-            tmp15 = jsx;
+            let tmp15Result;
+            const height = closure_2(item.width, item.height).height;
+            const viewedItemIndexes = extraData.viewedItemIndexes;
             if (viewedItemIndexes.has(index)) {
-              tmp4 = closure_1;
-              tmp5 = closure_2;
-              obj4 = { height: null, index: null, item: null, onPressGIF: null, selected: null };
-              obj4.height = height;
-              obj4.index = index;
-              obj4.item = item;
-              tmp7 = onPressGIF;
-              obj4.onPressGIF = onPressGIF;
+              const obj3 = { height, index, item, onPressGIF, selected: tmp8 };
               tmp8 = undefined;
-              tmp6 = closure_1(closure_2[8]);
+              const tmp6 = GIFPickerItemViewDefault;
               if (null != extraData.selectedGifSrc) {
                 tmp8 = item.src === extraData.selectedGifSrc;
               }
-              obj4.selected = tmp8;
-              tmp15Result = tmp15(tmp6, obj4);
+              tmp15Result = tmp15(tmp6, obj3);
             } else {
-              tmp = closure_0;
-              tmp2 = closure_2;
-              obj = { height: null };
-              obj.height = height;
-              tmp15Result = tmp15(closure_0(closure_2[8]).GIFPickerItemPlaceholder, obj);
+              const obj = { height };
+              tmp15Result = tmp15(GIFPickerItemView.GIFPickerItemPlaceholder, obj);
             }
             return tmp15Result;
           }
         }
       }
-      const tmpResult2 = columnWidth(P[10]);
+      const tmpResult2 = columnWidth(9461);
       const isPortalKeyboardInModal = tmpResult2.useIsPortalKeyboardInModal();
       if (cResult[10] !== safeAreaBottomKeyboardAware) {
-        class M {
-          constructor(arg0, arg1) {
-            src = undefined;
-            if (loading != null) {
-              src = loading.src;
-            }
-            if (src == null) {
-              tmp2 = arg1;
-              src = arg1.toString();
-            }
-            return src;
-          }
-        }
-        tmp15[0] = safeAreaBottomKeyboardAware;
+        let obj3 = { paddingBottom: safeAreaBottomKeyboardAware };
         class V {
           constructor(arg0) {
-            ({ item, index, extraData } = loading);
+            let extraData;
+            let index;
+            let item;
+            let tmp8;
+            ({ item, index, extraData } = arg0);
             if (null == item) {
-              tmp9 = closure_8;
               size = closure_8[index];
-              tmp10 = closure_2;
-              tmp11 = jsx;
-              tmp12 = closure_0;
-              tmp13 = closure_2;
-              obj1 = { height: null };
-              obj1.height = closure_2(size.width, size.height).height;
-              return jsx(closure_0(closure_2[8]).GIFPickerItemPlaceholder, obj1);
+              return jsx(GIFPickerItemView.GIFPickerItemPlaceholder, { height: closure_2(size.width, size.height).height });
             } else {
-              tmp14 = closure_2;
-              height = closure_2(item.width, item.height).height;
-              viewedItemIndexes = extraData.viewedItemIndexes;
-              tmp15 = jsx;
+              let tmp15Result;
+              const height = closure_2(item.width, item.height).height;
+              const viewedItemIndexes = extraData.viewedItemIndexes;
               if (viewedItemIndexes.has(index)) {
-                tmp4 = closure_1;
-                tmp5 = closure_2;
-                obj4 = { height: null, index: null, item: null, onPressGIF: null, selected: null };
-                obj4.height = height;
-                obj4.index = index;
-                obj4.item = item;
-                tmp7 = onPressGIF;
-                obj4.onPressGIF = onPressGIF;
+                const obj3 = { height, index, item, onPressGIF, selected: tmp8 };
                 tmp8 = undefined;
-                tmp6 = closure_1(closure_2[8]);
+                const tmp6 = GIFPickerItemViewDefault;
                 if (null != extraData.selectedGifSrc) {
                   tmp8 = item.src === extraData.selectedGifSrc;
                 }
-                obj4.selected = tmp8;
-                tmp15Result = tmp15(tmp6, obj4);
+                tmp15Result = tmp15(tmp6, obj3);
               } else {
-                tmp = closure_0;
-                tmp2 = closure_2;
-                obj = { height: null };
-                obj.height = height;
-                tmp15Result = tmp15(closure_0(closure_2[8]).GIFPickerItemPlaceholder, obj);
+                const obj = { height };
+                tmp15Result = tmp15(GIFPickerItemView.GIFPickerItemPlaceholder, obj);
               }
               return tmp15Result;
             }
           }
         }
         cResult[10] = safeAreaBottomKeyboardAware;
-        cResult[11] = tmp15;
+        cResult[11] = obj3;
+        tmp14 = obj3;
       } else {
-        class M {
-          constructor(arg0, arg1) {
-            src = undefined;
-            if (loading != null) {
-              src = loading.src;
-            }
-            if (src == null) {
-              tmp2 = arg1;
-              src = arg1.toString();
-            }
-            return src;
-          }
-        }
+        tmp14 = cResult[11];
       }
       const _Symbol = Symbol;
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-        class M {
-          constructor(arg0, arg1) {
-            src = undefined;
-            if (loading != null) {
-              src = loading.src;
-            }
-            if (src == null) {
-              tmp2 = arg1;
-              src = arg1.toString();
-            }
-            return src;
-          }
-        }
+        const obj4 = { disabled: true };
         class V {
           constructor(arg0) {
-            ({ item, index, extraData } = loading);
+            let extraData;
+            let index;
+            let item;
+            let tmp8;
+            ({ item, index, extraData } = arg0);
             if (null == item) {
-              tmp9 = closure_8;
               size = closure_8[index];
-              tmp10 = closure_2;
-              tmp11 = jsx;
-              tmp12 = closure_0;
-              tmp13 = closure_2;
-              obj1 = { height: null };
-              obj1.height = closure_2(size.width, size.height).height;
-              return jsx(closure_0(closure_2[8]).GIFPickerItemPlaceholder, obj1);
+              return jsx(GIFPickerItemView.GIFPickerItemPlaceholder, { height: closure_2(size.width, size.height).height });
             } else {
-              tmp14 = closure_2;
-              height = closure_2(item.width, item.height).height;
-              viewedItemIndexes = extraData.viewedItemIndexes;
-              tmp15 = jsx;
+              let tmp15Result;
+              const height = closure_2(item.width, item.height).height;
+              const viewedItemIndexes = extraData.viewedItemIndexes;
               if (viewedItemIndexes.has(index)) {
-                tmp4 = closure_1;
-                tmp5 = closure_2;
-                obj4 = { height: null, index: null, item: null, onPressGIF: null, selected: null };
-                obj4.height = height;
-                obj4.index = index;
-                obj4.item = item;
-                tmp7 = onPressGIF;
-                obj4.onPressGIF = onPressGIF;
+                const obj3 = { height, index, item, onPressGIF, selected: tmp8 };
                 tmp8 = undefined;
-                tmp6 = closure_1(closure_2[8]);
+                const tmp6 = GIFPickerItemViewDefault;
                 if (null != extraData.selectedGifSrc) {
                   tmp8 = item.src === extraData.selectedGifSrc;
                 }
-                obj4.selected = tmp8;
-                tmp15Result = tmp15(tmp6, obj4);
+                tmp15Result = tmp15(tmp6, obj3);
               } else {
-                tmp = closure_0;
-                tmp2 = closure_2;
-                obj = { height: null };
-                obj.height = height;
-                tmp15Result = tmp15(closure_0(closure_2[8]).GIFPickerItemPlaceholder, obj);
+                const obj = { height };
+                tmp15Result = tmp15(GIFPickerItemView.GIFPickerItemPlaceholder, obj);
               }
               return tmp15Result;
             }
           }
         }
-        tmp16 = tmp17;
+        tmp15 = obj4;
       } else {
-        class M {
-          constructor(arg0, arg1) {
-            src = undefined;
-            if (loading != null) {
-              src = loading.src;
-            }
-            if (src == null) {
-              tmp2 = arg1;
-              src = arg1.toString();
-            }
-            return src;
-          }
-        }
+        tmp15 = cResult[12];
       }
       if (inActionSheet) {
-        class M {
-          constructor(arg0, arg1) {
-            src = undefined;
-            if (loading != null) {
-              src = loading.src;
-            }
-            if (src == null) {
-              tmp2 = arg1;
-              src = arg1.toString();
-            }
-            return src;
-          }
-        }
+        inActionSheet = isPortalKeyboardInModal;
       }
       if (cResult[13] === tmp12) {
-        class M {
-          constructor(arg0, arg1) {
-            src = undefined;
-            if (loading != null) {
-              src = loading.src;
+        if (cResult[14] === ListFooterComponent) {
+          if (cResult[15] === columns) {
+            if (cResult[16] === resultItems) {
+              if (cResult[17] === tmp9) {
+                if (cResult[18] === keyboardDismissMode) {
+                  if (cResult[19] === onViewableItemsChanged) {
+                    if (cResult[20] === tmp10) {
+                      if (cResult[21] === tmp4.list) {
+                        if (cResult[22] === tmp14) {
+                          let tmp16;
+                          if (cResult[23] === inActionSheet) {
+                            tmp16 = cResult[24];
+                          }
+                          return tmp16;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
             }
-            if (src == null) {
-              tmp2 = arg1;
-              src = arg1.toString();
-            }
-            return src;
           }
         }
       }
-      const tmp20 = <tmp12 contentContainerStyle={tmp14} data={resultItems} drawDistance={columnWidth(P[4]).GIF_PICKER_ITEM_ESIMTATED_HEIGHT} extraData={tmp9} keyExtractor={tmp7} keyboardDismissMode={keyboardDismissMode} keyboardShouldPersistTaps="always" maintainVisibleContentPosition={tmp16} numColumns={columns} ListFooterComponent={ListFooterComponent} optimizeItemArrangement onViewableItemsChanged={onViewableItemsChanged} preventNativeModalDismiss={inActionSheet} renderItem={tmp10} style={tmp4.list} />;
+      const tmp18 = <tmp12 contentContainerStyle={tmp14} data={resultItems} drawDistance={columnWidth(9690).GIF_PICKER_ITEM_ESIMTATED_HEIGHT} extraData={tmp9} keyExtractor={tmp7} keyboardDismissMode={keyboardDismissMode} keyboardShouldPersistTaps="always" maintainVisibleContentPosition={tmp15} numColumns={columns} ListFooterComponent={ListFooterComponent} optimizeItemArrangement onViewableItemsChanged={onViewableItemsChanged} preventNativeModalDismiss={inActionSheet} renderItem={tmp10} style={tmp4.list} />;
       cResult[13] = tmp12;
       cResult[14] = ListFooterComponent;
       cResult[15] = columns;
@@ -464,48 +330,34 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((loading) => {
       cResult[21] = tmp4.list;
       cResult[22] = tmp14;
       cResult[23] = inActionSheet;
-      cResult[24] = tmp20;
+      cResult[24] = tmp18;
+      tmp16 = tmp18;
     }
     class V {
       constructor(arg0) {
-        ({ item, index, extraData } = loading);
+        let extraData;
+        let index;
+        let item;
+        let tmp8;
+        ({ item, index, extraData } = arg0);
         if (null == item) {
-          tmp9 = closure_8;
           size = closure_8[index];
-          tmp10 = closure_2;
-          tmp11 = jsx;
-          tmp12 = closure_0;
-          tmp13 = closure_2;
-          obj1 = { height: null };
-          obj1.height = closure_2(size.width, size.height).height;
-          return jsx(closure_0(closure_2[8]).GIFPickerItemPlaceholder, obj1);
+          return jsx(GIFPickerItemView.GIFPickerItemPlaceholder, { height: closure_2(size.width, size.height).height });
         } else {
-          tmp14 = closure_2;
-          height = closure_2(item.width, item.height).height;
-          viewedItemIndexes = extraData.viewedItemIndexes;
-          tmp15 = jsx;
+          let tmp15Result;
+          const height = closure_2(item.width, item.height).height;
+          const viewedItemIndexes = extraData.viewedItemIndexes;
           if (viewedItemIndexes.has(index)) {
-            tmp4 = closure_1;
-            tmp5 = closure_2;
-            obj4 = { height: null, index: null, item: null, onPressGIF: null, selected: null };
-            obj4.height = height;
-            obj4.index = index;
-            obj4.item = item;
-            tmp7 = onPressGIF;
-            obj4.onPressGIF = onPressGIF;
+            const obj3 = { height, index, item, onPressGIF, selected: tmp8 };
             tmp8 = undefined;
-            tmp6 = closure_1(closure_2[8]);
+            const tmp6 = GIFPickerItemViewDefault;
             if (null != extraData.selectedGifSrc) {
               tmp8 = item.src === extraData.selectedGifSrc;
             }
-            obj4.selected = tmp8;
-            tmp15Result = tmp15(tmp6, obj4);
+            tmp15Result = tmp15(tmp6, obj3);
           } else {
-            tmp = closure_0;
-            tmp2 = closure_2;
-            obj = { height: null };
-            obj.height = height;
-            tmp15Result = tmp15(closure_0(closure_2[8]).GIFPickerItemPlaceholder, obj);
+            const obj = { height };
+            tmp15Result = tmp15(GIFPickerItemView.GIFPickerItemPlaceholder, obj);
           }
           return tmp15Result;
         }
@@ -514,12 +366,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((loading) => {
     cResult[7] = tmp6;
     cResult[8] = onPressGIF;
     cResult[9] = V;
+    tmp10 = V;
   }
-  const obj4 = { viewedItemIndexes, selectedGifSrc };
+  const obj6 = { viewedItemIndexes, selectedGifSrc };
   cResult[4] = selectedGifSrc;
   cResult[5] = viewedItemIndexes;
-  cResult[6] = obj4;
-}) : ((columnWidth) => {
+  cResult[6] = obj6;
+  tmp9 = obj6;
+}) : (function GIFPickerResultsList(columnWidth) {
   let ListFooterComponent;
   let MasonryFlashList;
   let columns;

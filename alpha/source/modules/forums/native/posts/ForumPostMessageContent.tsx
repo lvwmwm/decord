@@ -1,22 +1,22 @@
-// Module ID: 11651
-// Function ID: 11652
+// Module ID: 11716
+// Function ID: 11717
 // Name: ForumPostMessageContent
-// Dependencies: [19, 21, 4896, 558, 576, 11652, 4892, 2]
+// Dependencies: [19, 21, 5090, 558, 576, 11717, 5086, 2]
 
-// Module 11651 (ForumPostMessageContent)
+// Module 11716 (ForumPostMessageContent)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useNativeForumPostContentDefault from "useNativeForumPostContent" /* 11652 */;
+import useNativeForumPostContentDefault from "useNativeForumPostContent" /* 11717 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ text: { alignSelf: "flex-start" } });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasUnreads) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostMessageContent(hasUnreads) {
   let content;
   let isMessageDeleted;
   let lineClamp;
@@ -93,7 +93,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasUnreads) => {
   cResult[4] = senderModifier;
   cResult[5] = obj3;
   tmp5 = obj3;
-}) : ((lineClamp) => {
+}) : (function ForumPostMessageContent(lineClamp) {
   let content;
   let hasUnreads;
   let isMessageDeleted;

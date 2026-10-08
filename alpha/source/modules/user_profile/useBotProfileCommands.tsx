@@ -1,18 +1,18 @@
-// Module ID: 11002
-// Function ID: 11003
+// Module ID: 11227
+// Function ID: 11228
 // Name: useBotProfileCommands
-// Dependencies: [19, 558, 576, 8968, 1985, 2]
+// Dependencies: [19, 558, 576, 9759, 1997, 2]
 
-// Module 11002 (useBotProfileCommands)
+// Module 11227 (useBotProfileCommands)
 import react2 from "react" /* 576 */;
-import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 8968 */;
+import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 9759 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let type;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBotProfileCommands(arg0, arg1, arg2) {
   let application;
   let commands;
   let tmp3;
@@ -59,7 +59,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
   cResult[3] = tmp3;
   cResult[4] = obj3;
   tmp6 = obj3;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useBotProfileCommands(arg0, arg1, arg2) {
   let items;
   const obj = ApplicationCommandQueryApiAll;
   const accessibleCommandsForApplication = obj.useAccessibleCommandsForApplication(arg0, arg1, arg2);

@@ -1,9 +1,9 @@
-// Module ID: 6967
-// Function ID: 6968
+// Module ID: 7156
+// Function ID: 7157
 // Name: useInterval
 // Dependencies: [19, 558, 576, 38, 2]
 
-// Module 6967 (useInterval)
+// Module 7156 (useInterval)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -14,7 +14,7 @@ let _require, dependencyMap;
 let c3;
 let closure_4;
 ({ useEffect: c3, useRef: closure_4 } = react);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((current, arg1) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInterval(current, arg1) {
   let closure_2;
   let tmp2;
   let tmp3;
@@ -47,7 +47,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((current, arg1) => {
       let ref2;
       if (null !== closure_1) {
         const _setInterval = setInterval;
-        ref.current = setInterval(() => {
+        ref.current = setInterval(function tick() {
           closure_1(ref[3])(null != ref.current, "Missing callback");
           ref.current();
         }, tmp);
@@ -69,7 +69,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((current, arg1) => {
     tmp7 = cResult[5];
   }
   tmp4(tmp6, tmp7);
-}) : ((current, arg1) => {
+}) : (function useInterval(current, arg1) {
   let closure_1 = arg1;
   let closure_2 = closure_4(current);
   const ref = closure_4(null);
@@ -82,7 +82,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((current, arg1) => {
     let ref2;
     if (null !== closure_1) {
       const _setInterval = setInterval;
-      ref.current = setInterval(() => {
+      ref.current = setInterval(function tick() {
         closure_1(ref[3])(null != ref.current, "Missing callback");
         ref.current();
       }, tmp);

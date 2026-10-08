@@ -1,21 +1,21 @@
-// Module ID: 14840
-// Function ID: 14841
+// Module ID: 15101
+// Function ID: 15102
 // Name: useBountyAppStoreOverlayPlayback
-// Dependencies: [19, 14841, 14843, 558, 576, 14844, 2]
+// Dependencies: [19, 15102, 15104, 558, 576, 15105, 2]
 // Exports: getBountyVideoEndMode
 
-// Module 14840 (useBountyAppStoreOverlayPlayback)
+// Module 15101 (useBountyAppStoreOverlayPlayback)
 import react2 from "react" /* 576 */;
-import useBountyVideoEndAppStoreOverlay from "useBountyVideoEndAppStoreOverlay" /* 14841 */;
-import useBountiesModalTiming from "useBountiesModalTiming" /* 14843 */;
-import useBountyPauseAppStoreSheet from "useBountyPauseAppStoreSheet" /* 14844 */;
+import useBountyVideoEndAppStoreOverlay from "useBountyVideoEndAppStoreOverlay" /* 15102 */;
+import useBountiesModalTiming from "useBountiesModalTiming" /* 15104 */;
+import useBountyPauseAppStoreSheet from "useBountyPauseAppStoreSheet" /* 15105 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let handleVideoPaused, tmp, tmp3;
+let tmp, tmp3;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((handleVideoPaused) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyAppStoreOverlayPlayback(handleVideoPaused) {
   let bounty;
   let endMode;
   let handleVideoEnd;
@@ -200,7 +200,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((handleVideoPaused)
   cResult[4] = sourceQuestContent;
   cResult[5] = obj3;
   tmp4 = obj3;
-}) : ((handleVideoPaused) => {
+}) : (function useBountyAppStoreOverlayPlayback(handleVideoPaused) {
   let bounty;
   let callback2;
   let endMode;

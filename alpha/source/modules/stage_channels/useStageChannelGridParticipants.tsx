@@ -1,33 +1,33 @@
-// Module ID: 9767
-// Function ID: 9768
+// Module ID: 10970
+// Function ID: 10971
 // Name: useStageChannelGridParticipants
-// Dependencies: [32, 19, 4912, 5582, 504, 5596, 5589, 12, 558, 576, 5595, 9768, 2]
+// Dependencies: [32, 19, 6041, 5892, 504, 5962, 5955, 12, 558, 576, 5961, 10971, 2]
 // Exports: useStageChannelParticipantsList
 
-// Module 9767 (useStageChannelGridParticipants)
+// Module 10970 (useStageChannelGridParticipants)
 import _mod12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 5589 */;
-import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 5595 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 5955 */;
+import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 5961 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4912 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5582 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5892 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f101691 = () => {
+const f106269 = () => {
   const items = [closure_0, StageChannelParticipantStore.getParticipantsVersion(closure_0)];
   return items;
 };
-const f101692 = () => ChannelRTCStore.getSelectedParticipantId(closure_0);
+const f106270 = () => ChannelRTCStore.getSelectedParticipantId(closure_0);
 let _slicedToArray = _slicedToArray_mod;
 let closure_6 = { SELECTED: 0, [0]: "SELECTED", SPEAKER: 1, [1]: "SPEAKER", AUDIENCE: 2, [2]: "AUDIENCE", MEDIA: 3, [3]: "MEDIA" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useThrottleDurationForChannel(arg0) {
   let closure_129_1;
   let tmp4;
   let tmp5;
@@ -63,7 +63,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num3 = 5000;
   }
   return num3;
-}) : ((arg0) => {
+}) : (function useThrottleDurationForChannel(arg0) {
   let closure_1;
   let first;
   const obj = StageChannelParticipantStoreHooks;
@@ -84,7 +84,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return num;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStageChannelParticipantsListThrottled(arg0, arg1, arg2, arg3) {
   let SELECTED;
   let closure_0;
   let closure_1;
@@ -104,11 +104,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
   const items = [StageChannelParticipantStore];
   const items1 = [arg0];
   const tmpResult = require("get initialized");
-  const stateFromStores = tmpResult.useStateFromStores(items, f101691, items1, tmp(5596).isVersionEqual);
+  const stateFromStores = tmpResult.useStateFromStores(items, f106269, items1, tmp(5962).isVersionEqual);
   const items2 = [stateFromStores1];
   const items3 = [arg0];
   const tmpResult3 = require("get initialized");
-  stateFromStores1 = tmpResult3.useStateFromStores(items2, f101692, items3);
+  stateFromStores1 = tmpResult3.useStateFromStores(items2, f106270, items3);
   const items4 = [stateFromStores, arg1, stateFromStores1, undefined !== arg3 && arg3, arg0];
   const memo = stateFromStores.useMemo(() => {
     let items4;
@@ -240,7 +240,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
   cResult[4] = tmp15[tmp18.AUDIENCE];
   cResult[5] = items8;
   tmp22 = items8;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useStageChannelParticipantsListThrottled(arg0, arg1, arg2) {
   let SELECTED;
   let closure_0;
   let closure_1;
@@ -259,11 +259,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
   let obj = require("get initialized");
   let items = [StageChannelParticipantStore];
   let items1 = [arg0];
-  const stateFromStores = obj.useStateFromStores(items, f101691, items1, require("SecondaryIndexMapUtils").isVersionEqual);
+  const stateFromStores = obj.useStateFromStores(items, f106269, items1, require("SecondaryIndexMapUtils").isVersionEqual);
   let items2 = [stateFromStores1];
   let items3 = [arg0];
   const obj2 = require("get initialized");
-  stateFromStores1 = obj2.useStateFromStores(items2, f101692, items3);
+  stateFromStores1 = obj2.useStateFromStores(items2, f106270, items3);
   let items4 = [stateFromStores, arg1, stateFromStores1, flag, arg0];
   const memo = stateFromStores.useMemo(() => {
     let items4;
@@ -364,11 +364,11 @@ function useStageChannelParticipantsList(arg0, arg1, arg2) {
   const items = [StageChannelParticipantStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f101691, items1, require("SecondaryIndexMapUtils").isVersionEqual);
+  const stateFromStores = obj.useStateFromStores(items, f106269, items1, require("SecondaryIndexMapUtils").isVersionEqual);
   const items2 = [stateFromStores1];
   const items3 = [arg0];
   const obj2 = require("get initialized");
-  stateFromStores1 = obj2.useStateFromStores(items2, f101692, items3);
+  stateFromStores1 = obj2.useStateFromStores(items2, f106270, items3);
   const items4 = [stateFromStores, arg1, stateFromStores1, arg2, arg0];
   return stateFromStores.useMemo(() => {
     let items4;

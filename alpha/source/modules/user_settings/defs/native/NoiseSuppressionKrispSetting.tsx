@@ -1,24 +1,24 @@
-// Module ID: 15088
-// Function ID: 15089
+// Module ID: 15350
+// Function ID: 15351
 // Name: NoiseSuppressionKrispSetting
-// Dependencies: [1999, 7645, 9686, 558, 576, 9687, 1126, 504, 11142, 2]
+// Dependencies: [2011, 7966, 10875, 558, 576, 10876, 1126, 504, 11262, 2]
 
-// Module 15088 (NoiseSuppressionKrispSetting)
+// Module 15350 (NoiseSuppressionKrispSetting)
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 9686 */;
-import NoiseCancellationUtils from "NoiseCancellationUtils" /* 9687 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 10875 */;
+import NoiseCancellationUtils from "NoiseCancellationUtils" /* 10876 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNoiseSuppressionKrispSettingOptions() {
   let first;
   let tmp10;
   let tmp11;
@@ -92,7 +92,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[11] = tmp13;
   cResult[12] = items;
   tmp14 = items;
-}) : (() => {
+}) : (function useNoiseSuppressionKrispSettingOptions() {
   let intl;
   let intl2;
   let intl3;
@@ -110,7 +110,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return items;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasNoiseSuppressionKrispSetting() {
   let noiseCancellationSupported;
   let tmp4;
   let tmp5;
@@ -130,7 +130,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useHasNoiseSuppressionKrispSetting() {
   let noiseCancellationSupported;
   const items = [MediaEngineStore];
   const obj = get_initialized;

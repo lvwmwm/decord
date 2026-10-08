@@ -1,13 +1,13 @@
-// Module ID: 9519
-// Function ID: 9520
+// Module ID: 8689
+// Function ID: 8690
 // Name: ReadStateUtils
-// Dependencies: [4911, 5077, 5078, 558, 576, 504, 2]
+// Dependencies: [6040, 5971, 5972, 558, 576, 504, 2]
 // Exports: getHasImportantUnread
 
-// Module 9519 (ReadStateUtils)
-import ReadStateConstants from "ReadStateConstants" /* 5078 */;
-import ReadStateStore from "ReadStateStore" /* 4911 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
+// Module 8689 (ReadStateUtils)
+import ReadStateConstants from "ReadStateConstants" /* 5972 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 let _require;
 
 const UnreadSetting = ReadStateConstants.UnreadSetting;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasImportantUnread(arg0) {
   let first;
   let id;
   let tmp7;
@@ -47,7 +47,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7);
-}) : ((arg0) => {
+}) : (function useHasImportantUnread(arg0) {
   let id;
   _require = arg0;
   const items = [ReadStateStore, UserGuildSettingsStore];

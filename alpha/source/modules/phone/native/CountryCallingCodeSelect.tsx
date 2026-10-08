@@ -1,21 +1,21 @@
-// Module ID: 6552
-// Function ID: 6553
+// Module ID: 6728
+// Function ID: 6729
 // Name: CountryCallingCodeSelect
-// Dependencies: [32, 19, 17, 5111, 21, 4896, 587, 558, 576, 6439, 5112, 6553, 5709, 6000, 4892, 6554, 6557, 6558, 1126, 6559, 2]
+// Dependencies: [32, 19, 17, 5908, 21, 5090, 587, 558, 576, 6617, 5909, 6729, 6099, 6184, 5086, 6730, 6733, 6734, 1126, 6735, 2]
 
-// Module 6552 (CountryCallingCodeSelect)
+// Module 6728 (CountryCallingCodeSelect)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import CountryCodeUtils from "CountryCodeUtils" /* 5111 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5709 */;
+import CountryCodeUtils from "CountryCodeUtils" /* 5908 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6099 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let alpha2, onCountrySelected;
+let alpha2;
 
 let metroImportAll;
 let metroImportDefault;
@@ -32,7 +32,7 @@ let closure_9 = createStyles.createStyles((arg0) => {
   ({ paddingBottom: nativeDefault.space.PX_16 });
   return obj2;
 });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCountrySelected) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CountryCallingCodeSelect(onCountrySelected) {
   let first;
   let first1;
   let rows;
@@ -66,13 +66,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCountrySelected) =
   }
   const tmp12 = onClose(first[11])();
   if (cResult[1] !== first) {
-    const fn = function x(str) {
+    function filterSpacesAndPluses(str) {
       const replaced = str.replace(/\+|\s/g, "");
       return replaced.startsWith(first.replace(/\+|\s/g, ""));
-    };
+    }
     cResult[1] = first;
-    cResult[2] = fn;
-    tmp13 = fn;
+    cResult[2] = filterSpacesAndPluses;
+    tmp13 = filterSpacesAndPluses;
   } else {
     tmp13 = cResult[2];
   }
@@ -360,7 +360,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCountrySelected) =
   cResult[4] = first;
   cResult[5] = items1;
   arr2 = items1;
-}) : ((onCountrySelected) => {
+}) : (function CountryCallingCodeSelect(onCountrySelected) {
   let intl;
   onCountrySelected = onCountrySelected.onCountrySelected;
   const onClose = onCountrySelected.onClose;

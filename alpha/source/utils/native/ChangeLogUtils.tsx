@@ -1,44 +1,42 @@
-// Module ID: 7778
-// Function ID: 7779
+// Module ID: 8099
+// Function ID: 8100
 // Name: utils/ChangeLogUtils
-// Dependencies: [19, 17, 21, 4896, 587, 5627, 5791, 4892, 558, 576, 6477, 7779, 1936, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 5974, 5395, 5086, 558, 576, 8100, 6655, 8101, 8102, 2]
 
-// Module 7778 (utils/ChangeLogUtils)
-import Fragment from "Fragment" /* 21 */;
+// Module 8099 (utils/ChangeLogUtils)
+import react_native from "react-native" /* 17 */;
+import Fragment2 from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef1936 from "module_1936" /* 1936 */;
-import LegacyTokens from "LegacyTokens" /* 5627 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6477 */;
-import MarkupRulesUtils from "MarkupRulesUtils" /* 7779 */;
-import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import CustomMarkup from "CustomMarkup" /* 5791 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import LegacyTokens from "LegacyTokens" /* 5974 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6655 */;
+import MarkupRulesUtils from "MarkupRulesUtils" /* 8101 */;
+import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 8102 */;
+import React from "react" /* 19 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import CustomMarkup from "CustomMarkup" /* 5395 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let length;
+let closure_4, flag, length, obj1, tmp3;
 
-let c3;
-let closure_4;
 let obj2;
 let obj3;
-let tmp;
-const Text_Text = tmp(4892);
-({ View: c3, Image: closure_4 } = react_native);
-const jsx = Fragment.jsx;
+let obj4;
+const View = react_native.View;
+const jsx = Fragment2.jsx;
 let createStyles = createStyles_mod;
-let obj = { link: obj2, list: { marginBottom: 10 }, image: { alignSelf: "center", flex: 1 }, container: obj3, text: { fontSize: 14, lineHeight: 18, marginBottom: 8, color: nativeDefault.colors.TEXT_MUTED } };
+let obj = { link: obj2, list: { marginBottom: 10 }, container: obj3, text: obj4 };
 obj2 = { color: nativeDefault.colors.TEXT_LINK };
 createStyles = createStyles.createStyles;
 obj3 = { borderLeftWidth: 2, paddingLeft: 8, marginBottom: 10, borderLeftColor: LegacyTokens.DARK_PRIMARY_500_LIGHT_PRIMARY_300 };
-({ fontSize: 14, lineHeight: 18, marginBottom: 8, color: nativeDefault.colors.TEXT_MUTED });
+obj4 = { fontSize: 14, lineHeight: 18, marginBottom: 8, color: nativeDefault.colors.TEXT_MUTED };
 let closure_6 = createStyles(obj);
 const rules = CustomMarkup.createRules({});
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeLogLink(arg0) {
   let node;
   let output;
   let state;
@@ -85,7 +83,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = state;
   cResult[3] = outputResult;
   tmp7 = outputResult;
-}) : ((arg0) => {
+}) : (function ChangeLogLink(arg0) {
   let node;
   let output;
   let state;
@@ -99,24 +97,24 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return <Link key={state.key} className={closure_6().link} target={node.target}>{output(content, obj2)}</Link>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeLogList(state) {
   let node;
   let output;
   let styling;
   let tmp6;
-  const obj = output(styling[9]);
+  let obj = output(styling[9]);
   const cResult = obj.c(14);
   ({ node, output } = state);
   state = state.state;
   styling = state.styling;
-  let tmp2 = closure_6();
+  const tmp2 = closure_6();
   if (cResult[0] === node.items) {
     if (cResult[1] === output) {
       if (cResult[2] === state) {
         if (cResult[3] === styling.components.ListItem) {
           tmp6 = cResult[4];
         }
-        if (cResult[9] === (styling.components.List || closure_3)) {
+        if (cResult[9] === (styling.components.List || View)) {
           if (cResult[10] === state.key) {
             if (cResult[11] === tmp2.list) {
               let tmp9;
@@ -127,8 +125,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
             }
           }
         }
-        const tmp11 = jsx(styling.components.List || closure_3, { style: tmp5, children: tmp6 }, tmp4);
-        cResult[9] = styling.components.List || closure_3;
+        const tmp11 = jsx(styling.components.List || View, { style: tmp5, children: tmp6 }, tmp4);
+        cResult[9] = styling.components.List || View;
         cResult[10] = state.key;
         cResult[11] = tmp2.list;
         cResult[12] = tmp6;
@@ -153,12 +151,13 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
       tmp6 = mapped;
     }
   }
-  const fn = function l(arg0, arg1) {
+  const fn = function c(arg0, arg1) {
     let closure_0 = arg0;
     return jsx(styling.components.ListItem, {
       children(arg0) {
+        const obj = { changelogImagesDisabled: true };
+        const merged = Object.assign(state);
         closure_0 = output;
-        let closure_1 = state;
         let closure_2 = arg0;
         const items = [];
         length = [];
@@ -166,26 +165,25 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
           if ("list" === type.type) {
             if (closure_4.length > 0) {
               const push = items.push;
-              const obj = { variant: "text-sm/normal", children: closure_0(closure_4, closure_1) };
+              obj = { variant: "text-sm/normal", children: closure_0(closure_4, obj) };
               const Text = item(closure_2_2[7]).Text;
               const merged = Object.assign(closure_2);
               push(closure_2_5(Text, obj, -1));
               closure_4 = [];
             }
             const push2 = items.push;
-            const obj2 = { children: closure_0(type, closure_1) };
-            push2(closure_2_5(closure_2_3, obj2, index));
+            const obj2 = { children: closure_0(type, obj) };
+            push2(closure_2_5(length, obj2, index));
           } else {
             closure_4.push(type);
           }
         });
         const tmp = output;
-        const tmp2 = state;
         if (length.length > 0) {
           const push = items.push;
           const Text = Text_Text.Text;
-          const merged = Object.assign(arg0);
-          push(<Text key={-1} variant="text-sm/normal">{tmp(length, tmp2)}</Text>);
+          const merged1 = Object.assign(arg0);
+          push(<Text key={-1} variant="text-sm/normal">{tmp(length, obj)}</Text>);
           length = [];
         }
         return items;
@@ -197,7 +195,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   cResult[7] = styling.components.ListItem;
   cResult[8] = fn;
   tmp7 = fn;
-}) : ((styling) => {
+}) : (function ChangeLogList(styling) {
   let state;
   ({ output: require, state } = styling);
   styling = styling.styling;
@@ -205,13 +203,14 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   let List = styling.components.List;
   const tmp = closure_6();
   if (!List) {
-    List = closure_3;
+    List = View;
   }
   let items = node.items;
   return <List key={state.key} style={tmp.list}>{items.map((item, index) => jsx(styling.components.ListItem, {
     children(arg0) {
+      let obj = { changelogImagesDisabled: true };
+      let merged = Object.assign(state);
       item = require;
-      let closure_1 = state;
       let closure_2 = arg0;
       const items = [];
       length = [];
@@ -219,25 +218,25 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
         if ("list" === type.type) {
           if (closure_4.length > 0) {
             const push = items.push;
-            const obj = { variant: "text-sm/normal", children: closure_0(closure_4, closure_1) };
+            obj = { variant: "text-sm/normal", children: closure_0(closure_4, obj) };
             const Text = item(closure_2_2[7]).Text;
             const merged = Object.assign(closure_2);
             push(closure_2_5(Text, obj, -1));
             closure_4 = [];
           }
           const push2 = items.push;
-          const obj2 = { children: closure_0(type, closure_1) };
-          push2(closure_2_5(closure_2_3, obj2, index));
+          const obj2 = { children: closure_0(type, obj) };
+          push2(closure_2_5(length, obj2, index));
         } else {
           closure_4.push(type);
         }
       });
       if (length.length > 0) {
         let push = items.push;
-        let obj = { variant: "text-sm/normal", children: tmp(length, tmp2) };
+        let obj2 = { variant: "text-sm/normal", children: tmp(length, obj) };
         let Text = Text_Text.Text;
-        let merged = Object.assign(arg0);
-        push(<Text key={-1} variant="text-sm/normal">{require(length, state)}</Text>);
+        const merged1 = Object.assign(arg0);
+        push(<Text key={-1} variant="text-sm/normal">{require(length, obj)}</Text>);
         length = [];
       }
       return items;
@@ -245,74 +244,258 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   }, index))}</List>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((styling) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeLogParagraph(state) {
   let node;
   let output;
-  let state;
-  const obj = react2;
-  const cResult = obj.c(9);
-  ({ node, output, state } = styling);
-  styling = styling.styling;
+  let text;
+  let tmp16;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  const obj = output(576);
+  const cResult = obj.c(27);
+  ({ node, output } = state);
+  state = state.state;
+  const styling = state.styling;
   const tmp4 = closure_6();
+  dependencyMap = tmp4;
   const components = styling.components;
   let Paragraph;
   if (components != null) {
     Paragraph = components.Paragraph;
   }
   if (Paragraph == null) {
-    Paragraph = Text_Text.Text;
+    Paragraph = tmp(5086).Text;
   }
-  if (cResult[0] === node.content) {
-    if (cResult[1] === output) {
-      let tmp8;
-      if (cResult[2] === state) {
-        tmp8 = cResult[3];
-      }
-      if (cResult[4] === Paragraph) {
-        if (cResult[5] === state.key) {
-          if (cResult[6] === tmp4.text) {
-            let tmp10;
-            if (cResult[7] === tmp8) {
-              tmp10 = cResult[8];
+  if (cResult[0] === Paragraph) {
+    if (cResult[1] === node.content) {
+      if (cResult[2] === output) {
+        if (cResult[3] === state) {
+          if (cResult[4] === tmp4) {
+            tmp6 = cResult[5];
+            tmp7 = cResult[6];
+            tmp8 = cResult[7];
+            tmp9 = cResult[8];
+          }
+          const _Symbol = Symbol;
+          if (tmp9 === Symbol.for("react.early_return_sentinel")) {
+            if (cResult[23] === tmp6) {
+              if (cResult[24] === tmp7) {
+                let tmp26;
+                if (cResult[25] === tmp8) {
+                  tmp26 = cResult[26];
+                }
+                tmp9 = tmp26;
+              }
             }
-            return tmp10;
+            const tmp28 = <tmp6 key={tmp7}>{tmp8}</tmp6>;
+            cResult[23] = tmp6;
+            cResult[24] = tmp7;
+            cResult[25] = tmp8;
+            cResult[26] = tmp28;
+            tmp26 = tmp28;
+          }
+          return tmp9;
+        }
+      }
+    }
+  }
+  const forResult = Symbol.for("react.early_return_sentinel");
+  const tmpResult = output(8100);
+  const result = tmpResult.splitParagraphAtImages(node.content);
+  if (true !== state.changelogImagesDisabled) {
+    const tmpResult2 = output(8100);
+    if (tmpResult2.hasImageSegment(result)) {
+      if (cResult[18] === Paragraph) {
+        if (cResult[19] === output) {
+          if (cResult[20] === state) {
+            class T {
+              constructor(arg0, arg1) {
+                if ("image" === state.type) {
+                  tmp7 = jsx;
+                  tmp8 = closure_3;
+                  obj1 = { children: null };
+                  tmp9 = output;
+                  items = [];
+                  items[0] = state.node;
+                  obj4 = {};
+                  tmp10 = state;
+                  tmp11 = obj4;
+                  Fragment = closure_3.Fragment;
+                  merged = Object.assign(state);
+                  flag = true;
+                  obj4.changelogBlockImage = true;
+                  obj1.children = output(items, obj4);
+                  tmp6 = jsx(Fragment, obj1, arg1);
+                } else {
+                  tmp = jsx;
+                  tmp2 = Text;
+                  obj = { variant: "text-sm/normal", style: null, children: null };
+                  tmp3 = closure_2;
+                  obj.style = closure_2.text;
+                  tmp4 = output;
+                  tmp5 = state;
+                  obj.children = output(state.nodes, state);
+                  tmp6 = jsx(Text, obj, arg1);
+                }
+                return tmp6;
+              }
+            }
+            tmp16 = forResult;
           }
         }
       }
-      const tmp12 = <Paragraph key={tmp6} variant="text-sm/normal" style={tmp7}>{tmp8}</Paragraph>;
-      cResult[4] = Paragraph;
-      cResult[5] = state.key;
-      cResult[6] = tmp4.text;
-      cResult[7] = tmp8;
-      cResult[8] = tmp12;
-      tmp10 = tmp12;
+      class T {
+        constructor(arg0, arg1) {
+          if ("image" === state.type) {
+            tmp7 = jsx;
+            tmp8 = closure_3;
+            obj1 = { children: null };
+            tmp9 = output;
+            items = [];
+            items[0] = state.node;
+            obj4 = {};
+            tmp10 = state;
+            tmp11 = obj4;
+            Fragment = closure_3.Fragment;
+            merged = Object.assign(state);
+            flag = true;
+            obj4.changelogBlockImage = true;
+            obj1.children = output(items, obj4);
+            tmp6 = jsx(Fragment, obj1, arg1);
+          } else {
+            tmp = jsx;
+            tmp2 = Text;
+            obj = { variant: "text-sm/normal", style: null, children: null };
+            tmp3 = closure_2;
+            obj.style = closure_2.text;
+            tmp4 = output;
+            tmp5 = state;
+            obj.children = output(state.nodes, state);
+            tmp6 = jsx(Text, obj, arg1);
+          }
+          return tmp6;
+        }
+      }
+      cResult[18] = Paragraph;
+      cResult[19] = output;
+      cResult[20] = state;
+      cResult[21] = tmp4;
+      cResult[22] = T;
+    }
+    cResult[0] = Paragraph;
+    cResult[1] = node.content;
+    cResult[2] = output;
+    cResult[3] = state;
+    cResult[4] = tmp4;
+    cResult[5] = tmp21;
+    cResult[6] = tmp20;
+    cResult[7] = tmp19;
+    cResult[8] = tmp16;
+    tmp9 = tmp16;
+    tmp8 = tmp19;
+    tmp7 = tmp20;
+    tmp6 = tmp21;
+  }
+  if (cResult[9] === node.content) {
+    if (cResult[10] === output) {
+      let tmp14;
+      if (cResult[11] === state) {
+        tmp14 = cResult[12];
+      }
+      class T {
+        constructor(arg0, arg1) {
+          if ("image" === state.type) {
+            tmp7 = jsx;
+            tmp8 = closure_3;
+            obj1 = { children: null };
+            tmp9 = output;
+            items = [];
+            items[0] = state.node;
+            obj4 = {};
+            tmp10 = state;
+            tmp11 = obj4;
+            Fragment = closure_3.Fragment;
+            merged = Object.assign(state);
+            flag = true;
+            obj4.changelogBlockImage = true;
+            obj1.children = output(items, obj4);
+            tmp6 = jsx(Fragment, obj1, arg1);
+          } else {
+            tmp = jsx;
+            tmp2 = Text;
+            obj = { variant: "text-sm/normal", style: null, children: null };
+            tmp3 = closure_2;
+            obj.style = closure_2.text;
+            tmp4 = output;
+            tmp5 = state;
+            obj.children = output(state.nodes, state);
+            tmp6 = jsx(Text, obj, arg1);
+          }
+          return tmp6;
+        }
+      }
+      const tmp18 = <Paragraph key={tmp12} variant="text-sm/normal" style={tmp13}>{tmp14}</Paragraph>;
+      cResult[13] = Paragraph;
+      cResult[14] = state.key;
+      cResult[15] = tmp4.text;
+      cResult[16] = tmp14;
+      cResult[17] = tmp18;
+      tmp16 = tmp18;
     }
   }
   const outputResult = output(node.content, state);
-  cResult[0] = node.content;
-  cResult[1] = output;
-  cResult[2] = state;
-  cResult[3] = outputResult;
-  tmp8 = outputResult;
-}) : ((state) => {
+  cResult[9] = node.content;
+  cResult[10] = output;
+  cResult[11] = state;
+  cResult[12] = outputResult;
+  tmp14 = outputResult;
+}) : (function ChangeLogParagraph(state) {
   let node;
   let output;
-  let styling;
+  let text;
+  ({ node, output } = state);
   state = state.state;
-  ({ node, output, styling } = state);
+  const styling = state.styling;
+  const tmp = closure_6();
+  dependencyMap = tmp;
   const components = styling.components;
   let Paragraph;
-  const tmp = closure_6();
   if (components != null) {
     Paragraph = components.Paragraph;
   }
   if (Paragraph == null) {
-    Paragraph = Text_Text.Text;
+    Paragraph = output(5086).Text;
   }
-  return <Paragraph key={state.key} variant="text-sm/normal" style={tmp.text}>{output(node.content, state)}</Paragraph>;
+  let tmp6 = dependencyMap;
+  const obj = output(8100);
+  const result = obj.splitParagraphAtImages(node.content);
+  const tmp5 = output;
+  if (true !== state.changelogImagesDisabled) {
+    let tmp7;
+    const tmp5Result = tmp5(8100);
+    if (tmp5Result.hasImageSegment(result)) {
+      tmp7 = <View key={state.key}>{result.map((type, index) => {
+        let tmp6;
+        if ("image" === type.type) {
+          const items = [type.node];
+          const Fragment = Paragraph.Fragment;
+          const obj3 = { changelogBlockImage: true };
+          const merged = Object.assign(state);
+          tmp6 = < key={arg1}>{output(items, obj3)}</>;
+        } else {
+          tmp6 = <Paragraph key={arg1} variant="text-sm/normal" style={text.text}>{output(arg0.nodes, state)}</Paragraph>;
+        }
+        return tmp6;
+      })}</View>;
+    }
+    return tmp7;
+  }
+  tmp7 = <Paragraph key={state.key} variant="text-sm/normal" style={tmp.text}>{output(node.content, state)}</Paragraph>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeLogStrong(arg0) {
   let node;
   let output;
   let state;
@@ -373,7 +556,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[3] = reactResult;
     tmp4 = reactResult;
   }
-}) : ((arg0) => {
+}) : (function ChangeLogStrong(arg0) {
   let node;
   let output;
   let reactResult;
@@ -383,7 +566,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = ManaTypeConsolidationExperiment;
   if (obj.useManaTypeConsolidationExperiment("ChangeLogStrong")) {
     let str;
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     const tmp5 = jsx;
     if (state != null) {
       str = state.textColor;
@@ -401,60 +584,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return reactResult;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  let node;
-  let state;
-  let tmp4;
-  let tmp7;
-  const obj = react2;
-  const cResult = obj.c(8);
-  ({ node, state } = arg0);
-  const tmp3 = closure_6();
-  const image = tmp3.image;
-  const key = state.key;
-  if (cResult[0] !== node.target) {
-    const obj2 = _modDef1936;
-    const sanitizeUrlResult = obj2.sanitizeUrl(node.target);
-    cResult[0] = node.target;
-    cResult[1] = sanitizeUrlResult;
-    tmp4 = sanitizeUrlResult;
-  } else {
-    tmp4 = cResult[1];
-  }
-  if (cResult[2] !== tmp4) {
-    const obj3 = { uri: tmp4 };
-    cResult[2] = tmp4;
-    cResult[3] = obj3;
-    tmp7 = obj3;
-  } else {
-    tmp7 = cResult[3];
-  }
-  if (cResult[4] === state.key) {
-    if (cResult[5] === tmp3.image) {
-      let tmp8;
-      if (cResult[6] === tmp7) {
-        tmp8 = cResult[7];
-      }
-      return tmp8;
-    }
-  }
-  const tmp9 = <React3 key={key} style={image} source={tmp7} />;
-  cResult[4] = state.key;
-  cResult[5] = tmp3.image;
-  cResult[6] = tmp7;
-  cResult[7] = tmp9;
-  tmp8 = tmp9;
-}) : ((arg0) => {
-  let node;
-  let obj3;
-  let state;
-  ({ node, state } = arg0);
-  const obj2 = { uri: obj3.sanitizeUrl(node.target) };
-  obj3 = _modDef1936;
-  return <React3 key={state.key} style={closure_6().image} source={obj2} />;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeLogBlockQuote(arg0) {
   let node;
   let output;
   let state;
@@ -469,48 +599,56 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp8 = cResult[3];
       }
       if (cResult[4] === tmp4.text) {
-        let tmp10;
+        let tmp11;
         if (cResult[5] === tmp8) {
-          tmp10 = cResult[6];
+          tmp11 = cResult[6];
         }
         if (cResult[7] === state.key) {
           if (cResult[8] === tmp4.container) {
-            let tmp13;
-            if (cResult[9] === tmp10) {
-              tmp13 = cResult[10];
+            let tmp14;
+            if (cResult[9] === tmp11) {
+              tmp14 = cResult[10];
             }
-            return tmp13;
+            return tmp14;
           }
         }
-        const tmp16 = <_false key={tmp5} style={tmp6}>{tmp10}</_false>;
+        const tmp17 = <View key={tmp5} style={tmp6}>{tmp11}</View>;
         cResult[7] = state.key;
         cResult[8] = tmp4.container;
-        cResult[9] = tmp10;
-        cResult[10] = tmp16;
-        tmp13 = tmp16;
+        cResult[9] = tmp11;
+        cResult[10] = tmp17;
+        tmp14 = tmp17;
       }
-      const tmp12 = jsx(Text_Text.Text, { variant: "text-sm/normal", style: tmp7, children: tmp8 });
+      const tmp13 = jsx(Text_Text.Text, { variant: "text-sm/normal", style: tmp7, children: tmp8 });
       cResult[4] = tmp4.text;
       cResult[5] = tmp8;
-      cResult[6] = tmp12;
-      tmp10 = tmp12;
+      cResult[6] = tmp13;
+      tmp11 = tmp13;
     }
   }
-  const outputResult = output(node.content, state);
+  const content = node.content;
+  const obj4 = { changelogImagesDisabled: true };
+  const merged = Object.assign(state);
+  const outputResult = output(content, obj4);
   cResult[0] = node.content;
   cResult[1] = output;
   cResult[2] = state;
   cResult[3] = outputResult;
   tmp8 = outputResult;
-}) : ((state) => {
+}) : (function ChangeLogBlockQuote(state) {
+  let content;
   let node;
+  let obj3;
   let output;
   state = state.state;
   ({ node, output } = state);
   const tmp = closure_6();
-  ({ variant: "text-sm/normal", style: tmp.text, children: output(node.content, state) });
+  ({ variant: "text-sm/normal", style: tmp.text, children: output(content, obj3) });
+  obj3 = { changelogImagesDisabled: true };
   const Text = Text_Text.Text;
-  return <_false key={state.key} style={tmp.container}>{null}</_false>;
+  content = node.content;
+  const merged = Object.assign(state);
+  return <View key={state.key} style={tmp.container}>{null}</View>;
 });
 const obj5 = {
   link(inlineStoreParams) {
@@ -543,13 +681,19 @@ const obj5 = {
     };
   },
   image: {
-    react(node, output, state) {
-      return <closure_12 node={arg0} output={arg1} state={arg2} />;
+    react(arg0, arg1, changelogBlockImage) {
+      let tmp = null;
+      if (true === changelogBlockImage.changelogBlockImage) {
+        const obj = { target: null, alt: null, title: null };
+        ({ target: obj.target, alt: obj.alt, title: obj.title } = arg0);
+        tmp = jsx(ChangelogInlineImageDefault, { target: null, alt: null, title: null }, changelogBlockImage.key);
+      }
+      return tmp;
     }
   },
   blockQuote: {
     react(node, output, state) {
-      return <closure_13 node={arg0} output={arg1} state={arg2} />;
+      return <closure_12 node={arg0} output={arg1} state={arg2} />;
     }
   },
   strong: {
@@ -565,7 +709,7 @@ const obj5 = {
     };
   }
 };
-const result = size.fileFinishedImporting("utils/native/ChangeLogUtils.tsx");
+let result = size.fileFinishedImporting("utils/native/ChangeLogUtils.tsx");
 
 export const baseRules = rules;
 export const customRules = obj5;

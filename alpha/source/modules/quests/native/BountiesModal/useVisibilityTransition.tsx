@@ -1,11 +1,11 @@
-// Module ID: 14834
-// Function ID: 14835
+// Module ID: 15095
+// Function ID: 15096
 // Name: useVisibilityTransition
-// Dependencies: [32, 19, 558, 576, 4618, 4897, 2]
+// Dependencies: [32, 19, 558, 576, 4810, 5091, 2]
 
-// Module 14834 (useVisibilityTransition)
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
+// Module 15095 (useVisibilityTransition)
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -16,7 +16,7 @@ let closure_4 = { code: "function useVisibilityTransitionTsx1(){const{withTiming
 let closure_5 = { code: "function useVisibilityTransitionTsx2(){const{runOnJS,animationCallbackJSThread}=this.__closure;runOnJS(animationCallbackJSThread)();}" };
 const __initData = { code: "function useVisibilityTransitionTsx3(){const{withTiming,visibility,visible,entranceTiming,exitTiming,runOnJS,animationCallbackJSThread}=this.__closure;return{opacity:withTiming(visibility,visible?entranceTiming:exitTiming,'respect-motion-settings',function(){'worklet';runOnJS(animationCallbackJSThread)();})};}" };
 let closure_7 = { code: "function useVisibilityTransitionTsx4(){const{runOnJS,animationCallbackJSThread}=this.__closure;runOnJS(animationCallbackJSThread)();}" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVisibilityTransition(visible) {
   let closure_3;
   let entranceTiming;
   const tmp = visible;
@@ -76,7 +76,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   cResult[1] = visible || first;
   cResult[2] = obj3;
   tmp12 = obj3;
-}) : ((visible) => {
+}) : (function useVisibilityTransition(visible) {
   let closure_3;
   let fn;
   let obj3;

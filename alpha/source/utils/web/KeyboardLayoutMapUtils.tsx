@@ -1,18 +1,18 @@
-// Module ID: 13900
-// Function ID: 13901
+// Module ID: 14203
+// Function ID: 14204
 // Name: KeyboardLayoutMapUtils
-// Dependencies: [32, 5, 1357, 7026, 3, 1369, 13899, 510, 2]
+// Dependencies: [32, 5, 1369, 7214, 3, 1381, 14202, 510, 2]
 // Exports: __DEV_overrideLayoutMapKey, getKeyboardEventShapeFromAny, getKeyboardEventShapeFromKey, getKeyboardEventShapeFromKeycode, getLayoutMap, initializeKeyboardMapper, resetKeyboardMapper
 
-// Module 13900 (KeyboardLayoutMapUtils)
+// Module 14203 (KeyboardLayoutMapUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
-import keyCodeDefault from "keyCode" /* 13899 */;
+import keyCodeDefault from "keyCode" /* 14202 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1357 */;
-import KeyboardConstants from "KeyboardConstants" /* 7026 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1369 */;
+import KeyboardConstants from "KeyboardConstants" /* 7214 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, c4, c5;
@@ -20,7 +20,7 @@ let c1, c2, c4, c5;
 let LinuxKeyToCode;
 let MacosKeyToCode;
 let WindowsKeyToCode;
-const f115777 = (item) => {
+const f117023 = (item) => {
   let tmp;
   [tmp, obj] = item;
   const items = [tmp, ];
@@ -602,8 +602,8 @@ class DiscordKeyboardLayoutMap {
     }
     obj = Object.create(new.target.prototype);
     const entries = Object.entries(tmp);
-    obj.map = new Map(entries.map(f115777));
-    new Map(entries.map(f115777));
+    obj.map = new Map(entries.map(f117023));
+    new Map(entries.map(f117023));
     return obj;
   }
   get(arg0) {
@@ -643,7 +643,7 @@ Object.defineProperty(DiscordKeyboardLayoutMap.prototype, "size", {
 });
 obj = Object.create(DiscordKeyboardLayoutMap.prototype);
 let entries = Object.entries(frozen);
-let map = new Map(entries.map(f115777));
+let map = new Map(entries.map(f117023));
 obj.map = map;
 let c15 = "keyboard-layout-map";
 class BaseKeyboardMapper {

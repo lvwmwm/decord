@@ -1,26 +1,26 @@
-// Module ID: 7596
-// Function ID: 7597
+// Module ID: 9303
+// Function ID: 9304
 // Name: ConversationListItem
-// Dependencies: [19, 17, 7116, 7118, 1085, 21, 4896, 587, 558, 576, 1490, 504, 7561, 7579, 7564, 4892, 1126, 5612, 7597, 7598, 7601, 6059, 6002, 2]
+// Dependencies: [19, 17, 7302, 7304, 1085, 21, 5090, 587, 558, 576, 1502, 504, 9272, 9290, 9275, 5086, 1126, 5387, 9304, 9305, 9307, 6245, 6186, 2]
 
-// Module 7596 (ConversationListItem)
+// Module 9303 (ConversationListItem)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import ConversationConstants from "ConversationConstants" /* 7118 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 7561 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 7564 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 7579 */;
-import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 7598 */;
-import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 7601 */;
+import ConversationConstants from "ConversationConstants" /* 7304 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 9272 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9275 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9290 */;
+import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 9305 */;
+import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 9307 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7116 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7302 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channelId, navigation;
+let navigation;
 
 let StyleSheet;
 let c9;
@@ -50,7 +50,7 @@ const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj7 = { height: nativeDefault.space.PX_64 };
 let closure_12 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConversationListItemBase(conversation) {
   let first;
   let items1;
   let items2;
@@ -59,7 +59,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
   const cResult = obj.c(50);
   conversation = conversation.conversation;
   const tmp4 = closure_12();
-  let obj2 = conversation(1490);
+  let obj2 = conversation(1502);
   navigation = obj2.useNavigation();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let tmp7 = ChannelConversationsStore;
@@ -133,7 +133,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
                     }
                     if (cResult[25] !== tmp4.maskOpaque) {
                       const obj4 = { colors, style: tmp4.maskOpaque };
-                      const tmp33 = closure_8(navigation(5612), obj4);
+                      const tmp33 = closure_8(navigation(5387), obj4);
                       cResult[25] = tmp4.maskOpaque;
                       cResult[26] = tmp33;
                       tmp29 = tmp33;
@@ -143,7 +143,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
                     if (cResult[27] !== tmp4.maskFade) {
                       const obj5 = { colors: colors2, start: null, end: null, style: tmp4.maskFade };
                       ({ START: obj9.start, END: obj9.end } = VerticalGradient);
-                      const tmp39 = closure_8(navigation(5612), obj5);
+                      const tmp39 = closure_8(navigation(5387), obj5);
                       cResult[27] = tmp4.maskFade;
                       cResult[28] = tmp39;
                       tmp34 = tmp39;
@@ -189,7 +189,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
                                   }
                                   const obj6 = { style: tmp14, onPress: tmp13, accessibilityLabel: tmp15, children: items1 };
                                   items1 = [tmp25, tmp53];
-                                  const tmp59 = closure_9(conversation(6002).Card, obj6);
+                                  const tmp59 = closure_9(conversation(6186).Card, obj6);
                                   cResult[44] = conversation.title;
                                   cResult[45] = tmp13;
                                   cResult[46] = tmp4.card;
@@ -200,7 +200,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
                                 }
                               }
                               const obj7 = { style: tmp4.previewsMask, maskElement: tmp40, children: tmp49 };
-                              const tmp56 = closure_8(navigation(6059), obj7);
+                              const tmp56 = closure_8(navigation(6245), obj7);
                               cResult[40] = tmp4.previewsMask;
                               cResult[41] = tmp40;
                               cResult[42] = tmp49;
@@ -216,7 +216,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
                           }
                         }
                         if (null == arr4) {
-                          mapped = closure_8(navigation(7597), {});
+                          mapped = closure_8(navigation(9304), {});
                         } else {
                           mapped = arr4.map((blocked) => {
                             if (!blocked.blocked) {
@@ -264,14 +264,14 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
                 tmp25 = tmp28;
               }
               const obj12 = { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, style: timestamp, children: tmp20 };
-              const tmp24 = closure_8(conversation(4892).Text, obj12);
+              const tmp24 = closure_8(conversation(5086).Text, obj12);
               cResult[18] = tmp4.timestamp;
               cResult[19] = tmp20;
               cResult[20] = tmp24;
               tmp22 = tmp24;
             }
             const obj13 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, style: tmp4.title, children: conversation.title };
-            const tmp19 = closure_8(conversation(4892).Text, obj13);
+            const tmp19 = closure_8(conversation(5086).Text, obj13);
             cResult[13] = conversation.title;
             cResult[14] = tmp4.title;
             cResult[15] = tmp19;
@@ -297,7 +297,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
     cResult[12] = fn2;
     tmp13 = fn2;
   }
-  const fn = function l() {
+  const fn = function s() {
     return ChannelConversationsStore.getHydratedMessages(conversation.channelId, conversation.id);
   };
   const items4 = [, ];
@@ -308,7 +308,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
   cResult[4] = items4;
   tmp9 = items4;
   tmp8 = fn;
-}) : ((conversation) => {
+}) : (function ConversationListItemBase(conversation) {
   let intl;
   let items4;
   let items5;
@@ -401,7 +401,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
   return tmp6(Card, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ConversationListItem(channelId) {
   let first;
   const obj = channelId(576);
   const cResult = obj.c(7);
@@ -439,7 +439,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
     }
     return tmp9;
   }
-  const fn = function l() {
+  const fn = function s() {
     const conversationMetadata = ChannelConversationsStore.getConversationMetadata(channelId, conversationId);
     let conversation;
     if (conversationMetadata != null) {
@@ -454,7 +454,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   cResult[4] = items1;
   tmp7 = items1;
   tmp6 = fn;
-}) : ((channelId) => {
+}) : (function ConversationListItem(channelId) {
   channelId = channelId.channelId;
   const conversationId = channelId.conversationId;
   const items = [ChannelConversationsStore];

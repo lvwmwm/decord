@@ -1,14 +1,14 @@
-// Module ID: 7742
-// Function ID: 7743
+// Module ID: 8063
+// Function ID: 8064
 // Name: usePremiumDiscountOffer
-// Dependencies: [6931, 1379, 558, 576, 7743, 6926, 573, 2]
+// Dependencies: [7120, 1391, 558, 576, 8064, 7115, 573, 2]
 // Exports: usePremiumGroupDiscountOffer
 
-// Module 7742 (usePremiumDiscountOffer)
+// Module 8063 (usePremiumDiscountOffer)
 import react from "react" /* 576 */;
-import useDiscountOfferDefault from "useDiscountOffer" /* 7743 */;
-import IAPStore from "IAPStore" /* 6931 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+import useDiscountOfferDefault from "useDiscountOffer" /* 8064 */;
+import IAPStore from "IAPStore" /* 7120 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,10 +16,10 @@ let closure_4;
 let hasOwnProperty;
 let tmp;
 const useStateFromStores = tmp(573);
-const ProductIds = tmp(6926);
+const ProductIds = tmp(7115);
 ({ PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID: closure_4, PREMIUM_TIER_2_REENGAGEMENT_1_MONTH_40_PERCENT_DISCOUNT_ID: hasOwnProperty } = PremiumConstants);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetDiscountOffer(arg0, arg1) {
   let closure_0 = arg1;
   const obj = react;
   const cResult = obj.c(4);
@@ -51,7 +51,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => 
   cResult[2] = arg1;
   cResult[3] = tmp7;
   tmp5 = tmp7;
-}) : ((arg0, arg1) => {
+}) : (function useGetDiscountOffer(arg0, arg1) {
   let closure_0 = arg1;
   const tmp = useDiscountOfferDefault(arg0);
   const values = Object.values(ProductIds.DiscountIdToProductOfferId[arg0]);
@@ -66,14 +66,14 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => 
   return tmp2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumDiscountOffer() {
   let tmp4;
   let tmp5;
   let obj = react;
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [IAPStore];
-    const fn = function c() {
+    const fn = function f() {
       const obj = { isFetchingProducts: IAPStore.isFetchingProducts(), offerIds: IAPStore.getOfferIds() };
       return obj;
     };
@@ -91,7 +91,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = closure_6(hasOwnProperty, offerIds);
   }
   return tmp7;
-}) : (() => {
+}) : (function usePremiumDiscountOffer() {
   let obj = useStateFromStores;
   const items = [IAPStore];
   const offerIds = obj.useStateFromStoresObject(items, () => {

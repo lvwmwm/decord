@@ -1,17 +1,17 @@
-// Module ID: 12459
-// Function ID: 12460
+// Module ID: 12555
+// Function ID: 12556
 // Name: useIsHubRealNamePromptShowing
-// Dependencies: [19, 12460, 2112, 2074, 1377, 1085, 12461, 558, 576, 504, 12462, 2]
+// Dependencies: [19, 12556, 2124, 2086, 1389, 1085, 12557, 558, 576, 504, 12558, 2]
 
-// Module 12459 (useIsHubRealNamePromptShowing)
+// Module 12555 (useIsHubRealNamePromptShowing)
 import Constants from "Constants" /* 1085 */;
-import Constants2 from "Constants" /* 12461 */;
-import GuildPromptsActionCreatorsDefault from "GuildPromptsActionCreators" /* 12462 */;
+import Constants2 from "Constants" /* 12557 */;
+import GuildPromptsActionCreatorsDefault from "GuildPromptsActionCreators" /* 12558 */;
 import react from "react" /* 19 */;
-import GuildPromptsStore from "GuildPromptsStore" /* 12460 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import UserStore from "UserStore" /* 1377 */;
+import GuildPromptsStore from "GuildPromptsStore" /* 12556 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let _require;
 
 const GuildFeatures = Constants.GuildFeatures;
 const GuildPrompts = Constants2.GuildPrompts;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsHubRealNamePromptShowing(arg0) {
   let closure_0;
   let first;
   let tmp9;
@@ -89,7 +89,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const effect = react.useEffect(tmp11, tmp12);
     return true === stateFromStores;
   }
-  class E {
+  class R {
     constructor() {
       let tmp2 = null != closure_0;
       const tmp = closure_0;
@@ -108,11 +108,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items1 = [stateFromStores, arg0];
   cResult[3] = arg0;
   cResult[4] = stateFromStores;
-  cResult[5] = E;
+  cResult[5] = R;
   cResult[6] = items1;
   tmp12 = items1;
-  tmp11 = E;
-}) : ((arg0) => {
+  tmp11 = R;
+}) : (function useIsHubRealNamePromptShowing(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");

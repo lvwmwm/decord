@@ -1,97 +1,73 @@
-// Module ID: 12792
-// Function ID: 12793
+// Module ID: 12939
+// Function ID: 12940
 // Name: MediaModalYoutube
-// Dependencies: [32, 109, 19, 1085, 21, 558, 576, 7982, 7957, 7946, 7950, 12793, 1369, 2]
+// Dependencies: [32, 19, 1085, 21, 558, 576, 8399, 5928, 8364, 8368, 12940, 1381, 2]
 
-// Module 12792 (MediaModalYoutube)
+// Module 12939 (MediaModalYoutube)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 7946 */;
-import MediaModalWebView from "MediaModalWebView" /* 7982 */;
+import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8364 */;
+import MediaModalWebViewBase from "MediaModalWebViewBase" /* 8399 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
-import react from "react" /* 19 */;
+import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap, visible;
+let dependencyMap;
 
-let closure_3 = ["visible", "style", "source"];
 let _slicedToArray = _slicedToArray_mod;
-let _objectWithoutProperties = _objectWithoutProperties_mod;
+let react = react_mod;
 const YOUTUBE_EMBED_PAGE_TYPE = Constants.YOUTUBE_EMBED_PAGE_TYPE;
 const jsx = Fragment.jsx;
-let closure_9 = "https:" + window.GLOBAL_ENV.WEBAPP_ENDPOINT;
+let closure_7 = "https:" + window.GLOBAL_ENV.WEBAPP_ENDPOINT;
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
-  let closure_0;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MediaModalYoutube(visible) {
   let closure_2;
   let closure_4;
-  let closure_5;
+  let onError;
+  let onLoad;
+  let onLoadStart;
+  let onToggleOverlay;
   let playerState;
-  let ref;
   let source;
+  let str21;
+  let str22;
   let style;
-  let tmp14;
-  let tmp19;
-  let tmp20;
-  let tmp22;
-  let tmp4;
-  let tmp5;
-  let tmp6;
+  let tmp12;
+  let tmp13;
+  let tmp15;
   let tmp7;
-  const tmp = _require;
+  const tmp = visible;
   let tmp2 = dependencyMap;
-  let obj = require("react");
-  const cResult = obj.c(37);
-  if (cResult[0] !== visible) {
-    visible = visible.visible;
-    _require = visible;
-    ({ style, source } = visible);
-    const tmp10 = _objectWithoutProperties(visible, closure_3);
-    cResult[0] = visible;
-    cResult[1] = tmp10;
-    cResult[2] = source;
-    cResult[3] = style;
-    cResult[4] = visible;
-    tmp7 = visible;
-    tmp6 = style;
-    tmp5 = source;
-    tmp4 = tmp10;
-  } else {
-    tmp4 = cResult[1];
-    tmp5 = cResult[2];
-    tmp6 = cResult[3];
-    _require = cResult[4];
-  }
-  let obj2 = ref;
-  [playerState, dependencyMap] = ref.useState(tmp(7982).PlayerState.UNREADY);
-  [tmp14, closure_3] = _slicedToArray(ref.useState(undefined), 2);
-  let tmp15 = playerState;
-  const tmp13 = _slicedToArray(ref.useState(undefined), 2);
-  const tmp16 = playerState(7957)(playerState);
-  _slicedToArray = tmp16;
-  let tmp17 = playerState(7957)(tmp7);
-  _objectWithoutProperties = tmp17;
-  ref = ref.useRef(null);
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function b() {
-      const MediaViewerAnalytics = closure_0(closure_2[9]).MediaViewerAnalytics;
+  let obj = visible(576);
+  const cResult = obj.c(33);
+  visible = visible.visible;
+  ({ style, source, onError, onLoad, onLoadStart, onToggleOverlay } = visible);
+  let obj2 = react;
+  [playerState, dependencyMap] = react.useState(visible(8399).PlayerState.UNREADY);
+  const tmp6 = _slicedToArray(react.useState(undefined), 2);
+  [tmp7, _slicedToArray] = tmp6;
+  const tmp9 = playerState(5928)(playerState);
+  react = tmp9;
+  const tmp10 = playerState(5928)(visible);
+  let closure_5 = tmp10;
+  const ref = react.useRef(null);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function c() {
+      const MediaViewerAnalytics = visible(closure_2[8]).MediaViewerAnalytics;
       const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted({ platform: "youtube", action: "attempted" });
     };
     const items = [];
-    cResult[5] = fn;
-    cResult[6] = items;
-    tmp20 = items;
-    tmp19 = fn;
+    cResult[0] = fn;
+    cResult[1] = items;
+    tmp12 = fn;
+    tmp13 = items;
   } else {
-    tmp19 = cResult[5];
-    tmp20 = cResult[6];
+    [tmp12, tmp13] = cResult;
   }
-  const effect = obj2.useEffect(tmp19, tmp20);
-  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function w(arg0) {
+  const effect = obj2.useEffect(tmp12, tmp13);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function y(arg0) {
       let type;
       let value;
       const parsed = JSON.parse(arg0);
@@ -100,9 +76,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((visible
         let READY;
         const tmp17 = closure_2;
         if ("-1" === value) {
-          READY = MediaModalWebView.PlayerState.ERRORED;
+          READY = MediaModalWebViewBase.PlayerState.ERRORED;
         } else {
-          READY = MediaModalWebView.PlayerState.READY;
+          READY = MediaModalWebViewBase.PlayerState.READY;
         }
         tmp17(READY);
       } else if ("onError" === type) {
@@ -126,82 +102,84 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((visible
             }
           }
         }
-        closure_2(MediaModalWebView.PlayerState.ERRORED);
-        closure_3(str6);
+        closure_2(MediaModalWebViewBase.PlayerState.ERRORED);
+        _slicedToArray(str6);
         const MediaViewerAnalytics = MediaViewerAnalyticsManager.MediaViewerAnalytics;
         const obj = { platform: "youtube", action: "errored", error: str6 };
         const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted(obj);
       } else if ("onStateChange" === type) {
         const obj2 = { "-1": null, 0: null, 1: null, 2: null, 3: null, 5: null };
-        obj2[0] = MediaModalWebView.PlayerState.UNSTARTED;
-        obj2[0] = MediaModalWebView.PlayerState.ENDED;
-        obj2[1] = MediaModalWebView.PlayerState.PLAYING;
-        obj2[2] = MediaModalWebView.PlayerState.PAUSED;
-        obj2[3] = MediaModalWebView.PlayerState.BUFFERING;
-        obj2[5] = MediaModalWebView.PlayerState.VIDEO_CUED;
-        const tmp4 = null != tmp35 && tmp35 in MediaModalWebView.PlayerState;
+        obj2[0] = MediaModalWebViewBase.PlayerState.UNSTARTED;
+        obj2[0] = MediaModalWebViewBase.PlayerState.ENDED;
+        obj2[1] = MediaModalWebViewBase.PlayerState.PLAYING;
+        obj2[2] = MediaModalWebViewBase.PlayerState.PAUSED;
+        obj2[3] = MediaModalWebViewBase.PlayerState.BUFFERING;
+        obj2[5] = MediaModalWebViewBase.PlayerState.VIDEO_CUED;
+        const tmp4 = null != tmp35 && tmp35 in MediaModalWebViewBase.PlayerState;
         if (tmp4) {
           closure_2(obj2[value]);
         }
       }
     };
-    cResult[7] = fn2;
-    tmp22 = fn2;
+    cResult[2] = fn2;
+    tmp15 = fn2;
   } else {
-    tmp22 = cResult[7];
+    tmp15 = cResult[2];
   }
-  if (cResult[8] === playerState) {
-    if (cResult[9] === tmp16) {
-      if (cResult[10] === tmp17) {
-        let tmp23;
-        let tmp24;
-        if (cResult[11] === tmp7) {
-          tmp23 = cResult[12];
-          tmp24 = cResult[13];
+  if (cResult[3] === playerState) {
+    if (cResult[4] === tmp9) {
+      if (cResult[5] === tmp10) {
+        let tmp16;
+        let tmp17;
+        if (cResult[6] === visible) {
+          tmp16 = cResult[7];
+          tmp17 = cResult[8];
         }
-        const effect1 = obj2.useEffect(tmp23, tmp24);
-        if (cResult[14] === tmp14) {
-          if (cResult[15] === playerState) {
-            if (cResult[16] === tmp5.uri) {
-              let tmp26;
-              let tmp27;
-              let tmp28;
-              let tmp29;
-              let tmp30;
-              let tmp31;
-              let tmp32;
-              if (cResult[17] === tmp6) {
-                tmp26 = cResult[18];
-                tmp27 = cResult[19];
-                tmp28 = cResult[20];
-                tmp29 = cResult[21];
-                tmp30 = cResult[22];
-                tmp31 = cResult[23];
-                tmp32 = cResult[24];
+        const effect1 = obj2.useEffect(tmp16, tmp17);
+        if (cResult[9] === tmp7) {
+          if (cResult[10] === playerState) {
+            if (cResult[11] === source.uri) {
+              let tmp19;
+              let tmp21;
+              let tmp22;
+              let tmp23;
+              let tmp24;
+              let tmp25;
+              if (cResult[12] === style) {
+                tmp19 = cResult[13];
+                tmp21 = cResult[15];
+                tmp22 = cResult[16];
+                tmp23 = cResult[17];
+                tmp24 = cResult[18];
+                tmp25 = cResult[19];
               }
-              const _Symbol3 = Symbol;
-              if (tmp28 === Symbol.for("react.early_return_sentinel")) {
-                let tmp51;
-                if (cResult[26] !== tmp29) {
-                  const obj3 = { html: tmp29, baseUrl: baseURL };
-                  cResult[26] = tmp29;
-                  cResult[27] = obj3;
-                  tmp51 = obj3;
+              const _Symbol2 = Symbol;
+              if (tmp21 === Symbol.for("react.early_return_sentinel")) {
+                let tmp43;
+                if (cResult[20] !== tmp22) {
+                  const obj3 = { html: tmp22, baseUrl: baseURL };
+                  cResult[20] = tmp22;
+                  cResult[21] = obj3;
+                  tmp43 = obj3;
                 } else {
-                  tmp51 = cResult[27];
+                  tmp43 = cResult[21];
                 }
-                if (cResult[28] === tmp26) {
-                  if (cResult[29] === tmp27) {
-                    if (cResult[30] === playerState) {
-                      if (cResult[31] === tmp4) {
-                        if (cResult[32] === tmp51) {
-                          if (cResult[33] === tmp30) {
-                            if (cResult[34] === tmp31) {
-                              let tmp53;
-                              if (cResult[35] === tmp32) {
-                                tmp53 = cResult[36];
+                if (cResult[22] === tmp19) {
+                  if (cResult[23] === onError) {
+                    if (cResult[24] === onLoad) {
+                      if (cResult[25] === onLoadStart) {
+                        if (cResult[26] === onToggleOverlay) {
+                          if (cResult[27] === playerState) {
+                            if (cResult[28] === tmp43) {
+                              if (cResult[29] === tmp23) {
+                                if (cResult[30] === tmp24) {
+                                  let tmp45;
+                                  if (cResult[31] === tmp25) {
+                                    tmp45 = cResult[32];
+                                  }
+                                  tmp21 = tmp45;
+                                }
                               }
-                              tmp28 = tmp53;
                             }
                           }
                         }
@@ -209,59 +187,84 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((visible
                     }
                   }
                 }
-                const merged = Object.assign(tmp27);
-                const merged1 = Object.assign(tmp4);
-                const tmp62 = <tmp26 key={tmp30} ref={tmp31} style={tmp32} source={tmp51} baseURL={baseURL} playerState={playerState} onDataReceived={tmp22} javaScriptEnabled javaScriptCanOpenWindowsAutomatically />;
-                cResult[28] = tmp26;
-                cResult[29] = tmp27;
-                cResult[30] = playerState;
-                cResult[31] = tmp4;
-                cResult[32] = tmp51;
-                cResult[33] = tmp30;
-                cResult[34] = tmp31;
-                cResult[35] = tmp32;
-                cResult[36] = tmp62;
-                tmp53 = tmp62;
+                const obj4 = { ref: tmp24, style: tmp25, source: tmp43, baseURL, playerState, onDataReceived: tmp15, onToggleOverlay, javaScriptCanOpenWindowsAutomatically: true, domStorageEnabled: tmp20, mixedContentMode: str21, nestedScrollEnabled: tmp20 || undefined, onError, onLoad, onLoadStart, overScrollMode: str22 };
+                str21 = undefined;
+                const tmp46 = ref;
+                if (tmp20) {
+                  str21 = "compatibility";
+                }
+                str22 = undefined;
+                if (tmp20) {
+                  str22 = "never";
+                }
+                const tmp46Result = tmp46(tmp19, obj4, tmp23);
+                cResult[22] = tmp19;
+                cResult[23] = onError;
+                cResult[24] = onLoad;
+                cResult[25] = onLoadStart;
+                cResult[26] = onToggleOverlay;
+                cResult[27] = playerState;
+                cResult[28] = tmp43;
+                cResult[29] = tmp23;
+                class V {
+                  constructor() {
+                    const tmp2 = null != ref.current && first !== MediaModalWebViewBase.PlayerState.UNREADY;
+                    if (tmp2) {
+                      const tmp7 = visible && closure_4 === MediaModalWebViewBase.PlayerState.UNREADY && first === MediaModalWebViewBase.PlayerState.READY;
+                      if (tmp7) {
+                        const current = tmp.current;
+                        current.injectJavaScript("window.player.playVideo();  true;");
+                      }
+                      const tmp15 = tmp6 && !closure_5;
+                      if (tmp15) {
+                        const current2 = tmp.current;
+                        current2.injectJavaScript("window.player.playVideo();  true;");
+                      }
+                      const tmp18 = !visible && closure_5;
+                      if (tmp18) {
+                        const current3 = tmp.current;
+                        current3.injectJavaScript("window.player.pauseVideo(); true;");
+                      }
+                    }
+                  }
+                }
+                cResult[31] = tmp25;
+                cResult[32] = tmp46Result;
+                tmp45 = tmp46Result;
               }
-              return tmp28;
+              return tmp21;
             }
           }
         }
         const _Symbol = Symbol;
         const forResult = Symbol.for("react.early_return_sentinel");
-        const tmpResult = tmp(7950);
-        let youtubeVideoIdFromURI = tmpResult.getYoutubeVideoIdFromURI(tmp5.uri);
+        const tmpResult = tmp(8368);
+        let youtubeVideoIdFromURI = tmpResult.getYoutubeVideoIdFromURI(source.uri);
         if (youtubeVideoIdFromURI == null) {
-          const tmpResult3 = tmp(7950);
-          youtubeVideoIdFromURI = tmpResult3.getYoutubeClipVideoIdFromURI(tmp5.uri);
+          const tmpResult3 = tmp(8368);
+          youtubeVideoIdFromURI = tmpResult3.getYoutubeClipVideoIdFromURI(source.uri);
         }
-        let tmp35;
-        let tmp36;
-        let tmp37;
+        let tmp28;
+        let tmp29;
+        let tmp30;
         let combined1;
-        let tmp39 = null;
-        let tmp40;
-        let tmp41;
+        let tmp32 = null;
+        let tmp33;
+        let tmp34;
         if (null != youtubeVideoIdFromURI) {
-          let tmp43;
-          if (playerState === tmp(7982).PlayerState.ERRORED) {
-            if ("embed_not_allowed" === tmp14) {
-              tmp39 = jsx(tmp15(12793), { videoId: youtubeVideoIdFromURI.videoId });
+          if (playerState === tmp(8399).PlayerState.ERRORED) {
+            if ("embed_not_allowed" === tmp7) {
+              const tmp35 = ref;
+              const obj5 = { videoId: youtubeVideoIdFromURI.videoId };
+              tmp32 = ref(tmp8(12940), obj5);
             }
-          }
-          const _Symbol2 = Symbol;
-          if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmpResult4 = tmp(1369);
-            const tmp44 = tmpResult4.isAndroid() ? { nestedScrollEnabled: true, overScrollMode: "never", domStorageEnabled: true, mixedContentMode: "compatibility" } : {};
-            cResult[25] = tmp44;
-            tmp43 = tmp44;
-          } else {
-            tmp43 = cResult[25];
           }
           let str3 = "";
           let str4 = "";
+          const tmpResult4 = tmp(1381);
           const videoId = youtubeVideoIdFromURI.videoId;
-          const tmp15Result = tmp15(7982);
+          const isAndroidResult = tmpResult4.isAndroid();
+          const tmp8Result = playerState(8399);
           if (null != youtubeVideoIdFromURI.start) {
             const _HermesInternal = HermesInternal;
             let str6 = "'start': ";
@@ -278,29 +281,35 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((visible
           }
           const _HermesInternal4 = HermesInternal;
           const _HermesInternal5 = HermesInternal;
-          combined1 = "\n<html>\n  <head>\n    <meta name=\"viewport\" content=\"initial-scale=1\">\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n        background-color: #000;\n      }\n    </style>\n    <script>" + "\nconst tag = document.createElement('script');\ntag.setAttribute('src', \"https://www.youtube.com/iframe_api\");\ndocument.head.appendChild(tag);\n\nfunction onYouTubeIframeAPIReady() {\n  window.player = new YT.Player('player', {\n    height:     '100%',\n    width:      '100%',\n    videoId:    '" + youtubeVideoIdFromURI.videoId + "',\n    playerVars: {\n      'playsinline': 1,\n      'fs': 0,\n      'pageType': " + YOUTUBE_EMBED_PAGE_TYPE + ",\n      " + str3 + "\n      " + combined + "\n      " + str4 + "\n    },\n    events: {\n      'onReady': (e) => {\n        window.ReactNativeWebView.postMessage(\n          JSON.stringify({type: 'onReady', value: window.player.getPlayerState()})\n        );\n      },\n      'onError': (e) => {\n        window.ReactNativeWebView.postMessage(\n          JSON.stringify({type: 'onError', value: e.data})\n        );\n      },\n      'onStateChange': (e) => {\n        window.ReactNativeWebView.postMessage(\n          JSON.stringify({type: 'onStateChange', value: e.data})\n        );\n      }\n    }\n  });\n}\n" + "</script>\n  </head>\n  <body>\n    <div id=\"player\"></div>\n  </body>\n</html>\n";
-          tmp35 = tmp6;
-          tmp36 = ref;
-          tmp37 = videoId;
-          tmp39 = forResult;
-          tmp40 = tmp43;
-          tmp41 = tmp15Result;
+          combined1 = "\n<html>\n  <head>\n    <meta name=\"viewport\" content=\"initial-scale=1\">\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n        background-color: #000;\n      }\n    </style>\n    <script>" + "\nconst tag = document.createElement('script');\ntag.setAttribute('src', \"https://www.youtube.com/iframe_api\");\ndocument.head.appendChild(tag);\n\nfunction onYouTubeIframeAPIReady() {\n  window.player = new YT.Player('player', {\n    height:     '100%',\n    width:      '100%',\n    videoId:    '" + youtubeVideoIdFromURI.videoId + "',\n    playerVars: {\n      'playsinline': 1,\n      'fs': 0,\n      'pageType': " + closure_5 + ",\n      " + str3 + "\n      " + combined + "\n      " + str4 + "\n    },\n    events: {\n      'onReady': (e) => {\n        window.ReactNativeWebView.postMessage(\n          JSON.stringify({type: 'onReady', value: window.player.getPlayerState()})\n        );\n      },\n      'onError': (e) => {\n        window.ReactNativeWebView.postMessage(\n          JSON.stringify({type: 'onError', value: e.data})\n        );\n      },\n      'onStateChange': (e) => {\n        window.ReactNativeWebView.postMessage(\n          JSON.stringify({type: 'onStateChange', value: e.data})\n        );\n      }\n    }\n  });\n}\n" + "</script>\n  </head>\n  <body>\n    <div id=\"player\"></div>\n  </body>\n</html>\n";
+          tmp28 = style;
+          tmp29 = ref;
+          tmp30 = videoId;
+          tmp32 = forResult;
+          tmp33 = isAndroidResult;
+          tmp34 = tmp8Result;
         }
-        cResult[14] = tmp14;
-        cResult[15] = playerState;
-        cResult[16] = tmp5.uri;
-        cResult[17] = tmp6;
-        cResult[18] = tmp41;
-        cResult[19] = tmp40;
-        cResult[20] = tmp39;
-        cResult[21] = combined1;
-        cResult[22] = tmp37;
-        cResult[23] = tmp36;
-        class Y {
+        cResult[9] = tmp7;
+        cResult[10] = playerState;
+        cResult[11] = source.uri;
+        cResult[12] = style;
+        cResult[13] = tmp34;
+        cResult[14] = tmp33;
+        cResult[15] = tmp32;
+        cResult[16] = combined1;
+        cResult[17] = tmp30;
+        cResult[18] = tmp29;
+        cResult[19] = tmp28;
+        tmp25 = tmp28;
+        tmp24 = tmp29;
+        tmp23 = tmp30;
+        tmp22 = combined1;
+        tmp21 = tmp32;
+        class V {
           constructor() {
-            const tmp2 = null != ref.current && first !== MediaModalWebView.PlayerState.UNREADY;
+            const tmp2 = null != ref.current && first !== MediaModalWebViewBase.PlayerState.UNREADY;
             if (tmp2) {
-              const tmp7 = closure_0 && closure_4 === MediaModalWebView.PlayerState.UNREADY && first === MediaModalWebView.PlayerState.READY;
+              const tmp7 = visible && closure_4 === MediaModalWebViewBase.PlayerState.UNREADY && first === MediaModalWebViewBase.PlayerState.READY;
               if (tmp7) {
                 const current = tmp.current;
                 current.injectJavaScript("window.player.playVideo();  true;");
@@ -310,7 +319,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((visible
                 const current2 = tmp.current;
                 current2.injectJavaScript("window.player.playVideo();  true;");
               }
-              const tmp18 = !closure_0 && closure_5;
+              const tmp18 = !visible && closure_5;
               if (tmp18) {
                 const current3 = tmp.current;
                 current3.injectJavaScript("window.player.pauseVideo(); true;");
@@ -318,21 +327,15 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((visible
             }
           }
         }
-        tmp32 = tmp35;
-        tmp31 = tmp36;
-        tmp30 = tmp37;
-        tmp29 = combined1;
-        tmp28 = tmp39;
-        tmp27 = tmp40;
-        tmp26 = tmp41;
+        tmp19 = tmp34;
       }
     }
   }
-  class Y {
+  class V {
     constructor() {
-      const tmp2 = null != ref.current && first !== MediaModalWebView.PlayerState.UNREADY;
+      const tmp2 = null != ref.current && first !== MediaModalWebViewBase.PlayerState.UNREADY;
       if (tmp2) {
-        const tmp7 = closure_0 && closure_4 === MediaModalWebView.PlayerState.UNREADY && first === MediaModalWebView.PlayerState.READY;
+        const tmp7 = visible && closure_4 === MediaModalWebViewBase.PlayerState.UNREADY && first === MediaModalWebViewBase.PlayerState.READY;
         if (tmp7) {
           const current = tmp.current;
           current.injectJavaScript("window.player.playVideo();  true;");
@@ -342,7 +345,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((visible
           const current2 = tmp.current;
           current2.injectJavaScript("window.player.playVideo();  true;");
         }
-        const tmp18 = !closure_0 && closure_5;
+        const tmp18 = !visible && closure_5;
         if (tmp18) {
           const current3 = tmp.current;
           current3.injectJavaScript("window.player.pauseVideo(); true;");
@@ -350,43 +353,52 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((visible
       }
     }
   }
-  const items1 = [ref, tmp7, tmp17, tmp16, playerState];
-  cResult[8] = playerState;
-  cResult[9] = tmp16;
-  cResult[10] = tmp17;
-  cResult[11] = tmp7;
-  cResult[12] = Y;
-  cResult[13] = items1;
-  tmp24 = items1;
-  tmp23 = Y;
-}) : ((visible) => {
+  const items1 = [ref, visible, tmp10, tmp9, playerState];
+  cResult[3] = playerState;
+  cResult[4] = tmp9;
+  cResult[5] = tmp10;
+  cResult[6] = visible;
+  cResult[7] = V;
+  cResult[8] = items1;
+  tmp17 = items1;
+  tmp16 = V;
+}) : (function MediaModalYoutube(visible) {
   let closure_2;
+  let closure_3;
   let closure_4;
   let first1;
   let obj4;
+  let onError;
+  let onLoad;
+  let onLoadStart;
+  let onToggleOverlay;
   let playerState;
+  let str19;
+  let str20;
+  let style;
   visible = visible.visible;
   const source = visible.source;
-  const style = visible.style;
-  const merged = Object.assign(visible, Object.assign({ visible: 0, style: 0, source: 0 }));
   playerState = undefined;
   dependencyMap = undefined;
-  closure_3 = undefined;
-  let ref;
-  let tmp2 = visible;
-  [playerState, dependencyMap] = ref.useState(visible(7982).PlayerState.UNREADY);
-  [first1, closure_3] = ref.useState(undefined);
-  const tmp9 = playerState(7957)(playerState);
-  _slicedToArray = tmp9;
-  const tmp10 = playerState(7957)(visible);
-  let closure_5 = tmp10;
-  ref = ref.useRef(null);
-  const effect = ref.useEffect(() => {
-    const MediaViewerAnalytics = visible(closure_2[9]).MediaViewerAnalytics;
+  _slicedToArray = undefined;
+  react = undefined;
+  const tmp = visible;
+  let tmp2 = dependencyMap;
+  ({ style, onError, onLoad, onLoadStart, onToggleOverlay } = visible);
+  [playerState, dependencyMap] = react.useState(visible(8399).PlayerState.UNREADY);
+  [first1, _slicedToArray] = react.useState(undefined);
+  let tmp7 = playerState;
+  const tmp8 = playerState(5928)(playerState);
+  react = tmp8;
+  const tmp9 = playerState(5928)(visible);
+  let closure_5 = tmp9;
+  const ref = react.useRef(null);
+  const effect = react.useEffect(() => {
+    const MediaViewerAnalytics = visible(closure_2[8]).MediaViewerAnalytics;
     const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted({ platform: "youtube", action: "attempted" });
   }, []);
-  const items = [ref, visible, tmp10, tmp9, playerState];
-  const callback = ref.useCallback((arg0) => {
+  const items = [ref, visible, tmp9, tmp8, playerState];
+  const callback = react.useCallback((arg0) => {
     let type;
     let value;
     const parsed = JSON.parse(arg0);
@@ -395,9 +407,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((visible
       let READY;
       const tmp17 = closure_2;
       if ("-1" === value) {
-        READY = MediaModalWebView.PlayerState.ERRORED;
+        READY = MediaModalWebViewBase.PlayerState.ERRORED;
       } else {
-        READY = MediaModalWebView.PlayerState.READY;
+        READY = MediaModalWebViewBase.PlayerState.READY;
       }
       tmp17(READY);
     } else if ("onError" === type) {
@@ -421,29 +433,29 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((visible
           }
         }
       }
-      closure_2(MediaModalWebView.PlayerState.ERRORED);
+      closure_2(MediaModalWebViewBase.PlayerState.ERRORED);
       closure_3(str6);
       const MediaViewerAnalytics = MediaViewerAnalyticsManager.MediaViewerAnalytics;
       const obj = { platform: "youtube", action: "errored", error: str6 };
       const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted(obj);
     } else if ("onStateChange" === type) {
       const obj2 = { "-1": null, 0: null, 1: null, 2: null, 3: null, 5: null };
-      obj2[0] = MediaModalWebView.PlayerState.UNSTARTED;
-      obj2[0] = MediaModalWebView.PlayerState.ENDED;
-      obj2[1] = MediaModalWebView.PlayerState.PLAYING;
-      obj2[2] = MediaModalWebView.PlayerState.PAUSED;
-      obj2[3] = MediaModalWebView.PlayerState.BUFFERING;
-      obj2[5] = MediaModalWebView.PlayerState.VIDEO_CUED;
-      const tmp4 = null != tmp35 && tmp35 in MediaModalWebView.PlayerState;
+      obj2[0] = MediaModalWebViewBase.PlayerState.UNSTARTED;
+      obj2[0] = MediaModalWebViewBase.PlayerState.ENDED;
+      obj2[1] = MediaModalWebViewBase.PlayerState.PLAYING;
+      obj2[2] = MediaModalWebViewBase.PlayerState.PAUSED;
+      obj2[3] = MediaModalWebViewBase.PlayerState.BUFFERING;
+      obj2[5] = MediaModalWebViewBase.PlayerState.VIDEO_CUED;
+      const tmp4 = null != tmp35 && tmp35 in MediaModalWebViewBase.PlayerState;
       if (tmp4) {
         closure_2(obj2[value]);
       }
     }
   }, []);
-  const effect1 = ref.useEffect(() => {
-    const tmp2 = null != ref.current && first !== MediaModalWebView.PlayerState.UNREADY;
+  const effect1 = react.useEffect(() => {
+    const tmp2 = null != ref.current && first !== MediaModalWebViewBase.PlayerState.UNREADY;
     if (tmp2) {
-      const tmp7 = visible && closure_4 === MediaModalWebView.PlayerState.UNREADY && first === MediaModalWebView.PlayerState.READY;
+      const tmp7 = visible && closure_4 === MediaModalWebViewBase.PlayerState.UNREADY && first === MediaModalWebViewBase.PlayerState.READY;
       if (tmp7) {
         const current = tmp.current;
         current.injectJavaScript("window.player.playVideo();  true;");
@@ -460,29 +472,30 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((visible
       }
     }
   }, items);
-  let obj = visible(7950);
+  let obj = visible(8368);
   let youtubeVideoIdFromURI = obj.getYoutubeVideoIdFromURI(source.uri);
   if (youtubeVideoIdFromURI == null) {
-    const tmp2Result = tmp2(7950);
-    youtubeVideoIdFromURI = tmp2Result.getYoutubeClipVideoIdFromURI(source.uri);
+    const tmpResult = tmp(8368);
+    youtubeVideoIdFromURI = tmpResult.getYoutubeClipVideoIdFromURI(source.uri);
   }
   if (null == youtubeVideoIdFromURI) {
     return null;
   } else {
-    if (playerState === tmp2(7982).PlayerState.ERRORED) {
+    if (playerState === tmp(8399).PlayerState.ERRORED) {
       if ("embed_not_allowed" === first1) {
-        const tmp35 = jsx;
-        return jsx(playerState(12793), { videoId: youtubeVideoIdFromURI.videoId });
+        let obj2 = { videoId: youtubeVideoIdFromURI.videoId };
+        return ref(tmp7(12940), obj2);
       }
     }
-    const tmp2Result2 = tmp2(1369);
-    const tmp16 = tmp2Result2.isAndroid() ? { nestedScrollEnabled: true, overScrollMode: "never", domStorageEnabled: true, mixedContentMode: "compatibility" } : {};
-    let tmp17 = jsx;
-    const obj3 = { ref, style, source: obj4, baseURL, playerState, onDataReceived: callback, javaScriptEnabled: true, javaScriptCanOpenWindowsAutomatically: true };
+    const tmpResult2 = tmp(1381);
+    const isAndroidResult = tmpResult2.isAndroid();
     let str2 = "";
     let str3 = "";
-    const tmp8Result = playerState(7982);
+    const obj3 = { ref, style, source: obj4, baseURL, playerState, onDataReceived: callback, onToggleOverlay, javaScriptCanOpenWindowsAutomatically: true, domStorageEnabled: isAndroidResult || undefined, mixedContentMode: str19, nestedScrollEnabled: isAndroidResult || undefined, onError, onLoad, onLoadStart, overScrollMode: str20 };
+    const tmp16 = ref;
+    const tmp7Result = tmp7(8399);
     if (null != youtubeVideoIdFromURI.start) {
+      let tmp18 = globalThis;
       const _HermesInternal = HermesInternal;
       str3 = "'start': " + youtubeVideoIdFromURI.start + ",";
     }
@@ -498,10 +511,16 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((visible
     }
     const _HermesInternal4 = HermesInternal;
     const _HermesInternal5 = HermesInternal;
-    obj4 = { html: "\n<html>\n  <head>\n    <meta name=\"viewport\" content=\"initial-scale=1\">\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n        background-color: #000;\n      }\n    </style>\n    <script>" + "\nconst tag = document.createElement('script');\ntag.setAttribute('src', \"https://www.youtube.com/iframe_api\");\ndocument.head.appendChild(tag);\n\nfunction onYouTubeIframeAPIReady() {\n  window.player = new YT.Player('player', {\n    height:     '100%',\n    width:      '100%',\n    videoId:    '" + youtubeVideoIdFromURI.videoId + "',\n    playerVars: {\n      'playsinline': 1,\n      'fs': 0,\n      'pageType': " + YOUTUBE_EMBED_PAGE_TYPE + ",\n      " + str2 + "\n      " + combined + "\n      " + str3 + "\n    },\n    events: {\n      'onReady': (e) => {\n        window.ReactNativeWebView.postMessage(\n          JSON.stringify({type: 'onReady', value: window.player.getPlayerState()})\n        );\n      },\n      'onError': (e) => {\n        window.ReactNativeWebView.postMessage(\n          JSON.stringify({type: 'onError', value: e.data})\n        );\n      },\n      'onStateChange': (e) => {\n        window.ReactNativeWebView.postMessage(\n          JSON.stringify({type: 'onStateChange', value: e.data})\n        );\n      }\n    }\n  });\n}\n" + "</script>\n  </head>\n  <body>\n    <div id=\"player\"></div>\n  </body>\n</html>\n", baseUrl: baseURL };
-    const merged1 = Object.assign(tmp16);
-    const merged2 = Object.assign(merged);
-    return tmp17(tmp8Result, obj3, youtubeVideoIdFromURI.videoId);
+    str19 = undefined;
+    obj4 = { html: "\n<html>\n  <head>\n    <meta name=\"viewport\" content=\"initial-scale=1\">\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n        background-color: #000;\n      }\n    </style>\n    <script>" + "\nconst tag = document.createElement('script');\ntag.setAttribute('src', \"https://www.youtube.com/iframe_api\");\ndocument.head.appendChild(tag);\n\nfunction onYouTubeIframeAPIReady() {\n  window.player = new YT.Player('player', {\n    height:     '100%',\n    width:      '100%',\n    videoId:    '" + youtubeVideoIdFromURI.videoId + "',\n    playerVars: {\n      'playsinline': 1,\n      'fs': 0,\n      'pageType': " + closure_5 + ",\n      " + str2 + "\n      " + combined + "\n      " + str3 + "\n    },\n    events: {\n      'onReady': (e) => {\n        window.ReactNativeWebView.postMessage(\n          JSON.stringify({type: 'onReady', value: window.player.getPlayerState()})\n        );\n      },\n      'onError': (e) => {\n        window.ReactNativeWebView.postMessage(\n          JSON.stringify({type: 'onError', value: e.data})\n        );\n      },\n      'onStateChange': (e) => {\n        window.ReactNativeWebView.postMessage(\n          JSON.stringify({type: 'onStateChange', value: e.data})\n        );\n      }\n    }\n  });\n}\n" + "</script>\n  </head>\n  <body>\n    <div id=\"player\"></div>\n  </body>\n</html>\n", baseUrl: baseURL };
+    if (isAndroidResult) {
+      str19 = "compatibility";
+    }
+    str20 = undefined;
+    if (isAndroidResult) {
+      str20 = "never";
+    }
+    return tmp16(tmp7Result, obj3, youtubeVideoIdFromURI.videoId);
   }
 }));
 let result = size.fileFinishedImporting("modules/media_viewer/native/components/renderers/MediaModalYoutube.tsx");

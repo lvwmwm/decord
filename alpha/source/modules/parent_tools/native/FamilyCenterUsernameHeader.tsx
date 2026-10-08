@@ -1,27 +1,25 @@
-// Module ID: 14716
-// Function ID: 14717
+// Module ID: 14977
+// Function ID: 14978
 // Name: FamilyCenterUsernameHeader
-// Dependencies: [19, 17, 21, 4896, 558, 576, 4728, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 4922, 5086, 2]
 
-// Module 14716 (FamilyCenterUsernameHeader)
+// Module 14977 (FamilyCenterUsernameHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import UserUtilsDefault from "UserUtils" /* 4728 */;
-import Text_Text from "Text/Text" /* 4892 */;
+import UserUtilsDefault from "UserUtils" /* 4922 */;
+import Text_Text from "Text/Text" /* 5086 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let user;
 
 let closure_4;
 let hasOwnProperty;
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ container: { justifyContent: "center" } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterUsernameHeader(user) {
   let items;
   let tmp10;
   let tmp7;
@@ -76,7 +74,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[5] = tmp10;
   cResult[6] = tmp14;
   tmp13 = tmp14;
-}) : ((user) => {
+}) : (function FamilyCenterUsernameHeader(user) {
   let Text;
   let items;
   let obj4;

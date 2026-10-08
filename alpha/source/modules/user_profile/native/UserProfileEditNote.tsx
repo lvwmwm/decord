@@ -1,20 +1,20 @@
-// Module ID: 12896
-// Function ID: 12897
+// Module ID: 13045
+// Function ID: 13046
 // Name: UserProfileEditNote
-// Dependencies: [32, 19, 17, 1085, 21, 4896, 558, 576, 1490, 12892, 6017, 10672, 4751, 7509, 1126, 12897, 4892, 6587, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5090, 558, 576, 1502, 13041, 6203, 9585, 4945, 9232, 1126, 13046, 5086, 6763, 2]
 
-// Module 12896 (UserProfileEditNote)
+// Module 13045 (UserProfileEditNote)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
-import NavigatorHeader from "NavigatorHeader" /* 6017 */;
+import NavigatorHeader from "NavigatorHeader" /* 6203 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let navigation, setOptionsResult, userId;
+let navigation, setOptionsResult;
 
 let metroImportAll;
 let metroImportDefault;
@@ -23,7 +23,7 @@ const ScrollView = react_native.ScrollView;
 const NOTE_MAX_LENGTH = Constants.NOTE_MAX_LENGTH;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = createStyles.createStyles({ contentContainer: { paddingVertical: 24, paddingHorizontal: 16, gap: 8 } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileEditNote(userId) {
   let closure_3;
   let first;
   let intl;
@@ -166,13 +166,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
       setOptions = closure_4.setOptions;
       obj2 = closure_0(closure_2[10]);
       obj.headerLeft = obj2.getHeaderConditionalBackButton(() => {
-        const promise = new Promise(() => { /* body not rendered: F152980 */ });
+        const promise = new Promise(() => { /* body not rendered: F154477 */ });
         return promise;
       });
       obj.headerRight = function headerRight(arg0) {
         let intl;
         let str;
-        let obj = { label: intl.string(userId(onClose[14]).t["R3BPH+"]), disabled: str === first, onPress() { /* body not rendered: F152981 */ } };
+        let obj = { label: intl.string(userId(onClose[14]).t["R3BPH+"]), disabled: str === first, onPress() { /* body not rendered: F154478 */ } };
         const HeaderTextButton = userId(onClose[13]).HeaderTextButton;
         const merged = Object.assign(arg0);
         intl = userId(onClose[14]).intl;
@@ -198,7 +198,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[10] = items2;
   tmp16 = items2;
   tmp15 = C;
-}) : ((userId) => {
+}) : (function UserProfileEditNote(userId) {
   let first;
   let intl;
   let intl3;

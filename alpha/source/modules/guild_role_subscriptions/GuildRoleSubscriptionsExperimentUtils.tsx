@@ -1,12 +1,12 @@
-// Module ID: 13723
-// Function ID: 13724
+// Module ID: 13945
+// Function ID: 13946
 // Name: GuildRoleSubscriptionsExperimentUtils
-// Dependencies: [2074, 1085, 558, 576, 573, 2]
+// Dependencies: [2086, 1085, 558, 576, 573, 2]
 // Exports: hasEnabledMonetization, isGuildEligibleForTierTemplates
 
-// Module 13723 (GuildRoleSubscriptionsExperimentUtils)
+// Module 13945 (GuildRoleSubscriptionsExperimentUtils)
 import Constants from "Constants" /* 1085 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let _require;
 const GuildFeatures = Constants.GuildFeatures;
 let items = [, , ];
 ({ ROLE_SUBSCRIPTIONS_ENABLED: arr[0], CREATOR_MONETIZABLE: arr[1], CREATOR_MONETIZABLE_PROVISIONAL: arr[2] } = GuildFeatures);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildEligibleForTierTemplates(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -52,7 +52,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(573);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useGuildEligibleForTierTemplates(arg0) {
   let closure_0;
   _require = arg0;
   items = [GuildStore];

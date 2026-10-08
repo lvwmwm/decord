@@ -1,27 +1,27 @@
-// Module ID: 10854
-// Function ID: 10855
+// Module ID: 10505
+// Function ID: 10506
 // Name: UserProfileStackedActionSheet
-// Dependencies: [109, 19, 17, 21, 4896, 587, 558, 576, 1618, 8924, 1369, 6119, 5916, 1126, 6021, 4892, 6652, 2]
+// Dependencies: [109, 19, 17, 21, 5090, 587, 558, 576, 1630, 8555, 1381, 6298, 6189, 1126, 6207, 5086, 6829, 2]
 
-// Module 10854 (UserProfileStackedActionSheet)
+// Module 10505 (UserProfileStackedActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6021 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6652 */;
-import Form from "Form" /* 8924 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6207 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6829 */;
+import Form from "Form" /* 8555 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, _require, data, dependencyMap, importDefault;
+let BottomSheet, _require, dependencyMap, importDefault;
 
 let c9;
 let metroImportAll;
@@ -41,7 +41,7 @@ size = { width: nativeDefault.space.PX_24, height: nativeDefault.space.PX_24 };
 obj3 = { marginHorizontal: nativeDefault.space.PX_16 };
 let closure_10 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((data) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileStackedActionSheetList(data) {
   let closure_1;
   let contentContainerStyle;
   let divider;
@@ -126,7 +126,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((data) => {
             }
           }
         }
-        class I {
+        class P {
           constructor(index) {
             index = index.index;
             const obj = { item: index.item, index, start: 0 === index, end: index === length.length - 1 };
@@ -134,7 +134,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((data) => {
           }
         }
         const obj3 = { data: arr, style: tmp10.list, ItemSeparatorComponent: tmp12, contentContainerStyle: tmp15, renderItem: tmp16 };
-        const BottomSheetFlatList = tmp(6119).BottomSheetFlatList;
+        const BottomSheetFlatList = tmp(6298).BottomSheetFlatList;
         const merged = Object.assign(tmp5);
         const tmp21 = closure_8(BottomSheetFlatList, obj3);
         cResult[16] = arr;
@@ -146,7 +146,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((data) => {
         cResult[22] = tmp21;
         tmp17 = tmp21;
       }
-      class I {
+      class P {
         constructor(index) {
           index = index.index;
           const obj = { item: index.item, index, start: 0 === index, end: index === length.length - 1 };
@@ -155,8 +155,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((data) => {
       }
       cResult[13] = arr.length;
       cResult[14] = tmp6;
-      cResult[15] = I;
-      tmp16 = I;
+      cResult[15] = P;
+      tmp16 = P;
     }
   }
   const items = [tmp10.contentContainer, tmp14, tmp4];
@@ -165,7 +165,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((data) => {
   cResult[11] = tmp14;
   cResult[12] = items;
   tmp15 = items;
-}) : ((data) => {
+}) : (function UserProfileStackedActionSheetList(data) {
   let divider;
   let items;
   data = data.data;
@@ -174,7 +174,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((data) => {
   const merged = Object.assign(data, Object.assign({ data: 0, contentContainerStyle: 0, renderItem: 0 }));
   const tmp2 = closure_10();
   dependencyMap = tmp2;
-  const bottom = renderItem(1618)().bottom;
+  const bottom = renderItem(1630)().bottom;
   let obj = {
     data,
     style: tmp2.list,
@@ -189,11 +189,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((data) => {
       return renderItem(obj);
     }
   };
-  const BottomSheetFlatList = data(6119).BottomSheetFlatList;
+  const BottomSheetFlatList = data(6298).BottomSheetFlatList;
   const merged1 = Object.assign(merged);
   items = [tmp2.contentContainer, , ];
   let num = 0;
-  const obj2 = data(1369);
+  const obj2 = data(1381);
   const tmp3 = renderItem;
   const tmp5 = closure_8;
   if (obj2.isAndroid()) {
@@ -204,7 +204,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((data) => {
   return tmp5(BottomSheetFlatList, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileStackedActionSheetSectionList(arg0) {
   let closure_0;
   let contentContainerStyle;
   let renderItem;
@@ -267,7 +267,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const obj2 = { contentContainerStyle: tmp4, renderItem: tmp11, ItemSeparatorComponent: tmp12 };
-  const BottomSheetSectionList = tmp(6119).BottomSheetSectionList;
+  const BottomSheetSectionList = tmp(6298).BottomSheetSectionList;
   const merged = Object.assign(tmp5);
   const tmp15 = closure_8(BottomSheetSectionList, obj2);
   cResult[8] = tmp4;
@@ -276,7 +276,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[11] = tmp12;
   cResult[12] = tmp15;
   tmp13 = tmp15;
-}) : ((renderItem) => {
+}) : (function UserProfileStackedActionSheetSectionList(renderItem) {
   renderItem = renderItem.renderItem;
   const contentContainerStyle = renderItem.contentContainerStyle;
   const merged = Object.assign(renderItem, Object.assign({ contentContainerStyle: 0, renderItem: 0 }));
@@ -293,12 +293,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return metroImportAll(Form.FormDivider, obj);
     }
   };
-  const BottomSheetSectionList = renderItem(6119).BottomSheetSectionList;
+  const BottomSheetSectionList = renderItem(6298).BottomSheetSectionList;
   const merged1 = Object.assign(merged);
   return closure_8(BottomSheetSectionList, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileStackedActionSheet(arg0) {
   let children;
   let intl;
   let items;
@@ -384,7 +384,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 }
               }
               const obj4 = { header: tmp25, children: tmp4 };
-              BottomSheet = tmp(6652).BottomSheet;
+              BottomSheet = tmp(6829).BottomSheet;
               const merged = Object.assign(tmp6);
               const tmp34 = metroImportAll(BottomSheet, obj4);
               cResult[23] = tmp4;
@@ -418,7 +418,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp16 = tmp12;
     if (tmp16) {
       const obj7 = { accessibilityRole: "button", accessibilityLabel: intl.string(intl2.t["13/7kX"]), onPress: tmp5, children: metroImportAll(ArrowLargeLeftIcon.ArrowLargeLeftIcon, { size: "md" }) };
-      const PressableOpacity = tmp(5916).PressableOpacity;
+      const PressableOpacity = tmp(6189).PressableOpacity;
       intl = tmp(1126).intl;
       tmp16 = metroImportAll(PressableOpacity, obj7);
     }
@@ -432,7 +432,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = tmp13;
   cResult[9] = items1;
   tmp14 = items1;
-}) : ((onBack) => {
+}) : (function UserProfileStackedActionSheet(onBack) {
   let children;
   let intl;
   let items1;
@@ -458,7 +458,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp4Result = tmp4Result2;
   if (tmp4Result) {
     const obj3 = { accessibilityRole: "button", accessibilityLabel: intl.string(intl2.t["13/7kX"]), onPress: onBack, children: metroImportAll(ArrowLargeLeftIcon.ArrowLargeLeftIcon, { size: "md" }) };
-    const PressableOpacity = tmp5(5916).PressableOpacity;
+    const PressableOpacity = tmp5(6189).PressableOpacity;
     intl = tmp5(1126).intl;
     tmp4Result = tmp4(PressableOpacity, obj3);
   }

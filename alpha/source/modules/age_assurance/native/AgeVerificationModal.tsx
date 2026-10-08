@@ -1,16 +1,16 @@
-// Module ID: 8137
-// Function ID: 8138
+// Module ID: 7524
+// Function ID: 7525
 // Name: AgeVerificationModal
-// Dependencies: [19, 8118, 21, 4742, 5108, 4571, 7983, 4896, 587, 5099, 6890, 1126, 558, 576, 6503, 2]
+// Dependencies: [19, 5914, 21, 4936, 5905, 4763, 7511, 5090, 587, 5940, 7079, 1126, 558, 576, 6679, 2]
 
-// Module 8137 (AgeVerificationModal)
+// Module 7524 (AgeVerificationModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import LinkingDefault from "Linking" /* 4571 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4742 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 8118 */;
+import LinkingDefault from "Linking" /* 4763 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4936 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 5914 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -124,7 +124,7 @@ const constants = { VERIFY_AGE: "VERIFY_AGE" };
 let obj = { headerStyle: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 let closure_9 = createStyles.createStyles(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificationModal(arg0) {
   let first;
   let handleCloseAfterCompletion;
   let isExpressiveModalV2;
@@ -218,7 +218,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = webviewUrl;
   cResult[6] = obj3;
   tmp8 = obj3;
-}) : ((webviewUrl) => {
+}) : (function AgeVerificationModal(webviewUrl) {
   let headerTitle;
   webviewUrl = webviewUrl.webviewUrl;
   let onComplete = webviewUrl.onComplete;

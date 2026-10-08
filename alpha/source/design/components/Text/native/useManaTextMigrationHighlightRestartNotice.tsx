@@ -1,19 +1,19 @@
-// Module ID: 14278
-// Function ID: 14279
+// Module ID: 14102
+// Function ID: 14103
 // Name: useManaTextMigrationHighlightRestartNotice
-// Dependencies: [19, 4895, 558, 576, 504, 5715, 2]
+// Dependencies: [19, 5089, 558, 576, 504, 5298, 2]
 
-// Module 14278 (useManaTextMigrationHighlightRestartNotice)
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5715 */;
+// Module 14102 (useManaTextMigrationHighlightRestartNotice)
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5298 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 4895 */;
+import DevSettingsStore from "DevSettingsStore" /* 5089 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useManaTextMigrationHighlightRestartNotice() {
   let ref;
   let tmp4;
   let tmp5;
@@ -39,7 +39,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   _require = react.useRef(true);
   const obj3 = react;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function h() {
+    const fn2 = function c() {
       if (ref.current) {
         tmp.current = false;
       } else {
@@ -61,7 +61,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = cResult[4];
   }
   const effect = obj3.useEffect(tmp8, tmp9);
-}) : (() => {
+}) : (function useManaTextMigrationHighlightRestartNotice() {
   let ref;
   let obj = require("get initialized");
   const items = [DevSettingsStore];

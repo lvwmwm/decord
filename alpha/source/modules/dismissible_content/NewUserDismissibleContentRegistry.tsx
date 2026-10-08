@@ -1,15 +1,15 @@
-// Module ID: 4726
-// Function ID: 4727
+// Module ID: 4920
+// Function ID: 4921
 // Name: NewUserDismissibleContentRegistry
-// Dependencies: [502, 2039, 2036, 558, 576, 4727, 573, 11, 2]
+// Dependencies: [502, 2051, 2048, 558, 576, 4921, 573, 11, 2]
 // Exports: disableNewUserDismissibleContent, isUserAccountOldEnough
 
-// Module 4726 (NewUserDismissibleContentRegistry)
+// Module 4920 (NewUserDismissibleContentRegistry)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import DcfNewUserCooldownExperiment from "DcfNewUserCooldownExperiment" /* 4727 */;
+import dismissible_content from "dismissible_content" /* 2048 */;
+import DcfNewUserCooldownExperiment from "DcfNewUserCooldownExperiment" /* 4921 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 2039 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 2051 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let _require, tmp4, tmp8;
 
 let closure_5 = { [dismissible_content.DismissibleContent.MJ_NEW_USER_CHAT_BAR]: 0, [dismissible_content.DismissibleContent.REFERRAL_PROGRAM_PROGRESS_BAR_TOGGLE]: 0, [dismissible_content.DismissibleContent.WHATS_NEW_APP_STYLES_JUNE_2024_FLIP]: 0, [dismissible_content.DismissibleContent.WHATS_NEW_REFERRAL_PROGRAM_FLIP]: 0, [dismissible_content.DismissibleContent.WHATS_NEW_APP_STYLES_JUNE_2024_NITRO_BADGE]: 0, [dismissible_content.DismissibleContent.WHATS_NEW_REFERRAL_PROGRAM_NITRO_BADGE]: 0, [dismissible_content.DismissibleContent.WHATS_NEW_SERVER_PROFILE_FLIP]: 0, [dismissible_content.DismissibleContent.WHATS_NEW_SERVER_PROFILE_BADGE]: 0, [dismissible_content.DismissibleContent.WHATS_NEW_TENURE_BADGE_REWARD]: 0, [dismissible_content.DismissibleContent.FRACTIONAL_NITRO_DURATION_LEFT_PILL]: 0, [dismissible_content.DismissibleContent.TRIAL_NUX_EMOJI_BUTTON]: 0, [dismissible_content.DismissibleContent.TRIAL_NUX_EMOJI_PICKER]: 0, [dismissible_content.DismissibleContent.TRIAL_NUX_STREAM_COACH_MARK]: 0, [dismissible_content.DismissibleContent.OVERLAY_OOP_SETTINGS_NUX]: 0, [dismissible_content.DismissibleContent.OVERLAY_OOP_WELCOME_NUX]: 0, [dismissible_content.DismissibleContent.OVERLAY_OOP_WELCOME_BACKGROUND_NUX]: 0, [dismissible_content.DismissibleContent.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX]: 0, [dismissible_content.DismissibleContent.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX]: 0, [dismissible_content.DismissibleContent.REVERSE_TRIAL_NITRO_TAB_BADGE_V2]: 0, [dismissible_content.DismissibleContent.PERMADECOS_NITRO_TAB_NEW_BADGE]: 0, [dismissible_content.DismissibleContent.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE]: 0, [dismissible_content.DismissibleContent.NITRO_DROP_REWARD]: 0 };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNewUserDismissibleContent(arr) {
   let dcfNewUserCooldown;
   let id;
   let tmp5;
@@ -26,7 +26,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   const tmp2 = dependencyMap;
   let obj = dcfNewUserCooldown(576);
   const cResult = obj.c(9);
-  const obj2 = dcfNewUserCooldown(4727);
+  const obj2 = dcfNewUserCooldown(4921);
   dcfNewUserCooldown = obj2.useDcfNewUserCooldown();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AuthenticationStore, ];
@@ -125,7 +125,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
     cResult[8] = A;
     tmp11 = A;
   }
-}) : ((arr) => {
+}) : (function useNewUserDismissibleContent(arr) {
   let closure_0;
   let id;
   let obj = require("DcfNewUserCooldownExperiment");

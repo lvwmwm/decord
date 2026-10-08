@@ -1,13 +1,13 @@
-// Module ID: 13770
-// Function ID: 13771
+// Module ID: 13992
+// Function ID: 13993
 // Name: GuildBadgeBunny
-// Dependencies: [109, 19, 21, 558, 576, 1266, 13748, 8169, 2]
+// Dependencies: [109, 19, 21, 558, 576, 1278, 13970, 7550, 2]
 
-// Module 13770 (GuildBadgeBunny)
+// Module 13992 (GuildBadgeBunny)
 import react2 from "react" /* 576 */;
-import v1 from "v1" /* 1266 */;
-import inlineStyles from "inlineStyles" /* 8169 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 13748 */;
+import v1 from "v1" /* 1278 */;
+import inlineStyles from "inlineStyles" /* 7550 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 13970 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -21,7 +21,7 @@ let closure_2 = ["width", "height", "primaryTintColor"];
 const primaryBaseColors = ["#847D8B", "#D1CDD5"];
 const primaryTintLuminances = [0.2, 0.65];
 let items = [{ base: 4, tint: 1 }, { base: 3, tint: 1 }];
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgeBunny(arg0) {
   let ClipPath;
   let height;
   let items1;
@@ -282,9 +282,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const _Symbol = Symbol;
           if (cResult[50] === Symbol.for("react.memo_cache_sentinel")) {
             const obj8 = { children: hasOwnProperty(ClipPath, obj9) };
-            const Defs = tmp(8169).Defs;
+            const Defs = tmp(7550).Defs;
             obj9 = { id: combined, children: hasOwnProperty(inlineStyles.Rect, { width: "16", height: "16", fill: "white" }) };
-            ClipPath = tmp(8169).ClipPath;
+            ClipPath = tmp(7550).ClipPath;
             const tmp94 = hasOwnProperty(Defs, obj8);
             cResult[50] = tmp94;
             tmp92 = tmp94;
@@ -303,7 +303,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
           const obj10 = { width: num6, height: num7, viewBox: "0 0 16 16", fill: "none", children: items };
-          const Svg = tmp(8169).Svg;
+          const Svg = tmp(7550).Svg;
           const merged = Object.assign(tmp5);
           items = [tmp90, tmp92];
           const tmp100 = metroRequire(Svg, obj10);
@@ -318,7 +318,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const obj11 = { clipPath: "url(#" + combined + ")", children: items1 };
-  const G = tmp(8169).G;
+  const G = tmp(7550).G;
   items1 = [tmp19, tmp25, tmp26, tmp27, tmp28, tmp22, tmp23, tmp24, tmp37, tmp38, tmp42, tmp43, tmp44, tmp45, tmp46, tmp47, tmp48, tmp49, tmp50, tmp51, tmp52, tmp53, tmp54, tmp55, tmp56, tmp57, tmp58, tmp59, tmp60, tmp61, tmp62, tmp85, tmp86];
   const tmp91 = metroRequire(G, obj11);
   cResult[44] = tmp37;
@@ -328,7 +328,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[48] = tmp19;
   cResult[49] = tmp91;
   tmp90 = tmp91;
-}) : ((width) => {
+}) : (function GuildBadgeBunny(width) {
   let ClipPath;
   let items1;
   let obj11;

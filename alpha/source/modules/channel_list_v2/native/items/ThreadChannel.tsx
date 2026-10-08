@@ -1,35 +1,33 @@
-// Module ID: 16078
-// Function ID: 16079
+// Module ID: 16338
+// Function ID: 16339
 // Name: ThreadChannel
-// Dependencies: [19, 17, 4517, 2051, 4515, 4911, 2103, 1377, 4915, 4920, 11711, 1085, 5078, 1125, 21, 4896, 587, 558, 576, 8169, 5609, 504, 11936, 4907, 10045, 16079, 9295, 16081, 1188, 16083, 16092, 5041, 16093, 2]
+// Dependencies: [19, 17, 4709, 2063, 4707, 6040, 2115, 1389, 5111, 5114, 11776, 1085, 5972, 1125, 21, 5090, 587, 558, 576, 7550, 5382, 504, 12009, 5101, 10432, 16339, 8626, 16341, 1200, 16343, 16352, 5410, 16353, 2]
 
-// Module 16078 (ThreadChannel)
+// Module 16338 (ThreadChannel)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import ThreadConstants from "ThreadConstants" /* 1125 */;
-import transitionToChannel from "transitionToChannel" /* 4907 */;
-import ReadStateConstants from "ReadStateConstants" /* 5078 */;
-import inlineStylesDefault from "inlineStyles" /* 8169 */;
-import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 10045 */;
-import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 16079 */;
+import transitionToChannel from "transitionToChannel" /* 5101 */;
+import ReadStateConstants from "ReadStateConstants" /* 5972 */;
+import inlineStylesDefault from "inlineStyles" /* 7550 */;
+import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 10432 */;
+import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 16339 */;
 import react_mod from "react" /* 19 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4517 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import ReadStateStore from "ReadStateStore" /* 4911 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import UserStore from "UserStore" /* 1377 */;
-import VoiceStateStore from "VoiceStateStore" /* 4915 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4920 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11711 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4709 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import UserStore from "UserStore" /* 1389 */;
+import VoiceStateStore from "VoiceStateStore" /* 5111 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5114 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11776 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let channel;
 
 let CHANNEL_MARGIN_VERTICAL;
 let closure_17;
@@ -40,7 +38,7 @@ let obj2;
 let obj3;
 let size;
 let tmp;
-const inlineStyles = tmp(8169);
+const inlineStyles = tmp(7550);
 let react = react_mod;
 const View = react_native.View;
 ({ getScaledChannelRowHeight: map1, CHANNEL_MARGIN_VERTICAL } = RedesignChannelListConstants);
@@ -57,7 +55,7 @@ obj3 = { backgroundColor: nativeDefault.colors.SPINE_DEFAULT, width: 2, position
 let closure_20 = createStyles(obj);
 let memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
+let closure_21 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SpineCurveSvg(color) {
   let tmp5;
   let tmp6;
   const obj = react2;
@@ -93,7 +91,7 @@ let closure_21 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((color) =>
   cResult[5] = tmp6;
   cResult[6] = tmp10;
   tmp9 = tmp10;
-}) : ((arg0) => {
+}) : (function SpineCurveSvg(arg0) {
   let color;
   let fontScale;
   let rect;
@@ -104,19 +102,26 @@ let closure_21 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((color) =>
   return closure_17(tmp, size);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadChannel(channel) {
   let first;
   let hasVideo;
   let isLocked;
   let isMentionLowImportance;
+  let items1;
+  let items2;
+  let items3;
+  let items4;
   let mentionCount;
   let muted;
+  let obj8;
+  let obj9;
   let ownerId;
   let parentChannel;
   let selected;
   let threadCount;
   let threadId;
   let threadIndex;
+  let tmpResult4;
   let unread;
   let voiceStates;
   const tmp = channel;
@@ -125,7 +130,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   channel = channel.channel;
   ({ selected, threadIndex } = channel);
   ({ threadId, threadCount } = channel);
-  closure_20();
+  const tmp4 = closure_20();
   const id = channel.id;
   ownerId = undefined;
   if (channel != null) {
@@ -151,8 +156,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         if (cResult[4] === parent_id) {
           tmp17 = cResult[5];
         }
-        const tmpResult2 = tmp(ownerId[21]);
-        const stateFromStoresObject = tmpResult2.useStateFromStoresObject(first, tmp17);
+        const tmpResult3 = tmp(ownerId[21]);
+        const stateFromStoresObject = tmpResult3.useStateFromStoresObject(first, tmp17);
         const user = stateFromStoresObject.user;
         parentChannel = stateFromStoresObject.parentChannel;
         ({ voiceStates, hasVideo, isLocked, muted, unread, mentionCount, isMentionLowImportance } = stateFromStoresObject);
@@ -184,58 +189,333 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         if (threadIndex === diff) {
           num10 = id(tmp2[16]).radii.round;
         }
-        class L {
-          constructor() {
-            tmp = id;
-            isMutedResult = closure_5.isMuted(id);
-            obj = { user: closure_10.getUser(ownerId), parentChannel: closure_6.getChannel(parent_id), voiceStates: closure_12.getVoiceStatesForChannel(channel), hasVideo: closure_11.hasVideo(channel.id), isLocked: !closure_7.can(Permissions.CONNECT, channel), muted: isMutedResult, unread: null, mentionCount: null, isMentionLowImportance: null, selectedVoiceChannelId: null };
-            hasUnreadResult = !isMutedResult;
-            if (hasUnreadResult) {
-              tmp4 = closure_8;
-              hasUnreadResult = closure_8.hasUnread(tmp);
+        if (cResult[6] === num4) {
+          if (cResult[7] === str) {
+            if (cResult[8] === num7) {
+              if (cResult[9] === num8) {
+                if (cResult[10] === num9) {
+                  let tmp26;
+                  if (cResult[11] === num10) {
+                    tmp26 = cResult[12];
+                  }
+                  if (cResult[13] === tmp4.threadLineSegment) {
+                    let tmp27;
+                    if (cResult[14] === tmp26) {
+                      tmp27 = cResult[15];
+                    }
+                    let num21 = 0;
+                    if (null != voiceStates) {
+                      num21 = voiceStates.length;
+                    }
+                    if (cResult[16] === channel) {
+                      if (cResult[17] === hasVideo) {
+                        if (cResult[18] === isLocked) {
+                          let tmp31;
+                          let tmp34;
+                          if (cResult[19] === selected) {
+                            tmp31 = cResult[20];
+                          }
+                          const tmp33 = id(ownerId[22])(tmp31);
+                          if (cResult[21] !== channel) {
+                            function ce() {
+                              const obj = transitionToChannel;
+                              const obj2 = { source: constants.CHANNEL_LIST };
+                              obj.transitionToThread(channel, obj2);
+                            }
+                            cResult[21] = channel;
+                            cResult[22] = ce;
+                            tmp34 = ce;
+                          } else {
+                            tmp34 = cResult[22];
+                          }
+                          if (cResult[23] === channel) {
+                            if (cResult[24] === parentChannel) {
+                              let tmp35;
+                              if (cResult[25] === user) {
+                                tmp35 = cResult[26];
+                              }
+                              if (cResult[27] === fontScale) {
+                                let tmp36;
+                                if (cResult[28] === tmp4.threadLineSegment.backgroundColor) {
+                                  tmp36 = cResult[29];
+                                }
+                                if (cResult[30] === tmp4.unreadIcon) {
+                                  let tmp41;
+                                  if (cResult[31] === unread) {
+                                    tmp41 = cResult[32];
+                                  }
+                                  if (cResult[33] === tmp4.unreadContainer) {
+                                    let tmp45;
+                                    let tmp49;
+                                    if (cResult[34] === tmp41) {
+                                      tmp45 = cResult[35];
+                                    }
+                                    if (cResult[36] !== tmp4.spineSpacer) {
+                                      let obj2 = { style: tmp4.spineSpacer };
+                                      const tmp52 = closure_17(user, obj2);
+                                      cResult[36] = tmp4.spineSpacer;
+                                      cResult[37] = tmp52;
+                                      tmp49 = tmp52;
+                                    } else {
+                                      tmp49 = cResult[37];
+                                    }
+                                    if (cResult[38] === channel) {
+                                      if (cResult[39] === mentionCount) {
+                                        let tmp54;
+                                        let tmp56;
+                                        let tmp59;
+                                        if (cResult[40] === unread) {
+                                          tmp54 = cResult[41];
+                                        }
+                                        if (cResult[42] !== selected) {
+                                          const obj3 = { selected };
+                                          cResult[42] = selected;
+                                          cResult[43] = obj3;
+                                          tmp56 = obj3;
+                                        } else {
+                                          tmp56 = cResult[43];
+                                        }
+                                        if (cResult[44] === channel) {
+                                          if (cResult[45] === num21) {
+                                            if (cResult[46] === hasVideo) {
+                                              if (cResult[47] === isMentionLowImportance) {
+                                                if (cResult[48] === mentionCount) {
+                                                  let tmp57;
+                                                  if (cResult[49] === tmp33) {
+                                                    tmp57 = cResult[50];
+                                                  }
+                                                  if (cResult[51] === channel) {
+                                                    if (cResult[52] === selectedVoiceChannelId === threadId) {
+                                                      let tmp63;
+                                                      if (cResult[53] === voiceStates) {
+                                                        tmp63 = cResult[54];
+                                                      }
+                                                      if (cResult[55] === channel) {
+                                                        if (cResult[56] === tmp35) {
+                                                          if (cResult[57] === tmp34) {
+                                                            if (cResult[58] === selected) {
+                                                              if (cResult[59] === muted) {
+                                                                if (cResult[60] === tmp4.container) {
+                                                                  if (cResult[61] === tmp54) {
+                                                                    if (cResult[62] === tmp56) {
+                                                                      if (cResult[63] === tmp57) {
+                                                                        if (cResult[64] === tmp63) {
+                                                                          let tmp69;
+                                                                          if (cResult[65] === unread) {
+                                                                            tmp69 = cResult[66];
+                                                                          }
+                                                                          if (cResult[67] === tmp4.threadRow) {
+                                                                            if (cResult[68] === tmp45) {
+                                                                              if (cResult[69] === tmp49) {
+                                                                                let tmp73;
+                                                                                if (cResult[70] === tmp69) {
+                                                                                  tmp73 = cResult[71];
+                                                                                }
+                                                                                if (cResult[72] === tmp27) {
+                                                                                  if (cResult[73] === tmp36) {
+                                                                                    let tmp77;
+                                                                                    if (cResult[74] === tmp73) {
+                                                                                      tmp77 = cResult[75];
+                                                                                    }
+                                                                                    return tmp77;
+                                                                                  }
+                                                                                }
+                                                                                const obj4 = { children: items1 };
+                                                                                items1 = [tmp27, tmp36, tmp73];
+                                                                                const tmp80 = closure_18(closure_19, obj4);
+                                                                                cResult[72] = tmp27;
+                                                                                cResult[73] = tmp36;
+                                                                                cResult[74] = tmp73;
+                                                                                cResult[75] = tmp80;
+                                                                                tmp77 = tmp80;
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                          const obj5 = { style: tmp40, children: items2 };
+                                                                          items2 = [tmp45, tmp49, tmp69];
+                                                                          const tmp76 = closure_18(user, obj5);
+                                                                          cResult[67] = tmp4.threadRow;
+                                                                          cResult[68] = tmp45;
+                                                                          cResult[69] = tmp49;
+                                                                          cResult[70] = tmp69;
+                                                                          cResult[71] = tmp76;
+                                                                          tmp73 = tmp76;
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                      const obj6 = { onPress: tmp34, onLongPress: tmp35, style: tmp53, accessible: true, accessibilityRole: "button", accessibilityLabel: tmp54, accessibilityState: tmp56, channel, selected, muted, unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, hideIcon: true, channelInfo: tmp57, children: tmp63 };
+                                                      const tmp72 = closure_17(id(ownerId[32]), obj6);
+                                                      cResult[55] = channel;
+                                                      cResult[56] = tmp35;
+                                                      cResult[57] = tmp34;
+                                                      cResult[58] = selected;
+                                                      cResult[59] = muted;
+                                                      cResult[60] = tmp4.container;
+                                                      cResult[61] = tmp54;
+                                                      cResult[62] = tmp56;
+                                                      cResult[63] = tmp57;
+                                                      cResult[64] = tmp63;
+                                                      cResult[65] = unread;
+                                                      cResult[66] = tmp72;
+                                                      tmp69 = tmp72;
+                                                    }
+                                                  }
+                                                  let tmp64 = null;
+                                                  if (0 !== voiceStates.length) {
+                                                    if (selectedVoiceChannelId !== threadId) {
+                                                      let tmp67;
+                                                      if (1 !== voiceStates.length) {
+                                                        const obj7 = { users: tmpResult4.computeSummarizedVoiceUsers(obj8), max: 8, guildId: channel.guild_id, renderIcon: false, noPadding: true };
+                                                        obj8 = { channels: items3, selectedChannelId: null, selectedVoiceChannelId: null, voiceStates: obj9 };
+                                                        items3 = [channel];
+                                                        obj9 = {};
+                                                        obj9[channel.id] = voiceStates;
+                                                        const tmp32Result = id(ownerId[30]);
+                                                        tmpResult4 = tmp(ownerId[31]);
+                                                        tmp67 = closure_17(tmp32Result, obj7);
+                                                      }
+                                                      tmp64 = tmp67;
+                                                    }
+                                                    const obj10 = { channel, collapsed: false, voiceStates };
+                                                    tmp67 = closure_17(tmp32(tmp2[29]), obj10);
+                                                  }
+                                                  cResult[51] = channel;
+                                                  cResult[52] = selectedVoiceChannelId === threadId;
+                                                  cResult[53] = voiceStates;
+                                                  cResult[54] = tmp64;
+                                                  tmp63 = tmp64;
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                        if (0 === mentionCount) {
+                                          let tmp60 = null;
+                                          if (tmp33) {
+                                            const obj11 = { userCount: num21, video: hasVideo, channel };
+                                            tmp60 = closure_17(tmp(tmp2[27]).ConnectedUserLimit, obj11);
+                                          }
+                                          tmp59 = tmp60;
+                                        } else {
+                                          const obj12 = { value: mentionCount, isMentionLowImportance };
+                                          tmp59 = closure_17(tmp(tmp2[28]).Badge, obj12);
+                                        }
+                                        cResult[44] = channel;
+                                        cResult[45] = num21;
+                                        cResult[46] = hasVideo;
+                                        cResult[47] = isMentionLowImportance;
+                                        cResult[48] = mentionCount;
+                                        cResult[49] = tmp33;
+                                        cResult[50] = tmp59;
+                                        tmp57 = tmp59;
+                                      }
+                                    }
+                                    const obj13 = { channel, unread, mentionCount };
+                                    const tmp55 = id(ownerId[26])(obj13);
+                                    cResult[38] = channel;
+                                    cResult[39] = mentionCount;
+                                    cResult[40] = unread;
+                                    cResult[41] = tmp55;
+                                    tmp54 = tmp55;
+                                  }
+                                  const obj14 = { style: tmp4.unreadContainer, children: tmp41 };
+                                  const tmp48 = closure_17(user, obj14);
+                                  cResult[33] = tmp4.unreadContainer;
+                                  cResult[34] = tmp41;
+                                  cResult[35] = tmp48;
+                                  tmp45 = tmp48;
+                                }
+                                let tmp42 = unread;
+                                if (tmp42) {
+                                  const obj15 = { style: tmp4.unreadIcon };
+                                  tmp42 = closure_17(user, obj15);
+                                }
+                                cResult[30] = tmp4.unreadIcon;
+                                cResult[31] = unread;
+                                cResult[32] = tmp42;
+                                tmp41 = tmp42;
+                              }
+                              const obj16 = { color: tmp4.threadLineSegment.backgroundColor, fontScale };
+                              const tmp39 = closure_17(closure_21, obj16);
+                              cResult[27] = fontScale;
+                              cResult[28] = tmp4.threadLineSegment.backgroundColor;
+                              cResult[29] = tmp39;
+                              tmp36 = tmp39;
+                            }
+                          }
+                          function he() {
+                            if (channel.isForumPost()) {
+                              if (null != user) {
+                                if (null != parentChannel) {
+                                  if (parentChannel.isForumLikeChannel()) {
+                                    showLongPressForumPostActionSheetDefault(channel, parentChannel);
+                                  }
+                                }
+                              }
+                            }
+                            showThreadLongPressActionSheetDefault(channel.id);
+                          }
+                          cResult[23] = channel;
+                          cResult[24] = parentChannel;
+                          cResult[25] = user;
+                          cResult[26] = he;
+                          tmp35 = he;
+                        }
+                      }
+                    }
+                    const obj17 = { channel, locked: isLocked, video: hasVideo, selected };
+                    cResult[16] = channel;
+                    cResult[17] = hasVideo;
+                    cResult[18] = isLocked;
+                    cResult[19] = selected;
+                    cResult[20] = obj17;
+                    tmp31 = obj17;
+                  }
+                  const obj18 = { style: items4 };
+                  items4 = [tmp4.threadLineSegment, tmp26];
+                  const tmp30 = closure_17(user, obj18);
+                  cResult[13] = tmp4.threadLineSegment;
+                  cResult[14] = tmp26;
+                  cResult[15] = tmp30;
+                  tmp27 = tmp30;
+                }
+              }
             }
-            obj.unread = hasUnreadResult;
-            obj.mentionCount = closure_8.getMentionCount(tmp);
-            obj.isMentionLowImportance = closure_8.getIsMentionLowImportance(tmp);
-            obj.selectedVoiceChannelId = closure_9.getVoiceChannelId();
-            return obj;
           }
         }
-        let obj2 = { top: num4, height: str, borderTopRightRadius: num7, borderTopLeftRadius: num8, borderBottomRightRadius: num9, borderBottomLeftRadius: num10 };
+        const obj19 = { top: num4, height: str, borderTopRightRadius: num7, borderTopLeftRadius: num8, borderBottomRightRadius: num9, borderBottomLeftRadius: num10 };
         cResult[6] = num4;
         cResult[7] = str;
         cResult[8] = num7;
         cResult[9] = num8;
         cResult[10] = num9;
         cResult[11] = num10;
-        cResult[12] = obj2;
+        cResult[12] = obj19;
+        tmp26 = obj19;
       }
     }
   }
-  class L {
-    constructor() {
-      tmp = id;
-      isMutedResult = closure_5.isMuted(id);
-      obj = { user: closure_10.getUser(ownerId), parentChannel: closure_6.getChannel(parent_id), voiceStates: closure_12.getVoiceStatesForChannel(channel), hasVideo: closure_11.hasVideo(channel.id), isLocked: !closure_7.can(Permissions.CONNECT, channel), muted: isMutedResult, unread: null, mentionCount: null, isMentionLowImportance: null, selectedVoiceChannelId: null };
-      hasUnreadResult = !isMutedResult;
-      if (hasUnreadResult) {
-        tmp4 = closure_8;
-        hasUnreadResult = closure_8.hasUnread(tmp);
-      }
-      obj.unread = hasUnreadResult;
-      obj.mentionCount = closure_8.getMentionCount(tmp);
-      obj.isMentionLowImportance = closure_8.getIsMentionLowImportance(tmp);
-      obj.selectedVoiceChannelId = closure_9.getVoiceChannelId();
-      return obj;
-    }
-  }
+  const fn = function p() {
+    let hasUnreadResult;
+    const isMutedResult = JoinedThreadsStore.isMuted(id);
+    const obj = { user: UserStore.getUser(ownerId), parentChannel: ChannelStore.getChannel(parent_id), voiceStates: SortedVoiceStateStore.getVoiceStatesForChannel(channel), hasVideo: VoiceStateStore.hasVideo(channel.id), isLocked: !PermissionStore.can(Permissions.CONNECT, channel), muted: isMutedResult, unread: hasUnreadResult, mentionCount: ReadStateStore.getMentionCount(id), isMentionLowImportance: ReadStateStore.getIsMentionLowImportance(id), selectedVoiceChannelId: SelectedChannelStore.getVoiceChannelId() };
+    hasUnreadResult = !isMutedResult && ReadStateStore.hasUnread(tmp);
+    return obj;
+  };
   cResult[1] = channel;
   cResult[2] = id;
   cResult[3] = ownerId;
   cResult[4] = parent_id;
-  cResult[5] = L;
-  tmp17 = L;
-}) : ((channel) => {
+  cResult[5] = fn;
+  tmp17 = fn;
+}) : (function ThreadChannel(channel) {
   let hasVideo;
   let isLocked;
   let isMentionLowImportance;
@@ -408,7 +688,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   return closure_18(tmp14, obj16);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedThreadChannel(threadId) {
   let first;
   let selected;
   let threadCount;
@@ -464,7 +744,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
     tmp9 = tmp12;
   }
   return tmp8;
-}) : ((threadId) => {
+}) : (function ConnectedThreadChannel(threadId) {
   let selected;
   let threadCount;
   let threadIndex;

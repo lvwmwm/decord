@@ -1,13 +1,13 @@
-// Module ID: 16794
-// Function ID: 16795
+// Module ID: 17074
+// Function ID: 17075
 // Name: useFrameLifecycle
-// Dependencies: [32, 5, 19, 8738, 558, 576, 9019, 16795, 16796, 6665, 2016, 9002, 2]
+// Dependencies: [32, 5, 19, 10613, 558, 576, 10618, 17075, 17076, 6842, 2028, 10614, 2]
 
-// Module 16794 (useFrameLifecycle)
+// Module 17074 (useFrameLifecycle)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import FramesConstants from "FramesConstants" /* 8738 */;
+import FramesConstants from "FramesConstants" /* 10613 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -86,7 +86,7 @@ function useFrameLifecycleState(applicationId) {
 let _slicedToArray = _slicedToArray_mod;
 ({ isLaunched: metroRequire, makeFrameId: metroImportDefault } = FramesConstants);
 const FrameLifecycleState = { Loading: "loading", AwaitingLaunch: "awaiting-launch", Launched: "launched", RenderingElsewhere: "rendering-elsewhere", NoApplication: "no-application", DoesNotSupportSurface: "does-not-support-surface", Error: "error" };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrameLifecycle(applicationId) {
   let AwaitingLaunch;
   let setFailed;
   let obj = applicationId(setFailed[5]);
@@ -207,7 +207,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
   cResult[1] = applicationId;
   cResult[2] = obj2;
   tmp2 = obj2;
-}) : ((applicationId) => {
+}) : (function useFrameLifecycle(applicationId) {
   let AwaitingLaunch;
   applicationId = applicationId.applicationId;
   let obj = { applicationId, surface: applicationId.surface };

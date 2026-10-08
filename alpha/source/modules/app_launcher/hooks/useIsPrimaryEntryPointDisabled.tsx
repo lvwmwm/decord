@@ -1,18 +1,18 @@
-// Module ID: 11781
-// Function ID: 11782
+// Module ID: 11848
+// Function ID: 11849
 // Name: useIsPrimaryEntryPointDisabled
-// Dependencies: [2009, 4515, 1096, 558, 576, 504, 9044, 11685, 9033, 8962, 1369, 1126, 2]
+// Dependencies: [2021, 4707, 1096, 558, 576, 504, 10657, 11750, 8488, 10627, 1381, 1126, 2]
 
-// Module 11781 (useIsPrimaryEntryPointDisabled)
+// Module 11848 (useIsPrimaryEntryPointDisabled)
 import Constants from "Constants" /* 1096 */;
-import getPlatformDefault from "getPlatform" /* 8962 */;
-import ApplicationRecord from "ApplicationRecord" /* 2009 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import getPlatformDefault from "getPlatform" /* 10627 */;
+import ApplicationRecord from "ApplicationRecord" /* 2021 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPrimaryEntryPointDisabled(arg0) {
   let activityAction;
   let application;
   let channel;
@@ -46,15 +46,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult = channel(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
   let id;
-  const useEmbeddedActivityLaunchability = channel(9044).useEmbeddedActivityLaunchability;
-  channel(9044);
+  const useEmbeddedActivityLaunchability = channel(10657).useEmbeddedActivityLaunchability;
+  channel(10657);
   if (channel != null) {
     id = channel.id;
   }
   const embeddedActivityLaunchability = useEmbeddedActivityLaunchability(id);
   let flag = false;
-  if (channel(11685).ActivityAction.LEAVE !== activityAction) {
-    if (channel(11685).ActivityAction.START === activityAction) {
+  if (channel(11750).ActivityAction.LEAVE !== activityAction) {
+    if (channel(11750).ActivityAction.START === activityAction) {
       flag = false;
       if (null != channel) {
         let isGuildVoiceResult;
@@ -63,12 +63,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         if (isGuildVoiceResult) {
           flag = false;
-          if (embeddedActivityLaunchability !== channel(9044).EmbeddedActivityLaunchability.CAN_LAUNCH) {
+          if (embeddedActivityLaunchability !== channel(10657).EmbeddedActivityLaunchability.CAN_LAUNCH) {
             flag = true;
           }
         } else {
           flag = false;
-          const tmpResult6 = channel(9033);
+          const tmpResult6 = channel(8488);
           if (!tmpResult6.isActivitiesInTextEnabled(channel)) {
             flag = true;
           }
@@ -76,7 +76,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     } else {
       flag = false;
-      if (channel(11685).ActivityAction.JOIN === activityAction) {
+      if (channel(11750).ActivityAction.JOIN === activityAction) {
         let isGuildVoiceResult1;
         if (channel != null) {
           isGuildVoiceResult1 = channel.isGuildVoice();
@@ -85,7 +85,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           flag = !stateFromStores;
         } else {
           flag = false;
-          const tmpResult7 = channel(9033);
+          const tmpResult7 = channel(8488);
           if (!tmpResult7.isActivitiesInTextEnabled(channel)) {
             flag = true;
           }
@@ -95,10 +95,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   let flag2 = flag;
   let tmp14;
-  if (activityAction !== channel(11685).ActivityAction.LEAVE) {
+  if (activityAction !== channel(11750).ActivityAction.LEAVE) {
     const tmp15 = application instanceof ApplicationRecord ? application.embeddedActivityConfig : application.embedded_activity_config;
     getPlatformDefault;
-    channel(1369);
+    channel(1381);
     if (null != tmp15) {
       const supported_platforms = tmp15.supported_platforms;
       if (!supported_platforms.includes(tmp19)) {
@@ -162,7 +162,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = tmp14;
   cResult[8] = obj2;
   tmp28 = obj2;
-}) : ((arg0) => {
+}) : (function useIsPrimaryEntryPointDisabled(arg0) {
   let activityAction;
   let application;
   let context;
@@ -175,15 +175,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = channel(504);
   const stateFromStores = obj.useStateFromStores(items, () => PermissionStore.can(Permissions.USE_EMBEDDED_ACTIVITIES, channel));
   let id;
-  const useEmbeddedActivityLaunchability = channel(9044).useEmbeddedActivityLaunchability;
-  channel(9044);
+  const useEmbeddedActivityLaunchability = channel(10657).useEmbeddedActivityLaunchability;
+  channel(10657);
   if (channel != null) {
     id = channel.id;
   }
   const embeddedActivityLaunchability = useEmbeddedActivityLaunchability(id);
   let flag = false;
-  if (channel(11685).ActivityAction.LEAVE !== activityAction) {
-    if (channel(11685).ActivityAction.START === activityAction) {
+  if (channel(11750).ActivityAction.LEAVE !== activityAction) {
+    if (channel(11750).ActivityAction.START === activityAction) {
       flag = false;
       if (null != channel) {
         let isGuildVoiceResult;
@@ -192,12 +192,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         if (isGuildVoiceResult) {
           flag = false;
-          if (embeddedActivityLaunchability !== channel(9044).EmbeddedActivityLaunchability.CAN_LAUNCH) {
+          if (embeddedActivityLaunchability !== channel(10657).EmbeddedActivityLaunchability.CAN_LAUNCH) {
             flag = true;
           }
         } else {
           flag = false;
-          const tmp2Result = channel(9033);
+          const tmp2Result = channel(8488);
           if (!tmp2Result.isActivitiesInTextEnabled(channel)) {
             flag = true;
           }
@@ -205,7 +205,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     } else {
       flag = false;
-      if (channel(11685).ActivityAction.JOIN === activityAction) {
+      if (channel(11750).ActivityAction.JOIN === activityAction) {
         let isGuildVoiceResult1;
         if (channel != null) {
           isGuildVoiceResult1 = channel.isGuildVoice();
@@ -214,7 +214,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           flag = !stateFromStores;
         } else {
           flag = false;
-          const tmp2Result3 = channel(9033);
+          const tmp2Result3 = channel(8488);
           if (!tmp2Result3.isActivitiesInTextEnabled(channel)) {
             flag = true;
           }
@@ -224,10 +224,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   let disabled = flag;
   let reason;
-  if (activityAction !== channel(11685).ActivityAction.LEAVE) {
+  if (activityAction !== channel(11750).ActivityAction.LEAVE) {
     const tmp11 = application instanceof ApplicationRecord ? application.embeddedActivityConfig : application.embedded_activity_config;
     getPlatformDefault;
-    channel(1369);
+    channel(1381);
     if (null != tmp11) {
       const supported_platforms = tmp11.supported_platforms;
       if (!supported_platforms.includes(tmp15)) {

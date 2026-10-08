@@ -1,21 +1,21 @@
-// Module ID: 16965
-// Function ID: 16966
+// Module ID: 17246
+// Function ID: 17247
 // Name: IncomingRequestRow
-// Dependencies: [109, 19, 4885, 5124, 10605, 1085, 21, 558, 576, 4618, 573, 1126, 4728, 16010, 12309, 16422, 16966, 10615, 2]
+// Dependencies: [109, 19, 5079, 5436, 10202, 1085, 21, 558, 576, 4810, 573, 1126, 4922, 16270, 12407, 16682, 17247, 10213, 2]
 
-// Module 16965 (IncomingRequestRow)
+// Module 17246 (IncomingRequestRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
-import UserUtilsDefault from "UserUtils" /* 4728 */;
-import UserRowConstants from "UserRowConstants" /* 10605 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12309 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16010 */;
+import UserUtilsDefault from "UserUtils" /* 4922 */;
+import UserRowConstants from "UserRowConstants" /* 10202 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12407 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16270 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import ApplicationStore from "ApplicationStore" /* 5124 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import ApplicationStore from "ApplicationStore" /* 5436 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ const RelationshipTypes = Constants.RelationshipTypes;
 const jsx = Fragment.jsx;
 const constants = { ACCEPT: "accept", DECLINE: "decline", WAVE: "wave" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function IncomingRequestRow(user) {
   let acceptRequestAccessibilityLabel;
   let acceptedRequestAccessibilityLabel;
   let acceptedRequestLabel;
@@ -92,7 +92,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   const sharedValue = tmpResult.useSharedValue(false);
   if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
-    const fn = function x() {
+    const fn = function w() {
       return useReducedMotion.useReducedMotion;
     };
     cResult[12] = items;
@@ -174,7 +174,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                     tmp35 = cResult[29];
                   }
                   if (cResult[30] !== tmp9) {
-                    const fn3 = function k() {
+                    const fn3 = function h() {
                       return ApplicationStore.getApplication(applicationId);
                     };
                     class M {
@@ -227,7 +227,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                           }
                         }
                       }
-                      const tmp42 = jsx(tmp33(12309), { application: null, textVariant: "text-xs/medium", iconSize: 12 }, stateFromStores1.id);
+                      const tmp42 = jsx(tmp33(12407), { application: null, textVariant: "text-xs/medium", iconSize: 12 }, stateFromStores1.id);
                       cResult[32] = stateFromStores1;
                       cResult[33] = tmp42;
                       tmp40 = tmp42;
@@ -381,7 +381,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     cResult[21] = tmp14;
     cResult[22] = tmp29;
   }
-  const fn2 = function w() {
+  const fn2 = function x() {
     const result = sharedValue.set(closure_0);
   };
   const items3 = [tmp5, sharedValue];
@@ -391,7 +391,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[17] = items3;
   tmp24 = items3;
   tmp23 = fn2;
-}) : ((user) => {
+}) : (function IncomingRequestRow(user) {
   let acceptedRequestAccessibilityLabel;
   let acceptedRequestLabel;
   let accessibilityLabel;
@@ -481,7 +481,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   return <tmp10 user={user} type={RelationshipTypes.PENDING_INCOMING} mode={UserRowModes.ACTIONS} accessibilityActions={memo} accessibilityLabel={accessibilityLabel} onAccessibilityAction={callback} subLabel={jsx(user(accepted[15]).ActionStatusSubLabel, { actioned: sharedValue, label: memo1, actionStatus: acceptedRequestLabel, actionStatusAccessibilityLabel: acceptedRequestAccessibilityLabel, animate: !stateFromStores })} trailing={jsx(user(accepted[16]).IncomingRequestRowActions, { user, pressed: sharedValue, applicationId, onAcceptIncomingRequest, onDeclineIncomingRequest, animate: !stateFromStores, acceptRequestAccessibilityLabel, ignoreRequestAccessibilityLabel })} />;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function IncomingFriendRequestRow(user) {
   let tmp10;
   let tmp12;
   let tmp14;
@@ -578,7 +578,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[17] = tmp5;
   cResult[18] = tmp22;
   tmp20 = tmp22;
-}) : ((user) => {
+}) : (function IncomingFriendRequestRow(user) {
   user = user.user;
   const merged = Object.assign(user, Object.assign({ user: 0 }));
   const obj = UserUtilsDefault;
@@ -592,7 +592,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   return <closure_15 user={user} accessibilityLabel={intl.formatToPlainString(intl6.t.u6lp4x, { name: userTag })} acceptedRequestLabel={intl2.string(intl6.t["0E614Z"])} acceptedRequestAccessibilityLabel={intl3.formatToPlainString(intl6.t.cRwkp7, { name: userTag })} acceptRequestAccessibilityLabel={intl4.formatToPlainString(intl6.t.MUfqsS, { name: userTag })} ignoreRequestAccessibilityLabel={intl5.formatToPlainString(intl6.t["0OF9IB"], { name: userTag })} />;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function IncomingGameFriendRequestRow(arg0) {
   let application;
   let tmp11;
   let tmp13;
@@ -712,7 +712,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[9] = userTag;
   cResult[10] = formatToPlainStringResult3;
   tmp15 = formatToPlainStringResult3;
-}) : ((arg0) => {
+}) : (function IncomingGameFriendRequestRow(arg0) {
   let application;
   ({ user, application } = arg0);
   const merged = Object.assign(arg0, Object.assign({ user: 0, application: 0 }));
@@ -735,7 +735,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return <closure_15 user={user} applicationId={application.id} accessibilityLabel={intl.formatToPlainString(application(1126).t.u6lp4x, { name: userTag })} acceptedRequestLabel={intl2.format(application(1126).t.gRgJGR, obj3)} acceptedRequestAccessibilityLabel={intl3.formatToPlainString(application(1126).t.Ke6fRJ, obj4)} acceptRequestAccessibilityLabel={intl4.formatToPlainString(application(1126).t.kMUpdH, obj5)} ignoreRequestAccessibilityLabel={intl5.formatToPlainString(application(1126).t.d8Cw5e, obj6)} />;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedIncomingGameFriendRequestRow(arg0) {
   let applicationId;
   let closure_0;
   let tmp10;
@@ -799,7 +799,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp15 = tmp21;
   }
   return tmp14;
-}) : ((applicationId) => {
+}) : (function ConnectedIncomingGameFriendRequestRow(applicationId) {
   applicationId = applicationId.applicationId;
   let tmp = null;
   user = applicationId.user;

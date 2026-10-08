@@ -1,29 +1,29 @@
-// Module ID: 18029
-// Function ID: 18030
+// Module ID: 18316
+// Function ID: 18317
 // Name: GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet
-// Dependencies: [32, 19, 17, 1379, 1096, 21, 4896, 587, 558, 576, 4600, 17935, 16558, 5981, 1126, 6750, 15064, 4892, 9455, 1618, 1188, 5602, 4860, 6119, 6652, 2]
+// Dependencies: [32, 19, 17, 1391, 1096, 21, 5090, 587, 558, 576, 4792, 18222, 16813, 6164, 1126, 6926, 15326, 5086, 7013, 1630, 1200, 5376, 5054, 6298, 6829, 2]
 
-// Module 18029 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
+// Module 18316 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import react_native from "react-native" /* 4600 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import PriceUtils from "PriceUtils" /* 6750 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9455 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 15064 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import react_native from "react-native" /* 4792 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import PriceUtils from "PriceUtils" /* 6926 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 7013 */;
+import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 15326 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, selectedTemplate;
+let BottomSheet;
 
 let c10;
 let c9;
@@ -48,7 +48,7 @@ obj4 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 obj5 = { borderRadius: nativeDefault.radii.xs };
 let closure_11 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PriceOptionRow(arg0) {
   let accessibilityRole;
   let accessibilityState;
   let items;
@@ -83,7 +83,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[3] === containerSelected) {
       tmp8 = cResult[4];
     }
-    const tmp9Result = importDefault(selected ? 17935 : 16558);
+    const tmp9Result = importDefault(selected ? 18222 : 16813);
     if (cResult[5] === tmp4.rowStatusIcon) {
       let tmp11;
       let tmp14;
@@ -154,7 +154,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = containerSelected;
   cResult[4] = items1;
   tmp8 = items1;
-}) : ((selected) => {
+}) : (function PriceOptionRow(selected) {
   let CgmBaG;
   let accessibilityRole;
   let accessibilityState;
@@ -181,11 +181,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const obj2 = { style: items, accessibilityRole, accessibilityState, onPress, children: items1 };
   items[1] = containerSelected;
-  const obj3 = { style: tmp.rowStatusIcon, source: importDefault(selected ? 17935 : 16558) };
+  const obj3 = { style: tmp.rowStatusIcon, source: importDefault(selected ? 18222 : 16813) };
   const tmp6Result = FastImageDefault;
   items1 = [React4(tmp6Result, obj3), ];
   const obj4 = { variant: "text-sm/normal", color: "text-default", children: format(CgmBaG, obj5) };
-  const Text = tmp2(4892).Text;
+  const Text = tmp2(5086).Text;
   const intl = tmp2(1126).intl;
   format = intl.format;
   obj5 = { price: tmp2Result.formatPrice(price, CurrencyCodes.USD), interval: tmp2Result2.formatPlanInterval(obj6) };
@@ -197,7 +197,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp5(tmp7, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedTemplate) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet(selectedTemplate) {
   let closure_4;
   let first;
   let intl3;
@@ -299,6 +299,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedTemplate) =>
         if (cResult[17] === newPricesToPick) {
           let tmp28;
           let tmp31;
+          let tmp34;
           if (cResult[18] === first) {
             tmp28 = cResult[19];
           }
@@ -311,45 +312,30 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedTemplate) =>
             tmp31 = cResult[22];
           }
           if (cResult[23] !== tmp7) {
-            class G {
-              constructor() {
-                return closure_5();
-              }
-            }
+            const fn = function z() {
+              return closure_5();
+            };
             cResult[23] = tmp7;
-            cResult[24] = G;
+            cResult[24] = fn;
+            tmp34 = fn;
           } else {
-            class G {
-              constructor() {
-                return closure_5();
-              }
-            }
+            tmp34 = cResult[24];
           }
           if (cResult[25] === tmp4.confirmButton) {
+            let tmp35;
             let tmp38;
-            let tmp40;
             let tmp41;
-            class G {
-              constructor() {
-                return closure_5();
-              }
+            let tmp42;
+            if (cResult[26] === tmp34) {
+              tmp35 = cResult[27];
             }
             const _Symbol4 = Symbol;
             if (cResult[28] === Symbol.for("react.memo_cache_sentinel")) {
-              class G {
-                constructor() {
-                  return closure_5();
-                }
-              }
-              const tmp39 = closure_9(selectedTemplate(newPricesToPick[20]).Spacer, { size: 24 });
-              cResult[28] = tmp39;
-              tmp38 = tmp39;
+              const tmp40 = closure_9(selectedTemplate(newPricesToPick[20]).Spacer, { size: 24 });
+              cResult[28] = tmp40;
+              tmp38 = tmp40;
             } else {
-              class G {
-                constructor() {
-                  return closure_5();
-                }
-              }
+              tmp38 = cResult[28];
             }
             const _Symbol5 = Symbol;
             if (cResult[29] === Symbol.for("react.memo_cache_sentinel")) {
@@ -360,7 +346,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedTemplate) =>
                 }
               }
               cResult[29] = V;
-              tmp40 = V;
+              tmp41 = V;
             } else {
               class V {
                 constructor() {
@@ -380,9 +366,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedTemplate) =>
               const obj7 = { variant: "text-sm/semibold", color: "interactive-text-active", children: intl3.string(selectedTemplate(newPricesToPick[14]).t.h26VOI) };
               const Text = tmp(tmp2[17]).Text;
               intl3 = tmp(tmp2[14]).intl;
-              const tmp42 = closure_9(Text, obj7);
-              cResult[30] = tmp42;
-              tmp41 = tmp42;
+              const tmp43 = closure_9(Text, obj7);
+              cResult[30] = tmp43;
+              tmp42 = tmp43;
             } else {
               class V {
                 constructor() {
@@ -398,10 +384,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedTemplate) =>
                   return obj.hideActionSheet();
                 }
               }
-              const obj8 = { onPress: tmp40, style: tmp4.backToTemplates, activeOpacity: 0.5, children: tmp41 };
+              const obj8 = { onPress: tmp41, style: tmp4.backToTemplates, activeOpacity: 0.5, children: tmp42 };
               cResult[31] = tmp4.backToTemplates;
               cResult[32] = closure_9(closure_5, obj8);
-              const tmp45 = closure_9(closure_5, obj8);
+              const tmp46 = closure_9(closure_5, obj8);
             } else {
               class V {
                 constructor() {
@@ -419,21 +405,22 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedTemplate) =>
               }
             }
             const obj9 = { contentContainerStyle: tmp8, children: items };
-            items = [tmp11, tmp15, tmp22, tmp25, tmp28, tmp31, tmp35, tmp38, tmp43];
+            items = [tmp11, tmp15, tmp22, tmp25, tmp28, tmp31, tmp35, tmp38, tmp44];
             cResult[33] = tmp28;
             cResult[34] = tmp35;
-            cResult[35] = tmp43;
+            cResult[35] = tmp44;
             cResult[36] = tmp8;
             cResult[37] = tmp11;
             cResult[38] = tmp22;
             cResult[39] = closure_10(selectedTemplate(newPricesToPick[23]).BottomSheetScrollView, obj9);
-            const tmp48 = closure_10(selectedTemplate(newPricesToPick[23]).BottomSheetScrollView, obj9);
+            const tmp49 = closure_10(selectedTemplate(newPricesToPick[23]).BottomSheetScrollView, obj9);
           }
           const obj10 = { text: "Confirm New Price", pillStyle: tmp4.confirmButton, onPress: tmp34, grow: true };
+          const tmp37 = closure_9(selectedTemplate(newPricesToPick[21]).BaseTextButton, obj10);
           cResult[25] = tmp4.confirmButton;
           cResult[26] = tmp34;
-          cResult[27] = closure_9(selectedTemplate(newPricesToPick[21]).BaseTextButton, obj10);
-          const tmp37 = closure_9(selectedTemplate(newPricesToPick[21]).BaseTextButton, obj10);
+          cResult[27] = tmp37;
+          tmp35 = tmp37;
         }
         if (cResult[20] !== first) {
           class V {
@@ -443,8 +430,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedTemplate) =>
             }
           }
           cResult[20] = first;
-          cResult[21] = A;
-          tmp29 = A;
+          cResult[21] = E;
+          tmp29 = E;
         } else {
           class V {
             constructor() {
@@ -461,7 +448,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedTemplate) =>
       }
     }
   }
-  const fn = function s() {
+  function handleSelectNewPrice() {
     let items;
     const obj = { listings: items };
     const merged = Object.assign(selectedTemplate);
@@ -469,14 +456,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedTemplate) =>
     const merged1 = Object.assign(selectedTemplate.listings[0]);
     items = [obj2];
     handleCreateFromTemplate(obj, true);
-  };
+  }
   cResult[0] = handleCreateFromTemplate;
   cResult[1] = newPricesToPick;
   cResult[2] = first;
   cResult[3] = selectedTemplate;
-  cResult[4] = fn;
-  tmp7 = fn;
-}) : ((selectedTemplate) => {
+  cResult[4] = handleSelectNewPrice;
+  tmp7 = handleSelectNewPrice;
+}) : (function GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet(selectedTemplate) {
   let BottomSheetScrollView;
   let Text3;
   let c3;

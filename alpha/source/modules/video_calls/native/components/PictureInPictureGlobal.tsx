@@ -1,37 +1,37 @@
-// Module ID: 17116
-// Function ID: 17117
+// Module ID: 17397
+// Function ID: 17398
 // Name: PictureInPictureGlobal
-// Dependencies: [32, 19, 17, 2050, 4912, 9100, 502, 1999, 1085, 4917, 21, 4896, 1188, 587, 558, 576, 9105, 504, 9049, 9095, 5103, 9104, 5919, 9107, 8018, 9124, 9128, 9140, 9155, 9085, 9165, 9125, 9103, 11839, 4618, 4897, 6075, 17117, 1618, 2]
+// Dependencies: [32, 19, 17, 2062, 6041, 9318, 502, 2011, 1085, 5113, 21, 5090, 1200, 587, 558, 576, 10679, 504, 6043, 10672, 7476, 10678, 8302, 10681, 8426, 10696, 10700, 10710, 10721, 10668, 10731, 10697, 10677, 6077, 4810, 5091, 6261, 17398, 1630, 2]
 
-// Module 17116 (PictureInPictureGlobal)
+// Module 17397 (PictureInPictureGlobal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
-import CallConstants from "CallConstants" /* 4917 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5103 */;
-import NavigatorConstants from "NavigatorConstants" /* 6075 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9049 */;
-import transitionToActivityDefault from "transitionToActivity" /* 9085 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9100 */;
-import PictureInPictureDefault from "PictureInPicture" /* 9103 */;
-import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 17117 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
+import CallConstants from "CallConstants" /* 5113 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6043 */;
+import NavigatorConstants from "NavigatorConstants" /* 6261 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7476 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9318 */;
+import transitionToActivityDefault from "transitionToActivity" /* 10668 */;
+import PictureInPictureDefault from "PictureInPicture" /* 10677 */;
+import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 17398 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4912 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import native_mod from "native" /* 1188 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import native_mod from "native" /* 1200 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let channel, importDefault;
+let importDefault;
 
 let closure_15;
 let closure_16;
@@ -56,7 +56,7 @@ obj3 = { backgroundColor: nativeDefault.colors.BLACK, borderRadius: nativeDefaul
 let closure_18 = createStyles(obj);
 let memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function PIPContent(channel) {
   let closure_1;
   let first;
   let height;
@@ -141,10 +141,10 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) 
     let tmp20;
     let tmp22;
     let tmp21;
-    let tmp24;
-    let tmp26;
-    let tmp28;
+    let tmp25;
+    let tmp27;
     let tmp29;
+    let tmp30;
     class R {
       constructor() {
         const currentEmbeddedActivity = EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
@@ -216,23 +216,41 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) 
       }
     }
     if (cResult[10] !== tmp18) {
-      class C {
+      class R {
         constructor() {
-          const isLocalVideoDisabledResult = null != importDefault && MediaEngineStore.isLocalVideoDisabled(tmp.id);
-          return isLocalVideoDisabledResult;
+          const currentEmbeddedActivity = EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
+          let participant = null;
+          if (null != currentEmbeddedActivity) {
+            const getParticipant = ChannelRTCStore.getParticipant;
+            const id = channel.id;
+            const obj3 = { applicationId: null, instanceId: null };
+            ({ applicationId: obj2.applicationId, compositeInstanceId: obj2.instanceId } = currentEmbeddedActivity);
+            const obj = ChannelRTCParticipants;
+            participant = getParticipant(id, obj.getEmbeddedActivityParticipantId(obj3));
+          }
+          return participant;
         }
       }
       const items3 = [tmp18];
       cResult[10] = tmp18;
-      cResult[11] = C;
+      cResult[11] = tmp23;
       cResult[12] = items3;
       tmp22 = items3;
-      tmp21 = C;
+      tmp21 = tmp23;
     } else {
-      class C {
+      class R {
         constructor() {
-          const isLocalVideoDisabledResult = null != importDefault && MediaEngineStore.isLocalVideoDisabled(tmp.id);
-          return isLocalVideoDisabledResult;
+          const currentEmbeddedActivity = EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
+          let participant = null;
+          if (null != currentEmbeddedActivity) {
+            const getParticipant = ChannelRTCStore.getParticipant;
+            const id = channel.id;
+            const obj3 = { applicationId: null, instanceId: null };
+            ({ applicationId: obj2.applicationId, compositeInstanceId: obj2.instanceId } = currentEmbeddedActivity);
+            const obj = ChannelRTCParticipants;
+            participant = getParticipant(id, obj.getEmbeddedActivityParticipantId(obj3));
+          }
+          return participant;
         }
       }
       tmp22 = cResult[12];
@@ -241,20 +259,38 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) 
     const stateFromStores2 = tmpResult7.useStateFromStores(tmp20, tmp21, tmp22);
     const _Symbol2 = Symbol;
     if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-      class C {
+      class R {
         constructor() {
-          const isLocalVideoDisabledResult = null != importDefault && MediaEngineStore.isLocalVideoDisabled(tmp.id);
-          return isLocalVideoDisabledResult;
+          const currentEmbeddedActivity = EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
+          let participant = null;
+          if (null != currentEmbeddedActivity) {
+            const getParticipant = ChannelRTCStore.getParticipant;
+            const id = channel.id;
+            const obj3 = { applicationId: null, instanceId: null };
+            ({ applicationId: obj2.applicationId, compositeInstanceId: obj2.instanceId } = currentEmbeddedActivity);
+            const obj = ChannelRTCParticipants;
+            participant = getParticipant(id, obj.getEmbeddedActivityParticipantId(obj3));
+          }
+          return participant;
         }
       }
       const items4 = [ChannelRTCStore, AuthenticationStore];
       cResult[13] = items4;
-      tmp24 = items4;
+      tmp25 = items4;
     } else {
-      class C {
+      class R {
         constructor() {
-          const isLocalVideoDisabledResult = null != importDefault && MediaEngineStore.isLocalVideoDisabled(tmp.id);
-          return isLocalVideoDisabledResult;
+          const currentEmbeddedActivity = EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
+          let participant = null;
+          if (null != currentEmbeddedActivity) {
+            const getParticipant = ChannelRTCStore.getParticipant;
+            const id = channel.id;
+            const obj3 = { applicationId: null, instanceId: null };
+            ({ applicationId: obj2.applicationId, compositeInstanceId: obj2.instanceId } = currentEmbeddedActivity);
+            const obj = ChannelRTCParticipants;
+            participant = getParticipant(id, obj.getEmbeddedActivityParticipantId(obj3));
+          }
+          return participant;
         }
       }
     }
@@ -277,7 +313,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) 
       }
       cResult[14] = channel.id;
       cResult[15] = B;
-      tmp26 = B;
+      tmp27 = B;
     } else {
       class B {
         constructor() {
@@ -297,7 +333,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) 
       }
     }
     const tmpResult8 = tmp(tmp2[17]);
-    const stateFromStores3 = tmpResult8.useStateFromStores(tmp24, tmp26);
+    const stateFromStores3 = tmpResult8.useStateFromStores(tmp25, tmp27);
     if (cResult[16] !== channel) {
       class M {
         constructor() {
@@ -307,7 +343,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) 
       }
       cResult[16] = channel;
       cResult[17] = M;
-      tmp28 = M;
+      tmp29 = M;
     } else {
       class M {
         constructor() {
@@ -316,7 +352,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) 
         }
       }
     }
-    M = tmp28;
+    M = tmp29;
     if (cResult[18] !== channel) {
       class M {
         constructor() {
@@ -324,10 +360,10 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) 
           obj.openGuildVoiceModal(channel, "PIP");
         }
       }
-      tmp30[0] = channel;
+      tmp31[0] = channel;
       cResult[18] = channel;
-      cResult[19] = tmp30;
-      tmp29 = tmp30;
+      cResult[19] = tmp31;
+      tmp30 = tmp31;
     } else {
       class M {
         constructor() {
@@ -337,7 +373,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) 
       }
     }
     const tmpResult9 = tmp(tmp2[21]);
-    const shouldForcePipOrientation = tmpResult9.useShouldForcePipOrientation(tmp29);
+    const shouldForcePipOrientation = tmpResult9.useShouldForcePipOrientation(tmp30);
     tmp(tmp2[22]);
     if (cResult[20] === channel.id) {
       class M {
@@ -346,9 +382,9 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) 
           obj.openGuildVoiceModal(channel, "PIP");
         }
       }
-      ({ width, height } = require("usePipDimensions")(tmp34));
-      require("usePipDimensions")(tmp34);
-      if (tmp33) {
+      ({ width, height } = require("usePipDimensions")(tmp35));
+      require("usePipDimensions")(tmp35);
+      if (tmp34) {
         class M {
           constructor() {
             const obj = PrivateChannelCallUtils;
@@ -371,10 +407,10 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) 
           }
         }
       }
-      size = { height, width, flexDirection: tmp36 };
+      size = { height, width, flexDirection: tmp37 };
       cResult[23] = height;
       cResult[24] = width;
-      cResult[25] = tmp36;
+      cResult[25] = tmp37;
       cResult[26] = size;
     }
     const obj2 = { channelId: channel.id, forcedOrientation: shouldForcePipOrientation };
@@ -403,7 +439,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) 
   cResult[6] = stateFromStores1;
   cResult[7] = tmp6;
   cResult[8] = tmp19;
-}) : ((channel) => {
+}) : (function PIPContent(channel) {
   let callback;
   let items7;
   let items8;
@@ -582,7 +618,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) 
 }));
 const memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_20 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function PIPContentContainer(channel) {
   let first;
   let tmp5;
   let tmp6;
@@ -603,7 +639,7 @@ let closure_20 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((channel)
   _slicedToArray(react.useState(first), 2);
   if (cResult[1] !== channel) {
     const obj2 = { channel };
-    const tmp10 = closure_15(closure_19, obj2);
+    const tmp10 = authStore3(closure_19, obj2);
     cResult[1] = channel;
     cResult[2] = tmp10;
     tmp7 = tmp10;
@@ -619,29 +655,29 @@ let closure_20 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((channel)
       return tmp11;
     }
   }
-  const tmp12 = closure_15(PictureInPictureDefault, { channel, preferredPosition: tmp5, onMove: tmp6, children: tmp7 });
+  const tmp12 = authStore3(PictureInPictureDefault, { channel, preferredPosition: tmp5, onMove: tmp6, children: tmp7 });
   cResult[3] = channel;
   cResult[4] = tmp5;
   cResult[5] = tmp7;
   cResult[6] = tmp12;
   tmp11 = tmp12;
-}) : ((channel) => {
+}) : (function PIPContentContainer(channel) {
   let tmp2;
   let tmp3;
-  const f128673 = () => constants.TOP_RIGHT;
+  const f130027 = () => constants.TOP_RIGHT;
   channel = channel.channel;
-  [tmp2, tmp3] = react.useState(f128673);
-  const obj = { channel, preferredPosition: tmp2, onMove: tmp3, children: closure_15(closure_19, { channel }) };
-  _slicedToArray(react.useState(f128673), 2);
+  [tmp2, tmp3] = react.useState(f130027);
+  const obj = { channel, preferredPosition: tmp2, onMove: tmp3, children: authStore3(closure_19, { channel }) };
+  _slicedToArray(react.useState(f130027), 2);
   const tmp4 = PictureInPictureDefault;
-  return closure_15(tmp4, obj);
+  return authStore3(tmp4, obj);
 }));
 const __initData = { code: "function PictureInPictureGlobalTsx1(){const{withTiming,drawerState,STANDARD_EASING}=this.__closure;return withTiming(drawerState,{easing:STANDARD_EASING,duration:250});}" };
 const __initData2 = { code: "function PictureInPictureGlobalTsx2(){const{interpolate,animatedDrawerState,NAV_BAR_HEIGHT,PADDING,chatInputContainerHeight,PIP_AVOIDANCE_TAB_BAR_HEIGHT}=this.__closure;return{marginTop:interpolate(animatedDrawerState.get(),[0,1],[NAV_BAR_HEIGHT+PADDING,PADDING]),marginBottom:interpolate(animatedDrawerState.get(),[0,1],[chatInputContainerHeight+PADDING,PIP_AVOIDANCE_TAB_BAR_HEIGHT+PADDING])};}" };
 const __initData3 = { code: "function PictureInPictureGlobalTsx3(){const{withTiming,drawerState,STANDARD_EASING}=this.__closure;return withTiming(drawerState,{easing:STANDARD_EASING,duration:250});}" };
 const __initData4 = { code: "function PictureInPictureGlobalTsx4(){const{interpolate,animatedDrawerState,NAV_BAR_HEIGHT,PADDING,chatInputContainerHeight,PIP_AVOIDANCE_TAB_BAR_HEIGHT}=this.__closure;return{marginTop:interpolate(animatedDrawerState.get(),[0,1],[NAV_BAR_HEIGHT+PADDING,PADDING]),marginBottom:interpolate(animatedDrawerState.get(),[0,1],[chatInputContainerHeight+PADDING,PIP_AVOIDANCE_TAB_BAR_HEIGHT+PADDING])};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PictureInPictureGlobal(channel) {
   let closure_1;
   let derivedValue;
   let left;
@@ -755,7 +791,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[1] = right;
   cResult[2] = items1;
   tmp10 = items1;
-}) : ((channel) => {
+}) : (function PictureInPictureGlobal(channel) {
   let View;
   let closure_1;
   let items;

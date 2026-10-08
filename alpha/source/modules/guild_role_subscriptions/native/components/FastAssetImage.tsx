@@ -1,24 +1,22 @@
-// Module ID: 15069
-// Function ID: 15070
+// Module ID: 15331
+// Function ID: 15332
 // Name: FastAssetImage
-// Dependencies: [32, 19, 21, 558, 576, 5329, 5981, 2]
+// Dependencies: [32, 19, 21, 558, 576, 5640, 6164, 2]
 
-// Module 15069 (FastAssetImage)
+// Module 15331 (FastAssetImage)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5981 */;
+import FastImageDefault from "FastImage" /* 6164 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let applicationId;
-
 let tmp;
-const StoreUtils = tmp(5329);
+const StoreUtils = tmp(5640);
 let _slicedToArray = _slicedToArray_mod;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FastAssetImage(applicationId) {
   let asset;
   let closure_129_0;
   let first;
@@ -91,7 +89,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => 
   cResult[3] = tmp5;
   cResult[4] = str;
   tmp8 = str;
-}) : ((applicationId) => {
+}) : (function FastAssetImage(applicationId) {
   let closure_3;
   let first;
   let tmp3;

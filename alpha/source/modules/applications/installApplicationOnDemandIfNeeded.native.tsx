@@ -1,14 +1,14 @@
-// Module ID: 9035
-// Function ID: 9036
+// Module ID: 10638
+// Function ID: 10639
 // Name: installApplicationOnDemandIfNeeded
-// Dependencies: [5, 2009, 5124, 1085, 8970, 6665, 8740, 5076, 4751, 8741, 2]
+// Dependencies: [5, 2021, 5436, 1085, 10639, 6842, 9140, 5105, 4945, 10640, 2]
 // Exports: installApplicationOnDemandIfNeeded
 
-// Module 9035 (installApplicationOnDemandIfNeeded)
+// Module 10638 (installApplicationOnDemandIfNeeded)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationRecord from "ApplicationRecord" /* 2009 */;
-import ApplicationStore from "ApplicationStore" /* 5124 */;
+import ApplicationRecord from "ApplicationRecord" /* 2021 */;
+import ApplicationStore from "ApplicationStore" /* 5436 */;
 import size from "module_2" /* 2 */;
 
 let c4;

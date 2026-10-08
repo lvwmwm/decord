@@ -1,14 +1,14 @@
-// Module ID: 12892
-// Function ID: 12893
+// Module ID: 13041
+// Function ID: 13042
 // Name: useNote
-// Dependencies: [5, 19, 12893, 1085, 558, 576, 504, 584, 1282, 2]
+// Dependencies: [5, 19, 13042, 1085, 558, 576, 504, 584, 1294, 2]
 
-// Module 12892 (useNote)
+// Module 13041 (useNote)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import NoteStore from "NoteStore" /* 12893 */;
+import NoteStore from "NoteStore" /* 13042 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -108,7 +108,7 @@ let obj = function _fetchNote() {
   return obj(...arguments);
 };
 const Endpoints = Constants.Endpoints;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNote(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -169,7 +169,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = items1;
   tmp9 = items1;
   tmp8 = fn2;
-}) : ((arg0) => {
+}) : (function useNote(arg0) {
   let closure_0;
   _require = arg0;
   const items = [NoteStore];

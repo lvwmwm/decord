@@ -1,29 +1,28 @@
-// Module ID: 16052
-// Function ID: 16053
+// Module ID: 16312
+// Function ID: 16313
 // Name: HappeningNowCardActiveChannel
-// Dependencies: [19, 17, 13534, 2051, 11592, 1377, 15129, 1085, 21, 4896, 558, 576, 504, 11, 1375, 12, 6824, 1252, 1112, 5049, 1126, 5819, 16046, 15130, 2]
+// Dependencies: [19, 17, 13831, 2063, 11655, 1389, 15391, 1085, 21, 5090, 558, 576, 504, 11, 1387, 12, 6997, 1264, 1112, 5417, 1126, 8134, 16306, 15392, 2]
 
-// Module 16052 (HappeningNowCardActiveChannel)
+// Module 16312 (HappeningNowCardActiveChannel)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import router_utils from "router_utils" /* 1112 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import ActiveChannelsStore2 from "ActiveChannelsStore" /* 13534 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 15129 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import ActiveChannelsStore2 from "ActiveChannelsStore" /* 13831 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15391 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import TypingStore from "TypingStore" /* 11592 */;
-import UserStore from "UserStore" /* 1377 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import TypingStore from "TypingStore" /* 11655 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ActiveChannelsStore = ActiveChannelsStore2;
-let index;
 
 let closure_12;
 let closure_14;
@@ -36,7 +35,7 @@ let closure_10 = HappeningNowConstants.HappeningNowCardTrackingType;
 ({ jsx: map1, jsxs: closure_14 } = Fragment);
 let closure_15 = createStyles.createStyles({ content: { flexShrink: 1, marginLeft: 4, gap: 2 }, avatarsWrapper: { marginBottom: 2 } });
 let memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function HappeningNowCardActiveChannel(index) {
   let channelId;
   let first;
   let tmp10;
@@ -239,7 +238,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((index) 
   cResult[15] = guildId;
   cResult[16] = index;
   cResult[17] = fn3;
-}) : ((index) => {
+}) : (function HappeningNowCardActiveChannel(index) {
   let items6;
   let obj10;
   let obj8;

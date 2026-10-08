@@ -1,24 +1,22 @@
-// Module ID: 14846
-// Function ID: 14847
+// Module ID: 15107
+// Function ID: 15108
 // Name: useBountyVideoProgressPersistence
-// Dependencies: [32, 19, 7199, 558, 576, 14843, 10962, 2]
+// Dependencies: [32, 19, 7378, 558, 576, 15104, 11155, 2]
 
-// Module 14846 (useBountyVideoProgressPersistence)
-import BountyActionCreators from "BountyActionCreators" /* 10962 */;
-import useBountiesModalTiming from "useBountiesModalTiming" /* 14843 */;
+// Module 15107 (useBountyVideoProgressPersistence)
+import BountyActionCreators from "BountyActionCreators" /* 11155 */;
+import useBountiesModalTiming from "useBountiesModalTiming" /* 15104 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import BountyStore_mod from "BountyStore" /* 7199 */;
+import BountyStore_mod from "BountyStore" /* 7378 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let bountyId;
 
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 let BountyStore = BountyStore_mod;
 let ref = { timestampSec: 0, maxTimestampSec: 0, duration: 0 };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((bountyId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyVideoProgressPersistence(bountyId) {
   let endMode;
   let ref2;
   let ref3;
@@ -104,7 +102,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((bountyId) => {
   cResult[1] = endMode;
   cResult[2] = fn;
   tmp2 = fn;
-}) : ((bountyId) => {
+}) : (function useBountyVideoProgressPersistence(bountyId) {
   let items;
   let items1;
   let ref2;

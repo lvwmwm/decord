@@ -1,25 +1,25 @@
-// Module ID: 15611
-// Function ID: 15612
+// Module ID: 15891
+// Function ID: 15892
 // Name: DevToolsShopScreen
-// Dependencies: [19, 17, 4895, 21, 4896, 587, 558, 576, 6478, 504, 15462, 2036, 15584, 6000, 6706, 6705, 5600, 6081, 2]
+// Dependencies: [19, 17, 5089, 21, 5090, 587, 558, 576, 6656, 504, 15724, 2048, 15864, 6184, 6883, 6882, 5373, 6267, 2]
 
-// Module 15611 (DevToolsShopScreen)
+// Module 15891 (DevToolsShopScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import Stack_Stack from "Stack/Stack" /* 5600 */;
-import TableRow5 from "TableRow" /* 6000 */;
-import TableRowGroup2 from "TableRowGroup" /* 6081 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6478 */;
-import TableSwitchRow from "TableSwitchRow" /* 6705 */;
-import FormSwitch from "FormSwitch" /* 6706 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 15462 */;
+import dismissible_content from "dismissible_content" /* 2048 */;
+import Stack_Stack from "Stack/Stack" /* 5373 */;
+import TableRow5 from "TableRow" /* 6184 */;
+import TableRowGroup2 from "TableRowGroup" /* 6267 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6656 */;
+import TableSwitchRow from "TableSwitchRow" /* 6882 */;
+import FormSwitch from "FormSwitch" /* 6883 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 15724 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 4895 */;
+import DevSettingsStore from "DevSettingsStore" /* 5089 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ const ScrollView = react_native.ScrollView;
 let obj = { wrap: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: nativeDefault.space.PX_16 };
 let closure_7 = createStyles.createStyles(obj);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsShopScreen() {
   let first;
   let handleToggleDismissState;
   let isDismissed;
@@ -47,8 +47,6 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp20;
   let tmp27;
   let tmp28;
-  let tmp32;
-  let tmp33;
   let tmp7;
   let tmp8;
   let obj = react2;
@@ -64,7 +62,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const insets = useSafeAreaInsetsKeyboardAwareDefault(first).insets;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [DevSettingsStore];
-    const fn = function h() {
+    const fn = function u() {
       return DevSettingsStore.get("shop_disable_cache");
     };
     cResult[1] = items;
@@ -158,7 +156,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[12] !== stateFromStores) {
     const obj4 = { label: "Disable collectibles shop cache", subLabel: "shop_disable_cache", subLabelLineClamp: 1, trailing: hasOwnProperty(FormSwitch.FormSwitch, tmp30) };
-    const TableRow = tmp(6000).TableRow;
+    const TableRow = tmp(6184).TableRow;
     class R {
       constructor() {
         return DevSettingsStore.get("bypass_google_sku_sync");
@@ -174,41 +172,59 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp28 = cResult[13];
   }
   if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn3 = function k(arg0) {
-      const obj = require("DevSettingsActions");
-      return obj.toggle("shop_include_unpublished", arg0);
-    };
-    cResult[14] = fn3;
+    class D {
+      constructor(arg0) {
+        const obj = require("DevSettingsActions");
+        return obj.toggle("shop_include_unpublished", arg0);
+      }
+    }
+    cResult[14] = D;
     class R {
       constructor() {
         return DevSettingsStore.get("bypass_google_sku_sync");
       }
     }
   } else {
-    tmp32 = cResult[14];
+    class D {
+      constructor(arg0) {
+        const obj = require("DevSettingsActions");
+        return obj.toggle("shop_include_unpublished", arg0);
+      }
+    }
   }
   if (cResult[15] !== stateFromStores1) {
-    const obj5 = { label: "Show unpublished items in collectibles shop", subLabel: "shop_include_unpublished", subLabelLineClamp: 1, trailing: hasOwnProperty(FormSwitch.FormSwitch, tmp35) };
-    const TableRow2 = tmp(6000).TableRow;
+    class D {
+      constructor(arg0) {
+        const obj = require("DevSettingsActions");
+        return obj.toggle("shop_include_unpublished", arg0);
+      }
+    }
+    const obj5 = { label: "Show unpublished items in collectibles shop", subLabel: "shop_include_unpublished", subLabelLineClamp: 1, trailing: hasOwnProperty(FormSwitch.FormSwitch, tmp34) };
+    const TableRow2 = tmp(6184).TableRow;
     class R {
       constructor() {
         return DevSettingsStore.get("bypass_google_sku_sync");
       }
     }
-    tmp35[0] = stateFromStores1;
-    tmp35[1] = tmp32;
-    const tmp36 = hasOwnProperty(TableRow2, obj5);
+    tmp34[0] = stateFromStores1;
+    tmp34[1] = tmp32;
     cResult[15] = stateFromStores1;
-    cResult[16] = tmp36;
-    tmp33 = tmp36;
+    cResult[16] = hasOwnProperty(TableRow2, obj5);
+    const tmp35 = hasOwnProperty(TableRow2, obj5);
   } else {
-    tmp33 = cResult[16];
+    class D {
+      constructor(arg0) {
+        const obj = require("DevSettingsActions");
+        return obj.toggle("shop_include_unpublished", arg0);
+      }
+    }
   }
   if (cResult[17] === isDismissed) {
-    let tmp37;
-    let tmp41;
-    if (cResult[18] === handleToggleDismissState) {
-      tmp37 = cResult[19];
+    class D {
+      constructor(arg0) {
+        const obj = require("DevSettingsActions");
+        return obj.toggle("shop_include_unpublished", arg0);
+      }
     }
     const _Symbol = Symbol;
     class R {
@@ -217,21 +233,31 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     if (cResult[21] !== stateFromStores2) {
-      const obj6 = { label: "Show debug log overlay in collectibles shop", subLabel: "shop_show_debug_overlay", subLabelLineClamp: 1, trailing: hasOwnProperty(FormSwitch.FormSwitch, tmp43) };
-      const TableRow3 = tmp(6000).TableRow;
+      class D {
+        constructor(arg0) {
+          const obj = require("DevSettingsActions");
+          return obj.toggle("shop_include_unpublished", arg0);
+        }
+      }
+      const obj6 = { label: "Show debug log overlay in collectibles shop", subLabel: "shop_show_debug_overlay", subLabelLineClamp: 1, trailing: hasOwnProperty(FormSwitch.FormSwitch, tmp41) };
+      const TableRow3 = tmp(6184).TableRow;
       class R {
         constructor() {
           return DevSettingsStore.get("bypass_google_sku_sync");
         }
       }
-      tmp43[0] = stateFromStores2;
-      tmp43[1] = tmp40;
-      const tmp44 = hasOwnProperty(TableRow3, obj6);
+      tmp41[0] = stateFromStores2;
+      tmp41[1] = tmp39;
       cResult[21] = stateFromStores2;
-      cResult[22] = tmp44;
-      tmp41 = tmp44;
+      cResult[22] = hasOwnProperty(TableRow3, obj6);
+      const tmp42 = hasOwnProperty(TableRow3, obj6);
     } else {
-      tmp41 = cResult[22];
+      class D {
+        constructor(arg0) {
+          const obj = require("DevSettingsActions");
+          return obj.toggle("shop_include_unpublished", arg0);
+        }
+      }
     }
     const _Symbol2 = Symbol;
     if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
@@ -262,18 +288,18 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return obj.toggle("bypass_google_sku_sync", arg0);
         }
       }
-      const obj7 = { label: "[Android] Bypass Google SKU sync in collectibles shop", subLabel: "bypass_google_sku_sync", subLabelLineClamp: 1, trailing: hasOwnProperty(FormSwitch.FormSwitch, tmp47) };
-      const TableRow4 = tmp(6000).TableRow;
+      const obj7 = { label: "[Android] Bypass Google SKU sync in collectibles shop", subLabel: "bypass_google_sku_sync", subLabelLineClamp: 1, trailing: hasOwnProperty(FormSwitch.FormSwitch, tmp45) };
+      const TableRow4 = tmp(6184).TableRow;
       class R {
         constructor() {
           return DevSettingsStore.get("bypass_google_sku_sync");
         }
       }
-      tmp47[0] = stateFromStores3;
-      tmp47[1] = tmp45;
+      tmp45[0] = stateFromStores3;
+      tmp45[1] = tmp43;
       cResult[24] = stateFromStores3;
       cResult[25] = hasOwnProperty(TableRow4, obj7);
-      const tmp48 = hasOwnProperty(TableRow4, obj7);
+      const tmp46 = hasOwnProperty(TableRow4, obj7);
     } else {
       class P {
         constructor(arg0) {
@@ -291,23 +317,22 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     const obj8 = { spacing: 16, children: metroRequire(TableRowGroup2.TableRowGroup, obj9) };
-    const Stack = tmp(5600).Stack;
+    const Stack = tmp(5373).Stack;
     obj9 = { title: "Shop Toggles", hasIcons: false, children: items4 };
-    items4 = [tmp28, tmp33, tmp37, tmp41, tmp46];
+    items4 = [tmp28, tmp33, tmp36, tmp40, tmp44];
     cResult[26] = tmp28;
     cResult[27] = tmp33;
-    cResult[28] = tmp37;
-    cResult[29] = tmp41;
-    cResult[30] = tmp46;
+    cResult[28] = tmp36;
+    cResult[29] = tmp40;
+    cResult[30] = tmp44;
     cResult[31] = hasOwnProperty(Stack, obj8);
-    const tmp52 = hasOwnProperty(Stack, obj8);
+    const tmp50 = hasOwnProperty(Stack, obj8);
   }
-  const tmp38 = hasOwnProperty(TableSwitchRow.TableSwitchRow, { label: "Collectibles Marketing", subLabel: "COLLECTIBLES_SHOP_ENTRY_MARKETING", subLabelLineClamp: 1, value: isDismissed, onValueChange: handleToggleDismissState });
   cResult[17] = isDismissed;
   cResult[18] = handleToggleDismissState;
-  cResult[19] = tmp38;
-  tmp37 = tmp38;
-}) : (() => {
+  cResult[19] = hasOwnProperty(TableSwitchRow.TableSwitchRow, { label: "Collectibles Marketing", subLabel: "COLLECTIBLES_SHOP_ENTRY_MARKETING", subLabelLineClamp: 1, value: isDismissed, onValueChange: handleToggleDismissState });
+  const tmp37 = hasOwnProperty(TableSwitchRow.TableSwitchRow, { label: "Collectibles Marketing", subLabel: "COLLECTIBLES_SHOP_ENTRY_MARKETING", subLabelLineClamp: 1, value: isDismissed, onValueChange: handleToggleDismissState });
+}) : (function DevToolsShopScreen() {
   let Stack;
   let TableRowGroup;
   let handleToggleDismissState;

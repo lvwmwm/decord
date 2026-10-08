@@ -1,17 +1,17 @@
-// Module ID: 16665
-// Function ID: 16666
+// Module ID: 16927
+// Function ID: 16928
 // Name: ConjureSaveBackupSheet
-// Dependencies: [32, 19, 17, 12923, 21, 4896, 587, 558, 576, 16660, 4574, 1126, 3753, 4860, 6651, 16658, 4892, 6105, 5601, 5600, 6708, 2]
+// Dependencies: [32, 19, 17, 13072, 21, 5090, 587, 558, 576, 16922, 4766, 1126, 3827, 5054, 6828, 16920, 5086, 6283, 5375, 5373, 6885, 2]
 
-// Module 16665 (ConjureSaveBackupSheet)
+// Module 16927 (ConjureSaveBackupSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 12923 */;
-import conjureDatabaseLock from "conjureDatabaseLock" /* 16660 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13072 */;
+import conjureDatabaseLock from "conjureDatabaseLock" /* 16922 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,11 +22,11 @@ let react = react_mod;
 const View = react_native.View;
 let closure_6 = ConjureConnectionStore.createDatabaseRestorePoint;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-const ConjureSaveBackupSheet = "ConjureSaveBackupSheet";
+const ConjureSaveBackupSheet_str = "ConjureSaveBackupSheet";
 let obj = { content: obj2 };
 obj2 = { paddingBottom: nativeDefault.space.PX_16 };
 let closure_10 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSaveBackupSheet(projectId) {
   let intl;
   let items;
   let obj6;
@@ -211,7 +211,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       open(obj);
       closure_1_2();
       const obj2 = environment(onSaved[13]);
-      obj2.hideActionSheet(ConjureSaveBackupSheet);
+      obj2.hideActionSheet(ConjureSaveBackupSheet_str);
     }, () => {
       closure_1_4(false);
       closure_1_5(true);
@@ -223,7 +223,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   cResult[3] = projectId;
   cResult[4] = fn;
   tmp12 = fn;
-}) : ((projectId) => {
+}) : (function ConjureSaveBackupSheet(projectId) {
   let BottomSheetTitleHeader;
   let Stack;
   let _undefined;
@@ -280,7 +280,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       open(obj);
       closure_1_2();
       const obj2 = environment(onSaved[13]);
-      obj2.hideActionSheet(ConjureSaveBackupSheet);
+      obj2.hideActionSheet(ConjureSaveBackupSheet_str);
     }, () => {
       _undefined(false);
       closure_1_5(true);

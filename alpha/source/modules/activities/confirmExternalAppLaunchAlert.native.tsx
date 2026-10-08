@@ -1,22 +1,22 @@
-// Module ID: 9042
-// Function ID: 9043
+// Module ID: 10655
+// Function ID: 10656
 // Name: confirmExternalAppLaunchAlert
-// Dependencies: [19, 17, 2011, 21, 4896, 558, 576, 9043, 1126, 4892, 4571, 5601, 5714, 2]
+// Dependencies: [19, 17, 2023, 21, 5090, 558, 576, 10656, 1126, 5086, 4763, 5375, 5297, 2]
 // Exports: confirmExternalAppLaunchAlert
 
-// Module 9042 (confirmExternalAppLaunchAlert)
+// Module 10655 (confirmExternalAppLaunchAlert)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import Constants from "Constants" /* 2011 */;
-import LinkingDefault from "Linking" /* 4571 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5714 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9043 */;
+import Constants from "Constants" /* 2023 */;
+import LinkingDefault from "Linking" /* 4763 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5297 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10656 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ const PRIVATE_APPS_HELP_ARTICLE = Constants.PRIVATE_APPS_HELP_ARTICLE;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ alertContainer: { display: "flex", alignItems: "center", padding: 8 }, alertEyebrowText: { marginTop: 40, textAlign: "center" }, alertTitleText: { marginTop: 16, textAlign: "center" }, alertSubtitleText: { marginTop: 16, textAlign: "center" }, announcementBirb: { width: 90, height: 100, position: "absolute", top: -66 }, linkWrapper: { marginTop: 8 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((application) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmActivityGateContent(application) {
   let items;
   let tmp10;
   let tmp12;
@@ -133,7 +133,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((application) =>
   cResult[8] = tmp15;
   cResult[9] = tmp18;
   tmp17 = tmp18;
-}) : ((application) => {
+}) : (function ConfirmActivityGateContent(application) {
   let intl;
   let intl2;
   let intl3;
@@ -161,7 +161,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((application) =>
   return metroImportDefault(React3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkButton() {
   let first;
   let intl;
   let tmp6;
@@ -170,18 +170,18 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(4);
   const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t() {
+    function handlePress() {
       const obj = LinkingDefault;
       obj.openURL(PRIVATE_APPS_HELP_ARTICLE);
-    };
-    cResult[0] = fn;
-    first = fn;
+    }
+    cResult[0] = handlePress;
+    first = handlePress;
   } else {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "secondary", size: "sm", onPress: first, text: intl.string(intl4.t.E0gf5l) };
-    const Button = tmp(5601).Button;
+    const Button = tmp(5375).Button;
     intl = tmp(1126).intl;
     const tmp8 = metroRequire(Button, obj2);
     cResult[1] = tmp8;
@@ -199,7 +199,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = cResult[3];
   }
   return tmp9;
-}) : (() => {
+}) : (function LinkButton() {
   let Button;
   let intl;
   let obj2;
@@ -207,7 +207,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj2 = {
     variant: "secondary",
     size: "sm",
-    onPress() {
+    onPress: function handlePress() {
       const obj = LinkingDefault;
       obj.openURL(PRIVATE_APPS_HELP_ARTICLE);
     },

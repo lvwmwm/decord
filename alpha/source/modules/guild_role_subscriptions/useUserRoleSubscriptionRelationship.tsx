@@ -1,25 +1,25 @@
-// Module ID: 15039
-// Function ID: 15040
+// Module ID: 15301
+// Function ID: 15302
 // Name: useUserRoleSubscriptionRelationship
-// Dependencies: [5646, 15038, 558, 576, 504, 2]
+// Dependencies: [5993, 15300, 558, 576, 504, 2]
 // Exports: getUserRoleSubscriptionRelationship
 
-// Module 15039 (useUserRoleSubscriptionRelationship)
+// Module 15301 (useUserRoleSubscriptionRelationship)
 import react from "react" /* 576 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15038 */;
-import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5646 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15300 */;
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5993 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-const f119568 = (item) => {
+const f120648 = (item) => {
   if (userSubscriptionRoles.getUserSubscriptionRoles(item).size > 0) {
     c1 = true;
   }
 };
 const constants = GuildRoleSubscriptionsConstants.UserGuildRoleSubscriptionRelationship;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserRoleSubscriptionRelationship() {
   let tmp4;
   let tmp5;
   let tmp2 = dependencyMap;
@@ -34,7 +34,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       [obj] = items;
       const guildIdsWithPurchasableRoles = obj.getGuildIdsWithPurchasableRoles();
       let c1 = false;
-      const item = guildIdsWithPurchasableRoles.forEach(f119568);
+      const item = guildIdsWithPurchasableRoles.forEach(f120648);
       const tmp2 = c1;
       if (tmp2) {
         IN_SUBSCRIPTION_SERVER = constants.SUBSCRIBED;
@@ -54,7 +54,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useUserRoleSubscriptionRelationship() {
   const obj = get_initialized;
   let items = [SubscriptionRoleStore];
   return obj.useStateFromStores(items, () => {
@@ -64,7 +64,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     [obj] = items;
     const guildIdsWithPurchasableRoles = obj.getGuildIdsWithPurchasableRoles();
     let c1 = false;
-    const item = guildIdsWithPurchasableRoles.forEach(f119568);
+    const item = guildIdsWithPurchasableRoles.forEach(f120648);
     const tmp2 = c1;
     if (tmp2) {
       IN_SUBSCRIPTION_SERVER = constants.SUBSCRIBED;
@@ -87,7 +87,7 @@ function getUserRoleSubscriptionRelationship() {
   [obj] = tmp;
   const guildIdsWithPurchasableRoles = obj.getGuildIdsWithPurchasableRoles();
   let c1 = false;
-  const item = guildIdsWithPurchasableRoles.forEach(f119568);
+  const item = guildIdsWithPurchasableRoles.forEach(f120648);
   const tmp4 = c1;
   if (tmp4) {
     IN_SUBSCRIPTION_SERVER = constants.SUBSCRIBED;

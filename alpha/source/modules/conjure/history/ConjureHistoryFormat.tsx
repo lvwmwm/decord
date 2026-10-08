@@ -1,13 +1,13 @@
-// Module ID: 16658
-// Function ID: 16659
+// Module ID: 16920
+// Function ID: 16921
 // Name: ConjureHistoryFormat
-// Dependencies: [5132, 1126, 3753, 2]
+// Dependencies: [5444, 1126, 3827, 2]
 // Exports: backupRow, formatAuthoredAt, formatHistoryDateTime, formatHistoryTime, groupHistoryByDay, historyDatabaseTitle, historyEnvironmentLabel, historyPreviewSha, historyRewindCopy, matchingPreviewBackup, parseTimestampMs, versionTitle, visibleBackups
 
-// Module 16658 (ConjureHistoryFormat)
+// Module 16920 (ConjureHistoryFormat)
 import intl8 from "intl" /* 1126 */;
-import _modDef3753 from "module_3753" /* 3753 */;
-import getTimestampString from "getTimestampString" /* 5132 */;
+import _modDef3827 from "module_3827" /* 3827 */;
+import getTimestampString from "getTimestampString" /* 5444 */;
 import size from "module_2" /* 2 */;
 
 function startOfDayMs(arg0) {
@@ -24,7 +24,7 @@ function formatHistoryDay(arg0, nowMs) {
   const time1 = date1.getTime();
   if (time === time1) {
     const intl2 = intl8.intl;
-    return intl2.string(_modDef3753.CADyoV);
+    return intl2.string(_modDef3827.CADyoV);
   } else {
     const _Date = Date;
     const self = this;
@@ -33,7 +33,7 @@ function formatHistoryDay(arg0, nowMs) {
     date2.setDate(date2.getDate() - 1);
     if (time === date2.getTime()) {
       const intl = intl8.intl;
-      return intl.string(_modDef3753.mghe4b);
+      return intl.string(_modDef3827.mghe4b);
     } else {
       const _Date2 = Date;
       const self3 = this;
@@ -61,18 +61,18 @@ function backupTitle(origin) {
     let stringResult;
     if ("stable" === origin.deployEnvironment) {
       const intl6 = intl8.intl;
-      stringResult = intl6.string(_modDef3753["4TpI2y"]);
+      stringResult = intl6.string(_modDef3827["4TpI2y"]);
     } else if ("preview" === origin.deployEnvironment) {
       const intl5 = intl8.intl;
-      stringResult = intl5.string(_modDef3753.NdyxPu);
+      stringResult = intl5.string(_modDef3827.NdyxPu);
     } else {
       const intl4 = intl8.intl;
-      stringResult = intl4.string(_modDef3753["4JCH6A"]);
+      stringResult = intl4.string(_modDef3827["4JCH6A"]);
     }
     return stringResult;
   } else if ("undo" === origin) {
     const intl3 = intl8.intl;
-    return intl3.string(_modDef3753.VjJT5R);
+    return intl3.string(_modDef3827.VjJT5R);
   } else {
     const str4 = origin.label;
     const trimmed = str4.trim();
@@ -81,12 +81,12 @@ function backupTitle(origin) {
       if ("Manual restore point" !== trimmed) {
         const intl = intl8.intl;
         const obj = { label: trimmed };
-        formatToPlainStringResult = intl.formatToPlainString(_modDef3753["UKyQ+E"], obj);
+        formatToPlainStringResult = intl.formatToPlainString(_modDef3827["UKyQ+E"], obj);
       }
       return formatToPlainStringResult;
     }
     const intl2 = intl8.intl;
-    formatToPlainStringResult = intl2.string(_modDef3753.ObcM6b);
+    formatToPlainStringResult = intl2.string(_modDef3827.ObcM6b);
   }
 }
 const result = size.fileFinishedImporting("modules/conjure/history/ConjureHistoryFormat.tsx");
@@ -199,13 +199,13 @@ export const versionTitle = function versionTitle(subject, arg1) {
         }
       }
       const intl = intl8.intl;
-      const stringResult = intl.string(_modDef3753.Vk8vB1);
+      const stringResult = intl.string(_modDef3827.Vk8vB1);
       obj = { short: stringResult, full: stringResult };
       const obj2 = { short: stringResult, full: stringResult };
     }
     let tmp8 = obj;
     if (flag) {
-      const obj3 = { short: intl3.formatToPlainString(_modDef3753.Z4n6LX, obj4), full: intl4.formatToPlainString(_modDef3753.Z4n6LX, obj5) };
+      const obj3 = { short: intl3.formatToPlainString(_modDef3827.Z4n6LX, obj4), full: intl4.formatToPlainString(_modDef3827.Z4n6LX, obj5) };
       intl3 = intl8.intl;
       obj4 = { title: obj.short };
       intl4 = intl8.intl;
@@ -215,7 +215,7 @@ export const versionTitle = function versionTitle(subject, arg1) {
     return tmp8;
   }
   const intl2 = intl8.intl;
-  const stringResult1 = intl2.string(_modDef3753.sFC5fT);
+  const stringResult1 = intl2.string(_modDef3827.sFC5fT);
   obj = { short: stringResult1, full: stringResult1 };
 };
 export const historyEnvironmentLabel = function historyEnvironmentLabel(environment) {
@@ -223,9 +223,9 @@ export const historyEnvironmentLabel = function historyEnvironmentLabel(environm
   const intl = intl8.intl;
   const string = intl.string;
   if ("preview" === environment) {
-    S65Rv3 = _modDef3753.Ebk40C;
+    S65Rv3 = _modDef3827.Ebk40C;
   } else {
-    S65Rv3 = _modDef3753.S65Rv3;
+    S65Rv3 = _modDef3827.S65Rv3;
   }
   return string(S65Rv3);
 };
@@ -235,13 +235,13 @@ export const historyDatabaseTitle = function historyDatabaseTitle(environment, s
   const string = intl.string;
   const tmp2 = sharedDatabase;
   if (tmp2) {
-    stringResult = string(_modDef3753.h3WBgO);
+    stringResult = string(_modDef3827.h3WBgO);
   } else {
     let yLsAhA;
     if ("preview" === environment) {
-      yLsAhA = _modDef3753.cjJdqL;
+      yLsAhA = _modDef3827.cjJdqL;
     } else {
-      yLsAhA = _modDef3753.yLsAhA;
+      yLsAhA = _modDef3827.yLsAhA;
     }
     stringResult = string(yLsAhA);
   }
@@ -299,7 +299,7 @@ export const backupRow = function backupRow(createdAt, restoreToMs) {
   if (null != value) {
     const intl = intl8.intl;
     const obj2 = { title: value };
-    formatToPlainStringResult = intl.formatToPlainString(_modDef3753.V7YNvf, obj2);
+    formatToPlainStringResult = intl.formatToPlainString(_modDef3827.V7YNvf, obj2);
   }
   items[1] = formatToPlainStringResult;
   found = items.filter((item) => null != item);
@@ -319,7 +319,7 @@ export const historyRewindCopy = function historyRewindCopy(arg0, arg1) {
   const date = new Date(arg1);
   const toLocaleStringResult = date.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" });
   if ("stable" === arg0) {
-    const obj = { title: intl2.string(_modDef3753.G9wD92), body: intl3.formatToPlainString(_modDef3753.vyxJO8, obj2), confirmText: intl4.string(_modDef3753.kap49k), critical: true };
+    const obj = { title: intl2.string(_modDef3827.G9wD92), body: intl3.formatToPlainString(_modDef3827.vyxJO8, obj2), confirmText: intl4.string(_modDef3827.kap49k), critical: true };
     intl2 = intl8.intl;
     intl3 = intl8.intl;
     obj2 = { time: toLocaleStringResult };
@@ -327,18 +327,18 @@ export const historyRewindCopy = function historyRewindCopy(arg0, arg1) {
     obj3 = obj;
   } else {
     let S65Rv3;
-    obj3 = { title: intl5.string(_modDef3753.rR8rgj), body: formatToPlainString(KfgzUO, obj4), confirmText: intl.string(_modDef3753.XfeFw5), critical: false };
+    obj3 = { title: intl5.string(_modDef3827.rR8rgj), body: formatToPlainString(KfgzUO, obj4), confirmText: intl.string(_modDef3827.XfeFw5), critical: false };
     intl5 = intl8.intl;
     const intl6 = intl8.intl;
     formatToPlainString = intl6.formatToPlainString;
-    KfgzUO = _modDef3753.KfgzUO;
+    KfgzUO = _modDef3827.KfgzUO;
     const intl7 = intl8.intl;
     const string = intl7.string;
     const tmp5 = require;
     if ("preview" === arg0) {
-      S65Rv3 = tmp7(3753).Ebk40C;
+      S65Rv3 = tmp7(3827).Ebk40C;
     } else {
-      S65Rv3 = tmp7(3753).S65Rv3;
+      S65Rv3 = tmp7(3827).S65Rv3;
     }
     obj4 = { environment: string(S65Rv3), time: toLocaleStringResult };
     intl = tmp5(1126).intl;

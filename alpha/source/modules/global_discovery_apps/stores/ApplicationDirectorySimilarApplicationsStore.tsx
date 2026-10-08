@@ -1,12 +1,12 @@
-// Module ID: 11702
-// Function ID: 11703
+// Module ID: 11767
+// Function ID: 11768
 // Name: ApplicationDirectorySimilarApplicationsStore
-// Dependencies: [1444, 504, 584, 2]
+// Dependencies: [1456, 504, 584, 2]
 
-// Module 11702 (ApplicationDirectorySimilarApplicationsStore)
+// Module 11767 (ApplicationDirectorySimilarApplicationsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import LRUCacheDefault from "LRUCache" /* 1444 */;
+import LRUCacheDefault from "LRUCache" /* 1456 */;
 import size from "module_2" /* 2 */;
 
 let obj = { NOT_FETCHED: 0, [0]: "NOT_FETCHED", FETCHING: 1, [1]: "FETCHING", FETCHED: 2, [2]: "FETCHED", ERROR: 3, [3]: "ERROR" };

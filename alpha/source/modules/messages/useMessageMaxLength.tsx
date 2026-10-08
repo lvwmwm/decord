@@ -1,13 +1,13 @@
-// Module ID: 8839
-// Function ID: 8840
+// Module ID: 9198
+// Function ID: 9199
 // Name: useMessageMaxLength
-// Dependencies: [1377, 1085, 4534, 558, 576, 504, 2]
+// Dependencies: [1389, 1085, 4726, 558, 576, 504, 2]
 // Exports: getMaxMessageLength
 
-// Module 8839 (useMessageMaxLength)
+// Module 9198 (useMessageMaxLength)
 import react from "react" /* 576 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4534 */;
-import UserStore from "UserStore" /* 1377 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4726 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ let hasOwnProperty;
 let tmp;
 const get_initialized = tmp(504);
 ({ MAX_MESSAGE_LENGTH_PREMIUM: closure_4, MAX_MESSAGE_LENGTH: hasOwnProperty } = Constants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageMaxLength() {
   let currentUser;
   let tmp4;
   let tmp5;
@@ -38,7 +38,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useMessageMaxLength() {
   let currentUser;
   let obj = get_initialized;
   const items = [UserStore];

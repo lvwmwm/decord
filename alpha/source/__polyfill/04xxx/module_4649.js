@@ -1,89 +1,31 @@
 // Module ID: 4649
 // Function ID: 4650
-// Dependencies: [32, 19, 4650]
-// Exports: useRiveProperty
+// Dependencies: []
 
 // Module 4649
-import react2 from "react" /* 4650 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
-
-let c3;
-let closure_4;
-let hasOwnProperty;
-let metroRequire;
-({ useCallback: c3, useEffect: closure_4, useRef: hasOwnProperty, useState: metroRequire } = react);
-
-export const useRiveProperty = function useRiveProperty(arg0, arg1, f31263) {
-  let closure_7;
-  let first;
-  let first1;
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  let closure_2 = f31263;
-  let tmp = hasOwnProperty(undefined);
-  let c3 = tmp;
-  const items = [arg0, arg1];
-  const obj = react2;
-  const disposableMemo = obj.useDisposableMemo(() => {
-    if (closure_0) {
-      return closure_2(tmp, closure_1);
-    }
-  }, (dispose) => {
-    let disposeResult;
-    if (dispose != null) {
-      disposeResult = dispose.dispose();
-    }
-    return disposeResult;
-  }, items, tmp);
-  [first, metroRequire] = metroRequire(undefined);
-  [first1, closure_7] = metroRequire(null);
-  const items1 = [arg1, arg0];
-  React3(() => {
-    closure_7(null);
-  }, items1);
-  const items2 = [arg0, disposableMemo, arg1];
-  React3(function() {
-    const tmp = closure_0 && !disposableMemo;
-    if (tmp) {
-      const _Error = Error;
-      const _HermesInternal = HermesInternal;
-      const self = this;
-      const self2 = this;
-      const error = new Error("Property \"" + closure_1 + "\" not found in the ViewModel instance");
-      closure_7(error);
-    }
-  }, items2);
-  const items3 = [disposableMemo];
-  React3(() => {
-    if (disposableMemo) {
-      closure_6(iter.value);
-      closure_0 = iter.addListener((arg0) => {
-        closure_1_6(arg0);
-      });
-      return () => {
-        try {
-          closure_0();
-        } catch (err) {
-        }
-      };
-    }
-  }, items3);
-  const items4 = [disposableMemo, first];
-  const items5 = [
-    first,
-    _false((fn) => {
-      const current = ref.current;
-      if (current) {
-        let tmp2 = fn;
-        if (typeof fn === "function") {
-          tmp2 = fn(first);
-        }
-        current.value = tmp2;
-      }
-    }, items4),
-    first1,
-    disposableMemo
-  ];
-  return items5;
-};
+let obj3;
+let obj4;
+let obj5;
+let obj6;
+let obj7;
+if (Intl.ListFormat) {
+  const _Intl = Intl;
+  if (typeof Intl.ListFormat.__addLocaleData === "function") {
+    const _Intl2 = Intl;
+    const obj2 = { data: obj3, locale: "sv" };
+    obj3 = { conjunction: obj4, disjunction: obj5, unit: obj6 };
+    obj4 = { long: { end: "{0} och {1}", middle: "{0}, {1}", pair: "{0} och {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} och {1}", middle: "{0}, {1}", pair: "{0} och {1}", start: "{0}, {1}" } };
+    obj5 = { long: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" }, narrow: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" }, short: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" } };
+    obj6 = { long: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } };
+    ListFormat.__addLocaleData(obj2);
+  }
+}
+let prop = globalThis.__FORMATJS_LISTFORMAT_DATA__;
+const _globalThis = globalThis;
+if (!prop) {
+  prop = [];
+}
+_globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
+const obj = { data: obj7, locale: "sv" };
+obj7 = { conjunction: { long: { end: "{0} och {1}", middle: "{0}, {1}", pair: "{0} och {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} och {1}", middle: "{0}, {1}", pair: "{0} och {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" }, narrow: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" }, short: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } } };
+prop.push(obj);

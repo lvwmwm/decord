@@ -1,11 +1,11 @@
-// Module ID: 4571
-// Function ID: 4572
+// Module ID: 4763
+// Function ID: 4764
 // Name: Linking
-// Dependencies: [17, 4566, 2]
+// Dependencies: [17, 4758, 2]
 
-// Module 4571 (Linking)
+// Module 4763 (Linking)
 import react_native from "react-native" /* 17 */;
-import handleURL from "handleURL" /* 4566 */;
+import handleURL from "handleURL" /* 4758 */;
 import size from "module_2" /* 2 */;
 
 const Linking = react_native.Linking;

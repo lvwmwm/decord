@@ -1,15 +1,15 @@
-// Module ID: 12062
-// Function ID: 12063
+// Module ID: 12135
+// Function ID: 12136
 // Name: DescriptionEllipsis
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 2]
 
-// Module 12062 (DescriptionEllipsis)
+// Module 12135 (DescriptionEllipsis)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ size = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, justifyCo
 createStyles = createStyles.createStyles;
 size1 = { backgroundColor: nativeDefault.colors.TEXT_MUTED, borderRadius: 2, margin: 1, height: 4, width: 4 };
 let closure_5 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DescriptionEllipsis(arg0) {
   let dotStyle;
   let items;
   let items1;
@@ -106,7 +106,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp2.topicEllipsis;
   cResult[2] = items4;
   tmp3 = items4;
-}) : ((dotStyle) => {
+}) : (function DescriptionEllipsis(dotStyle) {
   let items;
   let items1;
   let items2;

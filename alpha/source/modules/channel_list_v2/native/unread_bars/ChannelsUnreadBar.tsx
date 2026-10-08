@@ -1,22 +1,22 @@
-// Module ID: 16146
-// Function ID: 16147
+// Module ID: 16406
+// Function ID: 16407
 // Name: ChannelsUnreadBar
-// Dependencies: [32, 19, 17, 11711, 1085, 21, 4618, 4896, 587, 1369, 558, 576, 7519, 5609, 10736, 5076, 14917, 5604, 5605, 5881, 15643, 15641, 1126, 4892, 2]
+// Dependencies: [32, 19, 17, 11776, 1085, 21, 4810, 5090, 587, 1381, 558, 576, 9242, 5382, 10490, 5105, 15179, 5374, 5378, 8193, 15923, 15921, 1126, 5086, 2]
 
-// Module 16146 (ChannelsUnreadBar)
+// Module 16406 (ChannelsUnreadBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4618 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5076 */;
-import spring from "spring" /* 5604 */;
-import springPresets from "springPresets" /* 5605 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4810 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5105 */;
+import spring from "spring" /* 5374 */;
+import springPresets from "springPresets" /* 5378 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11711 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11776 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ let closure_12 = createStyles.createStyles((arg0, arg1) => {
 let c13 = "text-xs/bold";
 let closure_14 = { code: "function ChannelsUnreadBarTsx1(){const{shown,position,scrollPosition,listPaddingTop,searchBarHeight,justReachedEnd,runOnJS,resetReachedEnd,height,MARGIN,guildChannelsListUnreadBarInsetEnd,width,withSpring,springStandard,interpolate,pressed,ON_PRESS_SPRING}=this.__closure;const animatedShown=shown&&(position===\"top\"?scrollPosition!=null&&listPaddingTop!=null&&scrollPosition.get()>listPaddingTop+searchBarHeight:!justReachedEnd);if(justReachedEnd){runOnJS(resetReachedEnd)();}const offsetBase=height.get()-MARGIN;const value=animatedShown?position===\"bottom\"&&guildChannelsListUnreadBarInsetEnd!=null?-guildChannelsListUnreadBarInsetEnd.get():0:offsetBase*(position===\"bottom\"?1:-1);const opacity=animatedShown?1:0;const scale=width.get()>0?(width.get()+5)/width.get():1;return{opacity:withSpring(opacity,springStandard,\"animate-always\"),transform:[{translateY:withSpring(value,springStandard)},{translateX:width.get()/2},{scale:withSpring(interpolate(pressed.get(),[0,1],[1,scale]),ON_PRESS_SPRING)}]};}" };
 let __initData = { code: "function ChannelsUnreadBarTsx2(){const{shown,position,scrollPosition,listPaddingTop,searchBarHeight,justReachedEnd,runOnJS,resetReachedEnd,height,MARGIN,guildChannelsListUnreadBarInsetEnd,width,withSpring,springStandard,interpolate,pressed,ON_PRESS_SPRING}=this.__closure;const animatedShown=shown&&(position==='top'?scrollPosition!=null&&listPaddingTop!=null&&scrollPosition.get()>listPaddingTop+searchBarHeight:!justReachedEnd);if(justReachedEnd){runOnJS(resetReachedEnd)();}const offsetBase=height.get()-MARGIN;const value=animatedShown?position==='bottom'&&guildChannelsListUnreadBarInsetEnd!=null?-guildChannelsListUnreadBarInsetEnd.get():0:offsetBase*(position==='bottom'?1:-1);const opacity=animatedShown?1:0;const scale=width.get()>0?(width.get()+5)/width.get():1;return{opacity:withSpring(opacity,springStandard,'animate-always'),transform:[{translateY:withSpring(value,springStandard)},{translateX:width.get()/2},{scale:withSpring(interpolate(pressed.get(),[0,1],[1,scale]),ON_PRESS_SPRING)}]};}" };
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((position) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelsUnreadBar(position) {
   let closure_4;
   let onPress;
   let tmp6;
@@ -186,7 +186,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((p
   cResult[3] = sharedValue1;
   cResult[4] = sharedValue;
   cResult[5] = D;
-}) : ((position) => {
+}) : (function ChannelsUnreadBar(position) {
   let ArrowSmallUpIcon;
   let MOBILE_UNREADBAR_TEXT_DEFAULT;
   let closure_15;

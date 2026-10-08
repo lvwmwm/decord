@@ -1,12 +1,12 @@
-// Module ID: 11167
-// Function ID: 11168
+// Module ID: 9315
+// Function ID: 9316
 // Name: ChatManager
-// Dependencies: [7603, 11168, 1342, 2]
+// Dependencies: [7720, 9316, 1354, 2]
 
-// Module 11167 (ChatManager)
-import _modDef1342 from "module_1342" /* 1342 */;
-import getEmbeddedActivityKeyDefault from "getEmbeddedActivityKey" /* 11168 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 7603 */;
+// Module 9315 (ChatManager)
+import _modDef1354 from "module_1354" /* 1354 */;
+import getEmbeddedActivityKeyDefault from "getEmbeddedActivityKey" /* 9316 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 7720 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -186,7 +186,7 @@ class ChatManager {
               hasItem = updateMessageIds.has(message.id);
             }
             if (!hasItem) {
-              INSERT = _modDef1342(tmp, message) ? tmp5.NOOP : tmp5.UPDATE;
+              INSERT = _modDef1354(tmp, message) ? tmp5.NOOP : tmp5.UPDATE;
             }
           }
           INSERT = constants.UPDATE;

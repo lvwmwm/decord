@@ -1,22 +1,22 @@
-// Module ID: 9496
-// Function ID: 9497
+// Module ID: 8660
+// Function ID: 8661
 // Name: InstantInviteUtils
-// Dependencies: [2050, 2051, 2112, 4911, 4525, 1377, 6733, 1085, 7239, 5628, 9497, 1126, 2]
+// Dependencies: [2062, 2063, 2124, 6040, 4717, 1389, 6909, 1085, 7418, 5975, 8661, 1126, 2]
 // Exports: generateRowsForQuery, getMostRecentDMedUser, getUsersAlreadyJoined, groupInviteSuggestions, maxAgeString, urgentShareMessageString
 
-// Module 9496 (InstantInviteUtils)
+// Module 8660 (InstantInviteUtils)
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5628 */;
-import Constants2 from "Constants" /* 7239 */;
-import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 9497 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import ReadStateStore from "ReadStateStore" /* 4911 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6733 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5975 */;
+import Constants2 from "Constants" /* 7418 */;
+import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 8661 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6909 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -113,8 +113,11 @@ let obj2 = {
   getMaxAgeOptionByValue(maxAge) {
     let closure_0 = maxAge;
     items = [...items];
-    const tmp = items.find((value) => value.value === closure_0) || null;
-    return tmp;
+    let found = items.find((value) => value.value === closure_0);
+    if (found == null) {
+      found = null;
+    }
+    return found;
   },
   getMaxAgeOptions(arg0) {
     let closure_0;
@@ -367,7 +370,7 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
       if (obj10.inviteTargetType === tmp40.EMBEDDED_APPLICATION) {
         let tmp3 = dependencyMap;
         let obj2 = AutocompleteUtilsDefault;
-        const obj12 = { query: tmp44, limit: 3, guildId: "__initData" };
+        const obj12 = { query: tmp44, limit: 3, guildId: "apply" };
         const queryChannelsResult = obj2.queryChannels(obj12);
         let item = queryChannelsResult.forEach((record) => {
           obj = { type: obj.CHANNEL, item: record.record, isSuggested: false, score: record.score };

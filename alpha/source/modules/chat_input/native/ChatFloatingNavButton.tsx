@@ -1,17 +1,17 @@
-// Module ID: 11911
-// Function ID: 11912
+// Module ID: 11984
+// Function ID: 11985
 // Name: ChatFloatingNavButton
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4618, 4586, 5604, 5605, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 4810, 4778, 5374, 5378, 2]
 
-// Module 11911 (ChatFloatingNavButton)
+// Module 11984 (ChatFloatingNavButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import spring from "spring" /* 5604 */;
-import springPresets from "springPresets" /* 5605 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import spring from "spring" /* 5374 */;
+import springPresets from "springPresets" /* 5378 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ size1 = { width: nativeDefault.modules.mobile.JUMP_TO_PRESENT_ICON_SIZE, height:
 let closure_7 = createStyles(obj);
 const __initData = { code: "function ChatFloatingNavButtonTsx1(){const{withSpring,interpolateColor,pressed,bgColor,pressedBgColor,ON_PRESS_SPRING}=this.__closure;return{backgroundColor:withSpring(interpolateColor(pressed.get(),[0,1],[bgColor,pressedBgColor]),ON_PRESS_SPRING,\"animate-always\")};}" };
 const __initData2 = { code: "function ChatFloatingNavButtonTsx2(){const{withSpring,interpolateColor,pressed,bgColor,pressedBgColor,ON_PRESS_SPRING}=this.__closure;return{backgroundColor:withSpring(interpolateColor(pressed.get(),[0,1],[bgColor,pressedBgColor]),ON_PRESS_SPRING,'animate-always')};}" };
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatFloatingNavButton(arg0) {
   let accessibilityLabel;
   let icon;
   let onPress;
@@ -83,28 +83,28 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   if (cResult[2] !== sharedValue) {
-    class I {
+    class E {
       constructor() {
         const result = sharedValue.set(0);
       }
     }
     cResult[2] = sharedValue;
-    cResult[3] = I;
+    cResult[3] = E;
   } else {
-    class I {
+    class E {
       constructor() {
         const result = sharedValue.set(0);
       }
     }
   }
   if (cResult[4] === animatedStyle) {
-    class I {
+    class E {
       constructor() {
         const result = sharedValue.set(0);
       }
     }
     if (cResult[7] !== token2) {
-      class I {
+      class E {
         constructor() {
           const result = sharedValue.set(0);
         }
@@ -113,32 +113,32 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[7] = token2;
       cResult[8] = tmp14;
     } else {
-      class I {
+      class E {
         constructor() {
           const result = sharedValue.set(0);
         }
       }
     }
     if (cResult[9] === tmp3.icon) {
-      class I {
+      class E {
         constructor() {
           const result = sharedValue.set(0);
         }
       }
       if (cResult[12] === icon) {
-        class I {
+        class E {
           constructor() {
             const result = sharedValue.set(0);
           }
         }
         if (cResult[15] === tmp12) {
-          class I {
+          class E {
             constructor() {
               const result = sharedValue.set(0);
             }
           }
           if (cResult[18] === accessibilityLabel) {
-            class I {
+            class E {
               constructor() {
                 const result = sharedValue.set(0);
               }
@@ -171,7 +171,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = animatedStyle;
   cResult[5] = tmp3.pill;
   cResult[6] = items1;
-}) : ((arg0) => {
+}) : (function ChatFloatingNavButton(arg0) {
   let accessibilityLabel;
   let icon;
   let onPress;

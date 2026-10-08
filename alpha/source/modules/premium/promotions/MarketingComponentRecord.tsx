@@ -1,22 +1,23 @@
-// Module ID: 10411
-// Function ID: 10412
+// Module ID: 10008
+// Function ID: 10009
 // Name: MarketingComponentRecord
-// Dependencies: [1392, 1234, 10412, 1102, 1251, 2]
+// Dependencies: [1404, 1102, 1246, 10009, 1263, 2]
 
-// Module 10411 (MarketingComponentRecord)
+// Module 10008 (MarketingComponentRecord)
 import DurationsDefault from "Durations" /* 1102 */;
-import ProtoUtils from "ProtoUtils" /* 1234 */;
-import _modDef1251 from "module_1251" /* 1251 */;
-import premium_marketing_component_properties from "premium_marketing_component_properties" /* 10412 */;
-import Record from "Record" /* 1392 */;
+import ProtoUtils from "ProtoUtils" /* 1246 */;
+import _modDef1263 from "module_1263" /* 1263 */;
+import premium_marketing_component_properties from "premium_marketing_component_properties" /* 10009 */;
+import Record from "Record" /* 1404 */;
 import size from "module_2" /* 2 */;
 
 let startDate;
 
+let closure_3 = { month: "long", day: "numeric", year: "numeric" };
 class MarketingComponentRecord extends Record {
   constructor(arg0) {
     const tmp = new MarketingComponentRecord(new.target, this);
-    ({ id: tmp.id, componentType: tmp.componentType, properties: tmp.properties, promotionId: tmp.promotionId, startDate: tmp.startDate, endDate: tmp.endDate, effectiveStartDate: tmp.effectiveStartDate, effectiveEndDate: tmp.effectiveEndDate } = arg0);
+    ({ id: tmp.id, componentType: tmp.componentType, properties: tmp.properties, promotionId: tmp.promotionId, startDate: tmp.startDate, endDate: tmp.endDate, effectiveStartDate: tmp.effectiveStartDate, effectiveEndDate: tmp.effectiveEndDate, promotionEndDate: tmp.promotionEndDate } = arg0);
     return tmp;
   }
   static createFromServer(start_date, startDate) {
@@ -51,34 +52,58 @@ class MarketingComponentRecord extends Record {
       endDate = null;
     }
     ({ id, component_type } = start_date);
-    const tmp10 = ProtoUtils;
-    const b64ToProto = tmp10.b64ToProto;
-    const b64ToProtoResult = b64ToProto(premium_marketing_component_properties.PremiumMarketingComponentProperties, start_date.properties);
+    const obj = ProtoUtils;
+    const b64ToProtoResult = obj.b64ToProto(premium_marketing_component_properties.PremiumMarketingComponentProperties, start_date.properties);
     const promotion_id = start_date.promotion_id;
-    let tmp12 = date;
+    let tmp11 = date;
     if (date == null) {
-      tmp12 = startDate;
+      tmp11 = startDate;
     }
-    let tmp13 = date1;
+    let tmp12 = date1;
     if (date1 == null) {
-      tmp13 = endDate;
+      tmp12 = endDate;
     }
     if (typeof MarketingComponentRecord === "function") {
       const self5 = this;
       const self6 = this;
-      const tmp15 = new MarketingComponentRecord(tmp4, tmp, tmp10, b64ToProto, MarketingComponentRecord, this, id, component_type, b64ToProtoResult, promotion_id, date, date1);
-      tmp15.id = id;
-      tmp15.componentType = component_type;
-      tmp15.properties = b64ToProtoResult;
-      tmp15.promotionId = promotion_id;
-      tmp15.startDate = date;
-      tmp15.endDate = date1;
-      tmp15.effectiveStartDate = tmp12;
-      tmp15.effectiveEndDate = tmp13;
-      return tmp15;
+      const tmp14 = new MarketingComponentRecord(tmp4, tmp, obj, MarketingComponentRecord, this, id, component_type, b64ToProtoResult, promotion_id, date, date1, tmp11, tmp12);
+      tmp14.id = id;
+      tmp14.componentType = component_type;
+      tmp14.properties = b64ToProtoResult;
+      tmp14.promotionId = promotion_id;
+      tmp14.startDate = date;
+      tmp14.endDate = date1;
+      tmp14.effectiveStartDate = tmp11;
+      tmp14.effectiveEndDate = tmp12;
+      tmp14.promotionEndDate = endDate;
+      return tmp14;
     } else {
       throw new TypeError("Trying to call a non-function");
     }
+  }
+  getFormatVariableValues(arg0) {
+    let obj;
+    let promotionEndDate;
+    const self = this;
+    if (null == this.promotionEndDate) {
+      obj = {};
+    } else {
+      const promotionEndDate2 = self.promotionEndDate;
+      const _Date = Date;
+      const self2 = this;
+      const self3 = this;
+      const date = new Date();
+      const time = promotionEndDate2.getTime();
+      const diff = time - date.getTime();
+      let num = 0;
+      if (diff > 0) {
+        const _Math = Math;
+        num = Math.ceil(diff / DurationsDefault.Millis.DAY);
+      }
+      obj = { days_left: num, promotion_end_date: promotionEndDate.toLocaleDateString(arg0, closure_3) };
+      promotionEndDate = self.promotionEndDate;
+    }
+    return obj;
   }
   isIncludedInRollout(id, date) {
     const self = this;
@@ -91,7 +116,7 @@ class MarketingComponentRecord extends Record {
         const _Math2 = Math;
         const result = 10000 * Math.min(1, Math.max(0, 0.2 * (diff / DurationsDefault.Millis.HOUR)));
         const _HermesInternal = HermesInternal;
-        const obj = _modDef1251;
+        const obj = _modDef1263;
         return obj.v3("" + self.promotionId + ":" + id) % 10000 < result;
       }
     }

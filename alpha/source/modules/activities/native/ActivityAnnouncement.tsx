@@ -1,11 +1,11 @@
-// Module ID: 9041
-// Function ID: 9042
+// Module ID: 10654
+// Function ID: 10655
 // Name: ActivityAnnouncement
-// Dependencies: [19, 21, 558, 576, 8169, 2]
+// Dependencies: [19, 21, 558, 576, 7550, 2]
 
-// Module 9041 (ActivityAnnouncement)
+// Module 10654 (ActivityAnnouncement)
 import react2 from "react" /* 576 */;
-import inlineStylesDefault from "inlineStyles" /* 8169 */;
+import inlineStylesDefault from "inlineStyles" /* 7550 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -14,9 +14,9 @@ import size_mod from "module_2" /* 2 */;
 let c3;
 let closure_4;
 let tmp;
-const inlineStyles = tmp(8169);
+const inlineStyles = tmp(7550);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SvgComponent(arg0) {
   let items;
   let items1;
   let items2;
@@ -331,7 +331,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp133 = cResult[57];
   }
   return tmp133;
-}) : ((arg0) => {
+}) : (function SvgComponent(arg0) {
   let items;
   let items1;
   let items2;

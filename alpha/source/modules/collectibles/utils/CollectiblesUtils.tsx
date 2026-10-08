@@ -1,22 +1,22 @@
-// Module ID: 7110
-// Function ID: 7111
+// Module ID: 7296
+// Function ID: 7297
 // Name: utils/CollectiblesUtils
-// Dependencies: [4943, 4951, 7111, 558, 576, 6908, 4558, 2]
+// Dependencies: [5210, 5135, 7297, 558, 576, 7097, 4750, 2]
 // Exports: buildFetchCollectiblesOptionsQuery, constructGoLiveSource, getOptimizedProfileEffectThumbnailUrl
 
-// Module 7110 (utils/CollectiblesUtils)
+// Module 7296 (utils/CollectiblesUtils)
 import react from "react" /* 576 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 4943 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4951 */;
-import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 6908 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7111 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5135 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5210 */;
+import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 7097 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7297 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const DateUtils = tmp(4558);
+const DateUtils = tmp(4750);
 const ApplicationStreamPresets = StreamSettingsConstants.ApplicationStreamPresets;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchFractionalPremiumInfo() {
   let first;
   let tmp6;
   const obj = react;
@@ -53,7 +53,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[5] = !tmp5.fetched;
   cResult[6] = obj3;
   tmp9 = obj3;
-}) : (() => {
+}) : (function useFetchFractionalPremiumInfo() {
   const tmp = useFractionalPremiumInfoDefault({ forceFetch: true });
   const obj = DateUtils;
   const obj2 = { isLoading: !tmp.fetched, isFractionalPremiumActive: tmp.isFractionalPremiumActive, expiresAt: obj.dateFormat(tmp.endsAt, "L") };
@@ -104,7 +104,7 @@ export const buildFetchCollectiblesOptionsQuery = function buildFetchCollectible
     }
     const tmp2 = require;
     if (noCache.variantsReturnStyle === ShopVariantsReturnStyle.ShopVariantsReturnStyle.VARIANTS_GROUP) {
-      obj.variants_return_style = tmp2(7111).ShopVariantsReturnStyle.VARIANTS_GROUP;
+      obj.variants_return_style = tmp2(7297).ShopVariantsReturnStyle.VARIANTS_GROUP;
     }
     if (null != noCache.shopHomeConfig) {
       obj.shop_home_config = noCache.shopHomeConfig;

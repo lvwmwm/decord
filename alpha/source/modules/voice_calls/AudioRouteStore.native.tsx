@@ -1,15 +1,15 @@
-// Module ID: 9335
-// Function ID: 9336
+// Module ID: 5130
+// Function ID: 5131
 // Name: AudioRouteStore
-// Dependencies: [17, 4919, 9336, 1369, 9337, 504, 584, 2]
+// Dependencies: [17, 5108, 5131, 1381, 5132, 504, 584, 2]
 
-// Module 9335 (AudioRouteStore)
+// Module 5130 (AudioRouteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import VoiceCallTypes from "VoiceCallTypes" /* 9336 */;
-import react_nativeDefault from "react-native" /* 9337 */;
+import VoiceCallTypes from "VoiceCallTypes" /* 5131 */;
+import react_nativeDefault from "react-native" /* 5132 */;
 import react_native from "react-native" /* 17 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
 import size from "module_2" /* 2 */;
 
 let _null;
@@ -75,7 +75,7 @@ let obj = {
           });
         }
         _null = addListenerResult;
-        const tmp10Result = tmp10(1369);
+        const tmp10Result = tmp10(1381);
         if (tmp10Result.isAndroid()) {
           const obj3 = react_nativeDefault;
           let currentRoute;

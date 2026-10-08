@@ -1,77 +1,84 @@
-// Module ID: 14423
-// Function ID: 14424
+// Module ID: 14649
+// Function ID: 14650
 // Name: SettingHookHarness
-// Dependencies: [32, 19, 14424, 11143, 14425, 2]
+// Dependencies: [32, 19, 2128, 14650, 11263, 504, 14651, 2]
 // Exports: getCachedSettingSearchTerms, getCachedSettingTitle
 
-// Module 14423 (SettingHookHarness)
-import SettingRendererConstants from "SettingRendererConstants" /* 11143 */;
+// Module 14649 (SettingHookHarness)
+import SettingRendererConstants from "SettingRendererConstants" /* 11263 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SettingBlocklistStore from "SettingBlocklistStore" /* 14424 */;
+import LocaleStore from "LocaleStore" /* 2128 */;
+import SettingBlocklistStore from "SettingBlocklistStore" /* 14650 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
 const NodeType = SettingRendererConstants.NodeType;
-let closure_6 = [];
+let closure_7 = [];
 const map = new Map();
 const map1 = new Map();
 const memoResult = react.memo(function SettingHookHarness() {
-  let obj2;
-  let tmp3;
+  let items1;
+  let items2;
+  let locale;
+  let obj3;
+  let tmp4;
+  let obj = items1(items2[5]);
+  const items = [LocaleStore];
+  const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
   const field = SettingBlocklistStore.getField("blocklist");
-  const items = [];
-  const items1 = [];
-  const entries = Object.entries(items(items1[4]).SETTING_RENDERER_CONFIG);
+  items1 = [];
+  items2 = [];
+  const entries = Object.entries(items1(items2[6]).SETTING_RENDERER_CONFIG);
   let num = 0;
   if (0 < entries.length) {
     while (true) {
-      let tmp2 = _slicedToArray(entries[num], 2);
-      [tmp3, obj2] = tmp2;
-      let usePredicate = obj2.usePredicate;
+      let tmp3 = _slicedToArray(entries[num], 2);
+      [tmp4, obj3] = tmp3;
+      let usePredicate = obj3.usePredicate;
       let predicate;
       if (usePredicate != null) {
         predicate = usePredicate();
       }
-      let tmp6 = false === predicate;
-      if (tmp6) {
-        if (!field.has(tmp3)) {
-          let arr = items.push(tmp3);
+      let tmp7 = false === predicate;
+      if (tmp7) {
+        if (!field.has(tmp4)) {
+          let arr = items1.push(tmp4);
         }
-        if (obj2.type !== NodeType.GUILD_SELECTOR) {
-          let result = map.set(tmp3, obj2.useTitle());
-          let useSearchTerms = obj2.useSearchTerms;
+        if (obj3.type !== NodeType.GUILD_SELECTOR) {
+          let result = map.set(tmp4, obj3.useTitle());
+          let useSearchTerms = obj3.useSearchTerms;
           let searchTerms;
           if (useSearchTerms != null) {
             searchTerms = useSearchTerms();
           }
           set = map1.set;
           if (searchTerms == null) {
-            searchTerms = closure_6;
+            searchTerms = closure_7;
           }
-          let result1 = set(tmp3, searchTerms);
+          let result1 = set(tmp4, searchTerms);
         }
         num = num + 1;
         if (num >= entries.length) {
           break;
         }
       }
-      let tmp8 = !tmp6 && field.has(tmp3);
-      if (tmp8) {
-        let arr2 = items1.push(tmp3);
+      let tmp9 = !tmp7 && field.has(tmp4);
+      if (tmp9) {
+        let arr2 = items2.push(tmp4);
       }
     }
   }
   const effect = react.useEffect(function() {
-    const arr = items;
-    if (items.length > 0) {
+    const arr = items1;
+    if (items1.length > 0) {
       const _Set = Set;
       const self = this;
       const self2 = this;
       set = new Set(SettingBlocklistStore.getField("blocklist"));
       const item = arr.forEach((item) => set.add(item));
-      const item1 = items1.forEach((item) => set.delete(item));
+      const item1 = items2.forEach((item) => set.delete(item));
       const obj = { blocklist: set };
       SettingBlocklistStore.setState(obj);
     }
@@ -87,7 +94,7 @@ export const getCachedSettingTitle = function getCachedSettingTitle(setting) {
 export const getCachedSettingSearchTerms = function getCachedSettingSearchTerms(arg0) {
   let value = map1.get(arg0);
   if (value == null) {
-    value = closure_6;
+    value = closure_7;
   }
   return value;
 };

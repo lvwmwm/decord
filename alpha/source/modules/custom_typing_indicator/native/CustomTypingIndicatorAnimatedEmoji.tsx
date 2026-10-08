@@ -1,22 +1,22 @@
-// Module ID: 11609
-// Function ID: 11610
+// Module ID: 11673
+// Function ID: 11674
 // Name: CustomTypingIndicatorAnimatedEmoji
-// Dependencies: [32, 19, 1986, 1085, 21, 4896, 558, 576, 4602, 11610, 4618, 504, 1385, 4897, 1402, 6632, 2]
+// Dependencies: [32, 19, 1998, 1085, 21, 5090, 558, 576, 4794, 11674, 4810, 504, 1397, 5091, 1414, 6809, 2]
 
-// Module 11609 (CustomTypingIndicatorAnimatedEmoji)
+// Module 11673 (CustomTypingIndicatorAnimatedEmoji)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import user from "user" /* 1385 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
+import user from "user" /* 1397 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AppStateStore from "AppStateStore" /* 1986 */;
-import createStyles from "createStyles" /* 4896 */;
+import AppStateStore from "AppStateStore" /* 1998 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let emojiCount, num2, num3, num4, num5, num6, obj1, obj14, obj15, obj16, obj17, obj18, set, set2, set2Result, set3, set3Result, tmp10, tmp14, tmp19, tmp32, tmp9, tmp9Result, tmp9Result1, tmp9Result10, tmp9Result11, tmp9Result12, tmp9Result13, tmp9Result14, tmp9Result2, tmp9Result3, tmp9Result4, tmp9Result5, tmp9Result6, tmp9Result7, tmp9Result8, tmp9Result9;
+let num2, num3, num4, num5, num6, obj1, obj14, obj15, obj16, obj17, obj18, set, set2, set2Result, set3, set3Result, tmp10, tmp11, tmp12, tmp9Result, tmp9Result1, tmp9Result10, tmp9Result11, tmp9Result12, tmp9Result13, tmp9Result14, tmp9Result2, tmp9Result3, tmp9Result4, tmp9Result5, tmp9Result6, tmp9Result7, tmp9Result8, tmp9Result9;
 
 const AppStates = Constants.AppStates;
 const jsx = Fragment.jsx;
@@ -25,25 +25,30 @@ let c9 = 0.0625;
 let closure_10 = createStyles.createStyles((fontSize) => ({ textEmoji: { fontSize }, imageEmoji: { width: fontSize, height: fontSize } }));
 let closure_11 = { code: "function CustomTypingIndicatorAnimatedEmojiTsx1(){const{angle,scale,ringRadius,translateY}=this.__closure;const currentAngle=angle.get();return{transform:[{scale:scale.get()},{translateX:-ringRadius*Math.sin(currentAngle)},{translateY:translateY.get()+ringRadius*(Math.cos(currentAngle)-1)}]};}" };
 const __initData = { code: "function CustomTypingIndicatorAnimatedEmojiTsx2(){const{angle,scale,ringRadius,translateY}=this.__closure;const currentAngle=angle.get();return{transform:[{scale:scale.get()},{translateX:-ringRadius*Math.sin(currentAngle)},{translateY:translateY.get()+ringRadius*(Math.cos(currentAngle)-1)}]};}" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiCount) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypingIndicatorAnimatedEmoji(emojiCount) {
   let animation;
   let duration;
   let emoji;
+  let emojisKey;
   let enabled;
+  let flag;
   let index;
-  let tmp11;
-  let tmp12;
+  let obj7;
+  let tmp14;
+  let tmp15;
+  let tmp6;
+  let tmp7;
   let tmp = index;
   let obj = index(animation[7]);
   const cResult = obj.c(31);
-  ({ emoji, index } = emojiCount);
+  ({ emoji, emojisKey, index } = emojiCount);
   emojiCount = emojiCount.emojiCount;
   ({ size, animation } = emojiCount);
   let num = 16;
   if (undefined !== size) {
     num = size;
   }
-  closure_10(num);
+  const tmp4 = closure_10(num);
   let obj2 = enabled;
   enabled = enabled.useContext(tmp(tmp2[8]).AccessibilityPreferencesContext).reducedMotion.enabled;
   let name = emoji.id;
@@ -51,69 +56,236 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiCount) => {
     name = emoji.name;
   }
   let tmp5 = num(obj2.useState(null), 2);
-  [r10033, AppStates] = tmp5;
+  [tmp6, AppStates] = tmp5;
   if (cResult[0] !== name) {
-    class A {
-      constructor() {
-        tmp = closure_6(name);
-        return;
-      }
-    }
+    const fn = function y() {
+      AppStates(name);
+    };
     cResult[0] = name;
-    cResult[1] = A;
+    cResult[1] = fn;
+    tmp7 = fn;
   } else {
-    class A {
-      constructor() {
-        tmp = closure_6(name);
-        return;
-      }
-    }
+    tmp7 = cResult[1];
   }
-  let tmp7 = emojiCount(tmp2[9])();
+  const tmp9 = emojiCount(tmp2[9])();
   const tmpResult = tmp(animation[10]);
   const sharedValue = tmpResult.useSharedValue(1);
   const tmpResult4 = tmp(animation[10]);
   const sharedValue1 = tmpResult4.useSharedValue(0);
   const tmpResult5 = tmp(animation[10]);
   const sharedValue2 = tmpResult5.useSharedValue(0);
-  closure_10 = num * sharedValue2;
+  let result = num * sharedValue2;
+  closure_10 = result;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    class A {
-      constructor() {
-        tmp = closure_6(name);
-        return;
-      }
-    }
     let items = [name];
-    class Y {
+    class P {
       constructor() {
-        return name.getState() === closure_6.ACTIVE;
+        return name.getState() === AppStates.ACTIVE;
       }
     }
     cResult[2] = items;
-    cResult[3] = Y;
-    tmp12 = Y;
-    tmp11 = items;
+    cResult[3] = P;
+    tmp15 = P;
+    tmp14 = items;
   } else {
-    class A {
-      constructor() {
-        tmp = closure_6(name);
-        return;
-      }
-    }
-    tmp12 = cResult[3];
+    tmp14 = cResult[2];
+    tmp15 = cResult[3];
   }
   const tmpResult6 = tmp(animation[11]);
-  const stateFromStores = tmpResult6.useStateFromStores(tmp11, tmp12);
+  const stateFromStores = tmpResult6.useStateFromStores(tmp14, tmp15);
   if (cResult[4] === sharedValue1) {
-    class A {
-      constructor() {
-        tmp = closure_6(name);
-        return;
+    if (cResult[5] === animation) {
+      if (cResult[6] === emojiCount) {
+        if (cResult[7] === index) {
+          if (cResult[8] === stateFromStores) {
+            if (cResult[9] === enabled) {
+              if (cResult[10] === sharedValue) {
+                if (cResult[11] === num) {
+                  let tmp18;
+                  let tmp19;
+                  if (cResult[12] === sharedValue2) {
+                    tmp18 = cResult[13];
+                    tmp19 = cResult[14];
+                  }
+                  const effect = obj2.useEffect(tmp18, tmp19);
+                  class P {
+                    constructor() {
+                      return name.getState() === AppStates.ACTIVE;
+                    }
+                  }
+                  class H {
+                    constructor() {
+                      let items;
+                      let value2;
+                      const value = sharedValue1.get();
+                      const obj = { transform: items };
+                      items = [{ scale: sharedValue.get() }, , ];
+                      ({ scale: sharedValue.get() });
+                      items[1] = { translateX: -closure_10 * Math.sin(value) };
+                      const obj4 = { translateY: value2 + closure_10 * (Math.cos(value) - 1) };
+                      ({ translateX: -closure_10 * Math.sin(value) });
+                      value2 = sharedValue2.get();
+                      items[2] = obj4;
+                      return obj;
+                    }
+                  }
+                  let obj3 = { angle: sharedValue1, scale: sharedValue, ringRadius: result, translateY: sharedValue2 };
+                  H.__closure = obj3;
+                  H.__workletHash = 2311631571202;
+                  H.__initData = stateFromStores;
+                  const animatedStyle = obj7.useAnimatedStyle(H);
+                  let str = "\u{1F615}";
+                  if (tmp6 !== name) {
+                    let str2 = "";
+                    if (null == emoji.id) {
+                      str2 = emoji.name;
+                    }
+                    str = str2;
+                  }
+                  if (cResult[15] === tmp9) {
+                    if (cResult[16] === emoji.animated) {
+                      if (cResult[17] === emoji.id) {
+                        if (cResult[18] === tmp6 === name) {
+                          let tmp24;
+                          if (cResult[19] === num) {
+                            tmp24 = cResult[20];
+                          }
+                          if (cResult[21] === emojisKey) {
+                            if (cResult[22] === tmp7) {
+                              if (cResult[23] === tmp4.imageEmoji) {
+                                if (cResult[24] === tmp4.textEmoji) {
+                                  if (cResult[25] === str) {
+                                    let tmp28;
+                                    if (cResult[26] === tmp24) {
+                                      tmp28 = cResult[27];
+                                    }
+                                    if (cResult[28] === animatedStyle) {
+                                      let tmp32;
+                                      if (cResult[29] === tmp28) {
+                                        tmp32 = cResult[30];
+                                      }
+                                      return tmp32;
+                                    }
+                                    class P {
+                                      constructor() {
+                                        return name.getState() === AppStates.ACTIVE;
+                                      }
+                                    }
+                                    class H {
+                                      constructor() {
+                                        let items;
+                                        let value2;
+                                        const value = sharedValue1.get();
+                                        const obj = { transform: items };
+                                        items = [{ scale: sharedValue.get() }, , ];
+                                        ({ scale: sharedValue.get() });
+                                        items[1] = { translateX: -closure_10 * Math.sin(value) };
+                                        const obj4 = { translateY: value2 + closure_10 * (Math.cos(value) - 1) };
+                                        ({ translateX: -closure_10 * Math.sin(value) });
+                                        value2 = sharedValue2.get();
+                                        items[2] = obj4;
+                                        return obj;
+                                      }
+                                    }
+                                    tmp34[1] = tmp28;
+                                    const tmp35 = sharedValue(emojiCount(animation[10]).View, tmp34);
+                                    cResult[28] = animatedStyle;
+                                    cResult[29] = tmp28;
+                                    cResult[30] = tmp35;
+                                    tmp32 = tmp35;
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          class P {
+                            constructor() {
+                              return name.getState() === AppStates.ACTIVE;
+                            }
+                          }
+                          class H {
+                            constructor() {
+                              let items;
+                              let value2;
+                              const value = sharedValue1.get();
+                              const obj = { transform: items };
+                              items = [{ scale: sharedValue.get() }, , ];
+                              ({ scale: sharedValue.get() });
+                              items[1] = { translateX: -closure_10 * Math.sin(value) };
+                              const obj4 = { translateY: value2 + closure_10 * (Math.cos(value) - 1) };
+                              ({ translateX: -closure_10 * Math.sin(value) });
+                              value2 = sharedValue2.get();
+                              items[2] = obj4;
+                              return obj;
+                            }
+                          }
+                          tmp30[1] = tmp24;
+                          ({ imageEmoji: tmp30[2], textEmoji: tmp30[3] } = tmp4);
+                          tmp30[4] = tmp7;
+                          const tmp31 = sharedValue(emojiCount(animation[15]), tmp30, emojisKey);
+                          cResult[21] = emojisKey;
+                          cResult[22] = tmp7;
+                          cResult[23] = tmp4.imageEmoji;
+                          cResult[24] = tmp4.textEmoji;
+                          cResult[25] = str;
+                          cResult[26] = tmp24;
+                          cResult[27] = tmp31;
+                          tmp28 = tmp31;
+                        }
+                      }
+                    }
+                  }
+                  let tmp27Result;
+                  if (tmp6 !== name) {
+                    if (null != emoji.id) {
+                      emojiCount(animation[14]);
+                      let obj4 = { id: emoji.id, animated: flag, size: num };
+                      class P {
+                        constructor() {
+                          return name.getState() === AppStates.ACTIVE;
+                        }
+                      }
+                      class H {
+                        constructor() {
+                          let items;
+                          let value2;
+                          const value = sharedValue1.get();
+                          const obj = { transform: items };
+                          items = [{ scale: sharedValue.get() }, , ];
+                          ({ scale: sharedValue.get() });
+                          items[1] = { translateX: -closure_10 * Math.sin(value) };
+                          const obj4 = { translateY: value2 + closure_10 * (Math.cos(value) - 1) };
+                          ({ translateX: -closure_10 * Math.sin(value) });
+                          value2 = sharedValue2.get();
+                          items[2] = obj4;
+                          return obj;
+                        }
+                      }
+                      if (flag == null) {
+                        flag = false;
+                      }
+                      if (flag) {
+                        flag = tmp9;
+                      }
+                      tmp27Result = tmp27(obj4);
+                    }
+                  }
+                  cResult[15] = tmp9;
+                  cResult[16] = emoji.animated;
+                  cResult[17] = emoji.id;
+                  cResult[18] = tmp6 === name;
+                  cResult[19] = num;
+                  cResult[20] = tmp27Result;
+                  tmp24 = tmp27Result;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
-  class L {
+  class N {
     constructor() {
       tmp = closure_7;
       result = closure_7.set(1);
@@ -196,7 +368,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiCount) => {
               num6 = -1;
               set3Result = set3(withDelay3(result3, withRepeat3(withSequence2(withTimingResult2, withTimingResult3, tmp9Result14.withTiming(0, obj18)), -1)));
             }
-            return () => { /* body not rendered: F141722 */ };
+            return () => {
+              const obj = index(animation[10]);
+              obj.cancelAnimation(sharedValue);
+              const obj2 = index(animation[10]);
+              obj2.cancelAnimation(sharedValue1);
+              const obj3 = index(animation[10]);
+              obj3.cancelAnimation(sharedValue2);
+            };
           }
         }
       }
@@ -213,9 +392,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiCount) => {
   cResult[10] = sharedValue;
   cResult[11] = num;
   cResult[12] = sharedValue2;
-  cResult[13] = L;
+  cResult[13] = N;
   cResult[14] = items1;
-}) : ((emojiCount) => {
+  tmp19 = items1;
+  tmp18 = N;
+}) : (function CustomTypingIndicatorAnimatedEmoji(emojiCount) {
   let animated;
   let duration;
   let emoji;
@@ -226,6 +407,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiCount) => {
   ({ emoji, index } = emojiCount);
   emojiCount = emojiCount.emojiCount;
   let num = emojiCount.size;
+  const emojisKey = emojiCount.emojisKey;
   if (num === undefined) {
     num = 16;
   }
@@ -340,26 +522,28 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiCount) => {
       }
     }
   }, items2);
-  const fn = function k() {
-    let items;
-    let value2;
-    const value = sharedValue1.get();
-    const obj = { transform: items };
-    items = [{ scale: sharedValue.get() }, , ];
-    ({ scale: sharedValue.get() });
-    items[1] = { translateX: -c10 * Math.sin(value) };
-    const obj4 = { translateY: value2 + c10 * (Math.cos(value) - 1) };
-    ({ translateX: -c10 * Math.sin(value) });
-    value2 = sharedValue2.get();
-    items[2] = obj4;
-    return obj;
-  };
-  fn.__closure = { angle: sharedValue1, scale: sharedValue, ringRadius: result, translateY: sharedValue2 };
-  fn.__workletHash = 1424307486721;
-  fn.__initData = __initData;
   const tmp2Result8 = index(tmp3[10]);
-  const animatedStyle = tmp2Result8.useAnimatedStyle(fn);
-  let obj2 = { style: animatedStyle, children: sharedValue(tmp17, obj3, name) };
+  class U {
+    constructor() {
+      let items;
+      let value2;
+      const value = sharedValue1.get();
+      const obj = { transform: items };
+      items = [{ scale: sharedValue.get() }, , ];
+      ({ scale: sharedValue.get() });
+      items[1] = { translateX: -c10 * Math.sin(value) };
+      const obj4 = { translateY: value2 + c10 * (Math.cos(value) - 1) };
+      ({ translateX: -c10 * Math.sin(value) });
+      value2 = sharedValue2.get();
+      items[2] = obj4;
+      return obj;
+    }
+  }
+  U.__closure = { angle: sharedValue1, scale: sharedValue, ringRadius: result, translateY: sharedValue2 };
+  U.__workletHash = 1424307486721;
+  U.__initData = __initData;
+  const animatedStyle = tmp2Result8.useAnimatedStyle(U);
+  let obj2 = { style: animatedStyle, children: sharedValue(tmp17, obj3, emojisKey) };
   const View = emojiCount(tmp3[10]).View;
   let str = "\u{1F615}";
   tmp17 = emojiCount(tmp3[15]);

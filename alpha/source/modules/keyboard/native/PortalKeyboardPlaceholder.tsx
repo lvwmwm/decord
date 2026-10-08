@@ -1,28 +1,26 @@
-// Module ID: 11896
-// Function ID: 11897
+// Module ID: 11969
+// Function ID: 11970
 // Name: PortalKeyboardPlaceholder
-// Dependencies: [19, 17, 21, 4896, 1369, 587, 1616, 558, 576, 1618, 6440, 1484, 6481, 7518, 4753, 1884, 2]
+// Dependencies: [19, 17, 21, 5090, 1381, 587, 1628, 558, 576, 1630, 6618, 1496, 6659, 9241, 4947, 1896, 2]
 
-// Module 11896 (PortalKeyboardPlaceholder)
+// Module 11969 (PortalKeyboardPlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import KeyboardTypes from "KeyboardTypes" /* 1616 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import useSystemKeyboardHeightDefault from "useSystemKeyboardHeight" /* 1884 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 4753 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6440 */;
-import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 6481 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 7518 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import KeyboardTypes from "KeyboardTypes" /* 1628 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import useSystemKeyboardHeightDefault from "useSystemKeyboardHeight" /* 1896 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 4947 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6618 */;
+import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 6659 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 9241 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let keyboardType;
 
 let c3;
 let closure_4;
@@ -58,7 +56,7 @@ let closure_6 = createStyles.createStyles((arg0, arg1, arg2, arg3) => {
   if (arg3) {
     hairlineWidth1 = tmp6.hairlineWidth;
   }
-  const APP_LAUNCHER = tmp(1616).KeyboardTypes.APP_LAUNCHER;
+  const APP_LAUNCHER = tmp(1628).KeyboardTypes.APP_LAUNCHER;
   const tmpResult = PlatformUtils;
   if (tmpResult.isIOS()) {
     tmp12 = arg1;
@@ -70,7 +68,7 @@ let closure_6 = createStyles.createStyles((arg0, arg1, arg2, arg3) => {
   return { container: obj2 };
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((keyboardType) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PortalKeyboardPlaceholderInner(keyboardType) {
   const obj = react2;
   const cResult = obj.c(3);
   keyboardType = keyboardType.keyboardType;
@@ -93,7 +91,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((keyboardType) =
   cResult[1] = gradientBottom;
   cResult[2] = tmp7;
   tmp6 = tmp7;
-}) : ((keyboardType) => {
+}) : (function PortalKeyboardPlaceholderInner(keyboardType) {
   keyboardType = keyboardType.keyboardType;
   const rect = useSafeAreaInsetsDefault();
   const tmp = useIsWindowLargeDefault();
@@ -105,7 +103,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((keyboardType) =
   return <_false style={items} />;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const jsxResult = jsx(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const jsxResult = jsx(ReactCompilerGating.isReactCompilerEnabled() ? (function PortalKeyboardPlaceholder() {
   let tmp6;
   const obj = react2;
   const cResult = obj.c(2);
@@ -134,7 +132,7 @@ const jsxResult = jsx(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     PlatformUtils;
   }
   return tmp6;
-}) : (() => {
+}) : (function PortalKeyboardPlaceholder() {
   let tmp6;
   const tmp2 = useKeyboardTypeDefault();
   let isAndroidResult = useSystemKeyboardHeightDefault() > 0;

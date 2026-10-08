@@ -1,25 +1,25 @@
-// Module ID: 17135
-// Function ID: 17136
+// Module ID: 17416
+// Function ID: 17417
 // Name: AppIconsCoachmark
-// Dependencies: [19, 17, 1377, 2048, 21, 4896, 587, 558, 576, 504, 4534, 4860, 13280, 17136, 1188, 9655, 4892, 1126, 5601, 6652, 2]
+// Dependencies: [19, 17, 1389, 2060, 21, 5090, 587, 558, 576, 504, 4726, 5054, 13581, 17417, 1200, 9470, 5086, 1126, 5375, 6829, 2]
 
-// Module 17135 (AppIconsCoachmark)
+// Module 17416 (AppIconsCoachmark)
 import nativeDefault from "native" /* 587 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4534 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9655 */;
-import AppIconUtils from "AppIconUtils" /* 13280 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17136 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4726 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9470 */;
+import AppIconUtils from "AppIconUtils" /* 13581 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17417 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, markAsDismissed;
+let BottomSheet;
 
 let c9;
 let closure_4;
@@ -36,7 +36,7 @@ obj2 = { padding: nativeDefault.space.PX_16, paddingBottom: 0 };
 createStyles = createStyles.createStyles;
 obj3 = { marginTop: 20, gap: nativeDefault.space.PX_8 };
 let closure_10 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppIconsCoachmarkActionSheet(markAsDismissed) {
   let currentUser;
   let intl;
   let items1;
@@ -74,7 +74,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
     tmp9 = cResult[3];
   }
   if (cResult[4] !== markAsDismissed) {
-    const fn2 = function b() {
+    function handleOnTryIt() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
       if (markAsDismissed != null) {
@@ -82,32 +82,20 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
       }
       const obj2 = AppIconUtils;
       const result = obj2.navigateToAppIconSettings();
-    };
+    }
     cResult[4] = markAsDismissed;
-    cResult[5] = fn2;
+    cResult[5] = handleOnTryIt;
   }
   if (cResult[6] !== markAsDismissed) {
-    class A {
-      constructor() {
-        const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet();
-        if (markAsDismissed != null) {
-          tmp2(ContentDismissActionType.DISMISS);
-        }
+    const fn2 = function b() {
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet();
+      if (markAsDismissed != null) {
+        tmp2(ContentDismissActionType.DISMISS);
       }
-    }
+    };
     cResult[6] = markAsDismissed;
-    cResult[7] = A;
-  } else {
-    class A {
-      constructor() {
-        const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet();
-        if (markAsDismissed != null) {
-          tmp2(ContentDismissActionType.DISMISS);
-        }
-      }
-    }
+    cResult[7] = fn2;
   }
   if (cResult[8] !== markAsDismissed) {
     class D {
@@ -147,8 +135,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
         return markAsDismissed(ContentDismissActionType.DISMISS);
       }
     }
-    const obj4 = { source: AssetRegistryDefault, size: markAsDismissed(1188).IconSizes.MEDIUM, style: tmp4.nitroWheel, disableColor: true };
-    const Icon = tmp(1188).Icon;
+    const obj4 = { source: AssetRegistryDefault, size: markAsDismissed(1200).IconSizes.MEDIUM, style: tmp4.nitroWheel, disableColor: true };
+    const Icon = tmp(1200).Icon;
     cResult[12] = tmp4.nitroWheel;
     cResult[13] = closure_8(Icon, obj4);
     const tmp21 = closure_8(Icon, obj4);
@@ -166,7 +154,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
       }
     }
     const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(1126).t.EfA4Cq) };
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     intl = tmp(1126).intl;
     const tmp23 = closure_8(Text, obj5);
     cResult[14] = tmp23;
@@ -239,8 +227,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
     const obj7 = { variant: "text-md/normal", color: "text-default", style: tmp4.subtitle, children: tmp26 };
     cResult[20] = tmp4.subtitle;
     cResult[21] = tmp26;
-    cResult[22] = closure_8(markAsDismissed(4892).Text, obj7);
-    const tmp31 = closure_8(markAsDismissed(4892).Text, obj7);
+    cResult[22] = closure_8(markAsDismissed(5086).Text, obj7);
+    const tmp31 = closure_8(markAsDismissed(5086).Text, obj7);
   }
   const obj8 = { style: tmp4.titleContainer, children: items2 };
   items2 = [tmp19, tmp22];
@@ -248,7 +236,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
   cResult[16] = tmp19;
   cResult[17] = closure_9(closure_5, obj8);
   const tmp25 = closure_9(closure_5, obj8);
-}) : ((markAsDismissed) => {
+}) : (function AppIconsCoachmarkActionSheet(markAsDismissed) {
   let currentUser;
   let intl;
   let intl3;
@@ -284,19 +272,19 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
   };
   const obj4 = { style: tmp.info, children: items2 };
   const obj5 = { source: AssetRegistryDefault2, style: tmp.image };
-  BottomSheet = markAsDismissed(6652).BottomSheet;
+  BottomSheet = markAsDismissed(6829).BottomSheet;
   items2 = [closure_8(closure_4, obj5), , ];
   const obj6 = { style: tmp.titleContainer, children: items3 };
-  const obj7 = { source: AssetRegistryDefault, size: markAsDismissed(1188).IconSizes.MEDIUM, style: tmp.nitroWheel, disableColor: true };
-  const Icon = markAsDismissed(1188).Icon;
+  const obj7 = { source: AssetRegistryDefault, size: markAsDismissed(1200).IconSizes.MEDIUM, style: tmp.nitroWheel, disableColor: true };
+  const Icon = markAsDismissed(1200).Icon;
   items3 = [closure_8(Icon, obj7), ];
   const obj8 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(1126).t.EfA4Cq) };
-  const Text = markAsDismissed(4892).Text;
+  const Text = markAsDismissed(5086).Text;
   intl = markAsDismissed(1126).intl;
   items3[1] = closure_8(Text, obj8);
   items2[1] = closure_9(closure_5, obj6);
   const obj9 = { variant: "text-md/normal", color: "text-default", style: tmp.subtitle, children: stringResult };
-  const Text2 = markAsDismissed(4892).Text;
+  const Text2 = markAsDismissed(5086).Text;
   const intl2 = markAsDismissed(1126).intl;
   const string = intl2.string;
   const t = markAsDismissed(1126).t;
@@ -310,7 +298,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
   const obj10 = { style: tmp.footer, children: items5 };
   const obj11 = {
     text: intl3.string(tmp2(1126).t.Pt547C),
-    onPress() {
+    onPress: function handleOnTryIt() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
       if (markAsDismissed != null) {
@@ -320,11 +308,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
       const result = obj2.navigateToAppIconSettings();
     }
   };
-  const Button = tmp2(5601).Button;
+  const Button = tmp2(5375).Button;
   intl3 = tmp2(1126).intl;
   items5 = [closure_8(Button, obj11), ];
   const obj12 = { variant: "secondary", text: intl4.string(tmp2(1126).t.iSrIIZ), onPress: callback };
-  const Button2 = tmp2(5601).Button;
+  const Button2 = tmp2(5375).Button;
   intl4 = tmp2(1126).intl;
   items5[1] = closure_8(Button2, obj12);
   items4[1] = closure_9(closure_5, obj10);

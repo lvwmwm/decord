@@ -1,12 +1,12 @@
-// Module ID: 9453
-// Function ID: 9454
+// Module ID: 7011
+// Function ID: 7012
 // Name: people/ClearAllIncomingRequestsConfirmationModal
-// Dependencies: [5099, 9454, 1987, 2]
+// Dependencies: [5940, 7012, 1999, 2]
 // Exports: default
 
-// Module 9453 (people/ClearAllIncomingRequestsConfirmationModal)
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
+// Module 7011 (people/ClearAllIncomingRequestsConfirmationModal)
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/people/native/ClearAllIncomingRequestsConfirmationModal.tsx");
@@ -14,5 +14,5 @@ const result = size.fileFinishedImporting("modules/people/native/ClearAllIncomin
 export default function openClearAllIncomingRequestsConfirmationModal(incomingPendingRequestCount) {
   const obj = ModalActionCreatorsDefault;
   const obj2 = { incomingPendingRequestCount };
-  obj.pushLazy(asyncRequire(9454, dependencyMap.paths), obj2);
+  obj.pushLazy(asyncRequire(7012, dependencyMap.paths), obj2);
 };

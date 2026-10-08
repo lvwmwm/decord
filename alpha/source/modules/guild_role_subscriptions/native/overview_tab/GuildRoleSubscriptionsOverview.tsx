@@ -1,37 +1,35 @@
-// Module ID: 16529
-// Function ID: 16530
+// Module ID: 16784
+// Function ID: 16785
 // Name: GuildRoleSubscriptionsOverview
-// Dependencies: [19, 5443, 4709, 2074, 21, 4892, 558, 576, 1126, 16530, 8900, 16531, 15046, 573, 6764, 5685, 5715, 1112, 2]
+// Dependencies: [19, 5753, 4903, 2086, 21, 5086, 558, 576, 1126, 16785, 9333, 16786, 15308, 573, 6940, 6032, 5298, 1112, 2]
 
-// Module 16529 (GuildRoleSubscriptionsOverview)
+// Module 16784 (GuildRoleSubscriptionsOverview)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import router_utils from "router_utils" /* 1112 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5715 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 8900 */;
-import UnavailableNoticeDefault from "UnavailableNotice" /* 16530 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5298 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9333 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 16785 */;
 import react_mod from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5443 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 4709 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5753 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 4903 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let serverName;
-
 let tmp;
 let tmp4;
-const GroupListingsFetchContext = tmp(15046);
-const GuildRoleSubscriptionPurchasePageDefault = tmp4(16531);
+const GroupListingsFetchContext = tmp(15308);
+const GuildRoleSubscriptionPurchasePageDefault = tmp4(16786);
 function serverNameHook(children) {
   return jsx(Text_Text.Text, { variant: "heading-lg/extrabold", color: "interactive-text-active", children });
 }
 let react = react_mod;
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((serverName) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleSubscriptionsUnavailableNotice(serverName) {
   let tmp4;
   let tmp7;
   let tmp9;
@@ -65,7 +63,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((serverName) => {
     tmp9 = cResult[4];
   }
   return tmp9;
-}) : ((serverName) => {
+}) : (function RoleSubscriptionsUnavailableNotice(serverName) {
   serverName = serverName.serverName;
   UnavailableNoticeDefault;
   const intl = intl4.intl;
@@ -75,7 +73,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((serverName) => {
 });
 let closure_9 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function PurchasePage(arg0) {
   let gatedChannelId;
   let guildId;
   const obj = react2;
@@ -119,7 +117,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = guildId;
   cResult[2] = tmp10;
   tmp9 = tmp10;
-}) : ((arg0) => {
+}) : (function PurchasePage(arg0) {
   let gatedChannelId;
   let guildId;
   ({ guildId, gatedChannelId } = arg0);
@@ -133,7 +131,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return <GroupListingsFetchContextProvider guildId={guildId} refetchOnMount={null == gatedChannelId} countryCode={country} dontFetchWhileTrue={null == country}>{null}</GroupListingsFetchContextProvider>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionsOverview(guildId) {
   let closure_3;
   let connected;
   let first;
@@ -146,7 +144,6 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let obj = guildId(stateFromStores1[7]);
   const cResult = obj.c(16);
   guildId = guildId.guildId;
-  const gatedChannelId = guildId.gatedChannelId;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildStore];
     cResult[0] = items;
@@ -155,7 +152,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     first = cResult[0];
   }
   if (cResult[1] !== guildId) {
-    const fn = function h() {
+    const fn = function f() {
       return GuildStore.getGuild(guildId);
     };
     const items1 = [guildId];
@@ -172,12 +169,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [GatewayConnectionStore];
-    const fn2 = function p() {
-      return connected.isConnected();
-    };
+    class C {
+      constructor() {
+        return connected.isConnected();
+      }
+    }
     cResult[4] = items2;
-    cResult[5] = fn2;
-    tmp10 = fn2;
+    cResult[5] = C;
+    tmp10 = C;
     tmp9 = items2;
   } else {
     tmp9 = cResult[4];
@@ -190,78 +189,49 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   tmp(stateFromStores1[15]);
   if (cResult[6] === stateFromStores) {
     if (cResult[7] === stateFromStores1) {
+      let tmp15;
       let tmp16;
-      let tmp17;
       if (cResult[8] === tmp13) {
-        tmp16 = cResult[9];
-        tmp17 = cResult[10];
+        tmp15 = cResult[9];
+        tmp16 = cResult[10];
       }
-      const effect = react.useEffect(tmp16, tmp17);
-      if (tmp15) {
-        if (cResult[11] === gatedChannelId) {
-          let tmp25;
-          if (cResult[12] === guildId) {
-            tmp25 = cResult[13];
-          }
-          return tmp25;
+      const effect = react.useEffect(tmp15, tmp16);
+      class C {
+        constructor() {
+          return connected.isConnected();
         }
-        const tmp28 = <closure_10 guildId={guildId} gatedChannelId={gatedChannelId} />;
-        cResult[11] = gatedChannelId;
-        cResult[12] = guildId;
-        cResult[13] = tmp28;
-        tmp25 = tmp28;
-      } else {
-        let tmp21;
-        let str;
-        if (stateFromStores != null) {
-          str = stateFromStores.name;
-        }
-        if (str == null) {
-          str = "";
-        }
-        if (cResult[14] !== str) {
-          const tmp24 = <closure_9 serverName={str} />;
-          cResult[14] = str;
-          cResult[15] = tmp24;
-          tmp21 = tmp24;
-        } else {
-          tmp21 = cResult[15];
-        }
-        return tmp21;
       }
     }
   }
-  class F {
-    constructor() {
-      let intl;
-      let intl2;
-      let intl3;
-      let tmp = !stateFromStores1;
-      if (stateFromStores1) {
-        tmp = null != stateFromStores && closure_3;
-      }
-      if (!tmp) {
-        const obj = { title: intl.string(intl4.t.r0DLNm), body: intl2.string(intl4.t["6Y0JlN"]), confirmText: intl3.string(intl4.t.BddRzS) };
-        const show = actions_AlertActionCreatorsDefault.show;
-        actions_AlertActionCreatorsDefault;
-        intl = intl4.intl;
-        intl2 = intl4.intl;
-        intl3 = intl4.intl;
-        show(obj);
-        const obj2 = router_utils;
-        obj2.replaceWith(DefaultRouteStore.defaultRoute);
-      }
+  const fn2 = function _() {
+    let intl;
+    let intl2;
+    let intl3;
+    let tmp = !stateFromStores1;
+    if (stateFromStores1) {
+      tmp = null != stateFromStores && closure_3;
     }
-  }
+    if (!tmp) {
+      const obj = { title: intl.string(intl4.t.r0DLNm), body: intl2.string(intl4.t["6Y0JlN"]), confirmText: intl3.string(intl4.t.BddRzS) };
+      const show = actions_AlertActionCreatorsDefault.show;
+      actions_AlertActionCreatorsDefault;
+      intl = intl4.intl;
+      intl2 = intl4.intl;
+      intl3 = intl4.intl;
+      show(obj);
+      const obj2 = router_utils;
+      obj2.replaceWith(DefaultRouteStore.defaultRoute);
+    }
+  };
   const items3 = [stateFromStores, stateFromStores1, tmp13];
   cResult[6] = stateFromStores;
   cResult[7] = stateFromStores1;
   cResult[8] = tmp13;
-  cResult[9] = F;
+  cResult[9] = fn2;
   cResult[10] = items3;
-  tmp17 = items3;
-  tmp16 = F;
-}) : ((guildId) => {
+  tmp16 = items3;
+  tmp15 = fn2;
+}) : (function GuildRoleSubscriptionsOverview(guildId) {
   let closure_3;
   let connected;
   let tmp6Result;

@@ -1,20 +1,20 @@
-// Module ID: 7976
-// Function ID: 7977
+// Module ID: 8393
+// Function ID: 8394
 // Name: useMediaViewerSyncer
-// Dependencies: [32, 19, 7977, 1369, 7946, 4618, 7978, 1618, 7979, 7950, 5604, 7980, 558, 576, 2]
+// Dependencies: [32, 19, 8394, 1381, 8364, 4810, 8395, 1630, 8396, 8368, 5374, 8397, 558, 576, 2]
 
-// Module 7976 (useMediaViewerSyncer)
+// Module 8393 (useMediaViewerSyncer)
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import spring from "spring" /* 5604 */;
-import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 7946 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 7950 */;
-import portraitThumbnailHelpers from "portraitThumbnailHelpers" /* 7979 */;
-import resolveSelectedIndex from "resolveSelectedIndex" /* 7980 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import spring from "spring" /* 5374 */;
+import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8364 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8368 */;
+import portraitThumbnailHelpers from "portraitThumbnailHelpers" /* 8396 */;
+import resolveSelectedIndex from "resolveSelectedIndex" /* 8397 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7977 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import Constants from "Constants" /* 8394 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -31,7 +31,6 @@ function makeMediaViewerSyncer(sources) {
   let __initData14;
   let __initData15;
   let __initData16;
-  let __initData6;
   let __initData7;
   let __initData8;
   let __initData9;
@@ -98,26 +97,26 @@ function makeMediaViewerSyncer(sources) {
       let width = size.width;
       const height = size.height;
       const rect = thumbnailScrollPositions(selectedIndex[7])();
-      let obj3 = { onBeginDrag: N, onEndDrag: C, onScroll: R, onMomentumBegin: L, onMomentumEnd: fn };
+      let obj3 = { onBeginDrag: C, onEndDrag: V, onScroll: R, onMomentumBegin: L, onMomentumEnd: fn };
       const tmp2 = sources(selectedIndex[5]);
-      class N {
+      class C {
         constructor() {
           const result = mapped1.set(2 | mapped1.get());
           const result1 = swipeSource.set("thumbnails");
         }
       }
       let obj4 = { thumbnailsScrolling: mapped1, SCROLLING_DRAG: 2, swipeSource };
-      N.__closure = obj4;
-      N.__workletHash = 16224520186325;
-      N.__initData = _false;
-      class C {
+      C.__closure = obj4;
+      C.__workletHash = 16224520186325;
+      C.__initData = _false;
+      class V {
         constructor() {
           const result = mapped1.set(-3 & mapped1.get());
         }
       }
-      C.__closure = { thumbnailsScrolling: mapped1, SCROLLING_DRAG: 2 };
-      C.__workletHash = 5779899826871;
-      C.__initData = __initData;
+      V.__closure = { thumbnailsScrolling: mapped1, SCROLLING_DRAG: 2 };
+      V.__workletHash = 5779899826871;
+      V.__initData = __initData;
       class R {
         constructor(contentOffset) {
           const result = contentOffset.contentOffset.x / onSelect;
@@ -187,7 +186,7 @@ function makeMediaViewerSyncer(sources) {
         obj.scrollTo(animatedRef, scrollStart, 0, true);
       }, items);
       const obj6 = sources(selectedIndex[5]);
-      class V {
+      class N {
         constructor() {
           const obj = derivedValue2;
           if (derivedValue2.get() >= 0) {
@@ -196,11 +195,11 @@ function makeMediaViewerSyncer(sources) {
           }
         }
       }
-      V.__closure = { thumbnailsAnimateTo: derivedValue2, variableWidthThumbnailsEnabled: _false, runOnJS: sources(selectedIndex[5]).runOnJS, scrollVarWidthThumbnails: callback1, scrollTo: sources(selectedIndex[5]).scrollTo, ref: animatedRef, thumbnailSize: onSelect };
-      V.__workletHash = 1697086875584;
-      V.__initData = __initData5;
+      N.__closure = { thumbnailsAnimateTo: derivedValue2, variableWidthThumbnailsEnabled: _false, runOnJS: sources(selectedIndex[5]).runOnJS, scrollVarWidthThumbnails: callback1, scrollTo: sources(selectedIndex[5]).scrollTo, ref: animatedRef, thumbnailSize: onSelect };
+      N.__workletHash = 1697086875584;
+      N.__initData = __initData5;
       ({ thumbnailsAnimateTo: derivedValue2, variableWidthThumbnailsEnabled: _false, runOnJS: sources(selectedIndex[5]).runOnJS, scrollVarWidthThumbnails: callback1, scrollTo: sources(selectedIndex[5]).scrollTo, ref: animatedRef, thumbnailSize: onSelect });
-      let derivedValue = obj6.useDerivedValue(V);
+      let derivedValue = obj6.useDerivedValue(N);
       let items1 = [animatedRef];
       const callback2 = React.useCallback((arg0) => {
         const obj = portraitThumbnailHelpers;
@@ -669,7 +668,7 @@ let closure_34 = { code: "function useMediaViewerSyncerTsx25(event){const{isSpur
 let closure_35 = { code: "function useMediaViewerSyncerTsx26(event){const{isSpuriousContentSizeReset,onScrollWorklets}=this.__closure;if(!isSpuriousContentSizeReset(event.contentOffset.x)){onScrollWorklets.onScroll(event.contentOffset.x);}onScrollWorklets.onMomentumEnd();}" };
 let closure_36 = { code: "function useMediaViewerSyncerTsx27(){const{index,selectedIndex}=this.__closure;return index===selectedIndex.get();}" };
 let closure_37 = { code: "function useMediaViewerSyncerTsx28(result,previous){const{runOnJS,setVisible}=this.__closure;if(previous==null||previous===result)return;runOnJS(setVisible)(result);}" };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaViewerSyncer(arg0) {
   let initialIndex;
   let onEndReached;
   let onEndReachedThreshold;
@@ -721,7 +720,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = sources;
   cResult[6] = tmp6;
   tmp5 = tmp6;
-}) : ((sources) => {
+}) : (function useMediaViewerSyncer(sources) {
   sources = sources.sources;
   const initialIndex = sources.initialIndex;
   const onEndReached = sources.onEndReached;

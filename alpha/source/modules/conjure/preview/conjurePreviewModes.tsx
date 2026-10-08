@@ -1,10 +1,11 @@
-// Module ID: 16624
-// Function ID: 16625
+// Module ID: 16884
+// Function ID: 16885
 // Name: conjurePreviewModes
-// Dependencies: [16625, 2]
-// Exports: permissionReviewBlocksMode, previewModeAvailability, profileSurfaceAvailability, profileWidgetState, requiresPermissionReview, resolvePreviewMode, showsFramePreview
+// Dependencies: [12369, 6933, 16885, 2]
+// Exports: permissionReviewBlocksMode, previewCapabilitiesFromSurfaces, previewModeAvailability, profileSurfaceAvailability, profileWidgetState, requiresPermissionReview, resolvePreviewMode, showsFramePreview
 
-// Module 16624 (conjurePreviewModes)
+// Module 16884 (conjurePreviewModes)
+import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 12369 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -17,12 +18,39 @@ let obj = {
   widget(disableInteraction) {
     return disableInteraction.hasProfileWidget;
   },
+  overlay(hasOverlay) {
+    return true === hasOverlay.hasOverlay;
+  },
   bot(hasBotDm) {
     return true === hasBotDm.hasBotDm;
   }
 };
 const result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewModes.tsx");
 
+export const previewCapabilitiesFromSurfaces = function previewCapabilitiesFromSurfaces(previewSupportedSurfaces, arg1) {
+  let botDmResolvable;
+  let legacy;
+  let obj2;
+  let widgetResolvable;
+  ({ legacy, widgetResolvable, botDmResolvable } = arg1);
+  let tmp = legacy;
+  if (null != previewSupportedSurfaces) {
+    tmp = legacy;
+    if (0 !== previewSupportedSurfaces.length) {
+      obj = { hasFrame: obj2.declaresPreviewFrame(previewSupportedSurfaces), hasProfileWidget: widgetResolvable, hasBotDm: botDmResolvable };
+      obj2 = conjurePreviewFrameSurfaces;
+      if (widgetResolvable) {
+        widgetResolvable = previewSupportedSurfaces.includes(tmp3(6933).ConjureSupportedSurface.PROFILE_WIDGET);
+      }
+      if (botDmResolvable) {
+        const hasItem = previewSupportedSurfaces.includes(tmp3(6933).ConjureSupportedSurface.BOT) || previewSupportedSurfaces.includes(tmp3(6933).ConjureSupportedSurface.APPLICATION_COMMANDS);
+        botDmResolvable = hasItem;
+      }
+      tmp = obj;
+    }
+  }
+  return tmp;
+};
 export const previewModeAvailability = function previewModeAvailability(installScope) {
   let first;
   let str;
@@ -53,12 +81,12 @@ export const profileWidgetState = function profileWidgetState(installScope) {
   }
   return str;
 };
-export const resolvePreviewMode = function resolvePreviewMode(arg0, result1) {
+export const resolvePreviewMode = function resolvePreviewMode(arg0, result2) {
   let defaultMode = arg0;
   if (null == arg0) {
-    defaultMode = result1.defaultMode;
+    defaultMode = result2.defaultMode;
   } else {
-    const modes = result1.modes;
+    const modes = result2.modes;
   }
   return defaultMode;
 };

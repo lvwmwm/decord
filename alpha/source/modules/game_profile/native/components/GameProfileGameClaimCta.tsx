@@ -1,22 +1,22 @@
-// Module ID: 8594
-// Function ID: 8595
+// Module ID: 9078
+// Function ID: 9079
 // Name: GameProfileGameClaimCta
-// Dependencies: [5, 19, 1085, 21, 558, 576, 8352, 6830, 6834, 1985, 1126, 5601, 2]
+// Dependencies: [5, 19, 1085, 21, 558, 576, 8850, 7024, 7028, 1997, 1126, 5375, 2]
 
-// Module 8594 (GameProfileGameClaimCta)
+// Module 9078 (GameProfileGameClaimCta)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import MobileWebHandoffLinkingDefault from "MobileWebHandoffLinking" /* 6830 */;
+import MobileWebHandoffLinkingDefault from "MobileWebHandoffLinking" /* 7024 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c0, c1, trackAction;
+let c0, c1;
 
 const RelativeMarketingURLs = Constants.RelativeMarketingURLs;
 const jsx = Fragment.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileGameClaimCta(trackAction) {
   let tmp4;
   let tmp7;
   const tmp2 = dependencyMap;
@@ -76,12 +76,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) => {
         }
       }
     });
-    const fn = function() {
+    function t1() {
       return closure_0(...arguments);
-    };
+    }
     cResult[0] = trackAction;
-    cResult[1] = fn;
-    tmp4 = fn;
+    cResult[1] = t1;
+    tmp4 = t1;
   } else {
     tmp4 = cResult[1];
   }
@@ -103,7 +103,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) => {
       tmp9 = cResult[2];
     }
     if (cResult[3] !== tmp4) {
-      const tmp13 = jsx(trackAction(5601).Button, { variant: "secondary", size: "md", text: tmp9, onPress: tmp4 });
+      const tmp13 = jsx(trackAction(5375).Button, { variant: "secondary", size: "md", text: tmp9, onPress: tmp4 });
       cResult[3] = tmp4;
       cResult[4] = tmp13;
       tmp11 = tmp13;
@@ -115,7 +115,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) => {
     tmp7 = null;
   }
   return tmp7;
-}) : ((trackAction) => {
+}) : (function GameProfileGameClaimCta(trackAction) {
   let tmp3;
   trackAction = trackAction.trackAction;
   const items = [trackAction];
@@ -177,7 +177,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) => {
   }
   if (someResult == null) {
     const tmp4 = jsx;
-    const Button = trackAction(5601).Button;
+    const Button = trackAction(5375).Button;
     const intl = trackAction(1126).intl;
     tmp3 = <Button variant="secondary" size="md" text={intl.string(trackAction(1126).t["mqg+to"])} onPress={callback} />;
   } else {

@@ -1,15 +1,15 @@
-// Module ID: 13092
-// Function ID: 13093
+// Module ID: 13370
+// Function ID: 13371
 // Name: InviteEmbedTextUtils
-// Dependencies: [1377, 1085, 1126, 3007, 5048, 2]
+// Dependencies: [1389, 1085, 1126, 3051, 5405, 2]
 // Exports: getDeadGameInviteText, getHeaderText, getPartyText, getRequestToStreamText
 
-// Module 13092 (InviteEmbedTextUtils)
+// Module 13370 (InviteEmbedTextUtils)
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
-import _modDef3007 from "module_3007" /* 3007 */;
-import NicknameUtils from "NicknameUtils" /* 5048 */;
-import UserStore from "UserStore" /* 1377 */;
+import _modDef3051 from "module_3051" /* 3051 */;
+import NicknameUtils from "NicknameUtils" /* 5405 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 function getAskToJoinText(author, appName, isPrivate, id4, arg4) {
@@ -79,7 +79,7 @@ export const getHeaderText = function getHeaderText(name, arg1, arg2) {
     return stringResult;
   } else if (ActivityActionTypes.STREAM_REQUEST === arg1) {
     const intl2 = intl6.intl;
-    return intl2.string(_modDef3007.DKHhec);
+    return intl2.string(_modDef3051.DKHhec);
   } else {
     const JOIN_REQUEST = tmp.JOIN_REQUEST;
     const intl = intl6.intl;
@@ -91,12 +91,12 @@ export const getRequestToStreamText = function getRequestToStreamText(author, gu
   let stringResult;
   if (author.author.id === id) {
     const intl2 = intl6.intl;
-    stringResult = intl2.string(_modDef3007["8B3U5O"]);
+    stringResult = intl2.string(_modDef3051["8B3U5O"]);
   } else {
     const intl = intl6.intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj = { username: obj2.getName(guild_id.guild_id, guild_id.id, author.author) };
-    const prop = _modDef3007["d/qbC0"];
+    const prop = _modDef3051["d/qbC0"];
     obj2 = NicknameUtils;
     stringResult = formatToPlainString(prop, obj);
   }
@@ -117,12 +117,12 @@ export const getDeadGameInviteText = function getDeadGameInviteText(activity, na
           let stringResult;
           if (activity.author.id === id4) {
             const intl2 = intl6.intl;
-            stringResult = intl2.string(_modDef3007["8B3U5O"]);
+            stringResult = intl2.string(_modDef3051["8B3U5O"]);
           } else {
             const intl = intl6.intl;
             const formatToPlainString = intl.formatToPlainString;
             const obj = { username: obj2.getName(guild_id.guild_id, guild_id.id, activity.author) };
-            const prop = _modDef3007["d/qbC0"];
+            const prop = _modDef3051["d/qbC0"];
             obj2 = NicknameUtils;
             stringResult = formatToPlainString(prop, obj);
           }

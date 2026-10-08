@@ -1,15 +1,15 @@
-// Module ID: 17066
-// Function ID: 17067
+// Module ID: 17347
+// Function ID: 17348
 // Name: SearchNavigatorPreviewScreen
-// Dependencies: [19, 17, 1085, 21, 4896, 558, 576, 1490, 1493, 12001, 17023, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 558, 576, 1502, 1505, 12074, 17304, 2]
 
-// Module 17066 (SearchNavigatorPreviewScreen)
+// Module 17347 (SearchNavigatorPreviewScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12001 */;
+import tracking_TrackingDefault from "tracking/Tracking" /* 12074 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ const ScrollView = react_native.ScrollView;
 const SearchTypes = Constants.SearchTypes;
 const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ container: { flex: 1 } });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchNavigatorPreviewScreen() {
   let searchContext;
   let tmp = searchContext;
   let obj = navigation(searchContext[6]);
@@ -83,7 +83,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   const fn = function n() {
-    const obj = search_tracking_TrackingDefault;
+    const obj = tracking_TrackingDefault;
     const obj2 = { searchContext, channelId };
     const result = obj.trackSearchJumpToMessage(obj2);
     const tmp = searchContext;
@@ -102,7 +102,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = searchContext;
   cResult[4] = fn;
   tmp6 = fn;
-}) : (() => {
+}) : (function SearchNavigatorPreviewScreen() {
   let searchContext;
   let tmp = closure_7();
   let obj = navigation(searchContext[7]);
@@ -114,7 +114,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const onBeforeJumpToMessage = route.params.onBeforeJumpToMessage;
   const items = [searchContext, channelId, onBeforeJumpToMessage, navigation];
   const callback = onBeforeJumpToMessage.useCallback(() => {
-    const obj = search_tracking_TrackingDefault;
+    const obj = tracking_TrackingDefault;
     const obj2 = { searchContext, channelId };
     const result = obj.trackSearchJumpToMessage(obj2);
     const tmp = searchContext;

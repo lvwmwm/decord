@@ -1,21 +1,21 @@
-// Module ID: 14438
-// Function ID: 14439
+// Module ID: 14663
+// Function ID: 14664
 // Name: CustomColorPickerActionSheet
-// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 14439, 1103, 4618, 14440, 4733, 683, 4860, 6652, 1126, 6651, 5601, 6105, 12, 14441, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 587, 558, 576, 14664, 1103, 4810, 14665, 4927, 683, 5054, 6829, 1126, 6828, 5375, 6283, 12, 14666, 2]
 
-// Module 14438 (CustomColorPickerActionSheet)
+// Module 14663 (CustomColorPickerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import ColorUtils from "ColorUtils" /* 4733 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import ColorPickerUtils from "ColorPickerUtils" /* 14440 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import ColorUtils from "ColorUtils" /* 4927 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import ColorPickerUtils from "ColorPickerUtils" /* 14665 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ createStyles = createStyles.createStyles;
 obj3 = { minWidth: 32, height: 32, borderRadius: nativeDefault.radii.xs };
 let closure_9 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuggestedColors(color) {
   let onSelect;
   let suggestedColor;
   let suggestedColors;
@@ -110,7 +110,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
     }
   }
   return null;
-}) : ((arg0) => {
+}) : (function SuggestedColors(arg0) {
   let suggestedColors;
   ({ suggestedColors, onSelect: require, color: importDefault } = arg0);
   let tmp = closure_9();
@@ -143,7 +143,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
   return tmp2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomColorPickerActionSheet(arg0) {
   let actionButtonVariant;
   let closure_2;
   let closure_3;
@@ -235,11 +235,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp14 = tmp11;
   }
   _slicedToArray = tmp14;
-  const tmpResult13 = tmp(4618);
+  const tmpResult13 = tmp(4810);
   sharedValue = tmpResult13.useSharedValue(h);
-  const tmpResult14 = tmp(4618);
+  const tmpResult14 = tmp(4810);
   const sharedValue1 = tmpResult14.useSharedValue(s);
-  const tmpResult15 = tmp(4618);
+  const tmpResult15 = tmp(4810);
   const sharedValue2 = tmpResult15.useSharedValue(v);
   if (cResult[6] === str) {
     if (cResult[7] === color) {
@@ -333,7 +333,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                     }
                                   }
                                   const obj4 = { hue: sharedValue, saturation: sharedValue1, value: sharedValue2, onPanFinalize: tmp24 };
-                                  const tmp65 = sharedValue2(value(14441), obj4);
+                                  const tmp65 = sharedValue2(value(14666), obj4);
                                   cResult[69] = sharedValue;
                                   cResult[70] = tmp24;
                                   cResult[71] = sharedValue1;
@@ -387,14 +387,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     combined = mapped.concat(color);
   }
   if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
-    function te(h) {
+    function updateInputHexValueFromHsv(h) {
       const obj = ColorPickerUtils;
       const hsvToRgbWorkletResult = obj.hsvToRgbWorklet(h);
       const obj2 = ColorUtils;
       closure_2(obj2.rgbToHex(hsvToRgbWorkletResult[0], hsvToRgbWorkletResult[1], hsvToRgbWorkletResult[2]));
     }
-    cResult[27] = te;
-    tmp32 = te;
+    cResult[27] = updateInputHexValueFromHsv;
+    tmp32 = updateInputHexValueFromHsv;
   } else {
     tmp32 = cResult[27];
   }
@@ -442,7 +442,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         if (cResult[47] === sharedValue2) {
                           tmp37 = cResult[48];
                         }
-                        BottomSheet = tmp(6652).BottomSheet;
+                        BottomSheet = tmp(6829).BottomSheet;
                         const _Symbol3 = Symbol;
                         if (cResult[49] === Symbol.for("react.memo_cache_sentinel")) {
                           const intl = tmp(1126).intl;
@@ -518,14 +518,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                             tmp21 = closure_10;
                           }
                           const obj6 = { accessibilityLabel: tmp46, value, onChange: tmp36, maxLength: 7 };
-                          const tmp50 = sharedValue2(tmp(6105).TextInput, obj6);
+                          const tmp50 = sharedValue2(tmp(6283).TextInput, obj6);
                           cResult[55] = value;
                           cResult[56] = tmp36;
                           cResult[57] = tmp50;
                           tmp48 = tmp50;
                         }
-                        const obj7 = { title: tmp38, trailing: sharedValue2(tmp(5601).Button, obj8) };
-                        const BottomSheetTitleHeader = tmp(6651).BottomSheetTitleHeader;
+                        const obj7 = { title: tmp38, trailing: sharedValue2(tmp(5375).Button, obj8) };
+                        const BottomSheetTitleHeader = tmp(6828).BottomSheetTitleHeader;
                         obj8 = { variant: str, size: "sm", text: tmp40, onPress: tmp35 };
                         const tmp44 = sharedValue2(BottomSheetTitleHeader, obj7);
                         cResult[51] = str;
@@ -534,7 +534,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         tmp42 = tmp44;
                       }
                     }
-                    function ce(color) {
+                    function onSelectSuggested(color) {
                       let s;
                       let v;
                       const obj = utils_ColorUtils;
@@ -549,15 +549,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     cResult[45] = sharedValue;
                     cResult[46] = sharedValue1;
                     cResult[47] = sharedValue2;
-                    cResult[48] = ce;
-                    tmp37 = ce;
+                    cResult[48] = onSelectSuggested;
+                    tmp37 = onSelectSuggested;
                   }
                 }
-                function ie(combined) {
-                  let text = combined;
-                  const tmp = combined.length > 0 && "#" !== combined.charAt(0);
+                function onTextInputChange(first4) {
+                  let text = first4;
+                  const tmp = first4.length > 0 && "#" !== first4.charAt(0);
                   if (tmp) {
-                    text = `#${combined}`;
+                    text = `#${first4}`;
                   }
                   const obj = ColorUtils;
                   const hex2rgb2hsvResult = obj.hex2rgb2hsv(text);
@@ -571,8 +571,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 cResult[41] = sharedValue;
                 cResult[42] = sharedValue1;
                 cResult[43] = sharedValue2;
-                cResult[44] = ie;
-                tmp36 = ie;
+                cResult[44] = onTextInputChange;
+                tmp36 = onTextInputChange;
               }
             }
           }
@@ -602,7 +602,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp34 = se;
     }
   }
-  function oe() {
+  function onPanFinalize() {
     const obj2 = { h: sharedValue.get(), s: sharedValue1.get(), v: sharedValue2.get() };
     const obj = ReanimatedRexport;
     const runOnJSResult = obj.runOnJS(closure_7);
@@ -611,9 +611,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[28] = sharedValue;
   cResult[29] = sharedValue1;
   cResult[30] = sharedValue2;
-  cResult[31] = oe;
-  tmp33 = oe;
-}) : ((arg0) => {
+  cResult[31] = onPanFinalize;
+  tmp33 = onPanFinalize;
+}) : (function CustomColorPickerActionSheet(arg0) {
   let BottomSheetTitleHeader;
   let Button;
   let actionButtonVariant;
@@ -673,11 +673,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }, items);
-  const obj4 = onSelect(4618);
+  const obj4 = onSelect(4810);
   sharedValue = obj4.useSharedValue(h);
-  const obj6 = onSelect(4618);
+  const obj6 = onSelect(4810);
   const sharedValue1 = obj6.useSharedValue(s);
-  const obj8 = onSelect(4618);
+  const obj8 = onSelect(4810);
   const sharedValue2 = obj8.useSharedValue(v);
   let combined;
   if (suggestedColors != null) {
@@ -709,22 +709,22 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj.hideActionSheet();
   }, items2);
   const obj5 = { onDismiss, startExpanded: true, header: sharedValue2(BottomSheetTitleHeader, obj7), children: tmp13(tmp14, obj10) };
-  BottomSheet = tmp2(6652).BottomSheet;
+  BottomSheet = tmp2(6829).BottomSheet;
   obj7 = { title: intl.string(onSelect(1126).t.WTqQ5e), trailing: sharedValue2(Button, obj9) };
-  BottomSheetTitleHeader = tmp2(6651).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = tmp2(6828).BottomSheetTitleHeader;
   intl = tmp2(1126).intl;
   obj9 = { variant: actionButtonVariant, size: "sm", text: intl2.string(onSelect(1126).t.XqMe3N), onPress: callback1 };
-  Button = tmp2(5601).Button;
+  Button = tmp2(5375).Button;
   intl2 = tmp2(1126).intl;
   obj10 = { style: tmp.container, children: items3 };
   const obj11 = {
     accessibilityLabel: intl3.string(onSelect(1126).t["ozfa/h"]),
     value,
-    onChange(combined) {
-      let text = combined;
-      const tmp = combined.length > 0 && "#" !== combined.charAt(0);
+    onChange: function onTextInputChange(first4) {
+      let text = first4;
+      const tmp = first4.length > 0 && "#" !== first4.charAt(0);
       if (tmp) {
-        text = `#${combined}`;
+        text = `#${first4}`;
       }
       const obj = ColorUtils;
       const hex2rgb2hsvResult = obj.hex2rgb2hsv(text);
@@ -737,12 +737,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     },
     maxLength: 7
   };
-  const TextInput = tmp2(6105).TextInput;
+  const TextInput = tmp2(6283).TextInput;
   intl3 = tmp2(1126).intl;
   items3 = [sharedValue2(TextInput, obj11), , ];
   const obj12 = {
     suggestedColors: obj17.uniq(combined),
-    onSelect(color) {
+    onSelect: function onSelectSuggested(color) {
       let s;
       let v;
       const obj = utils_ColorUtils;
@@ -780,7 +780,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       runOnJSResult(obj2);
     }
   };
-  items3[2] = sharedValue2(tmp16(14441), obj13);
+  items3[2] = sharedValue2(tmp16(14666), obj13);
   return sharedValue2(BottomSheet, obj5);
 });
 let result = size.fileFinishedImporting("modules/color_picker/native/CustomColorPickerActionSheet.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 11483
-// Function ID: 11484
+// Module ID: 11469
+// Function ID: 11470
 // Name: BanConfirmModal
-// Dependencies: [19, 21, 558, 576, 10673, 1126, 10674, 11476, 2]
+// Dependencies: [19, 21, 558, 576, 9586, 1126, 9587, 11460, 2]
 
-// Module 11483 (BanConfirmModal)
+// Module 11469 (BanConfirmModal)
 import Fragment from "Fragment" /* 21 */;
-import BanConfirmDefault from "BanConfirm" /* 11476 */;
+import BanConfirmDefault from "BanConfirm" /* 11460 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BanConfirmModal(userId) {
   let cancelButtonCallback;
   let guildId;
   let onGoBack;
@@ -62,7 +62,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[5] = userId;
   cResult[6] = tmp9;
   tmp8 = tmp9;
-}) : ((onBeforeGoBack) => {
+}) : (function BanConfirmModal(onBeforeGoBack) {
   let guildId;
   let userId;
   ({ guildId: require, userId: importDefault } = onBeforeGoBack);

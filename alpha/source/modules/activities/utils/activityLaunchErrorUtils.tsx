@@ -1,22 +1,22 @@
-// Module ID: 9072
-// Function ID: 9073
+// Module ID: 10632
+// Function ID: 10633
 // Name: activityLaunchErrorUtils
-// Dependencies: [5, 19, 9073, 8546, 1085, 21, 1126, 9032, 2028, 9026, 5125, 7810, 6089, 2115, 9074, 2]
+// Dependencies: [5, 19, 10633, 9031, 1085, 21, 1126, 10634, 2040, 10635, 5437, 8229, 5936, 2127, 10661, 2]
 // Exports: getActivityLaunchErrorInfo
 
-// Module 9072 (activityLaunchErrorUtils)
+// Module 10632 (activityLaunchErrorUtils)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import intl12 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import InteractionCallbackErrorDefault from "InteractionCallbackError" /* 5125 */;
-import InteractionUtils from "InteractionUtils" /* 7810 */;
-import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 8546 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 9026 */;
-import EmbeddedActivityClientErrorDefault from "EmbeddedActivityClientError" /* 9032 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import InteractionCallbackErrorDefault from "InteractionCallbackError" /* 5437 */;
+import InteractionUtils from "InteractionUtils" /* 8229 */;
+import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 9031 */;
+import EmbeddedActivityClientErrorDefault from "EmbeddedActivityClientError" /* 10634 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10635 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import LocationMetadataStore from "LocationMetadataStore" /* 9073 */;
+import LocationMetadataStore from "LocationMetadataStore" /* 10633 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, fetchState;

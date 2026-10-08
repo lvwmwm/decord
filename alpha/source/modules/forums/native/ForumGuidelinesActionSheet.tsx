@@ -1,27 +1,27 @@
-// Module ID: 10089
-// Function ID: 10090
+// Module ID: 9672
+// Function ID: 9673
 // Name: ForumGuidelinesActionSheet
-// Dependencies: [32, 19, 17, 6786, 21, 4896, 587, 558, 576, 7539, 1618, 10090, 1369, 10091, 4860, 6626, 5602, 1126, 4711, 5050, 10075, 5916, 4892, 10071, 4883, 6119, 6652, 10089, 1987, 2]
+// Dependencies: [32, 19, 17, 6961, 21, 5090, 587, 558, 576, 9261, 1630, 9673, 1381, 9674, 5054, 6803, 5376, 1126, 4905, 5418, 9648, 6189, 5086, 9675, 5077, 6298, 6829, 9672, 1999, 2]
 // Exports: openForumGuidelinesActionSheet
 
-// Module 10089 (ForumGuidelinesActionSheet)
+// Module 9672 (ForumGuidelinesActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import LinkUtils from "LinkUtils" /* 5050 */;
-import ForumConstants from "ForumConstants" /* 6786 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10075 */;
-import ForumGuidelinesManagerDefault from "ForumGuidelinesManager" /* 10091 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import LinkUtils from "LinkUtils" /* 5418 */;
+import ForumConstants from "ForumConstants" /* 6961 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9648 */;
+import ForumGuidelinesManagerDefault from "ForumGuidelinesManager" /* 9674 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, channel, hideActionSheetResult, markAsSeenResult, tmpResult;
+let BottomSheet, markAsSeenResult;
 
 let c9;
 let metroImportAll;
@@ -42,7 +42,7 @@ obj3 = { borderRadius: nativeDefault.radii.sm };
 rect = { marginTop: 16, position: "absolute", left: 16, right: 16, shadowColor: nativeDefault.colors.BLACK, shadowOffset: { width: 0, height: 1 }, shadowOpacity: 0.25, shadowRadius: 4, borderRadius: nativeDefault.radii.sm };
 obj4 = { color: nativeDefault.colors.TEXT_BRAND };
 let closure_10 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumGuidelinesActionSheet(channel) {
   let BaseTextButton;
   let closure_3;
   let first;
@@ -120,51 +120,39 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
     const effect = obj3.useEffect(tmp15, tmp16);
     if (cResult[8] !== onPress) {
-      class F {
+      class E {
         constructor() {
-          if (onPress != null) {
-            tmpResult = tmp();
-          }
-          obj = closure_1(closure_2[14]);
-          hideActionSheetResult = obj.hideActionSheet(closure_6);
+          obj = closure_1(closure_2[13]);
+          markAsSeenResult = obj.markAsSeen(channel.id);
           return;
         }
       }
       cResult[8] = onPress;
-      cResult[9] = F;
+      cResult[9] = tmp19;
     } else {
-      class F {
+      class E {
         constructor() {
-          if (onPress != null) {
-            tmpResult = tmp();
-          }
-          obj = closure_1(closure_2[14]);
-          hideActionSheetResult = obj.hideActionSheet(closure_6);
+          obj = closure_1(closure_2[13]);
+          markAsSeenResult = obj.markAsSeen(channel.id);
           return;
         }
       }
     }
     if (cResult[10] === tmp8 < num3) {
-      class F {
+      class E {
         constructor() {
-          if (onPress != null) {
-            tmpResult = tmp();
-          }
-          obj = closure_1(closure_2[14]);
-          hideActionSheetResult = obj.hideActionSheet(closure_6);
+          obj = closure_1(closure_2[13]);
+          markAsSeenResult = obj.markAsSeen(channel.id);
           return;
         }
       }
     }
-    let tmp20 = !tmp12;
-    if (tmp20) {
-      class F {
+    let tmp21 = !tmp12;
+    if (tmp21) {
+      class E {
         constructor() {
-          if (onPress != null) {
-            tmpResult = tmp();
-          }
-          obj = closure_1(closure_2[14]);
-          hideActionSheetResult = obj.hideActionSheet(closure_6);
+          obj = closure_1(closure_2[13]);
+          markAsSeenResult = obj.markAsSeen(channel.id);
           return;
         }
       }
@@ -174,35 +162,29 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       BaseTextButton = tmp(tmp2[16]).BaseTextButton;
       intl = tmp(tmp2[17]).intl;
       ({ buttonWrapper: obj6.style, buttonPill: obj6.pillStyle } = tmp4);
-      tmp20 = closure_7(SafeAreaPaddingView, obj5);
+      tmp21 = closure_7(SafeAreaPaddingView, obj5);
     }
     cResult[10] = tmp8 < num3;
     cResult[11] = tmp18;
     cResult[12] = tmp4.buttonPill;
     cResult[13] = tmp4.buttonWrapper;
     cResult[14] = tmp4.footer;
-    cResult[15] = tmp20;
+    cResult[15] = tmp21;
   }
   let sum;
   if (null != first) {
-    class F {
+    class E {
       constructor() {
-        if (onPress != null) {
-          tmpResult = tmp();
-        }
-        obj = closure_1(closure_2[14]);
-        hideActionSheetResult = obj.hideActionSheet(closure_6);
+        obj = closure_1(closure_2[13]);
+        markAsSeenResult = obj.markAsSeen(channel.id);
         return;
       }
     }
     if (obj4.isAndroid()) {
-      class F {
+      class E {
         constructor() {
-          if (onPress != null) {
-            tmpResult = tmp();
-          }
-          obj = closure_1(closure_2[14]);
-          hideActionSheetResult = obj.hideActionSheet(closure_6);
+          obj = closure_1(closure_2[13]);
+          markAsSeenResult = obj.markAsSeen(channel.id);
           return;
         }
       }
@@ -213,7 +195,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[1] = first;
   cResult[2] = sum;
   tmp9 = sum;
-}) : ((channel) => {
+}) : (function ForumGuidelinesActionSheet(channel) {
   let BaseTextButton;
   let BottomSheetScrollView;
   let Text3;
@@ -387,7 +369,7 @@ export const openForumGuidelinesActionSheet = function openForumGuidelinesAction
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = {};
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(10089, dependencyMap.paths);
+  const tmp2 = asyncRequire(9672, dependencyMap.paths);
   const merged = Object.assign(arg0);
   openLazy(tmp2, closure_6, obj);
 };

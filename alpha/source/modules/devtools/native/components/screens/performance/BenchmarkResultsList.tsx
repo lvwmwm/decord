@@ -1,13 +1,13 @@
-// Module ID: 15630
-// Function ID: 15631
+// Module ID: 15910
+// Function ID: 15911
 // Name: BenchmarkResultsList
-// Dependencies: [19, 21, 558, 576, 6000, 15626, 6081, 2]
+// Dependencies: [19, 21, 558, 576, 6184, 15906, 6267, 2]
 
-// Module 15630 (BenchmarkResultsList)
+// Module 15910 (BenchmarkResultsList)
 import react2 from "react" /* 576 */;
-import TableRow3 from "TableRow" /* 6000 */;
-import TableRowGroup2 from "TableRowGroup" /* 6081 */;
-import startFrameMonitor from "startFrameMonitor" /* 15626 */;
+import TableRow3 from "TableRow" /* 6184 */;
+import TableRowGroup2 from "TableRowGroup" /* 6267 */;
+import startFrameMonitor from "startFrameMonitor" /* 15906 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 let c2;
 let c3;
 ({ jsx: c2, jsxs: c3 } = Fragment);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BenchmarkResultsList(arg0) {
   let items;
   let onClear;
   let results;
@@ -97,7 +97,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[7] = tmp13;
     tmp11 = tmp13;
   }
-}) : ((results) => {
+}) : (function BenchmarkResultsList(results) {
   let items;
   results = results.results;
   let tmp2 = null;

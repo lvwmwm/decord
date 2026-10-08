@@ -1,12 +1,12 @@
-// Module ID: 7622
-// Function ID: 7623
+// Module ID: 7869
+// Function ID: 7870
 // Name: useIsAccessibilityServiceEnabled
-// Dependencies: [570, 5718, 5777, 558, 2]
+// Dependencies: [570, 5301, 5360, 558, 2]
 // Exports: getIsAccessibilityServiceEnabled
 
-// Module 7622 (useIsAccessibilityServiceEnabled)
-import react_nativeDefault from "react-native" /* 5718 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5777 */;
+// Module 7869 (useIsAccessibilityServiceEnabled)
+import react_nativeDefault from "react-native" /* 5301 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5360 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -26,11 +26,11 @@ const state = module_570.create((arg0) => {
   obj3 = react_nativeDefault;
   return obj2;
 });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsAccessibilityServiceEnabled() {
   const obj = useIsScreenReaderEnabled;
   const isScreenReaderEnabled = obj.useIsScreenReaderEnabled() || state(ACCESSIBILITY_SERVICE_ENABLED_GETTER);
   return isScreenReaderEnabled;
-}) : (() => {
+}) : (function useIsAccessibilityServiceEnabled() {
   const obj = useIsScreenReaderEnabled;
   const isScreenReaderEnabled = obj.useIsScreenReaderEnabled() || state(ACCESSIBILITY_SERVICE_ENABLED_GETTER);
   return isScreenReaderEnabled;

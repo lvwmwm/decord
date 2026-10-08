@@ -1,15 +1,15 @@
-// Module ID: 13932
-// Function ID: 13933
+// Module ID: 14235
+// Function ID: 14236
 // Name: ThumbnailImage
-// Dependencies: [19, 17, 21, 1369, 13933, 558, 576, 2]
+// Dependencies: [19, 17, 21, 1381, 14236, 558, 576, 2]
 
-// Module 13932 (ThumbnailImage)
+// Module 14235 (ThumbnailImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import LocalImageThumbnailNativeComponent from "LocalImageThumbnailNativeComponent" /* 13933 */;
+import LocalImageThumbnailNativeComponent from "LocalImageThumbnailNativeComponent" /* 14236 */;
 import react from "react" /* 19 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ const jsx = Fragment.jsx;
 if (PlatformUtils.isAndroid()) {
   LocalImageThumbnailNativeComponent.default;
 }
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function LocalImageThumbnail(arg0) {
   let tmp2;
   const obj = react2;
   const cResult = obj.c(2);
@@ -32,7 +32,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = cResult[1];
   }
   return tmp2;
-}) : ((arg0) => {
+}) : (function LocalImageThumbnail(arg0) {
   const merged = Object.assign(arg0);
   return <_default />;
 });

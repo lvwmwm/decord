@@ -1,28 +1,28 @@
-// Module ID: 12061
-// Function ID: 12062
+// Module ID: 12134
+// Function ID: 12135
 // Name: ApplicationCommandBar
-// Dependencies: [32, 109, 19, 17, 2112, 21, 4896, 587, 5627, 558, 576, 1126, 1188, 5916, 504, 11874, 5981, 4892, 8924, 7957, 12062, 2]
+// Dependencies: [32, 109, 19, 17, 2124, 21, 5090, 587, 5974, 558, 576, 1126, 1200, 6189, 504, 11946, 6164, 5086, 8555, 5928, 12135, 2]
 
-// Module 12061 (ApplicationCommandBar)
+// Module 12134 (ApplicationCommandBar)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import LegacyTokens from "LegacyTokens" /* 5627 */;
-import Pressables from "Pressables" /* 5916 */;
-import usePreviousDefault from "usePrevious" /* 7957 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11874 */;
+import native from "native" /* 1200 */;
+import usePreviousDefault from "usePrevious" /* 5928 */;
+import LegacyTokens from "LegacyTokens" /* 5974 */;
+import Pressables from "Pressables" /* 6189 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11946 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let ref, scrollToResult;
+let ref;
 
 let StyleSheet;
 let c10;
@@ -42,10 +42,10 @@ let obj9;
 let size;
 let size1;
 let tmp;
-let tmp2;
+let tmp5;
 let unpackModuleId;
-const Text_Text = tmp(4892);
-const DescriptionEllipsisDefault = tmp2(12062);
+const Text_Text = tmp(5086);
+const DescriptionEllipsisDefault = tmp5(12135);
 let closure_3 = ["option", "optionState"];
 let react = react_mod;
 ({ View: metroImportDefault, ScrollView: metroImportAll, StyleSheet } = react_native);
@@ -67,7 +67,7 @@ obj10 = { backgroundColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 obj11 = { backgroundColor: LegacyTokens.DARK_PRIMARY_660_LIGHT_PRIMARY_300 };
 let closure_13 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationCommandOptionItem(arg0) {
   let option;
   let optionState;
   let tmp11;
@@ -180,7 +180,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 }
               }
               const obj3 = { accessibilityLabel: tmp11, accessibilityRole: "button", disabled: flag, style: tmp15, children: tmp20 };
-              const PressableOpacity = tmp(5916).PressableOpacity;
+              const PressableOpacity = tmp(6189).PressableOpacity;
               const merged = Object.assign(tmp6);
               const tmp28 = authStore(PressableOpacity, obj3);
               cResult[18] = flag;
@@ -215,7 +215,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = completeCommandOption;
   cResult[9] = items1;
   tmp15 = items1;
-}) : ((arg0) => {
+}) : (function ApplicationCommandOptionItem(arg0) {
   let LegacyText;
   let intl;
   let items;
@@ -292,7 +292,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return authStore(PressableOpacity, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((command) => {
+tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((command) => {
   let closure_10;
   let closure_6;
   let first;
@@ -301,7 +301,6 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((command) => {
   let tmp12;
   let tmp16;
   let tmp18;
-  let tmp21;
   let tmp = command;
   let tmp2 = guildId;
   let obj = command(guildId[10]);
@@ -331,580 +330,373 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((command) => {
   const first1 = tmp9[0];
   closure_12 = tmp9[1];
   if (cResult[1] !== command.options) {
-    class I {
-      constructor() {
-        c0 = false;
-        c1 = false;
-        options = command.options;
-        if (options != null) {
-          item = options.forEach(() => { /* body not rendered: F142305 */ });
-        }
-        tmp2 = closure_9(c0);
-        tmp3 = closure_10(c1);
-        return;
+    const fn = function _() {
+      let c0 = false;
+      let c1 = false;
+      const options = command.options;
+      if (options != null) {
+        const item = options.forEach((required) => {
+          if (true !== required.required) {
+            c0 = true;
+          } else {
+            c1 = true;
+          }
+        });
       }
-    }
+      GuildMemberStore(c0);
+      closure_10(c1);
+    };
     cResult[1] = command.options;
-    cResult[2] = I;
-    tmp11 = I;
+    cResult[2] = fn;
+    tmp11 = fn;
   } else {
-    class I {
-      constructor() {
-        c0 = false;
-        c1 = false;
-        options = command.options;
-        if (options != null) {
-          item = options.forEach(() => { /* body not rendered: F142305 */ });
-        }
-        tmp2 = closure_9(c0);
-        tmp3 = closure_10(c1);
-        return;
-      }
-    }
+    tmp11 = cResult[2];
   }
   if (cResult[3] !== command) {
-    class I {
-      constructor() {
-        c0 = false;
-        c1 = false;
-        options = command.options;
-        if (options != null) {
-          item = options.forEach(() => { /* body not rendered: F142305 */ });
-        }
-        tmp2 = closure_9(c0);
-        tmp3 = closure_10(c1);
-        return;
-      }
-    }
-    tmp13[0] = command;
+    const items = [command];
     cResult[3] = command;
-    cResult[4] = tmp13;
-    tmp12 = tmp13;
+    cResult[4] = items;
+    tmp12 = items;
   } else {
-    class I {
-      constructor() {
-        c0 = false;
-        c1 = false;
-        options = command.options;
-        if (options != null) {
-          item = options.forEach(() => { /* body not rendered: F142305 */ });
-        }
-        tmp2 = closure_9(c0);
-        tmp3 = closure_10(c1);
-        return;
-      }
-    }
+    tmp12 = cResult[4];
   }
   const effect = obj2.useEffect(tmp11, tmp12);
-  const tmp15 = cResult[5];
+  let name;
+  const tmp14 = cResult[5];
   if (currentOption != null) {
-    class I {
-      constructor() {
-        c0 = false;
-        c1 = false;
-        options = command.options;
-        if (options != null) {
-          item = options.forEach(() => { /* body not rendered: F142305 */ });
-        }
-        tmp2 = closure_9(c0);
-        tmp3 = closure_10(c1);
-        return;
-      }
-    }
+    name = currentOption.name;
   }
-  if (tmp15 !== undefined) {
-    class I {
-      constructor() {
-        c0 = false;
-        c1 = false;
-        options = command.options;
-        if (options != null) {
-          item = options.forEach(() => { /* body not rendered: F142305 */ });
-        }
-        tmp2 = closure_9(c0);
-        tmp3 = closure_10(c1);
-        return;
-      }
-    }
+  if (tmp14 !== name) {
+    let name1;
     if (currentOption != null) {
-      class I {
-        constructor() {
-          c0 = false;
-          c1 = false;
-          options = command.options;
-          if (options != null) {
-            item = options.forEach(() => { /* body not rendered: F142305 */ });
-          }
-          tmp2 = closure_9(c0);
-          tmp3 = closure_10(c1);
-          return;
-        }
-      }
+      name1 = currentOption.name;
     }
     class N {
       constructor() {
-        name = undefined;
-        tmp = closure_12;
+        let name;
+        const tmp = closure_12;
         if (currentOption != null) {
           name = currentOption.name;
         }
-        tmpResult = tmp(name);
-        return;
+        tmp(name);
       }
     }
-    cResult[5] = tmp17;
+    cResult[5] = name1;
     cResult[6] = N;
     tmp16 = N;
   } else {
-    class I {
-      constructor() {
-        c0 = false;
-        c1 = false;
-        options = command.options;
-        if (options != null) {
-          item = options.forEach(() => { /* body not rendered: F142305 */ });
-        }
-        tmp2 = closure_9(c0);
-        tmp3 = closure_10(c1);
-        return;
-      }
-    }
+    tmp16 = cResult[6];
   }
   if (cResult[7] !== currentOption) {
-    class I {
-      constructor() {
-        c0 = false;
-        c1 = false;
-        options = command.options;
-        if (options != null) {
-          item = options.forEach(() => { /* body not rendered: F142305 */ });
-        }
-        tmp2 = closure_9(c0);
-        tmp3 = closure_10(c1);
-        return;
-      }
-    }
-    tmp19[0] = currentOption;
+    const items1 = [currentOption];
     class N {
       constructor() {
-        name = undefined;
-        tmp = closure_12;
+        let name;
+        const tmp = closure_12;
         if (currentOption != null) {
           name = currentOption.name;
         }
-        tmpResult = tmp(name);
-        return;
+        tmp(name);
       }
     }
     cResult[7] = currentOption;
-    cResult[8] = tmp19;
-    tmp18 = tmp19;
+    cResult[8] = items1;
+    tmp18 = items1;
   } else {
-    class I {
-      constructor() {
-        c0 = false;
-        c1 = false;
-        options = command.options;
-        if (options != null) {
-          item = options.forEach(() => { /* body not rendered: F142305 */ });
-        }
-        tmp2 = closure_9(c0);
-        tmp3 = closure_10(c1);
-        return;
-      }
-    }
+    tmp18 = cResult[8];
   }
   const effect1 = obj2.useEffect(tmp16, tmp18);
   if (cResult[9] === first1) {
-    class I {
-      constructor() {
-        c0 = false;
-        c1 = false;
-        options = command.options;
-        if (options != null) {
-          item = options.forEach(() => { /* body not rendered: F142305 */ });
-        }
-        tmp2 = closure_9(c0);
-        tmp3 = closure_10(c1);
-        return;
-      }
+    let tmp20;
+    if (cResult[10] === tmp4.applicationTopWrapperScrollView) {
+      tmp20 = cResult[11];
     }
     if (cResult[12] === first1) {
-      class I {
-        constructor() {
-          c0 = false;
-          c1 = false;
-          options = command.options;
-          if (options != null) {
-            item = options.forEach(() => { /* body not rendered: F142305 */ });
-          }
-          tmp2 = closure_9(c0);
-          tmp3 = closure_10(c1);
-          return;
-        }
+      let tmp21;
+      if (cResult[13] === tmp4) {
+        tmp21 = cResult[14];
       }
-      const effect2 = obj2.useEffect(V, tmp21);
+      const effect2 = obj2.useEffect(tmp20, tmp21);
       class N {
         constructor() {
-          name = undefined;
-          tmp = closure_12;
+          let name;
+          const tmp = closure_12;
           if (currentOption != null) {
             name = currentOption.name;
           }
-          tmpResult = tmp(name);
-          return;
+          tmp(name);
         }
       }
       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-        class I {
-          constructor() {
-            c0 = false;
-            c1 = false;
-            options = command.options;
-            if (options != null) {
-              item = options.forEach(() => { /* body not rendered: F142305 */ });
-            }
-            tmp2 = closure_9(c0);
-            tmp3 = closure_10(c1);
-            return;
-          }
-        }
-        const items = [];
+        const items2 = [];
         class N {
           constructor() {
-            name = undefined;
-            tmp = closure_12;
+            let name;
+            const tmp = closure_12;
             if (currentOption != null) {
               name = currentOption.name;
             }
-            tmpResult = tmp(name);
-            return;
+            tmp(name);
           }
         }
-        cResult[15] = items;
-      } else {
-        class I {
-          constructor() {
-            c0 = false;
-            c1 = false;
-            options = command.options;
-            if (options != null) {
-              item = options.forEach(() => { /* body not rendered: F142305 */ });
-            }
-            tmp2 = closure_9(c0);
-            tmp3 = closure_10(c1);
-            return;
-          }
-        }
+        cResult[15] = items2;
       }
       if (cResult[16] === guildId) {
-        class I {
-          constructor() {
-            c0 = false;
-            c1 = false;
-            options = command.options;
-            if (options != null) {
-              item = options.forEach(() => { /* body not rendered: F142305 */ });
-            }
-            tmp2 = closure_9(c0);
-            tmp3 = closure_10(c1);
-            return;
-          }
-        }
         let tmpResult = tmp(tmp2[14]);
         class N {
           constructor() {
-            name = undefined;
-            tmp = closure_12;
+            let name;
+            const tmp = closure_12;
             if (currentOption != null) {
               name = currentOption.name;
             }
-            tmpResult = tmp(name);
-            return;
+            tmp(name);
           }
         }
-        if (cResult[19] === tmp27) {
-          let tmp31;
-          class I {
-            constructor() {
-              c0 = false;
-              c1 = false;
-              options = command.options;
-              if (options != null) {
-                item = options.forEach(() => { /* body not rendered: F142305 */ });
-              }
-              tmp2 = closure_9(c0);
-              tmp3 = closure_10(c1);
-              return;
-            }
+        if (cResult[19] === tmp28) {
+          let tmp29;
+          let tmp32;
+          if (cResult[20] === section) {
+            tmp29 = cResult[21];
           }
           const _Symbol = Symbol;
           class N {
             constructor() {
-              name = undefined;
-              tmp = closure_12;
+              let name;
+              const tmp = closure_12;
               if (currentOption != null) {
                 name = currentOption.name;
               }
-              tmpResult = tmp(name);
-              return;
+              tmp(name);
             }
           }
-          if (tmp30 === Symbol.for("react.memo_cache_sentinel")) {
+          if (tmp31 === Symbol.for("react.memo_cache_sentinel")) {
             class Z {
-              constructor(arg0, arg1) {
-                nativeEvent = command.nativeEvent;
-                current = closure_8.current;
-                current[arg1.name] = { x: nativeEvent.layout.x, width: nativeEvent.layout.width };
-                closure_8.current = current;
-                return;
+              constructor(nativeEvent, name) {
+                nativeEvent = nativeEvent.nativeEvent;
+                const current = ref.current;
+                current[name.name] = { x: nativeEvent.layout.x, width: nativeEvent.layout.width };
+                ref.current = current;
               }
             }
             class N {
               constructor() {
-                name = undefined;
-                tmp = closure_12;
+                let name;
+                const tmp = closure_12;
                 if (currentOption != null) {
                   name = currentOption.name;
                 }
-                tmpResult = tmp(name);
-                return;
+                tmp(name);
               }
             }
-            tmp31 = Z;
+            tmp32 = Z;
           } else {
             class Z {
-              constructor(arg0, arg1) {
-                nativeEvent = command.nativeEvent;
-                current = closure_8.current;
-                current[arg1.name] = { x: nativeEvent.layout.x, width: nativeEvent.layout.width };
-                closure_8.current = current;
-                return;
+              constructor(nativeEvent, name) {
+                nativeEvent = nativeEvent.nativeEvent;
+                const current = ref.current;
+                current[name.name] = { x: nativeEvent.layout.x, width: nativeEvent.layout.width };
+                ref.current = current;
               }
             }
           }
-          Z = tmp31;
+          Z = tmp32;
           class B {
             constructor() {
               if (null != guildId) {
-                tmp2 = section;
-                botId = undefined;
+                let botId;
                 if (section != null) {
                   botId = tmp2.botId;
                 }
                 if (null != botId) {
-                  tmp4 = closure_9;
-                  return closure_9.getMember(tmp, tmp2.botId);
+                  return GuildMemberStore.getMember(tmp, section.botId);
                 }
               }
-              return;
             }
           }
           if (null != undefined) {
             class Z {
-              constructor(arg0, arg1) {
-                nativeEvent = command.nativeEvent;
-                current = closure_8.current;
-                current[arg1.name] = { x: nativeEvent.layout.x, width: nativeEvent.layout.width };
-                closure_8.current = current;
-                return;
+              constructor(nativeEvent, name) {
+                nativeEvent = nativeEvent.nativeEvent;
+                const current = ref.current;
+                current[name.name] = { x: nativeEvent.layout.x, width: nativeEvent.layout.width };
+                ref.current = current;
               }
             }
             if (currentOption != null) {
               class Z {
-                constructor(arg0, arg1) {
-                  nativeEvent = command.nativeEvent;
-                  current = closure_8.current;
-                  current[arg1.name] = { x: nativeEvent.layout.x, width: nativeEvent.layout.width };
-                  closure_8.current = current;
-                  return;
+                constructor(nativeEvent, name) {
+                  nativeEvent = nativeEvent.nativeEvent;
+                  const current = ref.current;
+                  current[name.name] = { x: nativeEvent.layout.x, width: nativeEvent.layout.width };
+                  ref.current = current;
                 }
               }
             }
             class N {
               constructor() {
-                name = undefined;
-                tmp = closure_12;
+                let name;
+                const tmp = closure_12;
                 if (currentOption != null) {
                   name = currentOption.name;
                 }
-                tmpResult = tmp(name);
-                return;
+                tmp(name);
               }
             }
           }
-          if (cResult[23] === tmp28) {
+          if (cResult[23] === tmp29) {
             class Z {
-              constructor(arg0, arg1) {
-                nativeEvent = command.nativeEvent;
-                current = closure_8.current;
-                current[arg1.name] = { x: nativeEvent.layout.x, width: nativeEvent.layout.width };
-                closure_8.current = current;
-                return;
+              constructor(nativeEvent, name) {
+                nativeEvent = nativeEvent.nativeEvent;
+                const current = ref.current;
+                current[name.name] = { x: nativeEvent.layout.x, width: nativeEvent.layout.width };
+                ref.current = current;
               }
             }
             class N {
               constructor() {
-                name = undefined;
-                tmp = closure_12;
+                let name;
+                const tmp = closure_12;
                 if (currentOption != null) {
                   name = currentOption.name;
                 }
-                tmpResult = tmp(name);
-                return;
+                tmp(name);
               }
             }
             if (cResult[26] === tmp4.applicationName) {
               class Z {
-                constructor(arg0, arg1) {
-                  nativeEvent = command.nativeEvent;
-                  current = closure_8.current;
-                  current[arg1.name] = { x: nativeEvent.layout.x, width: nativeEvent.layout.width };
-                  closure_8.current = current;
-                  return;
+                constructor(nativeEvent, name) {
+                  nativeEvent = nativeEvent.nativeEvent;
+                  const current = ref.current;
+                  current[name.name] = { x: nativeEvent.layout.x, width: nativeEvent.layout.width };
+                  ref.current = current;
                 }
               }
               if (cResult[29] === command.options) {
                 class Z {
-                  constructor(arg0, arg1) {
-                    nativeEvent = command.nativeEvent;
-                    current = closure_8.current;
-                    current[arg1.name] = { x: nativeEvent.layout.x, width: nativeEvent.layout.width };
-                    closure_8.current = current;
-                    return;
+                  constructor(nativeEvent, name) {
+                    nativeEvent = nativeEvent.nativeEvent;
+                    const current = ref.current;
+                    current[name.name] = { x: nativeEvent.layout.x, width: nativeEvent.layout.width };
+                    ref.current = current;
                   }
                 }
               }
               class N {
                 constructor() {
-                  name = undefined;
-                  tmp = closure_12;
+                  let name;
+                  const tmp = closure_12;
                   if (currentOption != null) {
                     name = currentOption.name;
                   }
-                  tmpResult = tmp(name);
-                  return;
+                  tmp(name);
                 }
               }
-              if (tmp42 != null) {
+              if (tmp43 != null) {
                 class Z {
-                  constructor(arg0, arg1) {
-                    nativeEvent = command.nativeEvent;
-                    current = closure_8.current;
-                    current[arg1.name] = { x: nativeEvent.layout.x, width: nativeEvent.layout.width };
-                    closure_8.current = current;
-                    return;
+                  constructor(nativeEvent, name) {
+                    nativeEvent = nativeEvent.nativeEvent;
+                    const current = ref.current;
+                    current[name.name] = { x: nativeEvent.layout.x, width: nativeEvent.layout.width };
+                    ref.current = current;
                   }
                 }
               }
               class B {
                 constructor() {
                   if (null != guildId) {
-                    tmp2 = section;
-                    botId = undefined;
+                    let botId;
                     if (section != null) {
                       botId = tmp2.botId;
                     }
                     if (null != botId) {
-                      tmp4 = closure_9;
-                      return closure_9.getMember(tmp, tmp2.botId);
+                      return GuildMemberStore.getMember(tmp, section.botId);
                     }
                   }
-                  return;
                 }
               }
               cResult[30] = onPressOption;
               cResult[31] = optionStates;
               cResult[32] = undefined;
             }
-            const obj4 = { style: null, lineClamp: 1, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: tmp37 };
+            const obj4 = { style: null, lineClamp: 1, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: tmp38 };
             class B {
               constructor() {
                 if (null != guildId) {
-                  tmp2 = section;
-                  botId = undefined;
+                  let botId;
                   if (section != null) {
                     botId = tmp2.botId;
                   }
                   if (null != botId) {
-                    tmp4 = closure_9;
-                    return closure_9.getMember(tmp, tmp2.botId);
+                    return GuildMemberStore.getMember(tmp, section.botId);
                   }
                 }
-                return;
               }
             }
             cResult[26] = tmp4.applicationName;
-            cResult[27] = tmp37;
+            cResult[27] = tmp38;
             cResult[28] = closure_10(tmp(tmp2[17]).Text, obj4);
-            const tmp40 = closure_10(tmp(tmp2[17]).Text, obj4);
+            const tmp41 = closure_10(tmp(tmp2[17]).Text, obj4);
           }
-          let tmp34 = null != tmp28;
-          if (tmp34) {
+          let tmp35 = null != tmp29;
+          if (tmp35) {
             class Z {
-              constructor(arg0, arg1) {
-                nativeEvent = command.nativeEvent;
-                current = closure_8.current;
-                current[arg1.name] = { x: nativeEvent.layout.x, width: nativeEvent.layout.width };
-                closure_8.current = current;
-                return;
+              constructor(nativeEvent, name) {
+                nativeEvent = nativeEvent.nativeEvent;
+                const current = ref.current;
+                current[name.name] = { x: nativeEvent.layout.x, width: nativeEvent.layout.width };
+                ref.current = current;
               }
             }
             class N {
               constructor() {
-                name = undefined;
-                tmp = closure_12;
+                let name;
+                const tmp = closure_12;
                 if (currentOption != null) {
                   name = currentOption.name;
                 }
-                tmpResult = tmp(name);
-                return;
+                tmp(name);
               }
             }
-            tmp36[0] = tmp4.applicationIcon;
-            tmp36[1] = tmp28;
-            tmp34 = closure_10(section(tmp2[16]), tmp36);
+            tmp37[0] = tmp4.applicationIcon;
+            tmp37[1] = tmp29;
+            tmp35 = closure_10(section(tmp2[16]), tmp37);
           }
-          cResult[23] = tmp28;
+          cResult[23] = tmp29;
           cResult[24] = tmp4.applicationIcon;
-          cResult[25] = tmp34;
+          cResult[25] = tmp35;
         }
         const tmpResult2 = tmp(tmp2[15]);
-        const applicationCommandsIconSource = tmpResult2.getApplicationCommandsIconSource(section, tmp27);
+        const applicationCommandsIconSource = tmpResult2.getApplicationCommandsIconSource(section, tmp28);
         class B {
           constructor() {
             if (null != guildId) {
-              tmp2 = section;
-              botId = undefined;
+              let botId;
               if (section != null) {
                 botId = tmp2.botId;
               }
               if (null != botId) {
-                tmp4 = closure_9;
-                return closure_9.getMember(tmp, tmp2.botId);
+                return GuildMemberStore.getMember(tmp, section.botId);
               }
             }
-            return;
           }
         }
-        cResult[19] = tmp27;
+        cResult[19] = tmp28;
         cResult[20] = section;
         cResult[21] = applicationCommandsIconSource;
+        tmp29 = applicationCommandsIconSource;
       }
       class B {
         constructor() {
           if (null != guildId) {
-            tmp2 = section;
-            botId = undefined;
+            let botId;
             if (section != null) {
               botId = tmp2.botId;
             }
             if (null != botId) {
-              tmp4 = closure_9;
-              return closure_9.getMember(tmp, tmp2.botId);
+              return GuildMemberStore.getMember(tmp, section.botId);
             }
           }
-          return;
         }
       }
       cResult[16] = guildId;
@@ -913,13 +705,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((command) => {
     }
     class N {
       constructor() {
-        name = undefined;
-        tmp = closure_12;
+        let name;
+        const tmp = closure_12;
         if (currentOption != null) {
           name = currentOption.name;
         }
-        tmpResult = tmp(name);
-        return;
+        tmp(name);
       }
     }
     tmp22[0] = first1;
@@ -930,27 +721,23 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((command) => {
   }
   class V {
     constructor() {
-      tmp2 = null;
-      if (null != closure_11) {
-        tmp3 = closure_8;
-        tmp2 = closure_8.current[tmp];
+      let tmp2 = null;
+      if (null != first1) {
+        tmp2 = ref.current[tmp];
       }
       if (null != tmp2) {
-        tmp4 = closure_7;
-        current = closure_7.current;
+        const current = ref.current;
         if (current != null) {
-          obj = { x: null, animated: true };
-          tmp5 = closure_6;
-          obj.x = tmp2.x - closure_6.applicationTopWrapperScrollView.paddingHorizontal;
-          scrollToResult = current.scrollTo(obj);
+          const obj = { x: tmp2.x - closure_6.applicationTopWrapperScrollView.paddingHorizontal, animated: true };
+          current.scrollTo(obj);
         }
       }
-      return;
     }
   }
   cResult[9] = first1;
   cResult[10] = tmp4.applicationTopWrapperScrollView;
   cResult[11] = V;
+  tmp20 = V;
 }) : ((command) => {
   let _undefined;
   let _undefined2;
@@ -1064,11 +851,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((command) => {
   const tmp21 = ref;
   if (tmp22) {
     const obj4 = { style: tmp.applicationIcon, source: memo };
-    tmp22 = c10(section(5981), obj4);
+    tmp22 = c10(section(6164), obj4);
   }
   items5 = [tmp22, , , ];
   const obj5 = { style: tmp.applicationName, lineClamp: 1, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: `/ ${command.displayName}` };
-  items5[1] = c10(command(4892).Text, obj5);
+  items5[1] = c10(command(5086).Text, obj5);
   let options = command.options;
   let mapped;
   if (options != null) {
@@ -1108,7 +895,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((command) => {
     items6[1] = applicationOptionalOptionsDividerWithNoRequired;
     const items7 = [c10(ref, obj6), , ];
     const obj7 = { style: tmp.applicationOptionalOptionsIndicator, lineClamp: 1, variant: "eyebrow", color: "text-muted", children: intl.string(command(1126).t.U19GM3) };
-    const Text = tmp12(4892).Text;
+    const Text = tmp12(5086).Text;
     intl = tmp12(1126).intl;
     items7[1] = c10(Text, obj7);
     const options1 = command.options;
@@ -1140,20 +927,22 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((command) => {
   items5[3] = tmp19Result;
   items8 = [closure_12(tmp21, obj3), , , ];
   const obj9 = { style: tmp.applicationDescriptionDivider };
-  items8[1] = c10(command(8924).FormDivider, obj9);
+  items8[1] = c10(command(8555).FormDivider, obj9);
   items8[2] = c10(closure_15, { command, option: currentOption, optionState: tmp17 });
   const obj10 = { style: tmp.applicationDescriptionDivider };
-  items8[3] = c10(command(8924).FormDivider, obj10);
+  items8[3] = c10(command(8555).FormDivider, obj10);
   return closure_12(ref, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((optionState) => {
   let closure_129_6;
+  let closure_5;
   let command;
   let first;
   let first1;
+  let items;
   let option;
-  let tmp11;
+  let tmp12;
   let tmp = require;
   let tmp2 = dependencyMap;
   const obj = react2;
@@ -1161,75 +950,60 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((optionState) =
   ({ command, option } = optionState);
   optionState = optionState.optionState;
   const tmp4 = closure_13();
-  const tmp5 = usePreviousDefault(option);
-  let closure_1 = tmp5;
+  const tmp6 = usePreviousDefault(option);
+  let closure_1 = tmp6;
   [first, closure_3] = react.useState(undefined);
-  [first1, _objectWithoutProperties] = react.useState(0);
-  [tmp11, closure_129_6] = _slicedToArray(react.useState(0), 2);
-  const tmp10 = _slicedToArray(react.useState(0), 2);
-  const tmp12 = usePreviousDefault(first1);
-  let closure_7 = tmp12;
+  [first1, closure_5] = react.useState(0);
+  [tmp12, closure_129_6] = _slicedToArray(react.useState(0), 2);
+  const tmp11 = _slicedToArray(react.useState(0), 2);
+  const tmp13 = usePreviousDefault(first1);
+  let closure_7 = tmp13;
   const obj2 = react;
   if (cResult[0] === first1) {
     if (cResult[1] === option) {
-      if (cResult[2] === tmp12) {
-        let tmp13;
+      if (cResult[2] === tmp13) {
         let tmp14;
-        let tmp16;
-        if (cResult[3] === tmp5) {
-          tmp13 = cResult[4];
-          tmp14 = cResult[5];
+        let tmp15;
+        let tmp17;
+        if (cResult[3] === tmp6) {
+          tmp14 = cResult[4];
+          tmp15 = cResult[5];
         }
-        const effect = obj2.useEffect(tmp13, tmp14);
+        const effect = obj2.useEffect(tmp14, tmp15);
         if (cResult[6] !== first) {
           const fn2 = function s() {
             closure_3(1);
           };
           cResult[6] = first;
-          class B {
-            constructor(nativeEvent) {
-              const truncResult = Math.trunc(nativeEvent.nativeEvent.layout.height);
-              const tmp2 = undefined === first || truncResult > first1;
-              if (tmp2) {
-                closure_5(truncResult);
-              }
-              closure_1_6(truncResult);
-            }
-          }
-          tmp16 = fn2;
+          cResult[7] = fn2;
+          tmp17 = fn2;
         } else {
-          tmp16 = cResult[7];
+          tmp17 = cResult[7];
         }
         if (cResult[8] === first1) {
-          let tmp17;
-          let obj10;
+          let tmp18;
+          let obj14;
           if (cResult[9] === first) {
-            tmp17 = cResult[10];
+            tmp18 = cResult[10];
           }
-          class B {
-            constructor(nativeEvent) {
-              const truncResult = Math.trunc(nativeEvent.nativeEvent.layout.height);
-              const tmp2 = undefined === first || truncResult > first1;
-              if (tmp2) {
-                closure_5(truncResult);
-              }
-              closure_1_6(truncResult);
-            }
+          let str = "button";
+          if (1 === first && tmp12 === first1) {
+            str = "text";
           }
           if (cResult[11] === command) {
             if (cResult[12] === first) {
-              if (cResult[13] === tmp17) {
+              if (cResult[13] === tmp18) {
                 if (cResult[14] === option) {
-                  let tmp19;
+                  let tmp20;
                   if (cResult[15] === optionState) {
-                    tmp19 = cResult[16];
+                    tmp20 = cResult[16];
                   }
                   if (cResult[17] === tmp4.applicationDescriptionContainer) {
-                    let tmp24;
-                    if (cResult[18] === tmp19) {
-                      tmp24 = cResult[19];
+                    let tmp25;
+                    if (cResult[18] === tmp20) {
+                      tmp25 = cResult[19];
                     }
-                    if (cResult[20] === tmp11) {
+                    if (cResult[20] === tmp12) {
                       if (cResult[21] === first1) {
                         if (cResult[22] === tmp4.descriptionEllipsis) {
                           let tmp29;
@@ -1237,160 +1011,101 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((optionState) =
                             tmp29 = cResult[24];
                           }
                           if (cResult[25] === tmp4.optionDescriptionContainer) {
-                            if (cResult[26] === tmp24) {
+                            if (cResult[26] === tmp25) {
                               let tmp32;
                               if (cResult[27] === tmp29) {
                                 tmp32 = cResult[28];
                               }
-                              if (cResult[29] === "button") {
-                                if (cResult[30] === tmp16) {
-                                  if (cResult[31] === (1 === first && tmp11 === first1)) {
-                                    let tmp37;
+                              if (cResult[29] === str) {
+                                if (cResult[30] === tmp17) {
+                                  if (cResult[31] === (1 === first && tmp12 === first1)) {
+                                    let tmp36;
                                     if (cResult[32] === tmp32) {
-                                      tmp37 = cResult[33];
+                                      tmp36 = cResult[33];
                                     }
-                                    return tmp37;
+                                    return tmp36;
                                   }
                                 }
                               }
-                              const obj3 = { accessibilityRole: null, disabled: 1 === first && tmp11 === first1, onPress: tmp16, children: tmp32 };
-                              class B {
-                                constructor(nativeEvent) {
-                                  const truncResult = Math.trunc(nativeEvent.nativeEvent.layout.height);
-                                  const tmp2 = undefined === first || truncResult > first1;
-                                  if (tmp2) {
-                                    closure_5(truncResult);
-                                  }
-                                  closure_1_6(truncResult);
-                                }
-                              }
-                              const tmp39 = authStore(Pressables.PressableOpacity, obj3);
-                              cResult[29] = "button";
-                              cResult[30] = tmp16;
-                              cResult[31] = 1 === first && tmp11 === first1;
+                              const obj3 = { accessibilityRole: str, disabled: 1 === first && tmp12 === first1, onPress: tmp17, children: tmp32 };
+                              const tmp38 = authStore(Pressables.PressableOpacity, obj3);
+                              cResult[29] = str;
+                              cResult[30] = tmp17;
+                              cResult[31] = 1 === first && tmp12 === first1;
                               cResult[32] = tmp32;
-                              cResult[33] = tmp39;
-                              tmp37 = tmp39;
+                              cResult[33] = tmp38;
+                              tmp36 = tmp38;
                             }
                           }
-                          class B {
-                            constructor(nativeEvent) {
-                              const truncResult = Math.trunc(nativeEvent.nativeEvent.layout.height);
-                              const tmp2 = undefined === first || truncResult > first1;
-                              if (tmp2) {
-                                closure_5(truncResult);
-                              }
-                              closure_1_6(truncResult);
-                            }
-                          }
-                          tmp35[0] = tmp4.optionDescriptionContainer;
-                          const items = [tmp24, tmp29];
-                          tmp35[1] = items;
-                          const tmp36 = closure_12(metroImportDefault, tmp35);
+                          const obj4 = { style: tmp4.optionDescriptionContainer, children: items };
+                          items = [tmp25, tmp29];
+                          const tmp35 = closure_12(metroImportDefault, obj4);
                           cResult[25] = tmp4.optionDescriptionContainer;
-                          cResult[26] = tmp24;
+                          cResult[26] = tmp25;
                           cResult[27] = tmp29;
-                          cResult[28] = tmp36;
-                          tmp32 = tmp36;
+                          cResult[28] = tmp35;
+                          tmp32 = tmp35;
                         }
                       }
                     }
-                    if (tmp11 !== first1) {
-                      ({ descriptionEllipsis: obj5.style, descriptionEllipsisDots: obj5.dotStyle } = tmp4);
-                      class B {
-                        constructor(nativeEvent) {
-                          const truncResult = Math.trunc(nativeEvent.nativeEvent.layout.height);
-                          const tmp2 = undefined === first || truncResult > first1;
-                          if (tmp2) {
-                            closure_5(truncResult);
-                          }
-                          closure_1_6(truncResult);
-                        }
-                      }
+                    let tmp30 = null;
+                    if (tmp12 !== first1) {
+                      const obj5 = { style: null, dotStyle: null };
+                      ({ descriptionEllipsis: obj6.style, descriptionEllipsisDots: obj6.dotStyle } = tmp4);
+                      tmp30 = authStore(DescriptionEllipsisDefault, obj5);
                     }
-                    class B {
-                      constructor(nativeEvent) {
-                        const truncResult = Math.trunc(nativeEvent.nativeEvent.layout.height);
-                        const tmp2 = undefined === first || truncResult > first1;
-                        if (tmp2) {
-                          closure_5(truncResult);
-                        }
-                        closure_1_6(truncResult);
-                      }
-                    }
-                    cResult[20] = tmp11;
+                    cResult[20] = tmp12;
                     cResult[21] = first1;
                     cResult[22] = tmp4.descriptionEllipsis;
                     cResult[23] = tmp4.descriptionEllipsisDots;
-                    cResult[24] = null;
+                    cResult[24] = tmp30;
                     tmp29 = tmp30;
                   }
-                  class B {
-                    constructor(nativeEvent) {
-                      const truncResult = Math.trunc(nativeEvent.nativeEvent.layout.height);
-                      const tmp2 = undefined === first || truncResult > first1;
-                      if (tmp2) {
-                        closure_5(truncResult);
-                      }
-                      closure_1_6(truncResult);
-                    }
-                  }
-                  tmp27[0] = tmp4.applicationDescriptionContainer;
-                  tmp27[1] = tmp19;
-                  const tmp28 = authStore(metroImportDefault, tmp27);
+                  const obj7 = { style: tmp4.applicationDescriptionContainer, children: tmp20 };
+                  const tmp28 = authStore(metroImportDefault, obj7);
                   cResult[17] = tmp4.applicationDescriptionContainer;
-                  cResult[18] = tmp19;
+                  cResult[18] = tmp20;
                   cResult[19] = tmp28;
-                  tmp24 = tmp28;
+                  tmp25 = tmp28;
                 }
               }
             }
           }
           let error;
           const Text = Text_Text.Text;
-          const tmp20 = authStore;
+          const tmp21 = authStore;
           if (optionState != null) {
             if (optionState.lastValidationResult != null) {
               error = lastValidationResult.error;
             }
           }
           if (null != error) {
-            class B {
-              constructor(nativeEvent) {
-                const truncResult = Math.trunc(nativeEvent.nativeEvent.layout.height);
-                const tmp2 = undefined === first || truncResult > first1;
-                if (tmp2) {
-                  closure_5(truncResult);
-                }
-                closure_1_6(truncResult);
-              }
-            }
+            obj14 = { lineClamp: first, onLayout: tmp18, variant: "text-sm/medium", color: "text-feedback-critical", children: optionState.lastValidationResult.error };
+            const obj8 = { lineClamp: first, onLayout: tmp18, variant: "text-sm/medium", color: "text-feedback-critical", children: optionState.lastValidationResult.error };
           } else {
-            obj10 = { lineClamp: first, onLayout: tmp17, variant: "text-sm/medium", color: "mobile-text-heading-primary", children: null != option ? option.displayDescription : command.displayDescription };
+            obj14 = { lineClamp: first, onLayout: tmp18, variant: "text-sm/medium", color: "mobile-text-heading-primary", children: null != option ? option.displayDescription : command.displayDescription };
           }
-          const tmp20Result = tmp20(Text, obj10);
+          const tmp21Result = tmp21(Text, obj14);
           cResult[11] = command;
           cResult[12] = first;
-          cResult[13] = tmp17;
+          cResult[13] = tmp18;
           cResult[14] = option;
           cResult[15] = optionState;
-          cResult[16] = tmp20Result;
-          tmp19 = tmp20Result;
+          cResult[16] = tmp21Result;
+          tmp20 = tmp21Result;
         }
-        class B {
-          constructor(nativeEvent) {
-            const truncResult = Math.trunc(nativeEvent.nativeEvent.layout.height);
-            const tmp2 = undefined === first || truncResult > first1;
-            if (tmp2) {
-              closure_5(truncResult);
-            }
-            closure_1_6(truncResult);
+        function onDescriptionLayout(nativeEvent) {
+          const truncResult = Math.trunc(nativeEvent.nativeEvent.layout.height);
+          const tmp2 = undefined === first || truncResult > first1;
+          if (tmp2) {
+            closure_5(truncResult);
           }
+          closure_1_6(truncResult);
         }
         cResult[8] = first1;
         cResult[9] = first;
-        cResult[10] = B;
-        tmp17 = B;
+        cResult[10] = onDescriptionLayout;
+        tmp18 = onDescriptionLayout;
       }
     }
   }
@@ -1406,15 +1121,15 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((optionState) =
       }
     }
   };
-  const items1 = [tmp5, option, first1, tmp12];
+  const items1 = [tmp6, option, first1, tmp13];
   cResult[0] = first1;
   cResult[1] = option;
-  cResult[2] = tmp12;
-  cResult[3] = tmp5;
+  cResult[2] = tmp13;
+  cResult[3] = tmp6;
   cResult[4] = fn;
   cResult[5] = items1;
-  tmp14 = items1;
-  tmp13 = fn;
+  tmp15 = items1;
+  tmp14 = fn;
 }) : ((option) => {
   let Text;
   let c6;

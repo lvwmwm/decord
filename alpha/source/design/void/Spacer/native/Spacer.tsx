@@ -1,9 +1,9 @@
-// Module ID: 13954
-// Function ID: 13955
+// Module ID: 14254
+// Function ID: 14255
 // Name: Spacer
 // Dependencies: [19, 17, 21, 12, 558, 576, 2]
 
-// Module 13954 (Spacer)
+// Module 14254 (Spacer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -18,7 +18,7 @@ let closure_4 = module_12.memoize((width) => {
   size = { width, height: width };
   return size;
 });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Spacer(arg0) {
   let pointerEvents;
   let tmp2;
   const obj = react2;
@@ -44,7 +44,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp2;
   cResult[4] = tmp6;
   tmp5 = tmp6;
-}) : ((pointerEvents) => <View style={closure_4(arg0.size)} pointerEvents={arg0.pointerEvents} />);
+}) : (function Spacer(pointerEvents) {
+  return <View style={closure_4(arg0.size)} pointerEvents={arg0.pointerEvents} />;
+});
 let size = size_mod;
 const result = size.fileFinishedImporting("design/void/Spacer/native/Spacer.tsx");
 

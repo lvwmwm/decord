@@ -1,17 +1,15 @@
-// Module ID: 10086
-// Function ID: 10087
+// Module ID: 9669
+// Function ID: 9670
 // Name: useBackspaceHandler
 // Dependencies: [19, 558, 576, 2]
 
-// Module 10086 (useBackspaceHandler)
+// Module 9669 (useBackspaceHandler)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let selection;
-
 const re3 = /((\ud83c[\udde6-\uddff]){2}|([#*0-9]\u20e3)|(\u00a9|\u00ae|[\u2000-\u3300]|[\ud83c-\ud83e][\ud000-\udfff])((\ud83c[\udffb-\udfff])?(\ud83e[\uddb0-\uddb3])?(\ufe0f?\u200d([\u2000-\u3300]|[\ud83c-\ud83e][\ud000-\udfff])\ufe0f?)?)*)/g;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selection) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBackspaceHandler(selection) {
   let draftContent;
   let obj = selection(draftContent[2]);
   const cResult = obj.c(4);
@@ -76,7 +74,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selection) => {
   cResult[2] = selection;
   cResult[3] = fn;
   tmp2 = fn;
-}) : ((selection) => {
+}) : (function useBackspaceHandler(selection) {
   selection = selection.selection;
   const draftContent = selection.draftContent;
   const handleTextChange = selection.handleTextChange;

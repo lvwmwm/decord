@@ -1,19 +1,19 @@
-// Module ID: 5787
-// Function ID: 5788
+// Module ID: 5370
+// Function ID: 5371
 // Name: useBackPressHandler
-// Dependencies: [19, 17, 5788, 1369, 558, 576, 2]
+// Dependencies: [19, 17, 5371, 1381, 558, 576, 2]
 // Exports: subscribeToBackPress
 
-// Module 5787 (useBackPressHandler)
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import KeyCommands from "KeyCommands" /* 5788 */;
+// Module 5370 (useBackPressHandler)
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import KeyCommands from "KeyCommands" /* 5371 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let MinimizeApp, _require, cResult, dependencyMap;
+let MinimizeApp, _require, dependencyMap;
 
 let c3;
 let closure_4;
@@ -26,7 +26,7 @@ let obj = {
     return true;
   }
 };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult, arg1) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBackPressHandler(cResult, arg1) {
   let closure_2;
   let current;
   let tmp3;
@@ -39,7 +39,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult, arg1) => {
   let obj2 = react;
   react = react.useRef(cResult);
   if (cResult[0] !== cResult) {
-    let fn = function t() {
+    let fn = function c() {
       closure_2.current = current;
     };
     cResult[0] = cResult;
@@ -50,7 +50,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult, arg1) => {
   }
   const layoutEffect = obj2.useLayoutEffect(tmp3);
   if (cResult[2] !== (undefined === arg1 || arg1)) {
-    let fn2 = function c() {
+    let fn2 = function t() {
       let ref;
       const tmp = closure_1;
       if (tmp) {
@@ -81,7 +81,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult, arg1) => {
     tmp6 = cResult[4];
   }
   const effect = obj2.useEffect(tmp5, tmp6);
-}) : ((cResult) => {
+}) : (function useBackPressHandler(cResult) {
   let closure_2;
   const current = cResult;
   let flag = arg1;

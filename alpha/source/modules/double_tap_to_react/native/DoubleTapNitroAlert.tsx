@@ -1,25 +1,23 @@
-// Module ID: 7644
-// Function ID: 7645
+// Module ID: 7965
+// Function ID: 7966
 // Name: DoubleTapNitroAlert
-// Dependencies: [19, 17, 7639, 1085, 7645, 21, 4896, 558, 576, 6895, 5716, 4806, 1126, 5720, 2]
+// Dependencies: [19, 17, 7960, 1085, 7966, 21, 5090, 558, 576, 7084, 5299, 5000, 1126, 5303, 2]
 
-// Module 7644 (DoubleTapNitroAlert)
+// Module 7965 (DoubleTapNitroAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 4806 */;
-import AlertModal2 from "AlertModal" /* 5720 */;
-import DoubleTapToRaectConstants from "DoubleTapToRaectConstants" /* 7639 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 5000 */;
+import AlertModal2 from "AlertModal" /* 5303 */;
+import openUserSettings from "openUserSettings" /* 7084 */;
+import DoubleTapToRaectConstants from "DoubleTapToRaectConstants" /* 7960 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-const require = globalThis.__r;
-let emojiName, openUserSettingsResult;
 
 let c9;
 let metroImportAll;
@@ -30,16 +28,17 @@ const UserSettingsSections = Constants.UserSettingsSections;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 ({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
 let closure_10 = createStyles.createStyles({ icon: { alignItems: "center", justifyContent: "center" } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiName) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DoubleTapNitroAlert(emojiName) {
   let constants2;
   let first;
-  let intl;
-  let intl2;
+  let intl3;
+  let intl4;
   let items;
-  let tmp12;
+  let tmp10;
+  let tmp14;
   let tmp16;
   let tmp18;
-  let tmp22;
+  let tmp21;
   let tmp6;
   let tmp7;
   let obj = react2;
@@ -51,7 +50,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiName) => {
       let obj3;
       const obj2 = { screen: constants.TEXT, params: obj3 };
       obj3 = { initialSetting: constants2.DOUBLE_TAP_EMOJI };
-      const obj = require("openUserSettings");
+      const obj = openUserSettings;
       obj.openUserSettings(obj2);
     };
     cResult[0] = fn;
@@ -60,231 +59,90 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiName) => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    class E {
-      constructor() {
-        obj = closure_1_0(closure_1_1[9]);
-        obj1 = { screen: closure_1_5.PREMIUM };
-        openUserSettingsResult = obj.openUserSettings(obj1, () => {
-          const obj = closure_1_0(closure_1_1[10]);
-          obj.dismissAlert(closure_1_4);
-        });
-        return;
-      }
-    }
-    cResult[1] = E;
-    tmp6 = E;
+    const fn2 = function b() {
+      let obj = openUserSettings;
+      const obj2 = { screen: constants.PREMIUM };
+      obj.openUserSettings(obj2, () => {
+        const obj = closure_1_0(closure_1_1[10]);
+        obj.dismissAlert(closure_1_4);
+      });
+    };
+    cResult[1] = fn2;
+    tmp6 = fn2;
   } else {
-    class E {
-      constructor() {
-        obj = closure_1_0(closure_1_1[9]);
-        obj1 = { screen: closure_1_5.PREMIUM };
-        openUserSettingsResult = obj.openUserSettings(obj1, () => {
-          const obj = closure_1_0(closure_1_1[10]);
-          obj.dismissAlert(closure_1_4);
-        });
-        return;
-      }
-    }
+    tmp6 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    class E {
-      constructor() {
-        obj = closure_1_0(closure_1_1[9]);
-        obj1 = { screen: closure_1_5.PREMIUM };
-        openUserSettingsResult = obj.openUserSettings(obj1, () => {
-          const obj = closure_1_0(closure_1_1[10]);
-          obj.dismissAlert(closure_1_4);
-        });
-        return;
-      }
-    }
     let obj2 = { size: "custom", style: { width: 40, height: 40 } };
-    const tmp8 = metroImportDefault(CircleErrorIcon.CircleErrorIcon, obj2);
-    cResult[2] = tmp8;
-    tmp7 = tmp8;
+    const tmp9 = metroImportDefault(CircleErrorIcon.CircleErrorIcon, obj2);
+    cResult[2] = tmp9;
+    tmp7 = tmp9;
   } else {
-    class E {
-      constructor() {
-        obj = closure_1_0(closure_1_1[9]);
-        obj1 = { screen: closure_1_5.PREMIUM };
-        openUserSettingsResult = obj.openUserSettings(obj1, () => {
-          const obj = closure_1_0(closure_1_1[10]);
-          obj.dismissAlert(closure_1_4);
-        });
-        return;
-      }
-    }
+    tmp7 = cResult[2];
   }
   if (cResult[3] !== tmp4.icon) {
-    class E {
-      constructor() {
-        obj = closure_1_0(closure_1_1[9]);
-        obj1 = { screen: closure_1_5.PREMIUM };
-        openUserSettingsResult = obj.openUserSettings(obj1, () => {
-          const obj = closure_1_0(closure_1_1[10]);
-          obj.dismissAlert(closure_1_4);
-        });
-        return;
-      }
-    }
     let obj3 = { style: tmp4.icon, children: tmp7 };
+    const tmp13 = metroImportDefault(View, obj3);
     cResult[3] = tmp4.icon;
-    cResult[4] = metroImportDefault(View, obj3);
-    const tmp11 = metroImportDefault(View, obj3);
+    cResult[4] = tmp13;
+    tmp10 = tmp13;
   } else {
-    class E {
-      constructor() {
-        obj = closure_1_0(closure_1_1[9]);
-        obj1 = { screen: closure_1_5.PREMIUM };
-        openUserSettingsResult = obj.openUserSettings(obj1, () => {
-          const obj = closure_1_0(closure_1_1[10]);
-          obj.dismissAlert(closure_1_4);
-        });
-        return;
-      }
-    }
+    tmp10 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class E {
-      constructor() {
-        obj = closure_1_0(closure_1_1[9]);
-        obj1 = { screen: closure_1_5.PREMIUM };
-        openUserSettingsResult = obj.openUserSettings(obj1, () => {
-          const obj = closure_1_0(closure_1_1[10]);
-          obj.dismissAlert(closure_1_4);
-        });
-        return;
-      }
-    }
-    const stringResult = obj4.string(intl5.t.HRAWfC);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(intl5.t.HRAWfC);
     cResult[5] = stringResult;
-    tmp12 = stringResult;
+    tmp14 = stringResult;
   } else {
-    class E {
-      constructor() {
-        obj = closure_1_0(closure_1_1[9]);
-        obj1 = { screen: closure_1_5.PREMIUM };
-        openUserSettingsResult = obj.openUserSettings(obj1, () => {
-          const obj = closure_1_0(closure_1_1[10]);
-          obj.dismissAlert(closure_1_4);
-        });
-        return;
-      }
-    }
+    tmp14 = cResult[5];
   }
   if (cResult[6] !== emojiName) {
-    class E {
-      constructor() {
-        obj = closure_1_0(closure_1_1[9]);
-        obj1 = { screen: closure_1_5.PREMIUM };
-        openUserSettingsResult = obj.openUserSettings(obj1, () => {
-          const obj = closure_1_0(closure_1_1[10]);
-          obj.dismissAlert(closure_1_4);
-        });
-        return;
-      }
-    }
-    const obj6 = { emojiName, onRenewNitro: tmp6 };
+    const intl2 = tmp(1126).intl;
+    const obj4 = { emojiName, onRenewNitro: tmp6 };
+    const formatResult = intl2.format(intl5.t["3u/Je4"], obj4);
     cResult[6] = emojiName;
-    cResult[7] = obj5.format(intl5.t["3u/Je4"], obj6);
-    const formatResult = obj5.format(intl5.t["3u/Je4"], obj6);
+    cResult[7] = formatResult;
+    tmp16 = formatResult;
   } else {
-    class E {
-      constructor() {
-        obj = closure_1_0(closure_1_1[9]);
-        obj1 = { screen: closure_1_5.PREMIUM };
-        openUserSettingsResult = obj.openUserSettings(obj1, () => {
-          const obj = closure_1_0(closure_1_1[10]);
-          obj.dismissAlert(closure_1_4);
-        });
-        return;
-      }
-    }
+    tmp16 = cResult[7];
   }
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    class E {
-      constructor() {
-        obj = closure_1_0(closure_1_1[9]);
-        obj1 = { screen: closure_1_5.PREMIUM };
-        openUserSettingsResult = obj.openUserSettings(obj1, () => {
-          const obj = closure_1_0(closure_1_1[10]);
-          obj.dismissAlert(closure_1_4);
-        });
-        return;
-      }
-    }
-    const obj7 = { onPress: first, text: intl.string(intl5.t.LIIHRy) };
-    const AlertActionButton = tmp(5720).AlertActionButton;
-    intl = tmp(1126).intl;
-    const tmp17 = metroImportDefault(AlertActionButton, obj7, "confirm");
-    cResult[8] = tmp17;
-    tmp16 = tmp17;
+    const obj5 = { onPress: first, text: intl3.string(intl5.t.LIIHRy) };
+    const AlertActionButton = tmp(5303).AlertActionButton;
+    intl3 = tmp(1126).intl;
+    const tmp20 = metroImportDefault(AlertActionButton, obj5, "confirm");
+    cResult[8] = tmp20;
+    tmp18 = tmp20;
   } else {
-    class E {
-      constructor() {
-        obj = closure_1_0(closure_1_1[9]);
-        obj1 = { screen: closure_1_5.PREMIUM };
-        openUserSettingsResult = obj.openUserSettings(obj1, () => {
-          const obj = closure_1_0(closure_1_1[10]);
-          obj.dismissAlert(closure_1_4);
-        });
-        return;
-      }
-    }
+    tmp18 = cResult[8];
   }
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    class E {
-      constructor() {
-        obj = closure_1_0(closure_1_1[9]);
-        obj1 = { screen: closure_1_5.PREMIUM };
-        openUserSettingsResult = obj.openUserSettings(obj1, () => {
-          const obj = closure_1_0(closure_1_1[10]);
-          obj.dismissAlert(closure_1_4);
-        });
-        return;
-      }
-    }
-    const obj8 = { children: items };
-    items = [tmp16, ];
-    const obj9 = { variant: "secondary", text: intl2.string(intl5.t["Nr6v2+"]) };
-    const AlertActionButton2 = tmp(5720).AlertActionButton;
-    intl2 = tmp(1126).intl;
-    items[1] = metroImportDefault(AlertActionButton2, obj9, "cancel");
-    const tmp21 = React4(metroImportAll, obj8);
-    cResult[9] = tmp21;
-    tmp18 = tmp21;
+    const obj6 = { children: items };
+    items = [tmp18, ];
+    const obj7 = { variant: "secondary", text: intl4.string(intl5.t["Nr6v2+"]) };
+    const AlertActionButton2 = tmp(5303).AlertActionButton;
+    intl4 = tmp(1126).intl;
+    items[1] = metroImportDefault(AlertActionButton2, obj7, "cancel");
+    const tmp25 = React4(metroImportAll, obj6);
+    cResult[9] = tmp25;
+    tmp21 = tmp25;
   } else {
-    class E {
-      constructor() {
-        obj = closure_1_0(closure_1_1[9]);
-        obj1 = { screen: closure_1_5.PREMIUM };
-        openUserSettingsResult = obj.openUserSettings(obj1, () => {
-          const obj = closure_1_0(closure_1_1[10]);
-          obj.dismissAlert(closure_1_4);
-        });
-        return;
-      }
-    }
+    tmp21 = cResult[9];
   }
-  if (cResult[10] === tmp9) {
-    class E {
-      constructor() {
-        obj = closure_1_0(closure_1_1[9]);
-        obj1 = { screen: closure_1_5.PREMIUM };
-        openUserSettingsResult = obj.openUserSettings(obj1, () => {
-          const obj = closure_1_0(closure_1_1[10]);
-          obj.dismissAlert(closure_1_4);
-        });
-        return;
-      }
+  if (cResult[10] === tmp10) {
+    let tmp26;
+    if (cResult[11] === tmp16) {
+      tmp26 = cResult[12];
     }
-    return tmp22;
+    return tmp26;
   }
-  tmp22 = metroImportDefault(AlertModal2.AlertModal, { header: tmp9, title: tmp12, content: tmp14, actions: tmp18 });
-  cResult[10] = tmp9;
-  cResult[11] = tmp14;
-  cResult[12] = tmp22;
-}) : ((emojiName) => {
+  const tmp27 = metroImportDefault(AlertModal2.AlertModal, { header: tmp10, title: tmp14, content: tmp16, actions: tmp21 });
+  cResult[10] = tmp10;
+  cResult[11] = tmp16;
+  cResult[12] = tmp27;
+  tmp26 = tmp27;
+}) : (function DoubleTapNitroAlert(emojiName) {
   let constants2;
   let intl;
   let intl2;
@@ -299,11 +157,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiName) => {
     let obj3;
     const obj2 = { screen: constants.TEXT, params: obj3 };
     obj3 = { initialSetting: constants2.DOUBLE_TAP_EMOJI };
-    const obj = require("openUserSettings");
+    const obj = openUserSettings;
     obj.openUserSettings(obj2);
   }, []);
   const callback1 = react.useCallback(() => {
-    let obj = require("openUserSettings");
+    let obj = openUserSettings;
     const obj2 = { screen: constants.PREMIUM };
     obj.openUserSettings(obj2, () => {
       const obj = closure_1_0(closure_1_1[10]);

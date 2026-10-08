@@ -1,18 +1,18 @@
-// Module ID: 8520
-// Function ID: 8521
+// Module ID: 9004
+// Function ID: 9005
 // Name: PremiumFeaturesBackground
-// Dependencies: [109, 19, 6951, 1379, 21, 4896, 587, 558, 576, 683, 5612, 1105, 2]
+// Dependencies: [109, 19, 7140, 1391, 21, 5090, 587, 558, 576, 683, 5387, 1105, 2]
 
-// Module 8520 (PremiumFeaturesBackground)
+// Module 9004 (PremiumFeaturesBackground)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import LinearGradientDefault from "LinearGradient" /* 5612 */;
-import ColorConstants from "ColorConstants" /* 6951 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import LinearGradientDefault from "LinearGradient" /* 5387 */;
+import ColorConstants from "ColorConstants" /* 7140 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ const jsx = Fragment.jsx;
 let obj = { cardContainer: obj2 };
 obj2 = { display: "flex", borderRadius: nativeDefault.radii.lg, flexDirection: "column", justifyContent: "space-between", overflow: "hidden" };
 let closure_8 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeaturesBackground(arg0) {
   let PREMIUM_TIER_0;
   let children;
   let num7;
@@ -118,7 +118,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = num7;
   cResult[8] = mapped;
   tmp15 = mapped;
-}) : ((opacity) => {
+}) : (function PremiumFeaturesBackground(opacity) {
   let PREMIUM_TIER_0;
   let children;
   let style;

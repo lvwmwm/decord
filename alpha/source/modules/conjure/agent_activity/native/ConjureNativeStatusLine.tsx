@@ -1,21 +1,19 @@
-// Module ID: 16670
-// Function ID: 16671
+// Module ID: 16933
+// Function ID: 16934
 // Name: ConjureNativeStatusLine
-// Dependencies: [19, 17, 21, 587, 4896, 558, 576, 4586, 10857, 6715, 12515, 4892, 16671, 1126, 3753, 5916, 2]
+// Dependencies: [19, 17, 21, 587, 5090, 558, 576, 4778, 10508, 6892, 12611, 5086, 16934, 1126, 3827, 6189, 2]
 // Exports: laneTintFor, laneTintIndexFor
 
-// Module 16670 (ConjureNativeStatusLine)
+// Module 16933 (ConjureNativeStatusLine)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import MagicWandIcon from "MagicWandIcon" /* 12515 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import MagicWandIcon from "MagicWandIcon" /* 12611 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let line;
 
 let hasOwnProperty;
 let metroRequire;
@@ -33,7 +31,7 @@ createStyles = createStyles.createStyles;
 obj3 = { flexShrink: 0, marginLeft: nativeDefault.space.PX_8 };
 obj4 = { flexShrink: 0, marginLeft: nativeDefault.space.PX_4 };
 let closure_8 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((line) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativeStatusLine(line) {
   let ChevronSmallRightIcon;
   let TEXT_BRAND;
   let crestColor;
@@ -251,7 +249,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((line) => {
   cResult[12] = trailing;
   cResult[13] = fn;
   tmp19 = fn;
-}) : ((line) => {
+}) : (function ConjureNativeStatusLine(line) {
   let crestColor;
   let epoch;
   let inGutter;

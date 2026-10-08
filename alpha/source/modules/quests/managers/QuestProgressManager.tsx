@@ -1,37 +1,37 @@
-// Module ID: 18131
-// Function ID: 18132
+// Module ID: 18418
+// Function ID: 18419
 // Name: QuestProgressManager
-// Dependencies: [5, 32, 2050, 9000, 2006, 4918, 2024, 4920, 7200, 17214, 5630, 8738, 1102, 7206, 7196, 9077, 5631, 10007, 5633, 7225, 5027, 5026, 6620, 5638, 7221, 4948, 1375, 5025, 7219, 584, 2]
+// Dependencies: [5, 32, 2062, 10612, 2018, 5893, 2036, 5114, 7379, 17495, 5977, 10613, 1102, 7386, 7385, 10607, 5978, 9537, 5980, 7404, 7431, 7430, 6797, 5985, 7401, 5896, 1387, 7429, 7399, 584, 2]
 
-// Module 18131 (QuestProgressManager)
+// Module 18418 (QuestProgressManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 4948 */;
-import GameAnalyticsUtils from "GameAnalyticsUtils" /* 5025 */;
-import RobloxSubgameUtils from "RobloxSubgameUtils" /* 5026 */;
-import RobloxSubgameTypes from "RobloxSubgameTypes" /* 5027 */;
-import QuestVariants from "QuestVariants" /* 5631 */;
-import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 5638 */;
-import QuestDataUtils from "QuestDataUtils" /* 7196 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7219 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7221 */;
-import FramesConstants from "FramesConstants" /* 8738 */;
-import QuestMatchingUtils from "QuestMatchingUtils" /* 9077 */;
-import QuestActionCreators from "QuestActionCreators" /* 10007 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 5896 */;
+import QuestVariants from "QuestVariants" /* 5978 */;
+import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 5985 */;
+import QuestExpirationUtils from "QuestExpirationUtils" /* 7385 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7399 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7401 */;
+import GameAnalyticsUtils from "GameAnalyticsUtils" /* 7429 */;
+import RobloxSubgameUtils from "RobloxSubgameUtils" /* 7430 */;
+import RobloxSubgameTypes from "RobloxSubgameTypes" /* 7431 */;
+import QuestActionCreators from "QuestActionCreators" /* 9537 */;
+import QuestMatchingUtils from "QuestMatchingUtils" /* 10607 */;
+import FramesConstants from "FramesConstants" /* 10613 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import FramesStore from "FramesStore" /* 9000 */;
-import RunningGameStore from "RunningGameStore" /* 2006 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4918 */;
-import DetectableGameStore from "DetectableGameStore" /* 2024 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4920 */;
-import QuestStore from "QuestStore" /* 7200 */;
-import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 17214 */;
-import QuestConstants from "QuestConstants" /* 5630 */;
-import getQuestLogger from "getQuestLogger" /* 7206 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6620 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
+import FramesStore from "FramesStore" /* 10612 */;
+import RunningGameStore from "RunningGameStore" /* 2018 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5893 */;
+import DetectableGameStore from "DetectableGameStore" /* 2036 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5114 */;
+import QuestStore from "QuestStore" /* 7379 */;
+import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 17495 */;
+import QuestConstants from "QuestConstants" /* 5977 */;
+import getQuestLogger from "getQuestLogger" /* 7386 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6797 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
@@ -39,7 +39,7 @@ let map, set;
 let QuestsExperimentLocations;
 let closure_12;
 function isQuestProgressable(nextResult) {
-  const obj = QuestDataUtils;
+  const obj = QuestExpirationUtils;
   let tmp2 = !obj.isQuestExpired(nextResult);
   obj.isQuestExpired(nextResult);
   if (tmp2) {
@@ -63,8 +63,8 @@ function handleEmbeddedActivityLaunchSuccess(applicationId) {
       let features = tmp2.config.features;
       let tmp5 = require;
       if (features.includes(QuestVariants.QuestVariants.MOBILE_ACTIVITY_QUEST)) {
-        let tmp5Result = tmp5(10007);
-        let obj3 = { questContent: tmp5(5633).QuestContent.RUNNING_ACTIVITY, questContentCTA: tmp5(7225).QuestContentCTA.START_QUEST, sourceQuestContent: tmp5(5633).QuestContent.RUNNING_ACTIVITY };
+        let tmp5Result = tmp5(9537);
+        let obj3 = { questContent: tmp5(5980).QuestContent.RUNNING_ACTIVITY, questContentCTA: tmp5(7404).QuestContentCTA.START_QUEST, sourceQuestContent: tmp5(5980).QuestContent.RUNNING_ACTIVITY };
         let enrollInQuest = tmp5Result.enrollInQuest;
         let id = item10020.id;
         let enrollInQuestResult = enrollInQuest(id, obj3);
@@ -92,7 +92,7 @@ const isLaunched = FramesConstants.isLaunched;
 const MINUTE = DurationsDefault.Millis.MINUTE;
 const SECOND = DurationsDefault.Millis.SECOND;
 let obj = { location: QuestsExperimentLocations.QUESTS_MANAGER };
-const authStore3 = getQuestLogger.getQuestLogger(obj);
+const authStore4 = getQuestLogger.getQuestLogger(obj);
 class QuestProgressManager extends AutomaticLifecycleManager {
   constructor() {
     let applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
@@ -215,7 +215,7 @@ class QuestProgressManager extends AutomaticLifecycleManager {
         let tmp6 = null != value2;
         const obj5 = logger;
         if (tmp6) {
-          const obj2 = QuestDataUtils;
+          const obj2 = QuestExpirationUtils;
           tmp6 = !obj2.isQuestExpired(value2) && null != value2.userStatus && null != value2.userStatus.enrolledAt && null == value2.userStatus.completedAt;
           !obj2.isQuestExpired(value2) && null != value2.userStatus && null != value2.userStatus.enrolledAt && null == value2.userStatus.completedAt;
         }
@@ -494,7 +494,7 @@ class QuestProgressManager extends AutomaticLifecycleManager {
               let obj3 = { applicationId: tmp25, executablePath: result, executableFingerprint: tmp.executableFingerprint };
               let result1 = map.set(tmp5.id, obj3);
             } else if (isQuestRobloxRelated(desktopApplicationIds, tmp)) {
-              let obj4 = { applicationId: tmp7(5027).ROBLOX_APPLICATION_ID, executablePath: result, executableFingerprint: tmp.executableFingerprint };
+              let obj4 = { applicationId: tmp7(7431).ROBLOX_APPLICATION_ID, executablePath: result, executableFingerprint: tmp.executableFingerprint };
               set = map.set;
               let id = tmp5.id;
               let result2 = set(id, obj4);

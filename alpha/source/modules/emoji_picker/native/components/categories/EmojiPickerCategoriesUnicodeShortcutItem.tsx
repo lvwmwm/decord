@@ -1,16 +1,16 @@
-// Module ID: 9982
-// Function ID: 9983
+// Module ID: 9511
+// Function ID: 9512
 // Name: EmojiPickerCategoriesUnicodeShortcutItem
-// Dependencies: [32, 19, 17, 1085, 21, 4896, 558, 576, 4618, 9110, 1126, 9969, 5916, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5090, 558, 576, 4810, 9512, 1126, 9496, 6189, 2]
 
-// Module 9982 (EmojiPickerCategoriesUnicodeShortcutItem)
+// Module 9511 (EmojiPickerCategoriesUnicodeShortcutItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9110 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9512 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ const __initData = { code: "function EmojiPickerCategoriesUnicodeShortcutItemTsx
 const __initData2 = { code: "function EmojiPickerCategoriesUnicodeShortcutItemTsx2(blockRef_0,previous){const{cheapWorkletShallowEqual,categoryIndex,EXPRESSION_FOOTER_HEIGHT,unicodeShortcutVisible,runOnJS,setUnicodeShortcutVisible}=this.__closure;if(blockRef_0==null||cheapWorkletShallowEqual(blockRef_0,previous!==null&&previous!==void 0?previous:undefined)){return;}const categoryScrollPos=categoryIndex*EXPRESSION_FOOTER_HEIGHT;const categoryUnicodeShortcutVisible=categoryScrollPos>blockRef_0.end-(unicodeShortcutVisible?0:EXPRESSION_FOOTER_HEIGHT);runOnJS(setUnicodeShortcutVisible)(categoryUnicodeShortcutVisible);}" };
 const __initData3 = { code: "function EmojiPickerCategoriesUnicodeShortcutItemTsx3(){const{blockRef}=this.__closure;return blockRef.get();}" };
 const __initData4 = { code: "function EmojiPickerCategoriesUnicodeShortcutItemTsx4(blockRef_0,previous){const{cheapWorkletShallowEqual,categoryIndex,EXPRESSION_FOOTER_HEIGHT,unicodeShortcutVisible,runOnJS,setUnicodeShortcutVisible}=this.__closure;if(blockRef_0==null||cheapWorkletShallowEqual(blockRef_0,previous!==null&&previous!==void 0?previous:undefined)){return;}const categoryScrollPos=categoryIndex*EXPRESSION_FOOTER_HEIGHT;const categoryUnicodeShortcutVisible=categoryScrollPos>blockRef_0.end-(unicodeShortcutVisible?0:EXPRESSION_FOOTER_HEIGHT);runOnJS(setUnicodeShortcutVisible)(categoryUnicodeShortcutVisible);}" };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((blockRef) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiPickerCategoriesUnicodeShortcutItem(blockRef) {
   let categoryIndex;
   let unicodeShortcutVisible;
   let tmp = blockRef;
@@ -65,7 +65,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((blockRef) => {
           num = metroRequire;
         }
         const diff = end - num;
-        const tmp2Result = tmp2(4618);
+        const tmp2Result = tmp2(4810);
         tmp2Result.runOnJS(closure_5)(result > diff);
       }
     }
@@ -156,7 +156,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((blockRef) => {
   cResult[2] = onPress;
   cResult[3] = H;
   tmp9 = H;
-}) : ((blockRef) => {
+}) : (function EmojiPickerCategoriesUnicodeShortcutItem(blockRef) {
   blockRef = blockRef.blockRef;
   const category = blockRef.category;
   const categoryIndex = blockRef.categoryIndex;
@@ -167,39 +167,39 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((blockRef) => {
   unicodeShortcutVisible = tmp[0];
   let closure_5 = tmp3;
   const tmp4 = blockRef;
+  const fn = function f() {
+    return blockRef.get();
+  };
+  fn.__closure = { blockRef };
+  fn.__workletHash = 4231989001012;
+  fn.__initData = __initData3;
   const obj = blockRef(categoryIndex[8]);
   class I {
-    constructor() {
-      return blockRef.get();
-    }
-  }
-  I.__closure = { blockRef };
-  I.__workletHash = 4231989001012;
-  I.__initData = __initData3;
-  const fn = function f(end, safeAreaState2) {
-    if (null != end) {
-      const cheapWorkletShallowEqual = cheapWorkletShallowEqual2.cheapWorkletShallowEqual;
-      cheapWorkletShallowEqual2;
-      const tmp = safeAreaState2;
-      const tmp2 = require;
-      if (!cheapWorkletShallowEqual(end, tmp)) {
-        let num = 0;
-        const result = categoryIndex * metroRequire;
-        end = end.end;
-        if (!first) {
-          num = metroRequire;
+    constructor(end, safeAreaState2) {
+      if (null != end) {
+        const cheapWorkletShallowEqual = cheapWorkletShallowEqual2.cheapWorkletShallowEqual;
+        cheapWorkletShallowEqual2;
+        const tmp = safeAreaState2;
+        const tmp2 = require;
+        if (!cheapWorkletShallowEqual(end, tmp)) {
+          let num = 0;
+          const result = categoryIndex * metroRequire;
+          end = end.end;
+          if (!first) {
+            num = metroRequire;
+          }
+          const diff = end - num;
+          const tmp2Result = tmp2(4810);
+          tmp2Result.runOnJS(closure_5)(result > diff);
         }
-        const diff = end - num;
-        const tmp2Result = tmp2(4618);
-        tmp2Result.runOnJS(closure_5)(result > diff);
       }
     }
-  };
-  fn.__closure = { cheapWorkletShallowEqual: blockRef(categoryIndex[9]).cheapWorkletShallowEqual, categoryIndex, EXPRESSION_FOOTER_HEIGHT, unicodeShortcutVisible, runOnJS: blockRef(categoryIndex[8]).runOnJS, setUnicodeShortcutVisible: tmp[1] };
-  fn.__workletHash = 929118758347;
-  fn.__initData = __initData4;
+  }
+  I.__closure = { cheapWorkletShallowEqual: blockRef(categoryIndex[9]).cheapWorkletShallowEqual, categoryIndex, EXPRESSION_FOOTER_HEIGHT, unicodeShortcutVisible, runOnJS: blockRef(categoryIndex[8]).runOnJS, setUnicodeShortcutVisible: tmp[1] };
+  I.__workletHash = 929118758347;
+  I.__initData = __initData4;
   ({ cheapWorkletShallowEqual: blockRef(categoryIndex[9]).cheapWorkletShallowEqual, categoryIndex, EXPRESSION_FOOTER_HEIGHT, unicodeShortcutVisible, runOnJS: blockRef(categoryIndex[8]).runOnJS, setUnicodeShortcutVisible: tmp[1] });
-  const animatedReaction = obj.useAnimatedReaction(I, fn);
+  const animatedReaction = obj.useAnimatedReaction(fn, I);
   const items = [categoryIndex, category, onPress];
   let tmp9 = null;
   const tmp7 = closure_8();

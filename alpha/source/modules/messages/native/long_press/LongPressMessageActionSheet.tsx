@@ -1,29 +1,29 @@
-// Module ID: 11294
-// Function ID: 11295
+// Module ID: 9630
+// Function ID: 9631
 // Name: LongPressMessageActionSheet
-// Dependencies: [32, 19, 7608, 11295, 11296, 4526, 502, 2074, 4515, 4889, 1085, 21, 6664, 6688, 5076, 11293, 7646, 11297, 7496, 504, 6782, 11298, 11299, 2028, 6780, 11300, 5120, 1390, 11301, 7810, 11302, 6704, 11303, 6708, 1615, 11372, 11373, 1126, 11377, 4849, 4853, 4845, 10071, 11379, 11328, 5864, 11381, 10065, 11383, 8444, 5885, 10705, 11385, 11387, 8346, 11389, 11350, 4855, 8987, 5862, 5881, 4851, 10371, 7643, 8348, 10560, 2653, 5872, 6789, 6802, 11391, 5046, 6805, 7270, 11255, 2]
+// Dependencies: [32, 19, 7725, 9631, 9632, 4718, 502, 2086, 4707, 5083, 1085, 21, 6841, 6865, 5105, 9629, 7967, 9634, 504, 6958, 9635, 9636, 2040, 6956, 9637, 5432, 1402, 9638, 8229, 9639, 6881, 9640, 6885, 1627, 12810, 12811, 1126, 12633, 5043, 5047, 5039, 9675, 12815, 11584, 8176, 12675, 10321, 12817, 8930, 8197, 10312, 12819, 12821, 12823, 12666, 5049, 12825, 8174, 8193, 5045, 9968, 7964, 9507, 10157, 2697, 8184, 6964, 6973, 11374, 5415, 6976, 7870, 9595, 2]
 // Exports: default
 
-// Module 11294 (LongPressMessageActionSheet)
+// Module 9630 (LongPressMessageActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1615 */;
-import MessageRecord from "MessageRecord" /* 4526 */;
-import MessageConstants from "MessageConstants" /* 4889 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5076 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 6664 */;
-import ActionSheet2 from "ActionSheet" /* 6708 */;
-import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 11293 */;
-import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 11303 */;
-import EmojiRowUtils from "EmojiRowUtils" /* 11372 */;
-import EmojiRowDefault from "EmojiRow" /* 11373 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
+import MessageRecord from "MessageRecord" /* 4718 */;
+import MessageConstants from "MessageConstants" /* 5083 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5105 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 6841 */;
+import ActionSheet2 from "ActionSheet" /* 6885 */;
+import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 9629 */;
+import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 9640 */;
+import EmojiRowUtils from "EmojiRowUtils" /* 12810 */;
+import EmojiRowDefault from "EmojiRow" /* 12811 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7608 */;
-import ReportToModStore from "ReportToModStore" /* 11295 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11296 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7725 */;
+import ReportToModStore from "ReportToModStore" /* 9631 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 9632 */;
 import AuthenticationStore_mod from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -93,7 +93,6 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
   let intl43;
   let intl44;
   let intl45;
-  let intl46;
   let intl7;
   let intl8;
   let intl9;
@@ -102,17 +101,17 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
   let message;
   let selectedMedia;
   let set1;
+  let tmp13;
   let tmp14;
-  let tmp15;
   let user;
-  const f107360 = () => {
+  const f101271 = () => {
     const items = [SavedMessagesStore.isMessageReminder(channel.id, message.id), SavedMessagesStore.isMessageBookmarked(channel.id, message.id)];
     return items;
   };
-  const f107361 = (flags) => {
+  const f101272 = (flags) => {
     let tmp = null == flags.flags;
     if (!tmp) {
-      const obj = analyticsLocation(analyticsLocation[27]);
+      const obj = analyticsLocation(analyticsLocation[26]);
       tmp = !obj.hasFlag(flags.flags, constants.IS_THUMBNAIL);
     }
     return tmp;
@@ -159,101 +158,97 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
   let obj3 = require("canForwardMessage");
   const canForwardMessage = obj3.useCanForwardMessage(message);
   const guild = isActiveChannelOrUnarchivableThread.getGuild(channel.guild_id);
-  let obj4 = require("ForLaterExperiment");
-  let isForLaterExperimentOn = obj4.useIsForLaterExperimentOn("LongPressMessageActionSheet");
-  let obj5 = require("get initialized");
+  let obj4 = require("get initialized");
   const items2 = [actionSheetSource];
-  [tmp14, tmp15] = message(obj5.useStateFromStoresArray(items2, f107360), 2);
-  message(obj5.useStateFromStoresArray(items2, f107360), 2);
-  const obj6 = require("ForLaterExperiment");
-  const hasForLaterAccess = obj6.useHasForLaterAccess("LongPressMessageActionSheet");
-  const obj7 = require("ThreadHooks");
-  const isNonModInLockedThread = obj7.useIsNonModInLockedThread(channel);
+  [tmp13, tmp14] = message(obj4.useStateFromStoresArray(items2, f101271), 2);
+  message(obj4.useStateFromStoresArray(items2, f101271), 2);
+  let obj5 = require("ThreadHooks");
+  const isNonModInLockedThread = obj5.useIsNonModInLockedThread(channel);
   let id1;
-  const tmpResult = tmp(tmp3[21]);
+  const tmpResult = tmp(tmp3[20]);
   if (channel != null) {
     id1 = channel.id;
   }
   const interactionError = message.interactionError;
   const EXPLICIT_CONTENT = set1.EXPLICIT_CONTENT;
   const tmpResultResult = tmpResult(id1);
-  const tmp21 = null != GuildAutomodMessageStore.getMessage(message.id);
-  const tmp22 = tmp(tmp3[22])(message);
-  const tmp8Result = tmp8(tmp3[20]);
+  const tmp19 = null != GuildAutomodMessageStore.getMessage(message.id);
+  const tmp20 = tmp(tmp3[21])(message);
+  const tmp8Result = tmp8(tmp3[19]);
   isActiveChannelOrUnarchivableThread = tmp8Result.useIsActiveChannelOrUnarchivableThread(channel);
   if (user != null) {
     isNonUserBotResult = user.isNonUserBot();
   }
   const id3 = AuthenticationStore.getId();
-  const DeveloperMode = tmp8(tmp3[23]).DeveloperMode;
+  const DeveloperMode = tmp8(tmp3[22]).DeveloperMode;
   const setting = DeveloperMode.getSetting();
   const canResult = set.can(constants8.MANAGE_MESSAGES, channel);
   const canResult1 = set.can(constants8.SEND_MESSAGES, channel);
-  const tmp8Result18 = tmp8(tmp3[24]);
+  const tmp8Result18 = tmp8(tmp3[23]);
   const canToggleGuildOfficialMessages = tmp8Result18.useCanToggleGuildOfficialMessages(message, channel, "LongPressMessageActionSheet");
   const id = message.author.id;
   const hasFlagResult = message.hasFlag(constants4.CROSSPOSTED);
-  let tmp34 = !hasFlagResult;
-  const tmp33 = tmp(tmp3[25])(message, channel);
+  let tmp32 = !hasFlagResult;
+  const tmp31 = tmp(tmp3[24])(message, channel);
   if (!hasFlagResult) {
-    tmp34 = channel.type === constants2.GUILD_ANNOUNCEMENT;
+    tmp32 = channel.type === constants2.GUILD_ANNOUNCEMENT;
   }
-  if (tmp34) {
+  if (tmp32) {
     let hasItem;
     if (guild != null) {
       const features = guild.features;
       hasItem = features.has(constants3.NEWS);
     }
-    tmp34 = hasItem;
+    tmp32 = hasItem;
   }
-  if (tmp34) {
-    tmp34 = canResult1;
+  if (tmp32) {
+    tmp32 = canResult1;
   }
-  if (tmp34) {
-    tmp34 = id === id3 || canResult;
+  if (tmp32) {
+    tmp32 = id === id3 || canResult;
   }
-  if (tmp34) {
-    tmp34 = message.type === constants6.DEFAULT;
+  if (tmp32) {
+    tmp32 = message.type === constants6.DEFAULT;
   }
-  if (tmp34) {
-    tmp34 = !message.isPoll();
+  if (tmp32) {
+    tmp32 = !message.isPoll();
   }
-  const tmp8Result19 = tmp8(tmp3[20]);
+  const tmp8Result19 = tmp8(tmp3[19]);
   const canStartPublicThread = tmp8Result19.computeCanStartPublicThread(channel, message);
   const contentMessage = message.getContentMessage();
   if (isMessageComponentsV2(contentMessage)) {
-    const tmp8Result20 = tmp8(tmp3[26]);
+    const tmp8Result20 = tmp8(tmp3[25]);
     allTextDisplayContent = tmp8Result20.getAllTextDisplayContent(contentMessage.components);
   } else {
     allTextDisplayContent = contentMessage.content;
   }
-  let tmp44 = (canResult || message.canDeleteOwnMessage(id3)) && length > 0 && message.author.id !== closure_17;
-  if (tmp44) {
-    const tmp8Result21 = tmp8(tmp3[27]);
-    tmp44 = !tmp8Result21.hasFlag(message.flags, tmp31.EPHEMERAL);
+  let tmp42 = (canResult || message.canDeleteOwnMessage(id3)) && length > 0 && message.author.id !== closure_17;
+  if (tmp42) {
+    const tmp8Result21 = tmp8(tmp3[26]);
+    tmp42 = !tmp8Result21.hasFlag(message.flags, tmp29.EPHEMERAL);
   }
-  if (tmp44) {
-    tmp44 = tmp(tmp3[28])(message) >= 1;
+  if (tmp42) {
+    tmp42 = tmp(tmp3[27])(message) >= 1;
   }
-  let tmp49 = !tmp21 && interactionError !== EXPLICIT_CONTENT;
-  if (tmp49) {
+  let tmp47 = !tmp19 && interactionError !== EXPLICIT_CONTENT;
+  if (tmp47) {
     let result = null == message.interactionData;
     if (!result) {
-      const tmp8Result22 = tmp8(tmp3[29]);
+      const tmp8Result22 = tmp8(tmp3[28]);
       result = tmp8Result22.canRetryInteractionData(message.interactionData);
     }
-    tmp49 = result;
+    tmp47 = result;
   }
   const attachments1 = message.attachments;
-  let tmp53 = message.author.id === id3;
-  if (tmp53) {
-    tmp53 = attachments1.filter(f107361).length > 1 || "" !== message.content;
-    const tmp54 = attachments1.filter(f107361).length > 1 || "" !== message.content;
+  let tmp51 = message.author.id === id3;
+  if (tmp51) {
+    tmp51 = attachments1.filter(f101272).length > 1 || "" !== message.content;
+    const tmp52 = attachments1.filter(f101272).length > 1 || "" !== message.content;
   }
   const items3 = [selectedMedia];
-  const tmp8Result23 = tmp8(tmp3[19]);
+  const tmp8Result23 = tmp8(tmp3[18]);
   const stateFromStores = tmp8Result23.useStateFromStores(items3, () => ReportToModStore.hasReportedMessage(message.channel_id, message.id));
-  tmp8(tmp3[30]);
+  tmp8(tmp3[29]);
   if (guild != null) {
     const id2 = guild.id;
   }
@@ -267,7 +262,7 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
     ({ onActionExecuted: analyticsLocations, disabled } = arrow);
     let obj = {
       arrow: arrow.arrow,
-      icon: jsx(analyticsLocation(analyticsLocation[31]).ActionSheetRow.Icon, { IconComponent }),
+      icon: jsx(analyticsLocation(analyticsLocation[30]).ActionSheetRow.Icon, { IconComponent }),
       label,
       onPress() {
         const obj = { actionSheetSource, analyticsLocations, channel, chatInputRef: GuildAutomodMessageStore, label, message, onBack, onActionExecuted: analyticsLocations, selectedMedia, disabled };
@@ -307,10 +302,10 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
             let onPress;
             let variant;
             ({ icon, arrow, label, onPress, variant, disabled } = item);
-            return closure_1_24(closure_1_0(closure_1_2[31]).ActionSheetRow, { icon, arrow, label, onPress, variant, disabled }, index);
+            return closure_1_24(closure_1_0(closure_1_2[30]).ActionSheetRow, { icon, arrow, label, onPress, variant, disabled }, index);
           })
         };
-        const Group = closure_1_0(closure_1_2[31]).ActionSheetRow.Group;
+        const Group = closure_1_0(closure_1_2[30]).ActionSheetRow.Group;
         return closure_1_24(Group, obj, index);
       });
     }
@@ -318,129 +313,126 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
   }
   if (message.state === constants5.SEND_FAILED) {
     const items4 = [];
-    if (tmp49) {
-      let obj = { label: intl17.string(tmp8(tmp3[37]).t["5911Lb"]), IconComponent: tmp8(tmp3[38]).RetryIcon };
+    if (tmp47) {
+      let obj = { label: intl17.string(tmp8(tmp3[36]).t["5911Lb"]), IconComponent: tmp8(tmp3[37]).RetryIcon };
       const push3 = items4.push;
-      intl17 = tmp8(tmp3[37]).intl;
+      intl17 = tmp8(tmp3[36]).intl;
       push3(getProps(obj));
     }
-    const tmp246 = null != allTextDisplayContent && allTextDisplayContent.length > 0;
-    if (tmp246) {
+    const tmp242 = null != allTextDisplayContent && allTextDisplayContent.length > 0;
+    if (tmp242) {
       const push4 = items4.push;
-      const obj8 = { label: intl18.string(tmp8(tmp3[37]).t.JrGD7E), IconComponent: tmp8(tmp3[39]).CopyIcon };
-      intl18 = tmp8(tmp3[37]).intl;
-      push4(getProps(obj8));
+      const obj6 = { label: intl18.string(tmp8(tmp3[36]).t.JrGD7E), IconComponent: tmp8(tmp3[38]).CopyIcon };
+      intl18 = tmp8(tmp3[36]).intl;
+      push4(getProps(obj6));
     }
     const push5 = items4.push;
-    const obj10 = { label: intl19.string(require("intl").t.xwMqD7), IconComponent: require("TrashIcon").TrashIcon, variant: "danger" };
-    intl19 = tmp7(tmp2[37]).intl;
-    push5(getProps(obj10));
+    const obj8 = { label: intl19.string(require("intl").t.xwMqD7), IconComponent: require("TrashIcon").TrashIcon, variant: "danger" };
+    intl19 = tmp7(tmp2[36]).intl;
+    push5(getProps(obj8));
     const items5 = [items4];
     return render(items5);
-  } else if (message.state === tmp58.SENDING) {
+  } else if (message.state === tmp56.SENDING) {
     const items6 = [];
-    const tmp236 = null != allTextDisplayContent && allTextDisplayContent.length > 0;
-    if (tmp236) {
+    const tmp232 = null != allTextDisplayContent && allTextDisplayContent.length > 0;
+    if (tmp232) {
       const push = items6.push;
-      const obj11 = { label: intl15.string(tmp8(tmp3[37]).t.JrGD7E), IconComponent: tmp8(tmp3[39]).CopyIcon };
-      intl15 = tmp8(tmp3[37]).intl;
-      push(getProps(obj11));
+      const obj9 = { label: intl15.string(tmp8(tmp3[36]).t.JrGD7E), IconComponent: tmp8(tmp3[38]).CopyIcon };
+      intl15 = tmp8(tmp3[36]).intl;
+      push(getProps(obj9));
     }
     const push2 = items6.push;
-    const obj12 = { label: intl16.string(tmp8(tmp3[37]).t.xwMqD7), IconComponent: tmp8(tmp3[40]).TrashIcon, variant: "danger" };
-    intl16 = tmp8(tmp3[37]).intl;
-    push2(getProps(obj12));
+    const obj10 = { label: intl16.string(tmp8(tmp3[36]).t.xwMqD7), IconComponent: tmp8(tmp3[39]).TrashIcon, variant: "danger" };
+    intl16 = tmp8(tmp3[36]).intl;
+    push2(getProps(obj10));
     const items7 = [items6];
     return render(items7);
   } else if (message.type === constants6.THREAD_STARTER_MESSAGE) {
-    const obj13 = { label: intl14.string(tmp8(tmp3[37]).t.k5WiPf), IconComponent: tmp8(tmp3[41]).LinkIcon };
-    intl14 = tmp8(tmp3[37]).intl;
-    const items8 = [getProps(obj13)];
+    const obj11 = { label: intl14.string(tmp8(tmp3[36]).t.k5WiPf), IconComponent: tmp8(tmp3[40]).LinkIcon };
+    intl14 = tmp8(tmp3[36]).intl;
+    const items8 = [getProps(obj11)];
     const items9 = [items8];
     return render(items9);
   } else {
     let stringResult;
-    const obj14 = { label: intl20.string(tmp8(tmp3[37]).t.fsBWmS), IconComponent: tmp8(tmp3[42]).PencilIcon };
-    intl20 = tmp8(tmp3[37]).intl;
-    const props = getProps(obj14);
-    const obj15 = { label: intl21.string(tmp8(tmp3[37]).t.Y8ujqr), IconComponent: tmp8(tmp3[42]).PencilIcon };
-    intl21 = tmp8(tmp3[37]).intl;
-    const props1 = getProps(obj15);
-    const obj17 = { label: intl22.string(tmp8(tmp3[37]).t["5IEsGx"]), IconComponent: tmp8(tmp3[43]).ArrowAngleLeftUpIcon };
-    intl22 = tmp8(tmp3[37]).intl;
-    const props2 = getProps(obj17);
-    const obj18 = { label: intl23.string(tmp8(tmp3[37]).t.I3ltXO), IconComponent: tmp(tmp3[44]) };
-    intl23 = tmp8(tmp3[37]).intl;
-    const props3 = getProps(obj18);
-    const obj19 = { label: intl24.string(tmp8(tmp3[37]).t.rBIGBL), IconComponent: tmp8(tmp3[45]).ThreadIcon };
-    intl24 = tmp8(tmp3[37]).intl;
-    const props4 = getProps(obj19);
-    const obj20 = { label: intl25.string(tmp8(tmp3[37]).t["39d0Wj"]), IconComponent: tmp8(tmp3[45]).ThreadIcon };
-    intl25 = tmp8(tmp3[37]).intl;
-    const props5 = getProps(obj20);
-    const obj21 = { label: intl26.string(tmp8(tmp3[37]).t["+TSRGD"]), IconComponent: tmp8(tmp3[46]).ChatArrowRightIcon };
-    intl26 = tmp8(tmp3[37]).intl;
-    const props6 = getProps(obj21);
-    const obj22 = { label: intl27.string(tmp8(tmp3[37]).t.JrGD7E), IconComponent: tmp8(tmp3[39]).CopyIcon };
-    intl27 = tmp8(tmp3[37]).intl;
-    const props7 = getProps(obj22);
-    const obj23 = { label: intl28.string(tmp8(tmp3[37]).t.RpE9k7), IconComponent: tmp8(tmp3[47]).ChatMarkUnreadIcon };
-    intl28 = tmp8(tmp3[37]).intl;
-    const props8 = getProps(obj23);
-    const obj24 = { label: intl29.string(tmp8(tmp3[37]).t.grdwwt), IconComponent: tmp8(tmp3[48]).ClockXIcon };
-    intl29 = tmp8(tmp3[37]).intl;
-    const props9 = getProps(obj24);
-    const obj25 = { label: intl30.string(tmp8(tmp3[37]).t.gHp0C4), IconComponent: tmp8(tmp3[49]).ReactionIcon };
-    intl30 = tmp8(tmp3[37]).intl;
-    const props10 = getProps(obj25);
-    const obj26 = { label: intl31.string(tmp8(tmp3[37]).t.MFGE51), IconComponent: tmp8(tmp3[50]).AnnouncementsIcon };
-    intl31 = tmp8(tmp3[37]).intl;
-    const props11 = getProps(obj26);
-    const obj27 = { label: intl32.string(tmp8(tmp3[37]).t.CvQ18w), IconComponent: tmp8(tmp3[51]).PinIcon };
-    intl32 = tmp8(tmp3[37]).intl;
-    const props12 = getProps(obj27);
-    const obj28 = { label: intl33.string(tmp8(tmp3[37]).t["Bse+F/"]), IconComponent: tmp8(tmp3[51]).PinIcon };
-    intl33 = tmp8(tmp3[37]).intl;
-    const props13 = getProps(obj28);
-    const obj29 = { label: intl34.string(tmp8(tmp3[37]).t["lE/PG3"]), IconComponent: tmp8(tmp3[52]).StampIcon };
-    intl34 = tmp8(tmp3[37]).intl;
-    const props14 = getProps(obj29);
-    const obj30 = { label: intl35.string(tmp8(tmp3[37]).t["2km5Gf"]), IconComponent: tmp8(tmp3[53]).StampXIcon };
-    intl35 = tmp8(tmp3[37]).intl;
-    const props15 = getProps(obj30);
-    const obj31 = { label: intl36.string(tmp8(tmp3[37]).t.tpxJto), IconComponent: tmp8(tmp3[54]).NitroWheelIcon };
-    intl36 = tmp8(tmp3[37]).intl;
-    const props16 = getProps(obj31);
-    const obj32 = { label: intl37.string(tmp8(tmp3[37]).t.tpxJto), IconComponent: tmp8(tmp3[55]).BookmarkOutlineIcon };
-    intl37 = tmp8(tmp3[37]).intl;
-    const props17 = getProps(obj32);
-    const obj33 = { label: intl38.string(tmp8(tmp3[37]).t.SvXS1Z), IconComponent: tmp8(tmp3[56]).BookmarkIcon };
-    intl38 = tmp8(tmp3[37]).intl;
-    const props18 = getProps(obj33);
-    const obj34 = { label: intl39.string(tmp8(tmp3[37]).t.mJ3P0N), IconComponent: tmp8(tmp3[57]).ClockIcon, arrow: true };
-    intl39 = tmp8(tmp3[37]).intl;
-    const props19 = getProps(obj34);
-    const obj35 = { label: intl40.string(tmp8(tmp3[37]).t.vrbqs1), IconComponent: tmp8(tmp3[57]).ClockIcon, arrow: true };
-    intl40 = tmp8(tmp3[37]).intl;
-    const props20 = getProps(obj35);
-    const obj36 = { label: intl41.string(tmp8(tmp3[37]).t.PHjkRE), IconComponent: tmp8(tmp3[58]).RobotIcon, arrow: true };
-    intl41 = tmp8(tmp3[37]).intl;
-    const props21 = getProps(obj36);
-    const obj37 = { label: intl42.string(tmp8(tmp3[37]).t["g33r/P"]), IconComponent: tmp8(tmp3[59]).ChatIcon };
-    intl42 = tmp8(tmp3[37]).intl;
-    const props22 = getProps(obj37);
-    const obj38 = { label: intl43.string(tmp8(tmp3[37]).t.P8tvKG), IconComponent: tmp8(tmp3[60]).AtIcon };
-    intl43 = tmp8(tmp3[37]).intl;
-    const props23 = getProps(obj38);
-    const obj40 = { label: intl44.string(tmp8(tmp3[37]).t["S/xNKV"]), IconComponent: tmp8(tmp3[61]).DownloadIcon };
-    intl44 = tmp8(tmp3[37]).intl;
-    const props24 = getProps(obj40);
-    const obj41 = { label: intl45.string(tmp8(tmp3[37]).t.JVuuz3), IconComponent: tmp8(tmp3[61]).DownloadIcon };
-    intl45 = tmp8(tmp3[37]).intl;
-    const props25 = getProps(obj41);
-    const obj42 = { label: intl46.string(tmp8(tmp3[37]).t.vbAEaA), IconComponent: tmp8(tmp3[61]).DownloadIcon };
-    intl46 = tmp8(tmp3[37]).intl;
-    const props26 = getProps(obj42);
+    const obj12 = { label: intl20.string(tmp8(tmp3[36]).t.fsBWmS), IconComponent: tmp8(tmp3[41]).PencilIcon };
+    intl20 = tmp8(tmp3[36]).intl;
+    const props = getProps(obj12);
+    const obj13 = { label: intl21.string(tmp8(tmp3[36]).t.Y8ujqr), IconComponent: tmp8(tmp3[41]).PencilIcon };
+    intl21 = tmp8(tmp3[36]).intl;
+    const props1 = getProps(obj13);
+    const obj15 = { label: intl22.string(tmp8(tmp3[36]).t["5IEsGx"]), IconComponent: tmp8(tmp3[42]).ArrowAngleLeftUpIcon };
+    intl22 = tmp8(tmp3[36]).intl;
+    const props2 = getProps(obj15);
+    const obj16 = { label: intl23.string(tmp8(tmp3[36]).t.I3ltXO), IconComponent: tmp(tmp3[43]) };
+    intl23 = tmp8(tmp3[36]).intl;
+    const props3 = getProps(obj16);
+    const obj17 = { label: intl24.string(tmp8(tmp3[36]).t.rBIGBL), IconComponent: tmp8(tmp3[44]).ThreadIcon };
+    intl24 = tmp8(tmp3[36]).intl;
+    const props4 = getProps(obj17);
+    const obj18 = { label: intl25.string(tmp8(tmp3[36]).t["39d0Wj"]), IconComponent: tmp8(tmp3[44]).ThreadIcon };
+    intl25 = tmp8(tmp3[36]).intl;
+    const props5 = getProps(obj18);
+    const obj19 = { label: intl26.string(tmp8(tmp3[36]).t["+TSRGD"]), IconComponent: tmp8(tmp3[45]).ChatArrowRightIcon };
+    intl26 = tmp8(tmp3[36]).intl;
+    const props6 = getProps(obj19);
+    const obj20 = { label: intl27.string(tmp8(tmp3[36]).t.JrGD7E), IconComponent: tmp8(tmp3[38]).CopyIcon };
+    intl27 = tmp8(tmp3[36]).intl;
+    const props7 = getProps(obj20);
+    const obj21 = { label: intl28.string(tmp8(tmp3[36]).t.RpE9k7), IconComponent: tmp8(tmp3[46]).ChatMarkUnreadIcon };
+    intl28 = tmp8(tmp3[36]).intl;
+    const props8 = getProps(obj21);
+    const obj22 = { label: intl29.string(tmp8(tmp3[36]).t.grdwwt), IconComponent: tmp8(tmp3[47]).ClockXIcon };
+    intl29 = tmp8(tmp3[36]).intl;
+    const props9 = getProps(obj22);
+    const obj23 = { label: intl30.string(tmp8(tmp3[36]).t.gHp0C4), IconComponent: tmp8(tmp3[48]).ReactionIcon };
+    intl30 = tmp8(tmp3[36]).intl;
+    const props10 = getProps(obj23);
+    const obj24 = { label: intl31.string(tmp8(tmp3[36]).t.MFGE51), IconComponent: tmp8(tmp3[49]).AnnouncementsIcon };
+    intl31 = tmp8(tmp3[36]).intl;
+    const props11 = getProps(obj24);
+    const obj25 = { label: intl32.string(tmp8(tmp3[36]).t.CvQ18w), IconComponent: tmp8(tmp3[50]).PinIcon };
+    intl32 = tmp8(tmp3[36]).intl;
+    const props12 = getProps(obj25);
+    const obj26 = { label: intl33.string(tmp8(tmp3[36]).t["Bse+F/"]), IconComponent: tmp8(tmp3[50]).PinIcon };
+    intl33 = tmp8(tmp3[36]).intl;
+    const props13 = getProps(obj26);
+    const obj27 = { label: intl34.string(tmp8(tmp3[36]).t["lE/PG3"]), IconComponent: tmp8(tmp3[51]).StampIcon };
+    intl34 = tmp8(tmp3[36]).intl;
+    const props14 = getProps(obj27);
+    const obj28 = { label: intl35.string(tmp8(tmp3[36]).t["2km5Gf"]), IconComponent: tmp8(tmp3[52]).StampXIcon };
+    intl35 = tmp8(tmp3[36]).intl;
+    const props15 = getProps(obj28);
+    const obj29 = { label: intl36.string(tmp8(tmp3[36]).t.tpxJto), IconComponent: tmp8(tmp3[53]).BookmarkOutlineIcon };
+    intl36 = tmp8(tmp3[36]).intl;
+    const props16 = getProps(obj29);
+    const obj30 = { label: intl37.string(tmp8(tmp3[36]).t.SvXS1Z), IconComponent: tmp8(tmp3[54]).BookmarkIcon };
+    intl37 = tmp8(tmp3[36]).intl;
+    const props17 = getProps(obj30);
+    const obj31 = { label: intl38.string(tmp8(tmp3[36]).t.mJ3P0N), IconComponent: tmp8(tmp3[55]).ClockIcon, arrow: true };
+    intl38 = tmp8(tmp3[36]).intl;
+    const props18 = getProps(obj31);
+    const obj32 = { label: intl39.string(tmp8(tmp3[36]).t.vrbqs1), IconComponent: tmp8(tmp3[55]).ClockIcon, arrow: true };
+    intl39 = tmp8(tmp3[36]).intl;
+    const props19 = getProps(obj32);
+    const obj33 = { label: intl40.string(tmp8(tmp3[36]).t.PHjkRE), IconComponent: tmp8(tmp3[56]).RobotIcon, arrow: true };
+    intl40 = tmp8(tmp3[36]).intl;
+    const props20 = getProps(obj33);
+    const obj34 = { label: intl41.string(tmp8(tmp3[36]).t["g33r/P"]), IconComponent: tmp8(tmp3[57]).ChatIcon };
+    intl41 = tmp8(tmp3[36]).intl;
+    const props21 = getProps(obj34);
+    const obj35 = { label: intl42.string(tmp8(tmp3[36]).t.P8tvKG), IconComponent: tmp8(tmp3[58]).AtIcon };
+    intl42 = tmp8(tmp3[36]).intl;
+    const props22 = getProps(obj35);
+    const obj36 = { label: intl43.string(tmp8(tmp3[36]).t["S/xNKV"]), IconComponent: tmp8(tmp3[59]).DownloadIcon };
+    intl43 = tmp8(tmp3[36]).intl;
+    const props23 = getProps(obj36);
+    const obj38 = { label: intl44.string(tmp8(tmp3[36]).t.JVuuz3), IconComponent: tmp8(tmp3[59]).DownloadIcon };
+    intl44 = tmp8(tmp3[36]).intl;
+    const props24 = getProps(obj38);
+    const obj39 = { label: intl45.string(tmp8(tmp3[36]).t.vbAEaA), IconComponent: tmp8(tmp3[59]).DownloadIcon };
+    intl45 = tmp8(tmp3[36]).intl;
+    const props25 = getProps(obj39);
     let flag = false;
     try {
       let mediaUrl;
@@ -458,77 +450,77 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
       if (selectedMedia != null) {
         mediaType = selectedMedia.mediaType;
       }
-      let isMatch = "image" === mediaType && null != tmp62 && "cdn.discordapp.com" === tmp62.hostname;
+      let isMatch = "image" === mediaType && null != tmp60 && "cdn.discordapp.com" === tmp60.hostname;
       if (isMatch) {
-        const obj16 = /\.(png|jpe?g|webp|avif|bmp|svg)(\?|$)/i;
-        isMatch = obj16.test(uRL.pathname);
+        const obj14 = /\.(png|jpe?g|webp|avif|bmp|svg)(\?|$)/i;
+        isMatch = obj14.test(uRL.pathname);
       }
       flag = isMatch;
     } catch (err) {
     }
-    const intl = tmp8(tmp3[37]).intl;
+    const intl = tmp8(tmp3[36]).intl;
     const string = intl.string;
-    const t = tmp8(tmp3[37]).t;
-    const obj43 = { label: string(flag ? t["8xHmxo"] : t["92CPQ+"]), IconComponent: tmp8(tmp3[41]).LinkIcon };
-    const props27 = getProps(obj43);
-    const obj44 = { label: intl2.string(tmp8(tmp3[37]).t.Xrt5Po), IconComponent: tmp8(tmp3[41]).LinkIcon };
-    intl2 = tmp8(tmp3[37]).intl;
-    const props28 = getProps(obj44);
-    const obj45 = { label: intl3.string(tmp8(tmp3[37]).t.Rjezbz), IconComponent: tmp8(tmp3[57]).ClockIcon, arrow: true };
-    intl3 = tmp8(tmp3[37]).intl;
-    const props29 = getProps(obj45);
-    const obj46 = { label: intl4.string(tmp8(tmp3[37]).t.zBoHlf), IconComponent: tmp8(tmp3[62]).IdIcon };
-    intl4 = tmp8(tmp3[37]).intl;
-    const props30 = getProps(obj46);
+    const t = tmp8(tmp3[36]).t;
+    const obj40 = { label: string(flag ? t["8xHmxo"] : t["92CPQ+"]), IconComponent: tmp8(tmp3[40]).LinkIcon };
+    const props26 = getProps(obj40);
+    const obj41 = { label: intl2.string(tmp8(tmp3[36]).t.Xrt5Po), IconComponent: tmp8(tmp3[40]).LinkIcon };
+    intl2 = tmp8(tmp3[36]).intl;
+    const props27 = getProps(obj41);
+    const obj42 = { label: intl3.string(tmp8(tmp3[36]).t.Rjezbz), IconComponent: tmp8(tmp3[55]).ClockIcon, arrow: true };
+    intl3 = tmp8(tmp3[36]).intl;
+    const props28 = getProps(obj42);
+    const obj43 = { label: intl4.string(tmp8(tmp3[36]).t.zBoHlf), IconComponent: tmp8(tmp3[60]).IdIcon };
+    intl4 = tmp8(tmp3[36]).intl;
+    const props29 = getProps(obj43);
     if (contentMessage.embeds.length > 1) {
-      const intl6 = tmp8(tmp3[37]).intl;
-      stringResult = intl6.string(tmp8(tmp3[37]).t.wUIMqa);
+      const intl6 = tmp8(tmp3[36]).intl;
+      stringResult = intl6.string(tmp8(tmp3[36]).t.wUIMqa);
     } else {
-      const intl5 = tmp8(tmp3[37]).intl;
-      stringResult = intl5.string(tmp8(tmp3[37]).t["4sxKOb"]);
+      const intl5 = tmp8(tmp3[36]).intl;
+      stringResult = intl5.string(tmp8(tmp3[36]).t["4sxKOb"]);
     }
-    const obj47 = { label: stringResult, IconComponent: tmp8(tmp3[63]).XSmallBoldIcon, variant: "danger" };
-    const props31 = getProps(obj47);
-    const obj48 = { label: intl7.string(tmp8(tmp3[37]).t.ZbtGBm), IconComponent: tmp8(tmp3[40]).TrashIcon, variant: "danger" };
-    intl7 = tmp8(tmp3[37]).intl;
-    const props32 = getProps(obj48);
-    const obj49 = { label: intl8.string(tmp8(tmp3[37]).t.kFwAsa), IconComponent: tmp8(tmp3[40]).TrashIcon, variant: "danger" };
-    intl8 = tmp8(tmp3[37]).intl;
-    const props33 = getProps(obj49);
-    const obj50 = { label: intl9.string(tmp8(tmp3[37]).t["+78Pfm"]), IconComponent: tmp8(tmp3[64]).FlagIcon, variant: "danger" };
-    intl9 = tmp8(tmp3[37]).intl;
-    const props34 = getProps(obj50);
-    const obj51 = { label: intl10.string(tmp8(tmp3[37]).t.n5EBAJ), variant: "danger", IconComponent: tmp8(tmp3[65]).ClydeIcon };
-    intl10 = tmp8(tmp3[37]).intl;
-    const props35 = getProps(obj51);
-    const obj52 = { label: intl11.string(tmp(tmp3[66])["1D+vqy"]), IconComponent: tmp8(tmp3[64]).FlagIcon, disabled: stateFromStores };
-    intl11 = tmp8(tmp3[37]).intl;
-    const props36 = getProps(obj52);
-    const obj53 = { label: intl12.string(tmp8(tmp3[37]).t.ZH7P2h), IconComponent: tmp8(tmp3[67]).ImageWarningIcon };
-    intl12 = tmp8(tmp3[37]).intl;
-    const props37 = getProps(obj53);
-    const obj54 = { label: intl13.string(tmp8(tmp3[37]).t.xwMqD7), IconComponent: tmp8(tmp3[40]).TrashIcon, variant: "danger" };
-    intl13 = tmp8(tmp3[37]).intl;
-    const props38 = getProps(obj54);
-    let hasFlagResult1 = tmp93;
+    const obj44 = { label: stringResult, IconComponent: tmp8(tmp3[61]).XSmallBoldIcon, variant: "danger" };
+    const props30 = getProps(obj44);
+    const obj45 = { label: intl7.string(tmp8(tmp3[36]).t.ZbtGBm), IconComponent: tmp8(tmp3[39]).TrashIcon, variant: "danger" };
+    intl7 = tmp8(tmp3[36]).intl;
+    const props31 = getProps(obj45);
+    const obj46 = { label: intl8.string(tmp8(tmp3[36]).t.kFwAsa), IconComponent: tmp8(tmp3[39]).TrashIcon, variant: "danger" };
+    intl8 = tmp8(tmp3[36]).intl;
+    const props32 = getProps(obj46);
+    const obj47 = { label: intl9.string(tmp8(tmp3[36]).t["+78Pfm"]), IconComponent: tmp8(tmp3[62]).FlagIcon, variant: "danger" };
+    intl9 = tmp8(tmp3[36]).intl;
+    const props33 = getProps(obj47);
+    const obj48 = { label: intl10.string(tmp8(tmp3[36]).t.n5EBAJ), variant: "danger", IconComponent: tmp8(tmp3[63]).ClydeIcon };
+    intl10 = tmp8(tmp3[36]).intl;
+    const props34 = getProps(obj48);
+    const obj49 = { label: intl11.string(tmp(tmp3[64])["1D+vqy"]), IconComponent: tmp8(tmp3[62]).FlagIcon, disabled: stateFromStores };
+    intl11 = tmp8(tmp3[36]).intl;
+    const props35 = getProps(obj49);
+    const obj50 = { label: intl12.string(tmp8(tmp3[36]).t.ZH7P2h), IconComponent: tmp8(tmp3[65]).ImageWarningIcon };
+    intl12 = tmp8(tmp3[36]).intl;
+    const props36 = getProps(obj50);
+    const obj51 = { label: intl13.string(tmp8(tmp3[36]).t.xwMqD7), IconComponent: tmp8(tmp3[39]).TrashIcon, variant: "danger" };
+    intl13 = tmp8(tmp3[36]).intl;
+    const props37 = getProps(obj51);
+    let hasFlagResult1 = tmp91;
     if (!hasFlagResult1) {
-      const tmp8Result25 = tmp8(tmp3[27]);
-      hasFlagResult1 = tmp8Result25.hasFlag(message.flags, tmp31.EPHEMERAL);
+      const tmp8Result25 = tmp8(tmp3[26]);
+      hasFlagResult1 = tmp8Result25.hasFlag(message.flags, tmp29.EPHEMERAL);
     }
     const items10 = [];
     if (hasFlagResult1) {
-      items10.push(props4, props8, props17, props18, props16, props19, props20, props31, props38, props, props1, props23, props22, props21, props32);
+      items10.push(props4, props8, props16, props17, props18, props19, props30, props37, props, props1, props22, props21, props20, props31);
     }
     if (isActiveChannelOrUnarchivableThread) {
-      const tmp8Result26 = tmp8(tmp3[27]);
-      isActiveChannelOrUnarchivableThread = !tmp8Result26.hasFlag(message.flags, tmp31.EPHEMERAL);
+      const tmp8Result26 = tmp8(tmp3[26]);
+      isActiveChannelOrUnarchivableThread = !tmp8Result26.hasFlag(message.flags, tmp29.EPHEMERAL);
     }
     if (!isActiveChannelOrUnarchivableThread) {
-      items10.push(props, props1, props2, props31, props33, props38, props11, props12, props13, props14, props15, props8, props23, props21, props32);
+      items10.push(props, props1, props2, props30, props32, props37, props11, props12, props13, props14, props15, props8, props22, props20, props31);
     }
-    const tmp8Result27 = tmp8(tmp3[27]);
+    const tmp8Result27 = tmp8(tmp3[26]);
     if (tmp8Result27.hasFlag(message.flags, constants4.EPHEMERAL)) {
-      items10.push(props3, props2, props28, props34, props35, props36);
+      items10.push(props3, props2, props27, props33, props34, props35);
     }
     const _Set = Set;
     const self3 = this;
@@ -543,44 +535,34 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
     } else if (message.hasFlag(constants4.HAS_THREAD)) {
       items11.unshift(props5);
     }
-    items11.unshift(props28);
+    items11.unshift(props27);
     if (setting) {
-      items11.unshift(props30);
+      items11.unshift(props29);
     }
-    if (tmp57) {
-      const tmp8Result28 = tmp8(tmp3[68]);
+    if (tmp55) {
+      const tmp8Result28 = tmp8(tmp3[66]);
       if (tmp8Result28.canReportMessageToMods(message)) {
+        items11.unshift(props34);
         items11.unshift(props35);
-        items11.unshift(props36);
       }
       items11.unshift(props8);
-      if (isForLaterExperimentOn) {
-        isForLaterExperimentOn = tmp15 || tmp14 || channel.isPrivate() || set.can(constants8.READ_MESSAGE_HISTORY, channel);
-        tmp15 || tmp14 || channel.isPrivate() || set.can(constants8.READ_MESSAGE_HISTORY, channel);
-      }
-      if (isForLaterExperimentOn) {
-        if (!hasForLaterAccess) {
-          if (!tmp15) {
-            if (!tmp14) {
-              items11.unshift(props16);
-            }
-          }
-        }
-        let tmp165 = props17;
+      const tmp160 = tmp14 || tmp13 || channel.isPrivate() || set.can(constants8.READ_MESSAGE_HISTORY, channel);
+      if (tmp160) {
+        let tmp161 = props16;
         const unshift = items11.unshift;
-        if (tmp15) {
-          tmp165 = props18;
-        }
-        unshift(tmp165);
-        let tmp167 = props19;
-        const unshift2 = items11.unshift;
         if (tmp14) {
-          tmp167 = props20;
+          tmp161 = props17;
         }
-        unshift2(tmp167);
+        unshift(tmp161);
+        let tmp163 = props18;
+        const unshift2 = items11.unshift;
+        if (tmp13) {
+          tmp163 = props19;
+        }
+        unshift2(tmp163);
       }
-      if (tmp44) {
-        items11.unshift(props31);
+      if (tmp42) {
+        items11.unshift(props30);
       }
       let hasItem1 = !canResult && !message.canDeleteOwnMessage(id3);
       if (!hasItem1) {
@@ -588,48 +570,48 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
         hasItem1 = UNDELETABLE.has(message.type);
       }
       if (!hasItem1) {
-        items11.unshift(props38);
+        items11.unshift(props37);
       }
-      const tmp174 = tmp(tmp3[70])(message, id3) && !isNonModInLockedThread;
-      if (tmp174) {
+      const tmp170 = tmp(tmp3[68])(message, id3) && !isNonModInLockedThread;
+      if (tmp170) {
         items11.unshift(props);
       }
-      if (tmp34) {
+      if (tmp32) {
         items11.unshift(props11);
       }
-      const tmp179 = channel.isPrivate() && !tmp178 || true === isNonUserBotResult;
-      if (!tmp179) {
-        const tmp180 = set.can(constants8.SEND_MESSAGES, channel) || channel.type === constants2.GROUP_DM;
-        if (tmp180) {
-          items11.unshift(props23);
+      const tmp175 = channel.isPrivate() && !tmp174 || true === isNonUserBotResult;
+      if (!tmp175) {
+        const tmp176 = set.can(constants8.SEND_MESSAGES, channel) || channel.type === constants2.GROUP_DM;
+        if (tmp176) {
+          items11.unshift(props22);
         }
         let id4;
         if (user != null) {
           id4 = user.id;
         }
         if (id3 !== id4) {
-          items11.unshift(props22);
+          items11.unshift(props21);
         }
       }
-      if (tmp33) {
-        let tmp184 = props12;
+      if (tmp31) {
+        let tmp180 = props12;
         const unshift3 = items11.unshift;
         if (message.pinned) {
-          tmp184 = props13;
+          tmp180 = props13;
         }
-        unshift3(tmp184);
+        unshift3(tmp180);
       }
       if (canToggleGuildOfficialMessages) {
         const unshift4 = items11.unshift;
-        let tmp188 = props14;
-        const tmp8Result29 = tmp8(tmp3[27]);
+        let tmp184 = props14;
+        const tmp8Result29 = tmp8(tmp3[26]);
         if (tmp8Result29.hasFlag(message.flags, constants4.IS_GUILD_OFFICIAL)) {
-          tmp188 = props15;
+          tmp184 = props15;
         }
-        unshift4(tmp188);
+        unshift4(tmp184);
       }
-      const tmp190 = null != allTextDisplayContent && allTextDisplayContent.length > 0;
-      if (tmp190) {
+      const tmp186 = null != allTextDisplayContent && allTextDisplayContent.length > 0;
+      if (tmp186) {
         items11.unshift(props7);
       }
       if (canReplyToMessage) {
@@ -642,85 +624,85 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
       if (selectedMedia != null) {
         sourceType = selectedMedia.sourceType;
       }
-      let tmp195 = "attachment" !== sourceType;
-      if (!tmp195) {
-        tmp195 = "image" !== selectedMedia.mediaType && "video" !== selectedMedia.mediaType;
-        const tmp196 = "image" !== selectedMedia.mediaType && "video" !== selectedMedia.mediaType;
+      let tmp191 = "attachment" !== sourceType;
+      if (!tmp191) {
+        tmp191 = "image" !== selectedMedia.mediaType && "video" !== selectedMedia.mediaType;
+        const tmp192 = "image" !== selectedMedia.mediaType && "video" !== selectedMedia.mediaType;
       }
-      if (!tmp195) {
-        tmp195 = !tmp(tmp3[70])(message, id3);
+      if (!tmp191) {
+        tmp191 = !tmp(tmp3[68])(message, id3);
       }
-      if (!tmp195) {
-        tmp195 = isNonModInLockedThread;
+      if (!tmp191) {
+        tmp191 = isNonModInLockedThread;
       }
-      if (!tmp195) {
+      if (!tmp191) {
         const attachments = message.attachments;
-        tmp195 = !attachments.some((id) => id.id === selectedMedia.source.id);
+        tmp191 = !attachments.some((id) => id.id === selectedMedia.source.id);
       }
-      if (!tmp195) {
+      if (!tmp191) {
         items11.unshift(props1);
       }
-      const tmp199 = null == selectedMedia || tmpResultResult;
-      if (!tmp199) {
-        items11.unshift(props27);
+      const tmp195 = null == selectedMedia || tmpResultResult;
+      if (!tmp195) {
+        items11.unshift(props26);
         if ("image" === selectedMedia.mediaType) {
-          items11.unshift(props24);
+          items11.unshift(props23);
         } else {
           if ("video" === selectedMedia.mediaType) {
-            const tmp8Result30 = tmp8(tmp3[71]);
+            const tmp8Result30 = tmp8(tmp3[69]);
             if (!tmp8Result30.isWebPlayerVideoUrl(selectedMedia.mediaUrl)) {
-              items11.unshift(props25);
+              items11.unshift(props24);
             }
           }
-          const tmp204 = "audio" !== selectedMedia.mediaType && "file" !== selectedMedia.mediaType;
-          if (!tmp204) {
-            items11.unshift(props26);
+          const tmp200 = "audio" !== selectedMedia.mediaType && "file" !== selectedMedia.mediaType;
+          if (!tmp200) {
+            items11.unshift(props25);
           }
         }
-        const tmp8Result31 = tmp8(tmp3[72]);
+        const tmp8Result31 = tmp8(tmp3[70]);
         if (tmp8Result31.messageHasObscurableMedia(message)) {
-          items11.unshift(props37);
+          items11.unshift(props36);
         }
-        const tmp210 = "attachment" === selectedMedia.sourceType && tmp53;
-        if (tmp210) {
-          items11.unshift(props33);
-        }
-      }
-      let tmp212 = message.reactions.length > 0;
-      if (tmp212) {
-        const isPollResult = message.isPoll();
-        let hasNonVoteReactionsResult = !isPollResult;
-        if (isPollResult) {
-          const tmp8Result32 = tmp8(tmp3[73]);
-          hasNonVoteReactionsResult = tmp8Result32.hasNonVoteReactions(message);
-        }
-        tmp212 = hasNonVoteReactionsResult;
-      }
-      if (tmp212) {
-        items11.unshift(props10);
-        if (canResult) {
+        const tmp206 = "attachment" === selectedMedia.sourceType && tmp51;
+        if (tmp206) {
           items11.unshift(props32);
         }
       }
-      for (const item10702 of tmp22) {
-        if (item10702 === require("usePollMessageContextItemTypes").PollMessageContextItemTypes.END_EARLY) {
-          let arr68 = items11.unshift(props9);
+      let tmp208 = message.reactions.length > 0;
+      if (tmp208) {
+        const isPollResult = message.isPoll();
+        let hasNonVoteReactionsResult = !isPollResult;
+        if (isPollResult) {
+          const tmp8Result32 = tmp8(tmp3[71]);
+          hasNonVoteReactionsResult = tmp8Result32.hasNonVoteReactions(message);
+        }
+        tmp208 = hasNonVoteReactionsResult;
+      }
+      if (tmp208) {
+        items11.unshift(props10);
+        if (canResult) {
+          items11.unshift(props31);
+        }
+      }
+      for (const item10690 of tmp20) {
+        if (item10690 === require("usePollMessageContextItemTypes").PollMessageContextItemTypes.END_EARLY) {
+          let arr66 = items11.unshift(props9);
         }
         continue;
       }
-      items11.unshift(props21);
-      const obj39 = require("ApplicationInteractionInfoUtils");
-      if (obj39.canViewInteractionInfo(message)) {
-        items11.unshift(props29);
+      items11.unshift(props20);
+      const obj37 = require("ApplicationInteractionInfoUtils");
+      if (obj37.canViewInteractionInfo(message)) {
+        items11.unshift(props28);
       }
       const _Set2 = Set;
       const self5 = this;
       const self6 = this;
       const items12 = [props, props1, props2, props3, props4];
       const items13 = [items12, , ];
-      const items14 = [props6, props5, props7, props8, props9, props10, props11, props12, props13, props14, props15, props16, props17, props18, props19, props20, props21, props22, props23, props24, props25, props26, props27, props28, props29, props30];
+      const items14 = [props6, props5, props7, props8, props9, props10, props11, props12, props13, props14, props15, props16, props17, props18, props19, props20, props21, props22, props23, props24, props25, props26, props27, props28, props29];
       items13[1] = items14;
-      const items15 = [props31, props32, props33, props34, props35, props36, props37, props38];
+      const items15 = [props30, props31, props32, props33, props34, props35, props36, props37];
       items13[2] = items15;
       set1 = new Set(items11.filter((item) => !set.has(item)));
       let mapped = items13.map((arr) => arr.filter((item) => set.has(item)));
@@ -728,15 +710,15 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
     }
     let canReportUserResult = null != user;
     if (canReportUserResult) {
-      const tmp8Result33 = tmp8(tmp3[69]);
+      const tmp8Result33 = tmp8(tmp3[67]);
       canReportUserResult = tmp8Result33.canReportUser(user);
     }
     if (canReportUserResult) {
-      const tmp8Result34 = tmp8(tmp3[69]);
+      const tmp8Result34 = tmp8(tmp3[67]);
       canReportUserResult = tmp8Result34.canReportMessage(message);
     }
     if (canReportUserResult) {
-      items11.unshift(props34);
+      items11.unshift(props33);
     }
   }
 };

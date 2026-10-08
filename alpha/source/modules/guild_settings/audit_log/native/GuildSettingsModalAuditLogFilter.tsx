@@ -1,39 +1,38 @@
-// Module ID: 17763
-// Function ID: 17764
+// Module ID: 18050
+// Function ID: 18051
 // Name: GuildSettingsModalAuditLogFilter
-// Dependencies: [32, 19, 17, 1377, 17759, 1085, 21, 4896, 587, 1126, 4728, 17761, 558, 576, 4600, 6082, 10693, 1618, 1490, 5709, 17764, 1188, 9726, 17765, 6078, 6554, 7915, 8404, 6543, 2]
+// Dependencies: [32, 19, 17, 1389, 18046, 1085, 21, 5090, 587, 1126, 4922, 18048, 558, 576, 4792, 6268, 10281, 1630, 1502, 6099, 18051, 1200, 10931, 18052, 6264, 6730, 8334, 8600, 6719, 2]
 // Exports: createAuditLogFilterActionData, createAuditLogFilterUserData
 
-// Module 17763 (GuildSettingsModalAuditLogFilter)
+// Module 18050 (GuildSettingsModalAuditLogFilter)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
-import react_native2 from "react-native" /* 4600 */;
-import UserUtilsDefault from "UserUtils" /* 4728 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5709 */;
-import FormRadio from "FormRadio" /* 6082 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10693 */;
-import AuditLogUtils from "AuditLogUtils" /* 17761 */;
-import AuditLogActionCreators from "AuditLogActionCreators" /* 17764 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_native2 from "react-native" /* 4792 */;
+import UserUtilsDefault from "UserUtils" /* 4922 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6099 */;
+import FormRadio from "FormRadio" /* 6268 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10281 */;
+import AuditLogUtils from "AuditLogUtils" /* 18048 */;
+import AuditLogActionCreators from "AuditLogActionCreators" /* 18051 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17759 */;
+import UserStore from "UserStore" /* 1389 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 18046 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, navigation, obj1, obj7, obj8, set, tmp17, tmp5;
+let _require, dependencyMap, navigation, set;
 
 let c10;
 let c9;
 let obj2;
 let unpackModuleId;
-let _slicedToArray = _slicedToArray_mod;
 const View = react_native.View;
 const AuditLogFilterTypes = Constants.AuditLogFilterTypes;
 ({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = Fragment);
@@ -42,7 +41,7 @@ obj2 = { paddingHorizontal: nativeDefault.space.PX_12, paddingVertical: nativeDe
 let closure_12 = createStyles.createStyles(obj);
 let memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function AuditLogFilterUserRow(arg0) {
   let accessibilityRole;
   let accessibilityState;
   let end;
@@ -106,7 +105,7 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
   cResult[11] = userId;
   cResult[12] = tmp10;
   tmp9 = tmp10;
-}) : ((selected) => {
+}) : (function AuditLogFilterUserRow(selected) {
   let accessibilityRole;
   let accessibilityState;
   let end;
@@ -124,7 +123,7 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
   return React4(tmp2, obj2);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsModalAuditLogFilter(guildId) {
   let closure_2;
   let data;
   let filterType;
@@ -138,8 +137,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   guildId = guildId.guildId;
   let tmp4 = closure_12();
   dependencyMap = tmp4;
-  const bottom = guildId(1618)().bottom;
-  let obj2 = filterType(1490);
+  const bottom = guildId(1630)().bottom;
+  let obj2 = filterType(1502);
   navigation = obj2.useNavigation();
   let obj3 = first;
   let tmp6 = navigation(first.useState(""), 2);
@@ -155,7 +154,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     const _Symbol = Symbol;
     let str = "react.memo_cache_sentinel";
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn2 = function _(value) {
+      function keyExtractor(value) {
         let str1;
         if (null != value.value) {
           const str2 = value.value;
@@ -165,9 +164,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           str1 = str.toString();
         }
         return str1;
-      };
-      cResult[5] = fn2;
-      tmp12 = fn2;
+      }
+      cResult[5] = keyExtractor;
+      tmp12 = keyExtractor;
     } else {
       tmp12 = cResult[5];
     }
@@ -180,7 +179,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       tmp13 = cResult[7];
     }
     const data1 = tmp13.data;
-    const keyExtractor = tmp13.keyExtractor;
+    const keyExtractor2 = tmp13.keyExtractor;
     if (cResult[8] === filterType) {
       let tmp14;
       let tmp15;
@@ -196,7 +195,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             if (cResult[17] === filterType) {
               if (cResult[18] === guildId) {
                 if (cResult[19] === tmp17) {
-                  if (cResult[20] === keyExtractor) {
+                  if (cResult[20] === keyExtractor2) {
                     let tmp20;
                     let tmp23;
                     if (cResult[23] !== filterType) {
@@ -212,69 +211,24 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                         stringResult = intl.string(tmp(1126).t["5h0QOP"]);
                       }
                       cResult[23] = filterType;
-                      class M {
-                        constructor(arg0) {
-                          ({ item, index } = guildId);
-                          value = item.value;
-                          filterType = value;
-                          selected = item.selected;
-                          label = item.label;
-                          tmp = filterType;
-                          tmp2 = closure_1_8;
-                          if (filterType === closure_1_8.USER) {
-                            tmp3 = null;
-                            if (null !== value) {
-                              tmp14 = closure_1_9;
-                              tmp15 = closure_1_13;
-                              obj1 = { start: null, end: null, selected: null, guildId: null, userId: null, onPress: null };
-                              num = 0;
-                              obj1.start = 0 === index;
-                              tmp16 = data;
-                              num2 = 1;
-                              obj1.end = index === data.length - 1;
-                              obj1.selected = selected;
-                              tmp17 = selected;
-                              obj1.guildId = selected;
-                              obj1.userId = value.id;
-                              obj1.onPress = function onPress() {
-                                return closure_7(!selected, filterType);
-                              };
-                              return closure_1_9(closure_1_13, obj1);
+                      class O {
+                        constructor(arg0, id) {
+                          const tmp = arg0;
+                          if (tmp) {
+                            if (filterType === AuditLogFilterTypes.USER) {
+                              id = null;
+                              const filterByUserId = AuditLogActionCreators.filterByUserId;
+                              AuditLogActionCreators;
+                              if (null != id) {
+                                id = id.id;
+                              }
+                              filterByUserId(id, guildId);
+                            } else if (tmp3 === tmp4.ACTION) {
+                              const obj = AuditLogActionCreators;
+                              obj.filterByAction(id, guildId);
                             }
+                            navigation.pop();
                           }
-                          if (tmp === tmp2.USER) {
-                            tmp8 = closure_1_9;
-                            tmp9 = data;
-                            obj6 = { style: null, children: null };
-                            tmp10 = closure_2;
-                            obj6.style = closure_2.allUsersIconContainer;
-                            tmp11 = filterType;
-                            tmp12 = closure_2;
-                            obj7 = { size: null, source: null };
-                            Icon = filterType(closure_2[21]).Icon;
-                            obj7.size = filterType(closure_2[21]).Icon.Sizes.MEDIUM;
-                            tmp13 = guildId;
-                            obj7.source = guildId(closure_2[22]);
-                            obj6.children = closure_1_9(Icon, obj7);
-                            tmp7 = closure_1_9(data, obj6);
-                            tmp6 = closure_2;
-                            tmp4 = closure_1_9;
-                          } else {
-                            tmp4 = closure_1_9;
-                            tmp5 = guildId;
-                            tmp6 = closure_2;
-                            obj = { action: null };
-                            obj.action = value;
-                            tmp7 = closure_1_9(guildId(closure_2[23]), obj);
-                          }
-                          obj8 = { start: 0 === index, end: index === data.length - 1, icon: tmp7, label, value: null, legacyCompat_selected: null, legacyCompat_onPress: null };
-                          TableRadioRow = filterType(tmp6[24]).TableRadioRow;
-                          obj8.value = keyExtractor(item);
-                          obj8.legacyCompat_selected = selected;
-                          obj8.legacyCompat_onPress = function legacyCompat_onPress() {
-                            return closure_7(!selected, filterType);
-                          };
-                          return tmp4(TableRadioRow, obj8);
                         }
                       }
                       cResult[24] = stringResult;
@@ -284,141 +238,51 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                     }
                     if (cResult[25] !== tmp20) {
                       let obj5 = { size: "md", placeholder: tmp20, onChange: null };
-                      class M {
-                        constructor(arg0) {
-                          ({ item, index } = guildId);
-                          value = item.value;
-                          filterType = value;
-                          selected = item.selected;
-                          label = item.label;
-                          tmp = filterType;
-                          tmp2 = closure_1_8;
-                          if (filterType === closure_1_8.USER) {
-                            tmp3 = null;
-                            if (null !== value) {
-                              tmp14 = closure_1_9;
-                              tmp15 = closure_1_13;
-                              obj1 = { start: null, end: null, selected: null, guildId: null, userId: null, onPress: null };
-                              num = 0;
-                              obj1.start = 0 === index;
-                              tmp16 = data;
-                              num2 = 1;
-                              obj1.end = index === data.length - 1;
-                              obj1.selected = selected;
-                              tmp17 = selected;
-                              obj1.guildId = selected;
-                              obj1.userId = value.id;
-                              obj1.onPress = function onPress() {
-                                return closure_7(!selected, filterType);
-                              };
-                              return closure_1_9(closure_1_13, obj1);
+                      class O {
+                        constructor(arg0, id) {
+                          const tmp = arg0;
+                          if (tmp) {
+                            if (filterType === AuditLogFilterTypes.USER) {
+                              id = null;
+                              const filterByUserId = AuditLogActionCreators.filterByUserId;
+                              AuditLogActionCreators;
+                              if (null != id) {
+                                id = id.id;
+                              }
+                              filterByUserId(id, guildId);
+                            } else if (tmp3 === tmp4.ACTION) {
+                              const obj = AuditLogActionCreators;
+                              obj.filterByAction(id, guildId);
                             }
+                            navigation.pop();
                           }
-                          if (tmp === tmp2.USER) {
-                            tmp8 = closure_1_9;
-                            tmp9 = data;
-                            obj6 = { style: null, children: null };
-                            tmp10 = closure_2;
-                            obj6.style = closure_2.allUsersIconContainer;
-                            tmp11 = filterType;
-                            tmp12 = closure_2;
-                            obj7 = { size: null, source: null };
-                            Icon = filterType(closure_2[21]).Icon;
-                            obj7.size = filterType(closure_2[21]).Icon.Sizes.MEDIUM;
-                            tmp13 = guildId;
-                            obj7.source = guildId(closure_2[22]);
-                            obj6.children = closure_1_9(Icon, obj7);
-                            tmp7 = closure_1_9(data, obj6);
-                            tmp6 = closure_2;
-                            tmp4 = closure_1_9;
-                          } else {
-                            tmp4 = closure_1_9;
-                            tmp5 = guildId;
-                            tmp6 = closure_2;
-                            obj = { action: null };
-                            obj.action = value;
-                            tmp7 = closure_1_9(guildId(closure_2[23]), obj);
-                          }
-                          obj8 = { start: 0 === index, end: index === data.length - 1, icon: tmp7, label, value: null, legacyCompat_selected: null, legacyCompat_onPress: null };
-                          TableRadioRow = filterType(tmp6[24]).TableRadioRow;
-                          obj8.value = keyExtractor(item);
-                          obj8.legacyCompat_selected = selected;
-                          obj8.legacyCompat_onPress = function legacyCompat_onPress() {
-                            return closure_7(!selected, filterType);
-                          };
-                          return tmp4(TableRadioRow, obj8);
                         }
                       }
-                      const tmp25 = closure_9(tmp(6554).SearchField, obj5);
+                      const tmp25 = closure_9(tmp(6730).SearchField, obj5);
                       cResult[25] = tmp20;
                       cResult[26] = tmp25;
                       tmp23 = tmp25;
                     } else {
                       tmp23 = cResult[26];
                     }
-                    class M {
-                      constructor(arg0) {
-                        ({ item, index } = guildId);
-                        value = item.value;
-                        filterType = value;
-                        selected = item.selected;
-                        label = item.label;
-                        tmp = filterType;
-                        tmp2 = closure_1_8;
-                        if (filterType === closure_1_8.USER) {
-                          tmp3 = null;
-                          if (null !== value) {
-                            tmp14 = closure_1_9;
-                            tmp15 = closure_1_13;
-                            obj1 = { start: null, end: null, selected: null, guildId: null, userId: null, onPress: null };
-                            num = 0;
-                            obj1.start = 0 === index;
-                            tmp16 = data;
-                            num2 = 1;
-                            obj1.end = index === data.length - 1;
-                            obj1.selected = selected;
-                            tmp17 = selected;
-                            obj1.guildId = selected;
-                            obj1.userId = value.id;
-                            obj1.onPress = function onPress() {
-                              return closure_7(!selected, filterType);
-                            };
-                            return closure_1_9(closure_1_13, obj1);
+                    class O {
+                      constructor(arg0, id) {
+                        const tmp = arg0;
+                        if (tmp) {
+                          if (filterType === AuditLogFilterTypes.USER) {
+                            id = null;
+                            const filterByUserId = AuditLogActionCreators.filterByUserId;
+                            AuditLogActionCreators;
+                            if (null != id) {
+                              id = id.id;
+                            }
+                            filterByUserId(id, guildId);
+                          } else if (tmp3 === tmp4.ACTION) {
+                            const obj = AuditLogActionCreators;
+                            obj.filterByAction(id, guildId);
                           }
+                          navigation.pop();
                         }
-                        if (tmp === tmp2.USER) {
-                          tmp8 = closure_1_9;
-                          tmp9 = data;
-                          obj6 = { style: null, children: null };
-                          tmp10 = closure_2;
-                          obj6.style = closure_2.allUsersIconContainer;
-                          tmp11 = filterType;
-                          tmp12 = closure_2;
-                          obj7 = { size: null, source: null };
-                          Icon = filterType(closure_2[21]).Icon;
-                          obj7.size = filterType(closure_2[21]).Icon.Sizes.MEDIUM;
-                          tmp13 = guildId;
-                          obj7.source = guildId(closure_2[22]);
-                          obj6.children = closure_1_9(Icon, obj7);
-                          tmp7 = closure_1_9(data, obj6);
-                          tmp6 = closure_2;
-                          tmp4 = closure_1_9;
-                        } else {
-                          tmp4 = closure_1_9;
-                          tmp5 = guildId;
-                          tmp6 = closure_2;
-                          obj = { action: null };
-                          obj.action = value;
-                          tmp7 = closure_1_9(guildId(closure_2[23]), obj);
-                        }
-                        obj8 = { start: 0 === index, end: index === data.length - 1, icon: tmp7, label, value: null, legacyCompat_selected: null, legacyCompat_onPress: null };
-                        TableRadioRow = filterType(tmp6[24]).TableRadioRow;
-                        obj8.value = keyExtractor(item);
-                        obj8.legacyCompat_selected = selected;
-                        obj8.legacyCompat_onPress = function legacyCompat_onPress() {
-                          return closure_7(!selected, filterType);
-                        };
-                        return tmp4(TableRadioRow, obj8);
                       }
                     }
                     const obj6 = { style: tmp4.searchBar, children: tmp23 };
@@ -448,69 +312,24 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               }
             }
           }
-          class M {
-            constructor(arg0) {
-              ({ item, index } = guildId);
-              value = item.value;
-              filterType = value;
-              selected = item.selected;
-              label = item.label;
-              tmp = filterType;
-              tmp2 = closure_1_8;
-              if (filterType === closure_1_8.USER) {
-                tmp3 = null;
-                if (null !== value) {
-                  tmp14 = closure_1_9;
-                  tmp15 = closure_1_13;
-                  obj1 = { start: null, end: null, selected: null, guildId: null, userId: null, onPress: null };
-                  num = 0;
-                  obj1.start = 0 === index;
-                  tmp16 = data;
-                  num2 = 1;
-                  obj1.end = index === data.length - 1;
-                  obj1.selected = selected;
-                  tmp17 = selected;
-                  obj1.guildId = selected;
-                  obj1.userId = value.id;
-                  obj1.onPress = function onPress() {
-                    return closure_7(!selected, filterType);
-                  };
-                  return closure_1_9(closure_1_13, obj1);
+          class O {
+            constructor(arg0, id) {
+              const tmp = arg0;
+              if (tmp) {
+                if (filterType === AuditLogFilterTypes.USER) {
+                  id = null;
+                  const filterByUserId = AuditLogActionCreators.filterByUserId;
+                  AuditLogActionCreators;
+                  if (null != id) {
+                    id = id.id;
+                  }
+                  filterByUserId(id, guildId);
+                } else if (tmp3 === tmp4.ACTION) {
+                  const obj = AuditLogActionCreators;
+                  obj.filterByAction(id, guildId);
                 }
+                navigation.pop();
               }
-              if (tmp === tmp2.USER) {
-                tmp8 = closure_1_9;
-                tmp9 = data;
-                obj6 = { style: null, children: null };
-                tmp10 = closure_2;
-                obj6.style = closure_2.allUsersIconContainer;
-                tmp11 = filterType;
-                tmp12 = closure_2;
-                obj7 = { size: null, source: null };
-                Icon = filterType(closure_2[21]).Icon;
-                obj7.size = filterType(closure_2[21]).Icon.Sizes.MEDIUM;
-                tmp13 = guildId;
-                obj7.source = guildId(closure_2[22]);
-                obj6.children = closure_1_9(Icon, obj7);
-                tmp7 = closure_1_9(data, obj6);
-                tmp6 = closure_2;
-                tmp4 = closure_1_9;
-              } else {
-                tmp4 = closure_1_9;
-                tmp5 = guildId;
-                tmp6 = closure_2;
-                obj = { action: null };
-                obj.action = value;
-                tmp7 = closure_1_9(guildId(closure_2[23]), obj);
-              }
-              obj8 = { start: 0 === index, end: index === data.length - 1, icon: tmp7, label, value: null, legacyCompat_selected: null, legacyCompat_onPress: null };
-              TableRadioRow = filterType(tmp6[24]).TableRadioRow;
-              obj8.value = keyExtractor(item);
-              obj8.legacyCompat_selected = selected;
-              obj8.legacyCompat_onPress = function legacyCompat_onPress() {
-                return closure_7(!selected, filterType);
-              };
-              return tmp4(TableRadioRow, obj8);
             }
           }
           cResult[16] = data1.length;
@@ -534,15 +353,35 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               setOptions({ headerTitle: stringResult });
             }
           }
-          cResult[20] = keyExtractor;
+          cResult[20] = keyExtractor2;
           cResult[21] = tmp4.allUsersIconContainer;
-          cResult[22] = M;
+          cResult[22] = tmp19;
+        }
+      }
+      class O {
+        constructor(arg0, id) {
+          const tmp = arg0;
+          if (tmp) {
+            if (filterType === AuditLogFilterTypes.USER) {
+              id = null;
+              const filterByUserId = AuditLogActionCreators.filterByUserId;
+              AuditLogActionCreators;
+              if (null != id) {
+                id = id.id;
+              }
+              filterByUserId(id, guildId);
+            } else if (tmp3 === tmp4.ACTION) {
+              const obj = AuditLogActionCreators;
+              obj.filterByAction(id, guildId);
+            }
+            navigation.pop();
+          }
         }
       }
       cResult[12] = filterType;
       cResult[13] = guildId;
       cResult[14] = navigation;
-      cResult[15] = tmp18;
+      cResult[15] = O;
       class N {
         constructor() {
           let stringResult;
@@ -594,69 +433,24 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       return tmp(formatted, str.toLowerCase());
     };
     cResult[3] = first;
-    class M {
-      constructor(arg0) {
-        ({ item, index } = guildId);
-        value = item.value;
-        filterType = value;
-        selected = item.selected;
-        label = item.label;
-        tmp = filterType;
-        tmp2 = closure_1_8;
-        if (filterType === closure_1_8.USER) {
-          tmp3 = null;
-          if (null !== value) {
-            tmp14 = closure_1_9;
-            tmp15 = closure_1_13;
-            obj1 = { start: null, end: null, selected: null, guildId: null, userId: null, onPress: null };
-            num = 0;
-            obj1.start = 0 === index;
-            tmp16 = data;
-            num2 = 1;
-            obj1.end = index === data.length - 1;
-            obj1.selected = selected;
-            tmp17 = selected;
-            obj1.guildId = selected;
-            obj1.userId = value.id;
-            obj1.onPress = function onPress() {
-              return closure_7(!selected, filterType);
-            };
-            return closure_1_9(closure_1_13, obj1);
+    class O {
+      constructor(arg0, id) {
+        const tmp = arg0;
+        if (tmp) {
+          if (filterType === AuditLogFilterTypes.USER) {
+            id = null;
+            const filterByUserId = AuditLogActionCreators.filterByUserId;
+            AuditLogActionCreators;
+            if (null != id) {
+              id = id.id;
+            }
+            filterByUserId(id, guildId);
+          } else if (tmp3 === tmp4.ACTION) {
+            const obj = AuditLogActionCreators;
+            obj.filterByAction(id, guildId);
           }
+          navigation.pop();
         }
-        if (tmp === tmp2.USER) {
-          tmp8 = closure_1_9;
-          tmp9 = data;
-          obj6 = { style: null, children: null };
-          tmp10 = closure_2;
-          obj6.style = closure_2.allUsersIconContainer;
-          tmp11 = filterType;
-          tmp12 = closure_2;
-          obj7 = { size: null, source: null };
-          Icon = filterType(closure_2[21]).Icon;
-          obj7.size = filterType(closure_2[21]).Icon.Sizes.MEDIUM;
-          tmp13 = guildId;
-          obj7.source = guildId(closure_2[22]);
-          obj6.children = closure_1_9(Icon, obj7);
-          tmp7 = closure_1_9(data, obj6);
-          tmp6 = closure_2;
-          tmp4 = closure_1_9;
-        } else {
-          tmp4 = closure_1_9;
-          tmp5 = guildId;
-          tmp6 = closure_2;
-          obj = { action: null };
-          obj.action = value;
-          tmp7 = closure_1_9(guildId(closure_2[23]), obj);
-        }
-        obj8 = { start: 0 === index, end: index === data.length - 1, icon: tmp7, label, value: null, legacyCompat_selected: null, legacyCompat_onPress: null };
-        TableRadioRow = filterType(tmp6[24]).TableRadioRow;
-        obj8.value = keyExtractor(item);
-        obj8.legacyCompat_selected = selected;
-        obj8.legacyCompat_onPress = function legacyCompat_onPress() {
-          return closure_7(!selected, filterType);
-        };
-        return tmp4(TableRadioRow, obj8);
       }
     }
     cResult[4] = fn;
@@ -669,30 +463,28 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[1] = first;
   cResult[2] = found;
   tmp8 = found;
-}) : ((data) => {
+}) : (function GuildSettingsModalAuditLogFilter(data) {
   let SearchField;
-  let closure_3;
-  let first;
   let intl4;
   let intl5;
   let obj5;
   let stringResult;
   let tmp15Result;
-  let tmp8;
   data = data.data;
   const filterType = data.filterType;
   const guildId = data.guildId;
-  first = undefined;
   let tmp = closure_12();
-  _slicedToArray = tmp;
+  let closure_3 = tmp;
   const tmp3 = guildId;
   let tmp2 = filterType;
   let tmp4 = data;
   const bottom = filterType(guildId[17])().bottom;
   let obj = data(guildId[18]);
   navigation = obj.useNavigation();
-  [first, tmp8] = navigation.useState("");
+  let tmp6 = closure_3(navigation.useState(""), 2);
+  const first = tmp6[0];
   const items = [first, data];
+  const tmp8 = tmp6[1];
   const memo = navigation.useMemo(() => {
     const obj = {
       data: data.filter((label) => {

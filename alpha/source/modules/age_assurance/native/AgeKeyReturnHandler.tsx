@@ -1,14 +1,14 @@
-// Module ID: 13813
-// Function ID: 13814
+// Module ID: 14038
+// Function ID: 14039
 // Name: AgeKeyReturnHandler
-// Dependencies: [8118, 8133, 4742, 5099, 2]
+// Dependencies: [5914, 7520, 4936, 5940, 2]
 // Exports: handleAgeKeyReturn
 
-// Module 13813 (AgeKeyReturnHandler)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4742 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
-import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 8133 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 8118 */;
+// Module 14038 (AgeKeyReturnHandler)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4936 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 7520 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 5914 */;
 import size from "module_2" /* 2 */;
 
 let c3;

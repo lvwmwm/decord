@@ -1,11 +1,11 @@
-// Module ID: 10445
-// Function ID: 10446
+// Module ID: 10042
+// Function ID: 10043
 // Name: useGiftOptionsSyncDebounce
-// Dependencies: [19, 558, 576, 12, 5991, 2]
+// Dependencies: [19, 558, 576, 12, 6174, 2]
 
-// Module 10445 (useGiftOptionsSyncDebounce)
+// Module 10042 (useGiftOptionsSyncDebounce)
 import _modDef12 from "module_12" /* 12 */;
-import useInitialValueDefault from "useInitialValue" /* 5991 */;
+import useInitialValueDefault from "useInitialValue" /* 6174 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require, dependencyMap, importDefault;
 
 let react = react_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGiftOptionsSyncDebounce(arg0) {
   let closure_0;
   let closure_1;
   let first;
@@ -92,7 +92,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const effect = obj2.useEffect(tmp7, tmp8);
   if (cResult[7] !== tmp5) {
-    const fn4 = function _(current) {
+    const fn4 = function h(current) {
       closure_1.current = current;
       let flag = ref.current !== current;
       if (flag) {
@@ -108,7 +108,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp10 = cResult[8];
   }
   if (cResult[9] !== tmp5) {
-    const fn5 = function w(current) {
+    const fn5 = function p(current) {
       closure_4.cancel();
       ref.current = current;
     };
@@ -168,7 +168,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[13] = tmp11;
   cResult[14] = tmp10;
   cResult[15] = obj3;
-}) : ((arg0) => {
+}) : (function useGiftOptionsSyncDebounce(arg0) {
   let closure_1;
   let ref;
   let ref2;

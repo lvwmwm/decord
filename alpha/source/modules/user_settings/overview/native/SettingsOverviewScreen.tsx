@@ -1,19 +1,20 @@
-// Module ID: 17113
-// Function ID: 17114
+// Module ID: 17394
+// Function ID: 17395
 // Name: SettingsOverviewScreen
-// Dependencies: [19, 7645, 21, 1126, 1375, 15326, 558, 576, 4534, 11142, 14516, 2]
+// Dependencies: [19, 2128, 7966, 21, 1126, 1387, 15588, 558, 576, 4726, 504, 11262, 14776, 2]
 
-// Module 17113 (SettingsOverviewScreen)
+// Module 17394 (SettingsOverviewScreen)
 import Fragment from "Fragment" /* 21 */;
+import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import intl8 from "intl" /* 1126 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import PremiumUtils from "PremiumUtils" /* 4534 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
-import SettingListRenderer from "SettingListRenderer" /* 14516 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15326 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import PremiumUtils from "PremiumUtils" /* 4726 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15588 */;
 import react from "react" /* 19 */;
+import LocaleStore from "LocaleStore" /* 2128 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -97,49 +98,77 @@ function getOverviewSettings(isPremiumUser) {
 }
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  let obj4;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsOverviewScreen() {
+  let locale;
   let tmp5;
-  let tmp9;
+  let tmp6;
   const obj = react2;
-  const cResult = obj.c(4);
+  const cResult = obj.c(7);
   const obj2 = PremiumUtils;
   const hasPremiumSubscriptionToDisplay = obj2.useHasPremiumSubscriptionToDisplay();
-  if (cResult[0] !== hasPremiumSubscriptionToDisplay) {
-    const obj3 = { sections: getOverviewSettings(obj4) };
-    obj4 = { isPremiumUser: hasPremiumSubscriptionToDisplay };
-    const createList = SettingBuilders.createList;
-    SettingBuilders;
-    const list = createList(obj3);
-    cResult[0] = hasPremiumSubscriptionToDisplay;
-    cResult[1] = list;
-    tmp5 = list;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [LocaleStore];
+    class E {
+      constructor() {
+        return closure_1_3.locale;
+      }
+    }
+    cResult[0] = items;
+    cResult[1] = E;
+    tmp5 = items;
+    tmp6 = E;
   } else {
-    tmp5 = cResult[1];
+    [tmp5, tmp6] = cResult;
   }
-  if (cResult[2] !== tmp5) {
-    const tmp11 = jsx(SettingListRenderer.SearchableSettingsList, { node: tmp5 });
-    cResult[2] = tmp5;
-    cResult[3] = tmp11;
-    tmp9 = tmp11;
-  } else {
-    tmp9 = cResult[3];
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  if (cResult[2] === hasPremiumSubscriptionToDisplay) {
+    let tmp9;
+    let tmp12;
+    if (cResult[3] === stateFromStores) {
+      tmp9 = cResult[4];
+    }
+    if (cResult[5] !== tmp9) {
+      class E {
+        constructor() {
+          return closure_1_3.locale;
+        }
+      }
+      cResult[5] = tmp9;
+      cResult[6] = tmp14;
+      tmp12 = tmp14;
+    } else {
+      tmp12 = cResult[6];
+    }
+    return tmp12;
   }
-  return tmp9;
-}) : (() => {
+  const createList = SettingBuilders.createList;
+  const tmpResult2 = SettingBuilders;
+  const obj4 = { sections: getOverviewSettings({ isPremiumUser: hasPremiumSubscriptionToDisplay, locale: stateFromStores }) };
+  const list = createList(obj4);
+  cResult[2] = hasPremiumSubscriptionToDisplay;
+  cResult[3] = stateFromStores;
+  cResult[4] = list;
+  tmp9 = list;
+}) : (function SettingsOverviewScreen() {
   let hasPremiumSubscriptionToDisplay;
-  let obj = hasPremiumSubscriptionToDisplay(4534);
+  let locale;
+  let stateFromStores;
+  let obj = hasPremiumSubscriptionToDisplay(stateFromStores[9]);
   hasPremiumSubscriptionToDisplay = obj.useHasPremiumSubscriptionToDisplay();
-  const items = [hasPremiumSubscriptionToDisplay];
+  let obj2 = hasPremiumSubscriptionToDisplay(stateFromStores[10]);
+  const items = [LocaleStore];
+  stateFromStores = obj2.useStateFromStores(items, () => locale.locale);
+  const items1 = [hasPremiumSubscriptionToDisplay, stateFromStores];
   const node = react.useMemo(() => {
     let obj2;
     const obj = { sections: getOverviewSettings(obj2) };
     const createList = SettingBuilders.createList;
-    obj2 = { isPremiumUser: hasPremiumSubscriptionToDisplay };
+    obj2 = { isPremiumUser: hasPremiumSubscriptionToDisplay, locale: stateFromStores };
     SettingBuilders;
     return createList(obj);
-  }, items);
-  return jsx(hasPremiumSubscriptionToDisplay(14516).SearchableSettingsList, { node });
+  }, items1);
+  return jsx(hasPremiumSubscriptionToDisplay(stateFromStores[12]).SearchableSettingsList, { node });
 });
 const result = size.fileFinishedImporting("modules/user_settings/overview/native/SettingsOverviewScreen.tsx");
 

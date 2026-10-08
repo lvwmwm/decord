@@ -1,23 +1,21 @@
-// Module ID: 11007
-// Function ID: 11008
+// Module ID: 11232
+// Function ID: 11233
 // Name: AppLauncherContext
-// Dependencies: [19, 558, 576, 4618, 8961, 11008, 2]
+// Dependencies: [19, 558, 576, 4810, 11233, 11234, 2]
 
-// Module 11007 (AppLauncherContext)
+// Module 11232 (AppLauncherContext)
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 8961 */;
-import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11008 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11233 */;
+import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11234 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let noop;
-
 const AppLauncherKeyboardCloseReason = { DISMISSED: 0, [0]: "DISMISSED", COMMAND: 1, [1]: "COMMAND", ACTIVITY: 2, [2]: "ACTIVITY", BACK: 3, [3]: "BACK", OAUTH_MODAL: 4, [4]: "OAUTH_MODAL" };
 let context = react.createContext(undefined);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((noop) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppLauncherChatInputRefDummy(noop) {
   let tmp2;
   const obj = react2;
   const cResult = obj.c(2);
@@ -62,7 +60,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((noop) => {
     tmp2 = cResult[1];
   }
   return react.useRef(tmp2);
-}) : ((noop) => {
+}) : (function useAppLauncherChatInputRefDummy(noop) {
   noop = noop.noop;
   const obj = {
     getApplicationCommandManager() {
@@ -100,7 +98,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((noop) => {
 });
 let closure_5 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequiredAppLauncherContext() {
   context = react.useContext(context);
   if (null == context) {
     const _Error = Error;
@@ -111,7 +109,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   } else {
     return context;
   }
-}) : (function() {
+}) : (function useRequiredAppLauncherContext() {
   context = react.useContext(context);
   if (null == context) {
     const _Error = Error;
@@ -124,7 +122,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppLauncherContext() {
   let first;
   const obj = react2;
   const cResult = obj.c(6);
@@ -168,7 +166,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[4] = defaultAppLauncherWidth;
   cResult[5] = obj7;
   tmp9 = obj7;
-}) : (() => {
+}) : (function useAppLauncherContext() {
   let obj;
   let closure_0 = react.useRef(obj.DISMISSED);
   let closure_1 = react.useRef(undefined);

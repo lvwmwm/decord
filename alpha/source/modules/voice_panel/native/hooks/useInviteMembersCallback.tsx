@@ -1,13 +1,13 @@
-// Module ID: 17246
-// Function ID: 17247
+// Module ID: 17527
+// Function ID: 17528
 // Name: useInviteMembersCallback
-// Dependencies: [19, 2051, 1085, 558, 576, 11225, 9494, 2]
+// Dependencies: [19, 2063, 1085, 558, 576, 11340, 8658, 2]
 
-// Module 17246 (useInviteMembersCallback)
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9494 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11225 */;
+// Module 17527 (useInviteMembersCallback)
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8658 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11340 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ let _require;
 let hasOwnProperty;
 let metroRequire;
 ({ AnalyticsPages: hasOwnProperty, InstantInviteSources: metroRequire } = Constants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInviteMembersCallback(arg0) {
   let closure_0;
   let tmp2;
   _require = arg0;
@@ -48,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = cResult[1];
   }
   return tmp2;
-}) : ((arg0) => {
+}) : (function useInviteMembersCallback(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   return react.useCallback(() => {

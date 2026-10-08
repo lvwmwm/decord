@@ -1,19 +1,19 @@
-// Module ID: 10603
-// Function ID: 10604
+// Module ID: 10200
+// Function ID: 10201
 // Name: PremiumGiftCustomMessage
-// Dependencies: [19, 17, 1379, 21, 4896, 587, 558, 576, 1126, 6587, 10443, 2]
+// Dependencies: [19, 17, 1391, 21, 5090, 587, 558, 576, 1126, 6763, 10040, 2]
 
-// Module 10603 (PremiumGiftCustomMessage)
+// Module 10200 (PremiumGiftCustomMessage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import TextArea2 from "TextArea" /* 6587 */;
-import NativeGiftContext from "NativeGiftContext" /* 10443 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import TextArea2 from "TextArea" /* 6763 */;
+import NativeGiftContext from "NativeGiftContext" /* 10040 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,17 +25,20 @@ let obj = { container: obj2 };
 obj2 = { marginTop: nativeDefault.space.PX_24, marginHorizontal: nativeDefault.space.PX_16 };
 let closure_6 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCustomMessage(arg0) {
   let customGiftMessage;
   let first;
   let onFocusMessage;
   let setCustomGiftMessage;
   let setMessagePosition;
+  let tmp7;
+  let tmp8;
+  let tmp9;
   const obj = react2;
   const cResult = obj.c(14);
   ({ onFocusMessage, setMessagePosition } = arg0);
   ({ customGiftMessage, setCustomGiftMessage } = arg0);
-  closure_6();
+  const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t.ZkOo1U);
@@ -45,70 +48,64 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== setCustomGiftMessage) {
-    class C {
-      constructor(arg0) {
-        tmp = setCustomGiftMessage(arg0);
-        return;
-      }
-    }
+    const fn = function v(arg0) {
+      setCustomGiftMessage(arg0);
+    };
     cResult[1] = setCustomGiftMessage;
-    cResult[2] = C;
+    cResult[2] = fn;
+    tmp7 = fn;
   } else {
-    class C {
-      constructor(arg0) {
-        tmp = setCustomGiftMessage(arg0);
-        return;
-      }
-    }
+    tmp7 = cResult[2];
   }
+  const container = tmp4.container;
   if (cResult[3] !== setMessagePosition) {
-    class C {
-      constructor(arg0) {
-        tmp = setCustomGiftMessage(arg0);
-        return;
-      }
-    }
+    const fn2 = function y(nativeEvent) {
+      return setMessagePosition(nativeEvent.nativeEvent.layout.y);
+    };
     cResult[3] = setMessagePosition;
-    cResult[4] = tmp9;
+    cResult[4] = fn2;
+    tmp8 = fn2;
   } else {
-    class C {
-      constructor(arg0) {
-        tmp = setCustomGiftMessage(arg0);
-        return;
-      }
-    }
+    tmp8 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class C {
-      constructor(arg0) {
-        tmp = setCustomGiftMessage(arg0);
-        return;
-      }
-    }
-    const stringResult1 = obj2.string(intl3.t.B3miE8);
+    const intl2 = tmp(1126).intl;
+    const stringResult1 = intl2.string(intl3.t.B3miE8);
     cResult[5] = stringResult1;
+    tmp9 = stringResult1;
   } else {
-    class C {
-      constructor(arg0) {
-        tmp = setCustomGiftMessage(arg0);
-        return;
-      }
-    }
+    tmp9 = cResult[5];
   }
   if (cResult[6] === customGiftMessage) {
-    class C {
-      constructor(arg0) {
-        tmp = setCustomGiftMessage(arg0);
-        return;
+    if (cResult[7] === tmp7) {
+      let tmp11;
+      if (cResult[8] === onFocusMessage) {
+        tmp11 = cResult[9];
       }
+      if (cResult[10] === tmp4.container) {
+        if (cResult[11] === tmp8) {
+          let tmp13;
+          if (cResult[12] === tmp11) {
+            tmp13 = cResult[13];
+          }
+          return tmp13;
+        }
+      }
+      const tmp16 = <View style={container} onLayout={tmp8}>{tmp11}</View>;
+      cResult[10] = tmp4.container;
+      cResult[11] = tmp8;
+      cResult[12] = tmp11;
+      cResult[13] = tmp16;
+      tmp13 = tmp16;
     }
   }
+  const tmp12 = jsx(TextArea2.TextArea, { label: tmp9, placeholder: first, value: customGiftMessage, onChange: tmp7, maxLength, onFocus: onFocusMessage });
   cResult[6] = customGiftMessage;
   cResult[7] = tmp7;
   cResult[8] = onFocusMessage;
-  cResult[9] = jsx(TextArea2.TextArea, { label: tmp10, placeholder: first, value: customGiftMessage, onChange: tmp7, maxLength, onFocus: onFocusMessage });
-  jsx(TextArea2.TextArea, { label: tmp10, placeholder: first, value: customGiftMessage, onChange: tmp7, maxLength, onFocus: onFocusMessage });
-}) : ((arg0) => {
+  cResult[9] = tmp12;
+  tmp11 = tmp12;
+}) : (function GiftCustomMessage(arg0) {
   let closure_129_0;
   let customGiftMessage;
   let intl2;
@@ -133,7 +130,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 let closure_7 = tmp3;
 const memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftCustomMessage(arg0) {
   let customGiftMessage;
   let onFocusMessage;
   let setCustomGiftMessage;
@@ -162,7 +159,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   cResult[3] = setMessagePosition;
   cResult[4] = tmp4;
   tmp3 = tmp4;
-}) : ((arg0) => {
+}) : (function PremiumGiftCustomMessage(arg0) {
   let onFocusMessage;
   let setMessagePosition;
   ({ onFocusMessage, setMessagePosition } = arg0);

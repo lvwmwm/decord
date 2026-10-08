@@ -1,16 +1,16 @@
-// Module ID: 11623
-// Function ID: 11624
+// Module ID: 11687
+// Function ID: 11688
 // Name: ChatInputContentCallbacks
-// Dependencies: [32, 19, 6792, 6825, 6799, 558, 576, 8839, 12, 2]
+// Dependencies: [32, 19, 6967, 6998, 6970, 558, 576, 9198, 12, 2]
 // Exports: tryUpdateSubscriptionForHereMention
 
-// Module 11623 (ChatInputContentCallbacks)
-import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 6799 */;
-import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 6825 */;
-import useMessageMaxLengthDefault from "useMessageMaxLength" /* 8839 */;
+// Module 11687 (ChatInputContentCallbacks)
+import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 6970 */;
+import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 6998 */;
+import useMessageMaxLengthDefault from "useMessageMaxLength" /* 9198 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelMemberStore from "ChannelMemberStore" /* 6792 */;
+import ChannelMemberStore from "ChannelMemberStore" /* 6967 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let tmp3;
 const _modDef12 = tmp3(12);
 let _slicedToArray = _slicedToArray_mod;
 let c6 = "@here";
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHereMentionCallback(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
   let closure_2;
@@ -62,7 +62,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
           }
         }
       }
-      const fn = function y() {
+      const fn = function v() {
         const groups = ChannelMemberStore.getProps(closure_1, closure_2).groups;
         if (null != closure_1) {
           let tmp = groups.length > 1;
@@ -127,7 +127,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
   cResult[2] = tmp4;
   cResult[3] = debounceResult;
   tmp7 = debounceResult;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useHereMentionCallback(arg0, arg1, arg2) {
   let closure_1;
   let closure_2;
   let closure_3;

@@ -1,11 +1,11 @@
-// Module ID: 9739
-// Function ID: 9740
+// Module ID: 10940
+// Function ID: 10941
 // Name: StageChannelAnimationUtils
-// Dependencies: [4618, 558, 9619, 9617, 1618, 4897, 2]
+// Dependencies: [4810, 558, 10812, 10810, 1630, 5091, 2]
 
-// Module 9739 (StageChannelAnimationUtils)
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
+// Module 10940 (StageChannelAnimationUtils)
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let closure_4 = { code: "function StageChannelAnimationUtilsTsx1(){const{isInvit
 const __initData = { code: "function StageChannelAnimationUtilsTsx2(){const{withTiming,paddingTop,TIMING_CONFIG}=this.__closure;return{paddingTop:withTiming(paddingTop.get(),TIMING_CONFIG)};}" };
 const __initData2 = { code: "function StageChannelAnimationUtilsTsx3(){const{isInvited,actionBarHeight,ACTION_BAR_SAFE_AREA_PADDING,safeAreaTop,controlPadding}=this.__closure;return isInvited?actionBarHeight+ACTION_BAR_SAFE_AREA_PADDING+safeAreaTop:controlPadding;}" };
 const __initData3 = { code: "function StageChannelAnimationUtilsTsx4(){const{withTiming,paddingTop,TIMING_CONFIG}=this.__closure;return{paddingTop:withTiming(paddingTop.get(),TIMING_CONFIG)};}" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, controlPadding) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStageActionBarAnimation(arg0, controlPadding) {
   let closure_1;
   let derivedValue;
   let getActionBarHeight;
@@ -58,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, controlPaddi
   fn.__initData = __initData;
   ({ withTiming: require("timing").withTiming, paddingTop: derivedValue, TIMING_CONFIG: top });
   return obj3.useAnimatedStyle(fn);
-}) : ((arg0, controlPadding) => {
+}) : (function useStageActionBarAnimation(arg0, controlPadding) {
   let closure_1;
   let getActionBarHeight;
   _require = controlPadding;

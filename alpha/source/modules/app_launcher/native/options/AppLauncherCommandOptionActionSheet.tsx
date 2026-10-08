@@ -1,17 +1,17 @@
-// Module ID: 11805
-// Function ID: 11806
+// Module ID: 11872
+// Function ID: 11873
 // Name: AppLauncherCommandOptionActionSheet
-// Dependencies: [109, 19, 17, 1489, 21, 4896, 587, 558, 576, 6703, 4860, 1188, 6651, 6652, 2]
+// Dependencies: [109, 19, 17, 1501, 21, 5090, 587, 558, 576, 6880, 5054, 1200, 6828, 6829, 2]
 
-// Module 11805 (AppLauncherCommandOptionActionSheet)
+// Module 11872 (AppLauncherCommandOptionActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1489 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const jsx = Fragment.jsx;
 let obj = { actionSheetBackground: obj2, titleContainer: { backgroundColor: "transparent" }, titleWrapper: { alignItems: "center" }, subtitleWrapper: { paddingHorizontal: 12, textAlign: "center" }, contentContainer: { paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingTop: DEFAULT_CONTENT_PADDING, flex: 1 } };
 obj2 = { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
 let closure_7 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherCommandOptionActionSheet(arg0) {
   let children;
   let contentContainerStyles;
   let option;
@@ -125,7 +125,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     }
                   }
                 }
-                BottomSheet = tmp(6652).BottomSheet;
+                BottomSheet = tmp(6829).BottomSheet;
                 const merged = Object.assign(tmp7);
                 const tmp36 = <BottomSheet key={tmp6.name} backgroundStyles={tmp15.actionSheetBackground} scrollable={undefined === tmp8 || tmp8} startExpanded={undefined === tmp9 || tmp9} header={tmp24}>{tmp27}</BottomSheet>;
                 cResult[24] = tmp6.name;
@@ -163,7 +163,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[16] = tmp17;
   cResult[17] = tmp25;
   tmp24 = tmp25;
-}) : ((startExpanded) => {
+}) : (function AppLauncherCommandOptionActionSheet(startExpanded) {
   let children;
   let contentContainerStyles;
   let option;
@@ -179,9 +179,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const merged = Object.assign(startExpanded, Object.assign({ option: 0, children: 0, contentContainerStyles: 0, scrollable: 0, startExpanded: 0 }));
   const tmp2 = closure_7();
-  BottomSheet = merged(6652).BottomSheet;
+  BottomSheet = merged(6829).BottomSheet;
   const merged1 = Object.assign(merged);
-  const BottomSheetTitleHeader = merged(6651).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = merged(6828).BottomSheetTitleHeader;
   ({ displayName: obj2.title, displayDescription: obj2.subtitle } = option);
   const items = [tmp2.contentContainer, contentContainerStyles];
   return <BottomSheet key={option.name} backgroundStyles={tmp2.actionSheetBackground} scrollable={scrollable} startExpanded={flag} header={<BottomSheetTitleHeader titleContainerStyle={tmp2.titleContainer} titleWrapperStyle={tmp2.titleWrapper} subtitleStyle={tmp2.subtitleWrapper} leading={null} title={null} subtitle={null} trailing={null} />}><View style={items}>{children}</View></BottomSheet>;

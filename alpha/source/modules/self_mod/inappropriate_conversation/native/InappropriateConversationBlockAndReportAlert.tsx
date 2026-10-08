@@ -1,19 +1,17 @@
-// Module ID: 9835
-// Function ID: 9836
+// Module ID: 10398
+// Function ID: 10399
 // Name: InappropriateConversationBlockAndReportAlert
-// Dependencies: [19, 21, 558, 576, 9811, 1126, 9836, 2]
+// Dependencies: [19, 21, 558, 576, 10374, 1126, 10399, 2]
 
-// Module 9835 (InappropriateConversationBlockAndReportAlert)
+// Module 10398 (InappropriateConversationBlockAndReportAlert)
 import Fragment from "Fragment" /* 21 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 9811 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10374 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channelId;
-
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function InappropriateConversationBlockAndReportAlert(channelId) {
   let onClose;
   let onDismiss;
   let warningType;
@@ -49,63 +47,79 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
               }
               if (cResult[12] === analyticsBlockAndReportContext) {
                 if (cResult[13] === onDismiss) {
-                  let tmp7;
-                  let tmp9;
+                  let tmp8;
+                  let tmp10;
                   if (cResult[14] === tmp4) {
-                    tmp7 = cResult[15];
+                    tmp8 = cResult[15];
                   }
-                  const _Symbol = Symbol;
+                  class R {
+                    constructor() {
+                      if (onDismiss != null) {
+                        tmp();
+                      }
+                      closure_8(analyticsBlockAndReportContext);
+                    }
+                  }
                   class B {
                     constructor() {
                       closure_8(analyticsCancelContext);
                     }
                   }
                   if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-                    const intl = tmp(tmp2[5]).intl;
-                    const stringResult = intl.string(tmp(warningType[5]).t["5NhTvu"]);
+                    const string = tmp(tmp2[5]).intl.string;
+                    class R {
+                      constructor() {
+                        if (onDismiss != null) {
+                          tmp();
+                        }
+                        closure_8(analyticsBlockAndReportContext);
+                      }
+                    }
                     class B {
                       constructor() {
                         closure_8(analyticsCancelContext);
                       }
                     }
-                    cResult[16] = stringResult;
-                    tmp9 = stringResult;
+                    cResult[16] = tmp11;
+                    tmp10 = tmp11;
                   } else {
-                    tmp9 = cResult[16];
+                    tmp10 = cResult[16];
                   }
                   if (cResult[17] === channelId) {
                     if (cResult[18] === tmp5) {
-                      if (cResult[19] === tmp7) {
+                      if (cResult[19] === tmp8) {
                         if (cResult[20] === tmp6) {
                           if (cResult[21] === onClose) {
-                            let tmp11;
+                            let tmp12;
                             if (cResult[22] === senderId) {
-                              tmp11 = cResult[23];
+                              tmp12 = cResult[23];
                             }
-                            return tmp11;
+                            return tmp12;
                           }
                         }
                       }
                     }
                   }
-                  let obj2 = { userId: senderId, channelId, onClose, onCancel: tmp5, onBlock: tmp6, onBlockAndReport: tmp7, blockButtonVariant: "primary", description: tmp9 };
-                  const tmp14 = analyticsBlockContext(warningId(warningType[6]), obj2);
+                  let obj2 = { userId: senderId, channelId, onClose, onCancel: tmp5, onBlock: tmp6, onBlockAndReport: tmp8, blockButtonVariant: "primary", description: tmp10 };
+                  const tmp15 = analyticsBlockContext(warningId(warningType[6]), obj2);
                   cResult[17] = channelId;
                   cResult[18] = tmp5;
-                  cResult[19] = tmp7;
+                  cResult[19] = tmp8;
                   cResult[20] = tmp6;
                   cResult[21] = onClose;
                   cResult[22] = senderId;
-                  cResult[23] = tmp14;
-                  tmp11 = tmp14;
+                  cResult[23] = tmp15;
+                  tmp12 = tmp15;
                 }
               }
-              const fn3 = function w() {
-                if (onDismiss != null) {
-                  tmp();
+              class R {
+                constructor() {
+                  if (onDismiss != null) {
+                    tmp();
+                  }
+                  closure_8(analyticsBlockAndReportContext);
                 }
-                closure_8(analyticsBlockAndReportContext);
-              };
+              }
               class B {
                 constructor() {
                   closure_8(analyticsCancelContext);
@@ -114,16 +128,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
               cResult[12] = analyticsBlockAndReportContext;
               cResult[13] = onDismiss;
               cResult[14] = tmp4;
-              cResult[15] = fn3;
-              tmp7 = fn3;
+              cResult[15] = R;
+              tmp8 = R;
             }
           }
-          const fn2 = function b() {
-            if (onDismiss != null) {
-              tmp();
-            }
-            closure_8(analyticsBlockContext);
-          };
           class B {
             constructor() {
               closure_8(analyticsCancelContext);
@@ -132,8 +140,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
           cResult[8] = analyticsBlockContext;
           cResult[9] = onDismiss;
           cResult[10] = tmp4;
-          cResult[11] = fn2;
-          tmp6 = fn2;
+          cResult[11] = tmp7;
+          tmp6 = tmp7;
         }
         class B {
           constructor() {
@@ -158,7 +166,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[3] = warningType;
   cResult[4] = fn;
   tmp4 = fn;
-}) : ((channelId) => {
+}) : (function InappropriateConversationBlockAndReportAlert(channelId) {
   let intl;
   channelId = channelId.channelId;
   const warningId = channelId.warningId;

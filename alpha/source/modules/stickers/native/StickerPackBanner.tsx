@@ -1,23 +1,22 @@
-// Module ID: 10138
-// Function ID: 10139
+// Module ID: 9723
+// Function ID: 9724
 // Name: StickerPackBanner
-// Dependencies: [19, 17, 21, 558, 576, 5435, 2]
+// Dependencies: [19, 17, 21, 558, 576, 5745, 6164, 2]
 
-// Module 10138 (StickerPackBanner)
+// Module 9723 (StickerPackBanner)
+import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
+import FastImageDefault from "FastImage" /* 6164 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c2;
-let c3;
 let tmp;
-const StickersUtils = tmp(5435);
-({ Image: c2, View: c3 } = react_native);
+const StickersUtils = tmp(5745);
+const View = react_native.View;
 const jsx = Fragment.jsx;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function StickerPackBanner(arg0) {
   let containerStyle;
   let stickerPack;
   let style;
@@ -57,33 +56,33 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         tmp6 = tmp12;
       }
-      const tmp15 = <_false style={containerStyle}>{tmp8}</_false>;
+      const tmp15 = <View style={containerStyle}>{tmp8}</View>;
       cResult[7] = containerStyle;
       cResult[8] = tmp8;
       cResult[9] = tmp15;
       tmp12 = tmp15;
     }
-    const tmp11 = <React2 source={tmp7} style={style} resizeMode="contain" />;
+    const tmp11 = jsx(FastImageDefault, { source: tmp7, style, resizeMode: "contain" });
     cResult[4] = style;
     cResult[5] = tmp7;
     cResult[6] = tmp11;
     tmp8 = tmp11;
   }
   return tmp6;
-}) : ((arg0) => {
+}) : (function StickerPackBanner(arg0) {
   let containerStyle;
   let stickerPack;
   let style;
   ({ containerStyle, style, stickerPack } = arg0);
   const obj = StickersUtils;
   const stickerPackBannerAssetUrl = obj.getStickerPackBannerAssetUrl(stickerPack, 1024);
-  let tmp2 = null;
+  let tmp3 = null;
   if (null != stickerPackBannerAssetUrl) {
-    tmp2 = <_false style={containerStyle}>{null}</_false>;
+    tmp3 = <View style={containerStyle}>{null}</View>;
     const obj4 = { uri: stickerPackBannerAssetUrl };
   }
-  return tmp2;
+  return tmp3;
 });
 const result = size.fileFinishedImporting("modules/stickers/native/StickerPackBanner.tsx");
 
-export default tmp4;
+export default tmp3;

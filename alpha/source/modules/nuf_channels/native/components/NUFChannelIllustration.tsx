@@ -1,18 +1,18 @@
-// Module ID: 13596
-// Function ID: 13597
+// Module ID: 13418
+// Function ID: 13419
 // Name: NUFChannelIllustration
-// Dependencies: [32, 19, 17, 21, 4896, 587, 1126, 13597, 13598, 558, 576, 4618, 4897, 13599, 13600, 13601, 13602, 5871, 4892, 6002, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 587, 1126, 13419, 13420, 558, 576, 4810, 5091, 13421, 13422, 13423, 13424, 8183, 5086, 6186, 2]
 
-// Module 13596 (NUFChannelIllustration)
+// Module 13418 (NUFChannelIllustration)
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import timing from "timing" /* 4897 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import timing from "timing" /* 5091 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ obj2 = { paddingVertical: 12, paddingHorizontal: 16, display: "flex", alignItems
 let closure_9 = createStyles(obj);
 const __initData = { code: "function NUFChannelIllustrationTsx1(){const{interpolate,messageListAnimation}=this.__closure;return{transform:[{translateY:interpolate(messageListAnimation.get(),[0,1],[50,0])}]};}" };
 const __initData2 = { code: "function NUFChannelIllustrationTsx2(){const{interpolate,messageListAnimation}=this.__closure;return{transform:[{translateY:interpolate(messageListAnimation.get(),[0,1],[50,0])}]};}" };
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NUFChannelIllustration() {
   let closure_0;
   let closure_2;
   let first;
@@ -66,9 +66,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp6 = sharedValue(sharedValue1.useState(first), 2);
   const first1 = tmp6[0];
   dependencyMap = tmp6[1];
-  const tmpResult = tmp(4618);
+  const tmpResult = tmp(4810);
   sharedValue = tmpResult.useSharedValue(0);
-  const tmpResult3 = tmp(4618);
+  const tmpResult3 = tmp(4810);
   sharedValue1 = tmpResult3.useSharedValue(0);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function p() {
@@ -141,7 +141,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           tmp16 = cResult[13];
         }
         const effect2 = obj2.useEffect(tmp15, tmp16);
-        const tmpResult4 = tmp(4618);
+        const tmpResult4 = tmp(4810);
         class M {
           constructor() {
             let items;
@@ -153,7 +153,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             return obj;
           }
         }
-        let obj3 = { interpolate: tmp(4618).interpolate, messageListAnimation: sharedValue };
+        let obj3 = { interpolate: tmp(4810).interpolate, messageListAnimation: sharedValue };
         const useAnimatedStyle = tmpResult4.useAnimatedStyle;
         M.__closure = obj3;
         M.__workletHash = 1240710065054;
@@ -180,7 +180,6 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 let tmp44;
                 let tmp47;
                 let tmp50;
-                let tmp55;
                 if (cResult[24] === tmp4.starSmall) {
                   tmp35 = cResult[25];
                 }
@@ -217,7 +216,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   }
                 }
                 if (cResult[28] === Symbol.for("react.memo_cache_sentinel")) {
-                  const tmp46 = closure_7(tmp(5871).TextIcon, { size: "sm" });
+                  const tmp46 = closure_7(tmp(8183).TextIcon, { size: "sm" });
                   class M {
                     constructor() {
                       let items;
@@ -236,7 +235,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 const _Symbol2 = Symbol;
                 if (cResult[29] === Symbol.for("react.memo_cache_sentinel")) {
                   let obj5 = { variant: "text-md/bold", allowFontScaling: false, children: items2 };
-                  const Text = tmp(4892).Text;
+                  const Text = tmp(5086).Text;
                   class M {
                     constructor() {
                       let items;
@@ -269,9 +268,26 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     }
                   }
                   items3 = [tmp44, tmp47];
-                  const tmp53 = closure_8(closure_5, obj6);
                   cResult[30] = tmp4.header;
-                  cResult[31] = tmp53;
+                  const tmp53 = closure_8(closure_5, obj6);
+                  class G {
+                    constructor(children) {
+                      let items;
+                      let items1;
+                      const obj = { style: closure_0.message, children: items };
+                      items = [, ];
+                      const obj2 = { source: children.avatar, style: closure_0.messageAvatar };
+                      items[0] = metroImportDefault(metroRequire, obj2);
+                      const obj3 = { style: closure_0.messageContent, children: items1 };
+                      items1 = [, ];
+                      const obj4 = { variant: "text-md/semibold", allowFontScaling: false, children: children.name };
+                      items1[0] = metroImportDefault(Text_Text.Text, obj4);
+                      const obj5 = { variant: "text-md/medium", allowFontScaling: false, children: children.message };
+                      items1[1] = metroImportDefault(Text_Text.Text, obj5);
+                      items[1] = metroImportAll(hasOwnProperty, obj3);
+                      return metroImportAll(hasOwnProperty, obj, children.message);
+                    }
+                  }
                   tmp50 = tmp53;
                 } else {
                   tmp50 = cResult[31];
@@ -279,9 +295,6 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 if (cResult[32] === first1) {
                   if (cResult[33] === tmp4.message) {
                     if (cResult[34] === tmp4.messageAvatar) {
-                      if (cResult[35] === tmp4.messageContent) {
-                        tmp55 = cResult[36];
-                      }
                       if (cResult[41] === animatedStyle) {
                         let tmp58;
                         if (cResult[42] === tmp55) {
@@ -327,7 +340,25 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                                 }
                               }
                               const obj7 = { style: tmp21, children: items4 };
-                              items4 = [tmp22, tmp27, tmp31, tmp35, tmp39, tmp64];
+                              items4 = [tmp22, tmp27, tmp31, tmp35, tmp39, ];
+                              class G {
+                                constructor(children) {
+                                  let items;
+                                  let items1;
+                                  const obj = { style: closure_0.message, children: items };
+                                  items = [, ];
+                                  const obj2 = { source: children.avatar, style: closure_0.messageAvatar };
+                                  items[0] = metroImportDefault(metroRequire, obj2);
+                                  const obj3 = { style: closure_0.messageContent, children: items1 };
+                                  items1 = [, ];
+                                  const obj4 = { variant: "text-md/semibold", allowFontScaling: false, children: children.name };
+                                  items1[0] = metroImportDefault(Text_Text.Text, obj4);
+                                  const obj5 = { variant: "text-md/medium", allowFontScaling: false, children: children.message };
+                                  items1[1] = metroImportDefault(Text_Text.Text, obj5);
+                                  items[1] = metroImportAll(hasOwnProperty, obj3);
+                                  return metroImportAll(hasOwnProperty, obj, children.message);
+                                }
+                              }
                               const tmp70 = closure_8(closure_5, obj7);
                               cResult[51] = tmp4.container;
                               cResult[52] = tmp31;
@@ -354,8 +385,26 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                           tmp66[0] = tmp43;
                           const items5 = [tmp50, tmp61];
                           tmp66[3] = items5;
-                          const tmp67 = closure_8(tmp(6002).Card, tmp66);
+                          const tmp67 = closure_8(tmp(6186).Card, tmp66);
                           cResult[47] = tmp4.card;
+                          class G {
+                            constructor(children) {
+                              let items;
+                              let items1;
+                              const obj = { style: closure_0.message, children: items };
+                              items = [, ];
+                              const obj2 = { source: children.avatar, style: closure_0.messageAvatar };
+                              items[0] = metroImportDefault(metroRequire, obj2);
+                              const obj3 = { style: closure_0.messageContent, children: items1 };
+                              items1 = [, ];
+                              const obj4 = { variant: "text-md/semibold", allowFontScaling: false, children: children.name };
+                              items1[0] = metroImportDefault(Text_Text.Text, obj4);
+                              const obj5 = { variant: "text-md/medium", allowFontScaling: false, children: children.message };
+                              items1[1] = metroImportDefault(Text_Text.Text, obj5);
+                              items[1] = metroImportAll(hasOwnProperty, obj3);
+                              return metroImportAll(hasOwnProperty, obj, children.message);
+                            }
+                          }
                           cResult[48] = tmp50;
                           cResult[49] = tmp61;
                           cResult[50] = tmp67;
@@ -376,6 +425,24 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                         const tmp63 = closure_7(closure_5, obj8);
                         cResult[44] = tmp4.content;
                         cResult[45] = tmp58;
+                        class G {
+                          constructor(children) {
+                            let items;
+                            let items1;
+                            const obj = { style: closure_0.message, children: items };
+                            items = [, ];
+                            const obj2 = { source: children.avatar, style: closure_0.messageAvatar };
+                            items[0] = metroImportDefault(metroRequire, obj2);
+                            const obj3 = { style: closure_0.messageContent, children: items1 };
+                            items1 = [, ];
+                            const obj4 = { variant: "text-md/semibold", allowFontScaling: false, children: children.name };
+                            items1[0] = metroImportDefault(Text_Text.Text, obj4);
+                            const obj5 = { variant: "text-md/medium", allowFontScaling: false, children: children.message };
+                            items1[1] = metroImportDefault(Text_Text.Text, obj5);
+                            items[1] = metroImportAll(hasOwnProperty, obj3);
+                            return metroImportAll(hasOwnProperty, obj, children.message);
+                          }
+                        }
                         cResult[46] = tmp63;
                         tmp61 = tmp63;
                       }
@@ -391,9 +458,27 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                         }
                       }
                       const obj9 = { style: animatedStyle, children: tmp55 };
-                      const tmp60 = closure_7(first1(4618).View, obj9);
+                      const tmp60 = closure_7(first1(4810).View, obj9);
                       cResult[41] = animatedStyle;
                       cResult[42] = tmp55;
+                      class G {
+                        constructor(children) {
+                          let items;
+                          let items1;
+                          const obj = { style: closure_0.message, children: items };
+                          items = [, ];
+                          const obj2 = { source: children.avatar, style: closure_0.messageAvatar };
+                          items[0] = metroImportDefault(metroRequire, obj2);
+                          const obj3 = { style: closure_0.messageContent, children: items1 };
+                          items1 = [, ];
+                          const obj4 = { variant: "text-md/semibold", allowFontScaling: false, children: children.name };
+                          items1[0] = metroImportDefault(Text_Text.Text, obj4);
+                          const obj5 = { variant: "text-md/medium", allowFontScaling: false, children: children.message };
+                          items1[1] = metroImportDefault(Text_Text.Text, obj5);
+                          items[1] = metroImportAll(hasOwnProperty, obj3);
+                          return metroImportAll(hasOwnProperty, obj, children.message);
+                        }
+                      }
                       cResult[43] = tmp60;
                       tmp58 = tmp60;
                     }
@@ -421,30 +506,49 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     cResult[34] = tmp4.messageAvatar;
                     cResult[35] = tmp4.messageContent;
                     cResult[36] = mapped;
-                    tmp55 = mapped;
+                    class G {
+                      constructor(children) {
+                        let items;
+                        let items1;
+                        const obj = { style: closure_0.message, children: items };
+                        items = [, ];
+                        const obj2 = { source: children.avatar, style: closure_0.messageAvatar };
+                        items[0] = metroImportDefault(metroRequire, obj2);
+                        const obj3 = { style: closure_0.messageContent, children: items1 };
+                        items1 = [, ];
+                        const obj4 = { variant: "text-md/semibold", allowFontScaling: false, children: children.name };
+                        items1[0] = metroImportDefault(Text_Text.Text, obj4);
+                        const obj5 = { variant: "text-md/medium", allowFontScaling: false, children: children.message };
+                        items1[1] = metroImportDefault(Text_Text.Text, obj5);
+                        items[1] = metroImportAll(hasOwnProperty, obj3);
+                        return metroImportAll(hasOwnProperty, obj, children.message);
+                      }
+                    }
                   }
                 }
-                const fn3 = function j(children) {
-                  let items;
-                  let items1;
-                  const obj = { style: closure_0.message, children: items };
-                  items = [, ];
-                  const obj2 = { source: children.avatar, style: closure_0.messageAvatar };
-                  items[0] = metroImportDefault(metroRequire, obj2);
-                  const obj3 = { style: closure_0.messageContent, children: items1 };
-                  items1 = [, ];
-                  const obj4 = { variant: "text-md/semibold", allowFontScaling: false, children: children.name };
-                  items1[0] = metroImportDefault(Text_Text.Text, obj4);
-                  const obj5 = { variant: "text-md/medium", allowFontScaling: false, children: children.message };
-                  items1[1] = metroImportDefault(Text_Text.Text, obj5);
-                  items[1] = metroImportAll(hasOwnProperty, obj3);
-                  return metroImportAll(hasOwnProperty, obj, children.message);
-                };
+                class G {
+                  constructor(children) {
+                    let items;
+                    let items1;
+                    const obj = { style: closure_0.message, children: items };
+                    items = [, ];
+                    const obj2 = { source: children.avatar, style: closure_0.messageAvatar };
+                    items[0] = metroImportDefault(metroRequire, obj2);
+                    const obj3 = { style: closure_0.messageContent, children: items1 };
+                    items1 = [, ];
+                    const obj4 = { variant: "text-md/semibold", allowFontScaling: false, children: children.name };
+                    items1[0] = metroImportDefault(Text_Text.Text, obj4);
+                    const obj5 = { variant: "text-md/medium", allowFontScaling: false, children: children.message };
+                    items1[1] = metroImportDefault(Text_Text.Text, obj5);
+                    items[1] = metroImportAll(hasOwnProperty, obj3);
+                    return metroImportAll(hasOwnProperty, obj, children.message);
+                  }
+                }
                 cResult[37] = tmp4.message;
                 cResult[38] = tmp4.messageAvatar;
                 cResult[39] = tmp4.messageContent;
-                cResult[40] = fn3;
-                tmp56 = fn3;
+                cResult[40] = G;
+                tmp56 = G;
               }
               class M {
                 constructor() {
@@ -457,7 +561,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   return obj;
                 }
               }
-              const obj10 = { source: first1(13602), style: items6 };
+              const obj10 = { source: first1(13424), style: items6 };
               items6 = [, ];
               ({ starSmall: arr9[0], starPurple: arr9[1] } = tmp4);
               const tmp38 = closure_7(closure_6, obj10);
@@ -477,7 +581,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 return obj;
               }
             }
-            const obj11 = { source: first1(13601), style: items7 };
+            const obj11 = { source: first1(13423), style: items7 };
             items7 = [, ];
             ({ starMedium: arr8[0], starGreen: arr8[1] } = tmp4);
             const tmp34 = closure_7(closure_6, obj11);
@@ -497,7 +601,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               return obj;
             }
           }
-          const obj13 = { source: first1(13600), style: items8 };
+          const obj13 = { source: first1(13422), style: items8 };
           items8 = [, ];
           ({ starMedium: arr7[0], starPink: arr7[1] } = tmp4);
           const tmp30 = closure_7(closure_6, obj13);
@@ -506,7 +610,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           cResult[19] = tmp30;
           tmp27 = tmp30;
         }
-        const obj14 = { source: first1(13599), style: items9 };
+        const obj14 = { source: first1(13421), style: items9 };
         items9 = [, ];
         ({ starSmall: arr6[0], starBlue: arr6[1] } = tmp4);
         const tmp26 = closure_7(closure_6, obj14);
@@ -518,7 +622,6 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const items10 = [sharedValue, first1];
       cResult[11] = sharedValue;
       cResult[12] = first1;
-      cResult[13] = items10;
       tmp16 = items10;
     }
     const items11 = [, first1];
@@ -540,7 +643,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[4] = sharedValue1;
   cResult[5] = S;
   tmp12 = S;
-}) : (() => {
+}) : (function NUFChannelIllustration() {
   let View;
   let closure_0;
   let closure_2;
@@ -623,20 +726,20 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   fn.__workletHash = 14664640545757;
   fn.__initData = __initData2;
   let obj5 = { style: tmp.container, children: items3 };
-  const obj6 = { source: first(13599), style: items2 };
+  const obj6 = { source: first(13421), style: items2 };
   const animatedStyle = obj3.useAnimatedStyle(fn);
   items2 = [, ];
   ({ starSmall: arr4[0], starBlue: arr4[1] } = tmp);
   items3 = [closure_7(closure_6, obj6), , , , , ];
-  const obj7 = { source: first(13600), style: items4 };
+  const obj7 = { source: first(13422), style: items4 };
   items4 = [, ];
   ({ starMedium: arr6[0], starPink: arr6[1] } = tmp);
   items3[1] = closure_7(closure_6, obj7);
-  const obj8 = { source: first(13601), style: items5 };
+  const obj8 = { source: first(13423), style: items5 };
   items5 = [, ];
   ({ starMedium: arr7[0], starGreen: arr7[1] } = tmp);
   items3[2] = closure_7(closure_6, obj8);
-  const obj9 = { source: first(13602), style: items6 };
+  const obj9 = { source: first(13424), style: items6 };
   items6 = [, ];
   ({ starSmall: arr8[0], starPurple: arr8[1] } = tmp);
   items3[3] = closure_7(closure_6, obj9);
@@ -672,7 +775,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       return metroImportAll(hasOwnProperty, obj, children.message);
     })
   };
-  View = first(4618).View;
+  View = first(4810).View;
   items9[1] = closure_7(closure_5, obj14);
   items3[5] = closure_8(Card, obj11);
   return closure_8(closure_5, obj5);

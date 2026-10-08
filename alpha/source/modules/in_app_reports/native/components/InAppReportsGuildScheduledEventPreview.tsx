@@ -1,20 +1,18 @@
-// Module ID: 12723
-// Function ID: 12724
+// Module ID: 13392
+// Function ID: 13393
 // Name: InAppReportsGuildScheduledEventPreview
-// Dependencies: [19, 17, 2074, 21, 4896, 587, 558, 576, 504, 4733, 1126, 4892, 5978, 2]
+// Dependencies: [19, 17, 2086, 21, 5090, 587, 558, 576, 504, 4927, 1126, 5086, 6161, 2]
 
-// Module 12723 (InAppReportsGuildScheduledEventPreview)
+// Module 13392 (InAppReportsGuildScheduledEventPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import GuildIconDefault from "GuildIcon" /* 5978 */;
+import GuildIconDefault from "GuildIcon" /* 6161 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let event;
 
 let hasOwnProperty;
 let metroRequire;
@@ -28,7 +26,7 @@ obj2 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 createStyles = createStyles.createStyles;
 obj3 = { minHeight: 40, borderRadius: nativeDefault.radii.sm, borderWidth: 1, padding: 8 };
 let closure_7 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildScheduledEventPreview(event) {
   let container;
   let first;
   let items1;
@@ -67,7 +65,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
     let tmp13;
     let tmp16;
     if (cResult[3] !== tmp4.borderColor.color) {
-      const tmpResult2 = event(4733);
+      const tmpResult2 = event(4927);
       const hexWithOpacityResult = tmpResult2.hexWithOpacity(tmp4.borderColor.color, 0.08);
       cResult[3] = tmp4.borderColor.color;
       cResult[4] = hexWithOpacityResult;
@@ -87,7 +85,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
     }
     if (cResult[6] !== tmp4.title) {
       const obj2 = { style: title, accessibilityRole: "header", variant: "text-xs/bold", children: tmp11 };
-      const tmp15 = closure_5(event(4892).Text, obj2);
+      const tmp15 = closure_5(event(5086).Text, obj2);
       cResult[6] = tmp4.title;
       cResult[7] = tmp15;
       tmp13 = tmp15;
@@ -109,7 +107,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
         tmp17 = cResult[12];
       }
       if (cResult[13] !== stateFromStores) {
-        const obj4 = { guild: stateFromStores, size: event(5978).GuildIconSizes.XXSMALL, selected: false };
+        const obj4 = { guild: stateFromStores, size: event(6161).GuildIconSizes.XXSMALL, selected: false };
         const tmp21 = GuildIconDefault;
         const tmp22 = closure_5(tmp21, obj4);
         cResult[13] = stateFromStores;
@@ -169,7 +167,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
               tmp33 = tmp36;
             }
             const obj7 = { style: tmp4.eventName, variant: "text-md/bold", color: "mobile-text-heading-primary", children: event.name };
-            const tmp32 = closure_5(event(4892).Text, obj7);
+            const tmp32 = closure_5(event(5086).Text, obj7);
             cResult[22] = event.name;
             cResult[23] = tmp4.eventName;
             cResult[24] = tmp32;
@@ -186,7 +184,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
         tmp26 = tmp29;
       }
       const obj9 = { style: tmp4.guildName, variant: "text-sm/medium", color: "text-default", children: stateFromStores.name };
-      const tmp25 = closure_5(event(4892).Text, obj9);
+      const tmp25 = closure_5(event(5086).Text, obj9);
       cResult[15] = stateFromStores.name;
       cResult[16] = tmp4.guildName;
       cResult[17] = tmp25;
@@ -198,7 +196,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
     cResult[12] = items4;
     tmp17 = items4;
   }
-}) : ((event) => {
+}) : (function GuildScheduledEventPreview(event) {
   let intl;
   let items1;
   let items2;
@@ -213,10 +211,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
     return null;
   } else {
     const obj2 = { style: tmp.container, children: items1 };
-    const tmp2Result = event(4733);
+    const tmp2Result = event(4927);
     const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold", children: intl.string(event(1126).t.SDTOL7) };
     const hexWithOpacityResult = tmp2Result.hexWithOpacity(tmp.borderColor.color, 0.08);
-    const Text = tmp2(4892).Text;
+    const Text = tmp2(5086).Text;
     intl = tmp2(1126).intl;
     items1 = [closure_5(Text, obj3), ];
     const obj4 = { style: items2, children: items4 };
@@ -224,14 +222,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
     const obj5 = { borderColor: hexWithOpacityResult };
     items2[1] = obj5;
     const obj6 = { style: tmp.guildInfo, children: items3 };
-    const obj7 = { guild: stateFromStores, size: event(5978).GuildIconSizes.XXSMALL, selected: false };
+    const obj7 = { guild: stateFromStores, size: event(6161).GuildIconSizes.XXSMALL, selected: false };
     const tmp10 = GuildIconDefault;
     items3 = [closure_5(tmp10, obj7), ];
     const obj8 = { style: tmp.guildName, variant: "text-sm/medium", color: "text-default", children: stateFromStores.name };
-    items3[1] = closure_5(event(4892).Text, obj8);
+    items3[1] = closure_5(event(5086).Text, obj8);
     items4 = [closure_6(View, obj6), ];
     const obj9 = { style: tmp.eventName, variant: "text-md/bold", color: "mobile-text-heading-primary", children: event.name };
-    items4[1] = closure_5(event(4892).Text, obj9);
+    items4[1] = closure_5(event(5086).Text, obj9);
     items1[1] = closure_6(View, obj4);
     return closure_6(View, obj2);
   }

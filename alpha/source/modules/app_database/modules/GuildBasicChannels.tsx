@@ -1,23 +1,23 @@
-// Module ID: 7145
-// Function ID: 7146
+// Module ID: 7325
+// Function ID: 7326
 // Name: GuildBasicChannels
-// Dependencies: [32, 5, 5443, 2055, 502, 2051, 2106, 2074, 4515, 2052, 3, 2078, 7146, 1097, 4524, 2]
+// Dependencies: [32, 5, 5753, 2067, 502, 2063, 2118, 2086, 4707, 2064, 3, 2090, 7326, 1097, 4716, 2]
 
-// Module 7145 (GuildBasicChannels)
+// Module 7325 (GuildBasicChannels)
 import LoggerDefault from "Logger" /* 3 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import ChannelStore2 from "ChannelStore" /* 2051 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2078 */;
-import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4524 */;
+import ChannelStore2 from "ChannelStore" /* 2063 */;
+import ChannelRecord from "ChannelRecord" /* 2067 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2090 */;
+import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4716 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5443 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5753 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import BasicChannelCacheStore from "BasicChannelCacheStore" /* 2052 */;
+import GuildRoleStore from "GuildRoleStore" /* 2118 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import BasicChannelCacheStore from "BasicChannelCacheStore" /* 2064 */;
 import size from "module_2" /* 2 */;
 
 const ChannelStore = ChannelStore2;
@@ -34,7 +34,7 @@ function hasBasicChannelChanged(basicChannel, nextResult) {
 let closure_7 = ChannelRecord.createChannelRecordFromServer;
 const ChannelLoader = ChannelStore2.ChannelLoader;
 let tmp2 = new LoggerDefault("GuildBasicChannels");
-let closure_15 = tmp2;
+const authStore3 = tmp2;
 class GuildBasicChannels {
   constructor() {
     const obj = Object.create(new.target.prototype);
@@ -325,7 +325,7 @@ class GuildBasicChannels {
                               closure_1 = closure_3;
                               closure_2_15.warn("couldn't optimstically write basic_channel:", closure_1);
                               c6 = 3;
-                              return { value: { v: "r" }, done: true };
+                              return { value: { v: "create" }, done: true };
                             } else if (2 === c5) {
                               if (arg0 === 1) {
                                 c6 = 3;

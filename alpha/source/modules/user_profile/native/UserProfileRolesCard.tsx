@@ -1,28 +1,28 @@
-// Module ID: 6691
-// Function ID: 6692
+// Module ID: 6868
+// Function ID: 6869
 // Name: UserProfileRolesCard
-// Dependencies: [19, 17, 2112, 2106, 1085, 21, 4896, 587, 558, 576, 6692, 2028, 6694, 6695, 4573, 1126, 6693, 6700, 6709, 4892, 6711, 5916, 6712, 504, 6713, 2]
+// Dependencies: [19, 17, 2124, 2118, 1085, 21, 5090, 587, 558, 576, 6869, 2040, 6871, 6872, 4765, 1126, 6870, 6877, 6886, 5086, 6888, 6189, 6889, 504, 6890, 2]
 
-// Module 6691 (UserProfileRolesCard)
+// Module 6868 (UserProfileRolesCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ToastUtils from "ToastUtils" /* 4573 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import ClipboardUtils from "ClipboardUtils" /* 6695 */;
-import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 6709 */;
-import RoleIconDefault from "RoleIcon" /* 6711 */;
-import UserProfileRoleUtils from "UserProfileRoleUtils" /* 6712 */;
+import ToastUtils from "ToastUtils" /* 4765 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import ClipboardUtils from "ClipboardUtils" /* 6872 */;
+import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 6886 */;
+import RoleIconDefault from "RoleIcon" /* 6888 */;
+import UserProfileRoleUtils from "UserProfileRoleUtils" /* 6889 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildRoleStore from "GuildRoleStore" /* 2118 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let arr1, color, copyResult, customIconSrc, dependencyMap, guildMemberRoleIds, intl2, obj1, obj6, push, roleIconData, roleIdCopiedResult, tmp21, tmp22, tmpResult1, userId;
+let arr1, customIconSrc, dependencyMap, intl2, obj1, push, roleIconData, tmpResult1;
 
 let c10;
 let c9;
@@ -42,7 +42,7 @@ createStyles = createStyles.createStyles;
 size = { borderRadius: nativeDefault.radii.round, height: 12, width: 12 };
 let closure_13 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleDot(color) {
   let items;
   let tmp3;
   const obj = react2;
@@ -74,7 +74,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
   cResult[3] = tmp3;
   cResult[4] = tmp5;
   tmp4 = tmp5;
-}) : ((color) => {
+}) : (function RoleDot(color) {
   color = color.color;
   const style = [closure_13().roleDot, ];
   const tmp = React4;
@@ -86,7 +86,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
   return tmp(tmp2, { style });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleItem(role) {
   let tmp5;
   let tmp = role;
   let tmp2 = dependencyMap;
@@ -120,7 +120,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
     if (cResult[3] === role.id) {
       tmp8 = cResult[4];
     }
-    let tmpResult = tmp(6692);
+    let tmpResult = tmp(6869);
     const roleIconProps = tmpResult.useRoleIconProps(tmp8);
     const tags = role.tags;
     let guild_connections;
@@ -129,7 +129,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
     }
     let tmp11 = undefined !== guild_connections;
     let closure_5 = tmp11;
-    const DeveloperMode = tmp(2028).DeveloperMode;
+    const DeveloperMode = tmp(2040).DeveloperMode;
     const setting = DeveloperMode.useSetting();
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
@@ -138,7 +138,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
       cResult[5] = obj2;
       cResult[6] = obj3;
     }
-    const tmp17 = guildId(6694);
+    const tmp17 = guildId(6871);
     if (cResult[7] === tmp5) {
       if (cResult[10] === tmp5) {
         if (cResult[11] === role) {
@@ -152,7 +152,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
               tmp2 = closure_2;
               intl = role(closure_2[15]).intl;
               obj.label = intl.string(role(closure_2[15]).t.sMsaLg);
-              obj.onPress = function onPress() { /* body not rendered: F137847 */ };
+              obj.onPress = function onPress() {
+                const obj = role(closure_2[13]);
+                obj.copy(customIconSrc.id);
+                const obj2 = role(closure_2[14]);
+                obj2.roleIdCopied(closure_1_2);
+              };
               items = [];
               items[0] = obj;
               if (null != closure_4) {
@@ -168,7 +173,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
                   push = items.push;
                   intl2 = tmp(tmp2[15]).intl;
                   obj1.label = intl2.string(tmp(tmp2[15]).t["8xHmxo"]);
-                  obj1.onPress = function onPress() { /* body not rendered: F137848 */ };
+                  obj1.onPress = function onPress() {
+                    const obj = ClipboardUtils;
+                    obj.copy(customIconSrc);
+                    const obj2 = ToastUtils;
+                    const result = obj2.presentCopiedToClipboard();
+                  };
                   arr1 = push(obj1);
                 }
               }
@@ -177,57 +187,37 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
               return;
             }
           }
-          class H {
-            constructor() {
-              tmp3 = jsx;
-              tmp = jsxs;
-              tmp2 = Fragment;
-              if (closure_5) {
-                tmp9 = closure_1;
-                tmp10 = closure_2;
-                obj1 = { roleId: null, guildId: null, roleColor: null, size: null, displayRoleIcon: false };
-                obj1.roleId = role.id;
-                tmp12 = guildId;
-                obj1.guildId = guildId;
-                tmp13 = null;
-                colorString = undefined;
-                tmp11 = closure_1(closure_2[18]);
-                if (role != null) {
-                  colorString = role.colorString;
-                }
-                obj1.roleColor = colorString;
-                tmp15 = c12;
-                obj1.size = c12;
-                tmp3Result = tmp3(tmp11, obj1);
-                tmp8 = tmp3;
-              } else {
-                tmp5 = colorString;
-                tmp6 = null;
-                tmp4 = f38764;
-                obj = { color: null };
-                obj.color = tmp5;
-                tmp3Result = tmp3(tmp4, obj);
-                tmp8 = tmp3;
+          function renderContent() {
+            let tmp3Result;
+            let tmp8;
+            const tmp = unpackModuleId;
+            const tmp2 = authStore;
+            if (closure_5) {
+              const obj2 = { roleId: role.id, guildId, roleColor: colorString, size, displayRoleIcon: false };
+              colorString = undefined;
+              const tmp11 = VerifiedRoleIconDefault;
+              if (role != null) {
+                colorString = role.colorString;
               }
-              items = [, , ];
-              items[0] = tmp3Result;
-              tmp16 = closure_2;
-              obj5 = { variant: "text-xs/medium", children: closure_2 };
-              items[1] = tmp8(closure_0(closure_2[19]).Text, obj5);
-              tmp17 = closure_4;
-              tmp8Result = null;
-              if (null != closure_4) {
-                tmp19 = closure_1;
-                obj6 = {};
-                tmp21 = obj6;
-                tmp22 = tmp17;
-                tmp20 = closure_1(tmp16[20]);
-                merged = Object.assign(tmp17);
-                tmp8Result = tmp8(tmp20, obj6);
-              }
-              items[2] = tmp8Result;
-              return tmp(tmp2, { children: items });
+              tmp3Result = tmp3(tmp11, obj2);
+              tmp8 = tmp3;
+            } else {
+              const obj = { color: colorString };
+              tmp3Result = tmp3(closure_14, obj);
+              tmp8 = tmp3;
             }
+            children = [tmp3Result, , ];
+            const obj3 = { variant: "text-xs/medium", children };
+            children[1] = tmp8(Text_Text.Text, obj3);
+            let tmp8Result = null;
+            if (null != roleIconProps) {
+              const obj4 = {};
+              const tmp20 = RoleIconDefault;
+              const merged = Object.assign(tmp17);
+              tmp8Result = tmp8(tmp20, obj4);
+            }
+            children[2] = tmp8Result;
+            return tmp(tmp2, { children });
           }
           cResult[14] = guildId;
           cResult[15] = tmp5;
@@ -236,13 +226,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
           cResult[18] = colorString;
           cResult[19] = roleIconProps;
           cResult[20] = tmp11;
-          class D {
+          class E {
             constructor() {
-              obj = closure_0(closure_2[13]);
-              copyResult = obj.copy(role.id);
-              obj2 = closure_0(closure_2[14]);
-              roleIdCopiedResult = obj2.roleIdCopied(closure_2);
-              return;
+              const obj = ClipboardUtils;
+              obj.copy(role.id);
+              const obj2 = ToastUtils;
+              obj2.roleIdCopied(children);
             }
           }
         }
@@ -254,7 +243,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
           tmp2 = closure_2;
           intl = role(closure_2[15]).intl;
           obj.label = intl.string(role(closure_2[15]).t.sMsaLg);
-          obj.onPress = function onPress() { /* body not rendered: F137847 */ };
+          obj.onPress = function onPress() {
+            const obj = role(closure_2[13]);
+            obj.copy(customIconSrc.id);
+            const obj2 = role(closure_2[14]);
+            obj2.roleIdCopied(closure_1_2);
+          };
           items = [];
           items[0] = obj;
           if (null != closure_4) {
@@ -270,7 +264,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
               push = items.push;
               intl2 = tmp(tmp2[15]).intl;
               obj1.label = intl2.string(tmp(tmp2[15]).t["8xHmxo"]);
-              obj1.onPress = function onPress() { /* body not rendered: F137848 */ };
+              obj1.onPress = function onPress() {
+                const obj = ClipboardUtils;
+                obj.copy(customIconSrc);
+                const obj2 = ToastUtils;
+                const result = obj2.presentCopiedToClipboard();
+              };
               arr1 = push(obj1);
             }
           }
@@ -285,25 +284,24 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
       cResult[13] = T;
       tmp20 = T;
     }
-    class D {
+    class E {
       constructor() {
-        obj = closure_0(closure_2[13]);
-        copyResult = obj.copy(role.id);
-        obj2 = closure_0(closure_2[14]);
-        roleIdCopiedResult = obj2.roleIdCopied(closure_2);
-        return;
+        const obj = ClipboardUtils;
+        obj.copy(role.id);
+        const obj2 = ToastUtils;
+        obj2.roleIdCopied(children);
       }
     }
     cResult[7] = tmp5;
     cResult[8] = role.id;
-    cResult[9] = D;
+    cResult[9] = E;
   }
   let obj4 = { guildId, roleId: role.id, size };
   cResult[2] = guildId;
   cResult[3] = role.id;
   cResult[4] = obj4;
   tmp8 = obj4;
-}) : ((role) => {
+}) : (function RoleItem(role) {
   let intl;
   let tmp11Result;
   let tmp14;
@@ -401,7 +399,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
 });
 let closure_15 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildMemberRoleIds) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function RolesList(guildMemberRoleIds) {
   let first;
   let obj = guildMemberRoleIds(576);
   const cResult = obj.c(13);
@@ -449,22 +447,15 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildMemberRol
         tmp12 = tmp15;
       }
       if (cResult[8] !== guildId) {
-        class C {
-          constructor(role) {
-            const obj = { role, guildId };
-            return React4(closure_15, obj, role.id);
-          }
-        }
+        const fn2 = function f(role) {
+          const obj = { role, guildId };
+          return React4(closure_15, obj, role.id);
+        };
         cResult[8] = guildId;
-        cResult[9] = C;
-        tmp10 = C;
+        cResult[9] = fn2;
+        tmp10 = fn2;
       } else {
-        class C {
-          constructor(role) {
-            const obj = { role, guildId };
-            return React4(closure_15, obj, role.id);
-          }
-        }
+        tmp10 = cResult[9];
       }
       const mapped = stateFromStoresArray.map(tmp10);
       cResult[5] = guildId;
@@ -484,7 +475,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildMemberRol
   cResult[4] = items1;
   tmp8 = items1;
   tmp7 = fn;
-}) : ((guildMemberRoleIds) => {
+}) : (function RolesList(guildMemberRoleIds) {
   guildMemberRoleIds = guildMemberRoleIds.guildMemberRoleIds;
   const guildId = guildMemberRoleIds.guildId;
   const tmp = closure_13();
@@ -509,7 +500,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildMemberRol
   return tmp2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileRolesCard(userId) {
   let first;
   const obj = userId(576);
   const cResult = obj.c(14);
@@ -581,7 +572,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
           tmp13 = tmp20;
         }
         const obj2 = { title: tmp14, style, children: tmp16 };
-        const tmp23 = closure_9(guildId(6713), obj2);
+        const tmp23 = closure_9(guildId(6890), obj2);
         cResult[11] = style;
         cResult[12] = tmp16;
         cResult[13] = tmp23;
@@ -606,7 +597,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[4] = items1;
   tmp7 = items1;
   tmp6 = fn;
-}) : ((userId) => {
+}) : (function UserProfileRolesCard(userId) {
   let intl;
   let obj3;
   userId = userId.userId;
@@ -626,7 +617,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   let tmp4 = null;
   if (0 !== roles.length) {
     const obj2 = { title: intl.string(userId(1126).t["LPJmL/"]), style, children: closure_9(closure_16, obj3) };
-    const tmp7 = guildId(6713);
+    const tmp7 = guildId(6890);
     intl = tmp(1126).intl;
     obj3 = { guildId, guildMemberRoleIds: roles };
     tmp4 = closure_9(tmp7, obj2);

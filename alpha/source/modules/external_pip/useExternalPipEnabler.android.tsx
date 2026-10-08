@@ -1,19 +1,17 @@
-// Module ID: 17183
-// Function ID: 17184
+// Module ID: 17464
+// Function ID: 17465
 // Name: useExternalPipEnabler
-// Dependencies: [4912, 502, 4919, 558, 576, 17184, 504, 2]
+// Dependencies: [6041, 502, 5108, 558, 576, 17465, 504, 2]
 
-// Module 17183 (useExternalPipEnabler)
-import ExternalPipEnablerState from "ExternalPipEnablerState" /* 17184 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4912 */;
+// Module 17464 (useExternalPipEnabler)
+import ExternalPipEnablerState from "ExternalPipEnablerState" /* 17465 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let disabled;
-
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExternalPIPEnabler(disabled) {
   let first;
   let tmp8;
   let tmp9;
@@ -65,7 +63,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresObject(first, tmp8, tmp9);
-}) : ((disabled) => {
+}) : (function useExternalPIPEnabler(disabled) {
   disabled = disabled.disabled;
   let obj = disabled(504);
   const items = [ChannelRTCStore, RTCConnectionStore, AuthenticationStore];

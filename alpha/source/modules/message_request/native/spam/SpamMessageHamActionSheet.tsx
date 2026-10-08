@@ -1,31 +1,31 @@
-// Module ID: 12104
-// Function ID: 12105
+// Module ID: 12182
+// Function ID: 12183
 // Name: SpamMessageHamActionSheet
-// Dependencies: [32, 19, 17, 1377, 21, 4896, 587, 558, 576, 4574, 1126, 4813, 4860, 504, 12099, 6703, 6651, 8924, 5601, 6652, 2]
+// Dependencies: [32, 19, 17, 1389, 21, 5090, 587, 558, 576, 4766, 1126, 5007, 5054, 504, 12177, 6880, 6828, 8555, 5375, 6829, 2]
 
-// Module 12104 (SpamMessageHamActionSheet)
+// Module 12182 (SpamMessageHamActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4813 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6651 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6652 */;
-import ActionSheetCloseButton from "ActionSheetCloseButton" /* 6703 */;
-import Form from "Form" /* 8924 */;
-import useMessageRequestActions from "useMessageRequestActions" /* 12099 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5007 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6828 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6829 */;
+import ActionSheetCloseButton from "ActionSheetCloseButton" /* 6880 */;
+import Form from "Form" /* 8555 */;
+import useMessageRequestActions from "useMessageRequestActions" /* 12177 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, channel, openResult;
+let BottomSheet;
 
 let metroImportAll;
 let metroImportDefault;
@@ -42,17 +42,17 @@ createStyles = createStyles.createStyles;
 obj3 = { marginTop: nativeDefault.space.PX_24, paddingHorizontal: nativeDefault.space.PX_16 };
 obj4 = { marginTop: nativeDefault.space.PX_24 };
 let closure_9 = createStyles(obj);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamMessageRequestHamActionSheet(channel) {
   let closure_4;
   let first;
+  let first1;
   let isAcceptLoading;
   let isOptimisticAccepted;
   let onCancel;
-  let tmp10;
   let tmp11;
   let tmp13;
-  let tmp7;
   let tmp8;
+  let tmp9;
   const tmp = channel;
   let obj = channel(onCancel[8]);
   const cResult = obj.c(44);
@@ -64,97 +64,40 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   first = tmp5[0];
   react = tmp5[1];
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor() {
-        tmp = onConfirm(onCancel[9]);
-        obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: null, icon: null };
-        open = tmp.open;
-        intl = channel(onCancel[10]).intl;
-        obj.content = intl.string(channel(onCancel[10]).t["EDYbS+"]);
-        obj.icon = onConfirm(onCancel[11]);
-        openResult = open(obj);
-        return;
-      }
+    function handleRequestError() {
+      let intl;
+      const obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: intl.string(channel(onCancel[10]).t["EDYbS+"]), icon: onConfirm(onCancel[11]) };
+      const open = onConfirm(onCancel[9]).open;
+      onConfirm(onCancel[9]);
+      intl = channel(onCancel[10]).intl;
+      open(obj);
     }
-    cResult[0] = S;
-    tmp7 = S;
+    cResult[0] = handleRequestError;
+    first1 = handleRequestError;
   } else {
-    class S {
-      constructor() {
-        tmp = onConfirm(onCancel[9]);
-        obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: null, icon: null };
-        open = tmp.open;
-        intl = channel(onCancel[10]).intl;
-        obj.content = intl.string(channel(onCancel[10]).t["EDYbS+"]);
-        obj.icon = onConfirm(onCancel[11]);
-        openResult = open(obj);
-        return;
-      }
-    }
+    first1 = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor() {
-        tmp = onConfirm(onCancel[9]);
-        obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: null, icon: null };
-        open = tmp.open;
-        intl = channel(onCancel[10]).intl;
-        obj.content = intl.string(channel(onCancel[10]).t["EDYbS+"]);
-        obj.icon = onConfirm(onCancel[11]);
-        openResult = open(obj);
-        return;
-      }
+    function handleAcceptSuccess() {
+      const obj = onConfirm(onCancel[12]);
+      obj.hideActionSheet();
     }
-    cResult[1] = tmp9;
-    tmp8 = tmp9;
+    cResult[1] = handleAcceptSuccess;
+    tmp8 = handleAcceptSuccess;
   } else {
-    class S {
-      constructor() {
-        tmp = onConfirm(onCancel[9]);
-        obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: null, icon: null };
-        open = tmp.open;
-        intl = channel(onCancel[10]).intl;
-        obj.content = intl.string(channel(onCancel[10]).t["EDYbS+"]);
-        obj.icon = onConfirm(onCancel[11]);
-        openResult = open(obj);
-        return;
-      }
-    }
+    tmp8 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor() {
-        tmp = onConfirm(onCancel[9]);
-        obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: null, icon: null };
-        open = tmp.open;
-        intl = channel(onCancel[10]).intl;
-        obj.content = intl.string(channel(onCancel[10]).t["EDYbS+"]);
-        obj.icon = onConfirm(onCancel[11]);
-        openResult = open(obj);
-        return;
-      }
-    }
     const items = [UserStore];
     cResult[2] = items;
-    tmp10 = items;
+    tmp9 = items;
   } else {
-    class S {
-      constructor() {
-        tmp = onConfirm(onCancel[9]);
-        obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: null, icon: null };
-        open = tmp.open;
-        intl = channel(onCancel[10]).intl;
-        obj.content = intl.string(channel(onCancel[10]).t["EDYbS+"]);
-        obj.icon = onConfirm(onCancel[11]);
-        openResult = open(obj);
-        return;
-      }
-    }
+    tmp9 = cResult[2];
   }
   if (cResult[3] !== channel) {
     class P {
       constructor() {
-        return closure_6.getUser(channel.getRecipientId());
+        return UserStore.getUser(channel.getRecipientId());
       }
     }
     cResult[3] = channel;
@@ -163,20 +106,20 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   } else {
     class P {
       constructor() {
-        return closure_6.getUser(channel.getRecipientId());
+        return UserStore.getUser(channel.getRecipientId());
       }
     }
   }
   const tmpResult = tmp(onCancel[13]);
-  const stateFromStores = tmpResult.useStateFromStores(tmp10, tmp11);
+  const stateFromStores = tmpResult.useStateFromStores(tmp9, tmp11);
   if (cResult[5] !== stateFromStores) {
     class P {
       constructor() {
-        return closure_6.getUser(channel.getRecipientId());
+        return UserStore.getUser(channel.getRecipientId());
       }
     }
     tmp14[0] = stateFromStores;
-    tmp14[1] = tmp7;
+    tmp14[1] = first1;
     tmp14[2] = tmp8;
     cResult[5] = stateFromStores;
     cResult[6] = tmp14;
@@ -184,7 +127,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   } else {
     class P {
       constructor() {
-        return closure_6.getUser(channel.getRecipientId());
+        return UserStore.getUser(channel.getRecipientId());
       }
     }
   }
@@ -195,23 +138,20 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   if (cResult[7] === acceptMessageRequest) {
     class P {
       constructor() {
-        return closure_6.getUser(channel.getRecipientId());
+        return UserStore.getUser(channel.getRecipientId());
       }
     }
   }
-  class L {
-    constructor() {
-      tmp = onConfirm(closure_3);
-      tmp2 = acceptMessageRequest(channel.id);
-      return;
-    }
+  function handleAccept() {
+    onConfirm(first);
+    acceptMessageRequest(channel.id);
   }
   cResult[7] = acceptMessageRequest;
   cResult[8] = channel.id;
   cResult[9] = first;
   cResult[10] = onConfirm;
-  cResult[11] = L;
-}) : ((arg0) => {
+  cResult[11] = handleAccept;
+}) : (function SpamMessageRequestHamActionSheet(arg0) {
   let Button;
   let _undefined;
   let c5;
@@ -240,7 +180,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const obj2 = useMessageRequestActions;
   const obj3 = {
     user: stateFromStores,
-    onError() {
+    onError: function handleRequestError() {
       let intl;
       const obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: intl.string(intl4.t["EDYbS+"]), icon: AssetRegistryDefault };
       const open = ToastActionCreatorsDefault.open;
@@ -248,7 +188,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       intl = intl4.intl;
       open(obj);
     },
-    onAcceptSuccess() {
+    onAcceptSuccess: function handleAcceptSuccess() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
     }
@@ -257,7 +197,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   ({ acceptMessageRequest: c5, isAcceptLoading, isOptimisticAccepted } = messageRequestActions);
   const isUserProfileLoading = messageRequestActions.isUserProfileLoading;
   const obj4 = {
-    onDismiss() {
+    onDismiss: function handleDismiss() {
       dependencyMap();
     },
     children: items1
@@ -267,7 +207,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl = intl4.intl;
   obj6 = {
-    onPress() {
+    onPress: function handleClose() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
       dependencyMap();
@@ -290,7 +230,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const obj9 = { style: tmp.buttonContainer, children: closure_7(Button, obj10) };
   obj10 = {
     size: "md",
-    onPress() {
+    onPress: function handleAccept() {
       importDefault(first);
       _undefined(require.id);
     },

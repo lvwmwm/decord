@@ -1,15 +1,15 @@
-// Module ID: 10750
-// Function ID: 10751
+// Module ID: 10446
+// Function ID: 10447
 // Name: ActionSheetIconHeader
-// Dependencies: [19, 17, 21, 4896, 558, 576, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 5086, 2]
 
-// Module 10750 (ActionSheetIconHeader)
+// Module 10446 (ActionSheetIconHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 4892 */;
+import Text_Text from "Text/Text" /* 5086 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let closure_4;
 const View = react_native.View;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let closure_5 = createStyles.createStyles({ container: { paddingVertical: 0, flexDirection: "row", alignItems: "center", gap: 12 }, titles: { justifyContent: "center", flex: 1 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionSheetIconHeader(arg0) {
   let icon;
   let items;
   let items1;
@@ -53,7 +53,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp13 = null;
     if (null != subtitle) {
       const obj4 = { variant: "text-xs/medium", color: "text-default", children: subtitle };
-      tmp13 = _false(tmp(4892).Text, obj4);
+      tmp13 = _false(tmp(5086).Text, obj4);
     }
     cResult[4] = subtitle;
     cResult[5] = tmp13;
@@ -94,7 +94,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = tmp12;
   cResult[9] = tmp16;
   tmp15 = tmp16;
-}) : ((subtitle) => {
+}) : (function ActionSheetIconHeader(subtitle) {
   let icon;
   let items;
   let items1;

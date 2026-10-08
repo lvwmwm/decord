@@ -1,20 +1,20 @@
-// Module ID: 17456
-// Function ID: 17457
+// Module ID: 17738
+// Function ID: 17739
 // Name: useCaptchaModalEffects
-// Dependencies: [19, 1085, 558, 576, 5414, 5597, 1252, 2]
+// Dependencies: [19, 1085, 558, 576, 5723, 5392, 1264, 2]
 
-// Module 17456 (useCaptchaModalEffects)
+// Module 17738 (useCaptchaModalEffects)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let dependencyMap, onReject;
+let dependencyMap;
 
 const AnalyticEvents = Constants.AnalyticEvents;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onReject) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCaptchaModalEffects(onReject) {
   let closure_2;
   let tmp3;
   let tmp5;
@@ -48,7 +48,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onReject) => {
   } else {
     tmp3 = cResult[1];
   }
-  str(5597)(tmp3);
+  str(5392)(tmp3);
   if (cResult[2] !== str) {
     const fn2 = function o() {
       let ref;
@@ -76,16 +76,16 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onReject) => {
   }
   const effect = obj2.useEffect(tmp5, tmp6);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn3 = function s() {
+    function onCaptchaAttempted() {
       closure_2.current = false;
-    };
-    cResult[5] = fn3;
-    tmp8 = fn3;
+    }
+    cResult[5] = onCaptchaAttempted;
+    tmp8 = onCaptchaAttempted;
   } else {
     tmp8 = cResult[5];
   }
   return tmp8;
-}) : ((arg0) => {
+}) : (function useCaptchaModalEffects(arg0) {
   let analyticsType;
   let closure_2;
   ({ onReject: require, analyticsType } = arg0);
@@ -93,7 +93,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onReject) => {
     analyticsType = "Guild Join Captcha";
   }
   dependencyMap = react.useRef(true);
-  const tmp = analyticsType(5597)(() => {
+  const tmp = analyticsType(5392)(() => {
     let ref;
     return () => {
       if (ref.current) {
@@ -118,7 +118,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onReject) => {
       }
     };
   }, items);
-  return () => {
+  return function onCaptchaAttempted() {
     closure_2.current = false;
   };
 });

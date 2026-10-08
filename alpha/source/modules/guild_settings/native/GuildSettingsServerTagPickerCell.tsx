@@ -1,22 +1,22 @@
-// Module ID: 17809
-// Function ID: 17810
+// Module ID: 18096
+// Function ID: 18097
 // Name: GuildSettingsServerTagPickerCell
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4600, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 4792, 2]
 
-// Module 17809 (GuildSettingsServerTagPickerCell)
+// Module 18096 (GuildSettingsServerTagPickerCell)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
 let tmp;
-const react_native2 = tmp(4600);
+const react_native2 = tmp(4792);
 const Pressable = react_native.Pressable;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -25,7 +25,7 @@ obj2 = { alignItems: "center", justifyContent: "center", borderRadius: nativeDef
 createStyles = createStyles.createStyles;
 obj3 = { borderColor: nativeDefault.unsafe_rawColors.BRAND_500 };
 let closure_4 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsServerTagPickerCell(arg0) {
   let accessibilityLabel;
   let accessibilityRole;
   let children;
@@ -121,7 +121,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = selected;
   cResult[5] = tmp8;
   tmp7 = tmp8;
-}) : ((accessibilityLabel) => {
+}) : (function GuildSettingsServerTagPickerCell(accessibilityLabel) {
   let accessibilityRole;
   let children;
   let items;

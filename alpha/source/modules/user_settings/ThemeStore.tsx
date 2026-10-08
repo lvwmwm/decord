@@ -1,29 +1,29 @@
-// Module ID: 1193
-// Function ID: 1194
+// Module ID: 1205
+// Function ID: 1206
 // Name: ThemeStore
-// Dependencies: [1194, 1195, 1231, 1196, 1095, 1085, 1230, 1237, 13916, 504, 2033, 584, 2]
+// Dependencies: [1206, 1207, 1243, 1208, 1095, 1085, 1242, 1249, 14219, 504, 2045, 584, 2]
 
-// Module 1193 (ThemeStore)
+// Module 1205 (ThemeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import getSystemThemeDefault from "getSystemTheme" /* 1230 */;
-import resolveThemeDefault from "resolveTheme" /* 1237 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2033 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1194 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ThemeConstants from "ThemeConstants" /* 1196 */;
+import getSystemThemeDefault from "getSystemTheme" /* 1242 */;
+import resolveThemeDefault from "resolveTheme" /* 1249 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2045 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1206 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
+import ThemeConstants from "ThemeConstants" /* 1208 */;
 import size from "module_2" /* 2 */;
 
-let syncedClientThemes;
+let syncedClientThemes, syncedThemesEnabled;
 
 let THEME_PREFERENCES_MOBILE;
 let THEME_PREFERENCES_WEB_REFRESH;
 let metroRequire;
 let tmp;
-const updateBackgroundColorDefault = tmp(13916);
+const updateBackgroundColorDefault = tmp(14219);
 function handleThemeChange() {
   const tmp3 = resolveThemeDefault(systemTheme, THEME_PREFERENCES_MOBILE, c15);
   let flag = tmp3 !== closure_13;
@@ -43,7 +43,7 @@ let tmp3 = getSystemThemeDefault();
 let systemTheme = tmp3;
 let closure_13 = THEME_PREFERENCES_MOBILE[tmp3];
 const authStore2 = {};
-let c15 = false;
+const authStore3 = false;
 const PersistedStore = get_initializedDefault.PersistedStore;
 class ThemeStore extends PersistedStore {
   initialize(theme) {
@@ -62,7 +62,7 @@ class ThemeStore extends PersistedStore {
         syncedClientThemes = theme.syncedClientThemes;
       }
       if (null != theme.syncedThemesEnabled) {
-        let c15 = theme.syncedThemesEnabled;
+        syncedThemesEnabled = theme.syncedThemesEnabled;
       }
     }
     this.waitFor(UnsyncedUserSettingsStore, SelectivelySyncedUserSettingsStore, UserSettingsProtoStore);
@@ -163,7 +163,7 @@ let obj2 = {
       const tmp2 = importDefault;
       if (flag) {
         closure_13 = tmp7;
-        tmp2(13916)(closure_13);
+        tmp2(14219)(closure_13);
         flag = true;
       }
       tmp = flag;

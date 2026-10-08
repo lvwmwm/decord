@@ -1,22 +1,20 @@
-// Module ID: 12267
-// Function ID: 12268
+// Module ID: 12346
+// Function ID: 12347
 // Name: useDMMessageToReport
-// Dependencies: [558, 576, 12268, 12269, 12270, 12107, 12274, 2]
+// Dependencies: [558, 576, 12347, 12348, 12349, 12185, 12353, 2]
 
-// Module 12267 (useDMMessageToReport)
+// Module 12346 (useDMMessageToReport)
 import react from "react" /* 576 */;
-import useLongestChannelMessageBeforeReply from "useLongestChannelMessageBeforeReply" /* 12107 */;
-import useIsRelationshipTypeSpamReportable from "useIsRelationshipTypeSpamReportable" /* 12268 */;
-import getApplicationFromBotUserIdDefault from "getApplicationFromBotUserId" /* 12269 */;
-import useMessageRequestPreview from "useMessageRequestPreview" /* 12274 */;
+import useLongestChannelMessageBeforeReply from "useLongestChannelMessageBeforeReply" /* 12185 */;
+import useIsRelationshipTypeSpamReportable from "useIsRelationshipTypeSpamReportable" /* 12347 */;
+import getApplicationFromBotUserIdDefault from "getApplicationFromBotUserId" /* 12348 */;
+import useMessageRequestPreview from "useMessageRequestPreview" /* 12353 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let id;
-
 let tmp5;
-const useIsApplicationDeveloperDefault = tmp5(12270);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) => {
+const useIsApplicationDeveloperDefault = tmp5(12349);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDMMessageToReport(id, arg1, arg2) {
   let error;
   let loaded;
   let message;
@@ -88,7 +86,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) =>
   cResult[4] = longestChannelMessageBeforeReply;
   cResult[5] = obj4;
   tmp18 = obj4;
-}) : ((id, arg1, arg2) => {
+}) : (function useDMMessageToReport(id, arg1, arg2) {
   let error;
   let loaded;
   const obj = useIsRelationshipTypeSpamReportable;

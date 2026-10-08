@@ -1,19 +1,19 @@
-// Module ID: 16426
-// Function ID: 16427
+// Module ID: 16686
+// Function ID: 16687
 // Name: ForYouUnreadClearedState
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1188, 10396, 1126, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1200, 9993, 1126, 5086, 2]
 
-// Module 16426 (ForYouUnreadClearedState)
+// Module 16686 (ForYouUnreadClearedState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10396 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9993 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ size = { width: 48, height: 48, backgroundColor: nativeDefault.unsafe_rawColors.
 createStyles = createStyles.createStyles;
 obj2 = { margin: 12, position: "absolute", color: nativeDefault.unsafe_rawColors.GREEN_400 };
 let closure_6 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYouUnreadClearedState() {
   let intl2;
   let items;
   let items1;
@@ -54,7 +54,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] !== tmp4.icon) {
     const obj3 = { source: AssetRegistryDefault, style: tmp4.icon, color: tmp4.icon.color };
-    const Icon = tmp(1188).Icon;
+    const Icon = tmp(1200).Icon;
     const tmp12 = React3(Icon, obj3);
     cResult[2] = tmp4.icon;
     cResult[3] = tmp12;
@@ -82,7 +82,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { color: "text-default", variant: "text-md/medium", children: intl2.string(intl3.t.jXFsai) };
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     intl2 = tmp(1126).intl;
     const tmp20 = React3(Text, obj5);
     cResult[7] = tmp20;
@@ -120,7 +120,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[13] = tmp21;
   cResult[14] = tmp26;
   tmp25 = tmp26;
-}) : (() => {
+}) : (function ForYouUnreadClearedState() {
   let intl;
   let intl2;
   let items;

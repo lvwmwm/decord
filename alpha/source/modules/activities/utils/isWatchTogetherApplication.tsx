@@ -1,11 +1,11 @@
-// Module ID: 9124
-// Function ID: 9125
+// Module ID: 10696
+// Function ID: 10697
 // Name: isWatchTogetherApplication
-// Dependencies: [2011, 2]
+// Dependencies: [2023, 2]
 // Exports: default
 
-// Module 9124 (isWatchTogetherApplication)
-import Constants from "Constants" /* 2011 */;
+// Module 10696 (isWatchTogetherApplication)
+import Constants from "Constants" /* 2023 */;
 import size from "module_2" /* 2 */;
 
 let _window;

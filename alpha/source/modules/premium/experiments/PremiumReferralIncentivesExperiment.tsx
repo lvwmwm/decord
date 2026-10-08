@@ -1,11 +1,11 @@
-// Module ID: 13262
-// Function ID: 13263
+// Module ID: 13562
+// Function ID: 13563
 // Name: PremiumReferralIncentivesExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1452, 558, 576, 2]
 
-// Module 13262 (PremiumReferralIncentivesExperiment)
+// Module 13562 (PremiumReferralIncentivesExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ let obj = { ORBS: "orbs", DISCOUNT: "discount" };
 let obj2 = { name: "2026-07-premium-referral-incentives", kind: "user", defaultConfig: { referralRewardType: null, useAltReferralCardArt: false }, variations: obj3 };
 obj3 = { 0: { referralRewardType: null, useAltReferralCardArt: false }, 1: { referralRewardType: obj.ORBS, useAltReferralCardArt: false }, 2: { referralRewardType: obj.DISCOUNT, useAltReferralCardArt: false }, 3: { referralRewardType: obj.ORBS, useAltReferralCardArt: true }, 4: { referralRewardType: obj.DISCOUNT, useAltReferralCardArt: true } };
 const apexExperiment = ApexExperiment.createApexExperiment(obj2);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumReferralIncentivesVariant(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(6);
@@ -42,7 +42,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
   cResult[4] = null != config.referralRewardType;
   cResult[5] = obj3;
   tmp5 = obj3;
-}) : ((location) => {
+}) : (function usePremiumReferralIncentivesVariant(location) {
   const obj = { location };
   const config = apexExperiment.useConfig(obj);
   return { referralRewardType: config.referralRewardType, useAltReferralCardArt: config.useAltReferralCardArt, isInReferralIncentivesTreatment: null != config.referralRewardType };

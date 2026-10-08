@@ -1,16 +1,16 @@
-// Module ID: 14443
-// Function ID: 14444
+// Module ID: 14668
+// Function ID: 14669
 // Name: HuePicker
-// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 14440, 4618, 6147, 5612, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 587, 558, 576, 14665, 4810, 6326, 5387, 2]
 
-// Module 14443 (HuePicker)
+// Module 14668 (HuePicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ColorPickerUtils from "ColorPickerUtils" /* 14440 */;
+import ColorPickerUtils from "ColorPickerUtils" /* 14665 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let metroRequire;
 let obj2;
 let size;
 let tmp;
-const ReanimatedRexport = tmp(4618);
+const ReanimatedRexport = tmp(4810);
 let View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = [0, 60, 120, 180, 240, 300, 360];
@@ -39,7 +39,7 @@ const __initData4 = { code: "function HuePickerTsx4(event){const{hue,normalizeVa
 const __initData5 = { code: "function HuePickerTsx5(event_0){const{hue,normalizeValue,barWidth,onPanUpdate,runOnJS}=this.__closure;hue.set(normalizeValue(event_0.x/barWidth.get())*360);onPanUpdate!=null&&runOnJS(onPanUpdate)();}" };
 const __initData6 = { code: "function HuePickerTsx6(){const{onPanFinalize,runOnJS}=this.__closure;onPanFinalize!=null&&runOnJS(onPanFinalize)();}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((hue, barWidth, onPanUpdate, onPanFinalize) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHuePickerGesture(hue, barWidth, onPanUpdate, onPanFinalize) {
   _require = hue;
   dependencyMap = onPanUpdate;
   let closure_3 = onPanFinalize;
@@ -62,13 +62,13 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((hue, barWidth,
             obj.runOnJS(tmp)();
           }
         };
-        fn3.__closure = { onPanFinalize, runOnJS: tmp(4618).runOnJS };
+        fn3.__closure = { onPanFinalize, runOnJS: tmp(4810).runOnJS };
         fn3.__workletHash = 2479115151384;
         fn3.__initData = __initData3;
         cResult[5] = onPanFinalize;
         cResult[6] = fn3;
         tmp6 = fn3;
-        const obj2 = { onPanFinalize, runOnJS: tmp(4618).runOnJS };
+        const obj2 = { onPanFinalize, runOnJS: tmp(4810).runOnJS };
       } else {
         tmp6 = cResult[6];
       }
@@ -79,7 +79,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((hue, barWidth,
           if (cResult[9] === tmp6) {
             tmp8 = cResult[10];
           }
-          let tmpResult = tmp(6147);
+          let tmpResult = tmp(6326);
           const panGesture = tmpResult.usePanGesture(tmp8);
           if (cResult[11] !== panGesture) {
             const obj3 = { gesture: panGesture };
@@ -109,7 +109,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((hue, barWidth,
       tmpResult.runOnJS(tmp4)();
     }
   };
-  fn.__closure = { hue, normalizeValue: tmp(14440).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(4618).runOnJS };
+  fn.__closure = { hue, normalizeValue: tmp(14665).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(4810).runOnJS };
   fn.__workletHash = 353921971989;
   fn.__initData = __initData;
   const fn2 = function s(arg0) {
@@ -121,8 +121,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((hue, barWidth,
       tmpResult.runOnJS(tmp4)();
     }
   };
-  ({ hue, normalizeValue: tmp(14440).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(4618).runOnJS });
-  fn2.__closure = { hue, normalizeValue: tmp(14440).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(4618).runOnJS };
+  ({ hue, normalizeValue: tmp(14665).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(4810).runOnJS });
+  fn2.__closure = { hue, normalizeValue: tmp(14665).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(4810).runOnJS };
   fn2.__workletHash = 10859524318070;
   fn2.__initData = __initData2;
   cResult[0] = barWidth;
@@ -132,8 +132,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((hue, barWidth,
   cResult[4] = fn2;
   tmp5 = fn2;
   tmp4 = fn;
-  ({ hue, normalizeValue: tmp(14440).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(4618).runOnJS });
-}) : ((hue, barWidth, onPanUpdate, onPanFinalize) => {
+  ({ hue, normalizeValue: tmp(14665).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(4810).runOnJS });
+}) : (function useHuePickerGesture(hue, barWidth, onPanUpdate, onPanFinalize) {
   let fn;
   let fn2;
   let fn3;
@@ -189,7 +189,7 @@ const __initData8 = { code: "function HuePickerTsx8(){const{sliderHeight,barHeig
 const __initData9 = { code: "function HuePickerTsx9(){const{hslToRgbWorklet,hue,saturation,lightness,fullWidth,sliderWidth,barWidth}=this.__closure;const rgb=hslToRgbWorklet({h:hue.get(),s:saturation,l:lightness});const centerOffset=fullWidth?sliderWidth.get()/2:0;return{backgroundColor:\"rgb(\"+rgb[0]+\", \"+rgb[1]+\", \"+rgb[2]+\")\",transform:[{translateX:barWidth.get()*hue.get()/360-centerOffset}]};}" };
 const __initData10 = { code: "function HuePickerTsx10(){const{sliderHeight,barHeight,fullWidth,sliderWidth}=this.__closure;const paddingTop=sliderHeight.get()-barHeight.get()>0?(sliderHeight.get()-barHeight.get())/2:0;const paddingLeft=fullWidth?0:sliderWidth.get()/2;return{paddingTop:paddingTop,paddingBottom:paddingTop,paddingLeft:paddingLeft,paddingRight:paddingLeft};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((hue) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HuePicker(hue) {
   let colorBarInnerStyle;
   let fullWidth;
   let lightness;
@@ -362,7 +362,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((hue) => {
   cResult[0] = num2;
   cResult[1] = num;
   cResult[2] = mapped;
-}) : ((hue) => {
+}) : (function HuePicker(hue) {
   let colorBarInnerStyle;
   let items4;
   let items5;

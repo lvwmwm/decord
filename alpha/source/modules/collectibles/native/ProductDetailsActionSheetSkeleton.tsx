@@ -1,18 +1,18 @@
-// Module ID: 13021
-// Function ID: 13022
+// Module ID: 13299
+// Function ID: 13300
 // Name: ProductDetailsActionSheetSkeleton
-// Dependencies: [19, 17, 21, 4896, 587, 5607, 558, 576, 4618, 4897, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 5380, 558, 576, 4810, 5091, 2]
 
-// Module 13021 (ProductDetailsActionSheetSkeleton)
+// Module 13299 (ProductDetailsActionSheetSkeleton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
-import ButtonConstants from "ButtonConstants" /* 5607 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
+import ButtonConstants from "ButtonConstants" /* 5380 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -46,14 +46,14 @@ let closure_7 = createStyles(obj);
 const __initData = { code: "function ProductDetailsActionSheetSkeletonTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
 const __initData2 = { code: "function ProductDetailsActionSheetSkeletonTsx2(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePulseStyle() {
   let sharedValue;
   let tmp5;
   let tmp6;
   const tmp = sharedValue;
   let obj = sharedValue(576);
   const cResult = obj.c(3);
-  const obj2 = sharedValue(4618);
+  const obj2 = sharedValue(4810);
   sharedValue = obj2.useSharedValue(0.3);
   if (cResult[0] !== sharedValue) {
     const fn = function o() {
@@ -81,11 +81,11 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   fn2.__closure = { opacity: sharedValue };
   fn2.__workletHash = 4141895524740;
   fn2.__initData = __initData;
-  const tmpResult = tmp(4618);
+  const tmpResult = tmp(4810);
   return tmpResult.useAnimatedStyle(fn2);
-}) : (() => {
+}) : (function usePulseStyle() {
   let sharedValue;
-  let obj = sharedValue(4618);
+  let obj = sharedValue(4810);
   sharedValue = obj.useSharedValue(0.3);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
@@ -102,11 +102,11 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 5056040834599;
   fn.__initData = __initData2;
-  const obj2 = sharedValue(4618);
+  const obj2 = sharedValue(4810);
   return obj2.useAnimatedStyle(fn);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductDetailsActionSheetSkeleton() {
   let items;
   let items1;
   let items2;
@@ -273,7 +273,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[2] = tmp3.preview;
   cResult[3] = tmp6;
   tmp5 = tmp6;
-}) : (() => {
+}) : (function ProductDetailsActionSheetSkeleton() {
   let items;
   let items1;
   let items2;

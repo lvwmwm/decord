@@ -5,7 +5,7 @@
 // Exports: logEnricherIntegration
 
 // Module 1049 (logEnricherIntegration)
-let attributes, c4, c5, closure_2;
+let attributes, c4, c5, closure_2, version;
 
 const fn = this && this.__awaiter || ((arg0, arg1, arg2, arg3) => {
   let closure_0 = arg0;
@@ -264,7 +264,7 @@ export const logEnricherIntegration = () => {
               if (!tmp11) {
                 attributes["os.name"] = os;
               }
-              const version = closure_2_3.version;
+              version = closure_2_3.version;
               let tmp14 = !version;
               if (version) {
                 tmp14 = attributes["os.version"] && false;

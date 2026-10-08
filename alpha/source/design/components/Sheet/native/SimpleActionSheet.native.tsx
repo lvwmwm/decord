@@ -1,26 +1,25 @@
-// Module ID: 6702
-// Function ID: 6703
+// Module ID: 6879
+// Function ID: 6880
 // Name: SimpleActionSheet
-// Dependencies: [19, 21, 558, 576, 6651, 6703, 6704, 6708, 2]
+// Dependencies: [19, 21, 558, 576, 6828, 6880, 6881, 6885, 2]
 
-// Module 6702 (SimpleActionSheet)
-import ActionSheet2 from "ActionSheet" /* 6708 */;
+// Module 6879 (SimpleActionSheet)
+import ActionSheet2 from "ActionSheet" /* 6885 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let hideActionSheet;
 
 let c2;
 let c3;
 let tmp2;
-const BottomSheetTitleHeader2 = tmp2(6651);
-const ActionSheetCloseButton = tmp2(6703);
-const ActionSheetRow2 = tmp2(6704);
+const BottomSheetTitleHeader2 = tmp2(6828);
+const ActionSheetCloseButton = tmp2(6880);
+const ActionSheetRow2 = tmp2(6881);
 ({ jsx: c2, jsxs: c3 } = Fragment);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((hideActionSheet) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SimpleActionSheet(hideActionSheet) {
   let hasIcons;
   let header;
   let items;
@@ -40,10 +39,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((hideActionSheet) => 
       const obj3 = { leading: null, title: null, subtitle: null, trailing: tmp7Result };
       ({ icon: obj2.leading, title: obj2.title, subtitle: obj2.subtitle } = header);
       tmp7Result = null;
-      const BottomSheetTitleHeader = tmp(6651).BottomSheetTitleHeader;
+      const BottomSheetTitleHeader = tmp(6828).BottomSheetTitleHeader;
       if (null != header.onClose) {
         const obj4 = { onPress: header.onClose };
-        tmp7Result = tmp7(tmp(6703).ActionSheetCloseButton, obj4);
+        tmp7Result = tmp7(tmp(6880).ActionSheetCloseButton, obj4);
       }
       tmp7Result2 = tmp7(BottomSheetTitleHeader, obj3);
     }
@@ -72,14 +71,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((hideActionSheet) => 
       }
       const obj5 = { children: items };
       items = [tmp4, tmp12];
-      const tmp17 = closure_3(tmp(6708).ActionSheet, obj5);
+      const tmp17 = closure_3(tmp(6885).ActionSheet, obj5);
       cResult[10] = tmp4;
       cResult[11] = tmp12;
       cResult[12] = tmp17;
       tmp15 = tmp17;
     }
     const obj9 = { hasIcons, children: tmp9 };
-    const tmp14 = closure_2(tmp(6704).ActionSheetRow.Group, obj9);
+    const tmp14 = closure_2(tmp(6881).ActionSheetRow.Group, obj9);
     cResult[7] = hasIcons;
     cResult[8] = tmp9;
     cResult[9] = tmp14;
@@ -103,7 +102,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((hideActionSheet) => 
         icon: tmp,
         variant: str,
         label,
-        onPress() {
+        onPress: function handlePress() {
           hideActionSheet();
           hideActionSheet();
         }
@@ -127,7 +126,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((hideActionSheet) => 
   cResult[3] = options;
   cResult[4] = mapped;
   tmp9 = mapped;
-}) : ((hasIcons) => {
+}) : (function SimpleActionSheet(hasIcons) {
   let header;
   let items;
   let options;
@@ -171,7 +170,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((hideActionSheet) => 
         icon: tmp,
         variant: str,
         label,
-        onPress() {
+        onPress: function handlePress() {
           require();
           closure_0();
         }

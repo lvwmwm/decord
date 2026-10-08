@@ -1,15 +1,15 @@
-// Module ID: 16230
-// Function ID: 16231
+// Module ID: 16490
+// Function ID: 16491
 // Name: useIsEligibleForServerOnboardingSetupProgress
-// Dependencies: [16231, 16232, 1085, 1102, 558, 576, 12185, 2]
+// Dependencies: [16491, 16492, 1085, 1102, 558, 576, 12264, 2]
 
-// Module 16230 (useIsEligibleForServerOnboardingSetupProgress)
+// Module 16490 (useIsEligibleForServerOnboardingSetupProgress)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12185 */;
-import ServerOnboardingSetupProgressCompletionStore from "ServerOnboardingSetupProgressCompletionStore" /* 16231 */;
-import ServerOnboardingSetupProgressSkipStore from "ServerOnboardingSetupProgressSkipStore" /* 16232 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12264 */;
+import ServerOnboardingSetupProgressCompletionStore from "ServerOnboardingSetupProgressCompletionStore" /* 16491 */;
+import ServerOnboardingSetupProgressSkipStore from "ServerOnboardingSetupProgressSkipStore" /* 16492 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let closure_3 = ServerOnboardingSetupProgressCompletionStore.useIsServerOnboardi
 let closure_4 = ServerOnboardingSetupProgressSkipStore.useIsServerOnboardingSetupProgressSkipped;
 const EMPTY_STRING_SNOWFLAKE_ID = Constants.EMPTY_STRING_SNOWFLAKE_ID;
 const DAY = DurationsDefault.Millis.DAY;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEligibleForServerOnboardingSetupProgress(arg0) {
   const obj = react;
   const cResult = obj.c(5);
   let tmp4 = arg0;
@@ -50,7 +50,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp3Result;
   cResult[4] = false;
   flag = false;
-}) : ((arg0) => {
+}) : (function useIsEligibleForServerOnboardingSetupProgress(arg0) {
   let tmp = arg0;
   useHasAllocateBoostPermissionDefault(arg0);
   let tmp4 = arg0;

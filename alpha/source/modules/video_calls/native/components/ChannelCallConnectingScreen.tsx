@@ -1,50 +1,50 @@
-// Module ID: 9669
-// Function ID: 9670
+// Module ID: 10858
+// Function ID: 10859
 // Name: ChannelCallConnectingScreen
-// Dependencies: [19, 17, 4913, 1999, 4515, 4914, 9086, 1085, 1096, 21, 4896, 9111, 4860, 558, 576, 1615, 6652, 6119, 9670, 5049, 9613, 9494, 9697, 9698, 1126, 1881, 8079, 5575, 4797, 9699, 9458, 504, 9457, 6858, 9706, 9460, 587, 4825, 9707, 9708, 2]
+// Dependencies: [19, 17, 5109, 2011, 4707, 5110, 10333, 1085, 1096, 21, 5090, 10684, 5054, 558, 576, 1627, 6829, 6298, 10859, 5417, 10806, 8658, 10886, 10887, 1126, 1893, 5241, 5885, 4991, 10888, 9109, 504, 9108, 7047, 10895, 10896, 587, 5019, 10912, 10913, 2]
 // Exports: showVoiceSettingsActionSheet
 
-// Module 9669 (ChannelCallConnectingScreen)
+// Module 10858 (ChannelCallConnectingScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import Constants2 from "Constants" /* 1096 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1615 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1881 */;
-import useThemeDefault from "useTheme" /* 4797 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import useChannelNameDefault from "useChannelName" /* 5049 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5575 */;
-import BottomSheetModal from "BottomSheetModal" /* 6119 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6652 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 8079 */;
-import ChannelCallStore from "ChannelCallStore" /* 9086 */;
-import useActionBarHeight from "useActionBarHeight" /* 9111 */;
-import beginConsoleTransfer from "beginConsoleTransfer" /* 9460 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9494 */;
-import UserSettingsVoiceDefault from "UserSettingsVoice" /* 9670 */;
-import VoiceChatHeaderIconDefault from "VoiceChatHeaderIcon" /* 9697 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9698 */;
-import coercePlatformTypeToConsoleType from "coercePlatformTypeToConsoleType" /* 9706 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1893 */;
+import useThemeDefault from "useTheme" /* 4991 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5241 */;
+import useChannelNameDefault from "useChannelName" /* 5417 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5885 */;
+import BottomSheetModal from "BottomSheetModal" /* 6298 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6829 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8658 */;
+import ChannelCallStore from "ChannelCallStore" /* 10333 */;
+import useActionBarHeight from "useActionBarHeight" /* 10684 */;
+import UserSettingsVoiceDefault from "UserSettingsVoice" /* 10859 */;
+import VoiceChatHeaderIconDefault from "VoiceChatHeaderIcon" /* 10886 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10887 */;
+import coercePlatformTypeToConsoleType from "coercePlatformTypeToConsoleType" /* 10895 */;
+import beginConsoleTransfer from "beginConsoleTransfer" /* 10896 */;
 import react_mod from "react" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 4913 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import SessionsStore from "SessionsStore" /* 4914 */;
+import GameConsoleStore from "GameConsoleStore" /* 5109 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import SessionsStore from "SessionsStore" /* 5110 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, channel, importDefault;
+let BottomSheet, importDefault;
 
 let closure_12;
 let closure_14;
 let map1;
 let obj2;
 let tmp;
-const ChannelCallMicButton = tmp(9699);
+const ChannelCallMicButton = tmp(10888);
 let react = react_mod;
 const View = react_native.View;
 const resetFocus = ChannelCallStore.resetFocus;
@@ -55,7 +55,7 @@ let obj = { spacer: { width: 8 }, actionBarContainer: obj2 };
 obj2 = { paddingHorizontal: 12, paddingTop: 16, justifyContent: "center", alignItems: "flex-start", flexDirection: "row", height: useActionBarHeight.CALL_ACTION_BAR_HEIGHT };
 let closure_15 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceSettingsActionSheet() {
   let BottomSheetScrollView;
   let first;
   let obj3;
@@ -72,9 +72,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { scrollable: true, startExpanded: first, children: closure_12(BottomSheetScrollView, obj3) };
-    BottomSheet = tmp(6652).BottomSheet;
+    BottomSheet = tmp(6829).BottomSheet;
     obj3 = { children: closure_12(UserSettingsVoiceDefault, {}) };
-    BottomSheetScrollView = tmp(6119).BottomSheetScrollView;
+    BottomSheetScrollView = tmp(6298).BottomSheetScrollView;
     const tmp9 = closure_12(BottomSheet, obj2);
     cResult[1] = tmp9;
     tmp6 = tmp9;
@@ -82,7 +82,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp6 = cResult[1];
   }
   return tmp6;
-}) : (() => {
+}) : (function VoiceSettingsActionSheet() {
   let BottomSheetScrollView;
   let obj2;
   let obj3;
@@ -94,7 +94,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return closure_12(BottomSheet, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCallConnectingHeader(channel) {
   let intl;
   let items;
   let obj8;
@@ -103,7 +103,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   channel = channel.channel;
   const tmp4 = closure_15();
   const tmp6 = useChannelNameDefault(channel);
-  let obj2 = channel(9613);
+  let obj2 = channel(10806);
   const isVoiceChannelLocked = obj2.useIsVoiceChannelLocked(channel);
   if (cResult[0] === channel) {
     let tmp8;
@@ -188,13 +188,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[1] = isVoiceChannelLocked;
   cResult[2] = fn;
   tmp8 = fn;
-}) : ((channel) => {
+}) : (function ChannelCallConnectingHeader(channel) {
   let intl;
   let obj3;
   channel = channel.channel;
   const tmp = closure_15();
   const tmp4 = useChannelNameDefault(channel);
-  let obj = channel(9613);
+  let obj = channel(10806);
   const isVoiceChannelLocked = obj.useIsVoiceChannelLocked(channel);
   let fn = null;
   if (PermissionStore.can(Permissions.CREATE_INSTANT_INVITE, channel)) {
@@ -226,7 +226,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   return tmp7(tmp8, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinMutedButton(channel) {
   const obj = react2;
   const cResult = obj.c(3);
   channel = channel.channel;
@@ -243,14 +243,15 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[1] = tmp4;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((channel) => {
+}) : (function JoinMutedButton(channel) {
   channel = channel.channel;
   const obj = { channel, disableTint: "light" === useThemeDefault(), isSmallSize: false };
   return closure_12(ChannelCallMicButton.ChannelCallMicButton, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinVoiceButton(channel) {
   let awaitingRemoteSessionInfo;
+  let obj4;
   let stateFromStores1;
   let tmp10;
   let tmp14;
@@ -293,30 +294,32 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     if (tmp5 != null) {
       sessionId1 = tmp5.sessionId;
     }
-    const fn2 = function f() {
-      let str;
-      const getSessionById = SessionsStore.getSessionById;
-      if (sessionId != null) {
-        str = sessionId.sessionId;
+    class S {
+      constructor() {
+        let str;
+        const getSessionById = SessionsStore.getSessionById;
+        if (sessionId != null) {
+          str = sessionId.sessionId;
+        }
+        if (str == null) {
+          str = "";
+        }
+        const sessionById = getSessionById(str);
+        let os;
+        if (sessionById != null) {
+          os = sessionById.clientInfo.os;
+        }
+        return os;
       }
-      if (str == null) {
-        str = "";
-      }
-      const sessionById = getSessionById(str);
-      let os;
-      if (sessionById != null) {
-        os = sessionById.clientInfo.os;
-      }
-      return os;
-    };
+    }
     cResult[3] = sessionId1;
-    cResult[4] = fn2;
-    tmp14 = fn2;
+    cResult[4] = S;
+    tmp14 = S;
   } else {
     tmp14 = cResult[4];
   }
-  const tmpResult3 = tmp(stateFromStores1[31]);
-  stateFromStores1 = tmpResult3.useStateFromStores(tmp10, tmp14);
+  const tmpResult2 = tmp(stateFromStores1[31]);
+  stateFromStores1 = tmpResult2.useStateFromStores(tmp10, tmp14);
   const tmp17 = require("useGameConsoleAccounts")();
   let closure_3 = tmp17;
   const tmp18 = require("useMuteStates")(channel);
@@ -332,13 +335,47 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           tmp20 = cResult[9];
         }
         const tmp21 = require("useIsVoiceChannelFull")(channel);
-        const tmpResult4 = tmp(stateFromStores1[20]);
-        const isVoiceChannelLocked = tmpResult4.useIsVoiceChannelLocked(channel);
+        class S {
+          constructor() {
+            let str;
+            const getSessionById = SessionsStore.getSessionById;
+            if (sessionId != null) {
+              str = sessionId.sessionId;
+            }
+            if (str == null) {
+              str = "";
+            }
+            const sessionById = getSessionById(str);
+            let os;
+            if (sessionById != null) {
+              os = sessionById.clientInfo.os;
+            }
+            return os;
+          }
+        }
+        const isVoiceChannelLocked = obj4.useIsVoiceChannelLocked(channel);
         const _Symbol = Symbol;
         if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
           let obj2 = { tintColor: tmp4(tmp2[36]).unsafe_rawColors.WHITE };
-          const intl = tmp(tmp2[24]).intl;
-          const stringResult = intl.string(tmp(stateFromStores1[24]).t["96ANUN"]);
+          class S {
+            constructor() {
+              let str;
+              const getSessionById = SessionsStore.getSessionById;
+              if (sessionId != null) {
+                str = sessionId.sessionId;
+              }
+              if (str == null) {
+                str = "";
+              }
+              const sessionById = getSessionById(str);
+              let os;
+              if (sessionById != null) {
+                os = sessionById.clientInfo.os;
+              }
+              return os;
+            }
+          }
+          const stringResult = obj6.string(tmp(stateFromStores1[24]).t["96ANUN"]);
           cResult[10] = obj2;
           cResult[11] = stringResult;
           tmp25 = stringResult;
@@ -365,19 +402,37 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
                 }
               }
             }
+            class S {
+              constructor() {
+                let str;
+                const getSessionById = SessionsStore.getSessionById;
+                if (sessionId != null) {
+                  str = sessionId.sessionId;
+                }
+                if (str == null) {
+                  str = "";
+                }
+                const sessionById = getSessionById(str);
+                let os;
+                if (sessionById != null) {
+                  os = sessionById.clientInfo.os;
+                }
+                return os;
+              }
+            }
             let obj3 = { disabled: tmp21 || isVoiceChannelLocked || stateFromStores, backgroundColor: tmp4(tmp2[36]).unsafe_rawColors.GREEN_360, imageStyle: tmp24, accessibilityLabel: tmp25, source: tmp4Result, onPress: tmp20, label: tmp28, iconPosition: tmp(tmp2[39]).IconPosition.RIGHT };
             const LabeledActionButton = tmp(tmp2[39]).LabeledActionButton;
-            const tmp32 = closure_12(LabeledActionButton, obj3);
+            const tmp31 = closure_12(LabeledActionButton, obj3);
             cResult[16] = tmp21 || isVoiceChannelLocked || stateFromStores;
             cResult[17] = tmp20;
             cResult[18] = tmp4Result;
             cResult[19] = tmp28;
-            cResult[20] = tmp32;
-            tmp30 = tmp32;
+            cResult[20] = tmp31;
+            tmp30 = tmp31;
           }
         }
-        const intl2 = tmp(tmp2[24]).intl;
-        const string = intl2.string;
+        const intl = tmp(tmp2[24]).intl;
+        const string = intl.string;
         const t = tmp(tmp2[24]).t;
         if (isVoiceChannelLocked) {
           stringResult1 = string(t.TVBCKZ);
@@ -426,7 +481,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[8] = stateFromStores1;
   cResult[9] = I;
   tmp20 = I;
-}) : ((channel) => {
+}) : (function JoinVoiceButton(channel) {
   let awaitingRemoteSessionInfo;
   let closure_3;
   let intl;
@@ -516,7 +571,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   return tmp12(LabeledActionButton, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CallConnectingActionBar(channel) {
   let items;
   let tmp3;
   let tmp4;
@@ -555,7 +610,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[5] = tmp4;
   cResult[6] = tmp11;
   tmp10 = tmp11;
-}) : ((channel) => {
+}) : (function CallConnectingActionBar(channel) {
   let items;
   channel = channel.channel;
   const obj = { style: closure_15().actionBarContainer, children: items };

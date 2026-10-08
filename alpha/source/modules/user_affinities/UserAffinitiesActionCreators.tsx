@@ -1,14 +1,14 @@
-// Module ID: 9522
-// Function ID: 9523
+// Module ID: 8692
+// Function ID: 8693
 // Name: UserAffinitiesActionCreators
-// Dependencies: [6091, 7156, 1085, 584, 1282, 2]
+// Dependencies: [5938, 7336, 1085, 584, 1294, 2]
 // Exports: fetchUserAffinitiesV2
 
-// Module 9522 (UserAffinitiesActionCreators)
+// Module 8692 (UserAffinitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import ConsentStore from "ConsentStore" /* 6091 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7156 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import ConsentStore from "ConsentStore" /* 5938 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7336 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

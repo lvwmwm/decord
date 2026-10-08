@@ -1,17 +1,17 @@
-// Module ID: 7881
-// Function ID: 7882
+// Module ID: 8299
+// Function ID: 8300
 // Name: useUserProfileAnalyticsProperties
-// Dependencies: [19, 7865, 558, 576, 2]
+// Dependencies: [19, 8283, 558, 576, 2]
 
-// Module 7881 (useUserProfileAnalyticsProperties)
+// Module 8299 (useUserProfileAnalyticsProperties)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 7865 */;
+import Constants from "Constants" /* 8283 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const UserProfileAnalyticsTypes = Constants.UserProfileAnalyticsTypes;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((profileEffectSkuId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfileAnalyticsProperties(profileEffectSkuId) {
   let channelId;
   let displayProfile;
   let guildId;
@@ -175,7 +175,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((profileEffectSkuId) 
   cResult[12] = userId;
   cResult[13] = obj4;
   tmp14 = obj4;
-}) : ((userId) => {
+}) : (function useUserProfileAnalyticsProperties(userId) {
   userId = userId.userId;
   const user = userId.user;
   const channelId = userId.channelId;

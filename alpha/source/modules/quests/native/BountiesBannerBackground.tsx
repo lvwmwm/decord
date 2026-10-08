@@ -1,16 +1,16 @@
-// Module ID: 14899
-// Function ID: 14900
+// Module ID: 15161
+// Function ID: 15162
 // Name: BountiesBannerBackground
-// Dependencies: [19, 17, 4885, 21, 558, 576, 504, 7993, 5612, 2]
+// Dependencies: [19, 17, 5079, 21, 558, 576, 504, 8401, 5387, 2]
 
-// Module 14899 (BountiesBannerBackground)
+// Module 15161 (BountiesBannerBackground)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import LinearGradientDefault from "LinearGradient" /* 5612 */;
-import common_Video from "common/Video" /* 7993 */;
+import LinearGradientDefault from "LinearGradient" /* 5387 */;
+import common_Video from "common/Video" /* 8401 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -23,7 +23,7 @@ let metroRequire;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const locations = [0, 0.6];
 const colors = ["rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0.9)"];
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesBannerBackground(arg0) {
   let children;
   let items1;
   let style;
@@ -96,7 +96,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[5] = stateFromStores;
   cResult[6] = tmp10;
   tmp9 = tmp10;
-}) : ((arg0) => {
+}) : (function BountiesBannerBackground(arg0) {
   let children;
   let items1;
   let style;

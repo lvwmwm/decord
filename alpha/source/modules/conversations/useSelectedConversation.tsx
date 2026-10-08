@@ -1,17 +1,17 @@
-// Module ID: 7578
-// Function ID: 7579
+// Module ID: 9289
+// Function ID: 9290
 // Name: useSelectedConversation
-// Dependencies: [7562, 558, 576, 504, 2]
+// Dependencies: [9273, 558, 576, 504, 2]
 
-// Module 7578 (useSelectedConversation)
-import SelectedConversationStore from "SelectedConversationStore" /* 7562 */;
+// Module 9289 (useSelectedConversation)
+import SelectedConversationStore from "SelectedConversationStore" /* 9273 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedConversation(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -44,7 +44,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useSelectedConversation(arg0) {
   let closure_0;
   _require = arg0;
   const items = [SelectedConversationStore];

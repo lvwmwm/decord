@@ -1,24 +1,24 @@
-// Module ID: 16826
-// Function ID: 16827
+// Module ID: 17105
+// Function ID: 17106
 // Name: useSuggestedSearches
-// Dependencies: [19, 11981, 11982, 558, 576, 12020, 504, 12004, 12002, 2]
+// Dependencies: [19, 12054, 12055, 558, 576, 12093, 504, 12077, 12075, 2]
 
-// Module 16826 (useSuggestedSearches)
-import SuggestedSearchStore2 from "SuggestedSearchStore" /* 11981 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 11982 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 12002 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 12004 */;
+// Module 17105 (useSuggestedSearches)
+import SuggestedSearchStore2 from "SuggestedSearchStore" /* 12054 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 12055 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 12075 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 12077 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const SuggestedSearchStore = SuggestedSearchStore2;
-let dependencyMap, guildId, suggestedSearches;
+let dependencyMap, suggestedSearches;
 
 const EMPTY_SUGGESTED_SEARCHES = SuggestedSearchStore2.EMPTY_SUGGESTED_SEARCHES;
 let closure_6 = SmartSearchConstants.SUGGESTED_SEARCHES_WINDOW_SIZE;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, source) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSuggestedSearches(guildId, source) {
   let closure_2;
   let first;
   let stateFromStoresArray;
@@ -31,8 +31,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, source) => 
   const trackShown = source.trackShown;
   dependencyMap = tmp4;
   guildId = undefined;
-  const useIsNlpSearchEnabled = tmp(12020).useIsNlpSearchEnabled;
-  tmp(12020);
+  const useIsNlpSearchEnabled = tmp(12093).useIsNlpSearchEnabled;
+  tmp(12093);
   if (guildId != null) {
     guildId = guildId.guildId;
   }
@@ -186,7 +186,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, source) => 
   cResult[4] = items4;
   tmp11 = items4;
   tmp10 = fn;
-}) : ((guildId, source) => {
+}) : (function useSuggestedSearches(guildId, source) {
   let closure_2;
   const _require = guildId;
   source = source.source;

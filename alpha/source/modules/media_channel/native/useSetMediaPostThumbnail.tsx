@@ -1,14 +1,14 @@
-// Module ID: 11046
-// Function ID: 11047
+// Module ID: 12792
+// Function ID: 12793
 // Name: useSetMediaPostThumbnail
-// Dependencies: [19, 7044, 7280, 558, 576, 7260, 573, 8842, 4860, 2]
+// Dependencies: [19, 7232, 7880, 558, 576, 7731, 573, 9201, 5054, 2]
 
-// Module 11046 (useSetMediaPostThumbnail)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import DraftStore from "DraftStore" /* 7044 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8842 */;
+// Module 12792 (useSetMediaPostThumbnail)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import DraftStore from "DraftStore" /* 7232 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9201 */;
 import react from "react" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7280 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7880 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, item;
 
 const DraftType = DraftStore.DraftType;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, id) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSetMediaPostThumbnail(arg0, id) {
   let closure_0;
   let first;
   let stateFromStores;
@@ -93,7 +93,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, id) => {
   if (id != null) {
     isThumbnail1 = id.isThumbnail;
   }
-  const fn2 = function f() {
+  const fn2 = function b() {
     let id1;
     if (closure_1 != null) {
       id1 = tmp.id;
@@ -133,7 +133,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, id) => {
   cResult[6] = isThumbnail1;
   cResult[7] = fn2;
   tmp13 = fn2;
-}) : ((arg0, arg1) => {
+}) : (function useSetMediaPostThumbnail(arg0, arg1) {
   let closure_0;
   let stateFromStores;
   _require = arg0;

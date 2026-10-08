@@ -1,14 +1,14 @@
-// Module ID: 10736
-// Function ID: 10737
+// Module ID: 10490
+// Function ID: 10491
 // Name: useScaledTextLineHeight
-// Dependencies: [10737, 4892, 558, 576, 5609, 2]
+// Dependencies: [10491, 5086, 558, 576, 5382, 2]
 // Exports: scaleLineHeight, scaleTextLineHeight
 
-// Module 10736 (useScaledTextLineHeight)
+// Module 10490 (useScaledTextLineHeight)
 import react from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useFontScale from "useFontScale" /* 5609 */;
-import react_nativeDefault from "react-native" /* 10737 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import useFontScale from "useFontScale" /* 5382 */;
+import react_nativeDefault from "react-native" /* 10491 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ function scaleTextLineHeight(c15, fontScale) {
   }
   return value;
 }
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScaledTextLineHeight(arg0) {
   const obj = react;
   const cResult = obj.c(3);
   const obj2 = useFontScale;
@@ -61,7 +61,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = arg0;
   cResult[2] = value;
   tmp5 = value;
-}) : ((arg0) => {
+}) : (function useScaledTextLineHeight(arg0) {
   const obj = useFontScale;
   const fontScale = obj.useFontScale();
   const lineHeight = Text_Text.TextStyleSheet[arg0].lineHeight;

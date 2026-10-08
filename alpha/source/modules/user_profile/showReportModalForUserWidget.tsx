@@ -1,12 +1,12 @@
-// Module ID: 8350
-// Function ID: 8351
+// Module ID: 13098
+// Function ID: 13099
 // Name: showReportModalForUserWidget
-// Dependencies: [5124, 7128, 8312, 6665, 2]
+// Dependencies: [5436, 7314, 7695, 6842, 2]
 // Exports: showReportModalForUserWidget
 
-// Module 8350 (showReportModalForUserWidget)
-import ReportModals from "ReportModals" /* 8312 */;
-import ApplicationStore from "ApplicationStore" /* 5124 */;
+// Module 13098 (showReportModalForUserWidget)
+import ReportModals from "ReportModals" /* 7695 */;
+import ApplicationStore from "ApplicationStore" /* 5436 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

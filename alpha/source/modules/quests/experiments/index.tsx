@@ -1,14 +1,14 @@
-// Module ID: 10927
-// Function ID: 10928
+// Module ID: 10578
+// Function ID: 10579
 // Name: apexExperiment
-// Dependencies: [1440, 558, 576, 10020, 10021, 10928, 2]
+// Dependencies: [1452, 558, 576, 9551, 9552, 10579, 2]
 
-// Module 10927 (apexExperiment)
+// Module 10578 (apexExperiment)
 import react from "react" /* 576 */;
-import QuestOrbMultiplierHooks from "QuestOrbMultiplierHooks" /* 10020 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 10021 */;
-import QuestOrbsMultiplier from "QuestOrbsMultiplier" /* 10928 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1440 */;
+import QuestOrbMultiplierHooks from "QuestOrbMultiplierHooks" /* 9551 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9552 */;
+import QuestOrbsMultiplier from "QuestOrbsMultiplier" /* 10579 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ const apexExperiment4 = ApexExperiment.createApexExperiment(obj10);
 ApexExperiment = ApexExperiment_mod;
 const obj12 = { name: "2026-04-quests-premium-orb-multiplier-marketing", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
 let closure_2 = ApexExperiment.createApexExperiment(obj12);
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestOrbsMultiplierMarketing(location) {
   let tmp4;
   let tmp7;
   const obj = react;
@@ -75,7 +75,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp7 = cResult[3];
   }
   return tmp7;
-}) : ((location) => {
+}) : (function useQuestOrbsMultiplierMarketing(location) {
   const obj = { location };
   const enabled = closure_2.useConfig(obj).enabled;
   const obj2 = QuestOrbMultiplierHooks;

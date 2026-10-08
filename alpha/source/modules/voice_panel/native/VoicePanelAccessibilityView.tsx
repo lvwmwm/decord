@@ -1,25 +1,25 @@
-// Module ID: 17240
-// Function ID: 17241
+// Module ID: 17521
+// Function ID: 17522
 // Name: VoicePanelAccessibilityView
-// Dependencies: [109, 19, 17235, 21, 5774, 558, 576, 17236, 2]
+// Dependencies: [109, 19, 17516, 21, 5357, 558, 576, 17517, 2]
 
-// Module 17240 (VoicePanelAccessibilityView)
+// Module 17521 (VoicePanelAccessibilityView)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import AccessibilityView from "AccessibilityView" /* 5774 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 17235 */;
+import AccessibilityView from "AccessibilityView" /* 5357 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 17516 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const VoicePanelPIPStateContext = tmp(17236);
+const VoicePanelPIPStateContext = tmp(17517);
 let closure_2 = ["style", "pointerEvents", "nativeID", "accessibilityViewIsModal", "onAccessibilityEscape"];
 const VoicePanelPIPModes = VoicePanelPIPConstants.VoicePanelPIPModes;
 const jsx = Fragment.jsx;
 let closure_6 = react.memo(AccessibilityView.AccessibilityViewAnimated);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelAccessibilityView(arg0) {
   let accessibilityViewIsModal;
   let nativeID;
   let onAccessibilityEscape;
@@ -90,7 +90,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[12] = tmp4;
   cResult[13] = tmp16;
   tmp14 = tmp16;
-}) : ((pointerEvents) => {
+}) : (function VoicePanelAccessibilityView(pointerEvents) {
   let nativeID;
   let onAccessibilityEscape;
   let str = pointerEvents.pointerEvents;

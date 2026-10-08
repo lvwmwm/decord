@@ -1,16 +1,16 @@
-// Module ID: 10897
-// Function ID: 10898
+// Module ID: 10548
+// Function ID: 10549
 // Name: useCanOpenBadgeDirectoryFromProfile
-// Dependencies: [558, 576, 10896, 10898, 2]
+// Dependencies: [558, 576, 10547, 10549, 2]
 
-// Module 10897 (useCanOpenBadgeDirectoryFromProfile)
+// Module 10548 (useCanOpenBadgeDirectoryFromProfile)
 import react from "react" /* 576 */;
-import BadgeManagementExperiment from "BadgeManagementExperiment" /* 10896 */;
-import BadgeDirectoryUpdatesExperiment from "BadgeDirectoryUpdatesExperiment" /* 10898 */;
+import BadgeManagementExperiment from "BadgeManagementExperiment" /* 10547 */;
+import BadgeDirectoryUpdatesExperiment from "BadgeDirectoryUpdatesExperiment" /* 10549 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanOpenBadgeDirectoryFromProfile(location) {
   let tmp4;
   let tmp6;
   const obj = react;
@@ -39,7 +39,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     isBadgeManagementEnabled = tmpResult2.useIsBadgeDirectoryUpdatesEnabled(tmp6);
   }
   return isBadgeManagementEnabled;
-}) : ((location) => {
+}) : (function useCanOpenBadgeDirectoryFromProfile(location) {
   const _location = location.location;
   const obj = BadgeManagementExperiment;
   let isBadgeManagementEnabled = obj.useIsBadgeManagementEnabled({ location: _location });

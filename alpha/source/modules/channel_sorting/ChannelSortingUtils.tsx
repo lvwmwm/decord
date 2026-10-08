@@ -1,13 +1,13 @@
-// Module ID: 10747
-// Function ID: 10748
+// Module ID: 12707
+// Function ID: 12708
 // Name: ChannelSortingUtils
-// Dependencies: [2055, 1085, 10748, 6614, 2]
+// Dependencies: [2067, 1085, 12147, 6791, 2]
 // Exports: areTypesInSameSection, getChannelPlacementUpdates, getDropData, getSectionSiblings
 
-// Module 10747 (ChannelSortingUtils)
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 6614 */;
-import DragAndDropUtilsDefault from "DragAndDropUtils" /* 10748 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
+// Module 12707 (ChannelSortingUtils)
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 6791 */;
+import DragAndDropUtilsDefault from "DragAndDropUtils" /* 12147 */;
+import ChannelRecord from "ChannelRecord" /* 2067 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -216,6 +216,7 @@ function getChannelMoveUpdates(localChannel, channel, parentId, channels) {
     items = collectUpdatesResult;
   }
   if (num11(localChannel.type)) {
+    let tmp9 = importDefault;
     let tmp12 = _categories;
     const tmp11 = require("getFlattedChannelList");
     if (items.length > 0) {

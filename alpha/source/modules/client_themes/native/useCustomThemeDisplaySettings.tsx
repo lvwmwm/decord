@@ -1,18 +1,18 @@
-// Module ID: 4796
-// Function ID: 4797
+// Module ID: 4990
+// Function ID: 4991
 // Name: useCustomThemeDisplaySettings
-// Dependencies: [32, 1238, 558, 576, 504, 1239, 2]
+// Dependencies: [32, 1250, 558, 576, 504, 1251, 2]
 
-// Module 4796 (useCustomThemeDisplaySettings)
+// Module 4990 (useCustomThemeDisplaySettings)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
+import ClientThemesUtils from "ClientThemesUtils" /* 1251 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1238 */;
+import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1250 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((base_mix) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCustomThemeDisplaySettings(base_mix) {
   let tmp10;
   let tmp4;
   let tmp5;
@@ -102,19 +102,19 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((base_mix) => {
       tmp14 = obj5;
     }
   }
-}) : ((base_theme) => {
+}) : (function useCustomThemeDisplaySettings(base_theme) {
   let tmp4;
   let tmp5;
   let tmp6;
   let tmpResult;
-  const f89476 = () => {
+  const f90565 = () => {
     const items = [CustomThemeMobileStore.getCustomTheme(), CustomThemeMobileStore.getBaseTheme(), CustomThemeMobileStore.getPreviewTheme()];
     return items;
   };
   let items = [CustomThemeMobileStore];
   const obj = get_initialized;
-  [tmp4, tmp5, tmp6] = obj.useStateFromStoresArray(items, f89476);
-  _slicedToArray(obj.useStateFromStoresArray(items, f89476), 3);
+  [tmp4, tmp5, tmp6] = obj.useStateFromStoresArray(items, f90565);
+  _slicedToArray(obj.useStateFromStoresArray(items, f90565), 3);
   if (undefined !== tmp6) {
     return tmp6;
   } else {

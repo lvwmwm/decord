@@ -1,19 +1,19 @@
-// Module ID: 7949
-// Function ID: 7950
+// Module ID: 8367
+// Function ID: 8368
 // Name: useMediaItemHasSpoiler
-// Dependencies: [19, 2051, 558, 576, 7945, 7950, 573, 7956, 2]
+// Dependencies: [19, 2063, 558, 576, 8363, 8368, 573, 8374, 2]
 
-// Module 7949 (useMediaItemHasSpoiler)
-import MediaSourceUtil from "MediaSourceUtil" /* 7950 */;
+// Module 8367 (useMediaItemHasSpoiler)
+import MediaSourceUtil from "MediaSourceUtil" /* 8368 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaItemHasSpoiler(arg0) {
   let closure_0;
   let closure_1;
   let tmp13;
@@ -34,7 +34,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     tmp4 = cResult[1];
   }
-  const MediaViewerSourcesStore = tmp(7945).MediaViewerSourcesStore;
+  const MediaViewerSourcesStore = tmp(8363).MediaViewerSourcesStore;
   const state = MediaViewerSourcesStore.useState(tmp4);
   if (cResult[2] !== arg0) {
     const fn2 = function o(userRevealedIndexes) {
@@ -47,7 +47,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     tmp6 = cResult[3];
   }
-  const MediaViewerSourcesStore2 = tmp(7945).MediaViewerSourcesStore;
+  const MediaViewerSourcesStore2 = tmp(8363).MediaViewerSourcesStore;
   const state1 = MediaViewerSourcesStore2.useState(tmp6);
   if (cResult[4] !== state) {
     let flattenSourceResult;
@@ -100,7 +100,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return tmp19;
   }
-  const fn3 = function h() {
+  const fn3 = function p() {
     let channel = null;
     if (closure_2) {
       let channelId;
@@ -118,7 +118,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = tmp12;
   cResult[9] = fn3;
   tmp15 = fn3;
-}) : ((arg0) => {
+}) : (function useMediaItemHasSpoiler(arg0) {
   let closure_0;
   let memo;
   let state;

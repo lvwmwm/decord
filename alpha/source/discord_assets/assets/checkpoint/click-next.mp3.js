@@ -1,8 +1,8 @@
-// Module ID: 15546
-// Function ID: 15547
+// Module ID: 15808
+// Function ID: 15809
 // Dependencies: [2]
 
-// Module 15546
+// Module 15808
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/click-next.mp3.js");

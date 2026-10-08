@@ -1,17 +1,17 @@
-// Module ID: 16142
-// Function ID: 16143
+// Module ID: 16402
+// Function ID: 16403
 // Name: ServerPreviewPill
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1126, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1126, 5086, 2]
 
-// Module 16142 (ServerPreviewPill)
+// Module 16402 (ServerPreviewPill)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
+import Text_Text from "Text/Text" /* 5086 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ obj2 = { paddingHorizontal: 10, paddingVertical: nativeDefault.space.PX_4, borde
 createStyles = createStyles.createStyles;
 ({ color: nativeDefault.colors.BLACK, textTransform: "uppercase", letterSpacing: 0.5 });
 let closure_4 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ServerPreviewPill() {
   let first;
   let pill;
   let text;
@@ -61,7 +61,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[4] = tmp7;
   cResult[5] = tmp11;
   tmp10 = tmp11;
-}) : (() => {
+}) : (function ServerPreviewPill() {
   let intl;
   const tmp = closure_4();
   ({ variant: "text-xs/bold", style: tmp.text, children: intl.string(intl2.t.KNhFgD) });

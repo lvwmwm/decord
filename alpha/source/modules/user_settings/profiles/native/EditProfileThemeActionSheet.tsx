@@ -1,18 +1,16 @@
-// Module ID: 14469
-// Function ID: 14470
+// Module ID: 14698
+// Function ID: 14699
 // Name: EditProfileThemeActionSheet
-// Dependencies: [19, 21, 4896, 587, 558, 576, 4860, 1126, 1188, 6651, 6081, 6000, 6708, 2]
+// Dependencies: [19, 21, 5090, 587, 558, 576, 5054, 1126, 1200, 6828, 6267, 6184, 6885, 2]
 
-// Module 14469 (EditProfileThemeActionSheet)
+// Module 14698 (EditProfileThemeActionSheet)
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let onResetTheme;
 
 let c3;
 let closure_4;
@@ -21,7 +19,7 @@ let size;
 let obj = { nitroWheel: size, titleWrapper: { flex: 0 }, titleContainer: { justifyContent: "flex-start" } };
 size = { tintColor: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, marginLeft: 4, width: 20, height: 20 };
 let closure_5 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onResetTheme) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditProfileThemeActionSheet(onResetTheme) {
   let items;
   let obj4;
   let tmp5;
@@ -32,14 +30,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onResetTheme) => {
   onResetTheme = onResetTheme.onResetTheme;
   const tmp4 = closure_5();
   if (cResult[0] !== onResetTheme) {
-    const fn = function s() {
+    function handleResetThemePress() {
       onResetTheme();
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
-    };
+    }
     cResult[0] = onResetTheme;
-    cResult[1] = fn;
-    tmp5 = fn;
+    cResult[1] = handleResetThemePress;
+    tmp5 = handleResetThemePress;
   } else {
     tmp5 = cResult[1];
   }
@@ -53,7 +51,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onResetTheme) => {
   }
   if (cResult[3] !== tmp4.nitroWheel) {
     const obj2 = { style: tmp4.nitroWheel };
-    const tmp10 = closure_3(onResetTheme(1188).NitroWheel, obj2);
+    const tmp10 = closure_3(onResetTheme(1200).NitroWheel, obj2);
     cResult[3] = tmp4.nitroWheel;
     cResult[4] = tmp10;
     tmp8 = tmp10;
@@ -84,8 +82,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onResetTheme) => {
         tmp14 = cResult[10];
       }
       if (cResult[11] !== tmp5) {
-        const obj3 = { hasIcons: false, children: closure_3(onResetTheme(6000).TableRow, obj4) };
-        const TableRowGroup = tmp(6081).TableRowGroup;
+        const obj3 = { hasIcons: false, children: closure_3(onResetTheme(6184).TableRow, obj4) };
+        const TableRowGroup = tmp(6267).TableRowGroup;
         obj4 = { label: tmp13, subLabel: tmp14, onPress: tmp5 };
         const tmp19 = closure_3(TableRowGroup, obj3);
         cResult[11] = tmp5;
@@ -103,7 +101,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onResetTheme) => {
       }
       const obj5 = { children: items };
       items = [tmp11, tmp17];
-      const tmp22 = closure_4(onResetTheme(6708).ActionSheet, obj5);
+      const tmp22 = closure_4(onResetTheme(6885).ActionSheet, obj5);
       cResult[13] = tmp11;
       cResult[14] = tmp17;
       cResult[15] = tmp22;
@@ -111,13 +109,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onResetTheme) => {
     }
   }
   const obj6 = { title: tmp6, trailing: tmp8, titleWrapperStyle: tmp4.titleWrapper, titleContainerStyle: tmp4.titleContainer };
-  const tmp12 = closure_3(onResetTheme(6651).BottomSheetTitleHeader, obj6);
+  const tmp12 = closure_3(onResetTheme(6828).BottomSheetTitleHeader, obj6);
   cResult[5] = tmp4.titleContainer;
   cResult[6] = tmp4.titleWrapper;
   cResult[7] = tmp8;
   cResult[8] = tmp12;
   tmp11 = tmp12;
-}) : ((onResetTheme) => {
+}) : (function EditProfileThemeActionSheet(onResetTheme) {
   let TableRow;
   let intl;
   let intl2;
@@ -128,25 +126,25 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onResetTheme) => {
   onResetTheme = onResetTheme.onResetTheme;
   const tmp = closure_5();
   let obj = { children: items };
-  const ActionSheet = onResetTheme(6708).ActionSheet;
-  const obj3 = { title: intl.string(onResetTheme(1126).t.DMeO2X), trailing: closure_3(onResetTheme(1188).NitroWheel, obj4), titleWrapperStyle: null, titleContainerStyle: null };
-  const BottomSheetTitleHeader = onResetTheme(6651).BottomSheetTitleHeader;
+  const ActionSheet = onResetTheme(6885).ActionSheet;
+  const obj3 = { title: intl.string(onResetTheme(1126).t.DMeO2X), trailing: closure_3(onResetTheme(1200).NitroWheel, obj4), titleWrapperStyle: null, titleContainerStyle: null };
+  const BottomSheetTitleHeader = onResetTheme(6828).BottomSheetTitleHeader;
   intl = onResetTheme(1126).intl;
   obj4 = { style: tmp.nitroWheel };
   ({ titleWrapper: obj2.titleWrapperStyle, titleContainer: obj2.titleContainerStyle } = tmp);
   items = [closure_3(BottomSheetTitleHeader, obj3), ];
   const obj5 = { hasIcons: false, children: closure_3(TableRow, obj9) };
-  const TableRowGroup = onResetTheme(6081).TableRowGroup;
+  const TableRowGroup = onResetTheme(6267).TableRowGroup;
   obj9 = {
     label: intl2.string(onResetTheme(1126).t["L+GmoR"]),
     subLabel: intl3.string(onResetTheme(1126).t.MA9iNr),
-    onPress() {
+    onPress: function handleResetThemePress() {
       onResetTheme();
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
     }
   };
-  TableRow = onResetTheme(6000).TableRow;
+  TableRow = onResetTheme(6184).TableRow;
   intl2 = onResetTheme(1126).intl;
   intl3 = onResetTheme(1126).intl;
   items[1] = closure_3(TableRowGroup, obj5);

@@ -1,23 +1,23 @@
-// Module ID: 7854
-// Function ID: 7855
+// Module ID: 8272
+// Function ID: 8273
 // Name: EditCollectiblesCTAButton
-// Dependencies: [19, 4885, 1087, 1614, 21, 4896, 558, 576, 1618, 504, 7855, 4618, 5604, 4534, 7078, 7856, 1126, 4861, 7857, 7858, 7065, 4860, 5601, 2]
+// Dependencies: [19, 5079, 1087, 1626, 21, 5090, 558, 576, 1630, 504, 8273, 4810, 5374, 4726, 7264, 8274, 1126, 5055, 8275, 8276, 7251, 5054, 5375, 2]
 
-// Module 7854 (EditCollectiblesCTAButton)
+// Module 8272 (EditCollectiblesCTAButton)
 import Fragment from "Fragment" /* 21 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import intl4 from "intl" /* 1126 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1614 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4534 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import HapticUtils from "HapticUtils" /* 4861 */;
-import spring from "spring" /* 5604 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7065 */;
-import EditCollectiblesActionCreators from "EditCollectiblesActionCreators" /* 7857 */;
-import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 7858 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4726 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import HapticUtils from "HapticUtils" /* 5055 */;
+import spring from "spring" /* 5374 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7251 */;
+import EditCollectiblesActionCreators from "EditCollectiblesActionCreators" /* 8275 */;
+import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8276 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import createStyles from "createStyles" /* 4896 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ const __initData4 = { code: "function EditCollectiblesCTAButtonTsx4(){const{shou
 const __initData5 = { code: "function EditCollectiblesCTAButtonTsx5(){const{shouldShowButton}=this.__closure;return{pointerEvents:shouldShowButton.get()?'box-none':'none'};}" };
 const __initData6 = { code: "function EditCollectiblesCTAButtonTsx6(){const{shouldShowButton,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING}=this.__closure;const targetOpacity=shouldShowButton.get()?1:0;return{opacity:reducedMotion?targetOpacity:withSpring(targetOpacity,{...MEDIA_PICKER_SEND_BUTTON_SPRING,overshootClamping:true})};}" };
 let memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((selectedSkuId) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function EditCollectiblesCTAButton(selectedSkuId) {
   let closure_7;
   let closure_8;
   let currentSkuId;
@@ -58,7 +58,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((selecte
   const bottom = selectedSkuId(onApply[8])().bottom;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [analyticsSource];
-    class E {
+    class P {
       constructor() {
         return analyticsSource.useReducedMotion;
       }
@@ -66,9 +66,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((selecte
     let num = 0;
     cResult[0] = items;
     let num2 = 1;
-    cResult[1] = E;
+    cResult[1] = P;
     tmp6 = items;
-    tmp7 = E;
+    tmp7 = P;
   } else {
     [tmp6, tmp7] = cResult;
   }
@@ -88,7 +88,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((selecte
         tmp13 = cResult[6];
       }
       const effect = analyticsLocations.useEffect(tmp12, tmp13);
-      class E {
+      class P {
         constructor() {
           return analyticsSource.useReducedMotion;
         }
@@ -168,7 +168,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((selecte
       if (cResult[7] !== user) {
         const tmp5Result = selectedSkuId(tmp2[13]);
         const canUseCollectiblesResult = tmp5Result.canUseCollectibles(user);
-        class E {
+        class P {
           constructor() {
             return analyticsSource.useReducedMotion;
           }
@@ -186,7 +186,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((selecte
         if (cResult[12] === tmp26) {
           let tmp36;
           let tmp33 = null == selectedSkuId;
-          class E {
+          class P {
             constructor() {
               return analyticsSource.useReducedMotion;
             }
@@ -209,14 +209,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((selecte
             if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
               const intl3 = tmp(tmp2[16]).intl;
               const stringResult = intl3.string(tmp(tmp2[16]).t.Jh8fJz);
-              class E {
+              class P {
                 constructor() {
                   return analyticsSource.useReducedMotion;
                 }
               }
               cResult[15] = stringResult;
             }
-            class E {
+            class P {
               constructor() {
                 return analyticsSource.useReducedMotion;
               }
@@ -228,7 +228,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((selecte
               const tmp5Result2 = selectedSkuId(tmp2[13]);
               const isPremiumResult = tmp5Result2.isPremium(user);
               const intl2 = tmp(tmp2[16]).intl;
-              class E {
+              class P {
                 constructor() {
                   return analyticsSource.useReducedMotion;
                 }
@@ -251,7 +251,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((selecte
             if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
               const intl = tmp(tmp2[16]).intl;
               const stringResult1 = intl.string(tmp(tmp2[16]).t.fYfGgK);
-              class E {
+              class P {
                 constructor() {
                   return analyticsSource.useReducedMotion;
                 }
@@ -276,7 +276,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((selecte
                         let tmp46;
                         if (cResult[30] !== bottom) {
                           let obj5 = { marginBottom: bottom };
-                          class E {
+                          class P {
                             constructor() {
                               return analyticsSource.useReducedMotion;
                             }
@@ -292,7 +292,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((selecte
                             if (tmp28) {
                               str2 = "active";
                             }
-                            class E {
+                            class P {
                               constructor() {
                                 return analyticsSource.useReducedMotion;
                               }
@@ -304,7 +304,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((selecte
                             const tmp51 = jsx(tmp(tmp2[22]).Button, { variant: str2, onPress: tmp44, size: "md", text: tmp36, grow: true });
                           }
                         }
-                        class E {
+                        class P {
                           constructor() {
                             return analyticsSource.useReducedMotion;
                           }
@@ -318,7 +318,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((selecte
                         cResult[35] = tmp48;
                       }
                       const items1 = [, ];
-                      class E {
+                      class P {
                         constructor() {
                           return analyticsSource.useReducedMotion;
                         }
@@ -379,7 +379,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((selecte
           cResult[26] = et;
           tmp44 = et;
         }
-        class E {
+        class P {
           constructor() {
             return analyticsSource.useReducedMotion;
           }
@@ -413,7 +413,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((selecte
   cResult[6] = items2;
   tmp13 = items2;
   tmp12 = O;
-}) : ((user) => {
+}) : (function EditCollectiblesCTAButton(user) {
   let Button;
   let View2;
   let closure_8;

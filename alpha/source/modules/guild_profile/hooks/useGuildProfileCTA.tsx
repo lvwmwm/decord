@@ -1,19 +1,19 @@
-// Module ID: 9428
-// Function ID: 9429
+// Module ID: 9092
+// Function ID: 9093
 // Name: useGuildProfileCTA
-// Dependencies: [19, 502, 2112, 2074, 4877, 1377, 1085, 558, 576, 504, 1390, 8078, 9429, 7847, 5947, 2]
+// Dependencies: [19, 502, 2124, 2086, 5071, 1389, 1085, 558, 576, 504, 1402, 8486, 9093, 8265, 6130, 2]
 // Exports: getGuildProfileCTAType
 
-// Module 9428 (useGuildProfileCTA)
-import FlagUtils from "FlagUtils" /* 1390 */;
-import GuildTagUtils from "GuildTagUtils" /* 7847 */;
-import usePendingFolderGuildIds from "usePendingFolderGuildIds" /* 9429 */;
+// Module 9092 (useGuildProfileCTA)
+import FlagUtils from "FlagUtils" /* 1402 */;
+import GuildTagUtils from "GuildTagUtils" /* 8265 */;
+import usePendingFolderGuildIds from "usePendingFolderGuildIds" /* 9093 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import InviteStore from "InviteStore" /* 4877 */;
-import UserStore from "UserStore" /* 1377 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import InviteStore from "InviteStore" /* 5071 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ let c9;
 ({ InviteStates: c9, GuildFeatures: c10 } = Constants);
 const CTATypes = { IS_MEMBER: 0, [0]: "IS_MEMBER", ADOPT_TAG: 1, [1]: "ADOPT_TAG", HAS_APPLICATION: 2, [2]: "HAS_APPLICATION", APPLY_TO_JOIN: 3, [3]: "APPLY_TO_JOIN", LURK_DISCOVERABLE: 4, [4]: "LURK_DISCOVERABLE", JOIN_VIA_INVITE: 5, [5]: "JOIN_VIA_INVITE", ACCEPT_ROLES: 6, [6]: "ACCEPT_ROLES" };
 let obj2 = { INVITE: "INVITE" };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProfileCTA(id, arg1, arg2) {
   let closure_0;
   let stateFromStores;
   let tmp10;
@@ -421,7 +421,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) =>
     tmp21 = D;
     tmp22 = items6;
   }
-  class F {
+  class G {
     constructor() {
       member = null;
       if (null != id) {
@@ -439,9 +439,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) =>
   const items7 = [id, stateFromStores];
   cResult[10] = stateFromStores;
   cResult[11] = id;
-  cResult[12] = F;
+  cResult[12] = G;
   cResult[13] = items7;
-}) : ((id, arg1, arg2) => {
+}) : (function useGuildProfileCTA(id, arg1, arg2) {
   let closure_1;
   let closure_2;
   let stateFromStores1;
@@ -494,7 +494,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) =>
       if (invite.state !== validInviteKey.BANNED) {
         let obj;
         if (invite.state !== tmp9.EXPIRED) {
-          obj = { validInviteKey: inviteKeyForGuildId, isBypassInvite: hasFlag(num, tmp6(8078).GuildInviteFlags.IS_APPLICATION_BYPASS), inviteRoles: invite.roles };
+          obj = { validInviteKey: inviteKeyForGuildId, isBypassInvite: hasFlag(num, tmp6(8486).GuildInviteFlags.IS_APPLICATION_BYPASS), inviteRoles: invite.roles };
           num = invite.flags;
           hasFlag = FlagUtils.hasFlag;
           FlagUtils;
@@ -670,7 +670,7 @@ export const getGuildProfileCTAType = function getGuildProfileCTAType(guildProfi
         if (num == null) {
           num = 0;
         }
-        flag = hasFlag(num, tmp13(8078).GuildInviteFlags.IS_APPLICATION_BYPASS);
+        flag = hasFlag(num, tmp13(8486).GuildInviteFlags.IS_APPLICATION_BYPASS);
         tmp11 = inviteKeyForGuildId;
       }
     }

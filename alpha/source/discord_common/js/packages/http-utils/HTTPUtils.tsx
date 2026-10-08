@@ -1,24 +1,24 @@
-// Module ID: 1282
-// Function ID: 1283
+// Module ID: 1294
+// Function ID: 1295
 // Name: HTTPUtils
-// Dependencies: [4, 1283, 569, 1336, 1337, 2, 1338, 1339]
+// Dependencies: [4, 1295, 569, 1348, 1349, 2, 1350, 1351]
 // Exports: getAPIBaseURL, getRateLimitFloorMs, isRateLimitedStatus, makeRateLimitedResponse, parseRetryAfter, rejectWithMigratedError, setAwaitOnline, setRejectWithMigratedError, setRequestPatch
 
-// Module 1282 (HTTPUtils)
+// Module 1294 (HTTPUtils)
 import logger_Logger from "logger/Logger" /* 4 */;
 import BackoffDefault from "Backoff" /* 569 */;
-import RequestDefault from "Request" /* 1283 */;
-import V8APIError from "V8APIError" /* 1336 */;
-import convertSkemaError from "convertSkemaError" /* 1337 */;
-import stringifyErrors from "stringifyErrors" /* 1338 */;
-import discord_common_V6OrEarlierAPIError from "discord_common/V6OrEarlierAPIError" /* 1339 */;
+import RequestDefault from "Request" /* 1295 */;
+import V8APIError from "V8APIError" /* 1348 */;
+import convertSkemaError from "convertSkemaError" /* 1349 */;
+import stringifyErrors from "stringifyErrors" /* 1350 */;
+import discord_common_V6OrEarlierAPIError from "discord_common/V6OrEarlierAPIError" /* 1351 */;
 import size from "module_2" /* 2 */;
 
 let c0, dependencyMap, importDefault;
 
 function sendRequest(method, signal, arg2, fn, fn2, cause) {
   let closure_2;
-  const f135083 = () => {
+  const f136473 = () => {
     promise = awaitOnline(url.url);
     return promise.then(() => obj6(closure_1_0, url, closure_1_2, closure_1_3, closure_1_4, closure_1_5));
   };
@@ -165,7 +165,7 @@ function sendRequest(method, signal, arg2, fn, fn2, cause) {
               }
               tmp.retried = num5 + 1;
               const backoff2 = tmp.backoff;
-              backoff2.fail(f135083);
+              backoff2.fail(f136473);
             } else {
               throw new TypeError("Trying to call a non-function");
             }
@@ -302,7 +302,7 @@ function sendRequest(method, signal, arg2, fn, fn2, cause) {
               }
               signal.retried = num2 + 1;
               const backoff2 = tmp.backoff;
-              backoff2.fail(f135083);
+              backoff2.fail(f136473);
             } else {
               throw new TypeError("Trying to call a non-function");
             }

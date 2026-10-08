@@ -1,35 +1,33 @@
-// Module ID: 9173
-// Function ID: 9174
+// Module ID: 10739
+// Function ID: 10740
 // Name: BaseEmbeddedAppWebView
-// Dependencies: [5, 32, 19, 17, 8546, 1085, 2011, 21, 4896, 3, 1369, 558, 576, 9174, 7983, 9175, 1368, 9177, 9070, 1252, 573, 5714, 1126, 9002, 1282, 9178, 1371, 9004, 7957, 2]
+// Dependencies: [5, 32, 19, 17, 9031, 1085, 2023, 21, 5090, 3, 1381, 558, 576, 10740, 7511, 10741, 1380, 10742, 10743, 10744, 1264, 573, 5297, 1126, 10614, 1294, 10745, 1383, 10746, 5928, 2]
 
-// Module 9173 (BaseEmbeddedAppWebView)
+// Module 10739 (BaseEmbeddedAppWebView)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Constants2 from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import URLUtilsDefault from "URLUtils" /* 1371 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5714 */;
-import usePreviousDefault from "usePrevious" /* 7957 */;
-import WebView2 from "WebView" /* 7983 */;
-import getPostMessageJavaScriptDefault from "getPostMessageJavaScript" /* 9004 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import URLUtilsDefault from "URLUtils" /* 1383 */;
+import Constants2 from "Constants" /* 2023 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5297 */;
+import usePreviousDefault from "usePrevious" /* 5928 */;
+import WebView2 from "WebView" /* 7511 */;
+import getPostMessageJavaScriptDefault from "getPostMessageJavaScript" /* 10746 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 8546 */;
-import Constants from "Constants" /* 2011 */;
-import createStyles from "createStyles" /* 4896 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9031 */;
+import createStyles from "createStyles" /* 5090 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c1, c2, c3, c4, c5, c6, c7, c8, c9, closure_6, constants, content_security_policy, iframeId;
+let c1, c2, c3, c4, c5, c6, c7, c8, c9, closure_6, constants, content_security_policy;
 
-let c10;
-let unpackModuleId;
 function getSafeArea(disable, arg1) {
   let tmp = arg1;
   if (null != disable) {
@@ -53,27 +51,27 @@ function getSafeArea(disable, arg1) {
   return tmp;
 }
 const Linking = react_native.Linking;
-const AnalyticEvents = Constants2.AnalyticEvents;
-({ ActivityPlatform: c10, DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY: unpackModuleId } = Constants);
+const AnalyticEvents = Constants.AnalyticEvents;
+let closure_10 = Constants2.DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY;
 const jsx = Fragment.jsx;
-let closure_13 = createStyles.createStyles({ webView: { backgroundColor: "transparent" } });
-let tmp3 = new LoggerDefault("BaseEmbeddedAppWebView");
-let closure_14 = tmp3;
-let closure_15 = PlatformUtils.isIOS();
-let c16 = "discord-webview-shell";
+let closure_12 = createStyles.createStyles({ webView: { backgroundColor: "transparent" } });
+let tmp2 = new LoggerDefault("BaseEmbeddedAppWebView");
+let closure_13 = tmp2;
+let closure_14 = PlatformUtils.isIOS();
+let c15 = "discord-webview-shell";
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbeddedAppWebView(iframeId) {
   let allowPopups;
   let applicationId;
   let closure_16;
   let deepLinkQueryParams;
-  let hadInvalidUrlError;
   let ignoreSilentHardwareSwitch;
   let onActivityCrash;
   let onLoadError;
   let queryParams;
   let referrerPolicy;
   let safeAreasConfig;
+  let setHasInvalidUrlError;
   let tmp10;
   let tmp11;
   let tmp14;
@@ -99,17 +97,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
   if (undefined === deepLinkQueryParams) {
     deepLinkQueryParams = {};
   }
-  let tmp4 = hadInvalidUrlError();
+  let tmp4 = setHasInvalidUrlError();
   let obj2 = isPipOrGridMode;
   const context = isPipOrGridMode.useContext(tmp(tmp2[13]).WebViewContext);
-  let tmp6 = closure_18();
+  let tmp6 = closure_17();
   const hasInvalidUrlError = tmp6.hasInvalidUrlError;
-  const setHasInvalidUrlError = tmp6.setHasInvalidUrlError;
-  hadInvalidUrlError = tmp6.hadInvalidUrlError;
-  let tmp7 = referrerPolicy;
+  setHasInvalidUrlError = tmp6.setHasInvalidUrlError;
+  const hadInvalidUrlError = tmp6.hadInvalidUrlError;
+  const tmp7 = referrerPolicy;
   let tmp8 = referrerPolicy(isPipOrGridMode.useState(null), 2);
   [tmp9, tmp10] = tmp8;
-  const logger = tmp10;
   if (cResult[0] !== iframeId) {
     const tmpResult = tmp(tmp2[14]);
     const webViewProxy = tmpResult.getWebViewProxy(iframeId);
@@ -119,28 +116,28 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
   } else {
     tmp11 = cResult[1];
   }
-  closure_15 = tmp11;
+  let closure_15 = tmp11;
   [tmp14, tmp15] = tmp7(obj2.useState(null), 2);
-  c16 = tmp15;
+  getSafeArea = tmp15;
   tmp7(obj2.useState(null), 2);
   const tmp17 = applicationId(tmp2[15])();
-  let closure_17 = tmp17;
+  closure_17 = tmp17;
   let obj4 = onActivityCrash(tmp2[16]);
-  let obj3 = { frame_id: iframeId, platform: activitySessionId.MOBILE, mobile_app_version: constants.Version };
+  let obj3 = { frame_id: iframeId, platform: tmp(tmp2[17]).ActivityPlatform.MOBILE, mobile_app_version: constants.Version };
   constants = obj4.getConstants();
   const merged = Object.assign(queryParams);
   const merged1 = Object.assign(deepLinkQueryParams);
   const tmp16 = applicationId;
   if (cResult[2] !== allowPopups) {
     let obj5 = { allowPopups };
-    const tmp22 = tmp16(tmp2[17])(obj5);
+    const tmp22 = tmp16(tmp2[18])(obj5);
     cResult[2] = allowPopups;
     cResult[3] = tmp22;
     tmp21 = tmp22;
   } else {
     tmp21 = cResult[3];
   }
-  closure_18 = tmp21;
+  let closure_18 = tmp21;
   const uRLSearchParams = new URLSearchParams(obj3);
   const combined = "" + activityUrl + "?" + uRLSearchParams;
   let closure_20 = obj2.useRef(safeAreasConfig);
@@ -163,18 +160,21 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                     }
                     const effect = obj2.useEffect(tmp25, tmp26);
                     if (cResult[17] !== applicationId) {
-                      function ce(nativeEvent) {
-                        logger.warn("activity WebView error for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
+                      function se(nativeEvent) {
+                        hadInvalidUrlError.warn("activity WebView error for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
                       }
                       cResult[17] = applicationId;
-                      cResult[18] = ce;
+                      cResult[18] = se;
                     }
                     if (cResult[19] !== applicationId) {
-                      function pe(nativeEvent) {
-                        logger.warn("activity WebView render process gone for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
+                      function ue(nativeEvent) {
+                        hadInvalidUrlError.warn("activity WebView render process gone for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
                       }
                       cResult[19] = applicationId;
-                      cResult[20] = pe;
+                      cResult[20] = ue;
+                      let tmp29 = ue;
+                    } else {
+                      tmp29 = cResult[20];
                     }
                     if (cResult[21] === activitySessionId) {
                       if (cResult[22] === applicationId) {
@@ -189,20 +189,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                             let str = "react.memo_cache_sentinel";
                             if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
                               let items = [channelId];
-                              class Se {
-                                constructor() {
-                                  return channelId.getUseActivityUrlOverride();
-                                }
+                              function he() {
+                                return channelId.getUseActivityUrlOverride();
                               }
                               cResult[27] = items;
-                              cResult[28] = Se;
-                              tmp32 = Se;
+                              cResult[28] = he;
+                              tmp32 = he;
                               tmp31 = items;
                             } else {
                               tmp31 = cResult[27];
                               tmp32 = cResult[28];
                             }
-                            const tmpResult3 = tmp(tmp2[20]);
+                            const tmpResult3 = tmp(tmp2[21]);
                             const stateFromStores = tmpResult3.useStateFromStores(tmp31, tmp32);
                             if (cResult[29] === combined) {
                               if (cResult[30] === stateFromStores) {
@@ -228,24 +226,24 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                         const effect2 = obj2.useEffect(tmp38, tmp39);
                                         if (cResult[42] === hadInvalidUrlError) {
                                           if (cResult[43] === hasInvalidUrlError) {
-                                            let tmp41;
                                             let tmp42;
+                                            let tmp43;
                                             if (cResult[44] === onInvalidUrl) {
-                                              tmp41 = cResult[45];
-                                              tmp42 = cResult[46];
+                                              tmp42 = cResult[45];
+                                              tmp43 = cResult[46];
                                             }
-                                            const effect3 = obj2.useEffect(tmp41, tmp42);
+                                            const effect3 = obj2.useEffect(tmp42, tmp43);
                                             if (cResult[47] === iframeId) {
                                               if (cResult[48] === tmp9) {
-                                                let tmp53;
+                                                let tmp54;
+                                                let tmp58;
                                                 let tmp57;
-                                                let tmp56;
                                                 if (cResult[49] === tmp14) {
                                                   let combined1 = cResult[50];
                                                 }
                                                 let flag = false;
                                                 const tmp7Result3 = tmp7(obj2.useState(false), 2);
-                                                class Ie {
+                                                class Ee {
                                                   constructor() {
                                                     let tmp2 = null != onInvalidUrl;
                                                     const tmp = onInvalidUrl;
@@ -265,7 +263,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                                 if (cResult[51] === Symbol.for("react.memo_cache_sentinel")) {
                                                   const items1 = [];
                                                   cResult[51] = items1;
-                                                  class Ie {
+                                                  class Ee {
                                                     constructor() {
                                                       let tmp2 = null != onInvalidUrl;
                                                       const tmp = onInvalidUrl;
@@ -281,118 +279,114 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                                     }
                                                   }
                                                 } else {
-                                                  tmp53 = cResult[51];
+                                                  tmp54 = cResult[51];
                                                 }
-                                                const tmp7Result4 = tmp7(obj2.useState(tmp53), 2);
+                                                const tmp7Result4 = tmp7(obj2.useState(tmp54), 2);
                                                 const first1 = tmp7Result4[0];
                                                 let closure_25 = tmp7Result4[1];
                                                 if (cResult[52] !== applicationId) {
-                                                  class Te {
-                                                    constructor() {
-                                                      tmp = closure_15;
-                                                      if (tmp) {
-                                                        closure_0 = ["'self'"];
-                                                        parseCsp = function parseCsp(arg0, str) {
-                                                          const match = str.match(arg0);
-                                                          if (null !== match) {
-                                                            if (match.length >= 2) {
-                                                              str = match[1];
-                                                              const parts = str.split(" ");
-                                                              const found = parts.filter((item) => !closure_1_0.includes(item));
-                                                            }
-                                                            return [];
+                                                  function $e() {
+                                                    function fetchAndParseCSP() {
+                                                      return closure_0(...arguments);
+                                                    }
+                                                    const tmp = closure_14;
+                                                    if (tmp) {
+                                                      let closure_0 = ["'self'"];
+                                                      function parseCsp(arg0, str) {
+                                                        const match = str.match(arg0);
+                                                        if (null !== match) {
+                                                          if (match.length >= 2) {
+                                                            str = match[1];
+                                                            const parts = str.split(" ");
+                                                            const found = parts.filter((item) => !closure_1_0.includes(item));
                                                           }
-                                                        };
-                                                        closure_0 = undefined;
-                                                        tmp2 = onInvalidUrl;
-                                                        closure_0 = onInvalidUrl(function*(arg0, value) {
-                                                          if (c5 === 2) {
-                                                            c5 = 3;
-                                                            throw new TypeError("Generator functions may not be called on executing generators");
-                                                          } else if (tmp5 === 3) {
-                                                            if (arg0 === 1) {
-                                                              throw value;
-                                                            } else if (arg0 === 2) {
-                                                              const obj3 = { value, done: true };
-                                                              return obj3;
-                                                            } else {
-                                                              return { value: "IconComponent", done: null };
-                                                            }
+                                                          return [];
+                                                        }
+                                                      }
+                                                      const tmp2 = onInvalidUrl;
+                                                      closure_0 = onInvalidUrl(function*(arg0, value) {
+                                                        if (c5 === 2) {
+                                                          c5 = 3;
+                                                          throw new TypeError("Generator functions may not be called on executing generators");
+                                                        } else if (tmp5 === 3) {
+                                                          if (arg0 === 1) {
+                                                            throw value;
+                                                          } else if (arg0 === 2) {
+                                                            const obj2 = { value, done: true };
+                                                            return obj2;
                                                           } else {
-                                                            try {
-                                                              let items;
-                                                              c5 = 2;
-                                                              if (0 === c4) {
-                                                                if (arg0 === 1) {
-                                                                  c5 = 3;
-                                                                  throw value;
-                                                                } else if (arg0 === 2) {
-                                                                  c5 = 3;
-                                                                  const obj4 = { value, done: true };
-                                                                  return obj4;
-                                                                } else {
-                                                                  let closure_3 = tmp;
-                                                                  let closure_2 = tmp2;
-                                                                  closure_0 = undefined;
-                                                                  content_security_policy = undefined;
-                                                                  items = undefined;
-                                                                  if (null != parseCsp) {
-                                                                    const obj2 = closure_0(onLoadError[23]);
-                                                                    const nonTestModeUrlForApplication = obj2.getNonTestModeUrlForApplication(tmp32);
-                                                                    const tmp7 = closure_0;
-                                                                    closure_0 = nonTestModeUrlForApplication;
-                                                                    const tmp8 = onLoadError;
-                                                                    if (nonTestModeUrlForApplication == null) {
-                                                                      const _HermesInternal = HermesInternal;
-                                                                      let str = ".discordsays.com";
-                                                                      closure_0 = "https://" + tmp32 + ".discordsays.com";
-                                                                    }
-                                                                    const HTTP = tmp7(tmp8[24]).HTTP;
-                                                                    const obj5 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                                                                    const _HermesInternal2 = HermesInternal;
-                                                                    const get = HTTP.get;
-                                                                    c4 = 1;
-                                                                    c5 = 1;
-                                                                    const obj6 = { value: get(obj5), done: false };
-                                                                    return obj6;
-                                                                  }
-                                                                }
-                                                              } else if (arg0 === 1) {
+                                                            return { value: "IconComponent", done: null };
+                                                          }
+                                                        } else {
+                                                          try {
+                                                            let items;
+                                                            c5 = 2;
+                                                            if (0 === c4) {
+                                                              if (arg0 === 1) {
                                                                 c5 = 3;
                                                                 throw value;
                                                               } else if (arg0 === 2) {
                                                                 c5 = 3;
-                                                                const obj = { value, done: true };
-                                                                return obj;
+                                                                const obj3 = { value, done: true };
+                                                                return obj3;
                                                               } else {
-                                                                content_security_policy = value.headers["content-security-policy"];
-                                                                items = ["about:blank", "file://*", closure_0];
-                                                                let closure_1 = 3;
-                                                                closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
-                                                                closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
-                                                                closure_2_25(items.map((item) => {
-                                                                  const str = closure_1_1(closure_1_3[25])(item);
-                                                                  return "^" + str.replace(/\\\*/g, ".*");
-                                                                }));
-                                                                closure_2_23(true);
+                                                                let closure_3 = tmp2;
+                                                                let closure_2 = tmp;
+                                                                closure_0 = undefined;
+                                                                content_security_policy = undefined;
+                                                                items = undefined;
+                                                                const obj6 = closure_0(onLoadError[24]);
+                                                                const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(parseCsp);
+                                                                const tmp29 = closure_0;
+                                                                closure_0 = nonTestModeUrlForApplication;
+                                                                const tmp30 = onLoadError;
+                                                                const tmp31 = parseCsp;
+                                                                if (nonTestModeUrlForApplication == null) {
+                                                                  const _HermesInternal = HermesInternal;
+                                                                  let str = ".discordsays.com";
+                                                                  closure_0 = "https://" + tmp31 + ".discordsays.com";
+                                                                }
+                                                                const HTTP = tmp29(tmp30[25]).HTTP;
+                                                                const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
+                                                                const _HermesInternal2 = HermesInternal;
+                                                                const get = HTTP.get;
+                                                                c4 = 1;
+                                                                c5 = 1;
+                                                                const obj5 = { value: get(obj4), done: false };
+                                                                return obj5;
                                                               }
+                                                            } else if (arg0 === 1) {
+                                                              c5 = 3;
+                                                              throw value;
+                                                            } else if (arg0 === 2) {
+                                                              c5 = 3;
+                                                              const obj = { value, done: true };
+                                                              return obj;
+                                                            } else {
+                                                              content_security_policy = value.headers["content-security-policy"];
+                                                              items = ["about:blank", "file://*", closure_0];
+                                                              let closure_1 = 3;
+                                                              closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
+                                                              closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
+                                                              closure_2_25(items.map((item) => {
+                                                                const str = closure_1_1(closure_1_3[26])(item);
+                                                                return "^" + str.replace(/\\\*/g, ".*");
+                                                              }));
+                                                              closure_2_23(true);
                                                               c5 = 3;
                                                               return { value: "IconComponent", done: null };
-                                                            } catch (tmp13) {
-                                                              c5 = 3;
-                                                              throw tmp13;
                                                             }
+                                                          } catch (tmp10) {
+                                                            c5 = 3;
+                                                            throw tmp10;
                                                           }
-                                                        });
-                                                        tmp3 = (function fetchAndParseCSP() {
-                                                          return closure_0(...arguments);
-                                                        })();
-                                                      }
-                                                      return;
+                                                        }
+                                                      });
+                                                      fetchAndParseCSP();
                                                     }
                                                   }
                                                   const items2 = [applicationId, ];
-                                                  class Ie {
+                                                  class Ee {
                                                     constructor() {
                                                       let tmp2 = null != onInvalidUrl;
                                                       const tmp = onInvalidUrl;
@@ -407,227 +401,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                                       }
                                                     }
                                                   }
-                                                  items2[1] = closure_15;
+                                                  items2[1] = tmp10;
                                                   cResult[52] = applicationId;
-                                                  cResult[53] = Te;
+                                                  cResult[53] = $e;
                                                   cResult[54] = items2;
-                                                  tmp57 = items2;
-                                                  tmp56 = Te;
+                                                  tmp58 = items2;
+                                                  tmp57 = $e;
                                                 } else {
-                                                  class Te {
-                                                    constructor() {
-                                                      tmp = closure_15;
-                                                      if (tmp) {
-                                                        closure_0 = ["'self'"];
-                                                        parseCsp = function parseCsp(arg0, str) {
-                                                          const match = str.match(arg0);
-                                                          if (null !== match) {
-                                                            if (match.length >= 2) {
-                                                              str = match[1];
-                                                              const parts = str.split(" ");
-                                                              const found = parts.filter((item) => !closure_1_0.includes(item));
-                                                            }
-                                                            return [];
-                                                          }
-                                                        };
-                                                        closure_0 = undefined;
-                                                        tmp2 = onInvalidUrl;
-                                                        closure_0 = onInvalidUrl(function*(arg0, value) {
-                                                          if (c5 === 2) {
-                                                            c5 = 3;
-                                                            throw new TypeError("Generator functions may not be called on executing generators");
-                                                          } else if (tmp5 === 3) {
-                                                            if (arg0 === 1) {
-                                                              throw value;
-                                                            } else if (arg0 === 2) {
-                                                              const obj3 = { value, done: true };
-                                                              return obj3;
-                                                            } else {
-                                                              return { value: "IconComponent", done: null };
-                                                            }
-                                                          } else {
-                                                            try {
-                                                              let items;
-                                                              c5 = 2;
-                                                              if (0 === c4) {
-                                                                if (arg0 === 1) {
-                                                                  c5 = 3;
-                                                                  throw value;
-                                                                } else if (arg0 === 2) {
-                                                                  c5 = 3;
-                                                                  const obj4 = { value, done: true };
-                                                                  return obj4;
-                                                                } else {
-                                                                  let closure_3 = tmp;
-                                                                  let closure_2 = tmp2;
-                                                                  closure_0 = undefined;
-                                                                  content_security_policy = undefined;
-                                                                  items = undefined;
-                                                                  if (null != parseCsp) {
-                                                                    const obj2 = closure_0(onLoadError[23]);
-                                                                    const nonTestModeUrlForApplication = obj2.getNonTestModeUrlForApplication(tmp32);
-                                                                    const tmp7 = closure_0;
-                                                                    closure_0 = nonTestModeUrlForApplication;
-                                                                    const tmp8 = onLoadError;
-                                                                    if (nonTestModeUrlForApplication == null) {
-                                                                      const _HermesInternal = HermesInternal;
-                                                                      let str = ".discordsays.com";
-                                                                      closure_0 = "https://" + tmp32 + ".discordsays.com";
-                                                                    }
-                                                                    const HTTP = tmp7(tmp8[24]).HTTP;
-                                                                    const obj5 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                                                                    const _HermesInternal2 = HermesInternal;
-                                                                    const get = HTTP.get;
-                                                                    c4 = 1;
-                                                                    c5 = 1;
-                                                                    const obj6 = { value: get(obj5), done: false };
-                                                                    return obj6;
-                                                                  }
-                                                                }
-                                                              } else if (arg0 === 1) {
-                                                                c5 = 3;
-                                                                throw value;
-                                                              } else if (arg0 === 2) {
-                                                                c5 = 3;
-                                                                const obj = { value, done: true };
-                                                                return obj;
-                                                              } else {
-                                                                content_security_policy = value.headers["content-security-policy"];
-                                                                items = ["about:blank", "file://*", closure_0];
-                                                                let closure_1 = 3;
-                                                                closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
-                                                                closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
-                                                                closure_2_25(items.map((item) => {
-                                                                  const str = closure_1_1(closure_1_3[25])(item);
-                                                                  return "^" + str.replace(/\\\*/g, ".*");
-                                                                }));
-                                                                closure_2_23(true);
-                                                              }
-                                                              c5 = 3;
-                                                              return { value: "IconComponent", done: null };
-                                                            } catch (tmp13) {
-                                                              c5 = 3;
-                                                              throw tmp13;
-                                                            }
-                                                          }
-                                                        });
-                                                        tmp3 = (function fetchAndParseCSP() {
-                                                          return closure_0(...arguments);
-                                                        })();
-                                                      }
-                                                      return;
-                                                    }
-                                                  }
-                                                  tmp57 = cResult[54];
+                                                  tmp57 = cResult[53];
+                                                  tmp58 = cResult[54];
                                                 }
-                                                const effect4 = obj2.useEffect(tmp56, tmp57);
+                                                const effect4 = obj2.useEffect(tmp57, tmp58);
                                                 if (cResult[55] === first1) {
-                                                  class Te {
-                                                    constructor() {
-                                                      tmp = closure_15;
-                                                      if (tmp) {
-                                                        closure_0 = ["'self'"];
-                                                        parseCsp = function parseCsp(arg0, str) {
-                                                          const match = str.match(arg0);
-                                                          if (null !== match) {
-                                                            if (match.length >= 2) {
-                                                              str = match[1];
-                                                              const parts = str.split(" ");
-                                                              const found = parts.filter((item) => !closure_1_0.includes(item));
-                                                            }
-                                                            return [];
-                                                          }
-                                                        };
-                                                        closure_0 = undefined;
-                                                        tmp2 = onInvalidUrl;
-                                                        closure_0 = onInvalidUrl(function*(arg0, value) {
-                                                          if (c5 === 2) {
-                                                            c5 = 3;
-                                                            throw new TypeError("Generator functions may not be called on executing generators");
-                                                          } else if (tmp5 === 3) {
-                                                            if (arg0 === 1) {
-                                                              throw value;
-                                                            } else if (arg0 === 2) {
-                                                              const obj3 = { value, done: true };
-                                                              return obj3;
-                                                            } else {
-                                                              return { value: "IconComponent", done: null };
-                                                            }
-                                                          } else {
-                                                            try {
-                                                              let items;
-                                                              c5 = 2;
-                                                              if (0 === c4) {
-                                                                if (arg0 === 1) {
-                                                                  c5 = 3;
-                                                                  throw value;
-                                                                } else if (arg0 === 2) {
-                                                                  c5 = 3;
-                                                                  const obj4 = { value, done: true };
-                                                                  return obj4;
-                                                                } else {
-                                                                  let closure_3 = tmp;
-                                                                  let closure_2 = tmp2;
-                                                                  closure_0 = undefined;
-                                                                  content_security_policy = undefined;
-                                                                  items = undefined;
-                                                                  if (null != parseCsp) {
-                                                                    const obj2 = closure_0(onLoadError[23]);
-                                                                    const nonTestModeUrlForApplication = obj2.getNonTestModeUrlForApplication(tmp32);
-                                                                    const tmp7 = closure_0;
-                                                                    closure_0 = nonTestModeUrlForApplication;
-                                                                    const tmp8 = onLoadError;
-                                                                    if (nonTestModeUrlForApplication == null) {
-                                                                      const _HermesInternal = HermesInternal;
-                                                                      let str = ".discordsays.com";
-                                                                      closure_0 = "https://" + tmp32 + ".discordsays.com";
-                                                                    }
-                                                                    const HTTP = tmp7(tmp8[24]).HTTP;
-                                                                    const obj5 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                                                                    const _HermesInternal2 = HermesInternal;
-                                                                    const get = HTTP.get;
-                                                                    c4 = 1;
-                                                                    c5 = 1;
-                                                                    const obj6 = { value: get(obj5), done: false };
-                                                                    return obj6;
-                                                                  }
-                                                                }
-                                                              } else if (arg0 === 1) {
-                                                                c5 = 3;
-                                                                throw value;
-                                                              } else if (arg0 === 2) {
-                                                                c5 = 3;
-                                                                const obj = { value, done: true };
-                                                                return obj;
-                                                              } else {
-                                                                content_security_policy = value.headers["content-security-policy"];
-                                                                items = ["about:blank", "file://*", closure_0];
-                                                                let closure_1 = 3;
-                                                                closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
-                                                                closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
-                                                                closure_2_25(items.map((item) => {
-                                                                  const str = closure_1_1(closure_1_3[25])(item);
-                                                                  return "^" + str.replace(/\\\*/g, ".*");
-                                                                }));
-                                                                closure_2_23(true);
-                                                              }
-                                                              c5 = 3;
-                                                              return { value: "IconComponent", done: null };
-                                                            } catch (tmp13) {
-                                                              c5 = 3;
-                                                              throw tmp13;
-                                                            }
-                                                          }
-                                                        });
-                                                        tmp3 = (function fetchAndParseCSP() {
-                                                          return closure_0(...arguments);
-                                                        })();
-                                                      }
-                                                      return;
-                                                    }
-                                                  }
-                                                  let closure_26 = tmp60;
-                                                  class Ie {
+                                                  let closure_26 = tmp61;
+                                                  class Ee {
                                                     constructor() {
                                                       let tmp2 = null != onInvalidUrl;
                                                       const tmp = onInvalidUrl;
@@ -642,10 +429,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                                       }
                                                     }
                                                   }
-                                                  const ref = tmp61;
+                                                  const ref = tmp62;
                                                   const _Symbol3 = Symbol;
                                                   if (cResult[58] === Symbol.for("react.memo_cache_sentinel")) {
-                                                    class Fe {
+                                                    class Ne {
                                                       constructor(arg0) {
                                                         const current = ref.current;
                                                         if (current != null) {
@@ -653,8 +440,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                                         }
                                                       }
                                                     }
-                                                    cResult[58] = Fe;
-                                                    class Ie {
+                                                    cResult[58] = Ne;
+                                                    class Ee {
                                                       constructor() {
                                                         let tmp2 = null != onInvalidUrl;
                                                         const tmp = onInvalidUrl;
@@ -670,7 +457,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                                       }
                                                     }
                                                   } else {
-                                                    class Fe {
+                                                    class Ne {
                                                       constructor(arg0) {
                                                         const current = ref.current;
                                                         if (current != null) {
@@ -679,9 +466,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                                       }
                                                     }
                                                   }
-                                                  let closure_28 = tmp62;
+                                                  let closure_28 = tmp63;
                                                   if (cResult[59] === tmp17) {
-                                                    class Fe {
+                                                    class Ne {
                                                       constructor(arg0) {
                                                         const current = ref.current;
                                                         if (current != null) {
@@ -692,7 +479,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                                   }
                                                   cResult[59] = tmp17;
                                                   cResult[60] = isPipOrGridMode;
-                                                  class Le {
+                                                  class Oe {
                                                     constructor(mainDocumentURL) {
                                                       mainDocumentURL = mainDocumentURL.mainDocumentURL;
                                                       if (null != combined1) {
@@ -730,7 +517,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                                   }
                                                   cResult[61] = undefined;
                                                   if (safeAreasConfig != null) {
-                                                    class Fe {
+                                                    class Ne {
                                                       constructor(arg0) {
                                                         const current = ref.current;
                                                         if (current != null) {
@@ -741,7 +528,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                                   }
                                                   cResult[62] = undefined;
                                                   if (safeAreasConfig != null) {
-                                                    class Fe {
+                                                    class Ne {
                                                       constructor(arg0) {
                                                         const current = ref.current;
                                                         if (current != null) {
@@ -752,7 +539,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                                   }
                                                   cResult[63] = undefined;
                                                   if (safeAreasConfig != null) {
-                                                    class Fe {
+                                                    class Ne {
                                                       constructor(arg0) {
                                                         const current = ref.current;
                                                         if (current != null) {
@@ -761,159 +548,157 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                                       }
                                                     }
                                                   }
-                                                  class De {
-                                                    constructor() {
-                                                      function tryInjectJavaScript() {
-                                                        return closure_0(...arguments);
-                                                      }
-                                                      const tmp = closure_26;
-                                                      if (tmp) {
-                                                        const tmp3 = null;
-                                                        if (null != closure_15) {
-                                                          const tmp4 = onInvalidUrl;
-                                                          let closure_0 = onInvalidUrl(function*(arg0, value) {
-                                                            let bottom;
-                                                            let obj5;
-                                                            let right;
-                                                            let top;
-                                                            if (c9 === 2) {
-                                                              c9 = 3;
-                                                              throw new TypeError("Generator functions may not be called on executing generators");
-                                                            } else if (tmp3 === 3) {
-                                                              if (arg0 === 1) {
-                                                                throw value;
-                                                              } else if (arg0 === 2) {
-                                                                const obj2 = { value, done: true };
-                                                                return obj2;
-                                                              } else {
-                                                                return { value: "IconComponent", done: null };
-                                                              }
+                                                  function ke() {
+                                                    function tryInjectJavaScript() {
+                                                      return closure_0(...arguments);
+                                                    }
+                                                    const tmp = closure_26;
+                                                    if (tmp) {
+                                                      const tmp3 = null;
+                                                      if (null != closure_15) {
+                                                        const tmp4 = onInvalidUrl;
+                                                        let closure_0 = onInvalidUrl(function*(arg0, value) {
+                                                          let bottom;
+                                                          let obj5;
+                                                          let right;
+                                                          let top;
+                                                          if (c9 === 2) {
+                                                            c9 = 3;
+                                                            throw new TypeError("Generator functions may not be called on executing generators");
+                                                          } else if (tmp3 === 3) {
+                                                            if (arg0 === 1) {
+                                                              throw value;
+                                                            } else if (arg0 === 2) {
+                                                              const obj2 = { value, done: true };
+                                                              return obj2;
                                                             } else {
-                                                              try {
-                                                                let obj4;
-                                                                let injectJavaScriptResult;
-                                                                c9 = 2;
-                                                                if (0 === c8) {
-                                                                  if (arg0 === 1) {
-                                                                    c9 = 3;
-                                                                    throw value;
-                                                                  } else if (arg0 === 2) {
-                                                                    c9 = 3;
-                                                                    const obj3 = { value, done: true };
-                                                                    return obj3;
-                                                                  } else {
-                                                                    let closure_5 = tmp;
-                                                                    obj4 = undefined;
-                                                                    const obj8 = closure_1_15;
-                                                                    if (null != closure_1_15) {
-                                                                      let rect;
-                                                                      const tmp15 = closure_6;
-                                                                      if (tmp15) {
-                                                                        rect = { top: 0, bottom: 0, left: 0, right: 0 };
-                                                                      } else {
-                                                                        rect = closure_1_17;
-                                                                      }
-                                                                      const rect2 = c7;
-                                                                      let left;
-                                                                      if (c7 != null) {
-                                                                        left = rect2.left;
-                                                                      }
-                                                                      let left1;
-                                                                      if (rect != null) {
-                                                                        left1 = rect.left;
-                                                                      }
-                                                                      let c0 = left1;
-                                                                      if (left1 == null) {
-                                                                        c0 = 0;
-                                                                      }
-                                                                      const rect1 = { left: closure_2_17(left, c0), right: closure_2_17(right, c1), top: closure_2_17(top, c2), bottom: closure_2_17(bottom, c3) };
-                                                                      right = undefined;
-                                                                      if (rect2 != null) {
-                                                                        right = rect2.right;
-                                                                      }
-                                                                      let right1;
-                                                                      if (rect != null) {
-                                                                        right1 = rect.right;
-                                                                      }
-                                                                      c1 = right1;
-                                                                      if (right1 == null) {
-                                                                        c1 = 0;
-                                                                      }
-                                                                      top = undefined;
-                                                                      if (rect2 != null) {
-                                                                        top = rect2.top;
-                                                                      }
-                                                                      let top1;
-                                                                      if (rect != null) {
-                                                                        top1 = rect.top;
-                                                                      }
-                                                                      c2 = top1;
-                                                                      if (top1 == null) {
-                                                                        c2 = 0;
-                                                                      }
-                                                                      bottom = undefined;
-                                                                      if (rect2 != null) {
-                                                                        bottom = rect2.bottom;
-                                                                      }
-                                                                      let bottom1;
-                                                                      if (rect != null) {
-                                                                        bottom1 = rect.bottom;
-                                                                      }
-                                                                      c3 = bottom1;
-                                                                      if (bottom1 == null) {
-                                                                        c3 = 0;
-                                                                      }
-                                                                      obj4 = { type: "safeAreaUpdateEvent", data: obj5 };
-                                                                      obj5 = { insets: rect1 };
-                                                                      c7 = 1;
-                                                                      injectJavaScriptResult = obj8.injectJavaScript(applicationId(onLoadError[27])(obj4));
-                                                                      c8 = 2;
-                                                                      c9 = 1;
-                                                                      const obj6 = { value: injectJavaScriptResult, done: false };
-                                                                      return obj6;
-                                                                    }
-                                                                  }
-                                                                } else if (1 === tmp4) {
-                                                                  c7 = 0;
-                                                                  if (null != ref.current) {
-                                                                    injectJavaScriptResult = closure_1_28;
-                                                                    closure_1_28(applicationId(onLoadError[27])(obj4));
-                                                                  }
-                                                                } else if (arg0 === 1) {
+                                                              return { value: "IconComponent", done: null };
+                                                            }
+                                                          } else {
+                                                            try {
+                                                              let obj4;
+                                                              let injectJavaScriptResult;
+                                                              c9 = 2;
+                                                              if (0 === c8) {
+                                                                if (arg0 === 1) {
                                                                   c9 = 3;
                                                                   throw value;
                                                                 } else if (arg0 === 2) {
-                                                                  c7 = 0;
                                                                   c9 = 3;
-                                                                  const obj = { value, done: true };
-                                                                  return obj;
+                                                                  const obj3 = { value, done: true };
+                                                                  return obj3;
                                                                 } else {
-                                                                  c7 = 0;
+                                                                  let closure_5 = tmp;
+                                                                  obj4 = undefined;
+                                                                  const obj8 = closure_1_15;
+                                                                  if (null != closure_1_15) {
+                                                                    let rect;
+                                                                    const tmp15 = closure_6;
+                                                                    if (tmp15) {
+                                                                      rect = { top: 0, bottom: 0, left: 0, right: 0 };
+                                                                    } else {
+                                                                      rect = closure_1_17;
+                                                                    }
+                                                                    const rect2 = c7;
+                                                                    let left;
+                                                                    if (c7 != null) {
+                                                                      left = rect2.left;
+                                                                    }
+                                                                    let left1;
+                                                                    if (rect != null) {
+                                                                      left1 = rect.left;
+                                                                    }
+                                                                    let c0 = left1;
+                                                                    if (left1 == null) {
+                                                                      c0 = 0;
+                                                                    }
+                                                                    const rect1 = { left: tmp15(left, c0), right: tmp15(right, c1), top: tmp15(top, c2), bottom: tmp15(bottom, c3) };
+                                                                    right = undefined;
+                                                                    if (rect2 != null) {
+                                                                      right = rect2.right;
+                                                                    }
+                                                                    let right1;
+                                                                    if (rect != null) {
+                                                                      right1 = rect.right;
+                                                                    }
+                                                                    c1 = right1;
+                                                                    if (right1 == null) {
+                                                                      c1 = 0;
+                                                                    }
+                                                                    top = undefined;
+                                                                    if (rect2 != null) {
+                                                                      top = rect2.top;
+                                                                    }
+                                                                    let top1;
+                                                                    if (rect != null) {
+                                                                      top1 = rect.top;
+                                                                    }
+                                                                    c2 = top1;
+                                                                    if (top1 == null) {
+                                                                      c2 = 0;
+                                                                    }
+                                                                    bottom = undefined;
+                                                                    if (rect2 != null) {
+                                                                      bottom = rect2.bottom;
+                                                                    }
+                                                                    let bottom1;
+                                                                    if (rect != null) {
+                                                                      bottom1 = rect.bottom;
+                                                                    }
+                                                                    c3 = bottom1;
+                                                                    if (bottom1 == null) {
+                                                                      c3 = 0;
+                                                                    }
+                                                                    obj4 = { type: "safeAreaUpdateEvent", data: obj5 };
+                                                                    obj5 = { insets: rect1 };
+                                                                    c7 = 1;
+                                                                    injectJavaScriptResult = obj8.injectJavaScript(applicationId(onLoadError[28])(obj4));
+                                                                    c8 = 2;
+                                                                    c9 = 1;
+                                                                    const obj6 = { value: injectJavaScriptResult, done: false };
+                                                                    return obj6;
+                                                                  }
                                                                 }
+                                                              } else if (1 === tmp4) {
+                                                                c7 = 0;
+                                                                if (null != ref.current) {
+                                                                  injectJavaScriptResult = closure_1_28;
+                                                                  closure_1_28(applicationId(onLoadError[28])(obj4));
+                                                                }
+                                                              } else if (arg0 === 1) {
                                                                 c9 = 3;
-                                                                return { value: "IconComponent", done: null };
-                                                              } catch (tmp31) {
-                                                                closure_6 = tmp31;
-                                                                if (0 === c7) {
-                                                                  c9 = 3;
-                                                                  throw tmp31;
-                                                                } else {
-                                                                  c8 = 1;
-                                                                }
+                                                                throw value;
+                                                              } else if (arg0 === 2) {
+                                                                c7 = 0;
+                                                                c9 = 3;
+                                                                const obj = { value, done: true };
+                                                                return obj;
+                                                              } else {
+                                                                c7 = 0;
+                                                              }
+                                                              c9 = 3;
+                                                              return { value: "IconComponent", done: null };
+                                                            } catch (tmp31) {
+                                                              closure_6 = tmp31;
+                                                              if (0 === c7) {
+                                                                c9 = 3;
+                                                                throw tmp31;
+                                                              } else {
+                                                                c8 = 1;
                                                               }
                                                             }
-                                                          });
-                                                          tryInjectJavaScript();
-                                                        }
+                                                          }
+                                                        });
+                                                        tryInjectJavaScript();
                                                       }
                                                     }
                                                   }
                                                   cResult[64] = undefined;
-                                                  cResult[65] = null != tmp44 && null != tmp9 && null != tmp14;
+                                                  cResult[65] = null != tmp45 && null != tmp9 && null != tmp14;
                                                   cResult[66] = tmp11;
-                                                  cResult[67] = De;
+                                                  cResult[67] = ke;
                                                 }
-                                                class Le {
+                                                class Oe {
                                                   constructor(mainDocumentURL) {
                                                     mainDocumentURL = mainDocumentURL.mainDocumentURL;
                                                     if (null != combined1) {
@@ -950,11 +735,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                                   }
                                                 }
                                                 cResult[55] = first1;
-                                                cResult[56] = tmp44;
-                                                cResult[57] = Le;
+                                                cResult[56] = tmp45;
+                                                cResult[57] = Oe;
                                               }
                                             }
-                                            class Ie {
+                                            class Ee {
                                               constructor() {
                                                 let tmp2 = null != onInvalidUrl;
                                                 const tmp = onInvalidUrl;
@@ -970,7 +755,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                               }
                                             }
                                             if (null != tmp9) {
-                                              class Fe {
+                                              class Ne {
                                                 constructor(arg0) {
                                                   const current = ref.current;
                                                   if (current != null) {
@@ -978,8 +763,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                                   }
                                                 }
                                               }
-                                              if (tmp46) {
-                                                class Fe {
+                                              if (tmp47) {
+                                                class Ne {
                                                   constructor(arg0) {
                                                     const current = ref.current;
                                                     if (current != null) {
@@ -989,7 +774,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                                 }
                                                 combined1 = "file://" + tmp14;
                                               } else {
-                                                class Fe {
+                                                class Ne {
                                                   constructor(arg0) {
                                                     const current = ref.current;
                                                     if (current != null) {
@@ -997,8 +782,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                                     }
                                                   }
                                                 }
-                                                const tmpResult4 = tmp(tmp2[18]);
-                                                class Ie {
+                                                const tmpResult4 = tmp(tmp2[19]);
+                                                class Ee {
                                                   constructor() {
                                                     let tmp2 = null != onInvalidUrl;
                                                     const tmp = onInvalidUrl;
@@ -1013,9 +798,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                                     }
                                                   }
                                                 }
-                                                combined1 = "" + tmp47 + "/" + c16 + "/" + tmpResult4.webViewShellFileName(iframeId);
+                                                combined1 = "" + tmp48 + "/" + closure_15 + "/" + tmpResult4.webViewShellFileName(iframeId);
                                               }
-                                              class Ie {
+                                              class Ee {
                                                 constructor() {
                                                   let tmp2 = null != onInvalidUrl;
                                                   const tmp = onInvalidUrl;
@@ -1037,7 +822,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                             cResult[50] = null;
                                           }
                                         }
-                                        class Ie {
+                                        class Ee {
                                           constructor() {
                                             let tmp2 = null != onInvalidUrl;
                                             const tmp = onInvalidUrl;
@@ -1057,42 +842,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                         cResult[43] = hasInvalidUrlError;
                                         cResult[44] = onInvalidUrl;
                                         cResult[46] = items3;
-                                        tmp42 = items3;
-                                        tmp41 = Ie;
-                                      }
-                                      class Ee {
-                                        constructor() {
-                                          let intl;
-                                          let intl2;
-                                          let intl3;
-                                          const tmp = !hadInvalidUrlError && hasInvalidUrlError;
-                                          if (tmp) {
-                                            const obj = { title: intl.string(intl4.t.PtobXW), body: intl2.string(intl4.t["55iAUT"]), confirmText: intl3.string(intl4.t.BddRzS) };
-                                            const show = AlertActionCreatorsDefault.show;
-                                            AlertActionCreatorsDefault;
-                                            intl = intl4.intl;
-                                            intl2 = intl4.intl;
-                                            intl3 = intl4.intl;
-                                            show(obj);
-                                          }
-                                        }
+                                        tmp43 = items3;
+                                        tmp42 = Ee;
                                       }
                                       const items4 = [hadInvalidUrlError, hasInvalidUrlError];
                                       cResult[38] = hadInvalidUrlError;
                                       cResult[39] = hasInvalidUrlError;
-                                      cResult[40] = Ee;
+                                      cResult[40] = tmp40;
                                       cResult[41] = items4;
-                                      tmp38 = Ee;
+                                      tmp38 = tmp40;
                                     }
                                   }
-                                  const items5 = [, , ];
-                                  class Se {
-                                    constructor() {
-                                      return channelId.getUseActivityUrlOverride();
-                                    }
-                                  }
-                                  items5[1] = stateFromStores;
-                                  items5[2] = setHasInvalidUrlError;
+                                  const items5 = [, stateFromStores, setHasInvalidUrlError];
                                   cResult[34] = combined;
                                   cResult[35] = stateFromStores;
                                   cResult[36] = setHasInvalidUrlError;
@@ -1101,17 +862,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                 }
                               }
                             }
-                            function ye() {
+                            function be() {
+                              let tmp10;
                               try {
                                 const _URL = URL;
                                 const self = this;
                                 const self2 = this;
                                 const uRL = new URL(combined);
-                                logger(uRL);
+                                tmp10(uRL);
                               } catch (tmp7) {
                                 const tmp8 = stateFromStores;
                                 if (tmp8) {
-                                  setHasInvalidUrlError(true);
+                                  tmp10 = setHasInvalidUrlError(true);
                                 } else {
                                   throw tmp7;
                                 }
@@ -1120,14 +882,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                             cResult[29] = combined;
                             cResult[30] = stateFromStores;
                             cResult[32] = tmp10;
-                            cResult[33] = ye;
-                            tmp35 = ye;
+                            cResult[33] = be;
+                            tmp35 = be;
                           }
                         }
                       }
                     }
-                    function me() {
-                      logger.warn("activity WebView content process terminated for appId " + applicationId);
+                    function ve() {
+                      hadInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
                       const obj = AnalyticsUtilsDefault;
                       const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
                       obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
@@ -1137,8 +899,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                     cResult[22] = applicationId;
                     cResult[23] = channelId;
                     cResult[24] = guildId;
-                    cResult[26] = me;
-                    tmp30 = me;
+                    cResult[26] = ve;
+                    tmp30 = ve;
                   }
                 }
               }
@@ -1155,7 +917,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
       }
     }
   }
-  function le() {
+  function oe() {
     function loadHtml() {
       return closure_0(...arguments);
     }
@@ -1208,7 +970,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
               if (left1 == null) {
                 iframeId = 0;
               }
-              const rect1 = { left: closure_2_17(left, iframeId), right: closure_2_17(right, c1), top: closure_2_17(top, c2), bottom: closure_2_17(bottom, v0) };
+              const rect1 = { left: tmp15(left, iframeId), right: tmp15(right, c1), top: tmp15(top, c2), bottom: tmp15(bottom, v0) };
               right = undefined;
               if (current != null) {
                 right = current.right;
@@ -1247,9 +1009,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
               }
               const obj4 = { iframeId, iframeUri, iframeSandboxAttributes, referrerPolicy, insets: rect1, messageForDisallowedNavigationError: tmp36 };
               tmp36 = undefined;
-              const tmp30 = applicationId(tmp42[18]);
-              if (!closure_2_15) {
-                tmp36 = hasInvalidUrlError;
+              const tmp30 = applicationId(tmp42[19]);
+              if (!closure_2_14) {
+                tmp36 = activitySessionId;
               }
               c6 = 1;
               c7 = 1;
@@ -1287,13 +1049,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
   cResult[7] = onLoadError;
   cResult[8] = referrerPolicy;
   cResult[9] = tmp15;
-  cResult[10] = le;
-  tmp25 = le;
-}) : ((iframeId) => {
+  cResult[10] = oe;
+  tmp25 = oe;
+}) : (function BaseEmbeddedAppWebView(iframeId) {
   let _undefined;
   let activityUrl;
   let allowPopups;
   let c14;
+  let c16;
   let c24;
   let ignoreSilentHardwareSwitch;
   let items12;
@@ -1327,10 +1090,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
   const channelId = iframeId.channelId;
   const guildId = iframeId.guildId;
   const activitySessionId = iframeId.activitySessionId;
-  let hadInvalidUrlError;
+  let setHasInvalidUrlError;
   c14 = undefined;
   c16 = undefined;
-  closure_18 = undefined;
+  let rect;
   let closure_23;
   c24 = undefined;
   let first;
@@ -1341,14 +1104,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
   let obj2 = isPipOrGridMode;
   let tmp2 = iframeId;
   let tmp3 = onLoadError;
-  let tmp = hadInvalidUrlError();
+  let tmp = setHasInvalidUrlError();
   const context = isPipOrGridMode.useContext(iframeId(onLoadError[13]).WebViewContext);
-  let tmp5 = closure_18();
+  let tmp5 = rect();
   const hasInvalidUrlError = tmp5.hasInvalidUrlError;
-  const setHasInvalidUrlError = tmp5.setHasInvalidUrlError;
-  hadInvalidUrlError = tmp5.hadInvalidUrlError;
+  setHasInvalidUrlError = tmp5.setHasInvalidUrlError;
+  const hadInvalidUrlError = tmp5.hadInvalidUrlError;
   let tmp6 = referrerPolicy;
-  let tmp7 = referrerPolicy(isPipOrGridMode.useState(null), 2);
+  const tmp7 = referrerPolicy(isPipOrGridMode.useState(null), 2);
   [url, c14] = tmp7;
   let items = [iframeId];
   const memo = isPipOrGridMode.useMemo(() => {
@@ -1357,14 +1120,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
   }, items);
   [str, c16] = referrerPolicy(isPipOrGridMode.useState(null), 2);
   const tmp9 = referrerPolicy(isPipOrGridMode.useState(null), 2);
-  let rect = applicationId(onLoadError[15])();
+  rect = applicationId(onLoadError[15])();
   let obj3 = onActivityCrash(onLoadError[16]);
-  let obj = { frame_id: iframeId, platform: activitySessionId.MOBILE, mobile_app_version: constants.Version };
+  let obj = { frame_id: iframeId, platform: iframeId(onLoadError[17]).ActivityPlatform.MOBILE, mobile_app_version: constants.Version };
   constants = obj3.getConstants();
   const merged = Object.assign(queryParams);
   const merged1 = Object.assign(deepLinkQueryParams);
-  const tmp13 = applicationId(onLoadError[17])({ allowPopups });
-  closure_18 = tmp13;
+  const tmp13 = applicationId(onLoadError[18])({ allowPopups });
+  let closure_18 = tmp13;
   const uRLSearchParams = new URLSearchParams(obj);
   const combined = "" + activityUrl + "?" + uRLSearchParams;
   let closure_20 = isPipOrGridMode.useRef(safeAreasConfig);
@@ -1424,7 +1187,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                 if (left1 == null) {
                   iframeId = 0;
                 }
-                const rect1 = { left: closure_2_17(left, iframeId), right: closure_2_17(right, c1), top: closure_2_17(top, c2), bottom: closure_2_17(bottom, v0) };
+                const rect1 = { left: closure_2_16(left, iframeId), right: closure_2_16(right, c1), top: closure_2_16(top, c2), bottom: closure_2_16(bottom, v0) };
                 right = undefined;
                 if (current != null) {
                   right = current.right;
@@ -1463,9 +1226,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                 }
                 const obj4 = { iframeId, iframeUri, iframeSandboxAttributes, referrerPolicy, insets: rect1, messageForDisallowedNavigationError: tmp36 };
                 tmp36 = undefined;
-                const tmp30 = applicationId(tmp42[18]);
-                if (!memo) {
-                  tmp36 = hasInvalidUrlError;
+                const tmp30 = applicationId(tmp42[19]);
+                if (!_undefined) {
+                  tmp36 = activitySessionId;
                 }
                 c6 = 1;
                 c7 = 1;
@@ -1502,20 +1265,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
   const items2 = [applicationId];
   const items3 = [applicationId];
   const callback = isPipOrGridMode.useCallback((nativeEvent) => {
-    _undefined.warn("activity WebView error for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
+    hadInvalidUrlError.warn("activity WebView error for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
   }, items2);
   const items4 = [applicationId, channelId, guildId, activitySessionId, onActivityCrash];
   const callback1 = isPipOrGridMode.useCallback((nativeEvent) => {
-    _undefined.warn("activity WebView render process gone for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
+    hadInvalidUrlError.warn("activity WebView render process gone for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
   }, items3);
   const callback2 = isPipOrGridMode.useCallback(() => {
-    _undefined.warn("activity WebView content process terminated for appId " + applicationId);
+    hadInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
     const obj = AnalyticsUtilsDefault;
     const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
     obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
     onActivityCrash();
   }, items4);
-  let obj5 = iframeId(onLoadError[20]);
+  let obj5 = iframeId(onLoadError[21]);
   const items5 = [channelId];
   const stateFromStores = obj5.useStateFromStores(items5, () => channelId.getUseActivityUrlOverride());
   const items6 = [combined, stateFromStores, setHasInvalidUrlError];
@@ -1568,25 +1331,26 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
   let combined1 = null;
   let tmp24 = null;
   if (null != url) {
-    const tmp25 = memo;
+    const tmp25 = c14;
     if (tmp25) {
       let _HermesInternal2 = HermesInternal;
       combined1 = "file://" + str;
     } else {
       const origin = url.origin;
       let _HermesInternal = HermesInternal;
-      const tmp2Result = tmp2(tmp3[18]);
-      combined1 = "" + origin + "/" + c16 + "/" + tmp2Result.webViewShellFileName(iframeId);
+      const tmp2Result = tmp2(tmp3[19]);
+      combined1 = "" + origin + "/" + memo + "/" + tmp2Result.webViewShellFileName(iframeId);
     }
     tmp24 = combined1;
   }
-  closure_23 = memo;
+  let tmp29 = c14;
+  closure_23 = c14;
   let tmp6Result = tmp6(obj2.useState(false), 2);
   [tmp31, c24] = tmp6Result;
   const tmp6Result2 = tmp6(obj2.useState([]), 2);
   first = tmp6Result2[0];
   closure_26 = tmp6Result2[1];
-  const items9 = [applicationId, memo];
+  const items9 = [applicationId, c14];
   const effect4 = obj2.useEffect(() => {
     function fetchAndParseCSP() {
       return obj(...arguments);
@@ -1613,8 +1377,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
             if (arg0 === 1) {
               throw value;
             } else if (arg0 === 2) {
-              const obj3 = { value, done: true };
-              return obj3;
+              const obj2 = { value, done: true };
+              return obj2;
             } else {
               return { value: "IconComponent", done: null };
             }
@@ -1628,34 +1392,32 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                   throw value;
                 } else if (arg0 === 2) {
                   c5 = 3;
-                  const obj4 = { value, done: true };
-                  return obj4;
+                  const obj3 = { value, done: true };
+                  return obj3;
                 } else {
-                  let closure_3 = tmp;
-                  let closure_2 = tmp2;
-                  closure_0 = undefined;
+                  let closure_3 = tmp2;
+                  let closure_2 = tmp;
                   content_security_policy = undefined;
                   items = undefined;
-                  if (null != closure_1) {
-                    const obj2 = closure_2_0(onLoadError[23]);
-                    const nonTestModeUrlForApplication = obj2.getNonTestModeUrlForApplication(tmp32);
-                    closure_0 = nonTestModeUrlForApplication;
-                    const tmp7 = closure_2_0;
-                    const tmp8 = onLoadError;
-                    if (nonTestModeUrlForApplication == null) {
-                      const _HermesInternal = HermesInternal;
-                      let str = ".discordsays.com";
-                      closure_0 = "https://" + tmp32 + ".discordsays.com";
-                    }
-                    const HTTP = tmp7(tmp8[24]).HTTP;
-                    const obj5 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                    const _HermesInternal2 = HermesInternal;
-                    const get = HTTP.get;
-                    c4 = 1;
-                    c5 = 1;
-                    const obj6 = { value: get(obj5), done: false };
-                    return obj6;
+                  const obj6 = closure_2_0(onLoadError[24]);
+                  const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(closure_1);
+                  closure_0 = nonTestModeUrlForApplication;
+                  const tmp29 = closure_2_0;
+                  const tmp30 = onLoadError;
+                  const tmp31 = closure_1;
+                  if (nonTestModeUrlForApplication == null) {
+                    const _HermesInternal = HermesInternal;
+                    let str = ".discordsays.com";
+                    closure_0 = "https://" + tmp31 + ".discordsays.com";
                   }
+                  const HTTP = tmp29(tmp30[25]).HTTP;
+                  const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
+                  const _HermesInternal2 = HermesInternal;
+                  const get = HTTP.get;
+                  c4 = 1;
+                  c5 = 1;
+                  const obj5 = { value: get(obj4), done: false };
+                  return obj5;
                 }
               } else if (arg0 === 1) {
                 c5 = 3;
@@ -1671,16 +1433,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                 closure_1 = HermesBuiltin.arraySpread(items, closure_131_1(/frame-src (.*?);/, content_security_policy), closure_1);
                 closure_1 = HermesBuiltin.arraySpread(items, closure_131_1(/child-src (.*?);/, content_security_policy), closure_1);
                 closure_1_26(items.map((item) => {
-                  const str = closure_1_1(closure_1_3[25])(item);
+                  const str = closure_1_1(closure_1_3[26])(item);
                   return "^" + str.replace(/\\\*/g, ".*");
                 }));
                 closure_1_24(true);
+                c5 = 3;
+                return { value: "IconComponent", done: null };
               }
+            } catch (tmp10) {
               c5 = 3;
-              return { value: "IconComponent", done: null };
-            } catch (tmp13) {
-              c5 = 3;
-              throw tmp13;
+              throw tmp10;
             }
           }
         });
@@ -1804,7 +1566,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                       if (left1 == null) {
                         c0 = 0;
                       }
-                      const rect1 = { left: closure_2_17(left, c0), right: closure_2_17(right, c1), top: closure_2_17(top, c2), bottom: closure_2_17(bottom, c3) };
+                      const rect1 = { left: closure_2_16(left, c0), right: closure_2_16(right, c1), top: closure_2_16(top, c2), bottom: closure_2_16(bottom, c3) };
                       right = undefined;
                       if (rect2 != null) {
                         right = rect2.right;
@@ -1844,7 +1606,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                       obj4 = { type: "safeAreaUpdateEvent", data: obj5 };
                       obj5 = { insets: rect1 };
                       c7 = 1;
-                      injectJavaScriptResult = obj8.injectJavaScript(applicationId(onLoadError[27])(obj4));
+                      injectJavaScriptResult = obj8.injectJavaScript(applicationId(onLoadError[28])(obj4));
                       c8 = 2;
                       c9 = 1;
                       const obj6 = { value: injectJavaScriptResult, done: false };
@@ -1855,7 +1617,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                   c7 = 0;
                   if (null != ref.current) {
                     injectJavaScriptResult = closure_1_29;
-                    closure_1_29(applicationId(onLoadError[27])(obj4));
+                    closure_1_29(applicationId(onLoadError[28])(obj4));
                   }
                 } else if (arg0 === 1) {
                   c9 = 3;
@@ -2011,8 +1773,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
         }
         tmp50 = num12;
       }
-      if (memo) {
-        const tmp2Result2 = tmp2(tmp3[18]);
+      if (tmp29) {
+        const tmp2Result2 = tmp2(tmp3[19]);
         injectedJavascriptForIOS = tmp2Result2.createInjectedJavascriptForIOS(rect1);
       }
       let tmp54Result = null;
@@ -2021,7 +1783,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
         let obj4 = { style: tmp.webView, ref, source: obj6, androidAssetLoaderConfig: obj7, originWhitelist: ["*"], overScrollMode: "never", scrollEnabled: false, cacheEnabled: true, onError: callback, onContentProcessDidTerminate: callback2, onRenderProcessGone: callback1, webViewKey: iframeId, temporaryParentNodeTag: context, messagingWithWebViewKeyEnabled: true, allowFileAccess: tmp29, injectedJavaScript: injectedJavascriptForIOS, injectedJavaScriptForMainFrameOnly: false, onShouldStartLoadWithRequest: tmp56, mediaPlaybackRequiresUserAction: false, ignoreSilentHardwareSwitch, allowsInlineMediaPlayback: true, minimumFontSize: 1, bounces: false, allowsProtectedMedia: true };
         obj6 = { uri: tmp24 };
         const WebView = tmp2(tmp3[14]).WebView;
-        const tmp54 = setHasInvalidUrlError;
+        const tmp54 = hasInvalidUrlError;
         if ("" === url.port) {
           host = url.host;
         } else {
@@ -2029,11 +1791,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
           host = "" + url.hostname + ":" + url.port;
         }
         obj7 = { domain: host, httpAllowed: "http:" === url.protocol, pathHandlers: items12 };
-        let obj8 = { type: "internal", path: "/" + c16 + "/", directory: str.substring(0, str.lastIndexOf("/")) };
+        let obj8 = { type: "internal", path: "/" + memo + "/", directory: str.substring(0, str.lastIndexOf("/")) };
         const _HermesInternal4 = HermesInternal;
         items12 = [obj8];
         tmp56 = undefined;
-        if (memo) {
+        if (tmp29) {
           tmp56 = callback3;
         }
         tmp54Result = tmp54(WebView, obj4);
@@ -2044,7 +1806,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
   return null;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasInvalidUrlErrorState() {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasInvalidUrlErrorState() {
   let first;
   let tmp4;
   const obj = react2;
@@ -2071,4 +1833,4 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHas
 });
 const result = size.fileFinishedImporting("modules/embedded_apps/native/components/BaseEmbeddedAppWebView.tsx");
 
-export const BaseEmbeddedAppWebView = tmp4;
+export const BaseEmbeddedAppWebView = tmp3;

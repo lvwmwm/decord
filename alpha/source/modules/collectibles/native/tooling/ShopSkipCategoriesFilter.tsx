@@ -1,16 +1,16 @@
-// Module ID: 15613
-// Function ID: 15614
+// Module ID: 15893
+// Function ID: 15894
 // Name: ShopSkipCategoriesFilter
-// Dependencies: [19, 17, 7066, 21, 4896, 587, 558, 576, 504, 7065, 4892, 5600, 2]
+// Dependencies: [19, 17, 7252, 21, 5090, 587, 558, 576, 504, 7251, 5086, 5373, 2]
 
-// Module 15613 (ShopSkipCategoriesFilter)
+// Module 15893 (ShopSkipCategoriesFilter)
 import nativeDefault from "native" /* 587 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7065 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7251 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7066 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7252 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ obj3 = { marginBottom: nativeDefault.space.PX_8 };
 obj4 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 };
 size = { width: 32, height: 32, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, justifyContent: "center", alignItems: "center" };
 let closure_7 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopSkipCategoriesFilter() {
   let items1;
   let items2;
   let skipNumCategories;
@@ -61,34 +61,34 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult = tmp(504);
   stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   if (cResult[2] !== stateFromStores) {
-    const fn2 = function x() {
+    function handleDecrement() {
       if (stateFromStores > 0) {
         const obj = CollectiblesActionCreators;
         obj.setSkipNumCategories(tmp - 1);
       }
-    };
+    }
     cResult[2] = stateFromStores;
-    cResult[3] = fn2;
-    tmp9 = fn2;
+    cResult[3] = handleDecrement;
+    tmp9 = handleDecrement;
   } else {
     tmp9 = cResult[3];
   }
   if (cResult[4] !== stateFromStores) {
-    const fn3 = function y() {
+    function handleIncrement() {
       if (stateFromStores < 100) {
         const obj = CollectiblesActionCreators;
         obj.setSkipNumCategories(tmp + 1);
       }
-    };
+    }
     cResult[4] = stateFromStores;
-    cResult[5] = fn3;
-    tmp10 = fn3;
+    cResult[5] = handleIncrement;
+    tmp10 = handleIncrement;
   } else {
     tmp10 = cResult[5];
   }
   if (cResult[6] !== tmp4.label) {
     const obj2 = { variant: "text-md/normal", style: tmp4.label, children: "Hide first # of categories" };
-    const tmp15 = closure_5(tmp(4892).Text, obj2);
+    const tmp15 = closure_5(tmp(5086).Text, obj2);
     cResult[6] = tmp4.label;
     cResult[7] = tmp15;
     tmp13 = tmp15;
@@ -103,7 +103,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const _Symbol = Symbol;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp20 = closure_5(tmp(4892).Text, { variant: "text-lg/semibold", children: "\u2212" });
+      const tmp20 = closure_5(tmp(5086).Text, { variant: "text-lg/semibold", children: "\u2212" });
       cResult[11] = tmp20;
       tmp18 = tmp20;
     } else {
@@ -128,7 +128,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
             const _Symbol2 = Symbol;
             if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-              const tmp32 = closure_5(tmp(4892).Text, { variant: "text-lg/semibold", children: "+" });
+              const tmp32 = closure_5(tmp(5086).Text, { variant: "text-lg/semibold", children: "+" });
               cResult[22] = tmp32;
               tmp30 = tmp32;
             } else {
@@ -168,7 +168,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                       }
                       const obj4 = { spacing: 8, children: items1 };
                       items1 = [tmp13, tmp37];
-                      const tmp43 = closure_6(tmp(5600).Stack, obj4);
+                      const tmp43 = closure_6(tmp(5373).Stack, obj4);
                       cResult[32] = tmp37;
                       cResult[33] = tmp13;
                       cResult[34] = tmp43;
@@ -202,7 +202,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           tmp29 = items3;
         }
         const obj7 = { variant: "text-md/semibold", style: tmp4.valueText, children: stateFromStores };
-        const tmp27 = closure_5(tmp(4892).Text, obj7);
+        const tmp27 = closure_5(tmp(5086).Text, obj7);
         cResult[16] = stateFromStores;
         cResult[17] = tmp4.valueText;
         cResult[18] = tmp27;
@@ -222,7 +222,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[9] = stateFromStores <= 0 && tmp4.stepperButtonDisabled;
   cResult[10] = items4;
   tmp17 = items4;
-}) : (() => {
+}) : (function ShopSkipCategoriesFilter() {
   let Stack;
   let items3;
   let obj7;
@@ -233,10 +233,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const items = [CollectiblesCategoryStore];
   stateFromStores = obj.useStateFromStores(items, () => skipNumCategories.skipNumCategories);
   const obj2 = { style: tmp.container, children: closure_6(Stack, obj7) };
-  Stack = stateFromStores(5600).Stack;
+  Stack = stateFromStores(5373).Stack;
   const items1 = [, ];
   const obj3 = { variant: "text-md/normal", style: tmp.label, children: "Hide first # of categories" };
-  items1[0] = closure_5(stateFromStores(4892).Text, obj3);
+  items1[0] = closure_5(stateFromStores(5086).Text, obj3);
   const items2 = [tmp.stepperButton, ];
   const obj4 = { style: tmp.stepperContainer, children: items3 };
   const tmp11 = stateFromStores <= 0 && tmp.stepperButtonDisabled;
@@ -244,32 +244,32 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   items3 = [, , ];
   const obj5 = {
     style: items2,
-    onPress() {
+    onPress: function handleDecrement() {
       if (stateFromStores > 0) {
         const obj = CollectiblesActionCreators;
         obj.setSkipNumCategories(tmp - 1);
       }
     },
     disabled: stateFromStores <= 0,
-    children: closure_5(stateFromStores(4892).Text, { variant: "text-lg/semibold", children: "\u2212" })
+    children: closure_5(stateFromStores(5086).Text, { variant: "text-lg/semibold", children: "\u2212" })
   };
   items3[0] = closure_5(closure_3, obj5);
   const obj6 = { variant: "text-md/semibold", style: tmp.valueText, children: stateFromStores };
-  items3[1] = closure_5(stateFromStores(4892).Text, obj6);
+  items3[1] = closure_5(stateFromStores(5086).Text, obj6);
   const items4 = [tmp.stepperButton, ];
   obj7 = { spacing: 8, children: items1 };
   const tmp12 = stateFromStores >= 100 && tmp.stepperButtonDisabled;
   items4[1] = tmp12;
   const obj8 = {
     style: items4,
-    onPress() {
+    onPress: function handleIncrement() {
       if (stateFromStores < 100) {
         const obj = CollectiblesActionCreators;
         obj.setSkipNumCategories(tmp + 1);
       }
     },
     disabled: stateFromStores >= 100,
-    children: closure_5(stateFromStores(4892).Text, { variant: "text-lg/semibold", children: "+" })
+    children: closure_5(stateFromStores(5086).Text, { variant: "text-lg/semibold", children: "+" })
   };
   items3[2] = closure_5(closure_3, obj8);
   items1[1] = closure_6(closure_2, obj4);

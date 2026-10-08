@@ -1,9 +1,9 @@
-// Module ID: 16681
-// Function ID: 16682
+// Module ID: 16945
+// Function ID: 16946
 // Name: ApplicationAssetVisibility
 // Dependencies: [2]
 
-// Module 16681 (ApplicationAssetVisibility)
+// Module 16945 (ApplicationAssetVisibility)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationAssetVisibility.tsx");

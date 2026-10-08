@@ -1,19 +1,19 @@
-// Module ID: 11112
-// Function ID: 11113
+// Module ID: 10477
+// Function ID: 10478
 // Name: useGiftCodeErrorMessage
-// Dependencies: [32, 7081, 11101, 558, 576, 504, 1126, 5317, 2]
+// Dependencies: [32, 7267, 10466, 558, 576, 504, 1126, 5629, 2]
 
-// Module 11112 (useGiftCodeErrorMessage)
+// Module 10477 (useGiftCodeErrorMessage)
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7081 */;
-import GiftCodeStore from "GiftCodeStore" /* 11101 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7267 */;
+import GiftCodeStore from "GiftCodeStore" /* 10466 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, id) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGiftCodeErrorMessage(arg0, id) {
   let closure_0;
   let first;
   let first1;
@@ -117,7 +117,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, id) => {
     }
   }
   return tmp18;
-}) : ((arg0, id) => {
+}) : (function useGiftCodeErrorMessage(arg0, id) {
   let closure_0;
   let first;
   let stringResult;

@@ -1,24 +1,24 @@
-// Module ID: 6637
-// Function ID: 6638
+// Module ID: 6814
+// Function ID: 6815
 // Name: DropdownOptionsActionSheet
-// Dependencies: [19, 17, 5645, 6602, 1380, 21, 4896, 558, 576, 573, 6632, 1402, 1188, 1126, 4892, 6638, 1618, 4860, 6651, 5601, 6652, 6119, 2]
+// Dependencies: [19, 17, 5992, 6778, 1392, 21, 5090, 558, 576, 573, 6809, 1414, 1200, 1126, 5086, 6815, 1630, 5054, 6828, 5375, 6829, 6298, 2]
 
-// Module 6637 (DropdownOptionsActionSheet)
+// Module 6814 (DropdownOptionsActionSheet)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import intl4 from "intl" /* 1126 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5645 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6602 */;
+import EmojiStore from "EmojiStore" /* 5992 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6778 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, dependencyMap, guildId, responses;
+let BottomSheet, dependencyMap, responses;
 
 let c9;
 let metroImportAll;
@@ -27,7 +27,7 @@ const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let closure_10 = createStyles.createStyles({ optionTextEmoji: { fontSize: 24, lineHeight: 24, paddingTop: 5 }, optionImageEmoji: { height: 24, width: 24 }, newBadge: { fontWeight: "bold" }, labelRow: { display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, closeButtonWrapper: { marginTop: 16, marginHorizontal: 16 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function DropdownOptionRow(option) {
   let closure_2;
   let emojiURL;
   let first;
@@ -170,7 +170,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
                           }
                         }
                         const obj3 = { label: tmp35, selected: tmp12, leading: tmp19, trailing: tmp30, onPress: tmp14 };
-                        const tmp40 = closure_8(onSelect(6638), obj3);
+                        const tmp40 = closure_8(onSelect(6815), obj3);
                         cResult[26] = tmp19;
                         cResult[27] = tmp14;
                         cResult[28] = tmp35;
@@ -229,10 +229,10 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
           ({ optionTextEmoji: obj4.textEmojiStyle, optionImageEmoji: obj4.fastImageStyle } = tmp4);
           emojiURL = undefined;
           const tmp24 = onSelect;
-          tmp25 = onSelect(6632);
+          tmp25 = onSelect(6809);
           if (null != stateFromStores) {
             const obj8 = { id: stateFromStores.id, animated: null, size: EMOJI_URL_BASE_SIZE };
-            const tmp24Result = tmp24(1402);
+            const tmp24Result = tmp24(1414);
             class C {
               constructor() {
                 onSelect(option, !closure_2);
@@ -296,7 +296,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
   cResult[4] = responses;
   cResult[5] = hasItem;
   tmp12 = hasItem;
-}) : ((option) => {
+}) : (function DropdownOptionRow(option) {
   let emojiURL;
   let intl;
   let items2;
@@ -391,7 +391,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
   return closure_8(onSelect(selected[15]), { label, selected, leading, trailing, onPress });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DropdownOptionsActionSheet(guildId) {
   let canBeNew;
   let first;
   let intl;
@@ -481,7 +481,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         intl = tmp(tmp2[13]).intl;
         cResult[8] = closure_8(BottomSheetTitleHeader, obj2);
         closure_8(BottomSheetTitleHeader, obj2);
-        class P {
+        class F {
           constructor(option) {
             const obj = { option, responses: stateFromStoresArray, onSelect, canBeNew: Boolean(canBeNew) };
             return metroImportAll(closure_11, obj, option.id);
@@ -547,7 +547,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           }
         }
       }
-      class P {
+      class F {
         constructor(option) {
           const obj = { option, responses: stateFromStoresArray, onSelect, canBeNew: Boolean(canBeNew) };
           return metroImportAll(closure_11, obj, option.id);
@@ -556,7 +556,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       cResult[17] = canBeNew;
       cResult[18] = onSelect;
       cResult[19] = stateFromStoresArray;
-      cResult[20] = P;
+      cResult[20] = F;
     }
   }
   class C {
@@ -568,7 +568,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[5] = promptId;
   cResult[6] = C;
   tmp11 = C;
-}) : ((arg0) => {
+}) : (function DropdownOptionsActionSheet(arg0) {
   let BottomSheetScrollView;
   let Button;
   let intl;
@@ -593,14 +593,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     return null;
   } else {
     const obj3 = { title: intl.string(intl4.t.E2ICbC) };
-    const BottomSheetTitleHeader = tmp3(6651).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp3(6828).BottomSheetTitleHeader;
     intl = tmp3(1126).intl;
     const obj4 = { scrollable: true, header: closure_8(BottomSheetTitleHeader, obj3), children: closure_9(BottomSheetScrollView, obj5) };
     closure_8(BottomSheetTitleHeader, obj3);
-    BottomSheet = tmp3(6652).BottomSheet;
+    BottomSheet = tmp3(6829).BottomSheet;
     obj5 = { contentContainerStyle: obj6, children: items2 };
     obj6 = { paddingBottom: bottom };
-    BottomSheetScrollView = tmp3(6119).BottomSheetScrollView;
+    BottomSheetScrollView = tmp3(6298).BottomSheetScrollView;
     const obj7 = {
       accessibilityRole: "radiogroup",
       accessibilityLabel: intl2.string(intl4.t.E2ICbC),
@@ -609,13 +609,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           return metroImportAll(closure_11, obj, option.id);
         })
     };
-    const CardSection = tmp3(1188).CardSection;
+    const CardSection = tmp3(1200).CardSection;
     intl2 = tmp3(1126).intl;
     options = stateFromStores.options;
     items2 = [closure_8(CardSection, obj7), ];
     const obj8 = { style: tmp.closeButtonWrapper, children: closure_8(Button, obj9) };
     obj9 = { onPress: tmp5, text: intl3.string(intl4.t.cpT0Cq), grow: true };
-    Button = tmp3(5601).Button;
+    Button = tmp3(5375).Button;
     intl3 = tmp3(1126).intl;
     items2[1] = closure_8(responses, obj8);
     return closure_8(BottomSheet, obj4);

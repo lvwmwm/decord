@@ -1,17 +1,17 @@
-// Module ID: 15572
-// Function ID: 15573
+// Module ID: 15851
+// Function ID: 15852
 // Name: CheckpointButton
-// Dependencies: [5121, 21, 4896, 15573, 587, 558, 576, 4586, 15555, 2]
+// Dependencies: [5433, 21, 5090, 15842, 587, 558, 576, 4778, 15821, 2]
 
-// Module 15572 (CheckpointButton)
+// Module 15851 (CheckpointButton)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4586 */;
-import CheckpointTextDefault from "CheckpointText" /* 15555 */;
-import CheckpointPressable from "CheckpointPressable" /* 15573 */;
-import CheckpointConstants from "CheckpointConstants" /* 5121 */;
+import useToken from "useToken" /* 4778 */;
+import CheckpointTextDefault from "CheckpointText" /* 15821 */;
+import CheckpointPressable from "CheckpointPressable" /* 15842 */;
+import CheckpointConstants from "CheckpointConstants" /* 5433 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ obj2 = { justifyContent: "center", marginRight: -CheckpointPressable.SHADOW_OFFS
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BLACK, borderWidth: 2, borderColor: CHECKPOINT_DARK_CYAN };
 let closure_6 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointButton(arg0) {
   let Icon;
   let accessibilityHint;
   let accessibilityLabel;
@@ -174,7 +174,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tmp8;
   cResult[3] = tmp10;
   tmp9 = tmp10;
-}) : ((iconPosition) => {
+}) : (function CheckpointButton(iconPosition) {
   let Icon;
   let accessibilityHint;
   let accessibilityLabel;

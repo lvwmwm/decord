@@ -1,14 +1,14 @@
-// Module ID: 5992
-// Function ID: 5993
+// Module ID: 6176
+// Function ID: 6177
 // Name: MemberVerificationFormRenderer
-// Dependencies: [19, 17, 21, 4896, 558, 576, 4708, 5993, 6012, 6585, 6586, 6590, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 4902, 6177, 6198, 6761, 6762, 6766, 2]
 
-// Module 5992 (MemberVerificationFormRenderer)
+// Module 6176 (MemberVerificationFormRenderer)
 import Fragment from "Fragment" /* 21 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4708 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4902 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let closure_4;
 ({ Keyboard: c3, View: closure_4 } = react_native);
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ container: { flex: 1, flexDirection: "column", alignItems: "stretch", paddingHorizontal: 0 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rulesChannelId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerificationFormRenderer(rulesChannelId) {
   let formFields;
   let onChange;
   let verification;
@@ -62,7 +62,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rulesChannelId) => {
       tmp4 = mapped;
     }
   }
-  const fn = function c(field_type, arg1, arg2) {
+  function renderFormField(field_type, arg1, arg2) {
     let closure_0;
     rulesChannelId = arg1;
     field_type = field_type.field_type;
@@ -103,13 +103,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rulesChannelId) => {
     } else {
       return null;
     }
-  };
+  }
   cResult[0] = onChange;
   cResult[1] = rulesChannelId;
   cResult[2] = verification;
-  cResult[3] = fn;
-  tmp3 = fn;
-}) : ((arg0) => {
+  cResult[3] = renderFormField;
+  tmp3 = renderFormField;
+}) : (function MemberVerificationFormRenderer(arg0) {
   let formFields;
   let mapped;
   let rulesChannelId;

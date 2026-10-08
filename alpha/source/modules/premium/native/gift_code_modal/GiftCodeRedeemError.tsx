@@ -1,25 +1,23 @@
-// Module ID: 11125
-// Function ID: 11126
+// Module ID: 11244
+// Function ID: 11245
 // Name: GiftCodeRedeemError
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1491, 11126, 11127, 1126, 4892, 5601, 5099, 6626, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1503, 11245, 11246, 1126, 5086, 5375, 5940, 6803, 2]
 
-// Module 11125 (GiftCodeRedeemError)
+// Module 11244 (GiftCodeRedeemError)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import Link from "Link" /* 1491 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6626 */;
+import Link from "Link" /* 1503 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6803 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let message;
 
 let c3;
 let closure_4;
@@ -32,7 +30,7 @@ let obj2;
 let obj = { container: obj2, body: { flex: 1, alignItems: "center", justifyContent: "center", paddingTop: 28, paddingBottom: 12, paddingHorizontal: 32 }, header: { marginTop: 32, textAlign: "center" }, message: { marginTop: 8, textAlign: "center" }, footer: { paddingHorizontal: 24 } };
 obj2 = { flex: 1, justifyContent: "space-between", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 let closure_8 = createStyles.createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCodeRedeemError(message) {
   let body;
   let container;
   let items;
@@ -48,9 +46,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   ({ container, body } = tmp4);
   const obj2 = Link;
   if (obj2.useTheme().dark) {
-    tmp5Result = tmp5(11126);
+    tmp5Result = tmp5(11245);
   } else {
-    tmp5Result = tmp5(11127);
+    tmp5Result = tmp5(11246);
   }
   if (cResult[0] !== tmp5Result) {
     const obj3 = { source: tmp5Result };
@@ -165,7 +163,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   cResult[6] = tmp4.message;
   cResult[7] = tmp17;
   tmp16 = tmp17;
-}) : ((message) => {
+}) : (function GiftCodeRedeemError(message) {
   let Button;
   let intl;
   let intl2;
@@ -183,13 +181,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   const tmp6 = hasOwnProperty;
   const tmp8 = _false;
   if (theme.dark) {
-    tmp9Result = tmp9(11126);
+    tmp9Result = tmp9(11245);
   } else {
-    tmp9Result = tmp9(11127);
+    tmp9Result = tmp9(11246);
   }
   items = [metroRequire(tmp8, { source: tmp9Result }), , ];
   const obj4 = { variant: "heading-xl/bold", style: tmp.header, children: intl.formatToMarkdownString(intl3.t.JUvC0s, {}) };
-  const Text = tmp2(4892).Text;
+  const Text = tmp2(5086).Text;
   intl = tmp2(1126).intl;
   items[1] = metroRequire(Text, obj4);
   const obj5 = { variant: "text-lg/medium", style: tmp.message, children: message };
@@ -204,7 +202,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
       return arr.pop();
     }
   };
-  Button = tmp2(5601).Button;
+  Button = tmp2(5375).Button;
   intl2 = tmp2(1126).intl;
   items1[1] = metroRequire(React3, obj6);
   return metroImportDefault(SafeAreaPaddingView, obj2);

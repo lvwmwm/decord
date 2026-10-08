@@ -1,17 +1,17 @@
-// Module ID: 10100
-// Function ID: 10101
+// Module ID: 9684
+// Function ID: 9685
 // Name: EmojiPicker
-// Dependencies: [19, 17, 1085, 1380, 21, 4896, 587, 1252, 558, 576, 4618, 9883, 6664, 6688, 9890, 10099, 1126, 6554, 9907, 9945, 4733, 5612, 9967, 2]
+// Dependencies: [19, 17, 1085, 1392, 21, 5090, 587, 1264, 558, 576, 4810, 9363, 6841, 6865, 9370, 9683, 1126, 6730, 9388, 9472, 4927, 5387, 9494, 2]
 
-// Module 10100 (EmojiPicker)
+// Module 9684 (EmojiPicker)
 import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ obj3 = { color: nativeDefault.colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT
 obj4 = { height: nativeDefault.space.PX_8 + 1, bottom: undefined, top: -1 };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_11 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiPicker(arg0) {
   let bottomSheetIndex;
   let bottomSheetRef;
   let channel;
@@ -245,7 +245,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[3] = items;
   tmp6 = items;
   tmp5 = fn;
-}) : ((inPortalKeyboard) => {
+}) : (function EmojiPicker(inPortalKeyboard) {
   let SearchField;
   let bottomSheetIndex;
   let bottomSheetRef;

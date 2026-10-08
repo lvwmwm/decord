@@ -1,23 +1,23 @@
-// Module ID: 13405
-// Function ID: 13406
+// Module ID: 13705
+// Function ID: 13706
 // Name: GuildBoostingMarketingWave
-// Dependencies: [19, 21, 558, 576, 4586, 587, 8169, 2]
+// Dependencies: [19, 21, 558, 576, 4778, 587, 7550, 2]
 
-// Module 13405 (GuildBoostingMarketingWave)
+// Module 13705 (GuildBoostingMarketingWave)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4586 */;
+import useToken from "useToken" /* 4778 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 let tmp4;
-const inlineStyles = tmp(8169);
-const inlineStylesDefault = tmp4(8169);
+const inlineStyles = tmp(7550);
+const inlineStylesDefault = tmp4(7550);
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostingMarketingWave(arg0) {
   let tmp6;
   const obj = react2;
   const cResult = obj.c(5);
@@ -45,7 +45,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp6;
   cResult[4] = tmp12;
   tmp9 = tmp12;
-}) : ((arg0) => {
+}) : (function GuildBoostingMarketingWave(arg0) {
   const obj = useToken;
   const token = obj.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
   inlineStylesDefault;

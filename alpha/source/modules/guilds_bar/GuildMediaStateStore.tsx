@@ -1,30 +1,30 @@
-// Module ID: 13536
-// Function ID: 13537
+// Module ID: 13833
+// Function ID: 13834
 // Name: GuildMediaStateStore
-// Dependencies: [2050, 1246, 7050, 2056, 2055, 4918, 502, 2051, 2074, 4515, 4525, 2103, 5077, 4915, 1085, 13537, 1106, 4504, 13538, 9195, 11, 5580, 9033, 504, 568, 584, 2]
+// Dependencies: [2062, 1258, 6059, 2068, 2067, 5893, 502, 2063, 2086, 4707, 4717, 2115, 5971, 5111, 1085, 13834, 1106, 4696, 13835, 8630, 11, 5890, 8488, 504, 568, 584, 2]
 
-// Module 13536 (GuildMediaStateStore)
+// Module 13833 (GuildMediaStateStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ChannelTypes from "ChannelTypes" /* 1106 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4504 */;
-import BlockedUserUtils from "BlockedUserUtils" /* 13538 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7050 */;
-import StageInstanceStore from "StageInstanceStore" /* 2056 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4918 */;
+import ChannelRecord from "ChannelRecord" /* 2067 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4696 */;
+import BlockedUserUtils from "BlockedUserUtils" /* 13835 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1258 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6059 */;
+import StageInstanceStore from "StageInstanceStore" /* 2068 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5893 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
-import VoiceStateStore from "VoiceStateStore" /* 4915 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
+import VoiceStateStore from "VoiceStateStore" /* 5111 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -275,7 +275,7 @@ function computeGuildMediaState(guildId) {
           _location = first.location;
         }
         let embeddedActivityLocationChannelId = getEmbeddedActivityLocationChannelId(_location);
-        let tmp34Result = tmp34(9033);
+        let tmp34Result = tmp34(8488);
         if (tmp34Result.isActivitiesInTextEnabled(ChannelStore.getChannel(embeddedActivityLocationChannelId))) {
           someResult2 = found.length > 0;
         } else {
@@ -288,7 +288,7 @@ function computeGuildMediaState(guildId) {
           });
         }
         let obj4 = { audio: flag2, video: flag, screenshare: someResult, liveStage: someResult1, activeEvent: null != tmp34Result2.getGuildActiveEvent(guildId), activity: someResult2, isCurrentUserConnected: false };
-        let tmp34Result2 = tmp34(9195);
+        let tmp34Result2 = tmp34(8630);
         return obj4;
       }
       continue;

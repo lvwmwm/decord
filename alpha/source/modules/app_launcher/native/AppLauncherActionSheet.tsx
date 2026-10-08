@@ -1,35 +1,34 @@
-// Module ID: 16646
-// Function ID: 16647
+// Module ID: 16908
+// Function ID: 16909
 // Name: AppLauncherActionSheet
-// Dependencies: [32, 19, 1489, 21, 558, 576, 4618, 11007, 8961, 11008, 11840, 11707, 6652, 6654, 2]
+// Dependencies: [32, 19, 1501, 21, 558, 576, 4810, 11232, 11233, 11234, 11924, 11772, 6829, 6831, 2]
 
-// Module 16646 (AppLauncherActionSheet)
+// Module 16908 (AppLauncherActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1489 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6652 */;
-import reactDefault from "react" /* 6654 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 8961 */;
-import AppLauncherContext from "AppLauncherContext" /* 11007 */;
-import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11008 */;
-import AppLauncherNavigatorDefault from "AppLauncherNavigator" /* 11707 */;
-import getAppDMApplication from "getAppDMApplication" /* 11840 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6829 */;
+import reactDefault from "react" /* 6831 */;
+import AppLauncherContext from "AppLauncherContext" /* 11232 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11233 */;
+import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11234 */;
+import AppLauncherNavigatorDefault from "AppLauncherNavigator" /* 11772 */;
+import getAppDMApplication from "getAppDMApplication" /* 11924 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, chatInputRef;
+let BottomSheet, expandActionSheetResult;
 
 const AppLauncherRouteName = AppLauncherNativeConstants.AppLauncherRouteName;
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputRef) => {
-  let tmp10;
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherActionSheet(chatInputRef) {
   let tmp11;
   let tmp12;
-  let tmp13;
+  let tmp14;
   let tmp9;
   const obj = react2;
   const cResult = obj.c(21);
@@ -55,180 +54,215 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputRef) =
     tmp9 = cResult[1];
   }
   if (cResult[2] !== chatInputRef) {
-    const fn = function y() {
-      const current = chatInputRef.current;
-      let applicationCommandManager;
-      if (current != null) {
-        applicationCommandManager = current.getApplicationCommandManager();
+    class L {
+      constructor() {
+        current = chatInputRef.current;
+        applicationCommandManager = undefined;
+        if (current != null) {
+          applicationCommandManager = current.getApplicationCommandManager();
+        }
+        return applicationCommandManager;
       }
-      return applicationCommandManager;
-    };
+    }
     cResult[2] = chatInputRef;
-    cResult[3] = fn;
-    tmp10 = fn;
+    cResult[3] = L;
   } else {
-    tmp10 = cResult[3];
+    class L {
+      constructor() {
+        current = chatInputRef.current;
+        applicationCommandManager = undefined;
+        if (current != null) {
+          applicationCommandManager = current.getApplicationCommandManager();
+        }
+        return applicationCommandManager;
+      }
+    }
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class E {
-      constructor() {
-        const current = ref.current;
-        if (current != null) {
-          current.closeActionSheet();
-        }
-      }
-    }
     class L {
       constructor() {
-        const current = ref.current;
+        current = chatInputRef.current;
+        applicationCommandManager = undefined;
         if (current != null) {
-          current.expandActionSheet();
+          applicationCommandManager = current.getApplicationCommandManager();
         }
+        return applicationCommandManager;
       }
     }
-    cResult[4] = E;
-    cResult[5] = L;
-    tmp11 = E;
-    tmp12 = L;
+    class E {
+      constructor() {
+        current = closure_1.current;
+        if (current != null) {
+          expandActionSheetResult = current.expandActionSheet();
+        }
+        return;
+      }
+    }
+    cResult[4] = tmp13;
+    cResult[5] = E;
+    tmp11 = tmp13;
+    tmp12 = E;
   } else {
-    class E {
-      constructor() {
-        const current = ref.current;
-        if (current != null) {
-          current.closeActionSheet();
-        }
-      }
-    }
     class L {
       constructor() {
-        const current = ref.current;
+        current = chatInputRef.current;
+        applicationCommandManager = undefined;
         if (current != null) {
-          current.expandActionSheet();
+          applicationCommandManager = current.getApplicationCommandManager();
         }
+        return applicationCommandManager;
+      }
+    }
+    class E {
+      constructor() {
+        current = closure_1.current;
+        if (current != null) {
+          expandActionSheetResult = current.expandActionSheet();
+        }
+        return;
       }
     }
   }
   if (cResult[6] !== tmp10) {
-    class E {
-      constructor() {
-        const current = ref.current;
-        if (current != null) {
-          current.closeActionSheet();
-        }
-      }
-    }
     class L {
       constructor() {
-        const current = ref.current;
+        current = chatInputRef.current;
+        applicationCommandManager = undefined;
         if (current != null) {
-          current.expandActionSheet();
+          applicationCommandManager = current.getApplicationCommandManager();
         }
+        return applicationCommandManager;
       }
     }
-    tmp14[1] = tmp11;
-    tmp14[2] = tmp12;
-    cResult[6] = tmp10;
-    cResult[7] = tmp14;
-    tmp13 = tmp14;
-  } else {
     class E {
       constructor() {
-        const current = ref.current;
+        current = closure_1.current;
         if (current != null) {
-          current.closeActionSheet();
+          expandActionSheetResult = current.expandActionSheet();
         }
+        return;
+      }
+    }
+    tmp15[1] = tmp11;
+    tmp15[2] = tmp12;
+    cResult[6] = tmp10;
+    cResult[7] = tmp15;
+    tmp14 = tmp15;
+  } else {
+    class L {
+      constructor() {
+        current = chatInputRef.current;
+        applicationCommandManager = undefined;
+        if (current != null) {
+          applicationCommandManager = current.getApplicationCommandManager();
+        }
+        return applicationCommandManager;
       }
     }
   }
-  const ref3 = obj2.useRef(tmp13);
+  const ref3 = obj2.useRef(tmp14);
   if (cResult[8] !== channel) {
-    class E {
-      constructor() {
-        const current = ref.current;
-        if (current != null) {
-          current.closeActionSheet();
-        }
-      }
-    }
     class L {
       constructor() {
-        const current = ref.current;
+        current = chatInputRef.current;
+        applicationCommandManager = undefined;
         if (current != null) {
-          current.expandActionSheet();
+          applicationCommandManager = current.getApplicationCommandManager();
         }
+        return applicationCommandManager;
       }
     }
-    if (tmp17 != null) {
-      class E {
+    class E {
+      constructor() {
+        current = closure_1.current;
+        if (current != null) {
+          expandActionSheetResult = current.expandActionSheet();
+        }
+        return;
+      }
+    }
+    if (tmp18 != null) {
+      class L {
         constructor() {
-          const current = ref.current;
+          current = chatInputRef.current;
+          applicationCommandManager = undefined;
           if (current != null) {
-            current.closeActionSheet();
+            applicationCommandManager = current.getApplicationCommandManager();
           }
+          return applicationCommandManager;
         }
       }
     }
     cResult[8] = channel;
     cResult[9] = undefined;
   } else {
-    class E {
+    class L {
       constructor() {
-        const current = ref.current;
+        current = chatInputRef.current;
+        applicationCommandManager = undefined;
         if (current != null) {
-          current.closeActionSheet();
+          applicationCommandManager = current.getApplicationCommandManager();
         }
+        return applicationCommandManager;
       }
     }
   }
-  if (cResult[10] !== tmp16) {
-    class E {
-      constructor() {
-        const current = ref.current;
-        if (current != null) {
-          current.closeActionSheet();
-        }
-      }
-    }
+  if (cResult[10] !== tmp17) {
     class L {
       constructor() {
-        const current = ref.current;
+        current = chatInputRef.current;
+        applicationCommandManager = undefined;
         if (current != null) {
-          current.expandActionSheet();
+          applicationCommandManager = current.getApplicationCommandManager();
         }
+        return applicationCommandManager;
       }
     }
-    tmp20[0] = AppLauncherRouteName.HOME;
-    tmp20[1] = tmp16;
-    cResult[10] = tmp16;
-    cResult[11] = tmp20;
-  } else {
     class E {
       constructor() {
-        const current = ref.current;
+        current = closure_1.current;
         if (current != null) {
-          current.closeActionSheet();
+          expandActionSheetResult = current.expandActionSheet();
         }
+        return;
+      }
+    }
+    tmp21[0] = AppLauncherRouteName.HOME;
+    tmp21[1] = tmp17;
+    cResult[10] = tmp17;
+    cResult[11] = tmp21;
+  } else {
+    class L {
+      constructor() {
+        current = chatInputRef.current;
+        applicationCommandManager = undefined;
+        if (current != null) {
+          applicationCommandManager = current.getApplicationCommandManager();
+        }
+        return applicationCommandManager;
       }
     }
   }
   if (cResult[12] === sharedValue) {
-    class E {
+    class L {
       constructor() {
-        const current = ref.current;
+        current = chatInputRef.current;
+        applicationCommandManager = undefined;
         if (current != null) {
-          current.closeActionSheet();
+          applicationCommandManager = current.getApplicationCommandManager();
         }
+        return applicationCommandManager;
       }
     }
   }
   cResult[12] = sharedValue;
   cResult[13] = sharedValue1;
   cResult[14] = tmp9;
-  cResult[15] = tmp19;
+  cResult[15] = tmp20;
   cResult[16] = defaultAppLauncherWidth;
-  cResult[17] = jsx(AppLauncherNavigatorDefault, { bottomSheetIndex: sharedValue, bottomSheetPosition: sharedValue1, bottomSheetExpandReasonRef: ref1, context: tmp9, chatInputRef: ref3, entrypoint: TEXT, keyboardCloseReasonRef: ref2, width: defaultAppLauncherWidth, overrideParams: tmp19 });
-  jsx(AppLauncherNavigatorDefault, { bottomSheetIndex: sharedValue, bottomSheetPosition: sharedValue1, bottomSheetExpandReasonRef: ref1, context: tmp9, chatInputRef: ref3, entrypoint: TEXT, keyboardCloseReasonRef: ref2, width: defaultAppLauncherWidth, overrideParams: tmp19 });
-}) : ((arg0) => {
+  cResult[17] = jsx(AppLauncherNavigatorDefault, { bottomSheetIndex: sharedValue, bottomSheetPosition: sharedValue1, bottomSheetExpandReasonRef: ref1, context: tmp9, chatInputRef: ref3, entrypoint: TEXT, keyboardCloseReasonRef: ref2, width: defaultAppLauncherWidth, overrideParams: tmp20 });
+  jsx(AppLauncherNavigatorDefault, { bottomSheetIndex: sharedValue, bottomSheetPosition: sharedValue1, bottomSheetExpandReasonRef: ref1, context: tmp9, chatInputRef: ref3, entrypoint: TEXT, keyboardCloseReasonRef: ref2, width: defaultAppLauncherWidth, overrideParams: tmp20 });
+}) : (function AppLauncherActionSheet(arg0) {
   let channel;
   let closure_129_0;
   let name;
@@ -280,7 +314,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputRef) =
   return <BottomSheet ref={ref} animatedIndex={sharedValue} scrollable startExpanded>{null}</BottomSheet>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppLauncherActionSheet(arg0) {
   let tmp4;
   let tmp5;
   const obj = react2;
@@ -326,7 +360,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = arg0;
   cResult[2] = tmp7;
   tmp6 = tmp7;
-}) : ((arg0) => {
+}) : (function useAppLauncherActionSheet(arg0) {
   let first;
   let items;
   let tmp3;

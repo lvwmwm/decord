@@ -1,35 +1,33 @@
-// Module ID: 9425
-// Function ID: 9426
+// Module ID: 9089
+// Function ID: 9090
 // Name: GuildProfileTraits
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1402, 4533, 6632, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1414, 4725, 6809, 5086, 2]
 
-// Module 9425 (GuildProfileTraits)
+// Module 9089 (GuildProfileTraits)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4533 */;
-import EmojiDefault from "Emoji" /* 6632 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4725 */;
+import EmojiDefault from "Emoji" /* 6809 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let emoji, profile;
 
 let hasOwnProperty;
 let metroRequire;
 let obj2;
 let tmp;
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let obj = { container: { display: "flex", flexDirection: "row", flexWrap: "wrap", gap: 8 }, trait: obj2, emojiImage: { width: 16, height: 16 } };
 obj2 = { display: "flex", flexDirection: "row", gap: 4, alignItems: "center", paddingHorizontal: 8, paddingVertical: 4, borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderStyle: "solid", borderColor: nativeDefault.colors.BORDER_SUBTLE };
 let closure_7 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitEmoji(emoji) {
   const obj = react2;
   const cResult = obj.c(7);
   emoji = emoji.emoji;
@@ -55,7 +53,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
         }
       }
       const obj5 = { src: tmp4, name: tmp8, fastImageStyle: tmp3.emojiImage };
-      const tmp11 = hasOwnProperty(tmp7(6632), obj5);
+      const tmp11 = hasOwnProperty(tmp7(6809), obj5);
       cResult[3] = tmp4;
       cResult[4] = tmp8;
       cResult[5] = tmp3.emojiImage;
@@ -74,7 +72,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
     cResult[2] = emojiURL;
     tmp4 = emojiURL;
   }
-}) : ((emoji) => {
+}) : (function TraitEmoji(emoji) {
   emoji = emoji.emoji;
   if (null == emoji) {
     return null;
@@ -93,7 +91,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((trait) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfileTraitView(trait) {
   let items;
   let tmp5;
   let tmp9;
@@ -136,7 +134,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((trait) => {
   cResult[6] = tmp9;
   cResult[7] = tmp13;
   tmp12 = tmp13;
-}) : ((trait) => {
+}) : (function GuildProfileTraitView(trait) {
   let items;
   trait = trait.trait;
   const obj = { style: closure_7().trait, children: items };
@@ -148,7 +146,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((trait) => {
   return metroRequire(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfileTraits(profile) {
   let arr;
   let tmp7;
   let obj = react2;
@@ -222,7 +220,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
   cResult[8] = tmp7;
   cResult[9] = tmp12;
   tmp11 = tmp12;
-}) : ((profile) => {
+}) : (function GuildProfileTraits(profile) {
   profile = profile.profile;
   const items = [profile];
   const tmp = closure_7();

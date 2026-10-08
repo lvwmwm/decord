@@ -1,15 +1,15 @@
-// Module ID: 15839
-// Function ID: 15840
+// Module ID: 16098
+// Function ID: 16099
 // Name: ParentalControlsSensitiveContentFiltersScreen
-// Dependencies: [19, 7645, 21, 1126, 558, 576, 11142, 14515, 2]
+// Dependencies: [19, 7966, 21, 1126, 558, 576, 11262, 14775, 2]
 
-// Module 15839 (ParentalControlsSensitiveContentFiltersScreen)
+// Module 16098 (ParentalControlsSensitiveContentFiltersScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
-import SettingLayoutDefault from "SettingLayout" /* 14515 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
+import SettingLayoutDefault from "SettingLayout" /* 14775 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -37,7 +37,7 @@ function getContentCategory() {
 }
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsSensitiveContentFilters() {
   let first;
   let items;
   let tmp11;
@@ -45,7 +45,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: items };
-    const createList = tmp2(11142).createList;
+    const createList = tmp2(11262).createList;
     items = [];
     SettingBuilders;
     HermesBuiltin.arraySpread(items, getContentCategory(), 0);
@@ -63,7 +63,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp11 = cResult[1];
   }
   return tmp11;
-}) : (() => {
+}) : (function UserSettingsSensitiveContentFilters() {
   const node = react.useMemo(() => {
     let items;
     const obj2 = { sections: items };

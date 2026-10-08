@@ -1,25 +1,25 @@
-// Module ID: 16977
-// Function ID: 16978
+// Module ID: 17258
+// Function ID: 17259
 // Name: IgnoredUserRequestsScreen
-// Dependencies: [19, 4525, 1377, 10605, 1085, 21, 558, 576, 6664, 6688, 16975, 504, 7861, 10611, 2]
+// Dependencies: [19, 4717, 1389, 10202, 1085, 21, 558, 576, 6841, 6865, 17256, 504, 8279, 10208, 2]
 
-// Module 16977 (IgnoredUserRequestsScreen)
+// Module 17258 (IgnoredUserRequestsScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
-import UserRowConstants from "UserRowConstants" /* 10605 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
+import UserRowConstants from "UserRowConstants" /* 10202 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let navigation, onPress;
+let onPress;
 
 const UserRowModes = UserRowConstants.UserRowModes;
 const RelationshipTypes = Constants.RelationshipTypes;
 const jsx = Fragment.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function IgnoredUserRequestsScreen(arg0) {
   let analyticsLocations;
   let mutableRelationships;
   let stateFromStores;
@@ -76,52 +76,52 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult2 = analyticsLocations(stateFromStores[11]);
   stateFromStores = tmpResult2.useStateFromStores(tmp9, tmp11, tmp12);
   if (cResult[6] !== analyticsLocations) {
-    class N {
+    class U {
       constructor(id) {
         const obj = { userId: id.id, localUser: id, sourceAnalyticsLocations: analyticsLocations };
         showUserProfileActionSheetDefault(obj);
       }
     }
     cResult[6] = analyticsLocations;
-    cResult[7] = N;
+    cResult[7] = U;
   } else {
-    class N {
+    class U {
       constructor(id) {
         const obj = { userId: id.id, localUser: id, sourceAnalyticsLocations: analyticsLocations };
         showUserProfileActionSheetDefault(obj);
       }
     }
   }
-  N = tmp13;
+  U = tmp13;
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    class U {
+    class N {
       constructor() {
 
       }
     }
-    cResult[8] = U;
-    tmp14 = U;
+    cResult[8] = N;
+    tmp14 = N;
   } else {
-    class U {
+    class N {
       constructor() {
 
       }
     }
   }
   if (cResult[9] === tmp13) {
-    class U {
+    class N {
       constructor() {
 
       }
     }
     if (0 !== stateFromStores.length) {
-      class U {
+      class N {
         constructor() {
 
         }
       }
       if (cResult[14] === tmp15) {
-        class U {
+        class N {
           constructor() {
 
           }
@@ -134,7 +134,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[16] = tmp19;
       tmp17 = tmp19;
     } else {
-      class U {
+      class N {
         constructor() {
 
         }
@@ -150,7 +150,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[9] = tmp13;
   cResult[10] = stateFromStores;
   cResult[11] = P;
-}) : ((navigation) => {
+}) : (function IgnoredUserRequestsScreen(navigation) {
   let mutableRelationships;
   navigation = navigation.navigation;
   let stateFromStoresArray;

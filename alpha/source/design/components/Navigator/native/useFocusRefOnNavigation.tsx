@@ -1,16 +1,16 @@
-// Module ID: 14289
-// Function ID: 14290
+// Module ID: 14113
+// Function ID: 14114
 // Name: useFocusRefOnNavigation
-// Dependencies: [19, 558, 576, 1491, 6541, 2]
+// Dependencies: [19, 558, 576, 1503, 6717, 2]
 
-// Module 14289 (useFocusRefOnNavigation)
+// Module 14113 (useFocusRefOnNavigation)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, inputRef;
+let dependencyMap;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((inputRef) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFocusRefOnNavigation(inputRef) {
   let closure_1;
   let tmp = inputRef;
   let obj = inputRef(576);
@@ -18,7 +18,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((inputRef) => {
   inputRef = inputRef.inputRef;
   const enabled = inputRef.enabled;
   dependencyMap = tmp4;
-  const tmpResult = tmp(1491);
+  const tmpResult = tmp(1503);
   const isFocused = tmpResult.useIsFocused();
   if (cResult[0] === (undefined === enabled || enabled)) {
     if (cResult[1] === inputRef) {
@@ -54,7 +54,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((inputRef) => {
   cResult[4] = items;
   tmp7 = items;
   tmp6 = fn;
-}) : ((inputRef) => {
+}) : (function useFocusRefOnNavigation(inputRef) {
   inputRef = inputRef.inputRef;
   let flag = inputRef.enabled;
   if (flag === undefined) {

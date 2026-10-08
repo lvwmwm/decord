@@ -1,32 +1,32 @@
-// Module ID: 16356
-// Function ID: 16357
+// Module ID: 16616
+// Function ID: 16617
 // Name: ManageAccountsModal
-// Dependencies: [109, 32, 5, 19, 17, 502, 4729, 1377, 12071, 12072, 16357, 1085, 21, 7568, 4896, 587, 558, 576, 504, 1188, 5715, 1126, 12074, 15147, 5916, 15911, 4618, 4897, 7957, 1252, 15912, 12080, 16358, 6010, 8924, 10996, 16359, 6626, 6503, 7509, 10675, 15936, 6089, 6436, 15935, 2]
+// Dependencies: [109, 32, 5, 19, 17, 502, 4923, 1389, 12144, 12145, 16617, 1085, 21, 9279, 5090, 587, 558, 576, 504, 1200, 5298, 1126, 12148, 15409, 6189, 16170, 4810, 5091, 5928, 1264, 16171, 12154, 16618, 6196, 8555, 11220, 16619, 6803, 6679, 9232, 9588, 16196, 5936, 6614, 16195, 2]
 
-// Module 16356 (ManageAccountsModal)
+// Module 16616 (ManageAccountsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import timing from "timing" /* 4897 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5715 */;
-import HeaderShared from "HeaderShared" /* 7509 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10675 */;
-import MultiAccountStore from "MultiAccountStore" /* 12071 */;
-import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 12074 */;
-import ManageAccountsConstants from "ManageAccountsConstants" /* 16357 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import timing from "timing" /* 5091 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5298 */;
+import HeaderShared from "HeaderShared" /* 9232 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 9588 */;
+import MultiAccountStore from "MultiAccountStore" /* 12144 */;
+import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 12148 */;
+import ManageAccountsConstants from "ManageAccountsConstants" /* 16617 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import StreamerModeStore from "StreamerModeStore" /* 4729 */;
-import UserStore from "UserStore" /* 1377 */;
-import Constants_mod from "Constants" /* 12072 */;
+import StreamerModeStore from "StreamerModeStore" /* 4923 */;
+import UserStore from "UserStore" /* 1389 */;
+import Constants_mod from "Constants" /* 12145 */;
 import Constants_mod2 from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 7568 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import NativeStackView from "NativeStackView" /* 9279 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj4 = { color: nativeDefault.colors.TEXT_LINK };
 let closure_23 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function RemoveMultiAccountUserButton(user) {
   let currentUser;
   let tmp4;
   let tmp5;
@@ -110,7 +110,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     let tmp28;
     const _Symbol3 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp30 = closure_20(tmp(1188).Spacer, { size: 21 });
+      const tmp30 = closure_20(tmp(1200).Spacer, { size: 21 });
       cResult[4] = tmp30;
       tmp28 = tmp30;
     } else {
@@ -144,7 +144,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           const _Symbol2 = Symbol;
           if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
             let obj2 = { color: username(587).colors.ICON_FEEDBACK_CRITICAL };
-            const CircleMinusIcon = tmp(15147).CircleMinusIcon;
+            const CircleMinusIcon = tmp(15409).CircleMinusIcon;
             const tmp24 = closure_20(CircleMinusIcon, obj2);
             cResult[13] = tmp24;
             tmp21 = tmp24;
@@ -153,7 +153,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           }
           if (cResult[14] !== tmp17) {
             let obj3 = { accessibilityRole: "button", accessibilityLabel: tmp19, onPress: tmp17, children: tmp21 };
-            const tmp27 = closure_20(tmp(5916).PressableOpacity, obj3);
+            const tmp27 = closure_20(tmp(6189).PressableOpacity, obj3);
             cResult[14] = tmp17;
             cResult[15] = tmp27;
             tmp25 = tmp27;
@@ -252,7 +252,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     cResult[7] = user.username;
     cResult[8] = tmp15;
   }
-}) : ((user) => {
+}) : (function RemoveMultiAccountUserButton(user) {
   let CircleMinusIcon;
   let closure_1;
   let currentUser;
@@ -342,7 +342,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     id = stateFromStores1.id;
   }
   if (id === user.id) {
-    return closure_20(tmp(1188).Spacer, { size: 21 });
+    return closure_20(tmp(1200).Spacer, { size: 21 });
   } else {
     let username = user.username;
     importDefault = username;
@@ -361,10 +361,10 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         },
       children: closure_20(CircleMinusIcon, obj4)
     };
-    const PressableOpacity = tmp(5916).PressableOpacity;
+    const PressableOpacity = tmp(6189).PressableOpacity;
     intl = tmp(1126).intl;
     obj4 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-    CircleMinusIcon = tmp(15147).CircleMinusIcon;
+    CircleMinusIcon = tmp(15409).CircleMinusIcon;
     return closure_20(PressableOpacity, obj3);
   }
 });
@@ -413,18 +413,20 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
   const currentUserId = tmpResult.useStateFromStoresObject(tmp5, tmp6).currentUserId;
   const tmpResult3 = tmp(tmp2[26]);
   const sharedValue = tmpResult3.useSharedValue(0);
-  const fn2 = function v() {
-    let obj2;
-    const obj = { width: obj2.withTiming(sharedValue.get(), obj3) };
-    obj2 = timing;
-    return obj;
-  };
   const tmpResult4 = tmp(tmp2[26]);
+  class E {
+    constructor() {
+      let obj2;
+      const obj = { width: obj2.withTiming(sharedValue.get(), obj3) };
+      obj2 = timing;
+      return obj;
+    }
+  }
   let obj3 = { withTiming: tmp(tmp2[27]).withTiming, leadingWidth: sharedValue, MANAGE_EDIT_TRANSITION_DURATION: duration };
-  fn2.__closure = obj3;
-  fn2.__workletHash = 3389178545077;
-  fn2.__initData = __initData;
-  const animatedStyle = tmpResult4.useAnimatedStyle(fn2);
+  E.__closure = obj3;
+  E.__workletHash = 3389178545077;
+  E.__initData = __initData;
+  const animatedStyle = tmpResult4.useAnimatedStyle(E);
   const tmp11 = navigation;
   const tmp12 = navigation(tmp2[28])(isEditing);
   let closure_7 = tmp12;
@@ -545,7 +547,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
                 }
               }
             }
-            const fn4 = function x(user, arg1) {
+            const fn3 = function x(user, arg1) {
               let TransitionGroup;
               let TransitionGroup2;
               let fn;
@@ -594,8 +596,8 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
             cResult[16] = animatedStyle;
             cResult[17] = tmp4.trailingIcon;
             cResult[18] = tmp4.trailingIconContainer;
-            cResult[19] = fn4;
-            tmp20 = fn4;
+            cResult[19] = fn3;
+            tmp20 = fn3;
           }
         }
         function handlePressUser(id) {
@@ -624,7 +626,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
         let intl;
         let intl2;
         let obj3;
-        if (multiAccountUsers.length >= closure_15) {
+        if (multiAccountUsers.length >= authStore3) {
           const obj2 = { title: intl.string(intl5.t.w7wfXi), body: intl2.formatToPlainString(intl5.t.WOyelG, obj3), isDismissable: true };
           const show = actions_AlertActionCreatorsDefault.show;
           actions_AlertActionCreatorsDefault;
@@ -644,7 +646,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
       tmp16 = handlePressAddAccount;
     }
   }
-  const fn3 = function f() {
+  const fn2 = function f() {
     const tmp2 = null != closure_7 && tmp !== isEditing;
     if (tmp2) {
       let num = 0;
@@ -658,8 +660,8 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
   cResult[2] = isEditing;
   cResult[3] = sharedValue;
   cResult[4] = tmp12;
-  cResult[5] = fn3;
-  tmp13 = fn3;
+  cResult[5] = fn2;
+  tmp13 = fn2;
 }) : (function ManageAccounts(isEditing) {
   let CirclePlusIcon;
   let FormRow;
@@ -810,7 +812,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
           let intl;
           let intl2;
           let obj3;
-          if (multiAccountUsers.length >= closure_15) {
+          if (multiAccountUsers.length >= authStore3) {
             const obj2 = { title: intl.string(intl5.t.w7wfXi), body: intl2.formatToPlainString(intl5.t.WOyelG, obj3), isDismissable: true };
             const show = actions_AlertActionCreatorsDefault.show;
             actions_AlertActionCreatorsDefault;
@@ -849,7 +851,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (undefined === MANAGE_ACCOUNTS) {
     MANAGE_ACCOUNTS = ManageAccountsScreens.MANAGE_ACCOUNTS;
   }
-  const tmpResult = tmp(6503);
+  const tmpResult = tmp(6679);
   accessibilityNativeStackOptions = tmpResult.useAccessibilityNativeStackOptions();
   [isEditing, closure_2] = react.useState(false);
   if (cResult[0] === accessibilityNativeStackOptions) {

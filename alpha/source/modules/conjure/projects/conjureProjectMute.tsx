@@ -1,12 +1,12 @@
-// Module ID: 12925
-// Function ID: 12926
+// Module ID: 13074
+// Function ID: 13075
 // Name: conjureProjectMute
-// Dependencies: [1231, 558, 576, 504, 2033, 1197, 2]
+// Dependencies: [1243, 558, 576, 504, 2045, 1209, 2]
 // Exports: isConjureProjectMuted, setConjureProjectMuted
 
-// Module 12925 (conjureProjectMute)
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+// Module 13074 (conjureProjectMute)
+import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ function isConjureProjectMuted(settings, id) {
   }
   return true === muted;
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsConjureProjectMuted(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -40,7 +40,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function s() {
+    const fn = function u() {
       const vibegrations = UserSettingsProtoStore.settings.vibegrations;
       let muted;
       if (vibegrations != null) {
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useIsConjureProjectMuted(arg0) {
   let closure_0;
   _require = arg0;
   const items = [UserSettingsProtoStore];

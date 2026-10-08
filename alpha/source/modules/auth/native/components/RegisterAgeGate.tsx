@@ -1,22 +1,22 @@
-// Module ID: 15941
-// Function ID: 15942
+// Module ID: 16201
+// Function ID: 16202
 // Name: RegisterAgeGate
-// Dependencies: [32, 19, 17, 6091, 15906, 15907, 1085, 21, 4896, 587, 4467, 15942, 558, 576, 4595, 1490, 15903, 504, 6452, 15905, 15922, 38, 1126, 8602, 6430, 15943, 5601, 6435, 6467, 4735, 9231, 2]
+// Dependencies: [32, 19, 17, 5938, 16165, 16166, 1085, 21, 5090, 587, 4659, 16202, 558, 576, 4787, 1502, 16162, 504, 6630, 16164, 16182, 38, 1126, 8517, 6284, 16203, 5375, 6613, 6645, 4929, 8539, 2]
 
-// Module 15941 (RegisterAgeGate)
+// Module 16201 (RegisterAgeGate)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 15905 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 16164 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConsentStore from "ConsentStore" /* 6091 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 15906 */;
-import RegistrationConstants from "RegistrationConstants" /* 15907 */;
+import ConsentStore from "ConsentStore" /* 5938 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 16165 */;
+import RegistrationConstants from "RegistrationConstants" /* 16166 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
-import module_4467_mod from "module_4467" /* 4467 */;
+import createStyles from "createStyles" /* 5090 */;
+import module_4659_mod from "module_4659" /* 4659 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,16 +39,16 @@ const AuthStates = Constants.AuthStates;
 let obj = { inputGroup: { marginTop: 24, marginBottom: 24 }, flexGrow: { flexGrow: 1 }, button: { flexGrow: 0, marginBottom: 4, marginTop: 16, flexDirection: "column" }, datePickerButton: obj2, page: { flex: 1 } };
 obj2 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 let closure_15 = createStyles.createStyles(obj);
-let module_4467 = module_4467_mod;
-module_4467 = module_4467.utc();
-let closure_17 = module_4467.toDate();
-module_4467 = module_4467.clone();
-const endOfResult = module_4467.endOf("year");
+let module_4659 = module_4659_mod;
+module_4659 = module_4659.utc();
+let closure_17 = module_4659.toDate();
+module_4659 = module_4659.clone();
+const endOfResult = module_4659.endOf("year");
 const maximumDate = endOfResult.toDate();
-module_4467 = module_4467.clone();
-const subtractResult = module_4467.subtract(100, "years");
+module_4659 = module_4659.clone();
+const subtractResult = module_4659.subtract(100, "years");
 const minimumDate = subtractResult.toDate();
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterAgeGate() {
   let authenticationConsentRequired;
   let closure_3;
   let closure_5;
@@ -272,7 +272,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
   }
-  function it() {
+  function handleSubmit() {
     let tmp4;
     _modDef38(null != first1, "birthday was not null");
     const obj = { birthday: first1, consent: tmp4 };
@@ -292,8 +292,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[18] = stateFromStores;
   cResult[19] = navigation;
   cResult[20] = context;
-  cResult[21] = it;
-}) : (() => {
+  cResult[21] = handleSubmit;
+}) : (function RegisterAgeGate() {
   let Button;
   let Input;
   let InputButton;
@@ -396,7 +396,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   obj9 = {
     value: formatResult,
-    text: module_4467.format("L"),
+    text: module_4659.format("L"),
     onPress() {
       return ConsentStore(true);
     },
@@ -461,10 +461,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     minimumDate,
     onConfirm(arg0) {
       ConsentStore(false);
-      closure_3(module_4467(arg0));
+      closure_3(module_4659(arg0));
     },
     onDateChange(date1) {
-      closure_3(module_4467(date1));
+      closure_3(module_4659(date1));
     },
     onCancel() {
       return ConsentStore(false);

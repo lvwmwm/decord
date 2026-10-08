@@ -1,26 +1,26 @@
-// Module ID: 7752
-// Function ID: 7753
+// Module ID: 8073
+// Function ID: 8074
 // Name: VoiceSessionUtils
-// Dependencies: [19, 7156, 2051, 1377, 7753, 558, 576, 504, 7650, 5311, 1126, 12, 2]
+// Dependencies: [19, 7336, 2063, 1389, 8074, 558, 576, 504, 7971, 5623, 1126, 12, 2]
 // Exports: getSortedVoiceSessionParticipants, getVoiceSessionMessageContent
 
-// Module 7752 (VoiceSessionUtils)
+// Module 8073 (VoiceSessionUtils)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import useMessageAuthor from "useMessageAuthor" /* 5311 */;
-import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 7650 */;
-import maybeSortByProbability from "maybeSortByProbability" /* 7753 */;
+import useMessageAuthor from "useMessageAuthor" /* 5623 */;
+import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 7971 */;
+import maybeSortByProbability from "maybeSortByProbability" /* 8074 */;
 import react from "react" /* 19 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7156 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7336 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f138522 = (acc, item) => {
+const f140092 = (acc, item) => {
   user = user.getUser(item);
   let tmp3 = acc;
   if (null != user) {
@@ -34,7 +34,7 @@ const f138522 = (acc, item) => {
   return tmp3;
 };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((author) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceSessionParticipants(author) {
   let first;
   _require = author;
   let tmp = _require;
@@ -83,7 +83,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((author) => {
   cResult[4] = items1;
   tmp7 = items1;
   tmp6 = fn;
-}) : ((author) => {
+}) : (function useVoiceSessionParticipants(author) {
   _require = author;
   const items = [UserStore];
   const items1 = [author.author.id, author.call];
@@ -109,7 +109,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((author) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSortedVoiceSessionParticipants(arg0) {
   let tmp5;
   let tmp6;
   let tmp7;
@@ -147,7 +147,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = stateFromStores;
   cResult[5] = result;
   tmp10 = result;
-}) : ((arg0) => {
+}) : (function useSortedVoiceSessionParticipants(arg0) {
   let closure_0;
   let userAffinitiesMap;
   const tmp = closure_7(arg0);
@@ -167,7 +167,7 @@ function getSortedVoiceSessionParticipants(message) {
   let reduced;
   if (call != null) {
     const participants = call.participants;
-    reduced = participants.reduce(f138522, []);
+    reduced = participants.reduce(f140092, []);
   }
   if (reduced == null) {
     reduced = [];
@@ -195,13 +195,13 @@ export const getVoiceSessionMessageContent = function getVoiceSessionMessageCont
   let reduced;
   if (call != null) {
     const participants = call.participants;
-    reduced = participants.reduce(f138522, []);
+    reduced = participants.reduce(f140092, []);
   }
   if (reduced == null) {
     reduced = [];
   }
   const userAffinitiesMap = UserAffinitiesV2Store.getUserAffinitiesMap();
-  const tmp3Result = tmp3(7753);
+  const tmp3Result = tmp3(8074);
   const result = tmp3Result.maybeSortByProbability(reduced, userAffinitiesMap, "VoiceSessionUtils - participants");
   const mapped = result.map((user) => {
     let obj2;

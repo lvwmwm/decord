@@ -1,57 +1,57 @@
-// Module ID: 17392
-// Function ID: 17393
+// Module ID: 17674
+// Function ID: 17675
 // Name: VoicePanelController
-// Dependencies: [32, 19, 17, 4885, 2050, 4912, 7975, 9191, 9101, 2051, 1999, 4919, 2103, 5104, 11916, 11914, 1085, 2011, 9001, 4917, 11917, 21, 558, 576, 17393, 4618, 9110, 1102, 504, 4574, 4825, 1126, 4580, 4829, 4828, 17394, 8079, 9026, 17251, 1484, 1618, 17237, 11922, 11918, 9787, 12, 1266, 1121, 1259, 9176, 11662, 5417, 1252, 8018, 9049, 17191, 4595, 17328, 5097, 5076, 4751, 6541, 17302, 17329, 4504, 17395, 17396, 17400, 17196, 17236, 4768, 11915, 2]
+// Dependencies: [32, 19, 17, 5079, 2062, 6041, 8392, 10759, 10675, 2063, 2011, 5108, 2115, 6079, 11989, 11987, 1085, 2023, 6072, 5113, 11990, 21, 558, 576, 17675, 4810, 9512, 1102, 504, 4766, 5019, 1126, 4772, 5023, 5022, 17676, 5241, 10635, 17532, 1496, 1630, 17518, 11995, 11991, 10352, 12, 1278, 1121, 1271, 10351, 11727, 5726, 1264, 8426, 6043, 17472, 4787, 17609, 5104, 5105, 4945, 6717, 17583, 17610, 4696, 17677, 17678, 17682, 17477, 17517, 4962, 11988, 2]
 
-// Module 17392 (VoicePanelController)
+// Module 17674 (VoicePanelController)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import intl3 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import useWindowDimensions from "useWindowDimensions" /* 1484 */;
-import Constants2 from "Constants" /* 2011 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4504 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4580 */;
-import native from "native" /* 4595 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4825 */;
-import VideoSlashIcon from "VideoSlashIcon" /* 4829 */;
-import CallConstants from "CallConstants" /* 4917 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5076 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5097 */;
-import DeviceOrientation from "DeviceOrientation" /* 8018 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 8079 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 9001 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 9026 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9049 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9110 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 9787 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11917 */;
-import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 11918 */;
-import applyActivityOrientationLockDefault from "applyActivityOrientationLock" /* 17191 */;
-import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 17236 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17251 */;
-import useIsVoicePanelParticipantFocusable from "useIsVoicePanelParticipantFocusable" /* 17328 */;
-import useTransitionToConnectedActivityInVoiceDefault from "useTransitionToConnectedActivityInVoice" /* 17393 */;
-import trackActivityThermalStateNoticeShown from "trackActivityThermalStateNoticeShown" /* 17394 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import useWindowDimensions from "useWindowDimensions" /* 1496 */;
+import Constants2 from "Constants" /* 2023 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4696 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4772 */;
+import native from "native" /* 4787 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5019 */;
+import VideoSlashIcon from "VideoSlashIcon" /* 5023 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5104 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5105 */;
+import CallConstants from "CallConstants" /* 5113 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5241 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6043 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6072 */;
+import DeviceOrientation from "DeviceOrientation" /* 8426 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9512 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10352 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10635 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11990 */;
+import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 11991 */;
+import applyActivityOrientationLockDefault from "applyActivityOrientationLock" /* 17472 */;
+import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 17517 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17532 */;
+import useIsVoicePanelParticipantFocusable from "useIsVoicePanelParticipantFocusable" /* 17609 */;
+import useTransitionToConnectedActivityInVoiceDefault from "useTransitionToConnectedActivityInVoice" /* 17675 */;
+import trackActivityThermalStateNoticeShown from "trackActivityThermalStateNoticeShown" /* 17676 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 2050 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4912 */;
-import AppFreezeStore from "AppFreezeStore" /* 7975 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 9191 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 9101 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import VoicePanelStore from "VoicePanelStore" /* 5104 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11916 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11914 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 2062 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
+import AppFreezeStore from "AppFreezeStore" /* 8392 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 10759 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 10675 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import VoicePanelStore from "VoicePanelStore" /* 6079 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11989 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11987 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -148,7 +148,7 @@ function useCoreSharedState(channelId, isConnected, items, stateFromStores) {
   const obj19 = require("ReanimatedRexport");
   const sharedValue10 = obj19.useSharedValue({ gestureActive: false, x: 0, y: 0 });
   const obj20 = require("ReanimatedRexport");
-  class J {
+  class H {
     constructor() {
       const value = sharedValue1.get();
       if (constants.PANEL === value) {
@@ -161,10 +161,10 @@ function useCoreSharedState(channelId, isConnected, items, stateFromStores) {
     }
   }
   const obj10 = { mode: sharedValue1, VoicePanelModes, MorphablePanelModes };
-  J.__closure = obj10;
-  J.__workletHash = 8226755065394;
-  J.__initData = __initData10;
-  const derivedValue = obj20.useDerivedValue(J);
+  H.__closure = obj10;
+  H.__workletHash = 8226755065394;
+  H.__initData = __initData10;
+  const derivedValue = obj20.useDerivedValue(H);
   const first1 = sharedValue1(size.useState(() => {
     const obj = new VoicePanelCardLayoutManagerDefault(channelId);
     const obj2 = { windowWidth: size.width, windowHeight: size.height, safeAreaLeft: rect.left, safeAreaRight: rect.right, safeAreaTop: rect.top, safeAreaBottom: rect.bottom, controlBarSize: stateFromStores ? closure_20 : closure_19 };
@@ -330,7 +330,7 @@ function useControlsState(mode, isConnected, connected, stateFromStores) {
         }
       }
     };
-    let obj2 = { controlsSpecs: tmp4Result, VoicePanelControlsModes: tmp5, runOnJS: tmp(4618).runOnJS, _queueHideControls: callback1 };
+    let obj2 = { controlsSpecs: tmp4Result, VoicePanelControlsModes: tmp5, runOnJS: tmp(4810).runOnJS, _queueHideControls: callback1 };
     const callback4 = react.useCallback(() => {
       let obj = arg0;
       if (arg0 === undefined) {
@@ -353,7 +353,7 @@ function useControlsState(mode, isConnected, connected, stateFromStores) {
     fn.__initData = __initData11;
     const items5 = [tmp4Result, callback1];
     const callback5 = useCallback(fn, items5);
-    const tmpResult = tmp(4618);
+    const tmpResult = tmp(4810);
     class S {
       constructor() {
         return mode.get();
@@ -373,10 +373,10 @@ function useControlsState(mode, isConnected, connected, stateFromStores) {
       }
     };
     const useAnimatedReaction = tmpResult.useAnimatedReaction;
-    fn2.__closure = { VoicePanelModes, runOnJS: tmp(4618).runOnJS, _queueHideControls: callback1, _clearHideControlsQueue };
+    fn2.__closure = { VoicePanelModes, runOnJS: tmp(4810).runOnJS, _queueHideControls: callback1, _clearHideControlsQueue };
     fn2.__workletHash = 9080436423990;
     fn2.__initData = __initData13;
-    const obj4 = { VoicePanelModes, runOnJS: tmp(4618).runOnJS, _queueHideControls: callback1, _clearHideControlsQueue };
+    const obj4 = { VoicePanelModes, runOnJS: tmp(4810).runOnJS, _queueHideControls: callback1, _clearHideControlsQueue };
     const animatedReaction = useAnimatedReaction(S, fn2);
     const items6 = [stateFromStores, tmp4Result, isConnected];
     const layoutEffect = react.useLayoutEffect(() => {
@@ -411,8 +411,8 @@ function useControlsState(mode, isConnected, connected, stateFromStores) {
       tmp5 = closure_19;
     };
     const obj6 = { updateSharedValueIfChanged: updateSharedValueIfChangedDefault, controlsSpecs: tmp4Result, pushToTalk: stateFromStores, CONTROLS_HEIGHT_PTT, CONTROLS_HEIGHT };
-    const useAnimatedReaction2 = tmp(4618).useAnimatedReaction;
-    tmp(4618);
+    const useAnimatedReaction2 = tmp(4810).useAnimatedReaction;
+    tmp(4810);
     fn4.__closure = obj6;
     fn4.__workletHash = 14172278286591;
     fn4.__initData = __initData15;
@@ -452,7 +452,7 @@ const isActivityParticipant = CallConstants.isActivityParticipant;
 const MorphablePanelModes = MorphablePanelConstants.MorphablePanelModes;
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((setControlsMode) => {
+let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityConnected(setControlsMode) {
   let tmp3;
   let tmp4;
   let obj = setControlsMode(576);
@@ -478,7 +478,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((setControlsMod
     tmp4 = cResult[3];
   }
   useTransitionToConnectedActivityInVoiceDefault(tmp4);
-}) : ((setControlsMode) => {
+}) : (function useActivityConnected(setControlsMode) {
   setControlsMode = setControlsMode.setControlsMode;
   const items = [setControlsMode];
   const callback = react.useCallback(() => {
@@ -492,7 +492,7 @@ const __initData2 = { code: "function VoicePanelControllerTsx2(props,previous){c
 const __initData3 = { code: "function VoicePanelControllerTsx3(){const{focused,mode,connected}=this.__closure;var _focused$get;return[(_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id,mode.get(),connected.get()];}" };
 const __initData4 = { code: "function VoicePanelControllerTsx4(props,previous){const{cheapWorkletArrayShallowEqual,runOnJS,handleAnimatedReaction}=this.__closure;if(cheapWorkletArrayShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const[focusedParticipantId_0,voicePanelMode_0,connectedValue_0]=props;runOnJS(handleAnimatedReaction)({focusedParticipantId:focusedParticipantId_0,voicePanelMode:voicePanelMode_0,connectedValue:connectedValue_0});}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? ((mode) => {
+let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityFocused(mode) {
   let focused;
   let require;
   ({ channelId: require, focused } = mode);
@@ -542,7 +542,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? ((mode) => {
   fn2.__initData = __initData2;
   ({ cheapWorkletArrayShallowEqual: require("cheapWorkletShallowEqual").cheapWorkletArrayShallowEqual, runOnJS: require("ReanimatedRexport").runOnJS, handleAnimatedReaction });
   const animatedReaction = obj.useAnimatedReaction(fn, fn2);
-}) : ((channelId) => {
+}) : (function useActivityFocused(channelId) {
   channelId = channelId.channelId;
   const focused = channelId.focused;
   const mode = channelId.mode;
@@ -598,7 +598,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? ((mode) => {
 });
 const MINUTE = DurationsDefault.Millis.MINUTE;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? ((showControls) => {
+let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSpeakingWhileMutedNotification(showControls) {
   let items4;
   let rTCConnectionId;
   let ref;
@@ -665,16 +665,16 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? ((showControls) 
   const tmpResult4 = tmp(504);
   const stateFromStores2 = tmpResult4.useStateFromStores(tmp12, tmp13);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class I {
+    class A {
       constructor() {
         ref2.current = performance.now();
         ref.current = false;
       }
     }
-    cResult[6] = I;
-    tmp16 = I;
+    cResult[6] = A;
+    tmp16 = A;
   } else {
-    class I {
+    class A {
       constructor() {
         ref2.current = performance.now();
         ref.current = false;
@@ -682,7 +682,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? ((showControls) 
     }
   }
   if (cResult[7] !== stateFromStores2) {
-    class I {
+    class A {
       constructor() {
         ref2.current = performance.now();
         ref.current = false;
@@ -693,7 +693,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? ((showControls) 
     cResult[8] = tmp18;
     tmp17 = tmp18;
   } else {
-    class I {
+    class A {
       constructor() {
         ref2.current = performance.now();
         ref.current = false;
@@ -702,7 +702,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? ((showControls) 
   }
   const effect = obj2.useEffect(tmp16, tmp17);
   if (cResult[9] !== stateFromStores1) {
-    class T {
+    class C {
       constructor() {
         const tmp = stateFromStores1;
         if (tmp) {
@@ -716,11 +716,11 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? ((showControls) 
     const items3 = [stateFromStores1];
     cResult[9] = stateFromStores1;
     cResult[10] = items3;
-    cResult[11] = T;
-    tmp21 = T;
+    cResult[11] = C;
+    tmp21 = C;
     tmp20 = items3;
   } else {
-    class T {
+    class C {
       constructor() {
         const tmp = stateFromStores1;
         if (tmp) {
@@ -735,7 +735,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? ((showControls) 
   }
   const effect1 = obj2.useEffect(tmp21, tmp20);
   if (cResult[12] === showControls) {
-    class T {
+    class C {
       constructor() {
         const tmp = stateFromStores1;
         if (tmp) {
@@ -746,9 +746,9 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? ((showControls) 
         }
       }
     }
-    const effect2 = obj2.useEffect(M, items4);
+    const effect2 = obj2.useEffect(T, items4);
   }
-  class M {
+  class T {
     constructor() {
       let intl;
       const tmp = stateFromStores && !ref.current;
@@ -769,9 +769,9 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? ((showControls) 
   items4 = [stateFromStores, showControls];
   cResult[12] = showControls;
   cResult[13] = stateFromStores;
-  cResult[14] = M;
+  cResult[14] = T;
   cResult[15] = items4;
-}) : ((showControls) => {
+}) : (function useSpeakingWhileMutedNotification(showControls) {
   let rTCConnectionId;
   let ref2;
   showControls = showControls.showControls;
@@ -825,7 +825,7 @@ const __initData6 = { code: "function VoicePanelControllerTsx6(props,previous){c
 const __initData7 = { code: "function VoicePanelControllerTsx7(){const{focused,pipState}=this.__closure;var _focused$get;return[(_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id,pipState.id];}" };
 const __initData8 = { code: "function VoicePanelControllerTsx8(props,previous){const{cheapWorkletArrayShallowEqual,runOnJS,handleStateUpdates}=this.__closure;if(cheapWorkletArrayShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const[focusedId_0,pipParticipantId_0]=props;runOnJS(handleStateUpdates)({focusedId:focusedId_0,pipParticipantId:pipParticipantId_0});}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleThermalState(channelId) {
   let closure_4;
   let pipState;
   let tmp4;
@@ -886,7 +886,7 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
                 openMana("EMBEDDED_ACTIVITIES_VIDEO_DISABLED_FOR_THERMAL_STATE", obj2);
               } else {
                 const open = tmp20.open;
-                const obj3 = { key: "EMBEDDED_ACTIVITIES_VIDEO_DISABLED_FOR_THERMAL_STATE", icon: tmp19(4828), content: intl.string(intl3.t.O2IlPT), disableAnimations: true, toastDurationMs: 3000 };
+                const obj3 = { key: "EMBEDDED_ACTIVITIES_VIDEO_DISABLED_FOR_THERMAL_STATE", icon: tmp19(5022), content: intl.string(intl3.t.O2IlPT), disableAnimations: true, toastDurationMs: 3000 };
                 intl = tmp16(1126).intl;
                 open(obj3);
               }
@@ -1010,7 +1010,7 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   cResult[5] = pipState.id;
   cResult[6] = E;
   tmp5 = E;
-}) : ((channelId) => {
+}) : (function useHandleThermalState(channelId) {
   channelId = channelId.channelId;
   const focused = channelId.focused;
   const pipState = channelId.pipState;
@@ -1065,7 +1065,7 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
               openMana("EMBEDDED_ACTIVITIES_VIDEO_DISABLED_FOR_THERMAL_STATE", obj2);
             } else {
               const open = tmp20.open;
-              const obj3 = { key: "EMBEDDED_ACTIVITIES_VIDEO_DISABLED_FOR_THERMAL_STATE", icon: tmp19(4828), content: intl.string(intl3.t.O2IlPT), disableAnimations: true, toastDurationMs: 3000 };
+              const obj3 = { key: "EMBEDDED_ACTIVITIES_VIDEO_DISABLED_FOR_THERMAL_STATE", icon: tmp19(5022), content: intl.string(intl3.t.O2IlPT), disableAnimations: true, toastDurationMs: 3000 };
               intl = tmp16(1126).intl;
               open(obj3);
             }
@@ -1129,7 +1129,7 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   const animatedReaction = obj.useAnimatedReaction(fn, S);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_44 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_44 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowFloatingCTA(arg0) {
   let closure_0;
   let sharedValue;
   _require = arg0;
@@ -1191,7 +1191,7 @@ let closure_44 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = sharedValue;
   cResult[2] = fn;
   tmp3 = fn;
-}) : ((arg0) => {
+}) : (function useShowFloatingCTA(arg0) {
   let closure_0;
   let showFloatingCTA;
   _require = arg0;
@@ -1216,7 +1216,7 @@ let closure_44 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return { showFloatingCTA, setShowFloatingCTA };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedParticipantEffects(channelId) {
   let ref;
   let obj = channelId(576);
   const cResult = obj.c(9);
@@ -1281,7 +1281,7 @@ let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   cResult[1] = selectedMode;
   cResult[2] = fn;
   tmp2 = fn;
-}) : ((channelId) => {
+}) : (function useSelectedParticipantEffects(channelId) {
   channelId = channelId.channelId;
   const selectedMode = channelId.selectedMode;
   const manualFocusedItem = channelId.manualFocusedItem;
@@ -1319,7 +1319,7 @@ const __initData13 = { code: "function VoicePanelControllerTsx13(value){const{Vo
 const __initData14 = { code: "function VoicePanelControllerTsx14(){const{connected}=this.__closure;return connected.get();}" };
 const __initData15 = { code: "function VoicePanelControllerTsx15(connected_0){const{updateSharedValueIfChanged,controlsSpecs,pushToTalk,CONTROLS_HEIGHT_PTT,CONTROLS_HEIGHT}=this.__closure;updateSharedValueIfChanged(controlsSpecs,{height:pushToTalk&&connected_0?CONTROLS_HEIGHT_PTT:CONTROLS_HEIGHT,pushToTalk:pushToTalk});}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_55 = ReactCompilerGating.isReactCompilerEnabled() ? ((isConnected) => {
+let closure_55 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUpdateLayoutManagerState(isConnected) {
   let setWindowState;
   let obj = isConnected(setWindowState[23]);
   const cResult = obj.c(6);
@@ -1382,7 +1382,7 @@ let closure_55 = ReactCompilerGating.isReactCompilerEnabled() ? ((isConnected) =
   cResult[5] = items;
   tmp3 = items;
   tmp2 = fn;
-}) : ((isConnected) => {
+}) : (function useUpdateLayoutManagerState(isConnected) {
   isConnected = isConnected.isConnected;
   const currentUpdatesRef = isConnected.currentUpdatesRef;
   const setWindowState = isConnected.setWindowState;
@@ -1425,7 +1425,7 @@ let closure_55 = ReactCompilerGating.isReactCompilerEnabled() ? ((isConnected) =
 let closure_56 = { code: "function VoicePanelControllerTsx16(t14){const{isConnected,cheapWorkletShallowEqual,contentDimensions,windowDimensions,safeArea,runOnJS,executeLayoutManagerEffect}=this.__closure;const{windowState:windowState_1,safeAreaState:safeAreaState_1,contentState:contentState_0}=t14;if(isConnected&&!cheapWorkletShallowEqual(contentDimensions.get(),contentState_0)){contentDimensions.set(contentState_0);}if(!cheapWorkletShallowEqual(windowDimensions.get(),windowState_1)){windowDimensions.set(windowState_1);}if(!cheapWorkletShallowEqual(safeArea.get(),safeAreaState_1)){safeArea.set(safeAreaState_1);}runOnJS(executeLayoutManagerEffect)();}" };
 let closure_57 = { code: "function VoicePanelControllerTsx17({windowState:windowState_1,safeAreaState:safeAreaState_1,contentState:contentState_0}){const{isConnected,cheapWorkletShallowEqual,contentDimensions,windowDimensions,safeArea,runOnJS,executeLayoutManagerEffect}=this.__closure;if(isConnected&&!cheapWorkletShallowEqual(contentDimensions.get(),contentState_0)){contentDimensions.set(contentState_0);}if(!cheapWorkletShallowEqual(windowDimensions.get(),windowState_1)){windowDimensions.set(windowState_1);}if(!cheapWorkletShallowEqual(safeArea.get(),safeAreaState_1)){safeArea.set(safeAreaState_1);}runOnJS(executeLayoutManagerEffect)();}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? ((windowDimensions) => {
+let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLayoutManagerState(windowDimensions) {
   let contentDimensions;
   let contentState;
   let first;
@@ -1514,7 +1514,7 @@ let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? ((windowDimensio
               closure_10.current.timeout = setTimeout(() => {
                 clearTimeout(ref.current.timeout);
                 let obj = windowDimensions(contentDimensions[48]);
-                obj.batchUpdates(() => { /* body not rendered: F153911 */ });
+                obj.batchUpdates(() => { /* body not rendered: F155452 */ });
               }, 60);
               return;
             }
@@ -1527,7 +1527,7 @@ let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? ((windowDimensio
               closure_10.current.timeout = setTimeout(() => {
                 clearTimeout(ref.current.timeout);
                 let obj = windowDimensions(contentDimensions[48]);
-                obj.batchUpdates(() => { /* body not rendered: F153911 */ });
+                obj.batchUpdates(() => { /* body not rendered: F155452 */ });
               }, 60);
               return;
             }
@@ -1542,7 +1542,7 @@ let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? ((windowDimensio
               closure_10.current.timeout = setTimeout(() => {
                 clearTimeout(ref.current.timeout);
                 let obj = windowDimensions(contentDimensions[48]);
-                obj.batchUpdates(() => { /* body not rendered: F153911 */ });
+                obj.batchUpdates(() => { /* body not rendered: F155452 */ });
               }, 60);
               return;
             }
@@ -1559,7 +1559,7 @@ let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? ((windowDimensio
               closure_10.current.timeout = setTimeout(() => {
                 clearTimeout(ref.current.timeout);
                 let obj = windowDimensions(contentDimensions[48]);
-                obj.batchUpdates(() => { /* body not rendered: F153911 */ });
+                obj.batchUpdates(() => { /* body not rendered: F155452 */ });
               }, 60);
               return;
             }
@@ -1575,7 +1575,7 @@ let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? ((windowDimensio
               closure_10.current.timeout = setTimeout(() => {
                 clearTimeout(ref.current.timeout);
                 let obj = windowDimensions(contentDimensions[48]);
-                obj.batchUpdates(() => { /* body not rendered: F153911 */ });
+                obj.batchUpdates(() => { /* body not rendered: F155452 */ });
               }, 60);
               return;
             }
@@ -1588,7 +1588,7 @@ let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? ((windowDimensio
                 closure_10.current.timeout = setTimeout(() => {
                   clearTimeout(ref.current.timeout);
                   let obj = windowDimensions(contentDimensions[48]);
-                  obj.batchUpdates(() => { /* body not rendered: F153911 */ });
+                  obj.batchUpdates(() => { /* body not rendered: F155452 */ });
                 }, 60);
                 return;
               }
@@ -1665,7 +1665,7 @@ let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? ((windowDimensio
   cResult[6] = size;
   cResult[7] = obj5;
   tmp14 = obj5;
-}) : ((windowDimensions) => {
+}) : (function useLayoutManagerState(windowDimensions) {
   let contentState;
   let items;
   let pushToTalk;
@@ -1914,7 +1914,7 @@ let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? ((windowDimensio
   const layoutEffect3 = obj.useLayoutEffect(() => () => clearTimeout(ref.current.timeout), []);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_59 = ReactCompilerGating.isReactCompilerEnabled() ? ((isConnected) => {
+let closure_59 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityOrientationState(isConnected) {
   let manualFocusedItem;
   let tmp4;
   let tmp5;
@@ -2053,7 +2053,7 @@ let closure_59 = ReactCompilerGating.isReactCompilerEnabled() ? ((isConnected) =
   cResult[10] = items2;
   tmp9 = items2;
   tmp8 = fn2;
-}) : ((isConnected) => {
+}) : (function useActivityOrientationState(isConnected) {
   isConnected = isConnected.isConnected;
   const selectedMode = isConnected.selectedMode;
   const manualFocusedItem = isConnected.manualFocusedItem;
@@ -2137,7 +2137,7 @@ const __initData17 = { code: "function VoicePanelControllerTsx19(props,previous)
 const __initData18 = { code: "function VoicePanelControllerTsx20(){const{connected,mode,sharedTransitionState}=this.__closure;return[connected.get(),mode.get(),sharedTransitionState.get()];}" };
 const __initData19 = { code: "function VoicePanelControllerTsx21(props,previous){const{cheapWorkletArrayShallowEqual,TransitionStates,VoicePanelModes,runOnJS,setMode}=this.__closure;if(cheapWorkletArrayShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const[isConnected,currentMode,currentTransitionState]=props;if(currentTransitionState===TransitionStates.YEETED){if(currentMode!==VoicePanelModes.DISMISSED){runOnJS(setMode)(VoicePanelModes.DISMISSED);}}else if(currentMode===VoicePanelModes.DISMISSED){var _previous$;let previousMode=(_previous$=previous===null||previous===void 0?void 0:previous[1])!==null&&_previous$!==void 0?_previous$:VoicePanelModes.PANEL;switch(previousMode){case VoicePanelModes.PANEL:case VoicePanelModes.PIP:if(!isConnected){previousMode=VoicePanelModes.PANEL;}break;default:previousMode=VoicePanelModes.PANEL;}runOnJS(setMode)(previousMode);}else if(!isConnected&&(previous===null||previous===void 0?void 0:previous[0])===true&&currentMode===VoicePanelModes.PIP){runOnJS(setMode)(VoicePanelModes.PANEL);}}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_64 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let closure_64 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTransitionState(channelId) {
   let transitionCleanUp;
   let obj = channelId(transitionCleanUp[23]);
   const cResult = obj.c(9);
@@ -2275,7 +2275,7 @@ let closure_64 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   cResult[5] = items1;
   tmp6 = items1;
   tmp5 = fn;
-}) : ((channelId) => {
+}) : (function useTransitionState(channelId) {
   channelId = channelId.channelId;
   const transitionState = channelId.transitionState;
   const transitionCleanUp = channelId.transitionCleanUp;
@@ -2373,7 +2373,7 @@ let closure_64 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   const animatedReaction = obj2.useAnimatedReaction(fn, fn2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_65 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let closure_65 = ReactCompilerGating.isReactCompilerEnabled() ? (function useManuallyFocusedItem(guildId) {
   let closure_4;
   let closure_7;
   let first;
@@ -2430,7 +2430,7 @@ let closure_65 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             tmp14 = cResult[13];
           }
           const layoutEffect = obj3.useLayoutEffect(tmp13, tmp14);
-          class A {
+          class I {
             constructor() {
               let tmp2 = null;
               if (null != stateFromStores) {
@@ -2474,7 +2474,7 @@ let closure_65 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                   }
                   return tmp25;
                 }
-                class A {
+                class I {
                   constructor() {
                     let tmp2 = null;
                     if (null != stateFromStores) {
@@ -2495,7 +2495,7 @@ let closure_65 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                 }
                 tmp26[0] = tmp8;
                 tmp26[1] = stateFromStores;
-                class M {
+                class T {
                   constructor() {
                     if (null != stateFromStores) {
                       const tmp = EmbeddedActivitiesStore;
@@ -2510,7 +2510,7 @@ let closure_65 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                 cResult[25] = tmp26;
                 tmp25 = tmp26;
               }
-              class A {
+              class I {
                 constructor() {
                   let tmp2 = null;
                   if (null != stateFromStores) {
@@ -2530,7 +2530,7 @@ let closure_65 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                 }
               }
               const items1 = [channelId, ];
-              class M {
+              class T {
                 constructor() {
                   if (null != stateFromStores) {
                     const tmp = EmbeddedActivitiesStore;
@@ -2548,7 +2548,7 @@ let closure_65 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               tmp21 = items1;
             }
           }
-          class M {
+          class T {
             constructor() {
               if (null != stateFromStores) {
                 const tmp = EmbeddedActivitiesStore;
@@ -2562,13 +2562,13 @@ let closure_65 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           cResult[14] = tmp17;
           cResult[15] = stateFromStores;
           cResult[16] = tmp8;
-          cResult[17] = M;
+          cResult[17] = T;
           cResult[18] = items2;
           tmp19 = items2;
-          tmp18 = M;
+          tmp18 = T;
         }
       }
-      class A {
+      class I {
         constructor() {
           let tmp2 = null;
           if (null != stateFromStores) {
@@ -2591,10 +2591,10 @@ let closure_65 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       cResult[9] = focused;
       cResult[10] = stateFromStores;
       cResult[11] = tmp9;
-      cResult[12] = A;
+      cResult[12] = I;
       cResult[13] = items3;
       tmp14 = items3;
-      tmp13 = A;
+      tmp13 = I;
     }
     const getTargetDimensions = layoutManager.getTargetDimensions;
     const targetDimensions = getTargetDimensions(tmp11);
@@ -2618,7 +2618,7 @@ let closure_65 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[4] = guildId;
   cResult[5] = fn2;
   tmp8 = fn2;
-}) : ((guildId) => {
+}) : (function useManuallyFocusedItem(guildId) {
   let focused;
   let layoutManager;
   let voiceChannelId;
@@ -2694,7 +2694,7 @@ let closure_65 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   return { setFocused, manualFocusedItem };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_66 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let closure_66 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedMode(channelId) {
   let mode;
   let tmp2;
   let obj = channelId(mode[23]);
@@ -2800,7 +2800,7 @@ let closure_66 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   cResult[6] = transitionState;
   cResult[7] = E;
   tmp6 = E;
-}) : ((channelId) => {
+}) : (function useSelectedMode(channelId) {
   let controlsSpecs;
   let mode;
   channelId = channelId.channelId;
@@ -2848,7 +2848,7 @@ let closure_66 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   return obj;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_67 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let closure_67 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelAnalytics(channelId) {
   let selectedMode;
   let obj = channelId(selectedMode[23]);
   const cResult = obj.c(5);
@@ -2873,7 +2873,7 @@ let closure_67 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
       tmp2 = isConnected;
     }
     if (tmp2) {
-      const obj = { video_layout: authStore4(tmp) };
+      const obj = { video_layout: authStore5(tmp) };
       const track = AnalyticsUtilsDefault.track;
       const VIDEO_LAYOUT_TOGGLED = constants2.VIDEO_LAYOUT_TOGGLED;
       AnalyticsUtilsDefault;
@@ -2890,7 +2890,7 @@ let closure_67 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   cResult[4] = items;
   tmp3 = items;
   tmp2 = fn;
-}) : ((channelId) => {
+}) : (function useVoicePanelAnalytics(channelId) {
   channelId = channelId.channelId;
   const isConnected = channelId.isConnected;
   const selectedMode = channelId.selectedMode;
@@ -2902,7 +2902,7 @@ let closure_67 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
       tmp2 = isConnected;
     }
     if (tmp2) {
-      const obj = { video_layout: authStore4(tmp) };
+      const obj = { video_layout: authStore5(tmp) };
       const track = AnalyticsUtilsDefault.track;
       const VIDEO_LAYOUT_TOGGLED = constants2.VIDEO_LAYOUT_TOGGLED;
       AnalyticsUtilsDefault;
@@ -2917,7 +2917,7 @@ const __initData21 = { code: "function VoicePanelControllerTsx23(props,previous)
 const __initData22 = { code: "function VoicePanelControllerTsx24(){const{mode,controlsSpecs}=this.__closure;return[mode.get(),controlsSpecs.get().mode];}" };
 const __initData23 = { code: "function VoicePanelControllerTsx25(props,previous){const{cheapWorkletArrayShallowEqual,VoicePanelControlsModes,VoicePanelModes,runOnJS,dismissKeyboard}=this.__closure;if(cheapWorkletArrayShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const[currentMode,currentControlsMode]=props;if(currentControlsMode!==VoicePanelControlsModes.DRAWER||currentMode!==VoicePanelModes.PANEL||(previous===null||previous===void 0?void 0:previous[0])!==VoicePanelModes.PANEL){runOnJS(dismissKeyboard)();}}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_72 = ReactCompilerGating.isReactCompilerEnabled() ? ((mode) => {
+let closure_72 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboardDismissHandler(mode) {
   mode = mode.mode;
   const controlsSpecs = mode.controlsSpecs;
   const fn = function s() {
@@ -2950,13 +2950,13 @@ let closure_72 = ReactCompilerGating.isReactCompilerEnabled() ? ((mode) => {
       }
     }
   };
-  const obj = mode(4618);
-  fn2.__closure = { cheapWorkletArrayShallowEqual: mode(9110).cheapWorkletArrayShallowEqual, VoicePanelControlsModes, VoicePanelModes, runOnJS: mode(4618).runOnJS, dismissKeyboard: mode(4751).dismissKeyboard };
+  const obj = mode(4810);
+  fn2.__closure = { cheapWorkletArrayShallowEqual: mode(9512).cheapWorkletArrayShallowEqual, VoicePanelControlsModes, VoicePanelModes, runOnJS: mode(4810).runOnJS, dismissKeyboard: mode(4945).dismissKeyboard };
   fn2.__workletHash = 9634019064864;
   fn2.__initData = __initData21;
-  ({ cheapWorkletArrayShallowEqual: mode(9110).cheapWorkletArrayShallowEqual, VoicePanelControlsModes, VoicePanelModes, runOnJS: mode(4618).runOnJS, dismissKeyboard: mode(4751).dismissKeyboard });
+  ({ cheapWorkletArrayShallowEqual: mode(9512).cheapWorkletArrayShallowEqual, VoicePanelControlsModes, VoicePanelModes, runOnJS: mode(4810).runOnJS, dismissKeyboard: mode(4945).dismissKeyboard });
   const animatedReaction = obj.useAnimatedReaction(fn, fn2);
-}) : ((mode) => {
+}) : (function useKeyboardDismissHandler(mode) {
   mode = mode.mode;
   const controlsSpecs = mode.controlsSpecs;
   const fn = function c() {
@@ -2989,15 +2989,15 @@ let closure_72 = ReactCompilerGating.isReactCompilerEnabled() ? ((mode) => {
       }
     }
   };
-  const obj = mode(4618);
-  fn2.__closure = { cheapWorkletArrayShallowEqual: mode(9110).cheapWorkletArrayShallowEqual, VoicePanelControlsModes, VoicePanelModes, runOnJS: mode(4618).runOnJS, dismissKeyboard: mode(4751).dismissKeyboard };
+  const obj = mode(4810);
+  fn2.__closure = { cheapWorkletArrayShallowEqual: mode(9512).cheapWorkletArrayShallowEqual, VoicePanelControlsModes, VoicePanelModes, runOnJS: mode(4810).runOnJS, dismissKeyboard: mode(4945).dismissKeyboard };
   fn2.__workletHash = 12442886667392;
   fn2.__initData = __initData23;
-  ({ cheapWorkletArrayShallowEqual: mode(9110).cheapWorkletArrayShallowEqual, VoicePanelControlsModes, VoicePanelModes, runOnJS: mode(4618).runOnJS, dismissKeyboard: mode(4751).dismissKeyboard });
+  ({ cheapWorkletArrayShallowEqual: mode(9512).cheapWorkletArrayShallowEqual, VoicePanelControlsModes, VoicePanelModes, runOnJS: mode(4810).runOnJS, dismissKeyboard: mode(4945).dismissKeyboard });
   const animatedReaction = obj.useAnimatedReaction(fn, fn2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_73 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let closure_73 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMountedCards(arg0, arg1) {
   let first;
   let first1;
   _require = arg0;
@@ -3058,7 +3058,7 @@ let closure_73 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
   cResult[5] = items;
   tmp5 = items;
   tmp4 = fn2;
-}) : ((arg0, arg1) => {
+}) : (function useMountedCards(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   const first = _slicedToArray(react.useState(() => {
@@ -3091,7 +3091,7 @@ let closure_73 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
   return first;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelController(channelId) {
   let channelType;
   let children;
   let dismissPanel;
@@ -3148,19 +3148,19 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   streamOutputSinkStack = _slicedToArray(channelType.useState(tmp8), 1)[0];
   const obj3 = channelType;
   if (cResult[3] !== streamOutputSinkStack) {
-    class I {
+    class A {
       constructor() {
         return () => streamOutputSinkStack.cleanUp();
       }
     }
     const items2 = [streamOutputSinkStack];
     cResult[3] = streamOutputSinkStack;
-    cResult[4] = I;
+    cResult[4] = A;
     cResult[5] = items2;
     tmp11 = items2;
-    tmp10 = I;
+    tmp10 = A;
   } else {
-    class I {
+    class A {
       constructor() {
         return () => streamOutputSinkStack.cleanUp();
       }
@@ -3200,7 +3200,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const refreshIdleTimeout = tmp16.refreshIdleTimeout;
   const setControlsMode = tmp16.setControlsMode;
   if (cResult[6] === channelId) {
-    class I {
+    class A {
       constructor() {
         return () => streamOutputSinkStack.cleanUp();
       }
@@ -3215,7 +3215,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[11] = setControlsMode;
   cResult[12] = transitionState;
   cResult[13] = obj2;
-}) : ((channelId) => {
+}) : (function VoicePanelController(channelId) {
   let Provider2;
   let Provider3;
   let c12;

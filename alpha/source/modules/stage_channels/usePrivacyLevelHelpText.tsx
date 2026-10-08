@@ -1,16 +1,16 @@
-// Module ID: 9489
-// Function ID: 9490
+// Module ID: 8653
+// Function ID: 8654
 // Name: usePrivacyLevelHelpText
-// Dependencies: [4515, 1085, 2057, 1096, 558, 576, 504, 4520, 1097, 1126, 2115, 2]
+// Dependencies: [4707, 1085, 2069, 1096, 558, 576, 504, 4712, 1097, 1126, 2127, 2]
 
-// Module 9489 (usePrivacyLevelHelpText)
+// Module 8653 (usePrivacyLevelHelpText)
 import Constants from "Constants" /* 1085 */;
 import Constants2 from "Constants" /* 1096 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4520 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2069 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4712 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,12 +20,10 @@ let _require;
 const HelpdeskArticles = Constants.HelpdeskArticles;
 const constants = GuildScheduledEventsConstants.GuildScheduledEventPrivacyLevel;
 const Permissions = Constants2.Permissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel, privacy_level, arg2) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStagePrivacyLevelSettings(channel, arg1, arg2) {
   let first;
-  let obj5;
   let stringResult;
   let tmp6;
-  let tmp8;
   _require = channel;
   const obj = require("react");
   const cResult = obj.c(14);
@@ -37,107 +35,83 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel, privacy_l
     first = cResult[0];
   }
   if (cResult[1] !== channel) {
-    const fn = function _() {
-      return PermissionStore.can(Permissions.CREATE_INSTANT_INVITE, channel);
-    };
+    class E {
+      constructor() {
+        return closure_4.can(Permissions.CREATE_INSTANT_INVITE, closure_0);
+      }
+    }
     cResult[1] = channel;
-    cResult[2] = fn;
-    tmp6 = fn;
+    cResult[2] = E;
+    tmp6 = E;
   } else {
-    tmp6 = cResult[2];
+    class E {
+      constructor() {
+        return closure_4.can(Permissions.CREATE_INSTANT_INVITE, closure_0);
+      }
+    }
   }
   const tmpResult = require("get initialized");
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
   if (cResult[3] !== channel) {
+    class E {
+      constructor() {
+        return closure_4.can(Permissions.CREATE_INSTANT_INVITE, closure_0);
+      }
+    }
     const canEveryoneRole = PermissionUtilsAll.canEveryoneRole;
     PermissionUtilsAll;
     const obj3 = BigFlagUtilsAll;
-    const canEveryoneRoleResult = canEveryoneRole(obj3.combine(Permissions.VIEW_CHANNEL, Permissions.CONNECT), channel);
     cResult[3] = channel;
-    cResult[4] = canEveryoneRoleResult;
-    tmp8 = canEveryoneRoleResult;
+    cResult[4] = canEveryoneRole(obj3.combine(Permissions.VIEW_CHANNEL, Permissions.CONNECT), channel);
+    const canEveryoneRoleResult = canEveryoneRole(obj3.combine(Permissions.VIEW_CHANNEL, Permissions.CONNECT), channel);
   } else {
-    tmp8 = cResult[4];
+    class E {
+      constructor() {
+        return closure_4.can(Permissions.CREATE_INSTANT_INVITE, closure_0);
+      }
+    }
   }
   if (cResult[5] === tmp8) {
-    if (cResult[6] === stateFromStores) {
-      if (cResult[7] === arg2) {
-        let tmp16;
-        privacy_level = undefined;
-        const tmp13 = cResult[8];
-        if (privacy_level != null) {
-          privacy_level = privacy_level.privacy_level;
-        }
-        if (tmp13 === privacy_level) {
-          tmp16 = cResult[9];
-        }
-        let privacy_level1;
-        if (privacy_level != null) {
-          privacy_level1 = privacy_level.privacy_level;
-        }
-        let tmp29 = !stateFromStores;
-        const PUBLIC = constants.PUBLIC;
-        if (stateFromStores) {
-          tmp29 = !tmp8;
-        }
-        if (cResult[10] === tmp16) {
-          if (cResult[11] === privacy_level1 === PUBLIC) {
-            let tmp31;
-            if (cResult[12] === tmp29) {
-              tmp31 = cResult[13];
-            }
-            return tmp31;
-          }
-        }
-        const obj2 = { helpText: tmp16, guildOnlyDisabled: privacy_level1 === PUBLIC, publicDisabled: tmp29 };
-        cResult[10] = tmp16;
-        cResult[11] = privacy_level1 === PUBLIC;
-        cResult[12] = tmp29;
-        cResult[13] = obj2;
-        tmp31 = obj2;
+    class E {
+      constructor() {
+        return closure_4.can(Permissions.CREATE_INSTANT_INVITE, closure_0);
       }
     }
   }
-  let privacy_level2;
-  if (privacy_level != null) {
-    privacy_level2 = privacy_level.privacy_level;
-  }
-  if (privacy_level2 === constants.PUBLIC) {
-    const intl4 = tmp(1126).intl;
-    stringResult = intl4.string(tmp(1126).t.GFq5Rg);
-  } else if (stateFromStores) {
-    let stringResult1;
-    if (tmp8) {
-      let formatResult = null;
-      if (arg2 === tmp18.PUBLIC) {
-        const intl3 = tmp(1126).intl;
-        const format = intl3.format;
-        const obj4 = { articleURL: obj5.getArticleURL(HelpdeskArticles.STAGE_CHANNEL_GUIDELINES) };
-        const prop = tmp(1126).t["ew/Jq4"];
-        obj5 = HelpdeskUtilsDefault;
-        formatResult = format(prop, obj4);
+  if (arg1 != null) {
+    class E {
+      constructor() {
+        return closure_4.can(Permissions.CREATE_INSTANT_INVITE, closure_0);
       }
-      stringResult1 = formatResult;
-    } else {
-      const intl2 = tmp(1126).intl;
-      stringResult1 = intl2.string(tmp(1126).t.E5T7a3);
     }
-    stringResult = stringResult1;
+  }
+  if (undefined === constants.PUBLIC) {
+    class E {
+      constructor() {
+        return closure_4.can(Permissions.CREATE_INSTANT_INVITE, closure_0);
+      }
+    }
+    stringResult = obj4.string(require("intl").t.GFq5Rg);
   } else {
-    const intl = tmp(1126).intl;
-    stringResult = intl.string(tmp(1126).t.BOjr7t);
+    class E {
+      constructor() {
+        return closure_4.can(Permissions.CREATE_INSTANT_INVITE, closure_0);
+      }
+    }
   }
   cResult[5] = tmp8;
   cResult[6] = stateFromStores;
   cResult[7] = arg2;
-  let privacy_level3;
-  if (privacy_level != null) {
-    privacy_level3 = privacy_level.privacy_level;
+  if (arg1 != null) {
+    class E {
+      constructor() {
+        return closure_4.can(Permissions.CREATE_INSTANT_INVITE, closure_0);
+      }
+    }
   }
-  cResult[8] = privacy_level3;
+  cResult[8] = undefined;
   cResult[9] = stringResult;
-  tmp16 = stringResult;
-}) : ((channel, privacy_level, arg2) => {
+}) : (function useStagePrivacyLevelSettings(channel, privacy_level, arg2) {
   let obj4;
   let privacy_level1;
   let stringResult;

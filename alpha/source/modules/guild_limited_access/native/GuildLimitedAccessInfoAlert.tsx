@@ -1,22 +1,22 @@
-// Module ID: 13660
-// Function ID: 13661
+// Module ID: 5900
+// Function ID: 5901
 // Name: GuildLimitedAccessInfoAlert
-// Dependencies: [19, 2074, 13661, 1085, 21, 4896, 5922, 587, 558, 576, 1126, 1188, 4892, 5790, 2]
+// Dependencies: [19, 2086, 5901, 1085, 21, 5090, 5902, 587, 558, 576, 1126, 1200, 5086, 5394, 2]
 
-// Module 13660 (GuildLimitedAccessInfoAlert)
+// Module 5900 (GuildLimitedAccessInfoAlert)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import AlertDefault from "Alert" /* 5790 */;
-import GuildLimitedAccessConstants from "GuildLimitedAccessConstants" /* 13661 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import AlertDefault from "Alert" /* 5394 */;
+import GuildLimitedAccessConstants from "GuildLimitedAccessConstants" /* 5901 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import TextStyles from "TextStyles" /* 5922 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import TextStyles from "TextStyles" /* 5902 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ obj2 = { textAlign: "center", marginVertical: 12 };
 createStyles = createStyles.createStyles;
 const merged = Object.assign(TextStyles(Fonts.PRIMARY_BOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
 let closure_7 = createStyles(obj);
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildLimitedAccessInfoAlert(arg0) {
   let first;
   let guildId;
   let items;
@@ -113,7 +113,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = tmp4.text;
   cResult[8] = tmp19;
   tmp18 = tmp19;
-}) : ((arg0) => {
+}) : (function GuildLimitedAccessInfoAlert(arg0) {
   let guildId;
   let intl3;
   let items;
@@ -134,7 +134,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj3 = { onClose, children: items };
   const obj4 = { style: tmp.header, children: intl3.string(intl4.t.kJwpBW) };
   const tmp8 = AlertDefault;
-  const LegacyText = tmp2(1188).LegacyText;
+  const LegacyText = tmp2(1200).LegacyText;
   intl3 = tmp2(1126).intl;
   items = [hasOwnProperty(LegacyText, obj4), ];
   const obj5 = { style: tmp.text, variant: "text-md/medium", children: formatResult1 };

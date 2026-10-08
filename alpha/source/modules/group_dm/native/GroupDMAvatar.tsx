@@ -1,18 +1,18 @@
-// Module ID: 10661
-// Function ID: 10662
+// Module ID: 10261
+// Function ID: 10262
 // Name: GroupDMAvatar
-// Dependencies: [19, 17, 1377, 21, 1188, 4896, 558, 576, 8502, 1375, 504, 2]
+// Dependencies: [19, 17, 1389, 21, 1200, 5090, 558, 576, 8986, 1387, 504, 2]
 
-// Module 10661 (GroupDMAvatar)
+// Module 10261 (GroupDMAvatar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import native from "native" /* 1188 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import ClipView from "ClipView" /* 8502 */;
+import native from "native" /* 1200 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import ClipView from "ClipView" /* 8986 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ obj[native.AvatarSizes.SIZE_16] = native.AvatarSizes.XXSMALL_10;
 obj[native.AvatarSizes.NORMAL] = native.AvatarSizes.XSMALL;
 let closure_8 = createStyles.createStyles({ firstFace: { position: "absolute", top: 0, left: 0 }, secondFace: { position: "absolute", bottom: 0, right: 0 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FacepileGroupDMAvatar(arg0) {
   let accessibilityLabel;
   let accessible;
   let animate;
@@ -139,7 +139,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       }
                     }
                     const obj3 = { status, statusSizeOverride: native.StatusSizes.REFRESH_MEDIUM_10, autoStatusCutout: true, style: tmp4.secondFace, size: pileSizeOverride, guildId: "Array", animate };
-                    const Avatar2 = tmp(1188).Avatar;
+                    const Avatar2 = tmp(1200).Avatar;
                     const merged = Object.assign(tmp27);
                     const tmp33 = hasOwnProperty(Avatar2, obj3);
                     cResult[21] = animate;
@@ -165,7 +165,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
           const obj6 = { style: tmp4.firstFace, size: pileSizeOverride, guildId: "r", cutout: tmp18, animate };
-          const Avatar = tmp(1188).Avatar;
+          const Avatar = tmp(1200).Avatar;
           const merged1 = Object.assign(tmp20);
           const tmp26 = hasOwnProperty(Avatar, obj6);
           cResult[12] = animate;
@@ -195,14 +195,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const obj9 = { nativeCutouts: items2 };
-  const point = { shape: tmp(8502).CutoutShape.Circle, x: diff1, y: diff2, size: result1 };
+  const point = { shape: tmp(8986).CutoutShape.Circle, x: diff1, y: diff2, size: result1 };
   items2 = [point];
   cResult[2] = result1;
   cResult[3] = diff1;
   cResult[4] = diff2;
   cResult[5] = obj9;
   tmp18 = obj9;
-}) : ((arg0) => {
+}) : (function FacepileGroupDMAvatar(arg0) {
   let accessibilityLabel;
   let accessible;
   let animate;
@@ -253,7 +253,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return obj;
   }, items1);
   const obj3 = { style: tmp.firstFace, size: pileSizeOverride, guildId: "r", cutout: memo1, animate };
-  const Avatar = tmp2(1188).Avatar;
+  const Avatar = tmp2(1200).Avatar;
   const tmp10 = View;
   const tmp9 = closure_6;
   if (null == users) {
@@ -265,7 +265,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const merged = Object.assign(obj5);
   items3 = [closure_5(Avatar, obj3), ];
   const obj6 = { status, statusSizeOverride: require("native").StatusSizes.REFRESH_MEDIUM_10, autoStatusCutout: true, style: tmp.secondFace, size: pileSizeOverride, guildId: "Array", animate };
-  const Avatar2 = tmp2(1188).Avatar;
+  const Avatar2 = tmp2(1200).Avatar;
   if (null == users) {
     obj8 = { source: sources[1] };
     const obj7 = { source: sources[1] };
@@ -278,7 +278,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_9 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMAvatar(arg0) {
   let accessibilityLabel;
   let accessible;
   let animate;
@@ -366,7 +366,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-  const tmp12 = closure_5(channel(1188).Avatar, { autoStatusCutout: true, status, style, size, channel, animate, accessible, accessibilityLabel });
+  const tmp12 = closure_5(channel(1200).Avatar, { autoStatusCutout: true, status, style, size, channel, animate, accessible, accessibilityLabel });
   cResult[3] = accessibilityLabel;
   cResult[4] = accessible;
   cResult[5] = animate;
@@ -376,7 +376,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[9] = style;
   cResult[10] = tmp12;
   tmp11 = tmp12;
-}) : ((pileSizeOverride) => {
+}) : (function GroupDMAvatar(pileSizeOverride) {
   let accessibilityLabel;
   let accessible;
   let animate;
@@ -403,7 +403,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return tmp5;
   }
-  tmp5 = closure_5(tmp(1188).Avatar, { autoStatusCutout: true, status, style, size, channel, animate, accessible, accessibilityLabel });
+  tmp5 = closure_5(tmp(1200).Avatar, { autoStatusCutout: true, status, style, size, channel, animate, accessible, accessibilityLabel });
 });
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/group_dm/native/GroupDMAvatar.tsx");

@@ -1,21 +1,21 @@
-// Module ID: 17431
-// Function ID: 17432
+// Module ID: 17713
+// Function ID: 17714
 // Name: usePressUnderlayColor
-// Dependencies: [17432, 558, 576, 4797, 4586, 587, 4733, 4735, 2]
+// Dependencies: [17714, 558, 576, 4991, 4778, 587, 4927, 4929, 2]
 
-// Module 17431 (usePressUnderlayColor)
+// Module 17713 (usePressUnderlayColor)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4586 */;
-import ColorUtils from "ColorUtils" /* 4733 */;
-import shared from "shared" /* 4735 */;
-import useThemeDefault from "useTheme" /* 4797 */;
-import ChannelEmojiConstants from "ChannelEmojiConstants" /* 17432 */;
+import useToken from "useToken" /* 4778 */;
+import ColorUtils from "ColorUtils" /* 4927 */;
+import shared from "shared" /* 4929 */;
+import useThemeDefault from "useTheme" /* 4991 */;
+import ChannelEmojiConstants from "ChannelEmojiConstants" /* 17714 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = ChannelEmojiConstants.DEFAULT_CHANNEL_EMOJI_BACKGROUND_COLOR;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePressUnderlayColor(arr) {
   const obj = react;
   const cResult = obj.c(4);
   const tmp4 = useThemeDefault();
@@ -53,7 +53,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   cResult[2] = tmp4;
   cResult[3] = hexWithOpacityResult;
   tmp6 = hexWithOpacityResult;
-}) : ((arr) => {
+}) : (function usePressUnderlayColor(arr) {
   const tmp2 = useThemeDefault();
   const obj = useToken;
   const token = obj.useToken(nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE);

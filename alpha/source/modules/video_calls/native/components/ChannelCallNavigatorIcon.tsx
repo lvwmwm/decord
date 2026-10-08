@@ -1,25 +1,24 @@
-// Module ID: 9600
-// Function ID: 9601
+// Module ID: 10793
+// Function ID: 10794
 // Name: ChannelCallNavigatorIcon
-// Dependencies: [19, 17, 9086, 1085, 21, 4896, 587, 558, 576, 4735, 5780, 1188, 5916, 2]
+// Dependencies: [19, 17, 10333, 1085, 21, 5090, 587, 558, 576, 4929, 5363, 1200, 6189, 2]
 
-// Module 9600 (ChannelCallNavigatorIcon)
+// Module 10793 (ChannelCallNavigatorIcon)
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import shared from "shared" /* 4735 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5780 */;
-import Pressables from "Pressables" /* 5916 */;
-import ChannelCallStore from "ChannelCallStore" /* 9086 */;
+import native from "native" /* 1200 */;
+import shared from "shared" /* 4929 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5363 */;
+import Pressables from "Pressables" /* 6189 */;
+import ChannelCallStore from "ChannelCallStore" /* 10333 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let onPress;
 
 let Fonts;
 let c3;
@@ -43,7 +42,7 @@ size = { flexDirection: "row", height: 32, width: 32, borderRadius: nativeDefaul
 obj3 = { marginLeft: 4, fontSize: 14, fontFamily: Fonts.PRIMARY_SEMIBOLD, color: nativeDefault.colors.WHITE };
 obj4 = { color: nativeDefault.colors.ICON_SUBTLE };
 let closure_9 = createStyles(obj);
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCallNavigatorIcon(onPress) {
   let IconComponent;
   let accessibilityLabel;
   let children;
@@ -137,7 +136,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
                     }
                     const obj3 = { accessibilityRole: "button", accessibilityLabel, disabled, style: tmp6.pressable, onPress: tmp7, children: items };
                     items = [tmp24, children];
-                    const tmp30 = closure_8(tmp(5916).PressableOpacity, obj3);
+                    const tmp30 = closure_8(tmp(6189).PressableOpacity, obj3);
                     cResult[21] = accessibilityLabel;
                     cResult[22] = children;
                     cResult[23] = disabled;
@@ -162,7 +161,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
             let tmp22 = null != membersCount && membersCount > 0;
             if (tmp22) {
               const obj5 = { style: tmp6.text, children: membersCount };
-              tmp22 = closure_7(tmp(1188).LegacyText, obj5);
+              tmp22 = closure_7(tmp(1200).LegacyText, obj5);
             }
             cResult[13] = membersCount;
             cResult[14] = tmp6.text;
@@ -174,8 +173,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
           const obj6 = { color: tmp6.iconColor.color, size: "sm" };
           tmp18 = closure_7(IconComponent, obj6);
         } else {
-          const obj7 = { source, color: tmp6.iconColor.color, size: tmp(1188).Icon.Sizes.SMALL_20 };
-          const Icon = tmp(1188).Icon;
+          const obj7 = { source, color: tmp6.iconColor.color, size: tmp(1200).Icon.Sizes.SMALL_20 };
+          const Icon = tmp(1200).Icon;
           tmp18 = closure_7(Icon, obj7);
         }
         cResult[9] = IconComponent;
@@ -185,7 +184,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
         tmp15 = tmp18;
       }
       let tmp11 = null;
-      const tmpResult = tmp(4735);
+      const tmpResult = tmp(4929);
       if (tmpResult.isThemeDark(theme)) {
         tmp11 = null;
         if (!(undefined === disableBackground || disableBackground)) {
@@ -205,7 +204,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   cResult[4] = disabled && tmp6.disabled;
   cResult[5] = items2;
   tmp9 = items2;
-}) : ((disableBackground) => {
+}) : (function ChannelCallNavigatorIcon(disableBackground) {
   let PressableOpacity;
   let accessibilityLabel;
   let children;
@@ -266,14 +265,14 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     tmp3Result3 = tmp3(IconComponent, obj5);
   } else {
     const obj6 = { source, color: tmp2.iconColor.color, size: native.Icon.Sizes.SMALL_20 };
-    const Icon = tmp6(1188).Icon;
+    const Icon = tmp6(1200).Icon;
     tmp3Result3 = tmp3(Icon, obj6);
   }
   items1[1] = tmp3Result3;
   let tmp3Result4 = null != membersCount && membersCount > 0;
   if (tmp3Result4) {
     const obj7 = { style: tmp2.text, children: membersCount };
-    tmp3Result4 = tmp3(tmp6(1188).LegacyText, obj7);
+    tmp3Result4 = tmp3(tmp6(1200).LegacyText, obj7);
   }
   items1[2] = tmp3Result4;
   items2 = [closure_8(closure_3, obj3), children];

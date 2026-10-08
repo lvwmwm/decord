@@ -1,20 +1,18 @@
-// Module ID: 12536
-// Function ID: 12537
+// Module ID: 12632
+// Function ID: 12633
 // Name: MessageFailedToSendNotification
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1126, 4907, 4793, 11377, 12501, 12531, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1126, 5101, 4987, 12633, 12597, 12627, 2]
 
-// Module 12536 (MessageFailedToSendNotification)
+// Module 12632 (MessageFailedToSendNotification)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import flow_Client from "flow/Client" /* 4793 */;
-import transitionToChannel from "transitionToChannel" /* 4907 */;
+import flow_Client from "flow/Client" /* 4987 */;
+import transitionToChannel from "transitionToChannel" /* 5101 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let notification;
 
 let size;
 const View = react_native.View;
@@ -22,7 +20,7 @@ const jsx = Fragment.jsx;
 let obj = { iconContainer: size };
 size = { width: 40, height: 40, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, display: "flex", justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.md };
 let closure_6 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((notification) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MessageFailedToSendNotification(notification) {
   let channelId;
   let first;
   let intl;
@@ -50,7 +48,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((n
     }
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const RetryIcon = tmp(11377).RetryIcon;
+      const RetryIcon = tmp(12633).RetryIcon;
       const tmp10 = <RetryIcon size="md" color={messageId(587).colors.ICON_SUBTLE} />;
       cResult[4] = tmp10;
       tmp7 = tmp10;
@@ -67,7 +65,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((n
     }
     const _Symbol2 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const SystemMessageText = tmp(12501).SystemMessageText;
+      const SystemMessageText = tmp(12597).SystemMessageText;
       const intl2 = tmp(1126).intl;
       const tmp17 = <SystemMessageText text={intl2.string(channelId(1126).t.xxRPOT)} />;
       cResult[7] = tmp17;
@@ -84,14 +82,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((n
         return tmp18;
       }
     }
-    const tmp20 = jsx(channelId(12531).NotificationPressable, { icon: tmp11, children: tmp15, header: first, onPress: tmp6, notification });
+    const tmp20 = jsx(channelId(12627).NotificationPressable, { icon: tmp11, children: tmp15, header: first, onPress: tmp6, notification });
     cResult[8] = notification;
     cResult[9] = tmp6;
     cResult[10] = tmp11;
     cResult[11] = tmp20;
     tmp18 = tmp20;
   }
-  const fn = function p() {
+  const fn = function y() {
     const obj = transitionToChannel;
     const obj2 = { jumpType: flow_Client.JumpType.INSTANT };
     obj.transitionToMessage(channelId, messageId, obj2);
@@ -100,7 +98,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((n
   cResult[2] = messageId;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((notification) => {
+}) : (function MessageFailedToSendNotification(notification) {
   let intl;
   let intl2;
   notification = notification.notification;
@@ -116,11 +114,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((n
     const obj2 = { jumpType: flow_Client.JumpType.INSTANT };
     obj.transitionToMessage(channelId, messageId, obj2);
   }, items);
-  const NotificationPressable = channelId(12531).NotificationPressable;
+  const NotificationPressable = channelId(12627).NotificationPressable;
   ({ size: "md", color: messageId(587).colors.ICON_SUBTLE });
-  const RetryIcon = channelId(11377).RetryIcon;
+  const RetryIcon = channelId(12633).RetryIcon;
   ({ text: intl2.string(channelId(1126).t.xxRPOT) });
-  const SystemMessageText = channelId(12501).SystemMessageText;
+  const SystemMessageText = channelId(12597).SystemMessageText;
   intl2 = channelId(1126).intl;
   return <NotificationPressable icon={null} header={obj} onPress={callback} notification={notification}>{null}</NotificationPressable>;
 }));

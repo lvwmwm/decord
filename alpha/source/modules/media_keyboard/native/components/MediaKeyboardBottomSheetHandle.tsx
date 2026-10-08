@@ -1,22 +1,20 @@
-// Module ID: 10385
-// Function ID: 10386
+// Module ID: 9982
+// Function ID: 9983
 // Name: MediaKeyboardBottomSheetHandle
-// Dependencies: [19, 21, 558, 576, 7952, 1126, 8602, 2]
+// Dependencies: [19, 21, 558, 576, 8370, 1126, 8517, 2]
 
-// Module 10385 (MediaKeyboardBottomSheetHandle)
+// Module 9982 (MediaKeyboardBottomSheetHandle)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import useStateFromSharedValue from "useStateFromSharedValue" /* 7952 */;
-import native from "native" /* 8602 */;
+import useStateFromSharedValue from "useStateFromSharedValue" /* 8370 */;
+import native from "native" /* 8517 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let onPress;
-
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MediaKeyboardBottomSheetHandle(onPress) {
   let first;
   let tmp6;
   const obj = react2;
@@ -24,7 +22,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   onPress = onPress.onPress;
   const animatedIndex = onPress.animatedIndex;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function l(arg0) {
+    const fn = function o(arg0) {
       return arg0 > 0;
     };
     cResult[0] = fn;
@@ -65,7 +63,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   cResult[5] = null == onPress;
   cResult[6] = tmp10;
   tmp9 = tmp10;
-}) : ((onPress) => {
+}) : (function MediaKeyboardBottomSheetHandle(onPress) {
   let stringResult;
   onPress = onPress.onPress;
   const animatedIndex = onPress.animatedIndex;

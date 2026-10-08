@@ -1,13 +1,13 @@
-// Module ID: 16882
-// Function ID: 16883
+// Module ID: 17163
+// Function ID: 17164
 // Name: MessageSearchResultParser
-// Dependencies: [4526, 7524, 16883, 11987, 16884, 12, 2]
+// Dependencies: [4718, 9247, 17164, 12060, 17165, 12, 2]
 
-// Module 16882 (MessageSearchResultParser)
+// Module 17163 (MessageSearchResultParser)
 import _mod12 from "module_12" /* 12 */;
-import SearchConstants from "SearchConstants" /* 7524 */;
-import CachedSearchResultParser2 from "CachedSearchResultParser" /* 16883 */;
-import MessageRecord from "MessageRecord" /* 4526 */;
+import SearchConstants from "SearchConstants" /* 9247 */;
+import CachedSearchResultParser2 from "CachedSearchResultParser" /* 17164 */;
+import MessageRecord from "MessageRecord" /* 4718 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

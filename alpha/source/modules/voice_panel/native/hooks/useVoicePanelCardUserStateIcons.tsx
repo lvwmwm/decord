@@ -1,19 +1,19 @@
-// Module ID: 17250
-// Function ID: 17251
+// Module ID: 17531
+// Function ID: 17532
 // Name: useVoicePanelCardUserStateIcons
-// Dependencies: [19, 4919, 4915, 4917, 21, 558, 576, 11915, 9350, 573, 9714, 4951, 9673, 16203, 17251, 4580, 4574, 1126, 4806, 587, 2]
+// Dependencies: [19, 5108, 5111, 5113, 21, 558, 576, 11988, 8772, 573, 10919, 5135, 10862, 16463, 17532, 4772, 4766, 1126, 5000, 587, 2]
 
-// Module 17250 (useVoicePanelCardUserStateIcons)
+// Module 17531 (useVoicePanelCardUserStateIcons)
 import Fragment from "Fragment" /* 21 */;
 import intl6 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import CallConstants from "CallConstants" /* 4917 */;
-import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9350 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11915 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17251 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import CallConstants from "CallConstants" /* 5113 */;
+import VoiceStateIconUtils from "VoiceStateIconUtils" /* 8772 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11988 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17532 */;
 import react from "react" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
-import VoiceStateStore from "VoiceStateStore" /* 4915 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
+import VoiceStateStore from "VoiceStateStore" /* 5111 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,12 +21,12 @@ const require = globalThis.__r;
 let _require, dependencyMap, importDefault, obj1, openManaResult, openResult, str;
 
 let tmp2;
-const MobileAudioOutputExperimentDefault = tmp2(9673);
-const useMuteAwareLocalVolumeDefault = tmp2(9714);
+const MobileAudioOutputExperimentDefault = tmp2(10862);
+const useMuteAwareLocalVolumeDefault = tmp2(10919);
 const ParticipantTypes = CallConstants.ParticipantTypes;
 const jsx = Fragment.jsx;
 const VoicePanelCardUserStateIconType = { STREAM_ICON: "STREAM_ICON", USER_VIDEO_ICON: "USER_VIDEO_ICON", MUTE_DEAFEN_ICON: "MUTE_DEAFEN_ICON", USER_DISCONNECTED_ICON: "DISCONNECTED_ICON", SPEAKER_MUTE_ICON: "SPEAKER_MUTE_ICON" };
-tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) => {
+tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelCardUserStateIcons(arg0, arg1, arg2, arg3) {
   let closure_0;
   let closure_1;
   let connected;
@@ -63,15 +63,13 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
   const videoIconState = useVideoIconState(tmp11, arg2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [RTCConnectionStore];
-    class C {
-      constructor() {
-        return closure_1_4.isConnected();
-      }
-    }
+    const fn = function _() {
+      return connected.isConnected();
+    };
     cResult[0] = items;
-    cResult[1] = C;
+    cResult[1] = fn;
     tmp13 = items;
-    tmp14 = C;
+    tmp14 = fn;
   } else {
     [tmp13, tmp14] = cResult;
   }
@@ -79,11 +77,6 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
   const stateFromStores = tmpResult6.useStateFromStores(tmp13, tmp14);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [VoiceStateStore];
-    class C {
-      constructor() {
-        return closure_1_4.isConnected();
-      }
-    }
     cResult[2] = items1;
     tmp17 = items1;
   } else {
@@ -92,19 +85,15 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
   if (cResult[3] === tmp4) {
     let tmp19;
     let tmp20;
-    let tmp23;
     let tmp24;
+    let tmp28;
     if (cResult[4] === arg1) {
       tmp19 = cResult[5];
       tmp20 = cResult[6];
     }
     const tmpResult7 = tmp(tmp2[9]);
     const stateFromStores1 = tmpResult7.useStateFromStores(tmp17, tmp19, tmp20);
-    class C {
-      constructor() {
-        return closure_1_4.isConnected();
-      }
-    }
+    let tmp23;
     const tmp5Result = tmp5(tmp2[10]);
     if (arg0 === ParticipantTypes.STREAM) {
       tmp23 = arg1;
@@ -114,11 +103,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       let obj2 = { location: "useVoicePanelCardUserStateIcons" };
       cResult[7] = obj2;
-      class C {
-        constructor() {
-          return closure_1_4.isConnected();
-        }
-      }
+      tmp24 = obj2;
     } else {
       tmp24 = cResult[7];
     }
@@ -129,22 +114,15 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
     if (cResult[8] !== setShowFloatingCTA) {
       class V {
         constructor() {
-          tmp = setShowFloatingCTA(closure_0(closure_2[14]).OverrideFloatingCTA.BAD_CONNECTION);
-          return;
+          setShowFloatingCTA(VoicePanelFloatingCTAUtils.OverrideFloatingCTA.BAD_CONNECTION);
         }
       }
       cResult[8] = setShowFloatingCTA;
-      class C {
-        constructor() {
-          return closure_1_4.isConnected();
-        }
-      }
       cResult[9] = V;
     } else {
       class V {
         constructor() {
-          tmp = setShowFloatingCTA(closure_0(closure_2[14]).OverrideFloatingCTA.BAD_CONNECTION);
-          return;
+          setShowFloatingCTA(VoicePanelFloatingCTAUtils.OverrideFloatingCTA.BAD_CONNECTION);
         }
       }
     }
@@ -169,7 +147,11 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
             openManaResult = openMana("user-disconnected-indicator", obj1);
           } else {
             obj4 = { key: "user-disconnected-indicator", icon: null, content: null };
-            obj4.icon = function icon() { /* body not rendered: F148396 */ };
+            obj4.icon = function icon() {
+              const obj = { size: "xs", color: closure_1_1(setShowFloatingCTA[19]).colors.STATUS_WARNING };
+              const CircleErrorIcon = closure_1_0(setShowFloatingCTA[18]).CircleErrorIcon;
+              return closure_1_7(CircleErrorIcon, obj);
+            };
             open = tmp5.open;
             intl = tmp(tmp2[17]).intl;
             obj4.content = intl.string(tmp(tmp2[17]).t.HFwRpk);
@@ -179,11 +161,6 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
         }
       }
       cResult[10] = P;
-      class C {
-        constructor() {
-          return closure_1_4.isConnected();
-        }
-      }
     } else {
       class P {
         constructor() {
@@ -204,7 +181,11 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
             openManaResult = openMana("user-disconnected-indicator", obj1);
           } else {
             obj4 = { key: "user-disconnected-indicator", icon: null, content: null };
-            obj4.icon = function icon() { /* body not rendered: F148396 */ };
+            obj4.icon = function icon() {
+              const obj = { size: "xs", color: closure_1_1(setShowFloatingCTA[19]).colors.STATUS_WARNING };
+              const CircleErrorIcon = closure_1_0(setShowFloatingCTA[18]).CircleErrorIcon;
+              return closure_1_7(CircleErrorIcon, obj);
+            };
             open = tmp5.open;
             intl = tmp(tmp2[17]).intl;
             obj4.content = intl.string(tmp(tmp2[17]).t.HFwRpk);
@@ -234,7 +215,11 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
             openManaResult = openMana("user-disconnected-indicator", obj1);
           } else {
             obj4 = { key: "user-disconnected-indicator", icon: null, content: null };
-            obj4.icon = function icon() { /* body not rendered: F148396 */ };
+            obj4.icon = function icon() {
+              const obj = { size: "xs", color: closure_1_1(setShowFloatingCTA[19]).colors.STATUS_WARNING };
+              const CircleErrorIcon = closure_1_0(setShowFloatingCTA[18]).CircleErrorIcon;
+              return closure_1_7(CircleErrorIcon, obj);
+            };
             open = tmp5.open;
             intl = tmp(tmp2[17]).intl;
             obj4.content = intl.string(tmp(tmp2[17]).t.HFwRpk);
@@ -263,7 +248,11 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
             openManaResult = openMana("user-disconnected-indicator", obj1);
           } else {
             obj4 = { key: "user-disconnected-indicator", icon: null, content: null };
-            obj4.icon = function icon() { /* body not rendered: F148396 */ };
+            obj4.icon = function icon() {
+              const obj = { size: "xs", color: closure_1_1(setShowFloatingCTA[19]).colors.STATUS_WARNING };
+              const CircleErrorIcon = closure_1_0(setShowFloatingCTA[18]).CircleErrorIcon;
+              return closure_1_7(CircleErrorIcon, obj);
+            };
             open = tmp5.open;
             intl = tmp(tmp2[17]).intl;
             obj4.content = intl.string(tmp(tmp2[17]).t.HFwRpk);
@@ -292,7 +281,11 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
               openManaResult = openMana("user-disconnected-indicator", obj1);
             } else {
               obj4 = { key: "user-disconnected-indicator", icon: null, content: null };
-              obj4.icon = function icon() { /* body not rendered: F148396 */ };
+              obj4.icon = function icon() {
+                const obj = { size: "xs", color: closure_1_1(setShowFloatingCTA[19]).colors.STATUS_WARNING };
+                const CircleErrorIcon = closure_1_0(setShowFloatingCTA[18]).CircleErrorIcon;
+                return closure_1_7(CircleErrorIcon, obj);
+              };
               open = tmp5.open;
               intl = tmp(tmp2[17]).intl;
               obj4.content = intl.string(tmp(tmp2[17]).t.HFwRpk);
@@ -301,12 +294,8 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
             return;
           }
         }
-        cResult[11] = tmp28;
-        class C {
-          constructor() {
-            return closure_1_4.isConnected();
-          }
-        }
+        cResult[11] = tmp29;
+        tmp28 = tmp29;
       } else {
         class P {
           constructor() {
@@ -327,7 +316,11 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
               openManaResult = openMana("user-disconnected-indicator", obj1);
             } else {
               obj4 = { key: "user-disconnected-indicator", icon: null, content: null };
-              obj4.icon = function icon() { /* body not rendered: F148396 */ };
+              obj4.icon = function icon() {
+                const obj = { size: "xs", color: closure_1_1(setShowFloatingCTA[19]).colors.STATUS_WARNING };
+                const CircleErrorIcon = closure_1_0(setShowFloatingCTA[18]).CircleErrorIcon;
+                return closure_1_7(CircleErrorIcon, obj);
+              };
               open = tmp5.open;
               intl = tmp(tmp2[17]).intl;
               obj4.content = intl.string(tmp(tmp2[17]).t.HFwRpk);
@@ -338,16 +331,15 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
         }
       }
     }
-    return tmp27;
+    return tmp28;
   }
   class A {
     constructor() {
-      voicePlatformForChannel = null;
+      let voicePlatformForChannel = null;
       if (null != closure_1) {
         voicePlatformForChannel = null;
         if (null != closure_0) {
-          tmp4 = closure_5;
-          voicePlatformForChannel = closure_5.getVoicePlatformForChannel(tmp, tmp3);
+          voicePlatformForChannel = VoiceStateStore.getVoicePlatformForChannel(tmp, tmp3);
         }
       }
       return voicePlatformForChannel;
@@ -360,7 +352,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
   cResult[6] = items2;
   tmp20 = items2;
   tmp19 = A;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useVoicePanelCardUserStateIcons(arg0, arg1, arg2) {
   let _null;
   let closure_0;
   let closure_1;
@@ -393,8 +385,8 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
   }
   muteDeafenIconState = useMuteDeafenIconState(tmp7, arg2);
   let tmp10;
-  const useVideoIconState = tmp4(9350).useVideoIconState;
-  tmp4(9350);
+  const useVideoIconState = tmp4(8772).useVideoIconState;
+  tmp4(8772);
   if (arg0 === stateFromStores.USER) {
     tmp10 = arg1;
   }
@@ -420,7 +412,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
   if (arg0 === stateFromStores.STREAM) {
     tmp15 = arg1;
   }
-  const effectiveVolume = tmp2Result(tmp15, tmp4(4951).MediaEngineContextTypes.STREAM).effectiveVolume;
+  const effectiveVolume = tmp2Result(tmp15, tmp4(5135).MediaEngineContextTypes.STREAM).effectiveVolume;
   const tmp2Result2 = MobileAudioOutputExperimentDefault;
   showTileVolumeIndicator = tmp2Result2.useConfig({ location: "useVoicePanelCardUserStateIcons" }).showTileVolumeIndicator;
   if (showTileVolumeIndicator) {
@@ -429,7 +421,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
   if (showTileVolumeIndicator) {
     showTileVolumeIndicator = arg0 === tmp6.STREAM;
   }
-  const tmp4Result6 = tmp4(16203);
+  const tmp4Result6 = tmp4(16463);
   isRTCDisconnectedUIVisible = tmp4Result6.useIsRTCDisconnectedUIVisible(tmp, arg1);
   const items3 = [setShowFloatingCTA];
   callback = obj.useCallback(() => {

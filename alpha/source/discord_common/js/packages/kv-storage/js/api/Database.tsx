@@ -1,13 +1,13 @@
-// Module ID: 2086
-// Function ID: 2087
+// Module ID: 2098
+// Function ID: 2099
 // Name: Database
-// Dependencies: [5, 2087, 2085, 2088, 10, 2]
+// Dependencies: [5, 2099, 2097, 2100, 10, 2]
 
-// Module 2086 (Database)
+// Module 2098 (Database)
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
-import TableId from "TableId" /* 2085 */;
-import Host2 from "Host" /* 2087 */;
-import Runtime2 from "Runtime" /* 2088 */;
+import TableId from "TableId" /* 2097 */;
+import Host2 from "Host" /* 2099 */;
+import Runtime2 from "Runtime" /* 2100 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ class Database {
       obj.name = openSyncUnsafeResult.name;
       obj.lastState = TableId.DatabaseState.Open;
       obj.handle = openSyncUnsafeResult.handle;
-      const Runtime = tmp2(2088).Runtime;
+      const Runtime = tmp2(2100).Runtime;
       obj.databaseStateCallback = Runtime.addDatabaseStateCallback((arg0, lastState) => {
         if (obj.handle === arg0) {
           tmp.lastState = lastState;
@@ -91,7 +91,7 @@ class Database {
   }
   execute(table, arg1) {
     let closure_0;
-    const f135841 = async (arg0) => {
+    const f137231 = async (arg0) => {
       raw = raw.raw;
       const execute = raw.execute;
       const obj = { handle: 0 };
@@ -123,7 +123,7 @@ class Database {
         if (type == null) {
           type = table.type;
         }
-        executeAsyncResult = executeAsync(type, f135841);
+        executeAsyncResult = executeAsync(type, f137231);
       } else {
         let type2 = type;
         const timeAsync = require("AppStartPerformance").timeAsync;
@@ -142,7 +142,7 @@ class Database {
           if (closure_0 == null) {
             type = table.type;
           }
-          return executeAsync(type, f135841);
+          return executeAsync(type, f137231);
         }
         executeAsyncResult = timeAsync("\u{1F4BE}", "" + type2 + " " + str, callback);
       }

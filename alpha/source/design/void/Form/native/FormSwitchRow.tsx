@@ -1,37 +1,34 @@
-// Module ID: 8936
-// Function ID: 8937
+// Module ID: 8567
+// Function ID: 8568
 // Name: FormSwitchRow
-// Dependencies: [32, 109, 19, 17, 21, 4896, 558, 576, 1369, 6642, 8934, 6640, 6080, 6705, 2]
+// Dependencies: [32, 109, 19, 17, 21, 5090, 558, 576, 1381, 6819, 8565, 6817, 6266, 6882, 2]
 
-// Module 8936 (FormSwitchRow)
+// Module 8567 (FormSwitchRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import RedesignCompat from "RedesignCompat" /* 6080 */;
-import FormRowDefault from "FormRow" /* 6640 */;
-import FormLabelDefault from "FormLabel" /* 6642 */;
+import RedesignCompat from "RedesignCompat" /* 6266 */;
+import FormRowDefault from "FormRow" /* 6817 */;
+import FormLabelDefault from "FormLabel" /* 6819 */;
+import Form_FormSwitchDefault from "Form/FormSwitch" /* 8565 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let onValueChange;
 
 let c9;
 let metroImportAll;
 let tmp;
-let tmp13;
-const PlatformUtils = tmp(1369);
-const TableSwitchRow2 = tmp(6705);
-const Form_FormSwitchDefault = tmp13(8934);
+const PlatformUtils = tmp(1381);
+const TableSwitchRow2 = tmp(6882);
 let closure_3 = ["onValueChange", "value", "disabled", "label", "subLabel", "accessibilityHint", "trailing", "numberOfLines", "switchProps"];
 const View = react_native.View;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let closure_10 = createStyles.createStyles({ trailing: { flex: 1, flexDirection: "row", width: "100%", alignItems: "center" } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueChange) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormSwitchRow(onValueChange) {
   let accessibilityHint;
   let disabled;
   let first;
@@ -40,10 +37,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueChange)
   let numberOfLines;
   let subLabel;
   let switchProps;
+  let tmp10;
   let tmp11;
   let tmp12;
+  let tmp18;
+  let tmp4;
   let tmp5;
   let tmp6;
+  let tmp8;
   let tmp9;
   let trailing;
   let tmp2 = dependencyMap;
@@ -57,18 +58,6 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueChange)
     let closure_1 = value;
     ({ disabled, label, subLabel, accessibilityHint, trailing, numberOfLines, switchProps } = onValueChange);
     const tmp16 = _objectWithoutProperties(onValueChange, closure_3);
-    class D {
-      constructor() {
-        let tmp2 = null != closure_0;
-        const tmp = closure_0;
-        if (tmp2) {
-          tmp2 = null != closure_1;
-        }
-        if (tmp2) {
-          tmp(!closure_1);
-        }
-      }
-    }
     cResult[0] = onValueChange;
     cResult[1] = accessibilityHint;
     cResult[2] = label;
@@ -82,14 +71,20 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueChange)
     cResult[10] = value;
     tmp12 = trailing;
     tmp11 = switchProps;
+    tmp10 = disabled;
     tmp9 = subLabel;
+    tmp8 = tmp16;
     tmp6 = numberOfLines;
     tmp5 = label;
+    tmp4 = accessibilityHint;
   } else {
+    tmp4 = cResult[1];
     tmp5 = cResult[2];
     tmp6 = cResult[3];
     closure_0 = cResult[4];
+    tmp8 = cResult[5];
     tmp9 = cResult[6];
+    tmp10 = cResult[7];
     tmp11 = cResult[8];
     tmp12 = cResult[9];
     closure_1 = cResult[10];
@@ -101,153 +96,176 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueChange)
     }
     cResult[11] = tmp11;
     cResult[12] = obj2;
+    tmp18 = obj2;
+  } else {
+    tmp18 = cResult[12];
   }
-  const tmp18 = closure_10();
+  const tmp19 = closure_10();
   PlatformUtils;
   if (cResult[13] === tmp7) {
-    let tmp25;
-    let tmp24;
+    let tmp27;
+    let tmp26;
     [first, closure_3] = react.useState(tmp13);
     const obj3 = react;
     if (cResult[16] !== tmp13) {
-      class O {
-        constructor() {
-          closure_3(closure_1);
-        }
-      }
+      const fn = function _() {
+        closure_3(closure_1);
+      };
       const items = [tmp13];
       cResult[16] = tmp13;
-      cResult[17] = O;
+      cResult[17] = fn;
       cResult[18] = items;
-      tmp25 = items;
-      tmp24 = O;
+      tmp27 = items;
+      tmp26 = fn;
     } else {
-      class O {
-        constructor() {
-          closure_3(closure_1);
-        }
-      }
-      tmp25 = cResult[18];
+      tmp26 = cResult[17];
+      tmp27 = cResult[18];
     }
-    const effect = obj3.useEffect(tmp24, tmp25);
+    const effect = obj3.useEffect(tmp26, tmp27);
     if (cResult[19] === first) {
-      class O {
-        constructor() {
-          closure_3(closure_1);
-        }
+      let tmp29;
+      if (cResult[20] === tmp7) {
+        tmp29 = cResult[21];
       }
+      let tmp30;
       if (typeof tmp5 === "string") {
-        class O {
-          constructor() {
-            closure_3(closure_1);
-          }
-        }
+        tmp30 = tmp5;
       }
-      let sum = tmp28;
-      const tmp30 = null != undefined && typeof tmp9 === "string";
-      if (tmp30) {
-        class O {
-          constructor() {
-            closure_3(closure_1);
-          }
-        }
+      let sum = tmp30;
+      const tmp32 = null != tmp30 && typeof tmp9 === "string";
+      if (tmp32) {
         const _HermesInternal = HermesInternal;
-        sum = tmp28 + " " + tmp9;
+        sum = tmp30 + " " + tmp9;
       }
       if (cResult[22] === tmp5) {
-        class O {
-          constructor() {
-            closure_3(closure_1);
+        let tmp35;
+        if (cResult[23] === tmp6) {
+          tmp35 = cResult[24];
+        }
+        if (cResult[25] === tmp19.trailing) {
+          if (cResult[26] === tmp35) {
+            let tmp40;
+            if (cResult[27] === (null != tmp12 && tmp12)) {
+              tmp40 = cResult[28];
+            }
+            if (cResult[29] === first) {
+              let tmp45;
+              if (cResult[30] === (undefined !== tmp10 && tmp10)) {
+                tmp45 = cResult[31];
+              }
+              if (cResult[32] === (undefined !== tmp10 && tmp10)) {
+                if (cResult[33] === tmp7) {
+                  if (cResult[34] === tmp18) {
+                    let tmp46;
+                    if (cResult[35] === tmp13) {
+                      tmp46 = cResult[36];
+                    }
+                    if (cResult[37] === tmp4) {
+                      if (cResult[38] === sum) {
+                        if (cResult[39] === (undefined !== tmp10 && tmp10)) {
+                          if (cResult[40] === tmp29) {
+                            if (cResult[41] === tmp8) {
+                              if (cResult[42] === tmp9) {
+                                if (cResult[43] === tmp40) {
+                                  if (cResult[44] === tmp44) {
+                                    if (cResult[45] === tmp45) {
+                                      let tmp54;
+                                      if (cResult[46] === tmp46) {
+                                        tmp54 = cResult[47];
+                                      }
+                                      return tmp54;
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    const obj4 = { label: tmp40, subLabel: tmp9, disabled: undefined !== tmp10 && tmp10, onPress: tmp44, accessible: true, onAccessibilityTap: tmp29, accessibilityRole: "switch", accessibilityLabel: sum, accessibilityState: tmp45, accessibilityHint: tmp4, trailing: tmp46 };
+                    const tmp57 = FormRowDefault;
+                    const merged = Object.assign(tmp8);
+                    const tmp61 = metroImportAll(tmp57, obj4);
+                    cResult[37] = tmp4;
+                    cResult[38] = sum;
+                    cResult[39] = undefined !== tmp10 && tmp10;
+                    cResult[40] = tmp29;
+                    cResult[41] = tmp8;
+                    cResult[42] = tmp9;
+                    cResult[43] = tmp40;
+                    cResult[44] = tmp44;
+                    cResult[45] = tmp45;
+                    cResult[46] = tmp46;
+                    cResult[47] = tmp61;
+                    tmp54 = tmp61;
+                  }
+                }
+              }
+              const obj5 = { disabled: undefined !== tmp10 && tmp10, value: tmp13, onValueChange: tmp7 };
+              const tmp49 = Form_FormSwitchDefault;
+              const merged1 = Object.assign(tmp18);
+              const tmp53 = metroImportAll(tmp49, obj5);
+              cResult[32] = undefined !== tmp10 && tmp10;
+              cResult[33] = tmp7;
+              cResult[34] = tmp18;
+              cResult[35] = tmp13;
+              cResult[36] = tmp53;
+              tmp46 = tmp53;
+            }
+            const obj6 = { disabled: undefined !== tmp10 && tmp10, checked: first };
+            cResult[29] = first;
+            cResult[30] = undefined !== tmp10 && tmp10;
+            cResult[31] = obj6;
+            tmp45 = obj6;
           }
         }
-        if (cResult[25] === tmp18.trailing) {
-          class O {
-            constructor() {
-              closure_3(closure_1);
-            }
-          }
-        }
-        const obj4 = { style: tmp18.trailing, children: items1 };
-        items1 = [tmp32, null != tmp12 && tmp12];
-        cResult[25] = tmp18.trailing;
-        const tmp40 = React4(View, obj4);
-        class D {
-          constructor() {
-            let tmp2 = null != closure_0;
-            const tmp = closure_0;
-            if (tmp2) {
-              tmp2 = null != closure_1;
-            }
-            if (tmp2) {
-              tmp(!closure_1);
-            }
-          }
-        }
-        cResult[26] = tmp32;
+        const obj7 = { style: tmp19.trailing, children: items1 };
+        items1 = [tmp35, null != tmp12 && tmp12];
+        const tmp43 = React4(View, obj7);
+        cResult[25] = tmp19.trailing;
+        cResult[26] = tmp35;
         cResult[27] = null != tmp12 && tmp12;
-        cResult[28] = tmp40;
+        cResult[28] = tmp43;
+        tmp40 = tmp43;
       }
-      const obj5 = { numberOfLines: tmp6, text: tmp5 };
-      const tmp35 = metroImportAll(FormLabelDefault, obj5);
-      class D {
-        constructor() {
-          let tmp2 = null != closure_0;
-          const tmp = closure_0;
-          if (tmp2) {
-            tmp2 = null != closure_1;
-          }
-          if (tmp2) {
-            tmp(!closure_1);
-          }
-        }
-      }
+      const obj8 = { numberOfLines: tmp6, text: tmp5 };
+      const tmp38 = metroImportAll(FormLabelDefault, obj8);
       cResult[22] = tmp5;
       cResult[23] = tmp6;
-      cResult[24] = tmp35;
+      cResult[24] = tmp38;
+      tmp35 = tmp38;
     }
-    const fn = function j() {
+    function onAccessibilityTap() {
       const tmp = closure_3(!first);
       const timerId = setTimeout(() => {
         if (closure_1_0 != null) {
           tmp(!first);
         }
       });
-    };
-    cResult[19] = first;
-    class D {
-      constructor() {
-        let tmp2 = null != closure_0;
-        const tmp = closure_0;
-        if (tmp2) {
-          tmp2 = null != closure_1;
-        }
-        if (tmp2) {
-          tmp(!closure_1);
-        }
-      }
     }
+    cResult[19] = first;
     cResult[20] = tmp7;
-    cResult[21] = fn;
+    cResult[21] = onAccessibilityTap;
+    tmp29 = onAccessibilityTap;
   }
-  class D {
-    constructor() {
-      let tmp2 = null != closure_0;
-      const tmp = closure_0;
-      if (tmp2) {
-        tmp2 = null != closure_1;
-      }
-      if (tmp2) {
-        tmp(!closure_1);
-      }
+  function handleOnPress() {
+    let tmp2 = null != closure_0;
+    const tmp = closure_0;
+    if (tmp2) {
+      tmp2 = null != closure_1;
+    }
+    if (tmp2) {
+      tmp(!closure_1);
     }
   }
   cResult[13] = tmp7;
   cResult[14] = tmp13;
-  cResult[15] = D;
-}) : ((onValueChange) => {
+  cResult[15] = handleOnPress;
+}) : (function FormSwitchRow(onValueChange) {
   let accessibilityHint;
   let first;
-  let fn;
+  let handleOnPress;
   let items1;
   let label;
   let numberOfLines;
@@ -292,7 +310,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueChange)
     label: React4(View, obj3),
     subLabel,
     disabled: flag,
-    onPress: fn,
+    onPress: handleOnPress,
     accessible: true,
     onAccessibilityTap() {
       const tmp = closure_3(!first);
@@ -312,9 +330,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueChange)
   const merged1 = Object.assign(merged);
   obj3 = { style: tmp2.trailing, children: items1 };
   items1 = [metroImportAll(FormLabelDefault, { numberOfLines, text: label }), null != trailing && trailing];
-  fn = undefined;
+  handleOnPress = undefined;
   if (isAndroidResult) {
-    fn = () => {
+    handleOnPress = function handleOnPress() {
       let tmp2 = null != onValueChange;
       const tmp = onValueChange;
       if (tmp2) {
@@ -331,7 +349,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueChange)
   return metroImportAll(tmp14, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((DEPRECATED_style) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormSwitchRowContainer(DEPRECATED_style) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(7);
@@ -373,7 +391,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((DEPRECATED_style) 
     tmp4 = cResult[6];
   }
   return tmp4;
-}) : ((DEPRECATED_style) => {
+}) : (function FormSwitchRowContainer(DEPRECATED_style) {
   let TableSwitchRow;
   let obj5;
   let tmp3Result;

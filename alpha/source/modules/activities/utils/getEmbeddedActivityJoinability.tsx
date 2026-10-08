@@ -1,17 +1,17 @@
-// Module ID: 9082
-// Function ID: 9083
+// Module ID: 10665
+// Function ID: 10666
 // Name: getEmbeddedActivityJoinability
-// Dependencies: [2051, 2074, 4515, 1377, 4915, 1085, 9080, 5041, 558, 576, 9045, 504, 2]
+// Dependencies: [2063, 2086, 4707, 1389, 5111, 1085, 10663, 5410, 558, 576, 10658, 504, 2]
 
-// Module 9082 (getEmbeddedActivityJoinability)
+// Module 10665 (getEmbeddedActivityJoinability)
 import Constants from "Constants" /* 1085 */;
-import ChannelUtils from "ChannelUtils" /* 5041 */;
-import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 9080 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import UserStore from "UserStore" /* 1377 */;
-import VoiceStateStore from "VoiceStateStore" /* 4915 */;
+import ChannelUtils from "ChannelUtils" /* 5410 */;
+import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 10663 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import UserStore from "UserStore" /* 1389 */;
+import VoiceStateStore from "VoiceStateStore" /* 5111 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -118,7 +118,7 @@ function getEmbeddedActivityJoinability(arg0) {
 }
 const Permissions = Constants.Permissions;
 const EmbeddedActivityJoinability = { CAN_JOIN: 0, [0]: "CAN_JOIN", NO_USE_EMBEDDED_ACTIVITIES_PERMISSION: 1, [1]: "NO_USE_EMBEDDED_ACTIVITIES_PERMISSION", NO_CHANNEL_CONNECT_PERMISSION: 2, [2]: "NO_CHANNEL_CONNECT_PERMISSION", CHANNEL_FULL: 3, [3]: "CHANNEL_FULL", NO_CHANNEL: 4, [4]: "NO_CHANNEL", ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS: 5, [5]: "ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS", ACTIVITY_NOT_SUPPORTED_ON_OS: 6, [6]: "ACTIVITY_NOT_SUPPORTED_ON_OS", ACTIVITY_AGE_GATED: 7, [7]: "ACTIVITY_AGE_GATED", NO_USER: 8, [8]: "NO_USER", IS_AFK_CHANNEL: 9, [9]: "IS_AFK_CHANNEL", NO_GUILD: 10, [10]: "NO_GUILD" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedActivityJoinability(userId) {
   let channelId;
   let currentUser;
   let tmp5;
@@ -134,20 +134,30 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   const isActivitiesEnabledForCurrentPlatform = obj2.useIsActivitiesEnabledForCurrentPlatform();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    const fn = function l() {
-      return currentUser.getCurrentUser();
-    };
+    class I {
+      constructor() {
+        return closure_1_6.getCurrentUser();
+      }
+    }
     cResult[0] = items;
-    cResult[1] = fn;
+    cResult[1] = I;
     tmp5 = items;
-    tmp6 = fn;
+    tmp6 = I;
   } else {
     [tmp5, tmp6] = cResult;
   }
   const tmpResult = userId(channelId[11]);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [application, VoiceStateStore, stateFromStores, isActivitiesEnabledForCurrentPlatform];
+    const items1 = [application, , , ];
+    class I {
+      constructor() {
+        return closure_1_6.getCurrentUser();
+      }
+    }
+    items1[1] = VoiceStateStore;
+    items1[2] = stateFromStores;
+    items1[3] = isActivitiesEnabledForCurrentPlatform;
     cResult[2] = items1;
     tmp9 = items1;
   } else {
@@ -158,14 +168,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
       if (cResult[5] === channelId) {
         if (cResult[6] === stateFromStores) {
           if (cResult[7] === isActivitiesEnabledForCurrentPlatform) {
+            let tmp13;
             let tmp14;
-            let tmp15;
             if (cResult[8] === userId) {
-              tmp14 = cResult[9];
-              tmp15 = cResult[10];
+              tmp13 = cResult[9];
+              tmp14 = cResult[10];
             }
             const tmpResult2 = userId(channelId[11]);
-            return tmpResult2.useStateFromStores(tmp9, tmp14, tmp15);
+            return tmpResult2.useStateFromStores(tmp9, tmp13, tmp14);
           }
         }
       }
@@ -173,7 +183,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   }
   class T {
     constructor() {
-      const obj = { userId, activity, application, channelId, currentUser: stateFromStores, isActivitiesEnabledForCurrentPlatform, ChannelStore, VoiceStateStore, PermissionStore, GuildStore };
+      obj = { userId, activity, application, channelId, currentUser: closure_5, isActivitiesEnabledForCurrentPlatform: closure_4, ChannelStore: closure_3, VoiceStateStore: closure_7, PermissionStore: closure_5, GuildStore: closure_4 };
       return getEmbeddedActivityJoinability(obj);
     }
   }
@@ -186,9 +196,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[8] = userId;
   cResult[9] = T;
   cResult[10] = items2;
-  tmp15 = items2;
-  tmp14 = T;
-}) : ((userId) => {
+  tmp14 = items2;
+  tmp13 = T;
+}) : (function useEmbeddedActivityJoinability(userId) {
   let currentUser;
   userId = userId.userId;
   const activity = userId.activity;

@@ -1,18 +1,18 @@
-// Module ID: 8471
-// Function ID: 8472
+// Module ID: 8957
+// Function ID: 8958
 // Name: WishlistActionCreators
-// Dependencies: [5, 7124, 1377, 4536, 6742, 8465, 1085, 1370, 1375, 584, 6746, 1282, 8470, 1242, 5319, 1252, 7863, 2]
+// Dependencies: [5, 7309, 1389, 4728, 6918, 8951, 1085, 1382, 1387, 584, 6922, 1294, 8956, 1254, 5631, 1264, 8281, 2]
 
-// Module 8471 (WishlistActionCreators)
+// Module 8957 (WishlistActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1370 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import WishlistRecord2 from "WishlistRecord" /* 8465 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import WishlistRecord2 from "WishlistRecord" /* 8951 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import UserProfileStore from "UserProfileStore" /* 7124 */;
-import UserStore from "UserStore" /* 1377 */;
-import BillingInfoStore from "BillingInfoStore" /* 4536 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 6742 */;
+import UserProfileStore from "UserProfileStore" /* 7309 */;
+import UserStore from "UserStore" /* 1389 */;
+import BillingInfoStore from "BillingInfoStore" /* 4728 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 6918 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -23,8 +23,8 @@ let c10;
 let closure_12;
 let tmp;
 let unpackModuleId;
-const StorefrontUtils = tmp(6746);
-const f97467 = (id) => id.id;
+const StorefrontUtils = tmp(6922);
+const f99437 = (id) => id.id;
 function extraWishlistParams() {
   const obj = {};
   if (null != BillingInfoStore.ipCountryCode) {
@@ -52,7 +52,7 @@ function maybeDispatchAdditionalActions(wishlist_items) {
   const storefront_pricing = wishlist_items.storefront_pricing;
   if (null != storefront_pricing) {
     const obj2 = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: obj3, data: tmpResult.transformStorefrontPricesServer(storefront_pricing) };
-    obj3 = { type: "skus", skuIds: found.map(f97467) };
+    obj3 = { type: "skus", skuIds: found.map(f99437) };
     const dispatch = tmp3(584).dispatch;
     DispatcherDefault;
     tmpResult = StorefrontUtils;
@@ -678,7 +678,7 @@ let obj = {
         ({ storefront_pricing, skus: skus2 } = body);
         if (null != storefront_pricing) {
           const obj2 = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: obj3, data: obj4.transformStorefrontPricesServer(storefront_pricing) };
-          obj3 = { type: "skus", skuIds: skus2.map(f97467) };
+          obj3 = { type: "skus", skuIds: skus2.map(f99437) };
           const dispatch = tmp(closure_1_2[9]).dispatch;
           closure_1_1(closure_1_2[9]);
           obj4 = closure_1_0(closure_1_2[10]);

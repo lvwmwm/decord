@@ -1,20 +1,20 @@
-// Module ID: 8515
-// Function ID: 8516
+// Module ID: 8999
+// Function ID: 9000
 // Name: DominantColorUtils
-// Dependencies: [32, 19, 17, 1444, 558, 576, 4733, 587, 568, 1886, 2]
+// Dependencies: [32, 19, 17, 1456, 558, 576, 4927, 587, 568, 1898, 2]
 // Exports: getCachedSourceFromURI
 
-// Module 8515 (DominantColorUtils)
+// Module 8999 (DominantColorUtils)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import LRUCacheDefault from "LRUCache" /* 1444 */;
+import LRUCacheDefault from "LRUCache" /* 1456 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault, uri;
+let _require, importDefault;
 
 const Image = react_native.Image;
 let tmp2 = new LRUCacheDefault({ max: 1000 });
@@ -22,7 +22,7 @@ let closure_6 = tmp2;
 let tmp3 = new LRUCacheDefault({ max: 1000 });
 let closure_7 = tmp3;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((uri) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDominantRGBFromImage(uri) {
   let closure_1;
   let tmp13;
   let tmp14;
@@ -57,7 +57,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((uri) => {
       hexToRgbResult = closure_6.get(uri);
     }
     if (hexToRgbResult == null) {
-      const tmpResult = tmp(4733);
+      const tmpResult = tmp(4927);
       hexToRgbResult = tmpResult.hexToRgb(nativeDefault.unsafe_rawColors.PRIMARY_800);
     }
     cResult[2] = uri;
@@ -139,7 +139,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((uri) => {
   }
   const effect1 = obj2.useEffect(tmp14, tmp15);
   return tmp13;
-}) : ((uri) => {
+}) : (function useDominantRGBFromImage(uri) {
   let closure_1;
   let closure_2;
   let first;
@@ -223,10 +223,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((uri) => {
 });
 let closure_8 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDominantColorFromImage(arg0) {
   const tmp = closure_8(arg0);
   return "rgb(" + tmp.r + ", " + tmp.g + ", " + tmp.b + ")";
-}) : ((arg0) => {
+}) : (function useDominantColorFromImage(arg0) {
   const tmp = closure_8(arg0);
   return "rgb(" + tmp.r + ", " + tmp.g + ", " + tmp.b + ")";
 });

@@ -1,24 +1,24 @@
-// Module ID: 13581
-// Function ID: 13582
+// Module ID: 13874
+// Function ID: 13875
 // Name: PrivateChannelRecipientsInviteStore
-// Dependencies: [4782, 7156, 2055, 2051, 6091, 5701, 2112, 2074, 4525, 1377, 1085, 2018, 4728, 9513, 504, 584, 2]
+// Dependencies: [4976, 7336, 2067, 2063, 5938, 6091, 2124, 2086, 4717, 1389, 1085, 2030, 4922, 8679, 504, 584, 2]
 
-// Module 13581 (PrivateChannelRecipientsInviteStore)
+// Module 13874 (PrivateChannelRecipientsInviteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import StringUtils from "StringUtils" /* 2018 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import UserUtilsDefault from "UserUtils" /* 4728 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 9513 */;
-import ExperimentStore from "ExperimentStore" /* 4782 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7156 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import ConsentStore from "ConsentStore" /* 6091 */;
-import FrecencyStore from "FrecencyStore" /* 5701 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
+import StringUtils from "StringUtils" /* 2030 */;
+import ChannelRecord from "ChannelRecord" /* 2067 */;
+import UserUtilsDefault from "UserUtils" /* 4922 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 8679 */;
+import ExperimentStore from "ExperimentStore" /* 4976 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7336 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import ConsentStore from "ConsentStore" /* 5938 */;
+import FrecencyStore from "FrecencyStore" /* 6091 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -251,7 +251,7 @@ const PrivateChannelRecord = ChannelRecord.PrivateChannelRecord;
 let c15 = false;
 let c16 = "";
 let row = 0;
-const authStore4 = [];
+const authStore5 = [];
 const hasFriends = false;
 let c20 = false;
 let set = new Set();

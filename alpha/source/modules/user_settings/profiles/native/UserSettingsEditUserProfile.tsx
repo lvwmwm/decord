@@ -1,22 +1,22 @@
-// Module ID: 14428
-// Function ID: 14429
+// Module ID: 14654
+// Function ID: 14655
 // Name: UserSettingsEditUserProfile
-// Dependencies: [19, 1377, 21, 558, 576, 6664, 6688, 504, 7869, 14429, 2]
+// Dependencies: [19, 1389, 21, 558, 576, 6841, 6865, 504, 8287, 14655, 2]
 
-// Module 14428 (UserSettingsEditUserProfile)
+// Module 14654 (UserSettingsEditUserProfile)
 import Fragment from "Fragment" /* 21 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6664 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6688 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7869 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6841 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6865 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8287 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const UserProfileEditFormDefault = tmp4(14429);
+const UserProfileEditFormDefault = tmp4(14655);
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsEditUserProfile(arg0) {
   let currentUser;
   let stateFromStores;
   let tmp10;
@@ -43,7 +43,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult = stateFromStores(504);
   stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
   if (cResult[2] !== stateFromStores) {
-    class S {
+    class U {
       constructor() {
         if (null != stateFromStores) {
           const tmp3 = maybeFetchUserProfileDefault;
@@ -53,12 +53,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const items1 = [stateFromStores];
     cResult[2] = stateFromStores;
-    cResult[3] = S;
+    cResult[3] = U;
     cResult[4] = items1;
     tmp11 = items1;
-    tmp10 = S;
+    tmp10 = U;
   } else {
-    class S {
+    class U {
       constructor() {
         if (null != stateFromStores) {
           const tmp3 = maybeFetchUserProfileDefault;
@@ -71,7 +71,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const effect = react.useEffect(tmp10, tmp11);
   let tmp13 = null;
   if (null != stateFromStores) {
-    class S {
+    class U {
       constructor() {
         if (null != stateFromStores) {
           const tmp3 = maybeFetchUserProfileDefault;
@@ -80,7 +80,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     if (cResult[5] === stateFromStores) {
-      class S {
+      class U {
         constructor() {
           if (null != stateFromStores) {
             const tmp3 = maybeFetchUserProfileDefault;
@@ -89,7 +89,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       if (cResult[8] === analyticsLocations) {
-        class S {
+        class U {
           constructor() {
             if (null != stateFromStores) {
               const tmp3 = maybeFetchUserProfileDefault;
@@ -99,7 +99,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         tmp13 = tmp21;
       }
-      const tmp23 = jsx(stateFromStores(6664).AnalyticsLocationProvider, { value: analyticsLocations, children: tmp14 });
+      const tmp23 = jsx(stateFromStores(6841).AnalyticsLocationProvider, { value: analyticsLocations, children: tmp14 });
       cResult[8] = analyticsLocations;
       cResult[9] = tmp14;
       cResult[10] = tmp23;
@@ -113,7 +113,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[7] = tmp20;
   }
   return tmp13;
-}) : ((arg0) => {
+}) : (function UserSettingsEditUserProfile(arg0) {
   let currentUser;
   let stateFromStores;
   let tmp3 = useAnalyticsLocationsDefault;
@@ -131,7 +131,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
   let tmp7 = null;
   if (null != stateFromStores) {
-    const AnalyticsLocationProvider = tmp4(6664).AnalyticsLocationProvider;
+    const AnalyticsLocationProvider = tmp4(6841).AnalyticsLocationProvider;
     UserProfileEditFormDefault;
     const merged = Object.assign(arg0);
     tmp7 = <AnalyticsLocationProvider value={analyticsLocations}>{null}</AnalyticsLocationProvider>;

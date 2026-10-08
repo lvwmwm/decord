@@ -1,27 +1,27 @@
-// Module ID: 14703
-// Function ID: 14704
+// Module ID: 14964
+// Function ID: 14965
 // Name: ConnectGuardianBottomSheet
-// Dependencies: [19, 17, 7061, 7062, 21, 4896, 587, 558, 576, 573, 4860, 14704, 1126, 2521, 4892, 14705, 5601, 6652, 2]
+// Dependencies: [19, 17, 7247, 7248, 21, 5090, 587, 558, 576, 573, 5054, 14965, 1126, 2565, 5086, 14966, 5375, 6829, 2]
 
-// Module 14703 (ConnectGuardianBottomSheet)
+// Module 14964 (ConnectGuardianBottomSheet)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef2521 from "module_2521" /* 2521 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6652 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7062 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 14704 */;
+import _modDef2565 from "module_2565" /* 2565 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6829 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7248 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 14965 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7061 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7247 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet;
+let BottomSheet, hideActionSheetResult;
 
 let metroImportAll;
 let metroImportDefault;
@@ -37,7 +37,7 @@ obj2 = { paddingHorizontal: nativeDefault.space.PX_24, paddingVertical: nativeDe
 createStyles = createStyles.createStyles;
 obj3 = { alignItems: "center", gap: nativeDefault.space.PX_8 };
 let closure_10 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuardianBottomSheet(arg0) {
   let body;
   let expiresAt;
   let items2;
@@ -55,13 +55,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp4 = closure_10();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [FamilyCenterStore];
-    const fn = function p() {
-      return FamilyCenterStore.getLinkCode();
-    };
+    class C {
+      constructor() {
+        return closure_1_5.getLinkCode();
+      }
+    }
     cResult[0] = items;
-    cResult[1] = fn;
+    cResult[1] = C;
     tmp5 = items;
-    tmp6 = fn;
+    tmp6 = C;
   } else {
     [tmp5, tmp6] = cResult;
   }
@@ -71,7 +73,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const items1 = [FamilyCenterStore];
     class A {
       constructor() {
-        return FamilyCenterStore.getLinkCodeExpiresAt();
+        return closure_1_5.getLinkCodeExpiresAt();
       }
     }
     cResult[2] = items1;
@@ -88,121 +90,132 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     stateFromStores1 = expiresAt;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
+    class B {
       constructor() {
-        const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet(closure_1_6);
+        obj = closure_1_1(closure_1_2[10]);
+        hideActionSheetResult = obj.hideActionSheet(closure_1_6);
+        return;
       }
     }
-    cResult[4] = R;
+    cResult[4] = B;
     class A {
       constructor() {
-        return FamilyCenterStore.getLinkCodeExpiresAt();
+        return closure_1_5.getLinkCodeExpiresAt();
       }
     }
   } else {
-    class R {
+    class B {
       constructor() {
-        const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet(closure_1_6);
+        obj = closure_1_1(closure_1_2[10]);
+        hideActionSheetResult = obj.hideActionSheet(closure_1_6);
+        return;
       }
     }
   }
   useOnNewPendingRequestDefault(tmp14);
   if (cResult[5] !== title) {
     let stringResult;
-    class R {
+    class B {
       constructor() {
-        const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet(closure_1_6);
+        obj = closure_1_1(closure_1_2[10]);
+        hideActionSheetResult = obj.hideActionSheet(closure_1_6);
+        return;
       }
     }
     if (title == null) {
-      class R {
+      class B {
         constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet(closure_1_6);
+          obj = closure_1_1(closure_1_2[10]);
+          hideActionSheetResult = obj.hideActionSheet(closure_1_6);
+          return;
         }
       }
-      stringResult = obj4.string(_modDef2521.aCUVfL);
+      stringResult = obj4.string(_modDef2565.aCUVfL);
     }
     class A {
       constructor() {
-        return FamilyCenterStore.getLinkCodeExpiresAt();
+        return closure_1_5.getLinkCodeExpiresAt();
       }
     }
     cResult[6] = stringResult;
   } else {
-    class R {
+    class B {
       constructor() {
-        const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet(closure_1_6);
+        obj = closure_1_1(closure_1_2[10]);
+        hideActionSheetResult = obj.hideActionSheet(closure_1_6);
+        return;
       }
     }
   }
   if (cResult[7] === tmp4.centered) {
-    class R {
+    class B {
       constructor() {
-        const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet(closure_1_6);
+        obj = closure_1_1(closure_1_2[10]);
+        hideActionSheetResult = obj.hideActionSheet(closure_1_6);
+        return;
       }
     }
     if (cResult[10] !== body) {
       let formatResult;
-      class R {
+      class B {
         constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet(closure_1_6);
+          obj = closure_1_1(closure_1_2[10]);
+          hideActionSheetResult = obj.hideActionSheet(closure_1_6);
+          return;
         }
       }
       if (body == null) {
-        class R {
+        class B {
           constructor() {
-            const obj = ActionSheetActionCreatorsDefault;
-            obj.hideActionSheet(closure_1_6);
+            obj = closure_1_1(closure_1_2[10]);
+            hideActionSheetResult = obj.hideActionSheet(closure_1_6);
+            return;
           }
         }
         const format = tmp23.format;
         const obj2 = { link };
         class A {
           constructor() {
-            return FamilyCenterStore.getLinkCodeExpiresAt();
+            return closure_1_5.getLinkCodeExpiresAt();
           }
         }
-        formatResult = format(_modDef2521["2O6ltn"], obj2);
+        formatResult = format(_modDef2565["2O6ltn"], obj2);
       }
       class A {
         constructor() {
-          return FamilyCenterStore.getLinkCodeExpiresAt();
+          return closure_1_5.getLinkCodeExpiresAt();
         }
       }
       cResult[11] = formatResult;
     } else {
-      class R {
+      class B {
         constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet(closure_1_6);
+          obj = closure_1_1(closure_1_2[10]);
+          hideActionSheetResult = obj.hideActionSheet(closure_1_6);
+          return;
         }
       }
     }
     if (cResult[12] === tmp4.centered) {
-      class R {
+      class B {
         constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet(closure_1_6);
+          obj = closure_1_1(closure_1_2[10]);
+          hideActionSheetResult = obj.hideActionSheet(closure_1_6);
+          return;
         }
       }
       if (cResult[15] === tmp4.info) {
-        class R {
+        class B {
           constructor() {
-            const obj = ActionSheetActionCreatorsDefault;
-            obj.hideActionSheet(closure_1_6);
+            obj = closure_1_1(closure_1_2[10]);
+            hideActionSheetResult = obj.hideActionSheet(closure_1_6);
+            return;
           }
         }
       }
       class A {
         constructor() {
-          return FamilyCenterStore.getLinkCodeExpiresAt();
+          return closure_1_5.getLinkCodeExpiresAt();
         }
       }
       const obj3 = { style: tmp4.info, children: items2 };
@@ -215,7 +228,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     class A {
       constructor() {
-        return FamilyCenterStore.getLinkCodeExpiresAt();
+        return closure_1_5.getLinkCodeExpiresAt();
       }
     }
     const obj5 = { style: tmp4.centered, variant: "text-md/medium", color: "text-default", children: tmp21 };
@@ -229,7 +242,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = tmp17;
   cResult[9] = metroImportDefault(Text_Text.Text, obj6);
   const tmp20 = metroImportDefault(Text_Text.Text, obj6);
-}) : ((arg0) => {
+}) : (function ConnectGuardianBottomSheet(arg0) {
   let ConnectGuardianCard;
   let body;
   let expiresAt;
@@ -261,20 +274,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const Text = Text_Text.Text;
   if (title == null) {
     const intl = tmp2(1126).intl;
-    title = intl.string(tmp7(2521).aCUVfL);
+    title = intl.string(tmp7(2565).aCUVfL);
   }
   items2 = [metroImportDefault(Text, obj5), ];
   const obj6 = { style: tmp.centered, variant: "text-md/medium", color: "text-default", children: body };
-  const Text2 = tmp2(4892).Text;
+  const Text2 = tmp2(5086).Text;
   if (body == null) {
     const intl2 = tmp2(1126).intl;
     const obj7 = { link };
-    body = intl2.format(tmp7(2521)["2O6ltn"], obj7);
+    body = intl2.format(tmp7(2565)["2O6ltn"], obj7);
   }
   items2[1] = metroImportDefault(Text2, obj6);
   items3 = [metroImportAll(View, obj4), , ];
   const obj8 = { style: tmp.cardContainer, children: metroImportDefault(ConnectGuardianCard, obj9) };
-  ConnectGuardianCard = tmp2(14705).ConnectGuardianCard;
+  ConnectGuardianCard = tmp2(14966).ConnectGuardianCard;
   if (stateFromStores == null) {
     stateFromStores = linkCode;
   }
@@ -284,8 +297,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const obj10 = { startExpanded: true, children: metroImportAll(View, obj3) };
   items3[1] = metroImportDefault(View, obj8);
-  const obj11 = { variant: "secondary", size: "md", text: intl3.string(_modDef2521.Hsm5IF), onPress: callback };
-  const Button = tmp2(5601).Button;
+  const obj11 = { variant: "secondary", size: "md", text: intl3.string(_modDef2565.Hsm5IF), onPress: callback };
+  const Button = tmp2(5375).Button;
   intl3 = tmp2(1126).intl;
   items3[2] = metroImportDefault(Button, obj11);
   return metroImportDefault(BottomSheet, obj10);

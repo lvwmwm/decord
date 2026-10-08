@@ -1,20 +1,18 @@
-// Module ID: 16863
-// Function ID: 16864
+// Module ID: 17142
+// Function ID: 17143
 // Name: MediaGrid
-// Dependencies: [19, 17, 7524, 21, 4896, 558, 576, 16859, 11980, 8404, 16840, 2]
+// Dependencies: [19, 17, 9247, 21, 5090, 558, 576, 17138, 12053, 8600, 17119, 2]
 
-// Module 16863 (MediaGrid)
+// Module 17142 (MediaGrid)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 11980 */;
-import MediaGridItemDefault from "MediaGridItem" /* 16859 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 12053 */;
+import MediaGridItemDefault from "MediaGridItem" /* 17138 */;
 import react from "react" /* 19 */;
-import SearchConstants from "SearchConstants" /* 7524 */;
-import createStyles from "createStyles" /* 4896 */;
+import SearchConstants from "SearchConstants" /* 9247 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let media;
 
 let SEARCH_LIST_HORIZONTAL_PADDING;
 let hasOwnProperty;
@@ -26,7 +24,7 @@ const jsx = Fragment.jsx;
 let obj = { container: obj2 };
 obj2 = { paddingLeft: SEARCH_LIST_HORIZONTAL_PADDING - 2, paddingRight: SEARCH_LIST_HORIZONTAL_PADDING + 4 };
 let closure_8 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((media) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaGrid(media) {
   let onPress;
   const tmp = media;
   const obj = media(onPress[6]);
@@ -85,7 +83,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((media) => {
   cResult[3] = onPress;
   cResult[4] = fn;
   tmp5 = fn;
-}) : ((media) => {
+}) : (function MediaGrid(media) {
   media = media.media;
   const mediaSize = media.mediaSize;
   const onPress = media.onPress;

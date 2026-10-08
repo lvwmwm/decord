@@ -1,15 +1,15 @@
-// Module ID: 16924
-// Function ID: 16925
+// Module ID: 17205
+// Function ID: 17206
 // Name: SearchTabsTransitionGroup
-// Dependencies: [19, 21, 558, 576, 2028, 12297, 4618, 4595, 5604, 5605, 16806, 2]
+// Dependencies: [19, 21, 558, 576, 2040, 12395, 4810, 4787, 5374, 5378, 17086, 2]
 
-// Module 16924 (SearchTabsTransitionGroup)
+// Module 17205 (SearchTabsTransitionGroup)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import spring from "spring" /* 5604 */;
-import springPresets from "springPresets" /* 5605 */;
-import Tabs2 from "Tabs" /* 12297 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import spring from "spring" /* 5374 */;
+import springPresets from "springPresets" /* 5378 */;
+import Tabs2 from "Tabs" /* 12395 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 let set;
 
 let tmp;
-const native = tmp(4595);
+const native = tmp(4787);
 function getItemKey(items) {
   items = items.items;
   const mapped = items.map((id) => id.id);
@@ -28,12 +28,12 @@ function renderItem(arg0, state, transitionState, cleanUp) {
 }
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCountFormatter() {
   let setting;
   let tmp3;
   let obj = setting(576);
   const cResult = obj.c(2);
-  const SearchResultExactCountEnabled = setting(2028).SearchResultExactCountEnabled;
+  const SearchResultExactCountEnabled = setting(2040).SearchResultExactCountEnabled;
   setting = SearchResultExactCountEnabled.useSetting();
   if (cResult[0] !== setting) {
     const fn = function t(toLocaleString) {
@@ -57,9 +57,9 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
+}) : (function useCountFormatter() {
   let setting;
-  const SearchResultExactCountEnabled = setting(2028).SearchResultExactCountEnabled;
+  const SearchResultExactCountEnabled = setting(2040).SearchResultExactCountEnabled;
   setting = SearchResultExactCountEnabled.useSetting();
   const items = [setting];
   return react.useCallback((toLocaleString) => {
@@ -88,7 +88,7 @@ const __initData6 = { code: "function SearchTabsTransitionGroupTsx8(){const{swip
 const __initData7 = { code: "function SearchTabsTransitionGroupTsx9(){const{state}=this.__closure;return state.scrollOffset.get()>0;}" };
 const __initData8 = { code: "function SearchTabsTransitionGroupTsx10(isOffsetFromStart,prevIsOffsetFromStart){const{swipeForMemberListContext}=this.__closure;if(isOffsetFromStart!==prevIsOffsetFromStart){var _swipeForMemberListCo;(_swipeForMemberListCo=swipeForMemberListContext)===null||_swipeForMemberListCo===void 0||_swipeForMemberListCo.disallowGesture.set(isOffsetFromStart);}}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnimatedTabs(state) {
   let cleanUp;
   let tmp = state;
   let obj = state(cleanUp[3]);
@@ -265,7 +265,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   cResult[3] = items;
   tmp8 = items;
   tmp7 = fn2;
-}) : ((state) => {
+}) : (function AnimatedTabs(state) {
   let Tabs;
   let gesture;
   let obj3;
@@ -378,7 +378,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   return context(View, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchTabsTransitionGroup(state) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -393,7 +393,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : ((state) => {
+}) : (function SearchTabsTransitionGroup(state) {
   const items = [state.state];
   return jsx(native.TransitionGroup, { items, getItemKey, renderItem });
 });

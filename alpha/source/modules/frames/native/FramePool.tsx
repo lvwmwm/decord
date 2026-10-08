@@ -1,21 +1,21 @@
-// Module ID: 17175
-// Function ID: 17176
+// Module ID: 17456
+// Function ID: 17457
 // Name: FramePool
-// Dependencies: [32, 19, 17, 9000, 8738, 21, 4896, 558, 576, 1484, 504, 16634, 9174, 1266, 9019, 17176, 2]
+// Dependencies: [32, 19, 17, 10612, 10613, 21, 5090, 558, 576, 1496, 504, 16896, 10740, 11128, 10618, 17457, 2]
 
-// Module 17175 (FramePool)
+// Module 17456 (FramePool)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import v1 from "v1" /* 1266 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 9019 */;
-import FramePoolManagerDefault from "FramePoolManager" /* 16634 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10618 */;
+import makeIframeIdDefault from "makeIframeId" /* 11128 */;
+import FramePoolManagerDefault from "FramePoolManager" /* 16896 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 9000 */;
-import FramesConstants from "FramesConstants" /* 8738 */;
-import createStyles from "createStyles" /* 4896 */;
+import FramesStore from "FramesStore" /* 10612 */;
+import FramesConstants from "FramesConstants" /* 10613 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -25,13 +25,13 @@ let metroImportAll;
 let metroImportDefault;
 let tmp;
 const get_initialized = tmp(504);
-const WebViewContext = tmp(9174);
+const WebViewContext = tmp(10740);
 const View = react_native.View;
 ({ FrameLayoutModes: metroImportDefault, isLaunched: metroImportAll } = FramesConstants);
 const jsx = Fragment.jsx;
 let closure_10 = createStyles.createStyles({ pool: { position: "absolute", opacity: 0 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FramePool() {
   let allFrames;
   let height;
   let require;
@@ -228,7 +228,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = height;
   cResult[4] = width;
   cResult[5] = size;
-}) : (() => {
+}) : (function FramePool() {
   let allFrames;
   let height;
   let require;
@@ -269,7 +269,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }, [])} style={items1} pointerEvents="none">{null}</View>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((frame) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function PooledFrame(frame) {
   let closure_2;
   let first;
   let first1;
@@ -280,8 +280,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((frame) => {
   id = frame.id;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function l() {
-      const obj = id(closure_2[13]);
-      return obj.v4();
+      return first1(closure_2[13])();
     };
     cResult[0] = fn;
     first = fn;
@@ -352,80 +351,68 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((frame) => {
       }
     }
     if (cResult[9] !== id) {
-      class S {
+      class P {
         constructor() {
-          return () => {
-            const obj = first1(closure_2[11]);
-            obj.removeFrameEntry(id);
-          };
+          const obj = FramePoolManagerDefault;
+          return obj.getWinningTargetState(id);
         }
       }
       cResult[9] = id;
-      cResult[10] = tmp15;
-      tmp14 = tmp15;
+      cResult[10] = P;
+      tmp14 = P;
     } else {
-      class S {
+      class P {
         constructor() {
-          return () => {
-            const obj = first1(closure_2[11]);
-            obj.removeFrameEntry(id);
-          };
+          const obj = FramePoolManagerDefault;
+          return obj.getWinningTargetState(id);
         }
       }
     }
-    const syncExternalStore = obj2.useSyncExternalStore(first1(16634).subscribe, tmp14);
-    const tmp16 = first1;
+    const syncExternalStore = obj2.useSyncExternalStore(first1(16896).subscribe, tmp14);
+    const tmp15 = first1;
     if (cResult[11] !== syncExternalStore) {
-      class S {
+      class P {
         constructor() {
-          return () => {
-            const obj = first1(closure_2[11]);
-            obj.removeFrameEntry(id);
-          };
+          const obj = FramePoolManagerDefault;
+          return obj.getWinningTargetState(id);
         }
       }
-      let tmp19 = syncExternalStore;
+      let tmp18 = syncExternalStore;
       if (syncExternalStore == null) {
-        class S {
+        class P {
           constructor() {
-            return () => {
-              const obj = first1(closure_2[11]);
-              obj.removeFrameEntry(id);
-            };
+            const obj = FramePoolManagerDefault;
+            return obj.getWinningTargetState(id);
           }
         }
-        tmp20[0] = constants.FOCUSED;
-        tmp19 = tmp20;
+        tmp19[0] = constants.FOCUSED;
+        tmp18 = tmp19;
       }
       cResult[11] = syncExternalStore;
-      cResult[12] = tmp19;
+      cResult[12] = tmp18;
     } else {
-      class S {
+      class P {
         constructor() {
-          return () => {
-            const obj = first1(closure_2[11]);
-            obj.removeFrameEntry(id);
-          };
+          const obj = FramePoolManagerDefault;
+          return obj.getWinningTargetState(id);
         }
       }
     }
     if (cResult[13] === frame) {
-      class S {
+      class P {
         constructor() {
-          return () => {
-            const obj = first1(closure_2[11]);
-            obj.removeFrameEntry(id);
-          };
+          const obj = FramePoolManagerDefault;
+          return obj.getWinningTargetState(id);
         }
       }
     }
     cResult[13] = frame;
     cResult[14] = first1;
-    cResult[15] = tmp18;
-    cResult[16] = jsx(tmp16(17176), { frame, iframeId: first1, onActivityCrash: tmp12, presentation: tmp18 }, first1);
-    const tmp24 = jsx(tmp16(17176), { frame, iframeId: first1, onActivityCrash: tmp12, presentation: tmp18 }, first1);
+    cResult[15] = tmp17;
+    cResult[16] = jsx(tmp15(17457), { frame, iframeId: first1, onActivityCrash: tmp12, presentation: tmp17 }, first1);
+    const tmp23 = jsx(tmp15(17457), { frame, iframeId: first1, onActivityCrash: tmp12, presentation: tmp17 }, first1);
   }
-  const fn2 = function h() {
+  const fn2 = function v() {
     let obj = FramePoolManagerDefault;
     obj.registerFrameEntry(id, first1);
     const obj2 = FramesActionCreatorsDefault;
@@ -442,17 +429,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((frame) => {
   cResult[4] = items1;
   tmp7 = items1;
   tmp6 = fn2;
-}) : ((frame) => {
+}) : (function PooledFrame(frame) {
   let closure_2;
   let iframeId;
   frame = frame.frame;
   iframeId = undefined;
   dependencyMap = undefined;
   const id = frame.id;
-  [iframeId, dependencyMap] = react.useState(() => {
-    const obj = id(closure_2[13]);
-    return obj.v4();
-  });
+  [iframeId, dependencyMap] = react.useState(() => first(closure_2[13])());
   const items = [id, iframeId];
   const effect = react.useEffect(() => {
     let obj = FramePoolManagerDefault;
@@ -470,16 +454,15 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((frame) => {
     obj.removeFrameEntry(id);
   }, items1);
   const callback = react.useCallback(() => {
-    const obj = v1;
-    closure_2(obj.v4());
+    closure_2(makeIframeIdDefault());
   }, []);
-  let syncExternalStore = react.useSyncExternalStore(iframeId(16634).subscribe, () => {
+  let syncExternalStore = react.useSyncExternalStore(iframeId(16896).subscribe, () => {
     const obj = FramePoolManagerDefault;
     return obj.getWinningTargetState(id);
   });
   let obj = { frame, iframeId, onActivityCrash: callback, presentation: syncExternalStore };
   const tmp7 = jsx;
-  const tmp8 = iframeId(17176);
+  const tmp8 = iframeId(17457);
   if (syncExternalStore == null) {
     let obj2 = { layoutMode: constants.FOCUSED };
     syncExternalStore = obj2;

@@ -1,26 +1,26 @@
-// Module ID: 17632
-// Function ID: 17633
+// Module ID: 17914
+// Function ID: 17915
 // Name: NewUserUtils
-// Dependencies: [5, 15918, 5447, 1377, 1085, 12342, 5105, 12344, 1369, 7295, 9494, 584, 1491, 12347, 5099, 17631, 1112, 12430, 2]
+// Dependencies: [5, 16177, 5757, 1389, 1085, 12438, 7477, 12440, 1381, 7500, 8658, 584, 1503, 12443, 5940, 17913, 1112, 12526, 2]
 // Exports: continueToNextStep, getKeyForOnboardingStep
 
-// Module 17632 (NewUserUtils)
+// Module 17914 (NewUserUtils)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import router_utils from "router_utils" /* 1112 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import Link from "Link" /* 1491 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 5105 */;
-import react_nativeDefault from "react-native" /* 7295 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9494 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12342 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12347 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 12430 */;
-import NewUserModalTypes from "NewUserModalTypes" /* 17631 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import Link from "Link" /* 1503 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7477 */;
+import react_nativeDefault from "react-native" /* 7500 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8658 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12438 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12443 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 12526 */;
+import NewUserModalTypes from "NewUserModalTypes" /* 17913 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 15918 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5447 */;
-import UserStore from "UserStore" /* 1377 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 16177 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5757 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -269,7 +269,7 @@ obj = {
 };
 let obj2 = {
   key: "enable-notification",
-  shouldShowStep: function() {
+  shouldShowStep() {
     return closure_12(...arguments);
   }
 };
@@ -332,7 +332,7 @@ let closure_12 = _asyncToGenerator(async (arg0, value) => {
 });
 let obj3 = {
   key: "contact-sync",
-  shouldShowStep: function() {
+  shouldShowStep() {
     return closure_13(...arguments);
   }
 };

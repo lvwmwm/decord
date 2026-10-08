@@ -1,22 +1,22 @@
-// Module ID: 17786
-// Function ID: 17787
+// Module ID: 18073
+// Function ID: 18074
 // Name: HeaderRow
-// Dependencies: [11884, 5, 32, 19, 17, 17780, 1085, 1380, 21, 4896, 587, 9204, 9952, 1252, 1126, 1266, 7287, 5601, 4892, 558, 576, 504, 2]
+// Dependencies: [11956, 5, 32, 19, 17, 18067, 1085, 1392, 21, 5090, 587, 8548, 9479, 1264, 1126, 1278, 7741, 5375, 5086, 558, 576, 504, 2]
 
-// Module 17786 (HeaderRow)
+// Module 18073 (HeaderRow)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 11884 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 11956 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 17780 */;
+import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 18067 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -235,7 +235,7 @@ function HeaderRow(guild) {
   [c6, c7] = tmp6;
   let tmp7 = guild;
   let tmp8 = dependencyMap;
-  obj = guild(9204);
+  obj = guild(8548);
   let canCreateExpressions = obj.useManageResourcePermissions(guild).canCreateExpressions;
   let intl = guild(1126).intl;
   let obj2 = { id: "GUILD_SETTINGS_EMOJI_UPLOAD_REQUIREMENTS_" + 1, text: stringResult };
@@ -260,7 +260,7 @@ function HeaderRow(guild) {
   stringResult2 = intl4.string(guild(1126).t["8Vr5Qd"]);
   const tmp14 = closure_16;
   if (canCreateExpressions) {
-    const Button = tmp7(5601).Button;
+    const Button = tmp7(5375).Button;
     if (!tmp3) {
       tmp3 = isUploading;
     }
@@ -280,14 +280,14 @@ function HeaderRow(guild) {
   let tmp13Result = null != tmp5;
   if (tmp13Result) {
     let obj9 = { style: tmp.errorText, variant: "text-sm/medium", color: "text-feedback-critical", children: tmp5 };
-    tmp13Result = tmp13(tmp7(4892).Text, obj9);
+    tmp13Result = tmp13(tmp7(5086).Text, obj9);
   }
   let obj10 = { children: tmp15(tmp16, obj7) };
   items1[1] = tmp13Result;
   let obj11 = { style: tmp.uploadInstructionsContainer, children: items2 };
-  items2 = [tmp13(tmp7(4892).Text, { variant: "text-sm/medium", color: "text-muted", children: description }), , ];
+  items2 = [tmp13(tmp7(5086).Text, { variant: "text-sm/medium", color: "text-muted", children: description }), , ];
   const obj12 = { variant: "text-xs/bold", color: "text-muted", style: tmp.uploadInstructionsHeading, children: str.toUpperCase() };
-  const Text = tmp7(4892).Text;
+  const Text = tmp7(5086).Text;
   const intl6 = tmp7(1126).intl;
   str = intl6.string(tmp7(1126).t.jrXfyw);
   items2[1] = tmp13(Text, obj12);
@@ -365,7 +365,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedHea
   }
   const obj3 = { isUploading: stateFromStores };
   const merged = Object.assign(tmp4);
-  const tmp15 = closure_15(HeaderRow, obj3);
+  const tmp15 = authStore3(HeaderRow, obj3);
   cResult[4] = stateFromStores;
   cResult[5] = tmp4;
   cResult[6] = tmp15;
@@ -381,7 +381,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedHea
     const obj2 = { isUploading: obj.useStateFromStores(items, () => uploadingEmoji.isUploadingEmoji()) };
     obj = get_initialized;
     const merged1 = Object.assign(merged);
-    return closure_15(HeaderRow, obj2);
+    return authStore3(HeaderRow, obj2);
   }
 });
 const result = size.fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalEmoji/HeaderRow.tsx");

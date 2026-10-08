@@ -1,30 +1,30 @@
-// Module ID: 14673
-// Function ID: 14674
+// Module ID: 14934
+// Function ID: 14935
 // Name: IOSConversationSuggestionsSetting
-// Dependencies: [19, 17, 7645, 1254, 1259, 558, 576, 4498, 1369, 3, 11142, 1126, 2]
+// Dependencies: [19, 17, 7966, 1266, 1271, 558, 576, 4690, 1381, 3, 11262, 1126, 2]
 
-// Module 14673 (IOSConversationSuggestionsSetting)
+// Module 14934 (IOSConversationSuggestionsSetting)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
 import react from "react" /* 19 */;
-import module_1254 from "module_1254" /* 1254 */;
+import module_1266 from "module_1266" /* 1266 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let conversationSuggestionsEnabled;
 
 let tmp;
-const _slicedToArray = tmp(4498);
+const _slicedToArray = tmp(4690);
 const NativeModules = react_native.NativeModules;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-let closure_4 = module_1254.createWithEqualityFn(() => ({ isEnabled: true }));
+let closure_4 = module_1266.createWithEqualityFn(() => ({ isEnabled: true }));
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConversationSuggestionsEnabled() {
   let first;
   const obj = react2;
   const cResult = obj.c(1);
@@ -38,10 +38,12 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return closure_4(first, _slicedToArray.shallow);
-}) : (() => closure_4((isEnabled) => isEnabled.isEnabled, _slicedToArray.shallow));
+}) : (function useConversationSuggestionsEnabled() {
+  return closure_4((isEnabled) => isEnabled.isEnabled, _slicedToArray.shallow);
+});
 const IntentsHandler = NativeModules.IntentsHandler;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIOSConversationSuggestionsSettingValue() {
   let tmp2;
   let tmp3;
   let obj = react2;
@@ -68,7 +70,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const effect = react.useEffect(tmp2, tmp3);
   return closure_5();
-}) : (() => {
+}) : (function useIOSConversationSuggestionsSettingValue() {
   const effect = react.useEffect(() => {
     let state;
     conversationSuggestionsEnabled = conversationSuggestionsEnabled.getConversationSuggestionsEnabled();

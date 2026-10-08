@@ -1,65 +1,65 @@
-// Module ID: 17701
-// Function ID: 17702
+// Module ID: 17988
+// Function ID: 17989
 // Name: GuildSettingsModal
-// Dependencies: [32, 19, 2074, 9283, 1085, 21, 16109, 9282, 1260, 1126, 6017, 17702, 17714, 17719, 17720, 17739, 17758, 17763, 17778, 17779, 17791, 17803, 17805, 17046, 17055, 17813, 17817, 17818, 17057, 16110, 17819, 17820, 17838, 17859, 17863, 17866, 17869, 11460, 11474, 11476, 17870, 17875, 17876, 17898, 17921, 17961, 17962, 17976, 18015, 18019, 18020, 18023, 18031, 18032, 558, 576, 1618, 5991, 504, 6503, 2]
+// Dependencies: [32, 19, 2086, 8614, 1085, 21, 16369, 8613, 1272, 1126, 6203, 17989, 18001, 18006, 18007, 18026, 18045, 18050, 18065, 18066, 18078, 18090, 18092, 17327, 17336, 18100, 18104, 18105, 17338, 16370, 18106, 18107, 18125, 18146, 18150, 18153, 18156, 11444, 11458, 11460, 18157, 18162, 18163, 18185, 18208, 18248, 18249, 18263, 18302, 18306, 18307, 18310, 18318, 18319, 558, 576, 1630, 6174, 504, 6679, 2]
 
-// Module 17701 (GuildSettingsModal)
+// Module 17988 (GuildSettingsModal)
 import Fragment from "Fragment" /* 21 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9282 */;
-import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 11460 */;
-import KickConfirmDefault from "KickConfirm" /* 11474 */;
-import BanConfirmDefault from "BanConfirm" /* 11476 */;
-import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 16109 */;
-import GuildSettingsModalChannelsDefault from "GuildSettingsModalChannels" /* 16110 */;
-import IntegrationsSettingsWebhooksOverviewDefault from "IntegrationsSettingsWebhooksOverview" /* 17046 */;
-import IntegrationsSettingsEditWebhookDefault from "IntegrationsSettingsEditWebhook" /* 17055 */;
-import IntegrationsSettingsEditLinkedLobbyDefault from "IntegrationsSettingsEditLinkedLobby" /* 17057 */;
-import GuildSettingsModalLandingDefault from "GuildSettingsModalLanding" /* 17702 */;
-import GuildSettingsModalOverviewDefault from "GuildSettingsModalOverview" /* 17714 */;
-import GuildSettingsModalModerationDefault from "GuildSettingsModalModeration" /* 17719 */;
-import GuildSettingsAutoModerationDefault from "GuildSettingsAutoModeration" /* 17720 */;
-import GuildSettingsAutomodRuleDefault from "GuildSettingsAutomodRule" /* 17739 */;
-import GuildSettingsModalAuditLogDefault from "GuildSettingsModalAuditLog" /* 17758 */;
-import GuildSettingsModalAuditLogFilterDefault from "GuildSettingsModalAuditLogFilter" /* 17763 */;
-import GuildSettingsModalIntegrationsDefault from "GuildSettingsModalIntegrations" /* 17778 */;
-import GuildSettingsModalEmojiDefault from "GuildSettingsModalEmoji" /* 17779 */;
-import GuildSettingsModalStickersDefault from "GuildSettingsModalStickers" /* 17791 */;
-import GuildSettingsModalServerTagDefault from "GuildSettingsModalServerTag" /* 17803 */;
-import GuildSettingsModalServerTagCustomizeDefault from "GuildSettingsModalServerTagCustomize" /* 17805 */;
-import GuildSettingsModalIntegrationSettingsDefault from "GuildSettingsModalIntegrationSettings" /* 17813 */;
-import GuildSettingsModalIntegrationPlatformDefault from "GuildSettingsModalIntegrationPlatform" /* 17817 */;
-import GuildSettingsModalLobbiesLinkedDefault from "GuildSettingsModalLobbiesLinked" /* 17818 */;
-import GuildSettingsModalSecurityDefault from "GuildSettingsModalSecurity" /* 17819 */;
-import GuildSettingsRolesDefault from "GuildSettingsRoles" /* 17820 */;
-import GuildSettingsRoleEditDefault from "GuildSettingsRoleEdit" /* 17838 */;
-import GuildSettingsModalVanityURLDefault from "GuildSettingsModalVanityURL" /* 17859 */;
-import GuildSettingsModalInstantInvitesDefault from "GuildSettingsModalInstantInvites" /* 17863 */;
-import GuildSettingsModalTemplateDefault from "GuildSettingsModalTemplate" /* 17866 */;
-import GuildSettingsModalMembersWrapperDefault from "GuildSettingsModalMembersWrapper" /* 17869 */;
-import GuildSettingsModalBansDefault from "GuildSettingsModalBans" /* 17870 */;
-import GuildSettingsModalCommunityDefault from "GuildSettingsModalCommunity" /* 17875 */;
-import GuildSettingsModalCommunityIntroDefault from "GuildSettingsModalCommunityIntro" /* 17876 */;
-import GuildSettingsModalAnalyticsDefault from "GuildSettingsModalAnalytics" /* 17898 */;
-import GuildSettingsRoleSubscriptionsEmptyDefault from "GuildSettingsRoleSubscriptionsEmpty" /* 17921 */;
-import GuildSettingsRoleSubscriptionsEnableMonetizationDefault from "GuildSettingsRoleSubscriptionsEnableMonetization" /* 17961 */;
-import GuildSettingsRoleSubscriptionsGroupEditDefault from "GuildSettingsRoleSubscriptionsGroupEdit" /* 17962 */;
-import GuildSettingsRoleSubscriptionTiersDefault from "GuildSettingsRoleSubscriptionTiers" /* 17976 */;
-import GuildSettingsRoleSubscriptionTierEditDefault from "GuildSettingsRoleSubscriptionTierEdit" /* 18015 */;
-import GuildSettingsRoleSubscriptionsPaymentsDefault from "GuildSettingsRoleSubscriptionsPayments" /* 18019 */;
-import GuildSettingsRoleSubscriptionEmojisDefault from "GuildSettingsRoleSubscriptionEmojis" /* 18020 */;
-import GuildSettingsRoleSubscriptionTierTemplateSelectionDefault from "GuildSettingsRoleSubscriptionTierTemplateSelection" /* 18023 */;
-import GuildSettingsModalOfficialMessagesDefault from "GuildSettingsModalOfficialMessages" /* 18031 */;
-import GuildSettingsModalGuildSpaceDefault from "GuildSettingsModalGuildSpace" /* 18032 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8613 */;
+import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 11444 */;
+import KickConfirmDefault from "KickConfirm" /* 11458 */;
+import BanConfirmDefault from "BanConfirm" /* 11460 */;
+import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 16369 */;
+import GuildSettingsModalChannelsDefault from "GuildSettingsModalChannels" /* 16370 */;
+import IntegrationsSettingsWebhooksOverviewDefault from "IntegrationsSettingsWebhooksOverview" /* 17327 */;
+import IntegrationsSettingsEditWebhookDefault from "IntegrationsSettingsEditWebhook" /* 17336 */;
+import IntegrationsSettingsEditLinkedLobbyDefault from "IntegrationsSettingsEditLinkedLobby" /* 17338 */;
+import GuildSettingsModalLandingDefault from "GuildSettingsModalLanding" /* 17989 */;
+import GuildSettingsModalOverviewDefault from "GuildSettingsModalOverview" /* 18001 */;
+import GuildSettingsModalModerationDefault from "GuildSettingsModalModeration" /* 18006 */;
+import GuildSettingsAutoModerationDefault from "GuildSettingsAutoModeration" /* 18007 */;
+import GuildSettingsAutomodRuleDefault from "GuildSettingsAutomodRule" /* 18026 */;
+import GuildSettingsModalAuditLogDefault from "GuildSettingsModalAuditLog" /* 18045 */;
+import GuildSettingsModalAuditLogFilterDefault from "GuildSettingsModalAuditLogFilter" /* 18050 */;
+import GuildSettingsModalIntegrationsDefault from "GuildSettingsModalIntegrations" /* 18065 */;
+import GuildSettingsModalEmojiDefault from "GuildSettingsModalEmoji" /* 18066 */;
+import GuildSettingsModalStickersDefault from "GuildSettingsModalStickers" /* 18078 */;
+import GuildSettingsModalServerTagDefault from "GuildSettingsModalServerTag" /* 18090 */;
+import GuildSettingsModalServerTagCustomizeDefault from "GuildSettingsModalServerTagCustomize" /* 18092 */;
+import GuildSettingsModalIntegrationSettingsDefault from "GuildSettingsModalIntegrationSettings" /* 18100 */;
+import GuildSettingsModalIntegrationPlatformDefault from "GuildSettingsModalIntegrationPlatform" /* 18104 */;
+import GuildSettingsModalLobbiesLinkedDefault from "GuildSettingsModalLobbiesLinked" /* 18105 */;
+import GuildSettingsModalSecurityDefault from "GuildSettingsModalSecurity" /* 18106 */;
+import GuildSettingsRolesDefault from "GuildSettingsRoles" /* 18107 */;
+import GuildSettingsRoleEditDefault from "GuildSettingsRoleEdit" /* 18125 */;
+import GuildSettingsModalVanityURLDefault from "GuildSettingsModalVanityURL" /* 18146 */;
+import GuildSettingsModalInstantInvitesDefault from "GuildSettingsModalInstantInvites" /* 18150 */;
+import GuildSettingsModalTemplateDefault from "GuildSettingsModalTemplate" /* 18153 */;
+import GuildSettingsModalMembersWrapperDefault from "GuildSettingsModalMembersWrapper" /* 18156 */;
+import GuildSettingsModalBansDefault from "GuildSettingsModalBans" /* 18157 */;
+import GuildSettingsModalCommunityDefault from "GuildSettingsModalCommunity" /* 18162 */;
+import GuildSettingsModalCommunityIntroDefault from "GuildSettingsModalCommunityIntro" /* 18163 */;
+import GuildSettingsModalAnalyticsDefault from "GuildSettingsModalAnalytics" /* 18185 */;
+import GuildSettingsRoleSubscriptionsEmptyDefault from "GuildSettingsRoleSubscriptionsEmpty" /* 18208 */;
+import GuildSettingsRoleSubscriptionsEnableMonetizationDefault from "GuildSettingsRoleSubscriptionsEnableMonetization" /* 18248 */;
+import GuildSettingsRoleSubscriptionsGroupEditDefault from "GuildSettingsRoleSubscriptionsGroupEdit" /* 18249 */;
+import GuildSettingsRoleSubscriptionTiersDefault from "GuildSettingsRoleSubscriptionTiers" /* 18263 */;
+import GuildSettingsRoleSubscriptionTierEditDefault from "GuildSettingsRoleSubscriptionTierEdit" /* 18302 */;
+import GuildSettingsRoleSubscriptionsPaymentsDefault from "GuildSettingsRoleSubscriptionsPayments" /* 18306 */;
+import GuildSettingsRoleSubscriptionEmojisDefault from "GuildSettingsRoleSubscriptionEmojis" /* 18307 */;
+import GuildSettingsRoleSubscriptionTierTemplateSelectionDefault from "GuildSettingsRoleSubscriptionTierTemplateSelection" /* 18310 */;
+import GuildSettingsModalOfficialMessagesDefault from "GuildSettingsModalOfficialMessages" /* 18318 */;
+import GuildSettingsModalGuildSpaceDefault from "GuildSettingsModalGuildSpace" /* 18319 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9283 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8614 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closeResult, importDefault, navigation, saveRouteStackResult;
+let _require;
 
 let metroImportAll;
 let metroImportDefault;
@@ -662,335 +662,283 @@ function getScreens(guildId, arg1) {
   obj3[GUILD_SPACE] = obj45;
   return obj3;
 }
+let _slicedToArray = _slicedToArray_mod;
 ({ GuildSettingsSections: metroImportDefault, WebhookTypes: metroImportAll } = Constants);
 const jsx = Fragment.jsx;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsModal() {
   let LANDING;
+  let bottom;
   let closure_0;
+  let left;
+  let right;
   let stateFromStores;
-  let tmp19;
-  let tmp5;
-  let tmp7;
-  let tmp8;
   let tmp = _require;
   let obj = require("react");
-  const cResult = obj.c(16);
-  const bottom = stateFromStores(1618)().bottom;
+  const cResult = obj.c(20);
+  ({ bottom, left, right } = stateFromStores(1630)());
+  stateFromStores(1630)();
   const tmp4 = stateFromStores;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    class I {
-      constructor() {
-        return closure_1_6.getGuildId();
-      }
+  if (cResult[0] === left) {
+    let tmp6;
+    let tmp8;
+    let tmp10;
+    let tmp12;
+    if (cResult[1] === right) {
+      tmp6 = cResult[2];
     }
-    cResult[0] = I;
-    tmp5 = I;
-  } else {
-    class I {
-      constructor() {
-        return closure_1_6.getGuildId();
-      }
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const fn = function p() {
+        return GuildSettingsStore.getGuildId();
+      };
+      cResult[3] = fn;
+      tmp8 = fn;
+    } else {
+      tmp8 = cResult[3];
     }
-  }
-  const tmp6 = tmp4(5991)(tmp5);
-  _require = tmp6;
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    class I {
-      constructor() {
-        return closure_1_6.getGuildId();
-      }
+    const tmp9 = tmp4(6174)(tmp8);
+    _require = tmp9;
+    const _Symbol2 = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      const items = [GuildStore];
+      cResult[4] = items;
+      tmp10 = items;
+    } else {
+      tmp10 = cResult[4];
     }
-    const items = [GuildStore];
-    cResult[1] = items;
-    tmp7 = items;
-  } else {
-    class I {
-      constructor() {
-        return closure_1_6.getGuildId();
-      }
-    }
-  }
-  if (cResult[2] !== tmp6) {
-    class I {
-      constructor() {
-        return closure_1_6.getGuildId();
-      }
-    }
-    cResult[2] = tmp6;
-    cResult[3] = tmp9;
-    tmp8 = tmp9;
-  } else {
-    class I {
-      constructor() {
-        return closure_1_6.getGuildId();
-      }
-    }
-  }
-  const tmpResult = tmp(504);
-  stateFromStores = tmpResult.useStateFromStores(tmp7, tmp8);
-  if (cResult[4] === tmp6) {
-    class I {
-      constructor() {
-        return closure_1_6.getGuildId();
-      }
-    }
-    if (cResult[7] === stateFromStores) {
-      let tmp15;
-      class I {
-        constructor() {
-          return closure_1_6.getGuildId();
-        }
-      }
-      const obj3 = react;
+    if (cResult[5] !== tmp9) {
       class L {
         constructor() {
-          tmp = null != closure_0;
-          if (tmp) {
-            tmp2 = closure_1;
-            tmp = null != closure_1;
+          return GuildStore.getGuild(closure_0);
+        }
+      }
+      cResult[5] = tmp9;
+      cResult[6] = L;
+      tmp12 = L;
+    } else {
+      class L {
+        constructor() {
+          return GuildStore.getGuild(closure_0);
+        }
+      }
+    }
+    const tmpResult = tmp(504);
+    stateFromStores = tmpResult.useStateFromStores(tmp10, tmp12);
+    if (cResult[7] === tmp9) {
+      class L {
+        constructor() {
+          return GuildStore.getGuild(closure_0);
+        }
+      }
+      if (cResult[10] === stateFromStores) {
+        let tmp19;
+        class L {
+          constructor() {
+            return GuildStore.getGuild(closure_0);
           }
+        }
+        const obj4 = react;
+        class M {
+          constructor() {
+            const tmp = null != closure_0 && null != stateFromStores;
+            if (!tmp) {
+              const obj = GuildSettingsActionCreatorsDefault;
+              obj.close();
+            }
+          }
+        }
+        const _Symbol3 = Symbol;
+        if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+          class A {
+            constructor() {
+              return GuildSettingsStore.getSavedRouteState();
+            }
+          }
+          class M {
+            constructor() {
+              const tmp = null != closure_0 && null != stateFromStores;
+              if (!tmp) {
+                const obj = GuildSettingsActionCreatorsDefault;
+                obj.close();
+              }
+            }
+          }
+          tmp19 = A;
+        } else {
+          class A {
+            constructor() {
+              return GuildSettingsStore.getSavedRouteState();
+            }
+          }
+        }
+        const first = _slicedToArray(obj4.useState(tmp19), 1)[0];
+        const _Symbol4 = Symbol;
+        if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+          class A {
+            constructor() {
+              return GuildSettingsStore.getSavedRouteState();
+            }
+          }
+          class M {
+            constructor() {
+              const tmp = null != closure_0 && null != stateFromStores;
+              if (!tmp) {
+                const obj = GuildSettingsActionCreatorsDefault;
+                obj.close();
+              }
+            }
+          }
+        } else {
+          class A {
+            constructor() {
+              return GuildSettingsStore.getSavedRouteState();
+            }
+          }
+        }
+        if (cResult[16] === first) {
+          class A {
+            constructor() {
+              return GuildSettingsStore.getSavedRouteState();
+            }
+          }
+        }
+        let tmp27Result = null;
+        if (null != tmp14) {
+          class A {
+            constructor() {
+              return GuildSettingsStore.getSavedRouteState();
+            }
+          }
+          const obj2 = { onWillFocus: null, initialRouteName: LANDING, initialRouteState: undefined, screens: tmp14, viewStyle: tmp6 };
+          class M {
+            constructor() {
+              const tmp = null != closure_0 && null != stateFromStores;
+              if (!tmp) {
+                const obj = GuildSettingsActionCreatorsDefault;
+                obj.close();
+              }
+            }
+          }
+          LANDING = undefined;
+          const Navigator = tmp(6679).Navigator;
+          if (null == first) {
+            class A {
+              constructor() {
+                return GuildSettingsStore.getSavedRouteState();
+              }
+            }
+            LANDING = constants.LANDING;
+          }
+          if (null != first) {
+            class A {
+              constructor() {
+                return GuildSettingsStore.getSavedRouteState();
+              }
+            }
+          }
+          tmp27Result = tmp27(Navigator, obj2);
+        }
+        cResult[16] = first;
+        cResult[17] = tmp6;
+        cResult[18] = tmp14;
+        cResult[19] = tmp27Result;
+      }
+      class M {
+        constructor() {
+          const tmp = null != closure_0 && null != stateFromStores;
           if (!tmp) {
-            tmp3 = closure_1;
-            tmp4 = closure_2;
-            obj = closure_1(closure_2[7]);
-            closeResult = obj.close();
-          }
-          return;
-        }
-      }
-      const _Symbol = Symbol;
-      if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        class O {
-          constructor() {
-            return closure_1_6.getSavedRouteState();
-          }
-        }
-        class L {
-          constructor() {
-            tmp = null != closure_0;
-            if (tmp) {
-              tmp2 = closure_1;
-              tmp = null != closure_1;
-            }
-            if (!tmp) {
-              tmp3 = closure_1;
-              tmp4 = closure_2;
-              obj = closure_1(closure_2[7]);
-              closeResult = obj.close();
-            }
-            return;
-          }
-        }
-        tmp15 = O;
-      } else {
-        class O {
-          constructor() {
-            return closure_1_6.getSavedRouteState();
+            const obj = GuildSettingsActionCreatorsDefault;
+            obj.close();
           }
         }
       }
-      const first = _slicedToArray(obj3.useState(tmp15), 1)[0];
-      const _Symbol2 = Symbol;
-      if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-        class D {
-          constructor(arg0) {
-            navigation = arg0.navigation;
-            obj = closure_1(closure_1_2[7]);
-            saveRouteStackResult = obj.saveRouteStack(navigation.getState());
-            return;
-          }
-        }
-        class L {
-          constructor() {
-            tmp = null != closure_0;
-            if (tmp) {
-              tmp2 = closure_1;
-              tmp = null != closure_1;
-            }
-            if (!tmp) {
-              tmp3 = closure_1;
-              tmp4 = closure_2;
-              obj = closure_1(closure_2[7]);
-              closeResult = obj.close();
-            }
-            return;
-          }
-        }
-      } else {
-        class D {
-          constructor(arg0) {
-            navigation = arg0.navigation;
-            obj = closure_1(closure_1_2[7]);
-            saveRouteStackResult = obj.saveRouteStack(navigation.getState());
-            return;
-          }
-        }
-      }
-      if (cResult[13] === first) {
-        class D {
-          constructor(arg0) {
-            navigation = arg0.navigation;
-            obj = closure_1(closure_1_2[7]);
-            saveRouteStackResult = obj.saveRouteStack(navigation.getState());
-            return;
-          }
-        }
-        return tmp19;
-      }
-      let tmp22Result = null;
-      if (null != tmp11) {
-        class D {
-          constructor(arg0) {
-            navigation = arg0.navigation;
-            obj = closure_1(closure_1_2[7]);
-            saveRouteStackResult = obj.saveRouteStack(navigation.getState());
-            return;
-          }
-        }
-        const obj2 = { onWillFocus: null, initialRouteName: LANDING, initialRouteState: undefined, screens: tmp11 };
-        class L {
-          constructor() {
-            tmp = null != closure_0;
-            if (tmp) {
-              tmp2 = closure_1;
-              tmp = null != closure_1;
-            }
-            if (!tmp) {
-              tmp3 = closure_1;
-              tmp4 = closure_2;
-              obj = closure_1(closure_2[7]);
-              closeResult = obj.close();
-            }
-            return;
-          }
-        }
-        LANDING = undefined;
-        const Navigator = tmp(6503).Navigator;
-        if (null == first) {
-          class D {
-            constructor(arg0) {
-              navigation = arg0.navigation;
-              obj = closure_1(closure_1_2[7]);
-              saveRouteStackResult = obj.saveRouteStack(navigation.getState());
-              return;
-            }
-          }
-          LANDING = constants.LANDING;
-        }
-        if (null != first) {
-          class D {
-            constructor(arg0) {
-              navigation = arg0.navigation;
-              obj = closure_1(closure_1_2[7]);
-              saveRouteStackResult = obj.saveRouteStack(navigation.getState());
-              return;
-            }
-          }
-        }
-        tmp22Result = tmp22(Navigator, obj2);
-      }
-      cResult[13] = first;
-      cResult[14] = tmp11;
-      cResult[15] = tmp22Result;
-      tmp19 = tmp22Result;
+      const items1 = [stateFromStores, tmp9];
+      cResult[10] = stateFromStores;
+      cResult[11] = tmp9;
+      cResult[12] = M;
+      cResult[13] = items1;
     }
-    class L {
-      constructor() {
-        tmp = null != closure_0;
-        if (tmp) {
-          tmp2 = closure_1;
-          tmp = null != closure_1;
+    if (null != tmp9) {
+      class A {
+        constructor() {
+          return GuildSettingsStore.getSavedRouteState();
         }
-        if (!tmp) {
-          tmp3 = closure_1;
-          tmp4 = closure_2;
-          obj = closure_1(closure_2[7]);
-          closeResult = obj.close();
+      }
+      class M {
+        constructor() {
+          const tmp = null != closure_0 && null != stateFromStores;
+          if (!tmp) {
+            const obj = GuildSettingsActionCreatorsDefault;
+            obj.close();
+          }
         }
-        return;
       }
     }
-    const items1 = [stateFromStores, tmp6];
-    cResult[7] = stateFromStores;
-    cResult[8] = tmp6;
-    cResult[9] = L;
-    cResult[10] = items1;
+    cResult[7] = tmp9;
+    cResult[8] = bottom;
+    cResult[9] = undefined;
   }
-  if (null != tmp6) {
-    class D {
-      constructor(arg0) {
-        navigation = arg0.navigation;
-        obj = closure_1(closure_1_2[7]);
-        saveRouteStackResult = obj.saveRouteStack(navigation.getState());
-        return;
-      }
-    }
-    class L {
-      constructor() {
-        tmp = null != closure_0;
-        if (tmp) {
-          tmp2 = closure_1;
-          tmp = null != closure_1;
-        }
-        if (!tmp) {
-          tmp3 = closure_1;
-          tmp4 = closure_2;
-          obj = closure_1(closure_2[7]);
-          closeResult = obj.close();
-        }
-        return;
-      }
-    }
-  }
-  cResult[4] = tmp6;
-  cResult[5] = bottom;
-  cResult[6] = undefined;
-}) : (() => {
+  const rect = { left, right };
+  cResult[0] = left;
+  cResult[1] = right;
+  cResult[2] = rect;
+  tmp6 = rect;
+}) : (function GuildSettingsModal() {
   let LANDING;
-  let closure_1;
+  let closure_3;
+  let left;
+  let right;
   let stateFromStores;
-  let tmp13;
-  let tmp = stateFromStores;
-  const bottom = require("useSafeAreaInsets")().bottom;
-  let tmp2 = require("useInitialValue")(() => GuildSettingsStore.getGuildId());
-  importDefault = tmp2;
-  let obj = bottom(stateFromStores[58]);
-  const items = [GuildStore];
-  stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(closure_1));
-  const items1 = [bottom, tmp2];
-  const memo = react.useMemo(() => {
+  let tmp14;
+  let tmp = right;
+  let rect = left(right[56])();
+  const bottom = rect.bottom;
+  left = rect.left;
+  right = rect.right;
+  const items = [left, right];
+  const memo = stateFromStores.useMemo(() => {
+    const rect = { left, right };
+    return rect;
+  }, items);
+  const tmp3 = left(right[57])(() => GuildSettingsStore.getGuildId());
+  _slicedToArray = tmp3;
+  let obj = bottom(right[58]);
+  const items1 = [GuildStore];
+  stateFromStores = obj.useStateFromStores(items1, () => GuildStore.getGuild(closure_3));
+  const items2 = [bottom, tmp3];
+  const memo1 = stateFromStores.useMemo(() => {
     let tmp2;
-    if (null != closure_1) {
+    if (null != closure_3) {
       tmp2 = getScreens(tmp, bottom);
     }
     return tmp2;
-  }, items1);
-  const items2 = [stateFromStores, tmp2];
-  const effect = react.useEffect(() => {
-    const tmp = null != closure_1 && null != stateFromStores;
+  }, items2);
+  const items3 = [stateFromStores, tmp3];
+  const effect = stateFromStores.useEffect(() => {
+    const tmp = null != closure_3 && null != stateFromStores;
     if (!tmp) {
       const obj = GuildSettingsActionCreatorsDefault;
       obj.close();
     }
-  }, items2);
-  const first = _slicedToArray(react.useState(() => GuildSettingsStore.getSavedRouteState()), 1)[0];
-  let tmp10Result = null;
-  const tmp3 = bottom;
-  if (null != memo) {
-    const obj2 = { onWillFocus: tmp8, initialRouteName: LANDING, initialRouteState: tmp13, screens: memo };
+  }, items3);
+  const first = _slicedToArray(stateFromStores.useState(() => GuildSettingsStore.getSavedRouteState()), 1)[0];
+  let tmp11Result = null;
+  const tmp4 = bottom;
+  if (null != memo1) {
+    const obj2 = { onWillFocus: tmp9, initialRouteName: LANDING, initialRouteState: tmp14, screens: memo1, viewStyle: memo };
     LANDING = undefined;
-    const Navigator = tmp3(tmp[59]).Navigator;
-    const tmp10 = jsx;
+    const Navigator = tmp4(tmp[59]).Navigator;
+    const tmp11 = jsx;
     if (null == first) {
       LANDING = constants.LANDING;
     }
-    tmp13 = undefined;
+    tmp14 = undefined;
     if (null != first) {
-      tmp13 = first;
+      tmp14 = first;
     }
-    tmp10Result = tmp10(Navigator, obj2);
+    tmp11Result = tmp11(Navigator, obj2);
   }
-  return tmp10Result;
+  return tmp11Result;
 });
 const result = size.fileFinishedImporting("modules/guild_settings/native/GuildSettingsModal.tsx");
 

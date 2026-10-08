@@ -1,11 +1,11 @@
-// Module ID: 8755
-// Function ID: 8756
+// Module ID: 9135
+// Function ID: 9136
 // Name: applications
-// Dependencies: [32, 1198, 1227, 2]
+// Dependencies: [32, 1210, 1239, 2]
 
-// Module 8755 (applications)
-import _mod1198 from "module_1198" /* 1198 */;
-import timestamp from "timestamp" /* 1227 */;
+// Module 9135 (applications)
+import _mod1210 from "module_1210" /* 1210 */;
+import timestamp from "timestamp" /* 1239 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const T3 = function T() {
   return closure_1_4;
 };
 const ApplicationDisclosureType = { UNSPECIFIED_DISCLOSURE: 0, [0]: "UNSPECIFIED_DISCLOSURE", IP_LOCATION: 1, [1]: "IP_LOCATION", DISPLAYS_ADVERTISEMENTS: 2, [2]: "DISPLAYS_ADVERTISEMENTS", PARTNER_SDK_DATA_SHARING_MESSAGE: 3, [3]: "PARTNER_SDK_DATA_SHARING_MESSAGE" };
-const MessageType = _mod1198.MessageType;
+const MessageType = _mod1210.MessageType;
 class ApplicationUserRoleConnection$Type extends MessageType {
   constructor() {
     const items = [{ no: 1, name: "metadata", kind: "map", K: 9, V: { kind: "scalar", T: 9 } }, { no: 2, name: "platform_name", kind: "scalar", T: 9 }, { no: 3, name: "platform_username", kind: "scalar", T: 9 }, { no: 4, name: "version", kind: "scalar", T: 6 }];
@@ -37,9 +37,9 @@ class ApplicationUserRoleConnection$Type extends MessageType {
     const obj = { metadata: {}, platformName: "", platformUsername: "", version: "0" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1198.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1210.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1198;
+      const tmpResult = _mod1210;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -83,7 +83,7 @@ class ApplicationUserRoleConnection$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1198.UnknownFieldHandler.onRead;
+                onRead = _mod1210.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -138,31 +138,31 @@ class ApplicationUserRoleConnection$Type extends MessageType {
     const iter = keys[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
-      let tagResult = tag.tag(1, _mod1198.WireType.LengthDelimited);
+      let tagResult = tag.tag(1, _mod1210.WireType.LengthDelimited);
       let forkResult = tagResult.fork();
-      let tagResult1 = forkResult.tag(1, _mod1198.WireType.LengthDelimited);
+      let tagResult1 = forkResult.tag(1, _mod1210.WireType.LengthDelimited);
       let stringResult = tagResult1.string(nextResult);
-      let tagResult2 = stringResult.tag(2, _mod1198.WireType.LengthDelimited);
+      let tagResult2 = stringResult.tag(2, _mod1210.WireType.LengthDelimited);
       let stringResult1 = tagResult2.string(metadata.metadata[nextResult]);
       let joined = stringResult1.join();
       continue;
     }
     if ("" !== metadata.platformName) {
-      const tagResult3 = tag.tag(2, _mod1198.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(2, _mod1210.WireType.LengthDelimited);
       tagResult3.string(metadata.platformName);
     }
     if ("" !== metadata.platformUsername) {
-      const tagResult4 = tag.tag(3, _mod1198.WireType.LengthDelimited);
+      const tagResult4 = tag.tag(3, _mod1210.WireType.LengthDelimited);
       tagResult4.string(metadata.platformUsername);
     }
     if ("0" !== metadata.version) {
-      const tagResult5 = tag.tag(4, _mod1198.WireType.Bit64);
+      const tagResult5 = tag.tag(4, _mod1210.WireType.Bit64);
       tagResult5.fixed64(metadata.version);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1198.UnknownFieldHandler.onWrite;
+        onWrite = _mod1210.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, metadata, tag);
@@ -173,7 +173,7 @@ class ApplicationUserRoleConnection$Type extends MessageType {
 const prototype = ApplicationUserRoleConnection$Type.prototype;
 let items = [{ no: 1, name: "metadata", kind: "map", K: 9, V: { kind: "scalar", T: 9 } }, { no: 2, name: "platform_name", kind: "scalar", T: 9 }, { no: 3, name: "platform_username", kind: "scalar", T: 9 }, { no: 4, name: "version", kind: "scalar", T: 6 }];
 const tmp6 = new "binaryReadMap1"("discord_protos.discord_kkv_store_value_models.v1.ApplicationUserRoleConnection", items, tmp4, tmp3, "create", "internalBinaryRead", tmp2, "internalBinaryWrite", tmp, ApplicationUserRoleConnection$Type);
-const MessageType2 = _mod1198.MessageType;
+const MessageType2 = _mod1210.MessageType;
 class AcknowledgedApplicationDisclosure$Type extends MessageType2 {
   constructor() {
     let items = [, ];
@@ -187,9 +187,9 @@ class AcknowledgedApplicationDisclosure$Type extends MessageType2 {
     const obj = { disclosureType: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1198.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1210.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1198;
+      const tmpResult = _mod1210;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -229,7 +229,7 @@ class AcknowledgedApplicationDisclosure$Type extends MessageType2 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1198.UnknownFieldHandler.onRead;
+                onRead = _mod1210.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -241,21 +241,21 @@ class AcknowledgedApplicationDisclosure$Type extends MessageType2 {
   }
   internalBinaryWrite(disclosureType, tag, writeUnknownFields) {
     if (0 !== disclosureType.disclosureType) {
-      const tagResult = tag.tag(1, _mod1198.WireType.Varint);
+      const tagResult = tag.tag(1, _mod1210.WireType.Varint);
       tagResult.int32(disclosureType.disclosureType);
     }
     if (disclosureType.ackedAt) {
       const Timestamp = timestamp.Timestamp;
       internalBinaryWrite = Timestamp.internalBinaryWrite;
       const ackedAt = disclosureType.ackedAt;
-      const tagResult1 = tag.tag(2, _mod1198.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1210.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(ackedAt, tagResult1.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1198.UnknownFieldHandler.onWrite;
+        onWrite = _mod1210.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, disclosureType, tag);
@@ -268,7 +268,7 @@ let obj2 = { no: 1, name: "disclosure_type", kind: "enum", T };
 const items1 = [obj2, { no: 2, name: "acked_at", kind: "message", T: T2 }];
 let tmp22 = new tmp2("discord_protos.discord_kkv_store_value_models.v1.AcknowledgedApplicationDisclosure", items1, tmp4, AcknowledgedApplicationDisclosure$Type, "create", "internalBinaryRead", tmp2, "internalBinaryWrite", items1, undefined, require, dependencyMap, ApplicationDisclosureType, this, tmp6, this);
 const React3 = tmp22;
-const MessageType3 = _mod1198.MessageType;
+const MessageType3 = _mod1210.MessageType;
 class AcknowledgedApplicationDisclosures$Type extends MessageType3 {
   constructor() {
     const items = [];
@@ -281,9 +281,9 @@ class AcknowledgedApplicationDisclosures$Type extends MessageType3 {
     const obj = { ackedDisclosures: [] };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1198.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1210.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1198;
+      const tmpResult = _mod1210;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -321,7 +321,7 @@ class AcknowledgedApplicationDisclosures$Type extends MessageType3 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1198.UnknownFieldHandler.onRead;
+                onRead = _mod1210.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -338,7 +338,7 @@ class AcknowledgedApplicationDisclosures$Type extends MessageType3 {
       do {
         internalBinaryWrite = closure_4.internalBinaryWrite;
         let tmp2 = ackedDisclosures.ackedDisclosures[num];
-        let tagResult = tag.tag(1, _mod1198.WireType.LengthDelimited);
+        let tagResult = tag.tag(1, _mod1210.WireType.LengthDelimited);
         let internalBinaryWriteResult = internalBinaryWrite(tmp2, tagResult.fork(), writeUnknownFields);
         let joined = internalBinaryWriteResult.join();
         num = num + 1;
@@ -348,7 +348,7 @@ class AcknowledgedApplicationDisclosures$Type extends MessageType3 {
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1198.UnknownFieldHandler.onWrite;
+        onWrite = _mod1210.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, ackedDisclosures, tag);

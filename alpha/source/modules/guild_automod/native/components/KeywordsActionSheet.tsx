@@ -1,28 +1,26 @@
-// Module ID: 17745
-// Function ID: 17746
+// Module ID: 18032
+// Function ID: 18033
 // Name: KeywordsActionSheet
-// Dependencies: [32, 19, 11487, 21, 558, 576, 17729, 12, 17724, 4860, 6651, 1126, 6587, 5601, 6708, 2]
+// Dependencies: [32, 19, 11473, 21, 558, 576, 18016, 12, 18011, 5054, 6828, 1126, 6763, 5375, 6885, 2]
 
-// Module 17745 (KeywordsActionSheet)
+// Module 18032 (KeywordsActionSheet)
 import _mod12 from "module_12" /* 12 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Constants from "Constants" /* 11487 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 17724 */;
-import KeywordTextUtils from "KeywordTextUtils" /* 17729 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Constants from "Constants" /* 11473 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 18011 */;
+import KeywordTextUtils from "KeywordTextUtils" /* 18016 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let keywords;
-
 let metroImportDefault;
 let metroRequire;
 let react = react_mod;
 let closure_5 = Constants.KEYWORDS_REGEX_PLACEHOLDER;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((keywords) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function KeywordsActionSheet(keywords) {
   let closure_4;
   let closure_8;
   let description;
@@ -66,168 +64,115 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((keywords) => {
           if (cResult[10] === onSave) {
             let tmp18;
             let tmp19;
+            let tmp22;
             if (cResult[11] === tmp6) {
               tmp18 = cResult[12];
             }
             if (cResult[13] !== title) {
-              let obj2 = { title: null };
-              class E {
-                constructor() {
-                  const obj = ActionSheetActionCreatorsDefault;
-                  obj.hideActionSheet();
-                  onSave(closure_5(first));
-                }
-              }
-              class B {
-                constructor(arg0) {
-                  closure_7(arg0);
-                  closure_9(closure_5(arg0));
-                }
-              }
+              let obj2 = { title };
+              const tmp21 = value(type(maxWordCount[10]).BottomSheetTitleHeader, obj2);
               cResult[13] = title;
               cResult[14] = tmp21;
               tmp19 = tmp21;
             } else {
               tmp19 = cResult[14];
             }
-            class E {
-              constructor() {
-                const obj = ActionSheetActionCreatorsDefault;
-                obj.hideActionSheet();
-                onSave(closure_5(first));
+            if (cResult[15] !== ("regex" === type)) {
+              let stringResult;
+              if ("regex" === type) {
+                stringResult = closure_5;
+              } else {
+                const intl = tmp(tmp2[11]).intl;
+                stringResult = intl.string(tmp(tmp2[11]).t.UyaxJy);
               }
-            }
-            class B {
-              constructor(arg0) {
-                closure_7(arg0);
-                closure_9(closure_5(arg0));
-              }
+              cResult[15] = "regex" === type;
+              cResult[16] = stringResult;
+              tmp22 = stringResult;
+            } else {
+              tmp22 = cResult[16];
             }
             if (cResult[17] === description) {
               if (cResult[18] === tmp17) {
                 if (cResult[19] === value) {
                   if (cResult[20] === tmp22) {
                     if (cResult[21] === tmp14) {
-                      let tmp23;
-                      let tmp29;
+                      let tmp24;
+                      let tmp28;
+                      let tmp30;
                       if (cResult[22] === title) {
-                        tmp23 = cResult[23];
+                        tmp24 = cResult[23];
                       }
-                      class E {
-                        constructor() {
-                          const obj = ActionSheetActionCreatorsDefault;
-                          obj.hideActionSheet();
-                          onSave(closure_5(first));
-                        }
-                      }
-                      class B {
-                        constructor(arg0) {
-                          closure_7(arg0);
-                          closure_9(closure_5(arg0));
-                        }
-                      }
+                      const _Symbol = Symbol;
                       if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
-                        const string = tmp(tmp2[11]).intl.string;
-                        class E {
-                          constructor() {
-                            const obj = ActionSheetActionCreatorsDefault;
-                            obj.hideActionSheet();
-                            onSave(closure_5(first));
-                          }
-                        }
-                        class B {
-                          constructor(arg0) {
-                            closure_7(arg0);
-                            closure_9(closure_5(arg0));
-                          }
-                        }
-                        cResult[24] = tmp28;
+                        const intl2 = tmp(tmp2[11]).intl;
+                        const stringResult1 = intl2.string(type(maxWordCount[11]).t["R3BPH+"]);
+                        cResult[24] = stringResult1;
+                        tmp28 = stringResult1;
+                      } else {
+                        tmp28 = cResult[24];
                       }
                       if (cResult[25] !== tmp18) {
-                        const obj3 = { grow: true, text: null, onPress: null };
-                        class E {
-                          constructor() {
-                            const obj = ActionSheetActionCreatorsDefault;
-                            obj.hideActionSheet();
-                            onSave(closure_5(first));
-                          }
-                        }
-                        class B {
-                          constructor(arg0) {
-                            closure_7(arg0);
-                            closure_9(closure_5(arg0));
-                          }
-                        }
-                        const tmp31 = value(type(maxWordCount[13]).Button, obj3);
+                        const obj3 = { grow: true, text: tmp28, onPress: tmp18 };
+                        const tmp32 = value(type(maxWordCount[13]).Button, obj3);
                         cResult[25] = tmp18;
-                        cResult[26] = tmp31;
-                        tmp29 = tmp31;
+                        cResult[26] = tmp32;
+                        tmp30 = tmp32;
                       } else {
-                        tmp29 = cResult[26];
+                        tmp30 = cResult[26];
                       }
-                      if (cResult[27] === tmp29) {
+                      if (cResult[27] === tmp30) {
                         if (cResult[28] === tmp19) {
-                          let tmp32;
-                          if (cResult[29] === tmp23) {
-                            tmp32 = cResult[30];
+                          let tmp33;
+                          if (cResult[29] === tmp24) {
+                            tmp33 = cResult[30];
                           }
-                          return tmp32;
+                          return tmp33;
                         }
                       }
                       const obj4 = { keyboardShouldPersistTaps: "handled", header: tmp19, children: items };
-                      items = [tmp23, tmp29];
-                      const tmp34 = closure_7(type(maxWordCount[14]).ActionSheet, obj4);
-                      cResult[27] = tmp29;
+                      items = [tmp24, tmp30];
+                      const tmp35 = closure_7(type(maxWordCount[14]).ActionSheet, obj4);
+                      cResult[27] = tmp30;
                       cResult[28] = tmp19;
-                      cResult[29] = tmp23;
-                      cResult[30] = tmp34;
-                      tmp32 = tmp34;
+                      cResult[29] = tmp24;
+                      cResult[30] = tmp35;
+                      tmp33 = tmp35;
                     }
                   }
                 }
               }
             }
             const obj5 = { accessibilityLabel: title, description, placeholder: tmp22, value, onChange: tmp17, errorMessage: tmp14 };
-            const tmp25 = value(type(maxWordCount[12]).TextArea, obj5);
+            const tmp26 = value(type(maxWordCount[12]).TextArea, obj5);
             cResult[17] = description;
             cResult[18] = tmp17;
             cResult[19] = value;
             cResult[20] = tmp22;
             cResult[21] = tmp14;
             cResult[22] = title;
-            cResult[23] = tmp25;
-            tmp23 = tmp25;
+            cResult[23] = tmp26;
+            tmp24 = tmp26;
           }
         }
-        class E {
-          constructor() {
-            const obj = ActionSheetActionCreatorsDefault;
-            obj.hideActionSheet();
-            onSave(closure_5(first));
-          }
-        }
-        class B {
-          constructor(arg0) {
-            closure_7(arg0);
-            closure_9(closure_5(arg0));
-          }
+        function handleSave() {
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet();
+          onSave(closure_5(first));
         }
         cResult[9] = value;
         cResult[10] = onSave;
         cResult[11] = tmp6;
-        cResult[12] = E;
-        tmp18 = E;
+        cResult[12] = handleSave;
+        tmp18 = handleSave;
       }
-      class B {
-        constructor(arg0) {
-          closure_7(arg0);
-          closure_9(closure_5(arg0));
-        }
+      function handleChange(arg0) {
+        closure_7(arg0);
+        closure_9(closure_5(arg0));
       }
       cResult[6] = tmp6;
       cResult[7] = tmp15;
-      cResult[8] = B;
-      tmp17 = B;
+      cResult[8] = handleChange;
+      tmp17 = handleChange;
     }
     const tmpResult = type(maxWordCount[7]);
     const debounceResult = tmpResult.debounce((arr) => {
@@ -263,7 +208,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((keywords) => {
   cResult[1] = keywords;
   cResult[2] = fn;
   tmp7 = fn;
-}) : ((onSave) => {
+}) : (function KeywordsActionSheet(onSave) {
   let c8;
   let closure_4;
   let intl2;
@@ -334,7 +279,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((keywords) => {
     description,
     placeholder: stringResult,
     value,
-    onChange(arg0) {
+    onChange: function handleChange(arg0) {
       closure_7(arg0);
       closure_9(getKeywordsFromString(arg0));
     },
@@ -352,7 +297,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((keywords) => {
   const obj3 = {
     grow: true,
     text: intl2.string(tmp6(tmp5[11]).t["R3BPH+"]),
-    onPress() {
+    onPress: function handleSave() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
       onSave(getKeywordsFromString(first));

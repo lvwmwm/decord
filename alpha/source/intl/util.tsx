@@ -1,12 +1,13 @@
 // Module ID: 1128
 // Function ID: 1129
 // Name: intl/util
-// Dependencies: [19, 1129, 1165, 1187, 558, 576, 2]
-// Exports: getAvailableLocales, getLanguages, getNormalizedLocale
+// Dependencies: [19, 1129, 1165, 1187, 1188, 558, 576, 2]
+// Exports: getAvailableLocales, getLanguages, getNormalizedLocale, parseRuntimeIcuAsIntlMessage
 
 // Module 1128 (intl/util)
 import react2 from "react" /* 576 */;
 import _mod1165 from "module_1165" /* 1165 */;
+import _Parser from "_Parser" /* 1188 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -14,14 +15,15 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, code;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let closure_3 = { es: "es-ES", nb: "no", nn: "no" };
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncMessages(arg0, arg1) {
   let tmp2;
   let closure_0 = arg0;
   let closure_1 = arg1;
   const obj = react2;
   const cResult = obj.c(5);
   if (cResult[0] !== arg0) {
-    const fn = function l(arg0) {
+    const fn = function s(arg0) {
       return closure_0.onChange(arg0);
     };
     cResult[0] = arg0;
@@ -37,14 +39,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     }
     const syncExternalStore = react.useSyncExternalStore(tmp2, tmp3);
   }
-  const fn2 = function o() {
+  const fn2 = function l() {
     return closure_0.isLocaleLoaded(currentLocale.currentLocale);
   };
   cResult[2] = arg1;
   cResult[3] = arg0;
   cResult[4] = fn2;
   tmp3 = fn2;
-}) : ((arg0, arg1) => {
+}) : (function useSyncMessages(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   const syncExternalStore = react.useSyncExternalStore((arg0) => closure_0.onChange(arg0), () => closure_0.isLocaleLoaded(currentLocale.currentLocale));
@@ -90,29 +92,41 @@ export const getNormalizedLocale = function getNormalizedLocale(Language, arg1) 
   if (mapped.includes(Language)) {
     return Language;
   } else {
-    let found2;
     const parts = Language.split("-");
-    const first = parts[0];
     if (mapped.includes(parts[0])) {
-      found2 = first;
+      return parts[0];
     } else {
-      if ("zh" === first) {
-        if (parts.length > 1) {
-          if ("Hant" === parts[1]) {
-            let found1 = mapped.find((item) => "zh-TW" === item);
-            if (found1 == null) {
-              found1 = arg1;
+      let tmp2 = null;
+      if (1 === parts.length) {
+        tmp2 = closure_3[parts[0]];
+      }
+      if (null == tmp2) {
+        let found2;
+        if ("zh" === parts[0]) {
+          if (parts.length > 1) {
+            if ("Hant" === parts[1]) {
+              let found1 = mapped.find((item) => "zh-TW" === item);
+              if (found1 == null) {
+                found1 = arg1;
+              }
+              found2 = found1;
             }
-            found2 = found1;
+            tmp2 = found2;
           }
         }
+        found2 = mapped.find((item) => item.split("-")[0] === parts[0]);
+        if (found2 == null) {
+          found2 = arg1;
+        }
       }
-      found2 = mapped.find((item) => item.split("-")[0] === parts[0]);
-      if (found2 == null) {
-        found2 = arg1;
-      }
+      return tmp2;
     }
-    return found2;
   }
+};
+export const parseRuntimeIcuAsIntlMessage = function parseRuntimeIcuAsIntlMessage(arg0, defaultLocale) {
+  const obj = _Parser;
+  const parsed = obj.parse(arg0, { ignoreTag: true });
+  const internalIntlMessage = new _mod1165.InternalIntlMessage(parsed, defaultLocale);
+  return internalIntlMessage;
 };
 export const useSyncMessages = tmp2;

@@ -1,14 +1,14 @@
-// Module ID: 11861
-// Function ID: 11862
+// Module ID: 12680
+// Function ID: 12681
 // Name: ForLaterCardStatusHeader
-// Dependencies: [17, 21, 4896, 587, 558, 576, 4892, 2]
+// Dependencies: [17, 21, 5090, 587, 558, 576, 5086, 2]
 
-// Module 11861 (ForLaterCardStatusHeader)
+// Module 12680 (ForLaterCardStatusHeader)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let hasOwnProperty;
 let obj2;
 let obj3;
 let tmp;
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -26,7 +26,7 @@ obj2 = { flexDirection: "row", alignItems: "center", backgroundColor: nativeDefa
 createStyles = createStyles.createStyles;
 obj3 = { padding: 6, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT };
 let closure_6 = createStyles(obj);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterCardStatusHeader(arg0) {
   let IconComponent;
   let actions;
   let isCritical;
@@ -116,7 +116,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp6;
   cResult[2] = tmp8;
   tmp7 = tmp8;
-}) : ((isCritical) => {
+}) : (function ForLaterCardStatusHeader(isCritical) {
   let INTERACTIVE_TEXT_DEFAULT;
   let IconComponent;
   let actions;

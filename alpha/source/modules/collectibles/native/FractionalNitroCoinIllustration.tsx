@@ -1,21 +1,21 @@
-// Module ID: 8533
-// Function ID: 8534
+// Module ID: 9018
+// Function ID: 9019
 // Name: FractionalNitroCoinIllustration
-// Dependencies: [19, 1087, 21, 558, 576, 8534, 8536, 2]
+// Dependencies: [19, 1087, 21, 558, 576, 9019, 9021, 2]
 
-// Module 8533 (FractionalNitroCoinIllustration)
+// Module 9018 (FractionalNitroCoinIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
-import NitroCoinSpotIllustration from "NitroCoinSpotIllustration" /* 8534 */;
-import NitroCoinStackSpotIllustration2 from "NitroCoinStackSpotIllustration" /* 8536 */;
+import NitroCoinSpotIllustration from "NitroCoinSpotIllustration" /* 9019 */;
+import NitroCoinStackSpotIllustration2 from "NitroCoinStackSpotIllustration" /* 9021 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const EXTERNAL_PRODUCT_SKU_IDS = CollectiblesShopConstants.EXTERNAL_PRODUCT_SKU_IDS;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalNitroCoinIllustration(skuId) {
   let NitroCoinStackSpotIllustration;
   let height;
   let resizeMode;
@@ -29,9 +29,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     str = resizeMode;
   }
   if (skuId === EXTERNAL_PRODUCT_SKU_IDS.FRACTIONAL_PREMIUM_1_DAY) {
-    NitroCoinStackSpotIllustration = tmp(8534).NitroCoinSpotIllustration;
+    NitroCoinStackSpotIllustration = tmp(9019).NitroCoinSpotIllustration;
   } else {
-    NitroCoinStackSpotIllustration = tmp(8536).NitroCoinStackSpotIllustration;
+    NitroCoinStackSpotIllustration = tmp(9021).NitroCoinStackSpotIllustration;
   }
   if (cResult[0] === NitroCoinStackSpotIllustration) {
     if (cResult[1] === height) {
@@ -51,7 +51,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   cResult[3] = width;
   cResult[4] = tmp5;
   tmp4 = tmp5;
-}) : ((resizeMode) => {
+}) : (function FractionalNitroCoinIllustration(resizeMode) {
   let height;
   let skuId;
   let width;

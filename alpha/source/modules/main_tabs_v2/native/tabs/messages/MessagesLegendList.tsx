@@ -1,29 +1,28 @@
-// Module ID: 16019
-// Function ID: 16020
+// Module ID: 16279
+// Function ID: 16280
 // Name: MessagesLegendList
-// Dependencies: [19, 21, 558, 576, 16020, 15996, 16059, 16060, 16008, 16006, 16011, 16021, 16058, 16061, 16063, 2]
+// Dependencies: [19, 21, 558, 576, 16280, 16256, 16319, 16320, 16268, 16266, 16271, 16281, 16318, 16321, 16323, 2]
 
-// Module 16019 (MessagesLegendList)
+// Module 16279 (MessagesLegendList)
 import Fragment from "Fragment" /* 21 */;
-import MessagesItemChannel from "MessagesItemChannel" /* 15996 */;
-import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 16006 */;
-import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 16008 */;
-import useMessagesData from "useMessagesData" /* 16011 */;
-import MessagesItemHappeningNowDefault from "MessagesItemHappeningNow" /* 16021 */;
-import MessagesItemEmptyStateDefault from "MessagesItemEmptyState" /* 16058 */;
-import MessagesItemSeparator from "MessagesItemSeparator" /* 16059 */;
-import MessagesItemSuggestedFriendsHeader from "MessagesItemSuggestedFriendsHeader" /* 16060 */;
-import MessagesItemAddFriendsWidgetDefault from "MessagesItemAddFriendsWidget" /* 16061 */;
+import MessagesItemChannel from "MessagesItemChannel" /* 16256 */;
+import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 16266 */;
+import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 16268 */;
+import useMessagesData from "useMessagesData" /* 16271 */;
+import MessagesItemHappeningNowDefault from "MessagesItemHappeningNow" /* 16281 */;
+import MessagesItemEmptyStateDefault from "MessagesItemEmptyState" /* 16318 */;
+import MessagesItemSeparator from "MessagesItemSeparator" /* 16319 */;
+import MessagesItemSuggestedFriendsHeader from "MessagesItemSuggestedFriendsHeader" /* 16320 */;
+import MessagesItemAddFriendsWidgetDefault from "MessagesItemAddFriendsWidget" /* 16321 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const MessagesItemSeparatorDefault = MessagesItemSeparator;
 const MessagesItemSuggestedFriendsHeaderDefault = MessagesItemSuggestedFriendsHeader;
-let item, obj1, obj5, obj6, str, str2, str3, str4, str5, tmp10, tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20, tmp3, tmp8, tmp9;
 
 const jsx = Fragment.jsx;
-const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((listItemSuggestedFriendHeight, ref) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesLegendList(listItemSuggestedFriendHeight) {
   let accessibilityLabel;
   let data;
   let friendsHeaderIndex;
@@ -41,10 +40,10 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
   let scrollIndicatorInsetBottom;
   let scrollPosition;
   let setAddedFriendSuggestions;
-  let tmp4;
-  let tmp6;
-  let tmp7;
-  let tmp = listLeft;
+  let tmp5;
+  let tmp8;
+  let tmp9;
+  let tmp = listItemHeight;
   let obj = listItemHeight(listLeft[3]);
   const cResult = obj.c(46);
   ({ accessibilityLabel, data, handleScrollAnimated, insetEnd, listItemHeight } = listItemSuggestedFriendHeight);
@@ -54,114 +53,737 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
   ({ recycleItems, scrollIndicatorInsetBottom, scrollPosition } = listItemSuggestedFriendHeight);
   const friendSuggestions = data.friendSuggestions;
   ({ renderHeader, renderFooter, setAddedFriendSuggestions } = data);
-  ref = listTop.useRef(null);
+  const ref = listItemSuggestedFriendHeight.ref;
   const obj2 = listTop;
+  const ref1 = listTop.useRef(null);
   if (cResult[0] !== listItemHeight) {
     const obj3 = { listItemHeight };
     cResult[0] = listItemHeight;
     cResult[1] = obj3;
-    tmp4 = obj3;
+    tmp5 = obj3;
   } else {
-    tmp4 = cResult[1];
+    tmp5 = cResult[1];
   }
-  const tmp5 = listItemSuggestedFriendHeight(tmp[4])(data, tmp4);
-  ({ listData, friendsHeaderIndex, friendsHeaderOffset } = tmp5);
-  const listHeaderHeight = tmp5.listHeaderHeight;
+  const tmp7 = listItemSuggestedFriendHeight(listLeft[4])(data, tmp5);
+  ({ listData, friendsHeaderIndex, friendsHeaderOffset } = tmp7);
+  const listHeaderHeight = tmp7.listHeaderHeight;
   if (cResult[2] !== listHeaderHeight) {
-    class L {
-      constructor() {
-        obj = { scrollToTop() { /* body not rendered: F145605 */ } };
-        return obj;
-      }
-    }
+    const fn = function b() {
+      let offset;
+      let ref;
+      let obj = {
+        scrollToTop(arg0) {
+          const current = ref.current;
+          const tmp = undefined !== arg0 && arg0;
+          if (current != null) {
+            const obj = { offset, animated: tmp };
+            current.scrollToOffset(obj);
+          }
+        }
+      };
+      return obj;
+    };
     const items = [listHeaderHeight];
     cResult[2] = listHeaderHeight;
-    cResult[3] = L;
+    cResult[3] = fn;
     cResult[4] = items;
-    tmp7 = items;
-    tmp6 = L;
+    tmp9 = items;
+    tmp8 = fn;
   } else {
-    class L {
-      constructor() {
-        obj = { scrollToTop() { /* body not rendered: F145605 */ } };
-        return obj;
-      }
-    }
-    tmp7 = cResult[4];
+    tmp8 = cResult[3];
+    tmp9 = cResult[4];
   }
-  const imperativeHandle = obj2.useImperativeHandle(ref, tmp6, tmp7);
+  const imperativeHandle = obj2.useImperativeHandle(ref, tmp8, tmp9);
   if (cResult[5] === friendSuggestions) {
-    class L {
-      constructor() {
-        obj = { scrollToTop() { /* body not rendered: F145605 */ } };
-        return obj;
-      }
-    }
-  }
-  class R {
-    constructor(arg0) {
-      item = listItemSuggestedFriendHeight.item;
-      kind = item.kind;
-      if ("favorite" !== kind) {
-        str2 = "channel";
-        if ("channel" !== kind) {
-          str3 = "separator";
-          if ("separator" === kind) {
-            tmp18 = jsx;
-            tmp19 = closure_1;
-            tmp20 = closure_2;
-            return jsx(closure_1(closure_2[6]), {});
-          } else {
-            str4 = "friendsHeader";
-            if ("friendsHeader" === kind) {
-              tmp11 = jsx;
-              tmp12 = closure_1;
-              tmp13 = closure_2;
-              obj1 = { scrollPosition: null, stickyAt: null, stickyTop: null, stickyLeft: null };
-              tmp14 = scrollPosition;
-              obj1.scrollPosition = scrollPosition;
-              tmp15 = friendsHeaderOffset;
-              obj1.stickyAt = friendsHeaderOffset;
-              tmp16 = listTop;
-              obj1.stickyTop = listTop;
-              tmp17 = listLeft;
-              obj1.stickyLeft = listLeft;
-              return jsx(closure_1(closure_2[7]), obj1);
-            } else {
-              str5 = "suggestedFriend";
-              if ("suggestedFriend" === kind) {
-                tmp5 = jsx;
-                tmp6 = closure_0;
-                tmp7 = closure_2;
-                obj5 = { height: null, suggestedFriend: null, onAddFriendSuggestions: null };
-                tmp8 = closure_1;
-                obj5.height = closure_1;
-                tmp9 = friendSuggestions;
-                obj5.suggestedFriend = friendSuggestions[item.row];
-                tmp10 = setAddedFriendSuggestions;
-                obj5.onAddFriendSuggestions = setAddedFriendSuggestions;
-                return jsx(closure_0(closure_2[8]).MessagesItemSuggestedFriendLegend, obj5);
-              } else {
-                str = "placeholder";
-                if ("placeholder" === kind) {
-                  tmp = jsx;
-                  tmp2 = closure_1;
-                  tmp3 = closure_2;
-                  obj = { row: null, height: null };
-                  obj.row = item.row;
-                  tmp4 = listItemHeight;
-                  obj.height = listItemHeight;
-                  return jsx(closure_1(closure_2[9]), obj);
-                } else {
-                  return;
+    if (cResult[6] === friendsHeaderOffset) {
+      if (cResult[7] === listItemHeight) {
+        if (cResult[8] === listItemSuggestedFriendHeight) {
+          if (cResult[9] === listLeft) {
+            if (cResult[10] === listTop) {
+              if (cResult[11] === scrollPosition) {
+                let tmp11;
+                let tmp13;
+                if (cResult[12] === setAddedFriendSuggestions) {
+                  tmp11 = cResult[13];
                 }
+                const _Symbol = Symbol;
+                if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+                  class O {
+                    constructor(kind) {
+                      return kind.kind;
+                    }
+                  }
+                  cResult[14] = O;
+                  tmp13 = O;
+                } else {
+                  class O {
+                    constructor(kind) {
+                      return kind.kind;
+                    }
+                  }
+                }
+                if (cResult[15] === listItemHeight) {
+                  let tmp16;
+                  class O {
+                    constructor(kind) {
+                      return kind.kind;
+                    }
+                  }
+                  if (cResult[18] !== friendSuggestions) {
+                    class B {
+                      constructor(kind) {
+                        kind = kind.kind;
+                        if ("favorite" === kind) {
+                          const _HermesInternal4 = HermesInternal;
+                          return "fav:" + kind.channelId;
+                        } else if ("channel" === kind) {
+                          const _HermesInternal3 = HermesInternal;
+                          return "ch:" + kind.channelId;
+                        } else if ("separator" === kind) {
+                          return "separator";
+                        } else if ("friendsHeader" === kind) {
+                          return "friendsHeader";
+                        } else if ("suggestedFriend" === kind) {
+                          let id;
+                          if (friendSuggestions[kind.row] != null) {
+                            id = tmp3.user.id;
+                          }
+                          if (id == null) {
+                            id = kind.row;
+                          }
+                          const _HermesInternal2 = HermesInternal;
+                          return "sf:" + id;
+                        } else if ("placeholder" === kind) {
+                          const _HermesInternal = HermesInternal;
+                          return "placeholder:" + kind.row;
+                        }
+                      }
+                    }
+                    cResult[18] = friendSuggestions;
+                    cResult[19] = B;
+                  } else {
+                    class B {
+                      constructor(kind) {
+                        kind = kind.kind;
+                        if ("favorite" === kind) {
+                          const _HermesInternal4 = HermesInternal;
+                          return "fav:" + kind.channelId;
+                        } else if ("channel" === kind) {
+                          const _HermesInternal3 = HermesInternal;
+                          return "ch:" + kind.channelId;
+                        } else if ("separator" === kind) {
+                          return "separator";
+                        } else if ("friendsHeader" === kind) {
+                          return "friendsHeader";
+                        } else if ("suggestedFriend" === kind) {
+                          let id;
+                          if (friendSuggestions[kind.row] != null) {
+                            id = tmp3.user.id;
+                          }
+                          if (id == null) {
+                            id = kind.row;
+                          }
+                          const _HermesInternal2 = HermesInternal;
+                          return "sf:" + id;
+                        } else if ("placeholder" === kind) {
+                          const _HermesInternal = HermesInternal;
+                          return "placeholder:" + kind.row;
+                        }
+                      }
+                    }
+                  }
+                  if (tmp(listLeft[10]).MessagesDataHeader.HappeningNow === renderHeader) {
+                    class B {
+                      constructor(kind) {
+                        kind = kind.kind;
+                        if ("favorite" === kind) {
+                          const _HermesInternal4 = HermesInternal;
+                          return "fav:" + kind.channelId;
+                        } else if ("channel" === kind) {
+                          const _HermesInternal3 = HermesInternal;
+                          return "ch:" + kind.channelId;
+                        } else if ("separator" === kind) {
+                          return "separator";
+                        } else if ("friendsHeader" === kind) {
+                          return "friendsHeader";
+                        } else if ("suggestedFriend" === kind) {
+                          let id;
+                          if (friendSuggestions[kind.row] != null) {
+                            id = tmp3.user.id;
+                          }
+                          if (id == null) {
+                            id = kind.row;
+                          }
+                          const _HermesInternal2 = HermesInternal;
+                          return "sf:" + id;
+                        } else if ("placeholder" === kind) {
+                          const _HermesInternal = HermesInternal;
+                          return "placeholder:" + kind.row;
+                        }
+                      }
+                    }
+                    tmp16 = tmp19;
+                  } else {
+                    class B {
+                      constructor(kind) {
+                        kind = kind.kind;
+                        if ("favorite" === kind) {
+                          const _HermesInternal4 = HermesInternal;
+                          return "fav:" + kind.channelId;
+                        } else if ("channel" === kind) {
+                          const _HermesInternal3 = HermesInternal;
+                          return "ch:" + kind.channelId;
+                        } else if ("separator" === kind) {
+                          return "separator";
+                        } else if ("friendsHeader" === kind) {
+                          return "friendsHeader";
+                        } else if ("suggestedFriend" === kind) {
+                          let id;
+                          if (friendSuggestions[kind.row] != null) {
+                            id = tmp3.user.id;
+                          }
+                          if (id == null) {
+                            id = kind.row;
+                          }
+                          const _HermesInternal2 = HermesInternal;
+                          return "sf:" + id;
+                        } else if ("placeholder" === kind) {
+                          const _HermesInternal = HermesInternal;
+                          return "placeholder:" + kind.row;
+                        }
+                      }
+                    }
+                    if (tmp(listLeft[10]).MessagesDataHeader.EmptyState === renderHeader) {
+                      let tmp17;
+                      class B {
+                        constructor(kind) {
+                          kind = kind.kind;
+                          if ("favorite" === kind) {
+                            const _HermesInternal4 = HermesInternal;
+                            return "fav:" + kind.channelId;
+                          } else if ("channel" === kind) {
+                            const _HermesInternal3 = HermesInternal;
+                            return "ch:" + kind.channelId;
+                          } else if ("separator" === kind) {
+                            return "separator";
+                          } else if ("friendsHeader" === kind) {
+                            return "friendsHeader";
+                          } else if ("suggestedFriend" === kind) {
+                            let id;
+                            if (friendSuggestions[kind.row] != null) {
+                              id = tmp3.user.id;
+                            }
+                            if (id == null) {
+                              id = kind.row;
+                            }
+                            const _HermesInternal2 = HermesInternal;
+                            return "sf:" + id;
+                          } else if ("placeholder" === kind) {
+                            const _HermesInternal = HermesInternal;
+                            return "placeholder:" + kind.row;
+                          }
+                        }
+                      }
+                      if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
+                        class B {
+                          constructor(kind) {
+                            kind = kind.kind;
+                            if ("favorite" === kind) {
+                              const _HermesInternal4 = HermesInternal;
+                              return "fav:" + kind.channelId;
+                            } else if ("channel" === kind) {
+                              const _HermesInternal3 = HermesInternal;
+                              return "ch:" + kind.channelId;
+                            } else if ("separator" === kind) {
+                              return "separator";
+                            } else if ("friendsHeader" === kind) {
+                              return "friendsHeader";
+                            } else if ("suggestedFriend" === kind) {
+                              let id;
+                              if (friendSuggestions[kind.row] != null) {
+                                id = tmp3.user.id;
+                              }
+                              if (id == null) {
+                                id = kind.row;
+                              }
+                              const _HermesInternal2 = HermesInternal;
+                              return "sf:" + id;
+                            } else if ("placeholder" === kind) {
+                              const _HermesInternal = HermesInternal;
+                              return "placeholder:" + kind.row;
+                            }
+                          }
+                        }
+                        const tmp18 = scrollPosition(listItemSuggestedFriendHeight(listLeft[12]), {});
+                        cResult[22] = tmp18;
+                        tmp17 = tmp18;
+                      } else {
+                        class B {
+                          constructor(kind) {
+                            kind = kind.kind;
+                            if ("favorite" === kind) {
+                              const _HermesInternal4 = HermesInternal;
+                              return "fav:" + kind.channelId;
+                            } else if ("channel" === kind) {
+                              const _HermesInternal3 = HermesInternal;
+                              return "ch:" + kind.channelId;
+                            } else if ("separator" === kind) {
+                              return "separator";
+                            } else if ("friendsHeader" === kind) {
+                              return "friendsHeader";
+                            } else if ("suggestedFriend" === kind) {
+                              let id;
+                              if (friendSuggestions[kind.row] != null) {
+                                id = tmp3.user.id;
+                              }
+                              if (id == null) {
+                                id = kind.row;
+                              }
+                              const _HermesInternal2 = HermesInternal;
+                              return "sf:" + id;
+                            } else if ("placeholder" === kind) {
+                              const _HermesInternal = HermesInternal;
+                              return "placeholder:" + kind.row;
+                            }
+                          }
+                        }
+                      }
+                      tmp16 = tmp17;
+                    }
+                  }
+                  if (cResult[23] !== renderFooter) {
+                    let tmp21;
+                    class B {
+                      constructor(kind) {
+                        kind = kind.kind;
+                        if ("favorite" === kind) {
+                          const _HermesInternal4 = HermesInternal;
+                          return "fav:" + kind.channelId;
+                        } else if ("channel" === kind) {
+                          const _HermesInternal3 = HermesInternal;
+                          return "ch:" + kind.channelId;
+                        } else if ("separator" === kind) {
+                          return "separator";
+                        } else if ("friendsHeader" === kind) {
+                          return "friendsHeader";
+                        } else if ("suggestedFriend" === kind) {
+                          let id;
+                          if (friendSuggestions[kind.row] != null) {
+                            id = tmp3.user.id;
+                          }
+                          if (id == null) {
+                            id = kind.row;
+                          }
+                          const _HermesInternal2 = HermesInternal;
+                          return "sf:" + id;
+                        } else if ("placeholder" === kind) {
+                          const _HermesInternal = HermesInternal;
+                          return "placeholder:" + kind.row;
+                        }
+                      }
+                    }
+                    if (renderFooter) {
+                      class B {
+                        constructor(kind) {
+                          kind = kind.kind;
+                          if ("favorite" === kind) {
+                            const _HermesInternal4 = HermesInternal;
+                            return "fav:" + kind.channelId;
+                          } else if ("channel" === kind) {
+                            const _HermesInternal3 = HermesInternal;
+                            return "ch:" + kind.channelId;
+                          } else if ("separator" === kind) {
+                            return "separator";
+                          } else if ("friendsHeader" === kind) {
+                            return "friendsHeader";
+                          } else if ("suggestedFriend" === kind) {
+                            let id;
+                            if (friendSuggestions[kind.row] != null) {
+                              id = tmp3.user.id;
+                            }
+                            if (id == null) {
+                              id = kind.row;
+                            }
+                            const _HermesInternal2 = HermesInternal;
+                            return "sf:" + id;
+                          } else if ("placeholder" === kind) {
+                            const _HermesInternal = HermesInternal;
+                            return "placeholder:" + kind.row;
+                          }
+                        }
+                      }
+                      tmp21 = scrollPosition(listItemSuggestedFriendHeight(listLeft[13]), {});
+                    }
+                    cResult[23] = renderFooter;
+                    cResult[24] = tmp21;
+                  } else {
+                    class B {
+                      constructor(kind) {
+                        kind = kind.kind;
+                        if ("favorite" === kind) {
+                          const _HermesInternal4 = HermesInternal;
+                          return "fav:" + kind.channelId;
+                        } else if ("channel" === kind) {
+                          const _HermesInternal3 = HermesInternal;
+                          return "ch:" + kind.channelId;
+                        } else if ("separator" === kind) {
+                          return "separator";
+                        } else if ("friendsHeader" === kind) {
+                          return "friendsHeader";
+                        } else if ("suggestedFriend" === kind) {
+                          let id;
+                          if (friendSuggestions[kind.row] != null) {
+                            id = tmp3.user.id;
+                          }
+                          if (id == null) {
+                            id = kind.row;
+                          }
+                          const _HermesInternal2 = HermesInternal;
+                          return "sf:" + id;
+                        } else if ("placeholder" === kind) {
+                          const _HermesInternal = HermesInternal;
+                          return "placeholder:" + kind.row;
+                        }
+                      }
+                    }
+                  }
+                  if (cResult[25] !== friendsHeaderIndex) {
+                    class B {
+                      constructor(kind) {
+                        kind = kind.kind;
+                        if ("favorite" === kind) {
+                          const _HermesInternal4 = HermesInternal;
+                          return "fav:" + kind.channelId;
+                        } else if ("channel" === kind) {
+                          const _HermesInternal3 = HermesInternal;
+                          return "ch:" + kind.channelId;
+                        } else if ("separator" === kind) {
+                          return "separator";
+                        } else if ("friendsHeader" === kind) {
+                          return "friendsHeader";
+                        } else if ("suggestedFriend" === kind) {
+                          let id;
+                          if (friendSuggestions[kind.row] != null) {
+                            id = tmp3.user.id;
+                          }
+                          if (id == null) {
+                            id = kind.row;
+                          }
+                          const _HermesInternal2 = HermesInternal;
+                          return "sf:" + id;
+                        } else if ("placeholder" === kind) {
+                          const _HermesInternal = HermesInternal;
+                          return "placeholder:" + kind.row;
+                        }
+                      }
+                    }
+                    if (null != friendsHeaderIndex) {
+                      class B {
+                        constructor(kind) {
+                          kind = kind.kind;
+                          if ("favorite" === kind) {
+                            const _HermesInternal4 = HermesInternal;
+                            return "fav:" + kind.channelId;
+                          } else if ("channel" === kind) {
+                            const _HermesInternal3 = HermesInternal;
+                            return "ch:" + kind.channelId;
+                          } else if ("separator" === kind) {
+                            return "separator";
+                          } else if ("friendsHeader" === kind) {
+                            return "friendsHeader";
+                          } else if ("suggestedFriend" === kind) {
+                            let id;
+                            if (friendSuggestions[kind.row] != null) {
+                              id = tmp3.user.id;
+                            }
+                            if (id == null) {
+                              id = kind.row;
+                            }
+                            const _HermesInternal2 = HermesInternal;
+                            return "sf:" + id;
+                          } else if ("placeholder" === kind) {
+                            const _HermesInternal = HermesInternal;
+                            return "placeholder:" + kind.row;
+                          }
+                        }
+                      }
+                      tmp24[0] = friendsHeaderIndex;
+                    }
+                    cResult[25] = friendsHeaderIndex;
+                    cResult[26] = tmp23;
+                  } else {
+                    class B {
+                      constructor(kind) {
+                        kind = kind.kind;
+                        if ("favorite" === kind) {
+                          const _HermesInternal4 = HermesInternal;
+                          return "fav:" + kind.channelId;
+                        } else if ("channel" === kind) {
+                          const _HermesInternal3 = HermesInternal;
+                          return "ch:" + kind.channelId;
+                        } else if ("separator" === kind) {
+                          return "separator";
+                        } else if ("friendsHeader" === kind) {
+                          return "friendsHeader";
+                        } else if ("suggestedFriend" === kind) {
+                          let id;
+                          if (friendSuggestions[kind.row] != null) {
+                            id = tmp3.user.id;
+                          }
+                          if (id == null) {
+                            id = kind.row;
+                          }
+                          const _HermesInternal2 = HermesInternal;
+                          return "sf:" + id;
+                        } else if ("placeholder" === kind) {
+                          const _HermesInternal = HermesInternal;
+                          return "placeholder:" + kind.row;
+                        }
+                      }
+                    }
+                  }
+                  if (cResult[27] !== insetEnd) {
+                    class B {
+                      constructor(kind) {
+                        kind = kind.kind;
+                        if ("favorite" === kind) {
+                          const _HermesInternal4 = HermesInternal;
+                          return "fav:" + kind.channelId;
+                        } else if ("channel" === kind) {
+                          const _HermesInternal3 = HermesInternal;
+                          return "ch:" + kind.channelId;
+                        } else if ("separator" === kind) {
+                          return "separator";
+                        } else if ("friendsHeader" === kind) {
+                          return "friendsHeader";
+                        } else if ("suggestedFriend" === kind) {
+                          let id;
+                          if (friendSuggestions[kind.row] != null) {
+                            id = tmp3.user.id;
+                          }
+                          if (id == null) {
+                            id = kind.row;
+                          }
+                          const _HermesInternal2 = HermesInternal;
+                          return "sf:" + id;
+                        } else if ("placeholder" === kind) {
+                          const _HermesInternal = HermesInternal;
+                          return "placeholder:" + kind.row;
+                        }
+                      }
+                    }
+                    tmp26[0] = insetEnd;
+                    cResult[27] = insetEnd;
+                    cResult[28] = tmp26;
+                  } else {
+                    class B {
+                      constructor(kind) {
+                        kind = kind.kind;
+                        if ("favorite" === kind) {
+                          const _HermesInternal4 = HermesInternal;
+                          return "fav:" + kind.channelId;
+                        } else if ("channel" === kind) {
+                          const _HermesInternal3 = HermesInternal;
+                          return "ch:" + kind.channelId;
+                        } else if ("separator" === kind) {
+                          return "separator";
+                        } else if ("friendsHeader" === kind) {
+                          return "friendsHeader";
+                        } else if ("suggestedFriend" === kind) {
+                          let id;
+                          if (friendSuggestions[kind.row] != null) {
+                            id = tmp3.user.id;
+                          }
+                          if (id == null) {
+                            id = kind.row;
+                          }
+                          const _HermesInternal2 = HermesInternal;
+                          return "sf:" + id;
+                        } else if ("placeholder" === kind) {
+                          const _HermesInternal = HermesInternal;
+                          return "placeholder:" + kind.row;
+                        }
+                      }
+                    }
+                  }
+                  if (cResult[29] !== scrollIndicatorInsetBottom) {
+                    class B {
+                      constructor(kind) {
+                        kind = kind.kind;
+                        if ("favorite" === kind) {
+                          const _HermesInternal4 = HermesInternal;
+                          return "fav:" + kind.channelId;
+                        } else if ("channel" === kind) {
+                          const _HermesInternal3 = HermesInternal;
+                          return "ch:" + kind.channelId;
+                        } else if ("separator" === kind) {
+                          return "separator";
+                        } else if ("friendsHeader" === kind) {
+                          return "friendsHeader";
+                        } else if ("suggestedFriend" === kind) {
+                          let id;
+                          if (friendSuggestions[kind.row] != null) {
+                            id = tmp3.user.id;
+                          }
+                          if (id == null) {
+                            id = kind.row;
+                          }
+                          const _HermesInternal2 = HermesInternal;
+                          return "sf:" + id;
+                        } else if ("placeholder" === kind) {
+                          const _HermesInternal = HermesInternal;
+                          return "placeholder:" + kind.row;
+                        }
+                      }
+                    }
+                    tmp28[0] = scrollIndicatorInsetBottom;
+                    cResult[29] = scrollIndicatorInsetBottom;
+                    cResult[30] = tmp28;
+                  } else {
+                    class B {
+                      constructor(kind) {
+                        kind = kind.kind;
+                        if ("favorite" === kind) {
+                          const _HermesInternal4 = HermesInternal;
+                          return "fav:" + kind.channelId;
+                        } else if ("channel" === kind) {
+                          const _HermesInternal3 = HermesInternal;
+                          return "ch:" + kind.channelId;
+                        } else if ("separator" === kind) {
+                          return "separator";
+                        } else if ("friendsHeader" === kind) {
+                          return "friendsHeader";
+                        } else if ("suggestedFriend" === kind) {
+                          let id;
+                          if (friendSuggestions[kind.row] != null) {
+                            id = tmp3.user.id;
+                          }
+                          if (id == null) {
+                            id = kind.row;
+                          }
+                          const _HermesInternal2 = HermesInternal;
+                          return "sf:" + id;
+                        } else if ("placeholder" === kind) {
+                          const _HermesInternal = HermesInternal;
+                          return "placeholder:" + kind.row;
+                        }
+                      }
+                    }
+                  }
+                  if (cResult[31] === accessibilityLabel) {
+                    class B {
+                      constructor(kind) {
+                        kind = kind.kind;
+                        if ("favorite" === kind) {
+                          const _HermesInternal4 = HermesInternal;
+                          return "fav:" + kind.channelId;
+                        } else if ("channel" === kind) {
+                          const _HermesInternal3 = HermesInternal;
+                          return "ch:" + kind.channelId;
+                        } else if ("separator" === kind) {
+                          return "separator";
+                        } else if ("friendsHeader" === kind) {
+                          return "friendsHeader";
+                        } else if ("suggestedFriend" === kind) {
+                          let id;
+                          if (friendSuggestions[kind.row] != null) {
+                            id = tmp3.user.id;
+                          }
+                          if (id == null) {
+                            id = kind.row;
+                          }
+                          const _HermesInternal2 = HermesInternal;
+                          return "sf:" + id;
+                        } else if ("placeholder" === kind) {
+                          const _HermesInternal = HermesInternal;
+                          return "placeholder:" + kind.row;
+                        }
+                      }
+                    }
+                  }
+                  const obj4 = { ref: ref1, accessibilityLabel, contentContainerStyle: tmp25, data: listData, estimatedHeaderSize: listHeaderHeight, estimatedItemSize: listItemHeight, getFixedItemSize: tmp14, getItemType: tmp13, keyExtractor: tmp15, ListFooterComponent: tmp20, ListHeaderComponent: tmp16, onScroll: handleScrollAnimated, recycleItems, renderItem: tmp11, scrollIndicatorInsets: tmp27, stickyHeaderIndices: tmp22 };
+                  cResult[31] = accessibilityLabel;
+                  cResult[32] = tmp25;
+                  cResult[33] = tmp14;
+                  cResult[34] = handleScrollAnimated;
+                  cResult[35] = tmp15;
+                  cResult[36] = listData;
+                  cResult[37] = tmp20;
+                  cResult[38] = tmp16;
+                  cResult[39] = listHeaderHeight;
+                  cResult[40] = listItemHeight;
+                  const tmp31 = scrollPosition(tmp(listLeft[14]).AnimatedLegendList, obj4);
+                  class R {
+                    constructor(item) {
+                      item = item.item;
+                      const kind = item.kind;
+                      if ("favorite" !== kind) {
+                        if ("channel" !== kind) {
+                          if ("separator" === kind) {
+                            return jsx(MessagesItemSeparatorDefault, {});
+                          } else if ("friendsHeader" === kind) {
+                            return jsx(MessagesItemSuggestedFriendsHeaderDefault, { scrollPosition, stickyAt: friendsHeaderOffset, stickyTop: listTop, stickyLeft: listLeft });
+                          } else if ("suggestedFriend" === kind) {
+                            return jsx(MessagesItemSuggestedFriend.MessagesItemSuggestedFriendLegend, { height: listItemSuggestedFriendHeight, suggestedFriend: friendSuggestions[item.row], onAddFriendSuggestions: setAddedFriendSuggestions });
+                          } else if ("placeholder" === kind) {
+                            return jsx(MessagesItemPlaceholderDefault, { row: item.row, height: listItemHeight });
+                          }
+                        }
+                      }
+                      return jsx(MessagesItemChannel.MessagesItemChannelLegend, { channelId: item.channelId, placeholderHeight: listItemHeight, row: item.row });
+                    }
+                  }
+                  cResult[41] = recycleItems;
+                  cResult[42] = tmp11;
+                  cResult[43] = tmp27;
+                  cResult[44] = tmp22;
+                  cResult[45] = tmp31;
+                }
+                const fn2 = function z(kind) {
+                  kind = kind.kind;
+                  if ("favorite" !== kind) {
+                    if ("channel" !== kind) {
+                      if ("placeholder" !== kind) {
+                        if ("separator" === kind) {
+                          return MessagesItemSeparator.MESSAGES_ITEM_SEPERATOR_HEIGHT;
+                        } else if ("friendsHeader" === kind) {
+                          return MessagesItemSuggestedFriendsHeader.MESSAGES_ITEM_SUGGESTED_FRIENDS_HEADER_HEIGHT;
+                        } else if ("suggestedFriend" === kind) {
+                          return listItemSuggestedFriendHeight;
+                        }
+                      }
+                    }
+                  }
+                  return listItemHeight;
+                };
+                cResult[15] = listItemHeight;
+                cResult[16] = listItemSuggestedFriendHeight;
+                cResult[17] = fn2;
               }
             }
           }
         }
       }
-      obj6 = { channelId: item.channelId, placeholderHeight: listItemHeight, row: item.row };
-      return jsx(closure_0(closure_2[5]).MessagesItemChannelLegend, obj6);
+    }
+  }
+  class R {
+    constructor(item) {
+      item = item.item;
+      const kind = item.kind;
+      if ("favorite" !== kind) {
+        if ("channel" !== kind) {
+          if ("separator" === kind) {
+            return jsx(MessagesItemSeparatorDefault, {});
+          } else if ("friendsHeader" === kind) {
+            return jsx(MessagesItemSuggestedFriendsHeaderDefault, { scrollPosition, stickyAt: friendsHeaderOffset, stickyTop: listTop, stickyLeft: listLeft });
+          } else if ("suggestedFriend" === kind) {
+            return jsx(MessagesItemSuggestedFriend.MessagesItemSuggestedFriendLegend, { height: listItemSuggestedFriendHeight, suggestedFriend: friendSuggestions[item.row], onAddFriendSuggestions: setAddedFriendSuggestions });
+          } else if ("placeholder" === kind) {
+            return jsx(MessagesItemPlaceholderDefault, { row: item.row, height: listItemHeight });
+          }
+        }
+      }
+      return jsx(MessagesItemChannel.MessagesItemChannelLegend, { channelId: item.channelId, placeholderHeight: listItemHeight, row: item.row });
     }
   }
   cResult[5] = friendSuggestions;
@@ -173,12 +795,14 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
   cResult[11] = scrollPosition;
   cResult[12] = setAddedFriendSuggestions;
   cResult[13] = R;
-}) : ((listItemHeight, ref) => {
+  tmp11 = R;
+}) : (function MessagesLegendList(listItemHeight) {
   let accessibilityLabel;
   let data;
   let handleScrollAnimated;
   let insetEnd;
   let recycleItems;
+  let ref;
   ({ data, insetEnd } = listItemHeight);
   const estimatedItemSize = listItemHeight.listItemHeight;
   const listItemSuggestedFriendHeight = listItemHeight.listItemSuggestedFriendHeight;
@@ -191,8 +815,8 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
   const renderHeader = data.renderHeader;
   const renderFooter = data.renderFooter;
   const setAddedFriendSuggestions = data.setAddedFriendSuggestions;
-  ({ accessibilityLabel, handleScrollAnimated, recycleItems } = listItemHeight);
-  ref = listLeft.useRef(null);
+  ({ accessibilityLabel, handleScrollAnimated, recycleItems, ref } = listItemHeight);
+  const ref2 = listLeft.useRef(null);
   let tmp2 = estimatedItemSize(listItemSuggestedFriendHeight[4])(data, { listItemHeight: estimatedItemSize });
   const friendsHeaderIndex = tmp2.friendsHeaderIndex;
   const friendsHeaderOffset = tmp2.friendsHeaderOffset;
@@ -201,6 +825,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
   const data2 = tmp2.listData;
   const imperativeHandle = listLeft.useImperativeHandle(ref, () => {
     let offset;
+    let ref;
     let obj = {
       scrollToTop() {
         let flag = arg0;
@@ -314,8 +939,8 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
   const items8 = [scrollIndicatorInsetBottom];
   const contentContainerStyle = listLeft.useMemo(() => ({ paddingBottom: insetEnd }), items7);
   const scrollIndicatorInsets = listLeft.useMemo(() => ({ bottom: scrollIndicatorInsetBottom }), items8);
-  return listRefHappeningNow(insetEnd(listItemSuggestedFriendHeight[14]).AnimatedLegendList, { ref, accessibilityLabel, contentContainerStyle, data: data2, estimatedHeaderSize, estimatedItemSize, getFixedItemSize, getItemType, keyExtractor, ListFooterComponent, ListHeaderComponent, onScroll, recycleItems, renderItem, scrollIndicatorInsets, stickyHeaderIndices });
-})));
+  return listRefHappeningNow(insetEnd(listItemSuggestedFriendHeight[14]).AnimatedLegendList, { ref: ref2, accessibilityLabel, contentContainerStyle, data: data2, estimatedHeaderSize, estimatedItemSize, getFixedItemSize, getItemType, keyExtractor, ListFooterComponent, ListHeaderComponent, onScroll, recycleItems, renderItem, scrollIndicatorInsets, stickyHeaderIndices });
+}));
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/MessagesLegendList.tsx");
 
 export default memoResult;

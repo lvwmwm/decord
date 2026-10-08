@@ -1,99 +1,115 @@
-// Module ID: 6107
-// Function ID: 6108
+// Module ID: 6287
+// Function ID: 6288
 // Name: TextField
-// Dependencies: [19, 21, 558, 576, 6108, 6109, 6110, 6114, 2]
+// Dependencies: [109, 19, 21, 558, 576, 6288, 6289, 6290, 6294, 2]
 
-// Module 6107 (TextField)
+// Module 6287 (TextField)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useTextField from "useTextField" /* 6108 */;
-import useInputClearButton from "useInputClearButton" /* 6109 */;
-import useInputAttachments from "useInputAttachments" /* 6110 */;
+import useTextField from "useTextField" /* 6288 */;
+import useInputClearButton from "useInputClearButton" /* 6289 */;
+import useInputAttachments from "useInputAttachments" /* 6290 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let closure_2 = ["ref"];
 const jsx = Fragment.jsx;
-const forwardRef = react.forwardRef;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextField(ref) {
   let innerRef;
   let inputProps;
   let inputStyle;
   let leading;
   let state;
-  let tmp6;
+  let tmp11;
+  let tmp4;
+  let tmp5;
   let trailing;
   const obj = react2;
-  const cResult = obj.c(8);
-  const obj2 = useTextField;
-  const textField = obj2.useTextField(arg0, arg1);
-  ({ innerRef, inputProps, state } = textField);
-  const obj3 = useInputClearButton;
-  const inputClearButtonConfig = obj3.useInputClearButtonConfig(arg0, state);
-  if (cResult[0] !== inputClearButtonConfig) {
-    let tmp8;
-    if (null != inputClearButtonConfig) {
-      const obj5 = { trailing: null, trailingPressableProps: null };
-      ({ content: obj4.trailing, pressableProps: obj4.trailingPressableProps } = inputClearButtonConfig);
-      tmp8 = obj5;
-    }
-    cResult[0] = inputClearButtonConfig;
+  const cResult = obj.c(11);
+  if (cResult[0] !== ref) {
+    const tmp8 = _objectWithoutProperties(ref, closure_2);
+    cResult[0] = ref;
     cResult[1] = tmp8;
-    tmp6 = tmp8;
+    cResult[2] = ref.ref;
+    tmp5 = ref;
+    tmp4 = tmp8;
   } else {
-    tmp6 = cResult[1];
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
   }
-  const tmpResult = useInputAttachments;
-  const inputAttachments = tmpResult.useInputAttachments(arg0, tmp6);
+  const tmpResult = useTextField;
+  const textField = tmpResult.useTextField(tmp4, tmp5);
+  ({ innerRef, inputProps, state } = textField);
+  const tmpResult3 = useInputClearButton;
+  const inputClearButtonConfig = tmpResult3.useInputClearButtonConfig(tmp4, state);
+  if (cResult[3] !== inputClearButtonConfig) {
+    let tmp13;
+    if (null != inputClearButtonConfig) {
+      const obj2 = { trailing: null, trailingPressableProps: null };
+      ({ content: obj4.trailing, pressableProps: obj4.trailingPressableProps } = inputClearButtonConfig);
+      tmp13 = obj2;
+    }
+    cResult[3] = inputClearButtonConfig;
+    cResult[4] = tmp13;
+    tmp11 = tmp13;
+  } else {
+    tmp11 = cResult[4];
+  }
+  const tmpResult4 = useInputAttachments;
+  const inputAttachments = tmpResult4.useInputAttachments(tmp4, tmp11);
   ({ leading, trailing, inputStyle } = inputAttachments);
-  if (cResult[2] === inputStyle) {
-    if (cResult[3] === innerRef) {
-      if (cResult[4] === inputProps) {
-        if (cResult[5] === leading) {
-          let tmp10;
-          if (cResult[6] === trailing) {
-            tmp10 = cResult[7];
+  if (cResult[5] === inputStyle) {
+    if (cResult[6] === innerRef) {
+      if (cResult[7] === inputProps) {
+        if (cResult[8] === leading) {
+          let tmp15;
+          if (cResult[9] === trailing) {
+            tmp15 = cResult[10];
           }
-          return tmp10;
+          return tmp15;
         }
       }
     }
   }
-  const BaseTextField = tmp(6114).BaseTextField;
+  const BaseTextField = tmp(6294).BaseTextField;
   const merged = Object.assign(inputProps);
-  const tmp12 = <BaseTextField ref={innerRef} leading={leading} trailing={trailing} inputStyle={inputStyle} />;
-  cResult[2] = inputStyle;
-  cResult[3] = innerRef;
-  cResult[4] = inputProps;
-  cResult[5] = leading;
-  cResult[6] = trailing;
-  cResult[7] = tmp12;
-  tmp10 = tmp12;
-}) : ((arg0, arg1) => {
+  const tmp17 = <BaseTextField ref={innerRef} leading={leading} trailing={trailing} inputStyle={inputStyle} />;
+  cResult[5] = inputStyle;
+  cResult[6] = innerRef;
+  cResult[7] = inputProps;
+  cResult[8] = leading;
+  cResult[9] = trailing;
+  cResult[10] = tmp17;
+  tmp15 = tmp17;
+}) : (function TextField(ref) {
   let innerRef;
   let inputProps;
   let inputStyle;
   let leading;
   let state;
   let trailing;
+  ref = ref.ref;
+  const merged = Object.assign(ref, Object.assign({ ref: 0 }));
   const obj = useTextField;
-  const textField = obj.useTextField(arg0, arg1);
+  const textField = obj.useTextField(merged, ref);
   ({ inputProps, innerRef, state } = textField);
   const obj2 = useInputClearButton;
-  const inputClearButtonConfig = obj2.useInputClearButtonConfig(arg0, state);
-  let tmp5;
+  const inputClearButtonConfig = obj2.useInputClearButtonConfig(merged, state);
+  let tmp6;
   if (null != inputClearButtonConfig) {
     const obj4 = { trailing: null, trailingPressableProps: null };
     ({ content: obj3.trailing, pressableProps: obj3.trailingPressableProps } = inputClearButtonConfig);
-    tmp5 = obj4;
+    tmp6 = obj4;
   }
-  const tmpResult = useInputAttachments;
-  const inputAttachments = tmpResult.useInputAttachments(arg0, tmp5);
+  const tmp2Result = useInputAttachments;
+  const inputAttachments = tmp2Result.useInputAttachments(merged, tmp6);
   ({ leading, trailing, inputStyle } = inputAttachments);
-  const BaseTextField = tmp(6114).BaseTextField;
-  const merged = Object.assign(inputProps);
+  const BaseTextField = tmp2(6294).BaseTextField;
+  const merged1 = Object.assign(inputProps);
   return <BaseTextField ref={innerRef} leading={leading} trailing={trailing} inputStyle={inputStyle} />;
-}));
+});
 const result = size.fileFinishedImporting("design/components/TextField/native/TextField.native.tsx");
 
-export const TextField = forwardRefResult;
+export const TextField = tmp3;

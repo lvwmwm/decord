@@ -1,18 +1,18 @@
-// Module ID: 5609
-// Function ID: 5610
+// Module ID: 5382
+// Function ID: 5383
 // Name: useFontScale
-// Dependencies: [19, 1485, 558, 576, 1487, 2]
+// Dependencies: [19, 1497, 558, 576, 1499, 2]
 // Exports: getFontScale
 
-// Module 5609 (useFontScale)
+// Module 5382 (useFontScale)
 import react2 from "react" /* 576 */;
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1487 */;
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1499 */;
 import react from "react" /* 19 */;
-import DimensionsStore from "DimensionsStore" /* 1485 */;
+import DimensionsStore from "DimensionsStore" /* 1497 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFontScale() {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
@@ -29,7 +29,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return DimensionsStore(tmp3);
-}) : (() => {
+}) : (function useFontScale() {
   const obj = AppEntryKeyContext;
   const appEntryKey = obj.useAppEntryKey();
   const items = [appEntryKey];

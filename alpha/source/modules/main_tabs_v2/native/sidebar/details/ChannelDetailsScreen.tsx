@@ -1,36 +1,36 @@
-// Module ID: 17064
-// Function ID: 17065
+// Module ID: 17345
+// Function ID: 17346
 // Name: ChannelDetailsScreen
-// Dependencies: [19, 21, 558, 576, 1491, 4747, 16809, 2]
+// Dependencies: [19, 21, 558, 576, 1503, 4941, 17088, 2]
 
-// Module 17064 (ChannelDetailsScreen)
+// Module 17345 (ChannelDetailsScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Link from "Link" /* 1491 */;
-import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 4747 */;
+import Link from "Link" /* 1503 */;
+import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 4941 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let navigation;
-
 let tmp4;
-const ChannelDetailsDefault = tmp4(16809);
+const ChannelDetailsDefault = tmp4(17088);
 const jsx = Fragment.jsx;
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelDetailsScreen(navigation) {
   let tmp5;
-  const obj = react2;
+  let tmp = dependencyMap;
+  let obj = react2;
   const cResult = obj.c(8);
   navigation = navigation.navigation;
-  const obj2 = Link;
+  let obj2 = Link;
   const route = obj2.useRoute();
   const channelId = route.params.channelId;
   const search = route.params.search;
   const expandTopic = route.params.expandTopic;
+  const tmp4 = importDefault;
   const width = useBaseAppContainerDimensionsDefault().width;
   if (cResult[0] !== navigation) {
-    const fn = function o() {
+    const fn = function s() {
       navigation.goBack();
     };
     cResult[0] = navigation;
@@ -39,10 +39,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((navigat
   } else {
     tmp5 = cResult[1];
   }
+  let tmp6 = true === search;
   if (cResult[2] === channelId) {
     if (cResult[3] === width) {
       if (cResult[4] === true === expandTopic) {
-        if (cResult[5] === true === search) {
+        if (cResult[5] === tmp6) {
           let tmp8;
           if (cResult[6] === tmp5) {
             tmp8 = cResult[7];
@@ -52,22 +53,22 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((navigat
       }
     }
   }
-  const tmp9 = jsx(ChannelDetailsDefault, { channelId, isSearchLocked: true === search, onBackPress: tmp5, componentWidth: width, onChannelDeleted: tmp5, expandTopic: true === expandTopic });
+  const tmp9 = jsx(ChannelDetailsDefault, { channelId, isSearchLocked: tmp6, onBackPress: tmp5, componentWidth: width, onChannelDeleted: tmp5, expandTopic: true === expandTopic });
   cResult[2] = channelId;
   cResult[3] = width;
   cResult[4] = true === expandTopic;
-  cResult[5] = true === search;
+  cResult[5] = tmp6;
   cResult[6] = tmp5;
   cResult[7] = tmp9;
   tmp8 = tmp9;
-}) : ((navigation) => {
+}) : (function ChannelDetailsScreen(navigation) {
   navigation = navigation.navigation;
   let obj = Link;
   const route = obj.useRoute();
   const search = route.params.search;
   const channelId = route.params.channelId;
   const expandTopic = route.params.expandTopic;
-  let items = [navigation];
+  const items = [navigation];
   const width = useBaseAppContainerDimensionsDefault().width;
   const callback = react.useCallback(() => {
     navigation.goBack();

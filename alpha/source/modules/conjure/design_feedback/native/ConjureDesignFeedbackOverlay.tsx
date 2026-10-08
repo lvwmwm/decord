@@ -1,22 +1,22 @@
-// Module ID: 16637
-// Function ID: 16638
+// Module ID: 16899
+// Function ID: 16900
 // Name: ConjureDesignFeedbackOverlay
-// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 4860, 16638, 8737, 9005, 1126, 3753, 4892, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 587, 558, 576, 5054, 16900, 12366, 12371, 1126, 3827, 5086, 2]
 
-// Module 16637 (ConjureDesignFeedbackOverlay)
+// Module 16899 (ConjureDesignFeedbackOverlay)
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4860 */;
-import ConjureDesignRemarkSheet from "ConjureDesignRemarkSheet" /* 16638 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5054 */;
+import ConjureDesignRemarkSheet from "ConjureDesignRemarkSheet" /* 16900 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const ConjureDesignRemarkSheetDefault = ConjureDesignRemarkSheet;
-let dependencyMap, projectId;
+let dependencyMap;
 
 let c9;
 let hasOwnProperty;
@@ -39,7 +39,7 @@ size = { position: "absolute", width: 24, height: 24, borderRadius: nativeDefaul
 rect = { position: "absolute", left: nativeDefault.space.PX_16, right: nativeDefault.space.PX_16, bottom: nativeDefault.space.PX_16 };
 obj3 = { textAlign: "center", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, padding: nativeDefault.space.PX_8 };
 let closure_11 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDesignFeedbackOverlay(projectId) {
   let closure_2;
   let closure_4;
   let first1;
@@ -86,7 +86,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   }
   const effect = obj2.useEffect(tmp11, tmp12);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function _() {
+    const fn2 = function b() {
       let ref;
       closure_9.current = true;
       return () => {
@@ -282,7 +282,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   cResult[17] = projectId;
   cResult[18] = first;
   cResult[19] = W;
-}) : ((projectId) => {
+}) : (function ConjureDesignFeedbackOverlay(projectId) {
   let closure_2;
   let closure_4;
   let height;
@@ -402,7 +402,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   }, items4);
   const intl = projectId(1126).intl;
   const string = intl.string;
-  const tmp19 = size(3753);
+  const tmp19 = size(3827);
   if (first2) {
     prop = tmp19["URbF/7"];
     tmp21 = tmp18;
@@ -418,7 +418,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   if (at == null) {
     at = first;
   }
-  let obj = { style: tmp.surface, onLayout: callback, onPress: callback2, accessibilityRole: "button", accessibilityLabel: intl2.string(tmp21(3753)["DesV7/"]), testID: "conjure-design-surface", children: tmp26(first2, obj2) };
+  let obj = { style: tmp.surface, onLayout: callback, onPress: callback2, accessibilityRole: "button", accessibilityLabel: intl2.string(tmp21(3827)["DesV7/"]), testID: "conjure-design-surface", children: tmp26(first2, obj2) };
   intl2 = tmp16(1126).intl;
   obj2 = { style: tmp.surface, pointerEvents: "none", children: items6 };
   let tmp24Result = null;
@@ -482,7 +482,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     tmp24Result2 = tmp24(tmp27, obj6);
   }
   items6[1] = tmp24Result2;
-  const obj7 = { style: tmp.hint, accessibilityLiveRegion: "polite", children: closure_8(projectId(4892).Text, obj8) };
+  const obj7 = { style: tmp.hint, accessibilityLiveRegion: "polite", children: closure_8(projectId(5086).Text, obj8) };
   obj8 = { variant: "text-sm/medium", color: "text-default", style: tmp.hintText, children: stringResult };
   items6[2] = closure_8(first2, obj7);
   return closure_8(tmp25, obj);

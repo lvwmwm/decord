@@ -1,10 +1,10 @@
-// Module ID: 13499
-// Function ID: 13500
+// Module ID: 13799
+// Function ID: 13800
 // Name: rateLimit
 // Dependencies: [2]
 // Exports: default
 
-// Module 13499 (rateLimit)
+// Module 13799 (rateLimit)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/rateLimit.tsx");

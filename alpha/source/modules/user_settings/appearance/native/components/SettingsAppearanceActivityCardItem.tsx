@@ -1,19 +1,19 @@
-// Module ID: 15128
-// Function ID: 15129
+// Module ID: 15390
+// Function ID: 15391
 // Name: SettingsAppearanceActivityCardItem
-// Dependencies: [19, 17, 2116, 15129, 21, 4618, 1188, 4896, 587, 558, 576, 573, 8502, 5981, 4892, 1888, 15130, 15131, 15132, 2]
+// Dependencies: [19, 17, 2128, 15391, 21, 4810, 1200, 5090, 587, 558, 576, 573, 8986, 6164, 5086, 1900, 15392, 15393, 15394, 2]
 
-// Module 15128 (SettingsAppearanceActivityCardItem)
+// Module 15390 (SettingsAppearanceActivityCardItem)
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import ClipView from "ClipView" /* 8502 */;
+import native from "native" /* 1200 */;
+import ClipView from "ClipView" /* 8986 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 15129 */;
+import LocaleStore from "LocaleStore" /* 2128 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15391 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ size1 = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEI
 size2 = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE };
 obj5 = { flexDirection: "row", alignItems: "center", justifyContent: "center", marginLeft: -4, height: native.AVATAR_SIZE_MAP[native.AvatarSizes.XSMALL_20], minWidth: native.AVATAR_SIZE_MAP[native.AvatarSizes.XSMALL_20], borderRadius: nativeDefault.radii.round, paddingHorizontal: 4, paddingTop: 1 };
 let closure_8 = createStyles(obj);
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((kind) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityCardItem(kind) {
   let Text;
   let animatedStyles;
   let avatars;
@@ -385,7 +385,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((kind) => {
   cResult[4] = num5;
   cResult[5] = mapped;
   tmp10 = mapped;
-}) : ((arg0) => {
+}) : (function ActivityCardItem(arg0) {
   let Text;
   let View2;
   let animatedStyles;

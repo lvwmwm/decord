@@ -1,20 +1,20 @@
-// Module ID: 14764
-// Function ID: 14765
+// Module ID: 15025
+// Function ID: 15026
 // Name: AuthorizedAppScreen
-// Dependencies: [19, 21, 558, 576, 6497, 1490, 14765, 2]
+// Dependencies: [19, 21, 558, 576, 6674, 1502, 15026, 2]
 
-// Module 14764 (AuthorizedAppScreen)
+// Module 15025 (AuthorizedAppScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useNavigation from "useNavigation" /* 1490 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6497 */;
-import UserSettingsAuthedAppDefault from "UserSettingsAuthedApp" /* 14765 */;
+import useNavigation from "useNavigation" /* 1502 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6674 */;
+import UserSettingsAuthedAppDefault from "UserSettingsAuthedApp" /* 15026 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AuthorizedAppScreen() {
   let obj = react2;
   const cResult = obj.c(6);
   const obj2 = useSettingNavigationRoute;
@@ -51,7 +51,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = items;
   tmp6 = items;
   tmp5 = fn;
-}) : (() => {
+}) : (function AuthorizedAppScreen() {
   let obj = useSettingNavigationRoute;
   const settingNavigationRoute = obj.useSettingNavigationRoute();
   const obj2 = useNavigation;

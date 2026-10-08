@@ -1,24 +1,24 @@
-// Module ID: 12070
-// Function ID: 12071
+// Module ID: 12143
+// Function ID: 12144
 // Name: PushNotificationActionCreators
-// Dependencies: [5, 12071, 502, 1085, 12072, 6092, 3, 1111, 1282, 1242, 12074, 510, 5089, 1369, 1260, 1375, 584, 2]
+// Dependencies: [5, 12144, 502, 1085, 12145, 5939, 3, 1111, 1294, 1254, 12148, 510, 5944, 1381, 1272, 1387, 584, 2]
 // Exports: setPushNotificationPermissionEligibleForPrompt, setPushPermissionReactivationSeen, setPushPermissionState, updateNotificationAuthorizationStatus
 
-// Module 12070 (PushNotificationActionCreators)
+// Module 12143 (PushNotificationActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import TokenManagerAll from "TokenManager" /* 1111 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5089 */;
-import Constants2 from "Constants" /* 12072 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5944 */;
+import Constants2 from "Constants" /* 12145 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MultiAccountStore from "MultiAccountStore" /* 12071 */;
+import MultiAccountStore from "MultiAccountStore" /* 12144 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1085 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6092 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 5939 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c5, c6, closure_3;
@@ -209,7 +209,7 @@ body = {
               closure_1 = undefined;
               tmp = id.getId();
               validUsers = validUsers.getValidUsers();
-              const sorted = validUsers.sort((id, id2) => {
+              const sorted = validUsers.sort(function sortCurrentUserFirst(id, id2) {
                 let num = -1;
                 if (id.id !== closure_1_0) {
                   let num2 = 0;

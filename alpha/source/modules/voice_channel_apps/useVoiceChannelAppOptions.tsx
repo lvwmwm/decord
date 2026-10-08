@@ -1,18 +1,18 @@
-// Module ID: 17019
-// Function ID: 17020
+// Module ID: 17300
+// Function ID: 17301
 // Name: useVoiceChannelAppOptions
-// Dependencies: [32, 19, 8734, 1402, 6756, 2016, 558, 576, 8735, 504, 6670, 6665, 17020, 2]
+// Dependencies: [32, 19, 11251, 1414, 6932, 2028, 558, 576, 12364, 504, 6847, 6842, 17301, 2]
 // Exports: voiceChannelAppIdsToFetch, voiceChannelAppRows
 
-// Module 17019 (useVoiceChannelAppOptions)
+// Module 17300 (useVoiceChannelAppOptions)
 import react2 from "react" /* 576 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6670 */;
-import ConjureUtils from "ConjureUtils" /* 6756 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 8735 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6847 */;
+import ConjureUtils from "ConjureUtils" /* 6932 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 12364 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureProjectStore_mod from "ConjureProjectStore" /* 8734 */;
+import ConjureProjectStore_mod from "ConjureProjectStore" /* 11251 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,8 +20,8 @@ const require = globalThis.__r;
 let _require, importDefault, map, name, set;
 
 let tmp2;
-const useGetOrFetchApplications = tmp2(6670);
-const f128075 = (application_id) => application_id.application_id;
+const useGetOrFetchApplications = tmp2(6847);
+const f129429 = (application_id) => application_id.application_id;
 function voiceChannelAppCandidates(stateFromStoresArray, stateFromStoresArray1, guildId) {
   map = new Map();
   const items = [...stateFromStoresArray1];
@@ -42,7 +42,7 @@ function voiceChannelAppCandidates(stateFromStoresArray, stateFromStoresArray1, 
 let react = react_mod;
 let ConjureProjectStore = ConjureProjectStore_mod;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildId) {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceChannelAppOptions(guildId) {
   let closure_4;
   let closure_5;
   let ref;
@@ -59,7 +59,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildId
   let obj = require("react");
   const cResult = obj.c(46);
   if (cResult[0] !== guildId) {
-    const fn = function l() {
+    const fn = function p() {
       const obj = ConjureActionCreators;
       obj.listProjects(guildId);
     };
@@ -77,7 +77,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildId
   const effect = react.useEffect(tmp4, tmp5);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [ConjureProjectStore];
-    const fn2 = function s() {
+    const fn2 = function c() {
       return closure_5.getOwnedProjects();
     };
     cResult[3] = items1;
@@ -281,7 +281,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildId
             }
           }
           let obj3 = { hasRows: arr8.length > 0, loadFailed: "error" === stateFromStores || tmp31, fetchPhase: str };
-          const tmpResult6 = tmp(17020);
+          const tmpResult6 = tmp(17301);
           const result = tmpResult6.voiceChannelAppListState(obj3);
           cResult[31] = str;
           cResult[32] = "error" === stateFromStores || tmp31;
@@ -303,7 +303,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildId
         const obj = closure_2_0(stateFromStoresArray1[5]);
         return !obj.isEmbeddedApplication(closure_0[index]);
       });
-      const mapped1 = found1.map(f128075);
+      const mapped1 = found1.map(f129429);
       cResult[18] = arr5;
       cResult[19] = tmp21;
       cResult[20] = mapped1;
@@ -316,7 +316,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildId
   cResult[11] = stateFromStoresArray1;
   cResult[12] = tmp16;
   arr5 = tmp16;
-}) : ((arg0) => {
+}) : (function useVoiceChannelAppOptions(arg0) {
   let closure_4;
   let items12;
   let ref;
@@ -361,7 +361,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildId
       const obj = closure_2_0(stateFromStoresArray1[5]);
       return !obj.isEmbeddedApplication(closure_0[index]);
     });
-    return found.map(f128075);
+    return found.map(f129429);
   }, items6);
   const items7 = [memo2];
   const effect1 = react.useEffect(() => {
@@ -463,7 +463,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildId
   return obj6;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceChannelAppSettingOptions(arg0, arg1) {
   let listState;
   let options;
   let tmp10;
@@ -551,7 +551,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[1] = options;
   cResult[2] = obj8;
   tmp8 = obj8;
-}) : ((arg0, arg1) => {
+}) : (function useVoiceChannelAppSettingOptions(arg0, arg1) {
   let closure_0;
   _require = arg1;
   const tmp = closure_7(arg0);
@@ -618,7 +618,7 @@ function voiceChannelAppIdsToFetch(arr, arg1) {
     const obj = closure_2_0(stateFromStoresArray1[5]);
     return !obj.isEmbeddedApplication(closure_0[index]);
   });
-  return found.map(f128075);
+  return found.map(f129429);
 }
 let result = size.fileFinishedImporting("modules/voice_channel_apps/useVoiceChannelAppOptions.tsx");
 

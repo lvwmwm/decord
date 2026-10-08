@@ -1,13 +1,13 @@
-// Module ID: 16614
-// Function ID: 16615
+// Module ID: 16872
+// Function ID: 16873
 // Name: useConjureLiveReloadSetting
-// Dependencies: [32, 19, 12923, 12926, 558, 576, 504, 16615, 2]
+// Dependencies: [32, 19, 13072, 13076, 558, 576, 504, 16873, 2]
 
-// Module 16614 (useConjureLiveReloadSetting)
-import ConjureConnectionStore from "ConjureConnectionStore" /* 12923 */;
+// Module 16872 (useConjureLiveReloadSetting)
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13072 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureLiveReloadStore from "ConjureLiveReloadStore" /* 12926 */;
+import ConjureLiveReloadStore from "ConjureLiveReloadStore" /* 13076 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let _require, closure_5;
 
 let react = react_mod;
 let sendLiveReload = ConjureConnectionStore.sendLiveReload;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureLiveReloadSetting(arg0) {
   let closure_0;
   let closure_3;
   let closure_4;
@@ -195,7 +195,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (stateFromStores != null) {
     enabled = stateFromStores.enabled;
   }
-}) : ((arg0) => {
+}) : (function useConjureLiveReloadSetting(arg0) {
   let callback;
   let closure_0;
   let closure_3;

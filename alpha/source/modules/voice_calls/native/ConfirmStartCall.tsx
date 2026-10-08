@@ -1,25 +1,23 @@
-// Module ID: 12979
-// Function ID: 12980
+// Module ID: 12836
+// Function ID: 12837
 // Name: ConfirmStartCall
-// Dependencies: [19, 21, 558, 576, 1126, 5720, 5720, 5716, 2]
+// Dependencies: [19, 21, 558, 576, 1126, 5303, 5303, 5299, 2]
 // Exports: confirmStartCall
 
-// Module 12979 (ConfirmStartCall)
+// Module 12836 (ConfirmStartCall)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
-import useAlertStore from "useAlertStore" /* 5716 */;
-import AlertModal2 from "AlertModal" /* 5720 */;
+import useAlertStore from "useAlertStore" /* 5299 */;
+import AlertModal2 from "AlertModal" /* 5303 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let onConfirm;
-
 let c2;
 let c3;
 ({ jsx: c2, jsxs: c3 } = Fragment);
-let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
+let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmStartCall(onConfirm) {
   let intl4;
   let items;
   let obj5;
@@ -63,7 +61,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "secondary", text: intl4.string(intl5.t["ETE/oC"]) };
-    const AlertActionButton = tmp(5720).AlertActionButton;
+    const AlertActionButton = tmp(5303).AlertActionButton;
     intl4 = tmp(1126).intl;
     const tmp15 = React2(AlertActionButton, obj3, "cancel");
     cResult[5] = tmp15;
@@ -73,7 +71,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   }
   if (cResult[6] !== tmp10) {
     const obj4 = { title: tmp4, content: tmp5, actions: _false(AlertModal2.AlertActions, obj5) };
-    const AlertModal = tmp(5720).AlertModal;
+    const AlertModal = tmp(5303).AlertModal;
     obj5 = { children: items };
     items = [tmp10, tmp13];
     const tmp19 = React2(AlertModal, obj4);
@@ -84,7 +82,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
     tmp16 = cResult[7];
   }
   return tmp16;
-}) : ((onConfirm) => {
+}) : (function ConfirmStartCall(onConfirm) {
   let AlertActions;
   let intl;
   let intl2;

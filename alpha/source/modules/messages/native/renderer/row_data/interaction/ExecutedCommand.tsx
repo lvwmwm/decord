@@ -1,25 +1,25 @@
-// Module ID: 13046
-// Function ID: 13047
+// Module ID: 13324
+// Function ID: 13325
 // Name: ExecutedCommand
-// Dependencies: [17, 1391, 2051, 1377, 1085, 1405, 1402, 5311, 11255, 587, 7043, 5126, 7631, 7633, 9033, 1126, 8826, 2]
+// Dependencies: [17, 1403, 2063, 1389, 1085, 1417, 1414, 5623, 9595, 587, 7231, 5438, 7952, 7954, 8488, 1126, 9185, 2]
 // Exports: createExecutedCommand
 
-// Module 13046 (ExecutedCommand)
+// Module 13324 (ExecutedCommand)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import InteractionTypes from "InteractionTypes" /* 5126 */;
-import useMessageAuthor from "useMessageAuthor" /* 5311 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7043 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7631 */;
-import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 7633 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 8826 */;
-import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 9033 */;
-import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 11255 */;
-import UserRecord from "UserRecord" /* 1391 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import UserStore from "UserStore" /* 1377 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import InteractionTypes from "InteractionTypes" /* 5438 */;
+import useMessageAuthor from "useMessageAuthor" /* 5623 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7231 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7952 */;
+import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 7954 */;
+import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 8488 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9185 */;
+import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 9595 */;
+import UserRecord from "UserRecord" /* 1403 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 const processColor = react_native.processColor;
@@ -64,7 +64,7 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
       if (channel != null) {
         guildId = channel.getGuildId();
       }
-      tmp7(1405);
+      tmp7(1417);
       if (null != guildMemberAvatar) {
         let guildMemberAvatarSource;
         if (null != guildId) {

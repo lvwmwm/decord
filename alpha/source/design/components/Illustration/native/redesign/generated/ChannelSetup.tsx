@@ -1,15 +1,15 @@
-// Module ID: 17889
-// Function ID: 17890
+// Module ID: 18176
+// Function ID: 18177
 // Name: ChannelSetup
-// Dependencies: [19, 17, 21, 7916, 17890, 17891, 17892, 558, 576, 4735, 2]
+// Dependencies: [19, 17, 21, 8335, 18177, 18178, 18179, 558, 576, 4929, 2]
 // Exports: getChannelSetupSource
 
-// Module 17889 (ChannelSetup)
+// Module 18176 (ChannelSetup)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import shared from "shared" /* 4735 */;
-import _mod7916 from "module_7916" /* 7916 */;
+import shared from "shared" /* 4929 */;
+import _mod8335 from "module_8335" /* 8335 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ function light() {
 const Image = react_native.Image;
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelSetupSource() {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -36,7 +36,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const theme = obj2.useThemeContext().theme;
   if (cResult[0] !== theme) {
     const obj3 = { dark, darker, light };
-    const tmpResult = _mod7916;
+    const tmpResult = _mod8335;
     const illustrationSource = tmpResult.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
@@ -45,16 +45,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : (() => {
+}) : (function useChannelSetupSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod7916;
+  const obj2 = _mod8335;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 });
 let closure_4 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSetup(arg0) {
   const obj = react2;
   const cResult = obj.c(3);
   const tmp2 = closure_4();
@@ -71,13 +71,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp2;
   cResult[2] = tmp5;
   tmp3 = tmp5;
-}) : ((arg0) => {
+}) : (function ChannelSetup(arg0) {
   const tmp = closure_4();
   const merged = Object.assign(arg0);
   return <Image source={tmp} />;
 });
 function getChannelSetupSource(theme) {
-  const obj = _mod7916;
+  const obj = _mod8335;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }

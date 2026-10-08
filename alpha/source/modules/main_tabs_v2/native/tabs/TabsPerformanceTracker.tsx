@@ -1,14 +1,14 @@
-// Module ID: 15981
-// Function ID: 15982
+// Module ID: 16241
+// Function ID: 16242
 // Name: TabsPerformanceTracker
-// Dependencies: [19, 1085, 3, 1252, 558, 576, 4618, 2]
+// Dependencies: [19, 1085, 3, 1264, 558, 576, 4810, 2]
 // Exports: trackTabPressed
 
-// Module 15981 (TabsPerformanceTracker)
+// Module 16241 (TabsPerformanceTracker)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ let closure_7 = { code: "function TabsPerformanceTrackerTsx1(){const{runOnJS,log
 let closure_8 = { code: "function TabsPerformanceTrackerTsx2(){const{runOnJS,log_0}=this.__closure;return runOnJS(log_0)();}" };
 let closure_9 = { code: "function TabsPerformanceTrackerTsx3(){const{runOnJS,log}=this.__closure;return runOnJS(log)();}" };
 let closure_10 = { code: "function TabsPerformanceTrackerTsx4(){const{runOnJS,log_0}=this.__closure;return runOnJS(log_0)();}" };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackTabPerformance(arg0) {
   let closure_0;
   let tmp2;
   let tmp3;
@@ -101,7 +101,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (null != closure_1_6[tab].startTime) {
           let _performance = performance;
           closure_1_6[tab].effectTime = performance.now();
-          function log_0() {
+          function log() {
             const tmp2 = null != tab && null != tab.startTime;
             if (tmp2) {
               const _performance = performance;
@@ -120,10 +120,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp5 = tab;
           const fn = function o() {
             const obj = ReanimatedRexport;
-            return obj.runOnJS(log_0)();
+            return obj.runOnJS(log)();
           };
           const tmp7 = tab(dependencyMap[6]);
-          const obj2 = { runOnJS: tab(dependencyMap[6]).runOnJS, log_0 };
+          const obj2 = { runOnJS: tab(dependencyMap[6]).runOnJS, log_0: log };
           const runOnUI = tmp7.runOnUI;
           fn.__closure = obj2;
           fn.__workletHash = 1184292963178;
@@ -148,7 +148,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp6 = cResult[5];
   }
   const effect = obj2.useEffect(tmp5, tmp6);
-}) : ((arg0) => {
+}) : (function useTrackTabPerformance(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   const layoutEffect = react.useLayoutEffect(() => {

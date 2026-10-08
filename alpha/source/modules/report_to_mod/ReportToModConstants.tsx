@@ -1,9 +1,9 @@
-// Module ID: 6801
-// Function ID: 6802
+// Module ID: 6972
+// Function ID: 6973
 // Name: ReportToModConstants
 // Dependencies: [1085, 1097, 2]
 
-// Module 6801 (ReportToModConstants)
+// Module 6972 (ReportToModConstants)
 import Constants from "Constants" /* 1085 */;
 import BigFlagUtils from "BigFlagUtils" /* 1097 */;
 import size from "module_2" /* 2 */;

@@ -1,15 +1,15 @@
-// Module ID: 12985
-// Function ID: 12986
+// Module ID: 13263
+// Function ID: 13264
 // Name: useCollectibleProfileOverrides
-// Dependencies: [19, 7071, 7072, 7073, 558, 576, 7853, 1980, 2]
+// Dependencies: [19, 7257, 7258, 7259, 558, 576, 8271, 1992, 2]
 
-// Module 12985 (useCollectibleProfileOverrides)
+// Module 13263 (useCollectibleProfileOverrides)
 import react2 from "react" /* 576 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7071 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7072 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7073 */;
-import useShopProductItems from "useShopProductItems" /* 7853 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1992 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7257 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7258 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7259 */;
+import useShopProductItems from "useShopProductItems" /* 8271 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 const isAvatarDecorationRecord = AvatarDecorationRecord.isAvatarDecorationRecord;
 const isProfileEffectRecord = ProfileEffectRecord.isProfileEffectRecord;
 const isProfileFrameRecord = ProfileFrameRecord.isProfileFrameRecord;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((type, first1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCollectibleProfileOverrides(type, first1) {
   let firstAvatarDecoration;
   let firstProfileEffect;
   let firstProfileFrame;
@@ -76,7 +76,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((type, first1) => {
   cResult[7] = first1;
   cResult[8] = obj3;
   tmp7 = obj3;
-}) : ((arg0, arg1) => {
+}) : (function useCollectibleProfileOverrides(arg0, arg1) {
   const type = arg0;
   let closure_1 = arg1;
   const items = [arg0, arg1];

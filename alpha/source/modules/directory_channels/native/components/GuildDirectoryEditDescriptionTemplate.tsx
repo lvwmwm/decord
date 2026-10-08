@@ -1,18 +1,18 @@
-// Module ID: 11959
-// Function ID: 11960
+// Module ID: 12032
+// Function ID: 12033
 // Name: GuildDirectoryEditDescriptionTemplate
-// Dependencies: [5, 32, 19, 17, 11954, 11947, 21, 4896, 504, 5320, 6587, 1126, 6079, 6078, 5601, 2]
+// Dependencies: [5, 32, 19, 17, 12027, 12020, 21, 5090, 504, 5632, 6763, 1126, 6265, 6264, 5375, 2]
 // Exports: default
 
-// Module 11959 (GuildDirectoryEditDescriptionTemplate)
+// Module 12032 (GuildDirectoryEditDescriptionTemplate)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 11954 */;
-import GuildDirectoryConstants from "GuildDirectoryConstants" /* 11947 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 12027 */;
+import GuildDirectoryConstants from "GuildDirectoryConstants" /* 12020 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

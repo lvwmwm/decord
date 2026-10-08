@@ -1,17 +1,17 @@
-// Module ID: 13605
-// Function ID: 13606
+// Module ID: 13427
+// Function ID: 13428
 // Name: NUFTemplate
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4892, 5601, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 5086, 5375, 2]
 
-// Module 13605 (NUFTemplate)
+// Module 13427 (NUFTemplate)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let obj2;
 let obj = { container: obj2, title: { textAlign: "center", marginBottom: 8 }, description: { textAlign: "center", lineHeight: 18, marginBottom: 24 }, image: { marginBottom: 24 } };
 obj2 = { padding: 16, alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 let closure_6 = createStyles.createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NUFActionSheetTemplate(arg0) {
   let CTALabel;
   let description;
   let imageSrc;
@@ -107,7 +107,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = title;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((arg0) => {
+}) : (function NUFActionSheetTemplate(arg0) {
   let CTALabel;
   let description;
   let imageSrc;

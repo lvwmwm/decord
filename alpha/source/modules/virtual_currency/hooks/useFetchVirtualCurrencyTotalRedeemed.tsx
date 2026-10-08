@@ -1,20 +1,20 @@
-// Module ID: 8549
-// Function ID: 8550
+// Module ID: 9033
+// Function ID: 9034
 // Name: useFetchVirtualCurrencyTotalRedeemed
-// Dependencies: [19, 8543, 558, 576, 504, 8544, 2]
+// Dependencies: [19, 9028, 558, 576, 504, 9029, 2]
 
-// Module 8549 (useFetchVirtualCurrencyTotalRedeemed)
+// Module 9033 (useFetchVirtualCurrencyTotalRedeemed)
 import react from "react" /* 19 */;
-import VirtualCurrencyActionCreators from "VirtualCurrencyActionCreators" /* 8544 */;
-import VirtualCurrencyStore from "VirtualCurrencyStore" /* 8543 */;
+import VirtualCurrencyActionCreators from "VirtualCurrencyActionCreators" /* 9029 */;
+import VirtualCurrencyStore from "VirtualCurrencyStore" /* 9028 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, disableFetch;
+let _require;
 
 const useEffect = react.useEffect;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disableFetch) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchVirtualCurrencyTotalRedeemed(disableFetch) {
   let error;
   let tmp4;
   let tmp5;
@@ -26,7 +26,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disableFetch) => {
   const tmp = _require;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [error];
-    const fn = function n() {
+    const fn = function u() {
       return { totalRedeemed: error.totalRedeemed, isFetching: error.isFetchingTotalRedeemed, error: error.fetchTotalRedeemedError };
     };
     cResult[0] = items;
@@ -99,7 +99,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disableFetch) => {
   if (disableFetch != null) {
     disableFetch2 = disableFetch.disableFetch;
   }
-  const fn2 = function u() {
+  const fn2 = function s() {
     disableFetch = undefined;
     if (disableFetch != null) {
       disableFetch = disableFetch.disableFetch;
@@ -116,7 +116,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disableFetch) => {
   cResult[5] = totalRedeemed;
   cResult[6] = fn2;
   tmp11 = fn2;
-}) : ((disableFetch) => {
+}) : (function useFetchVirtualCurrencyTotalRedeemed(disableFetch) {
   let error;
   let totalRedeemed;
   _require = disableFetch;

@@ -1,20 +1,20 @@
-// Module ID: 7223
-// Function ID: 7224
+// Module ID: 5903
+// Function ID: 5904
 // Name: StreamPermissionUtils
-// Dependencies: [4913, 2055, 4513, 2074, 4515, 4915, 1085, 5580, 5041, 5106, 558, 576, 504, 2]
+// Dependencies: [5109, 2067, 4705, 2086, 4707, 5111, 1085, 5890, 5410, 5904, 5930, 558, 576, 504, 2]
 // Exports: getStreamEligibleChannels
 
-// Module 7223 (StreamPermissionUtils)
+// Module 5903 (StreamPermissionUtils)
 import Constants from "Constants" /* 1085 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import GuildChannelStore from "GuildChannelStore" /* 4513 */;
-import ChannelUtils from "ChannelUtils" /* 5041 */;
-import AgeGateUtils from "AgeGateUtils" /* 5106 */;
-import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 5580 */;
-import GameConsoleStore from "GameConsoleStore" /* 4913 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import VoiceStateStore from "VoiceStateStore" /* 4915 */;
+import ChannelRecord from "ChannelRecord" /* 2067 */;
+import GuildChannelStore from "GuildChannelStore" /* 4705 */;
+import ChannelUtils from "ChannelUtils" /* 5410 */;
+import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 5890 */;
+import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 5904 */;
+import GameConsoleStore from "GameConsoleStore" /* 5109 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import VoiceStateStore from "VoiceStateStore" /* 5111 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -71,11 +71,11 @@ function canWatchStream(basicChannel1, VoiceStateStore, GuildStore, PermissionSt
     }
     let tmp9 = canJoinVoiceChannelDefault(basicChannel1, PermissionStore);
     const tmp10 = null != GameConsoleStore.getAwaitingRemoteSessionInfo() || null != GameConsoleStore.getRemoteSessionId();
-    const obj2 = AgeGateUtils;
+    const obj2 = shouldAgeVerifyForAgeGate;
     let result = obj2.shouldAgeVerifyForAgeGate();
     const tmp11 = require;
     if (result) {
-      const tmp11Result = tmp11(5106);
+      const tmp11Result = tmp11(5930);
       result = tmp11Result.shouldShowAgeGateForChannelId(basicChannel1.id);
     }
     if (tmp10) {
@@ -111,7 +111,7 @@ const ChannelRecordBase = ChannelRecord.ChannelRecordBase;
 const GUILD_VOCAL_CHANNELS_KEY = GuildChannelStore.GUILD_VOCAL_CHANNELS_KEY;
 const Permissions = Constants.Permissions;
 const StreamUnavailableReasons = { REMOTE_MODE: 0, [0]: "REMOTE_MODE", CHANNEL_FULL: 1, [1]: "CHANNEL_FULL", NO_PERMISSION: 2, [2]: "NO_PERMISSION", AGE_RESTRICTED: 3, [3]: "AGE_RESTRICTED" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanWatchStream(arg0) {
   let closure_0;
   let first;
   let tmp9;
@@ -138,7 +138,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresArray(first, tmp9);
-}) : ((arg0) => {
+}) : (function useCanWatchStream(arg0) {
   let closure_0;
   _require = arg0;
   const items = [VoiceStateStore, GuildStore, PermissionStore, GameConsoleStore];

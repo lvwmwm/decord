@@ -1,16 +1,18 @@
-// Module ID: 4525
-// Function ID: 4526
+// Module ID: 4717
+// Function ID: 4718
 // Name: RelationshipStore
-// Dependencies: [32, 4526, 1377, 1085, 584, 504, 2]
+// Dependencies: [32, 4718, 1389, 1085, 584, 504, 2]
 
-// Module 4525 (RelationshipStore)
+// Module 4717 (RelationshipStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4526 */;
-import UserStore from "UserStore" /* 1377 */;
+import MessageRecord from "MessageRecord" /* 4718 */;
+import UserStore from "UserStore" /* 1389 */;
 import size_mod from "module_2" /* 2 */;
+
+let closure_15;
 
 function markAllUserIdListsStale() {
   set3.add("friends");
@@ -107,10 +109,10 @@ let set1 = new Set();
 const set2 = new Set();
 let obj12 = {};
 let closure_14 = 0;
-let closure_15 = {};
+const authStore3 = {};
 let closure_16 = 0;
 let size = 0;
-let closure_19 = { friends: "toCharArray$esjava$1", blocked: "Symbol", ignored: "IconComponent", blockedOrIgnored: "Reflect" };
+let closure_19 = { friends: "code", blocked: "max", ignored: "shapes", blockedOrIgnored: "Array" };
 const set3 = new Set();
 const map1 = new Map();
 const Store = get_initializedDefault.Store;

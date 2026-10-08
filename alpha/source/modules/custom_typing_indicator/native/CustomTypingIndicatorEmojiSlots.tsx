@@ -1,53 +1,51 @@
-// Module ID: 15197
-// Function ID: 15198
+// Module ID: 15459
+// Function ID: 15460
 // Name: CustomTypingIndicatorEmojiSlots
-// Dependencies: [32, 19, 1380, 21, 15198, 15200, 15202, 15204, 15206, 15208, 15210, 15212, 15214, 15216, 15218, 15220, 15222, 15224, 15226, 15228, 15230, 15232, 15234, 15236, 15238, 15240, 4896, 558, 576, 11610, 1402, 6632, 4618, 5604, 5605, 9879, 1126, 3755, 1398, 6002, 12, 5600, 2]
+// Dependencies: [32, 19, 1392, 21, 15460, 15462, 15464, 15466, 15468, 15470, 15472, 15474, 15476, 15478, 15480, 15482, 15484, 15486, 15488, 15490, 15492, 15494, 15496, 15498, 15500, 15502, 5090, 558, 576, 11674, 1414, 6809, 4810, 5374, 5378, 9359, 1126, 3829, 1410, 6186, 12, 5373, 2]
 
-// Module 15197 (CustomTypingIndicatorEmojiSlots)
+// Module 15459 (CustomTypingIndicatorEmojiSlots)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
-import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1398 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import Stack_Stack from "Stack/Stack" /* 5600 */;
-import spring from "spring" /* 5604 */;
-import springPresets from "springPresets" /* 5605 */;
-import EmojiDefault from "Emoji" /* 6632 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9879 */;
-import useCanPlayAnimatedEmojiDefault from "useCanPlayAnimatedEmoji" /* 11610 */;
-import EmojiAngryFaceWithHornsIcon from "EmojiAngryFaceWithHornsIcon" /* 15198 */;
-import EmojiColdFaceIcon from "EmojiColdFaceIcon" /* 15200 */;
-import EmojiCowboyHatFaceIcon from "EmojiCowboyHatFaceIcon" /* 15202 */;
-import EmojiCryingFaceIcon from "EmojiCryingFaceIcon" /* 15204 */;
-import EmojiDisguisedFaceIcon from "EmojiDisguisedFaceIcon" /* 15206 */;
-import EmojiFaceVomitingIcon from "EmojiFaceVomitingIcon" /* 15208 */;
-import EmojiFaceWithMonocleIcon from "EmojiFaceWithMonocleIcon" /* 15210 */;
-import EmojiFaceWithSpiralEyesIcon from "EmojiFaceWithSpiralEyesIcon" /* 15212 */;
-import EmojiMeltingFaceIcon from "EmojiMeltingFaceIcon" /* 15214 */;
-import EmojiMoneyMouthFaceIcon from "EmojiMoneyMouthFaceIcon" /* 15216 */;
-import EmojiNerdFaceIcon from "EmojiNerdFaceIcon" /* 15218 */;
-import EmojiPartyingFaceIcon from "EmojiPartyingFaceIcon" /* 15220 */;
-import EmojiSalutingFaceIcon from "EmojiSalutingFaceIcon" /* 15222 */;
-import EmojiSkullIcon from "EmojiSkullIcon" /* 15224 */;
-import EmojiSmilingFaceWithHornsIcon from "EmojiSmilingFaceWithHornsIcon" /* 15226 */;
-import EmojiSmilingFaceWithSunglassesIcon from "EmojiSmilingFaceWithSunglassesIcon" /* 15228 */;
-import EmojiSquintingFaceWithTongueIcon from "EmojiSquintingFaceWithTongueIcon" /* 15230 */;
-import EmojiUpsideDownFaceIcon from "EmojiUpsideDownFaceIcon" /* 15232 */;
-import EmojiWoozyFaceIcon from "EmojiWoozyFaceIcon" /* 15234 */;
-import EmojiZanyFaceIcon from "EmojiZanyFaceIcon" /* 15236 */;
-import EmojiRollingOnTheFloorLaughingIcon from "EmojiRollingOnTheFloorLaughingIcon" /* 15238 */;
-import EmojiSmilingFaceWithHeartsIcon from "EmojiSmilingFaceWithHeartsIcon" /* 15240 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import spring from "spring" /* 5374 */;
+import springPresets from "springPresets" /* 5378 */;
+import EmojiDefault from "Emoji" /* 6809 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9359 */;
+import useCanPlayAnimatedEmojiDefault from "useCanPlayAnimatedEmoji" /* 11674 */;
+import EmojiAngryFaceWithHornsIcon from "EmojiAngryFaceWithHornsIcon" /* 15460 */;
+import EmojiColdFaceIcon from "EmojiColdFaceIcon" /* 15462 */;
+import EmojiCowboyHatFaceIcon from "EmojiCowboyHatFaceIcon" /* 15464 */;
+import EmojiCryingFaceIcon from "EmojiCryingFaceIcon" /* 15466 */;
+import EmojiDisguisedFaceIcon from "EmojiDisguisedFaceIcon" /* 15468 */;
+import EmojiFaceVomitingIcon from "EmojiFaceVomitingIcon" /* 15470 */;
+import EmojiFaceWithMonocleIcon from "EmojiFaceWithMonocleIcon" /* 15472 */;
+import EmojiFaceWithSpiralEyesIcon from "EmojiFaceWithSpiralEyesIcon" /* 15474 */;
+import EmojiMeltingFaceIcon from "EmojiMeltingFaceIcon" /* 15476 */;
+import EmojiMoneyMouthFaceIcon from "EmojiMoneyMouthFaceIcon" /* 15478 */;
+import EmojiNerdFaceIcon from "EmojiNerdFaceIcon" /* 15480 */;
+import EmojiPartyingFaceIcon from "EmojiPartyingFaceIcon" /* 15482 */;
+import EmojiSalutingFaceIcon from "EmojiSalutingFaceIcon" /* 15484 */;
+import EmojiSkullIcon from "EmojiSkullIcon" /* 15486 */;
+import EmojiSmilingFaceWithHornsIcon from "EmojiSmilingFaceWithHornsIcon" /* 15488 */;
+import EmojiSmilingFaceWithSunglassesIcon from "EmojiSmilingFaceWithSunglassesIcon" /* 15490 */;
+import EmojiSquintingFaceWithTongueIcon from "EmojiSquintingFaceWithTongueIcon" /* 15492 */;
+import EmojiUpsideDownFaceIcon from "EmojiUpsideDownFaceIcon" /* 15494 */;
+import EmojiWoozyFaceIcon from "EmojiWoozyFaceIcon" /* 15496 */;
+import EmojiZanyFaceIcon from "EmojiZanyFaceIcon" /* 15498 */;
+import EmojiRollingOnTheFloorLaughingIcon from "EmojiRollingOnTheFloorLaughingIcon" /* 15500 */;
+import EmojiSmilingFaceWithHeartsIcon from "EmojiSmilingFaceWithHeartsIcon" /* 15502 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-const require = globalThis.__r;
 const ReanimatedRexportDefault = ReanimatedRexport;
-let dependencyMap, emojis;
+let dependencyMap;
 
+let _slicedToArray = _slicedToArray_mod;
 const EmojiIntention = EmojiConstants.EmojiIntention;
 const jsx = Fragment.jsx;
 let c7 = 28;
@@ -56,7 +54,7 @@ let c9 = 1.14;
 let items = [EmojiAngryFaceWithHornsIcon.EmojiAngryFaceWithHornsIcon, EmojiColdFaceIcon.EmojiColdFaceIcon, EmojiCowboyHatFaceIcon.EmojiCowboyHatFaceIcon, EmojiCryingFaceIcon.EmojiCryingFaceIcon, EmojiDisguisedFaceIcon.EmojiDisguisedFaceIcon, EmojiFaceVomitingIcon.EmojiFaceVomitingIcon, EmojiFaceWithMonocleIcon.EmojiFaceWithMonocleIcon, EmojiFaceWithSpiralEyesIcon.EmojiFaceWithSpiralEyesIcon, EmojiMeltingFaceIcon.EmojiMeltingFaceIcon, EmojiMoneyMouthFaceIcon.EmojiMoneyMouthFaceIcon, EmojiNerdFaceIcon.EmojiNerdFaceIcon, EmojiPartyingFaceIcon.EmojiPartyingFaceIcon, EmojiSalutingFaceIcon.EmojiSalutingFaceIcon, EmojiSkullIcon.EmojiSkullIcon, EmojiSmilingFaceWithHornsIcon.EmojiSmilingFaceWithHornsIcon, EmojiSmilingFaceWithSunglassesIcon.EmojiSmilingFaceWithSunglassesIcon, EmojiSquintingFaceWithTongueIcon.EmojiSquintingFaceWithTongueIcon, EmojiUpsideDownFaceIcon.EmojiUpsideDownFaceIcon, EmojiWoozyFaceIcon.EmojiWoozyFaceIcon, EmojiZanyFaceIcon.EmojiZanyFaceIcon, EmojiRollingOnTheFloorLaughingIcon.EmojiRollingOnTheFloorLaughingIcon, EmojiSmilingFaceWithHeartsIcon.EmojiSmilingFaceWithHeartsIcon];
 let closure_11 = createStyles.createStyles({ slot: { flex: 1, height: 64, alignItems: "center", justifyContent: "center" } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiGlyph(emoji) {
   let animated;
   const obj = react2;
   const cResult = obj.c(9);
@@ -115,7 +113,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
   cResult[2] = emoji.id;
   cResult[3] = emojiURL;
   tmp5 = emojiURL;
-}) : ((emoji) => {
+}) : (function EmojiGlyph(emoji) {
   let animated;
   let emojiURL;
   emoji = emoji.emoji;
@@ -127,7 +125,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
   if (null != emoji.id) {
     const obj3 = { id: null, animated, size: v28 };
     ({ id: obj2.id, animated } = emoji);
-    const getEmojiURL = tmp(1402).getEmojiURL;
+    const getEmojiURL = tmp(1414).getEmojiURL;
     AvatarUtilsDefault;
     if (animated == null) {
       animated = false;
@@ -143,7 +141,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
 const __initData = { code: "function CustomTypingIndicatorEmojiSlotsTsx1(){const{pressed,withSpring,interpolate,PLACEHOLDER_EMOJI_RESTING_OPACITY,ON_PRESS_SPRING,PLACEHOLDER_EMOJI_ACTIVE_SCALE}=this.__closure;const value=pressed.get();return{opacity:withSpring(interpolate(value,[0,1],[PLACEHOLDER_EMOJI_RESTING_OPACITY,1]),ON_PRESS_SPRING),transform:[{scale:withSpring(interpolate(value,[0,1],[1,PLACEHOLDER_EMOJI_ACTIVE_SCALE]),ON_PRESS_SPRING)}]};}" };
 const __initData2 = { code: "function CustomTypingIndicatorEmojiSlotsTsx2(){const{pressed,withSpring,interpolate,PLACEHOLDER_EMOJI_RESTING_OPACITY,ON_PRESS_SPRING,PLACEHOLDER_EMOJI_ACTIVE_SCALE}=this.__closure;const value=pressed.get();return{opacity:withSpring(interpolate(value,[0,1],[PLACEHOLDER_EMOJI_RESTING_OPACITY,1]),ON_PRESS_SPRING),transform:[{scale:withSpring(interpolate(value,[0,1],[1,PLACEHOLDER_EMOJI_ACTIVE_SCALE]),ON_PRESS_SPRING)}]};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlaceholderEmojiGlyph(arg0) {
   let Icon;
   let first;
   let pressed;
@@ -151,8 +149,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj = pressed(576);
   const cResult = obj.c(6);
   ({ Icon, pressed } = arg0);
-  let obj2 = pressed(4618);
-  const fn = function t() {
+  let obj2 = pressed(4810);
+  const fn = function n() {
     let interpolateResult;
     let interpolateResult1;
     let items2;
@@ -174,7 +172,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     interpolateResult1 = obj4.interpolate(value, [0, 1], items1);
     return obj;
   };
-  let obj3 = { pressed, withSpring: pressed(5604).withSpring, interpolate: pressed(4618).interpolate, PLACEHOLDER_EMOJI_RESTING_OPACITY, ON_PRESS_SPRING: pressed(5605).ON_PRESS_SPRING, PLACEHOLDER_EMOJI_ACTIVE_SCALE };
+  let obj3 = { pressed, withSpring: pressed(5374).withSpring, interpolate: pressed(4810).interpolate, PLACEHOLDER_EMOJI_RESTING_OPACITY, ON_PRESS_SPRING: pressed(5378).ON_PRESS_SPRING, PLACEHOLDER_EMOJI_ACTIVE_SCALE };
   fn.__closure = obj3;
   fn.__workletHash = 16574219123934;
   fn.__initData = __initData;
@@ -206,10 +204,10 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = tmp6;
   cResult[5] = tmp10;
   tmp9 = tmp10;
-}) : ((pressed) => {
+}) : (function PlaceholderEmojiGlyph(pressed) {
   pressed = pressed.pressed;
   const Icon = pressed.Icon;
-  let obj = pressed(4618);
+  let obj = pressed(4810);
   const fn = function o() {
     let interpolateResult;
     let interpolateResult1;
@@ -232,7 +230,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     interpolateResult1 = obj4.interpolate(value, [0, 1], items1);
     return obj;
   };
-  let obj2 = { pressed, withSpring: pressed(5604).withSpring, interpolate: pressed(4618).interpolate, PLACEHOLDER_EMOJI_RESTING_OPACITY, ON_PRESS_SPRING: pressed(5605).ON_PRESS_SPRING, PLACEHOLDER_EMOJI_ACTIVE_SCALE };
+  let obj2 = { pressed, withSpring: pressed(5374).withSpring, interpolate: pressed(4810).interpolate, PLACEHOLDER_EMOJI_RESTING_OPACITY, ON_PRESS_SPRING: pressed(5378).ON_PRESS_SPRING, PLACEHOLDER_EMOJI_ACTIVE_SCALE };
   fn.__closure = obj2;
   fn.__workletHash = 4597331743997;
   fn.__initData = __initData2;
@@ -243,95 +241,105 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return <View style={animatedStyle}>{null}</View>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypingIndicatorEmojiSlot(index) {
   let emoji;
+  let emojisKey;
   let onChange;
   let placeholderIcon;
   let sharedValue;
   let tmp = index;
   let tmp2 = sharedValue;
   let obj = index(sharedValue[28]);
-  const cResult = obj.c(21);
+  const cResult = obj.c(22);
   index = index.index;
-  ({ emoji, placeholderIcon, onChange } = index);
+  ({ emoji, emojisKey, placeholderIcon, onChange } = index);
   closure_11();
   let obj2 = index(sharedValue[32]);
   sharedValue = obj2.useSharedValue(0);
   if (cResult[0] === index) {
     let formatToPlainString2Result;
     if (cResult[3] !== sharedValue) {
-      const fn2 = function p() {
-        return sharedValue.set(1);
-      };
+      class P {
+        constructor() {
+          return sharedValue.set(1);
+        }
+      }
       cResult[3] = sharedValue;
-      cResult[4] = fn2;
+      cResult[4] = P;
+    } else {
+      class P {
+        constructor() {
+          return sharedValue.set(1);
+        }
+      }
     }
     if (cResult[5] !== sharedValue) {
-      class T {
+      class P {
         constructor() {
-          return sharedValue.set(0);
+          return sharedValue.set(1);
         }
       }
       cResult[5] = sharedValue;
-      cResult[6] = T;
+      cResult[6] = tmp9;
     } else {
-      class T {
+      class P {
         constructor() {
-          return sharedValue.set(0);
+          return sharedValue.set(1);
         }
       }
     }
     if (cResult[7] === emoji) {
-      let tmp20;
-      class T {
+      let tmp21;
+      class P {
         constructor() {
-          return sharedValue.set(0);
+          return sharedValue.set(1);
         }
       }
       if (cResult[10] === emoji) {
-        class T {
+        class P {
           constructor() {
-            return sharedValue.set(0);
+            return sharedValue.set(1);
           }
         }
       }
       if (null != emoji) {
-        class T {
+        class P {
           constructor() {
-            return sharedValue.set(0);
+            return sharedValue.set(1);
           }
         }
-        tmp20 = <closure_12 emoji={emoji} />;
+        tmp21 = <closure_12 key={emojisKey} emoji={emoji} />;
       } else {
-        class T {
+        class P {
           constructor() {
-            return sharedValue.set(0);
+            return sharedValue.set(1);
           }
         }
-        tmp20 = <closure_15 Icon={placeholderIcon} pressed={sharedValue} />;
+        tmp21 = <closure_15 Icon={placeholderIcon} pressed={sharedValue} />;
       }
       cResult[10] = emoji;
-      cResult[11] = placeholderIcon;
-      cResult[12] = sharedValue;
-      cResult[13] = tmp20;
+      cResult[11] = emojisKey;
+      cResult[12] = placeholderIcon;
+      cResult[13] = sharedValue;
+      cResult[14] = tmp21;
     }
     if (null != emoji) {
-      class T {
+      class P {
         constructor() {
-          return sharedValue.set(0);
+          return sharedValue.set(1);
         }
       }
-      const formatToPlainString2 = tmp14.formatToPlainString;
+      const formatToPlainString2 = tmp15.formatToPlainString;
       const obj5 = { slot: index + 1, total: tmp(tmp2[38]).CUSTOM_TYPING_INDICATOR_EMOJI_COUNT, emojiName: emoji.name };
       const prop = onChange(tmp2[37])["lEsZ+N"];
       formatToPlainString2Result = formatToPlainString2(prop, obj5);
     } else {
-      class T {
+      class P {
         constructor() {
-          return sharedValue.set(0);
+          return sharedValue.set(1);
         }
       }
-      const formatToPlainString = tmp11.formatToPlainString;
+      const formatToPlainString = tmp12.formatToPlainString;
       const obj6 = { slot: index + 1, total: tmp(tmp2[38]).CUSTOM_TYPING_INDICATOR_EMOJI_COUNT };
       const O0Pe85 = onChange(tmp2[37]).O0Pe85;
       formatToPlainString2Result = formatToPlainString(O0Pe85, obj6);
@@ -340,7 +348,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
     cResult[8] = index;
     cResult[9] = formatToPlainString2Result;
   }
-  const fn = function t() {
+  const fn = function n() {
     let obj = openEmojiPickerActionSheet;
     const obj2 = {
       onPressEmoji(id) {
@@ -372,15 +380,17 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
   cResult[0] = index;
   cResult[1] = onChange;
   cResult[2] = fn;
-}) : ((index) => {
+}) : (function CustomTypingIndicatorEmojiSlot(index) {
   let emoji;
+  let emojisKey;
   let formatToPlainString2Result;
   let onChange;
+  let placeholderIcon;
   let tmp12Result;
   index = index.index;
   ({ emoji, onChange } = index);
   let sharedValue;
-  const placeholderIcon = index.placeholderIcon;
+  ({ emojisKey, placeholderIcon } = index);
   let tmp2 = index;
   let tmp = closure_11();
   let obj = index(sharedValue[32]);
@@ -435,7 +445,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
   const Card = tmp2(tmp3[39]).Card;
   if (null != emoji) {
     const obj5 = { emoji };
-    tmp12Result = tmp12(closure_12, obj5);
+    tmp12Result = tmp12(closure_12, obj5, emojisKey);
   } else {
     const obj6 = { Icon: placeholderIcon, pressed: sharedValue };
     tmp12Result = tmp12(closure_15, obj6);
@@ -443,13 +453,15 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
   return <Card style={tmp.slot} onPress={callback} onPressIn={callback1} onPressOut={callback2} accessibilityLabel={formatToPlainString2Result} radius={16}>{tmp12Result}</Card>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojis) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypingIndicatorEmojiSlots(emojis) {
+  let emojisKey;
   let first;
   let first1;
+  let tmp6;
   let tmp = emojis;
   let tmp2 = first1;
   let obj = emojis(first1[28]);
-  const cResult = obj.c(5);
+  const cResult = obj.c(8);
   emojis = emojis.emojis;
   const onChange = emojis.onChange;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -463,20 +475,32 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojis) => {
     first = cResult[0];
   }
   first1 = _slicedToArray(react.useState(first), 1)[0];
-  if (cResult[1] === emojis) {
-    if (cResult[2] === onChange) {
-      let tmp6;
-      if (cResult[3] === first1) {
-        tmp6 = cResult[4];
+  if (cResult[1] !== emojis) {
+    const tmpResult = tmp(tmp2[38]);
+    const customTypingIndicatorEmojisKey = tmpResult.getCustomTypingIndicatorEmojisKey(emojis);
+    cResult[1] = emojis;
+    cResult[2] = customTypingIndicatorEmojisKey;
+    tmp6 = customTypingIndicatorEmojisKey;
+  } else {
+    tmp6 = cResult[2];
+  }
+  _slicedToArray = tmp6;
+  if (cResult[3] === emojis) {
+    if (cResult[4] === tmp6) {
+      if (cResult[5] === onChange) {
+        let tmp8;
+        if (cResult[6] === first1) {
+          tmp8 = cResult[7];
+        }
+        return tmp8;
       }
-      return tmp6;
     }
   }
   const obj3 = { length: tmp(tmp2[38]).CUSTOM_TYPING_INDICATOR_EMOJI_COUNT };
   const Stack = tmp(tmp2[41]).Stack;
-  const tmp7 = <Stack direction="horizontal" spacing={8}>{from(obj3, (arg0, index) => {
+  const tmp9 = <Stack direction="horizontal" spacing={8}>{from(obj3, (arg0, index) => {
     let tmp3;
-    const obj = { index, emoji: tmp3, placeholderIcon: first1[index], onChange };
+    const obj = { index, emoji: tmp3, emojisKey, placeholderIcon: first1[index], onChange };
     tmp3 = emojis[index];
     const tmp = jsx;
     const tmp2 = closure_16;
@@ -485,25 +509,30 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojis) => {
     }
     return tmp(tmp2, obj, index);
   })}</Stack>;
-  cResult[1] = emojis;
-  cResult[2] = onChange;
-  cResult[3] = first1;
-  cResult[4] = tmp7;
-  tmp6 = tmp7;
-}) : ((arg0) => {
+  cResult[3] = emojis;
+  cResult[4] = tmp6;
+  cResult[5] = onChange;
+  cResult[6] = first1;
+  cResult[7] = tmp9;
+  tmp8 = tmp9;
+}) : (function CustomTypingIndicatorEmojiSlots(emojis) {
   let closure_2;
-  let onChange;
-  ({ emojis: require, onChange: importDefault } = arg0);
+  let emojisKey;
+  emojis = emojis.emojis;
+  const onChange = emojis.onChange;
+  _slicedToArray = undefined;
   dependencyMap = _slicedToArray(react.useState(() => {
-    const obj = require("module_12");
-    return obj.sampleSize(items, require("CustomTypingIndicatorTypes").CUSTOM_TYPING_INDICATOR_EMOJI_COUNT);
+    const obj = emojis(closure_2[40]);
+    return obj.sampleSize(items, emojis(closure_2[38]).CUSTOM_TYPING_INDICATOR_EMOJI_COUNT);
   }), 1)[0];
-  const obj2 = { length: CustomTypingIndicatorTypes.CUSTOM_TYPING_INDICATOR_EMOJI_COUNT };
-  const Stack = Stack_Stack.Stack;
-  return <Stack direction="horizontal" spacing={8}>{from(obj2, (arg0, index) => {
+  let obj = emojis(1410);
+  _slicedToArray = obj.getCustomTypingIndicatorEmojisKey(emojis);
+  const obj3 = { length: emojis(1410).CUSTOM_TYPING_INDICATOR_EMOJI_COUNT };
+  const Stack = emojis(5373).Stack;
+  return <Stack direction="horizontal" spacing={8}>{from(obj3, (arg0, index) => {
     let tmp3;
-    const obj = { index, emoji: tmp3, placeholderIcon: closure_2[index], onChange: importDefault };
-    tmp3 = require[index];
+    const obj = { index, emoji: tmp3, emojisKey, placeholderIcon: closure_2[index], onChange };
+    tmp3 = emojis[index];
     const tmp = jsx;
     const tmp2 = closure_16;
     if (tmp3 == null) {

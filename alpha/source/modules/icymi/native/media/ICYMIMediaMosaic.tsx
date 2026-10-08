@@ -1,37 +1,37 @@
-// Module ID: 16479
-// Function ID: 16480
+// Module ID: 16739
+// Function ID: 16740
 // Name: ICYMIMediaMosaic
-// Dependencies: [32, 19, 17, 4885, 2051, 4525, 1377, 8021, 1085, 21, 4896, 587, 5046, 1105, 558, 576, 504, 7993, 4618, 4897, 16480, 5981, 4892, 1126, 7959, 7287, 5916, 8039, 9680, 5892, 16435, 7950, 8034, 1375, 12, 6612, 7944, 5049, 2]
+// Dependencies: [32, 19, 17, 5079, 2063, 4717, 1389, 8429, 1085, 21, 5090, 587, 5415, 1105, 558, 576, 504, 8401, 4810, 5091, 16740, 6164, 5086, 1126, 8376, 7741, 6189, 8447, 10869, 8204, 16695, 8368, 8442, 1387, 12, 6789, 8362, 5417, 2]
 
-// Module 16479 (ICYMIMediaMosaic)
+// Module 16739 (ICYMIMediaMosaic)
 import _mod12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 7950 */;
-import common_VideoDefault from "common/Video" /* 7993 */;
-import ICYMITypes from "ICYMITypes" /* 8034 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8039 */;
-import ICYMIContext from "ICYMIContext" /* 16435 */;
-import ThumbhashUtils from "ThumbhashUtils" /* 16480 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8368 */;
+import common_VideoDefault from "common/Video" /* 8401 */;
+import ICYMITypes from "ICYMITypes" /* 8442 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8447 */;
+import ICYMIContext from "ICYMIContext" /* 16695 */;
+import ThumbhashUtils from "ThumbhashUtils" /* 16740 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
-import ICYMIStore from "ICYMIStore" /* 8021 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
+import ICYMIStore from "ICYMIStore" /* 8429 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let dependencyMap, importDefault, message;
+let dependencyMap;
 
 let closure_12;
 let closure_14;
@@ -65,7 +65,7 @@ let closure_18 = createStyles.createStyles(() => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((autoplay) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaMosaicVideo(autoplay) {
   let height;
   let source;
   let style;
@@ -132,7 +132,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((autoplay) => {
       }
     }
     size = { src: tmp9, height, width, postponeRender: false, paused: !autoplay, muted: stateFromStores, resizeMode: "cover", style: tmp11, videoStyle: tmp4.video, disableFocus: stateFromStores || source.isGIFV };
-    const tmp16 = closure_15(common_VideoDefault, size);
+    const tmp16 = authStore3(common_VideoDefault, size);
     cResult[7] = height;
     cResult[8] = tmp4.video;
     cResult[9] = tmp9;
@@ -149,7 +149,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((autoplay) => {
   cResult[5] = tmp4.media;
   cResult[6] = items1;
   tmp11 = items1;
-}) : ((source) => {
+}) : (function MediaMosaicVideo(source) {
   let autoplay;
   let height;
   let items1;
@@ -162,7 +162,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((autoplay) => {
   const obj = get_initialized;
   let isGIFV = obj.useStateFromStores(items, () => ICYMIStore.videosMuted());
   let uri = source.videoURI;
-  const tmp2 = closure_15;
+  const tmp2 = authStore3;
   const tmp3 = common_VideoDefault;
   if (uri == null) {
     uri = source.sourceURI;
@@ -180,7 +180,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((autoplay) => {
 const __initData = { code: "function ICYMIMediaMosaicTsx1(){const{withTiming,imageFinishedLoading}=this.__closure;return{opacity:withTiming(imageFinishedLoading?0:1,{duration:150})};}" };
 const __initData2 = { code: "function ICYMIMediaMosaicTsx2(){const{withTiming,imageFinishedLoading}=this.__closure;return{opacity:withTiming(imageFinishedLoading?0:1,{duration:150})};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSpoiler) => {
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaMosaicImage(isSpoiler) {
   let closure_1;
   let dimensions;
   let imageFinishedLoading;
@@ -188,7 +188,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSpoiler) => 
   let style;
   const tmp = imageFinishedLoading;
   let obj = imageFinishedLoading(576);
-  const cResult = obj.c(31);
+  const cResult = obj.c(32);
   ({ source, dimensions, style } = isSpoiler);
   isSpoiler = isSpoiler.isSpoiler;
   const tmp4 = closure_18();
@@ -203,16 +203,16 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSpoiler) => 
     const obj = { opacity: withTiming(num, { duration: 150 }) };
     return obj;
   };
-  const obj2 = imageFinishedLoading(4618);
-  fn.__closure = { withTiming: imageFinishedLoading(4897).withTiming, imageFinishedLoading };
+  const obj2 = imageFinishedLoading(4810);
+  fn.__closure = { withTiming: imageFinishedLoading(5091).withTiming, imageFinishedLoading };
   fn.__workletHash = 7803531897566;
   fn.__initData = __initData;
-  ({ withTiming: imageFinishedLoading(4897).withTiming, imageFinishedLoading });
+  ({ withTiming: imageFinishedLoading(5091).withTiming, imageFinishedLoading });
   const animatedStyle = obj2.useAnimatedStyle(fn);
   if (null != source.placeholder) {
     let tmp9;
     if (cResult[0] !== source.placeholder) {
-      const tmpResult = tmp(16480);
+      const tmpResult = tmp(16740);
       const thumbhashImageFromPlaceholder = tmpResult.createThumbhashImageFromPlaceholder(source.placeholder);
       let num = 0;
       cResult[0] = source.placeholder;
@@ -221,35 +221,44 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSpoiler) => 
     } else {
       tmp9 = cResult[1];
     }
-    size = { uri: tmp9, width: null, height: null };
-    ({ width: obj5.width, height: obj5.height, height: tmp3[2] } = source);
-    cResult[3] = source.width;
-    cResult[4] = tmp9;
-    cResult[5] = size;
-  }
-  if (cResult[6] === animatedStyle) {
-    let tmp12;
-    if (cResult[7] === tmp4.thumbhashMedia) {
-      tmp12 = cResult[8];
+    if (cResult[2] !== tmp9) {
+      const obj4 = { uri: tmp9 };
+      cResult[2] = tmp9;
+      cResult[3] = obj4;
     }
-    if (cResult[9] === dimensions) {
-      if (cResult[10] === style) {
+  }
+  if (cResult[4] === animatedStyle) {
+    let tmp12;
+    if (cResult[5] === tmp4.thumbhashMedia) {
+      tmp12 = cResult[6];
+    }
+    if (cResult[7] === dimensions) {
+      if (cResult[8] === style) {
         let tmp13;
-        if (cResult[11] === tmp4.media) {
-          tmp13 = cResult[12];
+        if (cResult[9] === tmp4.media) {
+          tmp13 = cResult[10];
         }
-        if (cResult[13] === tmp13) {
+        if (cResult[11] === tmp13) {
           let tmp14;
-          if (cResult[14] === tmp8) {
-            tmp14 = cResult[15];
+          if (cResult[12] === tmp8) {
+            tmp14 = cResult[13];
           }
-          if (cResult[16] === tmp12) {
+          if (cResult[14] === tmp12) {
+            let tmp22;
+            if (cResult[17] !== source.uri) {
+              const obj5 = { uri: source.uri };
+              cResult[17] = source.uri;
+              cResult[18] = obj5;
+              tmp22 = obj5;
+            } else {
+              tmp22 = cResult[18];
+            }
             if (cResult[19] === dimensions) {
               if (cResult[20] === style) {
-                let tmp22;
-                let tmp24;
+                let tmp23;
+                let tmp25;
                 if (cResult[21] === tmp4.media) {
-                  tmp22 = cResult[22];
+                  tmp23 = cResult[22];
                 }
                 const _Symbol = Symbol;
                 if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
@@ -259,7 +268,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSpoiler) => 
                     }
                   }
                   cResult[23] = U;
-                  tmp24 = U;
+                  tmp25 = U;
                 } else {
                   class U {
                     constructor() {
@@ -274,19 +283,20 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSpoiler) => 
                     }
                   }
                 }
-                if (cResult[24] === source) {
+                if (cResult[24] === source.uri) {
                   class U {
                     constructor() {
                       return closure_1(true);
                     }
                   }
                 }
-                const obj4 = { source, style: tmp22, onLoadEnd: tmp24, blurRadius: 0 };
-                cResult[24] = source;
+                const obj6 = { source: tmp22, style: tmp23, onLoadEnd: tmp25, blurRadius: 0, fadeDuration: 0 };
+                cResult[24] = source.uri;
                 cResult[25] = tmp22;
-                cResult[26] = 0;
-                cResult[27] = closure_15(ReanimatedRexportDefault.Image, obj4, source.uri);
-                const tmp28 = closure_15(ReanimatedRexportDefault.Image, obj4, source.uri);
+                cResult[26] = tmp23;
+                cResult[27] = 0;
+                cResult[28] = closure_15(FastImageDefault, obj6, source.uri);
+                const tmp29 = closure_15(FastImageDefault, obj6, source.uri);
               }
             }
             const items = [tmp4.media, style, dimensions];
@@ -294,35 +304,35 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSpoiler) => 
             cResult[20] = style;
             cResult[21] = tmp4.media;
             cResult[22] = items;
-            tmp22 = items;
+            tmp23 = items;
           }
-          const obj6 = { style: tmp12, children: tmp14 };
-          cResult[16] = tmp12;
-          cResult[17] = tmp14;
-          cResult[18] = closure_15(ReanimatedRexportDefault.View, obj6);
-          const tmp21 = closure_15(ReanimatedRexportDefault.View, obj6);
+          const obj7 = { style: tmp12, children: tmp14 };
+          cResult[14] = tmp12;
+          cResult[15] = tmp14;
+          cResult[16] = closure_15(ReanimatedRexportDefault.View, obj7);
+          const tmp21 = closure_15(ReanimatedRexportDefault.View, obj7);
         }
-        const obj7 = { source: tmp8, style: tmp13 };
-        const tmp17 = closure_15(FastImageDefault, obj7);
-        cResult[13] = tmp13;
-        cResult[14] = tmp8;
-        cResult[15] = tmp17;
+        const obj8 = { source: tmp8, style: tmp13 };
+        const tmp17 = closure_15(FastImageDefault, obj8);
+        cResult[11] = tmp13;
+        cResult[12] = tmp8;
+        cResult[13] = tmp17;
         tmp14 = tmp17;
       }
     }
     const items1 = [style, tmp4.media, dimensions];
-    cResult[9] = dimensions;
-    cResult[10] = style;
-    cResult[11] = tmp4.media;
-    cResult[12] = items1;
+    cResult[7] = dimensions;
+    cResult[8] = style;
+    cResult[9] = tmp4.media;
+    cResult[10] = items1;
     tmp13 = items1;
   }
   const items2 = [animatedStyle, tmp4.thumbhashMedia];
-  cResult[6] = animatedStyle;
-  cResult[7] = tmp4.thumbhashMedia;
-  cResult[8] = items2;
+  cResult[4] = animatedStyle;
+  cResult[5] = tmp4.thumbhashMedia;
+  cResult[6] = items2;
   tmp12 = items2;
-}) : ((source) => {
+}) : (function MediaMosaicImage(source) {
   let closure_2;
   let dimensions;
   let imageFinishedLoading;
@@ -339,7 +349,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSpoiler) => 
   const isSpoiler = source.isSpoiler;
   const tmp = closure_18();
   [imageFinishedLoading, dependencyMap] = react.useState(false);
-  let obj = source(4618);
+  let obj = source(4810);
   const fn = function h() {
     let num = 1;
     const withTiming = timing.withTiming;
@@ -350,51 +360,50 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSpoiler) => 
     const obj = { opacity: withTiming(num, { duration: 150 }) };
     return obj;
   };
-  let obj2 = { withTiming: source(4897).withTiming, imageFinishedLoading };
+  let obj2 = { withTiming: source(5091).withTiming, imageFinishedLoading };
   fn.__closure = obj2;
   fn.__workletHash = 8852576862173;
   fn.__initData = __initData2;
-  const items = [, , ];
-  ({ height: arr[0], placeholder: arr[1], width: arr[2] } = source);
+  const items = [source.placeholder];
   const animatedStyle = obj.useAnimatedStyle(fn);
   const memo = react.useMemo(() => {
     let obj2;
     if (null != source.placeholder) {
-      size = { uri: obj2.createThumbhashImageFromPlaceholder(source.placeholder), width: null, height: null };
-      ({ width: obj.width, height: obj.height } = source);
+      const obj = { uri: obj2.createThumbhashImageFromPlaceholder(tmp.placeholder) };
       obj2 = ThumbhashUtils;
-      return size;
+      return obj;
     }
   }, items);
-  const obj3 = { style: items1, children: closure_15(imageFinishedLoading(5981), obj4) };
+  const obj3 = { style: items1, children: closure_15(imageFinishedLoading(6164), obj4) };
   items1 = [animatedStyle, tmp.thumbhashMedia];
-  const View = imageFinishedLoading(4618).View;
+  const View = imageFinishedLoading(4810).View;
   obj4 = { source: memo, style: items2 };
   items2 = [style, tmp.media, dimensions];
   const items3 = [closure_15(View, obj3), ];
   const obj5 = {
-    source,
+    source: { uri: source.uri },
     style: items4,
     onLoadEnd() {
       return closure_2(true);
     },
-    blurRadius: num
+    blurRadius: num,
+    fadeDuration: 0
   };
   items4 = [tmp.media, style, dimensions];
   num = 0;
-  const Image = imageFinishedLoading(4618).Image;
   const tmp6 = closure_17;
   const tmp7 = closure_16;
   const tmp8 = closure_15;
+  const tmp9 = imageFinishedLoading(6164);
   if (isSpoiler) {
     num = 100;
   }
   const obj6 = { children: items3 };
-  items3[1] = tmp8(Image, obj5, source.uri);
+  items3[1] = tmp8(tmp9, obj5, source.uri);
   return tmp6(tmp7, obj6);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((handlePressMedia) => {
+let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Media(handlePressMedia) {
   let PlayIcon;
   let Text;
   let closure_4;
@@ -635,7 +644,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((handlePressMed
   cResult[2] = isSpoiler;
   cResult[3] = fn;
   tmp9 = fn;
-}) : ((handlePressMedia) => {
+}) : (function Media(handlePressMedia) {
   let PlayIcon;
   let PressableOpacity;
   let Text;
@@ -777,7 +786,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((handlePressMed
   tmp25 = closure_15(closure_22, { source, style, dimensions, isSpoiler });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthOverride) => {
+let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneImageRow(widthOverride) {
   let handlePressMedia;
   let source;
   const obj = react2;
@@ -811,7 +820,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthOverride)
             return tmp11;
           }
           const obj2 = { style: tmp4, children: tmp7 };
-          const tmp14 = closure_15(metroRequire, obj2);
+          const tmp14 = authStore3(metroRequire, obj2);
           cResult[10] = tmp4;
           cResult[11] = tmp7;
           cResult[12] = tmp14;
@@ -819,7 +828,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthOverride)
         }
       }
       const obj3 = { handlePressMedia, initialIndex: 0, source, dimensions: tmp6 };
-      const tmp10 = closure_15(closure_23, obj3);
+      const tmp10 = authStore3(closure_23, obj3);
       cResult[6] = handlePressMedia;
       cResult[7] = source;
       cResult[8] = tmp6;
@@ -838,7 +847,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthOverride)
   cResult[1] = tmp2.topRow;
   cResult[2] = items;
   tmp4 = items;
-}) : ((arg0) => {
+}) : (function OneImageRow(arg0) {
   let handlePressMedia;
   let items;
   let obj2;
@@ -847,15 +856,15 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthOverride)
   ({ source, handlePressMedia, widthOverride } = arg0);
   const tmp = closure_18();
   const tmp2 = closure_31(widthOverride);
-  const obj = { style: items, children: closure_15(closure_23, obj2) };
+  const obj = { style: items, children: authStore3(closure_23, obj2) };
   items = [, ];
   ({ imageRow: arr[0], topRow: arr[1] } = tmp);
   obj2 = { handlePressMedia, initialIndex: 0, source, dimensions: size };
   size = { width: tmp2, height: tmp2 / 1.5 };
-  return closure_15(metroRequire, obj);
+  return authStore3(metroRequire, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((handlePressMedia) => {
+let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreeImagesRow(handlePressMedia) {
   let closure_2;
   let end;
   let offset;
@@ -922,7 +931,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((handlePressMed
       const fn = function s(source, arg1) {
         const obj = { handlePressMedia, initialIndex: offset + arg1, source, dimensions: size };
         size = { width: (closure_2 - 8) / 3, height: (closure_2 - 8) / 3 };
-        return closure_15(closure_23, obj, offset + arg1);
+        return authStore3(closure_23, obj, offset + arg1);
       };
       cResult[9] = handlePressMedia;
       cResult[10] = tmp3;
@@ -937,7 +946,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((handlePressMed
   cResult[2] = end;
   cResult[3] = items;
   tmp4 = items;
-}) : ((widthOverride) => {
+}) : (function ThreeImagesRow(widthOverride) {
   let end;
   let handlePressMedia;
   let sources;
@@ -961,15 +970,14 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((handlePressMed
     children: sources.map((source, index) => {
       const obj = { handlePressMedia: importDefault, initialIndex: require + index, source, dimensions: size };
       size = { width: (closure_2 - 8) / 3, height: (closure_2 - 8) / 3 };
-      return closure_15(closure_23, obj, require + index);
+      return authStore3(closure_23, obj, require + index);
     })
   };
   items[2] = end;
   return tmp2(tmp3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((end) => {
-  let dimensions;
+let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoImagesRow(end) {
   let handlePressMedia;
   let sources;
   let obj = handlePressMedia(576);
@@ -986,7 +994,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((end) => {
     if (cResult[1] === result1) {
       tmp6 = cResult[2];
     }
-    importDefault = tmp6;
+    const dimensions = tmp6;
     if (bottomRow) {
       bottomRow = tmp2.bottomRow;
     }
@@ -1009,18 +1017,12 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((end) => {
               }
               return tmp11;
             }
-            class R {
-              constructor(arg0, arg1) {
-                obj = { handlePressMedia, initialIndex: arg1, source: end, dimensions: closure_1 };
-                return jsx(f74018, obj, arg1);
-              }
-            }
             const obj2 = { style: tmp7, children: tmp8 };
-            const tmp13 = closure_15(closure_6, obj2);
+            const tmp14 = closure_15(closure_6, obj2);
             cResult[14] = tmp7;
             cResult[15] = tmp8;
-            cResult[16] = tmp13;
-            tmp11 = tmp13;
+            cResult[16] = tmp14;
+            tmp11 = tmp14;
           }
         }
         if (cResult[11] === tmp6) {
@@ -1029,27 +1031,20 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((end) => {
             tmp9 = cResult[13];
           }
           const mapped = sources.map(tmp9);
-          class R {
-            constructor(arg0, arg1) {
-              obj = { handlePressMedia, initialIndex: arg1, source: end, dimensions: closure_1 };
-              return jsx(f74018, obj, arg1);
-            }
-          }
+          cResult[7] = tmp6;
           cResult[8] = handlePressMedia;
           cResult[9] = sources;
           cResult[10] = mapped;
           tmp8 = mapped;
         }
-        class R {
-          constructor(arg0, arg1) {
-            obj = { handlePressMedia, initialIndex: arg1, source: end, dimensions: closure_1 };
-            return jsx(f74018, obj, arg1);
-          }
-        }
+        const fn = function y(source, initialIndex) {
+          const obj = { handlePressMedia, initialIndex, source, dimensions };
+          return authStore3(closure_23, obj, initialIndex);
+        };
         cResult[11] = tmp6;
         cResult[12] = handlePressMedia;
-        cResult[13] = R;
-        tmp9 = R;
+        cResult[13] = fn;
+        tmp9 = fn;
       }
     }
     const items = [, , ];
@@ -1065,7 +1060,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((end) => {
   cResult[1] = result1;
   cResult[2] = size;
   tmp6 = size;
-}) : ((widthOverride) => {
+}) : (function TwoImagesRow(widthOverride) {
   let end;
   let handlePressMedia;
   let sources;
@@ -1085,14 +1080,14 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((end) => {
     style: items,
     children: sources.map((source, initialIndex) => {
       const obj = { handlePressMedia: require, initialIndex, source, dimensions: size };
-      return closure_15(closure_23, obj, initialIndex);
+      return authStore3(closure_23, obj, initialIndex);
     })
   };
   items[2] = end;
   return tmp3(tmp4, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthOverride) => {
+let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreeImages(widthOverride) {
   let handlePressMedia;
   let items;
   let items1;
@@ -1188,7 +1183,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthOverride)
                       }
                     }
                     const obj4 = { handlePressMedia, initialIndex: 2, source: sources[2], dimensions: tmp25 };
-                    const tmp29 = closure_15(closure_23, obj4);
+                    const tmp29 = authStore3(closure_23, obj4);
                     cResult[23] = handlePressMedia;
                     cResult[24] = sources[2];
                     cResult[25] = tmp25;
@@ -1203,7 +1198,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthOverride)
                 }
               }
               const obj5 = { handlePressMedia, initialIndex: 1, source: sources[1], dimensions: tmp18 };
-              const tmp22 = closure_15(closure_23, obj5);
+              const tmp22 = authStore3(closure_23, obj5);
               cResult[16] = handlePressMedia;
               cResult[17] = sources[1];
               cResult[18] = tmp18;
@@ -1217,7 +1212,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthOverride)
             tmp18 = size1;
           }
           const obj6 = { style: tmp2.leftColumn, children: tmp8 };
-          const tmp15 = closure_15(metroRequire, obj6);
+          const tmp15 = authStore3(metroRequire, obj6);
           cResult[10] = tmp2.leftColumn;
           cResult[11] = tmp8;
           cResult[12] = tmp15;
@@ -1225,7 +1220,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthOverride)
         }
       }
       const obj7 = { handlePressMedia, initialIndex: 0, source: sources[0], dimensions: tmp7 };
-      const tmp11 = closure_15(closure_23, obj7);
+      const tmp11 = authStore3(closure_23, obj7);
       cResult[6] = handlePressMedia;
       cResult[7] = sources[0];
       cResult[8] = tmp7;
@@ -1244,7 +1239,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthOverride)
   cResult[1] = tmp2.imagesContainer;
   cResult[2] = items2;
   tmp4 = items2;
-}) : ((widthOverride) => {
+}) : (function ThreeImages(widthOverride) {
   let handlePressMedia;
   let items;
   let items1;
@@ -1258,21 +1253,21 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthOverride)
   const obj = { style: items, children: items1 };
   items = [, ];
   ({ imagesContainer: arr[0], imageRow: arr[1] } = tmp);
-  const obj2 = { style: tmp.leftColumn, children: closure_15(closure_23, obj3) };
+  const obj2 = { style: tmp.leftColumn, children: authStore3(closure_23, obj3) };
   obj3 = { handlePressMedia, initialIndex: 0, source: sources[0], dimensions: size };
   size = { width: 2 * tmp2 / 3 - 4, height: 2 * tmp2 / 3 };
-  items1 = [closure_15(metroRequire, obj2), ];
+  items1 = [authStore3(metroRequire, obj2), ];
   const obj4 = { style: tmp.rightColumn, children: items2 };
   items2 = [, ];
   const obj5 = { handlePressMedia, initialIndex: 1, source: sources[1], dimensions: { width: tmp2 / 3, height: tmp2 / 3 } };
-  items2[0] = closure_15(closure_23, obj5);
+  items2[0] = authStore3(closure_23, obj5);
   const obj6 = { handlePressMedia, initialIndex: 2, source: sources[2], dimensions: { width: tmp2 / 3, height: tmp2 / 3 } };
-  items2[1] = closure_15(closure_23, obj6);
+  items2[1] = authStore3(closure_23, obj6);
   items1[1] = closure_17(metroRequire, obj4);
   return closure_17(metroRequire, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthOverride) => {
+let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function FourImages(widthOverride) {
   let handlePressMedia;
   let items;
   let items1;
@@ -1367,7 +1362,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthOverride)
                           }
                         }
                         const obj4 = { handlePressMedia, initialIndex: 3, source: sources[3], dimensions: tmp6 };
-                        const tmp28 = closure_15(closure_23, obj4);
+                        const tmp28 = authStore3(closure_23, obj4);
                         cResult[25] = tmp6;
                         cResult[26] = handlePressMedia;
                         cResult[27] = sources[3];
@@ -1376,7 +1371,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthOverride)
                       }
                     }
                     const obj5 = { handlePressMedia, initialIndex: 2, source: sources[2], dimensions: tmp6 };
-                    const tmp24 = closure_15(closure_23, obj5);
+                    const tmp24 = authStore3(closure_23, obj5);
                     cResult[21] = tmp6;
                     cResult[22] = handlePressMedia;
                     cResult[23] = sources[2];
@@ -1402,7 +1397,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthOverride)
             }
           }
           const obj7 = { handlePressMedia, initialIndex: 1, source: sources[1], dimensions: tmp6 };
-          const tmp15 = closure_15(closure_23, obj7);
+          const tmp15 = authStore3(closure_23, obj7);
           cResult[10] = tmp6;
           cResult[11] = handlePressMedia;
           cResult[12] = sources[1];
@@ -1411,7 +1406,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthOverride)
         }
       }
       const obj8 = { handlePressMedia, initialIndex: 0, source: sources[0], dimensions: tmp6 };
-      const tmp11 = closure_15(closure_23, obj8);
+      const tmp11 = authStore3(closure_23, obj8);
       cResult[6] = tmp6;
       cResult[7] = handlePressMedia;
       cResult[8] = sources[0];
@@ -1429,7 +1424,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthOverride)
   cResult[1] = result;
   cResult[2] = size;
   tmp6 = size;
-}) : ((widthOverride) => {
+}) : (function FourImages(widthOverride) {
   let handlePressMedia;
   let items;
   let items1;
@@ -1448,23 +1443,23 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthOverride)
   ({ imageRow: arr[0], topRow: arr[1] } = tmp);
   items1 = [, ];
   const obj3 = { handlePressMedia, initialIndex: 0, source: sources[0], dimensions: size };
-  items1[0] = closure_15(closure_23, obj3);
+  items1[0] = authStore3(closure_23, obj3);
   const obj4 = { handlePressMedia, initialIndex: 1, source: sources[1], dimensions: size };
-  items1[1] = closure_15(closure_23, obj4);
+  items1[1] = authStore3(closure_23, obj4);
   items2 = [closure_17(metroRequire, obj2), ];
   const obj5 = { style: items3, children: items4 };
   items3 = [, ];
   ({ imageRow: arr4[0], bottomRow: arr4[1] } = tmp);
   items4 = [, ];
   const obj6 = { handlePressMedia, initialIndex: 2, source: sources[2], dimensions: size };
-  items4[0] = closure_15(closure_23, obj6);
+  items4[0] = authStore3(closure_23, obj6);
   const obj7 = { handlePressMedia, initialIndex: 3, source: sources[3], dimensions: size };
-  items4[1] = closure_15(closure_23, obj7);
+  items4[1] = authStore3(closure_23, obj7);
   items2[1] = closure_17(metroRequire, obj5);
   return closure_17(metroRequire, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthOverride) => {
+let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function SingleImage(widthOverride) {
   let handlePressMedia;
   let initialIndex;
   let source;
@@ -1541,7 +1536,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthOverride)
               return tmp14;
             }
             const obj2 = { style: tmp2.imagesContainer, children: tmp12 };
-            const tmp17 = closure_15(metroRequire, obj2);
+            const tmp17 = authStore3(metroRequire, obj2);
             cResult[16] = tmp2.imagesContainer;
             cResult[17] = tmp12;
             cResult[18] = tmp17;
@@ -1552,7 +1547,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthOverride)
     }
   }
   const obj3 = { handlePressMedia, initialIndex, source, dimensions: tmp5, style: tmp2.singleImage, visible };
-  const tmp13 = closure_15(closure_23, obj3);
+  const tmp13 = authStore3(closure_23, obj3);
   cResult[9] = handlePressMedia;
   cResult[10] = tmp5;
   cResult[11] = initialIndex;
@@ -1561,7 +1556,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthOverride)
   cResult[14] = visible;
   cResult[15] = tmp13;
   tmp12 = tmp13;
-}) : ((source) => {
+}) : (function SingleImage(source) {
   let handlePressMedia;
   let initialIndex;
   let obj2;
@@ -1575,7 +1570,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthOverride)
   const items = [, , ];
   ({ width: arr[0], height: arr[1] } = source);
   items[2] = tmp2;
-  const obj = { style: tmp.imagesContainer, children: closure_15(closure_23, obj2) };
+  const obj = { style: tmp.imagesContainer, children: authStore3(closure_23, obj2) };
   obj2 = {
     handlePressMedia,
     initialIndex,
@@ -1605,10 +1600,10 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthOverride)
     style: tmp.singleImage,
     visible
   };
-  return closure_15(metroRequire, obj);
+  return authStore3(metroRequire, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GravityAttachmentMediaMosaic(arg0) {
   let arr;
   let handlePressMedia;
   let sources;
@@ -1705,17 +1700,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const mapped = arr.map((sources, index) => {
         if (1 === sources.length) {
           const obj2 = { handlePressMedia, source: sources[0] };
-          return closure_15(closure_24, obj2, index);
+          return authStore3(closure_24, obj2, index);
         } else if (2 === sources.length) {
           const obj3 = { widthOverride, sources, handlePressMedia, end: index === arr.length - 1 };
-          return closure_15(closure_26, obj3, index);
+          return authStore3(closure_26, obj3, index);
         } else {
           let num = 0;
           if (0 !== index) {
             num = arr[0].length + 3 * (index - 1);
           }
           const obj = { widthOverride, handlePressMedia, offset: num, sources, start: 0 === index, end: index === arr.length - 1 };
-          return closure_15(closure_25, obj, index);
+          return authStore3(closure_25, obj, index);
         }
       });
       cResult[19] = handlePressMedia;
@@ -1754,7 +1749,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = sources;
   cResult[5] = substr;
   tmp4 = substr;
-}) : ((sources) => {
+}) : (function GravityAttachmentMediaMosaic(sources) {
   sources = sources.sources;
   const handlePressMedia = sources.handlePressMedia;
   const widthOverride = sources.widthOverride;
@@ -1804,17 +1799,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           children: memo.map((sources, index) => {
                   if (1 === sources.length) {
                     const obj2 = { handlePressMedia, source: sources[0] };
-                    return closure_15(closure_24, obj2, index);
+                    return authStore3(closure_24, obj2, index);
                   } else if (2 === sources.length) {
                     const obj3 = { widthOverride, sources, handlePressMedia, end: index === memo.length - 1 };
-                    return closure_15(closure_26, obj3, index);
+                    return authStore3(closure_26, obj3, index);
                   } else {
                     let num = 0;
                     if (0 !== index) {
                       num = memo[0].length + 3 * (index - 1);
                     }
                     const obj = { widthOverride, handlePressMedia, offset: num, sources, start: 0 === index, end: index === memo.length - 1 };
-                    return closure_15(closure_25, obj, index);
+                    return authStore3(closure_25, obj, index);
                   }
                 })
         };
@@ -1827,7 +1822,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_30 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaxWidth(arg0) {
   let diff = arg0;
   const context = react.useContext(ICYMIContext.ICYMIContext);
   if (null == arg0) {
@@ -1838,7 +1833,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     diff = width - context.inset - 2 * context.margin;
   }
   return diff;
-}) : ((arg0) => {
+}) : (function useMaxWidth(arg0) {
   let diff = arg0;
   const context = react.useContext(ICYMIContext.ICYMIContext);
   if (null == arg0) {
@@ -1851,7 +1846,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return diff;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIMediaMosaic(message) {
   let constants2;
   let constants3;
   let first;
@@ -1963,7 +1958,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   cResult[9] = tmp12;
   cResult[10] = tmp23;
   cResult[11] = obj2;
-}) : ((message) => {
+}) : (function ICYMIMediaMosaic(message) {
   let _undefined;
   let c4;
   let constants2;
@@ -2061,7 +2056,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     if (embedSources != null) {
       mapped = embedSources.map((source, index) => {
         const obj = { widthOverride, handlePressMedia, initialIndex: index + nonEmbedSources.length, source, visible };
-        return closure_15(closure_29, obj, "gif-" + index);
+        return authStore3(closure_29, obj, "gif-" + index);
       });
     }
     items3[1] = mapped;

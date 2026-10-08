@@ -1,19 +1,19 @@
-// Module ID: 13800
-// Function ID: 13801
+// Module ID: 14025
+// Function ID: 14026
 // Name: GuildActionSheetDirectory
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1618, 13801, 13741, 6119, 6652, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1630, 14026, 13963, 6298, 6829, 2]
 
-// Module 13800 (GuildActionSheetDirectory)
+// Module 14025 (GuildActionSheetDirectory)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import BottomSheetModal from "BottomSheetModal" /* 6119 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6652 */;
-import GuildActionSheetActions from "GuildActionSheetActions" /* 13741 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import BottomSheetModal from "BottomSheetModal" /* 6298 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6829 */;
+import GuildActionSheetActions from "GuildActionSheetActions" /* 13963 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,13 +23,13 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp6;
-const GuildActionSheetHeaderDefault = tmp6(13801);
+const GuildActionSheetHeaderDefault = tmp6(14026);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { container: obj2, actions: { paddingHorizontal: 16, gap: 24 } };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 let closure_6 = createStyles.createStyles(obj);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActionSheetDirectory(arg0) {
   let expanded;
   let guild;
   let items;
@@ -122,7 +122,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[9] = tmp12;
   cResult[10] = tmp17;
   tmp16 = tmp17;
-}) : ((arg0) => {
+}) : (function GuildActionSheetDirectory(arg0) {
   let BottomSheetScrollView;
   let expanded;
   let guild;

@@ -1,16 +1,16 @@
-// Module ID: 8601
-// Function ID: 8602
+// Module ID: 9082
+// Function ID: 9083
 // Name: GameProfileNavigationHeader
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4586, 4618, 4897, 1402, 8602, 4892, 8396, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 4778, 4810, 5091, 1414, 8517, 6164, 5086, 8894, 2]
 
-// Module 8601 (GameProfileNavigationHeader)
+// Module 9082 (GameProfileNavigationHeader)
 import nativeDefault from "native" /* 587 */;
-import AvatarUtils from "AvatarUtils" /* 1402 */;
-import timing from "timing" /* 4897 */;
+import AvatarUtils from "AvatarUtils" /* 1414 */;
+import timing from "timing" /* 5091 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -19,16 +19,15 @@ let _require, dependencyMap, set;
 
 let StyleSheet;
 let closure_4;
-let hasOwnProperty;
-let metroImportAll;
 let metroImportDefault;
+let metroRequire;
 let obj2;
 let obj3;
 let obj4;
 let size;
-({ Image: closure_4, View: hasOwnProperty, StyleSheet } = react_native);
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let c9 = 32;
+({ View: closure_4, StyleSheet } = react_native);
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let c8 = 32;
 let createStyles = createStyles_mod;
 let obj = { headerContainer: obj2, headerRow: obj3, icon: size, titleContainer: obj4, headerRight: { flexDirection: "row", alignItems: "center" }, rankPillContainer: { flex: 1, flexDirection: "row", alignItems: "center" } };
 obj2 = { height: 56, paddingHorizontal: nativeDefault.space.PX_16, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden", justifyContent: "center" };
@@ -36,12 +35,12 @@ createStyles = createStyles.createStyles;
 obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 size = { width: 32, height: 32, borderRadius: nativeDefault.radii.sm };
 obj4 = { flex: 1, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, minWidth: 0 };
-let closure_10 = createStyles(obj);
+let closure_9 = createStyles(obj);
 const __initData = { code: "function GameProfileNavigationHeaderTsx1(){const{headerRightProgress}=this.__closure;return{opacity:headerRightProgress.get()};}" };
 const __initData2 = { code: "function GameProfileNavigationHeaderTsx2(){const{headerRightProgress}=this.__closure;return{opacity:1-headerRightProgress.get()};}" };
 const __initData3 = { code: "function GameProfileNavigationHeaderTsx3(){const{headerRightProgress}=this.__closure;return{opacity:headerRightProgress.get()};}" };
 const __initData4 = { code: "function GameProfileNavigationHeaderTsx4(){const{headerRightProgress}=this.__closure;return{opacity:1-headerRightProgress.get()};}" };
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileNavigationHeader(arg0) {
   let application;
   let closure_0;
   let game;
@@ -57,7 +56,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj = require("react");
   const cResult = obj.c(35);
   ({ game, application, headerRight } = arg0);
-  const tmp4 = closure_10();
+  const tmp4 = closure_9();
   const obj2 = require("useToken");
   const token = obj2.useToken(sharedValue(587).colors.LEGACY_BLUR_FALLBACK_ULTRA_THIN);
   _require = tmp7;
@@ -76,7 +75,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp11 = cResult[3];
     }
     const effect = react.useEffect(tmp10, tmp11);
-    const fn2 = function v() {
+    const fn2 = function x() {
       const obj = { opacity: sharedValue.get() };
       return obj;
     };
@@ -87,17 +86,17 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const tmpResult = require("ReanimatedRexport");
     const animatedStyle = tmpResult.useAnimatedStyle(fn2);
     const tmpResult2 = require("ReanimatedRexport");
-    class B {
+    class T {
       constructor() {
         const obj = { opacity: 1 - sharedValue.get() };
         return obj;
       }
     }
     const obj4 = { headerRightProgress: sharedValue };
-    B.__closure = obj4;
-    B.__workletHash = 5182160908530;
-    B.__initData = __initData2;
-    const animatedStyle1 = tmpResult2.useAnimatedStyle(B);
+    T.__closure = obj4;
+    T.__workletHash = 5182160908530;
+    T.__initData = __initData2;
+    const animatedStyle1 = tmpResult2.useAnimatedStyle(T);
     if (cResult[4] === application) {
       let tmp18;
       if (cResult[5] === game) {
@@ -119,7 +118,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp26;
         if (cResult[7] !== token) {
           const obj5 = { android_fallbackColor: token };
-          const tmp28 = closure_7(require("native").BackgroundBlurFill, obj5);
+          const tmp28 = closure_6(require("native").BackgroundBlurFill, obj5);
           cResult[7] = token;
           cResult[8] = tmp28;
           tmp26 = tmp28;
@@ -128,153 +127,153 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         if (cResult[9] === tmp18) {
           let tmp29;
-          let tmp33;
+          let tmp32;
           if (cResult[10] === tmp4.icon) {
             tmp29 = cResult[11];
           }
           if (cResult[12] !== name) {
             const obj6 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", lineClamp: 1, children: name };
-            const tmp35 = closure_7(require("Text/Text").Heading, obj6);
+            const tmp34 = closure_6(require("Text/Text").Heading, obj6);
             cResult[12] = name;
-            cResult[13] = tmp35;
-            tmp33 = tmp35;
+            cResult[13] = tmp34;
+            tmp32 = tmp34;
           } else {
-            tmp33 = cResult[13];
+            tmp32 = cResult[13];
           }
           if (cResult[14] === game) {
             if (cResult[15] === animatedStyle1) {
-              let tmp36;
+              let tmp35;
               if (cResult[16] === tmp4.rankPillContainer) {
-                tmp36 = cResult[17];
+                tmp35 = cResult[17];
               }
               if (cResult[18] === tmp4.titleContainer) {
-                if (cResult[19] === tmp33) {
-                  let tmp43;
-                  if (cResult[20] === tmp36) {
-                    tmp43 = cResult[21];
+                if (cResult[19] === tmp32) {
+                  let tmp42;
+                  if (cResult[20] === tmp35) {
+                    tmp42 = cResult[21];
                   }
                   if (cResult[22] === headerRight) {
                     if (cResult[23] === animatedStyle) {
-                      let tmp47;
+                      let tmp46;
                       if (cResult[24] === tmp4.headerRight) {
-                        tmp47 = cResult[25];
+                        tmp46 = cResult[25];
                       }
                       if (cResult[26] === tmp4.headerRow) {
                         if (cResult[27] === tmp29) {
-                          if (cResult[28] === tmp43) {
-                            let tmp50;
-                            if (cResult[29] === tmp47) {
-                              tmp50 = cResult[30];
+                          if (cResult[28] === tmp42) {
+                            let tmp49;
+                            if (cResult[29] === tmp46) {
+                              tmp49 = cResult[30];
                             }
                             if (cResult[31] === tmp4.headerContainer) {
-                              if (cResult[32] === tmp50) {
-                                let tmp54;
+                              if (cResult[32] === tmp49) {
+                                let tmp53;
                                 if (cResult[33] === tmp26) {
-                                  tmp54 = cResult[34];
+                                  tmp53 = cResult[34];
                                 }
-                                tmp25 = tmp54;
+                                tmp25 = tmp53;
                               }
                             }
                             const obj7 = { style: tmp4.headerContainer, children: items };
-                            items = [tmp26, tmp50];
-                            const tmp57 = closure_8(closure_5, obj7);
+                            items = [tmp26, tmp49];
+                            const tmp56 = closure_7(closure_4, obj7);
                             cResult[31] = tmp4.headerContainer;
-                            class B {
+                            class T {
                               constructor() {
                                 const obj = { opacity: 1 - sharedValue.get() };
                                 return obj;
                               }
                             }
                             cResult[33] = tmp26;
-                            cResult[34] = tmp57;
-                            tmp54 = tmp57;
+                            cResult[34] = tmp56;
+                            tmp53 = tmp56;
                           }
                         }
                       }
                       const obj8 = { style: tmp4.headerRow, children: items1 };
-                      items1 = [tmp29, tmp43, tmp47];
-                      const tmp53 = closure_8(closure_5, obj8);
+                      items1 = [tmp29, tmp42, tmp46];
+                      const tmp52 = closure_7(closure_4, obj8);
                       cResult[26] = tmp4.headerRow;
-                      class B {
+                      class T {
                         constructor() {
                           const obj = { opacity: 1 - sharedValue.get() };
                           return obj;
                         }
                       }
                       cResult[27] = tmp29;
-                      cResult[28] = tmp43;
-                      cResult[29] = tmp47;
-                      cResult[30] = tmp53;
-                      tmp50 = tmp53;
+                      cResult[28] = tmp42;
+                      cResult[29] = tmp46;
+                      cResult[30] = tmp52;
+                      tmp49 = tmp52;
                     }
                   }
-                  let tmp48 = null != headerRight;
-                  if (tmp48) {
+                  let tmp47 = null != headerRight;
+                  if (tmp47) {
                     const obj9 = { style: items2, children: headerRight() };
                     items2 = [tmp4.headerRight, animatedStyle];
-                    const View2 = tmp5(4618).View;
-                    tmp48 = closure_7(View2, obj9);
+                    const View2 = tmp5(4810).View;
+                    tmp47 = closure_6(View2, obj9);
                   }
                   cResult[22] = headerRight;
                   cResult[23] = animatedStyle;
                   cResult[24] = tmp4.headerRight;
-                  cResult[25] = tmp48;
-                  tmp47 = tmp48;
+                  cResult[25] = tmp47;
+                  tmp46 = tmp47;
                 }
               }
               const obj10 = { style: tmp4.titleContainer, children: items3 };
-              items3 = [tmp33, tmp36];
-              const tmp46 = closure_8(closure_5, obj10);
+              items3 = [tmp32, tmp35];
+              const tmp45 = closure_7(closure_4, obj10);
               cResult[18] = tmp4.titleContainer;
-              class B {
+              class T {
                 constructor() {
                   const obj = { opacity: 1 - sharedValue.get() };
                   return obj;
                 }
               }
-              cResult[20] = tmp36;
-              cResult[21] = tmp46;
-              tmp43 = tmp46;
+              cResult[20] = tmp35;
+              cResult[21] = tmp45;
+              tmp42 = tmp45;
             }
           }
           let l30Rank;
           if (game != null) {
             l30Rank = game.l30Rank;
           }
-          let tmp38 = null != l30Rank;
-          if (tmp38) {
+          let tmp37 = null != l30Rank;
+          if (tmp37) {
             const obj11 = { style: tmp4.rankPillContainer, children: items4 };
             const obj12 = { rank: game.l30Rank, compact: true };
-            items4 = [closure_7(sharedValue(8396), obj12), ];
+            items4 = [closure_6(sharedValue(8894), obj12), ];
             const items5 = [StyleSheet.absoluteFill, animatedStyle1];
-            const obj13 = { style: null, children: closure_7(sharedValue(8396), obj14) };
-            class B {
+            const obj13 = { style: null, children: closure_6(sharedValue(8894), obj14) };
+            class T {
               constructor() {
                 const obj = { opacity: 1 - sharedValue.get() };
                 return obj;
               }
             }
-            const View = tmp5(4618).View;
+            const View = tmp5(4810).View;
             obj14 = { rank: game.l30Rank };
-            items4[1] = closure_7(View, obj13);
-            tmp38 = closure_8(closure_5, obj11);
+            items4[1] = closure_6(View, obj13);
+            tmp37 = closure_7(closure_4, obj11);
           }
           cResult[14] = game;
           cResult[15] = animatedStyle1;
           cResult[16] = tmp4.rankPillContainer;
-          class B {
+          class T {
             constructor() {
               const obj = { opacity: 1 - sharedValue.get() };
               return obj;
             }
           }
-          tmp36 = tmp38;
+          tmp35 = tmp37;
         }
         let tmp30 = null != tmp18;
         if (tmp30) {
           const obj15 = { source: obj16, style: tmp4.icon };
           obj16 = { uri: tmp18 };
-          tmp30 = closure_7(closure_4, obj15);
+          tmp30 = closure_6(tmp5(6164), obj15);
         }
         cResult[9] = tmp18;
         cResult[10] = tmp4.icon;
@@ -287,7 +286,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (game != null) {
       const getIconURL = game.getIconURL;
       let str = "png";
-      const tmp20 = c9;
+      const tmp20 = c8;
       if (require("AvatarUtils").SUPPORTS_WEBP) {
         str = "webp";
       }
@@ -298,7 +297,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (application != null) {
         const getIconURL2 = application.getIconURL;
         let str2 = "png";
-        const tmp22 = c9;
+        const tmp22 = c8;
         if (require("AvatarUtils").SUPPORTS_WEBP) {
           str2 = "webp";
         }
@@ -314,7 +313,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[6] = iconURL;
     tmp18 = iconURL;
   }
-  const fn = function c() {
+  const fn = function s() {
     let num = 0;
     set = sharedValue.set;
     const withTiming = timing.withTiming;
@@ -331,7 +330,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = items6;
   tmp11 = items6;
   tmp10 = fn;
-}) : ((game) => {
+}) : (function GameProfileNavigationHeader(game) {
   let closure_2;
   let items2;
   let items3;
@@ -346,16 +345,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const headerRight = game.headerRight;
   dependencyMap = undefined;
   let sharedValue;
-  let tmp = closure_10();
+  let tmp = closure_9();
   const tmp2 = game;
   let tmp3 = dependencyMap;
-  let obj = game(4586);
+  let obj = game(4778);
   let tmp6 = null != headerRight;
   dependencyMap = tmp6;
   const token = obj.useToken(application(587).colors.LEGACY_BLUR_FALLBACK_ULTRA_THIN);
   let num = 0;
-  const useSharedValue = game(4618).useSharedValue;
-  game(4618);
+  const useSharedValue = game(4810).useSharedValue;
+  game(4810);
   if (tmp6) {
     num = 1;
   }
@@ -371,34 +370,32 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const result = set(withTiming(num, { duration: 200 }));
   }, items);
-  const fn = function b() {
+  const fn = function k() {
     const obj = { opacity: sharedValue.get() };
     return obj;
   };
   fn.__closure = { headerRightProgress: sharedValue };
   fn.__workletHash = 7824413274607;
   fn.__initData = __initData3;
-  const tmp2Result = tmp2(4618);
+  const tmp2Result = tmp2(4810);
   const animatedStyle = tmp2Result.useAnimatedStyle(fn);
-  const tmp2Result2 = tmp2(4618);
-  class S {
-    constructor() {
-      const obj = { opacity: 1 - sharedValue.get() };
-      return obj;
-    }
-  }
-  S.__closure = { headerRightProgress: sharedValue };
-  S.__workletHash = 12417398077364;
-  S.__initData = __initData4;
+  const fn2 = function b() {
+    const obj = { opacity: 1 - sharedValue.get() };
+    return obj;
+  };
+  fn2.__closure = { headerRightProgress: sharedValue };
+  fn2.__workletHash = 12417398077364;
+  fn2.__initData = __initData4;
   const items1 = [game, application];
-  const animatedStyle1 = tmp2Result2.useAnimatedStyle(S);
+  const tmp2Result2 = tmp2(4810);
+  const animatedStyle1 = tmp2Result2.useAnimatedStyle(fn2);
   const memo = sharedValue.useMemo(() => {
     let iconURL;
     const tmp = game;
     if (game != null) {
       const getIconURL = tmp.getIconURL;
       let str = "png";
-      const tmp3 = c9;
+      const tmp3 = c8;
       if (AvatarUtils.SUPPORTS_WEBP) {
         str = "webp";
       }
@@ -410,7 +407,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (application != null) {
         const getIconURL2 = tmp6.getIconURL;
         let str2 = "png";
-        const tmp8 = c9;
+        const tmp8 = c8;
         if (AvatarUtils.SUPPORTS_WEBP) {
           str2 = "webp";
         }
@@ -438,18 +435,18 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (null != name) {
     const obj2 = { style: tmp.headerContainer, children: items2 };
     const obj3 = { android_fallbackColor: token };
-    items2 = [closure_7(tmp2(8602).BackgroundBlurFill, obj3), ];
+    items2 = [closure_6(tmp2(8517).BackgroundBlurFill, obj3), ];
     let tmp18Result = null != memo;
     const obj4 = { style: tmp.headerRow, children: items3 };
     if (tmp18Result) {
       const obj5 = { source: obj6, style: tmp.icon };
       obj6 = { uri: memo };
-      tmp18Result = tmp18(closure_4, obj5);
+      tmp18Result = tmp18(tmp4(6164), obj5);
     }
     items3 = [tmp18Result, , ];
     const obj7 = { style: tmp.titleContainer, children: items4 };
     const obj8 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", lineClamp: 1, children: name };
-    items4 = [closure_7(tmp2(4892).Heading, obj8), ];
+    items4 = [closure_6(tmp2(5086).Heading, obj8), ];
     let l30Rank;
     if (game != null) {
       l30Rank = game.l30Rank;
@@ -458,25 +455,25 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (tmp16Result) {
       const obj10 = { rank: game.l30Rank, compact: true };
       const obj9 = { style: tmp.rankPillContainer, children: items5 };
-      items5 = [closure_7(tmp4(8396), obj10), ];
-      const obj11 = { style: items6, children: closure_7(application(8396), obj12) };
+      items5 = [closure_6(tmp4(8894), obj10), ];
+      const obj11 = { style: items6, children: closure_6(application(8894), obj12) };
       items6 = [StyleSheet.absoluteFill, animatedStyle1];
-      const View = tmp4(4618).View;
+      const View = tmp4(4810).View;
       obj12 = { rank: game.l30Rank };
-      items5[1] = closure_7(View, obj11);
+      items5[1] = closure_6(View, obj11);
       tmp16Result = tmp16(tmp17, obj9);
     }
     items4[1] = tmp16Result;
-    items3[1] = closure_8(closure_5, obj7);
+    items3[1] = closure_7(closure_4, obj7);
     let tmp18Result2 = null != headerRight;
     if (tmp18Result2) {
       const obj13 = { style: items7, children: headerRight() };
       items7 = [tmp.headerRight, animatedStyle];
-      const View2 = tmp4(4618).View;
+      const View2 = tmp4(4810).View;
       tmp18Result2 = tmp18(View2, obj13);
     }
     items3[2] = tmp18Result2;
-    items2[1] = closure_8(closure_5, obj4);
+    items2[1] = closure_7(closure_4, obj4);
     tmp16Result2 = tmp16(tmp17, obj2);
   }
   return tmp16Result2;

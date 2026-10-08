@@ -1,29 +1,29 @@
-// Module ID: 15250
-// Function ID: 15251
+// Module ID: 15512
+// Function ID: 15513
 // Name: ToastDurationSetting
-// Dependencies: [19, 4885, 7645, 1085, 21, 558, 576, 504, 14295, 1126, 15147, 10996, 11142, 4580, 2]
+// Dependencies: [19, 5079, 7966, 1085, 21, 558, 576, 504, 14520, 1126, 15409, 11220, 11262, 4772, 2]
 
-// Module 15250 (ToastDurationSetting)
+// Module 15512 (ToastDurationSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4580 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 10996 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14295 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 15147 */;
+import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4772 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 11220 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14520 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 15409 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const Accessibility = Constants.Accessibility;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useToastDurationSettingProps() {
   let minToastDurationMs;
   let tmp11;
   let tmp12;
@@ -113,7 +113,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[13] = tmp9;
   cResult[14] = obj5;
   tmp19 = obj5;
-}) : (() => {
+}) : (function useToastDurationSettingProps() {
   let minToastDurationMs;
   let onValueChange;
   let stateFromStores;

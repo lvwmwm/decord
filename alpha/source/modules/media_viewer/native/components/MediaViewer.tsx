@@ -1,19 +1,19 @@
-// Module ID: 12800
-// Function ID: 12801
+// Module ID: 12947
+// Function ID: 12948
 // Name: MediaViewer
-// Dependencies: [32, 19, 17, 21, 1369, 558, 576, 4618, 12801, 12802, 7952, 6576, 6147, 6664, 6688, 7978, 12806, 4897, 7947, 8018, 9096, 4619, 9098, 2]
+// Dependencies: [32, 19, 17, 21, 1381, 558, 576, 4810, 12948, 12949, 8370, 6752, 6326, 6841, 6865, 8395, 12953, 5091, 8365, 8426, 10340, 4811, 10673, 2]
 
-// Module 12800 (MediaViewer)
+// Module 12947 (MediaViewer)
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
-import useVideoControls from "useVideoControls" /* 7947 */;
-import MediaViewerItem2 from "MediaViewerItem" /* 12802 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
+import useVideoControls from "useVideoControls" /* 8365 */;
+import MediaViewerItem2 from "MediaViewerItem" /* 12949 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const MediaViewerDimensionsContext = tmp(7978);
+const MediaViewerDimensionsContext = tmp(8395);
 function MediaViewer(arg0) {
   let closure_2;
   let dismiss;
@@ -64,8 +64,8 @@ function MediaViewer(arg0) {
   ({ onLongPress, originLayout, renderMedia, renderOverlay, swipeVelocityThreshold } = arg0);
   ({ useViewerProps, zoomed } = syncer);
   let tmp = height;
-  let tmp3 = height(6664);
-  let items = [height(6688).MEDIA_VIEWER];
+  let tmp3 = height(6841);
+  let items = [height(6865).MEDIA_VIEWER];
   const analyticsLocations = tmp3(items).analyticsLocations;
   const tmp4 = sharedValue(sharedValue1.useState(true), 2);
   [tmp5, tmp6] = tmp4;
@@ -73,7 +73,7 @@ function MediaViewer(arg0) {
   let obj = require("MediaViewerDimensionsContext");
   const mediaViewerDimensions = obj.useMediaViewerDimensions();
   ({ width, height } = mediaViewerDimensions);
-  const tmp9 = height(12806)({ index, onClose, sources, windowHeight: height, windowWidth: width });
+  const tmp9 = height(12953)({ index, onClose, sources, windowHeight: height, windowWidth: width });
   dependencyMap = tmp9;
   let obj2 = require("ReanimatedRexport");
   sharedValue = obj2.useSharedValue(0);
@@ -237,22 +237,22 @@ function MediaViewer(arg0) {
   items5 = [, , , , ];
   const obj17 = { barStyle: "light-content", hidden: !tmp5 };
   const tmp28 = translatePos(ref2, { entranceAnimationDriver: sharedValue, onContentSizeChange, onScroll, onLongPress, originLayout, panGestureConfig: mediaViewerPanGestureConfig, ref, renderMedia, sources, useItemVisible, windowHeight: height, windowWidth: width, index, zoomed });
-  items5[0] = translatePos(height(9096), obj17);
-  items5[1] = translatePos(height(4618).View, { style: animatedStyle });
-  items5[2] = translatePos(height(4619), { ref: animatedRef, style: animatedStyle2, children: tmp28 });
+  items5[0] = translatePos(height(10340), obj17);
+  items5[1] = translatePos(height(4810).View, { style: animatedStyle });
+  items5[2] = translatePos(height(4811), { ref: animatedRef, style: animatedStyle2, children: tmp28 });
   const obj18 = { style: items6, pointerEvents: str, children: renderOverlay(dismiss, overlayEnabled) };
   items6 = [first, animatedStyle1];
   str = "none";
   const tmp29 = isClosing;
   const tmp30 = animatedRef;
-  const tmp31 = height(4619);
+  const tmp31 = height(4811);
   if (tmp5) {
     str = "box-none";
   }
   items5[3] = translatePos(tmp31, obj18);
-  items5[4] = translatePos(tmp(9098), {});
+  items5[4] = translatePos(tmp(10673), {});
   const children = tmp29(tmp30, obj16);
-  return translatePos(tmp7(6664).AnalyticsLocationProvider, { value: analyticsLocations, children });
+  return translatePos(tmp7(6841).AnalyticsLocationProvider, { value: analyticsLocations, children });
 }
 ({ View: hasOwnProperty, StyleSheet: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -263,7 +263,7 @@ let closure_12 = { code: "function MediaViewerTsx3(){const{zoomed,pinching}=this
 const __initData = { code: "function MediaViewerTsx4(){const{scrollEnabled}=this.__closure;return{scrollEnabled:scrollEnabled.get()};}" };
 const memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((entranceAnimationDriver) => {
+let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MediaViewer(entranceAnimationDriver) {
   let onContentSizeChange;
   let onLongPress;
   let onScroll;
@@ -345,7 +345,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((entranceA
   cResult[13] = windowWidth;
   cResult[14] = zoomed;
   cResult[15] = fn3;
-}) : ((entranceAnimationDriver) => {
+}) : (function MediaViewer(entranceAnimationDriver) {
   let index;
   let items3;
   let obj6;
@@ -368,17 +368,17 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((entranceA
   let obj = entranceAnimationDriver(originLayout[7]);
   const sharedValue = obj.useSharedValue(false);
   const obj2 = entranceAnimationDriver(originLayout[7]);
-  class T {
+  class M {
     constructor() {
       const value = zoomed.get();
       const tmp2 = !value && !sharedValue.get();
       return tmp2;
     }
   }
-  T.__closure = { zoomed, pinching: sharedValue };
-  T.__workletHash = 1775226328369;
-  T.__initData = panGestureGenerator;
-  derivedValue = obj2.useDerivedValue(T);
+  M.__closure = { zoomed, pinching: sharedValue };
+  M.__workletHash = 1775226328369;
+  M.__initData = panGestureGenerator;
+  derivedValue = obj2.useDerivedValue(M);
   const items = [sharedValue];
   const items1 = [sharedValue];
   const callback = renderMedia.useCallback((nativeEvent) => sharedValue.set(2 === nativeEvent.nativeEvent.touches.length), items);
@@ -394,16 +394,16 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((entranceA
     return metroImportDefault(MediaViewerItem, obj);
   }, items2);
   const obj4 = entranceAnimationDriver(originLayout[7]);
-  class H {
+  class T {
     constructor() {
       const obj = { scrollEnabled: derivedValue.get() };
       return obj;
     }
   }
-  H.__closure = { scrollEnabled: derivedValue };
-  H.__workletHash = 14892821132407;
-  H.__initData = __initData;
-  const animatedProps = obj4.useAnimatedProps(H);
+  T.__closure = { scrollEnabled: derivedValue };
+  T.__workletHash = 14892821132407;
+  T.__initData = __initData;
+  const animatedProps = obj4.useAnimatedProps(T);
   const obj5 = { gesture: nativeGesture, children: windowWidth(entranceAnimationDriver(originLayout[11]).AnimatedFastList, obj6) };
   const tmp8 = onLongPress(originLayout[10])(index);
   const GestureDetector = entranceAnimationDriver(originLayout[12]).GestureDetector;
@@ -418,7 +418,7 @@ const __initData5 = { code: "function MediaViewerTsx8(){const{overlayEnabled,isI
 const __initData6 = { code: "function MediaViewerTsx9(){const{absoluteFillObject,translatePos,hideRelayoutSharedValue,withTiming,Easing}=this.__closure;return{...absoluteFillObject,alignItems:'center',justifyContent:'center',transform:[{translateY:translatePos.get()}],opacity:hideRelayoutSharedValue.get()?0:withTiming(1,{easing:Easing.linear,duration:75})};}" };
 const memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function MediaViewerWithProvider(arg0) {
   let obj3;
   let tmp4;
   const obj = react2;
@@ -436,7 +436,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : ((arg0) => {
+}) : (function MediaViewerWithProvider(arg0) {
   let obj2;
   const obj = { children: metroImportDefault(MediaViewer, obj2) };
   obj2 = {};

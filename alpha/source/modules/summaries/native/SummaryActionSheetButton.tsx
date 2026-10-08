@@ -1,18 +1,18 @@
-// Module ID: 11291
-// Function ID: 11292
+// Module ID: 11371
+// Function ID: 11372
 // Name: SummaryActionSheetButton
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1188, 4892, 5916, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1200, 5086, 6189, 2]
 
-// Module 11291 (SummaryActionSheetButton)
+// Module 11371 (SummaryActionSheetButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Pressables from "Pressables" /* 5916 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Pressables from "Pressables" /* 6189 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,100 +29,89 @@ createStyles = createStyles.createStyles;
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 obj3 = { margin: 12, tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 let closure_5 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SummaryActionSheetButton(arg0) {
   let iconSource;
-  let items1;
+  let items;
   let label;
   let onPress;
-  let tmp5;
   const obj = react2;
-  const cResult = obj.c(17);
+  const cResult = obj.c(15);
   ({ label, iconSource, onPress } = arg0);
   const tmp4 = closure_5();
-  if (cResult[0] !== tmp4.iconBox) {
-    const items = [tmp4.iconBox];
-    cResult[0] = tmp4.iconBox;
-    cResult[1] = items;
-    tmp5 = items;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === iconSource) {
-    let tmp6;
-    if (cResult[3] === tmp4.icon) {
-      tmp6 = cResult[4];
+  if (cResult[0] === iconSource) {
+    let tmp5;
+    if (cResult[1] === tmp4.icon) {
+      tmp5 = cResult[2];
     }
-    if (cResult[5] === tmp5) {
-      let tmp8;
-      if (cResult[6] === tmp6) {
-        tmp8 = cResult[7];
+    if (cResult[3] === tmp4.iconBox) {
+      let tmp7;
+      if (cResult[4] === tmp5) {
+        tmp7 = cResult[5];
       }
-      if (cResult[8] === label) {
-        let tmp12;
-        if (cResult[9] === tmp4.name) {
-          tmp12 = cResult[10];
+      if (cResult[6] === label) {
+        let tmp11;
+        if (cResult[7] === tmp4.name) {
+          tmp11 = cResult[8];
         }
-        if (cResult[11] === label) {
-          if (cResult[12] === onPress) {
-            if (cResult[13] === tmp4.container) {
-              if (cResult[14] === tmp8) {
-                let tmp15;
-                if (cResult[15] === tmp12) {
-                  tmp15 = cResult[16];
+        if (cResult[9] === label) {
+          if (cResult[10] === onPress) {
+            if (cResult[11] === tmp4.container) {
+              if (cResult[12] === tmp7) {
+                let tmp14;
+                if (cResult[13] === tmp11) {
+                  tmp14 = cResult[14];
                 }
-                return tmp15;
+                return tmp14;
               }
             }
           }
         }
-        const obj2 = { style: tmp4.container, onPress, accessibilityRole: "button", accessibilityLabel: label, children: items1 };
-        items1 = [tmp8, tmp12];
-        const tmp17 = React3(Pressables.PressableOpacity, obj2);
-        cResult[11] = label;
-        cResult[12] = onPress;
-        cResult[13] = tmp4.container;
-        cResult[14] = tmp8;
-        cResult[15] = tmp12;
-        cResult[16] = tmp17;
-        tmp15 = tmp17;
+        const obj2 = { style: tmp4.container, onPress, accessibilityRole: "button", accessibilityLabel: label, children: items };
+        items = [tmp7, tmp11];
+        const tmp16 = React3(Pressables.PressableOpacity, obj2);
+        cResult[9] = label;
+        cResult[10] = onPress;
+        cResult[11] = tmp4.container;
+        cResult[12] = tmp7;
+        cResult[13] = tmp11;
+        cResult[14] = tmp16;
+        tmp14 = tmp16;
       }
       const obj3 = { style: tmp4.name, variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, children: label };
-      const tmp14 = _false(Text_Text.Text, obj3);
-      cResult[8] = label;
-      cResult[9] = tmp4.name;
-      cResult[10] = tmp14;
-      tmp12 = tmp14;
+      const tmp13 = _false(Text_Text.Text, obj3);
+      cResult[6] = label;
+      cResult[7] = tmp4.name;
+      cResult[8] = tmp13;
+      tmp11 = tmp13;
     }
-    const obj4 = { style: tmp5, children: tmp6 };
-    const tmp11 = _false(View, obj4);
-    cResult[5] = tmp5;
-    cResult[6] = tmp6;
-    cResult[7] = tmp11;
-    tmp8 = tmp11;
+    const obj4 = { style: tmp4.iconBox, children: tmp5 };
+    const tmp10 = _false(View, obj4);
+    cResult[3] = tmp4.iconBox;
+    cResult[4] = tmp5;
+    cResult[5] = tmp10;
+    tmp7 = tmp10;
   }
   const obj5 = { style: tmp4.icon, source: iconSource };
-  const tmp7 = _false(native.Icon, obj5);
-  cResult[2] = iconSource;
-  cResult[3] = tmp4.icon;
-  cResult[4] = tmp7;
-  tmp6 = tmp7;
-}) : ((label) => {
+  const tmp6 = _false(native.Icon, obj5);
+  cResult[0] = iconSource;
+  cResult[1] = tmp4.icon;
+  cResult[2] = tmp6;
+  tmp5 = tmp6;
+}) : (function SummaryActionSheetButton(label) {
   let iconSource;
   let items;
-  let items1;
   let obj3;
   let onPress;
   label = label.label;
   ({ iconSource, onPress } = label);
   const tmp = closure_5();
-  const obj = { style: tmp.container, onPress, accessibilityRole: "button", accessibilityLabel: label, children: items1 };
-  const obj2 = { style: items, children: _false(native.Icon, obj3) };
-  items = [tmp.iconBox];
+  const obj = { style: tmp.container, onPress, accessibilityRole: "button", accessibilityLabel: label, children: items };
+  const obj2 = { style: tmp.iconBox, children: _false(native.Icon, obj3) };
   const PressableOpacity = Pressables.PressableOpacity;
   obj3 = { style: tmp.icon, source: iconSource };
-  items1 = [_false(View, obj2), ];
+  items = [_false(View, obj2), ];
   const obj4 = { style: tmp.name, variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, children: label };
-  items1[1] = _false(Text_Text.Text, obj4);
+  items[1] = _false(Text_Text.Text, obj4);
   return React3(PressableOpacity, obj);
 });
 const result = size.fileFinishedImporting("modules/summaries/native/SummaryActionSheetButton.tsx");

@@ -1,28 +1,28 @@
-// Module ID: 16482
-// Function ID: 16483
+// Module ID: 16742
+// Function ID: 16743
 // Name: ICYMICardInCard
-// Dependencies: [19, 17, 2051, 2112, 2074, 1085, 21, 16434, 587, 558, 576, 8502, 5978, 1188, 5609, 504, 5312, 9403, 5048, 4892, 5049, 16483, 1126, 5871, 16476, 5916, 7139, 7588, 2]
+// Dependencies: [19, 17, 2063, 2124, 2086, 1085, 21, 16694, 587, 558, 576, 8986, 6161, 1200, 5382, 504, 5624, 8825, 5405, 5086, 5417, 16743, 1126, 8183, 16736, 6189, 6064, 9180, 2]
 // Exports: default
 
-// Module 16482 (ICYMICardInCard)
+// Module 16742 (ICYMICardInCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import TextIcon2 from "TextIcon" /* 5871 */;
-import GuildIcon from "GuildIcon" /* 5978 */;
-import ClipView from "ClipView" /* 8502 */;
-import openDetailsActionSheet from "openDetailsActionSheet" /* 16476 */;
-import getIconForChannel from "getIconForChannel" /* 16483 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import GuildIcon from "GuildIcon" /* 6161 */;
+import TextIcon2 from "TextIcon" /* 8183 */;
+import ClipView from "ClipView" /* 8986 */;
+import openDetailsActionSheet from "openDetailsActionSheet" /* 16736 */;
+import getIconForChannel from "getIconForChannel" /* 16743 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16434 */;
+import createICYMIStyles from "createICYMIStyles" /* 16694 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ let closure_12 = createICYMIStyles.createICYMIStyles((marginHorizontal) => {
   ({ borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_STRONG, flexShrink: 0 });
   return obj;
 });
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function CutoutGuildIconWithUserCustom(arg0) {
   let author;
   let first;
   let guild;
@@ -108,14 +108,14 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const obj5 = { animate: true, style: tmp4.authorAvatar, guildId: guild.id, user: author, size: native.AvatarSizes.XSMALL_20 };
-  const Avatar = tmp(1188).Avatar;
+  const Avatar = tmp(1200).Avatar;
   const tmp14 = React4(Avatar, obj5);
   cResult[4] = author;
   cResult[5] = guild.id;
   cResult[6] = tmp4.authorAvatar;
   cResult[7] = tmp14;
   tmp13 = tmp14;
-}) : ((guild) => {
+}) : (function CutoutGuildIconWithUserCustom(guild) {
   let items;
   let items1;
   let obj3;

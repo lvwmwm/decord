@@ -1,24 +1,22 @@
-// Module ID: 11677
-// Function ID: 11678
+// Module ID: 11742
+// Function ID: 11743
 // Name: ActivitiesBanner
-// Dependencies: [32, 19, 21, 558, 576, 11666, 11678, 1126, 11689, 2]
+// Dependencies: [32, 19, 21, 558, 576, 11731, 11743, 1126, 11754, 2]
 
-// Module 11677 (ActivitiesBanner)
+// Module 11742 (ActivitiesBanner)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import useActivityApplications from "useActivityApplications" /* 11666 */;
-import ApplicationsImageDefault from "ApplicationsImage" /* 11678 */;
-import BannerBaseDefault from "BannerBase" /* 11689 */;
+import useActivityApplications from "useActivityApplications" /* 11731 */;
+import ApplicationsImageDefault from "ApplicationsImage" /* 11743 */;
+import BannerBaseDefault from "BannerBase" /* 11754 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let context;
-
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitiesBanner(context) {
   let tmp4;
   let tmp6;
   let tmp7;
@@ -77,7 +75,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
   cResult[3] = tmp7;
   cResult[4] = tmp9;
   tmp8 = tmp9;
-}) : ((context) => {
+}) : (function ActivitiesBanner(context) {
   let intl;
   let obj4;
   let tmp4;

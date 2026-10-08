@@ -1,24 +1,22 @@
-// Module ID: 12980
-// Function ID: 12981
+// Module ID: 13258
+// Function ID: 13259
 // Name: UserProfilePrivateBanner
-// Dependencies: [19, 17, 6714, 21, 4896, 587, 558, 576, 1103, 5886, 4892, 1126, 2]
+// Dependencies: [19, 17, 6891, 21, 5090, 587, 558, 576, 1103, 8198, 5086, 1126, 2]
 
-// Module 12980 (UserProfilePrivateBanner)
+// Module 13258 (UserProfilePrivateBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import LockIcon2 from "LockIcon" /* 5886 */;
-import Constants from "Constants" /* 6714 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Constants from "Constants" /* 6891 */;
+import LockIcon2 from "LockIcon" /* 8198 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let primaryColor;
 
 let closure_4;
 let hasOwnProperty;
@@ -29,7 +27,7 @@ const PROFILE_TOP_LAYER_Z_INDEX = Constants.PROFILE_TOP_LAYER_Z_INDEX;
 let obj = { banner: obj2 };
 obj2 = { flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, paddingTop: 18, paddingBottom: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, position: "relative", zIndex: PROFILE_TOP_LAYER_Z_INDEX };
 let closure_6 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((primaryColor) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfilePrivateBanner(primaryColor) {
   let intl;
   let items;
   let tmp5;
@@ -62,7 +60,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((primaryColor) => {
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { size: "xs", color: nativeDefault.colors.TEXT_DEFAULT };
-      const LockIcon = tmp(5886).LockIcon;
+      const LockIcon = tmp(8198).LockIcon;
       const tmp13 = React3(LockIcon, obj3);
       cResult[5] = tmp13;
       tmp10 = tmp13;
@@ -72,7 +70,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((primaryColor) => {
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { variant: "text-sm/medium", color: "text-default", children: intl.string(intl2.t.KPnd2O) };
-      const Text = tmp(4892).Text;
+      const Text = tmp(5086).Text;
       intl = tmp(1126).intl;
       const tmp16 = React3(Text, obj4);
       cResult[6] = tmp16;
@@ -97,7 +95,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((primaryColor) => {
   cResult[3] = tmp5;
   cResult[4] = items1;
   tmp8 = items1;
-}) : ((primaryColor) => {
+}) : (function UserProfilePrivateBanner(primaryColor) {
   let intl;
   let items1;
   let obj2;

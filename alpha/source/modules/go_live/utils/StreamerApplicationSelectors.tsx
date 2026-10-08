@@ -1,14 +1,14 @@
-// Module ID: 7241
-// Function ID: 7242
+// Module ID: 7420
+// Function ID: 7421
 // Name: StreamerApplicationSelectors
-// Dependencies: [4936, 1085, 7242, 568, 558, 576, 504, 2]
+// Dependencies: [5106, 1085, 7421, 568, 558, 576, 504, 2]
 // Exports: getStreamerActivity, getStreamerActivityByUserId, getStreamerApplication
 
-// Module 7241 (StreamerApplicationSelectors)
+// Module 7420 (StreamerApplicationSelectors)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import Constants from "Constants" /* 1085 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7242 */;
-import PresenceStore from "PresenceStore" /* 4936 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7421 */;
+import PresenceStore from "PresenceStore" /* 5106 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ function streamApplicationEqualityCheck(arg0, arg1) {
   return tmp;
 }
 const ActivityTypes = Constants.ActivityTypes;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetStreamApplication(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -77,7 +77,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7, streamApplicationEqualityCheck);
-}) : ((arg0) => {
+}) : (function useGetStreamApplication(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");

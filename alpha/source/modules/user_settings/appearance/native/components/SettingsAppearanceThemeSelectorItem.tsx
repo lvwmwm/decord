@@ -1,28 +1,28 @@
-// Module ID: 15108
-// Function ID: 15109
+// Module ID: 15370
+// Function ID: 15371
 // Name: SettingsAppearanceThemeSelectorItem
-// Dependencies: [19, 17, 1193, 15107, 1096, 21, 4896, 587, 4734, 558, 576, 4593, 5918, 1188, 15109, 573, 4586, 15110, 1241, 4600, 1126, 5916, 2]
+// Dependencies: [19, 17, 1205, 15369, 1096, 21, 5090, 587, 4928, 558, 576, 4785, 10211, 1200, 15371, 573, 4778, 15372, 1253, 4792, 1126, 6189, 2]
 
-// Module 15108 (SettingsAppearanceThemeSelectorItem)
+// Module 15370 (SettingsAppearanceThemeSelectorItem)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1241 */;
-import useToken from "useToken" /* 4586 */;
-import themes from "themes" /* 4593 */;
-import react_native2 from "react-native" /* 4600 */;
-import utils_ColorDefault from "utils/Color" /* 4734 */;
-import Pressables from "Pressables" /* 5916 */;
-import ThemedGradient from "ThemedGradient" /* 5918 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15109 */;
-import SynchronizeIconNativeDefault from "SynchronizeIconNative" /* 15110 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1253 */;
+import useToken from "useToken" /* 4778 */;
+import themes from "themes" /* 4785 */;
+import react_native2 from "react-native" /* 4792 */;
+import utils_ColorDefault from "utils/Color" /* 4928 */;
+import Pressables from "Pressables" /* 6189 */;
+import ThemedGradient from "ThemedGradient" /* 10211 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15371 */;
+import SynchronizeIconNativeDefault from "SynchronizeIconNative" /* 15372 */;
 import react from "react" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15107 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15369 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let obj2;
 let obj3;
 let size;
 let tmp;
-const native = tmp(1188);
+const native = tmp(1200);
 const View = react_native.View;
 const ThemeTypes = Constants.ThemeTypes;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -64,7 +64,7 @@ let closure_10 = tmp6;
 let tmp7 = new utils_ColorDefault(255, 255, 255, 0.5);
 let closure_11 = tmp7;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GradientThemeBackground(arg0) {
   let isThemeLocked;
   let item;
   let items;
@@ -137,7 +137,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp19 = isThemeLocked;
       if (tmp19) {
         const obj4 = { source: AssetRegistryDefault, style: tmp6.lock };
-        const Icon = tmp(1188).Icon;
+        const Icon = tmp(1200).Icon;
         tmp19 = metroRequire(Icon, obj4);
       }
       cResult[11] = isThemeLocked;
@@ -157,7 +157,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = tmp7;
   cResult[6] = items1;
   tmp9 = items1;
-}) : ((arg0) => {
+}) : (function GradientThemeBackground(arg0) {
   let isThemeLocked;
   let item;
   let items1;
@@ -188,7 +188,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp5(tmp6, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function DefaultThemeBackground(item) {
   let obj4;
   let systemTheme;
   let theme;
@@ -272,7 +272,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   cResult[3] = stateFromStores;
   cResult[4] = theme;
   tmp8 = theme;
-}) : ((item) => {
+}) : (function DefaultThemeBackground(item) {
   let obj4;
   let systemTheme;
   let theme;
@@ -303,7 +303,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   return metroRequire(View, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomThemeBackground(arg0) {
   let isThemeLocked;
   let item;
   let items;
@@ -376,7 +376,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp18 = isThemeLocked;
       if (tmp18) {
         const obj4 = { source: AssetRegistryDefault, style: tmp6.lock };
-        const Icon = tmp(1188).Icon;
+        const Icon = tmp(1200).Icon;
         tmp18 = metroRequire(Icon, obj4);
       }
       cResult[11] = isThemeLocked;
@@ -396,7 +396,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = tmp7;
   cResult[6] = items1;
   tmp9 = items1;
-}) : ((arg0) => {
+}) : (function CustomThemeBackground(arg0) {
   let isThemeLocked;
   let item;
   let items1;
@@ -416,18 +416,18 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items[1] = obj2;
   const obj4 = { componentStyles: obj5, mix: true, mixColorOverride: isThemeDarkResult ? closure_10 : closure_11, customTheme: item };
   obj5 = { borderRadius: nativeDefault.radii.sm };
-  const CustomThemedGradient = tmp(5918).CustomThemedGradient;
+  const CustomThemedGradient = tmp(10211).CustomThemedGradient;
   items1 = [metroRequire(CustomThemedGradient, obj4), ];
   if (isThemeLocked) {
     const obj6 = { source: AssetRegistryDefault, style: tmp4.lock };
-    const Icon = tmp(1188).Icon;
+    const Icon = tmp(1200).Icon;
     isThemeLocked = tmp7(Icon, obj6);
   }
   items1[1] = isThemeLocked;
   return tmp5(tmp6, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThemeSelectorItem(arg0) {
   let accessibilityRole;
   let accessibilityState;
   let isNew;
@@ -444,7 +444,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ themePreset, isPreview, isSelected, onPress, isNew } = arg0);
   const tmp4 = closure_8();
   if (isPreview) {
-    isPreview = themePreset.type !== tmp(1241).ClientThemeType.STANDARD_BACKGROUND_THEME;
+    isPreview = themePreset.type !== tmp(1253).ClientThemeType.STANDARD_BACKGROUND_THEME;
   }
   if (cResult[0] === isPreview) {
     let tmp5;
@@ -568,7 +568,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = themePreset;
   cResult[2] = tmp8;
   tmp5 = tmp8;
-}) : ((onPress) => {
+}) : (function ThemeSelectorItem(onPress) {
   let accessibilityRole;
   let accessibilityState;
   let isNew;
@@ -604,7 +604,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const radioA11yNative = tmp4Result.useRadioA11yNative({ selected: isSelected, disabled: isPreview });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   const obj4 = { style: tmp.themeSelectorItemContainer, androidRippleConfig: tmp.rippleColor, onPress, accessibilityRole, accessibilityLabel: themePreset.getName(), accessibilityState, accessibilityHint: stringResult, children: tmp16(View, obj5) };
-  const PressableOpacity = tmp4(5916).PressableOpacity;
+  const PressableOpacity = tmp4(6189).PressableOpacity;
   stringResult = undefined;
   if (isPreview) {
     const intl = tmp4(1126).intl;

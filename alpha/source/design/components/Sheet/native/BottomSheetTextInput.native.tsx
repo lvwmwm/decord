@@ -1,23 +1,23 @@
-// Module ID: 9271
-// Function ID: 9272
+// Module ID: 8602
+// Function ID: 8603
 // Name: Sheet/BottomSheetTextInput
-// Dependencies: [109, 19, 21, 558, 576, 6118, 6116, 9272, 2]
+// Dependencies: [109, 19, 21, 558, 576, 6297, 6295, 8603, 2]
 
-// Module 9271 (Sheet/BottomSheetTextInput)
+// Module 8602 (Sheet/BottomSheetTextInput)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 6118 */;
-import void_TextInput_TextInputDefault from "void/TextInput/TextInput" /* 9272 */;
+import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 6297 */;
+import void_TextInput_TextInputDefault from "void/TextInput/TextInput" /* 8603 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const NativeTextInput = tmp(6116);
+const NativeTextInput = tmp(6295);
 let closure_3 = ["onFocus", "onBlur", "ref"];
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheetTextInput(arg0) {
   let onBlur;
   let onBlur2;
   let onFocus;
@@ -59,7 +59,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const keyboardBlurring = tmpResult.useKeyboardBlurring(ref1);
     const tmp13 = importDefault;
     if (cResult[8] !== tmp7) {
-      const fn = function y(current) {
+      const fn = function h(current) {
         ref1.current = current;
         if (typeof closure_0 === "function") {
           closure_0(current);
@@ -84,7 +84,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     }
-    tmp13(9272);
+    tmp13(8603);
     const merged = Object.assign(tmp6);
     const tmp23 = <tmp13Result ref={tmp16} onFocus={onFocus2} onBlur={onBlur2} />;
     cResult[10] = onBlur2;
@@ -99,7 +99,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = tmp5;
   cResult[7] = obj3;
   tmp12 = obj3;
-}) : ((ref) => {
+}) : (function BottomSheetTextInput(ref) {
   let onBlur;
   let onBlur2;
   let onFocus;

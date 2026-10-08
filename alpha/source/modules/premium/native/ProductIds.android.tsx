@@ -1,12 +1,12 @@
-// Module ID: 6926
-// Function ID: 6927
+// Module ID: 7115
+// Function ID: 7116
 // Name: ProductIds
-// Dependencies: [1379, 1615, 2]
+// Dependencies: [1391, 1627, 2]
 // Exports: getPlanIdForGift, getProductIdForGift
 
-// Module 6926 (ProductIds)
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1615 */;
+// Module 7115 (ProductIds)
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
 import size from "module_2" /* 2 */;
 
 let PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID;

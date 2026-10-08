@@ -1,13 +1,13 @@
-// Module ID: 16948
-// Function ID: 16949
+// Module ID: 17229
+// Function ID: 17230
 // Name: usePostableChannelCount
-// Dependencies: [4513, 4515, 1085, 558, 576, 504, 1097, 2]
+// Dependencies: [4705, 4707, 1085, 558, 576, 504, 1097, 2]
 
-// Module 16948 (usePostableChannelCount)
+// Module 17229 (usePostableChannelCount)
 import Constants from "Constants" /* 1085 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4513 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4705 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let _require, can;
 
 let closure_4 = GuildChannelStore2.GUILD_SELECTABLE_CHANNELS_KEY;
 const Permissions = Constants.Permissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSendMessageChannelCount(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -34,7 +34,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function u() {
+    const fn = function c() {
       let items = GuildChannelStore.getChannels(closure_0)[closure_4];
       if (items == null) {
         items = [];
@@ -81,7 +81,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return arr4.length;
   }
-}) : ((arg0) => {
+}) : (function useSendMessageChannelCount(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");

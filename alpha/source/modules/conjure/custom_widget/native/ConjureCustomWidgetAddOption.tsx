@@ -1,20 +1,20 @@
-// Module ID: 12920
-// Function ID: 12921
+// Module ID: 13069
+// Function ID: 13070
 // Name: ConjureCustomWidgetAddOption
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 12921, 4860, 12922, 8926, 12515, 1126, 3753, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 13070, 5054, 13071, 8557, 12611, 1126, 3827, 2]
 
-// Module 12920 (ConjureCustomWidgetAddOption)
+// Module 13069 (ConjureCustomWidgetAddOption)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3753 from "module_3753" /* 3753 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4860 */;
-import MagicWandIcon from "MagicWandIcon" /* 12515 */;
-import ConjureCustomWidget from "ConjureCustomWidget" /* 12921 */;
-import ConjureCustomWidgetSheet from "ConjureCustomWidgetSheet" /* 12922 */;
+import _modDef3827 from "module_3827" /* 3827 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5054 */;
+import MagicWandIcon from "MagicWandIcon" /* 12611 */;
+import ConjureCustomWidget from "ConjureCustomWidget" /* 13070 */;
+import ConjureCustomWidgetSheet from "ConjureCustomWidgetSheet" /* 13071 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ const VibegrationsCustomWidgetAddOption = "VibegrationsCustomWidgetAddOption";
 let obj = { container: obj2 };
 obj2 = { marginBottom: nativeDefault.space.PX_16 };
 let closure_7 = createStyles.createStyles(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureCustomWidgetAddOption() {
   let first;
   let obj = react2;
   const cResult = obj.c(4);
@@ -51,12 +51,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let tmp12;
     const _Symbol = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-      const RowButton = tmp(8926).RowButton;
+      const RowButton = tmp(8557).RowButton;
       ({ IconComponent: MagicWandIcon.MagicWandIcon, variant: "secondary" });
-      const Icon = tmp(8926).RowButton.Icon;
+      const Icon = tmp(8557).RowButton.Icon;
       const intl = tmp(1126).intl;
       const intl2 = tmp(1126).intl;
-      const tmp11 = <RowButton icon={null} label={intl.string(_modDef3753["5WHmVU"])} subLabel={intl2.string(_modDef3753.yI85oV)} onPress={first} />;
+      const tmp11 = <RowButton icon={null} label={intl.string(_modDef3827["5WHmVU"])} subLabel={intl2.string(_modDef3827.yI85oV)} onPress={first} />;
       cResult[1] = tmp11;
       tmp8 = tmp11;
     } else {
@@ -73,7 +73,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = tmp12;
   }
   return tmp7;
-}) : (() => {
+}) : (function ConjureCustomWidgetAddOption() {
   let intl;
   let intl2;
   const tmp = closure_7();
@@ -81,10 +81,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const canConjureCustomWidget = obj.useCanConjureCustomWidget(VibegrationsCustomWidgetAddOption);
   let tmp6 = null;
   if (canConjureCustomWidget) {
-    ({ icon: null, label: intl.string(_modDef3753["5WHmVU"]), subLabel: intl2.string(_modDef3753.yI85oV), onPress: tmp5 });
-    const RowButton = tmp2(8926).RowButton;
+    ({ icon: null, label: intl.string(_modDef3827["5WHmVU"]), subLabel: intl2.string(_modDef3827.yI85oV), onPress: tmp5 });
+    const RowButton = tmp2(8557).RowButton;
     ({ IconComponent: MagicWandIcon.MagicWandIcon, variant: "secondary" });
-    const Icon = tmp2(8926).RowButton.Icon;
+    const Icon = tmp2(8557).RowButton.Icon;
     intl = tmp2(1126).intl;
     intl2 = tmp2(1126).intl;
     tmp6 = <View style={tmp.container}>{null}</View>;

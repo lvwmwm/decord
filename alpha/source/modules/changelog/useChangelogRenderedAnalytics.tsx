@@ -1,25 +1,25 @@
-// Module ID: 12095
-// Function ID: 12096
+// Module ID: 12172
+// Function ID: 12173
 // Name: useChangelogRenderedAnalytics
-// Dependencies: [19, 2116, 4911, 4910, 1085, 558, 576, 12096, 504, 7530, 7776, 1252, 2]
+// Dependencies: [19, 2128, 6040, 7002, 1085, 558, 576, 12173, 504, 6089, 8097, 1264, 2]
 
-// Module 12095 (useChangelogRenderedAnalytics)
+// Module 12172 (useChangelogRenderedAnalytics)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 7776 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8097 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
-import ReadStateStore_mod from "ReadStateStore" /* 4911 */;
-import ChangelogStore from "ChangelogStore" /* 4910 */;
+import LocaleStore from "LocaleStore" /* 2128 */;
+import ReadStateStore_mod from "ReadStateStore" /* 6040 */;
+import ChangelogStore from "ChangelogStore" /* 7002 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, current, importDefault;
+let _require, importDefault;
 
 let ReadStateStore = ReadStateStore_mod;
 const AnalyticEvents = Constants.AnalyticEvents;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChangelogRenderedAnalytics(arg0) {
   let closure_0;
   let closure_1;
   let locale;
@@ -103,19 +103,19 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp19 = cResult[11];
     }
     if (cResult[12] !== arg0) {
-      class F {
+      class R {
         constructor() {
           return ReadStateStore.getUnreadCount(closure_0);
         }
       }
       const items3 = [arg0];
       cResult[12] = arg0;
-      cResult[13] = F;
+      cResult[13] = R;
       cResult[14] = items3;
       tmp22 = items3;
-      tmp21 = F;
+      tmp21 = R;
     } else {
-      class F {
+      class R {
         constructor() {
           return ReadStateStore.getUnreadCount(closure_0);
         }
@@ -126,50 +126,50 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     stateFromStores2 = tmpResult4.useStateFromStores(tmp19, tmp21, tmp22);
     const ref2 = obj4.useRef(stateFromStores2);
     if (cResult[15] !== stateFromStores2) {
-      class A {
+      class R {
         constructor() {
-          ref2.current = stateFromStores2;
+          return ReadStateStore.getUnreadCount(closure_0);
         }
       }
       cResult[15] = stateFromStores2;
-      cResult[16] = A;
-      tmp24 = A;
+      cResult[16] = tmp25;
+      tmp24 = tmp25;
     } else {
-      class A {
+      class R {
         constructor() {
-          ref2.current = stateFromStores2;
+          return ReadStateStore.getUnreadCount(closure_0);
         }
       }
     }
     const effect = obj4.useEffect(tmp24);
     const _Symbol2 = Symbol;
     if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-      class L {
+      class R {
         constructor() {
-          ref.current = Date.now();
+          return ReadStateStore.getUnreadCount(closure_0);
         }
       }
-      cResult[17] = L;
+      cResult[17] = tmp28;
     } else {
-      class L {
+      class R {
         constructor() {
-          ref.current = Date.now();
+          return ReadStateStore.getUnreadCount(closure_0);
         }
       }
     }
     if (cResult[18] !== tmp15) {
-      class L {
+      class R {
         constructor() {
-          ref.current = Date.now();
+          return ReadStateStore.getUnreadCount(closure_0);
         }
       }
-      tmp28[0] = tmp15;
+      tmp30[0] = tmp15;
       cResult[18] = tmp15;
-      cResult[19] = tmp28;
+      cResult[19] = tmp30;
     } else {
-      class L {
+      class R {
         constructor() {
-          ref.current = Date.now();
+          return ReadStateStore.getUnreadCount(closure_0);
         }
       }
     }
@@ -184,13 +184,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     if (cResult[20] === tmp5) {
-      class L {
+      class R {
         constructor() {
-          ref.current = Date.now();
+          return ReadStateStore.getUnreadCount(closure_0);
         }
       }
     }
-    class R {
+    class N {
       constructor() {
         const tmp = locale && null != closure_1;
         if (tmp) {
@@ -203,7 +203,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[20] = tmp5;
     cResult[21] = tmp15;
     cResult[22] = stateFromStores;
-    cResult[23] = R;
+    cResult[23] = N;
     cResult[24] = items4;
   }
   class S {
@@ -223,7 +223,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = items5;
   tmp13 = items5;
   tmp12 = S;
-}) : ((arg0) => {
+}) : (function useChangelogRenderedAnalytics(arg0) {
   let closure_0;
   let closure_1;
   let locale;
@@ -292,7 +292,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items7);
   const items8 = [tmp6, stateFromStores1];
   const effect4 = obj3.useEffect(() => {
-    current = ref.current;
+    const current = ref.current;
     return () => {
       const tmp = locale && null != stateFromStores1 && null != current;
       if (tmp) {

@@ -1,16 +1,16 @@
-// Module ID: 7937
-// Function ID: 7938
+// Module ID: 8356
+// Function ID: 8357
 // Name: Banner
-// Dependencies: [19, 17, 1085, 21, 4896, 558, 576, 1103, 5981, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 558, 576, 1103, 6164, 2]
 
-// Module 7937 (Banner)
+// Module 8356 (Banner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import FastImageDefault from "FastImage" /* 5981 */;
+import FastImageDefault from "FastImage" /* 6164 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ const View = react_native.View;
 const BANNER_HEIGHT = Constants.BANNER_HEIGHT;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ root: { width: "100%" }, image: { width: "100%", height: "100%" } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileBanner(arg0) {
   let backgroundColor;
   let bannerHeight;
   let bannerSafeArea;
@@ -99,7 +99,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = sum;
   cResult[4] = obj4;
   tmp8 = obj4;
-}) : ((bannerHeight) => {
+}) : (function ProfileBanner(bannerHeight) {
   let backgroundColor;
   let bannerSafeArea;
   let bannerSource;

@@ -1,23 +1,23 @@
-// Module ID: 17434
-// Function ID: 17435
+// Module ID: 17716
+// Function ID: 17717
 // Name: useTextChannelPressEvents
-// Dependencies: [19, 2051, 558, 576, 4909, 4907, 10045, 16079, 10664, 2]
+// Dependencies: [19, 2063, 558, 576, 7001, 5101, 10432, 16339, 10264, 2]
 
-// Module 17434 (useTextChannelPressEvents)
-import transitionToChannel from "transitionToChannel" /* 4907 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4909 */;
-import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 10045 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10664 */;
-import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 16079 */;
+// Module 17716 (useTextChannelPressEvents)
+import transitionToChannel from "transitionToChannel" /* 5101 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7001 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10264 */;
+import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 10432 */;
+import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 16339 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id, navigationReplace) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTextChannelPressEvents(guild_id, navigationReplace) {
   _require = guild_id;
   let obj = require("react");
   const cResult = obj.c(9);
@@ -77,7 +77,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id, navigation
   cResult[2] = navigationReplace;
   cResult[3] = fn;
   tmp2 = fn;
-}) : ((arg0, navigationReplace) => {
+}) : (function useTextChannelPressEvents(arg0, navigationReplace) {
   let items;
   let items1;
   const user = arg0;

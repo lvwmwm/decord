@@ -1,34 +1,34 @@
-// Module ID: 15652
-// Function ID: 15653
+// Module ID: 15932
+// Function ID: 15933
 // Name: UserSettingsDesignSystemButton
-// Dependencies: [32, 19, 17, 1085, 1240, 21, 558, 576, 15653, 15654, 5601, 7586, 6894, 9563, 14267, 7619, 14269, 9827, 4827, 14268, 4896, 587, 1490, 4860, 15655, 1987, 5600, 4892, 10396, 9554, 9559, 9561, 9560, 9558, 9557, 5599, 4595, 1103, 5612, 6002, 5918, 8609, 2]
+// Dependencies: [32, 19, 17, 1085, 1252, 21, 558, 576, 15933, 15934, 5375, 8106, 7083, 8734, 14091, 7866, 14093, 10326, 5021, 14092, 5090, 587, 1502, 5054, 15935, 1999, 5373, 5086, 9993, 8725, 8730, 8732, 8731, 8729, 8728, 5963, 4787, 1103, 5387, 6186, 10211, 8524, 2]
 // Exports: default
 
-// Module 15652 (UserSettingsDesignSystemButton)
+// Module 15932 (UserSettingsDesignSystemButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4827 */;
-import LinearGradientDefault from "LinearGradient" /* 5612 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 6894 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 7619 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 9554 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 9557 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 9558 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 9559 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 9560 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 9561 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 9827 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 10396 */;
-import useToggleButtonProps from "useToggleButtonProps" /* 14268 */;
-import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 15653 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5021 */;
+import LinearGradientDefault from "LinearGradient" /* 5387 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7083 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 7866 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 8725 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 8728 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 8729 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 8730 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 8731 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 8732 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 9993 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 10326 */;
+import useToggleButtonProps from "useToggleButtonProps" /* 14092 */;
+import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 15933 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
+import ClientThemesConstants from "ClientThemesConstants" /* 1252 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -46,12 +46,12 @@ let obj4;
 let obj5;
 let tmp;
 let unpackModuleId;
-const components_Button_Button = tmp(5601);
-const IconButton4 = tmp(7586);
-const ImageButton2 = tmp(9563);
-const ToggleButton2 = tmp(14267);
-const ToggleIconButton2 = tmp(14269);
-const AssetRegistryDefault12 = tmp(15654);
+const components_Button_Button = tmp(5375);
+const IconButton4 = tmp(8106);
+const ImageButton2 = tmp(8734);
+const ToggleButton2 = tmp(14091);
+const ToggleIconButton2 = tmp(14093);
+const AssetRegistryDefault12 = tmp(15934);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, ScrollView: metroRequire } = react_native);
 const ThemeTypes = Constants.ThemeTypes;
@@ -63,7 +63,7 @@ let closure_15 = ["destructive", "active"];
 let closure_16 = ["expressive"];
 let closure_17 = ["experimental_premium-primary", "experimental_premium-secondary"];
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExampleButton(arg0) {
   let buttonScale;
   let buttonSize;
   let closure_129_2;
@@ -108,7 +108,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp7 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    class I {
+    class P {
       constructor() {
         closure_1_2(true);
         ref.current = setTimeout(() => {
@@ -116,9 +116,9 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }, 5000);
       }
     }
-    cResult[2] = I;
+    cResult[2] = P;
   } else {
-    class I {
+    class P {
       constructor() {
         closure_1_2(true);
         ref.current = setTimeout(() => {
@@ -128,7 +128,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   if (text == null) {
-    class I {
+    class P {
       constructor() {
         closure_1_2(true);
         ref.current = setTimeout(() => {
@@ -138,7 +138,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   if (text == null) {
-    class I {
+    class P {
       constructor() {
         closure_1_2(true);
         ref.current = setTimeout(() => {
@@ -148,7 +148,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   if (grow == null) {
-    class I {
+    class P {
       constructor() {
         closure_1_2(true);
         ref.current = setTimeout(() => {
@@ -158,7 +158,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   if (showIcon) {
-    class I {
+    class P {
       constructor() {
         closure_1_2(true);
         ref.current = setTimeout(() => {
@@ -168,7 +168,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   if (cResult[3] === tmp6) {
-    class I {
+    class P {
       constructor() {
         closure_1_2(true);
         ref.current = setTimeout(() => {
@@ -189,7 +189,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[12] = variant;
   cResult[13] = authStore(components_Button_Button.Button, { disabled: showDisabled, onPress: tmp7, onLongPress: tmp8, loading: tmp6, variant, text, grow, size: buttonSize, icon: undefined, iconPosition, scaleAmountInPx: buttonScale });
   authStore(components_Button_Button.Button, { disabled: showDisabled, onPress: tmp7, onLongPress: tmp8, loading: tmp6, variant, text, grow, size: buttonSize, icon: undefined, iconPosition, scaleAmountInPx: buttonScale });
-}) : ((arg0) => {
+}) : (function ExampleButton(arg0) {
   let buttonScale;
   let buttonSize;
   let closure_2;
@@ -249,7 +249,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp8(Button, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExampleIconButton(arg0) {
   let buttonSize;
   let closure_129_2;
   let enableLoadingState;
@@ -292,29 +292,29 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   _slicedToArray = tmp9;
   if (tmp4) {
     if (cResult[2] !== tmp9) {
-      class P {
+      class I {
         constructor() {
           return closure_3();
         }
       }
       cResult[2] = tmp9;
-      cResult[3] = P;
+      cResult[3] = I;
     } else {
-      class P {
+      class I {
         constructor() {
           return closure_3();
         }
       }
     }
     if (variant == null) {
-      class P {
+      class I {
         constructor() {
           return closure_3();
         }
       }
     }
     if (cResult[4] === tmp8) {
-      class P {
+      class I {
         constructor() {
           return closure_3();
         }
@@ -330,20 +330,20 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[9] = authStore(IconButton2, obj2);
     const tmp19 = authStore(IconButton2, obj2);
   } else {
-    class P {
+    class I {
       constructor() {
         return closure_3();
       }
     }
     if (variant == null) {
-      class P {
+      class I {
         constructor() {
           return closure_3();
         }
       }
     }
     if (cResult[12] === tmp8) {
-      class P {
+      class I {
         constructor() {
           return closure_3();
         }
@@ -360,7 +360,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[18] = authStore(IconButton, obj3);
     const tmp14 = authStore(IconButton, obj3);
   }
-}) : ((arg0) => {
+}) : (function ExampleIconButton(arg0) {
   let c2;
   let obj;
   let showLabel;
@@ -435,7 +435,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp6(IconButton, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExampleImageButton(arg0) {
   let buttonSize;
   let closure_129_2;
   let enableLoadingState;
@@ -479,44 +479,57 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   _slicedToArray = tmp8;
   if (tmp4) {
+    let tmp13;
     if (cResult[2] !== tmp8) {
-      class B {
-        constructor() {
-          return closure_3();
-        }
-      }
+      const fn2 = function w() {
+        return closure_3();
+      };
       cResult[2] = tmp8;
-      cResult[3] = B;
+      cResult[3] = fn2;
+      tmp13 = fn2;
     } else {
-      class B {
-        constructor() {
-          return closure_3();
-        }
-      }
+      tmp13 = cResult[3];
     }
     if (cResult[4] === tmp7) {
-      class B {
-        constructor() {
-          return closure_3();
+      if (cResult[5] === image) {
+        if (cResult[6] === label) {
+          if (cResult[7] === showDisabled) {
+            let tmp14;
+            if (cResult[8] === tmp13) {
+              tmp14 = cResult[9];
+            }
+            tmp10 = tmp14;
+          }
         }
       }
     }
     const obj2 = { disabled: showDisabled, onPress: tmp13, label, grow: true, loading: tmp7, image };
+    const tmp16 = authStore(ImageButton2.ImageButton, obj2);
     cResult[4] = tmp7;
     cResult[5] = image;
     cResult[6] = label;
     cResult[7] = showDisabled;
     cResult[8] = tmp13;
-    cResult[9] = authStore(ImageButton2.ImageButton, obj2);
-    const tmp16 = authStore(ImageButton2.ImageButton, obj2);
+    cResult[9] = tmp16;
+    tmp14 = tmp16;
   } else {
-    class B {
-      constructor() {
-        return closure_3();
+    if (cResult[10] !== tmp8) {
+      class P {
+        constructor() {
+          return closure_3();
+        }
+      }
+      cResult[10] = tmp8;
+      cResult[11] = P;
+    } else {
+      class P {
+        constructor() {
+          return closure_3();
+        }
       }
     }
     if (cResult[12] === tmp7) {
-      class B {
+      class P {
         constructor() {
           return closure_3();
         }
@@ -534,7 +547,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp10 = tmp12;
   }
   return tmp10;
-}) : ((arg0) => {
+}) : (function ExampleImageButton(arg0) {
   let c2;
   let image;
   let label;
@@ -591,7 +604,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp4(ImageButton, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExampleToggleButton() {
   let closure_1;
   let first;
   let tmp6;
@@ -622,7 +635,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = tmp6;
   cResult[4] = tmp8;
   tmp7 = tmp8;
-}) : (() => {
+}) : (function ExampleToggleButton() {
   let closure_1;
   let first;
   [first, closure_1] = react.useState(false);
@@ -639,7 +652,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return authStore(ToggleButton, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((variant) => {
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExampleToggleIconButton(variant) {
   let closure_1;
   let first;
   let tmp7;
@@ -669,7 +682,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((variant) => {
       }
     }
   }
-  const obj2 = { accessibilityLabel: combined, icon: AssetRegistryDefault3, selectedIcon: AssetRegistryDefault10, pressed: first, onPress: tmp7, variant, size: "md" };
+  const obj2 = { accessibilityLabel: combined, icon: AssetRegistryDefault3, selectedIcon: AssetRegistryDefault11, pressed: first, onPress: tmp7, variant, size: "md" };
   const ToggleIconButton = ToggleIconButton2.ToggleIconButton;
   const tmp9 = authStore(ToggleIconButton, obj2);
   cResult[2] = first;
@@ -678,7 +691,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((variant) => {
   cResult[5] = variant;
   cResult[6] = tmp9;
   tmp8 = tmp9;
-}) : ((variant) => {
+}) : (function ExampleToggleIconButton(variant) {
   let closure_1;
   let first;
   variant = variant.variant;
@@ -688,7 +701,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((variant) => {
   const obj = {
     accessibilityLabel: "" + variant + " notifications",
     icon: AssetRegistryDefault3,
-    selectedIcon: AssetRegistryDefault10,
+    selectedIcon: AssetRegistryDefault11,
     pressed: first,
     onPress() {
       return closure_1(!first);
@@ -700,7 +713,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((variant) => {
   return authStore(ToggleIconButton, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExampleCustomIconToggleButton() {
   let closure_1;
   let first;
   let first1;
@@ -722,12 +735,12 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult = useToggleButtonProps;
   const toggleIconButtonProps = tmpResult.useToggleIconButtonProps(first1, first);
   if (cResult[1] !== first) {
-    const fn = function b() {
+    function onPress() {
       closure_1(!first);
-    };
+    }
     cResult[1] = first;
-    cResult[2] = fn;
-    tmp9 = fn;
+    cResult[2] = onPress;
+    tmp9 = onPress;
   } else {
     tmp9 = cResult[2];
   }
@@ -739,14 +752,14 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return tmp10;
   }
   const obj5 = { onPress: tmp9, size: "md" };
-  const IconButton = tmp(7586).IconButton;
+  const IconButton = tmp(8106).IconButton;
   const merged = Object.assign(toggleIconButtonProps);
   const tmp12 = authStore(IconButton, obj5);
   cResult[3] = tmp9;
   cResult[4] = toggleIconButtonProps;
   cResult[5] = tmp12;
   tmp10 = tmp12;
-}) : (() => {
+}) : (function ExampleCustomIconToggleButton() {
   let closure_1;
   let first;
   [first, closure_1] = react.useState(false);
@@ -838,10 +851,7 @@ export default function UserSettingsDesignSystemButton() {
   let items46;
   let items47;
   let items48;
-  let items49;
   let items5;
-  let items50;
-  let items51;
   let items6;
   let items7;
   let items8;
@@ -902,7 +912,7 @@ export default function UserSettingsDesignSystemButton() {
     }
   };
   navigation.setOptions(obj2);
-  const obj3 = { children: items51 };
+  const obj3 = { children: items48 };
   const obj4 = { children: closure_11(Stack, obj5) };
   obj5 = { spacing: 24, children: items1 };
   Stack = require("Stack/Stack").Stack;
@@ -1003,7 +1013,7 @@ export default function UserSettingsDesignSystemButton() {
     icon: closure_10(Icon, obj26)
   };
   Button = require("components/Button/Button").Button;
-  obj26 = { source: AssetRegistryDefault11 };
+  obj26 = { source: AssetRegistryDefault10 };
   Icon = require("components/Button/Button").Button.Icon;
   items9 = [closure_10(closure_5, obj24), ];
   const obj27 = { style: tmp.buttonContainer, children: closure_10(Button2, obj28) };
@@ -1036,7 +1046,7 @@ export default function UserSettingsDesignSystemButton() {
     variant: "secondary",
     text: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur",
     size: "md",
-    icon: AssetRegistryDefault11
+    icon: AssetRegistryDefault10
   };
   Button3 = require("components/Button/Button").Button;
   items11 = [closure_10(closure_5, obj33), , , ];
@@ -1048,7 +1058,7 @@ export default function UserSettingsDesignSystemButton() {
     variant: "secondary",
     text: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur",
     size: "md",
-    icon: AssetRegistryDefault11,
+    icon: AssetRegistryDefault10,
     iconPosition: "end"
   };
   Button4 = require("components/Button/Button").Button;
@@ -1149,27 +1159,24 @@ export default function UserSettingsDesignSystemButton() {
   const Stack25 = require("Stack/Stack").Stack;
   items21 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/bold", children: "Image buttons" }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "Image buttons are rereserved for more branded buttons, like social media sharing buttons." })];
   items22 = [closure_11(Stack25, obj57), ];
-  const obj58 = { children: items24 };
-  const obj59 = { style: items23, children: closure_10(closure_20, obj60) };
-  items23 = [tmp.buttonContainer];
+  const obj58 = { children: items23 };
+  const obj59 = { style: tmp.buttonContainer, children: closure_10(closure_20, obj60) };
   obj60 = { image: AssetRegistryDefault7, label: "Telegram" };
-  items24 = [closure_10(closure_5, obj59), , ];
-  const obj61 = { style: items25, children: closure_10(closure_20, obj62) };
-  items25 = [tmp.buttonContainer];
+  items23 = [closure_10(closure_5, obj59), , ];
+  const obj61 = { style: tmp.buttonContainer, children: closure_10(closure_20, obj62) };
   obj62 = { image: AssetRegistryDefault9, label: "WhatsApp" };
-  items24[1] = closure_10(closure_5, obj61);
-  const obj63 = { style: items26, children: closure_10(closure_20, obj64) };
-  items26 = [tmp.buttonContainer];
+  items23[1] = closure_10(closure_5, obj61);
+  const obj63 = { style: tmp.buttonContainer, children: closure_10(closure_20, obj64) };
   obj64 = { image: AssetRegistryDefault8, label: "Twitter" };
-  items24[2] = closure_10(closure_5, obj63);
+  items23[2] = closure_10(closure_5, obj63);
   items22[1] = closure_11(closure_5, obj58);
   items1[11] = closure_11(Stack24, obj56);
-  const obj65 = { spacing: 24, children: items28 };
+  const obj65 = { spacing: 24, children: items25 };
   const Stack26 = require("Stack/Stack").Stack;
-  const obj66 = { style: tmp.container, children: items27 };
+  const obj66 = { style: tmp.container, children: items24 };
   const Stack27 = require("Stack/Stack").Stack;
-  items27 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/bold", children: "IconButton with a label" }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "Icon buttons with a label require a different combination of props and will only appear in the 'lg' size." }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "It is highly recommended that a list of these buttons appear wrapped in a ScrollView, so that they will horizontally scroll when there are many buttons, when the text is longer through internationalization, or the text is larger through OS font size settings." })];
-  items28 = [closure_11(Stack27, obj66), , ];
+  items24 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/bold", children: "IconButton with a label" }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "Icon buttons with a label require a different combination of props and will only appear in the 'lg' size." }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "It is highly recommended that a list of these buttons appear wrapped in a ScrollView, so that they will horizontally scroll when there are many buttons, when the text is longer through internationalization, or the text is larger through OS font size settings." })];
+  items25 = [closure_11(Stack27, obj66), , ];
   const obj67 = { horizontal: true, contentContainerStyle: { minWidth: "100%" }, children: closure_10(Stack28, obj68) };
   obj68 = {
     direction: "horizontal",
@@ -1181,9 +1188,9 @@ export default function UserSettingsDesignSystemButton() {
     })
   };
   Stack28 = require("Stack/Stack").Stack;
-  items28[1] = closure_10(closure_6, obj67);
+  items25[1] = closure_10(closure_6, obj67);
   const obj69 = { horizontal: true, contentContainerStyle: { minWidth: "100%" }, children: closure_11(Stack29, obj70) };
-  obj70 = { direction: "horizontal", justify: "center", style: tmp.buttonContainer, children: items29 };
+  obj70 = { direction: "horizontal", justify: "center", style: tmp.buttonContainer, children: items26 };
   Stack29 = require("Stack/Stack").Stack;
   const obj71 = {
     variant: "secondary",
@@ -1195,7 +1202,7 @@ export default function UserSettingsDesignSystemButton() {
     }
   };
   let IconButton = require("IconButton").IconButton;
-  items29 = [closure_10(IconButton, obj71), , ];
+  items26 = [closure_10(IconButton, obj71), , ];
   const obj72 = {
     variant: "secondary",
     icon: AssetRegistryDefault2,
@@ -1206,7 +1213,7 @@ export default function UserSettingsDesignSystemButton() {
     }
   };
   const IconButton2 = require("IconButton").IconButton;
-  items29[1] = closure_10(IconButton2, obj72);
+  items26[1] = closure_10(IconButton2, obj72);
   const obj73 = {
     variant: "secondary",
     icon: AssetRegistryDefault2,
@@ -1217,51 +1224,51 @@ export default function UserSettingsDesignSystemButton() {
     }
   };
   const IconButton3 = require("IconButton").IconButton;
-  items29[2] = closure_10(IconButton3, obj73);
-  items28[2] = closure_10(closure_6, obj69);
+  items26[2] = closure_10(IconButton3, obj73);
+  items25[2] = closure_10(closure_6, obj69);
   items1[12] = closure_11(Stack26, obj65);
-  const obj74 = { spacing: 24, children: items30 };
+  const obj74 = { spacing: 24, children: items27 };
   const Stack30 = require("Stack/Stack").Stack;
   const obj75 = { style: tmp.container, children: closure_10(require("Text/Text").Text, { variant: "heading-lg/bold", children: "ImageButton with a label" }) };
   const Stack31 = require("Stack/Stack").Stack;
-  items30 = [closure_10(Stack31, obj75), , ];
+  items27 = [closure_10(Stack31, obj75), , ];
   const obj76 = { horizontal: true, contentContainerStyle: { minWidth: "100%" }, children: closure_11(Stack32, obj77) };
-  obj77 = { direction: "horizontal", justify: "center", style: tmp.buttonContainer, children: items31 };
+  obj77 = { direction: "horizontal", justify: "center", style: tmp.buttonContainer, children: items28 };
   const obj78 = { image: AssetRegistryDefault6, label: "Label", showLabel: true };
   Stack32 = require("Stack/Stack").Stack;
-  items31 = [closure_10(closure_20, obj78), , ];
+  items28 = [closure_10(closure_20, obj78), , ];
   const obj79 = { image: AssetRegistryDefault4, label: "Label", showLabel: true };
-  items31[1] = closure_10(closure_20, obj79);
+  items28[1] = closure_10(closure_20, obj79);
   const obj80 = { image: AssetRegistryDefault5, label: "Label", showLabel: true };
-  items31[2] = closure_10(closure_20, obj80);
-  items30[1] = closure_10(closure_6, obj76);
+  items28[2] = closure_10(closure_20, obj80);
+  items27[1] = closure_10(closure_6, obj76);
   const obj81 = { horizontal: true, contentContainerStyle: { minWidth: "100%" }, children: closure_11(Stack33, obj82) };
-  obj82 = { direction: "horizontal", justify: "center", style: tmp.buttonContainer, children: items32 };
+  obj82 = { direction: "horizontal", justify: "center", style: tmp.buttonContainer, children: items29 };
   const obj83 = { image: AssetRegistryDefault7, label: "Supercalifragilisticexpialidocious", showLabel: true };
   Stack33 = require("Stack/Stack").Stack;
-  items32 = [closure_10(closure_20, obj83), , ];
+  items29 = [closure_10(closure_20, obj83), , ];
   const obj84 = { image: AssetRegistryDefault9, label: "Supercalifragilisticexpialidocious", showLabel: true };
-  items32[1] = closure_10(closure_20, obj84);
+  items29[1] = closure_10(closure_20, obj84);
   const obj85 = { image: AssetRegistryDefault8, label: "Supercalifragilisticexpialidocious", showLabel: true };
-  items32[2] = closure_10(closure_20, obj85);
-  items30[2] = closure_10(closure_6, obj81);
+  items29[2] = closure_10(closure_20, obj85);
+  items27[2] = closure_10(closure_6, obj81);
   items1[13] = closure_11(Stack30, obj74);
-  const obj86 = { spacing: 24, children: items33 };
+  const obj86 = { spacing: 24, children: items30 };
   const Stack34 = require("Stack/Stack").Stack;
   const obj87 = { style: tmp.container, children: closure_10(require("Text/Text").Text, { variant: "heading-lg/bold", children: "Mixing buttons" }) };
   const Stack35 = require("Stack/Stack").Stack;
-  items33 = [closure_10(Stack35, obj87), ];
-  const obj88 = { direction: "horizontal", style: tmp.container, children: items34 };
+  items30 = [closure_10(Stack35, obj87), ];
+  const obj88 = { direction: "horizontal", style: tmp.container, children: items31 };
   const ButtonGroup = require("ButtonGroup").ButtonGroup;
-  items34 = [closure_10(closure_18, { variant: "secondary", text: "Search", grow: true }), closure_10(closure_19, { variant: "secondary" })];
-  items33[1] = closure_11(ButtonGroup, obj88);
+  items31 = [closure_10(closure_18, { variant: "secondary", text: "Search", grow: true }), closure_10(closure_19, { variant: "secondary" })];
+  items30[1] = closure_11(ButtonGroup, obj88);
   items1[14] = closure_11(Stack34, obj86);
-  const obj89 = { children: items36 };
+  const obj89 = { children: items33 };
   const Stack36 = require("Stack/Stack").Stack;
-  const obj90 = { style: tmp.container, children: items35 };
+  const obj90 = { style: tmp.container, children: items32 };
   const Stack37 = require("Stack/Stack").Stack;
-  items35 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/bold", children: "Light Profile Themes" }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "All buttons as they appear on a light profile theme" })];
-  items36 = [closure_11(Stack37, obj90), ];
+  items32 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/bold", children: "Light Profile Themes" }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "All buttons as they appear on a light profile theme" })];
+  items33 = [closure_11(Stack37, obj90), ];
   const obj91 = { theme: ThemeTypes.LIGHT, primaryColor: obj93.hex2int("#ffae70"), secondaryColor: obj94.hex2int("#cc2300"), children: closure_10(tmp3, obj92) };
   const ThemeContextProvider = require("native").ThemeContextProvider;
   obj93 = require("utils/ColorUtils");
@@ -1270,8 +1277,36 @@ export default function UserSettingsDesignSystemButton() {
   obj95 = { children: closure_11(Stack38, obj96) };
   tmp3 = LinearGradientDefault;
   Card = require("Card/Card").Card;
-  obj96 = { spacing: 16, children: items37 };
+  obj96 = { spacing: 16, children: items34 };
   Stack38 = require("Stack/Stack").Stack;
+  items34 = [
+    closure_13.map((variant) => {
+      const obj = { variant };
+      return closure_1_10(closure_1_18, obj, variant);
+    }),
+    closure_15.map((variant) => {
+      const obj = { variant };
+      return closure_1_10(closure_1_18, obj, variant);
+    })
+  ];
+  items33[1] = closure_10(ThemeContextProvider, obj91);
+  items1[15] = closure_11(Stack36, obj89);
+  const obj97 = { children: items36 };
+  const Stack39 = require("Stack/Stack").Stack;
+  const obj98 = { style: tmp.container, children: items35 };
+  const Stack40 = require("Stack/Stack").Stack;
+  items35 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/bold", children: "Dark Profile Themes" }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "All buttons as they appear on a dark profile theme" })];
+  items36 = [closure_11(Stack40, obj98), ];
+  const obj99 = { theme: ThemeTypes.DARK, primaryColor: obj101.hex2int("#490000"), secondaryColor: obj102.hex2int("#cc2300"), children: closure_10(tmp4, obj100) };
+  const ThemeContextProvider2 = require("native").ThemeContextProvider;
+  obj101 = require("utils/ColorUtils");
+  obj102 = require("utils/ColorUtils");
+  obj100 = { style: { padding: 16 }, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: ["#490000", "#cc2300"], children: closure_10(Card2, obj103) };
+  obj103 = { children: closure_11(Stack41, obj104) };
+  tmp4 = LinearGradientDefault;
+  Card2 = require("Card/Card").Card;
+  obj104 = { spacing: 16, children: items37 };
+  Stack41 = require("Stack/Stack").Stack;
   items37 = [
     closure_13.map((variant) => {
       const obj = { variant };
@@ -1282,55 +1317,27 @@ export default function UserSettingsDesignSystemButton() {
       return closure_1_10(closure_1_18, obj, variant);
     })
   ];
-  items36[1] = closure_10(ThemeContextProvider, obj91);
-  items1[15] = closure_11(Stack36, obj89);
-  const obj97 = { children: items39 };
-  const Stack39 = require("Stack/Stack").Stack;
-  const obj98 = { style: tmp.container, children: items38 };
-  const Stack40 = require("Stack/Stack").Stack;
-  items38 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/bold", children: "Dark Profile Themes" }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "All buttons as they appear on a dark profile theme" })];
-  items39 = [closure_11(Stack40, obj98), ];
-  const obj99 = { theme: ThemeTypes.DARK, primaryColor: obj101.hex2int("#490000"), secondaryColor: obj102.hex2int("#cc2300"), children: closure_10(tmp4, obj100) };
-  const ThemeContextProvider2 = require("native").ThemeContextProvider;
-  obj101 = require("utils/ColorUtils");
-  obj102 = require("utils/ColorUtils");
-  obj100 = { style: { padding: 16 }, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: ["#490000", "#cc2300"], children: closure_10(Card2, obj103) };
-  obj103 = { children: closure_11(Stack41, obj104) };
-  tmp4 = LinearGradientDefault;
-  Card2 = require("Card/Card").Card;
-  obj104 = { spacing: 16, children: items40 };
-  Stack41 = require("Stack/Stack").Stack;
-  items40 = [
-    closure_13.map((variant) => {
-      const obj = { variant };
-      return closure_1_10(closure_1_18, obj, variant);
-    }),
-    closure_15.map((variant) => {
-      const obj = { variant };
-      return closure_1_10(closure_1_18, obj, variant);
-    })
-  ];
-  items39[1] = closure_10(ThemeContextProvider2, obj99);
+  items36[1] = closure_10(ThemeContextProvider2, obj99);
   items1[16] = closure_11(Stack39, obj97);
-  const obj105 = { children: items42 };
+  const obj105 = { children: items39 };
   const Stack42 = require("Stack/Stack").Stack;
-  const obj106 = { style: tmp.container, children: items41 };
+  const obj106 = { style: tmp.container, children: items38 };
   const Stack43 = require("Stack/Stack").Stack;
-  items41 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/bold", children: "Light Client Theme" }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "All buttons as they appear on a light client theme" })];
-  items42 = [closure_11(Stack43, obj106), ];
+  items38 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/bold", children: "Light Client Theme" }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "All buttons as they appear on a light client theme" })];
+  items39 = [closure_11(Stack43, obj106), ];
   const obj107 = { theme: closure_8[0].theme, gradient: closure_8[0], flags: obj109.setThemeFlag(0, require("native").ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED), children: closure_11(closure_5, obj108) };
   const ThemeContextProvider3 = require("native").ThemeContextProvider;
-  obj108 = { style: { position: "relative", padding: 16 }, children: items43 };
-  items43 = [, ];
+  obj108 = { style: { position: "relative", padding: 16 }, children: items40 };
+  items40 = [, ];
   obj109 = require("native");
   const obj110 = { absolute: true, gradient: closure_8[0] };
-  items43[0] = closure_10(require("ThemedGradient").Gradient, obj110);
+  items40[0] = closure_10(require("ThemedGradient").Gradient, obj110);
   const obj111 = { style: obj112, children: closure_11(Stack44, obj113) };
   obj112 = { backgroundColor: obj114.setColorOpacity("white", 0.7), padding: 16, borderRadius: 16 };
-  obj113 = { spacing: 16, children: items44 };
+  obj113 = { spacing: 16, children: items41 };
   obj114 = require("native");
   Stack44 = require("Stack/Stack").Stack;
-  items44 = [
+  items41 = [
     closure_13.map((variant) => {
       const obj = { variant };
       return closure_1_10(closure_1_18, obj, variant);
@@ -1340,28 +1347,28 @@ export default function UserSettingsDesignSystemButton() {
       return closure_1_10(closure_1_18, obj, variant);
     })
   ];
-  items43[1] = closure_10(closure_5, obj111);
-  items42[1] = closure_10(ThemeContextProvider3, obj107);
+  items40[1] = closure_10(closure_5, obj111);
+  items39[1] = closure_10(ThemeContextProvider3, obj107);
   items1[17] = closure_11(Stack42, obj105);
-  const obj115 = { children: items46 };
+  const obj115 = { children: items43 };
   const Stack45 = require("Stack/Stack").Stack;
-  const obj116 = { style: tmp.container, children: items45 };
+  const obj116 = { style: tmp.container, children: items42 };
   const Stack46 = require("Stack/Stack").Stack;
-  items45 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/bold", children: "Dark Client Theme" }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "All buttons as they appear on a dark client theme" })];
-  items46 = [closure_11(Stack46, obj116), ];
+  items42 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/bold", children: "Dark Client Theme" }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "All buttons as they appear on a dark client theme" })];
+  items43 = [closure_11(Stack46, obj116), ];
   const obj117 = { theme: closure_9[0].theme, gradient: closure_9[0], flags: obj119.setThemeFlag(0, require("native").ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED), children: closure_11(closure_5, obj118) };
   const ThemeContextProvider4 = require("native").ThemeContextProvider;
-  obj118 = { style: { position: "relative", padding: 16 }, children: items47 };
-  items47 = [, ];
+  obj118 = { style: { position: "relative", padding: 16 }, children: items44 };
+  items44 = [, ];
   obj119 = require("native");
   const obj120 = { absolute: true, gradient: closure_9[0] };
-  items47[0] = closure_10(require("ThemedGradient").Gradient, obj120);
+  items44[0] = closure_10(require("ThemedGradient").Gradient, obj120);
   const obj121 = { style: obj122, children: closure_11(Stack47, obj123) };
   obj122 = { backgroundColor: obj124.setColorOpacity("black", 0.7), padding: 16, borderRadius: 16 };
-  obj123 = { spacing: 16, children: items48 };
+  obj123 = { spacing: 16, children: items45 };
   obj124 = require("native");
   Stack47 = require("Stack/Stack").Stack;
-  items48 = [
+  items45 = [
     closure_13.map((variant) => {
       const obj = { variant };
       return closure_1_10(closure_1_18, obj, variant);
@@ -1371,17 +1378,17 @@ export default function UserSettingsDesignSystemButton() {
       return closure_1_10(closure_1_18, obj, variant);
     })
   ];
-  items47[1] = closure_10(closure_5, obj121);
-  items46[1] = closure_10(ThemeContextProvider4, obj117);
+  items44[1] = closure_10(closure_5, obj121);
+  items43[1] = closure_10(ThemeContextProvider4, obj117);
   items1[18] = closure_11(Stack45, obj115);
-  const obj125 = { children: items50 };
+  const obj125 = { children: items47 };
   const Stack48 = require("Stack/Stack").Stack;
-  const obj126 = { style: tmp.container, children: items49 };
+  const obj126 = { style: tmp.container, children: items46 };
   const Stack49 = require("Stack/Stack").Stack;
-  items49 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/bold", children: "Floating Action Button" }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "An ever-present icon button, giving the most important call to action in a compact way." })];
-  items50 = [closure_11(Stack49, obj126), closure_10(closure_5, { style: { padding: 48 } })];
+  items46 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/bold", children: "Floating Action Button" }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "An ever-present icon button, giving the most important call to action in a compact way." })];
+  items47 = [closure_11(Stack49, obj126), closure_10(closure_5, { style: { padding: 48 } })];
   items1[19] = closure_11(Stack48, obj125);
-  items51 = [closure_10(closure_6, obj4), ];
+  items48 = [closure_10(closure_6, obj4), ];
   const obj127 = {
     icon: AssetRegistryDefault2,
     onPress() {
@@ -1391,6 +1398,6 @@ export default function UserSettingsDesignSystemButton() {
     accessibilityLabel: "Floating Action Button"
   };
   const FloatingActionButton = require("FloatingActionButton").FloatingActionButton;
-  items51[1] = closure_10(FloatingActionButton, obj127);
+  items48[1] = closure_10(FloatingActionButton, obj127);
   return closure_11(closure_12, obj3);
 };

@@ -1,27 +1,25 @@
-// Module ID: 9257
-// Function ID: 9258
+// Module ID: 8587
+// Function ID: 8588
 // Name: TableRowApplicationIcon
-// Dependencies: [19, 21, 4896, 587, 558, 576, 1402, 5981, 2]
+// Dependencies: [19, 21, 5090, 587, 558, 576, 1414, 6164, 2]
 
-// Module 9257 (TableRowApplicationIcon)
+// Module 8587 (TableRowApplicationIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import FastImageDefault from "FastImage" /* 5981 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import FastImageDefault from "FastImage" /* 6164 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let application;
 
 let size;
 const jsx = Fragment.jsx;
 let obj = { icon: size };
 size = { width: 32, height: 32, borderRadius: nativeDefault.radii.sm };
 let closure_4 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((application) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRowApplicationIcon(application) {
   const obj = react2;
   const cResult = obj.c(6);
   application = application.application;
@@ -51,7 +49,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((application) => {
   cResult[1] = application.id;
   cResult[2] = applicationIconSource;
   tmp4 = applicationIconSource;
-}) : ((application) => {
+}) : (function TableRowApplicationIcon(application) {
   application = application.application;
   const tmp = closure_4();
   FastImageDefault;

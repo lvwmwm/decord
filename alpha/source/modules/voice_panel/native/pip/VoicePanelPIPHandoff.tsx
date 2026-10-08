@@ -1,9 +1,9 @@
-// Module ID: 11922
-// Function ID: 11923
+// Module ID: 11995
+// Function ID: 11996
 // Name: VoicePanelPIPHandoff
 // Dependencies: [19, 558, 576, 2]
 
-// Module 11922 (VoicePanelPIPHandoff)
+// Module 11995 (VoicePanelPIPHandoff)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -12,7 +12,7 @@ import size from "module_2" /* 2 */;
 let set;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((subscribe) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePIPCardsSettled(subscribe) {
   let tmp2;
   let closure_0 = subscribe;
   const obj = react2;
@@ -28,13 +28,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((subscribe) => {
     tmp2 = cResult[1];
   }
   return react.useSyncExternalStore(subscribe.subscribe, tmp2);
-}) : ((subscribe) => {
+}) : (function usePIPCardsSettled(subscribe) {
   let closure_0 = subscribe;
   const items = [subscribe];
   return react.useSyncExternalStore(subscribe.subscribe, react.useCallback(() => closure_0.arePIPCardsSettled(), items));
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((subscribe) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePIPPanelLayoutCommitted(subscribe) {
   let tmp2;
   let closure_0 = subscribe;
   const obj = react2;
@@ -50,7 +50,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((subscribe) => {
     tmp2 = cResult[1];
   }
   return react.useSyncExternalStore(subscribe.subscribe, tmp2);
-}) : ((subscribe) => {
+}) : (function usePIPPanelLayoutCommitted(subscribe) {
   let closure_0 = subscribe;
   const items = [subscribe];
   return react.useSyncExternalStore(subscribe.subscribe, react.useCallback(() => panelLayoutCommitted.isPanelLayoutCommitted(), items));

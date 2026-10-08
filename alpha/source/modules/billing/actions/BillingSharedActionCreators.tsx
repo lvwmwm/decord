@@ -1,18 +1,18 @@
-// Module ID: 5412
-// Function ID: 5413
+// Module ID: 5721
+// Function ID: 5722
 // Name: BillingSharedActionCreators
-// Dependencies: [5, 4538, 5413, 1085, 1282, 4556, 584, 1126, 1252, 5319, 4549, 5414, 2]
+// Dependencies: [5, 4730, 5722, 1085, 1294, 4748, 584, 1126, 1264, 5631, 4741, 5723, 2]
 // Exports: createPaymentSource, dispatchConfirmationError, popupBridgeState, validatePaymentSourceBillingAddress
 
-// Module 5412 (BillingSharedActionCreators)
+// Module 5721 (BillingSharedActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5319 */;
-import Constants2 from "Constants" /* 5413 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5631 */;
+import Constants2 from "Constants" /* 5722 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PaymentSourceRecord from "PaymentSourceRecord" /* 4538 */;
+import PaymentSourceRecord from "PaymentSourceRecord" /* 4730 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -277,95 +277,106 @@ let result = size.fileFinishedImporting("modules/billing/actions/BillingSharedAc
 export const validatePaymentSourceBillingAddress = function validatePaymentSourceBillingAddress() {
   return obj(...arguments);
 };
-export const dispatchConfirmationError = function dispatchConfirmationError(error, flag, stringResult, arg3) {
+export const dispatchConfirmationError = function dispatchConfirmationError(error, captureException) {
   let billingError;
   let flag2;
-  let obj13;
+  let obj9;
   let payment_method;
-  let tmp10;
-  let tmp13;
+  let tmp11;
+  let tmp8;
   let type;
-  if (flag === undefined) {
-    flag = true;
-  }
-  if (stringResult === undefined) {
-    const intl = intl2.intl;
-    stringResult = intl.string(intl2.t.khEaRI);
-  }
-  obj = arg3;
-  if (arg3 === undefined) {
+  obj = captureException;
+  if (captureException == null) {
     obj = {};
+  }
+  let defaultErrorMessage = obj.defaultErrorMessage;
+  if (undefined === defaultErrorMessage) {
+    const intl = intl2.intl;
+    defaultErrorMessage = intl.string(intl2.t.khEaRI);
+  }
+  let prop = obj.captureExceptionOptions;
+  if (undefined === prop) {
+    prop = {};
+  }
+  let flag;
+  if (captureException != null) {
+    flag = captureException.captureException;
+  }
+  if (flag == null) {
+    flag = true;
   }
   let message = error;
   if (StripeErrorTypes.includes(error.type)) {
-    let combined = stringResult;
+    let combined = defaultErrorMessage;
     if (null != message.message) {
       const _HermesInternal = HermesInternal;
-      combined = "" + stringResult + ": " + message.message;
+      combined = "" + defaultErrorMessage + ": " + message.message;
     }
-    const obj4 = { failure_message: combined, error_type: null, failure_code: null, failure_sub_code: null, payment_source_type: type };
-    ({ type: obj3.error_type, code: obj3.failure_code, decline_code: obj3.failure_sub_code, payment_method } = message);
+    const obj2 = { failure_message: combined, error_type: null, failure_code: null, failure_sub_code: null, payment_source_type: type };
+    ({ type: obj4.error_type, code: obj4.failure_code, decline_code: obj4.failure_sub_code, payment_method } = message);
     type = undefined;
     if (payment_method != null) {
       type = payment_method.type;
     }
     if ("card_error" === message.type) {
-      const obj6 = { stacktrace: error.stack };
+      const obj5 = { stacktrace: error.stack };
       const track = AnalyticsUtilsDefault.track;
       const PAYMENT_SOURCE_CREATION_FAILED = metroRequire.PAYMENT_SOURCE_CREATION_FAILED;
       AnalyticsUtilsDefault;
-      const merged = Object.assign(obj4);
+      const merged = Object.assign(obj2);
       const _Error = Error;
       const self3 = this;
       const self4 = this;
       error = new Error();
-      track(PAYMENT_SOURCE_CREATION_FAILED, obj6);
+      track(PAYMENT_SOURCE_CREATION_FAILED, obj5);
       flag = false;
     }
     const self5 = this;
     const self6 = this;
     billingError = new V6OrEarlierAPIError.BillingError(combined);
     flag2 = flag;
-    tmp10 = obj4;
-    tmp13 = require;
+    tmp8 = obj2;
+    tmp11 = require;
   } else {
-    let tmp6 = message;
-    const BillingError = V6OrEarlierAPIError.BillingError;
-    if (typeof message === "string") {
-      tmp6 = stringResult;
+    let billingError1 = message;
+    if (!(message instanceof V6OrEarlierAPIError.BillingError)) {
+      let tmp6 = message;
+      const BillingError = tmp3(5631).BillingError;
+      if (typeof message === "string") {
+        tmp6 = defaultErrorMessage;
+      }
+      const self = this;
+      const self2 = this;
+      billingError1 = new BillingError(tmp6);
     }
     const obj7 = { failure_message: null, status_code: null };
-    const self = this;
-    const self2 = this;
-    const billingError1 = new BillingError(tmp6);
-    ({ message: obj2.failure_message, code: obj2.status_code } = billingError1);
-    tmp10 = obj7;
-    billingError = billingError1;
+    ({ message: obj3.failure_message, code: obj3.status_code } = billingError1);
     flag2 = flag;
-    tmp13 = tmp4;
+    tmp8 = obj7;
+    billingError = billingError1;
+    tmp11 = tmp3;
     if (429 === billingError1.code) {
       flag2 = false;
-      tmp10 = obj7;
+      tmp8 = obj7;
       billingError = billingError1;
-      tmp13 = tmp4;
+      tmp11 = tmp3;
     }
   }
-  const obj5 = DispatcherDefault;
-  obj5.dispatch({ type: "BILLING_PAYMENT_SOURCE_CREATE_FAIL", error: billingError });
+  const obj6 = DispatcherDefault;
+  obj6.dispatch({ type: "BILLING_PAYMENT_SOURCE_CREATE_FAIL", error: billingError });
   const _Error2 = Error;
   if (typeof message !== "string") {
     message = billingError.message;
   }
   const _Error21 = new _Error2(message);
   if (flag2) {
-    const obj12 = { extra: obj13 };
-    const captureBillingException = tmp13(4549).captureBillingException;
-    tmp13(4549);
-    const merged1 = Object.assign(obj);
-    obj13 = {};
-    const merged2 = Object.assign(tmp10);
-    const merged3 = Object.assign(obj.extra);
-    const result = captureBillingException(_Error21, obj12);
+    const obj8 = { extra: obj9 };
+    const merged1 = Object.assign(prop);
+    obj9 = {};
+    const merged2 = Object.assign(tmp8);
+    const merged3 = Object.assign(prop.extra);
+    const tmp11Result = tmp11(4741);
+    const result = tmp11Result.captureBillingException(_Error21, obj8);
   }
   return _Error21;
 };

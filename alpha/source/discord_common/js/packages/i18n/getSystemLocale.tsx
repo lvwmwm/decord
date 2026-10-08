@@ -1,10 +1,10 @@
-// Module ID: 1348
-// Function ID: 1349
+// Module ID: 1360
+// Function ID: 1361
 // Name: react-native
 // Dependencies: [1127, 2]
 // Exports: getSystemLocale
 
-// Module 1348 (react-native)
+// Module 1360 (react-native)
 import react_native from "react-native" /* 1127 */;
 import size from "module_2" /* 2 */;
 

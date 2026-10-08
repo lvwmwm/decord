@@ -1,20 +1,20 @@
-// Module ID: 7655
-// Function ID: 7656
+// Module ID: 7976
+// Function ID: 7977
 // Name: UserJoinSystemMessage
-// Dependencies: [2051, 2074, 1085, 7630, 7656, 7668, 7669, 7672, 1126, 7632, 7634, 2]
+// Dependencies: [2063, 2086, 1085, 7951, 7977, 7989, 7990, 7993, 1126, 7953, 7955, 2]
 // Exports: createUserJoinSystemMessage
 
-// Module 7655 (UserJoinSystemMessage)
+// Module 7976 (UserJoinSystemMessage)
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7630 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7632 */;
-import SystemMessageUtilsDefault from "SystemMessageUtils" /* 7656 */;
-import useIsStickerReplyEnabled from "useIsStickerReplyEnabled" /* 7668 */;
-import transformSticker2 from "transformSticker" /* 7669 */;
-import WelcomeCTAUtils from "WelcomeCTAUtils" /* 7672 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7951 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7953 */;
+import SystemMessageUtilsDefault from "SystemMessageUtils" /* 7977 */;
+import useIsStickerReplyEnabled from "useIsStickerReplyEnabled" /* 7989 */;
+import transformSticker2 from "transformSticker" /* 7990 */;
+import WelcomeCTAUtils from "WelcomeCTAUtils" /* 7993 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import size from "module_2" /* 2 */;
 
 const SystemChannelFlags = Constants.SystemChannelFlags;
@@ -54,6 +54,6 @@ export const createUserJoinSystemMessage = function createUserJoinSystemMessage(
   formatToParts = intl.formatToParts;
   obj4 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle }) };
   intl2 = tmp(1126).intl;
-  const merged = Object.assign(tmp4(7634)(message));
+  const merged = Object.assign(tmp4(7955)(message));
   return obj2;
 };

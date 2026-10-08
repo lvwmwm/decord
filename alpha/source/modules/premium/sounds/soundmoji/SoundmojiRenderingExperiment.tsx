@@ -1,12 +1,12 @@
-// Module ID: 5809
-// Function ID: 5810
+// Module ID: 11620
+// Function ID: 11621
 // Name: SoundmojiRenderingExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1452, 558, 576, 2]
 // Exports: getSoundmojiRenderingExperiment
 
-// Module 5809 (SoundmojiRenderingExperiment)
+// Module 11620 (SoundmojiRenderingExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let obj = { name: "2026-03-soundmoji-rendering", kind: "user", defaultConfig: { 
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
 let closure_2 = ApexExperiment.createApexExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundmojiRenderingExperiment(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -29,7 +29,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useSoundmojiRenderingExperiment(location) {
   const obj = { location: location.location };
   return closure_2.useConfig(obj).enabled;
 });

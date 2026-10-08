@@ -1,22 +1,22 @@
-// Module ID: 17723
-// Function ID: 17724
+// Module ID: 18010
+// Function ID: 18011
 // Name: GuildSettingsAutomodRuleStore
-// Dependencies: [5, 1085, 1126, 1254, 12, 1375, 1259, 17724, 17729, 17725, 7609, 17722, 11492, 5319, 4498, 2]
+// Dependencies: [5, 1085, 1126, 1266, 12, 1387, 1271, 18011, 18016, 18012, 7854, 18009, 11478, 5631, 4690, 2]
 // Exports: useAutomodEditingRuleActions, useAutomodEditingRuleState
 
-// Module 17723 (GuildSettingsAutomodRuleStore)
+// Module 18010 (GuildSettingsAutomodRuleStore)
 import Constants from "Constants" /* 1085 */;
-import react_native from "react-native" /* 1259 */;
-import _slicedToArray from "_slicedToArray" /* 4498 */;
+import react_native from "react-native" /* 1271 */;
+import _slicedToArray from "_slicedToArray" /* 4690 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_1254 from "module_1254" /* 1254 */;
+import module_1266 from "module_1266" /* 1266 */;
 import size from "module_2" /* 2 */;
 
 let c10, c9, closure_7;
 
 const AbortCodes = Constants.AbortCodes;
 let closure_5 = Object.freeze({ editingRule: null, hasChanges: false, isLoading: false, errorMessage: null });
-let closure_6 = module_1254.createWithEqualityFn((arg0, arg1) => {
+let closure_6 = module_1266.createWithEqualityFn((arg0, arg1) => {
   let closure_0 = arg0;
   let closure_1 = arg1;
   let obj = {
@@ -69,7 +69,7 @@ let closure_6 = module_1254.createWithEqualityFn((arg0, arg1) => {
         return closure_1_0(obj);
       });
     },
-    saveRule: function() {
+    saveRule() {
       return closure_2(...arguments);
     },
     saveEditingRule(HeaderActionButton) {

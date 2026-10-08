@@ -1,30 +1,31 @@
-// Module ID: 15987
-// Function ID: 15988
+// Module ID: 16247
+// Function ID: 16248
 // Name: messages/Messages
-// Dependencies: [19, 4885, 5443, 21, 558, 576, 6664, 6688, 4618, 14917, 15988, 15992, 16011, 16013, 16014, 16015, 13282, 16016, 1369, 4743, 4742, 6480, 6997, 9, 14916, 1126, 15993, 16017, 16019, 16064, 16065, 11520, 8503, 587, 16066, 2]
+// Dependencies: [19, 5079, 5753, 21, 558, 576, 6841, 6865, 4810, 15179, 16248, 16252, 16271, 1381, 16273, 16274, 16275, 13583, 16276, 4937, 4936, 6658, 7185, 9, 15178, 1126, 16253, 16277, 16279, 16324, 16325, 11518, 8987, 587, 16326, 2]
 
-// Module 15987 (messages/Messages)
+// Module 16247 (messages/Messages)
 import TTITrackerDefault from "TTITracker" /* 9 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4742 */;
-import RootNavigationRef from "RootNavigationRef" /* 4743 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6480 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 6997 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4936 */;
+import RootNavigationRef from "RootNavigationRef" /* 4937 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6658 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7185 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5443 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5753 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let recordRenderResult, style, trackAppUIViewedResult;
+let recordRenderResult, trackAppUIViewedResult;
 
 let metroImportDefault;
 let metroRequire;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const __initData = { code: "function MessagesTsx1(event){const{scrollPosition,handleGuildsNavigationScroll}=this.__closure;scrollPosition.set(event.contentOffset.y);handleGuildsNavigationScroll(event.contentOffset.y,event.contentSize.height,event.layoutMeasurement.height);}" };
 const __initData2 = { code: "function MessagesTsx2(event){const{scrollPosition,handleGuildsNavigationScroll}=this.__closure;scrollPosition.set(event.contentOffset.y);handleGuildsNavigationScroll(event.contentOffset.y,event.contentSize.height,event.layoutMeasurement.height);}" };
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function Messages(arg0) {
+  let AndroidMessagesListImplExperiment;
   let dataKey;
   let externalScrollEventHandler;
   let first;
@@ -38,12 +39,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   let recycleItems;
   let sections;
   let sharedValue;
-  let tmp16;
-  let tmp20;
+  let tmp17;
   let tmp21;
-  let tmp23;
-  let tmp25;
-  let tmp29;
+  let tmp22;
+  let tmp24;
+  let tmp26;
+  let tmp30;
   let tmp2 = sections;
   let obj = sharedValue(sections[5]);
   const cResult = obj.c(40);
@@ -65,27 +66,32 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   let obj6 = externalScrollEventHandler;
   const ref = externalScrollEventHandler.useRef(null);
   const ref1 = externalScrollEventHandler.useRef(null);
+  const obj7 = sharedValue(sections[13]);
+  if (obj7.isAndroid()) {
+    AndroidMessagesListImplExperiment = tmp(tmp14).AndroidMessagesListImplExperiment;
+  } else {
+    AndroidMessagesListImplExperiment = tmp4(tmp14);
+  }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj7 = { location: "Messages Tab" };
-    cResult[0] = obj7;
-    first = obj7;
+    const obj8 = { location: "Messages Tab" };
+    cResult[0] = obj8;
+    first = obj8;
   } else {
     first = cResult[0];
   }
-  const tmp4Result = dataKey(tmp2[13]);
-  const config = tmp4Result.useConfig(first);
+  const config = AndroidMessagesListImplExperiment.useConfig(first);
   ({ list, recycleItems } = config);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj8 = { listRef: ref, listRefHappeningNow: ref1 };
-    cResult[1] = obj8;
-    tmp16 = obj8;
+    const obj9 = { listRef: ref, listRefHappeningNow: ref1 };
+    cResult[1] = obj9;
+    tmp17 = obj9;
   } else {
-    tmp16 = cResult[1];
+    tmp17 = cResult[1];
   }
-  dataKey(tmp2[14])(tmp16);
-  dataKey(tmp2[15])();
-  const tmpResult = sharedValue(tmp2[16]);
-  const commonTriggerPoint = tmpResult.useCommonTriggerPoint(tmp(tmp2[17]).DmGdmListRenderTriggerPoint);
+  dataKey(tmp2[15])(tmp17);
+  dataKey(tmp2[16])();
+  const tmpResult = sharedValue(tmp2[17]);
+  const commonTriggerPoint = tmpResult.useCommonTriggerPoint(tmp(tmp2[18]).DmGdmListRenderTriggerPoint);
   if (cResult[2] !== dataKey) {
     const fn = function z() {
       if (null != dataKey) {
@@ -118,13 +124,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     cResult[2] = dataKey;
     cResult[3] = fn;
     cResult[4] = items;
-    tmp21 = items;
-    tmp20 = fn;
+    tmp22 = items;
+    tmp21 = fn;
   } else {
-    tmp20 = cResult[3];
-    tmp21 = cResult[4];
+    tmp21 = cResult[3];
+    tmp22 = cResult[4];
   }
-  const effect = obj6.useEffect(tmp20, tmp21);
+  const effect = obj6.useEffect(tmp21, tmp22);
   if (cResult[5] !== sections) {
     class D {
       constructor() {
@@ -139,7 +145,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     }
     cResult[5] = sections;
     cResult[6] = D;
-    tmp23 = D;
+    tmp24 = D;
   } else {
     class D {
       constructor() {
@@ -153,7 +159,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       }
     }
   }
-  const layoutEffect = obj6.useLayoutEffect(tmp23);
+  const layoutEffect = obj6.useLayoutEffect(tmp24);
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     class D {
       constructor() {
@@ -166,8 +172,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
         return;
       }
     }
-    cResult[7] = tmp26;
-    tmp25 = tmp26;
+    cResult[7] = tmp27;
+    tmp26 = tmp27;
   } else {
     class D {
       constructor() {
@@ -182,18 +188,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     }
   }
   const tmpResult3 = sharedValue(tmp2[24]);
-  externalScrollEventHandler = tmpResult3.useExternalScrollEventHandler(tmp25);
+  externalScrollEventHandler = tmpResult3.useExternalScrollEventHandler(tmp26);
+  const fn2 = function j(contentOffset) {
+    const result = sharedValue.set(contentOffset.contentOffset.y);
+    externalScrollEventHandler(contentOffset.contentOffset.y, contentOffset.contentSize.height, contentOffset.layoutMeasurement.height);
+  };
+  fn2.__closure = { scrollPosition: sharedValue, handleGuildsNavigationScroll: externalScrollEventHandler };
+  fn2.__workletHash = 5461403437592;
+  fn2.__initData = __initData;
   const tmpResult4 = sharedValue(tmp2[8]);
-  class V {
-    constructor(contentOffset) {
-      const result = sharedValue.set(contentOffset.contentOffset.y);
-      externalScrollEventHandler(contentOffset.contentOffset.y, contentOffset.contentSize.height, contentOffset.layoutMeasurement.height);
-    }
-  }
-  V.__closure = { scrollPosition: sharedValue, handleGuildsNavigationScroll: externalScrollEventHandler };
-  V.__workletHash = 5461403437592;
-  V.__initData = __initData;
-  const animatedScrollHandler = tmpResult4.useAnimatedScrollHandler(V);
+  const animatedScrollHandler = tmpResult4.useAnimatedScrollHandler(fn2);
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     class D {
       constructor() {
@@ -208,7 +212,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     }
     const stringResult = obj13.string(sharedValue(tmp2[25]).t.OIgYlQ);
     cResult[8] = stringResult;
-    tmp29 = stringResult;
+    tmp30 = stringResult;
   } else {
     class D {
       constructor() {
@@ -235,7 +239,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       }
     }
   }
-  const obj9 = { accessibilityLabel: tmp29, data: tmp11, handleScrollAnimated: animatedScrollHandler, insetEnd: youBarTotalHeight, listItemHeight, listItemSizes, listItemSuggestedFriendHeight, listLeft, listRefHappeningNow: ref1, listTop, recycleItems, scrollIndicatorInsetBottom: youBarTotalHeight1, scrollPosition: sharedValue };
+  const obj10 = { accessibilityLabel: tmp30, data: tmp11, handleScrollAnimated: animatedScrollHandler, insetEnd: youBarTotalHeight, listItemHeight, listItemSizes, listItemSuggestedFriendHeight, listLeft, listRefHappeningNow: ref1, listTop, recycleItems, scrollIndicatorInsetBottom: youBarTotalHeight1, scrollPosition: sharedValue };
   cResult[9] = tmp11;
   cResult[10] = animatedScrollHandler;
   cResult[11] = listItemHeight;
@@ -247,8 +251,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[17] = youBarTotalHeight1;
   cResult[18] = sharedValue;
   cResult[19] = youBarTotalHeight;
-  cResult[20] = obj9;
-}) : ((style) => {
+  cResult[20] = obj10;
+}) : (function Messages(style) {
+  let AndroidMessagesListImplExperiment;
   let CutoutBackgroundProvider;
   let animatedScrollHandler;
   let headerSize;
@@ -260,12 +265,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   let listItemSuggestedFriendHeight;
   let listLeft;
   let listTop;
-  let obj11;
-  let obj12;
+  let obj10;
+  let obj9;
   let recycleItems;
-  let tmp21Result;
-  let tmp22;
-  let tmp23;
+  let tmp22Result;
+  let tmp24;
+  let tmpResult;
   let sharedValue;
   let dataKey;
   let sections;
@@ -275,7 +280,6 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   const tmp3 = dataKey(sections[6]);
   const analyticsLocations = tmp3(dataKey(sections[7]).MESSAGES).analyticsLocations;
   let obj = sharedValue(sections[8]);
-  const tmp4 = sharedValue;
   sharedValue = obj.useSharedValue(0);
   const obj2 = sharedValue(sections[9]);
   const youBarTotalHeight = obj2.useYouBarTotalHeight();
@@ -291,15 +295,20 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   const showFullscreenEmptyState = tmp10.showFullscreenEmptyState;
   const ref = externalScrollEventHandler.useRef(null);
   const ref1 = externalScrollEventHandler.useRef(null);
-  const obj5 = dataKey(sections[13]);
-  const config = obj5.useConfig({ location: "Messages Tab" });
+  let obj6 = sharedValue(sections[13]);
+  if (obj6.isAndroid()) {
+    AndroidMessagesListImplExperiment = tmp4(tmp13).AndroidMessagesListImplExperiment;
+  } else {
+    AndroidMessagesListImplExperiment = tmp(tmp13);
+  }
+  const config = AndroidMessagesListImplExperiment.useConfig({ location: "Messages Tab" });
   ({ list, recycleItems } = config);
-  dataKey(sections[14])({ listRef: ref, listRefHappeningNow: ref1 });
-  dataKey(sections[15])();
-  let obj6 = sharedValue(sections[16]);
-  const commonTriggerPoint = obj6.useCommonTriggerPoint(sharedValue(sections[17]).DmGdmListRenderTriggerPoint);
+  dataKey(tmp2[15])({ listRef: ref, listRefHappeningNow: ref1 });
+  dataKey(tmp2[16])();
+  const tmp4Result = sharedValue(tmp2[17]);
+  const commonTriggerPoint = tmp4Result.useCommonTriggerPoint(tmp4(tmp2[18]).DmGdmListRenderTriggerPoint);
   const items = [dataKey];
-  const effect = externalScrollEventHandler.useEffect(() => {
+  const effect = obj5.useEffect(() => {
     if (null != dataKey) {
       const obj6 = PlatformUtils;
       if (!obj6.isAndroid()) {
@@ -326,7 +335,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       }
     }
   }, items);
-  const layoutEffect = externalScrollEventHandler.useLayoutEffect(() => {
+  const layoutEffect = obj5.useLayoutEffect(() => {
     const obj = TTIAnalyticsUtils;
     obj.trackAppUIViewed();
     const recordRender = TTITrackerDefault.recordRender;
@@ -334,8 +343,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     const reduced = sections.reduce((acc, item) => acc + item, 0);
     recordRender(reduced, GatewayConnectionStore.isConnected());
   });
-  const obj7 = sharedValue(sections[24]);
-  externalScrollEventHandler = obj7.useExternalScrollEventHandler({ id: "messages" });
+  const tmp4Result3 = sharedValue(tmp2[24]);
+  externalScrollEventHandler = tmp4Result3.useExternalScrollEventHandler({ id: "messages" });
   const fn = function w(contentOffset) {
     const result = sharedValue.set(contentOffset.contentOffset.y);
     externalScrollEventHandler(contentOffset.contentOffset.y, contentOffset.contentSize.height, contentOffset.layoutMeasurement.height);
@@ -343,39 +352,39 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   fn.__closure = { scrollPosition: sharedValue, handleGuildsNavigationScroll: externalScrollEventHandler };
   fn.__workletHash = 17197843851355;
   fn.__initData = __initData2;
-  const obj9 = { accessibilityLabel: intl.string(sharedValue(sections[25]).t.OIgYlQ), data: tmp10, handleScrollAnimated: animatedScrollHandler, insetEnd: youBarTotalHeight, listItemHeight, listItemSizes, listItemSuggestedFriendHeight, listLeft, listRefHappeningNow: ref1, listTop, recycleItems, scrollIndicatorInsetBottom: youBarTotalHeight1, scrollPosition: sharedValue };
-  const obj8 = sharedValue(sections[8]);
-  animatedScrollHandler = obj8.useAnimatedScrollHandler(fn);
-  intl = sharedValue(sections[25]).intl;
-  const obj10 = { value: analyticsLocations, children: closure_6(tmp22, obj11) };
-  const AnalyticsLocationProvider = sharedValue(sections[6]).AnalyticsLocationProvider;
-  obj11 = { style, children: tmp23(CutoutBackgroundProvider, obj12) };
-  obj12 = { backgroundColor: dataKey(sections[33]).colors.PANEL_BG, children: items1 };
-  tmp22 = dataKey(sections[34]);
-  CutoutBackgroundProvider = sharedValue(sections[32]).CutoutBackgroundProvider;
-  items1 = [closure_6(dataKey(sections[26]), { height: headerSize, scrollPosition: sharedValue }), , ];
-  tmp23 = closure_7;
+  const obj7 = { accessibilityLabel: intl.string(sharedValue(tmp2[25]).t.OIgYlQ), data: tmp10, handleScrollAnimated: animatedScrollHandler, insetEnd: youBarTotalHeight, listItemHeight, listItemSizes, listItemSuggestedFriendHeight, listLeft, listRefHappeningNow: ref1, listTop, recycleItems, scrollIndicatorInsetBottom: youBarTotalHeight1, scrollPosition: sharedValue };
+  const tmp4Result4 = sharedValue(tmp2[8]);
+  animatedScrollHandler = tmp4Result4.useAnimatedScrollHandler(fn);
+  intl = tmp4(tmp2[25]).intl;
+  const obj8 = { value: analyticsLocations, children: closure_6(tmpResult, obj9) };
+  const AnalyticsLocationProvider = tmp4(tmp2[6]).AnalyticsLocationProvider;
+  obj9 = { style, children: tmp24(CutoutBackgroundProvider, obj10) };
+  obj10 = { backgroundColor: dataKey(tmp2[33]).colors.PANEL_BG, children: items1 };
+  tmpResult = dataKey(tmp2[34]);
+  CutoutBackgroundProvider = tmp4(tmp2[32]).CutoutBackgroundProvider;
+  items1 = [closure_6(tmp(tmp2[26]), { height: headerSize, scrollPosition: sharedValue }), , ];
+  tmp24 = closure_7;
   if (showFullscreenEmptyState) {
-    tmp21Result = tmp21(tmp(tmp2[27]), {});
+    tmp22Result = tmp22(tmp(tmp2[27]), {});
   } else {
-    let tmp24;
+    let tmp25;
     if ("legend" === list) {
-      tmp24 = tmp2[28];
+      tmp25 = tmp2[28];
     } else {
-      tmp24 = "flash" === list ? tmp2[29] : tmp2[30];
+      tmp25 = "flash" === list ? tmp2[29] : tmp2[30];
     }
-    const obj13 = { ref };
-    const tmpResult = dataKey(tmp24);
-    const merged = Object.assign(obj9);
-    tmp21Result = tmp21(tmpResult, obj13);
+    const obj11 = { ref };
+    const tmpResult2 = dataKey(tmp25);
+    const merged = Object.assign(obj7);
+    tmp22Result = tmp22(tmpResult2, obj11);
   }
-  items1[1] = tmp21Result;
-  let tmp21Result2 = null;
+  items1[1] = tmp22Result;
+  let tmp22Result2 = null;
   if (!doesLandOnHomeDrawer) {
-    tmp21Result2 = tmp21(tmp4(tmp2[31]).TTIFirstContentfulPaint, { label: "messages_tabs" });
+    tmp22Result2 = tmp22(tmp4(tmp2[31]).TTIFirstContentfulPaint, { label: "messages_tabs" });
   }
-  items1[2] = tmp21Result2;
-  return closure_6(AnalyticsLocationProvider, obj10);
+  items1[2] = tmp22Result2;
+  return closure_6(AnalyticsLocationProvider, obj8);
 }));
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/Messages.tsx");
 

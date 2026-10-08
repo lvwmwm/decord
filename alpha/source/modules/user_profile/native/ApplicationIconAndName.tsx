@@ -1,15 +1,15 @@
-// Module ID: 12309
-// Function ID: 12310
+// Module ID: 12407
+// Function ID: 12408
 // Name: ApplicationIconAndName
-// Dependencies: [21, 4896, 587, 558, 576, 1188, 4892, 2]
+// Dependencies: [21, 5090, 587, 558, 576, 1200, 5086, 2]
 
-// Module 12309 (ApplicationIconAndName)
+// Module 12407 (ApplicationIconAndName)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4892 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let closure_6 = createStyles.createStyles((width) => {
   size = { width, height: width, marginTop: -1, marginRight: 4, borderRadius: nativeDefault.radii.xs };
   return obj;
 });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationIconAndName(arg0) {
   let application;
   let iconSize;
   let items;
@@ -104,7 +104,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = iconSize;
   cResult[2] = str;
   tmp6 = str;
-}) : ((textVariant) => {
+}) : (function ApplicationIconAndName(textVariant) {
   let application;
   let iconSize;
   let name;

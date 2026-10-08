@@ -1,11 +1,11 @@
-// Module ID: 16667
-// Function ID: 16668
+// Module ID: 16929
+// Function ID: 16930
 // Name: useConjureConnectActions
-// Dependencies: [5, 32, 19, 12923, 558, 576, 12933, 8057, 1126, 3753, 2]
+// Dependencies: [5, 32, 19, 13072, 558, 576, 13083, 8466, 1126, 3827, 2]
 
-// Module 16667 (useConjureConnectActions)
-import ConjureConnectionStore from "ConjureConnectionStore" /* 12923 */;
-import conjureExternalConnections from "conjureExternalConnections" /* 12933 */;
+// Module 16929 (useConjureConnectActions)
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13072 */;
+import conjureExternalConnections from "conjureExternalConnections" /* 13083 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -17,7 +17,7 @@ let _require, c2, c3;
 
 let closure_6 = ConjureConnectionStore.requestExternalAuthorizeUrl;
 const set = new Set();
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureConnectActions(arg0, arg1) {
   let closure_0;
   let first;
   let tmp3;
@@ -148,7 +148,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[2] = arg0;
   cResult[3] = fn2;
   tmp5 = fn2;
-}) : ((arg0, arg1) => {
+}) : (function useConjureConnectActions(arg0, arg1) {
   let callback;
   let tmp2;
   let closure_0 = arg0;

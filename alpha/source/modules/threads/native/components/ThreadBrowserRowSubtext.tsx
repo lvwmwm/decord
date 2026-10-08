@@ -1,30 +1,30 @@
-// Module ID: 16917
-// Function ID: 16918
+// Module ID: 17198
+// Function ID: 17199
 // Name: ThreadBrowserRowSubtext
-// Dependencies: [19, 17, 4885, 2112, 1377, 6819, 1085, 1096, 21, 4896, 587, 558, 576, 504, 7420, 5800, 5712, 1126, 4728, 4892, 6824, 5311, 11, 1188, 7542, 7631, 2]
+// Dependencies: [19, 17, 5079, 2124, 1389, 6992, 1085, 1096, 21, 5090, 587, 558, 576, 504, 7895, 5404, 6102, 1126, 4922, 5086, 6997, 5623, 11, 1200, 8114, 7952, 2]
 
-// Module 16917 (ThreadBrowserRowSubtext)
+// Module 17198 (ThreadBrowserRowSubtext)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import Constants2 from "Constants" /* 1096 */;
-import native from "native" /* 1188 */;
-import UserUtilsDefault from "UserUtils" /* 4728 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useMessageAuthorDefault from "useMessageAuthor" /* 5311 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5712 */;
-import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 5800 */;
-import renderMessageMarkupDefault from "renderMessageMarkup" /* 7542 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7631 */;
+import native from "native" /* 1200 */;
+import UserUtilsDefault from "UserUtils" /* 4922 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 5404 */;
+import useMessageAuthorDefault from "useMessageAuthor" /* 5623 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6102 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7952 */;
+import renderMessageMarkupDefault from "renderMessageMarkup" /* 8114 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import GuildMemberStore_mod from "GuildMemberStore" /* 2112 */;
-import UserStore_mod from "UserStore" /* 1377 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 6819 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import GuildMemberStore_mod from "GuildMemberStore" /* 2124 */;
+import UserStore_mod from "UserStore" /* 1389 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 6992 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ createStyles = createStyles.createStyles;
 size = { width: 4, height: 4, marginHorizontal: 4, borderRadius: 2, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, alignSelf: "center" };
 let closure_13 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadSubtext(thread) {
   let first;
   let id;
   let tmp15;
@@ -85,7 +85,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
   }
   const tmpResult = id(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  const tmpResult4 = id(7420);
+  const tmpResult4 = id(7895);
   const lastMessageTimestamp = tmpResult4.useLastMessageTimestamp(thread);
   if (null != stateFromStores) {
     if (!items.includes(stateFromStores.type)) {
@@ -107,7 +107,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
     }
   }
   if (cResult[4] !== lastMessageTimestamp) {
-    const tmpResult5 = id(7420);
+    const tmpResult5 = id(7895);
     const timestampString = tmpResult5.getTimestampString(lastMessageTimestamp);
     cResult[4] = lastMessageTimestamp;
     cResult[5] = timestampString;
@@ -116,7 +116,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
     tmp15 = cResult[5];
   }
   if (cResult[6] !== lastMessageTimestamp) {
-    const tmpResult6 = id(7420);
+    const tmpResult6 = id(7895);
     const timestampAccessibilityLabel = tmpResult6.getTimestampAccessibilityLabel(lastMessageTimestamp);
     cResult[6] = lastMessageTimestamp;
     cResult[7] = timestampAccessibilityLabel;
@@ -139,14 +139,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
   cResult[10] = tmp17;
   cResult[11] = tmp20;
   tmp19 = tmp20;
-}) : ((thread) => {
+}) : (function ThreadSubtext(thread) {
   thread = thread.thread;
   const id = thread.id;
   items = [ThreadMessageStore];
   const items1 = [id];
   const obj = id(504);
   const stateFromStores = obj.useStateFromStores(items, () => ThreadMessageStore.getMostRecentMessage(id), items1);
-  const obj2 = id(7420);
+  const obj2 = id(7895);
   const lastMessageTimestamp = obj2.useLastMessageTimestamp(thread);
   if (null != stateFromStores) {
     if (!items.includes(stateFromStores.type)) {
@@ -156,15 +156,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
       }
     }
   }
-  const tmpResult = id(7420);
+  const tmpResult = id(7895);
   const timestampString = tmpResult.getTimestampString(lastMessageTimestamp);
-  const tmpResult2 = id(7420);
+  const tmpResult2 = id(7895);
   const obj4 = { thread, timestamp: timestampString, accessibilityLabel: tmpResult2.getTimestampAccessibilityLabel(lastMessageTimestamp) };
   return closure_9(closure_14, obj4);
 });
 let memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
+let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function CreatedBy(thread) {
   let accessibilityLabel;
   let closure_6;
   let colorStrings;
@@ -377,7 +377,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((thread) =
   cResult[5] = thread.ownerId;
   cResult[6] = C;
   tmp11 = C;
-}) : ((thread) => {
+}) : (function CreatedBy(thread) {
   let Text;
   let closure_3;
   let intl;
@@ -475,7 +475,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((thread) =
   return closure_9(closure_16, obj4);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageContent(arg0) {
   let message;
   let nick;
   let roleStyle;
@@ -665,7 +665,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = thread.guild_id;
   cResult[4] = obj5;
   tmp6 = obj5;
-}) : ((arg0) => {
+}) : (function MessageContent(arg0) {
   let Text;
   let c2;
   let c3;
@@ -683,7 +683,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   c4 = undefined;
   let roleStyle;
   let tmp = closure_13();
-  let obj = message(6824);
+  let obj = message(6997);
   items = [message.author.id];
   const subscribeGuildMembers = obj.useSubscribeGuildMembers({ [thread.guild_id]: items }, "ThreadBrowserRowSubtext");
   const items1 = [UserStore];
@@ -703,14 +703,14 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ nick: c2, colorString: c3, colorStrings: c4 } = tmp4);
   const obj4 = SnowflakeUtilsDefault;
   const extractTimestampResult = obj4.extractTimestamp(message.id);
-  const obj5 = message(7420);
+  const obj5 = message(7895);
   const timestampString = obj5.getTimestampString(extractTimestampResult);
-  const obj6 = message(7420);
+  const obj6 = message(7895);
   const timestampAccessibilityLabel = obj6.getTimestampAccessibilityLabel(extractTimestampResult);
   roleStyle = useHasEnhancedRoleColorsDefault(thread.guild_id, stateFromStores.id);
   const obj7 = { user: stateFromStores, timestamp: timestampString, accessibilityLabel: timestampAccessibilityLabel, children: closure_9(Text, obj8) };
   obj8 = { lineClamp: 1, ellipsizeMode: "tail", lineBreakMode: "tail", style: tmp.subtextContent, variant: "text-sm/medium", color: "text-default", children: intl.format(message(1126).t.M79KAH, obj9) };
-  Text = message(4892).Text;
+  Text = message(5086).Text;
   intl = message(1126).intl;
   obj9 = {
     usernameHook(arg0, arg1) {
@@ -746,7 +746,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return closure_9(closure_16, obj7);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubstringRow(user) {
   let accessibilityLabel;
   let children;
   let timestamp;
@@ -834,7 +834,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     cResult[12] = tmp13;
     tmp11 = tmp13;
   }
-}) : ((arg0) => {
+}) : (function SubstringRow(arg0) {
   let accessibilityLabel;
   let children;
   let obj2;
@@ -862,7 +862,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   return tmp6;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Username(arg0) {
   let items1;
   let nickname;
   let roleColor;
@@ -946,14 +946,14 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp9 = shouldShowRoleDot;
   if (tmp9) {
     const obj5 = { color: roleColor, colors: roleColors, size: "small" };
-    tmp9 = React4(tmp(1188).RoleDot, obj5);
+    tmp9 = React4(tmp(1200).RoleDot, obj5);
   }
   cResult[5] = roleColor;
   cResult[6] = roleColors;
   cResult[7] = shouldShowRoleDot;
   cResult[8] = tmp9;
   tmp8 = tmp9;
-}) : ((usernameColor) => {
+}) : (function Username(usernameColor) {
   let nickname;
   let roleColor;
   let roleColors;
@@ -983,11 +983,11 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp7 = unpackModuleId;
   if (shouldShowRoleDot) {
     const obj2 = { color: roleColor, colors: roleColors, size: "small" };
-    shouldShowRoleDot = React4(tmp3(1188).RoleDot, obj2);
+    shouldShowRoleDot = React4(tmp3(1200).RoleDot, obj2);
   }
   const items1 = [shouldShowRoleDot, ];
   let tmp10;
-  const Text = tmp3(4892).Text;
+  const Text = tmp3(5086).Text;
   const tmp9 = React4;
   if (tmp5) {
     tmp10 = processColorStringsArray;

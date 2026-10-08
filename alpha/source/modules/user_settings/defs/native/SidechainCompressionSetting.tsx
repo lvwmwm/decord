@@ -1,24 +1,24 @@
-// Module ID: 15091
-// Function ID: 15092
+// Module ID: 15353
+// Function ID: 15354
 // Name: SidechainCompressionSetting
-// Dependencies: [1999, 7645, 4921, 558, 576, 504, 11142, 1126, 8079, 2]
+// Dependencies: [2011, 7966, 5115, 558, 576, 504, 11262, 1126, 5241, 2]
 
-// Module 15091 (SidechainCompressionSetting)
+// Module 15353 (SidechainCompressionSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import Constants from "Constants" /* 4921 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 8079 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import Constants from "Constants" /* 5115 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5241 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const Features = Constants.Features;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSidechainCompressionSettingValue() {
   let sidechainCompression;
   let tmp4;
   let tmp5;
@@ -38,7 +38,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useSidechainCompressionSettingValue() {
   let sidechainCompression;
   const items = [MediaEngineStore];
   const obj = get_initialized;

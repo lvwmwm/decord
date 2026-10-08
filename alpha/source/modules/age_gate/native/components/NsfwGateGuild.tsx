@@ -1,23 +1,23 @@
-// Module ID: 6725
-// Function ID: 6726
+// Module ID: 6901
+// Function ID: 6902
 // Name: NsfwGateGuild
-// Dependencies: [19, 17, 2112, 1377, 6726, 1085, 21, 4896, 587, 558, 576, 1126, 2115, 1252, 6727, 6470, 6729, 4892, 5601, 2]
+// Dependencies: [19, 17, 2124, 1389, 6902, 1085, 21, 5090, 587, 558, 576, 1126, 2127, 1264, 6903, 6648, 6905, 5086, 5375, 2]
 
-// Module 6725 (NsfwGateGuild)
+// Module 6901 (NsfwGateGuild)
 import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import BackgroundImageDefault from "BackgroundImage" /* 6470 */;
-import Constants2 from "Constants" /* 6726 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 6727 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6729 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
+import BackgroundImageDefault from "BackgroundImage" /* 6648 */;
+import Constants2 from "Constants" /* 6902 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 6903 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6905 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import UserStore from "UserStore" /* 1377 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ const NsfwGateSource = Constants2.NsfwGateSource;
 let obj = { container: obj2, header: { textAlign: "center", marginBottom: 8 }, description: { textAlign: "center", marginBottom: 16 }, image: { marginBottom: 16 } };
 obj2 = { flex: 1, alignItems: "center", justifyContent: "center", padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 let closure_13 = createStyles.createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwGateGuild(arg0) {
   let closure_1;
   let first;
   let guildId;
@@ -93,7 +93,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   importDefault = tmp13;
   if (cResult[4] !== guildId) {
-    class U {
+    class D {
       constructor() {
         tmp = closure_2;
         tmp2 = closure_1(closure_2[13]);
@@ -131,12 +131,12 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const items = [guildId, tmp13];
     cResult[4] = guildId;
-    cResult[5] = U;
+    cResult[5] = D;
     cResult[6] = items;
     tmp17 = items;
-    tmp16 = U;
+    tmp16 = D;
   } else {
-    class U {
+    class D {
       constructor() {
         tmp = closure_2;
         tmp2 = closure_1(closure_2[13]);
@@ -177,7 +177,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const effect = react.useEffect(tmp16, tmp17);
   const container = tmp4.container;
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    class U {
+    class D {
       constructor() {
         tmp = closure_2;
         tmp2 = closure_1(closure_2[13]);
@@ -217,7 +217,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[7] = tmp21;
     tmp19 = tmp21;
   } else {
-    class U {
+    class D {
       constructor() {
         tmp = closure_2;
         tmp2 = closure_1(closure_2[13]);
@@ -255,7 +255,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   if (cResult[8] !== tmp4.image) {
-    class U {
+    class D {
       constructor() {
         tmp = closure_2;
         tmp2 = closure_1(closure_2[13]);
@@ -296,7 +296,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[9] = closure_11(closure_5, obj4);
     const tmp25 = closure_11(closure_5, obj4);
   } else {
-    class U {
+    class D {
       constructor() {
         tmp = closure_2;
         tmp2 = closure_1(closure_2[13]);
@@ -334,7 +334,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   if (cResult[10] !== tmp4.header) {
-    class U {
+    class D {
       constructor() {
         tmp = closure_2;
         tmp2 = closure_1(closure_2[13]);
@@ -372,10 +372,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const obj5 = { style: tmp4.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: first };
     cResult[10] = tmp4.header;
-    cResult[11] = closure_11(guildId(4892).Text, obj5);
-    const tmp27 = closure_11(guildId(4892).Text, obj5);
+    cResult[11] = closure_11(guildId(5086).Heading, obj5);
+    const tmp27 = closure_11(guildId(5086).Heading, obj5);
   } else {
-    class U {
+    class D {
       constructor() {
         tmp = closure_2;
         tmp2 = closure_1(closure_2[13]);
@@ -413,7 +413,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   if (cResult[12] !== tmp4.description) {
-    class U {
+    class D {
       constructor() {
         tmp = closure_2;
         tmp2 = closure_1(closure_2[13]);
@@ -451,14 +451,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const obj6 = { style: tmp4.description, variant: "text-md/normal", color: "text-default", children: tmp7 };
     const obj7 = { style: tmp4.description, variant: "text-md/normal", color: "text-default", children: tmp9 };
-    const tmp30 = closure_11(guildId(4892).Text, obj6);
-    const tmp31 = closure_11(guildId(4892).Text, obj7);
+    const tmp30 = closure_11(guildId(5086).Text, obj6);
+    const tmp31 = closure_11(guildId(5086).Text, obj7);
     cResult[12] = tmp4.description;
     cResult[13] = tmp30;
     cResult[14] = tmp31;
     tmp29 = tmp31;
   } else {
-    class U {
+    class D {
       constructor() {
         tmp = closure_2;
         tmp2 = closure_1(closure_2[13]);
@@ -497,7 +497,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp29 = cResult[14];
   }
   if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-    class U {
+    class D {
       constructor() {
         tmp = closure_2;
         tmp2 = closure_1(closure_2[13]);
@@ -537,7 +537,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[15] = stringResult2;
     tmp32 = stringResult2;
   } else {
-    class U {
+    class D {
       constructor() {
         tmp = closure_2;
         tmp2 = closure_1(closure_2[13]);
@@ -575,7 +575,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   if (cResult[16] !== onClose) {
-    class U {
+    class D {
       constructor() {
         tmp = closure_2;
         tmp2 = closure_1(closure_2[13]);
@@ -613,10 +613,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const obj9 = { onPress: onClose, size: "md", text: tmp32 };
     cResult[16] = onClose;
-    cResult[17] = closure_11(guildId(5601).Button, obj9);
-    const tmp35 = closure_11(guildId(5601).Button, obj9);
+    cResult[17] = closure_11(guildId(5375).Button, obj9);
+    const tmp35 = closure_11(guildId(5375).Button, obj9);
   } else {
-    class U {
+    class D {
       constructor() {
         tmp = closure_2;
         tmp2 = closure_1(closure_2[13]);
@@ -654,7 +654,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   if (cResult[18] === tmp4.container) {
-    class U {
+    class D {
       constructor() {
         tmp = closure_2;
         tmp2 = closure_1(closure_2[13]);
@@ -701,7 +701,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[23] = tmp22;
   cResult[24] = closure_12(closure_4, obj10);
   closure_12(closure_4, obj10);
-}) : ((guildId) => {
+}) : (function NsfwGateGuild(guildId) {
   let intl4;
   let items1;
   let obj2;
@@ -717,7 +717,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const format = intl3.format;
   let obj = { helpURL: obj2.getArticleURL(constants2.NSFW_GUILD_GUIDELINES) };
   const Z12LNW = guildId(1126).t.Z12LNW;
-  obj2 = currentUser(2115);
+  obj2 = currentUser(2127);
   const formatResult = format(Z12LNW, obj);
   currentUser = UserStore.getCurrentUser();
   const items = [guildId, currentUser];
@@ -752,17 +752,17 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     track(GUILD_NSFW_GATE_VIEWED, obj);
   }, items);
   const obj3 = { style: tmp.container, children: items1 };
-  items1 = [closure_11(currentUser(6470), {}), , , , , ];
-  const obj4 = { source: currentUser(6729), style: tmp.image };
+  items1 = [closure_11(currentUser(6648), {}), , , , , ];
+  const obj4 = { source: currentUser(6905), style: tmp.image };
   items1[1] = closure_11(closure_5, obj4);
   const obj5 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stringResult };
-  items1[2] = closure_11(guildId(4892).Text, obj5);
+  items1[2] = closure_11(guildId(5086).Heading, obj5);
   const obj6 = { style: tmp.description, variant: "text-md/normal", color: "text-default", children: stringResult1 };
-  items1[3] = closure_11(guildId(4892).Text, obj6);
+  items1[3] = closure_11(guildId(5086).Text, obj6);
   const obj7 = { style: tmp.description, variant: "text-md/normal", color: "text-default", children: formatResult };
-  items1[4] = closure_11(guildId(4892).Text, obj7);
+  items1[4] = closure_11(guildId(5086).Text, obj7);
   const obj8 = { onPress: onClose, size: "md", text: intl4.string(guildId(1126).t.gRqiWV) };
-  const Button = guildId(5601).Button;
+  const Button = guildId(5375).Button;
   intl4 = guildId(1126).intl;
   items1[5] = closure_11(Button, obj8);
   return closure_12(closure_4, obj3);

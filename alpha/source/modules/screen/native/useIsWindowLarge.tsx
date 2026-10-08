@@ -1,11 +1,11 @@
-// Module ID: 6440
-// Function ID: 6441
+// Module ID: 6618
+// Function ID: 6619
 // Name: useIsWindowLarge
-// Dependencies: [4746, 558, 2]
+// Dependencies: [4940, 558, 2]
 // Exports: default, getIsWindowLarge
 
-// Module 6440 (useIsWindowLarge)
-import useWindowSizeClassifier from "useWindowSizeClassifier" /* 4746 */;
+// Module 6618 (useIsWindowLarge)
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 4940 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const result1 = size.fileFinishedImporting("modules/screen/native/useIsWindowLarge.tsx");
 
-export default () => {
+export default function useIsWindowLarge() {
   const tmp = useWindowSizeClassifierDefault();
   return tmp >= useWindowSizeClassifier.WindowSizeClassifier.LARGE;
 };

@@ -1,17 +1,17 @@
-// Module ID: 17315
-// Function ID: 17316
+// Module ID: 17596
+// Function ID: 17597
 // Name: ActivityItemMissingCard
-// Dependencies: [5, 19, 17, 21, 4896, 587, 558, 576, 11915, 6664, 9081, 9184, 17316, 17317, 5916, 5983, 2]
+// Dependencies: [5, 19, 17, 21, 5090, 587, 558, 576, 11988, 6841, 10664, 10752, 17597, 17598, 6189, 6166, 2]
 
-// Module 17315 (ActivityItemMissingCard)
+// Module 17596 (ActivityItemMissingCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import NativeViewDefault from "NativeView" /* 5983 */;
+import NativeViewDefault from "NativeView" /* 6166 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ createStyles = createStyles.createStyles;
 size1 = { width: "100%", height: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_8 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityItemEmptyCard(activity) {
   let channelId;
   let height;
   let items1;
@@ -186,16 +186,16 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
       }
     }
   });
-  const fn = function() {
+  function t2() {
     return closure_0(...arguments);
-  };
+  }
   cResult[2] = activity.launchId;
   cResult[3] = analyticsLocations;
   cResult[4] = application;
   cResult[5] = channelId;
-  cResult[6] = fn;
-  tmp9 = fn;
-}) : ((activity) => {
+  cResult[6] = t2;
+  tmp9 = t2;
+}) : (function ActivityItemEmptyCard(activity) {
   let height;
   let items1;
   let width;
@@ -271,7 +271,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
   return closure_7(PressableOpacity, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityItemMissingCard(arg0) {
   let activity;
   let application;
   let tmp4;
@@ -302,7 +302,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   const obj3 = { style: tmp3.loadingActivity, children: metroRequire(ActivityIndicator, { size: "large" }) };
   const tmp8 = NativeViewDefault;
   tmp7 = metroRequire(tmp8, obj3);
-}) : ((arg0) => {
+}) : (function ActivityItemMissingCard(arg0) {
   let activity;
   let application;
   ({ activity, application } = arg0);

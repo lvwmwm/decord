@@ -1,22 +1,22 @@
-// Module ID: 14988
-// Function ID: 14989
+// Module ID: 15250
+// Function ID: 15251
 // Name: SettingsQuestPreviewScreen
-// Dependencies: [32, 19, 17, 7200, 1193, 21, 587, 4896, 558, 576, 1491, 504, 14989, 14991, 1126, 9317, 10007, 584, 14992, 9318, 10987, 14998, 2]
+// Dependencies: [32, 19, 17, 7379, 1205, 21, 587, 5090, 558, 576, 1503, 504, 15251, 15253, 1126, 8505, 9537, 584, 15254, 8752, 11211, 15260, 2]
 
-// Module 14988 (SettingsQuestPreviewScreen)
+// Module 15250 (SettingsQuestPreviewScreen)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import QuestActionCreators from "QuestActionCreators" /* 10007 */;
-import QuestCardPreview from "QuestCardPreview" /* 14989 */;
-import QuestEmbedPreview from "QuestEmbedPreview" /* 14991 */;
+import QuestActionCreators from "QuestActionCreators" /* 9537 */;
+import QuestCardPreview from "QuestCardPreview" /* 15251 */;
+import QuestEmbedPreview from "QuestEmbedPreview" /* 15253 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestStore from "QuestStore" /* 7200 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
+import QuestStore from "QuestStore" /* 7379 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,21 +30,20 @@ let metroRequire;
 let obj2;
 let obj3;
 let obj4;
-let obj5;
 let unpackModuleId;
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, ActivityIndicator: metroRequire, ScrollView: metroImportDefault } = react_native);
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
 const PX_16 = nativeDefault.space.PX_16;
+const PX_192 = nativeDefault.space.PX_192;
 let createStyles = createStyles_mod;
-let obj = { container: obj2, controlBarContainer: obj3, segmentedControlContainer: { paddingHorizontal: PX_16 }, pagesContainer: { flex: 1, width: "100%" }, activityIndicator: obj4, allSectionsContainer: obj5 };
+let obj = { container: obj2, controlBarContainer: obj3, segmentedControlContainer: { paddingHorizontal: PX_16 }, pagesContainer: { flex: 1, width: "100%" }, activityIndicator: obj4, allSectionsContainer: { marginBottom: PX_192 } };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 createStyles = createStyles.createStyles;
 obj3 = { paddingHorizontal: PX_16, paddingTop: PX_16 / 2, paddingBottom: PX_16 };
 obj4 = { marginTop: nativeDefault.space.PX_32 };
-obj5 = { marginBottom: nativeDefault.space.PX_80 };
 let closure_13 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsQuestPreviewScreen() {
   let closure_2;
   let first1;
   let params;
@@ -59,7 +58,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp2 = dependencyMap;
   let obj = params(576);
   const cResult = obj.c(88);
-  const obj2 = params(1491);
+  const obj2 = params(1503);
   params = obj2.useRoute().params;
   closure_13();
   let questId;
@@ -264,7 +263,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[10] = undefined;
   cResult[11] = questId;
   cResult[12] = T;
-}) : (() => {
+}) : (function SettingsQuestPreviewScreen() {
   let callback2;
   let closure_10;
   let closure_3;

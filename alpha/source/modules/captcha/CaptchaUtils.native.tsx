@@ -1,14 +1,14 @@
-// Module ID: 17454
-// Function ID: 17455
+// Module ID: 17736
+// Function ID: 17737
 // Name: captcha/CaptchaUtils
-// Dependencies: [4567, 5422, 558, 576, 504, 4860, 17455, 1987, 5414, 2]
+// Dependencies: [4759, 5731, 558, 576, 504, 5054, 17737, 1999, 5723, 2]
 
-// Module 17454 (captcha/CaptchaUtils)
+// Module 17736 (captcha/CaptchaUtils)
 import react from "react" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5414 */;
-import CaptchaConstants from "CaptchaConstants" /* 5422 */;
-import ActionSheetStore from "ActionSheetStore" /* 4567 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5723 */;
+import CaptchaConstants from "CaptchaConstants" /* 5731 */;
+import ActionSheetStore from "ActionSheetStore" /* 4759 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ let obj = {
       }
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = require("asyncRequire")(17455, dependencyMap.paths);
+    const tmp2 = require("asyncRequire")(17737, dependencyMap.paths);
     const merged = Object.assign(obj);
     const merged1 = Object.assign(options);
     openLazy(tmp2, CAPTCHA_MODAL_KEY, obj2);
@@ -106,7 +106,7 @@ let obj = {
     });
     return promise;
   },
-  useIsCaptchaModalOpen: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  useIsCaptchaModalOpen: ReactCompilerGating.isReactCompilerEnabled() ? (function useIsCaptchaModalOpen() {
     let key;
     let tmp4;
     let tmp5;
@@ -114,7 +114,7 @@ let obj = {
     const cResult = obj.c(2);
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const items = [ActionSheetStore];
-      const fn = function n() {
+      const fn = function s() {
         return key.getKey() === CAPTCHA_MODAL_KEY;
       };
       cResult[0] = items;
@@ -126,7 +126,7 @@ let obj = {
     }
     const tmpResult = get_initialized;
     return tmpResult.useStateFromStores(tmp4, tmp5);
-  }) : (() => {
+  }) : (function useIsCaptchaModalOpen() {
     let key;
     const items = [ActionSheetStore];
     const obj = get_initialized;

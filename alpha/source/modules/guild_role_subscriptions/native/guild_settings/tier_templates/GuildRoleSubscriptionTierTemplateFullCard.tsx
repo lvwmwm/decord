@@ -1,20 +1,20 @@
-// Module ID: 18025
-// Function ID: 18026
+// Module ID: 18312
+// Function ID: 18313
 // Name: GuildRoleSubscriptionTierTemplateFullCard
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1188, 16095, 4892, 15070, 6476, 1618, 18026, 1126, 18027, 18028, 9966, 6119, 6652, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1200, 16355, 5086, 15332, 6654, 1630, 18313, 1126, 18314, 18315, 9493, 6298, 6829, 2]
 
-// Module 18025 (GuildRoleSubscriptionTierTemplateFullCard)
+// Module 18312 (GuildRoleSubscriptionTierTemplateFullCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 15070 */;
-import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 16095 */;
-import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 18028 */;
+import native from "native" /* 1200 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 15332 */;
+import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 16355 */;
+import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 18315 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 const View = react_native.View;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -41,7 +41,7 @@ obj4 = { color: nativeDefault.colors.TEXT_DEFAULT, paddingTop: 16, paddingBottom
 obj5 = { borderBottomWidth: 1, marginLeft: -16, marginRight: -16, borderColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_HOVER };
 let closure_7 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function SectionSeparator() {
   let first;
   let items;
   let tmp12;
@@ -84,7 +84,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp15 = cResult[5];
   }
   return tmp15;
-}) : (() => {
+}) : (function SectionSeparator() {
   let items;
   const obj = { children: items };
   items = [, , ];
@@ -96,7 +96,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return metroRequire(hasOwnProperty, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function BenefitRow(arg0) {
   let description;
   let first;
   let items;
@@ -159,7 +159,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tmp4.benefitDescription;
   cResult[3] = tmp11;
   tmp10 = tmp11;
-}) : ((description) => {
+}) : (function BenefitRow(description) {
   let items;
   let items1;
   description = description.description;
@@ -182,7 +182,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroRequire(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function BenefitSection(arg0) {
   let children;
   let items;
   let sectionTitle;
@@ -221,7 +221,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = tmp4;
   cResult[5] = tmp11;
   tmp10 = tmp11;
-}) : ((arg0) => {
+}) : (function BenefitSection(arg0) {
   let children;
   let items;
   let sectionTitle;
@@ -231,7 +231,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroRequire(hasOwnProperty, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionTierTemplateFullCard(arg0) {
   let additional_perks;
   let channels;
   let closure_0;
@@ -338,7 +338,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const _Symbol4 = Symbol;
         if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
           const obj7 = { variant: "text-sm/normal", color: "text-muted", children: intl2.string(require("intl").t.bCb3c8) };
-          const Text = tmp(4892).Text;
+          const Text = tmp(5086).Text;
           intl2 = tmp(1126).intl;
           const tmp30 = closure_4(Text, obj7);
           const tmp31 = closure_4(require("native").Spacer, { size: 24 });
@@ -509,7 +509,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                 const obj13 = { scrollable: true, startExpanded: true, children: closure_6(View, obj14) };
                                 obj14 = { style: tmp7, children: items2 };
                                 items2 = [tmp8, tmp10, tmp71];
-                                BottomSheet = tmp(6652).BottomSheet;
+                                BottomSheet = tmp(6829).BottomSheet;
                                 const tmp78 = closure_4(BottomSheet, obj13);
                                 cResult[57] = tmp4.container;
                                 cResult[58] = tmp8;
@@ -594,7 +594,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = template;
   cResult[4] = tmp9;
   tmp8 = tmp9;
-}) : ((template) => {
+}) : (function GuildRoleSubscriptionTierTemplateFullCard(template) {
   let GappedList;
   let GappedList2;
   let additional_perks;

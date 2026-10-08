@@ -1,11 +1,11 @@
-// Module ID: 14837
-// Function ID: 14838
+// Module ID: 15098
+// Function ID: 15099
 // Name: useBountiesRecapOrbCount
-// Dependencies: [32, 19, 558, 4618, 14836, 2]
+// Dependencies: [32, 19, 558, 4810, 15097, 2]
 
-// Module 14837 (useBountiesRecapOrbCount)
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import useBountiesRecapScroll from "useBountiesRecapScroll" /* 14836 */;
+// Module 15098 (useBountiesRecapOrbCount)
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import useBountiesRecapScroll from "useBountiesRecapScroll" /* 15097 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -31,7 +31,7 @@ let closure_6 = { code: "function useBountiesRecapOrbCountTsx2(){const{enabled,r
 let closure_7 = { code: "function useBountiesRecapOrbCountTsx3(t1){const{runOnJS,resetDisplayCount,setDisplayCountMonotonic}=this.__closure;const{count:count_0,revealed:revealed}=t1;if(!revealed){runOnJS(resetDisplayCount)();return;}runOnJS(setDisplayCountMonotonic)(count_0);}" };
 const __initData = { code: "function useBountiesRecapOrbCountTsx4(){const{enabled,recapRevealHeight,getRevealProgress,scrollY,lastBountyScrollOffset,RECAP_ORB_COUNT_REACHES_TARGET_AT_PROGRESS,getRecapOrbCountFromPullProgress,targetOrbAmount}=this.__closure;if(!enabled||recapRevealHeight<=0){return{count:0,revealed:false};}const pullProgress=getRevealProgress(scrollY.get(),lastBountyScrollOffset,recapRevealHeight)/RECAP_ORB_COUNT_REACHES_TARGET_AT_PROGRESS;if(pullProgress<=0.1){return{count:0,revealed:false};}return{count:getRecapOrbCountFromPullProgress(pullProgress,targetOrbAmount),revealed:true};}" };
 const __initData2 = { code: "function useBountiesRecapOrbCountTsx5({count:count_0,revealed:revealed}){const{runOnJS,resetDisplayCount,setDisplayCountMonotonic}=this.__closure;if(!revealed){runOnJS(resetDisplayCount)();return;}runOnJS(setDisplayCountMonotonic)(count_0);}" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollY) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountiesRecapOrbCount(scrollY) {
   let closure_5;
   scrollY = scrollY.scrollY;
   const lastBountyScrollOffset = scrollY.lastBountyScrollOffset;
@@ -110,7 +110,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollY) => {
   fn.__initData = resetDisplayCount;
   const animatedReaction = useAnimatedReaction(R, fn);
   return first;
-}) : ((scrollY) => {
+}) : (function useBountiesRecapOrbCount(scrollY) {
   let _undefined;
   let c5;
   let tmp2;
@@ -135,43 +135,45 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollY) => {
   const callback1 = targetOrbAmount.useCallback(() => {
     _undefined(0);
   }, []);
-  const fn = function f() {
-    const tmp = enabled;
-    if (tmp) {
-      if (recapRevealHeight > 0) {
-        let obj;
-        const obj2 = useBountiesRecapScroll;
-        const result = obj2.getRevealProgress(scrollY.get(), lastBountyScrollOffset, tmp2) / c4;
-        if (result <= 0.1) {
-          obj = { count: 0, revealed: false };
-        } else if (typeof getRecapOrbCountFromPullProgress === "function") {
-          let num2 = 0;
-          if (targetOrbAmount > 0) {
-            const _Number = Number;
-            num2 = 0;
-            if (Number.isFinite(targetOrbAmount)) {
-              const _Math = Math;
-              const _Math2 = Math;
-              const _Math3 = Math;
-              num2 = Math.round(Math.min(1, Math.max(0, result)) * tmp11);
-            }
-          }
-          obj = { count: num2, revealed: true };
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
-        return obj;
-      }
-    }
-    return { count: 0, revealed: false };
-  };
   const tmp5 = scrollY(lastBountyScrollOffset[3]);
+  class C {
+    constructor() {
+      const tmp = enabled;
+      if (tmp) {
+        if (recapRevealHeight > 0) {
+          let obj;
+          const obj2 = useBountiesRecapScroll;
+          const result = obj2.getRevealProgress(scrollY.get(), lastBountyScrollOffset, tmp2) / c4;
+          if (result <= 0.1) {
+            obj = { count: 0, revealed: false };
+          } else if (typeof getRecapOrbCountFromPullProgress === "function") {
+            let num2 = 0;
+            if (targetOrbAmount > 0) {
+              const _Number = Number;
+              num2 = 0;
+              if (Number.isFinite(targetOrbAmount)) {
+                const _Math = Math;
+                const _Math2 = Math;
+                const _Math3 = Math;
+                num2 = Math.round(Math.min(1, Math.max(0, result)) * tmp11);
+              }
+            }
+            obj = { count: num2, revealed: true };
+          } else {
+            throw new TypeError("Trying to call a non-function");
+          }
+          return obj;
+        }
+      }
+      return { count: 0, revealed: false };
+    }
+  }
   let obj = { enabled, recapRevealHeight, getRevealProgress: scrollY(lastBountyScrollOffset[4]).getRevealProgress, scrollY, lastBountyScrollOffset, RECAP_ORB_COUNT_REACHES_TARGET_AT_PROGRESS: enabled, getRecapOrbCountFromPullProgress, targetOrbAmount };
   const useAnimatedReaction = tmp5.useAnimatedReaction;
-  fn.__closure = obj;
-  fn.__workletHash = 4646852023252;
-  fn.__initData = __initData;
-  const fn2 = function v(arg0) {
+  C.__closure = obj;
+  C.__workletHash = 4646852023252;
+  C.__initData = __initData;
+  const fn = function v(arg0) {
     let count;
     let revealed;
     ({ count, revealed } = arg0);
@@ -184,10 +186,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollY) => {
     }
   };
   let obj2 = { runOnJS: scrollY(lastBountyScrollOffset[3]).runOnJS, resetDisplayCount: callback1, setDisplayCountMonotonic };
-  fn2.__closure = obj2;
-  fn2.__workletHash = 14883339167099;
-  fn2.__initData = __initData2;
-  const animatedReaction = useAnimatedReaction(fn, fn2);
+  fn.__closure = obj2;
+  fn.__workletHash = 14883339167099;
+  fn.__initData = __initData2;
+  const animatedReaction = useAnimatedReaction(C, fn);
   return tmp2;
 });
 let result = size.fileFinishedImporting("modules/quests/native/BountiesModal/useBountiesRecapOrbCount.tsx");

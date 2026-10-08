@@ -1,20 +1,20 @@
-// Module ID: 15710
-// Function ID: 15711
+// Module ID: 15990
+// Function ID: 15991
 // Name: ProfileCustomizationTryItOutSettingScreenExperimentWrapper
-// Dependencies: [19, 21, 558, 576, 14449, 15711, 15736, 2]
+// Dependencies: [19, 21, 558, 576, 14677, 15991, 15994, 2]
 
-// Module 15710 (ProfileCustomizationTryItOutSettingScreenExperimentWrapper)
+// Module 15990 (ProfileCustomizationTryItOutSettingScreenExperimentWrapper)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 14449 */;
-import ProfileCustomizationTryItOutV2SettingScreenDefault from "ProfileCustomizationTryItOutV2SettingScreen" /* 15711 */;
-import ProfileCustomizationTryItOutSettingScreenDefault from "ProfileCustomizationTryItOutSettingScreen" /* 15736 */;
+import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 14677 */;
+import ProfileCustomizationTryItOutV2SettingScreenDefault from "ProfileCustomizationTryItOutV2SettingScreen" /* 15991 */;
+import ProfileCustomizationTryItOutSettingScreenDefault from "ProfileCustomizationTryItOutSettingScreen" /* 15994 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileCustomizationTryItOutSettingScreenExperimentWrapper() {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -41,9 +41,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   return tmp4;
-}) : (() => {
+}) : (function ProfileCustomizationTryItOutSettingScreenExperimentWrapper() {
   const obj = UserProfilePremiumTryItOutMobileRefreshExperiment;
-  return jsx(importDefault(obj.useIsTryItOutMobileRefreshEnabled("ProfileCustomizationTryItOutSettingScreenExperimentWrapper") ? 15711 : 15736), {});
+  return jsx(importDefault(obj.useIsTryItOutMobileRefreshEnabled("ProfileCustomizationTryItOutSettingScreenExperimentWrapper") ? 15991 : 15994), {});
 });
 const result = size.fileFinishedImporting("modules/user_settings/premium/native/ProfileCustomizationTryItOutSettingScreenExperimentWrapper.tsx");
 

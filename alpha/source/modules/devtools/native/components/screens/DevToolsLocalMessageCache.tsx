@@ -1,19 +1,19 @@
-// Module ID: 15432
-// Function ID: 15433
+// Module ID: 15694
+// Function ID: 15695
 // Name: DevToolsLocalMessageCache
-// Dependencies: [17, 2051, 21, 4896, 587, 558, 576, 6000, 6081, 7010, 4892, 5600, 2]
+// Dependencies: [17, 2063, 21, 5090, 587, 558, 576, 6184, 6267, 7198, 5086, 5373, 2]
 
-// Module 15432 (DevToolsLocalMessageCache)
+// Module 15694 (DevToolsLocalMessageCache)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Stack_Stack from "Stack/Stack" /* 5600 */;
-import TableRowGroup3 from "TableRowGroup" /* 6081 */;
-import MessageCacheStatsDefault from "MessageCacheStats" /* 7010 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Stack_Stack from "Stack/Stack" /* 5373 */;
+import TableRowGroup3 from "TableRowGroup" /* 6267 */;
+import MessageCacheStatsDefault from "MessageCacheStats" /* 7198 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const TableRow5 = tmp(6000);
+const TableRow5 = tmp(6184);
 const ScrollView = react_native.ScrollView;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -32,7 +32,7 @@ createStyles = createStyles.createStyles;
 obj3 = { padding: nativeDefault.space.PX_16 };
 let closure_7 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(entry) {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function CacheLogEntry(entry) {
   let tmp10;
   let tmp4;
   const obj = react;
@@ -136,7 +136,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(entry) 
   cResult[8] = combined1;
   cResult[9] = items;
   obj3 = items;
-}) : ((entry) => {
+}) : (function CacheLogEntry(entry) {
   let items;
   entry = entry.entry;
   let str = entry.before;
@@ -191,7 +191,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(entry) 
   return tmp3(TableRow, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsLocalMessageCache() {
   let items;
   let items1;
   let reversed;
@@ -203,18 +203,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: "Local Message Cache Stats", hasIcons: false, children: items };
-    const TableRowGroup = tmp(6081).TableRowGroup;
+    const TableRowGroup = tmp(6267).TableRowGroup;
     const obj3 = { label: "Channels Fetched", subLabel: MessageCacheStatsDefault.channelsFetchStarted.size };
-    const TableRow = tmp(6000).TableRow;
+    const TableRow = tmp(6184).TableRow;
     items = [hasOwnProperty(TableRow, obj3), , , ];
     const obj4 = { label: "Cache Hits", subLabel: MessageCacheStatsDefault.channelsFetchedWithLocalMessages.size };
-    const TableRow2 = tmp(6000).TableRow;
+    const TableRow2 = tmp(6184).TableRow;
     items[1] = hasOwnProperty(TableRow2, obj4);
     const obj5 = { label: "Cache Misses", subLabel: MessageCacheStatsDefault.channelsFetchedNetwork.size - MessageCacheStatsDefault.channelsFetchedWithLocalMessages.size };
-    const TableRow3 = tmp(6000).TableRow;
+    const TableRow3 = tmp(6184).TableRow;
     items[2] = hasOwnProperty(TableRow3, obj5);
     const obj6 = { label: "Incomplete Fetches", subLabel: MessageCacheStatsDefault.channelsFetchStarted.size - MessageCacheStatsDefault.channelsFetchedNetwork.size };
-    const TableRow4 = tmp(6000).TableRow;
+    const TableRow4 = tmp(6184).TableRow;
     items[3] = hasOwnProperty(TableRow4, obj6);
     const tmp10 = metroRequire(TableRowGroup, obj2);
     const tmp11 = hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", children: "Cumulative since app launch. Does not update dynamically." });
@@ -228,7 +228,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj7 = { spacing: 8, children: items1 };
     items1 = [tmp5, tmp6, ];
-    const Stack = tmp(5600).Stack;
+    const Stack = tmp(5373).Stack;
     const _Array = Array;
     const obj8 = {
       title: "Fetch Log (Reversed)",
@@ -238,7 +238,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return closure_1_5(closure_1_8, obj, index);
         })
     };
-    const TableRowGroup2 = tmp(6081).TableRowGroup;
+    const TableRowGroup2 = tmp(6267).TableRowGroup;
     const fetchLogs = MessageCacheStatsDefault.fetchLogs;
     const fromResult = from(fetchLogs.values());
     reversed = fromResult.reverse();
@@ -262,7 +262,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[4] = tmp4.contentContainer;
   cResult[5] = tmp18;
   tmp17 = tmp18;
-}) : (() => {
+}) : (function DevToolsLocalMessageCache() {
   let Stack;
   let items;
   let items1;

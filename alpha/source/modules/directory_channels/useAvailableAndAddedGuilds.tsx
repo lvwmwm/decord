@@ -1,17 +1,17 @@
-// Module ID: 11960
-// Function ID: 11961
+// Module ID: 12033
+// Function ID: 12034
 // Name: useAvailableAndAddedGuilds
-// Dependencies: [5, 32, 19, 2074, 4515, 5623, 11954, 1085, 558, 576, 504, 11958, 5597, 2]
+// Dependencies: [5, 32, 19, 2086, 4707, 5968, 12027, 1085, 558, 576, 504, 12031, 5392, 2]
 
-// Module 11960 (useAvailableAndAddedGuilds)
+// Module 12033 (useAvailableAndAddedGuilds)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import SortedGuildStore from "SortedGuildStore" /* 5623 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 11954 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import SortedGuildStore from "SortedGuildStore" /* 5968 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 12027 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,13 +19,13 @@ const require = globalThis.__r;
 let _require, c1, c2, closure_0, flattenedGuildIds, importDefault;
 
 const Permissions = Constants.Permissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvailableAndAddedGuilds(arg0, arg1) {
   let closure_1;
   let first;
   let stateFromStores;
   let tmp10;
-  let tmp13;
   let tmp14;
+  let tmp15;
   let tmp5;
   let tmp8;
   _require = arg0;
@@ -43,173 +43,211 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg1) {
-    class G {
-      constructor() {
-        return closure_10.getAdminGuildEntryIds(closure_1);
-      }
-    }
+    const fn = function h() {
+      return GuildDirectoryStore.getAdminGuildEntryIds(closure_1);
+    };
     cResult[1] = arg1;
-    cResult[2] = G;
-    tmp8 = G;
+    cResult[2] = fn;
+    tmp8 = fn;
   } else {
-    class G {
-      constructor() {
-        return closure_10.getAdminGuildEntryIds(closure_1);
-      }
-    }
+    tmp8 = cResult[2];
   }
   const tmpResult = tmp(stateFromStores[10]);
   stateFromStores = tmpResult.useStateFromStores(first, tmp8);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class G {
-      constructor() {
-        return closure_10.getAdminGuildEntryIds(closure_1);
-      }
-    }
     const items1 = [SortedGuildStore, , ];
     items1[1] = GuildStore;
     items1[2] = PermissionStore;
     cResult[3] = items1;
     tmp10 = items1;
   } else {
-    class G {
-      constructor() {
-        return closure_10.getAdminGuildEntryIds(closure_1);
-      }
-    }
+    tmp10 = cResult[3];
   }
   if (cResult[4] !== arg0) {
-    class G {
-      constructor() {
-        return closure_10.getAdminGuildEntryIds(closure_1);
-      }
-    }
+    const fn2 = function p() {
+      flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+      const items = [];
+      const item = flattenedGuildIds.forEach((item) => {
+        const guild = GuildStore.getGuild(item);
+        const canResult = null != guild && PermissionStore.can(Permissions.ADMINISTRATOR, guild) && guild.id !== closure_0;
+        if (canResult) {
+          items.push(guild);
+        }
+      });
+      return items;
+    };
     const items2 = [arg0];
     cResult[4] = arg0;
-    cResult[5] = tmp15;
+    cResult[5] = fn2;
     cResult[6] = items2;
-    tmp14 = items2;
-    tmp13 = tmp15;
+    tmp15 = items2;
+    tmp14 = fn2;
   } else {
-    class G {
-      constructor() {
-        return closure_10.getAdminGuildEntryIds(closure_1);
-      }
-    }
-    tmp14 = cResult[6];
+    tmp14 = cResult[5];
+    tmp15 = cResult[6];
   }
   const tmpResult2 = tmp(stateFromStores[10]);
-  const stateFromStoresArray = tmpResult2.useStateFromStoresArray(tmp10, tmp13, tmp14);
+  const stateFromStoresArray = tmpResult2.useStateFromStoresArray(tmp10, tmp14, tmp15);
   if (cResult[7] === stateFromStoresArray) {
-    let tmp19;
-    class G {
-      constructor() {
-        return closure_10.getAdminGuildEntryIds(closure_1);
-      }
+    let tmp16;
+    let tmp20;
+    if (cResult[8] === arg1) {
+      tmp16 = cResult[9];
     }
-    require("useMountEffect")(R);
+    require("useMountEffect")(tmp16);
     if (cResult[10] === stateFromStores) {
-      let tmp22;
-      class G {
-        constructor() {
-          return closure_10.getAdminGuildEntryIds(closure_1);
-        }
+      let tmp19;
+      let tmp23;
+      if (cResult[11] === stateFromStoresArray) {
+        tmp19 = cResult[12];
       }
       if (cResult[15] === stateFromStores) {
-        class G {
-          constructor() {
-            return closure_10.getAdminGuildEntryIds(closure_1);
-          }
+        let tmp22;
+        if (cResult[16] === stateFromStoresArray) {
+          tmp22 = cResult[17];
         }
-        if (cResult[20] === tmp21) {
-          class G {
-            constructor() {
-              return closure_10.getAdminGuildEntryIds(closure_1);
+        if (cResult[20] === tmp22) {
+          if (cResult[21] === tmp19) {
+            let tmp25;
+            if (cResult[22] === tmp5) {
+              tmp25 = cResult[23];
             }
+            return tmp25;
           }
         }
-        let obj2 = { availableGuilds: tmp18, addedGuilds: tmp21, loading: tmp5 };
-        cResult[20] = tmp21;
-        cResult[21] = tmp18;
+        let obj2 = { availableGuilds: tmp19, addedGuilds: tmp22, loading: tmp5 };
+        cResult[20] = tmp22;
+        cResult[21] = tmp19;
         cResult[22] = tmp5;
         cResult[23] = obj2;
+        tmp25 = obj2;
       }
       if (cResult[18] !== stateFromStores) {
         class P {
-          constructor(arg0) {
-            obj = closure_3;
-            hasItem = undefined;
-            if (closure_3 != null) {
-              tmp2 = arg0;
-              hasItem = obj.has(arg0.id);
+          constructor(id) {
+            let hasItem;
+            const obj = stateFromStores;
+            if (stateFromStores != null) {
+              hasItem = obj.has(id.id);
             }
             return hasItem;
           }
         }
         cResult[18] = stateFromStores;
         cResult[19] = P;
-        tmp22 = P;
+        tmp23 = P;
       } else {
         class P {
-          constructor(arg0) {
-            obj = closure_3;
-            hasItem = undefined;
-            if (closure_3 != null) {
-              tmp2 = arg0;
-              hasItem = obj.has(arg0.id);
+          constructor(id) {
+            let hasItem;
+            const obj = stateFromStores;
+            if (stateFromStores != null) {
+              hasItem = obj.has(id.id);
             }
             return hasItem;
           }
         }
       }
-      const found = stateFromStoresArray.filter(tmp22);
+      const found = stateFromStoresArray.filter(tmp23);
       cResult[15] = stateFromStores;
       cResult[16] = stateFromStoresArray;
       cResult[17] = found;
+      tmp22 = found;
     }
     if (cResult[13] !== stateFromStores) {
       class P {
-        constructor(arg0) {
-          obj = closure_3;
-          hasItem = undefined;
-          if (closure_3 != null) {
-            tmp2 = arg0;
-            hasItem = obj.has(arg0.id);
+        constructor(id) {
+          let hasItem;
+          const obj = stateFromStores;
+          if (stateFromStores != null) {
+            hasItem = obj.has(id.id);
           }
           return hasItem;
         }
       }
       cResult[13] = stateFromStores;
       cResult[14] = O;
-      tmp19 = O;
+      tmp20 = O;
     } else {
       class P {
-        constructor(arg0) {
-          obj = closure_3;
-          hasItem = undefined;
-          if (closure_3 != null) {
-            tmp2 = arg0;
-            hasItem = obj.has(arg0.id);
+        constructor(id) {
+          let hasItem;
+          const obj = stateFromStores;
+          if (stateFromStores != null) {
+            hasItem = obj.has(id.id);
           }
           return hasItem;
         }
       }
     }
-    const found1 = stateFromStoresArray.filter(tmp19);
+    const found1 = stateFromStoresArray.filter(tmp20);
     cResult[10] = stateFromStores;
     cResult[11] = stateFromStoresArray;
     cResult[12] = found1;
+    tmp19 = found1;
   }
   class R {
     constructor() {
-      tmp = closure_4(function() { /* body not rendered: F142200 */ })();
+      tmp = closure_4(async (arg0, value) => {
+        let v3;
+        if (c2 === 2) {
+          c2 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            return { value: "IconComponent", done: null };
+          }
+        } else {
+          try {
+            c2 = 2;
+            if (0 === c1) {
+              if (arg0 === 1) {
+                c2 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c2 = 3;
+                const obj4 = { value, done: true };
+                return obj4;
+              } else {
+                closure_0 = tmp;
+                importAll(true);
+                c1 = 1;
+                const obj2 = c2(stateFromStores[11]);
+                c2 = 1;
+                const obj5 = { value: obj2.fetchGuildEntriesForIds(closure_2_1, stateFromStoresArray.map((id) => id.id)), done: false };
+                return obj5;
+              }
+            } else if (arg0 === 1) {
+              c2 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c2 = 3;
+              const obj = { value, done: true };
+              return obj;
+            } else {
+              closure_128_2(false);
+              c2 = 3;
+              return { value: "IconComponent", done: null };
+            }
+          } catch (tmp14) {
+            c2 = 3;
+            throw tmp14;
+          }
+        }
+      })();
       return;
     }
   }
   cResult[7] = stateFromStoresArray;
   cResult[8] = arg1;
   cResult[9] = R;
-}) : ((arg0, arg1) => {
+  tmp16 = R;
+}) : (function useAvailableAndAddedGuilds(arg0, arg1) {
   let closure_1;
   let closure_2;
   let first;

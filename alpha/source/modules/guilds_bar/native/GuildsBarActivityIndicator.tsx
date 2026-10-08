@@ -1,29 +1,29 @@
-// Module ID: 16314
-// Function ID: 16315
+// Module ID: 16574
+// Function ID: 16575
 // Name: GuildsBarActivityIndicator
-// Dependencies: [19, 21, 4896, 587, 558, 576, 4586, 1188, 5983, 9310, 9308, 5888, 9228, 8577, 16315, 11247, 16316, 5892, 16317, 5897, 5824, 16310, 2]
+// Dependencies: [19, 21, 5090, 587, 558, 576, 4778, 1200, 6166, 8639, 8638, 8200, 8536, 9061, 16575, 11362, 16576, 8204, 16577, 8209, 8139, 16570, 2]
 
-// Module 16314 (GuildsBarActivityIndicator)
+// Module 16574 (GuildsBarActivityIndicator)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4586 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5824 */;
-import StageIcon from "StageIcon" /* 5888 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 5892 */;
-import AppsIcon from "AppsIcon" /* 5897 */;
-import NativeViewDefault from "NativeView" /* 5983 */;
-import ScreenIcon from "ScreenIcon" /* 8577 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9228 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 9308 */;
-import CalendarIcon from "CalendarIcon" /* 9310 */;
-import VideoIcon from "VideoIcon" /* 11247 */;
-import useGuildsBarGuildMediaStateDefault from "useGuildsBarGuildMediaState" /* 16310 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 16315 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 16316 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 16317 */;
+import useToken from "useToken" /* 4778 */;
+import NativeViewDefault from "NativeView" /* 6166 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8139 */;
+import StageIcon from "StageIcon" /* 8200 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 8204 */;
+import AppsIcon from "AppsIcon" /* 8209 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8536 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 8638 */;
+import CalendarIcon from "CalendarIcon" /* 8639 */;
+import ScreenIcon from "ScreenIcon" /* 9061 */;
+import VideoIcon from "VideoIcon" /* 11362 */;
+import useGuildsBarGuildMediaStateDefault from "useGuildsBarGuildMediaState" /* 16570 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 16575 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 16576 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 16577 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let size;
 let size1;
 let size2;
 let tmp;
-const native = tmp(1188);
+const native = tmp(1200);
 function getMediaIcon(activeEvent) {
   let tmp6;
   if (activeEvent.activeEvent) {
@@ -70,7 +70,7 @@ size2 = { width: 12, height: 12, borderRadius: nativeDefault.radii.none };
 let closure_5 = createStyles(obj);
 const memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildsBarActivityIndicatorBase(arg0) {
   let IconComponent;
   let WHITE;
   let isCurrentUserConnected;
@@ -164,7 +164,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   cResult[1] = tmp4.activityWrapper;
   cResult[2] = items1;
   tmp7 = items1;
-}) : ((arg0) => {
+}) : (function GuildsBarActivityIndicatorBase(arg0) {
   let IconComponent;
   let isCurrentUserConnected;
   let source;
@@ -199,7 +199,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
 }));
 const metroRequire = memoResult;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityIndicatorState(arg0) {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(6);
@@ -238,7 +238,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = source;
   cResult[5] = obj2;
   tmp8 = obj2;
-}) : ((arg0) => {
+}) : (function useActivityIndicatorState(arg0) {
   const tmp = useGuildsBarGuildMediaStateDefault(arg0);
   let closure_0 = tmp;
   const tmp2 = getMediaIcon(tmp);
@@ -274,7 +274,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_8 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildsBarGuildActivityIndicator(style) {
   let IconComponent;
   let isCurrentUserConnected;
   let source;
@@ -304,7 +304,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
   cResult[3] = style;
   cResult[4] = tmp4;
   tmp3 = tmp4;
-}) : ((style) => {
+}) : (function GuildsBarGuildActivityIndicator(style) {
   style = style.style;
   const source = closure_8(style.guildId).source;
   let tmp4 = null;

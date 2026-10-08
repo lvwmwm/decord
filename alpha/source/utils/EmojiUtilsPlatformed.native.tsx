@@ -1,21 +1,21 @@
-// Module ID: 7422
-// Function ID: 7423
+// Module ID: 7897
+// Function ID: 7898
 // Name: EmojiUtilsPlatformed
-// Dependencies: [32, 5, 17, 4530, 4872, 1369, 12, 1402, 1886, 7423, 1481, 4733, 7462, 7467, 2]
+// Dependencies: [32, 5, 17, 4722, 5066, 1381, 12, 1414, 1898, 7898, 1493, 4927, 7937, 7942, 2]
 
-// Module 7422 (EmojiUtilsPlatformed)
+// Module 7897 (EmojiUtilsPlatformed)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import react_nativeDefault from "react-native" /* 1886 */;
-import DeviceUtils from "DeviceUtils" /* 4872 */;
-import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 7423 */;
-import BurstReactionFirstSendActionSheet from "BurstReactionFirstSendActionSheet" /* 7462 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import react_nativeDefault from "react-native" /* 1898 */;
+import DeviceUtils from "DeviceUtils" /* 5066 */;
+import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 7898 */;
+import BurstReactionFirstSendActionSheet from "BurstReactionFirstSendActionSheet" /* 7937 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_4530 from "module_4530" /* 4530 */;
-import MemoizerUtils_mod from "MemoizerUtils" /* 7467 */;
+import module_4722 from "module_4722" /* 4722 */;
+import MemoizerUtils_mod from "MemoizerUtils" /* 7942 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, closure_2, unicodeVersion;
@@ -24,7 +24,7 @@ let MemoizerUtils;
 function getURL(name) {
   let str;
   if (null == name) {
-    const convert = module_4530.convert;
+    const convert = module_4722.convert;
     const _HermesInternal = HermesInternal;
     str = "asset:/emoji-" + convert.toCodePoint(name) + ".png";
   } else {

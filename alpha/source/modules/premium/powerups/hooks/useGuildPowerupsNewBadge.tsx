@@ -1,17 +1,17 @@
-// Module ID: 12182
-// Function ID: 12183
+// Module ID: 12261
+// Function ID: 12262
 // Name: useGuildPowerupsNewBadge
-// Dependencies: [32, 19, 4773, 4774, 2048, 2036, 558, 576, 504, 12177, 6901, 2037, 2]
+// Dependencies: [32, 19, 4967, 4968, 2060, 2048, 558, 576, 504, 12256, 7090, 2049, 2]
 
-// Module 12182 (useGuildPowerupsNewBadge)
-import dismissible_content from "dismissible_content" /* 2036 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2037 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4774 */;
-import useGuildPowerupNewPerkMarketingVersionDefault from "useGuildPowerupNewPerkMarketingVersion" /* 12177 */;
+// Module 12261 (useGuildPowerupsNewBadge)
+import dismissible_content from "dismissible_content" /* 2048 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2049 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4968 */;
+import useGuildPowerupNewPerkMarketingVersionDefault from "useGuildPowerupNewPerkMarketingVersion" /* 12256 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4773 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4967 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ const constants = GuildPowerupsConstants.GuildPowerupNewPerkMarketingVersion;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 let closure_8 = dismissible_content.DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_BADGE;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBadgeableMarketingVersion(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -56,7 +56,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num4 = tmp8Result;
   }
   return num4;
-}) : ((arg0) => {
+}) : (function useBadgeableMarketingVersion(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildPowerupsStore];
@@ -71,7 +71,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return num;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowerupsNewBadge(arg0, arg1) {
   let closure_0;
   let tmp2 = dependencyMap;
   const obj = require("react");
@@ -79,7 +79,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   const tmp4 = undefined !== arg1 && arg1;
   const tmp5 = closure_9(arg0);
   let tmp7 = null;
-  const useSelectedVersionedDismissibleContent = tmp(6901).useSelectedVersionedDismissibleContent;
+  const useSelectedVersionedDismissibleContent = tmp(7090).useSelectedVersionedDismissibleContent;
   require("useSelectedDismissibleContent");
   if (tmp5 > 0) {
     tmp7 = null;
@@ -122,7 +122,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[1] = tmp8[0] === closure_8;
   cResult[2] = fn;
   tmp11 = fn;
-}) : ((arg0) => {
+}) : (function useGuildPowerupsNewBadge(arg0) {
   let closure_0;
   let flag = arg1;
   if (arg1 === undefined) {
@@ -160,7 +160,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   return obj;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAutoDismissGuildPowerupsNewBadge(guildId) {
   _require = guildId;
   let obj = require("react");
   const cResult = obj.c(4);
@@ -175,7 +175,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     const effect = react.useEffect(tmp3, tmp4);
   }
-  const fn = function o() {
+  const fn = function t() {
     if (closure_1 > 0) {
       const obj2 = { dismissAction: ContentDismissActionType.AUTO_DISMISS, guildId };
       const obj = DismissibleContentUtils;
@@ -189,7 +189,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[3] = items;
   tmp4 = items;
   tmp3 = fn;
-}) : ((guildId) => {
+}) : (function useAutoDismissGuildPowerupsNewBadge(guildId) {
   const tmp = closure_9(guildId);
   let closure_1 = tmp;
   const items = [tmp, guildId];

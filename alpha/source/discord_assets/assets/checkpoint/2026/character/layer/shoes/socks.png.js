@@ -1,8 +1,8 @@
-// Module ID: 5166
-// Function ID: 5167
+// Module ID: 5478
+// Function ID: 5479
 // Dependencies: [2]
 
-// Module 5166
+// Module 5478
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/shoes/socks.png.js");

@@ -1,12 +1,12 @@
-// Module ID: 6658
-// Function ID: 6659
+// Module ID: 6835
+// Function ID: 6836
 // Name: LayerScope
-// Dependencies: [32, 19, 17, 1085, 21, 558, 576, 6659, 5991, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 558, 576, 6836, 6174, 2]
 
-// Module 6658 (LayerScope)
+// Module 6835 (LayerScope)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import useInitialValueDefault from "useInitialValue" /* 5991 */;
+import useInitialValueDefault from "useInitialValue" /* 6174 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -21,13 +21,13 @@ let hasOwnProperty;
 let metroImportAll;
 let metroRequire;
 let tmp;
-const LayerContext = tmp(6659);
+const LayerContext = tmp(6836);
 function Layer(zIndex) {
   let closure_2;
   let closure_3;
   zIndex = zIndex.zIndex;
   _slicedToArray = undefined;
-  const context = react.useContext(zIndex(6659).LayerContext);
+  const context = react.useContext(zIndex(6836).LayerContext);
   dependencyMap = _slicedToArray(react.useState({}), 2)[1];
   _slicedToArray = react.useRef(null);
   const items = [context];
@@ -62,7 +62,7 @@ let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, StyleSheet: metroRequire } = react_native);
 const NOOP = Constants.NOOP;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function LayerScope(arg0) {
   let children;
   let first;
   let items;
@@ -108,7 +108,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = tmp6;
   cResult[6] = tmp11;
   tmp10 = tmp11;
-}) : ((arg0) => {
+}) : (function LayerScope(arg0) {
   let children;
   let items;
   let zIndex;

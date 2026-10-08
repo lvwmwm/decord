@@ -1,18 +1,18 @@
-// Module ID: 9888
-// Function ID: 9889
+// Module ID: 9368
+// Function ID: 9369
 // Name: useEmojiHotrail
-// Dependencies: [19, 5649, 558, 576, 2]
+// Dependencies: [19, 5996, 558, 576, 2]
 // Exports: getEmojiHotrail
 
-// Module 9888 (useEmojiHotrail)
+// Module 9368 (useEmojiHotrail)
 import react2 from "react" /* 576 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 5649 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 5996 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const EMOJI_ROW_SIZE = EmojiPickerConstants.EMOJI_ROW_SIZE;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiHotrail(arg0) {
   let newlyAddedEmojis;
   let rowSize;
   let tmp2;
@@ -33,7 +33,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = cResult[1];
   }
   return tmp2;
-}) : ((arg0) => {
+}) : (function useEmojiHotrail(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   return react.useMemo(() => {

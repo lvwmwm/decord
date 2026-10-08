@@ -1,23 +1,23 @@
-// Module ID: 4896
-// Function ID: 4897
+// Module ID: 5090
+// Function ID: 5091
 // Name: createStyles
-// Dependencies: [32, 17, 4885, 4703, 558, 576, 4595, 1369, 587, 4587, 4618, 4897, 4900, 4794, 2]
+// Dependencies: [32, 17, 5079, 4897, 558, 576, 4787, 1381, 587, 4779, 4810, 5091, 5094, 4988, 2]
 // Exports: createAnimatedThemedStyles, createLegacyClassComponentStyles, createNativeStyleProperties, createStyleProperties, createStyles, experimental_createToken, processColorOrThrow
 
-// Module 4896 (createStyles)
+// Module 5090 (createStyles)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import SemanticColorContext from "SemanticColorContext" /* 4587 */;
-import native from "native" /* 4595 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 4794 */;
-import timing from "timing" /* 4897 */;
-import timingPresets from "timingPresets" /* 4900 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import SemanticColorContext from "SemanticColorContext" /* 4779 */;
+import native from "native" /* 4787 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 4988 */;
+import timing from "timing" /* 5091 */;
+import timingPresets from "timingPresets" /* 5094 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4703 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4897 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -112,7 +112,7 @@ function parseThemedStyles(obj, enabledExperiments) {
 const processColor = react_native.processColor;
 new Set(["backgroundColor", "borderBottomColor", "borderColor", "borderEndColor", "borderLeftColor", "borderRightColor", "borderStartColor", "borderTopColor", "color", "outlineColor", "shadowColor", "shadowOffset", "shadowOpacity", "shadowRadius", "elevation", "textDecorationColor", "textShadowColor", "tintColor"]);
 let closure_8 = Symbol.for("dynamicToken");
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((fn) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLegacyClassComponentStyles(fn) {
   const obj = react;
   const cResult = obj.c(3);
   const obj2 = native;
@@ -129,7 +129,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((fn) => {
   cResult[1] = fn;
   cResult[2] = tmp4;
   tmp3 = tmp4;
-}) : ((fn) => {
+}) : (function useLegacyClassComponentStyles(fn) {
   const obj = native;
   return fn(obj.useThemeContext());
 });
@@ -161,7 +161,7 @@ export const createStyles = function createStyles(rect) {
   map = new Map();
   dependencyMap = typeof rect === "function";
   let obj = require("ReactCompilerGating");
-  return obj.isReactCompilerEnabled() ? (() => {
+  return obj.isReactCompilerEnabled() ? (function useStyles() {
     items = [...arguments];
     let obj4;
     items = undefined;
@@ -238,7 +238,7 @@ export const createStyles = function createStyles(rect) {
     cResult[3] = tmp9;
     tmp5 = tmp9;
     tmp4 = tmp10;
-  }) : (() => {
+  }) : (function useStyles() {
     items = [...arguments];
     let obj3;
     const obj = rect(closure_2[6]);
@@ -296,7 +296,7 @@ export const createStyles = function createStyles(rect) {
 export const createLegacyClassComponentStyles = function createLegacyClassComponentStyles(arg0) {
   let closure_0 = arg0;
   map = new Map();
-  return (key) => {
+  return function readStyles(key) {
     let obj2;
     closure_0 = key;
     const FALLBACK_THEME_CONTEXT_VALUE = closure_0(dependencyMap[6]).FALLBACK_THEME_CONTEXT_VALUE;
@@ -337,7 +337,7 @@ export const createStyleProperties = function createStyleProperties(getButtonCol
   map = new Map();
   dependencyMap = typeof getButtonColorTokens === "function";
   let obj = require("ReactCompilerGating");
-  return obj.isReactCompilerEnabled() ? (() => {
+  return obj.isReactCompilerEnabled() ? (function useStyleProperties() {
     items = [...arguments];
     const obj = react;
     const cResult = obj.c(4);
@@ -384,7 +384,7 @@ export const createStyleProperties = function createStyleProperties(getButtonCol
     cResult[3] = tmp9;
     tmp5 = tmp9;
     tmp4 = value;
-  }) : (() => {
+  }) : (function useStyleProperties() {
     items = [...arguments];
     const obj = native;
     const themeContext = obj.useThemeContext();
@@ -415,7 +415,7 @@ export { processColorOrThrow };
 export const createNativeStyleProperties = function createNativeStyleProperties(arg0) {
   let closure_0 = arg0;
   map = new Map();
-  return function(theme) {
+  return function readStyleProperties(theme) {
     let json;
     const substr = [...arguments].slice();
     const saturation = AccessibilityStore.saturation;
@@ -433,14 +433,14 @@ export const createNativeStyleProperties = function createNativeStyleProperties(
       const setThemeFlag = native.setThemeFlag;
       native;
       if ("light" === customBackgroundGradient.theme) {
-        MOBILE_DARK_GRADIENT_THEME_ENABLED = tmp3(4595).ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED;
+        MOBILE_DARK_GRADIENT_THEME_ENABLED = tmp3(4787).ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED;
       } else {
-        MOBILE_DARK_GRADIENT_THEME_ENABLED = tmp3(4595).ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED;
+        MOBILE_DARK_GRADIENT_THEME_ENABLED = tmp3(4787).ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED;
       }
       num = setThemeFlag(0, MOBILE_DARK_GRADIENT_THEME_ENABLED);
     }
     const obj2 = { flags: num, saturation, theme, enabledExperiments: ["mobile-visual-refresh"], gradient: customBackgroundGradient };
-    const merged = Object.assign(tmp3(4595).FALLBACK_THEME_CONTEXT_VALUE);
+    const merged = Object.assign(tmp3(4787).FALLBACK_THEME_CONTEXT_VALUE);
     const obj3 = { key: json };
     json = JSON.stringify(obj2);
     const merged1 = Object.assign(obj2);
@@ -505,7 +505,7 @@ export const createAnimatedThemedStyles = function createAnimatedThemedStyles(BA
   stops = arr.map((item, index) => index);
   new Map();
   let obj2 = arr(obj[4]);
-  return obj2.isReactCompilerEnabled() ? ((themeIndex) => {
+  return obj2.isReactCompilerEnabled() ? (function useStyleProperties(themeIndex) {
     let closure_3;
     let num2;
     let num4;

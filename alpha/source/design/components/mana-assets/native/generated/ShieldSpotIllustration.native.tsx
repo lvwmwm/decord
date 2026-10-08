@@ -1,18 +1,18 @@
-// Module ID: 8130
-// Function ID: 8131
+// Module ID: 7508
+// Function ID: 7509
 // Name: ShieldSpotIllustration
-// Dependencies: [21, 558, 576, 8131, 5981, 2]
+// Dependencies: [21, 558, 576, 7509, 6164, 2]
 
-// Module 8130 (ShieldSpotIllustration)
+// Module 7508 (ShieldSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import _modDef8131 from "module_8131" /* 8131 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import _modDef7509 from "module_7509" /* 7509 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShieldSpotIllustration(arg0) {
   let accessibilityLabel;
   let accessible;
   let first;
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef8131 };
+    const obj2 = { uri: _modDef7509 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -68,12 +68,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[8] = tmp11;
     tmp8 = tmp11;
   }
-  const items = [{ width: result, height: result1 }];
+  size = { width: result, height: result1 };
   cResult[1] = result;
   cResult[2] = result1;
-  cResult[3] = items;
-  tmp7 = items;
-}) : ((width) => {
+  cResult[3] = size;
+  tmp7 = size;
+}) : (function ShieldSpotIllustration(width) {
   let accessibilityLabel;
   let accessible;
   let resizeMode;
@@ -90,11 +90,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num3 === undefined) {
     num3 = 1;
   }
-  const obj2 = { uri: _modDef8131 };
+  const obj2 = { uri: _modDef7509 };
   FastImageDefault;
-  size = { width: num * num3, height: num2 * num3 };
-  const items = [size];
-  return <tmp fadeDuration={0} source={obj2} style={items} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
+  return <tmp fadeDuration={0} source={obj2} style={{ width: num * num3, height: num2 * num3 }} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
 });
 let size = size_mod;
 let result = size.fileFinishedImporting("design/components/mana-assets/native/generated/ShieldSpotIllustration.native.tsx");

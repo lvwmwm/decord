@@ -1,19 +1,19 @@
-// Module ID: 17754
-// Function ID: 17755
+// Module ID: 18041
+// Function ID: 18042
 // Name: RuleExemptionRows
-// Dependencies: [19, 2051, 2106, 4525, 1377, 11487, 21, 1126, 504, 5049, 6081, 6000, 9267, 4860, 17755, 1987, 17703, 17757, 2]
+// Dependencies: [19, 2063, 2118, 4717, 1389, 11473, 21, 1126, 504, 5417, 6267, 6184, 8597, 5054, 18042, 1999, 17990, 18044, 2]
 // Exports: default
 
-// Module 17754 (RuleExemptionRows)
+// Module 18041 (RuleExemptionRows)
 import intl5 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Constants from "Constants" /* 11487 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Constants from "Constants" /* 11473 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildRoleStore from "GuildRoleStore" /* 2118 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -95,7 +95,7 @@ export default function RuleExemptionRows(rule) {
     label: intl3.string(rule(exemptRoles[7]).t["LPJmL/"]),
     trailing: closure_8(rule(exemptRoles[11]).TableRow.TrailingText, { text: stateFromStores }),
     arrow: true,
-    onPress() {
+    onPress: function handlePressRoles() {
       let obj = ActionSheetActionCreatorsDefault;
       const obj2 = {
         guildId: rule.guildId,
@@ -106,7 +106,7 @@ export default function RuleExemptionRows(rule) {
           return onChangeRule(obj);
         }
       };
-      obj.openLazy(asyncRequire(17755, dependencyMap.paths), "AutomodExemptRoles", obj2);
+      obj.openLazy(asyncRequire(18042, dependencyMap.paths), "AutomodExemptRoles", obj2);
     }
   };
   const TableRow = tmp2(tmp3[11]).TableRow;
@@ -122,7 +122,7 @@ export default function RuleExemptionRows(rule) {
       label: intl4.string(rule(exemptRoles[7]).t.OGiMXJ),
       trailing: closure_8(rule(exemptRoles[11]).TableRow.TrailingText, obj8),
       arrow: true,
-      onPress() {
+      onPress: function handlePressChannels() {
           let obj = ActionSheetActionCreatorsDefault;
           const obj2 = {
             guildId: rule.guildId,
@@ -133,7 +133,7 @@ export default function RuleExemptionRows(rule) {
               return onChangeRule(obj);
             }
           };
-          obj.openLazy(asyncRequire(17757, dependencyMap.paths), "AutomodExemptChannels", obj2);
+          obj.openLazy(asyncRequire(18044, dependencyMap.paths), "AutomodExemptChannels", obj2);
         }
     };
     const TableRow2 = tmp2(tmp3[11]).TableRow;

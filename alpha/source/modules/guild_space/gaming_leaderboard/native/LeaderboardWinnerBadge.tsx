@@ -1,17 +1,17 @@
-// Module ID: 10655
-// Function ID: 10656
+// Module ID: 10255
+// Function ID: 10256
 // Name: LeaderboardWinnerBadge
-// Dependencies: [19, 17, 21, 4896, 558, 576, 10656, 10657, 8397, 587, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 10256, 10257, 8895, 587, 2]
 
-// Module 10655 (LeaderboardWinnerBadge)
+// Module 10255 (LeaderboardWinnerBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import TrophyIcon2 from "TrophyIcon" /* 8397 */;
-import useActiveLeaderboardWinnerDataDefault from "useActiveLeaderboardWinnerData" /* 10656 */;
-import GuildLeaderboardUtils from "GuildLeaderboardUtils" /* 10657 */;
+import TrophyIcon2 from "TrophyIcon" /* 8895 */;
+import useActiveLeaderboardWinnerDataDefault from "useActiveLeaderboardWinnerData" /* 10256 */;
+import GuildLeaderboardUtils from "GuildLeaderboardUtils" /* 10257 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ const nativeDefault = tmp5(587);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ container: { marginLeft: 4 } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeaderboardWinnerBadge(arg0) {
   let guildId;
   let userId;
   const obj = react2;
@@ -45,7 +45,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const TrophyIcon = tmp(8397).TrophyIcon;
+      const TrophyIcon = tmp(8895).TrophyIcon;
       const tmp12 = <TrophyIcon size="xs" color={nativeDefault.colors.TEXT_FEEDBACK_WARNING} />;
       cResult[2] = tmp12;
       tmp10 = tmp12;
@@ -65,7 +65,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[5] = tmp16;
     tmp13 = tmp16;
   }
-}) : ((arg0) => {
+}) : (function LeaderboardWinnerBadge(arg0) {
   let guildId;
   let userId;
   ({ guildId, userId } = arg0);

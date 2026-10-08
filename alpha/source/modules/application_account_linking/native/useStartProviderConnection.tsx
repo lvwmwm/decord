@@ -1,10 +1,10 @@
-// Module ID: 6682
-// Function ID: 6683
+// Module ID: 6859
+// Function ID: 6860
 // Name: useStartProviderConnection
-// Dependencies: [5, 19, 558, 576, 6683, 4571, 2]
+// Dependencies: [5, 19, 558, 576, 6860, 4763, 2]
 
-// Module 6682 (useStartProviderConnection)
-import LinkingDefault from "Linking" /* 4571 */;
+// Module 6859 (useStartProviderConnection)
+import LinkingDefault from "Linking" /* 4763 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -12,7 +12,7 @@ import size from "module_2" /* 2 */;
 
 let c5, c6;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStartProviderConnection(arg0) {
   let canConnect;
   let hasConnection;
   let loading;
@@ -20,7 +20,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp3;
   let obj = startConnection(576);
   const cResult = obj.c(8);
-  let obj2 = startConnection(6683);
+  let obj2 = startConnection(6860);
   const providerConnection = obj2.useProviderConnection(arg0);
   ({ loading, hasConnection, canConnect, startConnection } = providerConnection);
   const account = providerConnection.account;
@@ -116,12 +116,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     });
-    const fn = function() {
+    function t0() {
       return closure_0(...arguments);
-    };
+    }
     cResult[0] = startConnection;
-    cResult[1] = fn;
-    tmp3 = fn;
+    cResult[1] = t0;
+    tmp3 = t0;
   } else {
     tmp3 = cResult[1];
   }
@@ -146,13 +146,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = tmp3;
   cResult[7] = obj3;
   tmp5 = obj3;
-}) : ((arg0) => {
+}) : (function useStartProviderConnection(arg0) {
   let account;
   let canConnect;
   let hasConnection;
   let loading;
   let startConnection;
-  let obj = startConnection(6683);
+  let obj = startConnection(6860);
   const providerConnection = obj.useProviderConnection(arg0);
   startConnection = providerConnection.startConnection;
   ({ loading, hasConnection, canConnect, account } = providerConnection);

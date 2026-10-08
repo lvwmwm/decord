@@ -1,24 +1,24 @@
-// Module ID: 15243
-// Function ID: 15244
+// Module ID: 15505
+// Function ID: 15506
 // Name: DisplayNameStylesAccessibilitySetting
-// Dependencies: [4885, 7645, 558, 576, 504, 14295, 11142, 1126, 2911, 2]
+// Dependencies: [5079, 7966, 558, 576, 504, 14520, 11262, 1126, 2955, 2]
 // Exports: onValueChange
 
-// Module 15243 (DisplayNameStylesAccessibilitySetting)
+// Module 15505 (DisplayNameStylesAccessibilitySetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef2911 from "module_2911" /* 2911 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14295 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import _modDef2955 from "module_2955" /* 2955 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14520 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useValue() {
   let tmp4;
   let tmp5;
   const obj = react;
@@ -37,7 +37,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useValue() {
   const items = [AccessibilityStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => AccessibilityStore.displayNameStylesEnabled);
@@ -49,7 +49,7 @@ function onValueChange(enabled) {
 let obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2911["2gFUEw"]);
+    return intl.string(_modDef2955["2gFUEw"]);
   },
   parent: MobileUserSettings.ACCESSIBILITY,
   useValue: tmp2,

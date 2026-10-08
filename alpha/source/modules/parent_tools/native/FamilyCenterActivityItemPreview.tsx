@@ -1,36 +1,35 @@
-// Module ID: 14727
-// Function ID: 14728
+// Module ID: 14988
+// Function ID: 14989
 // Name: FamilyCenterActivityItemPreview
-// Dependencies: [19, 17, 7904, 21, 4896, 14726, 587, 558, 576, 8508, 7883, 8511, 11776, 4832, 8346, 1980, 1977, 2]
+// Dependencies: [19, 17, 8323, 21, 5090, 14987, 587, 558, 576, 6164, 8992, 8303, 8995, 11843, 5026, 9005, 1992, 1989, 2]
 
-// Module 14727 (FamilyCenterActivityItemPreview)
+// Module 14988 (FamilyCenterActivityItemPreview)
+import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import utils from "utils" /* 1977 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
-import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 7883 */;
-import ProfileFrameConstants from "ProfileFrameConstants" /* 7904 */;
-import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 8511 */;
-import ShopIcon from "ShopIcon" /* 11776 */;
-import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 14726 */;
+import utils from "utils" /* 1989 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1992 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8303 */;
+import ProfileFrameConstants from "ProfileFrameConstants" /* 8323 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 8995 */;
+import ShopIcon from "ShopIcon" /* 11843 */;
+import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 14987 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let c3;
-let closure_4;
 let size;
 let size1;
 let size2;
 let size3;
 let size4;
 let tmp;
-const NameplateUtils = tmp(8508);
-({ View: c3, Image: closure_4 } = react_native);
-let closure_5 = ProfileFrameConstants.PROFILE_FRAME_ASPECT_RATIO;
+const NameplateUtils = tmp(8992);
+const View = react_native.View;
+let closure_4 = ProfileFrameConstants.PROFILE_FRAME_ASPECT_RATIO;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
 let obj = { purchasePlaceholder: size, avatarDecorationPreview: size1, nameplateContainer: size2, nameplatePreview: size3, profileFrameContainer: size4 };
@@ -40,9 +39,9 @@ size1 = { width: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE, height: Fami
 size2 = { width: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE, height: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE, marginRight: 12, borderRadius: nativeDefault.radii.xs, overflow: "hidden", position: "relative" };
 size3 = { position: "absolute", right: 0, width: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE * FamilyCenterActivityPurchaseRowUtils.NAMEPLATE_ASPECT_RATIO, height: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE };
 size4 = { width: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE, height: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE, marginRight: 12, alignItems: "center", justifyContent: "center" };
-let closure_7 = createStyles(obj);
+let closure_6 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AvatarDecorationPreviewImage(arg0) {
   let product;
   let styles;
   let tmp4;
@@ -76,28 +75,28 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       tmp6 = tmp8;
     }
-    const tmp11 = <React3 source={tmp7} style={styles.avatarDecorationPreview} fadeDuration={0} />;
+    const tmp11 = jsx(FastImageDefault, { source: tmp7, style: styles.avatarDecorationPreview, fadeDuration: 0 });
     cResult[4] = styles.avatarDecorationPreview;
     cResult[5] = tmp7;
     cResult[6] = tmp11;
     tmp8 = tmp11;
   }
   return tmp6;
-}) : ((arg0) => {
+}) : (function AvatarDecorationPreviewImage(arg0) {
   let product;
   let styles;
   ({ product, styles } = arg0);
   const obj = FamilyCenterActivityPurchaseRowUtils;
   const avatarDecorationPreviewUrl = obj.getAvatarDecorationPreviewUrl(product);
-  let tmp2 = null;
+  let tmp3 = null;
   if (null != avatarDecorationPreviewUrl) {
-    tmp2 = <React3 source={{ uri: avatarDecorationPreviewUrl }} style={styles.avatarDecorationPreview} fadeDuration={0} />;
     const obj3 = { uri: avatarDecorationPreviewUrl };
+    tmp3 = jsx(FastImageDefault, { source: obj3, style: styles.avatarDecorationPreview, fadeDuration: 0 });
   }
-  return tmp2;
+  return tmp3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplatePreviewImage(arg0) {
   let nameplateData;
   let styles;
   let tmp4;
@@ -137,33 +136,33 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         tmp6 = tmp12;
       }
-      const tmp15 = <_false style={styles.nameplateContainer}>{tmp8}</_false>;
+      const tmp15 = <View style={styles.nameplateContainer}>{tmp8}</View>;
       cResult[7] = styles.nameplateContainer;
       cResult[8] = tmp8;
       cResult[9] = tmp15;
       tmp12 = tmp15;
     }
-    const tmp11 = <React3 source={tmp7} style={styles.nameplatePreview} resizeMode="cover" fadeDuration={0} />;
+    const tmp11 = jsx(FastImageDefault, { source: tmp7, style: styles.nameplatePreview, resizeMode: "cover", fadeDuration: 0 });
     cResult[4] = styles.nameplatePreview;
     cResult[5] = tmp7;
     cResult[6] = tmp11;
     tmp8 = tmp11;
   }
   return tmp6;
-}) : ((styles) => {
+}) : (function NameplatePreviewImage(styles) {
   styles = styles.styles;
   const nameplateData = styles.nameplateData;
   const obj = NameplateUtils;
   const staticImageUrl = obj.getNameplateAssets(nameplateData).staticImageUrl;
-  let tmp = null;
+  let tmp2 = null;
   if (null != staticImageUrl) {
-    tmp = <_false style={styles.nameplateContainer}>{null}</_false>;
+    tmp2 = <View style={styles.nameplateContainer}>{null}</View>;
     const obj4 = { uri: staticImageUrl };
   }
-  return tmp;
+  return tmp2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileEffectPreviewImage(arg0) {
   let product;
   let styles;
   let tmp4;
@@ -197,28 +196,28 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       tmp6 = tmp8;
     }
-    const tmp11 = <React3 source={tmp7} style={styles.avatarDecorationPreview} fadeDuration={0} />;
+    const tmp11 = jsx(FastImageDefault, { source: tmp7, style: styles.avatarDecorationPreview, fadeDuration: 0 });
     cResult[4] = styles.avatarDecorationPreview;
     cResult[5] = tmp7;
     cResult[6] = tmp11;
     tmp8 = tmp11;
   }
   return tmp6;
-}) : ((arg0) => {
+}) : (function ProfileEffectPreviewImage(arg0) {
   let product;
   let styles;
   ({ product, styles } = arg0);
   const obj = FamilyCenterActivityPurchaseRowUtils;
   const profileEffectPreviewUrl = obj.getProfileEffectPreviewUrl(product);
-  let tmp2 = null;
+  let tmp3 = null;
   if (null != profileEffectPreviewUrl) {
-    tmp2 = <React3 source={{ uri: profileEffectPreviewUrl }} style={styles.avatarDecorationPreview} fadeDuration={0} />;
     const obj3 = { uri: profileEffectPreviewUrl };
+    tmp3 = jsx(FastImageDefault, { source: obj3, style: styles.avatarDecorationPreview, fadeDuration: 0 });
   }
-  return tmp2;
+  return tmp3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((styles) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileFramePreviewImage(styles) {
   const obj = react2;
   const cResult = obj.c(5);
   styles = styles.styles;
@@ -228,7 +227,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((styles) => {
     let tmp7;
     if (cResult[0] !== tmp5) {
       ProfileFrameSamplePreviewDefault;
-      const tmp11 = <tmp4Result profileFrame={tmp5} previewWidth={FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE * closure_5} previewHeight={FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE} profileBackgroundColor={nativeDefault.colors.BACKGROUND_BASE_LOW} />;
+      const tmp11 = <tmp4Result profileFrame={tmp5} previewWidth={FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE * closure_4} previewHeight={FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE} profileBackgroundColor={nativeDefault.colors.BACKGROUND_BASE_LOW} />;
       cResult[0] = tmp5;
       cResult[1] = tmp11;
       tmp7 = tmp11;
@@ -242,28 +241,28 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((styles) => {
       }
       tmp6 = tmp12;
     }
-    const tmp15 = <_false style={styles.profileFrameContainer}>{tmp7}</_false>;
+    const tmp15 = <View style={styles.profileFrameContainer}>{tmp7}</View>;
     cResult[2] = styles.profileFrameContainer;
     cResult[3] = tmp7;
     cResult[4] = tmp15;
     tmp12 = tmp15;
   }
   return tmp6;
-}) : ((arg0) => {
+}) : (function ProfileFramePreviewImage(arg0) {
   let product;
   let styles;
   ({ product, styles } = arg0);
   const tmp3 = useMaybeFetchProfileFrameDefault(product.skuId);
   let tmp4 = null;
   if (null != tmp3) {
-    ({ profileFrame: tmp3, previewWidth: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE * closure_5, previewHeight: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE, profileBackgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW });
+    ({ profileFrame: tmp3, previewWidth: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE * closure_4, previewHeight: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE, profileBackgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW });
     ProfileFrameSamplePreviewDefault;
-    tmp4 = <_false style={styles.profileFrameContainer}>{null}</_false>;
+    tmp4 = <View style={styles.profileFrameContainer}>{null}</View>;
   }
   return tmp4;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubscriptionPreview(arg0) {
   let styles;
   let subscriptionPlanId;
   const obj = react2;
@@ -281,7 +280,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       first = cResult[0];
     }
     if (cResult[1] !== styles.purchasePlaceholder) {
-      const tmp20 = <_false style={styles.purchasePlaceholder}>{first}</_false>;
+      const tmp20 = <View style={styles.purchasePlaceholder}>{first}</View>;
       cResult[1] = styles.purchasePlaceholder;
       cResult[2] = tmp20;
       tmp17 = tmp20;
@@ -305,9 +304,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let NitroWheelIcon;
       const tmp7 = jsx;
       if (tmp4) {
-        NitroWheelIcon = tmp(4832).BoostGemIcon;
+        NitroWheelIcon = tmp(5026).BoostGemIcon;
       } else {
-        NitroWheelIcon = tmp(8346).NitroWheelIcon;
+        NitroWheelIcon = tmp(9005).NitroWheelIcon;
       }
       const obj4 = { size: "custom", style: { width: 20, height: 20 } };
       const tmp7Result = tmp7(NitroWheelIcon, obj4);
@@ -324,30 +323,30 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       return tmp9;
     }
-    const tmp12 = <_false style={styles.purchasePlaceholder}>{tmp6}</_false>;
+    const tmp12 = <View style={styles.purchasePlaceholder}>{tmp6}</View>;
     cResult[7] = styles.purchasePlaceholder;
     cResult[8] = tmp6;
     cResult[9] = tmp12;
     tmp9 = tmp12;
   }
-}) : ((arg0) => {
+}) : (function SubscriptionPreview(arg0) {
   let styles;
   let subscriptionPlanId;
   ({ subscriptionPlanId, styles } = arg0);
   if (null == subscriptionPlanId) {
-    return <_false style={styles.purchasePlaceholder}>{null}</_false>;
+    return <View style={styles.purchasePlaceholder}>{null}</View>;
   } else {
     const obj4 = FamilyCenterActivityPurchaseRowUtils;
     if (obj4.isGuildBoostSubscription(subscriptionPlanId)) {
-      let NitroWheelIcon = tmp5(4832).BoostGemIcon;
+      let NitroWheelIcon = tmp5(5026).BoostGemIcon;
     } else {
-      NitroWheelIcon = tmp5(8346).NitroWheelIcon;
+      NitroWheelIcon = tmp5(9005).NitroWheelIcon;
     }
     return <tmp8 style={styles.purchasePlaceholder}>{null}</tmp8>;
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollectiblePreview(arg0) {
   let product;
   let styles;
   const obj = react2;
@@ -365,7 +364,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       first = cResult[0];
     }
     if (cResult[1] !== styles.purchasePlaceholder) {
-      const tmp36 = <_false style={styles.purchasePlaceholder}>{first}</_false>;
+      const tmp36 = <View style={styles.purchasePlaceholder}>{first}</View>;
       cResult[1] = styles.purchasePlaceholder;
       cResult[2] = tmp36;
       tmp33 = tmp36;
@@ -383,7 +382,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         return tmp25;
       }
-      const tmp28 = <closure_8 product={product} styles={styles} />;
+      const tmp28 = <closure_7 product={product} styles={styles} />;
       cResult[3] = product;
       cResult[4] = styles;
       cResult[5] = tmp28;
@@ -408,7 +407,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       let tmp22 = null;
       if (null != tmp19) {
-        tmp22 = <closure_9 nameplateData={tmp19} styles={styles} />;
+        tmp22 = <closure_8 nameplateData={tmp19} styles={styles} />;
       }
       cResult[8] = tmp19;
       cResult[9] = styles;
@@ -422,7 +421,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         return tmp15;
       }
-      const tmp18 = <closure_10 product={product} styles={styles} />;
+      const tmp18 = <closure_9 product={product} styles={styles} />;
       cResult[11] = product;
       cResult[12] = styles;
       cResult[13] = tmp18;
@@ -435,7 +434,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         return tmp11;
       }
-      const tmp14 = <closure_11 product={product} styles={styles} />;
+      const tmp14 = <closure_10 product={product} styles={styles} />;
       cResult[14] = product;
       cResult[15] = styles;
       cResult[16] = tmp14;
@@ -452,7 +451,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp4 = cResult[17];
       }
       if (cResult[18] !== styles.purchasePlaceholder) {
-        const tmp10 = <_false style={styles.purchasePlaceholder}>{tmp4}</_false>;
+        const tmp10 = <View style={styles.purchasePlaceholder}>{tmp4}</View>;
         cResult[18] = styles.purchasePlaceholder;
         cResult[19] = tmp10;
         tmp7 = tmp10;
@@ -462,35 +461,35 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return tmp7;
     }
   }
-}) : ((arg0) => {
+}) : (function CollectiblePreview(arg0) {
   let product;
   let styles;
   ({ product, styles } = arg0);
   if (null == product) {
-    return <_false style={styles.purchasePlaceholder}>{null}</_false>;
+    return <View style={styles.purchasePlaceholder}>{null}</View>;
   } else {
     const type = product.type;
     if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
-      return <closure_8 product={product} styles={styles} />;
+      return <closure_7 product={product} styles={styles} />;
     } else if (CollectiblesItemType.CollectiblesItemType.NAMEPLATE === type) {
       const tmp17Result = utils;
       const nameplateDataFromProductRecord = tmp17Result.getNameplateDataFromProductRecord(product);
       let tmp8 = null;
       if (null != nameplateDataFromProductRecord) {
-        tmp8 = <closure_9 nameplateData={nameplateDataFromProductRecord} styles={styles} />;
+        tmp8 = <closure_8 nameplateData={nameplateDataFromProductRecord} styles={styles} />;
       }
       return tmp8;
     } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_EFFECT === type) {
-      return <closure_10 product={product} styles={styles} />;
+      return <closure_9 product={product} styles={styles} />;
     } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_FRAME === type) {
-      return <closure_11 product={product} styles={styles} />;
+      return <closure_10 product={product} styles={styles} />;
     } else {
-      return <_false style={styles.purchasePlaceholder}>{null}</_false>;
+      return <View style={styles.purchasePlaceholder}>{null}</View>;
     }
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterActivityItemPreview(arg0) {
   let displayName;
   let isSubscription;
   let product;
@@ -499,7 +498,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = react2;
   const cResult = obj.c(8);
   ({ displayName, product, isSubscription, subscriptionPlanId } = arg0);
-  const tmp2 = closure_7();
+  const tmp2 = closure_6();
   if (cResult[0] === isSubscription) {
     if (cResult[1] === product) {
       if (cResult[2] === tmp2) {
@@ -514,7 +513,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           return tmp8;
         }
-        const tmp11 = <_false accessible accessibilityLabel={displayName}>{tmp3}</_false>;
+        const tmp11 = <View accessible accessibilityLabel={displayName}>{tmp3}</View>;
         cResult[5] = displayName;
         cResult[6] = tmp3;
         cResult[7] = tmp11;
@@ -524,10 +523,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (isSubscription) {
     const obj3 = { subscriptionPlanId, styles: tmp2 };
-    tmp4Result = tmp4(closure_12, obj3);
+    tmp4Result = tmp4(closure_11, obj3);
   } else {
     const obj4 = { product, styles: tmp2 };
-    tmp4Result = tmp4(closure_13, obj4);
+    tmp4Result = tmp4(closure_12, obj4);
   }
   cResult[0] = isSubscription;
   cResult[1] = product;
@@ -535,24 +534,24 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = subscriptionPlanId;
   cResult[4] = tmp4Result;
   tmp3 = tmp4Result;
-}) : ((arg0) => {
+}) : (function FamilyCenterActivityItemPreview(arg0) {
   let displayName;
   let isSubscription;
   let product;
   let subscriptionPlanId;
   let tmp2Result;
   ({ displayName, product, isSubscription, subscriptionPlanId } = arg0);
-  const tmp = closure_7();
+  const tmp = closure_6();
   if (isSubscription) {
     const obj2 = { subscriptionPlanId, styles: tmp };
-    tmp2Result = tmp2(closure_12, obj2);
+    tmp2Result = tmp2(closure_11, obj2);
   } else {
     const obj3 = { product, styles: tmp };
-    tmp2Result = tmp2(closure_13, obj3);
+    tmp2Result = tmp2(closure_12, obj3);
   }
   return <tmp3 accessible accessibilityLabel={displayName}>{tmp2Result}</tmp3>;
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityItemPreview.tsx");
 
-export default tmp5;
+export default tmp4;

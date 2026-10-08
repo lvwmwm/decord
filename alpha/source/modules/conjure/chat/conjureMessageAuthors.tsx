@@ -1,12 +1,12 @@
-// Module ID: 16674
-// Function ID: 16675
+// Module ID: 16937
+// Function ID: 16938
 // Name: conjureMessageAuthors
-// Dependencies: [1377, 7863, 2]
+// Dependencies: [1389, 8281, 2]
 // Exports: requestMessageAuthor, resolveMessageAuthor
 
-// Module 16674 (conjureMessageAuthors)
-import UserActionCreatorsAll from "UserActionCreators" /* 7863 */;
-import UserStore from "UserStore" /* 1377 */;
+// Module 16937 (conjureMessageAuthors)
+import UserActionCreatorsAll from "UserActionCreators" /* 8281 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 let importAll;
@@ -31,24 +31,23 @@ export const resolveMessageAuthor = function resolveMessageAuthor(arg0, user, cu
   }
   return tmp;
 };
-export const requestMessageAuthor = function requestMessageAuthor(arg0) {
-  let closure_0;
-  importAll = arg0;
-  if (null != arg0) {
+export const requestMessageAuthor = function requestMessageAuthor(actor_user_id) {
+  importAll = actor_user_id;
+  if (null != actor_user_id) {
     const obj2 = set;
-    if (!set.has(arg0)) {
-      if (null == UserStore.getUser(arg0)) {
-        let num = map.get(arg0);
+    if (!set.has(actor_user_id)) {
+      if (null == UserStore.getUser(actor_user_id)) {
+        let num = map.get(actor_user_id);
         const obj3 = map;
         if (num == null) {
           num = 0;
         }
         if (num < 3) {
-          const result = obj3.set(arg0, num + 1);
-          obj2.add(arg0);
+          const result = obj3.set(actor_user_id, num + 1);
+          obj2.add(actor_user_id);
           const obj = UserActionCreatorsAll;
-          const user = obj.getUser(arg0);
-          const cleanupPromise = user.finally(() => set.delete(closure_0));
+          const user = obj.getUser(actor_user_id);
+          const cleanupPromise = user.finally(() => set.delete(actor_user_id));
           cleanupPromise.catch(() => {
 
           });

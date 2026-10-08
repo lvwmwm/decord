@@ -1,20 +1,20 @@
-// Module ID: 9777
-// Function ID: 9778
+// Module ID: 9627
+// Function ID: 9628
 // Name: SummaryActionCreators
-// Dependencies: [5, 19, 5443, 2051, 9778, 1085, 1102, 584, 1282, 5319, 12, 9780, 558, 576, 573, 2]
+// Dependencies: [5, 19, 5753, 2063, 9572, 1085, 1102, 584, 1294, 5631, 12, 9574, 558, 576, 573, 2]
 // Exports: deleteSummary, fetchSummaries, setHighlightedSummary, setSelectedSummary, setSummaryFeedback, stopPolling, toggleTopicsBar, updateVisibleMessages
 
-// Module 9777 (SummaryActionCreators)
+// Module 9627 (SummaryActionCreators)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5443 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import SummaryStore from "SummaryStore" /* 9778 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5753 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import SummaryStore from "SummaryStore" /* 9572 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -528,7 +528,7 @@ let closure_9 = 30 * DurationsDefault.Millis.SECOND;
 let closure_10 = {};
 let closure_11 = {};
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetchChannelAffinitiesAndSummaries(arg0) {
   let connected;
   let obj2;
   let stateFromStores;
@@ -673,7 +673,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[9] = items2;
   tmp11 = items2;
   tmp10 = fn2;
-}) : (() => {
+}) : (function useMaybeFetchChannelAffinitiesAndSummaries() {
   let connected;
   let items = arg0;
   if (arg0 === undefined) {

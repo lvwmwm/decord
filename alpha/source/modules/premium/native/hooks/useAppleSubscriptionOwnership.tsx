@@ -1,31 +1,32 @@
-// Module ID: 13210
-// Function ID: 13211
+// Module ID: 13510
+// Function ID: 13511
 // Name: useAppleSubscriptionOwnership
-// Dependencies: [32, 19, 13211, 1986, 6931, 1085, 558, 576, 504, 1369, 13212, 2]
+// Dependencies: [32, 19, 13511, 1998, 7120, 1085, 558, 576, 504, 1381, 13512, 2]
 
-// Module 13210 (useAppleSubscriptionOwnership)
+// Module 13510 (useAppleSubscriptionOwnership)
 import Constants from "Constants" /* 1085 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ApplePurchasesStore from "ApplePurchasesStore" /* 13211 */;
-import AppStateStore from "AppStateStore" /* 1986 */;
-import IAPStore from "IAPStore" /* 6931 */;
+import ApplePurchasesStore from "ApplePurchasesStore" /* 13511 */;
+import AppStateStore_mod from "AppStateStore" /* 1998 */;
+import IAPStore from "IAPStore" /* 7120 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c0, closure_4;
+let c0, closure_4, flag, nextPromise, tmp3, tmp6, tmp7;
 
 let react = react_mod;
+let AppStateStore = AppStateStore_mod;
 const AppStates = Constants.AppStates;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((paymentGatewaySubscriptionId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppleSubscriptionOwnership(paymentGatewaySubscriptionId) {
   let closure_3;
   let prop;
   let ready;
   let state;
   let stateFromStores1;
-  let tmp14;
+  let tmp13;
+  let tmp15;
   let tmp16;
-  let tmp17;
   let tmp4;
   let tmp5;
   let tmp8;
@@ -51,15 +52,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((paymentGatewaySubscr
   const tmpResult = tmp(tmp2[8]);
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [state];
-    class S {
+    const items1 = [AppStateStore];
+    class A {
       constructor() {
-        return ready.isReady();
+        return state.getState();
       }
     }
     cResult[2] = items1;
-    cResult[3] = tmp11;
-    tmp9 = tmp11;
+    cResult[3] = A;
+    tmp9 = A;
     tmp8 = items1;
   } else {
     tmp8 = cResult[2];
@@ -73,114 +74,154 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((paymentGatewaySubscr
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [closure_4];
-    class S {
+    class A {
       constructor() {
-        return ready.isReady();
+        return state.getState();
       }
     }
     cResult[4] = items2;
-    tmp14 = items2;
+    tmp13 = items2;
   } else {
-    tmp14 = cResult[4];
+    tmp13 = cResult[4];
   }
   if (cResult[5] !== prop) {
-    const fn = function _() {
+    const fn = function y() {
       return ApplePurchasesStore.hasOwnership(prop);
     };
     const items3 = [prop];
-    class S {
+    class A {
       constructor() {
-        return ready.isReady();
+        return state.getState();
       }
     }
     cResult[5] = prop;
     cResult[6] = fn;
     cResult[7] = items3;
-    tmp17 = items3;
-    tmp16 = fn;
+    tmp16 = items3;
+    tmp15 = fn;
   } else {
-    tmp16 = cResult[6];
-    tmp17 = cResult[7];
+    tmp15 = cResult[6];
+    tmp16 = cResult[7];
   }
   const tmpResult5 = tmp(tmp2[8]);
-  const stateFromStores2 = tmpResult5.useStateFromStores(tmp14, tmp16, tmp17);
+  const stateFromStores2 = tmpResult5.useStateFromStores(tmp13, tmp15, tmp16);
   if (cResult[8] === prop) {
     if (cResult[9] === stateFromStores) {
       if (paymentGatewaySubscriptionId != null) {
         const isPurchasedViaApple = paymentGatewaySubscriptionId.isPurchasedViaApple;
       }
-      class S {
+      class A {
         constructor() {
-          return ready.isReady();
+          return state.getState();
         }
       }
-      react = tmp20;
-      const tmp24 = stateFromStores2(react.useState(null), 2);
-      closure_4 = tmp24[1];
-      state = tmp25;
+      react = tmp19;
+      const tmp23 = stateFromStores2(react.useState(null), 2);
+      closure_4 = tmp23[1];
+      AppStateStore = tmp24;
       const obj6 = react;
       if (cResult[12] === stateFromStores1) {
         if (cResult[13] === prop) {
+          let tmp25;
           let tmp26;
-          let tmp27;
-          if (cResult[14] === tmp20) {
-            tmp26 = cResult[15];
-            tmp27 = cResult[16];
+          if (cResult[14] === tmp19) {
+            tmp25 = cResult[15];
+            tmp26 = cResult[16];
           }
-          const effect = obj6.useEffect(tmp26, tmp27);
-          if (cResult[17] === (null != prop && tmp24[0] === prop)) {
+          const effect = obj6.useEffect(tmp25, tmp26);
+          if (cResult[17] === (null != prop && tmp23[0] === prop)) {
             if (cResult[18] === stateFromStores2) {
-              let tmp29;
-              if (cResult[19] === tmp20) {
-                tmp29 = cResult[20];
+              let tmp28;
+              if (cResult[19] === tmp19) {
+                tmp28 = cResult[20];
               }
-              return tmp29;
+              return tmp28;
             }
           }
-          class S {
+          class A {
             constructor() {
-              return ready.isReady();
+              return state.getState();
             }
           }
-          tmp30[0] = function isMismatch() {
+          tmp29[0] = function isMismatch() {
             return state && react && !stateFromStores2;
           };
-          cResult[17] = null != prop && tmp24[0] === prop;
+          cResult[17] = null != prop && tmp23[0] === prop;
           cResult[18] = stateFromStores2;
-          cResult[19] = tmp20;
-          cResult[20] = tmp30;
-          tmp29 = tmp30;
-        }
-      }
-      const fn2 = function w() {
-        let tmp = closure_3;
-        if (tmp) {
-          if (null != prop) {
-            if (c0 === constants.ACTIVE) {
-              c0 = false;
-              const obj = stateFromStores1(prop[10]);
-              const applePurchases = obj.fetchApplePurchases();
-              applePurchases.then((result) => {
-                const tmp = !c0 && result;
-                if (tmp) {
-                  closure_4(prop);
+          cResult[19] = tmp19;
+          cResult[20] = tmp29;
+          class P {
+            constructor() {
+              tmp = closure_3;
+              if (tmp) {
+                tmp2 = closure_1;
+                tmp3 = null;
+                if (null != closure_1) {
+                  tmp4 = c0;
+                  tmp5 = closure_1_7;
+                  if (c0 === closure_1_7.ACTIVE) {
+                    flag = false;
+                    c0 = false;
+                    tmp6 = closure_0;
+                    tmp7 = closure_1;
+                    obj = closure_0(closure_1[10]);
+                    applePurchases = obj.fetchApplePurchases();
+                    nextPromise = applePurchases.then((result) => {
+                      const tmp = !c0 && result;
+                      if (tmp) {
+                        closure_4(prop);
+                      }
+                    });
+                    return () => {
+                      c0 = true;
+                    };
+                  }
                 }
-              });
-              return () => {
-                c0 = true;
-              };
+              }
+              return;
             }
           }
         }
-      };
-      const items4 = [tmp20, prop, stateFromStores1];
+      }
+      class P {
+        constructor() {
+          tmp = closure_3;
+          if (tmp) {
+            tmp2 = closure_1;
+            tmp3 = null;
+            if (null != closure_1) {
+              tmp4 = c0;
+              tmp5 = closure_1_7;
+              if (c0 === closure_1_7.ACTIVE) {
+                flag = false;
+                c0 = false;
+                tmp6 = closure_0;
+                tmp7 = closure_1;
+                obj = closure_0(closure_1[10]);
+                applePurchases = obj.fetchApplePurchases();
+                nextPromise = applePurchases.then((result) => {
+                  const tmp = !c0 && result;
+                  if (tmp) {
+                    closure_4(prop);
+                  }
+                });
+                return () => {
+                  c0 = true;
+                };
+              }
+            }
+          }
+          return;
+        }
+      }
+      const items4 = [tmp19, prop, stateFromStores1];
       cResult[12] = stateFromStores1;
       cResult[13] = prop;
-      cResult[14] = tmp20;
-      cResult[15] = fn2;
+      cResult[14] = tmp19;
+      cResult[15] = P;
       cResult[16] = items4;
-      tmp27 = items4;
-      tmp26 = fn2;
+      tmp26 = items4;
+      tmp25 = P;
     }
   }
   const tmpResult6 = tmp(tmp2[9]);
@@ -189,9 +230,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((paymentGatewaySubscr
     if (paymentGatewaySubscriptionId != null) {
       const isPurchasedViaApple2 = paymentGatewaySubscriptionId.isPurchasedViaApple;
     }
-    class S {
+    class A {
       constructor() {
-        return ready.isReady();
+        return state.getState();
       }
     }
   }
@@ -212,7 +253,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((paymentGatewaySubscr
   }
   cResult[10] = isPurchasedViaApple1;
   cResult[11] = isIOSResult;
-}) : ((paymentGatewaySubscriptionId) => {
+}) : (function useAppleSubscriptionOwnership(paymentGatewaySubscriptionId) {
   let prop;
   let ready;
   let state;

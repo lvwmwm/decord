@@ -1,12 +1,12 @@
-// Module ID: 16912
-// Function ID: 16913
+// Module ID: 17193
+// Function ID: 17194
 // Name: useFileOrLinkImageDimensions
-// Dependencies: [19, 7524, 558, 576, 2]
+// Dependencies: [19, 9247, 558, 576, 2]
 
-// Module 16912 (useFileOrLinkImageDimensions)
+// Module 17193 (useFileOrLinkImageDimensions)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import SearchConstants from "SearchConstants" /* 7524 */;
+import SearchConstants from "SearchConstants" /* 9247 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 ({ FILES_OR_LINKS_GAP_WIDTH: c3, FILES_OR_LINKS_NUM_COLUMNS: closure_4, FILE_OR_LINK_IMAGE_RATIO: hasOwnProperty, SEARCH_LIST_HORIZONTAL_PADDING: metroRequire } = SearchConstants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFileOrLinkImageDimensions(arg0) {
   const obj = react2;
   const cResult = obj.c(3);
   const diff = (arg0 - 2 * metroRequire - (React3 - 1) * _false) / React3 - 2;
@@ -32,7 +32,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = diff;
   cResult[2] = size;
   tmp4 = size;
-}) : ((arg0) => {
+}) : (function useFileOrLinkImageDimensions(arg0) {
   const diff = (arg0 - 2 * metroRequire - (React3 - 1) * _false) / React3 - 2;
   const result = diff * hasOwnProperty;
   const items = [result, diff];

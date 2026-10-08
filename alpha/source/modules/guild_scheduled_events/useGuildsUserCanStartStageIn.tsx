@@ -1,19 +1,18 @@
-// Module ID: 9223
-// Function ID: 9224
+// Module ID: 8531
+// Function ID: 8532
 // Name: useGuildsUserCanStartStageIn
-// Dependencies: [4513, 4515, 2060, 558, 576, 504, 2]
+// Dependencies: [4705, 4707, 2072, 558, 576, 504, 2]
 
-// Module 9223 (useGuildsUserCanStartStageIn)
-import GuildChannelStore2 from "GuildChannelStore" /* 4513 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+// Module 8531 (useGuildsUserCanStartStageIn)
+import GuildChannelStore2 from "GuildChannelStore" /* 4705 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const GuildChannelStore = GuildChannelStore2;
-let id;
 
 const GUILD_VOCAL_CHANNELS_KEY = GuildChannelStore2.GUILD_VOCAL_CHANNELS_KEY;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelsUserCanStartStageIn(id) {
   let first;
   let tmp8;
   let tmp9;
@@ -35,36 +34,30 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     first = cResult[0];
   }
   if (cResult[1] !== id) {
-    const fn = function c() {
-      const arr = GuildChannelStore.getChannels(id)[GUILD_VOCAL_CHANNELS_KEY];
-      return arr.reduce((arr, channel) => {
-        channel = channel.channel;
-        if (channel.isGuildStageVoice()) {
-          const channel2 = channel.channel;
-          const obj = closure_1_4;
-          if (closure_1_4 !== undefined) {
-            const canResult = channel2.isGuildStageVoice() && obj.can(id(closure_1_1[2]).MODERATE_STAGE_CHANNEL_PERMISSIONS, channel2);
-            if (canResult) {
-              arr.push(channel);
-            }
-          }
-        }
-        return arr;
-      }, []);
-    };
+    class S {
+      constructor() {
+        arr = closure_2.getChannels(c0)[GUILD_VOCAL_CHANNELS_KEY];
+        return arr.reduce(() => { /* body not rendered: F140430 */ }, []);
+      }
+    }
     const items1 = [id];
     cResult[1] = id;
-    cResult[2] = fn;
+    cResult[2] = S;
     cResult[3] = items1;
     tmp9 = items1;
-    tmp8 = fn;
+    tmp8 = S;
   } else {
-    tmp8 = cResult[2];
+    class S {
+      constructor() {
+        arr = closure_2.getChannels(c0)[GUILD_VOCAL_CHANNELS_KEY];
+        return arr.reduce(() => { /* body not rendered: F140430 */ }, []);
+      }
+    }
     tmp9 = cResult[3];
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresArray(first, tmp8, tmp9);
-}) : ((id) => {
+}) : (function useChannelsUserCanStartStageIn(id) {
   id = undefined;
   if (id != null) {
     id = id.id;

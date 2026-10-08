@@ -1,23 +1,23 @@
-// Module ID: 12905
-// Function ID: 12906
+// Module ID: 13054
+// Function ID: 13055
 // Name: useBadgeDirectoryNuxPopoverVariant
-// Dependencies: [32, 19, 7874, 558, 576, 504, 569, 1102, 7879, 10902, 12906, 2]
+// Dependencies: [32, 19, 8292, 558, 576, 504, 569, 1102, 8297, 10553, 13055, 2]
 // Exports: useBadgeDirectoryNuxPopoverVariant
 
-// Module 12905 (useBadgeDirectoryNuxPopoverVariant)
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7879 */;
-import BadgeDirectoryNuxGraphicUtils from "BadgeDirectoryNuxGraphicUtils" /* 12906 */;
+// Module 13054 (useBadgeDirectoryNuxPopoverVariant)
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8297 */;
+import BadgeDirectoryNuxGraphicUtils from "BadgeDirectoryNuxGraphicUtils" /* 13055 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import BadgeDirectoryStore_mod from "BadgeDirectoryStore" /* 7874 */;
+import BadgeDirectoryStore_mod from "BadgeDirectoryStore" /* 8292 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let failResult, fetchCatalog, succeedResult;
+let failResult, succeedResult;
 
 let BadgeDirectoryStore = BadgeDirectoryStore_mod;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((fetchCatalog) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBadgeDirectoryNuxPopoverState(fetchCatalog) {
   let currentUserId;
   let enabled;
   let first;
@@ -128,7 +128,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((fetchCatalog) => {
       }
     }
   }
-  class I {
+  class N {
     constructor() {
       tmp = currentUserId;
       if (null != currentUserId) {
@@ -172,8 +172,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((fetchCatalog) => {
   cResult[12] = first1;
   cResult[13] = tmp5;
   cResult[14] = items4;
-  cResult[15] = I;
-}) : ((fetchCatalog) => {
+  cResult[15] = N;
+}) : (function useBadgeDirectoryNuxPopoverState(fetchCatalog) {
   let currentUserId;
   let enabled;
   let tmp9;
@@ -311,4 +311,6 @@ ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const result1 = size.fileFinishedImporting("modules/badges/useBadgeDirectoryNuxPopoverVariant.tsx");
 
 export const useBadgeDirectoryNuxPopoverState = tmp2;
-export const useBadgeDirectoryNuxPopoverVariant = (arg0) => closure_6(arg0).variantProps;
+export const useBadgeDirectoryNuxPopoverVariant = function useBadgeDirectoryNuxPopoverVariant(arg0) {
+  return closure_6(arg0).variantProps;
+};

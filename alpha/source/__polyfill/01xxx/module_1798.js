@@ -1,82 +1,41 @@
 // Module ID: 1798
 // Function ID: 1799
-// Dependencies: [1788, 1790]
-// Exports: useAnimatedScrollHandler
+// Dependencies: [1799, 1803, 1804, 1808, 1809, 1810, 1811, 1805, 1812, 1813, 1802, 1814, 1800, 1817, 1818, 1807, 1819]
 
 // Module 1798
-import _mod1788 from "module_1788" /* 1788 */;
+import _mod1799 from "module_1799" /* 1799 */;
+import _mod1800 from "module_1800" /* 1800 */;
+import react from "react" /* 1802 */;
+import _mod1803 from "module_1803" /* 1803 */;
+import _mod1804 from "module_1804" /* 1804 */;
+import _mod1805 from "module_1805" /* 1805 */;
+import _mod1807 from "module_1807" /* 1807 */;
+import _mod1808 from "module_1808" /* 1808 */;
+import _mod1809 from "module_1809" /* 1809 */;
+import _mod1810 from "module_1810" /* 1810 */;
+import _mod1811 from "module_1811" /* 1811 */;
+import _mod1812 from "module_1812" /* 1812 */;
+import _mod1813 from "module_1813" /* 1813 */;
+import react2 from "react" /* 1814 */;
+import _mod1817 from "module_1817" /* 1817 */;
+import _mod1818 from "module_1818" /* 1818 */;
+import react3 from "react" /* 1819 */;
 
-let tmp2;
-const react = tmp2(1790);
-const __initData = { code: "function pnpm_useAnimatedScrollHandlerTs1(event){const{scrollHandlers,context}=this.__closure;const{onScroll:onScroll,onBeginDrag:onBeginDrag,onEndDrag:onEndDrag,onMomentumBegin:onMomentumBegin,onMomentumEnd:onMomentumEnd}=scrollHandlers;if(onScroll&&event.eventName.endsWith('onScroll')){onScroll(event,context);}else if(onBeginDrag&&event.eventName.endsWith('onScrollBeginDrag')){onBeginDrag(event,context);}else if(onEndDrag&&event.eventName.endsWith('onScrollEndDrag')){onEndDrag(event,context);}else if(onMomentumBegin&&event.eventName.endsWith('onMomentumScrollBegin')){onMomentumBegin(event,context);}else if(onMomentumEnd&&event.eventName.endsWith('onMomentumScrollEnd')){onMomentumEnd(event,context);}}" };
 
-export const useAnimatedScrollHandler = function useAnimatedScrollHandler(fn, items) {
-  let tmp = fn;
-  if (typeof fn === "function") {
-    let obj2 = { onScroll: fn };
-    tmp = obj2;
-  }
-  obj2 = tmp;
-  const obj = _mod1788;
-  const handler = obj.useHandler(tmp, items);
-  const context = handler.context;
-  items = ["onScroll"];
-  const doDependenciesDiffer = handler.doDependenciesDiffer;
-  if (undefined !== tmp.onBeginDrag) {
-    items.push("onScrollBeginDrag");
-  }
-  if (undefined !== tmp.onEndDrag) {
-    items.push("onScrollEndDrag");
-  }
-  if (undefined !== tmp.onMomentumBegin) {
-    items.push("onMomentumScrollBegin");
-  }
-  if (undefined !== tmp.onMomentumEnd) {
-    items.push("onMomentumScrollEnd");
-  }
-  fn = function l(eventName) {
-    let onBeginDrag;
-    let onEndDrag;
-    let onMomentumBegin;
-    let onMomentumEnd;
-    let onScroll;
-    ({ onScroll, onBeginDrag, onEndDrag, onMomentumBegin, onMomentumEnd } = obj2);
-    if (onScroll) {
-      eventName = eventName.eventName;
-      if (eventName.endsWith("onScroll")) {
-        onScroll(eventName, context);
-      }
-    }
-    if (onBeginDrag) {
-      const eventName2 = eventName.eventName;
-      if (eventName2.endsWith("onScrollBeginDrag")) {
-        onBeginDrag(eventName, context);
-      }
-    }
-    if (onEndDrag) {
-      const eventName3 = eventName.eventName;
-      if (eventName3.endsWith("onScrollEndDrag")) {
-        onEndDrag(eventName, context);
-      }
-    }
-    if (onMomentumBegin) {
-      const eventName4 = eventName.eventName;
-      if (eventName4.endsWith("onMomentumScrollBegin")) {
-        onMomentumBegin(eventName, context);
-      }
-    }
-    let endsWithResult = onMomentumEnd;
-    if (endsWithResult) {
-      const eventName5 = eventName.eventName;
-      endsWithResult = eventName5.endsWith("onMomentumScrollEnd");
-    }
-    if (endsWithResult) {
-      onMomentumEnd(eventName, context);
-    }
-  };
-  fn.__closure = { scrollHandlers: tmp, context };
-  fn.__workletHash = 480432859268;
-  fn.__initData = __initData;
-  const tmp2Result = react;
-  return tmp2Result.useEvent(fn, items, doDependenciesDiffer);
-};
+export const useAnimatedGestureHandler = _mod1799.useAnimatedGestureHandler;
+export const useAnimatedKeyboard = _mod1803.useAnimatedKeyboard;
+export const useAnimatedProps = _mod1804.useAnimatedProps;
+export const useAnimatedReaction = _mod1808.useAnimatedReaction;
+export const useAnimatedRef = _mod1809.useAnimatedRef;
+export const useAnimatedScrollHandler = _mod1810.useAnimatedScrollHandler;
+export const useAnimatedSensor = _mod1811.useAnimatedSensor;
+export const useAnimatedStyle = _mod1805.useAnimatedStyle;
+export const useComposedEventHandler = _mod1812.useComposedEventHandler;
+export const useDerivedValue = _mod1813.useDerivedValue;
+export const useEvent = react.useEvent;
+export const useFrameCallback = react2.useFrameCallback;
+export const useHandler = _mod1800.useHandler;
+export const useReducedMotion = _mod1817.useReducedMotion;
+export const useScrollViewOffset = _mod1818.useScrollViewOffset;
+export const useSharedValue = _mod1807.useSharedValue;
+export const useWorkletCallback = react3.useWorkletCallback;

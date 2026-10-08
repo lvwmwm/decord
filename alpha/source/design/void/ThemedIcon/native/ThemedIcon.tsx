@@ -1,24 +1,22 @@
-// Module ID: 13931
-// Function ID: 13932
+// Module ID: 14234
+// Function ID: 14235
 // Name: ThemedIcon
-// Dependencies: [109, 19, 21, 558, 576, 4586, 5603, 2]
+// Dependencies: [109, 19, 21, 558, 576, 4778, 5377, 2]
 
-// Module 13931 (ThemedIcon)
+// Module 14234 (ThemedIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import IconDefault from "Icon" /* 5603 */;
+import IconDefault from "Icon" /* 5377 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let themedColor;
-
 let tmp;
-const useToken = tmp(4586);
+const useToken = tmp(4778);
 let closure_3 = ["themedColor"];
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((themedColor) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThemedIcon(themedColor) {
   let tmp4;
   let tmp5;
   const obj = react2;
@@ -51,7 +49,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((themedColor) => {
   cResult[4] = token;
   cResult[5] = tmp13;
   tmp10 = tmp13;
-}) : ((themedColor) => {
+}) : (function ThemedIcon(themedColor) {
   themedColor = themedColor.themedColor;
   const merged = Object.assign(themedColor, Object.assign({ themedColor: 0 }));
   const obj = useToken;

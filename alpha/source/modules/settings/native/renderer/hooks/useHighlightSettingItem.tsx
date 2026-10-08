@@ -1,15 +1,15 @@
-// Module ID: 14521
-// Function ID: 14522
+// Module ID: 14781
+// Function ID: 14782
 // Name: useHighlightSettingItem
-// Dependencies: [14517, 558, 576, 2]
+// Dependencies: [14777, 558, 576, 2]
 
-// Module 14521 (useHighlightSettingItem)
+// Module 14781 (useHighlightSettingItem)
 import react from "react" /* 576 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14517 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14777 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHighlightSettingItem(arg0) {
   let tmp2;
   let closure_0 = arg0;
   const obj = react;
@@ -25,7 +25,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = cResult[1];
   }
   return UserSettingSearchStore.useState(tmp2);
-}) : ((arg0) => {
+}) : (function useHighlightSettingItem(arg0) {
   let closure_0 = arg0;
   return UserSettingSearchStore.useState((selected) => selected.selected === closure_0);
 });

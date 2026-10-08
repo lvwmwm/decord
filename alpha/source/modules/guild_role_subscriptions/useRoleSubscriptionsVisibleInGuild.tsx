@@ -1,16 +1,16 @@
-// Module ID: 6763
-// Function ID: 6764
+// Module ID: 6939
+// Function ID: 6940
 // Name: useRoleSubscriptionsVisibleInGuild
-// Dependencies: [2105, 2074, 1085, 6764, 6765, 558, 576, 504, 6766, 6771, 2]
+// Dependencies: [2117, 2086, 1085, 6940, 6941, 558, 576, 504, 6942, 6947, 2]
 // Exports: areRoleSubscriptionsVisibleInGuild
 
-// Module 6763 (useRoleSubscriptionsVisibleInGuild)
+// Module 6939 (useRoleSubscriptionsVisibleInGuild)
 import Constants from "Constants" /* 1085 */;
-import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 6764 */;
-import useHasRoleSubscriptionInGuild from "useHasRoleSubscriptionInGuild" /* 6765 */;
-import GuildProductsEligibility from "GuildProductsEligibility" /* 6771 */;
-import ImpersonateStore from "ImpersonateStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 6940 */;
+import useHasRoleSubscriptionInGuild from "useHasRoleSubscriptionInGuild" /* 6941 */;
+import GuildProductsEligibility from "GuildProductsEligibility" /* 6947 */;
+import ImpersonateStore from "ImpersonateStore" /* 2117 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ function computeCanEveryoneInGuildSeeRoleSubscriptions(c0, items) {
 }
 const GuildFeatures = Constants.GuildFeatures;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRoleSubscriptionsVisibleInGuild(arg0) {
   let closure_0;
   let first;
   let tmp8;
@@ -89,7 +89,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp11 = stateFromStores;
   }
   return tmp11;
-}) : ((arg0) => {
+}) : (function useRoleSubscriptionsVisibleInGuild(arg0) {
   let closure_0;
   _require = arg0;
   let items = [GuildStore, ImpersonateStore];
@@ -112,7 +112,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_7 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowRoleSubscriptionsInChannelList(arg0) {
   let tmp = closure_7(arg0);
   const obj = GuildProductsEligibility;
   const guildEligibleForGuildProducts = obj.useGuildEligibleForGuildProducts(arg0);
@@ -124,7 +124,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp = flag;
   }
   return tmp;
-}) : ((arg0) => {
+}) : (function useShowRoleSubscriptionsInChannelList(arg0) {
   let tmp = closure_7(arg0);
   const obj = GuildProductsEligibility;
   const guildEligibleForGuildProducts = obj.useGuildEligibleForGuildProducts(arg0);

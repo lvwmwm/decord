@@ -1,15 +1,15 @@
-// Module ID: 15530
-// Function ID: 15531
+// Module ID: 15792
+// Function ID: 15793
 // Name: PasskeyUpsellPromoSheet
-// Dependencies: [19, 17, 1085, 2048, 21, 558, 576, 15531, 15532, 15529, 6444, 6895, 1126, 1369, 5601, 10058, 5599, 2]
+// Dependencies: [19, 17, 1085, 2060, 21, 558, 576, 15793, 15794, 15791, 6622, 7084, 1126, 1381, 5375, 10303, 5963, 2]
 
-// Module 15530 (PasskeyUpsellPromoSheet)
+// Module 15792 (PasskeyUpsellPromoSheet)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 6444 */;
-import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 15529 */;
-import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 15532 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 6622 */;
+import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 15791 */;
+import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 15794 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -24,26 +24,25 @@ const Image = react_native.Image;
 const UserSettingsSections = Constants.UserSettingsSections;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PasswordlessUpsellPromoSheet() {
   let ButtonGroup;
   let first;
-  let intl;
-  let intl2;
-  let obj3;
-  let obj6;
+  let intl3;
+  let intl4;
+  let obj5;
   let ref;
   let tmp10;
   let tmp11;
   let tmp12;
   let tmp16;
-  let tmp18;
+  let tmp19;
   let tmp8;
   let tmp9;
   const tmp = _require;
   let obj = require("react");
   const cResult = obj.c(8);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { source: tmp(15531), style: { height: 190, width: 220, resizeMode: "contain" } };
+    let obj2 = { source: tmp(15793), style: { height: 190, width: 220, resizeMode: "contain" } };
     const tmp7 = closure_7(Image, obj2);
     cResult[0] = tmp7;
     first = tmp7;
@@ -52,7 +51,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   _require = react.useRef(false);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function h() {
+    function registerPasskey() {
       if (!ref.current) {
         tmp.current = true;
         let obj = PasskeyUpsellManagerDefault;
@@ -83,65 +82,37 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 
         });
       }
-    };
-    cResult[1] = fn;
-    tmp8 = fn;
+    }
+    cResult[1] = registerPasskey;
+    tmp8 = registerPasskey;
   } else {
     tmp8 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    class P {
-      constructor() {
-        const obj = PasskeyUpsellManagerDefault;
-        obj.markDismissed(constants.USER_DISMISS);
-        const obj2 = PasskeyUpsellActionCreatorsDefault;
-        const result = obj2.closePasskeyUpsellPromoSheet();
-      }
+    function onCancel() {
+      const obj = PasskeyUpsellManagerDefault;
+      obj.markDismissed(constants.USER_DISMISS);
+      const obj2 = PasskeyUpsellActionCreatorsDefault;
+      const result = obj2.closePasskeyUpsellPromoSheet();
     }
-    cResult[2] = P;
-    tmp9 = P;
+    cResult[2] = onCancel;
+    tmp9 = onCancel;
   } else {
-    class P {
-      constructor() {
-        const obj = PasskeyUpsellManagerDefault;
-        obj.markDismissed(constants.USER_DISMISS);
-        const obj2 = PasskeyUpsellActionCreatorsDefault;
-        const result = obj2.closePasskeyUpsellPromoSheet();
-      }
-    }
+    tmp9 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class P {
-      constructor() {
-        const obj = PasskeyUpsellManagerDefault;
-        obj.markDismissed(constants.USER_DISMISS);
-        const obj2 = PasskeyUpsellActionCreatorsDefault;
-        const result = obj2.closePasskeyUpsellPromoSheet();
-      }
-    }
-    const stringResult = obj3.string(tmp(1126).t.CjleBl);
-    const tmpResult = tmp(1369);
+    let stringResult1;
+    let intl = tmp(1126).intl;
+    const stringResult = intl.string(tmp(1126).t.CjleBl);
+    const tmpResult = tmp(1381);
     const isIOSResult = tmpResult.isIOS();
-    const string = tmp(1126).intl.string;
+    const intl2 = tmp(1126).intl;
+    const string = intl2.string;
     const t = tmp(1126).t;
     if (isIOSResult) {
-      class P {
-        constructor() {
-          const obj = PasskeyUpsellManagerDefault;
-          obj.markDismissed(constants.USER_DISMISS);
-          const obj2 = PasskeyUpsellActionCreatorsDefault;
-          const result = obj2.closePasskeyUpsellPromoSheet();
-        }
-      }
+      stringResult1 = string(t["7yxR9t"]);
     } else {
-      class P {
-        constructor() {
-          const obj = PasskeyUpsellManagerDefault;
-          obj.markDismissed(constants.USER_DISMISS);
-          const obj2 = PasskeyUpsellActionCreatorsDefault;
-          const result = obj2.closePasskeyUpsellPromoSheet();
-        }
-      }
+      stringResult1 = string(t.d6uxJy);
     }
     class I {
       constructor() {
@@ -150,92 +121,55 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     cResult[3] = stringResult;
-    cResult[4] = tmp15;
+    cResult[4] = stringResult1;
     cResult[5] = I;
-    tmp11 = tmp15;
+    tmp11 = stringResult1;
     tmp12 = I;
     tmp10 = stringResult;
   } else {
-    class P {
-      constructor() {
-        const obj = PasskeyUpsellManagerDefault;
-        obj.markDismissed(constants.USER_DISMISS);
-        const obj2 = PasskeyUpsellActionCreatorsDefault;
-        const result = obj2.closePasskeyUpsellPromoSheet();
-      }
-    }
+    tmp10 = cResult[3];
     tmp11 = cResult[4];
     tmp12 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class P {
-      constructor() {
-        const obj = PasskeyUpsellManagerDefault;
-        obj.markDismissed(constants.USER_DISMISS);
-        const obj2 = PasskeyUpsellActionCreatorsDefault;
-        const result = obj2.closePasskeyUpsellPromoSheet();
-      }
-    }
-    let obj4 = { size: "lg", onPress: tmp8, text: intl.string(tmp(1126).t.NIFmCJ) };
-    const Button = tmp(5601).Button;
-    intl = tmp(1126).intl;
-    const tmp17 = closure_7(Button, obj4);
+    let obj3 = { size: "lg", onPress: tmp8, text: intl3.string(tmp(1126).t.NIFmCJ) };
+    const Button = tmp(5375).Button;
+    intl3 = tmp(1126).intl;
+    const tmp18 = closure_7(Button, obj3);
     class I {
       constructor() {
         const obj = PasskeyUpsellManagerDefault;
         return obj.markDismissed(constants.USER_DISMISS);
       }
     }
-    tmp16 = tmp17;
+    tmp16 = tmp18;
   } else {
-    class P {
-      constructor() {
-        const obj = PasskeyUpsellManagerDefault;
-        obj.markDismissed(constants.USER_DISMISS);
-        const obj2 = PasskeyUpsellActionCreatorsDefault;
-        const result = obj2.closePasskeyUpsellPromoSheet();
-      }
-    }
+    tmp16 = cResult[6];
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    class P {
-      constructor() {
-        const obj = PasskeyUpsellManagerDefault;
-        obj.markDismissed(constants.USER_DISMISS);
-        const obj2 = PasskeyUpsellActionCreatorsDefault;
-        const result = obj2.closePasskeyUpsellPromoSheet();
-      }
-    }
-    const obj5 = { illustration: first, title: tmp10, description: tmp11, onDismiss: tmp12, actions: closure_8(ButtonGroup, obj6) };
-    const PromoSheet = tmp(10058).PromoSheet;
-    obj6 = { children: tmp20 };
+    let obj4 = { illustration: first, title: tmp10, description: tmp11, onDismiss: tmp12, actions: closure_8(ButtonGroup, obj5) };
+    const PromoSheet = tmp(10303).PromoSheet;
+    obj5 = { children: tmp22 };
     class I {
       constructor() {
         const obj = PasskeyUpsellManagerDefault;
         return obj.markDismissed(constants.USER_DISMISS);
       }
     }
-    tmp20[0] = tmp16;
-    ButtonGroup = tmp(5599).ButtonGroup;
-    const obj7 = { size: "lg", variant: "secondary", onPress: tmp9, text: intl2.string(tmp(1126).t["7J6/nG"]) };
-    const Button2 = tmp(5601).Button;
-    intl2 = tmp(1126).intl;
-    tmp20[1] = closure_7(Button2, obj7);
-    const tmp21 = closure_7(PromoSheet, obj5);
-    cResult[7] = tmp21;
-    tmp18 = tmp21;
+    tmp22[0] = tmp16;
+    ButtonGroup = tmp(5963).ButtonGroup;
+    const obj6 = { size: "lg", variant: "secondary", onPress: tmp9, text: intl4.string(tmp(1126).t["7J6/nG"]) };
+    const Button2 = tmp(5375).Button;
+    intl4 = tmp(1126).intl;
+    tmp22[1] = closure_7(Button2, obj6);
+    const tmp23 = closure_7(PromoSheet, obj4);
+    cResult[7] = tmp23;
+    tmp19 = tmp23;
   } else {
-    class P {
-      constructor() {
-        const obj = PasskeyUpsellManagerDefault;
-        obj.markDismissed(constants.USER_DISMISS);
-        const obj2 = PasskeyUpsellActionCreatorsDefault;
-        const result = obj2.closePasskeyUpsellPromoSheet();
-      }
-    }
+    tmp19 = cResult[7];
   }
-  return tmp18;
-}) : (() => {
+  return tmp19;
+}) : (function PasswordlessUpsellPromoSheet() {
   let ButtonGroup;
   let intl;
   let intl3;
@@ -271,10 +205,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     stringResult = string(t.d6uxJy);
   }
   obj4 = { children: items };
-  ButtonGroup = tmp2(5599).ButtonGroup;
+  ButtonGroup = tmp2(5963).ButtonGroup;
   const obj5 = {
     size: "lg",
-    onPress() {
+    onPress: function registerPasskey() {
       if (!ref.current) {
         tmp.current = true;
         let obj = PasskeyUpsellManagerDefault;
@@ -308,13 +242,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     },
     text: intl3.string(require("intl").t.NIFmCJ)
   };
-  const Button = tmp2(5601).Button;
+  const Button = tmp2(5375).Button;
   intl3 = tmp2(1126).intl;
   items = [tmp(Button, obj5), ];
   const obj6 = {
     size: "lg",
     variant: "secondary",
-    onPress() {
+    onPress: function onCancel() {
       const obj = PasskeyUpsellManagerDefault;
       obj.markDismissed(constants.USER_DISMISS);
       const obj2 = PasskeyUpsellActionCreatorsDefault;
@@ -322,7 +256,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     },
     text: intl4.string(require("intl").t["7J6/nG"])
   };
-  const Button2 = tmp2(5601).Button;
+  const Button2 = tmp2(5375).Button;
   intl4 = tmp2(1126).intl;
   items[1] = tmp(Button2, obj6);
   return tmp(PromoSheet, obj2);

@@ -1,18 +1,18 @@
-// Module ID: 13006
-// Function ID: 13007
+// Module ID: 13284
+// Function ID: 13285
 // Name: ProductDetailsActionSheetVariants
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 8529, 1126, 5916, 8561, 6635, 7077, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 9014, 1126, 6189, 9045, 6812, 7263, 5086, 2]
 
-// Module 13006 (ProductDetailsActionSheetVariants)
+// Module 13284 (ProductDetailsActionSheetVariants)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Pressables from "Pressables" /* 5916 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 8529 */;
-import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 8561 */;
+import Pressables from "Pressables" /* 6189 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9014 */;
+import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 9045 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const CheckmarkSmallIcon2 = tmp(6635);
+const CheckmarkSmallIcon2 = tmp(6812);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -45,7 +45,7 @@ let closure_7 = createStyles.createStyles((arg0) => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function VariantOption(arg0) {
   let disabled;
   let isSelected;
   let name;
@@ -157,7 +157,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = variant.name;
   cResult[2] = name;
   tmp5 = name;
-}) : ((onSelect) => {
+}) : (function VariantOption(onSelect) {
   let disabled;
   let isSelected;
   let items;
@@ -189,7 +189,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return React3(PressableOpacity, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((variant) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function VariantCheckmark(variant) {
   let tmp6;
   const obj = react2;
   const cResult = obj.c(2);
@@ -206,7 +206,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((variant) => {
     tmp6 = cResult[1];
   }
   return tmp6;
-}) : ((variant) => {
+}) : (function VariantCheckmark(variant) {
   const tmp = useIsVariantColorLightDefault(variant.variant);
   const CheckmarkSmallIcon = CheckmarkSmallIcon2.CheckmarkSmallIcon;
   const colors = nativeDefault.colors;
@@ -214,7 +214,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((variant) => {
   return React3(CheckmarkSmallIcon, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductDetailsActionSheetVariants(arg0) {
   let disabled;
   let intl;
   let items;
@@ -228,14 +228,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ disabled, onVariantSelect } = arg0);
   dependencyMap = tmp4;
   const tmp5 = closure_6();
-  const tmpResult = selectedVariantIndex(7077);
+  const tmpResult = selectedVariantIndex(7263);
   if (tmpResult.getIsVariantProduct(product)) {
     let first;
     const _Symbol = Symbol;
     const container = tmp5.container;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { variant: "text-md/bold", color: "mobile-text-heading-primary", children: intl.string(selectedVariantIndex(1126).t.wbgaj6) };
-      const Text = tmp(4892).Text;
+      const Text = tmp(5086).Text;
       intl = tmp(1126).intl;
       const tmp10 = closure_4(Text, obj2);
       cResult[0] = tmp10;
@@ -275,10 +275,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       return tmp24;
                     }
                   }
-                  class O {
+                  class I {
                     constructor(arg0, arg1) {
                       closure_0 = arg1;
-                      obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F143266 */ } };
+                      obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F144741 */ } };
                       return closure_1_4(closure_1_8, obj, arg0.variantValue);
                     }
                   }
@@ -291,10 +291,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   cResult[23] = tmp26;
                   tmp24 = tmp26;
                 }
-                class O {
+                class I {
                   constructor(arg0, arg1) {
                     closure_0 = arg1;
-                    obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F143266 */ } };
+                    obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F144741 */ } };
                     return closure_1_4(closure_1_8, obj, arg0.variantValue);
                   }
                 }
@@ -315,10 +315,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
               const variants = product.variants;
               const mapped = variants.map(tmp19);
-              class O {
+              class I {
                 constructor(arg0, arg1) {
                   closure_0 = arg1;
-                  obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F143266 */ } };
+                  obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F144741 */ } };
                   return closure_1_4(closure_1_8, obj, arg0.variantValue);
                 }
               }
@@ -330,18 +330,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               tmp18 = mapped;
             }
           }
-          class O {
+          class I {
             constructor(arg0, arg1) {
               closure_0 = arg1;
-              obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F143266 */ } };
+              obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F144741 */ } };
               return closure_1_4(closure_1_8, obj, arg0.variantValue);
             }
           }
           cResult[13] = undefined !== disabled && disabled;
           cResult[14] = onVariantSelect;
           cResult[15] = selectedVariantIndex;
-          cResult[16] = O;
-          tmp19 = O;
+          cResult[16] = I;
+          tmp19 = I;
         }
         const obj5 = { style: tmp5.headerRow, children: items1 };
         items1 = [first, tmp11];
@@ -355,14 +355,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp12 = product.variants.length > selectedVariantIndex;
     if (tmp12) {
       const obj6 = { variant: "text-md/medium", color: "text-default", lineClamp: 1, style: tmp5.text, children: null };
-      class O {
+      class I {
         constructor(arg0, arg1) {
           closure_0 = arg1;
-          obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F143266 */ } };
+          obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F144741 */ } };
           return closure_1_4(closure_1_8, obj, arg0.variantValue);
         }
       }
-      tmp12 = closure_4(tmp(4892).Text, obj6);
+      tmp12 = closure_4(tmp(5086).Text, obj6);
     }
     cResult[1] = product.variants;
     cResult[2] = selectedVariantIndex;
@@ -372,7 +372,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     return null;
   }
-}) : ((disabled) => {
+}) : (function ProductDetailsActionSheetVariants(disabled) {
   let intl;
   let items;
   let items1;

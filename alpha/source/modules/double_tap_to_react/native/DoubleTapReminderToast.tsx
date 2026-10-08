@@ -1,20 +1,20 @@
-// Module ID: 9891
-// Function ID: 9892
+// Module ID: 9371
+// Function ID: 9372
 // Name: DoubleTapReminderToast
-// Dependencies: [19, 2048, 21, 4896, 587, 558, 576, 4892, 1126, 4704, 2036, 2028, 7638, 4580, 4574, 9892, 2]
+// Dependencies: [19, 2060, 21, 5090, 587, 558, 576, 5086, 1126, 4898, 2048, 2040, 7959, 4772, 4766, 9372, 2]
 // Exports: maybeShowDoubleTapReminderToast
 
-// Module 9891 (DoubleTapReminderToast)
+// Module 9371 (DoubleTapReminderToast)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import DoubleTapEmojiUpdatedToast from "DoubleTapEmojiUpdatedToast" /* 9892 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import DoubleTapEmojiUpdatedToast from "DoubleTapEmojiUpdatedToast" /* 9372 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ const jsx = Fragment.jsx;
 let obj = { toastText: obj2 };
 obj2 = { marginRight: nativeDefault.space.PX_12, marginVertical: nativeDefault.space.PX_8 };
 let closure_5 = createStyles.createStyles(obj);
-let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
+let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DoubleTapReminderContent(emoji) {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(6);
@@ -67,7 +67,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
   cResult[4] = tmp5;
   cResult[5] = tmp10;
   tmp9 = tmp10;
-}) : ((emoji) => {
+}) : (function DoubleTapReminderContent(emoji) {
   emoji = emoji.emoji;
   closure_5();
   const Text = Text_Text.Text;
@@ -90,7 +90,7 @@ export const maybeShowDoubleTapReminderToast = function maybeShowDoubleTapRemind
   _require = name;
   const obj = require("DismissibleContentUnsafeUtils");
   if (!obj.UNSAFE_isDismissibleContentDismissed(require("dismissible_content").DismissibleContent.DOUBLE_TAP_TO_REACT_REMINDER)) {
-    const DoubleTapReactionEmoji = tmp(2028).DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = tmp(2040).DoubleTapReactionEmoji;
     const setting = DoubleTapReactionEmoji.getSetting();
     let flag = setting.disableDoubleTap;
     if (flag == null) {
@@ -134,7 +134,7 @@ export const maybeShowDoubleTapReminderToast = function maybeShowDoubleTapRemind
       }
       const obj6 = { dismissAction: ContentDismissActionType.AUTO_DISMISS, forceTrack: true };
       const tmpResult8 = require("DismissibleContentUnsafeUtils");
-      const result1 = tmpResult8.UNSAFE_markDismissibleContentAsDismissed(tmp(2036).DismissibleContent.DOUBLE_TAP_TO_REACT_REMINDER, obj6);
+      const result1 = tmpResult8.UNSAFE_markDismissibleContentAsDismissed(tmp(2048).DismissibleContent.DOUBLE_TAP_TO_REACT_REMINDER, obj6);
     }
   }
 };

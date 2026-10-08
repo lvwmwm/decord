@@ -1,11 +1,11 @@
-// Module ID: 10723
-// Function ID: 10724
+// Module ID: 12701
+// Function ID: 12702
 // Name: useTrackFavoritesGuildAddModalOpened
-// Dependencies: [19, 1085, 558, 576, 1252, 2]
+// Dependencies: [19, 1085, 558, 576, 1264, 2]
 
-// Module 10723 (useTrackFavoritesGuildAddModalOpened)
+// Module 12701 (useTrackFavoritesGuildAddModalOpened)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -14,14 +14,14 @@ const require = globalThis.__r;
 let _require;
 
 const AnalyticEvents = Constants.AnalyticEvents;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackFavoritesGuildAddModalOpened(source) {
   let tmp2;
   let tmp3;
   _require = source;
   let obj = require("react");
   const cResult = obj.c(3);
   if (cResult[0] !== source) {
-    const fn = function n() {
+    const fn = function u() {
       const obj = AnalyticsUtilsDefault;
       const obj2 = { source };
       obj.track(AnalyticEvents.FAVORITES_GUILD_ADD_MODAL_OPENED, obj2);
@@ -37,7 +37,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
     tmp3 = cResult[2];
   }
   const effect = react.useEffect(tmp2, tmp3);
-}) : ((source) => {
+}) : (function useTrackFavoritesGuildAddModalOpened(source) {
   const items = [source];
   const effect = react.useEffect(() => {
     const obj = AnalyticsUtilsDefault;

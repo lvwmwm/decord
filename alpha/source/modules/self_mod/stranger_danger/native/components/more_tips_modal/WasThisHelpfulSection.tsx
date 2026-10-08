@@ -1,28 +1,27 @@
-// Module ID: 9822
-// Function ID: 9823
+// Module ID: 10385
+// Function ID: 10386
 // Name: WasThisHelpfulSection
-// Dependencies: [19, 17, 9799, 9797, 21, 4896, 587, 558, 576, 573, 9812, 4580, 4574, 1126, 8952, 8951, 9811, 4892, 1188, 9823, 9824, 2]
+// Dependencies: [19, 17, 10266, 10361, 21, 5090, 587, 558, 576, 573, 10375, 4772, 4766, 1126, 10386, 10387, 10374, 5086, 1200, 10388, 10389, 2]
 
-// Module 9822 (WasThisHelpfulSection)
+// Module 10385 (WasThisHelpfulSection)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4580 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8951 */;
-import ShieldIcon from "ShieldIcon" /* 8952 */;
-import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 9799 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 9811 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 9812 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4772 */;
+import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 10266 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10374 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10375 */;
+import ShieldIcon from "ShieldIcon" /* 10386 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10387 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 9797 */;
+import Constants from "Constants" /* 10361 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const ChannelSafetyWarningsStore = ChannelSafetyWarningsStore2;
-let channelId;
 
 let FEEDBACK_BUTTON_ACTIVE_BACKGROUND_COLOR;
 let c10;
@@ -53,7 +52,7 @@ obj4 = { borderWidth: 1, borderColor: nativeDefault.colors.MOBILE_LEGACY_BUTTON_
 obj5 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 obj6 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
 let closure_13 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function WasThisHelpfulSection(channelId) {
   let first;
   let intl;
   let obj4;
@@ -189,7 +188,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
                   }
                 }
               }
-              class S {
+              class A {
                 constructor(feedbackType, cta) {
                   let intl;
                   let intl2;
@@ -232,7 +231,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
             const items1 = [tmp4.buttonsBackground, tmp19];
             cResult[11] = tmp4.buttonsBackground;
             cResult[12] = tmp19;
-            class S {
+            class A {
               constructor(feedbackType, cta) {
                 let intl;
                 let intl2;
@@ -280,7 +279,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
         }
       }
     }
-    class S {
+    class A {
       constructor(feedbackType, cta) {
         let intl;
         let intl2;
@@ -318,8 +317,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     cResult[6] = senderId;
     cResult[7] = tmp4.toastContainer;
     cResult[8] = warningId;
-    cResult[9] = S;
-    tmp13 = S;
+    cResult[9] = A;
+    tmp13 = A;
   }
   const fn = function u() {
     return ChannelSafetyWarningsStore.getChannelSafetyWarning(channelId, warningId);
@@ -328,7 +327,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[2] = warningId;
   cResult[3] = fn;
   tmp7 = fn;
-}) : ((channelId) => {
+}) : (function WasThisHelpfulSection(channelId) {
   let Icon;
   let Icon2;
   let color;

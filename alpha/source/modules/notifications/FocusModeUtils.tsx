@@ -1,17 +1,17 @@
-// Module ID: 12488
-// Function ID: 12489
+// Module ID: 12584
+// Function ID: 12585
 // Name: FocusModeUtils
-// Dependencies: [5445, 4528, 1085, 558, 576, 2028, 2033, 1228, 1252, 5714, 1126, 12489, 2]
+// Dependencies: [5755, 4720, 1085, 558, 576, 2040, 2045, 1240, 1264, 5297, 1126, 12585, 2]
 // Exports: getFocusModeEnabled, setFocusMode
 
-// Module 12488 (FocusModeUtils)
+// Module 12584 (FocusModeUtils)
 import react from "react" /* 576 */;
-import wrappers from "wrappers" /* 1228 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import NotificationConstants from "NotificationConstants" /* 4528 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5714 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5445 */;
+import wrappers from "wrappers" /* 1240 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import NotificationConstants from "NotificationConstants" /* 4720 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5297 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5755 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -23,7 +23,7 @@ let hasOwnProperty;
 let metroRequire;
 const constants = NotificationConstants.NotificationSettingsUpdateType;
 ({ AnalyticEvents: hasOwnProperty, StatusTypes: metroRequire } = Constants);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFocusModeEnabled() {
   const obj = react;
   const cResult = obj.c(3);
   const FocusMode = UserSettings.FocusMode;
@@ -59,7 +59,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   cResult[1] = setting1;
   cResult[2] = tmp5;
   tmp4 = tmp5;
-}) : (function() {
+}) : (function useFocusModeEnabled() {
   const FocusMode = UserSettings.FocusMode;
   let setting = FocusMode.useSetting();
   const FocusModeExpiresAtSetting = UserSettings.FocusModeExpiresAtSetting;
@@ -155,7 +155,7 @@ export const setFocusMode = function setFocusMode(quiet_mode_enabled, arg1) {
           closure_1(dependencyMap[11])(obj);
         }
     };
-    const show = tmp5(5714).show;
+    const show = tmp5(5297).show;
     AlertActionCreatorsDefault;
     intl = tmp(1126).intl;
     intl2 = tmp(1126).intl;

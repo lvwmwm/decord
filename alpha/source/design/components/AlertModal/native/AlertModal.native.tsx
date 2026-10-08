@@ -1,22 +1,22 @@
-// Module ID: 5720
-// Function ID: 5721
+// Module ID: 5303
+// Function ID: 5304
 // Name: AlertModal
-// Dependencies: [5, 109, 32, 729, 19, 17, 1096, 21, 4896, 587, 4595, 558, 576, 5716, 4618, 1881, 5721, 5773, 1259, 1126, 5778, 4602, 1618, 5786, 1484, 5787, 4892, 5600, 5604, 5601, 2]
+// Dependencies: [5, 109, 32, 729, 19, 17, 1096, 21, 5090, 587, 4787, 558, 576, 5299, 4810, 1893, 5304, 5356, 1271, 1126, 5361, 4794, 1630, 5369, 1496, 5370, 5086, 5373, 5374, 5375, 2]
 // Exports: showConfirmModal
 
-// Module 5720 (AlertModal)
+// Module 5303 (AlertModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import intl2 from "intl" /* 1126 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1881 */;
-import native from "native" /* 4595 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import spring from "spring" /* 5604 */;
-import useAlertStore2 from "useAlertStore" /* 5716 */;
-import OverlayViewDefault from "OverlayView" /* 5721 */;
-import Dialog2 from "Dialog" /* 5773 */;
-import react_native from "react-native" /* 5786 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1893 */;
+import native from "native" /* 4787 */;
+import useAlertStore2 from "useAlertStore" /* 5299 */;
+import OverlayViewDefault from "OverlayView" /* 5304 */;
+import Dialog2 from "Dialog" /* 5356 */;
+import react_native from "react-native" /* 5369 */;
+import spring from "spring" /* 5374 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -24,12 +24,12 @@ import _toArray from "_toArray" /* 729 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c2, c4, dependencyMap, onPress;
+let _require, c2, c4, dependencyMap;
 
 let c10;
 let c9;
@@ -39,8 +39,8 @@ let map1;
 let size;
 let tmp;
 let unpackModuleId;
-const ReanimatedRexport = tmp(4618);
-const Stack_Stack = tmp(5600);
+const ReanimatedRexport = tmp(4810);
+const Stack_Stack = tmp(5373);
 function getAlertModalItemKey(key) {
   return key.key;
 }
@@ -87,7 +87,7 @@ const memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
 const __initData = { code: "function AlertModalNativeTsx1(){const{withAlertModalSpring,sharedVisible,sharedTransitionState,TransitionStates,runOnJS,cleanUp}=this.__closure;return{opacity:withAlertModalSpring(sharedVisible.get(),function(finished){if(finished===true&&sharedVisible.get()===0&&sharedTransitionState.get()===TransitionStates.YEETED){runOnJS(cleanUp)();}})};}" };
 const __initData2 = { code: "function AlertModalNativeTsx2(){const{withAlertModalSpring,sharedVisible,sharedTransitionState,TransitionStates,runOnJS,cleanUp}=this.__closure;return{opacity:withAlertModalSpring(sharedVisible.get(),function(finished){if(finished===true&&sharedVisible.get()===0&&sharedTransitionState.get()===TransitionStates.YEETED){runOnJS(cleanUp)();}})};}" };
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function AlertModalContainer() {
   let first;
   let length;
   let redux;
@@ -97,8 +97,6 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let redux5;
   let root;
   let tmp10;
-  let tmp12;
-  let tmp13;
   let tmp7;
   let tmp9;
   let tmp = _require;
@@ -116,9 +114,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     first = cResult[0];
   }
-  const tmpResult = tmp(5716);
+  const tmpResult = tmp(5299);
   const alertStore = tmpResult.useAlertStore(first);
-  const tmpResult2 = tmp(4618);
+  const tmpResult2 = tmp(4810);
   const sharedValue = tmpResult2.useSharedValue(0);
   if (cResult[1] !== alertStore) {
     let items;
@@ -158,76 +156,84 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const layoutEffect = react.useLayoutEffect(tmp9, tmp10);
   if (cResult[6] !== tmp4.root) {
-    const fn3 = function p(children) {
-      let Dialog;
-      let obj3;
-      const obj = { style: authStore.absoluteFillObject, children: closure_12(Dialog, obj2) };
-      obj2 = { onDismiss: dismissTopAlert, children: closure_12(React4, obj3) };
-      obj3 = { style: root.root, pointerEvents: "box-none", children };
-      const tmp = OverlayViewDefault;
-      Dialog = Dialog2.Dialog;
-      return closure_12(tmp, obj);
-    };
+    class A {
+      constructor(children) {
+        let Dialog;
+        let obj3;
+        const obj = { style: authStore.absoluteFillObject, children: closure_12(Dialog, obj2) };
+        obj2 = { onDismiss: dismissTopAlert, children: closure_12(React4, obj3) };
+        obj3 = { style: root.root, pointerEvents: "box-none", children };
+        const tmp = OverlayViewDefault;
+        Dialog = Dialog2.Dialog;
+        return closure_12(tmp, obj);
+      }
+    }
     cResult[6] = tmp4.root;
-    cResult[7] = fn3;
-    tmp12 = fn3;
+    cResult[7] = A;
   } else {
-    tmp12 = cResult[7];
+    class A {
+      constructor(children) {
+        let Dialog;
+        let obj3;
+        const obj = { style: authStore.absoluteFillObject, children: closure_12(Dialog, obj2) };
+        obj2 = { onDismiss: dismissTopAlert, children: closure_12(React4, obj3) };
+        obj3 = { style: root.root, pointerEvents: "box-none", children };
+        const tmp = OverlayViewDefault;
+        Dialog = Dialog2.Dialog;
+        return closure_12(tmp, obj);
+      }
+    }
   }
   if (cResult[8] !== sharedValue) {
-    const fn4 = function b(value, type, value2, value3) {
-      let Provider2;
-      let Provider3;
-      let Provider4;
-      let Provider5;
-      let node;
-      let obj3;
-      let obj4;
-      let obj5;
-      if ("alert" === type.type) {
-        node = type.alert.node;
-      } else {
-        node = closure_12(closure_26, {});
+    class A {
+      constructor(children) {
+        let Dialog;
+        let obj3;
+        const obj = { style: authStore.absoluteFillObject, children: closure_12(Dialog, obj2) };
+        obj2 = { onDismiss: dismissTopAlert, children: closure_12(React4, obj3) };
+        obj3 = { style: root.root, pointerEvents: "box-none", children };
+        const tmp = OverlayViewDefault;
+        Dialog = Dialog2.Dialog;
+        return closure_12(tmp, obj);
       }
-      let num = -1;
-      if ("alert" === type.type) {
-        num = type.index;
-      }
-      const obj = { value: sharedValue, children: closure_12(Provider2, obj2) };
-      obj2 = { value: value3, children: closure_12(Provider3, obj3) };
-      obj3 = { value: value2, children: closure_12(Provider4, obj4) };
-      const Provider = redux5.Provider;
-      Provider2 = redux2.Provider;
-      Provider3 = redux.Provider;
-      Provider4 = redux3.Provider;
-      obj4 = { value: num, children: closure_12(Provider5, obj5) };
-      Provider5 = redux4.Provider;
-      obj5 = { value, children: closure_12(react.Suspense, { fallback: null, children: node }) };
-      return closure_12(Provider, obj, value);
-    };
+    }
     cResult[8] = sharedValue;
-    cResult[9] = fn4;
-    tmp13 = fn4;
+    cResult[9] = tmp14;
   } else {
-    tmp13 = cResult[9];
+    class A {
+      constructor(children) {
+        let Dialog;
+        let obj3;
+        const obj = { style: authStore.absoluteFillObject, children: closure_12(Dialog, obj2) };
+        obj2 = { onDismiss: dismissTopAlert, children: closure_12(React4, obj3) };
+        obj3 = { style: root.root, pointerEvents: "box-none", children };
+        const tmp = OverlayViewDefault;
+        Dialog = Dialog2.Dialog;
+        return closure_12(tmp, obj);
+      }
+    }
   }
   if (cResult[10] === tmp7) {
-    if (cResult[11] === tmp13) {
-      let tmp14;
-      if (cResult[12] === tmp12) {
-        tmp14 = cResult[13];
+    class A {
+      constructor(children) {
+        let Dialog;
+        let obj3;
+        const obj = { style: authStore.absoluteFillObject, children: closure_12(Dialog, obj2) };
+        obj2 = { onDismiss: dismissTopAlert, children: closure_12(React4, obj3) };
+        obj3 = { style: root.root, pointerEvents: "box-none", children };
+        const tmp = OverlayViewDefault;
+        Dialog = Dialog2.Dialog;
+        return closure_12(tmp, obj);
       }
-      return tmp14;
     }
   }
   obj2 = { wrapChildren: tmp12, items: tmp7, renderItem: tmp13, getItemKey: getAlertModalItemKey };
-  const tmp15 = closure_12(tmp(4595).TransitionGroup, obj2);
   cResult[10] = tmp7;
   cResult[11] = tmp13;
   cResult[12] = tmp12;
-  cResult[13] = tmp15;
-  tmp14 = tmp15;
-}) : (() => {
+  cResult[13] = closure_12(tmp(4787).TransitionGroup, obj2);
+  closure_12(tmp(4787).TransitionGroup, obj2);
+}) : (function AlertModalContainer() {
   let items;
   let redux;
   let redux2;
@@ -308,7 +314,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return closure_12(tmp2(tmp3[10]).TransitionGroup, obj3);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertModalBackdrop() {
   let closure_2;
   let context;
   let first1;
@@ -335,7 +341,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     first1 = cResult[0];
   }
-  const tmpResult = tmp(5716);
+  const tmpResult = tmp(5299);
   const alertStore = tmpResult.useAlertStore(first1);
   const fn2 = function f() {
     let fn;
@@ -359,8 +365,8 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       throw new TypeError("Trying to call a non-function");
     }
   };
-  const tmpResult2 = tmp(4618);
-  obj2 = { withAlertModalSpring, sharedVisible: tmp7, sharedTransitionState, TransitionStates: tmp(4595).TransitionStates, runOnJS: tmp(4618).runOnJS, cleanUp: context };
+  const tmpResult2 = tmp(4810);
+  obj2 = { withAlertModalSpring, sharedVisible: tmp7, sharedTransitionState, TransitionStates: tmp(4787).TransitionStates, runOnJS: tmp(4810).runOnJS, cleanUp: context };
   fn2.__closure = obj2;
   fn2.__workletHash = 4470729133936;
   fn2.__initData = __initData;
@@ -384,12 +390,12 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return tmp14;
   }
-  const tmp15 = closure_12(tmp(5778).Backdrop, { blur: "strong", style: animatedStyle, onDismiss: tmp11, accessibilityLabel: tmp12 });
+  const tmp15 = closure_12(tmp(5361).Backdrop, { blur: "strong", style: animatedStyle, onDismiss: tmp11, accessibilityLabel: tmp12 });
   cResult[2] = animatedStyle;
   cResult[3] = tmp11;
   cResult[4] = tmp15;
   tmp14 = tmp15;
-}) : (() => {
+}) : (function AlertModalBackdrop() {
   let closure_2;
   let intl;
   let sharedTransitionState;
@@ -399,7 +405,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   [sharedTransitionState, tmp4] = closure_35();
   dependencyMap = tmp4;
   const tmp5 = context;
-  let obj = context(5716);
+  let obj = context(5299);
   const alertStore = obj.useAlertStore((arg0) => {
     const first = arg0.alerts[0];
     let dismissable;
@@ -408,7 +414,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return false !== dismissable;
   });
-  obj2 = context(4618);
+  obj2 = context(4810);
   let fn = function t() {
     let fn;
     let value = closure_2.get();
@@ -431,14 +437,14 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       throw new TypeError("Trying to call a non-function");
     }
   };
-  fn.__closure = { withAlertModalSpring, sharedVisible: tmp4, sharedTransitionState, TransitionStates: context(4595).TransitionStates, runOnJS: context(4618).runOnJS, cleanUp: context };
+  fn.__closure = { withAlertModalSpring, sharedVisible: tmp4, sharedTransitionState, TransitionStates: context(4787).TransitionStates, runOnJS: context(4810).runOnJS, cleanUp: context };
   fn.__workletHash = 10548540937715;
   fn.__initData = __initData2;
-  ({ withAlertModalSpring, sharedVisible: tmp4, sharedTransitionState, TransitionStates: context(4595).TransitionStates, runOnJS: context(4618).runOnJS, cleanUp: context });
+  ({ withAlertModalSpring, sharedVisible: tmp4, sharedTransitionState, TransitionStates: context(4787).TransitionStates, runOnJS: context(4810).runOnJS, cleanUp: context });
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const obj4 = { blur: "strong", style: animatedStyle, onDismiss: tmp10, accessibilityLabel: intl.string(tmp5(1126).t.Xkfav5) };
   tmp10 = null;
-  const Backdrop = context(5778).Backdrop;
+  const Backdrop = context(5361).Backdrop;
   const tmp9 = closure_12;
   if (alertStore) {
     tmp10 = dismissTopAlert;
@@ -449,7 +455,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 ReactCompilerGating = ReactCompilerGating_mod;
 const __initData3 = { code: "function AlertModalNativeTsx3(){const{sharedVisible,sharedTransitionState,TransitionStates,runOnJS,cleanUp,windowHeight,ALERT_MODAL_MARGIN,safeAreaTop,safeAreaBottom,withAlertModalSpring,sharedIndex,sharedTopHeight,useReducedMotion}=this.__closure;var _CARD_OFFSETS$sharedI;const onComplete=function onComplete(finished){if(finished===true&&sharedVisible.get()===0&&sharedTransitionState.get()===TransitionStates.YEETED){runOnJS(cleanUp)();}};const CARD_OFFSETS=[0,-20,-34];const maxHeight=windowHeight-ALERT_MODAL_MARGIN*2-Math.max(safeAreaTop,safeAreaBottom)*2;return{position:\"absolute\",opacity:withAlertModalSpring(sharedVisible.get(),onComplete),zIndex:10-sharedIndex.get(),height:sharedIndex.get()>0?sharedTopHeight.get():\"auto\",maxHeight:maxHeight,transform:useReducedMotion?[]:[{scale:withAlertModalSpring(sharedVisible.get()===1?1-sharedIndex.get()*0.1:0.7)},{translateY:withAlertModalSpring(sharedVisible.get()===1?(_CARD_OFFSETS$sharedI=CARD_OFFSETS[sharedIndex.get()])!==null&&_CARD_OFFSETS$sharedI!==void 0?_CARD_OFFSETS$sharedI:sharedVisible.get()*-12:50-sharedIndex.get()*50)}]};}" };
 const __initData4 = { code: "function AlertModalNativeTsx4(){const{sharedVisible,sharedTransitionState,TransitionStates,runOnJS,cleanUp,windowHeight,ALERT_MODAL_MARGIN,safeAreaTop,safeAreaBottom,withAlertModalSpring,sharedIndex,sharedTopHeight,useReducedMotion}=this.__closure;var _CARD_OFFSETS$sharedI;function onComplete(finished){if(finished===true&&sharedVisible.get()===0&&sharedTransitionState.get()===TransitionStates.YEETED){runOnJS(cleanUp)();}}const CARD_OFFSETS=[0,-20,-34];const maxHeight=windowHeight-ALERT_MODAL_MARGIN*2-Math.max(safeAreaTop,safeAreaBottom)*2;return{position:'absolute',opacity:withAlertModalSpring(sharedVisible.get(),onComplete),zIndex:10-sharedIndex.get(),height:sharedIndex.get()>0?sharedTopHeight.get():'auto',maxHeight:maxHeight,transform:useReducedMotion?[]:[{scale:withAlertModalSpring(sharedVisible.get()===1?1-sharedIndex.get()*0.1:0.7)},{translateY:withAlertModalSpring(sharedVisible.get()===1?(_CARD_OFFSETS$sharedI=CARD_OFFSETS[sharedIndex.get()])!==null&&_CARD_OFFSETS$sharedI!==void 0?_CARD_OFFSETS$sharedI:sharedVisible.get()*-12:50-sharedIndex.get()*50)}]};}" };
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDismissModalCallback() {
   let context;
   let tmp3;
   let obj = context(576);
@@ -467,7 +473,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
+}) : (function useDismissModalCallback() {
   const context = react.useContext(closure_20);
   const items = [context];
   return react.useCallback(() => {
@@ -476,15 +482,15 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertModal(arg0) {
   let actions;
   let content;
   let context;
   let context2;
   let extraContent;
   let header;
+  let items1;
   let items2;
-  let items3;
   let obj9;
   let sharedTransitionState;
   let title;
@@ -493,7 +499,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let top;
   let tmp = context;
   let obj = context(context2[12]);
-  const cResult = obj.c(40);
+  const cResult = obj.c(38);
   ({ header, title, content, actions, extraContent } = arg0);
   obj2 = top;
   context = top.useContext(closure_18);
@@ -512,7 +518,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   top = rect.top;
   const bottom = rect.bottom;
   if (cResult[0] !== context1) {
-    let fn = function n() {
+    const fn = function n() {
       if (0 === context1) {
         obj2 = { ref, delay: 300 };
         const obj = react_native;
@@ -532,11 +538,11 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const effect = obj2.useEffect(tmp14, tmp15);
   const height = tmp13(tmp2[24])().height;
   const tmpResult = tmp(tmp2[14]);
-  class G {
+  class B {
     constructor() {
-      let fn;
       let items;
       let obj3;
+      let onComplete;
       let str3;
       let tmp5Result;
       let tmp5Result2;
@@ -545,8 +551,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const result = 2 * Math.max(top, bottom);
       let value = closure_7.get();
       if (typeof withAlertModalSpring === "function") {
-        obj2 = { position: "absolute", opacity: obj3.withSpring(value, obj2, "animate-always", fn), zIndex: 10 - sharedValue.get(), height: str3, maxHeight: diff - result, transform: items };
-        fn = (arg0) => {
+        obj2 = { position: "absolute", opacity: obj3.withSpring(value, obj2, "animate-always", onComplete), zIndex: 10 - sharedValue.get(), height: str3, maxHeight: diff - result, transform: items };
+        onComplete = function onComplete(arg0) {
           let tmp = true === arg0 && 0 === closure_1_7.get();
           if (tmp) {
             const value = sharedTransitionState.get();
@@ -602,10 +608,10 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const obj4 = { sharedVisible: tmp12, sharedTransitionState, TransitionStates: tmp(tmp2[10]).TransitionStates, runOnJS: tmp(tmp2[14]).runOnJS, cleanUp: context, windowHeight: height, ALERT_MODAL_MARGIN: 16, safeAreaTop: top, safeAreaBottom: bottom, withAlertModalSpring, sharedIndex: sharedValue, sharedTopHeight: context2, useReducedMotion: enabled };
-  G.__closure = obj4;
-  G.__workletHash = 15768220325168;
-  G.__initData = __initData3;
-  const animatedStyle = tmpResult.useAnimatedStyle(G);
+  B.__closure = obj4;
+  B.__workletHash = 15768220325168;
+  B.__initData = __initData3;
+  const animatedStyle = tmpResult.useAnimatedStyle(B);
   if (cResult[3] === context1) {
     let tmp18;
     let tmp19;
@@ -656,7 +662,6 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp24;
       let tmp25;
       let tmp26;
-      let tmp27;
       if (cResult[9] === tmp6.content) {
         tmp24 = cResult[10];
       }
@@ -670,145 +675,137 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       } else {
         tmp25 = cResult[12];
       }
-      if (cResult[13] !== tmp6.body) {
-        const items1 = [tmp6.body];
-        cResult[13] = tmp6.body;
-        cResult[14] = items1;
-        tmp26 = items1;
+      if (cResult[13] !== title) {
+        let obj5 = { ref, variant: "heading-lg/bold", accessibilityRole: "header", color: "mobile-text-heading-primary", children: title };
+        const tmp28 = closure_12(tmp(context2[26]).Text, obj5);
+        cResult[13] = title;
+        cResult[14] = tmp28;
+        tmp26 = tmp28;
       } else {
         tmp26 = cResult[14];
       }
-      if (cResult[15] !== title) {
-        let obj5 = { ref, variant: "heading-lg/bold", accessibilityRole: "header", color: "mobile-text-heading-primary", children: title };
-        const tmp29 = closure_12(tmp(context2[26]).Text, obj5);
-        cResult[15] = title;
-        cResult[16] = tmp29;
-        tmp27 = tmp29;
-      } else {
-        tmp27 = cResult[16];
-      }
-      if (cResult[17] === content) {
-        let tmp30;
-        if (cResult[18] === tmp6.contentText) {
-          tmp30 = cResult[19];
+      if (cResult[15] === content) {
+        let tmp29;
+        if (cResult[16] === tmp6.contentText) {
+          tmp29 = cResult[17];
         }
-        if (cResult[20] === tmp26) {
-          if (cResult[21] === tmp27) {
-            let tmp33;
-            let tmp36;
-            if (cResult[22] === tmp30) {
-              tmp33 = cResult[23];
+        if (cResult[18] === tmp6.body) {
+          if (cResult[19] === tmp26) {
+            let tmp32;
+            let tmp35;
+            if (cResult[20] === tmp29) {
+              tmp32 = cResult[21];
             }
-            if (cResult[24] !== actions) {
-              let tmp37 = null;
+            if (cResult[22] !== actions) {
+              let tmp36 = null;
               if (null != actions) {
                 let obj6 = { children: actions };
-                tmp37 = closure_12(closure_36, obj6);
+                tmp36 = closure_12(closure_36, obj6);
               }
-              cResult[24] = actions;
-              cResult[25] = tmp37;
-              tmp36 = tmp37;
+              cResult[22] = actions;
+              cResult[23] = tmp36;
+              tmp35 = tmp36;
             } else {
-              tmp36 = cResult[25];
+              tmp35 = cResult[23];
             }
-            if (cResult[26] === extraContent) {
-              if (cResult[27] === header) {
-                if (cResult[28] === tmp33) {
-                  let tmp40;
-                  if (cResult[29] === tmp36) {
-                    tmp40 = cResult[30];
+            if (cResult[24] === extraContent) {
+              if (cResult[25] === header) {
+                if (cResult[26] === tmp32) {
+                  let tmp39;
+                  if (cResult[27] === tmp35) {
+                    tmp39 = cResult[28];
                   }
-                  if (cResult[31] === tmp6.overflow) {
-                    let tmp43;
-                    if (cResult[32] === tmp40) {
-                      tmp43 = cResult[33];
+                  if (cResult[29] === tmp6.overflow) {
+                    let tmp42;
+                    if (cResult[30] === tmp39) {
+                      tmp42 = cResult[31];
                     }
-                    if (cResult[34] === tmp25) {
-                      if (cResult[35] === tmp43) {
-                        if (cResult[36] === str2) {
-                          if (cResult[37] === 0 !== context1) {
-                            let tmp49;
-                            if (cResult[38] === tmp24) {
-                              tmp49 = cResult[39];
+                    if (cResult[32] === tmp25) {
+                      if (cResult[33] === tmp42) {
+                        if (cResult[34] === str2) {
+                          if (cResult[35] === 0 !== context1) {
+                            let tmp48;
+                            if (cResult[36] === tmp24) {
+                              tmp48 = cResult[37];
                             }
-                            return tmp49;
+                            return tmp48;
                           }
                         }
                       }
                     }
-                    const obj7 = { importantForAccessibility: str2, accessibilityElementsHidden: 0 !== context1, style: tmp24, onLayout: tmp25, children: tmp43 };
-                    const tmp51 = closure_12(context1(context2[14]).View, obj7);
-                    cResult[34] = tmp25;
-                    cResult[35] = tmp43;
-                    cResult[36] = str2;
-                    cResult[37] = 0 !== context1;
-                    cResult[38] = tmp24;
-                    cResult[39] = tmp51;
-                    tmp49 = tmp51;
+                    const obj7 = { importantForAccessibility: str2, accessibilityElementsHidden: 0 !== context1, style: tmp24, onLayout: tmp25, children: tmp42 };
+                    const tmp50 = closure_12(context1(context2[14]).View, obj7);
+                    cResult[32] = tmp25;
+                    cResult[33] = tmp42;
+                    cResult[34] = str2;
+                    cResult[35] = 0 !== context1;
+                    cResult[36] = tmp24;
+                    cResult[37] = tmp50;
+                    tmp48 = tmp50;
                   }
                   const obj8 = { alwaysBounceVertical: false, children: closure_12(bottom, obj9) };
-                  obj9 = { style: tmp6.overflow, children: tmp40 };
-                  const tmp47 = closure_12(closure_11, obj8);
-                  cResult[31] = tmp6.overflow;
-                  cResult[32] = tmp40;
-                  cResult[33] = tmp47;
-                  tmp43 = tmp47;
+                  obj9 = { style: tmp6.overflow, children: tmp39 };
+                  const tmp46 = closure_12(closure_11, obj8);
+                  cResult[29] = tmp6.overflow;
+                  cResult[30] = tmp39;
+                  cResult[31] = tmp46;
+                  tmp42 = tmp46;
                 }
               }
             }
-            const obj10 = { spacing: 24, children: items2 };
-            items2 = [header, tmp33, extraContent, tmp36];
-            const tmp42 = closure_13(tmp(context2[27]).Stack, obj10);
-            cResult[26] = extraContent;
-            cResult[27] = header;
-            cResult[28] = tmp33;
-            cResult[29] = tmp36;
-            cResult[30] = tmp42;
-            tmp40 = tmp42;
+            const obj10 = { spacing: 24, children: items1 };
+            items1 = [header, tmp32, extraContent, tmp35];
+            const tmp41 = closure_13(tmp(context2[27]).Stack, obj10);
+            cResult[24] = extraContent;
+            cResult[25] = header;
+            cResult[26] = tmp32;
+            cResult[27] = tmp35;
+            cResult[28] = tmp41;
+            tmp39 = tmp41;
           }
         }
-        const obj11 = { spacing: 8, style: tmp26, children: items3 };
-        items3 = [tmp27, tmp30];
-        const tmp35 = closure_13(tmp(context2[27]).Stack, obj11);
-        cResult[20] = tmp26;
-        cResult[21] = tmp27;
-        cResult[22] = tmp30;
-        cResult[23] = tmp35;
-        tmp33 = tmp35;
+        const obj11 = { spacing: 8, style: tmp6.body, children: items2 };
+        items2 = [tmp26, tmp29];
+        const tmp34 = closure_13(tmp(context2[27]).Stack, obj11);
+        cResult[18] = tmp6.body;
+        cResult[19] = tmp26;
+        cResult[20] = tmp29;
+        cResult[21] = tmp34;
+        tmp32 = tmp34;
       }
-      let tmp31 = null;
+      let tmp30 = null;
       if (null != content) {
         let str3 = "";
-        tmp31 = null;
+        tmp30 = null;
         if ("" !== content) {
           const obj12 = { variant: "text-md/medium", color: "text-default", style: tmp6.contentText, children: content };
-          tmp31 = closure_12(tmp(tmp2[26]).Text, obj12);
+          tmp30 = closure_12(tmp(tmp2[26]).Text, obj12);
         }
       }
-      cResult[17] = content;
-      cResult[18] = tmp6.contentText;
-      cResult[19] = tmp31;
-      tmp30 = tmp31;
+      cResult[15] = content;
+      cResult[16] = tmp6.contentText;
+      cResult[17] = tmp30;
+      tmp29 = tmp30;
     }
-    const items4 = [tmp6.content, animatedStyle];
+    const items3 = [tmp6.content, animatedStyle];
     cResult[8] = animatedStyle;
     cResult[9] = tmp6.content;
-    cResult[10] = items4;
-    tmp24 = items4;
+    cResult[10] = items3;
+    tmp24 = items3;
   }
   class K {
     constructor() {
       const result = sharedValue.set(context1);
     }
   }
-  const items5 = [context1, sharedValue];
+  const items4 = [context1, sharedValue];
   cResult[3] = context1;
   cResult[4] = sharedValue;
   cResult[5] = K;
-  cResult[6] = items5;
-  tmp19 = items5;
+  cResult[6] = items4;
+  tmp19 = items4;
   tmp18 = K;
-}) : ((arg0) => {
+}) : (function AlertModal(arg0) {
   let Stack;
   let actions;
   let content;
@@ -817,7 +814,6 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let items2;
   let items3;
   let items4;
-  let items5;
   let obj9;
   let title;
   let tmp17;
@@ -853,9 +849,9 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj2 = context(context2[14]);
   class J {
     constructor() {
-      let fn;
       let items;
       let obj3;
+      let onComplete;
       let str3;
       let tmp5Result;
       let tmp5Result2;
@@ -864,8 +860,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const result = 2 * Math.max(top, bottom);
       let value = closure_7.get();
       if (typeof withAlertModalSpring === "function") {
-        obj2 = { position: "absolute", opacity: obj3.withSpring(value, obj2, "animate-always", fn), zIndex: 10 - sharedValue.get(), height: str3, maxHeight: diff - result, transform: items };
-        fn = (arg0) => {
+        obj2 = { position: "absolute", opacity: obj3.withSpring(value, obj2, "animate-always", onComplete), zIndex: 10 - sharedValue.get(), height: str3, maxHeight: diff - result, transform: items };
+        onComplete = function onComplete(arg0) {
           let tmp = true === arg0 && 0 === closure_1_7.get();
           if (tmp) {
             const value = sharedTransitionState.get();
@@ -971,10 +967,9 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj5 = { style: tmp3.overflow, children: tmp19(Stack, { spacing: 24, children: items3 }) };
   items3 = [header, , , ];
   Stack = tmp5(tmp6[27]).Stack;
-  let obj6 = { spacing: 8, style: items4, children: items5 };
-  items4 = [tmp3.body];
+  let obj6 = { spacing: 8, style: tmp3.body, children: items4 };
   const Stack2 = tmp5(tmp6[27]).Stack;
-  items5 = [closure_12(tmp5(tmp6[26]).Text, { ref, variant: "heading-lg/bold", accessibilityRole: "header", color: "mobile-text-heading-primary", children: title }), ];
+  items4 = [closure_12(tmp5(tmp6[26]).Text, { ref, variant: "heading-lg/bold", accessibilityRole: "header", color: "mobile-text-heading-primary", children: title }), ];
   let tmp16Result = null;
   tmp17 = closure_11;
   const tmp18 = bottom;
@@ -985,7 +980,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp16Result = tmp16(tmp5(tmp6[26]).Text, obj7);
     }
   }
-  items5[1] = tmp16Result;
+  items4[1] = tmp16Result;
   items3[1] = closure_13(Stack2, obj6);
   items3[2] = extraContent;
   let tmp16Result2 = null;
@@ -1011,7 +1006,7 @@ const __initData6 = { code: "function AlertModalNativeTsx7(transitionState_0){co
 const __initData7 = { code: "function AlertModalNativeTsx8(){const{sharedTransitionState}=this.__closure;return sharedTransitionState.get();}" };
 const __initData8 = { code: "function AlertModalNativeTsx9(transitionState_0){const{TransitionStates,sharedVisible,runOnJS,cleanUp}=this.__closure;if(transitionState_0===TransitionStates.YEETED){if(sharedVisible.get()===1){sharedVisible.set(0);}else{runOnJS(cleanUp)();}}else{sharedVisible.set(1);}}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSharedAnimationState() {
   let context;
   let sharedValue;
   let tmp = context;
@@ -1096,7 +1091,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = context;
   cResult[2] = fn;
   tmp9 = fn;
-}) : (() => {
+}) : (function useSharedAnimationState() {
   let sharedValue;
   let obj = react;
   const context = react.useContext(closure_17);
@@ -1143,7 +1138,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return items1;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertActions(children) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -1158,10 +1153,12 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : ((children) => closure_12(Stack_Stack.Stack, { spacing: 12, children: children.children }));
+}) : (function AlertActions(children) {
+  return closure_12(Stack_Stack.Stack, { spacing: 12, children: children.children });
+});
 let closure_36 = tmp9;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertActionButton(onPress) {
   let closure_1;
   let context;
   let first;
@@ -1291,14 +1288,14 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
       }
     }
   });
-  const fn = function() {
+  function t2() {
     return closure_0(...arguments);
-  };
+  }
   cResult[4] = context;
   cResult[5] = tmp5;
-  cResult[6] = fn;
-  tmp13 = fn;
-}) : ((arg0) => {
+  cResult[6] = t2;
+  tmp13 = t2;
+}) : (function AlertActionButton(arg0) {
   let closure_1;
   let closure_2;
   let first;

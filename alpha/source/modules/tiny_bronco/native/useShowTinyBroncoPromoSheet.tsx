@@ -1,23 +1,23 @@
-// Module ID: 14544
-// Function ID: 14545
+// Module ID: 14805
+// Function ID: 14806
 // Name: useShowTinyBroncoPromoSheet
-// Dependencies: [19, 558, 14543, 576, 2036, 14545, 2]
+// Dependencies: [19, 558, 14804, 576, 2048, 14806, 2]
 // Exports: useIsTinyBroncoEligible
 
-// Module 14544 (useShowTinyBroncoPromoSheet)
-import dismissible_content from "dismissible_content" /* 2036 */;
-import TinyBroncoNoticeVisibility from "TinyBroncoNoticeVisibility" /* 14543 */;
-import openTinyBroncoPromoSheetDefault from "openTinyBroncoPromoSheet" /* 14545 */;
+// Module 14805 (useShowTinyBroncoPromoSheet)
+import dismissible_content from "dismissible_content" /* 2048 */;
+import TinyBroncoNoticeVisibility from "TinyBroncoNoticeVisibility" /* 14804 */;
+import openTinyBroncoPromoSheetDefault from "openTinyBroncoPromoSheet" /* 14806 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, visibleContent;
+let dependencyMap;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((visibleContent) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowTinyBroncoPromoSheet(visibleContent) {
   let ref;
   let obj = visibleContent(576);
   const cResult = obj.c(4);
@@ -34,7 +34,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((visibleContent) => {
     }
     const effect = obj2.useEffect(tmp2, tmp3);
   }
-  const fn = function o() {
+  const fn = function n() {
     let current = ref.current;
     const tmp = ref;
     if (!current) {
@@ -53,7 +53,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((visibleContent) => {
   cResult[3] = items;
   tmp3 = items;
   tmp2 = fn;
-}) : ((visibleContent) => {
+}) : (function useShowTinyBroncoPromoSheet(visibleContent) {
   visibleContent = visibleContent.visibleContent;
   const markAsDismissed = visibleContent.markAsDismissed;
   const ref = react.useRef(false);
@@ -71,11 +71,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((visibleContent) => {
     }
   }, items);
 });
-let fn = () => {
+function useIsTinyBroncoEligible() {
   const obj = TinyBroncoNoticeVisibility;
   return obj.useShouldShowAgeNoticePromo();
-};
+}
 const result1 = size.fileFinishedImporting("modules/tiny_bronco/native/useShowTinyBroncoPromoSheet.tsx");
 
-export const useIsTinyBroncoEligible = fn;
+export { useIsTinyBroncoEligible };
 export const useShowTinyBroncoPromoSheet = tmp3;

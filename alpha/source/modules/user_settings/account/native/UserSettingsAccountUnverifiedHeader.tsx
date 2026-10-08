@@ -1,20 +1,20 @@
-// Module ID: 6501
-// Function ID: 6502
+// Module ID: 6677
+// Function ID: 6678
 // Name: UserSettingsAccountUnverifiedHeader
-// Dependencies: [19, 1377, 21, 4896, 587, 6014, 1126, 558, 576, 504, 4892, 5916, 2]
+// Dependencies: [19, 1389, 21, 5090, 587, 6200, 1126, 558, 576, 504, 5086, 6189, 2]
 
-// Module 6501 (UserSettingsAccountUnverifiedHeader)
+// Module 6677 (UserSettingsAccountUnverifiedHeader)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Pressables from "Pressables" /* 5916 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6014 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Pressables from "Pressables" /* 6189 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6200 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -59,7 +59,7 @@ obj2 = { backgroundColor: nativeDefault.unsafe_rawColors.RED_400, height: 36, al
 createStyles = createStyles.createStyles;
 obj3 = { borderWidth: 1, borderColor: nativeDefault.colors.WHITE, borderRadius: nativeDefault.radii.xs, paddingHorizontal: 8, paddingVertical: 4 };
 let closure_6 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsAccountUnverifiedHeader() {
   let currentUser;
   let items1;
   let tmp5;
@@ -135,7 +135,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp13 = tmp15;
   }
   return tmp12;
-}) : (() => {
+}) : (function UserSettingsAccountUnverifiedHeader() {
   let currentUser;
   let items1;
   const tmp = closure_6();
@@ -145,7 +145,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp5 = null;
   if (null != tmp4) {
     const obj2 = { accessibilityRole: "button", style: tmp.accountWarning, onPress: handleOpenEmailVerification, children: items1 };
-    const PressableOpacity = tmp2(5916).PressableOpacity;
+    const PressableOpacity = tmp2(6189).PressableOpacity;
     const obj3 = { style: tmp.accountWarningText, variant: "text-xs/bold", color: "text-overlay-light", children: tmp4.title };
     items1 = [React3(Text_Text.Text, obj3), ];
     const obj4 = { style: tmp.accountWarningButton, variant: "text-xs/medium", color: "text-overlay-light", children: tmp4.button };

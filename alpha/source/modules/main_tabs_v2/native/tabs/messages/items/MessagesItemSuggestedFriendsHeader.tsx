@@ -1,18 +1,18 @@
-// Module ID: 16060
-// Function ID: 16061
+// Module ID: 16320
+// Function ID: 16321
 // Name: MessagesItemSuggestedFriendsHeader
-// Dependencies: [19, 17, 21, 4892, 587, 4896, 558, 576, 4618, 7952, 5918, 1126, 2]
+// Dependencies: [19, 17, 21, 5086, 587, 5090, 558, 576, 4810, 8370, 10211, 1126, 2]
 
-// Module 16060 (MessagesItemSuggestedFriendsHeader)
+// Module 16320 (MessagesItemSuggestedFriendsHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 7952 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8370 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj3;
 let tmp;
 let tmp6;
 const intl2 = tmp(1126);
-const ThemedGradientDefault = tmp6(5918);
+const ThemedGradientDefault = tmp6(10211);
 ({ View: closure_4, StyleSheet } = react_native);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 const sum = Text_Text.TextStyleSheet["text-md/semibold"].lineHeight + nativeDefault.space.PX_24;
@@ -39,7 +39,7 @@ obj3 = { marginHorizontal: nativeDefault.space.PX_16 };
 let closure_8 = createStyles(obj);
 const __initData = { code: "function MessagesItemSuggestedFriendsHeaderTsx1(){const{stickyAt,scrollPosition}=this.__closure;return stickyAt!=null&&scrollPosition.get()>=stickyAt;}" };
 const __initData2 = { code: "function MessagesItemSuggestedFriendsHeaderTsx2(){const{stickyAt,scrollPosition}=this.__closure;return stickyAt!=null&&scrollPosition.get()>=stickyAt;}" };
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stickyAt) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemSuggestedFriendsHeader(stickyAt) {
   let items;
   let items1;
   let stickyLeft;
@@ -52,7 +52,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
   const scrollPosition = stickyAt.scrollPosition;
   ({ stickyLeft, stickyTop } = stickyAt);
   const tmp4 = closure_8();
-  const fn = function l() {
+  const fn = function s() {
     const tmp2 = null != stickyAt && scrollPosition.get() >= tmp;
     return tmp2;
   };
@@ -133,7 +133,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
   cResult[1] = -stickyTop;
   cResult[2] = rect;
   tmp10 = rect;
-}) : ((stickyAt) => {
+}) : (function MessagesItemSuggestedFriendsHeader(stickyAt) {
   let intl;
   let items1;
   let items2;

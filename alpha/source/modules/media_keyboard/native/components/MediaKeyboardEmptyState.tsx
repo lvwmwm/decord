@@ -1,24 +1,24 @@
-// Module ID: 10402
-// Function ID: 10403
+// Module ID: 9999
+// Function ID: 10000
 // Name: MediaKeyboardEmptyState
-// Dependencies: [19, 17, 5105, 21, 4896, 587, 558, 576, 4892, 5601, 6893, 1126, 10403, 10397, 10404, 2]
+// Dependencies: [19, 17, 7477, 21, 5090, 587, 558, 576, 5086, 5375, 7082, 1126, 10000, 9994, 10001, 2]
 // Exports: getMediaEmptyStateComponentOrNull
 
-// Module 10402 (MediaKeyboardEmptyState)
+// Module 9999 (MediaKeyboardEmptyState)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 5105 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import SettingsIcon from "SettingsIcon" /* 6893 */;
-import CameraIcon from "CameraIcon" /* 10397 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10403 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10404 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import SettingsIcon from "SettingsIcon" /* 7082 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7477 */;
+import CameraIcon from "CameraIcon" /* 9994 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10000 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10001 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ obj2 = { marginHorizontal: nativeDefault.space.PX_8, marginVertical: nativeDefau
 createStyles = createStyles.createStyles;
 obj3 = { textAlign: "center", marginVertical: nativeDefault.space.PX_16 };
 let closure_8 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaKeyboardEmptyState(arg0) {
   let actionIcon;
   let actionLabel;
   let actionPress;
@@ -105,7 +105,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp4.label;
   cResult[4] = tmp10;
   tmp9 = tmp10;
-}) : ((arg0) => {
+}) : (function MediaKeyboardEmptyState(arg0) {
   let actionIcon;
   let actionLabel;
   let actionPress;

@@ -1,25 +1,25 @@
-// Module ID: 10641
-// Function ID: 10642
+// Module ID: 10241
+// Function ID: 10242
 // Name: UserProfileVoiceActivityIcon
-// Dependencies: [109, 19, 4515, 1096, 21, 558, 576, 504, 7534, 5853, 5887, 5888, 5890, 5889, 5892, 2]
+// Dependencies: [109, 19, 4707, 1096, 21, 558, 576, 504, 9256, 6785, 8199, 8200, 8202, 8201, 8204, 2]
 
-// Module 10641 (UserProfileVoiceActivityIcon)
+// Module 10241 (UserProfileVoiceActivityIcon)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1096 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 5853 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 6785 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, channel;
+let _require;
 
 let closure_3 = ["channel"];
 const Permissions = Constants.Permissions;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileVoiceActivityIcon(channel) {
   let _private;
   let tmp10;
   let tmp4;
@@ -48,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     tmp8 = cResult[3];
   }
   if (cResult[4] !== obj2) {
-    const fn = function v() {
+    const fn = function f() {
       let isPrivateResult = _private.isPrivate();
       const tmp = _private;
       if (!isPrivateResult) {
@@ -76,7 +76,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         if (tmp13) {
           let tmp39;
           if (cResult[8] !== tmp4) {
-            const StageLockIcon = tmp(5887).StageLockIcon;
+            const StageLockIcon = tmp(8199).StageLockIcon;
             const merged = Object.assign(tmp4);
             const tmp44 = <StageLockIcon />;
             cResult[8] = tmp4;
@@ -92,7 +92,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       if (isGuildStageVoiceResult) {
         let tmp33;
         if (cResult[10] !== tmp4) {
-          const StageIcon = tmp(5888).StageIcon;
+          const StageIcon = tmp(8200).StageIcon;
           const merged1 = Object.assign(tmp4);
           const tmp38 = <StageIcon />;
           cResult[10] = tmp4;
@@ -105,7 +105,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       } else if (obj2.isNSFW()) {
         let tmp27;
         if (cResult[12] !== tmp4) {
-          const VoiceWarningIcon = tmp(5890).VoiceWarningIcon;
+          const VoiceWarningIcon = tmp(8202).VoiceWarningIcon;
           const merged2 = Object.assign(tmp4);
           const tmp32 = <VoiceWarningIcon />;
           cResult[12] = tmp4;
@@ -118,7 +118,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       } else if (tmp13) {
         let tmp21;
         if (cResult[14] !== tmp4) {
-          const VoiceLockIcon = tmp(5889).VoiceLockIcon;
+          const VoiceLockIcon = tmp(8201).VoiceLockIcon;
           const merged3 = Object.assign(tmp4);
           const tmp26 = <VoiceLockIcon />;
           cResult[14] = tmp4;
@@ -129,7 +129,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         }
         tmp15 = tmp21;
       } else if (cResult[16] !== tmp4) {
-        const VoiceNormalIcon = tmp(5892).VoiceNormalIcon;
+        const VoiceNormalIcon = tmp(8204).VoiceNormalIcon;
         const merged4 = Object.assign(tmp4);
         const tmp20 = <VoiceNormalIcon />;
         cResult[16] = tmp4;
@@ -141,7 +141,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
   }
   if (cResult[6] !== tmp4) {
-    const PhoneCallIcon = tmp(7534).PhoneCallIcon;
+    const PhoneCallIcon = tmp(9256).PhoneCallIcon;
     const merged5 = Object.assign(tmp4);
     const tmp50 = <PhoneCallIcon />;
     cResult[6] = tmp4;
@@ -151,7 +151,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     tmp45 = cResult[7];
   }
   return tmp45;
-}) : ((channel) => {
+}) : (function UserProfileVoiceActivityIcon(channel) {
   channel = channel.channel;
   const merged = Object.assign(channel, Object.assign({ channel: 0 }));
   const items = [PermissionStore];
@@ -174,27 +174,27 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
       if (isGuildStageVoiceResult) {
         if (tmp6) {
-          const StageLockIcon = tmp2(5887).StageLockIcon;
+          const StageLockIcon = tmp2(8199).StageLockIcon;
           const merged1 = Object.assign(merged);
           tmp8Result = <StageLockIcon />;
         }
         return tmp8Result;
       }
       if (isGuildStageVoiceResult) {
-        const StageIcon = tmp2(5888).StageIcon;
+        const StageIcon = tmp2(8200).StageIcon;
         const merged2 = Object.assign(merged);
         tmp8Result = <StageIcon />;
       } else if (channel.isNSFW()) {
         const obj4 = {};
-        const VoiceWarningIcon = tmp2(5890).VoiceWarningIcon;
+        const VoiceWarningIcon = tmp2(8202).VoiceWarningIcon;
         const merged3 = Object.assign(merged);
         tmp8Result = tmp8(VoiceWarningIcon, obj4);
       } else {
         let VoiceNormalIcon;
         if (tmp6) {
-          VoiceNormalIcon = tmp2(5889).VoiceLockIcon;
+          VoiceNormalIcon = tmp2(8201).VoiceLockIcon;
         } else {
-          VoiceNormalIcon = tmp2(5892).VoiceNormalIcon;
+          VoiceNormalIcon = tmp2(8204).VoiceNormalIcon;
         }
         const obj5 = {};
         const merged4 = Object.assign(merged);
@@ -202,7 +202,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
     }
   }
-  const PhoneCallIcon = tmp2(7534).PhoneCallIcon;
+  const PhoneCallIcon = tmp2(9256).PhoneCallIcon;
   const merged5 = Object.assign(merged);
   return <PhoneCallIcon />;
 });

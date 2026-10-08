@@ -1,24 +1,24 @@
-// Module ID: 17282
-// Function ID: 17283
+// Module ID: 17563
+// Function ID: 17564
 // Name: SecureFramesCallVerificationBottomSheet
-// Dependencies: [19, 4919, 1085, 21, 558, 576, 504, 9382, 8048, 1126, 9378, 9395, 2]
+// Dependencies: [19, 5108, 1085, 21, 558, 576, 504, 8803, 8457, 1126, 8800, 8816, 2]
 
-// Module 17282 (SecureFramesCallVerificationBottomSheet)
+// Module 17563 (SecureFramesCallVerificationBottomSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import showShareActionSheet from "showShareActionSheet" /* 8048 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 9382 */;
-import SecureFramesVerificationBottomSheetDefault from "SecureFramesVerificationBottomSheet" /* 9395 */;
+import showShareActionSheet from "showShareActionSheet" /* 8457 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 8803 */;
+import SecureFramesVerificationBottomSheetDefault from "SecureFramesVerificationBottomSheet" /* 8816 */;
 import react from "react" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channelId, secureFramesState;
+let secureFramesState;
 
 const AnalyticsSections = Constants.AnalyticsSections;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFramesCallVerificationBottomSheet(channelId) {
   let tmp10;
   let tmp11;
   let tmp4;
@@ -72,7 +72,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     const format = intl3.format;
     let obj2 = { helpArticle: tmpResult2.getSecureFramesHelpdeskArticle() };
     const wKxADe = tmp(1126).t.wKxADe;
-    tmpResult2 = channelId(9378);
+    tmpResult2 = channelId(8800);
     const formatResult = format(wKxADe, obj2);
     cResult[4] = stringResult;
     cResult[5] = stringResult1;
@@ -97,7 +97,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[8] = tmp8;
   cResult[9] = tmp16;
   tmp15 = tmp16;
-}) : ((channelId) => {
+}) : (function SecureFramesCallVerificationBottomSheet(channelId) {
   let obj4;
   channelId = channelId.channelId;
   let obj = channelId(504);
@@ -126,7 +126,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const format = intl3.format;
   let obj3 = { helpArticle: obj4.getSecureFramesHelpdeskArticle() };
   const wKxADe = channelId(1126).t.wKxADe;
-  obj4 = channelId(9378);
+  obj4 = channelId(8800);
   return <tmp3 title={intl.string(channelId(1126).t.cTQI5t)} subtitle={intl2.string(channelId(1126).t["MPp7+C"])} footer={format(wKxADe, obj3)} epochAuthenticator={stateFromStores} onShareClick={callback} />;
 });
 let result = size.fileFinishedImporting("modules/rtc/native/SecureFramesCallVerificationBottomSheet.tsx");

@@ -1,29 +1,29 @@
-// Module ID: 8342
-// Function ID: 8343
+// Module ID: 13207
+// Function ID: 13208
 // Name: UserProfilePersonalWidgetCard
-// Dependencies: [32, 19, 17, 502, 1085, 21, 4896, 587, 558, 576, 8343, 8344, 4892, 1126, 2028, 8345, 5981, 5612, 7938, 4595, 504, 8346, 8347, 6713, 2]
+// Dependencies: [32, 19, 17, 502, 1085, 21, 5090, 587, 558, 576, 13208, 13209, 5086, 1126, 2040, 13210, 6164, 5387, 8103, 4787, 504, 9005, 13097, 6890, 2]
 
-// Module 8342 (UserProfilePersonalWidgetCard)
+// Module 13207 (UserProfilePersonalWidgetCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import native from "native" /* 4595 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import LinearGradientDefault from "LinearGradient" /* 5612 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import UserProfileCardDefault from "UserProfileCard" /* 6713 */;
-import GifTagDefault from "GifTag" /* 7938 */;
-import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 8343 */;
-import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 8344 */;
-import UserProfileWidgetReportButtonDefault from "UserProfileWidgetReportButton" /* 8347 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import native from "native" /* 4787 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import LinearGradientDefault from "LinearGradient" /* 5387 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import UserProfileCardDefault from "UserProfileCard" /* 6890 */;
+import GifTagDefault from "GifTag" /* 8103 */;
+import UserProfileWidgetReportButtonDefault from "UserProfileWidgetReportButton" /* 13097 */;
+import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 13208 */;
+import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 13209 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ let rect1;
 let size;
 let tmp;
 let unpackModuleId;
-const WidgetAssetUtils = tmp(8345);
+const WidgetAssetUtils = tmp(13210);
 let _slicedToArray = _slicedToArray_mod;
 ({ Pressable: hasOwnProperty, StyleSheet: metroRequire, View: metroImportDefault } = react_native);
 const ThemeTypes = Constants.ThemeTypes;
@@ -67,7 +67,7 @@ rect = { position: "absolute", top: nativeDefault.space.PX_8, left: nativeDefaul
 rect1 = { position: "absolute", top: nativeDefault.space.PX_4, left: nativeDefault.space.PX_4 };
 let closure_15 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PersonalWidgetText(arg0) {
   let children;
   let color;
   let lineClamp;
@@ -117,7 +117,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = variant;
   cResult[3] = result;
   tmp5 = result;
-}) : ((variant) => {
+}) : (function PersonalWidgetText(variant) {
   let lineClamp;
   let onTextLayout;
   variant = variant.variant;
@@ -136,7 +136,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return closure_10(variant(children[12]).Text, { variant, color, lineClamp, onTextLayout, children: children1 });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function PersonalWidgetShowMoreButton() {
   let isExpanded;
   let setIsExpanded;
   let tmp5;
@@ -208,7 +208,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = null;
   }
   return tmp5;
-}) : (() => {
+}) : (function PersonalWidgetShowMoreButton() {
   let Text;
   let closure_129_0;
   let isExpanded;
@@ -229,7 +229,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       children: authStore(Text, obj4)
     };
     obj3 = { expanded: isExpanded };
-    Text = tmp(4892).Text;
+    Text = tmp(5086).Text;
     const intl = tmp(1126).intl;
     const string = intl.string;
     const t = tmp(1126).t;
@@ -241,7 +241,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return tmp5Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWidgetImage(arg0, arg1, arg2) {
   let tmp14;
   const obj = react2;
   const cResult = obj.c(11);
@@ -288,7 +288,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, ar
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F139013 */ });
+        return closure_0(() => { /* body not rendered: F144668 */ });
       }
     }
     cResult[6] = T;
@@ -296,21 +296,21 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, ar
   } else {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F139013 */ });
+        return closure_0(() => { /* body not rendered: F144668 */ });
       }
     }
   }
   if (null != tmp7 && tmp7.isAnimated && !(setting || tmp5[0])) {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F139013 */ });
+        return closure_0(() => { /* body not rendered: F144668 */ });
       }
     }
   }
   if (cResult[7] === tmp8) {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F139013 */ });
+        return closure_0(() => { /* body not rendered: F144668 */ });
       }
     }
   }
@@ -319,7 +319,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, ar
   cResult[8] = null != tmp7 && tmp7.isAnimated && !(setting || tmp5[0]);
   cResult[9] = null != tmp7 && tmp7.isAnimated && !setting && !arg2;
   cResult[10] = obj4;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useWidgetImage(arg0, arg1, arg2) {
   let callback;
   let closure_0;
   let closure_2;
@@ -374,7 +374,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, ar
   return obj2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function CoverSection(section) {
   let canToggleAnimation;
   let disableInteraction;
   let intl;
@@ -470,7 +470,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
                     const obj4 = { theme: ThemeTypes.DARK, primaryColor: null, secondaryColor: null, children: unpackModuleId(metroImportDefault, obj5) };
                     obj5 = { style: tmp4.coverContainer, children: items };
                     items = [tmp21, tmp29, tmp16, tmp36];
-                    const ThemeContextProvider = tmp(4595).ThemeContextProvider;
+                    const ThemeContextProvider = tmp(4787).ThemeContextProvider;
                     const tmp45 = authStore(ThemeContextProvider, obj4);
                     cResult[22] = tmp16;
                     cResult[23] = tmp4.coverContainer;
@@ -539,7 +539,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
   cResult[1] = prop;
   cResult[2] = items2;
   tmp7 = items2;
-}) : ((section) => {
+}) : (function CoverSection(section) {
   let canToggleAnimation;
   let disableInteraction;
   let intl;
@@ -602,7 +602,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
     if (null != source) {
       if ("" !== section.title) {
         const obj9 = { colors, locations, style: tmp15.absoluteFill, pointerEvents: "none" };
-        tmp24Result4 = tmp24(tmp14(5612), obj9);
+        tmp24Result4 = tmp24(tmp14(5387), obj9);
       } else {
         tmp24Result4 = null;
       }
@@ -612,7 +612,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
     let tmp24Result5 = null;
     if (showGifTag) {
       const obj10 = { style: tmp.gifTag };
-      tmp24Result5 = tmp24(tmp14(7938), obj10);
+      tmp24Result5 = tmp24(tmp14(8103), obj10);
     }
     items2[3] = tmp24Result5;
     tmp24Result6 = tmp24(ThemeContextProvider, obj4);
@@ -620,7 +620,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
   return tmp24Result6;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((field) => {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function FieldRow(field) {
   let canToggleAnimation;
   let disableInteraction;
   let intl;
@@ -749,7 +749,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((field) => {
   cResult[1] = tmp4.fieldImage;
   cResult[2] = tmp7;
   tmp6 = tmp7;
-}) : ((field) => {
+}) : (function FieldRow(field) {
   let canToggleAnimation;
   let disableInteraction;
   let intl;
@@ -806,7 +806,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((field) => {
   return unpackModuleId(metroImportDefault, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function FieldsSection(userId) {
   let disableInteraction;
   let section;
   let obj = userId(576);
@@ -860,7 +860,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
     cResult[6] = fn;
     tmp4 = fn;
   }
-}) : ((arg0) => {
+}) : (function FieldsSection(arg0) {
   let disableInteraction;
   let fields;
   let require;
@@ -882,7 +882,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   return tmp2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfilePersonalWidgetCardContent(userId) {
   let cardStyle;
   let disableInteraction;
   let first;
@@ -922,7 +922,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
     }
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp13 = closure_10(userId(8346).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
+      const tmp13 = closure_10(userId(9005).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
       cResult[6] = tmp13;
       tmp11 = tmp13;
     } else {
@@ -1009,25 +1009,23 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
     cResult[11] = tmp16;
     tmp15 = tmp16;
   }
-  class I {
-    constructor(type, arg1) {
-      type = type.type;
-      if ("cover" === type) {
-        const obj2 = { userId, section: type, disableInteraction };
-        return authStore(closure_19, obj2, arg1);
-      } else if ("fields" === type) {
-        const obj = { userId, section: type, disableInteraction };
-        return authStore(closure_21, obj, arg1);
-      } else {
-        return null;
-      }
+  function renderSection(type, arg1) {
+    type = type.type;
+    if ("cover" === type) {
+      const obj2 = { userId, section: type, disableInteraction };
+      return authStore(closure_19, obj2, arg1);
+    } else if ("fields" === type) {
+      const obj = { userId, section: type, disableInteraction };
+      return authStore(closure_21, obj, arg1);
+    } else {
+      return null;
     }
   }
   cResult[3] = undefined !== disableInteraction && disableInteraction;
   cResult[4] = userId;
-  cResult[5] = I;
-  tmp10 = I;
-}) : ((userId) => {
+  cResult[5] = renderSection;
+  tmp10 = renderSection;
+}) : (function UserProfilePersonalWidgetCardContent(userId) {
   let disableInteraction;
   let items1;
   let obj4;
@@ -1045,18 +1043,18 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   let obj = userId(504);
   const items = [AuthenticationStore];
   const stateFromStores = obj.useStateFromStores(items, () => AuthenticationStore.getId() === userId);
-  let obj2 = { style: cardStyle, titleLeadingIcon: closure_10(userId(8346).NitroWheelIcon, { size: "xs", color: "icon-subtle" }), title: widget.header, trailingAction: tmp4Result, children: tmp8(tmp9, obj4) };
+  let obj2 = { style: cardStyle, titleLeadingIcon: closure_10(userId(9005).NitroWheelIcon, { size: "xs", color: "icon-subtle" }), title: widget.header, trailingAction: tmp4Result, children: tmp8(tmp9, obj4) };
   tmp4Result = !stateFromStores && !disableInteraction;
   const tmp5 = disableInteraction;
-  const tmp6 = disableInteraction(6713);
+  const tmp6 = disableInteraction(6890);
   if (tmp4Result) {
     const obj3 = { userId, widget };
-    tmp4Result = tmp4(tmp5(8347), obj3);
+    tmp4Result = tmp4(tmp5(13097), obj3);
   }
   const sections = widget.sections;
   obj4 = { style: tmp.sectionsContainer, children: items1 };
   items1 = [
-    sections.map((type, index) => {
+    sections.map(function renderSection(type, index) {
       type = type.type;
       if ("cover" === type) {
         const obj2 = { userId, section: type, disableInteraction };
@@ -1080,7 +1078,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   return closure_10(tmp6, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfilePersonalWidgetCard(arg0) {
   let obj3;
   let tmp4;
   const obj = react2;
@@ -1098,7 +1096,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : ((arg0) => {
+}) : (function UserProfilePersonalWidgetCard(arg0) {
   let obj2;
   const obj = { children: authStore(closure_22, obj2) };
   obj2 = {};

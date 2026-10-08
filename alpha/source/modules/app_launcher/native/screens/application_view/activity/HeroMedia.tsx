@@ -1,31 +1,31 @@
-// Module ID: 11722
-// Function ID: 11723
+// Module ID: 11787
+// Function ID: 11788
 // Name: HeroMedia
-// Dependencies: [19, 4885, 1489, 21, 4896, 558, 576, 11008, 9184, 504, 6670, 11686, 1126, 7993, 2]
+// Dependencies: [19, 5079, 1501, 21, 5090, 558, 576, 11234, 10752, 504, 6847, 11751, 1126, 8401, 2]
 
-// Module 11722 (HeroMedia)
+// Module 11787 (HeroMedia)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1489 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6670 */;
-import common_VideoDefault from "common/Video" /* 7993 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9184 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6847 */;
+import common_VideoDefault from "common/Video" /* 8401 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 10752 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import createStyles from "createStyles" /* 4896 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp;
 let tmp2;
-const useDefaultAppLauncherWidth = tmp(11008);
-const getPreviewVideoAssetUrlDefault = tmp2(11686);
+const useDefaultAppLauncherWidth = tmp(11234);
+const getPreviewVideoAssetUrlDefault = tmp2(11751);
 const DEFAULT_CONTENT_PADDING = AppLauncherNativeConstants.DEFAULT_CONTENT_PADDING;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ mediaBackground: { backgroundColor: "black" } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHeroMediaDimensions(arg0) {
   let contentWidth;
   let tmp4;
   let width;
@@ -63,7 +63,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = contentWidth;
   cResult[4] = size;
   tmp7 = size;
-}) : (() => {
+}) : (function useHeroMediaDimensions() {
   let contentWidth;
   let width;
   let obj = arg0;
@@ -83,13 +83,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_7 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeroMedia(arg0) {
   let applicationId;
   let containerHeight;
   let contentWidth;
+  let height;
   let items4;
   let useReducedMotion;
   let width;
+  let width2;
   const obj = react2;
   const cResult = obj.c(36);
   ({ applicationId, containerHeight, width, contentWidth } = arg0);
@@ -121,17 +123,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const _Symbol2 = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
         const items1 = [AccessibilityStore];
-        class S {
-          constructor() {
-            return closure_1_3.useReducedMotion;
-          }
-        }
+        const fn = function k() {
+          return useReducedMotion.useReducedMotion;
+        };
         const items2 = [];
         cResult[7] = items1;
-        cResult[8] = S;
+        cResult[8] = fn;
         cResult[9] = items2;
         tmp14 = items2;
-        tmp13 = S;
+        tmp13 = fn;
         tmp12 = items1;
       } else {
         tmp12 = cResult[7];
@@ -155,85 +155,72 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           if ("" !== tmp20) {
             let tmp23;
             if (cResult[13] === tmp11.url) {
-              let tmp27;
-              let tmp31;
+              let tmp26;
+              let tmp30;
               if (cResult[14] === tmp20) {
                 tmp23 = cResult[15];
               }
               let name;
-              const height = size.height;
-              class S {
-                constructor() {
-                  return closure_1_3.useReducedMotion;
-                }
-              }
-              const url2 = tmp11.url;
-              const tmp25 = cResult[16];
+              ({ height, width: width2 } = size);
+              const url = tmp11.url;
+              const tmp24 = cResult[16];
               if (getOrFetchApplication != null) {
                 name = getOrFetchApplication.name;
               }
-              if (tmp25 !== name) {
+              if (tmp24 !== name) {
                 const intl = tmp(1126).intl;
                 const formatToPlainString = intl.formatToPlainString;
-                let str2;
-                class S {
-                  constructor() {
-                    return closure_1_3.useReducedMotion;
-                  }
-                }
+                let str3;
+                const prop1 = tmp(1126).t["Af+EQD"];
                 if (getOrFetchApplication != null) {
-                  str2 = getOrFetchApplication.name;
+                  str3 = getOrFetchApplication.name;
                 }
-                if (str2 == null) {
-                  str2 = "";
+                if (str3 == null) {
+                  str3 = "";
                 }
-                const obj2 = { applicationName: str2 };
-                const formatToPlainStringResult = formatToPlainString(tmp28, obj2);
+                const obj2 = { applicationName: str3 };
+                const formatToPlainStringResult = formatToPlainString(prop1, obj2);
                 let name1;
                 if (getOrFetchApplication != null) {
                   name1 = getOrFetchApplication.name;
                 }
                 cResult[16] = name1;
                 cResult[17] = formatToPlainStringResult;
-                tmp27 = formatToPlainStringResult;
+                tmp26 = formatToPlainStringResult;
               } else {
-                tmp27 = cResult[17];
+                tmp26 = cResult[17];
               }
               if (cResult[18] !== size.height) {
                 const obj3 = { maxHeight: size.height };
-                class S {
-                  constructor() {
-                    return closure_1_3.useReducedMotion;
-                  }
-                }
+                cResult[18] = size.height;
                 cResult[19] = obj3;
-                tmp31 = obj3;
+                tmp30 = obj3;
               } else {
-                tmp31 = cResult[19];
+                tmp30 = cResult[19];
               }
               if (cResult[20] === containerHeight) {
-                let tmp32;
+                let tmp31;
                 if (cResult[21] === size.height) {
-                  tmp32 = cResult[22];
+                  tmp31 = cResult[22];
                 }
                 if (cResult[23] === tmp4.mediaBackground) {
-                  if (cResult[24] === tmp31) {
-                    let tmp34;
-                    if (cResult[25] === tmp32) {
-                      tmp34 = cResult[26];
+                  if (cResult[24] === tmp30) {
+                    let tmp33;
+                    if (cResult[25] === tmp31) {
+                      tmp33 = cResult[26];
                     }
                     if (cResult[27] === tmp11.url) {
                       if (cResult[28] === size.height) {
                         if (cResult[29] === size.width) {
                           if (cResult[30] === tmp4.mediaBackground) {
-                            if (cResult[31] === tmp27) {
-                              if (cResult[32] === tmp34) {
+                            if (cResult[31] === tmp26) {
+                              if (cResult[32] === tmp33) {
                                 if (cResult[33] === tmp23) {
-                                  let tmp35;
+                                  let tmp34;
                                   if (cResult[34] === stateFromStores) {
-                                    tmp35 = cResult[35];
+                                    tmp34 = cResult[35];
                                   }
-                                  return tmp35;
+                                  return tmp34;
                                 }
                               }
                             }
@@ -241,62 +228,37 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         }
                       }
                     }
-                    class S {
-                      constructor() {
-                        return closure_1_3.useReducedMotion;
-                      }
-                    }
-                    tmp37[1] = stateFromStores;
-                    tmp37[2] = tmp23;
-                    tmp37[3] = height;
-                    tmp37[4] = tmp24;
-                    tmp37[5] = url2;
-                    tmp37[7] = tmp27;
-                    tmp37[8] = tmp34;
-                    tmp37[9] = tmp4.mediaBackground;
-                    const tmp38 = jsx(common_VideoDefault, tmp37);
+                    const tmp36 = jsx(common_VideoDefault, { muted: true, paused: stateFromStores, src: tmp23, height, width: width2, poster: url, resizeMode: "cover", accessibilityLabel: tmp26, style: tmp33, videoStyle: tmp4.mediaBackground, postponeRender: false });
                     cResult[27] = tmp11.url;
                     cResult[28] = size.height;
                     cResult[29] = size.width;
                     cResult[30] = tmp4.mediaBackground;
-                    cResult[31] = tmp27;
-                    cResult[32] = tmp34;
+                    cResult[31] = tmp26;
+                    cResult[32] = tmp33;
                     cResult[33] = tmp23;
                     cResult[34] = stateFromStores;
-                    cResult[35] = tmp38;
-                    tmp35 = tmp38;
+                    cResult[35] = tmp36;
+                    tmp34 = tmp36;
                   }
                 }
-                const items3 = [, , ];
-                class S {
-                  constructor() {
-                    return closure_1_3.useReducedMotion;
-                  }
-                }
-                items3[1] = tmp31;
-                items3[2] = tmp32;
+                const items3 = [tmp4.mediaBackground, tmp30, tmp31];
                 cResult[23] = tmp4.mediaBackground;
-                cResult[24] = tmp31;
-                cResult[25] = tmp32;
+                cResult[24] = tmp30;
+                cResult[25] = tmp31;
                 cResult[26] = items3;
-                tmp34 = items3;
+                tmp33 = items3;
               }
-              let tmp33 = null != containerHeight;
-              if (tmp33) {
+              let tmp32 = null != containerHeight;
+              if (tmp32) {
                 const obj4 = { transform: items4 };
-                const obj5 = { translateY: null };
-                class S {
-                  constructor() {
-                    return closure_1_3.useReducedMotion;
-                  }
-                }
-                items4 = [obj5];
-                tmp33 = obj4;
+                items4 = [{ translateY: (containerHeight - size.height) / 2 }];
+                tmp32 = obj4;
+                const obj5 = { translateY: (containerHeight - size.height) / 2 };
               }
               cResult[20] = containerHeight;
               cResult[21] = size.height;
-              cResult[22] = tmp33;
-              tmp32 = tmp33;
+              cResult[22] = tmp32;
+              tmp31 = tmp32;
             }
             if (null != tmp20) {
               let obj7;
@@ -305,33 +267,26 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 const obj6 = { videoURI: tmp20 };
               }
               cResult[13] = tmp11.url;
-              class S {
-                constructor() {
-                  return closure_1_3.useReducedMotion;
-                }
-              }
               cResult[14] = tmp20;
               cResult[15] = obj7;
               tmp23 = obj7;
             }
-            const url = tmp11.url;
-            class S {
-              constructor() {
-                return closure_1_3.useReducedMotion;
-              }
+            let str2 = tmp11.url;
+            if (str2 == null) {
+              str2 = "";
             }
-            obj7 = { uri: url };
+            obj7 = { uri: str2 };
           }
         }
         return null;
       }
-      let prop1;
+      let prop2;
       if (prop != null) {
-        prop1 = prop.activity_preview_video_asset_id;
+        prop2 = prop.activity_preview_video_asset_id;
       }
       let tmp22 = null;
-      if (null != prop1) {
-        tmp22 = tmp10(11686)(applicationId, prop.activity_preview_video_asset_id);
+      if (null != prop2) {
+        tmp22 = tmp10(11751)(applicationId, prop.activity_preview_video_asset_id);
       }
       cResult[10] = applicationId;
       cResult[11] = prop;
@@ -349,7 +304,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = width;
   cResult[2] = obj9;
   tmp5 = obj9;
-}) : ((arg0) => {
+}) : (function HeroMedia(arg0) {
   let applicationId;
   let containerHeight;
   let contentWidth;

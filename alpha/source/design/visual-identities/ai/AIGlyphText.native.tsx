@@ -1,17 +1,17 @@
-// Module ID: 14229
-// Function ID: 14230
+// Module ID: 14053
+// Function ID: 14054
 // Name: AIGlyphText
-// Dependencies: [19, 17, 21, 4618, 4896, 14230, 558, 576, 4586, 2]
+// Dependencies: [19, 17, 21, 4810, 5090, 14054, 558, 576, 4778, 2]
 
-// Module 14229 (AIGlyphText)
+// Module 14053 (AIGlyphText)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useToken2 from "useToken" /* 4586 */;
-import AIGlyphFont from "AIGlyphFont" /* 14230 */;
+import useToken2 from "useToken" /* 4778 */;
+import AIGlyphFont from "AIGlyphFont" /* 14054 */;
 import react from "react" /* 19 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import createStyles from "createStyles" /* 4896 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let closure_5 = createStyles.createStyles((fontSize, color) => {
   ({ color, fontFamily: AIGlyphFont.AI_GLYPH_FONT_FAMILY_NATIVE, fontSize, lineHeight: fontSize, textAlign: "center", includeFontPadding: false });
   return obj;
 });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((size) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AIGlyphText(size) {
   let allowFontScaling;
   let animated;
   let children;
@@ -41,7 +41,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((size) => {
   }
   let tmp6;
   const tmp4 = undefined !== animated && animated;
-  const useToken = tmp(4586).useToken;
+  const useToken = tmp(4778).useToken;
   useToken2;
   if ("none" !== str) {
     tmp6 = str;
@@ -83,7 +83,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((size) => {
   cResult[1] = tmp7.glyph;
   cResult[2] = items;
   tmp9 = items;
-}) : ((color) => {
+}) : (function AIGlyphText(color) {
   let allowFontScaling;
   let animated;
   let children;

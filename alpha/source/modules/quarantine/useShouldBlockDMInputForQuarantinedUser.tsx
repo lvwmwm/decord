@@ -1,11 +1,11 @@
-// Module ID: 12092
-// Function ID: 12093
+// Module ID: 12169
+// Function ID: 12170
 // Name: useShouldBlockDMInputForQuarantinedUser
-// Dependencies: [5116, 1085, 558, 576, 11909, 504, 2]
+// Dependencies: [5428, 1085, 558, 576, 11982, 504, 2]
 
-// Module 12092 (useShouldBlockDMInputForQuarantinedUser)
+// Module 12169 (useShouldBlockDMInputForQuarantinedUser)
 import Constants from "Constants" /* 1085 */;
-import MessageStore from "MessageStore" /* 5116 */;
+import MessageStore from "MessageStore" /* 5428 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 let _require;
 
 const UserFlags = Constants.UserFlags;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasFlag, id) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldBlockDMInputForQuarantinedUser(hasFlag, id) {
   let first;
   let tmp7;
   let tmp8;
@@ -69,7 +69,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasFlag, id) => {
     tmp11 = tmp13;
   }
   return tmp10;
-}) : ((hasFlag, arg1) => {
+}) : (function useShouldBlockDMInputForQuarantinedUser(hasFlag, arg1) {
   let id;
   _require = arg1;
   const obj = require("useShowConvoStarterInDM");

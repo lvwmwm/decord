@@ -1,13 +1,13 @@
-// Module ID: 6923
-// Function ID: 6924
+// Module ID: 7112
+// Function ID: 7113
 // Name: BillingStandaloneUtils
-// Dependencies: [1085, 1371, 1266, 1282, 2]
+// Dependencies: [1085, 1383, 1278, 1294, 2]
 // Exports: goToBillingStandalonePageWithHandoff, goToStandalonePremiumCheckoutWeb
 
-// Module 6923 (BillingStandaloneUtils)
-import v1 from "v1" /* 1266 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import URLUtilsDefault from "URLUtils" /* 1371 */;
+// Module 7112 (BillingStandaloneUtils)
+import v1 from "v1" /* 1278 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import URLUtilsDefault from "URLUtils" /* 1383 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

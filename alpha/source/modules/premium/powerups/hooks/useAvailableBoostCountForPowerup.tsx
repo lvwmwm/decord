@@ -1,14 +1,14 @@
-// Module ID: 12211
-// Function ID: 12212
+// Module ID: 12290
+// Function ID: 12291
 // Name: useAvailableBoostCountForPowerup
-// Dependencies: [32, 19, 2074, 4773, 4774, 558, 576, 504, 7682, 1375, 2]
+// Dependencies: [32, 19, 2086, 4967, 4968, 558, 576, 504, 8003, 1387, 2]
 
-// Module 12211 (useAvailableBoostCountForPowerup)
+// Module 12290 (useAvailableBoostCountForPowerup)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4773 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4774 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4967 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4968 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 ({ GuildPowerupType: metroImportDefault, POWERUPS_INCLUDED_IN_LEVEL: metroImportAll, LEVEL_SKU_ID_TO_BOOSTING_TIER: c9 } = GuildPowerupsConstants);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, type) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvailableBoostCountForPowerup(arg0, type) {
   let closure_0;
   let first;
   let tmp6;
@@ -165,7 +165,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, type) => {
       }
     }
   }
-}) : ((arg0, arg1) => {
+}) : (function useAvailableBoostCountForPowerup(arg0, arg1) {
   let closure_1;
   let stateFromStores1;
   _require = arg0;

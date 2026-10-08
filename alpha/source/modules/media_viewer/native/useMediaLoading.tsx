@@ -1,19 +1,17 @@
-// Module ID: 12795
-// Function ID: 12796
+// Module ID: 12942
+// Function ID: 12943
 // Name: useMediaLoading
-// Dependencies: [32, 19, 558, 576, 6460, 2]
+// Dependencies: [32, 19, 558, 576, 6638, 2]
 
-// Module 12795 (useMediaLoading)
+// Module 12942 (useMediaLoading)
 import react2 from "react" /* 576 */;
-import hooks_useStableCallbackDefault from "hooks/useStableCallback" /* 6460 */;
+import hooks_useStableCallbackDefault from "hooks/useStableCallback" /* 6638 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let onLoad;
-
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onLoad) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaLoading(onLoad) {
   let closure_129_3;
   let closure_129_4;
   let closure_129_5;
@@ -41,7 +39,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onLoad) => {
   let closure_7 = react.useRef(null);
   const obj2 = react;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function l() {
+    const fn = function o() {
       if (null != ref2.current) {
         const _clearTimeout = clearTimeout;
         clearTimeout(ref2.current);
@@ -245,7 +243,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onLoad) => {
   cResult[16] = tmp6;
   cResult[17] = tmp8;
   cResult[18] = obj3;
-}) : ((onLoad) => {
+}) : (function useMediaLoading(onLoad) {
   let c3;
   let closure_4;
   let closure_5;

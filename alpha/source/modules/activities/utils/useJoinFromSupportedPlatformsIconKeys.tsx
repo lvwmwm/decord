@@ -1,9 +1,9 @@
-// Module ID: 13096
-// Function ID: 13097
+// Module ID: 13374
+// Function ID: 13375
 // Name: useJoinFromSupportedPlatformsIconKeys
 // Dependencies: [19, 1085, 558, 576, 2]
 
-// Module 13096 (useJoinFromSupportedPlatformsIconKeys)
+// Module 13374 (useJoinFromSupportedPlatformsIconKeys)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import react from "react" /* 19 */;
@@ -60,7 +60,7 @@ const ActivityGamePlatforms = Constants.ActivityGamePlatforms;
 const IconKey = { DESKTOP: "desktop", MOBILE: "mobile", ANDROID: "android", IOS: "ios", PLAYSTATION: "playstation", XBOX: "xbox", VR: "vr" };
 let closure_5 = [];
 const obj2 = { [ActivityGamePlatforms.DESKTOP]: IconKey.DESKTOP, [ActivityGamePlatforms.ANDROID]: IconKey.ANDROID, [ActivityGamePlatforms.IOS]: IconKey.IOS, [ActivityGamePlatforms.XBOX]: IconKey.XBOX, [ActivityGamePlatforms.PS4]: IconKey.PLAYSTATION, [ActivityGamePlatforms.PS5]: IconKey.PLAYSTATION, [ActivityGamePlatforms.SAMSUNG]: null, [ActivityGamePlatforms.EMBEDDED]: null, [ActivityGamePlatforms.META_QUEST]: IconKey.VR };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useJoinFromSupportedPlatformsIconKeys(arg0) {
   let currentPlatform;
   let isGameLaunchable;
   let platforms;
@@ -82,7 +82,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = platforms;
   cResult[3] = tmp3;
   tmp2 = tmp3;
-}) : ((platforms) => {
+}) : (function useJoinFromSupportedPlatformsIconKeys(platforms) {
   platforms = platforms.platforms;
   const currentPlatform = platforms.currentPlatform;
   const isGameLaunchable = platforms.isGameLaunchable;

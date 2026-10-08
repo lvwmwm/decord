@@ -1,40 +1,40 @@
-// Module ID: 15459
-// Function ID: 15460
+// Module ID: 15721
+// Function ID: 15722
 // Name: DevToolsDataStorageScreen
-// Dependencies: [32, 19, 17, 505, 502, 21, 4896, 587, 558, 576, 6000, 2078, 4574, 2095, 504, 1491, 6478, 6553, 10614, 10613, 6554, 4860, 4892, 6559, 6651, 6704, 6708, 2]
+// Dependencies: [32, 19, 17, 505, 502, 21, 5090, 587, 558, 576, 6184, 2090, 4766, 2107, 504, 1503, 6656, 6729, 10212, 10210, 6730, 5054, 5086, 6735, 6828, 6881, 6885, 2]
 
-// Module 15459 (DevToolsDataStorageScreen)
+// Module 15721 (DevToolsDataStorageScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import PersistedStore2 from "PersistedStore" /* 505 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Link from "Link" /* 1491 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2078 */;
-import DatabaseManagerDefault from "DatabaseManager" /* 2095 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6478 */;
-import useScaledRowHeightDefault from "useScaledRowHeight" /* 6553 */;
-import FastestListDefault from "FastestList" /* 6559 */;
-import useFastestListTableRowPlaceholderConfigDefault from "useFastestListTableRowPlaceholderConfig" /* 10613 */;
-import useScaledSectionHeightDefault from "useScaledSectionHeight" /* 10614 */;
+import Link from "Link" /* 1503 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2090 */;
+import DatabaseManagerDefault from "DatabaseManager" /* 2107 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6656 */;
+import useScaledRowHeightDefault from "useScaledRowHeight" /* 6729 */;
+import FastestListDefault from "FastestList" /* 6735 */;
+import useFastestListTableRowPlaceholderConfigDefault from "useFastestListTableRowPlaceholderConfig" /* 10210 */;
+import useScaledSectionHeightDefault from "useScaledSectionHeight" /* 10212 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault, navigation, num, num2, num4, num5, num6, obj1, obj5, store, tmp15, tmp17, tmp18, tmp19, tmp20, tmp21, tmp22, tmp23;
+let _require, importDefault, navigation, num, num2, num4, num5, num6, obj1, obj5, tmp15, tmp17, tmp18, tmp19, tmp20, tmp21, tmp22, tmp23;
 
 let obj2;
 let obj3;
 let tmp;
-const TableRow3 = tmp(6000);
+const TableRow3 = tmp(6184);
 const View = react_native.View;
 let PersistedStore = PersistedStore2.PersistedStore;
 const jsx = Fragment.jsx;
@@ -46,7 +46,7 @@ obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, verticalAlig
 let closure_9 = createStyles(obj);
 const memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function DatabaseDisableRow() {
   let first;
   let tmp = require;
   let tmp2 = dependencyMap;
@@ -74,24 +74,26 @@ let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => jsx(TableRow3.TableRow, {
-  label: "Disable Database",
-  start: true,
-  onPress() {
-    const obj = DatabaseDaosDefault;
-    const databaseResult = obj.database();
-    const tmp = importDefault;
-    const tmp2 = dependencyMap;
-    if (null != databaseResult) {
-      databaseResult.disable("via UserSettingsDatabaseControls");
-      const tmpResult = tmp(tmp2[12]);
-      tmpResult.open({ key: "disable_database", content: "Database has been disabled." });
+}) : (function DatabaseDisableRow() {
+  return jsx(TableRow3.TableRow, {
+    label: "Disable Database",
+    start: true,
+    onPress() {
+      const obj = DatabaseDaosDefault;
+      const databaseResult = obj.database();
+      const tmp = importDefault;
+      const tmp2 = dependencyMap;
+      if (null != databaseResult) {
+        databaseResult.disable("via UserSettingsDatabaseControls");
+        const tmpResult = tmp(tmp2[12]);
+        tmpResult.open({ key: "disable_database", content: "Database has been disabled." });
+      }
     }
-  }
-})));
+  });
+}));
 const memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_11 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function DatabaseCurrentRow() {
   let id;
   let tmp4;
   let tmp5;
@@ -133,7 +135,7 @@ let closure_11 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = combined;
   cResult[4] = tmp11;
   tmp10 = tmp11;
-}) : (() => {
+}) : (function DatabaseCurrentRow() {
   let combined;
   let id;
   const useStateFromStores = get_initialized.useStateFromStores;
@@ -161,7 +163,7 @@ let closure_11 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }));
 const memo3 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_12 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (function DisableDatabaseAndRemoveRow() {
   let first;
   let obj = react2;
   const cResult = obj.c(1);
@@ -181,18 +183,20 @@ let closure_12 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => jsx(TableRow3.TableRow, {
-  label: "Disable + Remove Database",
-  onPress() {
-    const obj = DatabaseManagerDefault;
-    const result = obj.replaceDisableAllDatabases("via UserSettingsDatabaseControls");
-    const obj2 = ToastActionCreatorsDefault;
-    obj2.open({ key: "disable_database_and_remove", content: "Database has been removed." });
-  }
-})));
+}) : (function DisableDatabaseAndRemoveRow() {
+  return jsx(TableRow3.TableRow, {
+    label: "Disable + Remove Database",
+    onPress() {
+      const obj = DatabaseManagerDefault;
+      const result = obj.replaceDisableAllDatabases("via UserSettingsDatabaseControls");
+      const obj2 = ToastActionCreatorsDefault;
+      obj2.open({ key: "disable_database_and_remove", content: "Database has been removed." });
+    }
+  });
+}));
 const memo4 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = memo4(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_13 = memo4(ReactCompilerGating.isReactCompilerEnabled() ? (function CacheStatsRow() {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(2);
@@ -213,7 +217,7 @@ let closure_13 = memo4(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[1];
   }
   return tmp5;
-}) : (() => {
+}) : (function CacheStatsRow() {
   const obj = Link;
   let closure_0 = obj.useNavigation();
   return jsx(TableRow3.TableRow, {
@@ -226,7 +230,7 @@ let closure_13 = memo4(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }));
 const constants = { DATABASE_CONTROLS: 0, [0]: "DATABASE_CONTROLS", DATABASE_CURRENT: 1, [1]: "DATABASE_CURRENT", PERSISTED_STORES: 2, [2]: "PERSISTED_STORES" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDataStorageScreen() {
   let closure_1;
   let first;
   let persistedStores;
@@ -252,7 +256,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp7 = useScaledSectionHeightDefault();
   const tmp8 = useFastestListTableRowPlaceholderConfigDefault();
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function _(arg0) {
+    const fn = function v(arg0) {
       let found;
       let items;
       closure_0 = arg0;
@@ -294,7 +298,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   importDefault = tmp9;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function w() {
+    const fn2 = function p() {
       return closure_1("");
     };
     let num3 = 2;
@@ -565,7 +569,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[13] = sum;
   cResult[14] = jsx(FastestListDefault, { sections, renderItem: tmp13, renderSectionHeader: tmp14, insetEnd: sum, itemSize: tmp6, sectionHeaderSize: tmp7, estimatedListSize: "windowSize", placeholderConfig: tmp8, wrapChildren: true });
   const tmp16 = jsx(FastestListDefault, { sections, renderItem: tmp13, renderSectionHeader: tmp14, insetEnd: sum, itemSize: tmp6, sectionHeaderSize: tmp7, estimatedListSize: "windowSize", placeholderConfig: tmp8, wrapChildren: true });
-}) : (() => {
+}) : (function DevToolsDataStorageScreen() {
   let callback;
   let closure_3;
   let first;
@@ -683,7 +687,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return <View style={tmp.container}><tmp10 sections={sections} renderItem={callback1} renderSectionHeader={callback2} insetEnd={insets.bottom + callback(persistedStores[7]).space.PX_16} itemSize={tmp2} sectionHeaderSize={tmp3} estimatedListSize="windowSize" placeholderConfig={tmp4} wrapChildren /></View>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((store) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsPersistedStoresActionSheet(store) {
   let tmp4;
   let tmp6;
   let obj = store(576);
@@ -699,7 +703,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((store) => {
     tmp4 = cResult[1];
   }
   if (cResult[2] !== tmp4) {
-    const tmp8 = jsx(store(6651).BottomSheetTitleHeader, { title: tmp4 });
+    const tmp8 = jsx(store(6828).BottomSheetTitleHeader, { title: tmp4 });
     cResult[2] = tmp4;
     cResult[3] = tmp8;
     tmp6 = tmp8;
@@ -718,25 +722,25 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((store) => {
       }
       return tmp11;
     }
-    const tmp13 = jsx(store(6708).ActionSheet, { header: tmp6, children: tmp9 });
+    const tmp13 = jsx(store(6885).ActionSheet, { header: tmp6, children: tmp9 });
     cResult[7] = tmp6;
     cResult[8] = tmp9;
     cResult[9] = tmp13;
     tmp11 = tmp13;
   }
-  const Group = tmp(6704).ActionSheetRow.Group;
+  const Group = tmp(6881).ActionSheetRow.Group;
   const tmp10 = <Group hasIcons={false}>{null}</Group>;
   cResult[4] = close;
   cResult[5] = store;
   cResult[6] = tmp10;
   tmp9 = tmp10;
-}) : ((store) => {
+}) : (function DevToolsPersistedStoresActionSheet(store) {
   store = store.store;
   const close = store.close;
-  const ActionSheet = store(6708).ActionSheet;
+  const ActionSheet = store(6885).ActionSheet;
   ({ title: store.getName() });
-  const BottomSheetTitleHeader = store(6651).BottomSheetTitleHeader;
-  const Group = store(6704).ActionSheetRow.Group;
+  const BottomSheetTitleHeader = store(6828).BottomSheetTitleHeader;
+  const Group = store(6881).ActionSheetRow.Group;
   return <ActionSheet header={null}>{null}</ActionSheet>;
 });
 let result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsDataStorageScreen.tsx");

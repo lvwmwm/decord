@@ -1,22 +1,22 @@
-// Module ID: 9125
-// Function ID: 9126
+// Module ID: 10697
+// Function ID: 10698
 // Name: ScreenshareTile
-// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 9126, 1188, 9127, 1126, 4892, 6147, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 587, 558, 576, 10698, 1200, 10699, 1126, 5086, 6326, 2]
 
-// Module 9125 (ScreenshareTile)
+// Module 10697 (ScreenshareTile)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6147 */;
-import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 9126 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9127 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6326 */;
+import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 10698 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10699 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ const NOOP = Constants.NOOP;
 let obj = { container: obj2, image: { marginBottom: 8, width: 60, height: 40 }, label: { lineHeight: 18, textAlign: "center" }, liveContainer: { position: "absolute", top: 8, right: 8, zIndex: 2 } };
 obj2 = { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BLACK, overflow: "hidden", flex: 1 };
 let closure_8 = createStyles.createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScreenShareTile(arg0) {
   let items;
   let onDoubleTap;
   let onSingleTap;
@@ -76,7 +76,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp12 = cResult[5];
     }
     if (cResult[6] !== tmp4.image) {
-      const obj3 = { source: tmp6(9127), style: tmp4.image, resizeMode: "contain" };
+      const obj3 = { source: tmp6(10699), style: tmp4.image, resizeMode: "contain" };
       const tmp19 = metroRequire(React3, obj3);
       cResult[6] = tmp4.image;
       cResult[7] = tmp19;
@@ -141,7 +141,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = onSingleTap;
   cResult[2] = obj7;
   tmp5 = obj7;
-}) : ((onSingleTap) => {
+}) : (function ScreenShareTile(onSingleTap) {
   let intl;
   let items;
   let obj2;

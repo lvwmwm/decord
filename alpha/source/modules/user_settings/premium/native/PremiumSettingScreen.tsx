@@ -1,21 +1,21 @@
-// Module ID: 14808
-// Function ID: 14809
+// Module ID: 15069
+// Function ID: 15070
 // Name: PremiumSettingScreen
-// Dependencies: [19, 21, 558, 576, 6497, 1490, 6494, 6930, 2]
+// Dependencies: [19, 21, 558, 576, 6674, 1502, 6671, 7119, 2]
 
-// Module 14808 (PremiumSettingScreen)
+// Module 15069 (PremiumSettingScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useNavigation from "useNavigation" /* 1490 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6494 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6497 */;
-import UserSettingsPremiumDefault from "UserSettingsPremium" /* 6930 */;
+import useNavigation from "useNavigation" /* 1502 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6671 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6674 */;
+import UserSettingsPremiumDefault from "UserSettingsPremium" /* 7119 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumScreen() {
   const obj = react2;
   const cResult = obj.c(3);
   const obj2 = useSettingNavigationRoute;
@@ -40,7 +40,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = settingNavigationRoute.params;
   cResult[2] = tmp9;
   tmp6 = tmp9;
-}) : (() => {
+}) : (function PremiumScreen() {
   const obj = useSettingNavigationRoute;
   const settingNavigationRoute = obj.useSettingNavigationRoute();
   const obj2 = useNavigation;

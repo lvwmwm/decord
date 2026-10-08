@@ -1,14 +1,14 @@
-// Module ID: 12465
-// Function ID: 12466
+// Module ID: 12561
+// Function ID: 12562
 // Name: useWelcomeScreenEnabled
-// Dependencies: [2055, 2051, 2074, 2103, 1085, 558, 576, 504, 2]
+// Dependencies: [2067, 2063, 2086, 2115, 1085, 558, 576, 504, 2]
 
-// Module 12465 (useWelcomeScreenEnabled)
+// Module 12561 (useWelcomeScreenEnabled)
 import Constants from "Constants" /* 1085 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import ChannelRecord from "ChannelRecord" /* 2067 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let _require, dependencyMap;
 
 const isGuildTextChannelType = ChannelRecord.isGuildTextChannelType;
 const GuildFeatures = Constants.GuildFeatures;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWelcomeScreenEnabled(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -44,7 +44,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     const tmpResult = tmp(504);
     return tmpResult.useStateFromStores(first, tmp8);
   }
-  const fn = function _() {
+  const fn = function f() {
     const guild = GuildStore.getGuild(closure_1);
     let hasItem;
     const tmp = closure_1;
@@ -72,7 +72,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[2] = arg1;
   cResult[3] = fn;
   tmp8 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useWelcomeScreenEnabled(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;

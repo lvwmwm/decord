@@ -1,25 +1,25 @@
-// Module ID: 11205
-// Function ID: 11206
+// Module ID: 11322
+// Function ID: 11323
 // Name: ConnectionMetadataVanityItems
-// Dependencies: [19, 17, 6686, 21, 4896, 587, 1126, 11206, 11207, 558, 576, 12, 1888, 4892, 1188, 6685, 2]
+// Dependencies: [19, 17, 6863, 21, 5090, 587, 1126, 11323, 11324, 558, 576, 12, 1900, 5086, 1200, 6862, 2]
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
-// Module 11205 (ConnectionMetadataVanityItems)
+// Module 11322 (ConnectionMetadataVanityItems)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import NumberUtils from "NumberUtils" /* 1888 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 6685 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11206 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11207 */;
+import native from "native" /* 1200 */;
+import NumberUtils from "NumberUtils" /* 1900 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 6862 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11323 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11324 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 6686 */;
+import Constants from "Constants" /* 6863 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ obj3 = { backgroundColor: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND };
 obj4 = { color: nativeDefault.colors.WHITE };
 let closure_8 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function PaypalVanityTag(style) {
   const obj = react2;
   const cResult = obj.c(7);
   style = style.style;
@@ -82,7 +82,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   cResult[1] = tmp4.paypalVerifiedTag;
   cResult[2] = items;
   tmp5 = items;
-}) : ((style) => {
+}) : (function PaypalVanityTag(style) {
   let intl;
   let items;
   style = style.style;
@@ -93,7 +93,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   return metroRequire(closure_12, obj, constants.PAYPAL_VERIFIED);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function VanityMetric(arg0) {
   let count;
   let label;
   let percent;
@@ -164,7 +164,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = tmp4.connectedAccountVanityMetadata;
   cResult[8] = items;
   tmp11 = items;
-}) : ((label) => {
+}) : (function VanityMetric(label) {
   let count;
   let formatResult;
   let items;
@@ -194,7 +194,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroRequire(Text_Text.Text, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function VanityItem(arg0) {
   let imageAlt;
   let imageSrc;
   let items;
@@ -264,7 +264,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tmp4.connectedAccountVanityMetadataItem;
   cResult[3] = items1;
   tmp5 = items1;
-}) : ((style) => {
+}) : (function VanityItem(style) {
   let imageAlt;
   let imageSrc;
   let items;
@@ -284,7 +284,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroImportDefault(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function VanityTag(arg0) {
   let label;
   let style;
   let textStyle;
@@ -333,7 +333,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tmp4.connectedAccountVanityMetadataTag;
   cResult[3] = items;
   tmp5 = items;
-}) : ((arg0) => {
+}) : (function VanityTag(arg0) {
   let items;
   let label;
   let style;
@@ -347,7 +347,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroRequire(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function VanityDate(arg0) {
   let date;
   let label;
   let locale;
@@ -400,7 +400,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.connectedAccountVanityMetadata;
   cResult[2] = items;
   tmp5 = items;
-}) : ((arg0) => {
+}) : (function VanityDate(arg0) {
   let HLoinF;
   let date;
   let format;

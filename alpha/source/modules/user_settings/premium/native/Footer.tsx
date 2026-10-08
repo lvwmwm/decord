@@ -1,21 +1,21 @@
-// Module ID: 13317
-// Function ID: 13318
+// Module ID: 13617
+// Function ID: 13618
 // Name: Footer
-// Dependencies: [19, 17, 21, 4896, 558, 576, 13318, 6688, 4892, 1126, 5601, 5981, 13319, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 13618, 6865, 5086, 1126, 5375, 6164, 13619, 2]
 
-// Module 13317 (Footer)
+// Module 13617 (Footer)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6688 */;
-import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 13318 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13319 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6865 */;
+import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 13618 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13619 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let metroRequire;
 const View = react_native.View;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ container: { flex: 1, flexDirection: "column", alignItems: "center", width: "100%" }, footerText: { marginBottom: 24 }, button: { marginBottom: 40 }, easterEggSpacing: { position: "absolute", top: 40 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Footer(arg0) {
   let buttonText;
   let intl;
   let items;
@@ -94,7 +94,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (tmp10) {
       const obj4 = { children: items1 };
       const obj5 = { style: tmp4.footerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl2.t["2bSPbq"]) };
-      const Text = tmp(4892).Text;
+      const Text = tmp(5086).Text;
       intl = tmp(1126).intl;
       items1 = [React3(Text, obj5), ];
       const obj6 = { style: tmp4.button, children: React3(components_Button_Button.Button, obj7) };
@@ -115,7 +115,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.container;
   cResult[2] = items2;
   tmp8 = items2;
-}) : ((showSubscribeButton) => {
+}) : (function Footer(showSubscribeButton) {
   let intl;
   let items;
   let items1;

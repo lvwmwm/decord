@@ -1,18 +1,16 @@
-// Module ID: 5598
-// Function ID: 5599
+// Module ID: 5393
+// Function ID: 5394
 // Name: hooks/useMountEffect
 // Dependencies: [19, 558, 576, 2]
 
-// Module 5598 (hooks/useMountEffect)
+// Module 5393 (hooks/useMountEffect)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let cResult;
-
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMountEffect(cResult) {
   let tmp2;
   let tmp3;
   const obj = react2;
@@ -20,7 +18,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
   let closure_0 = react.useRef(cResult);
   const obj2 = react;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function u() {
+    const fn = function f() {
       return ref.current();
     };
     const items = [];
@@ -32,12 +30,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
     [tmp2, tmp3] = cResult;
   }
   const effect = obj2.useEffect(tmp2, tmp3);
-}) : ((cResult) => {
+}) : (function useMountEffect(cResult) {
   let closure_0 = react.useRef(cResult);
   const effect = react.useEffect(() => ref.current(), []);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMountLayoutEffect(cResult) {
   let tmp2;
   let tmp3;
   const obj = react2;
@@ -45,7 +43,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
   let closure_0 = react.useRef(cResult);
   const obj2 = react;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function u() {
+    const fn = function f() {
       return ref.current();
     };
     const items = [];
@@ -57,12 +55,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
     [tmp2, tmp3] = cResult;
   }
   const layoutEffect = obj2.useLayoutEffect(tmp2, tmp3);
-}) : ((cResult) => {
+}) : (function useMountLayoutEffect(cResult) {
   let closure_0 = react.useRef(cResult);
   const layoutEffect = react.useLayoutEffect(() => ref.current(), []);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUnmountEffect(cResult) {
   let tmp2;
   let tmp4;
   let tmp5;
@@ -71,7 +69,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
   cResult = obj.c(4);
   let closure_1 = react.useRef(cResult);
   if (cResult[0] !== cResult) {
-    const fn = function u() {
+    const fn = function f() {
       closure_1.current = current;
     };
     cResult[0] = cResult;
@@ -82,7 +80,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
   }
   const effect = obj2.useEffect(tmp2);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function f() {
+    const fn2 = function c() {
       let ref;
       return () => {
         ref.current();
@@ -98,7 +96,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
     tmp5 = cResult[3];
   }
   const effect1 = obj2.useEffect(tmp4, tmp5);
-}) : ((cResult) => {
+}) : (function useUnmountEffect(cResult) {
   let closure_0 = cResult;
   let closure_1 = react.useRef(cResult);
   const effect = react.useEffect(() => {

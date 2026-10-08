@@ -1,11 +1,11 @@
-// Module ID: 10028
-// Function ID: 10029
+// Module ID: 6076
+// Function ID: 6077
 // Name: DiscordAppState
-// Dependencies: [1986, 558, 576, 504, 2]
+// Dependencies: [1998, 558, 576, 504, 2]
 
-// Module 10028 (DiscordAppState)
+// Module 6076 (DiscordAppState)
 import react from "react" /* 576 */;
-import AppStateStore from "AppStateStore" /* 1986 */;
+import AppStateStore from "AppStateStore" /* 1998 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let obj = {
   getState() {
     return AppStateStore.getState();
   },
-  useCanUIRequestGatewaySocket: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  useCanUIRequestGatewaySocket: ReactCompilerGating.isReactCompilerEnabled() ? (function useCanUIRequestGatewaySocket() {
     let state;
     let tmp4;
     let tmp5;
@@ -39,7 +39,7 @@ let obj = {
     }
     const tmpResult = get_initialized;
     return tmpResult.useStateFromStores(tmp4, tmp5);
-  }) : (() => {
+  }) : (function useCanUIRequestGatewaySocket() {
     let state;
     const items = [AppStateStore];
     const obj = get_initialized;

@@ -1,38 +1,34 @@
-// Module ID: 5620
-// Function ID: 5621
+// Module ID: 5965
+// Function ID: 5966
 // Name: PremiumGuildSubscribeModal
-// Dependencies: [32, 19, 1193, 5621, 1085, 21, 5622, 6017, 5619, 6890, 4735, 6891, 6892, 6893, 1126, 6498, 6895, 1188, 6897, 13433, 558, 576, 5991, 5787, 6503, 2]
+// Dependencies: [32, 19, 1205, 5966, 1085, 21, 5967, 6203, 5964, 7079, 4929, 7080, 7081, 7082, 1126, 6675, 7084, 1200, 7086, 13733, 558, 576, 6174, 5370, 6679, 2]
 
-// Module 5620 (PremiumGuildSubscribeModal)
+// Module 5965 (PremiumGuildSubscribeModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import BoostingActionCreators from "BoostingActionCreators" /* 5619 */;
-import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 5621 */;
-import useBackPressHandlerDefault from "useBackPressHandler" /* 5787 */;
-import useInitialValueDefault from "useInitialValue" /* 5991 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 6017 */;
-import Navigator2 from "Navigator" /* 6503 */;
+import useBackPressHandlerDefault from "useBackPressHandler" /* 5370 */;
+import BoostingActionCreators from "BoostingActionCreators" /* 5964 */;
+import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 5966 */;
+import useInitialValueDefault from "useInitialValue" /* 6174 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 6203 */;
+import Navigator2 from "Navigator" /* 6679 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let guildId;
-
 let _slicedToArray = _slicedToArray_mod;
-const constants = PremiumGuildSubscribeConstants.PremiumGuildSubscribeModalScenes;
+let closure_6 = PremiumGuildSubscribeConstants.PremiumGuildSubscribeModalScenes;
 const UserSettingsSections = Constants.UserSettingsSections;
 const jsx = Fragment.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGuildSubscribeModal(guildId) {
   let closure_5;
   let first;
   let initialStack;
   let intent;
-  let obj2;
   let screens;
-  let tmp17;
   let tmp = guildId;
   let obj = guildId(intent[21]);
   const cResult = obj.c(12);
@@ -55,49 +51,27 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         [first, ThemeStore] = first.useState(initialStack[0].name);
         const tmp5 = guildBoostSlots;
         if (cResult[5] !== first) {
-          class B {
-            constructor() {
-              let flag = first === constants.GUILD_SELECT;
-              if (flag) {
-                const obj = BoostingActionCreators;
-                obj.closeApplyBoostModal();
-                flag = true;
-              }
-              return flag;
+          const fn2 = function b() {
+            let flag = first === constants.GUILD_SELECT;
+            if (flag) {
+              const obj = BoostingActionCreators;
+              obj.closeApplyBoostModal();
+              flag = true;
             }
-          }
+            return flag;
+          };
           cResult[5] = first;
-          cResult[6] = B;
-          tmp11 = B;
+          cResult[6] = fn2;
+          tmp11 = fn2;
         } else {
-          class B {
-            constructor() {
-              let flag = first === constants.GUILD_SELECT;
-              if (flag) {
-                const obj = BoostingActionCreators;
-                obj.closeApplyBoostModal();
-                flag = true;
-              }
-              return flag;
-            }
-          }
+          tmp11 = cResult[6];
         }
         tmp5(intent[23])(tmp11);
         const _Symbol = Symbol;
         if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-          class B {
-            constructor() {
-              let flag = first === constants.GUILD_SELECT;
-              if (flag) {
-                const obj = BoostingActionCreators;
-                obj.closeApplyBoostModal();
-                flag = true;
-              }
-              return flag;
-            }
-          }
-          const stringResult = obj2.string(tmp(intent[14]).t["13/7kX"]);
-          class R {
+          let intl = tmp(tmp2[14]).intl;
+          const stringResult = intl.string(tmp(intent[14]).t["13/7kX"]);
+          class E {
             constructor(arg0) {
               let tmp;
               if (arg0 != null) {
@@ -109,34 +83,17 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             }
           }
           cResult[7] = stringResult;
-          cResult[8] = R;
-          tmp15 = R;
+          cResult[8] = E;
+          tmp15 = E;
           tmp14 = stringResult;
         } else {
-          class B {
-            constructor() {
-              let flag = first === constants.GUILD_SELECT;
-              if (flag) {
-                const obj = BoostingActionCreators;
-                obj.closeApplyBoostModal();
-                flag = true;
-              }
-              return flag;
-            }
-          }
+          tmp14 = cResult[7];
           tmp15 = cResult[8];
         }
         if (cResult[9] === initialStack) {
-          class B {
-            constructor() {
-              let flag = first === constants.GUILD_SELECT;
-              if (flag) {
-                const obj = BoostingActionCreators;
-                obj.closeApplyBoostModal();
-                flag = true;
-              }
-              return flag;
-            }
+          let tmp17;
+          if (cResult[10] === screens) {
+            tmp17 = cResult[11];
           }
           return tmp17;
         }
@@ -179,7 +136,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         const OVERVIEW = constants.OVERVIEW;
         const obj7 = {
           headerLeft: obj11.getHeaderCloseButton(BoostingActionCreators.closeApplyBoostModal),
-          headerRight() {
+          headerRight: function renderSettingsButton() {
                 let intl;
                 let intl2;
                 let tmp4Result;
@@ -269,13 +226,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[3] = guildId.onResult;
   cResult[4] = fn;
   tmp4 = fn;
-}) : ((arg0) => {
+}) : (function PremiumGuildSubscribeModal(arg0) {
   let closure_5;
   let first;
   let guildBoostSlots;
   let intent;
   let onResult;
-  let require;
   ({ guildId: require, guildBoostSlots: importDefault, intent: dependencyMap, onResult: _slicedToArray } = arg0);
   first = undefined;
   closure_5 = undefined;
@@ -289,8 +245,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     let obj5;
     let theme;
     const items = [];
-    let tmp = _require;
-    if (null != _require) {
+    let tmp = require;
+    if (null != require) {
       if (null != importDefault) {
         if (importDefault.length > 0) {
           let obj2 = { name: constants.CONFIRMATION, params: obj3 };
@@ -312,7 +268,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         const OVERVIEW = constants.OVERVIEW;
         const obj7 = {
           headerLeft: obj11.getHeaderCloseButton(BoostingActionCreators.closeApplyBoostModal),
-          headerRight() {
+          headerRight: function renderSettingsButton() {
                 let intl;
                 let intl2;
                 let tmp4Result;

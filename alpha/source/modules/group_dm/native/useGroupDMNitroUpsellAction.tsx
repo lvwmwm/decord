@@ -1,24 +1,22 @@
-// Module ID: 11233
-// Function ID: 11234
+// Module ID: 11348
+// Function ID: 11349
 // Name: useGroupDMNitroUpsellAction
-// Dependencies: [19, 1085, 558, 576, 11226, 1252, 6895, 11232, 2]
+// Dependencies: [19, 1085, 558, 576, 11341, 1264, 7084, 11347, 2]
 
-// Module 11233 (useGroupDMNitroUpsellAction)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import openUserSettings from "openUserSettings" /* 6895 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11226 */;
-import PremiumMarketingUtil from "PremiumMarketingUtil" /* 11232 */;
+// Module 11348 (useGroupDMNitroUpsellAction)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import openUserSettings from "openUserSettings" /* 7084 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11341 */;
+import PremiumMarketingUtil from "PremiumMarketingUtil" /* 11347 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let audience;
-
 let closure_4;
 let hasOwnProperty;
 ({ AnalyticEvents: closure_4, UserSettingsSections: hasOwnProperty } = Constants);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((audience) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGroupDMNitroUpsellAction(audience) {
   let acquisitionStrategy;
   let obj = audience(acquisitionStrategy[3]);
   const cResult = obj.c(5);
@@ -68,7 +66,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((audience) => {
   cResult[3] = onCheckout;
   cResult[4] = fn;
   tmp3 = fn;
-}) : ((audience) => {
+}) : (function useGroupDMNitroUpsellAction(audience) {
   audience = audience.audience;
   const _location = audience.location;
   const acquisitionStrategy = audience.acquisitionStrategy;

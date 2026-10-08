@@ -1,17 +1,17 @@
-// Module ID: 16367
-// Function ID: 16368
+// Module ID: 16627
+// Function ID: 16628
 // Name: YouBarUser
-// Dependencies: [19, 17, 1377, 14915, 21, 4896, 587, 558, 576, 504, 4618, 5604, 4728, 16368, 16369, 16370, 2]
+// Dependencies: [19, 17, 1389, 15177, 21, 5090, 587, 558, 576, 504, 4810, 5374, 4922, 16628, 16629, 16630, 2]
 
-// Module 16367 (YouBarUser)
+// Module 16627 (YouBarUser)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import spring from "spring" /* 5604 */;
+import spring from "spring" /* 5374 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
-import YouBarConstants from "YouBarConstants" /* 14915 */;
+import UserStore from "UserStore" /* 1389 */;
+import YouBarConstants from "YouBarConstants" /* 15177 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -36,17 +36,17 @@ size = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadiu
 let closure_11 = createStyles(obj);
 const __initData = { code: "function YouBarUserTsx1(){const{nameMargin}=this.__closure;return{marginLeft:nameMargin.get()};}" };
 const __initData2 = { code: "function YouBarUserTsx2(){const{nameMargin}=this.__closure;return{marginLeft:nameMargin.get()};}" };
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function YouBarUser(arg0) {
   let closure_0;
   let currentUser;
   let isQuestRendered;
   let items1;
-  let items4;
+  let items3;
   let onAvatarPress;
   let tmp5;
   let tmp6;
   let obj = require("react");
-  const cResult = obj.c(40);
+  const cResult = obj.c(38);
   ({ isQuestRendered, onAvatarPress } = arg0);
   const tmp4 = closure_11();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -70,8 +70,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     let tmp11;
     let tmp12;
     let tmp35;
-    let tmp36;
-    let tmp39;
+    let tmp38;
     let tmp31;
     if (cResult[3] === sharedValue) {
       tmp11 = cResult[4];
@@ -88,154 +87,147 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     fn2.__initData = __initData;
     const tmpResult4 = require("ReanimatedRexport");
     const animatedStyle = tmpResult4.useAnimatedStyle(fn2);
-    const obj6 = sharedValue(4728);
+    const obj6 = sharedValue(4922);
     const name = obj6.useName(stateFromStores);
     if (null != stateFromStores) {
       if (null != name) {
-        if (cResult[23] === !isQuestRendered) {
+        if (cResult[21] === !isQuestRendered) {
           let tmp20;
           let tmp23;
-          if (cResult[24] === onAvatarPress) {
-            tmp20 = cResult[25];
+          if (cResult[22] === onAvatarPress) {
+            tmp20 = cResult[23];
           }
           const _Symbol = Symbol;
-          if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
+          if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
             const obj3 = { flexShrink: 1 };
-            cResult[26] = obj3;
+            cResult[24] = obj3;
             tmp23 = obj3;
           } else {
-            tmp23 = cResult[26];
+            tmp23 = cResult[24];
           }
-          if (cResult[27] === animatedStyle) {
+          if (cResult[25] === animatedStyle) {
             let tmp24;
-            if (cResult[28] === tmp4.userText) {
-              tmp24 = cResult[29];
+            if (cResult[26] === tmp4.userText) {
+              tmp24 = cResult[27];
             }
-            if (cResult[30] === stateFromStores.id) {
+            if (cResult[28] === stateFromStores.id) {
               let tmp25;
-              if (cResult[31] === name) {
-                tmp25 = cResult[32];
+              if (cResult[29] === name) {
+                tmp25 = cResult[30];
               }
-              if (cResult[33] === tmp24) {
+              if (cResult[31] === tmp24) {
                 let tmp28;
-                if (cResult[34] === tmp25) {
-                  tmp28 = cResult[35];
+                if (cResult[32] === tmp25) {
+                  tmp28 = cResult[33];
                 }
-                if (cResult[36] === tmp4.youButton) {
-                  if (cResult[37] === tmp20) {
-                    if (cResult[38] === tmp28) {
-                      tmp31 = cResult[39];
+                if (cResult[34] === tmp4.youButton) {
+                  if (cResult[35] === tmp20) {
+                    if (cResult[36] === tmp28) {
+                      tmp31 = cResult[37];
                     }
                   }
                 }
                 const obj4 = { style: tmp4.youButton, children: items1 };
                 items1 = [tmp20, tmp28];
                 const tmp34 = closure_10(View, obj4);
-                cResult[36] = tmp4.youButton;
-                cResult[37] = tmp20;
-                cResult[38] = tmp28;
-                cResult[39] = tmp34;
+                cResult[34] = tmp4.youButton;
+                cResult[35] = tmp20;
+                cResult[36] = tmp28;
+                cResult[37] = tmp34;
                 tmp31 = tmp34;
               }
               const obj5 = { style: tmp24, children: tmp25 };
-              const tmp30 = closure_9(sharedValue(4618).View, obj5);
-              cResult[33] = tmp24;
-              cResult[34] = tmp25;
-              cResult[35] = tmp30;
+              const tmp30 = closure_9(sharedValue(4810).View, obj5);
+              cResult[31] = tmp24;
+              cResult[32] = tmp25;
+              cResult[33] = tmp30;
               tmp28 = tmp30;
             }
             const obj7 = { userId: stateFromStores.id, username: name };
-            const tmp27 = closure_9(sharedValue(16370), obj7);
-            cResult[30] = stateFromStores.id;
-            cResult[31] = name;
-            cResult[32] = tmp27;
+            const tmp27 = closure_9(sharedValue(16630), obj7);
+            cResult[28] = stateFromStores.id;
+            cResult[29] = name;
+            cResult[30] = tmp27;
             tmp25 = tmp27;
           }
           const items2 = [tmp4.userText, animatedStyle, tmp23];
-          cResult[27] = animatedStyle;
-          cResult[28] = tmp4.userText;
-          cResult[29] = items2;
+          cResult[25] = animatedStyle;
+          cResult[26] = tmp4.userText;
+          cResult[27] = items2;
           tmp24 = items2;
         }
         const obj8 = { isLargeAvatar: !isQuestRendered, onPress: onAvatarPress };
-        const tmp22 = closure_9(sharedValue(16369), obj8);
-        cResult[23] = !isQuestRendered;
-        cResult[24] = onAvatarPress;
-        cResult[25] = tmp22;
+        const tmp22 = closure_9(sharedValue(16629), obj8);
+        cResult[21] = !isQuestRendered;
+        cResult[22] = onAvatarPress;
+        cResult[23] = tmp22;
         tmp20 = tmp22;
       }
       return tmp31;
     }
-    if (cResult[6] !== tmp4.youButton) {
-      const items3 = [tmp4.youButton];
-      cResult[6] = tmp4.youButton;
-      cResult[7] = items3;
-      tmp35 = items3;
+    if (cResult[6] !== !isQuestRendered) {
+      const obj9 = { isLarge: !isQuestRendered };
+      const tmp37 = closure_9(sharedValue(16628), obj9);
+      cResult[6] = !isQuestRendered;
+      cResult[7] = tmp37;
+      tmp35 = tmp37;
     } else {
       tmp35 = cResult[7];
     }
-    if (cResult[8] !== !isQuestRendered) {
-      const obj9 = { isLarge: !isQuestRendered };
-      const tmp38 = closure_9(sharedValue(16368), obj9);
-      cResult[8] = !isQuestRendered;
-      cResult[9] = tmp38;
-      tmp36 = tmp38;
-    } else {
-      tmp36 = cResult[9];
-    }
     const _Symbol2 = Symbol;
-    if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       const obj10 = { flexShrink: 1 };
-      cResult[10] = obj10;
-      tmp39 = obj10;
+      cResult[8] = obj10;
+      tmp38 = obj10;
     } else {
-      tmp39 = cResult[10];
+      tmp38 = cResult[8];
     }
-    if (cResult[11] === animatedStyle) {
+    if (cResult[9] === animatedStyle) {
+      let tmp39;
       let tmp40;
-      let tmp42;
-      if (cResult[12] === tmp4.userText) {
+      if (cResult[10] === tmp4.userText) {
+        tmp39 = cResult[11];
+      }
+      if (cResult[12] !== tmp4.placeholder) {
+        const obj11 = { style: tmp4.placeholder };
+        const tmp43 = closure_9(View, obj11);
+        cResult[12] = tmp4.placeholder;
+        cResult[13] = tmp43;
+        tmp40 = tmp43;
+      } else {
         tmp40 = cResult[13];
       }
-      if (cResult[14] !== tmp4.placeholder) {
-        const obj11 = { style: tmp4.placeholder };
-        const tmp45 = closure_9(View, obj11);
-        cResult[14] = tmp4.placeholder;
-        cResult[15] = tmp45;
-        tmp42 = tmp45;
-      } else {
-        tmp42 = cResult[15];
-      }
-      if (cResult[16] === tmp40) {
-        let tmp46;
-        if (cResult[17] === tmp42) {
-          tmp46 = cResult[18];
+      if (cResult[14] === tmp39) {
+        let tmp44;
+        if (cResult[15] === tmp40) {
+          tmp44 = cResult[16];
         }
-        if (cResult[19] === tmp46) {
-          if (cResult[20] === tmp35) {
-            let tmp49;
-            if (cResult[21] === tmp36) {
-              tmp49 = cResult[22];
+        if (cResult[17] === tmp4.youButton) {
+          if (cResult[18] === tmp35) {
+            let tmp47;
+            if (cResult[19] === tmp44) {
+              tmp47 = cResult[20];
             }
-            tmp31 = tmp49;
+            tmp31 = tmp47;
           }
         }
-        const obj12 = { style: tmp35, children: items4 };
-        items4 = [tmp36, tmp46];
-        const tmp52 = closure_10(View, obj12);
-        cResult[19] = tmp46;
-        cResult[20] = tmp35;
-        cResult[21] = tmp36;
-        cResult[22] = tmp52;
-        tmp49 = tmp52;
+        const obj12 = { style: tmp4.youButton, children: items3 };
+        items3 = [tmp35, tmp44];
+        const tmp50 = closure_10(View, obj12);
+        cResult[17] = tmp4.youButton;
+        cResult[18] = tmp35;
+        cResult[19] = tmp44;
+        cResult[20] = tmp50;
+        tmp47 = tmp50;
       }
-      const obj13 = { style: tmp40, children: tmp42 };
-      const tmp48 = closure_9(sharedValue(4618).View, obj13);
-      cResult[16] = tmp40;
-      cResult[17] = tmp42;
-      cResult[18] = tmp48;
-      tmp46 = tmp48;
+      const obj13 = { style: tmp39, children: tmp40 };
+      const tmp46 = closure_9(sharedValue(4810).View, obj13);
+      cResult[14] = tmp39;
+      cResult[15] = tmp40;
+      cResult[16] = tmp46;
+      tmp44 = tmp46;
     }
+    const items4 = [, , ];
     class T {
       constructor() {
         set = sharedValue.set;
@@ -243,13 +235,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
         const result = set(obj.withSpring(closure_0 ? metroImportDefault : metroImportAll, metroRequire));
       }
     }
-    tmp41[0] = tmp4.userText;
-    tmp41[1] = animatedStyle;
-    tmp41[2] = tmp39;
-    cResult[11] = animatedStyle;
-    cResult[12] = tmp4.userText;
-    cResult[13] = tmp41;
-    tmp40 = tmp41;
+    items4[1] = animatedStyle;
+    items4[2] = tmp38;
+    cResult[9] = animatedStyle;
+    cResult[10] = tmp4.userText;
+    cResult[11] = items4;
+    tmp39 = items4;
   }
   class T {
     constructor() {
@@ -265,14 +256,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[5] = items5;
   tmp12 = items5;
   tmp11 = T;
-}) : ((isQuestRendered) => {
+}) : (function YouBarUser(isQuestRendered) {
   let closure_0;
   let currentUser;
   let items2;
   let items3;
   let items4;
   let items5;
-  let items6;
   let obj10;
   let obj7;
   isQuestRendered = isQuestRendered.isQuestRendered;
@@ -292,7 +282,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     const obj = spring;
     const result = set(obj.withSpring(closure_0 ? metroImportDefault : metroImportAll, metroRequire));
   }, items1);
-  const tmp2Result = tmp2(4618);
+  const tmp2Result = tmp2(4810);
   class M {
     constructor() {
       const obj = { marginLeft: sharedValue.get() };
@@ -303,30 +293,29 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   M.__workletHash = 5882881762081;
   M.__initData = __initData2;
   const animatedStyle = tmp2Result.useAnimatedStyle(M);
-  const obj4 = sharedValue(4728);
+  const obj4 = sharedValue(4922);
   const name = obj4.useName(stateFromStores);
   if (null != stateFromStores) {
     let obj3;
     if (null != name) {
       obj3 = { style: tmp.youButton, children: items2 };
       const obj5 = { isLargeAvatar: !isQuestRendered, onPress: onAvatarPress };
-      items2 = [closure_9(sharedValue(16369), obj5), ];
-      const obj6 = { style: items3, children: closure_9(sharedValue(16370), obj7) };
+      items2 = [closure_9(sharedValue(16629), obj5), ];
+      const obj6 = { style: items3, children: closure_9(sharedValue(16630), obj7) };
       items3 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
-      const View2 = tmp9(4618).View;
+      const View2 = tmp9(4810).View;
       obj7 = { userId: stateFromStores.id, username: name };
       items2[1] = closure_9(View2, obj6);
     }
     return tmp11(View, obj3);
   }
-  const obj8 = { style: items4, children: items5 };
-  items4 = [tmp.youButton];
-  items5 = [closure_9(sharedValue(16368), { isLarge: !isQuestRendered }), ];
-  const obj9 = { style: items6, children: closure_9(View, obj10) };
-  items6 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
+  const obj8 = { style: tmp.youButton, children: items4 };
+  items4 = [closure_9(sharedValue(16628), { isLarge: !isQuestRendered }), ];
+  const obj9 = { style: items5, children: closure_9(View, obj10) };
+  items5 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
   obj10 = { style: tmp.placeholder };
-  View = tmp9(4618).View;
-  items5[1] = closure_9(View, obj9);
+  View = tmp9(4810).View;
+  items4[1] = closure_9(View, obj9);
   obj3 = obj8;
 }));
 size = size_mod;

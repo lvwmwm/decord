@@ -1,16 +1,16 @@
-// Module ID: 12168
-// Function ID: 12169
+// Module ID: 12247
+// Function ID: 12248
 // Name: GuildDismissibleContentUtils
-// Dependencies: [1231, 1085, 2048, 1095, 2035, 558, 576, 504, 2033, 1252, 2036, 2]
+// Dependencies: [1243, 1085, 2060, 1095, 2047, 558, 576, 504, 2045, 1264, 2048, 2]
 // Exports: isContentDismissed, markContentAsDismissed, unmarkContentAsDismissed
 
-// Module 12168 (GuildDismissibleContentUtils)
+// Module 12247 (GuildDismissibleContentUtils)
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Uint8ArrayUtils from "Uint8ArrayUtils" /* 2035 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import Uint8ArrayUtils from "Uint8ArrayUtils" /* 2047 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ function isContentDismissed(GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, c0) {
   }
   return hasBitResult;
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsContentDismissed(arg0, arg1) {
   let closure_0;
   let first;
   _require = arg0;
@@ -66,7 +66,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[2] = arg1;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useIsContentDismissed(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;
@@ -110,7 +110,7 @@ export const markContentAsDismissed = function markContentAsDismissed(dc, guildI
   const tmp4 = arg2;
   if (tmp4) {
     let UNKNOWN = AUTO_DISMISS;
-    const obj2 = { type: tmp(2036).DismissibleGuildContent[dc], guild_id: guildId, action: UNKNOWN };
+    const obj2 = { type: tmp(2048).DismissibleGuildContent[dc], guild_id: guildId, action: UNKNOWN };
     const track = AnalyticsUtilsDefault.track;
     const DISMISSIBLE_CONTENT_DISMISSED = AnalyticEvents.DISMISSIBLE_CONTENT_DISMISSED;
     AnalyticsUtilsDefault;

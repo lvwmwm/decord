@@ -1,15 +1,15 @@
-// Module ID: 11082
-// Function ID: 11083
+// Module ID: 6088
+// Function ID: 6089
 // Name: ThreadNotificationSettings
-// Dependencies: [2051, 5077, 4517, 1125, 1085, 1390, 558, 576, 504, 2]
+// Dependencies: [2063, 5971, 4709, 1125, 1085, 1402, 558, 576, 504, 2]
 
-// Module 11082 (ThreadNotificationSettings)
+// Module 6088 (ThreadNotificationSettings)
 import Constants from "Constants" /* 1085 */;
 import ThreadConstants from "ThreadConstants" /* 1125 */;
-import FlagUtils from "FlagUtils" /* 1390 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4517 */;
+import FlagUtils from "FlagUtils" /* 1402 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4709 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -67,7 +67,7 @@ function computeThreadNotificationSetting(channel) {
 }
 const ThreadMemberFlags = ThreadConstants.ThreadMemberFlags;
 const UserNotificationSettings = Constants.UserNotificationSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useThreadNotificationSetting(arg0) {
   let closure_0;
   let first;
   let tmp8;
@@ -105,7 +105,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp8, tmp9);
-}) : ((arg0) => {
+}) : (function useThreadNotificationSetting(arg0) {
   let closure_0;
   _require = arg0;
   const items = [JoinedThreadsStore, UserGuildSettingsStore, ChannelStore];

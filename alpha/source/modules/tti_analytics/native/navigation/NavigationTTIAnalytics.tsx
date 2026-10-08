@@ -1,13 +1,13 @@
-// Module ID: 16524
-// Function ID: 16525
+// Module ID: 11515
+// Function ID: 11516
 // Name: NavigationTTIAnalytics
-// Dependencies: [1357, 3, 584, 2]
+// Dependencies: [1369, 3, 584, 2]
 // Exports: trackNavigationTTISpan
 
-// Module 16524 (NavigationTTIAnalytics)
+// Module 11515 (NavigationTTIAnalytics)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1357 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1369 */;
 import size from "module_2" /* 2 */;
 
 let obj = new LoggerDefault("NavTTIAnalytics");

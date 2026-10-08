@@ -1,15 +1,15 @@
-// Module ID: 10887
-// Function ID: 10888
+// Module ID: 10538
+// Function ID: 10539
 // Name: useTenureBadgeRequirementString
-// Dependencies: [1379, 558, 576, 10888, 7132, 1126, 2]
+// Dependencies: [1391, 558, 576, 10539, 7318, 1126, 2]
 // Exports: getTenureBadgeRequirementString
 
-// Module 10887 (useTenureBadgeRequirementString)
+// Module 10538 (useTenureBadgeRequirementString)
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7132 */;
-import useTenureBadging from "useTenureBadging" /* 10888 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7318 */;
+import useTenureBadging from "useTenureBadging" /* 10539 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ function getTenureBadgeRequirementString(badge, tenureReqNumMonths) {
   const obj2 = { months: tenureReqNumMonths };
   return intl2.formatToPlainString(intl3.t.erUSmA, obj2);
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTenureBadgeRequirementString() {
   let id;
   let tenureReqNumMonths;
   const obj = react;
@@ -84,7 +84,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return tmp5;
   }
-}) : (() => {
+}) : (function useTenureBadgeRequirementString() {
   let id;
   let tenureReqNumMonths;
   const obj = useTenureBadging;

@@ -1,23 +1,23 @@
-// Module ID: 6968
-// Function ID: 6969
+// Module ID: 7157
+// Function ID: 7158
 // Name: MobileTrialUtils
-// Dependencies: [1379, 558, 6969, 4704, 2036, 576, 13161, 4534, 1126, 2]
+// Dependencies: [1391, 558, 7158, 4898, 2048, 576, 13461, 4726, 1126, 2]
 
-// Module 6968 (MobileTrialUtils)
+// Module 7157 (MobileTrialUtils)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import PremiumUtils from "PremiumUtils" /* 4534 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4704 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 6969 */;
-import AndroidTwoWeekTrialsExperiment from "AndroidTwoWeekTrialsExperiment" /* 13161 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import dismissible_content from "dismissible_content" /* 2048 */;
+import PremiumUtils from "PremiumUtils" /* 4726 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4898 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7158 */;
+import AndroidTwoWeekTrialsExperiment from "AndroidTwoWeekTrialsExperiment" /* 13461 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = PremiumConstants.PremiumSubscriptionSKUToPremiumType;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowPremiumTrialUserSettingsAvatarBadge() {
   const obj = usePremiumTrialOffer;
   const premiumTrialOffer = obj.usePremiumTrialOffer();
   let tmp3 = null != premiumTrialOffer;
@@ -34,7 +34,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = !result;
   }
   return tmp3;
-}) : (() => {
+}) : (function useShouldShowPremiumTrialUserSettingsAvatarBadge() {
   const obj = usePremiumTrialOffer;
   const premiumTrialOffer = obj.usePremiumTrialOffer();
   let tmp3 = null != premiumTrialOffer;
@@ -53,7 +53,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return tmp3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumTrialOfferPremiumType() {
   const obj = usePremiumTrialOffer;
   const premiumTrialOffer = obj.usePremiumTrialOffer();
   let skuId;
@@ -64,7 +64,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   return closure_2[skuId];
-}) : (() => {
+}) : (function usePremiumTrialOfferPremiumType() {
   const obj = usePremiumTrialOffer;
   const premiumTrialOffer = obj.usePremiumTrialOffer();
   let skuId;
@@ -77,7 +77,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return closure_2[skuId];
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNitroTrialCtaOverride(location) {
   const obj = react;
   const cResult = obj.c(3);
   const obj2 = usePremiumTrialOffer;
@@ -114,7 +114,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
       return null;
     }
   }
-}) : ((location) => {
+}) : (function useNitroTrialCtaOverride(location) {
   const obj = usePremiumTrialOffer;
   const premiumTrialOffer = obj.usePremiumTrialOffer();
   let subscriptionTrial;

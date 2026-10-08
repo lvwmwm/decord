@@ -1,16 +1,16 @@
-// Module ID: 9932
-// Function ID: 9933
+// Module ID: 9454
+// Function ID: 9455
 // Name: useShowNitroUpsellCallback
-// Dependencies: [19, 558, 576, 4618, 2]
+// Dependencies: [19, 558, 576, 4810, 2]
 
-// Module 9932 (useShowNitroUpsellCallback)
+// Module 9454 (useShowNitroUpsellCallback)
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowNitroUpsellCallback() {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(5);
@@ -38,7 +38,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = sharedValue;
   cResult[4] = obj3;
   tmp4 = obj3;
-}) : (() => {
+}) : (function useShowNitroUpsellCallback() {
   const obj = ReanimatedRexport;
   const sharedValue = obj.useSharedValue(false);
   const items = [sharedValue];

@@ -1,28 +1,26 @@
-// Module ID: 6651
-// Function ID: 6652
+// Module ID: 6828
+// Function ID: 6829
 // Name: BottomSheetTitleHeader
-// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 1484, 4586, 4892, 6018, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 587, 558, 576, 1496, 4778, 5086, 6204, 2]
 
-// Module 6651 (BottomSheetTitleHeader)
+// Module 6828 (BottomSheetTitleHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import useToken from "useToken" /* 4586 */;
-import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6018 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import useToken from "useToken" /* 4778 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6204 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let children;
 
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -32,7 +30,7 @@ let closure_8 = createStyles.createStyles(() => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignBottomSheetTitleHeaderBase(arg0) {
   let items;
   let subtitle;
   let title;
@@ -92,7 +90,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = tmp7;
   cResult[7] = tmp12;
   tmp11 = tmp12;
-}) : ((subtitle) => {
+}) : (function RedesignBottomSheetTitleHeaderBase(subtitle) {
   let items;
   let obj2;
   let tmp4;
@@ -114,7 +112,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 createStyles = createStyles_mod;
 let closure_10 = createStyles.createStyles(() => ({ container: { flexDirection: "column" }, accessories: { flexDirection: "row", justifyContent: "space-between" }, item: { flexShrink: 0 } }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignBottomSheetTitleHeaderStacked(arg0) {
   let items;
   let items1;
   let items2;
@@ -234,7 +232,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp2.container;
   cResult[2] = items3;
   tmp4 = items3;
-}) : ((subtitle) => {
+}) : (function RedesignBottomSheetTitleHeaderStacked(subtitle) {
   let items;
   let items1;
   let items2;
@@ -275,7 +273,7 @@ let closure_12 = createStyles.createStyles(() => {
   return obj;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignBottomSheetTitleHeaderComplex(arg0) {
   let closure_129_0;
   let first;
   let items;
@@ -479,7 +477,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = title;
   cResult[5] = tmp13;
   tmp12 = tmp13;
-}) : ((subtitle) => {
+}) : (function RedesignBottomSheetTitleHeaderComplex(subtitle) {
   let c0;
   let items;
   let items1;
@@ -540,7 +538,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroImportDefault(View, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Title(arg0) {
   const obj = react2;
   const cResult = obj.c(3);
   const tmp4 = closure_8();
@@ -559,14 +557,14 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.title;
   cResult[2] = tmp7;
   tmp5 = tmp7;
-}) : ((arg0) => {
+}) : (function Title(arg0) {
   const obj = { variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", style: closure_8().title };
   const Text = Text_Text.Text;
   const merged = Object.assign(arg0);
   return metroRequire(Text, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Subtitle(children) {
   const obj = react2;
   const cResult = obj.c(3);
   children = children.children;
@@ -584,13 +582,13 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[1] = tmp4.subtitle;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((children) => {
+}) : (function Subtitle(children) {
   children = children.children;
   const obj = { variant: "text-sm/medium", color: "text-muted", style: closure_8().subtitle, textBreakStrategy: "balanced", lineBreakStrategyIOS: "push-out", children };
   return metroRequire(Text_Text.Text, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheetTitleHeader(arg0) {
   let closure_0;
   let first;
   let items;
@@ -621,7 +619,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp14;
       const _Symbol = Symbol;
       if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-        const fn = function v(nativeEvent) {
+        const fn = function b(nativeEvent) {
           closure_0(nativeEvent.nativeEvent.lines.length > 2);
         };
         cResult[4] = fn;
@@ -679,7 +677,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     tmp5 = cResult[1];
   }
-}) : ((arg0) => {
+}) : (function BottomSheetTitleHeader(arg0) {
   let closure_0;
   let first;
   let items;

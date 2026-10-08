@@ -1,23 +1,23 @@
-// Module ID: 15017
-// Function ID: 15018
+// Module ID: 15279
+// Function ID: 15280
 // Name: QuestDockInsetHeaderBody
-// Dependencies: [19, 17, 14912, 21, 587, 4896, 558, 576, 10964, 10963, 14909, 1618, 14978, 4892, 5601, 1188, 14981, 2]
+// Dependencies: [19, 17, 15174, 21, 587, 5090, 558, 576, 11157, 11156, 15171, 1630, 15240, 5086, 5375, 1200, 15243, 2]
 
-// Module 15017 (QuestDockInsetHeaderBody)
+// Module 15279 (QuestDockInsetHeaderBody)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import QuestRewardTileDefault from "QuestRewardTile" /* 10963 */;
-import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 10964 */;
-import QuestDockHooks from "QuestDockHooks" /* 14909 */;
-import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 14978 */;
-import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 14981 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import QuestRewardTileDefault from "QuestRewardTile" /* 11156 */;
+import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 11157 */;
+import QuestDockHooks from "QuestDockHooks" /* 15171 */;
+import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 15240 */;
+import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 15243 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 14912 */;
+import QuestDockConstants from "QuestDockConstants" /* 15174 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ obj6 = { alignSelf: "stretch", flexDirection: "row", alignItems: "center", gap: 
 rect1 = { position: "absolute", left: -12, right: -12, top: 0, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, height: 1, opacity: 1 };
 let closure_8 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockBodyRewardTile(arg0) {
   const obj = react2;
   const cResult = obj.c(3);
   const tmp3 = closure_8();
@@ -66,7 +66,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp3.rewardTile;
   cResult[2] = tmp7;
   tmp4 = tmp7;
-}) : ((arg0) => {
+}) : (function QuestDockBodyRewardTile(arg0) {
   let tmp;
   const obj = { height: PX_80, width: PX_80, style: tmp.rewardTile };
   tmp = closure_8();
@@ -75,7 +75,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return hasOwnProperty(tmp2, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockBodyQuestRewardTile(arg0) {
   const obj = react2;
   const cResult = obj.c(3);
   const tmp3 = closure_8();
@@ -94,7 +94,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp3.rewardTile;
   cResult[2] = tmp7;
   tmp4 = tmp7;
-}) : ((arg0) => {
+}) : (function QuestDockBodyQuestRewardTile(arg0) {
   let tmp;
   const obj = { height: PX_80, width: PX_80, style: tmp.rewardTile };
   tmp = closure_8();
@@ -103,7 +103,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return hasOwnProperty(tmp2, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockInsetHeaderBody(arg0) {
   let contentBadge;
   let ctaButtonVariant;
   let ctaLoading;
@@ -300,7 +300,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
                           if ("primary" === str) {
                             const obj9 = { variant: "primary", grow: true, onPress: onCtaPress, loading: undefined !== ctaLoading && ctaLoading, icon: renderCtaIconResult, text: ctaText };
                             renderCtaIconResult = undefined;
-                            const Button = tmp(5601).Button;
+                            const Button = tmp(5375).Button;
                             const tmp58 = hasOwnProperty;
                             if (renderCtaIcon != null) {
                               renderCtaIconResult = renderCtaIcon();
@@ -308,7 +308,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
                             tmp58Result = tmp58(Button, obj9);
                           } else {
                             const obj10 = { style: tmp6.questDockCta, onPress: onCtaPress, loading: undefined !== ctaLoading && ctaLoading, renderIcon: renderCtaIcon, text: ctaText, shineDisabled: !isQuestDockExpanded };
-                            tmp58Result = hasOwnProperty(tmp(1188).ShinyButton, obj10);
+                            tmp58Result = hasOwnProperty(tmp(1200).ShinyButton, obj10);
                           }
                           cResult[37] = str;
                           cResult[38] = undefined !== ctaLoading && ctaLoading;
@@ -392,7 +392,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[3] = tmp10;
   cResult[4] = items7;
   tmp11 = items7;
-}) : ((showBonusOrbsGradient) => {
+}) : (function QuestDockInsetHeaderBody(showBonusOrbsGradient) {
   let contentBadge;
   let ctaButtonVariant;
   let ctaLoading;
@@ -470,14 +470,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   if ("primary" === ctaButtonVariant) {
     const obj14 = { variant: "primary", grow: true, onPress: onCtaPress, loading: ctaLoading, icon: renderCtaIconResult, text: ctaText };
     renderCtaIconResult = undefined;
-    const Button = tmp2(5601).Button;
+    const Button = tmp2(5375).Button;
     if (renderCtaIcon != null) {
       renderCtaIconResult = renderCtaIcon();
     }
     tmp8Result4 = tmp8(Button, obj14);
   } else {
     const obj15 = { style: tmp.questDockCta, onPress: onCtaPress, loading: ctaLoading, renderIcon: renderCtaIcon, text: ctaText, shineDisabled: !isQuestDockExpanded };
-    tmp8Result4 = tmp8(tmp2(1188).ShinyButton, obj15);
+    tmp8Result4 = tmp8(tmp2(1200).ShinyButton, obj15);
   }
   items7[1] = tmp8Result4;
   items6[1] = metroRequire(View, obj13);

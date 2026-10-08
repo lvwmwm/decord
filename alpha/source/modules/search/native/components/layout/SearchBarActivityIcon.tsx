@@ -1,24 +1,22 @@
-// Module ID: 16814
-// Function ID: 16815
+// Module ID: 17093
+// Function ID: 17094
 // Name: SearchBarActivityIcon
-// Dependencies: [19, 17, 6794, 11994, 7524, 21, 4896, 587, 558, 576, 11987, 573, 4618, 4897, 6555, 1369, 2]
+// Dependencies: [19, 17, 6067, 12067, 9247, 21, 5090, 587, 558, 576, 12060, 573, 4810, 5091, 6731, 1381, 2]
 
-// Module 16814 (SearchBarActivityIcon)
+// Module 17093 (SearchBarActivityIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
-import SearchConstants from "SearchConstants" /* 7524 */;
-import SearchUtils from "SearchUtils" /* 11987 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
+import SearchConstants from "SearchConstants" /* 9247 */;
+import SearchUtils from "SearchUtils" /* 12060 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 6794 */;
-import SearchQueryStore from "SearchQueryStore" /* 11994 */;
+import SearchMessageStore from "SearchMessageStore" /* 6067 */;
+import SearchQueryStore from "SearchQueryStore" /* 12067 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let searchContext;
 
 let c10;
 let c9;
@@ -37,7 +35,7 @@ const __initData = { code: "function SearchBarActivityIconTsx1(){const{interpola
 const __initData2 = { code: "function SearchBarActivityIconTsx2(){const{interpolate,fadeAnimationState,ANIMATION_STATE_INPUT}=this.__closure;return{opacity:interpolate(fadeAnimationState.get(),ANIMATION_STATE_INPUT,[1,0])};}" };
 const __initData3 = { code: "function SearchBarActivityIconTsx3(){const{interpolate,fadeAnimationState,ANIMATION_STATE_INPUT}=this.__closure;return{opacity:interpolate(fadeAnimationState.get(),ANIMATION_STATE_INPUT,[0,0.5])};}" };
 const __initData4 = { code: "function SearchBarActivityIconTsx4(){const{interpolate,fadeAnimationState,ANIMATION_STATE_INPUT}=this.__closure;return{opacity:interpolate(fadeAnimationState.get(),ANIMATION_STATE_INPUT,[1,0])};}" };
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SearchBarActivityIcon(searchContext) {
   let first;
   let sharedValue;
   let str;
@@ -260,7 +258,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
   cResult[7] = items4;
   tmp13 = items4;
   tmp12 = fn2;
-}) : ((searchContext) => {
+}) : (function SearchBarActivityIcon(searchContext) {
   let MagnifyingGlassIcon;
   let items3;
   let obj10;

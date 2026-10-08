@@ -1,12 +1,12 @@
-// Module ID: 10671
-// Function ID: 10672
+// Module ID: 9584
+// Function ID: 9585
 // Name: useNavigatorConfirmChangesOnBack
-// Dependencies: [19, 17, 1085, 558, 576, 10672, 10673, 2]
+// Dependencies: [19, 17, 1085, 558, 576, 9585, 9586, 2]
 
-// Module 10671 (useNavigatorConfirmChangesOnBack)
+// Module 9584 (useNavigatorConfirmChangesOnBack)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
-import useNavigatorBackHandlerDefault from "useNavigatorBackHandler" /* 10673 */;
+import useNavigatorBackHandlerDefault from "useNavigatorBackHandler" /* 9586 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ let importDefault;
 
 const Keyboard = react_native.Keyboard;
 const NOOP = Constants.NOOP;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNavigatorConfirmChangesOnBack() {
   let first;
   let ref;
   let ref2;
@@ -27,7 +27,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   ref = react.useRef(null);
   importDefault = react.useRef(false);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t(preventable) {
+    function onBeforeGoBack(preventable) {
       if (preventable.preventable) {
         let current = ref2.current;
         if (!current) {
@@ -52,9 +52,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           ref2(dependencyMap[5])(obj);
         }
       }
-    };
-    cResult[0] = fn;
-    first = fn;
+    }
+    cResult[0] = onBeforeGoBack;
+    first = onBeforeGoBack;
   } else {
     first = cResult[0];
   }
@@ -75,7 +75,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp6 = cResult[3];
   }
   return tmp6;
-}) : (() => {
+}) : (function useNavigatorConfirmChangesOnBack() {
   let ref2;
   let resetPending;
   const ref = react.useRef(null);

@@ -1,30 +1,30 @@
-// Module ID: 12924
-// Function ID: 12925
+// Module ID: 13073
+// Function ID: 13074
 // Name: ConjureChatStore
-// Dependencies: [32, 109, 7061, 1231, 12481, 2103, 4705, 5445, 8734, 1085, 2058, 11, 8737, 2028, 12925, 9575, 6756, 504, 1126, 3753, 584, 2]
+// Dependencies: [32, 109, 7247, 1243, 12577, 2115, 4899, 5755, 11251, 1085, 2070, 11, 12366, 2040, 13074, 10770, 6932, 504, 1126, 3827, 584, 2]
 // Exports: getOlderHistoryCursor, isStrandedSegment, turnSettled
 
-// Module 12924 (ConjureChatStore)
+// Module 13073 (ConjureChatStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import ChannelConstants from "ChannelConstants" /* 2058 */;
-import _modDef3753 from "module_3753" /* 3753 */;
-import ConjureUtils from "ConjureUtils" /* 6756 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 8737 */;
-import SoundUtils from "SoundUtils" /* 9575 */;
-import conjureProjectMute from "conjureProjectMute" /* 12925 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import ChannelConstants from "ChannelConstants" /* 2070 */;
+import _modDef3827 from "module_3827" /* 3827 */;
+import ConjureUtils from "ConjureUtils" /* 6932 */;
+import SoundUtils from "SoundUtils" /* 10770 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 12366 */;
+import conjureProjectMute from "conjureProjectMute" /* 13074 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7061 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 12481 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5445 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 8734 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7247 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 12577 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5755 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 11251 */;
 import Constants from "Constants" /* 1085 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -45,8 +45,8 @@ function newMessage(assistant, content, arg2) {
   ({ ts, id, userId, turnId } = obj);
   const attachments = obj.attachments;
   if (id == null) {
-    const sum = c30 + 1;
-    c30 = sum;
+    const sum = c31 + 1;
+    c31 = sum;
     id = `m${tmp2}`;
   }
   const obj2 = { id, render_id: id, role: assistant, content, steps: [], created_at: parsed, attachments };
@@ -77,7 +77,7 @@ function newMessageFromHistory(ts) {
   function snowflakeTimeOf(id) {
     let startsWithResult;
     if (id != null) {
-      startsWithResult = id.startsWith(closure_1_32);
+      startsWithResult = id.startsWith(closure_1_33);
     }
     let substr = id;
     if (true === startsWithResult) {
@@ -142,6 +142,9 @@ function newMessageFromHistory(ts) {
   }
   if (null != ts.publish_notice) {
     tmp.publishNotice = ts.publish_notice;
+  }
+  if (null != ts.project_event) {
+    tmp.projectEvent = ts.project_event;
   }
   let tmp8 = null != ts.clarification && ts.clarification.questions.length > 0;
   if (tmp8) {
@@ -215,7 +218,7 @@ function resolveTurnIndex(arr3, activeTurnId) {
         let tmp4 = tmp3.turn_id === activeTurnId;
         if (!tmp4) {
           let _HermesInternal = HermesInternal;
-          tmp4 = tmp3.id === "" + c32 + activeTurnId;
+          tmp4 = tmp3.id === "" + c33 + activeTurnId;
         }
         num = diff;
         if (tmp4) {
@@ -268,7 +271,7 @@ function patchTurn(projectId, turnId, fn) {
           let tmp10 = tmp8.turn_id === turnId;
           if (!tmp10) {
             const _HermesInternal = HermesInternal;
-            tmp10 = tmp8.id === "" + c32 + turnId;
+            tmp10 = tmp8.id === "" + c33 + turnId;
           }
           tmp9 = tmp8;
           if (!tmp10) {
@@ -312,7 +315,7 @@ function hasOpenTurn(map) {
         let tmp = map[diff];
         let tmp4 = flag2;
         if ("assistant" === tmp.role) {
-          let tmp5 = "side_reply" === tmp.kind || "publish_notice" === tmp.kind;
+          let tmp5 = "side_reply" === tmp.kind || "publish_notice" === tmp.kind || "project_event" === tmp.kind;
           tmp4 = flag2;
           if (!tmp5) {
             let flag = flag2;
@@ -399,7 +402,7 @@ function notifyTurn(projectId, guildId, title, body, nonce) {
       const presentTurnNotification = ConjurePlatformUtilsDefault.presentTurnNotification;
       ConjurePlatformUtilsDefault;
       if (null != conjureWorkspaceGuildId) {
-        CHANNELResult = closure_15.CHANNEL(conjureWorkspaceGuildId, StaticChannelRoute.CONJURE, projectId);
+        CHANNELResult = authStore3.CHANNEL(conjureWorkspaceGuildId, StaticChannelRoute.CONJURE, projectId);
       }
       tmp25 = undefined;
       if (!isSoundDisabledResult) {
@@ -436,7 +439,7 @@ function recordThinkingTransition(projectId) {
           while (true) {
             if ("assistant" === value[diff].role) {
               let tmp8 = value[diff];
-              let tmp9 = "side_reply" === tmp8.kind || "publish_notice" === tmp8.kind;
+              let tmp9 = "side_reply" === tmp8.kind || "publish_notice" === tmp8.kind || "project_event" === tmp8.kind;
               if (!tmp9) {
                 break;
               }
@@ -449,8 +452,8 @@ function recordThinkingTransition(projectId) {
       }
       let tmp10 = null != tmp5;
       if (tmp10) {
-        const str4 = tmp5.content;
-        let someResult = "" !== str4.trim() || null != tmp5.proposal || null != tmp5.clarification || null != tmp5.intake;
+        const str5 = tmp5.content;
+        let someResult = "" !== str5.trim() || null != tmp5.proposal || null != tmp5.clarification || null != tmp5.intake;
         if (!someResult) {
           const steps = tmp5.steps;
           someResult = steps.some((kind) => {
@@ -499,12 +502,13 @@ function recordThinkingTransition(projectId) {
 function purgeProject(projectId) {
   let deleteResult = map.delete(projectId);
   const deleteResult1 = map6.delete(projectId);
-  const deleteResult2 = set2.delete(projectId);
+  const deleteResult2 = set3.delete(projectId);
   const deleteResult3 = map1.delete(projectId);
   const deleteResult4 = map2.delete(projectId);
   const deleteResult5 = map3.delete(projectId);
   const deleteResult6 = map4.delete(projectId);
   const deleteResult7 = set1.delete(projectId);
+  const deleteResult8 = set2.delete(projectId);
   const index = closure_23.indexOf(projectId);
   const arr = closure_23;
   if (-1 !== index) {
@@ -532,7 +536,10 @@ function purgeProject(projectId) {
     deleteResult = deleteResult7;
   }
   if (!deleteResult) {
-    deleteResult = tmp10;
+    deleteResult = deleteResult8;
+  }
+  if (!deleteResult) {
+    deleteResult = tmp11;
   }
   return deleteResult;
 }
@@ -667,8 +674,8 @@ function replayTimeline(steps) {
 function stoppable(role) {
   let tmp = "assistant" === role.role;
   if (tmp) {
-    tmp = !("side_reply" === role.kind || "publish_notice" === role.kind);
-    const tmp2 = "side_reply" === role.kind || "publish_notice" === role.kind;
+    tmp = !("side_reply" === role.kind || "publish_notice" === role.kind || "project_event" === role.kind);
+    const tmp2 = "side_reply" === role.kind || "publish_notice" === role.kind || "project_event" === role.kind;
   }
   if (tmp) {
     let someResult = true === role.finished || true === role.continued || "" !== role.content || null != role.proposal || null != role.clarification || null != role.intake;
@@ -693,15 +700,16 @@ let set = new Set(["reply", "plan_proposed", "terminal_error"]);
 let map = new Map();
 const map1 = new Map();
 const map2 = new Map();
-let closure_23 = [];
+const version = [];
 const map3 = new Map();
 const map4 = new Map();
 let set1 = new Set();
+let set2 = new Set();
 const map5 = new Map();
 let width = 0;
-let closure_29 = [];
-let c30 = 0;
-let c32 = "turn:";
+let closure_30 = [];
+let c31 = 0;
+let c33 = "turn:";
 const Store = get_initializedDefault.Store;
 class ConjureChatStore extends Store {
   initialize() {
@@ -710,7 +718,7 @@ class ConjureChatStore extends Store {
   getMessages(arg0) {
     let value = map.get(arg0);
     if (value == null) {
-      value = closure_29;
+      value = closure_30;
     }
     return value;
   }
@@ -725,7 +733,7 @@ class ConjureChatStore extends Store {
     return map6.has(projectId);
   }
   isHistoryUnavailable(projectId) {
-    return set2.has(projectId);
+    return set3.has(projectId);
   }
   getFinishedAt(id) {
     let tmp = null;
@@ -755,6 +763,9 @@ class ConjureChatStore extends Store {
   isCompacting(projectId) {
     return set1.has(projectId);
   }
+  isSaving(arg0) {
+    return set2.has(arg0);
+  }
   getSidebarWidth() {
     return width;
   }
@@ -776,7 +787,7 @@ class ConjureChatStore extends Store {
 }
 const prototype = ConjureChatStore.prototype;
 const map6 = new Map();
-let set2 = new Set();
+const set3 = new Set();
 let obj = {
   LOGOUT: function handleLogout() {
     map5.clear();
@@ -787,11 +798,13 @@ let obj = {
           if (0 === map3.size) {
             if (0 === map4.size) {
               if (0 === set1.size) {
-                if (0 === map6.size) {
-                  if (0 === set2.size) {
-                    if (0 === closure_23.length) {
-                      if (0 === width) {
-                        return false;
+                if (0 === set2.size) {
+                  if (0 === map6.size) {
+                    if (0 === set3.size) {
+                      if (0 === closure_23.length) {
+                        if (0 === width) {
+                          return false;
+                        }
                       }
                     }
                   }
@@ -808,31 +821,48 @@ let obj = {
     map3.clear();
     map4.clear();
     set1.clear();
-    map6.clear();
     set2.clear();
+    map6.clear();
+    set3.clear();
     closure_23.length = 0;
     width = 0;
   },
-  CONJURE_CHAT_HISTORY_SET: function handleChatHistorySet(degraded) {
+  CONJURE_CHAT_HISTORY_SET: function handleChatHistorySet(arg0) {
     let cursor;
+    let degraded;
     let entries;
+    let items;
     let projectId;
-    ({ projectId, entries, cursor } = degraded);
+    ({ projectId, entries, cursor, degraded } = arg0);
     set1 = undefined;
-    degraded = degraded.degraded;
+    let mapped;
+    let num;
     let tmp = map6;
-    set = map6.set;
-    if (cursor == null) {
-      cursor = null;
-    }
-    const result = set(projectId, cursor);
-    if (true === degraded) {
-      set2.add(projectId);
+    let value = map6.get(projectId);
+    if (map6.has(projectId)) {
+      let value2 = map.get(projectId);
+      if (value2 == null) {
+        value2 = [];
+      }
+      items = value2;
     } else {
-      set2.delete(projectId);
+      items = [];
+    }
+    let tmp5 = cursor;
+    set = tmp.set;
+    if (cursor == null) {
+      tmp5 = null;
+    }
+    const result = set(projectId, tmp5);
+    if (true === degraded) {
+      set3.add(projectId);
+    } else {
+      set3.delete(projectId);
     }
     map4.delete(projectId);
     set1.delete(projectId);
+    set2.delete(projectId);
+    const self = this;
     set1 = new Set();
     const found = entries.filter((id) => {
       let tmp = null == id.id;
@@ -848,7 +878,33 @@ let obj = {
       }
       return tmp;
     });
-    const result1 = map.set(projectId, applyAgentReactions(found.map(newMessageFromHistory)));
+    mapped = found.map(newMessageFromHistory);
+    num = -1;
+    if (null != cursor) {
+      num = -1;
+      if (true !== degraded) {
+        num = mapped.findIndex((id) => null != id.id);
+      }
+    }
+    let num2 = -1;
+    if (-1 !== num) {
+      num2 = items.findIndex((id) => id.id === mapped[num].id);
+    }
+    if (-1 !== num2) {
+      if (value == null) {
+        value = null;
+      }
+      tmp.set(projectId, value);
+    }
+    let tmp18 = mapped;
+    const tmp17 = applyAgentReactions;
+    if (-1 !== num2) {
+      const items1 = [];
+      const arraySpreadResult = HermesBuiltin.arraySpread(items1, items.slice(0, num2), 0);
+      HermesBuiltin.arraySpread(items1, mapped.slice(num), arraySpreadResult);
+      tmp18 = items1;
+    }
+    map.set(projectId, tmp17(tmp18));
     recordThinkingTransition(projectId);
   },
   CONJURE_CHAT_HISTORY_PREPEND: function handleChatHistoryPrepend(cursor) {
@@ -966,7 +1022,7 @@ let obj = {
                 let tmp12 = tmp11.turn_id === activeTurnId;
                 if (!tmp12) {
                   let _HermesInternal = HermesInternal;
-                  tmp12 = tmp11.id === "" + c32 + activeTurnId;
+                  tmp12 = tmp11.id === "" + c33 + activeTurnId;
                 }
                 num5 = diff;
                 if (tmp12) {
@@ -1142,6 +1198,28 @@ let obj = {
       const result = obj.set(projectId, items);
     }
   },
+  CONJURE_CHAT_PROJECT_EVENT: function handleChatProjectEvent(arg0) {
+    let event;
+    let projectId;
+    ({ projectId, event } = arg0);
+    const value = map.get(projectId);
+    const obj = map;
+    if (null == value) {
+      return false;
+    } else if (value.some((id) => id.id === event.id)) {
+      return false;
+    } else {
+      const obj2 = { ts: null, id: null };
+      ({ ts: obj3.ts, id: obj3.id } = event);
+      const tmp3 = newMessage("assistant", "", obj2);
+      tmp3.kind = "project_event";
+      tmp3.projectEvent = event;
+      tmp3.finished = true;
+      const items = [];
+      items[HermesBuiltin.arraySpread(items, value, 0)] = tmp3;
+      const result = obj.set(projectId, items);
+    }
+  },
   CONJURE_CHAT_STEP_APPEND: function handleChatStepAppend(turnId) {
     let projectId;
     let step;
@@ -1200,6 +1278,7 @@ let obj = {
       map4.delete(projectId);
       set1.delete(projectId);
     }
+    set2.delete(projectId);
     recordThinkingTransition(projectId);
   },
   CONJURE_CHAT_INTERRUPTED: function handleChatInterrupted(projectId) {
@@ -1259,7 +1338,7 @@ let obj = {
             let tmp5 = tmp4.turn_id === turnId;
             if (!tmp5) {
               let _HermesInternal = HermesInternal;
-              tmp5 = tmp4.id === "" + c32 + turnId;
+              tmp5 = tmp4.id === "" + c33 + turnId;
             }
             num2 = diff;
             if (tmp5) {
@@ -1308,7 +1387,7 @@ let obj = {
             let tmp4 = role.turn_id === require;
             if (!tmp4) {
               const _HermesInternal = HermesInternal;
-              tmp4 = role.id === "" + c32 + tmp3;
+              tmp4 = role.id === "" + c33 + tmp3;
             }
             let tmp7 = role;
             if (tmp4) {
@@ -1360,6 +1439,18 @@ let obj = {
       set1.delete(projectId);
     }
   },
+  CONJURE_CHAT_SAVING_SET: function handleChatSavingSet(arg0) {
+    let projectId;
+    let saving;
+    ({ projectId, saving } = arg0);
+    if (saving === set2.has(projectId)) {
+      return false;
+    } else if (saving) {
+      set2.add(projectId);
+    } else {
+      set2.delete(projectId);
+    }
+  },
   CONJURE_CHAT_USAGE_SET: function handleChatUsageSet(projectId) {
     const result = map3.set(projectId.projectId, projectId.project);
   },
@@ -1393,9 +1484,10 @@ let obj = {
         return false;
       }
     }
-    let obj = map;
     const deleteResult = set1.delete(projectId);
-    const deleteResult1 = map4.delete(projectId);
+    const deleteResult1 = set2.delete(projectId);
+    let deleteResult2 = map4.delete(projectId);
+    let obj = map;
     const value = map.get(projectId);
     if (null != value) {
       if (value.some((role) => {
@@ -1429,7 +1521,7 @@ let obj = {
                 const obj = { provisionalTodo: undefined, steps: items };
                 const merged = Object.assign(disposition);
                 items = [];
-                const obj2 = { type: "step", kind: "terminal_error", message: intl.string(_modDef3753.lmiuFX) };
+                const obj2 = { type: "step", kind: "terminal_error", message: intl.string(_modDef3827.lmiuFX) };
                 const arraySpreadResult = HermesBuiltin.arraySpread(items, disposition.steps, 0);
                 intl = intl2.intl;
                 items[arraySpreadResult] = obj2;
@@ -1442,7 +1534,13 @@ let obj = {
         recordThinkingTransition(projectId);
       }
     }
-    return !(!deleteResult1 && !deleteResult) && undefined;
+    if (!deleteResult2) {
+      deleteResult2 = deleteResult;
+    }
+    if (!deleteResult2) {
+      deleteResult2 = deleteResult1;
+    }
+    return deleteResult2 && undefined;
   },
   CONJURE_PROJECT_CREATE_SUCCESS: function handleProjectCreateSuccess(project) {
     project = project.project;
@@ -1506,10 +1604,10 @@ let size = size_mod;
 let result = size.fileFinishedImporting("modules/conjure/chat/ConjureChatStore.tsx");
 
 export default conjureChatStore;
-export const turnSettled = function turnSettled(finished) {
-  let someResult = true === finished.finished || true === finished.continued || "" !== finished.content || null != finished.proposal || null != finished.clarification || null != finished.intake;
+export const turnSettled = function turnSettled(message) {
+  let someResult = true === message.finished || true === message.continued || "" !== message.content || null != message.proposal || null != message.clarification || null != message.intake;
   if (!someResult) {
-    const steps = finished.steps;
+    const steps = message.steps;
     someResult = steps.some((kind) => set.has(kind.kind));
   }
   return someResult;
@@ -1535,7 +1633,7 @@ export const isStrandedSegment = function isStrandedSegment(arg0, arg1) {
                 let tmp8 = tmp5.turn_id === turn_id;
                 if (!tmp8) {
                   let _HermesInternal = HermesInternal;
-                  tmp8 = tmp5.id === "" + c32 + turn_id;
+                  tmp8 = tmp5.id === "" + c33 + turn_id;
                 }
                 if (tmp8) {
                   let someResult1 = true === tmp5.finished || true === tmp5.continued || "" !== tmp5.content || null != tmp5.proposal || null != tmp5.clarification || null != tmp5.intake;
@@ -1558,8 +1656,8 @@ export const isStrandedSegment = function isStrandedSegment(arg0, arg1) {
   }
   return false;
 };
-export const getOlderHistoryCursor = function getOlderHistoryCursor(projectId) {
-  let value = map6.get(projectId);
+export const getOlderHistoryCursor = function getOlderHistoryCursor(arg0) {
+  let value = map6.get(arg0);
   if (value == null) {
     value = null;
   }

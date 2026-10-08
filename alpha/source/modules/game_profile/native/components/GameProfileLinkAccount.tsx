@@ -1,26 +1,25 @@
-// Module ID: 8418
-// Function ID: 8419
+// Module ID: 8915
+// Function ID: 8916
 // Name: GameProfileLinkAccount
-// Dependencies: [19, 17, 5124, 1377, 21, 4896, 587, 558, 576, 6440, 8419, 8421, 6667, 504, 8352, 1126, 5981, 1188, 4892, 8422, 5601, 2]
+// Dependencies: [19, 17, 5436, 1389, 21, 5090, 587, 558, 576, 6618, 8916, 8918, 6844, 504, 8850, 1126, 6164, 1200, 5086, 8919, 5375, 2]
 
-// Module 8418 (GameProfileLinkAccount)
+// Module 8915 (GameProfileLinkAccount)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6440 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8352 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 8419 */;
-import GameProfileSection from "GameProfileSection" /* 8421 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6618 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8850 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 8916 */;
+import GameProfileSection from "GameProfileSection" /* 8918 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5124 */;
-import UserStore from "UserStore" /* 1377 */;
+import ApplicationStore from "ApplicationStore" /* 5436 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const GameProfileSkeletonDefault = GameProfileSkeleton;
-let analyticsLocations;
 
 let metroImportAll;
 let metroImportDefault;
@@ -65,7 +64,7 @@ size7 = { width: "55%", height: nativeDefault.space.PX_12, borderRadius: nativeD
 let closure_10 = createStyles(obj);
 const memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileLinkAccountSkeleton() {
   let items;
   let items1;
   let items2;
@@ -192,7 +191,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                             }
                             const obj9 = { showViewAllSkeleton: false, skeletonTitleWidth: 90, children: metroImportDefault(View, obj10) };
                             obj10 = { style: tmp4.card, children: tmp47 };
-                            const GameProfileSectionSkeleton = tmp(8421).GameProfileSectionSkeleton;
+                            const GameProfileSectionSkeleton = tmp(8918).GameProfileSectionSkeleton;
                             const tmp53 = metroImportDefault(GameProfileSectionSkeleton, obj9);
                             cResult[38] = tmp4.card;
                             cResult[39] = tmp47;
@@ -224,7 +223,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 let tmp37 = !tmp6;
                 if (tmp37) {
                   const obj13 = { style: tmp4.skeletonCardContentBodySecondary };
-                  tmp37 = metroImportDefault(tmp5(8419), obj13);
+                  tmp37 = metroImportDefault(tmp5(8916), obj13);
                 }
                 cResult[25] = tmp6;
                 cResult[26] = tmp4.skeletonCardContentBodySecondary;
@@ -260,7 +259,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = !tmp6 && tmp4.skeletonCardImagesContainerSmall;
   cResult[2] = items4;
   tmp8 = items4;
-}) : (() => {
+}) : (function GameProfileLinkAccountSkeleton() {
   let GameProfileSkeletonContainer;
   let items1;
   let items2;
@@ -304,7 +303,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp5Result = !tmp4;
   if (tmp5Result) {
     const obj13 = { style: tmp.skeletonCardContentBodySecondary };
-    tmp5Result = tmp5(tmp2(8419), obj13);
+    tmp5Result = tmp5(tmp2(8916), obj13);
   }
   items4[2] = tmp5Result;
   const obj14 = { showViewAllSkeleton: false, skeletonTitleWidth: 90, children: metroImportDefault(View, obj) };
@@ -313,7 +312,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return metroImportDefault(GameProfileSectionSkeleton, obj14);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocations) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileLinkAccount(analyticsLocations) {
   let canStartAuthorization;
   let currentUser;
   let fetched;
@@ -388,18 +387,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocations) 
       }
     }
   }
-  class L {
-    constructor() {
-      trackAction(GameProfileAnalyticUtils.GameProfileTrackActionActions.LinkAccount);
-      const obj = { analyticsLocations };
-      startAuthorization(obj);
-    }
-  }
+  const fn2 = function w() {
+    trackAction(GameProfileAnalyticUtils.GameProfileTrackActionActions.LinkAccount);
+    const obj = { analyticsLocations };
+    startAuthorization(obj);
+  };
   cResult[8] = analyticsLocations;
   cResult[9] = startAuthorization;
   cResult[10] = trackAction;
-  cResult[11] = L;
-}) : ((analyticsLocations) => {
+  cResult[11] = fn2;
+}) : (function GameProfileLinkAccount(analyticsLocations) {
   let canStartAuthorization;
   let currentUser;
   let fetched;

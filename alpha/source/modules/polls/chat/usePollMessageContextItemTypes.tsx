@@ -1,21 +1,19 @@
-// Module ID: 11299
-// Function ID: 11300
+// Module ID: 9636
+// Function ID: 9637
 // Name: usePollMessageContextItemTypes
 // Dependencies: [502, 558, 576, 504, 2]
 
-// Module 11299 (usePollMessageContextItemTypes)
+// Module 9636 (usePollMessageContextItemTypes)
 import react from "react" /* 576 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let poll;
-
 let tmp;
 const get_initialized = tmp(504);
 const PollMessageContextItemTypes = { END_EARLY: 0, [0]: "END_EARLY" };
 let closure_4 = [];
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((poll) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePollMessageContextItemTypes(poll) {
   let id;
   let tmp4;
   let tmp5;
@@ -62,7 +60,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((poll) => {
     }
   }
   return closure_4;
-}) : ((poll) => {
+}) : (function usePollMessageContextItemTypes(poll) {
   let id;
   const obj = get_initialized;
   const items = [AuthenticationStore];

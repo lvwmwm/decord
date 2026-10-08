@@ -1,14 +1,14 @@
-// Module ID: 6970
-// Function ID: 6971
+// Module ID: 7159
+// Function ID: 7160
 // Name: useAndroidAndLegacyIOSPremiumTrialOfferCandidates
-// Dependencies: [6931, 1379, 558, 6971, 6926, 576, 573, 2]
+// Dependencies: [7120, 1391, 558, 7160, 7115, 576, 573, 2]
 
-// Module 6970 (useAndroidAndLegacyIOSPremiumTrialOfferCandidates)
+// Module 7159 (useAndroidAndLegacyIOSPremiumTrialOfferCandidates)
 import react from "react" /* 576 */;
-import ProductIds from "ProductIds" /* 6926 */;
-import useTrialOffer from "useTrialOffer" /* 6971 */;
-import IAPStore from "IAPStore" /* 6931 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+import ProductIds from "ProductIds" /* 7115 */;
+import useTrialOffer from "useTrialOffer" /* 7160 */;
+import IAPStore from "IAPStore" /* 7120 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let tmp;
 const useStateFromStores = tmp(573);
 ({ PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID: c3, PREMIUM_TIER_2_REACTIVATION_TRIAL_ID: closure_4, PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID: hasOwnProperty, PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID: metroRequire, PREMIUM_TIER_2_REFERRAL_TRIAL_ID: metroImportDefault, PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID: metroImportAll } = PremiumConstants);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetTrialOffer(arg0, arg1) {
   let closure_0 = arg1;
   const obj = useTrialOffer;
   const trialOffer = obj.useTrialOffer(arg0);
@@ -32,7 +32,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => 
     tmp2 = trialOffer;
   }
   return tmp2;
-}) : ((arg0, arg1) => {
+}) : (function useGetTrialOffer(arg0, arg1) {
   let closure_0 = arg1;
   const obj = useTrialOffer;
   const trialOffer = obj.useTrialOffer(arg0);
@@ -44,23 +44,21 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => 
   return tmp2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAndroidAndLegacyIOSPremiumTrialOfferCandidates() {
   let tmp4;
   let tmp5;
   let obj = react;
   const cResult = obj.c(9);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [IAPStore];
-    class R {
-      constructor() {
-        const obj = { isFetchingProducts: IAPStore.isFetchingProducts(), offerIds: IAPStore.getOfferIds() };
-        return obj;
-      }
-    }
+    const fn = function l() {
+      const obj = { isFetchingProducts: IAPStore.isFetchingProducts(), offerIds: IAPStore.getOfferIds() };
+      return obj;
+    };
     cResult[0] = items;
-    cResult[1] = R;
+    cResult[1] = fn;
     tmp4 = items;
-    tmp5 = R;
+    tmp5 = fn;
   } else {
     [tmp4, tmp5] = cResult;
   }
@@ -97,7 +95,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[7] = tmp7;
   cResult[8] = found;
   tmp13 = found;
-}) : (() => {
+}) : (function useAndroidAndLegacyIOSPremiumTrialOfferCandidates() {
   let obj = useStateFromStores;
   const items = [IAPStore];
   const offerIds = obj.useStateFromStoresObject(items, () => {

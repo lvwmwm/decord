@@ -1,23 +1,23 @@
-// Module ID: 6902
-// Function ID: 6903
+// Module ID: 7091
+// Function ID: 7092
 // Name: useGetDismissibleContent
-// Dependencies: [32, 19, 1231, 4705, 2039, 2042, 1085, 1095, 1252, 2036, 6903, 2037, 504, 558, 576, 4726, 2035, 4704, 11, 2]
+// Dependencies: [32, 19, 1243, 4899, 2051, 2055, 1085, 1095, 1264, 2048, 7092, 2049, 504, 558, 576, 4920, 2047, 4898, 11, 2]
 
-// Module 6902 (useGetDismissibleContent)
+// Module 7091 (useGetDismissibleContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Uint8ArrayUtils from "Uint8ArrayUtils" /* 2035 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2037 */;
-import DismissibleContentShownStateStore2 from "DismissibleContentShownStateStore" /* 2042 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4704 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import Uint8ArrayUtils from "Uint8ArrayUtils" /* 2047 */;
+import dismissible_content from "dismissible_content" /* 2048 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2049 */;
+import DismissibleContentShownStateStore2 from "DismissibleContentShownStateStore" /* 2055 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4898 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 2039 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 2051 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ function useGetVisibleContent(found1, stateFromStores, groupName, version, snowf
   let closure_6 = tmp6;
   let result = null != found1;
   if (result) {
-    const tmp2Result = tmp2(2037);
+    const tmp2Result = tmp2(2049);
     result = tmp2Result.isDismissibleContentBlockedByOverlay(found1, first, tmp6);
   }
   const items = [ref];
@@ -160,7 +160,7 @@ const AnalyticEvents = Constants.AnalyticEvents;
 const UserSettingsTypes = UserSettingsConstants.UserSettingsTypes;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_13 = {};
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, groupName) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetDismissibleContent(arg0, groupName) {
   let found1;
   let settings;
   let tmp4;
@@ -239,7 +239,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, groupName) => 
           }
         }
         items2[1] = tmp20;
-        class N {
+        class T {
           constructor(dismissAction, forceTrack) {
             if (null != found1) {
               const obj2 = { dismissAction, groupName, guildId: stateFromStores1, forceTrack };
@@ -254,7 +254,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, groupName) => 
         tmp21 = items2;
       }
     }
-    class N {
+    class T {
       constructor(dismissAction, forceTrack) {
         if (null != found1) {
           const obj2 = { dismissAction, groupName, guildId: stateFromStores1, forceTrack };
@@ -266,14 +266,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, groupName) => 
     cResult[11] = tmp12;
     cResult[12] = groupName;
     cResult[13] = stateFromStores1;
-    cResult[14] = N;
-    tmp20 = N;
+    cResult[14] = T;
+    tmp20 = T;
   }
   found1 = null;
   if (UserSettingsProtoStore.hasLoaded(UserSettingsTypes.PRELOADED_USER_SETTINGS)) {
     let tmp16;
     if (cResult[7] !== stateFromStores) {
-      const fn2 = function _(CHANNEL_NOTICE_INVITE) {
+      const fn3 = function v(CHANNEL_NOTICE_INVITE) {
         let tmp2 = null == stateFromStores;
         if (!tmp2) {
           const obj = Uint8ArrayUtils;
@@ -287,8 +287,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, groupName) => 
           return guildId.getGuildId();
         }
       }
-      cResult[8] = fn2;
-      class N {
+      cResult[8] = fn3;
+      class T {
         constructor(dismissAction, forceTrack) {
           if (null != found1) {
             const obj2 = { dismissAction, groupName, guildId: stateFromStores1, forceTrack };
@@ -308,21 +308,20 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, groupName) => 
       }
     }
   } else if (null != stateFromStores) {
+    let tmp14;
     if (cResult[9] !== stateFromStores) {
-      class T {
-        constructor(CHANNEL_NOTICE_INVITE) {
-          const obj = Uint8ArrayUtils;
-          return !obj.hasBit(stateFromStores, CHANNEL_NOTICE_INVITE);
-        }
-      }
+      const fn2 = function _(CHANNEL_NOTICE_INVITE) {
+        const obj = Uint8ArrayUtils;
+        return !obj.hasBit(stateFromStores, CHANNEL_NOTICE_INVITE);
+      };
       cResult[9] = stateFromStores;
       class C {
         constructor() {
           return guildId.getGuildId();
         }
       }
-      cResult[10] = T;
-      class N {
+      cResult[10] = fn2;
+      class T {
         constructor(dismissAction, forceTrack) {
           if (null != found1) {
             const obj2 = { dismissAction, groupName, guildId: stateFromStores1, forceTrack };
@@ -332,12 +331,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, groupName) => 
         }
       }
     } else {
-      class T {
-        constructor(CHANNEL_NOTICE_INVITE) {
-          const obj = Uint8ArrayUtils;
-          return !obj.hasBit(stateFromStores, CHANNEL_NOTICE_INVITE);
-        }
-      }
+      tmp14 = cResult[10];
     }
     found1 = newUserDismissibleContent.find(tmp14);
     class C {
@@ -349,7 +343,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, groupName) => 
   cResult[4] = stateFromStores;
   cResult[5] = newUserDismissibleContent;
   cResult[6] = tmp13;
-}) : ((arg0, groupName) => {
+}) : (function useGetDismissibleContent(arg0, groupName) {
   let settings;
   let stateFromStores1;
   let tmp3;
@@ -403,7 +397,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, groupName) => 
   return items2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetRecurringDismissibleContentState(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -446,7 +440,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useGetRecurringDismissibleContentState(arg0) {
   let closure_0;
   _require = arg0;
   const items = [UserSettingsProtoStore];
@@ -471,7 +465,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, version, groupName) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetVersionedDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, version, groupName) {
   let tmp4;
   let tmp5;
   _require = version;
@@ -521,7 +515,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
           }
         }
       }
-      const fn2 = function _(dismissAction, forceTrack) {
+      const fn2 = function v(dismissAction, forceTrack) {
         if (null != PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE) {
           const obj2 = { dismissAction, groupName, guildId: stateFromStores, forceTrack, version };
           const obj = DismissibleContentUtils;
@@ -539,7 +533,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
   dependencyMap = null;
   let tmp9 = null;
   if (null != PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE) {
-    const tmpResult2 = tmp(4726);
+    const tmpResult2 = tmp(4920);
     let result = tmpResult2.disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE);
     if (UserSettingsProtoStore.hasLoaded(UserSettingsTypes.PRELOADED_USER_SETTINGS)) {
       let tmp15 = null;
@@ -571,7 +565,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
   cResult[3] = lastDismissedVersion;
   cResult[4] = version;
   cResult[5] = tmp9;
-}) : ((PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, version, groupName) => {
+}) : (function useGetVersionedDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, version, groupName) {
   let stateFromStores;
   _require = version;
   const lastDismissedVersion = closure_14(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE).lastDismissedVersion;
@@ -623,7 +617,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
   return items1;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, cooldownDurationMs, groupName) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetTimeRecurringDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, cooldownDurationMs, groupName) {
   let lastDismissedAtMs;
   let numTimesDismissed;
   let stateFromStores;
@@ -676,7 +670,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
             tmp19 = items1;
           }
         }
-        const fn2 = function _(dismissAction, forceTrack) {
+        const fn2 = function v(dismissAction, forceTrack) {
           if (null != PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE) {
             const obj2 = { dismissAction, groupName, guildId: stateFromStores, forceTrack };
             const obj = DismissibleContentUtils;
@@ -707,7 +701,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
   cResult[4] = numTimesDismissed;
   cResult[5] = cooldownDurationMs;
   cResult[6] = tmp10;
-}) : ((PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, cooldownDurationMs, groupName) => {
+}) : (function useGetTimeRecurringDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, cooldownDurationMs, groupName) {
   let lastDismissedAtMs;
   let numTimesDismissed;
   _require = groupName;
@@ -721,7 +715,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
   const tmp2 = _require;
   if (null != PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE) {
     let tmp10 = null;
-    const tmp2Result = tmp2(4726);
+    const tmp2Result = tmp2(4920);
     if (canShowTimeRecurringContent(!tmp2Result.disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE), lastDismissedAtMs, numTimesDismissed, cooldownDurationMs)) {
       tmp10 = PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE;
     }
@@ -740,7 +734,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
   return items1;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, arg1, groupName) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetSnowflakeBoundDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, arg1, groupName) {
   let closure_0;
   let tmp4;
   let tmp5;
@@ -792,7 +786,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
           }
         }
       }
-      const fn2 = function _(dismissAction, forceTrack) {
+      const fn2 = function v(dismissAction, forceTrack) {
         if (null != PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE) {
           const obj2 = { dismissAction, groupName, guildId: stateFromStores, forceTrack };
           const obj = DismissibleContentUtils;
@@ -810,7 +804,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
   dependencyMap = null;
   let tmp9 = null;
   if (null != PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE) {
-    const tmpResult2 = tmp(4726);
+    const tmpResult2 = tmp(4920);
     let result = tmpResult2.disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE);
     if (UserSettingsProtoStore.hasLoaded(UserSettingsTypes.PRELOADED_USER_SETTINGS)) {
       let tmp16 = null;
@@ -844,7 +838,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
   cResult[3] = lastDismissedObjectId;
   cResult[4] = arg1;
   cResult[5] = tmp9;
-}) : ((PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, arg1, groupName) => {
+}) : (function useGetSnowflakeBoundDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, arg1, groupName) {
   let closure_0;
   let stateFromStores;
   _require = arg1;
@@ -899,7 +893,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
   return items1;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, arg1, stateFromStores, groupName) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetSnowflakeBoundGuildDismissibleContent_UNSAFE(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, arg1, stateFromStores, groupName) {
   let closure_0;
   let first;
   let tmp6;
@@ -972,7 +966,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
           }
         }
       }
-      const fn2 = function _(dismissAction, forceTrack) {
+      const fn2 = function v(dismissAction, forceTrack) {
         if (null != PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE) {
           const obj = DismissibleContentUnsafeUtils;
           const obj2 = { dismissAction, groupName, guildId, forceTrack };
@@ -990,7 +984,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
   closure_3 = null;
   let tmp13 = null;
   if (null != PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE) {
-    const tmpResult2 = tmp(4726);
+    const tmpResult2 = tmp(4920);
     let result = tmpResult2.disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE);
     if (UserSettingsProtoStore.hasLoaded(UserSettingsTypes.PRELOADED_USER_SETTINGS)) {
       let tmp20 = null;
@@ -1024,7 +1018,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
   cResult[4] = prop;
   cResult[5] = arg1;
   cResult[6] = tmp13;
-}) : ((PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, arg1, stateFromStores, groupName) => {
+}) : (function useGetSnowflakeBoundGuildDismissibleContent_UNSAFE(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, arg1, stateFromStores, groupName) {
   let closure_0;
   let lastDismissedObjectId;
   _require = arg1;
@@ -1053,7 +1047,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
   let closure_3 = null;
   let tmp7 = null;
   if (null != PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE) {
-    const tmpResult = tmp(4726);
+    const tmpResult = tmp(4920);
     let result = tmpResult.disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE);
     if (obj2.hasLoaded(UserSettingsTypes.PRELOADED_USER_SETTINGS)) {
       let tmp13 = null;
@@ -1095,7 +1089,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
   return items1;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((THIRD_PARTY_OUTBOUND_PROMO_NAGBAR, cooldownDurationMs, id, groupName) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetTimeRecurringSnowflakeBoundDismissibleContent(THIRD_PARTY_OUTBOUND_PROMO_NAGBAR, cooldownDurationMs, id, groupName) {
   let tmp4;
   let tmp5;
   _require = id;
@@ -1162,7 +1156,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((THIRD_PARTY_OUTBOUND
   dependencyMap = null;
   let result = null == THIRD_PARTY_OUTBOUND_PROMO_NAGBAR;
   if (!result) {
-    const tmpResult2 = tmp(2037);
+    const tmpResult2 = tmp(2049);
     result = tmpResult2.isTimeRecurringSnowflakeBoundDismissibleContentDismissed(THIRD_PARTY_OUTBOUND_PROMO_NAGBAR, id, cooldownDurationMs);
   }
   let tmp10 = null;
@@ -1174,7 +1168,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((THIRD_PARTY_OUTBOUND
   cResult[3] = id;
   cResult[4] = cooldownDurationMs;
   cResult[5] = tmp10;
-}) : ((THIRD_PARTY_OUTBOUND_PROMO_NAGBAR, cooldownDurationMs, id, groupName) => {
+}) : (function useGetTimeRecurringSnowflakeBoundDismissibleContent(THIRD_PARTY_OUTBOUND_PROMO_NAGBAR, cooldownDurationMs, id, groupName) {
   let stateFromStores;
   _require = id;
   const tmp = _require;
@@ -1205,7 +1199,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((THIRD_PARTY_OUTBOUND
   return items1;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, stateFromStores, groupName) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetSingleUseGuildDismissibleContent_UNSAFE(arg0, stateFromStores, groupName) {
   let first;
   let found1;
   let tmp6;
@@ -1290,11 +1284,11 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, stateFromStore
   if (UserSettingsProtoStore.hasLoaded(UserSettingsTypes.PRELOADED_USER_SETTINGS)) {
     let tmp12;
     if (cResult[6] !== stateFromStores) {
-      const fn3 = function f(arg0) {
+      const fn2 = function f(arg0) {
         return null == stateFromStores || null == tmp[arg0] || false === tmp[arg0].dismissed;
       };
       cResult[6] = stateFromStores;
-      cResult[7] = fn3;
+      cResult[7] = fn2;
       class E {
         constructor(dismissAction, forceTrack) {
           if (null != found1) {
@@ -1313,13 +1307,14 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, stateFromStore
   } else {
     tmp9 = null;
     if (null != stateFromStores) {
-      let tmp10;
       if (cResult[8] !== stateFromStores) {
-        const fn2 = function v(arg0) {
-          return null == stateFromStores[arg0] || false === stateFromStores[arg0].dismissed;
-        };
+        class G {
+          constructor(arg0) {
+            return null == stateFromStores[arg0] || false === stateFromStores[arg0].dismissed;
+          }
+        }
         cResult[8] = stateFromStores;
-        cResult[9] = fn2;
+        cResult[9] = G;
         class E {
           constructor(dismissAction, forceTrack) {
             if (null != found1) {
@@ -1330,7 +1325,11 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, stateFromStore
           }
         }
       } else {
-        tmp10 = cResult[9];
+        class G {
+          constructor(arg0) {
+            return null == stateFromStores[arg0] || false === stateFromStores[arg0].dismissed;
+          }
+        }
       }
       found1 = newUserDismissibleContent.find(tmp10);
       tmp9 = found1;
@@ -1339,7 +1338,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, stateFromStore
   cResult[3] = stateFromStores;
   cResult[4] = newUserDismissibleContent;
   cResult[5] = tmp9;
-}) : ((arg0, stateFromStores, groupName) => {
+}) : (function useGetSingleUseGuildDismissibleContent_UNSAFE(arg0, stateFromStores, groupName) {
   let tmp2;
   _require = stateFromStores;
   let obj = require("get initialized");
@@ -1371,7 +1370,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, stateFromStore
   return items1;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, stateFromStores, cooldownDurationMs, groupName) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetTimeRecurringGuildDismissibleContent_UNSAFE(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, stateFromStores, cooldownDurationMs, groupName) {
   let first;
   let tmp6;
   _require = stateFromStores;
@@ -1445,7 +1444,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
             tmp28 = items1;
           }
         }
-        const fn2 = function _(dismissAction, forceTrack) {
+        const fn2 = function v(dismissAction, forceTrack) {
           if (null != PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE) {
             const obj2 = { dismissAction, groupName, guildId, forceTrack };
             const obj = DismissibleContentUnsafeUtils;
@@ -1463,7 +1462,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
   dependencyMap = null;
   let tmp15 = null;
   if (null != PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE) {
-    const tmpResult2 = tmp(4726);
+    const tmpResult2 = tmp(4920);
     let lastDismissedAtMs1;
     const tmp16 = !tmpResult2.disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE);
     if (tmp8 != null) {
@@ -1485,7 +1484,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
   cResult[5] = numTimesDismissed;
   cResult[6] = cooldownDurationMs;
   cResult[7] = tmp15;
-}) : ((PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, stateFromStores, cooldownDurationMs, groupName) => {
+}) : (function useGetTimeRecurringGuildDismissibleContent_UNSAFE(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, stateFromStores, cooldownDurationMs, groupName) {
   let numTimesDismissed;
   _require = stateFromStores;
   const tmp = _require;
@@ -1510,7 +1509,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
   dependencyMap = null;
   let tmp7 = null;
   if (null != PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE) {
-    const tmpResult = tmp(4726);
+    const tmpResult = tmp(4920);
     let lastDismissedAtMs;
     const tmp8 = !tmpResult.disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE);
     if (tmp4 != null) {
@@ -1535,7 +1534,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
   return items1;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDangerouslyPeekDismissibleContents(arr) {
   let settings;
   let stateFromStores;
   let tmp4;
@@ -1591,7 +1590,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   cResult[3] = stateFromStores;
   cResult[4] = found;
   tmp8 = found;
-}) : ((arr) => {
+}) : (function useDangerouslyPeekDismissibleContents(arr) {
   let closure_0;
   let settings;
   let obj = require("get initialized");

@@ -1,9 +1,9 @@
-// Module ID: 4914
-// Function ID: 4915
+// Module ID: 5110
+// Function ID: 5111
 // Name: SessionsStore
 // Dependencies: [502, 504, 12, 584, 2]
 
-// Module 4914 (SessionsStore)
+// Module 5110 (SessionsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

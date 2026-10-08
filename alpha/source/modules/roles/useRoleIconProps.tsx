@@ -1,14 +1,14 @@
-// Module ID: 6692
-// Function ID: 6693
+// Module ID: 6869
+// Function ID: 6870
 // Name: useRoleIconProps
-// Dependencies: [19, 2106, 2074, 558, 576, 504, 6693, 2]
+// Dependencies: [19, 2118, 2086, 558, 576, 504, 6870, 2]
 // Exports: computeRoleIconRole, getRoleIconProps
 
-// Module 6692 (useRoleIconProps)
-import RoleIconUtils from "RoleIconUtils" /* 6693 */;
+// Module 6869 (useRoleIconProps)
+import RoleIconUtils from "RoleIconUtils" /* 6870 */;
 import react from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildRoleStore from "GuildRoleStore" /* 2118 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRoleIconProps(guildId) {
   let first;
   let role;
   let roleId;
@@ -74,7 +74,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
     }
   }
-  const fn = function u() {
+  const fn = function c() {
     let tmp3 = role;
     const obj = GuildStore;
     if (GuildStore !== undefined) {
@@ -113,7 +113,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[6] = items1;
   tmp8 = items1;
   tmp7 = fn;
-}) : ((guildId) => {
+}) : (function useRoleIconProps(guildId) {
   guildId = guildId.guildId;
   const roleId = guildId.roleId;
   let num = guildId.size;
@@ -171,7 +171,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   }, items2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, role) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRoleIconPropsForPreview(guildId, role) {
   let first;
   _require = guildId;
   dependencyMap = role;
@@ -213,7 +213,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, role) => {
     }
     return tmp10;
   }
-  const fn = function c() {
+  const fn = function t() {
     let guild;
     let roleId;
     const obj = { guildId, role };
@@ -253,7 +253,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, role) => {
   cResult[4] = items1;
   tmp8 = items1;
   tmp7 = fn;
-}) : ((guildId, role) => {
+}) : (function useRoleIconPropsForPreview(guildId, role) {
   _require = guildId;
   dependencyMap = role;
   let obj = require("get initialized");

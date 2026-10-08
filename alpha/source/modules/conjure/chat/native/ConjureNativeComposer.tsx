@@ -1,46 +1,46 @@
-// Module ID: 16771
-// Function ID: 16772
+// Module ID: 17046
+// Function ID: 17047
 // Name: ConjureNativeComposer
-// Dependencies: [5, 32, 19, 17, 4885, 12923, 16757, 21, 587, 4896, 1126, 3753, 558, 576, 4586, 4809, 10373, 8735, 11616, 16744, 504, 6757, 16743, 11033, 11337, 9584, 11034, 15380, 4860, 16618, 11882, 16730, 14824, 4847, 11890, 4892, 10702, 7590, 11895, 4595, 2]
+// Dependencies: [5, 32, 19, 17, 5079, 13072, 17032, 21, 587, 5090, 1126, 3827, 558, 576, 4778, 5003, 9970, 12364, 11680, 17019, 504, 6933, 17018, 12779, 11604, 10233, 12780, 15642, 5054, 16877, 11954, 17005, 15085, 5041, 11962, 5086, 10290, 9297, 11968, 4787, 2]
 
-// Module 16771 (ConjureNativeComposer)
+// Module 17046 (ConjureNativeComposer)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import _modDef3753 from "module_3753" /* 3753 */;
-import useToken from "useToken" /* 4586 */;
-import SendMessageIcon from "SendMessageIcon" /* 4847 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4860 */;
-import ConjureTypes from "ConjureTypes" /* 6757 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 8735 */;
-import MusicIcon from "MusicIcon" /* 9584 */;
-import ImageCarousel from "ImageCarousel" /* 10373 */;
-import PlusLargeIcon from "PlusLargeIcon" /* 10702 */;
-import keepLocalCopy from "keepLocalCopy" /* 11034 */;
-import ImagesIcon from "ImagesIcon" /* 11337 */;
-import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 11616 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 11882 */;
-import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 11890 */;
-import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 14824 */;
-import FileUpIcon from "FileUpIcon" /* 15380 */;
-import ConjureModelSettingsSheet from "ConjureModelSettingsSheet" /* 16618 */;
-import StopIcon from "StopIcon" /* 16730 */;
-import conjurePickedFiles from "conjurePickedFiles" /* 16743 */;
-import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 16744 */;
+import _modDef3827 from "module_3827" /* 3827 */;
+import useToken from "useToken" /* 4778 */;
+import SendMessageIcon from "SendMessageIcon" /* 5041 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5054 */;
+import ConjureTypes from "ConjureTypes" /* 6933 */;
+import ImageCarousel from "ImageCarousel" /* 9970 */;
+import MusicIcon from "MusicIcon" /* 10233 */;
+import PlusLargeIcon from "PlusLargeIcon" /* 10290 */;
+import ImagesIcon from "ImagesIcon" /* 11604 */;
+import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 11680 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 11954 */;
+import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 11962 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 12364 */;
+import keepLocalCopy from "keepLocalCopy" /* 12780 */;
+import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 15085 */;
+import FileUpIcon from "FileUpIcon" /* 15642 */;
+import ConjureModelSettingsSheet from "ConjureModelSettingsSheet" /* 16877 */;
+import StopIcon from "StopIcon" /* 17005 */;
+import conjurePickedFiles from "conjurePickedFiles" /* 17018 */;
+import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 17019 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import ConjureConnectionStore_mod from "ConjureConnectionStore" /* 12923 */;
-import ConjureComposerDraftStore_mod from "ConjureComposerDraftStore" /* 16757 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import ConjureConnectionStore_mod from "ConjureConnectionStore" /* 13072 */;
+import ConjureComposerDraftStore_mod from "ConjureComposerDraftStore" /* 17032 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const ConjureModelSettingsSheetDefault = ConjureModelSettingsSheet;
-let _require, c1, closure_1, closure_2, getItemKey, projectId, types;
+let _require, c1, closure_1, closure_2, getItemKey, types;
 
 let StyleSheet;
 let closure_12;
@@ -64,12 +64,12 @@ function draftAccessibilityLabel(draft) {
   if ("uploading" === draft.status) {
     const intl3 = intl4.intl;
     const obj3 = { name: draft.name };
-    formatToPlainStringResult = intl3.formatToPlainString(_modDef3753.MWTYwv, obj3);
+    formatToPlainStringResult = intl3.formatToPlainString(_modDef3827.MWTYwv, obj3);
   } else if (null != draft.errorText) {
     const intl2 = intl4.intl;
     const obj5 = { name: null, error: null };
     ({ name: obj2.name, errorText: obj2.error } = draft);
-    formatToPlainStringResult = intl2.formatToPlainString(_modDef3753.U2WbGx, obj5);
+    formatToPlainStringResult = intl2.formatToPlainString(_modDef3827.U2WbGx, obj5);
   } else {
     const intl = intl4.intl;
     const obj = { name: draft.name };
@@ -98,7 +98,7 @@ obj8 = { backgroundColor: nativeDefault.colors.CHAT_INPUT_SEND_BUTTON_ACTIVE_BAC
 obj9 = { tintColor: nativeDefault.colors.CHAT_INPUT_SEND_BUTTON_ICON_ACTIVE_TINT };
 let closure_15 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((draft) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativeDraftTile(draft) {
   let WarningIcon;
   let obj6;
   let obj8;
@@ -213,7 +213,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((draft) => {
       if ("error" === draft.status) {
         const obj7 = { style: tmp4.draftOverlay, children: unpackModuleId(WarningIcon, obj8) };
         obj8 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-        WarningIcon = tmp(4809).WarningIcon;
+        WarningIcon = tmp(5003).WarningIcon;
         tmp21 = unpackModuleId(metroImportDefault, obj7);
       }
     }
@@ -230,7 +230,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((draft) => {
   cResult[1] = onRemove;
   cResult[2] = fn;
   tmp7 = fn;
-}) : ((draft) => {
+}) : (function ConjureNativeDraftTile(draft) {
   let WarningIcon;
   let contentType;
   let contentType2;
@@ -266,14 +266,14 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((draft) => {
     if ("error" === draft.status) {
       const obj7 = { style: tmp.draftOverlay, children: unpackModuleId(WarningIcon, obj13) };
       obj13 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-      WarningIcon = tmp2(4809).WarningIcon;
+      WarningIcon = tmp2(5003).WarningIcon;
       tmp7Result = tmp7(metroImportDefault, obj7);
     }
   }
   return unpackModuleId(ImageCarouselTile, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativeComposer(projectId) {
   let closure_11;
   let closure_13;
   let closure_9;
@@ -516,7 +516,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
                 const intl = tmp10(1126).intl;
                 const formatToPlainString = intl.formatToPlainString;
                 let obj = { count: ConjureTypes.CONJURE_MAX_ATTACHMENTS_PER_MESSAGE };
-                const Q0aCVZ = _modDef3753.Q0aCVZ;
+                const Q0aCVZ = _modDef3827.Q0aCVZ;
                 closure_12(formatToPlainString(Q0aCVZ, obj));
                 const _Math = Math;
                 const substr = arr.slice(0, Math.max(0, diff));
@@ -575,7 +575,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
                 const intl = tmp10(1126).intl;
                 const formatToPlainString = intl.formatToPlainString;
                 let obj = { count: ConjureTypes.CONJURE_MAX_ATTACHMENTS_PER_MESSAGE };
-                const Q0aCVZ = _modDef3753.Q0aCVZ;
+                const Q0aCVZ = _modDef3827.Q0aCVZ;
                 closure_12(formatToPlainString(Q0aCVZ, obj));
                 const _Math = Math;
                 const substr = arr.slice(0, Math.max(0, diff));
@@ -634,7 +634,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
                 const intl = tmp10(1126).intl;
                 const formatToPlainString = intl.formatToPlainString;
                 let obj = { count: ConjureTypes.CONJURE_MAX_ATTACHMENTS_PER_MESSAGE };
-                const Q0aCVZ = _modDef3753.Q0aCVZ;
+                const Q0aCVZ = _modDef3827.Q0aCVZ;
                 closure_12(formatToPlainString(Q0aCVZ, obj));
                 const _Math = Math;
                 const substr = arr.slice(0, Math.max(0, diff));
@@ -694,7 +694,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
                 const intl = tmp10(1126).intl;
                 const formatToPlainString = intl.formatToPlainString;
                 let obj = { count: ConjureTypes.CONJURE_MAX_ATTACHMENTS_PER_MESSAGE };
-                const Q0aCVZ = _modDef3753.Q0aCVZ;
+                const Q0aCVZ = _modDef3827.Q0aCVZ;
                 closure_12(formatToPlainString(Q0aCVZ, obj));
                 const _Math = Math;
                 const substr = arr.slice(0, Math.max(0, diff));
@@ -753,7 +753,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
                 const intl = tmp10(1126).intl;
                 const formatToPlainString = intl.formatToPlainString;
                 let obj = { count: ConjureTypes.CONJURE_MAX_ATTACHMENTS_PER_MESSAGE };
-                const Q0aCVZ = _modDef3753.Q0aCVZ;
+                const Q0aCVZ = _modDef3827.Q0aCVZ;
                 closure_12(formatToPlainString(Q0aCVZ, obj));
                 const _Math = Math;
                 const substr = arr.slice(0, Math.max(0, diff));
@@ -849,11 +849,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
             }
           }
         });
-        const fn2 = function() {
+        function t15() {
           return closure_0(...arguments);
-        };
+        }
         cResult[23] = tmp47;
-        cResult[24] = fn2;
+        cResult[24] = t15;
       } else {
         class Ie {
           constructor(arr) {
@@ -866,7 +866,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
                 const intl = tmp10(1126).intl;
                 const formatToPlainString = intl.formatToPlainString;
                 let obj = { count: ConjureTypes.CONJURE_MAX_ATTACHMENTS_PER_MESSAGE };
-                const Q0aCVZ = _modDef3753.Q0aCVZ;
+                const Q0aCVZ = _modDef3827.Q0aCVZ;
                 closure_12(formatToPlainString(Q0aCVZ, obj));
                 const _Math = Math;
                 const substr = arr.slice(0, Math.max(0, diff));
@@ -927,7 +927,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
                 const intl = tmp10(1126).intl;
                 const formatToPlainString = intl.formatToPlainString;
                 let obj = { count: ConjureTypes.CONJURE_MAX_ATTACHMENTS_PER_MESSAGE };
-                const Q0aCVZ = _modDef3753.Q0aCVZ;
+                const Q0aCVZ = _modDef3827.Q0aCVZ;
                 closure_12(formatToPlainString(Q0aCVZ, obj));
                 const _Math = Math;
                 const substr = arr.slice(0, Math.max(0, diff));
@@ -984,7 +984,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
                   const intl = tmp10(1126).intl;
                   const formatToPlainString = intl.formatToPlainString;
                   let obj = { count: ConjureTypes.CONJURE_MAX_ATTACHMENTS_PER_MESSAGE };
-                  const Q0aCVZ = _modDef3753.Q0aCVZ;
+                  const Q0aCVZ = _modDef3827.Q0aCVZ;
                   closure_12(formatToPlainString(Q0aCVZ, obj));
                   const _Math = Math;
                   const substr = arr.slice(0, Math.max(0, diff));
@@ -1102,11 +1102,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
               }
             })();
           });
-          let fn3 = function() {
+          function t17() {
             return closure_0(...arguments);
-          };
+          }
           cResult[28] = tmp47;
-          cResult[29] = fn3;
+          cResult[29] = t17;
         } else {
           class Ie {
             constructor(arr) {
@@ -1119,7 +1119,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
                   const intl = tmp10(1126).intl;
                   const formatToPlainString = intl.formatToPlainString;
                   let obj = { count: ConjureTypes.CONJURE_MAX_ATTACHMENTS_PER_MESSAGE };
-                  const Q0aCVZ = _modDef3753.Q0aCVZ;
+                  const Q0aCVZ = _modDef3827.Q0aCVZ;
                   closure_12(formatToPlainString(Q0aCVZ, obj));
                   const _Math = Math;
                   const substr = arr.slice(0, Math.max(0, diff));
@@ -1165,7 +1165,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
             }
           }
         }
-        fn3 = tmp52;
+        t17 = tmp52;
         const _Symbol3 = Symbol;
         if (cResult[30] === Symbol.for("react.memo_cache_sentinel")) {
           class Ie {
@@ -1179,7 +1179,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
                   const intl = tmp10(1126).intl;
                   const formatToPlainString = intl.formatToPlainString;
                   let obj = { count: ConjureTypes.CONJURE_MAX_ATTACHMENTS_PER_MESSAGE };
-                  const Q0aCVZ = _modDef3753.Q0aCVZ;
+                  const Q0aCVZ = _modDef3827.Q0aCVZ;
                   closure_12(formatToPlainString(Q0aCVZ, obj));
                   const _Math = Math;
                   const substr = arr.slice(0, Math.max(0, diff));
@@ -1239,7 +1239,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
                   const intl = tmp10(1126).intl;
                   const formatToPlainString = intl.formatToPlainString;
                   let obj = { count: ConjureTypes.CONJURE_MAX_ATTACHMENTS_PER_MESSAGE };
-                  const Q0aCVZ = _modDef3753.Q0aCVZ;
+                  const Q0aCVZ = _modDef3827.Q0aCVZ;
                   closure_12(formatToPlainString(Q0aCVZ, obj));
                   const _Math = Math;
                   const substr = arr.slice(0, Math.max(0, diff));
@@ -1297,7 +1297,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
                   const intl = tmp10(1126).intl;
                   const formatToPlainString = intl.formatToPlainString;
                   let obj = { count: ConjureTypes.CONJURE_MAX_ATTACHMENTS_PER_MESSAGE };
-                  const Q0aCVZ = _modDef3753.Q0aCVZ;
+                  const Q0aCVZ = _modDef3827.Q0aCVZ;
                   closure_12(formatToPlainString(Q0aCVZ, obj));
                   const _Math = Math;
                   const substr = arr.slice(0, Math.max(0, diff));
@@ -1359,7 +1359,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
                   const intl = tmp10(1126).intl;
                   const formatToPlainString = intl.formatToPlainString;
                   let obj = { count: ConjureTypes.CONJURE_MAX_ATTACHMENTS_PER_MESSAGE };
-                  const Q0aCVZ = _modDef3753.Q0aCVZ;
+                  const Q0aCVZ = _modDef3827.Q0aCVZ;
                   closure_12(formatToPlainString(Q0aCVZ, obj));
                   const _Math = Math;
                   const substr = arr.slice(0, Math.max(0, diff));
@@ -1418,7 +1418,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
                   const intl = tmp10(1126).intl;
                   const formatToPlainString = intl.formatToPlainString;
                   let obj = { count: ConjureTypes.CONJURE_MAX_ATTACHMENTS_PER_MESSAGE };
-                  const Q0aCVZ = _modDef3753.Q0aCVZ;
+                  const Q0aCVZ = _modDef3827.Q0aCVZ;
                   closure_12(formatToPlainString(Q0aCVZ, obj));
                   const _Math = Math;
                   const substr = arr.slice(0, Math.max(0, diff));
@@ -1478,7 +1478,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
                   const intl = tmp10(1126).intl;
                   const formatToPlainString = intl.formatToPlainString;
                   let obj = { count: ConjureTypes.CONJURE_MAX_ATTACHMENTS_PER_MESSAGE };
-                  const Q0aCVZ = _modDef3753.Q0aCVZ;
+                  const Q0aCVZ = _modDef3827.Q0aCVZ;
                   closure_12(formatToPlainString(Q0aCVZ, obj));
                   const _Math = Math;
                   const substr = arr.slice(0, Math.max(0, diff));
@@ -1536,7 +1536,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
                   const intl = tmp10(1126).intl;
                   const formatToPlainString = intl.formatToPlainString;
                   let obj = { count: ConjureTypes.CONJURE_MAX_ATTACHMENTS_PER_MESSAGE };
-                  const Q0aCVZ = _modDef3753.Q0aCVZ;
+                  const Q0aCVZ = _modDef3827.Q0aCVZ;
                   closure_12(formatToPlainString(Q0aCVZ, obj));
                   const _Math = Math;
                   const substr = arr.slice(0, Math.max(0, diff));
@@ -1585,7 +1585,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
           tmp60[1] = tmp(tmp2[25]).MusicIcon;
           tmp60[2] = function action() {
             const items = [keepLocalCopy.types.audio];
-            return fn3(items);
+            return t17(items);
           };
           cResult[34] = tmp52;
           cResult[35] = tmp60;
@@ -1601,7 +1601,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
                   const intl = tmp10(1126).intl;
                   const formatToPlainString = intl.formatToPlainString;
                   let obj = { count: ConjureTypes.CONJURE_MAX_ATTACHMENTS_PER_MESSAGE };
-                  const Q0aCVZ = _modDef3753.Q0aCVZ;
+                  const Q0aCVZ = _modDef3827.Q0aCVZ;
                   closure_12(formatToPlainString(Q0aCVZ, obj));
                   const _Math = Math;
                   const substr = arr.slice(0, Math.max(0, diff));
@@ -1660,7 +1660,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
                   const intl = tmp10(1126).intl;
                   const formatToPlainString = intl.formatToPlainString;
                   let obj = { count: ConjureTypes.CONJURE_MAX_ATTACHMENTS_PER_MESSAGE };
-                  const Q0aCVZ = _modDef3753.Q0aCVZ;
+                  const Q0aCVZ = _modDef3827.Q0aCVZ;
                   closure_12(formatToPlainString(Q0aCVZ, obj));
                   const _Math = Math;
                   const substr = arr.slice(0, Math.max(0, diff));
@@ -1720,7 +1720,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
                   const intl = tmp10(1126).intl;
                   const formatToPlainString = intl.formatToPlainString;
                   let obj = { count: ConjureTypes.CONJURE_MAX_ATTACHMENTS_PER_MESSAGE };
-                  const Q0aCVZ = _modDef3753.Q0aCVZ;
+                  const Q0aCVZ = _modDef3827.Q0aCVZ;
                   closure_12(formatToPlainString(Q0aCVZ, obj));
                   const _Math = Math;
                   const substr = arr.slice(0, Math.max(0, diff));
@@ -1778,7 +1778,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
                   const intl = tmp10(1126).intl;
                   const formatToPlainString = intl.formatToPlainString;
                   let obj = { count: ConjureTypes.CONJURE_MAX_ATTACHMENTS_PER_MESSAGE };
-                  const Q0aCVZ = _modDef3753.Q0aCVZ;
+                  const Q0aCVZ = _modDef3827.Q0aCVZ;
                   closure_12(formatToPlainString(Q0aCVZ, obj));
                   const _Math = Math;
                   const substr = arr.slice(0, Math.max(0, diff));
@@ -1826,7 +1826,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
           tmp64[0] = tmp61;
           tmp64[1] = tmp(tmp2[27]).FileUpIcon;
           tmp64[2] = function action() {
-            return fn3();
+            return t17();
           };
           cResult[37] = tmp52;
           cResult[38] = tmp64;
@@ -1842,7 +1842,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
                   const intl = tmp10(1126).intl;
                   const formatToPlainString = intl.formatToPlainString;
                   let obj = { count: ConjureTypes.CONJURE_MAX_ATTACHMENTS_PER_MESSAGE };
-                  const Q0aCVZ = _modDef3753.Q0aCVZ;
+                  const Q0aCVZ = _modDef3827.Q0aCVZ;
                   closure_12(formatToPlainString(Q0aCVZ, obj));
                   const _Math = Math;
                   const substr = arr.slice(0, Math.max(0, diff));
@@ -1900,7 +1900,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
                   const intl = tmp10(1126).intl;
                   const formatToPlainString = intl.formatToPlainString;
                   let obj = { count: ConjureTypes.CONJURE_MAX_ATTACHMENTS_PER_MESSAGE };
-                  const Q0aCVZ = _modDef3753.Q0aCVZ;
+                  const Q0aCVZ = _modDef3827.Q0aCVZ;
                   closure_12(formatToPlainString(Q0aCVZ, obj));
                   const _Math = Math;
                   const substr = arr.slice(0, Math.max(0, diff));
@@ -2008,7 +2008,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   cResult[7] = onDraftHasTextChange;
   cResult[8] = L;
   cResult[9] = items3;
-}) : ((projectId) => {
+}) : (function ConjureNativeComposer(projectId) {
   let _undefined;
   let _undefined2;
   let _undefined3;
@@ -2138,7 +2138,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         const intl = tmp10(1126).intl;
         const formatToPlainString = intl.formatToPlainString;
         let obj = { count: ConjureTypes.CONJURE_MAX_ATTACHMENTS_PER_MESSAGE };
-        const Q0aCVZ = _modDef3753.Q0aCVZ;
+        const Q0aCVZ = _modDef3827.Q0aCVZ;
         _undefined3(formatToPlainString(Q0aCVZ, obj));
         const _Math = Math;
         const substr = arr.slice(0, Math.max(0, diff));
@@ -2340,11 +2340,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     let intl;
     let intl2;
     let intl3;
-    const obj = { label: intl.string(_modDef3753["51+9lc"]), IconComponent: ImagesIcon.ImagesIcon, action: callback4 };
+    const obj = { label: intl.string(_modDef3827["51+9lc"]), IconComponent: ImagesIcon.ImagesIcon, action: callback4 };
     intl = intl4.intl;
     let items = [obj, , ];
     const obj2 = {
-      label: intl2.string(_modDef3753["10ljr2"]),
+      label: intl2.string(_modDef3827["10ljr2"]),
       IconComponent: MusicIcon.MusicIcon,
       action() {
         const items = [projectId(running[26]).types.audio];
@@ -2354,7 +2354,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     intl2 = intl4.intl;
     items[1] = obj2;
     const obj3 = {
-      label: intl3.string(_modDef3753.aotDee),
+      label: intl3.string(_modDef3827.aotDee),
       IconComponent: FileUpIcon.FileUpIcon,
       action() {
         return callback6();
@@ -2434,12 +2434,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     let intl3;
     let tmp14;
     if ("stop" === key.key) {
-      const obj2 = { style: closure_14.trailingButton, IconComponent: StopIcon.StopIcon, onPress: onInterrupt, disabled: null == onInterrupt, accessibilityLabel: intl2.string(_modDef3753.wiguT0) };
+      const obj2 = { style: closure_14.trailingButton, IconComponent: StopIcon.StopIcon, onPress: onInterrupt, disabled: null == onInterrupt, accessibilityLabel: intl2.string(_modDef3827.wiguT0) };
       const tmp18 = ChatInputActionButtonDefault;
       intl2 = intl4.intl;
       tmp14 = unpackModuleId(tmp18, obj2);
     } else if ("models" === key.key) {
-      const obj = { style: closure_14.trailingButton, IconComponent: FiltersHorizontalIcon.FiltersHorizontalIcon, onPress: callback8, disabled: !canSend, accessibilityLabel: intl.string(_modDef3753["3E7Yc0"]) };
+      const obj = { style: closure_14.trailingButton, IconComponent: FiltersHorizontalIcon.FiltersHorizontalIcon, onPress: callback8, disabled: !canSend, accessibilityLabel: intl.string(_modDef3827["3E7Yc0"]) };
       const tmp4 = ChatInputActionButtonDefault;
       intl = intl4.intl;
       tmp14 = unpackModuleId(tmp4, obj);
@@ -2516,7 +2516,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       let onAccessibilityAction;
       let onPress;
       ({ ref, onPress, accessibilityActions, onAccessibilityAction } = arg0);
-      const obj = { ref, IconComponent: PlusLargeIcon.PlusLargeIcon, onPress, disabled: !canSend, accessibilityLabel: intl.string(_modDef3753.hFS71Z), accessibilityActions, onAccessibilityAction };
+      const obj = { ref, IconComponent: PlusLargeIcon.PlusLargeIcon, onPress, disabled: !canSend, accessibilityLabel: intl.string(_modDef3827.hFS71Z), accessibilityActions, onAccessibilityAction };
       const tmp = ChatInputActionButtonDefault;
       intl = intl4.intl;
       return unpackModuleId(tmp, obj);

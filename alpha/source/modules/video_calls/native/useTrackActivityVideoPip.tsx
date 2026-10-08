@@ -1,13 +1,13 @@
-// Module ID: 9188
-// Function ID: 9189
+// Module ID: 10756
+// Function ID: 10757
 // Name: useTrackActivityVideoPip
-// Dependencies: [19, 9101, 1085, 558, 576, 573, 7957, 9167, 1252, 2]
+// Dependencies: [19, 10675, 1085, 558, 576, 573, 5928, 10733, 1264, 2]
 
-// Module 9188 (useTrackActivityVideoPip)
+// Module 10756 (useTrackActivityVideoPip)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import react_mod from "react" /* 19 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 9101 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 10675 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let _require, dependencyMap;
 
 let react = react_mod;
 const AnalyticEvents = Constants.AnalyticEvents;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackActivityPip(arg0) {
   let closure_0;
   let closure_2;
   let closure_3;
@@ -42,9 +42,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  const tmp8 = stateFromStores(7957)(stateFromStores);
+  const tmp8 = stateFromStores(5928)(stateFromStores);
   dependencyMap = tmp8;
-  const tmp9 = stateFromStores(9167)();
+  const tmp9 = stateFromStores(10733)();
   react = tmp9;
   if (cResult[2] === arg0) {
     if (cResult[3] === tmp9) {
@@ -59,33 +59,31 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-  class I {
-    constructor() {
-      const tmp = closure_3;
-      if (null != closure_3) {
-        if (null != closure_2) {
-          if (stateFromStores !== tmp9) {
-            const obj3 = { channel_id: null, guild_id: null, application_id: null, activity_session_id: null };
-            const tmp4 = tmp2 ? AnalyticEvents.ACTIVITY_VIDEO_PIP_SHOWN : AnalyticEvents.ACTIVITY_VIDEO_PIP_HIDDEN;
-            ({ id: obj2.channel_id, guild_id: obj2.guild_id } = closure_0);
-            ({ applicationId: obj2.application_id, compositeInstanceId: obj2.activity_session_id } = tmp);
-            const obj = AnalyticsUtilsDefault;
-            obj.track(tmp4, obj3);
-          }
+  const fn2 = function u() {
+    const tmp = closure_3;
+    if (null != closure_3) {
+      if (null != closure_2) {
+        if (stateFromStores !== tmp9) {
+          const obj3 = { channel_id: null, guild_id: null, application_id: null, activity_session_id: null };
+          const tmp4 = tmp2 ? AnalyticEvents.ACTIVITY_VIDEO_PIP_SHOWN : AnalyticEvents.ACTIVITY_VIDEO_PIP_HIDDEN;
+          ({ id: obj2.channel_id, guild_id: obj2.guild_id } = closure_0);
+          ({ applicationId: obj2.application_id, compositeInstanceId: obj2.activity_session_id } = tmp);
+          const obj = AnalyticsUtilsDefault;
+          obj.track(tmp4, obj3);
         }
       }
     }
-  }
+  };
   const items1 = [stateFromStores, tmp8, arg0, tmp9];
   cResult[2] = arg0;
   cResult[3] = tmp9;
   cResult[4] = stateFromStores;
   cResult[5] = tmp8;
-  cResult[6] = I;
+  cResult[6] = fn2;
   cResult[7] = items1;
   tmp11 = items1;
-  tmp10 = I;
-}) : ((arg0) => {
+  tmp10 = fn2;
+}) : (function useTrackActivityPip(arg0) {
   let closure_0;
   let closure_2;
   let closure_3;
@@ -94,9 +92,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj = require("useStateFromStores");
   const items = [ChannelCallLifecycleStore];
   const stateFromStores = obj.useStateFromStores(items, () => pipEnabledWhileFocusedOnActivityOrStream.isPipEnabledWhileFocusedOnActivityOrStream());
-  const tmp2 = stateFromStores(7957)(stateFromStores);
+  const tmp2 = stateFromStores(5928)(stateFromStores);
   dependencyMap = tmp2;
-  const tmp3 = stateFromStores(9167)();
+  const tmp3 = stateFromStores(10733)();
   react = tmp3;
   const items1 = [stateFromStores, tmp2, arg0, tmp3];
   const effect = react.useEffect(() => {

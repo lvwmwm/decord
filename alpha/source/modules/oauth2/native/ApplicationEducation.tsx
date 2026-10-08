@@ -1,23 +1,23 @@
-// Module ID: 8972
-// Function ID: 8973
+// Module ID: 12877
+// Function ID: 12878
 // Name: ApplicationEducation
-// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 8757, 8025, 1126, 4837, 8973, 8771, 6893, 4892, 8975, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 587, 558, 576, 9137, 8433, 1126, 5031, 12878, 9117, 7082, 5086, 12880, 2]
 
-// Module 8972 (ApplicationEducation)
+// Module 12877 (ApplicationEducation)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import FriendsIcon from "FriendsIcon" /* 4837 */;
-import SettingsIcon from "SettingsIcon" /* 6893 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8025 */;
-import useIsSocialLayerParentApplicationDefault from "useIsSocialLayerParentApplication" /* 8757 */;
-import GameControllerIcon from "GameControllerIcon" /* 8771 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 8973 */;
-import AuthorizeFormSeparator from "AuthorizeFormSeparator" /* 8975 */;
+import FriendsIcon from "FriendsIcon" /* 5031 */;
+import SettingsIcon from "SettingsIcon" /* 7082 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8433 */;
+import GameControllerIcon from "GameControllerIcon" /* 9117 */;
+import useIsSocialLayerParentApplicationDefault from "useIsSocialLayerParentApplication" /* 9137 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 12878 */;
+import AuthorizeFormSeparator from "AuthorizeFormSeparator" /* 12880 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let metroImportDefault;
 let metroRequire;
 let size;
 let tmp;
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 const View = react_native.View;
 const MAX_FRIENDS = Constants.MAX_FRIENDS;
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
@@ -34,7 +34,7 @@ let obj = { applicationEducation: { flexDirection: "column", gap: 16 }, entry: {
 size = { width: 20, height: 20, tintColor: nativeDefault.colors.TEXT_MUTED };
 let closure_8 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationEducation(arg0) {
   let accountScopes;
   let application;
   let arr2;
@@ -286,7 +286,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp44 = null;
         if (arr2.length > 0) {
           const obj15 = { variant: "text-sm/normal", color: "text-default", children: arr2 };
-          tmp44 = hasOwnProperty(tmp(4892).Text, obj15);
+          tmp44 = hasOwnProperty(tmp(5086).Text, obj15);
         }
       }
       cResult[34] = arr2;
@@ -337,7 +337,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[39] = tmp50;
     tmp47 = tmp50;
   }
-}) : ((arg0) => {
+}) : (function ApplicationEducation(arg0) {
   let accountScopes;
   let application;
   let arr2;
@@ -456,7 +456,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp26 = null;
       if (arr2.length > 0) {
         const obj15 = { variant: "text-sm/normal", color: "text-default", children: arr2 };
-        tmp26 = hasOwnProperty(tmp4(4892).Text, obj15);
+        tmp26 = hasOwnProperty(tmp4(5086).Text, obj15);
       }
     }
     const obj16 = { children: items2 };
@@ -473,7 +473,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp29Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationEducationEntry(arg0) {
   let iconComponent;
   let items;
   let text;
@@ -525,7 +525,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.entryIcon;
   cResult[2] = iconComponentResult;
   tmp5 = iconComponentResult;
-}) : ((iconComponent) => {
+}) : (function ApplicationEducationEntry(iconComponent) {
   let items;
   iconComponent = iconComponent.iconComponent;
   const text = iconComponent.text;

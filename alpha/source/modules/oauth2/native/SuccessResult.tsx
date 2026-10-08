@@ -1,27 +1,27 @@
-// Module ID: 8746
-// Function ID: 8747
-// Dependencies: [19, 17, 2051, 4515, 2103, 1085, 1489, 21, 4896, 587, 558, 576, 8018, 1126, 5099, 6855, 1252, 504, 4860, 4751, 1616, 8747, 4892, 5601, 6626, 2]
+// Module ID: 10643
+// Function ID: 10644
+// Dependencies: [19, 17, 2063, 4707, 2115, 1085, 1501, 21, 5090, 587, 558, 576, 8426, 1126, 5940, 7043, 1264, 504, 5054, 4945, 1628, 10644, 5086, 5375, 6803, 2]
 
-// Module 8746
+// Module 10643
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1489 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
-import transitionToGuild2 from "transitionToGuild" /* 6855 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+import transitionToGuild2 from "transitionToGuild" /* 7043 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let arr1, guild, hideActionSheetResult, obj1, setImmediateResult, tmp10, tmp7, tmp8, trackResult;
+let arr1, hideActionSheetResult, obj1, setImmediateResult, tmp10, tmp7, tmp8, trackResult;
 
 let c10;
 let closure_14;
@@ -44,7 +44,7 @@ obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 createStyles = createStyles.createStyles;
 obj3 = { height: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "center" };
 let closure_16 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuccessResultModal(guild) {
   let channelId;
   let container;
   let inner;
@@ -334,7 +334,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         cResult[23] = items3;
       }
       if (cResult[24] !== stateFromStores1) {
-        class Y {
+        class W {
           constructor() {
             return PermissionStore.can(unpackModuleId.SEND_MESSAGES, stateFromStores1);
           }
@@ -358,9 +358,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
             return channelId.getChannelId();
           }
         }
-        cResult[25] = Y;
+        cResult[25] = W;
       } else {
-        class Y {
+        class W {
           constructor() {
             return PermissionStore.can(unpackModuleId.SEND_MESSAGES, stateFromStores1);
           }
@@ -426,7 +426,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
             }
             transitionToGuild(id1);
             let id2;
-            const track = tmp10(1252).track;
+            const track = tmp10(1264).track;
             const OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED = authStore.OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED;
             AnalyticsUtilsDefault;
             if (application != null) {
@@ -444,7 +444,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       const _Symbol6 = Symbol;
       const text = tmp4.text;
       if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
-        class Y {
+        class W {
           constructor() {
             return PermissionStore.can(unpackModuleId.SEND_MESSAGES, stateFromStores1);
           }
@@ -471,14 +471,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         }
         cResult[27] = tmp60;
       } else {
-        class Y {
+        class W {
           constructor() {
             return PermissionStore.can(unpackModuleId.SEND_MESSAGES, stateFromStores1);
           }
         }
       }
       if (cResult[28] !== tmp4.text) {
-        class Y {
+        class W {
           constructor() {
             return PermissionStore.can(unpackModuleId.SEND_MESSAGES, stateFromStores1);
           }
@@ -507,20 +507,20 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         cResult[29] = closure_13(tmp(tmp2[22]).Text, obj5);
         const tmp62 = closure_13(tmp(tmp2[22]).Text, obj5);
       } else {
-        class Y {
+        class W {
           constructor() {
             return PermissionStore.can(unpackModuleId.SEND_MESSAGES, stateFromStores1);
           }
         }
       }
       if (cResult[30] === tmp4.text) {
-        class Y {
+        class W {
           constructor() {
             return PermissionStore.can(unpackModuleId.SEND_MESSAGES, stateFromStores1);
           }
         }
         if (cResult[33] === tmp4.inner) {
-          class Y {
+          class W {
             constructor() {
               return PermissionStore.can(unpackModuleId.SEND_MESSAGES, stateFromStores1);
             }
@@ -594,7 +594,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       }
       let tmp64 = null;
       if (null != tmp6) {
-        class Y {
+        class W {
           constructor() {
             return PermissionStore.can(unpackModuleId.SEND_MESSAGES, stateFromStores1);
           }
@@ -685,7 +685,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           }
           transitionToGuild(id1);
           let id2;
-          const track = tmp10(1252).track;
+          const track = tmp10(1264).track;
           const OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED = authStore.OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED;
           AnalyticsUtilsDefault;
           if (application != null) {
@@ -702,7 +702,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     }
   }
   if (application != null) {
-    class Y {
+    class W {
       constructor() {
         return PermissionStore.can(unpackModuleId.SEND_MESSAGES, stateFromStores1);
       }
@@ -710,7 +710,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   }
   cResult[6] = undefined;
   if (guild != null) {
-    class Y {
+    class W {
       constructor() {
         return PermissionStore.can(unpackModuleId.SEND_MESSAGES, stateFromStores1);
       }
@@ -734,7 +734,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         }
         transitionToGuild(id1);
         let id2;
-        const track = tmp10(1252).track;
+        const track = tmp10(1264).track;
         const OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED = authStore.OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED;
         AnalyticsUtilsDefault;
         if (application != null) {
@@ -751,7 +751,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   }
   cResult[7] = undefined;
   cResult[8] = L;
-}) : ((guild) => {
+}) : (function SuccessResultModal(guild) {
   let channelId;
   let closure_3;
   let intl;
@@ -834,7 +834,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       }
       transitionToGuild(id1);
       let id2;
-      const track = tmp10(1252).track;
+      const track = tmp10(1264).track;
       const OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED = authStore.OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED;
       AnalyticsUtilsDefault;
       if (application != null) {

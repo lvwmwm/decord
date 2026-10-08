@@ -1,15 +1,15 @@
-// Module ID: 6924
-// Function ID: 6925
+// Module ID: 7113
+// Function ID: 7114
 // Name: LinkButton
-// Dependencies: [19, 21, 4896, 558, 576, 4892, 5916, 2]
+// Dependencies: [19, 21, 5090, 558, 576, 5086, 6189, 2]
 
-// Module 6924 (LinkButton)
+// Module 7113 (LinkButton)
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Pressables from "Pressables" /* 5916 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Pressables from "Pressables" /* 6189 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let c2;
 let c3;
 ({ jsx: c2, jsxs: c3 } = Fragment);
 let closure_4 = createStyles.createStyles({ defaultContainerStyle: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }, disabledContainerStyle: { opacity: 0.5 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkButton(arg0) {
   let containerStyle;
   let disabled;
   let iconRight;
@@ -103,7 +103,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = disabled && tmp4.disabledContainerStyle;
   cResult[3] = items1;
   tmp6 = items1;
-}) : ((textColor) => {
+}) : (function LinkButton(textColor) {
   let containerStyle;
   let disabled;
   let items1;

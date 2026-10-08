@@ -1,26 +1,24 @@
-// Module ID: 15368
-// Function ID: 15369
+// Module ID: 15630
+// Function ID: 15631
 // Name: AppIconRow
-// Dependencies: [32, 19, 21, 1126, 4896, 587, 558, 576, 8859, 12, 4600, 15365, 6082, 6000, 2]
+// Dependencies: [32, 19, 21, 1126, 5090, 587, 558, 576, 9402, 12, 4792, 15627, 6268, 6184, 2]
 
-// Module 15368 (AppIconRow)
+// Module 15630 (AppIconRow)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import react_native from "react-native" /* 4600 */;
-import TableRow2 from "TableRow" /* 6000 */;
-import FormRadio from "FormRadio" /* 6082 */;
-import AppIconTypes from "AppIconTypes" /* 8859 */;
-import AppIconDefault from "AppIcon" /* 15365 */;
+import react_native from "react-native" /* 4792 */;
+import TableRow2 from "TableRow" /* 6184 */;
+import FormRadio from "FormRadio" /* 6268 */;
+import AppIconTypes from "AppIconTypes" /* 9402 */;
+import AppIconDefault from "AppIcon" /* 15627 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let onLongPress;
 
 let obj2;
 const jsx = Fragment.jsx;
@@ -49,7 +47,7 @@ const items = [
 let obj = { icon: obj2 };
 obj2 = { borderRadius: nativeDefault.radii.md };
 let closure_7 = createStyles.createStyles(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onLongPress) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppIconRow(onLongPress) {
   let accessibilityRole;
   let accessibilityState;
   let currentAppIcon;
@@ -203,7 +201,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onLongPress) => {
   cResult[1] = id;
   cResult[2] = name;
   tmp6 = name;
-}) : ((arg0) => {
+}) : (function AppIconRow(arg0) {
   let accessibilityRole;
   let accessibilityState;
   let closure_129_0;
@@ -251,7 +249,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onLongPress) => {
       accessibilityState,
       trailing: null
     };
-    const TableRow = tmp3(6000).TableRow;
+    const TableRow = tmp3(6184).TableRow;
     if (currentAppIcon !== id) {
       let tmp11Result2;
       if (isPremium) {
@@ -261,7 +259,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onLongPress) => {
       tmp11Result = tmp11(TableRow, obj2, id);
     }
     const obj4 = { selected: currentAppIcon === id };
-    tmp11Result2 = tmp11(tmp3(6082).FormRadio, obj4);
+    tmp11Result2 = tmp11(tmp3(6268).FormRadio, obj4);
   }
 });
 const result = size.fileFinishedImporting("modules/app_icons/native/AppIconRow/AppIconRow.tsx");

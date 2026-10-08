@@ -1,23 +1,23 @@
-// Module ID: 11859
-// Function ID: 11860
+// Module ID: 12682
+// Function ID: 12683
 // Name: ForLaterMessageRow
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4797, 1369, 2028, 7602, 8336, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 4991, 1381, 2040, 7719, 9308, 2]
 
-// Module 11859 (ForLaterMessageRow)
+// Module 12682 (ForLaterMessageRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import useThemeDefault from "useTheme" /* 4797 */;
-import RowGeneratorDefault from "RowGenerator" /* 7602 */;
-import ChatItemDefault from "ChatItem" /* 8336 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import useThemeDefault from "useTheme" /* 4991 */;
+import RowGeneratorDefault from "RowGenerator" /* 7719 */;
+import ChatItemDefault from "ChatItem" /* 9308 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let importDefault, tmp5;
+let importDefault;
 
 let hasOwnProperty;
 let metroRequire;
@@ -27,7 +27,7 @@ const View = react_native.View;
 let obj = { preview: { marginHorizontal: -16, marginTop: -9, overflow: "hidden" }, flushToCardBottom: obj2, footer: { paddingHorizontal: 16, paddingTop: 8 } };
 obj2 = { marginBottom: -16, borderBottomLeftRadius: nativeDefault.modules.mobile.CARD_DEFAULT_RADIUS, borderBottomRightRadius: nativeDefault.modules.mobile.CARD_DEFAULT_RADIUS };
 let closure_7 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterMessageRow(arg0) {
   let footer;
   let items;
   let lineClamp;
@@ -44,8 +44,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
   const tmp6 = useThemeDefault();
   if (cResult[0] !== tmp6) {
     let obj2 = { seeMoreLabelColor: tmp5(587).colors.TEXT_DEFAULT };
-    const createNativeStyleProperties = tmp(4896).createNativeStyleProperties;
-    tmp(4896);
+    const createNativeStyleProperties = tmp(5090).createNativeStyleProperties;
+    tmp(5090);
     const tmp9 = createNativeStyleProperties(obj2)(tmp6);
     cResult[0] = tmp6;
     cResult[1] = tmp9;
@@ -66,7 +66,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
     const _Symbol = Symbol;
     let str = "react.memo_cache_sentinel";
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const RenderEmbeds = tmp(2028).RenderEmbeds;
+      const RenderEmbeds = tmp(2040).RenderEmbeds;
       const setting = RenderEmbeds.getSetting();
       cResult[5] = setting;
       tmp12 = setting;
@@ -75,7 +75,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
     }
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const InlineEmbedMedia = tmp(2028).InlineEmbedMedia;
+      const InlineEmbedMedia = tmp(2040).InlineEmbedMedia;
       const setting1 = InlineEmbedMedia.getSetting();
       cResult[6] = setting1;
       tmp14 = setting1;
@@ -84,7 +84,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
     }
     const _Symbol3 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const InlineAttachmentMedia = tmp(2028).InlineAttachmentMedia;
+      const InlineAttachmentMedia = tmp(2040).InlineAttachmentMedia;
       const setting2 = InlineAttachmentMedia.getSetting();
       cResult[7] = setting2;
       tmp16 = setting2;
@@ -95,7 +95,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       const self = this;
       const self2 = this;
-      let obj3 = new tmp5(7602)();
+      let obj3 = new tmp5(7719)();
       const obj4 = { renderEmbeds: tmp12, inlineEmbedMedia: tmp14, inlineAttachmentMedia: tmp16, renderReplies: false, renderExecutedCommands: false, animateEmoji: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderThreadEmbeds: false, renderForumPostActions: false, ignoreMentioned: true, shouldDisableInteractiveComponents: true };
       obj3.setOptions(obj4);
       cResult[8] = obj3;
@@ -114,137 +114,81 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
       }
       if (cResult[12] === maxHeight) {
         if (cResult[13] === message) {
-          let tmp25;
+          let tmp24;
           if (cResult[14] === tmp10) {
-            tmp25 = cResult[15];
+            tmp24 = cResult[15];
           }
           if (cResult[16] === footer) {
-            let tmp28;
+            let tmp27;
             if (cResult[17] === tmp4.footer) {
-              tmp28 = cResult[18];
+              tmp27 = cResult[18];
             }
             if (cResult[19] === tmp23) {
-              if (cResult[20] === tmp25) {
-                let tmp32;
-                if (cResult[21] === tmp28) {
-                  tmp32 = cResult[22];
+              if (cResult[20] === tmp24) {
+                let tmp31;
+                if (cResult[21] === tmp27) {
+                  tmp31 = cResult[22];
                 }
-                return tmp32;
+                return tmp31;
               }
             }
             const obj5 = { style: tmp23, children: items };
-            items = [tmp25, tmp28];
+            items = [tmp24, tmp27];
+            const tmp34 = closure_6(View, obj5);
             cResult[19] = tmp23;
-            cResult[20] = tmp25;
-            cResult[21] = tmp28;
-            cResult[22] = closure_6(View, obj5);
-            closure_6(View, obj5);
-            class M {
-              constructor(arg0) {
-                if (null != lineClamp) {
-                  obj = { numberOfLines: null, expandable: null, seeMoreLabel: null, seeMoreLabelColor: null };
-                  obj.numberOfLines = tmp;
-                  tmp2 = closure_0;
-                  tmp3 = closure_2;
-                  obj2 = closure_0(closure_2[8]);
-                  obj.expandable = obj2.isIOS();
-                  obj3 = closure_0(closure_2[8]);
-                  str = "";
-                  if (obj3.isIOS()) {
-                    str = "...";
-                  }
-                  tmp4 = arg0;
-                  obj.seeMoreLabel = str;
-                  tmp5 = closure_1;
-                  obj.seeMoreLabelColor = closure_1.seeMoreLabelColor;
-                  arg0.truncation = obj;
-                }
-                return;
-              }
-            }
+            cResult[20] = tmp24;
+            cResult[21] = tmp27;
+            cResult[22] = tmp34;
+            tmp31 = tmp34;
           }
-          let tmp29 = null;
+          let tmp28 = null;
           if (null != footer) {
             const obj6 = { style: tmp4.footer, children: footer };
-            tmp29 = closure_5(View, obj6);
+            tmp28 = closure_5(View, obj6);
           }
           cResult[16] = footer;
           cResult[17] = tmp4.footer;
-          cResult[18] = tmp29;
-          tmp28 = tmp29;
+          cResult[18] = tmp28;
+          tmp27 = tmp28;
         }
       }
       const obj7 = { pointerEvents: "none", horizontalOffset: 0, modifyRow: tmp10, message, rowGenerator: tmp18, maxHeight };
-      const tmp27 = closure_5(ChatItemDefault, obj7);
+      const tmp26 = closure_5(ChatItemDefault, obj7);
       cResult[12] = maxHeight;
       cResult[13] = message;
       cResult[14] = tmp10;
-      cResult[15] = tmp27;
-      tmp25 = tmp27;
+      cResult[15] = tmp26;
+      tmp24 = tmp26;
     }
-    class M {
-      constructor(arg0) {
-        if (null != lineClamp) {
-          obj = { numberOfLines: null, expandable: null, seeMoreLabel: null, seeMoreLabelColor: null };
-          obj.numberOfLines = tmp;
-          tmp2 = closure_0;
-          tmp3 = closure_2;
-          obj2 = closure_0(closure_2[8]);
-          obj.expandable = obj2.isIOS();
-          obj3 = closure_0(closure_2[8]);
-          str = "";
-          if (obj3.isIOS()) {
-            str = "...";
-          }
-          tmp4 = arg0;
-          obj.seeMoreLabel = str;
-          tmp5 = closure_1;
-          obj.seeMoreLabelColor = closure_1.seeMoreLabelColor;
-          arg0.truncation = obj;
-        }
-        return;
-      }
-    }
-    tmp24[0] = tmp4.preview;
-    tmp24[1] = flushToCardBottom;
+    const items1 = [tmp4.preview, flushToCardBottom];
     cResult[9] = tmp4.preview;
     cResult[10] = flushToCardBottom;
-    cResult[11] = tmp24;
-    tmp23 = tmp24;
+    cResult[11] = items1;
+    tmp23 = items1;
   }
-  class M {
-    constructor(arg0) {
-      if (null != lineClamp) {
-        obj = { numberOfLines: null, expandable: null, seeMoreLabel: null, seeMoreLabelColor: null };
-        obj.numberOfLines = tmp;
-        tmp2 = closure_0;
-        tmp3 = closure_2;
-        obj2 = closure_0(closure_2[8]);
-        obj.expandable = obj2.isIOS();
-        obj3 = closure_0(closure_2[8]);
-        str = "";
-        if (obj3.isIOS()) {
-          str = "...";
-        }
-        tmp4 = arg0;
-        obj.seeMoreLabel = str;
-        tmp5 = closure_1;
-        obj.seeMoreLabelColor = closure_1.seeMoreLabelColor;
-        arg0.truncation = obj;
+  function modifyRow(arg0) {
+    let obj2;
+    let str;
+    if (null != lineClamp) {
+      const obj = { numberOfLines: tmp, expandable: obj2.isIOS(), seeMoreLabel: str, seeMoreLabelColor: seeMoreLabelColor.seeMoreLabelColor };
+      str = "";
+      obj2 = PlatformUtils;
+      const obj3 = PlatformUtils;
+      if (obj3.isIOS()) {
+        str = "...";
       }
-      return;
+      arg0.truncation = obj;
     }
   }
   cResult[2] = lineClamp;
   cResult[3] = tmp7;
-  cResult[4] = M;
-  tmp10 = M;
-}) : ((arg0) => {
+  cResult[4] = modifyRow;
+  tmp10 = modifyRow;
+}) : (function ForLaterMessageRow(arg0) {
   let footer;
   let items2;
   let maxHeight;
   let message;
-  let require;
   let seeMoreLabelColor;
   ({ lineClamp: require, footer } = arg0);
   importDefault = undefined;
@@ -285,7 +229,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
     modifyRow(arg0) {
       let obj2;
       let str;
-      if (null != _require) {
+      if (null != require) {
         const obj = { numberOfLines: tmp, expandable: obj2.isIOS(), seeMoreLabel: str, seeMoreLabelColor: seeMoreLabelColor.seeMoreLabelColor };
         str = "";
         obj2 = PlatformUtils;

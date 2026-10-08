@@ -1,18 +1,16 @@
-// Module ID: 9108
-// Function ID: 9109
+// Module ID: 10682
+// Function ID: 10683
 // Name: useIsViewingActivity
-// Dependencies: [4912, 558, 576, 9095, 4742, 9092, 504, 2]
+// Dependencies: [6041, 558, 576, 10672, 4936, 10669, 504, 2]
 
-// Module 9108 (useIsViewingActivity)
-import ChannelCallModalDefault from "ChannelCallModal" /* 9092 */;
-import useIsActivityFocusedDefault from "useIsActivityFocused" /* 9095 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4912 */;
+// Module 10682 (useIsViewingActivity)
+import ChannelCallModalDefault from "ChannelCallModal" /* 10669 */;
+import useIsActivityFocusedDefault from "useIsActivityFocused" /* 10672 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channelId;
-
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsViewingActivity(channelId) {
   let first;
   let tmp8;
   let tmp9;
@@ -21,7 +19,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const tmp = channelId;
   channelId = channelId.channelId;
   let tmp4 = useIsActivityFocusedDefault(channelId);
-  const obj2 = channelId(4742);
+  const obj2 = channelId(4936);
   const isModalOpen = obj2.useIsModalOpen(ChannelCallModalDefault);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ChannelRTCStore];
@@ -31,7 +29,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     first = cResult[0];
   }
   if (cResult[1] !== channelId) {
-    const fn = function o() {
+    const fn = function c() {
       return ChannelRTCStore.getChatOpen(channelId);
     };
     const items1 = [channelId];
@@ -53,10 +51,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     tmp4 = !stateFromStores;
   }
   return tmp4;
-}) : ((channelId) => {
+}) : (function useIsViewingActivity(channelId) {
   channelId = channelId.channelId;
   let tmp = useIsActivityFocusedDefault(channelId);
-  const obj = channelId(4742);
+  const obj = channelId(4936);
   const isModalOpen = obj.useIsModalOpen(ChannelCallModalDefault);
   const items = [ChannelRTCStore];
   const items1 = [channelId];

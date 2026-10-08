@@ -1,22 +1,20 @@
-// Module ID: 16329
-// Function ID: 16330
+// Module ID: 16589
+// Function ID: 16590
 // Name: GuildsBarGeoRestrictedBadge
-// Dependencies: [19, 17, 21, 4896, 587, 5627, 558, 576, 5981, 4816, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 5974, 558, 576, 6164, 5010, 2]
 
-// Module 16329 (GuildsBarGeoRestrictedBadge)
+// Module 16589 (GuildsBarGeoRestrictedBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4816 */;
-import LegacyTokens from "LegacyTokens" /* 5627 */;
-import FastImageDefault from "FastImage" /* 5981 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5010 */;
+import LegacyTokens from "LegacyTokens" /* 5974 */;
+import FastImageDefault from "FastImage" /* 6164 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let style;
 
 let size;
 let size1;
@@ -28,7 +26,7 @@ size = { position: "absolute", bottom: -3, right: -3, height: 22, width: 22, bor
 createStyles = createStyles.createStyles;
 size1 = { height: 16, width: 16, opacity: LegacyTokens.DARK_1_LIGHT_08, tintColor: nativeDefault.colors.BLACK };
 let closure_5 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildsBarGeoRestrictedBadge(style) {
   const obj = react2;
   const cResult = obj.c(8);
   style = style.style;
@@ -66,7 +64,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
   cResult[1] = tmp3.badgeImageContainer;
   cResult[2] = items;
   tmp4 = items;
-}) : ((style) => {
+}) : (function GuildsBarGeoRestrictedBadge(style) {
   style = style.style;
   const tmp = closure_5();
   const items = [tmp.badgeImageContainer, style];

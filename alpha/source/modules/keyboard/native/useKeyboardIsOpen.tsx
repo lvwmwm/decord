@@ -1,14 +1,14 @@
-// Module ID: 6117
-// Function ID: 6118
+// Module ID: 6296
+// Function ID: 6297
 // Name: useKeyboardIsOpen
-// Dependencies: [1486, 1487, 1488, 1616, 558, 576, 2]
+// Dependencies: [1498, 1499, 1500, 1628, 558, 576, 2]
 // Exports: getKeyboardIsOpen, subscribeToKeyboardIsOpen
 
-// Module 6117 (useKeyboardIsOpen)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1487 */;
-import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1488 */;
-import KeyboardTypes from "KeyboardTypes" /* 1616 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1486 */;
+// Module 6296 (useKeyboardIsOpen)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1499 */;
+import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1500 */;
+import KeyboardTypes from "KeyboardTypes" /* 1628 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1498 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, importDefault;
 
 let closure_4 = {};
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboardIsOpen(arg0) {
   let closure_0;
   let tmp = arg0;
   let tmp3 = dependencyMap;
@@ -28,16 +28,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const includeCustomKeyboard = tmp.includeCustomKeyboard;
   _require = tmp5;
-  const tmp2Result = tmp2(1487);
+  const tmp2Result = tmp2(1499);
   const appEntryKey = tmp2Result.useAppEntryKey();
   if (cResult[0] === appEntryKey) {
     let tmp7;
     if (cResult[1] === (undefined !== includeCustomKeyboard && includeCustomKeyboard)) {
       tmp7 = cResult[2];
     }
-    return appEntryKey(1488)(tmp7);
+    return appEntryKey(1500)(tmp7);
   }
-  const fn = function t(arg0) {
+  const fn = function o(arg0) {
     let tmp2;
     const systemKeyboardOpen = tmp.systemKeyboardOpen;
     if (closure_0) {
@@ -52,7 +52,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = undefined !== includeCustomKeyboard && includeCustomKeyboard;
   cResult[2] = fn;
   tmp7 = fn;
-}) : (() => {
+}) : (function useKeyboardIsOpen() {
   let closure_1;
   let tmp = arg0;
   if (arg0 === undefined) {
@@ -62,7 +62,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (flag === undefined) {
     flag = false;
   }
-  const obj = flag(1487);
+  const obj = flag(1499);
   importDefault = obj.useAppEntryKey();
   return KeyboardUIStoreDefault((arg0) => {
     let tmp2;

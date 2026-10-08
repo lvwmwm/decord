@@ -1,28 +1,28 @@
-// Module ID: 12938
-// Function ID: 12939
+// Module ID: 13217
+// Function ID: 13218
 // Name: UserProfileActivityEmptyStates
-// Dependencies: [32, 19, 17, 1085, 21, 1126, 4896, 587, 558, 576, 4892, 5048, 12, 4909, 4860, 5601, 6895, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 1126, 5090, 587, 558, 576, 5086, 5405, 12, 7001, 5054, 5375, 7084, 2]
 
-// Module 12938 (UserProfileActivityEmptyStates)
+// Module 13217 (UserProfileActivityEmptyStates)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4909 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import openUserSettings from "openUserSettings" /* 6895 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7001 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let user;
+const require = globalThis.__r;
+let hideAllActionSheetsResult, obj1, openPrivateChannelResult;
 
 let metroImportAll;
 let metroImportDefault;
@@ -107,7 +107,7 @@ obj3 = { gap: nativeDefault.space.PX_8, alignItems: "center" };
 obj4 = { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", gap: nativeDefault.space.PX_8 };
 let closure_10 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState(arg0) {
   let bodyText;
   let children;
   let heading;
@@ -173,7 +173,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.centeredText;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((arg0) => {
+}) : (function EmptyState(arg0) {
   let bodyText;
   let children;
   let heading;
@@ -193,7 +193,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 const memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
 const memo2 = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileActivityEmptyOtherUser(user) {
   let channelId;
   let guildId;
   let name;
@@ -214,30 +214,43 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) =
         tmp6 = cResult[4];
       }
       if (cResult[5] !== tmp5) {
-        const fn = function f() {
-          const obj = _mod12;
-          let sampleResult = obj.sample(items);
-          const tmp = items;
-          if (sampleResult == null) {
-            sampleResult = tmp[0];
+        class T {
+          constructor() {
+            obj = closure_0(closure_2[12]);
+            tmp = closure_9;
+            sampleResult = obj.sample(closure_9);
+            if (sampleResult == null) {
+              sampleResult = tmp[0];
+            }
+            return sampleResult(closure_0);
           }
-          return sampleResult(name);
-        };
+        }
         cResult[5] = tmp5;
-        cResult[6] = fn;
-        tmp9 = fn;
+        cResult[6] = T;
+        tmp9 = T;
       } else {
-        tmp9 = cResult[6];
+        class T {
+          constructor() {
+            obj = closure_0(closure_2[12]);
+            tmp = closure_9;
+            sampleResult = obj.sample(closure_9);
+            if (sampleResult == null) {
+              sampleResult = tmp[0];
+            }
+            return sampleResult(closure_0);
+          }
+        }
       }
       const first = _slicedToArray(react.useState(tmp9), 1)[0];
       if (cResult[7] !== user.id) {
         class A {
           constructor() {
-            const obj = ChannelActionCreatorsDefault;
-            const obj2 = { recipientIds: user.id };
-            obj.openPrivateChannel(obj2);
-            const obj3 = ActionSheetActionCreatorsDefault;
-            obj3.hideAllActionSheets();
+            obj = closure_1(closure_2[13]);
+            obj1 = { recipientIds: user.id };
+            openPrivateChannelResult = obj.openPrivateChannel(obj1);
+            obj3 = closure_1(closure_2[14]);
+            hideAllActionSheetsResult = obj3.hideAllActionSheets();
+            return;
           }
         }
         cResult[7] = user.id;
@@ -245,11 +258,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) =
       } else {
         class A {
           constructor() {
-            const obj = ChannelActionCreatorsDefault;
-            const obj2 = { recipientIds: user.id };
-            obj.openPrivateChannel(obj2);
-            const obj3 = ActionSheetActionCreatorsDefault;
-            obj3.hideAllActionSheets();
+            obj = closure_1(closure_2[13]);
+            obj1 = { recipientIds: user.id };
+            openPrivateChannelResult = obj.openPrivateChannel(obj1);
+            obj3 = closure_1(closure_2[14]);
+            hideAllActionSheetsResult = obj3.hideAllActionSheets();
+            return;
           }
         }
       }
@@ -258,11 +272,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) =
       if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
         class A {
           constructor() {
-            const obj = ChannelActionCreatorsDefault;
-            const obj2 = { recipientIds: user.id };
-            obj.openPrivateChannel(obj2);
-            const obj3 = ActionSheetActionCreatorsDefault;
-            obj3.hideAllActionSheets();
+            obj = closure_1(closure_2[13]);
+            obj1 = { recipientIds: user.id };
+            openPrivateChannelResult = obj.openPrivateChannel(obj1);
+            obj3 = closure_1(closure_2[14]);
+            hideAllActionSheetsResult = obj3.hideAllActionSheets();
+            return;
           }
         }
         const stringResult = obj3.string(tmp(1126).t["g33r/P"]);
@@ -271,57 +286,62 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) =
       } else {
         class A {
           constructor() {
-            const obj = ChannelActionCreatorsDefault;
-            const obj2 = { recipientIds: user.id };
-            obj.openPrivateChannel(obj2);
-            const obj3 = ActionSheetActionCreatorsDefault;
-            obj3.hideAllActionSheets();
+            obj = closure_1(closure_2[13]);
+            obj1 = { recipientIds: user.id };
+            openPrivateChannelResult = obj.openPrivateChannel(obj1);
+            obj3 = closure_1(closure_2[14]);
+            hideAllActionSheetsResult = obj3.hideAllActionSheets();
+            return;
           }
         }
       }
       if (cResult[10] !== tmp13) {
         class A {
           constructor() {
-            const obj = ChannelActionCreatorsDefault;
-            const obj2 = { recipientIds: user.id };
-            obj.openPrivateChannel(obj2);
-            const obj3 = ActionSheetActionCreatorsDefault;
-            obj3.hideAllActionSheets();
+            obj = closure_1(closure_2[13]);
+            obj1 = { recipientIds: user.id };
+            openPrivateChannelResult = obj.openPrivateChannel(obj1);
+            obj3 = closure_1(closure_2[14]);
+            hideAllActionSheetsResult = obj3.hideAllActionSheets();
+            return;
           }
         }
         const obj4 = { size: "sm", variant: "secondary", text: tmp15, onPress: tmp13 };
         cResult[10] = tmp13;
-        cResult[11] = closure_7(tmp(5601).Button, obj4);
-        const tmp18 = closure_7(tmp(5601).Button, obj4);
+        cResult[11] = closure_7(tmp(5375).Button, obj4);
+        const tmp18 = closure_7(tmp(5375).Button, obj4);
       } else {
         class A {
           constructor() {
-            const obj = ChannelActionCreatorsDefault;
-            const obj2 = { recipientIds: user.id };
-            obj.openPrivateChannel(obj2);
-            const obj3 = ActionSheetActionCreatorsDefault;
-            obj3.hideAllActionSheets();
+            obj = closure_1(closure_2[13]);
+            obj1 = { recipientIds: user.id };
+            openPrivateChannelResult = obj.openPrivateChannel(obj1);
+            obj3 = closure_1(closure_2[14]);
+            hideAllActionSheetsResult = obj3.hideAllActionSheets();
+            return;
           }
         }
       }
       if (cResult[12] === tmp4.buttons) {
         class A {
           constructor() {
-            const obj = ChannelActionCreatorsDefault;
-            const obj2 = { recipientIds: user.id };
-            obj.openPrivateChannel(obj2);
-            const obj3 = ActionSheetActionCreatorsDefault;
-            obj3.hideAllActionSheets();
+            obj = closure_1(closure_2[13]);
+            obj1 = { recipientIds: user.id };
+            openPrivateChannelResult = obj.openPrivateChannel(obj1);
+            obj3 = closure_1(closure_2[14]);
+            hideAllActionSheetsResult = obj3.hideAllActionSheets();
+            return;
           }
         }
         if (cResult[15] === first) {
           class A {
             constructor() {
-              const obj = ChannelActionCreatorsDefault;
-              const obj2 = { recipientIds: user.id };
-              obj.openPrivateChannel(obj2);
-              const obj3 = ActionSheetActionCreatorsDefault;
-              obj3.hideAllActionSheets();
+              obj = closure_1(closure_2[13]);
+              obj1 = { recipientIds: user.id };
+              openPrivateChannelResult = obj.openPrivateChannel(obj1);
+              obj3 = closure_1(closure_2[14]);
+              hideAllActionSheetsResult = obj3.hideAllActionSheets();
+              return;
             }
           }
         }
@@ -339,7 +359,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) =
       const tmp22 = closure_7(View, obj6);
     }
   }
-  let obj2 = user(5048);
+  let obj2 = user(5405);
   name = obj2.getName(guildId, channelId, user);
   const intl = tmp(1126).intl;
   const formatToPlainStringResult = intl.formatToPlainString(tmp(1126).t.sjSitP, { name });
@@ -349,7 +369,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) =
   cResult[3] = name;
   cResult[4] = formatToPlainStringResult;
   tmp6 = formatToPlainStringResult;
-}) : ((user) => {
+}) : (function UserProfileActivityEmptyOtherUser(user) {
   let Button;
   let channelId;
   let guildId;
@@ -360,7 +380,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) =
   let name;
   ({ guildId, channelId } = user);
   let tmp = closure_10();
-  let obj = name(5048);
+  let obj = name(5405);
   name = obj.getName(guildId, channelId, user);
   const intl = user(1126).intl;
   items = [user.id];
@@ -387,12 +407,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) =
     obj3.hideAllActionSheets();
   }, items);
   obj4 = { size: "sm", variant: "secondary", text: intl2.string(user(1126).t["g33r/P"]), onPress: callback };
-  Button = user(5601).Button;
+  Button = user(5375).Button;
   intl2 = user(1126).intl;
   return closure_7(closure_11, obj2);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileActivityEmptyCurrentUser() {
   let first;
   let intl3;
   let obj4;
@@ -407,7 +427,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (() => 
     const fn = function t() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideAllActionSheets();
-      const obj2 = openUserSettings;
+      const obj2 = require("openUserSettings");
       const obj3 = { screen: constants.CONNECTIONS };
       obj2.openUserSettings(obj3);
     };
@@ -431,7 +451,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (() => 
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { size: "sm", variant: "secondary", text: intl3.string(intl4.t["/Hl24U"]), onPress: first };
-    const Button = tmp(5601).Button;
+    const Button = tmp(5375).Button;
     intl3 = tmp(1126).intl;
     const tmp12 = metroImportDefault(Button, obj2);
     cResult[3] = tmp12;
@@ -450,7 +470,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (() => 
     tmp13 = cResult[5];
   }
   return tmp13;
-}) : (() => {
+}) : (function UserProfileActivityEmptyCurrentUser() {
   let Button;
   let intl;
   let intl2;
@@ -462,7 +482,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (() => 
   const callback = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     obj.hideAllActionSheets();
-    const obj2 = openUserSettings;
+    const obj2 = require("openUserSettings");
     const obj3 = { screen: constants.CONNECTIONS };
     obj2.openUserSettings(obj3);
   }, []);

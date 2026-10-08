@@ -1,14 +1,14 @@
-// Module ID: 17586
-// Function ID: 17587
+// Module ID: 17868
+// Function ID: 17869
 // Name: FramePanelUtils
-// Dependencies: [9000, 8738, 9001, 558, 576, 504, 2]
+// Dependencies: [10612, 10613, 6072, 558, 576, 504, 2]
 // Exports: isFramePanelFullscreen
 
-// Module 17586 (FramePanelUtils)
+// Module 17868 (FramePanelUtils)
 import react from "react" /* 576 */;
-import FramesConstants from "FramesConstants" /* 8738 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 9001 */;
-import FramesStore from "FramesStore" /* 9000 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6072 */;
+import FramesConstants from "FramesConstants" /* 10613 */;
+import FramesStore from "FramesStore" /* 10612 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let tmp;
 const get_initialized = tmp(504);
 const asLaunched = FramesConstants.asLaunched;
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsActivityPanelFullscreen() {
   let mainFrame;
   let tmp4;
   let tmp5;
@@ -38,7 +38,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useIsActivityPanelFullscreen() {
   let mainFrame;
   const items = [FramesStore];
   const obj = get_initialized;

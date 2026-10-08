@@ -1,13 +1,13 @@
-// Module ID: 10420
-// Function ID: 10421
+// Module ID: 10017
+// Function ID: 10018
 // Name: mobile_bottom_sheet
-// Dependencies: [32, 1198, 10416, 2036, 10415, 10414, 2]
+// Dependencies: [32, 1210, 10013, 2048, 10012, 10011, 2]
 
-// Module 10420 (mobile_bottom_sheet)
-import _mod1198 from "module_1198" /* 1198 */;
-import localized_string from "localized_string" /* 10414 */;
-import help_article from "help_article" /* 10415 */;
-import cta_button from "cta_button" /* 10416 */;
+// Module 10017 (mobile_bottom_sheet)
+import _mod1210 from "module_1210" /* 1210 */;
+import localized_string from "localized_string" /* 10011 */;
+import help_article from "help_article" /* 10012 */;
+import cta_button from "cta_button" /* 10013 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ const T4 = function T() {
 const T5 = function T() {
   return require("localized_string").LocalizedString;
 };
-const MessageType = _mod1198.MessageType;
+const MessageType = _mod1210.MessageType;
 class MobileBottomSheet$Type extends MessageType {
   constructor() {
     let items = [{ no: 1, name: "asset_url", kind: "scalar", T: 9 }, { no: 2, name: "header", kind: "scalar", T: 9 }, { no: 3, name: "body", kind: "scalar", T: 9 }, { no: 4, name: "help_article_id", kind: "scalar", T: 9 }, { no: 5, name: "button", kind: "message", T: T2 }, { no: 6, name: "dismissible_content", kind: "enum", T: T3 }, { no: 7, name: "help_article", kind: "message", T: T4 }, , ];
@@ -47,9 +47,9 @@ class MobileBottomSheet$Type extends MessageType {
     const obj = { assetUrl: "", header: "", body: "", helpArticleId: "", dismissibleContent: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1198.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1210.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1198;
+      const tmpResult = _mod1210;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -106,7 +106,7 @@ class MobileBottomSheet$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1198.UnknownFieldHandler.onRead;
+                onRead = _mod1210.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -118,38 +118,38 @@ class MobileBottomSheet$Type extends MessageType {
   }
   internalBinaryWrite(assetUrl, tag, writeUnknownFields) {
     if ("" !== assetUrl.assetUrl) {
-      const tagResult = tag.tag(1, _mod1198.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1210.WireType.LengthDelimited);
       tagResult.string(assetUrl.assetUrl);
     }
     if ("" !== assetUrl.header) {
-      const tagResult1 = tag.tag(2, _mod1198.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1210.WireType.LengthDelimited);
       tagResult1.string(assetUrl.header);
     }
     if ("" !== assetUrl.body) {
-      const tagResult2 = tag.tag(3, _mod1198.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1210.WireType.LengthDelimited);
       tagResult2.string(assetUrl.body);
     }
     if ("" !== assetUrl.helpArticleId) {
-      const tagResult3 = tag.tag(4, _mod1198.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1210.WireType.LengthDelimited);
       tagResult3.string(assetUrl.helpArticleId);
     }
     if (assetUrl.button) {
       const CTAButton = cta_button.CTAButton;
       internalBinaryWrite = CTAButton.internalBinaryWrite;
       const button = assetUrl.button;
-      const tagResult4 = tag.tag(5, _mod1198.WireType.LengthDelimited);
+      const tagResult4 = tag.tag(5, _mod1210.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(button, tagResult4.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if (0 !== assetUrl.dismissibleContent) {
-      const tagResult5 = tag.tag(6, _mod1198.WireType.Varint);
+      const tagResult5 = tag.tag(6, _mod1210.WireType.Varint);
       tagResult5.int32(assetUrl.dismissibleContent);
     }
     if (assetUrl.helpArticle) {
       const HelpArticle = help_article.HelpArticle;
       internalBinaryWrite2 = HelpArticle.internalBinaryWrite;
       const helpArticle = assetUrl.helpArticle;
-      const tagResult6 = tag.tag(7, _mod1198.WireType.LengthDelimited);
+      const tagResult6 = tag.tag(7, _mod1210.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(helpArticle, tagResult6.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
@@ -157,7 +157,7 @@ class MobileBottomSheet$Type extends MessageType {
       const LocalizedString = localized_string.LocalizedString;
       internalBinaryWrite3 = LocalizedString.internalBinaryWrite;
       const headerLocalized = assetUrl.headerLocalized;
-      const tagResult7 = tag.tag(8, _mod1198.WireType.LengthDelimited);
+      const tagResult7 = tag.tag(8, _mod1210.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(headerLocalized, tagResult7.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
@@ -165,14 +165,14 @@ class MobileBottomSheet$Type extends MessageType {
       const LocalizedString2 = localized_string.LocalizedString;
       internalBinaryWrite4 = LocalizedString2.internalBinaryWrite;
       const bodyLocalized = assetUrl.bodyLocalized;
-      const tagResult8 = tag.tag(9, _mod1198.WireType.LengthDelimited);
+      const tagResult8 = tag.tag(9, _mod1210.WireType.LengthDelimited);
       const internalBinaryWrite4Result = internalBinaryWrite4(bodyLocalized, tagResult8.fork(), writeUnknownFields);
       const joined3 = internalBinaryWrite4Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1198.UnknownFieldHandler.onWrite;
+        onWrite = _mod1210.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, assetUrl, tag);

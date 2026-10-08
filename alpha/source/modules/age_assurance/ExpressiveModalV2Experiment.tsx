@@ -1,14 +1,14 @@
-// Module ID: 8138
-// Function ID: 8139
+// Module ID: 7525
+// Function ID: 7526
 // Name: ExpressiveModalV2Experiment
-// Dependencies: [8139, 1440, 558, 576, 8125, 504, 2]
+// Dependencies: [5920, 1452, 558, 576, 5927, 504, 2]
 // Exports: isExpressiveModalV2Enabled
 
-// Module 8138 (ExpressiveModalV2Experiment)
+// Module 7525 (ExpressiveModalV2Experiment)
 import react from "react" /* 576 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8125 */;
-import SafetyHubStore from "SafetyHubStore" /* 8139 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 5927 */;
+import SafetyHubStore from "SafetyHubStore" /* 5920 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let obj = { kind: "user", name: "2026-07-expressive-modal-v2", defaultConfig: { 
 obj2 = { 1: null, 2: { enabled: true } };
 obj2[2] = { enabled: true };
 let closure_3 = ApexExperiment.createApexExperiment(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsExpressiveModalV2Enabled(location) {
   let isExpressiveModalV2Enabled;
   let tmp5;
   let tmp6;
@@ -30,7 +30,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
   const isSuspendedUser = obj2.useIsSuspendedUser();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SafetyHubStore];
-    const fn = function l() {
+    const fn = function t() {
       return isExpressiveModalV2Enabled.getIsExpressiveModalV2Enabled();
     };
     cResult[0] = items;
@@ -55,7 +55,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     enabled = stateFromStores;
   }
   return enabled;
-}) : ((location) => {
+}) : (function useIsExpressiveModalV2Enabled(location) {
   let isExpressiveModalV2Enabled;
   const obj = SafetyHubUtils;
   const isSuspendedUser = obj.useIsSuspendedUser();

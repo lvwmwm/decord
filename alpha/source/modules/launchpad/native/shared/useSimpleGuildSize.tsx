@@ -1,15 +1,15 @@
-// Module ID: 17424
-// Function ID: 17425
+// Module ID: 17706
+// Function ID: 17707
 // Name: useSimpleGuildSize
 // Dependencies: [19, 558, 576, 2]
 
-// Module 17424 (useSimpleGuildSize)
+// Module 17706 (useSimpleGuildSize)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSimpleGuildSize(arg0) {
   let style;
   let tmp2;
   const obj = react2;
@@ -75,7 +75,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = num5;
   cResult[4] = obj3;
   tmp3 = obj3;
-}) : ((size) => {
+}) : (function useSimpleGuildSize(size) {
   size = size.size;
   const style = size.style;
   let memo;

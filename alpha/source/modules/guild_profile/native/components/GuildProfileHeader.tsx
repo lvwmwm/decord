@@ -1,28 +1,26 @@
-// Module ID: 9416
-// Function ID: 9417
+// Module ID: 8837
+// Function ID: 8838
 // Name: GuildProfileHeader
-// Dependencies: [19, 17, 2116, 502, 2112, 9417, 21, 4896, 587, 558, 576, 504, 7240, 11, 2066, 8430, 8429, 4574, 4860, 6855, 5978, 4892, 8427, 5916, 1126, 2]
+// Dependencies: [19, 17, 2128, 502, 2124, 8838, 21, 5090, 587, 558, 576, 504, 7419, 11, 2078, 8839, 8840, 4766, 5054, 7043, 6161, 5086, 8841, 6189, 1126, 2]
 
-// Module 9416 (GuildProfileHeader)
+// Module 8837 (GuildProfileHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2066 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import transitionToGuild from "transitionToGuild" /* 6855 */;
-import BadgeCategory from "BadgeCategory" /* 8429 */;
-import GuildTraits from "GuildTraits" /* 8430 */;
-import GuildBadgeConstants from "GuildBadgeConstants" /* 9417 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2078 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import transitionToGuild from "transitionToGuild" /* 7043 */;
+import GuildBadgeConstants from "GuildBadgeConstants" /* 8838 */;
+import GuildTraits from "GuildTraits" /* 8839 */;
+import BadgeCategory from "BadgeCategory" /* 8840 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
+import LocaleStore from "LocaleStore" /* 2128 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let profile;
 
 let c10;
 let c9;
@@ -39,7 +37,7 @@ createStyles = createStyles.createStyles;
 size1 = { width: 8, height: 8, borderRadius: 4, backgroundColor: nativeDefault.colors.TEXT_STATUS_OFFLINE };
 size2 = { width: 8, height: 8, borderRadius: 4, backgroundColor: nativeDefault.colors.TEXT_STATUS_ONLINE };
 const styles = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfileHeader(profile) {
   let id;
   let locale;
   let stateFromStores1;
@@ -80,7 +78,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
     cResult[3] = fromGuildProfileResult;
   }
   if (cResult[4] !== profile) {
-    class I {
+    class R {
       constructor() {
         let tooltipSubtitle;
         let tooltipTitle;
@@ -104,9 +102,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
       }
     }
     cResult[4] = profile;
-    cResult[5] = I;
+    cResult[5] = R;
   } else {
-    class I {
+    class R {
       constructor() {
         let tooltipSubtitle;
         let tooltipTitle;
@@ -132,7 +130,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
   }
   id = profile.id;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class I {
+    class R {
       constructor() {
         let tooltipSubtitle;
         let tooltipTitle;
@@ -159,7 +157,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
     cResult[6] = items1;
     tmp15 = items1;
   } else {
-    class I {
+    class R {
       constructor() {
         let tooltipSubtitle;
         let tooltipTitle;
@@ -184,7 +182,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
     }
   }
   if (cResult[7] !== id) {
-    class I {
+    class R {
       constructor() {
         let tooltipSubtitle;
         let tooltipTitle;
@@ -214,7 +212,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
     tmp18 = items2;
     tmp17 = tmp19;
   } else {
-    class I {
+    class R {
       constructor() {
         let tooltipSubtitle;
         let tooltipTitle;
@@ -242,7 +240,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
   const tmpResult6 = tmp(stateFromStores1[11]);
   stateFromStores1 = tmpResult6.useStateFromStores(tmp15, tmp17, tmp18);
   if (cResult[10] === id) {
-    class I {
+    class R {
       constructor() {
         let tooltipSubtitle;
         let tooltipTitle;
@@ -267,7 +265,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
     }
     const tmp21 = View;
     if (cResult[13] === guildIconSource) {
-      class I {
+      class R {
         constructor() {
           let tooltipSubtitle;
           let tooltipTitle;
@@ -291,7 +289,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
         }
       }
       if (cResult[16] === tmp4.avatarBackground) {
-        class I {
+        class R {
           constructor() {
             let tooltipSubtitle;
             let tooltipTitle;
@@ -315,7 +313,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
           }
         }
         if (stateFromStores1) {
-          class I {
+          class R {
             constructor() {
               let tooltipSubtitle;
               let tooltipTitle;
@@ -340,7 +338,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
           }
         }
         if (cResult[19] === profile.name) {
-          class I {
+          class R {
             constructor() {
               let tooltipSubtitle;
               let tooltipTitle;
@@ -399,7 +397,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
   cResult[10] = id;
   cResult[11] = stateFromStores1;
   cResult[12] = O;
-}) : ((profile) => {
+}) : (function GuildProfileHeader(profile) {
   let Text4;
   let intl;
   let intl2;

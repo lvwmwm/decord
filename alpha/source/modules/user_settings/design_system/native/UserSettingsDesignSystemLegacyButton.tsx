@@ -1,25 +1,23 @@
-// Module ID: 15657
-// Function ID: 15658
+// Module ID: 15937
+// Function ID: 15938
 // Name: UserSettingsDesignSystemLegacyButton
-// Dependencies: [32, 19, 17, 21, 1188, 558, 576, 4892, 5601, 4896, 587, 5600, 8924, 2]
+// Dependencies: [32, 19, 17, 21, 1200, 558, 576, 5086, 5375, 5090, 587, 5373, 8555, 2]
 
-// Module 15657 (UserSettingsDesignSystemLegacyButton)
+// Module 15937 (UserSettingsDesignSystemLegacyButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Stack_Stack from "Stack/Stack" /* 5600 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import Form from "Form" /* 8924 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Stack_Stack from "Stack/Stack" /* 5373 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import Form from "Form" /* 8555 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import size from "module_2" /* 2 */;
-
-let combo, entry;
 
 let c3;
 let closure_4;
@@ -80,10 +78,10 @@ let obj7 = { look: native.ButtonLooks.FILLED, color: native.ButtonColors.BRAND, 
 items[6] = obj7;
 let obj8 = { look: native.ButtonLooks.FILLED, color: native.ButtonColors.GREEN, size: native.ButtonSizes.MEDIUM, shrink: false, count: 1 };
 items[7] = obj8;
-let obj9 = { look: native.ButtonLooks.FILLED, color: native.ButtonColors.GREEN, size: native.ButtonSizes.MEDIUM, shrink: true, count: 1 };
-items[8] = obj9;
-let obj10 = { look: native.ButtonLooks.FILLED, color: native.ButtonColors.GREEN, size: native.ButtonSizes.SMALL, shrink: false, count: 1 };
-items[9] = obj10;
+items[8] = { look: native.ButtonLooks.FILLED, color: native.ButtonColors.GREEN, size: native.ButtonSizes.MEDIUM, shrink: true, count: 1 };
+({ look: native.ButtonLooks.FILLED, color: native.ButtonColors.GREEN, size: native.ButtonSizes.MEDIUM, shrink: true, count: 1 });
+items[9] = { look: native.ButtonLooks.FILLED, color: native.ButtonColors.GREEN, size: native.ButtonSizes.SMALL, shrink: false, count: 1 };
+({ look: native.ButtonLooks.FILLED, color: native.ButtonColors.GREEN, size: native.ButtonSizes.SMALL, shrink: false, count: 1 });
 items[10] = { look: native.ButtonLooks.FILLED, color: native.ButtonColors.GREEN, size: native.ButtonSizes.XSMALL, shrink: false, count: 1 };
 ({ look: native.ButtonLooks.FILLED, color: native.ButtonColors.GREEN, size: native.ButtonSizes.XSMALL, shrink: false, count: 1 });
 items[11] = { look: native.ButtonLooks.FILLED, color: native.ButtonColors.GREY, size: native.ButtonSizes.MEDIUM, shrink: false, count: 10 };
@@ -150,11 +148,7 @@ let items1 = [];
 items1[0] = native.ButtonColors.WHITE;
 let set = new Set(items1);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
-  let items1;
-  let items2;
-  let items3;
-  let items4;
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ComparisonRow(entry) {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(33);
@@ -176,10 +170,6 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
       tmp10 = cResult[4];
     }
     if (cResult[5] === tmp4.comparisonRow) {
-      let tmp13;
-      if (cResult[6] === (tmp5 && tmp4.darkBg)) {
-        tmp13 = cResult[7];
-      }
       let str = "text-muted";
       if (tmp5) {
         str = "text-default";
@@ -190,19 +180,11 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
       }
       if (cResult[8] === combined) {
         if (cResult[9] === str) {
-          let tmp15;
-          let tmp18;
           let tmp22;
-          if (cResult[10] === str2) {
-            tmp15 = cResult[11];
-          }
           const _Symbol = Symbol;
           if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+            cResult[12] = metroRequire(Text_Text.Text, { variant: "text-xxs/medium", color: "text-muted", children: "legacy" });
             const tmp20 = metroRequire(Text_Text.Text, { variant: "text-xxs/medium", color: "text-muted", children: "legacy" });
-            cResult[12] = tmp20;
-            tmp18 = tmp20;
-          } else {
-            tmp18 = cResult[12];
           }
           let darkText = null;
           if (tmp5) {
@@ -213,135 +195,65 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
           }
           const _Symbol2 = Symbol;
           if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-            const fn = function v() {
-
-            };
-            cResult[13] = fn;
-            tmp22 = fn;
+            class C {
+              constructor() {
+                return;
+              }
+            }
+            cResult[13] = C;
+            tmp22 = C;
           } else {
-            tmp22 = cResult[13];
+            class C {
+              constructor() {
+                return;
+              }
+            }
           }
           if (cResult[14] === entry.color) {
-            if (cResult[15] === entry.look) {
-              if (cResult[16] === combined) {
-                let tmp23;
-                if (cResult[17] === darkText) {
-                  tmp23 = cResult[18];
-                }
-                if (cResult[19] === tmp4.comparisonSide) {
-                  let tmp26;
-                  let tmp33;
-                  if (cResult[20] === tmp23) {
-                    tmp26 = cResult[21];
-                  }
-                  if (cResult[22] === tmp10) {
-                    let tmp30;
-                    if (cResult[23] === tmp4.comparisonSide) {
-                      tmp30 = cResult[24];
-                    }
-                    if (cResult[25] === tmp4.comparisonButtons) {
-                      if (cResult[26] === tmp26) {
-                        let tmp37;
-                        if (cResult[27] === tmp30) {
-                          tmp37 = cResult[28];
-                        }
-                        if (cResult[29] === tmp37) {
-                          if (cResult[30] === tmp13) {
-                            let tmp41;
-                            if (cResult[31] === tmp15) {
-                              tmp41 = cResult[32];
-                            }
-                            return tmp41;
-                          }
-                        }
-                        const obj2 = { style: tmp13, children: items };
-                        items = [tmp15, tmp37];
-                        const tmp44 = hasOwnProperty(React3, obj2);
-                        cResult[29] = tmp37;
-                        cResult[30] = tmp13;
-                        cResult[31] = tmp15;
-                        cResult[32] = tmp44;
-                        tmp41 = tmp44;
-                      }
-                    }
-                    const obj3 = { style: tmp4.comparisonButtons, children: items1 };
-                    items1 = [tmp26, tmp30];
-                    const tmp40 = hasOwnProperty(React3, obj3);
-                    cResult[25] = tmp4.comparisonButtons;
-                    cResult[26] = tmp26;
-                    cResult[27] = tmp30;
-                    cResult[28] = tmp40;
-                    tmp37 = tmp40;
-                  }
-                  if (null != tmp10) {
-                    const obj5 = { style: tmp4.comparisonSide, children: items2 };
-                    items2 = [metroRequire(Text_Text.Text, { variant: "text-xxs/medium", color: "text-muted", children: "mana" }), ];
-                    const obj6 = {
-                      variant: tmp10,
-                      size: "md",
-                      text: tmp10,
-                      onPress() {
-
-                                        }
-                    };
-                    items2[1] = metroRequire(components_Button_Button.Button, obj6);
-                    tmp33 = hasOwnProperty(React3, obj5);
-                  } else {
-                    const obj7 = { style: tmp4.comparisonSide, children: metroRequire(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted", children: "no mapping" }) };
-                    tmp33 = metroRequire(React3, obj7);
-                  }
-                  cResult[22] = tmp10;
-                  cResult[23] = tmp4.comparisonSide;
-                  cResult[24] = tmp33;
-                  tmp30 = tmp33;
-                }
-                const obj8 = { style: tmp4.comparisonSide, children: items3 };
-                items3 = [tmp18, tmp23];
-                const tmp29 = hasOwnProperty(React3, obj8);
-                cResult[19] = tmp4.comparisonSide;
-                cResult[20] = tmp23;
-                cResult[21] = tmp29;
-                tmp26 = tmp29;
+            class C {
+              constructor() {
+                return;
               }
             }
           }
           ({ look: obj4.look, color: obj4.color } = entry);
-          const obj9 = { look: null, color: null, size: native.ButtonSizes.MEDIUM, shrink: true, text: combined, textStyle: darkText, onPress: tmp22 };
-          const Button = tmp(1188).Button;
-          const tmp25 = metroRequire(Button, obj9);
+          const obj3 = { look: null, color: null, size: native.ButtonSizes.MEDIUM, shrink: true, text: combined, textStyle: darkText, onPress: tmp22 };
+          const Button = tmp(1200).Button;
           cResult[14] = entry.color;
           cResult[15] = entry.look;
           cResult[16] = combined;
           cResult[17] = darkText;
-          cResult[18] = tmp25;
-          tmp23 = tmp25;
+          cResult[18] = metroRequire(Button, obj3);
+          const tmp25 = metroRequire(Button, obj3);
         }
       }
-      const obj10 = { variant: "text-xs/medium", color: str, children: items4 };
-      items4 = [combined, " \u2192 ", str2];
-      const tmp17 = hasOwnProperty(Text_Text.Text, obj10);
+      const obj6 = { variant: "text-xs/medium", color: str, children: items };
+      items = [combined, " \u2192 ", str2];
       cResult[8] = combined;
       cResult[9] = str;
       cResult[10] = str2;
-      cResult[11] = tmp17;
-      tmp15 = tmp17;
+      cResult[11] = hasOwnProperty(Text_Text.Text, obj6);
+      const tmp17 = hasOwnProperty(Text_Text.Text, obj6);
     }
-    const items5 = [tmp4.comparisonRow, tmp5 && tmp4.darkBg];
+    const items1 = [tmp4.comparisonRow, tmp5 && tmp4.darkBg];
     cResult[5] = tmp4.comparisonRow;
     cResult[6] = tmp5 && tmp4.darkBg;
-    cResult[7] = items5;
-    tmp13 = items5;
+    cResult[7] = items1;
   }
   let redesignVariant = null;
   if (!tmp9) {
-    const tmpResult = native;
-    redesignVariant = tmpResult.getRedesignVariant(entry.color);
+    class C {
+      constructor() {
+        return;
+      }
+    }
+    redesignVariant = obj2.getRedesignVariant(entry.color);
   }
   cResult[2] = entry.color;
   cResult[3] = tmp9;
   cResult[4] = redesignVariant;
   tmp10 = redesignVariant;
-}) : ((entry) => {
+}) : (function ComparisonRow(entry) {
   let darkText;
   let items1;
   let items2;
@@ -363,7 +275,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   const tmp9 = hasItem && tmp.darkBg;
   items[1] = tmp9;
   let str = "text-muted";
-  const Text = tmp4(4892).Text;
+  const Text = tmp4(5086).Text;
   if (hasItem) {
     str = "text-default";
   }
@@ -389,7 +301,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
 
     }
   };
-  const Button = tmp4(1188).Button;
+  const Button = tmp4(1200).Button;
   darkText = null;
   if (hasItem) {
     darkText = null;
@@ -421,7 +333,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   return hasOwnProperty(React3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((combo) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ComboRow(combo) {
   let color;
   let items1;
   let tmp6;
@@ -534,7 +446,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((combo) => {
   cResult[3] = tmp6 && tmp4.darkBg;
   cResult[4] = items2;
   tmp10 = items2;
-}) : ((combo) => {
+}) : (function ComboRow(combo) {
   let color;
   let darkText;
   let items1;
@@ -576,7 +488,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((combo) => {
     }
   };
   darkText = null;
-  const Button = tmp6(1188).Button;
+  const Button = tmp6(1200).Button;
   const tmp8 = metroRequire;
   if (hasItem) {
     darkText = null;
@@ -599,7 +511,7 @@ const obj42 = { comboRow: { gap: 4, paddingHorizontal: nativeDefault.space.PX_16
 ({ paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8 });
 let closure_13 = createStyles(obj42);
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsDesignSystemLegacyButton() {
   let items1;
   let items2;
   let tmp3;
@@ -716,7 +628,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
+}) : (function UserSettingsDesignSystemLegacyButton() {
   let items1;
   let items2;
   const tmp = closure_13();

@@ -1,33 +1,33 @@
-// Module ID: 7551
-// Function ID: 7552
+// Module ID: 8454
+// Function ID: 8455
 // Name: ForumPostMediaUtils
-// Dependencies: [19, 6819, 2051, 5116, 1377, 1085, 5046, 2028, 1390, 1371, 1375, 558, 576, 5120, 1985, 5128, 11, 2]
+// Dependencies: [19, 6992, 2063, 5428, 1389, 1085, 5415, 2040, 1402, 1383, 1387, 558, 576, 5432, 1997, 5440, 11, 2]
 // Exports: getEmbedColor, isValidImageAttachment, isValidVideoAttachment, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal
 
-// Module 7551 (ForumPostMediaUtils)
+// Module 8454 (ForumPostMediaUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react2 from "react" /* 576 */;
-import URLUtilsDefault from "URLUtils" /* 1371 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import FlagUtils from "FlagUtils" /* 1390 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5046 */;
+import URLUtilsDefault from "URLUtils" /* 1383 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import FlagUtils from "FlagUtils" /* 1402 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5415 */;
 import react from "react" /* 19 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 6819 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import MessageStore from "MessageStore" /* 5116 */;
-import UserStore from "UserStore" /* 1377 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 6992 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import MessageStore from "MessageStore" /* 5428 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, components, embeds, type;
+let _require, type, version;
 
 let c9;
 let metroImportAll;
 let tmp;
-const InteractionComponentUtils = tmp(5120);
+const InteractionComponentUtils = tmp(5432);
 function isMediaAttachment(filename) {
   let height;
   let width;
@@ -157,7 +157,7 @@ function getForumPostMedia(attachments, InlineAttachmentMedia) {
 ({ MessageAttachmentFlags: metroImportAll, MessageEmbedMediaFlags: c9 } = Constants);
 const ForumPostMediaTypes = { EMBED: "embed", ATTACHMENT: "attachment", COMPONENT: "component" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((attachments) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPostMedia(attachments) {
   const obj = react2;
   const cResult = obj.c(3);
   const InlineAttachmentMedia = UserSettings.InlineAttachmentMedia;
@@ -174,12 +174,12 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((attachments) =
   cResult[1] = attachments;
   cResult[2] = tmp4;
   tmp3 = tmp4;
-}) : ((attachments) => {
+}) : (function useForumPostMedia(attachments) {
   const InlineAttachmentMedia = UserSettings.InlineAttachmentMedia;
   return getForumPostMedia(attachments, InlineAttachmentMedia.useSetting());
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((embeds, spoiler) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPostEmbeds(embeds, spoiler) {
   _require = spoiler;
   let tmp = _require;
   let obj = require("react");
@@ -279,7 +279,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((embeds, spoile
             tmp10 = cResult[6];
           }
           const mapped = embeds1.map(tmp10);
-          const found = mapped.filter(tmp(1375).isNotNullish);
+          const found = mapped.filter(tmp(1387).isNotNullish);
           cResult[2] = embeds1;
           cResult[3] = spoiler;
           cResult[4] = found;
@@ -297,7 +297,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((embeds, spoile
     }
     return tmp13;
   }
-}) : ((embeds, spoiler) => {
+}) : (function useForumPostEmbeds(embeds, spoiler) {
   _require = spoiler;
   let tmp = _require;
   const InlineEmbedMedia = require("UserSettings").InlineEmbedMedia;
@@ -370,7 +370,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((embeds, spoile
               }
             }
           });
-          found = mapped.filter(tmp(1375).isNotNullish);
+          found = mapped.filter(tmp(1387).isNotNullish);
         }
         return found;
       }
@@ -379,7 +379,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((embeds, spoile
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((components) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPostComponentsMedia(components) {
   let tmp4;
   const tmp = require;
   const tmp2 = dependencyMap;
@@ -414,7 +414,6 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((components) => {
             let num;
             let spoiler;
             let tmpResult2;
-            let version;
             type = type.type;
             if (require("Server").ComponentType.THUMBNAIL === type) {
               ({ media, spoiler } = type);
@@ -452,7 +451,6 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((components) => {
                 let num;
                 let spoiler;
                 let tmpResult;
-                let version;
                 ({ media, spoiler } = item);
                 if (spoiler == null) {
                   spoiler = false;
@@ -506,7 +504,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((components) => {
       tmp6 = cResult[1];
     }
   }
-}) : ((components) => {
+}) : (function useForumPostComponentsMedia(components) {
   const tmp = require;
   const tmp2 = dependencyMap;
   const InlineEmbedMedia = UserSettings.InlineEmbedMedia;
@@ -528,7 +526,6 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((components) => {
           let num;
           let spoiler;
           let tmpResult2;
-          let version;
           type = type.type;
           if (require("Server").ComponentType.THUMBNAIL === type) {
             ({ media, spoiler } = type);
@@ -566,7 +563,6 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((components) => {
               let num;
               let spoiler;
               let tmpResult;
-              let version;
               ({ media, spoiler } = item);
               if (spoiler == null) {
                 spoiler = false;
@@ -607,7 +603,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((components) => {
 });
 let closure_15 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, isMediaChannel, arg2) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPostMediaThumbnail(arg0, isMediaChannel, arg2) {
   let first;
   const obj = react2;
   const cResult = obj.c(7);
@@ -668,7 +664,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, isMediaChannel
     }
   }
   return first;
-}) : ((arg0, arg1) => {
+}) : (function useForumPostMediaThumbnail(arg0, arg1) {
   let closure_0 = arg1;
   let flag = arg2;
   if (arg2 === undefined) {
@@ -697,7 +693,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, isMediaChannel
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPostMediaProperties(arg0, arg1) {
   const obj = react2;
   const cResult = obj.c(4);
   const tmp2 = closure_13(arg0);
@@ -718,13 +714,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[2] = tmp2;
   cResult[3] = items;
   tmp5 = items;
-}) : ((arg0, arg1) => {
+}) : (function useForumPostMediaProperties(arg0, arg1) {
   const items = [...closure_13(arg0), ...closure_14(arg0, arg1), ...closure_15(arg0)];
   return items;
 });
 let closure_16 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFindFirstMediaProperties(arg0, arg1) {
   let first = closure_13(arg0)[0];
   const tmp = closure_13(arg0);
   const tmp2 = closure_14(arg0, arg1);
@@ -739,7 +735,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     first = null;
   }
   return first;
-}) : ((arg0, arg1) => {
+}) : (function useFindFirstMediaProperties(arg0, arg1) {
   let first = closure_13(arg0)[0];
   const tmp = closure_13(arg0);
   const tmp2 = closure_14(arg0, arg1);
@@ -756,12 +752,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   return first;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFirstMediaIsEmbed(arg0, arg1) {
   const tmp = closure_13(arg0);
   const tmp2 = closure_14(arg0, arg1);
   const tmp3 = null == tmp[0] && null == closure_15(arg0)[0] && null != tmp2[0];
   return tmp3;
-}) : ((arg0, arg1) => {
+}) : (function useFirstMediaIsEmbed(arg0, arg1) {
   const tmp = closure_13(arg0);
   const tmp2 = closure_14(arg0, arg1);
   const tmp3 = null == tmp[0] && null == closure_15(arg0)[0] && null != tmp2[0];

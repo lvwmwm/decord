@@ -1,18 +1,18 @@
-// Module ID: 13251
-// Function ID: 13252
+// Module ID: 13551
+// Function ID: 13552
 // Name: PremiumMarketingButtonActions
-// Dependencies: [10409, 1379, 1085, 10416, 13252, 6941, 6926, 13253, 6895, 2]
+// Dependencies: [10006, 1391, 1085, 10013, 13552, 7130, 7115, 13553, 7084, 2]
 // Exports: getButtonActionHandler
 
-// Module 13251 (PremiumMarketingButtonActions)
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import openUserSettings from "openUserSettings" /* 6895 */;
-import ProductIds from "ProductIds" /* 6926 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 6941 */;
-import cta_button from "cta_button" /* 10416 */;
-import navigateToSocialLayerStorefrontDefault from "navigateToSocialLayerStorefront" /* 13252 */;
-import showMarketingMomentRewardScreen from "showMarketingMomentRewardScreen" /* 13253 */;
-import PromotionsStore from "PromotionsStore" /* 10409 */;
+// Module 13551 (PremiumMarketingButtonActions)
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import openUserSettings from "openUserSettings" /* 7084 */;
+import ProductIds from "ProductIds" /* 7115 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7130 */;
+import cta_button from "cta_button" /* 10013 */;
+import navigateToSocialLayerStorefrontDefault from "navigateToSocialLayerStorefront" /* 13552 */;
+import showMarketingMomentRewardScreen from "showMarketingMomentRewardScreen" /* 13553 */;
+import PromotionsStore from "PromotionsStore" /* 10006 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -76,7 +76,7 @@ export const getButtonActionHandler = function getButtonActionHandler(arg0) {
         analyticsLocations: importDefault,
         premiumType: PremiumTypes.TIER_2,
         onPaymentSuccess: PromotionsStore,
-        onPaymentDismiss(arg0) {
+        onPaymentDismiss: function handlePaymentDismiss(arg0) {
           let isSuccess;
           let productId;
           ({ productId, isSuccess } = arg0);

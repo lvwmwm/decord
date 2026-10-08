@@ -1,12 +1,12 @@
-// Module ID: 12816
-// Function ID: 12817
+// Module ID: 12963
+// Function ID: 12964
 // Name: SafetyExperienceIarUserReportingExperiment
-// Dependencies: [4780, 558, 576, 2]
+// Dependencies: [4974, 558, 576, 2]
 // Exports: isIarUserReportingEnabled
 
-// Module 12816 (SafetyExperienceIarUserReportingExperiment)
+// Module 12963 (SafetyExperienceIarUserReportingExperiment)
 import react from "react" /* 576 */;
-import createExperiment from "module_4780" /* 4780 */;
+import createExperiment from "module_4974" /* 4974 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ let items;
 let obj = { kind: "user", id: "2023-09_iar_user_reporting", label: "Safety Experience IAR User Reporting", defaultConfig: { enabled: false }, treatments: items };
 items = [{ id: 1, label: "Enabled", config: { enabled: true } }];
 const experiment = createExperiment.createExperiment(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsIarUserReportingEnabled(location) {
   let tmp2;
   let tmp3;
   const obj = react;
@@ -35,7 +35,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp3 = cResult[2];
   }
   return experiment.useExperiment(tmp2, tmp3).enabled;
-}) : ((location) => {
+}) : (function useIsIarUserReportingEnabled(location) {
   const obj = { location };
   return experiment.useExperiment(obj, { autoTrackExposure: true }).enabled;
 });

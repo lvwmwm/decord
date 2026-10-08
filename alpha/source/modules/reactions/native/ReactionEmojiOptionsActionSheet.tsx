@@ -1,30 +1,28 @@
-// Module ID: 9992
-// Function ID: 9993
+// Module ID: 9522
+// Function ID: 9523
 // Name: ReactionEmojiOptionsActionSheet
-// Dependencies: [19, 17, 4885, 5645, 4705, 21, 4896, 587, 558, 576, 2028, 6694, 504, 9883, 1402, 4860, 9956, 9958, 4892, 1126, 4580, 9952, 4574, 6695, 4573, 7273, 6632, 6000, 6081, 6708, 2]
+// Dependencies: [19, 17, 5079, 5992, 4899, 21, 5090, 587, 558, 576, 2040, 6871, 504, 9363, 1414, 5054, 9483, 9485, 5086, 1126, 4772, 9479, 4766, 6872, 4765, 7872, 6809, 6184, 6267, 6885, 2]
 
-// Module 9992 (ReactionEmojiOptionsActionSheet)
+// Module 9522 (ReactionEmojiOptionsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import ToastUtils from "ToastUtils" /* 4573 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4580 */;
-import ClipboardUtils from "ClipboardUtils" /* 6695 */;
-import ReactionActionCreatorsAll from "ReactionActionCreators" /* 7273 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9952 */;
-import StarIcon from "StarIcon" /* 9956 */;
-import StarOutlineIcon2 from "StarOutlineIcon" /* 9958 */;
+import ToastUtils from "ToastUtils" /* 4765 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4772 */;
+import ClipboardUtils from "ClipboardUtils" /* 6872 */;
+import ReactionActionCreatorsAll from "ReactionActionCreators" /* 7872 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9479 */;
+import StarIcon from "StarIcon" /* 9483 */;
+import StarOutlineIcon2 from "StarOutlineIcon" /* 9485 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import EmojiStore from "EmojiStore" /* 5645 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import EmojiStore from "EmojiStore" /* 5992 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channelId;
 
 let c10;
 let c9;
@@ -42,7 +40,7 @@ obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "center", b
 obj4 = { tintColor: nativeDefault.colors.ICON_FEEDBACK_WARNING };
 obj5 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 let closure_11 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactionEmojiOptionsActionSheet(channelId) {
   let canRemoveReactions;
   let emoji;
   let guildId;
@@ -82,7 +80,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const tidaWebformEnabled = obj4.useExperiment(tmp6, tmp7).tidaWebformEnabled;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SelectedGuildStore];
-    const fn = function y() {
+    const fn = function j() {
       return guildId.getGuildId();
     };
     cResult[2] = items;
@@ -227,7 +225,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[11] = emoji.id;
   cResult[12] = tmp21;
   cResult[13] = emojiURL;
-}) : ((channelId) => {
+}) : (function ReactionEmojiOptionsActionSheet(channelId) {
   let Text2;
   let animated;
   let canRemoveReactions;
@@ -308,9 +306,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     }
     const tmp8 = React4;
     if (arg0) {
-      StarOutlineIcon = tmp9(9956).StarIcon;
+      StarOutlineIcon = tmp9(9483).StarIcon;
     } else {
-      StarOutlineIcon = tmp9(9958).StarOutlineIcon;
+      StarOutlineIcon = tmp9(9485).StarOutlineIcon;
     }
     return tmp8(StarOutlineIcon, { style });
   }, items4);

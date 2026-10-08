@@ -1,18 +1,18 @@
-// Module ID: 1192
-// Function ID: 1193
+// Module ID: 1204
+// Function ID: 1205
 // Name: FormConstants
-// Dependencies: [1193, 1369, 587, 4872, 4735, 2]
+// Dependencies: [1205, 1381, 587, 5066, 4929, 2]
 // Exports: getThemedRippleConfig
 
-// Module 1192 (FormConstants)
+// Module 1204 (FormConstants)
 import nativeDefault from "native" /* 587 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import DeviceUtils from "DeviceUtils" /* 4872 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import DeviceUtils from "DeviceUtils" /* 5066 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const shared = tmp(4735);
+const shared = tmp(4929);
 let num = 24;
 if (PlatformUtils.isAndroid()) {
   num = 32;

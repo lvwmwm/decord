@@ -1,25 +1,25 @@
-// Module ID: 15923
-// Function ID: 15924
+// Module ID: 16183
+// Function ID: 16184
 // Name: RegisterPhoneOrEmailInput
-// Dependencies: [19, 6437, 15906, 21, 558, 576, 1490, 14289, 504, 6458, 1105, 1126, 6457, 2]
+// Dependencies: [19, 6615, 16165, 21, 558, 576, 1502, 14113, 504, 6636, 1105, 1126, 6635, 2]
 
-// Module 15923 (RegisterPhoneOrEmailInput)
+// Module 16183 (RegisterPhoneOrEmailInput)
 import Fragment from "Fragment" /* 21 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 6458 */;
+import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 6636 */;
 import react from "react" /* 19 */;
-import PhoneStore from "PhoneStore" /* 6437 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 15906 */;
+import PhoneStore from "PhoneStore" /* 6615 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 16165 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let loginPhone, navigation;
+let navigation, tmp4, tmp7;
 
 let hasOwnProperty;
 let metroRequire;
 ({ setRegistrationErrors: hasOwnProperty, useRegistrationUIStore: metroRequire } = RegistrationUIStore);
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((loginPhone) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterPhoneOrEmailInput(loginPhone) {
   let autoFocus;
   let closure_8;
   let inputError;
@@ -73,30 +73,30 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((loginPhone) => {
   const tmpResult = tmp(tmp2[8]);
   const stateFromStores = tmpResult.useStateFromStores(tmp8, tmp9);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class T {
-      constructor(errors) {
-        return errors.errors;
+    class H {
+      constructor(arg0) {
+        return loginPhone.errors;
       }
     }
-    cResult[4] = T;
+    cResult[4] = H;
     class E {
       constructor() {
         return inputMode.getCountryCode();
       }
     }
   } else {
-    class T {
-      constructor(errors) {
-        return errors.errors;
+    class H {
+      constructor(arg0) {
+        return loginPhone.errors;
       }
     }
   }
   const tmp13 = ref(tmp12);
   let closure_7 = tmp13;
   if (cResult[5] !== tmp13) {
-    class T {
-      constructor(errors) {
-        return errors.errors;
+    class H {
+      constructor(arg0) {
+        return loginPhone.errors;
       }
     }
     cResult[5] = tmp13;
@@ -107,35 +107,45 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((loginPhone) => {
     }
     cResult[6] = tmp15;
   } else {
-    class T {
-      constructor(errors) {
-        return errors.errors;
+    class H {
+      constructor(arg0) {
+        return loginPhone.errors;
       }
     }
   }
   tmp15 = tmp14;
   if (cResult[7] === tmp14) {
-    class T {
-      constructor(errors) {
-        return errors.errors;
+    class H {
+      constructor(arg0) {
+        return loginPhone.errors;
       }
     }
   }
-  const fn = function k(arg0, arg1) {
-    if (inputMode === PhoneOrEmailUtils.PhoneOrEmailSelectorForceMode.PHONE) {
-      tmp15("phone");
-      setLoginPhone(arg0, arg1);
-    } else {
-      tmp15("email");
-      setLoginEmail(arg0);
+  class L {
+    constructor(arg0, arg1) {
+      if (inputMode === closure_0(closure_2[9]).PhoneOrEmailSelectorForceMode.PHONE) {
+        tmp5 = arg1;
+        tmp6 = closure_8;
+        str2 = "phone";
+        tmp7 = closure_8("phone");
+        tmp8 = setLoginPhone;
+        tmp9 = setLoginPhone(loginPhone, arg1);
+      } else {
+        tmp = closure_8;
+        str = "email";
+        tmp2 = closure_8("email");
+        tmp3 = setLoginEmail;
+        tmp4 = setLoginEmail(loginPhone);
+      }
+      return;
     }
-  };
+  }
   cResult[7] = tmp14;
   cResult[8] = inputMode;
   cResult[9] = setLoginEmail;
   cResult[10] = setLoginPhone;
-  cResult[11] = fn;
-}) : ((loginPhone) => {
+  cResult[11] = L;
+}) : (function RegisterPhoneOrEmailInput(loginPhone) {
   let autoFocus;
   let inputError;
   let onSubmit;

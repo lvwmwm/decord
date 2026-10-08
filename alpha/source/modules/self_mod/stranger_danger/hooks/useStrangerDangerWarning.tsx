@@ -1,23 +1,23 @@
-// Module ID: 9798
-// Function ID: 9799
+// Module ID: 10362
+// Function ID: 10363
 // Name: useStrangerDangerWarning
-// Dependencies: [1377, 9799, 558, 576, 504, 9800, 9801, 9802, 8327, 9803, 2]
+// Dependencies: [1389, 10266, 558, 576, 504, 10363, 10364, 10365, 7710, 10366, 2]
 
-// Module 9798 (useStrangerDangerWarning)
+// Module 10362 (useStrangerDangerWarning)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import useUserIsTeen from "useUserIsTeen" /* 8327 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 9799 */;
-import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 9800 */;
-import useIsMessageRequest from "useIsMessageRequest" /* 9801 */;
-import useChannelSafetyWarning from "useChannelSafetyWarning" /* 9802 */;
-import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 9803 */;
-import UserStore from "UserStore" /* 1377 */;
+import useUserIsTeen from "useUserIsTeen" /* 7710 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10266 */;
+import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 10363 */;
+import useIsMessageRequest from "useIsMessageRequest" /* 10364 */;
+import useChannelSafetyWarning from "useChannelSafetyWarning" /* 10365 */;
+import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 10366 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const SafetyWarningTypes = ChannelSafetyWarningsStore.SafetyWarningTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStrangerDangerWarning(arg0) {
   let currentUser;
   let tmp4;
   let tmp5;
@@ -58,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-}) : ((arg0) => {
+}) : (function useStrangerDangerWarning(arg0) {
   let currentUser;
   const items = [UserStore];
   const obj = get_initialized;

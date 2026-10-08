@@ -1,22 +1,22 @@
-// Module ID: 16365
-// Function ID: 16366
+// Module ID: 16625
+// Function ID: 16626
 // Name: YouBarBackground
-// Dependencies: [19, 17, 14915, 21, 4896, 587, 558, 576, 683, 5612, 6059, 4586, 15001, 4618, 5604, 2]
+// Dependencies: [19, 17, 15177, 21, 5090, 587, 558, 576, 683, 5387, 6245, 4778, 15263, 4810, 5374, 2]
 
-// Module 16365 (YouBarBackground)
+// Module 16625 (YouBarBackground)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
-import useToken2 from "useToken" /* 4586 */;
-import spring from "spring" /* 5604 */;
-import LinearGradientDefault from "LinearGradient" /* 5612 */;
-import _modDef6059 from "module_6059" /* 6059 */;
-import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 15001 */;
+import useToken2 from "useToken" /* 4778 */;
+import spring from "spring" /* 5374 */;
+import LinearGradientDefault from "LinearGradient" /* 5387 */;
+import _modDef6245 from "module_6245" /* 6245 */;
+import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 15263 */;
 import react from "react" /* 19 */;
-import YouBarConstants from "YouBarConstants" /* 14915 */;
+import YouBarConstants from "YouBarConstants" /* 15177 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp4;
-const ReanimatedRexportDefault = tmp4(4618);
+const ReanimatedRexportDefault = tmp4(4810);
 const View = react_native.View;
 const YOU_BAR_HEIGHT = YouBarConstants.YOU_BAR_HEIGHT;
 const YOU_BAR_SPRING_CONFIG = YouBarConstants.YOU_BAR_SPRING_CONFIG;
@@ -36,7 +36,7 @@ let obj = { youRowFloating: obj2 };
 obj2 = { borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, borderRadius: nativeDefault.modules.mobile.YOU_BAR_BORDER_RADIUS, borderTopLeftRadius: YOU_BAR_HEIGHT / 2, borderBottomLeftRadius: YOU_BAR_HEIGHT / 2 };
 let closure_8 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((avatarSize) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouBarMaskedBackground(avatarSize) {
   let backgroundColor;
   let barWidth;
   let first;
@@ -159,7 +159,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((avatarSize) => 
             return tmp39;
           }
           const obj6 = { style: first, maskElement: tmp31, children: tmp35 };
-          const tmp42 = metroRequire(_modDef6059, obj6);
+          const tmp42 = metroRequire(_modDef6245, obj6);
           cResult[24] = tmp31;
           cResult[25] = tmp35;
           cResult[26] = tmp42;
@@ -188,7 +188,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((avatarSize) => 
   cResult[16] = tmp14;
   cResult[17] = tmp32;
   tmp31 = tmp32;
-}) : ((barWidth) => {
+}) : (function YouBarMaskedBackground(barWidth) {
   let avatarSize;
   let backgroundColor;
   let items;
@@ -208,7 +208,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((avatarSize) => 
   rect = { position: "absolute", top: 0, left: 0, right: 0, bottom: YOU_BAR_HEIGHT / 2 - 1, backgroundColor: "black" };
   items = [, , ];
   const tmp = closure_8();
-  const tmp3 = _modDef6059;
+  const tmp3 = _modDef6245;
   items[0] = metroRequire(View, obj3);
   const obj4 = { style: { position: "absolute", top: YOU_BAR_HEIGHT / 2, left: diff - 1, right: 0, bottom: 0, backgroundColor: "black" } };
   items[1] = metroRequire(View, obj4);
@@ -228,7 +228,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((avatarSize) => 
 const __initData = { code: "function YouBarBackgroundTsx1(){const{withSpring,questDockAnimatedBorderRadius,YOU_BAR_SPRING_CONFIG,questDockAnimatedBottomLeftRadius}=this.__closure;return{borderTopRightRadius:withSpring(questDockAnimatedBorderRadius.get(),YOU_BAR_SPRING_CONFIG),borderTopLeftRadius:withSpring(questDockAnimatedBorderRadius.get(),YOU_BAR_SPRING_CONFIG),borderBottomLeftRadius:withSpring(questDockAnimatedBottomLeftRadius.get(),YOU_BAR_SPRING_CONFIG)};}" };
 const __initData2 = { code: "function YouBarBackgroundTsx2(){const{withSpring,questDockAnimatedBorderRadius,YOU_BAR_SPRING_CONFIG,questDockAnimatedBottomLeftRadius}=this.__closure;return{borderTopRightRadius:withSpring(questDockAnimatedBorderRadius.get(),YOU_BAR_SPRING_CONFIG),borderTopLeftRadius:withSpring(questDockAnimatedBorderRadius.get(),YOU_BAR_SPRING_CONFIG),borderBottomLeftRadius:withSpring(questDockAnimatedBottomLeftRadius.get(),YOU_BAR_SPRING_CONFIG)};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouBarAnimatedBackground(arg0) {
   let backgroundColor;
   let barWidth;
   let closure_0;
@@ -306,7 +306,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = barWidth;
   cResult[3] = size;
   tmp11 = size;
-}) : ((arg0) => {
+}) : (function YouBarAnimatedBackground(arg0) {
   let backgroundColor;
   let barWidth;
   let closure_0;
@@ -342,7 +342,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return closure_6(ReanimatedRexportDefault.View, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function YouBarBackground(arg0) {
   let avatarSize;
   let barWidth;
   let hasNameplate;
@@ -389,7 +389,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     tmp4 = tmp7;
   }
   return tmp4;
-}) : ((barWidth) => {
+}) : (function YouBarBackground(barWidth) {
   let avatarSize;
   let hasNameplate;
   let isLargeAvatar;

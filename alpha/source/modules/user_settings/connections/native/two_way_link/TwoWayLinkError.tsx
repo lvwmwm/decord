@@ -1,21 +1,21 @@
-// Module ID: 8793
-// Function ID: 8794
+// Module ID: 9162
+// Function ID: 9163
 // Name: TwoWayLinkError
-// Dependencies: [19, 17, 21, 4896, 558, 576, 8774, 8794, 4892, 1126, 5601, 5600, 6626, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 9120, 9163, 5086, 1126, 5375, 5373, 6803, 2]
 
-// Module 8793 (TwoWayLinkError)
+// Module 9162 (TwoWayLinkError)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Stack_Stack from "Stack/Stack" /* 5600 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6626 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 8774 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8794 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Stack_Stack from "Stack/Stack" /* 5373 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6803 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9120 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9163 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let metroRequire;
 ({ Image: c3, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ image: { width: 254, height: 127, marginBottom: 32 } });
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLinkError(arg0) {
   let body;
   let footerButton;
   let footerContainer;
@@ -182,7 +182,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = title;
   cResult[4] = tmp12;
   tmp11 = tmp12;
-}) : ((arg0) => {
+}) : (function TwoWayLinkError(arg0) {
   let Stack;
   let body;
   let intl;

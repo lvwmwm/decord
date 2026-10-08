@@ -1,27 +1,27 @@
-// Module ID: 11865
-// Function ID: 11866
+// Module ID: 12864
+// Function ID: 12865
 // Name: ScheduledMessageEditContentModal
-// Dependencies: [5, 32, 19, 17, 2051, 21, 4896, 587, 558, 576, 1618, 8839, 504, 7179, 7486, 11854, 5099, 1126, 7509, 1369, 6017, 5916, 4892, 6026, 6587, 2]
+// Dependencies: [5, 32, 19, 17, 2063, 21, 5090, 587, 558, 576, 1630, 9198, 504, 7358, 9228, 9227, 5940, 1126, 9232, 1381, 6203, 6189, 5086, 6212, 6763, 2]
 
-// Module 11865 (ScheduledMessageEditContentModal)
+// Module 12864 (ScheduledMessageEditContentModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Pressables from "Pressables" /* 5916 */;
-import MessageParserDefault from "MessageParser" /* 7179 */;
-import ScheduledMessageUtils from "ScheduledMessageUtils" /* 7486 */;
-import HeaderShared from "HeaderShared" /* 7509 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Pressables from "Pressables" /* 6189 */;
+import MessageParserDefault from "MessageParser" /* 7358 */;
+import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9228 */;
+import HeaderShared from "HeaderShared" /* 9232 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let _require, c1, scheduledMessage;
+let c1;
 
 let c9;
 let metroImportAll;
@@ -41,10 +41,11 @@ obj3 = { paddingLeft: nativeDefault.space.PX_16 };
 obj4 = { paddingRight: nativeDefault.space.PX_16 };
 obj5 = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_24 };
 let closure_10 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledMessageEditContentModal(scheduledMessage) {
   let channelId;
   let first;
   let first1;
+  let fn;
   let onPress;
   let stateFromStores;
   let title;
@@ -89,7 +90,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) =>
         return ChannelStore.getChannel(channelId);
       }
     }
-    [first1] = react.useState(R);
+    [first1] = react.useState(fn);
     if (cResult[6] === stateFromStores) {
       class C {
         constructor() {
@@ -97,7 +98,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) =>
         }
       }
     }
-    _require = first1(function*(arg0, value) {
+    let closure_0 = first1(function*(arg0, value) {
       let obj6;
       if (c2 === 2) {
         c2 = 3;
@@ -153,27 +154,25 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) =>
         }
       }
     });
-    const fn = function() {
+    function t4() {
       return closure_0(...arguments);
-    };
+    }
     cResult[6] = stateFromStores;
     cResult[7] = first1;
     cResult[8] = scheduledMessage.createArgs.flags;
     cResult[9] = scheduledMessage.scheduledMessageId;
-    cResult[10] = fn;
+    cResult[10] = t4;
   }
-  class R {
-    constructor() {
-      const unparse = MessageParserDefault.unparse;
-      MessageParserDefault;
-      const obj = ScheduledMessageUtils;
-      return unparse(obj.unparseContentAndFlagsForSilentMessage(scheduledMessage.createArgs), channelId);
-    }
-  }
+  fn = function v() {
+    const unparse = MessageParserDefault.unparse;
+    MessageParserDefault;
+    const obj = ScheduledMessageUtils;
+    return unparse(obj.unparseContentAndFlagsForSilentMessage(scheduledMessage.createArgs), channelId);
+  };
   cResult[3] = channelId;
   cResult[4] = scheduledMessage.createArgs;
-  cResult[5] = R;
-}) : ((scheduledMessage) => {
+  cResult[5] = fn;
+}) : (function ScheduledMessageEditContentModal(scheduledMessage) {
   let items2;
   let num;
   let onPress;

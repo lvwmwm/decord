@@ -1,22 +1,22 @@
-// Module ID: 8968
-// Function ID: 8969
+// Module ID: 9759
+// Function ID: 9760
 // Name: ApplicationCommandQueryApi
-// Dependencies: [32, 19, 2074, 8827, 5795, 1085, 7043, 8833, 558, 576, 504, 8835, 1375, 1985, 8832, 8957, 7047, 2]
+// Dependencies: [32, 19, 2086, 9186, 5399, 1085, 7231, 9192, 558, 576, 504, 9194, 1387, 1997, 9191, 9760, 7235, 2]
 // Exports: executeQuery, getCachedApplicationSection, getCachedCommand, getCachedResults, getChangeKeys, useCommand
 
-// Module 8968 (ApplicationCommandQueryApi)
+// Module 9759 (ApplicationCommandQueryApi)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import Server from "Server" /* 1985 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5795 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7043 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7047 */;
-import CommandPermissionUtils from "CommandPermissionUtils" /* 8957 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import Server from "Server" /* 1997 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5399 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7231 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7235 */;
+import CommandPermissionUtils from "CommandPermissionUtils" /* 9760 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 8827 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 9186 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,8 +30,8 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let tmp2;
-const ApplicationCommandQueryTypes = tmp(8833);
-const ApplicationCommandBuiltIns = tmp2(8835);
+const ApplicationCommandQueryTypes = tmp(9192);
+const ApplicationCommandBuiltIns = tmp2(9194);
 function findCommandInSection(found, commandId) {
   let str;
   let closure_0 = commandId;
@@ -78,7 +78,7 @@ ApplicationCommandIndexStore = ApplicationCommandIndexStore_mod;
 const BuiltInSectionId = ApplicationCommandConstants.BuiltInSectionId;
 const NOOP = Constants.NOOP;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, text) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCachedResults(arg0, arg1, text) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(9);
@@ -124,7 +124,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, text) =>
   cResult[3] = text;
   cResult[4] = obj7;
   tmp5 = obj7;
-}) : ((arg0, arg1, text) => {
+}) : (function useCachedResults(arg0, arg1, text) {
   let closure_0 = arg1;
   items = [arg1];
   const obj = {
@@ -139,7 +139,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, text) =>
   return { commands: tmp.commands, sections: tmp.descriptors };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiscovery(arg0) {
   let allowFetch;
   let closure_2;
   let commands;
@@ -323,7 +323,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 return section.section.id === first1;
               }
             }
-            const tmp49 = guild_id(8835).BUILT_IN_SECTIONS[BuiltInSectionId.BUILT_IN];
+            const tmp49 = guild_id(9194).BUILT_IN_SECTIONS[BuiltInSectionId.BUILT_IN];
             const _Symbol2 = Symbol;
             if (cResult[40] === Symbol.for("react.memo_cache_sentinel")) {
               class G {
@@ -419,7 +419,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = options;
   cResult[6] = obj3;
   tmp10 = obj3;
-}) : ((options) => {
+}) : (function useDiscovery(options) {
   let context;
   let filters;
   ({ context, filters } = options);
@@ -531,7 +531,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, placeholderCount) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuery(arg0, arg1, placeholderCount) {
   let commands;
   let descriptors;
   let loading;
@@ -620,7 +620,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, placehol
   cResult[3] = num3;
   cResult[4] = items2;
   tmp10 = items2;
-}) : ((arg0, commandTypes, placeholderCount) => {
+}) : (function useQuery(arg0, commandTypes, placeholderCount) {
   let closure_0 = commandTypes;
   let obj = { allowFetch: true };
   const merged = Object.assign(placeholderCount);
@@ -669,7 +669,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, placehol
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arr) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCommandsForApplication(arg0, arg1, arr) {
   let closure_0;
   let tmp18;
   let obj = require("react");
@@ -758,7 +758,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arr) => 
     }
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function h(arg0, id) {
+    const fn = function f(arg0, id) {
       arg0[id.id] = id;
       return arg0;
     };
@@ -795,7 +795,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arr) => 
     }
   }
   const mapped1 = arr.map((item) => closure_0[item]);
-  const found = mapped1.filter(tmp(1375).isNotNullish);
+  const found = mapped1.filter(tmp(1387).isNotNullish);
   cResult[0] = arr;
   let commands2;
   if (tmp10 != null) {
@@ -814,7 +814,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arr) => 
   cResult[4] = found;
   tmp17 = found;
   tmp16 = application1;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useCommandsForApplication(arg0, arg1, arg2) {
   let closure_0 = arg1;
   let closure_1 = arg2;
   let tmp = closure_9(true, true);
@@ -915,7 +915,7 @@ let closure_14 = tmp6;
 let items = [Server.ApplicationCommandType.CHAT];
 ReactCompilerGating = ReactCompilerGating_mod;
 let section = { id: "placeholder-section", type: ApplicationCommandTypes.ApplicationCommandSectionType.APPLICATION, name: "" };
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel, arg1, arg2) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccessibleCommandsForApplication(channel, arg1, arg2) {
   let application;
   let commands;
   let isUserInstalled;
@@ -1014,7 +1014,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel, arg1, arg2)
   cResult[10] = tmp7;
   cResult[11] = obj3;
   tmp17 = obj3;
-}) : ((channel, arg1, arg2) => {
+}) : (function useAccessibleCommandsForApplication(channel, arg1, arg2) {
   let isUserInstalled;
   let items1;
   _require = channel;
@@ -1082,7 +1082,7 @@ let result = size.fileFinishedImporting("modules/application_commands/Applicatio
 export const getCachedCommand = function getCachedCommand(type, commandId, applicationId) {
   let closure_0 = applicationId;
   if (null == commandId) {
-    return { application: "duration", command: "toCharArray$esjava$1", section: "toCharArray$esjava$1" };
+    return { application: "useSharedValue", command: "apply", section: "next" };
   } else {
     const userState = ApplicationCommandIndexStore.getUserState();
     const result2 = userState.result;
@@ -1133,7 +1133,7 @@ export const getCachedCommand = function getCachedCommand(type, commandId, appli
         }
       }
     }
-    return { application: "duration", command: "toCharArray$esjava$1", section: "toCharArray$esjava$1" };
+    return { application: "useSharedValue", command: "apply", section: "next" };
   }
 };
 export const getCachedApplicationSection = function getCachedApplicationSection(type, CHAT, applicationId) {
@@ -1281,7 +1281,7 @@ export const useCommand = function useCommand(cResult, commandId) {
         }
       }
     }
-    return { command: "start", application: "unicodeVersion" };
+    return { command: "Array", application: "Reflect" };
   }, items);
 };
 export const useCommandsForApplication = tmp6;

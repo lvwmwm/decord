@@ -1,9 +1,9 @@
-// Module ID: 11586
-// Function ID: 11587
+// Module ID: 11649
+// Function ID: 11650
 // Name: DiceRollStore
 // Dependencies: [570, 558, 576, 2]
 
-// Module 11586 (DiceRollStore)
+// Module 11649 (DiceRollStore)
 import react from "react" /* 576 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -11,7 +11,7 @@ import size from "module_2" /* 2 */;
 
 const INITIAL_STATE = { channelId: null, rolling: false, dismissing: false, diceCount: 1, diceSides: 6, results: null };
 const obj2 = module_570.create(() => obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiceRollState(arg0) {
   let tmp2;
   let closure_0 = arg0;
   const obj = react;
@@ -31,7 +31,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = cResult[1];
   }
   return obj2(tmp2);
-}) : ((arg0) => {
+}) : (function useDiceRollState(arg0) {
   let closure_0 = arg0;
   return obj2((channelId) => {
     let tmp = null;

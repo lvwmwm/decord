@@ -1,15 +1,15 @@
-// Module ID: 16683
-// Function ID: 16684
+// Module ID: 16949
+// Function ID: 16950
 // Name: ConjureNativeCollapsibleSection
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4892, 10857, 6715, 5916, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 5086, 10508, 6892, 8517, 2]
 
-// Module 16683 (ConjureNativeCollapsibleSection)
+// Module 16949 (ConjureNativeCollapsibleSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -29,8 +29,9 @@ createStyles = createStyles.createStyles;
 obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_8 };
 obj4 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
 let closure_6 = createStyles(obj);
+const PX_8 = nativeDefault.space.PX_8;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativeCollapsibleMeta(arg0) {
   let accessibilityLabel;
   let accessibilityLiveRegion;
   let children;
@@ -52,7 +53,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = children;
   cResult[3] = tmp5;
   tmp4 = tmp5;
-}) : ((arg0) => {
+}) : (function ConjureNativeCollapsibleMeta(arg0) {
   let accessibilityLabel;
   let accessibilityLiveRegion;
   let children;
@@ -60,7 +61,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return React3(Text_Text.Text, { variant: "text-sm/medium", color: "text-muted", accessibilityLabel, accessibilityLiveRegion, children });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativeCollapsibleSection(children) {
   let ChevronSmallRightIcon;
   let expanded;
   let hideLabel;
@@ -75,7 +76,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   let showLabel;
   let superseded;
   let title;
-  let tmp14;
+  let tmp15;
   const obj = react2;
   const cResult = obj.c(16);
   ({ title, meta, showHeader, superseded, expanded, onToggleExpanded, showLabel, hideLabel } = children);
@@ -86,9 +87,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   }
   const tmp7 = closure_6();
   if (undefined === expanded || expanded) {
-    ChevronSmallRightIcon = tmp(10857).ChevronSmallDownIcon;
+    ChevronSmallRightIcon = tmp(10508).ChevronSmallDownIcon;
   } else {
-    ChevronSmallRightIcon = tmp(6715).ChevronSmallRightIcon;
+    ChevronSmallRightIcon = tmp(6892).ChevronSmallRightIcon;
   }
   if (cResult[0] === ChevronSmallRightIcon) {
     if (cResult[1] === (undefined === expanded || expanded)) {
@@ -104,27 +105,27 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
                       if (cResult[10] === title) {
                         tmp8 = cResult[11];
                       }
-                      let tmp16 = null;
+                      let tmp17 = null;
                       if (undefined === expanded || expanded) {
-                        tmp16 = children;
+                        tmp17 = children;
                       }
                       if (cResult[12] === tmp7.root) {
                         if (cResult[13] === tmp8) {
-                          let tmp17;
-                          if (cResult[14] === tmp16) {
-                            tmp17 = cResult[15];
+                          let tmp18;
+                          if (cResult[14] === tmp17) {
+                            tmp18 = cResult[15];
                           }
-                          return tmp17;
+                          return tmp18;
                         }
                       }
                       const obj2 = { style: tmp7.root, children: items };
-                      items = [tmp8, tmp16];
-                      const tmp20 = hasOwnProperty(View, obj2);
+                      items = [tmp8, tmp17];
+                      const tmp21 = hasOwnProperty(View, obj2);
                       cResult[12] = tmp7.root;
                       cResult[13] = tmp8;
-                      cResult[14] = tmp16;
-                      cResult[15] = tmp20;
-                      tmp17 = tmp20;
+                      cResult[14] = tmp17;
+                      cResult[15] = tmp21;
+                      tmp18 = tmp21;
                     }
                   }
                 }
@@ -146,15 +147,15 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     if (undefined !== superseded && superseded) {
       tmp12Result = null;
       if (null != onToggleExpanded) {
-        const obj6 = { accessibilityRole: "button", accessibilityState: obj7, accessibilityLabel: tmp14, hitSlop: 8, onPress: onToggleExpanded, children: React3(ChevronSmallRightIcon, obj8) };
-        tmp14 = showLabel;
+        const obj6 = { scaleAmountInPx: 4, hitSlop: PX_8, accessibilityState: obj7, accessibilityLabel: tmp15, onPress: onToggleExpanded, children: React3(ChevronSmallRightIcon, obj8) };
+        tmp15 = showLabel;
         obj7 = { expanded: undefined === expanded || expanded };
-        const PressableOpacity = tmp(5916).PressableOpacity;
+        const PressableScale = tmp(8517).PressableScale;
         if (undefined === expanded || expanded) {
-          tmp14 = hideLabel;
+          tmp15 = hideLabel;
         }
         obj8 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-        tmp12Result = tmp12(PressableOpacity, obj6);
+        tmp12Result = tmp12(PressableScale, obj6);
       }
     }
     items2[1] = tmp12Result;
@@ -174,7 +175,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[10] = title;
   cResult[11] = tmp10Result;
   tmp8 = tmp10Result;
-}) : ((showHeader) => {
+}) : (function ConjureNativeCollapsibleSection(showHeader) {
   let ChevronSmallRightIcon;
   let children;
   let hideLabel;
@@ -205,10 +206,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   ({ hideLabel, children } = showHeader);
   const tmp = closure_6();
   if (flag3) {
-    ChevronSmallRightIcon = tmp2(10857).ChevronSmallDownIcon;
+    ChevronSmallRightIcon = tmp2(10508).ChevronSmallDownIcon;
     tmp4 = tmp2;
   } else {
-    ChevronSmallRightIcon = tmp2(6715).ChevronSmallRightIcon;
+    ChevronSmallRightIcon = tmp2(6892).ChevronSmallRightIcon;
     tmp4 = tmp2;
   }
   let tmp6Result = null;
@@ -216,21 +217,21 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   if (flag) {
     const obj2 = { style: tmp.header, children: items };
     const obj3 = { variant: "text-sm/medium", color: "text-subtle", children: title };
-    items = [React3(tmp4(4892).Text, obj3), ];
+    items = [React3(tmp4(5086).Text, obj3), ];
     const obj4 = { style: tmp.headerTrailing, children: items1 };
     items1 = [meta, ];
     let tmp9Result = null;
     if (flag2) {
       tmp9Result = null;
       if (null != onToggleExpanded) {
-        const obj5 = { accessibilityRole: "button", accessibilityState: obj6, accessibilityLabel: showLabel, hitSlop: 8, onPress: onToggleExpanded, children: React3(ChevronSmallRightIcon, obj7) };
+        const obj5 = { scaleAmountInPx: 4, hitSlop: PX_8, accessibilityState: obj6, accessibilityLabel: showLabel, onPress: onToggleExpanded, children: React3(ChevronSmallRightIcon, obj7) };
         obj6 = { expanded: flag3 };
-        const PressableOpacity = tmp4(5916).PressableOpacity;
+        const PressableScale = tmp4(8517).PressableScale;
         if (flag3) {
           showLabel = hideLabel;
         }
         obj7 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-        tmp9Result = tmp9(PressableOpacity, obj5);
+        tmp9Result = tmp9(PressableScale, obj5);
       }
     }
     items1[1] = tmp9Result;
@@ -238,11 +239,11 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     tmp6Result = tmp6(tmp7, obj2);
   }
   items2 = [tmp6Result, ];
-  let tmp12 = null;
+  let tmp13 = null;
   if (flag3) {
-    tmp12 = children;
+    tmp13 = children;
   }
-  items2[1] = tmp12;
+  items2[1] = tmp13;
   return hasOwnProperty(View, obj);
 });
 const result = size.fileFinishedImporting("modules/conjure/shared/native/ConjureNativeCollapsibleSection.tsx");

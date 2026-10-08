@@ -1,23 +1,23 @@
-// Module ID: 9132
-// Function ID: 9133
+// Module ID: 10703
+// Function ID: 10704
 // Name: VideoEmptyState
-// Dependencies: [109, 19, 17, 2051, 1085, 21, 4896, 587, 558, 576, 9133, 1188, 1126, 9131, 504, 5038, 4948, 5597, 4892, 5601, 2]
+// Dependencies: [109, 19, 17, 2063, 1085, 21, 5090, 587, 558, 576, 10704, 1200, 1126, 5287, 504, 7438, 5896, 5392, 5086, 5375, 2]
 
-// Module 9132 (VideoEmptyState)
+// Module 10703 (VideoEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 4948 */;
-import StreamActionCreators from "StreamActionCreators" /* 5038 */;
-import useMountEffectDefault from "useMountEffect" /* 5597 */;
-import StreamEnded from "StreamEnded" /* 9133 */;
+import native from "native" /* 1200 */;
+import useMountEffectDefault from "useMountEffect" /* 5392 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 5896 */;
+import StreamActionCreators from "StreamActionCreators" /* 7438 */;
+import StreamEnded from "StreamEnded" /* 10704 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ obj3 = { alignItems: "center", justifyContent: "center", backgroundColor: native
 createStyles = createStyles.createStyles;
 obj4 = { color: nativeDefault.unsafe_rawColors.WHITE, fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 16, lineHeight: 20, textAlign: "center" };
 let closure_11 = createStyles(obj2);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoEmptyState(arg0) {
   let Button;
   let avError;
   let channelId;
@@ -48,17 +48,15 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let closure_2;
   let intl;
   let intl2;
-  let obj2;
   let obj3;
   let obj5;
-  let obj7;
   let removeCloseButton;
   let removeSplashImage;
   let stateFromStores;
   let stream;
   let style;
   let tmp10;
-  let tmp26;
+  let tmp31;
   let tmp4;
   let tmp6;
   let tmp9;
@@ -97,113 +95,59 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   dependencyMap = tmp14;
   if (cResult[8] === tmp7) {
     if (cResult[9] === tmp14.placeholderImage) {
+      let tmp15;
+      let tmp16;
       let errorCode;
-      let tmp22;
-      let tmp24;
-      let tmp23;
+      let tmp26;
+      let tmp29;
+      let tmp28;
+      if (cResult[10] === tmp14.placeholderText) {
+        tmp15 = cResult[11];
+      }
       if (cResult[12] !== tmp14.placeholderText) {
-        class R {
-          constructor() {
-            let intl;
-            const obj = { style: closure_2.placeholderText, children: intl.string(intl5.t.rSlOep) };
-            const LegacyText = native.LegacyText;
-            intl = intl5.intl;
-            return metroImportDefault(LegacyText, obj);
-          }
+        function renderBodyStreamFailed() {
+          let intl;
+          const obj = { style: closure_2.placeholderText, children: intl.string(intl5.t.rSlOep) };
+          const LegacyText = native.LegacyText;
+          intl = intl5.intl;
+          return metroImportDefault(LegacyText, obj);
         }
         cResult[12] = tmp14.placeholderText;
-        cResult[13] = R;
+        cResult[13] = renderBodyStreamFailed;
+        tmp16 = renderBodyStreamFailed;
       } else {
-        class R {
-          constructor() {
-            let intl;
-            const obj = { style: closure_2.placeholderText, children: intl.string(intl5.t.rSlOep) };
-            const LegacyText = native.LegacyText;
-            intl = intl5.intl;
-            return metroImportDefault(LegacyText, obj);
-          }
-        }
+        tmp16 = cResult[13];
       }
-      const tmp17 = obj;
       if (obj.STREAM_ENDED === tmp10) {
-        class R {
-          constructor() {
-            let intl;
-            const obj = { style: closure_2.placeholderText, children: intl.string(intl5.t.rSlOep) };
-            const LegacyText = native.LegacyText;
-            intl = intl5.intl;
-            return metroImportDefault(LegacyText, obj);
-          }
+        if (cResult[14] !== tmp15) {
+          const tmp15Result = tmp15();
+          cResult[14] = tmp15;
+          cResult[15] = tmp15Result;
         }
-      } else {
-        class R {
-          constructor() {
-            let intl;
-            const obj = { style: closure_2.placeholderText, children: intl.string(intl5.t.rSlOep) };
-            const LegacyText = native.LegacyText;
-            intl = intl5.intl;
-            return metroImportDefault(LegacyText, obj);
-          }
+      } else if (obj.STREAM_FAILED === tmp10) {
+        if (cResult[16] !== tmp16) {
+          const tmp16Result = tmp16();
+          cResult[16] = tmp16;
+          cResult[17] = tmp16Result;
         }
       }
       if (null != tmp4) {
-        class R {
-          constructor() {
-            let intl;
-            const obj = { style: closure_2.placeholderText, children: intl.string(intl5.t.rSlOep) };
-            const LegacyText = native.LegacyText;
-            intl = intl5.intl;
-            return metroImportDefault(LegacyText, obj);
-          }
-        }
-        errorCode = obj3.getErrorInfo(tmp4).errorCode;
+        const tmpResult = tmp(5287);
+        errorCode = tmpResult.getErrorInfo(tmp4).errorCode;
       } else {
-        class R {
-          constructor() {
-            let intl;
-            const obj = { style: closure_2.placeholderText, children: intl.string(intl5.t.rSlOep) };
-            const LegacyText = native.LegacyText;
-            intl = intl5.intl;
-            return metroImportDefault(LegacyText, obj);
-          }
-        }
-        if (tmp10 === tmp17.STREAM_FAILED) {
-          class R {
-            constructor() {
-              let intl;
-              const obj = { style: closure_2.placeholderText, children: intl.string(intl5.t.rSlOep) };
-              const LegacyText = native.LegacyText;
-              intl = intl5.intl;
-              return metroImportDefault(LegacyText, obj);
-            }
-          }
-          errorCode = obj2.getErrorInfo(tmp(9131).AVError.STREAM_FAILED_TO_START).errorCode;
+        errorCode = null;
+        if (tmp10 === obj.STREAM_FAILED) {
+          const tmpResult3 = tmp(5287);
+          errorCode = tmpResult3.getErrorInfo(tmp(5287).AVError.STREAM_FAILED_TO_START).errorCode;
         }
       }
       const _Symbol = Symbol;
       if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-        class R {
-          constructor() {
-            let intl;
-            const obj = { style: closure_2.placeholderText, children: intl.string(intl5.t.rSlOep) };
-            const LegacyText = native.LegacyText;
-            intl = intl5.intl;
-            return metroImportDefault(LegacyText, obj);
-          }
-        }
         let items = [ChannelStore];
         cResult[18] = items;
-        tmp22 = items;
+        tmp26 = items;
       } else {
-        class R {
-          constructor() {
-            let intl;
-            const obj = { style: closure_2.placeholderText, children: intl.string(intl5.t.rSlOep) };
-            const LegacyText = native.LegacyText;
-            intl = intl5.intl;
-            return metroImportDefault(LegacyText, obj);
-          }
-        }
+        tmp26 = cResult[18];
       }
       if (cResult[19] !== tmp8.channelId) {
         class N {
@@ -215,44 +159,44 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         cResult[19] = tmp8.channelId;
         cResult[20] = N;
         cResult[21] = items1;
-        tmp24 = items1;
-        tmp23 = N;
+        tmp29 = items1;
+        tmp28 = N;
       } else {
         class N {
           constructor() {
             return ChannelStore.getChannel(channelId.channelId);
           }
         }
-        tmp24 = cResult[21];
+        tmp29 = cResult[21];
       }
-      const tmpResult = tmp(504);
-      stateFromStores = tmpResult.useStateFromStores(tmp22, tmp23, tmp24);
+      const tmpResult4 = tmp(504);
+      stateFromStores = tmpResult4.useStateFromStores(tmp26, tmp28, tmp29);
       if (cResult[22] === stateFromStores) {
         class N {
           constructor() {
             return ChannelStore.getChannel(channelId.channelId);
           }
         }
-        useMountEffectDefault(tmp26);
-        const tmp29 = View;
+        useMountEffectDefault(tmp31);
+        const tmp34 = View;
         if (cResult[25] === tmp9) {
           class N {
             constructor() {
               return ChannelStore.getChannel(channelId.channelId);
             }
           }
-          let tmp31 = null != errorCode;
-          if (tmp31) {
+          let tmp36 = null != errorCode;
+          if (tmp36) {
             class N {
               constructor() {
                 return ChannelStore.getChannel(channelId.channelId);
               }
             }
-            const obj4 = { variant: "text-sm/semibold", color: "text-muted", selectable: true, children: intl.formatToPlainString(tmp(1126).t.ejOT95, obj5) };
-            const Text = tmp(4892).Text;
+            let obj2 = { variant: "text-sm/semibold", color: "text-muted", selectable: true, children: intl.formatToPlainString(tmp(1126).t.ejOT95, obj3) };
+            const Text = tmp(5086).Text;
             intl = tmp(1126).intl;
-            obj5 = { errorCode };
-            tmp31 = closure_7(Text, obj4);
+            obj3 = { errorCode };
+            tmp36 = closure_7(Text, obj2);
           }
           if (cResult[28] === tmp6) {
             class N {
@@ -261,15 +205,15 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
             }
           }
-          let tmp33 = !tmp6;
-          if (tmp33) {
+          let tmp38 = !tmp6;
+          if (tmp38) {
             class N {
               constructor() {
                 return ChannelStore.getChannel(channelId.channelId);
               }
             }
-            const obj6 = { style: tmp14.buttonWrapper, children: closure_7(Button, obj7) };
-            obj7 = {
+            const obj4 = { style: tmp14.buttonWrapper, children: closure_7(Button, obj5) };
+            obj5 = {
               variant: "secondary",
               size: "md",
               shrink: true,
@@ -282,40 +226,42 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                           stopStream(obj.encodeStreamKey(channelId));
                         }
             };
-            Button = tmp(5601).Button;
+            Button = tmp(5375).Button;
             intl2 = tmp(1126).intl;
-            tmp33 = closure_7(tmp29, obj6);
+            tmp38 = closure_7(tmp34, obj4);
           }
           cResult[28] = tmp6;
           cResult[29] = tmp8;
           cResult[30] = tmp14.buttonWrapper;
-          cResult[31] = tmp33;
+          cResult[31] = tmp38;
         }
         const items2 = [tmp14.container, tmp9];
         cResult[25] = tmp9;
         cResult[26] = tmp14.container;
         cResult[27] = items2;
       }
-      const fn2 = function k() {
-        let isGuildStageVoiceResult;
-        const obj = stateFromStores;
-        if (stateFromStores != null) {
-          isGuildStageVoiceResult = obj.isGuildStageVoice();
+      class W {
+        constructor() {
+          let isGuildStageVoiceResult;
+          const obj = stateFromStores;
+          if (stateFromStores != null) {
+            isGuildStageVoiceResult = obj.isGuildStageVoice();
+          }
+          if (isGuildStageVoiceResult) {
+            const stopStream = StreamActionCreators.stopStream;
+            StreamActionCreators;
+            const obj2 = StreamKeyUtils;
+            stopStream(obj2.encodeStreamKey(channelId));
+          }
         }
-        if (isGuildStageVoiceResult) {
-          const stopStream = StreamActionCreators.stopStream;
-          StreamActionCreators;
-          const obj2 = StreamKeyUtils;
-          stopStream(obj2.encodeStreamKey(channelId));
-        }
-      };
+      }
       cResult[22] = stateFromStores;
       cResult[23] = tmp8;
-      cResult[24] = fn2;
-      tmp26 = fn2;
+      cResult[24] = W;
+      tmp31 = W;
     }
   }
-  const fn = function x() {
+  function renderBodyStreamEnded() {
     let intl;
     let items;
     let tmp3 = !closure_0;
@@ -332,12 +278,12 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     intl = intl5.intl;
     items[1] = metroImportDefault(LegacyText, obj3);
     return tmp(tmp2, obj2);
-  };
+  }
   cResult[8] = tmp7;
-  cResult[9] = tmp14.placeholderImage;
   cResult[10] = tmp14.placeholderText;
-  cResult[11] = fn;
-}) : ((style) => {
+  cResult[11] = renderBodyStreamEnded;
+  tmp15 = renderBodyStreamEnded;
+}) : (function VideoEmptyState(style) {
   let Button;
   let avError;
   let closure_1;
@@ -368,31 +314,31 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const tmp9 = closure_8;
     if (!removeSplashImage) {
       let obj2 = { style: tmp2.placeholderImage };
-      tmp10 = closure_7(stream(9133).StreamEnded, obj2);
+      tmp10 = closure_7(stream(10704).StreamEnded, obj2);
     }
     const obj3 = { children: items };
     items = [tmp10, ];
     const obj4 = { style: tmp2.placeholderText, children: intl2.formatToMarkdownString(stream(1126).t["1Ww0Hi"], {}) };
-    const LegacyText2 = stream(1188).LegacyText;
+    const LegacyText2 = stream(1200).LegacyText;
     intl2 = stream(1126).intl;
     items[1] = closure_7(LegacyText2, obj4);
     tmp8Result = tmp8(tmp9, obj3);
   } else if (obj.STREAM_FAILED === type) {
     obj = { style: tmp2.placeholderText, children: intl.string(stream(1126).t.rSlOep) };
-    const LegacyText = stream(1188).LegacyText;
+    const LegacyText = stream(1200).LegacyText;
     intl = stream(1126).intl;
     tmp8Result = closure_7(LegacyText, obj);
   } else if (obj.NONE === type) {
     tmp8Result = null;
   }
   if (null != avError) {
-    const obj6 = stream(9131);
+    const obj6 = stream(5287);
     errorCode = obj6.getErrorInfo(avError).errorCode;
   } else {
     errorCode = null;
     if (type === obj.STREAM_FAILED) {
-      const obj5 = stream(9131);
-      errorCode = obj5.getErrorInfo(stream(9131).AVError.STREAM_FAILED_TO_START).errorCode;
+      const obj5 = stream(5287);
+      errorCode = obj5.getErrorInfo(stream(5287).AVError.STREAM_FAILED_TO_START).errorCode;
     }
   }
   const items1 = [ChannelStore];
@@ -420,7 +366,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp25 = closure_9;
   if (tmp28) {
     const obj9 = { variant: "text-sm/semibold", color: "text-muted", selectable: true, children: intl3.formatToPlainString(stream(1126).t.ejOT95, obj10) };
-    const Text = tmp22(4892).Text;
+    const Text = tmp22(5086).Text;
     intl3 = tmp22(1126).intl;
     obj10 = { errorCode };
     tmp28 = closure_7(Text, obj9);
@@ -442,7 +388,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           stopStream(obj.encodeStreamKey(stream));
         }
     };
-    Button = tmp22(5601).Button;
+    Button = tmp22(5375).Button;
     intl4 = tmp22(1126).intl;
     tmp30 = closure_7(tmp26, obj11);
   }

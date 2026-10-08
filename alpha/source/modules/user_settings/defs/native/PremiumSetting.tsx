@@ -1,23 +1,23 @@
-// Module ID: 14805
-// Function ID: 14806
+// Module ID: 15066
+// Function ID: 15067
 // Name: PremiumSetting
-// Dependencies: [19, 1377, 4540, 1085, 21, 13221, 4534, 1126, 558, 576, 6936, 11105, 14806, 11142, 8346, 14808, 2]
+// Dependencies: [19, 1389, 4732, 1085, 21, 13521, 4726, 1126, 558, 576, 7125, 10470, 15067, 11262, 9005, 15069, 2]
 
-// Module 14805 (PremiumSetting)
+// Module 15066 (PremiumSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import PremiumUtils from "PremiumUtils" /* 4534 */;
-import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 6936 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8346 */;
-import MobileNitroManageSubscriptionsSettingsExperiment from "MobileNitroManageSubscriptionsSettingsExperiment" /* 13221 */;
-import PremiumTabBadgeDefault from "PremiumTabBadge" /* 14806 */;
+import PremiumUtils from "PremiumUtils" /* 4726 */;
+import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7125 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9005 */;
+import MobileNitroManageSubscriptionsSettingsExperiment from "MobileNitroManageSubscriptionsSettingsExperiment" /* 13521 */;
+import PremiumTabBadgeDefault from "PremiumTabBadge" /* 15067 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
-import SubscriptionStore from "SubscriptionStore" /* 4540 */;
+import UserStore from "UserStore" /* 1389 */;
+import SubscriptionStore from "SubscriptionStore" /* 4732 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,7 +25,7 @@ const require = globalThis.__r;
 const UserSettingsSections = Constants.UserSettingsSections;
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanNavigateToPaymentSetting() {
   let first;
   let obj = react2;
   const cResult = obj.c(1);
@@ -47,19 +47,21 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => react.useCallback(() => {
-  const obj = BlockedPaymentsCountryExperiment;
-  const isPaymentsBlocked = obj.getIsPaymentsBlocked();
-  let flag = !isPaymentsBlocked;
-  const tmp = dependencyMap;
-  if (isPaymentsBlocked) {
-    require("openBlockedPaymentsCountryActionSheet")();
-    flag = false;
-  }
-  return flag;
-}, []));
+}) : (function useCanNavigateToPaymentSetting() {
+  return react.useCallback(() => {
+    const obj = BlockedPaymentsCountryExperiment;
+    const isPaymentsBlocked = obj.getIsPaymentsBlocked();
+    let flag = !isPaymentsBlocked;
+    const tmp = dependencyMap;
+    if (isPaymentsBlocked) {
+      require("openBlockedPaymentsCountryActionSheet")();
+      flag = false;
+    }
+    return flag;
+  }, []);
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumSettingTrailing() {
   let first;
   const obj = react2;
   const cResult = obj.c(1);
@@ -71,7 +73,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => jsx(PremiumTabBadgeDefault, {}));
+}) : (function usePremiumSettingTrailing() {
+  return jsx(PremiumTabBadgeDefault, {});
+});
 let obj = {
   useTitle: function getPremiumSettingTitle() {
     let stringResult1;

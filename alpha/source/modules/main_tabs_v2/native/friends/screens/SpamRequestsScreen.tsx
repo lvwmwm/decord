@@ -1,25 +1,25 @@
-// Module ID: 16976
-// Function ID: 16977
+// Module ID: 17257
+// Function ID: 17258
 // Name: SpamRequestsScreen
-// Dependencies: [19, 4525, 1377, 10605, 1085, 21, 558, 576, 6664, 6688, 16975, 504, 1260, 8455, 7861, 10611, 2]
+// Dependencies: [19, 4717, 1389, 10202, 1085, 21, 558, 576, 6841, 6865, 17256, 504, 1272, 8941, 8279, 10208, 2]
 
-// Module 16976 (SpamRequestsScreen)
+// Module 17257 (SpamRequestsScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
-import UserRowConstants from "UserRowConstants" /* 10605 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
+import UserRowConstants from "UserRowConstants" /* 10202 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let navigation, onPress;
+let element, obj1, onPress;
 
 const UserRowModes = UserRowConstants.UserRowModes;
 const RelationshipTypes = Constants.RelationshipTypes;
 const jsx = Fragment.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamRequestsScreen(arg0) {
   let analyticsLocations;
   let mutableRelationships;
   let stateFromStoresArray;
@@ -28,7 +28,6 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp12;
   let tmp14;
   let tmp15;
-  let tmp17;
   let tmp20;
   let tmp6;
   let tmp7;
@@ -39,14 +38,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp4 = stateFromStoresArray;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [RelationshipStore];
-    const fn = function p() {
-      const obj = analyticsLocations(stateFromStoresArray1[10]);
-      return obj.getPendingRelationshipIds(mutableRelationships.getMutableRelationships()).spamIds;
-    };
+    class S {
+      constructor() {
+        obj = analyticsLocations(closure_2[10]);
+        return obj.getPendingRelationshipIds(closure_1_4.getMutableRelationships()).spamIds;
+      }
+    }
     cResult[0] = items;
-    cResult[1] = fn;
+    cResult[1] = S;
     tmp6 = items;
-    tmp7 = fn;
+    tmp7 = S;
   } else {
     [tmp6, tmp7] = cResult;
   }
@@ -54,7 +55,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   stateFromStoresArray = tmpResult.useStateFromStoresArray(tmp6, tmp7);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { name: analyticsLocations(stateFromStoresArray1[12]).ImpressionNames.FRIEND_REQUESTS_SPAM_INBOX };
-    cResult[2] = obj2;
+    class S {
+      constructor() {
+        obj = analyticsLocations(closure_2[10]);
+        return obj.getPendingRelationshipIds(closure_1_4.getMutableRelationships()).spamIds;
+      }
+    }
     tmp10 = obj2;
   } else {
     tmp10 = cResult[2];
@@ -62,6 +68,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   tmp4(stateFromStoresArray1[13])(tmp10);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [UserStore];
+    class S {
+      constructor() {
+        obj = analyticsLocations(closure_2[10]);
+        return obj.getPendingRelationshipIds(closure_1_4.getMutableRelationships()).spamIds;
+      }
+    }
     cResult[3] = items1;
     tmp12 = items1;
   } else {
@@ -70,11 +82,17 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[4] !== stateFromStoresArray) {
     class N {
       constructor() {
-        mapped = closure_1.map((item) => user.getUser(item));
-        return mapped.filter((item) => null != item);
+        mapped = closure_1.map(() => { /* body not rendered: F149443 */ });
+        return mapped.filter(() => { /* body not rendered: F149444 */ });
       }
     }
     const items2 = [stateFromStoresArray];
+    class S {
+      constructor() {
+        obj = analyticsLocations(closure_2[10]);
+        return obj.getPendingRelationshipIds(closure_1_4.getMutableRelationships()).spamIds;
+      }
+    }
     cResult[4] = stateFromStoresArray;
     cResult[5] = N;
     cResult[6] = items2;
@@ -83,8 +101,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     class N {
       constructor() {
-        mapped = closure_1.map((item) => user.getUser(item));
-        return mapped.filter((item) => null != item);
+        mapped = closure_1.map(() => { /* body not rendered: F149443 */ });
+        return mapped.filter(() => { /* body not rendered: F149444 */ });
       }
     }
     tmp15 = cResult[6];
@@ -93,18 +111,26 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   stateFromStoresArray1 = tmpResult2.useStateFromStoresArray(tmp12, tmp14, tmp15);
   if (cResult[7] !== analyticsLocations) {
     class E {
-      constructor(id) {
-        const obj = { userId: id.id, localUser: id, sourceAnalyticsLocations: analyticsLocations };
-        showUserProfileActionSheetDefault(obj);
+      constructor(arg0) {
+        obj = { userId: arg0.id, localUser: arg0, sourceAnalyticsLocations: analyticsLocations };
+        tmp = closure_1(closure_2[14])(obj);
+        return;
       }
     }
     cResult[7] = analyticsLocations;
+    class S {
+      constructor() {
+        obj = analyticsLocations(closure_2[10]);
+        return obj.getPendingRelationshipIds(closure_1_4.getMutableRelationships()).spamIds;
+      }
+    }
     cResult[8] = E;
   } else {
     class E {
-      constructor(id) {
-        const obj = { userId: id.id, localUser: id, sourceAnalyticsLocations: analyticsLocations };
-        showUserProfileActionSheetDefault(obj);
+      constructor(arg0) {
+        obj = { userId: arg0.id, localUser: arg0, sourceAnalyticsLocations: analyticsLocations };
+        tmp = closure_1(closure_2[14])(obj);
+        return;
       }
     }
   }
@@ -112,61 +138,77 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
     class P {
       constructor() {
-
+        return;
       }
     }
     cResult[9] = P;
-    tmp17 = P;
+    class S {
+      constructor() {
+        obj = analyticsLocations(closure_2[10]);
+        return obj.getPendingRelationshipIds(closure_1_4.getMutableRelationships()).spamIds;
+      }
+    }
   } else {
     class P {
       constructor() {
-
+        return;
       }
     }
   }
   if (cResult[10] === tmp16) {
     class P {
       constructor() {
-
+        return;
       }
     }
     if (0 !== stateFromStoresArray1.length) {
       class P {
         constructor() {
-
+          return;
         }
       }
       if (cResult[15] === tmp18) {
         class P {
           constructor() {
-
+            return;
           }
         }
         return tmp20;
       }
-      const tmp22 = jsx(analyticsLocations(stateFromStoresArray1[15]).UsersFastList, { getItemProps: tmp18, getSectionProps: tmp17, sections: tmp19 });
+      class S {
+        constructor() {
+          obj = analyticsLocations(closure_2[10]);
+          return obj.getPendingRelationshipIds(closure_1_4.getMutableRelationships()).spamIds;
+        }
+      }
+      tmp22[0] = tmp18;
+      tmp22[1] = tmp17;
+      tmp22[2] = tmp19;
+      const tmp23 = jsx(analyticsLocations(stateFromStoresArray1[15]).UsersFastList, tmp22);
       cResult[15] = tmp18;
       cResult[16] = tmp19;
-      cResult[17] = tmp22;
-      tmp20 = tmp22;
+      cResult[17] = tmp23;
+      tmp20 = tmp23;
     } else {
       class P {
         constructor() {
-
+          return;
         }
       }
     }
   }
   class F {
     constructor(arg0, arg1) {
-      const element = { type: "user", props: obj };
+      element = { type: "user", props: null };
+      obj1 = { type: RelationshipTypes.PENDING_INCOMING, user: closure_2[arg1], onPress: closure_3, mode: UserRowModes.ACTIONS, start: 0 === arg1, end: arg1 === closure_2.length - 1 };
+      element.props = obj1;
       return element;
     }
   }
   cResult[10] = tmp16;
   cResult[11] = stateFromStoresArray1;
   cResult[12] = F;
-}) : ((navigation) => {
+}) : (function SpamRequestsScreen(navigation) {
   let mutableRelationships;
   navigation = navigation.navigation;
   let stateFromStoresArray;

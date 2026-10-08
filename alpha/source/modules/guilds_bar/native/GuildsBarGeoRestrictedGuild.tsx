@@ -1,29 +1,28 @@
-// Module ID: 16328
-// Function ID: 16329
+// Module ID: 16588
+// Function ID: 16589
 // Name: GuildsBarGeoRestrictedGuild
-// Dependencies: [19, 16262, 21, 4896, 587, 16278, 558, 576, 16274, 1402, 5978, 5714, 1126, 9282, 16329, 16297, 5981, 2]
+// Dependencies: [19, 16522, 21, 5090, 587, 16538, 558, 576, 16534, 1414, 6161, 5297, 1126, 8613, 16589, 16557, 6164, 2]
 
-// Module 16328 (GuildsBarGeoRestrictedGuild)
+// Module 16588 (GuildsBarGeoRestrictedGuild)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5714 */;
-import GuildIcon from "GuildIcon" /* 5978 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9282 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 16262 */;
-import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 16274 */;
-import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 16278 */;
-import HomeDrawerGuildRowDefault from "HomeDrawerGuildRow" /* 16297 */;
-import GuildsBarGeoRestrictedBadgeDefault from "GuildsBarGeoRestrictedBadge" /* 16329 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5297 */;
+import GuildIcon from "GuildIcon" /* 6161 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8613 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 16522 */;
+import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 16534 */;
+import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 16538 */;
+import HomeDrawerGuildRowDefault from "HomeDrawerGuildRow" /* 16557 */;
+import GuildsBarGeoRestrictedBadgeDefault from "GuildsBarGeoRestrictedBadge" /* 16589 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
-let restrictedGuild;
 
 let size;
 const GUILD_ITEM_BADGE_SIZE = GuildsBarConstants.GUILD_ITEM_BADGE_SIZE;
@@ -32,7 +31,7 @@ let obj = { guildIcon: size, geoRestrictedBadge: { borderColor: "transparent", w
 size = { width: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE, height: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE };
 let closure_5 = createStyles.createStyles(obj);
 let items = [computeGuildsBarCutoutDefault({ position: "bottom-right" })];
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((restrictedGuild) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildsBarGeoRestrictedGuild(restrictedGuild) {
   let first;
   let tmp = restrictedGuild;
   let obj = restrictedGuild(576);
@@ -46,7 +45,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((r
   } else {
     first = cResult[0];
   }
-  const tmpResult = tmp(16274);
+  const tmpResult = tmp(16534);
   const guildsBarAnimatedWrapperStyles = tmpResult.useGuildsBarAnimatedWrapperStyles(first);
   if (cResult[1] === restrictedGuild.icon) {
     let tmp7;
@@ -113,7 +112,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((r
         tmp24 = jsx(FastImageDefault, { source: tmp7, style: tmp4.guildIcon, fadeDuration: 0 });
       } else {
         GuildIconDefault;
-        tmp24 = <tmp23 value={restrictedGuild.name} selected={false} animate={false} size={tmp(5978).GuildIconSizes.LARGE} />;
+        tmp24 = <tmp23 value={restrictedGuild.name} selected={false} animate={false} size={tmp(6161).GuildIconSizes.LARGE} />;
       }
       cResult[11] = tmp7;
       cResult[12] = tmp4.guildIcon;
@@ -165,11 +164,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((r
   cResult[2] = restrictedGuild.id;
   cResult[3] = animatableSourceWithFallback;
   tmp7 = animatableSourceWithFallback;
-}) : ((restrictedGuild) => {
+}) : (function GuildsBarGeoRestrictedGuild(restrictedGuild) {
   let tmp8Result;
   restrictedGuild = restrictedGuild.restrictedGuild;
   let tmp = closure_5();
-  let obj = restrictedGuild(16274);
+  let obj = restrictedGuild(16534);
   let animatableSourceWithFallback = null;
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true });
   const tmp2 = restrictedGuild;
@@ -216,13 +215,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((r
   GuildsBarAnimatedItemWrapperDefault;
   if (null != animatableSourceWithFallback) {
     const obj6 = { source: animatableSourceWithFallback, style: tmp.guildIcon, fadeDuration: 0 };
-    tmp8Result = tmp8(tmp9(5981), obj6);
+    tmp8Result = tmp8(tmp9(6164), obj6);
   } else {
-    const obj7 = { value: restrictedGuild.name, selected: false, animate: false, size: tmp2(5978).GuildIconSizes.LARGE };
+    const obj7 = { value: restrictedGuild.name, selected: false, animate: false, size: tmp2(6161).GuildIconSizes.LARGE };
     const tmp9Result = GuildIconDefault;
     tmp8Result = tmp8(tmp9Result, obj7);
   }
-  return <tmp10 selected={false} unread={false} circle={false} styles={guildsBarAnimatedWrapperStyles} label={restrictedGuild.name} isDragTarget={false} config={memo} cutouts={items} overState="a" externalChildren="previousElementSibling" expandedChildren={null}>{tmp8Result}</tmp10>;
+  return <tmp10 selected={false} unread={false} circle={false} styles={guildsBarAnimatedWrapperStyles} label={restrictedGuild.name} isDragTarget={false} config={memo} cutouts={items} overState="a" externalChildren="POST_CONNECTION_OPEN" expandedChildren="ONBOARDING_START">{tmp8Result}</tmp10>;
 }));
 size = size_mod;
 const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarGeoRestrictedGuild.tsx");

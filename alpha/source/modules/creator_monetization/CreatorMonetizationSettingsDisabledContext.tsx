@@ -1,12 +1,12 @@
-// Module ID: 17968
-// Function ID: 17969
+// Module ID: 18255
+// Function ID: 18256
 // Name: CreatorMonetizationSettingsDisabledContext
-// Dependencies: [19, 21, 558, 576, 6766, 2]
+// Dependencies: [19, 21, 558, 576, 6942, 2]
 
-// Module 17968 (CreatorMonetizationSettingsDisabledContext)
+// Module 18255 (CreatorMonetizationSettingsDisabledContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 6766 */;
+import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 6942 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -14,7 +14,7 @@ import size from "module_2" /* 2 */;
 const jsx = Fragment.jsx;
 let context = react.createContext(undefined);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreatorMonetizationSettingsDisabled() {
   context = react.useContext(context);
   if (null == context) {
     const _Error = Error;
@@ -25,7 +25,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   } else {
     return context;
   }
-}) : (function() {
+}) : (function useCreatorMonetizationSettingsDisabled() {
   context = react.useContext(context);
   if (null == context) {
     const _Error = Error;
@@ -38,7 +38,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonetizationSettingsDisabledContextProvider(arg0) {
   let children;
   let guildId;
   const obj = react2;
@@ -58,7 +58,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = shouldRestrictUpdatingCreatorMonetizationSettings;
   cResult[2] = tmp3;
   tmp2 = tmp3;
-}) : ((arg0) => {
+}) : (function CreatorMonetizationSettingsDisabledContextProvider(arg0) {
   let children;
   let guildId;
   ({ guildId, children } = arg0);

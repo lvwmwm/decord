@@ -1,22 +1,22 @@
-// Module ID: 17636
-// Function ID: 17637
+// Module ID: 17918
+// Function ID: 17919
 // Name: RedesignDiscoverabilityModal
-// Dependencies: [19, 17, 12341, 1377, 1085, 21, 4896, 587, 6075, 558, 576, 1490, 504, 12348, 1105, 17637, 12368, 12361, 1260, 12360, 1126, 6503, 2]
+// Dependencies: [19, 17, 12437, 1389, 1085, 21, 5090, 587, 6261, 558, 576, 1502, 504, 12444, 1105, 17919, 12464, 12457, 1272, 12456, 1126, 6679, 2]
 
-// Module 17636 (RedesignDiscoverabilityModal)
+// Module 17918 (RedesignDiscoverabilityModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import NavigatorConstants from "NavigatorConstants" /* 6075 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 12341 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12348 */;
-import NUFActionCreators from "NUFActionCreators" /* 12368 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
+import NavigatorConstants from "NavigatorConstants" /* 6261 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 12437 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12444 */;
+import NUFActionCreators from "NUFActionCreators" /* 12464 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import UserStore from "UserStore" /* 1389 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ createStyles = createStyles.createStyles;
 obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingBottom: 44, paddingTop: NavigatorConstants.NAV_BAR_HEIGHT + 32 };
 let closure_8 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiscoverabilityLandingScene(onComplete) {
   let allowEmail;
   let currentUser;
   let stateFromStores;
@@ -108,23 +108,25 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => 
       }
     }
   }
-  const fn2 = function v() {
-    const obj = ContactSyncActionCreatorsDefault;
-    const obj2 = { phone: allowPhone, email: allowEmail };
-    const result = obj.updateDiscoverability(obj2);
-    const tmp2 = allowPhone;
-    const tmp4 = currentUser;
-    if (tmp4) {
-      if (null != stateFromStores) {
-        if (tmp2) {
-          if (null == name) {
-            navigation.push(ConstantsIOS.DiscoverabilityScenes.NAME);
+  class N {
+    constructor() {
+      const obj = ContactSyncActionCreatorsDefault;
+      const obj2 = { phone: allowPhone, email: allowEmail };
+      const result = obj.updateDiscoverability(obj2);
+      const tmp2 = allowPhone;
+      const tmp4 = currentUser;
+      if (tmp4) {
+        if (null != stateFromStores) {
+          if (tmp2) {
+            if (null == name) {
+              navigation.push(ConstantsIOS.DiscoverabilityScenes.NAME);
+            }
           }
         }
       }
+      onComplete();
     }
-    onComplete();
-  };
+  }
   cResult[2] = allowEmail;
   cResult[3] = allowPhone;
   cResult[4] = allowPhone || allowEmail;
@@ -132,9 +134,9 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => 
   cResult[6] = navigation;
   cResult[7] = onComplete;
   cResult[8] = stateFromStores;
-  cResult[9] = fn2;
-  tmp11 = fn2;
-}) : ((onComplete) => {
+  cResult[9] = N;
+  tmp11 = N;
+}) : (function DiscoverabilityLandingScene(onComplete) {
   onComplete = onComplete.onComplete;
   let stateFromStores;
   let allowEmail;
@@ -178,7 +180,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => 
   return jsx(navigation(tmp[15]), { onNext });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiscoverabilityNameScene(onComplete) {
   let allowPhone;
   let name;
   let tmp = dependencyMap;
@@ -198,7 +200,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) =>
     }
     const effect = react.useEffect(tmp5, tmp6);
     if (cResult[4] !== onComplete) {
-      const fn2 = function h(arg0) {
+      const fn2 = function p(arg0) {
         const obj = NUFActionCreators;
         const result = obj.startContactSyncForDiscoverability(arg0);
         onComplete();
@@ -230,7 +232,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) =>
       cResult[11] = tmp18;
       tmp15 = tmp18;
     }
-    const tmp14 = jsx(allowPhone(12361), { onNext: tmp9, loading: false, initialName: name });
+    const tmp14 = jsx(allowPhone(12457), { onNext: tmp9, loading: false, initialName: name });
     cResult[6] = tmp9;
     cResult[7] = name;
     cResult[8] = tmp14;
@@ -249,7 +251,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) =>
   cResult[3] = items;
   tmp6 = items;
   tmp5 = fn;
-}) : ((onComplete) => {
+}) : (function DiscoverabilityNameScene(onComplete) {
   let allowPhone;
   let name;
   onComplete = onComplete.onComplete;
@@ -270,14 +272,14 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) =>
     const result = obj.startContactSyncForDiscoverability(arg0);
     onComplete();
   }, items1);
-  allowPhone(12361);
+  allowPhone(12457);
   if (name == null) {
     name = "";
   }
   return <tmp6 style={tmp.container}>{null}</tmp6>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignDiscoverabilityModal(route) {
   let closure_0;
   let tmp5;
   let tmp7;
@@ -360,17 +362,17 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
     }
     return tmp10;
   }
-  const Navigator = tmp(6503).Navigator;
+  const Navigator = tmp(6679).Navigator;
   const tmp11 = <Navigator headerStyle={header} screens={tmp7} initialRouteName={require("ConstantsIOS").DiscoverabilityScenes.LANDING} headerBackTitle={tmp8} />;
   cResult[5] = tmp4.header;
   cResult[6] = tmp7;
   cResult[7] = tmp11;
   tmp10 = tmp11;
-}) : ((route) => {
+}) : (function RedesignDiscoverabilityModal(route) {
   const onComplete = route.route.params.onComplete;
   let tmp = closure_8();
   const items = [onComplete];
-  const Navigator = onComplete(6503).Navigator;
+  const Navigator = onComplete(6679).Navigator;
   const intl = onComplete(1126).intl;
   return <Navigator headerStyle={tmp.header} screens={react.useMemo(() => {
     if (null == onComplete) {

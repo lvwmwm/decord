@@ -1,20 +1,18 @@
-// Module ID: 12219
-// Function ID: 12220
+// Module ID: 12298
+// Function ID: 12299
 // Name: GuildPowerupsDisabledWarning
-// Dependencies: [17, 21, 4896, 587, 558, 576, 4809, 4892, 2]
+// Dependencies: [17, 21, 5090, 587, 558, 576, 5003, 5086, 2]
 
-// Module 12219 (GuildPowerupsDisabledWarning)
+// Module 12298 (GuildPowerupsDisabledWarning)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import WarningIcon2 from "WarningIcon" /* 4809 */;
-import Text_Text from "Text/Text" /* 4892 */;
+import WarningIcon2 from "WarningIcon" /* 5003 */;
+import Text_Text from "Text/Text" /* 5086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let text;
 
 let closure_4;
 let hasOwnProperty;
@@ -24,7 +22,7 @@ const View = react_native.View;
 let obj = { container: obj2, text: { flex: 1 } };
 obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, borderColor: nativeDefault.colors.STATUS_WARNING_BACKGROUND, borderWidth: 1, borderRadius: nativeDefault.radii.lg, padding: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING };
 let closure_6 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupsDisabledWarning(text) {
   let first;
   let items;
   const obj = react;
@@ -33,7 +31,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { color: nativeDefault.colors.TEXT_FEEDBACK_WARNING, size: "md" };
-    const WarningIcon = tmp(4809).WarningIcon;
+    const WarningIcon = tmp(5003).WarningIcon;
     const tmp8 = React3(WarningIcon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -66,7 +64,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
   cResult[2] = text;
   cResult[3] = tmp10;
   tmp9 = tmp10;
-}) : ((text) => {
+}) : (function GuildPowerupsDisabledWarning(text) {
   let items;
   text = text.text;
   const tmp = closure_6();

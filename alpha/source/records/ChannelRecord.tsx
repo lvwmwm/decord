@@ -1,21 +1,21 @@
-// Module ID: 2055
-// Function ID: 2056
+// Module ID: 2067
+// Function ID: 2068
 // Name: ChannelRecord
-// Dependencies: [2056, 1085, 2058, 1375, 1097, 12, 2059, 2060, 2061, 2062, 2063, 1390, 2064, 1444, 11, 2]
+// Dependencies: [2068, 1085, 2070, 1387, 1097, 12, 2071, 2072, 2073, 2074, 2075, 1402, 2076, 1456, 11, 2]
 // Exports: castChannelRecord, createChannelRecordFromInvite, createChannelRecordFromServer, getAccessPermissions, getBasicAccessPermissions, isChannelChatInSidebar, isChannelMainAreaUploadAllowed, isChannelThreadsForcedOpenedInFullView, isGuildChannelType, isGuildReadableType, isGuildSelectableChannelType, isGuildTextChannelType, isGuildVocalChannelOrVocalThreadType, isGuildVocalChannelType, isMultiUserDM, isPrivate, isReadableType, isTextChannel, isThread, isVocalThreadType, isVoiceChannel
 
-// Module 2055 (ChannelRecord)
+// Module 2067 (ChannelRecord)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import FlagUtils from "FlagUtils" /* 1390 */;
-import LRUCacheDefault from "LRUCache" /* 1444 */;
-import ChannelConstants from "ChannelConstants" /* 2058 */;
-import StageChannelPermissions from "StageChannelPermissions" /* 2060 */;
-import ThreadSortOrder from "ThreadSortOrder" /* 2061 */;
-import ForumLayout from "ForumLayout" /* 2062 */;
-import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 2063 */;
-import StageInstanceStore from "StageInstanceStore" /* 2056 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import FlagUtils from "FlagUtils" /* 1402 */;
+import LRUCacheDefault from "LRUCache" /* 1456 */;
+import ChannelConstants from "ChannelConstants" /* 2070 */;
+import StageChannelPermissions from "StageChannelPermissions" /* 2072 */;
+import ThreadSortOrder from "ThreadSortOrder" /* 2073 */;
+import ForumLayout from "ForumLayout" /* 2074 */;
+import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 2075 */;
+import StageInstanceStore from "StageInstanceStore" /* 2068 */;
 import Constants from "Constants" /* 1085 */;
 import BigFlagUtils from "BigFlagUtils" /* 1097 */;
 import size from "module_2" /* 2 */;
@@ -28,12 +28,12 @@ let Permissions;
 let hasOwnProperty;
 let metroImportAll;
 let tmp;
-const TypeUtils = tmp(2064);
-const f85891 = (arg0, id) => {
+const TypeUtils = tmp(2076);
+const f86768 = (arg0, id) => {
   arg0[id.id] = id.nick;
   return arg0;
 };
-const f85892 = (id) => {
+const f86769 = (id) => {
   let emoji_id;
   obj = { id: id.id, name: id.name, emojiId: emoji_id, emojiName: null, moderated: null, color: null };
   emoji_id = undefined;
@@ -212,40 +212,7 @@ class ChannelRecordBase extends ChannelRecordProperties {
   }
   set(arg0, arg1) {
     obj = { [arg0]: arg1 };
-    const merge = this.merge;
-    if ("topic" in obj) {
-      obj.topic_ = obj.topic;
-      delete obj[tmp];
-    }
-    if ("position" in obj) {
-      obj.position_ = obj.position;
-      delete obj[tmp2];
-    }
-    if ("permissionOverwrites" in obj) {
-      obj.permissionOverwrites_ = obj.permissionOverwrites;
-      delete obj[tmp3];
-    }
-    if ("bitrate" in obj) {
-      obj.bitrate_ = obj.bitrate;
-      delete obj[tmp4];
-    }
-    if ("userLimit" in obj) {
-      obj.userLimit_ = obj.userLimit;
-      delete obj[tmp5];
-    }
-    if ("nsfw" in obj) {
-      obj.nsfw_ = obj.nsfw;
-      delete obj[tmp6];
-    }
-    if ("rateLimitPerUser" in obj) {
-      obj.rateLimitPerUser_ = obj.rateLimitPerUser;
-      delete obj[tmp7];
-    }
-    if ("flags" in obj) {
-      obj.flags_ = obj.flags;
-      delete obj[tmp8];
-    }
-    return merge(obj);
+    return this.merge(obj);
   }
   merge(topic) {
     if ("topic" in topic) {
@@ -679,7 +646,7 @@ class UnknownChannelRecord extends ChannelRecordBase {
     let tmp2;
     let tmp5;
     let tmp6;
-    obj = { application_id: application_id.application_id, appliedTags: application_id.applied_tags, availableTags: tmp, bitrate_: null, defaultAutoArchiveDuration: null, defaultForumLayout: null, defaultReactionEmoji: tmp2, defaultSortOrder: null, defaultTagSetting: null, defaultThreadRateLimitPerUser: null, flags_: null, gameId: null, guild_id, icon: null, iconEmoji: tmp5, id: null, isMessageRequest: null, isMessageRequestTimestamp: null, isSpam: null, lastMessageId: null, lastNonMessageActivityTimestamp: null, lastPinTimestamp: null, member: tmp6, memberCount: null, memberIdsPreview: null, memberListId: null, messageCount: null, name, nicks: obj6, nsfw_: null, originChannelId: null, ownerId: null, parent_id: null, parentChannelThreadType: "formatToPlainString", permissionOverwrites_: obj7, position_: true, rateLimitPerUser_: true, rawRecipients: null != application_id.recipients ? application_id.recipients : [], recipients: mapped, recipientFlags: true, rtcRegion: "audio", safetyWarnings: null, blockedUserWarningDismissed: null, template: null, themeColor: null, threadMetadata: tmp10, topic_: null, totalMessageSent: null, type: UNKNOWN, userLimit_: null, version: null, videoQualityMode: null, linkedLobby: null, hdStreamingUntil: null, hdStreamingBuyerId: null, voiceHangout: null };
+    obj = { application_id: application_id.application_id, appliedTags: application_id.applied_tags, availableTags: tmp, bitrate_: null, defaultAutoArchiveDuration: null, defaultForumLayout: null, defaultReactionEmoji: tmp2, defaultSortOrder: null, defaultTagSetting: null, defaultThreadRateLimitPerUser: null, flags_: null, gameId: null, guild_id, icon: null, iconEmoji: tmp5, id: null, isMessageRequest: null, isMessageRequestTimestamp: null, isSpam: null, lastMessageId: null, lastNonMessageActivityTimestamp: null, lastPinTimestamp: null, member: tmp6, memberCount: null, memberIdsPreview: null, memberListId: null, messageCount: null, name, nicks: obj6, nsfw_: null, originChannelId: null, ownerId: null, parent_id: null, parentChannelThreadType: "gap", permissionOverwrites_: obj7, position_: true, rateLimitPerUser_: true, rawRecipients: null != application_id.recipients ? application_id.recipients : [], recipients: mapped, recipientFlags: true, rtcRegion: "audio", safetyWarnings: null, blockedUserWarningDismissed: null, template: null, themeColor: null, threadMetadata: tmp10, topic_: null, totalMessageSent: null, type: UNKNOWN, userLimit_: null, version: null, videoQualityMode: null, linkedLobby: null, hdStreamingUntil: null, hdStreamingBuyerId: null, voiceHangout: null };
     tmp = undefined;
     if (null != application_id.available_tags) {
       let items;
@@ -687,7 +654,7 @@ class UnknownChannelRecord extends ChannelRecordBase {
       if (null == available_tags) {
         items = [];
       } else {
-        items = available_tags.map(f85892);
+        items = available_tags.map(f86769);
       }
       tmp = items;
     }
@@ -731,7 +698,7 @@ class UnknownChannelRecord extends ChannelRecordBase {
       obj6 = {};
     } else {
       const arr3 = _modDef12;
-      obj6 = arr3.reduce(nicks, f85891, {});
+      obj6 = arr3.reduce(nicks, f86768, {});
     }
     ({ nsfw: obj.nsfw_, origin_channel_id: obj.originChannelId, owner_id: obj.ownerId, parent_id: obj.parent_id, permission_overwrites } = application_id);
     obj7 = {};
@@ -770,7 +737,7 @@ class UnknownChannelRecord extends ChannelRecordBase {
       UNKNOWN = ChannelTypes.UNKNOWN;
     }
     ({ user_limit: obj.userLimit_, version: obj.version, video_quality_mode: obj.videoQualityMode, linked_lobby: obj.linkedLobby, hd_streaming_until: obj.hdStreamingUntil, hd_streaming_buyer_id: obj.hdStreamingBuyerId, voice_hangout: obj.voiceHangout } = application_id);
-    const obj8 = obj7(2064);
+    const obj8 = obj7(2076);
     return obj8.dangerouslyCast(obj, UnknownChannelRecord);
   }
 }
@@ -841,7 +808,7 @@ class GuildVocalChannelRecord extends ChannelRecordBase {
       GUILD_VOICE = ChannelTypes.GUILD_VOICE;
     }
     ({ user_limit: obj.userLimit_, version: obj.version, video_quality_mode: obj.videoQualityMode, hd_streaming_until: obj.hdStreamingUntil, hd_streaming_buyer_id: obj.hdStreamingBuyerId, voice_hangout: obj.voiceHangout } = application_id);
-    const obj4 = obj5(2059);
+    const obj4 = obj5(2071);
     const result = obj4.normalizeConjureTopicChannelRecord(obj);
     let GUILD_TEXT = result.type;
     const tmp5 = obj5;
@@ -853,7 +820,7 @@ class GuildVocalChannelRecord extends ChannelRecordBase {
     if (tmp10 == null) {
       tmp10 = UnknownChannelRecord;
     }
-    const tmp5Result = tmp5(2064);
+    const tmp5Result = tmp5(2076);
     return tmp5Result.dangerouslyCast(result, tmp10);
   }
 }
@@ -924,7 +891,7 @@ class GuildTextualChannelRecord extends ChannelRecordBase {
       GUILD_TEXT = ChannelTypes.GUILD_TEXT;
     }
     ({ linked_lobby: obj.linkedLobby, hd_streaming_until: obj.hdStreamingUntil, hd_streaming_buyer_id: obj.hdStreamingBuyerId, version: obj.version } = application_id);
-    const obj4 = obj5(2059);
+    const obj4 = obj5(2071);
     const result = obj4.normalizeConjureTopicChannelRecord(obj);
     let GUILD_TEXT2 = result.type;
     const tmp5 = obj5;
@@ -936,7 +903,7 @@ class GuildTextualChannelRecord extends ChannelRecordBase {
     if (tmp10 == null) {
       tmp10 = UnknownChannelRecord;
     }
-    const tmp5Result = tmp5(2064);
+    const tmp5Result = tmp5(2076);
     return tmp5Result.dangerouslyCast(result, tmp10);
   }
 }
@@ -992,7 +959,7 @@ class ForumChannelRecord extends ChannelRecordBase {
       if (null == available_tags) {
         items = [];
       } else {
-        items = available_tags.map(f85892);
+        items = available_tags.map(f86769);
       }
       items1 = items;
     } else {
@@ -1054,7 +1021,7 @@ class ForumChannelRecord extends ChannelRecordBase {
     } else {
       GUILD_TEXT = ChannelTypes.GUILD_TEXT;
     }
-    const obj5 = obj8(2064);
+    const obj5 = obj8(2076);
     return obj5.dangerouslyCast(obj, ForumChannelRecord);
   }
 }
@@ -1143,7 +1110,7 @@ class PrivateChannelRecord extends ChannelRecordBase {
       obj2 = {};
     } else {
       const arr2 = _modDef12;
-      obj2 = arr2.reduce(nicks, f85891, {});
+      obj2 = arr2.reduce(nicks, f86768, {});
     }
     ({ recipient_flags: obj.recipientFlags, safety_warnings: obj.safetyWarnings, blocked_user_warning_dismissed: obj.blockedUserWarningDismissed } = application_id);
     if (null != application_id.type) {
@@ -1189,10 +1156,10 @@ class PrivateChannelRecord extends ChannelRecordBase {
       return self;
     }
   }
-  removeRecipient(id2) {
+  removeRecipient(optionId) {
     set = this.set;
     obj = _modDef12;
-    return set("recipients", obj.without(this.recipients, id2));
+    return set("recipients", obj.without(this.recipients, optionId));
   }
 }
 const prototype3 = PrivateChannelRecord.prototype;

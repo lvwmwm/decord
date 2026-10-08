@@ -1,37 +1,37 @@
-// Module ID: 17026
-// Function ID: 17027
+// Module ID: 17307
+// Function ID: 17308
 // Name: EasyChannelPermissionSettings
-// Dependencies: [32, 5, 19, 17, 17027, 2051, 2112, 2106, 2074, 4515, 4525, 1377, 8110, 1085, 21, 4896, 587, 558, 576, 1490, 11245, 504, 9250, 9251, 9252, 1126, 5049, 5714, 9266, 4520, 5600, 6705, 6081, 1188, 10996, 6000, 11243, 6023, 5076, 9317, 9318, 17028, 17030, 2]
+// Dependencies: [32, 5, 19, 17, 17308, 2063, 2124, 2118, 2086, 4707, 4717, 1389, 7484, 1085, 21, 5090, 587, 558, 576, 1502, 11360, 504, 8579, 8580, 8581, 1126, 5417, 5297, 8596, 4712, 5373, 6882, 6267, 1200, 11220, 6184, 11358, 6209, 5105, 8505, 8752, 17309, 17311, 2]
 
-// Module 17026 (EasyChannelPermissionSettings)
+// Module 17307 (EasyChannelPermissionSettings)
 import nativeDefault from "native" /* 587 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5076 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5714 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8110 */;
-import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 9250 */;
-import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 9251 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9266 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11243 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5105 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5297 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7484 */;
+import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8579 */;
+import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8580 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8596 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11358 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 17027 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
+import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 17308 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildRoleStore from "GuildRoleStore" /* 2118 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let accessPermissions, body, c2, c3, channel, navigation;
+let accessPermissions, body, c2, c3, navigation;
 
 let closure_18;
 let closure_19;
@@ -63,7 +63,7 @@ createStyles = createStyles.createStyles;
 obj3 = { marginTop: nativeDefault.space.PX_12 };
 let closure_26 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelPermissionSettingsBasicView(channel) {
   let first;
   let tmp10;
   let tmp12;
@@ -110,7 +110,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   if (cResult[3] !== navigation) {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "r" });
+        navigation.setOptions({ headerRight: "create" });
       }
     }
     const items1 = [navigation];
@@ -122,7 +122,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   } else {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "r" });
+        navigation.setOptions({ headerRight: "create" });
       }
     }
     tmp13 = cResult[5];
@@ -131,13 +131,13 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   if (null != guild) {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "r" });
+        navigation.setOptions({ headerRight: "create" });
       }
     }
     if (null != guild) {
       class N {
         constructor() {
-          navigation.setOptions({ headerRight: "r" });
+          navigation.setOptions({ headerRight: "create" });
         }
       }
     }
@@ -146,18 +146,18 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "r" });
+        navigation.setOptions({ headerRight: "create" });
       }
     }
     cResult[6] = tmp16;
   } else {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "r" });
+        navigation.setOptions({ headerRight: "create" });
       }
     }
   }
-}) : ((channel) => {
+}) : (function ChannelPermissionSettingsBasicView(channel) {
   let HelpMessage;
   let HelpMessage2;
   let TableRow;
@@ -400,7 +400,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const sortedGuildRoles = stateFromStoresObject.sortedGuildRoles;
   const items1 = [navigation];
   const layoutEffect = togglePrivateChannel.useLayoutEffect(() => {
-    navigation.setOptions({ headerRight: "r" });
+    navigation.setOptions({ headerRight: "create" });
   }, items1);
   const items2 = [guild, sortedGuildRoles, channel];
   const memo = togglePrivateChannel.useMemo(() => {
@@ -508,7 +508,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         hasIcons: true,
         children: memo.map((item) => {
               obj = { item, channelId: channel.id, showType: true, showRemove: true, guildId: channel.guild_id };
-              return closure_23(ChannelOverwritesItemDefault, obj, item.id);
+              return version(ChannelOverwritesItemDefault, obj, item.id);
             })
       };
       const TableRowGroup3 = tmp2(tmp3[32]).TableRowGroup;
@@ -518,7 +518,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         hasIcons: true,
         children: existingMembersRows.map((item) => {
               obj = { item, channelId: channel.id, showType: true, showRemove: true, guildId: channel.guild_id };
-              return closure_23(ChannelOverwritesItemDefault, obj, item.id);
+              return version(ChannelOverwritesItemDefault, obj, item.id);
             })
       };
       const TableRowGroup4 = tmp2(tmp3[32]).TableRowGroup;
@@ -616,7 +616,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EasyChannelP
   _asyncToGenerator = tmp23;
   _slicedToArray(react.useState(tmp19), 2);
   if (cResult[7] !== origin) {
-    class U {
+    class B {
       constructor() {
         const OVERVIEW = constants2.OVERVIEW;
         let CHANNEL_SETTINGS = null;
@@ -633,12 +633,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EasyChannelP
     }
     const items2 = [origin];
     cResult[7] = origin;
-    cResult[8] = U;
+    cResult[8] = B;
     cResult[9] = items2;
     tmp25 = items2;
-    tmp24 = U;
+    tmp24 = B;
   } else {
-    class U {
+    class B {
       constructor() {
         const OVERVIEW = constants2.OVERVIEW;
         let CHANNEL_SETTINGS = null;
@@ -657,7 +657,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EasyChannelP
   }
   const effect = obj6.useEffect(tmp24, tmp25);
   if (cResult[10] !== stateFromStores) {
-    class U {
+    class B {
       constructor() {
         const OVERVIEW = constants2.OVERVIEW;
         let CHANNEL_SETTINGS = null;
@@ -675,7 +675,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EasyChannelP
     cResult[10] = stateFromStores;
     cResult[11] = tmp28;
   } else {
-    class U {
+    class B {
       constructor() {
         const OVERVIEW = constants2.OVERVIEW;
         let CHANNEL_SETTINGS = null;
@@ -692,7 +692,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EasyChannelP
     }
   }
   if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-    class U {
+    class B {
       constructor() {
         const OVERVIEW = constants2.OVERVIEW;
         let CHANNEL_SETTINGS = null;
@@ -715,7 +715,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EasyChannelP
     tmp30 = stringResult;
     tmp29 = stringResult1;
   } else {
-    class U {
+    class B {
       constructor() {
         const OVERVIEW = constants2.OVERVIEW;
         let CHANNEL_SETTINGS = null;
@@ -733,7 +733,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EasyChannelP
     tmp30 = cResult[13];
   }
   if (cResult[14] !== stateFromStores) {
-    class U {
+    class B {
       constructor() {
         const OVERVIEW = constants2.OVERVIEW;
         let CHANNEL_SETTINGS = null;
@@ -751,7 +751,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EasyChannelP
     arr4[0] = tmp30;
     arr4[1] = tmp29;
     if (stateFromStores != null) {
-      class U {
+      class B {
         constructor() {
           const OVERVIEW = constants2.OVERVIEW;
           let CHANNEL_SETTINGS = null;
@@ -769,7 +769,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EasyChannelP
     }
     if (true === undefined) {
       let tmp35;
-      class U {
+      class B {
         constructor() {
           const OVERVIEW = constants2.OVERVIEW;
           let CHANNEL_SETTINGS = null;
@@ -785,7 +785,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EasyChannelP
         }
       }
       if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-        class U {
+        class B {
           constructor() {
             const OVERVIEW = constants2.OVERVIEW;
             let CHANNEL_SETTINGS = null;
@@ -804,7 +804,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EasyChannelP
         cResult[16] = stringResult2;
         tmp35 = stringResult2;
       } else {
-        class U {
+        class B {
           constructor() {
             const OVERVIEW = constants2.OVERVIEW;
             let CHANNEL_SETTINGS = null;
@@ -825,7 +825,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EasyChannelP
     cResult[14] = stateFromStores;
     cResult[15] = arr4;
   } else {
-    class U {
+    class B {
       constructor() {
         const OVERVIEW = constants2.OVERVIEW;
         let CHANNEL_SETTINGS = null;
@@ -842,7 +842,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EasyChannelP
     }
   }
   if (cResult[17] !== tmp33) {
-    class U {
+    class B {
       constructor() {
         const OVERVIEW = constants2.OVERVIEW;
         let CHANNEL_SETTINGS = null;
@@ -860,7 +860,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EasyChannelP
     cResult[17] = tmp33;
     cResult[18] = tmp39;
   } else {
-    class U {
+    class B {
       constructor() {
         const OVERVIEW = constants2.OVERVIEW;
         let CHANNEL_SETTINGS = null;
@@ -877,7 +877,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EasyChannelP
     }
   }
   if (cResult[19] === tmp27) {
-    class U {
+    class B {
       constructor() {
         const OVERVIEW = constants2.OVERVIEW;
         let CHANNEL_SETTINGS = null;

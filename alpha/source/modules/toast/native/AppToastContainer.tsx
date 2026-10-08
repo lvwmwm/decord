@@ -1,29 +1,27 @@
-// Module ID: 17168
-// Function ID: 17169
+// Module ID: 17449
+// Function ID: 17450
 // Name: AppToastContainer
-// Dependencies: [19, 21, 558, 576, 1618, 14283, 14908, 14917, 17169, 2]
+// Dependencies: [19, 21, 558, 576, 1630, 14107, 15170, 15179, 17450, 2]
 
-// Module 17168 (AppToastContainer)
+// Module 17449 (AppToastContainer)
 import react2 from "react" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import QuestHooks from "QuestHooks" /* 14908 */;
-import useYouBarTotalHeight from "useYouBarTotalHeight" /* 14917 */;
-import ToastContainerDefault from "ToastContainer" /* 17169 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import QuestHooks from "QuestHooks" /* 15170 */;
+import useYouBarTotalHeight from "useYouBarTotalHeight" /* 15179 */;
+import ToastContainerDefault from "ToastContainer" /* 17450 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let appChrome, bottomInset;
-
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const Toast_ToastContainer = tmp(14283);
+const Toast_ToastContainer = tmp(14107);
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((bottomInset) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManaToastSurface(bottomInset) {
   const obj = react2;
   const cResult = obj.c(5);
   bottomInset = bottomInset.bottomInset;
@@ -50,7 +48,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((bottomInset) =>
   cResult[1] = top;
   cResult[2] = rect;
   tmp4 = rect;
-}) : ((bottomInset) => {
+}) : (function ManaToastSurface(bottomInset) {
   bottomInset = bottomInset.bottomInset;
   const top = useSafeAreaInsetsDefault().top;
   const items = [top, bottomInset];
@@ -61,7 +59,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((bottomInset) =>
   return React3(Toast_ToastContainer.ToastContainer, { overlay: true, offset });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppChromeToastSurface() {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -79,7 +77,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : (() => {
+}) : (function AppChromeToastSurface() {
   const obj = QuestHooks;
   const mobileQuestDockHeight = obj.useMobileQuestDockHeight();
   const obj2 = useYouBarTotalHeight;
@@ -87,7 +85,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return React3(closure_7, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((appChrome) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppToastContainer(appChrome) {
   let first;
   let tmp8;
   const obj = react2;
@@ -120,7 +118,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((appChrome) => {
     tmp8 = cResult[2];
   }
   return tmp8;
-}) : ((appChrome) => {
+}) : (function AppToastContainer(appChrome) {
   let tmp3Result;
   let flag = appChrome.appChrome;
   if (flag === undefined) {

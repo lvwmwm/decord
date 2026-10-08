@@ -1,15 +1,15 @@
-// Module ID: 8457
-// Function ID: 8458
+// Module ID: 8943
+// Function ID: 8944
 // Name: useWishlistNUXActionSheet
-// Dependencies: [19, 7124, 502, 2048, 558, 576, 504, 4704, 2036, 2037, 4860, 8458, 1987, 2]
+// Dependencies: [19, 7309, 502, 2060, 558, 576, 504, 4898, 2048, 2049, 5054, 8944, 1999, 2]
 // Exports: default
 
-// Module 8457 (useWishlistNUXActionSheet)
-import dismissible_content from "dismissible_content" /* 2036 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4704 */;
+// Module 8943 (useWishlistNUXActionSheet)
+import dismissible_content from "dismissible_content" /* 2048 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4898 */;
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7124 */;
+import UserProfileStore from "UserProfileStore" /* 7309 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ const require = globalThis.__r;
 let _require;
 
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasNeverWishlisted() {
   let id;
   let stateFromStores;
   let tmp10;
@@ -70,7 +70,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp12 = cResult[5];
   }
   if (cResult[6] !== stateFromStores) {
-    const fn3 = function h() {
+    const fn3 = function _() {
       const userProfile = UserProfileStore.getUserProfile(stateFromStores);
       return null != userProfile && userProfile.fetchEndedAt > 0;
     };
@@ -83,7 +83,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult4 = stateFromStores(504);
   const stateFromStores2 = tmpResult4.useStateFromStores(tmp12, tmp14) && null == stateFromStores1;
   return stateFromStores2;
-}) : (() => {
+}) : (function useHasNeverWishlisted() {
   let closure_0;
   let id;
   const items = [AuthenticationStore];

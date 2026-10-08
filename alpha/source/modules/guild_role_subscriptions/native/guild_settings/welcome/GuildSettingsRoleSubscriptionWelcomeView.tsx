@@ -1,35 +1,35 @@
-// Module ID: 17924
-// Function ID: 17925
+// Module ID: 18211
+// Function ID: 18212
 // Name: GuildSettingsRoleSubscriptionWelcomeView
-// Dependencies: [32, 19, 17, 15038, 1085, 17925, 21, 4896, 587, 558, 576, 11866, 1126, 17926, 4892, 17927, 1490, 4860, 17929, 1987, 17929, 8924, 5601, 1188, 5602, 4814, 17937, 17941, 17950, 17953, 17958, 17959, 1491, 1260, 8455, 6075, 17923, 4573, 5981, 17960, 6626, 2]
+// Dependencies: [32, 19, 17, 15300, 1085, 18212, 21, 5090, 587, 558, 576, 11938, 1126, 18213, 5086, 18214, 1502, 5054, 18216, 1999, 18216, 8555, 5375, 1200, 5376, 5008, 18224, 18228, 18237, 18240, 18245, 18246, 1503, 1272, 8941, 6261, 18210, 4765, 6164, 18247, 6803, 2]
 
-// Module 17924 (GuildSettingsRoleSubscriptionWelcomeView)
+// Module 18211 (GuildSettingsRoleSubscriptionWelcomeView)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import NavigatorConstants from "NavigatorConstants" /* 6075 */;
-import ErrorBlockDefault from "ErrorBlock" /* 11866 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15038 */;
-import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 17925 */;
-import WarningNoticeDefault from "WarningNotice" /* 17926 */;
-import EligibilityActionSheet from "EligibilityActionSheet" /* 17929 */;
-import HowItWorksSectionDefault from "HowItWorksSection" /* 17937 */;
-import CreatorBenefitsSectionDefault from "CreatorBenefitsSection" /* 17941 */;
-import CreatorHighlightSectionDefault from "CreatorHighlightSection" /* 17950 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import NavigatorConstants from "NavigatorConstants" /* 6261 */;
+import ErrorBlockDefault from "ErrorBlock" /* 11938 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15300 */;
+import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 18212 */;
+import WarningNoticeDefault from "WarningNotice" /* 18213 */;
+import EligibilityActionSheet from "EligibilityActionSheet" /* 18216 */;
+import HowItWorksSectionDefault from "HowItWorksSection" /* 18224 */;
+import CreatorBenefitsSectionDefault from "CreatorBenefitsSection" /* 18228 */;
+import CreatorHighlightSectionDefault from "CreatorHighlightSection" /* 18237 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, guild, importAll, importDefault, measureResult, navigation;
+let _require, importAll, importDefault, measureResult, navigation;
 
 let closure_12;
 let map1;
@@ -82,7 +82,7 @@ function StartEarningButton(isTermsAccepted) {
         navigation.push(constants.SECURITY);
       }
     };
-    const tmp2 = asyncRequire(17929, dependencyMap.paths);
+    const tmp2 = asyncRequire(18216, dependencyMap.paths);
     return openLazy(tmp2, EligibilityActionSheet.ELIGIBILITY_ACTION_SHEET_KEY, obj);
   }, items1);
   const obj2 = {
@@ -157,7 +157,7 @@ createStyles = createStyles.createStyles;
 size = { width: "100%", height: 0.8, marginTop: 36, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 let closure_14 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((isApplicationPending) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationStatusNotice(isApplicationPending) {
   let createEnableRequest;
   let items1;
   let obj5;
@@ -271,7 +271,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((isApplicationP
     cResult[18] = tmp13;
     tmp12 = tmp13;
   }
-}) : ((arg0) => {
+}) : (function ApplicationStatusNotice(arg0) {
   let createEnableRequest;
   let isApplicationPending;
   let items;
@@ -317,7 +317,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((isApplicationP
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SectionContainer(arg0) {
   let children;
   let footer;
   let items;
@@ -377,7 +377,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp13 = null != footer;
     if (tmp13) {
       const obj4 = { style: tmp4.sectionFooter, variant: "text-sm/normal", color: "text-default", children: footer };
-      tmp13 = unpackModuleId(tmp(4892).Text, obj4);
+      tmp13 = unpackModuleId(tmp(5086).Text, obj4);
     }
     cResult[5] = footer;
     cResult[6] = tmp4.sectionFooter;
@@ -390,7 +390,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = title;
   cResult[4] = tmp10;
   tmp9 = tmp10;
-}) : ((footer) => {
+}) : (function SectionContainer(footer) {
   let children;
   let items;
   let onLayout;
@@ -418,7 +418,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_16 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarketingSections(arg0) {
   let closure_0;
   let closure_1;
   let items;
@@ -545,7 +545,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[11] = mapped;
     tmp27 = mapped;
   }
-}) : ((onboardingMarketing) => {
+}) : (function MarketingSections(onboardingMarketing) {
   let closure_0;
   let closure_1;
   let intl;
@@ -603,7 +603,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_18 = tmp6;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsRoleSubscriptionWelcomeView(guild) {
   let acceptTermsCheckboxText;
   let closure_5;
   let eligibility;
@@ -824,7 +824,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   cResult[7] = isGuildOwner;
   cResult[8] = obj6;
   tmp17 = obj6;
-}) : ((guild) => {
+}) : (function GuildSettingsRoleSubscriptionWelcomeView(guild) {
   let _undefined;
   let acceptTermsCheckboxText;
   let closure_5;

@@ -1,19 +1,19 @@
-// Module ID: 7423
-// Function ID: 7424
+// Module ID: 7898
+// Function ID: 7899
 // Name: burst_reactions/BurstReactionEffectUtils
-// Dependencies: [5, 32, 19, 17, 558, 576, 4533, 7424, 1886, 1369, 7461, 2]
+// Dependencies: [5, 32, 19, 17, 558, 576, 4725, 7899, 1898, 1381, 7936, 2]
 
-// Module 7423 (burst_reactions/BurstReactionEffectUtils)
+// Module 7898 (burst_reactions/BurstReactionEffectUtils)
 import react_native from "react-native" /* 17 */;
-import EmojiUtils from "EmojiUtils" /* 4533 */;
-import getBurstAnimation from "getBurstAnimation" /* 7424 */;
+import EmojiUtils from "EmojiUtils" /* 4725 */;
+import getBurstAnimation from "getBurstAnimation" /* 7899 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c2, c3, channelId, stringify;
+let c2, c3, stringify;
 
 function generateAnimationSource(arg0, arg1, arg2, arg3) {
   return obj(...arguments);
@@ -357,7 +357,7 @@ obj = function _generateAnimationSourceFromLocalImage() {
 let _slicedToArray = _slicedToArray_mod;
 const Image = react_native.Image;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBurstReactionAnimationSource(channelId) {
   let closure_4;
   let emoji;
   obj = channelId(emoji[5]);
@@ -450,7 +450,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[5] = items;
   tmp5 = items;
   tmp4 = fn;
-}) : ((channelId) => {
+}) : (function useBurstReactionAnimationSource(channelId) {
   let closure_4;
   let first;
   channelId = channelId.channelId;

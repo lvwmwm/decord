@@ -1,28 +1,28 @@
-// Module ID: 11466
-// Function ID: 11467
+// Module ID: 11450
+// Function ID: 11451
 // Name: GuildDisableCommunication
-// Dependencies: [5, 32, 19, 17, 2114, 1085, 21, 1126, 4896, 587, 558, 576, 6478, 10849, 1252, 5597, 11467, 4574, 5048, 4811, 4892, 6079, 6078, 6587, 5601, 2]
+// Dependencies: [5, 32, 19, 17, 2126, 1085, 21, 1126, 5090, 587, 558, 576, 6656, 10500, 1264, 5392, 11451, 4766, 5405, 5005, 5086, 6265, 6264, 6763, 5375, 2]
 
-// Module 11466 (GuildDisableCommunication)
+// Module 11450 (GuildDisableCommunication)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useMountEffectDefault from "useMountEffect" /* 5597 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import TableRadioRow2 from "TableRadioRow" /* 6078 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 6079 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6478 */;
-import TextArea2 from "TextArea" /* 6587 */;
-import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 10849 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import useMountEffectDefault from "useMountEffect" /* 5392 */;
+import TableRadioRow2 from "TableRadioRow" /* 6264 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 6265 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6656 */;
+import TextArea2 from "TextArea" /* 6763 */;
+import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 10500 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 2114 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 2126 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -97,7 +97,7 @@ createStyles = createStyles.createStyles;
 obj4 = { marginVertical: nativeDefault.space.PX_16 };
 obj5 = { marginBottom: nativeDefault.space.PX_16 };
 let closure_15 = createStyles(obj2);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDisableCommunication(user) {
   let closure_4;
   let closure_5;
   let first;
@@ -478,7 +478,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((u
   cResult[5] = user.id;
   cResult[6] = U;
   tmp14 = U;
-}) : ((arg0) => {
+}) : (function GuildDisableCommunication(arg0) {
   let Button;
   let _undefined;
   let c3;

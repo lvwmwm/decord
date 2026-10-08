@@ -1,26 +1,24 @@
-// Module ID: 14461
-// Function ID: 14462
+// Module ID: 14689
+// Function ID: 14690
 // Name: UserProfileEditFormControls
-// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 4892, 8346, 1188, 1126, 6007, 5916, 6430, 1369, 6706, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 587, 558, 576, 5086, 9005, 1200, 1126, 6193, 6189, 6284, 1381, 6883, 2]
 
-// Module 14461 (UserProfileEditFormControls)
+// Module 14689 (UserProfileEditFormControls)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import Pressables from "Pressables" /* 5916 */;
-import TableRowArrow from "TableRowArrow" /* 6007 */;
-import Input2 from "Input" /* 6430 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8346 */;
+import native from "native" /* 1200 */;
+import Pressables from "Pressables" /* 6189 */;
+import TableRowArrow from "TableRowArrow" /* 6193 */;
+import Input2 from "Input" /* 6284 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9005 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let onValueChange, text;
 
 let closure_4;
 let hasOwnProperty;
@@ -29,9 +27,9 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const PlatformUtils = tmp(1369);
-const Text_Text = tmp(4892);
-const FormSwitch = tmp(6706);
+const PlatformUtils = tmp(1381);
+const Text_Text = tmp(5086);
+const FormSwitch = tmp(6883);
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -41,7 +39,7 @@ createStyles = createStyles.createStyles;
 obj3 = { flexDirection: "row", alignItems: "center", marginLeft: nativeDefault.space.PX_4, gap: nativeDefault.space.PX_4 };
 let closure_8 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormControlText(text) {
   const obj = react2;
   const cResult = obj.c(3);
   text = text.text;
@@ -59,13 +57,13 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
   cResult[1] = text;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((text) => {
+}) : (function FormControlText(text) {
   text = text.text;
   const obj = { variant: "text-sm/medium", color: "text-default", style: closure_8().formControlText, children: text };
   return metroRequire(Text_Text.Text, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormControlSubtext(text) {
   const obj = react2;
   const cResult = obj.c(3);
   text = text.text;
@@ -87,7 +85,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
     tmp6 = tmp8;
   }
   return tmp5;
-}) : ((text) => {
+}) : (function FormControlSubtext(text) {
   text = text.text;
   let tmp2 = null;
   if (null != text) {
@@ -97,7 +95,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
   return tmp2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileEditFormLabelBadges(arg0) {
   let intl;
   let items;
   let showNewBadge;
@@ -112,7 +110,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[0] !== (undefined !== showPremiumIcon && showPremiumIcon)) {
       let tmp9 = null;
       if (undefined !== showPremiumIcon && showPremiumIcon) {
-        tmp9 = metroRequire(tmp(8346).NitroWheelIcon, { size: "xs" });
+        tmp9 = metroRequire(tmp(9005).NitroWheelIcon, { size: "xs" });
       }
       cResult[0] = undefined !== showPremiumIcon && showPremiumIcon;
       cResult[1] = tmp9;
@@ -146,7 +144,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp12 = null;
     if (undefined !== showNewBadge && showNewBadge) {
       const obj3 = { text: intl.string(intl2.t.y2b7CA), style: tmp6.newBadge };
-      const TextBadge = tmp(1188).TextBadge;
+      const TextBadge = tmp(1200).TextBadge;
       intl = tmp(1126).intl;
       tmp12 = metroRequire(TextBadge, obj3);
     }
@@ -158,7 +156,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp7 = null;
   }
   return tmp7;
-}) : ((showPremiumIcon) => {
+}) : (function UserProfileEditFormLabelBadges(showPremiumIcon) {
   let intl;
   let items;
   let tmp3Result;
@@ -195,7 +193,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp3Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileEditFormButton(arg0) {
   let accessibilityValue;
   let buttonSubtext;
   let buttonText;
@@ -246,7 +244,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               tmp13 = cResult[12];
             }
             if (cResult[13] !== (undefined !== hideArrow && hideArrow)) {
-              const tmp24 = !tmp6 && metroRequire(tmp(6007).TableRowArrow, {});
+              const tmp24 = !tmp6 && metroRequire(tmp(6193).TableRowArrow, {});
               cResult[13] = undefined !== hideArrow && hideArrow;
               cResult[14] = tmp24;
               tmp23 = tmp24;
@@ -345,7 +343,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = undefined !== disabled && disabled && tmp7.buttonDisabled;
   cResult[2] = items2;
   tmp9 = items2;
-}) : ((loading) => {
+}) : (function UserProfileEditFormButton(loading) {
   let PressableHighlight;
   let accessibilityValue;
   let buttonSubtext;
@@ -412,7 +410,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroRequire(Input, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueChange) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileEditFormSwitch(onValueChange) {
   let accessibilityHint;
   let accessibilityLabel;
   let closure_129_2;
@@ -441,29 +439,19 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueChange) => {
       tmp9 = cResult[2];
     }
     if (cResult[3] !== value) {
-      class H {
+      class L {
         constructor() {
           closure_1_2(value);
         }
       }
       const items = [value];
-      class V {
-        constructor() {
-          tmp = closure_2(!value);
-          timerId = setTimeout(() => {
-            if (onValueChange != null) {
-              tmp(!closure_1_0);
-            }
-          });
-          return;
-        }
-      }
-      cResult[4] = H;
+      cResult[3] = value;
+      cResult[4] = L;
       cResult[5] = items;
       tmp11 = items;
-      tmp10 = H;
+      tmp10 = L;
     } else {
-      class H {
+      class L {
         constructor() {
           closure_1_2(value);
         }
@@ -472,140 +460,104 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueChange) => {
     }
     const effect = obj3.useEffect(tmp10, tmp11);
     if (cResult[6] === onValueChange) {
-      class H {
+      class L {
         constructor() {
           closure_1_2(value);
         }
       }
       if (isAndroidResult) {
-        class H {
+        class L {
           constructor() {
             closure_1_2(value);
           }
         }
       } else {
-        class H {
+        class L {
           constructor() {
             closure_1_2(value);
           }
         }
       }
       if (isAndroidResult) {
-        class H {
+        class L {
           constructor() {
             closure_1_2(value);
           }
         }
       }
-      class V {
-        constructor() {
-          tmp = closure_2(!value);
-          timerId = setTimeout(() => {
-            if (onValueChange != null) {
-              tmp(!closure_1_0);
-            }
-          });
-          return;
-        }
-      }
       if (accessibilityLabel == null) {
-        class H {
+        class L {
           constructor() {
             closure_1_2(value);
           }
         }
       }
       if (cResult[9] === tmp8) {
-        class H {
+        class L {
           constructor() {
             closure_1_2(value);
           }
         }
         if (cResult[12] !== subLabel) {
-          class H {
+          class L {
             constructor() {
               closure_1_2(value);
             }
           }
-          class V {
-            constructor() {
-              tmp = closure_2(!value);
-              timerId = setTimeout(() => {
-                if (onValueChange != null) {
-                  tmp(!closure_1_0);
-                }
-              });
-              return;
-            }
-          }
+          const obj2 = { text: subLabel };
           cResult[12] = subLabel;
-          cResult[13] = tmp17;
+          cResult[13] = metroRequire(closure_9, obj2);
+          const tmp18 = metroRequire(closure_9, obj2);
         } else {
-          class H {
+          class L {
             constructor() {
               closure_1_2(value);
             }
           }
         }
         if (cResult[14] === (undefined !== disabled && disabled)) {
-          class H {
+          class L {
             constructor() {
               closure_1_2(value);
             }
           }
         }
-        class V {
-          constructor() {
-            tmp = closure_2(!value);
-            timerId = setTimeout(() => {
-              if (onValueChange != null) {
-                tmp(!closure_1_0);
-              }
-            });
-            return;
-          }
-        }
-        tmp20[1] = value;
-        tmp20[2] = tmp9;
-        tmp20[3] = undefined !== disabled && disabled;
+        const obj4 = { "aria-hidden": true, value, onValueChange: tmp9, disabled: undefined !== disabled && disabled };
         cResult[14] = undefined !== disabled && disabled;
         cResult[15] = tmp9;
         cResult[16] = value;
-        cResult[17] = metroRequire(FormSwitch.FormSwitch, tmp20);
-        const tmp21 = metroRequire(FormSwitch.FormSwitch, tmp20);
+        cResult[17] = metroRequire(FormSwitch.FormSwitch, obj4);
+        const tmp21 = metroRequire(FormSwitch.FormSwitch, obj4);
       }
-      const obj4 = { disabled: undefined !== disabled && disabled, checked: tmp8 };
+      const obj5 = { disabled: undefined !== disabled && disabled, checked: tmp8 };
       cResult[9] = tmp8;
       cResult[10] = undefined !== disabled && disabled;
-      cResult[11] = obj4;
+      cResult[11] = obj5;
     }
-    class V {
-      constructor() {
-        tmp = closure_2(!value);
-        timerId = setTimeout(() => {
-          if (onValueChange != null) {
-            tmp(!closure_1_0);
-          }
-        });
-        return;
-      }
+    function handleAccessibilityTap() {
+      const tmp = closure_1_2(!value);
+      const timerId = setTimeout(() => {
+        if (onValueChange != null) {
+          tmp(!closure_1_0);
+        }
+      });
     }
     cResult[6] = onValueChange;
     cResult[7] = value;
-    cResult[8] = V;
+    cResult[8] = handleAccessibilityTap;
   }
-  const fn = function s() {
+  function handleOnPress() {
     let tmpResult;
     if (onValueChange != null) {
       tmpResult = tmp(!value);
     }
     return tmpResult;
-  };
+  }
   cResult[0] = onValueChange;
   cResult[1] = value;
-  cResult[2] = fn;
-  tmp9 = fn;
-}) : ((arg0) => {
+  cResult[2] = handleOnPress;
+  tmp9 = handleOnPress;
+}) : (function UserProfileEditFormSwitch(arg0) {
   let PressableHighlight;
   let accessibilityHint;
   let accessibilityLabel;
@@ -635,7 +587,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueChange) => {
     closure_2(value);
   }, items);
   if (isAndroidResult) {
-    PressableHighlight = tmp2(5916).PressableHighlight;
+    PressableHighlight = tmp2(6189).PressableHighlight;
   } else {
     PressableHighlight = React3;
   }
@@ -648,14 +600,14 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueChange) => {
   }
   let tmp10;
   const obj2 = { label, children: tmp9(PressableHighlight, obj3) };
-  const Input = tmp2(6430).Input;
+  const Input = tmp2(6284).Input;
   tmp9 = metroImportDefault;
   if (isAndroidResult) {
     tmp10 = handleOnPress;
   }
   obj3 = {
     onPress: tmp10,
-    onAccessibilityTap() {
+    onAccessibilityTap: function handleAccessibilityTap() {
       const tmp = closure_2(!value);
       const timerId = setTimeout(() => {
         if (closure_1_1 != null) {
@@ -674,7 +626,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueChange) => {
   if (accessibilityLabel == null) {
     accessibilityLabel = subLabel;
   }
-  items1 = [metroRequire(closure_9, { text: subLabel }), metroRequire(tmp2(6706).FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled })];
+  items1 = [metroRequire(closure_9, { text: subLabel }), metroRequire(tmp2(6883).FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled })];
   return metroRequire(Input, obj2);
 });
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditFormControls.tsx");

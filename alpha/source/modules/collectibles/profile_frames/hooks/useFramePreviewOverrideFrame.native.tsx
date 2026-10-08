@@ -1,21 +1,21 @@
-// Module ID: 7884
-// Function ID: 7885
+// Module ID: 8304
+// Function ID: 8305
 // Name: useFramePreviewOverrideFrame
-// Dependencies: [19, 7073, 7885, 558, 576, 1980, 2]
+// Dependencies: [19, 7259, 8305, 558, 576, 1992, 2]
 
-// Module 7884 (useFramePreviewOverrideFrame)
+// Module 8304 (useFramePreviewOverrideFrame)
 import react2 from "react" /* 576 */;
-import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 7885 */;
+import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8305 */;
 import react from "react" /* 19 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7073 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7259 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const CollectiblesItemType = tmp(1980);
+const CollectiblesItemType = tmp(1992);
 let closure_4 = FramePreviewOverrideStore.useFramePreviewOverrideStore;
 let c5 = "frame-preview-override";
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFramePreviewOverrideFrame() {
   let first;
   const obj = react2;
   const cResult = obj.c(8);
@@ -61,7 +61,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
     tmp7 = tmp11;
   }
   return tmp6;
-}) : (() => {
+}) : (function useFramePreviewOverrideFrame() {
   let tmp = closure_4((override) => override.override);
   let closure_0 = tmp;
   const items = [tmp];

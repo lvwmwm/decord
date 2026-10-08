@@ -1,17 +1,19 @@
-// Module ID: 9143
-// Function ID: 9144
+// Module ID: 10712
+// Function ID: 10713
 // Name: useVideoReadyTimeout
-// Dependencies: [19, 1102, 558, 576, 2046, 9139, 4951, 9144, 9147, 2]
+// Dependencies: [19, 1102, 558, 576, 2058, 10709, 5135, 5218, 10713, 2]
 
-// Module 9143 (useVideoReadyTimeout)
+// Module 10712 (useVideoReadyTimeout)
 import DurationsDefault from "Durations" /* 1102 */;
-import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 9147 */;
+import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 10713 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let ref, startResult, tmp3, tmp4, tmp5, tmp6;
+
 let closure_3 = 20 * DurationsDefault.Millis.SECOND;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(streamId) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoReadyTimeout(streamId) {
   let first;
   let streamKey;
   let userId;
@@ -35,7 +37,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(streamId) {
   } else {
     first = cResult[0];
   }
-  const ref = streamKey.useRef(first);
+  ref = streamKey.useRef(first);
   const obj2 = streamKey;
   if (videoSpinnerContext !== tmp(tmp2[5]).VideoSpinnerContext.SELF_STREAM) {
     let STREAM;
@@ -56,54 +58,91 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(streamId) {
               const effect = obj2.useEffect(tmp8, tmp9);
               if (cResult[9] === STREAM) {
                 let tmp11;
-                let tmp12;
+                let tmp13;
                 if (cResult[10] === userId) {
                   tmp11 = cResult[11];
                 }
                 if (cResult[12] !== tmp11) {
                   const obj3 = { onReady: tmp11 };
-                  cResult[12] = tmp11;
+                  class R {
+                    constructor() {
+                      tmp = loading;
+                      if (tmp) {
+                        tmp2 = paused;
+                        if (!tmp2) {
+                          tmp3 = streamId;
+                          tmp4 = userId;
+                          WindowVisibilityVideoManager = streamId(userId[7]).WindowVisibilityVideoManager;
+                          if (WindowVisibilityVideoManager.isIncomingVideoEnabled()) {
+                            tmp5 = closure_5;
+                            current = closure_5.current;
+                            tmp6 = loading;
+                            startResult = current.start(loading, () => { /* body not rendered: F142048 */ });
+                            return () => { /* body not rendered: F142049 */ };
+                          }
+                        }
+                      }
+                      return;
+                    }
+                  }
                   cResult[13] = obj3;
-                  tmp12 = obj3;
+                  tmp13 = obj3;
                 } else {
-                  tmp12 = cResult[13];
+                  tmp13 = cResult[13];
                 }
-                return tmp12;
+                return tmp13;
               }
-              const fn2 = function v() {
-                const current = ref.current;
-                current.stop();
-                const obj = VideoStreamReadyActionCreators;
-                const result = obj.clearVideoStreamTimeout(STREAM, userId);
-              };
+              class R {
+                constructor() {
+                  tmp = loading;
+                  if (tmp) {
+                    tmp2 = paused;
+                    if (!tmp2) {
+                      tmp3 = streamId;
+                      tmp4 = userId;
+                      WindowVisibilityVideoManager = streamId(userId[7]).WindowVisibilityVideoManager;
+                      if (WindowVisibilityVideoManager.isIncomingVideoEnabled()) {
+                        tmp5 = closure_5;
+                        current = closure_5.current;
+                        tmp6 = loading;
+                        startResult = current.start(loading, () => { /* body not rendered: F142048 */ });
+                        return () => { /* body not rendered: F142049 */ };
+                      }
+                    }
+                  }
+                  return;
+                }
+              }
               cResult[9] = STREAM;
               cResult[10] = userId;
-              cResult[11] = fn2;
-              tmp11 = fn2;
+              cResult[11] = tmp12;
+              tmp11 = tmp12;
             }
           }
         }
       }
     }
-    const fn = function f() {
-      const tmp = loading;
-      if (tmp) {
-        const tmp2 = closure_4;
-        if (!tmp2) {
-          const WindowVisibilityVideoManager = streamId(userId[7]).WindowVisibilityVideoManager;
-          if (WindowVisibilityVideoManager.isIncomingVideoEnabled()) {
-            const current = ref.current;
-            current.start(loading, () => {
-              const obj = streamId(userId[8]);
-              obj.videoStreamTimedOut(current, closure_1_1, STREAM, streamKey);
-            });
-            return () => {
-              current.stop();
-            };
+    class R {
+      constructor() {
+        tmp = loading;
+        if (tmp) {
+          tmp2 = paused;
+          if (!tmp2) {
+            tmp3 = streamId;
+            tmp4 = userId;
+            WindowVisibilityVideoManager = streamId(userId[7]).WindowVisibilityVideoManager;
+            if (WindowVisibilityVideoManager.isIncomingVideoEnabled()) {
+              tmp5 = closure_5;
+              current = closure_5.current;
+              tmp6 = loading;
+              startResult = current.start(loading, () => { /* body not rendered: F142048 */ });
+              return () => { /* body not rendered: F142049 */ };
+            }
           }
         }
+        return;
       }
-    };
+    }
     const items = [tmp4, streamId, loading, STREAM, streamKey, userId];
     cResult[1] = loading;
     cResult[2] = STREAM;
@@ -111,13 +150,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(streamId) {
     cResult[4] = streamId;
     cResult[5] = streamKey;
     cResult[6] = userId;
-    cResult[7] = fn;
+    cResult[7] = R;
     cResult[8] = items;
     tmp9 = items;
-    tmp8 = fn;
+    tmp8 = R;
   }
   STREAM = tmp(tmp2[6]).MediaEngineContextTypes.STREAM;
-}) : ((streamId) => {
+}) : (function useVideoReadyTimeout(streamId) {
   let items1;
   let streamKey;
   let videoSpinnerContext;
@@ -135,7 +174,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(streamId) {
   let tmp2 = userId;
   const useRef = streamKey.useRef;
   const timeout = new streamId(userId[4]).Timeout();
-  const ref = useRef(timeout);
+  ref = useRef(timeout);
   if (videoSpinnerContext !== streamId(userId[5]).VideoSpinnerContext.SELF_STREAM) {
     if (videoSpinnerContext !== tmp(tmp2[5]).VideoSpinnerContext.REMOTE_STREAM) {
       STREAM = tmp(tmp2[6]).MediaEngineContextTypes.DEFAULT;

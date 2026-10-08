@@ -1,15 +1,15 @@
-// Module ID: 15160
-// Function ID: 15161
+// Module ID: 15422
+// Function ID: 15423
 // Name: useIsFavoritesGuildVisible
-// Dependencies: [4705, 2054, 2077, 10061, 10049, 558, 576, 504, 2]
+// Dependencies: [4899, 2066, 2089, 10306, 10294, 558, 576, 504, 2]
 // Exports: isFavoritesGuildVisible
 
-// Module 15160 (useIsFavoritesGuildVisible)
-import FavoritesUtils from "FavoritesUtils" /* 2077 */;
-import FavoritesHooks from "FavoritesHooks" /* 10049 */;
-import FavoritesGuildIntroPopover from "FavoritesGuildIntroPopover" /* 10061 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
-import FavoriteStore from "FavoriteStore" /* 2054 */;
+// Module 15422 (useIsFavoritesGuildVisible)
+import FavoritesUtils from "FavoritesUtils" /* 2089 */;
+import FavoritesHooks from "FavoritesHooks" /* 10294 */;
+import FavoritesGuildIntroPopover from "FavoritesGuildIntroPopover" /* 10306 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
+import FavoriteStore from "FavoriteStore" /* 2066 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -56,7 +56,7 @@ function computeIsFavoritesGuildVisible(FavoriteStore, SelectedGuildStore, isExp
   }
   return isExperimentEnabled;
 }
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFavoritesGuildVisible(arg0) {
   let first;
   let isExperimentEnabled;
   let keepWhileViewing;
@@ -107,7 +107,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = items1;
   tmp11 = items1;
   tmp10 = fn;
-}) : (() => {
+}) : (function useIsFavoritesGuildVisible() {
   let flag = arg0;
   if (arg0 === undefined) {
     flag = true;

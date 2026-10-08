@@ -1,29 +1,27 @@
-// Module ID: 10691
-// Function ID: 10692
+// Module ID: 10279
+// Function ID: 10280
 // Name: InstantInviteCode
-// Dependencies: [19, 17, 2055, 4525, 1377, 21, 4896, 587, 558, 576, 5819, 5871, 5049, 4892, 5600, 4855, 1126, 10680, 2]
+// Dependencies: [19, 17, 2067, 4717, 1389, 21, 5090, 587, 558, 576, 8134, 8183, 5417, 5086, 5373, 5049, 1126, 9593, 2]
 
-// Module 10691 (InstantInviteCode)
+// Module 10279 (InstantInviteCode)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import ClockIcon from "ClockIcon" /* 4855 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useChannelName from "useChannelName" /* 5049 */;
-import Stack_Stack from "Stack/Stack" /* 5600 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5819 */;
-import CountDownDefault from "CountDown" /* 10680 */;
+import ChannelRecord from "ChannelRecord" /* 2067 */;
+import ClockIcon from "ClockIcon" /* 5049 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Stack_Stack from "Stack/Stack" /* 5373 */;
+import useChannelName from "useChannelName" /* 5417 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8134 */;
+import CountDownDefault from "CountDown" /* 9593 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let invite;
 
 let c9;
 let metroImportAll;
@@ -35,7 +33,7 @@ let obj = { flex: { flex: 1 }, channel: { flex: 0 }, time: obj2 };
 obj2 = { color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE };
 let closure_10 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInviteDetails(arg0) {
   let channel;
   let expiresAt;
   let intl;
@@ -53,7 +51,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const tmpResult = utils_ChannelUtils;
     let TextIcon = tmpResult.getSimpleChannelIconComponent(channel);
     if (TextIcon == null) {
-      TextIcon = tmp(5871).TextIcon;
+      TextIcon = tmp(8183).TextIcon;
     }
     cResult[0] = channel;
     cResult[1] = TextIcon;
@@ -112,10 +110,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp23 = null != expiresAt;
       if (tmp23) {
         const obj3 = { direction: "horizontal", align: "center", children: items1 };
-        const Stack = tmp(5600).Stack;
+        const Stack = tmp(5373).Stack;
         items1 = [metroImportAll(ClockIcon.ClockIcon, { size: "xs", color: "icon-subtle" }), , ];
         const obj4 = { variant: "text-md/semibold", color: "text-subtle", children: intl.string(intl2.t.aTABYx) };
-        const Text = tmp(4892).Text;
+        const Text = tmp(5086).Text;
         intl = tmp(1126).intl;
         items1[1] = metroImportAll(Text, obj4);
         const obj5 = { style: tmp4.time, deadline: expiresAt };
@@ -140,7 +138,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = tmp10;
   cResult[8] = tmp17;
   tmp16 = tmp17;
-}) : ((arg0) => {
+}) : (function InstantInviteDetails(arg0) {
   let channel;
   let expiresAt;
   let intl;
@@ -152,24 +150,24 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = utils_ChannelUtils;
   let TextIcon = obj.getSimpleChannelIconComponent(channel);
   if (TextIcon == null) {
-    TextIcon = tmp2(5871).TextIcon;
+    TextIcon = tmp2(8183).TextIcon;
   }
-  const Stack = tmp2(5600).Stack;
+  const Stack = tmp2(5373).Stack;
   const obj2 = { direction: "horizontal", align: "center", children: items };
-  const Stack2 = tmp2(5600).Stack;
+  const Stack2 = tmp2(5373).Stack;
   items = [metroImportAll(TextIcon, { color: "icon-subtle", size: "xs" }), ];
   const obj3 = { variant: "text-md/semibold", color: "text-subtle", style: tmp.channel, lineClamp: 1, children: tmp2Result.computeChannelName(channel, UserStore, RelationshipStore, false) };
-  const Text = tmp2(4892).Text;
+  const Text = tmp2(5086).Text;
   tmp2Result = useChannelName;
   items[1] = metroImportAll(Text, obj3);
   const children = [React4(Stack2, obj2), ];
   let tmp4Result = null != expiresAt;
   if (tmp4Result) {
     const obj4 = { direction: "horizontal", align: "center", children: items2 };
-    const Stack3 = tmp2(5600).Stack;
+    const Stack3 = tmp2(5373).Stack;
     items2 = [metroImportAll(ClockIcon.ClockIcon, { size: "xs", color: "icon-subtle" }), , ];
     const obj5 = { variant: "text-md/semibold", color: "text-subtle", children: intl.string(intl2.t.aTABYx) };
-    const Text2 = tmp2(4892).Text;
+    const Text2 = tmp2(5086).Text;
     intl = tmp2(1126).intl;
     items2[1] = metroImportAll(Text2, obj5);
     const obj6 = { style: tmp.time, deadline: expiresAt };
@@ -181,7 +179,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_11 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((invite) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInviteCode(invite) {
   let items;
   let tmp11;
   let tmp5;
@@ -253,7 +251,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((invite) => {
   cResult[7] = tmp11;
   cResult[8] = tmp14;
   tmp13 = tmp14;
-}) : ((invite) => {
+}) : (function InstantInviteCode(invite) {
   let Stack;
   let items1;
   let obj2;
@@ -262,10 +260,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((invite) => {
   const obj = { style: closure_10().flex, children: closure_9(Stack, obj2) };
   const memo = react.useMemo(() => closure_5(invite.channel), items);
   obj2 = { children: items1 };
-  Stack = invite(5600).Stack;
+  Stack = invite(5373).Stack;
   items1 = [, ];
   const obj3 = { variant: "text-lg/bold", tabularNumbers: true, children: invite.code };
-  items1[0] = closure_8(invite(4892).Text, obj3);
+  items1[0] = closure_8(invite(5086).Text, obj3);
   const obj4 = { channel: memo, expiresAt: invite.getExpiresAt() };
   items1[1] = closure_8(closure_11, obj4);
   return closure_8(View, obj);

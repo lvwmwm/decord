@@ -1,19 +1,17 @@
-// Module ID: 16825
-// Function ID: 16826
+// Module ID: 17104
+// Function ID: 17105
 // Name: SuggestedSearchList
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 16826, 1126, 3919, 4892, 16827, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 17105, 1126, 4051, 5086, 17106, 2]
 
-// Module 16825 (SuggestedSearchList)
+// Module 17104 (SuggestedSearchList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import SuggestedSearchRowDefault from "SuggestedSearchRow" /* 16827 */;
+import SuggestedSearchRowDefault from "SuggestedSearchRow" /* 17106 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let smartSearchQuery;
 
 let closure_4;
 let hasOwnProperty;
@@ -24,7 +22,7 @@ let obj = { text: obj2 };
 obj2 = { marginBottom: nativeDefault.space.PX_4, marginHorizontal: nativeDefault.space.PX_16 };
 let closure_6 = createStyles.createStyles(obj);
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((smartSearchQuery) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SuggestedSearchList(smartSearchQuery) {
   let source;
   let suggestedSearches;
   let tmp6;
@@ -153,7 +151,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((smartSe
     cResult[6] = items1;
     tmp9 = items1;
   }
-}) : ((smartSearchQuery) => {
+}) : (function SuggestedSearchList(smartSearchQuery) {
   let intl;
   let items1;
   smartSearchQuery = smartSearchQuery.smartSearchQuery;

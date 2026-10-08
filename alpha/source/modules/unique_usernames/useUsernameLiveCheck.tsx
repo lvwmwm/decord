@@ -1,14 +1,14 @@
-// Module ID: 14534
-// Function ID: 14535
+// Module ID: 14795
+// Function ID: 14796
 // Name: useUsernameLiveCheck
-// Dependencies: [19, 14535, 558, 576, 573, 12, 14536, 14537, 2]
+// Dependencies: [19, 14796, 558, 576, 573, 12, 14797, 14798, 2]
 
-// Module 14534 (useUsernameLiveCheck)
+// Module 14795 (useUsernameLiveCheck)
 import _mod12 from "module_12" /* 12 */;
-import UniqueUsernamesActionCreatorsDefault from "UniqueUsernamesActionCreators" /* 14536 */;
-import UniqueUsernamesUtils from "UniqueUsernamesUtils" /* 14537 */;
+import UniqueUsernamesActionCreatorsDefault from "UniqueUsernamesActionCreators" /* 14797 */;
+import UniqueUsernamesUtils from "UniqueUsernamesUtils" /* 14798 */;
 import react_mod from "react" /* 19 */;
-import UniqueUsernamesStore from "UniqueUsernamesStore" /* 14535 */;
+import UniqueUsernamesStore from "UniqueUsernamesStore" /* 14796 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 let react = react_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUsernameLiveCheck(arg0, arg1, arg2, arg3) {
   let closure_0;
   let closure_2;
   let closure_3;
@@ -58,14 +58,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
   stateFromStores = tmpResult.useStateFromStores(first, tmp9, tmp10);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [stateFromStores];
-    class U {
+    class C {
       constructor() {
         return stateFromStores.isRateLimited();
       }
     }
     cResult[4] = items2;
-    cResult[5] = U;
-    tmp13 = U;
+    cResult[5] = C;
+    tmp13 = C;
     tmp12 = items2;
   } else {
     tmp12 = cResult[4];
@@ -90,7 +90,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
               tmp19 = cResult[15];
             }
             const effect = react.useEffect(tmp19, tmp18);
-            class U {
+            class C {
               constructor() {
                 return stateFromStores.isRateLimited();
               }
@@ -100,7 +100,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
         }
       }
     }
-    class U {
+    class C {
       constructor() {
         return stateFromStores.isRateLimited();
       }
@@ -130,7 +130,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
   cResult[7] = undefined !== arg3 && arg3;
   cResult[8] = debounceResult;
   tmp16 = debounceResult;
-}) : ((arg0) => {
+}) : (function useUsernameLiveCheck(arg0) {
   let closure_0;
   _require = arg0;
   let flag = arg1;

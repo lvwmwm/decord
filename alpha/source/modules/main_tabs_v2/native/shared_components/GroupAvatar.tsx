@@ -1,30 +1,30 @@
-// Module ID: 12881
-// Function ID: 12882
+// Module ID: 13030
+// Function ID: 13031
 // Name: GroupAvatar
-// Dependencies: [19, 17, 4885, 21, 4896, 587, 558, 576, 4735, 5980, 573, 4618, 4897, 5604, 6477, 4892, 5981, 2]
+// Dependencies: [19, 17, 5079, 21, 5090, 587, 558, 576, 4929, 6163, 573, 4810, 5091, 5374, 6655, 5086, 6164, 2]
 
-// Module 12881 (GroupAvatar)
+// Module 13030 (GroupAvatar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import react3 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import timing from "timing" /* 4897 */;
-import spring from "spring" /* 5604 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6477 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import timing from "timing" /* 5091 */;
+import spring from "spring" /* 5374 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6655 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const react_mod = react2;
-let animateOnMount, count, scale, users;
+let animateOnMount;
 
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 let react = react_mod;
 let View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -55,7 +55,7 @@ items1[3] = items4;
 let ReactCompilerGating = ReactCompilerGating_mod;
 const __initData = { code: "function GroupAvatarTsx1(){const{withTiming,opacityAnimation,useReducedMotion,translateXAnimation,withSpring,SPRING_OPTIONS_POSITION,translateYAnimation,scaleAnimation,SPRING_OPTIONS_SCALE}=this.__closure;return{opacity:withTiming(opacityAnimation.get()),transform:[{translateX:useReducedMotion?translateXAnimation.get():withSpring(translateXAnimation.get(),SPRING_OPTIONS_POSITION)},{translateY:useReducedMotion?translateYAnimation.get():withSpring(translateYAnimation.get(),SPRING_OPTIONS_POSITION)},{scale:useReducedMotion?scaleAnimation.get():withSpring(scaleAnimation.get(),SPRING_OPTIONS_SCALE)}]};}" };
 const __initData2 = { code: "function GroupAvatarTsx2(){const{withTiming,opacityAnimation,useReducedMotion,translateXAnimation,withSpring,SPRING_OPTIONS_POSITION,translateYAnimation,scaleAnimation,SPRING_OPTIONS_SCALE}=this.__closure;return{opacity:withTiming(opacityAnimation.get()),transform:[{translateX:useReducedMotion?translateXAnimation.get():withSpring(translateXAnimation.get(),SPRING_OPTIONS_POSITION)},{translateY:useReducedMotion?translateYAnimation.get():withSpring(translateYAnimation.get(),SPRING_OPTIONS_POSITION)},{scale:useReducedMotion?scaleAnimation.get():withSpring(scaleAnimation.get(),SPRING_OPTIONS_SCALE)}]};}" };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((users) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupAvatar(users) {
   let closure_3;
   let items2;
   let primaryColor;
@@ -231,7 +231,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((users) => {
           }
         }
       }
-      class X {
+      class G {
         constructor(arg0, arg1) {
           let tmp4Result = null;
           if (null != users[arg1]) {
@@ -260,8 +260,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((users) => {
       cResult[17] = users.length > 4;
       cResult[18] = num8;
       cResult[19] = users;
-      cResult[20] = X;
-      tmp18 = X;
+      cResult[20] = G;
+      tmp18 = G;
     }
   }
   const tmpResult = tmp(ref[8]);
@@ -271,7 +271,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((users) => {
   cResult[2] = theme;
   cResult[3] = tmp6;
   shadowContainerBackground = tmp6;
-}) : ((users) => {
+}) : (function GroupAvatar(users) {
   let closure_3;
   let items2;
   let primaryColor;
@@ -344,7 +344,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((users) => {
   return closure_7(tmp9, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((scale) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnimatedContainer(scale) {
   let children;
   let sharedValue2;
   let tmp5;
@@ -413,7 +413,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((scale) => {
               }
               const effect = stateFromStores.useEffect(tmp18, tmp19);
               const tmpResult10 = scale(translateY[11]);
-              class X {
+              class G {
                 constructor() {
                   let items;
                   let obj2;
@@ -448,10 +448,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((scale) => {
               }
               let obj2 = { withTiming: tmp(tmp2[12]).withTiming, opacityAnimation: sharedValue, useReducedMotion: stateFromStores, translateXAnimation: sharedValue3, withSpring: tmp(tmp2[13]).withSpring, SPRING_OPTIONS_POSITION, translateYAnimation: sharedValue2, scaleAnimation: sharedValue4, SPRING_OPTIONS_SCALE };
               const useAnimatedStyle = tmpResult10.useAnimatedStyle;
-              X.__closure = obj2;
-              X.__workletHash = 8800301056148;
-              X.__initData = __initData;
-              const animatedStyle = useAnimatedStyle(X);
+              G.__closure = obj2;
+              G.__workletHash = 8800301056148;
+              G.__initData = __initData;
+              const animatedStyle = useAnimatedStyle(G);
               if (cResult[11] === animatedStyle) {
                 let tmp27;
                 if (cResult[12] === tmp4.avatarContainer) {
@@ -464,7 +464,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((scale) => {
                   }
                   return tmp28;
                 }
-                class X {
+                class G {
                   constructor() {
                     let items;
                     let obj2;
@@ -534,7 +534,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((scale) => {
   cResult[10] = items2;
   tmp19 = items2;
   tmp18 = fn2;
-}) : ((scale) => {
+}) : (function AnimatedContainer(scale) {
   let items2;
   scale = scale.scale;
   const translateX = scale.translateX;
@@ -628,7 +628,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((scale) => {
   return sharedValue3(translateX(translateY[11]).View, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((count) => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupMemberCount(count) {
   let items;
   const obj = react3;
   const cResult = obj.c(9);
@@ -681,7 +681,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((count) => {
   cResult[1] = str;
   cResult[2] = tmp7;
   tmp6 = tmp7;
-}) : ((count) => {
+}) : (function GroupMemberCount(count) {
   let Text;
   let items;
   let obj3;
@@ -707,7 +707,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((count) => {
   return metroRequire(View, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupMemberAvatar(arg0) {
   let guildId;
   let user;
   const obj = react3;
@@ -757,7 +757,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = user;
   cResult[2] = avatarSource;
   tmp4 = avatarSource;
-}) : ((guildId) => {
+}) : (function GroupMemberAvatar(guildId) {
   let obj2;
   guildId = guildId.guildId;
   const user = guildId.user;

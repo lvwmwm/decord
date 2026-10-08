@@ -1,21 +1,21 @@
-// Module ID: 13278
-// Function ID: 13279
+// Module ID: 13579
+// Function ID: 13580
 // Name: RewardGrantNotice
-// Dependencies: [19, 17, 13260, 21, 4896, 587, 558, 576, 13262, 11013, 4892, 1126, 6635, 2]
+// Dependencies: [19, 17, 13560, 21, 5090, 587, 558, 576, 13562, 11188, 5086, 1126, 6812, 2]
 
-// Module 13278 (RewardGrantNotice)
+// Module 13579 (RewardGrantNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 6635 */;
-import BalanceWidgetPill from "BalanceWidgetPill" /* 11013 */;
-import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 13262 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 6812 */;
+import BalanceWidgetPill from "BalanceWidgetPill" /* 11188 */;
+import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 13562 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 13260 */;
+import Constants from "Constants" /* 13560 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ createStyles = createStyles.createStyles;
 obj3 = { flexDirection: "row", alignItems: "center", marginTop: nativeDefault.space.PX_8, alignSelf: "flex-start" };
 let closure_8 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RewardGrantNotice(arg0) {
   let nRewardsGranted;
   let referralRewardType;
   const obj = react2;
@@ -75,7 +75,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp4 = tmp5;
   }
   return tmp4;
-}) : ((arg0) => {
+}) : (function RewardGrantNotice(arg0) {
   let nRewardsGranted;
   let referralRewardType;
   ({ nRewardsGranted, referralRewardType } = arg0);
@@ -88,7 +88,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp4 = metroRequire(closure_9, obj2);
     } else {
       tmp4 = null;
-      if (referralRewardType === tmp2(13262).ReferralRewardType.DISCOUNT) {
+      if (referralRewardType === tmp2(13562).ReferralRewardType.DISCOUNT) {
         const obj = { nRewardsGranted };
         tmp4 = metroRequire(closure_10, obj);
       }
@@ -98,7 +98,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((nRewardsGranted) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsGrantNotice(nRewardsGranted) {
   let items;
   let items1;
   const obj = react2;
@@ -115,7 +115,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((nRewardsGranted
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { variant: "text-sm/medium", color: "text-strong", children: items };
-      const Text = tmp(4892).Text;
+      const Text = tmp(5086).Text;
       const intl = tmp(1126).intl;
       items = [" ", intl.string(intl3.t.UhguER)];
       const tmp11 = metroImportDefault(Text, obj2);
@@ -145,7 +145,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((nRewardsGranted
   cResult[1] = result;
   cResult[2] = tmp7;
   tmp6 = tmp7;
-}) : ((nRewardsGranted) => {
+}) : (function OrbsGrantNotice(nRewardsGranted) {
   let items;
   let items1;
   nRewardsGranted = nRewardsGranted.nRewardsGranted;
@@ -162,7 +162,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((nRewardsGranted
   return metroImportDefault(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((nRewardsGranted) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiscountGrantNotice(nRewardsGranted) {
   let items;
   let tmp12;
   let tmp15;
@@ -185,7 +185,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((nRewardsGrante
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE, size: "xs" };
-    const CheckmarkSmallIcon = tmp(6635).CheckmarkSmallIcon;
+    const CheckmarkSmallIcon = tmp(6812).CheckmarkSmallIcon;
     const tmp11 = metroRequire(CheckmarkSmallIcon, obj3);
     cResult[2] = tmp11;
     tmp8 = tmp11;
@@ -228,7 +228,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((nRewardsGrante
   cResult[9] = tmp15;
   cResult[10] = tmp19;
   tmp18 = tmp19;
-}) : ((nRewardsGranted) => {
+}) : (function DiscountGrantNotice(nRewardsGranted) {
   let intl;
   let intl2;
   let items;

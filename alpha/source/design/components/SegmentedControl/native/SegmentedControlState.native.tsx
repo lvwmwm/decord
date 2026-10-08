@@ -1,17 +1,17 @@
-// Module ID: 9317
-// Function ID: 9318
+// Module ID: 8505
+// Function ID: 8506
 // Name: SegmentedControlState
-// Dependencies: [19, 558, 576, 587, 4602, 4618, 4861, 5777, 2]
+// Dependencies: [19, 558, 576, 587, 4794, 4810, 5055, 5360, 2]
 
-// Module 9317 (SegmentedControlState)
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5777 */;
+// Module 8505 (SegmentedControlState)
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5360 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4 = { code: "function SegmentedControlStateNativeTsx1(index_1,dimensions){const{itemDimensions,itemCount}=this.__closure;itemDimensions.get()[index_1]=dimensions;itemDimensions.set([...itemDimensions.get()].slice(0,itemCount));}" };
 let closure_5 = { code: "function SegmentedControlStateNativeTsx2(index_1,dimensions){const{itemDimensions,itemCount}=this.__closure;itemDimensions.get()[index_1]=dimensions;itemDimensions.set([...itemDimensions.get()].slice(0,itemCount));}" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPageChangeStart) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSegmentedControlState(onPageChangeStart) {
   let defaultIndex;
   let itemSpacing;
   let items;
@@ -236,7 +236,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPageChangeStart) =
   cResult[9] = enabled;
   cResult[10] = fn2;
   tmp17 = fn2;
-}) : ((pageWidth) => {
+}) : (function useSegmentedControlState(pageWidth) {
   let items = pageWidth.items;
   pageWidth = pageWidth.pageWidth;
   let num = pageWidth.defaultIndex;

@@ -1,29 +1,27 @@
-// Module ID: 16809
-// Function ID: 16810
+// Module ID: 17088
+// Function ID: 17089
 // Name: ChannelDetails
-// Dependencies: [19, 17, 11994, 2051, 7522, 10666, 21, 587, 4896, 558, 576, 504, 11941, 16810, 6664, 6688, 1490, 16806, 5777, 6440, 1618, 1369, 4872, 6997, 12005, 11980, 4618, 4897, 4900, 5604, 12014, 4751, 16811, 16821, 16935, 16937, 16938, 16939, 5745, 6147, 2]
+// Dependencies: [19, 17, 12067, 2063, 9245, 9581, 21, 587, 5090, 558, 576, 504, 12014, 17089, 6841, 6865, 1502, 17086, 5360, 6618, 1630, 1381, 5066, 7185, 12078, 12053, 4810, 5091, 5094, 5374, 12087, 4945, 17090, 17100, 17216, 17218, 17219, 17220, 5328, 6326, 2]
 
-// Module 16809 (ChannelDetails)
+// Module 17088 (ChannelDetails)
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import timing from "timing" /* 4897 */;
-import timingPresets from "timingPresets" /* 4900 */;
-import spring from "spring" /* 5604 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11980 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12005 */;
-import SearchActionCreatorsDefault from "SearchActionCreators" /* 12014 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import timing from "timing" /* 5091 */;
+import timingPresets from "timingPresets" /* 5094 */;
+import spring from "spring" /* 5374 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12053 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12078 */;
+import SearchActionCreatorsDefault from "SearchActionCreators" /* 12087 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SearchQueryStore from "SearchQueryStore" /* 11994 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 7522 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10666 */;
+import SearchQueryStore from "SearchQueryStore" /* 12067 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 9245 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9581 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channelId;
 
 let CHANNEL_DETAILS_TOP_MARGIN;
 let StyleSheet;
@@ -40,7 +38,7 @@ let obj5;
 let obj6;
 let tmp;
 let unpackModuleId;
-const DeviceUtils = tmp(4872);
+const DeviceUtils = tmp(5066);
 let react = react_mod;
 ({ View: closure_4, StyleSheet } = react_native);
 ({ deleteChannelDetailsSearchState: metroImportDefault, useChannelDetailsSearchActiveSource: metroImportAll, useIsChannelDetailsSearchActive: c9 } = ChannelDetailsStore);
@@ -59,7 +57,7 @@ obj6 = { paddingBottom: nativeDefault.space.PX_12, zIndex: 10 };
 let closure_14 = createStyles(obj);
 let closure_15 = { code: "function ChannelDetailsTsx1(){const{headerHeight,isSearchActive,withTiming,timingFast,withSpring,SPRING_CHANNEL_HEADER}=this.__closure;const height_0=headerHeight.get();return{position:\"relative\",pointerEvents:isSearchActive?\"none\":\"auto\",opacity:withTiming(isSearchActive?0:1,timingFast,\"animate-always\"),height:height_0!=null&&height_0>=0?withSpring(isSearchActive?0:height_0,{...SPRING_CHANNEL_HEADER,clamp:{min:0,max:height_0}}):undefined};}" };
 const __initData = { code: "function ChannelDetailsTsx2(){const{headerHeight,isSearchActive,withTiming,timingFast,withSpring,SPRING_CHANNEL_HEADER}=this.__closure;const height_0=headerHeight.get();return{position:'relative',pointerEvents:isSearchActive?'none':'auto',opacity:withTiming(isSearchActive?0:1,timingFast,'animate-always'),height:height_0!=null&&height_0>=0?withSpring(isSearchActive?0:height_0,{...SPRING_CHANNEL_HEADER,clamp:{min:0,max:height_0}}):undefined};}" };
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelDetails(channelId) {
   let closure_3;
   let componentWidth;
   let detectorRef;
@@ -246,7 +244,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   cResult[6] = items3;
   tmp10 = items3;
   tmp9 = D;
-}) : ((channelId) => {
+}) : (function ChannelDetails(channelId) {
   let GestureDetector;
   let SearchSuggestionsProvider;
   let componentWidth;

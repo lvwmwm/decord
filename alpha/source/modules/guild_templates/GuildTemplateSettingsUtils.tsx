@@ -1,18 +1,18 @@
-// Module ID: 17867
-// Function ID: 17868
+// Module ID: 18154
+// Function ID: 18155
 // Name: GuildTemplateSettingsUtils
-// Dependencies: [5, 32, 19, 2051, 4515, 6979, 1085, 558, 576, 504, 6837, 5319, 2]
+// Dependencies: [5, 32, 19, 2063, 4707, 7168, 1085, 558, 576, 504, 7019, 5631, 2]
 // Exports: isGuildTemplateNameValid
 
-// Module 17867 (GuildTemplateSettingsUtils)
+// Module 18154 (GuildTemplateSettingsUtils)
 import Constants from "Constants" /* 1085 */;
-import GuildTemplateActionCreatorsDefault from "GuildTemplateActionCreators" /* 6837 */;
+import GuildTemplateActionCreatorsDefault from "GuildTemplateActionCreators" /* 7019 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 6979 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7168 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let _require, c5, c6, closure_3;
 
 const Permissions = Constants.Permissions;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanViewAllChannels(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -38,7 +38,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function l() {
+    const fn = function t() {
       const values = Object.values(ChannelStore.getMutableGuildChannelsForGuild(closure_0));
       return values.every((item) => closure_1_7.can(constants.VIEW_CHANNEL, item));
     };
@@ -54,7 +54,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : ((arg0) => {
+}) : (function useCanViewAllChannels(arg0) {
   let closure_0;
   _require = arg0;
   const items = [ChannelStore, PermissionStore];
@@ -66,7 +66,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTemplate(arg0) {
   let tmp12;
   let tmp14;
   let tmp15;
@@ -184,7 +184,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp12 = cResult[3];
   }
   if (cResult[4] !== arg0) {
-    class E {
+    class C {
       constructor() {
         let forGuild;
         if (null != closure_0) {
@@ -195,12 +195,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const items2 = [arg0];
     cResult[4] = arg0;
-    cResult[5] = E;
+    cResult[5] = C;
     cResult[6] = items2;
     tmp15 = items2;
-    tmp14 = E;
+    tmp14 = C;
   } else {
-    class E {
+    class C {
       constructor() {
         let forGuild;
         if (null != closure_0) {
@@ -214,7 +214,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp12, tmp14, tmp15);
   if (cResult[7] === tmp7) {
-    class E {
+    class C {
       constructor() {
         let forGuild;
         if (null != closure_0) {
@@ -229,7 +229,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = stateFromStores;
   cResult[9] = null != arg0 && tmp5 !== arg0;
   cResult[10] = obj3;
-}) : ((arg0) => {
+}) : (function useGuildTemplate(arg0) {
   let closure_2;
   let loadError;
   let tmp2;

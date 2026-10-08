@@ -1,20 +1,18 @@
-// Module ID: 9825
-// Function ID: 9826
+// Module ID: 10390
+// Function ID: 10391
 // Name: LikelyAtoMoreTipsModalActionItems
-// Dependencies: [19, 1377, 21, 558, 576, 504, 4728, 1126, 9826, 6081, 6000, 2]
+// Dependencies: [19, 1389, 21, 558, 576, 504, 4922, 1126, 10325, 6267, 6184, 2]
 
-// Module 9825 (LikelyAtoMoreTipsModalActionItems)
+// Module 10390 (LikelyAtoMoreTipsModalActionItems)
 import Fragment from "Fragment" /* 21 */;
-import UserUtilsDefault from "UserUtils" /* 4728 */;
+import UserUtilsDefault from "UserUtils" /* 4922 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let senderId;
-
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LikelyAtoMoreTipsModalActionItems(senderId) {
   let first;
   let tmp12;
   let tmp6;
@@ -72,7 +70,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
     cResult[8] = stringResult;
   }
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp18 = jsx(senderId(9826).BellSlashIcon, {});
+    const tmp18 = jsx(senderId(10325).BellSlashIcon, {});
     cResult[9] = tmp18;
   }
   if (cResult[10] === handleMutePressed) {
@@ -82,13 +80,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
     }
     return tmp19;
   }
-  const TableRowGroup = tmp(6081).TableRowGroup;
+  const TableRowGroup = tmp(6267).TableRowGroup;
   const tmp20 = <TableRowGroup hasIcons>{null}</TableRowGroup>;
   cResult[10] = handleMutePressed;
   cResult[11] = tmp12;
   cResult[12] = tmp20;
   tmp19 = tmp20;
-}) : ((senderId) => {
+}) : (function LikelyAtoMoreTipsModalActionItems(senderId) {
   let intl;
   let intl2;
   senderId = senderId.senderId;
@@ -102,9 +100,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
     const obj = UserUtilsDefault;
     return obj.getName(stateFromStores);
   }, items2);
-  const TableRowGroup = senderId(6081).TableRowGroup;
+  const TableRowGroup = senderId(6267).TableRowGroup;
   ({ label: intl.formatToPlainString(senderId(1126).t["F/ID+9"], { username: memo }), subLabel: intl2.string(senderId(1126).t.w2ve0t), onPress: handleMutePressed, icon: null });
-  const TableRow = senderId(6000).TableRow;
+  const TableRow = senderId(6184).TableRow;
   intl = senderId(1126).intl;
   intl2 = senderId(1126).intl;
   return <TableRowGroup hasIcons>{null}</TableRowGroup>;

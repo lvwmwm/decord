@@ -1,25 +1,25 @@
-// Module ID: 11148
-// Function ID: 11149
+// Module ID: 11268
+// Function ID: 11269
 // Name: MessagesHooks
-// Dependencies: [32, 19, 17, 10036, 9100, 5625, 2074, 4936, 558, 576, 12, 504, 568, 6665, 1375, 7238, 11149, 9867, 11150, 2]
+// Dependencies: [32, 19, 17, 9566, 9318, 5970, 2086, 5106, 558, 576, 12, 504, 568, 6842, 1387, 7417, 11269, 9317, 11270, 2]
 // Exports: useChatUpdatesQueue, useMessagesLifecycle
 
-// Module 11148 (MessagesHooks)
+// Module 11268 (MessagesHooks)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import shallowEqual from "shallowEqual" /* 568 */;
 import react2 from "react" /* 576 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6665 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7238 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9100 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9867 */;
-import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 11150 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6842 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7417 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9317 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9318 */;
+import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 11270 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 10036 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5625 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PresenceStore from "PresenceStore" /* 4936 */;
+import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 9566 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5970 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PresenceStore from "PresenceStore" /* 5106 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,11 +27,11 @@ const require = globalThis.__r;
 let _require, dependencyMap, set;
 
 let tmp;
-const GlobalUtils = tmp(1375);
+const GlobalUtils = tmp(1387);
 const findNodeHandle = react_native.findNodeHandle;
 let closure_7 = useChatBottomManagerUIStore.updateShouldShowJumpToPresentButton;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageAuthorActivities(arr) {
   let closure_0;
   let tmp6;
   let tmp8;
@@ -79,7 +79,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresObject(tmp6, tmp8, tmp9);
-}) : ((arg0) => {
+}) : (function useMessageAuthorActivities(arg0) {
   let closure_0;
   _require = arg0;
   const items = [arg0];
@@ -103,7 +103,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   }, items2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arr) {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchMessageApplications(arr) {
   let ref;
   let tmp10;
   let tmp11;
@@ -172,7 +172,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arr) {
     tmp12 = cResult[7];
   }
   const effect = obj2.useEffect(tmp11, tmp12);
-}) : ((arg0) => {
+}) : (function useFetchMessageApplications(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   const memo = react.useMemo(() => {
@@ -202,7 +202,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arr) {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchVoiceChannelInviteStartTimes(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -267,7 +267,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp12 = react;
     const effect = react.useEffect(tmp10, tmp11);
   }
-  const fn2 = function h() {
+  const fn2 = function v() {
     const values = closure_0.values();
     const iter = values[Symbol.iterator]();
     const nextResult = iter.next();
@@ -284,7 +284,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             result = VoiceChannelStartTimeStore.hasRequestedStartTimes(tmp8);
           }
           if (!result) {
-            let tmp4Result = tmp4(11149);
+            let tmp4Result = tmp4(11269);
             let channelInfo = tmp4Result.fetchChannelInfo(tmp8);
           }
         }
@@ -299,7 +299,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = items2;
   tmp11 = items2;
   tmp10 = fn2;
-}) : ((arg0) => {
+}) : (function useFetchVoiceChannelInviteStartTimes(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -346,7 +346,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             result = VoiceChannelStartTimeStore.hasRequestedStartTimes(tmp8);
           }
           if (!result) {
-            let tmp4Result = tmp4(11149);
+            let tmp4Result = tmp4(11269);
             let channelInfo = tmp4Result.fetchChannelInfo(tmp8);
           }
         }
@@ -356,7 +356,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScrollState() {
   let closure_129_0;
   let first;
   let tmp4;
@@ -397,7 +397,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp6 = cResult[3];
   }
   return tmp6;
-}) : (() => {
+}) : (function useScrollState() {
   const tmp = _slicedToArray(react.useState({ animated: false, hasHandledScroll: false, isAtBottom: false, isNearBottom: false, isNearTop: false, decelerating: false, dragging: false, hasMoreMessagesAfterForLastUpdate: false, _loaded: false }), 2);
   let closure_0 = tmp[1];
   const items = [
@@ -415,7 +415,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return items;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessagesState() {
   let tmp3;
   let tmp4;
   let tmp6;
@@ -438,7 +438,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = tmp3;
   cResult[2] = obj2;
   tmp8 = obj2;
-}) : (() => {
+}) : (function useMessagesState() {
   let tmp2;
   let tmp3;
   [tmp2, tmp3] = react.useState(false);
@@ -475,10 +475,10 @@ export const useMessagesLifecycle = function useMessagesLifecycle(screenIndex) {
   }, items);
 };
 export const useScrollState = tmp5;
-export const useChatUpdatesQueue = function useChatUpdatesQueue(ref5, callback) {
-  let closure_0 = ref5;
+export const useChatUpdatesQueue = function useChatUpdatesQueue(ref6, callback) {
+  let closure_0 = ref6;
   let closure_1 = callback;
-  const items = [ref5, callback];
+  const items = [ref6, callback];
   const memo = react.useMemo(() => {
     let ref;
     const tmp = new ChatUpdatesQueueDefault(() => {

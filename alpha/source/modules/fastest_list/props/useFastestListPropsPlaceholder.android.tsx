@@ -1,13 +1,13 @@
-// Module ID: 6565
-// Function ID: 6566
+// Module ID: 6741
+// Function ID: 6742
 // Name: useFastestListPropsPlaceholder
-// Dependencies: [19, 17, 6566, 4733, 558, 576, 2]
+// Dependencies: [19, 17, 6742, 4927, 558, 576, 2]
 
-// Module 6565 (useFastestListPropsPlaceholder)
+// Module 6741 (useFastestListPropsPlaceholder)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ColorUtils from "ColorUtils" /* 4733 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6566 */;
+import ColorUtils from "ColorUtils" /* 4927 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6742 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ function createNativePlaceholderConfig(listFooter) {
   if (type == null) {
     NONE = FastestListPropsPlaceholder.FastestListPropsPlaceholderType.NONE;
   }
-  size = { borderRadius: "Array", borderTopLeftRadius: "default", borderTopRightRadius: "applicationId", borderBottomLeftRadius: "track", borderBottomRightRadius: "flags", divider: "Array", dividerColor: "toCharArray$esjava$1", dividerPaddingLeft: "unicodeVersion", dividerPaddingRight: "then", placeholderShape: "method", placeholderShapeColor: "backgroundColor", placeholderShapeCount: "default", placeholderShapeGap: "getGuild", placeholderShapePaddingHorizontal: "Array", placeholderShapePaddingVertical: "toCharArray$esjava$1", placeholderFeedBackgroundColor: "replace", placeholderFeedColor: "enabled", placeholderFeedLabelPadding: "a", placeholderFeedLabelPaddingInnerRatio: "toCharArray$esjava$1", placeholderFeedLabelSize: "limit", placeholderFeedLabelSecondarySize: "p", placeholderFeedPadding: "r", placeholderFeedShape: "toCharArray$esjava$1", placeholderFeedShapeSize: "unicodeVersion", placeholderType: NONE, width: "source", height: "intl", verticalAlignment: "Array", horizontalAlignment: "toCharArray$esjava$1" };
+  size = { borderRadius: "Array", borderTopLeftRadius: "defineProperty", borderTopRightRadius: "apply", borderBottomLeftRadius: "WireType", borderBottomRightRadius: "to", divider: "Array", dividerColor: "toCharArray$esjava$1", dividerPaddingLeft: "code", dividerPaddingRight: "st", placeholderShape: "IconComponent", placeholderShapeColor: "apply", placeholderShapeCount: "nativeEvent", placeholderShapeGap: "unicodeVersion", placeholderShapePaddingHorizontal: "r", placeholderShapePaddingVertical: "toCharArray$esjava$1", placeholderFeedBackgroundColor: "Array", placeholderFeedColor: "color", placeholderFeedLabelPadding: "hasDiversityParent", placeholderFeedLabelPaddingInnerRatio: "i", placeholderFeedLabelSize: "w", placeholderFeedLabelSecondarySize: "__closure", placeholderFeedPadding: "code", placeholderFeedShape: "to", placeholderFeedShapeSize: "e", placeholderType: NONE, width: "\u0432\u0434\u0438\u0433\u043D\u0430\u0442 \u043F\u0430\u043B\u0435\u0446", height: "\u0434\u0430", verticalAlignment: "\u0434\u043E\u0431\u0440\u0435", horizontalAlignment: "\u043C\u043D\u043E\u0433\u043E \u044F\u0441\u043D\u043E" };
   if (null == listFooter) {
     return size;
   } else {
@@ -148,7 +148,7 @@ function createNativePlaceholderConfig(listFooter) {
 const processColor = react_native.processColor;
 let obj = { sectionItem: obj2 };
 obj2 = { type: FastestListPropsPlaceholder.FastestListPropsPlaceholderType.NONE };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFastestListPropsPlaceholder(arg0) {
   let tmp12;
   let tmp15;
   let tmp18;
@@ -257,7 +257,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[23] = tmp24;
   cResult[24] = obj2;
   tmp27 = obj2;
-}) : (() => {
+}) : (function useFastestListPropsPlaceholder() {
   let tmp = arg0;
   if (arg0 === undefined) {
     tmp = obj;

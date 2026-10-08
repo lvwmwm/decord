@@ -1,21 +1,19 @@
-// Module ID: 11266
-// Function ID: 11267
+// Module ID: 9606
+// Function ID: 9607
 // Name: RatingSelector
-// Dependencies: [19, 17, 11262, 21, 4896, 558, 576, 1126, 11267, 11268, 11272, 11273, 11277, 11278, 8926, 5916, 2]
+// Dependencies: [19, 17, 9602, 21, 5090, 558, 576, 1126, 9607, 9608, 9612, 9613, 9617, 9618, 8557, 6189, 2]
 
-// Module 11266 (RatingSelector)
+// Module 9606 (RatingSelector)
 import Fragment from "Fragment" /* 21 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11267 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11272 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11277 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9607 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9612 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9617 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 11262 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import Constants from "Constants" /* 9602 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let selectedRating;
 
 let c3;
 let closure_4;
@@ -29,7 +27,7 @@ let closure_8 = createStyles.createStyles({ ratings: { flexDirection: "row", ali
 createStyles = createStyles_mod;
 let closure_9 = createStyles.createStyles({ ratings: { flexDirection: "column", alignItems: "flex-start", justifyContent: "flex-start", gap: 16, marginBottom: 12 }, rating: { width: "100%" }, emoji: { width: 32, height: 32 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiConfigs(arr) {
   let first;
   let obj2;
   let obj4;
@@ -43,7 +41,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   const obj = obj2(576);
   const cResult = obj.c(3);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function l() {
+    const fn = function n() {
       const intl = obj2(dependencyMap[7]).intl;
       return intl.string(obj2(dependencyMap[7]).t["C/12Tt"]);
     };
@@ -53,7 +51,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function n() {
+    const fn2 = function l() {
       const intl = obj2(dependencyMap[7]).intl;
       return intl.string(obj2(dependencyMap[7]).t.Xcb4cF);
     };
@@ -78,18 +76,18 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   obj4 = { selected: AssetRegistryDefault, normal: tmpResult.useFeedbackModalSadDesaturatedSource() };
   obj2[BAD] = obj3;
   const obj5 = { source: obj6, getLabel: tmp5, rating: constants.NEUTRAL };
-  tmpResult = obj2(11268);
+  tmpResult = obj2(9608);
   const NEUTRAL = constants.NEUTRAL;
   obj6 = { selected: AssetRegistryDefault2, normal: tmpResult3.useFeedbackModalNeutralDesaturatedSource() };
   obj2[NEUTRAL] = obj5;
   const obj7 = { source: obj8, getLabel: tmp6, rating: constants.GOOD };
-  tmpResult3 = obj2(11273);
+  tmpResult3 = obj2(9613);
   const GOOD = constants.GOOD;
   obj8 = { selected: AssetRegistryDefault3, normal: tmpResult4.useFeedbackModalHappyDesaturatedSource() };
   obj2[GOOD] = obj7;
-  tmpResult4 = obj2(11278);
+  tmpResult4 = obj2(9618);
   return arr.map((item) => obj2[item]);
-}) : ((arr) => {
+}) : (function useEmojiConfigs(arr) {
   let obj10;
   let obj3;
   let obj4;
@@ -108,7 +106,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   const BAD = constants.BAD;
   obj3 = { selected: AssetRegistryDefault, normal: obj4.useFeedbackModalSadDesaturatedSource() };
   obj[BAD] = obj2;
-  obj4 = obj(11268);
+  obj4 = obj(9608);
   const obj5 = {
     source: obj6,
     getLabel() {
@@ -120,7 +118,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   const NEUTRAL = constants.NEUTRAL;
   obj6 = { selected: AssetRegistryDefault2, normal: obj7.useFeedbackModalNeutralDesaturatedSource() };
   obj[NEUTRAL] = obj5;
-  obj7 = obj(11273);
+  obj7 = obj(9613);
   const obj8 = {
     source: obj9,
     getLabel() {
@@ -132,11 +130,11 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   const GOOD = constants.GOOD;
   obj9 = { selected: AssetRegistryDefault3, normal: obj10.useFeedbackModalHappyDesaturatedSource() };
   obj[GOOD] = obj8;
-  obj10 = obj(11278);
+  obj10 = obj(9618);
   return arr.map((item) => obj[item]);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedRating) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RatingSelector(selectedRating) {
   let onChangeRating;
   let ratingOptions;
   let textLabels;
@@ -279,7 +277,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedRating) => {
   cResult[11] = textLabels;
   cResult[12] = fn;
   tmp6 = fn;
-}) : ((ratingOptions) => {
+}) : (function RatingSelector(ratingOptions) {
   ratingOptions = ratingOptions.ratingOptions;
   if (ratingOptions === undefined) {
     ratingOptions = closure_5;

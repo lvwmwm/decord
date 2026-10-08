@@ -1,13 +1,13 @@
-// Module ID: 13041
-// Function ID: 13042
+// Module ID: 13319
+// Function ID: 13320
 // Name: VoiceChannelBadgeExperiment
-// Dependencies: [4783, 4780, 558, 576, 2]
+// Dependencies: [4977, 4974, 558, 576, 2]
 // Exports: getVoiceChannelBadgeExperiment
 
-// Module 13041 (VoiceChannelBadgeExperiment)
+// Module 13319 (VoiceChannelBadgeExperiment)
 import react from "react" /* 576 */;
-import ExperimentConstants from "ExperimentConstants" /* 4783 */;
-import createExperiment from "module_4780" /* 4780 */;
+import ExperimentConstants from "ExperimentConstants" /* 4977 */;
+import createExperiment from "module_4974" /* 4974 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const CommonTriggerPoints = ExperimentConstants.CommonTriggerPoints;
 let obj = { id: "2026-03_voice_badge", kind: "guild", commonTriggerPoint: CommonTriggerPoints.VOICE_CALL, label: "Display Voice Channel Badge", defaultConfig: { enabled: false }, treatments: items };
 items = [{ id: 0, label: "Control", config: { enabled: false } }, { id: 1, label: "Show voice badges", config: { enabled: true } }];
 const experiment = createExperiment.createExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceChannelBadgeExperiment(arg0) {
   let _location;
   let guildId;
   const obj = react;
@@ -43,7 +43,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = _location;
   cResult[2] = obj3;
   tmp2 = obj3;
-}) : ((guildId) => {
+}) : (function useVoiceChannelBadgeExperiment(guildId) {
   const obj = { guildId: guildId.guildId, location: guildId.location };
   return experiment.useExperiment(obj, { autoTrackExposure: true });
 });

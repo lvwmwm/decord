@@ -1,22 +1,22 @@
-// Module ID: 12801
-// Function ID: 12802
+// Module ID: 12948
+// Function ID: 12949
 // Name: useMediaViewerPanGesture
-// Dependencies: [19, 558, 576, 4618, 7947, 7946, 5604, 6459, 6147, 2]
+// Dependencies: [19, 558, 576, 4810, 8365, 8364, 5374, 6637, 6326, 2]
 
-// Module 12801 (useMediaViewerPanGesture)
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import spring from "spring" /* 5604 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6147 */;
-import useVideoControls from "useVideoControls" /* 7947 */;
+// Module 12948 (useMediaViewerPanGesture)
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import spring from "spring" /* 5374 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6326 */;
+import useVideoControls from "useVideoControls" /* 8365 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let __initData, __initData2, __initData3, _require, dependencyMap, set;
+let __initData, __initData2, __initData3, _require, dependencyMap, obj1, set;
 
 let tmp;
-const MediaViewerAnalyticsManager = tmp(7946);
+const MediaViewerAnalyticsManager = tmp(8364);
 let closure_4 = { damping: 15, mass: 1, stiffness: 250, overshootClamping: true, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001 };
 let closure_5 = { code: "function useMediaViewerPanGestureTsx1(){const{runOnJS,handleClose}=this.__closure;runOnJS(handleClose)();}" };
 let closure_6 = { code: "function useMediaViewerPanGestureTsx2(){const{runOnJS,handleClose}=this.__closure;runOnJS(handleClose)();}" };
@@ -29,7 +29,7 @@ let closure_11 = { code: "function useMediaViewerPanGestureTsx7(){const{isIntera
 let closure_12 = { code: "function useMediaViewerPanGestureTsx8(_,manager){const{enabled}=this.__closure;if(!enabled.get()){manager.fail();}}" };
 let closure_13 = { code: "function useMediaViewerPanGestureTsx9({velocityY:velocityY,translationY:translationY}){const{translatePos,start,velocity}=this.__closure;translatePos.set(translationY+start.get().y);velocity.set(velocityY);}" };
 let closure_14 = { code: "function useMediaViewerPanGestureTsx10(){const{start,translatePos,isInteracting}=this.__closure;start.set({x:0,y:translatePos.get()});isInteracting.set(true);}" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, swipeVelocityThreshold, arg2) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaViewerPanGestureConfig(arg0, swipeVelocityThreshold, arg2) {
   let closure_0;
   let sharedValue;
   let tmp8;
@@ -50,7 +50,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, swipeVelocityT
   const obj7 = require("ReanimatedRexport");
   const sharedValue5 = obj7.useSharedValue(true);
   if (cResult[0] !== arg2) {
-    let fn = function c() {
+    let fn = function u() {
       const obj = useVideoControls;
       obj.tryPauseCurrentVideo();
       if (closure_1 != null) {
@@ -108,37 +108,41 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, swipeVelocityT
       }
     }
   }
-  const fn2 = function w() {
-    let tmp2;
-    const result = sharedValue.set(true);
-    let obj = sharedValue3;
-    if (sharedValue3.get() < 0) {
-      tmp2 = -closure_0;
-    } else {
-      tmp2 = closure_0;
+  class S {
+    constructor() {
+      result = closure_2.set(true);
+      obj = closure_4;
+      if (closure_4.get() < 0) {
+        tmp3 = closure_0;
+        tmp2 = -closure_0;
+      } else {
+        tmp2 = closure_0;
+      }
+      set = closure_3.set;
+      tmp4 = closure_0(closure_2[6]);
+      obj1 = { velocity: obj.get() };
+      withSpring = tmp4.withSpring;
+      merged = Object.assign(closure_4);
+      fn = function o() {
+        const obj = closure_0(sharedValue[3]);
+        obj.runOnJS(closure_1_5)();
+      };
+      obj4 = { runOnJS: closure_0(closure_2[3]).runOnJS, handleClose: closure_5 };
+      fn.__closure = obj4;
+      fn.__workletHash = 7033730772994;
+      fn.__initData = closure_5;
+      result1 = set(withSpring(tmp2, obj1, "respect-motion-settings", fn));
+      return;
     }
-    set = sharedValue2.set;
-    const withSpring = spring.withSpring;
-    const obj2 = { velocity: obj.get() };
-    const merged = Object.assign(closure_4);
-    const fn = function o() {
-      const obj = closure_0(sharedValue[3]);
-      obj.runOnJS(closure_1_5)();
-    };
-    fn.__closure = { runOnJS: ReanimatedRexport.runOnJS, handleClose: __initData };
-    fn.__workletHash = 7033730772994;
-    fn.__initData = __initData;
-    ({ runOnJS: ReanimatedRexport.runOnJS, handleClose: __initData });
-    const result1 = set(withSpring(tmp2, obj2, "respect-motion-settings", fn));
-  };
+  }
   cResult[2] = arg0;
   cResult[3] = tmp8;
   cResult[4] = sharedValue;
   cResult[5] = sharedValue2;
   cResult[6] = sharedValue3;
-  cResult[7] = fn2;
-  tmp9 = fn2;
-}) : ((arg0, swipeVelocityThreshold, arg2) => {
+  cResult[7] = S;
+  tmp9 = S;
+}) : (function useMediaViewerPanGestureConfig(arg0, swipeVelocityThreshold, arg2) {
   let closure_0;
   let closure_2;
   _require = arg0;
@@ -193,7 +197,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, swipeVelocityT
   return sharedValue.useMemo(() => ({ velocity: sharedValue3, isClosing: sharedValue, isInteracting: sharedValue1, overlayEnabled: sharedValue5, translatePos: sharedValue2, swipeVelocityThreshold, dismiss: callback1, start: sharedValue4 }), items2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((swipeVelocityThreshold, enabled) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaViewerPanGesture(swipeVelocityThreshold, enabled) {
   let SPRING_CONFIG;
   let velocity;
   _require = enabled;
@@ -340,7 +344,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((swipeVelocityThres
   cResult[6] = velocity;
   cResult[7] = fn;
   tmp5 = fn;
-}) : ((swipeVelocityThreshold, enabled) => {
+}) : (function useMediaViewerPanGesture(swipeVelocityThreshold, enabled) {
   let SPRING_CONFIG;
   swipeVelocityThreshold = swipeVelocityThreshold.swipeVelocityThreshold;
   const velocity = swipeVelocityThreshold.velocity;
@@ -356,7 +360,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((swipeVelocityThres
     const maxPointersResult = PanResult.maxPointers(1);
     const activeOffsetYResult = maxPointersResult.activeOffsetY([-10, 10]);
     const failOffsetXResult = activeOffsetYResult.failOffsetX([-10, 10]);
-    class V {
+    class G {
       constructor() {
         const point = { x: 0, y: translatePos.get() };
         const result = SPRING_CONFIG.set(point);
@@ -364,10 +368,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((swipeVelocityThres
       }
     }
     let obj = { start, translatePos, isInteracting };
-    V.__closure = obj;
-    V.__workletHash = 8081304250737;
-    V.__initData = __initData4;
-    const onStartResult = failOffsetXResult.onStart(V);
+    G.__closure = obj;
+    G.__workletHash = 8081304250737;
+    G.__initData = __initData4;
+    const onStartResult = failOffsetXResult.onStart(G);
     class P {
       constructor(arg0) {
         let translationY;

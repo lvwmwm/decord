@@ -1,10 +1,10 @@
-// Module ID: 15922
-// Function ID: 15923
+// Module ID: 16182
+// Function ID: 16183
 // Name: useAuthFlowBackHandler
-// Dependencies: [19, 15907, 558, 576, 15903, 6023, 2]
+// Dependencies: [19, 16166, 558, 576, 16162, 6209, 2]
 
-// Module 15922 (useAuthFlowBackHandler)
-import RegistrationConstants from "RegistrationConstants" /* 15907 */;
+// Module 16182 (useAuthFlowBackHandler)
+import RegistrationConstants from "RegistrationConstants" /* 16166 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 let closure_3 = RegistrationConstants.RegistrationTransitionActionTypes;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((step) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuthFlowBackHandler(step) {
   let context;
   _require = step;
   let obj = require("react");
@@ -38,7 +38,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((step) => {
   cResult[1] = context;
   cResult[2] = fn;
   tmp5 = fn;
-}) : ((step) => {
+}) : (function useAuthFlowBackHandler(step) {
   let closure_1;
   _require = step;
   dependencyMap = react.useContext(require("Auth").TrackRegistrationContext);

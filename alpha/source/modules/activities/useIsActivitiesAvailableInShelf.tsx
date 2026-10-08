@@ -1,10 +1,10 @@
-// Module ID: 9116
-// Function ID: 9117
+// Module ID: 10689
+// Function ID: 10690
 // Name: useIsActivitiesAvailableInShelf
-// Dependencies: [19, 558, 576, 9045, 9117, 9026, 2]
+// Dependencies: [19, 558, 576, 10658, 10690, 10635, 2]
 
-// Module 9116 (useIsActivitiesAvailableInShelf)
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 9026 */;
+// Module 10689 (useIsActivitiesAvailableInShelf)
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10635 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -12,14 +12,14 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsActivitiesAvailableInShelf(guildId, arg1) {
   let closure_2;
   _require = guildId;
   let obj = require("react");
   const cResult = obj.c(8);
   let obj2 = require("useIsActivitiesEnabledForCurrentPlatform");
   const isActivitiesEnabledForCurrentPlatform = obj2.useIsActivitiesEnabledForCurrentPlatform();
-  const tmp3 = isActivitiesEnabledForCurrentPlatform(9117)(arg1);
+  const tmp3 = isActivitiesEnabledForCurrentPlatform(10690)(arg1);
   if (cResult[0] === guildId) {
     let tmp4;
     if (cResult[1] === tmp3) {
@@ -41,7 +41,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, arg1) => {
         return tmp4;
       }
     }
-    const fn = function o() {
+    const fn = function v() {
       const tmp = closure_2 && isActivitiesEnabledForCurrentPlatform;
       if (tmp) {
         const obj2 = { guildId };
@@ -62,13 +62,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, arg1) => {
   cResult[1] = tmp3;
   cResult[2] = null != guildId && "" !== guildId || tmp3;
   tmp4 = tmp5;
-}) : ((guildId, arg1) => {
+}) : (function useIsActivitiesAvailableInShelf(guildId, arg1) {
   let closure_2;
   _require = guildId;
   let obj = require("useIsActivitiesEnabledForCurrentPlatform");
   const isActivitiesEnabledForCurrentPlatform = obj.useIsActivitiesEnabledForCurrentPlatform();
   let tmp3 = null != guildId;
-  const tmp2 = isActivitiesEnabledForCurrentPlatform(9117)(arg1);
+  const tmp2 = isActivitiesEnabledForCurrentPlatform(10690)(arg1);
   if (tmp3) {
     tmp3 = "" !== guildId;
   }

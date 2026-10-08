@@ -1,21 +1,22 @@
-// Module ID: 9756
-// Function ID: 9757
+// Module ID: 10957
+// Function ID: 10958
 // Name: StreamPreview
-// Dependencies: [19, 17, 1193, 21, 4896, 587, 4595, 4735, 9757, 9758, 1126, 5916, 558, 576, 9759, 504, 2]
+// Dependencies: [19, 17, 1205, 21, 5090, 587, 4787, 4929, 10958, 10959, 1126, 6164, 6189, 558, 576, 10960, 504, 2]
 
-// Module 9756 (StreamPreview)
+// Module 10957 (StreamPreview)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 4595 */;
-import shared from "shared" /* 4735 */;
-import Pressables from "Pressables" /* 5916 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 9759 */;
+import native from "native" /* 4787 */;
+import shared from "shared" /* 4929 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import Pressables from "Pressables" /* 6189 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 10960 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -52,9 +53,9 @@ class DefaultFallback extends PureComponent {
     const tmp3 = React3;
     tmp4 = _false;
     if (obj3.isThemeDark(theme)) {
-      tmp6Result = tmp6(9757);
+      tmp6Result = tmp6(10958);
     } else {
-      tmp6Result = tmp6(9758);
+      tmp6Result = tmp6(10959);
     }
     return metroRequire(tmp3, obj);
   }
@@ -63,7 +64,7 @@ const prototype = DefaultFallback.prototype;
 DefaultFallback.contextType = native.ThemeContext;
 createStyles = createStyles_mod;
 let obj4 = { touchable: size, imageContainer: { flex: 1, backgroundColor: nativeDefault.unsafe_rawColors.BLACK }, image: { flex: 1 } };
-size = { flex: 1, width: "100%", height: "__initData", aspectRatio: true, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
+size = { flex: 1, width: "100%", height: "__packager_asset", aspectRatio: true, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 const createLegacyClassComponentStyles2 = createStyles.createLegacyClassComponentStyles;
 ({ flex: 1, backgroundColor: nativeDefault.unsafe_rawColors.BLACK });
 const authStore = createLegacyClassComponentStyles2(obj4);
@@ -98,7 +99,7 @@ class StreamPreview extends PureComponent2 {
     if (null != url) {
       if (!isFetching) {
         let tmp8;
-        let tmp12;
+        let tmp13;
         if (!state.isImageErrored) {
           if (!tmp7) {
             let renderFallbackResult;
@@ -110,12 +111,12 @@ class StreamPreview extends PureComponent2 {
           const obj = { resizeMode: "contain", style: tmp.image, source: obj2, onLoadStart: null, onLoad: null, onError: null };
           obj2 = { uri: url, cache: "force-cache" };
           ({ handleLoadStart: obj.onLoadStart, handleLoad: obj.onLoad, handleError: obj.onError } = this);
-          tmp12 = metroRequire(_false, obj);
+          tmp13 = metroRequire(FastImageDefault, obj);
         }
         const obj3 = { accessibilityRole: "button", accessibilityLabel: tmp2, activeOpacity: 0.6, style: items, disabled: tmp6, onPress: tmp5, children: items2 };
         items = [tmp.touchable, tmp3];
         const obj4 = { style: tmp.imageContainer, children: items1 };
-        items1 = [tmp8, tmp12];
+        items1 = [tmp8, tmp13];
         const PressableOpacity = Pressables.PressableOpacity;
         items2 = [metroImportDefault(React3, obj4), tmp4];
         return metroImportDefault(PressableOpacity, obj3);
@@ -148,7 +149,7 @@ StreamPreview.defaultProps = {
     return tmp(tmp2, obj);
   }
 };
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((stream) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedStreamPreview(stream) {
   let channelId;
   let guildId;
   let isLoading;
@@ -196,7 +197,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((stream) => {
   cResult[5] = previewUrl;
   cResult[6] = tmp11;
   tmp9 = tmp11;
-}) : ((stream) => {
+}) : (function ConnectedStreamPreview(stream) {
   let channelId;
   let guildId;
   let isLoading;

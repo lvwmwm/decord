@@ -1,21 +1,19 @@
-// Module ID: 9922
-// Function ID: 9923
+// Module ID: 9443
+// Function ID: 9444
 // Name: PremiumUpsellGradientBackground
-// Dependencies: [19, 17, 6951, 21, 4896, 558, 576, 5612, 1105, 2]
+// Dependencies: [19, 17, 7140, 21, 5090, 558, 576, 5387, 1105, 2]
 
-// Module 9922 (PremiumUpsellGradientBackground)
+// Module 9443 (PremiumUpsellGradientBackground)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import LinearGradientDefault from "LinearGradient" /* 5612 */;
-import ColorConstants from "ColorConstants" /* 6951 */;
+import LinearGradientDefault from "LinearGradient" /* 5387 */;
+import ColorConstants from "ColorConstants" /* 7140 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let useTier0UpsellContent;
 
 let obj2;
 const StyleSheet = react_native.StyleSheet;
@@ -27,7 +25,7 @@ createStyles = createStyles.createStyles;
 obj2 = { opacity: 0.1 };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_5 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((useTier0UpsellContent) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsellGradientBackground(useTier0UpsellContent) {
   let PREMIUM_TIER_2_TRI_COLOR;
   const obj = react2;
   const cResult = obj.c(3);
@@ -51,7 +49,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((useTier0UpsellCont
   cResult[1] = PREMIUM_TIER_2_TRI_COLOR;
   cResult[2] = tmp9;
   tmp7 = tmp9;
-}) : ((useTier0UpsellContent) => {
+}) : (function PremiumUpsellGradientBackground(useTier0UpsellContent) {
   let PREMIUM_TIER_2_TRI_COLOR;
   useTier0UpsellContent = useTier0UpsellContent.useTier0UpsellContent;
   const obj = { style: closure_5().gradient, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: PREMIUM_TIER_2_TRI_COLOR };

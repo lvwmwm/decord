@@ -1,19 +1,18 @@
-// Module ID: 17753
-// Function ID: 17754
+// Module ID: 18040
+// Function ID: 18041
 // Name: BlockMessageActionSheet
-// Dependencies: [32, 19, 11487, 21, 558, 576, 17731, 4860, 6651, 4892, 1126, 6587, 5601, 8602, 6708, 2]
+// Dependencies: [32, 19, 11473, 21, 558, 576, 18018, 5054, 6828, 5086, 1126, 6763, 5375, 8517, 6885, 2]
 
-// Module 17753 (BlockMessageActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+// Module 18040 (BlockMessageActionSheet)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 11487 */;
+import Constants from "Constants" /* 11473 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let hideActionSheetResult, onRemove, tmp2;
 
 let hasOwnProperty;
 let metroImportAll;
@@ -21,15 +20,18 @@ let metroImportDefault;
 let metroRequire;
 ({ AutomodActionType: hasOwnProperty, MAX_BLOCK_ACTION_CUSTOM_MESSAGE_LENGTH: metroRequire } = Constants);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onRemove) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockMessageActionSheet(onRemove) {
   let action;
-  let first;
+  let intl;
+  let intl5;
   let intl6;
   let intl7;
   let items;
+  let items1;
   let onConfirm;
   let triggerType;
-  let obj = onConfirm(first[5]);
+  let value;
+  let obj = onConfirm(value[5]);
   const cResult = obj.c(27);
   ({ triggerType, action, onConfirm } = onRemove);
   onRemove = onRemove.onRemove;
@@ -41,7 +43,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onRemove) => {
   if (str == null) {
     str = "";
   }
-  first = _slicedToArray(useState(str), 2)[0];
+  value = _slicedToArray(useState(str), 2)[0];
   _slicedToArray(useState(str), 2);
   if (cResult[0] === action) {
     let tmp8;
@@ -51,222 +53,159 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onRemove) => {
     if (null == tmp8) {
       return null;
     } else {
-      if (cResult[3] === first) {
+      if (cResult[3] === value) {
         let tmp10;
+        let tmp11;
         let tmp12;
-        let tmp16;
-        let tmp21;
-        let tmp27;
-        let tmp25;
-        let tmp26;
-        let tmp32;
-        let tmp40;
+        let tmp15;
+        let tmp19;
+        let tmp24;
+        let tmp23;
+        let tmp22;
+        let tmp28;
+        let tmp34;
         if (cResult[4] === onConfirm) {
           tmp10 = cResult[5];
         }
-        class C {
-          constructor() {
-            obj = closure_1(closure_2[7]);
-            hideActionSheetResult = obj.hideActionSheet();
-            tmp2 = onConfirm(closure_2);
-            return;
+        if (cResult[6] !== onRemove) {
+          function handleRemove() {
+            const obj = ActionSheetActionCreatorsDefault;
+            obj.hideActionSheet();
+            onRemove();
           }
+          cResult[6] = onRemove;
+          cResult[7] = handleRemove;
+          tmp11 = handleRemove;
+        } else {
+          tmp11 = cResult[7];
         }
         if (cResult[8] !== tmp8.headerText) {
-          class C {
-            constructor() {
-              obj = closure_1(closure_2[7]);
-              hideActionSheetResult = obj.hideActionSheet();
-              tmp2 = onConfirm(closure_2);
-              return;
-            }
-          }
-          tmp14[0] = tmp8.headerText;
-          const tmp15 = closure_7(onConfirm(first[8]).BottomSheetTitleHeader, tmp14);
+          const obj2 = { title: tmp8.headerText };
+          const tmp14 = closure_7(onConfirm(value[8]).BottomSheetTitleHeader, obj2);
           cResult[8] = tmp8.headerText;
-          cResult[9] = tmp15;
-          tmp12 = tmp15;
+          cResult[9] = tmp14;
+          tmp12 = tmp14;
         } else {
           tmp12 = cResult[9];
         }
         if (cResult[10] !== tmp8.descriptionText) {
-          class C {
-            constructor() {
-              obj = closure_1(closure_2[7]);
-              hideActionSheetResult = obj.hideActionSheet();
-              tmp2 = onConfirm(closure_2);
-              return;
-            }
-          }
-          tmp18[2] = tmp8.descriptionText;
-          const tmp19 = closure_7(onConfirm(first[9]).Text, tmp18);
+          const obj3 = { variant: "text-md/normal", color: "text-default", children: tmp8.descriptionText };
+          const tmp17 = closure_7(onConfirm(value[9]).Text, obj3);
           cResult[10] = tmp8.descriptionText;
-          cResult[11] = tmp19;
-          tmp16 = tmp19;
+          cResult[11] = tmp17;
+          tmp15 = tmp17;
         } else {
-          tmp16 = cResult[11];
+          tmp15 = cResult[11];
         }
         const _Symbol = Symbol;
         if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-          class C {
-            constructor() {
-              obj = closure_1(closure_2[7]);
-              hideActionSheetResult = obj.hideActionSheet();
-              tmp2 = onConfirm(closure_2);
-              return;
-            }
-          }
+          const obj4 = { variant: "text-md/normal", color: "text-default", children: intl.string(onConfirm(value[10]).t.Oa9oWJ) };
           const Text = tmp(tmp2[9]).Text;
-          const intl = tmp(tmp2[10]).intl;
-          tmp23[2] = intl.string(onConfirm(first[10]).t.Oa9oWJ);
-          const tmp24 = closure_7(Text, tmp23);
-          cResult[12] = tmp24;
-          tmp21 = tmp24;
+          intl = tmp(tmp2[10]).intl;
+          const tmp21 = closure_7(Text, obj4);
+          cResult[12] = tmp21;
+          tmp19 = tmp21;
         } else {
-          tmp21 = cResult[12];
+          tmp19 = cResult[12];
         }
         const _Symbol2 = Symbol;
         if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
           const intl2 = tmp(tmp2[10]).intl;
-          class C {
-            constructor() {
-              obj = closure_1(closure_2[7]);
-              hideActionSheetResult = obj.hideActionSheet();
-              tmp2 = onConfirm(closure_2);
-              return;
-            }
-          }
-          const tmp28Result = tmp28(onConfirm(first[10]).t.Df4aUN);
+          const stringResult = intl2.string(onConfirm(value[10]).t.Df4aUN);
           const intl3 = tmp(tmp2[10]).intl;
-          const stringResult = intl3.string(onConfirm(first[10]).t.eOWEmL);
+          const stringResult1 = intl3.string(onConfirm(value[10]).t.eOWEmL);
           const intl4 = tmp(tmp2[10]).intl;
-          const stringResult1 = intl4.string(onConfirm(first[10]).t.gDZw7A);
-          cResult[13] = tmp28Result;
-          cResult[14] = stringResult;
-          cResult[15] = stringResult1;
-          tmp27 = stringResult1;
-          tmp25 = tmp28Result;
-          tmp26 = stringResult;
+          const stringResult2 = intl4.string(onConfirm(value[10]).t.gDZw7A);
+          cResult[13] = stringResult;
+          cResult[14] = stringResult1;
+          cResult[15] = stringResult2;
+          tmp24 = stringResult2;
+          tmp23 = stringResult1;
+          tmp22 = stringResult;
         } else {
-          tmp25 = cResult[13];
-          class C {
-            constructor() {
-              obj = closure_1(closure_2[7]);
-              hideActionSheetResult = obj.hideActionSheet();
-              tmp2 = onConfirm(closure_2);
-              return;
-            }
-          }
-          tmp27 = cResult[15];
+          tmp22 = cResult[13];
+          tmp23 = cResult[14];
+          tmp24 = cResult[15];
         }
-        if (cResult[16] !== first) {
-          class C {
-            constructor() {
-              obj = closure_1(closure_2[7]);
-              hideActionSheetResult = obj.hideActionSheet();
-              tmp2 = onConfirm(closure_2);
-              return;
-            }
-          }
-          tmp34[0] = tmp25;
-          tmp34[1] = tmp26;
-          tmp34[2] = tmp27;
-          tmp34[3] = closure_6;
-          tmp34[4] = first;
-          tmp34[5] = tmp7;
-          const tmp36 = closure_7(onConfirm(first[11]).TextArea, tmp34);
-          cResult[16] = first;
-          cResult[17] = tmp36;
-          tmp32 = tmp36;
+        if (cResult[16] !== value) {
+          const obj5 = { label: tmp22, description: tmp23, placeholder: tmp24, maxLength, value, onChange: tmp7 };
+          const tmp31 = closure_7(onConfirm(value[11]).TextArea, obj5);
+          cResult[16] = value;
+          cResult[17] = tmp31;
+          tmp28 = tmp31;
         } else {
-          tmp32 = cResult[17];
+          tmp28 = cResult[17];
         }
         if (cResult[18] === action) {
           if (cResult[19] === tmp10) {
-            let tmp37;
+            let tmp32;
             if (cResult[20] === tmp11) {
-              tmp37 = cResult[21];
+              tmp32 = cResult[21];
             }
-            class C {
-              constructor() {
-                obj = closure_1(closure_2[7]);
-                hideActionSheetResult = obj.hideActionSheet();
-                tmp2 = onConfirm(closure_2);
-                return;
+            if (cResult[22] === tmp28) {
+              if (cResult[23] === tmp32) {
+                if (cResult[24] === tmp12) {
+                  let tmp35;
+                  if (cResult[25] === tmp15) {
+                    tmp35 = cResult[26];
+                  }
+                  return tmp35;
+                }
               }
             }
-            const obj2 = { keyboardShouldPersistTaps: "handled", header: tmp12, children: items };
-            items = [tmp16, tmp21, tmp32, tmp37];
-            cResult[22] = tmp32;
-            cResult[23] = tmp37;
+            const obj6 = { keyboardShouldPersistTaps: "handled", header: tmp12, children: items };
+            items = [tmp15, tmp19, tmp28, tmp32];
+            const tmp37 = closure_8(onConfirm(value[14]).ActionSheet, obj6);
+            cResult[22] = tmp28;
+            cResult[23] = tmp32;
             cResult[24] = tmp12;
-            cResult[25] = tmp16;
-            cResult[26] = closure_8(onConfirm(first[14]).ActionSheet, obj2);
-            const tmp43 = closure_8(onConfirm(first[14]).ActionSheet, obj2);
+            cResult[25] = tmp15;
+            cResult[26] = tmp37;
+            tmp35 = tmp37;
           }
         }
         if (null == action) {
-          class C {
-            constructor() {
-              obj = closure_1(closure_2[7]);
-              hideActionSheetResult = obj.hideActionSheet();
-              tmp2 = onConfirm(closure_2);
-              return;
-            }
-          }
+          const obj7 = { grow: true, text: intl5.string(onConfirm(value[10]).t.JFfins), onPress: tmp10 };
           const Button = tmp(tmp2[12]).Button;
-          const intl5 = tmp(tmp2[10]).intl;
-          tmp39[1] = intl5.string(onConfirm(first[10]).t.JFfins);
-          tmp39[2] = tmp10;
-          tmp40 = closure_7(Button, tmp39);
+          intl5 = tmp(tmp2[10]).intl;
+          tmp34 = closure_7(Button, obj7);
         } else {
-          class C {
-            constructor() {
-              obj = closure_1(closure_2[7]);
-              hideActionSheetResult = obj.hideActionSheet();
-              tmp2 = onConfirm(closure_2);
-              return;
-            }
-          }
+          const obj8 = { children: items1 };
           const TwinButtons = tmp(tmp2[13]).TwinButtons;
-          const obj3 = { grow: true, variant: "secondary", text: intl6.string(onConfirm(first[10]).t.R9GHya), onPress: tmp11 };
+          const obj9 = { grow: true, variant: "secondary", text: intl6.string(onConfirm(value[10]).t.R9GHya), onPress: tmp11 };
           const Button2 = tmp(tmp2[12]).Button;
           intl6 = tmp(tmp2[10]).intl;
-          const items1 = [closure_7(Button2, obj3), ];
-          const obj4 = { grow: true, text: intl7.string(onConfirm(first[10]).t["R3BPH+"]), onPress: tmp10 };
+          items1 = [closure_7(Button2, obj9), ];
+          const obj10 = { grow: true, text: intl7.string(onConfirm(value[10]).t["R3BPH+"]), onPress: tmp10 };
           const Button3 = tmp(tmp2[12]).Button;
           intl7 = tmp(tmp2[10]).intl;
-          items1[1] = closure_7(Button3, obj4);
-          tmp45[0] = items1;
-          tmp40 = closure_8(TwinButtons, tmp45);
+          items1[1] = closure_7(Button3, obj10);
+          tmp34 = closure_8(TwinButtons, obj8);
         }
         cResult[18] = action;
         cResult[19] = tmp10;
         cResult[20] = tmp11;
-        cResult[21] = tmp40;
-        tmp37 = tmp40;
+        cResult[21] = tmp34;
+        tmp32 = tmp34;
       }
-      class C {
-        constructor() {
-          obj = closure_1(closure_2[7]);
-          hideActionSheetResult = obj.hideActionSheet();
-          tmp2 = onConfirm(closure_2);
-          return;
-        }
+      function handleConfirm() {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet();
+        onConfirm(first);
       }
-      cResult[3] = first;
+      cResult[3] = value;
       cResult[4] = onConfirm;
-      cResult[5] = C;
-      tmp10 = C;
+      cResult[5] = handleConfirm;
+      tmp10 = handleConfirm;
     }
   }
-  const tmpResult = onConfirm(first[6]);
+  const tmpResult = onConfirm(value[6]);
   const actionInfo = tmpResult.getActionInfo(constants.BLOCK_MESSAGE, action, triggerType);
   cResult[0] = action;
   cResult[1] = triggerType;
   cResult[2] = actionInfo;
   tmp8 = actionInfo;
-}) : ((triggerType) => {
+}) : (function BlockMessageActionSheet(triggerType) {
   let action;
   let intl;
   let intl2;
@@ -330,7 +269,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onRemove) => {
         grow: true,
         variant: "secondary",
         text: intl6.string(require("intl").t.R9GHya),
-        onPress() {
+        onPress: function handleRemove() {
               const obj = ActionSheetActionCreatorsDefault;
               obj.hideActionSheet();
               importDefault();

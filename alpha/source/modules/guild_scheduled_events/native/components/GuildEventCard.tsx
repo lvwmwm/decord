@@ -1,25 +1,24 @@
-// Module ID: 9482
-// Function ID: 9483
+// Module ID: 8641
+// Function ID: 8642
 // Name: GuildEventCard
-// Dependencies: [19, 17, 4919, 7050, 2057, 21, 4896, 587, 558, 576, 9296, 5599, 504, 9214, 8116, 9321, 6002, 2]
+// Dependencies: [19, 17, 5108, 6059, 2069, 21, 5090, 587, 558, 576, 8506, 5963, 504, 8495, 7491, 8642, 6186, 2]
 
-// Module 9482 (GuildEventCard)
+// Module 8641 (GuildEventCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
-import ButtonGroup2 from "ButtonGroup" /* 5599 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7050 */;
-import GuildEventCardComponents from "GuildEventCardComponents" /* 9296 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2069 */;
+import ButtonGroup2 from "ButtonGroup" /* 5963 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6059 */;
+import GuildEventCardComponents from "GuildEventCardComponents" /* 8506 */;
 import react from "react" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let tmp2;
 
 let metroImportAll;
 let metroImportDefault;
@@ -32,7 +31,7 @@ let obj = { actionContainer: obj2 };
 obj2 = { paddingTop: nativeDefault.space.PX_16, paddingBottom: 0 };
 const styles = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventCardControls(arg0) {
   let event;
   let isConnected;
   let items;
@@ -85,10 +84,10 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         cResult[13] = tmp16;
         tmp14 = tmp16;
       }
-      let tmp9 = primaryActionButtonType === tmp(9296).PrimaryActionType.START;
+      let tmp9 = primaryActionButtonType === tmp(8506).PrimaryActionType.START;
       if (tmp9) {
         const obj5 = { event };
-        tmp9 = metroImportDefault(tmp(9296).GuildEventCardRSVPAction, obj5);
+        tmp9 = metroImportDefault(tmp(8506).GuildEventCardRSVPAction, obj5);
       }
       cResult[4] = event;
       cResult[5] = primaryActionButtonType;
@@ -102,7 +101,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = onCloseAction;
   cResult[3] = tmp7;
   tmp6 = tmp7;
-}) : ((onCloseAction) => {
+}) : (function GuildEventCardControls(onCloseAction) {
   let event;
   let isConnected;
   let items;
@@ -118,7 +117,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp5 = metroImportAll;
   if (tmp6Result) {
     const obj3 = { event };
-    tmp6Result = tmp6(tmp2(9296).GuildEventCardRSVPAction, obj3);
+    tmp6Result = tmp6(tmp2(8506).GuildEventCardRSVPAction, obj3);
   }
   items[1] = tmp6Result;
   items[2] = metroImportDefault(GuildEventCardComponents.GuildEventShareAction, { event });
@@ -126,7 +125,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 const memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventCard(event) {
   let channel_id;
   let first;
   let hideAgeVerificationNotice;
@@ -152,10 +151,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((event) 
   if (cResult[1] !== channel_id) {
     class C {
       constructor() {
-        obj = closure_4;
-        isConnectedResult = closure_4.isConnected();
+        let isConnectedResult = RTCConnectionStore.isConnected();
+        const obj = RTCConnectionStore;
         if (isConnectedResult) {
-          tmp2 = channel_id;
           isConnectedResult = obj.getChannelId() === channel_id;
         }
         return isConnectedResult;
@@ -170,10 +168,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((event) 
   } else {
     class C {
       constructor() {
-        obj = closure_4;
-        isConnectedResult = closure_4.isConnected();
+        let isConnectedResult = RTCConnectionStore.isConnected();
+        const obj = RTCConnectionStore;
         if (isConnectedResult) {
-          tmp2 = channel_id;
           isConnectedResult = obj.getChannelId() === channel_id;
         }
         return isConnectedResult;
@@ -186,10 +183,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((event) 
   if (cResult[4] === event) {
     class C {
       constructor() {
-        obj = closure_4;
-        isConnectedResult = closure_4.isConnected();
+        let isConnectedResult = RTCConnectionStore.isConnected();
+        const obj = RTCConnectionStore;
         if (isConnectedResult) {
-          tmp2 = channel_id;
           isConnectedResult = obj.getChannelId() === channel_id;
         }
         return isConnectedResult;
@@ -198,33 +194,23 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((event) 
     if (cResult[7] !== event.recurrence_rule) {
       class C {
         constructor() {
-          obj = closure_4;
-          isConnectedResult = closure_4.isConnected();
+          let isConnectedResult = RTCConnectionStore.isConnected();
+          const obj = RTCConnectionStore;
           if (isConnectedResult) {
-            tmp2 = channel_id;
             isConnectedResult = obj.getChannelId() === channel_id;
           }
           return isConnectedResult;
         }
       }
       const result = obj3.recurrenceRuleFromServer(event.recurrence_rule);
-      class V {
-        constructor() {
-          if (onPress != null) {
-            tmp2 = event;
-            tmpResult = tmp(event);
-          }
-          return;
-        }
-      }
+      cResult[7] = event.recurrence_rule;
       cResult[8] = result;
     } else {
       class C {
         constructor() {
-          obj = closure_4;
-          isConnectedResult = closure_4.isConnected();
+          let isConnectedResult = RTCConnectionStore.isConnected();
+          const obj = RTCConnectionStore;
           if (isConnectedResult) {
-            tmp2 = channel_id;
             isConnectedResult = obj.getChannelId() === channel_id;
           }
           return isConnectedResult;
@@ -234,10 +220,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((event) 
     if (cResult[9] === event) {
       class C {
         constructor() {
-          obj = closure_4;
-          isConnectedResult = closure_4.isConnected();
+          let isConnectedResult = RTCConnectionStore.isConnected();
+          const obj = RTCConnectionStore;
           if (isConnectedResult) {
-            tmp2 = channel_id;
             isConnectedResult = obj.getChannelId() === channel_id;
           }
           return isConnectedResult;
@@ -246,10 +231,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((event) 
       if (cResult[12] === event) {
         class C {
           constructor() {
-            obj = closure_4;
-            isConnectedResult = closure_4.isConnected();
+            let isConnectedResult = RTCConnectionStore.isConnected();
+            const obj = RTCConnectionStore;
             if (isConnectedResult) {
-              tmp2 = channel_id;
               isConnectedResult = obj.getChannelId() === channel_id;
             }
             return isConnectedResult;
@@ -258,10 +242,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((event) 
         if (cResult[15] === event) {
           class C {
             constructor() {
-              obj = closure_4;
-              isConnectedResult = closure_4.isConnected();
+              let isConnectedResult = RTCConnectionStore.isConnected();
+              const obj = RTCConnectionStore;
               if (isConnectedResult) {
-                tmp2 = channel_id;
                 isConnectedResult = obj.getChannelId() === channel_id;
               }
               return isConnectedResult;
@@ -270,109 +253,77 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((event) 
           if (cResult[18] === channel_id) {
             class C {
               constructor() {
-                obj = closure_4;
-                isConnectedResult = closure_4.isConnected();
+                let isConnectedResult = RTCConnectionStore.isConnected();
+                const obj = RTCConnectionStore;
                 if (isConnectedResult) {
-                  tmp2 = channel_id;
                   isConnectedResult = obj.getChannelId() === channel_id;
                 }
                 return isConnectedResult;
               }
             }
           }
-          let tmp24 = !tmp4;
-          class V {
-            constructor() {
-              if (onPress != null) {
-                tmp2 = event;
-                tmpResult = tmp(event);
-              }
-              return;
-            }
-          }
-          if (tmp24) {
+          let hasItem = !tmp4;
+          if (hasItem) {
             class C {
               constructor() {
-                obj = closure_4;
-                isConnectedResult = closure_4.isConnected();
+                let isConnectedResult = RTCConnectionStore.isConnected();
+                const obj = RTCConnectionStore;
                 if (isConnectedResult) {
-                  tmp2 = channel_id;
                   isConnectedResult = obj.getChannelId() === channel_id;
                 }
                 return isConnectedResult;
               }
             }
-            const obj2 = { noBackground: true, onConfirmPress: null, channelId: channel_id };
-            class V {
+            hasItem = set.has(event.entity_type);
+          }
+          if (hasItem) {
+            class C {
               constructor() {
-                if (onPress != null) {
-                  tmp2 = event;
-                  tmpResult = tmp(event);
+                let isConnectedResult = RTCConnectionStore.isConnected();
+                const obj = RTCConnectionStore;
+                if (isConnectedResult) {
+                  isConnectedResult = obj.getChannelId() === channel_id;
                 }
-                return;
+                return isConnectedResult;
               }
             }
-            tmp24 = closure_7(onPress(tmp2[14]), obj2);
+            const obj2 = { noBackground: true, onConfirmPress: onCloseAction, channelId: channel_id };
+            hasItem = closure_7(onPress(tmp2[14]), obj2);
           }
           cResult[18] = channel_id;
           cResult[19] = event.entity_type;
           cResult[20] = undefined !== hideAgeVerificationNotice && hideAgeVerificationNotice;
           cResult[21] = onCloseAction;
-          cResult[22] = tmp24;
+          cResult[22] = hasItem;
         }
-        class V {
-          constructor() {
-            if (onPress != null) {
-              tmp2 = event;
-              tmpResult = tmp(event);
-            }
-            return;
-          }
-        }
-        tmp21[0] = event;
-        tmp21[1] = tmp14;
+        const obj4 = { event, onTitlePress: tmp14 };
         cResult[15] = event;
         cResult[16] = tmp14;
-        cResult[17] = closure_7(tmp(channel_id[10]).GuildEventCardMetaInfo, tmp21);
-        const tmp22 = closure_7(tmp(channel_id[10]).GuildEventCardMetaInfo, tmp21);
+        cResult[17] = closure_7(tmp(channel_id[10]).GuildEventCardMetaInfo, obj4);
+        const tmp20 = closure_7(tmp(channel_id[10]).GuildEventCardMetaInfo, obj4);
       }
-      class V {
-        constructor() {
-          if (onPress != null) {
-            tmp2 = event;
-            tmpResult = tmp(event);
-          }
-          return;
-        }
-      }
-      tmp17[0] = event;
-      tmp17[1] = undefined !== isNew && isNew;
+      const obj5 = { event, isNew: undefined !== isNew && isNew };
       cResult[12] = event;
       cResult[13] = undefined !== isNew && isNew;
-      cResult[14] = closure_7(tmp(channel_id[10]).GuildEventCardHeader, tmp17);
-      const tmp18 = closure_7(tmp(channel_id[10]).GuildEventCardHeader, tmp17);
+      cResult[14] = closure_7(tmp(channel_id[10]).GuildEventCardHeader, obj5);
+      const tmp17 = closure_7(tmp(channel_id[10]).GuildEventCardHeader, obj5);
     }
-    class V {
-      constructor() {
-        if (onPress != null) {
-          tmp2 = event;
-          tmpResult = tmp(event);
-        }
-        return;
+    function handlePress() {
+      if (onPress != null) {
+        tmp(event);
       }
     }
     cResult[9] = event;
     cResult[10] = onPress;
-    cResult[11] = V;
+    cResult[11] = handlePress;
   }
   let tmp11 = stateFromStores;
   if (tmp11) {
     class C {
       constructor() {
-        obj = closure_4;
-        isConnectedResult = closure_4.isConnected();
+        let isConnectedResult = RTCConnectionStore.isConnected();
+        const obj = RTCConnectionStore;
         if (isConnectedResult) {
-          tmp2 = channel_id;
           isConnectedResult = obj.getChannelId() === channel_id;
         }
         return isConnectedResult;
@@ -383,7 +334,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((event) 
   cResult[4] = event;
   cResult[5] = stateFromStores;
   cResult[6] = tmp11;
-}) : ((event) => {
+}) : (function GuildEventCard(event) {
   let hideControls;
   let items2;
   let onCloseAction;

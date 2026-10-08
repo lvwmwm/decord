@@ -1,19 +1,19 @@
-// Module ID: 12895
-// Function ID: 12896
+// Module ID: 13044
+// Function ID: 13045
 // Name: UserProfileEditNoteModal
-// Dependencies: [32, 19, 21, 558, 576, 1490, 5099, 1370, 1126, 4892, 6017, 12896, 6503, 2]
+// Dependencies: [32, 19, 21, 558, 576, 1502, 5940, 1382, 1126, 5086, 6203, 13045, 6679, 2]
 
-// Module 12895 (UserProfileEditNoteModal)
+// Module 13044 (UserProfileEditNoteModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1370 */;
-import useNavigation from "useNavigation" /* 1490 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
-import NavigatorHeader from "NavigatorHeader" /* 6017 */;
-import Navigator2 from "Navigator" /* 6503 */;
-import UserProfileEditNote from "UserProfileEditNote" /* 12896 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
+import useNavigation from "useNavigation" /* 1502 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+import NavigatorHeader from "NavigatorHeader" /* 6203 */;
+import Navigator2 from "Navigator" /* 6679 */;
+import UserProfileEditNote from "UserProfileEditNote" /* 13045 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -23,7 +23,7 @@ let navigation, onClose, shouldFocusInput;
 
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsModalPresented() {
   let closure_129_1;
   let tmp4;
   let tmp5;
@@ -55,7 +55,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const effect = obj3.useEffect(tmp5, tmp6);
   return tmp4;
-}) : (() => {
+}) : (function useIsModalPresented() {
   let closure_1;
   let first;
   const obj = useNavigation;
@@ -70,7 +70,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return first;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileEditNoteModal(userId) {
   let obj4;
   let obj5;
   let onBack;
@@ -86,16 +86,16 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   const tmp4 = closure_6();
   shouldFocusInput = tmp4;
   if (cResult[0] !== onBack) {
-    const fn = function t() {
+    function handleClose() {
       const arr = ModalActionCreatorsDefault;
       arr.pop();
       if (onBack != null) {
         onBack();
       }
-    };
+    }
     cResult[0] = onBack;
-    cResult[1] = fn;
-    tmp5 = fn;
+    cResult[1] = handleClose;
+    tmp5 = handleClose;
   } else {
     tmp5 = cResult[1];
   }
@@ -188,7 +188,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[10] = userId;
   cResult[11] = S;
   tmp12 = S;
-}) : ((arg0) => {
+}) : (function UserProfileEditNoteModal(arg0) {
   let intl;
   let obj3;
   let obj4;

@@ -1,16 +1,16 @@
-// Module ID: 16067
-// Function ID: 16068
+// Module ID: 16327
+// Function ID: 16328
 // Name: ScreenAlignedThemedGradient
-// Dependencies: [17, 21, 4896, 10738, 558, 576, 7520, 5918, 15988, 4618, 2]
+// Dependencies: [17, 21, 5090, 11596, 558, 576, 9243, 10211, 16248, 4810, 2]
 
-// Module 16067 (ScreenAlignedThemedGradient)
+// Module 16327 (ScreenAlignedThemedGradient)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5918 */;
-import useActiveTheme from "useActiveTheme" /* 7520 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 10738 */;
+import useActiveTheme from "useActiveTheme" /* 9243 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10211 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11596 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let closure_6 = createStyles.createStyles((arg0, arg1) => {
 let ReactCompilerGating = ReactCompilerGating_mod;
 const __initData = { code: "function ScreenAlignedThemedGradientTsx1(){const{roundToNearestPixel,offsetX,panelTranslateX,offsetY}=this.__closure;return{transform:[{translateX:roundToNearestPixel(-offsetX-panelTranslateX.get())},{translateY:roundToNearestPixel(-offsetY)}]};}" };
 const __initData2 = { code: "function ScreenAlignedThemedGradientTsx2(){const{roundToNearestPixel,offsetX,panelTranslateX,offsetY}=this.__closure;return{transform:[{translateX:roundToNearestPixel(-offsetX-panelTranslateX.get())},{translateY:roundToNearestPixel(-offsetY)}]};}" };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScreenAlignedThemedGradient(arg0) {
   let offsetX;
   let offsetY;
   let tmp5;
@@ -63,7 +63,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp5;
   cResult[4] = tmp10;
   tmp9 = tmp10;
-}) : ((arg0) => {
+}) : (function ScreenAlignedThemedGradient(arg0) {
   let offsetX;
   let offsetY;
   ({ offsetX, offsetY } = arg0);
@@ -72,7 +72,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return <React3 pointerEvents="none" style={closure_6(offsetX, offsetY).container}>{jsx(ThemedGradientDefault, { absolute: true, tall: true, wide: true, mix: isClientThemeOrCustomThemeActive })}</React3>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((offsetX) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScreenAlignedThemedGradientSliding(offsetX) {
   let panelTranslateX;
   let tmp6;
   let tmp8;
@@ -131,7 +131,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((offsetX) => {
   cResult[5] = tmp8;
   cResult[6] = tmp12;
   tmp11 = tmp12;
-}) : ((offsetX) => {
+}) : (function ScreenAlignedThemedGradientSliding(offsetX) {
   offsetX = offsetX.offsetX;
   const offsetY = offsetX.offsetY;
   let panelTranslateX;

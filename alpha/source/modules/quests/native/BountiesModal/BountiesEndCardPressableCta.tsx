@@ -1,23 +1,23 @@
-// Module ID: 14851
-// Function ID: 14852
+// Module ID: 15112
+// Function ID: 15113
 // Name: BountiesEndCardPressableCta
-// Dependencies: [19, 17, 14852, 21, 4896, 587, 558, 576, 10929, 14853, 10013, 10931, 5637, 5635, 7225, 5981, 4892, 2]
+// Dependencies: [19, 17, 15113, 21, 5090, 587, 558, 576, 10580, 15114, 9544, 10582, 5984, 5982, 7404, 6164, 5086, 2]
 
-// Module 14851 (BountiesEndCardPressableCta)
+// Module 15112 (BountiesEndCardPressableCta)
 import nativeDefault from "native" /* 587 */;
-import QuestContent from "QuestContent" /* 5635 */;
-import AdCreativeType from "AdCreativeType" /* 5637 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7225 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 10931 */;
-import BountyConstants from "BountyConstants" /* 14852 */;
+import QuestContent from "QuestContent" /* 5982 */;
+import AdCreativeType from "AdCreativeType" /* 5984 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7404 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 10582 */;
+import BountyConstants from "BountyConstants" /* 15113 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let bounty, obj1;
+let obj1;
 
 let closure_4;
 let hasOwnProperty;
@@ -32,7 +32,7 @@ let closure_9 = createStyles.createStyles(() => {
   ({ alignItems: "center", marginTop: nativeDefault.space.PX_12 });
   return obj;
 });
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesEndCardPressableCta(bounty) {
   let getQuestImpressionId;
   let items;
   let tmp7;
@@ -164,7 +164,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
   cResult[5] = getQuestImpressionId;
   cResult[6] = sourceQuestContent;
   cResult[7] = A;
-}) : ((bounty) => {
+}) : (function BountiesEndCardPressableCta(bounty) {
   let items1;
   let obj6;
   bounty = bounty.bounty;

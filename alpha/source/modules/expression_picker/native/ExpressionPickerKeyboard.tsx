@@ -1,15 +1,15 @@
-// Module ID: 16651
-// Function ID: 16652
+// Module ID: 16913
+// Function ID: 16914
 // Name: ExpressionPickerKeyboard
-// Dependencies: [32, 19, 11664, 21, 558, 576, 4618, 5777, 12085, 1881, 1616, 4753, 9789, 4595, 10097, 11836, 2]
+// Dependencies: [32, 19, 11729, 21, 558, 576, 4810, 5360, 12160, 1893, 1628, 4947, 10354, 4787, 9681, 11921, 2]
 
-// Module 16651 (ExpressionPickerKeyboard)
+// Module 16913 (ExpressionPickerKeyboard)
 import Fragment from "Fragment" /* 21 */;
-import KeyboardTypes from "KeyboardTypes" /* 1616 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1881 */;
-import native from "native" /* 4595 */;
-import PortalKeyboardConstants from "PortalKeyboardConstants" /* 11664 */;
-import getEmojiTextDefault from "getEmojiText" /* 12085 */;
+import KeyboardTypes from "KeyboardTypes" /* 1628 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1893 */;
+import native from "native" /* 4787 */;
+import PortalKeyboardConstants from "PortalKeyboardConstants" /* 11729 */;
+import getEmojiTextDefault from "getEmojiText" /* 12160 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -21,7 +21,7 @@ let __initData = { code: "function ExpressionPickerKeyboardTsx1(){const{bottomSh
 let closure_8 = { code: "function ExpressionPickerKeyboardTsx2(){const{bottomSheetExpandingOrExpanded,maximum,minimum}=this.__closure;return{height:bottomSheetExpandingOrExpanded.get()?maximum:minimum};}" };
 let closure_9 = { code: "function ExpressionPickerKeyboardTsx3(){const{bottomSheetIndex}=this.__closure;return Math.max(bottomSheetIndex.get(),0)>0;}" };
 let closure_10 = { code: "function ExpressionPickerKeyboardTsx4(){const{bottomSheetExpandingOrExpanded,maximum,minimum}=this.__closure;return{height:bottomSheetExpandingOrExpanded.get()?maximum:minimum};}" };
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ExpressionPickerKeyboard(onClose) {
   let channel;
   let chatInputRef;
   let closure_7;
@@ -190,7 +190,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   cResult[8] = chatInputRef;
   cResult[9] = isScreenReaderEnabled;
   cResult[10] = V;
-}) : ((chatInputRef) => {
+}) : (function ExpressionPickerKeyboard(chatInputRef) {
   let View;
   let obj8;
   let suggestedEmojis;
@@ -199,7 +199,6 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   const onClose = chatInputRef.onClose;
   const transitionState = chatInputRef.transitionState;
   let ref;
-  let derivedValue;
   const channel = chatInputRef.channel;
   let obj = chatInputRef(transitionState[6]);
   const sharedValue = obj.useSharedValue(-1);
@@ -252,26 +251,26 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   const tmp12 = onClose(transitionState[12])();
   const minimum = tmp12.minimum;
   const maximum = tmp12.maximum;
+  const fn = function b() {
+    return Math.max(sharedValue.get(), 0) > 0;
+  };
+  fn.__closure = { bottomSheetIndex: sharedValue };
+  fn.__workletHash = 17590128332378;
+  fn.__initData = maximum;
   const obj5 = chatInputRef(transitionState[6]);
+  const derivedValue = obj5.useDerivedValue(fn);
+  const obj6 = chatInputRef(transitionState[6]);
   class S {
     constructor() {
-      return Math.max(sharedValue.get(), 0) > 0;
+      const obj = { height: derivedValue.get() ? maximum : minimum };
+      return obj;
     }
   }
-  S.__closure = { bottomSheetIndex: sharedValue };
-  S.__workletHash = 17590128332378;
-  S.__initData = maximum;
-  derivedValue = obj5.useDerivedValue(S);
-  const fn = function b() {
-    const obj = { height: derivedValue.get() ? maximum : minimum };
-    return obj;
-  };
-  fn.__closure = { bottomSheetExpandingOrExpanded: derivedValue, maximum, minimum };
-  fn.__workletHash = 7280607865186;
-  fn.__initData = derivedValue;
+  S.__closure = { bottomSheetExpandingOrExpanded: derivedValue, maximum, minimum };
+  S.__workletHash = 7280607865186;
+  S.__initData = derivedValue;
   const items4 = [isScreenReaderEnabled, chatInputRef];
-  const obj6 = chatInputRef(transitionState[6]);
-  const animatedStyle = obj6.useAnimatedStyle(fn);
+  const animatedStyle = obj6.useAnimatedStyle(S);
   const items5 = [first, onClose, transitionState];
   const callback4 = ref.useCallback(() => {
     closure_7(true);

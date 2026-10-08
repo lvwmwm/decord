@@ -1,21 +1,21 @@
-// Module ID: 9967
-// Function ID: 9968
+// Module ID: 9494
+// Function ID: 9495
 // Name: EmojiPickerCategories
-// Dependencies: [19, 5649, 1085, 1229, 21, 4896, 587, 4618, 1252, 4861, 4862, 9968, 9980, 6147, 9981, 6559, 9982, 9983, 2]
+// Dependencies: [19, 5996, 1085, 1241, 21, 5090, 587, 4810, 1264, 5055, 5056, 9495, 9509, 6326, 9510, 6735, 9511, 9513, 2]
 
-// Module 9967 (EmojiPickerCategories)
+// Module 9494 (EmojiPickerCategories)
 import nativeDefault from "native" /* 587 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1229 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import HapticUtils from "HapticUtils" /* 4861 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4862 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 5649 */;
-import EmojiPickerCategoriesItemDefault from "EmojiPickerCategoriesItem" /* 9968 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1241 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import HapticUtils from "HapticUtils" /* 5055 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5056 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 5996 */;
+import EmojiPickerCategoriesItemDefault from "EmojiPickerCategoriesItem" /* 9495 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import size from "module_2" /* 2 */;
 
 let set;

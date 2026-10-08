@@ -1,23 +1,21 @@
-// Module ID: 8717
-// Function ID: 8718
+// Module ID: 13190
+// Function ID: 13191
 // Name: UserProfileApplicationWidgetSkeletons
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 5086, 2]
 
-// Module 8717 (UserProfileApplicationWidgetSkeletons)
+// Module 13190 (UserProfileApplicationWidgetSkeletons)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let style, widthChars;
-
 let obj2;
 let tmp;
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { skeleton: obj2 };
@@ -25,7 +23,7 @@ obj2 = { borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.co
 let closure_4 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let c5 = 0.46;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageSkeleton(style) {
   const obj = react2;
   const cResult = obj.c(3);
   style = style.style;
@@ -43,13 +41,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   cResult[1] = tmp2.skeleton;
   cResult[2] = tmp4;
   tmp3 = tmp4;
-}) : ((style) => {
+}) : (function ImageSkeleton(style) {
   style = style.style;
   const items = [closure_4().skeleton, style];
   return <View style={items} />;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthChars) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextSkeleton(widthChars) {
   const obj = react2;
   const cResult = obj.c(6);
   widthChars = widthChars.widthChars;
@@ -86,7 +84,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((widthChars) => {
   cResult[1] = result1;
   cResult[2] = size;
   tmp8 = size;
-}) : ((widthChars) => {
+}) : (function TextSkeleton(widthChars) {
   let num = widthChars.widthChars;
   const variant = widthChars.variant;
   if (num === undefined) {

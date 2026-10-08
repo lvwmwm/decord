@@ -1,16 +1,16 @@
-// Module ID: 11486
-// Function ID: 11487
+// Module ID: 11472
+// Function ID: 11473
 // Name: GuildAutomodActionActionCreators
-// Dependencies: [19, 11487, 21, 5099, 11491, 1987, 5715, 11494, 2]
+// Dependencies: [19, 11473, 21, 5940, 11477, 1999, 5298, 11480, 2]
 // Exports: getPromiseableActionHandlers, openAutomodProfileQuarantineAlert, openConfirmRemoveMentionRaid, openRaidResolveModal, openSubmitFeedback
 
-// Module 11486 (GuildAutomodActionActionCreators)
+// Module 11472 (GuildAutomodActionActionCreators)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5715 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5298 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 11487 */;
+import Constants from "Constants" /* 11473 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -26,14 +26,14 @@ export const openSubmitFeedback = function openSubmitFeedback(messageId, content
   let obj3;
   let obj = ModalActionCreatorsDefault;
   const obj2 = {
-    onCloseModal() {
+    onCloseModal: function handleClose() {
       const obj = ModalActionCreatorsDefault;
       obj.popWithKey(closure_1_4);
     },
     automodDecision: obj3
   };
   obj3 = { messageId, messageContent: content, decisionId, channel };
-  obj.pushLazy(asyncRequire(11491, dependencyMap.paths), obj2, React3);
+  obj.pushLazy(asyncRequire(11477, dependencyMap.paths), obj2, React3);
 };
 export function openRaidResolveModal() {
 
@@ -46,7 +46,7 @@ export const openAutomodProfileQuarantineAlert = function openAutomodProfileQuar
   const obj = actions_AlertActionCreatorsDefault;
   const obj2 = {
     importer() {
-      const promise = asyncRequire(11494, dependencyMap.paths);
+      const promise = asyncRequire(11480, dependencyMap.paths);
       return promise.then((result) => {
         let closure_0 = result.default;
         return (arg0) => {

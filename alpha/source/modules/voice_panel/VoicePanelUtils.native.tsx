@@ -1,13 +1,13 @@
-// Module ID: 9622
-// Function ID: 9623
+// Module ID: 10815
+// Function ID: 10816
 // Name: VoicePanelUtils
-// Dependencies: [2051, 4919, 5104, 558, 576, 573, 2]
+// Dependencies: [2063, 5108, 6079, 558, 576, 573, 2]
 
-// Module 9622 (VoicePanelUtils)
+// Module 10815 (VoicePanelUtils)
 import react from "react" /* 576 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
-import VoicePanelStore from "VoicePanelStore" /* 5104 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
+import VoicePanelStore from "VoicePanelStore" /* 6079 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let channel;
 let tmp;
 const useStateFromStores = tmp(573);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVoicePanelShowing() {
   let channelId;
   let tmp4;
   let tmp5;
@@ -25,7 +25,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ChannelStore, RTCConnectionStore];
-    const fn = function o() {
+    const fn = function s() {
       channel = channel.getChannel(channelId.getChannelId());
       const tmp = null != channel && !channel.isGuildStageVoice();
       return tmp;
@@ -39,7 +39,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = useStateFromStores;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useIsVoicePanelShowing() {
   let channelId;
   const items = [ChannelStore, RTCConnectionStore];
   const obj = useStateFromStores;
@@ -50,7 +50,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVoicePanelFullscreen() {
   let first;
   const obj = react;
   const cResult = obj.c(1);
@@ -64,15 +64,17 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return VoicePanelStore(first);
-}) : (() => VoicePanelStore((isVoicePanelFullscreen) => isVoicePanelFullscreen.isVoicePanelFullscreen()));
+}) : (function useIsVoicePanelFullscreen() {
+  return VoicePanelStore((isVoicePanelFullscreen) => isVoicePanelFullscreen.isVoicePanelFullscreen());
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVoicePanelOpen(arg0) {
   let tmp2;
   let closure_0 = arg0;
   const obj = react;
   const cResult = obj.c(2);
   if (cResult[0] !== arg0) {
-    const fn = function t(isChannelOpen) {
+    const fn = function l(isChannelOpen) {
       return isChannelOpen.isChannelOpen(closure_0);
     };
     cResult[0] = arg0;
@@ -82,12 +84,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = cResult[1];
   }
   return VoicePanelStore(tmp2);
-}) : ((arg0) => {
+}) : (function useIsVoicePanelOpen(arg0) {
   let closure_0 = arg0;
   return VoicePanelStore((isChannelOpen) => isChannelOpen.isChannelOpen(closure_0));
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsAnyVoicePanelOpen() {
   let first;
   const obj = react;
   const cResult = obj.c(1);
@@ -101,15 +103,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return VoicePanelStore(first);
-}) : (() => VoicePanelStore((isAnyVoicePanelOpen) => isAnyVoicePanelOpen.isAnyVoicePanelOpen()));
+}) : (function useIsAnyVoicePanelOpen() {
+  return VoicePanelStore((isAnyVoicePanelOpen) => isAnyVoicePanelOpen.isAnyVoicePanelOpen());
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVoicePanelMounted(arg0) {
   let tmp2;
   let closure_0 = arg0;
   const obj = react;
   const cResult = obj.c(2);
   if (cResult[0] !== arg0) {
-    const fn = function t(isMounted) {
+    const fn = function l(isMounted) {
       return isMounted.isMounted(closure_0);
     };
     cResult[0] = arg0;
@@ -119,7 +123,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = cResult[1];
   }
   return VoicePanelStore(tmp2);
-}) : ((arg0) => {
+}) : (function useIsVoicePanelMounted(arg0) {
   let closure_0 = arg0;
   return VoicePanelStore((isMounted) => isMounted.isMounted(closure_0));
 });

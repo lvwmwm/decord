@@ -1,31 +1,61 @@
 // Module ID: 4462
 // Function ID: 4463
-// Dependencies: []
+// Dependencies: [4459]
 
 // Module 4462
-let obj3;
-let obj4;
-let obj5;
-let obj6;
-let obj7;
-if (Intl.ListFormat) {
-  const _Intl = Intl;
-  if (typeof Intl.ListFormat.__addLocaleData === "function") {
-    const _Intl2 = Intl;
-    const obj2 = { data: obj3, locale: "zh-Hans" };
-    obj3 = { conjunction: obj4, disjunction: obj5, unit: obj6 };
-    obj4 = { long: { end: "{0}\u548C{1}", middle: "{0}\u3001{1}", pair: "{0}\u548C{1}", start: "{0}\u3001{1}" }, narrow: { end: "{0}\u3001{1}", middle: "{0}\u3001{1}", pair: "{0}\u3001{1}", start: "{0}\u3001{1}" }, short: { end: "{0}\u548C{1}", middle: "{0}\u3001{1}", pair: "{0}\u548C{1}", start: "{0}\u3001{1}" } };
-    obj5 = { long: { end: "{0}\u6216{1}", middle: "{0}\u3001{1}", pair: "{0}\u6216{1}", start: "{0}\u3001{1}" }, narrow: { end: "{0}\u6216{1}", middle: "{0}\u3001{1}", pair: "{0}\u6216{1}", start: "{0}\u3001{1}" }, short: { end: "{0}\u6216{1}", middle: "{0}\u3001{1}", pair: "{0}\u6216{1}", start: "{0}\u3001{1}" } };
-    obj6 = { long: { end: "{0}{1}", middle: "{0}{1}", pair: "{0}{1}", start: "{0}{1}" }, narrow: { end: "{0}{1}", middle: "{0}{1}", pair: "{0}{1}", start: "{0}{1}" }, short: { end: "{0}{1}", middle: "{0}{1}", pair: "{0}{1}", start: "{0}{1}" } };
-    ListFormat.__addLocaleData(obj2);
+import DateToSystemTimezoneSetter from "DateToSystemTimezoneSetter" /* 4459 */;
+
+let num;
+class Parser {
+  constructor() {
+    if (!(this instanceof Parser)) {
+      const _TypeError = TypeError;
+      const self = this;
+      const self2 = this;
+      const typeError = new TypeError("Cannot call a class as a function");
+      throw typeError;
+    }
   }
 }
-let prop = globalThis.__FORMATJS_LISTFORMAT_DATA__;
-const _globalThis = globalThis;
-if (!prop) {
-  prop = [];
+const entry = {
+  key: "run",
+  value: function run(arg0, arg1, arg2, arg3) {
+    let valueSetter;
+    const self = this;
+    const iter = this.parse(arg0, arg1, arg2, arg3);
+    let tmp = null;
+    if (iter) {
+      const self2 = this;
+      const self3 = this;
+      const obj = { setter: valueSetter, rest: iter.rest };
+      valueSetter = new DateToSystemTimezoneSetter.ValueSetter(iter.value, self.validate, self.set, self.priority, self.subPriority);
+      tmp = obj;
+    }
+    return tmp;
+  }
+};
+const items = [
+  entry,
+  {
+    key: "validate",
+    value: function validate(arg0, arg1, arg2) {
+      return true;
+    }
+  }
+];
+for (let num = 0; num < items.length; num = num + 1) {
+  let tmp3 = items[num];
+  let flag = tmp3.enumerable;
+  if (!flag) {
+    flag = false;
+  }
+  tmp3.enumerable = flag;
+  tmp3.configurable = true;
+  if ("value" in tmp3) {
+    tmp3.writable = true;
+  }
+  let _Object = Object;
+  let definePropertyResult1 = Object.defineProperty(tmp2, tmp3.key, tmp3);
 }
-_globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-const obj = { data: obj7, locale: "zh-Hans" };
-obj7 = { conjunction: { long: { end: "{0}\u548C{1}", middle: "{0}\u3001{1}", pair: "{0}\u548C{1}", start: "{0}\u3001{1}" }, narrow: { end: "{0}\u3001{1}", middle: "{0}\u3001{1}", pair: "{0}\u3001{1}", start: "{0}\u3001{1}" }, short: { end: "{0}\u548C{1}", middle: "{0}\u3001{1}", pair: "{0}\u548C{1}", start: "{0}\u3001{1}" } }, disjunction: { long: { end: "{0}\u6216{1}", middle: "{0}\u3001{1}", pair: "{0}\u6216{1}", start: "{0}\u3001{1}" }, narrow: { end: "{0}\u6216{1}", middle: "{0}\u3001{1}", pair: "{0}\u6216{1}", start: "{0}\u3001{1}" }, short: { end: "{0}\u6216{1}", middle: "{0}\u3001{1}", pair: "{0}\u6216{1}", start: "{0}\u3001{1}" } }, unit: { long: { end: "{0}{1}", middle: "{0}{1}", pair: "{0}{1}", start: "{0}{1}" }, narrow: { end: "{0}{1}", middle: "{0}{1}", pair: "{0}{1}", start: "{0}{1}" }, short: { end: "{0}{1}", middle: "{0}{1}", pair: "{0}{1}", start: "{0}{1}" } } };
-prop.push(obj);
+
+export { Parser };

@@ -1,11 +1,11 @@
-// Module ID: 11229
-// Function ID: 11230
+// Module ID: 11344
+// Function ID: 11345
 // Name: GroupDMNitroCapExperiment
-// Dependencies: [1441, 2]
+// Dependencies: [1453, 2]
 // Exports: getGroupDMNitroCapConfig
 
-// Module 11229 (GroupDMNitroCapExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1441 */;
+// Module 11344 (GroupDMNitroCapExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj = { kind: "user", name: "2026-06-nitro-gdm-cap-increase", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

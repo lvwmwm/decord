@@ -1,19 +1,19 @@
-// Module ID: 9807
-// Function ID: 9808
+// Module ID: 10370
+// Function ID: 10371
 // Name: InappropriateConversationsDefaultOn
-// Dependencies: [1441, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: isEligibleForInappropriateConversationDefaultOn
 
-// Module 9807 (InappropriateConversationsDefaultOn)
+// Module 10370 (InappropriateConversationsDefaultOn)
 import react from "react" /* 576 */;
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1441 */;
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-04-inappropriate-conversations-default-on", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
 let tmp2 = apex_ApexExperimentDefault(obj);
 let closure_2 = tmp2;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEligibleForInappropriateConversationDefaultOn(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -27,7 +27,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useIsEligibleForInappropriateConversationDefaultOn(location) {
   const obj = { location: location.location };
   return closure_2.useConfig(obj).enabled;
 });

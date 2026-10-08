@@ -1,35 +1,35 @@
-// Module ID: 14783
-// Function ID: 14784
+// Module ID: 15044
+// Function ID: 15045
 // Name: ConnectionsEmptyStateUpsell
-// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 4797, 8764, 14784, 14785, 4735, 1402, 1188, 6002, 4860, 14781, 1987, 4892, 7025, 1618, 5600, 1126, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 587, 558, 576, 4991, 9147, 15045, 15046, 4929, 1414, 1200, 6186, 5054, 15042, 1999, 5086, 7213, 1630, 5373, 1126, 2]
 
-// Module 14783 (ConnectionsEmptyStateUpsell)
+// Module 15044 (ConnectionsEmptyStateUpsell)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AvatarUtils from "AvatarUtils" /* 1402 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import useThemeDefault from "useTheme" /* 4797 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Stack_Stack from "Stack/Stack" /* 5600 */;
-import Card_Card from "Card/Card" /* 6002 */;
-import ConnectionsHooks from "ConnectionsHooks" /* 7025 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 8764 */;
-import ConnectionsTracking from "ConnectionsTracking" /* 14784 */;
+import AvatarUtils from "AvatarUtils" /* 1414 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import useThemeDefault from "useTheme" /* 4991 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Stack_Stack from "Stack/Stack" /* 5373 */;
+import Card_Card from "Card/Card" /* 6186 */;
+import ConnectionsHooks from "ConnectionsHooks" /* 7213 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9147 */;
+import ConnectionsTracking from "ConnectionsTracking" /* 15045 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let importDefault, platform;
+let importDefault;
 
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const shared = tmp(4735);
+const shared = tmp(4929);
 function OtherConnectionsCard(count) {
   let Text;
   let obj2;
@@ -55,7 +55,7 @@ let closure_8 = createStyles.createStyles(() => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyStateCard(platform) {
   let tmp6;
   let tmp7;
   let whitePNG;
@@ -79,7 +79,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
     tmp6 = cResult[1];
   }
   if (cResult[2] !== platform.type) {
-    const tmpResult = platform(14785);
+    const tmpResult = platform(15046);
     const connectionBackgroundColor = tmpResult.getConnectionBackgroundColor(platform.type);
     cResult[2] = platform.type;
     cResult[3] = connectionBackgroundColor;
@@ -126,7 +126,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
                       }
                     }
                     let obj2 = { onPress: tmp6, style: tmp4.card, border: "strong", children: tmp19 };
-                    const tmp25 = closure_6(platform(6002).Card, obj2);
+                    const tmp25 = closure_6(platform(6186).Card, obj2);
                     cResult[23] = tmp6;
                     cResult[24] = tmp4.card;
                     cResult[25] = tmp19;
@@ -142,7 +142,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
                 }
               }
               const obj4 = { style: tmp4.icon, source: tmp9, resizeMode: "contain", disableColor: true, accessibilityLabel: platform.name };
-              const tmp18 = closure_6(platform(1188).Icon, obj4);
+              const tmp18 = closure_6(platform(1200).Icon, obj4);
               cResult[16] = platform.name;
               cResult[17] = tmp9;
               cResult[18] = tmp4.icon;
@@ -168,13 +168,13 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
       }
     }
   }
-  const makeSource = tmp(1402).makeSource;
-  platform(1402);
+  const makeSource = tmp(1414).makeSource;
+  platform(1414);
   if (null != tmp7) {
     whitePNG = platform.icon.whitePNG;
   } else {
     const icon = platform.icon;
-    const tmpResult4 = platform(4735);
+    const tmpResult4 = platform(4929);
     whitePNG = tmpResult4.isThemeDark(tmp5) ? icon.darkPNG : icon.lightPNG;
   }
   const source = makeSource(whitePNG);
@@ -185,7 +185,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
   cResult[8] = tmp5;
   cResult[9] = source;
   tmp9 = source;
-}) : ((platform) => {
+}) : (function EmptyStateCard(platform) {
   let closure_1;
   let obj4;
   let obj5;
@@ -237,7 +237,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
   return closure_6(Card, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectionsEmptyStateUpsell() {
   let arr2;
   let arr3;
   let content;
@@ -276,149 +276,124 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[5];
   }
   if (cResult[6] === tmp4.container) {
+    let tmp9;
+    let tmp13;
     ({ content, textContainer } = tmp4);
     if (cResult[9] !== arr2) {
       let tmp11;
       const _Symbol = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        class P {
-          constructor(arg0) {
-            obj = { platform: arg0 };
-            return closure_1_6(closure_1_9, obj, arg0.type);
-          }
-        }
-        cResult[11] = P;
-        tmp11 = P;
+        const fn = function v(platform) {
+          const obj = { platform };
+          return closure_1_6(closure_1_9, obj, platform.type);
+        };
+        cResult[11] = fn;
+        tmp11 = fn;
       } else {
-        class P {
-          constructor(arg0) {
-            obj = { platform: arg0 };
-            return closure_1_6(closure_1_9, obj, arg0.type);
-          }
-        }
+        tmp11 = cResult[11];
       }
       const mapped = arr2.map(tmp11);
       cResult[9] = arr2;
       cResult[10] = mapped;
+      tmp9 = mapped;
     } else {
-      class P {
-        constructor(arg0) {
-          obj = { platform: arg0 };
-          return closure_1_6(closure_1_9, obj, arg0.type);
-        }
-      }
+      tmp9 = cResult[10];
     }
     if (cResult[12] !== tmp9) {
-      class P {
-        constructor(arg0) {
-          obj = { platform: arg0 };
-          return closure_1_6(closure_1_9, obj, arg0.type);
-        }
-      }
       const obj4 = { spacing: 16, justify: "center", direction: "horizontal", children: tmp9 };
+      const tmp15 = metroRequire(Stack_Stack.Stack, obj4);
       cResult[12] = tmp9;
-      cResult[13] = metroRequire(Stack_Stack.Stack, obj4);
-      const tmp14 = metroRequire(Stack_Stack.Stack, obj4);
+      cResult[13] = tmp15;
+      tmp13 = tmp15;
     } else {
-      class P {
-        constructor(arg0) {
-          obj = { platform: arg0 };
-          return closure_1_6(closure_1_9, obj, arg0.type);
-        }
-      }
+      tmp13 = cResult[13];
     }
     if (cResult[14] !== arr3) {
-      let tmp16;
-      class P {
-        constructor(arg0) {
-          obj = { platform: arg0 };
-          return closure_1_6(closure_1_9, obj, arg0.type);
-        }
-      }
+      let tmp18;
       const _Symbol2 = Symbol;
       if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
         class T {
-          constructor(arg0) {
-            obj = { platform: arg0 };
-            return closure_1_6(closure_1_9, obj, arg0.type);
+          constructor(platform) {
+            const obj = { platform };
+            return closure_1_6(closure_1_9, obj, platform.type);
           }
         }
         cResult[16] = T;
-        tmp16 = T;
+        tmp18 = T;
       } else {
         class T {
-          constructor(arg0) {
-            obj = { platform: arg0 };
-            return closure_1_6(closure_1_9, obj, arg0.type);
+          constructor(platform) {
+            const obj = { platform };
+            return closure_1_6(closure_1_9, obj, platform.type);
           }
         }
       }
-      const mapped1 = arr3.map(tmp16);
+      const mapped1 = arr3.map(tmp18);
       cResult[14] = arr3;
       cResult[15] = mapped1;
     } else {
       class T {
-        constructor(arg0) {
-          obj = { platform: arg0 };
-          return closure_1_6(closure_1_9, obj, arg0.type);
+        constructor(platform) {
+          const obj = { platform };
+          return closure_1_6(closure_1_9, obj, platform.type);
         }
       }
     }
     const diff = emptyStatePlatforms.length - 5;
     if (cResult[17] !== diff) {
       class T {
-        constructor(arg0) {
-          obj = { platform: arg0 };
-          return closure_1_6(closure_1_9, obj, arg0.type);
+        constructor(platform) {
+          const obj = { platform };
+          return closure_1_6(closure_1_9, obj, platform.type);
         }
       }
       const obj5 = { count: diff };
       cResult[17] = diff;
       cResult[18] = metroRequire(OtherConnectionsCard, obj5);
-      const tmp21 = metroRequire(OtherConnectionsCard, obj5);
+      const tmp23 = metroRequire(OtherConnectionsCard, obj5);
     } else {
       class T {
-        constructor(arg0) {
-          obj = { platform: arg0 };
-          return closure_1_6(closure_1_9, obj, arg0.type);
+        constructor(platform) {
+          const obj = { platform };
+          return closure_1_6(closure_1_9, obj, platform.type);
         }
       }
     }
-    if (cResult[19] === tmp19) {
+    if (cResult[19] === tmp21) {
       class T {
-        constructor(arg0) {
-          obj = { platform: arg0 };
-          return closure_1_6(closure_1_9, obj, arg0.type);
+        constructor(platform) {
+          const obj = { platform };
+          return closure_1_6(closure_1_9, obj, platform.type);
         }
       }
       if (cResult[22] === tmp4.textContainer) {
         class T {
-          constructor(arg0) {
-            obj = { platform: arg0 };
-            return closure_1_6(closure_1_9, obj, arg0.type);
+          constructor(platform) {
+            const obj = { platform };
+            return closure_1_6(closure_1_9, obj, platform.type);
           }
         }
       }
       const obj6 = { spacing: 16, direction: "vertical", align: "center", style: textContainer, children: items };
-      items = [tmp13, tmp22];
+      items = [tmp13, tmp24];
       cResult[22] = tmp4.textContainer;
-      cResult[23] = tmp22;
+      cResult[23] = tmp24;
       cResult[24] = tmp13;
       cResult[25] = metroImportDefault(Stack_Stack.Stack, obj6);
-      const tmp27 = metroImportDefault(Stack_Stack.Stack, obj6);
+      const tmp29 = metroImportDefault(Stack_Stack.Stack, obj6);
     }
     const obj7 = { spacing: 16, justify: "center", direction: "horizontal", children: items1 };
-    items1 = [tmp15, tmp19];
-    cResult[19] = tmp19;
-    cResult[20] = tmp15;
+    items1 = [tmp16, tmp21];
+    cResult[19] = tmp21;
+    cResult[20] = tmp16;
     cResult[21] = metroImportDefault(Stack_Stack.Stack, obj7);
-    const tmp24 = metroImportDefault(Stack_Stack.Stack, obj7);
+    const tmp26 = metroImportDefault(Stack_Stack.Stack, obj7);
   }
   const items2 = [tmp4.container, tmp7];
   cResult[6] = tmp4.container;
   cResult[7] = tmp7;
   cResult[8] = items2;
-}) : (() => {
+}) : (function ConnectionsEmptyStateUpsell() {
   let emptyStatePlatforms;
   let intl;
   let intl2;
@@ -429,7 +404,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let items6;
   let obj4;
   const tmp = closure_8();
-  let obj = emptyStatePlatforms(7025);
+  let obj = emptyStatePlatforms(7213);
   emptyStatePlatforms = obj.useEmptyStatePlatforms();
   const items = [emptyStatePlatforms];
   const memo = react.useMemo(() => emptyStatePlatforms.slice(0, 3), items);
@@ -440,7 +415,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj4 = { style: tmp.content, children: items5 };
   const obj5 = { spacing: 16, direction: "vertical", align: "center", style: tmp.textContainer, children: items3 };
   ({ paddingBottom: useSafeAreaInsetsDefault().bottom });
-  const Stack = emptyStatePlatforms(5600).Stack;
+  const Stack = emptyStatePlatforms(5373).Stack;
   const obj6 = {
     spacing: 16,
     justify: "center",
@@ -450,10 +425,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       return closure_1_6(closure_1_9, obj, platform.type);
     })
   };
-  const Stack2 = emptyStatePlatforms(5600).Stack;
+  const Stack2 = emptyStatePlatforms(5373).Stack;
   items3 = [closure_6(Stack2, obj6), ];
   const obj7 = { spacing: 16, justify: "center", direction: "horizontal", children: items4 };
-  const Stack3 = emptyStatePlatforms(5600).Stack;
+  const Stack3 = emptyStatePlatforms(5373).Stack;
   items4 = [
     memo1.map((platform) => {
       const obj = { platform };
@@ -466,13 +441,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   items3[1] = closure_7(Stack3, obj7);
   items5 = [closure_7(Stack, obj5), ];
   const obj9 = { spacing: 8, align: "center", style: tmp.textContainer, children: items6 };
-  const Stack4 = emptyStatePlatforms(5600).Stack;
+  const Stack4 = emptyStatePlatforms(5373).Stack;
   const obj10 = { variant: "text-lg/bold", color: "mobile-text-heading-primary", style: tmp.text, children: intl.string(emptyStatePlatforms(1126).t.JlrHXb) };
-  const Text = emptyStatePlatforms(4892).Text;
+  const Text = emptyStatePlatforms(5086).Text;
   intl = emptyStatePlatforms(1126).intl;
   items6 = [closure_6(Text, obj10), ];
   const obj11 = { variant: "text-md/medium", color: "text-default", style: tmp.text, children: intl2.string(emptyStatePlatforms(1126).t.XijaQP) };
-  const Text2 = emptyStatePlatforms(4892).Text;
+  const Text2 = emptyStatePlatforms(5086).Text;
   intl2 = emptyStatePlatforms(1126).intl;
   items6[1] = closure_6(Text2, obj11);
   items5[1] = closure_7(Stack4, obj9);

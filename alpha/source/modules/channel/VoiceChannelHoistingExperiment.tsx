@@ -1,12 +1,12 @@
-// Module ID: 17506
-// Function ID: 17507
+// Module ID: 17788
+// Function ID: 17789
 // Name: VoiceChannelHoistingExperiment
-// Dependencies: [4783, 4780, 558, 576, 2]
+// Dependencies: [4977, 4974, 558, 576, 2]
 
-// Module 17506 (VoiceChannelHoistingExperiment)
+// Module 17788 (VoiceChannelHoistingExperiment)
 import react from "react" /* 576 */;
-import ExperimentConstants from "ExperimentConstants" /* 4783 */;
-import createExperiment from "module_4780" /* 4780 */;
+import ExperimentConstants from "ExperimentConstants" /* 4977 */;
+import createExperiment from "module_4974" /* 4974 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const CommonTriggerPoints = ExperimentConstants.CommonTriggerPoints;
 let obj = { kind: "guild", id: "2025-12_voice_channel_hoisting", label: "Voice Channel Hoisting", commonTriggerPoint: CommonTriggerPoints.VOICE_CALL, defaultConfig: { enableWaveformIcon: false, enableHighlight: false }, treatments: items };
 items = [{ id: 1, label: "Both waveform and highlight", config: { enableWaveformIcon: true, enableHighlight: true } }, { id: 2, label: "Waveform icon only", config: { enableWaveformIcon: true, enableHighlight: false } }];
 const experiment = createExperiment.createExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, location) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceChannelHoistingExperiment(guildId, location) {
   const obj = react;
   const cResult = obj.c(4);
   if (cResult[0] === guildId) {
@@ -39,7 +39,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, location)
   cResult[1] = location;
   cResult[2] = obj3;
   tmp2 = obj3;
-}) : ((guildId, location) => {
+}) : (function useVoiceChannelHoistingExperiment(guildId, location) {
   const obj = { guildId, location };
   return experiment.useExperiment(obj, { autoTrackExposure: false });
 });

@@ -1,17 +1,17 @@
-// Module ID: 12882
-// Function ID: 12883
+// Module ID: 13031
+// Function ID: 13032
 // Name: useUserProfileActivity
-// Dependencies: [19, 8480, 1999, 4936, 4921, 558, 576, 504, 10624, 12883, 7829, 8027, 8023, 2]
+// Dependencies: [19, 8966, 2011, 5106, 5115, 558, 576, 504, 10222, 13032, 8247, 8435, 8431, 2]
 
-// Module 12882 (useUserProfileActivity)
+// Module 13031 (useUserProfileActivity)
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 4921 */;
-import utils from "utils" /* 7829 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8027 */;
-import UserProfileStackedActivityCardUtils from "UserProfileStackedActivityCardUtils" /* 12883 */;
-import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8480 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import PresenceStore from "PresenceStore" /* 4936 */;
+import Constants from "Constants" /* 5115 */;
+import utils from "utils" /* 8247 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8435 */;
+import UserProfileStackedActivityCardUtils from "UserProfileStackedActivityCardUtils" /* 13032 */;
+import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8966 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import PresenceStore from "PresenceStore" /* 5106 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,13 +22,13 @@ const useMemo = react.useMemo;
 const Features = Constants.Features;
 let closure_8 = [];
 let closure_9 = [];
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  let arr4;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfileActivity(arg0) {
   let live;
   let recent;
   let tmp11;
   let tmp13;
-  let tmp15;
+  let tmp14;
+  let tmp22;
   let tmp4;
   let tmp5;
   let tmp9;
@@ -38,7 +38,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(20);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [MediaEngineStore];
-    const fn = function h() {
+    const fn = function y() {
       return MediaEngineStore.supports(constants.VIDEO);
     };
     cResult[0] = items;
@@ -52,7 +52,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   let tmp8 = null;
   if (stateFromStores) {
-    tmp8 = userProfileLiveActivities(10624)(arg0);
+    tmp8 = userProfileLiveActivities(10222)(arg0);
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [PresenceStore];
@@ -62,67 +62,112 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp9 = cResult[2];
   }
   if (cResult[3] !== arg0) {
-    const fn2 = function f() {
-      return PresenceStore.getActivities(closure_0);
-    };
+    class S {
+      constructor() {
+        return PresenceStore.getActivities(closure_0);
+      }
+    }
     cResult[3] = arg0;
-    cResult[4] = fn2;
-    tmp11 = fn2;
+    cResult[4] = S;
+    tmp11 = S;
   } else {
-    tmp11 = cResult[4];
+    class S {
+      constructor() {
+        return PresenceStore.getActivities(closure_0);
+      }
+    }
   }
   let tmpResult4 = tmp(504);
   const stateFromStores1 = tmpResult4.useStateFromStores(tmp9, tmp11);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        return PresenceStore.getActivities(closure_0);
+      }
+    }
     const items2 = [ContentInventoryOutboxStore];
     cResult[5] = items2;
     tmp13 = items2;
   } else {
-    tmp13 = cResult[5];
+    class S {
+      constructor() {
+        return PresenceStore.getActivities(closure_0);
+      }
+    }
   }
   if (cResult[6] !== arg0) {
-    const fn3 = function p() {
-      return ContentInventoryOutboxStore.getUserOutbox(closure_0);
-    };
+    class S {
+      constructor() {
+        return PresenceStore.getActivities(closure_0);
+      }
+    }
     cResult[6] = arg0;
-    cResult[7] = fn3;
-    tmp15 = fn3;
+    cResult[7] = tmp15;
+    tmp14 = tmp15;
   } else {
-    tmp15 = cResult[7];
+    class S {
+      constructor() {
+        return PresenceStore.getActivities(closure_0);
+      }
+    }
   }
   const tmpResult5 = require("get initialized");
-  const stateFromStores2 = tmpResult5.useStateFromStores(tmp13, tmp15);
+  const stateFromStores2 = tmpResult5.useStateFromStores(tmp13, tmp14);
   if (cResult[8] === stateFromStores1) {
-    let arr5;
-    let entries;
+    let tmp19;
+    class S {
+      constructor() {
+        return PresenceStore.getActivities(closure_0);
+      }
+    }
     const tmp17 = cResult[9];
     if (stateFromStores2 != null) {
-      entries = stateFromStores2.entries;
+      class S {
+        constructor() {
+          return PresenceStore.getActivities(closure_0);
+        }
+      }
     }
-    if (tmp17 === entries) {
-      userProfileLiveActivities = cResult[10];
-      arr5 = cResult[11];
+    if (tmp17 === tmp18) {
+      class S {
+        constructor() {
+          return PresenceStore.getActivities(closure_0);
+        }
+      }
+      userProfileLiveActivities = arr4;
+      tmp19 = cResult[11];
     }
     if (0 === arr4.length) {
-      arr4 = closure_8;
+      class S {
+        constructor() {
+          return PresenceStore.getActivities(closure_0);
+        }
+      }
     }
-    if (null == arr5) {
-      arr5 = closure_9;
+    if (null == tmp19) {
+      class S {
+        constructor() {
+          return PresenceStore.getActivities(closure_0);
+        }
+      }
+    } else {
+      class S {
+        constructor() {
+          return PresenceStore.getActivities(closure_0);
+        }
+      }
     }
     if (cResult[12] === arr4) {
-      let tmp22;
-      if (cResult[13] === arr5) {
-        tmp22 = cResult[14];
+      class S {
+        constructor() {
+          return PresenceStore.getActivities(closure_0);
+        }
       }
       ({ live, recent } = tmp22);
       if (cResult[15] === live) {
-        if (cResult[16] === stateFromStores2) {
-          if (cResult[17] === recent) {
-            let tmp23;
-            if (cResult[18] === tmp8) {
-              tmp23 = cResult[19];
-            }
-            return tmp23;
+        class S {
+          constructor() {
+            return PresenceStore.getActivities(closure_0);
           }
         }
       }
@@ -132,11 +177,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[17] = recent;
       cResult[18] = tmp8;
       cResult[19] = obj2;
-      tmp23 = obj2;
     }
-    const obj3 = { live: arr4, recent: arr5 };
+    const obj3 = { live: arr4, recent: tmp19 };
     cResult[12] = arr4;
-    cResult[13] = arr5;
+    cResult[13] = tmp19;
     cResult[14] = obj3;
     tmp22 = obj3;
   }
@@ -144,9 +188,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   userProfileLiveActivities = tmpResult6.getUserProfileLiveActivities(stateFromStores1);
   let found;
   if (stateFromStores2 != null) {
-    const entries1 = stateFromStores2.entries;
-    found = entries1.filter((extra) => {
-      const f143114 = (item) => {
+    class S {
+      constructor() {
+        return PresenceStore.getActivities(closure_0);
+      }
+    }
+    found = arr5.filter((extra) => {
+      const f144460 = (item) => {
         let result = null != item;
         if (result) {
           const obj = closure_2_0(closure_2_2[12]);
@@ -162,8 +210,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let result;
         const tmpResult = ContentInventoryTypes;
         if (tmpResult.isListenedSessionEntry(extra)) {
-          result = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f143114);
-          const tmp7 = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f143114);
+          result = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f144460);
+          const tmp7 = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f144460);
         } else {
           const tmpResult3 = ContentInventoryTypes;
           if (tmpResult3.isWatchedMediaEntry(extra)) {
@@ -186,16 +234,18 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     });
   }
   cResult[8] = stateFromStores1;
-  let entries2;
   if (stateFromStores2 != null) {
-    entries2 = stateFromStores2.entries;
+    class S {
+      constructor() {
+        return PresenceStore.getActivities(closure_0);
+      }
+    }
   }
-  cResult[9] = entries2;
+  cResult[9] = undefined;
   cResult[10] = userProfileLiveActivities;
   cResult[11] = found;
-  arr5 = found;
-  arr4 = userProfileLiveActivities;
-}) : ((arg0) => {
+  tmp19 = found;
+}) : (function useUserProfileActivity(arg0) {
   let stateFromStores1;
   let stateFromStores2;
   _require = arg0;
@@ -227,7 +277,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (stateFromStores2 != null) {
       const entries = stateFromStores2.entries;
       found = entries.filter((extra) => {
-        const f152978 = (item) => {
+        const f154475 = (item) => {
           let result = null != item;
           if (result) {
             const obj = userProfileLiveActivities(closure_2_2[12]);
@@ -243,8 +293,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let result;
           const tmpResult = closure_2_0(stateFromStores2[11]);
           if (tmpResult.isListenedSessionEntry(extra)) {
-            result = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f152978);
-            const tmp7 = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f152978);
+            result = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f154475);
+            const tmp7 = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f154475);
           } else {
             const tmpResult3 = closure_2_0(stateFromStores2[11]);
             if (tmpResult3.isWatchedMediaEntry(extra)) {

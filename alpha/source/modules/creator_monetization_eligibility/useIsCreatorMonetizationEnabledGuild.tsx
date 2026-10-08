@@ -1,12 +1,12 @@
-// Module ID: 6764
-// Function ID: 6765
+// Module ID: 6940
+// Function ID: 6941
 // Name: useIsCreatorMonetizationEnabledGuild
-// Dependencies: [2074, 1085, 558, 576, 504, 2]
+// Dependencies: [2086, 1085, 558, 576, 504, 2]
 // Exports: isCreatorMonetizationEnabledGuild
 
-// Module 6764 (useIsCreatorMonetizationEnabledGuild)
+// Module 6940 (useIsCreatorMonetizationEnabledGuild)
 import Constants from "Constants" /* 1085 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require;
 
 const GuildFeatures = Constants.GuildFeatures;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsCreatorMonetizationEnabledGuild(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -60,7 +60,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useIsCreatorMonetizationEnabledGuild(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildStore];

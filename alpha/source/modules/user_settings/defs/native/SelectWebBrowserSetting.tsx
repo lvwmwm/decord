@@ -1,24 +1,24 @@
-// Module ID: 15315
-// Function ID: 15316
+// Module ID: 15577
+// Function ID: 15578
 // Name: SelectWebBrowserSetting
-// Dependencies: [7645, 558, 4857, 576, 1126, 1105, 1369, 11142, 2]
+// Dependencies: [7966, 558, 5051, 576, 1126, 1105, 1381, 11262, 2]
 
-// Module 15315 (SelectWebBrowserSetting)
+// Module 15577 (SelectWebBrowserSetting)
 import react from "react" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl4 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import BrowserManager from "BrowserManager" /* 4857 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import BrowserManager from "BrowserManager" /* 5051 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWebBrowserSettingOptions() {
   let intl;
   let intl2;
   const obj = react;
@@ -89,7 +89,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = browserManagerSupportsInAppBrowser;
   cResult[2] = items;
   tmp6 = items;
-}) : (() => {
+}) : (function useWebBrowserSettingOptions() {
   let intl;
   let intl2;
   const items = [];
@@ -127,17 +127,17 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   return items;
 });
-const fn = () => {
+function useWebBrowserSettingValue() {
   const obj = BrowserManager;
   return obj.useBrowserManagerSelectedBrowser();
-};
+}
 let obj = {
   useTitle() {
     const intl = intl4.intl;
     return intl.string(intl4.t["C+DkPu"]);
   },
   parent: MobileUserSettings.WEB_BROWSER,
-  useValue: fn,
+  useValue: useWebBrowserSettingValue,
   onValueChange: function onWebBrowserSettingValueChange(arg0) {
     const obj = BrowserManager;
     const result = obj.browserManagerSelectBrowser(Number(arg0));

@@ -1,22 +1,22 @@
-// Module ID: 13582
-// Function ID: 13583
+// Module ID: 13875
+// Function ID: 13876
 // Name: RTCConnectionDesyncStore
-// Dependencies: [4916, 2051, 4919, 1377, 4915, 4920, 1085, 4917, 2025, 5048, 7898, 4951, 504, 584, 2]
+// Dependencies: [5112, 2063, 5108, 1389, 5111, 5114, 1085, 5113, 2037, 5405, 6058, 5135, 504, 584, 2]
 
-// Module 13582 (RTCConnectionDesyncStore)
+// Module 13875 (RTCConnectionDesyncStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import CachedEntriesMapDefault from "CachedEntriesMap" /* 2025 */;
-import CallConstants from "CallConstants" /* 4917 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4920 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4951 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5048 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 7898 */;
-import VoiceStateRecord from "VoiceStateRecord" /* 4916 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
-import UserStore from "UserStore" /* 1377 */;
-import VoiceStateStore from "VoiceStateStore" /* 4915 */;
+import CachedEntriesMapDefault from "CachedEntriesMap" /* 2037 */;
+import CallConstants from "CallConstants" /* 5113 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5114 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5135 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5405 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 6058 */;
+import VoiceStateRecord from "VoiceStateRecord" /* 5112 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
+import UserStore from "UserStore" /* 1389 */;
+import VoiceStateStore from "VoiceStateStore" /* 5111 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

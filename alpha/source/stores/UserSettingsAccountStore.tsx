@@ -1,13 +1,13 @@
-// Module ID: 6896
-// Function ID: 6897
+// Module ID: 7085
+// Function ID: 7086
 // Name: UserSettingsAccountStore
-// Dependencies: [1377, 1085, 504, 584, 2]
+// Dependencies: [1389, 1085, 504, 584, 2]
 
-// Module 6896 (UserSettingsAccountStore)
+// Module 7085 (UserSettingsAccountStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 function handleFormClose() {

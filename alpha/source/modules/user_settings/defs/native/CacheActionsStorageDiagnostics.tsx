@@ -1,12 +1,12 @@
-// Module ID: 15415
-// Function ID: 15416
+// Module ID: 15677
+// Function ID: 15678
 // Name: CacheActionsStorageDiagnostics
-// Dependencies: [5, 32, 19, 21, 4580, 4574, 4818, 15413, 1126, 5600, 4892, 5601, 2]
+// Dependencies: [5, 32, 19, 21, 4772, 4766, 5012, 15675, 1126, 5373, 5086, 5375, 2]
 // Exports: default
 
-// Module 15415 (CacheActionsStorageDiagnostics)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4580 */;
+// Module 15677 (CacheActionsStorageDiagnostics)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4772 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -18,7 +18,7 @@ let c4, c5, dependencyMap, ref;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const CircleInformationIcon = tmp(4818);
+const CircleInformationIcon = tmp(5012);
 function showStorageDiagnosticsToast(text) {
   const obj = DesignSystemsNotificationComponentsExperiment;
   const designSystemsNotificationComponents = obj.getDesignSystemsNotificationComponents("CacheActionsStorageDiagnostics");
@@ -161,9 +161,9 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
   [tmp2, c1] = tmp;
   dependencyMap = react.useRef(false);
   obj = { children: items };
-  const Stack = onBusyChange(5600).Stack;
+  const Stack = onBusyChange(5373).Stack;
   let obj2 = { variant: "text-sm/normal", color: "text-subtle", children: intl.string(onBusyChange(1126).t.Fzi4HX) };
-  const Text = onBusyChange(4892).Text;
+  const Text = onBusyChange(5086).Text;
   intl = onBusyChange(1126).intl;
   items = [closure_6(Text, obj2), ];
   let obj3 = {
@@ -175,7 +175,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
       return obj(...arguments);
     }
   };
-  const Button = onBusyChange(5601).Button;
+  const Button = onBusyChange(5375).Button;
   intl2 = onBusyChange(1126).intl;
   items[1] = closure_6(Button, obj3);
   return closure_7(Stack, obj);

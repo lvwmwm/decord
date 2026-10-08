@@ -1,16 +1,16 @@
-// Module ID: 12433
-// Function ID: 12434
+// Module ID: 12529
+// Function ID: 12530
 // Name: DiscoverabilityActionSheet
-// Dependencies: [19, 17, 12341, 1085, 21, 4896, 587, 558, 576, 1126, 8924, 4892, 12344, 6708, 2]
+// Dependencies: [19, 17, 12437, 1085, 21, 5090, 587, 558, 576, 1126, 8555, 5086, 12440, 6885, 2]
 
-// Module 12433 (DiscoverabilityActionSheet)
+// Module 12529 (DiscoverabilityActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import react_mod from "react" /* 19 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 12341 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 12437 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ obj3 = { marginTop: 8, paddingVertical: 16, backgroundColor: nativeDefault.color
 obj4 = { fontFamily: Fonts.PRIMARY_SEMIBOLD, color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
 obj5 = { marginTop: 8, fontSize: 14, lineHeight: 18, paddingHorizontal: 16, color: nativeDefault.colors.TEXT_SUBTLE };
 let closure_10 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiscoverabilityActionSheet() {
   let allowEmail;
   let allowPhone;
   let tmp7;
@@ -159,7 +159,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[6] = tmp4.formRow;
   cResult[7] = tmp4.syncRow;
   cResult[8] = items;
-}) : (() => {
+}) : (function DiscoverabilityActionSheet() {
   let Label;
   let Label2;
   let Label3;
@@ -221,7 +221,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const FormText3 = allowPhone(allowEmail[10]).FormText;
   intl4 = allowPhone(allowEmail[9]).intl;
   obj7 = {
-    learnMoreHook(children, arg1) {
+    learnMoreHook: function LearnMore(children, arg1) {
       const obj = { onPress: allowPhone(allowEmail[12]).handleOpenLearnMoreLink, variant: "text-sm/medium", color: "text-link", children };
       const Text = allowPhone(allowEmail[11]).Text;
       return closure_1_8(Text, obj, arg1);

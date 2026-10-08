@@ -1,17 +1,17 @@
-// Module ID: 16970
-// Function ID: 16971
+// Module ID: 17251
+// Function ID: 17252
 // Name: SuggestedFriendsScreen
-// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 6664, 6688, 1252, 16012, 16963, 7861, 16967, 5918, 10611, 10739, 1126, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 587, 558, 576, 6841, 6865, 1264, 16272, 17244, 8279, 17248, 10211, 10208, 11597, 1126, 2]
 
-// Module 16970 (SuggestedFriendsScreen)
+// Module 17251 (SuggestedFriendsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
-import ContactSuggestionRow2 from "ContactSuggestionRow" /* 16967 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
+import ContactSuggestionRow2 from "ContactSuggestionRow" /* 17248 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ const View = react_native.View;
 let obj = { emptyContainer: obj2, container: { flex: 1 } };
 obj2 = { flex: 1, paddingTop: nativeDefault.space.PX_32 };
 let closure_9 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuggestedFriendsScreen() {
   let added;
   let analyticsLocations;
   let friendSuggestions;
@@ -155,7 +155,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         itemType: str,
         key: tmp.user.id,
         component() {
-              const obj = { added: added.includes(suggestedFriend), suggestedFriend, start: 0 === closure_0, end, onPress, onAddSuggestion() { /* body not rendered: F153837 */ }, location: metroRequire.FRIENDS_SUGGESTED_FRIENDS_MODAL };
+              const obj = { added: added.includes(suggestedFriend), suggestedFriend, start: 0 === closure_0, end, onPress, onAddSuggestion() { /* body not rendered: F155378 */ }, location: metroRequire.FRIENDS_SUGGESTED_FRIENDS_MODAL };
               const ContactSuggestionRow = ContactSuggestionRow2.ContactSuggestionRow;
               return metroImportDefault(ContactSuggestionRow, obj);
             }
@@ -168,7 +168,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[6] = tmp13;
   cResult[7] = setAdded;
   cResult[8] = I;
-}) : (() => {
+}) : (function SuggestedFriendsScreen() {
   let added;
   let friendSuggestions;
   let intl;

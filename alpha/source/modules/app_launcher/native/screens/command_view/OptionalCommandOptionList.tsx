@@ -1,24 +1,22 @@
-// Module ID: 11832
-// Function ID: 11833
+// Module ID: 11917
+// Function ID: 11918
 // Name: OptionalCommandOptionList
-// Dependencies: [19, 17, 21, 558, 576, 6000, 5601, 1126, 6081, 2]
+// Dependencies: [19, 17, 21, 558, 576, 6184, 5375, 1126, 6267, 2]
 
-// Module 11832 (OptionalCommandOptionList)
+// Module 11917 (OptionalCommandOptionList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import TableRow2 from "TableRow" /* 6000 */;
-import TableRowGroup2 from "TableRowGroup" /* 6081 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import TableRow2 from "TableRow" /* 6184 */;
+import TableRowGroup2 from "TableRowGroup" /* 6267 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let style;
-
 const View = react_native.View;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OptionalCommandOptionList(style) {
   let onSelectOption;
   let options;
   const obj = onSelectOption(576);
@@ -37,7 +35,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
         tmp4 = cResult[2];
       }
       if (cResult[5] !== tmp4) {
-        const tmp9 = jsx(tmp(6081).TableRowGroup, { hasIcons: false, children: tmp4 });
+        const tmp9 = jsx(tmp(6267).TableRowGroup, { hasIcons: false, children: tmp4 });
         cResult[5] = tmp4;
         cResult[6] = tmp9;
         tmp7 = tmp9;
@@ -90,7 +88,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     cResult[2] = mapped;
     tmp4 = mapped;
   }
-}) : ((arg0) => {
+}) : (function OptionalCommandOptionList(arg0) {
   let options;
   ({ options, onSelectOption: require } = arg0);
   let tmp2 = null;

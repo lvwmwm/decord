@@ -1,12 +1,12 @@
-// Module ID: 16654
-// Function ID: 16655
+// Module ID: 16916
+// Function ID: 16917
 // Name: conjurePublishFailureMessage
-// Dependencies: [1126, 3753, 2]
+// Dependencies: [1126, 3827, 2]
 // Exports: default
 
-// Module 16654 (conjurePublishFailureMessage)
+// Module 16916 (conjurePublishFailureMessage)
 import intl3 from "intl" /* 1126 */;
-import _modDef3753 from "module_3753" /* 3753 */;
+import _modDef3827 from "module_3827" /* 3827 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/publish/conjurePublishFailureMessage.tsx");
@@ -21,10 +21,10 @@ export default function conjurePublishFailureMessage(detail) {
     if ("" !== trimmed) {
       const intl2 = intl3.intl;
       const obj = { reason: trimmed };
-      formatToPlainStringResult = intl2.formatToPlainString(_modDef3753["7ZsIF1"], obj);
+      formatToPlainStringResult = intl2.formatToPlainString(_modDef3827["7ZsIF1"], obj);
     }
     return formatToPlainStringResult;
   }
   const intl = intl3.intl;
-  formatToPlainStringResult = intl.string(_modDef3753.gMWZeG);
+  formatToPlainStringResult = intl.string(_modDef3827.gMWZeG);
 };

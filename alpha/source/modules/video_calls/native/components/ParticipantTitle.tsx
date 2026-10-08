@@ -1,26 +1,26 @@
-// Module ID: 9763
-// Function ID: 9764
+// Module ID: 10966
+// Function ID: 10967
 // Name: ParticipantTitle
-// Dependencies: [19, 21, 4896, 587, 558, 576, 9745, 1188, 2]
+// Dependencies: [19, 21, 5090, 587, 558, 576, 10946, 1200, 2]
 
-// Module 9763 (ParticipantTitle)
+// Module 10966 (ParticipantTitle)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import getParticipantTitleDefault from "getParticipantTitle" /* 9745 */;
+import getParticipantTitleDefault from "getParticipantTitle" /* 10946 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const native = tmp(1188);
+const native = tmp(1200);
 const jsx = Fragment.jsx;
 let obj = { usernameText: obj2 };
 obj2 = { fontSize: 14, color: nativeDefault.colors.WHITE };
 let closure_4 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParticipantTitle(arg0) {
   let channel;
   let participant;
   let style;
@@ -62,7 +62,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.usernameText;
   cResult[2] = items;
   tmp5 = items;
-}) : ((arg0) => {
+}) : (function ParticipantTitle(arg0) {
   let channel;
   let participant;
   let style;

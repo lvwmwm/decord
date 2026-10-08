@@ -1,23 +1,23 @@
-// Module ID: 5994
-// Function ID: 5995
+// Module ID: 6178
+// Function ID: 6179
 // Name: TermsFieldList
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1126, 4892, 4883, 5995, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1126, 5086, 5077, 6179, 2]
 
-// Module 5994 (TermsFieldList)
+// Module 6178 (TermsFieldList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 4883 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import TableRowDivider from "TableRowDivider" /* 5995 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5077 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import TableRowDivider from "TableRowDivider" /* 6179 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, rules;
+let dependencyMap;
 
 let hasOwnProperty;
 let metroImportDefault;
@@ -36,7 +36,7 @@ obj3 = { borderTopLeftRadius: nativeDefault.radii.sm, borderTopRightRadius: nati
 obj4 = { borderBottomLeftRadius: nativeDefault.radii.sm, borderBottomRightRadius: nativeDefault.radii.sm, marginBottom: 12 };
 let closure_8 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function TermsFieldListItem(arg0) {
   let items;
   let rowCount;
   let rowNumber;
@@ -117,7 +117,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = rowNumber;
   cResult[2] = formatToPlainStringResult;
   tmp7 = formatToPlainStringResult;
-}) : ((rowNumber) => {
+}) : (function TermsFieldListItem(rowNumber) {
   let intl;
   let items;
   let obj4;
@@ -139,7 +139,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroRequire(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rules) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TermsFieldList(rules) {
   let first;
   let items;
   let termsContainer;
@@ -164,7 +164,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rules) => {
   }
   if (cResult[1] !== tmp4.title) {
     let obj2 = { style: title, accessibilityRole: "header", variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: first };
-    const tmp9 = closure_5(tmp(4892).Text, obj2);
+    const tmp9 = closure_5(tmp(5086).Text, obj2);
     cResult[1] = tmp4.title;
     cResult[2] = tmp9;
     tmp7 = tmp9;
@@ -259,7 +259,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rules) => {
   cResult[13] = tmp4.termsContainer;
   cResult[14] = fn;
   tmp11 = fn;
-}) : ((rules) => {
+}) : (function TermsFieldList(rules) {
   let intl;
   let items;
   let termsContainer;
@@ -269,7 +269,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rules) => {
   dependencyMap = tmp;
   let obj = { children: items };
   let obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.string(rules(1126).t.prJqwT) };
-  const Text = rules(4892).Text;
+  const Text = rules(5086).Text;
   intl = rules(1126).intl;
   items = [closure_5(Text, obj2), ];
   const obj3 = {

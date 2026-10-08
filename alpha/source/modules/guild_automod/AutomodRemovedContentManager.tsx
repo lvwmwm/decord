@@ -1,13 +1,13 @@
-// Module ID: 17483
-// Function ID: 17484
+// Module ID: 17765
+// Function ID: 17766
 // Name: AutomodRemovedContentManager
-// Dependencies: [5116, 2103, 17484, 6620, 2]
+// Dependencies: [5428, 2115, 17766, 6797, 2]
 
-// Module 17483 (AutomodRemovedContentManager)
-import AutomodRemovedContentActionCreators from "AutomodRemovedContentActionCreators" /* 17484 */;
-import MessageStore from "MessageStore" /* 5116 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6620 */;
+// Module 17765 (AutomodRemovedContentManager)
+import AutomodRemovedContentActionCreators from "AutomodRemovedContentActionCreators" /* 17766 */;
+import MessageStore from "MessageStore" /* 5428 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6797 */;
 import size from "module_2" /* 2 */;
 
 function handleAutomodContentDeleted(message) {

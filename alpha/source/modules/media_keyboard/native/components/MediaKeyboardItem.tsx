@@ -1,30 +1,30 @@
-// Module ID: 10392
-// Function ID: 10393
+// Module ID: 9989
+// Function ID: 9990
 // Name: MediaKeyboardItem
-// Dependencies: [19, 17, 7280, 10393, 21, 4618, 4896, 587, 4733, 558, 576, 1188, 10136, 4892, 7285, 504, 10394, 1126, 7315, 7287, 10395, 10396, 4897, 1484, 10397, 5878, 10382, 2]
+// Dependencies: [19, 17, 7880, 9990, 21, 4810, 5090, 587, 4927, 558, 576, 1200, 9721, 5086, 7739, 504, 9991, 1126, 7759, 7741, 9992, 9993, 5091, 1496, 9994, 8190, 9979, 2]
 // Exports: isAttachFilesNode, isMediaCameraNode, isSpecialMediaGridNode, isViewAllPhotosNode
 
-// Module 10392 (MediaKeyboardItem)
+// Module 9989 (MediaKeyboardItem)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4618 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import timing from "timing" /* 4897 */;
-import ImageIcon from "ImageIcon" /* 5878 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10136 */;
-import AttachmentIcon from "AttachmentIcon" /* 10382 */;
-import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10394 */;
-import CameraIcon from "CameraIcon" /* 10397 */;
+import native from "native" /* 1200 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4810 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import timing from "timing" /* 5091 */;
+import ImageIcon from "ImageIcon" /* 8190 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9721 */;
+import AttachmentIcon from "AttachmentIcon" /* 9979 */;
+import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 9991 */;
+import CameraIcon from "CameraIcon" /* 9994 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7280 */;
-import DeviceConstants from "DeviceConstants" /* 10393 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7880 */;
+import DeviceConstants from "DeviceConstants" /* 9990 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import ColorUtils_mod from "ColorUtils" /* 4733 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import ColorUtils_mod from "ColorUtils" /* 4927 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -66,7 +66,7 @@ const merged = Object.assign(StyleSheet.absoluteFillObject);
 ColorUtils = ColorUtils_mod;
 let closure_12 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLayoutStyle(arg0, arg1, arg2) {
   let num8;
   let tmp3;
   const obj = react2;
@@ -129,7 +129,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, ar
   cResult[4] = num9;
   cResult[5] = obj2;
   tmp4 = obj2;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useLayoutStyle(arg0, arg1, arg2) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   let closure_2 = arg2;
@@ -182,7 +182,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, ar
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewCaption(arg0) {
   let items;
   let label;
   let style;
@@ -199,7 +199,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[3] !== tmp4.icon) {
       const obj2 = { source: AssetRegistryDefault, style: tmp4.icon };
-      const Icon = tmp(1188).Icon;
+      const Icon = tmp(1200).Icon;
       const tmp9 = React4(Icon, obj2);
       cResult[3] = tmp4.icon;
       cResult[4] = tmp9;
@@ -242,7 +242,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.labelContainer;
   cResult[2] = items1;
   tmp5 = items1;
-}) : ((arg0) => {
+}) : (function NewCaption(arg0) {
   let items;
   let items1;
   let label;
@@ -258,13 +258,17 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return authStore(React3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((draftType) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaKeyboardImage(draftType) {
   let channelId;
   let disableWhenReachedLimit;
   let disabled;
   let first;
   let index;
+  let items1;
+  let items2;
   let numItemsPerRow;
+  let onLongPress;
+  let onPress;
   let totalNumItems;
   let uploadLimit;
   let tmp = draftType;
@@ -300,291 +304,414 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((draftType) => 
         }
         const tmpResult = tmp(tmp2[15]);
         const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp7, tmp8);
-        isIncluded = tmp11;
+        isIncluded = tmp12;
         if (cResult[7] === channelId) {
           if (cResult[8] === null != stateFromStoresObject.upload) {
             if (cResult[9] === item) {
-              let tmp12;
+              let tmp13;
               if (cResult[10] === onPressItem) {
-                tmp12 = cResult[11];
+                tmp13 = cResult[11];
               }
               if (cResult[12] === channelId) {
                 if (cResult[13] === null != stateFromStoresObject.upload) {
                   if (cResult[14] === item) {
-                    let tmp13;
+                    let tmp14;
                     if (cResult[15] === onLongPressItem) {
-                      tmp13 = cResult[16];
+                      tmp14 = cResult[16];
                     }
-                    if (cResult[17] === tmp12) {
-                      let tmp14;
-                      if (cResult[18] === tmp13) {
-                        tmp14 = cResult[19];
+                    if (cResult[17] === tmp13) {
+                      let tmp15;
+                      if (cResult[18] === tmp14) {
+                        tmp15 = cResult[19];
                       }
-                      const onPress = tmp14.onPress;
-                      class U {
-                        constructor() {
-                          const obj = NativeMenuActionCreatorsDefault;
-                          obj.hideNativeMenu();
-                          if (onLongPressItem != null) {
-                            const obj2 = { channelId, item, isIncluded };
-                            tmp2(obj2);
-                          }
-                        }
-                      }
+                      ({ onPress, onLongPress } = tmp15);
                       if (isIncluded.PHOTO !== type) {
+                        let tmp17;
+                        let tmp26;
+                        let tmp28;
                         if (constants.IMAGE !== type) {
                           if (isIncluded.VIDEO === type) {
+                            let tmp18;
                             const _Symbol = Symbol;
-                            class U {
-                              constructor() {
-                                const obj = NativeMenuActionCreatorsDefault;
-                                obj.hideNativeMenu();
-                                if (onLongPressItem != null) {
-                                  const obj2 = { channelId, item, isIncluded };
-                                  tmp2(obj2);
-                                }
-                              }
+                            if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
+                              const intl = tmp(tmp2[17]).intl;
+                              const stringResult = intl.string(tmp(tmp2[17]).t.FlNoSV);
+                              cResult[21] = stringResult;
+                              tmp18 = stringResult;
+                            } else {
+                              tmp18 = cResult[21];
                             }
+                            tmp17 = tmp18;
                           }
                         }
                         if (isIncluded.VIDEO !== type) {
-                          let tmp33;
+                          let tmp22;
+                          let tmp34;
                           if (constants.VIDEO !== type) {
                             if (isIncluded.PHOTO === type) {
-                              const tmpResult2 = tmp(tmp2[19]);
-                              class U {
-                                constructor() {
-                                  const obj = NativeMenuActionCreatorsDefault;
-                                  obj.hideNativeMenu();
-                                  if (onLongPressItem != null) {
-                                    const obj2 = { channelId, item, isIncluded };
-                                    tmp2(obj2);
-                                  }
-                                }
-                              }
-                              if ("image/gif" === tmpResult2.getType(image.uri)) {
+                              tmp22 = null;
+                              const tmpResult3 = tmp(tmp2[19]);
+                              if ("image/gif" === tmpResult3.getType(image.uri)) {
+                                let tmp23;
                                 if (cResult[26] !== tmp4.mediaKeyboardItemLabelContainer) {
-                                  let obj2 = { style: null, label: "GIF" };
-                                  class U {
+                                  let obj2 = { style: tmp4.mediaKeyboardItemLabelContainer, label: "GIF" };
+                                  cResult[26] = tmp4.mediaKeyboardItemLabelContainer;
+                                  const tmp25 = closure_9(tmp(tmp2[20]).Caption, obj2);
+                                  class K {
                                     constructor() {
                                       const obj = NativeMenuActionCreatorsDefault;
                                       obj.hideNativeMenu();
-                                      if (onLongPressItem != null) {
-                                        const obj2 = { channelId, item, isIncluded };
-                                        tmp2(obj2);
-                                      }
+                                      const obj2 = { channelId, item, isIncluded };
+                                      onPressItem(obj2);
                                     }
                                   }
-                                  const tmp25 = closure_9(tmp(tmp2[20]).Caption, obj2);
-                                  cResult[26] = tmp4.mediaKeyboardItemLabelContainer;
-                                  cResult[27] = tmp25;
+                                  tmp23 = tmp25;
+                                } else {
+                                  tmp23 = cResult[27];
                                 }
+                                tmp22 = tmp23;
                               }
+                            } else {
+                              tmp22 = null;
                             }
                           }
-                          const tmp32 = null == stateFromStoresObject.upload;
-                          class U {
-                            constructor() {
-                              const obj = NativeMenuActionCreatorsDefault;
-                              obj.hideNativeMenu();
-                              if (onLongPressItem != null) {
-                                const obj2 = { channelId, item, isIncluded };
-                                tmp2(obj2);
-                              }
-                            }
+                          let tmp32 = !tmp12;
+                          if (tmp32) {
+                            tmp32 = tmp10 >= uploadLimit && disableWhenReachedLimit || disabled;
                           }
                           if (cResult[28] !== tmp4.checkIcon) {
-                            const obj3 = { source: item(tmp2[21]), disableColor: false, color: tmp4.checkIcon.color, style: tmp4.checkIcon };
-                            class U {
+                            ({ source: item(tmp2[21]), disableColor: false, color: tmp4.checkIcon.color, style: tmp4.checkIcon });
+                            const Icon = tmp(tmp2[11]).Icon;
+                            class K {
                               constructor() {
                                 const obj = NativeMenuActionCreatorsDefault;
                                 obj.hideNativeMenu();
-                                if (onLongPressItem != null) {
-                                  const obj2 = { channelId, item, isIncluded };
-                                  tmp2(obj2);
-                                }
+                                const obj2 = { channelId, item, isIncluded };
+                                onPressItem(obj2);
                               }
                             }
-                            const Icon = tmp(tmp2[11]).Icon;
-                            const tmp35 = closure_9(Icon, obj3);
                             cResult[28] = tmp4.checkIcon;
-                            cResult[29] = tmp35;
-                            tmp33 = tmp35;
+                            cResult[29] = tmp37;
+                            tmp34 = tmp37;
                           } else {
-                            tmp33 = cResult[29];
+                            tmp34 = cResult[29];
                           }
                           if (cResult[30] === tmp4.checkIconContainer) {
-                            class U {
-                              constructor() {
-                                const obj = NativeMenuActionCreatorsDefault;
-                                obj.hideNativeMenu();
-                                if (onLongPressItem != null) {
-                                  const obj2 = { channelId, item, isIncluded };
-                                  tmp2(obj2);
-                                }
-                              }
+                            let tmp38;
+                            let tmp45;
+                            if (cResult[31] === tmp34) {
+                              tmp38 = cResult[32];
                             }
+                            const tmp44 = closure_13(index, numItemsPerRow, totalNumItems);
                             if (cResult[33] !== (null != stateFromStoresObject.upload)) {
                               const obj4 = { selected: null != stateFromStoresObject.upload };
-                              class U {
-                                constructor() {
-                                  const obj = NativeMenuActionCreatorsDefault;
-                                  obj.hideNativeMenu();
-                                  if (onLongPressItem != null) {
-                                    const obj2 = { channelId, item, isIncluded };
-                                    tmp2(obj2);
-                                  }
-                                }
-                              }
                               cResult[33] = null != stateFromStoresObject.upload;
                               cResult[34] = obj4;
+                              tmp45 = obj4;
+                            } else {
+                              tmp45 = cResult[34];
                             }
                             let imageDisabled;
                             if (tmp32) {
                               imageDisabled = tmp4.imageDisabled;
                             }
-                            if (cResult[35] === tmp41) {
+                            if (cResult[35] === tmp44) {
                               if (cResult[36] === tmp4.imageContainer) {
-                                let tmp45;
+                                let tmp47;
+                                if (cResult[37] === imageDisabled) {
+                                  tmp47 = cResult[38];
+                                }
                                 if (cResult[39] !== size) {
-                                  const size1 = { height: size, width: null };
-                                  class U {
+                                  const size1 = { height: size, width: size };
+                                  cResult[39] = size;
+                                  cResult[40] = size1;
+                                  class K {
                                     constructor() {
                                       const obj = NativeMenuActionCreatorsDefault;
                                       obj.hideNativeMenu();
-                                      if (onLongPressItem != null) {
-                                        const obj2 = { channelId, item, isIncluded };
-                                        tmp2(obj2);
-                                      }
+                                      const obj2 = { channelId, item, isIncluded };
+                                      onPressItem(obj2);
                                     }
                                   }
-                                  cResult[39] = size;
-                                  cResult[40] = size1;
-                                  tmp45 = size1;
-                                } else {
-                                  tmp45 = cResult[40];
                                 }
-                                class U {
+                                if (cResult[41] === tmp4.image) {
+                                  let tmp50;
+                                  if (cResult[42] === tmp49) {
+                                    tmp50 = cResult[43];
+                                  }
+                                  if (cResult[44] === image.uri) {
+                                    let tmp51;
+                                    let tmp52;
+                                    if (cResult[45] === size) {
+                                      tmp51 = cResult[46];
+                                      tmp52 = cResult[47];
+                                    }
+                                    if (cResult[48] === tmp50) {
+                                      if (cResult[49] === tmp51) {
+                                        let tmp53;
+                                        if (cResult[50] === tmp52) {
+                                          tmp53 = cResult[51];
+                                        }
+                                        if (cResult[52] === null != stateFromStoresObject.upload) {
+                                          if (cResult[53] === size) {
+                                            let tmp56;
+                                            if (cResult[54] === tmp4.selectedOverlay) {
+                                              tmp56 = cResult[55];
+                                            }
+                                            let tmp60 = null;
+                                            if (null != stateFromStoresObject.upload) {
+                                              tmp60 = tmp38;
+                                            }
+                                            if (cResult[56] === tmp17) {
+                                              if (cResult[57] === tmp22) {
+                                                if (cResult[58] === tmp32) {
+                                                  if (cResult[59] === onLongPress) {
+                                                    if (cResult[60] === onPress) {
+                                                      if (cResult[61] === tmp45) {
+                                                        if (cResult[62] === tmp47) {
+                                                          if (cResult[63] === tmp53) {
+                                                            if (cResult[64] === tmp56) {
+                                                              let tmp61;
+                                                              if (cResult[65] === tmp60) {
+                                                                tmp61 = cResult[66];
+                                                              }
+                                                              return tmp61;
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                            const obj5 = { accessibilityRole: "button", accessibilityLabel: null, accessibilityState: tmp45, onPress, onLongPress, disabled: tmp32, style: tmp47, children: items1 };
+                                            class K {
+                                              constructor() {
+                                                const obj = NativeMenuActionCreatorsDefault;
+                                                obj.hideNativeMenu();
+                                                const obj2 = { channelId, item, isIncluded };
+                                                onPressItem(obj2);
+                                              }
+                                            }
+                                            items1 = [tmp53, tmp22, tmp56, tmp60];
+                                            const tmp64 = closure_10(includedUploadIds, obj5);
+                                            cResult[56] = tmp17;
+                                            cResult[57] = tmp22;
+                                            cResult[58] = tmp32;
+                                            cResult[59] = onLongPress;
+                                            cResult[60] = onPress;
+                                            cResult[61] = tmp45;
+                                            cResult[62] = tmp47;
+                                            cResult[63] = tmp53;
+                                            cResult[64] = tmp56;
+                                            cResult[65] = tmp60;
+                                            cResult[66] = tmp64;
+                                            tmp61 = tmp64;
+                                          }
+                                        }
+                                        let tmp57 = null;
+                                        if (null != stateFromStoresObject.upload) {
+                                          const obj6 = { style: items2 };
+                                          items2 = [tmp4.selectedOverlay, ];
+                                          const size2 = { height: size, width: null };
+                                          class K {
+                                            constructor() {
+                                              const obj = NativeMenuActionCreatorsDefault;
+                                              obj.hideNativeMenu();
+                                              const obj2 = { channelId, item, isIncluded };
+                                              onPressItem(obj2);
+                                            }
+                                          }
+                                          items2[1] = size2;
+                                          tmp57 = closure_9(onLongPressItem, obj6);
+                                        }
+                                        cResult[52] = null != stateFromStoresObject.upload;
+                                        class K {
+                                          constructor() {
+                                            const obj = NativeMenuActionCreatorsDefault;
+                                            obj.hideNativeMenu();
+                                            const obj2 = { channelId, item, isIncluded };
+                                            onPressItem(obj2);
+                                          }
+                                        }
+                                        cResult[54] = tmp4.selectedOverlay;
+                                        cResult[55] = tmp57;
+                                        tmp56 = tmp57;
+                                      }
+                                    }
+                                    class K {
+                                      constructor() {
+                                        const obj = NativeMenuActionCreatorsDefault;
+                                        obj.hideNativeMenu();
+                                        const obj2 = { channelId, item, isIncluded };
+                                        onPressItem(obj2);
+                                      }
+                                    }
+                                    cResult[48] = tmp50;
+                                    cResult[49] = tmp51;
+                                    cResult[50] = tmp52;
+                                    cResult[51] = tmp55;
+                                    tmp53 = tmp55;
+                                  }
+                                  const size3 = { uri: image.uri, width: size, height: size, cache: "force-cache" };
+                                  const size4 = { uri: null, width: size, height: size };
+                                  class K {
+                                    constructor() {
+                                      const obj = NativeMenuActionCreatorsDefault;
+                                      obj.hideNativeMenu();
+                                      const obj2 = { channelId, item, isIncluded };
+                                      onPressItem(obj2);
+                                    }
+                                  }
+                                  cResult[44] = image.uri;
+                                  cResult[45] = size;
+                                  cResult[46] = size3;
+                                  cResult[47] = size4;
+                                  tmp52 = size4;
+                                  tmp51 = size3;
+                                }
+                                const items3 = [tmp4.image, tmp49];
+                                class K {
                                   constructor() {
                                     const obj = NativeMenuActionCreatorsDefault;
                                     obj.hideNativeMenu();
-                                    if (onLongPressItem != null) {
-                                      const obj2 = { channelId, item, isIncluded };
-                                      tmp2(obj2);
-                                    }
+                                    const obj2 = { channelId, item, isIncluded };
+                                    onPressItem(obj2);
                                   }
                                 }
-                                const items1 = [tmp4.image, tmp45];
-                                cResult[41] = tmp4.image;
-                                cResult[42] = tmp45;
-                                cResult[43] = items1;
+                                cResult[42] = tmp49;
+                                cResult[43] = items3;
+                                tmp50 = items3;
                               }
                             }
-                            const items2 = [tmp4.imageContainer, imageDisabled, tmp41];
-                            cResult[35] = tmp41;
+                            class K {
+                              constructor() {
+                                const obj = NativeMenuActionCreatorsDefault;
+                                obj.hideNativeMenu();
+                                const obj2 = { channelId, item, isIncluded };
+                                onPressItem(obj2);
+                              }
+                            }
+                            tmp48[0] = tmp4.imageContainer;
+                            tmp48[1] = imageDisabled;
+                            tmp48[2] = tmp44;
+                            cResult[35] = tmp44;
                             cResult[36] = tmp4.imageContainer;
                             cResult[37] = imageDisabled;
-                            cResult[38] = items2;
+                            cResult[38] = tmp48;
+                            tmp47 = tmp48;
                           }
-                          const obj5 = { style: tmp4.checkIconContainer, children: tmp33 };
-                          cResult[30] = tmp4.checkIconContainer;
-                          cResult[31] = tmp33;
-                          cResult[32] = closure_9(onLongPressItem, obj5);
-                          const tmp39 = closure_9(onLongPressItem, obj5);
-                        }
-                        class U {
-                          constructor() {
-                            const obj = NativeMenuActionCreatorsDefault;
-                            obj.hideNativeMenu();
-                            if (onLongPressItem != null) {
-                              const obj2 = { channelId, item, isIncluded };
-                              tmp2(obj2);
-                            }
-                          }
-                        }
-                        if (cResult[24] !== tmp26) {
-                          class U {
+                          class K {
                             constructor() {
                               const obj = NativeMenuActionCreatorsDefault;
                               obj.hideNativeMenu();
-                              if (onLongPressItem != null) {
-                                const obj2 = { channelId, item, isIncluded };
-                                tmp2(obj2);
-                              }
+                              const obj2 = { channelId, item, isIncluded };
+                              onPressItem(obj2);
                             }
                           }
-                          tmp30[0] = tmp26;
-                          const tmp31 = closure_9(closure_14, tmp30);
-                          cResult[24] = tmp26;
-                          cResult[25] = tmp31;
+                          tmp41[0] = tmp4.checkIconContainer;
+                          tmp41[1] = tmp34;
+                          const tmp42 = closure_9(onLongPressItem, tmp41);
+                          cResult[30] = tmp4.checkIconContainer;
+                          cResult[31] = tmp34;
+                          cResult[32] = tmp42;
+                          tmp38 = tmp42;
                         }
+                        if (cResult[22] !== image.playableDuration) {
+                          const tmpResult4 = tmp(tmp2[18]);
+                          const timeFormat = tmpResult4.getTimeFormat(image.playableDuration);
+                          cResult[22] = image.playableDuration;
+                          cResult[23] = timeFormat;
+                          tmp26 = timeFormat;
+                        } else {
+                          tmp26 = cResult[23];
+                        }
+                        if (cResult[24] !== tmp26) {
+                          const obj8 = { label: tmp26 };
+                          const tmp31 = closure_9(closure_14, obj8);
+                          cResult[24] = tmp26;
+                          class K {
+                            constructor() {
+                              const obj = NativeMenuActionCreatorsDefault;
+                              obj.hideNativeMenu();
+                              const obj2 = { channelId, item, isIncluded };
+                              onPressItem(obj2);
+                            }
+                          }
+                          cResult[25] = tmp31;
+                          tmp28 = tmp31;
+                        } else {
+                          tmp28 = cResult[25];
+                        }
+                        tmp22 = tmp28;
                       }
                       const _Symbol2 = Symbol;
-                      if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-                        const string = tmp(tmp2[17]).intl.string;
-                        class U {
-                          constructor() {
-                            const obj = NativeMenuActionCreatorsDefault;
-                            obj.hideNativeMenu();
-                            if (onLongPressItem != null) {
-                              const obj2 = { channelId, item, isIncluded };
-                              tmp2(obj2);
-                            }
-                          }
+                      class K {
+                        constructor() {
+                          const obj = NativeMenuActionCreatorsDefault;
+                          obj.hideNativeMenu();
+                          const obj2 = { channelId, item, isIncluded };
+                          onPressItem(obj2);
                         }
-                        cResult[20] = tmp21;
                       }
+                      tmp17 = tmp21;
                     }
-                    class U {
+                    const obj9 = { onPress: tmp13, onLongPress: tmp14 };
+                    cResult[17] = tmp13;
+                    class K {
                       constructor() {
                         const obj = NativeMenuActionCreatorsDefault;
                         obj.hideNativeMenu();
-                        if (onLongPressItem != null) {
-                          const obj2 = { channelId, item, isIncluded };
-                          tmp2(obj2);
-                        }
+                        const obj2 = { channelId, item, isIncluded };
+                        onPressItem(obj2);
                       }
                     }
-                    tmp15[0] = tmp12;
-                    tmp15[1] = tmp13;
-                    cResult[17] = tmp12;
-                    cResult[18] = tmp13;
-                    cResult[19] = tmp15;
-                    tmp14 = tmp15;
+                    cResult[18] = tmp14;
+                    cResult[19] = obj9;
+                    tmp15 = obj9;
                   }
                 }
               }
-              class U {
+              const fn2 = function z() {
+                const obj = NativeMenuActionCreatorsDefault;
+                obj.hideNativeMenu();
+                if (onLongPressItem != null) {
+                  const obj2 = { channelId, item, isIncluded };
+                  tmp2(obj2);
+                }
+              };
+              cResult[12] = channelId;
+              cResult[13] = null != stateFromStoresObject.upload;
+              class K {
                 constructor() {
                   const obj = NativeMenuActionCreatorsDefault;
                   obj.hideNativeMenu();
-                  if (onLongPressItem != null) {
-                    const obj2 = { channelId, item, isIncluded };
-                    tmp2(obj2);
-                  }
+                  const obj2 = { channelId, item, isIncluded };
+                  onPressItem(obj2);
                 }
               }
-              cResult[12] = channelId;
-              cResult[13] = null != stateFromStoresObject.upload;
               cResult[14] = item;
               cResult[15] = onLongPressItem;
-              cResult[16] = U;
-              tmp13 = U;
+              cResult[16] = fn2;
+              tmp14 = fn2;
             }
           }
         }
-        const fn2 = function z() {
-          const obj = NativeMenuActionCreatorsDefault;
-          obj.hideNativeMenu();
-          const obj2 = { channelId, item, isIncluded };
-          onPressItem(obj2);
-        };
+        class K {
+          constructor() {
+            const obj = NativeMenuActionCreatorsDefault;
+            obj.hideNativeMenu();
+            const obj2 = { channelId, item, isIncluded };
+            onPressItem(obj2);
+          }
+        }
         cResult[7] = channelId;
         cResult[8] = null != stateFromStoresObject.upload;
         cResult[9] = item;
         cResult[10] = onPressItem;
-        cResult[11] = fn2;
-        tmp12 = fn2;
+        cResult[11] = K;
+        tmp13 = K;
       }
     }
   }
@@ -614,16 +741,16 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((draftType) => 
     }
     return obj;
   };
-  const items3 = [channelId, draftType, image, includedUploadIds];
+  const items4 = [channelId, draftType, image, includedUploadIds];
   cResult[1] = channelId;
   cResult[2] = draftType;
   cResult[3] = image;
   cResult[4] = includedUploadIds;
   cResult[5] = fn;
-  cResult[6] = items3;
-  tmp8 = items3;
+  cResult[6] = items4;
+  tmp8 = items4;
   tmp7 = fn;
-}) : ((draftType) => {
+}) : (function MediaKeyboardImage(draftType) {
   let Icon;
   let channelId;
   let closure_7;
@@ -780,7 +907,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((draftType) => 
   stringResult = intl2.string(tmp2(tmp3[17]).t.SkfkEJ);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaKeyboardDummy(arg0) {
   let isFirstInRow;
   let items;
   let tmp3;
@@ -842,7 +969,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp3;
   cResult[4] = items1;
   tmp5 = items1;
-}) : ((arg0) => {
+}) : (function MediaKeyboardDummy(arg0) {
   let isFirstInRow;
   let items1;
   let obj2;
@@ -862,7 +989,7 @@ let closure_17 = createStyles.createStyleProperties(obj5);
 const __initData = { code: "function MediaKeyboardItemTsx1(){const{withTiming,interpolateColor,pressed,backgroundColor,pressedBackgroundColor,Easing}=this.__closure;return{backgroundColor:withTiming(interpolateColor(pressed.get(),[0,1],[backgroundColor,pressedBackgroundColor]),{duration:200,easing:Easing.out(Easing.quad)})};}" };
 const __initData2 = { code: "function MediaKeyboardItemTsx2(){const{withTiming,interpolateColor,pressed,backgroundColor,pressedBackgroundColor,Easing}=this.__closure;return{backgroundColor:withTiming(interpolateColor(pressed.get(),[0,1],[backgroundColor,pressedBackgroundColor]),{duration:200,easing:Easing.out(Easing.quad)})};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaKeyboardSpecialButton(arg0) {
   let accessibilityLabel;
   let children;
   let disabled;
@@ -990,7 +1117,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[10] = disabled1;
   cResult[11] = items;
   tmp11 = items;
-}) : ((arg0) => {
+}) : (function MediaKeyboardSpecialButton(arg0) {
   let accessibilityLabel;
   let children;
   let disabled;
@@ -1067,7 +1194,7 @@ function isSpecialMediaGridNode(type) {
   }
   return hasItem;
 }
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((draftType) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MediaKeyboardItem(draftType) {
   let channel;
   let disabled;
   let handleAttachPress;
@@ -1187,7 +1314,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((draftTy
   cResult[15] = uploadLimit;
   cResult[16] = mapped;
   tmp6 = mapped;
-}) : ((arg0) => {
+}) : (function MediaKeyboardItem(arg0) {
   let closure_10;
   let closure_4;
   let closure_7;

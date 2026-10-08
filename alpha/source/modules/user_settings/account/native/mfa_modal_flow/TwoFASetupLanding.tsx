@@ -1,20 +1,20 @@
-// Module ID: 14586
-// Function ID: 14587
+// Module ID: 14847
+// Function ID: 14848
 // Name: TwoFASetupLanding
-// Dependencies: [19, 17, 21, 4896, 558, 576, 14587, 14588, 4892, 1126, 6626, 14583, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 14848, 14849, 5086, 1126, 6803, 14844, 2]
 
-// Module 14586 (TwoFASetupLanding)
+// Module 14847 (TwoFASetupLanding)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6626 */;
-import TwoFASetupModal from "TwoFASetupModal" /* 14583 */;
-import TwoFASetupStyles from "TwoFASetupStyles" /* 14587 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14588 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6803 */;
+import TwoFASetupModal from "TwoFASetupModal" /* 14844 */;
+import TwoFASetupStyles from "TwoFASetupStyles" /* 14848 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14849 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let metroRequire;
 ({ Image: c3, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ container: { flex: 1, alignItems: "center", justifyContent: "center" }, authIcon: { width: 120, height: 120, marginBottom: 32 } });
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetupLanding() {
   let container;
   let container2;
   let intl;
@@ -50,7 +50,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl3.t["9E74Dx"]) };
-    const Heading = tmp(4892).Heading;
+    const Heading = tmp(5086).Heading;
     intl = tmp(1126).intl;
     const tmp13 = hasOwnProperty(Heading, obj4);
     cResult[2] = tmp13;
@@ -98,7 +98,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
         const obj6 = { children: hasOwnProperty(React3, obj7) };
         obj7 = { style: container, children: tmp20 };
-        const TwoFASetupModalScreen = tmp(14583).TwoFASetupModalScreen;
+        const TwoFASetupModalScreen = tmp(14844).TwoFASetupModalScreen;
         const tmp26 = hasOwnProperty(TwoFASetupModalScreen, obj6);
         cResult[13] = tmp4.container;
         cResult[14] = tmp20;
@@ -121,7 +121,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[4] = twoFASetupStyles.text;
   cResult[5] = items1;
   tmp14 = items1;
-}) : (() => {
+}) : (function TwoFASetupLanding() {
   let SafeAreaPaddingView;
   let intl;
   let intl2;

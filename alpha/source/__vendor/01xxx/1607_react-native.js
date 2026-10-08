@@ -1,11 +1,11 @@
 // Module ID: 1607
 // Function ID: 1608
 // Name: react-native
-// Dependencies: [1595]
+// Dependencies: [17]
 
 // Module 1607 (react-native)
-const require = globalThis.__r;
+import react_native from "react-native" /* 17 */;
 
-({ dark: true, colors: { primary: "rgb(10, 132, 255)", background: "rgb(1, 1, 1)", card: "rgb(18, 18, 18)", text: "rgb(229, 229, 231)", border: "rgb(39, 39, 41)", notification: "rgb(255, 69, 58)" }, fonts: require("react-native").fonts });
+const Platform = react_native.Platform;
 
-export const DarkTheme = { dark: true, colors: { primary: "rgb(10, 132, 255)", background: "rgb(1, 1, 1)", card: "rgb(18, 18, 18)", text: "rgb(229, 229, 231)", border: "rgb(39, 39, 41)", notification: "rgb(255, 69, 58)" }, fonts: require("react-native").fonts };
+export const fonts = { regular: { fontFamily: "sans-serif", fontWeight: "normal" }, medium: { fontFamily: "sans-serif-medium", fontWeight: "normal" }, bold: { fontFamily: "sans-serif", fontWeight: "600" }, heavy: { fontFamily: "sans-serif", fontWeight: "700" } };

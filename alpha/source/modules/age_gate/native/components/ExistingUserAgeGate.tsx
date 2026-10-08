@@ -1,25 +1,25 @@
-// Module ID: 17476
-// Function ID: 17477
+// Module ID: 17758
+// Function ID: 17759
 // Name: ExistingUserAgeGate
-// Dependencies: [5, 32, 19, 17, 2044, 1377, 1110, 17475, 1085, 21, 4896, 558, 576, 1490, 504, 1252, 1126, 2115, 38, 15920, 5099, 4467, 15942, 4892, 17477, 5601, 6626, 2]
+// Dependencies: [5, 32, 19, 17, 2057, 1389, 1110, 17757, 1085, 21, 5090, 558, 576, 1502, 504, 1264, 1126, 2127, 38, 16180, 5940, 4659, 16202, 5086, 17759, 5375, 6803, 2]
 
-// Module 17476 (ExistingUserAgeGate)
+// Module 17758 (ExistingUserAgeGate)
 import react_native from "react-native" /* 17 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 17475 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 17757 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2044 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2057 */;
+import UserStore from "UserStore" /* 1389 */;
 import AgeGateConstants from "AgeGateConstants" /* 1110 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let Blocked, c0, c1, closure_1, closure_2, closure_3, constants2, navigation, onSuccess, shouldShowError;
+let Blocked, c0, c1, closure_1, closure_2, closure_3, constants2, navigation, shouldShowError;
 
 let c10;
 let c9;
@@ -34,7 +34,7 @@ let closure_11 = ExistingUserAgeGateConstants.ExistingUserAgeGateScreens;
 ({ AnalyticEvents: closure_12, HelpdeskArticles: map1 } = Constants);
 ({ jsx: closure_14, jsxs: closure_15 } = Fragment);
 let closure_16 = createStyles.createStyles({ container: { flex: 1, padding: 16, alignItems: "center", justifyContent: "center" }, header: { marginBottom: 8, textAlign: "center" }, body: { textAlign: "center", lineHeight: 20, marginBottom: 16 }, inputGroup: { marginBottom: 16, width: "100%" }, buttonWrapper: { width: "100%" } });
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSuccess) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUserAgeGate(onSuccess) {
   let FAMILY_CENTER;
   let NSFW_CHANNEL;
   let NSFW_VOICE_CHANNEL;
@@ -691,7 +691,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSuccess) => {
   cResult[7] = items4;
   tmp23 = items4;
   tmp22 = Y;
-}) : ((onSuccess) => {
+}) : (function ExistingUserAgeGate(onSuccess) {
   let Button;
   let FAMILY_CENTER;
   let NSFW_CHANNEL;
@@ -990,7 +990,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSuccess) => {
       let obj4 = { top: true, style: tmp.container, children: items5 };
       const SafeAreaPaddingView = tmp2(tmp3[26]).SafeAreaPaddingView;
       let obj6 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stringResult1 };
-      items5 = [closure_14(tmp2(tmp3[23]).Text, obj6), , , ];
+      items5 = [closure_14(tmp2(tmp3[23]).Heading, obj6), , , ];
       const obj8 = { style: tmp.body, variant: "text-md/medium", color: "interactive-text-default", children: stringResult };
       items5[1] = closure_14(tmp2(tmp3[23]).Text, obj8);
       const obj9 = { style: tmp.inputGroup, ref, label: intl5.string(tmp2(tmp3[16]).t.xNpFJ6), date, onChangeDate: tmp11, error: stringResult2 };

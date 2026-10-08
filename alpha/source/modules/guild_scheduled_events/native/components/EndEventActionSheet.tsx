@@ -1,23 +1,23 @@
-// Module ID: 9333
-// Function ID: 9334
+// Module ID: 8758
+// Function ID: 8759
 // Name: EndEventActionSheet
-// Dependencies: [19, 17, 2057, 1085, 21, 4896, 587, 558, 576, 9195, 4860, 9334, 9213, 1126, 1188, 4892, 5601, 9479, 2]
+// Dependencies: [19, 17, 2069, 1085, 21, 5090, 587, 558, 576, 8630, 5054, 8759, 8494, 1126, 1200, 5086, 5375, 12896, 2]
 
-// Module 9333 (EndEventActionSheet)
+// Module 8758 (EndEventActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 9213 */;
-import CallsUtils from "CallsUtils" /* 9334 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2069 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8494 */;
+import CallsUtils from "CallsUtils" /* 8759 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channel, dependencyMap;
+let dependencyMap;
 
 let hasOwnProperty;
 let metroRequire;
@@ -29,7 +29,7 @@ const Fonts = Constants.Fonts;
 let obj = { container: { paddingVertical: 24, paddingHorizontal: 16, alignItems: "center" }, title: obj2, subtitle: { marginTop: 8, textAlign: "center" }, cancelButtonContainer: { marginTop: 24, alignSelf: "stretch" }, confirmButtonContainer: { marginTop: 8, alignSelf: "stretch" } };
 obj2 = { fontSize: 24, fontFamily: Fonts.PRIMARY_BOLD, textAlign: "center", color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 let closure_7 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndEventActionSheet(channel) {
   let closure_2;
   let container;
   let items;
@@ -39,22 +39,22 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const cResult = obj.c(29);
   channel = channel.channel;
   const tmp4 = closure_7();
-  let obj2 = channel(9195);
+  let obj2 = channel(8630);
   const activeEvent = obj2.useActiveEvent(channel.id);
   if (null == activeEvent) {
     return null;
   } else {
     let tmp6;
     if (cResult[0] !== channel) {
-      const fn = function o() {
+      function handleClose() {
         const obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet(closure_4);
         const obj2 = CallsUtils;
         obj2.handleDisconnect(channel);
-      };
+      }
       cResult[0] = channel;
-      cResult[1] = fn;
-      tmp6 = fn;
+      cResult[1] = handleClose;
+      tmp6 = handleClose;
     } else {
       tmp6 = cResult[1];
     }
@@ -82,7 +82,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
       if (cResult[6] !== tmp4.title) {
         const obj3 = { style: title, accessibilityRole: "header", children: tmp9 };
-        const tmp13 = closure_5(channel(1188).LegacyText, obj3);
+        const tmp13 = closure_5(channel(1200).LegacyText, obj3);
         cResult[6] = tmp4.title;
         cResult[7] = tmp13;
         tmp11 = tmp13;
@@ -101,7 +101,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
       if (cResult[9] !== tmp4.subtitle) {
         const obj4 = { style: subtitle, variant: "text-md/medium", color: "text-default", children: tmp14 };
-        const tmp18 = closure_5(channel(4892).Text, obj4);
+        const tmp18 = closure_5(channel(5086).Text, obj4);
         cResult[9] = tmp4.subtitle;
         cResult[10] = tmp18;
         tmp16 = tmp18;
@@ -120,7 +120,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
       if (cResult[12] !== tmp6) {
         const obj5 = { text: tmp19, grow: true, onPress: tmp6 };
-        const tmp23 = closure_5(channel(5601).Button, obj5);
+        const tmp23 = closure_5(channel(5375).Button, obj5);
         cResult[12] = tmp6;
         cResult[13] = tmp23;
         tmp21 = tmp23;
@@ -146,7 +146,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         }
         if (cResult[18] !== tmp7) {
           const obj6 = { text: tmp28, variant: "destructive", grow: true, onPress: tmp7 };
-          const tmp32 = closure_5(channel(5601).Button, obj6);
+          const tmp32 = closure_5(channel(5375).Button, obj6);
           cResult[18] = tmp7;
           cResult[19] = tmp32;
           tmp30 = tmp32;
@@ -174,7 +174,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           const obj7 = { children: closure_6(View, obj8) };
           obj8 = { style: container, children: items };
           items = [tmp11, tmp16, tmp24, tmp33];
-          const tmp40 = activeEvent(9479);
+          const tmp40 = activeEvent(12896);
           const tmp43 = closure_5(tmp40, obj7);
           cResult[23] = tmp4.container;
           cResult[24] = tmp24;
@@ -198,19 +198,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       cResult[16] = tmp27;
       tmp24 = tmp27;
     }
-    const fn2 = function y() {
+    function handleConfirmClick() {
       if (null != activeEvent) {
         const obj = GuildScheduledEventsActionCreatorsDefault;
         obj.endEvent(activeEvent.id, activeEvent.guild_id);
         closure_2();
       }
-    };
+    }
     cResult[2] = activeEvent;
     cResult[3] = tmp6;
-    cResult[4] = fn2;
-    tmp7 = fn2;
+    cResult[4] = handleConfirmClick;
+    tmp7 = handleConfirmClick;
   }
-}) : ((channel) => {
+}) : (function EndEventActionSheet(channel) {
   let Button;
   let Button2;
   let intl;
@@ -223,7 +223,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   let obj9;
   channel = channel.channel;
   const tmp = closure_7();
-  let obj = channel(9195);
+  let obj = channel(8630);
   const activeEvent = obj.useActiveEvent(channel.id);
   if (null == activeEvent) {
     return null;
@@ -236,18 +236,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
     let obj2 = { children: closure_6(View, obj3) };
     obj3 = { style: tmp.container, children: items };
-    const tmp7 = activeEvent(9479);
+    const tmp7 = activeEvent(12896);
     const obj4 = { style: tmp.title, accessibilityRole: "header", children: intl.string(channel(1126).t["4Ao8LC"]) };
-    const LegacyText = tmp2(1188).LegacyText;
+    const LegacyText = tmp2(1200).LegacyText;
     intl = tmp2(1126).intl;
     items = [closure_5(LegacyText, obj4), , , ];
     const obj5 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: intl2.string(channel(1126).t["0I0B8f"]) };
-    const Text = tmp2(4892).Text;
+    const Text = tmp2(5086).Text;
     intl2 = tmp2(1126).intl;
     items[1] = closure_5(Text, obj5);
     const obj6 = { style: tmp.cancelButtonContainer, children: closure_5(Button, obj7) };
     obj7 = { text: intl3.string(channel(1126).t.P60OAX), grow: true, onPress: handleClose };
-    Button = tmp2(5601).Button;
+    Button = tmp2(5375).Button;
     intl3 = tmp2(1126).intl;
     items[2] = closure_5(View, obj6);
     const obj8 = { style: tmp.confirmButtonContainer, children: closure_5(Button2, obj9) };
@@ -255,7 +255,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       text: intl4.string(channel(1126).t.mjB9pd),
       variant: "destructive",
       grow: true,
-      onPress() {
+      onPress: function handleConfirmClick() {
           if (null != activeEvent) {
             const obj = GuildScheduledEventsActionCreatorsDefault;
             obj.endEvent(activeEvent.id, activeEvent.guild_id);
@@ -266,7 +266,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           }
         }
     };
-    Button2 = tmp2(5601).Button;
+    Button2 = tmp2(5375).Button;
     intl4 = tmp2(1126).intl;
     items[3] = closure_5(View, obj8);
     return closure_5(tmp7, obj2);

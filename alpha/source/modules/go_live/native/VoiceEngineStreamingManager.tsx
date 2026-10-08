@@ -1,29 +1,29 @@
-// Module ID: 5037
-// Function ID: 5038
+// Module ID: 7437
+// Function ID: 7438
 // Name: VoiceEngineStreamingManager
-// Dependencies: [5, 17, 4918, 2051, 2103, 1085, 2011, 3, 2046, 2028, 584, 1282, 1989, 2001, 38, 5038, 5097, 4948, 1484, 9644, 8995, 1126, 2]
+// Dependencies: [5, 17, 5893, 2063, 2115, 1085, 2023, 3, 2058, 2040, 584, 1294, 2001, 2013, 38, 7438, 5104, 5896, 1496, 10839, 10820, 1126, 2]
 
-// Module 5037 (VoiceEngineStreamingManager)
+// Module 7437 (VoiceEngineStreamingManager)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1126 */;
-import useWindowDimensions from "useWindowDimensions" /* 1484 */;
-import inject from "inject" /* 2001 */;
-import Constants2 from "Constants" /* 2011 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import Timers from "Timers" /* 2046 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 4948 */;
-import StreamActionCreators from "StreamActionCreators" /* 5038 */;
-import PushNotificationDefault from "PushNotification" /* 8995 */;
-import useScreenshareUtils from "useScreenshareUtils" /* 9644 */;
+import useWindowDimensions from "useWindowDimensions" /* 1496 */;
+import inject from "inject" /* 2013 */;
+import Constants2 from "Constants" /* 2023 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import Timers from "Timers" /* 2058 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 5896 */;
+import StreamActionCreators from "StreamActionCreators" /* 7438 */;
+import PushNotificationDefault from "PushNotification" /* 10820 */;
+import useScreenshareUtils from "useScreenshareUtils" /* 10839 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4918 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5893 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
 import Constants from "Constants" /* 1085 */;
-import LifecycleManager from "LifecycleManager" /* 1989 */;
+import LifecycleManager from "LifecycleManager" /* 2001 */;
 import size_mod from "module_2" /* 2 */;
 
 let allActiveStreams, c6, c7, channel, closure_4, currentAppIntent, streamKey, voiceEngine;

@@ -1,19 +1,19 @@
-// Module ID: 6890
-// Function ID: 6891
+// Module ID: 7079
+// Function ID: 7080
 // Name: HeaderActionButton
-// Dependencies: [19, 1192, 21, 4896, 587, 558, 576, 4892, 5607, 5603, 5916, 2]
+// Dependencies: [19, 1204, 21, 5090, 587, 558, 576, 5086, 5380, 5377, 6189, 2]
 
-// Module 6890 (HeaderActionButton)
+// Module 7079 (HeaderActionButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FormConstants from "FormConstants" /* 1192 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import IconDefault from "Icon" /* 5603 */;
-import ButtonConstants from "ButtonConstants" /* 5607 */;
-import Pressables from "Pressables" /* 5916 */;
+import FormConstants from "FormConstants" /* 1204 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import IconDefault from "Icon" /* 5377 */;
+import ButtonConstants from "ButtonConstants" /* 5380 */;
+import Pressables from "Pressables" /* 6189 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,8 +25,7 @@ const ANDROID_FOREGROUND_RIPPLE = FormConstants.ANDROID_FOREGROUND_RIPPLE;
 let obj = { button: { alignSelf: "stretch", alignItems: "center", justifyContent: "center", flexDirection: "row" }, text: obj2, buttonFont: { fontSize: 16, maxWidth: 80 }, buttonDisabled: { opacity: 0.6 } };
 obj2 = { color: nativeDefault.colors.TEXT_BRAND, textTransform: "capitalize" };
 let closure_6 = createStyles.createStyles(obj);
-const forwardRef = react.forwardRef;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((foregroundRipple, ref) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderActionButton(foregroundRipple) {
   let IconComponent;
   let IconComponentSize;
   let accessibilityActions;
@@ -40,6 +39,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let items1;
   let onAccessibilityAction;
   let onPress;
+  let ref;
   let source;
   let style;
   let text;
@@ -47,7 +47,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let tmp9;
   const obj = react2;
   const cResult = obj.c(31);
-  ({ style, textStyle, imageStyle, text, source, accessibilityLabel, accessibilityHint, accessibilityActions, onAccessibilityAction, icon, IconComponent, IconComponentSize, onPress, disabled, iconSize, hitSlop } = foregroundRipple);
+  ({ style, textStyle, imageStyle, text, source, accessibilityLabel, accessibilityHint, accessibilityActions, onAccessibilityAction, icon, IconComponent, IconComponentSize, onPress, disabled, iconSize, hitSlop, ref } = foregroundRipple);
   foregroundRipple = foregroundRipple.foregroundRipple;
   const tmp4 = closure_6();
   if (null != text) {
@@ -65,7 +65,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           tmp9 = tmp14;
         }
         const obj2 = { style: tmp13, variant: "text-md/semibold", lineClamp: 1, maxFontSizeMultiplier: ButtonConstants.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER, children: text };
-        const Text = tmp(4892).Text;
+        const Text = tmp(5086).Text;
         const tmp16 = React3(Text, obj2);
         cResult[4] = tmp13;
         cResult[5] = text;
@@ -133,11 +133,11 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
                       if (cResult[26] === ref) {
                         if (cResult[27] === accessibilityLabel) {
                           if (cResult[28] === tmp17) {
-                            let tmp21;
+                            let tmp20;
                             if (cResult[29] === tmp19) {
-                              tmp21 = cResult[30];
+                              tmp20 = cResult[30];
                             }
-                            return tmp21;
+                            return tmp20;
                           }
                         }
                       }
@@ -151,7 +151,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       }
       const obj5 = { ref, accessibilityLabel, accessibilityHint, accessibilityActions, onAccessibilityAction, accessibilityRole: "button", onPress, activeOpacity: 0.6, androidRippleConfig: tmp17, style: tmp19, hitSlop, disabled, children: items1 };
       items1 = [tmp9, icon];
-      const tmp23 = hasOwnProperty(Pressables.PressableOpacity, obj5);
+      const tmp22 = hasOwnProperty(Pressables.PressableOpacity, obj5);
       cResult[18] = accessibilityActions;
       cResult[19] = accessibilityHint;
       cResult[20] = tmp9;
@@ -164,8 +164,8 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       cResult[27] = accessibilityLabel;
       cResult[28] = tmp17;
       cResult[29] = tmp19;
-      cResult[30] = tmp23;
-      tmp21 = tmp23;
+      cResult[30] = tmp22;
+      tmp20 = tmp22;
     }
   }
   const items2 = [tmp4.button, style, disabled && tmp4.buttonDisabled];
@@ -174,7 +174,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   cResult[16] = disabled && tmp4.buttonDisabled;
   cResult[17] = items2;
   tmp19 = items2;
-}) : ((arg0, ref) => {
+}) : (function HeaderActionButton(arg0) {
   let IconComponent;
   let IconComponentSize;
   let accessibilityActions;
@@ -191,6 +191,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let items2;
   let onAccessibilityAction;
   let onPress;
+  let ref;
   let source;
   let style;
   let text;
@@ -198,7 +199,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let tmp11;
   let tmp2;
   ({ text, source, accessibilityLabel, IconComponent, disabled } = arg0);
-  ({ style, textStyle, imageStyle, accessibilityHint, accessibilityActions, onAccessibilityAction, icon, IconComponentSize, onPress, foregroundRipple, iconSize, hitSlop } = arg0);
+  ({ style, textStyle, imageStyle, accessibilityHint, accessibilityActions, onAccessibilityAction, icon, IconComponentSize, onPress, foregroundRipple, iconSize, hitSlop, ref } = arg0);
   const tmp = closure_6();
   if (null != text) {
     const obj2 = { style: items, variant: "text-md/semibold", lineClamp: 1, maxFontSizeMultiplier: ButtonConstants.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER, children: text };
@@ -227,7 +228,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   items1 = [tmp.button, style, disabled && tmp.buttonDisabled];
   items2 = [tmp2, icon];
   return tmp10(PressableOpacity, obj4);
-}));
+});
 const result = size.fileFinishedImporting("design/components/Navigator/native/HeaderActionButton.native.tsx");
 
-export const HeaderActionButton = forwardRefResult;
+export const HeaderActionButton = tmp4;

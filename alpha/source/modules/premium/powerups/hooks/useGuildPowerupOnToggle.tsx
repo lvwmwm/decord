@@ -1,10 +1,10 @@
-// Module ID: 12210
-// Function ID: 12211
+// Module ID: 12289
+// Function ID: 12290
 // Name: useGuildPowerupOnToggle
-// Dependencies: [32, 19, 558, 576, 12162, 2]
+// Dependencies: [32, 19, 558, 576, 12241, 2]
 
-// Module 12210 (useGuildPowerupOnToggle)
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12162 */;
+// Module 12289 (useGuildPowerupOnToggle)
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12241 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 let react = react_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowerupOnToggle(arg0, arg1) {
   let closure_0;
   let closure_1;
   let tmp3;
@@ -77,7 +77,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[1] = arg1;
   cResult[2] = fn;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useGuildPowerupOnToggle(arg0, arg1) {
   let closure_3;
   let items;
   let tmp2;

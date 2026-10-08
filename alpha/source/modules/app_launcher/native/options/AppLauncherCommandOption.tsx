@@ -1,30 +1,28 @@
-// Module ID: 11800
-// Function ID: 11801
+// Module ID: 11867
+// Function ID: 11868
 // Name: AppLauncherCommandOption
-// Dependencies: [19, 17, 1489, 21, 4896, 587, 558, 576, 1985, 11801, 11808, 11810, 11813, 11817, 11818, 5708, 11821, 11823, 11824, 11830, 4803, 5916, 2]
+// Dependencies: [19, 17, 1501, 21, 5090, 587, 558, 576, 1997, 11868, 11875, 11877, 11881, 11902, 11903, 6098, 11906, 11908, 11909, 11915, 4997, 6189, 2]
 
-// Module 11800 (AppLauncherCommandOption)
+// Module 11867 (AppLauncherCommandOption)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1489 */;
-import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 5708 */;
-import AppLauncherChoicesOptionDefault from "AppLauncherChoicesOption" /* 11801 */;
-import AppLauncherAutocompleteOptionDefault from "AppLauncherAutocompleteOption" /* 11808 */;
-import AppLauncherTextInputOptionDefault from "AppLauncherTextInputOption" /* 11810 */;
-import AppLauncherAttachmentOptionDefault from "AppLauncherAttachmentOption" /* 11813 */;
-import AppLauncherBooleanOptionDefault from "AppLauncherBooleanOption" /* 11817 */;
-import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 11818 */;
-import AppLauncherMentionableOptionDefault from "AppLauncherMentionableOption" /* 11821 */;
-import AppLauncherRoleOptionDefault from "AppLauncherRoleOption" /* 11823 */;
-import AppLauncherUserOptionDefault from "AppLauncherUserOption" /* 11824 */;
-import AppLauncherChannelOptionDefault from "AppLauncherChannelOption" /* 11830 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
+import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 6098 */;
+import AppLauncherChoicesOptionDefault from "AppLauncherChoicesOption" /* 11868 */;
+import AppLauncherAutocompleteOptionDefault from "AppLauncherAutocompleteOption" /* 11875 */;
+import AppLauncherTextInputOptionDefault from "AppLauncherTextInputOption" /* 11877 */;
+import AppLauncherAttachmentOptionDefault from "AppLauncherAttachmentOption" /* 11881 */;
+import AppLauncherBooleanOptionDefault from "AppLauncherBooleanOption" /* 11902 */;
+import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 11903 */;
+import AppLauncherMentionableOptionDefault from "AppLauncherMentionableOption" /* 11906 */;
+import AppLauncherRoleOptionDefault from "AppLauncherRoleOption" /* 11908 */;
+import AppLauncherUserOptionDefault from "AppLauncherUserOption" /* 11909 */;
+import AppLauncherChannelOptionDefault from "AppLauncherChannelOption" /* 11915 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let option;
 
 let hasOwnProperty;
 let metroRequire;
@@ -35,7 +33,7 @@ let closure_4 = AppLauncherNativeConstants.AppLauncherOptionAutoFocusType;
 let obj = { dismissableOptionWrapper: { flexDirection: "row", alignItems: "center" }, optionViewContainer: { flex: 1 }, dismissButton: obj2, option: { flex: 1 } };
 obj2 = { marginLeft: 8, marginRight: -4, padding: 4, borderRadius: nativeDefault.radii.round };
 let closure_7 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherCommandOption(option) {
   let autoFocusType;
   let channel;
   let command;
@@ -217,13 +215,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
               cResult[99] = tmp47;
               tmp44 = tmp47;
             }
-            function le() {
+            function pe() {
               return onEndEditing(option);
             }
             cResult[88] = onEndEditing;
             cResult[89] = option;
-            cResult[90] = le;
-            tmp41 = le;
+            cResult[90] = pe;
+            tmp41 = pe;
           }
           function re(mentionable) {
             mentionable = mentionable.mentionable;
@@ -386,7 +384,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
                   }
                 }
               }
-              class Ee {
+              class Ae {
                 constructor(user) {
                   let items;
                   user = user.user;
@@ -425,7 +423,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
               }
             }
             cResult[119] = onEndEditing;
-            class Ee {
+            class Ae {
               constructor(user) {
                 let items;
                 user = user.user;
@@ -445,10 +443,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
               }
             }
             cResult[120] = option;
-            cResult[121] = Ae;
-            tmp20 = Ae;
+            cResult[121] = Ee;
+            tmp20 = Ee;
           }
-          class Ee {
+          class Ae {
             constructor(user) {
               let items;
               user = user.user;
@@ -469,8 +467,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
           }
           cResult[116] = onOptionValueChange;
           cResult[117] = option;
-          cResult[118] = Ee;
-          tmp19 = Ee;
+          cResult[118] = Ae;
+          tmp19 = Ae;
         } else if (tmp(tmp2[8]).ApplicationCommandOptionType.CHANNEL === type) {
           let first4;
           class Oe {
@@ -515,7 +513,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
                   }
                 }
               }
-              class Ee {
+              class Ae {
                 constructor(user) {
                   let items;
                   user = user.user;
@@ -554,7 +552,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
               }
             }
             cResult[135] = onEndEditing;
-            class Ee {
+            class Ae {
               constructor(user) {
                 let items;
                 user = user.user;
@@ -577,7 +575,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
             cResult[137] = Ne;
             tmp10 = Ne;
           }
-          class Ee {
+          class Ae {
             constructor(user) {
               let items;
               user = user.user;
@@ -620,7 +618,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
                 return onDismiss(option);
               }
             }
-            class Ee {
+            class Ae {
               constructor(user) {
                 let items;
                 user = user.user;
@@ -659,7 +657,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
                 }
               }
               const obj9 = { style: null, children: items };
-              class Ee {
+              class Ae {
                 constructor(user) {
                   let items;
                   user = user.user;
@@ -699,7 +697,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
             }
           }
           cResult[151] = onDismiss;
-          class Ee {
+          class Ae {
             constructor(user) {
               let items;
               user = user.user;
@@ -728,7 +726,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
           }
         }
         const obj11 = { style: tmp4.optionViewContainer, children: null };
-        class Ee {
+        class Ae {
           constructor(user) {
             let items;
             user = user.user;
@@ -819,7 +817,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
                   tmp3(tmp, items);
                 }
               }
-              class Ee {
+              class Ae {
                 constructor(user) {
                   let items;
                   user = user.user;
@@ -872,7 +870,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
                 tmp3(tmp, items);
               }
             }
-            class Ee {
+            class Ae {
               constructor(user) {
                 let items;
                 user = user.user;
@@ -917,7 +915,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
             tmp3(tmp, items);
           }
         }
-        class Ee {
+        class Ae {
           constructor(user) {
             let items;
             user = user.user;
@@ -958,7 +956,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
         tmp3(tmp, items);
       }
     }
-    class Ee {
+    class Ae {
       constructor(user) {
         let items;
         user = user.user;
@@ -1190,7 +1188,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
     cResult[45] = Q;
     tmp67 = Q;
   }
-}) : ((option) => {
+}) : (function AppLauncherCommandOption(option) {
   let autoFocusType;
   let channel;
   let command;
@@ -1220,12 +1218,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
   let type = option.type;
   let tmp2 = option;
   let tmp3 = dependencyMap;
-  if (option(1985).ApplicationCommandOptionType.STRING !== type) {
-    if (tmp2(1985).ApplicationCommandOptionType.INTEGER !== type) {
+  if (option(1997).ApplicationCommandOptionType.STRING !== type) {
+    if (tmp2(1997).ApplicationCommandOptionType.INTEGER !== type) {
       let tmp28Result;
       let tmp13;
-      if (tmp2(1985).ApplicationCommandOptionType.NUMBER !== type) {
-        if (tmp2(1985).ApplicationCommandOptionType.ATTACHMENT === type) {
+      if (tmp2(1997).ApplicationCommandOptionType.NUMBER !== type) {
+        if (tmp2(1997).ApplicationCommandOptionType.ATTACHMENT === type) {
           let obj2 = {
             style: tmp.option,
             option,
@@ -1250,7 +1248,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
           };
           tmp28Result = onDismiss(AppLauncherAttachmentOptionDefault, obj2, option.name);
           tmp13 = onDismiss;
-        } else if (tmp2(1985).ApplicationCommandOptionType.BOOLEAN === type) {
+        } else if (tmp2(1997).ApplicationCommandOptionType.BOOLEAN === type) {
           let obj3 = {
             style: tmp.option,
             option,
@@ -1271,7 +1269,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
           }
           tmp28Result = tmp35(tmp37, obj3, option.name);
           tmp13 = tmp35;
-        } else if (tmp2(1985).ApplicationCommandOptionType.MENTIONABLE === type) {
+        } else if (tmp2(1997).ApplicationCommandOptionType.MENTIONABLE === type) {
           let obj4 = {
             option,
             initialValue: first1,
@@ -1319,7 +1317,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
           }
           tmp28Result = tmp28(tmp30, obj4);
           tmp13 = tmp28;
-        } else if (tmp2(1985).ApplicationCommandOptionType.ROLE === type) {
+        } else if (tmp2(1997).ApplicationCommandOptionType.ROLE === type) {
           const obj5 = {
             style: tmp.option,
             option,
@@ -1352,7 +1350,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
           }
           tmp28Result = tmp21(tmp23, obj5, option.name);
           tmp13 = tmp21;
-        } else if (tmp2(1985).ApplicationCommandOptionType.USER === type) {
+        } else if (tmp2(1997).ApplicationCommandOptionType.USER === type) {
           const obj6 = {
             style: tmp.option,
             option,
@@ -1389,7 +1387,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
           }
           tmp28Result = tmp14(tmp16, obj6, option.name);
           tmp13 = tmp14;
-        } else if (tmp2(1985).ApplicationCommandOptionType.CHANNEL === type) {
+        } else if (tmp2(1997).ApplicationCommandOptionType.CHANNEL === type) {
           let obj = {
             style: tmp.option,
             option,
@@ -1437,9 +1435,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
           onPress() {
                   return onDismiss(option);
                 },
-          children: tmp13(tmp2(4803).CircleXIcon, { size: "md" })
+          children: tmp13(tmp2(4997).CircleXIcon, { size: "md" })
         };
-        const PressableOpacity = tmp2(5916).PressableOpacity;
+        const PressableOpacity = tmp2(6189).PressableOpacity;
         items[1] = tmp13(PressableOpacity, obj9);
         tmp61 = closure_6(View, obj7);
       }

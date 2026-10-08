@@ -1,19 +1,19 @@
-// Module ID: 12335
-// Function ID: 12336
+// Module ID: 12431
+// Function ID: 12432
 // Name: HubProgressBarUtils
-// Dependencies: [19, 1231, 5447, 9505, 1085, 558, 576, 504, 1197, 1126, 1375, 1390, 2]
+// Dependencies: [19, 1243, 5757, 8671, 1085, 558, 576, 504, 1209, 1126, 1387, 1402, 2]
 // Exports: getHubProgressTitleForStep, getNextHubProgressStep
 
-// Module 12335 (HubProgressBarUtils)
+// Module 12431 (HubProgressBarUtils)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import FlagUtils from "FlagUtils" /* 1390 */;
-import HubProgressBarConstants from "HubProgressBarConstants" /* 9505 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import FlagUtils from "FlagUtils" /* 1402 */;
+import HubProgressBarConstants from "HubProgressBarConstants" /* 8671 */;
 import react from "react" /* 19 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5447 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5757 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let _require, set;
 
 let tmp;
 const get_initialized = tmp(504);
-const preloaded_user_settings = tmp(1197);
+const preloaded_user_settings = tmp(1209);
 function convertHubProgressFlagSetToSet(stateFromStores) {
   set = new Set();
   for (const item10013 of HUB_PROGRESS_STEP_ORDER) {
@@ -38,7 +38,7 @@ function convertHubProgressFlagSetToSet(stateFromStores) {
 const HUB_PROGRESS_STEP_ORDER = HubProgressBarConstants.HUB_PROGRESS_STEP_ORDER;
 const PlatformTypes = Constants.PlatformTypes;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useContactSyncEverEnabled() {
   let localAccount;
   let tmp4;
   let tmp5;
@@ -58,14 +58,14 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useContactSyncEverEnabled() {
   let localAccount;
   const items = [ConnectedAccountsStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => null != localAccount.getLocalAccount(constants.CONTACTS));
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCompletedStepsFromSettings(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -83,7 +83,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function o() {
+    const fn = function n() {
       let num = 0;
       if (null != closure_0) {
         const guilds = UserSettingsProtoStore.settings.guilds;
@@ -118,7 +118,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp8 = cResult[4];
   }
   return tmp8;
-}) : ((arg0) => {
+}) : (function useCompletedStepsFromSettings(arg0) {
   let closure_0;
   let stateFromStores;
   _require = arg0;
@@ -145,7 +145,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return react.useMemo(() => convertHubProgressFlagSetToSet(stateFromStores), items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(id) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHubProgressBarCompletedSteps(id) {
   const obj = react2;
   const cResult = obj.c(2);
   id = undefined;
@@ -172,7 +172,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(id) {
     tmp7 = tmp8;
   }
   return tmp7;
-}) : ((id) => {
+}) : (function useHubProgressBarCompletedSteps(id) {
   id = undefined;
   let tmp = closure_9;
   if (id != null) {

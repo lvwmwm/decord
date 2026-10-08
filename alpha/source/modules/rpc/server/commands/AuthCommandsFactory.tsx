@@ -1,26 +1,25 @@
-// Module ID: 14376
-// Function ID: 14377
+// Module ID: 14602
+// Function ID: 14603
 // Name: AuthCommandsFactory
-// Dependencies: [32, 5, 5124, 2009, 1377, 5323, 1085, 9066, 1102, 510, 9059, 2016, 8740, 9038, 8759, 8754, 8761, 4520, 1097, 1282, 584, 14335, 8025, 1478, 2]
+// Dependencies: [32, 5, 5436, 2021, 1389, 5635, 1085, 11144, 1102, 510, 11134, 2028, 9140, 10651, 9139, 9134, 9142, 4712, 1097, 1294, 584, 14560, 8433, 1490, 2]
 // Exports: default
 
-// Module 14376 (AuthCommandsFactory)
+// Module 14602 (AuthCommandsFactory)
 import Storage3 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import RPCErrorDefault from "RPCError" /* 9059 */;
+import RPCErrorDefault from "RPCError" /* 11134 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5124 */;
-import ApplicationRecord from "ApplicationRecord" /* 2009 */;
-import UserStore from "UserStore" /* 1377 */;
-import Constants_mod from "Constants" /* 5323 */;
+import ApplicationStore from "ApplicationStore" /* 5436 */;
+import ApplicationRecord from "ApplicationRecord" /* 2021 */;
+import UserStore from "UserStore" /* 1389 */;
+import Constants_mod from "Constants" /* 5635 */;
 import Constants_mod2 from "Constants" /* 1085 */;
-import LeakyBucket_mod from "LeakyBucket" /* 9066 */;
+import LeakyBucket_mod from "LeakyBucket" /* 11144 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _prompt, _require, channelId, clientId, closure_7, closure_8, codeChallenge, codeChallengeMethod, disableGuildSelect, guildId, importDefault, map, nonce, parsedPermissions, pid, state;
+let _prompt, _require, channelId, clientId, closure_4, closure_7, closure_8, codeChallenge, codeChallengeMethod, disableGuildSelect, guildId, map, nonce, parsedPermissions, pid, state;
 
 let LeakyBucket;
 let c10;
@@ -417,91 +416,180 @@ let obj = function _authorizeWithPrompt() {
   });
   return obj(...arguments);
 };
-function authenticate(authorization, arg1) {
-  let closure_1;
-  let obj4;
-  _require = authorization;
-  importDefault = arg1;
-  if (authorization.authorization.accessToken) {
-    let obj2 = { errorCode: constants2.INVALID_COMMAND };
-    let tmp13 = constants2;
-    let self3 = this;
-    let self4 = this;
-    const tmp15 = new RPCErrorDefault(obj2, "Already authenticated");
-    throw tmp15;
-  } else if (authorization.authorization.authing) {
-    let obj3 = { errorCode: constants2.INVALID_COMMAND };
-    let tmp7 = constants2;
-    let self = this;
-    let self2 = this;
-    const tmp9 = new RPCErrorDefault(obj3, "Already authenticating");
-    throw tmp9;
-  } else {
-    authorization.authorization.authing = true;
-    let tmp = _require;
-    let tmp2 = dependencyMap;
-    const HTTP = require("HTTPUtils").HTTP;
-    obj = { url: OAUTH2_CURRENT_AUTH.OAUTH2_CURRENT_AUTH, headers: obj4, oldFormErrors: true, rejectWithError: false };
-    obj4 = { Authorization: "Bearer " + arg1 };
-    const _HermesInternal = HermesInternal;
-    const get = HTTP.get;
-    const value = get(obj);
-    const nextPromise = value.then(function(body) {
-      let expires;
-      let scopes;
-      let user;
-      authorization.authorization.authing = false;
-      body = body.body;
-      ({ user, scopes, expires } = body);
-      if (authorization.application.id !== body.application.id) {
-        const self3 = this;
-        const self4 = this;
-        const obj2 = { errorCode: constants.INVALID_CLIENTID };
-        const tmp13 = new RPCErrorDefault(obj2, "Application does not match the connection's");
-        throw tmp13;
+function authenticate() {
+  return obj(...arguments);
+}
+obj = function _authenticate() {
+  let OAUTH2_CURRENT_AUTH;
+  obj = _asyncToGenerator(async function(arg0, value) {
+    let authorization;
+    let closure_0;
+    let closure_1;
+    let obj7;
+    if (c7 === 2) {
+      c7 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        const currentUser = UserStore.getCurrentUser();
-        if (null != currentUser) {
-          if (user) {
-            if (currentUser.id === user.id) {
-              const items = [];
-              items[HermesBuiltin.arraySpread(items, scopes, HermesBuiltin.arraySpread(items, authorization.authorization.scopes, 0))] = authStore;
-              authorization.authorization.scopes = items;
-              authorization.authorization.accessToken = access_token;
-              const _Date = Date;
-              const self5 = this;
-              const self6 = this;
-              authorization = tmp2.authorization;
-              authorization.expires = new Date(expires);
-              const obj5 = { type: "RPC_APP_AUTHENTICATED", socketId: null, application: null };
-              ({ id: obj4.socketId, application: obj4.application } = authorization);
-              const date = new Date(expires);
-              const obj3 = DispatcherDefault;
-              obj3.dispatch(obj5);
-              const obj8 = { access_token };
-              const merged = Object.assign(body.body);
-              return obj8;
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      let c5;
+      try {
+        let body;
+        let application;
+        let user;
+        let scopes;
+        let expires;
+        let self;
+        c7 = 2;
+        if (0 === c6) {
+          if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c7 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_3 = tmp;
+            body = undefined;
+            application = undefined;
+            user = undefined;
+            scopes = undefined;
+            expires = undefined;
+            self = authorization.authorization.accessToken;
+            if (null != self) {
+              const obj4 = { errorCode: constants.INVALID_COMMAND };
+              self = this;
+              const self7 = this;
+              const tmp55 = new RPCErrorDefault(obj4, "Already authenticated");
+              throw tmp55;
+            } else {
+              self = tmp108.authorization.authing;
+              if (self) {
+                const obj5 = { errorCode: constants.INVALID_COMMAND };
+                self = this;
+                const self6 = this;
+                const tmp49 = new RPCErrorDefault(obj5, "Already authenticating");
+                throw tmp49;
+              } else {
+                authorization.authorization.authing = true;
+                c5 = 2;
+                const HTTP = require("HTTPUtils").HTTP;
+                const obj6 = { url: OAUTH2_CURRENT_AUTH.OAUTH2_CURRENT_AUTH, headers: obj7, oldFormErrors: true, rejectWithError: false };
+                obj7 = { Authorization: "Bearer " + tmp109 };
+                const _HermesInternal2 = HermesInternal;
+                const get = HTTP.get;
+                self = get(obj6);
+                c6 = 3;
+                c7 = 1;
+                const obj8 = { value: self, done: false };
+                return obj8;
+              }
             }
           }
+        } else if (1 === c6) {
+          c5 = 0;
+          authorization.authorization.authing = false;
+          throw closure_4;
+        } else if (2 === c6) {
+          c5 = 1;
+          let closure_9 = closure_4;
+          self = closure_9 instanceof closure_131_1(closure_131_3[10]);
+          if (self) {
+            throw closure_9;
+          } else {
+            const obj9 = { errorCode: closure_131_14.INVALID_TOKEN };
+            const _HermesInternal = HermesInternal;
+            const self4 = this;
+            const self5 = this;
+            const tmp32 = closure_131_1(closure_131_3[10]);
+            const tmp322 = new tmp32(obj9, "Invalid access token: " + access_token);
+            self = tmp322;
+            throw tmp322;
+          }
+        } else if (arg0 === 1) {
+          c7 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c5 = 0;
+          authorization.authorization.authing = false;
+          c7 = 3;
+          const obj10 = { value, done: true };
+          return obj10;
+        } else {
+          body = value;
+          authorization.authorization.authing = false;
+          body = body.body;
+          application = body.application;
+          user = body.user;
+          scopes = body.scopes;
+          expires = body.expires;
+          self = authorization.application.id;
+          if (self !== application.id) {
+            const obj11 = { errorCode: closure_131_14.INVALID_CLIENTID };
+            self = this;
+            const self3 = this;
+            const tmp17 = new closure_131_1(closure_131_3[10])(obj11, "Application does not match the connection's");
+            throw tmp17;
+          } else {
+            self = closure_131_8.getCurrentUser();
+            if (null != self) {
+              if (null != user) {
+                if (self.id === user.id) {
+                  const item = scopes.forEach((item) => {
+                    const scopes = authorization.authorization.scopes;
+                    return scopes.add(item);
+                  });
+                  scopes = authorization.authorization.scopes;
+                  scopes.add(closure_131_10);
+                  authorization.authorization.accessToken = access_token;
+                  const _Date = Date;
+                  const self8 = this;
+                  const self9 = this;
+                  authorization = authorization.authorization;
+                  const date = new Date(expires);
+                  authorization.expires = date;
+                  const obj12 = { type: "RPC_APP_AUTHENTICATED", socketId: authorization.id, application: authorization.application };
+                  const obj13 = closure_131_1(closure_131_3[20]);
+                  obj13.dispatch(obj12);
+                  const obj14 = { application, user, access_token, expires, scopes };
+                  c5 = 0;
+                  authorization.authorization.authing = false;
+                  c7 = 3;
+                  obj = { value: obj14, done: true };
+                  return obj;
+                }
+              }
+            }
+            const obj15 = { errorCode: closure_131_14.INVALID_TOKEN };
+            self = this;
+            const self2 = this;
+            const tmp10 = new closure_131_1(closure_131_3[10])(obj15, "Token does not match current user");
+            throw tmp10;
+          }
         }
-        const self = this;
-        const self2 = this;
-        obj = { errorCode: constants.INVALID_TOKEN };
-        const tmp7 = new RPCErrorDefault(obj, "Token does not match current user");
-        throw tmp7;
+      } catch (tmp57) {
+        closure_4 = tmp57;
+        if (0 === c5) {
+          c7 = 3;
+          throw tmp57;
+        } else if (1 === tmp59) {
+          c6 = 1;
+        } else {
+          c6 = 2;
+        }
       }
-    }, () => {
-      obj = { errorCode: constants.INVALID_TOKEN };
-      const tmp = RPCErrorDefault;
-      const tmp2 = new tmp(obj, "Invalid access token: " + closure_1);
-      throw tmp2;
-    });
-    return nextPromise.catch((error) => {
-      authorization.authorization.authing = false;
-      throw error;
-    });
-  }
-}
+    }
+  });
+  return obj(...arguments);
+};
 let Constants = Constants_mod2;
 ({ TransportTypes: c9, RPC_AUTHENTICATED_SCOPE: c10, RPC_PRIVATE_SCOPE: unpackModuleId } = Constants);
 Constants = Constants_mod2;
@@ -521,7 +609,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
   let obj2 = require("CONTEXT_MENU_ICON_NAMES");
   let obj3 = {
     handler(socket) {
-      const f153194 = function(result) {
+      const f154723 = function(result) {
         let access_token;
         let expires_in;
         let scope;
@@ -627,7 +715,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
                   let obj3 = { client_id: tmp, scope: IDENTIFY, response_type: "token", signal, isSocketRpcPrivateScope: false };
                   let tmp8 = signal;
                   const promise = authorizeWithPrompt(obj3, closure_0, closure_1);
-                  return promise.then(f153194);
+                  return promise.then(f154723);
                 } else {
                   let str = "Trying to call a non-function";
                   throw new TypeError("Trying to call a non-function");
@@ -636,7 +724,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
             } else {
               let obj3 = { client_id: id, scope: IDENTIFY, response_type: "token", signal, isSocketRpcPrivateScope: false };
               let promise = authorizeWithPrompt(obj3, socket, signal);
-              catchPromise = promise.then(f153194);
+              catchPromise = promise.then(f154723);
             }
             return catchPromise;
           }
@@ -689,7 +777,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
             throw tmp26;
           } else {
             const scopes = socket.authorization.scopes;
-            hasItem = scopes.includes(unpackModuleId);
+            hasItem = scopes.has(unpackModuleId);
             if (!hasItem) {
               if (socket.application.id !== client_id) {
                 socket.authorization.authing = false;

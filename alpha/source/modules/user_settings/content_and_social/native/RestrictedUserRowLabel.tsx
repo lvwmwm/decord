@@ -1,15 +1,15 @@
-// Module ID: 14628
-// Function ID: 14629
+// Module ID: 14889
+// Function ID: 14890
 // Name: RestrictedUserRowLabel
-// Dependencies: [19, 17, 21, 558, 576, 4586, 587, 1126, 4892, 2]
+// Dependencies: [19, 17, 21, 558, 576, 4778, 587, 1126, 5086, 2]
 
-// Module 14628 (RestrictedUserRowLabel)
+// Module 14889 (RestrictedUserRowLabel)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import useToken from "useToken" /* 4586 */;
-import Text_Text from "Text/Text" /* 4892 */;
+import useToken from "useToken" /* 4778 */;
+import Text_Text from "Text/Text" /* 5086 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -19,7 +19,7 @@ let closure_4;
 let hasOwnProperty;
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedUserRowLabel(arg0) {
   let accessibilityActions;
   let first;
   let items;
@@ -79,7 +79,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp12 = tmp6;
       if (tmp12) {
         const obj5 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, includeFontPadding: true, children: userRecord.username };
-        tmp12 = React3(tmp(4892).Text, obj5);
+        tmp12 = React3(tmp(5086).Text, obj5);
       }
       cResult[5] = null != userRecord.globalName;
       cResult[6] = userRecord.username;
@@ -93,7 +93,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = username;
   cResult[4] = tmp10;
   tmp9 = tmp10;
-}) : ((userRecord) => {
+}) : (function RestrictedUserRowLabel(userRecord) {
   let accessibilityActions;
   let intl;
   let items;

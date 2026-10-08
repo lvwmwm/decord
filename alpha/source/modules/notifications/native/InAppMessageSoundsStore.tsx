@@ -1,20 +1,20 @@
-// Module ID: 12498
-// Function ID: 12499
+// Module ID: 12594
+// Function ID: 12595
 // Name: InAppMessageSoundsStore
-// Dependencies: [510, 1254, 558, 576, 4498, 2]
+// Dependencies: [510, 1266, 558, 576, 4690, 2]
 // Exports: isInAppMessageSoundsEnabled, setInAppMessageSoundsEnabled
 
-// Module 12498 (InAppMessageSoundsStore)
+// Module 12594 (InAppMessageSoundsStore)
 import Storage2 from "Storage" /* 510 */;
 import react from "react" /* 576 */;
-import module_1254 from "module_1254" /* 1254 */;
+import module_1266 from "module_1266" /* 1266 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const _slicedToArray = tmp(4498);
+const _slicedToArray = tmp(4690);
 const InAppMessageSoundsEnabled = "InAppMessageSoundsEnabled";
-let closure_3 = module_1254.createWithEqualityFn(() => {
+let closure_3 = module_1266.createWithEqualityFn(() => {
   const Storage = Storage2.Storage;
   let isEnabled = Storage.get(InAppMessageSoundsEnabled);
   if (isEnabled == null) {
@@ -22,7 +22,7 @@ let closure_3 = module_1254.createWithEqualityFn(() => {
   }
   return { isEnabled };
 });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInAppMessageSoundsEnabled() {
   let first;
   const obj = react;
   const cResult = obj.c(1);
@@ -36,7 +36,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return closure_3(first, _slicedToArray.shallow);
-}) : (() => closure_3((isEnabled) => isEnabled.isEnabled, _slicedToArray.shallow));
+}) : (function useInAppMessageSoundsEnabled() {
+  return closure_3((isEnabled) => isEnabled.isEnabled, _slicedToArray.shallow);
+});
 let result = size.fileFinishedImporting("modules/notifications/native/InAppMessageSoundsStore.tsx");
 
 export const isInAppMessageSoundsEnabled = function isInAppMessageSoundsEnabled() {

@@ -1,23 +1,23 @@
-// Module ID: 13376
-// Function ID: 13377
+// Module ID: 13676
+// Function ID: 13677
 // Name: usePremiumTier2DeltaPriceString
-// Dependencies: [19, 6943, 6931, 1379, 6925, 6926, 1369, 6750, 558, 576, 4549, 504, 2]
+// Dependencies: [19, 7132, 7120, 1391, 7114, 7115, 1381, 6926, 558, 576, 4741, 504, 2]
 
-// Module 13376 (usePremiumTier2DeltaPriceString)
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import BillingUtils from "BillingUtils" /* 4549 */;
-import PriceUtils from "PriceUtils" /* 6750 */;
-import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 6925 */;
-import ProductIds from "ProductIds" /* 6926 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 6943 */;
+// Module 13676 (usePremiumTier2DeltaPriceString)
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import BillingUtils from "BillingUtils" /* 4741 */;
+import PriceUtils from "PriceUtils" /* 6926 */;
+import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7114 */;
+import ProductIds from "ProductIds" /* 7115 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7132 */;
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 6931 */;
+import IAPStore from "IAPStore" /* 7120 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, kind;
+let _require;
 
 function getViewerProductId(subscription) {
   if (null == subscription) {
@@ -82,7 +82,7 @@ function computeDelta(productId, currencyCode, stateFromStores) {
   }
   return closure_6;
 }
-function computeAcomDeltaResult(productId, checkoutContext, cResult) {
+function computeAcomDeltaResult(productId, checkoutContext, viewerProductId) {
   let tmp10Result3;
   let tmp10Result4;
   if (null == checkoutContext) {
@@ -98,15 +98,15 @@ function computeAcomDeltaResult(productId, checkoutContext, cResult) {
       if (null != addOnPrice) {
         if (addOnPrice.majorUnits > 0) {
           let tmp = null;
-          if (null != cResult) {
-            tmp = tmp10(6926).AppStorePremiumProductIdsToPremiumBundledItems[cResult];
+          if (null != viewerProductId) {
+            tmp = tmp10(7115).AppStorePremiumProductIdsToPremiumBundledItems[viewerProductId];
           }
-          if (null != cResult) {
+          if (null != viewerProductId) {
             if (null != tmp) {
               if (0 !== tmp.numPremiumGuild) {
                 const getAvailablePlanForItems2 = checkoutContext.getAvailablePlanForItems;
                 const tmp10Result = PremiumBundledPlansUtils;
-                const availablePlanForItems2 = getAvailablePlanForItems2(tmp10Result.getSubscriptionItemsForProduct(cResult));
+                const availablePlanForItems2 = getAvailablePlanForItems2(tmp10Result.getSubscriptionItemsForProduct(viewerProductId));
                 let addOnPrice1;
                 if (availablePlanForItems2 != null) {
                   addOnPrice1 = availablePlanForItems2.getAddOnPrice();
@@ -141,7 +141,7 @@ const useNativeCheckoutStore = NativeCheckoutStore.useNativeCheckoutStore;
 const PremiumTypes = PremiumConstants.PremiumTypes;
 let closure_6 = { priceString: null, failure: null };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((kind) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReportDeltaFailure(kind) {
   let platform;
   let obj = kind(platform[9]);
   const cResult = obj.c(6);
@@ -224,7 +224,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((kind) => {
   cResult[5] = items;
   tmp7 = items;
   tmp6 = fn;
-}) : ((kind) => {
+}) : (function useReportDeltaFailure(kind) {
   kind = undefined;
   if (kind != null) {
     kind = kind.kind;
@@ -285,130 +285,182 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((kind) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumTier, subscription, currencyCode, arg3) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumTier2DeltaPriceString(premiumTier, subscription, arg2, arg3) {
   let checkoutContext;
   let closure_0;
-  let first;
   let orderRequired;
-  let tmp11;
-  let tmp13;
-  let tmp22;
-  let tmp6;
+  let tmp12;
+  let tmp18;
+  let tmp8;
   let tmp9;
   const tmp = _require;
   let obj = require("react");
   const cResult = obj.c(17);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function f(orderRequired) {
-      const obj = { orderRequired: orderRequired.orderRequired, checkoutContext: orderRequired.getCheckoutContextRecord() };
-      return obj;
-    };
-    cResult[0] = fn;
-    first = fn;
+    class P {
+      constructor(arg0) {
+        obj = { orderRequired: premiumTier.orderRequired, checkoutContext: premiumTier.getCheckoutContextRecord() };
+        return obj;
+      }
+    }
+    cResult[0] = P;
   } else {
-    first = cResult[0];
+    class P {
+      constructor(arg0) {
+        obj = { orderRequired: premiumTier.orderRequired, checkoutContext: premiumTier.getCheckoutContextRecord() };
+        return obj;
+      }
+    }
   }
-  ({ orderRequired, checkoutContext } = useNativeCheckoutStore(first));
-  useNativeCheckoutStore(first);
+  ({ orderRequired, checkoutContext } = useNativeCheckoutStore(tmp4));
+  useNativeCheckoutStore(tmp4);
   if (cResult[1] !== subscription) {
-    const tmp8 = getViewerProductId(subscription);
+    class P {
+      constructor(arg0) {
+        obj = { orderRequired: premiumTier.orderRequired, checkoutContext: premiumTier.getCheckoutContextRecord() };
+        return obj;
+      }
+    }
     cResult[1] = subscription;
-    cResult[2] = tmp8;
-    tmp6 = tmp8;
+    cResult[2] = getViewerProductId(subscription);
+    const tmp7 = getViewerProductId(subscription);
   } else {
-    tmp6 = cResult[2];
+    class P {
+      constructor(arg0) {
+        obj = { orderRequired: premiumTier.orderRequired, checkoutContext: premiumTier.getCheckoutContextRecord() };
+        return obj;
+      }
+    }
   }
   _require = tmp6;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class P {
+      constructor(arg0) {
+        obj = { orderRequired: premiumTier.orderRequired, checkoutContext: premiumTier.getCheckoutContextRecord() };
+        return obj;
+      }
+    }
     const items = [IAPStore];
     cResult[3] = items;
-    tmp9 = items;
+    tmp8 = items;
   } else {
-    tmp9 = cResult[3];
+    class P {
+      constructor(arg0) {
+        obj = { orderRequired: premiumTier.orderRequired, checkoutContext: premiumTier.getCheckoutContextRecord() };
+        return obj;
+      }
+    }
   }
   if (cResult[4] !== tmp6) {
-    const fn2 = function k() {
-      let product = null;
-      if (null != closure_0) {
-        product = IAPStore.getProduct(tmp);
+    class P {
+      constructor(arg0) {
+        obj = { orderRequired: premiumTier.orderRequired, checkoutContext: premiumTier.getCheckoutContextRecord() };
+        return obj;
       }
-      return product;
-    };
+    }
     cResult[4] = tmp6;
-    cResult[5] = fn2;
-    tmp11 = fn2;
+    cResult[5] = tmp10;
+    tmp9 = tmp10;
   } else {
-    tmp11 = cResult[5];
+    class P {
+      constructor(arg0) {
+        obj = { orderRequired: premiumTier.orderRequired, checkoutContext: premiumTier.getCheckoutContextRecord() };
+        return obj;
+      }
+    }
   }
   const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(tmp9, tmp11);
+  const stateFromStores = tmpResult.useStateFromStores(tmp8, tmp9);
   if (cResult[6] !== orderRequired) {
-    const tmpResult2 = tmp(1369);
-    const tmp14 = tmpResult2.isIOS() && orderRequired;
+    class P {
+      constructor(arg0) {
+        obj = { orderRequired: premiumTier.orderRequired, checkoutContext: premiumTier.getCheckoutContextRecord() };
+        return obj;
+      }
+    }
+    const tmp13 = obj3.isIOS() && orderRequired;
     cResult[6] = orderRequired;
-    cResult[7] = tmp14;
-    tmp13 = tmp14;
+    cResult[7] = tmp13;
+    tmp12 = tmp13;
   } else {
-    tmp13 = cResult[7];
+    class P {
+      constructor(arg0) {
+        obj = { orderRequired: premiumTier.orderRequired, checkoutContext: premiumTier.getCheckoutContextRecord() };
+        return obj;
+      }
+    }
   }
   if (cResult[8] === stateFromStores) {
-    if (cResult[9] === currencyCode) {
-      if (cResult[10] === checkoutContext) {
-        if (cResult[11] === tmp13) {
-          if (cResult[12] === arg3) {
-            if (cResult[13] === premiumTier) {
-              if (cResult[14] === subscription) {
-                let tmp15;
-                if (cResult[15] === tmp6) {
-                  tmp15 = cResult[16];
-                }
-                const priceString = tmp15.priceString;
-                closure_10(tmp15.failure);
-                return priceString;
-              }
-            }
-          }
-        }
+    class P {
+      constructor(arg0) {
+        obj = { orderRequired: premiumTier.orderRequired, checkoutContext: premiumTier.getCheckoutContextRecord() };
+        return obj;
       }
     }
   }
   let flag = false;
   if (arg3) {
+    class P {
+      constructor(arg0) {
+        obj = { orderRequired: premiumTier.orderRequired, checkoutContext: premiumTier.getCheckoutContextRecord() };
+        return obj;
+      }
+    }
     flag = false;
     if (premiumTier.premiumTier === PremiumTypes.TIER_2) {
+      class P {
+        constructor(arg0) {
+          obj = { orderRequired: premiumTier.orderRequired, checkoutContext: premiumTier.getCheckoutContextRecord() };
+          return obj;
+        }
+      }
       flag = false;
       if (premiumTier.numPremiumGuild >= 1) {
-        const tmp18 = getViewerProductId(subscription);
-        let tmp20 = null;
-        if (null != tmp18) {
-          tmp20 = tmp(6926).AppStorePremiumProductIdsToPremiumBundledItems[tmp18];
+        class P {
+          constructor(arg0) {
+            obj = { orderRequired: premiumTier.orderRequired, checkoutContext: premiumTier.getCheckoutContextRecord() };
+            return obj;
+          }
         }
-        flag = null != tmp20 && tmp20.basePlanId === premiumTier.basePlanId && tmp20.numPremiumGuild < premiumTier.numPremiumGuild;
+        const tmp14 = getViewerProductId(subscription);
+        if (null != tmp14) {
+          class P {
+            constructor(arg0) {
+              obj = { orderRequired: premiumTier.orderRequired, checkoutContext: premiumTier.getCheckoutContextRecord() };
+              return obj;
+            }
+          }
+        }
+        flag = null != null && null.basePlanId === premiumTier.basePlanId && null.numPremiumGuild < premiumTier.numPremiumGuild;
       }
     }
   }
   if (flag) {
-    let tmp24;
-    if (tmp13) {
-      tmp24 = computeAcomDeltaResult(premiumTier, checkoutContext, tmp6);
-    } else {
-      tmp24 = computeDelta(premiumTier, currencyCode, stateFromStores);
+    class P {
+      constructor(arg0) {
+        obj = { orderRequired: premiumTier.orderRequired, checkoutContext: premiumTier.getCheckoutContextRecord() };
+        return obj;
+      }
     }
-    tmp22 = tmp24;
+    tmp18 = tmp19;
   } else {
-    tmp22 = closure_6;
+    class P {
+      constructor(arg0) {
+        obj = { orderRequired: premiumTier.orderRequired, checkoutContext: premiumTier.getCheckoutContextRecord() };
+        return obj;
+      }
+    }
   }
   cResult[8] = stateFromStores;
-  cResult[9] = currencyCode;
+  cResult[9] = arg2;
   cResult[10] = checkoutContext;
-  cResult[11] = tmp13;
+  cResult[11] = tmp12;
   cResult[12] = arg3;
   cResult[13] = premiumTier;
   cResult[14] = subscription;
   cResult[15] = tmp6;
-  cResult[16] = tmp22;
-  tmp15 = tmp22;
-}) : ((premiumTier, subscription, currencyCode, arg3) => {
+  cResult[16] = tmp18;
+}) : (function usePremiumTier2DeltaPriceString(premiumTier, subscription, currencyCode, arg3) {
   let checkoutContext;
   let closure_0;
   let orderRequired;
@@ -442,7 +494,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumTier, subscri
         const tmp2Result = tmp2(subscription);
         let tmp11 = null;
         if (null != tmp2Result) {
-          tmp11 = tmp4(6926).AppStorePremiumProductIdsToPremiumBundledItems[tmp2Result];
+          tmp11 = tmp4(7115).AppStorePremiumProductIdsToPremiumBundledItems[tmp2Result];
         }
         flag = null != tmp11 && tmp11.basePlanId === premiumTier.basePlanId && tmp11.numPremiumGuild < premiumTier.numPremiumGuild;
       }

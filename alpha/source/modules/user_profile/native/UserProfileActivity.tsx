@@ -1,68 +1,68 @@
-// Module ID: 12836
-// Function ID: 12837
+// Module ID: 12983
+// Function ID: 12984
 // Name: UserProfileActivity
-// Dependencies: [32, 109, 19, 17, 5124, 4918, 2051, 2074, 4515, 4936, 5445, 4915, 7124, 6714, 1085, 21, 4896, 587, 1369, 558, 576, 4892, 8057, 12837, 4595, 10638, 1126, 11393, 5981, 1402, 8030, 8281, 4735, 10632, 7242, 12846, 12856, 6664, 6688, 12862, 8352, 8353, 12863, 504, 12849, 12864, 12866, 12874, 12877, 7942, 4937, 12844, 12845, 5916, 6713, 1188, 12879, 9714, 4951, 7223, 5575, 5038, 4860, 9673, 12880, 9679, 12867, 5049, 10641, 9295, 5099, 5103, 6855, 9020, 12881, 12882, 12884, 12885, 2]
+// Dependencies: [32, 109, 19, 17, 5436, 5893, 2063, 2086, 4707, 5106, 5755, 5111, 7309, 6891, 1085, 21, 5090, 587, 1381, 558, 576, 5086, 8466, 12984, 4787, 10238, 1126, 11376, 6164, 1414, 8438, 7662, 4929, 10230, 7421, 12993, 13005, 6841, 6865, 13011, 8850, 8851, 13012, 504, 12998, 13013, 13015, 13023, 13026, 8360, 5107, 12991, 12992, 6189, 6890, 1200, 13028, 10919, 5135, 5903, 5885, 7438, 5054, 10862, 13029, 10868, 13016, 5417, 10241, 8626, 5940, 7476, 7043, 10619, 13030, 13031, 13033, 13034, 2]
 
-// Module 12836 (UserProfileActivity)
+// Module 12983 (UserProfileActivity)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
-import AvatarUtils from "AvatarUtils" /* 1402 */;
-import shared from "shared" /* 4735 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import hasRichActivityDefault from "hasRichActivity" /* 4937 */;
-import StreamActionCreators from "StreamActionCreators" /* 5038 */;
-import useChannelNameDefault from "useChannelName" /* 5049 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5103 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5575 */;
-import Pressables from "Pressables" /* 5916 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6664 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6688 */;
-import UserProfileCardDefault from "UserProfileCard" /* 6713 */;
-import Constants2 from "Constants" /* 6714 */;
-import transitionToGuild from "transitionToGuild" /* 6855 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7242 */;
-import isStreamingDefault from "isStreaming" /* 7942 */;
-import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8030 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8057 */;
-import UnknownGameIcon2 from "UnknownGameIcon" /* 8281 */;
-import closeVoicePanelsDefault from "closeVoicePanels" /* 9020 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9295 */;
-import isGameActivityDefault from "isGameActivity" /* 10632 */;
-import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10638 */;
-import UserProfileVoiceActivityIconDefault from "UserProfileVoiceActivityIcon" /* 10641 */;
-import UserActivitySpotify from "UserActivitySpotify" /* 11393 */;
-import isOnXboxDefault from "isOnXbox" /* 12844 */;
-import isOnPlayStationDefault from "isOnPlayStation" /* 12845 */;
-import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 12849 */;
-import UserProfileActivityVoiceChannelDefault from "UserProfileActivityVoiceChannel" /* 12866 */;
-import usePersonalizedVoiceChannelUsersDefault from "usePersonalizedVoiceChannelUsers" /* 12867 */;
-import UserProfileActivityButtons from "UserProfileActivityButtons" /* 12874 */;
-import isActivityJoinableOnCurrentPlatform from "isActivityJoinableOnCurrentPlatform" /* 12877 */;
-import UserProfileVoiceSettingsDefault from "UserProfileVoiceSettings" /* 12885 */;
+import AvatarUtils from "AvatarUtils" /* 1414 */;
+import shared from "shared" /* 4929 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import hasRichActivityDefault from "hasRichActivity" /* 5107 */;
+import useChannelNameDefault from "useChannelName" /* 5417 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5885 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import Pressables from "Pressables" /* 6189 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6841 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6865 */;
+import UserProfileCardDefault from "UserProfileCard" /* 6890 */;
+import Constants2 from "Constants" /* 6891 */;
+import transitionToGuild from "transitionToGuild" /* 7043 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7421 */;
+import StreamActionCreators from "StreamActionCreators" /* 7438 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7476 */;
+import UnknownGameIcon2 from "UnknownGameIcon" /* 7662 */;
+import isStreamingDefault from "isStreaming" /* 8360 */;
+import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8438 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8466 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8626 */;
+import isGameActivityDefault from "isGameActivity" /* 10230 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10238 */;
+import UserProfileVoiceActivityIconDefault from "UserProfileVoiceActivityIcon" /* 10241 */;
+import closeVoicePanelsDefault from "closeVoicePanels" /* 10619 */;
+import UserActivitySpotify from "UserActivitySpotify" /* 11376 */;
+import isOnXboxDefault from "isOnXbox" /* 12991 */;
+import isOnPlayStationDefault from "isOnPlayStation" /* 12992 */;
+import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 12998 */;
+import UserProfileActivityVoiceChannelDefault from "UserProfileActivityVoiceChannel" /* 13015 */;
+import usePersonalizedVoiceChannelUsersDefault from "usePersonalizedVoiceChannelUsers" /* 13016 */;
+import UserProfileActivityButtons from "UserProfileActivityButtons" /* 13023 */;
+import isActivityJoinableOnCurrentPlatform from "isActivityJoinableOnCurrentPlatform" /* 13026 */;
+import UserProfileVoiceSettingsDefault from "UserProfileVoiceSettings" /* 13034 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStore from "ApplicationStore" /* 5124 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4918 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import PresenceStore from "PresenceStore" /* 4936 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5445 */;
-import VoiceStateStore from "VoiceStateStore" /* 4915 */;
-import UserProfileStore from "UserProfileStore" /* 7124 */;
+import ApplicationStore from "ApplicationStore" /* 5436 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5893 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import PresenceStore from "PresenceStore" /* 5106 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5755 */;
+import VoiceStateStore from "VoiceStateStore" /* 5111 */;
+import UserProfileStore from "UserProfileStore" /* 7309 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let dependencyMap, href, importDefault;
+let dependencyMap, importDefault;
 
 let c9;
 let closure_19;
@@ -82,8 +82,8 @@ let obj5;
 let rect;
 let size;
 let tmp;
-const Text_Text = tmp(4892);
-const UserProfileActivityTimebarDefault = tmp(12864);
+const Text_Text = tmp(5086);
+const UserProfileActivityTimebarDefault = tmp(13013);
 let user = ["children"];
 let _slicedToArray = _slicedToArray_mod;
 ({ TouchableOpacity: metroImportDefault, TouchableWithoutFeedback: metroImportAll, View: c9 } = react_native);
@@ -105,7 +105,7 @@ if (PlatformUtils.isAndroid()) {
 }
 let closure_26 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityCardText(children) {
   let str;
   let tmp4;
   let tmp8;
@@ -148,7 +148,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
       const obj2 = { children: tmp8 };
       const Text = Text_Text.Text;
       const merged = Object.assign(tmp4);
-      const tmp16 = closure_23(Text, obj2);
+      const tmp16 = version(Text, obj2);
       cResult[5] = tmp4;
       cResult[6] = tmp8;
       cResult[7] = tmp16;
@@ -156,7 +156,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     }
   }
   return tmp10;
-}) : ((children) => {
+}) : (function ActivityCardText(children) {
   const merged = Object.assign(children, Object.assign({ children: 0 }));
   let trimmed = str;
   if (typeof children.children === "string") {
@@ -169,13 +169,13 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
       const obj = { children: trimmed };
       const Text = Text_Text.Text;
       const merged1 = Object.assign(merged);
-      tmp3 = closure_23(Text, obj);
+      tmp3 = version(Text, obj);
     }
   }
   return tmp3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((href) => {
+let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function MaybeLink(href) {
   let obj = href(576);
   const cResult = obj.c(5);
   href = href.href;
@@ -210,7 +210,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((href) => {
     tmp4 = tmp7;
   }
   return tmp2;
-}) : ((href) => {
+}) : (function MaybeLink(href) {
   href = href.href;
   const children = href.children;
   let tmp = children;
@@ -229,10 +229,10 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((href) => {
   return tmp;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityCardBody(user) {
+  let items;
+  let items1;
   let onAction;
-  let tmp12;
-  let tmp14;
   let tmp = onAction;
   let obj = user(onAction[20]);
   const cResult = obj.c(45);
@@ -271,711 +271,176 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                           if (cResult[16] === activity) {
                             if (cResult[17] === onAction) {
                               let tmp7;
+                              let tmp8;
                               if (cResult[18] === user.id) {
                                 tmp7 = cResult[19];
                               }
                               if (cResult[20] !== activity) {
-                                class T {
-                                  constructor() {
-                                    let items;
-                                    let obj5;
-                                    let tmp10;
-                                    if (!isListeningOnSpotifyDefault(activity)) {
-                                      if (activity.type !== constants.WATCHING) {
-                                        if (isGameActivityDefault(activity)) {
-                                          if (!isEmbeddedActivityDefault(activity)) {
-                                            if (null != activity.party) {
-                                              return null;
-                                            }
+                                function renderState() {
+                                  let items;
+                                  let obj5;
+                                  let tmp10;
+                                  if (!isListeningOnSpotifyDefault(activity)) {
+                                    if (activity.type !== constants.WATCHING) {
+                                      if (isGameActivityDefault(activity)) {
+                                        if (!isEmbeddedActivityDefault(activity)) {
+                                          if (null != activity.party) {
+                                            return null;
                                           }
-                                        }
-                                        if (isGameActivityDefault(activity)) {
-                                          const party = tmp3.party;
-                                          size = undefined;
-                                          if (party != null) {
-                                            size = party.size;
-                                          }
-                                          let str = "";
-                                          const tmp14 = null != size && tmp3.party.size.length >= 2;
-                                          if (tmp14) {
-                                            let formatToPlainStringResult;
-                                            if (0 === activity.party.size[1]) {
-                                              const intl2 = intl7.intl;
-                                              const obj2 = { count: activity.party.size[0] };
-                                              formatToPlainStringResult = intl2.formatToPlainString(intl7.t.IM4J4e, obj2);
-                                            } else {
-                                              const intl = intl7.intl;
-                                              const obj3 = { count: activity.party.size[0], max: activity.party.size[1] };
-                                              formatToPlainStringResult = intl.formatToPlainString(intl7.t["u//9By"], obj3);
-                                            }
-                                            str = formatToPlainStringResult;
-                                          }
-                                          const obj4 = { variant: "text-xs/medium", lineClamp: 1, children: items.join(" ") };
-                                          items = [activity.state, str];
-                                          return closure_23(closure_27, obj4);
-                                        } else {
-                                          const assets = tmp3.assets;
-                                          let large_url;
-                                          const tmp7 = closure_28;
-                                          if (assets != null) {
-                                            large_url = assets.large_url;
-                                          }
-                                          const assets2 = tmp3.assets;
-                                          let large_text;
-                                          const obj = { href: large_url, children: closure_23(tmp10, obj5) };
-                                          tmp10 = closure_27;
-                                          if (assets2 != null) {
-                                            large_text = assets2.large_text;
-                                          }
-                                          obj5 = { variant: "text-xs/medium", lineClamp: 1, children: large_text };
-                                          return closure_23(tmp7, obj);
                                         }
                                       }
+                                      if (isGameActivityDefault(activity)) {
+                                        const party = tmp3.party;
+                                        size = undefined;
+                                        if (party != null) {
+                                          size = party.size;
+                                        }
+                                        let str = "";
+                                        const tmp14 = null != size && tmp3.party.size.length >= 2;
+                                        if (tmp14) {
+                                          let formatToPlainStringResult;
+                                          if (0 === activity.party.size[1]) {
+                                            const intl2 = intl7.intl;
+                                            const obj2 = { count: activity.party.size[0] };
+                                            formatToPlainStringResult = intl2.formatToPlainString(intl7.t.IM4J4e, obj2);
+                                          } else {
+                                            const intl = intl7.intl;
+                                            const obj3 = { count: activity.party.size[0], max: activity.party.size[1] };
+                                            formatToPlainStringResult = intl.formatToPlainString(intl7.t["u//9By"], obj3);
+                                          }
+                                          str = formatToPlainStringResult;
+                                        }
+                                        const obj4 = { variant: "text-xs/medium", lineClamp: 1, children: items.join(" ") };
+                                        items = [activity.state, str];
+                                        return version(closure_27, obj4);
+                                      } else {
+                                        const assets = tmp3.assets;
+                                        let large_url;
+                                        const tmp7 = closure_28;
+                                        if (assets != null) {
+                                          large_url = assets.large_url;
+                                        }
+                                        const assets2 = tmp3.assets;
+                                        let large_text;
+                                        const obj = { href: large_url, children: version(tmp10, obj5) };
+                                        tmp10 = closure_27;
+                                        if (assets2 != null) {
+                                          large_text = assets2.large_text;
+                                        }
+                                        obj5 = { variant: "text-xs/medium", lineClamp: 1, children: large_text };
+                                        return version(tmp7, obj);
+                                      }
                                     }
-                                    return null;
                                   }
+                                  return null;
                                 }
                                 cResult[20] = activity;
-                                cResult[21] = T;
+                                cResult[21] = renderState;
+                                tmp8 = renderState;
                               } else {
-                                class T {
-                                  constructor() {
-                                    let items;
-                                    let obj5;
-                                    let tmp10;
-                                    if (!isListeningOnSpotifyDefault(activity)) {
-                                      if (activity.type !== constants.WATCHING) {
-                                        if (isGameActivityDefault(activity)) {
-                                          if (!isEmbeddedActivityDefault(activity)) {
-                                            if (null != activity.party) {
-                                              return null;
-                                            }
-                                          }
-                                        }
-                                        if (isGameActivityDefault(activity)) {
-                                          const party = tmp3.party;
-                                          size = undefined;
-                                          if (party != null) {
-                                            size = party.size;
-                                          }
-                                          let str = "";
-                                          const tmp14 = null != size && tmp3.party.size.length >= 2;
-                                          if (tmp14) {
-                                            let formatToPlainStringResult;
-                                            if (0 === activity.party.size[1]) {
-                                              const intl2 = intl7.intl;
-                                              const obj2 = { count: activity.party.size[0] };
-                                              formatToPlainStringResult = intl2.formatToPlainString(intl7.t.IM4J4e, obj2);
-                                            } else {
-                                              const intl = intl7.intl;
-                                              const obj3 = { count: activity.party.size[0], max: activity.party.size[1] };
-                                              formatToPlainStringResult = intl.formatToPlainString(intl7.t["u//9By"], obj3);
-                                            }
-                                            str = formatToPlainStringResult;
-                                          }
-                                          const obj4 = { variant: "text-xs/medium", lineClamp: 1, children: items.join(" ") };
-                                          items = [activity.state, str];
-                                          return closure_23(closure_27, obj4);
-                                        } else {
-                                          const assets = tmp3.assets;
-                                          let large_url;
-                                          const tmp7 = closure_28;
-                                          if (assets != null) {
-                                            large_url = assets.large_url;
-                                          }
-                                          const assets2 = tmp3.assets;
-                                          let large_text;
-                                          const obj = { href: large_url, children: closure_23(tmp10, obj5) };
-                                          tmp10 = closure_27;
-                                          if (assets2 != null) {
-                                            large_text = assets2.large_text;
-                                          }
-                                          obj5 = { variant: "text-xs/medium", lineClamp: 1, children: large_text };
-                                          return closure_23(tmp7, obj);
-                                        }
-                                      }
-                                    }
-                                    return null;
-                                  }
-                                }
+                                tmp8 = cResult[21];
                               }
                               if (cResult[22] === tmp5) {
-                                class T {
-                                  constructor() {
-                                    let items;
-                                    let obj5;
-                                    let tmp10;
-                                    if (!isListeningOnSpotifyDefault(activity)) {
-                                      if (activity.type !== constants.WATCHING) {
-                                        if (isGameActivityDefault(activity)) {
-                                          if (!isEmbeddedActivityDefault(activity)) {
-                                            if (null != activity.party) {
-                                              return null;
-                                            }
-                                          }
-                                        }
-                                        if (isGameActivityDefault(activity)) {
-                                          const party = tmp3.party;
-                                          size = undefined;
-                                          if (party != null) {
-                                            size = party.size;
-                                          }
-                                          let str = "";
-                                          const tmp14 = null != size && tmp3.party.size.length >= 2;
-                                          if (tmp14) {
-                                            let formatToPlainStringResult;
-                                            if (0 === activity.party.size[1]) {
-                                              const intl2 = intl7.intl;
-                                              const obj2 = { count: activity.party.size[0] };
-                                              formatToPlainStringResult = intl2.formatToPlainString(intl7.t.IM4J4e, obj2);
-                                            } else {
-                                              const intl = intl7.intl;
-                                              const obj3 = { count: activity.party.size[0], max: activity.party.size[1] };
-                                              formatToPlainStringResult = intl.formatToPlainString(intl7.t["u//9By"], obj3);
-                                            }
-                                            str = formatToPlainStringResult;
-                                          }
-                                          const obj4 = { variant: "text-xs/medium", lineClamp: 1, children: items.join(" ") };
-                                          items = [activity.state, str];
-                                          return closure_23(closure_27, obj4);
-                                        } else {
-                                          const assets = tmp3.assets;
-                                          let large_url;
-                                          const tmp7 = closure_28;
-                                          if (assets != null) {
-                                            large_url = assets.large_url;
-                                          }
-                                          const assets2 = tmp3.assets;
-                                          let large_text;
-                                          const obj = { href: large_url, children: closure_23(tmp10, obj5) };
-                                          tmp10 = closure_27;
-                                          if (assets2 != null) {
-                                            large_text = assets2.large_text;
-                                          }
-                                          obj5 = { variant: "text-xs/medium", lineClamp: 1, children: large_text };
-                                          return closure_23(tmp7, obj);
-                                        }
-                                      }
-                                    }
-                                    return null;
-                                  }
+                                let tmp10;
+                                let tmp12;
+                                let tmp14;
+                                let tmp16;
+                                if (cResult[23] === user.bot) {
+                                  tmp10 = cResult[24];
                                 }
                                 const content = tmp3.content;
                                 if (cResult[25] !== tmp6) {
-                                  class T {
-                                    constructor() {
-                                      let items;
-                                      let obj5;
-                                      let tmp10;
-                                      if (!isListeningOnSpotifyDefault(activity)) {
-                                        if (activity.type !== constants.WATCHING) {
-                                          if (isGameActivityDefault(activity)) {
-                                            if (!isEmbeddedActivityDefault(activity)) {
-                                              if (null != activity.party) {
-                                                return null;
-                                              }
-                                            }
-                                          }
-                                          if (isGameActivityDefault(activity)) {
-                                            const party = tmp3.party;
-                                            size = undefined;
-                                            if (party != null) {
-                                              size = party.size;
-                                            }
-                                            let str = "";
-                                            const tmp14 = null != size && tmp3.party.size.length >= 2;
-                                            if (tmp14) {
-                                              let formatToPlainStringResult;
-                                              if (0 === activity.party.size[1]) {
-                                                const intl2 = intl7.intl;
-                                                const obj2 = { count: activity.party.size[0] };
-                                                formatToPlainStringResult = intl2.formatToPlainString(intl7.t.IM4J4e, obj2);
-                                              } else {
-                                                const intl = intl7.intl;
-                                                const obj3 = { count: activity.party.size[0], max: activity.party.size[1] };
-                                                formatToPlainStringResult = intl.formatToPlainString(intl7.t["u//9By"], obj3);
-                                              }
-                                              str = formatToPlainStringResult;
-                                            }
-                                            const obj4 = { variant: "text-xs/medium", lineClamp: 1, children: items.join(" ") };
-                                            items = [activity.state, str];
-                                            return closure_23(closure_27, obj4);
-                                          } else {
-                                            const assets = tmp3.assets;
-                                            let large_url;
-                                            const tmp7 = closure_28;
-                                            if (assets != null) {
-                                              large_url = assets.large_url;
-                                            }
-                                            const assets2 = tmp3.assets;
-                                            let large_text;
-                                            const obj = { href: large_url, children: closure_23(tmp10, obj5) };
-                                            tmp10 = closure_27;
-                                            if (assets2 != null) {
-                                              large_text = assets2.large_text;
-                                            }
-                                            obj5 = { variant: "text-xs/medium", lineClamp: 1, children: large_text };
-                                            return closure_23(tmp7, obj);
-                                          }
-                                        }
-                                      }
-                                      return null;
-                                    }
-                                  }
+                                  const tmp6Result = tmp6();
                                   cResult[25] = tmp6;
-                                  cResult[26] = tmp12;
-                                  let tmp11 = tmp12;
+                                  cResult[26] = tmp6Result;
+                                  tmp12 = tmp6Result;
                                 } else {
-                                  class T {
-                                    constructor() {
-                                      let items;
-                                      let obj5;
-                                      let tmp10;
-                                      if (!isListeningOnSpotifyDefault(activity)) {
-                                        if (activity.type !== constants.WATCHING) {
-                                          if (isGameActivityDefault(activity)) {
-                                            if (!isEmbeddedActivityDefault(activity)) {
-                                              if (null != activity.party) {
-                                                return null;
-                                              }
-                                            }
-                                          }
-                                          if (isGameActivityDefault(activity)) {
-                                            const party = tmp3.party;
-                                            size = undefined;
-                                            if (party != null) {
-                                              size = party.size;
-                                            }
-                                            let str = "";
-                                            const tmp14 = null != size && tmp3.party.size.length >= 2;
-                                            if (tmp14) {
-                                              let formatToPlainStringResult;
-                                              if (0 === activity.party.size[1]) {
-                                                const intl2 = intl7.intl;
-                                                const obj2 = { count: activity.party.size[0] };
-                                                formatToPlainStringResult = intl2.formatToPlainString(intl7.t.IM4J4e, obj2);
-                                              } else {
-                                                const intl = intl7.intl;
-                                                const obj3 = { count: activity.party.size[0], max: activity.party.size[1] };
-                                                formatToPlainStringResult = intl.formatToPlainString(intl7.t["u//9By"], obj3);
-                                              }
-                                              str = formatToPlainStringResult;
-                                            }
-                                            const obj4 = { variant: "text-xs/medium", lineClamp: 1, children: items.join(" ") };
-                                            items = [activity.state, str];
-                                            return closure_23(closure_27, obj4);
-                                          } else {
-                                            const assets = tmp3.assets;
-                                            let large_url;
-                                            const tmp7 = closure_28;
-                                            if (assets != null) {
-                                              large_url = assets.large_url;
-                                            }
-                                            const assets2 = tmp3.assets;
-                                            let large_text;
-                                            const obj = { href: large_url, children: closure_23(tmp10, obj5) };
-                                            tmp10 = closure_27;
-                                            if (assets2 != null) {
-                                              large_text = assets2.large_text;
-                                            }
-                                            obj5 = { variant: "text-xs/medium", lineClamp: 1, children: large_text };
-                                            return closure_23(tmp7, obj);
-                                          }
-                                        }
-                                      }
-                                      return null;
-                                    }
-                                  }
+                                  tmp12 = cResult[26];
                                 }
                                 if (cResult[27] !== tmp7) {
-                                  class T {
-                                    constructor() {
-                                      let items;
-                                      let obj5;
-                                      let tmp10;
-                                      if (!isListeningOnSpotifyDefault(activity)) {
-                                        if (activity.type !== constants.WATCHING) {
-                                          if (isGameActivityDefault(activity)) {
-                                            if (!isEmbeddedActivityDefault(activity)) {
-                                              if (null != activity.party) {
-                                                return null;
-                                              }
-                                            }
-                                          }
-                                          if (isGameActivityDefault(activity)) {
-                                            const party = tmp3.party;
-                                            size = undefined;
-                                            if (party != null) {
-                                              size = party.size;
-                                            }
-                                            let str = "";
-                                            const tmp14 = null != size && tmp3.party.size.length >= 2;
-                                            if (tmp14) {
-                                              let formatToPlainStringResult;
-                                              if (0 === activity.party.size[1]) {
-                                                const intl2 = intl7.intl;
-                                                const obj2 = { count: activity.party.size[0] };
-                                                formatToPlainStringResult = intl2.formatToPlainString(intl7.t.IM4J4e, obj2);
-                                              } else {
-                                                const intl = intl7.intl;
-                                                const obj3 = { count: activity.party.size[0], max: activity.party.size[1] };
-                                                formatToPlainStringResult = intl.formatToPlainString(intl7.t["u//9By"], obj3);
-                                              }
-                                              str = formatToPlainStringResult;
-                                            }
-                                            const obj4 = { variant: "text-xs/medium", lineClamp: 1, children: items.join(" ") };
-                                            items = [activity.state, str];
-                                            return closure_23(closure_27, obj4);
-                                          } else {
-                                            const assets = tmp3.assets;
-                                            let large_url;
-                                            const tmp7 = closure_28;
-                                            if (assets != null) {
-                                              large_url = assets.large_url;
-                                            }
-                                            const assets2 = tmp3.assets;
-                                            let large_text;
-                                            const obj = { href: large_url, children: closure_23(tmp10, obj5) };
-                                            tmp10 = closure_27;
-                                            if (assets2 != null) {
-                                              large_text = assets2.large_text;
-                                            }
-                                            obj5 = { variant: "text-xs/medium", lineClamp: 1, children: large_text };
-                                            return closure_23(tmp7, obj);
-                                          }
-                                        }
-                                      }
-                                      return null;
-                                    }
-                                  }
+                                  const tmp7Result = tmp7();
                                   cResult[27] = tmp7;
-                                  cResult[28] = tmp14;
+                                  cResult[28] = tmp7Result;
+                                  tmp14 = tmp7Result;
                                 } else {
-                                  class T {
-                                    constructor() {
-                                      let items;
-                                      let obj5;
-                                      let tmp10;
-                                      if (!isListeningOnSpotifyDefault(activity)) {
-                                        if (activity.type !== constants.WATCHING) {
-                                          if (isGameActivityDefault(activity)) {
-                                            if (!isEmbeddedActivityDefault(activity)) {
-                                              if (null != activity.party) {
-                                                return null;
-                                              }
-                                            }
-                                          }
-                                          if (isGameActivityDefault(activity)) {
-                                            const party = tmp3.party;
-                                            size = undefined;
-                                            if (party != null) {
-                                              size = party.size;
-                                            }
-                                            let str = "";
-                                            const tmp14 = null != size && tmp3.party.size.length >= 2;
-                                            if (tmp14) {
-                                              let formatToPlainStringResult;
-                                              if (0 === activity.party.size[1]) {
-                                                const intl2 = intl7.intl;
-                                                const obj2 = { count: activity.party.size[0] };
-                                                formatToPlainStringResult = intl2.formatToPlainString(intl7.t.IM4J4e, obj2);
-                                              } else {
-                                                const intl = intl7.intl;
-                                                const obj3 = { count: activity.party.size[0], max: activity.party.size[1] };
-                                                formatToPlainStringResult = intl.formatToPlainString(intl7.t["u//9By"], obj3);
-                                              }
-                                              str = formatToPlainStringResult;
-                                            }
-                                            const obj4 = { variant: "text-xs/medium", lineClamp: 1, children: items.join(" ") };
-                                            items = [activity.state, str];
-                                            return closure_23(closure_27, obj4);
-                                          } else {
-                                            const assets = tmp3.assets;
-                                            let large_url;
-                                            const tmp7 = closure_28;
-                                            if (assets != null) {
-                                              large_url = assets.large_url;
-                                            }
-                                            const assets2 = tmp3.assets;
-                                            let large_text;
-                                            const obj = { href: large_url, children: closure_23(tmp10, obj5) };
-                                            tmp10 = closure_27;
-                                            if (assets2 != null) {
-                                              large_text = assets2.large_text;
-                                            }
-                                            obj5 = { variant: "text-xs/medium", lineClamp: 1, children: large_text };
-                                            return closure_23(tmp7, obj);
-                                          }
-                                        }
-                                      }
-                                      return null;
-                                    }
-                                  }
+                                  tmp14 = cResult[28];
                                 }
                                 if (cResult[29] !== tmp8) {
-                                  class T {
-                                    constructor() {
-                                      let items;
-                                      let obj5;
-                                      let tmp10;
-                                      if (!isListeningOnSpotifyDefault(activity)) {
-                                        if (activity.type !== constants.WATCHING) {
-                                          if (isGameActivityDefault(activity)) {
-                                            if (!isEmbeddedActivityDefault(activity)) {
-                                              if (null != activity.party) {
-                                                return null;
-                                              }
-                                            }
-                                          }
-                                          if (isGameActivityDefault(activity)) {
-                                            const party = tmp3.party;
-                                            size = undefined;
-                                            if (party != null) {
-                                              size = party.size;
-                                            }
-                                            let str = "";
-                                            const tmp14 = null != size && tmp3.party.size.length >= 2;
-                                            if (tmp14) {
-                                              let formatToPlainStringResult;
-                                              if (0 === activity.party.size[1]) {
-                                                const intl2 = intl7.intl;
-                                                const obj2 = { count: activity.party.size[0] };
-                                                formatToPlainStringResult = intl2.formatToPlainString(intl7.t.IM4J4e, obj2);
-                                              } else {
-                                                const intl = intl7.intl;
-                                                const obj3 = { count: activity.party.size[0], max: activity.party.size[1] };
-                                                formatToPlainStringResult = intl.formatToPlainString(intl7.t["u//9By"], obj3);
-                                              }
-                                              str = formatToPlainStringResult;
-                                            }
-                                            const obj4 = { variant: "text-xs/medium", lineClamp: 1, children: items.join(" ") };
-                                            items = [activity.state, str];
-                                            return closure_23(closure_27, obj4);
-                                          } else {
-                                            const assets = tmp3.assets;
-                                            let large_url;
-                                            const tmp7 = closure_28;
-                                            if (assets != null) {
-                                              large_url = assets.large_url;
-                                            }
-                                            const assets2 = tmp3.assets;
-                                            let large_text;
-                                            const obj = { href: large_url, children: closure_23(tmp10, obj5) };
-                                            tmp10 = closure_27;
-                                            if (assets2 != null) {
-                                              large_text = assets2.large_text;
-                                            }
-                                            obj5 = { variant: "text-xs/medium", lineClamp: 1, children: large_text };
-                                            return closure_23(tmp7, obj);
-                                          }
-                                        }
-                                      }
-                                      return null;
-                                    }
-                                  }
+                                  const tmp8Result = tmp8();
                                   cResult[29] = tmp8;
-                                  cResult[30] = tmp16;
+                                  cResult[30] = tmp8Result;
+                                  tmp16 = tmp8Result;
                                 } else {
-                                  class T {
-                                    constructor() {
-                                      let items;
-                                      let obj5;
-                                      let tmp10;
-                                      if (!isListeningOnSpotifyDefault(activity)) {
-                                        if (activity.type !== constants.WATCHING) {
-                                          if (isGameActivityDefault(activity)) {
-                                            if (!isEmbeddedActivityDefault(activity)) {
-                                              if (null != activity.party) {
-                                                return null;
-                                              }
-                                            }
-                                          }
-                                          if (isGameActivityDefault(activity)) {
-                                            const party = tmp3.party;
-                                            size = undefined;
-                                            if (party != null) {
-                                              size = party.size;
-                                            }
-                                            let str = "";
-                                            const tmp14 = null != size && tmp3.party.size.length >= 2;
-                                            if (tmp14) {
-                                              let formatToPlainStringResult;
-                                              if (0 === activity.party.size[1]) {
-                                                const intl2 = intl7.intl;
-                                                const obj2 = { count: activity.party.size[0] };
-                                                formatToPlainStringResult = intl2.formatToPlainString(intl7.t.IM4J4e, obj2);
-                                              } else {
-                                                const intl = intl7.intl;
-                                                const obj3 = { count: activity.party.size[0], max: activity.party.size[1] };
-                                                formatToPlainStringResult = intl.formatToPlainString(intl7.t["u//9By"], obj3);
-                                              }
-                                              str = formatToPlainStringResult;
-                                            }
-                                            const obj4 = { variant: "text-xs/medium", lineClamp: 1, children: items.join(" ") };
-                                            items = [activity.state, str];
-                                            return closure_23(closure_27, obj4);
-                                          } else {
-                                            const assets = tmp3.assets;
-                                            let large_url;
-                                            const tmp7 = closure_28;
-                                            if (assets != null) {
-                                              large_url = assets.large_url;
-                                            }
-                                            const assets2 = tmp3.assets;
-                                            let large_text;
-                                            const obj = { href: large_url, children: closure_23(tmp10, obj5) };
-                                            tmp10 = closure_27;
-                                            if (assets2 != null) {
-                                              large_text = assets2.large_text;
-                                            }
-                                            obj5 = { variant: "text-xs/medium", lineClamp: 1, children: large_text };
-                                            return closure_23(tmp7, obj);
-                                          }
-                                        }
-                                      }
-                                      return null;
-                                    }
-                                  }
+                                  tmp16 = cResult[30];
                                 }
                                 if (cResult[31] === activity) {
-                                  class T {
-                                    constructor() {
-                                      let items;
-                                      let obj5;
-                                      let tmp10;
-                                      if (!isListeningOnSpotifyDefault(activity)) {
-                                        if (activity.type !== constants.WATCHING) {
-                                          if (isGameActivityDefault(activity)) {
-                                            if (!isEmbeddedActivityDefault(activity)) {
-                                              if (null != activity.party) {
-                                                return null;
+                                  if (cResult[32] === tmp3.badges) {
+                                    let tmp18;
+                                    if (cResult[33] === user.bot) {
+                                      tmp18 = cResult[34];
+                                    }
+                                    if (cResult[35] === tmp3.content) {
+                                      if (cResult[36] === tmp16) {
+                                        if (cResult[37] === tmp18) {
+                                          if (cResult[38] === tmp12) {
+                                            let tmp22;
+                                            if (cResult[39] === tmp14) {
+                                              tmp22 = cResult[40];
+                                            }
+                                            if (cResult[41] === tmp3.body) {
+                                              if (cResult[42] === tmp22) {
+                                                let tmp26;
+                                                if (cResult[43] === tmp10) {
+                                                  tmp26 = cResult[44];
+                                                }
+                                                return tmp26;
                                               }
                                             }
-                                          }
-                                          if (isGameActivityDefault(activity)) {
-                                            const party = tmp3.party;
-                                            size = undefined;
-                                            if (party != null) {
-                                              size = party.size;
-                                            }
-                                            let str = "";
-                                            const tmp14 = null != size && tmp3.party.size.length >= 2;
-                                            if (tmp14) {
-                                              let formatToPlainStringResult;
-                                              if (0 === activity.party.size[1]) {
-                                                const intl2 = intl7.intl;
-                                                const obj2 = { count: activity.party.size[0] };
-                                                formatToPlainStringResult = intl2.formatToPlainString(intl7.t.IM4J4e, obj2);
-                                              } else {
-                                                const intl = intl7.intl;
-                                                const obj3 = { count: activity.party.size[0], max: activity.party.size[1] };
-                                                formatToPlainStringResult = intl.formatToPlainString(intl7.t["u//9By"], obj3);
-                                              }
-                                              str = formatToPlainStringResult;
-                                            }
-                                            const obj4 = { variant: "text-xs/medium", lineClamp: 1, children: items.join(" ") };
-                                            items = [activity.state, str];
-                                            return closure_23(closure_27, obj4);
-                                          } else {
-                                            const assets = tmp3.assets;
-                                            let large_url;
-                                            const tmp7 = closure_28;
-                                            if (assets != null) {
-                                              large_url = assets.large_url;
-                                            }
-                                            const assets2 = tmp3.assets;
-                                            let large_text;
-                                            const obj = { href: large_url, children: closure_23(tmp10, obj5) };
-                                            tmp10 = closure_27;
-                                            if (assets2 != null) {
-                                              large_text = assets2.large_text;
-                                            }
-                                            obj5 = { variant: "text-xs/medium", lineClamp: 1, children: large_text };
-                                            return closure_23(tmp7, obj);
+                                            let obj4 = { style: tmp9, children: items };
+                                            items = [tmp10, tmp22];
+                                            const tmp29 = closure_24(closure_9, obj4);
+                                            cResult[41] = tmp3.body;
+                                            cResult[42] = tmp22;
+                                            cResult[43] = tmp10;
+                                            cResult[44] = tmp29;
+                                            tmp26 = tmp29;
                                           }
                                         }
                                       }
-                                      return null;
                                     }
+                                    let tmp23 = closure_24;
+                                    let tmp24 = closure_9;
+                                    let obj5 = { style: content, children: items1 };
+                                    items1 = [tmp12, tmp14, tmp16, tmp18];
+                                    let tmp25 = closure_24(closure_9, obj5);
+                                    cResult[35] = tmp3.content;
+                                    cResult[36] = tmp16;
+                                    cResult[37] = tmp18;
+                                    cResult[38] = tmp12;
+                                    cResult[39] = tmp14;
+                                    cResult[40] = tmp25;
+                                    tmp22 = tmp25;
                                   }
                                 }
-                                let tmp18 = !user.bot;
-                                if (tmp18) {
-                                  class T {
-                                    constructor() {
-                                      let items;
-                                      let obj5;
-                                      let tmp10;
-                                      if (!isListeningOnSpotifyDefault(activity)) {
-                                        if (activity.type !== constants.WATCHING) {
-                                          if (isGameActivityDefault(activity)) {
-                                            if (!isEmbeddedActivityDefault(activity)) {
-                                              if (null != activity.party) {
-                                                return null;
-                                              }
-                                            }
-                                          }
-                                          if (isGameActivityDefault(activity)) {
-                                            const party = tmp3.party;
-                                            size = undefined;
-                                            if (party != null) {
-                                              size = party.size;
-                                            }
-                                            let str = "";
-                                            const tmp14 = null != size && tmp3.party.size.length >= 2;
-                                            if (tmp14) {
-                                              let formatToPlainStringResult;
-                                              if (0 === activity.party.size[1]) {
-                                                const intl2 = intl7.intl;
-                                                const obj2 = { count: activity.party.size[0] };
-                                                formatToPlainStringResult = intl2.formatToPlainString(intl7.t.IM4J4e, obj2);
-                                              } else {
-                                                const intl = intl7.intl;
-                                                const obj3 = { count: activity.party.size[0], max: activity.party.size[1] };
-                                                formatToPlainStringResult = intl.formatToPlainString(intl7.t["u//9By"], obj3);
-                                              }
-                                              str = formatToPlainStringResult;
-                                            }
-                                            const obj4 = { variant: "text-xs/medium", lineClamp: 1, children: items.join(" ") };
-                                            items = [activity.state, str];
-                                            return closure_23(closure_27, obj4);
-                                          } else {
-                                            const assets = tmp3.assets;
-                                            let large_url;
-                                            const tmp7 = closure_28;
-                                            if (assets != null) {
-                                              large_url = assets.large_url;
-                                            }
-                                            const assets2 = tmp3.assets;
-                                            let large_text;
-                                            const obj = { href: large_url, children: closure_23(tmp10, obj5) };
-                                            tmp10 = closure_27;
-                                            if (assets2 != null) {
-                                              large_text = assets2.large_text;
-                                            }
-                                            obj5 = { variant: "text-xs/medium", lineClamp: 1, children: large_text };
-                                            return closure_23(tmp7, obj);
-                                          }
-                                        }
-                                      }
-                                      return null;
-                                    }
-                                  }
-                                  let obj4 = { style: tmp3.badges, activity };
-                                  tmp18 = closure_23(activity(tmp[35]), obj4);
+                                let tmp19 = !user.bot;
+                                if (tmp19) {
+                                  let obj6 = { style: tmp3.badges, activity };
+                                  tmp19 = closure_23(activity(tmp[35]), obj6);
                                 }
                                 cResult[31] = activity;
                                 cResult[32] = tmp3.badges;
                                 cResult[33] = user.bot;
-                                cResult[34] = tmp18;
+                                cResult[34] = tmp19;
+                                tmp18 = tmp19;
                               }
-                              let tmp10 = !user.bot && tmp5();
+                              let tmp11 = !user.bot && tmp5();
                               cResult[22] = tmp5;
                               cResult[23] = user.bot;
-                              cResult[24] = tmp10;
+                              cResult[24] = tmp11;
+                              tmp10 = tmp11;
                             }
                           }
-                          const fn3 = function b() {
+                          function renderDescription() {
                             let obj3;
                             let obj4;
                             if (isListeningOnSpotifyDefault(activity)) {
@@ -987,7 +452,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                               if (null != trimmed) {
                                 tmp11 = null;
                                 if ("" !== trimmed) {
-                                  const obj2 = { variant: "text-xs/medium", lineClamp: 1, children: closure_23(UserActivitySpotify.SpotifyArtists, obj3) };
+                                  const obj2 = { variant: "text-xs/medium", lineClamp: 1, children: version(UserActivitySpotify.SpotifyArtists, obj3) };
                                   obj3 = {
                                     artists: trimmed,
                                     activity,
@@ -996,7 +461,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                             return onAction({ action: "OPEN_SPOTIFY_ARTIST" });
                                           }
                                   };
-                                  tmp11 = closure_23(closure_27, obj2);
+                                  tmp11 = version(closure_27, obj2);
                                 }
                               }
                               return tmp11;
@@ -1006,24 +471,24 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                               if (!tmp4) {
                                 state = tmp3.state;
                               }
-                              const obj = { href: activity.state_url, children: closure_23(closure_27, obj4) };
+                              const obj = { href: activity.state_url, children: version(closure_27, obj4) };
                               obj4 = { variant: "text-xs/medium", lineClamp: 1, children: state };
-                              return closure_23(closure_28, obj);
+                              return version(closure_28, obj);
                             }
-                          };
+                          }
                           cResult[16] = activity;
                           cResult[17] = onAction;
                           cResult[18] = user.id;
-                          cResult[19] = fn3;
-                          tmp7 = fn3;
+                          cResult[19] = renderDescription;
+                          tmp7 = renderDescription;
                         }
-                        const fn2 = function f() {
+                        function renderName() {
                           let obj3;
                           let obj4;
                           let tmp4Result;
                           let tmp6;
                           if (isListeningOnSpotifyDefault(activity)) {
-                            const obj2 = { variant: "text-md/semibold", children: closure_23(UserActivitySpotify.SpotifyTrack, obj3) };
+                            const obj2 = { variant: "text-md/semibold", children: version(UserActivitySpotify.SpotifyTrack, obj3) };
                             obj3 = {
                               text: activity.details,
                               activity,
@@ -1034,7 +499,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                             tmp4Result = tmp4(closure_27, obj2);
                           } else {
                             let name;
-                            const obj = { href: activity.details_url, children: closure_23(tmp6, obj4) };
+                            const obj = { href: activity.details_url, children: version(tmp6, obj4) };
                             const tmp5 = closure_28;
                             tmp6 = closure_27;
                             if (isGameActivityDefault(activity)) {
@@ -1049,11 +514,11 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                             tmp4Result = tmp4(tmp5, obj);
                           }
                           return tmp4Result;
-                        };
+                        }
                         cResult[13] = activity;
                         cResult[14] = onAction;
-                        cResult[15] = fn2;
-                        tmp6 = fn2;
+                        cResult[15] = renderName;
+                        tmp6 = renderName;
                       }
                     }
                   }
@@ -1065,7 +530,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       }
     }
   }
-  const fn = function n() {
+  function renderImage() {
     let UnknownGameIcon;
     let colors;
     let id;
@@ -1099,16 +564,16 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                 const obj = user(onAction[27]);
                 obj.openAlbum(activity, id.id);
               },
-          children: closure_23(React4, obj3)
+          children: version(React4, obj3)
         };
         intl = intl7.intl;
-        obj3 = { style: items, children: closure_23(tmp45, obj5) };
+        obj3 = { style: items, children: version(tmp45, obj5) };
         items = [, ];
         ({ imageContainer: arr3[0], imageAspectRatio: arr3[1] } = closure_3);
         obj5 = { source: obj12.makeSource(largeImage.src), accessibilityLabel: largeImage.alt, style: closure_3.largeImage };
         tmp45 = FastImageDefault;
         obj12 = AvatarUtils;
-        tmp48Result = closure_23(metroImportAll, obj2);
+        tmp48Result = version(metroImportAll, obj2);
       }
       return tmp48Result;
     }
@@ -1118,13 +583,13 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       items1[1] = isCrunchyrollActivityDefault(activity) ? closure_3.crunchyrollImageAspectRatio : closure_3.imageAspectRatio;
       const assets = tmp11.assets;
       let large_url;
-      const tmp12 = closure_23;
+      const tmp12 = version;
       const tmp6 = closure_24;
       const tmp7 = React4;
       if (assets != null) {
         large_url = assets.large_url;
       }
-      const obj6 = { href: large_url, children: closure_23(tmp18, obj7) };
+      const obj6 = { href: large_url, children: version(tmp18, obj7) };
       obj7 = { source: obj4.makeSource(largeImage.src), accessibilityLabel: largeImage.alt, style: closure_3.largeImage };
       tmp18 = FastImageDefault;
       obj4 = AvatarUtils;
@@ -1134,13 +599,13 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         const assets2 = tmp11.assets;
         let small_url;
         const obj9 = { style: closure_3.smallImageBackground, children: tmp25(closure_28, obj10) };
-        const tmp23 = closure_23;
+        const tmp23 = version;
         const tmp24 = React4;
-        tmp25 = closure_23;
+        tmp25 = version;
         if (assets2 != null) {
           small_url = assets2.small_url;
         }
-        obj10 = { href: small_url, children: closure_23(tmp30, obj11) };
+        obj10 = { href: small_url, children: version(tmp30, obj11) };
         obj11 = { source: obj8.makeSource(smallImage.src), accessibilityLabel: smallImage.alt, style: closure_3.smallImage };
         tmp30 = FastImageDefault;
         obj8 = AvatarUtils;
@@ -1149,7 +614,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       items2[1] = tmp23Result;
       tmp48Result = tmp6(tmp7, obj);
     } else {
-      const obj13 = { style: items3, children: closure_23(UnknownGameIcon, obj14) };
+      const obj13 = { style: items3, children: version(UnknownGameIcon, obj14) };
       items3 = [, ];
       ({ imageContainer: arr4[0], imageAspectRatio: arr4[1] } = closure_3);
       obj14 = { size: "custom", style: closure_3.largeImage, color: isThemeDarkResult ? colors.WHITE : colors.BLACK };
@@ -1157,9 +622,9 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       const obj15 = shared;
       isThemeDarkResult = obj15.isThemeDark(theme);
       colors = nativeDefault.colors;
-      tmp48Result = closure_23(React4, obj13);
+      tmp48Result = version(React4, obj13);
     }
-  };
+  }
   cResult[0] = activity;
   cResult[1] = largeImage;
   cResult[2] = onAction;
@@ -1172,9 +637,9 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[9] = tmp3.smallImageBackground;
   cResult[10] = theme;
   cResult[11] = user.id;
-  cResult[12] = fn;
-  tmp5 = fn;
-}) : ((user) => {
+  cResult[12] = renderImage;
+  tmp5 = renderImage;
+}) : (function ActivityCardBody(user) {
   let UnknownGameIcon;
   let colors;
   let intl;
@@ -1207,8 +672,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   let tmp2Result5;
   let tmp30;
   let tmp31;
-  let tmp31Result3;
-  let tmp32;
+  let tmp31Result4;
   user = user.user;
   const activity = user.activity;
   const onAction = user.onAction;
@@ -1221,7 +685,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   let tmp9 = !user.bot;
   const obj2 = { style: tmp.body, children: items4 };
   if (tmp9) {
-    let tmp50Result;
+    let tmp49Result;
     if (null != largeImage) {
       const tmp11 = activity;
       if (activity(onAction[25])(activity)) {
@@ -1243,9 +707,9 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         obj5 = { source: tmp2Result.makeSource(largeImage.src), accessibilityLabel: largeImage.alt, style: tmp.largeImage };
         tmp11Result = tmp11(onAction[28]);
         tmp2Result = user(onAction[29]);
-        tmp50Result = closure_23(closure_8, obj3);
+        tmp49Result = closure_23(closure_8, obj3);
       }
-      tmp9 = tmp50Result;
+      tmp9 = tmp49Result;
     }
     if (null != largeImage) {
       const items1 = [tmp.imageContainer, ];
@@ -1276,7 +740,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         tmp14Result = tmp14(tmp8, obj9);
       }
       items2[1] = tmp14Result;
-      tmp50Result = tmp7(tmp8, obj6);
+      tmp49Result = tmp7(tmp8, obj6);
     } else {
       const obj12 = { style: items3, children: closure_23(UnknownGameIcon, obj13) };
       items3 = [, ];
@@ -1286,7 +750,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       const tmp2Result6 = user(onAction[32]);
       isThemeDarkResult = tmp2Result6.isThemeDark(tmp6);
       colors = activity(tmp3[17]).colors;
-      tmp50Result = tmp50(tmp8, obj12);
+      tmp49Result = tmp49(tmp8, obj12);
     }
   }
   items4 = [tmp9, ];
@@ -1303,7 +767,6 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     tmp25Result = tmp25(closure_27, obj15);
     tmp30 = closure_27;
     tmp31 = tmp25;
-    tmp32 = tmp25;
   } else {
     let name;
     const obj17 = { href: activity.details_url, children: closure_23(closure_27, obj18) };
@@ -1320,7 +783,6 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     tmp25Result = tmp25(tmp26, obj17);
     tmp30 = tmp27;
     tmp31 = tmp25;
-    tmp32 = tmp25;
   }
   items5 = [tmp25Result, , , ];
   if (activity(onAction[25])(activity)) {
@@ -1344,25 +806,25 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         tmp31Result = tmp31(tmp30, obj19);
       }
     }
-    tmp31Result3 = tmp31Result;
+    tmp31Result4 = tmp31Result;
   } else {
     let state = activity.details;
-    const tmp34 = tmp24(tmp3[33])(activity) || null == activity.state;
-    if (!tmp34) {
+    const tmp33 = tmp24(tmp3[33])(activity) || null == activity.state;
+    if (!tmp33) {
       state = activity.state;
     }
     const obj21 = { href: activity.state_url, children: tmp31(tmp30, obj22) };
     obj22 = { variant: "text-xs/medium", lineClamp: 1, children: state };
-    tmp31Result3 = tmp31(closure_28, obj21);
+    tmp31Result4 = tmp31(closure_28, obj21);
   }
-  items5[1] = tmp31Result3;
-  let tmp31Result4 = null;
+  items5[1] = tmp31Result4;
+  let tmp31Result5 = null;
   if (!activity(onAction[25])(activity)) {
-    tmp31Result4 = null;
+    tmp31Result5 = null;
     if (activity.type !== constants.WATCHING) {
       if (activity(onAction[33])(activity)) {
         if (!activity(onAction[34])(activity)) {
-          tmp31Result4 = null;
+          tmp31Result5 = null;
         }
       }
       if (activity(onAction[33])(activity)) {
@@ -1372,8 +834,8 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           size = party.size;
         }
         let str3 = "";
-        const tmp47 = null != size && activity.party.size.length >= 2;
-        if (tmp47) {
+        const tmp46 = null != size && activity.party.size.length >= 2;
+        if (tmp46) {
           let formatToPlainStringResult;
           if (0 === activity.party.size[1]) {
             const intl3 = tmp2(tmp3[26]).intl;
@@ -1388,11 +850,11 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         }
         const obj25 = { variant: "text-xs/medium", lineClamp: 1, children: items6.join(" ") };
         items6 = [activity.state, str3];
-        tmp31Result4 = tmp31(tmp30, obj25);
+        tmp31Result5 = tmp31(tmp30, obj25);
       } else {
         const assets3 = activity.assets;
         let large_url1;
-        const tmp43 = closure_28;
+        const tmp42 = closure_28;
         if (assets3 != null) {
           large_url1 = assets3.large_url;
         }
@@ -1403,22 +865,22 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           large_text = assets4.large_text;
         }
         obj27 = { variant: "text-xs/medium", lineClamp: 1, children: large_text };
-        tmp31Result4 = tmp31(tmp43, obj26);
+        tmp31Result5 = tmp31(tmp42, obj26);
       }
     }
   }
-  items5[2] = tmp31Result4;
-  let tmp32Result = !user.bot;
-  if (tmp32Result) {
+  items5[2] = tmp31Result5;
+  let tmp31Result6 = !user.bot;
+  if (tmp31Result6) {
     const obj28 = { style: tmp.badges, activity };
-    tmp32Result = tmp32(tmp24(tmp3[35]), obj28);
+    tmp31Result6 = tmp31(tmp24(tmp3[35]), obj28);
   }
-  items5[3] = tmp32Result;
+  items5[3] = tmp31Result6;
   items4[1] = closure_24(closure_9, obj14);
   return closure_24(closure_9, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityCard(user) {
   let activity;
   let tmp14;
   let tmp20;
@@ -1458,7 +920,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           const tmp12 = currentUser(tmp2[41])(tmp11);
           let closure_6 = tmp12;
           if (cResult[8] !== tmp12) {
-            class L {
+            class E {
               constructor() {
                 if (null != closure_6) {
                   tmpResult = tmp();
@@ -1467,9 +929,9 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
               }
             }
             cResult[8] = tmp12;
-            cResult[9] = L;
+            cResult[9] = E;
           } else {
-            class L {
+            class E {
               constructor() {
                 if (null != closure_6) {
                   tmpResult = tmp();
@@ -1480,7 +942,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           }
           if (cResult[10] === tmp10) {
             let tmp17;
-            class L {
+            class E {
               constructor() {
                 if (null != closure_6) {
                   tmpResult = tmp();
@@ -1491,7 +953,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
             currentUser(tmp2[42])(tmp14);
             const _Symbol = Symbol;
             if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-              class L {
+              class E {
                 constructor() {
                   if (null != closure_6) {
                     tmpResult = tmp();
@@ -1502,7 +964,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
               const items = [GuildStore, , ];
               items[1] = VoiceStateStore;
               items[2] = ChannelStore;
-              class V {
+              class F {
                 constructor() {
                   tmp = activity;
                   if (closure_1(closure_2[34])(activity)) {
@@ -1535,7 +997,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
               }
               tmp17 = items;
             } else {
-              class L {
+              class E {
                 constructor() {
                   if (null != closure_6) {
                     tmpResult = tmp();
@@ -1546,7 +1008,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
             }
             if (cResult[14] === activity) {
               let tmp22;
-              class L {
+              class E {
                 constructor() {
                   if (null != closure_6) {
                     tmpResult = tmp();
@@ -1558,7 +1020,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
               const stateFromStores = tmpResult.useStateFromStores(tmp17, tmp20);
               const _Symbol2 = Symbol;
               if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-                class L {
+                class E {
                   constructor() {
                     if (null != closure_6) {
                       tmpResult = tmp();
@@ -1570,7 +1032,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                 cResult[17] = items1;
                 tmp22 = items1;
               } else {
-                class L {
+                class E {
                   constructor() {
                     if (null != closure_6) {
                       tmpResult = tmp();
@@ -1580,7 +1042,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                 }
               }
               if (cResult[18] === activity.application_id) {
-                class L {
+                class E {
                   constructor() {
                     if (null != closure_6) {
                       tmpResult = tmp();
@@ -1591,7 +1053,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                 const tmpResult2 = tmp(tmp2[43]);
                 const stateFromStores1 = tmpResult2.useStateFromStores(tmp22, tmp23);
                 if (activity.type !== constants.CUSTOM_STATUS) {
-                  class L {
+                  class E {
                     constructor() {
                       if (null != closure_6) {
                         tmpResult = tmp();
@@ -1602,7 +1064,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                 }
                 return null;
               }
-              class V {
+              class F {
                 constructor() {
                   tmp = activity;
                   if (closure_1(closure_2[34])(activity)) {
@@ -1638,7 +1100,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
               cResult[20] = tmp24;
               tmp23 = tmp24;
             }
-            class V {
+            class F {
               constructor() {
                 tmp = activity;
                 if (closure_1(closure_2[34])(activity)) {
@@ -1671,8 +1133,8 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
             }
             cResult[14] = activity;
             cResult[15] = user.id;
-            cResult[16] = V;
-            tmp20 = V;
+            cResult[16] = F;
+            tmp20 = F;
           }
           let obj2 = { userId: user.id, onAction: tmp10 };
           cResult[10] = tmp10;
@@ -1695,7 +1157,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[3] = user;
   cResult[4] = obj4;
   tmp9 = obj4;
-}) : (function(user) {
+}) : (function ActivityCard(user) {
   let PressableOpacity;
   let activity;
   let buttons;
@@ -1721,19 +1183,19 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   let closure_3;
   const style = user.style;
   const tmp = closure_26();
-  const tmp4 = activity(12856)(activity);
-  const tmp5 = activity(6664);
-  const analyticsLocations = tmp5(activity(6688).USER_PROFILE_LIVE_ACTIVITY_CARD).analyticsLocations;
+  const tmp4 = activity(13005)(activity);
+  const tmp5 = activity(6841);
+  const analyticsLocations = tmp5(activity(6865).USER_PROFILE_LIVE_ACTIVITY_CARD).analyticsLocations;
   let id;
-  const tmp6 = activity(12862);
+  const tmp6 = activity(13011);
   if (voiceChannel != null) {
     id = voiceChannel.id;
   }
   const tmp6Result = tmp6({ display: "live", voiceChannelId: id, user, activity, analyticsLocations });
   dependencyMap = tmp6Result;
   const application_id = activity.application_id;
-  const tmp2Result = activity(8353);
-  let obj = { location: "User Profile Activity Card", applicationId: application_id, source: user(8352).GameProfileSources.UserProfile, trackEntryPointImpression: true, sourceUserId: user.id };
+  const tmp2Result = activity(8851);
+  let obj = { location: "User Profile Activity Card", applicationId: application_id, source: user(8850).GameProfileSources.UserProfile, trackEntryPointImpression: true, sourceUserId: user.id };
   const tmp2ResultResult = tmp2Result(obj);
   closure_3 = tmp2ResultResult;
   const items = [tmp2ResultResult];
@@ -1743,7 +1205,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     }
   }, items);
   const obj2 = { userId: user.id, onAction: tmp6Result };
-  activity(12863)(obj2);
+  activity(13012)(obj2);
   const items1 = [GuildStore, VoiceStateStore, ChannelStore];
   const obj3 = user(504);
   const stateFromStores = obj3.useStateFromStores(items1, () => {
@@ -1789,23 +1251,23 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     tmp33Result8 = null;
     if (activity.type !== tmp16.HANG_STATUS) {
       const obj5 = { value: analyticsLocations, children: closure_23(PressableOpacity, obj6) };
-      const AnalyticsLocationProvider = tmp10(6664).AnalyticsLocationProvider;
+      const AnalyticsLocationProvider = tmp10(6841).AnalyticsLocationProvider;
       obj6 = { onPress: callback, disabled: null == tmp2ResultResult, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(user(1126).t["9sZWVp"], obj7), children: tmp34(tmp2Result2, obj8) };
-      PressableOpacity = tmp10(5916).PressableOpacity;
+      PressableOpacity = tmp10(6189).PressableOpacity;
       intl = tmp10(1126).intl;
       obj8 = { style: items3, title: tmp4.text, titleStyle: tmp.cardTitle, titleIcon: tmp33Result, children: items4 };
       items3 = [tmp.card, style];
       tmp33Result = null != tmp4.platformIcon;
       obj7 = { gameName: activity.name };
-      tmp2Result2 = activity(6713);
+      tmp2Result2 = activity(6890);
       tmp34 = closure_24;
       if (tmp33Result) {
-        const obj9 = { style: tmp.cardTitleIcon, source: makeSource(whitePNG), size: user(1188).IconSizes.SMALL_14, disableColor: true };
-        const Icon = tmp10(1188).Icon;
+        const obj9 = { style: tmp.cardTitleIcon, source: makeSource(whitePNG), size: user(1200).IconSizes.SMALL_14, disableColor: true };
+        const Icon = tmp10(1200).Icon;
         const platformIcon = tmp4.platformIcon;
         whitePNG = undefined;
-        makeSource = user(1402).makeSource;
-        user(1402);
+        makeSource = user(1414).makeSource;
+        user(1414);
         if (platformIcon != null) {
           whitePNG = platformIcon.whitePNG;
         }
@@ -1814,10 +1276,10 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       const obj10 = { user, activity, application: stateFromStores1, onAction: tmp6Result };
       items4 = [closure_23(closure_29, obj10), , , ];
       let tmp33Result5 = null;
-      if (activity(12849)(activity)) {
+      if (activity(12998)(activity)) {
         ({ start, end } = activity.timestamps);
         const obj11 = { start, end };
-        tmp33Result5 = tmp33(tmp2(12864), obj11);
+        tmp33Result5 = tmp33(tmp2(13013), obj11);
       }
       items4[1] = tmp33Result5;
       let tmp33Result6 = null;
@@ -1825,22 +1287,22 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         tmp33Result6 = null;
         if (null != stateFromStores) {
           const obj12 = { guild: stateFromStores, channel: voiceChannel, onAction: tmp6Result, style: tmp.voiceChannelDivider };
-          tmp33Result6 = tmp33(tmp2(12866), obj12);
+          tmp33Result6 = tmp33(tmp2(13015), obj12);
         }
       }
       items4[2] = tmp33Result6;
       let tmp33Result7 = null;
       if (user.id !== currentUser.id) {
-        if (activity(10638)(activity)) {
+        if (activity(10238)(activity)) {
           const obj13 = { activity, onAction: tmp6Result };
-          tmp33Result7 = tmp33(tmp10(12874).PlayOnSpotifyButton, obj13);
-        } else if (activity(7242)(activity)) {
+          tmp33Result7 = tmp33(tmp10(13023).PlayOnSpotifyButton, obj13);
+        } else if (activity(7421)(activity)) {
           const obj14 = { user, currentUser, activity, application: stateFromStores1, onAction: tmp6Result };
-          tmp33Result7 = tmp33(tmp10(12874).JoinActivityButton, obj14);
+          tmp33Result7 = tmp33(tmp10(13023).JoinActivityButton, obj14);
         } else {
-          if (activity(10632)(activity)) {
+          if (activity(10230)(activity)) {
             let supported_platforms = activity.supported_platforms;
-            const tmp10Result2 = user(12877);
+            const tmp10Result2 = user(13026);
             const currentActivityGamePlatform = tmp10Result2.getCurrentActivityGamePlatform();
             const _Set = Set;
             if (supported_platforms == null) {
@@ -1859,16 +1321,16 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                   if (null != activity.session_id) {
                     if (null != stateFromStores1) {
                       const obj15 = { user, currentUser, activity, application: stateFromStores1, onAction: tmp6Result };
-                      tmp33Result7 = tmp33(tmp10(12874).JoinGameActivityButton, obj15);
+                      tmp33Result7 = tmp33(tmp10(13023).JoinGameActivityButton, obj15);
                     }
                   }
                 }
               }
             }
           }
-          if (activity(7942)(activity)) {
+          if (activity(8360)(activity)) {
             const obj16 = { activity, onAction: tmp6Result };
-            tmp33Result7 = tmp33(tmp10(12874).WatchActivityButton, obj16);
+            tmp33Result7 = tmp33(tmp10(13023).WatchActivityButton, obj16);
           } else {
             if (null != activity.buttons) {
               if (activity.buttons.length > 0) {
@@ -1876,7 +1338,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                   style: tmp.customButtons,
                   children: buttons.map((item, index) => {
                                   const obj = { index, user, activity, onAction };
-                                  return closure_23(UserProfileActivityButtons.CustomActivityButton, obj, index);
+                                  return version(UserProfileActivityButtons.CustomActivityButton, obj, index);
                                 })
                 };
                 buttons = activity.buttons;
@@ -1884,15 +1346,15 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
               }
             }
             tmp33Result7 = null;
-            if (!activity(4937)(activity)) {
-              if (activity(12844)(activity)) {
+            if (!activity(5107)(activity)) {
+              if (activity(12991)(activity)) {
                 const obj18 = { type: constants3.XBOX, onAction: tmp6Result };
-                tmp33Result7 = tmp33(tmp10(12874).ConnectPlatformButton, obj18);
+                tmp33Result7 = tmp33(tmp10(13023).ConnectPlatformButton, obj18);
               } else {
                 tmp33Result7 = null;
-                if (activity(12845)(activity)) {
+                if (activity(12992)(activity)) {
                   const obj19 = { type: constants3.PLAYSTATION, onAction: tmp6Result };
-                  tmp33Result7 = tmp33(tmp10(12874).ConnectPlatformButton, obj19);
+                  tmp33Result7 = tmp33(tmp10(13023).ConnectPlatformButton, obj19);
                 }
               }
             }
@@ -1906,7 +1368,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   return tmp33Result8;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamActivityCard(user) {
   let activity;
   let effectiveVolume;
   let first;
@@ -2001,7 +1463,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     tmp16 = cResult[6];
   }
   if (cResult[7] !== stream.guildId) {
-    class E {
+    class L {
       constructor() {
         return GuildStore.getGuild(stream.guildId);
       }
@@ -2016,10 +1478,10 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         return isInChannel(id);
       }
     }
-    cResult[8] = E;
-    tmp18 = E;
+    cResult[8] = L;
+    tmp18 = L;
   } else {
-    class E {
+    class L {
       constructor() {
         return GuildStore.getGuild(stream.guildId);
       }
@@ -2028,7 +1490,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   const tmpResult8 = tmp(activity[43]);
   const stateFromStores2 = tmpResult8.useStateFromStores(tmp16, tmp18);
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    class E {
+    class L {
       constructor() {
         return GuildStore.getGuild(stream.guildId);
       }
@@ -2047,14 +1509,14 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     cResult[9] = items3;
     tmp20 = items3;
   } else {
-    class E {
+    class L {
       constructor() {
         return GuildStore.getGuild(stream.guildId);
       }
     }
   }
   if (cResult[10] !== user.id) {
-    class U {
+    class B {
       constructor() {
         return closure_15.findActivity(user.id, (arg0) => {
           const tmp3 = stream(activity[33])(arg0) && !stream(activity[56])(arg0);
@@ -2072,10 +1534,10 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         return isInChannel(id);
       }
     }
-    cResult[11] = U;
-    tmp21 = U;
+    cResult[11] = B;
+    tmp21 = B;
   } else {
-    class U {
+    class B {
       constructor() {
         return closure_15.findActivity(user.id, (arg0) => {
           const tmp3 = stream(activity[33])(arg0) && !stream(activity[56])(arg0);
@@ -2087,7 +1549,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   const tmpResult9 = tmp(activity[43]);
   const stateFromStores3 = tmpResult9.useStateFromStores(tmp20, tmp21);
   if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-    class U {
+    class B {
       constructor() {
         return closure_15.findActivity(user.id, (arg0) => {
           const tmp3 = stream(activity[33])(arg0) && !stream(activity[56])(arg0);
@@ -2109,7 +1571,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     cResult[12] = items4;
     tmp23 = items4;
   } else {
-    class U {
+    class B {
       constructor() {
         return closure_15.findActivity(user.id, (arg0) => {
           const tmp3 = stream(activity[33])(arg0) && !stream(activity[56])(arg0);
@@ -2232,7 +1694,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[20] = undefined;
   cResult[21] = user;
   cResult[22] = obj2;
-}) : ((user) => {
+}) : (function StreamActivityCard(user) {
   let closure_4;
   let effectiveVolume;
   let formatToPlainStringResult;
@@ -2339,7 +1801,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     mode: "a",
     stream,
     disabled: !first,
-    onPress() {
+    onPress: function handlePressImage() {
       closure_4({ action: "PRESS_IMAGE" });
       const obj = SelectedChannelActionCreatorsDefault;
       const voiceChannel = obj.selectVoiceChannel(stream.channelId);
@@ -2379,7 +1841,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   return closure_23(AnalyticsLocationProvider, obj7);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceCallActivityCard(arg0) {
   let analyticsLocations;
   let channel;
   let closure_1;
@@ -2503,7 +1965,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = channel.id;
   cResult[9] = user;
   cResult[10] = obj2;
-}) : ((arg0) => {
+}) : (function VoiceCallActivityCard(arg0) {
   let Text2;
   let Text3;
   let analyticsLocations;
@@ -2533,8 +1995,8 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   dependencyMap = undefined;
   ({ isInChannel, style } = arg0);
   let tmp = closure_26();
-  const tmp4 = stateFromStores(12867)(channel);
-  const tmp5 = stateFromStores(5049)(channel);
+  const tmp4 = stateFromStores(13016)(channel);
+  const tmp5 = stateFromStores(5417)(channel);
   let obj = channel(504);
   const items = [GuildStore];
   stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(channel.guild_id));
@@ -2548,17 +2010,17 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return isPrivateResult;
   });
-  const tmp9 = stateFromStores(6664);
-  ({ newestAnalyticsLocation: c2, analyticsLocations } = tmp9(stateFromStores(6688).USER_PROFILE_VOICE_ACTIVITY_CARD));
+  const tmp9 = stateFromStores(6841);
+  ({ newestAnalyticsLocation: c2, analyticsLocations } = tmp9(stateFromStores(6865).USER_PROFILE_VOICE_ACTIVITY_CARD));
   let obj3 = { display: "voice", activity: { type: "VOICE" }, voiceChannelId: channel.id, user, analyticsLocations };
-  tmp9(stateFromStores(6688).USER_PROFILE_VOICE_ACTIVITY_CARD);
-  const tmp11 = stateFromStores(12862)(obj3);
+  tmp9(stateFromStores(6865).USER_PROFILE_VOICE_ACTIVITY_CARD);
+  const tmp11 = stateFromStores(13011)(obj3);
   let closure_3 = tmp11;
   const obj4 = { userId: user.id, onAction: tmp11 };
-  stateFromStores(12863)(obj4);
+  stateFromStores(13012)(obj4);
   const obj5 = { style: items2, title: null, titleStyle: null, children: null };
   items2 = [tmp.card, style];
-  const tmp14 = stateFromStores(6713);
+  const tmp14 = stateFromStores(6890);
   if (!channel.isDM()) {
     let stringResult;
     let tmp13Result;
@@ -2578,7 +2040,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj7 = { users: tmp4, guildId: id };
     id = undefined;
     const obj6 = { style: tmp.body, children: items3 };
-    const tmp2Result = stateFromStores(12881);
+    const tmp2Result = stateFromStores(13030);
     if (stateFromStores != null) {
       id = stateFromStores.id;
     }
@@ -2587,7 +2049,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (stateFromStores1) {
       const obj9 = {
         accessibilityRole: "button",
-        accessibilityLabel: stateFromStores(9295)(obj10),
+        accessibilityLabel: stateFromStores(8626)(obj10),
         accessibilityHint: intl3.string(channel(1126).t["9C444m"]),
         onPress() {
               closure_3({ action: "OPEN_VOICE_CHANNEL" });
@@ -2600,19 +2062,19 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             },
         children: closure_24(Text2, obj11)
       };
-      const PressableOpacity = tmp6(5916).PressableOpacity;
+      const PressableOpacity = tmp6(6189).PressableOpacity;
       obj10 = { channel };
       intl3 = tmp6(1126).intl;
       obj11 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: items4 };
-      const obj12 = { style: tmp.voiceCallNameIconWrapper, children: closure_23(stateFromStores(10641), obj13) };
-      Text2 = tmp6(4892).Text;
+      const obj12 = { style: tmp.voiceCallNameIconWrapper, children: closure_23(stateFromStores(10241), obj13) };
+      Text2 = tmp6(5086).Text;
       obj13 = { channel, size: "sm", color: "mobile-text-heading-primary" };
       items4 = [closure_23(closure_9, obj12), tmp5];
       tmp13Result = tmp18(PressableOpacity, obj9);
     } else {
       const obj14 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: items5 };
-      const obj15 = { style: tmp.voiceCallNameIconWrapper, children: closure_23(stateFromStores(10641), obj16) };
-      const Text = tmp6(4892).Text;
+      const obj15 = { style: tmp.voiceCallNameIconWrapper, children: closure_23(stateFromStores(10241), obj16) };
+      const Text = tmp6(5086).Text;
       obj16 = { channel, size: "sm", color: "mobile-text-heading-primary" };
       items5 = [closure_23(closure_9, obj15), tmp5];
       tmp13Result = tmp13(Text, obj14);
@@ -2634,12 +2096,12 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             },
         children: closure_23(Text3, obj19)
       };
-      const PressableOpacity2 = tmp6(5916).PressableOpacity;
+      const PressableOpacity2 = tmp6(6189).PressableOpacity;
       intl4 = tmp6(1126).intl;
       intl5 = tmp6(1126).intl;
       obj18 = { guildName: stateFromStores.name };
       obj19 = { variant: "text-xs/medium", children: intl6.format(channel(1126).t["hq/Qze"], obj20) };
-      Text3 = tmp6(4892).Text;
+      Text3 = tmp6(5086).Text;
       intl6 = tmp6(1126).intl;
       obj20 = { guildName: stateFromStores.name };
       tmp18Result2 = tmp18(PressableOpacity2, obj17);
@@ -2648,7 +2110,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     items3[1] = closure_24(closure_9, obj8);
     const items7 = [closure_24(closure_9, obj6), ];
     const obj21 = { channel, isInChannel, onAction: tmp11 };
-    items7[1] = closure_23(channel(12874).VoiceChannelButtons, obj21);
+    items7[1] = closure_23(channel(13023).VoiceChannelButtons, obj21);
     obj5.children = items7;
     return closure_24(tmp14, obj5);
   }
@@ -2656,7 +2118,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   stringResult = intl2.string(tmp6(1126).t["9FaEzi"]);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileActivity(user) {
   let guildId;
   let live;
   let stream;
@@ -2695,7 +2157,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       tmp10 = cResult[3];
     }
     if (cResult[4] !== voiceChannel) {
-      class I {
+      class C {
         constructor() {
           isInChannelResult = null != voiceChannel;
           if (isInChannelResult) {
@@ -2706,10 +2168,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         }
       }
       cResult[4] = voiceChannel;
-      cResult[5] = I;
-      tmp12 = I;
+      cResult[5] = C;
+      tmp12 = C;
     } else {
-      class I {
+      class C {
         constructor() {
           isInChannelResult = null != voiceChannel;
           if (isInChannelResult) {
@@ -2725,7 +2187,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     let closure_8 = tmp14;
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      class I {
+      class C {
         constructor() {
           isInChannelResult = null != voiceChannel;
           if (isInChannelResult) {
@@ -2740,7 +2202,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       cResult[6] = items1;
       tmp15 = items1;
     } else {
-      class I {
+      class C {
         constructor() {
           isInChannelResult = null != voiceChannel;
           if (isInChannelResult) {
@@ -2754,7 +2216,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     if (cResult[7] === user.id === currentUser.id) {
       let tmp19;
       let tmp20;
-      class I {
+      class C {
         constructor() {
           isInChannelResult = null != voiceChannel;
           if (isInChannelResult) {
@@ -2768,7 +2230,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       const stateFromStores1 = tmpResult3.useStateFromStores(tmp15, tmp17);
       const _Symbol3 = Symbol;
       if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-        class I {
+        class C {
           constructor() {
             isInChannelResult = null != voiceChannel;
             if (isInChannelResult) {
@@ -2782,7 +2244,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         cResult[10] = items2;
         tmp19 = items2;
       } else {
-        class I {
+        class C {
           constructor() {
             isInChannelResult = null != voiceChannel;
             if (isInChannelResult) {
@@ -2896,7 +2358,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         cResult[29] = live;
       }
     }
-    class E {
+    class L {
       constructor() {
         tmp = closure_8;
         if (tmp) {
@@ -2913,15 +2375,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     }
     cResult[7] = user.id === currentUser.id;
     cResult[8] = user.id;
-    cResult[9] = E;
-    tmp17 = E;
+    cResult[9] = L;
+    tmp17 = L;
   }
   let obj2 = { userId: user.id, guildId };
   cResult[0] = guildId;
   cResult[1] = user.id;
   cResult[2] = obj2;
   tmp7 = obj2;
-}) : ((user) => {
+}) : (function UserProfileActivity(user) {
   let items3;
   let items4;
   let items5;
@@ -3006,16 +2468,16 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         if (null != stream) {
           if (stream.channelId === voiceChannel.id) {
             const obj2 = { user, stream, activity: voiceActivity, style: closure_3.voiceActivityCard };
-            tmp8 = closure_23(closure_31, obj2);
+            tmp8 = version(closure_31, obj2);
           }
           return tmp8;
         }
         if (null != voiceActivity) {
           const obj3 = { user, currentUser, activity: tmp2, voiceChannel, style: closure_3.voiceActivityCard };
-          tmp8 = closure_23(closure_30, obj3);
+          tmp8 = version(closure_30, obj3);
         } else {
           const obj = { user, channel: voiceChannel, isInChannel: stateFromStores, style: closure_3.voiceActivityCard };
-          tmp8 = closure_23(closure_32, obj);
+          tmp8 = version(closure_32, obj);
         }
       }
       if (stateFromStores) {
@@ -3056,7 +2518,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     items9[2] = found.map((activity, index) => {
       let application_id = activity.application_id;
       const obj = { user, currentUser, activity, style };
-      const tmp = closure_23;
+      const tmp = version;
       const tmp2 = closure_30;
       if (application_id == null) {
         application_id = index;

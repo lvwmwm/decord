@@ -1,12 +1,12 @@
-// Module ID: 8632
-// Function ID: 8633
+// Module ID: 13105
+// Function ID: 13106
 // Name: resolvedValues
-// Dependencies: [8633, 8634, 2]
+// Dependencies: [13106, 13107, 2]
 // Exports: bindResolveFieldValue
 
-// Module 8632 (resolvedValues)
-import ApplicationWidgetFieldPresentationType from "ApplicationWidgetFieldPresentationType" /* 8633 */;
-import ApplicationWidgetFieldValueType from "ApplicationWidgetFieldValueType" /* 8634 */;
+// Module 13105 (resolvedValues)
+import ApplicationWidgetFieldPresentationType from "ApplicationWidgetFieldPresentationType" /* 13106 */;
+import ApplicationWidgetFieldValueType from "ApplicationWidgetFieldValueType" /* 13107 */;
 import size_mod from "module_2" /* 2 */;
 
 function resolveFieldValue(image, items, applicationAssets) {
@@ -90,5 +90,7 @@ const result = size.fileFinishedImporting("../discord_common/js/packages/applica
 export { ResolvedValueType };
 export function bindResolveFieldValue(resolutionContext) {
   let closure_0 = resolutionContext;
-  return (image, items) => resolveFieldValue(image, items, resolutionContext);
+  return function resolveFieldValueBound(image, items) {
+    return resolveFieldValue(image, items, resolutionContext);
+  };
 }

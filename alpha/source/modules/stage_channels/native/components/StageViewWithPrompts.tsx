@@ -1,20 +1,20 @@
-// Module ID: 9616
-// Function ID: 9617
+// Module ID: 10809
+// Function ID: 10810
 // Name: StageViewWithPrompts
-// Dependencies: [19, 17, 21, 9617, 4896, 587, 558, 576, 1618, 9618, 9634, 4892, 2]
+// Dependencies: [19, 17, 21, 10810, 5090, 587, 558, 576, 1630, 10811, 10829, 5086, 2]
 
-// Module 9616 (StageViewWithPrompts)
+// Module 10809 (StageViewWithPrompts)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import StageChannelHeightHooks from "StageChannelHeightHooks" /* 9617 */;
-import FocusedControls from "FocusedControls" /* 9618 */;
-import MicrophoneSpotIllustration from "MicrophoneSpotIllustration" /* 9634 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import StageChannelHeightHooks from "StageChannelHeightHooks" /* 10810 */;
+import FocusedControls from "FocusedControls" /* 10811 */;
+import MicrophoneSpotIllustration from "MicrophoneSpotIllustration" /* 10829 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let closure_7 = StageChannelHeightHooks.CALL_ACTION_BAR_HEIGHT + 8;
 let obj = { scrollView: { flex: 1 }, container: { paddingHorizontal: 16, alignItems: "center" }, illustration: obj2, title: { marginTop: 16, marginBottom: 8, textAlign: "center" }, body: { fontSize: 14, textAlign: "center" }, prompts: { marginTop: 24, display: "flex", flexDirection: "column", width: "100%" } };
 obj2 = { marginTop: nativeDefault.space.PX_48, marginBottom: nativeDefault.space.PX_16 };
 const styles = createStyles.createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageViewWithPrompts(arg0) {
   let body;
   let bottom;
   let children;
@@ -147,7 +147,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = sum1;
   cResult[2] = obj7;
   tmp8 = obj7;
-}) : ((arg0) => {
+}) : (function StageViewWithPrompts(arg0) {
   let body;
   let bottom;
   let children;

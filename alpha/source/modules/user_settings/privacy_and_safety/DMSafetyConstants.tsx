@@ -1,10 +1,10 @@
-// Module ID: 2030
-// Function ID: 2031
+// Module ID: 2042
+// Function ID: 2043
 // Name: DMSafetyConstants
-// Dependencies: [1197, 2]
+// Dependencies: [1209, 2]
 
-// Module 2030 (DMSafetyConstants)
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
+// Module 2042 (DMSafetyConstants)
+import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
 import size from "module_2" /* 2 */;
 
 const obj = { DISABLED: 0, [0]: "DISABLED", NON_FRIENDS: 1, [1]: "NON_FRIENDS", FRIENDS_AND_NON_FRIENDS: 2, [2]: "FRIENDS_AND_NON_FRIENDS" };

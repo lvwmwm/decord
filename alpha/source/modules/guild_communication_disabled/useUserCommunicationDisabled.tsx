@@ -1,14 +1,14 @@
-// Module ID: 7647
-// Function ID: 7648
+// Module ID: 7968
+// Function ID: 7969
 // Name: useUserCommunicationDisabled
-// Dependencies: [2112, 1377, 558, 576, 504, 4502, 2]
+// Dependencies: [2124, 1389, 558, 576, 504, 4694, 2]
 // Exports: userCommunicationDisabled
 
-// Module 7647 (useUserCommunicationDisabled)
+// Module 7968 (useUserCommunicationDisabled)
 import react from "react" /* 576 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import UserStore from "UserStore" /* 1377 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4694 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let _require, dependencyMap;
 let tmp;
 const get_initialized = tmp(504);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentUserCommunicationDisabled(arg0) {
   let currentUser;
   let tmp4;
   let tmp5;
@@ -44,7 +44,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     id = stateFromStores.id;
   }
   return tmp8(id, arg0);
-}) : ((arg0) => {
+}) : (function useCurrentUserCommunicationDisabled(arg0) {
   let currentUser;
   const items = [UserStore];
   const obj = get_initialized;
@@ -57,7 +57,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp2(id, arg0);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserCommunicationDisabled(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -93,7 +93,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
         prop = null;
       }
       const items1 = [prop, ];
-      const tmpResult2 = tmp(4502);
+      const tmpResult2 = tmp(4694);
       items1[1] = tmpResult2.isMemberCommunicationDisabled(stateFromStores);
       cResult[5] = stateFromStores;
       cResult[6] = items1;
@@ -121,7 +121,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = items2;
   tmp7 = items2;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useUserCommunicationDisabled(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -150,7 +150,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     prop = null;
   }
   const items2 = [prop, ];
-  const tmpResult = tmp(4502);
+  const tmpResult = tmp(4694);
   items2[1] = tmpResult.isMemberCommunicationDisabled(stateFromStores);
   return items2;
 });

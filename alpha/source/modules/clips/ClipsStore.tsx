@@ -1,23 +1,22 @@
-// Module ID: 2005
-// Function ID: 2006
+// Module ID: 2017
+// Function ID: 2018
 // Name: ClipsStore
-// Dependencies: [5, 2006, 502, 7244, 1085, 4943, 4496, 13826, 1390, 13827, 13829, 13830, 504, 1999, 584, 2]
+// Dependencies: [5, 2018, 502, 7735, 1085, 5210, 4688, 14130, 1402, 14131, 14133, 14134, 504, 584, 2]
 
-// Module 2005 (ClipsStore)
+// Module 2017 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import FlagUtils from "FlagUtils" /* 1390 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import DiscordNativeDefault from "DiscordNative" /* 4496 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 13827 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 13829 */;
-import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 13830 */;
+import FlagUtils from "FlagUtils" /* 1402 */;
+import DiscordNativeDefault from "DiscordNative" /* 4688 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 14131 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 14133 */;
+import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 14134 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RunningGameStore from "RunningGameStore" /* 2006 */;
+import RunningGameStore from "RunningGameStore" /* 2018 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ClipsConstants from "ClipsConstants" /* 7244 */;
+import ClipsConstants from "ClipsConstants" /* 7735 */;
 import Constants from "Constants" /* 1085 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 4943 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5210 */;
 import size from "module_2" /* 2 */;
 
 let _null, c4, c5, closure_18, closure_2;
@@ -288,7 +287,7 @@ function trackClipMessage(message) {
 ({ MessageAttachmentFlags: map1, MessageReferenceTypes: closure_14, VoiceFlags: closure_15 } = Constants);
 let c16 = "default";
 let c17 = "Discord Clips";
-const authStore4 = {};
+const authStore5 = {};
 let closure_19 = {};
 let closure_20 = [];
 let closure_21 = 0;
@@ -513,19 +512,7 @@ let items = [
     }
     return obj;
   },
-  (clipsSettings) => {
-    let obj2;
-    const _default = MediaEngineStore.default;
-    let hardwareEncoding;
-    if (_default != null) {
-      hardwareEncoding = _default.getHardwareEncoding();
-    }
-    obj = { clipsSettings: obj2 };
-    const merged = Object.assign(clipsSettings);
-    obj2 = { clipsEnabled: hardwareEncoding && clipsSettings.clipsSettings.clipsEnabled, decoupledClipsEnabled: hardwareEncoding && clipsSettings.clipsSettings.decoupledClipsEnabled };
-    const merged1 = Object.assign(clipsSettings.clipsSettings);
-    return obj;
-  },
+  (arg0) => arg0,
   (newClipIds) => {
     obj = { newClipIds, newClipIDs: undefined };
     const merged = Object.assign(newClipIds);

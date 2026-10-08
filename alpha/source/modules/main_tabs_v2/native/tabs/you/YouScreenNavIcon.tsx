@@ -1,21 +1,21 @@
-// Module ID: 16986
-// Function ID: 16987
+// Module ID: 17267
+// Function ID: 17268
 // Name: YouScreenNavIcon
-// Dependencies: [19, 17, 21, 16387, 587, 8502, 4896, 558, 576, 16987, 1126, 4591, 4892, 8602, 2]
+// Dependencies: [19, 17, 21, 16647, 587, 8986, 5090, 558, 576, 17268, 1126, 4783, 5086, 8517, 2]
 
-// Module 16986 (YouScreenNavIcon)
+// Module 17267 (YouScreenNavIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import mergeProps from "mergeProps" /* 4591 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import ClipView from "ClipView" /* 8502 */;
-import getIconSize from "getIconSize" /* 16387 */;
-import YouScreenNavIconMeasurer from "YouScreenNavIconMeasurer" /* 16987 */;
+import mergeProps from "mergeProps" /* 4783 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import ClipView from "ClipView" /* 8986 */;
+import getIconSize from "getIconSize" /* 16647 */;
+import YouScreenNavIconMeasurer from "YouScreenNavIconMeasurer" /* 17268 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -43,19 +43,19 @@ let closure_10 = createStyles.createStyles((width) => {
   size = { backgroundColor: tmp(587).colors.BACKGROUND_FEEDBACK_NOTIFICATION, borderRadius: tmp(587).radii.round, height: 8, width: 8, position: "absolute", right: 0, top: 0 };
   return obj2;
 });
-const forwardRef = react.forwardRef;
-const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreenNavIcon(arg0) {
   let IconComponent;
   let accessibilityLabel;
   let intl;
   let items1;
   let label;
   let onPress;
+  let ref;
   let showRedDot;
   let tmp7;
   const obj = react2;
   const cResult = obj.c(22);
-  ({ onPress, IconComponent, accessibilityLabel, label, showRedDot } = arg0);
+  ({ onPress, IconComponent, accessibilityLabel, label, showRedDot, ref } = arg0);
   const tmpResult = YouScreenNavIconMeasurer;
   const youScreenNavIconMeasurement = tmpResult.useYouScreenNavIconMeasurement();
   const containerRef = youScreenNavIconMeasurement.containerRef;
@@ -90,62 +90,62 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
         tmp18 = cResult[7];
       }
       if (cResult[8] === containerRef) {
-        let tmp21;
+        let tmp20;
         if (cResult[9] === ref) {
-          tmp21 = cResult[10];
+          tmp20 = cResult[10];
         }
         if (label == null) {
           label = accessibilityLabel;
         }
         if (cResult[11] === tmp6.label) {
-          let tmp24;
+          let tmp23;
           if (cResult[12] === label) {
-            tmp24 = cResult[13];
+            tmp23 = cResult[13];
           }
           if (cResult[14] === accessibilityLabel) {
             if (cResult[15] === tmp18) {
               if (cResult[16] === tmp11) {
                 if (cResult[17] === onPress) {
                   if (cResult[18] === tmp6.container) {
-                    if (cResult[19] === tmp21) {
-                      let tmp28;
-                      if (cResult[20] === tmp24) {
-                        tmp28 = cResult[21];
+                    if (cResult[19] === tmp20) {
+                      let tmp27;
+                      if (cResult[20] === tmp23) {
+                        tmp27 = cResult[21];
                       }
-                      return tmp28;
+                      return tmp27;
                     }
                   }
                 }
               }
             }
           }
-          const obj4 = { ref: tmp21, style: tmp6.container, accessibilityRole: "button", accessibilityLabel, accessibilityValue: tmp18, onPress, hitSlop: nativeDefault.space.PX_8, children: items };
-          const PressableScale = tmp(8602).PressableScale;
-          items = [tmp11, tmp24];
-          const tmp31 = hasOwnProperty(PressableScale, obj4);
+          const obj4 = { ref: tmp20, style: tmp6.container, accessibilityRole: "button", accessibilityLabel, accessibilityValue: tmp18, onPress, hitSlop: nativeDefault.space.PX_8, children: items };
+          const PressableScale = tmp(8517).PressableScale;
+          items = [tmp11, tmp23];
+          const tmp30 = hasOwnProperty(PressableScale, obj4);
           cResult[14] = accessibilityLabel;
           cResult[15] = tmp18;
           cResult[16] = tmp11;
           cResult[17] = onPress;
           cResult[18] = tmp6.container;
-          cResult[19] = tmp21;
-          cResult[20] = tmp24;
-          cResult[21] = tmp31;
-          tmp28 = tmp31;
+          cResult[19] = tmp20;
+          cResult[20] = tmp23;
+          cResult[21] = tmp30;
+          tmp27 = tmp30;
         }
         const obj5 = { style: tmp6.label, variant: "text-xs/semibold", color, maxFontSizeMultiplier: 2, lineClamp: 1, children: label };
-        const tmp27 = React3(Text_Text.Text, obj5);
+        const tmp26 = React3(Text_Text.Text, obj5);
         cResult[11] = tmp6.label;
         cResult[12] = label;
-        cResult[13] = tmp27;
-        tmp24 = tmp27;
+        cResult[13] = tmp26;
+        tmp23 = tmp26;
       }
       const tmpResult2 = mergeProps;
       const mergeRefsResult = tmpResult2.mergeRefs(ref, containerRef);
       cResult[8] = containerRef;
       cResult[9] = ref;
       cResult[10] = mergeRefsResult;
-      tmp21 = mergeRefsResult;
+      tmp20 = mergeRefsResult;
     }
   }
   let tmp12 = tmp7;
@@ -162,7 +162,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
   cResult[4] = tmp6.dot;
   cResult[5] = tmp12;
   tmp11 = tmp12;
-}) : ((arg0, ref) => {
+}) : (function YouScreenNavIcon(ref) {
   let IconComponent;
   let accessibilityLabel;
   let intl;
@@ -171,11 +171,12 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
   let onPress;
   let showRedDot;
   let tmpResult;
-  ({ accessibilityLabel, label, showRedDot } = arg0);
-  ({ onPress, IconComponent } = arg0);
+  ({ accessibilityLabel, label, showRedDot } = ref);
+  ({ onPress, IconComponent } = ref);
   if (showRedDot === undefined) {
     showRedDot = false;
   }
+  ref = ref.ref;
   const obj = YouScreenNavIconMeasurer;
   const youScreenNavIconMeasurement = obj.useYouScreenNavIconMeasurement();
   const containerRef = youScreenNavIconMeasurement.containerRef;
@@ -198,18 +199,18 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
     tmp12 = obj6;
   }
   const obj7 = { ref: tmpResult.mergeRefs(ref, containerRef), style: tmp4.container, accessibilityRole: "button", accessibilityLabel, accessibilityValue: tmp12, onPress, hitSlop: nativeDefault.space.PX_8, children: items1 };
-  const PressableScale = tmp(8602).PressableScale;
+  const PressableScale = tmp(8517).PressableScale;
   items1 = [tmp7, ];
   const obj8 = { style: tmp4.label, variant: "text-xs/semibold", color, maxFontSizeMultiplier: 2, lineClamp: 1, children: label };
   tmpResult = mergeProps;
-  const Text = tmp(4892).Text;
+  const Text = tmp(5086).Text;
   const tmp13 = hasOwnProperty;
   if (label == null) {
     label = accessibilityLabel;
   }
   items1[1] = React3(Text, obj8);
   return tmp13(PressableScale, obj7);
-})));
+}));
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreenNavIcon.tsx");
 

@@ -1,16 +1,16 @@
-// Module ID: 8442
-// Function ID: 8443
+// Module ID: 8928
+// Function ID: 8929
 // Name: ImageWithPlaceholder
-// Dependencies: [109, 17, 21, 1369, 8443, 558, 576, 5981, 2]
+// Dependencies: [109, 17, 21, 1381, 8929, 558, 576, 6164, 2]
 
-// Module 8442 (ImageWithPlaceholder)
+// Module 8928 (ImageWithPlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import ImageWithThumbhashPlaceholderNativeComponentDefault from "ImageWithThumbhashPlaceholderNativeComponent" /* 8443 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import ImageWithThumbhashPlaceholderNativeComponentDefault from "ImageWithThumbhashPlaceholderNativeComponent" /* 8929 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_native from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ if (PlatformUtils.isAndroid()) {
   importDefaultResult = requireNativeComponent("DCDImageWithThumbhashPlaceholderView");
 }
 let c9 = importDefaultResult;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageWithPlaceholder(arg0) {
   let alt;
   let placeholder;
   let placeholderVersion;
@@ -130,7 +130,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[17] = tmp13;
   cResult[18] = tmp15;
   tmp14 = tmp15;
-}) : ((arg0) => {
+}) : (function ImageWithPlaceholder(arg0) {
   let alt;
   let obj;
   let placeholder;

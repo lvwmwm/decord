@@ -1,9 +1,9 @@
-// Module ID: 12272
-// Function ID: 12273
+// Module ID: 12351
+// Function ID: 12352
 // Name: DeveloperApplicationsConstants
 // Dependencies: [2]
 
-// Module 12272 (DeveloperApplicationsConstants)
+// Module 12351 (DeveloperApplicationsConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/applications/DeveloperApplicationsConstants.tsx");

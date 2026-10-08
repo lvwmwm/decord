@@ -1,23 +1,23 @@
-// Module ID: 13138
-// Function ID: 13139
+// Module ID: 12853
+// Function ID: 12854
 // Name: AppDMOptionsBottomSheet
-// Dependencies: [19, 17, 6609, 1085, 21, 4896, 587, 558, 576, 504, 7861, 4860, 6895, 6672, 1126, 6000, 6081, 6652, 2]
+// Dependencies: [19, 17, 6786, 1085, 21, 5090, 587, 558, 576, 504, 8279, 5054, 7084, 6849, 1126, 6184, 6267, 6829, 2]
 
-// Module 13138 (AppDMOptionsBottomSheet)
+// Module 12853 (AppDMOptionsBottomSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import openUserSettings from "openUserSettings" /* 6895 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import openUserSettings from "openUserSettings" /* 7084 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
 import react from "react" /* 19 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6609 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6786 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, userId;
+let BottomSheet;
 
 let metroImportAll;
 let metroImportDefault;
@@ -28,7 +28,7 @@ const UserSettingsSections = Constants.UserSettingsSections;
 let obj = { sheet: obj2, content: { paddingLeft: 16, paddingRight: 16, paddingBottom: 24 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 let closure_9 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppDMOptionsBottomSheet(userId) {
   let application;
   let content;
   let first;
@@ -291,7 +291,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[4] = userId;
   cResult[5] = T;
   tmp12 = T;
-}) : ((userId) => {
+}) : (function AppDMOptionsBottomSheet(userId) {
   let TableRowGroup;
   let intl;
   let intl2;

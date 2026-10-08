@@ -1,24 +1,24 @@
-// Module ID: 9278
-// Function ID: 9279
+// Module ID: 8609
+// Function ID: 8610
 // Name: AddModerators
-// Dependencies: [32, 109, 19, 17, 2074, 8110, 21, 4896, 587, 558, 576, 1490, 38, 9247, 5579, 1985, 1126, 6017, 6890, 4892, 1188, 9279, 2060, 2]
+// Dependencies: [32, 109, 19, 17, 2086, 7484, 21, 5090, 587, 558, 576, 1502, 38, 8576, 5889, 1997, 1126, 6203, 7079, 5086, 1200, 8610, 2072, 2]
 
-// Module 9278 (AddModerators)
+// Module 8609 (AddModerators)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import HeaderActionButton from "HeaderActionButton" /* 6890 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8110 */;
+import HeaderActionButton from "HeaderActionButton" /* 7079 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7484 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let guildId, importDefault, navigation, row;
+let importDefault, navigation, row;
 
 let c10;
 let obj2;
@@ -32,7 +32,7 @@ const RowType = ChannelPermissionsConstants.RowType;
 let obj = { addMembersContainer: obj2, moderatorDescriptionContainer: { margin: 16 }, errorMessage: { margin: 16, marginBottom: 0 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
 let closure_12 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddModerators(guildId) {
   let HelpMessage;
   let _require;
   let closure_4;
@@ -259,7 +259,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[10] = tmp6;
   cResult[11] = I;
   tmp26 = I;
-}) : ((guildId) => {
+}) : (function AddModerators(guildId) {
   let HelpMessage;
   let Text;
   let closure_4;

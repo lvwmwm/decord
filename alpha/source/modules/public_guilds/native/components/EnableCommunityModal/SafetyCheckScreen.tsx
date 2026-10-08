@@ -1,14 +1,14 @@
-// Module ID: 17884
-// Function ID: 17885
+// Module ID: 18171
+// Function ID: 18172
 // Name: SafetyCheckScreen
-// Dependencies: [32, 19, 17, 9283, 1085, 21, 558, 576, 4586, 587, 17885, 504, 17886, 9282, 4892, 1126, 6705, 6081, 17895, 5600, 17883, 2]
+// Dependencies: [32, 19, 17, 8614, 1085, 21, 558, 576, 4778, 587, 18172, 504, 18173, 8613, 5086, 1126, 6882, 6267, 18182, 5373, 18170, 2]
 
-// Module 17884 (SafetyCheckScreen)
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9282 */;
+// Module 18171 (SafetyCheckScreen)
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8613 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9283 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8614 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -23,7 +23,7 @@ let unpackModuleId;
 ({ Image: hasOwnProperty, View: metroRequire } = react_native);
 ({ VerificationLevels: metroImportAll, GuildExplicitContentFilterTypes: c9 } = Constants);
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyCheckScreen() {
   let first1;
   let guild;
   let intl;
@@ -321,7 +321,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         cResult[22] = tmp47;
         tmp44 = tmp47;
       }
-      const fn3 = function w(arg0) {
+      function handleAcceptContentFilter(arg0) {
         if (null != guild) {
           const tmp10 = arg0;
           if (tmp10) {
@@ -337,13 +337,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             obj.updateGuild(obj4);
           }
         }
-      };
+      }
       cResult[5] = guild;
       cResult[6] = first1;
-      cResult[7] = fn3;
-      tmp25 = fn3;
+      cResult[7] = handleAcceptContentFilter;
+      tmp25 = handleAcceptContentFilter;
     }
-    const fn2 = function x(arg0) {
+    function handleAcceptVerificationLevel(arg0) {
       if (null != guild) {
         const tmp10 = arg0;
         if (tmp10) {
@@ -359,13 +359,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           obj.updateGuild(obj4);
         }
       }
-    };
+    }
     cResult[2] = guild;
     cResult[3] = verificationLevel;
-    cResult[4] = fn2;
-    tmp24 = fn2;
+    cResult[4] = handleAcceptVerificationLevel;
+    tmp24 = handleAcceptVerificationLevel;
   }
-}) : (() => {
+}) : (function SafetyCheckScreen() {
   let TableSwitchRow;
   let TableSwitchRow2;
   let first1;
@@ -452,7 +452,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       label: intl5.string(guild(first1[15]).t["rkA56+"]),
       value: guild.verificationLevel !== constants.NONE,
       disabled: verificationLevel !== tmp17,
-      onValueChange(arg0) {
+      onValueChange: function handleAcceptVerificationLevel(arg0) {
           if (null != guild) {
             const tmp10 = arg0;
             if (tmp10) {
@@ -482,7 +482,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       label: intl7.string(guild(first1[15]).t.zOuzl7),
       value: guild.explicitContentFilter === constants2.ALL_MEMBERS,
       disabled: first1 === tmp19,
-      onValueChange(arg0) {
+      onValueChange: function handleAcceptContentFilter(arg0) {
           if (null != guild) {
             const tmp10 = arg0;
             if (tmp10) {

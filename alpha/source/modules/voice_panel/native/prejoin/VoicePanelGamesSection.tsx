@@ -1,27 +1,29 @@
-// Module ID: 17331
-// Function ID: 17332
+// Module ID: 17612
+// Function ID: 17613
 // Name: VoicePanelGamesSection
-// Dependencies: [19, 21, 558, 576, 6822, 8352, 8353, 1126, 9456, 6000, 9405, 17332, 9348, 2]
+// Dependencies: [19, 21, 558, 576, 6995, 8850, 8851, 1126, 9107, 6184, 8826, 17613, 8770, 2]
 
-// Module 17331 (VoicePanelGamesSection)
+// Module 17612 (VoicePanelGamesSection)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import useGame from "useGame" /* 6822 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8352 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8353 */;
-import FormComponents from "FormComponents" /* 9348 */;
-import VoiceChannelGamesExperimentDefault from "VoiceChannelGamesExperiment" /* 9405 */;
-import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 17332 */;
+import useGame from "useGame" /* 6995 */;
+import FormComponents from "FormComponents" /* 8770 */;
+import VoiceChannelGamesExperimentDefault from "VoiceChannelGamesExperiment" /* 8826 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8850 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8851 */;
+import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 17613 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let _require;
+
 let tmp5;
-const GameActivityIconDefault = tmp5(9456);
+const GameActivityIconDefault = tmp5(9107);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
+let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameRow(gameId) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(10);
@@ -37,14 +39,14 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
     tmp4 = cResult[1];
   }
   const tmp6 = useOpenGameProfileModalDefault(tmp4);
-  let closure_0 = tmp6;
+  _require = tmp6;
   if (null == data) {
     return null;
   } else {
     let name;
     let tmp11;
-    let tmp16;
     let tmp15;
+    let tmp14;
     if (cResult[2] === data) {
       let tmp7;
       let tmp8;
@@ -75,33 +77,44 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
       tmp11 = cResult[7];
     }
     if (null != tmp6) {
-      let tmp17;
+      let tmp16;
       if (cResult[8] !== tmp6) {
-        const fn = function v() {
-          return closure_0();
-        };
+        class G {
+          constructor() {
+            return closure_0();
+          }
+        }
         cResult[8] = tmp6;
-        cResult[9] = fn;
-        tmp17 = fn;
+        cResult[9] = G;
+        tmp16 = G;
       } else {
-        tmp17 = cResult[9];
+        class G {
+          constructor() {
+            return closure_0();
+          }
+        }
       }
-      const TableRow = tmp(6000).TableRow;
+      const TableRow = tmp(6184).TableRow;
       const intl2 = tmp(1126).intl;
       const obj6 = { gameName: name };
-      tmp16 = <TableRow icon={tmp11} label={name} arrow onPress={tmp17} accessibilityRole="button" accessibilityLabel={intl2.formatToPlainString(intl3.t["9sZWVp"], obj6)} />;
-      tmp15 = forResult;
+      tmp15 = <TableRow icon={tmp11} label={name} arrow onPress={tmp16} accessibilityRole="button" accessibilityLabel={intl2.formatToPlainString(intl3.t["9sZWVp"], obj6)} />;
+      tmp14 = forResult;
     } else {
-      tmp15 = jsx(tmp(6000).TableRow, { icon: tmp11, label: name, disabled: true });
+      class G {
+        constructor() {
+          return closure_0();
+        }
+      }
+      tmp14 = jsx(tmp(6184).TableRow, { icon: tmp11, label: name, disabled: true });
     }
     cResult[2] = data;
     cResult[3] = tmp6;
-    cResult[4] = tmp16;
-    cResult[5] = tmp15;
-    tmp8 = tmp15;
-    tmp7 = tmp16;
+    cResult[4] = tmp15;
+    cResult[5] = tmp14;
+    tmp8 = tmp14;
+    tmp7 = tmp15;
   }
-}) : ((gameId) => {
+}) : (function GameRow(gameId) {
   let intl2;
   let obj6;
   gameId = gameId.gameId;
@@ -123,7 +136,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
       name = intl.string(tmp(1126).t.GIWFlF);
     }
     const tmp7 = jsx(GameActivityIconDefault, { game: data, size: 32, fallback: "placeholder" });
-    const TableRow = tmp(6000).TableRow;
+    const TableRow = tmp(6184).TableRow;
     const tmp6 = jsx;
     if (null == tmp4Result) {
       obj5 = { icon: tmp7, label: name, disabled: true };
@@ -146,7 +159,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelGamesSection(arg0) {
   let guildId;
   let members;
   const obj = react2;
@@ -199,7 +212,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     }
   }
   return null;
-}) : ((arg0) => {
+}) : (function VoicePanelGamesSection(arg0) {
   let guildId;
   let members;
   ({ members, guildId } = arg0);

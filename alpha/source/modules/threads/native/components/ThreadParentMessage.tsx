@@ -1,31 +1,30 @@
-// Module ID: 16805
-// Function ID: 16806
+// Module ID: 17085
+// Function ID: 17086
 // Name: ThreadParentMessage
-// Dependencies: [19, 7115, 5116, 21, 7602, 558, 576, 504, 1112, 8336, 5916, 2]
+// Dependencies: [19, 7301, 5428, 21, 7719, 558, 576, 504, 1112, 9308, 6189, 2]
 
-// Module 16805 (ThreadParentMessage)
+// Module 17085 (ThreadParentMessage)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import router_utils from "router_utils" /* 1112 */;
-import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7115 */;
-import RowGeneratorDefault from "RowGenerator" /* 7602 */;
-import ChatItemDefault from "ChatItem" /* 8336 */;
+import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7301 */;
+import RowGeneratorDefault from "RowGenerator" /* 7719 */;
+import ChatItemDefault from "ChatItem" /* 9308 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 5116 */;
+import MessageStore from "MessageStore" /* 5428 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ReferencedMessageStore = ReferencedMessageStore2;
-let guildId;
 
 let tmp;
-const Pressables = tmp(5916);
+const Pressables = tmp(6189);
 const ReferencedMessageState = ReferencedMessageStore2.ReferencedMessageState;
 const jsx = Fragment.jsx;
 let rowGenerator = new RowGeneratorDefault();
 rowGenerator.setOptions({ renderCodedLinks: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderEmbeds: true, ignoreMentioned: true, inlineAttachmentMedia: true, inlineEmbedMedia: true, renderReactions: false, renderReplies: true, renderThreadEmbeds: false });
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadChannelStarterMessage(guildId) {
   let channelId;
   let first;
   let obj = guildId(channelId[6]);
@@ -58,14 +57,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           if (cResult[6] === messageId) {
             tmp12 = cResult[7];
           }
-          class S {
+          class M {
             constructor() {
               const obj = router_utils;
               obj.transitionToGuild(guildId, channelId, messageId);
             }
           }
           if (cResult[10] === tmp12) {
-            class S {
+            class M {
               constructor() {
                 const obj = router_utils;
                 obj.transitionToGuild(guildId, channelId, messageId);
@@ -78,7 +77,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           const tmp16 = jsx(guildId(channelId[10]).PressableOpacity, { accessibilityRole: "button", onPress: tmp12, children: tmp13 });
         }
       }
-      class S {
+      class M {
         constructor() {
           const obj = router_utils;
           obj.transitionToGuild(guildId, channelId, messageId);
@@ -87,8 +86,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       cResult[4] = channelId;
       cResult[5] = guildId;
       cResult[6] = messageId;
-      cResult[7] = S;
-      tmp12 = S;
+      cResult[7] = M;
+      tmp12 = M;
     }
     return null;
   }
@@ -99,7 +98,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[2] = messageId;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((arg0) => {
+}) : (function ThreadChannelStarterMessage(arg0) {
   let require;
   ({ guildId: require, messageId: importDefault, channelId: dependencyMap } = arg0);
   rowGenerator = get_initialized;
@@ -120,7 +119,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   return tmp5;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((messageId) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadCreationStarterMessage(messageId) {
   let first;
   rowGenerator = messageId(576);
   const cResult = rowGenerator.c(7);
@@ -154,7 +153,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((messageId) => {
         tmp9 = cResult[4];
       }
       if (cResult[5] !== stateFromStores) {
-        const tmp14 = jsx(channelId(8336), { rowGenerator, message: stateFromStores, style: tmp9, pointerEvents: "none" });
+        const tmp14 = jsx(channelId(9308), { rowGenerator, message: stateFromStores, style: tmp9, pointerEvents: "none" });
         cResult[5] = stateFromStores;
         cResult[6] = tmp14;
         tmp10 = tmp14;
@@ -172,7 +171,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((messageId) => {
   cResult[2] = messageId;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((arg0) => {
+}) : (function ThreadCreationStarterMessage(arg0) {
   let require;
   ({ messageId: require, channelId: importDefault } = arg0);
   rowGenerator = get_initialized;

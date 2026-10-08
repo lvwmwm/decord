@@ -1,14 +1,14 @@
-// Module ID: 7743
-// Function ID: 7744
+// Module ID: 8064
+// Function ID: 8065
 // Name: useDiscountOffer
-// Dependencies: [32, 19, 1377, 6972, 1379, 558, 576, 504, 4534, 2046, 2]
+// Dependencies: [32, 19, 1389, 7161, 1391, 558, 576, 504, 4726, 2058, 2]
 
-// Module 7743 (useDiscountOffer)
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+// Module 8064 (useDiscountOffer)
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
-import UserOfferStore from "UserOfferStore" /* 6972 */;
+import UserStore from "UserStore" /* 1389 */;
+import UserOfferStore from "UserOfferStore" /* 7161 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let _require, startResult, tmp4;
 
 let react = react_mod;
 const CHURN_DISCOUNT_IDS = PremiumConstants.CHURN_DISCOUNT_IDS;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiscountOffer(arg0, arg1) {
   let closure_0;
   let closure_3;
   let currentUser;
@@ -156,7 +156,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
               }
               const obj2 = timeout;
               if (timeout != null) {
-                obj2.start(num, f151536);
+                obj2.start(num, f153071);
               }
             }
           });
@@ -174,7 +174,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[10] = items2;
   tmp17 = items2;
   tmp16 = E;
-}) : ((arg0, arg1) => {
+}) : (function useDiscountOffer(arg0, arg1) {
   let closure_0;
   let closure_3;
   let currentUser;
@@ -207,7 +207,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   const items2 = [first, stateFromStores];
   const hasItem = CHURN_DISCOUNT_IDS.includes(arg0);
   const effect = obj3.useEffect(function() {
-    const f151537 = () => {
+    const f153072 = () => {
       const tmp = first;
       if (!tmp) {
         if (stateFromStores.hasExpired()) {
@@ -228,7 +228,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
         }
         const obj2 = timeout;
         if (timeout != null) {
-          obj2.start(num, f151537);
+          obj2.start(num, f153072);
         }
       }
     };
@@ -253,7 +253,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
           let time = expiresAt.getTime();
           num = time - Date.now();
         }
-        timeout.start(num, f151537);
+        timeout.start(num, f153072);
       }
       return () => timeout.stop();
     }

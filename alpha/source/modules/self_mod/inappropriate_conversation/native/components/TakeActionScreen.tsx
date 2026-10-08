@@ -1,28 +1,28 @@
-// Module ID: 15617
-// Function ID: 15618
+// Module ID: 15897
+// Function ID: 15898
 // Name: TakeActionScreen
-// Dependencies: [5, 32, 19, 17, 4525, 1377, 9797, 21, 4896, 587, 558, 576, 504, 9837, 9840, 1490, 9447, 8113, 9811, 8312, 4580, 4574, 1126, 4798, 4573, 5601, 9850, 8349, 5839, 8297, 4571, 4892, 2]
+// Dependencies: [5, 32, 19, 17, 4717, 1389, 10361, 21, 5090, 587, 558, 576, 504, 10400, 10403, 1502, 7004, 7014, 10374, 7695, 4772, 4766, 1126, 4992, 4765, 5375, 10411, 9508, 8154, 7680, 4763, 5086, 2]
 
-// Module 15617 (TakeActionScreen)
+// Module 15897 (TakeActionScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import nativeDefault from "native" /* 587 */;
-import LinkingDefault from "Linking" /* 4571 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8113 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9447 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 9811 */;
+import LinkingDefault from "Linking" /* 4763 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7004 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7014 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10374 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
-import Constants from "Constants" /* 9797 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
+import Constants from "Constants" /* 10361 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const react = react2;
-let _require, c1, navigation, senderId;
+let _require, c1, navigation;
 
 let c10;
 let closure_12;
@@ -46,7 +46,7 @@ createStyles = createStyles.createStyles;
 obj3 = { paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_12 };
 obj4 = { display: "flex", alignSelf: "stretch", gap: nativeDefault.space.PX_4 };
 let closure_17 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TakeActionButtons(senderId) {
   let closure_4;
   let first;
   let isReported;
@@ -362,17 +362,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
               }
             }
           });
-          const fn3 = function() {
+          function t6() {
             return closure_0(...arguments);
-          };
+          }
           cResult[12] = channelId;
           cResult[13] = lastChannelMessage;
           cResult[14] = senderId;
           cResult[15] = setReported;
           cResult[16] = tmp4.toastContainer;
           cResult[17] = trackAnalyticsEvent;
-          cResult[18] = fn3;
-          tmp18 = fn3;
+          cResult[18] = t6;
+          tmp18 = t6;
         }
       }
       class X {
@@ -407,7 +407,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
   cResult[6] = trackAnalyticsEvent;
   cResult[7] = fn2;
   tmp16 = fn2;
-}) : ((senderId) => {
+}) : (function TakeActionButtons(senderId) {
   let _undefined;
   let c6;
   let closure_4;

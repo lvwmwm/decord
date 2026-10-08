@@ -1,58 +1,85 @@
 // Module ID: 1788
 // Function ID: 1789
-// Dependencies: [19, 1673, 1668, 1654, 1789, 1646]
-// Exports: useHandler
+// Dependencies: [32, 41, 42, 93, 95, 98, 1725]
 
 // Module 1788
-import _mod1646 from "module_1646" /* 1646 */;
-import LayoutAnimationType from "LayoutAnimationType" /* 1668 */;
-import _mod1673 from "module_1673" /* 1673 */;
-import _mod1789 from "module_1789" /* 1789 */;
-import react from "react" /* 19 */;
+import BaseAnimationBuilder from "BaseAnimationBuilder" /* 1725 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c2 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-let c2;
-let c3;
-({ useEffect: c2, useRef: c3 } = react);
+let size;
 
-export const useHandler = function useHandler(memoizedGestureCallbacks, items10) {
-  let context;
-  let isWebResult;
-  let obj;
-  let savedDependencies;
-  const tmp = _false(null);
-  let closure_0 = tmp;
-  if (null === tmp.current) {
-    const obj2 = { context: obj.makeShareable({}), savedDependencies: [] };
-    tmp.current = obj2;
-    obj = _mod1673;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  React2(() => () => {
-    closure_1_0.current = null;
-  }, []);
-  ({ context, savedDependencies } = tmp.current);
-  for (const key10024 in memoizedGestureCallbacks) {
-    let tmp12 = require;
-    let obj8 = LayoutAnimationType;
-    if (obj8.isWorkletFunction(memoizedGestureCallbacks[key10024])) {
-      continue;
+}
+let closure_5 = { code: "function pnpm_LinearTransitionTs1(values){const{delayFunction,delay,animation,config,callback}=this.__closure;return{initialValues:{originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth,height:values.currentHeight},animations:{originX:delayFunction(delay,animation(values.targetOriginX,config)),originY:delayFunction(delay,animation(values.targetOriginY,config)),width:delayFunction(delay,animation(values.targetWidth,config)),height:delayFunction(delay,animation(values.targetHeight,config))},callback:callback};}" };
+class LinearTransition {
+  constructor() {
+    let constructResult;
+    const self = this;
+    const items = [...arguments];
+    let closure_0;
+    _classCallCheck(this, LinearTransition);
+    const items1 = [...items];
+    let tmp2 = _getPrototypeOf;
+    let obj = _getPrototypeOf(LinearTransition);
+    const tmp3 = c2;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
     } else {
-      let self = this;
-      let str = "Passed a function that is not a worklet. Please provide a worklet function.";
-      let self2 = this;
-      let reanimatedError = new tmp12(1654).ReanimatedError("Passed a function that is not a worklet. Please provide a worklet function.");
-      throw reanimatedError;
+      constructResult = obj.apply(self, items1);
     }
+    const tmp3Result = tmp3(self, constructResult);
+    closure_0 = tmp3Result;
+    tmp3Result.build = () => {
+      const delayFunction = closure_0.getDelayFunction();
+      const tmp2 = LinearTransition(closure_0.getAnimationAndConfig(), 2);
+      const first = tmp2[0];
+      let closure_2 = tmp4;
+      const callbackV = closure_0.callbackV;
+      const delay = closure_0.getDelay();
+      const fn = function t(originX) {
+        const obj = { initialValues: { originX: originX.currentOriginX, originY: originX.currentOriginY, width: originX.currentWidth, height: originX.currentHeight }, animations: size, callback: callbackV };
+        size = { originX: delayFunction(delay, first(originX.targetOriginX, closure_2)), originY: delayFunction(delay, first(originX.targetOriginY, closure_2)), width: delayFunction(delay, first(originX.targetWidth, closure_2)), height: delayFunction(delay, first(originX.targetHeight, closure_2)) };
+        return obj;
+      };
+      fn.__closure = { delayFunction, delay, animation: first, config: tmp2[1], callback: callbackV };
+      fn.__workletHash = 16224579837767;
+      fn.__initData = __initData;
+      return fn;
+    };
+    return tmp3Result;
   }
-  const obj3 = _mod1789;
-  const dependencies = obj3.buildDependencies(items10, memoizedGestureCallbacks);
-  tmp.current.savedDependencies = dependencies;
-  const obj4 = _mod1789;
-  const obj5 = { context, doDependenciesDiffer: !obj4.areDependenciesEqual(dependencies, savedDependencies), useWeb: isWebResult };
-  const obj6 = _mod1646;
-  isWebResult = obj6.isWeb();
-  if (!isWebResult) {
-    const tmp7Result = _mod1646;
-    isWebResult = tmp7Result.isJest();
+}
+_inherits(LinearTransition, BaseAnimationBuilder.ComplexAnimationBuilder);
+const entry = {
+  key: "createInstance",
+  value: function createInstance() {
+    const tmp = LinearTransition();
+    return tmp;
   }
-  return obj5;
 };
+let items = [entry];
+const importDefaultResultResult = _createClass(LinearTransition, null, items);
+importDefaultResultResult.presetName = "LinearTransition";
+const LinearTransition_export = importDefaultResultResult;
+
+export { LinearTransition_export as LinearTransition };
+export const Layout = importDefaultResultResult;

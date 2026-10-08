@@ -1,14 +1,14 @@
-// Module ID: 6765
-// Function ID: 6766
+// Module ID: 6941
+// Function ID: 6942
 // Name: useHasRoleSubscriptionInGuild
-// Dependencies: [502, 2112, 2106, 2074, 1085, 558, 576, 504, 2]
+// Dependencies: [502, 2124, 2118, 2086, 1085, 558, 576, 504, 2]
 
-// Module 6765 (useHasRoleSubscriptionInGuild)
+// Module 6941 (useHasRoleSubscriptionInGuild)
 import Constants from "Constants" /* 1085 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildRoleStore from "GuildRoleStore" /* 2118 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ function computeHasRoleSubscriptionsInGuild(c0, arg1) {
   return false;
 }
 const GuildFeatures = Constants.GuildFeatures;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasRoleSubscriptionInGuild(arg0) {
   let closure_0;
   let first;
   let stateFromStores;
@@ -129,7 +129,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = items2;
   tmp13 = items2;
   tmp12 = fn2;
-}) : ((arg0) => {
+}) : (function useHasRoleSubscriptionInGuild(arg0) {
   let closure_0;
   let stateFromStores;
   _require = arg0;

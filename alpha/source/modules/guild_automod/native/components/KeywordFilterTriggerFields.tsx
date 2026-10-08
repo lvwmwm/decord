@@ -1,22 +1,22 @@
-// Module ID: 17750
-// Function ID: 17751
+// Module ID: 18037
+// Function ID: 18038
 // Name: KeywordFilterTriggerFields
-// Dependencies: [19, 11487, 1085, 21, 558, 576, 1126, 17744, 2115, 6081, 2]
+// Dependencies: [19, 11473, 1085, 21, 558, 576, 1126, 18031, 2127, 6267, 2]
 
-// Module 17750 (KeywordFilterTriggerFields)
+// Module 18037 (KeywordFilterTriggerFields)
 import react2 from "react" /* 576 */;
 import Constants2 from "Constants" /* 1085 */;
 import intl7 from "intl" /* 1126 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import TableRowGroup2 from "TableRowGroup" /* 6081 */;
-import KeywordsRowDefault from "KeywordsRow" /* 17744 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
+import TableRowGroup2 from "TableRowGroup" /* 6267 */;
+import KeywordsRowDefault from "KeywordsRow" /* 18031 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 11487 */;
+import Constants from "Constants" /* 11473 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, rule;
+let dependencyMap;
 
 let c3;
 let closure_4;
@@ -25,7 +25,7 @@ let metroRequire;
 ({ MAX_KEYWORDS_PER_ALLOWLIST_KEYWORD_FILTER_RULE: c3, MAX_KEYWORDS_PER_KEYWORD_FILTER: closure_4 } = Constants);
 const HelpdeskArticles = Constants2.HelpdeskArticles;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function KeywordFilterTriggerFields(rule) {
   let allowList;
   let items;
   let keywordFilter;
@@ -60,13 +60,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
       tmp7 = cResult[4];
     }
     if (cResult[5] !== tmp4) {
-      const fn2 = function x(keywordFilter) {
+      const fn = function k(keywordFilter) {
         const obj = { keywordFilter };
         return closure_2(obj);
       };
       cResult[5] = tmp4;
-      cResult[6] = fn2;
-      tmp10 = fn2;
+      cResult[6] = fn;
+      tmp10 = fn;
     } else {
       tmp10 = cResult[6];
     }
@@ -74,7 +74,6 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
       let tmp11;
       let tmp17;
       let tmp16;
-      let tmp23;
       if (cResult[8] === tmp10) {
         tmp11 = cResult[9];
       }
@@ -97,48 +96,66 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
         tmp17 = cResult[11];
       }
       if (cResult[12] !== tmp4) {
-        const fn3 = function f(regexPatterns) {
-          const obj = { regexPatterns };
-          return closure_2(obj);
-        };
+        class L {
+          constructor(regexPatterns) {
+            const obj = { regexPatterns };
+            return closure_2(obj);
+          }
+        }
         cResult[12] = tmp4;
-        cResult[13] = fn3;
-        tmp23 = fn3;
+        cResult[13] = L;
       } else {
-        tmp23 = cResult[13];
+        class L {
+          constructor(regexPatterns) {
+            const obj = { regexPatterns };
+            return closure_2(obj);
+          }
+        }
       }
       if (cResult[14] === regexPatterns) {
-        let tmp24;
         let tmp29;
         let tmp28;
-        if (cResult[15] === tmp23) {
-          tmp24 = cResult[16];
+        class L {
+          constructor(regexPatterns) {
+            const obj = { regexPatterns };
+            return closure_2(obj);
+          }
         }
         const _Symbol3 = Symbol;
         if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
+          class L {
+            constructor(regexPatterns) {
+              const obj = { regexPatterns };
+              return closure_2(obj);
+            }
+          }
+          const stringResult3 = obj6.string(intl7.t.lbE2Nm);
           const intl5 = tmp(1126).intl;
-          const stringResult3 = intl5.string(intl7.t.lbE2Nm);
-          const intl6 = tmp(1126).intl;
-          const stringResult4 = intl6.string(intl7.t.qm7UZ8);
+          const stringResult4 = intl5.string(intl7.t.qm7UZ8);
           cResult[17] = stringResult3;
           cResult[18] = stringResult4;
           tmp29 = stringResult4;
           tmp28 = stringResult3;
         } else {
-          tmp28 = cResult[17];
+          class L {
+            constructor(regexPatterns) {
+              const obj = { regexPatterns };
+              return closure_2(obj);
+            }
+          }
           tmp29 = cResult[18];
         }
         if (cResult[19] !== tmp4) {
-          class K {
+          class A {
             constructor(allowList) {
               const obj = { allowList };
               return closure_2(obj);
             }
           }
           cResult[19] = tmp4;
-          cResult[20] = K;
+          cResult[20] = A;
         } else {
-          class K {
+          class A {
             constructor(allowList) {
               const obj = { allowList };
               return closure_2(obj);
@@ -146,14 +163,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
           }
         }
         if (cResult[21] === allowList) {
-          class K {
+          class A {
             constructor(allowList) {
               const obj = { allowList };
               return closure_2(obj);
             }
           }
           if (cResult[24] === tmp33) {
-            class K {
+            class A {
               constructor(allowList) {
                 const obj = { allowList };
                 return closure_2(obj);
@@ -174,21 +191,20 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
         cResult[23] = metroRequire(KeywordsRowDefault, obj5);
         const tmp37 = metroRequire(KeywordsRowDefault, obj5);
       }
-      const obj6 = { label: tmp16, description: tmp17, type: "regex", keywords: regexPatterns, onChangeKeywords: tmp23 };
-      const tmp27 = metroRequire(KeywordsRowDefault, obj6);
+      const obj7 = { label: tmp16, description: tmp17, type: "regex", keywords: regexPatterns, onChangeKeywords: tmp23 };
       cResult[14] = regexPatterns;
       cResult[15] = tmp23;
-      cResult[16] = tmp27;
-      tmp24 = tmp27;
+      cResult[16] = metroRequire(KeywordsRowDefault, obj7);
+      const tmp27 = metroRequire(KeywordsRowDefault, obj7);
     }
-    const obj7 = { label: tmp6, description: tmp7, type: "keywords", keywords: keywordFilter, maxWordCount: maxWordCount2, onChangeKeywords: tmp10 };
-    const tmp15 = metroRequire(KeywordsRowDefault, obj7);
+    const obj8 = { label: tmp6, description: tmp7, type: "keywords", keywords: keywordFilter, maxWordCount: maxWordCount2, onChangeKeywords: tmp10 };
+    const tmp15 = metroRequire(KeywordsRowDefault, obj8);
     cResult[7] = keywordFilter;
     cResult[8] = tmp10;
     cResult[9] = tmp15;
     tmp11 = tmp15;
   }
-  const fn = function s(arg0) {
+  function changeTriggerMetadata(arg0) {
     let obj2;
     const obj = { triggerMetadata: obj2 };
     const merged = Object.assign(rule);
@@ -196,12 +212,12 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
     const merged1 = Object.assign(rule.triggerMetadata);
     const merged2 = Object.assign(arg0);
     onChangeRule(obj);
-  };
+  }
   cResult[0] = onChangeRule;
   cResult[1] = rule;
-  cResult[2] = fn;
-  tmp4 = fn;
-}) : ((rule) => {
+  cResult[2] = changeTriggerMetadata;
+  tmp4 = changeTriggerMetadata;
+}) : (function KeywordFilterTriggerFields(rule) {
   let allowList;
   let format;
   let intl;

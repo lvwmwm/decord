@@ -1,17 +1,17 @@
-// Module ID: 11334
-// Function ID: 11335
+// Module ID: 11601
+// Function ID: 11602
 // Name: ForwardPreviewUtils
-// Dependencies: [4515, 558, 576, 5433, 504, 2]
+// Dependencies: [4707, 558, 576, 5743, 504, 2]
 
-// Module 11334 (ForwardPreviewUtils)
-import EmbedUtils from "EmbedUtils" /* 5433 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+// Module 11601 (ForwardPreviewUtils)
+import EmbedUtils from "EmbedUtils" /* 5743 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let message, set;
+let set;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForwardPreviewContent(message) {
   let channel;
   let tmp12;
   const tmp = message;
@@ -94,7 +94,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
       if (null != onlyEmbedIndices) {
         let tmp15;
         if (cResult[10] !== onlyEmbedIndices) {
-          const fn3 = function w(arg0, arg1) {
+          const fn3 = function v(arg0, arg1) {
             return onlyEmbedIndices.includes(arg1);
           };
           cResult[10] = onlyEmbedIndices;
@@ -177,7 +177,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     cResult[18] = "" !== tmp23.content && null == onlyAttachmentIds;
     cResult[19] = obj2;
   }
-  const fn2 = function v() {
+  const fn2 = function w() {
     let shouldStripEmbedsResult = null != channel;
     if (shouldStripEmbedsResult) {
       const obj = EmbedUtils;
@@ -193,7 +193,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   cResult[8] = message;
   cResult[9] = fn2;
   tmp14 = fn2;
-}) : ((message) => {
+}) : (function useForwardPreviewContent(message) {
   let forwardOptions;
   message = message.message;
   ({ channel: dependencyMap, forwardOptions } = message);

@@ -1,29 +1,29 @@
-// Module ID: 17004
-// Function ID: 17005
+// Module ID: 17285
+// Function ID: 17286
 // Name: YouExpiringTrialOfferCard
-// Dependencies: [19, 17, 13549, 1085, 6951, 1379, 21, 1102, 4896, 587, 17005, 1252, 1126, 558, 576, 4467, 573, 6969, 6961, 17003, 2115, 4892, 4534, 1188, 5916, 8346, 5612, 6713, 2]
+// Dependencies: [19, 17, 13846, 1085, 7140, 1391, 21, 1102, 5090, 587, 17286, 1264, 1126, 558, 576, 4659, 573, 7158, 7150, 17284, 2127, 5086, 4726, 1200, 6189, 9005, 5387, 6890, 2]
 
-// Module 17004 (YouExpiringTrialOfferCard)
+// Module 17285 (YouExpiringTrialOfferCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import intl4 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import _modDef4467 from "module_4467" /* 4467 */;
-import LinearGradientDefault from "LinearGradient" /* 5612 */;
-import ColorConstants from "ColorConstants" /* 6951 */;
-import useCountdownDefault from "useCountdown" /* 6961 */;
-import NoticeActionCreatorsDefault from "NoticeActionCreators" /* 17005 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import _modDef4659 from "module_4659" /* 4659 */;
+import LinearGradientDefault from "LinearGradient" /* 5387 */;
+import ColorConstants from "ColorConstants" /* 7140 */;
+import useCountdownDefault from "useCountdown" /* 7150 */;
+import NoticeActionCreatorsDefault from "NoticeActionCreators" /* 17286 */;
 import react from "react" /* 19 */;
-import NoticeStore from "NoticeStore" /* 13549 */;
+import NoticeStore from "NoticeStore" /* 13846 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let dependencyMap, importDefault, navigateToPremium;
+let dependencyMap, importDefault;
 
 let c9;
 let closure_12;
@@ -35,8 +35,8 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const HelpdeskUtilsDefault = tmp(2115);
-const UserProfileCardDefault = tmp(6713);
+const HelpdeskUtilsDefault = tmp(2127);
+const UserProfileCardDefault = tmp(6890);
 function getNoticeCopy(days, trialPeriod, termsUrl) {
   let formatResult;
   if (days.days > 0) {
@@ -69,8 +69,8 @@ obj2 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 createStyles = createStyles.createStyles;
 obj3 = { borderRadius: nativeDefault.radii.round, gap: 4 };
 let closure_16 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium) => {
-  let intervalCount;
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouExpiringTrialOfferCard(navigateToPremium) {
+  let intervalCount1;
   let linearGradient;
   let shouldShowExpiringTrialOfferCard;
   let tmp13;
@@ -84,7 +84,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
   navigateToPremium = navigateToPremium.navigateToPremium;
   const style = navigateToPremium.style;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = untilAtLeast(4467)();
+    let obj2 = untilAtLeast(4659)();
     const addResult = obj2.add(5, "days");
     cResult[0] = addResult;
     untilAtLeast = addResult;
@@ -94,7 +94,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
   const tmp7 = closure_16();
   dependencyMap = tmp7;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [shouldShowExpiringTrialOfferCard];
+    const items = [shouldShowExpiringTrialOfferCard];
     class A {
       constructor() {
         return shouldShowExpiringTrialOfferCard.getNoticeType();
@@ -110,7 +110,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
   }
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(tmp8, tmp9);
-  const tmpResult4 = tmp(6969);
+  const tmpResult4 = tmp(7158);
   const premiumTrialOffer = tmpResult4.usePremiumTrialOffer();
   if (cResult[3] !== premiumTrialOffer) {
     let num5 = 0;
@@ -132,8 +132,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
   } else {
     tmp13 = cResult[4];
   }
-  const tmp16 = untilAtLeast(6961)(tmp13, closure_15);
-  const tmpResult5 = tmp(17003);
+  const tmp16 = untilAtLeast(7150)(tmp13, closure_15);
+  const tmpResult5 = tmp(17284);
   shouldShowExpiringTrialOfferCard = tmpResult5.useShouldShowExpiringTrialOfferCard();
   if (cResult[5] === stateFromStores) {
     if (cResult[6] === shouldShowExpiringTrialOfferCard) {
@@ -191,17 +191,17 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
                     if (cResult[21] === tmp26) {
                       if (cResult[22] === str2) {
                         if (cResult[23] === str3) {
-                          let tmp44;
+                          let tmp43;
                           if (cResult[24] === tmp29) {
-                            tmp44 = cResult[25];
+                            tmp43 = cResult[25];
                           }
                           if (cResult[26] === tmp27) {
                             if (cResult[27] === tmp28) {
-                              let tmp48;
-                              let tmp54;
+                              let tmp47;
                               let tmp53;
-                              if (cResult[28] === tmp44) {
-                                tmp48 = cResult[29];
+                              let tmp52;
+                              if (cResult[28] === tmp43) {
+                                tmp47 = cResult[29];
                               }
                               const _Symbol = Symbol;
                               const closeButton = tmp7.closeButton;
@@ -210,7 +210,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
                                   return shouldShowExpiringTrialOfferCard.getNoticeType();
                                 }
                               }
-                              if (tmp52 === Symbol.for("react.memo_cache_sentinel")) {
+                              if (tmp51 === Symbol.for("react.memo_cache_sentinel")) {
                                 const intl = tmp(1126).intl;
                                 const stringResult = intl.string(tmp(1126).t.cpT0Cq);
                                 class A {
@@ -219,18 +219,18 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
                                   }
                                 }
                                 cResult[30] = stringResult;
-                                cResult[31] = tmp56;
-                                tmp54 = tmp56;
-                                tmp53 = stringResult;
+                                cResult[31] = tmp55;
+                                tmp53 = tmp55;
+                                tmp52 = stringResult;
                               } else {
-                                tmp53 = cResult[30];
-                                tmp54 = cResult[31];
+                                tmp52 = cResult[30];
+                                tmp53 = cResult[31];
                               }
                               if (cResult[32] === stateFromStores) {
+                                let tmp56;
                                 let tmp57;
-                                let tmp58;
                                 if (cResult[33] === premiumTrialOffer.trialId) {
-                                  tmp57 = cResult[34];
+                                  tmp56 = cResult[34];
                                 }
                                 if (cResult[35] !== tmp7.closeIcon.color) {
                                   size = { width: 16, height: 16, color: tmp7.closeIcon.color };
@@ -240,16 +240,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
                                     }
                                   }
                                   cResult[35] = tmp7.closeIcon.color;
-                                  cResult[36] = tmp60;
-                                  tmp58 = tmp60;
+                                  cResult[36] = tmp59;
+                                  tmp57 = tmp59;
                                 } else {
-                                  tmp58 = cResult[36];
+                                  tmp57 = cResult[36];
                                 }
                                 if (cResult[37] === tmp7.closeButton) {
-                                  if (cResult[38] === tmp57) {
-                                    let tmp61;
-                                    if (cResult[39] === tmp58) {
-                                      tmp61 = cResult[40];
+                                  if (cResult[38] === tmp56) {
+                                    let tmp60;
+                                    if (cResult[39] === tmp57) {
+                                      tmp60 = cResult[40];
                                     }
                                     const _Symbol2 = Symbol;
                                     const primaryCTA = tmp7.primaryCTA;
@@ -258,7 +258,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
                                         return shouldShowExpiringTrialOfferCard.getNoticeType();
                                       }
                                     }
-                                    if (tmp63 === Symbol.for("react.memo_cache_sentinel")) {
+                                    if (tmp62 === Symbol.for("react.memo_cache_sentinel")) {
                                       const intl2 = tmp(1126).intl;
                                       const stringResult1 = intl2.string(tmp(1126).t.J61px0);
                                       class A {
@@ -270,9 +270,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
                                     }
                                     if (cResult[42] === navigateToPremium) {
                                       if (cResult[43] === stateFromStores) {
-                                        let tmp66;
+                                        let tmp65;
                                         if (cResult[44] === premiumTrialOffer.trialId) {
-                                          tmp66 = cResult[45];
+                                          tmp65 = cResult[45];
                                         }
                                         const _Symbol3 = Symbol;
                                         class A {
@@ -281,41 +281,39 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
                                           }
                                         }
                                         if (cResult[47] === stateFromStores) {
-                                          let tmp69;
+                                          let tmp68;
                                           if (cResult[48] === tmp7.linearGradient) {
-                                            tmp69 = cResult[49];
+                                            tmp68 = cResult[49];
                                           }
                                           if (cResult[50] === tmp7.primaryCTA) {
-                                            if (cResult[51] === tmp66) {
-                                              let tmp70;
-                                              if (cResult[52] === tmp69) {
-                                                tmp70 = cResult[53];
+                                            if (cResult[51] === tmp65) {
+                                              let tmp69;
+                                              if (cResult[52] === tmp68) {
+                                                tmp69 = cResult[53];
                                               }
-                                              if (cResult[54] === tmp48) {
-                                                if (cResult[55] === tmp61) {
-                                                  let tmp74;
-                                                  if (cResult[56] === tmp70) {
-                                                    tmp74 = cResult[57];
+                                              if (cResult[54] === tmp47) {
+                                                if (cResult[55] === tmp60) {
+                                                  let tmp73;
+                                                  if (cResult[56] === tmp69) {
+                                                    tmp73 = cResult[57];
                                                   }
-                                                  if (cResult[58] === tmp74) {
-                                                    let tmp78;
+                                                  if (cResult[58] === tmp73) {
+                                                    let tmp77;
                                                     if (cResult[59] === style) {
-                                                      tmp78 = cResult[60];
+                                                      tmp77 = cResult[60];
                                                     }
-                                                    return tmp78;
+                                                    return tmp77;
                                                   }
                                                   class A {
                                                     constructor() {
                                                       return shouldShowExpiringTrialOfferCard.getNoticeType();
                                                     }
                                                   }
-                                                  tmp80[0] = style;
+                                                  tmp79[0] = style;
                                                   class Q {
                                                     constructor() {
                                                       let PREMIUM_TIER_2_TRI_COLOR;
-                                                      let items;
-                                                      const obj = { style: items, start: metroImportAll.START, end: metroImportAll.END, colors: PREMIUM_TIER_2_TRI_COLOR };
-                                                      items = [linearGradient.linearGradient];
+                                                      const obj = { style: linearGradient.linearGradient, start: metroImportAll.START, end: metroImportAll.END, colors: PREMIUM_TIER_2_TRI_COLOR };
                                                       const tmp = closure_12;
                                                       const tmp2 = LinearGradientDefault;
                                                       if (React4.PREMIUM_TIER_0_TRIAL_ENDING === stateFromStores) {
@@ -333,11 +331,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
                                                       return tmp(tmp2, obj);
                                                     }
                                                   }
-                                                  const tmp81 = closure_12(untilAtLeast(6713), tmp80);
-                                                  cResult[58] = tmp74;
+                                                  const tmp80 = closure_12(untilAtLeast(6890), tmp79);
+                                                  cResult[58] = tmp73;
                                                   cResult[59] = style;
-                                                  cResult[60] = tmp81;
-                                                  tmp78 = tmp81;
+                                                  cResult[60] = tmp80;
+                                                  tmp77 = tmp80;
                                                 }
                                               }
                                               class A {
@@ -345,13 +343,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
                                                   return shouldShowExpiringTrialOfferCard.getNoticeType();
                                                 }
                                               }
-                                              let obj3 = { children: tmp76 };
+                                              let obj3 = { children: tmp75 };
                                               class Q {
                                                 constructor() {
                                                   let PREMIUM_TIER_2_TRI_COLOR;
-                                                  let items;
-                                                  const obj = { style: items, start: metroImportAll.START, end: metroImportAll.END, colors: PREMIUM_TIER_2_TRI_COLOR };
-                                                  items = [linearGradient.linearGradient];
+                                                  const obj = { style: linearGradient.linearGradient, start: metroImportAll.START, end: metroImportAll.END, colors: PREMIUM_TIER_2_TRI_COLOR };
                                                   const tmp = closure_12;
                                                   const tmp2 = LinearGradientDefault;
                                                   if (React4.PREMIUM_TIER_0_TRIAL_ENDING === stateFromStores) {
@@ -369,15 +365,15 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
                                                   return tmp(tmp2, obj);
                                                 }
                                               }
-                                              tmp76[0] = tmp48;
-                                              tmp76[1] = tmp61;
-                                              tmp76[2] = tmp70;
-                                              const tmp77 = closure_14(closure_13, obj3);
-                                              cResult[54] = tmp48;
-                                              cResult[55] = tmp61;
-                                              cResult[56] = tmp70;
-                                              cResult[57] = tmp77;
-                                              tmp74 = tmp77;
+                                              tmp75[0] = tmp47;
+                                              tmp75[1] = tmp60;
+                                              tmp75[2] = tmp69;
+                                              const tmp76 = closure_14(closure_13, obj3);
+                                              cResult[54] = tmp47;
+                                              cResult[55] = tmp60;
+                                              cResult[56] = tmp69;
+                                              cResult[57] = tmp76;
+                                              tmp73 = tmp76;
                                             }
                                           }
                                           class A {
@@ -385,13 +381,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
                                               return shouldShowExpiringTrialOfferCard.getNoticeType();
                                             }
                                           }
-                                          tmp72[0] = primaryCTA;
+                                          tmp71[0] = primaryCTA;
                                           class Q {
                                             constructor() {
                                               let PREMIUM_TIER_2_TRI_COLOR;
-                                              let items;
-                                              const obj = { style: items, start: metroImportAll.START, end: metroImportAll.END, colors: PREMIUM_TIER_2_TRI_COLOR };
-                                              items = [linearGradient.linearGradient];
+                                              const obj = { style: linearGradient.linearGradient, start: metroImportAll.START, end: metroImportAll.END, colors: PREMIUM_TIER_2_TRI_COLOR };
                                               const tmp = closure_12;
                                               const tmp2 = LinearGradientDefault;
                                               if (React4.PREMIUM_TIER_0_TRIAL_ENDING === stateFromStores) {
@@ -409,22 +403,20 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
                                               return tmp(tmp2, obj);
                                             }
                                           }
-                                          tmp72[2] = tmp66;
-                                          tmp72[3] = tmp68;
-                                          tmp72[4] = tmp69;
-                                          const tmp73 = closure_12(tmp(1188).ShinyButton, tmp72);
+                                          tmp71[2] = tmp65;
+                                          tmp71[3] = tmp67;
+                                          tmp71[4] = tmp68;
+                                          const tmp72 = closure_12(tmp(1200).ShinyButton, tmp71);
                                           cResult[50] = tmp7.primaryCTA;
-                                          cResult[51] = tmp66;
-                                          cResult[52] = tmp69;
-                                          cResult[53] = tmp73;
-                                          tmp70 = tmp73;
+                                          cResult[51] = tmp65;
+                                          cResult[52] = tmp68;
+                                          cResult[53] = tmp72;
+                                          tmp69 = tmp72;
                                         }
                                         class Q {
                                           constructor() {
                                             let PREMIUM_TIER_2_TRI_COLOR;
-                                            let items;
-                                            const obj = { style: items, start: metroImportAll.START, end: metroImportAll.END, colors: PREMIUM_TIER_2_TRI_COLOR };
-                                            items = [linearGradient.linearGradient];
+                                            const obj = { style: linearGradient.linearGradient, start: metroImportAll.START, end: metroImportAll.END, colors: PREMIUM_TIER_2_TRI_COLOR };
                                             const tmp = closure_12;
                                             const tmp2 = LinearGradientDefault;
                                             if (React4.PREMIUM_TIER_0_TRIAL_ENDING === stateFromStores) {
@@ -445,10 +437,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
                                         cResult[47] = stateFromStores;
                                         cResult[48] = tmp7.linearGradient;
                                         cResult[49] = Q;
-                                        tmp69 = Q;
+                                        tmp68 = Q;
                                       }
                                     }
-                                    const fn3 = function $() {
+                                    const fn2 = function $() {
                                       if (null != stateFromStores) {
                                         const obj2 = { notice_type: tmp, trial_id: tmp2 };
                                         const obj = AnalyticsUtilsDefault;
@@ -459,8 +451,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
                                     cResult[42] = navigateToPremium;
                                     cResult[43] = stateFromStores;
                                     cResult[44] = premiumTrialOffer.trialId;
-                                    cResult[45] = fn3;
-                                    tmp66 = fn3;
+                                    cResult[45] = fn2;
+                                    tmp65 = fn2;
                                   }
                                 }
                                 class A {
@@ -468,15 +460,15 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
                                     return shouldShowExpiringTrialOfferCard.getNoticeType();
                                   }
                                 }
-                                let obj4 = { style: null, accessibilityRole: "button", accessibilityLabel: tmp53, hitSlop: tmp54, onPress: tmp57, children: tmp58 };
-                                const tmp62 = closure_12(tmp(5916).PressableOpacity, obj4);
+                                let obj4 = { style: null, accessibilityRole: "button", accessibilityLabel: tmp52, hitSlop: tmp53, onPress: tmp56, children: tmp57 };
+                                const tmp61 = closure_12(tmp(6189).PressableOpacity, obj4);
                                 cResult[37] = tmp7.closeButton;
-                                cResult[38] = tmp57;
-                                cResult[39] = tmp58;
-                                cResult[40] = tmp62;
-                                tmp61 = tmp62;
+                                cResult[38] = tmp56;
+                                cResult[39] = tmp57;
+                                cResult[40] = tmp61;
+                                tmp60 = tmp61;
                               }
-                              const fn2 = function z() {
+                              const fn = function q() {
                                 if (null != stateFromStores) {
                                   const obj2 = { notice_type: tmp, trial_id: tmp2 };
                                   const obj = AnalyticsUtilsDefault;
@@ -488,8 +480,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
                               };
                               cResult[32] = stateFromStores;
                               cResult[33] = premiumTrialOffer.trialId;
-                              cResult[34] = fn2;
-                              tmp57 = fn2;
+                              cResult[34] = fn;
+                              tmp56 = fn;
                             }
                           }
                           class A {
@@ -497,13 +489,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
                               return shouldShowExpiringTrialOfferCard.getNoticeType();
                             }
                           }
-                          tmp50[0] = tmp28;
-                          const tmp51 = closure_12(tmp27, tmp50);
+                          tmp49[0] = tmp28;
+                          const tmp50 = closure_12(tmp27, tmp49);
                           cResult[26] = tmp27;
                           cResult[27] = tmp28;
-                          cResult[28] = tmp44;
-                          cResult[29] = tmp51;
-                          tmp48 = tmp51;
+                          cResult[28] = tmp43;
+                          cResult[29] = tmp50;
+                          tmp47 = tmp50;
                         }
                       }
                     }
@@ -512,20 +504,20 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
                         return shouldShowExpiringTrialOfferCard.getNoticeType();
                       }
                     }
-                    tmp46[0] = str2;
-                    tmp46[2] = tmp29;
-                    const tmp47 = closure_12(tmp26, tmp46);
+                    tmp45[0] = str2;
+                    tmp45[2] = tmp29;
+                    const tmp46 = closure_12(tmp26, tmp45);
                     cResult[21] = tmp26;
                     cResult[22] = str2;
                     cResult[23] = str3;
                     cResult[24] = tmp29;
-                    cResult[25] = tmp47;
-                    tmp44 = tmp47;
+                    cResult[25] = tmp46;
+                    tmp43 = tmp46;
                   }
                 }
               }
             }
-            untilAtLeast(2115);
+            untilAtLeast(2127);
             class A {
               constructor() {
                 return shouldShowExpiringTrialOfferCard.getNoticeType();
@@ -538,20 +530,20 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
             }
             const header = tmp7.header;
             const tmp31Result = tmp31(PREMIUM_TRIAL);
-            const Text = tmp(4892).Text;
+            const Text = tmp(5086).Text;
             const subscriptionTrial3 = premiumTrialOffer.subscriptionTrial;
             let interval;
-            const formatIntervalDuration = tmp(4534).formatIntervalDuration;
-            tmp(4534);
+            const formatIntervalDuration = tmp(4726).formatIntervalDuration;
+            tmp(4726);
             const tmp37 = getNoticeCopy;
             if (subscriptionTrial3 != null) {
               interval = subscriptionTrial3.interval;
             }
             const subscriptionTrial4 = premiumTrialOffer.subscriptionTrial;
-            const obj5 = { intervalType: interval, intervalCount };
-            intervalCount = undefined;
+            const obj5 = { intervalType: interval, intervalCount: intervalCount1 };
+            intervalCount1 = undefined;
             if (subscriptionTrial4 != null) {
-              intervalCount = subscriptionTrial4.intervalCount;
+              intervalCount1 = subscriptionTrial4.intervalCount;
             }
             const tmp37Result = tmp37(tmp16, formatIntervalDuration(obj5), tmp31Result);
             cResult[10] = tmp16;
@@ -563,11 +555,20 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
             }
             cResult[12] = interval1;
             const subscriptionTrial6 = premiumTrialOffer.subscriptionTrial;
-            let intervalCount1;
             if (subscriptionTrial6 != null) {
-              intervalCount1 = subscriptionTrial6.intervalCount;
+              const intervalCount = subscriptionTrial6.intervalCount;
             }
-            cResult[13] = intervalCount1;
+            class O {
+              constructor() {
+                const tmp = shouldShowExpiringTrialOfferCard && null != stateFromStores && null != premiumTrialOffer;
+                if (tmp) {
+                  const trialId = premiumTrialOffer.trialId;
+                  const obj2 = { notice_type: stateFromStores, trial_id: trialId };
+                  const obj = AnalyticsUtilsDefault;
+                  obj.track(metroRequire.APP_NOTICE_VIEWED, obj2);
+                }
+              }
+            }
             cResult[14] = premiumTrialOffer.trialId;
             cResult[15] = Text;
             cResult[16] = tmp36;
@@ -588,24 +589,26 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
       }
     }
   }
-  const fn = function x() {
-    const tmp = shouldShowExpiringTrialOfferCard && null != stateFromStores && null != premiumTrialOffer;
-    if (tmp) {
-      const trialId = premiumTrialOffer.trialId;
-      const obj2 = { notice_type: stateFromStores, trial_id: trialId };
-      const obj = AnalyticsUtilsDefault;
-      obj.track(metroRequire.APP_NOTICE_VIEWED, obj2);
+  class O {
+    constructor() {
+      const tmp = shouldShowExpiringTrialOfferCard && null != stateFromStores && null != premiumTrialOffer;
+      if (tmp) {
+        const trialId = premiumTrialOffer.trialId;
+        const obj2 = { notice_type: stateFromStores, trial_id: trialId };
+        const obj = AnalyticsUtilsDefault;
+        obj.track(metroRequire.APP_NOTICE_VIEWED, obj2);
+      }
     }
-  };
+  }
   const items1 = [stateFromStores, shouldShowExpiringTrialOfferCard, premiumTrialOffer];
   cResult[5] = stateFromStores;
   cResult[6] = shouldShowExpiringTrialOfferCard;
   cResult[7] = premiumTrialOffer;
-  cResult[8] = fn;
+  cResult[8] = O;
   cResult[9] = items1;
   tmp19 = items1;
-  tmp18 = fn;
-}) : ((navigateToPremium) => {
+  tmp18 = O;
+}) : (function YouExpiringTrialOfferCard(navigateToPremium) {
   let Text;
   let intervalCount;
   let intl;
@@ -621,15 +624,15 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
   let tmp = importDefault;
   let tmp2 = dependencyMap;
   const style = navigateToPremium.style;
-  let obj = _modDef4467();
+  let obj = _modDef4659();
   importDefault = obj.add(5, "days");
   const tmp3 = closure_16();
   dependencyMap = tmp3;
   const tmp4 = navigateToPremium;
   let obj2 = navigateToPremium(573);
-  let items = [shouldShowExpiringTrialOfferCard];
+  const items = [shouldShowExpiringTrialOfferCard];
   const stateFromStores = obj2.useStateFromStores(items, () => shouldShowExpiringTrialOfferCard.getNoticeType());
-  let obj3 = navigateToPremium(6969);
+  let obj3 = navigateToPremium(7158);
   const premiumTrialOffer = obj3.usePremiumTrialOffer();
   let num = 0;
   const tmp7 = useCountdownDefault;
@@ -641,7 +644,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
     }
   }
   const tmp7Result = tmp7(num, closure_15);
-  const tmp4Result = tmp4(17003);
+  const tmp4Result = tmp4(17284);
   shouldShowExpiringTrialOfferCard = tmp4Result.useShouldShowExpiringTrialOfferCard();
   const items1 = [stateFromStores, shouldShowExpiringTrialOfferCard, premiumTrialOffer];
   const effect = stateFromStores.useEffect(() => {
@@ -666,11 +669,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
         }
         let obj4 = { style: tmp3.header, children: closure_12(Text, obj7) };
         const articleURL = getArticleURL(PREMIUM_TRIAL);
-        Text = tmp4(4892).Text;
+        Text = tmp4(5086).Text;
         const subscriptionTrial = premiumTrialOffer.subscriptionTrial;
         let interval;
-        const formatIntervalDuration = tmp4(4534).formatIntervalDuration;
-        tmp4(4534);
+        const formatIntervalDuration = tmp4(4726).formatIntervalDuration;
+        tmp4(4726);
         const tmp17 = premiumTrialOffer;
         const tmp18 = getNoticeCopy;
         if (subscriptionTrial != null) {
@@ -700,9 +703,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
                   const obj4 = { untilAtLeast };
                   obj3.dismiss(obj4);
                 },
-          children: closure_12(tmp4(1188).CloseIcon, size)
+          children: closure_12(tmp4(1200).CloseIcon, size)
         };
-        const PressableOpacity = tmp4(5916).PressableOpacity;
+        const PressableOpacity = tmp4(6189).PressableOpacity;
         intl = tmp4(1126).intl;
         size = { width: 16, height: 16, color: tmp3.closeIcon.color };
         items2[1] = closure_12(PressableOpacity, obj8);
@@ -722,9 +725,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
                 },
           renderLinearGradient() {
                   let PREMIUM_TIER_2_TRI_COLOR;
-                  let items;
-                  const obj = { style: items, start: metroImportAll.START, end: metroImportAll.END, colors: PREMIUM_TIER_2_TRI_COLOR };
-                  items = [linearGradient.linearGradient];
+                  const obj = { style: linearGradient.linearGradient, start: metroImportAll.START, end: metroImportAll.END, colors: PREMIUM_TIER_2_TRI_COLOR };
                   const tmp = closure_12;
                   const tmp2 = LinearGradientDefault;
                   if (React4.PREMIUM_TIER_0_TRIAL_ENDING === stateFromStores) {
@@ -742,7 +743,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToPremium)
                   return tmp(tmp2, obj);
                 }
         };
-        const ShinyButton = tmp4(1188).ShinyButton;
+        const ShinyButton = tmp4(1200).ShinyButton;
         intl2 = tmp4(1126).intl;
         items2[2] = closure_12(ShinyButton, obj9);
         const obj10 = { style, children: closure_14(closure_13, obj6) };

@@ -1,17 +1,17 @@
-// Module ID: 9167
-// Function ID: 9168
+// Module ID: 10733
+// Function ID: 10734
 // Name: useCurrentEmbeddedActivity
-// Dependencies: [2050, 558, 576, 504, 2]
+// Dependencies: [2062, 558, 576, 504, 2]
 
-// Module 9167 (useCurrentEmbeddedActivity)
+// Module 10733 (useCurrentEmbeddedActivity)
 import react from "react" /* 576 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentEmbeddedActivity() {
   let currentEmbeddedActivity;
   let tmp4;
   let tmp5;
@@ -19,7 +19,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [EmbeddedActivitiesStore];
-    const fn = function u() {
+    const fn = function n() {
       return currentEmbeddedActivity.getCurrentEmbeddedActivity();
     };
     cResult[0] = items;
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useCurrentEmbeddedActivity() {
   let currentEmbeddedActivity;
   const items = [EmbeddedActivitiesStore];
   const obj = get_initialized;

@@ -1,21 +1,19 @@
-// Module ID: 6110
-// Function ID: 6111
+// Module ID: 6290
+// Function ID: 6291
 // Name: useInputAttachments
-// Dependencies: [32, 19, 17, 21, 6111, 4892, 558, 576, 6112, 2]
+// Dependencies: [32, 19, 17, 21, 6291, 5086, 558, 576, 6292, 2]
 // Exports: estimateAttachmentWidth, renderInputAttachment
 
-// Module 6110 (useInputAttachments)
+// Module 6290 (useInputAttachments)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import IconSize from "IconSize" /* 6111 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import IconSize from "IconSize" /* 6291 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let setWidth;
 
 let Platform;
 let closure_4;
@@ -23,7 +21,7 @@ let hasOwnProperty;
 ({ Platform, Pressable: closure_4, View: hasOwnProperty } = react_native);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((setWidth) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InputAttachmentContainer(setWidth) {
   let content;
   let style;
   let obj = react2;
@@ -111,7 +109,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((setWidth) => {
     tmp2 = tmp4;
   }
   return tmp2;
-}) : ((arg0) => {
+}) : (function InputAttachmentContainer(arg0) {
   let closure_129_1;
   let content;
   let pressableProps;
@@ -145,8 +143,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((setWidth) => {
 });
 let closure_7 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((leadingIcon, leading) => {
-  let diff1;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInputAttachments(leadingIcon, leading) {
   let inputStyles;
   let leadingText;
   let trailingIcon;
@@ -166,27 +163,23 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((leadingIcon, leading
     if (cResult[3] === leadingIcon) {
       if (cResult[4] === leadingText) {
         leading = undefined;
-        const tmp10 = cResult[5];
+        const tmp9 = cResult[5];
         if (leading != null) {
           leading = leading.leading;
         }
-        if (tmp10 === leading) {
-          let tmp12;
+        if (tmp9 === leading) {
+          let tmp11;
           if (cResult[6] === inputStyles.text) {
-            tmp12 = cResult[7];
+            tmp11 = cResult[7];
           }
           let trailing;
-          const tmp19 = cResult[8];
+          const tmp18 = cResult[8];
           if (leading != null) {
             trailing = leading.trailing;
           }
-          if (tmp19 === trailing) {
+          if (tmp18 === trailing) {
             if (cResult[9] === inputStyles.text) {
               if (cResult[10] === trailingIcon) {
-                let tmp21;
-                if (cResult[11] === trailingText) {
-                  tmp21 = cResult[12];
-                }
                 if (null == leadingIcon) {
                   let leadingIcon2;
                   let leading1;
@@ -197,122 +190,64 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((leadingIcon, leading
                     leadingIcon2 = inputStyles.leadingText;
                   }
                   if (null == trailingIcon) {
-                    let trailingIcon2;
                     let trailing1;
                     if (leading != null) {
                       trailing1 = leading.trailing;
                     }
                     if (null == trailing1) {
-                      trailingIcon2 = inputStyles.trailingText;
+                      let trailingIcon2 = inputStyles.trailingText;
                     }
                     if (cResult[13] === leadingIcon) {
-                      let tmp30;
+                      let tmp25;
                       if (cResult[14] === inputStyles.leadingIcon) {
-                        tmp30 = cResult[15];
+                        tmp25 = cResult[15];
                       }
-                      const first = trailingIcon(react.useState(tmp30), 2)[0];
-                      trailingIcon(react.useState(tmp30), 2);
-                      const obj6 = react;
-                      const tmp31 = trailingIcon;
+                      const first = trailingIcon(react.useState(tmp25), 2)[0];
+                      trailingIcon(react.useState(tmp25), 2);
+                      const obj5 = react;
+                      const tmp26 = trailingIcon;
                       if (cResult[16] === inputStyles.trailingIcon) {
-                        let tmp35;
+                        let tmp30;
                         if (cResult[17] === trailingIcon) {
-                          tmp35 = cResult[18];
+                          tmp30 = cResult[18];
                         }
-                        const tmp31Result = tmp31(obj6.useState(tmp35), 2);
-                        const first1 = tmp31Result[0];
+                        const first1 = tmp26(obj5.useState(tmp30), 2)[0];
                         let prop;
-                        const tmp38 = tmp31Result[1];
+                        const tmp26Result = tmp26(obj5.useState(tmp30), 2);
                         if (leading != null) {
                           prop = leading.leadingPressableProps;
                         }
                         if (prop == null) {
                           prop = tmp8;
                         }
-                        if (cResult[19] === tmp12) {
-                          if (cResult[20] === leadingIcon2) {
-                            let tmp40;
-                            if (cResult[21] === prop) {
-                              tmp40 = cResult[22];
+                        class L {
+                          constructor() {
+                            let num = 0;
+                            if (null != trailingIcon) {
+                              num = IconSize.ICON_SIZE.xs + tmp;
                             }
-                            let prop1;
-                            if (leading != null) {
-                              prop1 = leading.trailingPressableProps;
-                            }
-                            if (prop1 == null) {
-                              prop1 = tmp9;
-                            }
-                            if (cResult[23] === prop1) {
-                              if (cResult[24] === tmp21) {
-                                let tmp45;
-                                if (cResult[25] === trailingIcon2) {
-                                  tmp45 = cResult[26];
-                                }
-                                if (cResult[27] === first) {
-                                  if (cResult[28] === inputStyles.padding) {
-                                    let tmp49;
-                                    if (cResult[29] === first1) {
-                                      tmp49 = cResult[30];
-                                    }
-                                    if (cResult[31] === tmp49) {
-                                      if (cResult[32] === tmp40) {
-                                        let tmp52;
-                                        if (cResult[33] === tmp45) {
-                                          tmp52 = cResult[34];
-                                        }
-                                        return tmp52;
-                                      }
-                                    }
-                                    const obj2 = { leading: tmp40, trailing: tmp45, inputStyle: tmp49 };
-                                    cResult[31] = tmp49;
-                                    cResult[32] = tmp40;
-                                    cResult[33] = tmp45;
-                                    cResult[34] = obj2;
-                                    tmp52 = obj2;
-                                  }
-                                }
-                                let diff;
-                                if (0 !== first) {
-                                  diff = first - inputStyles.padding.paddingHorizontal;
-                                }
-                                const obj3 = { marginStart: diff, marginEnd: diff1 };
-                                diff1 = undefined;
-                                if (0 !== first1) {
-                                  diff1 = first1 - inputStyles.padding.paddingHorizontal;
-                                }
-                                cResult[27] = first;
-                                cResult[28] = inputStyles.padding;
-                                cResult[29] = first1;
-                                cResult[30] = obj3;
-                                tmp49 = obj3;
-                              }
-                            }
-                            const tmp48 = <closure_7 content={tmp21} setWidth={tmp38} pressableProps={prop1} style={trailingIcon2} />;
-                            cResult[23] = prop1;
-                            cResult[24] = tmp21;
-                            cResult[25] = trailingIcon2;
-                            cResult[26] = tmp48;
-                            tmp45 = tmp48;
+                            return num;
                           }
                         }
-                        const tmp43 = <closure_7 content={tmp12} setWidth={tmp34} pressableProps={prop} style={leadingIcon2} />;
-                        cResult[19] = tmp12;
+                        const tmp38 = <closure_7 content={tmp11} setWidth={tmp29} pressableProps={prop} style={leadingIcon2} />;
+                        cResult[19] = tmp11;
                         cResult[20] = leadingIcon2;
                         cResult[21] = prop;
-                        cResult[22] = tmp43;
-                        tmp40 = tmp43;
+                        cResult[22] = tmp38;
                       }
-                      const fn2 = function w() {
-                        let num = 0;
-                        if (null != trailingIcon) {
-                          num = IconSize.ICON_SIZE.xs + tmp;
+                      class L {
+                        constructor() {
+                          let num = 0;
+                          if (null != trailingIcon) {
+                            num = IconSize.ICON_SIZE.xs + tmp;
+                          }
+                          return num;
                         }
-                        return num;
-                      };
+                      }
                       cResult[16] = inputStyles.trailingIcon;
                       cResult[17] = trailingIcon;
-                      cResult[18] = fn2;
-                      tmp35 = fn2;
+                      cResult[18] = L;
+                      tmp30 = L;
                     }
                     const fn = function f() {
                       let num = 0;
@@ -324,7 +259,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((leadingIcon, leading
                     cResult[13] = leadingIcon;
                     cResult[14] = inputStyles.leadingIcon;
                     cResult[15] = fn;
-                    tmp30 = fn;
+                    tmp25 = fn;
                   }
                   trailingIcon2 = inputStyles.trailingIcon;
                 }
@@ -336,18 +271,6 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((leadingIcon, leading
           if (leading != null) {
             trailing2 = leading.trailing;
           }
-          if (trailing2 == null) {
-            let tmp24;
-            if (null != trailingIcon) {
-              tmp24 = <trailingIcon size="xs" color="input-icon-default" />;
-            } else {
-              tmp24 = null;
-              if (null != trailingText) {
-                tmp24 = jsx(tmp(tmp2[5]).Text, { variant: "text-md/normal", style: tmp23, children: trailingText });
-              }
-            }
-            trailing2 = tmp24;
-          }
           let trailing3;
           if (leading != null) {
             trailing3 = leading.trailing;
@@ -357,7 +280,6 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((leadingIcon, leading
           cResult[10] = trailingIcon;
           cResult[11] = trailingText;
           cResult[12] = trailing2;
-          tmp21 = trailing2;
         }
       }
     }
@@ -366,16 +288,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((leadingIcon, leading
       leading2 = leading.leading;
     }
     if (leading2 == null) {
-      let tmp15;
+      let tmp14;
       if (null != leadingIcon) {
-        tmp15 = <leadingIcon size="xs" color="input-icon-default" />;
+        tmp14 = <leadingIcon size="xs" color="input-icon-default" />;
       } else {
-        tmp15 = null;
+        tmp14 = null;
         if (null != leadingText) {
-          tmp15 = jsx(tmp(tmp2[5]).Text, { variant: "text-md/normal", style: tmp14, children: leadingText });
+          tmp14 = jsx(tmp(tmp2[5]).Text, { variant: "text-md/normal", style: tmp13, children: leadingText });
         }
       }
-      leading2 = tmp15;
+      leading2 = tmp14;
     }
     let num = 3;
     cResult[3] = leadingIcon;
@@ -387,14 +309,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((leadingIcon, leading
     cResult[5] = leading3;
     cResult[6] = inputStyles.text;
     cResult[7] = leading2;
-    tmp12 = leading2;
+    tmp11 = leading2;
   }
-  const obj9 = { size: leadingIcon.size, hasLeadingIcon: null != leadingIcon.leadingIcon };
+  const obj4 = { size: leadingIcon.size, hasLeadingIcon: null != leadingIcon.leadingIcon };
   cResult[0] = leadingIcon.size;
   cResult[1] = null != leadingIcon.leadingIcon;
-  cResult[2] = obj9;
-  tmp5 = obj9;
-}) : ((size, leading) => {
+  cResult[2] = obj4;
+  tmp5 = obj4;
+}) : (function useInputAttachments(size, leading) {
   let diff1;
   let inputStyles;
   let leadingIcon;
@@ -405,7 +327,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((leadingIcon, leading
   let tmp20;
   let trailingIcon;
   let trailingPressableProps;
-  const f91515 = () => {
+  const f92717 = () => {
     let num = 0;
     if (null != leadingIcon) {
       num = IconSize.ICON_SIZE.xs + tmp;
@@ -469,8 +391,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((leadingIcon, leading
         let trailingIcon2 = inputStyles.trailingText;
       }
       let num = 2;
-      [tmp19, tmp20] = trailingIcon(react.useState(f91515), 2);
-      trailingIcon(react.useState(f91515), 2);
+      [tmp19, tmp20] = trailingIcon(react.useState(f92717), 2);
+      trailingIcon(react.useState(f92717), 2);
       const tmp21 = trailingIcon(react.useState(() => {
         let num = 0;
         if (null != trailingIcon) {

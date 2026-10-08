@@ -1,30 +1,31 @@
-// Module ID: 10117
-// Function ID: 10118
+// Module ID: 9702
+// Function ID: 9703
 // Name: GIFPickerItemActionSheet
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 10103, 10107, 1484, 4860, 4574, 1126, 10118, 6695, 4573, 5601, 5981, 5599, 6652, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 9687, 9691, 1496, 5054, 4766, 1126, 9703, 6872, 4765, 5375, 6164, 5963, 6829, 2]
 
-// Module 10117 (GIFPickerItemActionSheet)
+// Module 9702 (GIFPickerItemActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import ToastUtils from "ToastUtils" /* 4573 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import ClipboardUtils from "ClipboardUtils" /* 6695 */;
-import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10103 */;
-import GifIcon from "GifIcon" /* 10118 */;
-import react from "react" /* 19 */;
+import ToastUtils from "ToastUtils" /* 4765 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import ClipboardUtils from "ClipboardUtils" /* 6872 */;
+import GIFPickerActionCreators from "GIFPickerActionCreators" /* 9687 */;
+import GifIcon from "GifIcon" /* 9703 */;
+import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet, dependencyMap, item, onPress;
+let BottomSheet, addFavoriteGIFResult, hideActionSheetResult, obj1, open2Result, openResult, removeFavoriteGIFResult, tmp10, tmp11, tmp14, tmp16, tmp17, tmp18, tmp19, tmp20, tmp21, tmp23, tmp24, tmp3, tmp6, tmp7, tmp9;
 
 let hasOwnProperty;
 let metroRequire;
 let obj2;
 let obj3;
+let react = react_mod;
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -33,21 +34,20 @@ obj2 = { paddingHorizontal: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
 obj3 = { borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 let closure_7 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
-  let closure_2;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerItemActionSheet(item) {
   let height;
   let items1;
-  let obj5;
+  let tmp22;
   let tmp5;
   let width;
   let tmp = item;
-  const tmp2 = dependencyMap;
-  let obj = item(576);
+  const tmp2 = G;
+  let obj = item(G[6]);
   const cResult = obj.c(37);
   item = item.item;
   const tmp4 = closure_7();
   if (cResult[0] !== item.url) {
-    const tmpResult = tmp(10103);
+    const tmpResult = tmp(tmp2[7]);
     const gifUrlKeyResult = tmpResult.gifUrlKey(item.url);
     cResult[0] = item.url;
     cResult[1] = gifUrlKeyResult;
@@ -55,11 +55,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   } else {
     tmp5 = cResult[1];
   }
-  const tmpResult2 = tmp(10107);
+  const tmpResult2 = tmp(tmp2[8]);
   const isFavoriteGIF = tmpResult2.useIsFavoriteGIF(tmp5);
-  ({ width, height } = isFavoriteGIF(1484)());
-  const tmp8 = isFavoriteGIF(1484)();
-  const bound = Math.min((width - 2 * isFavoriteGIF(587).space.PX_16) / item.width, 0.5 * height / item.height);
+  ({ width, height } = isFavoriteGIF(tmp2[9])());
+  const tmp8 = isFavoriteGIF(tmp2[9])();
+  const bound = Math.min((width - 2 * isFavoriteGIF(tmp2[4]).space.PX_16) / item.width, 0.5 * height / item.height);
   const result = item.width * bound;
   const result1 = item.height * bound;
   if (cResult[2] === result) {
@@ -71,294 +71,337 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
     const _Symbol = Symbol;
     let str = "react.memo_cache_sentinel";
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function w() {
-        const obj = isFavoriteGIF(closure_2[10]);
-        obj.hideActionSheet();
-      };
-      cResult[5] = fn;
-      tmp13 = fn;
-    } else {
-      tmp13 = cResult[5];
-    }
-    dependencyMap = tmp13;
-    if (cResult[6] === isFavoriteGIF) {
-      let tmp14;
-      let tmp15;
-      if (cResult[7] === item) {
-        tmp14 = cResult[8];
+      class G {
+        constructor() {
+          obj = closure_1(closure_2[10]);
+          hideActionSheetResult = obj.hideActionSheet();
+          return;
+        }
       }
-      onPress = tmp14;
+      cResult[5] = G;
+      tmp13 = G;
+    } else {
+      class G {
+        constructor() {
+          obj = closure_1(closure_2[10]);
+          hideActionSheetResult = obj.hideActionSheet();
+          return;
+        }
+      }
+    }
+    G = tmp13;
+    if (cResult[6] === isFavoriteGIF) {
+      class G {
+        constructor() {
+          obj = closure_1(closure_2[10]);
+          hideActionSheetResult = obj.hideActionSheet();
+          return;
+        }
+      }
+      const react = tmp14;
       if (cResult[9] !== item.url) {
-        const fn2 = function x() {
-          closure_2();
-          const obj = ClipboardUtils;
-          obj.copy(item.url, ToastUtils.presentLinkCopied);
-        };
-        cResult[9] = item.url;
-        class B {
+        class G {
           constructor() {
-            let stringResult;
-            let str = "primary";
-            const Button = components_Button_Button.Button;
-            const tmp = hasOwnProperty;
-            if (isFavoriteGIF) {
+            obj = closure_1(closure_2[10]);
+            hideActionSheetResult = obj.hideActionSheet();
+            return;
+          }
+        }
+        cResult[9] = item.url;
+        class P {
+          constructor() {
+            tmp2 = closure_0;
+            tmp3 = closure_2;
+            tmp = jsx;
+            str = "primary";
+            Button = closure_0(closure_2[16]).Button;
+            tmp4 = closure_1;
+            if (tmp4) {
               str = "destructive";
             }
-            const obj = { variant: str, onPress, text: stringResult, grow: true };
-            const intl = tmp2(1126).intl;
-            const string = intl.string;
-            const t = tmp2(1126).t;
-            if (isFavoriteGIF) {
+            obj = { variant: str, onPress: closure_3, text: null, grow: true };
+            intl = tmp2(tmp3[12]).intl;
+            string = intl.string;
+            t = tmp2(tmp3[12]).t;
+            if (tmp4) {
               stringResult = string(t["5/NS74"]);
             } else {
               stringResult = string(t.nIH0v8);
             }
+            obj.text = stringResult;
             return tmp(Button, obj);
           }
         }
-        tmp15 = fn2;
       } else {
-        tmp15 = cResult[10];
+        class G {
+          constructor() {
+            obj = closure_1(closure_2[10]);
+            hideActionSheetResult = obj.hideActionSheet();
+            return;
+          }
+        }
       }
       if (cResult[11] === tmp14) {
-        let tmp16;
-        if (cResult[12] === isFavoriteGIF) {
-          tmp16 = cResult[13];
+        class G {
+          constructor() {
+            obj = closure_1(closure_2[10]);
+            hideActionSheetResult = obj.hideActionSheet();
+            return;
+          }
         }
         if (cResult[14] === tmp12) {
-          let tmp19;
-          let tmp20;
-          if (cResult[15] === tmp4.gifImage) {
-            tmp19 = cResult[16];
+          class G {
+            constructor() {
+              obj = closure_1(closure_2[10]);
+              hideActionSheetResult = obj.hideActionSheet();
+              return;
+            }
           }
           if (cResult[17] !== item.src) {
-            let obj2 = { uri: item.src };
-            cResult[17] = item.src;
-            class B {
+            class G {
               constructor() {
-                let stringResult;
-                let str = "primary";
-                const Button = components_Button_Button.Button;
-                const tmp = hasOwnProperty;
-                if (isFavoriteGIF) {
+                obj = closure_1(closure_2[10]);
+                hideActionSheetResult = obj.hideActionSheet();
+                return;
+              }
+            }
+            tmp21[0] = item.src;
+            cResult[17] = item.src;
+            class P {
+              constructor() {
+                tmp2 = closure_0;
+                tmp3 = closure_2;
+                tmp = jsx;
+                str = "primary";
+                Button = closure_0(closure_2[16]).Button;
+                tmp4 = closure_1;
+                if (tmp4) {
                   str = "destructive";
                 }
-                const obj = { variant: str, onPress, text: stringResult, grow: true };
-                const intl = tmp2(1126).intl;
-                const string = intl.string;
-                const t = tmp2(1126).t;
-                if (isFavoriteGIF) {
+                obj = { variant: str, onPress: closure_3, text: null, grow: true };
+                intl = tmp2(tmp3[12]).intl;
+                string = intl.string;
+                t = tmp2(tmp3[12]).t;
+                if (tmp4) {
                   stringResult = string(t["5/NS74"]);
                 } else {
                   stringResult = string(t.nIH0v8);
                 }
+                obj.text = stringResult;
                 return tmp(Button, obj);
               }
             }
-            cResult[18] = obj2;
-            tmp20 = obj2;
+            cResult[18] = tmp21;
           } else {
-            tmp20 = cResult[18];
+            class G {
+              constructor() {
+                obj = closure_1(closure_2[10]);
+                hideActionSheetResult = obj.hideActionSheet();
+                return;
+              }
+            }
           }
           if (cResult[19] === tmp19) {
-            let tmp21;
-            let tmp25;
-            let tmp29;
-            if (cResult[20] === tmp20) {
-              tmp21 = cResult[21];
+            class G {
+              constructor() {
+                obj = closure_1(closure_2[10]);
+                hideActionSheetResult = obj.hideActionSheet();
+                return;
+              }
             }
-            if (cResult[22] !== tmp16) {
-              cResult[22] = tmp16;
-              const tmp16Result = tmp16();
-              class B {
+            if (cResult[22] !== tmp17) {
+              class G {
                 constructor() {
-                  let stringResult;
-                  let str = "primary";
-                  const Button = components_Button_Button.Button;
-                  const tmp = hasOwnProperty;
-                  if (isFavoriteGIF) {
+                  obj = closure_1(closure_2[10]);
+                  hideActionSheetResult = obj.hideActionSheet();
+                  return;
+                }
+              }
+              cResult[22] = tmp17;
+              class P {
+                constructor() {
+                  tmp2 = closure_0;
+                  tmp3 = closure_2;
+                  tmp = jsx;
+                  str = "primary";
+                  Button = closure_0(closure_2[16]).Button;
+                  tmp4 = closure_1;
+                  if (tmp4) {
                     str = "destructive";
                   }
-                  const obj = { variant: str, onPress, text: stringResult, grow: true };
-                  const intl = tmp2(1126).intl;
-                  const string = intl.string;
-                  const t = tmp2(1126).t;
-                  if (isFavoriteGIF) {
+                  obj = { variant: str, onPress: closure_3, text: null, grow: true };
+                  intl = tmp2(tmp3[12]).intl;
+                  string = intl.string;
+                  t = tmp2(tmp3[12]).t;
+                  if (tmp4) {
                     stringResult = string(t["5/NS74"]);
                   } else {
                     stringResult = string(t.nIH0v8);
                   }
+                  obj.text = stringResult;
                   return tmp(Button, obj);
                 }
               }
-              tmp25 = tmp16Result;
             } else {
-              tmp25 = cResult[23];
+              class G {
+                constructor() {
+                  obj = closure_1(closure_2[10]);
+                  hideActionSheetResult = obj.hideActionSheet();
+                  return;
+                }
+              }
             }
             const _Symbol2 = Symbol;
-            class B {
+            class P {
               constructor() {
-                let stringResult;
-                let str = "primary";
-                const Button = components_Button_Button.Button;
-                const tmp = hasOwnProperty;
-                if (isFavoriteGIF) {
+                tmp2 = closure_0;
+                tmp3 = closure_2;
+                tmp = jsx;
+                str = "primary";
+                Button = closure_0(closure_2[16]).Button;
+                tmp4 = closure_1;
+                if (tmp4) {
                   str = "destructive";
                 }
-                const obj = { variant: str, onPress, text: stringResult, grow: true };
-                const intl = tmp2(1126).intl;
-                const string = intl.string;
-                const t = tmp2(1126).t;
-                if (isFavoriteGIF) {
+                obj = { variant: str, onPress: closure_3, text: null, grow: true };
+                intl = tmp2(tmp3[12]).intl;
+                string = intl.string;
+                t = tmp2(tmp3[12]).t;
+                if (tmp4) {
                   stringResult = string(t["5/NS74"]);
                 } else {
                   stringResult = string(t.nIH0v8);
                 }
+                obj.text = stringResult;
                 return tmp(Button, obj);
               }
             }
             if (cResult[25] !== tmp15) {
-              let obj3 = { variant: "secondary", onPress: tmp15, text: tmp28, grow: true };
-              class B {
+              class G {
                 constructor() {
-                  let stringResult;
-                  let str = "primary";
-                  const Button = components_Button_Button.Button;
-                  const tmp = hasOwnProperty;
-                  if (isFavoriteGIF) {
+                  obj = closure_1(closure_2[10]);
+                  hideActionSheetResult = obj.hideActionSheet();
+                  return;
+                }
+              }
+              let obj2 = { variant: "secondary", onPress: tmp15, text: tmp29, grow: true };
+              class P {
+                constructor() {
+                  tmp2 = closure_0;
+                  tmp3 = closure_2;
+                  tmp = jsx;
+                  str = "primary";
+                  Button = closure_0(closure_2[16]).Button;
+                  tmp4 = closure_1;
+                  if (tmp4) {
                     str = "destructive";
                   }
-                  const obj = { variant: str, onPress, text: stringResult, grow: true };
-                  const intl = tmp2(1126).intl;
-                  const string = intl.string;
-                  const t = tmp2(1126).t;
-                  if (isFavoriteGIF) {
+                  obj = { variant: str, onPress: closure_3, text: null, grow: true };
+                  intl = tmp2(tmp3[12]).intl;
+                  string = intl.string;
+                  t = tmp2(tmp3[12]).t;
+                  if (tmp4) {
                     stringResult = string(t["5/NS74"]);
                   } else {
                     stringResult = string(t.nIH0v8);
                   }
+                  obj.text = stringResult;
                   return tmp(Button, obj);
                 }
               }
               cResult[25] = tmp15;
               class O {
                 constructor() {
-                  let intl;
-                  let intl2;
-                  closure_2();
-                  const obj = GIFPickerActionCreators;
-                  if (isFavoriteGIF) {
-                    obj.removeFavoriteGIF(item.url);
-                    const obj2 = { key: "REMOVED_FROM_FAVORITES", content: intl2.string(intl3.t.in1rga), IconComponent: GifIcon.GifIcon };
-                    const open2 = ToastActionCreatorsDefault.open;
-                    ToastActionCreatorsDefault;
-                    intl2 = intl3.intl;
-                    open2(obj2);
+                  tmp = closure_2();
+                  obj = closure_0(closure_2[7]);
+                  if (closure_1) {
+                    tmp14 = item;
+                    removeFavoriteGIFResult = obj.removeFavoriteGIF(item.url);
+                    tmp16 = closure_1;
+                    tmp17 = closure_2;
+                    tmp18 = closure_1(closure_2[11]);
+                    obj1 = { key: "REMOVED_FROM_FAVORITES", content: null, IconComponent: null };
+                    tmp19 = closure_0;
+                    tmp20 = closure_2;
+                    open2 = tmp18.open;
+                    intl2 = closure_0(closure_2[12]).intl;
+                    tmp21 = closure_0;
+                    tmp22 = closure_2;
+                    obj1.content = intl2.string(closure_0(closure_2[12]).t.in1rga);
+                    tmp23 = closure_0;
+                    tmp24 = closure_2;
+                    obj1.IconComponent = closure_0(closure_2[13]).GifIcon;
+                    open2Result = open2(obj1);
                   } else {
-                    obj.addFavoriteGIF(item);
-                    const obj3 = { key: "ADDED_TO_FAVORITES", content: intl.string(intl3.t.okQonm), IconComponent: GifIcon.GifIcon };
-                    const open = ToastActionCreatorsDefault.open;
-                    ToastActionCreatorsDefault;
-                    intl = intl3.intl;
-                    open(obj3);
+                    tmp2 = item;
+                    addFavoriteGIFResult = obj.addFavoriteGIF(item);
+                    tmp4 = closure_1;
+                    tmp5 = closure_2;
+                    tmp6 = closure_1(closure_2[11]);
+                    obj4 = { key: "ADDED_TO_FAVORITES", content: null, IconComponent: null };
+                    tmp7 = closure_0;
+                    tmp8 = closure_2;
+                    open = tmp6.open;
+                    intl = closure_0(closure_2[12]).intl;
+                    tmp9 = closure_0;
+                    tmp10 = closure_2;
+                    obj4.content = intl.string(closure_0(closure_2[12]).t.okQonm);
+                    tmp11 = closure_0;
+                    tmp12 = closure_2;
+                    obj4.IconComponent = closure_0(closure_2[13]).GifIcon;
+                    openResult = open(obj4);
                   }
+                  return;
                 }
               }
               cResult[26] = tmp31;
-              tmp29 = tmp31;
             } else {
-              tmp29 = cResult[26];
-            }
-            if (cResult[27] === tmp25) {
-              let tmp32;
-              if (cResult[28] === tmp29) {
-                tmp32 = cResult[29];
-              }
-              if (cResult[30] === tmp4.gifContainer) {
-                if (cResult[31] === tmp21) {
-                  let tmp34;
-                  if (cResult[32] === tmp32) {
-                    tmp34 = cResult[33];
-                  }
-                  if (cResult[34] === tmp4.contentWrapper) {
-                    let tmp39;
-                    if (cResult[35] === tmp34) {
-                      tmp39 = cResult[36];
-                    }
-                    return tmp39;
-                  }
-                  const obj4 = { startExpanded: true, children: closure_5(View, obj5) };
-                  class B {
-                    constructor() {
-                      let stringResult;
-                      let str = "primary";
-                      const Button = components_Button_Button.Button;
-                      const tmp = hasOwnProperty;
-                      if (isFavoriteGIF) {
-                        str = "destructive";
-                      }
-                      const obj = { variant: str, onPress, text: stringResult, grow: true };
-                      const intl = tmp2(1126).intl;
-                      const string = intl.string;
-                      const t = tmp2(1126).t;
-                      if (isFavoriteGIF) {
-                        stringResult = string(t["5/NS74"]);
-                      } else {
-                        stringResult = string(t.nIH0v8);
-                      }
-                      return tmp(Button, obj);
-                    }
-                  }
-                  obj5 = { style: tmp17, children: null };
-                  class O {
-                    constructor() {
-                      let intl;
-                      let intl2;
-                      closure_2();
-                      const obj = GIFPickerActionCreators;
-                      if (isFavoriteGIF) {
-                        obj.removeFavoriteGIF(item.url);
-                        const obj2 = { key: "REMOVED_FROM_FAVORITES", content: intl2.string(intl3.t.in1rga), IconComponent: GifIcon.GifIcon };
-                        const open2 = ToastActionCreatorsDefault.open;
-                        ToastActionCreatorsDefault;
-                        intl2 = intl3.intl;
-                        open2(obj2);
-                      } else {
-                        obj.addFavoriteGIF(item);
-                        const obj3 = { key: "ADDED_TO_FAVORITES", content: intl.string(intl3.t.okQonm), IconComponent: GifIcon.GifIcon };
-                        const open = ToastActionCreatorsDefault.open;
-                        ToastActionCreatorsDefault;
-                        intl = intl3.intl;
-                        open(obj3);
-                      }
-                    }
-                  }
-                  BottomSheet = tmp(6652).BottomSheet;
-                  const tmp41 = closure_5(BottomSheet, obj4);
-                  cResult[34] = tmp4.contentWrapper;
-                  cResult[35] = tmp34;
-                  cResult[36] = tmp41;
-                  tmp39 = tmp41;
+              class G {
+                constructor() {
+                  obj = closure_1(closure_2[10]);
+                  hideActionSheetResult = obj.hideActionSheet();
+                  return;
                 }
               }
-              class B {
+            }
+            if (cResult[27] === tmp26) {
+              class G {
                 constructor() {
-                  let stringResult;
-                  let str = "primary";
-                  const Button = components_Button_Button.Button;
-                  const tmp = hasOwnProperty;
-                  if (isFavoriteGIF) {
+                  obj = closure_1(closure_2[10]);
+                  hideActionSheetResult = obj.hideActionSheet();
+                  return;
+                }
+              }
+              if (cResult[30] === tmp4.gifContainer) {
+                class G {
+                  constructor() {
+                    obj = closure_1(closure_2[10]);
+                    hideActionSheetResult = obj.hideActionSheet();
+                    return;
+                  }
+                }
+              }
+              class P {
+                constructor() {
+                  tmp2 = closure_0;
+                  tmp3 = closure_2;
+                  tmp = jsx;
+                  str = "primary";
+                  Button = closure_0(closure_2[16]).Button;
+                  tmp4 = closure_1;
+                  if (tmp4) {
                     str = "destructive";
                   }
-                  const obj = { variant: str, onPress, text: stringResult, grow: true };
-                  const intl = tmp2(1126).intl;
-                  const string = intl.string;
-                  const t = tmp2(1126).t;
-                  if (isFavoriteGIF) {
+                  obj = { variant: str, onPress: closure_3, text: null, grow: true };
+                  intl = tmp2(tmp3[12]).intl;
+                  string = intl.string;
+                  t = tmp2(tmp3[12]).t;
+                  if (tmp4) {
                     stringResult = string(t["5/NS74"]);
                   } else {
                     stringResult = string(t.nIH0v8);
                   }
+                  obj.text = stringResult;
                   return tmp(Button, obj);
                 }
               }
@@ -366,251 +409,381 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
               const items = [, ];
               class O {
                 constructor() {
-                  let intl;
-                  let intl2;
-                  closure_2();
-                  const obj = GIFPickerActionCreators;
-                  if (isFavoriteGIF) {
-                    obj.removeFavoriteGIF(item.url);
-                    const obj2 = { key: "REMOVED_FROM_FAVORITES", content: intl2.string(intl3.t.in1rga), IconComponent: GifIcon.GifIcon };
-                    const open2 = ToastActionCreatorsDefault.open;
-                    ToastActionCreatorsDefault;
-                    intl2 = intl3.intl;
-                    open2(obj2);
+                  tmp = closure_2();
+                  obj = closure_0(closure_2[7]);
+                  if (closure_1) {
+                    tmp14 = item;
+                    removeFavoriteGIFResult = obj.removeFavoriteGIF(item.url);
+                    tmp16 = closure_1;
+                    tmp17 = closure_2;
+                    tmp18 = closure_1(closure_2[11]);
+                    obj1 = { key: "REMOVED_FROM_FAVORITES", content: null, IconComponent: null };
+                    tmp19 = closure_0;
+                    tmp20 = closure_2;
+                    open2 = tmp18.open;
+                    intl2 = closure_0(closure_2[12]).intl;
+                    tmp21 = closure_0;
+                    tmp22 = closure_2;
+                    obj1.content = intl2.string(closure_0(closure_2[12]).t.in1rga);
+                    tmp23 = closure_0;
+                    tmp24 = closure_2;
+                    obj1.IconComponent = closure_0(closure_2[13]).GifIcon;
+                    open2Result = open2(obj1);
                   } else {
-                    obj.addFavoriteGIF(item);
-                    const obj3 = { key: "ADDED_TO_FAVORITES", content: intl.string(intl3.t.okQonm), IconComponent: GifIcon.GifIcon };
-                    const open = ToastActionCreatorsDefault.open;
-                    ToastActionCreatorsDefault;
-                    intl = intl3.intl;
-                    open(obj3);
+                    tmp2 = item;
+                    addFavoriteGIFResult = obj.addFavoriteGIF(item);
+                    tmp4 = closure_1;
+                    tmp5 = closure_2;
+                    tmp6 = closure_1(closure_2[11]);
+                    obj4 = { key: "ADDED_TO_FAVORITES", content: null, IconComponent: null };
+                    tmp7 = closure_0;
+                    tmp8 = closure_2;
+                    open = tmp6.open;
+                    intl = closure_0(closure_2[12]).intl;
+                    tmp9 = closure_0;
+                    tmp10 = closure_2;
+                    obj4.content = intl.string(closure_0(closure_2[12]).t.okQonm);
+                    tmp11 = closure_0;
+                    tmp12 = closure_2;
+                    obj4.IconComponent = closure_0(closure_2[13]).GifIcon;
+                    openResult = open(obj4);
                   }
+                  return;
                 }
               }
               items[1] = tmp32;
               tmp37[1] = items;
-              const tmp38 = closure_6(View, tmp37);
               cResult[30] = tmp4.gifContainer;
-              cResult[31] = tmp21;
+              cResult[31] = tmp22;
               cResult[32] = tmp32;
-              cResult[33] = tmp38;
-              tmp34 = tmp38;
+              cResult[33] = closure_6(View, tmp37);
+              const tmp38 = closure_6(View, tmp37);
             }
             class O {
               constructor() {
-                let intl;
-                let intl2;
-                closure_2();
-                const obj = GIFPickerActionCreators;
-                if (isFavoriteGIF) {
-                  obj.removeFavoriteGIF(item.url);
-                  const obj2 = { key: "REMOVED_FROM_FAVORITES", content: intl2.string(intl3.t.in1rga), IconComponent: GifIcon.GifIcon };
-                  const open2 = ToastActionCreatorsDefault.open;
-                  ToastActionCreatorsDefault;
-                  intl2 = intl3.intl;
-                  open2(obj2);
+                tmp = closure_2();
+                obj = closure_0(closure_2[7]);
+                if (closure_1) {
+                  tmp14 = item;
+                  removeFavoriteGIFResult = obj.removeFavoriteGIF(item.url);
+                  tmp16 = closure_1;
+                  tmp17 = closure_2;
+                  tmp18 = closure_1(closure_2[11]);
+                  obj1 = { key: "REMOVED_FROM_FAVORITES", content: null, IconComponent: null };
+                  tmp19 = closure_0;
+                  tmp20 = closure_2;
+                  open2 = tmp18.open;
+                  intl2 = closure_0(closure_2[12]).intl;
+                  tmp21 = closure_0;
+                  tmp22 = closure_2;
+                  obj1.content = intl2.string(closure_0(closure_2[12]).t.in1rga);
+                  tmp23 = closure_0;
+                  tmp24 = closure_2;
+                  obj1.IconComponent = closure_0(closure_2[13]).GifIcon;
+                  open2Result = open2(obj1);
                 } else {
-                  obj.addFavoriteGIF(item);
-                  const obj3 = { key: "ADDED_TO_FAVORITES", content: intl.string(intl3.t.okQonm), IconComponent: GifIcon.GifIcon };
-                  const open = ToastActionCreatorsDefault.open;
-                  ToastActionCreatorsDefault;
-                  intl = intl3.intl;
-                  open(obj3);
+                  tmp2 = item;
+                  addFavoriteGIFResult = obj.addFavoriteGIF(item);
+                  tmp4 = closure_1;
+                  tmp5 = closure_2;
+                  tmp6 = closure_1(closure_2[11]);
+                  obj4 = { key: "ADDED_TO_FAVORITES", content: null, IconComponent: null };
+                  tmp7 = closure_0;
+                  tmp8 = closure_2;
+                  open = tmp6.open;
+                  intl = closure_0(closure_2[12]).intl;
+                  tmp9 = closure_0;
+                  tmp10 = closure_2;
+                  obj4.content = intl.string(closure_0(closure_2[12]).t.okQonm);
+                  tmp11 = closure_0;
+                  tmp12 = closure_2;
+                  obj4.IconComponent = closure_0(closure_2[13]).GifIcon;
+                  openResult = open(obj4);
                 }
+                return;
               }
             }
-            const obj6 = { children: items1 };
-            items1 = [tmp25, tmp29];
-            const tmp33 = closure_6(tmp(5599).ButtonGroup, obj6);
-            cResult[27] = tmp25;
-            cResult[28] = tmp29;
-            cResult[29] = tmp33;
-            tmp32 = tmp33;
+            let obj3 = { children: items1 };
+            items1 = [tmp26, tmp30];
+            cResult[27] = tmp26;
+            cResult[28] = tmp30;
+            cResult[29] = closure_6(tmp(tmp2[18]).ButtonGroup, obj3);
+            const tmp33 = closure_6(tmp(tmp2[18]).ButtonGroup, obj3);
           }
-          class B {
+          class P {
             constructor() {
-              let stringResult;
-              let str = "primary";
-              const Button = components_Button_Button.Button;
-              const tmp = hasOwnProperty;
-              if (isFavoriteGIF) {
+              tmp2 = closure_0;
+              tmp3 = closure_2;
+              tmp = jsx;
+              str = "primary";
+              Button = closure_0(closure_2[16]).Button;
+              tmp4 = closure_1;
+              if (tmp4) {
                 str = "destructive";
               }
-              const obj = { variant: str, onPress, text: stringResult, grow: true };
-              const intl = tmp2(1126).intl;
-              const string = intl.string;
-              const t = tmp2(1126).t;
-              if (isFavoriteGIF) {
+              obj = { variant: str, onPress: closure_3, text: null, grow: true };
+              intl = tmp2(tmp3[12]).intl;
+              string = intl.string;
+              t = tmp2(tmp3[12]).t;
+              if (tmp4) {
                 stringResult = string(t["5/NS74"]);
               } else {
                 stringResult = string(t.nIH0v8);
               }
+              obj.text = stringResult;
               return tmp(Button, obj);
             }
           }
-          tmp23[0] = tmp19;
-          tmp23[1] = tmp20;
+          tmp24[0] = tmp19;
+          tmp24[1] = tmp20;
           class O {
             constructor() {
-              let intl;
-              let intl2;
-              closure_2();
-              const obj = GIFPickerActionCreators;
-              if (isFavoriteGIF) {
-                obj.removeFavoriteGIF(item.url);
-                const obj2 = { key: "REMOVED_FROM_FAVORITES", content: intl2.string(intl3.t.in1rga), IconComponent: GifIcon.GifIcon };
-                const open2 = ToastActionCreatorsDefault.open;
-                ToastActionCreatorsDefault;
-                intl2 = intl3.intl;
-                open2(obj2);
+              tmp = closure_2();
+              obj = closure_0(closure_2[7]);
+              if (closure_1) {
+                tmp14 = item;
+                removeFavoriteGIFResult = obj.removeFavoriteGIF(item.url);
+                tmp16 = closure_1;
+                tmp17 = closure_2;
+                tmp18 = closure_1(closure_2[11]);
+                obj1 = { key: "REMOVED_FROM_FAVORITES", content: null, IconComponent: null };
+                tmp19 = closure_0;
+                tmp20 = closure_2;
+                open2 = tmp18.open;
+                intl2 = closure_0(closure_2[12]).intl;
+                tmp21 = closure_0;
+                tmp22 = closure_2;
+                obj1.content = intl2.string(closure_0(closure_2[12]).t.in1rga);
+                tmp23 = closure_0;
+                tmp24 = closure_2;
+                obj1.IconComponent = closure_0(closure_2[13]).GifIcon;
+                open2Result = open2(obj1);
               } else {
-                obj.addFavoriteGIF(item);
-                const obj3 = { key: "ADDED_TO_FAVORITES", content: intl.string(intl3.t.okQonm), IconComponent: GifIcon.GifIcon };
-                const open = ToastActionCreatorsDefault.open;
-                ToastActionCreatorsDefault;
-                intl = intl3.intl;
-                open(obj3);
+                tmp2 = item;
+                addFavoriteGIFResult = obj.addFavoriteGIF(item);
+                tmp4 = closure_1;
+                tmp5 = closure_2;
+                tmp6 = closure_1(closure_2[11]);
+                obj4 = { key: "ADDED_TO_FAVORITES", content: null, IconComponent: null };
+                tmp7 = closure_0;
+                tmp8 = closure_2;
+                open = tmp6.open;
+                intl = closure_0(closure_2[12]).intl;
+                tmp9 = closure_0;
+                tmp10 = closure_2;
+                obj4.content = intl.string(closure_0(closure_2[12]).t.okQonm);
+                tmp11 = closure_0;
+                tmp12 = closure_2;
+                obj4.IconComponent = closure_0(closure_2[13]).GifIcon;
+                openResult = open(obj4);
               }
+              return;
             }
           }
           cResult[19] = tmp19;
           cResult[20] = tmp20;
-          cResult[21] = tmp24;
-          tmp21 = tmp24;
+          cResult[21] = tmp25;
+          tmp22 = tmp25;
         }
         const items2 = [tmp4.gifImage, ];
-        class B {
+        class P {
           constructor() {
-            let stringResult;
-            let str = "primary";
-            const Button = components_Button_Button.Button;
-            const tmp = hasOwnProperty;
-            if (isFavoriteGIF) {
+            tmp2 = closure_0;
+            tmp3 = closure_2;
+            tmp = jsx;
+            str = "primary";
+            Button = closure_0(closure_2[16]).Button;
+            tmp4 = closure_1;
+            if (tmp4) {
               str = "destructive";
             }
-            const obj = { variant: str, onPress, text: stringResult, grow: true };
-            const intl = tmp2(1126).intl;
-            const string = intl.string;
-            const t = tmp2(1126).t;
-            if (isFavoriteGIF) {
+            obj = { variant: str, onPress: closure_3, text: null, grow: true };
+            intl = tmp2(tmp3[12]).intl;
+            string = intl.string;
+            t = tmp2(tmp3[12]).t;
+            if (tmp4) {
               stringResult = string(t["5/NS74"]);
             } else {
               stringResult = string(t.nIH0v8);
             }
+            obj.text = stringResult;
             return tmp(Button, obj);
           }
         }
         cResult[14] = tmp12;
         class O {
           constructor() {
-            let intl;
-            let intl2;
-            closure_2();
-            const obj = GIFPickerActionCreators;
-            if (isFavoriteGIF) {
-              obj.removeFavoriteGIF(item.url);
-              const obj2 = { key: "REMOVED_FROM_FAVORITES", content: intl2.string(intl3.t.in1rga), IconComponent: GifIcon.GifIcon };
-              const open2 = ToastActionCreatorsDefault.open;
-              ToastActionCreatorsDefault;
-              intl2 = intl3.intl;
-              open2(obj2);
+            tmp = closure_2();
+            obj = closure_0(closure_2[7]);
+            if (closure_1) {
+              tmp14 = item;
+              removeFavoriteGIFResult = obj.removeFavoriteGIF(item.url);
+              tmp16 = closure_1;
+              tmp17 = closure_2;
+              tmp18 = closure_1(closure_2[11]);
+              obj1 = { key: "REMOVED_FROM_FAVORITES", content: null, IconComponent: null };
+              tmp19 = closure_0;
+              tmp20 = closure_2;
+              open2 = tmp18.open;
+              intl2 = closure_0(closure_2[12]).intl;
+              tmp21 = closure_0;
+              tmp22 = closure_2;
+              obj1.content = intl2.string(closure_0(closure_2[12]).t.in1rga);
+              tmp23 = closure_0;
+              tmp24 = closure_2;
+              obj1.IconComponent = closure_0(closure_2[13]).GifIcon;
+              open2Result = open2(obj1);
             } else {
-              obj.addFavoriteGIF(item);
-              const obj3 = { key: "ADDED_TO_FAVORITES", content: intl.string(intl3.t.okQonm), IconComponent: GifIcon.GifIcon };
-              const open = ToastActionCreatorsDefault.open;
-              ToastActionCreatorsDefault;
-              intl = intl3.intl;
-              open(obj3);
+              tmp2 = item;
+              addFavoriteGIFResult = obj.addFavoriteGIF(item);
+              tmp4 = closure_1;
+              tmp5 = closure_2;
+              tmp6 = closure_1(closure_2[11]);
+              obj4 = { key: "ADDED_TO_FAVORITES", content: null, IconComponent: null };
+              tmp7 = closure_0;
+              tmp8 = closure_2;
+              open = tmp6.open;
+              intl = closure_0(closure_2[12]).intl;
+              tmp9 = closure_0;
+              tmp10 = closure_2;
+              obj4.content = intl.string(closure_0(closure_2[12]).t.okQonm);
+              tmp11 = closure_0;
+              tmp12 = closure_2;
+              obj4.IconComponent = closure_0(closure_2[13]).GifIcon;
+              openResult = open(obj4);
             }
+            return;
           }
         }
         cResult[15] = tmp4.gifImage;
         cResult[16] = items2;
-        tmp19 = items2;
       }
-      class B {
+      class P {
         constructor() {
-          let stringResult;
-          let str = "primary";
-          const Button = components_Button_Button.Button;
-          const tmp = hasOwnProperty;
-          if (isFavoriteGIF) {
+          tmp2 = closure_0;
+          tmp3 = closure_2;
+          tmp = jsx;
+          str = "primary";
+          Button = closure_0(closure_2[16]).Button;
+          tmp4 = closure_1;
+          if (tmp4) {
             str = "destructive";
           }
-          const obj = { variant: str, onPress, text: stringResult, grow: true };
-          const intl = tmp2(1126).intl;
-          const string = intl.string;
-          const t = tmp2(1126).t;
-          if (isFavoriteGIF) {
+          obj = { variant: str, onPress: closure_3, text: null, grow: true };
+          intl = tmp2(tmp3[12]).intl;
+          string = intl.string;
+          t = tmp2(tmp3[12]).t;
+          if (tmp4) {
             stringResult = string(t["5/NS74"]);
           } else {
             stringResult = string(t.nIH0v8);
           }
+          obj.text = stringResult;
           return tmp(Button, obj);
         }
       }
       cResult[11] = tmp14;
       class O {
         constructor() {
-          let intl;
-          let intl2;
-          closure_2();
-          const obj = GIFPickerActionCreators;
-          if (isFavoriteGIF) {
-            obj.removeFavoriteGIF(item.url);
-            const obj2 = { key: "REMOVED_FROM_FAVORITES", content: intl2.string(intl3.t.in1rga), IconComponent: GifIcon.GifIcon };
-            const open2 = ToastActionCreatorsDefault.open;
-            ToastActionCreatorsDefault;
-            intl2 = intl3.intl;
-            open2(obj2);
+          tmp = closure_2();
+          obj = closure_0(closure_2[7]);
+          if (closure_1) {
+            tmp14 = item;
+            removeFavoriteGIFResult = obj.removeFavoriteGIF(item.url);
+            tmp16 = closure_1;
+            tmp17 = closure_2;
+            tmp18 = closure_1(closure_2[11]);
+            obj1 = { key: "REMOVED_FROM_FAVORITES", content: null, IconComponent: null };
+            tmp19 = closure_0;
+            tmp20 = closure_2;
+            open2 = tmp18.open;
+            intl2 = closure_0(closure_2[12]).intl;
+            tmp21 = closure_0;
+            tmp22 = closure_2;
+            obj1.content = intl2.string(closure_0(closure_2[12]).t.in1rga);
+            tmp23 = closure_0;
+            tmp24 = closure_2;
+            obj1.IconComponent = closure_0(closure_2[13]).GifIcon;
+            open2Result = open2(obj1);
           } else {
-            obj.addFavoriteGIF(item);
-            const obj3 = { key: "ADDED_TO_FAVORITES", content: intl.string(intl3.t.okQonm), IconComponent: GifIcon.GifIcon };
-            const open = ToastActionCreatorsDefault.open;
-            ToastActionCreatorsDefault;
-            intl = intl3.intl;
-            open(obj3);
+            tmp2 = item;
+            addFavoriteGIFResult = obj.addFavoriteGIF(item);
+            tmp4 = closure_1;
+            tmp5 = closure_2;
+            tmp6 = closure_1(closure_2[11]);
+            obj4 = { key: "ADDED_TO_FAVORITES", content: null, IconComponent: null };
+            tmp7 = closure_0;
+            tmp8 = closure_2;
+            open = tmp6.open;
+            intl = closure_0(closure_2[12]).intl;
+            tmp9 = closure_0;
+            tmp10 = closure_2;
+            obj4.content = intl.string(closure_0(closure_2[12]).t.okQonm);
+            tmp11 = closure_0;
+            tmp12 = closure_2;
+            obj4.IconComponent = closure_0(closure_2[13]).GifIcon;
+            openResult = open(obj4);
           }
+          return;
         }
       }
       cResult[12] = isFavoriteGIF;
-      cResult[13] = B;
-      tmp16 = B;
+      cResult[13] = P;
     }
     class O {
       constructor() {
-        let intl;
-        let intl2;
-        closure_2();
-        const obj = GIFPickerActionCreators;
-        if (isFavoriteGIF) {
-          obj.removeFavoriteGIF(item.url);
-          const obj2 = { key: "REMOVED_FROM_FAVORITES", content: intl2.string(intl3.t.in1rga), IconComponent: GifIcon.GifIcon };
-          const open2 = ToastActionCreatorsDefault.open;
-          ToastActionCreatorsDefault;
-          intl2 = intl3.intl;
-          open2(obj2);
+        tmp = closure_2();
+        obj = closure_0(closure_2[7]);
+        if (closure_1) {
+          tmp14 = item;
+          removeFavoriteGIFResult = obj.removeFavoriteGIF(item.url);
+          tmp16 = closure_1;
+          tmp17 = closure_2;
+          tmp18 = closure_1(closure_2[11]);
+          obj1 = { key: "REMOVED_FROM_FAVORITES", content: null, IconComponent: null };
+          tmp19 = closure_0;
+          tmp20 = closure_2;
+          open2 = tmp18.open;
+          intl2 = closure_0(closure_2[12]).intl;
+          tmp21 = closure_0;
+          tmp22 = closure_2;
+          obj1.content = intl2.string(closure_0(closure_2[12]).t.in1rga);
+          tmp23 = closure_0;
+          tmp24 = closure_2;
+          obj1.IconComponent = closure_0(closure_2[13]).GifIcon;
+          open2Result = open2(obj1);
         } else {
-          obj.addFavoriteGIF(item);
-          const obj3 = { key: "ADDED_TO_FAVORITES", content: intl.string(intl3.t.okQonm), IconComponent: GifIcon.GifIcon };
-          const open = ToastActionCreatorsDefault.open;
-          ToastActionCreatorsDefault;
-          intl = intl3.intl;
-          open(obj3);
+          tmp2 = item;
+          addFavoriteGIFResult = obj.addFavoriteGIF(item);
+          tmp4 = closure_1;
+          tmp5 = closure_2;
+          tmp6 = closure_1(closure_2[11]);
+          obj4 = { key: "ADDED_TO_FAVORITES", content: null, IconComponent: null };
+          tmp7 = closure_0;
+          tmp8 = closure_2;
+          open = tmp6.open;
+          intl = closure_0(closure_2[12]).intl;
+          tmp9 = closure_0;
+          tmp10 = closure_2;
+          obj4.content = intl.string(closure_0(closure_2[12]).t.okQonm);
+          tmp11 = closure_0;
+          tmp12 = closure_2;
+          obj4.IconComponent = closure_0(closure_2[13]).GifIcon;
+          openResult = open(obj4);
         }
+        return;
       }
     }
     cResult[6] = isFavoriteGIF;
     cResult[7] = item;
     cResult[8] = O;
-    tmp14 = O;
   }
   size = { width: result, height: result1 };
   cResult[2] = result;
   cResult[3] = result1;
   cResult[4] = size;
   tmp12 = size;
-}) : ((item) => {
+}) : (function GIFPickerItemActionSheet(item) {
   let intl;
   let items4;
   let items5;

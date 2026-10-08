@@ -1,7 +1,7 @@
 // Module ID: 15
 // Function ID: 16
 // Name: fast_connect
-// Dependencies: [16, 17, 499, 3, 500, 1260, 7266, 13494, 13975, 7146, 1369, 13476, 13463, 10, 9, 2]
+// Dependencies: [16, 17, 499, 3, 500, 1272, 9655, 13794, 14274, 7326, 1381, 13776, 13763, 10, 9, 2]
 // Exports: closeFastConnectSocket, createFastConnectSocket, getLastFastConnectIdentifyUserId, identifyWebSocket
 
 // Module 15 (fast_connect)
@@ -9,9 +9,9 @@ import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import KvCacheVersionConstants from "KvCacheVersionConstants" /* 499 */;
-import discord_common_AnalyticsUtilsAll from "discord_common/AnalyticsUtils" /* 1260 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 7266 */;
-import react_nativeDefault from "react-native" /* 13975 */;
+import discord_common_AnalyticsUtilsAll from "discord_common/AnalyticsUtils" /* 1272 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 9655 */;
+import react_nativeDefault from "react-native" /* 14274 */;
 import checkEnv from "checkEnv" /* 16 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
@@ -30,7 +30,7 @@ function createFastConnectSocket() {
     obj = require("PlatformUtils");
     const tmp3 = _require;
     if (obj.isAndroid()) {
-      const obj2 = obj4(13476);
+      const obj2 = obj4(13776);
       supportsZstd = obj2.getConstants().supportsZstd;
     } else {
       supportsZstd = closure_4.DCDCompressionManager.supportsZstd;
@@ -46,7 +46,7 @@ function createFastConnectSocket() {
     obj.log(`[FAST CONNECT] ${tmp8}`);
     const _Date = Date;
     _require = Date.now();
-    const tmp11 = obj4(13463)(combined);
+    const tmp11 = obj4(13763)(combined);
     const _parseFloat = parseFloat;
     const parsed = parseFloat(tmp11._socketId);
     const _isNaN = isNaN;
@@ -54,18 +54,18 @@ function createFastConnectSocket() {
     if (isNaN(parsed)) {
       obj3.log("[FAST CONNECT] Unable to create socketId from NaN value ", tmp11._socketId);
     } else {
-      const tmp3Result = tmp3(1369);
+      const tmp3Result = tmp3(1381);
       const isAndroidResult = tmp3Result.isAndroid();
       if (supportsZstd) {
         if (isAndroidResult) {
-          const tmp10Result = obj4(13476);
+          const tmp10Result = obj4(13776);
           const result = tmp10Result.enableZstdStreamSupport(parsed);
         } else {
           const DCDCompressionManager2 = closure_4.DCDCompressionManager;
           const result1 = DCDCompressionManager2.enableZstdStreamSupport(parsed, 0);
         }
       } else if (isAndroidResult) {
-        const tmp10Result3 = obj4(13476);
+        const tmp10Result3 = obj4(13776);
         const result2 = tmp10Result3.enableZlibStreamSupport(parsed);
       } else {
         const DCDCompressionManager = closure_4.DCDCompressionManager;

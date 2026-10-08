@@ -1,21 +1,19 @@
-// Module ID: 12766
-// Function ID: 12767
+// Module ID: 12914
+// Function ID: 12915
 // Name: URLCallout
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 12767, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 12915, 5086, 2]
 
-// Module 12766 (URLCallout)
+// Module 12914 (URLCallout)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import SharedStateUtils from "SharedStateUtils" /* 12767 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import SharedStateUtils from "SharedStateUtils" /* 12915 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let url;
 
 let c3;
 let closure_4;
@@ -29,7 +27,7 @@ obj2 = { maxHeight: 300, backgroundColor: nativeDefault.colors.BACKGROUND_SURFAC
 createStyles = createStyles.createStyles;
 obj3 = { padding: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_12, textAlign: "center" };
 let closure_5 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function URLCallout(url) {
   let hostname;
   let items;
   let items1;
@@ -105,7 +103,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
   cResult[9] = tmp12;
   cResult[10] = tmp16;
   tmp15 = tmp16;
-}) : ((url) => {
+}) : (function URLCallout(url) {
   let Text;
   let hostname;
   let items;

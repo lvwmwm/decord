@@ -1,20 +1,21 @@
-// Module ID: 7276
-// Function ID: 7277
-// Name: tracking/Tracking
-// Dependencies: [2051, 7044, 6790, 7277, 1085, 5076, 7278, 1252, 7413, 1369, 7414, 2]
+// Module ID: 7876
+// Function ID: 7877
+// Name: Tracking
+// Dependencies: [2063, 7232, 6965, 7877, 1085, 5105, 7878, 1264, 7884, 7885, 1381, 7889, 2]
 // Exports: maybeTrackForumNewPostDraftCreated, trackForumAddMediaToOriginalPostClicked, trackForumChannelMediaUploaderClicked, trackForumChannelSeenBatch, trackForumCreateNewPostClick, trackForumCreateNewPostKeybindUsed, trackForumCreateNewPostStarted, trackForumEnableAutomodClicked, trackForumLayoutUpdated, trackForumMorePostsLoaded, trackForumNewPostCleared, trackForumOnboardingClicked, trackForumPostClicked, trackForumPostCreated, trackForumPostLinkCopied, trackForumPostSidebarViewed, trackForumPreviewPostClicked, trackForumScrolled, trackForumSearchCleared, trackForumSearched, trackForumSortOrderUpdated, trackForumTagFilterClicked, trackForumUpsellModalClicked, trackForumUpsellModalViewed, trackMobileForumComposerDismissed, trackMobileForumComposerOpened
 
-// Module 7276 (tracking/Tracking)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5076 */;
-import DraftStore2 from "DraftStore" /* 7044 */;
-import TrackingUtils from "TrackingUtils" /* 7278 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 7413 */;
-import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 7414 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6790 */;
-import ForumSearchStore from "ForumSearchStore" /* 7277 */;
+// Module 7876 (Tracking)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5105 */;
+import DraftStore2 from "DraftStore" /* 7232 */;
+import TrackingUtils from "TrackingUtils" /* 7878 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 7884 */;
+import getChannelOpenedMetadata from "getChannelOpenedMetadata" /* 7885 */;
+import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 7889 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6965 */;
+import ForumSearchStore from "ForumSearchStore" /* 7877 */;
 import Constants from "Constants" /* 1085 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -349,7 +350,7 @@ export const trackForumPostSidebarViewed = function trackForumPostSidebarViewed(
   const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channelId));
   const obj4 = ThreadAnalyticsUtils;
   const merged2 = Object.assign(obj4.collectThreadMetadata(channelId, true));
-  const obj5 = AppAnalyticsUtils;
+  const obj5 = getChannelOpenedMetadata;
   const merged3 = Object.assign(obj5.getChannelOpenedMetadata(channelId.id));
   obj6 = PlatformUtils;
   trackWithMetadata(CHANNEL_OPENED, obj);

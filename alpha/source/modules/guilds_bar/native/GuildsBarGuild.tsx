@@ -1,30 +1,30 @@
-// Module ID: 16296
-// Function ID: 16297
+// Module ID: 16556
+// Function ID: 16557
 // Name: GuildsBarGuild
-// Dependencies: [19, 2070, 5625, 7134, 2074, 4705, 5623, 16265, 16262, 1085, 21, 4896, 587, 558, 576, 4586, 16274, 15988, 15991, 16297, 504, 5978, 16308, 16309, 5714, 1126, 1252, 16289, 16318, 16266, 16319, 4618, 5604, 5981, 16322, 2]
+// Dependencies: [19, 2082, 5970, 6082, 2086, 4899, 5968, 16525, 16522, 1085, 21, 5090, 587, 558, 576, 4778, 16534, 16248, 16251, 16557, 504, 6161, 16568, 16569, 5297, 1126, 1264, 16549, 16578, 16526, 16579, 4810, 5374, 6164, 16582, 2]
 
-// Module 16296 (GuildsBarGuild)
+// Module 16556 (GuildsBarGuild)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl10 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import spring from "spring" /* 5604 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5714 */;
-import GuildIcon from "GuildIcon" /* 5978 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 16262 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16265 */;
-import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 16266 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16289 */;
-import getGuildsBarGuildAccessibilityActionsDefault from "getGuildsBarGuildAccessibilityActions" /* 16319 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5297 */;
+import spring from "spring" /* 5374 */;
+import GuildIcon from "GuildIcon" /* 6161 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 16522 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16525 */;
+import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 16526 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16549 */;
+import getGuildsBarGuildAccessibilityActionsDefault from "getGuildsBarGuildAccessibilityActions" /* 16579 */;
 import react_mod from "react" /* 19 */;
-import GuildRecord from "GuildRecord" /* 2070 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5625 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7134 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
-import SortedGuildStore from "SortedGuildStore" /* 5623 */;
+import GuildRecord from "GuildRecord" /* 2082 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5970 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6082 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
+import SortedGuildStore from "SortedGuildStore" /* 5968 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ size = { width: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE, height: native
 let closure_17 = createStyles.createStyles(obj);
 let closure_18 = { code: "function GuildsBarGuildTsx1(values){const{dragDropInProgress,sharedId,guildId,isDragTarget,withSpring,TRANSITION_PHYSICS}=this.__closure;var _guildId;const shouldAnimate=dragDropInProgress.get()&&sharedId.get()===guildId&&!isDragTarget;sharedId.set((_guildId=guildId)!==null&&_guildId!==void 0?_guildId:null);return{animations:{originY:shouldAnimate?withSpring(values.targetOriginY,TRANSITION_PHYSICS,\"animate-always\"):values.targetOriginY,height:shouldAnimate?withSpring(values.targetHeight,TRANSITION_PHYSICS,\"animate-always\"):values.targetHeight},initialValues:{originY:values.currentOriginY,height:values.currentHeight}};}" };
 const __initData = { code: "function GuildsBarGuildTsx2(values){const{dragDropInProgress,sharedId,guildId,isDragTarget,withSpring,TRANSITION_PHYSICS}=this.__closure;var _guildId;const shouldAnimate=dragDropInProgress.get()&&sharedId.get()===guildId&&!isDragTarget;sharedId.set((_guildId=guildId)!==null&&_guildId!==void 0?_guildId:null);return{animations:{originY:shouldAnimate?withSpring(values.targetOriginY,TRANSITION_PHYSICS,'animate-always'):values.targetOriginY,height:shouldAnimate?withSpring(values.targetHeight,TRANSITION_PHYSICS,'animate-always'):values.targetHeight},initialValues:{originY:values.currentOriginY,height:values.currentHeight}};}" };
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildsBarGuild(guildId) {
   let drawerOpen;
   let first;
   let guildsTree;
@@ -114,21 +114,23 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
     }
   }
   if (cResult[3] !== guildId) {
-    class P {
-      constructor(current) {
-        ref.current = current;
+    class B {
+      constructor() {
+        const obj = { selected: SelectedGuildStore.getGuildId() === guildId, isUnavailable: GuildAvailabilityStore.isUnavailable(guildId), unread: GuildReadStateStore.hasUnread(guildId), mentionCount: GuildReadStateStore.getMentionCount(guildId), isMentionLowImportance: GuildReadStateStore.getIsMentionLowImportance(guildId) };
+        return obj;
       }
     }
     const items1 = [guildId];
     cResult[3] = guildId;
-    cResult[4] = tmp15;
+    cResult[4] = B;
     cResult[5] = items1;
     tmp14 = items1;
-    tmp13 = tmp15;
+    tmp13 = B;
   } else {
-    class P {
-      constructor(current) {
-        ref.current = current;
+    class B {
+      constructor() {
+        const obj = { selected: SelectedGuildStore.getGuildId() === guildId, isUnavailable: GuildAvailabilityStore.isUnavailable(guildId), unread: GuildReadStateStore.hasUnread(guildId), mentionCount: GuildReadStateStore.getMentionCount(guildId), isMentionLowImportance: GuildReadStateStore.getIsMentionLowImportance(guildId) };
+        return obj;
       }
     }
     tmp14 = cResult[5];
@@ -139,24 +141,27 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
   const isUnavailable = stateFromStoresObject.isUnavailable;
   ({ mentionCount, unread } = stateFromStoresObject);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class P {
-      constructor(current) {
-        ref.current = current;
+    class B {
+      constructor() {
+        const obj = { selected: SelectedGuildStore.getGuildId() === guildId, isUnavailable: GuildAvailabilityStore.isUnavailable(guildId), unread: GuildReadStateStore.hasUnread(guildId), mentionCount: GuildReadStateStore.getMentionCount(guildId), isMentionLowImportance: GuildReadStateStore.getIsMentionLowImportance(guildId) };
+        return obj;
       }
     }
     const items2 = [GuildStore];
     cResult[6] = items2;
   } else {
-    class P {
-      constructor(current) {
-        ref.current = current;
+    class B {
+      constructor() {
+        const obj = { selected: SelectedGuildStore.getGuildId() === guildId, isUnavailable: GuildAvailabilityStore.isUnavailable(guildId), unread: GuildReadStateStore.hasUnread(guildId), mentionCount: GuildReadStateStore.getMentionCount(guildId), isMentionLowImportance: GuildReadStateStore.getIsMentionLowImportance(guildId) };
+        return obj;
       }
     }
   }
   if (cResult[7] === guildId) {
-    class P {
-      constructor(current) {
-        ref.current = current;
+    class B {
+      constructor() {
+        const obj = { selected: SelectedGuildStore.getGuildId() === guildId, isUnavailable: GuildAvailabilityStore.isUnavailable(guildId), unread: GuildReadStateStore.hasUnread(guildId), mentionCount: GuildReadStateStore.getMentionCount(guildId), isMentionLowImportance: GuildReadStateStore.getIsMentionLowImportance(guildId) };
+        return obj;
       }
     }
   }
@@ -186,7 +191,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
   cResult[9] = selected;
   cResult[10] = items3;
   cResult[11] = fn;
-}) : ((guildId) => {
+}) : (function GuildsBarGuild(guildId) {
   let accessibilityActions;
   let asset;
   let badgeBottomRight;
@@ -398,7 +403,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
   ({ accessibilityActions, onAccessibilityAction } = memo2);
   const obj7 = guildId(drawerOpen[31]);
   const sharedValue = obj7.useSharedValue(guildId);
-  class D {
+  class G {
     constructor(originY) {
       let targetHeight;
       let targetOriginY;
@@ -425,12 +430,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
       return { animations: obj2, initialValues: { originY: originY.currentOriginY, height: originY.currentHeight } };
     }
   }
-  D.__closure = { dragDropInProgress, sharedId: sharedValue, guildId, isDragTarget, withSpring: guildId(drawerOpen[32]).withSpring, TRANSITION_PHYSICS: stateFromStores1 };
-  D.__workletHash = 15285764080325;
-  D.__initData = __initData;
+  G.__closure = { dragDropInProgress, sharedId: sharedValue, guildId, isDragTarget, withSpring: guildId(drawerOpen[32]).withSpring, TRANSITION_PHYSICS: stateFromStores1 };
+  G.__workletHash = 15285764080325;
+  G.__initData = __initData;
   const items8 = [guildId, sharedValue, isDragTarget, dragDropInProgress];
   ({ dragDropInProgress, sharedId: sharedValue, guildId, isDragTarget, withSpring: guildId(drawerOpen[32]).withSpring, TRANSITION_PHYSICS: stateFromStores1 });
-  const callback1 = react.useCallback(D, items8);
+  const callback1 = react.useCallback(G, items8);
   const obj9 = { id: guildId, draggedItemSize: itemSize, accessibilityActions, onAccessibilityAction, cutouts: tmp22, selected, isDragTarget, dragState, sharedId: sharedValue, circle: false, overState, unread, label: memo1, config: memo, styles: guildsBarAnimatedWrapperStyles, isDragPreview: flag, layout: callback1, externalChildren: closure_15(closure_14, obj10), expandedChildren: tmp20Result, children: tmp20Result2 };
   tmp22 = undefined;
   const tmp21 = token(drawerOpen[16]);

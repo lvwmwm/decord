@@ -1,22 +1,22 @@
-// Module ID: 17439
-// Function ID: 17440
+// Module ID: 17721
+// Function ID: 17722
 // Name: LaunchPadMembers
-// Dependencies: [19, 17, 2051, 2103, 21, 4896, 558, 576, 573, 11826, 16898, 11223, 1126, 4892, 2]
+// Dependencies: [19, 17, 2063, 2115, 21, 5090, 558, 576, 573, 11911, 17179, 11338, 1126, 5086, 2]
 
-// Module 17439 (LaunchPadMembers)
+// Module 17721 (LaunchPadMembers)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import GuildChannelUserListDefault from "GuildChannelUserList" /* 11223 */;
-import PrivateChannelUserListDefault from "PrivateChannelUserList" /* 11826 */;
-import ThreadChannelUserListDefault from "ThreadChannelUserList" /* 16898 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import GuildChannelUserListDefault from "GuildChannelUserList" /* 11338 */;
+import PrivateChannelUserListDefault from "PrivateChannelUserList" /* 11911 */;
+import ThreadChannelUserListDefault from "ThreadChannelUserList" /* 17179 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import createStyles from "createStyles" /* 4896 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let channel, currentlySelectedChannelId;
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ wrapper: { minHeight: 16 }, listStyle: { flex: 0 }, emptyWrapper: { padding: 20 }, emptyText: { textAlign: "center" } });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function LaunchPadMembers() {
   let emptyText;
   let emptyWrapper;
   let tmp5;
@@ -35,7 +35,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   const tmp4 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SelectedChannelStore, ChannelStore];
-    const fn = function y() {
+    const fn = function h() {
       currentlySelectedChannelId = currentlySelectedChannelId.getCurrentlySelectedChannelId();
       channel = channel.getChannel(currentlySelectedChannelId);
       if (null != currentlySelectedChannelId) {
@@ -55,7 +55,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
           }
         }
       }
-      return { channelId: "unicodeVersion", type: false };
+      return { channelId: "code", type: "man_with_veil_light_skin_tone" };
     };
     cResult[0] = items;
     cResult[1] = fn;
@@ -180,7 +180,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     cResult[27] = tmp18;
     tmp15 = tmp18;
   }
-}) : (() => {
+}) : (function LaunchPadMembers() {
   let intl;
   let tmp8;
   const tmp = closure_7();
@@ -206,7 +206,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
         }
       }
     }
-    return { channelId: "unicodeVersion", type: false };
+    return { channelId: "code", type: "man_with_veil_light_skin_tone" };
   });
   if ("private" === stateFromStoresObject.type) {
     tmp8 = <View style={tmp.wrapper}>{null}</View>;
@@ -218,7 +218,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     tmp8 = <View style={tmp.wrapper}>{null}</View>;
   } else {
     ({ style: tmp.emptyText, variant: "text-md/semibold", children: intl.string(intl2.t["+7wtJq"]) });
-    const Text = tmp2(4892).Text;
+    const Text = tmp2(5086).Text;
     intl = tmp2(1126).intl;
     tmp8 = <View style={tmp.emptyWrapper}>{null}</View>;
   }

@@ -1,41 +1,39 @@
-// Module ID: 11831
-// Function ID: 11832
+// Module ID: 11916
+// Function ID: 11917
 // Name: AppLauncherChannelListActionSheet
-// Dependencies: [32, 19, 2074, 21, 4896, 587, 558, 576, 5871, 5819, 11820, 5628, 4860, 11803, 11805, 5049, 4892, 6000, 2]
+// Dependencies: [32, 19, 2086, 21, 5090, 587, 558, 576, 8183, 8134, 11905, 5975, 5054, 11870, 11872, 5417, 5086, 6184, 2]
 
-// Module 11831 (AppLauncherChannelListActionSheet)
+// Module 11916 (AppLauncherChannelListActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useChannelNameDefault from "useChannelName" /* 5049 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5628 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5819 */;
-import TextIcon3 from "TextIcon" /* 5871 */;
-import TableRow2 from "TableRow" /* 6000 */;
-import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 11820 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import useChannelNameDefault from "useChannelName" /* 5417 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5975 */;
+import TableRow2 from "TableRow" /* 6184 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8134 */;
+import TextIcon3 from "TextIcon" /* 8183 */;
+import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 11905 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore_mod from "GuildStore" /* 2074 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let length, onChannelPress, query, ref;
 
 let metroImportDefault;
 let metroRequire;
 let obj2;
-let GuildStore = GuildStore_mod;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let AppLauncherChannelListActionSheet = "AppLauncherChannelListActionSheet";
+const AppLauncherChannelListActionSheet_str = "AppLauncherChannelListActionSheet";
 let obj = { channelIconWrapper: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
 let closure_9 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelIcon(arg0) {
   let channel;
   let wrapperSize;
   const obj = react2;
@@ -50,7 +48,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num = wrapperSize;
   }
   const tmp4 = closure_9();
-  let TextIcon = tmp(5871).TextIcon;
+  let TextIcon = tmp(8183).TextIcon;
   if (null != channel) {
     let tmp5;
     if (cResult[0] !== channel) {
@@ -58,7 +56,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const tmpResult = utils_ChannelUtils;
       let TextIcon2 = tmpResult.getChannelIconComponentWithGuild(channel, guild);
       if (TextIcon2 == null) {
-        TextIcon2 = tmp(5871).TextIcon;
+        TextIcon2 = tmp(8183).TextIcon;
       }
       cResult[0] = channel;
       cResult[1] = TextIcon2;
@@ -95,7 +93,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = str;
   cResult[4] = tmp9;
   tmp8 = tmp9;
-}) : ((wrapperSize) => {
+}) : (function ChannelIcon(wrapperSize) {
   let channel;
   ({ channel, size } = wrapperSize);
   if (size === undefined) {
@@ -112,7 +110,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const tmp2Result = utils_ChannelUtils;
     let TextIcon2 = tmp2Result.getChannelIconComponentWithGuild(channel, guild);
     if (TextIcon2 == null) {
-      TextIcon2 = tmp2(5871).TextIcon;
+      TextIcon2 = tmp2(8183).TextIcon;
     }
     TextIcon = TextIcon2;
   }
@@ -122,11 +120,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_10 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChannelPress) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherChannelListActionSheet(onChannelPress) {
   let channel;
-  let closure_5;
-  let closure_8;
   let first1;
+  let query;
   let obj = onChannelPress(channel[7]);
   const cResult = obj.c(24);
   onChannelPress = onChannelPress.onChannelPress;
@@ -134,11 +131,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChannelPress) => {
   channel = onChannelPress.channel;
   const option = onChannelPress.option;
   let obj2 = query;
-  const tmp3 = option(query.useState(""), 2);
-  query = tmp3[0];
-  GuildStore = tmp3[1];
-  ref = query.useRef(null);
-  const tmp2 = option;
+  const tmp5 = option(query.useState(""), 2);
+  query = tmp5[0];
+  let closure_5 = tmp5[1];
+  const ref = query.useRef(null);
+  const tmp4 = option;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [];
     cResult[0] = items;
@@ -146,72 +143,108 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChannelPress) => {
   } else {
     first1 = cResult[0];
   }
-  const tmp2Result = tmp2(obj2.useState(first1), 2);
-  const first2 = tmp2Result[0];
-  AppLauncherChannelListActionSheet = tmp2Result[1];
+  const tmp4Result = tmp4(obj2.useState(first1), 2);
+  const first2 = tmp4Result[0];
+  let closure_8 = tmp4Result[1];
   if (cResult[1] === channel) {
     if (cResult[2] === option) {
-      let tmp8;
-      let tmp9;
+      let tmp11;
+      let tmp12;
+      let tmp14;
       if (cResult[3] === query) {
-        tmp8 = cResult[4];
-        tmp9 = cResult[5];
+        tmp11 = cResult[4];
+        tmp12 = cResult[5];
       }
-      const effect = obj2.useEffect(tmp8, tmp9);
+      const effect = obj2.useEffect(tmp11, tmp12);
       if (cResult[6] !== onActionSheetDismiss) {
-        const fn = function b() {
+        function hideActionSheet() {
           const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet(AppLauncherChannelListActionSheet);
+          obj.hideActionSheet(AppLauncherChannelListActionSheet_str);
           onActionSheetDismiss();
-        };
+        }
         cResult[6] = onActionSheetDismiss;
-        cResult[7] = fn;
-        class O {
-          constructor(channel) {
-            const obj = { channel: channel.channel };
-            onChannelPress(obj);
-            closure_9();
-          }
-        }
+        cResult[7] = hideActionSheet;
+        tmp14 = hideActionSheet;
+      } else {
+        tmp14 = cResult[7];
       }
-      closure_9 = tmp11;
-      if (cResult[8] === tmp11) {
-        let tmp12;
+      closure_9 = tmp14;
+      if (cResult[8] === tmp14) {
+        let tmp15;
+        let tmp16;
         if (cResult[9] === onChannelPress) {
-          tmp12 = cResult[10];
+          tmp15 = cResult[10];
         }
-        closure_10 = tmp12;
+        closure_10 = tmp15;
         const _Symbol = Symbol;
         if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-          class W {
-            constructor(str) {
-              closure_5(str.toLowerCase());
-              const current = ref.current;
-              if (current != null) {
-                current.scrollToOffset({ offset: 0, animated: false });
-              }
+          function handleQueryUpdate(str) {
+            closure_5(str.toLowerCase());
+            const current = ref.current;
+            if (current != null) {
+              current.scrollToOffset({ offset: 0, animated: false });
             }
           }
-          cResult[11] = W;
+          cResult[11] = handleQueryUpdate;
+          tmp16 = handleQueryUpdate;
         } else {
-          class W {
-            constructor(str) {
-              closure_5(str.toLowerCase());
-              const current = ref.current;
-              if (current != null) {
-                current.scrollToOffset({ offset: 0, animated: false });
+          tmp16 = cResult[11];
+        }
+        if (cResult[12] === first2.length) {
+          let tmp17;
+          let tmp23Result;
+          if (cResult[13] === tmp15) {
+            tmp17 = cResult[14];
+          }
+          const _Symbol2 = Symbol;
+          if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+            const obj3 = { onChange: tmp16 };
+            cResult[15] = ref(onChannelPress(channel[13]).AppLauncherListSearchBar, obj3);
+            ref(onChannelPress(channel[13]).AppLauncherListSearchBar, obj3);
+            class Item {
+              constructor(arg0) {
+                item = onChannelPress.item;
+                obj = {
+                  channel: item,
+                  index: onChannelPress.index,
+                  totalCount: closure_7.length,
+                  onPress() {
+                                  const obj = { channel: item };
+                                  return closure_10(obj);
+                                }
+                };
+                return closure_6(closure_1_11, obj);
               }
             }
           }
-        }
-        class O {
-          constructor(channel) {
-            const obj = { channel: channel.channel };
-            onChannelPress(obj);
-            closure_9();
+          class Item {
+            constructor(arg0) {
+              item = onChannelPress.item;
+              obj = {
+                channel: item,
+                index: onChannelPress.index,
+                totalCount: closure_7.length,
+                onPress() {
+                              const obj = { channel: item };
+                              return closure_10(obj);
+                            }
+              };
+              return closure_6(closure_1_11, obj);
+            }
           }
+          const tmpResult = onChannelPress(channel[13]);
+          if (0 === tmp10) {
+            tmp23Result = tmp23(tmpResult.AppLauncherListEmptyState, {});
+          } else {
+            const obj4 = { ref, data: first2, renderItem: tmp17 };
+            tmp23Result = tmp23(tmpResult.AppLauncherList, obj4);
+          }
+          cResult[16] = tmp17;
+          cResult[17] = first2;
+          cResult[18] = 0 === tmp10;
+          cResult[19] = tmp23Result;
         }
-        class N {
+        class Item {
           constructor(arg0) {
             item = onChannelPress.item;
             obj = {
@@ -227,54 +260,51 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChannelPress) => {
           }
         }
         cResult[12] = first2.length;
-        cResult[13] = tmp12;
-        cResult[14] = N;
+        cResult[13] = tmp15;
+        cResult[14] = Item;
+        tmp17 = Item;
       }
-      class O {
-        constructor(channel) {
-          const obj = { channel: channel.channel };
-          onChannelPress(obj);
-          closure_9();
-        }
+      function handleChannelPress(channel) {
+        const obj = { channel: channel.channel };
+        onChannelPress(obj);
+        closure_9();
       }
-      cResult[8] = tmp11;
+      cResult[8] = tmp14;
       cResult[9] = onChannelPress;
-      cResult[10] = O;
-      tmp12 = O;
+      cResult[10] = handleChannelPress;
+      tmp15 = handleChannelPress;
     }
   }
-  class I {
-    constructor() {
-      const obj = AutocompleteUtilsDefault;
-      const obj2 = { query, channel, channelTypes: option.channelTypes, limit: null, allowSnowflake: true };
-      closure_8(obj.queryApplicationCommandChannelResults(obj2).channels);
-    }
-  }
+  const fn = function y() {
+    const obj = AutocompleteUtilsDefault;
+    const obj2 = { query, channel, channelTypes: option.channelTypes, limit: null, allowSnowflake: true };
+    closure_8(obj.queryApplicationCommandChannelResults(obj2).channels);
+  };
   const items1 = [query, channel, option];
   cResult[1] = channel;
   cResult[2] = option;
   cResult[3] = query;
-  cResult[4] = I;
+  cResult[4] = fn;
   cResult[5] = items1;
-  tmp9 = items1;
-  tmp8 = I;
-}) : ((channel) => {
+  tmp12 = items1;
+  tmp11 = fn;
+}) : (function AppLauncherChannelListActionSheet(channel) {
   let items1;
   let onActionSheetDismiss;
   let tmp9Result;
   ({ onChannelPress: require, onActionSheetDismiss } = channel);
   channel = channel.channel;
   const option = channel.option;
-  query = undefined;
+  let query;
   const tmp = option(query.useState(""), 2);
   query = tmp[0];
   let closure_5 = tmp[1];
-  ref = query.useRef(null);
+  const ref = query.useRef(null);
   const tmp4 = option(query.useState([]), 2);
   const first1 = tmp4[0];
   let closure_8 = tmp4[1];
   const items = [query, channel, option];
-  length = first1.length;
+  const length = first1.length;
   const effect = query.useEffect(() => {
     const obj = AutocompleteUtilsDefault;
     const obj2 = { query, channel, channelTypes: option.channelTypes, limit: null, allowSnowflake: true };
@@ -283,7 +313,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChannelPress) => {
   let obj = { onDismiss: onActionSheetDismiss, option, children: items1 };
   const AppLauncherCommandOptionActionSheet = require("AppLauncherCommandOptionActionSheet").AppLauncherCommandOptionActionSheet;
   let obj2 = {
-    onChange(str) {
+    onChange: function handleQueryUpdate(str) {
       closure_5(str.toLowerCase());
       const current = ref.current;
       if (current != null) {
@@ -299,7 +329,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChannelPress) => {
     const obj3 = {
       ref,
       data: first1,
-      renderItem(index) {
+      renderItem: function Item(index) {
           const item = index.item;
           let obj = {
             channel: item,
@@ -322,7 +352,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChannelPress) => {
   return tmp6(AppLauncherCommandOptionActionSheet, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((totalCount) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelListItem(totalCount) {
   let channel;
   let index;
   let onPress;
@@ -375,7 +405,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((totalCount) =>
   cResult[9] = index === totalCount - 1;
   cResult[10] = tmp15;
   tmp14 = tmp15;
-}) : ((arg0) => {
+}) : (function ChannelListItem(arg0) {
   let channel;
   let index;
   let onPress;

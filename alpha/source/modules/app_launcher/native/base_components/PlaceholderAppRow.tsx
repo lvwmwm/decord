@@ -1,17 +1,17 @@
-// Module ID: 11728
-// Function ID: 11729
+// Module ID: 11794
+// Function ID: 11795
 // Name: PlaceholderAppRow
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 11682, 6000, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 11747, 6184, 2]
 
-// Module 11728 (PlaceholderAppRow)
+// Module 11794 (PlaceholderAppRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import TableRow2 from "TableRow" /* 6000 */;
-import usePlaceholderSize from "usePlaceholderSize" /* 11682 */;
+import TableRow2 from "TableRow" /* 6184 */;
+import usePlaceholderSize from "usePlaceholderSize" /* 11747 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ createStyles = createStyles.createStyles;
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, height: 16, marginBottom: 4, borderRadius: nativeDefault.radii.lg, alignSelf: "flex-start" };
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: nativeDefault.radii.lg, alignSelf: "flex-start" };
 let closure_4 = createStyles(obj);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlaceholderAppRow(arg0) {
   let isFirstRow;
   let isLastRow;
   let tmp14;
@@ -81,22 +81,22 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const _Symbol = Symbol;
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-        class L {
+        class A {
           constructor() {
             return;
           }
         }
-        cResult[12] = L;
-        tmp23 = L;
+        cResult[12] = A;
+        tmp23 = A;
       } else {
-        class L {
+        class A {
           constructor() {
             return;
           }
         }
       }
       if (cResult[13] === (undefined !== isFirstRow && isFirstRow)) {
-        class L {
+        class A {
           constructor() {
             return;
           }
@@ -123,7 +123,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = tmp14;
   cResult[6] = tmp16;
   tmp15 = tmp16;
-}) : ((isFirstRow) => {
+}) : (function PlaceholderAppRow(isFirstRow) {
   let flag = isFirstRow.isFirstRow;
   if (flag === undefined) {
     flag = false;

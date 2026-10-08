@@ -1,18 +1,18 @@
-// Module ID: 11459
-// Function ID: 11460
+// Module ID: 11442
+// Function ID: 11443
 // Name: GuildMemberUtils
-// Dependencies: [2112, 2074, 4515, 1377, 4501, 1085, 558, 576, 504, 11, 1390, 2]
+// Dependencies: [2124, 2086, 4707, 1389, 4693, 1085, 558, 576, 504, 11, 1402, 2]
 // Exports: canManageMessages, hasBanMemberPerms, hasKickMemberPerms
 
-// Module 11459 (GuildMemberUtils)
+// Module 11442 (GuildMemberUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1085 */;
-import FlagUtils from "FlagUtils" /* 1390 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4501 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import UserStore from "UserStore" /* 1377 */;
+import FlagUtils from "FlagUtils" /* 1402 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4693 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -101,7 +101,7 @@ const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;
 const Permissions = Constants.Permissions;
 let c9 = 86400000;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildMemberAgeInRange(arg0, arg1, arg2) {
   let closure_0;
   let closure_2;
   let first;
@@ -130,7 +130,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
       return tmpResult.useStateFromStores(first, tmp5, tmp6);
     }
   }
-  const fn = function u() {
+  const fn = function o() {
     return getGuildMemberAgeInRange(closure_0, closure_1, closure_2);
   };
   const items1 = [arg1, arg0, arg2];
@@ -141,7 +141,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
   cResult[5] = items1;
   tmp6 = items1;
   tmp5 = fn;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useGuildMemberAgeInRange(arg0, arg1, arg2) {
   let closure_0;
   let closure_2;
   _require = arg0;
@@ -153,7 +153,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
 });
 let closure_11 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNewMemberBadge(arg0, arg1) {
   let closure_0;
   let first;
   _require = arg0;
@@ -218,30 +218,19 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       tmp12 = cResult[7];
     }
     if (cResult[8] !== arg1) {
-      class F {
-        constructor() {
-          const user = UserStore.getUser(closure_1);
-          let bot;
-          if (user != null) {
-            bot = user.bot;
-          }
-          return bot;
+      const fn3 = function h() {
+        const user = UserStore.getUser(closure_1);
+        let bot;
+        if (user != null) {
+          bot = user.bot;
         }
-      }
+        return bot;
+      };
       cResult[8] = arg1;
-      cResult[9] = F;
-      tmp14 = F;
+      cResult[9] = fn3;
+      tmp14 = fn3;
     } else {
-      class F {
-        constructor() {
-          const user = UserStore.getUser(closure_1);
-          let bot;
-          if (user != null) {
-            bot = user.bot;
-          }
-          return bot;
-        }
-      }
+      tmp14 = cResult[9];
     }
     const tmpResult4 = tmp(504);
     const stateFromStores2 = tmpResult4.useStateFromStores(tmp12, tmp14);
@@ -265,7 +254,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[2] = arg1;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useNewMemberBadge(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;
@@ -311,7 +300,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   return tmp4;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanKickMember(arg0, arg1) {
   let closure_0;
   let first;
   _require = arg0;
@@ -334,7 +323,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     const tmpResult = tmp(504);
     return tmpResult.useStateFromStores(first, tmp6);
   }
-  const fn = function u() {
+  const fn = function o() {
     const items = [PermissionStore];
     return canKickMember(closure_0, closure_1, items);
   };
@@ -342,7 +331,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[2] = arg0;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useCanKickMember(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;
@@ -354,7 +343,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanBanMember(arg0, arg1) {
   let closure_0;
   let first;
   _require = arg0;
@@ -377,14 +366,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     const tmpResult = tmp(504);
     return tmpResult.useStateFromStores(first, tmp5);
   }
-  const fn = function o() {
+  const fn = function u() {
     return canBanMember(closure_0, closure_1);
   };
   cResult[1] = arg1;
   cResult[2] = arg0;
   cResult[3] = fn;
   tmp5 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useCanBanMember(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;
@@ -392,7 +381,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   return obj.useStateFromStores([], () => canBanMember(closure_0, closure_1));
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanManageMessages(arg0, arg1) {
   let closure_0;
   let first;
   _require = arg0;
@@ -415,7 +404,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     const tmpResult = tmp(504);
     return tmpResult.useStateFromStores(first, tmp6);
   }
-  const fn = function u() {
+  const fn = function o() {
     let obj2;
     const items = [PermissionStore];
     [obj2] = items;
@@ -426,7 +415,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[2] = arg0;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useCanManageMessages(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;

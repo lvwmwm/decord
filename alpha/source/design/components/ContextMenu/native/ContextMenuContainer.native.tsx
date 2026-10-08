@@ -1,20 +1,20 @@
-// Module ID: 14276
-// Function ID: 14277
+// Module ID: 14100
+// Function ID: 14101
 // Name: ContextMenuContainer
-// Dependencies: [19, 17, 21, 4896, 14277, 558, 576, 7591, 1632, 5721, 5773, 4595, 2]
+// Dependencies: [19, 17, 21, 5090, 14101, 558, 576, 9298, 1644, 5304, 5356, 4787, 2]
 
-// Module 14276 (ContextMenuContainer)
+// Module 14100 (ContextMenuContainer)
 import Fragment from "Fragment" /* 21 */;
-import OverlayViewDefault from "OverlayView" /* 5721 */;
-import ContextMenuPopout from "ContextMenuPopout" /* 14277 */;
+import OverlayViewDefault from "OverlayView" /* 5304 */;
+import ContextMenuPopout from "ContextMenuPopout" /* 14101 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_0;
+let _require, closure_0, dependencyMap;
 
 let StyleSheet;
 let closure_4;
@@ -37,28 +37,33 @@ function EMPTY_CALLBACK() {
 function renderItem(arg0, menu, transitionState, cleanUp) {
   return jsx(ContextMenuPopout.ContextMenuPopout, { menu, transitionState, cleanUp }, arg0);
 }
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  let tmp8;
-  let tmp9;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMenuContainer() {
+  let onDismiss;
+  let tmp10;
+  let tmp11;
+  let tmp13;
+  let tmp6;
+  let tmp = _require;
+  let tmp2 = dependencyMap;
   const obj = require("react");
   const cResult = obj.c(13);
-  let tmp2 = closure_6();
-  _require = tmp2;
+  let tmp4 = closure_6();
+  _require = tmp4;
   const obj2 = require("ContextMenuState");
   const activeContextMenu = obj2.useActiveContextMenu();
   if (cResult[0] !== activeContextMenu) {
-    let tmp6;
+    let tmp8;
     if (null != activeContextMenu) {
       const items = [activeContextMenu];
-      tmp6 = items;
+      tmp8 = items;
     } else {
-      tmp6 = closure_7;
+      tmp8 = closure_7;
     }
     cResult[0] = activeContextMenu;
-    cResult[1] = tmp6;
-    let tmp4 = tmp6;
+    cResult[1] = tmp8;
+    tmp6 = tmp8;
   } else {
-    tmp4 = cResult[1];
+    tmp6 = cResult[1];
   }
   let requestClose;
   if (activeContextMenu != null) {
@@ -69,13 +74,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function p() {
-      const KeyboardEvents = closure_0(C[8]).KeyboardEvents;
+      const KeyboardEvents = closure_0(onDismiss[8]).KeyboardEvents;
       closure_0 = KeyboardEvents.addListener("keyboardDidHide", () => {
-        const ContextMenuStore = closure_0(closure_1_2[7]).ContextMenuStore;
+        const ContextMenuStore = closure_0(onDismiss[7]).ContextMenuStore;
         const menu = ContextMenuStore.getState().menu;
         let ignoreKeyboardHide;
         const tmp = closure_0;
-        const tmp2 = closure_1_2;
+        const tmp2 = onDismiss;
         if (menu != null) {
           ignoreKeyboardHide = menu.ignoreKeyboardHide;
         }
@@ -91,37 +96,45 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const items1 = [];
     cResult[2] = fn;
     cResult[3] = items1;
-    tmp9 = items1;
-    tmp8 = fn;
+    tmp11 = items1;
+    tmp10 = fn;
   } else {
-    tmp8 = cResult[2];
-    tmp9 = cResult[3];
+    tmp10 = cResult[2];
+    tmp11 = cResult[3];
   }
-  const effect = react.useEffect(tmp8, tmp9);
+  const effect = react.useEffect(tmp10, tmp11);
   if (cResult[4] !== requestClose) {
-    class C {
-      constructor() {
-        requestClose(true);
-      }
-    }
+    const fn2 = function w() {
+      requestClose(true);
+    };
     cResult[4] = requestClose;
-    cResult[5] = C;
+    cResult[5] = fn2;
+    tmp13 = fn2;
   } else {
-    class C {
-      constructor() {
-        requestClose(true);
+    tmp13 = cResult[5];
+  }
+  dependencyMap = tmp13;
+  if (cResult[6] === tmp13) {
+    if (cResult[7] === tmp4.overlayView) {
+      let tmp14;
+      if (cResult[8] === tmp4.wrapperView) {
+        tmp14 = cResult[9];
       }
+      if (cResult[10] === tmp6) {
+        let tmp15;
+        if (cResult[11] === tmp14) {
+          tmp15 = cResult[12];
+        }
+        return tmp15;
+      }
+      const tmp19 = jsx(tmp(4787).TransitionGroup, { wrapChildren: tmp14, items: tmp6, renderItem, getItemKey });
+      cResult[10] = tmp6;
+      cResult[11] = tmp14;
+      cResult[12] = tmp19;
+      tmp15 = tmp19;
     }
   }
-  C = tmp11;
-  if (cResult[6] === tmp11) {
-    class C {
-      constructor() {
-        requestClose(true);
-      }
-    }
-  }
-  const fn2 = function x(children, arg1) {
+  const fn3 = function x(children, arg1) {
     let str = "auto";
     OverlayViewDefault;
     if (0 === arg1.length) {
@@ -129,11 +142,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return <tmp3 style={closure_0.overlayView}>{null}</tmp3>;
   };
-  cResult[6] = tmp11;
-  cResult[7] = tmp2.overlayView;
-  cResult[8] = tmp2.wrapperView;
-  cResult[9] = fn2;
-}) : (() => {
+  cResult[6] = tmp13;
+  cResult[7] = tmp4.overlayView;
+  cResult[8] = tmp4.wrapperView;
+  cResult[9] = fn3;
+  tmp14 = fn3;
+}) : (function ContextMenuContainer() {
   let onDismiss;
   let tmp5;
   let tmp = closure_6();

@@ -1,18 +1,18 @@
-// Module ID: 10448
-// Function ID: 10449
+// Module ID: 10045
+// Function ID: 10046
 // Name: handlePremiumPurchase
-// Dependencies: [109, 5, 19, 8902, 502, 4540, 6931, 1085, 1096, 1282, 10449, 5319, 10450, 1126, 4556, 5714, 6926, 504, 6969, 10451, 10452, 10407, 10453, 6751, 4549, 8901, 1252, 2]
+// Dependencies: [109, 5, 19, 9335, 502, 4732, 7120, 1085, 1096, 1294, 10046, 5631, 10047, 1126, 4748, 5297, 7115, 504, 7158, 10048, 10049, 10004, 10050, 6927, 4741, 9334, 1264, 2]
 // Exports: useHandlePremiumPurchase
 
-// Module 10448 (handlePremiumPurchase)
+// Module 10045 (handlePremiumPurchase)
 import Constants2 from "Constants" /* 1096 */;
-import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 8902 */;
+import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9335 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SubscriptionStore from "SubscriptionStore" /* 4540 */;
-import IAPStore from "IAPStore" /* 6931 */;
+import SubscriptionStore from "SubscriptionStore" /* 4732 */;
+import IAPStore from "IAPStore" /* 7120 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -219,13 +219,13 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
       }
       return BOGO_OFFER_ID;
     }
-    function showPurchaseErrorModal(combined) {
+    function showPurchaseErrorModal(message) {
       let intl2;
-      let billingError = combined;
-      if (!(combined instanceof closure_1_0(analyticsLoadId[11]).BillingError)) {
+      let billingError = message;
+      if (!(message instanceof closure_1_0(analyticsLoadId[11]).BillingError)) {
         const self = this;
         const self2 = this;
-        billingError = new tmp(tmp2[11]).BillingError(combined);
+        billingError = new tmp(tmp2[11]).BillingError(message);
       }
       const tmpResult = closure_1_0(analyticsLoadId[12]);
       if (tmpResult.isSpendingLimitError(billingError)) {

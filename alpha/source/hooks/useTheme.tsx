@@ -1,23 +1,23 @@
-// Module ID: 4797
-// Function ID: 4798
+// Module ID: 4991
+// Function ID: 4992
 // Name: useTheme
-// Dependencies: [1085, 558, 4735, 576, 2]
+// Dependencies: [1085, 558, 4929, 576, 2]
 // Exports: getThemeIndex
 
-// Module 4797 (useTheme)
+// Module 4991 (useTheme)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import shared from "shared" /* 4735 */;
+import shared from "shared" /* 4929 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ThemeTypes = Constants.ThemeTypes;
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const useTheme = () => {
+function useTheme() {
   const obj = shared;
   return obj.useThemeContext().theme;
-};
+}
 ReactCompilerGating = ReactCompilerGating_mod;
 function getThemeIndex(arg0) {
   if (ThemeTypes.DARK === arg0) {
@@ -26,10 +26,10 @@ function getThemeIndex(arg0) {
     return 1;
   }
 }
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useThemeIndex() {
   const obj = react;
   const cResult = obj.c(2);
-  if (typeof fn === "function") {
+  if (typeof useTheme === "function") {
     let tmp4;
     const tmpResult = shared;
     const theme = tmpResult.useThemeContext().theme;
@@ -50,8 +50,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-}) : (() => {
-  if (typeof fn === "function") {
+}) : (function useThemeIndex() {
+  if (typeof useTheme === "function") {
     const obj = shared;
     const theme = obj.useThemeContext().theme;
     let num = 0;

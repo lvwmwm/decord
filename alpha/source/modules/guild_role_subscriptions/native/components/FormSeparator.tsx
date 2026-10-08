@@ -1,15 +1,15 @@
-// Module ID: 15050
-// Function ID: 15051
+// Module ID: 15312
+// Function ID: 15313
 // Name: FormSeparator
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 2]
 
-// Module 15050 (FormSeparator)
+// Module 15312 (FormSeparator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ const jsx = Fragment.jsx;
 let obj = { container: { alignSelf: "stretch" }, margins: { marginTop: 16 }, separator: size };
 size = { width: "100%", height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 let closure_4 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormSeparator(style) {
   const obj = react2;
   const cResult = obj.c(9);
   style = style.style;
@@ -64,7 +64,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   cResult[2] = margins;
   cResult[3] = items;
   tmp4 = items;
-}) : ((arg0) => {
+}) : (function FormSeparator(arg0) {
   let style;
   let withoutMargins;
   ({ style, withoutMargins } = arg0);

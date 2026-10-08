@@ -1,19 +1,19 @@
-// Module ID: 15333
-// Function ID: 15334
+// Module ID: 15595
+// Function ID: 15596
 // Name: AndroidNotificationLightsSetting
-// Dependencies: [15320, 7645, 558, 576, 1369, 15322, 1126, 11142, 14308, 15326, 2]
+// Dependencies: [15582, 7966, 558, 576, 1381, 15584, 1126, 11262, 14533, 15588, 2]
 
-// Module 15333 (AndroidNotificationLightsSetting)
+// Module 15595 (AndroidNotificationLightsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14308 */;
-import SettingsNotificationUtils from "SettingsNotificationUtils" /* 15322 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15326 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15320 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14533 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 15584 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15588 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15582 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11142 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -21,7 +21,7 @@ let setAndroidNotificationLightsEnabled;
 ({ useAndroidNotificationLightsEnabled: c2, setAndroidNotificationLightsEnabled } = AndroidNotificationSettingsStore);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasAndroidNotificationLightsSetting() {
   let tmp5;
   const obj = react;
   const cResult = obj.c(2);
@@ -44,7 +44,7 @@ let closure_3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[1];
   }
   return tmp5;
-}) : (() => {
+}) : (function useHasAndroidNotificationLightsSetting() {
   const tmp = React2();
   const obj = PlatformUtils;
   let tmp5 = !obj.isIOS();
@@ -63,7 +63,7 @@ let obj = {
     const intl = intl2.intl;
     return intl.string(intl2.t.E3xHUp);
   },
-  useValue: () => {
+  useValue: function useAndroidNotificationLightsSettingValue() {
     let flag = React2();
     if (flag == null) {
       flag = false;

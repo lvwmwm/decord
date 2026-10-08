@@ -1,22 +1,22 @@
-// Module ID: 11323
-// Function ID: 11324
+// Module ID: 11579
+// Function ID: 11580
 // Name: ForwardDestinationUtils
-// Dependencies: [19, 5694, 2055, 2051, 4515, 4525, 1377, 1085, 558, 576, 10724, 1375, 504, 1106, 5435, 1985, 5106, 5108, 5587, 5588, 11324, 1126, 5433, 7185, 4728, 5049, 2]
+// Dependencies: [19, 6035, 2067, 2063, 4707, 4717, 1389, 1085, 558, 576, 11577, 1387, 504, 1106, 5745, 1997, 5930, 5905, 5918, 5917, 11580, 1126, 5743, 7364, 4922, 5417, 2]
 // Exports: getDestinationIsUnavailable, isRatelimitedInChannel
 
-// Module 11323 (ForwardDestinationUtils)
+// Module 11579 (ForwardDestinationUtils)
 import ChannelTypes from "ChannelTypes" /* 1106 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import StickersUtils from "StickersUtils" /* 5435 */;
-import SlowmodeUtils from "SlowmodeUtils" /* 7185 */;
-import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 11324 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import StickersUtils from "StickersUtils" /* 5745 */;
+import SlowmodeUtils from "SlowmodeUtils" /* 7364 */;
+import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 11580 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 5694 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
+import StickersStore from "StickersStore" /* 6035 */;
+import ChannelRecord from "ChannelRecord" /* 2067 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ let metroRequire;
 ({ ChannelRecordBase: hasOwnProperty, isGuildChannelType: metroRequire, createChannelRecord: metroImportDefault } = ChannelRecord);
 ({ MessageFlags: closure_12, Permissions: map1 } = Constants);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedDestinationChannel(arr) {
   let closure_0;
   let tmp11;
   let tmp4;
@@ -42,8 +42,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   const obj = require("react");
   const cResult = obj.c(8);
   if (cResult[0] !== arr) {
-    const mapped = arr.map(tmp(10724).getChannelIdFromDestinationId);
-    const found = mapped.find(tmp(1375).isNotNullish);
+    const mapped = arr.map(tmp(11577).getChannelIdFromDestinationId);
+    const found = mapped.find(tmp(1387).isNotNullish);
     cResult[0] = arr;
     cResult[1] = found;
     tmp4 = found;
@@ -87,10 +87,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
     tmp11 = cResult[7];
   }
   return tmp11;
-}) : ((arr) => {
+}) : (function useSelectedDestinationChannel(arr) {
   let found;
-  const mapped = arr.map(found(10724).getChannelIdFromDestinationId);
-  found = mapped.find(found(1375).isNotNullish);
+  const mapped = arr.map(found(11577).getChannelIdFromDestinationId);
+  found = mapped.find(found(1387).isNotNullish);
   let obj = found(504);
   const items = [ChannelStore];
   const items1 = [found];
@@ -106,7 +106,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   }, items2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedDestinationNames(arg0) {
   let closure_0;
   let first;
   let tmp8;
@@ -164,7 +164,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresArray(first, tmp8, tmp9);
-}) : ((arg0) => {
+}) : (function useSelectedDestinationNames(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -199,7 +199,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDestinationNamesWithSlowmode(arg0) {
   let closure_0;
   let first;
   let tmp10;
@@ -262,7 +262,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp10 = cResult[4];
   }
   if (cResult[5] !== stateFromStoresArray) {
-    const fn2 = function p() {
+    const fn2 = function f() {
       return stateFromStoresArray.map((item) => {
         const obj = closure_1_0(closure_1_2[25]);
         return obj.computeChannelName(item, closure_1_11, closure_1_10, true);
@@ -280,7 +280,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult2 = tmp(504);
   return tmpResult2.useStateFromStoresArray(tmp10, tmp13, tmp14);
-}) : ((arg0) => {
+}) : (function useDestinationNamesWithSlowmode(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -378,7 +378,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
           let result = tmp13Result9.shouldShowTiggerPawtect();
           if (result) {
             const tmp13Result10 = require("RegionalFeatureConfigUtils");
-            result = tmp13Result10.isFeatureAgeGated(tmp13(5588).AgeGatedFeature.AGE_GATED_SPACES);
+            result = tmp13Result10.isFeatureAgeGated(tmp13(5917).AgeGatedFeature.AGE_GATED_SPACES);
           }
           let disableAgeRestrictedDestinations = !(false !== nsfwAllowed && !result);
           if (disableAgeRestrictedDestinations) {

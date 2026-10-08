@@ -1,27 +1,27 @@
-// Module ID: 6628
-// Function ID: 6629
+// Module ID: 6805
+// Function ID: 6806
 // Name: GuildOnboardingPromptOptionButton
-// Dependencies: [32, 19, 17, 4885, 5645, 1380, 21, 4618, 4896, 587, 558, 576, 504, 4897, 5604, 6629, 4596, 1126, 4586, 4600, 6632, 1402, 4892, 5916, 6635, 1188, 2]
+// Dependencies: [32, 19, 17, 5079, 5992, 1392, 21, 4810, 5090, 587, 558, 576, 504, 5091, 5374, 6806, 4788, 1126, 4778, 4792, 6809, 1414, 5086, 6189, 6812, 1200, 2]
 
-// Module 6628 (GuildOnboardingPromptOptionButton)
+// Module 6805 (GuildOnboardingPromptOptionButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4596 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
-import spring from "spring" /* 5604 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4788 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
+import spring from "spring" /* 5374 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 4885 */;
-import EmojiStore from "EmojiStore" /* 5645 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import EmojiStore from "EmojiStore" /* 5992 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let option, set;
+let set;
 
 let Easing;
 let c10;
@@ -30,7 +30,6 @@ let obj3;
 let rect;
 let size;
 let View = react_native.View;
-let AccessibilityStore = AccessibilityStore_mod;
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
 ({ jsx: c9, jsxs: c10 } = Fragment);
 let obj = { duration: 200, easing: Easing.out(ReanimatedRexport.Easing.ease) };
@@ -54,8 +53,7 @@ const __initData4 = { code: "function GuildOnboardingPromptOptionButtonTsx9(){co
 const __initData5 = { code: "function GuildOnboardingPromptOptionButtonTsx10(){const{withTiming,isNew,SELECTION_TIMING}=this.__closure;return withTiming(isNew?1:0,SELECTION_TIMING);}" };
 const __initData6 = { code: "function GuildOnboardingPromptOptionButtonTsx11(){const{interpolateColor,newProgress,unselectedBorderColor,newBorderColor,selectedProgress,selectedBorderColor,selectedBackgroundColor}=this.__closure;const currentUnselectedBorderColor=interpolateColor(newProgress.get(),[0,1],[unselectedBorderColor,newBorderColor]);return{borderColor:interpolateColor(selectedProgress.get(),[0,1],[currentUnselectedBorderColor,selectedBorderColor]),backgroundColor:interpolateColor(selectedProgress.get(),[0,1],['transparent',selectedBackgroundColor])};}" };
 const __initData7 = { code: "function GuildOnboardingPromptOptionButtonTsx12(){const{useReducedMotion,scale_0}=this.__closure;return useReducedMotion?{}:{transform:[{scale:scale_0.get()}]};}" };
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
-  let closure_8;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOptionButton(option) {
   let emoji4;
   let first;
   let first1;
@@ -64,13 +62,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
   let tmp10;
   let tmp13;
   let tmp14;
-  let tmp32;
   let tmp33;
+  let tmp34;
   let useReducedMotion;
   const tmp2 = option;
   let tmp3 = onSelect;
   obj = option(onSelect[11]);
-  const cResult = obj.c(85);
+  const cResult = obj.c(83);
   option = option.option;
   const selected = option.selected;
   onSelect = option.onSelect;
@@ -133,16 +131,35 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
   const tmp2Result = tmp2(tmp3[12]);
   const stateFromStores = tmp2Result.useStateFromStores(first, tmp10);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    let items1 = [AccessibilityStore];
-    class P {
+    let items1 = [useReducedMotion];
+    class B {
       constructor() {
-        return useReducedMotion.useReducedMotion;
+        let id;
+        if (option != null) {
+          const emoji = tmp.emoji;
+          if (emoji != null) {
+            id = emoji.id;
+          }
+        }
+        let usableCustomEmojiById = null;
+        if (null != id) {
+          let id1;
+          const getUsableCustomEmojiById = EmojiStore.getUsableCustomEmojiById;
+          if (option != null) {
+            const emoji2 = tmp.emoji;
+            if (emoji2 != null) {
+              id1 = emoji2.id;
+            }
+          }
+          usableCustomEmojiById = getUsableCustomEmojiById(id1);
+        }
+        return usableCustomEmojiById;
       }
     }
     let num4 = 3;
     cResult[3] = items1;
-    cResult[4] = P;
-    tmp14 = P;
+    cResult[4] = tmp16;
+    tmp14 = tmp16;
     tmp13 = items1;
   } else {
     tmp13 = cResult[3];
@@ -187,27 +204,46 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
   A.__workletHash = 8281627194581;
   A.__initData = __initData;
   const animatedStyle = tmp2Result6.useAnimatedStyle(A);
-  const tmp18 = selected(tmp3[15])(guildId);
-  let closure_5 = tmp18;
-  if (cResult[5] === tmp18) {
-    let tmp19;
+  const tmp19 = selected(tmp3[15])(guildId);
+  let closure_5 = tmp19;
+  if (cResult[5] === tmp19) {
+    let tmp20;
     if (cResult[6] === option.roleIds) {
-      tmp19 = cResult[7];
+      tmp20 = cResult[7];
     }
-    AccessibilityStore = tmp19;
-    class P {
+    useReducedMotion = tmp20;
+    class B {
       constructor() {
-        return useReducedMotion.useReducedMotion;
+        let id;
+        if (option != null) {
+          const emoji = tmp.emoji;
+          if (emoji != null) {
+            id = emoji.id;
+          }
+        }
+        let usableCustomEmojiById = null;
+        if (null != id) {
+          let id1;
+          const getUsableCustomEmojiById = EmojiStore.getUsableCustomEmojiById;
+          if (option != null) {
+            const emoji2 = tmp.emoji;
+            if (emoji2 != null) {
+              id1 = emoji2.id;
+            }
+          }
+          usableCustomEmojiById = getUsableCustomEmojiById(id1);
+        }
+        return usableCustomEmojiById;
       }
     }
-    const tmp26 = suppressMemberCount(stateFromStores1.useState(false), 2);
-    first1 = tmp26[0];
-    size = tmp26[1];
+    const tmp27 = suppressMemberCount(stateFromStores1.useState(false), 2);
+    first1 = tmp27[0];
+    let closure_8 = tmp27[1];
     let closure_9 = stateFromStores1.useRef(null);
     if (cResult[8] === onSelect) {
       if (cResult[9] === selected) {
+        let tmp31;
         let tmp30;
-        let tmp29;
         if (cResult[12] !== first1) {
           class Z {
             constructor() {
@@ -232,9 +268,28 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
             }
           }
           let items2 = [first1];
-          class P {
+          class B {
             constructor() {
-              return useReducedMotion.useReducedMotion;
+              let id;
+              if (option != null) {
+                const emoji = tmp.emoji;
+                if (emoji != null) {
+                  id = emoji.id;
+                }
+              }
+              let usableCustomEmojiById = null;
+              if (null != id) {
+                let id1;
+                const getUsableCustomEmojiById = EmojiStore.getUsableCustomEmojiById;
+                if (option != null) {
+                  const emoji2 = tmp.emoji;
+                  if (emoji2 != null) {
+                    id1 = emoji2.id;
+                  }
+                }
+                usableCustomEmojiById = getUsableCustomEmojiById(id1);
+              }
+              return usableCustomEmojiById;
             }
           }
           cResult[12] = first1;
@@ -259,8 +314,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
           }
           cResult[13] = Z;
           cResult[14] = items2;
-          tmp30 = items2;
-          tmp29 = Z;
+          tmp31 = items2;
+          tmp30 = Z;
         } else {
           class Z {
             constructor() {
@@ -284,15 +339,34 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
               }
             }
           }
-          tmp30 = cResult[14];
+          tmp31 = cResult[14];
         }
-        const effect = obj6.useEffect(tmp29, tmp30);
-        class P {
+        const effect = obj6.useEffect(tmp30, tmp31);
+        class B {
           constructor() {
-            return useReducedMotion.useReducedMotion;
+            let id;
+            if (option != null) {
+              const emoji = tmp.emoji;
+              if (emoji != null) {
+                id = emoji.id;
+              }
+            }
+            let usableCustomEmojiById = null;
+            if (null != id) {
+              let id1;
+              const getUsableCustomEmojiById = EmojiStore.getUsableCustomEmojiById;
+              if (option != null) {
+                const emoji2 = tmp.emoji;
+                if (emoji2 != null) {
+                  id1 = emoji2.id;
+                }
+              }
+              usableCustomEmojiById = getUsableCustomEmojiById(id1);
+            }
+            return usableCustomEmojiById;
           }
         }
-        if (cResult[15] === tmp19) {
+        if (cResult[15] === tmp20) {
           let title;
           class Z {
             constructor() {
@@ -316,11 +390,30 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
               }
             }
           }
-          const effect1 = obj6.useEffect(tmp33, tmp32);
+          const effect1 = obj6.useEffect(tmp34, tmp33);
           const tmp2Result7 = tmp2(tmp3[7]);
-          class P {
+          class B {
             constructor() {
-              return useReducedMotion.useReducedMotion;
+              let id;
+              if (option != null) {
+                const emoji = tmp.emoji;
+                if (emoji != null) {
+                  id = emoji.id;
+                }
+              }
+              let usableCustomEmojiById = null;
+              if (null != id) {
+                let id1;
+                const getUsableCustomEmojiById = EmojiStore.getUsableCustomEmojiById;
+                if (option != null) {
+                  const emoji2 = tmp.emoji;
+                  if (emoji2 != null) {
+                    id1 = emoji2.id;
+                  }
+                }
+                usableCustomEmojiById = getUsableCustomEmojiById(id1);
+              }
+              return usableCustomEmojiById;
             }
           }
           let obj3 = { showMemberCount: null, withDelay: tmp2(tmp3[7]).withDelay, withTiming: tmp2(tmp3[13]).withTiming, Easing: tmp2(tmp3[7]).Easing, useReducedMotion: stateFromStores1 };
@@ -344,20 +437,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
             }
           }
           const useAnimatedStyle = tmp2Result7.useAnimatedStyle;
-          tmp36.__closure = obj3;
-          class V {
-            constructor() {
-              onSelect(!selected);
-              const tmp = selected;
-              const tmp3 = suppressMemberCount;
-              if (!tmp3) {
-                closure_8(!tmp);
-              }
-            }
-          }
-          tmp36.__workletHash = 6536351943221;
-          tmp36.__initData = __initData2;
-          const animatedStyle1 = useAnimatedStyle(tmp36);
+          tmp37.__closure = obj3;
+          tmp37.__workletHash = 6536351943221;
+          tmp37.__initData = __initData2;
+          const animatedStyle1 = useAnimatedStyle(tmp37);
           const tmp2Result8 = tmp2(tmp3[7]);
           const sharedValue = tmp2Result8.useSharedValue(1);
           if (cResult[19] !== sharedValue) {
@@ -384,12 +467,31 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
               }
             }
             cResult[19] = sharedValue;
-            class P {
+            class B {
               constructor() {
-                return useReducedMotion.useReducedMotion;
+                let id;
+                if (option != null) {
+                  const emoji = tmp.emoji;
+                  if (emoji != null) {
+                    id = emoji.id;
+                  }
+                }
+                let usableCustomEmojiById = null;
+                if (null != id) {
+                  let id1;
+                  const getUsableCustomEmojiById = EmojiStore.getUsableCustomEmojiById;
+                  if (option != null) {
+                    const emoji2 = tmp.emoji;
+                    if (emoji2 != null) {
+                      id1 = emoji2.id;
+                    }
+                  }
+                  usableCustomEmojiById = getUsableCustomEmojiById(id1);
+                }
+                return usableCustomEmojiById;
               }
             }
-            cResult[20] = tmp40;
+            cResult[20] = tmp41;
             class Y {
               constructor() {
                 if (first1) {
@@ -457,12 +559,31 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
               }
             }
             cResult[21] = sharedValue;
-            class P {
+            class B {
               constructor() {
-                return useReducedMotion.useReducedMotion;
+                let id;
+                if (option != null) {
+                  const emoji = tmp.emoji;
+                  if (emoji != null) {
+                    id = emoji.id;
+                  }
+                }
+                let usableCustomEmojiById = null;
+                if (null != id) {
+                  let id1;
+                  const getUsableCustomEmojiById = EmojiStore.getUsableCustomEmojiById;
+                  if (option != null) {
+                    const emoji2 = tmp.emoji;
+                    if (emoji2 != null) {
+                      id1 = emoji2.id;
+                    }
+                  }
+                  usableCustomEmojiById = getUsableCustomEmojiById(id1);
+                }
+                return usableCustomEmojiById;
               }
             }
-            cResult[22] = tmp41;
+            cResult[22] = tmp42;
             class Y {
               constructor() {
                 if (first1) {
@@ -530,7 +651,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
                 }
               }
             }
-            if (tmp43 != null) {
+            if (tmp44 != null) {
               class Z {
                 constructor() {
                   if (closure_7) {
@@ -555,8 +676,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
               }
             }
           }
-          let tmp44 = null != tmp42;
-          if (!tmp44) {
+          let tmp45 = null != tmp43;
+          if (!tmp45) {
             class Z {
               constructor() {
                 if (closure_7) {
@@ -602,7 +723,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
                   }
                 }
               }
-              if (tmp46 != null) {
+              if (tmp47 != null) {
                 class Z {
                   constructor() {
                     if (closure_7) {
@@ -627,10 +748,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
                 }
               }
             }
-            tmp44 = null != tmp45;
+            tmp45 = null != tmp46;
           }
           const emoji3 = option.emoji;
-          if (cResult[23] === tmp44) {
+          if (cResult[23] === tmp45) {
             class Z {
               constructor() {
                 if (closure_7) {
@@ -654,7 +775,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
               }
             }
           }
-          if (tmp44) {
+          if (tmp45) {
             class Z {
               constructor() {
                 if (closure_7) {
@@ -677,7 +798,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
                 }
               }
             }
-            if (tmp48 != null) {
+            if (tmp49 != null) {
               class Z {
                 constructor() {
                   if (closure_7) {
@@ -701,9 +822,28 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
                 }
               }
             }
-            class P {
+            class B {
               constructor() {
-                return useReducedMotion.useReducedMotion;
+                let id;
+                if (option != null) {
+                  const emoji = tmp.emoji;
+                  if (emoji != null) {
+                    id = emoji.id;
+                  }
+                }
+                let usableCustomEmojiById = null;
+                if (null != id) {
+                  let id1;
+                  const getUsableCustomEmojiById = EmojiStore.getUsableCustomEmojiById;
+                  if (option != null) {
+                    const emoji2 = tmp.emoji;
+                    if (emoji2 != null) {
+                      id1 = emoji2.id;
+                    }
+                  }
+                  usableCustomEmojiById = getUsableCustomEmojiById(id1);
+                }
+                return usableCustomEmojiById;
               }
             }
             class Y {
@@ -771,11 +911,30 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
                     }
                   }
                 }
-                const formatToPlainString2 = tmp50.formatToPlainString;
+                const formatToPlainString = tmp51.formatToPlainString;
                 let obj4 = { emojiName: null, title: option.title, description: null };
-                class P {
+                class B {
                   constructor() {
-                    return useReducedMotion.useReducedMotion;
+                    let id;
+                    if (option != null) {
+                      const emoji = tmp.emoji;
+                      if (emoji != null) {
+                        id = emoji.id;
+                      }
+                    }
+                    let usableCustomEmojiById = null;
+                    if (null != id) {
+                      let id1;
+                      const getUsableCustomEmojiById = EmojiStore.getUsableCustomEmojiById;
+                      if (option != null) {
+                        const emoji2 = tmp.emoji;
+                        if (emoji2 != null) {
+                          id1 = emoji2.id;
+                        }
+                      }
+                      usableCustomEmojiById = getUsableCustomEmojiById(id1);
+                    }
+                    return usableCustomEmojiById;
                   }
                 }
                 class Y {
@@ -797,20 +956,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
                     }
                   }
                 }
-                title = formatToPlainString2(tmp2(tmp3[17]).t.nSzqkg, obj4);
+                title = formatToPlainString(tmp2(tmp3[17]).t.nSzqkg, obj4);
               }
             }
-            const formatToPlainString = tmp2(tmp3[17]).intl.formatToPlainString;
-            class V {
-              constructor() {
-                onSelect(!selected);
-                const tmp = selected;
-                const tmp3 = suppressMemberCount;
-                if (!tmp3) {
-                  closure_8(!tmp);
-                }
-              }
-            }
+            let intl = tmp2(tmp3[17]).intl;
+            const obj5 = { emojiName: tmp50, title: option.title };
+            title = intl.formatToPlainString(tmp2(tmp3[17]).t.rBPpAN, obj5);
           } else {
             class Z {
               constructor() {
@@ -836,7 +987,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
             }
             title = option.title;
           }
-          cResult[23] = tmp44;
+          cResult[23] = tmp45;
           ({ description: tmp4[24], emoji: emoji4 } = option);
           if (emoji4 != null) {
             class Z {
@@ -916,41 +1067,30 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
             }
           }
         }
-        const items3 = [first1, tmp19];
-        cResult[15] = tmp19;
-        class V {
-          constructor() {
-            onSelect(!selected);
-            const tmp = selected;
-            const tmp3 = suppressMemberCount;
-            if (!tmp3) {
-              closure_8(!tmp);
-            }
-          }
-        }
+        const items3 = [first1, tmp20];
+        cResult[15] = tmp20;
+        cResult[16] = first1;
         cResult[17] = items3;
         cResult[18] = Y;
-        tmp32 = items3;
-        tmp33 = Y;
+        tmp33 = items3;
+        tmp34 = Y;
       }
     }
-    class V {
-      constructor() {
-        onSelect(!selected);
-        const tmp = selected;
-        const tmp3 = suppressMemberCount;
-        if (!tmp3) {
-          closure_8(!tmp);
-        }
+    function handleOptionSelect() {
+      onSelect(!selected);
+      const tmp = selected;
+      const tmp3 = suppressMemberCount;
+      if (!tmp3) {
+        closure_8(!tmp);
       }
     }
     cResult[8] = onSelect;
     cResult[9] = selected;
     cResult[10] = suppressMemberCount;
-    cResult[11] = V;
+    cResult[11] = handleOptionSelect;
   }
   let num6 = 0;
-  if (null != tmp18) {
+  if (null != tmp19) {
     class Z {
       constructor() {
         if (closure_7) {
@@ -997,9 +1137,28 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
         }
       }
       const roleIds = option.roleIds;
-      class P {
+      class B {
         constructor() {
-          return useReducedMotion.useReducedMotion;
+          let id;
+          if (option != null) {
+            const emoji = tmp.emoji;
+            if (emoji != null) {
+              id = emoji.id;
+            }
+          }
+          let usableCustomEmojiById = null;
+          if (null != id) {
+            let id1;
+            const getUsableCustomEmojiById = EmojiStore.getUsableCustomEmojiById;
+            if (option != null) {
+              const emoji2 = tmp.emoji;
+              if (emoji2 != null) {
+                id1 = emoji2.id;
+              }
+            }
+            usableCustomEmojiById = getUsableCustomEmojiById(id1);
+          }
+          return usableCustomEmojiById;
         }
       }
       class Y {
@@ -1021,16 +1180,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
           }
         }
       }
-      HermesBuiltin.arraySpread(tmp20, roleIds.map((item) => closure_5[item]), 0);
+      HermesBuiltin.arraySpread(tmp21, roleIds.map((item) => closure_5[item]), 0);
       const _Math = Math;
-      num6 = HermesBuiltin.apply(max, tmp20, Math);
+      num6 = HermesBuiltin.apply(max, tmp21, Math);
     }
   }
-  cResult[5] = tmp18;
+  cResult[5] = tmp19;
   cResult[6] = option.roleIds;
   cResult[7] = num6;
-  tmp19 = num6;
-}) : ((option) => {
+  tmp20 = num6;
+}) : (function PromptOptionButton(option) {
   let CheckmarkSmallIcon;
   let Text;
   let accessibilityRole;
@@ -1042,7 +1201,6 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
   let intl2;
   let items10;
   let items11;
-  let items12;
   let items6;
   let items7;
   let items8;
@@ -1102,7 +1260,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
   let obj2 = option(504);
   let items1 = [num];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => num.useReducedMotion);
-  let obj3 = option(4618);
+  let obj3 = option(4810);
   class S {
     constructor() {
       let Easing;
@@ -1134,12 +1292,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
       return obj2;
     }
   }
-  let obj4 = { selected, withTiming: option(4897).withTiming, Easing: option(4618).Easing, useReducedMotion: stateFromStores1, withSequence: option(4618).withSequence, withSpring: option(5604).withSpring };
+  let obj4 = { selected, withTiming: option(5091).withTiming, Easing: option(4810).Easing, useReducedMotion: stateFromStores1, withSequence: option(4810).withSequence, withSpring: option(5374).withSpring };
   S.__closure = obj4;
   S.__workletHash = 8205438722579;
   S.__initData = derivedValue1;
   const animatedStyle = obj3.useAnimatedStyle(S);
-  const tmp9 = selected(6629)(guildId);
+  const tmp9 = selected(6806)(guildId);
   closure_5 = tmp9;
   num = 0;
   if (null != tmp9) {
@@ -1193,7 +1351,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
     }
   }, items4);
   const tmp15 = stateFromStores1;
-  const tmp3Result = tmp3(4618);
+  const tmp3Result = tmp3(4810);
   class V {
     constructor() {
       let Easing;
@@ -1212,7 +1370,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
       obj = { duration: 150, easing: Easing.out(ReanimatedRexport.Easing.ease) };
       const withTiming = timing.withTiming;
       timing;
-      Easing = tmp2(4618).Easing;
+      Easing = tmp2(4810).Easing;
       let num3 = 16;
       const withDelayResult = withDelay(num2, withTiming(num, obj));
       if (first) {
@@ -1230,19 +1388,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
         const obj3 = { duration: 200, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
         const withTiming2 = timing.withTiming;
         timing;
-        Easing2 = tmp2(4618).Easing;
+        Easing2 = tmp2(4810).Easing;
         withDelay2Result = withDelay2(num4, withTiming2(num3, obj3));
       }
       items = [{ translateX: withDelay2Result }];
       return obj2;
     }
   }
-  let obj5 = { showMemberCount, withDelay: tmp3(4618).withDelay, withTiming: tmp3(4897).withTiming, Easing: tmp3(4618).Easing, useReducedMotion: stateFromStores1 };
+  let obj5 = { showMemberCount, withDelay: tmp3(4810).withDelay, withTiming: tmp3(5091).withTiming, Easing: tmp3(4810).Easing, useReducedMotion: stateFromStores1 };
   V.__closure = obj5;
   V.__workletHash = 10755800239871;
   V.__initData = __initData3;
   const animatedStyle1 = tmp3Result.useAnimatedStyle(V);
-  const tmp3Result11 = tmp3(4618);
+  const tmp3Result11 = tmp3(4810);
   sharedValue = tmp3Result11.useSharedValue(1);
   closure_12 = tmp22;
   let id;
@@ -1311,13 +1469,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
       title = tmp.title;
     }
   }, items5);
-  const tmp3Result12 = tmp3(4586);
+  const tmp3Result12 = tmp3(4778);
   token = tmp3Result12.useToken(tmp8(587).colors.BORDER_SUBTLE);
-  const tmp3Result13 = tmp3(4586);
+  const tmp3Result13 = tmp3(4778);
   token1 = tmp3Result13.useToken(tmp8(587).colors.BACKGROUND_BRAND);
-  const tmp3Result14 = tmp3(4586);
+  const tmp3Result14 = tmp3(4778);
   token2 = tmp3Result14.useToken(tmp8(587).colors.BORDER_STRONG);
-  const tmp3Result15 = tmp3(4586);
+  const tmp3Result15 = tmp3(4778);
   token3 = tmp3Result15.useToken(tmp8(587).colors.BACKGROUND_BASE_LOWEST);
   const fn = function q() {
     num = 0;
@@ -1328,13 +1486,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
     }
     return withTiming(num, obj);
   };
-  const tmp3Result16 = tmp3(4618);
-  fn.__closure = { withTiming: tmp3(4897).withTiming, selected, SELECTION_TIMING: sharedValue };
+  const tmp3Result16 = tmp3(4810);
+  fn.__closure = { withTiming: tmp3(5091).withTiming, selected, SELECTION_TIMING: sharedValue };
   fn.__workletHash = 12520862943769;
   fn.__initData = __initData4;
-  ({ withTiming: tmp3(4897).withTiming, selected, SELECTION_TIMING: sharedValue });
+  ({ withTiming: tmp3(5091).withTiming, selected, SELECTION_TIMING: sharedValue });
   derivedValue = tmp3Result16.useDerivedValue(fn);
-  const tmp3Result17 = tmp3(4618);
+  const tmp3Result17 = tmp3(4810);
   class W {
     constructor() {
       num = 0;
@@ -1346,12 +1504,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
       return withTiming(num, obj);
     }
   }
-  W.__closure = { withTiming: tmp3(4897).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue };
+  W.__closure = { withTiming: tmp3(5091).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue };
   W.__workletHash = 6695066984001;
   W.__initData = __initData5;
-  ({ withTiming: tmp3(4897).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue });
+  ({ withTiming: tmp3(5091).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue });
   derivedValue1 = tmp3Result17.useDerivedValue(W);
-  const tmp3Result18 = tmp3(4618);
+  const tmp3Result18 = tmp3(4810);
   class X {
     constructor() {
       let items1;
@@ -1369,10 +1527,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
       return obj2;
     }
   }
-  X.__closure = { interpolateColor: tmp3(4618).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 };
+  X.__closure = { interpolateColor: tmp3(4810).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 };
   X.__workletHash = 11103701630825;
   X.__initData = __initData6;
-  ({ interpolateColor: tmp3(4618).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 });
+  ({ interpolateColor: tmp3(4810).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 });
   const animatedStyle2 = tmp3Result18.useAnimatedStyle(X);
   const fn2 = function z() {
     let items;
@@ -1389,18 +1547,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
   fn2.__closure = { useReducedMotion: stateFromStores1, scale_0: sharedValue };
   fn2.__workletHash = 15537308682382;
   fn2.__initData = __initData7;
-  const tmp3Result19 = tmp3(4618);
+  const tmp3Result19 = tmp3(4810);
   const animatedStyle3 = tmp3Result19.useAnimatedStyle(fn2);
-  const tmp3Result20 = tmp3(4600);
+  const tmp3Result20 = tmp3(4792);
   const checkboxA11yNative = tmp3Result20.useCheckboxA11yNative({ checked: selected });
   ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
-  const obj9 = { style: items6, children: items10 };
+  const obj9 = { style: items6, children: items9 };
   items6 = [tmp2.container, animatedStyle3, animatedStyle2];
-  View = tmp8(4618).View;
+  View = tmp8(4810).View;
+  let id1;
   const obj10 = {
     activeOpacity: 0.6,
-    style: items7,
-    onPress() {
+    style: tmp2.optionButton,
+    onPress: function handleOptionSelect() {
       dependencyMap(!selected);
       const tmp = selected;
       const tmp3 = _slicedToArray;
@@ -1433,11 +1592,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
     accessibilityRole,
     accessibilityState,
     accessibilityLabel: memo,
-    children: items8
+    children: items7
   };
-  items7 = [tmp2.optionButton];
-  let id1;
-  const PressableOpacity = tmp3(5916).PressableOpacity;
+  const PressableOpacity = tmp3(6189).PressableOpacity;
   if (option != null) {
     const emoji4 = option.emoji;
     if (emoji4 != null) {
@@ -1461,11 +1618,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
     ({ optionTextEmoji: obj23.textEmojiStyle, optionImageEmoji: obj23.fastImageStyle } = tmp2);
     emojiURL = undefined;
     const tmp42 = closure_5;
-    tmp8Result = selected(6632);
+    tmp8Result = selected(6809);
     if (null != stateFromStores) {
       const obj13 = { id: null, animated: null, size };
       ({ id: obj25.id, animated: obj25.animated } = stateFromStores);
-      const tmp8Result2 = selected(1402);
+      const tmp8Result2 = selected(1414);
       emojiURL = tmp8Result2.getEmojiURL(obj13);
     }
     str = undefined;
@@ -1480,38 +1637,38 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
     }
     tmp41Result = tmp41(tmp42, obj11);
   }
-  items8 = [tmp41Result, ];
-  const obj14 = { style: tmp2.optionText, children: items9 };
-  items9 = [, ];
+  items7 = [tmp41Result, ];
+  const obj14 = { style: tmp2.optionText, children: items8 };
+  items8 = [, ];
   const obj15 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: option.title };
-  items9[0] = closure_9(tmp3(4892).Text, obj15);
+  items8[0] = closure_9(tmp3(5086).Text, obj15);
   let tmp47Result = null != option.description && option.description.length > 0;
   const tmp46 = closure_5;
   if (tmp47Result) {
     const obj16 = { variant: "text-xs/medium", color: "text-default", children: option.description };
-    tmp47Result = tmp47(tmp3(4892).Text, obj16);
+    tmp47Result = tmp47(tmp3(5086).Text, obj16);
   }
-  items9[1] = tmp47Result;
-  items8[1] = ref(tmp46, obj14);
-  items10 = [ref(PressableOpacity, obj10), , , ];
+  items8[1] = tmp47Result;
+  items7[1] = ref(tmp46, obj14);
+  items9 = [ref(PressableOpacity, obj10), , , ];
   let tmp47Result2 = null;
   if (num > 0) {
-    const obj17 = { accessible: false, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, style: items11, children: closure_9(Text, obj18) };
-    items11 = [tmp2.roleCount, animatedStyle1];
-    const View2 = tmp8(4618).View;
+    const obj17 = { accessible: false, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, style: items10, children: closure_9(Text, obj18) };
+    items10 = [tmp2.roleCount, animatedStyle1];
+    const View2 = tmp8(4810).View;
     obj18 = { variant: "text-xs/semibold", color: "text-overlay-light", children: intl.format(tmp3(1126).t.EgKsZA, obj19) };
-    Text = tmp3(4892).Text;
+    Text = tmp3(5086).Text;
     intl = tmp3(1126).intl;
     obj19 = { memberCount: num };
     tmp47Result2 = tmp47(View2, obj17);
   }
-  items10[1] = tmp47Result2;
-  const obj20 = { style: items12, children: closure_9(CheckmarkSmallIcon, obj21) };
-  items12 = [tmp2.checkIcon, animatedStyle];
-  const View3 = tmp8(4618).View;
+  items9[1] = tmp47Result2;
+  const obj20 = { style: items11, children: closure_9(CheckmarkSmallIcon, obj21) };
+  items11 = [tmp2.checkIcon, animatedStyle];
+  const View3 = tmp8(4810).View;
   obj21 = { size: "xs", color: selected(587).colors.WHITE };
-  CheckmarkSmallIcon = tmp3(6635).CheckmarkSmallIcon;
-  items10[2] = closure_9(View3, obj20);
+  CheckmarkSmallIcon = tmp3(6812).CheckmarkSmallIcon;
+  items9[2] = closure_9(View3, obj20);
   if (canBeNew) {
     canBeNew = !selected;
   }
@@ -1519,13 +1676,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
     canBeNew = option.isUnseen;
   }
   if (canBeNew) {
-    const obj22 = { color: tmp3(1188).BadgeColors.BRAND, text: intl2.string(tmp3(1126).t.y2b7CA), style: null, textStyle: null };
-    const TextBadge = tmp3(1188).TextBadge;
+    const obj22 = { color: tmp3(1200).BadgeColors.BRAND, text: intl2.string(tmp3(1126).t.y2b7CA), style: null, textStyle: null };
+    const TextBadge = tmp3(1200).TextBadge;
     intl2 = tmp3(1126).intl;
     ({ newBadgeWrapper: obj34.style, newBadge: obj34.textStyle } = tmp2);
     canBeNew = tmp47(TextBadge, obj22);
   }
-  items10[3] = canBeNew;
+  items9[3] = canBeNew;
   return ref(View, obj9);
 });
 size = size_mod;

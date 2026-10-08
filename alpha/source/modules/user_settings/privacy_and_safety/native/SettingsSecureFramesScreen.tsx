@@ -1,22 +1,22 @@
-// Module ID: 15795
-// Function ID: 15796
+// Module ID: 16053
+// Function ID: 16054
 // Name: SettingsSecureFramesScreen
-// Dependencies: [19, 17, 1377, 1085, 21, 4896, 587, 558, 576, 504, 15796, 4728, 7863, 6664, 7861, 1188, 1126, 6007, 6000, 4586, 1490, 15794, 4892, 8404, 9378, 2]
+// Dependencies: [19, 17, 1389, 1085, 21, 5090, 587, 558, 576, 504, 16054, 4922, 8281, 6841, 8279, 1200, 1126, 6193, 6184, 4778, 1502, 16052, 5086, 8600, 8800, 2]
 
-// Module 15795 (SettingsSecureFramesScreen)
+// Module 16053 (SettingsSecureFramesScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
-import UserActionCreators from "UserActionCreators" /* 7863 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9378 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
+import UserActionCreators from "UserActionCreators" /* 8281 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 8800 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -277,7 +277,7 @@ const constants = { USER: "USER" };
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_11 = ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsSecureFramesFooter() {
   let format;
   let intl;
   let items;
@@ -413,7 +413,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[6] = secureFramesVerifiedUserIds.length;
   cResult[7] = fn2;
   tmp9 = fn2;
-}) : (() => {
+}) : (function SettingsSecureFramesFooter() {
   let callback;
   let format;
   let intl;
@@ -461,7 +461,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return tmp8;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsSecureFramesScreen() {
   let first;
   let format;
   let intl;
@@ -478,7 +478,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_9();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.string(intl3.t["9Q/PQv"]) };
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     intl = tmp(1126).intl;
     const tmp7 = metroImportDefault(Text, obj2);
     cResult[0] = tmp7;
@@ -488,7 +488,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-sm/normal", color: "text-default", children: format(v8IwQfG, obj4) };
-    const Text2 = tmp(4892).Text;
+    const Text2 = tmp(5086).Text;
     const intl2 = tmp(1126).intl;
     format = intl2.format;
     obj4 = { helpArticle: tmpResult.getSecureFramesHelpdeskArticle() };
@@ -531,7 +531,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[6] = tmp12;
   cResult[7] = tmp21;
   tmp20 = tmp21;
-}) : (() => {
+}) : (function SettingsSecureFramesScreen() {
   let format;
   let intl;
   let items;

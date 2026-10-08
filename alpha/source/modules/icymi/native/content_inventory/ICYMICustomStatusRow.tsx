@@ -1,32 +1,30 @@
-// Module ID: 16493
-// Function ID: 16494
+// Module ID: 16753
+// Function ID: 16754
 // Name: ICYMICustomStatusRow
-// Dependencies: [32, 19, 17, 1377, 8021, 21, 587, 4896, 16434, 558, 576, 1188, 11055, 4892, 1126, 7518, 4733, 504, 5312, 9403, 10626, 10642, 1369, 5916, 4853, 10071, 11379, 8444, 11, 1102, 4728, 7139, 16494, 8502, 16490, 2]
+// Dependencies: [32, 19, 17, 1389, 8429, 21, 587, 5090, 16694, 558, 576, 1200, 11701, 5086, 1126, 9241, 4927, 504, 5624, 8825, 10224, 10242, 1381, 6189, 5047, 9675, 12815, 8930, 11, 1102, 4922, 6064, 16754, 8986, 16750, 2]
 
-// Module 16493 (ICYMICustomStatusRow)
+// Module 16753 (ICYMICustomStatusRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import TrashIcon from "TrashIcon" /* 4853 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Pressables from "Pressables" /* 5916 */;
-import ReactionIcon from "ReactionIcon" /* 8444 */;
-import PencilIcon from "PencilIcon" /* 10071 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11055 */;
-import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 11379 */;
+import native from "native" /* 1200 */;
+import TrashIcon from "TrashIcon" /* 5047 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Pressables from "Pressables" /* 6189 */;
+import ReactionIcon from "ReactionIcon" /* 8930 */;
+import PencilIcon from "PencilIcon" /* 9675 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11701 */;
+import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12815 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
-import ICYMIStore from "ICYMIStore" /* 8021 */;
+import UserStore from "UserStore" /* 1389 */;
+import ICYMIStore from "ICYMIStore" /* 8429 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
-import createICYMIStyles from "createICYMIStyles" /* 16434 */;
+import createStyles from "createStyles" /* 5090 */;
+import createICYMIStyles from "createICYMIStyles" /* 16694 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let id;
 
 let c10;
 let c9;
@@ -64,7 +62,7 @@ let closure_14 = createICYMIStyles.createICYMIStyles((gap, arg1) => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadPlaceholder() {
   let first;
   let intl;
   let items;
@@ -75,7 +73,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_14(false);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { source: AssetRegistryDefault, size: native.IconSizes.SMALL };
-    const Icon = tmp(1188).Icon;
+    const Icon = tmp(1200).Icon;
     const tmp8 = metroImportAll(Icon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -84,7 +82,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-md/normal", color: "text-strong", children: intl.string(intl4.t["3UB9ad"]) };
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     intl = tmp(1126).intl;
     const tmp11 = metroImportAll(Text, obj3);
     cResult[1] = tmp11;
@@ -103,7 +101,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp12 = cResult[3];
   }
   return tmp12;
-}) : (() => {
+}) : (function UploadPlaceholder() {
   let intl;
   let items;
   const obj = { style: closure_14(false).uploadContainer, children: items };
@@ -117,19 +115,19 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return React4(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GravityCustomStatusEntryRow(id) {
   let customStatusExtra;
   let renderForScreenshot;
   let tmp12;
   let tmp14;
   let variant;
   const obj = id(576);
-  const cResult = obj.c(115);
+  const cResult = obj.c(113);
   id = id.id;
   const userId = id.userId;
   ({ customStatusExtra, renderForScreenshot, variant } = id);
   closure_14(renderForScreenshot);
-  const obj2 = id(7518);
+  const obj2 = id(9241);
   const gradientBottom = obj2.useGradientBottom();
   let backgroundColor;
   const tmp6 = closure_13;
@@ -141,7 +139,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   }
   const tmp6Result = tmp6(backgroundColor);
   if (cResult[0] !== tmp6Result.background.backgroundColor) {
-    const tmpResult = id(4733);
+    const tmpResult = id(4927);
     cResult[0] = tmp6Result.background.backgroundColor;
     cResult[1] = tmpResult.hexWithOpacity(tmp6Result.background.backgroundColor, 0.6);
     const hexWithOpacityResult = tmpResult.hexWithOpacity(tmp6Result.background.backgroundColor, 0.6);
@@ -154,16 +152,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     tmp12 = cResult[2];
   }
   if (cResult[3] !== userId) {
-    class B {
+    class A {
       constructor() {
         return closure_6.getUser(userId);
       }
     }
     cResult[3] = userId;
-    cResult[4] = B;
-    tmp14 = B;
+    cResult[4] = A;
+    tmp14 = A;
   } else {
-    class B {
+    class A {
       constructor() {
         return closure_6.getUser(userId);
       }
@@ -173,14 +171,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   const tmpResult2 = id(504);
   const stateFromStores = tmpResult2.useStateFromStores(tmp12, tmp14);
   if (emoji_id != null) {
-    class B {
+    class A {
       constructor() {
         return closure_6.getUser(userId);
       }
     }
   }
   if ("0" !== undefined) {
-    class B {
+    class A {
       constructor() {
         return closure_6.getUser(userId);
       }
@@ -188,14 +186,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   }
   const emoji_name = customStatusExtra.emoji_name;
   if (emoji_name == null) {
-    class B {
+    class A {
       constructor() {
         return closure_6.getUser(userId);
       }
     }
   }
   if (cResult[5] === customStatusExtra.emoji_animated) {
-    class B {
+    class A {
       constructor() {
         return closure_6.getUser(userId);
       }
@@ -206,7 +204,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   cResult[6] = null;
   cResult[7] = emoji_name;
   cResult[8] = obj3;
-}) : ((id) => {
+}) : (function GravityCustomStatusEntryRow(id) {
   let PressableHighlight;
   let _undefined;
   let c7;
@@ -223,7 +221,6 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   let items14;
   let items15;
   let items16;
-  let items17;
   let items6;
   let items7;
   let items8;
@@ -401,7 +398,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     items10 = [tmp.bottomBubble, tmp5Result.background];
     items9[1] = closure_8(closure_5, obj14);
     items11 = [tmp28(tmp14Result11, obj12), ];
-    const obj15 = { style: tmp.cardContainer, children: items17 };
+    const obj15 = { style: tmp.cardContainer, children: items16 };
     const tmp14Result12 = userId(renderForScreenshot[33]);
     if (renderForScreenshot) {
       items12 = [];
@@ -420,7 +417,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
       onPress: variant.handlePressPrimary,
       underlayColor: hexWithOpacityResult,
       style: items13,
-      children: items16
+      children: items15
     };
     items13 = [tmp.card, tmp5Result.background, ];
     let textOnly = null;
@@ -429,14 +426,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
       textOnly = tmp.textOnly;
     }
     items13[2] = textOnly;
-    const obj18 = { style: items14, children: items15 };
-    items14 = [tmp.emojiTextContainer];
-    items15 = [tmp20Result, , ];
+    const obj18 = { style: tmp.emojiTextContainer, children: items14 };
+    items14 = [tmp20Result, , ];
     if (tmp31Result10) {
       const obj19 = { style: tmp.emojiText, variant: "text-md/normal", children: gameMentionsAsPlainText };
       tmp31Result10 = tmp31(tmp2(tmp3[13]).Text, obj19);
     }
-    items15[1] = tmp31Result10;
+    items14[1] = tmp31Result10;
     let tmp31Result11 = !hasStatus;
     if (tmp31Result11) {
       const obj20 = { variant: "text-md/normal", children: intl3.string(tmp2(renderForScreenshot[14]).t["6ojWO0"]) };
@@ -444,14 +440,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
       intl3 = tmp2(tmp3[14]).intl;
       tmp31Result11 = tmp31(Text5, obj20);
     }
-    items15[2] = tmp31Result11;
-    items16 = [tmp28(tmp30, obj18), ];
+    items14[2] = tmp31Result11;
+    items15 = [tmp28(tmp30, obj18), ];
     let tmp31Result12 = !hasStatus;
     if (tmp31Result12) {
       tmp31Result12 = tmp31(closure_15, {});
     }
-    items16[1] = tmp31Result12;
-    items17 = [tmp31(tmp14Result12, obj16), tmp25];
+    items15[1] = tmp31Result12;
+    items16 = [tmp31(tmp14Result12, obj16), tmp25];
     items11[1] = closure_9(closure_5, obj15);
     return closure_9(tmp14Result8, element);
   }

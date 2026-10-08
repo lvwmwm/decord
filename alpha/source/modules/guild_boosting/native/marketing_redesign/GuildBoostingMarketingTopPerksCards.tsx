@@ -1,21 +1,21 @@
-// Module ID: 13427
-// Function ID: 13428
+// Module ID: 13727
+// Function ID: 13728
 // Name: GuildBoostingMarketingTopPerksCards
-// Dependencies: [19, 17, 4885, 21, 4896, 587, 1126, 13428, 5927, 13429, 13430, 558, 576, 4892, 12242, 2]
+// Dependencies: [19, 17, 5079, 21, 5090, 587, 1126, 13728, 6110, 13729, 13730, 558, 576, 5086, 12321, 2]
 
-// Module 13427 (GuildBoostingMarketingTopPerksCards)
+// Module 13727 (GuildBoostingMarketingTopPerksCards)
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import LottieAnimationViewDefault from "LottieAnimationView" /* 5927 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13428 */;
-import _mod13429 from "module_13429" /* 13429 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13430 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import LottieAnimationViewDefault from "LottieAnimationView" /* 6110 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13728 */;
+import _mod13729 from "module_13729" /* 13729 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13730 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ let items = [
       return intl.string(intl2.t.wOYbTv);
     },
     getGraphic(style) {
-      const obj = { source: _mod13429, autoPlay: !AccessibilityStore.useReducedMotion, style };
+      const obj = { source: _mod13729, autoPlay: !AccessibilityStore.useReducedMotion, style };
       const tmp = LottieAnimationViewDefault;
       return metroRequire(tmp, obj);
     }
@@ -82,7 +82,7 @@ let items = [
     }
   }
 ];
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostingMarketingTopPerksCards() {
   let card;
   let first;
   let heading;
@@ -105,7 +105,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] !== tmp4.heading) {
     let obj2 = { style: heading, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: first };
-    const tmp9 = closure_6(tmp(4892).Heading, obj2);
+    const tmp9 = closure_6(tmp(5086).Heading, obj2);
     cResult[1] = tmp4.heading;
     cResult[2] = tmp9;
     tmp7 = tmp9;
@@ -144,7 +144,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             tmp17 = tmp20;
           }
           const obj4 = { itemCount: items.length, cardWidth: 324, cardMarginRight: 16, contentContainerStyle: tmp10, children: tmp11 };
-          const tmp16 = closure_6(tmp(12242).MarketingCardsScroller, obj4);
+          const tmp16 = closure_6(tmp(12321).MarketingCardsScroller, obj4);
           cResult[9] = tmp4.scrollerContent;
           cResult[10] = tmp11;
           cResult[11] = tmp16;
@@ -180,7 +180,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[7] = tmp4.cardLast;
   cResult[8] = mapped;
   tmp11 = mapped;
-}) : (() => {
+}) : (function GuildBoostingMarketingTopPerksCards() {
   let card;
   let intl;
   let tmp = closure_8();

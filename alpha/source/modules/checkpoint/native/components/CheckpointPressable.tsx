@@ -1,20 +1,18 @@
-// Module ID: 15573
-// Function ID: 15574
+// Module ID: 15842
+// Function ID: 15843
 // Name: CheckpointPressable
-// Dependencies: [109, 17, 5121, 21, 587, 4896, 558, 576, 2]
+// Dependencies: [109, 17, 5433, 21, 587, 5090, 558, 576, 2]
 
-// Module 15573 (CheckpointPressable)
+// Module 15842 (CheckpointPressable)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 5121 */;
+import CheckpointConstants from "CheckpointConstants" /* 5433 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let style;
 
 let CHECKPOINT_CONTROL_SIZE;
 let closure_4;
@@ -40,7 +38,7 @@ obj5 = { flexDirection: "row", alignItems: "center", justifyContent: "center", p
 obj6 = { transform: items };
 items = [{ translateX: PX_4 }, { translateY: PX_4 }];
 let closure_9 = createStyles.createStyles(obj4);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointPressable(style) {
   let children;
   let containerStyle;
   let disabled;
@@ -189,7 +187,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   cResult[10] = tmp13.container;
   cResult[11] = items2;
   tmp14 = items2;
-}) : ((arg0) => {
+}) : (function CheckpointPressable(arg0) {
   let children;
   let closure_129_0;
   let closure_129_2;

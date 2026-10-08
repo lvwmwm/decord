@@ -1,34 +1,33 @@
-// Module ID: 11809
-// Function ID: 11810
+// Module ID: 11876
+// Function ID: 11877
 // Name: AppLauncherAutocompleteActionSheet
-// Dependencies: [32, 19, 17, 7418, 2074, 1085, 5795, 21, 12, 8963, 4896, 587, 558, 576, 573, 4860, 1126, 11803, 11805, 38, 6000, 4892, 5081, 1188, 11804, 2]
+// Dependencies: [32, 19, 17, 7893, 2086, 1085, 5399, 21, 12, 9753, 5090, 587, 558, 576, 573, 5054, 1126, 11870, 11872, 38, 6184, 5086, 5741, 1200, 11871, 2]
 
-// Module 11809 (AppLauncherAutocompleteActionSheet)
+// Module 11876 (AppLauncherAutocompleteActionSheet)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import merged5 from "merged5" /* 5081 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5795 */;
-import TableRow from "TableRow" /* 6000 */;
-import executeCommandDefault from "executeCommand" /* 8963 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11804 */;
+import native from "native" /* 1200 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5399 */;
+import merged5 from "merged5" /* 5741 */;
+import TableRow from "TableRow" /* 6184 */;
+import executeCommandDefault from "executeCommand" /* 9753 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11871 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 7418 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 7893 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import Fragment from "Fragment" /* 21 */;
 import module_12 from "module_12" /* 12 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let choices, option, query;
+let query;
 
 let c10;
 let c9;
@@ -43,7 +42,7 @@ let obj = { commandChoiceLoadingContainer: { flex: 1, justifyContent: "center" }
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, height: 16, borderRadius: nativeDefault.radii.lg, alignSelf: "flex-start" };
 let closure_12 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherAutocompleteActionSheet(option) {
   let autocompleteResults;
   let channel;
   let first1;
@@ -548,7 +547,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
       }
     }
   }
-  const fn = function h() {
+  const fn = function p() {
     const obj = { autocompleteResults: ApplicationCommandAutocompleteStore.getAutocompleteChoices(channel.id, option.name, first), lastErrored: ApplicationCommandAutocompleteStore.getLastErrored(channel.id) };
     return obj;
   };
@@ -560,7 +559,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
   cResult[5] = items4;
   tmp12 = items4;
   tmp11 = fn;
-}) : ((option) => {
+}) : (function AppLauncherAutocompleteActionSheet(option) {
   let initChoice;
   let intl;
   let items6;
@@ -690,10 +689,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
   return tmp12(AppLauncherCommandOptionActionSheet, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((choices) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Item(choices) {
   let index;
   let item;
-  let obj2;
   let onChoiceSelect;
   const tmp = index;
   let obj = index(onChoiceSelect[13]);
@@ -746,35 +744,31 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((choices) => {
           if (cResult[15] === tmp8) {
             tmp13 = cResult[16];
           }
-          tmp(tmp2[22]);
-          class A {
-            constructor(label) {
-              let items;
+          const str = tmp(tmp2[22]);
+          const match = str.match(item);
+          let obj2 = { type: null };
+          class E {
+            constructor(children) {
               let obj2;
-              let closure_0 = label;
               let obj = {
-                label: closure_1_10(index(onChoiceSelect[21]).Text, obj2),
+                label: closure_1_9(index(onChoiceSelect[21]).Text, obj2),
                 onPress() {
                   if (onChoiceSelect != null) {
-                    const obj = { name: null, value: null, displayName: null };
-                    ({ label: obj.name, label: obj.value, label: obj.displayName } = label);
-                    tmp(obj);
+                    tmp(children.choice);
                   }
-                  const obj2 = ActionSheetActionCreatorsDefault;
-                  obj2.hideActionSheet();
+                  const obj = ActionSheetActionCreatorsDefault;
+                  obj.hideActionSheet();
                 }
               };
-              obj2 = { lineClamp: 1, variant: "text-md/normal", color: "mobile-text-heading-primary", children: items };
-              items = ["\"", label.label, "\""];
+              obj2 = { lineClamp: 1, variant: "text-md/normal", color: "mobile-text-heading-primary", children: children.choice.displayName };
               return closure_1_9(closure_5, obj);
             }
           }
-          let obj3 = { type: AutoCompleteResultTypes.CHOICE };
-          let obj4 = { type: AutoCompleteResultTypes.LABEL };
-          const obj5 = { type: AutoCompleteResultTypes.CHOICE_LOADING };
-          const withResult = obj2.with(obj3, tmp11);
-          const withResult1 = withResult.with(obj4, tmp12);
-          const withResult2 = withResult1.with(obj5, tmp13);
+          let obj3 = { type: AutoCompleteResultTypes.LABEL };
+          let obj4 = { type: AutoCompleteResultTypes.CHOICE_LOADING };
+          const withResult = match.with(obj2, tmp11);
+          const withResult1 = withResult.with(obj3, tmp12);
+          const withResult2 = withResult1.with(obj4, tmp13);
           const exhaustiveResult = withResult2.exhaustive();
           cResult[3] = tmp9;
           cResult[4] = item;
@@ -783,94 +777,119 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((choices) => {
           cResult[7] = exhaustiveResult;
           tmp10 = exhaustiveResult;
         }
-        class A {
-          constructor(label) {
-            let items;
+        const fn2 = function v() {
+          let items;
+          let obj2;
+          let obj3;
+          const obj = { label: React4(View, obj2) };
+          obj2 = { style: closure_3.commandChoiceLoadingContainer, children: React4(View, obj3) };
+          obj3 = { style: items };
+          items = [closure_3.commandChoiceLoadingItem, ];
+          const obj4 = { width };
+          items[1] = obj4;
+          return React4(closure_5, obj);
+        };
+        class E {
+          constructor(children) {
             let obj2;
-            let closure_0 = label;
             let obj = {
-              label: closure_1_10(index(onChoiceSelect[21]).Text, obj2),
+              label: closure_1_9(index(onChoiceSelect[21]).Text, obj2),
               onPress() {
                 if (onChoiceSelect != null) {
-                  const obj = { name: null, value: null, displayName: null };
-                  ({ label: obj.name, label: obj.value, label: obj.displayName } = label);
-                  tmp(obj);
+                  tmp(children.choice);
                 }
-                const obj2 = ActionSheetActionCreatorsDefault;
-                obj2.hideActionSheet();
+                const obj = ActionSheetActionCreatorsDefault;
+                obj.hideActionSheet();
               }
             };
-            obj2 = { lineClamp: 1, variant: "text-md/normal", color: "mobile-text-heading-primary", children: items };
-            items = ["\"", label.label, "\""];
+            obj2 = { lineClamp: 1, variant: "text-md/normal", color: "mobile-text-heading-primary", children: children.choice.displayName };
             return closure_1_9(closure_5, obj);
           }
         }
-        cResult[14] = tmp9;
         cResult[15] = tmp8;
-        cResult[16] = tmp14;
-        tmp13 = tmp14;
+        cResult[16] = fn2;
+        tmp13 = fn2;
       }
-      class A {
-        constructor(label) {
-          let items;
+      const fn = function f(label) {
+        let items;
+        let obj2;
+        let closure_0 = label;
+        let obj = {
+          label: closure_1_10(index(onChoiceSelect[21]).Text, obj2),
+          onPress() {
+            if (onChoiceSelect != null) {
+              const obj = { name: null, value: null, displayName: null };
+              ({ label: obj.name, label: obj.value, label: obj.displayName } = label);
+              tmp(obj);
+            }
+            const obj2 = ActionSheetActionCreatorsDefault;
+            obj2.hideActionSheet();
+          }
+        };
+        obj2 = { lineClamp: 1, variant: "text-md/normal", color: "mobile-text-heading-primary", children: items };
+        items = ["\"", label.label, "\""];
+        return closure_1_9(closure_5, obj);
+      };
+      class E {
+        constructor(children) {
           let obj2;
-          let closure_0 = label;
           let obj = {
-            label: closure_1_10(index(onChoiceSelect[21]).Text, obj2),
+            label: closure_1_9(index(onChoiceSelect[21]).Text, obj2),
             onPress() {
               if (onChoiceSelect != null) {
-                const obj = { name: null, value: null, displayName: null };
-                ({ label: obj.name, label: obj.value, label: obj.displayName } = label);
-                tmp(obj);
+                tmp(children.choice);
               }
-              const obj2 = ActionSheetActionCreatorsDefault;
-              obj2.hideActionSheet();
+              const obj = ActionSheetActionCreatorsDefault;
+              obj.hideActionSheet();
             }
           };
-          obj2 = { lineClamp: 1, variant: "text-md/normal", color: "mobile-text-heading-primary", children: items };
-          items = ["\"", label.label, "\""];
+          obj2 = { lineClamp: 1, variant: "text-md/normal", color: "mobile-text-heading-primary", children: children.choice.displayName };
           return closure_1_9(closure_5, obj);
         }
       }
-      cResult[11] = tmp9;
       cResult[12] = onChoiceSelect;
-      cResult[13] = A;
-      tmp12 = A;
+      cResult[13] = fn;
+      tmp12 = fn;
     }
-    const fn2 = function f(children) {
-      let obj2;
-      let obj = {
-        label: closure_1_9(index(onChoiceSelect[21]).Text, obj2),
-        onPress() {
-          if (onChoiceSelect != null) {
-            tmp(children.choice);
+    class E {
+      constructor(children) {
+        let obj2;
+        let obj = {
+          label: closure_1_9(index(onChoiceSelect[21]).Text, obj2),
+          onPress() {
+            if (onChoiceSelect != null) {
+              tmp(children.choice);
+            }
+            const obj = ActionSheetActionCreatorsDefault;
+            obj.hideActionSheet();
           }
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet();
-        }
-      };
-      obj2 = { lineClamp: 1, variant: "text-md/normal", color: "mobile-text-heading-primary", children: children.choice.displayName };
-      return closure_1_9(closure_5, obj);
-    };
+        };
+        obj2 = { lineClamp: 1, variant: "text-md/normal", color: "mobile-text-heading-primary", children: children.choice.displayName };
+        return closure_1_9(closure_5, obj);
+      }
+    }
     cResult[8] = tmp9;
     cResult[9] = onChoiceSelect;
-    cResult[10] = fn2;
-    tmp11 = fn2;
+    cResult[10] = E;
+    tmp11 = E;
   }
-  const fn = function y(arg0) {
-    let label;
-    let onPress;
-    ({ label, onPress } = arg0);
-    const obj = { label, onPress, start: 0 === index, end: index === choices.length - 1 };
-    return React4(TableRow.TableRow, obj);
-  };
+  class ListItem {
+    constructor(arg0) {
+      let label;
+      let onPress;
+      ({ label, onPress } = arg0);
+      const obj = { label, onPress, start: 0 === index, end: index === choices.length - 1 };
+      return React4(TableRow.TableRow, obj);
+    }
+  }
   cResult[0] = choices;
   cResult[1] = index;
-  cResult[2] = fn;
-  tmp9 = fn;
-}) : ((arg0) => {
+  cResult[2] = ListItem;
+  tmp9 = ListItem;
+}) : (function Item(arg0) {
   let item;
   let length;
+  let require;
   let width;
   ({ item, index: require, choices: importDefault, onChoiceSelect: dependencyMap } = arg0);
   let closure_3;
@@ -879,7 +898,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((choices) => {
     let label;
     let onPress;
     ({ label, onPress } = arg0);
-    const obj = { label, onPress, start: 0 === require, end: require === importDefault.length - 1 };
+    const obj = { label, onPress, start: 0 === _require, end: _require === importDefault.length - 1 };
     return React4(TableRow.TableRow, obj);
   }
   const tmp = dependencyMap;
@@ -902,7 +921,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((choices) => {
   const withResult = match.with(obj, (children) => {
     let obj2;
     let obj = {
-      label: closure_1_9(Text_Text.Text, obj2),
+      label: closure_1_9(require("Text/Text").Text, obj2),
       onPress() {
         if (dependencyMap != null) {
           tmp(children.choice);
@@ -917,9 +936,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((choices) => {
   const withResult1 = withResult.with(obj2, (label) => {
     let items;
     let obj2;
-    require = label;
+    const require = label;
     let obj = {
-      label: closure_1_10(Text_Text.Text, obj2),
+      label: closure_1_10(require("Text/Text").Text, obj2),
       onPress() {
         if (dependencyMap != null) {
           const obj = { name: null, value: null, displayName: null };
@@ -949,7 +968,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((choices) => {
   return withResult2.exhaustive();
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutocompleteFailedEmptyState() {
   let first;
   let tmp7;
   const obj = react2;
@@ -966,7 +985,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] !== tmp4.emptyState) {
     const obj2 = { style: emptyState, lightSource: AssetRegistryDefault, darkSource: AssetRegistryDefault, title: first };
-    const EmptyState = tmp(1188).EmptyState;
+    const EmptyState = tmp(1200).EmptyState;
     const tmp10 = React4(EmptyState, obj2);
     cResult[1] = tmp4.emptyState;
     cResult[2] = tmp10;
@@ -975,7 +994,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[2];
   }
   return tmp7;
-}) : (() => {
+}) : (function AutocompleteFailedEmptyState() {
   let intl;
   const obj = { style: closure_12().emptyState, lightSource: AssetRegistryDefault, darkSource: AssetRegistryDefault, title: intl.string(intl2.t.rTAbPn) };
   const EmptyState = native.EmptyState;

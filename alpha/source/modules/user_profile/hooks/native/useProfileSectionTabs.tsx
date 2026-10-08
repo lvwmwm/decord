@@ -1,20 +1,18 @@
-// Module ID: 12945
-// Function ID: 12946
+// Module ID: 13224
+// Function ID: 13225
 // Name: useProfileSectionTabs
-// Dependencies: [32, 19, 7865, 558, 576, 2]
+// Dependencies: [32, 19, 8283, 558, 576, 2]
 // Exports: getProfileTabSectionIndex, useProfileTabIndices
 
-// Module 12945 (useProfileSectionTabs)
-import Constants from "Constants" /* 7865 */;
+// Module 13224 (useProfileSectionTabs)
+import Constants from "Constants" /* 8283 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let activeIndex, initialUserProfileSection;
-
 const UserProfileSections = Constants.UserProfileSections;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialUserProfileSection) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileSectionTabs(initialUserProfileSection) {
   let closure_5;
   let tmp2;
   let tmp4;
@@ -28,111 +26,136 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialUserProfileSe
   const activityTabIndex = initialUserProfileSection.activityTabIndex;
   const onTabChange = initialUserProfileSection.onTabChange;
   if (cResult[0] !== initialUserProfileSection) {
-    class T {
-      constructor() {
-        tmp = initialUserProfileSection;
-        tmp2 = UserProfileSections;
-        if (UserProfileSections.WISHLIST === initialUserProfileSection) {
-          return tmp2.WISHLIST;
-        } else if (tmp2.WIDGETS === tmp) {
-          return tmp2.WIDGETS;
-        } else {
-          return tmp2.ACTIVITY === tmp ? tmp2.ACTIVITY : tmp2.MAIN;
-        }
+    const fn = function s() {
+      if (UserProfileSections.WISHLIST === initialUserProfileSection) {
+        return UserProfileSections.WISHLIST;
+      } else if (UserProfileSections.WIDGETS === initialUserProfileSection) {
+        return UserProfileSections.WIDGETS;
+      } else {
+        return UserProfileSections.ACTIVITY === initialUserProfileSection ? UserProfileSections.ACTIVITY : UserProfileSections.MAIN;
       }
-    }
+    };
     cResult[0] = initialUserProfileSection;
-    cResult[1] = T;
-    tmp2 = T;
+    cResult[1] = fn;
+    tmp2 = fn;
   } else {
-    class T {
-      constructor() {
-        tmp = initialUserProfileSection;
-        tmp2 = UserProfileSections;
-        if (UserProfileSections.WISHLIST === initialUserProfileSection) {
-          return tmp2.WISHLIST;
-        } else if (tmp2.WIDGETS === tmp) {
-          return tmp2.WIDGETS;
-        } else {
-          return tmp2.ACTIVITY === tmp ? tmp2.ACTIVITY : tmp2.MAIN;
-        }
-      }
-    }
+    tmp2 = cResult[1];
   }
   [tmp4, tmp5] = boardTabIndex(activityTabIndex.useState(tmp2), 2);
   const tmp3 = boardTabIndex(activityTabIndex.useState(tmp2), 2);
   if (cResult[2] === tmp4) {
-    class T {
-      constructor() {
-        tmp = initialUserProfileSection;
-        tmp2 = UserProfileSections;
-        if (UserProfileSections.WISHLIST === initialUserProfileSection) {
-          return tmp2.WISHLIST;
-        } else if (tmp2.WIDGETS === tmp) {
-          return tmp2.WIDGETS;
-        } else {
-          return tmp2.ACTIVITY === tmp ? tmp2.ACTIVITY : tmp2.MAIN;
+    if (cResult[3] === activityTabIndex) {
+      if (cResult[4] === boardTabIndex) {
+        let tmp6;
+        if (cResult[5] === wishlistTabIndex) {
+          tmp6 = cResult[6];
         }
+        if (tmp6 < 0) {
+          tmp5(onTabChange.MAIN);
+        }
+        let num5 = 0;
+        if (tmp6 >= 0) {
+          num5 = tmp6;
+        }
+        if (cResult[7] === activityTabIndex) {
+          if (cResult[8] === boardTabIndex) {
+            if (cResult[9] === onTabChange) {
+              let tmp10;
+              let tmp11;
+              if (cResult[10] === wishlistTabIndex) {
+                tmp10 = cResult[11];
+              }
+              if (cResult[12] !== num5) {
+                const fn2 = function w(activeIndex) {
+                  activeIndex = activeIndex.activeIndex;
+                  if (activeIndex.get() !== num5) {
+                    activeIndex.setActiveIndex(tmp, false, true);
+                  }
+                };
+                cResult[12] = num5;
+                cResult[13] = fn2;
+                tmp11 = fn2;
+              } else {
+                tmp11 = cResult[13];
+              }
+              if (cResult[14] === tmp4) {
+                if (cResult[15] === tmp10) {
+                  if (cResult[16] === tmp11) {
+                    let tmp12;
+                    if (cResult[17] === num5) {
+                      tmp12 = cResult[18];
+                    }
+                    return tmp12;
+                  }
+                }
+              }
+              const obj2 = { activeProfileTabSection: tmp4, setActiveProfileTabSection: tmp5, handleTabChange: tmp10, restoreActiveIndex: null, activeProfileTabSectionIndex: num5 };
+              class C {
+                constructor(arg0) {
+                  let MAIN;
+                  let tmp5;
+                  if (wishlistTabIndex === arg0) {
+                    MAIN = UserProfileSections.WISHLIST;
+                  } else if (boardTabIndex === arg0) {
+                    MAIN = UserProfileSections.WIDGETS;
+                    tmp5 = UserProfileSections;
+                  } else if (activityTabIndex === arg0) {
+                    MAIN = UserProfileSections.ACTIVITY;
+                  } else {
+                    MAIN = UserProfileSections.MAIN;
+                  }
+                  tmp5(MAIN);
+                  if (onTabChange != null) {
+                    onTabChange(MAIN);
+                  }
+                }
+              }
+              cResult[14] = tmp4;
+              cResult[15] = tmp10;
+              cResult[16] = tmp11;
+              cResult[17] = num5;
+              cResult[18] = obj2;
+              tmp12 = obj2;
+            }
+          }
+        }
+        class C {
+          constructor(arg0) {
+            let MAIN;
+            let tmp5;
+            if (wishlistTabIndex === arg0) {
+              MAIN = UserProfileSections.WISHLIST;
+            } else if (boardTabIndex === arg0) {
+              MAIN = UserProfileSections.WIDGETS;
+              tmp5 = UserProfileSections;
+            } else if (activityTabIndex === arg0) {
+              MAIN = UserProfileSections.ACTIVITY;
+            } else {
+              MAIN = UserProfileSections.MAIN;
+            }
+            tmp5(MAIN);
+            if (onTabChange != null) {
+              onTabChange(MAIN);
+            }
+          }
+        }
+        cResult[7] = activityTabIndex;
+        cResult[8] = boardTabIndex;
+        cResult[9] = onTabChange;
+        cResult[10] = wishlistTabIndex;
+        cResult[11] = C;
+        tmp10 = C;
       }
     }
   }
-  const tmp7 = wishlistTabIndex;
+  let num3 = wishlistTabIndex;
   if (onTabChange.WISHLIST !== tmp4) {
-    class T {
-      constructor() {
-        tmp = initialUserProfileSection;
-        tmp2 = UserProfileSections;
-        if (UserProfileSections.WISHLIST === initialUserProfileSection) {
-          return tmp2.WISHLIST;
-        } else if (tmp2.WIDGETS === tmp) {
-          return tmp2.WIDGETS;
-        } else {
-          return tmp2.ACTIVITY === tmp ? tmp2.ACTIVITY : tmp2.MAIN;
-        }
-      }
-    }
+    num3 = boardTabIndex;
     if (onTabChange.WIDGETS !== tmp4) {
-      class T {
-        constructor() {
-          tmp = initialUserProfileSection;
-          tmp2 = UserProfileSections;
-          if (UserProfileSections.WISHLIST === initialUserProfileSection) {
-            return tmp2.WISHLIST;
-          } else if (tmp2.WIDGETS === tmp) {
-            return tmp2.WIDGETS;
-          } else {
-            return tmp2.ACTIVITY === tmp ? tmp2.ACTIVITY : tmp2.MAIN;
-          }
-        }
-      }
+      num3 = activityTabIndex;
       if (onTabChange.ACTIVITY !== tmp4) {
-        class T {
-          constructor() {
-            tmp = initialUserProfileSection;
-            tmp2 = UserProfileSections;
-            if (UserProfileSections.WISHLIST === initialUserProfileSection) {
-              return tmp2.WISHLIST;
-            } else if (tmp2.WIDGETS === tmp) {
-              return tmp2.WIDGETS;
-            } else {
-              return tmp2.ACTIVITY === tmp ? tmp2.ACTIVITY : tmp2.MAIN;
-            }
-          }
-        }
         if (onTabChange.MAIN === tmp4) {
-          class T {
-            constructor() {
-              tmp = initialUserProfileSection;
-              tmp2 = UserProfileSections;
-              if (UserProfileSections.WISHLIST === initialUserProfileSection) {
-                return tmp2.WISHLIST;
-              } else if (tmp2.WIDGETS === tmp) {
-                return tmp2.WIDGETS;
-              } else {
-                return tmp2.ACTIVITY === tmp ? tmp2.ACTIVITY : tmp2.MAIN;
-              }
-            }
-          }
+          num3 = 0;
         }
       }
     }
@@ -141,8 +164,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialUserProfileSe
   cResult[3] = activityTabIndex;
   cResult[4] = boardTabIndex;
   cResult[5] = wishlistTabIndex;
-  cResult[6] = tmp7;
-}) : ((boardTabIndex) => {
+  cResult[6] = num3;
+  tmp6 = num3;
+}) : (function useProfileSectionTabs(boardTabIndex) {
   let _undefined;
   let tmp2;
   let tmp3;

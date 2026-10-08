@@ -1,26 +1,26 @@
-// Module ID: 6788
-// Function ID: 6789
+// Module ID: 6963
+// Function ID: 6964
 // Name: ForumTagHooks
-// Dependencies: [19, 2051, 4515, 1096, 558, 576, 504, 1375, 6789, 2]
+// Dependencies: [19, 2063, 4707, 1096, 558, 576, 504, 1387, 6964, 2]
 
-// Module 6788 (ForumTagHooks)
+// Module 6963 (ForumTagHooks)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1096 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import ReportToModUtils from "ReportToModUtils" /* 6789 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import ReportToModUtils from "ReportToModUtils" /* 6964 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, parent_id;
+let _require, dependencyMap;
 
 let react = react_mod;
 const Permissions = Constants.Permissions;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((parent_id) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvailableTags(parent_id) {
   let first;
   let tmp7;
   let tmp8;
@@ -39,7 +39,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((parent_id) => {
     first = cResult[0];
   }
   if (cResult[1] !== parent_id) {
-    const fn = function s() {
+    const fn = function l() {
       const channel = ChannelStore.getChannel(parent_id);
       let availableTags;
       if (channel != null) {
@@ -67,7 +67,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((parent_id) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresObject(first, tmp7, tmp8);
-}) : ((parent_id) => {
+}) : (function useAvailableTags(parent_id) {
   parent_id = undefined;
   if (parent_id != null) {
     parent_id = parent_id.parent_id;
@@ -95,7 +95,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((parent_id) => {
 let closure_6 = tmp2;
 let closure_7 = [];
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((appliedTags) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppliedTags(appliedTags) {
   const obj = react2;
   const cResult = obj.c(3);
   const tmp4 = closure_6(appliedTags);
@@ -113,7 +113,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((appliedTags) => {
     if (appliedTags != null) {
       const mapped = appliedTags.map((item) => closure_0[item]);
       if (mapped != null) {
-        found = mapped.filter(tmp(1375).isNotNullish);
+        found = mapped.filter(tmp(1387).isNotNullish);
       }
     }
   }
@@ -133,7 +133,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((appliedTags) => {
   cResult[1] = appliedTags;
   cResult[2] = result1;
   tmp5 = result1;
-}) : ((arg0) => {
+}) : (function useAppliedTags(arg0) {
   let closure_0 = arg0;
   const tmp = closure_6(arg0);
   let closure_1 = tmp;
@@ -166,7 +166,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((appliedTags) => {
 });
 let closure_8 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSomeAppliedTags(arg0, arg1) {
   const obj = react2;
   const cResult = obj.c(6);
   let num = 1;
@@ -199,7 +199,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[1] = num;
   cResult[2] = substr;
   tmp2 = substr;
-}) : ((arg0) => {
+}) : (function useSomeAppliedTags(arg0) {
   let num = arg1;
   if (arg1 === undefined) {
     num = 1;
@@ -213,7 +213,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((availableTags) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVisibleForumTags(availableTags) {
   let arr3;
   let first;
   let tmp11;
@@ -230,7 +230,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((availableTags) => {
     first = cResult[0];
   }
   if (cResult[1] !== availableTags) {
-    const fn = function l() {
+    const fn = function n() {
       return PermissionStore.can(Permissions.MANAGE_THREADS, availableTags);
     };
     cResult[1] = availableTags;
@@ -287,7 +287,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((availableTags) => {
     tmp16 = tmp17;
   }
   return tmp16;
-}) : ((availableTags) => {
+}) : (function useVisibleForumTags(availableTags) {
   let stateFromStores;
   _require = availableTags;
   let items = [PermissionStore];
@@ -318,7 +318,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((availableTags) => {
 });
 let closure_9 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((parent_id, arr) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVisibleAppliedForumTags(parent_id, arr) {
   let closure_1;
   let first;
   let tmp10;
@@ -327,7 +327,6 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((parent_id, arr) => {
   _require = parent_id;
   const obj = require("react");
   const cResult = obj.c(11);
-  const tmp = _require;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ChannelStore];
     cResult[0] = items;
@@ -345,7 +344,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((parent_id, arr) => {
     if (parent_id != null) {
       parent_id1 = parent_id.parent_id;
     }
-    const fn = function l() {
+    const fn = function n() {
       parent_id = undefined;
       const getChannel = ChannelStore.getChannel;
       if (parent_id != null) {
@@ -367,7 +366,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((parent_id, arr) => {
   } else {
     tmp10 = cResult[4];
   }
-  const tmpResult = tmp(504);
+  const tmpResult = require("get initialized");
   const tmp11 = closure_9(tmpResult.useStateFromStores(first, tmp8, tmp10));
   dependencyMap = tmp11;
   if (cResult[5] === arr) {
@@ -380,44 +379,31 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((parent_id, arr) => {
     }
   }
   if (cResult[9] !== tmp11) {
-    class T {
-      constructor(arg0) {
-        return closure_1.includes(arg0);
-      }
-    }
+    const fn2 = function f(arg0) {
+      return closure_1.includes(arg0);
+    };
     cResult[9] = tmp11;
-    cResult[10] = T;
-    tmp13 = T;
+    cResult[10] = fn2;
+    tmp13 = fn2;
   } else {
-    class T {
-      constructor(arg0) {
-        return closure_1.includes(arg0);
-      }
-    }
+    tmp13 = cResult[10];
   }
   const found = arr.filter(tmp13);
+  let result;
   if (parent_id != null) {
-    class T {
-      constructor(arg0) {
-        return closure_1.includes(arg0);
-      }
-    }
+    result = parent_id.isModeratorReportChannel();
   }
-  let result = found;
-  if (undefined) {
-    class T {
-      constructor(arg0) {
-        return closure_1.includes(arg0);
-      }
-    }
-    result = obj3.sortedModeratorReportTags(found);
+  let result1 = found;
+  if (result) {
+    const tmpResult2 = require("ReportToModUtils");
+    result1 = tmpResult2.sortedModeratorReportTags(found);
   }
   cResult[5] = arr;
   cResult[6] = parent_id;
   cResult[7] = tmp11;
-  cResult[8] = result;
-  tmp12 = result;
-}) : ((arg0, arg1) => {
+  cResult[8] = result1;
+  tmp12 = result1;
+}) : (function useVisibleAppliedForumTags(arg0, arg1) {
   let closure_1;
   let closure_2;
   _require = arg0;

@@ -1,26 +1,24 @@
-// Module ID: 13795
-// Function ID: 13796
+// Module ID: 14020
+// Function ID: 14021
 // Name: GameOrganizationInviteRow
-// Dependencies: [19, 7239, 21, 558, 576, 1188, 4728, 9331, 9569, 6000, 2]
+// Dependencies: [19, 7418, 21, 558, 576, 1200, 4922, 8740, 8743, 6184, 2]
 
-// Module 13795 (GameOrganizationInviteRow)
+// Module 14020 (GameOrganizationInviteRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import native from "native" /* 1188 */;
-import UserUtilsDefault from "UserUtils" /* 4728 */;
-import TableRow2 from "TableRow" /* 6000 */;
-import Constants from "Constants" /* 7239 */;
-import DiscordTagDefault from "DiscordTag" /* 9331 */;
-import InviteButtonDefault from "InviteButton" /* 9569 */;
+import native from "native" /* 1200 */;
+import UserUtilsDefault from "UserUtils" /* 4922 */;
+import TableRow2 from "TableRow" /* 6184 */;
+import Constants from "Constants" /* 7418 */;
+import DiscordTagDefault from "DiscordTag" /* 8740 */;
+import InviteButtonDefault from "InviteButton" /* 8743 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let user;
-
 const InviteSendStates = Constants.InviteSendStates;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganizationInviteRow(user) {
   let end;
   let onInvite;
   let sendState;
@@ -47,7 +45,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((u
       tmp5 = cResult[4];
     }
     if (cResult[5] !== tmp5) {
-      const Avatar = tmp(1188).Avatar;
+      const Avatar = tmp(1200).Avatar;
       const tmp9 = <Avatar source={tmp5} size={native.AvatarSizes.REFRESH_MEDIUM_32} />;
       cResult[5] = tmp5;
       cResult[6] = tmp9;
@@ -121,7 +119,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((u
   cResult[1] = user;
   cResult[2] = fn;
   tmp4 = fn;
-}) : ((user) => {
+}) : (function GameOrganizationInviteRow(user) {
   let end;
   let obj4;
   let onInvite;

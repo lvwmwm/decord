@@ -1,33 +1,34 @@
-// Module ID: 15036
-// Function ID: 15037
+// Module ID: 15298
+// Function ID: 15299
 // Name: NoFillQuestDock
-// Dependencies: [19, 17, 14912, 21, 4896, 558, 576, 14917, 10971, 5637, 5633, 2]
+// Dependencies: [19, 17, 15174, 21, 5090, 558, 576, 15179, 11164, 5984, 5980, 2]
 
-// Module 15036 (NoFillQuestDock)
+// Module 15298 (NoFillQuestDock)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import QuestDockConstants from "QuestDockConstants" /* 14912 */;
+import QuestDockConstants from "QuestDockConstants" /* 15174 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap;
+let _require;
 
-const View = react_native.View;
+let View = react_native.View;
 const QUEST_DOCK_COLLAPSED_HEIGHT = QuestDockConstants.QUEST_DOCK_COLLAPSED_HEIGHT;
 const jsx = Fragment.jsx;
 let obj = { placeholder: { position: "absolute", left: 0, right: 0, height: QUEST_DOCK_COLLAPSED_HEIGHT, opacity: 0 } };
 let closure_4 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  let decisionId;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoFillQuestDock(arg0) {
+  let closure_2;
+  let noFillDecision;
   let placeholder;
   let visible;
   let youBarTotalHeight;
   const obj = require("react");
-  const cResult = obj.c(7);
-  ({ decisionId, visible } = arg0);
+  const cResult = obj.c(12);
+  ({ noFillDecision, visible } = arg0);
   const tmp4 = closure_4();
   _require = tmp4;
   let obj2 = require("useYouBarTotalHeight");
@@ -37,49 +38,86 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[1] === youBarTotalHeight) {
       tmp6 = cResult[2];
     }
-    if (cResult[3] === decisionId) {
-      if (cResult[4] === tmp6) {
-        let tmp7;
-        if (cResult[5] === visible) {
-          tmp7 = cResult[6];
-        }
-        return tmp7;
+    View = tmp6;
+    if (null == noFillDecision.adContentId) {
+      let tmp12;
+      if (cResult[3] !== tmp6) {
+        const tmp6Result = tmp6();
+        cResult[3] = tmp6;
+        cResult[4] = tmp6Result;
+        tmp12 = tmp6Result;
+      } else {
+        tmp12 = cResult[4];
       }
+      return tmp12;
+    } else {
+      const adContentId = noFillDecision.adContentId;
+      if (cResult[5] !== tmp6) {
+        class E {
+          constructor(arg0) {
+            return closure_2(arg0);
+          }
+        }
+        cResult[5] = tmp6;
+        cResult[6] = E;
+      } else {
+        class E {
+          constructor(arg0) {
+            return closure_2(arg0);
+          }
+        }
+      }
+      if (cResult[7] === noFillDecision) {
+        class E {
+          constructor(arg0) {
+            return closure_2(arg0);
+          }
+        }
+      }
+      const BillableAdPlacementImpressionTrackerNative = tmp(tmp2[8]).BillableAdPlacementImpressionTrackerNative;
+      const tmp11 = <BillableAdPlacementImpressionTrackerNative adContentId={adContentId} adCreativeType={require("AdCreativeType").AdCreativeType.NO_FILL} noFillDecision={noFillDecision} questContent={require("QuestTypes").QuestContent.QUEST_BAR_MOBILE} overrideVisibility={visible} sourceQuestContent={require("QuestTypes").QuestContent.QUEST_BAR_MOBILE}>{tmp8}</BillableAdPlacementImpressionTrackerNative>;
+      cResult[7] = noFillDecision;
+      cResult[8] = adContentId;
+      cResult[9] = tmp8;
+      cResult[10] = visible;
+      cResult[11] = tmp11;
     }
-    const BillableAdPlacementImpressionTrackerNative = tmp(tmp2[8]).BillableAdPlacementImpressionTrackerNative;
-    const tmp9 = <BillableAdPlacementImpressionTrackerNative adContentId={decisionId} adCreativeType={require("AdCreativeType").AdCreativeType.NO_FILL} questContent={require("QuestTypes").QuestContent.QUEST_BAR_MOBILE} overrideVisibility={visible} sourceQuestContent={require("QuestTypes").QuestContent.QUEST_BAR_MOBILE}>{tmp6}</BillableAdPlacementImpressionTrackerNative>;
-    cResult[3] = decisionId;
-    cResult[4] = tmp6;
-    cResult[5] = visible;
-    cResult[6] = tmp9;
-    tmp7 = tmp9;
   }
-  const fn = function l(ref) {
+  function renderPlaceholder(ref) {
     const items = [placeholder.placeholder, ];
     const obj2 = { bottom: youBarTotalHeight - 1 };
     items[1] = obj2;
     return <View ref={arg0} accessibilityElementsHidden importantForAccessibility="no-hide-descendants" pointerEvents="none" style={items} />;
-  };
+  }
   cResult[0] = tmp4.placeholder;
   cResult[1] = youBarTotalHeight;
-  cResult[2] = fn;
-  tmp6 = fn;
-}) : ((arg0) => {
-  let closure_1;
-  let decisionId;
+  cResult[2] = renderPlaceholder;
+  tmp6 = renderPlaceholder;
+}) : (function NoFillQuestDock(noFillDecision) {
   let placeholder;
-  let visible;
-  ({ decisionId, visible } = arg0);
-  _require = closure_4();
+  let tmp7;
+  noFillDecision = noFillDecision.noFillDecision;
+  let youBarTotalHeight;
+  const visible = noFillDecision.visible;
+  const tmp = closure_4();
+  _require = tmp;
   const obj = require("useYouBarTotalHeight");
-  dependencyMap = obj.useYouBarTotalHeight();
-  const BillableAdPlacementImpressionTrackerNative = require("QuestContentImpressionTracker").BillableAdPlacementImpressionTrackerNative;
-  return <BillableAdPlacementImpressionTrackerNative adContentId={decisionId} adCreativeType={require("AdCreativeType").AdCreativeType.NO_FILL} questContent={require("QuestTypes").QuestContent.QUEST_BAR_MOBILE} overrideVisibility={visible} sourceQuestContent={require("QuestTypes").QuestContent.QUEST_BAR_MOBILE}>{function children(ref) {
-    const items = [placeholder.placeholder, ];
-    const obj2 = { bottom: closure_1 - 1 };
-    items[1] = obj2;
-    return <View ref={arg0} accessibilityElementsHidden importantForAccessibility="no-hide-descendants" pointerEvents="none" style={items} />;
-  }}</BillableAdPlacementImpressionTrackerNative>;
+  youBarTotalHeight = obj.useYouBarTotalHeight();
+  if (null == noFillDecision.adContentId) {
+    let items = [tmp.placeholder, ];
+    const obj3 = { bottom: youBarTotalHeight - 1 };
+    items[1] = obj3;
+    tmp7 = <View ref="IconComponent" accessibilityElementsHidden="no-hide-descendants" importantForAccessibility="none" pointerEvents={null} style={items} />;
+  } else {
+    const BillableAdPlacementImpressionTrackerNative = tmp2(tmp3[8]).BillableAdPlacementImpressionTrackerNative;
+    tmp7 = <BillableAdPlacementImpressionTrackerNative adContentId={noFillDecision.adContentId} adCreativeType={require("AdCreativeType").AdCreativeType.NO_FILL} noFillDecision={noFillDecision} questContent={require("QuestTypes").QuestContent.QUEST_BAR_MOBILE} overrideVisibility={visible} sourceQuestContent={require("QuestTypes").QuestContent.QUEST_BAR_MOBILE}>{function children(ref) {
+      const items = [placeholder.placeholder, ];
+      const obj2 = { bottom: youBarTotalHeight - 1 };
+      items[1] = obj2;
+      return <View ref={arg0} accessibilityElementsHidden importantForAccessibility="no-hide-descendants" pointerEvents="none" style={items} />;
+    }}</BillableAdPlacementImpressionTrackerNative>;
+  }
+  return tmp7;
 });
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/NoFillQuestDock.tsx");
 

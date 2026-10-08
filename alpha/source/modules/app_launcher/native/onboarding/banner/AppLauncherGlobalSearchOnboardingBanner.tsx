@@ -1,21 +1,21 @@
-// Module ID: 11754
-// Function ID: 11755
+// Module ID: 11820
+// Function ID: 11821
 // Name: AppLauncherGlobalSearchOnboardingBanner
-// Dependencies: [19, 17, 1489, 2048, 21, 4896, 587, 558, 576, 5897, 1126, 9903, 2]
+// Dependencies: [19, 17, 1501, 2060, 21, 5090, 587, 558, 576, 8209, 1126, 9384, 2]
 
-// Module 11754 (AppLauncherGlobalSearchOnboardingBanner)
+// Module 11820 (AppLauncherGlobalSearchOnboardingBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1489 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import AppsIcon2 from "AppsIcon" /* 5897 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import AppsIcon2 from "AppsIcon" /* 8209 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let dependencyMap, markAsDismissed;
+let dependencyMap;
 
 let size;
 let size1;
@@ -29,7 +29,7 @@ size = { height: 40, width: 40, backgroundColor: nativeDefault.colors.BACKGROUND
 createStyles = createStyles.createStyles;
 size1 = { height: 24, width: 24, tintColor: nativeDefault.unsafe_rawColors.WHITE };
 let closure_8 = createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalSearchCoachmark(markAsDismissed) {
   let appsIconImage;
   let tmp = markAsDismissed;
   let obj = markAsDismissed(576);
@@ -74,13 +74,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
           tmp14 = cResult[8];
         }
         if (cResult[9] !== markAsDismissed) {
-          const fn3 = function w() {
+          const fn2 = function w() {
             const obj = { actionType: ContentDismissActionType.TAKE_ACTION };
             markAsDismissed(obj);
           };
           cResult[9] = markAsDismissed;
-          cResult[10] = fn3;
-          tmp17 = fn3;
+          cResult[10] = fn2;
+          tmp17 = fn2;
         } else {
           tmp17 = cResult[10];
         }
@@ -108,7 +108,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
               }
             }
           }
-          const tmp22 = jsx(tmp(9903).Coachmark, { renderImgComponent: tmp10, title: tmp13, description: tmp14, onDismiss: tmp17, targetMeasurements: tmp18, surfaceMeasurements: tmp19, position: "bottom" });
+          const tmp22 = jsx(tmp(9384).Coachmark, { renderImgComponent: tmp10, title: tmp13, description: tmp14, onDismiss: tmp17, targetMeasurements: tmp18, surfaceMeasurements: tmp19, position: "bottom" });
           cResult[16] = tmp10;
           cResult[17] = tmp17;
           cResult[18] = tmp18;
@@ -124,15 +124,15 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
       }
       return tmp11;
     }
-    const fn2 = function u() {
+    function appsIcon() {
       ({ style: appsIconImage.appsIconImage, color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE });
       const AppsIcon = AppsIcon2.AppsIcon;
       return <View style={closure_2.appsIcon}>{null}</View>;
-    };
+    }
     cResult[4] = tmp4.appsIcon;
     cResult[5] = tmp4.appsIconImage;
-    cResult[6] = fn2;
-    tmp10 = fn2;
+    cResult[6] = appsIcon;
+    tmp10 = appsIcon;
   }
   const fn = function h() {
     return () => {
@@ -150,7 +150,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
   cResult[3] = items;
   tmp7 = items;
   tmp6 = fn;
-}) : ((markAsDismissed) => {
+}) : (function GlobalSearchCoachmark(markAsDismissed) {
   let appsIconImage;
   markAsDismissed = markAsDismissed.markAsDismissed;
   const visible = markAsDismissed.visible;
@@ -167,7 +167,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
   }, items);
   let tmp3 = null;
   if (visible) {
-    const Coachmark = markAsDismissed(9903).Coachmark;
+    const Coachmark = markAsDismissed(9384).Coachmark;
     const intl = markAsDismissed(1126).intl;
     const intl2 = markAsDismissed(1126).intl;
     size = { x: 0, y: -40, width: diff, height: 40 };

@@ -1,19 +1,19 @@
-// Module ID: 10574
-// Function ID: 10575
+// Module ID: 10171
+// Function ID: 10172
 // Name: PremiumGiftBackgroundSelect
-// Dependencies: [32, 19, 17, 21, 4618, 4896, 587, 558, 576, 1484, 4897, 1188, 10575, 10443, 2]
+// Dependencies: [32, 19, 17, 21, 4810, 5090, 587, 558, 576, 1496, 5091, 1200, 10172, 10040, 2]
 
-// Module 10574 (PremiumGiftBackgroundSelect)
+// Module 10171 (PremiumGiftBackgroundSelect)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import timing from "timing" /* 4897 */;
-import NativeGiftContext from "NativeGiftContext" /* 10443 */;
+import timing from "timing" /* 5091 */;
+import NativeGiftContext from "NativeGiftContext" /* 10040 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import createStyles from "createStyles" /* 4896 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const native = tmp(1188);
+const native = tmp(1200);
 const ScrollView = react_native.ScrollView;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = ReanimatedRexport.createAnimatedComponent(ScrollView);
@@ -35,7 +35,7 @@ let closure_9 = createStyles.createStyles(obj);
 const __initData = { code: "function PremiumGiftBackgroundSelectTsx1(){const{STANDARD_EASING,withTiming,visibility}=this.__closure;const animationSettings={easing:STANDARD_EASING,duration:100};return{opacity:withTiming(visibility.get()?1:0,animationSettings)};}" };
 const __initData2 = { code: "function PremiumGiftBackgroundSelectTsx2(){const{STANDARD_EASING,withTiming,visibility}=this.__closure;const animationSettings={easing:STANDARD_EASING,duration:100};return{opacity:withTiming(visibility.get()?1:0,animationSettings)};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBackgroundSelect(arg0) {
   let closure_1;
   let first;
   let giftStyle;
@@ -90,7 +90,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp16 = cResult[6];
       }
       if (cResult[7] !== first) {
-        const fn3 = function x(arg0) {
+        const fn3 = function k(arg0) {
           if (null == first) {
             closure_1(arg0);
           }
@@ -181,7 +181,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = items3;
   tmp11 = items3;
   tmp10 = fn;
-}) : ((withConsistentHeight) => {
+}) : (function GiftBackgroundSelect(withConsistentHeight) {
   let closure_1;
   let first;
   let items2;
@@ -204,7 +204,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const result = sharedValue.set(null != first);
   }, items);
   let obj2 = first(sharedValue[4]);
-  class C {
+  class N {
     constructor() {
       let obj2;
       const withTiming = timing.withTiming;
@@ -218,11 +218,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return obj;
     }
   }
-  C.__closure = { STANDARD_EASING: first(sharedValue[11]).STANDARD_EASING, withTiming: first(sharedValue[10]).withTiming, visibility: sharedValue };
-  C.__workletHash = 8385596820679;
-  C.__initData = __initData2;
+  N.__closure = { STANDARD_EASING: first(sharedValue[11]).STANDARD_EASING, withTiming: first(sharedValue[10]).withTiming, visibility: sharedValue };
+  N.__workletHash = 8385596820679;
+  N.__initData = __initData2;
   ({ STANDARD_EASING: first(sharedValue[11]).STANDARD_EASING, withTiming: first(sharedValue[10]).withTiming, visibility: sharedValue });
-  const animatedStyle = obj2.useAnimatedStyle(C);
+  const animatedStyle = obj2.useAnimatedStyle(N);
   const items1 = [closure_5(require("PremiumGiftBackgroundAnimation"), { giftStyle, withConsistentHeight: flag }), ];
   const obj4 = {
     onContentSizeChange(arg0) {
@@ -255,7 +255,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_12 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftBackgroundSelect() {
   let giftStyle;
   let setGiftStyle;
   const obj = react2;
@@ -275,7 +275,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = setGiftStyle;
   cResult[2] = tmp4;
   tmp3 = tmp4;
-}) : (() => {
+}) : (function PremiumGiftBackgroundSelect() {
   const obj = NativeGiftContext;
   const nativeGiftContext = obj.useNativeGiftContext();
   const obj2 = { giftStyle: nativeGiftContext.giftStyle, setGiftStyle: nativeGiftContext.setGiftStyle };

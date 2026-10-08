@@ -1,10 +1,10 @@
-// Module ID: 5775
-// Function ID: 5776
+// Module ID: 5358
+// Function ID: 5359
 // Name: useAccessibilityViewIsModalToggle
-// Dependencies: [19, 558, 576, 5776, 2]
+// Dependencies: [19, 558, 576, 5359, 2]
 
-// Module 5775 (useAccessibilityViewIsModalToggle)
-import AccessibilityFocusLockManagerDefault from "AccessibilityFocusLockManager" /* 5776 */;
+// Module 5358 (useAccessibilityViewIsModalToggle)
+import AccessibilityFocusLockManagerDefault from "AccessibilityFocusLockManager" /* 5359 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -12,7 +12,7 @@ import size from "module_2" /* 2 */;
 let dependencyMap;
 
 let react = react_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccessibilityViewIsModalToggle(arg0) {
   let accessibilityViewIsModal;
   let closure_3;
   let nativeID;
@@ -32,7 +32,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     react = tmp3;
     if (cResult[3] !== tmp3) {
-      const fn2 = function b() {
+      const fn2 = function v() {
         closure_3();
         return () => {
           closure_1_3(false);
@@ -50,7 +50,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const effect = obj2.useEffect(tmp4, tmp5);
   }
-  const fn = function t(arg0) {
+  const fn = function l(arg0) {
     let tmp = arg0;
     if (undefined === arg0) {
       tmp = closure_1;
@@ -82,7 +82,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = nativeID;
   cResult[2] = fn;
   tmp3 = fn;
-}) : ((accessibilityViewIsModal) => {
+}) : (function useAccessibilityViewIsModalToggle(accessibilityViewIsModal) {
   let flag = accessibilityViewIsModal.accessibilityViewIsModal;
   if (flag === undefined) {
     flag = false;

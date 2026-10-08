@@ -1,12 +1,12 @@
-// Module ID: 10656
-// Function ID: 10657
+// Module ID: 10256
+// Function ID: 10257
 // Name: useActiveLeaderboardWinnerData
-// Dependencies: [2112, 1102, 558, 576, 504, 2]
+// Dependencies: [2124, 1102, 558, 576, 504, 2]
 // Exports: getActiveLeaderboardWinnerData
 
-// Module 10656 (useActiveLeaderboardWinnerData)
+// Module 10256 (useActiveLeaderboardWinnerData)
 import DurationsDefault from "Durations" /* 1102 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 let closure_3 = 14 * DurationsDefault.Millis.DAY;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActiveLeaderboardWinnerData(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -78,7 +78,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = items1;
   tmp7 = items1;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useActiveLeaderboardWinnerData(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;

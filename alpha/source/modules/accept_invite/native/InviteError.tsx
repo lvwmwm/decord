@@ -1,27 +1,27 @@
-// Module ID: 12403
-// Function ID: 12404
+// Module ID: 12499
+// Function ID: 12500
 // Name: InviteError
-// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 4735, 4797, 12404, 12405, 12406, 1126, 5601, 4892, 1402, 1188, 12407, 5978, 2115, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 587, 558, 576, 4929, 4991, 12500, 12501, 12502, 1126, 5375, 5086, 1414, 1200, 12503, 6161, 2127, 2]
 
-// Module 12403 (InviteError)
+// Module 12499 (InviteError)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import shared from "shared" /* 4735 */;
-import useThemeDefault from "useTheme" /* 4797 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import GuildIcon from "GuildIcon" /* 5978 */;
-import InviteErrorUtils from "InviteErrorUtils" /* 12406 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12407 */;
+import native from "native" /* 1200 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
+import shared from "shared" /* 4929 */;
+import useThemeDefault from "useTheme" /* 4991 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import GuildIcon from "GuildIcon" /* 6161 */;
+import InviteErrorUtils from "InviteErrorUtils" /* 12502 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12503 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ createStyles = createStyles.createStyles;
 obj2 = { borderRadius: nativeDefault.radii.lg, opacity: 0.2, zIndex: -999 };
 let closure_11 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteErrorBase(inviteError) {
   let invite;
   let items;
   let onPress;
@@ -62,24 +62,24 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
   inviteError = inviteError.inviteError;
   const tmp4 = closure_11();
   if (cResult[0] !== onPressClose) {
-    const fn = function l() {
+    function handlePressClose() {
       onPressClose();
-    };
+    }
     cResult[0] = onPressClose;
-    cResult[1] = fn;
-    tmp5 = fn;
+    cResult[1] = handlePressClose;
+    tmp5 = handlePressClose;
   } else {
     tmp5 = cResult[1];
   }
   importDefault = tmp5;
-  const tmpResult = onPressClose(4735);
-  const tmp6Result = importDefault(tmpResult.isThemeDark(useThemeDefault()) ? 12404 : 12405);
+  const tmpResult = onPressClose(4929);
+  const tmp6Result = importDefault(tmpResult.isThemeDark(useThemeDefault()) ? 12500 : 12501);
   let code;
   if (inviteError != null) {
     code = inviteError.code;
   }
   if (cResult[2] !== code) {
-    const tmpResult2 = onPressClose(12406);
+    const tmpResult2 = onPressClose(12502);
     const descriptiveInviteError = tmpResult2.getDescriptiveInviteError(code);
     cResult[2] = code;
     cResult[3] = descriptiveInviteError;
@@ -99,16 +99,16 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
       tmp13 = cResult[6];
     }
     if (cResult[7] !== tmp5) {
-      const fn2 = function z() {
+      function renderButton() {
         let intl;
         const obj = { variant: "primary", size: "lg", text: intl.string(intl5.t.wcqOoF), onPress };
         const Button = components_Button_Button.Button;
         intl = intl5.intl;
         return metroImportAll(Button, obj);
-      };
+      }
       cResult[7] = tmp5;
-      cResult[8] = fn2;
-      tmp16 = fn2;
+      cResult[8] = renderButton;
+      tmp16 = renderButton;
     } else {
       tmp16 = cResult[8];
     }
@@ -183,14 +183,14 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
           tmp34 = tmp37;
         }
         const obj3 = { style: tmp4.expiredBody, variant: "text-sm/medium", color: "text-default", children: tmp13 };
-        const tmp31 = closure_8(onPressClose(4892).Text, obj3);
+        const tmp31 = closure_8(onPressClose(5086).Text, obj3);
         cResult[17] = tmp13;
         cResult[18] = tmp4.expiredBody;
         cResult[19] = tmp31;
         tmp29 = tmp31;
       }
       const obj4 = { style: tmp4.expiredTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp23 };
-      const tmp28 = closure_8(onPressClose(4892).Text, obj4);
+      const tmp28 = closure_8(onPressClose(5086).Text, obj4);
       cResult[14] = tmp4.expiredTitle;
       cResult[15] = tmp23;
       cResult[16] = tmp28;
@@ -224,7 +224,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
   cResult[5] = invite.state;
   cResult[6] = stringResult;
   tmp13 = stringResult;
-}) : ((invite) => {
+}) : (function InviteErrorBase(invite) {
   let closure_129_0;
   let intl4;
   let inviteError;
@@ -235,7 +235,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
   const tmp = closure_11();
   const obj = shared;
   let code;
-  const tmp4Result = importDefault(obj.isThemeDark(useThemeDefault()) ? 12404 : 12405);
+  const tmp4Result = importDefault(obj.isThemeDark(useThemeDefault()) ? 12500 : 12501);
   const getDescriptiveInviteError = InviteErrorUtils.getDescriptiveInviteError;
   InviteErrorUtils;
   if (inviteError != null) {
@@ -260,7 +260,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
   items[0] = metroImportAll(_false, obj2);
   const obj3 = { style: tmp.expiredTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: title };
   title = undefined;
-  const Text = tmp2(4892).Text;
+  const Text = tmp2(5086).Text;
   const tmp10 = authStore;
   const tmp11 = React4;
   if (descriptiveInviteError != null) {
@@ -278,14 +278,16 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
   const obj5 = { style: tmp.expiredBody, variant: "text-sm/medium", color: "text-default", children: stringResult };
   items[2] = metroImportAll(Text_Text.Text, obj5);
   const obj6 = { variant: "primary", size: "lg", text: intl4.string(intl5.t.wcqOoF), onPress: handlePressClose };
-  const Button = tmp2(5601).Button;
+  const Button = tmp2(5375).Button;
   intl4 = tmp2(1126).intl;
   items[3] = metroImportAll(Button, obj6);
   return tmp10(tmp11, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressClose) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteDisabledError(onPressClose) {
   let items;
+  let items1;
+  let obj9;
   let onPress;
   let tmp5;
   let obj = onPressClose(576);
@@ -294,12 +296,12 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressClose) 
   const invite = onPressClose.invite;
   const tmp4 = closure_11();
   if (cResult[0] !== onPressClose) {
-    const fn = function n() {
+    function handlePressClose() {
       onPressClose();
-    };
+    }
     cResult[0] = onPressClose;
-    cResult[1] = fn;
-    tmp5 = fn;
+    cResult[1] = handlePressClose;
+    tmp5 = handlePressClose;
   } else {
     tmp5 = cResult[1];
   }
@@ -310,104 +312,152 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressClose) 
   } else {
     if (cResult[2] === guild.icon) {
       let tmp6;
+      let tmp9;
+      let tmp10;
       if (cResult[3] === guild.id) {
         tmp6 = cResult[4];
       }
       if (cResult[5] !== tmp5) {
-        class T {
-          constructor() {
-            let intl;
-            const obj = { variant: "primary", size: "lg", text: intl.string(intl5.t["yD/zkn"]), onPress };
-            const Button = components_Button_Button.Button;
-            intl = intl5.intl;
-            return metroImportAll(Button, obj);
-          }
+        function renderButton() {
+          let intl;
+          const obj = { variant: "primary", size: "lg", text: intl.string(intl5.t["yD/zkn"]), onPress };
+          const Button = components_Button_Button.Button;
+          intl = intl5.intl;
+          return metroImportAll(Button, obj);
         }
         cResult[5] = tmp5;
-        cResult[6] = T;
+        cResult[6] = renderButton;
+        tmp9 = renderButton;
       } else {
-        class T {
-          constructor() {
-            let intl;
-            const obj = { variant: "primary", size: "lg", text: intl.string(intl5.t["yD/zkn"]), onPress };
-            const Button = components_Button_Button.Button;
-            intl = intl5.intl;
-            return metroImportAll(Button, obj);
-          }
-        }
+        tmp9 = cResult[6];
       }
       if (cResult[7] !== tmp4.disabledPauseIcon) {
-        class T {
-          constructor() {
-            let intl;
-            const obj = { variant: "primary", size: "lg", text: intl.string(intl5.t["yD/zkn"]), onPress };
-            const Button = components_Button_Button.Button;
-            intl = intl5.intl;
-            return metroImportAll(Button, obj);
-          }
-        }
         const obj4 = { style: tmp4.disabledPauseIcon, source: AssetRegistryDefault };
-        const Icon = tmp(1188).Icon;
+        const Icon = tmp(1200).Icon;
+        const tmp13 = closure_8(Icon, obj4);
         cResult[7] = tmp4.disabledPauseIcon;
-        cResult[8] = closure_8(Icon, obj4);
-        const tmp12 = closure_8(Icon, obj4);
+        cResult[8] = tmp13;
+        tmp10 = tmp13;
       } else {
-        class T {
-          constructor() {
-            let intl;
-            const obj = { variant: "primary", size: "lg", text: intl.string(intl5.t["yD/zkn"]), onPress };
-            const Button = components_Button_Button.Button;
-            intl = intl5.intl;
-            return metroImportAll(Button, obj);
-          }
-        }
+        tmp10 = cResult[8];
       }
       if (cResult[9] === tmp6) {
-        class T {
-          constructor() {
-            let intl;
-            const obj = { variant: "primary", size: "lg", text: intl.string(intl5.t["yD/zkn"]), onPress };
-            const Button = components_Button_Button.Button;
-            intl = intl5.intl;
-            return metroImportAll(Button, obj);
-          }
+        let tmp14;
+        if (cResult[10] === tmp4.guildIcon) {
+          tmp14 = cResult[11];
         }
         if (cResult[12] === tmp4.disabledView) {
-          class T {
-            constructor() {
-              let intl;
-              const obj = { variant: "primary", size: "lg", text: intl.string(intl5.t["yD/zkn"]), onPress };
-              const Button = components_Button_Button.Button;
-              intl = intl5.intl;
-              return metroImportAll(Button, obj);
+          if (cResult[13] === tmp10) {
+            let tmp19;
+            let tmp24;
+            let tmp26;
+            let tmp29;
+            if (cResult[14] === tmp14) {
+              tmp19 = cResult[15];
             }
+            const _Symbol = Symbol;
+            const disabledTitle = tmp4.disabledTitle;
+            if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
+              let intl = tmp(1126).intl;
+              const stringResult = intl.string(onPressClose(1126).t.jlLX2Z);
+              cResult[16] = stringResult;
+              tmp24 = stringResult;
+            } else {
+              tmp24 = cResult[16];
+            }
+            if (cResult[17] !== tmp4.disabledTitle) {
+              const obj5 = { style: disabledTitle, variant: "heading-xl/semibold", color: "text-feedback-critical", children: tmp24 };
+              const tmp28 = closure_8(onPressClose(5086).Text, obj5);
+              cResult[17] = tmp4.disabledTitle;
+              cResult[18] = tmp28;
+              tmp26 = tmp28;
+            } else {
+              tmp26 = cResult[18];
+            }
+            const _Symbol2 = Symbol;
+            const disabledBody = tmp4.disabledBody;
+            if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
+              const intl2 = tmp(1126).intl;
+              const format = intl2.format;
+              const obj6 = { articleLink: obj9.getArticleURL(constants2.INVITE_DISABLED) };
+              const RXSeLl = tmp(1126).t.RXSeLl;
+              obj9 = HelpdeskUtilsDefault;
+              const formatResult = format(RXSeLl, obj6);
+              cResult[19] = formatResult;
+              tmp29 = formatResult;
+            } else {
+              tmp29 = cResult[19];
+            }
+            if (cResult[20] === tmp4.disabledBody) {
+              let tmp33;
+              let tmp36;
+              if (cResult[21] === tmp29) {
+                tmp33 = cResult[22];
+              }
+              if (cResult[23] !== tmp9) {
+                const tmp9Result = tmp9();
+                cResult[23] = tmp9;
+                cResult[24] = tmp9Result;
+                tmp36 = tmp9Result;
+              } else {
+                tmp36 = cResult[24];
+              }
+              if (cResult[25] === tmp33) {
+                if (cResult[26] === tmp36) {
+                  if (cResult[27] === tmp19) {
+                    let tmp38;
+                    if (cResult[28] === tmp26) {
+                      tmp38 = cResult[29];
+                    }
+                    return tmp38;
+                  }
+                }
+              }
+              const obj7 = { children: items };
+              items = [tmp19, tmp26, tmp33, tmp36];
+              const tmp41 = closure_10(closure_9, obj7);
+              cResult[25] = tmp33;
+              cResult[26] = tmp36;
+              cResult[27] = tmp19;
+              cResult[28] = tmp26;
+              cResult[29] = tmp41;
+              tmp38 = tmp41;
+            }
+            const obj8 = { style: disabledBody, variant: "text-md/normal", color: "text-default", children: tmp29 };
+            const tmp35 = closure_8(onPressClose(5086).Text, obj8);
+            cResult[20] = tmp4.disabledBody;
+            cResult[21] = tmp29;
+            cResult[22] = tmp35;
+            tmp33 = tmp35;
           }
         }
-        const obj5 = { style: tmp4.disabledView, children: items };
-        items = [tmp10, tmp13];
+        const obj10 = { style: tmp4.disabledView, children: items1 };
+        items1 = [tmp10, tmp14];
+        const tmp22 = closure_10(closure_4, obj10);
         cResult[12] = tmp4.disabledView;
         cResult[13] = tmp10;
-        cResult[14] = tmp13;
-        cResult[15] = closure_10(closure_4, obj5);
-        const tmp21 = closure_10(closure_4, obj5);
+        cResult[14] = tmp14;
+        cResult[15] = tmp22;
+        tmp19 = tmp22;
       }
-      const obj6 = { style: tmp4.guildIcon, icon: tmp6, size: onPressClose(5978).GuildIconSizes.XLARGE };
-      const tmp16 = GuildIconDefault;
+      const obj11 = { style: tmp4.guildIcon, icon: tmp6, size: onPressClose(6161).GuildIconSizes.XLARGE };
+      const tmp17 = GuildIconDefault;
+      const tmp18 = closure_8(tmp17, obj11);
       cResult[9] = tmp6;
       cResult[10] = tmp4.guildIcon;
-      cResult[11] = closure_8(tmp16, obj6);
-      const tmp17 = closure_8(tmp16, obj6);
+      cResult[11] = tmp18;
+      tmp14 = tmp18;
     }
-    const obj10 = { id: null, icon: null, size: 64, canAnimate: false };
+    const obj19 = { id: null, icon: null, size: 64, canAnimate: false };
     ({ id: obj3.id, icon: obj3.icon } = guild);
     const obj2 = AvatarUtilsDefault;
-    const guildIconURL = obj2.getGuildIconURL(obj10);
+    const guildIconURL = obj2.getGuildIconURL(obj19);
     cResult[2] = guild.icon;
     cResult[3] = guild.id;
     cResult[4] = guildIconURL;
     tmp6 = guildIconURL;
   }
-}) : ((onPressClose) => {
+}) : (function InviteDisabledError(onPressClose) {
   let RXSeLl;
   let format;
   let intl;
@@ -459,7 +509,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressClose) 
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteError(inviteError) {
   let tmp2;
   const obj = react2;
   const cResult = obj.c(6);
@@ -501,7 +551,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) => {
     tmp2 = cResult[5];
   }
   return tmp2;
-}) : ((inviteError) => {
+}) : (function InviteError(inviteError) {
   let tmp7;
   inviteError = inviteError.inviteError;
   if (null == inviteError) {

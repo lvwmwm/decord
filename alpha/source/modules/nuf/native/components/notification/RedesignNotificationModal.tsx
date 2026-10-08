@@ -1,23 +1,23 @@
-// Module ID: 15960
-// Function ID: 15961
+// Module ID: 16220
+// Function ID: 16221
 // Name: RedesignNotificationModal
-// Dependencies: [19, 17, 12067, 12068, 1085, 21, 4896, 587, 558, 576, 12069, 1252, 12070, 15961, 1126, 12352, 2]
+// Dependencies: [19, 17, 12140, 12141, 1085, 21, 5090, 587, 558, 576, 12142, 1264, 12143, 16221, 1126, 12448, 2]
 
-// Module 15960 (RedesignNotificationModal)
+// Module 16220 (RedesignNotificationModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12067 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12069 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12070 */;
-import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 12352 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15961 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12140 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12142 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12143 */;
+import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 12448 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16221 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12068 */;
-import createStyles from "createStyles" /* 4896 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12141 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,12 +35,10 @@ let obj = { container: obj2, notificationHeaderImage: { position: "absolute", al
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: -nativeDefault.space.PX_48 };
 let closure_11 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignNotificationModal(onComplete) {
+  let obj3;
   let tmp12;
-  let tmp13;
   let tmp5;
-  let tmp6;
-  let tmp7;
   const tmp = onComplete;
   let obj = onComplete(576);
   const cResult = obj.c(15);
@@ -62,73 +60,132 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => {
     tmp5 = cResult[1];
   }
   if (cResult[2] !== onComplete) {
-    const fn2 = function p() {
-      const obj = AnalyticsUtilsDefault;
-      const obj2 = { action_type: metroImportAll.SKIP_STEP, action_location: metroImportDefault.ALERT };
-      obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
-      const obj3 = PushNotificationActionCreators;
-      const result = obj3.setPushPermissionState(PermissionStateType.PROMPT_SKIPPED);
-      const obj4 = NotificationPermissionUtil;
-      const result1 = obj4.enableProvisionalPushNotification();
-      if (onComplete != null) {
-        tmp4(true);
-      }
-    };
-    cResult[2] = onComplete;
-    cResult[3] = fn2;
-    tmp6 = fn2;
-  } else {
-    tmp6 = cResult[3];
-  }
-  const container = tmp4.container;
-  if (cResult[4] !== tmp4.notificationHeaderImage) {
-    const tmp11 = <closure_4 resizeMode="contain" style={tmp4.notificationHeaderImage} source={AssetRegistryDefault} />;
-    cResult[4] = tmp4.notificationHeaderImage;
-    cResult[5] = tmp11;
-    tmp7 = tmp11;
-  } else {
-    tmp7 = cResult[5];
-  }
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
-    const stringResult = intl.string(tmp(1126).t["3nx0b5"]);
-    const intl2 = tmp(1126).intl;
-    const stringResult1 = intl2.string(tmp(1126).t.Gf7U1T);
-    cResult[6] = stringResult;
-    cResult[7] = stringResult1;
-    tmp13 = stringResult1;
-    tmp12 = stringResult;
-  } else {
-    tmp12 = cResult[6];
-    tmp13 = cResult[7];
-  }
-  if (cResult[8] === tmp5) {
-    if (cResult[9] === tmp6) {
-      let tmp16;
-      if (cResult[10] === tmp7) {
-        tmp16 = cResult[11];
-      }
-      if (cResult[12] === tmp4.container) {
-        let tmp18;
-        if (cResult[13] === tmp16) {
-          tmp18 = cResult[14];
+    class I {
+      constructor() {
+        const obj = AnalyticsUtilsDefault;
+        const obj2 = { action_type: metroImportAll.SKIP_STEP, action_location: metroImportDefault.ALERT };
+        obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
+        const obj3 = PushNotificationActionCreators;
+        const result = obj3.setPushPermissionState(PermissionStateType.PROMPT_SKIPPED);
+        const obj4 = NotificationPermissionUtil;
+        const result1 = obj4.enableProvisionalPushNotification();
+        if (onComplete != null) {
+          tmp4(true);
         }
-        return tmp18;
       }
-      const tmp21 = <closure_5 style={container}>{tmp16}</closure_5>;
-      cResult[12] = tmp4.container;
-      cResult[13] = tmp16;
-      cResult[14] = tmp21;
-      tmp18 = tmp21;
+    }
+    cResult[2] = onComplete;
+    cResult[3] = I;
+  } else {
+    class I {
+      constructor() {
+        const obj = AnalyticsUtilsDefault;
+        const obj2 = { action_type: metroImportAll.SKIP_STEP, action_location: metroImportDefault.ALERT };
+        obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
+        const obj3 = PushNotificationActionCreators;
+        const result = obj3.setPushPermissionState(PermissionStateType.PROMPT_SKIPPED);
+        const obj4 = NotificationPermissionUtil;
+        const result1 = obj4.enableProvisionalPushNotification();
+        if (onComplete != null) {
+          tmp4(true);
+        }
+      }
     }
   }
-  const tmp17 = jsx(NewUserPermissionsOnboardingDefault, { onAllow: tmp5, onDontAllow: tmp6, header: tmp7, title: tmp12, subtitle: tmp13 });
+  if (cResult[4] !== tmp4.notificationHeaderImage) {
+    class I {
+      constructor() {
+        const obj = AnalyticsUtilsDefault;
+        const obj2 = { action_type: metroImportAll.SKIP_STEP, action_location: metroImportDefault.ALERT };
+        obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
+        const obj3 = PushNotificationActionCreators;
+        const result = obj3.setPushPermissionState(PermissionStateType.PROMPT_SKIPPED);
+        const obj4 = NotificationPermissionUtil;
+        const result1 = obj4.enableProvisionalPushNotification();
+        if (onComplete != null) {
+          tmp4(true);
+        }
+      }
+    }
+    const tmp10 = <closure_4 resizeMode="contain" style={tmp4.notificationHeaderImage} source={AssetRegistryDefault} />;
+    cResult[4] = tmp4.notificationHeaderImage;
+    cResult[5] = tmp10;
+  } else {
+    class I {
+      constructor() {
+        const obj = AnalyticsUtilsDefault;
+        const obj2 = { action_type: metroImportAll.SKIP_STEP, action_location: metroImportDefault.ALERT };
+        obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
+        const obj3 = PushNotificationActionCreators;
+        const result = obj3.setPushPermissionState(PermissionStateType.PROMPT_SKIPPED);
+        const obj4 = NotificationPermissionUtil;
+        const result1 = obj4.enableProvisionalPushNotification();
+        if (onComplete != null) {
+          tmp4(true);
+        }
+      }
+    }
+  }
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class I {
+      constructor() {
+        const obj = AnalyticsUtilsDefault;
+        const obj2 = { action_type: metroImportAll.SKIP_STEP, action_location: metroImportDefault.ALERT };
+        obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
+        const obj3 = PushNotificationActionCreators;
+        const result = obj3.setPushPermissionState(PermissionStateType.PROMPT_SKIPPED);
+        const obj4 = NotificationPermissionUtil;
+        const result1 = obj4.enableProvisionalPushNotification();
+        if (onComplete != null) {
+          tmp4(true);
+        }
+      }
+    }
+    const stringResult = obj3.string(tmp(1126).t["3nx0b5"]);
+    const intl = tmp(1126).intl;
+    const stringResult1 = intl.string(tmp(1126).t.Gf7U1T);
+    cResult[6] = stringResult;
+    cResult[7] = stringResult1;
+    tmp12 = stringResult1;
+  } else {
+    class I {
+      constructor() {
+        const obj = AnalyticsUtilsDefault;
+        const obj2 = { action_type: metroImportAll.SKIP_STEP, action_location: metroImportDefault.ALERT };
+        obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
+        const obj3 = PushNotificationActionCreators;
+        const result = obj3.setPushPermissionState(PermissionStateType.PROMPT_SKIPPED);
+        const obj4 = NotificationPermissionUtil;
+        const result1 = obj4.enableProvisionalPushNotification();
+        if (onComplete != null) {
+          tmp4(true);
+        }
+      }
+    }
+    tmp12 = cResult[7];
+  }
+  if (cResult[8] === tmp5) {
+    class I {
+      constructor() {
+        const obj = AnalyticsUtilsDefault;
+        const obj2 = { action_type: metroImportAll.SKIP_STEP, action_location: metroImportDefault.ALERT };
+        obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
+        const obj3 = PushNotificationActionCreators;
+        const result = obj3.setPushPermissionState(PermissionStateType.PROMPT_SKIPPED);
+        const obj4 = NotificationPermissionUtil;
+        const result1 = obj4.enableProvisionalPushNotification();
+        if (onComplete != null) {
+          tmp4(true);
+        }
+      }
+    }
+  }
   cResult[8] = tmp5;
   cResult[9] = tmp6;
   cResult[10] = tmp7;
-  cResult[11] = tmp17;
-  tmp16 = tmp17;
-}) : ((onComplete) => {
+  cResult[11] = jsx(NewUserPermissionsOnboardingDefault, { onAllow: tmp5, onDontAllow: tmp6, header: tmp7, title: tmp11, subtitle: tmp12 });
+  jsx(NewUserPermissionsOnboardingDefault, { onAllow: tmp5, onDontAllow: tmp6, header: tmp7, title: tmp11, subtitle: tmp12 });
+}) : (function RedesignNotificationModal(onComplete) {
   let intl;
   let intl2;
   onComplete = onComplete.onComplete;
@@ -164,7 +221,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => {
 });
 let closure_12 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignNotificationScreen(route) {
   let tmp2;
   const obj = react2;
   const cResult = obj.c(2);
@@ -178,7 +235,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
     tmp2 = cResult[1];
   }
   return tmp2;
-}) : ((onComplete) => <closure_12 onComplete={arg0.route.params.onComplete} />);
+}) : (function RedesignNotificationScreen(onComplete) {
+  return <closure_12 onComplete={arg0.route.params.onComplete} />;
+});
 let result = size.fileFinishedImporting("modules/nuf/native/components/notification/RedesignNotificationModal.tsx");
 
 export default tmp4;

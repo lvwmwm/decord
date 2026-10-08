@@ -1,12 +1,12 @@
-// Module ID: 6842
-// Function ID: 6843
+// Module ID: 5949
+// Function ID: 5950
 // Name: SpoilerChannelUtils
-// Dependencies: [2051, 6843, 558, 576, 504, 2]
+// Dependencies: [2063, 5950, 558, 576, 504, 2]
 // Exports: shouldShowSpoilerGateForChannelId
 
-// Module 6842 (SpoilerChannelUtils)
-import ChannelStore from "ChannelStore" /* 2051 */;
-import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 6843 */;
+// Module 5949 (SpoilerChannelUtils)
+import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 5950 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -56,7 +56,7 @@ function isChannelSpoilerGated(channel, ChannelSpoilerAgreeStore, ChannelStore) 
   return null != id1;
 }
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetSpoilerGatingChannelId(arg0) {
   let first;
   let spoilerChannel;
   let tmp7;
@@ -117,7 +117,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : ((arg0) => {
+}) : (function useGetSpoilerGatingChannelId(arg0) {
   let spoilerChannel;
   _require = arg0;
   const obj = require("get initialized");
@@ -157,7 +157,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsChannelSpoilerGated(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -189,7 +189,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : ((arg0) => {
+}) : (function useIsChannelSpoilerGated(arg0) {
   let closure_0;
   _require = arg0;
   const items = [ChannelSpoilerAgreeStore, ChannelStore];
@@ -198,7 +198,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj.useStateFromStores(items, () => isChannelSpoilerGated(closure_0, ChannelSpoilerAgreeStore, ChannelStore), items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowSpoilerGateForChannelId(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -230,7 +230,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : ((arg0) => {
+}) : (function useShouldShowSpoilerGateForChannelId(arg0) {
   let closure_0;
   _require = arg0;
   const items = [ChannelStore, ChannelSpoilerAgreeStore];

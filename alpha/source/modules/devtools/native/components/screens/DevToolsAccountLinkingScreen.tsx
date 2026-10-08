@@ -1,21 +1,21 @@
-// Module ID: 15620
-// Function ID: 15621
+// Module ID: 15900
+// Function ID: 15901
 // Name: DevToolsAccountLinkingScreen
-// Dependencies: [32, 19, 17, 5124, 6609, 2074, 4705, 21, 4896, 587, 558, 576, 504, 6672, 1618, 6670, 6667, 6081, 6000, 4892, 6105, 5601, 2]
+// Dependencies: [32, 19, 17, 5436, 6786, 2086, 4899, 21, 5090, 587, 558, 576, 504, 6849, 1630, 6847, 6844, 6267, 6184, 5086, 6283, 5375, 6164, 2]
 
-// Module 15620 (DevToolsAccountLinkingScreen)
+// Module 15900 (DevToolsAccountLinkingScreen)
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6672 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6849 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStore from "ApplicationStore" /* 5124 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6609 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
+import ApplicationStore from "ApplicationStore" /* 5436 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6786 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,18 +24,18 @@ let _require, dependencyMap, importDefault;
 
 let closure_12;
 let hasOwnProperty;
-let map1;
-let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
 let obj4;
 let size;
 let tmp2;
-const useStartAuthorizeDefault = tmp2(6667);
-const useGetOrFetchApplicationsDefault = tmp2(6670);
-({ Image: hasOwnProperty, ScrollView: metroRequire, View: metroImportDefault } = react_native);
-({ jsx: closure_12, jsxs: map1 } = Fragment);
+let unpackModuleId;
+const FastImageDefault = tmp2(6164);
+const useStartAuthorizeDefault = tmp2(6844);
+const useGetOrFetchApplicationsDefault = tmp2(6847);
+({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
+({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, scrollContainer: obj3, buttonRow: obj4, rewardImage: size };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
@@ -43,9 +43,9 @@ createStyles = createStyles.createStyles;
 obj3 = { padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };
 obj4 = { gap: nativeDefault.space.PX_8 };
 size = { width: 64, height: 64, borderRadius: nativeDefault.radii.sm };
-let closure_14 = createStyles(obj);
+let closure_13 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDeauthorize(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -98,7 +98,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = null != stateFromStores;
   cResult[7] = obj2;
   tmp10 = obj2;
-}) : ((arg0) => {
+}) : (function useDeauthorize(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -117,7 +117,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAccountLinkingScreen() {
   let closure_1;
   let connectionApp;
   let debug;
@@ -143,14 +143,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp2 = stateFromStores;
   let obj = value(stateFromStores[11]);
   const cResult = obj.c(68);
-  const tmp4 = closure_14();
+  const tmp4 = closure_13();
   require("useSafeAreaInsets")();
   const tmp7 = getOrFetchApplication(startAuthorization.useState(""), 2);
   value = tmp7[0];
   importDefault = tmp9;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SelectedGuildStore];
-    const fn = function p() {
+    const fn = function u() {
       return guildId.getGuildId();
     };
     cResult[0] = items;
@@ -170,7 +170,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp14 = cResult[2];
   }
   if (cResult[3] !== stateFromStores) {
-    const fn2 = function k() {
+    const fn2 = function x() {
       return GuildStore.getGuild(stateFromStores);
     };
     cResult[3] = stateFromStores;
@@ -234,7 +234,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (getOrFetchApplication != null) {
       linkedGames1 = getOrFetchApplication.linkedGames;
     }
-    class P {
+    class B {
       constructor() {
         let application;
         let found;
@@ -252,8 +252,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     cResult[9] = linkedGames1;
-    cResult[10] = P;
-    tmp28 = P;
+    cResult[10] = B;
+    tmp28 = B;
   } else {
     tmp28 = cResult[10];
   }
@@ -261,7 +261,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const stateFromStoresArray = tmpResult6.useStateFromStoresArray(tmp24, tmp28);
   if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { debug: true };
-    class P {
+    class B {
       constructor() {
         let application;
         let found;
@@ -287,7 +287,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   ({ hasAlreadyLinked, debug, connectionApp } = tmp31);
   let id;
   const canStartAuthorization = tmp31.canStartAuthorization;
-  const tmp32 = closure_15;
+  const tmp32 = closure_14;
   if (connectionApp != null) {
     id = connectionApp.id;
   }
@@ -305,7 +305,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (cResult[13] === stateFromStoresArray) {
       tmp37 = cResult[14];
     }
-    class P {
+    class B {
       constructor() {
         let application;
         let found;
@@ -325,7 +325,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const sum = tmp41 + tmp5(tmp2[9]).space.PX_16;
     if (cResult[15] !== sum) {
       const obj3 = { paddingBottom: sum };
-      class P {
+      class B {
         constructor() {
           let application;
           let found;
@@ -352,7 +352,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       let str3;
       let tmp47;
       const TableRowGroup = tmp(tmp2[17]).TableRowGroup;
-      class P {
+      class B {
         constructor() {
           let application;
           let found;
@@ -395,12 +395,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             if (name === name.id) {
               tmpResult = tmp(tmp2(tmp3[19]).Text, { variant: "text-sm/semibold", children: "Selected" });
             }
-            return closure_1_12(TableRow, obj, name.id);
+            return closure_1_11(TableRow, obj, name.id);
           });
         } else {
-          mapped = closure_12(tmp(tmp2[18]).TableRow, { label: "No official games" });
+          mapped = closure_11(tmp(tmp2[18]).TableRow, { label: "No official games" });
         }
-        class P {
+        class B {
           constructor() {
             let application;
             let found;
@@ -418,7 +418,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
         }
       } else {
-        tmp47 = closure_12(tmp(tmp2[18]).TableRow, { label: "No guild selected" });
+        tmp47 = closure_11(tmp(tmp2[18]).TableRow, { label: "No guild selected" });
       }
       if (cResult[20] === TableRowGroup) {
         if (cResult[21] === combined) {
@@ -427,7 +427,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           let tmp61;
           let tmp65;
           const _Symbol = Symbol;
-          class P {
+          class B {
             constructor() {
               let application;
               let found;
@@ -446,7 +446,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
           if (tmp53 === Symbol.for("react.memo_cache_sentinel")) {
             const obj4 = { padding: require("native").space.PX_12 };
-            class P {
+            class B {
               constructor() {
                 let application;
                 let found;
@@ -469,7 +469,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             tmp54 = cResult[24];
           }
           if (cResult[25] !== value) {
-            class P {
+            class B {
               constructor() {
                 let application;
                 let found;
@@ -488,8 +488,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
             tmp58[0] = tmp54;
             const obj5 = { label: "Application ID", value, onChange: tmp7[1] };
-            tmp58[1] = closure_12(tmp(tmp2[20]).TextInput, obj5);
-            const tmp59 = closure_12(closure_7, tmp58);
+            tmp58[1] = closure_11(tmp(tmp2[20]).TextInput, obj5);
+            const tmp59 = closure_11(closure_6, tmp58);
             cResult[25] = value;
             cResult[26] = tmp59;
             tmp55 = tmp59;
@@ -504,7 +504,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const combined1 = "Name: " + str5;
           if (cResult[27] !== combined1) {
             const obj6 = { label: null };
-            class P {
+            class B {
               constructor() {
                 let application;
                 let found;
@@ -521,7 +521,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 return found;
               }
             }
-            const tmp63 = closure_12(tmp(tmp2[18]).TableRow, obj6);
+            const tmp63 = closure_11(tmp(tmp2[18]).TableRow, obj6);
             cResult[27] = combined1;
             cResult[28] = tmp63;
             tmp61 = tmp63;
@@ -532,7 +532,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const combined2 = "Linked Games: " + tmp37;
           if (cResult[29] !== combined2) {
             const obj7 = { label: null };
-            class P {
+            class B {
               constructor() {
                 let application;
                 let found;
@@ -549,7 +549,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 return found;
               }
             }
-            const tmp67 = closure_12(tmp(tmp2[18]).TableRow, obj7);
+            const tmp67 = closure_11(tmp(tmp2[18]).TableRow, obj7);
             cResult[29] = combined2;
             cResult[30] = tmp67;
             tmp65 = tmp67;
@@ -558,7 +558,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
           if (cResult[31] === tmp55) {
             if (cResult[32] === tmp61) {
-              class P {
+              class B {
                 constructor() {
                   let application;
                   let found;
@@ -580,7 +580,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 str9 = "Set";
               }
               if (cResult[35] === "text-feedback-critical") {
-                class P {
+                class B {
                   constructor() {
                     let application;
                     let found;
@@ -602,7 +602,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   str11 = "Yes";
                 }
                 if (cResult[38] === "text-muted") {
-                  class P {
+                  class B {
                     constructor() {
                       let application;
                       let found;
@@ -620,7 +620,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     }
                   }
                   if (cResult[43] === !canStartAuthorization) {
-                    class P {
+                    class B {
                       constructor() {
                         let application;
                         let found;
@@ -640,30 +640,30 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     const obj8 = { disabled: !canDeauthorize, onPress: deauthorize, variant: "critical-primary", text: "Deauthorize" };
                     cResult[46] = deauthorize;
                     cResult[47] = !canDeauthorize;
-                    cResult[48] = closure_12(tmp(tmp2[21]).Button, obj8);
-                    const tmp85 = closure_12(tmp(tmp2[21]).Button, obj8);
+                    cResult[48] = closure_11(tmp(tmp2[21]).Button, obj8);
+                    const tmp85 = closure_11(tmp(tmp2[21]).Button, obj8);
                   }
                   const obj9 = { disabled: !canStartAuthorization, onPress: tmp78, variant: "primary", text: "Start Authorization" };
                   cResult[43] = !canStartAuthorization;
                   cResult[44] = tmp78;
-                  cResult[45] = closure_12(tmp(tmp2[21]).Button, obj9);
-                  const tmp81 = closure_12(tmp(tmp2[21]).Button, obj9);
+                  cResult[45] = closure_11(tmp(tmp2[21]).Button, obj9);
+                  const tmp81 = closure_11(tmp(tmp2[21]).Button, obj9);
                 }
-                const obj10 = { label: "Already Linked", trailing: closure_12(tmp(tmp2[19]).Text, obj11) };
+                const obj10 = { label: "Already Linked", trailing: closure_11(tmp(tmp2[19]).Text, obj11) };
                 const TableRow2 = tmp(tmp2[18]).TableRow;
                 obj11 = { variant: "text-sm/semibold", color: "text-muted", children: str11 };
                 cResult[38] = "text-muted";
                 cResult[39] = str11;
-                cResult[40] = closure_12(TableRow2, obj10);
-                const tmp76 = closure_12(TableRow2, obj10);
+                cResult[40] = closure_11(TableRow2, obj10);
+                const tmp76 = closure_11(TableRow2, obj10);
               }
-              const obj12 = { label: "Connection Entrypoint URL", trailing: closure_12(tmp(tmp2[19]).Text, obj13) };
+              const obj12 = { label: "Connection Entrypoint URL", trailing: closure_11(tmp(tmp2[19]).Text, obj13) };
               let TableRow = tmp(tmp2[18]).TableRow;
               obj13 = { variant: "text-sm/semibold", color: "text-feedback-critical", children: str9 };
               cResult[35] = "text-feedback-critical";
               cResult[36] = str9;
-              cResult[37] = closure_12(TableRow, obj12);
-              const tmp73 = closure_12(TableRow, obj12);
+              cResult[37] = closure_11(TableRow, obj12);
+              const tmp73 = closure_11(TableRow, obj12);
             }
           }
           const obj14 = { title: "Application", hasIcons: false, children: items3 };
@@ -671,16 +671,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           cResult[31] = tmp55;
           cResult[32] = tmp61;
           cResult[33] = tmp65;
-          cResult[34] = closure_13(tmp(tmp2[17]).TableRowGroup, obj14);
-          const tmp70 = closure_13(tmp(tmp2[17]).TableRowGroup, obj14);
+          cResult[34] = closure_12(tmp(tmp2[17]).TableRowGroup, obj14);
+          const tmp70 = closure_12(tmp(tmp2[17]).TableRowGroup, obj14);
         }
       }
       const obj15 = { title: combined, hasIcons: false, children: tmp47 };
       cResult[20] = TableRowGroup;
       cResult[21] = combined;
       cResult[22] = tmp47;
-      cResult[23] = closure_12(TableRowGroup, obj15);
-      const tmp52 = closure_12(TableRowGroup, obj15);
+      cResult[23] = closure_11(TableRowGroup, obj15);
+      const tmp52 = closure_11(TableRowGroup, obj15);
     }
     const items4 = [tmp4.scrollContainer, tmp43];
     cResult[17] = tmp4.scrollContainer;
@@ -702,7 +702,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       return name;
     });
-    class P {
+    class B {
       constructor() {
         let application;
         let found;
@@ -728,7 +728,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[13] = stateFromStoresArray;
   cResult[14] = "N/A";
   tmp37 = str;
-}) : (() => {
+}) : (function DevToolsAccountLinkingScreen() {
   let canDeauthorize;
   let closure_1;
   let closure_2;
@@ -748,7 +748,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let str5;
   let str7;
   let tmp17Result;
-  const tmp = closure_14();
+  const tmp = closure_13();
   let tmp2 = importDefault;
   let tmp3 = dependencyMap;
   const tmp4 = useSafeAreaInsetsDefault();
@@ -770,7 +770,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const arr4 = useGetOrFetchApplicationsDefault(gameApplicationIds);
   let found = arr4.filter((item) => null != item);
-  const tmp8Result = value(6670);
+  const tmp8Result = value(6847);
   getOrFetchApplication = tmp8Result.useGetOrFetchApplication(value);
   const items2 = [ApplicationStore];
   const tmp8Result2 = value(504);
@@ -798,8 +798,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   let str = "N/A";
   let str2 = "N/A";
-  ({ canDeauthorize, deauthorize } = closure_15(id));
-  closure_15(id);
+  ({ canDeauthorize, deauthorize } = closure_14(id));
+  closure_14(id);
   if (stateFromStoresArray.length > 0) {
     let mapped = stateFromStoresArray.map((id) => {
       let name;
@@ -821,8 +821,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   items3 = [tmp.scrollContainer, { paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 }];
   let name;
   ({ paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 });
-  const TableRowGroup = tmp8(6081).TableRowGroup;
-  const tmp16 = closure_6;
+  const TableRowGroup = tmp8(6267).TableRowGroup;
+  const tmp16 = connectionApp;
   if (stateFromStores != null) {
     name = stateFromStores.name;
   }
@@ -849,35 +849,35 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         if (name === name.id) {
           tmpResult = tmp(tmp2(tmp3[19]).Text, { variant: "text-sm/semibold", children: "Selected" });
         }
-        return closure_1_12(TableRow, obj, name.id);
+        return closure_1_11(TableRow, obj, name.id);
       });
     } else {
-      mapped1 = tmp17(tmp8(6000).TableRow, { label: "No official games" });
+      mapped1 = tmp17(tmp8(6184).TableRow, { label: "No official games" });
     }
     tmp17Result = mapped1;
   } else {
-    tmp17Result = tmp17(tmp8(6000).TableRow, { label: "No guild selected" });
+    tmp17Result = tmp17(tmp8(6184).TableRow, { label: "No guild selected" });
   }
-  items4 = [closure_12(TableRowGroup, obj5), , , ];
-  const obj6 = { style: obj7, children: closure_12(value(6105).TextInput, { label: "Application ID", value, onChange: tmp5[1] }) };
+  items4 = [closure_11(TableRowGroup, obj5), , , ];
+  const obj6 = { style: obj7, children: closure_11(value(6283).TextInput, { label: "Application ID", value, onChange: tmp5[1] }) };
   obj7 = { padding: nativeDefault.space.PX_12 };
-  const TableRowGroup2 = tmp8(6081).TableRowGroup;
-  const items5 = [closure_12(closure_7, obj6), , ];
-  let TableRow = tmp8(6000).TableRow;
+  const TableRowGroup2 = tmp8(6267).TableRowGroup;
+  const items5 = [closure_11(closure_6, obj6), , ];
+  let TableRow = tmp8(6184).TableRow;
   if (null != getOrFetchApplication) {
     str = getOrFetchApplication.name;
   }
   const obj8 = { title: "Application", hasIcons: false, children: items5 };
   const obj9 = { label: "Name: " + str };
-  items5[1] = closure_12(TableRow, obj9);
+  items5[1] = closure_11(TableRow, obj9);
   const obj10 = { label: "Linked Games: " + str2 };
-  const TableRow2 = tmp8(6000).TableRow;
-  items5[2] = closure_12(TableRow2, obj10);
-  items4[1] = closure_13(TableRowGroup2, obj8);
-  const TableRowGroup3 = tmp8(6081).TableRowGroup;
-  const TableRow3 = tmp8(6000).TableRow;
+  const TableRow2 = tmp8(6184).TableRow;
+  items5[2] = closure_11(TableRow2, obj10);
+  items4[1] = closure_12(TableRowGroup2, obj8);
+  const TableRowGroup3 = tmp8(6267).TableRowGroup;
+  const TableRow3 = tmp8(6184).TableRow;
   let str4 = "text-feedback-critical";
-  const Text = tmp8(4892).Text;
+  const Text = tmp8(5086).Text;
   if (debug.hasConnectionEntrypointUrl) {
     str4 = "text-feedback-positive";
   }
@@ -887,11 +887,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     str5 = "Set";
   }
   const items6 = [, , ];
-  const obj12 = { label: "Connection Entrypoint URL", trailing: closure_12(Text, obj11) };
-  items6[0] = closure_12(TableRow3, obj12);
-  const TableRow4 = tmp8(6000).TableRow;
+  const obj12 = { label: "Connection Entrypoint URL", trailing: closure_11(Text, obj11) };
+  items6[0] = closure_11(TableRow3, obj12);
+  const TableRow4 = tmp8(6184).TableRow;
   let str6 = "text-muted";
-  const Text2 = tmp8(4892).Text;
+  const Text2 = tmp8(5086).Text;
   if (hasAlreadyLinked) {
     str6 = "text-feedback-positive";
   }
@@ -901,8 +901,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     str7 = "Yes";
   }
   const obj14 = { title: "Authorization", hasIcons: false, children: items6 };
-  const obj15 = { label: "Already Linked", trailing: closure_12(Text2, obj13) };
-  items6[1] = closure_12(TableRow4, obj15);
+  const obj15 = { label: "Already Linked", trailing: closure_11(Text2, obj13) };
+  items6[1] = closure_11(TableRow4, obj15);
   const obj16 = { style: tmp.buttonRow, children: items7 };
   items7 = [, ];
   const obj17 = {
@@ -913,11 +913,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     variant: "primary",
     text: "Start Authorization"
   };
-  items7[0] = closure_12(value(5601).Button, obj17);
+  items7[0] = closure_11(value(5375).Button, obj17);
   const obj18 = { disabled: !canDeauthorize, onPress: deauthorize, variant: "critical-primary", text: "Deauthorize" };
-  items7[1] = closure_12(value(5601).Button, obj18);
-  items6[2] = closure_13(closure_7, obj16);
-  items4[2] = closure_13(TableRowGroup3, obj14);
+  items7[1] = closure_11(value(5375).Button, obj18);
+  items6[2] = closure_12(closure_6, obj16);
+  items4[2] = closure_12(TableRowGroup3, obj14);
   let prop;
   if (connectionApp != null) {
     prop = connectionApp.applicationAccountLinkBenefitConfig;
@@ -925,9 +925,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp15Result = null != prop;
   if (tmp15Result) {
     let tmp17Result2 = null != connectionApp.applicationAccountLinkBenefitConfig.reward_image;
-    const TableRowGroup4 = tmp8(6081).TableRowGroup;
+    const TableRowGroup4 = tmp8(6267).TableRowGroup;
     if (tmp17Result2) {
-      const obj19 = { style: obj20, children: closure_12(connectionApp, obj21) };
+      const obj19 = { style: obj20, children: closure_11(FastImageDefault, obj21) };
       obj21 = { source: obj22, style: tmp.rewardImage };
       obj20 = { padding: nativeDefault.space.PX_12 };
       obj22 = { uri: connectionApp.applicationAccountLinkBenefitConfig.reward_image };
@@ -935,18 +935,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const items8 = [tmp17Result2, ];
     let str8 = connectionApp.applicationAccountLinkBenefitConfig.reward_name;
-    const TableRow5 = tmp8(6000).TableRow;
+    const TableRow5 = tmp8(6184).TableRow;
     if (str8 == null) {
       str8 = "Unnamed Reward";
     }
     const obj23 = { title: "Reward Configuration", hasIcons: false, children: items8 };
     let _HermesInternal = HermesInternal;
     const obj24 = { label: "Reward: " + str8 };
-    items8[1] = closure_12(TableRow5, obj24);
+    items8[1] = closure_11(TableRow5, obj24);
     tmp15Result = tmp15(TableRowGroup4, obj23);
   }
   items4[3] = tmp15Result;
-  return closure_13(tmp16, obj3);
+  return closure_12(tmp16, obj3);
 });
 size = size_mod;
 const result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsAccountLinkingScreen.tsx");

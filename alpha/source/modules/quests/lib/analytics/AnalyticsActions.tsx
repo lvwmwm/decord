@@ -1,28 +1,28 @@
-// Module ID: 7215
-// Function ID: 7216
+// Module ID: 7395
+// Function ID: 7396
 // Name: AnalyticsActions
-// Dependencies: [5, 7216, 1357, 7200, 1085, 6983, 7218, 7196, 7219, 7221, 7225, 5637, 5076, 1252, 7226, 7236, 7237, 5633, 7231, 7174, 1369, 1266, 7227, 2]
+// Dependencies: [5, 7396, 1369, 7379, 1085, 7172, 7398, 7375, 7399, 7401, 7404, 5984, 5105, 1264, 7405, 7415, 7416, 5980, 7410, 7353, 1381, 1278, 7406, 2]
 // Exports: createAppStoreOverlayCarouselScrollTracker, getAppStoreOverlayStoreAppIds, trackAdContentAppStoreOverlayEvent, trackAdContentQuestBarOrDockModeChange, trackAppStoreOverlayCarouselScroll, trackAppStoreOverlayEvent, trackAppStoreOverlaySurfaceClickedForAdContent, trackAppStoreOverlaySurfaceClickedForQuest, trackBountyCarouselEmptyStateViewed, trackBountyVerticalScroll, trackQuestContentQuestBarOrDockModeChange, trackQuestEmbedFallbackViewed, trackQuestHomeCarouselScroll, trackQuestHomeOrbShopCarouselScroll, trackQuestHomeOrbShopCarouselViewed, trackQuestHomeSearchClosed, trackQuestHomeSearchEntered, trackQuestHomeSearchQuerySubmitted
 
-// Module 7215 (AnalyticsActions)
+// Module 7395 (AnalyticsActions)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5076 */;
-import QuestTypes from "QuestTypes" /* 5633 */;
-import AdCreativeType from "AdCreativeType" /* 5637 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 6983 */;
-import QuestDataUtils from "QuestDataUtils" /* 7196 */;
-import SessionAdGenerator from "SessionAdGenerator" /* 7218 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7219 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7221 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7225 */;
-import captureAdUserAction4 from "captureAdUserAction" /* 7226 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7236 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7237 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5105 */;
+import QuestTypes from "QuestTypes" /* 5980 */;
+import AdCreativeType from "AdCreativeType" /* 5984 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7172 */;
+import QuestDataUtils from "QuestDataUtils" /* 7375 */;
+import SessionAdGenerator from "SessionAdGenerator" /* 7398 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7399 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7401 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7404 */;
+import captureAdUserAction4 from "captureAdUserAction" /* 7405 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7415 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7416 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7216 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1357 */;
-import QuestStore from "QuestStore" /* 7200 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7396 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1369 */;
+import QuestStore from "QuestStore" /* 7379 */;
 import size from "module_2" /* 2 */;
 
 let _null, _null2, _null3;
@@ -54,7 +54,7 @@ function trackQuestEvent(questId) {
     }
     const id = value.id;
     tmp24Result = AnalyticsTypes;
-    const QUEST = tmp24(5637).AdCreativeType.QUEST;
+    const QUEST = tmp24(5984).AdCreativeType.QUEST;
     const tmp24Result5 = SessionAdGenerator;
     let uuid = tmp24Result5.getOrRefreshAdSession(shouldExtendSession).uuid;
     const tmp24Result6 = QuestDataUtils;
@@ -133,13 +133,17 @@ function trackAdContentEvent(sourceQuestContent) {
   let adTrafficMetadataSealed;
   let creative_type;
   let event;
+  let metadataSealed;
+  let noFillDecision;
   let obj7;
+  let obj9;
+  let prop;
   let properties;
   let questStatus;
   let relatedQuestId;
   let shouldExtendSession;
   let trackGuildAndChannelMetadata;
-  ({ adContentId, relatedQuestId, adCreativeType, event, properties, trackGuildAndChannelMetadata, shouldExtendSession } = sourceQuestContent);
+  ({ adContentId, relatedQuestId, noFillDecision, adCreativeType, event, properties, trackGuildAndChannelMetadata, shouldExtendSession } = sourceQuestContent);
   if (shouldExtendSession === undefined) {
     shouldExtendSession = false;
   }
@@ -183,21 +187,36 @@ function trackAdContentEvent(sourceQuestContent) {
   if (adTrafficMetadataSealed == null) {
     adTrafficMetadataSealed = null;
   }
-  if (null != relatedQuestId) {
-    const obj6 = { quest_id: relatedQuestId, quest_status: questStatus };
-    questStatus = null;
-    if (null != quest) {
-      const tmp3Result6 = AnalyticsTypes;
-      questStatus = tmp3Result6.getQuestStatus(quest);
+  if (null != noFillDecision) {
+    const obj6 = { decision_id: null, is_targeted: false, metadata_sealed: metadataSealed, traffic_metadata_sealed: prop };
+    ({ decisionId: obj10.decision_id, metadataSealed } = noFillDecision);
+    if (metadataSealed == null) {
+      metadataSealed = null;
+    }
+    prop = noFillDecision.trafficMetadataSealed;
+    if (prop == null) {
+      prop = null;
     }
     obj7 = obj6;
   } else {
     obj7 = {};
   }
-  const obj8 = {};
   const merged2 = Object.assign(obj7);
-  const merged3 = Object.assign(obj5);
-  const merged4 = Object.assign(properties);
+  if (null != relatedQuestId) {
+    const obj8 = { quest_id: relatedQuestId, quest_status: questStatus };
+    questStatus = null;
+    if (null != quest) {
+      const tmp3Result6 = AnalyticsTypes;
+      questStatus = tmp3Result6.getQuestStatus(quest);
+    }
+    obj9 = obj8;
+  } else {
+    obj9 = {};
+  }
+  const obj11 = {};
+  const merged3 = Object.assign(obj9);
+  const merged4 = Object.assign(obj5);
+  const merged5 = Object.assign(properties);
   if (trackGuildAndChannelMetadata === undefined) {
     trackGuildAndChannelMetadata = false;
   }
@@ -205,12 +224,12 @@ function trackAdContentEvent(sourceQuestContent) {
     const isLoggingAnalyticsEvents = DeveloperOptionsStore.isLoggingAnalyticsEvents;
     const hasItem = set.has(event);
     if (trackGuildAndChannelMetadata) {
-      const tmp20Result = AppAnalyticsUtilsDefault;
-      tmp20Result.trackWithMetadata(event, obj8, hasItem);
+      const tmp22Result = AppAnalyticsUtilsDefault;
+      tmp22Result.trackWithMetadata(event, obj11, hasItem);
     } else {
-      const obj9 = { flush: hasItem };
-      const tmp20Result2 = AnalyticsUtilsDefault;
-      tmp20Result2.track(event, obj8, obj9);
+      const obj12 = { flush: hasItem };
+      const tmp22Result2 = AnalyticsUtilsDefault;
+      tmp22Result2.track(event, obj11, obj12);
     }
   }
 }

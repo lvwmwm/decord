@@ -1,15 +1,15 @@
-// Module ID: 8438
-// Function ID: 8439
+// Module ID: 8924
+// Function ID: 8925
 // Name: GameProfileSkeletonCardRow
-// Dependencies: [19, 17, 21, 4896, 558, 576, 587, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 587, 2]
 
-// Module 8438 (GameProfileSkeletonCardRow)
+// Module 8924 (GameProfileSkeletonCardRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let closure_5 = createStyles.createStyles((gap) => {
   const obj = { viewport: { overflow: "hidden" }, row: obj2 };
   return obj;
 });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileSkeletonCardRow(arg0) {
   let children;
   let contentContainerStyle;
   let gap;
@@ -76,7 +76,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.viewport;
   cResult[2] = items1;
   tmp5 = items1;
-}) : ((gap) => {
+}) : (function GameProfileSkeletonCardRow(gap) {
   let children;
   let contentContainerStyle;
   let PX_12 = gap.gap;

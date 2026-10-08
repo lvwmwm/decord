@@ -1,17 +1,17 @@
-// Module ID: 10964
-// Function ID: 10965
+// Module ID: 11157
+// Function ID: 11158
 // Name: QuestDockRewardTile
-// Dependencies: [32, 19, 17, 4885, 21, 4896, 587, 558, 576, 1369, 504, 10013, 7993, 5981, 2]
+// Dependencies: [32, 19, 17, 5079, 21, 5090, 587, 558, 576, 1381, 504, 9544, 8401, 6164, 2]
 
-// Module 10964 (QuestDockRewardTile)
+// Module 11157 (QuestDockRewardTile)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import AssetUtils from "AssetUtils" /* 10013 */;
+import AssetUtils from "AssetUtils" /* 9544 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import createStyles from "createStyles" /* 4896 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let closure_9 = createStyles.createStyles(() => {
   ({ borderRadius: nativeDefault.radii.sm, display: "flex", justifyContent: "center", alignItems: "center", overflow: "hidden" });
   return obj;
 });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockRewardTile(arg0) {
   let accessibilityLabel;
   let assetUrl;
   let height;
@@ -49,7 +49,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   if (cResult[0] !== withAnimation) {
     let isIOSResult = withAnimation;
     if (undefined === withAnimation) {
-      const tmpResult = tmp(1369);
+      const tmpResult = tmp(1381);
       isIOSResult = tmpResult.isIOS();
     }
     cResult[0] = withAnimation;
@@ -57,14 +57,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
-    class U {
+    class L {
       constructor() {
         return closure_1_7.useReducedMotion;
       }
     }
     cResult[2] = items;
-    cResult[3] = U;
-    tmp7 = U;
+    cResult[3] = L;
+    tmp7 = L;
     tmp6 = items;
   } else {
     tmp6 = cResult[2];
@@ -77,39 +77,39 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   _slicedToArray(react.useState("active" === closure_5.currentState), 2);
   const obj4 = react;
   if (cResult[4] !== isAnimatedAsset) {
-    class D {
+    class U {
       constructor() {
         tmp = closure_0;
         if (tmp) {
           tmp2 = closure_1_5;
           str = "change";
-          closure_0 = closure_1_5.addEventListener("change", () => { /* body not rendered: F141078 */ });
-          return () => { /* body not rendered: F141079 */ };
+          closure_0 = closure_1_5.addEventListener("change", () => { /* body not rendered: F142454 */ });
+          return () => { /* body not rendered: F142455 */ };
         } else {
           return;
         }
       }
     }
     const items1 = [isAnimatedAsset];
-    class U {
+    class L {
       constructor() {
         return closure_1_7.useReducedMotion;
       }
     }
     cResult[4] = isAnimatedAsset;
-    cResult[5] = D;
+    cResult[5] = U;
     cResult[6] = items1;
     tmp13 = items1;
-    tmp12 = D;
+    tmp12 = U;
   } else {
-    class D {
+    class U {
       constructor() {
         tmp = closure_0;
         if (tmp) {
           tmp2 = closure_1_5;
           str = "change";
-          closure_0 = closure_1_5.addEventListener("change", () => { /* body not rendered: F141078 */ });
-          return () => { /* body not rendered: F141079 */ };
+          closure_0 = closure_1_5.addEventListener("change", () => { /* body not rendered: F142454 */ });
+          return () => { /* body not rendered: F142455 */ };
         } else {
           return;
         }
@@ -119,27 +119,27 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   const effect = obj4.useEffect(tmp12, tmp13);
   if (cResult[7] === assetUrl) {
-    class D {
+    class U {
       constructor() {
         tmp = closure_0;
         if (tmp) {
           tmp2 = closure_1_5;
           str = "change";
-          closure_0 = closure_1_5.addEventListener("change", () => { /* body not rendered: F141078 */ });
-          return () => { /* body not rendered: F141079 */ };
+          closure_0 = closure_1_5.addEventListener("change", () => { /* body not rendered: F142454 */ });
+          return () => { /* body not rendered: F142455 */ };
         } else {
           return;
         }
       }
     }
   }
-  const tmpResult4 = tmp(10013);
+  const tmpResult4 = tmp(9544);
   const scaledImageUrl = tmpResult4.getScaledImageUrl({ assetUrl, width, height });
   cResult[7] = assetUrl;
   cResult[8] = height;
   cResult[9] = width;
   cResult[10] = scaledImageUrl;
-}) : ((assetUrl) => {
+}) : (function QuestDockRewardTile(assetUrl) {
   let accessibilityLabel;
   let c4;
   let items3;

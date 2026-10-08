@@ -1,33 +1,33 @@
-// Module ID: 6652
-// Function ID: 6653
+// Module ID: 6829
+// Function ID: 6830
 // Name: Sheet/BottomSheet
-// Dependencies: [32, 109, 19, 17, 6653, 21, 4896, 587, 1369, 558, 576, 1618, 5777, 6075, 6119, 5612, 1105, 4618, 6654, 4602, 6655, 5597, 6656, 6657, 6543, 1484, 4738, 6658, 4595, 2]
+// Dependencies: [32, 109, 19, 17, 6830, 21, 5090, 587, 1381, 558, 576, 1630, 5360, 6261, 6298, 5387, 1105, 4810, 6831, 4794, 6832, 5392, 6833, 6834, 6719, 1496, 4932, 6835, 4787, 2]
 
-// Module 6652 (Sheet/BottomSheet)
+// Module 6829 (Sheet/BottomSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4738 */;
-import LinearGradientDefault from "LinearGradient" /* 5612 */;
-import BottomSheetModal from "BottomSheetModal" /* 6119 */;
-import reactDefault from "react" /* 6654 */;
-import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 6656 */;
-import Sheet_BottomSheetBackdrop from "Sheet/BottomSheetBackdrop" /* 6657 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4932 */;
+import LinearGradientDefault from "LinearGradient" /* 5387 */;
+import BottomSheetModal from "BottomSheetModal" /* 6298 */;
+import reactDefault from "react" /* 6831 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 6833 */;
+import Sheet_BottomSheetBackdrop from "Sheet/BottomSheetBackdrop" /* 6834 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6653 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6830 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, importDefault, tmp5Result, width;
+let _require, dependencyMap, importDefault, tmp5Result;
 
 let Platform;
 let c10;
@@ -46,13 +46,13 @@ let tmp;
 let tmp2;
 let unpackModuleId;
 const ConstantsIOS = tmp(1105);
-const useIsScreenReaderEnabled = tmp(5777);
-const NavigatorConstants = tmp(6075);
-const BottomSheetModalDefault = tmp2(6119);
-const NavScrim = tmp2(6543);
-let closure_3 = ["startHeight", "hasEverExpanded", "windowDimensions", "wrapperStyle", "scrollViewStyle", "startExpanded", "onChange", "onExpand", "keyboardShouldPersistTaps", "children", "maxDynamicContentSize"];
-let closure_4 = ["startHeight", "contentHeight", "maxHeight", "hasEverExpanded", "windowDimensions", "wrapperStyle", "onChange", "onExpand", "children", "borderGradient", "extraContent"];
-let closure_5 = ["scrollable", "startHeight", "maxHeight", "containerHeight", "startExpanded", "backdropOpacity", "backdropChildren", "header", "handleComponent", "handleDisabled", "dismissAccessibilityLabel", "footer", "onExpand", "onDismiss", "keyboardShouldPersistTaps", "children", "backgroundStyles", "contentStyles", "bodyStyles", "borderGradient", "showGradient", "extraContent", "contentHeight"];
+const useIsScreenReaderEnabled = tmp(5360);
+const NavigatorConstants = tmp(6261);
+const BottomSheetModalDefault = tmp2(6298);
+const NavScrim = tmp2(6719);
+let closure_3 = ["startHeight", "hasEverExpanded", "windowDimensions", "wrapperStyle", "scrollViewStyle", "startExpanded", "onChange", "onExpand", "keyboardShouldPersistTaps", "children", "maxDynamicContentSize", "ref"];
+let closure_4 = ["startHeight", "contentHeight", "maxHeight", "hasEverExpanded", "windowDimensions", "wrapperStyle", "onChange", "onExpand", "children", "borderGradient", "extraContent", "ref"];
+let closure_5 = ["scrollable", "startHeight", "maxHeight", "containerHeight", "startExpanded", "backdropOpacity", "backdropChildren", "header", "handleComponent", "handleDisabled", "dismissAccessibilityLabel", "footer", "onExpand", "onDismiss", "keyboardShouldPersistTaps", "children", "backgroundStyles", "contentStyles", "bodyStyles", "borderGradient", "showGradient", "extraContent", "contentHeight", "ref"];
 ({ StyleSheet: c9, View: c10, Platform } = react_native);
 ({ ACTION_SHEET_START_HEIGHT_RATIO: unpackModuleId, ACTION_SHEET_MAX_WIDTH: closure_12, ACTION_SHEET_SPRING_CONFIG: map1, ACTION_SHEET_SPRING_CONFIG_REDUCED_MOTION: closure_14, ACTION_SHEET_GRADIENT_BORDER_WIDTH: closure_15, ACTION_SHEET_GRADIENT_BORDER_RADIUS: closure_16, ACTION_SHEET_BORDER_RADIUS: closure_17, ACTION_SHEET_INNER_BORDER_RADIUS: closure_18, ACTION_SHEET_MINIMUM_BOTTOM_PADDING: closure_19 } = ActionSheetConstants);
 ({ jsx: closure_20, jsxs: closure_21 } = Fragment);
@@ -102,9 +102,8 @@ let closure_22 = createStyles.createStyles((arg0) => {
   const merged = Object.assign(React4.absoluteFillObject);
   return obj;
 });
-const forwardRef = react.forwardRef;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_23 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContentSizeBottomSheetInner(arg0) {
   let children;
   let closure_129_4;
   let diff;
@@ -114,23 +113,24 @@ let closure_23 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
   let maxDynamicContentSize;
   let onChange;
   let onExpand;
+  let ref;
   let result;
   let scrollViewStyle;
   let startExpanded;
   let startHeight;
-  let tmp11;
-  let tmp13;
+  let tmp12;
   let tmp14;
-  let tmp20;
+  let tmp15;
+  let tmp21;
   let tmp5;
   let tmp8;
   let windowDimensions;
   let wrapperStyle;
   let tmp = require;
   const obj = react2;
-  const cResult = obj.c(39);
+  const cResult = obj.c(40);
   if (cResult[0] !== arg0) {
-    ({ startHeight, hasEverExpanded, windowDimensions, wrapperStyle, scrollViewStyle, startExpanded, onChange, onExpand, keyboardShouldPersistTaps, children, maxDynamicContentSize } = arg0);
+    ({ startHeight, hasEverExpanded, windowDimensions, wrapperStyle, scrollViewStyle, startExpanded, onChange, onExpand, keyboardShouldPersistTaps, children, maxDynamicContentSize, ref } = arg0);
     let closure_0 = onChange;
     let closure_1 = onExpand;
     cResult[0] = arg0;
@@ -140,30 +140,31 @@ let closure_23 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     cResult[4] = onChange;
     cResult[5] = onExpand;
     cResult[6] = _objectWithoutProperties(arg0, closure_3);
-    cResult[7] = scrollViewStyle;
-    cResult[8] = startExpanded;
-    cResult[9] = startHeight;
-    cResult[10] = windowDimensions;
-    cResult[11] = wrapperStyle;
-    tmp14 = wrapperStyle;
-    tmp13 = windowDimensions;
+    cResult[7] = ref;
+    cResult[8] = scrollViewStyle;
+    cResult[9] = startExpanded;
+    cResult[10] = startHeight;
+    cResult[11] = windowDimensions;
+    cResult[12] = wrapperStyle;
+    tmp15 = wrapperStyle;
+    tmp14 = windowDimensions;
     result = startHeight;
-    tmp11 = startExpanded;
+    tmp12 = startExpanded;
     tmp5 = children;
     diff = maxDynamicContentSize;
-    const tmp17 = _objectWithoutProperties(arg0, closure_3);
+    const tmp18 = _objectWithoutProperties(arg0, closure_3);
     tmp8 = onExpand;
   } else {
     diff = cResult[1];
     tmp5 = cResult[2];
     closure_0 = cResult[4];
     closure_1 = cResult[5];
-    tmp11 = cResult[8];
-    result = cResult[9];
-    tmp13 = cResult[10];
+    tmp12 = cResult[9];
+    result = cResult[10];
     tmp14 = cResult[11];
+    tmp15 = cResult[12];
   }
-  const height = tmp13.height;
+  const height = tmp14.height;
   const top = useSafeAreaInsetsDefault().top;
   const tmpResult = useIsScreenReaderEnabled;
   const isScreenReaderEnabled = tmpResult.useIsScreenReaderEnabled();
@@ -173,156 +174,117 @@ let closure_23 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
   if (diff == null) {
     diff = height - NavigatorConstants.NAV_BAR_HEIGHT_MULTILINE - top;
   }
-  if (cResult[12] === result) {
-    if (cResult[13] === isScreenReaderEnabled) {
+  if (cResult[13] === result) {
+    if (cResult[14] === isScreenReaderEnabled) {
+      let tmp25;
       let tmp24;
-      let tmp23;
-      if (cResult[14] === tmp11) {
-        tmp20 = cResult[15];
+      if (cResult[15] === tmp12) {
+        tmp21 = cResult[16];
       }
-      [r10078, closure_129_4] = react.useState(tmp20);
-      _slicedToArray(react.useState(tmp20), 2);
+      [r10081, closure_129_4] = react.useState(tmp21);
+      _slicedToArray(react.useState(tmp21), 2);
       const obj3 = react;
-      if (cResult[16] !== isScreenReaderEnabled) {
-        class K {
+      if (cResult[17] !== isScreenReaderEnabled) {
+        class W {
           constructor() {
-            tmp = closure_2;
+            const tmp = isScreenReaderEnabled;
             if (tmp) {
-              tmp2 = closure_4;
-              tmp3 = closure_4([]);
+              closure_1_4([]);
             }
-            return;
           }
         }
         const items = [isScreenReaderEnabled];
-        cResult[16] = isScreenReaderEnabled;
-        cResult[17] = K;
-        cResult[18] = items;
-        tmp24 = items;
-        tmp23 = K;
+        cResult[17] = isScreenReaderEnabled;
+        cResult[18] = W;
+        cResult[19] = items;
+        tmp25 = items;
+        tmp24 = W;
       } else {
-        class K {
+        class W {
           constructor() {
-            tmp = closure_2;
+            const tmp = isScreenReaderEnabled;
             if (tmp) {
-              tmp2 = closure_4;
-              tmp3 = closure_4([]);
+              closure_1_4([]);
             }
-            return;
           }
         }
-        tmp24 = cResult[18];
+        tmp25 = cResult[19];
       }
-      const effect = obj3.useEffect(tmp23, tmp24);
-      if (cResult[19] !== result) {
-        class K {
-          constructor() {
-            tmp = closure_2;
-            if (tmp) {
-              tmp2 = closure_4;
-              tmp3 = closure_4([]);
+      const effect = obj3.useEffect(tmp24, tmp25);
+      if (cResult[20] !== result) {
+        class Y {
+          constructor(nativeEvent) {
+            if (nativeEvent.nativeEvent.layout.height < result) {
+              closure_1_4([]);
             }
-            return;
           }
         }
-        cResult[19] = result;
-        cResult[20] = tmp27;
+        cResult[20] = result;
+        cResult[21] = Y;
       } else {
-        class K {
-          constructor() {
-            tmp = closure_2;
-            if (tmp) {
-              tmp2 = closure_4;
-              tmp3 = closure_4([]);
+        class Y {
+          constructor(nativeEvent) {
+            if (nativeEvent.nativeEvent.layout.height < result) {
+              closure_1_4([]);
             }
-            return;
           }
         }
       }
-      if (cResult[21] === tmp7) {
-        class K {
-          constructor() {
-            tmp = closure_2;
-            if (tmp) {
-              tmp2 = closure_4;
-              tmp3 = closure_4([]);
+      if (cResult[22] === tmp7) {
+        class Y {
+          constructor(nativeEvent) {
+            if (nativeEvent.nativeEvent.layout.height < result) {
+              closure_1_4([]);
             }
-            return;
           }
         }
-        if (cResult[24] === tmp5) {
-          class K {
-            constructor() {
-              tmp = closure_2;
-              if (tmp) {
-                tmp2 = closure_4;
-                tmp3 = closure_4([]);
+        if (cResult[25] === tmp5) {
+          class Y {
+            constructor(nativeEvent) {
+              if (nativeEvent.nativeEvent.layout.height < result) {
+                closure_1_4([]);
               }
-              return;
             }
           }
         }
-        const obj2 = { onLayout: tmp26, style: tmp14, children: tmp5 };
-        cResult[24] = tmp5;
+        const obj2 = { onLayout: tmp27, style: tmp15, children: tmp5 };
+        cResult[25] = tmp5;
+        cResult[26] = tmp27;
+        cResult[27] = tmp15;
+        cResult[28] = closure_20(authStore, obj2);
         const tmp32 = closure_20(authStore, obj2);
-        class Z {
-          constructor(arg0, arg1, arg2) {
-            if (closure_0 != null) {
-              tmp2 = arg1;
-              tmp3 = arg2;
-              tmpResult = tmp(arg0, arg1, arg2);
-            }
-            if (0 === arg0) {
-              if (closure_1 != null) {
-                tmp5Result = tmp5();
-              }
-            }
-            return;
+      }
+      const fn = function $(arg0, arg1, arg2) {
+        if (closure_0 != null) {
+          tmp(arg0, arg1, arg2);
+        }
+        if (0 === arg0) {
+          if (closure_1 != null) {
+            tmp5();
           }
         }
-        cResult[25] = tmp26;
-        cResult[26] = tmp14;
-        cResult[27] = tmp32;
-      }
-      class Z {
-        constructor(arg0, arg1, arg2) {
-          if (closure_0 != null) {
-            tmp2 = arg1;
-            tmp3 = arg2;
-            tmpResult = tmp(arg0, arg1, arg2);
-          }
-          if (0 === arg0) {
-            if (closure_1 != null) {
-              tmp5Result = tmp5();
-            }
-          }
-          return;
-        }
-      }
-      cResult[21] = tmp7;
-      cResult[22] = tmp8;
-      cResult[23] = Z;
+      };
+      cResult[22] = tmp7;
+      cResult[23] = tmp8;
+      cResult[24] = fn;
     }
   }
   if (!isScreenReaderEnabled) {
-    class K {
-      constructor() {
-        tmp = closure_2;
-        if (tmp) {
-          tmp2 = closure_4;
-          tmp3 = closure_4([]);
+    class Y {
+      constructor(nativeEvent) {
+        if (nativeEvent.nativeEvent.layout.height < result) {
+          closure_1_4([]);
         }
-        return;
       }
     }
-    cResult[12] = result;
-    cResult[13] = isScreenReaderEnabled;
-    cResult[14] = tmp11;
-    cResult[15] = items1;
-    tmp20 = items1;
+    cResult[13] = result;
+    cResult[14] = isScreenReaderEnabled;
+    cResult[15] = tmp12;
+    cResult[16] = items1;
+    tmp21 = items1;
   }
   items1 = [];
-}) : ((windowDimensions, ref) => {
+}) : (function ContentSizeBottomSheetInner(windowDimensions) {
   let BottomSheetScrollView;
   let children;
   let first;
@@ -330,6 +292,7 @@ let closure_23 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
   let keyboardShouldPersistTaps;
   let obj4;
   let obj5;
+  let ref;
   let scrollViewStyle;
   let startExpanded;
   let startHeight;
@@ -339,8 +302,8 @@ let closure_23 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
   const onChange = windowDimensions.onChange;
   const onExpand = windowDimensions.onExpand;
   let maxDynamicContentSize = windowDimensions.maxDynamicContentSize;
-  ({ wrapperStyle, scrollViewStyle, startExpanded, keyboardShouldPersistTaps, children } = windowDimensions);
-  const merged = Object.assign(windowDimensions, Object.assign({ startHeight: 0, hasEverExpanded: 0, windowDimensions: 0, wrapperStyle: 0, scrollViewStyle: 0, startExpanded: 0, onChange: 0, onExpand: 0, keyboardShouldPersistTaps: 0, children: 0, maxDynamicContentSize: 0 }));
+  ({ wrapperStyle, scrollViewStyle, startExpanded, keyboardShouldPersistTaps, children, ref } = windowDimensions);
+  const merged = Object.assign(windowDimensions, Object.assign({ startHeight: 0, hasEverExpanded: 0, windowDimensions: 0, wrapperStyle: 0, scrollViewStyle: 0, startExpanded: 0, onChange: 0, onExpand: 0, keyboardShouldPersistTaps: 0, children: 0, maxDynamicContentSize: 0, ref: 0 }));
   startHeight = undefined;
   closure_4 = undefined;
   const top = useSafeAreaInsetsDefault().top;
@@ -383,18 +346,17 @@ let closure_23 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     const tmp2Result = BottomSheetModalDefault;
     const merged1 = Object.assign(merged);
     if (maxDynamicContentSize == null) {
-      maxDynamicContentSize = height - tmp4(6075).NAV_BAR_HEIGHT_MULTILINE - top;
+      maxDynamicContentSize = height - tmp4(6261).NAV_BAR_HEIGHT_MULTILINE - top;
     }
     obj4 = { bounces: false, keyboardShouldPersistTaps, style: scrollViewStyle, children: closure_20(authStore, obj5) };
     obj5 = { onLayout: callback, style: wrapperStyle, children };
-    BottomSheetScrollView = tmp4(6119).BottomSheetScrollView;
+    BottomSheetScrollView = tmp4(6298).BottomSheetScrollView;
     return closure_20(tmp2Result, obj3);
   }
   items = [];
-}));
-const forwardRef2 = react.forwardRef;
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_24 = forwardRef2(ReactCompilerGating.isReactCompilerEnabled() ? ((onExpand, ref) => {
+let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScrollableBottomSheetInner(onExpand) {
   let borderGradient;
   let children;
   let contentHeight;
@@ -404,11 +366,13 @@ let closure_24 = forwardRef2(ReactCompilerGating.isReactCompilerEnabled() ? ((on
   let items;
   let maxHeight;
   let onChange;
+  let ref;
   let result;
   let startHeight;
   let tmp12;
-  let tmp14;
+  let tmp13;
   let tmp15;
+  let tmp16;
   let tmp5;
   let tmp6;
   let tmp7;
@@ -418,14 +382,14 @@ let closure_24 = forwardRef2(ReactCompilerGating.isReactCompilerEnabled() ? ((on
   let wrapperStyle;
   const tmp = require;
   const obj = react2;
-  const cResult = obj.c(42);
+  const cResult = obj.c(43);
   if (cResult[0] !== onExpand) {
     ({ startHeight, contentHeight, maxHeight, hasEverExpanded, windowDimensions, wrapperStyle, onChange } = onExpand);
     let closure_0 = onChange;
     onExpand = onExpand.onExpand;
     let closure_1 = onExpand;
-    ({ children, borderGradient, extraContent } = onExpand);
-    const tmp18 = _objectWithoutProperties(onExpand, closure_4);
+    ({ children, borderGradient, extraContent, ref } = onExpand);
+    const tmp19 = _objectWithoutProperties(onExpand, closure_4);
     cResult[0] = onExpand;
     cResult[1] = maxHeight;
     cResult[2] = borderGradient;
@@ -435,14 +399,16 @@ let closure_24 = forwardRef2(ReactCompilerGating.isReactCompilerEnabled() ? ((on
     cResult[6] = hasEverExpanded;
     cResult[7] = onChange;
     cResult[8] = onExpand;
-    cResult[9] = tmp18;
-    cResult[10] = startHeight;
-    cResult[11] = windowDimensions;
-    cResult[12] = wrapperStyle;
-    tmp15 = wrapperStyle;
-    tmp14 = windowDimensions;
+    cResult[9] = tmp19;
+    cResult[10] = ref;
+    cResult[11] = startHeight;
+    cResult[12] = windowDimensions;
+    cResult[13] = wrapperStyle;
+    tmp16 = wrapperStyle;
+    tmp15 = windowDimensions;
     result = startHeight;
-    tmp12 = tmp18;
+    tmp13 = ref;
+    tmp12 = tmp19;
     tmp9 = hasEverExpanded;
     tmp8 = extraContent;
     tmp7 = contentHeight;
@@ -459,12 +425,13 @@ let closure_24 = forwardRef2(ReactCompilerGating.isReactCompilerEnabled() ? ((on
     closure_0 = cResult[7];
     closure_1 = cResult[8];
     tmp12 = cResult[9];
-    result = cResult[10];
-    tmp14 = cResult[11];
+    tmp13 = cResult[10];
+    result = cResult[11];
     tmp15 = cResult[12];
+    tmp16 = cResult[13];
   }
-  const height = tmp14.height;
-  const tmp19 = closure_22(false);
+  const height = tmp15.height;
+  const tmp20 = closure_22(false);
   const top = useSafeAreaInsetsDefault().top;
   const tmpResult = useIsScreenReaderEnabled;
   const isScreenReaderEnabled = tmpResult.useIsScreenReaderEnabled();
@@ -477,30 +444,30 @@ let closure_24 = forwardRef2(ReactCompilerGating.isReactCompilerEnabled() ? ((on
   if (diff == null) {
     diff = height - NavigatorConstants.NAV_BAR_HEIGHT_MULTILINE - top;
   }
-  if (cResult[13] === result) {
-    if (cResult[14] === tmp9) {
-      if (cResult[15] === isScreenReaderEnabled) {
+  if (cResult[14] === result) {
+    if (cResult[15] === tmp9) {
+      if (cResult[16] === isScreenReaderEnabled) {
         let arr;
-        if (cResult[16] === diff) {
-          arr = cResult[17];
+        if (cResult[17] === diff) {
+          arr = cResult[18];
         }
         const diff1 = arr.length - 1;
-        if (cResult[18] === diff1) {
-          if (cResult[19] === tmp10) {
-            let tmp27;
+        if (cResult[19] === diff1) {
+          if (cResult[20] === tmp10) {
             let tmp28;
-            if (cResult[20] === tmp11) {
-              tmp27 = cResult[21];
+            let tmp29;
+            if (cResult[21] === tmp11) {
+              tmp28 = cResult[22];
             }
-            if (cResult[22] !== diff) {
+            if (cResult[23] !== diff) {
               const obj2 = { maxHeight: diff };
-              cResult[22] = diff;
+              cResult[23] = diff;
               class L {
                 constructor(arg0, arg1, arg2) {
                   if (closure_0 != null) {
-                    tmp2 = ref;
+                    tmp2 = arg1;
                     tmp3 = arg2;
-                    tmpResult = tmp(onExpand, ref, arg2);
+                    tmpResult = tmp(onExpand, arg1, arg2);
                   }
                   if (onExpand === closure_2) {
                     if (closure_1 != null) {
@@ -510,35 +477,35 @@ let closure_24 = forwardRef2(ReactCompilerGating.isReactCompilerEnabled() ? ((on
                   return;
                 }
               }
-              tmp28 = obj2;
+              tmp29 = obj2;
             } else {
-              tmp28 = cResult[23];
+              tmp29 = cResult[24];
             }
-            if (cResult[24] === tmp28) {
-              let tmp29;
-              if (cResult[25] === tmp15) {
-                tmp29 = cResult[26];
+            if (cResult[25] === tmp29) {
+              let tmp30;
+              if (cResult[26] === tmp16) {
+                tmp30 = cResult[27];
               }
-              if (cResult[27] === tmp6) {
-                let tmp30;
-                if (cResult[28] === tmp29) {
-                  tmp30 = cResult[29];
+              if (cResult[28] === tmp6) {
+                let tmp31;
+                if (cResult[29] === tmp30) {
+                  tmp31 = cResult[30];
                 }
-                if (cResult[30] === tmp5) {
-                  if (cResult[31] === tmp30) {
-                    let tmp34;
-                    if (cResult[32] === tmp19) {
-                      tmp34 = cResult[33];
+                if (cResult[31] === tmp5) {
+                  if (cResult[32] === tmp31) {
+                    let tmp35;
+                    if (cResult[33] === tmp20) {
+                      tmp35 = cResult[34];
                     }
-                    if (cResult[34] === tmp7) {
-                      if (cResult[35] === tmp8) {
-                        if (cResult[36] === tmp27) {
-                          if (cResult[37] === tmp12) {
-                            if (cResult[38] === ref) {
-                              if (cResult[39] === arr) {
+                    if (cResult[35] === tmp7) {
+                      if (cResult[36] === tmp8) {
+                        if (cResult[37] === tmp28) {
+                          if (cResult[38] === tmp12) {
+                            if (cResult[39] === tmp13) {
+                              if (cResult[40] === arr) {
                                 let tmp39;
-                                if (cResult[40] === tmp34) {
-                                  tmp39 = cResult[41];
+                                if (cResult[41] === tmp35) {
+                                  tmp39 = cResult[42];
                                 }
                                 return tmp39;
                               }
@@ -547,13 +514,13 @@ let closure_24 = forwardRef2(ReactCompilerGating.isReactCompilerEnabled() ? ((on
                         }
                       }
                     }
-                    const obj3 = { ref, enableDynamicSizing: false, contentHeight: tmp7, snapPoints: arr, onChange: tmp27, children: items };
+                    const obj3 = { ref: tmp13, enableDynamicSizing: false, contentHeight: tmp7, snapPoints: arr, onChange: tmp28, children: items };
                     class L {
                       constructor(arg0, arg1, arg2) {
                         if (closure_0 != null) {
-                          tmp2 = ref;
+                          tmp2 = arg1;
                           tmp3 = arg2;
-                          tmpResult = tmp(onExpand, ref, arg2);
+                          tmpResult = tmp(onExpand, arg1, arg2);
                         }
                         if (onExpand === closure_2) {
                           if (closure_1 != null) {
@@ -563,31 +530,31 @@ let closure_24 = forwardRef2(ReactCompilerGating.isReactCompilerEnabled() ? ((on
                         return;
                       }
                     }
-                    const tmp20Result = BottomSheetModalDefault;
+                    const tmp21Result = BottomSheetModalDefault;
                     const merged = Object.assign(tmp12);
-                    items = [tmp34, tmp8];
-                    const tmp44 = closure_21(tmp20Result, obj3);
-                    cResult[34] = tmp7;
-                    cResult[35] = tmp8;
-                    cResult[36] = tmp27;
-                    cResult[37] = tmp12;
-                    cResult[38] = ref;
-                    cResult[39] = arr;
-                    cResult[40] = tmp34;
-                    cResult[41] = tmp44;
+                    items = [tmp35, tmp8];
+                    const tmp44 = closure_21(tmp21Result, obj3);
+                    cResult[35] = tmp7;
+                    cResult[36] = tmp8;
+                    cResult[37] = tmp28;
+                    cResult[38] = tmp12;
+                    cResult[39] = tmp13;
+                    cResult[40] = arr;
+                    cResult[41] = tmp35;
+                    cResult[42] = tmp44;
                     tmp39 = tmp44;
                   }
                 }
-                let tmp35 = tmp30;
+                let tmp36 = tmp31;
                 if (null != tmp5) {
-                  const obj4 = { style: tmp19.gradient, start: ConstantsIOS.VerticalGradient.START, end: null, colors: tmp5, children: tmp30 };
-                  const tmp20Result2 = LinearGradientDefault;
+                  const obj4 = { style: tmp20.gradient, start: ConstantsIOS.VerticalGradient.START, end: null, colors: tmp5, children: tmp31 };
+                  const tmp21Result2 = LinearGradientDefault;
                   class L {
                     constructor(arg0, arg1, arg2) {
                       if (closure_0 != null) {
-                        tmp2 = ref;
+                        tmp2 = arg1;
                         tmp3 = arg2;
-                        tmpResult = tmp(onExpand, ref, arg2);
+                        tmpResult = tmp(onExpand, arg1, arg2);
                       }
                       if (onExpand === closure_2) {
                         if (closure_1 != null) {
@@ -597,14 +564,14 @@ let closure_24 = forwardRef2(ReactCompilerGating.isReactCompilerEnabled() ? ((on
                       return;
                     }
                   }
-                  tmp35 = closure_20(tmp20Result2, obj4);
+                  tmp36 = closure_20(tmp21Result2, obj4);
                 }
                 class L {
                   constructor(arg0, arg1, arg2) {
                     if (closure_0 != null) {
-                      tmp2 = ref;
+                      tmp2 = arg1;
                       tmp3 = arg2;
-                      tmpResult = tmp(onExpand, ref, arg2);
+                      tmpResult = tmp(onExpand, arg1, arg2);
                     }
                     if (onExpand === closure_2) {
                       if (closure_1 != null) {
@@ -614,18 +581,18 @@ let closure_24 = forwardRef2(ReactCompilerGating.isReactCompilerEnabled() ? ((on
                     return;
                   }
                 }
-                cResult[31] = tmp30;
-                cResult[32] = tmp19;
-                cResult[33] = tmp35;
-                tmp34 = tmp35;
+                cResult[32] = tmp31;
+                cResult[33] = tmp20;
+                cResult[34] = tmp36;
+                tmp35 = tmp36;
               }
               const obj5 = { style: null, children: tmp6 };
               class L {
                 constructor(arg0, arg1, arg2) {
                   if (closure_0 != null) {
-                    tmp2 = ref;
+                    tmp2 = arg1;
                     tmp3 = arg2;
-                    tmpResult = tmp(onExpand, ref, arg2);
+                    tmpResult = tmp(onExpand, arg1, arg2);
                   }
                   if (onExpand === closure_2) {
                     if (closure_1 != null) {
@@ -635,19 +602,19 @@ let closure_24 = forwardRef2(ReactCompilerGating.isReactCompilerEnabled() ? ((on
                   return;
                 }
               }
-              const tmp33 = closure_20(authStore, obj5);
-              cResult[27] = tmp6;
-              cResult[28] = tmp29;
-              cResult[29] = tmp33;
-              tmp30 = tmp33;
+              const tmp34 = closure_20(authStore, obj5);
+              cResult[28] = tmp6;
+              cResult[29] = tmp30;
+              cResult[30] = tmp34;
+              tmp31 = tmp34;
             }
-            const items1 = [tmp15, ];
+            const items1 = [tmp16, ];
             class L {
               constructor(arg0, arg1, arg2) {
                 if (closure_0 != null) {
-                  tmp2 = ref;
+                  tmp2 = arg1;
                   tmp3 = arg2;
-                  tmpResult = tmp(onExpand, ref, arg2);
+                  tmpResult = tmp(onExpand, arg1, arg2);
                 }
                 if (onExpand === closure_2) {
                   if (closure_1 != null) {
@@ -657,18 +624,18 @@ let closure_24 = forwardRef2(ReactCompilerGating.isReactCompilerEnabled() ? ((on
                 return;
               }
             }
-            cResult[24] = tmp28;
-            cResult[25] = tmp15;
-            cResult[26] = items1;
-            tmp29 = items1;
+            cResult[25] = tmp29;
+            cResult[26] = tmp16;
+            cResult[27] = items1;
+            tmp30 = items1;
           }
         }
         class L {
           constructor(arg0, arg1, arg2) {
             if (closure_0 != null) {
-              tmp2 = ref;
+              tmp2 = arg1;
               tmp3 = arg2;
-              tmpResult = tmp(onExpand, ref, arg2);
+              tmpResult = tmp(onExpand, arg1, arg2);
             }
             if (onExpand === closure_2) {
               if (closure_1 != null) {
@@ -678,27 +645,27 @@ let closure_24 = forwardRef2(ReactCompilerGating.isReactCompilerEnabled() ? ((on
             return;
           }
         }
-        cResult[18] = diff1;
-        cResult[19] = tmp10;
-        cResult[20] = tmp11;
-        cResult[21] = L;
-        tmp27 = L;
+        cResult[19] = diff1;
+        cResult[20] = tmp10;
+        cResult[21] = tmp11;
+        cResult[22] = L;
+        tmp28 = L;
       }
     }
   }
   const items2 = [];
-  const tmp23 = !isScreenReaderEnabled && !tmp9 && result < diff;
-  if (tmp23) {
+  const tmp24 = !isScreenReaderEnabled && !tmp9 && result < diff;
+  if (tmp24) {
     items2.push(result);
   }
   items2.push(diff);
-  cResult[13] = result;
-  cResult[14] = tmp9;
-  cResult[15] = isScreenReaderEnabled;
-  cResult[16] = diff;
-  cResult[17] = items2;
+  cResult[14] = result;
+  cResult[15] = tmp9;
+  cResult[16] = isScreenReaderEnabled;
+  cResult[17] = diff;
+  cResult[18] = items2;
   arr = items2;
-}) : ((windowDimensions, ref) => {
+}) : (function ScrollableBottomSheetInner(windowDimensions) {
   let children;
   let contentHeight;
   let extraContent;
@@ -706,6 +673,7 @@ let closure_24 = forwardRef2(ReactCompilerGating.isReactCompilerEnabled() ? ((on
   let items2;
   let items3;
   let maxHeight;
+  let ref;
   let startHeight;
   let wrapperStyle;
   ({ startHeight, contentHeight, maxHeight, hasEverExpanded } = windowDimensions);
@@ -713,8 +681,8 @@ let closure_24 = forwardRef2(ReactCompilerGating.isReactCompilerEnabled() ? ((on
   const onChange = windowDimensions.onChange;
   const onExpand = windowDimensions.onExpand;
   const borderGradient = windowDimensions.borderGradient;
-  ({ wrapperStyle, children, extraContent } = windowDimensions);
-  const merged = Object.assign(windowDimensions, Object.assign({ startHeight: 0, contentHeight: 0, maxHeight: 0, hasEverExpanded: 0, windowDimensions: 0, wrapperStyle: 0, onChange: 0, onExpand: 0, children: 0, borderGradient: 0, extraContent: 0 }));
+  ({ wrapperStyle, children, extraContent, ref } = windowDimensions);
+  const merged = Object.assign(windowDimensions, Object.assign({ startHeight: 0, contentHeight: 0, maxHeight: 0, hasEverExpanded: 0, windowDimensions: 0, wrapperStyle: 0, onChange: 0, onExpand: 0, children: 0, borderGradient: 0, extraContent: 0, ref: 0 }));
   startHeight = undefined;
   maxHeight = undefined;
   let c6;
@@ -771,9 +739,9 @@ let closure_24 = forwardRef2(ReactCompilerGating.isReactCompilerEnabled() ? ((on
   }
   items3 = [tmp10Result, extraContent];
   return tmp12(tmp3Result, obj3);
-}));
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Background(arg0) {
   let tmp2;
   const obj = react2;
   const cResult = obj.c(2);
@@ -788,13 +756,13 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = cResult[1];
   }
   return tmp2;
-}) : ((arg0) => {
+}) : (function Background(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
   return closure_20(authStore, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function GradientBackground(arg0) {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(5);
@@ -822,7 +790,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp3;
   cResult[4] = tmp9;
   tmp7 = tmp9;
-}) : ((arg0) => {
+}) : (function GradientBackground(arg0) {
   let obj2;
   const obj = { children: closure_20(authStore, obj2) };
   const tmp = closure_22(false);
@@ -831,7 +799,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return closure_20(authStore, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((width) => {
+let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConstrainedContainerStyle(width) {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
@@ -845,7 +813,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((width) => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : ((width) => {
+}) : (function useConstrainedContainerStyle(width) {
   width = width.width;
   const items = [width];
   return react.useMemo(() => {
@@ -854,14 +822,14 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((width) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAnimatedIndex(arg0) {
   let sharedValue = arg0;
   const obj = ReanimatedRexport;
   if (arg0 == null) {
     sharedValue = obj.useSharedValue(-1);
   }
   return sharedValue;
-}) : ((arg0) => {
+}) : (function useAnimatedIndex(arg0) {
   let sharedValue = arg0;
   const obj = ReanimatedRexport;
   if (arg0 == null) {
@@ -875,9 +843,8 @@ const __initData3 = { code: "function BottomSheetNativeTsx3(isVisuallyClosed){co
 const __initData4 = { code: "function BottomSheetNativeTsx4(){const{animatedIndex}=this.__closure;return animatedIndex.get()<=-1;}" };
 const __initData5 = { code: "function BottomSheetNativeTsx5(){const{animatedIsVisuallyClosed}=this.__closure;return animatedIsVisuallyClosed.get();}" };
 const __initData6 = { code: "function BottomSheetNativeTsx6(isVisuallyClosed){const{transitionState,runOnJS,onLeave}=this.__closure;if(isVisuallyClosed&&transitionState==='exiting'){runOnJS(onLeave)();}}" };
-const forwardRef3 = react.forwardRef;
 ReactCompilerGating = ReactCompilerGating_mod;
-const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled() ? ((backdropChildren, arg1) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(backdropChildren) {
   let accessibilityLabel;
   let backdropOpacity;
   let backgroundStyles;
@@ -901,26 +868,28 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
   let obj7;
   let onLeave;
   let opacity;
+  let ref;
   let scrollable;
   let showGradient;
   let startExpanded;
   let startHeight;
   let tmp12;
-  let tmp17;
-  let tmp22;
-  let tmp25;
+  let tmp13;
+  let tmp18;
+  let tmp23;
   let tmp26;
   let tmp27;
   let tmp28;
   let tmp29;
+  let tmp30;
   let tmp7;
   let tmp8;
-  let tmp81;
+  let tmp80;
   let tmp9;
   let tmp = _require;
   let tmp2 = dependencyMap;
   let obj = require("react");
-  const cResult = obj.c(101);
+  const cResult = obj.c(102);
   if (cResult[0] !== backdropChildren) {
     ({ scrollable, startHeight, maxHeight, containerHeight, startExpanded, backdropOpacity } = backdropChildren);
     importDefault = backdropOpacity;
@@ -934,7 +903,7 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
     closure_5 = onExpand;
     const onDismiss = backdropChildren.onDismiss;
     closure_4 = onDismiss;
-    ({ keyboardShouldPersistTaps, children, backgroundStyles, contentStyles, bodyStyles, borderGradient, showGradient, extraContent, contentHeight } = backdropChildren);
+    ({ keyboardShouldPersistTaps, children, backgroundStyles, contentStyles, bodyStyles, borderGradient, showGradient, extraContent, contentHeight, ref } = backdropChildren);
     const tmp6 = close(backdropChildren, closure_5);
     cResult[0] = backdropChildren;
     cResult[1] = backdropChildren;
@@ -956,39 +925,42 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
     cResult[17] = onDismiss;
     cResult[18] = onExpand;
     cResult[19] = tmp6;
-    cResult[20] = showGradient;
-    cResult[21] = startHeight;
-    cResult[22] = scrollable;
-    cResult[23] = startExpanded;
-    cResult[24] = handleDisabled;
+    cResult[20] = ref;
+    cResult[21] = showGradient;
+    cResult[22] = startHeight;
+    cResult[23] = scrollable;
+    cResult[24] = startExpanded;
+    cResult[25] = handleDisabled;
     tmp7 = handleDisabled;
     tmp8 = startExpanded;
     tmp9 = scrollable;
-    tmp12 = tmp6;
-    tmp17 = header;
-    tmp22 = contentStyles;
-    tmp25 = children;
-    tmp26 = borderGradient;
-    tmp27 = bodyStyles;
-    tmp28 = backgroundStyles;
-    tmp29 = backdropOpacity;
+    tmp12 = ref;
+    tmp13 = tmp6;
+    tmp18 = header;
+    tmp23 = contentStyles;
+    tmp26 = children;
+    tmp27 = borderGradient;
+    tmp28 = bodyStyles;
+    tmp29 = backgroundStyles;
+    tmp30 = backdropOpacity;
   } else {
     _require = cResult[1];
     importDefault = cResult[2];
-    tmp28 = cResult[3];
-    tmp27 = cResult[4];
-    tmp26 = cResult[5];
-    tmp25 = cResult[6];
-    tmp22 = cResult[9];
+    tmp29 = cResult[3];
+    tmp28 = cResult[4];
+    tmp27 = cResult[5];
+    tmp26 = cResult[6];
+    tmp23 = cResult[9];
     dependencyMap = cResult[10];
     closure_3 = cResult[12];
-    tmp17 = cResult[14];
+    tmp18 = cResult[14];
     closure_4 = cResult[17];
     closure_5 = cResult[18];
-    tmp12 = cResult[19];
-    tmp9 = cResult[22];
-    tmp8 = cResult[23];
-    tmp7 = cResult[24];
+    tmp13 = cResult[19];
+    tmp12 = cResult[20];
+    tmp9 = cResult[23];
+    tmp8 = cResult[24];
+    tmp7 = cResult[25];
   }
   let obj2 = onLeave;
   const context = onLeave.useContext(reactDefault);
@@ -996,40 +968,40 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
   close = context.close;
   onLeave = context.onLeave;
   const registerDismissHandler = context.registerDismissHandler;
-  const tmp36 = useSafeAreaInsetsDefault();
-  const tmp37 = closure_22(undefined !== tmp7 && tmp7, Math.max(tmp36.bottom, closure_19), undefined !== tmp9 && tmp9);
-  onLeave.useRef(null);
-  [r10118, closure_11] = transitionState(onLeave.useState(undefined !== tmp8 && tmp8), 2);
+  const tmp37 = useSafeAreaInsetsDefault();
+  const tmp38 = closure_22(undefined !== tmp7 && tmp7, Math.max(tmp37.bottom, closure_19), undefined !== tmp9 && tmp9);
+  const ref1 = onLeave.useRef(null);
+  [r10121, closure_11] = transitionState(onLeave.useState(undefined !== tmp8 && tmp8), 2);
   transitionState(onLeave.useState(undefined !== tmp8 && tmp8), 2);
   closure_12 = onLeave.useRef(false);
-  const ref = onLeave.useRef(true);
-  onLeave.useContext(tmp(4602).AccessibilityPreferencesContext).reducedMotion.enabled ? closure_14 : ref;
-  if (cResult[25] === tmp14) {
-    let tmp41;
+  ref = onLeave.useRef(true);
+  onLeave.useContext(tmp(4794).AccessibilityPreferencesContext).reducedMotion.enabled ? closure_14 : ref;
+  if (cResult[26] === tmp15) {
     let tmp42;
-    if (cResult[26] === registerDismissHandler) {
-      tmp41 = cResult[27];
+    let tmp43;
+    if (cResult[27] === registerDismissHandler) {
       tmp42 = cResult[28];
+      tmp43 = cResult[29];
     }
-    const layoutEffect = obj2.useLayoutEffect(tmp41, tmp42);
-    let tmpResult = tmp(6655);
-    const bottomSheetImperativeHandle = tmpResult.useBottomSheetImperativeHandle(arg1, ref);
-    if (cResult[29] === close) {
+    const layoutEffect = obj2.useLayoutEffect(tmp42, tmp43);
+    let tmpResult = tmp(6832);
+    const bottomSheetImperativeHandle = tmpResult.useBottomSheetImperativeHandle(tmp12, ref1);
+    if (cResult[30] === close) {
       let tmp46;
       let tmp47;
-      if (cResult[30] === transitionState) {
-        tmp46 = cResult[31];
-        tmp47 = cResult[32];
+      if (cResult[31] === transitionState) {
+        tmp46 = cResult[32];
+        tmp47 = cResult[33];
       }
       const effect = obj2.useEffect(tmp46, tmp47);
-      if (cResult[33] === tmp14) {
+      if (cResult[34] === tmp15) {
         let tmp49;
-        if (cResult[34] === onLeave) {
-          tmp49 = cResult[35];
+        if (cResult[35] === onLeave) {
+          tmp49 = cResult[36];
         }
-        const tmpResult4 = tmp(5597);
+        const tmpResult4 = tmp(5392);
         const unmountEffect = tmpResult4.useUnmountEffect(tmp49);
-        if (cResult[36] !== close) {
+        if (cResult[37] !== close) {
           function ie(arg0, arg1, arg2, arg3, arg4) {
             if (arg4 !== BottomSheetModal.ANIMATION_SOURCE.KEYBOARD) {
               if (-1 === arg1) {
@@ -1040,17 +1012,17 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
               }
               const current = arg1 > -1 && closure_12.current;
               if (current) {
-                const current2 = ref.current;
+                const current2 = ref1.current;
                 if (current2 != null) {
                   current2.forceClose();
                 }
               }
             }
           }
-          cResult[36] = close;
-          cResult[37] = ie;
+          cResult[37] = close;
+          cResult[38] = ie;
         }
-        if (cResult[38] !== tmp13) {
+        if (cResult[39] !== tmp14) {
           class He {
             constructor() {
               closure_11(true);
@@ -1059,8 +1031,8 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
               }
             }
           }
-          cResult[38] = tmp13;
-          cResult[39] = He;
+          cResult[39] = tmp14;
+          cResult[40] = He;
         } else {
           class He {
             constructor() {
@@ -1071,7 +1043,7 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
             }
           }
         }
-        const tmp54 = closure_28(tmp12.animatedIndex);
+        const tmp54 = closure_28(tmp13.animatedIndex);
         closure_14 = tmp54;
         function ke() {
           return closure_14.get() <= -1;
@@ -1080,9 +1052,9 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
         ke.__closure = obj3;
         ke.__workletHash = 4341912681188;
         ke.__initData = __initData;
-        const tmpResult5 = tmp(4618);
+        const tmpResult5 = tmp(4810);
         const derivedValue = tmpResult5.useDerivedValue(ke);
-        const tmpResult6 = tmp(4618);
+        const tmpResult6 = tmp(4810);
         class Oe {
           constructor() {
             return derivedValue.get();
@@ -1102,43 +1074,61 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
           }
         }
         const useAnimatedReaction = tmpResult6.useAnimatedReaction;
-        De.__closure = { transitionState, runOnJS: tmp(4618).runOnJS, onLeave };
+        De.__closure = { transitionState, runOnJS: tmp(4810).runOnJS, onLeave };
         De.__workletHash = 1921852093213;
         De.__initData = __initData3;
-        const obj5 = { transitionState, runOnJS: tmp(4618).runOnJS, onLeave };
+        const obj5 = { transitionState, runOnJS: tmp(4810).runOnJS, onLeave };
         const animatedReaction = useAnimatedReaction(Oe, De);
-        if (cResult[40] !== tmp21) {
-          class He {
+        if (cResult[41] !== tmp22) {
+          class Be {
             constructor() {
-              closure_11(true);
-              if (closure_5 != null) {
-                closure_5();
-              }
+              obj = {
+                accessibilityLabel: closure_2,
+                onPress() {
+                              const current = ref.current;
+                              if (current != null) {
+                                current.close();
+                              }
+                            }
+              };
+              return jsx(closure_0(closure_2[22]).ActionSheetHeaderBar, obj);
             }
           }
-          cResult[40] = tmp21;
-          cResult[41] = tmp62;
+          cResult[41] = tmp22;
+          cResult[42] = Be;
         } else {
-          class He {
+          class Be {
             constructor() {
-              closure_11(true);
-              if (closure_5 != null) {
-                closure_5();
-              }
+              obj = {
+                accessibilityLabel: closure_2,
+                onPress() {
+                              const current = ref.current;
+                              if (current != null) {
+                                current.close();
+                              }
+                            }
+              };
+              return jsx(closure_0(closure_2[22]).ActionSheetHeaderBar, obj);
             }
           }
         }
-        if (cResult[42] === tmp30) {
-          let tmp65;
-          class He {
+        if (cResult[43] === tmp31) {
+          let tmp64;
+          class Be {
             constructor() {
-              closure_11(true);
-              if (closure_5 != null) {
-                closure_5();
-              }
+              obj = {
+                accessibilityLabel: closure_2,
+                onPress() {
+                              const current = ref.current;
+                              if (current != null) {
+                                current.close();
+                              }
+                            }
+              };
+              return jsx(closure_0(closure_2[22]).ActionSheetHeaderBar, obj);
             }
           }
-          if (cResult[45] !== tmp19) {
+          if (cResult[46] !== tmp20) {
             class Me {
               constructor(arg0) {
                 let tmpResult;
@@ -1152,8 +1142,8 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
                 return closure_20(BottomSheetFooter, obj);
               }
             }
-            cResult[45] = tmp19;
-            cResult[46] = Me;
+            cResult[46] = tmp20;
+            cResult[47] = Me;
           } else {
             class Me {
               constructor(arg0) {
@@ -1170,7 +1160,7 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
             }
           }
           const _Symbol = Symbol;
-          if (cResult[47] === Symbol.for("react.memo_cache_sentinel")) {
+          if (cResult[48] === Symbol.for("react.memo_cache_sentinel")) {
             class Me {
               constructor(arg0) {
                 let tmpResult;
@@ -1184,8 +1174,8 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
                 return closure_20(BottomSheetFooter, obj);
               }
             }
-            cResult[47] = tmp66;
-            tmp65 = tmp66;
+            cResult[48] = tmp65;
+            tmp64 = tmp65;
           } else {
             class Me {
               constructor(arg0) {
@@ -1201,10 +1191,10 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
               }
             }
           }
-          const tmp67 = useWindowDimensionsDefault(tmp65);
-          closure_27(tmp67);
+          const tmp66 = useWindowDimensionsDefault(tmp64);
+          closure_27(tmp66);
           useColorThemeBackgroundDefault();
-          if (tmp12.backgroundComponent == null) {
+          if (tmp13.backgroundComponent == null) {
             class Me {
               constructor(arg0) {
                 let tmpResult;
@@ -1219,7 +1209,7 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
               }
             }
           }
-          if (cResult[48] === tmp37.wrapper) {
+          if (cResult[49] === tmp38.wrapper) {
             class Me {
               constructor(arg0) {
                 let tmpResult;
@@ -1233,7 +1223,7 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
                 return closure_20(BottomSheetFooter, obj);
               }
             }
-            if (cResult[51] === tmp28) {
+            if (cResult[52] === tmp29) {
               class Me {
                 constructor(arg0) {
                   let tmpResult;
@@ -1277,7 +1267,7 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
                   }
                 }
               }
-              if (cResult[54] === tmp22) {
+              if (cResult[55] === tmp23) {
                 class Me {
                   constructor(arg0) {
                     let tmpResult;
@@ -1291,7 +1281,7 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
                     return closure_20(BottomSheetFooter, obj);
                   }
                 }
-                if (cResult[57] === tmp17) {
+                if (cResult[58] === tmp18) {
                   class Me {
                     constructor(arg0) {
                       let tmpResult;
@@ -1305,7 +1295,7 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
                       return closure_20(BottomSheetFooter, obj);
                     }
                   }
-                  if (cResult[60] === tmp27) {
+                  if (cResult[61] === tmp28) {
                     class Me {
                       constructor(arg0) {
                         let tmpResult;
@@ -1319,7 +1309,7 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
                         return closure_20(BottomSheetFooter, obj);
                       }
                     }
-                    if (cResult[63] === tmp25) {
+                    if (cResult[64] === tmp26) {
                       class Me {
                         constructor(arg0) {
                           let tmpResult;
@@ -1333,7 +1323,7 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
                           return closure_20(BottomSheetFooter, obj);
                         }
                       }
-                      if (cResult[66] === tmp76) {
+                      if (cResult[67] === tmp75) {
                         class Me {
                           constructor(arg0) {
                             let tmpResult;
@@ -1348,34 +1338,34 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
                           }
                         }
                       }
-                      const obj6 = { children: closure_21(ref, obj7) };
-                      obj7 = { style: tmp76, children: items };
-                      items = [tmp77, tmp81];
-                      const LayerScope = tmp(6658).LayerScope;
-                      cResult[66] = tmp76;
-                      cResult[67] = tmp77;
-                      const tmp89 = closure_20(LayerScope, obj6);
+                      const obj6 = { children: closure_21(ref1, obj7) };
+                      obj7 = { style: tmp75, children: items };
+                      items = [tmp76, tmp80];
+                      const LayerScope = tmp(6835).LayerScope;
+                      cResult[67] = tmp75;
+                      cResult[68] = tmp76;
+                      const tmp88 = closure_20(LayerScope, obj6);
                       class Oe {
                         constructor() {
                           return derivedValue.get();
                         }
                       }
-                      cResult[69] = tmp89;
+                      cResult[70] = tmp88;
                     }
-                    const obj8 = { style: tmp80, children: tmp25 };
-                    const tmp84 = closure_20(ref, obj8);
-                    cResult[63] = tmp25;
-                    cResult[64] = tmp80;
-                    cResult[65] = tmp84;
-                    tmp81 = tmp84;
+                    const obj8 = { style: tmp79, children: tmp26 };
+                    const tmp83 = closure_20(ref1, obj8);
+                    cResult[64] = tmp26;
+                    cResult[65] = tmp79;
+                    cResult[66] = tmp83;
+                    tmp80 = tmp83;
                   }
-                  let items1 = [tmp37.body, tmp27];
-                  cResult[60] = tmp27;
-                  cResult[61] = tmp37.body;
-                  cResult[62] = items1;
+                  let items1 = [tmp38.body, tmp28];
+                  cResult[61] = tmp28;
+                  cResult[62] = tmp38.body;
+                  cResult[63] = items1;
                 }
-                let tmp78 = null != tmp17;
-                if (tmp78) {
+                let tmp77 = null != tmp18;
+                if (tmp77) {
                   class Me {
                     constructor(arg0) {
                       let tmpResult;
@@ -1389,32 +1379,32 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
                       return closure_20(BottomSheetFooter, obj);
                     }
                   }
-                  const obj9 = { style: tmp37.header, children: tmp17 };
-                  tmp78 = closure_20(ref, obj9);
+                  const obj9 = { style: tmp38.header, children: tmp18 };
+                  tmp77 = closure_20(ref1, obj9);
                 }
-                cResult[57] = tmp17;
-                cResult[58] = tmp37.header;
-                cResult[59] = tmp78;
+                cResult[58] = tmp18;
+                cResult[59] = tmp38.header;
+                cResult[60] = tmp77;
               }
-              const items2 = [tmp37.content, tmp22];
-              cResult[54] = tmp22;
-              cResult[55] = tmp37.content;
-              cResult[56] = items2;
+              const items2 = [tmp38.content, tmp23];
+              cResult[55] = tmp23;
+              cResult[56] = tmp38.content;
+              cResult[57] = items2;
             }
-            const items3 = [tmp37.background, tmp28];
-            cResult[51] = tmp28;
-            cResult[52] = tmp37.background;
-            cResult[53] = items3;
+            const items3 = [tmp38.background, tmp29];
+            cResult[52] = tmp29;
+            cResult[53] = tmp38.background;
+            cResult[54] = items3;
           }
-          const items4 = [tmp37.wrapper, null != tmp26 && tmp37.wrapperWithBorder];
-          cResult[48] = tmp37.wrapper;
+          const items4 = [tmp38.wrapper, null != tmp27 && tmp38.wrapperWithBorder];
+          cResult[49] = tmp38.wrapper;
           class Oe {
             constructor() {
               return derivedValue.get();
             }
           }
-          cResult[49] = null != tmp26 && tmp37.wrapperWithBorder;
-          cResult[50] = items4;
+          cResult[50] = null != tmp27 && tmp38.wrapperWithBorder;
+          cResult[51] = items4;
         }
         class Le {
           constructor(animatedIndex) {
@@ -1429,9 +1419,9 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
             return closure_21(authStore, obj);
           }
         }
-        cResult[42] = tmp30;
-        cResult[43] = tmp29;
-        cResult[44] = Le;
+        cResult[43] = tmp31;
+        cResult[44] = tmp30;
+        cResult[45] = Le;
       }
       function oe() {
         if (ref.current) {
@@ -1441,9 +1431,9 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
         }
         onLeave();
       }
-      cResult[33] = tmp14;
-      cResult[34] = onLeave;
-      cResult[35] = oe;
+      cResult[34] = tmp15;
+      cResult[35] = onLeave;
+      cResult[36] = oe;
       tmp49 = oe;
     }
     function re() {
@@ -1453,8 +1443,8 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
         current = closure_12.current;
       }
       if (!current) {
-        closure_13.current = false;
-        const current2 = ref.current;
+        ref.current = false;
+        const current2 = ref1.current;
         if (current2 != null) {
           current2.forceClose();
         }
@@ -1465,24 +1455,24 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
       }
     }
     const items5 = [transitionState, close];
-    cResult[29] = close;
-    cResult[30] = transitionState;
-    cResult[31] = re;
-    cResult[32] = items5;
+    cResult[30] = close;
+    cResult[31] = transitionState;
+    cResult[32] = re;
+    cResult[33] = items5;
     tmp47 = items5;
     tmp46 = re;
   }
   function te() {
     registerDismissHandler(closure_4);
   }
-  const items6 = [tmp14, registerDismissHandler];
-  cResult[25] = tmp14;
-  cResult[26] = registerDismissHandler;
-  cResult[27] = te;
-  cResult[28] = items6;
-  tmp42 = items6;
-  tmp41 = te;
-}) : ((scrollable, arg1) => {
+  const items6 = [tmp15, registerDismissHandler];
+  cResult[26] = tmp15;
+  cResult[27] = registerDismissHandler;
+  cResult[28] = te;
+  cResult[29] = items6;
+  tmp43 = items6;
+  tmp42 = te;
+}) : (function BottomSheet(scrollable) {
   let LayerScope;
   let backgroundStyles;
   let bodyStyles;
@@ -1503,6 +1493,7 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
   let keyboardShouldPersistTaps;
   let maxHeight;
   let obj6;
+  let ref;
   let showGradient;
   let startExpanded;
   let startHeight;
@@ -1528,8 +1519,8 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
   const onExpand = scrollable.onExpand;
   const onDismiss = scrollable.onDismiss;
   ({ borderGradient, showGradient } = scrollable);
-  ({ keyboardShouldPersistTaps, children, backgroundStyles, contentStyles, bodyStyles, extraContent, contentHeight } = scrollable);
-  let merged = Object.assign(scrollable, Object.assign({ scrollable: 0, startHeight: 0, maxHeight: 0, containerHeight: 0, startExpanded: 0, backdropOpacity: 0, backdropChildren: 0, header: 0, handleComponent: 0, handleDisabled: 0, dismissAccessibilityLabel: 0, footer: 0, onExpand: 0, onDismiss: 0, keyboardShouldPersistTaps: 0, children: 0, backgroundStyles: 0, contentStyles: 0, bodyStyles: 0, borderGradient: 0, showGradient: 0, extraContent: 0, contentHeight: 0 }));
+  ({ keyboardShouldPersistTaps, children, backgroundStyles, contentStyles, bodyStyles, extraContent, contentHeight, ref } = scrollable);
+  let merged = Object.assign(scrollable, Object.assign({ scrollable: 0, startHeight: 0, maxHeight: 0, containerHeight: 0, startExpanded: 0, backdropOpacity: 0, backdropChildren: 0, header: 0, handleComponent: 0, handleDisabled: 0, dismissAccessibilityLabel: 0, footer: 0, onExpand: 0, onDismiss: 0, keyboardShouldPersistTaps: 0, children: 0, backgroundStyles: 0, contentStyles: 0, bodyStyles: 0, borderGradient: 0, showGradient: 0, extraContent: 0, contentHeight: 0, ref: 0 }));
   let onLeave;
   let closure_14;
   let obj = onLeave;
@@ -1542,19 +1533,19 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
   const rect = backdropChildren(dismissAccessibilityLabel[11])();
   const top = rect.top;
   const tmp5 = closure_22(handleDisabled, Math.max(rect.bottom, closure_19), flag);
-  onLeave.useRef(null);
+  const ref1 = onLeave.useRef(null);
   const tmp7 = transitionState(onLeave.useState(startExpanded), 2);
   let closure_11 = tmp7[1];
   const first = tmp7[0];
   closure_12 = onLeave.useRef(false);
-  const ref = onLeave.useRef(true);
+  ref = onLeave.useRef(true);
   let items = [onDismiss, registerDismissHandler];
   const tmp10 = onLeave.useContext(backdropOpacity(dismissAccessibilityLabel[19]).AccessibilityPreferencesContext).reducedMotion.enabled ? closure_14 : ref;
   const layoutEffect = obj.useLayoutEffect(() => {
     registerDismissHandler(onDismiss);
   }, items);
   const tmp9Result = backdropOpacity(dismissAccessibilityLabel[20]);
-  const bottomSheetImperativeHandle = tmp9Result.useBottomSheetImperativeHandle(arg1, ref);
+  const bottomSheetImperativeHandle = tmp9Result.useBottomSheetImperativeHandle(ref, ref1);
   let items1 = [transitionState, close];
   const effect = obj.useEffect(() => {
     let current = "exiting" !== transitionState;
@@ -1563,8 +1554,8 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
       current = closure_12.current;
     }
     if (!current) {
-      closure_13.current = false;
-      const current2 = ref.current;
+      ref.current = false;
+      const current2 = ref1.current;
       if (current2 != null) {
         current2.forceClose();
       }
@@ -1595,7 +1586,7 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
       }
       const current = arg1 > -1 && closure_12.current;
       if (current) {
-        const current2 = ref.current;
+        const current2 = ref1.current;
         if (current2 != null) {
           current2.forceClose();
         }
@@ -1610,23 +1601,20 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
   }, items3);
   const tmp17 = closure_28(merged.animatedIndex);
   closure_14 = tmp17;
-  function pe() {
+  function be() {
     return closure_14.get() <= -1;
   }
-  pe.__closure = { animatedIndex: tmp17 };
-  pe.__workletHash = 11856440255681;
-  pe.__initData = __initData4;
+  be.__closure = { animatedIndex: tmp17 };
+  be.__workletHash = 11856440255681;
+  be.__initData = __initData4;
   const tmp9Result6 = backdropOpacity(dismissAccessibilityLabel[17]);
-  const derivedValue = tmp9Result6.useDerivedValue(pe);
-  const tmp9Result7 = backdropOpacity(dismissAccessibilityLabel[17]);
-  class Se {
-    constructor() {
-      return derivedValue.get();
-    }
+  const derivedValue = tmp9Result6.useDerivedValue(be);
+  function pe() {
+    return derivedValue.get();
   }
-  Se.__closure = { animatedIsVisuallyClosed: derivedValue };
-  Se.__workletHash = 888700167933;
-  Se.__initData = __initData5;
+  pe.__closure = { animatedIsVisuallyClosed: derivedValue };
+  pe.__workletHash = 888700167933;
+  pe.__initData = __initData5;
   function me(arg0) {
     const tmp = arg0 && "exiting" === transitionState;
     if (tmp) {
@@ -1634,11 +1622,12 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
       obj.runOnJS(onLeave)();
     }
   }
+  const tmp9Result7 = backdropOpacity(dismissAccessibilityLabel[17]);
   let obj2 = { transitionState, runOnJS: tmp9(tmp3[17]).runOnJS, onLeave };
   me.__closure = obj2;
   me.__workletHash = 9237161324088;
   me.__initData = __initData6;
-  const animatedReaction = tmp9Result7.useAnimatedReaction(Se, me);
+  const animatedReaction = tmp9Result7.useAnimatedReaction(pe, me);
   const items4 = [dismissAccessibilityLabel];
   const items5 = [backdropOpacity, backdropChildren];
   const callback2 = obj.useCallback(() => {
@@ -1684,7 +1673,7 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
   if (backgroundComponent == null) {
     backgroundComponent = showGradient ? closure_26 : closure_25;
   }
-  const obj3 = { ref, accessible: !tmp9Result8.isIOS() && undefined, accessibilityRole: "none", accessibilityLabel: "", startHeight, contentHeight, maxHeight, containerHeight, startExpanded, hasEverExpanded: first, windowDimensions: tmp23, wrapperStyle: items7, onExpand: callback1, enablePanDownToClose: true, containerStyle: tmp24, backgroundStyle: items8, topInset: top, keyboardBehavior: str, keyboardBlurBehavior: "restore", keyboardShouldPersistTaps, animationConfigs: tmp10, overrideReduceMotion: backdropOpacity(dismissAccessibilityLabel[17]).ReduceMotion.Never, handleIndicatorStyle: tmp5.handleIndicator, handleComponent: tmp29, backdropComponent: callback3, backgroundComponent, renderFooter: callback4, animatedIndex: tmp17, onAnimate: callback, onClose: onLeave, borderGradient, extraContent, children: closure_20(LayerScope, obj6) };
+  const obj3 = { ref: ref1, accessible: !tmp9Result8.isIOS() && undefined, accessibilityRole: "none", accessibilityLabel: "", startHeight, contentHeight, maxHeight, containerHeight, startExpanded, hasEverExpanded: first, windowDimensions: tmp23, wrapperStyle: items7, onExpand: callback1, enablePanDownToClose: true, containerStyle: tmp24, backgroundStyle: items8, topInset: top, keyboardBehavior: str, keyboardBlurBehavior: "restore", keyboardShouldPersistTaps, animationConfigs: tmp10, overrideReduceMotion: backdropOpacity(dismissAccessibilityLabel[17]).ReduceMotion.Never, handleIndicatorStyle: tmp5.handleIndicator, handleComponent: tmp29, backdropComponent: callback3, backgroundComponent, renderFooter: callback4, animatedIndex: tmp17, onAnimate: callback, onClose: onLeave, borderGradient, extraContent, children: closure_20(LayerScope, obj6) };
   tmp9Result8 = backdropOpacity(dismissAccessibilityLabel[8]);
   items7 = [tmp5.wrapper, null != borderGradient && tmp5.wrapperWithBorder];
   items8 = [tmp5.background, backgroundStyles];
@@ -1712,8 +1701,8 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
   items10 = [tmp27Result, ];
   const obj7 = { style: items11, children };
   items11 = [tmp5.body, bodyStyles];
-  obj6 = { children: tmp30(ref, obj4) };
-  items10[1] = closure_20(ref, obj7);
+  obj6 = { children: tmp30(ref1, obj4) };
+  items10[1] = closure_20(ref1, obj7);
   const tmp27Result3 = closure_20(tmp25, obj3);
   let tmp27Result4 = tmp27Result3;
   if (showGradient) {
@@ -1726,7 +1715,7 @@ const forwardRef3Result = forwardRef3(ReactCompilerGating.isReactCompilerEnabled
     tmp27Result4 = tmp27(ThemeContextProvider, obj8);
   }
   return tmp27Result4;
-}));
+});
 let result = size.fileFinishedImporting("design/components/Sheet/native/BottomSheet.native.tsx");
 
-export const BottomSheet = forwardRef3Result;
+export const BottomSheet = tmp5;

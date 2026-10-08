@@ -1,27 +1,27 @@
-// Module ID: 8427
-// Function ID: 8428
+// Module ID: 8841
+// Function ID: 8842
 // Name: GuildBadgeV2
-// Dependencies: [109, 19, 21, 4896, 558, 576, 1188, 4735, 8428, 8430, 8429, 2]
+// Dependencies: [109, 19, 21, 5090, 558, 576, 1200, 4929, 8842, 8839, 8840, 2]
 // Exports: hasGuildBadge
 
-// Module 8427 (GuildBadgeV2)
+// Module 8841 (GuildBadgeV2)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import native from "native" /* 1188 */;
-import shared from "shared" /* 4735 */;
-import GuildBadgeImageSource from "GuildBadgeImageSource" /* 8428 */;
-import BadgeCategory from "BadgeCategory" /* 8429 */;
-import GuildTraits from "GuildTraits" /* 8430 */;
+import native from "native" /* 1200 */;
+import shared from "shared" /* 4929 */;
+import GuildTraits from "GuildTraits" /* 8839 */;
+import BadgeCategory from "BadgeCategory" /* 8840 */;
+import GuildBadgeImageSource from "GuildBadgeImageSource" /* 8842 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_2 = ["guild", "size"];
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ icon: { marginRight: 8 } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgeV2(arg0) {
   let MEDIUM;
   let guild;
   let tmp4;
@@ -44,7 +44,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     MEDIUM = cResult[3];
   }
   if (undefined === MEDIUM) {
-    MEDIUM = tmp(1188).Icon.Sizes.MEDIUM;
+    MEDIUM = tmp(1200).Icon.Sizes.MEDIUM;
   }
   const tmp9 = closure_5();
   const tmpResult = shared;
@@ -70,7 +70,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
         }
-        const Icon = tmp(1188).Icon;
+        const Icon = tmp(1200).Icon;
         const merged = Object.assign(tmp5);
         const tmp18 = <Icon size={MEDIUM} source={tmp10} style={tmp9.icon} disableColor />;
         cResult[7] = tmp10;
@@ -89,7 +89,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[6] = guildBadgeImageSource;
     tmp10 = guildBadgeImageSource;
   }
-}) : ((arg0) => {
+}) : (function GuildBadgeV2(arg0) {
   let guild;
   ({ guild, size } = arg0);
   if (size === undefined) {
@@ -105,7 +105,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const guildBadgeImageSource = tmp5Result.getGuildBadgeImageSource(guild, tmp8);
     let tmp10 = null;
     if (null != guildBadgeImageSource) {
-      const Icon = tmp5(1188).Icon;
+      const Icon = tmp5(1200).Icon;
       const merged1 = Object.assign(merged);
       tmp10 = <Icon size={size} source={guildBadgeImageSource} style={tmp4.icon} disableColor />;
     }

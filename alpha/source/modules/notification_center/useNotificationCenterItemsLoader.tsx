@@ -1,27 +1,27 @@
-// Module ID: 16395
-// Function ID: 16396
+// Module ID: 16655
+// Function ID: 16656
 // Name: useNotificationCenterItemsLoader
-// Dependencies: [5, 32, 19, 7135, 7137, 16394, 5078, 558, 576, 504, 16396, 6612, 7932, 2]
+// Dependencies: [5, 32, 19, 6083, 6062, 16654, 5972, 558, 576, 504, 16656, 6789, 8351, 2]
 
-// Module 16395 (useNotificationCenterItemsLoader)
-import ReadStateConstants from "ReadStateConstants" /* 5078 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 6612 */;
-import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 16396 */;
+// Module 16655 (useNotificationCenterItemsLoader)
+import ReadStateConstants from "ReadStateConstants" /* 5972 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 6789 */;
+import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 16656 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RecentMentionsStore from "RecentMentionsStore" /* 7135 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7137 */;
-import NotificationCenterStore from "NotificationCenterStore" /* 16394 */;
+import RecentMentionsStore from "RecentMentionsStore" /* 6083 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6062 */;
+import NotificationCenterStore from "NotificationCenterStore" /* 16654 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let _require, c2, c3, isFocused;
+let _require, c2, c3;
 
 let _slicedToArray = _slicedToArray_mod;
 const ReadStateTypes = ReadStateConstants.ReadStateTypes;
 let c10 = 100;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isFocused) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNotificationCenterItemsLoader(isFocused) {
   let initialPageSize;
   let initialized;
   let isDesktop;
@@ -32,8 +32,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isFocused) => {
   let tmp12;
   let tmp15;
   let tmp16;
-  let tmp19;
   let tmp20;
+  let tmp21;
+  let tmp27;
   let tmp5;
   let tmp6;
   let withMentions;
@@ -68,12 +69,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isFocused) => {
   [tmp10, NotificationCenterItemsStore] = tmp9;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [NotificationCenterItemsStore];
-    const fn2 = function b() {
-      return { initialized: NotificationCenterItemsStore.initialized, loading: NotificationCenterItemsStore.loading, items: NotificationCenterItemsStore.items, hasMore: NotificationCenterItemsStore.hasMore, cursor: NotificationCenterItemsStore.cursor, errored: NotificationCenterItemsStore.errored };
-    };
+    class A {
+      constructor() {
+        return { initialized: NotificationCenterItemsStore.initialized, loading: NotificationCenterItemsStore.loading, items: NotificationCenterItemsStore.items, hasMore: NotificationCenterItemsStore.hasMore, cursor: NotificationCenterItemsStore.cursor, errored: NotificationCenterItemsStore.errored };
+      }
+    }
     cResult[2] = items2;
-    cResult[3] = fn2;
-    tmp12 = fn2;
+    cResult[3] = A;
+    tmp12 = A;
     tmp11 = items2;
   } else {
     tmp11 = cResult[2];
@@ -89,12 +92,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isFocused) => {
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     let tmp17 = closure_6;
     const items3 = [closure_6];
-    const fn3 = function w() {
-      return { everyoneFilter: closure_6.everyoneFilter, roleFilter: closure_6.roleFilter };
-    };
+    class A {
+      constructor() {
+        return { initialized: NotificationCenterItemsStore.initialized, loading: NotificationCenterItemsStore.loading, items: NotificationCenterItemsStore.items, hasMore: NotificationCenterItemsStore.hasMore, cursor: NotificationCenterItemsStore.cursor, errored: NotificationCenterItemsStore.errored };
+      }
+    }
     cResult[4] = items3;
-    cResult[5] = fn3;
-    tmp16 = fn3;
+    cResult[5] = tmp18;
+    tmp16 = tmp18;
     tmp15 = items3;
   } else {
     tmp15 = cResult[4];
@@ -105,7 +110,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isFocused) => {
   const roleFilter = stateFromStoresObject1.roleFilter;
   const everyoneFilter = stateFromStoresObject1.everyoneFilter;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn4 = function x() {
+    const fn2 = function x() {
       let obj = isFocused(isDesktop[10]);
       const result = obj.setNotificationCenterActive(true);
       return () => {
@@ -114,59 +119,68 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isFocused) => {
       };
     };
     const items4 = [];
-    cResult[6] = fn4;
+    class A {
+      constructor() {
+        return { initialized: NotificationCenterItemsStore.initialized, loading: NotificationCenterItemsStore.loading, items: NotificationCenterItemsStore.items, hasMore: NotificationCenterItemsStore.hasMore, cursor: NotificationCenterItemsStore.cursor, errored: NotificationCenterItemsStore.errored };
+      }
+    }
     let num7 = 7;
     cResult[7] = items4;
-    tmp20 = items4;
-    tmp19 = fn4;
+    tmp21 = items4;
+    tmp20 = fn2;
   } else {
-    tmp19 = cResult[6];
-    tmp20 = cResult[7];
+    tmp20 = cResult[6];
+    tmp21 = cResult[7];
   }
-  const effect = obj3.useEffect(tmp19, tmp20);
+  const effect = obj3.useEffect(tmp20, tmp21);
   if (cResult[8] === initialized) {
-    let tmp22;
     let tmp23;
+    let tmp24;
     if (cResult[9] === isFocused) {
-      tmp22 = cResult[10];
-      tmp23 = cResult[11];
+      tmp23 = cResult[10];
+      tmp24 = cResult[11];
     }
-    const effect1 = obj3.useEffect(tmp22, tmp23);
-    const tmp26 = navigatedAway(tmp2[12])();
-    let closure_15 = tmp26;
+    const effect1 = obj3.useEffect(tmp23, tmp24);
+    const tmp26 = navigatedAway;
+    class A {
+      constructor() {
+        return { initialized: NotificationCenterItemsStore.initialized, loading: NotificationCenterItemsStore.loading, items: NotificationCenterItemsStore.items, hasMore: NotificationCenterItemsStore.hasMore, cursor: NotificationCenterItemsStore.cursor, errored: NotificationCenterItemsStore.errored };
+      }
+    }
+    let closure_15 = tmp27;
     if (cResult[12] === errored) {
       if (cResult[13] === isDesktop) {
-        if (cResult[14] === tmp26) {
+        if (cResult[14] === tmp27) {
           if (cResult[15] === items) {
-            let tmp27;
             let tmp28;
+            let tmp29;
             if (cResult[16] === navigatedAway) {
-              tmp27 = cResult[17];
-              tmp28 = cResult[18];
+              tmp28 = cResult[17];
+              tmp29 = cResult[18];
             }
-            const effect2 = obj3.useEffect(tmp27, tmp28);
+            const effect2 = obj3.useEffect(tmp28, tmp29);
             if (cResult[19] === everyoneFilter) {
               if (cResult[20] === initialPageSize) {
                 if (cResult[21] === initialized) {
                   if (cResult[22] === isFocused) {
                     if (cResult[23] === roleFilter) {
                       if (cResult[24] === stateFromStores) {
-                        let tmp30;
                         let tmp31;
+                        let tmp32;
                         if (cResult[25] === (undefined !== withMentions && withMentions)) {
-                          tmp30 = cResult[26];
-                          tmp31 = cResult[27];
+                          tmp31 = cResult[26];
+                          tmp32 = cResult[27];
                         }
-                        const effect3 = obj3.useEffect(tmp30, tmp31);
+                        const effect3 = obj3.useEffect(tmp31, tmp32);
                         if (cResult[28] === cursor) {
                           if (cResult[29] === errored) {
                             if (cResult[30] === everyoneFilter) {
                               if (cResult[31] === hasMore) {
                                 if (cResult[32] === initialized) {
                                   if (cResult[33] === roleFilter) {
-                                    let tmp33;
+                                    let tmp34;
                                     if (cResult[34] === (undefined !== withMentions && withMentions)) {
-                                      tmp33 = cResult[35];
+                                      tmp34 = cResult[35];
                                     }
                                     const _Symbol = Symbol;
                                     class X {
@@ -195,20 +209,20 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isFocused) => {
                                       if (cResult[38] === hasMore) {
                                         if (cResult[39] === initialized) {
                                           if (cResult[40] === items) {
-                                            if (cResult[41] === tmp33) {
+                                            if (cResult[41] === tmp34) {
                                               if (cResult[42] === loading) {
-                                                let tmp36;
+                                                let tmp37;
                                                 if (cResult[43] === tmp10) {
-                                                  tmp36 = cResult[44];
+                                                  tmp37 = cResult[44];
                                                 }
-                                                return tmp36;
+                                                return tmp37;
                                               }
                                             }
                                           }
                                         }
                                       }
                                     }
-                                    let obj2 = { initialized: null, loading, items, hasMore, loadMore: tmp33, loadingMore: tmp10, setReadNotifItemToAcked: tmp35, errored };
+                                    let obj2 = { initialized: null, loading, items, hasMore, loadMore: tmp34, loadingMore: tmp10, setReadNotifItemToAcked: tmp36, errored };
                                     class Q {
                                       constructor() {
                                         return () => {
@@ -238,11 +252,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isFocused) => {
                                     cResult[38] = hasMore;
                                     cResult[39] = initialized;
                                     cResult[40] = items;
-                                    cResult[41] = tmp33;
+                                    cResult[41] = tmp34;
                                     cResult[42] = loading;
                                     cResult[43] = tmp10;
                                     cResult[44] = obj2;
-                                    tmp36 = obj2;
+                                    tmp37 = obj2;
                                   }
                                 }
                               }
@@ -356,9 +370,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isFocused) => {
                             }
                           }
                         });
-                        const fn5 = function() {
+                        function t16() {
                           return closure_0(...arguments);
-                        };
+                        }
                         class Q {
                           constructor() {
                             return () => {
@@ -391,8 +405,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isFocused) => {
                         cResult[32] = initialized;
                         cResult[33] = roleFilter;
                         cResult[34] = undefined !== withMentions && withMentions;
-                        cResult[35] = fn5;
-                        tmp33 = fn5;
+                        cResult[35] = t16;
+                        tmp34 = t16;
                       }
                     }
                   }
@@ -461,8 +475,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isFocused) => {
             cResult[25] = undefined !== withMentions && withMentions;
             cResult[26] = X;
             cResult[27] = items5;
-            tmp31 = items5;
-            tmp30 = X;
+            tmp32 = items5;
+            tmp31 = X;
           }
         }
       }
@@ -492,16 +506,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isFocused) => {
         };
       }
     }
-    const items6 = [navigatedAway, items, isDesktop, tmp26, errored];
+    const items6 = [navigatedAway, items, isDesktop, tmp27, errored];
     cResult[12] = errored;
     cResult[13] = isDesktop;
-    cResult[14] = tmp26;
+    cResult[14] = tmp27;
     cResult[15] = items;
     cResult[16] = navigatedAway;
     cResult[17] = Q;
     cResult[18] = items6;
-    tmp28 = items6;
-    tmp27 = Q;
+    tmp29 = items6;
+    tmp28 = Q;
   }
   class W {
     constructor() {
@@ -517,9 +531,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isFocused) => {
   cResult[9] = isFocused;
   cResult[10] = W;
   cResult[11] = items7;
-  tmp23 = items7;
-  tmp22 = W;
-}) : ((isFocused) => {
+  tmp24 = items7;
+  tmp23 = W;
+}) : (function useNotificationCenterItemsLoader(isFocused) {
   let _undefined;
   let c7;
   let tmp3;

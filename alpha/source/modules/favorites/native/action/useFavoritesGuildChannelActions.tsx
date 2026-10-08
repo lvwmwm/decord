@@ -1,19 +1,19 @@
-// Module ID: 10717
-// Function ID: 10718
+// Module ID: 10445
+// Function ID: 10446
 // Name: useFavoritesGuildChannelActions
-// Dependencies: [502, 2112, 2054, 558, 576, 10049, 2077, 504, 10063, 2]
+// Dependencies: [502, 2124, 2066, 558, 576, 10294, 2089, 504, 10308, 2]
 
-// Module 10717 (useFavoritesGuildChannelActions)
+// Module 10445 (useFavoritesGuildChannelActions)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import FavoriteStore from "FavoriteStore" /* 2054 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import FavoriteStore from "FavoriteStore" /* 2066 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesGuildChannelActions(channelId, arg1) {
   let dismissBetaTag;
   let hasAccess;
   let isExperimentEnabled;
@@ -29,7 +29,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId, arg1) =
   const favoritesAccess = obj2.useFavoritesAccess(arg1);
   ({ hasAccess, isExperimentEnabled } = favoritesAccess);
   if (cResult[0] !== channelId) {
-    const tmpResult = tmp(2077);
+    const tmpResult = tmp(2089);
     const isFavoritableChannelResult = tmpResult.isFavoritableChannel(channelId);
     cResult[0] = channelId;
     cResult[1] = isFavoritableChannelResult;
@@ -56,23 +56,23 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId, arg1) =
   }
   const tmpResult5 = tmp(504);
   const stateFromStores = tmpResult5.useStateFromStores(tmp7, tmp9);
-  const tmpResult6 = tmp(10049);
+  const tmpResult6 = tmp(10294);
   const isFavoritesGuildSelected = tmpResult6.useIsFavoritesGuildSelected();
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [GuildMemberStore, AuthenticationStore];
     cResult[5] = items1;
   }
   if (cResult[6] !== channelId.guild_id) {
-    class C {
+    class B {
       constructor() {
         const isMemberResult = null == channelId.guild_id || GuildMemberStore.isMember(tmp.guild_id, AuthenticationStore.getId());
         return isMemberResult;
       }
     }
     cResult[6] = channelId.guild_id;
-    cResult[7] = C;
+    cResult[7] = B;
   } else {
-    class C {
+    class B {
       constructor() {
         const isMemberResult = null == channelId.guild_id || GuildMemberStore.isMember(tmp.guild_id, AuthenticationStore.getId());
         return isMemberResult;
@@ -81,25 +81,17 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId, arg1) =
   }
   tmp(504);
   if (tmp5) {
-    class C {
+    class B {
       constructor() {
         const isMemberResult = null == channelId.guild_id || GuildMemberStore.isMember(tmp.guild_id, AuthenticationStore.getId());
         return isMemberResult;
       }
     }
   }
-  const useFavoritesBetaTagDismissibleContent = tmp(10063).useFavoritesBetaTagDismissibleContent;
-  tmp(10063);
+  const useFavoritesBetaTagDismissibleContent = tmp(10308).useFavoritesBetaTagDismissibleContent;
+  tmp(10308);
   if (hasAccess) {
-    class C {
-      constructor() {
-        const isMemberResult = null == channelId.guild_id || GuildMemberStore.isMember(tmp.guild_id, AuthenticationStore.getId());
-        return isMemberResult;
-      }
-    }
-  }
-  if (hasAccess) {
-    class C {
+    class B {
       constructor() {
         const isMemberResult = null == channelId.guild_id || GuildMemberStore.isMember(tmp.guild_id, AuthenticationStore.getId());
         return isMemberResult;
@@ -107,7 +99,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId, arg1) =
     }
   }
   if (hasAccess) {
-    class C {
+    class B {
+      constructor() {
+        const isMemberResult = null == channelId.guild_id || GuildMemberStore.isMember(tmp.guild_id, AuthenticationStore.getId());
+        return isMemberResult;
+      }
+    }
+  }
+  if (hasAccess) {
+    class B {
       constructor() {
         const isMemberResult = null == channelId.guild_id || GuildMemberStore.isMember(tmp.guild_id, AuthenticationStore.getId());
         return isMemberResult;
@@ -117,7 +117,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId, arg1) =
   const favoritesBetaTagDismissibleContent = useFavoritesBetaTagDismissibleContent(tmp18);
   ({ shouldShowBetaTag, dismissBetaTag } = favoritesBetaTagDismissibleContent);
   if (cResult[8] === tmp5) {
-    class C {
+    class B {
       constructor() {
         const isMemberResult = null == channelId.guild_id || GuildMemberStore.isMember(tmp.guild_id, AuthenticationStore.getId());
         return isMemberResult;
@@ -134,7 +134,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId, arg1) =
   cResult[14] = isFavoritesGuildSelected;
   cResult[15] = shouldShowBetaTag;
   cResult[16] = obj3;
-}) : ((channelId, arg1) => {
+}) : (function useFavoritesGuildChannelActions(channelId, arg1) {
   let hasAccess;
   let isExperimentEnabled;
   _require = channelId;
@@ -158,8 +158,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId, arg1) =
     });
   }
   let tmp8 = hasAccess;
-  const useFavoritesBetaTagDismissibleContent = tmp(10063).useFavoritesBetaTagDismissibleContent;
-  tmp(10063);
+  const useFavoritesBetaTagDismissibleContent = tmp(10308).useFavoritesBetaTagDismissibleContent;
+  tmp(10308);
   if (hasAccess) {
     tmp8 = isFavoritableChannelResult;
   }

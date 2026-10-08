@@ -1,14 +1,14 @@
-// Module ID: 4741
-// Function ID: 4742
+// Module ID: 4935
+// Function ID: 4936
 // Name: useRoutedActiveGuildTheme
-// Dependencies: [32, 19, 1085, 4742, 4743, 558, 576, 4768, 4769, 2]
+// Dependencies: [32, 19, 1085, 4936, 4937, 558, 576, 4962, 4963, 2]
 
-// Module 4741 (useRoutedActiveGuildTheme)
+// Module 4935 (useRoutedActiveGuildTheme)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import RootNavigationRef from "RootNavigationRef" /* 4743 */;
-import reactDefault from "react" /* 4768 */;
-import GuildThemeResolver from "GuildThemeResolver" /* 4769 */;
+import RootNavigationRef from "RootNavigationRef" /* 4937 */;
+import reactDefault from "react" /* 4962 */;
+import GuildThemeResolver from "GuildThemeResolver" /* 4963 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 
 let tmp;
-const NavigationRouteUtils = tmp(4742);
+const NavigationRouteUtils = tmp(4936);
 function getGuildIdFromNavigationState(routes) {
   if (null != routes) {
     routes = routes.routes;
@@ -162,7 +162,7 @@ function getActiveGuildThemeGuildIdSnapshot() {
 }
 const ME = Constants.ME;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRoutedActiveGuildThemeGuildId() {
   let tmp4;
   let tmp5;
   let tmp6;
@@ -200,7 +200,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = tmp9;
   }
   return tmp4;
-}) : (() => {
+}) : (function useRoutedActiveGuildThemeGuildId() {
   let tmp3;
   const context = react.useContext(reactDefault);
   [tmp3, require] = _slicedToArray(react.useState(getActiveGuildThemeGuildIdSnapshot), 2);
@@ -226,11 +226,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return tmp3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRoutedActiveGuildTheme() {
   const tmp = closure_8();
   const obj = GuildThemeResolver;
   return obj.useActiveGuildThemeForGuildId(tmp);
-}) : (() => {
+}) : (function useRoutedActiveGuildTheme() {
   const tmp = closure_8();
   const obj = GuildThemeResolver;
   return obj.useActiveGuildThemeForGuildId(tmp);

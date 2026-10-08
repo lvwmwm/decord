@@ -208,15 +208,15 @@ export const hydrateFormatJsAst = function hydrateFormatJsAst(arr) {
   }
 };
 export { compressFormatJsToAst };
-export const isCompressedAst = function isCompressedAst(value) {
-  let tmp = typeof value === "string";
+export const isCompressedAst = function isCompressedAst(parsed) {
+  let tmp = typeof parsed === "string";
   if (!tmp) {
     const _Array2 = Array;
-    let isArray = Array.isArray(value);
+    let isArray = Array.isArray(parsed);
     if (isArray) {
       const _Array = Array;
-      isArray = Array.isArray(value[0]) || typeof value[0] === "string";
-      Array.isArray(value[0]) || typeof value[0] === "string";
+      isArray = Array.isArray(parsed[0]) || typeof parsed[0] === "string";
+      Array.isArray(parsed[0]) || typeof parsed[0] === "string";
     }
     tmp = isArray;
   }

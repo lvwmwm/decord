@@ -1,46 +1,46 @@
-// Module ID: 13380
-// Function ID: 13381
+// Module ID: 13680
+// Function ID: 13681
 // Name: UserSettingsPremiumGifting
-// Dependencies: [32, 19, 17, 7874, 6909, 1085, 1379, 21, 4896, 587, 558, 576, 6081, 6933, 1490, 1618, 504, 5317, 12, 6936, 13381, 10484, 7866, 13224, 584, 6915, 6938, 7879, 6494, 6498, 8896, 13382, 4892, 1126, 13383, 13389, 13391, 13394, 13396, 2617, 13397, 5975, 11107, 6501, 2]
+// Dependencies: [32, 19, 17, 8292, 7098, 1085, 1391, 21, 5090, 587, 558, 576, 6267, 7122, 1502, 1630, 504, 5629, 12, 7125, 13681, 10081, 8284, 13524, 584, 7104, 7127, 8297, 6671, 6675, 9329, 13682, 5086, 1126, 13683, 13689, 13691, 13694, 13696, 2661, 13697, 6158, 10472, 6677, 2]
 
-// Module 13380 (UserSettingsPremiumGifting)
+// Module 13680 (UserSettingsPremiumGifting)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
 import intl9 from "intl" /* 1126 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import _modDef2617 from "module_2617" /* 2617 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 5317 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5975 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6494 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6498 */;
-import useStoreConnectionErrorAlertDefault from "useStoreConnectionErrorAlert" /* 6933 */;
-import BadgeId from "BadgeId" /* 7866 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7879 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8896 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13382 */;
-import OutboundPromotionCardDefault from "OutboundPromotionCard" /* 13383 */;
-import EntitlementGiftGroupCardDefault from "EntitlementGiftGroupCard" /* 13389 */;
-import PremiumTierCardDefault from "PremiumTierCard" /* 13391 */;
-import GiftPurchaseButtonDefault from "GiftPurchaseButton" /* 13394 */;
-import PremiumUnverifiedWarningDefault from "PremiumUnverifiedWarning" /* 13396 */;
-import UserSettingsGiftingBadgeProgressDefault from "UserSettingsGiftingBadgeProgress" /* 13397 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import _modDef2661 from "module_2661" /* 2661 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 5629 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6158 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6671 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6675 */;
+import useStoreConnectionErrorAlertDefault from "useStoreConnectionErrorAlert" /* 7122 */;
+import BadgeId from "BadgeId" /* 8284 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8297 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9329 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13682 */;
+import OutboundPromotionCardDefault from "OutboundPromotionCard" /* 13683 */;
+import EntitlementGiftGroupCardDefault from "EntitlementGiftGroupCard" /* 13689 */;
+import PremiumTierCardDefault from "PremiumTierCard" /* 13691 */;
+import GiftPurchaseButtonDefault from "GiftPurchaseButton" /* 13694 */;
+import PremiumUnverifiedWarningDefault from "PremiumUnverifiedWarning" /* 13696 */;
+import UserSettingsGiftingBadgeProgressDefault from "UserSettingsGiftingBadgeProgress" /* 13697 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7874 */;
-import EntitlementStore from "EntitlementStore" /* 6909 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8292 */;
+import EntitlementStore from "EntitlementStore" /* 7098 */;
 import Constants from "Constants" /* 1085 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, constants, constants2, dependencyMap, importDefault, navigation, title, waitResult;
+let _require, constants, constants2, dependencyMap, importDefault, navigation, waitResult;
 
 let StyleSheet;
 let c10;
@@ -56,7 +56,7 @@ let obj2;
 let obj3;
 let tmp;
 let unpackModuleId;
-const TableRowGroup = tmp(6081);
+const TableRowGroup = tmp(6267);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ Image: hasOwnProperty, View: metroRequire, ScrollView: metroImportDefault, StyleSheet } = react_native);
@@ -70,7 +70,7 @@ createStyles = createStyles.createStyles;
 obj3 = { flex: 1, flexDirection: "row", alignItems: "center", paddingVertical: 16, borderWidth: StyleSheet.hairlineWidth, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
 let closure_17 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingSectionTitle(title) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -85,20 +85,22 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : ((title) => authStore2(TableRowGroup.TableRowGroupTitle, { title: title.title }));
+}) : (function GiftingSectionTitle(title) {
+  return authStore2(TableRowGroup.TableRowGroupTitle, { title: title.title });
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((recipientUserId, arg1) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsPremiumGifting(recipientUserId) {
+  let analyticsLocation;
   let closure_11;
   let closure_2;
-  let closure_4;
   let enabled;
   let obj5;
+  let ref;
   let tmp10;
   let tmp11;
   let tmp14;
-  let tmp19;
-  let tmp20;
   let tmp21;
+  let tmp22;
   let tmp26;
   let tmp27;
   let tmp29;
@@ -111,7 +113,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   let obj = recipientUserId(576);
   const cResult = obj.c(93);
   recipientUserId = recipientUserId.recipientUserId;
-  const analyticsLocation = recipientUserId.analyticsLocation;
+  ({ analyticsLocation, ref } = recipientUserId);
   if (cResult[0] !== analyticsLocation) {
     let tmp5 = analyticsLocation;
     if (undefined === analyticsLocation) {
@@ -128,7 +130,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   const tmp7 = closure_17();
   dependencyMap = tmp7;
   useStoreConnectionErrorAlertDefault();
-  let tmpResult = tmp(1490);
+  let tmpResult = tmp(1502);
   navigation = tmpResult.useNavigation();
   const bottom = useSafeAreaInsetsDefault().bottom;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
@@ -149,21 +151,27 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   const tmpResult6 = tmp(504);
   const stateFromStoresArray = tmpResult6.useStateFromStoresArray(tmp10, tmp11);
   if (cResult[4] !== stateFromStoresArray) {
-    let tmp15;
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function w(skuId) {
-        const obj = recipientUserId(closure_2[17]);
-        return obj.makeComboId(skuId.skuId, skuId.subscriptionPlanId, skuId.giftStyle);
-      };
-      cResult[6] = fn;
+      class W {
+        constructor(skuId) {
+          const obj = recipientUserId(closure_2[17]);
+          return obj.makeComboId(skuId.skuId, skuId.subscriptionPlanId, skuId.giftStyle);
+        }
+      }
+      cResult[6] = W;
       class U {
         constructor() {
           return enabled.getGiftable();
         }
       }
     } else {
-      tmp15 = cResult[6];
+      class W {
+        constructor(skuId) {
+          const obj = recipientUserId(closure_2[17]);
+          return obj.makeComboId(skuId.skuId, skuId.subscriptionPlanId, skuId.giftStyle);
+        }
+      }
     }
     class U {
       constructor() {
@@ -175,31 +183,52 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
     cResult[5] = groupByResult;
     tmp14 = groupByResult;
   } else {
-    tmp14 = cResult[5];
+    class W {
+      constructor(skuId) {
+        const obj = recipientUserId(closure_2[17]);
+        return obj.makeComboId(skuId.skuId, skuId.subscriptionPlanId, skuId.giftStyle);
+      }
+    }
   }
   react = tmp14;
-  const tmpResult7 = tmp(6936);
+  const tmpResult7 = tmp(7125);
   const isPaymentsBlocked = tmpResult7.useIsPaymentsBlocked();
-  const tmpResult8 = tmp(13381);
+  const tmpResult8 = tmp(13681);
   const outboundPromotions = tmpResult8.useOutboundPromotions();
   const promotionsLoaded = outboundPromotions.promotionsLoaded;
   const activeOutboundPromotions = outboundPromotions.activeOutboundPromotions;
   const claimedEndedOutboundPromotions = outboundPromotions.claimedEndedOutboundPromotions;
   const claimedOutboundPromotionCodeMap = outboundPromotions.claimedOutboundPromotionCodeMap;
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj3 = { location: "gift_inventory" };
-    cResult[7] = obj3;
+    class W {
+      constructor(skuId) {
+        const obj = recipientUserId(closure_2[17]);
+        return obj.makeComboId(skuId.skuId, skuId.subscriptionPlanId, skuId.giftStyle);
+      }
+    }
+    cResult[7] = tmp20;
     class U {
       constructor() {
         return enabled.getGiftable();
       }
     }
   } else {
-    tmp19 = cResult[7];
+    class W {
+      constructor(skuId) {
+        const obj = recipientUserId(closure_2[17]);
+        return obj.makeComboId(skuId.skuId, skuId.subscriptionPlanId, skuId.giftStyle);
+      }
+    }
   }
-  const GiftingBadgeExperiment = tmp(10484).GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = tmp(10081).GiftingBadgeExperiment;
   enabled = GiftingBadgeExperiment.useConfig(tmp19).enabled;
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class W {
+      constructor(skuId) {
+        const obj = recipientUserId(closure_2[17]);
+        return obj.makeComboId(skuId.skuId, skuId.subscriptionPlanId, skuId.giftStyle);
+      }
+    }
     let items1 = [claimedOutboundPromotionCodeMap];
     class Z {
       constructor() {
@@ -208,18 +237,24 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
     }
     cResult[8] = items1;
     cResult[9] = Z;
-    tmp21 = Z;
-    tmp20 = items1;
+    tmp22 = Z;
+    tmp21 = items1;
   } else {
-    tmp20 = cResult[8];
-    tmp21 = cResult[9];
+    class W {
+      constructor(skuId) {
+        const obj = recipientUserId(closure_2[17]);
+        return obj.makeComboId(skuId.skuId, skuId.subscriptionPlanId, skuId.giftStyle);
+      }
+    }
+    tmp22 = cResult[9];
   }
   const tmpResult9 = tmp(504);
-  const stateFromStores = tmpResult9.useStateFromStores(tmp20, tmp21);
+  const stateFromStores = tmpResult9.useStateFromStores(tmp21, tmp22);
+  let obj9 = react;
   const tmp24 = navigation(react.useState(false), 2);
   constants = tmp24[0];
   constants2 = tmp24[1];
-  const tmpResult10 = tmp(13224);
+  const tmpResult10 = tmp(13524);
   const subscriptionPlansLoaded = tmpResult10.useSubscriptionPlansLoaded();
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
     class X {
@@ -228,7 +263,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
         waitResult = obj.wait(() => {
           const obj = recipientUserId(closure_2[25]);
           const giftableEntitlements = obj.fetchGiftableEntitlements();
-          giftableEntitlements.then(() => { /* body not rendered: F153044 */ });
+          giftableEntitlements.then(() => { /* body not rendered: F154578 */ });
           const obj2 = analyticsLocation(closure_2[26]);
           obj2.init();
         });
@@ -251,7 +286,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
         waitResult = obj.wait(() => {
           const obj = recipientUserId(closure_2[25]);
           const giftableEntitlements = obj.fetchGiftableEntitlements();
-          giftableEntitlements.then(() => { /* body not rendered: F153044 */ });
+          giftableEntitlements.then(() => { /* body not rendered: F154578 */ });
           const obj2 = analyticsLocation(closure_2[26]);
           obj2.init();
         });
@@ -260,7 +295,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
     }
     tmp27 = cResult[11];
   }
-  const effect = obj10.useEffect(tmp27, tmp26);
+  const effect = obj9.useEffect(tmp27, tmp26);
   if (cResult[12] !== enabled) {
     class J {
       constructor() {
@@ -294,7 +329,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
     }
     tmp30 = cResult[14];
   }
-  const effect1 = obj10.useEffect(tmp29, tmp30);
+  const effect1 = obj9.useEffect(tmp29, tmp30);
   if (cResult[15] !== navigation) {
     class J {
       constructor() {
@@ -366,7 +401,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
       }
     }
   }
-  function st() {
+  function renderEmptyState() {
     let intl;
     let intl2;
     let items;
@@ -384,16 +419,16 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
     const Text2 = Text_Text.Text;
     intl2 = intl9.intl;
     items1[1] = authStore2(Text2, obj5);
-    items[1] = closure_15(metroRequire, obj3);
-    return closure_15(metroRequire, obj);
+    items[1] = authStore3(metroRequire, obj3);
+    return authStore3(metroRequire, obj);
   }
   cResult[19] = tmp7.emptyGiftDescription;
   cResult[20] = tmp7.emptyGiftHeader;
   cResult[21] = tmp7.emptyGiftInformation;
   cResult[22] = tmp7.emptyGiftLinks;
   cResult[23] = tmp7.emptyImage;
-  cResult[24] = st;
-}) : ((arg0, ref) => {
+  cResult[24] = renderEmptyState;
+}) : (function UserSettingsPremiumGifting(ref) {
   let _undefined;
   let activeOutboundPromotions;
   let analyticsLocation;
@@ -433,7 +468,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   let recipientUserId;
   let tmp13;
   let tmp17Result8;
-  ({ recipientUserId, analyticsLocation } = arg0);
+  ({ recipientUserId, analyticsLocation } = ref);
   if (analyticsLocation === undefined) {
     let obj = { page: constants2.GIFTING_SETTINGS };
     let tmp = constants2;
@@ -496,12 +531,12 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   const obj8 = { paddingBottom: bottom + stateFromStoresArray(memo[9]).space.PX_16 };
   if (isPaymentsBlocked) {
     const obj9 = { style: tmp2.giftingSettingsContainer, children: closure_14(closure_7, obj10) };
-    obj10 = { ref, contentInset: { top: 40 }, contentContainerStyle: obj8, style: tmp2.scrollView, children: closure_14(stateFromStoresArray(memo[42]), {}) };
+    obj10 = { ref: ref.ref, contentInset: { top: 40 }, contentContainerStyle: obj8, style: tmp2.scrollView, children: closure_14(stateFromStoresArray(memo[42]), {}) };
     tmp17Result8 = closure_14(closure_6, obj9);
   } else {
     const obj11 = { style: tmp2.giftingSettingsContainer, children: null };
     const items4 = [closure_14(tmp3(memo[43]), {}), ];
-    const obj12 = { ref, style: tmp2.scrollView, contentContainerStyle: obj8, children: null };
+    const obj12 = { ref: ref.ref, style: tmp2.scrollView, contentContainerStyle: obj8, children: null };
     const tmp20 = closure_7;
     if (enabled) {
       enabled = null != stateFromStores;
@@ -662,7 +697,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
     tmp19Result = tmp19(tmp6(tmp4[41]).ActivityIndicator, obj47);
   }
   return tmp17Result8;
-}));
+});
 let result = size.fileFinishedImporting("modules/user_settings/premium/native/UserSettingsPremiumGifting.tsx");
 
-export default forwardRefResult;
+export default tmp7;

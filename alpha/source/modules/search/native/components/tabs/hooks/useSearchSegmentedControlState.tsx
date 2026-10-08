@@ -1,10 +1,10 @@
-// Module ID: 16923
-// Function ID: 16924
+// Module ID: 17204
+// Function ID: 17205
 // Name: useSearchSegmentedControlState
-// Dependencies: [19, 558, 576, 4618, 9317, 2]
+// Dependencies: [19, 558, 576, 4810, 8505, 2]
 
-// Module 16923 (useSearchSegmentedControlState)
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+// Module 17204 (useSearchSegmentedControlState)
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -21,7 +21,7 @@ const __initData5 = { code: "function useSearchSegmentedControlStateTsx9(){const
 const __initData6 = { code: "function useSearchSegmentedControlStateTsx10(visibleTabs_0){const{lastSelectedTab,runOnJS,setActiveIndex}=this.__closure;if(visibleTabs_0.length===0)return;const lastSelectedTabIndex=visibleTabs_0.indexOf(lastSelectedTab.get());const targetIndex=Math.max(0,lastSelectedTabIndex);const maxIndex=Math.max(0,visibleTabs_0.length-1);const nextActiveIndex=Math.min(targetIndex,maxIndex);runOnJS(setActiveIndex)(nextActiveIndex,false);}" };
 const __initData7 = { code: "function useSearchSegmentedControlStateTsx11(){const{selectedTab}=this.__closure;return selectedTab.get();}" };
 const __initData8 = { code: "function useSearchSegmentedControlStateTsx12(selectedTab_0){const{lastSelectedTab,runOnJS,onSelectedTabChange}=this.__closure;if(selectedTab_0==null)return;lastSelectedTab.set(selectedTab_0);runOnJS(onSelectedTabChange)(selectedTab_0);}" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelectedTabChange) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSearchSegmentedControlState(onSelectedTabChange) {
   let derivedValue;
   let items;
   let visibleTabs;
@@ -134,7 +134,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelectedTabChang
   cResult[1] = width;
   cResult[2] = tmp7;
   tmp6 = tmp7;
-}) : ((visibleTabs) => {
+}) : (function useSearchSegmentedControlState(visibleTabs) {
   let items;
   let width;
   visibleTabs = visibleTabs.visibleTabs;

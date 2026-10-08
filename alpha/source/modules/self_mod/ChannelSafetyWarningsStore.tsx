@@ -1,13 +1,13 @@
-// Module ID: 9799
-// Function ID: 9800
+// Module ID: 10266
+// Function ID: 10267
 // Name: ChannelSafetyWarningsStore
-// Dependencies: [2051, 1102, 504, 584, 2]
+// Dependencies: [2063, 1102, 504, 584, 2]
 
-// Module 9799 (ChannelSafetyWarningsStore)
+// Module 10266 (ChannelSafetyWarningsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

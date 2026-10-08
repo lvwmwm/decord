@@ -1,15 +1,15 @@
-// Module ID: 12049
-// Function ID: 12050
+// Module ID: 12122
+// Function ID: 12123
 // Name: useDebouncedSetChatInputState
 // Dependencies: [19, 558, 576, 2]
 
-// Module 12049 (useDebouncedSetChatInputState)
+// Module 12122 (useDebouncedSetChatInputState)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDebouncedSetChatInputState(arg0, arg1) {
   let first;
   let tmp3;
   let tmp4;
@@ -53,13 +53,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       tmp6 = cResult[5];
     }
     if (cResult[6] !== arg0) {
-      const fn4 = function v(arg0) {
+      const fn3 = function _(arg0) {
         first();
         closure_0(arg0);
       };
       cResult[6] = arg0;
-      cResult[7] = fn4;
-      tmp7 = fn4;
+      cResult[7] = fn3;
+      tmp7 = fn3;
     } else {
       tmp7 = cResult[7];
     }
@@ -76,33 +76,21 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     cResult[10] = obj3;
     tmp8 = obj3;
   }
-  const fn3 = function _(arg0) {
-    closure_0 = arg0;
-    let tmp = first();
-    closure_2.current = setTimeout(() => {
-      const tmp = focused((focused) => {
-        let tmp2 = focused;
-        if (focused.focused === focused.focused) {
-          tmp2 = tmp;
-          if (focused.text === focused.text) {
-            tmp2 = tmp;
-            if (focused.selectionStart === focused.selectionStart) {
-              tmp2 = tmp;
-              if (focused.selectionEnd === focused.selectionEnd) {
-                tmp2 = focused;
-              }
-            }
-          }
-        }
-        return tmp2;
-      });
-    }, closure_1);
-  };
+  class S {
+    constructor(arg0) {
+      closure_0 = arg0;
+      tmp = closure_3();
+      closure_2.current = setTimeout(() => {
+        const tmp = focused(() => { /* body not rendered: F154287 */ });
+      }, closure_1);
+      return;
+    }
+  }
   cResult[3] = arg1;
   cResult[4] = arg0;
-  cResult[5] = fn3;
-  tmp6 = fn3;
-}) : ((arg0, arg1) => {
+  cResult[5] = S;
+  tmp6 = S;
+}) : (function useDebouncedSetChatInputState(arg0, arg1) {
   let items1;
   let items2;
   let closure_0 = arg0;

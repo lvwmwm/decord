@@ -1,18 +1,18 @@
-// Module ID: 8929
-// Function ID: 8930
+// Module ID: 8560
+// Function ID: 8561
 // Name: FormHint
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 6080, 4892, 1188, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 6266, 5086, 1200, 2]
 
-// Module 8929 (FormHint)
+// Module 8560 (FormHint)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import RedesignCompat from "RedesignCompat" /* 6080 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import RedesignCompat from "RedesignCompat" /* 6266 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ const jsx = Fragment.jsx;
 let obj = { formHintText: obj2, redesignHorizontalPadding: { paddingHorizontal: 12 }, horizonatalPadding: { paddingHorizontal: 16 } };
 obj2 = { fontSize: 14, marginBottom: 0, color: nativeDefault.colors.TEXT_MUTED };
 let closure_4 = createStyles.createStyles(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormHint(arg0) {
   let children;
   let inset;
   let style;
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[9] = items1;
     tmp6 = items1;
   }
-}) : ((inset) => {
+}) : (function FormHint(inset) {
   let children;
   let items;
   let style;
@@ -103,7 +103,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp = closure_4();
   if (react.useContext(RedesignCompat.RedesignCompatContext)) {
     let redesignHorizontalPadding = !flag;
-    const Text = tmp2(4892).Text;
+    const Text = tmp2(5086).Text;
     if (!flag) {
       redesignHorizontalPadding = tmp.redesignHorizontalPadding;
     }
@@ -113,7 +113,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     const items1 = [tmp.formHintText, , ];
     let horizonatalPadding = !flag;
-    const LegacyText = tmp2(1188).LegacyText;
+    const LegacyText = tmp2(1200).LegacyText;
     if (!flag) {
       horizonatalPadding = tmp.horizonatalPadding;
     }

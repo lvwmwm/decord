@@ -1,21 +1,21 @@
-// Module ID: 12514
-// Function ID: 12515
+// Module ID: 12610
+// Function ID: 12611
 // Name: NotificationSettingsPresets
-// Dependencies: [19, 17, 21, 1126, 5080, 4798, 12515, 9826, 4896, 587, 558, 576, 9317, 4892, 5601, 9318, 12517, 9864, 2]
+// Dependencies: [19, 17, 21, 1126, 7886, 4992, 12611, 10325, 5090, 587, 558, 576, 8505, 5086, 5375, 8752, 12613, 10424, 2]
 
-// Module 12514 (NotificationSettingsPresets)
+// Module 12610 (NotificationSettingsPresets)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 4798 */;
-import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 5080 */;
-import BellSlashIcon from "BellSlashIcon" /* 9826 */;
-import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 9864 */;
-import MagicWandIcon from "MagicWandIcon" /* 12515 */;
-import notificationSettingsGuildFlagUtils from "notificationSettingsGuildFlagUtils" /* 12517 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 4992 */;
+import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 7886 */;
+import BellSlashIcon from "BellSlashIcon" /* 10325 */;
+import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 10424 */;
+import MagicWandIcon from "MagicWandIcon" /* 12611 */;
+import notificationSettingsGuildFlagUtils from "notificationSettingsGuildFlagUtils" /* 12613 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -46,9 +46,8 @@ let obj = { customContainer: obj2 };
 obj2 = { padding: 16, minHeight: 82, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.lg + 8, backgroundColor: nativeDefault.colors.REDESIGN_INPUT_CONTROL_ACTIVE_BG };
 let closure_7 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((preset) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotificationSettingsPresets(preset) {
   let intl;
-  let intl2;
   let items;
   let items1;
   let num3;
@@ -61,7 +60,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((preset) => {
   const cResult = obj.c(21);
   const tmp4 = closure_7();
   if (cResult[0] !== preset) {
-    const fn = function u(arg0) {
+    function onSetActiveIndex(arg0) {
       const tmp = 0 === arg0 && preset.preset !== notificationSettingsPresetUtils.Presets.ALL_MESSAGES;
       if (tmp) {
         preset.updatePreset(notificationSettingsPresetUtils.Presets.ALL_MESSAGES);
@@ -74,10 +73,10 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((preset) => {
       if (tmp17) {
         preset.updatePreset(notificationSettingsPresetUtils.Presets.NOTHING);
       }
-    };
+    }
     cResult[0] = preset;
-    cResult[1] = fn;
-    tmp5 = fn;
+    cResult[1] = onSetActiveIndex;
+    tmp5 = onSetActiveIndex;
   } else {
     tmp5 = cResult[1];
   }
@@ -113,10 +112,9 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((preset) => {
       const effect = segmentedControlState.useEffect(tmp11, tmp12);
       if (preset.preset === tmp(tmp2[4]).Presets.CUSTOM) {
         let tmp18;
-        let tmp19;
-        let tmp22;
-        let tmp27;
-        let tmp29;
+        let tmp23;
+        let tmp28;
+        let tmp30;
         const _Symbol = Symbol;
         const customContainer = tmp4.customContainer;
         if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
@@ -127,74 +125,117 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((preset) => {
           tmp18 = cResult[10];
         }
         const _Symbol2 = Symbol;
-        if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj3 = { variant: "text-sm/semibold", children: intl.string(tmp(tmp2[3]).t["32yow9"]) };
+        class I {
+          constructor() {
+            const tmp2 = null == num3 || tmp >= 3;
+            if (!tmp2) {
+              segmentedControlState.setActiveIndex(num3);
+            }
+          }
+        }
+        if (tmp19 === Symbol.for("react.memo_cache_sentinel")) {
+          const obj3 = { variant: "text-sm/semibold", children: null };
           const Text = tmp(tmp2[13]).Text;
-          intl = tmp(tmp2[3]).intl;
-          const tmp21 = closure_4(Text, obj3);
-          cResult[11] = tmp21;
-          tmp19 = tmp21;
-        } else {
-          tmp19 = cResult[11];
+          const string = tmp(tmp2[3]).intl.string;
+          class I {
+            constructor() {
+              const tmp2 = null == num3 || tmp >= 3;
+              if (!tmp2) {
+                segmentedControlState.setActiveIndex(num3);
+              }
+            }
+          }
+          const tmp22 = closure_4(Text, obj3);
+          cResult[11] = tmp22;
         }
         const _Symbol3 = Symbol;
         if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
           const obj4 = { style: tmp18, children: items };
-          items = [tmp19, ];
-          const obj5 = { variant: "text-xs/medium", children: intl2.string(tmp(tmp2[3]).t.l3doVX) };
+          items = [, ];
+          class I {
+            constructor() {
+              const tmp2 = null == num3 || tmp >= 3;
+              if (!tmp2) {
+                segmentedControlState.setActiveIndex(num3);
+              }
+            }
+          }
+          const obj5 = { variant: "text-xs/medium", children: intl.string(tmp(tmp2[3]).t.l3doVX) };
           const Text2 = tmp(tmp2[13]).Text;
-          intl2 = tmp(tmp2[3]).intl;
+          intl = tmp(tmp2[3]).intl;
           items[1] = closure_4(Text2, obj5);
-          const tmp26 = closure_5(View, obj4);
-          cResult[12] = tmp26;
-          tmp22 = tmp26;
+          const tmp27 = closure_5(View, obj4);
+          cResult[12] = tmp27;
+          tmp23 = tmp27;
         } else {
-          tmp22 = cResult[12];
+          tmp23 = cResult[12];
         }
         const _Symbol4 = Symbol;
         if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl3 = tmp(tmp2[3]).intl;
-          const stringResult = intl3.string(tmp(tmp2[3]).t["ztO+l+"]);
-          cResult[13] = stringResult;
-          tmp27 = stringResult;
+          const intl2 = tmp(tmp2[3]).intl;
+          cResult[13] = intl2.string(tmp(tmp2[3]).t["ztO+l+"]);
+          intl2.string(tmp(tmp2[3]).t["ztO+l+"]);
+          class I {
+            constructor() {
+              const tmp2 = null == num3 || tmp >= 3;
+              if (!tmp2) {
+                segmentedControlState.setActiveIndex(num3);
+              }
+            }
+          }
         } else {
-          tmp27 = cResult[13];
+          tmp28 = cResult[13];
         }
         if (cResult[14] !== preset) {
           const obj6 = {
             variant: "secondary",
-            text: tmp27,
+            text: tmp28,
             onPress() {
                       preset.updatePreset(notificationSettingsPresetUtils.Presets.MENTIONS);
                     }
           };
-          const tmp31 = closure_4(tmp(tmp2[14]).Button, obj6);
+          const tmp32 = closure_4(tmp(tmp2[14]).Button, obj6);
+          class I {
+            constructor() {
+              const tmp2 = null == num3 || tmp >= 3;
+              if (!tmp2) {
+                segmentedControlState.setActiveIndex(num3);
+              }
+            }
+          }
           cResult[14] = preset;
-          cResult[15] = tmp31;
-          tmp29 = tmp31;
+          cResult[15] = tmp32;
+          tmp30 = tmp32;
         } else {
-          tmp29 = cResult[15];
+          tmp30 = cResult[15];
         }
         if (cResult[16] === tmp4.customContainer) {
-          let tmp32;
-          if (cResult[17] === tmp29) {
-            tmp32 = cResult[18];
+          let tmp33;
+          if (cResult[17] === tmp30) {
+            tmp33 = cResult[18];
           }
-          return tmp32;
+          return tmp33;
         }
         const obj7 = { style: customContainer, children: items1 };
-        items1 = [tmp22, tmp29];
-        const tmp35 = closure_5(View, obj7);
+        items1 = [tmp23, tmp30];
+        const tmp36 = closure_5(View, obj7);
         cResult[16] = tmp4.customContainer;
-        cResult[17] = tmp29;
-        cResult[18] = tmp35;
-        tmp32 = tmp35;
+        cResult[17] = tmp30;
+        cResult[18] = tmp36;
+        tmp33 = tmp36;
       } else {
         let tmp15;
         if (cResult[19] !== segmentedControlState) {
           const obj8 = { variant: "experimental_Large", state: segmentedControlState };
           let tmp17 = closure_4(tmp(tmp2[15]).SegmentedControl, obj8);
-          cResult[19] = segmentedControlState;
+          class I {
+            constructor() {
+              const tmp2 = null == num3 || tmp >= 3;
+              if (!tmp2) {
+                segmentedControlState.setActiveIndex(num3);
+              }
+            }
+          }
           cResult[20] = tmp17;
           tmp15 = tmp17;
         } else {
@@ -203,26 +244,28 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((preset) => {
         return tmp15;
       }
     }
-    const fn2 = function f() {
-      const tmp2 = null == num3 || tmp >= 3;
-      if (!tmp2) {
-        segmentedControlState.setActiveIndex(num3);
+    class I {
+      constructor() {
+        const tmp2 = null == num3 || tmp >= 3;
+        if (!tmp2) {
+          segmentedControlState.setActiveIndex(num3);
+        }
       }
-    };
+    }
     const items2 = [num3, segmentedControlState];
     cResult[6] = segmentedControlState;
     cResult[7] = num3;
-    cResult[8] = fn2;
+    cResult[8] = I;
     cResult[9] = items2;
     tmp12 = items2;
-    tmp11 = fn2;
+    tmp11 = I;
   }
   const obj9 = { pageWidth: 0, onSetActiveIndex: tmp5, items: tmp6, defaultIndex: num3 };
   cResult[3] = tmp5;
   cResult[4] = num3;
   cResult[5] = obj9;
   tmp9 = obj9;
-}) : ((preset) => {
+}) : (function NotificationSettingsPresets(preset) {
   let intl;
   let intl2;
   let intl3;
@@ -303,7 +346,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((preset) => {
   return tmp7;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotificationSettingsGuildPresets(guildId) {
   let tmp3;
   _require = guildId;
   let obj = require("react");
@@ -334,7 +377,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[3] = tmp3;
   cResult[4] = tmp5;
   tmp4 = tmp5;
-}) : ((guildId) => {
+}) : (function NotificationSettingsGuildPresets(guildId) {
   let obj2;
   _require = guildId;
   let obj = {
@@ -348,7 +391,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   return closure_4(closure_8, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotificationSettingsChannelPresets(channel) {
   _require = channel;
   let obj = require("react");
   const cResult = obj.c(6);
@@ -381,7 +424,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[1] = channel.channel.id;
   cResult[2] = fn;
   tmp3 = fn;
-}) : ((channel) => {
+}) : (function NotificationSettingsChannelPresets(channel) {
   let obj2;
   _require = channel;
   let obj = {

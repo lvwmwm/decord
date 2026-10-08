@@ -1,10 +1,10 @@
-// Module ID: 13708
-// Function ID: 13709
+// Module ID: 13930
+// Function ID: 13931
 // Name: useDeviceCodeAuthorizeCallback
-// Dependencies: [5, 19, 13707, 6684, 8779, 38, 6685, 8759, 558, 576, 2]
+// Dependencies: [5, 19, 13929, 6861, 9125, 38, 6862, 9139, 558, 576, 2]
 
-// Module 13708 (useDeviceCodeAuthorizeCallback)
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 6684 */;
+// Module 13930 (useDeviceCodeAuthorizeCallback)
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 6861 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -297,7 +297,7 @@ obj = function _silentlyFinishTwoWayLinkError() {
   });
   return obj(...arguments);
 };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDeviceCodeAuthorizeCallback(arg0, arg1, arg2) {
   let closure_2;
   _require = arg0;
   let closure_1 = arg1;
@@ -438,15 +438,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
       }
     }
   });
-  const fn = function() {
+  function t0() {
     return closure_0(...arguments);
-  };
+  }
   cResult[0] = arg0;
   cResult[1] = arg1;
   cResult[2] = arg2;
-  cResult[3] = fn;
-  tmp2 = fn;
-}) : ((arg0, arg1, arg2) => {
+  cResult[3] = t0;
+  tmp2 = t0;
+}) : (function useDeviceCodeAuthorizeCallback(arg0, arg1, arg2) {
   let closure_1 = arg1;
   let closure_2 = arg2;
   const useCallback = react.useCallback;

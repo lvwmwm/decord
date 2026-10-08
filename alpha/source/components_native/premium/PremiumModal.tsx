@@ -1,28 +1,26 @@
-// Module ID: 6929
-// Function ID: 6930
+// Module ID: 7118
+// Function ID: 7119
 // Name: PremiumModal
-// Dependencies: [19, 1085, 21, 1126, 6017, 6930, 13321, 13324, 13366, 13380, 558, 576, 6664, 6503, 2]
+// Dependencies: [19, 1085, 21, 1126, 6203, 7119, 13621, 13624, 13666, 13680, 558, 576, 6841, 6679, 2]
 
-// Module 6929 (PremiumModal)
+// Module 7118 (PremiumModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import intl6 from "intl" /* 1126 */;
-import NavigatorHeader from "NavigatorHeader" /* 6017 */;
-import Navigator2 from "Navigator" /* 6503 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 6664 */;
-import UserSettingsPremiumDefault from "UserSettingsPremium" /* 6930 */;
-import PremiumPlanSelectDefault from "PremiumPlanSelect" /* 13366 */;
-import UserSettingsPremiumGiftingDefault from "UserSettingsPremiumGifting" /* 13380 */;
+import NavigatorHeader from "NavigatorHeader" /* 6203 */;
+import Navigator2 from "Navigator" /* 6679 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 6841 */;
+import UserSettingsPremiumDefault from "UserSettingsPremium" /* 7119 */;
+import PremiumPlanSelectDefault from "PremiumPlanSelect" /* 13666 */;
+import UserSettingsPremiumGiftingDefault from "UserSettingsPremiumGifting" /* 13680 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const useAnalyticsLocationsDefault = useAnalyticsLocations;
 
-function getScreens(arg0) {
+function getScreens(analyticsLocation) {
   let activitySessionId;
-  let analyticsLocation;
   let applicationId;
   let channelId;
   let closure_10;
@@ -41,7 +39,6 @@ function getScreens(arg0) {
   let obj3;
   let obj6;
   let obj9;
-  let onClose;
   let onPaymentDismiss;
   let onPaymentSuccess;
   let planId;
@@ -49,44 +46,46 @@ function getScreens(arg0) {
   let premiumFeatureCardOrder;
   let recipientUserId;
   let showCurrentPlan;
-  ({ analyticsLocation: require, onClose } = arg0);
-  ({ onBack: dependencyMap, giftRecipientId: UserSettingsSections, planId: jsx, applicationId: getScreens, activitySessionId: closure_6, channelId: closure_7, guildId: closure_8, premiumFeatureCardOrder: closure_9, onPaymentSuccess: closure_10, onPaymentDismiss: closure_11 } = arg0);
+  analyticsLocation = analyticsLocation.analyticsLocation;
+  const onClose = analyticsLocation.onClose;
+  ({ onBack: dependencyMap, giftRecipientId: UserSettingsSections, planId: jsx, applicationId: getScreens, activitySessionId: closure_6, channelId: closure_7, guildId: closure_8, premiumFeatureCardOrder: closure_9, onPaymentSuccess: closure_10, onPaymentDismiss: closure_11 } = analyticsLocation);
   let obj = {};
-  ({ predicate, showCurrentPlan, isBoostPurchaseFlow } = arg0);
+  ({ predicate, showCurrentPlan, isBoostPurchaseFlow } = analyticsLocation);
   const PREMIUM = UserSettingsSections.PREMIUM;
   const obj2 = {
-    title: intl.string(intl6.t.lpNrPu),
+    title: intl.string(analyticsLocation(1126).t.lpNrPu),
     headerLeft: obj3.getHeaderCloseButton(onClose),
+    initialParams: { analyticsLocation },
     render() {
       return jsx(UserSettingsPremiumDefault, { applicationId: getScreens, onClose, activitySessionId, channelId, guildId, premiumFeatureCardOrder, onPaymentSuccess, onPaymentDismiss, isFullScreenPresentation: true });
     }
   };
-  intl = intl6.intl;
+  intl = analyticsLocation(1126).intl;
   obj[PREMIUM] = obj2;
-  obj3 = NavigatorHeader;
+  obj3 = analyticsLocation(6203);
   const PREMIUM_MANAGE_PLAN = UserSettingsSections.PREMIUM_MANAGE_PLAN;
   const obj4 = {
-    title: intl2.string(intl6.t["8jmdON"]),
+    title: intl2.string(analyticsLocation(1126).t["8jmdON"]),
     render() {
       return jsx(onClose(dependencyMap[6]), {});
     }
   };
-  intl2 = intl6.intl;
+  intl2 = analyticsLocation(1126).intl;
   obj[PREMIUM_MANAGE_PLAN] = obj4;
   const GUILD_BOOSTING = UserSettingsSections.GUILD_BOOSTING;
   const obj5 = {
-    title: intl3.string(intl6.t["+CbP2v"]),
+    title: intl3.string(analyticsLocation(1126).t["+CbP2v"]),
     headerLeft: obj6.getHeaderCloseButton(onClose),
     render() {
       return jsx(onClose(dependencyMap[7]), {});
     }
   };
-  intl3 = intl6.intl;
+  intl3 = analyticsLocation(1126).intl;
   obj[GUILD_BOOSTING] = obj5;
-  obj6 = NavigatorHeader;
+  obj6 = analyticsLocation(6203);
   const PREMIUM_PLAN_SELECT = UserSettingsSections.PREMIUM_PLAN_SELECT;
   const obj7 = {
-    title: intl4.string(intl6.t.u95Dt4),
+    title: intl4.string(analyticsLocation(1126).t.u95Dt4),
     headerLeft(canGoBack) {
       let tmp2;
       canGoBack = canGoBack.canGoBack;
@@ -104,27 +103,27 @@ function getScreens(arg0) {
       let predicate;
       let showCurrentPlan;
       ({ predicate, showCurrentPlan, isBoostPurchaseFlow } = arg0);
-      return jsx(PremiumPlanSelectDefault, { analyticsLocation: require, predicate, showCurrentPlan, isBoostPurchaseFlow, planId: jsx, applicationId: getScreens, guildId });
+      return jsx(PremiumPlanSelectDefault, { analyticsLocation, predicate, showCurrentPlan, isBoostPurchaseFlow, planId: jsx, applicationId: getScreens, guildId });
     }
   };
-  intl4 = intl6.intl;
+  intl4 = analyticsLocation(1126).intl;
   obj[PREMIUM_PLAN_SELECT] = obj7;
   const PREMIUM_GIFTING = UserSettingsSections.PREMIUM_GIFTING;
   const obj8 = {
-    title: intl5.string(intl6.t.Oba8Sh),
+    title: intl5.string(analyticsLocation(1126).t.Oba8Sh),
     headerLeft: obj9.getHeaderCloseButton(onClose),
     render() {
-      return jsx(UserSettingsPremiumGiftingDefault, { recipientUserId: UserSettingsSections, analyticsLocation: require });
+      return jsx(UserSettingsPremiumGiftingDefault, { recipientUserId: UserSettingsSections, analyticsLocation });
     }
   };
-  intl5 = intl6.intl;
+  intl5 = analyticsLocation(1126).intl;
   obj[PREMIUM_GIFTING] = obj8;
-  obj9 = NavigatorHeader;
+  obj9 = analyticsLocation(6203);
   return obj;
 }
 const UserSettingsSections = Constants.UserSettingsSections;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocations) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumModal(analyticsLocations) {
   let activitySessionId;
   let analyticsLocation;
   let applicationId;
@@ -221,7 +220,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocations
   cResult[14] = showCurrentPlan;
   cResult[15] = tmp6;
   tmp5 = tmp6;
-}) : ((initialRoute) => {
+}) : (function PremiumModal(initialRoute) {
   let activitySessionId;
   let analyticsLocation;
   let analyticsLocations;

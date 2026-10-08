@@ -1,50 +1,50 @@
-// Module ID: 12503
-// Function ID: 12504
+// Module ID: 12599
+// Function ID: 12600
 // Name: ChannelRowPreview
-// Dependencies: [109, 19, 17, 4525, 21, 558, 576, 5878, 11247, 9584, 10382, 4845, 12205, 7534, 7536, 5609, 11709, 12491, 11712, 10736, 4892, 4797, 4896, 587, 4586, 7820, 7606, 2028, 7602, 8336, 504, 2]
+// Dependencies: [109, 19, 17, 4717, 21, 558, 576, 8190, 11362, 10233, 9979, 5039, 12284, 9256, 9258, 5382, 11774, 12587, 11777, 10490, 5086, 4991, 5090, 587, 4778, 8239, 7723, 2040, 7719, 9308, 504, 2]
 
-// Module 12503 (ChannelRowPreview)
+// Module 12599 (ChannelRowPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import useToken from "useToken" /* 4586 */;
-import LinkIcon2 from "LinkIcon" /* 4845 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import createStyles from "createStyles" /* 4896 */;
-import useFontScale from "useFontScale" /* 5609 */;
-import ImageIcon2 from "ImageIcon" /* 5878 */;
-import PhoneCallIcon2 from "PhoneCallIcon" /* 7534 */;
-import PhoneHangUpIcon2 from "PhoneHangUpIcon" /* 7536 */;
-import RowGeneratorDefault from "RowGenerator" /* 7602 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 7820 */;
-import MusicIcon2 from "MusicIcon" /* 9584 */;
-import AttachmentIcon2 from "AttachmentIcon" /* 10382 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10736 */;
-import VideoIcon2 from "VideoIcon" /* 11247 */;
-import ChannelListLayout from "ChannelListLayout" /* 11712 */;
-import StickerIcon2 from "StickerIcon" /* 12205 */;
-import useFormattedMessagePreview from "useFormattedMessagePreview" /* 12491 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import useToken from "useToken" /* 4778 */;
+import LinkIcon2 from "LinkIcon" /* 5039 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import createStyles from "createStyles" /* 5090 */;
+import useFontScale from "useFontScale" /* 5382 */;
+import RowGeneratorDefault from "RowGenerator" /* 7719 */;
+import ImageIcon2 from "ImageIcon" /* 8190 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8239 */;
+import PhoneCallIcon2 from "PhoneCallIcon" /* 9256 */;
+import PhoneHangUpIcon2 from "PhoneHangUpIcon" /* 9258 */;
+import AttachmentIcon2 from "AttachmentIcon" /* 9979 */;
+import MusicIcon2 from "MusicIcon" /* 10233 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10490 */;
+import VideoIcon2 from "VideoIcon" /* 11362 */;
+import ChannelListLayout from "ChannelListLayout" /* 11777 */;
+import StickerIcon2 from "StickerIcon" /* 12284 */;
+import useFormattedMessagePreview from "useFormattedMessagePreview" /* 12587 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, icon, importDefault, obj1, tmp3;
+let _require, dependencyMap, importDefault;
 
 let c9;
 let metroImportAll;
 let tmp;
 let tmp2;
-const react_native2 = tmp2(7606);
-const MessagePreviewMarkup = tmp(11709);
+const react_native2 = tmp2(7723);
+const MessagePreviewMarkup = tmp(11774);
 let closure_3 = ["icon"];
 const View = react_native.View;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewIcon(icon) {
   let tmp4;
   let tmp5;
   const obj = react2;
@@ -65,7 +65,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
     let tmp51;
     if (cResult[3] !== tmp5) {
       const obj2 = {};
-      const ImageIcon = tmp(5878).ImageIcon;
+      const ImageIcon = tmp(8190).ImageIcon;
       const merged = Object.assign(tmp5);
       const tmp56 = metroImportAll(ImageIcon, obj2);
       cResult[3] = tmp5;
@@ -79,7 +79,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
     let tmp45;
     if (cResult[5] !== tmp5) {
       const obj3 = {};
-      const VideoIcon = tmp(11247).VideoIcon;
+      const VideoIcon = tmp(11362).VideoIcon;
       const merged1 = Object.assign(tmp5);
       const tmp50 = metroImportAll(VideoIcon, obj3);
       cResult[5] = tmp5;
@@ -93,7 +93,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
     let tmp39;
     if (cResult[7] !== tmp5) {
       const obj4 = {};
-      const MusicIcon = tmp(9584).MusicIcon;
+      const MusicIcon = tmp(10233).MusicIcon;
       const merged2 = Object.assign(tmp5);
       const tmp44 = metroImportAll(MusicIcon, obj4);
       cResult[7] = tmp5;
@@ -107,7 +107,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
     let tmp33;
     if (cResult[9] !== tmp5) {
       const obj5 = {};
-      const AttachmentIcon = tmp(10382).AttachmentIcon;
+      const AttachmentIcon = tmp(9979).AttachmentIcon;
       const merged3 = Object.assign(tmp5);
       const tmp38 = metroImportAll(AttachmentIcon, obj5);
       cResult[9] = tmp5;
@@ -121,7 +121,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
     let tmp27;
     if (cResult[11] !== tmp5) {
       const obj6 = {};
-      const LinkIcon = tmp(4845).LinkIcon;
+      const LinkIcon = tmp(5039).LinkIcon;
       const merged4 = Object.assign(tmp5);
       const tmp32 = metroImportAll(LinkIcon, obj6);
       cResult[11] = tmp5;
@@ -135,7 +135,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
     let tmp21;
     if (cResult[13] !== tmp5) {
       const obj7 = {};
-      const StickerIcon = tmp(12205).StickerIcon;
+      const StickerIcon = tmp(12284).StickerIcon;
       const merged5 = Object.assign(tmp5);
       const tmp26 = metroImportAll(StickerIcon, obj7);
       cResult[13] = tmp5;
@@ -149,7 +149,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
     let tmp15;
     if (cResult[15] !== tmp5) {
       const obj8 = {};
-      const PhoneCallIcon = tmp(7534).PhoneCallIcon;
+      const PhoneCallIcon = tmp(9256).PhoneCallIcon;
       const merged6 = Object.assign(tmp5);
       const tmp20 = metroImportAll(PhoneCallIcon, obj8);
       cResult[15] = tmp5;
@@ -163,7 +163,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
     let tmp9;
     if (cResult[17] !== tmp5) {
       const obj9 = {};
-      const PhoneHangUpIcon = tmp(7536).PhoneHangUpIcon;
+      const PhoneHangUpIcon = tmp(9258).PhoneHangUpIcon;
       const merged7 = Object.assign(tmp5);
       const tmp14 = metroImportAll(PhoneHangUpIcon, obj9);
       cResult[17] = tmp5;
@@ -174,7 +174,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
     }
     return tmp9;
   }
-}) : ((icon) => {
+}) : (function PreviewIcon(icon) {
   icon = icon.icon;
   const merged = Object.assign(icon, Object.assign({ icon: 0 }));
   if ("image" === icon) {
@@ -221,7 +221,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
 });
 let memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewMarkup(arg0) {
   let channelId;
   let color;
   let guildId;
@@ -261,7 +261,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
   cResult[6] = muted;
   cResult[7] = result;
   tmp5 = result;
-}) : ((arg0) => {
+}) : (function PreviewMarkup(arg0) {
   let channelId;
   let color;
   let guildId;
@@ -275,7 +275,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
   return obj2.renderMessagePreviewMarkup({ content, muted, guildId, channelId, layout, color, fontScale });
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelRowPreview(arg0) {
   let authorLabel;
   let channel;
   let color;
@@ -444,7 +444,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = scaleTextLineHeightResult;
   tmp7 = scaleTextLineHeightResult;
   tmp6 = layoutStyles;
-}) : ((arg0) => {
+}) : (function ChannelRowPreview(arg0) {
   let authorLabel;
   let channel;
   let color;
@@ -518,7 +518,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_12 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(textColor) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeChannelRowPreview(textColor) {
   let gifAutoPlay;
   let gradientColors;
   let gradientStyles;
@@ -623,36 +623,6 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(textColor) {
       const obj5 = { pointerEvents: "none", horizontalOffset: 0, modifyRow: tmp11, message, rowGenerator: tmp19, messageSizeCacheRef, maxHeight, gradientStyles, gradientColors };
       const tmp24 = closure_8(require("ChatItem"), obj5);
       cResult[11] = gradientColors;
-      class I {
-        constructor(arg0) {
-          processColorOrThrowResult = undefined;
-          tmp2 = closure_0;
-          tmp3 = closure_2;
-          textColor.contextType = closure_0(closure_2[25]).MessageContextType.SEARCH;
-          if (null != closure_2) {
-            try {
-              tmp2Result = tmp2(tmp3[26]);
-              processColorOrThrowResult = tmp2Result.processColorOrThrow(tmp4);
-            } catch (err) {
-            }
-          }
-          if (null != processColorOrThrowResult) {
-            tmp5 = processColorOrThrowResult;
-            textColor.message.textColor = processColorOrThrowResult;
-          }
-          if (null != lineClamp) {
-            obj1 = { numberOfLines: null, expandable: false, seeMoreLabel: "...", seeMoreLabelColor: null };
-            obj1.numberOfLines = tmp6;
-            if (processColorOrThrowResult == null) {
-              tmp7 = closure_1;
-              processColorOrThrowResult = closure_1.seeMoreLabelColor;
-            }
-            obj1.seeMoreLabelColor = processColorOrThrowResult;
-            textColor.truncation = obj1;
-          }
-          return;
-        }
-      }
       cResult[12] = gradientStyles;
       cResult[13] = maxHeight;
       cResult[14] = message;
@@ -663,42 +633,33 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(textColor) {
       tmp22 = tmp24;
     }
   }
-  class I {
-    constructor(arg0) {
-      processColorOrThrowResult = undefined;
-      tmp2 = closure_0;
-      tmp3 = closure_2;
-      textColor.contextType = closure_0(closure_2[25]).MessageContextType.SEARCH;
-      if (null != closure_2) {
-        try {
-          tmp2Result = tmp2(tmp3[26]);
-          processColorOrThrowResult = tmp2Result.processColorOrThrow(tmp4);
-        } catch (err) {
-        }
+  function modifyRow(message) {
+    let processColorOrThrowResult;
+    message.contextType = RowGeneratorTypes.MessageContextType.SEARCH;
+    if (null != token) {
+      try {
+        const tmp2Result = react_native2;
+        processColorOrThrowResult = tmp2Result.processColorOrThrow(tmp4);
+      } catch (err) {
       }
-      if (null != processColorOrThrowResult) {
-        tmp5 = processColorOrThrowResult;
-        textColor.message.textColor = processColorOrThrowResult;
+    }
+    if (null != processColorOrThrowResult) {
+      message.message.textColor = processColorOrThrowResult;
+    }
+    if (null != lineClamp) {
+      const obj = { numberOfLines: tmp6, expandable: false, seeMoreLabel: "...", seeMoreLabelColor: processColorOrThrowResult };
+      if (processColorOrThrowResult == null) {
+        processColorOrThrowResult = seeMoreLabelColor.seeMoreLabelColor;
       }
-      if (null != lineClamp) {
-        obj1 = { numberOfLines: null, expandable: false, seeMoreLabel: "...", seeMoreLabelColor: null };
-        obj1.numberOfLines = tmp6;
-        if (processColorOrThrowResult == null) {
-          tmp7 = closure_1;
-          processColorOrThrowResult = closure_1.seeMoreLabelColor;
-        }
-        obj1.seeMoreLabelColor = processColorOrThrowResult;
-        textColor.truncation = obj1;
-      }
-      return;
+      message.truncation = obj;
     }
   }
   cResult[2] = token;
   cResult[3] = lineClamp;
   cResult[4] = tmp7;
-  cResult[5] = I;
-  tmp11 = I;
-}) : ((arg0) => {
+  cResult[5] = modifyRow;
+  tmp11 = modifyRow;
+}) : (function NativeChannelRowPreview(arg0) {
   let gifAutoPlay;
   let gradientColors;
   let gradientStyles;
@@ -714,7 +675,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(textColor) {
     gifAutoPlay = false;
   }
   ({ textColor, gradientStyles, gradientColors } = arg0);
-  const tmp = gifAutoPlay(4797)();
+  const tmp = gifAutoPlay(4991)();
   let obj = createStyles;
   let obj2 = { seeMoreLabelColor: gifAutoPlay(587).colors.TEXT_DEFAULT };
   dependencyMap = obj.createNativeStyleProperties(obj2)(tmp);
@@ -764,12 +725,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(textColor) {
     gradientStyles,
     gradientColors
   };
-  return closure_8(gifAutoPlay(8336), obj4);
+  return closure_8(gifAutoPlay(9308), obj4);
 });
 let closure_13 = tmp5;
 const memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
+const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function NativeMessageChannelRowPreview(message) {
   let first;
   let tmp16;
   let tmp6;
@@ -828,7 +789,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((messa
     tmp16 = cResult[7];
   }
   tmp9 = tmp16;
-}) : ((message) => {
+}) : (function NativeMessageChannelRowPreview(message) {
   _require = message;
   const items = [RelationshipStore];
   const items1 = [message.message.author.id];

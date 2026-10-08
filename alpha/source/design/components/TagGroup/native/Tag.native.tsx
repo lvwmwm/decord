@@ -1,18 +1,18 @@
-// Module ID: 14273
-// Function ID: 14274
+// Module ID: 14097
+// Function ID: 14098
 // Name: Tag
-// Dependencies: [19, 17, 21, 4896, 14271, 587, 558, 576, 14274, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 14095, 587, 558, 576, 14098, 5086, 2]
 
-// Module 14273 (Tag)
+// Module 14097 (Tag)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import TagGroupTypes from "TagGroupTypes" /* 14271 */;
-import TagGraphic from "TagGraphic" /* 14274 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import TagGroupTypes from "TagGroupTypes" /* 14095 */;
+import TagGraphic from "TagGraphic" /* 14098 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let closure_6 = createStyles.createStyles((arg0, arg1) => {
   ({ flexShrink: 1, color: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT });
   return obj;
 });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((variant) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tag(variant) {
   let inline;
   let item;
   let items;
@@ -104,7 +104,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((variant) => {
     let tmp7 = null;
     if (null != item.icon) {
       const obj4 = { graphic: item.icon, size };
-      tmp7 = React3(tmp(14274).TagGraphic, obj4);
+      tmp7 = React3(tmp(14098).TagGraphic, obj4);
     }
     cResult[3] = item.icon;
     cResult[4] = size;
@@ -116,7 +116,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((variant) => {
   cResult[1] = inline;
   cResult[2] = items1;
   tmp5 = items1;
-}) : ((variant) => {
+}) : (function Tag(variant) {
   let inline;
   let item;
   let items1;

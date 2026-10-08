@@ -1,15 +1,15 @@
-// Module ID: 16439
-// Function ID: 16440
+// Module ID: 16699
+// Function ID: 16700
 // Name: ICYMICustomScoresModal
-// Dependencies: [109, 19, 21, 7568, 4896, 587, 558, 576, 6503, 7509, 1126, 10675, 16440, 16441, 2]
+// Dependencies: [109, 19, 21, 9279, 5090, 587, 558, 576, 6679, 9232, 1126, 9588, 16700, 16701, 2]
 
-// Module 16439 (ICYMICustomScoresModal)
+// Module 16699 (ICYMICustomScoresModal)
 import nativeDefault from "native" /* 587 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 7568 */;
-import createStyles from "createStyles" /* 4896 */;
+import NativeStackView from "NativeStackView" /* 9279 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let closure_7 = NativeStackView.createNativeStackNavigator();
 let obj = { header: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 let closure_8 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMICustomScoresModal() {
   let closure_0;
   let items;
   let obj = require("react");
@@ -119,7 +119,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = tmp2.header;
   cResult[2] = fn;
   tmp4 = fn;
-}) : (() => {
+}) : (function ICYMICustomScoresModal() {
   let closure_0;
   let items;
   _require = closure_8();

@@ -1,15 +1,15 @@
-// Module ID: 11941
-// Function ID: 11942
+// Module ID: 12014
+// Function ID: 12015
 // Name: useSearchContext
-// Dependencies: [19, 2051, 1085, 558, 576, 38, 573, 2]
+// Dependencies: [19, 2063, 1085, 558, 576, 38, 573, 2]
 // Exports: getChannelDetailsSearchContext
 
-// Module 11941 (useSearchContext)
+// Module 12014 (useSearchContext)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let _require;
 
 const SearchTypes = Constants.SearchTypes;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildSearchContext(guildId) {
   let tmp2;
   const obj = react2;
   const cResult = obj.c(2);
@@ -31,12 +31,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     tmp2 = cResult[1];
   }
   return tmp2;
-}) : ((guildId) => {
+}) : (function useGuildSearchContext(guildId) {
   const items = [guildId];
   return react.useMemo(() => ({ type: SearchTypes.GUILD, guildId }), items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, channelId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildChannelSearchContext(guildId, channelId) {
   const obj = react2;
   const cResult = obj.c(3);
   if (cResult[0] === channelId) {
@@ -51,7 +51,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, channelId) 
   cResult[1] = guildId;
   cResult[2] = obj2;
   tmp2 = obj2;
-}) : ((guildId, channelId) => {
+}) : (function useGuildChannelSearchContext(guildId, channelId) {
   const items = [guildId, channelId];
   return react.useMemo(() => ({ type: SearchTypes.GUILD_CHANNEL, guildId, channelId }), items);
 });
@@ -71,7 +71,7 @@ function getChannelDetailsSearchContext(channelId, guildId, isThreadResult) {
   }
   return obj;
 }
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId, guildId) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelDetailsSearchContext(channelId, guildId) {
   let first;
   let obj4;
   let tmp6;
@@ -87,7 +87,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId, guildId
     first = cResult[0];
   }
   if (cResult[1] !== channelId) {
-    const fn = function o() {
+    const fn = function h() {
       const channel = ChannelStore.getChannel(channelId);
       let flag;
       if (channel != null) {
@@ -130,7 +130,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId, guildId
   cResult[5] = stateFromStores;
   cResult[6] = obj4;
   tmp8 = obj4;
-}) : ((channelId, guildId) => {
+}) : (function useChannelDetailsSearchContext(channelId, guildId) {
   let stateFromStores;
   _require = channelId;
   let obj = require("useStateFromStores");

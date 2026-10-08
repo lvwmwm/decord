@@ -1,19 +1,17 @@
-// Module ID: 16908
-// Function ID: 16909
+// Module ID: 17189
+// Function ID: 17190
 // Name: SearchHistoricalIndexingHeader
-// Dependencies: [19, 2116, 7524, 21, 4896, 558, 576, 12001, 1126, 4892, 6002, 2]
+// Dependencies: [19, 2128, 9247, 21, 5090, 558, 576, 12074, 1126, 5086, 6186, 2]
 
-// Module 16908 (SearchHistoricalIndexingHeader)
+// Module 17189 (SearchHistoricalIndexingHeader)
 import Fragment from "Fragment" /* 21 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12001 */;
+import tracking_TrackingDefault from "tracking/Tracking" /* 12074 */;
 import react_mod from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
-import SearchConstants from "SearchConstants" /* 7524 */;
-import createStyles from "createStyles" /* 4896 */;
+import LocaleStore from "LocaleStore" /* 2128 */;
+import SearchConstants from "SearchConstants" /* 9247 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let searchContext;
 
 let SEARCH_LIST_HORIZONTAL_PADDING;
 let SEARCH_ROW_TAP_STATE_PADDING;
@@ -23,7 +21,7 @@ let react = react_mod;
 const jsx = Fragment.jsx;
 let obj = { header: { marginBottom: 16 }, headerMessages: { marginHorizontal: SEARCH_LIST_HORIZONTAL_PADDING, marginTop: SEARCH_ROW_TAP_STATE_PADDING } };
 let closure_7 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HistoricalIndexingHeader(searchContext) {
   let headerMessages;
   let tmp5;
   let obj = searchContext(576);
@@ -70,7 +68,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => 
         tmp14 = cResult[10];
       }
       if (cResult[11] !== tmp14) {
-        const tmp18 = jsx(searchContext(4892).Text, { variant: "heading-sm/normal", color: "interactive-text-default", children: tmp14 });
+        const tmp18 = jsx(searchContext(5086).Text, { variant: "heading-sm/normal", color: "interactive-text-default", children: tmp14 });
         cResult[11] = tmp14;
         cResult[12] = tmp18;
         tmp16 = tmp18;
@@ -84,7 +82,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => 
         }
         return tmp19;
       }
-      const tmp21 = jsx(searchContext(6002).Card, { variant: "primary", border: "subtle", style: tmp13, children: tmp16 });
+      const tmp21 = jsx(searchContext(6186).Card, { variant: "primary", border: "subtle", style: tmp13, children: tmp16 });
       cResult[13] = tmp13;
       cResult[14] = tmp16;
       cResult[15] = tmp21;
@@ -97,7 +95,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => 
     tmp13 = items;
   }
   const fn = function b() {
-    const obj = search_tracking_TrackingDefault;
+    const obj = tracking_TrackingDefault;
     const obj2 = { searchContext, isHistoricalIndexing: true, documentsIndexed };
     obj.trackSearchIndexing(obj2);
   };
@@ -108,7 +106,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => 
   cResult[5] = items1;
   tmp10 = items1;
   tmp9 = fn;
-}) : ((searchContext) => {
+}) : (function HistoricalIndexingHeader(searchContext) {
   let intl;
   searchContext = searchContext.searchContext;
   const documentsIndexed = searchContext.documentsIndexed;
@@ -129,7 +127,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => 
     return headerMessages;
   }, items1);
   const effect = react.useEffect(() => {
-    const obj = search_tracking_TrackingDefault;
+    const obj = tracking_TrackingDefault;
     const obj2 = { searchContext, isHistoricalIndexing: true, documentsIndexed };
     obj.trackSearchIndexing(obj2);
   }, items2);

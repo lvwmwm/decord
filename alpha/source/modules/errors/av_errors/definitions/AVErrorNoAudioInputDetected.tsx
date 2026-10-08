@@ -1,14 +1,14 @@
-// Module ID: 18073
-// Function ID: 18074
+// Module ID: 18360
+// Function ID: 18361
 // Name: AVErrorNoAudioInputDetected
-// Dependencies: [2051, 1999, 4919, 1085, 9131, 18074, 2]
+// Dependencies: [2063, 2011, 5108, 1085, 5287, 18361, 2]
 
-// Module 18073 (AVErrorNoAudioInputDetected)
-import AVError from "AVError" /* 9131 */;
-import AVErrorContext from "AVErrorContext" /* 18074 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
+// Module 18360 (AVErrorNoAudioInputDetected)
+import AVError from "AVError" /* 5287 */;
+import AVErrorContext from "AVErrorContext" /* 18361 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

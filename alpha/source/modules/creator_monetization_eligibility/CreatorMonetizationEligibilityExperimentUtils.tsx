@@ -1,14 +1,14 @@
-// Module ID: 6774
-// Function ID: 6775
+// Module ID: 6950
+// Function ID: 6951
 // Name: CreatorMonetizationEligibilityExperimentUtils
-// Dependencies: [1377, 4536, 1085, 558, 576, 504, 2]
+// Dependencies: [1389, 4728, 1085, 558, 576, 504, 2]
 // Exports: isExpeditedMonetizationOnboardingGuild, isRavenOnboardingGuild, isUserInCreatorMonetizationEligibleCountry, isWhitegloveOnboardingGuild, useIsRavenOnboardingGuild, useIsWhitegloveOnboardingGuild
 
-// Module 6774 (CreatorMonetizationEligibilityExperimentUtils)
+// Module 6950 (CreatorMonetizationEligibilityExperimentUtils)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import UserStore from "UserStore" /* 1377 */;
-import BillingInfoStore from "BillingInfoStore" /* 4536 */;
+import UserStore from "UserStore" /* 1389 */;
+import BillingInfoStore from "BillingInfoStore" /* 4728 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ const get_initialized = tmp(504);
 const GuildFeatures = Constants.GuildFeatures;
 const set = new Set(["US"]);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsUserInCreatorMonetizationEligibleCountry() {
   let ipCountryCode;
   let tmp4;
   let tmp5;
@@ -49,7 +49,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useIsUserInCreatorMonetizationEligibleCountry() {
   let ipCountryCode;
   const items = [UserStore, BillingInfoStore];
   const obj = get_initialized;
@@ -70,7 +70,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsExpeditedOnboardingGuild(id) {
   id = undefined;
   if (id != null) {
     id = id.id;
@@ -85,7 +85,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     tmp2 = hasItem;
   }
   return tmp2;
-}) : ((id) => {
+}) : (function useIsExpeditedOnboardingGuild(id) {
   id = undefined;
   if (id != null) {
     id = id.id;

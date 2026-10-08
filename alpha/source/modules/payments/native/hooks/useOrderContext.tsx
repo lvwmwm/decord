@@ -1,9 +1,9 @@
-// Module ID: 10447
-// Function ID: 10448
+// Module ID: 10044
+// Function ID: 10045
 // Name: useOrderContext
 // Dependencies: [32, 19, 558, 576, 2]
 
-// Module 10447 (useOrderContext)
+// Module 10044 (useOrderContext)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -12,7 +12,7 @@ import size from "module_2" /* 2 */;
 
 let order;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOrderContext(arg0, arg1) {
   let first;
   let tmp3;
   let tmp4;
@@ -74,7 +74,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = revision;
   cResult[5] = obj2;
   tmp10 = obj2;
-}) : ((arg0) => {
+}) : (function useOrderContext(arg0) {
   let first;
   let tmp3;
   [first, tmp3] = react.useState(arg0);

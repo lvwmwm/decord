@@ -1,11 +1,11 @@
-// Module ID: 10368
-// Function ID: 10369
+// Module ID: 9965
+// Function ID: 9966
 // Name: DismissibleActionSheet
-// Dependencies: [19, 558, 576, 4860, 5597, 2]
+// Dependencies: [19, 558, 576, 5054, 5392, 2]
 
-// Module 10368 (DismissibleActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import useMountEffectDefault from "useMountEffect" /* 5597 */;
+// Module 9965 (DismissibleActionSheet)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import useMountEffectDefault from "useMountEffect" /* 5392 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -13,16 +13,16 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((actionSheetKey) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DismissibleActionSheet(actionSheetKey) {
   let tmp3;
   _require = actionSheetKey;
   let obj = require("react");
   const cResult = obj.c(6);
   if (cResult[0] !== actionSheetKey) {
-    const fn = function o() {
+    const fn = function s() {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       let obj = {
-        markAsDismissed(arg0) {
+        markAsDismissed: function _markAsDismissed(arg0) {
           const obj = ActionSheetActionCreatorsDefault;
           obj.hideActionSheet(actionSheetKey.actionSheetKey);
           actionSheetKey.markAsDismissed(arg0);
@@ -51,7 +51,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((actionSheetKey) => {
     const effect = react.useEffect(tmp5, tmp6);
     return null;
   }
-  const fn2 = function h() {
+  const fn2 = function o() {
     let hideSheetOnUnmount;
     return () => {
       const tmp2 = null != hideSheetOnUnmount.hideSheetOnUnmount && hideSheetOnUnmount.hideSheetOnUnmount;
@@ -69,12 +69,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((actionSheetKey) => {
   cResult[5] = items;
   tmp6 = items;
   tmp5 = fn2;
-}) : ((arg0) => {
+}) : (function DismissibleActionSheet(arg0) {
   let closure_0 = arg0;
   const tmp = useMountEffectDefault(() => {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     let obj = {
-      markAsDismissed(arg0) {
+      markAsDismissed: function _markAsDismissed(arg0) {
         const obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet(closure_1_0.actionSheetKey);
         closure_1_0.markAsDismissed(arg0);

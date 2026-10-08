@@ -1,29 +1,29 @@
-// Module ID: 16512
-// Function ID: 16513
+// Module ID: 16772
+// Function ID: 16773
 // Name: ThemedHeaderBackgroundGradient
-// Dependencies: [19, 17, 21, 4896, 558, 576, 587, 1618, 4586, 1103, 5612, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 587, 1630, 4778, 1103, 5387, 2]
 
-// Module 16512 (ThemedHeaderBackgroundGradient)
+// Module 16772 (ThemedHeaderBackgroundGradient)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import useToken from "useToken" /* 4586 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import useToken from "useToken" /* 4778 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 let tmp6;
-const LinearGradientDefault = tmp6(5612);
+const LinearGradientDefault = tmp6(5387);
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ container: { position: "absolute", left: 0, right: 0, top: 0 } });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ThemedHeaderBackgroundGradient(arg0) {
   let baseColor;
   let minHeight;
   let tmp12;
@@ -120,7 +120,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[5] = tmp12;
   cResult[6] = items1;
   tmp13 = items1;
-}) : ((baseColor) => {
+}) : (function ThemedHeaderBackgroundGradient(baseColor) {
   let BACKGROUND_BASE_LOWEST = baseColor.baseColor;
   if (BACKGROUND_BASE_LOWEST === undefined) {
     BACKGROUND_BASE_LOWEST = nativeDefault.colors.BACKGROUND_BASE_LOWEST;

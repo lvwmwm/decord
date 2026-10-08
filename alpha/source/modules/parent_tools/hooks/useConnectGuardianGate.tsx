@@ -1,20 +1,20 @@
-// Module ID: 17639
-// Function ID: 17640
+// Module ID: 17921
+// Function ID: 17922
 // Name: useConnectGuardianGate
-// Dependencies: [32, 19, 7061, 558, 576, 504, 7063, 5597, 2]
+// Dependencies: [32, 19, 7247, 558, 576, 504, 7249, 5392, 2]
 
-// Module 17639 (useConnectGuardianGate)
+// Module 17921 (useConnectGuardianGate)
 import get_initialized from "get initialized" /* 504 */;
-import useMountEffectDefault from "useMountEffect" /* 5597 */;
+import useMountEffectDefault from "useMountEffect" /* 5392 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7061 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7247 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let catchPromise, dependencyMap, importDefault;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConnectGuardianGate() {
   let closure_0;
   let closure_1;
   let expiresAt;
@@ -32,7 +32,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp = _require;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [FamilyCenterStore];
-    const fn = function s() {
+    const fn = function l() {
       const obj = { linkCode: FamilyCenterStore.getLinkCode(), expiresAt: FamilyCenterStore.getLinkCodeExpiresAt() };
       return obj;
     };
@@ -268,7 +268,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   return tmp15;
-}) : (() => {
+}) : (function useConnectGuardianGate() {
   let closure_1;
   let expiresAt;
   let first;

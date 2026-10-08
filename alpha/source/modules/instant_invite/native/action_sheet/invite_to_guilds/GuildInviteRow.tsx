@@ -1,26 +1,25 @@
-// Module ID: 12814
-// Function ID: 12815
+// Module ID: 12961
+// Function ID: 12962
 // Name: GuildInviteRow
-// Dependencies: [19, 17, 12810, 7239, 21, 558, 576, 12809, 9569, 5978, 1126, 4892, 6000, 2]
+// Dependencies: [19, 17, 12957, 7418, 21, 558, 576, 12956, 8743, 6161, 1126, 5086, 6184, 2]
 
-// Module 12814 (GuildInviteRow)
+// Module 12961 (GuildInviteRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 7239 */;
-import GuildInviteUtils from "GuildInviteUtils" /* 12809 */;
-import GuildInviteSendStateStore from "GuildInviteSendStateStore" /* 12810 */;
+import Constants from "Constants" /* 7418 */;
+import GuildInviteUtils from "GuildInviteUtils" /* 12956 */;
+import GuildInviteSendStateStore from "GuildInviteSendStateStore" /* 12957 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let source;
 
 const View = react_native.View;
 const useGuildInviteSendStates = GuildInviteSendStateStore.useGuildInviteSendStates;
 const InviteSendStates = Constants.InviteSendStates;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInviteRow(source) {
   let end;
   let guild;
   let recipientId;
@@ -132,15 +131,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
         tmp8 = tmp11;
       }
     }
-    const fn2 = function x() {
+    function handlePress() {
       const obj = GuildInviteUtils;
       obj.sendGuildInvite(recipientId, guild.id, source);
-    };
+    }
     cResult[3] = guild.id;
     cResult[4] = recipientId;
     cResult[5] = source;
-    cResult[6] = fn2;
-    tmp7 = fn2;
+    cResult[6] = handlePress;
+    tmp7 = handlePress;
   }
   const fn = function c(arg0) {
     let tmp2;
@@ -153,7 +152,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
   cResult[1] = recipientId;
   cResult[2] = fn;
   tmp4 = fn;
-}) : ((arg0) => {
+}) : (function GuildInviteRow(arg0) {
   let end;
   let row;
   let start;

@@ -1,23 +1,21 @@
-// Module ID: 18007
-// Function ID: 18008
+// Module ID: 18294
+// Function ID: 18295
 // Name: GuildPremiumRoleSubscribeButton
-// Dependencies: [19, 21, 4896, 558, 576, 1126, 9915, 2]
+// Dependencies: [19, 21, 5090, 558, 576, 1126, 9397, 2]
 
-// Module 18007 (GuildPremiumRoleSubscribeButton)
+// Module 18294 (GuildPremiumRoleSubscribeButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import CreatorRevenueButton2 from "CreatorRevenueButton" /* 9915 */;
+import CreatorRevenueButton2 from "CreatorRevenueButton" /* 9397 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let onPress;
-
 const jsx = Fragment.jsx;
 let closure_3 = createStyles.createStyles({ crButton: { marginVertical: 16 } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPremiumRoleSubscribeButton(onPress) {
   let first;
   const obj = react2;
   const cResult = obj.c(4);
@@ -43,7 +41,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   cResult[2] = tmp4.crButton;
   cResult[3] = tmp8;
   tmp7 = tmp8;
-}) : ((onPress) => {
+}) : (function GuildPremiumRoleSubscribeButton(onPress) {
   onPress = onPress.onPress;
   const tmp = closure_3();
   const CreatorRevenueButton = CreatorRevenueButton2.CreatorRevenueButton;

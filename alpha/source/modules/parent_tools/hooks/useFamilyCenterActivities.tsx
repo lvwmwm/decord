@@ -1,14 +1,14 @@
-// Module ID: 14718
-// Function ID: 14719
+// Module ID: 14979
+// Function ID: 14980
 // Name: useFamilyCenterActivities
-// Dependencies: [7061, 7062, 558, 576, 573, 8331, 6750, 2]
+// Dependencies: [7247, 7248, 558, 576, 573, 7714, 6926, 2]
 
-// Module 14718 (useFamilyCenterActivities)
+// Module 14979 (useFamilyCenterActivities)
 import react from "react" /* 576 */;
-import PriceUtils from "PriceUtils" /* 6750 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7062 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8331 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7061 */;
+import PriceUtils from "PriceUtils" /* 6926 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7248 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 7714 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7247 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let tmp;
 const useStateFromStores = tmp(573);
 const TeenActionDisplayType = FamilyCenterConstants.TeenActionDisplayType;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActionsForDisplayType(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -46,7 +46,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(573);
   return tmpResult.useStateFromStoresArray(first, tmp6);
-}) : ((arg0) => {
+}) : (function useActionsForDisplayType(arg0) {
   let closure_0;
   _require = arg0;
   const items = [FamilyCenterStore];
@@ -54,7 +54,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj.useStateFromStoresArray(items, () => FamilyCenterStore.getActionsForDisplayType(closure_0));
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActionTotalsForDisplayType(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -81,7 +81,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(573);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useActionTotalsForDisplayType(arg0) {
   let closure_0;
   _require = arg0;
   const items = [FamilyCenterStore];
@@ -90,7 +90,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_4 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasActionForAnyDisplayType() {
   let tmp4;
   let tmp5;
   const obj = react;
@@ -111,7 +111,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = useStateFromStores;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useHasActionForAnyDisplayType() {
   const items = [FamilyCenterStore];
   const obj = useStateFromStores;
   return obj.useStateFromStores(items, () => {
@@ -121,7 +121,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormattedTotalForDisplayType(arg0) {
   const obj = react;
   const cResult = obj.c(5);
   let num = closure_4(arg0);
@@ -193,7 +193,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return num;
     }
   }
-}) : ((arg0) => {
+}) : (function useFormattedTotalForDisplayType(arg0) {
   let num = closure_4(arg0);
   if (num == null) {
     num = 0;

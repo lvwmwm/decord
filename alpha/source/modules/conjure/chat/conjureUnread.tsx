@@ -1,19 +1,19 @@
-// Module ID: 16181
-// Function ID: 16182
+// Module ID: 16441
+// Function ID: 16442
 // Name: conjureUnread
-// Dependencies: [19, 1231, 4911, 5078, 584, 11, 16182, 558, 576, 12925, 504, 16183, 2]
+// Dependencies: [19, 1243, 6040, 5972, 584, 11, 16442, 558, 576, 13074, 504, 16443, 2]
 // Exports: ackConjureProject
 
-// Module 16181 (conjureUnread)
+// Module 16441 (conjureUnread)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ReadStateConstants from "ReadStateConstants" /* 5078 */;
-import conjureProjectMute from "conjureProjectMute" /* 12925 */;
-import VibegrationsReadStateFlags from "VibegrationsReadStateFlags" /* 16182 */;
+import ReadStateConstants from "ReadStateConstants" /* 5972 */;
+import conjureProjectMute from "conjureProjectMute" /* 13074 */;
+import VibegrationsReadStateFlags from "VibegrationsReadStateFlags" /* 16442 */;
 import react from "react" /* 19 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ReadStateStore from "ReadStateStore" /* 4911 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ function unreadStatus(arg0, arg1, arg2) {
         const nonTimestampBits = obj.getNonTimestampBits(arg1);
         const tmp6 = require;
         if (nonTimestampBits & VibegrationsReadStateFlags.VibegrationsReadStateFlags.NEEDS_INPUT) {
-          FINISHED = tmp6(16182).VibegrationsReadStateFlags.NEEDS_INPUT;
+          FINISHED = tmp6(16442).VibegrationsReadStateFlags.NEEDS_INPUT;
         }
         tmp = FINISHED;
       }
@@ -44,7 +44,7 @@ function unreadStatus(arg0, arg1, arg2) {
 }
 const ReadStateTypes = ReadStateConstants.ReadStateTypes;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureProjectUnreadStatus(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -77,11 +77,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               const obj2 = SnowflakeUtilsDefault;
               const nonTimestampBits = obj2.getNonTimestampBits(ackMessageIdResult);
               if (nonTimestampBits & VibegrationsReadStateFlags.VibegrationsReadStateFlags.NEEDS_INPUT) {
-                FINISHED = tmp7(16182).VibegrationsReadStateFlags.NEEDS_INPUT;
+                FINISHED = tmp7(16442).VibegrationsReadStateFlags.NEEDS_INPUT;
               }
               tmp10 = FINISHED;
             }
-            FINISHED = tmp7(16182).VibegrationsReadStateFlags.FINISHED;
+            FINISHED = tmp7(16442).VibegrationsReadStateFlags.FINISHED;
           }
         }
         tmp2 = tmp10;
@@ -100,7 +100,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : ((arg0) => {
+}) : (function useConjureProjectUnreadStatus(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -121,11 +121,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             const obj2 = SnowflakeUtilsDefault;
             const nonTimestampBits = obj2.getNonTimestampBits(ackMessageIdResult);
             if (nonTimestampBits & VibegrationsReadStateFlags.VibegrationsReadStateFlags.NEEDS_INPUT) {
-              FINISHED = tmp7(16182).VibegrationsReadStateFlags.NEEDS_INPUT;
+              FINISHED = tmp7(16442).VibegrationsReadStateFlags.NEEDS_INPUT;
             }
             tmp10 = FINISHED;
           }
-          FINISHED = tmp7(16182).VibegrationsReadStateFlags.FINISHED;
+          FINISHED = tmp7(16442).VibegrationsReadStateFlags.FINISHED;
         }
       }
       tmp2 = tmp10;
@@ -134,7 +134,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureUnreadSummary() {
   let settings;
   let tmp4;
   let tmp5;
@@ -174,7 +174,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStoresObject(tmp4, tmp5);
-}) : (() => {
+}) : (function useConjureUnreadSummary() {
   let settings;
   let obj = get_initialized;
   const items = [ReadStateStore, UserSettingsProtoStore];
@@ -203,7 +203,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAckConjureProjectWhileViewing(arg0) {
   let closure_0;
   let closure_2;
   let first;
@@ -238,7 +238,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  const tmp9 = stateFromStores(16183)();
+  const tmp9 = stateFromStores(16443)();
   dependencyMap = tmp9;
   if (cResult[4] === tmp9) {
     if (cResult[5] === arg0) {
@@ -251,32 +251,30 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const effect = react.useEffect(tmp10, tmp11);
     }
   }
-  class R {
-    constructor() {
-      let tmp2 = null != closure_0;
-      const tmp = closure_0;
-      if (tmp2) {
-        tmp2 = stateFromStores;
-      }
-      if (tmp2) {
-        tmp2 = closure_2;
-      }
-      if (tmp2) {
-        const obj2 = { type: "CONJURE_PROJECT_ACK", projectId: tmp };
-        const obj = DispatcherDefault;
-        obj.dispatch(obj2);
-      }
+  const fn2 = function j() {
+    let tmp2 = null != closure_0;
+    const tmp = closure_0;
+    if (tmp2) {
+      tmp2 = stateFromStores;
     }
-  }
+    if (tmp2) {
+      tmp2 = closure_2;
+    }
+    if (tmp2) {
+      const obj2 = { type: "CONJURE_PROJECT_ACK", projectId: tmp };
+      const obj = DispatcherDefault;
+      obj.dispatch(obj2);
+    }
+  };
   const items2 = [arg0, stateFromStores, tmp9];
   cResult[4] = tmp9;
   cResult[5] = arg0;
   cResult[6] = stateFromStores;
-  cResult[7] = R;
+  cResult[7] = fn2;
   cResult[8] = items2;
   tmp11 = items2;
-  tmp10 = R;
-}) : ((arg0) => {
+  tmp10 = fn2;
+}) : (function useAckConjureProjectWhileViewing(arg0) {
   let closure_0;
   let closure_2;
   _require = arg0;
@@ -287,7 +285,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const tmp2 = null != closure_0 && ReadStateStore.getMentionCount(tmp, ReadStateTypes.CONJURING_PROJECT) > 0;
     return tmp2;
   }, items1);
-  let tmp2 = stateFromStores(16183)();
+  let tmp2 = stateFromStores(16443)();
   dependencyMap = tmp2;
   const items2 = [arg0, stateFromStores, tmp2];
   const effect = react.useEffect(() => {

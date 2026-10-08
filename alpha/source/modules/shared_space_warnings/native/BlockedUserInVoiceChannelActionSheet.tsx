@@ -1,28 +1,27 @@
-// Module ID: 13567
-// Function ID: 13568
+// Module ID: 13860
+// Function ID: 13861
 // Name: BlockedUserInVoiceChannelActionSheet
-// Dependencies: [19, 17, 2051, 4525, 1377, 13561, 13564, 1085, 21, 4896, 587, 558, 576, 504, 4860, 1252, 5575, 1126, 6708, 9817, 4892, 6081, 6000, 1188, 11448, 9702, 5601, 2]
+// Dependencies: [19, 17, 2063, 4717, 1389, 13857, 13859, 1085, 21, 5090, 587, 558, 576, 504, 5054, 1264, 5885, 1126, 6885, 10380, 5086, 6267, 6184, 1200, 11431, 10891, 5375, 2]
 
-// Module 13567 (BlockedUserInVoiceChannelActionSheet)
+// Module 13860 (BlockedUserInVoiceChannelActionSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5575 */;
-import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 13561 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5885 */;
+import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 13857 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 13564 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 13859 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let channelId, hideActionSheetResult, obj1, tmp2, tmp5, trackResult;
 
 let c10;
 let c3;
@@ -46,7 +45,7 @@ createStyles = createStyles.createStyles;
 obj3 = { gap: nativeDefault.space.PX_4, marginBottom: nativeDefault.space.PX_16 };
 obj4 = { paddingVertical: nativeDefault.space.PX_16, gap: 8 };
 let closure_15 = createStyles(obj);
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserInVoiceChannelActionSheet(channelId) {
   let first;
   let stateFromStores;
   let tmp10;
@@ -67,7 +66,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   if (cResult[1] !== blockedUserId) {
     class E {
       constructor() {
-        return closure_6.isBlocked(blockedUserId);
+        return RelationshipStore.isBlocked(blockedUserId);
       }
     }
     cResult[1] = blockedUserId;
@@ -76,7 +75,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   } else {
     class E {
       constructor() {
-        return closure_6.isBlocked(blockedUserId);
+        return RelationshipStore.isBlocked(blockedUserId);
       }
     }
   }
@@ -85,7 +84,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     class E {
       constructor() {
-        return closure_6.isBlocked(blockedUserId);
+        return RelationshipStore.isBlocked(blockedUserId);
       }
     }
     let items1 = [ChannelStore];
@@ -94,14 +93,14 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   } else {
     class E {
       constructor() {
-        return closure_6.isBlocked(blockedUserId);
+        return RelationshipStore.isBlocked(blockedUserId);
       }
     }
   }
   if (cResult[4] !== channelId) {
     class E {
       constructor() {
-        return closure_6.isBlocked(blockedUserId);
+        return RelationshipStore.isBlocked(blockedUserId);
       }
     }
     cResult[4] = channelId;
@@ -110,7 +109,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   } else {
     class E {
       constructor() {
-        return closure_6.isBlocked(blockedUserId);
+        return RelationshipStore.isBlocked(blockedUserId);
       }
     }
   }
@@ -120,14 +119,14 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   if (stateFromStores1 != null) {
     class E {
       constructor() {
-        return closure_6.isBlocked(blockedUserId);
+        return RelationshipStore.isBlocked(blockedUserId);
       }
     }
   }
   if (tmp13 === undefined) {
     class E {
       constructor() {
-        return closure_6.isBlocked(blockedUserId);
+        return RelationshipStore.isBlocked(blockedUserId);
       }
     }
   }
@@ -135,46 +134,38 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   if (cResult[27] === channelId) {
     class E {
       constructor() {
-        return closure_6.isBlocked(blockedUserId);
+        return RelationshipStore.isBlocked(blockedUserId);
       }
     }
   }
-  class J {
-    constructor() {
-      obj = closure_1(closure_2[14]);
-      hideActionSheetResult = obj.hideActionSheet();
-      tmp2 = blockedUserId;
-      tmp3 = setDismissalTimeForUser(blockedUserId);
-      tmp4 = closure_1(closure_2[15]);
-      obj1 = { action: BlockWarningEngagements.CLICK_TO_STAY, channel_id: channelId, blocked_user_ids: null, ignored_user_ids: null, warning_surface: null };
-      track = tmp4.track;
-      VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT = AnalyticEvents.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT;
-      tmp5 = closure_2;
-      if (tmp5) {
-        items = [];
-        items[0] = tmp2;
-        items1 = items;
-      } else {
-        items1 = [];
-      }
-      obj1.blocked_user_ids = items1;
-      if (tmp5) {
-        items2 = [];
-      } else {
-        items2 = [];
-        items2[0] = tmp2;
-      }
-      obj1.ignored_user_ids = items2;
-      obj1.warning_surface = closure_10.POST_JOIN_SHEET;
-      trackResult = track(VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, obj1);
-      return;
+  function handleDismissAndStay() {
+    let items1;
+    let items2;
+    const obj = ActionSheetActionCreatorsDefault;
+    obj.hideActionSheet();
+    setDismissalTimeForUser(blockedUserId);
+    const obj2 = { action: constants.CLICK_TO_STAY, channel_id: channelId, blocked_user_ids: items1, ignored_user_ids: items2, warning_surface: constants2.POST_JOIN_SHEET };
+    const track = AnalyticsUtilsDefault.track;
+    const VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT = AnalyticEvents.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT;
+    AnalyticsUtilsDefault;
+    if (stateFromStores) {
+      const items = [blockedUserId];
+      items1 = items;
+    } else {
+      items1 = [];
     }
+    if (stateFromStores) {
+      items2 = [];
+    } else {
+      items2 = [blockedUserId];
+    }
+    track(VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, obj2);
   }
   cResult[27] = channelId;
   cResult[28] = stateFromStores;
   cResult[29] = blockedUserId;
-  cResult[30] = J;
-}) : ((arg0) => {
+  cResult[30] = handleDismissAndStay;
+}) : (function BlockedUserInVoiceChannelActionSheet(arg0) {
   let blockedUserId;
   let channel_id;
   let formatToPlainString;
@@ -265,7 +256,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const obj14 = { style: tmp.buttonGroup, children: items7 };
   const obj15 = {
     size: "lg",
-    onPress() {
+    onPress: function handleDismissAndLeave() {
       let items1;
       let items2;
       const obj = ActionSheetActionCreatorsDefault;
@@ -297,7 +288,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const obj16 = {
     size: "lg",
     variant: "secondary",
-    onPress() {
+    onPress: function handleDismissAndStay() {
       let items1;
       let items2;
       const obj = ActionSheetActionCreatorsDefault;

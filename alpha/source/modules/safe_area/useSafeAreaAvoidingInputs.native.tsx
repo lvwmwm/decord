@@ -1,19 +1,19 @@
-// Module ID: 10849
-// Function ID: 10850
+// Module ID: 10500
+// Function ID: 10501
 // Name: useSafeAreaAvoidingInputs
-// Dependencies: [5, 19, 1484, 587, 10850, 558, 576, 6479, 2]
+// Dependencies: [5, 19, 1496, 587, 10501, 558, 576, 6657, 2]
 
-// Module 10849 (useSafeAreaAvoidingInputs)
+// Module 10500 (useSafeAreaAvoidingInputs)
 import nativeDefault from "native" /* 587 */;
-import useWindowDimensions from "useWindowDimensions" /* 1484 */;
-import useKeyboardDuration from "useKeyboardDuration" /* 6479 */;
-import ViewMeasureUtils from "ViewMeasureUtils" /* 10850 */;
+import useWindowDimensions from "useWindowDimensions" /* 1496 */;
+import useKeyboardDuration from "useKeyboardDuration" /* 6657 */;
+import ViewMeasureUtils from "ViewMeasureUtils" /* 10501 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c3, c4, inputInWindow, insets, styles2;
+let c3, c4, inputInWindow, styles2;
 
 function calculateTargetScrollY(scrollView) {
   const sum = scrollView.scrollView.y + scrollView.scrollView.height;
@@ -144,7 +144,7 @@ function scrollToTargetY(current, y) {
 }
 let _asyncToGenerator = _asyncToGenerator_mod;
 let react = react_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((insets) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafeAreaAvoidingInputs(insets) {
   let closure_3;
   let closure_4;
   let scrollViewRef;
@@ -182,17 +182,17 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((insets) => {
     }
     react = tmp5;
     if (cResult[6] !== tmp5) {
-      const fn3 = function y() {
+      const fn2 = function y() {
         obj = useKeyboardDuration;
         const timeout = setTimeout(closure_4, obj.getKeyboardDuration());
         return () => clearTimeout(closure_0);
       };
       const items1 = [tmp5];
       cResult[6] = tmp5;
-      cResult[7] = fn3;
+      cResult[7] = fn2;
       cResult[8] = items1;
       tmp7 = items1;
-      tmp6 = fn3;
+      tmp6 = fn2;
     } else {
       tmp6 = cResult[7];
       tmp7 = cResult[8];
@@ -349,14 +349,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((insets) => {
       }
     }
   });
-  const fn2 = function() {
+  function t3() {
     return closure_0(...arguments);
-  };
+  }
   cResult[3] = insets;
   cResult[4] = scrollViewRef;
-  cResult[5] = fn2;
-  tmp5 = fn2;
-}) : ((insets) => {
+  cResult[5] = t3;
+  tmp5 = t3;
+}) : (function useSafeAreaAvoidingInputs(insets) {
   let closure_3;
   insets = insets.insets;
   const inputs = insets.inputs;

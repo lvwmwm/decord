@@ -1,30 +1,28 @@
-// Module ID: 13292
-// Function ID: 13293
+// Module ID: 13592
+// Function ID: 13593
 // Name: Header
-// Dependencies: [19, 17, 21, 4896, 558, 576, 4797, 1126, 4735, 13293, 13294, 5981, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 4991, 1126, 4929, 13593, 13594, 6164, 5086, 2]
 
-// Module 13292 (Header)
+// Module 13592 (Header)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import shared from "shared" /* 4735 */;
-import useThemeDefault from "useTheme" /* 4797 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import FastImageDefault from "FastImage" /* 5981 */;
+import shared from "shared" /* 4929 */;
+import useThemeDefault from "useTheme" /* 4991 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import FastImageDefault from "FastImage" /* 6164 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let style;
 
 let closure_4;
 let hasOwnProperty;
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ container: { flexDirection: "column", alignItems: "center" }, headerText: { marginTop: 16, marginBottom: 24 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header(style) {
   let items;
   const obj = react2;
   const cResult = obj.c(13);
@@ -51,9 +49,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     }
     const tmpResult = shared;
     if (tmpResult.isThemeDark(tmp6)) {
-      tmp5Result = tmp5(13293);
+      tmp5Result = tmp5(13593);
     } else {
-      tmp5Result = tmp5(13294);
+      tmp5Result = tmp5(13594);
     }
     if (cResult[4] !== tmp5Result) {
       const obj2 = { accessible: true, accessibilityLabel: tmp9, accessibilityRole: "header", source: tmp5Result };
@@ -106,7 +104,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   cResult[1] = tmp4.container;
   cResult[2] = items1;
   tmp7 = items1;
-}) : ((style) => {
+}) : (function Header(style) {
   let intl;
   let intl2;
   let items;
@@ -124,13 +122,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   const tmp5 = hasOwnProperty;
   const tmp6 = View;
   if (obj3.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(13293);
+    tmp2Result = tmp2(13593);
   } else {
-    tmp2Result = tmp2(13294);
+    tmp2Result = tmp2(13594);
   }
   items1 = [React3(tmp8, obj2), ];
   const obj4 = { style: tmp.headerText, variant: "text-md/medium", color: "mobile-text-heading-primary", children: intl2.string(intl3.t.SD5MJW) };
-  const Text = tmp9(4892).Text;
+  const Text = tmp9(5086).Text;
   intl2 = tmp9(1126).intl;
   items1[1] = React3(Text, obj4);
   return tmp5(tmp6, obj);

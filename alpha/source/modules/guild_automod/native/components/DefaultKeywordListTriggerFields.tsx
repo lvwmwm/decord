@@ -1,23 +1,21 @@
-// Module ID: 17742
-// Function ID: 17743
+// Module ID: 18029
+// Function ID: 18030
 // Name: DefaultKeywordListTriggerFields
-// Dependencies: [19, 11487, 21, 558, 576, 1126, 17743, 5997, 6081, 17744, 2]
+// Dependencies: [19, 11473, 21, 558, 576, 1126, 18030, 6181, 6267, 18031, 2]
 
-// Module 17742 (DefaultKeywordListTriggerFields)
-import Constants from "Constants" /* 11487 */;
+// Module 18029 (DefaultKeywordListTriggerFields)
+import Constants from "Constants" /* 11473 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let rule;
 
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
 let maxWordCount = Constants.MAX_KEYWORDS_PER_ALLOWLIST_DEFAULT_KEYWORD_RULE;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DefaultKeywordListTriggerFields(rule) {
   let closure_3;
   let items;
   let presets;
@@ -46,7 +44,6 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
       if (cResult[5] === tmp4) {
         let tmp8;
         let tmp10;
-        let tmp14;
         let tmp13;
         if (cResult[6] === presets) {
           tmp8 = cResult[7];
@@ -54,7 +51,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
         if (cResult[8] !== tmp8) {
           let obj2 = { title: tmp6, hasIcons: false, children: tmp8 };
           const tmp12 = closure_4(rule(presets[8]).TableRowGroup, obj2);
-          cResult[8] = tmp8;
+          class L {
+            constructor(allowList) {
+              let obj2;
+              const obj = { triggerMetadata: obj2 };
+              const merged = Object.assign(rule);
+              obj2 = { allowList };
+              const merged1 = Object.assign(rule.triggerMetadata);
+              return onChangeRule(obj);
+            }
+          }
           cResult[9] = tmp12;
           tmp10 = tmp12;
         } else {
@@ -66,13 +72,21 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
           const stringResult1 = intl2.string(rule(presets[5]).t.lbE2Nm);
           const intl3 = tmp(tmp2[5]).intl;
           const stringResult2 = intl3.string(rule(presets[5]).t.qm7UZ8);
+          class L {
+            constructor(allowList) {
+              let obj2;
+              const obj = { triggerMetadata: obj2 };
+              const merged = Object.assign(rule);
+              obj2 = { allowList };
+              const merged1 = Object.assign(rule.triggerMetadata);
+              return onChangeRule(obj);
+            }
+          }
           cResult[10] = stringResult1;
           cResult[11] = stringResult2;
-          tmp14 = stringResult2;
           tmp13 = stringResult1;
         } else {
           tmp13 = cResult[10];
-          tmp14 = cResult[11];
         }
         if (cResult[12] === onChangeRule) {
           let tmp17;
@@ -92,32 +106,55 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
               return tmp23;
             }
             const obj3 = { children: items };
-            items = [tmp10, tmp18];
+            items = [, ];
+            class L {
+              constructor(allowList) {
+                let obj2;
+                const obj = { triggerMetadata: obj2 };
+                const merged = Object.assign(rule);
+                obj2 = { allowList };
+                const merged1 = Object.assign(rule.triggerMetadata);
+                return onChangeRule(obj);
+              }
+            }
+            items[1] = tmp18;
             const tmp26 = closure_6(closure_5, obj3);
             cResult[18] = tmp10;
             cResult[19] = tmp18;
             cResult[20] = tmp26;
             tmp23 = tmp26;
           }
-          const obj4 = { label: tmp13, description: tmp14, type: "keywords", keywords: rule.triggerMetadata.allowList, maxWordCount, onChangeKeywords: tmp17, start: true, end: true };
+          const obj4 = { label: tmp13, description: null, type: "keywords", keywords: rule.triggerMetadata.allowList, maxWordCount, onChangeKeywords: tmp17, start: true, end: true };
+          class L {
+            constructor(allowList) {
+              let obj2;
+              const obj = { triggerMetadata: obj2 };
+              const merged = Object.assign(rule);
+              obj2 = { allowList };
+              const merged1 = Object.assign(rule.triggerMetadata);
+              return onChangeRule(obj);
+            }
+          }
           const tmp22 = closure_4(onChangeRule(presets[9]), obj4);
           cResult[15] = rule.triggerMetadata.allowList;
           cResult[16] = tmp17;
           cResult[17] = tmp22;
           tmp18 = tmp22;
         }
-        const fn2 = function y(allowList) {
-          let obj2;
-          const obj = { triggerMetadata: obj2 };
-          const merged = Object.assign(rule);
-          obj2 = { allowList };
-          const merged1 = Object.assign(rule.triggerMetadata);
-          return onChangeRule(obj);
-        };
+        class L {
+          constructor(allowList) {
+            let obj2;
+            const obj = { triggerMetadata: obj2 };
+            const merged = Object.assign(rule);
+            obj2 = { allowList };
+            const merged1 = Object.assign(rule.triggerMetadata);
+            return onChangeRule(obj);
+          }
+        }
         cResult[12] = onChangeRule;
         cResult[13] = rule;
-        cResult[14] = fn2;
-        tmp17 = fn2;
+        cResult[14] = L;
+        tmp17 = L;
       }
       const KEYWORD_PRESETS = tmp(tmp2[6]).KEYWORD_PRESETS;
       const mapped = KEYWORD_PRESETS.map((item) => {
@@ -144,7 +181,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
       tmp8 = mapped;
     }
   }
-  const fn = function c(arg0, arg1) {
+  function handleTogglePreset(arg0, arg1) {
     let found;
     let obj2;
     let closure_0 = arg0;
@@ -152,7 +189,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
     const tmp3 = arg1;
     if (tmp3) {
       const items = [];
-      items[HermesBuiltin.arraySpread(items, filter((arg0) => arg0 !== iter), 0)] = arg0;
+      items[HermesBuiltin.arraySpread(items, filter((arg0) => arg0 !== closure_0), 0)] = arg0;
       found = items;
     } else {
       found = filter((arg0) => arg0 !== closure_0);
@@ -162,13 +199,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
     obj2 = { presets: found };
     const merged1 = Object.assign(rule.triggerMetadata);
     onChangeRule(obj);
-  };
+  }
   cResult[0] = onChangeRule;
   cResult[1] = rule;
   cResult[2] = presets;
-  cResult[3] = fn;
-  tmp4 = fn;
-}) : ((rule) => {
+  cResult[3] = handleTogglePreset;
+  tmp4 = handleTogglePreset;
+}) : (function DefaultKeywordListTriggerFields(rule) {
   let KEYWORD_PRESETS;
   let intl;
   let intl2;
@@ -199,7 +236,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
           const tmp4 = arg0;
           if (tmp4) {
             const items = [];
-            items[HermesBuiltin.arraySpread(items, filter((arg0) => arg0 !== requiredAction), 0)] = tmp2;
+            items[HermesBuiltin.arraySpread(items, filter((arg0) => arg0 !== encodeStreamKeyResult1), 0)] = tmp2;
             found = items;
           } else {
             found = filter((arg0) => arg0 !== closure_0);

@@ -1,11 +1,11 @@
-// Module ID: 11481
-// Function ID: 11482
+// Module ID: 11465
+// Function ID: 11466
 // Name: KickConfirmModal
-// Dependencies: [19, 21, 558, 576, 10673, 1126, 10674, 11474, 2]
+// Dependencies: [19, 21, 558, 576, 9586, 1126, 9587, 11458, 2]
 
-// Module 11481 (KickConfirmModal)
+// Module 11465 (KickConfirmModal)
 import Fragment from "Fragment" /* 21 */;
-import KickConfirmDefault from "KickConfirm" /* 11474 */;
+import KickConfirmDefault from "KickConfirm" /* 11458 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function KickConfirmModal(userId) {
   let cancelButtonCallback;
   let guildId;
   let onGoBack;
@@ -62,7 +62,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[5] = userId;
   cResult[6] = tmp9;
   tmp8 = tmp9;
-}) : ((onBeforeGoBack) => {
+}) : (function KickConfirmModal(onBeforeGoBack) {
   let guildId;
   let userId;
   ({ guildId: require, userId: importDefault } = onBeforeGoBack);

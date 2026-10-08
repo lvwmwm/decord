@@ -1,18 +1,16 @@
-// Module ID: 10082
-// Function ID: 10083
+// Module ID: 9665
+// Function ID: 9666
 // Name: ExpressionPickerHandlers
 // Dependencies: [19, 558, 576, 2]
 
-// Module 10082 (ExpressionPickerHandlers)
+// Module 9665 (ExpressionPickerHandlers)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let selection;
-
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selection) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePressEmojiHandler(selection) {
   let obj = react2;
   const cResult = obj.c(13);
   selection = selection.selection;
@@ -116,7 +114,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selection) => {
   cResult[4] = setSelection;
   cResult[5] = obj2;
   tmp2 = obj2;
-}) : ((selection) => {
+}) : (function usePressEmojiHandler(selection) {
   selection = selection.selection;
   const draftContent = selection.draftContent;
   const handleTextChange = selection.handleTextChange;
@@ -162,7 +160,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selection) => {
   }, []);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((selection) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePressGIFHandler(selection) {
   const obj = react2;
   const cResult = obj.c(7);
   selection = selection.selection;
@@ -216,7 +214,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((selection) => {
   cResult[5] = setSelection;
   cResult[6] = fn;
   tmp2 = fn;
-}) : ((selection) => {
+}) : (function usePressGIFHandler(selection) {
   selection = selection.selection;
   const draftContent = selection.draftContent;
   const handleTextChange = selection.handleTextChange;

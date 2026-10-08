@@ -1,13 +1,13 @@
-// Module ID: 9107
-// Function ID: 9108
+// Module ID: 10681
+// Function ID: 10682
 // Name: usePipDimensions
-// Dependencies: [19, 558, 576, 9108, 1484, 8018, 2]
+// Dependencies: [19, 558, 576, 10682, 1496, 8426, 2]
 
-// Module 9107 (usePipDimensions)
+// Module 10681 (usePipDimensions)
 import react2 from "react" /* 576 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import DeviceOrientation from "DeviceOrientation" /* 8018 */;
-import useIsViewingActivity from "useIsViewingActivity" /* 9108 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import DeviceOrientation from "DeviceOrientation" /* 8426 */;
+import useIsViewingActivity from "useIsViewingActivity" /* 10682 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ let c5 = 0.25;
 let c6 = 0.5;
 let c7 = 400;
 let c8 = 300;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePipDimensions(arg0) {
   let channelId;
   let forcedOrientation;
   let height;
@@ -43,7 +43,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ width, height } = useWindowDimensionsDefault());
   let tmp8 = width > height;
   useWindowDimensionsDefault();
-  let tmp9 = tmp4 === tmp(8018).OrientationType.LANDSCAPE;
+  let tmp9 = tmp4 === tmp(8426).OrientationType.LANDSCAPE;
   if (!tmp9) {
     tmp9 = tmp8 && tmp4 !== DeviceOrientation.OrientationType.PORTRAIT;
     tmp8 && tmp4 !== DeviceOrientation.OrientationType.PORTRAIT;
@@ -99,7 +99,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = num4;
   cResult[4] = size;
   tmp31 = size;
-}) : ((forcedOrientation) => {
+}) : (function usePipDimensions(forcedOrientation) {
   forcedOrientation = forcedOrientation.forcedOrientation;
   const channelId = forcedOrientation.channelId;
   if (forcedOrientation === undefined) {
@@ -116,7 +116,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp3 = width > height;
     let tmp7 = forcedOrientation === DeviceOrientation.OrientationType.LANDSCAPE;
     if (!tmp7) {
-      tmp7 = tmp3 && tmp4 !== tmp5(8018).OrientationType.PORTRAIT;
+      tmp7 = tmp3 && tmp4 !== tmp5(8426).OrientationType.PORTRAIT;
       tmp3 && forcedOrientation !== DeviceOrientation.OrientationType.PORTRAIT;
     }
     height = 96;

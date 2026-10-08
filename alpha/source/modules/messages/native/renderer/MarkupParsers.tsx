@@ -1,24 +1,23 @@
-// Module ID: 7772
-// Function ID: 7773
+// Module ID: 8093
+// Function ID: 8094
 // Name: MarkupParsers
-// Dependencies: [1085, 1102, 1444, 4883, 7773, 7774, 7786, 7542, 7788, 1242, 2]
+// Dependencies: [1085, 1102, 1456, 5077, 8094, 8095, 8114, 8123, 1254, 2]
 // Exports: parseEmbedDescriptionMarkup, parseEmbedTitleMarkup, parseEmbedTitleMarkupWithoutLinks, parseMessageMarkup
 
-// Module 7772 (MarkupParsers)
+// Module 8093 (MarkupParsers)
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 4883 */;
-import renderMessageMarkup from "renderMessageMarkup" /* 7542 */;
-import NativeMarkdownExperiment2 from "NativeMarkdownExperiment" /* 7773 */;
-import parseNativeMarkupDefault from "parseNativeMarkup" /* 7788 */;
-import LRUCache_mod from "LRUCache" /* 1444 */;
+import SentryUtilsDefault from "SentryUtils" /* 1254 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5077 */;
+import NativeMarkdownExperiment2 from "NativeMarkdownExperiment" /* 8094 */;
+import renderMessageMarkup from "renderMessageMarkup" /* 8114 */;
+import parseNativeMarkupDefault from "parseNativeMarkup" /* 8123 */;
+import LRUCache_mod from "LRUCache" /* 1456 */;
 import size from "module_2" /* 2 */;
 
 let LRUCache;
 let tmp;
-const ChangeLogStandardTemplate = tmp(7774);
-const trackMarkdownParse2 = tmp(7786);
+const ChangeLogStandardTemplate = tmp(8095);
 const MessageTypes = Constants.MessageTypes;
 let obj = { max: Infinity, maxAge: 15 * DurationsDefault.Millis.MINUTE, updateAgeOnGet: true };
 const tmp2 = new LRUCache(obj);
@@ -99,26 +98,19 @@ export const parseEmbedDescriptionMarkup = function parseEmbedDescriptionMarkup(
   return parseToASTResult;
 };
 export const parseMessageMarkup = function parseMessageMarkup(message, message2, forceHideSimpleEmbedContent, isInlineReplyPreview, arg4, result, result2) {
-  let num;
-  let path;
-  let tmp16;
-  let tmp6;
+  let tmp9;
   function parseMessageContentToAST(message, arg1, enabled) {
-    let obj2;
-    let obj5;
     const tmp = enabled;
     if (!tmp) {
-      const obj4 = { result: obj5.renderMessageMarkupToAST(message, arg1), path: "legacy" };
-      obj5 = renderMessageMarkup;
-      return obj4;
+      const obj3 = renderMessageMarkup;
+      return obj3.renderMessageMarkupToAST(message, arg1);
     } else {
       try {
-        const obj = { result: obj2.renderMessageMarkupToASTWithParser(parseNativeMarkupDefault, message, arg1), path: "native" };
-        obj2 = renderMessageMarkup;
-        return obj;
+        const obj = renderMessageMarkup;
+        return obj.renderMessageMarkupToASTWithParser(parseNativeMarkupDefault, message, arg1);
       } catch (tmp5) {
-        const obj3 = SentryUtilsDefault;
-        obj3.captureException(tmp5);
+        const obj2 = SentryUtilsDefault;
+        obj2.captureException(tmp5);
       }
     }
   }
@@ -153,50 +145,25 @@ export const parseMessageMarkup = function parseMessageMarkup(message, message2,
   if (message.type === MessageTypes.CHANGELOG) {
     if (null != message.changelogId) {
       const astParserFor = MarkupUtilsDefault.astParserFor;
-      MarkupUtilsDefault;
-      let obj2 = { hideSimpleEmbedContent: forceHideSimpleEmbedContent, formatInline: flag, allowHeading: tmp16, allowList: flag2, allowLinks: flag4, previewLinkTarget: flag4 };
-      tmp16 = flag2;
+      let obj2 = { hideSimpleEmbedContent: forceHideSimpleEmbedContent, formatInline: flag, allowHeading: tmp9, allowList: flag2, allowLinks: flag4, previewLinkTarget: flag4 };
+      tmp9 = flag2;
       const content = message.content;
       const tmpResult = ChangeLogStandardTemplate;
       const astParserForResult = astParserFor(tmpResult.changelogRules(message.changelogId, true));
       if (!flag2) {
-        tmp16 = flag3;
+        tmp9 = flag3;
       }
       if (!flag2) {
         flag2 = flag3;
       }
       let obj3 = { content: astParserForResult(content, false, obj2), isInlineReplyPreview: false, hasSpoilerEmbeds: false, hasBailedAst: false, nativeMarkdownEnabled: enabled };
-      const result1 = obj.set(message, obj3);
+      result = obj.set(message, obj3);
       return obj3;
     }
   }
-  let tmp4 = message2;
-  let obj4 = { contentMessage: message2, hideSimpleEmbedContent: forceHideSimpleEmbedContent, formatInline: flag, allowGameMentions: true, allowHeading: tmp6, allowList: flag2 || flag3, allowLinks: flag4, previewLinkTarget: flag4 };
-  tmp6 = flag2;
-  const nowResult = performance.now();
-  if (!flag2) {
-    tmp6 = flag3;
-  }
-  ({ result, path } = parseMessageContentToAST(message, obj4, enabled));
-  let obj5 = { isInlineReplyPreview: flag, nativeMarkdownEnabled: enabled };
-  const tmp7 = parseMessageContentToAST(message, obj4, enabled);
-  const diff = performance.now() - nowResult;
-  const merged = Object.assign(result);
-  result2 = obj.set(message, obj5);
-  const obj6 = { durationMs: diff, path, contentLength: num, hasBailedAst: obj5.hasBailedAst };
-  const trackMarkdownParse = trackMarkdownParse2.trackMarkdownParse;
-  trackMarkdownParse2;
-  if (tmp4 == null) {
-    tmp4 = message;
-  }
-  const content1 = tmp4.content;
-  num = undefined;
-  if (content1 != null) {
-    num = content1.length;
-  }
-  if (num == null) {
-    num = 0;
-  }
-  trackMarkdownParse(obj6);
+  const obj5 = { isInlineReplyPreview: flag, nativeMarkdownEnabled: enabled };
+  const obj4 = { contentMessage: message2, hideSimpleEmbedContent: forceHideSimpleEmbedContent, formatInline: flag, allowGameMentions: true, allowHeading: flag2 || flag3, allowList: flag2 || flag3, allowLinks: flag4, previewLinkTarget: flag4 };
+  const merged = Object.assign(parseMessageContentToAST(message, obj4, enabled));
+  const result1 = obj.set(message, obj5);
   return obj5;
 };

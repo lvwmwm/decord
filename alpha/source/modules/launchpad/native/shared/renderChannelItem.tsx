@@ -1,27 +1,27 @@
-// Module ID: 16852
-// Function ID: 16853
+// Module ID: 17131
+// Function ID: 17132
 // Name: renderChannelItem
-// Dependencies: [19, 17, 2074, 4525, 1377, 5078, 21, 9295, 1126, 4896, 587, 558, 576, 16853, 504, 5978, 11831, 7139, 16854, 10661, 16856, 5049, 2]
+// Dependencies: [19, 17, 2086, 4717, 1389, 5972, 21, 8626, 1126, 5090, 587, 558, 576, 17132, 504, 6161, 11916, 6064, 17133, 10261, 17135, 5417, 2]
 // Exports: default, getChannelAccessibilityProps
 
-// Module 16852 (renderChannelItem)
+// Module 17131 (renderChannelItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import useChannelName from "useChannelName" /* 5049 */;
-import ReadStateConstants from "ReadStateConstants" /* 5078 */;
-import GuildIconDefault from "GuildIcon" /* 5978 */;
-import NotificationCenterUtils from "NotificationCenterUtils" /* 7139 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9295 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 16853 */;
-import renderChannelWrapperDefault from "renderChannelWrapper" /* 16854 */;
-import renderChannelContentDefault from "renderChannelContent" /* 16856 */;
+import useChannelName from "useChannelName" /* 5417 */;
+import ReadStateConstants from "ReadStateConstants" /* 5972 */;
+import NotificationCenterUtils from "NotificationCenterUtils" /* 6064 */;
+import GuildIconDefault from "GuildIcon" /* 6161 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8626 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 17132 */;
+import renderChannelWrapperDefault from "renderChannelWrapper" /* 17133 */;
+import renderChannelContentDefault from "renderChannelContent" /* 17135 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -89,7 +89,7 @@ function LaunchpadChannelIcon(channel) {
       }
       if (cResult[9] !== channel2) {
         const obj3 = { channel: channel2, size: "sm", wrapperSize: 32 };
-        const tmp38 = closure_8(channel(11831).ChannelIcon, obj3);
+        const tmp38 = closure_8(channel(11916).ChannelIcon, obj3);
         cResult[9] = channel2;
         cResult[10] = tmp38;
         tmp36 = tmp38;
@@ -129,7 +129,7 @@ function LaunchpadChannelIcon(channel) {
     obj9 = { guild: stateFromStores1, size: tmp6.icon.guildBadgeIconSize };
     items3 = [closure_8(View, obj8), ];
     const obj10 = { channel, size: "sm", wrapperSize: 32 };
-    items3[1] = closure_8(channel(11831).ChannelIcon, obj10);
+    items3[1] = closure_8(channel(11916).ChannelIcon, obj10);
     tmp14 = closure_10(closure_9, obj7);
   }
   return tmp14;
@@ -209,7 +209,7 @@ export default function renderChannelItem(unread) {
   const tmp9 = authStore;
   if (channel.isGroupDM()) {
     const obj3 = { channel, size: tmp7.icon.avatarSize };
-    tmp11Result = tmp11(tmp5(10661), obj3);
+    tmp11Result = tmp11(tmp5(10261), obj3);
   } else {
     const obj4 = { channel };
     tmp11Result = tmp11(LaunchpadChannelIcon, obj4);

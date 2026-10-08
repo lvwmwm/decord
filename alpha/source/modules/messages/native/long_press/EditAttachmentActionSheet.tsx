@@ -1,17 +1,17 @@
-// Module ID: 11317
-// Function ID: 11318
+// Module ID: 12807
+// Function ID: 12808
 // Name: EditAttachmentActionSheet
-// Dependencies: [5, 32, 19, 5116, 4889, 1085, 21, 558, 576, 7852, 7951, 1390, 1126, 4596, 6978, 6651, 4892, 6587, 5997, 5601, 5600, 587, 6708, 2]
+// Dependencies: [5, 32, 19, 5428, 5083, 1085, 21, 558, 576, 8270, 8369, 1402, 1126, 4788, 7167, 6828, 5086, 6763, 6181, 5375, 5373, 587, 6885, 2]
 
-// Module 11317 (EditAttachmentActionSheet)
+// Module 12807 (EditAttachmentActionSheet)
 import Constants from "Constants" /* 1085 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4596 */;
-import MessageConstants from "MessageConstants" /* 4889 */;
-import useBottomSheetRef from "useBottomSheetRef" /* 7852 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4788 */;
+import MessageConstants from "MessageConstants" /* 5083 */;
+import useBottomSheetRef from "useBottomSheetRef" /* 8270 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 5116 */;
+import MessageStore from "MessageStore" /* 5428 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -22,18 +22,18 @@ let c10;
 let c9;
 let tmp;
 const intl7 = tmp(1126);
-const FlagUtils = tmp(1390);
-const Text_Text = tmp(4892);
-const Stack_Stack = tmp(5600);
-const components_Button_Button = tmp(5601);
-const TableCheckboxRow2 = tmp(5997);
-const TextArea2 = tmp(6587);
-const BottomSheetTitleHeader2 = tmp(6651);
-const ActionSheet2 = tmp(6708);
+const FlagUtils = tmp(1402);
+const Text_Text = tmp(5086);
+const Stack_Stack = tmp(5373);
+const components_Button_Button = tmp(5375);
+const TableCheckboxRow2 = tmp(6181);
+const TextArea2 = tmp(6763);
+const BottomSheetTitleHeader2 = tmp(6828);
+const ActionSheet2 = tmp(6885);
 let closure_7 = MessageConstants.LEGACY_SPOILER_ATTACHMENT_PREFIX;
 let MessageAttachmentFlags = Constants.MessageAttachmentFlags;
 ({ jsx: c9, jsxs: c10 } = Fragment);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttachmentActionSheet(message) {
   let bottomSheetClose;
   let bottomSheetRef;
   let closure_8;
@@ -102,15 +102,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     }
     const _Symbol2 = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function z() {
+      function showError() {
         const intl = intl7.intl;
         const stringResult = intl.string(intl7.t.fEptJP);
         closure_7(stringResult);
         const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
         AccessibilityAnnouncer.announce(stringResult);
-      };
-      cResult[8] = fn;
-      tmp29 = fn;
+      }
+      cResult[8] = showError;
+      tmp29 = showError;
     } else {
       tmp29 = cResult[8];
     }
@@ -395,7 +395,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   cResult[5] = tmp8;
   cResult[6] = hasFlagResult;
   tmp15 = hasFlagResult;
-}) : ((arg0) => {
+}) : (function EditAttachmentActionSheet(arg0) {
   let Stack;
   let _undefined;
   let attachment;
@@ -520,7 +520,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   ({ bottomSheetClose: c2, bottomSheetRef } = bottomSheetRef1);
   const tmp4 = attachment;
   const filename = attachment.filename;
-  const tmp5 = attachment(7951)(attachment);
+  const tmp5 = attachment(8369)(attachment);
   const startsWithResult = filename.startsWith(c7);
   let obj2 = first2;
   let str = attachment.description;

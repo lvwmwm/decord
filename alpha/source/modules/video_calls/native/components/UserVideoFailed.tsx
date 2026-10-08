@@ -1,26 +1,26 @@
-// Module ID: 17310
-// Function ID: 17311
+// Module ID: 17591
+// Function ID: 17592
 // Name: UserVideoFailed
-// Dependencies: [109, 17, 1085, 21, 4896, 587, 558, 576, 9131, 9147, 4951, 8079, 1126, 4892, 5601, 2]
+// Dependencies: [109, 17, 1085, 21, 5090, 587, 558, 576, 5287, 10713, 5135, 5241, 1126, 5086, 5375, 2]
 
-// Module 17310 (UserVideoFailed)
+// Module 17591 (UserVideoFailed)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4951 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 8079 */;
-import AVError from "AVError" /* 9131 */;
-import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 9147 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5135 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5241 */;
+import AVError from "AVError" /* 5287 */;
+import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 10713 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, setDisableLocalVideoResult, userId;
+let _require;
 
 let metroImportAll;
 let metroImportDefault;
@@ -32,11 +32,11 @@ const VideoToggleState = Constants.VideoToggleState;
 let obj = { container: obj2, text: { textAlign: "center" }, button: { marginTop: 16, alignSelf: "center" } };
 obj2 = { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_700, padding: 8 };
 let closure_9 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserVideoFailed(userId) {
   let avError;
   let closure_0;
   let flag;
-  let intl2;
+  let intl3;
   let items;
   let removeRetryButton;
   let str;
@@ -50,6 +50,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   let tmp18;
   let tmp19;
   let tmp20;
+  let tmp21;
   let tmp4;
   let tmp5;
   let tmp6;
@@ -102,30 +103,30 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
                 if (cResult[33] === str2) {
                   if (cResult[34] === tmp16) {
                     if (cResult[35] === flag) {
-                      let tmp30;
+                      let tmp31;
                       if (cResult[36] === tmp17) {
-                        tmp30 = cResult[37];
+                        tmp31 = cResult[37];
                       }
                       if (cResult[38] === tmp15) {
-                        let tmp33;
+                        let tmp34;
                         if (cResult[39] === tmp6) {
-                          tmp33 = cResult[40];
+                          tmp34 = cResult[40];
                         }
                         if (cResult[41] === tmp12.button) {
-                          let tmp36;
-                          if (cResult[42] === tmp33) {
-                            tmp36 = cResult[43];
+                          let tmp37;
+                          if (cResult[42] === tmp34) {
+                            tmp37 = cResult[43];
                           }
                           if (cResult[44] === tmp14) {
-                            if (cResult[45] === tmp36) {
+                            if (cResult[45] === tmp37) {
                               if (cResult[46] === tmp18) {
                                 if (cResult[47] === tmp19) {
                                   if (cResult[48] === tmp20) {
-                                    let tmp40;
-                                    if (cResult[49] === tmp30) {
-                                      tmp40 = cResult[50];
+                                    let tmp41;
+                                    if (cResult[49] === tmp31) {
+                                      tmp41 = cResult[50];
                                     }
-                                    return tmp40;
+                                    return tmp41;
                                   }
                                 }
                               }
@@ -133,50 +134,50 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
                           }
                           let obj2 = { style: tmp19, children: items };
                           const merged = Object.assign(tmp18);
-                          items = [tmp20, tmp30, tmp36];
-                          const tmp45 = closure_8(tmp14, obj2);
+                          items = [tmp20, tmp31, tmp37];
+                          const tmp46 = closure_8(tmp14, obj2);
                           cResult[44] = tmp14;
-                          cResult[45] = tmp36;
+                          cResult[45] = tmp37;
                           cResult[46] = tmp18;
                           cResult[47] = tmp19;
                           cResult[48] = tmp20;
-                          cResult[49] = tmp30;
-                          cResult[50] = tmp45;
-                          tmp40 = tmp45;
+                          cResult[49] = tmp31;
+                          cResult[50] = tmp46;
+                          tmp41 = tmp46;
                         }
-                        const obj4 = { style: tmp12.button, children: tmp33 };
-                        const tmp39 = closure_7(View, obj4);
+                        const obj3 = { style: tmp12.button, children: tmp34 };
+                        const tmp40 = closure_7(View, obj3);
                         cResult[41] = tmp12.button;
-                        cResult[42] = tmp33;
-                        cResult[43] = tmp39;
-                        tmp36 = tmp39;
+                        cResult[42] = tmp34;
+                        cResult[43] = tmp40;
+                        tmp37 = tmp40;
                       }
-                      let tmp34 = !tmp6;
-                      if (tmp34) {
-                        const obj5 = { variant: "secondary", size: "md", text: intl2.string(require("intl").t["hxmQ/e"]), onPress: tmp15 };
-                        const Button = tmp(5601).Button;
-                        intl2 = tmp(1126).intl;
-                        tmp34 = closure_7(Button, obj5);
+                      let tmp35 = !tmp6;
+                      if (tmp35) {
+                        const obj4 = { variant: "secondary", size: "md", text: intl3.string(require("intl").t["hxmQ/e"]), onPress: tmp15 };
+                        const Button = tmp(5375).Button;
+                        intl3 = tmp(1126).intl;
+                        tmp35 = closure_7(Button, obj4);
                       }
                       cResult[38] = tmp15;
                       cResult[39] = tmp6;
-                      cResult[40] = tmp34;
-                      tmp33 = tmp34;
+                      cResult[40] = tmp35;
+                      tmp34 = tmp35;
                     }
                   }
                 }
               }
             }
-            const obj6 = { variant: str, color: str2, style: tmp16, selectable: flag, children: tmp17 };
-            const tmp32 = closure_7(tmp13, obj6);
+            const obj5 = { variant: str, color: str2, style: tmp16, selectable: flag, children: tmp17 };
+            const tmp33 = closure_7(tmp13, obj5);
             cResult[31] = tmp13;
             cResult[32] = str;
             cResult[33] = str2;
             cResult[34] = tmp16;
             cResult[35] = flag;
             cResult[36] = tmp17;
-            cResult[37] = tmp32;
-            tmp30 = tmp32;
+            cResult[37] = tmp33;
+            tmp31 = tmp33;
           }
         }
       }
@@ -185,102 +186,53 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   const tmpResult = require("AVError");
   const errorCode = tmpResult.getErrorInfo(tmp4).errorCode;
   if (cResult[23] !== tmp8) {
-    class R {
-      constructor() {
-        obj = closure_0(closure_2[9]);
-        result = obj.clearVideoStreamTimeout(closure_0(closure_2[10]).MediaEngineContextTypes.DEFAULT, closure_0);
-        obj2 = closure_1(closure_2[11]);
-        setDisableLocalVideoResult = obj2.setDisableLocalVideo(closure_0, VideoToggleState.DISABLED, closure_0(closure_2[10]).MediaEngineContextTypes.DEFAULT, false);
-        timerId = setTimeout(() => { /* body not rendered: F148506 */ }, 1000);
-        return;
-      }
+    function handleRetry() {
+      let obj = VideoStreamReadyActionCreators;
+      const result = obj.clearVideoStreamTimeout(BaseConnectionEvent.MediaEngineContextTypes.DEFAULT, closure_0);
+      const obj2 = AudioActionCreatorsDefault;
+      obj2.setDisableLocalVideo(closure_0, VideoToggleState.DISABLED, BaseConnectionEvent.MediaEngineContextTypes.DEFAULT, false);
+      const timerId = setTimeout(() => {
+        const obj = AudioActionCreatorsDefault;
+        obj.setDisableLocalVideo(closure_1_0, constants.MANUAL_ENABLED, closure_0(dependencyMap[10]).MediaEngineContextTypes.DEFAULT, false);
+      }, 1000);
     }
     cResult[23] = tmp8;
-    cResult[24] = R;
+    cResult[24] = handleRetry;
+    tmp21 = handleRetry;
   } else {
-    class R {
-      constructor() {
-        obj = closure_0(closure_2[9]);
-        result = obj.clearVideoStreamTimeout(closure_0(closure_2[10]).MediaEngineContextTypes.DEFAULT, closure_0);
-        obj2 = closure_1(closure_2[11]);
-        setDisableLocalVideoResult = obj2.setDisableLocalVideo(closure_0, VideoToggleState.DISABLED, closure_0(closure_2[10]).MediaEngineContextTypes.DEFAULT, false);
-        timerId = setTimeout(() => { /* body not rendered: F148506 */ }, 1000);
-        return;
-      }
-    }
+    tmp21 = cResult[24];
   }
   if (cResult[25] === tmp7) {
+    let tmp23;
     let tmp25;
-    class R {
-      constructor() {
-        obj = closure_0(closure_2[9]);
-        result = obj.clearVideoStreamTimeout(closure_0(closure_2[10]).MediaEngineContextTypes.DEFAULT, closure_0);
-        obj2 = closure_1(closure_2[11]);
-        setDisableLocalVideoResult = obj2.setDisableLocalVideo(closure_0, VideoToggleState.DISABLED, closure_0(closure_2[10]).MediaEngineContextTypes.DEFAULT, false);
-        timerId = setTimeout(() => { /* body not rendered: F148506 */ }, 1000);
-        return;
-      }
+    let tmp27;
+    if (cResult[26] === tmp12.container) {
+      tmp23 = cResult[27];
     }
     const _Symbol = Symbol;
     const text = tmp12.text;
     if (cResult[28] === Symbol.for("react.memo_cache_sentinel")) {
-      class R {
-        constructor() {
-          obj = closure_0(closure_2[9]);
-          result = obj.clearVideoStreamTimeout(closure_0(closure_2[10]).MediaEngineContextTypes.DEFAULT, closure_0);
-          obj2 = closure_1(closure_2[11]);
-          setDisableLocalVideoResult = obj2.setDisableLocalVideo(closure_0, VideoToggleState.DISABLED, closure_0(closure_2[10]).MediaEngineContextTypes.DEFAULT, false);
-          timerId = setTimeout(() => { /* body not rendered: F148506 */ }, 1000);
-          return;
-        }
-      }
-      const stringResult = obj3.string(require("intl").t["z+mxvo"]);
+      const intl = tmp(1126).intl;
+      const stringResult = intl.string(require("intl").t["z+mxvo"]);
       cResult[28] = stringResult;
       tmp25 = stringResult;
     } else {
-      class R {
-        constructor() {
-          obj = closure_0(closure_2[9]);
-          result = obj.clearVideoStreamTimeout(closure_0(closure_2[10]).MediaEngineContextTypes.DEFAULT, closure_0);
-          obj2 = closure_1(closure_2[11]);
-          setDisableLocalVideoResult = obj2.setDisableLocalVideo(closure_0, VideoToggleState.DISABLED, closure_0(closure_2[10]).MediaEngineContextTypes.DEFAULT, false);
-          timerId = setTimeout(() => { /* body not rendered: F148506 */ }, 1000);
-          return;
-        }
-      }
+      tmp25 = cResult[28];
     }
     if (cResult[29] !== tmp12.text) {
-      class R {
-        constructor() {
-          obj = closure_0(closure_2[9]);
-          result = obj.clearVideoStreamTimeout(closure_0(closure_2[10]).MediaEngineContextTypes.DEFAULT, closure_0);
-          obj2 = closure_1(closure_2[11]);
-          setDisableLocalVideoResult = obj2.setDisableLocalVideo(closure_0, VideoToggleState.DISABLED, closure_0(closure_2[10]).MediaEngineContextTypes.DEFAULT, false);
-          timerId = setTimeout(() => { /* body not rendered: F148506 */ }, 1000);
-          return;
-        }
-      }
-      const obj7 = { variant: "text-md/semibold", color: "text-strong", style: text, children: tmp25 };
+      const obj6 = { variant: "text-md/semibold", color: "text-strong", style: text, children: tmp25 };
+      const tmp29 = closure_7(require("Text/Text").Text, obj6);
       cResult[29] = tmp12.text;
-      cResult[30] = closure_7(require("Text/Text").Text, obj7);
-      const tmp28 = closure_7(require("Text/Text").Text, obj7);
+      cResult[30] = tmp29;
+      tmp27 = tmp29;
     } else {
-      class R {
-        constructor() {
-          obj = closure_0(closure_2[9]);
-          result = obj.clearVideoStreamTimeout(closure_0(closure_2[10]).MediaEngineContextTypes.DEFAULT, closure_0);
-          obj2 = closure_1(closure_2[11]);
-          setDisableLocalVideoResult = obj2.setDisableLocalVideo(closure_0, VideoToggleState.DISABLED, closure_0(closure_2[10]).MediaEngineContextTypes.DEFAULT, false);
-          timerId = setTimeout(() => { /* body not rendered: F148506 */ }, 1000);
-          return;
-        }
-      }
+      tmp27 = cResult[30];
     }
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     const text2 = tmp12.text;
-    const intl = tmp(1126).intl;
-    const obj8 = { errorCode };
-    const formatToPlainStringResult = intl.formatToPlainString(require("intl").t.ejOT95, obj8);
+    const intl2 = tmp(1126).intl;
+    const obj7 = { errorCode };
+    const formatToPlainStringResult = intl2.formatToPlainString(require("intl").t.ejOT95, obj7);
     cResult[6] = tmp4;
     cResult[7] = tmp5;
     cResult[8] = tmp7;
@@ -314,7 +266,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[25] = tmp7;
   cResult[26] = tmp12.container;
   cResult[27] = items1;
-}) : ((arg0) => {
+  tmp23 = items1;
+}) : (function UserVideoFailed(arg0) {
   let avError;
   let intl;
   let intl2;
@@ -350,7 +303,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
       variant: "secondary",
       size: "md",
       text: intl3.string(intl4.t["hxmQ/e"]),
-      onPress() {
+      onPress: function handleRetry() {
           let obj = VideoStreamReadyActionCreators;
           const result = obj.clearVideoStreamTimeout(BaseConnectionEvent.MediaEngineContextTypes.DEFAULT, _require);
           const obj2 = AudioActionCreatorsDefault;
@@ -361,7 +314,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
           }, 1000);
         }
     };
-    const Button = tmp3(5601).Button;
+    const Button = tmp3(5375).Button;
     intl3 = tmp3(1126).intl;
     tmp8Result = tmp8(Button, obj6);
   }

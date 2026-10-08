@@ -1,34 +1,34 @@
-// Module ID: 15601
-// Function ID: 15602
+// Module ID: 15881
+// Function ID: 15882
 // Name: DevToolsTogglesScreen
-// Dependencies: [32, 19, 17, 6020, 4895, 21, 5709, 4896, 587, 558, 576, 4574, 6706, 6000, 504, 15584, 6081, 6478, 14278, 15602, 6554, 5600, 2]
+// Dependencies: [32, 19, 17, 6206, 5089, 21, 6099, 5090, 587, 558, 576, 4766, 6883, 6184, 504, 15864, 6267, 6656, 14102, 15882, 6730, 5373, 2]
 
-// Module 15601 (DevToolsTogglesScreen)
+// Module 15881 (DevToolsTogglesScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import DevSettingsStore2 from "DevSettingsStore" /* 4895 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5709 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6478 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import DevSettingsStore2 from "DevSettingsStore" /* 5089 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6099 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6656 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DesignTogglesStore from "DesignTogglesStore" /* 6020 */;
+import DesignTogglesStore from "DesignTogglesStore" /* 6206 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const DevSettingsStore = DevSettingsStore2;
-let _require, title;
+let _require;
 
 let c10;
 let c9;
 let obj2;
 let obj3;
 let tmp;
-const TableRowGroup3 = tmp(6081);
+const TableRowGroup3 = tmp(6267);
 function fuzzySearchToggle(str, str2, str3) {
   let tmp = 0 === str.length;
   if (!tmp) {
@@ -37,7 +37,7 @@ function fuzzySearchToggle(str, str2, str3) {
     let tmp3ResultResult = tmp5(formatted, str2.toLowerCase());
     const tmp3 = importDefault;
     if (!tmp3ResultResult) {
-      const tmp3Result = tmp3(5709);
+      const tmp3Result = tmp3(6099);
       const formatted1 = str.toLowerCase();
       tmp3ResultResult = tmp3Result(formatted1, str3.toLowerCase());
     }
@@ -55,7 +55,7 @@ createStyles = createStyles.createStyles;
 obj3 = { paddingVertical: nativeDefault.space.PX_16 };
 let closure_12 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((toggleName) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function ToggleTableRow(toggleName) {
   let onValueChange;
   let value;
   let obj = toggleName(576);
@@ -85,7 +85,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((toggleName) =>
         }
       }
       let obj2 = { label: description, labelLineClamp: 1, subLabel: toggleName, subLabelLineClamp: 1, onPress: tmp4, trailing: tmp5 };
-      const tmp10 = closure_9(toggleName(6000).TableRow, obj2, toggleName);
+      const tmp10 = closure_9(toggleName(6184).TableRow, obj2, toggleName);
       cResult[6] = description;
       cResult[7] = tmp4;
       cResult[8] = tmp5;
@@ -94,7 +94,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((toggleName) =>
       tmp8 = tmp10;
     }
     const obj3 = { value, onValueChange };
-    const tmp7 = closure_9(toggleName(6706).FormSwitch, obj3);
+    const tmp7 = closure_9(toggleName(6883).FormSwitch, obj3);
     cResult[3] = onValueChange;
     cResult[4] = value;
     cResult[5] = tmp7;
@@ -109,7 +109,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((toggleName) =>
   cResult[1] = toggleName;
   cResult[2] = fn;
   tmp4 = fn;
-}) : ((toggleName) => {
+}) : (function ToggleTableRow(toggleName) {
   let onValueChange;
   let value;
   toggleName = toggleName.toggleName;
@@ -125,13 +125,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((toggleName) =>
       const obj2 = { content: description, key: toggleName };
       obj.open(obj2);
     },
-    trailing: closure_9(toggleName(6706).FormSwitch, { value, onValueChange })
+    trailing: closure_9(toggleName(6883).FormSwitch, { value, onValueChange })
   };
-  const TableRow = toggleName(6000).TableRow;
+  const TableRow = toggleName(6184).TableRow;
   return closure_9(TableRow, obj, toggleName);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFilteredDevTogglesForCategory(arg0, arg1) {
   let closure_0;
   let first;
   _require = arg0;
@@ -158,7 +158,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
     const tmpResult = tmp(504);
     return tmpResult.useStateFromStores(first, tmp6, tmp7, tmp(504).statesWillNeverBeEqual);
   }
-  const fn = function s() {
+  const fn = function c() {
     const allByCategoryResult = DevSettingsStore.allByCategory(closure_0);
     return allByCategoryResult.filter((item) => {
       const tmp = _slicedToArray(item, 3);
@@ -188,7 +188,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
   cResult[4] = items1;
   tmp7 = items1;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useFilteredDevTogglesForCategory(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;
@@ -205,7 +205,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
   }, items1, require("get initialized").statesWillNeverBeEqual);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevTogglesForCategory(title) {
   let tmp = require;
   let obj = react2;
   const cResult = obj.c(6);
@@ -219,7 +219,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
       let tmp6;
       const _Symbol = Symbol;
       if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-        const fn = function o(arg0) {
+        const fn = function n(arg0) {
           const tmp = closure_3(arg0, 3);
           const toggleName = tmp[0];
           let obj = {
@@ -259,7 +259,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
     cResult[5] = tmp10;
     tmp8 = tmp10;
   }
-}) : ((title) => {
+}) : (function DevTogglesForCategory(title) {
   title = title.title;
   const arr = closure_14(title.category, title.query);
   let tmp = null;
@@ -291,16 +291,15 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
   return tmp;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsTogglesScreen() {
   let first;
   let first1;
   let items2;
   let items3;
-  let obj7;
+  let obj6;
   let tmp11;
   let tmp13;
   let tmp14;
-  let tmp16;
   let tmp9;
   let tmp = first1;
   let tmp2 = dependencyMap;
@@ -316,7 +315,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const insets = useSafeAreaInsetsKeyboardAwareDefault(first).insets;
   [first1, tmp9] = react.useState("");
-  const tmpResult = tmp(14278);
+  const tmpResult = tmp(14102);
   const manaTextMigrationHighlightRestartNotice = tmpResult.useManaTextMigrationHighlightRestartNotice();
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [DesignTogglesStore];
@@ -326,38 +325,65 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp11 = cResult[1];
   }
   if (cResult[2] !== first1) {
-    const fn = function f() {
-      let length;
-      const allWithDescriptionsResult = DesignTogglesStore.allWithDescriptions();
-      return allWithDescriptionsResult.filter((item) => {
-        let str;
-        let str2;
-        [str, , str2] = item;
-        let tmp2 = 0 === length.length;
-        if (!tmp2) {
-          const tmp5 = fuzzysearchDefault;
-          const formatted = str3.toLowerCase();
-          let tmp3ResultResult = tmp5(formatted, str.toLowerCase());
-          const tmp3 = importDefault;
-          const tmp4 = dependencyMap;
-          if (!tmp3ResultResult) {
-            const tmp3Result = tmp3(tmp4[6]);
-            const formatted1 = str3.toLowerCase();
-            tmp3ResultResult = tmp3Result(formatted1, str2.toLowerCase());
+    class C {
+      constructor() {
+        let length;
+        const allWithDescriptionsResult = DesignTogglesStore.allWithDescriptions();
+        return allWithDescriptionsResult.filter((item) => {
+          let str;
+          let str2;
+          [str, , str2] = item;
+          let tmp2 = 0 === length.length;
+          if (!tmp2) {
+            const tmp5 = fuzzysearchDefault;
+            const formatted = str3.toLowerCase();
+            let tmp3ResultResult = tmp5(formatted, str.toLowerCase());
+            const tmp3 = importDefault;
+            const tmp4 = dependencyMap;
+            if (!tmp3ResultResult) {
+              const tmp3Result = tmp3(tmp4[6]);
+              const formatted1 = str3.toLowerCase();
+              tmp3ResultResult = tmp3Result(formatted1, str2.toLowerCase());
+            }
+            tmp2 = tmp3ResultResult;
           }
-          tmp2 = tmp3ResultResult;
-        }
-        return tmp2;
-      });
-    };
+          return tmp2;
+        });
+      }
+    }
     const items1 = [first1];
     cResult[2] = first1;
-    cResult[3] = fn;
+    cResult[3] = C;
     cResult[4] = items1;
     tmp14 = items1;
-    tmp13 = fn;
+    tmp13 = C;
   } else {
-    tmp13 = cResult[3];
+    class C {
+      constructor() {
+        let length;
+        const allWithDescriptionsResult = DesignTogglesStore.allWithDescriptions();
+        return allWithDescriptionsResult.filter((item) => {
+          let str;
+          let str2;
+          [str, , str2] = item;
+          let tmp2 = 0 === length.length;
+          if (!tmp2) {
+            const tmp5 = fuzzysearchDefault;
+            const formatted = str3.toLowerCase();
+            let tmp3ResultResult = tmp5(formatted, str.toLowerCase());
+            const tmp3 = importDefault;
+            const tmp4 = dependencyMap;
+            if (!tmp3ResultResult) {
+              const tmp3Result = tmp3(tmp4[6]);
+              const formatted1 = str3.toLowerCase();
+              tmp3ResultResult = tmp3Result(formatted1, str2.toLowerCase());
+            }
+            tmp2 = tmp3ResultResult;
+          }
+          return tmp2;
+        });
+      }
+    }
     tmp14 = cResult[4];
   }
   const tmpResult2 = tmp(504);
@@ -365,26 +391,121 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const wrap = tmp4.wrap;
   const sum = nativeDefault.space.PX_16 + insets.bottom;
   if (cResult[5] !== sum) {
-    const obj3 = { paddingBottom: sum };
+    class C {
+      constructor() {
+        let length;
+        const allWithDescriptionsResult = DesignTogglesStore.allWithDescriptions();
+        return allWithDescriptionsResult.filter((item) => {
+          let str;
+          let str2;
+          [str, , str2] = item;
+          let tmp2 = 0 === length.length;
+          if (!tmp2) {
+            const tmp5 = fuzzysearchDefault;
+            const formatted = str3.toLowerCase();
+            let tmp3ResultResult = tmp5(formatted, str.toLowerCase());
+            const tmp3 = importDefault;
+            const tmp4 = dependencyMap;
+            if (!tmp3ResultResult) {
+              const tmp3Result = tmp3(tmp4[6]);
+              const formatted1 = str3.toLowerCase();
+              tmp3ResultResult = tmp3Result(formatted1, str2.toLowerCase());
+            }
+            tmp2 = tmp3ResultResult;
+          }
+          return tmp2;
+        });
+      }
+    }
+    tmp17[0] = sum;
     cResult[5] = sum;
-    cResult[6] = obj3;
-    tmp16 = obj3;
+    cResult[6] = tmp17;
   } else {
-    tmp16 = cResult[6];
+    class C {
+      constructor() {
+        let length;
+        const allWithDescriptionsResult = DesignTogglesStore.allWithDescriptions();
+        return allWithDescriptionsResult.filter((item) => {
+          let str;
+          let str2;
+          [str, , str2] = item;
+          let tmp2 = 0 === length.length;
+          if (!tmp2) {
+            const tmp5 = fuzzysearchDefault;
+            const formatted = str3.toLowerCase();
+            let tmp3ResultResult = tmp5(formatted, str.toLowerCase());
+            const tmp3 = importDefault;
+            const tmp4 = dependencyMap;
+            if (!tmp3ResultResult) {
+              const tmp3Result = tmp3(tmp4[6]);
+              const formatted1 = str3.toLowerCase();
+              tmp3ResultResult = tmp3Result(formatted1, str2.toLowerCase());
+            }
+            tmp2 = tmp3ResultResult;
+          }
+          return tmp2;
+        });
+      }
+    }
   }
   if (cResult[7] === tmp4.container) {
-    let tmp17;
-    let tmp18;
+    let tmp19;
     let tmp21;
-    let tmp25;
-    let arr6;
-    let tmp30;
-    if (cResult[8] === tmp16) {
-      tmp17 = cResult[9];
+    class C {
+      constructor() {
+        let length;
+        const allWithDescriptionsResult = DesignTogglesStore.allWithDescriptions();
+        return allWithDescriptionsResult.filter((item) => {
+          let str;
+          let str2;
+          [str, , str2] = item;
+          let tmp2 = 0 === length.length;
+          if (!tmp2) {
+            const tmp5 = fuzzysearchDefault;
+            const formatted = str3.toLowerCase();
+            let tmp3ResultResult = tmp5(formatted, str.toLowerCase());
+            const tmp3 = importDefault;
+            const tmp4 = dependencyMap;
+            if (!tmp3ResultResult) {
+              const tmp3Result = tmp3(tmp4[6]);
+              const formatted1 = str3.toLowerCase();
+              tmp3ResultResult = tmp3Result(formatted1, str2.toLowerCase());
+            }
+            tmp2 = tmp3ResultResult;
+          }
+          return tmp2;
+        });
+      }
     }
     const _Symbol = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj4 = {
+      class C {
+        constructor() {
+          let length;
+          const allWithDescriptionsResult = DesignTogglesStore.allWithDescriptions();
+          return allWithDescriptionsResult.filter((item) => {
+            let str;
+            let str2;
+            [str, , str2] = item;
+            let tmp2 = 0 === length.length;
+            if (!tmp2) {
+              const tmp5 = fuzzysearchDefault;
+              const formatted = str3.toLowerCase();
+              let tmp3ResultResult = tmp5(formatted, str.toLowerCase());
+              const tmp3 = importDefault;
+              const tmp4 = dependencyMap;
+              if (!tmp3ResultResult) {
+                const tmp3Result = tmp3(tmp4[6]);
+                const formatted1 = str3.toLowerCase();
+                tmp3ResultResult = tmp3Result(formatted1, str2.toLowerCase());
+              }
+              tmp2 = tmp3ResultResult;
+            }
+            return tmp2;
+          });
+        }
+      }
+      const obj3 = {
         label: "Clear All",
         variant: "danger",
         onPress() {
@@ -395,31 +516,159 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             },
         arrow: true
       };
-      const tmp20 = closure_9(tmp(6000).TableRow, obj4);
+      const tmp20 = closure_9(tmp(6184).TableRow, obj3);
       cResult[10] = tmp20;
-      tmp18 = tmp20;
+      tmp19 = tmp20;
     } else {
-      tmp18 = cResult[10];
+      class C {
+        constructor() {
+          let length;
+          const allWithDescriptionsResult = DesignTogglesStore.allWithDescriptions();
+          return allWithDescriptionsResult.filter((item) => {
+            let str;
+            let str2;
+            [str, , str2] = item;
+            let tmp2 = 0 === length.length;
+            if (!tmp2) {
+              const tmp5 = fuzzysearchDefault;
+              const formatted = str3.toLowerCase();
+              let tmp3ResultResult = tmp5(formatted, str.toLowerCase());
+              const tmp3 = importDefault;
+              const tmp4 = dependencyMap;
+              if (!tmp3ResultResult) {
+                const tmp3Result = tmp3(tmp4[6]);
+                const formatted1 = str3.toLowerCase();
+                tmp3ResultResult = tmp3Result(formatted1, str2.toLowerCase());
+              }
+              tmp2 = tmp3ResultResult;
+            }
+            return tmp2;
+          });
+        }
+      }
     }
     const _Symbol2 = Symbol;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj5 = { title: "Actions", hasIcons: false, children: items2 };
-      items2 = [tmp18, ];
-      const TableRowGroup = tmp(6081).TableRowGroup;
-      const obj6 = { label: closure_9(tmp(6554).SearchField, obj7) };
-      const TableRow = tmp(6000).TableRow;
-      obj7 = { size: "md", placeholder: "Search design toggles", onChange: tmp9 };
-      items2[1] = closure_9(TableRow, obj6);
-      const tmp24 = closure_10(TableRowGroup, obj5);
-      cResult[11] = tmp24;
-      tmp21 = tmp24;
+      class C {
+        constructor() {
+          let length;
+          const allWithDescriptionsResult = DesignTogglesStore.allWithDescriptions();
+          return allWithDescriptionsResult.filter((item) => {
+            let str;
+            let str2;
+            [str, , str2] = item;
+            let tmp2 = 0 === length.length;
+            if (!tmp2) {
+              const tmp5 = fuzzysearchDefault;
+              const formatted = str3.toLowerCase();
+              let tmp3ResultResult = tmp5(formatted, str.toLowerCase());
+              const tmp3 = importDefault;
+              const tmp4 = dependencyMap;
+              if (!tmp3ResultResult) {
+                const tmp3Result = tmp3(tmp4[6]);
+                const formatted1 = str3.toLowerCase();
+                tmp3ResultResult = tmp3Result(formatted1, str2.toLowerCase());
+              }
+              tmp2 = tmp3ResultResult;
+            }
+            return tmp2;
+          });
+        }
+      }
+      const obj4 = { title: "Actions", hasIcons: false, children: items2 };
+      items2 = [tmp19, ];
+      const TableRowGroup = tmp(6267).TableRowGroup;
+      const obj5 = { label: closure_9(tmp(6730).SearchField, obj6) };
+      const TableRow = tmp(6184).TableRow;
+      obj6 = { size: "md", placeholder: "Search design toggles", onChange: tmp9 };
+      items2[1] = closure_9(TableRow, obj5);
+      const tmp23 = closure_10(TableRowGroup, obj4);
+      cResult[11] = tmp23;
+      tmp21 = tmp23;
     } else {
-      tmp21 = cResult[11];
+      class C {
+        constructor() {
+          let length;
+          const allWithDescriptionsResult = DesignTogglesStore.allWithDescriptions();
+          return allWithDescriptionsResult.filter((item) => {
+            let str;
+            let str2;
+            [str, , str2] = item;
+            let tmp2 = 0 === length.length;
+            if (!tmp2) {
+              const tmp5 = fuzzysearchDefault;
+              const formatted = str3.toLowerCase();
+              let tmp3ResultResult = tmp5(formatted, str.toLowerCase());
+              const tmp3 = importDefault;
+              const tmp4 = dependencyMap;
+              if (!tmp3ResultResult) {
+                const tmp3Result = tmp3(tmp4[6]);
+                const formatted1 = str3.toLowerCase();
+                tmp3ResultResult = tmp3Result(formatted1, str2.toLowerCase());
+              }
+              tmp2 = tmp3ResultResult;
+            }
+            return tmp2;
+          });
+        }
+      }
     }
     if (cResult[12] !== stateFromStores) {
-      let tmp26 = null;
+      class C {
+        constructor() {
+          let length;
+          const allWithDescriptionsResult = DesignTogglesStore.allWithDescriptions();
+          return allWithDescriptionsResult.filter((item) => {
+            let str;
+            let str2;
+            [str, , str2] = item;
+            let tmp2 = 0 === length.length;
+            if (!tmp2) {
+              const tmp5 = fuzzysearchDefault;
+              const formatted = str3.toLowerCase();
+              let tmp3ResultResult = tmp5(formatted, str.toLowerCase());
+              const tmp3 = importDefault;
+              const tmp4 = dependencyMap;
+              if (!tmp3ResultResult) {
+                const tmp3Result = tmp3(tmp4[6]);
+                const formatted1 = str3.toLowerCase();
+                tmp3ResultResult = tmp3Result(formatted1, str2.toLowerCase());
+              }
+              tmp2 = tmp3ResultResult;
+            }
+            return tmp2;
+          });
+        }
+      }
+      let tmp25 = null;
       if (stateFromStores.length > 0) {
-        const obj8 = {
+        class C {
+          constructor() {
+            let length;
+            const allWithDescriptionsResult = DesignTogglesStore.allWithDescriptions();
+            return allWithDescriptionsResult.filter((item) => {
+              let str;
+              let str2;
+              [str, , str2] = item;
+              let tmp2 = 0 === length.length;
+              if (!tmp2) {
+                const tmp5 = fuzzysearchDefault;
+                const formatted = str3.toLowerCase();
+                let tmp3ResultResult = tmp5(formatted, str.toLowerCase());
+                const tmp3 = importDefault;
+                const tmp4 = dependencyMap;
+                if (!tmp3ResultResult) {
+                  const tmp3Result = tmp3(tmp4[6]);
+                  const formatted1 = str3.toLowerCase();
+                  tmp3ResultResult = tmp3Result(formatted1, str2.toLowerCase());
+                }
+                tmp2 = tmp3ResultResult;
+              }
+              return tmp2;
+            });
+          }
+        }
+        const obj7 = {
           title: "Design Toggles",
           hasIcons: false,
           children: stateFromStores.map((item) => {
@@ -437,73 +686,228 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   return closure_9(closure_13, obj, toggleName);
                 })
         };
-        const TableRowGroup2 = tmp(6081).TableRowGroup;
-        tmp26 = closure_9(TableRowGroup2, obj8);
+        const TableRowGroup2 = tmp(6267).TableRowGroup;
+        tmp25 = closure_9(TableRowGroup2, obj7);
       }
       cResult[12] = stateFromStores;
-      cResult[13] = tmp26;
-      tmp25 = tmp26;
+      cResult[13] = tmp25;
     } else {
-      tmp25 = cResult[13];
+      class C {
+        constructor() {
+          let length;
+          const allWithDescriptionsResult = DesignTogglesStore.allWithDescriptions();
+          return allWithDescriptionsResult.filter((item) => {
+            let str;
+            let str2;
+            [str, , str2] = item;
+            let tmp2 = 0 === length.length;
+            if (!tmp2) {
+              const tmp5 = fuzzysearchDefault;
+              const formatted = str3.toLowerCase();
+              let tmp3ResultResult = tmp5(formatted, str.toLowerCase());
+              const tmp3 = importDefault;
+              const tmp4 = dependencyMap;
+              if (!tmp3ResultResult) {
+                const tmp3Result = tmp3(tmp4[6]);
+                const formatted1 = str3.toLowerCase();
+                tmp3ResultResult = tmp3Result(formatted1, str2.toLowerCase());
+              }
+              tmp2 = tmp3ResultResult;
+            }
+            return tmp2;
+          });
+        }
+      }
     }
     const _Symbol3 = Symbol;
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-      const _Object = Object;
-      const entries = Object.entries(CATEGORY_LABELS);
-      cResult[14] = entries;
-      arr6 = entries;
-    } else {
-      arr6 = cResult[14];
-    }
-    if (cResult[15] !== first1) {
-      const mapped = arr6.map((item) => {
-        const tmp = _slicedToArray(item, 2);
-        const first = tmp[0];
-        const obj = { category: parseInt(first), title: tmp[1], query: first1 };
-        return React4(closure_15, obj, first);
-      });
-      cResult[15] = first1;
-      cResult[16] = mapped;
-      tmp30 = mapped;
-    } else {
-      tmp30 = cResult[16];
-    }
-    if (cResult[17] === tmp25) {
-      let tmp32;
-      if (cResult[18] === tmp30) {
-        tmp32 = cResult[19];
-      }
-      if (cResult[20] === tmp4.wrap) {
-        if (cResult[21] === tmp32) {
-          let tmp35;
-          if (cResult[22] === tmp17) {
-            tmp35 = cResult[23];
-          }
-          return tmp35;
+      class C {
+        constructor() {
+          let length;
+          const allWithDescriptionsResult = DesignTogglesStore.allWithDescriptions();
+          return allWithDescriptionsResult.filter((item) => {
+            let str;
+            let str2;
+            [str, , str2] = item;
+            let tmp2 = 0 === length.length;
+            if (!tmp2) {
+              const tmp5 = fuzzysearchDefault;
+              const formatted = str3.toLowerCase();
+              let tmp3ResultResult = tmp5(formatted, str.toLowerCase());
+              const tmp3 = importDefault;
+              const tmp4 = dependencyMap;
+              if (!tmp3ResultResult) {
+                const tmp3Result = tmp3(tmp4[6]);
+                const formatted1 = str3.toLowerCase();
+                tmp3ResultResult = tmp3Result(formatted1, str2.toLowerCase());
+              }
+              tmp2 = tmp3ResultResult;
+            }
+            return tmp2;
+          });
         }
       }
-      const obj9 = { style: wrap, contentContainerStyle: tmp17, children: tmp32 };
-      const tmp38 = closure_9(ScrollView, obj9);
-      cResult[20] = tmp4.wrap;
-      cResult[21] = tmp32;
-      cResult[22] = tmp17;
-      cResult[23] = tmp38;
-      tmp35 = tmp38;
+      const entries = Object.entries(CATEGORY_LABELS);
+      cResult[14] = entries;
+    } else {
+      class C {
+        constructor() {
+          let length;
+          const allWithDescriptionsResult = DesignTogglesStore.allWithDescriptions();
+          return allWithDescriptionsResult.filter((item) => {
+            let str;
+            let str2;
+            [str, , str2] = item;
+            let tmp2 = 0 === length.length;
+            if (!tmp2) {
+              const tmp5 = fuzzysearchDefault;
+              const formatted = str3.toLowerCase();
+              let tmp3ResultResult = tmp5(formatted, str.toLowerCase());
+              const tmp3 = importDefault;
+              const tmp4 = dependencyMap;
+              if (!tmp3ResultResult) {
+                const tmp3Result = tmp3(tmp4[6]);
+                const formatted1 = str3.toLowerCase();
+                tmp3ResultResult = tmp3Result(formatted1, str2.toLowerCase());
+              }
+              tmp2 = tmp3ResultResult;
+            }
+            return tmp2;
+          });
+        }
+      }
     }
-    const obj10 = { spacing: 16, children: items3 };
-    items3 = [tmp21, tmp25, tmp30];
-    const tmp34 = closure_10(tmp(5600).Stack, obj10);
-    cResult[17] = tmp25;
-    cResult[18] = tmp30;
-    cResult[19] = tmp34;
-    tmp32 = tmp34;
+    if (cResult[15] !== first1) {
+      class C {
+        constructor() {
+          let length;
+          const allWithDescriptionsResult = DesignTogglesStore.allWithDescriptions();
+          return allWithDescriptionsResult.filter((item) => {
+            let str;
+            let str2;
+            [str, , str2] = item;
+            let tmp2 = 0 === length.length;
+            if (!tmp2) {
+              const tmp5 = fuzzysearchDefault;
+              const formatted = str3.toLowerCase();
+              let tmp3ResultResult = tmp5(formatted, str.toLowerCase());
+              const tmp3 = importDefault;
+              const tmp4 = dependencyMap;
+              if (!tmp3ResultResult) {
+                const tmp3Result = tmp3(tmp4[6]);
+                const formatted1 = str3.toLowerCase();
+                tmp3ResultResult = tmp3Result(formatted1, str2.toLowerCase());
+              }
+              tmp2 = tmp3ResultResult;
+            }
+            return tmp2;
+          });
+        }
+      }
+      cResult[15] = first1;
+      cResult[16] = tmp30;
+    } else {
+      class C {
+        constructor() {
+          let length;
+          const allWithDescriptionsResult = DesignTogglesStore.allWithDescriptions();
+          return allWithDescriptionsResult.filter((item) => {
+            let str;
+            let str2;
+            [str, , str2] = item;
+            let tmp2 = 0 === length.length;
+            if (!tmp2) {
+              const tmp5 = fuzzysearchDefault;
+              const formatted = str3.toLowerCase();
+              let tmp3ResultResult = tmp5(formatted, str.toLowerCase());
+              const tmp3 = importDefault;
+              const tmp4 = dependencyMap;
+              if (!tmp3ResultResult) {
+                const tmp3Result = tmp3(tmp4[6]);
+                const formatted1 = str3.toLowerCase();
+                tmp3ResultResult = tmp3Result(formatted1, str2.toLowerCase());
+              }
+              tmp2 = tmp3ResultResult;
+            }
+            return tmp2;
+          });
+        }
+      }
+    }
+    if (cResult[17] === tmp24) {
+      class C {
+        constructor() {
+          let length;
+          const allWithDescriptionsResult = DesignTogglesStore.allWithDescriptions();
+          return allWithDescriptionsResult.filter((item) => {
+            let str;
+            let str2;
+            [str, , str2] = item;
+            let tmp2 = 0 === length.length;
+            if (!tmp2) {
+              const tmp5 = fuzzysearchDefault;
+              const formatted = str3.toLowerCase();
+              let tmp3ResultResult = tmp5(formatted, str.toLowerCase());
+              const tmp3 = importDefault;
+              const tmp4 = dependencyMap;
+              if (!tmp3ResultResult) {
+                const tmp3Result = tmp3(tmp4[6]);
+                const formatted1 = str3.toLowerCase();
+                tmp3ResultResult = tmp3Result(formatted1, str2.toLowerCase());
+              }
+              tmp2 = tmp3ResultResult;
+            }
+            return tmp2;
+          });
+        }
+      }
+      if (cResult[20] === tmp4.wrap) {
+        class C {
+          constructor() {
+            let length;
+            const allWithDescriptionsResult = DesignTogglesStore.allWithDescriptions();
+            return allWithDescriptionsResult.filter((item) => {
+              let str;
+              let str2;
+              [str, , str2] = item;
+              let tmp2 = 0 === length.length;
+              if (!tmp2) {
+                const tmp5 = fuzzysearchDefault;
+                const formatted = str3.toLowerCase();
+                let tmp3ResultResult = tmp5(formatted, str.toLowerCase());
+                const tmp3 = importDefault;
+                const tmp4 = dependencyMap;
+                if (!tmp3ResultResult) {
+                  const tmp3Result = tmp3(tmp4[6]);
+                  const formatted1 = str3.toLowerCase();
+                  tmp3ResultResult = tmp3Result(formatted1, str2.toLowerCase());
+                }
+                tmp2 = tmp3ResultResult;
+              }
+              return tmp2;
+            });
+          }
+        }
+      }
+      const obj8 = { style: wrap, contentContainerStyle: tmp18, children: tmp31 };
+      cResult[20] = tmp4.wrap;
+      cResult[21] = tmp31;
+      cResult[22] = tmp18;
+      cResult[23] = closure_9(ScrollView, obj8);
+      const tmp37 = closure_9(ScrollView, obj8);
+    }
+    const obj9 = { spacing: 16, children: items3 };
+    items3 = [tmp21, tmp24, tmp29];
+    cResult[17] = tmp24;
+    cResult[18] = tmp29;
+    cResult[19] = closure_10(tmp(5373).Stack, obj9);
+    const tmp33 = closure_10(tmp(5373).Stack, obj9);
   }
   const items4 = [tmp4.container, tmp16];
   cResult[7] = tmp4.container;
   cResult[8] = tmp16;
   cResult[9] = items4;
-  tmp17 = items4;
-}) : (() => {
+}) : (function DevToolsTogglesScreen() {
   let Stack;
   let items2;
   let items3;
@@ -515,7 +919,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp2 = dependencyMap;
   const insets = useSafeAreaInsetsKeyboardAwareDefault({ includeKeyboardHeight: true }).insets;
   [query, tmp5] = react.useState("");
-  let obj = query(14278);
+  let obj = query(14102);
   const manaTextMigrationHighlightRestartNotice = obj.useManaTextMigrationHighlightRestartNotice();
   let obj2 = query(504);
   const items = [DesignTogglesStore];
@@ -547,9 +951,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj3 = { style: tmp.wrap, contentContainerStyle: items2, children: tmp10(Stack, obj9) };
   items2 = [tmp.container, { paddingBottom: nativeDefault.space.PX_16 + insets.bottom }];
   ({ paddingBottom: nativeDefault.space.PX_16 + insets.bottom });
-  Stack = query(5600).Stack;
+  Stack = query(5373).Stack;
   const obj5 = { title: "Actions", hasIcons: false, children: items3 };
-  const TableRowGroup = query(6081).TableRowGroup;
+  const TableRowGroup = query(6267).TableRowGroup;
   items3 = [, ];
   const obj6 = {
     label: "Clear All",
@@ -562,9 +966,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     },
     arrow: true
   };
-  items3[0] = closure_9(query(6000).TableRow, obj6);
-  const obj7 = { label: closure_9(query(6554).SearchField, { size: "md", placeholder: "Search design toggles", onChange: tmp5 }) };
-  const TableRow = query(6000).TableRow;
+  items3[0] = closure_9(query(6184).TableRow, obj6);
+  const obj7 = { label: closure_9(query(6730).SearchField, { size: "md", placeholder: "Search design toggles", onChange: tmp5 }) };
+  const TableRow = query(6184).TableRow;
   items3[1] = closure_9(TableRow, obj7);
   const items4 = [closure_10(TableRowGroup, obj5), , ];
   let tmp8Result = null;
@@ -592,7 +996,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return closure_9(closure_13, obj, tmp);
         })
     };
-    const TableRowGroup2 = tmp6(6081).TableRowGroup;
+    const TableRowGroup2 = tmp6(6267).TableRowGroup;
     tmp8Result = tmp8(TableRowGroup2, obj8);
   }
   obj9 = { spacing: 16, children: items4 };

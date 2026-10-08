@@ -1,12 +1,12 @@
-// Module ID: 16692
-// Function ID: 16693
+// Module ID: 16965
+// Function ID: 16966
 // Name: ConjureTimelineTree
-// Dependencies: [32, 3753, 1126, 2]
+// Dependencies: [32, 3827, 1126, 2]
 // Exports: currentStep, describeNode, describeTaskStatus, endsWithStreamedMessage, latestTodos, streamedContent, streamedMessages, turnLifecycle, turnSegments
 
-// Module 16692 (ConjureTimelineTree)
+// Module 16965 (ConjureTimelineTree)
 import intl6 from "intl" /* 1126 */;
-import _modDef3753 from "module_3753" /* 3753 */;
+import _modDef3827 from "module_3827" /* 3827 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -110,14 +110,14 @@ function buildTimelineTree(steps, arg1) {
         if (null != value) {
           return value;
         } else {
-          const obj3 = { id, kind: "step", detail: [], detailDrivenBy: [], status: "running", screenshots: [], attachments: [], touched: 0, segment };
+          const obj3 = { id, kind: "step", detail: [], detailDrivenBy: [], status: "running", screenshots: [], browserSessions: [], attachments: [], touched: 0, segment };
           const result = obj.set(combined, obj3);
           if (null != taskId) {
             let value3 = map.get(taskId);
             const obj2 = map;
             if (null == value3) {
               const obj4 = { taskId, task: obj5, steps: [] };
-              obj5 = { id: "task", kind: "task", detail: [], detailDrivenBy: [], status: "running", screenshots: [], attachments: [], touched: 0, segment };
+              obj5 = { id: "task", kind: "task", detail: [], detailDrivenBy: [], status: "running", screenshots: [], browserSessions: [], attachments: [], touched: 0, segment };
               const result1 = obj2.set(taskId, obj4);
               value3 = obj4;
             }
@@ -135,14 +135,14 @@ function buildTimelineTree(steps, arg1) {
       const obj6 = map;
       if (null == value4) {
         const obj7 = { taskId, task: obj8, steps: [] };
-        obj8 = { id: "task", kind: "task", detail: [], detailDrivenBy: [], status: "running", screenshots: [], attachments: [], touched: 0, segment };
+        obj8 = { id: "task", kind: "task", detail: [], detailDrivenBy: [], status: "running", screenshots: [], browserSessions: [], attachments: [], touched: 0, segment };
         const result2 = obj6.set(taskId, obj7);
         value4 = obj7;
       }
       task = value4.task;
     } else if (task == null) {
-      task = { id: "task", kind: "task", detail: [], detailDrivenBy: [], status: "running", screenshots: [], attachments: [], touched: 0, segment };
-      const obj9 = { id: "task", kind: "task", detail: [], detailDrivenBy: [], status: "running", screenshots: [], attachments: [], touched: 0, segment };
+      task = { id: "task", kind: "task", detail: [], detailDrivenBy: [], status: "running", screenshots: [], browserSessions: [], attachments: [], touched: 0, segment };
+      const obj9 = { id: "task", kind: "task", detail: [], detailDrivenBy: [], status: "running", screenshots: [], browserSessions: [], attachments: [], touched: 0, segment };
     }
     return task;
   }
@@ -261,6 +261,9 @@ function buildTimelineTree(steps, arg1) {
             }
             if (null != node.screenshots) {
               tmp18Result.screenshots = node.screenshots;
+            }
+            if (null != node.browser_sessions) {
+              tmp18Result.browserSessions = node.browser_sessions;
             }
             if (null != node.attachments) {
               tmp18Result.attachments = node.attachments;
@@ -453,7 +456,7 @@ function isTurnWorkFrame(task_id) {
   }
   return tmp;
 }
-let obj = { healthcheck_failed: _modDef3753.iwOTgo, preview_ready: _modDef3753.okkgSB, working: _modDef3753.t8skVB, error: _modDef3753.avt0ax };
+let obj = { healthcheck_failed: _modDef3827.iwOTgo, preview_ready: _modDef3827.okkgSB, working: _modDef3827.t8skVB, error: _modDef3827.avt0ax };
 let result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureTimelineTree.tsx");
 
 export const describeNode = function describeNode(currentStepResult) {
@@ -469,26 +472,26 @@ export const describeNode = function describeNode(currentStepResult) {
   const intl = intl6.intl;
   const string = intl.string;
   if (t8skVB == null) {
-    t8skVB = _modDef3753.t8skVB;
+    t8skVB = _modDef3827.t8skVB;
   }
   return string(t8skVB);
 };
 export const describeTaskStatus = function describeTaskStatus(arg0) {
   if ("running" === arg0) {
     const intl5 = intl6.intl;
-    return intl5.string(_modDef3753.jTwZFY);
+    return intl5.string(_modDef3827.jTwZFY);
   } else if ("done" === arg0) {
     const intl4 = intl6.intl;
-    return intl4.string(_modDef3753.keYz9o);
+    return intl4.string(_modDef3827.keYz9o);
   } else if ("failed" === arg0) {
     const intl3 = intl6.intl;
-    return intl3.string(_modDef3753["RoY/lg"]);
+    return intl3.string(_modDef3827["RoY/lg"]);
   } else if ("cancelled" === arg0) {
     const intl2 = intl6.intl;
-    return intl2.string(_modDef3753["HZw/I/"]);
+    return intl2.string(_modDef3827["HZw/I/"]);
   } else if ("incomplete" === arg0) {
     const intl = intl6.intl;
-    return intl.string(_modDef3753.sf2UHL);
+    return intl.string(_modDef3827.sf2UHL);
   }
 };
 export { buildTimelineTree };

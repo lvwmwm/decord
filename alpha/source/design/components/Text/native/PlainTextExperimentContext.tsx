@@ -1,10 +1,10 @@
-// Module ID: 4901
-// Function ID: 4902
+// Module ID: 5095
+// Function ID: 5096
 // Name: PlainTextExperimentContext
 // Dependencies: [19, 21, 558, 576, 2]
 // Exports: usePlainTextExperimentEnabled
 
-// Module 4901 (PlainTextExperimentContext)
+// Module 5095 (PlainTextExperimentContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -14,7 +14,7 @@ import size from "module_2" /* 2 */;
 const jsx = Fragment.jsx;
 const context = react.createContext(false);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlainTextExperimentProvider(arg0) {
   let children;
   let enabled;
   const obj = react2;
@@ -32,10 +32,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = enabled;
   cResult[2] = tmp3;
   tmp2 = tmp3;
-}) : ((enabled) => <closure_4 value={arg0.enabled}>{arg0.children}</closure_4>);
+}) : (function PlainTextExperimentProvider(enabled) {
+  return <closure_4 value={arg0.enabled}>{arg0.children}</closure_4>;
+});
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const result1 = size.fileFinishedImporting("design/components/Text/native/PlainTextExperimentContext.tsx");
 
 export const PlainTextExperimentProvider = tmp2;
-export const usePlainTextExperimentEnabled = () => react.useContext(closure_4);
+export const usePlainTextExperimentEnabled = function usePlainTextExperimentEnabled() {
+  return react.useContext(closure_4);
+};

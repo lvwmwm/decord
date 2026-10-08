@@ -13,6 +13,7 @@ import size from "module_2" /* 2 */;
 
 let Component, applyArgumentsResult, attachResult, batchedStoreListener, c1, c2, clearResult, detachResult;
 
+let closure_3 = ["ref"];
 const jsx = Fragment.jsx;
 let result = size.fileFinishedImporting("../discord_common/js/packages/flux/connectStores.tsx");
 
@@ -34,7 +35,7 @@ export default function connectStores(items, arg1, arg2) {
           str = "<Unknown>";
         }
         const combined = "FluxContainer(" + str + ")";
-        Component = React.Component;
+        Component = Component.Component;
         class FluxContainer extends Component {
           constructor() {
             applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
@@ -135,28 +136,41 @@ export default function connectStores(items, arg1, arg2) {
           }
         }
         const prototype = FluxContainer.prototype;
-        let tmp2 = React;
         FluxContainer.displayName = combined;
-        const forwardRef = React.forwardRef;
         let obj = displayName(closure_1_2[5]);
-        const forwardRefResult = forwardRef(obj.isReactCompilerEnabled() ? ((childProps, forwardedConnectStoresRef) => {
+        let tmp2 = obj.isReactCompilerEnabled() ? (function ForwardRef(ref) {
+          let tmp2;
+          let tmp3;
           const obj = displayName(dependencyMap[6]);
-          const cResult = obj.c(3);
-          if (cResult[0] === childProps) {
-            let tmp2;
-            if (cResult[1] === forwardedConnectStoresRef) {
-              tmp2 = cResult[2];
-            }
-            return tmp2;
+          const cResult = obj.c(6);
+          if (cResult[0] !== ref) {
+            const tmp6 = _objectWithoutProperties(ref, closure_3_3);
+            cResult[0] = ref;
+            cResult[1] = tmp6;
+            cResult[2] = ref.ref;
+            tmp3 = ref;
+            tmp2 = tmp6;
+          } else {
+            tmp2 = cResult[1];
+            tmp3 = cResult[2];
           }
-          const tmp3 = <FluxContainer childProps={arg0} forwardedConnectStoresRef={arg1} />;
-          cResult[0] = childProps;
-          cResult[1] = forwardedConnectStoresRef;
-          cResult[2] = tmp3;
-          tmp2 = tmp3;
-        }) : ((childProps, forwardedConnectStoresRef) => <FluxContainer childProps={arg0} forwardedConnectStoresRef={arg1} />));
-        forwardRefResult.displayName = "ForwardRef(" + combined + ")";
-        return forwardRefResult;
+          if (cResult[3] === tmp2) {
+            let tmp7;
+            if (cResult[4] === tmp3) {
+              tmp7 = cResult[5];
+            }
+            return tmp7;
+          }
+          const tmp8 = <FluxContainer childProps={tmp2} forwardedConnectStoresRef={tmp3} />;
+          cResult[3] = tmp2;
+          cResult[4] = tmp3;
+          cResult[5] = tmp8;
+          tmp7 = tmp8;
+        }) : (function ForwardRef(forwardedConnectStoresRef) {
+          return <FluxContainer childProps={Object.assign(arg0, Object.assign({ ref: 0 }))} forwardedConnectStoresRef={arg0.ref} />;
+        });
+        tmp2.displayName = "ForwardRef(" + combined + ")";
+        return tmp2;
       };
     }
     return fn;
@@ -178,13 +192,13 @@ export default function connectStores(items, arg1, arg2) {
         applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
         closure_0 = applyArgumentsResult;
         closure_0 = closure_1;
-        memoizedFunction = function memoizedFunction() { /* body not rendered: F81635 */ };
+        memoizedFunction = function memoizedFunction() { /* body not rendered: F82471 */ };
         c1 = null;
         c2 = null;
-        memoizedFunction.getCachedResult = function getCachedResult() { /* body not rendered: F81634 */ };
-        memoizedFunction.clear = function clear() { /* body not rendered: F81636 */ };
+        memoizedFunction.getCachedResult = function getCachedResult() { /* body not rendered: F82470 */ };
+        memoizedFunction.clear = function clear() { /* body not rendered: F82472 */ };
         applyArgumentsResult.memoizedGetStateFromStores = memoizedFunction;
-        batchedStoreListener = new closure_0(closure_2[3]).BatchedStoreListener(closure_0, () => { /* body not rendered: F154285 */ });
+        batchedStoreListener = new closure_0(closure_2[3]).BatchedStoreListener(closure_0, () => { /* body not rendered: F155826 */ });
         applyArgumentsResult.listener = batchedStoreListener;
         return applyArgumentsResult;
       }

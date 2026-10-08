@@ -1,19 +1,19 @@
-// Module ID: 14649
-// Function ID: 14650
+// Module ID: 14910
+// Function ID: 14911
 // Name: useExplicitContentSettingsOrDefault
-// Dependencies: [1231, 558, 576, 6811, 573, 6814, 2]
+// Dependencies: [1243, 558, 576, 6983, 573, 6986, 2]
 
-// Module 14649 (useExplicitContentSettingsOrDefault)
+// Module 14910 (useExplicitContentSettingsOrDefault)
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react from "react" /* 576 */;
-import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 6811 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 6814 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 6983 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 6986 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExplicitContentSettingOrDefault() {
   let settings;
   let tmp12;
   let tmp15;
@@ -102,7 +102,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[10] = tmp15;
   cResult[11] = obj5;
   tmp17 = obj5;
-}) : (() => {
+}) : (function useExplicitContentSettingOrDefault() {
   let prop1;
   let prop2;
   let resolveExplicitContentSettingWithDefaults2;
@@ -144,7 +144,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return obj2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGoreContentSettingOrDefault() {
   let settings;
   let tmp12;
   let tmp15;
@@ -233,7 +233,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[10] = tmp15;
   cResult[11] = obj5;
   tmp17 = obj5;
-}) : (() => {
+}) : (function useGoreContentSettingOrDefault() {
   let goreContentFriendDm;
   let prop;
   let resolveGoreSettingWithDefaults2;

@@ -1,17 +1,17 @@
-// Module ID: 9219
-// Function ID: 9220
+// Module ID: 8514
+// Function ID: 8515
 // Name: EditGuildEventStepContainer
-// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 6478, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 587, 558, 576, 6656, 2]
 
-// Module 9219 (EditGuildEventStepContainer)
+// Module 8514 (EditGuildEventStepContainer)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6478 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6656 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,23 +29,23 @@ obj2 = { flex: 1, paddingHorizontal: 0, paddingVertical: 0, backgroundColor: nat
 createStyles = createStyles.createStyles;
 rect = { position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: 16, paddingVertical: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 let closure_9 = createStyles(obj);
-const forwardRef = react.forwardRef;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildEventsStepContainer(arg0) {
   let action;
   let children;
   let closure_0;
   let first;
   let first1;
   let items;
+  let ref;
   let tmp7;
-  let obj = react2;
+  const obj = react2;
   const cResult = obj.c(23);
-  ({ children, action } = arg0);
+  ({ children, action, ref } = arg0);
   const tmp2 = closure_9();
   [first, closure_0] = react.useState(32);
   const insets = useSafeAreaInsetsKeyboardAwareDefault().insets;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function f(nativeEvent) {
+    const fn = function c(nativeEvent) {
       closure_0(nativeEvent.nativeEvent.layout.height);
     };
     cResult[0] = fn;
@@ -70,77 +70,77 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     if (cResult[6] === children) {
       if (cResult[7] === ref) {
         if (cResult[8] === tmp2.scroller) {
-          let tmp10;
-          let tmp14;
+          let tmp9;
+          let tmp13;
           if (cResult[9] === tmp8) {
-            tmp10 = cResult[10];
+            tmp9 = cResult[10];
           }
           if (cResult[11] !== insets.bottom) {
             const obj3 = { paddingBottom: insets.bottom };
             cResult[11] = insets.bottom;
             cResult[12] = obj3;
-            tmp14 = obj3;
+            tmp13 = obj3;
           } else {
-            tmp14 = cResult[12];
+            tmp13 = cResult[12];
           }
           if (cResult[13] === tmp2.buttonContainer) {
-            let tmp15;
-            if (cResult[14] === tmp14) {
-              tmp15 = cResult[15];
+            let tmp14;
+            if (cResult[14] === tmp13) {
+              tmp14 = cResult[15];
             }
             if (cResult[16] === action) {
-              let tmp16;
-              if (cResult[17] === tmp15) {
-                tmp16 = cResult[18];
+              let tmp15;
+              if (cResult[17] === tmp14) {
+                tmp15 = cResult[18];
               }
               if (cResult[19] === tmp2.container) {
-                if (cResult[20] === tmp10) {
-                  let tmp20;
-                  if (cResult[21] === tmp16) {
-                    tmp20 = cResult[22];
+                if (cResult[20] === tmp9) {
+                  let tmp19;
+                  if (cResult[21] === tmp15) {
+                    tmp19 = cResult[22];
                   }
-                  return tmp20;
+                  return tmp19;
                 }
               }
               const obj4 = { style: tmp2.container, children: items };
-              items = [tmp10, tmp16];
-              const tmp23 = metroImportAll(hasOwnProperty, obj4);
+              items = [tmp9, tmp15];
+              const tmp22 = metroImportAll(hasOwnProperty, obj4);
               cResult[19] = tmp2.container;
-              cResult[20] = tmp10;
-              cResult[21] = tmp16;
-              cResult[22] = tmp23;
-              tmp20 = tmp23;
+              cResult[20] = tmp9;
+              cResult[21] = tmp15;
+              cResult[22] = tmp22;
+              tmp19 = tmp22;
             }
-            const obj5 = { style: tmp15, onLayout: first1, children: action };
-            const tmp19 = metroImportDefault(hasOwnProperty, obj5);
+            const obj5 = { style: tmp14, onLayout: first1, children: action };
+            const tmp18 = metroImportDefault(hasOwnProperty, obj5);
             cResult[16] = action;
-            cResult[17] = tmp15;
-            cResult[18] = tmp19;
-            tmp16 = tmp19;
+            cResult[17] = tmp14;
+            cResult[18] = tmp18;
+            tmp15 = tmp18;
           }
-          const items1 = [tmp2.buttonContainer, tmp14];
+          const items1 = [tmp2.buttonContainer, tmp13];
           cResult[13] = tmp2.buttonContainer;
-          cResult[14] = tmp14;
+          cResult[14] = tmp13;
           cResult[15] = items1;
-          tmp15 = items1;
+          tmp14 = items1;
         }
       }
     }
     const obj6 = { ref, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", style: tmp8, contentContainerStyle: tmp2.scroller, children };
-    const tmp13 = metroImportDefault(metroRequire, obj6);
+    const tmp12 = metroImportDefault(metroRequire, obj6);
     cResult[6] = children;
     cResult[7] = ref;
     cResult[8] = tmp2.scroller;
     cResult[9] = tmp8;
-    cResult[10] = tmp13;
-    tmp10 = tmp13;
+    cResult[10] = tmp12;
+    tmp9 = tmp12;
   }
   const items2 = [tmp2.flex, tmp7];
   cResult[3] = tmp2.flex;
   cResult[4] = tmp7;
   cResult[5] = items2;
   tmp8 = items2;
-}) : ((arg0, ref) => {
+}) : (function EditGuildEventsStepContainer(arg0) {
   let action;
   let children;
   let closure_0;
@@ -148,23 +148,24 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let items;
   let items1;
   let items2;
+  let ref;
   closure_0 = undefined;
-  ({ children, action } = arg0);
-  let tmp = closure_9();
+  ({ children, action, ref } = arg0);
+  const tmp = closure_9();
   [first, closure_0] = react.useState(32);
   const insets = useSafeAreaInsetsKeyboardAwareDefault().insets;
-  let obj = { style: tmp.container, children: items1 };
-  let obj2 = { ref, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", style: items, contentContainerStyle: tmp.scroller, children };
+  const obj2 = { ref, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", style: items, contentContainerStyle: tmp.scroller, children };
   items = [tmp.flex, { marginBottom: first + insets.bottom }];
+  const obj = { style: tmp.container, children: items1 };
   const callback = react.useCallback((nativeEvent) => {
     closure_0(nativeEvent.nativeEvent.layout.height);
   }, []);
   items1 = [metroImportDefault(metroRequire, obj2), ];
-  let obj3 = { style: items2, onLayout: callback, children: action };
+  const obj3 = { style: items2, onLayout: callback, children: action };
   items2 = [tmp.buttonContainer, { paddingBottom: insets.bottom }];
   items1[1] = metroImportDefault(hasOwnProperty, obj3);
   return metroImportAll(hasOwnProperty, obj);
-}));
+});
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventStepContainer.tsx");
 
-export default forwardRefResult;
+export default tmp5;

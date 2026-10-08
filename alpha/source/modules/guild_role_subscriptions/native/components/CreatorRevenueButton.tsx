@@ -1,20 +1,20 @@
-// Module ID: 9915
-// Function ID: 9916
+// Module ID: 9397
+// Function ID: 9398
 // Name: CreatorRevenueButton
-// Dependencies: [19, 21, 4896, 558, 576, 9916, 2]
+// Dependencies: [19, 21, 5090, 558, 576, 9398, 2]
 
-// Module 9915 (CreatorRevenueButton)
+// Module 9397 (CreatorRevenueButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ShinyButtonDefault from "ShinyButton" /* 9916 */;
+import ShinyButtonDefault from "ShinyButton" /* 9398 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ container: { borderRadius: 3 } });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorRevenueButton(arg0) {
   let disabled;
   let loading;
   let onPress;
@@ -56,7 +56,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp3.container;
   cResult[2] = items;
   tmp4 = items;
-}) : ((arg0) => {
+}) : (function CreatorRevenueButton(arg0) {
   let disabled;
   let loading;
   let onPress;

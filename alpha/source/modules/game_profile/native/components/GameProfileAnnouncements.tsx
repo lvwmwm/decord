@@ -1,39 +1,39 @@
-// Module ID: 8437
-// Function ID: 8438
+// Module ID: 8923
+// Function ID: 8924
 // Name: GameProfileAnnouncements
-// Dependencies: [19, 17, 8391, 21, 1369, 5791, 1126, 4896, 587, 558, 576, 8419, 6440, 8421, 8438, 8439, 4892, 8442, 4558, 8444, 6664, 8446, 8352, 8358, 8449, 8405, 2]
+// Dependencies: [19, 17, 8889, 21, 1381, 5395, 1126, 5090, 587, 558, 576, 8916, 6618, 8918, 8924, 8925, 5086, 6164, 8928, 4750, 8930, 6841, 8932, 8850, 8856, 8935, 8902, 2]
 
-// Module 8437 (GameProfileAnnouncements)
+// Module 8923 (GameProfileAnnouncements)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import DateUtils from "DateUtils" /* 4558 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import CustomMarkupAll from "CustomMarkup" /* 5791 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6440 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8352 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8358 */;
-import GameProfileConstants from "GameProfileConstants" /* 8391 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 8419 */;
-import AnnouncementMessageUtils from "AnnouncementMessageUtils" /* 8439 */;
-import ImageWithPlaceholder from "ImageWithPlaceholder" /* 8442 */;
-import navigateToGameAnnouncementDefault from "navigateToGameAnnouncement" /* 8449 */;
+import DateUtils from "DateUtils" /* 4750 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import CustomMarkupAll from "CustomMarkup" /* 5395 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6618 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8850 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8856 */;
+import GameProfileConstants from "GameProfileConstants" /* 8889 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 8916 */;
+import AnnouncementMessageUtils from "AnnouncementMessageUtils" /* 8925 */;
+import ImageWithPlaceholder from "ImageWithPlaceholder" /* 8928 */;
+import navigateToGameAnnouncementDefault from "navigateToGameAnnouncement" /* 8935 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const GameProfileSkeletonDefault = GameProfileSkeleton;
-let _require, gameId, importAll, onPress;
+let _require, importAll, onPress;
 
-let c10;
 let c9;
 let hasOwnProperty;
-let metroImportDefault;
+let metroImportAll;
 let metroRequire;
 let obj10;
 let obj11;
@@ -53,17 +53,17 @@ let size;
 let size1;
 let size2;
 let tmp5;
-const GameProfileSkeletonCardRowDefault = tmp5(8438);
-({ Image: hasOwnProperty, View: metroRequire, Pressable: metroImportDefault } = react_native);
+const GameProfileSkeletonCardRowDefault = tmp5(8924);
+({ View: hasOwnProperty, Pressable: metroRequire } = react_native);
 const MAX_VISIBLE_ANNOUNCEMENTS = GameProfileConstants.MAX_VISIBLE_ANNOUNCEMENTS;
-({ jsx: c9, jsxs: c10 } = Fragment);
-let c11 = 120;
-let c12 = 160;
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let c10 = 120;
+let c11 = 160;
 let num;
 if (PlatformUtils.isAndroid()) {
   num = 5;
 }
-let closure_14 = null;
+let closure_13 = null;
 let obj14 = null;
 let createStyles = createStyles_mod;
 let obj = { smallCardsScroller: obj2, skeletonCardsScroller: obj3, smallCardsContainer: obj4, skeletonCardsContainer: obj5, card: obj6, cardBody: obj7, smallCardMedia: { height: 120, overflow: "hidden", flexShrink: 0 }, mediaImage: { width: "100%", height: "100%", resizeMode: "cover" }, metadataRow: obj8, reactionInfo: obj9, embedContentArea: obj10, embedAuthorRow: obj11, embedAuthorIcon: size, embedProviderIcon: { width: 16, height: 16 }, embedMedia: obj12, pollAnswers: obj13, pollAnswerOption: obj14, pollMoreOptions: obj15, skeletonCard: { height: 282 }, skeletonCardLarge: { height: 264 }, skeletonAnimationRoot: { flex: 1 }, skeletonCardImage: { width: "100%" }, skeletonCardBody: obj16, skeletonCardContent: size1, skeletonCardMetadata: size2 };
@@ -86,10 +86,10 @@ obj15 = { paddingHorizontal: nativeDefault.space.PX_12 };
 obj16 = { gap: nativeDefault.space.PX_8 };
 size1 = { height: nativeDefault.space.PX_48, borderRadius: nativeDefault.radii.xs, width: "88%" };
 size2 = { width: "60%", height: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.xs, marginTop: "auto" };
-let closure_16 = createStyles(obj);
+let closure_15 = createStyles(obj);
 const memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_16 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileAnnouncementCardSkeleton(arg0) {
   let index;
   let isWindowLarge;
   let items;
@@ -98,14 +98,14 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
   const obj = react2;
   const cResult = obj.c(25);
   ({ index, isWindowLarge } = arg0);
-  const tmp4 = closure_16();
+  const tmp4 = closure_15();
   const tmp5 = isWindowLarge ? tmp4.skeletonCardLarge : tmp4.skeletonCard;
   if (cResult[0] === tmp4.card) {
     let tmp6;
     if (cResult[1] === tmp5) {
       tmp6 = cResult[2];
     }
-    const result = index * tmp(8419).SKELETON_CARD_ANIMATION_DELAY_MS;
+    const result = index * tmp(8916).SKELETON_CARD_ANIMATION_DELAY_MS;
     if (cResult[3] === tmp4.skeletonCardImage) {
       let tmp8;
       if (cResult[4] === tmp4.smallCardMedia) {
@@ -120,7 +120,7 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
         }
         if (cResult[9] !== tmp4.skeletonCardContent) {
           const obj2 = { style: tmp4.skeletonCardContent };
-          const tmp16 = React4(GameProfileSkeletonDefault, obj2);
+          const tmp16 = metroImportAll(GameProfileSkeletonDefault, obj2);
           cResult[9] = tmp4.skeletonCardContent;
           cResult[10] = tmp16;
           tmp13 = tmp16;
@@ -129,7 +129,7 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
         }
         if (cResult[11] !== tmp4.skeletonCardMetadata) {
           const obj3 = { style: tmp4.skeletonCardMetadata };
-          const tmp20 = React4(GameProfileSkeletonDefault, obj3);
+          const tmp20 = metroImportAll(GameProfileSkeletonDefault, obj3);
           cResult[11] = tmp4.skeletonCardMetadata;
           cResult[12] = tmp20;
           tmp17 = tmp20;
@@ -157,7 +157,7 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
                     return tmp28;
                   }
                   const obj4 = { style: tmp6, children: tmp25 };
-                  const tmp31 = React4(metroRequire, obj4);
+                  const tmp31 = metroImportAll(hasOwnProperty, obj4);
                   cResult[22] = tmp6;
                   cResult[23] = tmp25;
                   cResult[24] = tmp31;
@@ -167,7 +167,7 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
             }
             const obj5 = { animationDelayMs: result, style: tmp4.skeletonAnimationRoot, children: items };
             items = [tmp8, tmp21];
-            const tmp27 = authStore(GameProfileSkeleton.GameProfileSkeletonContainer, obj5);
+            const tmp27 = React4(GameProfileSkeleton.GameProfileSkeletonContainer, obj5);
             cResult[17] = tmp4.skeletonAnimationRoot;
             cResult[18] = result;
             cResult[19] = tmp8;
@@ -178,7 +178,7 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
         }
         const obj6 = { style: tmp12, children: items1 };
         items1 = [tmp13, tmp17];
-        const tmp24 = authStore(metroRequire, obj6);
+        const tmp24 = React4(hasOwnProperty, obj6);
         cResult[13] = tmp12;
         cResult[14] = tmp13;
         cResult[15] = tmp17;
@@ -195,7 +195,7 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
     const obj7 = { style: items3 };
     items3 = [, ];
     ({ smallCardMedia: arr2[0], skeletonCardImage: arr2[1] } = tmp4);
-    const tmp11 = React4(GameProfileSkeletonDefault, obj7);
+    const tmp11 = metroImportAll(GameProfileSkeletonDefault, obj7);
     cResult[3] = tmp4.skeletonCardImage;
     cResult[4] = tmp4.smallCardMedia;
     cResult[5] = tmp11;
@@ -206,7 +206,7 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
   cResult[1] = tmp5;
   cResult[2] = items4;
   tmp6 = items4;
-}) : ((arg0) => {
+}) : (function GameProfileAnnouncementCardSkeleton(arg0) {
   let GameProfileSkeletonContainer;
   let index;
   let isWindowLarge;
@@ -216,37 +216,37 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
   let items4;
   let obj2;
   ({ index, isWindowLarge } = arg0);
-  const tmp = closure_16();
+  const tmp = closure_15();
   const items = [tmp.card, ];
   items[1] = isWindowLarge ? tmp.skeletonCardLarge : tmp.skeletonCard;
-  const obj = { style: items, children: authStore(GameProfileSkeletonContainer, obj2) };
+  const obj = { style: items, children: React4(GameProfileSkeletonContainer, obj2) };
   obj2 = { animationDelayMs: index * GameProfileSkeleton.SKELETON_CARD_ANIMATION_DELAY_MS, style: tmp.skeletonAnimationRoot, children: items2 };
   GameProfileSkeletonContainer = GameProfileSkeleton.GameProfileSkeletonContainer;
   const obj3 = { style: items1 };
   items1 = [, ];
   ({ smallCardMedia: arr2[0], skeletonCardImage: arr2[1] } = tmp);
-  items2 = [React4(GameProfileSkeletonDefault, obj3), ];
+  items2 = [metroImportAll(GameProfileSkeletonDefault, obj3), ];
   const obj4 = { style: items3, children: items4 };
   items3 = [, ];
   ({ cardBody: arr4[0], skeletonCardBody: arr4[1] } = tmp);
   items4 = [, ];
   const obj5 = { style: tmp.skeletonCardContent };
-  items4[0] = React4(GameProfileSkeletonDefault, obj5);
+  items4[0] = metroImportAll(GameProfileSkeletonDefault, obj5);
   const obj6 = { style: tmp.skeletonCardMetadata };
-  items4[1] = React4(GameProfileSkeletonDefault, obj6);
-  items2[1] = authStore(metroRequire, obj4);
-  return React4(metroRequire, obj);
+  items4[1] = metroImportAll(GameProfileSkeletonDefault, obj6);
+  items2[1] = React4(hasOwnProperty, obj4);
+  return metroImportAll(hasOwnProperty, obj);
 }));
 const memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_17 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileAnnouncementsSkeleton() {
   let isWindowLarge;
   let skeletonCardsContainer;
   let skeletonCardsScroller;
   let tmp7;
   let obj = require("react");
   const cResult = obj.c(6);
-  const tmp4 = closure_16();
+  const tmp4 = closure_15();
   const tmp6 = useIsWindowLargeDefault();
   const tmp = _require;
   _require = tmp6;
@@ -255,7 +255,7 @@ let closure_18 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const _Array = Array;
     const arr = Array.from({ length: 3 }, (arg0, index) => {
       const obj = { index, isWindowLarge };
-      return React4(closure_17, obj, index);
+      return metroImportAll(closure_16, obj, index);
     });
     cResult[0] = tmp6;
     cResult[1] = arr;
@@ -272,35 +272,35 @@ let closure_18 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       return tmp10;
     }
   }
-  const obj2 = { showViewAllSkeleton: true, skeletonTitleWidth: 200, children: closure_9(GameProfileSkeletonCardRowDefault, { style: skeletonCardsScroller, contentContainerStyle: skeletonCardsContainer, children: tmp7 }) };
-  const GameProfileSectionSkeleton = tmp(8421).GameProfileSectionSkeleton;
-  const tmp11 = closure_9(GameProfileSectionSkeleton, obj2);
+  const obj2 = { showViewAllSkeleton: true, skeletonTitleWidth: 200, children: onPress(GameProfileSkeletonCardRowDefault, { style: skeletonCardsScroller, contentContainerStyle: skeletonCardsContainer, children: tmp7 }) };
+  const GameProfileSectionSkeleton = tmp(8918).GameProfileSectionSkeleton;
+  const tmp11 = onPress(GameProfileSectionSkeleton, obj2);
   cResult[2] = tmp4.skeletonCardsContainer;
   cResult[3] = tmp4.skeletonCardsScroller;
   cResult[4] = tmp7;
   cResult[5] = tmp11;
   tmp10 = tmp11;
-}) : (() => {
+}) : (function GameProfileAnnouncementsSkeleton() {
   let isWindowLarge;
   let obj2;
   let tmp2;
-  const tmp = closure_16();
+  const tmp = closure_15();
   _require = useIsWindowLargeDefault();
-  let obj = { showViewAllSkeleton: true, skeletonTitleWidth: 200, children: closure_9(tmp2, obj2) };
+  let obj = { showViewAllSkeleton: true, skeletonTitleWidth: 200, children: onPress(tmp2, obj2) };
   const GameProfileSectionSkeleton = require("GameProfileSection").GameProfileSectionSkeleton;
   obj2 = {
     style: tmp.skeletonCardsScroller,
     contentContainerStyle: tmp.skeletonCardsContainer,
     children: Array.from({ length: 3 }, (arg0, index) => {
       const obj = { index, isWindowLarge };
-      return React4(closure_17, obj, index);
+      return metroImportAll(closure_16, obj, index);
     })
   };
   tmp2 = GameProfileSkeletonCardRowDefault;
-  return closure_9(GameProfileSectionSkeleton, obj);
+  return onPress(GameProfileSectionSkeleton, obj);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function(message) {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmbedAnnouncementCard(message) {
   let channelId;
   let format;
   let guildId;
@@ -312,22 +312,20 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
   let items5;
   let numberFormat;
   let obj13;
-  let obj19;
+  let obj20;
+  let obj23;
   let parser;
   let tmp26;
-  let tmp57Result;
-  let tmp58;
-  let tmp64;
   const obj = react2;
   const cResult = obj.c(79);
   message = message.message;
-  onPress = message.onPress;
+  metroImportAll = message.onPress;
   ({ guildId, channelId } = message);
-  const tmp4 = closure_16();
+  const tmp4 = closure_15();
   if (cResult[0] === channelId) {
     if (cResult[1] === guildId) {
       if (cResult[2] === message) {
-        if (cResult[3] === onPress) {
+        if (cResult[3] === metroImportAll) {
           let tmp5;
           let tmp6;
           let tmp7;
@@ -367,10 +365,10 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
             return tmp12;
           } else {
             if (cResult[43] === tmp8.providerIconUrl) {
-              let tmp70;
-              let tmp76;
+              let tmp69;
+              let tmp75;
               if (cResult[44] === tmp4.embedProviderIcon) {
-                tmp70 = cResult[45];
+                tmp69 = cResult[45];
               }
               let str4 = "";
               if (null != tmp8.providerName) {
@@ -387,81 +385,81 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
                 const dateFormatResult = dateFormat(date, "LL");
                 cResult[46] = message.timestamp;
                 cResult[47] = dateFormatResult;
-                tmp76 = dateFormatResult;
+                tmp75 = dateFormatResult;
               } else {
-                tmp76 = cResult[47];
+                tmp75 = cResult[47];
               }
               if (cResult[48] === str4) {
-                let tmp81;
-                if (cResult[49] === tmp76) {
-                  tmp81 = cResult[50];
+                let tmp80;
+                if (cResult[49] === tmp75) {
+                  tmp80 = cResult[50];
                 }
                 if (cResult[51] === message.reactionCount) {
-                  let tmp84;
+                  let tmp83;
                   if (cResult[52] === tmp4.reactionInfo) {
-                    tmp84 = cResult[53];
+                    tmp83 = cResult[53];
                   }
                   if (cResult[54] === tmp4.metadataRow) {
-                    if (cResult[55] === tmp70) {
-                      if (cResult[56] === tmp81) {
-                        let tmp96;
-                        if (cResult[57] === tmp84) {
-                          tmp96 = cResult[58];
+                    if (cResult[55] === tmp69) {
+                      if (cResult[56] === tmp80) {
+                        let tmp95;
+                        if (cResult[57] === tmp83) {
+                          tmp95 = cResult[58];
                         }
                         if (cResult[59] === tmp5) {
                           if (cResult[60] === tmp9) {
-                            if (cResult[61] === tmp96) {
+                            if (cResult[61] === tmp95) {
                               if (cResult[62] === tmp13) {
                                 if (cResult[63] === tmp14) {
                                   if (cResult[64] === tmp15) {
-                                    let tmp100;
+                                    let tmp99;
                                     if (cResult[65] === tmp16) {
-                                      tmp100 = cResult[66];
+                                      tmp99 = cResult[66];
                                     }
                                     if (cResult[67] === tmp6) {
-                                      if (cResult[68] === tmp100) {
+                                      if (cResult[68] === tmp99) {
                                         if (cResult[69] === tmp17) {
-                                          let tmp103;
+                                          let tmp102;
                                           if (cResult[70] === tmp18) {
-                                            tmp103 = cResult[71];
+                                            tmp102 = cResult[71];
                                           }
                                           if (cResult[72] === tmp7) {
                                             if (cResult[73] === tmp10) {
                                               if (cResult[74] === tmp11) {
-                                                if (cResult[75] === tmp103) {
+                                                if (cResult[75] === tmp102) {
                                                   if (cResult[76] === tmp19) {
-                                                    let tmp106;
+                                                    let tmp105;
                                                     if (cResult[77] === tmp20) {
-                                                      tmp106 = cResult[78];
+                                                      tmp105 = cResult[78];
                                                     }
-                                                    return tmp106;
+                                                    return tmp105;
                                                   }
                                                 }
                                               }
                                             }
                                           }
-                                          const obj3 = { style: tmp19, onPress: tmp20, accessibilityRole: tmp10, accessibilityLabel: tmp11, children: tmp103 };
-                                          const tmp108 = React4(tmp7, obj3);
+                                          const obj3 = { style: tmp19, onPress: tmp20, accessibilityRole: tmp10, accessibilityLabel: tmp11, children: tmp102 };
+                                          const tmp107 = metroImportAll(tmp7, obj3);
                                           cResult[72] = tmp7;
                                           cResult[73] = tmp10;
                                           cResult[74] = tmp11;
-                                          cResult[75] = tmp103;
+                                          cResult[75] = tmp102;
                                           cResult[76] = tmp19;
                                           cResult[77] = tmp20;
-                                          cResult[78] = tmp108;
-                                          tmp106 = tmp108;
+                                          cResult[78] = tmp107;
+                                          tmp105 = tmp107;
                                         }
                                       }
                                     }
                                     const obj4 = { style: tmp17, children: items };
-                                    items = [tmp18, tmp100];
-                                    const tmp105 = authStore(tmp6, obj4);
+                                    items = [tmp18, tmp99];
+                                    const tmp104 = React4(tmp6, obj4);
                                     cResult[67] = tmp6;
-                                    cResult[68] = tmp100;
+                                    cResult[68] = tmp99;
                                     cResult[69] = tmp17;
                                     cResult[70] = tmp18;
-                                    cResult[71] = tmp105;
-                                    tmp103 = tmp105;
+                                    cResult[71] = tmp104;
+                                    tmp102 = tmp104;
                                   }
                                 }
                               }
@@ -469,46 +467,46 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
                           }
                         }
                         const obj5 = { style: tmp9, children: items1 };
-                        items1 = [tmp13, tmp14, tmp15, tmp16, tmp96];
-                        const tmp102 = authStore(tmp5, obj5);
+                        items1 = [tmp13, tmp14, tmp15, tmp16, tmp95];
+                        const tmp101 = React4(tmp5, obj5);
                         cResult[59] = tmp5;
                         cResult[60] = tmp9;
-                        cResult[61] = tmp96;
+                        cResult[61] = tmp95;
                         cResult[62] = tmp13;
                         cResult[63] = tmp14;
                         cResult[64] = tmp15;
                         cResult[65] = tmp16;
-                        cResult[66] = tmp102;
-                        tmp100 = tmp102;
+                        cResult[66] = tmp101;
+                        tmp99 = tmp101;
                       }
                     }
                   }
-                  const obj6 = { style: tmp109, children: items2 };
-                  items2 = [tmp70, tmp81, tmp84];
-                  const tmp99 = authStore(metroRequire, obj6);
+                  const obj6 = { style: tmp108, children: items2 };
+                  items2 = [tmp69, tmp80, tmp83];
+                  const tmp98 = React4(hasOwnProperty, obj6);
                   cResult[54] = tmp4.metadataRow;
-                  cResult[55] = tmp70;
-                  cResult[56] = tmp81;
-                  cResult[57] = tmp84;
-                  cResult[58] = tmp99;
-                  tmp96 = tmp99;
+                  cResult[55] = tmp69;
+                  cResult[56] = tmp80;
+                  cResult[57] = tmp83;
+                  cResult[58] = tmp98;
+                  tmp95 = tmp98;
                 }
-                let tmp86Result = message.reactionCount > 0;
-                if (tmp86Result) {
+                let tmp85Result = message.reactionCount > 0;
+                if (tmp85Result) {
                   const obj7 = { style: tmp4.reactionInfo, children: items3 };
                   const obj8 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-                  const ReactionIcon = tmp(8444).ReactionIcon;
-                  items3 = [React4(ReactionIcon, obj8), ];
-                  let tmp91 = null != obj14;
-                  const Text2 = tmp(4892).Text;
+                  const ReactionIcon = tmp(8930).ReactionIcon;
+                  items3 = [metroImportAll(ReactionIcon, obj8), ];
+                  let tmp90 = null != obj14;
+                  const Text3 = tmp(5086).Text;
                   const reactionCount = message.reactionCount;
-                  const tmp86 = authStore;
-                  const tmp87 = metroRequire;
-                  const tmp88 = React4;
-                  if (tmp91) {
-                    tmp91 = obj14.locale === tmp(1126).intl.currentLocale;
+                  const tmp85 = React4;
+                  const tmp86 = hasOwnProperty;
+                  const tmp87 = metroImportAll;
+                  if (tmp90) {
+                    tmp90 = obj14.locale === tmp(1126).intl.currentLocale;
                   }
-                  if (!tmp91) {
+                  if (!tmp90) {
                     const _Intl = Intl;
                     const self3 = this;
                     const self4 = this;
@@ -518,32 +516,32 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
                   }
                   const obj10 = { variant: "text-xs/medium", color: "text-muted", children: format.format(reactionCount) };
                   format = obj14.format;
-                  items3[1] = tmp88(Text2, obj10);
-                  tmp86Result = tmp86(tmp87, obj7);
+                  items3[1] = tmp87(Text3, obj10);
+                  tmp85Result = tmp85(tmp86, obj7);
                 }
                 cResult[51] = message.reactionCount;
                 cResult[52] = tmp4.reactionInfo;
-                cResult[53] = tmp86Result;
-                tmp84 = tmp86Result;
+                cResult[53] = tmp85Result;
+                tmp83 = tmp85Result;
               }
               const obj11 = { variant: "text-xs/medium", color: "text-muted", children: items4 };
-              items4 = [str4, tmp76];
-              const tmp83 = authStore(Text_Text.Text, obj11);
+              items4 = [str4, tmp75];
+              const tmp82 = React4(Text_Text.Text, obj11);
               cResult[48] = str4;
-              cResult[49] = tmp76;
-              cResult[50] = tmp83;
-              tmp81 = tmp83;
+              cResult[49] = tmp75;
+              cResult[50] = tmp82;
+              tmp80 = tmp82;
             }
-            let tmp72 = null != tmp8.providerIconUrl;
-            if (tmp72) {
+            let tmp71 = null != tmp8.providerIconUrl;
+            if (tmp71) {
               const obj12 = { source: obj13, style: tmp4.embedProviderIcon };
               obj13 = { uri: tmp8.providerIconUrl };
-              tmp72 = React4(hasOwnProperty, obj12);
+              tmp71 = metroImportAll(FastImageDefault, obj12);
             }
             cResult[43] = tmp8.providerIconUrl;
             cResult[44] = tmp4.embedProviderIcon;
-            cResult[45] = tmp72;
-            tmp70 = tmp72;
+            cResult[45] = tmp71;
+            tmp69 = tmp71;
           }
         }
       }
@@ -557,7 +555,6 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
   obj14 = { guildId, channelId, mentionPillOffsetY: num };
   const media = message.media;
   let proxyUrl;
-  const tmp23 = parser;
   if (media != null) {
     proxyUrl = media.proxyUrl;
   }
@@ -573,7 +570,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
     let posterUrl = null;
     if (null != proxyUrl) {
       const tmpResult2 = AnnouncementMessageUtils;
-      posterUrl = tmpResult2.getPosterUrl(proxyUrl, c12, c11);
+      posterUrl = tmpResult2.getPosterUrl(proxyUrl, c11, c10);
     }
     cResult[21] = proxyUrl;
     cResult[22] = posterUrl;
@@ -603,192 +600,141 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
   if (null != embedSource) {
     let tmp44;
     if (cResult[23] !== embedSource.color) {
+      let tmp45;
       if (null != embedSource.color) {
-        class M {
-          constructor() {
-            return onPress(message.id);
-          }
-        }
-      }
-      class M {
-        constructor() {
-          return onPress(message.id);
-        }
+        tmp45 = { borderLeftColor: embedSource.color };
+        const obj15 = { borderLeftColor: embedSource.color };
       }
       cResult[23] = embedSource.color;
-      cResult[24] = undefined;
+      cResult[24] = tmp45;
       tmp44 = tmp45;
     } else {
       tmp44 = cResult[24];
     }
     if (cResult[25] === message.id) {
       let tmp48;
-      let tmp51;
-      if (cResult[26] === onPress) {
+      let tmp50;
+      if (cResult[26] === metroImportAll) {
         tmp48 = cResult[27];
       }
-      class M {
-        constructor() {
-          return onPress(message.id);
-        }
-      }
+      const title = message.title;
       const cardBody = tmp4.cardBody;
       if (cResult[28] !== embedSource.url) {
-        let tmp52 = null != embedSource.url;
-        if (tmp52) {
-          const obj16 = { variant: "text-xs/medium", color: "text-link", lineClamp: 1, children: null };
-          class M {
-            constructor() {
-              return onPress(message.id);
-            }
-          }
-          tmp52 = React4(tmp(4892).Text, obj16);
-        }
-        class M {
-          constructor() {
-            return onPress(message.id);
-          }
+        let tmp51 = null != embedSource.url;
+        if (tmp51) {
+          const obj16 = { variant: "text-xs/medium", color: "text-link", lineClamp: 1, children: embedSource.url };
+          tmp51 = metroImportAll(tmp(5086).Text, obj16);
         }
         cResult[28] = embedSource.url;
-        cResult[29] = tmp52;
-        tmp51 = tmp52;
+        cResult[29] = tmp51;
+        tmp50 = tmp51;
       } else {
-        tmp51 = cResult[29];
+        tmp50 = cResult[29];
       }
       if (cResult[30] === tmp44) {
-        let tmp54;
+        let tmp53;
         if (cResult[31] === tmp4.embedContentArea) {
-          tmp54 = cResult[32];
+          tmp53 = cResult[32];
         }
         if (cResult[33] === embedSource.authorIconUrl) {
           if (cResult[34] === embedSource.authorName) {
             if (cResult[35] === tmp4.embedAuthorIcon) {
-              let tmp55;
+              let tmp54;
               if (cResult[36] === tmp4.embedAuthorRow) {
-                tmp55 = cResult[37];
+                tmp54 = cResult[37];
               }
               if (cResult[38] === message.media) {
                 if (cResult[39] === tmp26) {
                   if (cResult[40] === tmp4.embedMedia) {
-                    let tmp63;
+                    let tmp61;
                     if (cResult[41] === tmp4.mediaImage) {
-                      tmp63 = cResult[42];
+                      tmp61 = cResult[42];
                     }
-                    const tmp66 = null != message.title;
-                    class M {
-                      constructor() {
-                        return onPress(message.id);
-                      }
+                    let tmp64 = null != message.title;
+                    if (tmp64) {
+                      const obj17 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 2, children: parser(message.title, true, obj14) };
+                      const Text = tmp(5086).Text;
+                      tmp64 = metroImportAll(Text, obj17);
                     }
-                    let tmp67 = message.body.length > 0;
-                    if (tmp67) {
-                      const obj17 = { variant: "text-sm/medium", color: "text-default", lineClamp: 3, children: tmp23(message.body, true, obj14) };
-                      class M {
-                        constructor() {
-                          return onPress(message.id);
-                        }
-                      }
-                      const Text = tmp(4892).Text;
-                      tmp67 = React4(Text, obj17);
+                    let tmp66 = message.body.length > 0;
+                    if (tmp66) {
+                      const obj18 = { variant: "text-sm/medium", color: "text-default", lineClamp: 3, children: parser(message.body, true, obj14) };
+                      const Text2 = tmp(5086).Text;
+                      tmp66 = metroImportAll(Text2, obj18);
                     }
                     str = "button";
-                    tmp34 = tmp67;
+                    tmp34 = tmp66;
                     tmp30 = tmp48;
                     tmp31 = tmp47;
-                    tmp32 = tmp51;
+                    tmp32 = tmp50;
                     tmp33 = cardBody;
-                    tmp35 = tmp66;
-                    tmp36 = tmp63;
-                    tmp37 = tmp55;
+                    tmp35 = tmp64;
+                    tmp36 = tmp61;
+                    tmp37 = tmp54;
                     tmp38 = forResult;
-                    tmp39 = tmp49;
-                    tmp40 = tmp54;
+                    tmp39 = title;
+                    tmp40 = tmp53;
                     tmp41 = tmp46;
-                    tmp42 = tmp50;
-                    tmp43 = tmp50;
+                    tmp42 = tmp49;
+                    tmp43 = tmp49;
                   }
                 }
               }
-              class M {
-                constructor() {
-                  return onPress(message.id);
-                }
-              }
-              if (tmp64) {
-                const obj18 = { style: null, children: React4(ImageWithPlaceholder.ImageWithPlaceholder, obj19) };
-                class M {
-                  constructor() {
-                    return onPress(message.id);
-                  }
-                }
-                obj19 = { uri: tmp26, placeholder: message.media.placeholder, placeholderVersion: message.media.placeholderVersion, style: tmp4.mediaImage };
-                tmp64 = React4(metroRequire, obj18);
+              let tmp62 = null != message.media && null != tmp26;
+              if (tmp62) {
+                const obj19 = { style: tmp4.embedMedia, children: metroImportAll(ImageWithPlaceholder.ImageWithPlaceholder, obj20) };
+                obj20 = { uri: tmp26, placeholder: message.media.placeholder, placeholderVersion: message.media.placeholderVersion, style: tmp4.mediaImage };
+                tmp62 = metroImportAll(tmp49, obj19);
               }
               cResult[38] = message.media;
               cResult[39] = tmp26;
               cResult[40] = tmp4.embedMedia;
               cResult[41] = tmp4.mediaImage;
-              cResult[42] = tmp64;
-              tmp63 = tmp64;
+              cResult[42] = tmp62;
+              tmp61 = tmp62;
             }
           }
         }
-        class M {
-          constructor() {
-            return onPress(message.id);
+        let tmp56Result = null != embedSource.authorName;
+        if (tmp56Result) {
+          let tmp57 = null != embedSource.authorIconUrl;
+          const obj21 = { style: tmp4.embedAuthorRow, children: items5 };
+          const tmp56 = React4;
+          if (tmp57) {
+            const obj22 = { source: obj23, style: tmp4.embedAuthorIcon };
+            obj23 = { uri: embedSource.authorIconUrl };
+            tmp57 = metroImportAll(FastImageDefault, obj22);
           }
-        }
-        if (tmp57Result) {
-          const obj20 = { style: tmp4.embedAuthorRow, children: items5 };
-          class M {
-            constructor() {
-              return onPress(message.id);
-            }
-          }
-          const tmp57 = authStore;
-          if (tmp58) {
-            class M {
-              constructor() {
-                return onPress(message.id);
-              }
-            }
-            const obj21 = { uri: embedSource.authorIconUrl };
-            tmp61[0] = obj21;
-            tmp61[1] = tmp4.embedAuthorIcon;
-            tmp58 = React4(hasOwnProperty, tmp61);
-          }
-          items5 = [tmp58, ];
-          const obj22 = { variant: "text-xs/semibold", color: "text-strong", lineClamp: 1, children: embedSource.authorName };
-          items5[1] = React4(Text_Text.Text, obj22);
-          tmp57Result = tmp57(metroRequire, obj20);
+          items5 = [tmp57, ];
+          const obj24 = { variant: "text-xs/semibold", color: "text-strong", lineClamp: 1, children: embedSource.authorName };
+          items5[1] = metroImportAll(Text_Text.Text, obj24);
+          tmp56Result = tmp56(tmp49, obj21);
         }
         cResult[33] = embedSource.authorIconUrl;
         cResult[34] = embedSource.authorName;
         cResult[35] = tmp4.embedAuthorIcon;
         cResult[36] = tmp4.embedAuthorRow;
-        cResult[37] = tmp57Result;
-        tmp55 = tmp57Result;
+        cResult[37] = tmp56Result;
+        tmp54 = tmp56Result;
       }
       const items6 = [tmp4.embedContentArea, tmp44];
       cResult[30] = tmp44;
       cResult[31] = tmp4.embedContentArea;
       cResult[32] = items6;
-      tmp54 = items6;
+      tmp53 = items6;
     }
-    class M {
-      constructor() {
-        return onPress(message.id);
-      }
-    }
+    const fn = function _() {
+      return onPress(message.id);
+    };
     cResult[25] = message.id;
-    cResult[26] = onPress;
-    cResult[27] = M;
-    tmp48 = M;
+    cResult[26] = metroImportAll;
+    cResult[27] = fn;
+    tmp48 = fn;
   }
   cResult[0] = channelId;
   cResult[1] = guildId;
   cResult[2] = message;
-  cResult[3] = onPress;
+  cResult[3] = metroImportAll;
   cResult[4] = tmp4;
   cResult[5] = tmp43;
   cResult[6] = tmp42;
@@ -822,7 +768,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
   tmp6 = tmp42;
   tmp5 = tmp43;
   tmp8 = embedSource;
-}) : (function(message) {
+}) : (function EmbedAnnouncementCard(message) {
   let channelId;
   let format;
   let guildId;
@@ -839,9 +785,9 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
   let obj6;
   let parser;
   message = message.message;
-  onPress = message.onPress;
+  metroImportAll = message.onPress;
   ({ guildId, channelId } = message);
-  const tmp = closure_16();
+  const tmp = closure_15();
   if (null == parser) {
     const obj = CustomMarkupAll;
     parser = obj.getParser();
@@ -863,7 +809,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
   let posterUrl = null;
   if (null != proxyUrl) {
     const obj3 = AnnouncementMessageUtils;
-    posterUrl = obj3.getPosterUrl(proxyUrl, c12, c11);
+    posterUrl = obj3.getPosterUrl(proxyUrl, c11, c10);
   }
   if (posterUrl == null) {
     posterUrl = proxyUrl;
@@ -884,11 +830,11 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
         },
       accessibilityRole: "button",
       accessibilityLabel: message.title,
-      children: authStore(metroRequire, obj6)
+      children: React4(hasOwnProperty, obj6)
     };
     let tmp13Result = null != embedSource.url;
     obj6 = { style: tmp.cardBody, children: items };
-    const tmp14 = metroImportDefault;
+    const tmp14 = metroRequire;
     if (tmp13Result) {
       const obj7 = { variant: "text-xs/medium", color: "text-link", lineClamp: 1, children: embedSource.url };
       tmp13Result = tmp13(Text_Text.Text, obj7);
@@ -903,17 +849,17 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
       if (tmp13Result6) {
         const obj10 = { source: obj11, style: tmp.embedAuthorIcon };
         obj11 = { uri: embedSource.authorIconUrl };
-        tmp13Result6 = tmp13(hasOwnProperty, obj10);
+        tmp13Result6 = tmp13(FastImageDefault, obj10);
       }
       items2 = [tmp13Result6, ];
       const obj12 = { variant: "text-xs/semibold", color: "text-strong", lineClamp: 1, children: embedSource.authorName };
-      items2[1] = React4(Text_Text.Text, obj12);
+      items2[1] = metroImportAll(Text_Text.Text, obj12);
       tmp15Result = tmp15(tmp16, obj9);
     }
     items3 = [tmp15Result, , , , ];
     let tmp13Result7 = null != message.media && null != posterUrl;
     if (tmp13Result7) {
-      const obj13 = { style: tmp.embedMedia, children: React4(ImageWithPlaceholder.ImageWithPlaceholder, obj14) };
+      const obj13 = { style: tmp.embedMedia, children: metroImportAll(ImageWithPlaceholder.ImageWithPlaceholder, obj14) };
       obj14 = { uri: posterUrl, placeholder: message.media.placeholder, placeholderVersion: message.media.placeholderVersion, style: tmp.mediaImage };
       tmp13Result7 = tmp13(tmp16, obj13);
     }
@@ -937,7 +883,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
     if (tmp13Result10) {
       const obj18 = { source: obj19, style: tmp.embedProviderIcon };
       obj19 = { uri: embedSource.providerIconUrl };
-      tmp13Result10 = tmp13(hasOwnProperty, obj18);
+      tmp13Result10 = tmp13(FastImageDefault, obj18);
     }
     items4 = [tmp13Result10, , ];
     let str2 = "";
@@ -955,40 +901,40 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
     DateUtils;
     const date = new Date(message.timestamp);
     items5[1] = dateFormat(date, "LL");
-    items4[1] = authStore(Text3, obj20);
+    items4[1] = React4(Text3, obj20);
     let tmp15Result2 = message.reactionCount > 0;
     if (tmp15Result2) {
       const obj21 = { style: tmp.reactionInfo, children: items6 };
       const obj22 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-      const ReactionIcon = tmp36(8444).ReactionIcon;
-      items6 = [React4(ReactionIcon, obj22), ];
-      let tmp46 = null != obj14;
-      const Text4 = tmp36(4892).Text;
+      const ReactionIcon = tmp38(8930).ReactionIcon;
+      items6 = [metroImportAll(ReactionIcon, obj22), ];
+      let tmp48 = null != obj14;
+      const Text4 = tmp38(5086).Text;
       const reactionCount = message.reactionCount;
-      if (tmp46) {
-        tmp46 = obj14.locale === tmp36(1126).intl.currentLocale;
+      if (tmp48) {
+        tmp48 = obj14.locale === tmp38(1126).intl.currentLocale;
       }
-      if (!tmp46) {
+      if (!tmp48) {
         const _Intl = Intl;
         const self3 = this;
         const self4 = this;
         const obj23 = { locale: intl3.intl.currentLocale, format: numberFormat };
-        numberFormat = new Intl.NumberFormat(tmp36(1126).intl.currentLocale);
+        numberFormat = new Intl.NumberFormat(tmp38(1126).intl.currentLocale);
         obj14 = obj23;
       }
       const obj24 = { variant: "text-xs/medium", color: "text-muted", children: format.format(reactionCount) };
       format = obj14.format;
-      items6[1] = React4(Text4, obj24);
+      items6[1] = metroImportAll(Text4, obj24);
       tmp15Result2 = tmp15(tmp16, obj21);
     }
     items4[2] = tmp15Result2;
-    items3[4] = authStore(metroRequire, obj17);
-    items[1] = authStore(metroRequire, obj8);
-    return React4(tmp14, obj5);
+    items3[4] = React4(hasOwnProperty, obj17);
+    items[1] = React4(hasOwnProperty, obj8);
+    return metroImportAll(tmp14, obj5);
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function(message) {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageAnnouncementCard(message) {
   let channelId;
   let format;
   let guildId;
@@ -1013,16 +959,16 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
   const obj = react2;
   const cResult = obj.c(56);
   message = message.message;
-  onPress = message.onPress;
+  metroImportAll = message.onPress;
   ({ guildId, channelId } = message);
-  const tmp4 = closure_16();
+  const tmp4 = closure_15();
   if (cResult[0] === channelId) {
     if (cResult[1] === guildId) {
       if (cResult[2] === message.body) {
         if (cResult[3] === message.id) {
           if (cResult[4] === message.media) {
             if (cResult[5] === message.title) {
-              if (cResult[6] === onPress) {
+              if (cResult[6] === metroImportAll) {
                 if (cResult[7] === tmp4.card) {
                   if (cResult[8] === tmp4.cardBody) {
                     if (cResult[9] === tmp4.mediaImage) {
@@ -1045,7 +991,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
                         const _Date = Date;
                         const self = this;
                         const self2 = this;
-                        const dateFormat = DateUtils.dateFormat;
+                        const dateFormat = tmp(4750).dateFormat;
                         DateUtils;
                         const date = new Date(message.timestamp);
                         const dateFormatResult = dateFormat(date, "LL");
@@ -1057,7 +1003,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
                       }
                       if (cResult[33] !== tmp33) {
                         const obj3 = { variant: "text-xs/medium", color: "text-muted", children: tmp33 };
-                        const tmp41 = React4(Text_Text.Text, obj3);
+                        const tmp41 = metroImportAll(Text_Text.Text, obj3);
                         cResult[33] = tmp33;
                         cResult[34] = tmp41;
                         tmp39 = tmp41;
@@ -1102,7 +1048,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
                                     }
                                     const obj4 = { style: tmp10, onPress: tmp11, accessibilityRole: str, accessibilityLabel: tmp12, children: items };
                                     items = [tmp13, tmp60];
-                                    const tmp65 = authStore(tmp6, obj4);
+                                    const tmp65 = React4(tmp6, obj4);
                                     cResult[48] = tmp6;
                                     cResult[49] = tmp60;
                                     cResult[50] = tmp10;
@@ -1118,7 +1064,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
                             }
                             const obj5 = { style: tmp7, children: items1 };
                             items1 = [tmp8, tmp9, tmp56];
-                            const tmp62 = authStore(tmp5, obj5);
+                            const tmp62 = React4(tmp5, obj5);
                             cResult[42] = tmp5;
                             cResult[43] = tmp7;
                             cResult[44] = tmp56;
@@ -1130,7 +1076,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
                         }
                         const obj6 = { style: metadataRow, children: items2 };
                         items2 = [tmp39, tmp42];
-                        const tmp59 = authStore(metroRequire, obj6);
+                        const tmp59 = React4(hasOwnProperty, obj6);
                         cResult[38] = tmp4.metadataRow;
                         cResult[39] = tmp39;
                         cResult[40] = tmp42;
@@ -1141,14 +1087,14 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
                       if (tmp44Result) {
                         const obj7 = { style: tmp4.reactionInfo, children: items3 };
                         const obj8 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-                        const ReactionIcon = tmp(8444).ReactionIcon;
-                        items3 = [React4(ReactionIcon, obj8), ];
+                        const ReactionIcon = tmp(8930).ReactionIcon;
+                        items3 = [metroImportAll(ReactionIcon, obj8), ];
                         let tmp50 = null != obj14;
-                        const Text3 = tmp(4892).Text;
+                        const Text3 = tmp(5086).Text;
                         const reactionCount = message.reactionCount;
-                        const tmp44 = authStore;
-                        const tmp45 = metroRequire;
-                        const tmp46 = React4;
+                        const tmp44 = React4;
+                        const tmp45 = hasOwnProperty;
+                        const tmp46 = metroImportAll;
                         if (tmp50) {
                           tmp50 = obj14.locale === tmp(1126).intl.currentLocale;
                         }
@@ -1201,7 +1147,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
     let posterUrl = null;
     if (null != proxyUrl) {
       const tmpResult2 = AnnouncementMessageUtils;
-      posterUrl = tmpResult2.getPosterUrl(proxyUrl, c12, c11);
+      posterUrl = tmpResult2.getPosterUrl(proxyUrl, c11, c10);
     }
     cResult[21] = proxyUrl;
     cResult[22] = posterUrl;
@@ -1215,7 +1161,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
   const card = tmp4.card;
   if (cResult[23] === message.id) {
     let tmp23;
-    if (cResult[24] === onPress) {
+    if (cResult[24] === metroImportAll) {
       tmp23 = cResult[25];
     }
     const title = message.title;
@@ -1230,14 +1176,14 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
           let tmp29 = null != message.title;
           if (tmp29) {
             const obj12 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 2, children: parser(message.title, true, obj11) };
-            const Text = tmp(4892).Text;
-            tmp29 = React4(Text, obj12);
+            const Text = tmp(5086).Text;
+            tmp29 = metroImportAll(Text, obj12);
           }
           let tmp31 = message.body.length > 0;
           if (tmp31) {
             const obj13 = { variant: "text-sm/medium", color: "text-default", lineClamp: 3, children: parser(message.body, true, obj11) };
-            const Text2 = tmp(4892).Text;
-            tmp31 = React4(Text2, obj13);
+            const Text2 = tmp(5086).Text;
+            tmp31 = metroImportAll(Text2, obj13);
           }
           cResult[0] = channelId;
           cResult[1] = guildId;
@@ -1245,14 +1191,18 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
           cResult[3] = message.id;
           cResult[4] = message.media;
           cResult[5] = message.title;
-          cResult[6] = onPress;
+          cResult[6] = metroImportAll;
           cResult[7] = tmp4.card;
           cResult[8] = tmp4.cardBody;
           cResult[9] = tmp4.mediaImage;
           cResult[10] = tmp4.smallCardMedia;
-          cResult[11] = metroRequire;
-          cResult[12] = metroImportDefault;
-          cResult[13] = cardBody;
+          cResult[11] = hasOwnProperty;
+          cResult[12] = metroRequire;
+          class I {
+            constructor() {
+              return onPress(message.id);
+            }
+          }
           cResult[14] = tmp29;
           cResult[15] = tmp31;
           cResult[16] = card;
@@ -1275,9 +1225,9 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
     }
     let tmp25 = null != message.media && null != tmp18;
     if (tmp25) {
-      obj14 = { style: tmp4.smallCardMedia, children: React4(ImageWithPlaceholder.ImageWithPlaceholder, obj15) };
+      obj14 = { style: tmp4.smallCardMedia, children: metroImportAll(tmp(8928).ImageWithPlaceholder, obj15) };
       obj15 = { uri: tmp18, placeholder: message.media.placeholder, placeholderVersion: message.media.placeholderVersion, style: tmp4.mediaImage };
-      tmp25 = React4(metroRequire, obj14);
+      tmp25 = metroImportAll(hasOwnProperty, obj14);
     }
     cResult[26] = message.media;
     cResult[27] = tmp18;
@@ -1286,14 +1236,16 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
     cResult[30] = tmp25;
     tmp24 = tmp25;
   }
-  const fn = function f() {
-    return onPress(message.id);
-  };
+  class I {
+    constructor() {
+      return onPress(message.id);
+    }
+  }
   cResult[23] = message.id;
-  cResult[24] = onPress;
-  cResult[25] = fn;
-  tmp23 = fn;
-}) : (function(message) {
+  cResult[24] = metroImportAll;
+  cResult[25] = I;
+  tmp23 = I;
+}) : (function MessageAnnouncementCard(message) {
   let channelId;
   let date;
   let dateFormat;
@@ -1307,9 +1259,9 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
   let obj6;
   let parser;
   message = message.message;
-  onPress = message.onPress;
+  metroImportAll = message.onPress;
   ({ guildId, channelId } = message);
-  const tmp = closure_16();
+  const tmp = closure_15();
   if (null == parser) {
     const obj = CustomMarkupAll;
     parser = obj.getParser();
@@ -1331,7 +1283,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
   let posterUrl = null;
   if (null != proxyUrl) {
     const obj3 = AnnouncementMessageUtils;
-    posterUrl = obj3.getPosterUrl(proxyUrl, c12, c11);
+    posterUrl = obj3.getPosterUrl(proxyUrl, c11, c10);
   }
   if (posterUrl == null) {
     posterUrl = proxyUrl;
@@ -1346,14 +1298,14 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
     accessibilityLabel: message.title,
     children: items
   };
-  const tmp13 = metroImportDefault;
+  const tmp13 = metroRequire;
   if (tmp14) {
     tmp14 = null != posterUrl;
   }
   if (tmp14) {
-    const obj5 = { style: tmp.smallCardMedia, children: React4(ImageWithPlaceholder.ImageWithPlaceholder, obj6) };
+    const obj5 = { style: tmp.smallCardMedia, children: metroImportAll(ImageWithPlaceholder.ImageWithPlaceholder, obj6) };
     obj6 = { uri: posterUrl, placeholder: message.media.placeholder, placeholderVersion: message.media.placeholderVersion, style: tmp.mediaImage };
-    tmp14 = React4(metroRequire, obj5);
+    tmp14 = metroImportAll(hasOwnProperty, obj5);
   }
   items = [tmp14, ];
   let tmp20 = null != message.title;
@@ -1361,14 +1313,14 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
   if (tmp20) {
     const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 2, children: parser(message.title, true, obj2) };
     const Text = Text_Text.Text;
-    tmp20 = React4(Text, obj8);
+    tmp20 = metroImportAll(Text, obj8);
   }
   items1 = [tmp20, , ];
   let tmp24 = message.body.length > 0;
   if (tmp24) {
     const obj9 = { variant: "text-sm/medium", color: "text-default", lineClamp: 3, children: parser(message.body, true, obj2) };
     const Text2 = Text_Text.Text;
-    tmp24 = React4(Text2, obj9);
+    tmp24 = metroImportAll(Text2, obj9);
   }
   items1[1] = tmp24;
   const obj10 = { style: tmp.metadataRow, children: items2 };
@@ -1377,15 +1329,15 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
   dateFormat = DateUtils.dateFormat;
   DateUtils;
   date = new Date(message.timestamp);
-  items2 = [React4(Text3, obj11), ];
+  items2 = [metroImportAll(Text3, obj11), ];
   let tmp12Result = message.reactionCount > 0;
   if (tmp12Result) {
     const obj12 = { style: tmp.reactionInfo, children: items3 };
     const obj13 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-    const ReactionIcon = tmp29(8444).ReactionIcon;
-    items3 = [React4(ReactionIcon, obj13), ];
+    const ReactionIcon = tmp29(8930).ReactionIcon;
+    items3 = [metroImportAll(ReactionIcon, obj13), ];
     let tmp36 = null != obj14;
-    const Text4 = tmp29(4892).Text;
+    const Text4 = tmp29(5086).Text;
     const reactionCount = message.reactionCount;
     if (tmp36) {
       tmp36 = obj14.locale === tmp29(1126).intl.currentLocale;
@@ -1399,16 +1351,16 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
     }
     const obj15 = { variant: "text-xs/medium", color: "text-muted", children: format.format(reactionCount) };
     format = obj14.format;
-    items3[1] = React4(Text4, obj15);
+    items3[1] = metroImportAll(Text4, obj15);
     tmp12Result = tmp12(tmp19, obj12);
   }
   items2[1] = tmp12Result;
-  items1[2] = authStore(metroRequire, obj10);
-  items[1] = authStore(metroRequire, obj7);
-  return authStore(tmp13, obj4);
+  items1[2] = React4(hasOwnProperty, obj10);
+  items[1] = React4(hasOwnProperty, obj7);
+  return React4(tmp13, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(message) {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollAnnouncementCard(message) {
   let date;
   let intl;
   let items;
@@ -1421,7 +1373,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
   const cResult = obj.c(56);
   message = message.message;
   onPress = message.onPress;
-  const tmp4 = closure_16();
+  const tmp4 = closure_15();
   importAll = tmp4;
   const poll = message.poll;
   if (null == poll) {
@@ -1480,7 +1432,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
                             }
                             if (cResult[38] !== tmp32) {
                               const obj2 = { variant: "text-xs/medium", color: "text-muted", children: tmp32 };
-                              const tmp39 = closure_9(message(4892).Text, obj2);
+                              const tmp39 = onPress(message(5086).Text, obj2);
                               cResult[38] = tmp32;
                               cResult[39] = tmp39;
                               tmp37 = tmp39;
@@ -1516,7 +1468,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
                                         }
                                       }
                                       const obj3 = { style: tmp13, onPress: tmp14, accessibilityRole: str, accessibilityLabel: tmp15, children: tmp44 };
-                                      const tmp49 = closure_9(tmp7, obj3);
+                                      const tmp49 = onPress(tmp7, obj3);
                                       cResult[49] = tmp7;
                                       cResult[50] = tmp44;
                                       cResult[51] = tmp13;
@@ -1531,7 +1483,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
                               }
                               const obj4 = { style: tmp11, children: items };
                               items = [tmp12, tmp28, tmp40];
-                              const tmp46 = closure_10(tmp6, obj4);
+                              const tmp46 = closure_9(tmp6, obj4);
                               cResult[43] = tmp6;
                               cResult[44] = tmp28;
                               cResult[45] = tmp40;
@@ -1541,7 +1493,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
                               tmp44 = tmp46;
                             }
                             const obj5 = { style: tmp31, children: tmp37 };
-                            const tmp43 = closure_9(closure_6, obj5);
+                            const tmp43 = onPress(closure_5, obj5);
                             cResult[40] = tmp4.metadataRow;
                             cResult[41] = tmp37;
                             cResult[42] = tmp43;
@@ -1555,7 +1507,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
                           const obj6 = { createdAt: date, expiryLabel: tmpResult.getPollExpiryLabel(poll) };
                           const t0FTsH = tmp(1126).t.t0FTsH;
                           date = new Date(message.timestamp);
-                          tmpResult = message(8439);
+                          tmpResult = message(8925);
                           const formatResult = format(t0FTsH, obj6);
                           cResult[35] = message.timestamp;
                           cResult[36] = poll;
@@ -1566,7 +1518,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
                     }
                     const obj7 = { style: tmp9, children: items1 };
                     items1 = [tmp10, tmp25];
-                    const tmp30 = closure_10(tmp5, obj7);
+                    const tmp30 = closure_9(tmp5, obj7);
                     cResult[30] = tmp5;
                     cResult[31] = tmp9;
                     cResult[32] = tmp10;
@@ -1577,10 +1529,10 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
                   let tmp26 = tmp8 > 0;
                   if (tmp26) {
                     const obj8 = { variant: "text-xs/medium", color: "text-muted", style: tmp4.pollMoreOptions, children: intl.format(message(1126).t["mv/nIa"], obj9) };
-                    let Text = tmp(4892).Text;
+                    let Text = tmp(5086).Text;
                     intl = tmp(1126).intl;
                     obj9 = { count: tmp8 };
-                    tmp26 = closure_9(Text, obj8);
+                    tmp26 = onPress(Text, obj8);
                   }
                   cResult[27] = tmp8;
                   cResult[28] = tmp4.pollMoreOptions;
@@ -1608,7 +1560,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
       const cardBody = tmp4.cardBody;
       if (cResult[23] !== poll.question.text) {
         const obj10 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: poll.question.text };
-        const tmp22 = closure_9(message(4892).Text, obj10);
+        const tmp22 = onPress(message(5086).Text, obj10);
         cResult[23] = poll.question.text;
         cResult[24] = tmp22;
         tmp20 = tmp22;
@@ -1621,14 +1573,14 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
           constructor(poll_media) {
             let Text;
             let str;
-            const obj = { style: pollAnswerOption.pollAnswerOption, children: React4(Text, { variant: "text-sm/medium", color: "text-default", lineClamp: 1, children: str }) };
+            const obj = { style: pollAnswerOption.pollAnswerOption, children: metroImportAll(Text, { variant: "text-sm/medium", color: "text-default", lineClamp: 1, children: str }) };
             str = poll_media.poll_media.text;
             Text = Text_Text.Text;
-            const tmp2 = metroRequire;
+            const tmp2 = hasOwnProperty;
             if (str == null) {
               str = "";
             }
-            return React4(tmp2, obj, poll_media.answer_id);
+            return metroImportAll(tmp2, obj, poll_media.answer_id);
           }
         }
         cResult[25] = tmp4.pollAnswerOption;
@@ -1639,14 +1591,14 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
           constructor(poll_media) {
             let Text;
             let str;
-            const obj = { style: pollAnswerOption.pollAnswerOption, children: React4(Text, { variant: "text-sm/medium", color: "text-default", lineClamp: 1, children: str }) };
+            const obj = { style: pollAnswerOption.pollAnswerOption, children: metroImportAll(Text, { variant: "text-sm/medium", color: "text-default", lineClamp: 1, children: str }) };
             str = poll_media.poll_media.text;
             Text = Text_Text.Text;
-            const tmp2 = metroRequire;
+            const tmp2 = hasOwnProperty;
             if (str == null) {
               str = "";
             }
-            return React4(tmp2, obj, poll_media.answer_id);
+            return metroImportAll(tmp2, obj, poll_media.answer_id);
           }
         }
       }
@@ -1659,9 +1611,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
       cResult[5] = tmp4.cardBody;
       cResult[6] = tmp4.pollAnswerOption;
       cResult[7] = tmp4.pollAnswers;
-      cResult[8] = closure_6;
-      cResult[9] = closure_6;
-      cResult[10] = closure_7;
+      cResult[8] = closure_5;
+      cResult[9] = closure_5;
+      cResult[10] = closure_6;
       cResult[11] = diff;
       cResult[12] = pollAnswers;
       cResult[13] = mapped;
@@ -1692,7 +1644,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
     cResult[22] = fn;
     tmp18 = fn;
   }
-}) : (function(message) {
+}) : (function PollAnnouncementCard(message) {
   let Text2;
   let date;
   let format;
@@ -1707,7 +1659,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
   let tmp11Result;
   message = message.message;
   onPress = message.onPress;
-  const tmp = closure_16();
+  const tmp = closure_15();
   const pollAnswerOption = tmp;
   const poll = message.poll;
   if (null == poll) {
@@ -1723,41 +1675,41 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
         },
       accessibilityRole: "button",
       accessibilityLabel: poll.question.text,
-      children: closure_10(closure_6, obj3)
+      children: closure_9(closure_5, obj3)
     };
     obj3 = { style: tmp.cardBody, children: items };
     const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: poll.question.text };
-    items = [closure_9(message(4892).Text, obj4), , ];
+    items = [onPress(message(5086).Text, obj4), , ];
     const obj5 = { style: tmp.pollAnswers, children: items1 };
     items1 = [
       substr.map((poll_media) => {
           let Text;
           let str;
-          const obj = { style: pollAnswerOption.pollAnswerOption, children: React4(Text, { variant: "text-sm/medium", color: "text-default", lineClamp: 1, children: str }) };
+          const obj = { style: pollAnswerOption.pollAnswerOption, children: metroImportAll(Text, { variant: "text-sm/medium", color: "text-default", lineClamp: 1, children: str }) };
           str = poll_media.poll_media.text;
           Text = Text_Text.Text;
-          const tmp2 = metroRequire;
+          const tmp2 = hasOwnProperty;
           if (str == null) {
             str = "";
           }
-          return React4(tmp2, obj, poll_media.answer_id);
+          return metroImportAll(tmp2, obj, poll_media.answer_id);
         }),
 
     ];
     let tmp7Result = diff > 0;
-    const tmp8 = closure_7;
+    const tmp8 = closure_6;
     if (tmp7Result) {
       let obj = { variant: "text-xs/medium", color: "text-muted", style: tmp.pollMoreOptions, children: intl.format(message(1126).t["mv/nIa"], obj6) };
-      let Text = tmp11(4892).Text;
+      let Text = tmp11(5086).Text;
       intl = tmp11(1126).intl;
       obj6 = { count: diff };
       tmp7Result = tmp7(Text, obj);
     }
     items1[1] = tmp7Result;
-    items[1] = closure_10(closure_6, obj5);
-    const obj7 = { style: tmp.metadataRow, children: closure_9(Text2, obj8) };
+    items[1] = closure_9(closure_5, obj5);
+    const obj7 = { style: tmp.metadataRow, children: onPress(Text2, obj8) };
     obj8 = { variant: "text-xs/medium", color: "text-muted", children: format(t0FTsH, obj9) };
-    Text2 = tmp11(4892).Text;
+    Text2 = tmp11(5086).Text;
     const intl2 = tmp11(1126).intl;
     format = intl2.format;
     const _Date = Date;
@@ -1766,14 +1718,14 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(messag
     obj9 = { createdAt: date, expiryLabel: tmp11Result.getPollExpiryLabel(poll) };
     t0FTsH = tmp11(1126).t.t0FTsH;
     date = new Date(message.timestamp);
-    tmp11Result = message(8439);
-    items[2] = closure_9(closure_6, obj7);
-    return closure_9(tmp8, obj2);
+    tmp11Result = message(8925);
+    items[2] = onPress(closure_5, obj7);
+    return onPress(tmp8, obj2);
   }
 });
 const memo3 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_22 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
+let closure_21 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (function AnnouncementCard(message) {
   let tmp2;
   const obj = react2;
   const cResult = obj.c(6);
@@ -1782,7 +1734,7 @@ let closure_22 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((message)
     if (cResult[0] !== message) {
       const obj2 = {};
       const merged = Object.assign(message);
-      const tmp22 = React4(closure_21, obj2);
+      const tmp22 = metroImportAll(closure_20, obj2);
       cResult[0] = message;
       cResult[1] = tmp22;
       tmp16 = tmp22;
@@ -1795,7 +1747,7 @@ let closure_22 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((message)
     if (cResult[2] !== message) {
       const obj3 = {};
       const merged1 = Object.assign(message);
-      const tmp15 = React4(closure_19, obj3);
+      const tmp15 = metroImportAll(closure_18, obj3);
       cResult[2] = message;
       cResult[3] = tmp15;
       tmp9 = tmp15;
@@ -1806,7 +1758,7 @@ let closure_22 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((message)
   } else if (cResult[4] !== message) {
     const obj4 = {};
     const merged2 = Object.assign(message);
-    const tmp8 = React4(closure_20, obj4);
+    const tmp8 = metroImportAll(closure_19, obj4);
     cResult[4] = message;
     cResult[5] = tmp8;
     tmp2 = tmp8;
@@ -1814,26 +1766,27 @@ let closure_22 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((message)
     tmp2 = cResult[5];
   }
   return tmp2;
-}) : ((message) => {
+}) : (function AnnouncementCard(message) {
   let tmp6;
   if (null != message.message.poll) {
     const obj2 = {};
     const merged = Object.assign(message);
-    tmp6 = React4(closure_21, obj2);
+    tmp6 = metroImportAll(closure_20, obj2);
   } else if (null != message.message.embedSource) {
     const obj3 = {};
     const merged1 = Object.assign(message);
-    tmp6 = React4(closure_19, obj3);
+    tmp6 = metroImportAll(closure_18, obj3);
   } else {
     const obj = {};
     const merged2 = Object.assign(message);
-    tmp6 = React4(closure_20, obj);
+    tmp6 = metroImportAll(closure_19, obj);
   }
   return tmp6;
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileAnnouncements(gameId) {
   let channelId;
+  let guildId;
   let messages;
   let trackAction;
   const tmp = gameId;
@@ -1845,11 +1798,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
   const tmp2 = trackAction;
   trackAction = gameId.trackAction;
   const scrollY = gameId.scrollY;
-  const tmp4 = closure_16();
-  const analyticsLocations = invite(trackAction[20])().analyticsLocations;
-  const tmp5 = invite(trackAction[21])(gameId, onPress);
+  const tmp4 = closure_15();
+  const analyticsLocations = invite(trackAction[21])().analyticsLocations;
+  const tmp5 = invite(trackAction[22])(gameId, guildId);
   ({ messages, channelId } = tmp5);
-  const guildId = tmp5.guildId;
+  guildId = tmp5.guildId;
   if (cResult[0] === analyticsLocations) {
     if (cResult[1] === channelId) {
       if (cResult[2] === closeModal) {
@@ -2003,8 +1956,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
                                             let obj2 = { title: tmp9, onPressViewAll: tmp6, children: tmp16 };
                                             class D {
                                               constructor(message) {
-                                                const obj = { message, onPress, guildId, channelId };
-                                                return React4(closure_22, obj, message.id);
+                                                const obj = { message, onPress: metroImportAll, guildId, channelId };
+                                                return metroImportAll(closure_21, obj, message.id);
                                               }
                                             }
                                             cResult[33] = tmp6;
@@ -2039,8 +1992,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
                                         }
                                         class D {
                                           constructor(message) {
-                                            const obj = { message, onPress, guildId, channelId };
-                                            return React4(closure_22, obj, message.id);
+                                            const obj = { message, onPress: metroImportAll, guildId, channelId };
+                                            return metroImportAll(closure_21, obj, message.id);
                                           }
                                         }
                                         cResult[29] = tmp4.smallCardsContainer;
@@ -2086,8 +2039,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
                                       cResult[21] = guildId;
                                       class D {
                                         constructor(message) {
-                                          const obj = { message, onPress, guildId, channelId };
-                                          return React4(closure_22, obj, message.id);
+                                          const obj = { message, onPress: metroImportAll, guildId, channelId };
+                                          return metroImportAll(closure_21, obj, message.id);
                                         }
                                       }
                                       cResult[23] = messages;
@@ -2097,8 +2050,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
                                   }
                                   class D {
                                     constructor(message) {
-                                      const obj = { message, onPress, guildId, channelId };
-                                      return React4(closure_22, obj, message.id);
+                                      const obj = { message, onPress: metroImportAll, guildId, channelId };
+                                      return metroImportAll(closure_21, obj, message.id);
                                     }
                                   }
                                   cResult[25] = channelId;
@@ -2189,7 +2142,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
   cResult[7] = trackAction;
   cResult[8] = fn;
   tmp6 = fn;
-}) : ((gameId) => {
+}) : (function GameProfileAnnouncements(gameId) {
   let channelId;
   let hasFetched;
   let intl;
@@ -2204,14 +2157,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
   const trackAction = gameId.trackAction;
   const scrollY = gameId.scrollY;
   channelId = undefined;
-  onPress = undefined;
+  let guildId;
   const hasDiscordWebsite = gameId.hasDiscordWebsite;
-  const tmp = closure_16();
+  const tmp = closure_15();
   let tmp3 = trackAction;
-  const analyticsLocations = invite(trackAction[20])().analyticsLocations;
-  const tmp4 = invite(trackAction[21])(gameId, onPress);
+  const analyticsLocations = invite(trackAction[21])().analyticsLocations;
+  const tmp4 = invite(trackAction[22])(gameId, guildId);
   ({ messages, channelId } = tmp4);
-  const guildId = tmp4.guildId;
+  guildId = tmp4.guildId;
   const items = [trackAction, scrollY, closeModal, invite, guildId, channelId, analyticsLocations, gameId];
   ({ loading, hasFetched } = tmp4);
   const items1 = [trackAction, scrollY, closeModal, invite, guildId, channelId, analyticsLocations, gameId];
@@ -2261,7 +2214,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
   }, items1);
   if (!hasFetched) {
     if (hasDiscordWebsite) {
-      tmp6 = closure_9(closure_18, {});
+      tmp6 = onPress(closure_17, {});
     }
     return tmp6;
   }
@@ -2269,7 +2222,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
   if (null != channelId) {
     tmp6 = null;
     if (0 !== messages.length) {
-      let obj = { title: intl.string(gameId(tmp3[6]).t.B0BV3Y), onPressViewAll: callback, children: closure_9(tmp2Result2, obj3) };
+      let obj = { title: intl.string(gameId(tmp3[6]).t.B0BV3Y), onPressViewAll: callback, children: onPress(tmp2Result2, obj3) };
       const tmp2Result = invite(tmp3[13]);
       intl = gameId(tmp3[6]).intl;
       ({ smallCardsScroller: obj2.style, smallCardsContainer: obj2.contentContainerStyle } = tmp);
@@ -2282,12 +2235,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
         snapToStart: false,
         snapToEnd: false,
         children: messages.map((message) => {
-              const obj = { message, onPress, guildId, channelId };
-              return React4(closure_22, obj, message.id);
+              const obj = { message, onPress: metroImportAll, guildId, channelId };
+              return metroImportAll(closure_21, obj, message.id);
             })
       };
-      tmp2Result2 = invite(tmp3[25]);
-      tmp6 = closure_9(tmp2Result, obj);
+      tmp2Result2 = invite(tmp3[26]);
+      tmp6 = onPress(tmp2Result, obj);
     }
   }
 });

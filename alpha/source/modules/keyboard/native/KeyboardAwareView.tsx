@@ -1,15 +1,15 @@
-// Module ID: 6544
-// Function ID: 6545
+// Module ID: 6720
+// Function ID: 6721
 // Name: KeyboardAwareView
-// Dependencies: [32, 19, 17, 1486, 21, 1884, 4753, 1616, 6481, 6479, 6480, 2]
+// Dependencies: [32, 19, 17, 1498, 21, 1896, 4947, 1628, 6659, 6657, 6658, 2]
 
-// Module 6544 (KeyboardAwareView)
+// Module 6720 (KeyboardAwareView)
 import Fragment from "Fragment" /* 21 */;
-import useKeyboardDuration from "useKeyboardDuration" /* 6479 */;
+import useKeyboardDuration from "useKeyboardDuration" /* 6657 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1486 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1498 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -54,7 +54,7 @@ const memoResult = react.memo(function KeyboardAwareView(style) {
   marginBottom = tmp6[0];
   closure_5 = tmp6[1];
   const items = [num];
-  const effect = obj.useEffect(() => subscribeToKeyboardUIStore(() => {
+  const effect = obj.useEffect(() => subscribeToKeyboardUIStore(function keyboardHeightUpdater() {
     const _Math = Math;
     const obj = style(flag[5]);
     let systemKeyboardHeight = obj.getSystemKeyboardHeight();
@@ -87,7 +87,7 @@ const memoResult = react.memo(function KeyboardAwareView(style) {
         tmp5 = keyboardDuration > 0;
       }
       if (tmp5) {
-        const tmp2Result = tmp2(6480);
+        const tmp2Result = tmp2(6658);
         const result = tmp2Result.DeprecatedLayoutAnimationKeyboard(keyboardDuration);
       }
     } else {

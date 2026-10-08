@@ -1,16 +1,16 @@
-// Module ID: 17411
-// Function ID: 17412
+// Module ID: 17693
+// Function ID: 17694
 // Name: useLaunchPadState
-// Dependencies: [19, 11138, 17412, 558, 576, 4618, 11661, 9786, 9787, 2]
+// Dependencies: [19, 11258, 17694, 558, 576, 4810, 11726, 10350, 10352, 2]
 
-// Module 17411 (useLaunchPadState)
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import useSafeAreaInsetsSharedValue from "useSafeAreaInsetsSharedValue" /* 9786 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 9787 */;
-import useWindowDimensionsSharedValue from "useWindowDimensionsSharedValue" /* 11661 */;
+// Module 17693 (useLaunchPadState)
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import useSafeAreaInsetsSharedValue from "useSafeAreaInsetsSharedValue" /* 10350 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10352 */;
+import useWindowDimensionsSharedValue from "useWindowDimensionsSharedValue" /* 11726 */;
 import react from "react" /* 19 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11138 */;
-import LaunchPadPullTabCache_mod from "LaunchPadPullTabCache" /* 17412 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11258 */;
+import LaunchPadPullTabCache_mod from "LaunchPadPullTabCache" /* 17694 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let closure_20 = { code: "function setLaunchPadPullTabPosition_useLaunchPadState
 let closure_21 = { code: "function setLaunchPadPullTabScale_useLaunchPadStateNativeTsx14(scale){const{updateSharedValueIfChanged,launchPadPullTabState}=this.__closure;updateSharedValueIfChanged(launchPadPullTabState,{scale:scale});}" };
 let closure_22 = { code: "function setLaunchPadPullTabMinimized_useLaunchPadStateNativeTsx15(minimized){const{updateSharedValueIfChanged,launchPadPullTabState}=this.__closure;updateSharedValueIfChanged(launchPadPullTabState,{minimized:minimized});}" };
 let closure_23 = { code: "function onWindowHeightChange_useLaunchPadStateNativeTsx16(){const{launchPadPullTabState,setLaunchPadPullTabBoundedPosition}=this.__closure;const positionY_1=launchPadPullTabState.get().position;setLaunchPadPullTabBoundedPosition(positionY_1);}" };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLaunchPadState() {
   let closure_4;
   let sharedValue;
   let sharedValue2;
@@ -232,7 +232,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[7] = tmp12;
   cResult[8] = setLaunchPadPullTabTranslation;
   tmp17 = setLaunchPadPullTabTranslation;
-}) : (() => {
+}) : (function useLaunchPadState() {
   let sharedValue;
   let sharedValue2;
   let obj = sharedValue(sharedValue2[5]);

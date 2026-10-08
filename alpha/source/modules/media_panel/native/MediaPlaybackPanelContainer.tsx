@@ -1,21 +1,21 @@
-// Module ID: 17401
-// Function ID: 17402
+// Module ID: 17683
+// Function ID: 17684
 // Name: MediaPlaybackPanelContainer
-// Dependencies: [19, 21, 558, 576, 14396, 4500, 17402, 17404, 2]
+// Dependencies: [19, 21, 558, 576, 14622, 4692, 17684, 17686, 2]
 
-// Module 17401 (MediaPlaybackPanelContainer)
+// Module 17683 (MediaPlaybackPanelContainer)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import MediaPlaybackPanelControllerDefault from "MediaPlaybackPanelController" /* 17402 */;
+import MediaPlaybackPanelControllerDefault from "MediaPlaybackPanelController" /* 17684 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const react3 = tmp(4500);
-const MediaPlayerManager = tmp(14396);
+const react3 = tmp(4692);
+const MediaPlayerManager = tmp(14622);
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPlaybackPanelContainer() {
   let first;
   let tmp7;
   let tmp = require;
@@ -90,7 +90,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     tmp7 = cResult[2];
   }
   return tmp7;
-}) : (() => {
+}) : (function MediaPlaybackPanelContainer() {
   let tmp = dependencyMap;
   const useMediaPlayerManagerStore = MediaPlayerManager.useMediaPlayerManagerStore;
   let tmp3 = null;

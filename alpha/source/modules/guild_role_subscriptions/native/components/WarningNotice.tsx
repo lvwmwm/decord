@@ -1,19 +1,19 @@
-// Module ID: 17926
-// Function ID: 17927
+// Module ID: 18213
+// Function ID: 18214
 // Name: WarningNotice
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 5981, 4813, 4892, 5601, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 6164, 5007, 5086, 5375, 2]
 
-// Module 17926 (WarningNotice)
+// Module 18213 (WarningNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4813 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import FastImageDefault from "FastImage" /* 5981 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5007 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import FastImageDefault from "FastImage" /* 6164 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING, borderColor: nativeDefault.colors.STATUS_WARNING };
 obj4 = { color: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
 let closure_6 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function WarningNotice(arg0) {
   let ctaLabel;
   let disabled;
   let items;
@@ -153,7 +153,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tmp4.containerYellow;
   cResult[3] = items3;
   tmp5 = items3;
-}) : ((arg0) => {
+}) : (function WarningNotice(arg0) {
   let ctaLabel;
   let disabled;
   let items;

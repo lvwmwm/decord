@@ -1,37 +1,37 @@
-// Module ID: 10366
-// Function ID: 10367
+// Module ID: 9963
+// Function ID: 9964
 // Name: HorizontalAutocomplete
-// Dependencies: [19, 17, 4885, 2106, 2074, 4525, 1377, 1085, 21, 4896, 5922, 587, 558, 576, 4618, 4897, 5597, 504, 1188, 4728, 4892, 6693, 6711, 7818, 5819, 5049, 5981, 2]
+// Dependencies: [19, 17, 5079, 2118, 2086, 4717, 1389, 1085, 21, 5090, 5902, 587, 558, 576, 4810, 5091, 5392, 504, 1200, 4922, 5086, 6870, 6888, 8237, 8134, 5417, 6164, 2]
 
-// Module 10366 (HorizontalAutocomplete)
+// Module 9963 (HorizontalAutocomplete)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import UserUtilsDefault from "UserUtils" /* 4728 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import timing from "timing" /* 4897 */;
-import useMountEffectDefault from "useMountEffect" /* 5597 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import RoleIconUtils from "RoleIconUtils" /* 6693 */;
-import RoleIconDefault from "RoleIcon" /* 6711 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7818 */;
+import native from "native" /* 1200 */;
+import UserUtilsDefault from "UserUtils" /* 4922 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import timing from "timing" /* 5091 */;
+import useMountEffectDefault from "useMountEffect" /* 5392 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import RoleIconUtils from "RoleIconUtils" /* 6870 */;
+import RoleIconDefault from "RoleIcon" /* 6888 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8237 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import GuildRoleStore from "GuildRoleStore" /* 2118 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import TextStyles from "TextStyles" /* 5922 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import TextStyles from "TextStyles" /* 5902 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import "ReactCompilerGating";
 import size from "module_2" /* 2 */;
 
-let channel, set;
+let set;
 
 let Fonts;
 let StyleSheet;
@@ -44,7 +44,7 @@ let obj3;
 let obj4;
 let tmp7;
 let unpackModuleId;
-const ReanimatedRexportDefault = tmp7(4618);
+const ReanimatedRexportDefault = tmp7(4810);
 ({ TouchableOpacity: c3, View: closure_4, StyleSheet } = react_native);
 ({ ChannelTypes: c10, Fonts } = Constants);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
@@ -59,7 +59,7 @@ let closure_13 = createStyles(obj);
 const __initData = { code: "function HorizontalAutocompleteTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
 const __initData2 = { code: "function HorizontalAutocompleteTsx2(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function HorizontalAutocompleteOption(arg0) {
   let children;
   let onPress;
   let sharedValue;
@@ -68,11 +68,11 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(11);
   ({ children, onPress } = arg0);
   const tmp4 = closure_13();
-  const obj2 = sharedValue(4618);
+  const obj2 = sharedValue(4810);
   const tmp = sharedValue;
   sharedValue = obj2.useSharedValue(0);
   if (cResult[0] !== sharedValue) {
-    const fn = function n() {
+    const fn = function o() {
       set = sharedValue.set;
       const obj = timing;
       const result = set(obj.withTiming(1));
@@ -91,7 +91,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   fn2.__closure = { opacity: sharedValue };
   fn2.__workletHash = 14159604656069;
   fn2.__initData = __initData;
-  const tmpResult = tmp(4618);
+  const tmpResult = tmp(4810);
   const animatedStyle = tmpResult.useAnimatedStyle(fn2);
   if (cResult[2] === animatedStyle) {
     let tmp10;
@@ -129,7 +129,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp4.horizontalAutocompleteOption;
   cResult[4] = items;
   tmp10 = items;
-}) : ((arg0) => {
+}) : (function HorizontalAutocompleteOption(arg0) {
   let children;
   let items;
   let obj4;
@@ -137,7 +137,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let sharedValue;
   ({ children, onPress } = arg0);
   const tmp = closure_13();
-  let obj = sharedValue(4618);
+  let obj = sharedValue(4810);
   sharedValue = obj.useSharedValue(0);
   useMountEffectDefault(() => {
     set = sharedValue.set;
@@ -152,7 +152,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   fn.__workletHash = 9120427353030;
   fn.__initData = __initData2;
   const obj3 = { onPress, children: closure_11(ReanimatedRexportDefault.View, obj4) };
-  const obj2 = sharedValue(4618);
+  const obj2 = sharedValue(4810);
   const animatedStyle = obj2.useAnimatedStyle(fn);
   obj4 = { style: items, children };
   items = [tmp.horizontalAutocompleteOption, animatedStyle];
@@ -160,11 +160,11 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let obj5 = {
-  User: ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  User: ReactCompilerGating.isReactCompilerEnabled() ? (function User(arg0) {
     let guildId;
+    let items1;
     let items2;
     let items3;
-    let items4;
     let nick;
     let onPress;
     let status;
@@ -173,12 +173,12 @@ let obj5 = {
     let useReducedMotion;
     let user;
     const obj = react2;
-    const cResult = obj.c(28);
+    const cResult = obj.c(26);
     ({ user, nick, status, guildId, onPress } = arg0);
     const tmp4 = closure_13();
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const items = [AccessibilityStore];
-      const fn = function o() {
+      const fn = function n() {
         return useReducedMotion.useReducedMotion;
       };
       cResult[0] = items;
@@ -196,7 +196,6 @@ let obj5 = {
           if (cResult[5] === tmp8) {
             let tmp9;
             let tmp11;
-            let tmp12;
             if (cResult[6] === user) {
               tmp9 = cResult[7];
             }
@@ -208,98 +207,90 @@ let obj5 = {
             } else {
               tmp11 = cResult[8];
             }
-            if (cResult[9] !== tmp4.nickname) {
-              const items1 = [tmp4.nickname];
-              cResult[9] = tmp4.nickname;
-              cResult[10] = items1;
-              tmp12 = items1;
-            } else {
-              tmp12 = cResult[10];
-            }
-            if (cResult[11] === nick) {
-              let tmp13;
-              if (cResult[12] === user) {
-                tmp13 = cResult[13];
+            if (cResult[9] === nick) {
+              let tmp12;
+              if (cResult[10] === user) {
+                tmp12 = cResult[11];
               }
-              if (cResult[14] === tmp12) {
-                let tmp17;
-                let tmp20;
-                let tmp23;
-                if (cResult[15] === tmp13) {
-                  tmp17 = cResult[16];
+              if (cResult[12] === tmp4.nickname) {
+                let tmp16;
+                let tmp19;
+                let tmp22;
+                if (cResult[13] === tmp12) {
+                  tmp16 = cResult[14];
                 }
-                if (cResult[17] !== user) {
+                if (cResult[15] !== user) {
                   const obj7 = UserUtilsDefault;
                   const userTag = obj7.getUserTag(user, { decoration: "never" });
-                  cResult[17] = user;
-                  cResult[18] = userTag;
-                  tmp20 = userTag;
+                  cResult[15] = user;
+                  cResult[16] = userTag;
+                  tmp19 = userTag;
                 } else {
-                  tmp20 = cResult[18];
+                  tmp19 = cResult[16];
                 }
-                if (cResult[19] !== tmp20) {
-                  const obj3 = { variant: "text-xs/medium", color: "text-muted", children: items2 };
-                  items2 = ["@", tmp20];
-                  const tmp25 = closure_12(Text_Text.Text, obj3);
-                  cResult[19] = tmp20;
-                  cResult[20] = tmp25;
-                  tmp23 = tmp25;
+                if (cResult[17] !== tmp19) {
+                  const obj3 = { variant: "text-xs/medium", color: "text-muted", children: items1 };
+                  items1 = ["@", tmp19];
+                  const tmp24 = closure_12(Text_Text.Text, obj3);
+                  cResult[17] = tmp19;
+                  cResult[18] = tmp24;
+                  tmp22 = tmp24;
                 } else {
-                  tmp23 = cResult[20];
+                  tmp22 = cResult[18];
                 }
-                if (cResult[21] === tmp23) {
-                  let tmp26;
-                  if (cResult[22] === tmp17) {
-                    tmp26 = cResult[23];
+                if (cResult[19] === tmp16) {
+                  let tmp25;
+                  if (cResult[20] === tmp22) {
+                    tmp25 = cResult[21];
                   }
-                  if (cResult[24] === onPress) {
-                    if (cResult[25] === tmp26) {
-                      let tmp30;
-                      if (cResult[26] === tmp9) {
-                        tmp30 = cResult[27];
+                  if (cResult[22] === onPress) {
+                    if (cResult[23] === tmp25) {
+                      let tmp29;
+                      if (cResult[24] === tmp9) {
+                        tmp29 = cResult[25];
                       }
-                      return tmp30;
+                      return tmp29;
                     }
                   }
-                  const obj4 = { onPress, children: items3 };
-                  items3 = [tmp9, tmp26];
-                  const tmp33 = closure_12(closure_16, obj4);
-                  cResult[24] = onPress;
-                  cResult[25] = tmp26;
-                  cResult[26] = tmp9;
-                  cResult[27] = tmp33;
-                  tmp30 = tmp33;
+                  const obj4 = { onPress, children: items2 };
+                  items2 = [tmp9, tmp25];
+                  const tmp32 = closure_12(closure_16, obj4);
+                  cResult[22] = onPress;
+                  cResult[23] = tmp25;
+                  cResult[24] = tmp9;
+                  cResult[25] = tmp32;
+                  tmp29 = tmp32;
                 }
-                const obj6 = { style: tmp11, children: items4 };
-                items4 = [tmp17, tmp23];
-                const tmp29 = closure_12(React3, obj6);
-                cResult[21] = tmp23;
-                cResult[22] = tmp17;
-                cResult[23] = tmp29;
-                tmp26 = tmp29;
+                const obj6 = { style: tmp11, children: items3 };
+                items3 = [tmp16, tmp22];
+                const tmp28 = closure_12(React3, obj6);
+                cResult[19] = tmp16;
+                cResult[20] = tmp22;
+                cResult[21] = tmp28;
+                tmp25 = tmp28;
               }
-              const obj8 = { style: tmp12, variant: "text-sm/semibold", children: tmp13 };
-              const tmp19 = unpackModuleId(Text_Text.Text, obj8);
-              cResult[14] = tmp12;
-              cResult[15] = tmp13;
-              cResult[16] = tmp19;
-              tmp17 = tmp19;
+              const obj8 = { style: tmp4.nickname, variant: "text-sm/semibold", children: tmp12 };
+              const tmp18 = unpackModuleId(Text_Text.Text, obj8);
+              cResult[12] = tmp4.nickname;
+              cResult[13] = tmp12;
+              cResult[14] = tmp18;
+              tmp16 = tmp18;
             }
             let name = nick;
             if (nick == null) {
               const obj5 = UserUtilsDefault;
               name = obj5.getName(user);
             }
-            cResult[11] = nick;
-            cResult[12] = user;
-            cResult[13] = name;
-            tmp13 = name;
+            cResult[9] = nick;
+            cResult[10] = user;
+            cResult[11] = name;
+            tmp12 = name;
           }
         }
       }
     }
     const obj9 = { status, statusStyle: tmp4.status, user, size: native.AvatarSizes.SMALL, guildId, animate: tmp8 };
-    const Avatar = tmp(1188).Avatar;
+    const Avatar = tmp(1200).Avatar;
     const tmp10 = unpackModuleId(Avatar, obj9);
     cResult[2] = guildId;
     cResult[3] = status;
@@ -308,12 +299,11 @@ let obj5 = {
     cResult[6] = user;
     cResult[7] = tmp10;
     tmp9 = tmp10;
-  }) : ((arg0) => {
+  }) : (function User(arg0) {
     let guildId;
     let items1;
     let items2;
     let items3;
-    let items4;
     let nick;
     let onPress;
     let status;
@@ -329,9 +319,8 @@ let obj5 = {
     const obj3 = { status, statusStyle: tmp.status, user, size: native.AvatarSizes.SMALL, guildId, animate: !stateFromStores };
     const Avatar = native.Avatar;
     items1 = [unpackModuleId(Avatar, obj3), ];
-    const obj5 = { style: items2, variant: "text-sm/semibold", children: nick };
-    items2 = [tmp.nickname];
-    const obj4 = { style: { marginLeft: 8, height: 56, flex: 1, flexDirection: "column", justifyContent: "center" }, children: items3 };
+    const obj4 = { style: { marginLeft: 8, height: 56, flex: 1, flexDirection: "column", justifyContent: "center" }, children: items2 };
+    const obj5 = { style: tmp.nickname, variant: "text-sm/semibold", children: nick };
     const Text = Text_Text.Text;
     const tmp6 = closure_16;
     const tmp7 = unpackModuleId;
@@ -340,17 +329,17 @@ let obj5 = {
       const obj6 = UserUtilsDefault;
       nick = obj6.getName(user);
     }
-    items3 = [tmp7(Text, obj5), ];
-    const obj7 = { variant: "text-xs/medium", color: "text-muted", children: items4 };
+    items2 = [tmp7(Text, obj5), ];
+    const obj7 = { variant: "text-xs/medium", color: "text-muted", children: items3 };
     const Text2 = Text_Text.Text;
-    items4 = ["@"];
+    items3 = ["@"];
     const obj8 = UserUtilsDefault;
-    items4[1] = obj8.getUserTag(user, { decoration: "never" });
-    items3[1] = closure_12(Text2, obj7);
+    items3[1] = obj8.getUserTag(user, { decoration: "never" });
+    items2[1] = closure_12(Text2, obj7);
     items1[1] = closure_12(tmp8, obj4);
     return closure_12(tmp6, obj2);
   }),
-  Role: ReactCompilerGating.isReactCompilerEnabled() ? ((colorString) => {
+  Role: ReactCompilerGating.isReactCompilerEnabled() ? (function Role(colorString) {
     let first;
     let guildId;
     let id;
@@ -382,7 +371,7 @@ let obj5 = {
       if (cResult[4] !== stateFromStores) {
         let roleIconData = null;
         if (null != stateFromStores) {
-          const tmpResult2 = guildId(6693);
+          const tmpResult2 = guildId(6870);
           roleIconData = tmpResult2.getRoleIconData(stateFromStores, 30);
         }
         cResult[4] = stateFromStores;
@@ -441,7 +430,7 @@ let obj5 = {
               tmp24 = tmp27;
             }
             const obj4 = { style: tmp19, children: combined };
-            const tmp23 = closure_11(guildId(1188).LegacyText, obj4);
+            const tmp23 = closure_11(guildId(1200).LegacyText, obj4);
             cResult[15] = tmp19;
             cResult[16] = combined;
             cResult[17] = tmp23;
@@ -456,7 +445,7 @@ let obj5 = {
       }
       let tmp12 = null;
       if (null != tmp9) {
-        const obj6 = { style: tmp4.roleIcon, children: closure_11(id(6711), obj7) };
+        const obj6 = { style: tmp4.roleIcon, children: closure_11(id(6888), obj7) };
         obj7 = { name, src: null, unicodeEmoji: null, size: 24 };
         ({ customIconSrc: obj5.src, unicodeEmoji: obj5.unicodeEmoji } = tmp9);
         tmp12 = closure_11(closure_4, obj6);
@@ -467,14 +456,14 @@ let obj5 = {
       cResult[9] = tmp12;
       tmp11 = tmp12;
     }
-    const fn = function o() {
+    const fn = function n() {
       return GuildRoleStore.getRole(guildId, id);
     };
     cResult[1] = guildId;
     cResult[2] = id;
     cResult[3] = fn;
     tmp7 = fn;
-  }) : ((onPress) => {
+  }) : (function Role(onPress) {
     let colorString;
     let items1;
     let name;
@@ -503,7 +492,7 @@ let obj5 = {
     items1 = [tmp8, ];
     const items2 = [tmp.nickname, ];
     let tmp13;
-    const LegacyText = tmp2(1188).LegacyText;
+    const LegacyText = tmp2(1200).LegacyText;
     const tmp12 = closure_11;
     if (null != colorString) {
       tmp13 = { color: colorString };
@@ -514,7 +503,7 @@ let obj5 = {
     items1[1] = tmp12(LegacyText, obj7);
     return tmp6(tmp7, obj2);
   }),
-  Channel: ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  Channel: ReactCompilerGating.isReactCompilerEnabled() ? (function Channel(channel) {
     let channelIconWithGuild;
     let first;
     let items2;
@@ -533,7 +522,7 @@ let obj5 = {
       first = cResult[0];
     }
     if (cResult[1] !== channel) {
-      const fn = function o() {
+      const fn = function n() {
         return GuildStore.getGuild(channel.getGuildId());
       };
       const items1 = [channel];
@@ -557,7 +546,7 @@ let obj5 = {
       }
       if (cResult[7] !== tmp10) {
         const obj2 = { source: tmp10 };
-        const tmp15 = closure_11(channel(1188).Icon, obj2);
+        const tmp15 = closure_11(channel(1200).Icon, obj2);
         cResult[7] = tmp10;
         cResult[8] = tmp15;
         tmp13 = tmp15;
@@ -565,7 +554,7 @@ let obj5 = {
         tmp13 = cResult[8];
       }
       if (cResult[9] !== channel) {
-        const tmpResult3 = channel(5049);
+        const tmpResult3 = channel(5417);
         const channelName = tmpResult3.computeChannelName(channel, UserStore, RelationshipStore);
         cResult[9] = channel;
         cResult[10] = channelName;
@@ -597,7 +586,7 @@ let obj5 = {
         tmp23 = tmp26;
       }
       const obj4 = { style: tmp4.channelName, variant: "text-sm/semibold", children: tmp16 };
-      const tmp22 = closure_11(channel(4892).Text, obj4);
+      const tmp22 = closure_11(channel(5086).Text, obj4);
       cResult[11] = tmp16;
       cResult[12] = tmp4.channelName;
       cResult[13] = tmp22;
@@ -606,14 +595,14 @@ let obj5 = {
     if (channel.type === constants.GUILD_CATEGORY) {
       channelIconWithGuild = AssetRegistryDefault;
     } else {
-      const tmpResult4 = channel(5819);
+      const tmpResult4 = channel(8134);
       channelIconWithGuild = tmpResult4.getChannelIconWithGuild(channel, stateFromStores);
     }
     cResult[4] = channel;
     cResult[5] = stateFromStores;
     cResult[6] = channelIconWithGuild;
     tmp10 = channelIconWithGuild;
-  }) : ((channel) => {
+  }) : (function Channel(channel) {
     let channelIconWithGuild;
     let items;
     channel = channel.channel;
@@ -624,19 +613,19 @@ let obj5 = {
     if (channel.type === constants.GUILD_CATEGORY) {
       channelIconWithGuild = AssetRegistryDefault;
     } else {
-      const tmp2Result = channel(5819);
+      const tmp2Result = channel(8134);
       channelIconWithGuild = tmp2Result.getChannelIconWithGuild(channel, tmp5);
     }
     const obj = { onPress, children: items };
-    items = [closure_11(channel(1188).Icon, { source: channelIconWithGuild }), ];
-    const tmp8 = closure_11(channel(1188).Icon, { source: channelIconWithGuild });
-    const tmp2Result2 = channel(5049);
+    items = [closure_11(channel(1200).Icon, { source: channelIconWithGuild }), ];
+    const tmp8 = closure_11(channel(1200).Icon, { source: channelIconWithGuild });
+    const tmp2Result2 = channel(5417);
     const channelName = tmp2Result2.computeChannelName(channel, UserStore, RelationshipStore);
     const obj2 = { style: tmp.channelName, variant: "text-sm/semibold", children: channelName };
-    items[1] = closure_11(channel(4892).Text, obj2);
+    items[1] = closure_11(channel(5086).Text, obj2);
     return closure_12(closure_16, obj);
   }),
-  Emoji: ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
+  Emoji: ReactCompilerGating.isReactCompilerEnabled() ? (function Emoji(name) {
     let items2;
     let onPress;
     let surrogates;
@@ -747,7 +736,7 @@ let obj5 = {
     cResult[17] = combined;
     cResult[18] = tmp21;
     tmp20 = tmp21;
-  }) : ((url) => {
+  }) : (function Emoji(url) {
     let items;
     let items1;
     let items2;

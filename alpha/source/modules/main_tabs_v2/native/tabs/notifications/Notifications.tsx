@@ -1,40 +1,39 @@
-// Module ID: 16383
-// Function ID: 16384
+// Module ID: 16643
+// Function ID: 16644
 // Name: notifications/Notifications
-// Dependencies: [19, 17, 10833, 2048, 21, 4896, 587, 4743, 558, 576, 6440, 7496, 16384, 5916, 1126, 16385, 4892, 16386, 7506, 16388, 6626, 6664, 6688, 6997, 6023, 16392, 16393, 11520, 6658, 4738, 1618, 15981, 5918, 4595, 2]
+// Dependencies: [19, 17, 11182, 2060, 21, 5090, 587, 4937, 558, 576, 6618, 16644, 6189, 1126, 16645, 5086, 16646, 9633, 16648, 6803, 6841, 6865, 7185, 6209, 16652, 16653, 11518, 6835, 4932, 1630, 16241, 10211, 4787, 2]
 
-// Module 16383 (notifications/Notifications)
+// Module 16643 (notifications/Notifications)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import native from "native" /* 4595 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4738 */;
-import RootNavigationRef from "RootNavigationRef" /* 4743 */;
-import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 6023 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6440 */;
-import LayerScope2 from "LayerScope" /* 6658 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 6664 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6688 */;
-import MainTabsConstants from "MainTabsConstants" /* 10833 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 11520 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 15981 */;
-import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 16384 */;
-import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 16386 */;
-import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 16388 */;
-import NotificationCenterForYou from "NotificationCenterForYou" /* 16393 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import native from "native" /* 4787 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4932 */;
+import RootNavigationRef from "RootNavigationRef" /* 4937 */;
+import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 6209 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6618 */;
+import LayerScope2 from "LayerScope" /* 6835 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 6841 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6865 */;
+import MainTabsConstants from "MainTabsConstants" /* 11182 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 11518 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 16241 */;
+import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 16644 */;
+import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 16646 */;
+import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 16648 */;
+import NotificationCenterForYou from "NotificationCenterForYou" /* 16653 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const useAnalyticsLocationsDefault = useAnalyticsLocations;
-let _require, navigation, route;
+let _require, navigation;
 
-let c9;
 let metroImportAll;
 let metroImportDefault;
 let obj2;
@@ -43,8 +42,8 @@ let size;
 let size1;
 let tmp4;
 let tmp7;
-const ThemedGradientDefault = tmp4(5918);
-const NotificationCenterPermissionNudgeDefault = tmp7(16392);
+const ThemedGradientDefault = tmp4(10211);
+const NotificationCenterPermissionNudgeDefault = tmp7(16652);
 function goBack() {
   const obj = RootNavigationRef;
   navigation = obj.getRootNavigationRef();
@@ -59,7 +58,7 @@ function goBack() {
 const View = react_native.View;
 const YouBarNavigatorScreens = MainTabsConstants.YouBarNavigatorScreens;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
-({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { containerOuter: { flex: 1 }, containerOuterTablet: obj2, container: obj3, headerTitle: { height: 56, marginHorizontal: 16, flexDirection: "row", alignItems: "center" }, actionButtons: { flexDirection: "row", gap: 12 }, headerClose: size, headerText: { flex: 1, marginTop: 2 }, headerBorder: size1 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: nativeDefault.space.PX_8, flex: 1 };
@@ -67,190 +66,166 @@ createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderTopLeftRadius: nativeDefault.radii.sm, borderTopRightRadius: nativeDefault.radii.sm, flexGrow: 1 };
 size = { marginRight: nativeDefault.space.PX_16, height: nativeDefault.space.PX_32, width: nativeDefault.space.PX_32, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.lg };
 size1 = { left: 0, bottom: 0, height: 1, width: "100%", position: "absolute", backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
-let closure_10 = createStyles(obj);
+let closure_9 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((nestedInLaunchPad) => {
+let closure_11 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderInner(nestedInLaunchPad) {
   let closure_0;
   let intl;
   let intl2;
   let items;
   let items1;
   let items2;
-  let items3;
-  let items4;
-  let tmp10;
+  let tmp9;
   const obj = require("react");
-  const cResult = obj.c(18);
+  const cResult = obj.c(17);
   nestedInLaunchPad = nestedInLaunchPad.nestedInLaunchPad;
-  const tmp4 = closure_10();
+  const tmp4 = closure_9();
   const tmp6 = useIsWindowLargeDefault();
-  const obj2 = require("ForLaterExperiment");
-  const isForLaterExperimentOn = obj2.useIsForLaterExperimentOn("NativeNotifications");
   const ref = react.useRef(null);
-  const tmp9 = useForLaterCoachmarkDefault(ref);
-  _require = tmp9;
-  if (cResult[0] !== tmp9) {
-    const fn = function l() {
+  const tmp8 = useForLaterCoachmarkDefault(ref);
+  _require = tmp8;
+  if (cResult[0] !== tmp8) {
+    const fn = function s() {
       return closure_0(ContentDismissActionType.TAKE_ACTION);
     };
-    cResult[0] = tmp9;
+    cResult[0] = tmp8;
     cResult[1] = fn;
-    tmp10 = fn;
+    tmp9 = fn;
   } else {
-    tmp10 = cResult[1];
+    tmp9 = cResult[1];
   }
   if (cResult[2] === nestedInLaunchPad) {
-    if (cResult[3] === tmp10) {
-      if (cResult[4] === isForLaterExperimentOn) {
-        if (cResult[5] === tmp4.actionButtons) {
-          if (cResult[6] === tmp4.headerClose) {
-            if (cResult[7] === tmp4.headerText) {
-              let tmp12;
-              if (cResult[8] === tmp4.headerTitle) {
-                tmp12 = cResult[9];
-              }
-              if (cResult[10] === (!nestedInLaunchPad && !tmp6)) {
-                let tmp22;
-                let tmp25;
-                if (cResult[11] === tmp12) {
-                  tmp22 = cResult[12];
-                }
-                if (cResult[13] !== tmp4.headerBorder) {
-                  const obj3 = { style: items };
-                  items = [tmp4.headerBorder];
-                  const tmp28 = closure_7(View, obj3);
-                  cResult[13] = tmp4.headerBorder;
-                  cResult[14] = tmp28;
-                  tmp25 = tmp28;
-                } else {
-                  tmp25 = cResult[14];
-                }
-                if (cResult[15] === tmp22) {
-                  let tmp29;
-                  if (cResult[16] === tmp25) {
-                    tmp29 = cResult[17];
-                  }
-                  return tmp29;
-                }
-                const obj4 = { children: items1 };
-                items1 = [tmp22, tmp25];
-                const tmp32 = closure_9(View, obj4);
-                cResult[15] = tmp22;
-                cResult[16] = tmp25;
-                cResult[17] = tmp32;
-                tmp29 = tmp32;
-              }
-              const obj5 = { top: !nestedInLaunchPad && !tmp6, children: tmp12 };
-              const tmp24 = closure_7(require("common/SafeAreaView").SafeAreaPaddingView, obj5);
-              cResult[10] = !nestedInLaunchPad && !tmp6;
-              cResult[11] = tmp12;
-              cResult[12] = tmp24;
-              tmp22 = tmp24;
+    if (cResult[3] === tmp9) {
+      if (cResult[4] === tmp4.actionButtons) {
+        if (cResult[5] === tmp4.headerClose) {
+          if (cResult[6] === tmp4.headerText) {
+            let tmp11;
+            if (cResult[7] === tmp4.headerTitle) {
+              tmp11 = cResult[8];
             }
+            if (cResult[9] === (!nestedInLaunchPad && !tmp6)) {
+              let tmp19;
+              let tmp22;
+              if (cResult[10] === tmp11) {
+                tmp19 = cResult[11];
+              }
+              if (cResult[12] !== tmp4.headerBorder) {
+                const obj2 = { style: tmp4.headerBorder };
+                const tmp25 = closure_7(View, obj2);
+                cResult[12] = tmp4.headerBorder;
+                cResult[13] = tmp25;
+                tmp22 = tmp25;
+              } else {
+                tmp22 = cResult[13];
+              }
+              if (cResult[14] === tmp19) {
+                let tmp26;
+                if (cResult[15] === tmp22) {
+                  tmp26 = cResult[16];
+                }
+                return tmp26;
+              }
+              const obj3 = { children: items };
+              items = [tmp19, tmp22];
+              const tmp29 = closure_8(View, obj3);
+              cResult[14] = tmp19;
+              cResult[15] = tmp22;
+              cResult[16] = tmp29;
+              tmp26 = tmp29;
+            }
+            const obj4 = { top: !nestedInLaunchPad && !tmp6, children: tmp11 };
+            const tmp21 = closure_7(require("common/SafeAreaView").SafeAreaPaddingView, obj4);
+            cResult[9] = !nestedInLaunchPad && !tmp6;
+            cResult[10] = tmp11;
+            cResult[11] = tmp21;
+            tmp19 = tmp21;
           }
         }
       }
     }
   }
-  let tmp14Result2 = null;
+  let tmp12 = null;
   if (!nestedInLaunchPad) {
-    const obj6 = { style: tmp4.headerTitle, children: items2 };
-    const obj7 = { style: tmp4.headerClose, accessibilityLabel: intl.string(require("intl").t["13/7kX"]), onPress: goBack, children: closure_7(require("BackIconWithBadge").LeftBackIconWithBadge, {}) };
-    const PressableOpacity = tmp(5916).PressableOpacity;
+    const obj5 = { style: tmp4.headerTitle, children: items1 };
+    const obj6 = { style: tmp4.headerClose, accessibilityLabel: intl.string(require("intl").t["13/7kX"]), onPress: goBack, children: closure_7(require("BackIconWithBadge").LeftBackIconWithBadge, {}) };
+    const PressableOpacity = tmp(6189).PressableOpacity;
     intl = tmp(1126).intl;
-    items2 = [closure_7(PressableOpacity, obj7), , ];
-    const obj8 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp4.headerText, maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: intl2.string(require("intl").t.HcoRu0) };
-    const Text = tmp(4892).Text;
+    items1 = [closure_7(PressableOpacity, obj6), , ];
+    const obj7 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp4.headerText, maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: intl2.string(require("intl").t.HcoRu0) };
+    const Text = tmp(5086).Text;
     intl2 = tmp(1126).intl;
-    items2[1] = closure_7(Text, obj8);
-    let tmp14Result = null;
-    const obj9 = { style: tmp4.actionButtons, children: items4 };
-    if (isForLaterExperimentOn) {
-      const obj10 = { children: items3 };
-      const obj11 = { ref, type: require("SavedMessagesTypes").SavedMessageSortTypes.BOOKMARK, onOpen: tmp10 };
-      const tmp5Result = ForLaterOpenActionButtonDefault;
-      items3 = [closure_7(tmp5Result, obj11), ];
-      const obj12 = { type: require("SavedMessagesTypes").SavedMessageSortTypes.REMINDER, onOpen: tmp10 };
-      const tmp5Result2 = ForLaterOpenActionButtonDefault;
-      items3[1] = closure_7(tmp5Result2, obj12);
-      tmp14Result = tmp14(closure_8, obj10);
-    }
-    items4 = [tmp14Result, closure_7(NotificationCenterActionButtonDefault, {})];
-    items2[2] = closure_9(View, obj9);
-    tmp14Result2 = tmp14(tmp15, obj6);
+    items1[1] = closure_7(Text, obj7);
+    const obj8 = { style: tmp4.actionButtons, children: items2 };
+    const obj9 = { ref, type: require("SavedMessagesTypes").SavedMessageSortTypes.BOOKMARK, onOpen: tmp9 };
+    const tmp5Result = ForLaterOpenActionButtonDefault;
+    items2 = [closure_7(tmp5Result, obj9), , ];
+    const obj10 = { type: require("SavedMessagesTypes").SavedMessageSortTypes.REMINDER, onOpen: tmp9 };
+    const tmp5Result2 = ForLaterOpenActionButtonDefault;
+    items2[1] = closure_7(tmp5Result2, obj10);
+    items2[2] = closure_7(NotificationCenterActionButtonDefault, {});
+    items1[2] = closure_8(View, obj8);
+    tmp12 = closure_8(View, obj5);
   }
   cResult[2] = nestedInLaunchPad;
-  cResult[3] = tmp10;
-  cResult[4] = isForLaterExperimentOn;
-  cResult[5] = tmp4.actionButtons;
-  cResult[6] = tmp4.headerClose;
-  cResult[7] = tmp4.headerText;
-  cResult[8] = tmp4.headerTitle;
-  cResult[9] = tmp14Result2;
-  tmp12 = tmp14Result2;
-}) : ((nestedInLaunchPad) => {
+  cResult[3] = tmp9;
+  cResult[4] = tmp4.actionButtons;
+  cResult[5] = tmp4.headerClose;
+  cResult[6] = tmp4.headerText;
+  cResult[7] = tmp4.headerTitle;
+  cResult[8] = tmp12;
+  tmp11 = tmp12;
+}) : (function HeaderInner(nestedInLaunchPad) {
   let closure_0;
   let intl;
   let intl2;
   let items1;
   let items2;
   let items3;
-  let items4;
-  let items5;
-  let tmp10Result2;
+  let tmp8Result;
   nestedInLaunchPad = nestedInLaunchPad.nestedInLaunchPad;
-  _require = undefined;
-  const tmp = closure_10();
+  const tmp = closure_9();
   const tmp4 = useIsWindowLargeDefault();
-  const obj = require("ForLaterExperiment");
-  const isForLaterExperimentOn = obj.useIsForLaterExperimentOn("NativeNotifications");
   const ref = react.useRef(null);
-  const tmp8 = useForLaterCoachmarkDefault(ref);
-  _require = tmp8;
-  const items = [tmp8];
+  const tmp6 = useForLaterCoachmarkDefault(ref);
+  _require = tmp6;
+  const items = [tmp6];
   const callback = react.useCallback(() => closure_0(ContentDismissActionType.TAKE_ACTION), items);
-  let tmp13 = !nestedInLaunchPad;
+  let tmp12 = !nestedInLaunchPad;
   const SafeAreaPaddingView = require("common/SafeAreaView").SafeAreaPaddingView;
   if (!nestedInLaunchPad) {
-    tmp13 = !tmp4;
+    tmp12 = !tmp4;
   }
-  const obj2 = { top: tmp13, children: tmp10Result2 };
-  tmp10Result2 = null;
+  const obj = { top: tmp12, children: tmp8Result };
+  tmp8Result = null;
   if (!nestedInLaunchPad) {
-    const obj3 = { style: tmp.headerTitle, children: items1 };
-    const obj4 = { style: tmp.headerClose, accessibilityLabel: intl.string(require("intl").t["13/7kX"]), onPress: goBack, children: closure_7(require("BackIconWithBadge").LeftBackIconWithBadge, {}) };
-    const PressableOpacity = tmp5(5916).PressableOpacity;
-    intl = tmp5(1126).intl;
-    items1 = [closure_7(PressableOpacity, obj4), , ];
-    const obj5 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp.headerText, maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: intl2.string(require("intl").t.HcoRu0) };
-    const Text = tmp5(4892).Text;
-    intl2 = tmp5(1126).intl;
-    items1[1] = closure_7(Text, obj5);
-    let tmp10Result = null;
-    const obj6 = { style: tmp.actionButtons, children: items3 };
-    if (isForLaterExperimentOn) {
-      const obj7 = { children: items2 };
-      const obj8 = { ref, type: require("SavedMessagesTypes").SavedMessageSortTypes.BOOKMARK, onOpen: callback };
-      const tmp2Result = ForLaterOpenActionButtonDefault;
-      items2 = [closure_7(tmp2Result, obj8), ];
-      const obj9 = { type: require("SavedMessagesTypes").SavedMessageSortTypes.REMINDER, onOpen: callback };
-      const tmp2Result2 = ForLaterOpenActionButtonDefault;
-      items2[1] = closure_7(tmp2Result2, obj9);
-      tmp10Result = tmp10(closure_8, obj7);
-    }
-    items3 = [tmp10Result, closure_7(NotificationCenterActionButtonDefault, {})];
-    items1[2] = closure_9(View, obj6);
-    tmp10Result2 = tmp10(tmp11, obj3);
+    const obj2 = { style: tmp.headerTitle, children: items1 };
+    const obj3 = { style: tmp.headerClose, accessibilityLabel: intl.string(require("intl").t["13/7kX"]), onPress: goBack, children: closure_7(require("BackIconWithBadge").LeftBackIconWithBadge, {}) };
+    const PressableOpacity = tmp11(6189).PressableOpacity;
+    intl = tmp11(1126).intl;
+    items1 = [closure_7(PressableOpacity, obj3), , ];
+    const obj4 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp.headerText, maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: intl2.string(require("intl").t.HcoRu0) };
+    const Text = tmp11(5086).Text;
+    intl2 = tmp11(1126).intl;
+    items1[1] = closure_7(Text, obj4);
+    const obj5 = { style: tmp.actionButtons, children: items2 };
+    const obj6 = { ref, type: require("SavedMessagesTypes").SavedMessageSortTypes.BOOKMARK, onOpen: callback };
+    const tmp2Result = ForLaterOpenActionButtonDefault;
+    items2 = [closure_7(tmp2Result, obj6), , ];
+    const obj7 = { type: require("SavedMessagesTypes").SavedMessageSortTypes.REMINDER, onOpen: callback };
+    const tmp2Result2 = ForLaterOpenActionButtonDefault;
+    items2[1] = closure_7(tmp2Result2, obj7);
+    items2[2] = closure_7(NotificationCenterActionButtonDefault, {});
+    items1[2] = closure_8(View, obj5);
+    tmp8Result = tmp8(tmp9, obj2);
   }
-  const obj10 = { children: items4 };
-  items4 = [closure_7(SafeAreaPaddingView, obj2), ];
-  const obj11 = { style: items5 };
-  items5 = [tmp.headerBorder];
-  items4[1] = closure_7(View, obj11);
-  return closure_9(View, obj10);
+  const obj8 = { children: items3 };
+  items3 = [closure_7(SafeAreaPaddingView, obj), ];
+  const obj9 = { style: tmp.headerBorder };
+  items3[1] = closure_7(View, obj9);
+  return closure_8(View, obj8);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifications(arg0) {
   let inNestedNavigator;
   let items1;
   let nestedInLaunchPad;
@@ -262,7 +237,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj = react2;
   const cResult = obj.c(20);
   ({ style, nestedInLaunchPad, inNestedNavigator } = arg0);
-  const tmp6 = closure_10();
+  const tmp6 = closure_9();
   const tmp8 = useAnalyticsLocationsDefault;
   const analyticsLocations = tmp8(AnalyticsLocationDefault.NOTIFICATIONS).analyticsLocations;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -280,7 +255,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const layoutEffect = react.useLayoutEffect(tmp9, tmp10);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function u() {
+    const fn2 = function f() {
       const obj = require("RootNavigationRef");
       navigation = obj.getRootNavigationRef();
       if (null != navigation) {
@@ -351,7 +326,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             return tmp32;
           }
           const obj3 = { zIndex: 1, children: metroImportDefault(useAnalyticsLocations.AnalyticsLocationProvider, obj4) };
-          const LayerScope = tmp(6658).LayerScope;
+          const LayerScope = tmp(6835).LayerScope;
           obj4 = { value: analyticsLocations, children: tmp28 };
           const tmp34 = metroImportDefault(LayerScope, obj3);
           cResult[17] = analyticsLocations;
@@ -362,7 +337,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const obj5 = { style: tmp14, children: items1 };
       items1 = [tmp15, tmp19, tmp22, tmp25];
-      const tmp31 = React4(View, obj5);
+      const tmp31 = metroImportAll(View, obj5);
       cResult[13] = tmp14;
       cResult[14] = tmp15;
       cResult[15] = tmp22;
@@ -370,7 +345,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp28 = tmp31;
     }
     const obj6 = { nestedInLaunchPad: undefined !== nestedInLaunchPad && nestedInLaunchPad, inNestedNavigator: undefined !== inNestedNavigator && inNestedNavigator };
-    const tmp18 = metroImportDefault(closure_12, obj6);
+    const tmp18 = metroImportDefault(closure_11, obj6);
     cResult[6] = undefined !== inNestedNavigator && inNestedNavigator;
     cResult[7] = undefined !== nestedInLaunchPad && nestedInLaunchPad;
     cResult[8] = tmp18;
@@ -381,7 +356,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = tmp6.container;
   cResult[5] = items2;
   tmp14 = items2;
-}) : ((nestedInLaunchPad) => {
+}) : (function Notifications(nestedInLaunchPad) {
   let AnalyticsLocationProvider;
   let items;
   let items1;
@@ -396,7 +371,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  const tmp = closure_10();
+  const tmp = closure_9();
   const tmp2 = useAnalyticsLocationsDefault;
   const analyticsLocations = tmp2(AnalyticsLocationDefault.NOTIFICATIONS).analyticsLocations;
   const layoutEffect = react.useLayoutEffect(() => {
@@ -419,16 +394,16 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj.useNavigatorBackPressHandler(callback);
   const obj2 = { zIndex: 1, children: metroImportDefault(AnalyticsLocationProvider, obj3) };
   const LayerScope = LayerScope2.LayerScope;
-  obj3 = { value: analyticsLocations, children: React4(View, obj4) };
+  obj3 = { value: analyticsLocations, children: metroImportAll(View, obj4) };
   obj4 = { style: items, children: items1 };
   items = [tmp.container, style];
   AnalyticsLocationProvider = useAnalyticsLocations.AnalyticsLocationProvider;
-  items1 = [metroImportDefault(closure_12, { nestedInLaunchPad: flag, inNestedNavigator: flag2 }), metroImportDefault(NotificationCenterPermissionNudgeDefault, {}), metroImportDefault(NotificationCenterForYou.NotificationCenterForYou, { nestedInLaunchPad: flag }), metroImportDefault(TTIFirstContentfulPaint.TTIFirstContentfulPaint, { label: "notifications" })];
+  items1 = [metroImportDefault(closure_11, { nestedInLaunchPad: flag, inNestedNavigator: flag2 }), metroImportDefault(NotificationCenterPermissionNudgeDefault, {}), metroImportDefault(NotificationCenterForYou.NotificationCenterForYou, { nestedInLaunchPad: flag }), metroImportDefault(TTIFirstContentfulPaint.TTIFirstContentfulPaint, { label: "notifications" })];
   return metroImportDefault(LayerScope, obj2);
 });
-let closure_13 = tmp4;
+let closure_12 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThemedNotifications(route) {
   let containerOuter;
   let items;
   const obj = react2;
@@ -436,7 +411,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   const tmp5 = useColorThemeBackgroundDefault();
   const top = useSafeAreaInsetsDefault().top;
   const tmp6 = useIsWindowLargeDefault();
-  const tmp7 = closure_10();
+  const tmp7 = closure_9();
   if (cResult[0] === tmp6) {
     if (cResult[1] === top) {
       if (cResult[2] === tmp7.containerOuter) {
@@ -482,7 +457,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
             }
             const obj2 = { style: tmp8, children: items };
             items = [tmp12, tmp25];
-            const tmp31 = React4(View, obj2);
+            const tmp31 = metroImportAll(View, obj2);
             cResult[12] = tmp8;
             cResult[13] = tmp25;
             cResult[14] = tmp31;
@@ -497,7 +472,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
         }
         const obj4 = { inNestedNavigator };
         const merged = Object.assign(route);
-        const tmp24 = metroImportDefault(closure_13, obj4);
+        const tmp24 = metroImportDefault(closure_12, obj4);
         cResult[6] = route;
         cResult[7] = inNestedNavigator;
         cResult[8] = tmp24;
@@ -519,7 +494,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   cResult[3] = tmp7.containerOuterTablet;
   cResult[4] = containerOuter;
   tmp8 = containerOuter;
-}) : ((route) => {
+}) : (function ThemedNotifications(route) {
   let inNestedNavigator;
   let items1;
   let obj4;
@@ -528,7 +503,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   const top = useSafeAreaInsetsDefault().top;
   const tmp2 = useIsWindowLargeDefault();
   let closure_1 = tmp2;
-  const tmp3 = closure_10();
+  const tmp3 = closure_9();
   let closure_2 = tmp3;
   let items = [tmp3, tmp2, top];
   const memo = react.useMemo(() => {
@@ -553,9 +528,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   const merged = Object.assign(route);
   route = route.route;
   inNestedNavigator = undefined;
-  const tmp6 = React4;
+  const tmp6 = metroImportAll;
   const tmp7 = View;
-  tmp9 = closure_13;
+  tmp9 = closure_12;
   if (route != null) {
     const params = route.params;
     if (params != null) {
@@ -565,21 +540,23 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   items1[1] = metroImportDefault(ThemeContextProvider, obj3);
   return tmp6(tmp7, obj2);
 });
-let closure_14 = tmp5;
+let closure_13 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThemedNotificationsModal() {
   let first;
   const obj = react2;
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp5 = metroImportDefault(closure_14, { inNestedNavigator: true });
+    const tmp5 = metroImportDefault(closure_13, { inNestedNavigator: true });
     cResult[0] = tmp5;
     first = tmp5;
   } else {
     first = cResult[0];
   }
   return first;
-}) : (() => metroImportDefault(closure_14, { inNestedNavigator: true }));
+}) : (function ThemedNotificationsModal() {
+  return metroImportDefault(closure_13, { inNestedNavigator: true });
+});
 size = size_mod;
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/notifications/Notifications.tsx");
 

@@ -1,16 +1,16 @@
-// Module ID: 15012
-// Function ID: 15013
+// Module ID: 15274
+// Function ID: 15275
 // Name: QuestDockBlurredHeaderPlaceholder
-// Dependencies: [19, 17, 5630, 14912, 21, 4896, 558, 576, 14913, 15013, 4618, 6577, 2]
+// Dependencies: [19, 17, 5977, 15174, 21, 5090, 558, 576, 15175, 15275, 4810, 6753, 2]
 
-// Module 15012 (QuestDockBlurredHeaderPlaceholder)
+// Module 15274 (QuestDockBlurredHeaderPlaceholder)
 import react_native from "react-native" /* 17 */;
-import QuestConstants from "QuestConstants" /* 5630 */;
-import _slicedToArray from "_slicedToArray" /* 15013 */;
+import QuestConstants from "QuestConstants" /* 5977 */;
+import _slicedToArray from "_slicedToArray" /* 15275 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 14912 */;
+import QuestDockConstants from "QuestDockConstants" /* 15174 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ const merged1 = Object.assign(StyleSheet.absoluteFillObject);
 let closure_9 = createStyles(obj);
 const __initData = { code: "function QuestDockBlurredHeaderPlaceholderTsx1(){const{activeQuestDockMode,QuestDockMode,QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED,questDockWrapperSpecs}=this.__closure;return{left:activeQuestDockMode.get()===QuestDockMode.EXPANDED?-QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED:0,width:questDockWrapperSpecs.get().width+QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED};}" };
 const __initData2 = { code: "function QuestDockBlurredHeaderPlaceholderTsx2(){const{activeQuestDockMode,QuestDockMode,QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED,questDockWrapperSpecs}=this.__closure;return{left:activeQuestDockMode.get()===QuestDockMode.EXPANDED?-QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED:0,width:questDockWrapperSpecs.get().width+QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED};}" };
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockBlurredHeaderPlaceholder(arg0) {
   let items;
   let items1;
   let layoutAnimatedStyle;
@@ -48,7 +48,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   let obj = questDockWrapperSpecs(576);
   const cResult = obj.c(20);
   ({ layoutAnimation, layoutAnimatedStyle, opacityAnimatedStyle, placeholder } = arg0);
-  const context = react.useContext(questDockWrapperSpecs(14913).QuestDockGestureContext);
+  const context = react.useContext(questDockWrapperSpecs(15175).QuestDockGestureContext);
   questDockWrapperSpecs = context.questDockWrapperSpecs;
   const activeQuestDockMode = context.activeQuestDockMode;
   if (cResult[0] !== placeholder) {
@@ -66,7 +66,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     }
     const _Uint8Array = Uint8Array;
     const _atob = atob;
-    const tmpResult = questDockWrapperSpecs(15013);
+    const tmpResult = questDockWrapperSpecs(15275);
     const thumbHashToDataURLResult = tmpResult.thumbHashToDataURL(Uint8Array.from(atob(placeholder), tmp7));
     cResult[0] = placeholder;
     cResult[1] = thumbHashToDataURLResult;
@@ -83,7 +83,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     tmp9 = cResult[4];
   }
   const tmp10 = closure_9();
-  const tmpResult2 = questDockWrapperSpecs(4618);
+  const tmpResult2 = questDockWrapperSpecs(4810);
   class O {
     constructor() {
       let num = 0;
@@ -134,7 +134,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
             }
             const obj5 = { style: items1 };
             items1 = [tmp10.overlay, opacityAnimatedStyle];
-            const tmp20 = closure_6(activeQuestDockMode(6577), obj5);
+            const tmp20 = closure_6(activeQuestDockMode(6753), obj5);
             cResult[14] = opacityAnimatedStyle;
             cResult[15] = tmp10.overlay;
             cResult[16] = tmp20;
@@ -142,7 +142,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
           }
         }
         const obj6 = { source: tmp9, style: tmp12, layout: layoutAnimation };
-        const tmp16 = closure_6(activeQuestDockMode(4618).Image, obj6);
+        const tmp16 = closure_6(activeQuestDockMode(4810).Image, obj6);
         cResult[10] = tmp9;
         cResult[11] = layoutAnimation;
         cResult[12] = tmp12;
@@ -158,7 +158,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[8] = tmp10.image;
   cResult[9] = items2;
   tmp12 = items2;
-}) : ((arg0) => {
+}) : (function QuestDockBlurredHeaderPlaceholder(arg0) {
   let activeQuestDockMode;
   let items1;
   let items2;

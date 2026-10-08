@@ -1,38 +1,38 @@
-// Module ID: 16513
-// Function ID: 16514
+// Module ID: 16773
+// Function ID: 16774
 // Name: MainTabsChannelScreenStack
-// Dependencies: [32, 19, 17, 7510, 1085, 1096, 21, 4896, 558, 576, 4618, 16514, 16516, 5597, 4797, 4745, 16517, 4595, 16518, 5745, 4619, 1491, 4751, 15967, 16364, 6147, 4738, 15966, 584, 4752, 2]
+// Dependencies: [32, 19, 17, 9233, 1085, 1096, 21, 5090, 558, 576, 4810, 16774, 16776, 5392, 4991, 4939, 16777, 4787, 16778, 5328, 4811, 1503, 4945, 16227, 16624, 6326, 4932, 16226, 584, 4946, 2]
 
-// Module 16513 (MainTabsChannelScreenStack)
+// Module 16773 (MainTabsChannelScreenStack)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants2 from "Constants" /* 1096 */;
-import Link from "Link" /* 1491 */;
-import native from "native" /* 4595 */;
-import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4619 */;
-import useChatLayoutDefault from "useChatLayout" /* 4745 */;
-import ChatInputUtils from "ChatInputUtils" /* 4751 */;
-import useThemeDefault from "useTheme" /* 4797 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6147 */;
-import react_native from "react-native" /* 7510 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 15966 */;
-import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 15967 */;
-import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 16364 */;
-import navigationTTIEnabled from "navigationTTIEnabled" /* 16514 */;
-import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 16516 */;
-import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 16517 */;
-import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 16518 */;
+import Link from "Link" /* 1503 */;
+import native from "native" /* 4787 */;
+import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4811 */;
+import useChatLayoutDefault from "useChatLayout" /* 4939 */;
+import ChatInputUtils from "ChatInputUtils" /* 4945 */;
+import useThemeDefault from "useTheme" /* 4991 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6326 */;
+import react_native from "react-native" /* 9233 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 16226 */;
+import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 16227 */;
+import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 16624 */;
+import navigationTTIEnabled from "navigationTTIEnabled" /* 16774 */;
+import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 16776 */;
+import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 16777 */;
+import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 16778 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const MainTabsNavigatorPanelContextDefault = MainTabsNavigatorPanelContext;
-let constants, importDefault, navigation, screens;
+let constants, importDefault, navigation;
 
 let c10;
 let c9;
@@ -44,9 +44,9 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let tmp5;
-const ReanimatedRexport = tmp(4618);
-const useMountEffect = tmp(5597);
-const react3 = tmp5(5745);
+const ReanimatedRexport = tmp(4810);
+const react3 = tmp5(5328);
+const useMountEffect = tmp(5392);
 function getKey(index) {
   return String(index.index);
 }
@@ -62,7 +62,7 @@ const __initData2 = { code: "function MainTabsChannelScreenStackTsx2(visible,was
 const __initData3 = { code: "function MainTabsChannelScreenStackTsx3(){const{isStackVisible,highestFullyRenderedScreenIndex,index,alwaysVisible,translateX,maxWidth}=this.__closure;return isStackVisible&&highestFullyRenderedScreenIndex.get()<=index&&(alwaysVisible||translateX.get()<maxWidth);}" };
 const __initData4 = { code: "function MainTabsChannelScreenStackTsx4(visible,wasVisible){const{runOnJS,setIsVisible}=this.__closure;if(visible===wasVisible)return;runOnJS(setIsVisible)(visible);}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((translateX) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelScreenNavigationTTIVisibility(translateX) {
   let tmp = translateX;
   let obj = translateX(highestFullyRenderedScreenIndex[9]);
   const cResult = obj.c(7);
@@ -86,7 +86,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((translateX) =>
             const tmp8 = index(isStackVisible.useState(tmp5), 2);
             let closure_6 = tmp10;
             const first = tmp8[0];
-            const fn2 = function f() {
+            const fn2 = function y() {
               let tmp = isStackVisible && highestFullyRenderedScreenIndex.get() <= index;
               if (tmp) {
                 tmp = closure_5 || translateX.get() < maxWidth;
@@ -135,7 +135,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((translateX) =>
   cResult[5] = translateX;
   cResult[6] = fn;
   tmp5 = fn;
-}) : ((translateX) => {
+}) : (function useChannelScreenNavigationTTIVisibility(translateX) {
   translateX = translateX.translateX;
   const maxWidth = translateX.maxWidth;
   highestFullyRenderedScreenIndex = translateX.highestFullyRenderedScreenIndex;
@@ -156,7 +156,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((translateX) =>
   let closure_6 = tmp3;
   const first = tmp[0];
   let obj = translateX(highestFullyRenderedScreenIndex[10]);
-  const fn = function x() {
+  const fn = function b() {
     let tmp = isStackVisible && highestFullyRenderedScreenIndex.get() <= index;
     if (tmp) {
       tmp = flag || translateX.get() < maxWidth;
@@ -183,7 +183,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((translateX) =>
   return first;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnabledChannelScreenNavigationTTIVisibility(arg0) {
   let alwaysVisible;
   let children;
   let index;
@@ -229,7 +229,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = translateX;
   cResult[6] = obj2;
   tmp3 = obj2;
-}) : ((alwaysVisible) => {
+}) : (function EnabledChannelScreenNavigationTTIVisibility(alwaysVisible) {
   let index;
   let isStackVisible;
   let maxWidth;
@@ -242,7 +242,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return alwaysVisible.children(closure_19({ translateX, maxWidth, highestFullyRenderedScreenIndex, index, isStackVisible, alwaysVisible }));
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelScreenNavigationTTIVisibility(children) {
   let tmp2;
   const obj = react2;
   const cResult = obj.c(4);
@@ -269,7 +269,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     tmp2 = cResult[1];
   }
   return tmp2;
-}) : ((children) => {
+}) : (function ChannelScreenNavigationTTIVisibility(children) {
   let childrenResult;
   const obj = navigationTTIEnabled;
   if (obj.isNavigationTTIEnabled()) {
@@ -288,7 +288,7 @@ const __initData8 = { code: "function MainTabsChannelScreenStackTsx8(){const{tra
 const __initData9 = { code: "function MainTabsChannelScreenStackTsx9(isVisibleBeneath,wasVisibleBeneath){const{highestFullyRenderedScreenIndex,index}=this.__closure;if(isVisibleBeneath===wasVisibleBeneath)return;if(isVisibleBeneath){if(highestFullyRenderedScreenIndex.get()>=index){highestFullyRenderedScreenIndex.set(index-1);}return;}if(highestFullyRenderedScreenIndex.get()<index){highestFullyRenderedScreenIndex.set(index);}}" };
 const __initData10 = { code: "function MainTabsChannelScreenStackTsx10(){const{enabled,highestFullyRenderedScreenIndex,index}=this.__closure;return enabled&&highestFullyRenderedScreenIndex.get()>index;}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((index, highestFullyRenderedScreenIndex, translateX) => {
+let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsCompletelyCovered(index, highestFullyRenderedScreenIndex, translateX) {
   let first;
   let closure_0 = index;
   importDefault = highestFullyRenderedScreenIndex;
@@ -306,13 +306,13 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((index, highest
   }
   const obj3 = HideCoveredChannelsExperimentDefault;
   const enabled = obj3.useConfig(first).enabled;
-  const fn = function o() {
+  const fn = function u() {
     return closure_2.get() > 0;
   };
   fn.__closure = { translateX };
   fn.__workletHash = 3913618654716;
   fn.__initData = __initData5;
-  const fn2 = function u(arg0, arg1) {
+  const fn2 = function o(arg0, arg1) {
     if (arg0 !== arg1) {
       const value = closure_1.get();
       if (arg0) {
@@ -359,7 +359,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((index, highest
   cResult[2] = index;
   cResult[3] = fn3;
   tmp6 = fn3;
-}) : ((index, highestFullyRenderedScreenIndex, translateX) => {
+}) : (function useIsCompletelyCovered(index, highestFullyRenderedScreenIndex, translateX) {
   let closure_0 = index;
   let closure_1 = highestFullyRenderedScreenIndex;
   let closure_2 = translateX;
@@ -395,7 +395,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((index, highest
       const result = obj.set(tmp - 1);
     }
   });
-  const fn3 = function u() {
+  const fn3 = function o() {
     const tmp = enabled && closure_1.get() > closure_0;
     return tmp;
   };
@@ -406,7 +406,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((index, highest
   return obj4.useDerivedValue(fn3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_29 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let closure_29 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function FirstChannelScreen(guildId) {
   let containerWidth;
   let freeze;
   let isActive;
@@ -619,7 +619,7 @@ let closure_29 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((gui
   cResult[3] = items2;
   tmp10 = items2;
   tmp9 = fn;
-}) : ((cleanup) => {
+}) : (function FirstChannelScreen(cleanup) {
   let channelId;
   let containerWidth;
   let frame;
@@ -704,7 +704,7 @@ const __initData12 = { code: "function MainTabsChannelScreenStackTsx12(isFullyOp
 const __initData13 = { code: "function MainTabsChannelScreenStackTsx13(){const{translateX}=this.__closure;return translateX.get()===0;}" };
 const __initData14 = { code: "function MainTabsChannelScreenStackTsx14(isFullyOpen,prev){const{index,mainTabsDisallowGesture}=this.__closure;if(isFullyOpen===prev)return;if(index!==1)return;mainTabsDisallowGesture.set(isFullyOpen);}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_34 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let closure_34 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelScreen(guildId) {
   let freeze;
   let gesture;
   let index;
@@ -751,16 +751,16 @@ let closure_34 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((gui
       closure_28(index, highestFullyRenderedScreenIndex, translateX);
       const disallowGesture = obj3.useContext(tmp4(tmp2[24])).disallowGesture;
       const tmpResult = tmp(tmp2[10]);
-      class N {
+      class X {
         constructor() {
           return 0 === translateX.get();
         }
       }
       const obj4 = { translateX };
-      N.__closure = obj4;
-      N.__workletHash = 17200684995434;
-      N.__initData = __initData11;
-      class X {
+      X.__closure = obj4;
+      X.__workletHash = 17200684995434;
+      X.__initData = __initData11;
+      class N {
         constructor(arg0, arg1) {
           const tmp = arg0 !== arg1 && 1 === index;
           if (tmp) {
@@ -769,10 +769,10 @@ let closure_34 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((gui
         }
       }
       const obj5 = { index, mainTabsDisallowGesture: disallowGesture };
-      X.__closure = obj5;
-      X.__workletHash = 109995460179;
-      X.__initData = __initData12;
-      const animatedReaction = tmpResult.useAnimatedReaction(N, X);
+      N.__closure = obj5;
+      N.__workletHash = 109995460179;
+      N.__initData = __initData12;
+      const animatedReaction = tmpResult.useAnimatedReaction(X, N);
       if (cResult[6] === cleanup) {
         let tmp17;
         let tmp19;
@@ -824,7 +824,7 @@ let closure_34 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((gui
         }
         const effect1 = obj3.useEffect(tmp21, tmp22);
         tmp(tmp2[16]);
-        class N {
+        class X {
           constructor() {
             return 0 === translateX.get();
           }
@@ -901,7 +901,7 @@ let closure_34 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((gui
                             cResult[32] = !isActive;
                             cResult[33] = "no-hide-descendants";
                             cResult[34] = tmp41;
-                            class N {
+                            class X {
                               constructor() {
                                 return 0 === translateX.get();
                               }
@@ -924,7 +924,7 @@ let closure_34 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((gui
                 const obj10 = { translateX, maxWidth, highestFullyRenderedScreenIndex, index, isStackVisible: isNavigationTTIStackVisible, children: tmp36 };
                 const tmp40 = parentFreezeValue(closure_21, obj10);
                 cResult[22] = highestFullyRenderedScreenIndex;
-                class N {
+                class X {
                   constructor() {
                     return 0 === translateX.get();
                   }
@@ -932,7 +932,7 @@ let closure_34 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((gui
                 cResult[24] = isNavigationTTIStackVisible;
                 cResult[25] = maxWidth;
                 cResult[26] = tmp36;
-                class X {
+                class N {
                   constructor(arg0, arg1) {
                     const tmp = arg0 !== arg1 && 1 === index;
                     if (tmp) {
@@ -953,7 +953,7 @@ let closure_34 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((gui
           cResult[18] = guildId;
           cResult[19] = index;
           cResult[20] = showCreateThread;
-          class N {
+          class X {
             constructor() {
               return 0 === translateX.get();
             }
@@ -962,7 +962,7 @@ let closure_34 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((gui
           tmp36 = ie;
         }
         const items1 = [tmp31, onyxContainerStyles];
-        class X {
+        class N {
           constructor(arg0, arg1) {
             const tmp = arg0 !== arg1 && 1 === index;
             if (tmp) {
@@ -1002,7 +1002,7 @@ let closure_34 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((gui
   cResult[1] = navigation;
   cResult[2] = fn;
   tmp8 = fn;
-}) : ((cleanup) => {
+}) : (function ChannelScreen(cleanup) {
   let Freeze;
   let Provider;
   let channelId;
@@ -1070,7 +1070,7 @@ let closure_34 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((gui
   I.__closure = { translateX };
   I.__workletHash = 279822179624;
   I.__initData = __initData13;
-  const fn = function y(arg0, arg1) {
+  const fn = function f(arg0, arg1) {
     const tmp = arg0 !== arg1 && 1 === index;
     if (tmp) {
       const result = disallowGesture.set(arg0);
@@ -1140,7 +1140,7 @@ const __initData16 = { code: "function MainTabsChannelScreenStackTsx16(value,pre
 const __initData17 = { code: "function MainTabsChannelScreenStackTsx17(){const{translateX,maxWidth}=this.__closure;return translateX.get()===maxWidth;}" };
 const __initData18 = { code: "function MainTabsChannelScreenStackTsx18(value,prev){const{runOnJS,setIsHidden}=this.__closure;if(value===prev)return;runOnJS(setIsHidden)(value);}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((screens) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MainTabsChannelScreenStack(screens) {
   let items;
   let navigationTTIStackVisible;
   let ref;
@@ -1405,7 +1405,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
   cResult[9] = shouldFreeze;
   cResult[10] = sharedValue;
   cResult[11] = items;
-}) : ((screens) => {
+}) : (function MainTabsChannelScreenStack(screens) {
   let ThemeContextProvider;
   let obj5;
   let obj6;
@@ -1560,7 +1560,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
         let isChatLockedOpen = tmp.type !== useChannelScreensFromNavigation.ChannelScreenType.DEFAULT;
         const tmp7 = require;
         if (!isChatLockedOpen) {
-          const tmp7Result = tmp7(4745);
+          const tmp7Result = tmp7(4939);
           isChatLockedOpen = tmp7Result.getChatLayout().isChatLockedOpen;
         }
         if (!isChatLockedOpen) {

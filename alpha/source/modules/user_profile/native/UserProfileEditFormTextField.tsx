@@ -1,13 +1,13 @@
-// Module ID: 14456
-// Function ID: 14457
+// Module ID: 14683
+// Function ID: 14684
 // Name: UserProfileEditFormTextField
-// Dependencies: [109, 19, 21, 558, 576, 6587, 6105, 2]
+// Dependencies: [109, 19, 21, 558, 576, 6763, 6283, 2]
 
-// Module 14456 (UserProfileEditFormTextField)
+// Module 14683 (UserProfileEditFormTextField)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 6105 */;
-import TextArea2 from "TextArea" /* 6587 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 6283 */;
+import TextArea2 from "TextArea" /* 6763 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 
 let closure_2 = ["label", "description", "errorMessage", "containerStyle", "numberOfLines", "inputRef"];
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileEditFormTextField(arg0) {
   let containerStyle;
   let description;
   let errorMessage;
@@ -84,7 +84,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 }
                 tmp16 = tmp22;
               }
-              const TextArea = tmp(6587).TextArea;
+              const TextArea = tmp(6763).TextArea;
               const merged = Object.assign(tmp14);
               const tmp27 = <TextArea ref={tmp7} />;
               cResult[15] = tmp14;
@@ -97,7 +97,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   tmp16 = cResult[20];
                 }
               }
-              const TextInput = tmp(6105).TextInput;
+              const TextInput = tmp(6283).TextInput;
               const merged1 = Object.assign(tmp14);
               const tmp21 = <TextInput ref={tmp7} clearable />;
               cResult[18] = tmp14;
@@ -121,7 +121,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[13] = str;
   cResult[14] = obj4;
   tmp14 = obj4;
-}) : ((inputRef) => {
+}) : (function UserProfileEditFormTextField(inputRef) {
   let containerStyle;
   let description;
   let errorMessage;

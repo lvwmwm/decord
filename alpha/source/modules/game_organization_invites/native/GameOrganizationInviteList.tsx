@@ -1,18 +1,16 @@
-// Module ID: 13794
-// Function ID: 13795
+// Module ID: 14019
+// Function ID: 14020
 // Name: GameOrganizationInviteList
-// Dependencies: [19, 21, 4896, 587, 558, 576, 6478, 13795, 1126, 1188, 6119, 2]
+// Dependencies: [19, 21, 5090, 587, 558, 576, 6656, 14020, 1126, 1200, 6298, 2]
 
-// Module 13794 (GameOrganizationInviteList)
+// Module 14019 (GameOrganizationInviteList)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import GameOrganizationInviteRowDefault from "GameOrganizationInviteRow" /* 13795 */;
+import GameOrganizationInviteRowDefault from "GameOrganizationInviteRow" /* 14020 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let users;
 
 function keyExtractor(id) {
   return id.id;
@@ -23,7 +21,7 @@ let closure_5 = createStyles.createStyles((arg0) => {
   ({ paddingBottom: arg0 + nativeDefault.space.PX_16 });
   return obj;
 });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((users) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganizationInviteList(users) {
   let content;
   let emptyState;
   let first;
@@ -112,7 +110,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((users) => {
   cResult[3] = users.length;
   cResult[4] = S;
   tmp6 = S;
-}) : ((users) => {
+}) : (function GameOrganizationInviteList(users) {
   let intl;
   users = users.users;
   const getSendState = users.getSendState;

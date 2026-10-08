@@ -1,15 +1,15 @@
-// Module ID: 11684
-// Function ID: 11685
+// Module ID: 11749
+// Function ID: 11750
 // Name: EntityBorderAppIcon
-// Dependencies: [17, 21, 587, 4896, 558, 576, 5981, 2]
+// Dependencies: [17, 21, 587, 5090, 558, 576, 6164, 2]
 
-// Module 11684 (EntityBorderAppIcon)
+// Module 11749 (EntityBorderAppIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import createStyles from "createStyles" /* 4896 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let closure_6 = createStyles.createStyles((width, borderRadius) => {
   ({ padding: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden", borderRadius: borderRadius + 1 });
   return obj;
 });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EntityBorderAppIcon(arg0) {
   let iconBorderRadius;
   let iconSize;
   let iconSource;
@@ -84,7 +84,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = wrapperStyle;
   cResult[2] = items1;
   tmp5 = items1;
-}) : ((iconSize) => {
+}) : (function EntityBorderAppIcon(iconSize) {
   let iconSource;
   let iconStyle;
   let wrapperStyle;

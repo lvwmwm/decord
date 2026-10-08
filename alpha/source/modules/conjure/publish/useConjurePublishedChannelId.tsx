@@ -1,18 +1,18 @@
-// Module ID: 16627
-// Function ID: 16628
+// Module ID: 16887
+// Function ID: 16888
 // Name: useConjurePublishedChannelId
-// Dependencies: [4513, 558, 576, 6756, 504, 2]
+// Dependencies: [4705, 558, 576, 6932, 504, 2]
 
-// Module 16627 (useConjurePublishedChannelId)
-import ConjureUtils from "ConjureUtils" /* 6756 */;
-import GuildChannelStore from "GuildChannelStore" /* 4513 */;
+// Module 16887 (useConjurePublishedChannelId)
+import ConjureUtils from "ConjureUtils" /* 6932 */;
+import GuildChannelStore from "GuildChannelStore" /* 4705 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePublishedChannelId(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -38,7 +38,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     const tmpResult = tmp(504);
     return tmpResult.useStateFromStores(first, tmp6, tmp7);
   }
-  const fn = function o() {
+  const fn = function t() {
     let findConjureChannelIdResult = null;
     if (null != closure_1) {
       const obj = ConjureUtils;
@@ -53,7 +53,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = items1;
   tmp7 = items1;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useConjurePublishedChannelId(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;

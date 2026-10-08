@@ -1,19 +1,19 @@
-// Module ID: 14350
-// Function ID: 14351
+// Module ID: 14578
+// Function ID: 14579
 // Name: relationships
-// Dependencies: [32, 4525, 1377, 5323, 1085, 14335, 8025, 1097, 9059, 9064, 2]
+// Dependencies: [32, 4717, 1389, 5635, 1085, 14560, 8433, 1097, 11134, 11142, 2]
 
-// Module 14350 (relationships)
+// Module 14578 (relationships)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import Constants2 from "Constants" /* 5323 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8025 */;
-import RPCErrorDefault from "RPCError" /* 9059 */;
-import RPCHelpers from "RPCHelpers" /* 9064 */;
+import Constants2 from "Constants" /* 5635 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8433 */;
+import RPCErrorDefault from "RPCError" /* 11134 */;
+import RPCHelpers from "RPCHelpers" /* 11142 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14335 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14560 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;

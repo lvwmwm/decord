@@ -1,14 +1,14 @@
-// Module ID: 6683
-// Function ID: 6684
+// Module ID: 6860
+// Function ID: 6861
 // Name: useProviderConnection
-// Dependencies: [5, 19, 5447, 504, 6684, 2]
+// Dependencies: [5, 19, 5757, 504, 6861, 2]
 // Exports: useProviderConnection
 
-// Module 6683 (useProviderConnection)
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 6684 */;
+// Module 6860 (useProviderConnection)
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 6861 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5447 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5757 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

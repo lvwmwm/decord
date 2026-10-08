@@ -1,28 +1,28 @@
-// Module ID: 14782
-// Function ID: 14783
+// Module ID: 15043
+// Function ID: 15044
 // Name: UserSettingsConnections
-// Dependencies: [19, 17, 6609, 502, 5447, 2116, 1085, 21, 4896, 587, 4797, 504, 12954, 6672, 6684, 4860, 14781, 1987, 8764, 14783, 8924, 5600, 14786, 14787, 2]
+// Dependencies: [19, 17, 6786, 502, 5757, 2128, 1085, 21, 5090, 587, 4991, 504, 13233, 6849, 6861, 5054, 15042, 1999, 9147, 15044, 8555, 5373, 15047, 15048, 2]
 // Exports: UserSettingsConnections
 
-// Module 14782 (UserSettingsConnections)
+// Module 15043 (UserSettingsConnections)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import useThemeDefault from "useTheme" /* 4797 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6609 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6672 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 8764 */;
-import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 12954 */;
-import ConnectedApplicationIdentityDefault from "ConnectedApplicationIdentity" /* 14786 */;
-import ConnectedAccountDefault from "ConnectedAccount" /* 14787 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import useThemeDefault from "useTheme" /* 4991 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6786 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6849 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9147 */;
+import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 13233 */;
+import ConnectedApplicationIdentityDefault from "ConnectedApplicationIdentity" /* 15047 */;
+import ConnectedAccountDefault from "ConnectedAccount" /* 15048 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5447 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5757 */;
+import LocaleStore from "LocaleStore" /* 2128 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import size from "module_2" /* 2 */;
 
 const AuthorizedAppsStore = AuthorizedAppsStore2;
@@ -32,7 +32,7 @@ let closure_12;
 let obj2;
 let tmp2;
 let unpackModuleId;
-const ConnectionsEmptyStateUpsellDefault = tmp2(14783);
+const ConnectionsEmptyStateUpsellDefault = tmp2(15044);
 const ActivityIndicator = react_native.ActivityIndicator;
 const FetchState = AuthorizedAppsStore2.FetchState;
 const AnalyticsLocations = Constants.AnalyticsLocations;
@@ -94,7 +94,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
     if (null != selectedPlatformType) {
       if (-1 === selectedPlatformType) {
         const obj2 = ActionSheetActionCreatorsDefault;
-        obj2.openLazy(asyncRequire(14781, dependencyMap.paths), "AddConnection");
+        obj2.openLazy(asyncRequire(15042, dependencyMap.paths), "AddConnection");
       } else {
         const obj = { platformType: selectedPlatformType, location: AnalyticsLocations.USER_SETTINGS };
         authorizeConnectionDefault(obj);
@@ -110,9 +110,9 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
         }
       }
       const obj4 = { style: tmp.form, children: closure_12(Stack, obj5) };
-      const Form = tmp4(8924).Form;
+      const Form = tmp4(8555).Form;
       obj5 = { spacing: 16, children: items5 };
-      Stack = tmp4(5600).Stack;
+      Stack = tmp4(5373).Stack;
       items5 = [
         prop.map((identity) => {
               let closure_0 = identity;

@@ -1,13 +1,13 @@
-// Module ID: 2029
-// Function ID: 2030
+// Module ID: 2041
+// Function ID: 2042
 // Name: UserSettingsOverridesStore
-// Dependencies: [1231, 504, 510, 584, 2]
+// Dependencies: [1243, 504, 510, 584, 2]
 
-// Module 2029 (UserSettingsOverridesStore)
+// Module 2041 (UserSettingsOverridesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;

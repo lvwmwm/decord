@@ -1,15 +1,15 @@
-// Module ID: 14651
-// Function ID: 14652
+// Module ID: 14912
+// Function ID: 14913
 // Name: ExplicitMediaSettingsActionSheet
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4860, 6651, 1197, 6078, 6079, 6652, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 5054, 6828, 1209, 6264, 6265, 6829, 2]
 
-// Module 14651 (ExplicitMediaSettingsActionSheet)
+// Module 14912 (ExplicitMediaSettingsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ const View = react_native.View;
 let obj = { content: obj2 };
 obj2 = { marginTop: nativeDefault.space.PX_24, paddingHorizontal: nativeDefault.space.PX_16 };
 let closure_7 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentValue) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExplicitMediaSettingsActionSheet(currentValue) {
   let options;
   let subtitle;
   let title;
@@ -52,7 +52,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentValue) => {
   if (cResult[2] === subtitle) {
     const content = tmp4.content;
     if (SHOW == null) {
-      SHOW = tmp(1197).ExplicitContentRedaction.SHOW;
+      SHOW = tmp(1209).ExplicitContentRedaction.SHOW;
     }
     if (cResult[5] !== options) {
       let tmp11;
@@ -97,14 +97,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentValue) => {
     cResult[8] = tmp5;
     cResult[9] = SHOW;
     cResult[10] = tmp9;
-    cResult[11] = closure_5(options(6079).TableRadioGroup, obj2);
-    const tmp15 = closure_5(options(6079).TableRadioGroup, obj2);
+    cResult[11] = closure_5(options(6265).TableRadioGroup, obj2);
+    const tmp15 = closure_5(options(6265).TableRadioGroup, obj2);
   }
   cResult[2] = subtitle;
   cResult[3] = title;
-  cResult[4] = closure_5(options(6651).BottomSheetTitleHeader, { title, subtitle });
-  closure_5(options(6651).BottomSheetTitleHeader, { title, subtitle });
-}) : ((options) => {
+  cResult[4] = closure_5(options(6828).BottomSheetTitleHeader, { title, subtitle });
+  closure_5(options(6828).BottomSheetTitleHeader, { title, subtitle });
+}) : (function ExplicitMediaSettingsActionSheet(options) {
   let TableRadioGroup;
   let obj3;
   let subtitle;
@@ -123,15 +123,15 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentValue) => {
       obj2.hideActionSheet();
     }
   }, items);
-  BottomSheet = options(6652).BottomSheet;
-  const items1 = [closure_5(options(6651).BottomSheetTitleHeader, { title, subtitle }), ];
+  BottomSheet = options(6829).BottomSheet;
+  const items1 = [closure_5(options(6828).BottomSheetTitleHeader, { title, subtitle }), ];
   let obj = { style: tmp.content, children: closure_5(TableRadioGroup, obj3) };
-  TableRadioGroup = options(6079).TableRadioGroup;
+  TableRadioGroup = options(6265).TableRadioGroup;
   const tmp3 = closure_6;
   const tmp4 = options;
   const tmp7 = View;
   if (SHOW == null) {
-    SHOW = tmp4(1197).ExplicitContentRedaction.SHOW;
+    SHOW = tmp4(1209).ExplicitContentRedaction.SHOW;
   }
   let obj2 = { startExpanded: true, children: items1 };
   obj3 = {

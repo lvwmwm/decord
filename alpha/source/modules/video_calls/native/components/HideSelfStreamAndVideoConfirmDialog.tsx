@@ -1,17 +1,17 @@
-// Module ID: 17383
-// Function ID: 17384
+// Module ID: 17665
+// Function ID: 17666
 // Name: HideSelfStreamAndVideoConfirmDialog
-// Dependencies: [109, 19, 17, 17382, 21, 4896, 558, 576, 8091, 1126, 4892, 5790, 2]
+// Dependencies: [109, 19, 17, 17664, 21, 5090, 558, 576, 5258, 1126, 5086, 5394, 2]
 
-// Module 17383 (HideSelfStreamAndVideoConfirmDialog)
+// Module 17665 (HideSelfStreamAndVideoConfirmDialog)
 import react_native from "react-native" /* 17 */;
-import AlertDefault from "Alert" /* 5790 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8091 */;
-import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 17382 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5258 */;
+import AlertDefault from "Alert" /* 5394 */;
+import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 17664 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ const View = react_native.View;
 const constants = HideSelfStreamAndVideoConstants.SelfStreamAndVideoAlertType;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = createStyles.createStyles({ wrapper: { padding: 16 }, body: { paddingTop: 16 }, description: { lineHeight: 18 }, ctaLink: { paddingTop: 8, textAlign: "center", textDecorationLine: "underline" } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HideSelfStreamAndVideoConfirmDialog(arg0) {
   let closure_0;
   let items;
   let onClose;
@@ -57,14 +57,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmp10 = closure_9();
   if (cResult[4] !== tmp5) {
-    const fn = function v() {
+    function handleDontAskAgain() {
       const obj = UserSettingsActionCreatorsDefault;
       const result = obj.updatedUnsyncedSettings({ disableHideSelfStreamAndVideoConfirmationAlert: true });
       closure_0();
-    };
+    }
     cResult[4] = tmp5;
-    cResult[5] = fn;
-    tmp11 = fn;
+    cResult[5] = handleDontAskAgain;
+    tmp11 = handleDontAskAgain;
   } else {
     tmp11 = cResult[5];
   }
@@ -207,7 +207,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[13] = tmp10.description;
   cResult[14] = tmp24;
   tmp23 = tmp24;
-}) : ((arg0) => {
+}) : (function HideSelfStreamAndVideoConfirmDialog(arg0) {
   let intl5;
   let intl6;
   let intl7;
@@ -252,11 +252,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj2 = { style: tmp2.body, children: items };
   items = [, ];
   const obj3 = { style: tmp2.description, variant: "text-sm/medium", children: stringResult1 };
-  items[0] = closure_7(tmp6(4892).Text, obj3);
+  items[0] = closure_7(tmp6(5086).Text, obj3);
   const obj4 = {
     accessibilityRole: "link",
     style: items1,
-    onPress() {
+    onPress: function handleDontAskAgain() {
       const obj = UserSettingsActionCreatorsDefault;
       const result = obj.updatedUnsyncedSettings({ disableHideSelfStreamAndVideoConfirmationAlert: true });
       onConfirm();
@@ -266,7 +266,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   };
   items1 = [, ];
   ({ ctaLink: arr2[0], description: arr2[1] } = tmp2);
-  const Text = tmp6(4892).Text;
+  const Text = tmp6(5086).Text;
   intl7 = tmp6(1126).intl;
   items[1] = closure_7(Text, obj4);
   return closure_7(tmp12, obj);

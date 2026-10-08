@@ -1,13 +1,13 @@
-// Module ID: 7306
-// Function ID: 7307
+// Module ID: 7750
+// Function ID: 7751
 // Name: IosImageTypesManager
-// Dependencies: [32, 3, 1989, 1432, 2]
+// Dependencies: [32, 3, 2001, 1444, 2]
 
-// Module 7306 (IosImageTypesManager)
+// Module 7750 (IosImageTypesManager)
 import LoggerDefault from "Logger" /* 3 */;
-import react_nativeDefault from "react-native" /* 1432 */;
+import react_nativeDefault from "react-native" /* 1444 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import LifecycleManager from "LifecycleManager" /* 1989 */;
+import LifecycleManager from "LifecycleManager" /* 2001 */;
 import size from "module_2" /* 2 */;
 
 let set, set2;

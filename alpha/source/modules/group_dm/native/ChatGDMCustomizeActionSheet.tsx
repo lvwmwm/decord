@@ -1,21 +1,21 @@
-// Module ID: 10670
-// Function ID: 10671
+// Module ID: 9583
+// Function ID: 9584
 // Name: ChatGDMCustomizeActionSheet
-// Dependencies: [19, 21, 558, 576, 10671, 1126, 10674, 10676, 2]
+// Dependencies: [19, 21, 558, 576, 9584, 1126, 9587, 9589, 2]
 
-// Module 10670 (ChatGDMCustomizeActionSheet)
+// Module 9583 (ChatGDMCustomizeActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import useNavigatorConfirmChangesOnBackDefault from "useNavigatorConfirmChangesOnBack" /* 10671 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10674 */;
-import ChatGDMCustomizeDefault from "ChatGDMCustomize" /* 10676 */;
+import useNavigatorConfirmChangesOnBackDefault from "useNavigatorConfirmChangesOnBack" /* 9584 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 9587 */;
+import ChatGDMCustomizeDefault from "ChatGDMCustomize" /* 9589 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channelId, dependencyMap, importDefault;
+let dependencyMap, importDefault;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMCustomizeActionSheet(channelId) {
   let first;
   let onGoBack;
   let ref;
@@ -55,7 +55,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[3] = ref;
   cResult[4] = tmp9;
   tmp8 = tmp9;
-}) : ((channelId) => {
+}) : (function ChatGDMCustomizeActionSheet(channelId) {
   let c1;
   let c2;
   let onFinish;

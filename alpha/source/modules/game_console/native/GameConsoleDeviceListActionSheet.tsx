@@ -1,25 +1,25 @@
-// Module ID: 9469
-// Function ID: 9470
+// Module ID: 10905
+// Function ID: 10906
 // Name: GameConsoleDeviceListActionSheet
-// Dependencies: [5, 32, 19, 17, 4913, 1085, 21, 4896, 587, 558, 576, 1126, 5601, 6626, 9470, 4892, 9471, 504, 9461, 38, 9468, 4860, 1121, 1188, 9472, 6651, 6119, 6652, 2]
+// Dependencies: [5, 32, 19, 17, 5109, 1085, 21, 5090, 587, 558, 576, 1126, 5375, 6803, 10906, 5086, 10907, 504, 10897, 38, 10904, 5054, 1121, 1200, 10485, 6828, 6298, 6829, 2]
 
-// Module 9469 (GameConsoleDeviceListActionSheet)
+// Module 10905 (GameConsoleDeviceListActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6626 */;
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 9461 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9470 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9471 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6803 */;
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 10897 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10906 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10907 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameConsoleStore from "GameConsoleStore" /* 4913 */;
+import GameConsoleStore from "GameConsoleStore" /* 5109 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let obj2;
 let obj3;
 let size;
 let tmp;
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 let react = react_mod;
 ({ Pressable: metroRequire, View: metroImportDefault, Image: metroImportAll, ActivityIndicator: c9 } = react_native);
 const ComponentActions = Constants.ComponentActions;
@@ -50,7 +50,7 @@ obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRa
 size = { marginRight: 16, width: 32, height: 32, tintColor: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 let closure_15 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function TransferFooter(arg0) {
   let first;
   let onPress;
   let transferring;
@@ -98,7 +98,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = transferring;
   cResult[4] = tmp10;
   tmp9 = tmp10;
-}) : ((arg0) => {
+}) : (function TransferFooter(arg0) {
   let Button;
   let intl;
   let obj2;
@@ -116,7 +116,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return closure_12(SafeAreaPaddingView, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeviceOption(arg0) {
   let deviceIcon;
   let deviceOption;
   let items;
@@ -176,7 +176,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp5;
   cResult[4] = tmp9;
   tmp8 = tmp9;
-}) : ((name) => {
+}) : (function DeviceOption(name) {
   let items;
   name = name.name;
   const tmp = closure_15();
@@ -189,7 +189,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return map1(metroImportDefault, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState() {
   let items;
   let tmp10;
   let tmp12;
@@ -265,7 +265,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[11] = tmp17;
   cResult[12] = tmp21;
   tmp20 = tmp21;
-}) : (() => {
+}) : (function EmptyState() {
   let intl;
   let intl2;
   let items;
@@ -285,7 +285,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return map1(metroImportDefault, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameConsoleListActionSheet(platform) {
   let closure_5;
   let closure_6;
   let closure_7;
@@ -333,16 +333,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
     tmp9 = cResult[3];
   }
   if (cResult[4] !== platform) {
-    class P {
+    class F {
       constructor() {
         return GameConsoleStore.getFetchingDevices(platform);
       }
     }
     cResult[4] = platform;
-    cResult[5] = P;
-    tmp11 = P;
+    cResult[5] = F;
+    tmp11 = F;
   } else {
-    class P {
+    class F {
       constructor() {
         return GameConsoleStore.getFetchingDevices(platform);
       }
@@ -351,7 +351,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
   const tmpResult3 = tmp(tmp2[17]);
   const stateFromStores1 = tmpResult3.useStateFromStores(tmp9, tmp11);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class P {
+    class F {
       constructor() {
         return GameConsoleStore.getFetchingDevices(platform);
       }
@@ -360,7 +360,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
     cResult[6] = items2;
     tmp13 = items2;
   } else {
-    class P {
+    class F {
       constructor() {
         return GameConsoleStore.getFetchingDevices(platform);
       }
@@ -397,7 +397,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
         return GameConsoleStore.getLastSelectedDeviceByPlatform(platform);
       }
     }
-    const effect = obj5.useEffect(H, items3);
+    const effect = obj5.useEffect(G, items3);
     if (cResult[13] !== platform) {
       class R {
         constructor() {
@@ -487,7 +487,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
     cResult[18] = first1;
     cResult[19] = handleTransferVoice;
   }
-  class H {
+  class G {
     constructor() {
       const values = Object.values(stateFromStores);
       if (1 === values.length) {
@@ -500,9 +500,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
   items3 = [stateFromStores, stateFromStores2];
   cResult[9] = stateFromStores;
   cResult[10] = stateFromStores2;
-  cResult[11] = H;
+  cResult[11] = G;
   cResult[12] = items3;
-}) : ((arg0) => {
+}) : (function GameConsoleListActionSheet(arg0) {
   let BottomSheetScrollView;
   let BottomSheetTitleHeader;
   let Text;

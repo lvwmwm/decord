@@ -1,31 +1,31 @@
-// Module ID: 15622
-// Function ID: 15623
+// Module ID: 15902
+// Function ID: 15903
 // Name: DevToolsInAppNotificationTestingScreen
-// Dependencies: [19, 17, 5694, 2055, 4526, 2051, 2074, 2103, 1377, 1085, 21, 4896, 587, 4580, 4574, 4809, 12492, 12494, 5436, 11, 558, 576, 1618, 1188, 6081, 6000, 15429, 6007, 2]
+// Dependencies: [19, 17, 6035, 2067, 4718, 2063, 2086, 2115, 1389, 1085, 21, 5090, 587, 4772, 4766, 5003, 12588, 12590, 5746, 11, 558, 576, 1630, 1200, 6267, 6184, 15691, 6193, 2]
 
-// Module 15622 (DevToolsInAppNotificationTestingScreen)
+// Module 15902 (DevToolsInAppNotificationTestingScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4580 */;
-import StickersTypes from "StickersTypes" /* 5436 */;
-import TableRowGroup2 from "TableRowGroup" /* 6081 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 12492 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 12494 */;
+import native from "native" /* 1200 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import ChannelRecord from "ChannelRecord" /* 2067 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4772 */;
+import StickersTypes from "StickersTypes" /* 5746 */;
+import TableRowGroup2 from "TableRowGroup" /* 6267 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 12588 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 12590 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 5694 */;
-import MessageRecord from "MessageRecord" /* 4526 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import UserStore from "UserStore" /* 1377 */;
+import StickersStore from "StickersStore" /* 6035 */;
+import MessageRecord from "MessageRecord" /* 4718 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -608,7 +608,7 @@ const items3 = [
     }
   }
 ];
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsInAppNotificationTestingScreen() {
   let first;
   let tmp9;
   let obj = first(576);
@@ -649,7 +649,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       let obj3 = { size: nativeDefault.space.PX_16 };
-      let Spacer = tmp(1188).Spacer;
+      let Spacer = tmp(1200).Spacer;
       const tmp14 = closure_14(Spacer, obj3);
       const mapped = closure_24.map((title) => {
         let options;
@@ -680,7 +680,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const obj3 = { size: nativeDefault.space.PX_16 };
         const Spacer = native.Spacer;
         items[1] = authStore2(Spacer, obj3);
-        return closure_15(Fragment, obj, title.title);
+        return authStore3(Fragment, obj, title.title);
       });
       cResult[6] = tmp14;
       cResult[7] = mapped;
@@ -710,7 +710,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               return closure_1_14(TableRow, obj, label.label);
             })
       };
-      let TableRowGroup = tmp(6081).TableRowGroup;
+      let TableRowGroup = tmp(6267).TableRowGroup;
       const tmp20 = closure_14(TableRowGroup, obj4);
       cResult[8] = tmp20;
       tmp17 = tmp20;
@@ -737,7 +737,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[4] = tmp9;
   cResult[5] = items1;
   tmp10 = items1;
-}) : (() => {
+}) : (function DevToolsInAppNotificationTestingScreen() {
   const tmp = closure_16();
   const tmp2 = useSafeAreaInsetsDefault();
   _require = react.useCallback((build) => {
@@ -782,7 +782,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj3 = { size: nativeDefault.space.PX_16 };
       const Spacer = native.Spacer;
       items[1] = authStore2(Spacer, obj3);
-      return closure_15(Fragment, obj, title.title);
+      return authStore3(Fragment, obj, title.title);
     }),
 
   ];

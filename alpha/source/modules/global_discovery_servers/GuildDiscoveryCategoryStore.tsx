@@ -1,16 +1,16 @@
-// Module ID: 16454
-// Function ID: 16455
+// Module ID: 16714
+// Function ID: 16715
 // Name: GuildDiscoveryCategoryStore
-// Dependencies: [9284, 12, 504, 1375, 1126, 584, 2]
+// Dependencies: [8615, 12, 504, 1387, 1126, 584, 2]
 // Exports: areDiscoveryCategoriesEqual
 
-// Module 16454 (GuildDiscoveryCategoryStore)
+// Module 16714 (GuildDiscoveryCategoryStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1126 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9284 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8615 */;
 import size from "module_2" /* 2 */;
 
 let c3;

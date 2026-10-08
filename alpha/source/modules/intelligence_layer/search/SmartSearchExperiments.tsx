@@ -1,13 +1,13 @@
-// Module ID: 12020
-// Function ID: 12021
+// Module ID: 12093
+// Function ID: 12094
 // Name: SmartSearchExperiments
-// Dependencies: [2074, 1085, 1440, 558, 576, 504, 2]
+// Dependencies: [2086, 1085, 1452, 558, 576, 504, 2]
 // Exports: isNlpSearchEnabled
 
-// Module 12020 (SmartSearchExperiments)
+// Module 12093 (SmartSearchExperiments)
 import Constants from "Constants" /* 1085 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1440 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ const apexExperiment = ApexExperiment.createApexExperiment(obj);
 ApexExperiment = ApexExperiment_mod;
 let obj2 = { kind: "guild", name: "2026-09-mobile-nlp-search-guild-experiment", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
 const apexExperiment1 = ApexExperiment.createApexExperiment(obj2);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, location) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsNlpSearchEnabled(arg0, location) {
   let closure_0;
   let first;
   let tmp6;
@@ -100,7 +100,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, location) =>
   cResult[7] = str;
   cResult[8] = obj3;
   tmp10 = obj3;
-}) : ((arg0, location) => {
+}) : (function useIsNlpSearchEnabled(arg0, location) {
   let closure_0;
   let str = arg0;
   _require = arg0;

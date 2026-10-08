@@ -1,34 +1,34 @@
-// Module ID: 15169
-// Function ID: 15170
+// Module ID: 15431
+// Function ID: 15432
 // Name: DisplayNameStylesEditScreen
-// Dependencies: [32, 19, 17, 4885, 1377, 1085, 1614, 21, 1396, 4896, 587, 1491, 504, 15170, 7848, 5312, 4797, 1397, 1394, 9404, 10649, 10650, 568, 15171, 15172, 15173, 15174, 1252, 4861, 7849, 7846, 4860, 15177, 1987, 15179, 15180, 15185, 15189, 1126, 14458, 4595, 5314, 15190, 2911, 4892, 1188, 6715, 1103, 14459, 5601, 8521, 7599, 558, 576, 1618, 4618, 5604, 2]
+// Dependencies: [32, 19, 17, 5079, 1389, 1085, 1626, 21, 1408, 5090, 587, 1503, 504, 15432, 8266, 5624, 4991, 1409, 1406, 14685, 10249, 10250, 568, 15433, 15434, 15435, 15436, 1264, 5055, 8267, 8264, 5054, 15439, 1999, 15441, 15442, 15447, 15451, 1126, 14686, 4787, 5626, 15452, 2955, 5086, 1200, 6892, 1103, 14687, 5375, 9006, 9306, 558, 576, 1630, 4810, 5374, 2]
 // Exports: default
 
-// Module 15169 (DisplayNameStylesEditScreen)
+// Module 15431 (DisplayNameStylesEditScreen)
 import shallowEqual from "shallowEqual" /* 568 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1394 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1396 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1614 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import HapticUtils from "HapticUtils" /* 4861 */;
-import spring from "spring" /* 5604 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 7846 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 7849 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1406 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1408 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import HapticUtils from "HapticUtils" /* 5055 */;
+import spring from "spring" /* 5374 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8264 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 8267 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import UserStore from "UserStore" /* 1377 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let navigation, onPress;
+let navigation;
 
 let closure_12;
 let hasOwnProperty;
@@ -66,7 +66,7 @@ const __initData = { code: "function DisplayNameStylesEditScreenTsx1(){const{vis
 const __initData2 = { code: "function DisplayNameStylesEditScreenTsx2(){const{visible,tokens,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING}=this.__closure;const targetOpacity=visible?1:0;const targetTranslateY=visible?0:60;const targetScale=visible?1:0.9;return{position:\"absolute\",bottom:0,left:0,right:0,marginHorizontal:tokens.space.PX_16,flexDirection:\"column\",justifyContent:\"flex-end\",transform:[{translateY:reducedMotion?targetTranslateY:withSpring(targetTranslateY,MEDIA_PICKER_SEND_BUTTON_SPRING)},{scale:reducedMotion?targetScale:withSpring(targetScale,MEDIA_PICKER_SEND_BUTTON_SPRING)}],opacity:reducedMotion?targetOpacity:withSpring(targetOpacity,MEDIA_PICKER_SEND_BUTTON_SPRING)};}" };
 const __initData3 = { code: "function DisplayNameStylesEditScreenTsx3(){const{visible}=this.__closure;return{pointerEvents:visible?'box-none':'none'};}" };
 const __initData4 = { code: "function DisplayNameStylesEditScreenTsx4(){const{visible,tokens,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING}=this.__closure;const targetOpacity=visible?1:0;const targetTranslateY=visible?0:60;const targetScale=visible?1:0.9;return{position:'absolute',bottom:0,left:0,right:0,marginHorizontal:tokens.space.PX_16,flexDirection:'column',justifyContent:'flex-end',transform:[{translateY:reducedMotion?targetTranslateY:withSpring(targetTranslateY,MEDIA_PICKER_SEND_BUTTON_SPRING)},{scale:reducedMotion?targetScale:withSpring(targetScale,MEDIA_PICKER_SEND_BUTTON_SPRING)}],opacity:reducedMotion?targetOpacity:withSpring(targetOpacity,MEDIA_PICKER_SEND_BUTTON_SPRING)};}" };
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplyButton(onPress) {
   let stateFromStores;
   let tmp11;
   let tmp12;
@@ -213,7 +213,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   cResult[11] = tmp15;
   cResult[12] = tmp19;
   tmp18 = tmp19;
-}) : ((onPress) => {
+}) : (function ApplyButton(onPress) {
   let Button;
   let View2;
   let intl;
@@ -560,7 +560,7 @@ export default function DisplayNameStylesEditScreen() {
       }
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { selectedFontId, onSelectFont, displayName: displayNameStylesPendingName };
-      obj.openLazy(asyncRequire(15177, dependencyMap.paths), "DisplayNameStylesFontPickerSheet", obj2);
+      obj.openLazy(asyncRequire(15439, dependencyMap.paths), "DisplayNameStylesFontPickerSheet", obj2);
     }, items6);
     const useCallback = displayNameStylesPendingName.useCallback;
     if (stateFromStores != null) {
@@ -578,7 +578,7 @@ export default function DisplayNameStylesEditScreen() {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       let id;
       ActionSheetActionCreatorsDefault;
-      const tmp5 = asyncRequire(15179, dependencyMap.paths);
+      const tmp5 = asyncRequire(15441, dependencyMap.paths);
       if (stateFromStores != null) {
         id = stateFromStores.id;
       }
@@ -594,7 +594,7 @@ export default function DisplayNameStylesEditScreen() {
             }
         };
         const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(15180, dependencyMap.paths), "DisplayNameStylesGummyColorPickerSheet", obj2);
+        obj3.openLazy(asyncRequire(15442, dependencyMap.paths), "DisplayNameStylesGummyColorPickerSheet", obj2);
       } else {
         const openLazy = ActionSheetActionCreatorsDefault.openLazy;
         ActionSheetActionCreatorsDefault;
@@ -607,10 +607,10 @@ export default function DisplayNameStylesEditScreen() {
                   return callback(first1, arg0);
                 }
           };
-          openLazy(tmp2Result(15185, dependencyMap.paths), "DisplayNameStylesGradientPickerSheet", obj4);
+          openLazy(tmp2Result(15447, dependencyMap.paths), "DisplayNameStylesGradientPickerSheet", obj4);
         } else {
           const obj = { selectedColor: first3, selectedEffectId: first1, onSelectColor };
-          openLazy(tmp2Result(15189, dependencyMap.paths), "DisplayNameStylesColorPickerSheet", obj);
+          openLazy(tmp2Result(15451, dependencyMap.paths), "DisplayNameStylesColorPickerSheet", obj);
         }
       }
     }, items8);

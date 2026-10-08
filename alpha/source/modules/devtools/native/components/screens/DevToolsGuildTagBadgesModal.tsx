@@ -1,16 +1,16 @@
-// Module ID: 15597
-// Function ID: 15598
+// Module ID: 15877
+// Function ID: 15878
 // Name: DevToolsGuildTagBadgesModal
-// Dependencies: [109, 19, 21, 7568, 558, 576, 6503, 7509, 10675, 15598, 2]
+// Dependencies: [109, 19, 21, 9279, 558, 576, 6679, 9232, 9588, 15878, 2]
 
-// Module 15597 (DevToolsGuildTagBadgesModal)
+// Module 15877 (DevToolsGuildTagBadgesModal)
 import Fragment from "Fragment" /* 21 */;
-import HeaderShared from "HeaderShared" /* 7509 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10675 */;
-import DevToolsGuildTagBadgesScreenDefault from "DevToolsGuildTagBadgesScreen" /* 15598 */;
+import HeaderShared from "HeaderShared" /* 9232 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 9588 */;
+import DevToolsGuildTagBadgesScreenDefault from "DevToolsGuildTagBadgesScreen" /* 15878 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import NativeStackView from "NativeStackView" /* 7568 */;
+import NativeStackView from "NativeStackView" /* 9279 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let _require;
 let closure_3 = ["children"];
 const jsx = Fragment.jsx;
 let Screen = NativeStackView.createNativeStackNavigator();
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsGuildTagBadgesModal() {
   let accessibilityNativeStackOptions;
   let tmp10;
   let tmp4;
@@ -28,7 +28,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   let tmp = dependencyMap;
   let obj = accessibilityNativeStackOptions(576);
   const cResult = obj.c(5);
-  let obj2 = accessibilityNativeStackOptions(6503);
+  let obj2 = accessibilityNativeStackOptions(6679);
   accessibilityNativeStackOptions = obj2.useAccessibilityNativeStackOptions();
   if (cResult[0] !== accessibilityNativeStackOptions) {
     const fn = function o(navigation) {
@@ -76,7 +76,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     tmp10 = cResult[4];
   }
   return tmp10;
-}) : (() => {
+}) : (function DevToolsGuildTagBadgesModal() {
   let Navigator;
   let closure_0;
   let obj = require("Navigator");

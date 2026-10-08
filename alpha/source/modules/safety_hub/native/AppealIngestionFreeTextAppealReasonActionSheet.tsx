@@ -1,20 +1,20 @@
-// Module ID: 11527
-// Function ID: 11528
+// Module ID: 11525
+// Function ID: 11526
 // Name: AppealIngestionFreeTextAppealReasonActionSheet
-// Dependencies: [32, 19, 17, 8139, 21, 4896, 587, 558, 576, 504, 1126, 6024, 5916, 11511, 6587, 4892, 5601, 6652, 5600, 2]
+// Dependencies: [32, 19, 17, 5920, 21, 5090, 587, 558, 576, 504, 1126, 6210, 6189, 11503, 6763, 5086, 5375, 6829, 5373, 2]
 
-// Module 11527 (AppealIngestionFreeTextAppealReasonActionSheet)
+// Module 11525 (AppealIngestionFreeTextAppealReasonActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8139 */;
+import SafetyHubStore from "SafetyHubStore" /* 5920 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, onSave;
+let BottomSheet;
 
 let metroImportDefault;
 let metroRequire;
@@ -24,7 +24,7 @@ const View = react_native.View;
 let obj = { footerText: { textAlign: "center" }, textArea: { marginTop: -16, marginBottom: 36 }, separator: obj2, closeIcon: { alignSelf: "flex-end", flexDirection: "row", marginBottom: -26 } };
 obj2 = { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginHorizontal: -16 };
 let closure_8 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSave) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngestionFreeTextAppealReasonActionSheet(onSave) {
   let freeTextAppealReason;
   let items1;
   let obj7;
@@ -42,7 +42,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSave) => {
   const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SafetyHubStore];
-    const fn = function h() {
+    const fn = function u() {
       return freeTextAppealReason.getFreeTextAppealReason();
     };
     cResult[0] = items;
@@ -236,7 +236,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSave) => {
   cResult[7] = tmp4.closeIcon;
   cResult[8] = tmp20;
   tmp19 = tmp20;
-}) : ((onSave) => {
+}) : (function AppealIngestionFreeTextAppealReasonActionSheet(onSave) {
   let Stack;
   let freeTextAppealReason;
   let intl4;

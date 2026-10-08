@@ -1,20 +1,20 @@
-// Module ID: 11749
-// Function ID: 11750
+// Module ID: 11815
+// Function ID: 11816
 // Name: home/EmptyState
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 11679, 8961, 11750, 1126, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 11744, 11233, 11816, 1126, 5086, 2]
 
-// Module 11749 (home/EmptyState)
+// Module 11815 (home/EmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 8961 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11679 */;
-import HomeEmptyStateDefault from "HomeEmptyState" /* 11750 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11233 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11744 */;
+import HomeEmptyStateDefault from "HomeEmptyState" /* 11816 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const View = react_native.View;
 let obj = { container: obj2, textContainer: { textAlign: "center" } };
 obj2 = { padding: 16, gap: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.lg, alignItems: "center", justifyContent: "center" };
 let closure_6 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState() {
   let first;
   let items;
   let tmp10;
@@ -76,7 +76,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[5] = tmp12;
   cResult[6] = tmp16;
   tmp15 = tmp16;
-}) : (() => {
+}) : (function EmptyState() {
   let intl;
   let items;
   const tmp = closure_6();

@@ -1,15 +1,15 @@
-// Module ID: 6738
-// Function ID: 6739
+// Module ID: 6913
+// Function ID: 6914
 // Name: useIsNewMember
-// Dependencies: [2105, 2112, 4501, 1390, 1102, 558, 576, 504, 2]
+// Dependencies: [2117, 2124, 4693, 1402, 1102, 558, 576, 504, 2]
 // Exports: getIsNewMember
 
-// Module 6738 (useIsNewMember)
+// Module 6913 (useIsNewMember)
 import DurationsDefault from "Durations" /* 1102 */;
-import FlagUtils from "FlagUtils" /* 1390 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4501 */;
-import ImpersonateStore from "ImpersonateStore" /* 2105 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import FlagUtils from "FlagUtils" /* 1402 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4693 */;
+import ImpersonateStore from "ImpersonateStore" /* 2117 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let _require;
 
 const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsNewMember(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function u() {
+    const fn = function l() {
       let flag = true;
       if (!ImpersonateStore.isFullServerPreview(closure_0)) {
         const selfMember = obj.getSelfMember(tmp);
@@ -73,7 +73,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7);
-}) : ((arg0) => {
+}) : (function useIsNewMember(arg0) {
   let closure_0;
   _require = arg0;
   const obj = require("get initialized");

@@ -1,15 +1,15 @@
-// Module ID: 9983
-// Function ID: 9984
+// Module ID: 9513
+// Function ID: 9514
 // Name: EmojiPickerCategoriesBackspaceItem
-// Dependencies: [19, 17, 1085, 21, 2046, 1126, 9984, 2]
+// Dependencies: [19, 17, 1085, 21, 2058, 1126, 9514, 2]
 // Exports: default
 
-// Module 9983 (EmojiPickerCategoriesBackspaceItem)
+// Module 9513 (EmojiPickerCategoriesBackspaceItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import Timers from "Timers" /* 2046 */;
+import Timers from "Timers" /* 2058 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ export default function EmojiPickerCategoriesBackspaceItem(onBackspace) {
   const interval = new Timers.Interval();
   let closure_1 = useRef(interval);
   const useRef2 = react.useRef;
-  const delayedCall = new Timers.DelayedCall(500, () => {
+  const delayedCall = new Timers.DelayedCall(500, function handleDelayLongPressBackspace() {
     const current = closure_2.current;
     current.cancel();
     const current2 = ref.current;

@@ -1,21 +1,21 @@
-// Module ID: 9632
-// Function ID: 9633
+// Module ID: 10827
+// Function ID: 10828
 // Name: CallPTTButton
-// Dependencies: [32, 19, 2051, 1999, 4919, 1085, 21, 4896, 587, 4733, 558, 576, 504, 9118, 9123, 9633, 4618, 6147, 1126, 1188, 2]
+// Dependencies: [32, 19, 2063, 2011, 5108, 1085, 21, 5090, 587, 4927, 558, 576, 504, 10691, 10339, 10828, 4810, 6326, 1126, 1200, 2]
 
-// Module 9632 (CallPTTButton)
+// Module 10827 (CallPTTButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import MediaEngineActionCreators from "MediaEngineActionCreators" /* 9633 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import MediaEngineActionCreators from "MediaEngineActionCreators" /* 10828 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import MediaEngineStore_mod from "MediaEngineStore" /* 1999 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import ColorUtils_mod from "ColorUtils" /* 4733 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import MediaEngineStore_mod from "MediaEngineStore" /* 2011 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import ColorUtils_mod from "ColorUtils" /* 4927 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -54,9 +54,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stopCal
   let style;
   let tmp10;
   let tmp11;
-  let tmp14;
-  let tmp16;
+  let tmp15;
   let tmp17;
+  let tmp18;
   let tmp6;
   let tmp7;
   let tmp = sendCallback;
@@ -87,14 +87,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stopCal
   const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [ref];
-    class I {
+    class T {
       constructor() {
-        return ref.getChannelId();
+        return mode.getMode();
       }
     }
     cResult[2] = items1;
-    cResult[3] = I;
-    tmp11 = I;
+    cResult[3] = tmp13;
+    tmp11 = tmp13;
     tmp10 = items1;
   } else {
     tmp10 = cResult[2];
@@ -104,50 +104,50 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stopCal
   stateFromStores1 = tmpResult4.useStateFromStores(tmp10, tmp11);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [first1];
-    class I {
+    class T {
       constructor() {
-        return ref.getChannelId();
+        return mode.getMode();
       }
     }
     cResult[4] = items2;
-    tmp14 = items2;
+    tmp15 = items2;
   } else {
-    tmp14 = cResult[4];
+    tmp15 = cResult[4];
   }
   if (cResult[5] !== stateFromStores1) {
     const fn = function w() {
       return ChannelStore.getChannel(stateFromStores1);
     };
     const items3 = [stateFromStores1];
-    class I {
+    class T {
       constructor() {
-        return ref.getChannelId();
+        return mode.getMode();
       }
     }
     cResult[5] = stateFromStores1;
     cResult[6] = fn;
     cResult[7] = items3;
-    tmp17 = items3;
-    tmp16 = fn;
+    tmp18 = items3;
+    tmp17 = fn;
   } else {
-    tmp16 = cResult[6];
-    tmp17 = cResult[7];
+    tmp17 = cResult[6];
+    tmp18 = cResult[7];
   }
   const tmpResult5 = tmp(tmp2[12]);
-  const stateFromStores2 = tmpResult5.useStateFromStores(tmp14, tmp16, tmp17);
-  const tmp18 = stopCallback(tmp2[13])(stateFromStores1);
-  const tmp19 = first(react.useState(false), 2);
-  first = tmp19[0];
-  react = tmp21;
-  const tmp22 = first(react.useState(false), 2);
-  first1 = tmp22[0];
-  MediaEngineStore = tmp24;
+  const stateFromStores2 = tmpResult5.useStateFromStores(tmp15, tmp17, tmp18);
+  const tmp19 = stopCallback(tmp2[13])(stateFromStores1);
+  const tmp20 = first(react.useState(false), 2);
+  first = tmp20[0];
+  react = tmp22;
+  const tmp23 = first(react.useState(false), 2);
+  first1 = tmp23[0];
+  MediaEngineStore = tmp25;
   let isGuildStageVoiceResult;
   if (stateFromStores2 != null) {
     isGuildStageVoiceResult = stateFromStores2.isGuildStageVoice();
   }
   if (isGuildStageVoiceResult) {
-    isGuildStageVoiceResult = !tmp18;
+    isGuildStageVoiceResult = !tmp19;
   }
   ref = obj6.useRef(false);
   const tmpResult6 = tmp(tmp2[14]);
@@ -159,57 +159,37 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stopCal
   if (cResult[8] === first1) {
     if (cResult[9] === first) {
       if (cResult[10] === sendCallback) {
-        let tmp29;
         let tmp30;
+        let tmp31;
         if (cResult[11] === stopCallback) {
-          tmp29 = cResult[12];
-          tmp30 = cResult[13];
+          tmp30 = cResult[12];
+          tmp31 = cResult[13];
         }
-        const effect = obj6.useEffect(tmp30, tmp29);
+        const effect = obj6.useEffect(tmp31, tmp30);
         if (cResult[14] !== prop) {
-          class N {
-            constructor() {
-              closure_4(true);
-              mode(false);
-              if (prop != null) {
-                prop(true);
-              }
+          function handleStartSend() {
+            closure_4(true);
+            mode(false);
+            if (prop != null) {
+              prop(true);
             }
           }
           cResult[14] = prop;
-          class I {
+          class T {
             constructor() {
-              return ref.getChannelId();
+              return mode.getMode();
             }
           }
-          cResult[15] = N;
-        } else {
-          class N {
-            constructor() {
-              closure_4(true);
-              mode(false);
-              if (prop != null) {
-                prop(true);
-              }
-            }
-          }
+          cResult[15] = handleStartSend;
         }
-        class I {
+        class T {
           constructor() {
-            return ref.getChannelId();
+            return mode.getMode();
           }
         }
         if (cResult[18] !== prop) {
-          let tmp34;
-          class N {
-            constructor() {
-              closure_4(true);
-              mode(false);
-              if (prop != null) {
-                prop(true);
-              }
-            }
-          }
+          let tmp35;
+          const _Symbol = Symbol;
           if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
             class CallPTTButtonTsx1 {
               constructor() {
@@ -219,16 +199,16 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stopCal
               }
             }
             let obj2 = { runOnJS: tmp(tmp2[16]).runOnJS, setDragging: null };
-            class I {
+            class T {
               constructor() {
-                return ref.getChannelId();
+                return mode.getMode();
               }
             }
             CallPTTButtonTsx1.__closure = obj2;
             CallPTTButtonTsx1.__workletHash = 8439106360958;
             CallPTTButtonTsx1.__initData = __initData;
             cResult[20] = CallPTTButtonTsx1;
-            tmp34 = CallPTTButtonTsx1;
+            tmp35 = CallPTTButtonTsx1;
           } else {
             class CallPTTButtonTsx1 {
               constructor() {
@@ -238,9 +218,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stopCal
               }
             }
           }
-          class I {
+          class T {
             constructor() {
-              return ref.getChannelId();
+              return mode.getMode();
             }
           }
           function et() {
@@ -253,7 +233,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stopCal
               tmpResult.runOnJS(tmp5)(false);
             }
           }
-          const obj3 = { runOnJS: tmp(tmp2[16]).runOnJS, setDragging: tmp22[1], setPressed: tmp19[1], setIsSwipeToChatDisabled: prop };
+          const obj3 = { runOnJS: tmp(tmp2[16]).runOnJS, setDragging: tmp23[1], setPressed: tmp20[1], setIsSwipeToChatDisabled: prop };
           const onStart = obj9.Pan().onStart;
           obj9.Pan();
           et.__closure = obj3;
@@ -261,8 +241,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stopCal
           et.__initData = __initData2;
           const onStartResult = onStart(et);
           cResult[18] = prop;
-          cResult[19] = onStartResult.onEnd(tmp34);
-          const onEndResult = onStartResult.onEnd(tmp34);
+          cResult[19] = onStartResult.onEnd(tmp35);
+          const onEndResult = onStartResult.onEnd(tmp35);
         } else {
           class CallPTTButtonTsx1 {
             constructor() {
@@ -299,7 +279,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stopCal
       const tmp2 = ref;
       if ((first || first1) !== ref.current) {
         const obj = MediaEngineActionCreators;
-        obj.setPushToTalkState(first || first1);
+        obj.setPushToTalkState(MediaEngineStore.getMediaEngine(), first || first1);
         if (first || first1) {
           if (sendCallback != null) {
             sendCallback();
@@ -318,8 +298,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stopCal
   cResult[11] = stopCallback;
   cResult[12] = items4;
   cResult[13] = A;
-  tmp30 = A;
-  tmp29 = items4;
+  tmp31 = A;
+  tmp30 = items4;
 }) : ((look) => {
   let closure_4;
   let intl;
@@ -378,7 +358,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stopCal
     const tmp2 = ref;
     if ((first || first1) !== ref.current) {
       const obj = MediaEngineActionCreators;
-      obj.setPushToTalkState(first || first1);
+      obj.setPushToTalkState(MediaEngineStore.getMediaEngine(), first || first1);
       if (first || first1) {
         if (sendCallback != null) {
           sendCallback();
@@ -448,14 +428,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stopCal
           style: buttonBlurPressed,
           textStyle: tmp2.textStyle,
           text: intl.string(sendCallback(stateFromStores1[18]).t.Q8gkVL),
-          onTouchStart() {
+          onTouchStart: function handleStartSend() {
                   closure_4(true);
                   mode(false);
                   if (prop != null) {
                     prop(true);
                   }
                 },
-          onTouchEnd() {
+          onTouchEnd: function handleStopSend() {
                   closure_4(false);
                   if (prop != null) {
                     prop(false);

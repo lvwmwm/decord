@@ -1,20 +1,20 @@
-// Module ID: 13214
-// Function ID: 13215
+// Module ID: 13514
+// Function ID: 13515
 // Name: SubscriptionRenewalMutationsNotice
-// Dependencies: [19, 17, 4535, 21, 4896, 587, 5627, 558, 576, 1188, 1126, 4534, 2]
+// Dependencies: [19, 17, 4727, 21, 5090, 587, 5974, 558, 576, 1200, 1126, 4726, 2]
 
-// Module 13214 (SubscriptionRenewalMutationsNotice)
+// Module 13514 (SubscriptionRenewalMutationsNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import PremiumUtils from "PremiumUtils" /* 4534 */;
-import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4535 */;
-import LegacyTokens from "LegacyTokens" /* 5627 */;
+import native from "native" /* 1200 */;
+import PremiumUtils from "PremiumUtils" /* 4726 */;
+import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4727 */;
+import LegacyTokens from "LegacyTokens" /* 5974 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ createStyles = createStyles.createStyles;
 obj3 = { alignSelf: "center", marginLeft: 15, color: LegacyTokens.DARK_PRIMARY_300_LIGHT_PRIMARY_500 };
 obj4 = { paddingLeft: 10, marginRight: 15, color: LegacyTokens.DARK_PRIMARY_300_LIGHT_PRIMARY_500 };
 let closure_7 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubscriptionRenewalMutationsNotice(arg0) {
   let items;
   let renewalMutations;
   let subscription;
@@ -109,7 +109,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = PremiumUtils;
   displayName = tmpResult.getExternalPlanDisplayName(renewalMutations);
-}) : ((arg0) => {
+}) : (function SubscriptionRenewalMutationsNotice(arg0) {
   let renewalMutations;
   let subscription;
   ({ subscription, renewalMutations } = arg0);

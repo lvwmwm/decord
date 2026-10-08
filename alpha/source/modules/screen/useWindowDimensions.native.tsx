@@ -1,18 +1,18 @@
-// Module ID: 1484
-// Function ID: 1485
+// Module ID: 1496
+// Function ID: 1497
 // Name: useWindowDimensions
-// Dependencies: [19, 1485, 558, 576, 1487, 2]
+// Dependencies: [19, 1497, 558, 576, 1499, 2]
 // Exports: getWindowDimensions
 
-// Module 1484 (useWindowDimensions)
+// Module 1496 (useWindowDimensions)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import DimensionsStore from "DimensionsStore" /* 1485 */;
+import DimensionsStore from "DimensionsStore" /* 1497 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const AppEntryKeyContext = tmp2(1487);
+const AppEntryKeyContext = tmp2(1499);
 let closure_4 = { ignoreKeyboard: false };
 function WINDOW_DIMENSIONS_GETTER(arg0) {
 
@@ -20,7 +20,7 @@ function WINDOW_DIMENSIONS_GETTER(arg0) {
 function WINDOW_DIMENSIONS_GETTER_IGNORING_KEYBOARD(arg0) {
 
 }
-tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWindowDimensions(arg0) {
   let appEntryKey;
   let fn;
   let ignoreKeyboard;
@@ -57,7 +57,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = undefined !== ignoreKeyboard && ignoreKeyboard;
   cResult[2] = fn;
   tmp6 = fn;
-}) : (() => {
+}) : (function useWindowDimensions() {
   let tmp = arg0;
   if (arg0 === undefined) {
     tmp = closure_4;

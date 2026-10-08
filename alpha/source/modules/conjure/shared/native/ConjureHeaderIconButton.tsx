@@ -1,23 +1,22 @@
-// Module ID: 16591
-// Function ID: 16592
+// Module ID: 16846
+// Function ID: 16847
 // Name: ConjureHeaderIconButton
-// Dependencies: [19, 21, 4896, 558, 576, 5916, 2]
+// Dependencies: [19, 21, 5090, 558, 576, 6189, 2]
 
-// Module 16591 (ConjureHeaderIconButton)
+// Module 16846 (ConjureHeaderIconButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Pressables = tmp(5916);
+const Pressables = tmp(6189);
 const jsx = Fragment.jsx;
 let closure_3 = createStyles.createStyles({ button: { width: 40, height: 40, alignItems: "center", justifyContent: "center" } });
 const androidRippleConfig = { borderless: true, radius: 20 };
-const forwardRef = react.forwardRef;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHeaderIconButton(arg0) {
   let IconComponent;
   let accessibilityActions;
   let accessibilityLabel;
@@ -25,10 +24,11 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let disabled;
   let onAccessibilityAction;
   let onPress;
+  let ref;
   let tmp5;
   const obj = react2;
   const cResult = obj.c(12);
-  ({ IconComponent, onPress, accessibilityLabel, accessibilityActions, onAccessibilityAction, accessibilityState, disabled } = arg0);
+  ({ IconComponent, onPress, accessibilityLabel, accessibilityActions, onAccessibilityAction, accessibilityState, disabled, ref } = arg0);
   const tmp4 = closure_3();
   if (cResult[0] !== IconComponent) {
     const tmp7 = <IconComponent />;
@@ -71,7 +71,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   cResult[10] = tmp5;
   cResult[11] = tmp9;
   tmp8 = tmp9;
-}) : ((arg0, ref) => {
+}) : (function ConjureHeaderIconButton(arg0) {
   let IconComponent;
   let accessibilityActions;
   let accessibilityLabel;
@@ -79,10 +79,11 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let disabled;
   let onAccessibilityAction;
   let onPress;
-  ({ IconComponent, onPress, accessibilityLabel, accessibilityActions, onAccessibilityAction, accessibilityState, disabled } = arg0);
+  let ref;
+  ({ IconComponent, onPress, accessibilityLabel, accessibilityActions, onAccessibilityAction, accessibilityState, disabled, ref } = arg0);
   const PressableOpacity = Pressables.PressableOpacity;
-  return <PressableOpacity ref={arg1} accessibilityRole="button" accessibilityLabel={accessibilityLabel} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} accessibilityState={accessibilityState} disabled={disabled} onPress={onPress} activeOpacity={0.6} androidRippleConfig={androidRippleConfig} style={closure_3().button}>{null}</PressableOpacity>;
-}));
+  return <PressableOpacity ref={ref} accessibilityRole="button" accessibilityLabel={accessibilityLabel} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} accessibilityState={accessibilityState} disabled={disabled} onPress={onPress} activeOpacity={0.6} androidRippleConfig={androidRippleConfig} style={closure_3().button}>{null}</PressableOpacity>;
+});
 const result = size.fileFinishedImporting("modules/conjure/shared/native/ConjureHeaderIconButton.tsx");
 
-export default forwardRefResult;
+export default tmp3;

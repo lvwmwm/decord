@@ -1,17 +1,17 @@
-// Module ID: 11799
-// Function ID: 11800
+// Module ID: 11866
+// Function ID: 11867
 // Name: useOptionAnimations
-// Dependencies: [32, 19, 4897, 558, 576, 4618, 2]
+// Dependencies: [32, 19, 5091, 558, 576, 4810, 2]
 
-// Module 11799 (useOptionAnimations)
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
+// Module 11866 (useOptionAnimations)
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let arr1, dependencyMap, spliceResult, tmp3;
+let dependencyMap, spliceResult;
 
 const React3 = 300;
 class LayoutAnimation {
@@ -46,15 +46,16 @@ ExitingAnimation.__workletHash = 8977480282966;
 ExitingAnimation.__initData = { code: "function ExitingAnimation_useOptionAnimationsTsx2(values){const{withTiming,OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION}=this.__closure;const offScreenX=Math.min(values.currentOriginX-values.windowWidth,-values.windowWidth);const animations={opacity:withTiming(0,{duration:OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION}),originX:withTiming(offScreenX,{duration:OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION})};const initialValues={originX:values.currentOriginX,opacity:1};return{initialValues:initialValues,animations:animations};}" };
 const __initData = { code: "function useOptionAnimationsTsx3(){const{withTiming,Easing,OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION,withDelay,runOnJS,handleMountAnimationComplete}=this.__closure;const scaleAnimation=withTiming(1,{duration:250,easing:Easing.bezier(0.25,1.75,0.25,1.25)});const opacityAnimation=withTiming(1,{duration:200});const layoutShiftDelay=OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION-100;return{animations:{opacity:withDelay(layoutShiftDelay,opacityAnimation),transform:[{scale:withDelay(layoutShiftDelay,scaleAnimation)}]},initialValues:{opacity:0,transform:[{scale:0.92}]},callback:function(){runOnJS(handleMountAnimationComplete)();}};}" };
 let closure_6 = { code: "function useOptionAnimationsTsx4(){const{withTiming,Easing,OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION,withDelay,runOnJS,handleMountAnimationComplete}=this.__closure;const scaleAnimation=withTiming(1,{duration:250,easing:Easing.bezier(0.25,1.75,0.25,1.25)});const opacityAnimation=withTiming(1,{duration:200});const layoutShiftDelay=OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION-100;return{animations:{opacity:withDelay(layoutShiftDelay,opacityAnimation),transform:[{scale:withDelay(layoutShiftDelay,scaleAnimation)}]},initialValues:{opacity:0,transform:[{scale:0.92}]},callback:function(){runOnJS(handleMountAnimationComplete)();}};}" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOptionEnteringAnimation() {
   let closure_1;
   let first;
   let obj4;
   let sharedValue;
+  let tmp4;
   let tmp6;
   let obj = sharedValue(576);
   const cResult = obj.c(10);
-  let obj2 = sharedValue(4618);
+  let obj2 = sharedValue(4810);
   sharedValue = obj2.useSharedValue(false);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [];
@@ -66,40 +67,26 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj3 = react;
   dependencyMap = react.useRef(first);
   if (cResult[1] !== sharedValue) {
-    class T {
-      constructor(arg0) {
-        if (closure_0.get()) {
-          tmp3 = arg0();
-        } else {
-          tmp = closure_1;
-          current = closure_1.current;
-          arr1 = current.push(arg0);
-        }
-        return;
+    function registerAnimationCompleteCallback(fn) {
+      if (sharedValue.get()) {
+        fn();
+      } else {
+        const current = closure_1.current;
+        current.push(fn);
       }
     }
     cResult[1] = sharedValue;
-    cResult[2] = T;
+    cResult[2] = registerAnimationCompleteCallback;
+    tmp4 = registerAnimationCompleteCallback;
   } else {
-    class T {
-      constructor(arg0) {
-        if (closure_0.get()) {
-          tmp3 = arg0();
-        } else {
-          tmp = closure_1;
-          current = closure_1.current;
-          arr1 = current.push(arg0);
-        }
-        return;
-      }
-    }
+    tmp4 = cResult[2];
   }
   if (cResult[3] !== sharedValue) {
     class O {
       constructor() {
         result = closure_0.set(true);
         current = closure_1.current;
-        item = current.forEach(() => { /* body not rendered: F141985 */ });
+        item = current.forEach((fn) => fn());
         current1 = closure_1.current;
         spliceResult = current1.splice(0, closure_1.current.length);
         return;
@@ -112,7 +99,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       constructor() {
         result = closure_0.set(true);
         current = closure_1.current;
-        item = current.forEach(() => { /* body not rendered: F141985 */ });
+        item = current.forEach((fn) => fn());
         current1 = closure_1.current;
         spliceResult = current1.splice(0, closure_1.current.length);
         return;
@@ -121,9 +108,34 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   O = tmp5;
   if (cResult[5] !== tmp5) {
-    class I {
+    class A {
       constructor() {
-        fn = function n() { /* body not rendered: F141986 */ };
+        fn = function n() {
+          let Easing;
+          let items;
+          let items1;
+          let obj4;
+          let obj5;
+          let obj7;
+          let obj8;
+          let withTimingResult1;
+          const tmp = sharedValue(closure_1[2]);
+          let obj = { duration: 250, easing: Easing.bezier(0.25, 1.75, 0.25, 1.25) };
+          const withTiming = tmp.withTiming;
+          Easing = sharedValue(closure_1[5]).Easing;
+          const obj3 = { animations: obj4, initialValues: obj8, callback() { /* body not rendered: F154253 */ } };
+          const withTimingResult = withTiming(1, obj);
+          obj4 = { opacity: obj5.withDelay(200, withTimingResult1), transform: items };
+          const obj2 = sharedValue(closure_1[2]);
+          withTimingResult1 = obj2.withTiming(1, { duration: 200 });
+          obj5 = sharedValue(closure_1[5]);
+          const obj6 = { scale: obj7.withDelay(200, withTimingResult) };
+          items = [obj6];
+          obj8 = { opacity: 0, transform: items1 };
+          items1 = [{ scale: 0.92 }];
+          obj7 = sharedValue(closure_1[5]);
+          return obj3;
+        };
         obj = { withTiming: closure_0(closure_1[2]).withTiming, Easing: closure_0(closure_1[5]).Easing, OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION: c4, withDelay: closure_0(closure_1[5]).withDelay, runOnJS: closure_0(closure_1[5]).runOnJS, handleMountAnimationComplete: closure_2 };
         fn.__closure = obj;
         fn.__workletHash = 1048348699475;
@@ -132,12 +144,37 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     cResult[5] = tmp5;
-    cResult[6] = I;
-    tmp6 = I;
+    cResult[6] = A;
+    tmp6 = A;
   } else {
-    class I {
+    class A {
       constructor() {
-        fn = function n() { /* body not rendered: F141986 */ };
+        fn = function n() {
+          let Easing;
+          let items;
+          let items1;
+          let obj4;
+          let obj5;
+          let obj7;
+          let obj8;
+          let withTimingResult1;
+          const tmp = sharedValue(closure_1[2]);
+          let obj = { duration: 250, easing: Easing.bezier(0.25, 1.75, 0.25, 1.25) };
+          const withTiming = tmp.withTiming;
+          Easing = sharedValue(closure_1[5]).Easing;
+          const obj3 = { animations: obj4, initialValues: obj8, callback() { /* body not rendered: F154253 */ } };
+          const withTimingResult = withTiming(1, obj);
+          obj4 = { opacity: obj5.withDelay(200, withTimingResult1), transform: items };
+          const obj2 = sharedValue(closure_1[2]);
+          withTimingResult1 = obj2.withTiming(1, { duration: 200 });
+          obj5 = sharedValue(closure_1[5]);
+          const obj6 = { scale: obj7.withDelay(200, withTimingResult) };
+          items = [obj6];
+          obj8 = { opacity: 0, transform: items1 };
+          items1 = [{ scale: 0.92 }];
+          obj7 = sharedValue(closure_1[5]);
+          return obj3;
+        };
         obj = { withTiming: closure_0(closure_1[2]).withTiming, Easing: closure_0(closure_1[5]).Easing, OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION: c4, withDelay: closure_0(closure_1[5]).withDelay, runOnJS: closure_0(closure_1[5]).runOnJS, handleMountAnimationComplete: closure_2 };
         fn.__closure = obj;
         fn.__workletHash = 1048348699475;
@@ -148,9 +185,34 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const first1 = O(obj3.useState(tmp6), 1)[0];
   if (cResult[7] === first1) {
-    class I {
+    class A {
       constructor() {
-        fn = function n() { /* body not rendered: F141986 */ };
+        fn = function n() {
+          let Easing;
+          let items;
+          let items1;
+          let obj4;
+          let obj5;
+          let obj7;
+          let obj8;
+          let withTimingResult1;
+          const tmp = sharedValue(closure_1[2]);
+          let obj = { duration: 250, easing: Easing.bezier(0.25, 1.75, 0.25, 1.25) };
+          const withTiming = tmp.withTiming;
+          Easing = sharedValue(closure_1[5]).Easing;
+          const obj3 = { animations: obj4, initialValues: obj8, callback() { /* body not rendered: F154253 */ } };
+          const withTimingResult = withTiming(1, obj);
+          obj4 = { opacity: obj5.withDelay(200, withTimingResult1), transform: items };
+          const obj2 = sharedValue(closure_1[2]);
+          withTimingResult1 = obj2.withTiming(1, { duration: 200 });
+          obj5 = sharedValue(closure_1[5]);
+          const obj6 = { scale: obj7.withDelay(200, withTimingResult) };
+          items = [obj6];
+          obj8 = { opacity: 0, transform: items1 };
+          items1 = [{ scale: 0.92 }];
+          obj7 = sharedValue(closure_1[5]);
+          return obj3;
+        };
         obj = { withTiming: closure_0(closure_1[2]).withTiming, Easing: closure_0(closure_1[5]).Easing, OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION: c4, withDelay: closure_0(closure_1[5]).withDelay, runOnJS: closure_0(closure_1[5]).runOnJS, handleMountAnimationComplete: closure_2 };
         fn.__closure = obj;
         fn.__workletHash = 1048348699475;
@@ -164,10 +226,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[7] = first1;
   cResult[8] = tmp4;
   cResult[9] = obj4;
-}) : (() => {
+}) : (function useOptionEnteringAnimation() {
   let closure_1;
   let sharedValue;
-  let obj = sharedValue(4618);
+  let obj = sharedValue(4810);
   sharedValue = obj.useSharedValue(false);
   dependencyMap = react.useRef([]);
   let items = [sharedValue];

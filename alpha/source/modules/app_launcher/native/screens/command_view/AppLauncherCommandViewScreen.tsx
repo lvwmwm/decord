@@ -1,50 +1,50 @@
-// Module ID: 11791
-// Function ID: 11792
+// Module ID: 11858
+// Function ID: 11859
 // Name: AppLauncherCommandViewScreen
-// Dependencies: [5, 32, 19, 17, 4885, 8827, 2106, 1489, 1085, 1614, 21, 4896, 587, 11792, 558, 576, 504, 4618, 4897, 4900, 4861, 4733, 5612, 1126, 4847, 5602, 11007, 5076, 6478, 11793, 7047, 7957, 11679, 1259, 11656, 11795, 1985, 8826, 11621, 9035, 1484, 9789, 10377, 11796, 10378, 7287, 1881, 7282, 11797, 8961, 6119, 4892, 11798, 11799, 11832, 1188, 38, 11766, 8968, 7043, 8832, 8957, 11833, 11834, 11752, 11753, 2]
+// Dependencies: [5, 32, 19, 17, 5079, 9186, 2118, 1501, 1085, 1626, 21, 5090, 587, 11859, 558, 576, 504, 4810, 5091, 5094, 5055, 4927, 5387, 1126, 5041, 5376, 11232, 5105, 6656, 11860, 7235, 5928, 11744, 1271, 11721, 11862, 1997, 9185, 11685, 10638, 1496, 10354, 9974, 11863, 9975, 7741, 1893, 7730, 11864, 11233, 6298, 5086, 11865, 11866, 11917, 1200, 38, 11833, 9759, 7231, 9191, 9760, 11918, 11919, 11818, 11819, 2]
 
-// Module 11791 (AppLauncherCommandViewScreen)
+// Module 11858 (AppLauncherCommandViewScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1614 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import HapticUtils from "HapticUtils" /* 4861 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import timing from "timing" /* 4897 */;
-import timingPresets from "timingPresets" /* 4900 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5076 */;
-import BaseTextButton2 from "BaseTextButton" /* 5602 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7043 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7047 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 7287 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 8826 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 8961 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10377 */;
-import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 10378 */;
-import AppLauncherContext from "AppLauncherContext" /* 11007 */;
-import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 11621 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11679 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11752 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11753 */;
-import AppLauncherCommandViewHeader from "AppLauncherCommandViewHeader" /* 11792 */;
-import ApplicationCommandValidationUtils from "ApplicationCommandValidationUtils" /* 11793 */;
-import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 11795 */;
-import CommandOptionViewDefault from "CommandOptionView" /* 11798 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11833 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11834 */;
+import native from "native" /* 1200 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import HapticUtils from "HapticUtils" /* 5055 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import timing from "timing" /* 5091 */;
+import timingPresets from "timingPresets" /* 5094 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5105 */;
+import BaseTextButton2 from "BaseTextButton" /* 5376 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7231 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7235 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 7741 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9185 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 9974 */;
+import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 9975 */;
+import AppLauncherContext from "AppLauncherContext" /* 11232 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11233 */;
+import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 11685 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11744 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11818 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11819 */;
+import AppLauncherCommandViewHeader from "AppLauncherCommandViewHeader" /* 11859 */;
+import ApplicationCommandValidationUtils from "ApplicationCommandValidationUtils" /* 11860 */;
+import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 11862 */;
+import CommandOptionViewDefault from "CommandOptionView" /* 11865 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11918 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11919 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8827 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1489 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9186 */;
+import GuildRoleStore from "GuildRoleStore" /* 2118 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -91,7 +91,6 @@ function AppLauncherCommandViewInner(command) {
   let items19;
   let items20;
   let items21;
-  let items22;
   let loading;
   let obj11;
   let obj13;
@@ -498,7 +497,7 @@ function AppLauncherCommandViewInner(command) {
           id = rootCommand.id;
         }
         num = firstInvalidOption.type;
-        ApplicationCommandOptionType = tmp13(1985).ApplicationCommandOptionType;
+        ApplicationCommandOptionType = tmp13(1997).ApplicationCommandOptionType;
         if (num == null) {
           num = 3;
         }
@@ -756,7 +755,7 @@ function AppLauncherCommandViewInner(command) {
               }
             }
             const tmpResult2 = MediaKeyboardUtils;
-            const result2 = tmpResult2.addAttachmentForCommand(channelId, chatInputRef, result1, obj, tmp(7282).UploadOrigin.IMAGE_PICKER);
+            const result2 = tmpResult2.addAttachmentForCommand(channelId, chatInputRef, result1, obj, tmp(7730).UploadOrigin.IMAGE_PICKER);
           },
         onViewAll() {
             obj = { draftType: mediaKeyboardDraftType };
@@ -1005,15 +1004,14 @@ function AppLauncherCommandViewInner(command) {
     tmp73Result2 = ref6(closure_34, obj3);
     tmp70 = ref6;
   } else if (hasPermissions) {
-    let obj4 = { ref, contentContainerStyle: items17, scrollIndicatorInsets: obj5, scrollToOverflowEnabled: true, onContentSizeChange: callback10, preserveScrollMomentum: true, lockableScrollableContentOffsetY: sharedValue1, keyboardShouldPersistTaps: "handled", contentInsetAdjustmentBehavior: "never", automaticallyAdjustContentInsets: false, onLayout: callback9, automaticallyAdjustsScrollIndicatorInsets: false, children: items19 };
-    items17 = [tmp.optionsContainer];
+    let obj4 = { ref, contentContainerStyle: tmp.optionsContainer, scrollIndicatorInsets: obj5, scrollToOverflowEnabled: true, onContentSizeChange: callback10, preserveScrollMomentum: true, lockableScrollableContentOffsetY: sharedValue1, keyboardShouldPersistTaps: "handled", contentInsetAdjustmentBehavior: "never", automaticallyAdjustContentInsets: false, onLayout: callback9, automaticallyAdjustsScrollIndicatorInsets: false, children: items18 };
     obj5 = { bottom: sum1 };
-    let obj6 = { style: tmp.commandNameContainer, children: items18 };
+    let obj6 = { style: tmp.commandNameContainer, children: items17 };
     let obj7 = { variant: "heading-lg/bold", color: "text-default", children: command.displayName };
-    items18 = [ref6(tmp3(tmp4[51]).Text, obj7), ];
+    items17 = [ref6(tmp3(tmp4[51]).Text, obj7), ];
     const obj8 = { variant: "heading-sm/medium", color: "text-default", children: command.displayDescription };
-    items18[1] = ref6(tmp3(tmp4[51]).Text, obj8);
-    items19 = [ref7(closure_7, obj6), , , , , ];
+    items17[1] = ref6(tmp3(tmp4[51]).Text, obj8);
+    items18 = [ref7(closure_7, obj6), , , , , ];
     let tmp76Result = tmp66;
     if (tmp76Result) {
       const obj9 = {
@@ -1048,7 +1046,7 @@ function AppLauncherCommandViewInner(command) {
       };
       tmp76Result = tmp76(tmp75, obj9);
     }
-    items19[1] = tmp76Result;
+    items18[1] = tmp76Result;
     let tmp76Result3 = !tmp66 && tmp68;
     if (tmp76Result3) {
       const obj10 = { style: tmp.noRequiredOptionsCalloutContainer, children: ref6(Text, obj11) };
@@ -1057,7 +1055,7 @@ function AppLauncherCommandViewInner(command) {
       intl = tmp3(tmp4[23]).intl;
       tmp76Result3 = tmp76(tmp75, obj10);
     }
-    items19[2] = tmp76Result3;
+    items18[2] = tmp76Result3;
     let tmp76Result4 = !tmp68;
     if (tmp76Result4) {
       const obj12 = { style: tmp.noOptionCalloutContainer, children: ref6(Text2, obj13) };
@@ -1066,13 +1064,13 @@ function AppLauncherCommandViewInner(command) {
       intl2 = tmp3(tmp4[23]).intl;
       tmp76Result4 = tmp76(tmp75, obj12);
     }
-    items19[3] = tmp76Result4;
+    items18[3] = tmp76Result4;
     if (tmp73Result) {
-      const obj14 = { children: items20 };
+      const obj14 = { children: items19 };
       const obj15 = { style: tmp.optionalOptionsSectionTitle, variant: "text-md/normal", color: "text-default", children: intl3.string(tmp3(tmp4[23]).t["5C107K"]) };
       const Text3 = tmp3(tmp4[51]).Text;
       intl3 = tmp3(tmp4[23]).intl;
-      items20 = [ref6(Text3, obj15), , ];
+      items19 = [ref6(Text3, obj15), , ];
       const obj16 = {
         style: tmp.optionalOptionsContainer,
         onLayout: callback8,
@@ -1096,20 +1094,20 @@ function AppLauncherCommandViewInner(command) {
               return tmp(tmp2, obj, option.name);
             })
       };
-      items20[1] = ref6(closure_7, obj16);
+      items19[1] = ref6(closure_7, obj16);
       const obj17 = { layout: tmp3(tmp4[53]).LayoutAnimation, collapsable: false, children: ref6(context(tmp4[54]), obj18) };
       const View = tmp32(tmp4[17]).View;
       obj18 = { style: tmp.optionalOptionList, options: tmp20, onSelectOption: callback21 };
-      items20[2] = ref6(View, obj17);
+      items19[2] = ref6(View, obj17);
       tmp73Result = tmp73(tmp74, obj14);
     }
-    const obj19 = { children: items21 };
-    items19[4] = tmp73Result;
+    const obj19 = { children: items20 };
+    items18[4] = tmp73Result;
     const obj20 = { size: sum1 };
-    items19[5] = ref6(tmp3(tmp4[55]).Spacer, obj20);
-    items21 = [ref7(BottomSheetScrollView, obj4), ];
+    items18[5] = ref6(tmp3(tmp4[55]).Spacer, obj20);
+    items20 = [ref7(BottomSheetScrollView, obj4), ];
     const obj21 = { enableSubmit: first3, onSubmit: callback4, animatedStyle, onHeightChange: tmp34, isSending: sharedValue, footerStickyInsetBottom: sum2 };
-    items21[1] = ref6(first1, obj21);
+    items20[1] = ref6(first1, obj21);
     tmp73Result2 = tmp73(tmp74, obj19);
     tmp70 = tmp76;
   } else {
@@ -1117,8 +1115,8 @@ function AppLauncherCommandViewInner(command) {
     const obj22 = { command, onPressBack: callback };
     tmp73Result2 = ref6(closure_35, obj22);
   }
-  const obj23 = { style: tmp.container, children: items22 };
-  items22 = [tmp70(tmp3(tmp4[13]).AppLauncherCommandViewHeader, { command, onPressBack: callback, scrollOffsetY: sharedValue1, section }), tmp73Result2];
+  const obj23 = { style: tmp.container, children: items21 };
+  items21 = [tmp70(tmp3(tmp4[13]).AppLauncherCommandViewHeader, { command, onPressBack: callback, scrollOffsetY: sharedValue1, section }), tmp73Result2];
   return ref7(closure_7, obj23);
 }
 let _slicedToArray = _slicedToArray_mod;
@@ -1145,7 +1143,7 @@ const __initData2 = { code: "function AppLauncherCommandViewScreenTsx2(){const{r
 const __initData3 = { code: "function AppLauncherCommandViewScreenTsx3(){const{shouldReduceMotion,isPressedDown,withDelay,withTiming,timingStandard,runOnJS,triggerHapticFeedback,HapticFeedbackTypes,isSending}=this.__closure;if(shouldReduceMotion)return{};if(isPressedDown){return{opacity:1,transform:[{translateX:withDelay(100,withTiming(-4,timingStandard,'respect-motion-settings',function(){return runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.IMPACT_LIGHT);}))}]};}return{opacity:withTiming(isSending.get()?0:1,timingStandard),transform:[{translateX:withTiming(isSending.get()?100:0,timingStandard)}]};}" };
 let closure_27 = { code: "function AppLauncherCommandViewScreenTsx4(){const{runOnJS,triggerHapticFeedback,HapticFeedbackTypes}=this.__closure;return runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.IMPACT_LIGHT);}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSending) => {
+let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherCommandViewFooter(isSending) {
   let animatedStyle;
   let closure_2;
   let closure_5;
@@ -1413,7 +1411,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSending) => 
   cResult[4] = animatedStyle;
   cResult[5] = tmp4.footerContainer;
   cResult[6] = items2;
-}) : ((arg0) => {
+}) : (function AppLauncherCommandViewFooter(arg0) {
   let SendMessageIcon;
   let View2;
   let animatedStyle;
@@ -1550,7 +1548,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSending) => 
 });
 let __initData4 = { code: "function AppLauncherCommandViewScreenTsx5(){const{bottomSheetPosition,screenHeight,maxHeight,footerStickyInsetBottom}=this.__closure;const animatedSheetOffset=bottomSheetPosition.get()-screenHeight+maxHeight;return{transform:[{translateY:-animatedSheetOffset-footerStickyInsetBottom}]};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((command) => {
+let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherCommandView(command) {
   let analyticsLocation;
   let context;
   let expandBottomSheet;
@@ -1727,7 +1725,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((command) => {
   cResult[9] = items;
   tmp10 = items;
   tmp9 = P;
-}) : ((command) => {
+}) : (function AppLauncherCommandView(command) {
   let analyticsLocation;
   let context;
   let expandBottomSheet;
@@ -1796,7 +1794,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((command) => {
   return tmp7(tmp8, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherCommandViewScreen(route) {
   let analyticsLocation;
   let command;
   let context;
@@ -1847,7 +1845,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
     tmp3 = tmp6;
   }
   return tmp2;
-}) : ((route) => {
+}) : (function AppLauncherCommandViewScreen(route) {
   const context = route.route.params.context;
   let tmp9 = null;
   if (null != context) {
@@ -1857,7 +1855,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   return tmp9;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel, commandId, _location, sectionName) => {
+let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreSelectedCommand(channel, commandId, _location, sectionName) {
   let command;
   let context;
   let descriptor;
@@ -2066,7 +2064,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel, comma
   cResult[9] = items1;
   tmp19 = items1;
   tmp18 = fn;
-}) : ((channel, commandId, _location, sectionName) => {
+}) : (function usePreSelectedCommand(channel, commandId, _location, sectionName) {
   let command;
   let context;
   let descriptor;
@@ -2178,7 +2176,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel, comma
   return { command: null, sectionDescriptor: null, hasPermission: false, loading };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? (function LoadingState() {
   let first;
   const obj = react2;
   const cResult = obj.c(1);
@@ -2191,12 +2189,12 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => {
+}) : (function LoadingState() {
   const obj = { style: { flex: 1, justifyContent: "center", alignItems: "center" }, children: closure_20(metroImportAll, { size: "large" }) };
   return closure_20(metroImportDefault, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressBack) => {
+let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotFoundState(onPressBack) {
   let emptyState;
   let emptyStateContainer;
   let failureStateButtonPill;
@@ -2258,7 +2256,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressBack) =
         tmp18 = tmp21;
       }
       const obj4 = { style: emptyState, lightSource: AssetRegistryDefault3, darkSource: AssetRegistryDefault4, title: tmp6, body: tmp7, children: tmp12 };
-      const EmptyState = tmp(1188).EmptyState;
+      const EmptyState = tmp(1200).EmptyState;
       const tmp17 = closure_20(EmptyState, obj4);
       cResult[7] = tmp4.emptyState;
       cResult[8] = tmp12;
@@ -2272,7 +2270,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressBack) =
   cResult[5] = tmp4.failureStateButtonWrapper;
   cResult[6] = tmp13;
   tmp12 = tmp13;
-}) : ((onPressBack) => {
+}) : (function NotFoundState(onPressBack) {
   let BaseTextButton;
   let EmptyState;
   let intl;
@@ -2295,7 +2293,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressBack) =
   return closure_20(metroImportDefault, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoPermsState(arg0) {
   let command;
   let failureStateButtonPill;
   let failureStateButtonWrapper;
@@ -2393,7 +2391,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp28 = tmp31;
           }
           const obj6 = { style: emptyState, lightSource: AssetRegistryDefault, darkSource: AssetRegistryDefault2, title: tmp15, body: tmp16, children: tmp21 };
-          const EmptyState = tmp(1188).EmptyState;
+          const EmptyState = tmp(1200).EmptyState;
           const tmp27 = closure_20(EmptyState, obj6);
           cResult[15] = tmp4.emptyState;
           cResult[16] = tmp21;
@@ -2418,7 +2416,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = tmp9;
   cResult[7] = tmp13;
   tmp12 = tmp13;
-}) : ((command) => {
+}) : (function NoPermsState(command) {
   let BaseTextButton;
   let intl;
   let intl2;

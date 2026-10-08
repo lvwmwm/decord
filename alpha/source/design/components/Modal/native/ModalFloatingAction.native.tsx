@@ -1,29 +1,29 @@
-// Module ID: 10741
-// Function ID: 10742
+// Module ID: 11612
+// Function ID: 11613
 // Name: ModalFloatingAction
-// Dependencies: [109, 19, 17, 21, 4896, 558, 576, 4618, 4602, 1618, 5604, 5605, 683, 5612, 10742, 2]
+// Dependencies: [109, 19, 17, 21, 5090, 558, 576, 4810, 4794, 1630, 5374, 5378, 683, 5387, 11613, 2]
 
-// Module 10741 (ModalFloatingAction)
+// Module 11612 (ModalFloatingAction)
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import spring from "spring" /* 5604 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import spring from "spring" /* 5374 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault, isVisible, set;
+let importDefault, set;
 
 let c9;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp2;
-const springPresets = tmp2(5605);
+const springPresets = tmp2(5378);
 let closure_3 = ["isVisible", "floatingBackgroundColor"];
 ({ StyleSheet: metroRequire, View: metroImportDefault } = react_native);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -31,8 +31,8 @@ let closure_10 = createStyles.createStyles({ floating: { position: "absolute", b
 const __initData = { code: "function ModalFloatingActionNativeTsx1(){const{interpolate,sharedValue,floatingBackgroundColor,useReducedMotion}=this.__closure;return{opacity:interpolate(sharedValue.get(),[0,1],[0,1]),borderBottomColor:floatingBackgroundColor,borderBottomWidth:16,transform:[{translateY:interpolate(sharedValue.get(),[useReducedMotion?0.999999:0,1],[32,0])}]};}" };
 const __initData2 = { code: "function ModalFloatingActionNativeTsx2(){const{interpolate,sharedValue,floatingBackgroundColor,useReducedMotion}=this.__closure;return{opacity:interpolate(sharedValue.get(),[0,1],[0,1]),borderBottomColor:floatingBackgroundColor,borderBottomWidth:16,transform:[{translateY:interpolate(sharedValue.get(),[useReducedMotion?0.999999:0,1],[32,0])}]};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((isVisible) => {
-  let borderBottomColor;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ModalFloatingAction(isVisible) {
+  let _require;
   let closure_1;
   let enabled;
   let items1;
@@ -79,34 +79,55 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((isVisible) => {
       tmp16 = cResult[7];
     }
     const effect = obj2.useEffect(tmp15, tmp16);
-    const fn2 = function x() {
-      let items;
-      let items1;
-      let obj2;
-      const obj = { opacity: obj2.interpolate(sharedValue.get(), [0, 1], [0, 1]), borderBottomColor, borderBottomWidth: 16, transform: items1 };
-      obj2 = ReanimatedRexport;
-      const interpolate = ReanimatedRexport.interpolate;
-      let num = 0;
-      ReanimatedRexport;
-      const value = sharedValue.get();
-      if (enabled) {
-        num = 0.999999;
+    const tmpResult2 = tmp(tmp2[7]);
+    class A {
+      constructor() {
+        let items;
+        let items1;
+        let obj2;
+        const obj = { opacity: obj2.interpolate(sharedValue.get(), [0, 1], [0, 1]), borderBottomColor, borderBottomWidth: 16, transform: items1 };
+        obj2 = ReanimatedRexport;
+        const interpolate = ReanimatedRexport.interpolate;
+        let num = 0;
+        ReanimatedRexport;
+        const value = sharedValue.get();
+        if (enabled) {
+          num = 0.999999;
+        }
+        const obj3 = { translateY: interpolate(value, items, [32, 0]) };
+        items = [num, 1];
+        items1 = [obj3];
+        return obj;
       }
-      const obj3 = { translateY: interpolate(value, items, [32, 0]) };
-      items = [num, 1];
-      items1 = [obj3];
-      return obj;
-    };
+    }
     let obj3 = { interpolate: tmp(tmp2[7]).interpolate, sharedValue, floatingBackgroundColor: tmp5, useReducedMotion: enabled };
-    const useAnimatedStyle = tmp(tmp2[7]).useAnimatedStyle;
-    tmp(tmp2[7]);
-    fn2.__closure = obj3;
-    fn2.__workletHash = 1679390676673;
-    fn2.__initData = __initData;
-    const animatedStyle = useAnimatedStyle(fn2);
+    const useAnimatedStyle = tmpResult2.useAnimatedStyle;
+    A.__closure = obj3;
+    A.__workletHash = 1679390676673;
+    A.__initData = __initData;
+    const animatedStyle = useAnimatedStyle(A);
     if (cResult[8] !== tmp14.bottom) {
       const obj4 = { paddingBottom: tmp14.bottom };
-      cResult[8] = tmp14.bottom;
+      class A {
+        constructor() {
+          let items;
+          let items1;
+          let obj2;
+          const obj = { opacity: obj2.interpolate(sharedValue.get(), [0, 1], [0, 1]), borderBottomColor, borderBottomWidth: 16, transform: items1 };
+          obj2 = ReanimatedRexport;
+          const interpolate = ReanimatedRexport.interpolate;
+          let num = 0;
+          ReanimatedRexport;
+          const value = sharedValue.get();
+          if (enabled) {
+            num = 0.999999;
+          }
+          const obj3 = { translateY: interpolate(value, items, [32, 0]) };
+          items = [num, 1];
+          items1 = [obj3];
+          return obj;
+        }
+      }
       cResult[9] = obj4;
       tmp21 = obj4;
     } else {
@@ -115,7 +136,6 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((isVisible) => {
     if (cResult[10] === animatedStyle) {
       if (cResult[11] === tmp10.floating) {
         let tmp22;
-        let tmp23;
         if (cResult[12] === tmp21) {
           tmp22 = cResult[13];
         }
@@ -123,78 +143,164 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((isVisible) => {
         if (tmp6) {
           str = "auto";
         }
-        if (cResult[14] !== tmp5) {
-          const obj5 = require("module_683")(tmp5);
-          const alphaResult = obj5.alpha(0);
-          const hexResult = alphaResult.hex();
-          cResult[14] = tmp5;
-          cResult[15] = hexResult;
-          tmp23 = hexResult;
-        } else {
-          tmp23 = cResult[15];
+        class A {
+          constructor() {
+            let items;
+            let items1;
+            let obj2;
+            const obj = { opacity: obj2.interpolate(sharedValue.get(), [0, 1], [0, 1]), borderBottomColor, borderBottomWidth: 16, transform: items1 };
+            obj2 = ReanimatedRexport;
+            const interpolate = ReanimatedRexport.interpolate;
+            let num = 0;
+            ReanimatedRexport;
+            const value = sharedValue.get();
+            if (enabled) {
+              num = 0.999999;
+            }
+            const obj3 = { translateY: interpolate(value, items, [32, 0]) };
+            items = [num, 1];
+            items1 = [obj3];
+            return obj;
+          }
         }
         if (cResult[16] === tmp5) {
-          let tmp25;
+          let tmp24;
           let tmp27;
-          let tmp28;
-          let tmp32;
+          let tmp31;
           if (cResult[17] === tmp23) {
-            tmp25 = cResult[18];
+            tmp24 = cResult[18];
           }
           const _Symbol = Symbol;
+          class A {
+            constructor() {
+              let items;
+              let items1;
+              let obj2;
+              const obj = { opacity: obj2.interpolate(sharedValue.get(), [0, 1], [0, 1]), borderBottomColor, borderBottomWidth: 16, transform: items1 };
+              obj2 = ReanimatedRexport;
+              const interpolate = ReanimatedRexport.interpolate;
+              let num = 0;
+              ReanimatedRexport;
+              const value = sharedValue.get();
+              if (enabled) {
+                num = 0.999999;
+              }
+              const obj3 = { translateY: interpolate(value, items, [32, 0]) };
+              items = [num, 1];
+              items1 = [obj3];
+              return obj;
+            }
+          }
           if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
             let items = [0, 0.5];
             cResult[19] = items;
-            tmp27 = items;
-          } else {
-            tmp27 = cResult[19];
-          }
-          if (cResult[20] !== tmp25) {
-            const obj6 = { colors: tmp25, locations: tmp27, style: closure_6.absoluteFill };
-            const tmp31 = closure_8(require("LinearGradient"), obj6);
-            cResult[20] = tmp25;
-            cResult[21] = tmp31;
-            tmp28 = tmp31;
-          } else {
-            tmp28 = cResult[21];
-          }
-          if (cResult[22] !== tmp4) {
-            const obj7 = { variant: "primary" };
-            const ModalActionButton = tmp(tmp2[14]).ModalActionButton;
-            const merged = Object.assign(tmp4);
-            const tmp37 = closure_8(ModalActionButton, obj7);
-            cResult[22] = tmp4;
-            cResult[23] = tmp37;
-            tmp32 = tmp37;
-          } else {
-            tmp32 = cResult[23];
-          }
-          if (cResult[24] === tmp28) {
-            if (cResult[25] === tmp32) {
-              if (cResult[26] === tmp22) {
-                let tmp38;
-                if (cResult[27] === str) {
-                  tmp38 = cResult[28];
+            class A {
+              constructor() {
+                let items;
+                let items1;
+                let obj2;
+                const obj = { opacity: obj2.interpolate(sharedValue.get(), [0, 1], [0, 1]), borderBottomColor, borderBottomWidth: 16, transform: items1 };
+                obj2 = ReanimatedRexport;
+                const interpolate = ReanimatedRexport.interpolate;
+                let num = 0;
+                ReanimatedRexport;
+                const value = sharedValue.get();
+                if (enabled) {
+                  num = 0.999999;
                 }
-                return tmp38;
+                const obj3 = { translateY: interpolate(value, items, [32, 0]) };
+                items = [num, 1];
+                items1 = [obj3];
+                return obj;
               }
             }
           }
-          const obj8 = { style: tmp22, pointerEvents: str, children: items1 };
-          items1 = [tmp28, tmp32];
-          const tmp40 = closure_9(require("ReanimatedRexport").View, obj8);
-          cResult[24] = tmp28;
-          cResult[25] = tmp32;
+          if (cResult[20] !== tmp24) {
+            const obj5 = { colors: tmp24, locations: null, style: closure_6.absoluteFill };
+            class A {
+              constructor() {
+                let items;
+                let items1;
+                let obj2;
+                const obj = { opacity: obj2.interpolate(sharedValue.get(), [0, 1], [0, 1]), borderBottomColor, borderBottomWidth: 16, transform: items1 };
+                obj2 = ReanimatedRexport;
+                const interpolate = ReanimatedRexport.interpolate;
+                let num = 0;
+                ReanimatedRexport;
+                const value = sharedValue.get();
+                if (enabled) {
+                  num = 0.999999;
+                }
+                const obj3 = { translateY: interpolate(value, items, [32, 0]) };
+                items = [num, 1];
+                items1 = [obj3];
+                return obj;
+              }
+            }
+            const tmp30 = closure_8(require("LinearGradient"), obj5);
+            cResult[20] = tmp24;
+            cResult[21] = tmp30;
+            tmp27 = tmp30;
+          } else {
+            tmp27 = cResult[21];
+          }
+          if (cResult[22] !== tmp4) {
+            const obj6 = { variant: "primary" };
+            class A {
+              constructor() {
+                let items;
+                let items1;
+                let obj2;
+                const obj = { opacity: obj2.interpolate(sharedValue.get(), [0, 1], [0, 1]), borderBottomColor, borderBottomWidth: 16, transform: items1 };
+                obj2 = ReanimatedRexport;
+                const interpolate = ReanimatedRexport.interpolate;
+                let num = 0;
+                ReanimatedRexport;
+                const value = sharedValue.get();
+                if (enabled) {
+                  num = 0.999999;
+                }
+                const obj3 = { translateY: interpolate(value, items, [32, 0]) };
+                items = [num, 1];
+                items1 = [obj3];
+                return obj;
+              }
+            }
+            const ModalActionButton = tmp(tmp2[14]).ModalActionButton;
+            const merged = Object.assign(tmp4);
+            const tmp35 = closure_8(ModalActionButton, obj6);
+            cResult[22] = tmp4;
+            cResult[23] = tmp35;
+            tmp31 = tmp35;
+          } else {
+            tmp31 = cResult[23];
+          }
+          if (cResult[24] === tmp27) {
+            if (cResult[25] === tmp31) {
+              if (cResult[26] === tmp22) {
+                let tmp36;
+                if (cResult[27] === str) {
+                  tmp36 = cResult[28];
+                }
+                return tmp36;
+              }
+            }
+          }
+          const obj7 = { style: tmp22, pointerEvents: str, children: items1 };
+          items1 = [tmp27, tmp31];
+          const tmp38 = closure_9(require("ReanimatedRexport").View, obj7);
+          cResult[24] = tmp27;
+          cResult[25] = tmp31;
           cResult[26] = tmp22;
           cResult[27] = str;
-          cResult[28] = tmp40;
-          tmp38 = tmp40;
+          cResult[28] = tmp38;
+          tmp36 = tmp38;
         }
         const items2 = [tmp23, tmp5];
         cResult[16] = tmp5;
         cResult[17] = tmp23;
         cResult[18] = items2;
-        tmp25 = items2;
+        tmp24 = items2;
       }
     }
     const items3 = [animatedStyle, tmp10.floating, tmp21];
@@ -221,7 +327,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((isVisible) => {
   cResult[7] = items4;
   tmp16 = items4;
   tmp15 = fn;
-}) : ((isVisible) => {
+}) : (function ModalFloatingAction(isVisible) {
   let items1;
   let items2;
   let items3;
@@ -300,7 +406,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((isVisible) => {
   return tmp11(View, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ModalFloatingActionSpacer() {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
@@ -315,7 +421,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
+}) : (function ModalFloatingActionSpacer() {
   const obj = { style: closure_10().spacer };
   return metroImportAll(metroImportDefault, obj);
 });

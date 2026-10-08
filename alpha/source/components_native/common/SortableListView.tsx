@@ -1,18 +1,18 @@
-// Module ID: 16359
-// Function ID: 16360
+// Module ID: 16619
+// Function ID: 16620
 // Name: SortableListView
-// Dependencies: [19, 17, 21, 558, 576, 6480, 2]
+// Dependencies: [19, 17, 21, 558, 576, 6658, 2]
 
-// Module 16359 (SortableListView)
+// Module 16619 (SortableListView)
 import react2 from "react" /* 576 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6480 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6658 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let hoverIndex, listPageY;
+let hoverIndex;
 
 let Dimensions;
 let c3;
@@ -26,7 +26,7 @@ let metroRequire;
 let height = Dimensions.get("window").height;
 const authStore = -5;
 let closure_11 = { x: 0, y: 0 };
-let closure_12 = react.memo((cResult) => {
+let closure_12 = react.memo(function Row(cResult) {
   let active;
   let hideContent;
   let hovering;
@@ -106,7 +106,7 @@ let closure_12 = react.memo((cResult) => {
   return tmp7(_false, obj2);
 });
 const memo = react.memo;
-let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listPageY) => {
+let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SortRow(listPageY) {
   let frameHeight;
   let pan;
   let renderRow;
@@ -177,7 +177,7 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listPageY
   cResult[1] = diff;
   cResult[2] = rect;
   tmp3 = rect;
-}) : ((listPageY) => {
+}) : (function SortRow(listPageY) {
   let frameHeight;
   let items1;
   let pan;

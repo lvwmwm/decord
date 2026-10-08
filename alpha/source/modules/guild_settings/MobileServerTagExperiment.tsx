@@ -1,10 +1,10 @@
-// Module ID: 9286
-// Function ID: 9287
+// Module ID: 8617
+// Function ID: 8618
 // Name: MobileServerTagExperiment
-// Dependencies: [1440, 2]
+// Dependencies: [1452, 2]
 
-// Module 9286 (MobileServerTagExperiment)
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+// Module 8617 (MobileServerTagExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

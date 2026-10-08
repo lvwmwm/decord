@@ -1,16 +1,16 @@
-// Module ID: 12285
-// Function ID: 12286
+// Module ID: 12383
+// Function ID: 12384
 // Name: useUserProfileMutuals
-// Dependencies: [32, 19, 7156, 5623, 7124, 558, 576, 504, 12, 9323, 2]
+// Dependencies: [32, 19, 7336, 5968, 7309, 558, 576, 504, 12, 8644, 2]
 
-// Module 12285 (useUserProfileMutuals)
+// Module 12383 (useUserProfileMutuals)
 import _mod12 from "module_12" /* 12 */;
 import react from "react" /* 19 */;
-import reactDefault from "react" /* 9323 */;
+import reactDefault from "react" /* 8644 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7156 */;
-import SortedGuildStore from "SortedGuildStore" /* 5623 */;
-import UserProfileStore from "UserProfileStore" /* 7124 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7336 */;
+import SortedGuildStore from "SortedGuildStore" /* 5968 */;
+import UserProfileStore from "UserProfileStore" /* 7309 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let _require, closure_0, dependencyMap, importDefault;
 
 let _slicedToArray = _slicedToArray_mod;
 const useMemo = react.useMemo;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfileMutuals(id) {
   let arr2;
   let arr3;
   let closure_3;
@@ -37,7 +37,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   let tmp9;
   let user;
   let userAffinitiesMap;
-  const f111252 = (arg0) => {
+  const f111648 = (arg0) => {
     let length = closure_3[arg0.guild.id];
     if (length == null) {
       length = stateFromStores1.length;
@@ -86,14 +86,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   const stateFromStores = tmpResult5.useStateFromStores(tmp11, tmp12);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [SortedGuildStore];
-    class P {
+    class G {
       constructor() {
         return flattenedGuildIds.getFlattenedGuildIds();
       }
     }
     cResult[5] = items2;
-    cResult[6] = P;
-    tmp16 = P;
+    cResult[6] = G;
+    tmp16 = G;
     tmp15 = items2;
   } else {
     tmp15 = cResult[5];
@@ -107,7 +107,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     if (arr2.length >= 2) {
       let tmp19;
       if (cResult[7] !== stateFromStores) {
-        class B {
+        class A {
           constructor(user) {
             const value = stateFromStores.get(user.user.id);
             let num;
@@ -121,15 +121,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
           }
         }
         cResult[7] = stateFromStores;
-        class P {
+        class G {
           constructor() {
             return flattenedGuildIds.getFlattenedGuildIds();
           }
         }
-        cResult[8] = B;
-        tmp19 = B;
+        cResult[8] = A;
+        tmp19 = A;
       } else {
-        class B {
+        class A {
           constructor(user) {
             const value = stateFromStores.get(user.user.id);
             let num;
@@ -144,7 +144,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
         }
       }
       if (cResult[9] === arr2) {
-        class B {
+        class A {
           constructor(user) {
             const value = stateFromStores.get(user.user.id);
             let num;
@@ -160,7 +160,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
         tmp18 = tmp20;
       }
       require("module_12");
-      class P {
+      class G {
         constructor() {
           return flattenedGuildIds.getFlattenedGuildIds();
         }
@@ -173,7 +173,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   }
   let tmp23 = arr3;
   if (null != arr3) {
-    class B {
+    class A {
       constructor(user) {
         const value = stateFromStores.get(user.user.id);
         let num;
@@ -188,7 +188,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     }
     tmp23 = arr3;
     if (arr3.length >= 2) {
-      class B {
+      class A {
         constructor(user) {
           const value = stateFromStores.get(user.user.id);
           let num;
@@ -202,7 +202,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
         }
       }
       const _Symbol = Symbol;
-      class P {
+      class G {
         constructor() {
           return flattenedGuildIds.getFlattenedGuildIds();
         }
@@ -212,15 +212,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
       const tmpResult8 = require("module_12");
       cResult[12] = arr3;
       cResult[13] = stateFromStores1;
-      cResult[14] = tmpResult8.sortBy(arr3, f111252);
-      const sortByResult = tmpResult8.sortBy(arr3, f111252);
+      cResult[14] = tmpResult8.sortBy(arr3, f111648);
+      const sortByResult = tmpResult8.sortBy(arr3, f111648);
     }
   }
   stateFromStores(stateFromStores1[9])(tmp8);
   stateFromStores(stateFromStores1[9])(tmp18);
   stateFromStores(stateFromStores1[9])(tmp23);
   if (tmp8 == null) {
-    class B {
+    class A {
       constructor(user) {
         const value = stateFromStores.get(user.user.id);
         let num;
@@ -235,7 +235,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     }
   }
   if (tmp18 == null) {
-    class B {
+    class A {
       constructor(user) {
         const value = stateFromStores.get(user.user.id);
         let num;
@@ -250,7 +250,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     }
   }
   if (tmp23 == null) {
-    class B {
+    class A {
       constructor(user) {
         const value = stateFromStores.get(user.user.id);
         let num;
@@ -265,7 +265,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     }
   }
   if (cResult[16] === tmp9) {
-    class B {
+    class A {
       constructor(user) {
         const value = stateFromStores.get(user.user.id);
         let num;
@@ -286,7 +286,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   cResult[19] = tmp8;
   cResult[20] = tmp18;
   cResult[21] = obj2;
-}) : ((arg0) => {
+}) : (function useUserProfileMutuals(arg0) {
   let closure_1;
   let flattenedGuildIds;
   let stateFromStores;

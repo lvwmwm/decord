@@ -1,39 +1,39 @@
-// Module ID: 12326
-// Function ID: 12327
+// Module ID: 12424
+// Function ID: 12425
 // Name: VoiceMessageOverlay
-// Dependencies: [32, 19, 17, 4885, 2051, 11587, 11588, 1085, 11589, 21, 4618, 1188, 4892, 12, 8169, 4896, 587, 5627, 558, 576, 504, 4586, 5980, 1126, 4897, 5859, 10070, 12327, 6478, 12065, 5777, 5786, 1121, 11498, 9180, 11905, 11900, 7586, 4854, 4847, 9702, 11882, 12328, 2]
+// Dependencies: [32, 19, 17, 5079, 2063, 11650, 11651, 1085, 11652, 21, 4810, 1200, 5086, 12, 7550, 5090, 587, 5974, 558, 576, 504, 4778, 6163, 1126, 5091, 8171, 10435, 12425, 6656, 12138, 5360, 5369, 1121, 11484, 10748, 11978, 11973, 8106, 5048, 5041, 10891, 11954, 12426, 2]
 
-// Module 12326 (VoiceMessageOverlay)
+// Module 12424 (VoiceMessageOverlay)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import intl7 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4618 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import timing from "timing" /* 4897 */;
-import LegacyTokens from "LegacyTokens" /* 5627 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5777 */;
-import useRefValueDefault from "useRefValue" /* 5980 */;
-import inlineStyles from "inlineStyles" /* 8169 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 11587 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 11588 */;
-import ChatInputConstants from "ChatInputConstants" /* 11589 */;
+import native from "native" /* 1200 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4810 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import timing from "timing" /* 5091 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5360 */;
+import LegacyTokens from "LegacyTokens" /* 5974 */;
+import useRefValueDefault from "useRefValue" /* 6163 */;
+import inlineStyles from "inlineStyles" /* 7550 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 11650 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 11651 */;
+import ChatInputConstants from "ChatInputConstants" /* 11652 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import Fragment from "Fragment" /* 21 */;
 import module_12 from "module_12" /* 12 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const ReanimatedRexport_mod = ReanimatedRexport2;
-let _require, channelId, dependencyMap, importDefault, ref, set, set2;
+let _require, dependencyMap, flag, importDefault, ref, set, set2;
 
 let closure_14;
 let closure_15;
@@ -41,7 +41,7 @@ let hasOwnProperty;
 let map1;
 let metroRequire;
 let tmp;
-const react_native = tmp(5786);
+const react_native = tmp(5369);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, AppState: metroRequire } = react_native2);
 const useVoiceMessagesUIStore = VoiceMessagesUIStore.useVoiceMessagesUIStore;
@@ -49,7 +49,7 @@ const VoiceMessageAnimationState = VoiceMessageConstants.VoiceMessageAnimationSt
 const ComponentActionsKeyed = Constants.ComponentActionsKeyed;
 const CHAT_INPUT_HEIGHT = ChatInputConstants.CHAT_INPUT_HEIGHT;
 ({ jsx: map1, jsxs: closure_14, Fragment: closure_15 } = Fragment);
-const VoiceMessageOverlay = "VoiceMessageOverlay";
+const VoiceMessageOverlay_str = "VoiceMessageOverlay";
 let c17 = 250;
 let c18 = 100;
 let c19 = 500;
@@ -92,7 +92,7 @@ let ReactCompilerGating = ReactCompilerGating_mod;
 const __initData9 = { code: "function VoiceMessageOverlayTsx9(){const{initialAnimation,recordingAnimation}=this.__closure;const animationValue=Math.min(initialAnimation.get(),recordingAnimation.get());return{opacity:animationValue};}" };
 const __initData10 = { code: "function VoiceMessageOverlayTsx10(){const{initialAnimation,recordingAnimation}=this.__closure;const animationValue=Math.min(initialAnimation.get(),recordingAnimation.get());return{opacity:animationValue};}" };
 const memo2 = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((radius) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMessageEllipse(radius) {
   let derivedValue1;
   let offsetThreshold;
   let opacity;
@@ -144,40 +144,38 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((radius)
   }
   const tmp10 = useVoiceMessagesUIStore(tmp9);
   let closure_4 = tmp10;
-  const tmpResult6 = radius(offsetThreshold[10]);
-  class O {
-    constructor() {
-      let num = 0.5;
-      if (!stateFromStores) {
-        let num2;
-        const obj = closure_4;
-        if (closure_4 != null) {
-          num2 = obj.get();
-        }
-        if (num2 == null) {
-          num2 = 0;
-        }
-        num = num2;
+  const fn2 = function h() {
+    let num = 0.5;
+    if (!stateFromStores) {
+      let num2;
+      const obj = closure_4;
+      if (closure_4 != null) {
+        num2 = obj.get();
       }
-      return num;
+      if (num2 == null) {
+        num2 = 0;
+      }
+      num = num2;
     }
-  }
-  O.__closure = { useReducedMotion: stateFromStores, currWaveHeight: tmp10 };
-  O.__workletHash = 2925868096827;
-  O.__initData = __initData;
-  const derivedValue = tmpResult6.useDerivedValue(O);
+    return num;
+  };
+  fn2.__closure = { useReducedMotion: stateFromStores, currWaveHeight: tmp10 };
+  fn2.__workletHash = 2925868096827;
+  fn2.__initData = __initData;
+  const tmpResult6 = radius(offsetThreshold[10]);
+  const derivedValue = tmpResult6.useDerivedValue(fn2);
   const tmpResult7 = radius(offsetThreshold[21]);
   const token = tmpResult7.useToken(height(tmp2[16]).colors.BACKGROUND_BRAND);
   const tmp14 = closure_42(voiceMessageAnimationState, token, height(offsetThreshold[16]).unsafe_rawColors.RED_400, token, token);
   let closure_6 = tmp14;
-  const fn2 = function v() {
+  const fn3 = function v() {
     return derivedValue.get() * offsetThreshold;
   };
-  fn2.__closure = { derivedCurrWaveHeight: derivedValue, offsetThreshold };
-  fn2.__workletHash = 7278593580538;
-  fn2.__initData = __initData2;
+  fn3.__closure = { derivedCurrWaveHeight: derivedValue, offsetThreshold };
+  fn3.__workletHash = 7278593580538;
+  fn3.__initData = __initData2;
   const tmpResult8 = radius(offsetThreshold[10]);
-  derivedValue1 = tmpResult8.useDerivedValue(fn2);
+  derivedValue1 = tmpResult8.useDerivedValue(fn3);
   const tmp12 = height;
   const tmpResult9 = radius(offsetThreshold[10]);
   class M {
@@ -190,17 +188,17 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((radius)
   M.__workletHash = 12489173275515;
   M.__initData = __initData3;
   const animatedProps = tmpResult9.useAnimatedProps(M);
-  const fn3 = function f() {
+  const fn4 = function f() {
     let value;
     size = { position: "absolute", width: 2 * radius, height: value + derivedValue1.get(), bottom: 0 };
     value = height.get();
     return size;
   };
-  fn3.__closure = { radius, height, offset: derivedValue1 };
-  fn3.__workletHash = 15958652124498;
-  fn3.__initData = __initData4;
+  fn4.__closure = { radius, height, offset: derivedValue1 };
+  fn4.__workletHash = 15958652124498;
+  fn4.__initData = __initData4;
   const tmpResult10 = radius(offsetThreshold[10]);
-  const animatedStyle = tmpResult10.useAnimatedStyle(fn3);
+  const animatedStyle = tmpResult10.useAnimatedStyle(fn4);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     class C {
       constructor(currWaveHeight) {
@@ -244,7 +242,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((radius)
   cResult[6] = opacity;
   cResult[7] = closure_13(Svg, obj3);
   const tmp21 = closure_13(Svg, obj3);
-}) : ((radius) => {
+}) : (function VoiceMessageEllipse(radius) {
   let Svg;
   let obj8;
   radius = radius.radius;
@@ -324,11 +322,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((radius)
   return closure_13(View, obj7);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_37 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((initialAnimation) => {
+let closure_37 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMessagePrompt(initialAnimation) {
   let first;
   let tmp11;
   let tmp17;
-  let tmp19;
+  let tmp18;
   let tmp7;
   let obj = react2;
   const cResult = obj.c(9);
@@ -467,39 +465,39 @@ let closure_37 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((initialA
     }
   }
   if (cResult[2] !== tmp11) {
-    class A {
-      constructor(savedVoiceMessageUploadData) {
-        return null != savedVoiceMessageUploadData.savedVoiceMessageUploadData;
+    class O {
+      constructor() {
+        ref.current = stringResult4;
       }
     }
     cResult[2] = tmp11;
-    cResult[3] = tmp18;
-    tmp17 = tmp18;
+    cResult[3] = O;
+    tmp17 = O;
   } else {
-    class A {
-      constructor(savedVoiceMessageUploadData) {
-        return null != savedVoiceMessageUploadData.savedVoiceMessageUploadData;
+    class O {
+      constructor() {
+        ref.current = stringResult4;
       }
     }
   }
   if (cResult[4] !== tmp11) {
-    class A {
-      constructor(savedVoiceMessageUploadData) {
-        return null != savedVoiceMessageUploadData.savedVoiceMessageUploadData;
+    class O {
+      constructor() {
+        ref.current = stringResult4;
       }
     }
-    tmp20[0] = tmp11;
+    tmp19[0] = tmp11;
     cResult[4] = tmp11;
-    cResult[5] = tmp20;
-    tmp19 = tmp20;
+    cResult[5] = tmp19;
+    tmp18 = tmp19;
   } else {
-    class A {
-      constructor(savedVoiceMessageUploadData) {
-        return null != savedVoiceMessageUploadData.savedVoiceMessageUploadData;
+    class O {
+      constructor() {
+        ref.current = stringResult4;
       }
     }
   }
-  const effect = obj2.useEffect(tmp17, tmp19);
+  const effect = obj2.useEffect(tmp17, tmp18);
   const tmpResult = ReanimatedRexport2;
   class N {
     constructor() {
@@ -516,19 +514,19 @@ let closure_37 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((initialA
   N.__initData = __initData9;
   const animatedStyle = tmpResult.useAnimatedStyle(N);
   if (null != tmp11) {
-    class A {
-      constructor(savedVoiceMessageUploadData) {
-        return null != savedVoiceMessageUploadData.savedVoiceMessageUploadData;
+    class O {
+      constructor() {
+        ref.current = stringResult4;
       }
     }
     const obj8 = { style: animatedStyle, variant: "text-xs/medium", color: "interactive-text-default", maxFontSizeMultiplier: 2, children: tmp11 };
     cResult[6] = animatedStyle;
     cResult[7] = tmp11;
     cResult[8] = map1(closure_21, obj8);
-    const tmp26 = map1(closure_21, obj8);
+    const tmp25 = map1(closure_21, obj8);
   }
   return null;
-}) : ((initialAnimation) => {
+}) : (function VoiceMessagePrompt(initialAnimation) {
   let stringResult;
   initialAnimation = initialAnimation.initialAnimation;
   const recordingAnimation = initialAnimation.recordingAnimation;
@@ -622,7 +620,7 @@ const __initData12 = { code: "function VoiceMessageOverlayTsx12(){const{voiceMes
 const __initData13 = { code: "function VoiceMessageOverlayTsx13(){const{voiceMessageAnimationState,withTiming,Easing}=this.__closure;const currValue=voiceMessageAnimationState.get()[1];return withTiming(currValue,{easing:Easing.linear,duration:150});}" };
 const __initData14 = { code: "function VoiceMessageOverlayTsx14(){const{voiceMessageAnimationState,sendingColor,lockingColor,lockedColor,cancelingColor,interpolateColor,timing,VOICE_MESSAGE_ANIMATION_STATES}=this.__closure;const[prevValue,currValue_0]=voiceMessageAnimationState.get();const distance=prevValue+currValue_0;const colors=distance===2?[sendingColor,sendingColor,lockingColor,lockedColor]:[sendingColor,cancelingColor,lockingColor,lockedColor];return interpolateColor(timing.get(),VOICE_MESSAGE_ANIMATION_STATES,colors);}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? ((voiceMessageAnimationState, sendingColor, cancelingColor, lockingColor, lockedColor) => {
+let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDerivedColors(voiceMessageAnimationState, sendingColor, cancelingColor, lockingColor, lockedColor) {
   _require = voiceMessageAnimationState;
   let closure_1 = sendingColor;
   dependencyMap = cancelingColor;
@@ -658,7 +656,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? ((voiceMessageAn
   fn2.__initData = __initData12;
   ({ voiceMessageAnimationState, sendingColor, lockingColor, lockedColor, cancelingColor, interpolateColor: require("ReanimatedRexport").interpolateColor, timing: derivedValue, VOICE_MESSAGE_ANIMATION_STATES: items });
   return obj3.useDerivedValue(fn2);
-}) : ((voiceMessageAnimationState, sendingColor, cancelingColor, lockingColor, lockedColor) => {
+}) : (function useDerivedColors(voiceMessageAnimationState, sendingColor, cancelingColor, lockingColor, lockedColor) {
   _require = voiceMessageAnimationState;
   let closure_1 = sendingColor;
   dependencyMap = cancelingColor;
@@ -708,7 +706,7 @@ const __initData24 = { code: "function VoiceMessageOverlayTsx24(){const{interpol
 const __initData25 = { code: "function VoiceMessageOverlayTsx25(){const{interpolate,timing,VOICE_MESSAGE_ANIMATION_STATES,lockIconColor}=this.__closure;return{width:interpolate(timing.get(),VOICE_MESSAGE_ANIMATION_STATES,[24,24,32,32]),height:interpolate(timing.get(),VOICE_MESSAGE_ANIMATION_STATES,[24,24,32,32]),marginTop:interpolate(timing.get(),VOICE_MESSAGE_ANIMATION_STATES,[12,12,10,10]),tintColor:lockIconColor.get()};}" };
 const __initData26 = { code: "function VoiceMessageOverlayTsx26(){const{interpolate,timing,VOICE_MESSAGE_ANIMATION_STATES}=this.__closure;return{opacity:interpolate(timing.get(),VOICE_MESSAGE_ANIMATION_STATES,[1,1,0,0])};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_55 = ReactCompilerGating.isReactCompilerEnabled() ? ((voiceMessageAnimationState) => {
+let closure_55 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLockStyles(voiceMessageAnimationState) {
   let closure_1;
   let token2;
   _require = voiceMessageAnimationState;
@@ -836,7 +834,7 @@ let closure_55 = ReactCompilerGating.isReactCompilerEnabled() ? ((voiceMessageAn
   cResult[3] = animatedStyle;
   cResult[4] = obj19;
   tmp16 = obj19;
-}) : ((voiceMessageAnimationState) => {
+}) : (function useLockStyles(voiceMessageAnimationState) {
   let closure_1;
   let fn3;
   let fn4;
@@ -958,7 +956,7 @@ const __initData30 = { code: "function VoiceMessageOverlayTsx30(){const{voiceMes
 const __initData31 = { code: "function VoiceMessageOverlayTsx31(result,previous){const{runOnJS,setLocked}=this.__closure;if(result!==previous){runOnJS(setLocked)(result);}}" };
 const __initData32 = { code: "function VoiceMessageOverlayTsx32(){const{initialAnimation,safeAreaBottom,CHAT_INPUT_HEIGHT,LOCK_PILL_BOTTOM_OFFSET,INITIAL_SHIFT}=this.__closure;return{opacity:initialAnimation.get(),bottom:safeAreaBottom+CHAT_INPUT_HEIGHT+(LOCK_PILL_BOTTOM_OFFSET-INITIAL_SHIFT)+INITIAL_SHIFT*initialAnimation.get()};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_62 = ReactCompilerGating.isReactCompilerEnabled() ? ((safeAreaBottom) => {
+let closure_62 = ReactCompilerGating.isReactCompilerEnabled() ? (function LockPill(safeAreaBottom) {
   let chevonStyle;
   let closure_3;
   let items1;
@@ -1091,7 +1089,7 @@ let closure_62 = ReactCompilerGating.isReactCompilerEnabled() ? ((safeAreaBottom
   cResult[2] = tmp4.lockParentContainer;
   cResult[3] = items3;
   tmp13 = items3;
-}) : ((safeAreaBottom) => {
+}) : (function LockPill(safeAreaBottom) {
   let View2;
   let chevonStyle;
   let closure_3;
@@ -1158,7 +1156,7 @@ let closure_62 = ReactCompilerGating.isReactCompilerEnabled() ? ((safeAreaBottom
   return closure_13(View, obj5);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_63 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let closure_63 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEntryAnimationValues(arg0, arg1) {
   let closure_0;
   let first;
   let sharedValue;
@@ -1303,7 +1301,7 @@ let closure_63 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
   cResult[7] = items2;
   tmp11 = items2;
   tmp10 = S;
-}) : ((arg0, arg1) => {
+}) : (function useEntryAnimationValues(arg0, arg1) {
   let closure_0;
   let initialAnimation;
   let recordingAnimation;
@@ -1363,7 +1361,7 @@ const __initData37 = { code: "function VoiceMessageOverlayTsx37(state_0,previous
 const __initData38 = { code: "function VoiceMessageOverlayTsx38(){const{initialAnimation}=this.__closure;return{opacity:initialAnimation.get()};}" };
 const memo3 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_70 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let closure_70 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMessageOverlay(channelId) {
   let _slicedToArray;
   let closure_3;
   let first;
@@ -1371,8 +1369,8 @@ let closure_70 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((channelI
   let tmp13;
   let tmp16;
   let tmp17;
-  let tmp19;
   let tmp20;
+  let tmp21;
   let tmp9;
   let tmp = channelId;
   let obj = channelId(initialAnimation[19]);
@@ -1437,30 +1435,20 @@ let closure_70 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((channelI
   const animatedReaction = tmpResult4.useAnimatedReaction(fn, V);
   ref = ref.useRef(null);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    class P {
-      constructor() {
-        const obj = useIsScreenReaderEnabled;
-        if (obj.getIsScreenReaderEnabled()) {
-          const obj2 = { ref };
-          const tmpResult = react_native;
-          const result = tmpResult.setAccessibilityFocus(obj2);
-        }
+    class N {
+      constructor(startTimeMillis) {
+        return null != startTimeMillis.startTimeMillis;
       }
     }
     items = [];
-    cResult[2] = P;
+    cResult[2] = tmp18;
     cResult[3] = items;
     tmp17 = items;
-    tmp16 = P;
+    tmp16 = tmp18;
   } else {
-    class P {
-      constructor() {
-        const obj = useIsScreenReaderEnabled;
-        if (obj.getIsScreenReaderEnabled()) {
-          const obj2 = { ref };
-          const tmpResult = react_native;
-          const result = tmpResult.setAccessibilityFocus(obj2);
-        }
+    class N {
+      constructor(startTimeMillis) {
+        return null != startTimeMillis.startTimeMillis;
       }
     }
     tmp17 = cResult[3];
@@ -1469,7 +1457,7 @@ let closure_70 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((channelI
   if (cResult[4] !== channelId) {
     class F {
       constructor() {
-        closure_0 = closure_1_6.addEventListener("change", (event) => {
+        closure_0 = closure_1_6.addEventListener("change", function endAudioRecordingOnAppInactive(event) {
           const tmp = "inactive" !== event && "background" !== event;
           if (!tmp) {
             const ComponentDispatch = channelId(initialAnimation[32]).ComponentDispatch;
@@ -1488,12 +1476,12 @@ let closure_70 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((channelI
     cResult[4] = channelId;
     cResult[5] = F;
     cResult[6] = items1;
-    tmp20 = items1;
-    tmp19 = F;
+    tmp21 = items1;
+    tmp20 = F;
   } else {
     class F {
       constructor() {
-        closure_0 = closure_1_6.addEventListener("change", (event) => {
+        closure_0 = closure_1_6.addEventListener("change", function endAudioRecordingOnAppInactive(event) {
           const tmp = "inactive" !== event && "background" !== event;
           if (!tmp) {
             const ComponentDispatch = channelId(initialAnimation[32]).ComponentDispatch;
@@ -1508,9 +1496,9 @@ let closure_70 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((channelI
         };
       }
     }
-    tmp20 = cResult[6];
+    tmp21 = cResult[6];
   }
-  const effect1 = obj5.useEffect(tmp19, tmp20);
+  const effect1 = obj5.useEffect(tmp20, tmp21);
   const fn2 = function z() {
     const obj = { opacity: initialAnimation.get() };
     return obj;
@@ -1521,11 +1509,11 @@ let closure_70 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((channelI
   const tmpResult5 = tmp(initialAnimation[10]);
   const animatedStyle = tmpResult5.useAnimatedStyle(fn2);
   const tmpResult6 = tmp(initialAnimation[34]);
-  const wakeLock = tmpResult6.useWakeLock(VoiceMessageOverlay);
+  const wakeLock = tmpResult6.useWakeLock(VoiceMessageOverlay_str);
   if (cResult[7] !== bottom) {
     class F {
       constructor() {
-        closure_0 = closure_1_6.addEventListener("change", (event) => {
+        closure_0 = closure_1_6.addEventListener("change", function endAudioRecordingOnAppInactive(event) {
           const tmp = "inactive" !== event && "background" !== event;
           if (!tmp) {
             const ComponentDispatch = channelId(initialAnimation[32]).ComponentDispatch;
@@ -1540,13 +1528,13 @@ let closure_70 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((channelI
         };
       }
     }
-    tmp25[0] = bottom;
+    tmp26[0] = bottom;
     cResult[7] = bottom;
-    cResult[8] = tmp25;
+    cResult[8] = tmp26;
   } else {
     class F {
       constructor() {
-        closure_0 = closure_1_6.addEventListener("change", (event) => {
+        closure_0 = closure_1_6.addEventListener("change", function endAudioRecordingOnAppInactive(event) {
           const tmp = "inactive" !== event && "background" !== event;
           if (!tmp) {
             const ComponentDispatch = channelId(initialAnimation[32]).ComponentDispatch;
@@ -1565,7 +1553,7 @@ let closure_70 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((channelI
   if (cResult[9] === keyboardOpenPaddingStyle) {
     class F {
       constructor() {
-        closure_0 = closure_1_6.addEventListener("change", (event) => {
+        closure_0 = closure_1_6.addEventListener("change", function endAudioRecordingOnAppInactive(event) {
           const tmp = "inactive" !== event && "background" !== event;
           if (!tmp) {
             const ComponentDispatch = channelId(initialAnimation[32]).ComponentDispatch;
@@ -1583,7 +1571,7 @@ let closure_70 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((channelI
     if (cResult[12] === animatedStyle) {
       class F {
         constructor() {
-          closure_0 = closure_1_6.addEventListener("change", (event) => {
+          closure_0 = closure_1_6.addEventListener("change", function endAudioRecordingOnAppInactive(event) {
             const tmp = "inactive" !== event && "background" !== event;
             if (!tmp) {
               const ComponentDispatch = channelId(initialAnimation[32]).ComponentDispatch;
@@ -1599,18 +1587,18 @@ let closure_70 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((channelI
         }
       }
     }
-    const items2 = [tmp6.contentContainer, tmp24, animatedStyle, tmp26];
+    const items2 = [tmp6.contentContainer, tmp25, animatedStyle, tmp27];
     cResult[12] = animatedStyle;
     cResult[13] = tmp6.contentContainer;
-    cResult[14] = tmp24;
-    cResult[15] = tmp26;
+    cResult[14] = tmp25;
+    cResult[15] = tmp27;
     cResult[16] = items2;
   }
   const items3 = [tmp6.contentContainerFloating, keyboardOpenPaddingStyle];
   cResult[9] = keyboardOpenPaddingStyle;
   cResult[10] = tmp6.contentContainerFloating;
   cResult[11] = items3;
-}) : ((channelId) => {
+}) : (function VoiceMessageOverlay(channelId) {
   let IconButton;
   let c3;
   let intl;
@@ -1674,7 +1662,7 @@ let closure_70 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((channelI
   }, []);
   items = [channelId];
   const effect1 = ref.useEffect(() => {
-    let closure_0 = closure_1_6.addEventListener("change", (event) => {
+    let closure_0 = closure_1_6.addEventListener("change", function endAudioRecordingOnAppInactive(event) {
       const tmp = "inactive" !== event && "background" !== event;
       if (!tmp) {
         const ComponentDispatch = channelId(initialAnimation[32]).ComponentDispatch;
@@ -1698,7 +1686,7 @@ let closure_70 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((channelI
   const obj5 = channelId(initialAnimation[10]);
   const animatedStyle = obj5.useAnimatedStyle(fn);
   const obj6 = channelId(initialAnimation[34]);
-  const wakeLock = obj6.useWakeLock(VoiceMessageOverlay);
+  const wakeLock = obj6.useWakeLock(VoiceMessageOverlay_str);
   const obj7 = { style: items1, children: null };
   items1 = [tmp5.contentContainer, { bottom }, animatedStyle, ];
   const items2 = [tmp5.contentContainerFloating, keyboardOpenPaddingStyle];
@@ -1765,7 +1753,7 @@ let closure_70 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((channelI
 }));
 const memo4 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memo4Result = memo4(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const memo4Result = memo4(ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMessageOverlayGuard(channelId) {
   let first;
   let tmp11;
   let tmp14;
@@ -1833,48 +1821,118 @@ const memo4Result = memo4(ReactCompilerGating.isReactCompilerEnabled() ? ((chann
   _slicedToArray(react.useState(tmp6), 2);
   const obj3 = react;
   if (cResult[5] !== tmp6) {
-    class I {
-      constructor(voiceMessageAnimationState) {
-        return voiceMessageAnimationState.voiceMessageAnimationState;
+    class O {
+      constructor() {
+        tmp = closure_1;
+        if (tmp) {
+          tmp4 = closure_2;
+          flag = true;
+          tmp5 = closure_2(true);
+          return;
+        } else {
+          tmp2 = globalThis;
+          _setTimeout = setTimeout;
+          tmp3 = closure_1_18;
+          closure_0 = setTimeout(() => closure_1_2(false), closure_1_18);
+          return () => {
+            clearTimeout(closure_0);
+          };
+        }
       }
     }
     const items1 = [tmp6];
     cResult[5] = tmp6;
-    cResult[6] = tmp16;
+    cResult[6] = O;
     cResult[7] = items1;
     tmp15 = items1;
-    tmp14 = tmp16;
+    tmp14 = O;
   } else {
-    class I {
-      constructor(voiceMessageAnimationState) {
-        return voiceMessageAnimationState.voiceMessageAnimationState;
+    class O {
+      constructor() {
+        tmp = closure_1;
+        if (tmp) {
+          tmp4 = closure_2;
+          flag = true;
+          tmp5 = closure_2(true);
+          return;
+        } else {
+          tmp2 = globalThis;
+          _setTimeout = setTimeout;
+          tmp3 = closure_1_18;
+          closure_0 = setTimeout(() => closure_1_2(false), closure_1_18);
+          return () => {
+            clearTimeout(closure_0);
+          };
+        }
       }
     }
     tmp15 = cResult[7];
   }
   const effect = obj3.useEffect(tmp14, tmp15);
   if (stateFromStores != null) {
-    class I {
-      constructor(voiceMessageAnimationState) {
-        return voiceMessageAnimationState.voiceMessageAnimationState;
+    class O {
+      constructor() {
+        tmp = closure_1;
+        if (tmp) {
+          tmp4 = closure_2;
+          flag = true;
+          tmp5 = closure_2(true);
+          return;
+        } else {
+          tmp2 = globalThis;
+          _setTimeout = setTimeout;
+          tmp3 = closure_1_18;
+          closure_0 = setTimeout(() => closure_1_2(false), closure_1_18);
+          return () => {
+            clearTimeout(closure_0);
+          };
+        }
       }
     }
   }
   if (undefined) {
-    class I {
-      constructor(voiceMessageAnimationState) {
-        return voiceMessageAnimationState.voiceMessageAnimationState;
+    class O {
+      constructor() {
+        tmp = closure_1;
+        if (tmp) {
+          tmp4 = closure_2;
+          flag = true;
+          tmp5 = closure_2(true);
+          return;
+        } else {
+          tmp2 = globalThis;
+          _setTimeout = setTimeout;
+          tmp3 = closure_1_18;
+          closure_0 = setTimeout(() => closure_1_2(false), closure_1_18);
+          return () => {
+            clearTimeout(closure_0);
+          };
+        }
       }
     }
   } else {
-    class I {
-      constructor(voiceMessageAnimationState) {
-        return voiceMessageAnimationState.voiceMessageAnimationState;
+    class O {
+      constructor() {
+        tmp = closure_1;
+        if (tmp) {
+          tmp4 = closure_2;
+          flag = true;
+          tmp5 = closure_2(true);
+          return;
+        } else {
+          tmp2 = globalThis;
+          _setTimeout = setTimeout;
+          tmp3 = closure_1_18;
+          closure_0 = setTimeout(() => closure_1_2(false), closure_1_18);
+          return () => {
+            clearTimeout(closure_0);
+          };
+        }
       }
     }
     return null;
   }
-}) : ((channelId) => {
+}) : (function VoiceMessageOverlayGuard(channelId) {
   let closure_2;
   let first;
   channelId = channelId.channelId;

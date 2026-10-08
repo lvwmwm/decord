@@ -1,25 +1,25 @@
-// Module ID: 16259
-// Function ID: 16260
+// Module ID: 16519
+// Function ID: 16520
 // Name: NsfwGateGuildSidebar
-// Dependencies: [19, 17, 2112, 2074, 1377, 6726, 1085, 21, 4896, 587, 558, 576, 504, 1252, 6727, 16100, 5922, 1126, 2115, 1188, 2]
+// Dependencies: [19, 17, 2124, 2086, 1389, 6902, 1085, 21, 5090, 587, 558, 576, 504, 1264, 6903, 16360, 5902, 1126, 2127, 1200, 2]
 
-// Module 16259 (NsfwGateGuildSidebar)
+// Module 16519 (NsfwGateGuildSidebar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Constants2 from "Constants" /* 6726 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 6727 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import Constants2 from "Constants" /* 6902 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 6903 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import UserStore from "UserStore" /* 1377 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp10, tmp11, tmp3, tmp5, tmp6, tmp8, tmp9, trackResult;
+let dependencyMap;
 
 let c10;
 let c9;
@@ -34,16 +34,18 @@ const NsfwGateSource = Constants2.NsfwGateSource;
 let obj = { container: obj2, emptyStateContainer: { flex: 1 } };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.PANEL_BG };
 let closure_14 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  let currentUser;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwGateGuildSidebar(arg0) {
   let first;
   let guildId;
-  let items2;
+  let items1;
+  let obj5;
   let style;
   let tmp7;
+  let tmp9;
+  let user;
   const tmp = guildId;
-  let tmp2 = currentUser;
-  let obj = guildId(currentUser[11]);
+  let tmp2 = dependencyMap;
+  let obj = guildId(576);
   const cResult = obj.c(24);
   ({ style, guildId } = arg0);
   const tmp4 = closure_14();
@@ -55,105 +57,147 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== guildId) {
-    class L {
-      constructor() {
-        return closure_6.getGuild(guildId);
-      }
-    }
+    const fn = function b() {
+      return GuildStore.getGuild(guildId);
+    };
     cResult[1] = guildId;
-    cResult[2] = L;
-    tmp7 = L;
+    cResult[2] = fn;
+    tmp7 = fn;
   } else {
-    class L {
-      constructor() {
-        return closure_6.getGuild(guildId);
-      }
-    }
+    tmp7 = cResult[2];
   }
-  const tmpResult = tmp(tmp2[12]);
+  const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class L {
-      constructor() {
-        return closure_6.getGuild(guildId);
-      }
-    }
-    currentUser = UserStore.getCurrentUser();
+    const currentUser = UserStore.getCurrentUser();
     cResult[3] = currentUser;
+    tmp9 = currentUser;
   } else {
-    class L {
-      constructor() {
-        return closure_6.getGuild(guildId);
-      }
-    }
+    tmp9 = cResult[3];
   }
-  currentUser = tmp9;
+  dependencyMap = tmp9;
   if (cResult[4] === guildId) {
-    class L {
-      constructor() {
-        return closure_6.getGuild(guildId);
-      }
+    let tmp12;
+    let tmp13;
+    if (cResult[5] === stateFromStores) {
+      tmp12 = cResult[6];
+      tmp13 = cResult[7];
     }
-    const effect = react.useEffect(N, items2);
+    const effect = react.useEffect(tmp12, tmp13);
     if (null == stateFromStores) {
-      class L {
-        constructor() {
-          return closure_6.getGuild(guildId);
-        }
-      }
+      return null;
     } else {
-      class L {
-        constructor() {
-          return closure_6.getGuild(guildId);
+      if (cResult[8] === style) {
+        let tmp17;
+        let tmp18;
+        let tmp23;
+        let tmp22;
+        let tmp29;
+        let tmp28;
+        if (cResult[9] === tmp4.container) {
+          tmp17 = cResult[10];
         }
+        if (cResult[11] !== stateFromStores) {
+          let obj2 = { guild: stateFromStores, showExtraButtons: false };
+          const tmp21 = closure_12(stateFromStores(16360), obj2);
+          cResult[11] = stateFromStores;
+          cResult[12] = tmp21;
+          tmp18 = tmp21;
+        } else {
+          tmp18 = cResult[12];
+        }
+        const _Symbol = Symbol;
+        if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+          const tmp26 = stateFromStores(5902)(constants3.DISPLAY_SEMIBOLD, undefined, 20);
+          const tmp27 = stateFromStores(5902)(constants3.PRIMARY_NORMAL, undefined, 14);
+          cResult[13] = tmp26;
+          cResult[14] = tmp27;
+          tmp23 = tmp27;
+          tmp22 = tmp26;
+        } else {
+          tmp22 = cResult[13];
+          tmp23 = cResult[14];
+        }
+        const _Symbol2 = Symbol;
+        const emptyStateContainer = tmp4.emptyStateContainer;
+        if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+          const intl = tmp(1126).intl;
+          const stringResult = intl.string(tmp(1126).t.bAVpRR);
+          const intl2 = tmp(1126).intl;
+          const format = intl2.format;
+          const obj3 = { helpURL: obj5.getArticleURL(constants2.NSFW_GUILD_GUIDELINES) };
+          const NQuXf0 = tmp(1126).t.NQuXf0;
+          obj5 = stateFromStores(2127);
+          const formatResult = format(NQuXf0, obj3);
+          cResult[15] = stringResult;
+          cResult[16] = formatResult;
+          tmp29 = formatResult;
+          tmp28 = stringResult;
+        } else {
+          tmp28 = cResult[15];
+          tmp29 = cResult[16];
+        }
+        if (cResult[17] === tmp4.emptyStateContainer) {
+          let tmp34;
+          if (cResult[18] === tmp29) {
+            tmp34 = cResult[19];
+          }
+          if (cResult[20] === tmp34) {
+            if (cResult[21] === tmp17) {
+              let tmp37;
+              if (cResult[22] === tmp18) {
+                tmp37 = cResult[23];
+              }
+              return tmp37;
+            }
+          }
+          const obj4 = { style: tmp17, children: items1 };
+          items1 = [tmp18, tmp34];
+          const tmp40 = closure_13(View, obj4);
+          cResult[20] = tmp34;
+          cResult[21] = tmp17;
+          cResult[22] = tmp18;
+          cResult[23] = tmp40;
+          tmp37 = tmp40;
+        }
+        const obj6 = { titleStyle: tmp22, bodyStyle: tmp23, containerStyle: emptyStateContainer, title: tmp28, body: tmp29 };
+        const tmp36 = closure_12(tmp(1200).RefreshEmptyState, obj6);
+        cResult[17] = tmp4.emptyStateContainer;
+        cResult[18] = tmp29;
+        cResult[19] = tmp36;
+        tmp34 = tmp36;
       }
-      const items1 = [tmp4.container, style];
+      const items2 = [tmp4.container, style];
       cResult[8] = style;
       cResult[9] = tmp4.container;
-      cResult[10] = items1;
+      cResult[10] = items2;
+      tmp17 = items2;
     }
   }
-  class N {
-    constructor() {
-      tmp = closure_2;
-      tmp2 = null != closure_2;
-      if (tmp2) {
-        tmp3 = closure_1;
-        tmp2 = null != closure_1;
+  const fn2 = function v() {
+    let nsfwAllowed;
+    const tmp2 = null != user && null != stateFromStores;
+    if (tmp2) {
+      const obj = { guild_id: guildId, user_id: user.id, is_member: GuildMemberStore.isMember(guildId, user.id), is_user_opted_in_to_age_restricted_servers: nsfwAllowed, source: NsfwGateSource.GUILD_SIDEBAR };
+      const track = AnalyticsUtilsDefault.track;
+      const GUILD_NSFW_GATE_VIEWED = constants.GUILD_NSFW_GATE_VIEWED;
+      AnalyticsUtilsDefault;
+      nsfwAllowed = tmp.nsfwAllowed;
+      if (nsfwAllowed) {
+        const obj2 = AgeRestrictedContentSettingsUtils;
+        nsfwAllowed = obj2.getViewNsfwGuildsOrDefault();
       }
-      if (tmp2) {
-        tmp4 = closure_1;
-        tmp5 = closure_2;
-        tmp6 = closure_1(closure_2[13]);
-        tmp7 = AnalyticEvents;
-        obj = { guild_id: null, user_id: null, is_member: null, is_user_opted_in_to_age_restricted_servers: null, source: null };
-        tmp8 = guildId;
-        obj.guild_id = guildId;
-        obj.user_id = tmp.id;
-        tmp9 = closure_5;
-        track = tmp6.track;
-        GUILD_NSFW_GATE_VIEWED = AnalyticEvents.GUILD_NSFW_GATE_VIEWED;
-        obj.is_member = closure_5.isMember(guildId, tmp.id);
-        nsfwAllowed = tmp.nsfwAllowed;
-        if (nsfwAllowed) {
-          tmp10 = closure_0;
-          obj2 = closure_0(tmp5[14]);
-          nsfwAllowed = obj2.getViewNsfwGuildsOrDefault();
-        }
-        obj.is_user_opted_in_to_age_restricted_servers = nsfwAllowed;
-        tmp11 = NsfwGateSource;
-        obj.source = NsfwGateSource.GUILD_SIDEBAR;
-        trackResult = track(GUILD_NSFW_GATE_VIEWED, obj);
-      }
-      return;
+      track(GUILD_NSFW_GATE_VIEWED, obj);
     }
-  }
-  items2 = [guildId, stateFromStores, tmp9];
+  };
+  const items3 = [guildId, stateFromStores, tmp9];
   cResult[4] = guildId;
   cResult[5] = stateFromStores;
-  cResult[6] = N;
-  cResult[7] = items2;
-}) : ((guildId) => {
+  cResult[6] = fn2;
+  cResult[7] = items3;
+  tmp13 = items3;
+  tmp12 = fn2;
+}) : (function NsfwGateGuildSidebar(guildId) {
   let NQuXf0;
   let format;
   let intl;

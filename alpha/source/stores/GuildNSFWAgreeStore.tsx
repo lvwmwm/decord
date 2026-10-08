@@ -1,13 +1,13 @@
-// Module ID: 5107
-// Function ID: 5108
+// Module ID: 5931
+// Function ID: 5932
 // Name: GuildNSFWAgreeStore
-// Dependencies: [510, 504, 5106, 584, 2]
+// Dependencies: [510, 504, 5904, 584, 2]
 
-// Module 5107 (GuildNSFWAgreeStore)
+// Module 5931 (GuildNSFWAgreeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import AgeGateUtils from "AgeGateUtils" /* 5106 */;
+import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 5904 */;
 import size from "module_2" /* 2 */;
 
 const GuildNSFWAgreeStore_str = "GuildNSFWAgreeStore";
@@ -21,7 +21,7 @@ class GuildNSFWAgreeStore extends Store {
   didAgree(arg0) {
     let tmp = null != arg0;
     if (tmp) {
-      const obj = AgeGateUtils;
+      const obj = shouldAgeVerifyForAgeGate;
       const result = obj.shouldAgeVerifyForAgeGate();
       let tmp5 = !result;
       if (tmp5) {

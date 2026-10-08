@@ -1,28 +1,28 @@
-// Module ID: 14709
-// Function ID: 14710
+// Module ID: 14970
+// Function ID: 14971
 // Name: FamilyCenterFeatureRow
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1126, 2521, 11544, 14710, 14711, 12028, 6465, 9535, 14706, 4892, 5600, 6081, 6000, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1126, 2565, 11558, 14971, 14972, 12101, 6643, 8706, 14967, 5086, 5373, 6267, 6184, 2]
 
-// Module 14709 (FamilyCenterFeatureRow)
+// Module 14970 (FamilyCenterFeatureRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl11 from "intl" /* 1126 */;
-import _modDef2521 from "module_2521" /* 2521 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Stack_Stack from "Stack/Stack" /* 5600 */;
-import TableRow2 from "TableRow" /* 6000 */;
-import TableRowGroup2 from "TableRowGroup" /* 6081 */;
-import EyeIcon from "EyeIcon" /* 6465 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9535 */;
-import useAgeSpecificText4 from "useAgeSpecificText" /* 11544 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12028 */;
-import QrCodeIcon from "QrCodeIcon" /* 14706 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14710 */;
-import ChatCheckIcon from "ChatCheckIcon" /* 14711 */;
+import _modDef2565 from "module_2565" /* 2565 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Stack_Stack from "Stack/Stack" /* 5373 */;
+import TableRow2 from "TableRow" /* 6184 */;
+import TableRowGroup2 from "TableRowGroup" /* 6267 */;
+import EyeIcon from "EyeIcon" /* 6643 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8706 */;
+import useAgeSpecificText4 from "useAgeSpecificText" /* 11558 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12101 */;
+import QrCodeIcon from "QrCodeIcon" /* 14967 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14971 */;
+import ChatCheckIcon from "ChatCheckIcon" /* 14972 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ const View = react_native.View;
 let obj = { tableGroup: obj2 };
 obj2 = { marginTop: 20, marginBottom: nativeDefault.space.PX_24 };
 let closure_6 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterFeatureRows() {
   let intl10;
   let items;
   let tmp11;
@@ -56,9 +56,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
-    const stringResult = intl.string(_modDef2521.qITXhY);
+    const stringResult = intl.string(_modDef2565.qITXhY);
     const intl2 = tmp(1126).intl;
-    const stringResult1 = intl2.string(_modDef2521.bmhCnL);
+    const stringResult1 = intl2.string(_modDef2565.bmhCnL);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
     tmp5 = stringResult;
@@ -70,9 +70,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const ageSpecificText = tmpResult.useAgeSpecificText(tmp5, tmp6);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const intl3 = tmp(1126).intl;
-    const stringResult2 = intl3.string(_modDef2521.t7SkFy);
+    const stringResult2 = intl3.string(_modDef2565.t7SkFy);
     const intl4 = tmp(1126).intl;
-    const stringResult3 = intl4.string(_modDef2521["68zfxD"]);
+    const stringResult3 = intl4.string(_modDef2565["68zfxD"]);
     cResult[2] = stringResult2;
     cResult[3] = stringResult3;
     tmp12 = stringResult3;
@@ -85,9 +85,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const ageSpecificText1 = tmpResult3.useAgeSpecificText(tmp11, tmp12);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const intl5 = tmp(1126).intl;
-    const stringResult4 = intl5.string(_modDef2521["+pi4Yt"]);
+    const stringResult4 = intl5.string(_modDef2565["+pi4Yt"]);
     const intl6 = tmp(1126).intl;
-    const stringResult5 = intl6.string(_modDef2521["1xPTwE"]);
+    const stringResult5 = intl6.string(_modDef2565["1xPTwE"]);
     cResult[4] = stringResult4;
     cResult[5] = stringResult5;
     tmp18 = stringResult5;
@@ -100,7 +100,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const ageSpecificText2 = tmpResult4.useAgeSpecificText(tmp17, tmp18);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const intl7 = tmp(1126).intl;
-    const stringResult6 = intl7.string(_modDef2521["001l3m"]);
+    const stringResult6 = intl7.string(_modDef2565["001l3m"]);
     cResult[6] = stringResult6;
     tmp23 = stringResult6;
   } else {
@@ -116,7 +116,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
     const intl8 = tmp(1126).intl;
-    const stringResult7 = intl8.string(_modDef2521.yipAeP);
+    const stringResult7 = intl8.string(_modDef2565.yipAeP);
     cResult[9] = stringResult7;
     tmp28 = stringResult7;
   } else {
@@ -132,7 +132,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
     const intl9 = tmp(1126).intl;
-    const stringResult8 = intl9.string(_modDef2521.hhOuMe);
+    const stringResult8 = intl9.string(_modDef2565.hhOuMe);
     cResult[12] = stringResult8;
     tmp33 = stringResult8;
   } else {
@@ -156,8 +156,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       const _Symbol = Symbol;
       if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj5 = { accessibilityRole: "header", variant: "text-sm/semibold", color: "text-muted", children: intl10.string(_modDef2521["6JkHSg"]) };
-        const Text = tmp(4892).Text;
+        const obj5 = { accessibilityRole: "header", variant: "text-sm/semibold", color: "text-muted", children: intl10.string(_modDef2565["6JkHSg"]) };
+        const Text = tmp(5086).Text;
         intl10 = tmp(1126).intl;
         const tmp41 = React3(Text, obj5);
         cResult[19] = tmp41;
@@ -168,7 +168,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       if (cResult[20] !== arr) {
         const obj6 = { spacing: 8, children: items };
         items = [tmp38, ];
-        const Stack = tmp(5600).Stack;
+        const Stack = tmp(5373).Stack;
         const obj7 = {
           hasIcons: true,
           children: arr.map((header) => {
@@ -182,7 +182,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   return closure_1_4(TableRow, obj, header);
                 })
         };
-        const TableRowGroup = tmp(6081).TableRowGroup;
+        const TableRowGroup = tmp(6267).TableRowGroup;
         items[1] = React3(TableRowGroup, obj7);
         const tmp45 = hasOwnProperty(Stack, obj6);
         cResult[20] = arr;
@@ -212,7 +212,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[17] = tmp31;
   cResult[18] = items1;
   arr = items1;
-}) : (() => {
+}) : (function FamilyCenterFeatureRows() {
   let Stack;
   let intl10;
   let intl7;
@@ -224,34 +224,34 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const useAgeSpecificText = useAgeSpecificText4.useAgeSpecificText;
   useAgeSpecificText4;
   const intl = intl11.intl;
-  const stringResult = intl.string(_modDef2521.qITXhY);
+  const stringResult = intl.string(_modDef2565.qITXhY);
   const intl2 = intl11.intl;
-  const ageSpecificText = useAgeSpecificText(stringResult, intl2.string(_modDef2521.bmhCnL));
+  const ageSpecificText = useAgeSpecificText(stringResult, intl2.string(_modDef2565.bmhCnL));
   const useAgeSpecificText2 = useAgeSpecificText4.useAgeSpecificText;
   useAgeSpecificText4;
   const intl3 = intl11.intl;
-  const stringResult1 = intl3.string(_modDef2521.t7SkFy);
+  const stringResult1 = intl3.string(_modDef2565.t7SkFy);
   const intl4 = intl11.intl;
-  const ageSpecificText2 = useAgeSpecificText2(stringResult1, intl4.string(_modDef2521["68zfxD"]));
+  const ageSpecificText2 = useAgeSpecificText2(stringResult1, intl4.string(_modDef2565["68zfxD"]));
   const useAgeSpecificText3 = useAgeSpecificText4.useAgeSpecificText;
   useAgeSpecificText4;
   const intl5 = intl11.intl;
-  const stringResult2 = intl5.string(_modDef2521["+pi4Yt"]);
+  const stringResult2 = intl5.string(_modDef2565["+pi4Yt"]);
   const intl6 = intl11.intl;
-  let obj = { icon: AssetRegistryDefault3, IconComponent: ChatCheckIcon.ChatCheckIcon, header: intl7.string(_modDef2521["001l3m"]), description: ageSpecificText };
-  const ageSpecificText3 = useAgeSpecificText3(stringResult2, intl6.string(_modDef2521["1xPTwE"]));
+  let obj = { icon: AssetRegistryDefault3, IconComponent: ChatCheckIcon.ChatCheckIcon, header: intl7.string(_modDef2565["001l3m"]), description: ageSpecificText };
+  const ageSpecificText3 = useAgeSpecificText3(stringResult2, intl6.string(_modDef2565["1xPTwE"]));
   intl7 = intl11.intl;
   const items = [obj, , ];
-  const obj2 = { icon: AssetRegistryDefault2, IconComponent: EyeIcon.EyeIcon, header: intl8.string(_modDef2521.yipAeP), description: ageSpecificText2 };
+  const obj2 = { icon: AssetRegistryDefault2, IconComponent: EyeIcon.EyeIcon, header: intl8.string(_modDef2565.yipAeP), description: ageSpecificText2 };
   intl8 = intl11.intl;
   items[1] = obj2;
-  const obj3 = { icon: AssetRegistryDefault, IconComponent: QrCodeIcon.QrCodeIcon, header: intl9.string(_modDef2521.hhOuMe), description: ageSpecificText3 };
+  const obj3 = { icon: AssetRegistryDefault, IconComponent: QrCodeIcon.QrCodeIcon, header: intl9.string(_modDef2565.hhOuMe), description: ageSpecificText3 };
   intl9 = intl11.intl;
   items[2] = obj3;
   const obj4 = { style: tmp.tableGroup, children: hasOwnProperty(Stack, obj5) };
   obj5 = { spacing: 8, children: items1 };
   Stack = Stack_Stack.Stack;
-  const obj6 = { accessibilityRole: "header", variant: "text-sm/semibold", color: "text-muted", children: intl10.string(_modDef2521["6JkHSg"]) };
+  const obj6 = { accessibilityRole: "header", variant: "text-sm/semibold", color: "text-muted", children: intl10.string(_modDef2565["6JkHSg"]) };
   const Text = Text_Text.Text;
   intl10 = intl11.intl;
   items1 = [React3(Text, obj6), ];

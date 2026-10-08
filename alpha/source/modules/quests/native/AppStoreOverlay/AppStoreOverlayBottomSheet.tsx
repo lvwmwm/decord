@@ -1,27 +1,27 @@
-// Module ID: 10936
-// Function ID: 10937
+// Module ID: 10587
+// Function ID: 10588
 // Name: AppStoreOverlayBottomSheet
-// Dependencies: [32, 19, 21, 4896, 558, 576, 1484, 7852, 5597, 7215, 4565, 10933, 10937, 6656, 6119, 6652, 2]
+// Dependencies: [32, 19, 21, 5090, 558, 576, 1496, 8270, 5392, 7395, 4757, 10584, 10588, 6833, 6298, 6829, 2]
 
-// Module 10936 (AppStoreOverlayBottomSheet)
-import openURLDefault from "openURL" /* 4565 */;
-import AnalyticsActions from "AnalyticsActions" /* 7215 */;
-import AppStoreOverlayContent from "AppStoreOverlayContent" /* 10933 */;
-import AppStoreOverlayBody from "AppStoreOverlayBody" /* 10937 */;
+// Module 10587 (AppStoreOverlayBottomSheet)
+import openURLDefault from "openURL" /* 4757 */;
+import AnalyticsActions from "AnalyticsActions" /* 7395 */;
+import AppStoreOverlayContent from "AppStoreOverlayContent" /* 10584 */;
+import AppStoreOverlayBody from "AppStoreOverlayBody" /* 10588 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, metadata;
+let BottomSheet;
 
 let hasOwnProperty;
 let metroRequire;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ headerBar: { zIndex: 1 }, bodyContainer: { flex: 1, minHeight: 0 } });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((metadata) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOverlayBottomSheet(metadata) {
   let bottomSheetClose;
   let bottomSheetRef;
   let onDismiss;
@@ -156,7 +156,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((metadata) => {
   cResult[5] = metadata.storeUrl;
   cResult[6] = onInstallPress;
   cResult[7] = U;
-}) : ((metadata) => {
+}) : (function AppStoreOverlayBottomSheet(metadata) {
   let bottomSheetClose;
   let bottomSheetRef;
   let items5;

@@ -1,11 +1,11 @@
-// Module ID: 7237
-// Function ID: 7238
+// Module ID: 7416
+// Function ID: 7417
 // Name: AdAnalyticsInterfaceExperiment
-// Dependencies: [1440, 2]
+// Dependencies: [1452, 2]
 // Exports: shouldMigrateToAdAnalyticsInterface
 
-// Module 7237 (AdAnalyticsInterfaceExperiment)
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+// Module 7416 (AdAnalyticsInterfaceExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj3;

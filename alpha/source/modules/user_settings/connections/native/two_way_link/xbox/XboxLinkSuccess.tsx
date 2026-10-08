@@ -1,18 +1,18 @@
-// Module ID: 8784
-// Function ID: 8785
+// Module ID: 12890
+// Function ID: 12891
 // Name: XboxLinkSuccess
-// Dependencies: [32, 19, 17, 8767, 8781, 21, 4896, 587, 558, 576, 8774, 1369, 1490, 8785, 1126, 4892, 8786, 8787, 1188, 8788, 5601, 6626, 2]
+// Dependencies: [32, 19, 17, 9113, 9127, 21, 5090, 587, 558, 576, 9120, 1381, 1502, 12891, 1126, 5086, 10963, 12892, 1200, 10911, 5375, 6803, 2]
 
-// Module 8784 (XboxLinkSuccess)
+// Module 12890 (XboxLinkSuccess)
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import XboxLinkConstants from "XboxLinkConstants" /* 8767 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 9113 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 8781 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 9127 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ createStyles = createStyles.createStyles;
 size = { marginRight: 12, width: 40, height: 40, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.unsafe_rawColors.PLATFORM_XBOX };
 obj3 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
 let closure_15 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkDiscordSuccess() {
   let closure_1;
   let container;
   let content;
@@ -74,7 +74,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const effect = obj3.useEffect(tmp8, tmp9);
   if (cResult[2] !== first) {
-    const fn2 = function f() {
+    const fn2 = function b() {
       const tmp = first;
       if (!tmp) {
         const openURL = metroImportDefault.openURL;
@@ -92,15 +92,15 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult = tmp(navigation[12]);
   navigation = tmpResult.useNavigation();
   if (cResult[4] !== navigation) {
-    class C {
+    class R {
       constructor() {
         navigation.push(XboxLinkModalScenes.EDUCATION);
       }
     }
     cResult[4] = navigation;
-    cResult[5] = C;
+    cResult[5] = R;
   } else {
-    class C {
+    class R {
       constructor() {
         navigation.push(XboxLinkModalScenes.EDUCATION);
       }
@@ -108,7 +108,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   ({ container, content } = twoWayLinkStyles);
   if (cResult[6] !== tmp4.image) {
-    class C {
+    class R {
       constructor() {
         navigation.push(XboxLinkModalScenes.EDUCATION);
       }
@@ -118,7 +118,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[7] = closure_13(closure_5, obj4);
     const tmp17 = closure_13(closure_5, obj4);
   } else {
-    class C {
+    class R {
       constructor() {
         navigation.push(XboxLinkModalScenes.EDUCATION);
       }
@@ -126,7 +126,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const title = twoWayLinkStyles.title;
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    class C {
+    class R {
       constructor() {
         navigation.push(XboxLinkModalScenes.EDUCATION);
       }
@@ -135,14 +135,14 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[8] = stringResult;
     tmp18 = stringResult;
   } else {
-    class C {
+    class R {
       constructor() {
         navigation.push(XboxLinkModalScenes.EDUCATION);
       }
     }
   }
   if (cResult[9] !== twoWayLinkStyles.title) {
-    class C {
+    class R {
       constructor() {
         navigation.push(XboxLinkModalScenes.EDUCATION);
       }
@@ -152,7 +152,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[10] = closure_13(tmp(navigation[15]).Text, obj5);
     const tmp21 = closure_13(tmp(navigation[15]).Text, obj5);
   } else {
-    class C {
+    class R {
       constructor() {
         navigation.push(XboxLinkModalScenes.EDUCATION);
       }
@@ -160,7 +160,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const body = twoWayLinkStyles.body;
   if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-    class C {
+    class R {
       constructor() {
         navigation.push(XboxLinkModalScenes.EDUCATION);
       }
@@ -169,14 +169,14 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[11] = stringResult1;
     tmp22 = stringResult1;
   } else {
-    class C {
+    class R {
       constructor() {
         navigation.push(XboxLinkModalScenes.EDUCATION);
       }
     }
   }
   if (cResult[12] !== twoWayLinkStyles.body) {
-    class C {
+    class R {
       constructor() {
         navigation.push(XboxLinkModalScenes.EDUCATION);
       }
@@ -186,14 +186,14 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[13] = closure_13(tmp(navigation[15]).Text, obj7);
     const tmp25 = closure_13(tmp(navigation[15]).Text, obj7);
   } else {
-    class C {
+    class R {
       constructor() {
         navigation.push(XboxLinkModalScenes.EDUCATION);
       }
     }
   }
   if (cResult[14] !== tmp4.appLogo) {
-    class C {
+    class R {
       constructor() {
         navigation.push(XboxLinkModalScenes.EDUCATION);
       }
@@ -203,20 +203,20 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[15] = closure_13(closure_5, obj9);
     const tmp29 = closure_13(closure_5, obj9);
   } else {
-    class C {
+    class R {
       constructor() {
         navigation.push(XboxLinkModalScenes.EDUCATION);
       }
     }
   }
   if (cResult[16] === tmp4.appLogoBox) {
-    class C {
+    class R {
       constructor() {
         navigation.push(XboxLinkModalScenes.EDUCATION);
       }
     }
     if (cResult[19] !== first) {
-      class C {
+      class R {
         constructor() {
           navigation.push(XboxLinkModalScenes.EDUCATION);
         }
@@ -224,13 +224,13 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const string = tmp32.string;
       const t = tmp(tmp2[14]).t;
       if (first) {
-        class C {
+        class R {
           constructor() {
             navigation.push(XboxLinkModalScenes.EDUCATION);
           }
         }
       } else {
-        class C {
+        class R {
           constructor() {
             navigation.push(XboxLinkModalScenes.EDUCATION);
           }
@@ -239,7 +239,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       cResult[19] = first;
       cResult[20] = tmp33;
     } else {
-      class C {
+      class R {
         constructor() {
           navigation.push(XboxLinkModalScenes.EDUCATION);
         }
@@ -247,20 +247,20 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     if (cResult[21] === tmp4.getAppTitle) {
       let tmp38Result;
-      class C {
+      class R {
         constructor() {
           navigation.push(XboxLinkModalScenes.EDUCATION);
         }
       }
       if (cResult[24] === first) {
-        class C {
+        class R {
           constructor() {
             navigation.push(XboxLinkModalScenes.EDUCATION);
           }
         }
       }
       if (first) {
-        class C {
+        class R {
           constructor() {
             navigation.push(XboxLinkModalScenes.EDUCATION);
           }
@@ -268,7 +268,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const obj10 = { source: require("AssetRegistry"), style: tmp4.icon };
         tmp38Result = tmp38(closure_5, obj10);
       } else {
-        class C {
+        class R {
           constructor() {
             navigation.push(XboxLinkModalScenes.EDUCATION);
           }
@@ -296,7 +296,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[17] = tmp26;
   cResult[18] = closure_13(closure_6, obj12);
   closure_13(closure_6, obj12);
-}) : (() => {
+}) : (function XboxLinkDiscordSuccess() {
   let Button;
   let closure_1;
   let first;

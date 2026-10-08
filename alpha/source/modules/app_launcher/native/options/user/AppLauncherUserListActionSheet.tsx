@@ -1,27 +1,27 @@
-// Module ID: 11825
-// Function ID: 11826
+// Module ID: 11910
+// Function ID: 11911
 // Name: AppLauncherUserListActionSheet
-// Dependencies: [19, 1489, 21, 4896, 558, 576, 4860, 7043, 1188, 11804, 1126, 11826, 11223, 11805, 6000, 11803, 2]
+// Dependencies: [19, 1501, 21, 5090, 558, 576, 5054, 7231, 1200, 11871, 1126, 11911, 11338, 11872, 6184, 11870, 2]
 
-// Module 11825 (AppLauncherUserListActionSheet)
+// Module 11910 (AppLauncherUserListActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1489 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import TableRow from "TableRow" /* 6000 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import TableRow from "TableRow" /* 6184 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_0, dependencyMap, obj1, obj4, onUserPress;
+let closure_0, dependencyMap, obj1, obj4;
 
 const DEFAULT_CONTENT_PADDING = AppLauncherNativeConstants.DEFAULT_CONTENT_PADDING;
 const jsx = Fragment.jsx;
-const AppLauncherUserListActionSheet = "AppLauncherUserListActionSheet";
+const AppLauncherUserListActionSheet_str = "AppLauncherUserListActionSheet";
 let obj = { emptyState: { paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingTop: DEFAULT_CONTENT_PADDING, flex: 1 } };
 let closure_6 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onUserPress) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherUserListActionSheet(onUserPress) {
   let channel;
   let closure_2;
   let guild_id;
@@ -38,7 +38,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onUserPress) => {
   if (cResult[0] !== onActionSheetDismiss) {
     const fn = function n() {
       const obj = ActionSheetActionCreatorsDefault;
-      obj.hideActionSheet(AppLauncherUserListActionSheet);
+      obj.hideActionSheet(AppLauncherUserListActionSheet_str);
       onActionSheetDismiss();
     };
     cResult[0] = onActionSheetDismiss;
@@ -262,7 +262,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onUserPress) => {
       }
       tmp14[0] = id;
       tmp14[5] = tmp4;
-      tmp10Result = tmp10(tmp11(11826), tmp14);
+      tmp10Result = tmp10(tmp11(11911), tmp14);
     } else {
       class U {
         constructor(arg0) {
@@ -300,25 +300,34 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onUserPress) => {
       tmp12[1] = guild_id;
       tmp12[3] = tmp5;
       tmp12[6] = tmp4;
-      tmp10Result = tmp10(tmp11(11223), tmp12);
+      tmp10Result = tmp10(tmp11(11338), tmp12);
     }
     cResult[8] = channel;
     cResult[9] = id;
     cResult[10] = guild_id;
+    class P {
+      constructor(user) {
+        const obj = { user: user.user };
+        onUserPress(obj);
+        closure_2();
+      }
+    }
     cResult[11] = tmp4;
     cResult[12] = tmp5;
     cResult[13] = tmp10Result;
   }
-  const fn2 = function b(user) {
-    const obj = { user: user.user };
-    onUserPress(obj);
-    closure_2();
-  };
+  class P {
+    constructor(user) {
+      const obj = { user: user.user };
+      onUserPress(obj);
+      closure_2();
+    }
+  }
   cResult[2] = tmp3;
   cResult[3] = onUserPress;
-  cResult[4] = fn2;
-  tmp4 = fn2;
-}) : ((onUserPress) => {
+  cResult[4] = P;
+  tmp4 = P;
+}) : (function AppLauncherUserListActionSheet(onUserPress) {
   let tmp4Result;
   onUserPress = onUserPress.onUserPress;
   const onActionSheetDismiss = onUserPress.onActionSheetDismiss;
@@ -330,7 +339,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onUserPress) => {
   const guild_id = channel.guild_id;
   const callback = callback1.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
-    obj.hideActionSheet(AppLauncherUserListActionSheet);
+    obj.hideActionSheet(AppLauncherUserListActionSheet_str);
     onActionSheetDismiss();
   }, items);
   const items1 = [callback, onUserPress];
@@ -376,7 +385,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onUserPress) => {
   return jsx(AppLauncherCommandOptionActionSheet, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyStateWithSnowflakeQuery(arg0) {
   let onPressRow;
   let query;
   let tmp5;
@@ -413,18 +422,18 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return tmp7;
     }
   }
-  const tmp8 = jsx(tmp(11803).AppLauncherList, { contentContainerStyle: tmp4.emptyState, data: tmp5, renderItem: tmp6, keyboardShouldPersistTaps: "always", keyboardDismissMode: "on-drag" });
+  const tmp8 = jsx(tmp(11870).AppLauncherList, { contentContainerStyle: tmp4.emptyState, data: tmp5, renderItem: tmp6, keyboardShouldPersistTaps: "always", keyboardDismissMode: "on-drag" });
   cResult[4] = tmp4.emptyState;
   cResult[5] = tmp5;
   cResult[6] = tmp6;
   cResult[7] = tmp8;
   tmp7 = tmp8;
-}) : ((onPressRow) => {
+}) : (function EmptyStateWithSnowflakeQuery(onPressRow) {
   onPressRow = onPressRow.onPressRow;
   const query = onPressRow.query;
   const items = [query];
   closure_6();
-  return jsx(onPressRow(11803).AppLauncherList, {
+  return jsx(onPressRow(11870).AppLauncherList, {
     contentContainerStyle: closure_6().emptyState,
     data: items,
     renderItem(label) {

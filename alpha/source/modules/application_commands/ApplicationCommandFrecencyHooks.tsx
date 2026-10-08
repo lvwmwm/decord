@@ -1,13 +1,13 @@
-// Module ID: 8834
-// Function ID: 8835
+// Module ID: 9193
+// Function ID: 9194
 // Name: ApplicationCommandFrecencyHooks
-// Dependencies: [19, 8829, 1095, 558, 576, 2033, 504, 2]
+// Dependencies: [19, 9188, 1095, 558, 576, 2045, 504, 2]
 
-// Module 8834 (ApplicationCommandFrecencyHooks)
+// Module 9193 (ApplicationCommandFrecencyHooks)
 import react2 from "react" /* 576 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import react from "react" /* 19 */;
-import ApplicationCommandFrecencyStore_mod from "ApplicationCommandFrecencyStore" /* 8829 */;
+import ApplicationCommandFrecencyStore_mod from "ApplicationCommandFrecencyStore" /* 9188 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let ApplicationCommandFrecencyStore = ApplicationCommandFrecencyStore_mod;
 ApplicationCommandFrecencyStore = ApplicationCommandFrecencyStore_mod;
 const UserSettingsTypes = UserSettingsConstants.UserSettingsTypes;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTopCommands(arg0) {
   let tmp4;
   let tmp5;
   let tmp7;
@@ -47,14 +47,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const effect = react.useEffect(tmp4, tmp5);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [ApplicationCommandFrecencyStore];
-    class S {
+    class C {
       constructor() {
         return topCommandsWithoutLoadingLatest.getTopCommandsWithoutLoadingLatest();
       }
     }
     cResult[2] = items1;
-    cResult[3] = S;
-    tmp8 = S;
+    cResult[3] = C;
+    tmp8 = C;
     tmp7 = items1;
   } else {
     tmp7 = cResult[2];
@@ -74,7 +74,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = stateFromStores;
   cResult[6] = tmp12;
   tmp11 = tmp12;
-}) : ((arg0) => {
+}) : (function useTopCommands(arg0) {
   let closure_0;
   let stateFromStores;
   let topCommandsWithoutLoadingLatest;
@@ -90,7 +90,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return react.useMemo(() => _false(stateFromStores, closure_0), items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTopRealCommands(arg0) {
   let tmp4;
   let tmp5;
   let tmp7;
@@ -114,14 +114,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const effect = react.useEffect(tmp4, tmp5);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [ApplicationCommandFrecencyStore];
-    class S {
+    class C {
       constructor() {
         return topCommandsWithoutLoadingLatest.getTopCommandsWithoutLoadingLatest();
       }
     }
     cResult[2] = items1;
-    cResult[3] = S;
-    tmp8 = S;
+    cResult[3] = C;
+    tmp8 = C;
     tmp7 = items1;
   } else {
     tmp7 = cResult[2];
@@ -141,7 +141,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = stateFromStores;
   cResult[6] = tmp12;
   tmp11 = tmp12;
-}) : ((arg0) => {
+}) : (function useTopRealCommands(arg0) {
   let closure_0;
   let stateFromStores;
   let topCommandsWithoutLoadingLatest;

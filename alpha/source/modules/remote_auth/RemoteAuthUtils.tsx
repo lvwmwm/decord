@@ -1,14 +1,14 @@
-// Module ID: 15953
-// Function ID: 15954
+// Module ID: 16213
+// Function ID: 16214
 // Name: RemoteAuthUtils
-// Dependencies: [32, 5, 1391, 15951, 2]
-// Exports: base64Decode, base64Encode, decodeEncodedUserRecord
+// Dependencies: [32, 5, 1403, 16211, 2]
+// Exports: decodeEncodedUserRecord
 
-// Module 15953 (RemoteAuthUtils)
-import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 15951 */;
+// Module 16213 (RemoteAuthUtils)
+import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 16211 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserRecord from "UserRecord" /* 1391 */;
+import UserRecord from "UserRecord" /* 1403 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -109,15 +109,4 @@ const result = size.fileFinishedImporting("modules/remote_auth/RemoteAuthUtils.t
 
 export const decodeEncodedUserRecord = function decodeEncodedUserRecord() {
   return obj(...arguments);
-};
-export const base64Encode = function base64Encode(arg0) {
-  const uint8Array = new Uint8Array(arg0);
-  const items = [...uint8Array];
-  const str = btoa(fromCharCode.apply(items));
-  const str2 = str.replace(/\//g, "_");
-  const str3 = str2.replace(/\+/g, "-");
-  return str3.replace(/={1,2}$/, "");
-};
-export const base64Decode = function base64Decode(placeholder) {
-  return Uint8Array.from(atob(placeholder), (str) => str.charCodeAt(0));
 };

@@ -1,22 +1,22 @@
-// Module ID: 14737
-// Function ID: 14738
+// Module ID: 14998
+// Function ID: 14999
 // Name: FamilyCenterLinkingBanner
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 8329, 1126, 2521, 11544, 14738, 4892, 14700, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 7712, 1126, 2565, 11558, 14999, 5086, 14961, 2]
 
-// Module 14737 (FamilyCenterLinkingBanner)
+// Module 14998 (FamilyCenterLinkingBanner)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
-import _modDef2521 from "module_2521" /* 2521 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8329 */;
-import useAgeSpecificText3 from "useAgeSpecificText" /* 11544 */;
-import FamilyCenterBannerButton from "FamilyCenterBannerButton" /* 14700 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14738 */;
+import _modDef2565 from "module_2565" /* 2565 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7712 */;
+import useAgeSpecificText3 from "useAgeSpecificText" /* 11558 */;
+import FamilyCenterBannerButton from "FamilyCenterBannerButton" /* 14961 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14999 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ size = { width: "100%", height: 175, marginBottom: nativeDefault.space.PX_12 };
 obj4 = { marginBottom: nativeDefault.space.PX_8 };
 let closure_7 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterLinkingBanner() {
   let items;
   let items1;
   let tmp12;
@@ -55,9 +55,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp6 = useIsInAdultAgeGroupDefault();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
-    const stringResult = intl.string(_modDef2521.zUCWEL);
+    const stringResult = intl.string(_modDef2565.zUCWEL);
     const intl2 = tmp(1126).intl;
-    const stringResult1 = intl2.string(_modDef2521.B0NPbp);
+    const stringResult1 = intl2.string(_modDef2565.B0NPbp);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
     tmp7 = stringResult;
@@ -69,9 +69,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const ageSpecificText = tmpResult.useAgeSpecificText(tmp7, tmp8);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const intl3 = tmp(1126).intl;
-    const formatResult = intl3.format(_modDef2521.yMnoDl, { link: "https://support.discord.com/hc/articles/14155060633623" });
+    const formatResult = intl3.format(_modDef2565.yMnoDl, { link: "https://support.discord.com/hc/articles/14155060633623" });
     const intl4 = tmp(1126).intl;
-    const stringResult2 = intl4.string(_modDef2521.JsAEDi);
+    const stringResult2 = intl4.string(_modDef2565.JsAEDi);
     cResult[2] = formatResult;
     cResult[3] = stringResult2;
     tmp13 = stringResult2;
@@ -158,7 +158,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[7] = tmp4.header;
   cResult[8] = tmp22;
   tmp21 = tmp22;
-}) : (() => {
+}) : (function FamilyCenterLinkingBanner() {
   let items;
   let items1;
   const tmp = closure_7();
@@ -166,17 +166,17 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const useAgeSpecificText = useAgeSpecificText3.useAgeSpecificText;
   useAgeSpecificText3;
   const intl = intl7.intl;
-  const stringResult = intl.string(_modDef2521.zUCWEL);
+  const stringResult = intl.string(_modDef2565.zUCWEL);
   const intl2 = intl7.intl;
-  const ageSpecificText = useAgeSpecificText(stringResult, intl2.string(_modDef2521.B0NPbp));
+  const ageSpecificText = useAgeSpecificText(stringResult, intl2.string(_modDef2565.B0NPbp));
   const useAgeSpecificText2 = useAgeSpecificText3.useAgeSpecificText;
   useAgeSpecificText3;
   const intl3 = intl7.intl;
-  const formatResult = intl3.format(_modDef2521.yMnoDl, { link: "https://support.discord.com/hc/articles/14155060633623" });
+  const formatResult = intl3.format(_modDef2565.yMnoDl, { link: "https://support.discord.com/hc/articles/14155060633623" });
   const intl4 = intl7.intl;
   const obj = { style: tmp.container, children: items };
   const obj2 = { source: AssetRegistryDefault, style: tmp.art, resizeMethod: "resize" };
-  const ageSpecificText2 = useAgeSpecificText2(formatResult, intl4.string(_modDef2521.JsAEDi));
+  const ageSpecificText2 = useAgeSpecificText2(formatResult, intl4.string(_modDef2565.JsAEDi));
   items = [hasOwnProperty(React3, obj2), , ];
   const obj3 = { style: tmp.content, children: items1 };
   items1 = [, ];
@@ -192,7 +192,7 @@ let obj5 = { container: obj6 };
 obj6 = { marginTop: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, width: "100%" };
 let closure_8 = createStyles.createStyles(obj5);
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterLinkingBannerParentContent() {
   let first;
   let intl;
   let intl2;
@@ -209,7 +209,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(6);
   const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { index: 1, header: intl.string(_modDef2521["7xxAni"]), description: intl2.string(_modDef2521["1M9So2"]) };
+    const obj2 = { index: 1, header: intl.string(_modDef2565["7xxAni"]), description: intl2.string(_modDef2565["1M9So2"]) };
     intl = tmp(1126).intl;
     intl2 = tmp(1126).intl;
     const tmp9 = hasOwnProperty(closure_13, obj2);
@@ -219,7 +219,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { index: 2, header: intl3.string(_modDef2521["AXgx+a"]), description: intl4.string(_modDef2521.GzMFnb) };
+    const obj3 = { index: 2, header: intl3.string(_modDef2565["AXgx+a"]), description: intl4.string(_modDef2565.GzMFnb) };
     intl3 = tmp(1126).intl;
     intl4 = tmp(1126).intl;
     const tmp14 = hasOwnProperty(closure_13, obj3);
@@ -229,7 +229,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp10 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { index: 3, header: intl5.string(_modDef2521.MZn1tG), description: intl6.string(_modDef2521["8rLBxD"]), isLast: true };
+    const obj4 = { index: 3, header: intl5.string(_modDef2565.MZn1tG), description: intl6.string(_modDef2565["8rLBxD"]), isLast: true };
     intl5 = tmp(1126).intl;
     intl6 = tmp(1126).intl;
     const tmp20 = hasOwnProperty(closure_13, obj4);
@@ -253,7 +253,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp22 = cResult[5];
   }
   return tmp22;
-}) : (() => {
+}) : (function FamilyCenterLinkingBannerParentContent() {
   let intl;
   let intl2;
   let intl3;
@@ -262,15 +262,15 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let intl6;
   let items;
   const obj = { style: closure_8().container, children: items };
-  const obj2 = { index: 1, header: intl.string(_modDef2521["7xxAni"]), description: intl2.string(_modDef2521["1M9So2"]) };
+  const obj2 = { index: 1, header: intl.string(_modDef2565["7xxAni"]), description: intl2.string(_modDef2565["1M9So2"]) };
   intl = intl7.intl;
   intl2 = intl7.intl;
   items = [hasOwnProperty(closure_13, obj2), , , ];
-  const obj3 = { index: 2, header: intl3.string(_modDef2521["AXgx+a"]), description: intl4.string(_modDef2521.GzMFnb) };
+  const obj3 = { index: 2, header: intl3.string(_modDef2565["AXgx+a"]), description: intl4.string(_modDef2565.GzMFnb) };
   intl3 = intl7.intl;
   intl4 = intl7.intl;
   items[1] = hasOwnProperty(closure_13, obj3);
-  const obj4 = { index: 3, header: intl5.string(_modDef2521.MZn1tG), description: intl6.string(_modDef2521["8rLBxD"]), isLast: true };
+  const obj4 = { index: 3, header: intl5.string(_modDef2565.MZn1tG), description: intl6.string(_modDef2565["8rLBxD"]), isLast: true };
   intl5 = intl7.intl;
   intl6 = intl7.intl;
   items[2] = hasOwnProperty(closure_13, obj4);
@@ -282,7 +282,7 @@ let obj7 = { container: { width: "100%", paddingHorizontal: nativeDefault.space.
 ({ width: "100%", paddingHorizontal: nativeDefault.space.PX_16 });
 let closure_10 = createStyles.createStyles(obj7);
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterLinkingBannerTeenContent() {
   let first;
   let tmp8;
   const obj = react2;
@@ -305,7 +305,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[2];
   }
   return tmp8;
-}) : (() => {
+}) : (function FamilyCenterLinkingBannerTeenContent() {
   const obj = { style: closure_10().container, children: hasOwnProperty(FamilyCenterBannerButton.FamilyCenterTeenQRCodeButton, {}) };
   return hasOwnProperty(_false, obj);
 });
@@ -314,7 +314,7 @@ const obj9 = { row: { display: "flex", flexDirection: "row", alignItems: "flex-s
 size1 = { display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", overflow: "hidden", width: 32, height: 32, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
 let closure_12 = createStyles.createStyles(obj9);
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((isLast) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterLinkingInstructionsRow(isLast) {
   let description;
   let header;
   let index;
@@ -415,7 +415,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((isLast) => {
   cResult[3] = tmp5;
   cResult[4] = tmp9;
   tmp8 = tmp9;
-}) : ((arg0) => {
+}) : (function FamilyCenterLinkingInstructionsRow(arg0) {
   let description;
   let header;
   let index;

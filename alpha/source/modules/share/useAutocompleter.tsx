@@ -1,19 +1,19 @@
-// Module ID: 10735
-// Function ID: 10736
+// Module ID: 11595
+// Function ID: 11596
 // Name: useAutocompleter
-// Dependencies: [32, 19, 558, 576, 9509, 5991, 2]
+// Dependencies: [32, 19, 558, 576, 8675, 6174, 2]
 
-// Module 10735 (useAutocompleter)
-import useInitialValueDefault from "useInitialValue" /* 5991 */;
-import _modDef9509 from "module_9509" /* 9509 */;
+// Module 11595 (useAutocompleter)
+import useInitialValueDefault from "useInitialValue" /* 6174 */;
+import _modDef8675 from "module_8675" /* 8675 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, importDefault, searchOptions;
+let dependencyMap, importDefault;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchOptions) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAutocompleter(searchOptions) {
   let first;
   let options;
   let tmp5;
@@ -35,8 +35,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchOptions) => {
   [tmp5, importDefault] = _slicedToArray(react.useState(first), 2);
   const tmp4 = _slicedToArray(react.useState(first), 2);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function o() {
-      let obj = new _modDef9509((results, query) => {
+    const fn = function c() {
+      let obj = new _modDef8675((results, query) => {
         const obj = { results, query };
         closure_1_1(obj);
       });
@@ -137,7 +137,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchOptions) => {
   cResult[8] = items1;
   tmp12 = items1;
   tmp11 = E;
-}) : ((searchOptions) => {
+}) : (function useAutocompleter(searchOptions) {
   let c1;
   let items2;
   let options;
@@ -147,7 +147,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchOptions) => {
   let tmp = _slicedToArray(react.useState({ results: [], query: "" }), 2);
   [tmp2, c1] = tmp;
   const tmp3 = useInitialValueDefault(() => {
-    let obj = new _modDef9509((results, query) => {
+    let obj = new _modDef8675((results, query) => {
       const obj = { results, query };
       closure_1_1(obj);
     });

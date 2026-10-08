@@ -1,27 +1,25 @@
-// Module ID: 9565
-// Function ID: 9566
+// Module ID: 8736
+// Function ID: 8737
 // Name: InstantInviteFriendsList
-// Dependencies: [19, 1085, 21, 4896, 5922, 587, 558, 576, 1126, 1188, 4860, 4743, 5916, 4892, 9566, 6478, 6119, 2]
+// Dependencies: [19, 1085, 21, 5090, 5902, 587, 558, 576, 1126, 1200, 5054, 4937, 6189, 5086, 8737, 6656, 6298, 2]
 
-// Module 9565 (InstantInviteFriendsList)
+// Module 8736 (InstantInviteFriendsList)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import RootNavigationRef from "RootNavigationRef" /* 4743 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Pressables from "Pressables" /* 5916 */;
-import InstantInviteRowDefault from "InstantInviteRow" /* 9566 */;
+import native from "native" /* 1200 */;
+import RootNavigationRef from "RootNavigationRef" /* 4937 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Pressables from "Pressables" /* 6189 */;
+import InstantInviteRowDefault from "InstantInviteRow" /* 8737 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import TextStyles_mod from "TextStyles" /* 5922 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import TextStyles_mod from "TextStyles" /* 5902 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let code;
 
 let closure_4;
 let hasOwnProperty;
@@ -44,13 +42,13 @@ TextStyles = TextStyles_mod;
 const merged1 = Object.assign(TextStyles(Fonts.PRIMARY_MEDIUM, nativeDefault.colors.TEXT_SUBTLE, 16));
 let closure_7 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  let items1;
+const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (function FriendsEmptyComponent() {
+  let items;
   let obj3;
   let tmp5;
   let tmp6;
   let obj = react2;
-  const cResult = obj.c(16);
+  const cResult = obj.c(14);
   const tmp4 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
@@ -70,8 +68,7 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() =>
     let tmp13;
     let tmp12;
     let tmp15;
-    let tmp16;
-    let tmp18;
+    let tmp17;
     if (cResult[3] === tmp4.emptyTitle) {
       tmp9 = cResult[4];
     }
@@ -105,48 +102,41 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() =>
       tmp12 = cResult[6];
       tmp13 = cResult[7];
     }
-    if (cResult[8] !== tmp4.goToFriendsLink) {
-      const items = [tmp4.goToFriendsLink];
-      cResult[8] = tmp4.goToFriendsLink;
-      cResult[9] = items;
-      tmp15 = items;
-    } else {
-      tmp15 = cResult[9];
-    }
     const _Symbol3 = Symbol;
-    if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+    const goToFriendsLink = tmp4.goToFriendsLink;
+    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       const intl4 = tmp(1126).intl;
       const stringResult3 = intl4.string(intl5.t.a7FVbE);
-      cResult[10] = stringResult3;
-      tmp16 = stringResult3;
+      cResult[8] = stringResult3;
+      tmp15 = stringResult3;
     } else {
-      tmp16 = cResult[10];
+      tmp15 = cResult[8];
     }
-    if (cResult[11] !== tmp15) {
+    if (cResult[9] !== tmp4.goToFriendsLink) {
       let obj2 = { onPress: tmp11, accessibilityRole: "link", accessibilityLabel: tmp12, hitSlop: tmp13, children: React3(Text_Text.Text, obj3) };
-      const PressableOpacity = tmp(5916).PressableOpacity;
-      obj3 = { style: tmp15, variant: "text-sm/semibold", color: "text-link", children: tmp16 };
-      const tmp20 = React3(PressableOpacity, obj2);
-      cResult[11] = tmp15;
-      cResult[12] = tmp20;
-      tmp18 = tmp20;
+      const PressableOpacity = tmp(6189).PressableOpacity;
+      obj3 = { style: goToFriendsLink, variant: "text-sm/semibold", color: "text-link", children: tmp15 };
+      const tmp19 = React3(PressableOpacity, obj2);
+      cResult[9] = tmp4.goToFriendsLink;
+      cResult[10] = tmp19;
+      tmp17 = tmp19;
     } else {
-      tmp18 = cResult[12];
+      tmp17 = cResult[10];
     }
-    if (cResult[13] === tmp9) {
-      let tmp21;
-      if (cResult[14] === tmp18) {
-        tmp21 = cResult[15];
+    if (cResult[11] === tmp9) {
+      let tmp20;
+      if (cResult[12] === tmp17) {
+        tmp20 = cResult[13];
       }
-      return tmp21;
+      return tmp20;
     }
-    const obj4 = { children: items1 };
-    items1 = [tmp9, tmp18];
-    const tmp24 = metroRequire(hasOwnProperty, obj4);
-    cResult[13] = tmp9;
-    cResult[14] = tmp18;
-    cResult[15] = tmp24;
-    tmp21 = tmp24;
+    const obj4 = { children: items };
+    items = [tmp9, tmp17];
+    const tmp23 = metroRequire(hasOwnProperty, obj4);
+    cResult[11] = tmp9;
+    cResult[12] = tmp17;
+    cResult[13] = tmp23;
+    tmp20 = tmp23;
   }
   const obj5 = { title: tmp5, body: tmp6, titleStyle: tmp4.emptyTitle, bodyStyle: tmp4.emptyBody };
   const tmp10 = React3(native.RefreshEmptyState, obj5);
@@ -154,14 +144,13 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() =>
   cResult[3] = tmp4.emptyTitle;
   cResult[4] = tmp10;
   tmp9 = tmp10;
-}) : (() => {
+}) : (function FriendsEmptyComponent() {
   let Text;
   let intl;
   let intl2;
   let intl3;
   let intl4;
   let items;
-  let items1;
   let obj7;
   const tmp = closure_7();
   let obj = { children: items };
@@ -189,15 +178,14 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() =>
   };
   const PressableOpacity = Pressables.PressableOpacity;
   intl3 = intl5.intl;
-  obj7 = { style: items1, variant: "text-sm/semibold", color: "text-link", children: intl4.string(intl5.t.a7FVbE) };
-  items1 = [tmp.goToFriendsLink];
+  obj7 = { style: tmp.goToFriendsLink, variant: "text-sm/semibold", color: "text-link", children: intl4.string(intl5.t.a7FVbE) };
   Text = Text_Text.Text;
   intl4 = intl5.intl;
   items[1] = React3(PressableOpacity, obj4);
   return metroRequire(hasOwnProperty, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((code) => {
+const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInviteFriendsList(code) {
   let onInviteSent;
   let obj = code(onInviteSent[7]);
   const cResult = obj.c(13);
@@ -267,7 +255,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((code) => {
   cResult[4] = source;
   cResult[5] = fn;
   tmp4 = fn;
-}) : ((code) => {
+}) : (function InstantInviteFriendsList(code) {
   let obj2;
   code = code.code;
   const onPressAvatar = code.onPressAvatar;

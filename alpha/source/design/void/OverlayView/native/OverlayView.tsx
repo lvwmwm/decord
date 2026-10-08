@@ -1,21 +1,19 @@
-// Module ID: 5721
-// Function ID: 5722
+// Module ID: 5304
+// Function ID: 5305
 // Name: OverlayView
-// Dependencies: [109, 19, 17, 21, 1369, 5722, 558, 576, 5771, 2]
+// Dependencies: [109, 19, 17, 21, 1381, 5305, 558, 576, 5354, 2]
 
-// Module 5721 (OverlayView)
+// Module 5304 (OverlayView)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import enableScreens from "enableScreens" /* 5722 */;
-import react_nativeDefault from "react-native" /* 5771 */;
+import enableScreens from "enableScreens" /* 5305 */;
+import react_nativeDefault from "react-native" /* 5354 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1369 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let children;
 
 let closure_2 = ["children"];
 let View = react_native.View;
@@ -26,7 +24,7 @@ let FullWindowOverlay = View;
 if (PlatformUtils.isIOS()) {
   FullWindowOverlay = enableScreens.FullWindowOverlay;
 }
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TransitionGroupOverlayView(children) {
   let arr;
   let tmp2;
   const obj = react2;
@@ -62,7 +60,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[4] = tmp2;
   cResult[5] = tmp7;
   tmp6 = tmp7;
-}) : ((children) => {
+}) : (function TransitionGroupOverlayView(children) {
   children = children.children;
   const merged = Object.assign(children, Object.assign({ children: 0 }));
   let tmp2 = null;

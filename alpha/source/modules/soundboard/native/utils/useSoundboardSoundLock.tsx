@@ -1,19 +1,19 @@
-// Module ID: 17269
-// Function ID: 17270
+// Module ID: 17550
+// Function ID: 17551
 // Name: useSoundboardSoundLock
-// Dependencies: [19, 1377, 5689, 558, 576, 504, 6857, 4534, 17270, 7491, 7494, 4574, 4831, 1126, 2]
+// Dependencies: [19, 1389, 5426, 558, 576, 504, 7046, 4726, 17551, 9216, 9219, 4766, 5025, 1126, 2]
 
-// Module 17269 (useSoundboardSoundLock)
+// Module 17550 (useSoundboardSoundLock)
 import intl3 from "intl" /* 1126 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4534 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4831 */;
-import SoundboardConstants from "SoundboardConstants" /* 5689 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 7491 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7494 */;
-import SoundboardSoundPreviewMenuExperiment2 from "SoundboardSoundPreviewMenuExperiment" /* 17270 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4726 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5025 */;
+import SoundboardConstants from "SoundboardConstants" /* 5426 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9216 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9219 */;
+import SoundboardSoundPreviewMenuExperiment2 from "SoundboardSoundPreviewMenuExperiment" /* 17551 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ const require = globalThis.__r;
 let _require, importDefault;
 
 const DEFAULT_SOUND_GUILD_ID = SoundboardConstants.DEFAULT_SOUND_GUILD_ID;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, guild_id) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundboardSoundLock(guildId, guild_id) {
   let closure_1;
   let currentUser;
   let tmp17;
@@ -77,13 +77,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, guild_id)
                       if (tmp) {
                         const SoundboardSoundPreviewMenuExperiment = SoundboardSoundPreviewMenuExperiment2.SoundboardSoundPreviewMenuExperiment;
                         const returnOnUpsellDismiss = SoundboardSoundPreviewMenuExperiment.getConfig({ location: "PremiumUpsellActionSheet" }).returnOnUpsellDismiss;
+                        let tmp20;
                         const tmp17 = openPremiumUpsellActionSheetDefault;
                         const SOUNDBOARD_EVERYWHERE = EntitlementFeatureNames.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE;
-                        let tmp20;
                         if (returnOnUpsellDismiss) {
                           tmp20 = arg0;
                         }
-                        tmp17(SOUNDBOARD_EVERYWHERE, undefined, undefined, tmp20);
+                        tmp17(SOUNDBOARD_EVERYWHERE, undefined, tmp20);
                       } else if (!guildId.available) {
                         const obj = { key: "DISABLED_SOUND_PRESSED", icon: AssetRegistryDefault, content: intl.string(intl3.t.MDOXJR), toastDurationMs: 3000 };
                         const open = ToastActionCreatorsDefault.open;
@@ -105,13 +105,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, guild_id)
                     if (tmp) {
                       const SoundboardSoundPreviewMenuExperiment = SoundboardSoundPreviewMenuExperiment2.SoundboardSoundPreviewMenuExperiment;
                       const returnOnUpsellDismiss = SoundboardSoundPreviewMenuExperiment.getConfig({ location: "PremiumUpsellActionSheet" }).returnOnUpsellDismiss;
+                      let tmp20;
                       const tmp17 = openPremiumUpsellActionSheetDefault;
                       const SOUNDBOARD_EVERYWHERE = EntitlementFeatureNames.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE;
-                      let tmp20;
                       if (returnOnUpsellDismiss) {
                         tmp20 = arg0;
                       }
-                      tmp17(SOUNDBOARD_EVERYWHERE, undefined, undefined, tmp20);
+                      tmp17(SOUNDBOARD_EVERYWHERE, undefined, tmp20);
                     } else if (!guildId.available) {
                       const obj = { key: "DISABLED_SOUND_PRESSED", icon: AssetRegistryDefault, content: intl.string(intl3.t.MDOXJR), toastDurationMs: 3000 };
                       const open = ToastActionCreatorsDefault.open;
@@ -133,13 +133,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, guild_id)
                       if (tmp) {
                         const SoundboardSoundPreviewMenuExperiment = SoundboardSoundPreviewMenuExperiment2.SoundboardSoundPreviewMenuExperiment;
                         const returnOnUpsellDismiss = SoundboardSoundPreviewMenuExperiment.getConfig({ location: "PremiumUpsellActionSheet" }).returnOnUpsellDismiss;
+                        let tmp20;
                         const tmp17 = openPremiumUpsellActionSheetDefault;
                         const SOUNDBOARD_EVERYWHERE = EntitlementFeatureNames.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE;
-                        let tmp20;
                         if (returnOnUpsellDismiss) {
                           tmp20 = arg0;
                         }
-                        tmp17(SOUNDBOARD_EVERYWHERE, undefined, undefined, tmp20);
+                        tmp17(SOUNDBOARD_EVERYWHERE, undefined, tmp20);
                       } else if (!guildId.available) {
                         const obj = { key: "DISABLED_SOUND_PRESSED", icon: AssetRegistryDefault, content: intl.string(intl3.t.MDOXJR), toastDurationMs: 3000 };
                         const open = ToastActionCreatorsDefault.open;
@@ -158,13 +158,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, guild_id)
                     if (tmp) {
                       const SoundboardSoundPreviewMenuExperiment = SoundboardSoundPreviewMenuExperiment2.SoundboardSoundPreviewMenuExperiment;
                       const returnOnUpsellDismiss = SoundboardSoundPreviewMenuExperiment.getConfig({ location: "PremiumUpsellActionSheet" }).returnOnUpsellDismiss;
+                      let tmp20;
                       const tmp17 = openPremiumUpsellActionSheetDefault;
                       const SOUNDBOARD_EVERYWHERE = EntitlementFeatureNames.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE;
-                      let tmp20;
                       if (returnOnUpsellDismiss) {
                         tmp20 = arg0;
                       }
-                      tmp17(SOUNDBOARD_EVERYWHERE, undefined, undefined, tmp20);
+                      tmp17(SOUNDBOARD_EVERYWHERE, undefined, tmp20);
                     } else if (!guildId.available) {
                       const obj = { key: "DISABLED_SOUND_PRESSED", icon: AssetRegistryDefault, content: intl.string(intl3.t.MDOXJR), toastDurationMs: 3000 };
                       const open = ToastActionCreatorsDefault.open;
@@ -184,13 +184,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, guild_id)
                 if (tmp) {
                   const SoundboardSoundPreviewMenuExperiment = SoundboardSoundPreviewMenuExperiment2.SoundboardSoundPreviewMenuExperiment;
                   const returnOnUpsellDismiss = SoundboardSoundPreviewMenuExperiment.getConfig({ location: "PremiumUpsellActionSheet" }).returnOnUpsellDismiss;
+                  let tmp20;
                   const tmp17 = openPremiumUpsellActionSheetDefault;
                   const SOUNDBOARD_EVERYWHERE = EntitlementFeatureNames.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE;
-                  let tmp20;
                   if (returnOnUpsellDismiss) {
                     tmp20 = arg0;
                   }
-                  tmp17(SOUNDBOARD_EVERYWHERE, undefined, undefined, tmp20);
+                  tmp17(SOUNDBOARD_EVERYWHERE, undefined, tmp20);
                 } else if (!guildId.available) {
                   const obj = { key: "DISABLED_SOUND_PRESSED", icon: AssetRegistryDefault, content: intl.string(intl3.t.MDOXJR), toastDurationMs: 3000 };
                   const open = ToastActionCreatorsDefault.open;
@@ -213,13 +213,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, guild_id)
               if (tmp) {
                 const SoundboardSoundPreviewMenuExperiment = SoundboardSoundPreviewMenuExperiment2.SoundboardSoundPreviewMenuExperiment;
                 const returnOnUpsellDismiss = SoundboardSoundPreviewMenuExperiment.getConfig({ location: "PremiumUpsellActionSheet" }).returnOnUpsellDismiss;
+                let tmp20;
                 const tmp17 = openPremiumUpsellActionSheetDefault;
                 const SOUNDBOARD_EVERYWHERE = EntitlementFeatureNames.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE;
-                let tmp20;
                 if (returnOnUpsellDismiss) {
                   tmp20 = arg0;
                 }
-                tmp17(SOUNDBOARD_EVERYWHERE, undefined, undefined, tmp20);
+                tmp17(SOUNDBOARD_EVERYWHERE, undefined, tmp20);
               } else if (!guildId.available) {
                 const obj = { key: "DISABLED_SOUND_PRESSED", icon: AssetRegistryDefault, content: intl.string(intl3.t.MDOXJR), toastDurationMs: 3000 };
                 const open = ToastActionCreatorsDefault.open;
@@ -248,14 +248,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, guild_id)
       tmp11 = tmp13;
     }
   }
-  const tmpResult2 = tmp(6857);
+  const tmpResult2 = tmp(7046);
   const result1 = tmpResult2.canUseSoundboardSound(stateFromStores, guildId, guild_id);
   cResult[2] = guild_id;
   cResult[3] = stateFromStores;
   cResult[4] = guildId;
   cResult[5] = result1;
   tmp8 = result1;
-}) : ((guildId, guild_id) => {
+}) : (function useSoundboardSoundLock(guildId, guild_id) {
   let closure_1;
   let currentUser;
   _require = guildId;
@@ -281,13 +281,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, guild_id)
     if (tmp) {
       const SoundboardSoundPreviewMenuExperiment = SoundboardSoundPreviewMenuExperiment2.SoundboardSoundPreviewMenuExperiment;
       const returnOnUpsellDismiss = SoundboardSoundPreviewMenuExperiment.getConfig({ location: "PremiumUpsellActionSheet" }).returnOnUpsellDismiss;
+      let tmp20;
       const tmp17 = openPremiumUpsellActionSheetDefault;
       const SOUNDBOARD_EVERYWHERE = EntitlementFeatureNames.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE;
-      let tmp20;
       if (returnOnUpsellDismiss) {
         tmp20 = arg0;
       }
-      tmp17(SOUNDBOARD_EVERYWHERE, undefined, undefined, tmp20);
+      tmp17(SOUNDBOARD_EVERYWHERE, undefined, tmp20);
     } else if (!guildId.available) {
       const obj = { key: "DISABLED_SOUND_PRESSED", icon: AssetRegistryDefault, content: intl.string(intl3.t.MDOXJR), toastDurationMs: 3000 };
       const open = ToastActionCreatorsDefault.open;

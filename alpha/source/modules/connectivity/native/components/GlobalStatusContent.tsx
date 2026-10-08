@@ -1,26 +1,26 @@
-// Module ID: 9626
-// Function ID: 9627
+// Module ID: 10818
+// Function ID: 10819
 // Name: GlobalStatusContent
-// Dependencies: [19, 17, 2051, 2074, 4919, 4914, 9621, 1085, 21, 4896, 587, 558, 576, 9458, 504, 9118, 9619, 4797, 4735, 5919, 4742, 9092, 1369, 1618, 9096, 9627, 2]
+// Dependencies: [19, 17, 2063, 2086, 5108, 5110, 10814, 1085, 21, 5090, 587, 558, 576, 9109, 504, 10691, 10812, 4991, 4929, 8302, 4936, 10669, 1381, 1630, 10340, 10819, 2]
 
-// Module 9626 (GlobalStatusContent)
+// Module 10818 (GlobalStatusContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import useThemeDefault from "useTheme" /* 4797 */;
-import StatusBarDefault from "StatusBar" /* 9096 */;
-import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 9118 */;
-import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 9458 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 9619 */;
-import ConnectivityConstants from "ConnectivityConstants" /* 9621 */;
-import GlobalStageChannelStatusDefault from "GlobalStageChannelStatus" /* 9627 */;
+import useThemeDefault from "useTheme" /* 4991 */;
+import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 9109 */;
+import StatusBarDefault from "StatusBar" /* 10340 */;
+import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 10691 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 10812 */;
+import ConnectivityConstants from "ConnectivityConstants" /* 10814 */;
+import GlobalStageChannelStatusDefault from "GlobalStageChannelStatus" /* 10819 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
-import SessionsStore from "SessionsStore" /* 4914 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
+import SessionsStore from "SessionsStore" /* 5110 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,8 +32,8 @@ let obj2;
 let obj3;
 let tmp2;
 let unpackModuleId;
-const useSafeAreaInsetsDefault = tmp2(1618);
-const ChannelCallModalDefault = tmp2(9092);
+const useSafeAreaInsetsDefault = tmp2(1630);
+const ChannelCallModalDefault = tmp2(10669);
 const View = react_native.View;
 const RTC_PANEL_HEIGHT = ConnectivityConstants.RTC_PANEL_HEIGHT;
 const RTCConnectionStates = Constants.RTCConnectionStates;
@@ -44,7 +44,7 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.unsafe_rawColors.GREEN_360 };
 let closure_12 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectivityGlobalStatusContent() {
   let channel;
   let closure_0;
   let first;
@@ -180,7 +180,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               let isModalOpenResult = isScreenLandscape;
               if (isModalOpenResult) {
                 const tmpResult7 = require("NavigationRouteUtils");
-                isModalOpenResult = tmpResult7.isModalOpen(tmp5(9092));
+                isModalOpenResult = tmpResult7.isModalOpen(tmp5(10669));
               }
               if (isModalOpenResult) {
                 const tmpResult8 = require("PlatformUtils");
@@ -194,7 +194,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
             let num11 = 0;
             if (!tmp28) {
-              num11 = tmp5(1618)().top;
+              num11 = tmp5(1630)().top;
             }
             const tmp30 = tmp22 ? tmp4.bg : tmp4.bgNeutral;
             const sum = RTC_PANEL_HEIGHT + num11;
@@ -280,7 +280,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[13] = rtcConnectionState;
   cResult[14] = obj5;
   tmp26 = obj5;
-}) : (() => {
+}) : (function ConnectivityGlobalStatusContent() {
   let closure_0;
   let guild;
   let items2;

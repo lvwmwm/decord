@@ -1,27 +1,27 @@
-// Module ID: 14457
-// Function ID: 14458
+// Module ID: 14684
+// Function ID: 14685
 // Name: UserProfileDisplayNameStylesEditButton
-// Dependencies: [32, 19, 17, 1085, 2048, 21, 4896, 587, 558, 576, 1490, 9404, 2036, 6901, 7848, 5312, 10649, 1396, 1252, 1126, 14458, 1188, 13030, 10646, 14459, 2911, 14461, 2]
+// Dependencies: [32, 19, 17, 1085, 2060, 21, 5090, 587, 558, 576, 1502, 14685, 2048, 7090, 8266, 5624, 10249, 1408, 1264, 1126, 14686, 1200, 13308, 10246, 14687, 2955, 14689, 2]
 
-// Module 14457 (UserProfileDisplayNameStylesEditButton)
+// Module 14684 (UserProfileDisplayNameStylesEditButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13030 */;
-import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 14458 */;
-import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 14459 */;
+import native from "native" /* 1200 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13308 */;
+import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 14686 */;
+import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 14687 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let navigateResult, obj1, obj4, tmp13, tmp15, tmp16, tmp2, tmp8, trackResult, user;
+let navigateResult, obj1, obj4, tmp13, tmp15, tmp16, tmp2, tmp8, trackResult;
 
 let closure_4;
 let hasOwnProperty;
@@ -41,7 +41,7 @@ size = { height: 48, width: 48, borderRadius: nativeDefault.radii.xs, background
 createStyles = createStyles.createStyles;
 obj2 = { tintColor: nativeDefault.colors.TEXT_SUBTLE };
 let closure_11 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileDisplayNameStylesEditButton(user) {
   let closure_3;
   let first;
   let isTryItOut;
@@ -927,7 +927,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[4] = user.id;
   cResult[5] = obj6;
   tmp12 = obj6;
-}) : ((user) => {
+}) : (function UserProfileDisplayNameStylesEditButton(user) {
   let closure_3;
   let first;
   let items1;

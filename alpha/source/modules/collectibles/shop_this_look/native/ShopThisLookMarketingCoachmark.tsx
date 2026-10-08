@@ -1,32 +1,30 @@
-// Module ID: 12828
-// Function ID: 12829
+// Module ID: 12975
+// Function ID: 12976
 // Name: ShopThisLookMarketingCoachmark
-// Dependencies: [19, 17, 2048, 6714, 21, 4896, 558, 576, 12829, 12823, 1126, 9895, 2]
+// Dependencies: [19, 17, 2060, 6891, 21, 5090, 558, 576, 12976, 12970, 1126, 9375, 2]
 
-// Module 12828 (ShopThisLookMarketingCoachmark)
+// Module 12975 (ShopThisLookMarketingCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import Constants from "Constants" /* 6714 */;
-import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 12823 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import Constants from "Constants" /* 6891 */;
+import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 12970 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let visible;
-
 let tmp;
-const BumpingFistsSpotIllustration = tmp(12829);
+const BumpingFistsSpotIllustration = tmp(12976);
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const UserProfileThemeTypes = Constants.UserProfileThemeTypes;
 const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ imageContainer: { alignItems: "center", justifyContent: "center" } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopThisLookMarketingCoachmarkImage() {
   let first;
   let tmp8;
   const obj = react2;
@@ -48,9 +46,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[2];
   }
   return tmp8;
-}) : (() => <View style={closure_7().imageContainer}>{jsx(BumpingFistsSpotIllustration.BumpingFistsSpotIllustration, { width: 100, height: 56, resizeMode: "contain" })}</View>);
+}) : (function ShopThisLookMarketingCoachmarkImage() {
+  return <View style={closure_7().imageContainer}>{jsx(BumpingFistsSpotIllustration.BumpingFistsSpotIllustration, { width: 100, height: 56, resizeMode: "contain" })}</View>;
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopThisLookMarketingCoachmark(visible) {
   let constants2;
   let onDismiss;
   let tmp10;
@@ -64,30 +64,25 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   let closure_3 = onPress.useRef(false);
   if (cResult[0] === onDismiss) {
     let tmp4;
+    let tmp5;
     let tmp7;
     let tmp6;
     if (cResult[1] === onPress) {
       tmp4 = cResult[2];
     }
     if (cResult[3] !== onDismiss) {
-      class E {
-        constructor() {
-          closure_3.current = true;
-          onDismiss(ContentDismissActionType.USER_DISMISS);
-        }
-      }
+      const fn2 = function p() {
+        closure_3.current = true;
+        onDismiss(ContentDismissActionType.USER_DISMISS);
+      };
       cResult[3] = onDismiss;
-      cResult[4] = E;
+      cResult[4] = fn2;
+      tmp5 = fn2;
     } else {
-      class E {
-        constructor() {
-          closure_3.current = true;
-          onDismiss(ContentDismissActionType.USER_DISMISS);
-        }
-      }
+      tmp5 = cResult[4];
     }
     if (cResult[5] !== visible) {
-      class I {
+      class E {
         constructor() {
           const tmp = visible;
           if (tmp) {
@@ -98,12 +93,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
       }
       const items = [visible];
       cResult[5] = visible;
-      cResult[6] = I;
+      cResult[6] = E;
       cResult[7] = items;
       tmp7 = items;
-      tmp6 = I;
+      tmp6 = E;
     } else {
-      class I {
+      class E {
         constructor() {
           const tmp = visible;
           if (tmp) {
@@ -120,7 +115,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
       let tmp13;
       let tmp18;
       let tmp17;
-      class I {
+      class E {
         constructor() {
           const tmp = visible;
           if (tmp) {
@@ -132,7 +127,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
       const effect1 = obj2.useEffect(tmp9, tmp10);
       const _Symbol = Symbol;
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-        class I {
+        class E {
           constructor() {
             const tmp = visible;
             if (tmp) {
@@ -149,7 +144,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
         tmp14 = stringResult1;
         tmp13 = stringResult;
       } else {
-        class I {
+        class E {
           constructor() {
             const tmp = visible;
             if (tmp) {
@@ -162,7 +157,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
       }
       const _Symbol2 = Symbol;
       if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-        class L {
+        class D {
           constructor() {
             return <closure_1_8 />;
           }
@@ -170,11 +165,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
         const intl2 = tmp(tmp2[10]).intl;
         const stringResult2 = intl2.string(tmp(onDismiss[10]).t["bqZVd/"]);
         cResult[14] = stringResult2;
-        cResult[15] = L;
-        tmp18 = L;
+        cResult[15] = D;
+        tmp18 = D;
         tmp17 = stringResult2;
       } else {
-        class L {
+        class D {
           constructor() {
             return <closure_1_8 />;
           }
@@ -182,7 +177,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
         tmp18 = cResult[15];
       }
       if (cResult[16] === tmp4) {
-        class L {
+        class D {
           constructor() {
             return <closure_1_8 />;
           }
@@ -194,7 +189,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
       cResult[18] = visible;
       cResult[19] = obj4;
     }
-    const fn2 = function f() {
+    const fn3 = function _() {
       let ref;
       return visible ? (() => {
         const obj = visible(onDismiss[9]);
@@ -207,10 +202,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
     const items1 = [visible, onDismiss];
     cResult[8] = onDismiss;
     cResult[9] = visible;
-    cResult[10] = fn2;
+    cResult[10] = fn3;
     cResult[11] = items1;
     tmp10 = items1;
-    tmp9 = fn2;
+    tmp9 = fn3;
   }
   const fn = function u() {
     closure_3.current = true;
@@ -223,7 +218,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   cResult[1] = onPress;
   cResult[2] = fn;
   tmp4 = fn;
-}) : ((visible) => {
+}) : (function ShopThisLookMarketingCoachmark(visible) {
   visible = visible.visible;
   const onDismiss = visible.onDismiss;
   const onPress = visible.onPress;

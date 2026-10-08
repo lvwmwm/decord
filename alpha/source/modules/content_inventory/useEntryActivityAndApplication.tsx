@@ -1,19 +1,19 @@
-// Module ID: 12838
-// Function ID: 12839
+// Module ID: 12985
+// Function ID: 12986
 // Name: useEntryActivityAndApplication
-// Dependencies: [32, 2050, 12839, 558, 576, 504, 6670, 2]
+// Dependencies: [32, 2062, 12986, 558, 576, 504, 6847, 2]
 
-// Module 12838 (useEntryActivityAndApplication)
+// Module 12985 (useEntryActivityAndApplication)
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import ContentInventoryActivityStore from "ContentInventoryActivityStore" /* 12839 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
+import ContentInventoryActivityStore from "ContentInventoryActivityStore" /* 12986 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((extra) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEntryActivityAndApplication(extra) {
   let first;
   let first1;
   let tmp6;
@@ -53,7 +53,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((extra) => {
     if (cResult[4] === application_id1) {
       tmp10 = cResult[5];
     }
-    const tmp13 = _slicedToArray(first1(6670)(tmp10), 2);
+    const tmp13 = _slicedToArray(first1(6847)(tmp10), 2);
     first1 = tmp13[0];
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
@@ -124,7 +124,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((extra) => {
   cResult[4] = application_id1;
   cResult[5] = items2;
   tmp10 = items2;
-}) : ((extra) => {
+}) : (function useEntryActivityAndApplication(extra) {
   let activityApplication;
   let items2;
   let tmp10;
@@ -135,7 +135,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((extra) => {
   const stateFromStores = obj.useStateFromStores(items, () => ContentInventoryActivityStore.getMatchingActivity(extra));
   let application_id;
   const tmp = _require;
-  const tmp4 = activityApplication(6670);
+  const tmp4 = activityApplication(6847);
   if (stateFromStores != null) {
     application_id = stateFromStores.application_id;
   }

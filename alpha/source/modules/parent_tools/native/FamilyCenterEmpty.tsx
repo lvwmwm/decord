@@ -1,30 +1,28 @@
-// Module ID: 14740
-// Function ID: 14741
+// Module ID: 15001
+// Function ID: 15002
 // Name: FamilyCenterEmpty
-// Dependencies: [19, 17, 21, 4896, 558, 576, 14741, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 15002, 5086, 2]
 
-// Module 14740 (FamilyCenterEmpty)
+// Module 15001 (FamilyCenterEmpty)
 import react2 from "react" /* 576 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14741 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15002 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let text;
 
 let c3;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 ({ View: c3, Image: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ art: { marginBottom: 10, width: 243 }, empty: { display: "flex", alignItems: "center" } });
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterEmpty(text) {
   let items;
   let tmp10;
   let tmp5;
@@ -67,7 +65,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
   cResult[6] = tmp10;
   cResult[7] = tmp14;
   tmp13 = tmp14;
-}) : ((text) => {
+}) : (function FamilyCenterEmpty(text) {
   let items;
   text = text.text;
   const tmp = closure_7();

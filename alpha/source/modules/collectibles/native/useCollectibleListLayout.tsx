@@ -1,9 +1,9 @@
-// Module ID: 13028
-// Function ID: 13029
+// Module ID: 13306
+// Function ID: 13307
 // Name: useCollectibleListLayout
 // Dependencies: [32, 19, 558, 576, 2]
 
-// Module 13028 (useCollectibleListLayout)
+// Module 13306 (useCollectibleListLayout)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 let c3;
 let closure_4;
 ({ useCallback: c3, useState: closure_4 } = react);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCollectibleListLayout() {
   let closure_129_0;
   let first;
   let tmp3;
@@ -23,7 +23,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   [tmp3, closure_129_0] = React3(0);
   _slicedToArray(React3(0), 2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function n(nativeEvent) {
+    const fn = function l(nativeEvent) {
       closure_1_0((nativeEvent.nativeEvent.layout.width - 64) / 3);
     };
     cResult[0] = fn;
@@ -40,7 +40,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[2];
   }
   return tmp5;
-}) : (() => {
+}) : (function useCollectibleListLayout() {
   const tmp = _slicedToArray(React3(0), 2);
   let closure_0 = tmp[1];
   const obj = {

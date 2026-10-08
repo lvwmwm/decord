@@ -1,36 +1,37 @@
-// Module ID: 12446
-// Function ID: 12447
+// Module ID: 12542
+// Function ID: 12543
 // Name: ThreadBrowserHooks
-// Dependencies: [32, 19, 12447, 2051, 4515, 4911, 5699, 7275, 4517, 1096, 558, 576, 7420, 12, 1375, 504, 11, 7274, 7552, 2]
+// Dependencies: [32, 19, 12543, 2063, 4707, 6040, 6065, 7875, 4709, 1096, 558, 576, 7895, 12, 1387, 504, 11, 7874, 9263, 2]
 
-// Module 12446 (ThreadBrowserHooks)
+// Module 12542 (ThreadBrowserHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1096 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7274 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 7552 */;
-import ReportToModChannelStore from "ReportToModChannelStore" /* 12447 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7874 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 9263 */;
+import ReportToModChannelStore from "ReportToModChannelStore" /* 12543 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import ReadStateStore from "ReadStateStore" /* 4911 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 5699 */;
-import ArchivedThreadsStore from "ArchivedThreadsStore" /* 7275 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4517 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
+import ActiveThreadsStore_mod from "ActiveThreadsStore" /* 6065 */;
+import ArchivedThreadsStore from "ArchivedThreadsStore" /* 7875 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4709 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let current, dependencyMap, importDefault, obj1;
+let _require, current, dependencyMap, importDefault;
 
 let react = react_mod;
 let closure_5 = ReportToModChannelStore.useShouldShowResolvedFlagsForChannel;
+let ActiveThreadsStore = ActiveThreadsStore_mod;
 const Permissions = Constants.Permissions;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackThreadBrowserTab() {
   let tmp2;
   let tmp3;
   let obj = react2;
@@ -49,16 +50,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     [tmp2, tmp3] = cResult;
   }
   const effect = react.useEffect(tmp2, tmp3);
-}) : (() => {
+}) : (function useTrackThreadBrowserTab() {
   const effect = react.useEffect(() => {
     const obj = require("ThreadUtils");
     const result = obj.trackThreadBrowserTab();
   }, []);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActiveThreadIds(guild_id) {
   let first;
-  const _require = guild_id;
+  _require = guild_id;
   let tmp = _require;
   const obj = require("react");
   const cResult = obj.c(8);
@@ -141,9 +142,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
   cResult[4] = items1;
   tmp9 = items1;
   tmp8 = fn;
-}) : ((arg0) => {
+}) : (function useActiveThreadIds(arg0) {
   let closure_0;
-  const _require = arg0;
+  _require = arg0;
   let obj = require("get initialized");
   const items = [PermissionStore, ActiveThreadsStore, ChannelStore];
   const items1 = [, ];
@@ -174,8 +175,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
 });
 let closure_13 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  let _require;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActiveThreads(arg0) {
   let closure_0;
   let first;
   let tmp10;
@@ -223,10 +223,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = tmp11;
   cResult[6] = obj2;
   tmp12 = obj2;
-}) : ((arg0) => {
+}) : (function useActiveThreads(arg0) {
   let closure_0;
   const tmp = closure_13(arg0);
-  const _require = tmp;
+  _require = tmp;
   let obj = require("get initialized");
   const items = [JoinedThreadsStore];
   const items1 = [tmp];
@@ -237,13 +237,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return { joinedThreadIds: tmp2[0], unjoinedThreadIds: tmp2[1] };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActiveGuildThreads(arg0) {
   let closure_0;
   let first;
   let tmp11;
   let tmp8;
   let tmp9;
-  const _require = arg0;
+  _require = arg0;
   let tmp = _require;
   let obj = require("react");
   const cResult = obj.c(7);
@@ -325,9 +325,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return tmp11;
-}) : ((arg0) => {
+}) : (function useActiveGuildThreads(arg0) {
   let closure_0;
-  const _require = arg0;
+  _require = arg0;
   let obj = require("get initialized");
   const items = [PermissionStore, ActiveThreadsStore, ChannelStore];
   const items1 = [arg0];
@@ -361,15 +361,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((isModeratorReportChannel, sortOrder, tagFilter, tagSetting) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchivedThreads(isModeratorReportChannel, sortOrder, tagFilter, tagSetting) {
   let canLoadMore;
   let closure_4;
   let loading;
   let nextOffset;
+  let ref;
   let showResolvedFlags;
   let tmp4;
   let tmp6;
-  const _require = isModeratorReportChannel;
+  _require = isModeratorReportChannel;
   importDefault = sortOrder;
   dependencyMap = tagFilter;
   let tmp = _require;
@@ -417,22 +418,20 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((isModeratorReportCha
                     }
                     current = tmp10;
                     let obj3 = react;
-                    const ref = react.useRef(tmp10);
+                    ActiveThreadsStore = react.useRef(tmp10);
                     if (cResult[16] !== tmp10) {
-                      class F {
+                      class L {
                         constructor() {
-                          closure_9.current = closure_8;
-                          return;
+                          ref.current = current;
                         }
                       }
                       cResult[16] = tmp10;
-                      cResult[17] = F;
-                      tmp11 = F;
+                      cResult[17] = L;
+                      tmp11 = L;
                     } else {
-                      class F {
+                      class L {
                         constructor() {
-                          closure_9.current = closure_8;
-                          return;
+                          ref.current = current;
                         }
                       }
                     }
@@ -440,59 +439,50 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((isModeratorReportCha
                     if (cResult[18] !== isInitialLoad) {
                       class F {
                         constructor() {
-                          closure_9.current = closure_8;
-                          return;
+                          const tmp = isInitialLoad;
+                          if (tmp) {
+                            ref.current();
+                          }
                         }
                       }
                       cResult[18] = isInitialLoad;
-                      cResult[19] = tmp14;
+                      cResult[19] = F;
                     } else {
                       class F {
                         constructor() {
-                          closure_9.current = closure_8;
-                          return;
+                          const tmp = isInitialLoad;
+                          if (tmp) {
+                            ref.current();
+                          }
                         }
                       }
                     }
                     if (cResult[20] === isModeratorReportChannel.id) {
                       class F {
                         constructor() {
-                          closure_9.current = closure_8;
-                          return;
+                          const tmp = isInitialLoad;
+                          if (tmp) {
+                            ref.current();
+                          }
                         }
                       }
                     }
                     const items1 = [isModeratorReportChannel.id, , , , ];
-                    class M {
+                    class A {
                       constructor() {
-                        tmp = closure_0;
-                        canResult = closure_7.can(Permissions.READ_MESSAGE_HISTORY, closure_0);
-                        tmp3 = !canResult;
+                        const canResult = PermissionStore.can(Permissions.READ_MESSAGE_HISTORY, isModeratorReportChannel);
+                        let tmp3 = !canResult;
+                        const tmp = isModeratorReportChannel;
                         if (canResult) {
-                          tmp4 = closure_4;
-                          if (tmp4) {
-                            tmp5 = showResolvedFlags;
-                            tmp4 = !showResolvedFlags;
-                          }
-                          tmp3 = tmp4;
+                          tmp3 = closure_4 && !showResolvedFlags;
+                          const tmp4 = closure_4 && !showResolvedFlags;
                         }
                         if (!tmp3) {
-                          tmp6 = closure_1;
-                          tmp7 = closure_2;
-                          obj = closure_1(closure_2[17]);
-                          obj1 = { guildId: null, channelId: null, sortOrder: null, tagFilter: null, tagSetting: null, offset: null };
+                          const obj3 = { guildId: null, channelId: null, sortOrder, tagFilter, tagSetting, offset: nextOffset };
                           ({ guild_id: obj2.guildId, id: obj2.channelId } = tmp);
-                          tmp8 = closure_1;
-                          obj1.sortOrder = closure_1;
-                          tmp9 = closure_2;
-                          obj1.tagFilter = closure_2;
-                          tmp10 = closure_3;
-                          obj1.tagSetting = closure_3;
-                          tmp11 = nextOffset;
-                          obj1.offset = nextOffset;
-                          archivedThreads = obj.loadArchivedThreads(obj1);
+                          const obj = ThreadActionCreatorsDefault;
+                          const archivedThreads = obj.loadArchivedThreads(obj3);
                         }
-                        return;
                       }
                     }
                     items1[2] = tagFilter;
@@ -503,48 +493,28 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((isModeratorReportCha
                     cResult[22] = showResolvedFlags;
                     cResult[23] = sortOrder;
                     cResult[24] = tagFilter;
-                    class E {
-                      constructor() {
-                        obj = { loading: closure_10.isLoading(closure_0.id, closure_1, closure_2, closure_3), isInitialLoad: closure_10.getIsInitialLoad(closure_0.id, closure_1, closure_2, closure_3), canLoadMore: closure_10.getCanLoadMore(closure_0.id, closure_1, closure_2, closure_3), nextOffset: closure_10.getNextOffset(closure_0.id, closure_1, closure_2, closure_3) };
-                        return obj;
-                      }
-                    }
+                    cResult[25] = items1;
                   }
                 }
               }
             }
           }
         }
-        class M {
+        class A {
           constructor() {
-            tmp = closure_0;
-            canResult = closure_7.can(Permissions.READ_MESSAGE_HISTORY, closure_0);
-            tmp3 = !canResult;
+            const canResult = PermissionStore.can(Permissions.READ_MESSAGE_HISTORY, isModeratorReportChannel);
+            let tmp3 = !canResult;
+            const tmp = isModeratorReportChannel;
             if (canResult) {
-              tmp4 = closure_4;
-              if (tmp4) {
-                tmp5 = showResolvedFlags;
-                tmp4 = !showResolvedFlags;
-              }
-              tmp3 = tmp4;
+              tmp3 = closure_4 && !showResolvedFlags;
+              const tmp4 = closure_4 && !showResolvedFlags;
             }
             if (!tmp3) {
-              tmp6 = closure_1;
-              tmp7 = closure_2;
-              obj = closure_1(closure_2[17]);
-              obj1 = { guildId: null, channelId: null, sortOrder: null, tagFilter: null, tagSetting: null, offset: null };
+              const obj3 = { guildId: null, channelId: null, sortOrder, tagFilter, tagSetting, offset: nextOffset };
               ({ guild_id: obj2.guildId, id: obj2.channelId } = tmp);
-              tmp8 = closure_1;
-              obj1.sortOrder = closure_1;
-              tmp9 = closure_2;
-              obj1.tagFilter = closure_2;
-              tmp10 = closure_3;
-              obj1.tagSetting = closure_3;
-              tmp11 = nextOffset;
-              obj1.offset = nextOffset;
-              archivedThreads = obj.loadArchivedThreads(obj1);
+              const obj = ThreadActionCreatorsDefault;
+              const archivedThreads = obj.loadArchivedThreads(obj3);
             }
-            return;
           }
         }
         cResult[8] = isModeratorReportChannel;
@@ -554,37 +524,29 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((isModeratorReportCha
         cResult[12] = sortOrder;
         cResult[13] = tagFilter;
         cResult[14] = tagSetting;
-        class E {
-          constructor() {
-            obj = { loading: closure_10.isLoading(closure_0.id, closure_1, closure_2, closure_3), isInitialLoad: closure_10.getIsInitialLoad(closure_0.id, closure_1, closure_2, closure_3), canLoadMore: closure_10.getCanLoadMore(closure_0.id, closure_1, closure_2, closure_3), nextOffset: closure_10.getNextOffset(closure_0.id, closure_1, closure_2, closure_3) };
-            return obj;
-          }
-        }
-        cResult[15] = M;
-        tmp10 = M;
+        cResult[15] = A;
+        tmp10 = A;
       }
     }
   }
-  class E {
-    constructor() {
-      obj = { loading: closure_10.isLoading(closure_0.id, closure_1, closure_2, closure_3), isInitialLoad: closure_10.getIsInitialLoad(closure_0.id, closure_1, closure_2, closure_3), canLoadMore: closure_10.getCanLoadMore(closure_0.id, closure_1, closure_2, closure_3), nextOffset: closure_10.getNextOffset(closure_0.id, closure_1, closure_2, closure_3) };
-      return obj;
-    }
-  }
+  const fn = function _() {
+    const obj = { loading: ArchivedThreadsStore.isLoading(isModeratorReportChannel.id, sortOrder, tagFilter, tagSetting), isInitialLoad: ArchivedThreadsStore.getIsInitialLoad(isModeratorReportChannel.id, sortOrder, tagFilter, tagSetting), canLoadMore: ArchivedThreadsStore.getCanLoadMore(isModeratorReportChannel.id, sortOrder, tagFilter, tagSetting), nextOffset: ArchivedThreadsStore.getNextOffset(isModeratorReportChannel.id, sortOrder, tagFilter, tagSetting) };
+    return obj;
+  };
   cResult[3] = isModeratorReportChannel.id;
   cResult[4] = sortOrder;
   cResult[5] = tagFilter;
   cResult[6] = tagSetting;
-  cResult[7] = E;
-  tmp8 = E;
-}) : ((isModeratorReportChannel, sortOrder, tagFilter, tagSetting) => {
+  cResult[7] = fn;
+  tmp8 = fn;
+}) : (function useArchivedThreads(isModeratorReportChannel, sortOrder, tagFilter, tagSetting) {
   let callback;
   let items4;
   let loading;
   let nextOffset;
   let obj3;
   let showResolvedFlags;
-  const _require = isModeratorReportChannel;
+  _require = isModeratorReportChannel;
   dependencyMap = tagFilter;
   const result = isModeratorReportChannel.isModeratorReportChannel();
   react = result;

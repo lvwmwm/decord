@@ -1,12 +1,12 @@
-// Module ID: 13784
-// Function ID: 13785
+// Module ID: 14006
+// Function ID: 14007
 // Name: GuildBadgeWiltedFlower
-// Dependencies: [109, 19, 21, 558, 576, 13748, 8169, 2]
+// Dependencies: [109, 19, 21, 558, 576, 13970, 7550, 2]
 
-// Module 13784 (GuildBadgeWiltedFlower)
+// Module 14006 (GuildBadgeWiltedFlower)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 8169 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 13748 */;
+import inlineStyles from "inlineStyles" /* 7550 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 13970 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -23,7 +23,7 @@ let items = [{ base: 5, tint: 1 }, { base: 3, tint: 1 }, { base: 3, tint: 1 }];
 const secondaryBaseColors = ["#096A4C", "#2DC92D"];
 const secondaryTintLuminances = [0.25, 0.55];
 const items1 = [{ base: 5, tint: 1 }, { base: 3, tint: 1 }];
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgeWiltedFlower(arg0) {
   let height;
   let primaryColorsTransformed;
   let primaryTintColor;
@@ -179,7 +179,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj7 = { width: num7, height: num8, viewBox: "0 0 16 16", fill: "none", children: items };
-    const Svg = tmp(8169).Svg;
+    const Svg = tmp(7550).Svg;
     const merged = Object.assign(tmp5);
     items = [tmp17, tmp21, tmp24, tmp27, tmp30, tmp35, tmp38, tmp39];
     const tmp48 = hasOwnProperty(Svg, obj7);
@@ -201,7 +201,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = tmp6;
   cResult[8] = transformedBadgeColors;
   tmp12 = transformedBadgeColors;
-}) : ((width) => {
+}) : (function GuildBadgeWiltedFlower(width) {
   let primaryColorsTransformed;
   let primaryTintColor;
   let secondaryColorsTransformed;
@@ -240,7 +240,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj6 = { d: "M14 10v-1h1v2H12v-1h2ZM11 6h-1v2h-1v1h-1v-2h1V4h1v-1h1v3ZM13 4h1v5h-2v-1h-1v-2h1V3h1v1Z", fill: primaryColorsTransformed[2] };
   items[4] = React3(inlineStyles.Path, obj6);
   let first;
-  const Path2 = tmp2(8169).Path;
+  const Path2 = tmp2(7550).Path;
   if (secondaryColorsTransformed != null) {
     first = secondaryColorsTransformed[0];
   }

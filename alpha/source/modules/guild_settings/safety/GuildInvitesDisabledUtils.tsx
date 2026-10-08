@@ -1,11 +1,11 @@
-// Module ID: 12023
-// Function ID: 12024
+// Module ID: 12096
+// Function ID: 12097
 // Name: GuildInvitesDisabledUtils
-// Dependencies: [11173, 4515, 1085, 558, 576, 504, 2]
+// Dependencies: [11293, 4707, 1085, 558, 576, 504, 2]
 
-// Module 12023 (GuildInvitesDisabledUtils)
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11173 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+// Module 12096 (GuildInvitesDisabledUtils)
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11293 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ let closure_4;
 let hasOwnProperty;
 ({ GuildFeatures: closure_4, Permissions: hasOwnProperty } = Constants);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInvitesDisabledPermission(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -50,7 +50,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useInvitesDisabledPermission(arg0) {
   let closure_0;
   _require = arg0;
   const items = [PermissionStore];
@@ -63,7 +63,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_6 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(features) {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInvitesDisabled(features) {
   let first;
   let tmp6;
   _require = features;
@@ -137,7 +137,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(features) 
   cResult[4] = stateFromStores;
   cResult[5] = hasItem;
   tmp10 = hasItem;
-}) : (function(features) {
+}) : (function useInvitesDisabled(features) {
   _require = features;
   const items = [GuildIncidentsStore];
   const obj = require("get initialized");
@@ -176,10 +176,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(features) 
 });
 let closure_7 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowInvitesDisabledNotif(arg0) {
   const tmp = closure_6(arg0) && closure_7(arg0);
   return tmp;
-}) : ((arg0) => {
+}) : (function useShouldShowInvitesDisabledNotif(arg0) {
   const tmp = closure_6(arg0) && closure_7(arg0);
   return tmp;
 });

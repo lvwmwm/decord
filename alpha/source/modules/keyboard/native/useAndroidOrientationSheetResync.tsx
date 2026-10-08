@@ -1,16 +1,14 @@
-// Module ID: 11838
-// Function ID: 11839
+// Module ID: 11923
+// Function ID: 11924
 // Name: useAndroidOrientationSheetResync
-// Dependencies: [19, 558, 576, 1369, 2]
+// Dependencies: [19, 558, 576, 1381, 2]
 
-// Module 11838 (useAndroidOrientationSheetResync)
+// Module 11923 (useAndroidOrientationSheetResync)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let animatedIndex;
-
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((animatedIndex) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAndroidOrientationSheetResync(animatedIndex) {
   let _NumberResult;
   let bottomSheetRef;
   let obj = animatedIndex(bottomSheetRef[2]);
@@ -108,7 +106,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((animatedIndex) => 
   cResult[7] = items;
   tmp6 = items;
   tmp5 = fn;
-}) : ((animatedIndex) => {
+}) : (function useAndroidOrientationSheetResync(animatedIndex) {
   let _NumberResult;
   animatedIndex = animatedIndex.animatedIndex;
   let bottomSheetRef = animatedIndex.bottomSheetRef;

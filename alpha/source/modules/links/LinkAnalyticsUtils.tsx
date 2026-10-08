@@ -1,14 +1,14 @@
-// Module ID: 8061
-// Function ID: 8062
+// Module ID: 8470
+// Function ID: 8471
 // Name: LinkAnalyticsUtils
-// Dependencies: [1085, 8062, 1371, 5050, 1252, 2]
+// Dependencies: [1085, 7009, 1383, 5418, 1264, 2]
 
-// Module 8061 (LinkAnalyticsUtils)
+// Module 8470 (LinkAnalyticsUtils)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import URLUtilsDefault from "URLUtils" /* 1371 */;
-import LinkUtils from "LinkUtils" /* 5050 */;
-import ValidationUtilsDefault from "ValidationUtils" /* 8062 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import URLUtilsDefault from "URLUtils" /* 1383 */;
+import LinkUtils from "LinkUtils" /* 5418 */;
+import ValidationUtilsDefault from "ValidationUtils" /* 7009 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -115,7 +115,7 @@ let obj = {
       let tmp3 = obj.isDiscordUrl(value, true) || null != arg1;
       const obj2 = { is_discord_link: tmp3, discord_link_type: tmp6 };
       tmp6 = null;
-      const track = tmp(1252).track;
+      const track = tmp(1264).track;
       const LINK_CLICKED = AnalyticEvents.LINK_CLICKED;
       AnalyticsUtilsDefault;
       if (tmp3) {

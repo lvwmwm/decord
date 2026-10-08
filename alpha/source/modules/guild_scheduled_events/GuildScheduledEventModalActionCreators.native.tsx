@@ -1,21 +1,21 @@
-// Module ID: 9314
-// Function ID: 9315
-// Name: guild_scheduled_events/GuildScheduledEventModalActionCreators
-// Dependencies: [5, 2057, 9210, 4860, 9315, 1987, 9198, 9333, 2]
+// Module ID: 8489
+// Function ID: 8490
+// Name: GuildScheduledEventModalActionCreators
+// Dependencies: [5, 2069, 8490, 5054, 8491, 1999, 8496, 8758, 2]
 // Exports: openEndEventModal, transitionToEventDetailsFromInvite
 
-// Module 9314 (guild_scheduled_events/GuildScheduledEventModalActionCreators)
-import asyncRequire from "asyncRequire" /* 1987 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 9210 */;
+// Module 8489 (GuildScheduledEventModalActionCreators)
+import asyncRequire from "asyncRequire" /* 1999 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2069 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 8490 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_3;
 
 let tmp3;
-const ScheduleUtils = tmp3(9198);
+const ScheduleUtils = tmp3(8496);
 function openGuildEventDetails(arg0) {
   let event;
   let eventId;
@@ -26,7 +26,7 @@ function openGuildEventDetails(arg0) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   obj = { eventId, event, onCloseActionSheet: onClose, recurrenceId };
-  const tmp4 = asyncRequire(9315, dependencyMap.paths);
+  const tmp4 = asyncRequire(8491, dependencyMap.paths);
   const tmp5 = closure_5;
   if (recurrenceId == null) {
     const tmp3Result = ScheduleUtils;
@@ -106,5 +106,5 @@ export const transitionToEventDetailsFromInvite = function transitionToEventDeta
 export const openEndEventModal = function openEndEventModal(channel) {
   obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channel };
-  obj.openLazy(asyncRequire(9333, dependencyMap.paths), closure_4, obj2);
+  obj.openLazy(asyncRequire(8758, dependencyMap.paths), closure_4, obj2);
 };

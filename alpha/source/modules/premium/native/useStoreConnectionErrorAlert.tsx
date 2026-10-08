@@ -1,17 +1,17 @@
-// Module ID: 6933
-// Function ID: 6934
+// Module ID: 7122
+// Function ID: 7123
 // Name: useStoreConnectionErrorAlert
-// Dependencies: [19, 6931, 558, 576, 504, 5714, 1126, 2]
+// Dependencies: [19, 7120, 558, 576, 504, 5297, 1126, 2]
 
-// Module 6933 (useStoreConnectionErrorAlert)
+// Module 7122 (useStoreConnectionErrorAlert)
 import intl3 from "intl" /* 1126 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5714 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5297 */;
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 6931 */;
+import IAPStore from "IAPStore" /* 7120 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStoreConnectionErrorAlert() {
   let stateFromStores;
   let tmp4;
   let tmp5;
@@ -59,7 +59,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = cResult[4];
   }
   const effect = react.useEffect(tmp8, tmp9);
-}) : (() => {
+}) : (function useStoreConnectionErrorAlert() {
   let stateFromStores;
   let obj = stateFromStores(504);
   const items = [IAPStore];

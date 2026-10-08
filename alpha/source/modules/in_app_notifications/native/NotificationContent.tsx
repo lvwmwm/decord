@@ -1,16 +1,16 @@
-// Module ID: 12532
-// Function ID: 12533
+// Module ID: 12628
+// Function ID: 12629
 // Name: NotificationContent
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 12533, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 12629, 2]
 
-// Module 12532 (NotificationContent)
+// Module 12628 (NotificationContent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import MessageNotificationHeaderDefault from "MessageNotificationHeader" /* 12533 */;
+import MessageNotificationHeaderDefault from "MessageNotificationHeader" /* 12629 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let hasOwnProperty;
 let obj2;
 let obj3;
 let tmp;
-const MessageNotificationHeader = tmp(12533);
+const MessageNotificationHeader = tmp(12629);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -28,7 +28,7 @@ obj2 = { marginRight: nativeDefault.space.PX_8 };
 createStyles = createStyles.createStyles;
 obj3 = { padding: nativeDefault.space.PX_12, flexDirection: "row" };
 let closure_6 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotificationContent(arg0) {
   let accessoryLabelNode;
   let children;
   let header;
@@ -144,7 +144,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.iconContainer;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((arg0) => {
+}) : (function NotificationContent(arg0) {
   let accessoryLabelNode;
   let children;
   let header;

@@ -1,28 +1,28 @@
-// Module ID: 16258
-// Function ID: 16259
+// Module ID: 16518
+// Function ID: 16519
 // Name: FavoritesGuildSidebarHeader
-// Dependencies: [19, 17, 16166, 21, 4896, 587, 10049, 10719, 4860, 10053, 1987, 10052, 4892, 1126, 3395, 558, 576, 5871, 5892, 5862, 5600, 2]
+// Dependencies: [19, 17, 16426, 21, 5090, 587, 10294, 12698, 5054, 10298, 1999, 10297, 5086, 1126, 3439, 558, 576, 8183, 8204, 8174, 5373, 2]
 
-// Module 16258 (FavoritesGuildSidebarHeader)
+// Module 16518 (FavoritesGuildSidebarHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import _modDef3395 from "module_3395" /* 3395 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Stack_Stack from "Stack/Stack" /* 5600 */;
-import ChatIcon2 from "ChatIcon" /* 5862 */;
-import TextIcon2 from "TextIcon" /* 5871 */;
-import VoiceNormalIcon2 from "VoiceNormalIcon" /* 5892 */;
-import FavoritesHooks from "FavoritesHooks" /* 10049 */;
-import openFavoritesGuildLimitUpsell from "openFavoritesGuildLimitUpsell" /* 10052 */;
-import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 10719 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 16166 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import _modDef3439 from "module_3439" /* 3439 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Stack_Stack from "Stack/Stack" /* 5373 */;
+import ChatIcon2 from "ChatIcon" /* 8174 */;
+import TextIcon2 from "TextIcon" /* 8183 */;
+import VoiceNormalIcon2 from "VoiceNormalIcon" /* 8204 */;
+import FavoritesHooks from "FavoritesHooks" /* 10294 */;
+import openFavoritesGuildLimitUpsell from "openFavoritesGuildLimitUpsell" /* 10297 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 12698 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 16426 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ function EmptyBody() {
       openLazy(tmp5, openFavoritesGuildLimitUpsell.FAVORITES_UPSELL_SHEET_KEY, { source: "favorites_empty_sidebar" });
     }
   }, []);
-  let obj = { variant: "text-sm/medium", color: "text-muted", children: intl.format(_modDef3395.Z3Hdr5, { onClick: callback }) };
+  let obj = { variant: "text-sm/medium", color: "text-muted", children: intl.format(_modDef3439.Z3Hdr5, { onClick: callback }) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   return metroRequire(Text, obj);
@@ -70,7 +70,7 @@ obj7 = { width: nativeDefault.space.PX_80 };
 obj8 = { width: nativeDefault.space.PX_128 };
 let closure_10 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlaceholderRows() {
   let first;
   let items;
   let items1;
@@ -84,7 +84,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_10();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
-    const TextIcon = tmp(5871).TextIcon;
+    const TextIcon = tmp(8183).TextIcon;
     const tmp8 = metroRequire(TextIcon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -105,7 +105,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const _Symbol = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
         const obj3 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
-        const VoiceNormalIcon = tmp(5892).VoiceNormalIcon;
+        const VoiceNormalIcon = tmp(8204).VoiceNormalIcon;
         const tmp18 = metroRequire(VoiceNormalIcon, obj3);
         cResult[7] = tmp18;
         tmp15 = tmp18;
@@ -126,7 +126,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const _Symbol2 = Symbol;
           if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
             const obj4 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
-            const ChatIcon = tmp(5862).ChatIcon;
+            const ChatIcon = tmp(8174).ChatIcon;
             const tmp30 = metroRequire(ChatIcon, obj4);
             cResult[14] = tmp30;
             tmp27 = tmp30;
@@ -214,7 +214,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[2] = tmp4.placeholderBarShort;
   cResult[3] = tmp10;
   tmp9 = tmp10;
-}) : (() => {
+}) : (function PlaceholderRows() {
   let items;
   let items1;
   let items2;
@@ -254,7 +254,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return metroImportDefault(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGuildSidebarHeader() {
   let intl;
   let items;
   let items1;
@@ -273,8 +273,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { variant, color: "mobile-text-heading-primary", children: intl.string(_modDef3395["1n0TGE"]) };
-      const Heading = tmp(4892).Heading;
+      const obj2 = { variant, color: "mobile-text-heading-primary", children: intl.string(_modDef3439["1n0TGE"]) };
+      const Heading = tmp(5086).Heading;
       intl = tmp(1126).intl;
       const tmp16 = metroRequire(Heading, obj2);
       const tmp18 = metroRequire(EmptyBody, {});
@@ -288,7 +288,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     if (cResult[5] !== tmp4.copy) {
       const obj3 = { spacing: nativeDefault.space.PX_8, style: tmp4.copy, children: items };
-      const Stack = tmp(5600).Stack;
+      const Stack = tmp(5373).Stack;
       items = [tmp11, tmp12];
       const tmp22 = metroImportDefault(Stack, obj3);
       cResult[5] = tmp4.copy;
@@ -312,7 +312,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       const obj4 = { spacing: nativeDefault.space.PX_8, children: items1 };
-      const Stack2 = tmp(5600).Stack;
+      const Stack2 = tmp(5373).Stack;
       items1 = [tmp6, tmp19, tmp23];
       const tmp33 = metroImportDefault(Stack2, obj4);
       cResult[10] = tmp6;
@@ -342,7 +342,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = tmp4.divider;
   cResult[2] = tmp7;
   tmp6 = tmp7;
-}) : (() => {
+}) : (function FavoritesGuildSidebarHeader() {
   let intl;
   let items;
   let items1;
@@ -358,9 +358,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   items = [tmp7, , ];
   const obj3 = { spacing: nativeDefault.space.PX_8, style: tmp.copy, children: items1 };
-  const Stack2 = tmp4(5600).Stack;
-  const obj4 = { variant, color: "mobile-text-heading-primary", children: intl.string(_modDef3395["1n0TGE"]) };
-  const Heading = tmp4(4892).Heading;
+  const Stack2 = tmp4(5373).Stack;
+  const obj4 = { variant, color: "mobile-text-heading-primary", children: intl.string(_modDef3439["1n0TGE"]) };
+  const Heading = tmp4(5086).Heading;
   intl = tmp4(1126).intl;
   items1 = [metroRequire(Heading, obj4), metroRequire(EmptyBody, {})];
   items[1] = metroImportDefault(Stack2, obj3);

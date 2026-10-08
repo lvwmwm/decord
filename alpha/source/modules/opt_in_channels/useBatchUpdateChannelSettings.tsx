@@ -1,15 +1,15 @@
-// Module ID: 11187
-// Function ID: 11188
+// Module ID: 11304
+// Function ID: 11305
 // Name: useBatchUpdateChannelSettings
-// Dependencies: [19, 6619, 5077, 1085, 584, 558, 576, 504, 6615, 11188, 11185, 2]
+// Dependencies: [19, 6796, 5971, 1085, 584, 558, 576, 504, 6792, 11305, 11302, 2]
 
-// Module 11187 (useBatchUpdateChannelSettings)
+// Module 11304 (useBatchUpdateChannelSettings)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 6615 */;
+import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 6792 */;
 import react from "react" /* 19 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 6619 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 6796 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let _require, set;
 
 const AnalyticsSections = Constants.AnalyticsSections;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBatchUpdateChannelSettings(guildId) {
   let channelOptedIn;
   let collapsed;
   let first;
@@ -149,7 +149,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[9] = items2;
   tmp12 = items2;
   tmp11 = C;
-}) : ((guildId) => {
+}) : (function useBatchUpdateChannelSettings(guildId) {
   let channelOptedIn;
   let collapsed;
   _require = guildId;

@@ -1,14 +1,14 @@
-// Module ID: 9613
-// Function ID: 9614
+// Module ID: 10806
+// Function ID: 10807
 // Name: useIsVoiceChannelFull
-// Dependencies: [2074, 4515, 4915, 1096, 558, 576, 504, 5041, 2]
+// Dependencies: [2086, 4707, 5111, 1096, 558, 576, 504, 5410, 2]
 
-// Module 9613 (useIsVoiceChannelFull)
+// Module 10806 (useIsVoiceChannelFull)
 import Constants from "Constants" /* 1096 */;
-import ChannelUtils from "ChannelUtils" /* 5041 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import VoiceStateStore from "VoiceStateStore" /* 4915 */;
+import ChannelUtils from "ChannelUtils" /* 5410 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import VoiceStateStore from "VoiceStateStore" /* 5111 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let _require;
 
 const Permissions = Constants.Permissions;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVoiceChannelLocked(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -35,7 +35,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function s() {
+    const fn = function t() {
       const tmp2 = null == closure_0 || !PermissionStore.can(Permissions.CONNECT, tmp);
       return tmp2;
     };
@@ -51,7 +51,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useIsVoiceChannelLocked(arg0) {
   let closure_0;
   _require = arg0;
   const items = [PermissionStore];
@@ -63,7 +63,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVoiceChannelFull(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -79,7 +79,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function s() {
+    const fn = function t() {
       const obj = ChannelUtils;
       return obj.isChannelFull(closure_0, VoiceStateStore, GuildStore);
     };
@@ -91,7 +91,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7);
-}) : ((arg0) => {
+}) : (function useIsVoiceChannelFull(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");

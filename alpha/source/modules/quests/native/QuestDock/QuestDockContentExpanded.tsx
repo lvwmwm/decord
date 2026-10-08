@@ -1,17 +1,17 @@
-// Module ID: 15003
-// Function ID: 15004
+// Module ID: 15265
+// Function ID: 15266
 // Name: QuestDockContentExpanded
-// Dependencies: [19, 17, 5630, 14912, 21, 4896, 558, 576, 14913, 9786, 4618, 14911, 5604, 6577, 2]
+// Dependencies: [19, 17, 5977, 15174, 21, 5090, 558, 576, 15175, 10350, 4810, 15173, 5374, 6753, 2]
 
-// Module 15003 (QuestDockContentExpanded)
+// Module 15265 (QuestDockContentExpanded)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import spring from "spring" /* 5604 */;
-import QuestConstants from "QuestConstants" /* 5630 */;
-import QuestDockUtils from "QuestDockUtils" /* 14911 */;
-import QuestDockConstants from "QuestDockConstants" /* 14912 */;
+import spring from "spring" /* 5374 */;
+import QuestConstants from "QuestConstants" /* 5977 */;
+import QuestDockUtils from "QuestDockUtils" /* 15173 */;
+import QuestDockConstants from "QuestDockConstants" /* 15174 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_7 = createStyles(obj);
 const __initData = { code: "function QuestDockContentExpandedTsx1(){const{expandedHeightMode,getQuestDockExpandedHeightLimits,windowDimensions,safeArea,expandedHeight,withSpring,activeQuestDockMode,QuestDockMode,QUEST_DOCK_MODE_CHANGE_PHYSICS,questDockWrapperSpecs}=this.__closure;return{height:expandedHeightMode===\"content\"?undefined:getQuestDockExpandedHeightLimits(windowDimensions.get().height,safeArea.get().top,expandedHeight).maxHeight,width:windowDimensions.get().width,opacity:withSpring(activeQuestDockMode.get()===QuestDockMode.EXPANDED?1:0,QUEST_DOCK_MODE_CHANGE_PHYSICS),transform:[{translateX:withSpring((questDockWrapperSpecs.get().width-windowDimensions.get().width)/2,QUEST_DOCK_MODE_CHANGE_PHYSICS)}]};}" };
 const __initData2 = { code: "function QuestDockContentExpandedTsx2(){const{expandedHeightMode,getQuestDockExpandedHeightLimits,windowDimensions,safeArea,expandedHeight,withSpring,activeQuestDockMode,QuestDockMode,QUEST_DOCK_MODE_CHANGE_PHYSICS,questDockWrapperSpecs}=this.__closure;return{height:expandedHeightMode==='content'?undefined:getQuestDockExpandedHeightLimits(windowDimensions.get().height,safeArea.get().top,expandedHeight).maxHeight,width:windowDimensions.get().width,opacity:withSpring(activeQuestDockMode.get()===QuestDockMode.EXPANDED?1:0,QUEST_DOCK_MODE_CHANGE_PHYSICS),transform:[{translateX:withSpring((questDockWrapperSpecs.get().width-windowDimensions.get().width)/2,QUEST_DOCK_MODE_CHANGE_PHYSICS)}]};}" };
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((expandedHeight) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockContentExpanded(expandedHeight) {
   let activeQuestDockMode;
   let children;
   let closure_5;
@@ -111,7 +111,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((e
   cResult[1] = animatedStyle;
   cResult[2] = items;
   tmp8 = items;
-}) : ((expandedHeightMode) => {
+}) : (function QuestDockContentExpanded(expandedHeightMode) {
   let activeQuestDockMode;
   let closure_5;
   let questDockWrapperSpecs;

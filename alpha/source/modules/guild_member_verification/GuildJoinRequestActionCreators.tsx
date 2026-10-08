@@ -1,17 +1,17 @@
-// Module ID: 5938
-// Function ID: 5939
+// Module ID: 6121
+// Function ID: 6122
 // Name: GuildJoinRequestActionCreators
-// Dependencies: [5, 2055, 5939, 4706, 1085, 4708, 584, 1282, 5940, 5714, 1126, 5575, 2]
+// Dependencies: [5, 2067, 6122, 4900, 1085, 4902, 584, 1294, 6123, 5297, 1126, 5885, 2]
 
-// Module 5938 (GuildJoinRequestActionCreators)
+// Module 6121 (GuildJoinRequestActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4706 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4708 */;
-import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 5940 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import ChannelRecord from "ChannelRecord" /* 2067 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4900 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4902 */;
+import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 6123 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5939 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6122 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -614,6 +614,7 @@ obj = function _fetchJoinRequestForInterview() {
 obj = function _createOrEnterJoinRequestInterview() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let obj11;
+    let tmp;
     let closure_0 = arg0;
     let closure_1 = value;
     if (c5 === 2) {

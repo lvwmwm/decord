@@ -1,15 +1,15 @@
-// Module ID: 16517
-// Function ID: 16518
+// Module ID: 16777
+// Function ID: 16778
 // Name: useMainTabsChannelScreenStyles
-// Dependencies: [19, 17, 4896, 587, 558, 576, 4618, 2]
+// Dependencies: [19, 17, 5090, 587, 558, 576, 4810, 2]
 
-// Module 16517 (useMainTabsChannelScreenStyles)
+// Module 16777 (useMainTabsChannelScreenStyles)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ const merged1 = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 let closure_3 = createStyles(obj);
 let __initData = { code: "function useMainTabsChannelScreenStylesTsx1(){const{freezeValue,isDragging,translateX,maxWidth,elevationStyle,isCompletelyCovered}=this.__closure;var _freezeValue,_isCompletelyCovered;(_freezeValue=freezeValue)===null||_freezeValue===void 0||_freezeValue.get();const showBorder=isDragging.get()||translateX.get()!==0&&translateX.get()!==maxWidth;return{transform:[{translateX:translateX.get()}],shadowOpacity:showBorder?elevationStyle.shadowOpacity:0,elevation:showBorder?elevationStyle.elevation:0,opacity:(_isCompletelyCovered=isCompletelyCovered)!==null&&_isCompletelyCovered!==void 0&&_isCompletelyCovered.get()?0:1};}" };
 let __initData2 = { code: "function useMainTabsChannelScreenStylesTsx2(){const{freezeValue,isDragging,translateX,maxWidth,elevationStyle,isCompletelyCovered}=this.__closure;var _freezeValue,_isCompletelyCovered;(_freezeValue=freezeValue)===null||_freezeValue===void 0||_freezeValue.get();const showBorder=isDragging.get()||translateX.get()!==0&&translateX.get()!==maxWidth;return{transform:[{translateX:translateX.get()}],shadowOpacity:showBorder?elevationStyle.shadowOpacity:0,elevation:showBorder?elevationStyle.elevation:0,opacity:(_isCompletelyCovered=isCompletelyCovered)!==null&&_isCompletelyCovered!==void 0&&_isCompletelyCovered.get()?0:1};}" };
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDragging, translateX, maxWidth, isCompletelyCovered, freezeValue) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainTabsChannelScreenStyles(isDragging, translateX, maxWidth, isCompletelyCovered, freezeValue) {
   let closure_0 = isDragging;
   let closure_1 = translateX;
   let closure_2 = maxWidth;
@@ -91,7 +91,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDragging, transl
   cResult[1] = tmp2.elevation;
   cResult[2] = items;
   tmp4 = items;
-}) : ((isDragging, translateX, maxWidth, isCompletelyCovered, freezeValue) => {
+}) : (function useMainTabsChannelScreenStyles(isDragging, translateX, maxWidth, isCompletelyCovered, freezeValue) {
   let closure_0 = isDragging;
   let closure_1 = translateX;
   let closure_2 = maxWidth;

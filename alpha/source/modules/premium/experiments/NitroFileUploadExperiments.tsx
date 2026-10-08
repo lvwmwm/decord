@@ -1,13 +1,13 @@
-// Module ID: 7257
-// Function ID: 7258
+// Module ID: 7733
+// Function ID: 7734
 // Name: NitroFileUploadExperiments
-// Dependencies: [1379, 1440, 558, 576, 2]
+// Dependencies: [1391, 1452, 558, 576, 2]
 // Exports: getNitroFileUploadLimitBytes, getNitroFileUploadRolloutConfig, getNitroFileUploadRolloutCopy
 
-// Module 7257 (NitroFileUploadExperiments)
+// Module 7733 (NitroFileUploadExperiments)
 import react from "react" /* 576 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1440 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ ApexExperiment = ApexExperiment_mod;
 const obj3 = { name: "2026-09-non-nitro-file-upload-marketing", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
 let closure_6 = ApexExperiment.createApexExperiment(obj3);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNitroFileUploadRolloutEnabled(arg0) {
   let tmp3;
   let tmp = arg0;
   const obj = react;
@@ -42,7 +42,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp3 = cResult[1];
   }
   return closure_5.useConfig(tmp3).enabled;
-}) : ((arg0) => {
+}) : (function useNitroFileUploadRolloutEnabled(arg0) {
   let _location = arg0;
   const useConfig = closure_5.useConfig;
   if (arg0 == null) {
@@ -63,7 +63,7 @@ function getNitroFileUploadRolloutConfig(arg0) {
   }
   return getConfig({ location: _location });
 }
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNonNitroFileUploadMarketingEnabled(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -76,7 +76,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_6.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useNonNitroFileUploadMarketingEnabled(location) {
   const obj = { location };
   return closure_6.useConfig(obj).enabled;
 });

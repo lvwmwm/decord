@@ -1,33 +1,32 @@
-// Module ID: 12277
-// Function ID: 12278
+// Module ID: 12356
+// Function ID: 12357
 // Name: UserSettingsAuthedAppDeleteWarningModal
-// Dependencies: [21, 558, 576, 11161, 1126, 12278, 9472, 5720, 2]
+// Dependencies: [21, 558, 576, 11283, 1126, 12357, 10485, 5303, 2]
 
-// Module 12277 (UserSettingsAuthedAppDeleteWarningModal)
+// Module 12356 (UserSettingsAuthedAppDeleteWarningModal)
 import intl7 from "intl" /* 1126 */;
-import InfoBox from "InfoBox" /* 9472 */;
-import isSocialLayerApplication from "isSocialLayerApplication" /* 11161 */;
-import shouldWarnAuthorizedAppTwoWayDefault from "shouldWarnAuthorizedAppTwoWay" /* 12278 */;
+import InfoBox from "InfoBox" /* 10485 */;
+import isSocialLayerApplication from "isSocialLayerApplication" /* 11283 */;
+import shouldWarnAuthorizedAppTwoWayDefault from "shouldWarnAuthorizedAppTwoWay" /* 12357 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const InfoBoxDefault = InfoBox;
-let _require, obj1, tmp3Result, tmp3Result1, tmp5, tmp8;
+let _require;
 
 let c3;
 let closure_4;
 let hasOwnProperty;
 ({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = Fragment);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsAuthedAppDeleteWarningModal(arg0) {
   let application;
   let closure_0;
-  let intl3;
+  let intl4;
   let items;
   let onDelete;
   let scopes;
-  let tmp9;
   let tmp = _require;
   let tmp2 = dependencyMap;
   let obj = require("react");
@@ -35,7 +34,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ application, scopes, onDelete } = arg0);
   if (cResult[0] === application) {
     let tmp4;
-    let tmp7Result;
+    let formatToPlainStringResult1;
     if (cResult[1] === scopes) {
       tmp4 = cResult[2];
     }
@@ -47,659 +46,151 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp6 = cResult[5];
       }
       if (cResult[6] === application.name) {
+        let tmp8;
         let tmp10;
         if (cResult[7] === tmp4) {
-          tmp10 = cResult[8];
+          tmp8 = cResult[8];
         }
         if (cResult[9] !== tmp4) {
-          class S {
-            constructor(arg0) {
-              tmp3 = closure_1;
-              tmp4 = closure_2;
-              tmp = jsxs;
-              tmp2 = Fragment;
-              tmp5 = closure_1(closure_2[5])(arg0.id);
-              if (tmp5) {
-                tmp6 = jsx;
-                obj = { children: null };
-                tmp8 = closure_0;
-                tmp3Result = tmp3(tmp4[6]);
-                intl = closure_0(tmp4[4]).intl;
-                obj1 = { applicationName: null };
-                obj1.applicationName = arg0.name;
-                obj.children = intl.format(closure_0(tmp4[4]).t.KRnERi, obj1);
-                tmp5 = jsx(tmp3Result, obj);
-              }
-              items = [, ];
-              items[0] = tmp5;
-              tmp9 = closure_0;
-              if (tmp9) {
-                tmp10 = jsx;
-                obj4 = { look: null, children: null };
-                tmp12 = closure_0;
-                tmp3Result1 = tmp3(tmp4[6]);
-                obj4.look = closure_0(tmp4[6]).InfoBoxLooks.WARNING;
-                intl2 = closure_0(tmp4[4]).intl;
-                obj4.children = intl2.string(closure_0(tmp4[4]).t.LY35Zy);
-                tmp9 = jsx(tmp3Result1, obj4);
-              }
-              items[1] = tmp9;
-              return tmp(tmp2, { children: items });
+          function getInfoBox(id) {
+            let intl;
+            let intl2;
+            let obj2;
+            let tmp5 = shouldWarnAuthorizedAppTwoWayDefault(id.id);
+            const tmp = hasOwnProperty;
+            const tmp2 = React3;
+            if (tmp5) {
+              const obj = { children: intl.format(intl7.t.KRnERi, obj2) };
+              const tmp3Result = InfoBoxDefault;
+              intl = intl7.intl;
+              obj2 = { applicationName: id.name };
+              tmp5 = _false(tmp3Result, obj);
             }
+            const children = [tmp5, ];
+            let tmp9 = closure_0;
+            if (tmp9) {
+              const obj3 = { look: InfoBox.InfoBoxLooks.WARNING, children: intl2.string(intl7.t.LY35Zy) };
+              const tmp3Result2 = InfoBoxDefault;
+              intl2 = intl7.intl;
+              tmp9 = _false(tmp3Result2, obj3);
+            }
+            children[1] = tmp9;
+            return tmp(tmp2, { children });
           }
           cResult[9] = tmp4;
-          cResult[10] = S;
+          cResult[10] = getInfoBox;
+          tmp10 = getInfoBox;
         } else {
-          class S {
-            constructor(arg0) {
-              tmp3 = closure_1;
-              tmp4 = closure_2;
-              tmp = jsxs;
-              tmp2 = Fragment;
-              tmp5 = closure_1(closure_2[5])(arg0.id);
-              if (tmp5) {
-                tmp6 = jsx;
-                obj = { children: null };
-                tmp8 = closure_0;
-                tmp3Result = tmp3(tmp4[6]);
-                intl = closure_0(tmp4[4]).intl;
-                obj1 = { applicationName: null };
-                obj1.applicationName = arg0.name;
-                obj.children = intl.format(closure_0(tmp4[4]).t.KRnERi, obj1);
-                tmp5 = jsx(tmp3Result, obj);
-              }
-              items = [, ];
-              items[0] = tmp5;
-              tmp9 = closure_0;
-              if (tmp9) {
-                tmp10 = jsx;
-                obj4 = { look: null, children: null };
-                tmp12 = closure_0;
-                tmp3Result1 = tmp3(tmp4[6]);
-                obj4.look = closure_0(tmp4[6]).InfoBoxLooks.WARNING;
-                intl2 = closure_0(tmp4[4]).intl;
-                obj4.children = intl2.string(closure_0(tmp4[4]).t.LY35Zy);
-                tmp9 = jsx(tmp3Result1, obj4);
-              }
-              items[1] = tmp9;
-              return tmp(tmp2, { children: items });
-            }
-          }
+          tmp10 = cResult[10];
         }
         if (cResult[11] === application) {
-          let tmp18;
+          let tmp11;
+          let tmp14;
+          let tmp16;
+          let tmp19;
           let tmp22;
-          class S {
-            constructor(arg0) {
-              tmp3 = closure_1;
-              tmp4 = closure_2;
-              tmp = jsxs;
-              tmp2 = Fragment;
-              tmp5 = closure_1(closure_2[5])(arg0.id);
-              if (tmp5) {
-                tmp6 = jsx;
-                obj = { children: null };
-                tmp8 = closure_0;
-                tmp3Result = tmp3(tmp4[6]);
-                intl = closure_0(tmp4[4]).intl;
-                obj1 = { applicationName: null };
-                obj1.applicationName = arg0.name;
-                obj.children = intl.format(closure_0(tmp4[4]).t.KRnERi, obj1);
-                tmp5 = jsx(tmp3Result, obj);
-              }
-              items = [, ];
-              items[0] = tmp5;
-              tmp9 = closure_0;
-              if (tmp9) {
-                tmp10 = jsx;
-                obj4 = { look: null, children: null };
-                tmp12 = closure_0;
-                tmp3Result1 = tmp3(tmp4[6]);
-                obj4.look = closure_0(tmp4[6]).InfoBoxLooks.WARNING;
-                intl2 = closure_0(tmp4[4]).intl;
-                obj4.children = intl2.string(closure_0(tmp4[4]).t.LY35Zy);
-                tmp9 = jsx(tmp3Result1, obj4);
-              }
-              items[1] = tmp9;
-              return tmp(tmp2, { children: items });
-            }
+          if (cResult[12] === tmp10) {
+            tmp11 = cResult[13];
           }
           const _Symbol = Symbol;
           if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-            class S {
-              constructor(arg0) {
-                tmp3 = closure_1;
-                tmp4 = closure_2;
-                tmp = jsxs;
-                tmp2 = Fragment;
-                tmp5 = closure_1(closure_2[5])(arg0.id);
-                if (tmp5) {
-                  tmp6 = jsx;
-                  obj = { children: null };
-                  tmp8 = closure_0;
-                  tmp3Result = tmp3(tmp4[6]);
-                  intl = closure_0(tmp4[4]).intl;
-                  obj1 = { applicationName: null };
-                  obj1.applicationName = arg0.name;
-                  obj.children = intl.format(closure_0(tmp4[4]).t.KRnERi, obj1);
-                  tmp5 = jsx(tmp3Result, obj);
-                }
-                items = [, ];
-                items[0] = tmp5;
-                tmp9 = closure_0;
-                if (tmp9) {
-                  tmp10 = jsx;
-                  obj4 = { look: null, children: null };
-                  tmp12 = closure_0;
-                  tmp3Result1 = tmp3(tmp4[6]);
-                  obj4.look = closure_0(tmp4[6]).InfoBoxLooks.WARNING;
-                  intl2 = closure_0(tmp4[4]).intl;
-                  obj4.children = intl2.string(closure_0(tmp4[4]).t.LY35Zy);
-                  tmp9 = jsx(tmp3Result1, obj4);
-                }
-                items[1] = tmp9;
-                return tmp(tmp2, { children: items });
-              }
-            }
-            const stringResult = obj4.string(tmp(1126).t.xUqheM);
+            const intl3 = tmp(1126).intl;
+            const stringResult = intl3.string(tmp(1126).t.xUqheM);
             cResult[14] = stringResult;
-            tmp18 = stringResult;
+            tmp14 = stringResult;
           } else {
-            class S {
-              constructor(arg0) {
-                tmp3 = closure_1;
-                tmp4 = closure_2;
-                tmp = jsxs;
-                tmp2 = Fragment;
-                tmp5 = closure_1(closure_2[5])(arg0.id);
-                if (tmp5) {
-                  tmp6 = jsx;
-                  obj = { children: null };
-                  tmp8 = closure_0;
-                  tmp3Result = tmp3(tmp4[6]);
-                  intl = closure_0(tmp4[4]).intl;
-                  obj1 = { applicationName: null };
-                  obj1.applicationName = arg0.name;
-                  obj.children = intl.format(closure_0(tmp4[4]).t.KRnERi, obj1);
-                  tmp5 = jsx(tmp3Result, obj);
-                }
-                items = [, ];
-                items[0] = tmp5;
-                tmp9 = closure_0;
-                if (tmp9) {
-                  tmp10 = jsx;
-                  obj4 = { look: null, children: null };
-                  tmp12 = closure_0;
-                  tmp3Result1 = tmp3(tmp4[6]);
-                  obj4.look = closure_0(tmp4[6]).InfoBoxLooks.WARNING;
-                  intl2 = closure_0(tmp4[4]).intl;
-                  obj4.children = intl2.string(closure_0(tmp4[4]).t.LY35Zy);
-                  tmp9 = jsx(tmp3Result1, obj4);
-                }
-                items[1] = tmp9;
-                return tmp(tmp2, { children: items });
-              }
-            }
+            tmp14 = cResult[14];
           }
           if (cResult[15] !== onDelete) {
-            class S {
-              constructor(arg0) {
-                tmp3 = closure_1;
-                tmp4 = closure_2;
-                tmp = jsxs;
-                tmp2 = Fragment;
-                tmp5 = closure_1(closure_2[5])(arg0.id);
-                if (tmp5) {
-                  tmp6 = jsx;
-                  obj = { children: null };
-                  tmp8 = closure_0;
-                  tmp3Result = tmp3(tmp4[6]);
-                  intl = closure_0(tmp4[4]).intl;
-                  obj1 = { applicationName: null };
-                  obj1.applicationName = arg0.name;
-                  obj.children = intl.format(closure_0(tmp4[4]).t.KRnERi, obj1);
-                  tmp5 = jsx(tmp3Result, obj);
-                }
-                items = [, ];
-                items[0] = tmp5;
-                tmp9 = closure_0;
-                if (tmp9) {
-                  tmp10 = jsx;
-                  obj4 = { look: null, children: null };
-                  tmp12 = closure_0;
-                  tmp3Result1 = tmp3(tmp4[6]);
-                  obj4.look = closure_0(tmp4[6]).InfoBoxLooks.WARNING;
-                  intl2 = closure_0(tmp4[4]).intl;
-                  obj4.children = intl2.string(closure_0(tmp4[4]).t.LY35Zy);
-                  tmp9 = jsx(tmp3Result1, obj4);
-                }
-                items[1] = tmp9;
-                return tmp(tmp2, { children: items });
-              }
-            }
-            let obj2 = { variant: "destructive", text: tmp18, onPress: onDelete };
+            let obj2 = { variant: "destructive", text: tmp14, onPress: onDelete };
+            const tmp18 = closure_3(tmp(5303).AlertActionButton, obj2, "confirm");
             cResult[15] = onDelete;
-            cResult[16] = closure_3(tmp(5720).AlertActionButton, obj2, "confirm");
-            const tmp21 = closure_3(tmp(5720).AlertActionButton, obj2, "confirm");
+            cResult[16] = tmp18;
+            tmp16 = tmp18;
           } else {
-            class S {
-              constructor(arg0) {
-                tmp3 = closure_1;
-                tmp4 = closure_2;
-                tmp = jsxs;
-                tmp2 = Fragment;
-                tmp5 = closure_1(closure_2[5])(arg0.id);
-                if (tmp5) {
-                  tmp6 = jsx;
-                  obj = { children: null };
-                  tmp8 = closure_0;
-                  tmp3Result = tmp3(tmp4[6]);
-                  intl = closure_0(tmp4[4]).intl;
-                  obj1 = { applicationName: null };
-                  obj1.applicationName = arg0.name;
-                  obj.children = intl.format(closure_0(tmp4[4]).t.KRnERi, obj1);
-                  tmp5 = jsx(tmp3Result, obj);
-                }
-                items = [, ];
-                items[0] = tmp5;
-                tmp9 = closure_0;
-                if (tmp9) {
-                  tmp10 = jsx;
-                  obj4 = { look: null, children: null };
-                  tmp12 = closure_0;
-                  tmp3Result1 = tmp3(tmp4[6]);
-                  obj4.look = closure_0(tmp4[6]).InfoBoxLooks.WARNING;
-                  intl2 = closure_0(tmp4[4]).intl;
-                  obj4.children = intl2.string(closure_0(tmp4[4]).t.LY35Zy);
-                  tmp9 = jsx(tmp3Result1, obj4);
-                }
-                items[1] = tmp9;
-                return tmp(tmp2, { children: items });
-              }
-            }
+            tmp16 = cResult[16];
           }
           const _Symbol2 = Symbol;
           if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-            class S {
-              constructor(arg0) {
-                tmp3 = closure_1;
-                tmp4 = closure_2;
-                tmp = jsxs;
-                tmp2 = Fragment;
-                tmp5 = closure_1(closure_2[5])(arg0.id);
-                if (tmp5) {
-                  tmp6 = jsx;
-                  obj = { children: null };
-                  tmp8 = closure_0;
-                  tmp3Result = tmp3(tmp4[6]);
-                  intl = closure_0(tmp4[4]).intl;
-                  obj1 = { applicationName: null };
-                  obj1.applicationName = arg0.name;
-                  obj.children = intl.format(closure_0(tmp4[4]).t.KRnERi, obj1);
-                  tmp5 = jsx(tmp3Result, obj);
-                }
-                items = [, ];
-                items[0] = tmp5;
-                tmp9 = closure_0;
-                if (tmp9) {
-                  tmp10 = jsx;
-                  obj4 = { look: null, children: null };
-                  tmp12 = closure_0;
-                  tmp3Result1 = tmp3(tmp4[6]);
-                  obj4.look = closure_0(tmp4[6]).InfoBoxLooks.WARNING;
-                  intl2 = closure_0(tmp4[4]).intl;
-                  obj4.children = intl2.string(closure_0(tmp4[4]).t.LY35Zy);
-                  tmp9 = jsx(tmp3Result1, obj4);
-                }
-                items[1] = tmp9;
-                return tmp(tmp2, { children: items });
-              }
-            }
-            let obj3 = { variant: "secondary", text: intl3.string(tmp(1126).t["ETE/oC"]) };
-            const AlertActionButton = tmp(5720).AlertActionButton;
-            intl3 = tmp(1126).intl;
-            const tmp23 = closure_3(AlertActionButton, obj3, "cancel");
-            cResult[17] = tmp23;
-            tmp22 = tmp23;
+            let obj3 = { variant: "secondary", text: intl4.string(tmp(1126).t["ETE/oC"]) };
+            const AlertActionButton = tmp(5303).AlertActionButton;
+            intl4 = tmp(1126).intl;
+            const tmp21 = closure_3(AlertActionButton, obj3, "cancel");
+            cResult[17] = tmp21;
+            tmp19 = tmp21;
           } else {
-            class S {
-              constructor(arg0) {
-                tmp3 = closure_1;
-                tmp4 = closure_2;
-                tmp = jsxs;
-                tmp2 = Fragment;
-                tmp5 = closure_1(closure_2[5])(arg0.id);
-                if (tmp5) {
-                  tmp6 = jsx;
-                  obj = { children: null };
-                  tmp8 = closure_0;
-                  tmp3Result = tmp3(tmp4[6]);
-                  intl = closure_0(tmp4[4]).intl;
-                  obj1 = { applicationName: null };
-                  obj1.applicationName = arg0.name;
-                  obj.children = intl.format(closure_0(tmp4[4]).t.KRnERi, obj1);
-                  tmp5 = jsx(tmp3Result, obj);
-                }
-                items = [, ];
-                items[0] = tmp5;
-                tmp9 = closure_0;
-                if (tmp9) {
-                  tmp10 = jsx;
-                  obj4 = { look: null, children: null };
-                  tmp12 = closure_0;
-                  tmp3Result1 = tmp3(tmp4[6]);
-                  obj4.look = closure_0(tmp4[6]).InfoBoxLooks.WARNING;
-                  intl2 = closure_0(tmp4[4]).intl;
-                  obj4.children = intl2.string(closure_0(tmp4[4]).t.LY35Zy);
-                  tmp9 = jsx(tmp3Result1, obj4);
-                }
-                items[1] = tmp9;
-                return tmp(tmp2, { children: items });
-              }
-            }
+            tmp19 = cResult[17];
           }
-          if (cResult[18] !== tmp20) {
-            class S {
-              constructor(arg0) {
-                tmp3 = closure_1;
-                tmp4 = closure_2;
-                tmp = jsxs;
-                tmp2 = Fragment;
-                tmp5 = closure_1(closure_2[5])(arg0.id);
-                if (tmp5) {
-                  tmp6 = jsx;
-                  obj = { children: null };
-                  tmp8 = closure_0;
-                  tmp3Result = tmp3(tmp4[6]);
-                  intl = closure_0(tmp4[4]).intl;
-                  obj1 = { applicationName: null };
-                  obj1.applicationName = arg0.name;
-                  obj.children = intl.format(closure_0(tmp4[4]).t.KRnERi, obj1);
-                  tmp5 = jsx(tmp3Result, obj);
-                }
-                items = [, ];
-                items[0] = tmp5;
-                tmp9 = closure_0;
-                if (tmp9) {
-                  tmp10 = jsx;
-                  obj4 = { look: null, children: null };
-                  tmp12 = closure_0;
-                  tmp3Result1 = tmp3(tmp4[6]);
-                  obj4.look = closure_0(tmp4[6]).InfoBoxLooks.WARNING;
-                  intl2 = closure_0(tmp4[4]).intl;
-                  obj4.children = intl2.string(closure_0(tmp4[4]).t.LY35Zy);
-                  tmp9 = jsx(tmp3Result1, obj4);
-                }
-                items[1] = tmp9;
-                return tmp(tmp2, { children: items });
-              }
-            }
-            const obj5 = { children: items };
-            items = [tmp20, tmp22];
-            cResult[18] = tmp20;
-            cResult[19] = closure_5(closure_4, obj5);
-            const tmp26 = closure_5(closure_4, obj5);
+          if (cResult[18] !== tmp16) {
+            const obj4 = { children: items };
+            items = [tmp16, tmp19];
+            const tmp25 = closure_5(closure_4, obj4);
+            cResult[18] = tmp16;
+            cResult[19] = tmp25;
+            tmp22 = tmp25;
           } else {
-            class S {
-              constructor(arg0) {
-                tmp3 = closure_1;
-                tmp4 = closure_2;
-                tmp = jsxs;
-                tmp2 = Fragment;
-                tmp5 = closure_1(closure_2[5])(arg0.id);
-                if (tmp5) {
-                  tmp6 = jsx;
-                  obj = { children: null };
-                  tmp8 = closure_0;
-                  tmp3Result = tmp3(tmp4[6]);
-                  intl = closure_0(tmp4[4]).intl;
-                  obj1 = { applicationName: null };
-                  obj1.applicationName = arg0.name;
-                  obj.children = intl.format(closure_0(tmp4[4]).t.KRnERi, obj1);
-                  tmp5 = jsx(tmp3Result, obj);
+            tmp22 = cResult[19];
+          }
+          if (cResult[20] === tmp8) {
+            if (cResult[21] === tmp11) {
+              if (cResult[22] === tmp22) {
+                let tmp26;
+                if (cResult[23] === tmp6) {
+                  tmp26 = cResult[24];
                 }
-                items = [, ];
-                items[0] = tmp5;
-                tmp9 = closure_0;
-                if (tmp9) {
-                  tmp10 = jsx;
-                  obj4 = { look: null, children: null };
-                  tmp12 = closure_0;
-                  tmp3Result1 = tmp3(tmp4[6]);
-                  obj4.look = closure_0(tmp4[6]).InfoBoxLooks.WARNING;
-                  intl2 = closure_0(tmp4[4]).intl;
-                  obj4.children = intl2.string(closure_0(tmp4[4]).t.LY35Zy);
-                  tmp9 = jsx(tmp3Result1, obj4);
-                }
-                items[1] = tmp9;
-                return tmp(tmp2, { children: items });
+                return tmp26;
               }
             }
           }
-          if (cResult[20] === tmp10) {
-            class S {
-              constructor(arg0) {
-                tmp3 = closure_1;
-                tmp4 = closure_2;
-                tmp = jsxs;
-                tmp2 = Fragment;
-                tmp5 = closure_1(closure_2[5])(arg0.id);
-                if (tmp5) {
-                  tmp6 = jsx;
-                  obj = { children: null };
-                  tmp8 = closure_0;
-                  tmp3Result = tmp3(tmp4[6]);
-                  intl = closure_0(tmp4[4]).intl;
-                  obj1 = { applicationName: null };
-                  obj1.applicationName = arg0.name;
-                  obj.children = intl.format(closure_0(tmp4[4]).t.KRnERi, obj1);
-                  tmp5 = jsx(tmp3Result, obj);
-                }
-                items = [, ];
-                items[0] = tmp5;
-                tmp9 = closure_0;
-                if (tmp9) {
-                  tmp10 = jsx;
-                  obj4 = { look: null, children: null };
-                  tmp12 = closure_0;
-                  tmp3Result1 = tmp3(tmp4[6]);
-                  obj4.look = closure_0(tmp4[6]).InfoBoxLooks.WARNING;
-                  intl2 = closure_0(tmp4[4]).intl;
-                  obj4.children = intl2.string(closure_0(tmp4[4]).t.LY35Zy);
-                  tmp9 = jsx(tmp3Result1, obj4);
-                }
-                items[1] = tmp9;
-                return tmp(tmp2, { children: items });
-              }
-            }
-          }
-          const obj6 = { title: tmp6, content: tmp10, extraContent: tmp15, actions: tmp24 };
-          cResult[20] = tmp10;
-          cResult[21] = tmp15;
-          cResult[22] = tmp24;
+          const obj5 = { title: tmp6, content: tmp8, extraContent: tmp11, actions: tmp22 };
+          const tmp28 = closure_3(tmp(5303).AlertModal, obj5);
+          cResult[20] = tmp8;
+          cResult[21] = tmp11;
+          cResult[22] = tmp22;
           cResult[23] = tmp6;
-          cResult[24] = closure_3(tmp(5720).AlertModal, obj6);
-          const tmp29 = closure_3(tmp(5720).AlertModal, obj6);
+          cResult[24] = tmp28;
+          tmp26 = tmp28;
         }
+        const tmp10Result = tmp10(application);
         cResult[11] = application;
-        cResult[12] = tmp14;
-        cResult[13] = tmp14(application);
-        const tmp14Result = tmp14(application);
+        cResult[12] = tmp10;
+        cResult[13] = tmp10Result;
+        tmp11 = tmp10Result;
       }
       let intl2 = tmp(1126).intl;
       const formatToPlainString = intl2.formatToPlainString;
       const t = tmp(1126).t;
       if (tmp4) {
-        class S {
-          constructor(arg0) {
-            tmp3 = closure_1;
-            tmp4 = closure_2;
-            tmp = jsxs;
-            tmp2 = Fragment;
-            tmp5 = closure_1(closure_2[5])(arg0.id);
-            if (tmp5) {
-              tmp6 = jsx;
-              obj = { children: null };
-              tmp8 = closure_0;
-              tmp3Result = tmp3(tmp4[6]);
-              intl = closure_0(tmp4[4]).intl;
-              obj1 = { applicationName: null };
-              obj1.applicationName = arg0.name;
-              obj.children = intl.format(closure_0(tmp4[4]).t.KRnERi, obj1);
-              tmp5 = jsx(tmp3Result, obj);
-            }
-            items = [, ];
-            items[0] = tmp5;
-            tmp9 = closure_0;
-            if (tmp9) {
-              tmp10 = jsx;
-              obj4 = { look: null, children: null };
-              tmp12 = closure_0;
-              tmp3Result1 = tmp3(tmp4[6]);
-              obj4.look = closure_0(tmp4[6]).InfoBoxLooks.WARNING;
-              intl2 = closure_0(tmp4[4]).intl;
-              obj4.children = intl2.string(closure_0(tmp4[4]).t.LY35Zy);
-              tmp9 = jsx(tmp3Result1, obj4);
-            }
-            items[1] = tmp9;
-            return tmp(tmp2, { children: items });
-          }
-        }
-        tmp13[0] = application.name;
-        formatToPlainStringResult = formatToPlainString(t.inM1Yt, tmp13);
+        const obj6 = { applicationName: application.name };
+        formatToPlainStringResult = formatToPlainString(t.inM1Yt, obj6);
       } else {
-        class S {
-          constructor(arg0) {
-            tmp3 = closure_1;
-            tmp4 = closure_2;
-            tmp = jsxs;
-            tmp2 = Fragment;
-            tmp5 = closure_1(closure_2[5])(arg0.id);
-            if (tmp5) {
-              tmp6 = jsx;
-              obj = { children: null };
-              tmp8 = closure_0;
-              tmp3Result = tmp3(tmp4[6]);
-              intl = closure_0(tmp4[4]).intl;
-              obj1 = { applicationName: null };
-              obj1.applicationName = arg0.name;
-              obj.children = intl.format(closure_0(tmp4[4]).t.KRnERi, obj1);
-              tmp5 = jsx(tmp3Result, obj);
-            }
-            items = [, ];
-            items[0] = tmp5;
-            tmp9 = closure_0;
-            if (tmp9) {
-              tmp10 = jsx;
-              obj4 = { look: null, children: null };
-              tmp12 = closure_0;
-              tmp3Result1 = tmp3(tmp4[6]);
-              obj4.look = closure_0(tmp4[6]).InfoBoxLooks.WARNING;
-              intl2 = closure_0(tmp4[4]).intl;
-              obj4.children = intl2.string(closure_0(tmp4[4]).t.LY35Zy);
-              tmp9 = jsx(tmp3Result1, obj4);
-            }
-            items[1] = tmp9;
-            return tmp(tmp2, { children: items });
-          }
-        }
-        tmp11[0] = application.name;
-        formatToPlainStringResult = formatToPlainString(t.QWGvxA, tmp11);
+        const obj7 = { applicationName: application.name };
+        formatToPlainStringResult = formatToPlainString(t.QWGvxA, obj7);
       }
       cResult[6] = application.name;
       cResult[7] = tmp4;
       cResult[8] = formatToPlainStringResult;
-      tmp10 = formatToPlainStringResult;
+      tmp8 = formatToPlainStringResult;
     }
     let intl = tmp(1126).intl;
     if (tmp4) {
-      class S {
-        constructor(arg0) {
-          tmp3 = closure_1;
-          tmp4 = closure_2;
-          tmp = jsxs;
-          tmp2 = Fragment;
-          tmp5 = closure_1(closure_2[5])(arg0.id);
-          if (tmp5) {
-            tmp6 = jsx;
-            obj = { children: null };
-            tmp8 = closure_0;
-            tmp3Result = tmp3(tmp4[6]);
-            intl = closure_0(tmp4[4]).intl;
-            obj1 = { applicationName: null };
-            obj1.applicationName = arg0.name;
-            obj.children = intl.format(closure_0(tmp4[4]).t.KRnERi, obj1);
-            tmp5 = jsx(tmp3Result, obj);
-          }
-          items = [, ];
-          items[0] = tmp5;
-          tmp9 = closure_0;
-          if (tmp9) {
-            tmp10 = jsx;
-            obj4 = { look: null, children: null };
-            tmp12 = closure_0;
-            tmp3Result1 = tmp3(tmp4[6]);
-            obj4.look = closure_0(tmp4[6]).InfoBoxLooks.WARNING;
-            intl2 = closure_0(tmp4[4]).intl;
-            obj4.children = intl2.string(closure_0(tmp4[4]).t.LY35Zy);
-            tmp9 = jsx(tmp3Result1, obj4);
-          }
-          items[1] = tmp9;
-          return tmp(tmp2, { children: items });
-        }
-      }
-      const obj7 = { applicationName: application.name };
-      tmp7Result = tmp9(tmp(1126).t["paC+US"], obj7);
+      const obj8 = { applicationName: application.name };
+      formatToPlainStringResult1 = intl.formatToPlainString(tmp(1126).t["paC+US"], obj8);
     } else {
-      class S {
-        constructor(arg0) {
-          tmp3 = closure_1;
-          tmp4 = closure_2;
-          tmp = jsxs;
-          tmp2 = Fragment;
-          tmp5 = closure_1(closure_2[5])(arg0.id);
-          if (tmp5) {
-            tmp6 = jsx;
-            obj = { children: null };
-            tmp8 = closure_0;
-            tmp3Result = tmp3(tmp4[6]);
-            intl = closure_0(tmp4[4]).intl;
-            obj1 = { applicationName: null };
-            obj1.applicationName = arg0.name;
-            obj.children = intl.format(closure_0(tmp4[4]).t.KRnERi, obj1);
-            tmp5 = jsx(tmp3Result, obj);
-          }
-          items = [, ];
-          items[0] = tmp5;
-          tmp9 = closure_0;
-          if (tmp9) {
-            tmp10 = jsx;
-            obj4 = { look: null, children: null };
-            tmp12 = closure_0;
-            tmp3Result1 = tmp3(tmp4[6]);
-            obj4.look = closure_0(tmp4[6]).InfoBoxLooks.WARNING;
-            intl2 = closure_0(tmp4[4]).intl;
-            obj4.children = intl2.string(closure_0(tmp4[4]).t.LY35Zy);
-            tmp9 = jsx(tmp3Result1, obj4);
-          }
-          items[1] = tmp9;
-          return tmp(tmp2, { children: items });
-        }
-      }
-      tmp7Result = tmp7(tmp(1126).t["DT39A+"]);
+      formatToPlainStringResult1 = intl.string(tmp(1126).t["DT39A+"]);
     }
     cResult[3] = application.name;
     cResult[4] = tmp4;
-    cResult[5] = tmp7Result;
-    tmp6 = tmp7Result;
+    cResult[5] = formatToPlainStringResult1;
+    tmp6 = formatToPlainStringResult1;
   }
-  const tmpResult = tmp(11161);
+  const tmpResult = tmp(11283);
   const result = tmpResult.isSocialLayerSDKAuthorization(application, scopes);
   cResult[0] = application;
   cResult[1] = scopes;
   cResult[2] = result;
   tmp4 = result;
-}) : ((application) => {
+}) : (function UserSettingsAuthedAppDeleteWarningModal(application) {
   let formatToPlainStringResult;
   let formatToPlainStringResult1;
   let intl3;
@@ -751,13 +242,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items[1] = tmp12;
   const obj8 = { title: formatToPlainStringResult, content: formatToPlainStringResult1, extraContent: hasOwnProperty(React3, { children: items }), actions: hasOwnProperty(React3, obj9) };
   obj9 = { children: items1 };
-  const AlertModal = tmp(5720).AlertModal;
+  const AlertModal = tmp(5303).AlertModal;
   const obj10 = { variant: "destructive", text: intl5.string(intl7.t.xUqheM), onPress: onDelete };
-  const AlertActionButton = tmp(5720).AlertActionButton;
+  const AlertActionButton = tmp(5303).AlertActionButton;
   intl5 = tmp(1126).intl;
   items1 = [_false(AlertActionButton, obj10, "confirm"), ];
   const obj11 = { variant: "secondary", text: intl6.string(intl7.t["ETE/oC"]) };
-  const AlertActionButton2 = tmp(5720).AlertActionButton;
+  const AlertActionButton2 = tmp(5303).AlertActionButton;
   intl6 = tmp(1126).intl;
   items1[1] = _false(AlertActionButton2, obj11, "cancel");
   return _false(AlertModal, obj8);

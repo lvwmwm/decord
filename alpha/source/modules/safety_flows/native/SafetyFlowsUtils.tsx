@@ -1,21 +1,21 @@
-// Module ID: 18110
-// Function ID: 18111
+// Module ID: 18397
+// Function ID: 18398
 // Name: SafetyFlowsUtils
-// Dependencies: [5, 19, 1377, 18104, 18106, 5099, 18105, 4574, 4811, 1126, 2815, 558, 576, 1490, 18109, 2]
+// Dependencies: [5, 19, 1389, 18391, 18393, 5940, 18392, 4766, 5005, 1126, 2859, 558, 576, 1502, 18396, 2]
 // Exports: getScreensForTaskType
 
-// Module 18110 (SafetyFlowsUtils)
+// Module 18397 (SafetyFlowsUtils)
 import intl2 from "intl" /* 1126 */;
-import _modDef2815 from "module_2815" /* 2815 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4811 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
-import types from "types" /* 18104 */;
-import constants from "constants" /* 18105 */;
-import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 18106 */;
+import _modDef2859 from "module_2859" /* 2859 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5005 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+import types from "types" /* 18391 */;
+import constants from "constants" /* 18392 */;
+import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 18393 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -87,7 +87,7 @@ function navigateToScreenForTask(arr, task_type) {
   if (null == task_type) {
     obj = ModalActionCreatorsDefault;
     obj.popWithKey(constants.SAFETY_FLOWS_MODAL_KEY);
-    const obj2 = { key: "SAFETY_FLOWS_VERIFY_EMAIL_SUCCESS", icon: AssetRegistryDefault, content: intl.string(_modDef2815["/fHz9S"]) };
+    const obj2 = { key: "SAFETY_FLOWS_VERIFY_EMAIL_SUCCESS", icon: AssetRegistryDefault, content: intl.string(_modDef2859["/fHz9S"]) };
     const open = ToastActionCreatorsDefault.open;
     ToastActionCreatorsDefault;
     intl = intl2.intl;
@@ -140,7 +140,7 @@ function getScreensForTaskType(task_type) {
   }
   return tmp4;
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnTaskComplete() {
   let setTask;
   obj = navigation(setTask[12]);
   const cResult = obj.c(5);
@@ -230,16 +230,16 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     })();
   });
-  const fn = function() {
+  function t0() {
     return closure_0(...arguments);
-  };
+  }
   cResult[0] = navigation;
   cResult[1] = setTask;
   cResult[2] = task.flow_context.flow_id;
   cResult[3] = task.task_id;
-  cResult[4] = fn;
-  tmp4 = fn;
-}) : (() => {
+  cResult[4] = t0;
+  tmp4 = t0;
+}) : (function useOnTaskComplete() {
   let setTask;
   obj = navigation(setTask[13]);
   navigation = obj.useNavigation();

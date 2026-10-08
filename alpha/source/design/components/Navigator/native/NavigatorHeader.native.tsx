@@ -1,26 +1,26 @@
-// Module ID: 6017
-// Function ID: 6018
+// Module ID: 6203
+// Function ID: 6204
 // Name: NavigatorHeader
-// Dependencies: [5, 109, 19, 17, 1085, 21, 4896, 587, 4892, 558, 576, 6018, 6021, 1491, 6023, 1126, 6024, 6026, 1369, 1618, 6075, 2]
+// Dependencies: [5, 109, 19, 17, 1085, 21, 5090, 587, 5086, 558, 576, 6204, 6207, 1503, 6209, 1126, 6210, 6212, 1381, 1630, 6261, 2]
 // Exports: getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage
 
-// Module 6017 (NavigatorHeader)
+// Module 6203 (NavigatorHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6018 */;
-import XSmallIcon from "XSmallIcon" /* 6024 */;
-import _mod6026 from "module_6026" /* 6026 */;
-import NavigatorConstants from "NavigatorConstants" /* 6075 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6204 */;
+import XSmallIcon from "XSmallIcon" /* 6210 */;
+import _mod6212 from "module_6212" /* 6212 */;
+import NavigatorConstants from "NavigatorConstants" /* 6261 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let size;
 let size1;
 let tmp;
 let unpackModuleId;
-const ArrowLargeLeftIcon = tmp(6021);
+const ArrowLargeLeftIcon = tmp(6207);
 let closure_3 = ["onPress"];
 let closure_4 = ["onPress"];
 let closure_5 = ["text", "labelStyle"];
@@ -55,7 +55,7 @@ size = { width: 24, height: 24, tintColor: nativeDefault.colors.MOBILE_TEXT_HEAD
 size1 = { width: 22, height: 22, color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 const styles = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavigatorHeader(arg0) {
   let icon;
   let items;
   let items1;
@@ -111,7 +111,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp13 = null != subtitle && "" !== subtitle;
       if (tmp13) {
         const obj4 = { lineClamp: 1, style: tmp4.navigatorHeaderSubtitle, variant: "text-xs/medium", color: "text-muted", children: subtitle };
-        tmp13 = authStore(tmp(4892).Text, obj4);
+        tmp13 = authStore(tmp(5086).Text, obj4);
       }
       cResult[6] = tmp4.navigatorHeaderSubtitle;
       cResult[7] = subtitle;
@@ -127,7 +127,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = tmp6;
   cResult[5] = tmp10;
   tmp9 = tmp10;
-}) : ((subtitle) => {
+}) : (function NavigatorHeader(subtitle) {
   let icon;
   let items;
   let items1;
@@ -157,7 +157,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp4(tmp5, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderBackImage() {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(2);
@@ -172,13 +172,13 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[1];
   }
   return tmp5;
-}) : (() => {
+}) : (function HeaderBackImage() {
   const obj = { size: "md", style: styles().headerButtonIcon };
   return authStore(ArrowLargeLeftIcon.ArrowLargeLeftIcon, obj);
 });
 let closure_13 = tmp9;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function CloseButton(onPress) {
   let closure_2;
   let headerButtonIcon;
   let tmp4;
@@ -203,78 +203,96 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   navigation = tmpResult.useNavigation();
   if (cResult[3] === navigation) {
     let tmp11;
-    let tmp12;
-    let tmp15;
-    let tmp17;
+    let tmp13;
     if (cResult[4] === tmp4) {
       tmp11 = cResult[5];
     }
     dependencyMap = tmp11;
     if (cResult[6] !== tmp11) {
-      const fn2 = function b() {
-        closure_2();
-        return true;
-      };
-      cResult[6] = tmp11;
-      cResult[7] = fn2;
-      tmp12 = fn2;
-    } else {
-      tmp12 = cResult[7];
-    }
-    const tmpResult2 = require("useNavigatorBackPressHandler");
-    tmpResult2.useNavigatorBackPressHandler(tmp12);
-    const _Symbol = Symbol;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
-      const stringResult = intl.string(require("intl").t.cpT0Cq);
-      cResult[8] = stringResult;
-      tmp15 = stringResult;
-    } else {
-      tmp15 = cResult[8];
-    }
-    if (cResult[9] !== tmp9.headerButtonIcon) {
-      const fn3 = function p(tintColor) {
-        let items;
-        const obj = { size: "md", style: items };
-        items = [headerButtonIcon.headerButtonIcon, { tintColor: tintColor.tintColor }];
-        return authStore(XSmallIcon.XSmallIcon, obj);
-      };
-      cResult[9] = tmp9.headerButtonIcon;
-      cResult[10] = fn3;
-      tmp17 = fn3;
-    } else {
-      tmp17 = cResult[10];
-    }
-    if (cResult[11] === tmp11) {
-      if (cResult[12] === tmp5) {
-        let tmp18;
-        if (cResult[13] === tmp17) {
-          tmp18 = cResult[14];
+      class B {
+        constructor() {
+          tmp = closure_2();
+          return true;
         }
-        return tmp18;
+      }
+      cResult[6] = tmp11;
+      cResult[7] = B;
+      tmp13 = B;
+    } else {
+      class B {
+        constructor() {
+          tmp = closure_2();
+          return true;
+        }
       }
     }
-    const obj2 = { onPress: tmp11, label: tmp15, displayMode: "minimal", backImage: tmp17, accessibilityLabel: tmp15 };
-    const HeaderBackButton = tmp(6026).HeaderBackButton;
+    const tmpResult2 = require("useNavigatorBackPressHandler");
+    tmpResult2.useNavigatorBackPressHandler(tmp13);
+    const _Symbol = Symbol;
+    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+      class B {
+        constructor() {
+          tmp = closure_2();
+          return true;
+        }
+      }
+      cResult[8] = obj4.string(require("intl").t.cpT0Cq);
+      const stringResult = obj4.string(require("intl").t.cpT0Cq);
+    } else {
+      class B {
+        constructor() {
+          tmp = closure_2();
+          return true;
+        }
+      }
+    }
+    if (cResult[9] !== tmp9.headerButtonIcon) {
+      class B {
+        constructor() {
+          tmp = closure_2();
+          return true;
+        }
+      }
+      cResult[9] = tmp9.headerButtonIcon;
+      cResult[10] = tmp19;
+    } else {
+      class B {
+        constructor() {
+          tmp = closure_2();
+          return true;
+        }
+      }
+    }
+    if (cResult[11] === tmp11) {
+      class B {
+        constructor() {
+          tmp = closure_2();
+          return true;
+        }
+      }
+    }
+    const obj2 = { onPress: tmp11, label: tmp16, displayMode: "minimal", backImage: tmp18, accessibilityLabel: tmp16 };
+    const HeaderBackButton = tmp(6212).HeaderBackButton;
     const merged = Object.assign(tmp5);
-    const tmp23 = closure_10(HeaderBackButton, obj2);
     cResult[11] = tmp11;
     cResult[12] = tmp5;
-    cResult[13] = tmp17;
-    cResult[14] = tmp23;
-    tmp18 = tmp23;
+    cResult[13] = tmp18;
+    cResult[14] = closure_10(HeaderBackButton, obj2);
+    const tmp25 = closure_10(HeaderBackButton, obj2);
   }
-  let fn = tmp4;
   if (tmp4 == null) {
-    fn = () => {
-      navigation.pop();
-    };
+    class B {
+      constructor() {
+        tmp = closure_2();
+        return true;
+      }
+    }
   }
   cResult[3] = navigation;
   cResult[4] = tmp4;
-  cResult[5] = fn;
-  tmp11 = fn;
-}) : ((onPress) => {
+  cResult[5] = tmp4;
+  tmp11 = tmp12;
+}) : (function CloseButton(onPress) {
   let headerButtonIcon;
   onPress = onPress.onPress;
   const merged = Object.assign(onPress, Object.assign({ onPress: 0 }));
@@ -311,7 +329,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   return closure_10(HeaderBackButton, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomHeaderBackButton(onPress) {
   let closure_0;
   let tmp11;
   let tmp5;
@@ -344,7 +362,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   } else {
     tmp9 = cResult[4];
   }
-  const tmpResult = tmp(6023);
+  const tmpResult = tmp(6209);
   tmpResult.useNavigatorBackPressHandler(tmp9);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const fn2 = function u() {
@@ -363,17 +381,17 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     return tmp12;
   }
   const obj2 = { onPress: tmp4, displayMode: "minimal", backImage: tmp11 };
-  const HeaderBackButton = tmp(6026).HeaderBackButton;
+  const HeaderBackButton = tmp(6212).HeaderBackButton;
   const merged = Object.assign(tmp5);
   const tmp14 = closure_10(HeaderBackButton, obj2);
   cResult[6] = tmp4;
   cResult[7] = tmp5;
   cResult[8] = tmp14;
   tmp12 = tmp14;
-}) : ((onPress) => {
+}) : (function CustomHeaderBackButton(onPress) {
   onPress = onPress.onPress;
   const merged = Object.assign(onPress, Object.assign({ onPress: 0 }));
-  const obj = onPress(6023);
+  const obj = onPress(6209);
   obj.useNavigatorBackPressHandler(() => {
     if (null != onPress) {
       tmp();
@@ -387,7 +405,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
       return closure_1_10(closure_1_13, {});
     }
   };
-  const HeaderBackButton = onPress(6026).HeaderBackButton;
+  const HeaderBackButton = onPress(6212).HeaderBackButton;
   const merged1 = Object.assign(merged);
   return closure_10(HeaderBackButton, obj2);
 });
@@ -434,44 +452,40 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     }
     const _Symbol = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      class B {
-        constructor() {
-          return null;
-        }
-      }
-      cResult[9] = B;
-      tmp16 = B;
+      const fn = function h() {
+        return null;
+      };
+      cResult[9] = fn;
+      tmp16 = fn;
     } else {
-      class B {
-        constructor() {
-          return null;
-        }
-      }
+      tmp16 = cResult[9];
     }
+    let tmp17;
     const tmpResult = PlatformUtils;
     if (tmpResult.isAndroid()) {
-      class B {
-        constructor() {
-          return null;
-        }
-      }
+      tmp17 = tmp6;
     }
     if (cResult[10] === tmp14) {
-      class B {
-        constructor() {
-          return null;
+      if (cResult[11] === tmp4) {
+        if (cResult[12] === tmp17) {
+          let tmp18;
+          if (cResult[13] === tmp6) {
+            tmp18 = cResult[14];
+          }
+          return tmp18;
         }
       }
     }
-    const obj3 = { label: tmp6, displayMode: "default", labelStyle: tmp14, backImage: tmp16, accessibilityLabel: undefined };
-    const HeaderBackButton = tmp(6026).HeaderBackButton;
+    const obj3 = { label: tmp6, displayMode: "default", labelStyle: tmp14, backImage: tmp16, accessibilityLabel: tmp17 };
+    const HeaderBackButton = tmp(6212).HeaderBackButton;
     const merged1 = Object.assign(tmp4);
+    const tmp23 = authStore(HeaderBackButton, obj3);
     cResult[10] = tmp14;
     cResult[11] = tmp4;
-    cResult[12] = undefined;
+    cResult[12] = tmp17;
     cResult[13] = tmp6;
-    cResult[14] = authStore(HeaderBackButton, obj3);
-    const tmp23 = authStore(HeaderBackButton, obj3);
+    cResult[14] = tmp23;
+    tmp18 = tmp23;
   }
   const items = [tmp11, tmp5];
   cResult[6] = tmp5;
@@ -495,7 +509,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     },
     accessibilityLabel: tmp5
   };
-  const HeaderBackButton = _mod6026.HeaderBackButton;
+  const HeaderBackButton = _mod6212.HeaderBackButton;
   const merged2 = Object.assign(merged);
   tmp5 = undefined;
   const obj3 = PlatformUtils;
@@ -597,7 +611,7 @@ export const renderBackImage = function renderBackImage() {
 };
 export function getHeaderCloseButton(pop) {
   const onPress = pop;
-  return (arg0) => {
+  return function renderCloseButton(arg0) {
     const obj = { onPress };
     const merged = Object.assign(arg0);
     return authStore(closure_14, obj);
@@ -605,7 +619,7 @@ export function getHeaderCloseButton(pop) {
 }
 export function getHeaderConditionalBackButton(callback1) {
   let closure_0 = callback1;
-  return (onPress) => {
+  return function renderBackButton(onPress) {
     onPress = onPress.onPress;
     let obj = function _handlePress() {
       obj = _asyncToGenerator(async (arg0, value) => {

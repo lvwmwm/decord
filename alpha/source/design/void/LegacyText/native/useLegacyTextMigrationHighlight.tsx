@@ -1,13 +1,13 @@
-// Module ID: 8942
-// Function ID: 8943
+// Module ID: 8573
+// Function ID: 8574
 // Name: useLegacyTextMigrationHighlight
-// Dependencies: [4895, 4896, 587, 558, 576, 504, 2]
+// Dependencies: [5089, 5090, 587, 558, 576, 504, 2]
 
-// Module 8942 (useLegacyTextMigrationHighlight)
+// Module 8573 (useLegacyTextMigrationHighlight)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import DevSettingsStore from "DevSettingsStore" /* 4895 */;
-import createStyles from "createStyles" /* 4896 */;
+import DevSettingsStore from "DevSettingsStore" /* 5089 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const get_initialized = tmp(504);
 let obj = { highlight: { borderWidth: 1, borderColor: nativeDefault.colors.STATUS_DANGER } };
 ({ borderWidth: 1, borderColor: nativeDefault.colors.STATUS_DANGER });
 let closure_3 = createStyles.createStyles(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLegacyTextMigrationHighlight() {
   let tmp5;
   let tmp6;
   const obj = react;
@@ -40,7 +40,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     highlight = tmp4.highlight;
   }
   return highlight;
-}) : (() => {
+}) : (function useLegacyTextMigrationHighlight() {
   const items = [DevSettingsStore];
   let highlight = null;
   const tmp = closure_3();

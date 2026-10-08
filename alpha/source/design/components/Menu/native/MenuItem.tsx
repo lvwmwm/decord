@@ -1,24 +1,23 @@
-// Module ID: 14225
-// Function ID: 14226
+// Module ID: 14049
+// Function ID: 14050
 // Name: MenuItem
-// Dependencies: [19, 21, 4896, 558, 576, 14223, 5603, 6642, 6640, 2]
+// Dependencies: [19, 21, 5090, 558, 576, 14043, 5377, 6819, 6817, 2]
 
-// Module 14225 (MenuItem)
+// Module 14049 (MenuItem)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import IconDefault from "Icon" /* 5603 */;
-import FormRowDefault from "FormRow" /* 6640 */;
-import FormLabelDefault from "FormLabel" /* 6642 */;
-import Menu from "Menu" /* 14223 */;
+import IconDefault from "Icon" /* 5377 */;
+import FormRowDefault from "FormRow" /* 6817 */;
+import FormLabelDefault from "FormLabel" /* 6819 */;
+import Menu from "Menu" /* 14043 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ formIcon: { width: 20, height: 20 }, formLabel: { fontSize: 14, fontWeight: "500" } });
-const forwardRef = react.forwardRef;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MenuItem(ref) {
   let IconComponent;
   let action;
   let disabled;
@@ -28,7 +27,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let style;
   const obj = react2;
   const cResult = obj.c(18);
-  ({ label, IconComponent, iconSource, showIconFirst, style, disabled, action } = arg0);
+  ({ label, IconComponent, iconSource, showIconFirst, style, disabled, action } = ref);
   const tmp6 = closure_5();
   const menuClose = react.useContext(Menu.MenuContext).menuClose;
   if (cResult[0] === action) {
@@ -64,31 +63,31 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           }
           if (cResult[10] === (undefined !== disabled && disabled)) {
             if (cResult[11] === tmp7) {
-              if (cResult[12] === ref) {
+              if (cResult[12] === ref.ref) {
                 if (cResult[13] === style) {
                   if (cResult[14] === tmp15) {
                     if (cResult[15] === tmp16) {
-                      let tmp20;
+                      let tmp19;
                       if (cResult[16] === tmp17) {
-                        tmp20 = cResult[17];
+                        tmp19 = cResult[17];
                       }
-                      return tmp20;
+                      return tmp19;
                     }
                   }
                 }
               }
             }
           }
-          const tmp23 = jsx(FormRowDefault, { ref, style, accessibilityRole: "menuitem", disabled: undefined !== disabled && disabled, leading: tmp15, trailing: tmp16, label: tmp17, onPress: tmp7 });
+          const tmp22 = jsx(FormRowDefault, { ref: ref.ref, style, accessibilityRole: "menuitem", disabled: undefined !== disabled && disabled, leading: tmp15, trailing: tmp16, label: tmp17, onPress: tmp7 });
           cResult[10] = undefined !== disabled && disabled;
           cResult[11] = tmp7;
-          cResult[12] = ref;
+          cResult[12] = ref.ref;
           cResult[13] = style;
           cResult[14] = tmp15;
           cResult[15] = tmp16;
           cResult[16] = tmp17;
-          cResult[17] = tmp23;
-          tmp20 = tmp23;
+          cResult[17] = tmp22;
+          tmp19 = tmp22;
         }
         let tmp18 = label;
         if (typeof label === "string") {
@@ -114,15 +113,15 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     cResult[6] = tmp10;
     tmp8 = tmp10;
   }
-  const fn = function u() {
+  function onPress() {
     action();
     menuClose();
-  };
+  }
   cResult[0] = action;
   cResult[1] = menuClose;
-  cResult[2] = fn;
-  tmp7 = fn;
-}) : ((action, ref) => {
+  cResult[2] = onPress;
+  tmp7 = onPress;
+}) : (function MenuItem(action) {
   let IconComponent;
   let disabled;
   let iconSource;
@@ -139,6 +138,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     disabled = false;
   }
   action = action.action;
+  const ref = action.ref;
   const tmp = closure_5();
   const menuClose = react.useContext(Menu.MenuContext).menuClose;
   if (null != IconComponent) {
@@ -169,11 +169,11 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     const obj3 = { text: label, style: tmp.formLabel };
     tmp7Result = tmp7(FormLabelDefault, obj3);
   }
-  return <tmp9 ref={arg1} style={style} accessibilityRole="menuitem" disabled={disabled} leading={tmp10} trailing={tmp11} label={tmp7Result} onPress={function onPress() {
+  return <tmp9 ref={ref} style={style} accessibilityRole="menuitem" disabled={disabled} leading={tmp10} trailing={tmp11} label={tmp7Result} onPress={function onPress() {
     action();
     menuClose();
   }} />;
-}));
+});
 const result = size.fileFinishedImporting("design/components/Menu/native/MenuItem.tsx");
 
-export const MenuItem = forwardRefResult;
+export const MenuItem = tmp2;

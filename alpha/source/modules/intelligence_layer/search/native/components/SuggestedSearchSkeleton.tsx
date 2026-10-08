@@ -1,18 +1,18 @@
-// Module ID: 16892
-// Function ID: 16893
+// Module ID: 17173
+// Function ID: 17174
 // Name: SuggestedSearchSkeleton
-// Dependencies: [19, 17, 11982, 7524, 21, 4896, 587, 558, 576, 4618, 4897, 2]
+// Dependencies: [19, 17, 12055, 9247, 21, 5090, 587, 558, 576, 4810, 5091, 2]
 
-// Module 16892 (SuggestedSearchSkeleton)
+// Module 17173 (SuggestedSearchSkeleton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
-import SearchConstants from "SearchConstants" /* 7524 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 11982 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
+import SearchConstants from "SearchConstants" /* 9247 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 12055 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ size1 = { height: 16, width: "72%", borderRadius: nativeDefault.radii.md, backgr
 let closure_7 = createStyles(obj);
 const __initData = { code: "function SuggestedSearchSkeletonTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
 const __initData2 = { code: "function SuggestedSearchSkeletonTsx2(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuggestedSearchSkeleton() {
   let items1;
   let sharedValue;
   let tmp6;
@@ -46,7 +46,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj = sharedValue(576);
   const cResult = obj.c(17);
   const tmp4 = closure_7();
-  const obj2 = sharedValue(4618);
+  const obj2 = sharedValue(4810);
   sharedValue = obj2.useSharedValue(0.4);
   if (cResult[0] !== sharedValue) {
     const fn = function o() {
@@ -74,7 +74,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   fn2.__closure = { opacity: sharedValue };
   fn2.__workletHash = 9760194902231;
   fn2.__initData = __initData;
-  const tmpResult = tmp(4618);
+  const tmpResult = tmp(4810);
   const animatedStyle = tmpResult.useAnimatedStyle(fn2);
   if (cResult[3] === animatedStyle) {
     let tmp10;
@@ -136,13 +136,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[4] = tmp4.row;
   cResult[5] = items2;
   tmp10 = items2;
-}) : (() => {
+}) : (function SuggestedSearchSkeleton() {
   let items1;
   let items2;
   let obj6;
   let sharedValue;
   const tmp = closure_7();
-  let obj = sharedValue(4618);
+  let obj = sharedValue(4810);
   sharedValue = obj.useSharedValue(0.4);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
@@ -159,7 +159,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 16042492079220;
   fn.__initData = __initData2;
-  const obj2 = sharedValue(4618);
+  const obj2 = sharedValue(4810);
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const obj3 = { style: items1, "aria-hidden": true, children: items2 };
   items1 = [tmp.row, animatedStyle];

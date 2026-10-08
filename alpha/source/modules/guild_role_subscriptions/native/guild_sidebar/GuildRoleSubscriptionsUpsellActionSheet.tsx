@@ -1,26 +1,26 @@
-// Module ID: 16211
-// Function ID: 16212
+// Module ID: 16471
+// Function ID: 16472
 // Name: GuildRoleSubscriptionsUpsellActionSheet
-// Dependencies: [19, 17, 1085, 2048, 21, 4896, 558, 576, 9282, 5981, 16212, 1126, 4892, 5601, 6652, 2]
+// Dependencies: [19, 17, 1085, 2060, 21, 5090, 558, 576, 8613, 6164, 16472, 1126, 5086, 5375, 6829, 2]
 
-// Module 16211 (GuildRoleSubscriptionsUpsellActionSheet)
+// Module 16471 (GuildRoleSubscriptionsUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6652 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9282 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16212 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6829 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8613 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16472 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, guildId;
+let BottomSheet;
 
 let metroImportDefault;
 let metroRequire;
@@ -29,7 +29,7 @@ const GuildSettingsSections = Constants.GuildSettingsSections;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ title: { marginTop: 24, textAlign: "center" }, description: { marginTop: 8, marginBottom: 24, textAlign: "center" }, dismissButton: { marginTop: 4 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionsUpsellActionSheet(guildId) {
   let items;
   let obj = guildId(576);
   const cResult = obj.c(29);
@@ -51,19 +51,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       tmp5 = cResult[2];
     }
     if (cResult[3] !== markAsDismissed) {
-      const fn2 = function _() {
+      const fn = function y() {
         return markAsDismissed(ContentDismissActionType.UNKNOWN);
       };
       cResult[3] = markAsDismissed;
-      cResult[4] = fn2;
-      tmp6 = fn2;
+      cResult[4] = fn;
+      tmp6 = fn;
     } else {
       tmp6 = cResult[4];
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { source: markAsDismissed(16212) };
-      const tmp11 = markAsDismissed(5981);
+      const obj2 = { source: markAsDismissed(16472) };
+      const tmp11 = markAsDismissed(6164);
       const tmp12 = closure_6(tmp11, obj2);
       cResult[5] = tmp12;
       tmp8 = tmp12;
@@ -82,7 +82,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     if (cResult[7] !== tmp4.title) {
       const obj3 = { style: title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp13 };
-      const tmp17 = closure_6(guildId(4892).Text, obj3);
+      const tmp17 = closure_6(guildId(5086).Text, obj3);
       cResult[7] = tmp4.title;
       cResult[8] = tmp17;
       tmp15 = tmp17;
@@ -101,7 +101,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     if (cResult[10] !== tmp4.description) {
       const obj4 = { style: description, variant: "text-sm/medium", color: "text-default", children: tmp18 };
-      const tmp22 = closure_6(guildId(4892).Text, obj4);
+      const tmp22 = closure_6(guildId(5086).Text, obj4);
       cResult[10] = tmp4.description;
       cResult[11] = tmp22;
       tmp20 = tmp22;
@@ -119,7 +119,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     if (cResult[13] !== tmp5) {
       const obj5 = { onPress: tmp5, text: tmp23 };
-      const tmp27 = closure_6(guildId(5601).Button, obj5);
+      const tmp27 = closure_6(guildId(5375).Button, obj5);
       cResult[13] = tmp5;
       cResult[14] = tmp27;
       tmp25 = tmp27;
@@ -128,15 +128,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     const dismissButton = tmp4.dismissButton;
     if (cResult[15] !== markAsDismissed) {
-      class R {
+      class T {
         constructor() {
           return markAsDismissed(ContentDismissActionType.UNKNOWN);
         }
       }
       cResult[15] = markAsDismissed;
-      cResult[16] = R;
+      cResult[16] = T;
     } else {
-      class R {
+      class T {
         constructor() {
           return markAsDismissed(ContentDismissActionType.UNKNOWN);
         }
@@ -144,7 +144,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     const _Symbol5 = Symbol;
     if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-      class R {
+      class T {
         constructor() {
           return markAsDismissed(ContentDismissActionType.UNKNOWN);
         }
@@ -153,37 +153,37 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       cResult[17] = stringResult3;
       tmp29 = stringResult3;
     } else {
-      class R {
+      class T {
         constructor() {
           return markAsDismissed(ContentDismissActionType.UNKNOWN);
         }
       }
     }
     if (cResult[18] !== tmp28) {
-      class R {
+      class T {
         constructor() {
           return markAsDismissed(ContentDismissActionType.UNKNOWN);
         }
       }
       const obj7 = { onPress: tmp28, text: tmp29, variant: "secondary" };
       cResult[18] = tmp28;
-      cResult[19] = closure_6(guildId(5601).Button, obj7);
-      const tmp32 = closure_6(guildId(5601).Button, obj7);
+      cResult[19] = closure_6(guildId(5375).Button, obj7);
+      const tmp32 = closure_6(guildId(5375).Button, obj7);
     } else {
-      class R {
+      class T {
         constructor() {
           return markAsDismissed(ContentDismissActionType.UNKNOWN);
         }
       }
     }
     if (cResult[20] === tmp4.dismissButton) {
-      class R {
+      class T {
         constructor() {
           return markAsDismissed(ContentDismissActionType.UNKNOWN);
         }
       }
       if (cResult[23] === tmp25) {
-        class R {
+        class T {
           constructor() {
             return markAsDismissed(ContentDismissActionType.UNKNOWN);
           }
@@ -196,8 +196,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       cResult[25] = tmp6;
       cResult[26] = tmp15;
       cResult[27] = tmp20;
-      cResult[28] = closure_7(guildId(6652).BottomSheet, obj8);
-      const tmp39 = closure_7(guildId(6652).BottomSheet, obj8);
+      cResult[28] = closure_7(guildId(6829).BottomSheet, obj8);
+      const tmp39 = closure_7(guildId(6829).BottomSheet, obj8);
     }
     const obj9 = { style: dismissButton, children: tmp31 };
     cResult[20] = tmp4.dismissButton;
@@ -205,16 +205,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     cResult[22] = closure_6(View, obj9);
     const tmp36 = closure_6(View, obj9);
   }
-  const fn = function x() {
+  function handleCheckItOut() {
     markAsDismissed(ContentDismissActionType.UNKNOWN);
     const obj = GuildSettingsActionCreatorsDefault;
     obj.open(guildId, GuildSettingsSections.ROLE_SUBSCRIPTIONS);
-  };
+  }
   cResult[0] = guildId;
   cResult[1] = markAsDismissed;
-  cResult[2] = fn;
-  tmp5 = fn;
-}) : ((arg0) => {
+  cResult[2] = handleCheckItOut;
+  tmp5 = handleCheckItOut;
+}) : (function GuildRoleSubscriptionsUpsellActionSheet(arg0) {
   let Button2;
   let intl;
   let intl2;
@@ -244,7 +244,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   intl2 = intl5.intl;
   items[2] = closure_6(Text2, obj4);
   const obj5 = {
-    onPress() {
+    onPress: function handleCheckItOut() {
       importDefault(ContentDismissActionType.UNKNOWN);
       const obj = GuildSettingsActionCreatorsDefault;
       obj.open(require, GuildSettingsSections.ROLE_SUBSCRIPTIONS);

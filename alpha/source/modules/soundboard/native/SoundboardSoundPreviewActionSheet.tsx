@@ -1,28 +1,26 @@
-// Module ID: 17272
-// Function ID: 17273
+// Module ID: 17553
+// Function ID: 17554
 // Name: SoundboardSoundPreviewActionSheet
-// Dependencies: [32, 19, 17, 2051, 1377, 5687, 1085, 21, 4896, 587, 1369, 558, 576, 17270, 17269, 17255, 504, 6851, 6857, 1252, 9956, 9958, 1126, 5601, 12505, 12741, 11559, 6632, 4892, 5886, 7959, 6708, 2]
+// Dependencies: [32, 19, 17, 2063, 1389, 5424, 1085, 21, 5090, 587, 1381, 558, 576, 17551, 17550, 17536, 504, 7038, 7046, 1264, 9483, 9485, 1126, 5375, 12601, 13409, 11622, 6809, 5086, 8198, 8376, 6885, 2]
 
-// Module 17272 (SoundboardSoundPreviewActionSheet)
+// Module 17553 (SoundboardSoundPreviewActionSheet)
 import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import SoundboardActionCreators from "SoundboardActionCreators" /* 6851 */;
-import SoundboardUtils from "SoundboardUtils" /* 6857 */;
-import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 17255 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import SoundboardActionCreators from "SoundboardActionCreators" /* 7038 */;
+import SoundboardUtils from "SoundboardUtils" /* 7046 */;
+import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 17536 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import UserStore from "UserStore" /* 1377 */;
-import SoundboardStore from "SoundboardStore" /* 5687 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import UserStore from "UserStore" /* 1389 */;
+import SoundboardStore from "SoundboardStore" /* 5424 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let channel;
 
 let c10;
 let closure_12;
@@ -57,7 +55,7 @@ obj5 = { gap: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_24 };
 size1 = { width: 16, height: 16, tintColor: nativeDefault.colors.TEXT_DEFAULT };
 size2 = { width: 16, height: 16, tintColor: nativeDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
 let closure_15 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundboardSoundPreviewActionSheet(channel) {
   let closure_10;
   let isLocked;
   let lockedAccessibilityHint;
@@ -427,7 +425,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[3] = soundGridLocation;
   cResult[4] = fn;
   tmp7 = fn;
-}) : ((channel) => {
+}) : (function SoundboardSoundPreviewActionSheet(channel) {
   let StarOutlineIcon;
   let _undefined;
   let c10;

@@ -1,27 +1,27 @@
-// Module ID: 10084
-// Function ID: 10085
+// Module ID: 9667
+// Function ID: 9668
 // Name: autocompleter/AutocompleteUtils
-// Dependencies: [19, 17, 2055, 4513, 4525, 1377, 1085, 10085, 5796, 21, 4896, 587, 5049, 5814, 5628, 4728, 558, 576, 8928, 2]
+// Dependencies: [19, 17, 2067, 4705, 4717, 1389, 1085, 9668, 5400, 21, 5090, 587, 5417, 8131, 5975, 4922, 558, 576, 8559, 2]
 // Exports: findAutoInsertOnSpaceToken, findWordStart, getAutocompleteResultText, getItemLayout, getItemSeparator, getMentionTextWithUser, getPrefix, getQuery, isSingleLineRun, isSpaceJustTypedAtCaret, isUnbrokenRun, isWhitespaceSeparatingBoundary
 
-// Module 10084 (autocompleter/AutocompleteUtils)
+// Module 9667 (autocompleter/AutocompleteUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import useChannelName from "useChannelName" /* 5049 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5628 */;
-import TimestampUtils from "TimestampUtils" /* 5814 */;
-import FormDividerDefault from "FormDivider" /* 8928 */;
+import ChannelRecord from "ChannelRecord" /* 2067 */;
+import useChannelName from "useChannelName" /* 5417 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5975 */;
+import TimestampUtils from "TimestampUtils" /* 8131 */;
+import FormDividerDefault from "FormDivider" /* 8559 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4513 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
+import GuildChannelStore from "GuildChannelStore" /* 4705 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10085 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5796 */;
-import createStyles from "createStyles" /* 4896 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9668 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5400 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let metroImportDefault;
 let obj2;
 let tmp;
 let unpackModuleId;
-const UserUtilsDefault = tmp(4728);
+const UserUtilsDefault = tmp(4922);
 const StyleSheet = react_native.StyleSheet;
 let closure_3 = ChannelRecord.isGuildSelectableChannelType;
 ({ AutoCompleteResultTypes: metroImportDefault, WHITESPACE_RE: metroImportAll } = Constants);
@@ -46,7 +46,7 @@ const hairlineWidth = StyleSheet.hairlineWidth;
 let obj = { itemDivider: obj2 };
 obj2 = { marginLeft: 16, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 let closure_17 = createStyles.createStyles(obj);
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutocompleteFormDivider() {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -60,7 +60,9 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : (() => jsx(FormDividerDefault, { style: closure_17().itemDivider }));
+}) : (function AutocompleteFormDivider() {
+  return jsx(FormDividerDefault, { style: closure_17().itemDivider });
+});
 const re19 = /[\r\n]/;
 function getMentionTextWithUser(messageChannel, user) {
   let combined;
@@ -126,7 +128,7 @@ export const getAutocompleteResultText = function getAutocompleteResultText(type
       combined = "" + tmp37 + user.tag;
     } else {
       const _HermesInternal8 = HermesInternal;
-      const tmp35Result = tmp35(4728);
+      const tmp35Result = tmp35(4922);
       combined = "" + tmp37 + tmp35Result.getUserTag(user);
     }
     return combined;

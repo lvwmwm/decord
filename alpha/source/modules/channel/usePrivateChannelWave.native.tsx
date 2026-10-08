@@ -1,10 +1,10 @@
-// Module ID: 16003
-// Function ID: 16004
+// Module ID: 16263
+// Function ID: 16264
 // Name: usePrivateChannelWave
-// Dependencies: [5, 32, 19, 1085, 4889, 558, 576, 11908, 1112, 6978, 4574, 1126, 4816, 16004, 2]
+// Dependencies: [5, 32, 19, 1085, 5083, 558, 576, 11981, 1112, 7167, 4766, 1126, 5010, 16264, 2]
 
-// Module 16003 (usePrivateChannelWave)
-import MessageConstants from "MessageConstants" /* 4889 */;
+// Module 16263 (usePrivateChannelWave)
+import MessageConstants from "MessageConstants" /* 5083 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -13,14 +13,14 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c4, c5, id;
+let _require, c4, c5;
 
 let metroImportDefault;
 let metroRequire;
 ({ ME: metroRequire, Routes: metroImportDefault } = Constants);
 const MessageSendLocation = MessageConstants.MessageSendLocation;
 let c9 = "749054660769218631";
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivateChannelWave(id, arg1) {
   let closure_2;
   let first;
   _require = id;
@@ -33,7 +33,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
     if (cResult[1] === first) {
       tmp6 = cResult[2];
     }
-    const tmpResult = tmp(16004);
+    const tmpResult = tmp(16264);
     const privateChannelWaveEligible = tmpResult.usePrivateChannelWaveEligible(id, arg1);
     if (cResult[3] === tmp6) {
       let tmp9;
@@ -132,14 +132,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
       }
     }
   });
-  const fn = function() {
+  function t0() {
     return closure_0(...arguments);
-  };
+  }
   cResult[0] = id.id;
   cResult[1] = first;
-  cResult[2] = fn;
-  tmp6 = fn;
-}) : ((id, arg1) => {
+  cResult[2] = t0;
+  tmp6 = t0;
+}) : (function usePrivateChannelWave(id, arg1) {
   let callback;
   let first;
   let obj2;

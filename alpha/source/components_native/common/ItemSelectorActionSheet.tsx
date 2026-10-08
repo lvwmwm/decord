@@ -1,22 +1,22 @@
-// Module ID: 8978
-// Function ID: 8979
+// Module ID: 8529
+// Function ID: 8530
 // Name: ItemSelectorActionSheet
-// Dependencies: [19, 21, 558, 576, 4586, 587, 1618, 6703, 6651, 6078, 6079, 6119, 6652, 2]
+// Dependencies: [19, 21, 558, 576, 4778, 587, 1630, 6880, 6828, 6264, 6265, 6298, 6829, 2]
 
-// Module 8978 (ItemSelectorActionSheet)
+// Module 8529 (ItemSelectorActionSheet)
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, selectedItem;
+let BottomSheet;
 
 let c3;
 let closure_4;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedItem) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ItemSelectorActionSheet(selectedItem) {
   let body;
   let hasIcons;
   let items;
@@ -129,16 +129,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedItem) => {
     cResult[9] = closure_3(items(onItemSelect[8]).BottomSheetTitleHeader, obj6);
     const tmp14 = closure_3(items(onItemSelect[8]).BottomSheetTitleHeader, obj6);
   }
-  const fn2 = function _(arg0) {
+  function handleChange(arg0) {
     if (null != items[arg0]) {
       onItemSelect(items[arg0].value);
     }
-  };
+  }
   cResult[2] = items;
   cResult[3] = onItemSelect;
-  cResult[4] = fn2;
-  tmp8 = fn2;
-}) : ((arg0) => {
+  cResult[4] = handleChange;
+  tmp8 = handleChange;
+}) : (function ItemSelectorActionSheet(arg0) {
   let BottomSheetScrollView;
   let body;
   let hasIcons;
@@ -153,25 +153,25 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedItem) => {
   ({ title, items } = arg0);
   ({ selectedItem: importDefault, onItemSelect: dependencyMap, onClose } = arg0);
   ({ body, hasIcons } = arg0);
-  let obj = items(4586);
+  let obj = items(4778);
   const token = obj.useToken(nativeDefault.modules.mobile.TABLE_ROW_PADDING);
   const bottom = useSafeAreaInsetsDefault().bottom;
   const findIndexResult = items.findIndex((value) => value.value === importDefault);
-  BottomSheet = items(6652).BottomSheet;
+  BottomSheet = items(6829).BottomSheet;
   const obj2 = { title, trailing: tmp6Result };
   tmp6Result = null;
-  const BottomSheetTitleHeader = items(6651).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = items(6828).BottomSheetTitleHeader;
   if (null != onClose) {
     const obj3 = { onPress: onClose };
-    tmp6Result = tmp6(tmp(6703).ActionSheetCloseButton, obj3);
+    tmp6Result = tmp6(tmp(6880).ActionSheetCloseButton, obj3);
   }
   const obj4 = { scrollable: true, header: closure_3(BottomSheetTitleHeader, obj2), children: tmp8(BottomSheetScrollView, obj5) };
   obj5 = { contentContainerStyle: obj6, children: items1 };
   obj6 = { paddingHorizontal: token, paddingBottom: bottom + nativeDefault.space.PX_16 };
-  BottomSheetScrollView = tmp(6119).BottomSheetScrollView;
+  BottomSheetScrollView = tmp(6298).BottomSheetScrollView;
   items1 = [body, ];
   let num = -1;
-  const TableRadioGroup = tmp(6079).TableRadioGroup;
+  const TableRadioGroup = tmp(6265).TableRadioGroup;
   tmp8 = closure_4;
   if (findIndexResult >= 0) {
     num = findIndexResult;
@@ -180,7 +180,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedItem) => {
     value: num,
     accessibilityLabel: title,
     hasIcons,
-    onChange(arg0) {
+    onChange: function handleChange(arg0) {
       if (null != items[arg0]) {
         dependencyMap(items[arg0].value);
       }

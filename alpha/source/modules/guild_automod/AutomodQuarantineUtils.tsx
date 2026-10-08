@@ -1,22 +1,22 @@
-// Module ID: 11496
-// Function ID: 11497
+// Module ID: 11482
+// Function ID: 11483
 // Name: AutomodQuarantineUtils
-// Dependencies: [19, 9431, 502, 2112, 2074, 4515, 4705, 1085, 4501, 1095, 558, 576, 4521, 573, 1126, 9432, 9433, 6895, 2]
+// Dependencies: [19, 9095, 502, 2124, 2086, 4707, 4899, 1085, 4693, 1095, 558, 576, 4713, 573, 1126, 9096, 9097, 7084, 2]
 
-// Module 11496 (AutomodQuarantineUtils)
+// Module 11482 (AutomodQuarantineUtils)
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import intl4 from "intl" /* 1126 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4501 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4521 */;
-import openUserSettings2 from "openUserSettings" /* 6895 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9433 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4693 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4713 */;
+import openUserSettings2 from "openUserSettings" /* 7084 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9097 */;
 import react from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9431 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9095 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -30,7 +30,7 @@ let c9;
 const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;
 let closure_12 = UserSettingsConstants.ProfileCustomizationSubsection;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentUserHasAutomodQuarantinedProfile(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -48,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function s() {
+    const fn = function l() {
       if (null == closure_0) {
         return false;
       } else {
@@ -69,7 +69,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(573);
   return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : ((arg0) => {
+}) : (function useCurrentUserHasAutomodQuarantinedProfile(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("useStateFromStores");
@@ -86,7 +86,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAutomodProfileQuarantineErrors(arg0) {
   let closure_0;
   let first;
   let tmp10;
@@ -107,13 +107,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function u() {
+    const fn = function s() {
       let guildId = closure_0;
       const tmp = closure_0;
       if (closure_0 == null) {
         guildId = SelectedGuildStore.getGuildId();
       }
-      const obj = { nick: "start", bio: "unicodeVersion" };
+      const obj = { nick: "Array", bio: "Reflect" };
       const guild = GuildStore.getGuild(guildId);
       if (null != guild) {
         if (null != guildId) {
@@ -169,7 +169,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(573);
   return tmpResult.useStateFromStoresObject(first, tmp9, tmp10);
-}) : ((arg0) => {
+}) : (function useGuildAutomodProfileQuarantineErrors(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("useStateFromStores");
@@ -181,7 +181,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (closure_0 == null) {
       guildId = SelectedGuildStore.getGuildId();
     }
-    const obj = { nick: "start", bio: "unicodeVersion" };
+    const obj = { nick: "Array", bio: "Reflect" };
     const guild = GuildStore.getGuild(guildId);
     if (null != guild) {
       if (null != guildId) {
@@ -227,7 +227,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenFixQuarantinedProfileModal(guildId) {
   let first;
   let scrollPosition;
   let tmp11;
@@ -249,7 +249,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     first = cResult[0];
   }
   if (cResult[1] !== guildId) {
-    const fn = function l() {
+    const fn = function u() {
       return GuildStore.getGuild(guildId);
     };
     const items1 = [guildId];
@@ -272,18 +272,25 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     tmp9 = cResult[4];
   }
   if (cResult[5] !== stateFromStores) {
-    const fn2 = function b() {
-      const canResult = null != stateFromStores && PermissionStore.can(constants.CHANGE_NICKNAME, tmp);
-      return canResult;
-    };
+    class O {
+      constructor() {
+        const canResult = null != stateFromStores && PermissionStore.can(constants.CHANGE_NICKNAME, tmp);
+        return canResult;
+      }
+    }
     const items3 = [stateFromStores];
     cResult[5] = stateFromStores;
-    cResult[6] = fn2;
+    cResult[6] = O;
     cResult[7] = items3;
     tmp12 = items3;
-    tmp11 = fn2;
+    tmp11 = O;
   } else {
-    tmp11 = cResult[6];
+    class O {
+      constructor() {
+        const canResult = null != stateFromStores && PermissionStore.can(constants.CHANGE_NICKNAME, tmp);
+        return canResult;
+      }
+    }
     tmp12 = cResult[7];
   }
   const tmpResult3 = tmp(scrollPosition[13]);
@@ -291,30 +298,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const tmpResult4 = tmp(scrollPosition[15]);
   const isEligibleForUserProfileWYSIWYGEditing = tmpResult4.useIsEligibleForUserProfileWYSIWYGEditing("AutomodQuarantineUtils");
   if (cResult[8] === analyticsLocations) {
-    if (cResult[9] === stateFromStores1) {
-      if (cResult[10] === stateFromStores) {
-        if (cResult[11] === isEligibleForUserProfileWYSIWYGEditing) {
-          let tmp15;
-          if (cResult[12] === scrollPosition) {
-            tmp15 = cResult[13];
-          }
-          if (cResult[14] === stateFromStores1) {
-            let tmp16;
-            if (cResult[15] === tmp15) {
-              tmp16 = cResult[16];
-            }
-            return tmp16;
-          }
-          const items4 = [tmp15, stateFromStores1];
-          cResult[14] = stateFromStores1;
-          cResult[15] = tmp15;
-          cResult[16] = items4;
-          tmp16 = items4;
-        }
+    class O {
+      constructor() {
+        const canResult = null != stateFromStores && PermissionStore.can(constants.CHANGE_NICKNAME, tmp);
+        return canResult;
       }
     }
   }
-  class P {
+  class N {
     constructor() {
       if (null != stateFromStores) {
         let USER_PROFILE;
@@ -339,9 +330,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[10] = stateFromStores;
   cResult[11] = isEligibleForUserProfileWYSIWYGEditing;
   cResult[12] = scrollPosition;
-  cResult[13] = P;
-  tmp15 = P;
-}) : ((guildId) => {
+  cResult[13] = N;
+}) : (function useOpenFixQuarantinedProfileModal(guildId) {
   guildId = guildId.guildId;
   const scrollPosition = guildId.scrollPosition;
   const analyticsLocations = guildId.analyticsLocations;

@@ -1,13 +1,13 @@
-// Module ID: 14535
-// Function ID: 14536
+// Module ID: 14796
+// Function ID: 14797
 // Name: UniqueUsernamesStore
-// Dependencies: [1444, 1102, 504, 584, 2]
+// Dependencies: [1456, 1102, 504, 584, 2]
 
-// Module 14535 (UniqueUsernamesStore)
+// Module 14796 (UniqueUsernamesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import LRUCacheDefault from "LRUCache" /* 1444 */;
+import LRUCacheDefault from "LRUCache" /* 1456 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -17,7 +17,7 @@ let tmp2;
 let closure_2 = { taken: null, error: "IconComponent", rateLimited: null };
 let obj = { validations: tmp2, currentUsernameInvalid: false, retryAfterTime: null, suggestions: obj2 };
 tmp2 = new LRUCacheDefault({ max: 100, maxAge: 60000 });
-obj2 = { migration: { suggestion: { username: "r" }, fetched: false, usernameSuggestionLoading: false }, registration: { suggestion: { username: "r" }, source: "Reflect", fetched: null } };
+obj2 = { migration: { suggestion: { username: "create" }, fetched: false, usernameSuggestionLoading: false }, registration: { suggestion: { username: "create" }, source: "Reflect", fetched: null } };
 const Store = get_initializedDefault.Store;
 class UniqueUsernamesStore extends Store {
   isRateLimited() {
@@ -97,8 +97,8 @@ const obj3 = {
     }
   },
   UNIQUE_USERNAME_SUGGESTIONS_RESET: function handleUniqueUsernameSuggestionsReset() {
-    obj.suggestions.migration = { suggestion: { username: "r" }, fetched: false, usernameSuggestionLoading: false };
-    obj.suggestions.registration = { suggestion: { username: "r" }, source: "Reflect", fetched: null };
+    obj.suggestions.migration = { suggestion: { username: "create" }, fetched: false, usernameSuggestionLoading: false };
+    obj.suggestions.registration = { suggestion: { username: "create" }, source: "Reflect", fetched: null };
   },
   UNIQUE_USERNAME_SUGGESTIONS_SUCCESS: function handleUniqueUsernameSuggestionsSuccess(suggestion) {
     suggestion = suggestion.suggestion;

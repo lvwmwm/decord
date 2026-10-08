@@ -1,30 +1,30 @@
-// Module ID: 17311
-// Function ID: 17312
+// Module ID: 17592
+// Function ID: 17593
 // Name: VoicePanelAnimatedActivityCard
-// Dependencies: [32, 19, 2050, 9101, 2051, 11916, 11914, 1085, 2011, 21, 4896, 587, 558, 576, 11915, 16621, 504, 17312, 9026, 6670, 9166, 6664, 6688, 9137, 13820, 4618, 9049, 6147, 1484, 9091, 9169, 17313, 17314, 6577, 17315, 17319, 4595, 2]
+// Dependencies: [32, 19, 2062, 10675, 2063, 11989, 11987, 1085, 2023, 21, 5090, 587, 558, 576, 11988, 16881, 504, 17593, 10635, 6847, 10732, 6841, 6865, 9471, 14124, 4810, 6043, 6326, 1496, 10338, 10735, 17594, 17595, 6753, 17596, 17600, 4787, 2]
 
-// Module 17311 (VoicePanelAnimatedActivityCard)
+// Module 17592 (VoicePanelAnimatedActivityCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants2 from "Constants" /* 1085 */;
-import useWindowDimensions from "useWindowDimensions" /* 1484 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6147 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 9026 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11914 */;
+import useWindowDimensions from "useWindowDimensions" /* 1496 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6326 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10635 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11987 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 9101 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11916 */;
-import Constants from "Constants" /* 2011 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 10675 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11989 */;
+import Constants from "Constants" /* 2023 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let applicationId, dependencyMap;
+let dependencyMap;
 
 let c9;
 let closure_12;
@@ -35,7 +35,7 @@ let map1;
 let metroImportAll;
 let obj2;
 let tmp;
-const native = tmp(4595);
+const native = tmp(4787);
 ({ IS_IOS: metroImportAll, VoicePanelModes: c9 } = VoicePanelConstants);
 let VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
 const ThemeTypes = Constants2.ThemeTypes;
@@ -61,7 +61,7 @@ const __initData9 = { code: "function VoicePanelAnimatedActivityCardTsx14(window
 const __initData10 = { code: "function VoicePanelAnimatedActivityCardTsx15(){const{IS_IOS,animatedKeyboardHeight,windowDimensions,shouldLetterboxOrientationLock,focusedOrientationLockState,OrientationLockState,ACTIVITY_LOCKED_ASPECT_RATIO,isActivityFocused,backgroundColor}=this.__closure;const keyboardHeight=IS_IOS?animatedKeyboardHeight.get():0;const isScreenLandscape=windowDimensions.get().landscape;const screenWidth=windowDimensions.get().width;const screenHeight=windowDimensions.get().height;const shouldLetterBox=shouldLetterboxOrientationLock&&focusedOrientationLockState===OrientationLockState.LANDSCAPE&&!isScreenLandscape;const shouldPillarBox=shouldLetterboxOrientationLock&&focusedOrientationLockState===OrientationLockState.PORTRAIT&&isScreenLandscape;let containerPaddingVertical=0;let containerPaddingHorizontal=0;if(shouldLetterBox){containerPaddingVertical=(screenHeight-screenWidth*ACTIVITY_LOCKED_ASPECT_RATIO)/2;}else if(shouldPillarBox){containerPaddingHorizontal=(screenWidth-screenHeight*ACTIVITY_LOCKED_ASPECT_RATIO)/2;}return{flex:isActivityFocused?0:1,backgroundColor:backgroundColor,paddingVertical:containerPaddingVertical,paddingHorizontal:containerPaddingHorizontal,width:isActivityFocused?screenWidth:'auto',height:isActivityFocused?screenHeight-keyboardHeight:'auto',maxHeight:'100%',maxWidth:'100%'};}" };
 let closure_33 = { code: "function VoicePanelAnimatedActivityCardTsx16(event,manager){const{controlsSpecs,VoicePanelControlsModes,runOnJS,hideControls}=this.__closure;manager.fail();if(controlsSpecs.get().mode!==VoicePanelControlsModes.HIDDEN){runOnJS(hideControls)({debounce:true});}}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
+let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelAnimatedActivityCardInner(applicationId) {
   let backgroundColor;
   let channelId;
   let closure_18;
@@ -89,7 +89,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
   let tmp4 = closure_17();
   [r10021, dependencyMap] = channelId(focused.useState(0), 2);
   const tmp6 = channelId(focused.useState(0), 2);
-  const context = focused.useContext(sharedVisible(11915));
+  const context = focused.useContext(sharedVisible(11988));
   channelId = context.channelId;
   focused = context.focused;
   const layoutManager = context.layoutManager;
@@ -97,8 +97,8 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
   const windowDimensions = context.windowDimensions;
   const hideControls = context.hideControls;
   const controlsSpecs = context.controlsSpecs;
-  let closure_10 = sharedVisible(16621)();
-  const tmp9 = sharedVisible(16621)();
+  let closure_10 = sharedVisible(16881)();
+  const tmp9 = sharedVisible(16881)();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [windowDimensions];
     cResult[0] = items;
@@ -131,8 +131,8 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
     guild_id = stateFromStores.guild_id;
   }
   let guild_id1;
-  const useActivityShelfItemData = tmp(17312).useActivityShelfItemData;
-  tmp(17312);
+  const useActivityShelfItemData = tmp(17593).useActivityShelfItemData;
+  tmp(17593);
   if (stateFromStores != null) {
     guild_id1 = stateFromStores.guild_id;
   }
@@ -187,7 +187,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
       }
     }
   }
-  const first1 = tmp5(tmp7(6670)(tmp22), 1)[0];
+  const first1 = tmp5(tmp7(6847)(tmp22), 1)[0];
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
     class Q {
       constructor() {
@@ -236,7 +236,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
   const stateFromStoresObject = tmpResult8.useStateFromStoresObject(tmp25, tmp26, tmp27);
   const gridOrientationLockState = stateFromStoresObject.gridOrientationLockState;
   const focusedOrientationLockState = stateFromStoresObject.focusedOrientationLockState;
-  const tmp30 = sharedVisible(9166)();
+  const tmp30 = sharedVisible(10732)();
   if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
     class Q {
       constructor() {
@@ -277,9 +277,9 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
     }
     const tmpResult9 = tmp(504);
     const stateFromStores1 = tmpResult9.useStateFromStores(tmp31, de);
-    const tmp7Result = sharedVisible(6664);
-    const analyticsLocations = tmp7Result(tmp7(6688).ACTIVITY_TILE).analyticsLocations;
-    const tmpResult10 = tmp(9137);
+    const tmp7Result = sharedVisible(6841);
+    const analyticsLocations = tmp7Result(tmp7(6865).ACTIVITY_TILE).analyticsLocations;
+    const tmpResult10 = tmp(9471);
     const analyticsContext = tmpResult10.useAnalyticsContext();
     const tmp36 = cResult[18];
     if (stateFromStores1 != null) {
@@ -332,7 +332,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
         pe.__closure = obj4;
         pe.__workletHash = 2072430391020;
         pe.__initData = __initData;
-        const tmpResult11 = tmp(4618);
+        const tmpResult11 = tmp(4810);
         class Se {
           constructor(visible, visible2) {
             let tmp = 1 === visible.visible;
@@ -361,10 +361,10 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
           }
         }
         const useAnimatedReaction = tmpResult11.useAnimatedReaction;
-        Se.__closure = { VoicePanelModes: controlsSpecs, runOnJS: tmp(4618).runOnJS, incrementActivityKey };
+        Se.__closure = { VoicePanelModes: controlsSpecs, runOnJS: tmp(4810).runOnJS, incrementActivityKey };
         Se.__workletHash = 11483202623318;
         Se.__initData = embeddedActivityParticipantId;
-        const obj5 = { VoicePanelModes: controlsSpecs, runOnJS: tmp(4618).runOnJS, incrementActivityKey };
+        const obj5 = { VoicePanelModes: controlsSpecs, runOnJS: tmp(4810).runOnJS, incrementActivityKey };
         const animatedReaction = useAnimatedReaction(pe, Se);
         const tmp5Result = channelId(obj2.useState(false), 2);
         closure_17 = tmp5Result[0];
@@ -383,26 +383,28 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
           ({ applicationId: obj11.applicationId, compositeInstanceId: obj11.instanceId } = stateFromStores1);
           embeddedActivityParticipantId = obj10.getEmbeddedActivityParticipantId(obj6);
         }
-        function fe() {
-          let tmp2 = null != embeddedActivityParticipantId;
-          if (tmp2) {
-            const value = focused.get();
-            let id;
-            if (value != null) {
-              id = value.id;
+        const tmpResult12 = tmp(4810);
+        class Pe {
+          constructor() {
+            let tmp2 = null != embeddedActivityParticipantId;
+            if (tmp2) {
+              const value = focused.get();
+              let id;
+              if (value != null) {
+                id = value.id;
+              }
+              tmp2 = id === tmp;
             }
-            tmp2 = id === tmp;
+            if (tmp2) {
+              tmp2 = mode.get() === controlsSpecs.PANEL;
+            }
+            return tmp2;
           }
-          if (tmp2) {
-            tmp2 = mode.get() === controlsSpecs.PANEL;
-          }
-          return tmp2;
         }
         const obj7 = { activityParticipantId: embeddedActivityParticipantId, focused, mode, VoicePanelModes: tmp49 };
-        fe.__closure = obj7;
-        fe.__workletHash = 2833167890519;
-        fe.__initData = __initData2;
-        const tmpResult12 = tmp(4618);
+        Pe.__closure = obj7;
+        Pe.__workletHash = 2833167890519;
+        Pe.__initData = __initData2;
         class Oe {
           constructor(arg0, arg1) {
             if (arg0 !== arg1) {
@@ -412,11 +414,11 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
           }
         }
         const useAnimatedReaction2 = tmpResult12.useAnimatedReaction;
-        Oe.__closure = { runOnJS: tmp(4618).runOnJS, setIsActivityFocused: tmp5Result[1] };
+        Oe.__closure = { runOnJS: tmp(4810).runOnJS, setIsActivityFocused: tmp5Result[1] };
         Oe.__workletHash = 5565798622964;
         Oe.__initData = __initData3;
-        const obj8 = { runOnJS: tmp(4618).runOnJS, setIsActivityFocused: tmp5Result[1] };
-        const animatedReaction2 = useAnimatedReaction2(fe, Oe);
+        const obj8 = { runOnJS: tmp(4810).runOnJS, setIsActivityFocused: tmp5Result[1] };
+        const animatedReaction2 = useAnimatedReaction2(Pe, Oe);
         const _Symbol = Symbol;
         if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
           class Q {
@@ -586,7 +588,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
   cResult[15] = undefined;
   cResult[16] = channelId;
   cResult[17] = de;
-}) : ((applicationId) => {
+}) : (function VoicePanelAnimatedActivityCardInner(applicationId) {
   let closure_10;
   let closure_2;
   let items13;
@@ -621,7 +623,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
   let tmp3 = channelId(focused.useState(0), 2);
   dependencyMap = tmp3[1];
   const first = tmp3[0];
-  const context = focused.useContext(sharedVisible(11915));
+  const context = focused.useContext(sharedVisible(11988));
   channelId = context.channelId;
   focused = context.focused;
   const layoutManager = context.layoutManager;
@@ -629,7 +631,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
   const windowDimensions = context.windowDimensions;
   const hideControls = context.hideControls;
   const controlsSpecs = context.controlsSpecs;
-  const tmp8 = sharedVisible(16621)();
+  const tmp8 = sharedVisible(16881)();
   VoicePanelControlsModes = tmp8;
   let obj2 = applicationId(504);
   const items = [windowDimensions];
@@ -641,8 +643,8 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
     guild_id = stateFromStores.guild_id;
   }
   let guild_id1;
-  const useActivityShelfItemData = tmp9(17312).useActivityShelfItemData;
-  applicationId(17312);
+  const useActivityShelfItemData = tmp9(17593).useActivityShelfItemData;
+  applicationId(17593);
   if (stateFromStores != null) {
     guild_id1 = stateFromStores.guild_id;
   }
@@ -657,7 +659,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
     const shelf = obj.fetchShelf(obj2);
   }, items2);
   const items3 = [applicationId];
-  first1 = tmp2(tmp5(6670)(items3), 1)[0];
+  first1 = tmp2(tmp5(6847)(items3), 1)[0];
   const items4 = [layoutManager];
   const items5 = [applicationId];
   const tmp9Result10 = applicationId(504);
@@ -667,7 +669,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
   }, items5);
   gridOrientationLockState = stateFromStoresObject.gridOrientationLockState;
   focusedOrientationLockState = stateFromStoresObject.focusedOrientationLockState;
-  const tmp19 = sharedVisible(9166)();
+  const tmp19 = sharedVisible(10732)();
   const items6 = [layoutManager];
   const tmp9Result11 = applicationId(504);
   const stateFromStores1 = tmp9Result11.useStateFromStores(items6, () => {
@@ -681,10 +683,10 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
       return applicationId === id;
     });
   });
-  const tmp5Result = sharedVisible(6664);
-  const analyticsLocations = tmp5Result(tmp5(6688).ACTIVITY_TILE).analyticsLocations;
+  const tmp5Result = sharedVisible(6841);
+  const analyticsLocations = tmp5Result(tmp5(6865).ACTIVITY_TILE).analyticsLocations;
   let tmp23 = null != tmp19;
-  const tmp9Result12 = applicationId(9137);
+  const tmp9Result12 = applicationId(9471);
   const analyticsContext = tmp9Result12.useAnalyticsContext();
   if (tmp23) {
     let id1;
@@ -747,11 +749,11 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
       obj.runOnJS(callback)();
     }
   };
-  const tmp9Result13 = applicationId(4618);
-  fn2.__closure = { VoicePanelModes: controlsSpecs, runOnJS: applicationId(4618).runOnJS, incrementActivityKey };
+  const tmp9Result13 = applicationId(4810);
+  fn2.__closure = { VoicePanelModes: controlsSpecs, runOnJS: applicationId(4810).runOnJS, incrementActivityKey };
   fn2.__workletHash = 16160706746790;
   fn2.__initData = __initData5;
-  ({ VoicePanelModes: controlsSpecs, runOnJS: applicationId(4618).runOnJS, incrementActivityKey });
+  ({ VoicePanelModes: controlsSpecs, runOnJS: applicationId(4810).runOnJS, incrementActivityKey });
   const animatedReaction = tmp9Result13.useAnimatedReaction(fn, fn2);
   const tmp2Result = tmp2(obj.useState(false), 2);
   first2 = tmp2Result[0];
@@ -761,7 +763,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
   if (null != stateFromStores1) {
     const obj4 = { applicationId: null, instanceId: null };
     ({ applicationId: obj9.applicationId, compositeInstanceId: obj9.instanceId } = stateFromStores1);
-    const tmp9Result14 = applicationId(9049);
+    const tmp9Result14 = applicationId(6043);
     embeddedActivityParticipantId = tmp9Result14.getEmbeddedActivityParticipantId(obj4);
   }
   function de() {
@@ -788,11 +790,11 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
       obj.runOnJS(closure_19)(arg0);
     }
   }
-  const tmp9Result15 = applicationId(4618);
-  re.__closure = { runOnJS: applicationId(4618).runOnJS, setIsActivityFocused: tmp2Result[1] };
+  const tmp9Result15 = applicationId(4810);
+  re.__closure = { runOnJS: applicationId(4810).runOnJS, setIsActivityFocused: tmp2Result[1] };
   re.__workletHash = 1820052119779;
   re.__initData = __initData7;
-  ({ runOnJS: applicationId(4618).runOnJS, setIsActivityFocused: tmp2Result[1] });
+  ({ runOnJS: applicationId(4810).runOnJS, setIsActivityFocused: tmp2Result[1] });
   const animatedReaction1 = tmp9Result15.useAnimatedReaction(de, re);
   const items8 = [layoutManager, applicationId];
   const memo1 = obj.useMemo(() => {
@@ -832,7 +834,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
   callback2 = obj.useCallback(() => {
     closure_22(layoutManager.getDefaultTargetDimensions());
   }, items10);
-  const tmp9Result16 = applicationId(4618);
+  const tmp9Result16 = applicationId(4810);
   class Se {
     constructor() {
       return windowDimensions.get();
@@ -856,15 +858,15 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
       obj2.runOnJS(callback2)();
     }
   }
-  Ae.__closure = { runOnJS: applicationId(4618).runOnJS, handleTargetAspectRatioParams: callback1, gridOrientationLockState, hasJoined: tmp23, updateNotJoinedActivityDimensions: callback2 };
+  Ae.__closure = { runOnJS: applicationId(4810).runOnJS, handleTargetAspectRatioParams: callback1, gridOrientationLockState, hasJoined: tmp23, updateNotJoinedActivityDimensions: callback2 };
   Ae.__workletHash = 10474681321888;
   Ae.__initData = __initData9;
-  ({ runOnJS: applicationId(4618).runOnJS, handleTargetAspectRatioParams: callback1, gridOrientationLockState, hasJoined: tmp23, updateNotJoinedActivityDimensions: callback2 });
+  ({ runOnJS: applicationId(4810).runOnJS, handleTargetAspectRatioParams: callback1, gridOrientationLockState, hasJoined: tmp23, updateNotJoinedActivityDimensions: callback2 });
   const animatedReaction2 = tmp9Result16.useAnimatedReaction(Se, Ae);
-  const tmp42 = !sharedVisible(9091)();
+  const tmp42 = !sharedVisible(10338)();
   closure_24 = tmp42;
   backgroundColor = tmp.activityContainerBackground.backgroundColor;
-  const tmp9Result17 = applicationId(4618);
+  const tmp9Result17 = applicationId(4810);
   class Ie {
     constructor() {
       let num2;
@@ -929,17 +931,17 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
     let tmp47;
     if (tmp23) {
       const obj8 = { gesture: tmp45, children: tmp51(tmp5Result3, obj10) };
-      const GestureDetector2 = tmp9(6147).GestureDetector;
+      const GestureDetector2 = tmp9(6326).GestureDetector;
       obj10 = { layout, pointerEvents: str, style: animatedStyle, children: items13 };
       str = "none";
       tmp51 = closure_16;
-      tmp5Result3 = sharedVisible(6577);
+      tmp5Result3 = sharedVisible(6753);
       if (first2) {
         str = "auto";
       }
-      const obj11 = { channelId, activityName: name, isActivityFocused: first2, children: focusedOrientationLockState(sharedVisible(9169), obj12, first) };
+      const obj11 = { channelId, activityName: name, isActivityFocused: first2, children: focusedOrientationLockState(sharedVisible(10735), obj12, first) };
       name = undefined;
-      const tmp5Result4 = sharedVisible(17313);
+      const tmp5Result4 = sharedVisible(17594);
       if (first1 != null) {
         name = first1.name;
       }
@@ -947,38 +949,38 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
       items13 = [focusedOrientationLockState(tmp5Result4, obj11), ];
       let tmp50Result = null;
       if (stateFromStores2) {
-        tmp50Result = tmp50(tmp5(17314), {});
+        tmp50Result = tmp50(tmp5(17595), {});
       }
       items13[1] = tmp50Result;
       tmp50Result2 = tmp50(GestureDetector2, obj8);
       tmp47 = tmp50;
     } else if (null == activityShelfItemData) {
       const obj13 = { activity: stateFromStores1, application: first1 };
-      tmp50Result2 = focusedOrientationLockState(tmp5(17315), obj13);
+      tmp50Result2 = focusedOrientationLockState(tmp5(17596), obj13);
       tmp47 = focusedOrientationLockState;
     } else {
       tmp47 = focusedOrientationLockState;
-      const obj14 = { gesture: memo1, children: focusedOrientationLockState(sharedVisible(17319), obj15) };
-      const GestureDetector = tmp9(6147).GestureDetector;
+      const obj14 = { gesture: memo1, children: focusedOrientationLockState(sharedVisible(17600), obj15) };
+      const GestureDetector = tmp9(6326).GestureDetector;
       obj15 = { context: memo, guildId: stateFromStores.guild_id, activityItem: activityShelfItemData, locationObject: analyticsContext.location, itemDimensions: first3, disableBadges: true };
       tmp50Result2 = focusedOrientationLockState(GestureDetector, obj14);
     }
     const obj16 = { value: analyticsLocations, children: tmp50Result2 };
-    return tmp47(applicationId(6664).AnalyticsLocationProvider, obj16);
+    return tmp47(applicationId(6841).AnalyticsLocationProvider, obj16);
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelAnimatedActivityCard(arg0) {
   let obj3;
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
   if (cResult[0] !== arg0) {
-    const obj2 = { theme: ThemeTypes.DARK, children: closure_15(closure_34, obj3) };
+    const obj2 = { theme: ThemeTypes.DARK, children: authStore3(closure_34, obj3) };
     obj3 = {};
     const ThemeContextProvider = native.ThemeContextProvider;
     const merged = Object.assign(arg0);
-    const tmp11 = closure_15(ThemeContextProvider, obj2);
+    const tmp11 = authStore3(ThemeContextProvider, obj2);
     cResult[0] = arg0;
     cResult[1] = tmp11;
     tmp4 = tmp11;
@@ -986,13 +988,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : ((arg0) => {
+}) : (function VoicePanelAnimatedActivityCard(arg0) {
   let obj2;
-  const obj = { theme: ThemeTypes.DARK, children: closure_15(closure_34, obj2) };
+  const obj = { theme: ThemeTypes.DARK, children: authStore3(closure_34, obj2) };
   obj2 = {};
   const ThemeContextProvider = native.ThemeContextProvider;
   const merged = Object.assign(arg0);
-  return closure_15(ThemeContextProvider, obj);
+  return authStore3(ThemeContextProvider, obj);
 }));
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/voice_panel/native/card/VoicePanelAnimatedActivityCard.tsx");

@@ -1,19 +1,17 @@
-// Module ID: 9075
-// Function ID: 9076
+// Module ID: 10662
+// Function ID: 10663
 // Name: migration
-// Dependencies: [19, 21, 4896, 587, 558, 576, 4602, 4571, 1936, 1188, 2]
+// Dependencies: [19, 21, 5090, 587, 558, 576, 4794, 4763, 1948, 1200, 2]
 
-// Module 9075 (migration)
+// Module 10662 (migration)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef1936 from "module_1936" /* 1936 */;
-import LinkingDefault from "Linking" /* 4571 */;
+import _modDef1948 from "module_1948" /* 1948 */;
+import LinkingDefault from "Linking" /* 4763 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let target;
 
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles((arg0) => {
@@ -26,7 +24,7 @@ let closure_5 = createStyles.createStyles((arg0) => {
   }
   return { link };
 });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((target) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntlLink(target) {
   let accessibilityRole;
   let onClick;
   let str;
@@ -36,14 +34,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((target) => {
   const cResult = obj.c(7);
   target = target.target;
   const children = target.children;
-  const tmp4 = closure_5(react.useContext(target(4602).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
+  const tmp4 = closure_5(react.useContext(target(4794).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
   if (typeof target === "string") {
     let tmp6;
     if (cResult[0] !== target) {
       const fn = function s() {
         const openURL = LinkingDefault.openURL;
         LinkingDefault;
-        const obj = _modDef1936;
+        const obj = _modDef1948;
         return openURL(obj.sanitizeUrl(target));
       };
       cResult[0] = target;
@@ -81,14 +79,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((target) => {
       }
     }
   }
-  const tmp8 = jsx(tmp(1188).LegacyText, { accessible: true, accessibilityRole: str, onPress: tmp5, style: tmp4.link, children });
+  const tmp8 = jsx(tmp(1200).LegacyText, { accessible: true, accessibilityRole: str, onPress: tmp5, style: tmp4.link, children });
   cResult[2] = str;
   cResult[3] = children;
   cResult[4] = tmp5;
   cResult[5] = tmp4.link;
   cResult[6] = tmp8;
   tmp7 = tmp8;
-}) : ((target) => {
+}) : (function IntlLink(target) {
   let accessibilityRole;
   let fn;
   let onClick;
@@ -96,12 +94,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((target) => {
   target = target.target;
   const children = target.children;
   const tmp = target;
-  const tmp3 = closure_5(react.useContext(target(4602).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
+  const tmp3 = closure_5(react.useContext(target(4794).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
   if (typeof target === "string") {
-    fn = function k() {
+    fn = function y() {
       const openURL = LinkingDefault.openURL;
       LinkingDefault;
-      const obj = _modDef1936;
+      const obj = _modDef1948;
       return openURL(obj.sanitizeUrl(target));
     };
     str = "link";
@@ -121,7 +119,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((target) => {
       }
     }
   }
-  return jsx(tmp(1188).LegacyText, { accessible: true, accessibilityRole: str, onPress: fn, style: tmp3.link, children });
+  return jsx(tmp(1200).LegacyText, { accessible: true, accessibilityRole: str, onPress: fn, style: tmp3.link, children });
 });
 const result = size.fileFinishedImporting("intl/native/migration.tsx");
 

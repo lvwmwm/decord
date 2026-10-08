@@ -1,21 +1,19 @@
-// Module ID: 15126
-// Function ID: 15127
+// Module ID: 15388
+// Function ID: 15389
 // Name: SettingsAppearanceMessagesHeaderItem
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1126, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1126, 5086, 2]
 
-// Module 15126 (SettingsAppearanceMessagesHeaderItem)
+// Module 15388 (SettingsAppearanceMessagesHeaderItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
+import Text_Text from "Text/Text" /* 5086 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let animatedStyles;
 
 let obj2;
 const View = react_native.View;
@@ -23,7 +21,7 @@ const jsx = Fragment.jsx;
 let obj = { messagesHeaderContainer: obj2 };
 obj2 = { flexDirection: "row", gap: nativeDefault.space.PX_12, alignItems: "center", marginHorizontal: nativeDefault.space.PX_24 };
 let closure_4 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((animatedStyles) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesHeaderItem(animatedStyles) {
   let first;
   let tmp7;
   const obj = react2;
@@ -60,7 +58,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((animatedStyles) =>
   cResult[4] = tmp7;
   cResult[5] = tmp11;
   tmp10 = tmp11;
-}) : ((animatedStyles) => {
+}) : (function MessagesHeaderItem(animatedStyles) {
   let intl;
   animatedStyles = animatedStyles.animatedStyles;
   ({ animated: true, style: animatedStyles.textNormal, variant: "text-lg/bold", children: intl.string(intl2.t.OIgYlQ) });

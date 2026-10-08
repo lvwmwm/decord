@@ -1,20 +1,20 @@
-// Module ID: 9112
-// Function ID: 9113
+// Module ID: 10685
+// Function ID: 10686
 // Name: CallBarAction
-// Dependencies: [109, 19, 17, 9086, 21, 4733, 587, 4896, 558, 576, 9113, 9114, 5916, 4892, 2]
+// Dependencies: [109, 19, 17, 10333, 21, 4927, 587, 5090, 558, 576, 10686, 10687, 6189, 5086, 2]
 
-// Module 9112 (CallBarAction)
+// Module 10685 (CallBarAction)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Pressables from "Pressables" /* 5916 */;
-import ChannelCallStore from "ChannelCallStore" /* 9086 */;
-import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 9114 */;
+import Pressables from "Pressables" /* 6189 */;
+import ChannelCallStore from "ChannelCallStore" /* 10333 */;
+import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 10687 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ColorUtils from "ColorUtils" /* 4733 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import ColorUtils from "ColorUtils" /* 4927 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,8 +29,8 @@ let rect;
 let tmp;
 let tmp8;
 let unpackModuleId;
-const Text_Text = tmp(4892);
-const CircleWithCutoutUtilsDefault = tmp8(9114);
+const Text_Text = tmp(5086);
+const CircleWithCutoutUtilsDefault = tmp8(10687);
 let closure_3 = ["isActive", "disableTint", "showBadge", "isSmallSize", "backgroundColor", "tintColor"];
 let closure_4 = ["isSmallSize"];
 let closure_5 = ["notifications", "isMentioned"];
@@ -50,7 +50,7 @@ obj2 = { backgroundColor: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROU
 obj3 = { backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_600 };
 let closure_18 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionButton(arg0) {
   let IconComponent;
   let accessibilityLabel;
   let accessibilityState;
@@ -195,7 +195,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                                 }
                                               }
                                               const obj3 = { accessibilityLabel, accessibilityRole: "button", accessibilityState, onPress: tmp15, disabled: false, style: tmp16, children: tmp42 };
-                                              const tmp48 = closure_11(onPress(5916).PressableOpacity, obj3);
+                                              const tmp48 = closure_11(onPress(6189).PressableOpacity, obj3);
                                               cResult[46] = accessibilityLabel;
                                               cResult[47] = accessibilityState;
                                               cResult[48] = tmp42;
@@ -226,9 +226,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                 const obj5 = { style: items1 };
                                 items1 = [tmp7.badge, ];
                                 const size1 = { width: result1, height: result1, borderRadius: tmp11.badgeRadius, top: tmpResult.getBadgeTop(tmp11.badgeRadius, tmp11.buttonRadius, cutoutPositionInDegrees), left: tmpResult2.getBadgeLeft(tmp11.badgeRadius, tmp11.buttonRadius, cutoutPositionInDegrees) };
-                                tmpResult = onPress(9114);
+                                tmpResult = onPress(10687);
                                 items1[1] = size1;
-                                tmpResult2 = onPress(9114);
+                                tmpResult2 = onPress(10687);
                                 tmp38 = closure_11(closure_9, obj5);
                               }
                               cResult[34] = tmp11.badgeRadius;
@@ -305,7 +305,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = num;
   cResult[5] = size3;
   tmp16 = size3;
-}) : ((appearsDisabled) => {
+}) : (function ActionButton(appearsDisabled) {
   let IconComponent;
   let accessibilityLabel;
   let accessibilityState;
@@ -406,7 +406,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_19 = tmp6;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ToggledActionButton(arg0) {
   let backgroundColor;
   let disableTint;
   let isActive;
@@ -516,7 +516,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[18] = tmp9;
   cResult[19] = tmp24;
   tmp22 = tmp24;
-}) : ((showBadge) => {
+}) : (function ToggledActionButton(showBadge) {
   let backgroundColor;
   let disableTint;
   let isActive;
@@ -562,7 +562,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp6(tmp7, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSmallSize) => {
+tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PrimaryActionButton(isSmallSize) {
   let tmp3;
   let tmp4;
   let tmp9;
@@ -603,7 +603,7 @@ tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSmallSize) => {
   cResult[5] = tmp3;
   cResult[6] = tmp12;
   tmp10 = tmp12;
-}) : ((isSmallSize) => {
+}) : (function PrimaryActionButton(isSmallSize) {
   let flag = isSmallSize.isSmallSize;
   if (flag === undefined) {
     flag = false;
@@ -615,7 +615,7 @@ tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSmallSize) => {
   return unpackModuleId(closure_19, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotifiedActionButton(arg0) {
   let isMentioned;
   let notifications;
   let obj3;
@@ -697,7 +697,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp11 = items;
   }
   notificationAreaMentioned = tmp10.notificationAreaMentioned;
-}) : ((isMentioned) => {
+}) : (function NotifiedActionButton(isMentioned) {
   let obj4;
   isMentioned = isMentioned.isMentioned;
   const notifications = isMentioned.notifications;

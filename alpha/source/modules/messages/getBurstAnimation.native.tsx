@@ -1,10 +1,10 @@
-// Module ID: 7424
-// Function ID: 7425
+// Module ID: 7899
+// Function ID: 7900
 // Name: getBurstAnimation
-// Dependencies: [5, 7425, 7426, 7427, 7428, 7429, 7430, 7431, 7432, 7433, 7434, 7435, 7436, 7437, 7438, 7439, 7440, 7441, 7442, 7443, 7444, 7445, 7446, 7447, 7448, 7449, 7450, 7451, 7452, 7453, 7454, 7455, 7456, 7457, 7458, 7459, 7460, 7461, 2]
+// Dependencies: [5, 7900, 7901, 7902, 7903, 7904, 7905, 7906, 7907, 7908, 7909, 7910, 7911, 7912, 7913, 7914, 7915, 7916, 7917, 7918, 7919, 7920, 7921, 7922, 7923, 7924, 7925, 7926, 7927, 7928, 7929, 7930, 7931, 7932, 7933, 7934, 7935, 7936, 2]
 // Exports: getBurstAnimation
 
-// Module 7424 (getBurstAnimation)
+// Module 7899 (getBurstAnimation)
 import _asyncToGeneratorDefault from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -13,187 +13,187 @@ let closure_5;
 
 const obj = {
   load() {
-    return require("module_7425");
+    return require("module_7900");
   }
 };
 const items = [
   obj,
   {
     load() {
-      return require("module_7426");
+      return require("module_7901");
     }
   },
   {
     load() {
-      return require("module_7427");
+      return require("module_7902");
     }
   },
   {
     load() {
-      return require("module_7428");
+      return require("module_7903");
     }
   },
   {
     load() {
-      return require("module_7429");
+      return require("module_7904");
     }
   },
   {
     load() {
-      return require("module_7430");
+      return require("module_7905");
     }
   },
   {
     load() {
-      return require("module_7431");
+      return require("module_7906");
     }
   },
   {
     load() {
-      return require("module_7432");
+      return require("module_7907");
     }
   },
   {
     load() {
-      return require("module_7433");
+      return require("module_7908");
     }
   },
   {
     load() {
-      return require("module_7434");
+      return require("module_7909");
     }
   },
   {
     load() {
-      return require("module_7435");
+      return require("module_7910");
     }
   },
   {
     load() {
-      return require("module_7436");
+      return require("module_7911");
     }
   },
   {
     load() {
-      return require("module_7437");
+      return require("module_7912");
     }
   },
   {
     load() {
-      return require("module_7438");
+      return require("module_7913");
     }
   },
   {
     load() {
-      return require("module_7439");
+      return require("module_7914");
     }
   },
   {
     load() {
-      return require("module_7440");
+      return require("module_7915");
     }
   },
   {
     load() {
-      return require("module_7441");
+      return require("module_7916");
     }
   },
   {
     load() {
-      return require("module_7442");
+      return require("module_7917");
     }
   }
 ];
 const obj2 = {
   load() {
-    return require("module_7443");
+    return require("module_7918");
   }
 };
 const items1 = [
   obj2,
   {
     load() {
-      return require("module_7444");
+      return require("module_7919");
     }
   },
   {
     load() {
-      return require("module_7445");
+      return require("module_7920");
     }
   },
   {
     load() {
-      return require("module_7446");
+      return require("module_7921");
     }
   },
   {
     load() {
-      return require("module_7447");
+      return require("module_7922");
     }
   },
   {
     load() {
-      return require("module_7448");
+      return require("module_7923");
     }
   },
   {
     load() {
-      return require("module_7449");
+      return require("module_7924");
     }
   },
   {
     load() {
-      return require("module_7450");
+      return require("module_7925");
     }
   },
   {
     load() {
-      return require("module_7451");
+      return require("module_7926");
     }
   },
   {
     load() {
-      return require("module_7452");
+      return require("module_7927");
     }
   },
   {
     load() {
-      return require("module_7453");
+      return require("module_7928");
     }
   },
   {
     load() {
-      return require("module_7454");
+      return require("module_7929");
     }
   },
   {
     load() {
-      return require("module_7455");
+      return require("module_7930");
     }
   },
   {
     load() {
-      return require("module_7456");
+      return require("module_7931");
     }
   },
   {
     load() {
-      return require("module_7457");
+      return require("module_7932");
     }
   },
   {
     load() {
-      return require("module_7458");
+      return require("module_7933");
     }
   },
   {
     load() {
-      return require("module_7459");
+      return require("module_7934");
     }
   },
   {
     load() {
-      return require("module_7460");
+      return require("module_7935");
     }
   }
 ];
@@ -265,6 +265,6 @@ let closure_0 = _asyncToGeneratorDefault((arg0, arg1, arg2) => {
 });
 const result = size.fileFinishedImporting("modules/messages/getBurstAnimation.native.tsx");
 
-export const getBurstAnimation = function() {
+export const getBurstAnimation = function getBurstAnimation() {
   return closure_0(...arguments);
 };

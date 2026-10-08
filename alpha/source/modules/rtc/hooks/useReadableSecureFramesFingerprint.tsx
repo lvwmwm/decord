@@ -1,9 +1,9 @@
-// Module ID: 9387
-// Function ID: 9388
+// Module ID: 8808
+// Function ID: 8809
 // Name: useReadableSecureFramesFingerprint
-// Dependencies: [19, 558, 576, 206, 9363, 2]
+// Dependencies: [19, 558, 576, 206, 8785, 2]
 
-// Module 9387 (useReadableSecureFramesFingerprint)
+// Module 8808 (useReadableSecureFramesFingerprint)
 import byteLengthDefault from "byteLength" /* 206 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -11,8 +11,8 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const _mod9363 = tmp(9363);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+const _mod8785 = tmp(8785);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReadableSecureFramesFingerprint(arg0) {
   let chunkSize;
   let desiredLength;
   let fingerprintBase64;
@@ -45,7 +45,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
     if ("" !== fingerprintBase64) {
       const obj2 = byteLengthDefault;
       const toByteArrayResult = obj2.toByteArray(fingerprintBase64);
-      const tmpResult = _mod9363;
+      const tmpResult = _mod8785;
       const str7 = tmpResult.generateDisplayableCode(toByteArrayResult, desiredLength, chunkSize);
       tmp5 = null;
       if (null != str7) {
@@ -69,7 +69,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
   cResult[2] = fingerprintBase64;
   cResult[3] = tmp5;
   tmp4 = tmp5;
-}) : (function(fingerprintBase64) {
+}) : (function useReadableSecureFramesFingerprint(fingerprintBase64) {
   fingerprintBase64 = fingerprintBase64.fingerprintBase64;
   const chunkSize = fingerprintBase64.chunkSize;
   const desiredLength = fingerprintBase64.desiredLength;
@@ -79,7 +79,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
       if ("" !== fingerprintBase64) {
         const obj = byteLengthDefault;
         const toByteArrayResult = obj.toByteArray(fingerprintBase64);
-        const obj2 = _mod9363;
+        const obj2 = _mod8785;
         const str5 = obj2.generateDisplayableCode(toByteArrayResult, desiredLength, chunkSize);
         const tmp12 = chunkSize;
         if (null == str5) {

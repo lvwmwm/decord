@@ -1,27 +1,27 @@
-// Module ID: 17185
-// Function ID: 17186
+// Module ID: 17466
+// Function ID: 17467
 // Name: ExternalPipViewVideo
-// Dependencies: [32, 19, 17, 2051, 1377, 4917, 21, 4896, 587, 558, 576, 9133, 4818, 1126, 4892, 504, 9157, 1188, 9141, 4586, 17186, 9149, 17187, 9145, 2]
+// Dependencies: [32, 19, 17, 2063, 1389, 5113, 21, 5090, 587, 558, 576, 10704, 5012, 1126, 5086, 504, 10723, 1200, 5229, 4778, 17467, 10715, 17468, 5219, 2]
 
-// Module 17185 (ExternalPipViewVideo)
+// Module 17466 (ExternalPipViewVideo)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import CallConstants from "CallConstants" /* 4917 */;
-import ExternalPipDefault from "ExternalPip" /* 9145 */;
-import VideoActionCreators from "VideoActionCreators" /* 17186 */;
-import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 17187 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import CallConstants from "CallConstants" /* 5113 */;
+import ExternalPipDefault from "ExternalPip" /* 5219 */;
+import VideoActionCreators from "VideoActionCreators" /* 17467 */;
+import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 17468 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import UserStore from "UserStore" /* 1377 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let dependencyMap, flag, importDefault, onLayout, streamId, updateVideoSizeResult, wasStream;
+let dependencyMap, importDefault;
 
 let StyleSheet;
 let closure_12;
@@ -33,13 +33,15 @@ let obj2;
 let obj3;
 let obj4;
 let obj5;
+let obj6;
+let obj7;
 let obj9;
 let unpackModuleId;
 ({ ActivityIndicator: hasOwnProperty, StyleSheet, View: metroRequire, PixelRatio: metroImportDefault } = react_native);
 const ParticipantTypes = CallConstants.ParticipantTypes;
 ({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: obj2, video: obj3, videoUnavailableWrap: obj4, videoUnavailableSpinner: obj5, unavailable: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, padding: nativeDefault.space.PX_8, margin: nativeDefault.space.PX_8, justifyContent: "center", alignContent: "center", alignItems: "center", flexDirection: "row", flexWrap: "wrap", flex: 1 }, unavailableText: { marginLeft: nativeDefault.space.PX_4, textAlign: "center" }, unavaiableImage: { marginBottom: nativeDefault.space.PX_8, resizeMode: "contain", aspectRatio: 2.5, width: "80%" }, user: obj9 };
+let obj = { container: obj2, video: obj3, videoUnavailableWrap: obj4, videoUnavailableSpinner: obj5, unavailable: obj6, unavailableText: obj7, unavaiableImage: { marginBottom: nativeDefault.space.PX_8, resizeMode: "contain", aspectRatio: 2.5, width: "80%" }, user: obj9 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -48,14 +50,14 @@ const merged1 = Object.assign(StyleSheet.absoluteFillObject);
 obj4 = { margin: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.sm, justifyContent: "center", alignContent: "center", flexDirection: "row", alignItems: "center", flexWrap: "wrap", flex: 1 };
 const merged2 = Object.assign(StyleSheet.absoluteFillObject);
 obj5 = { marginTop: nativeDefault.space.PX_16 };
-({ backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, padding: nativeDefault.space.PX_8, margin: nativeDefault.space.PX_8, justifyContent: "center", alignContent: "center", alignItems: "center", flexDirection: "row", flexWrap: "wrap", flex: 1 });
-({ marginLeft: nativeDefault.space.PX_4, textAlign: "center" });
+obj6 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, padding: nativeDefault.space.PX_8, margin: nativeDefault.space.PX_8, justifyContent: "center", alignContent: "center", alignItems: "center", flexDirection: "row", flexWrap: "wrap", flex: 1 };
+obj7 = { marginLeft: nativeDefault.space.PX_4, textAlign: "center" };
 obj9 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.sm, margin: nativeDefault.space.PX_8, alignItems: "center", justifyContent: "center" };
 ({ marginBottom: nativeDefault.space.PX_8, resizeMode: "contain", aspectRatio: 2.5, width: "80%" });
 const merged3 = Object.assign(StyleSheet.absoluteFillObject);
 let closure_14 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStreamReady(arg0, arg1) {
   let closure_129_4;
   let closure_3;
   let first;
@@ -106,34 +108,27 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
     cResult[9] = obj3;
     tmp10 = obj3;
   }
-  class R {
-    constructor() {
-      if (null == closure_2) {
-        tmp3 = globalThis;
-        _setTimeout = setTimeout;
-        tmp4 = closure_1;
-        closure_0 = setTimeout(() => {
-          closure_1_4(true);
-        }, closure_1);
-        return () => {
-          clearTimeout(closure_0);
-        };
-      } else {
-        tmp = closure_4;
-        flag = false;
-        tmp2 = closure_4(false);
-        return;
-      }
+  const fn2 = function h() {
+    if (null == first) {
+      const _setTimeout = setTimeout;
+      const timeout = setTimeout(() => {
+        closure_1_4(true);
+      }, num);
+      return () => {
+        clearTimeout(closure_0);
+      };
+    } else {
+      closure_4(false);
     }
-  }
+  };
   const items = [first, num];
   cResult[2] = first;
   cResult[3] = num;
-  cResult[4] = R;
+  cResult[4] = fn2;
   cResult[5] = items;
   tmp8 = items;
-  tmp7 = R;
-}) : ((arg0) => {
+  tmp7 = fn2;
+}) : (function useStreamReady(arg0) {
   let closure_3;
   let closure_4;
   let streamReadLongTime;
@@ -167,7 +162,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
   return { streamReady, streamReadLongTime, streamReadyCallback };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((wasStream) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalPipViewVideoUnavailable(wasStream) {
   let items;
   let tmp6Result;
   const obj = react2;
@@ -226,15 +221,15 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((wasStream) => 
   }
   if (wasStream) {
     const obj4 = { style: tmp4.unavaiableImage };
-    tmp6Result = tmp6(tmp(9133).StreamEnded, obj4);
+    tmp6Result = tmp6(tmp(10704).StreamEnded, obj4);
   } else {
-    tmp6Result = tmp6(tmp(4818).CircleInformationIcon, {});
+    tmp6Result = tmp6(tmp(5012).CircleInformationIcon, {});
   }
   cResult[0] = tmp4.unavaiableImage;
   cResult[1] = wasStream;
   cResult[2] = tmp6Result;
   tmp5 = tmp6Result;
-}) : ((wasStream) => {
+}) : (function ExternalPipViewVideoUnavailable(wasStream) {
   let items;
   let result;
   let tmp10;
@@ -247,17 +242,17 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((wasStream) => 
   const tmp3 = metroRequire;
   if (wasStream) {
     const obj2 = { style: tmp.unavaiableImage };
-    tmp4Result = tmp4(tmp5(9133).StreamEnded, obj2);
+    tmp4Result = tmp4(tmp5(10704).StreamEnded, obj2);
     tmp8 = tmp4;
     tmp10 = tmp5;
   } else {
-    tmp4Result = tmp4(tmp5(4818).CircleInformationIcon, {});
+    tmp4Result = tmp4(tmp5(5012).CircleInformationIcon, {});
     tmp8 = tmp4;
     tmp10 = tmp5;
   }
   items = [tmp4Result, ];
   const obj3 = { variant: "text-md/semibold", style: tmp.unavailableText, lineClamp: 1, children: result };
-  const Text = tmp10(4892).Text;
+  const Text = tmp10(5086).Text;
   const intl = tmp10(1126).intl;
   if (wasStream) {
     result = intl.formatToMarkdownString(tmp10(1126).t["1Ww0Hi"], {});
@@ -268,7 +263,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((wasStream) => 
   return tmp2(tmp3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalPipViewVideoUser(userId) {
   let first;
   let obj3;
   let tmp11;
@@ -345,7 +340,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
         return guild_id;
       }
     }
-    const tmpResult4 = userId(9157);
+    const tmpResult4 = userId(10723);
     const avatarSpeakingColor = tmpResult4.useAvatarSpeakingColor(obj3);
     if (cResult[9] === stateFromStores1) {
       class I {
@@ -371,8 +366,8 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
           return guild_id;
         }
       }
-      const obj2 = { user: stateFromStores, avatarDecoration: stateFromStores.avatarDecoration, guildId: stateFromStores1, size: userId(1188).AvatarSizes.XXLARGE, animate: speaking, speaking, speakingColor: avatarSpeakingColor };
-      const Avatar = tmp(1188).Avatar;
+      const obj2 = { user: stateFromStores, avatarDecoration: stateFromStores.avatarDecoration, guildId: stateFromStores1, size: userId(1200).AvatarSizes.XXLARGE, animate: speaking, speaking, speakingColor: avatarSpeakingColor };
+      const Avatar = tmp(1200).Avatar;
       tmp15 = closure_11(Avatar, obj2);
     }
     cResult[9] = stateFromStores1;
@@ -385,7 +380,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[6] = stateFromStores1;
   cResult[7] = userId;
   cResult[8] = obj3;
-}) : ((userId) => {
+}) : (function ExternalPipViewVideoUser(userId) {
   let speaking;
   let tmp8Result;
   userId = userId.userId;
@@ -404,21 +399,23 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
     }
     return guild_id;
   });
-  userId(9157);
+  userId(10723);
   const obj3 = { style: tmp.user, children: tmp8Result };
   tmp8Result = null;
   const tmp9 = closure_6;
   if (null != stateFromStores) {
-    const obj4 = { user: stateFromStores, avatarDecoration: stateFromStores.avatarDecoration, guildId: stateFromStores1, size: userId(1188).AvatarSizes.XXLARGE, animate: speaking, speaking, speakingColor: tmp7 };
-    const Avatar = tmp2(1188).Avatar;
+    const obj4 = { user: stateFromStores, avatarDecoration: stateFromStores.avatarDecoration, guildId: stateFromStores1, size: userId(1200).AvatarSizes.XXLARGE, animate: speaking, speaking, speakingColor: tmp7 };
+    const Avatar = tmp2(1200).Avatar;
     tmp8Result = tmp8(Avatar, obj4);
   }
   return closure_11(tmp9, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((streamId) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalPipViewVideoStream(streamId) {
   let closure_1;
   let first;
+  let items;
+  let obj6;
   let streamReadLongTime;
   let streamReady;
   let streamReadyCallback;
@@ -435,7 +432,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((streamId) => {
   } else {
     first = cResult[0];
   }
-  const tmpResult = tmp(9141);
+  const tmpResult = tmp(5229);
   const surfaceDirectRendererExperiment = tmpResult.useSurfaceDirectRendererExperiment(userId, first);
   ({ streamReady, streamReadLongTime, streamReadyCallback } = closure_15(streamId));
   closure_15(streamId);
@@ -454,96 +451,108 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((streamId) => {
   }
   if (cResult[3] === tmp7.video) {
     let tmp9;
+    let tmp13;
     if (cResult[4] === tmp8) {
       tmp9 = cResult[5];
     }
-    const tmpResult2 = tmp(4586);
+    const tmpResult2 = tmp(4778);
     const token = tmpResult2.useToken(nativeDefault.colors.TEXT_FEEDBACK_INFO);
     const tmp10 = importDefault;
     importDefault = closure_7.get();
     if (cResult[6] !== streamId) {
-      class P {
-        constructor(arg0) {
-          if (null != streamId) {
-            tmp2 = streamId;
-            tmp3 = closure_0;
-            tmp4 = closure_2;
-            ({ width, height } = streamId.nativeEvent.layout);
-            obj = closure_0(closure_2[20]);
-            size = { width: null, height: null };
-            tmp5 = closure_1;
-            size.width = width * closure_1;
-            size.height = height * closure_1;
-            num = 1;
-            updateVideoSizeResult = obj.updateVideoSize(tmp, size, 1);
-          }
-          return;
+      const fn = function w(nativeEvent) {
+        let height;
+        let width;
+        if (null != streamId) {
+          ({ width, height } = nativeEvent.nativeEvent.layout);
+          size = { width: width * closure_1, height: height * closure_1 };
+          const obj = VideoActionCreators;
+          obj.updateVideoSize(tmp, size, 1);
         }
-      }
+      };
       cResult[6] = streamId;
-      cResult[7] = P;
+      cResult[7] = fn;
+      tmp13 = fn;
     } else {
-      class P {
-        constructor(arg0) {
-          if (null != streamId) {
-            tmp2 = streamId;
-            tmp3 = closure_0;
-            tmp4 = closure_2;
-            ({ width, height } = streamId.nativeEvent.layout);
-            obj = closure_0(closure_2[20]);
-            size = { width: null, height: null };
-            tmp5 = closure_1;
-            size.width = width * closure_1;
-            size.height = height * closure_1;
-            num = 1;
-            updateVideoSizeResult = obj.updateVideoSize(tmp, size, 1);
-          }
-          return;
-        }
-      }
+      tmp13 = cResult[7];
     }
     if (cResult[8] === tmp13) {
-      class P {
-        constructor(arg0) {
-          if (null != streamId) {
-            tmp2 = streamId;
-            tmp3 = closure_0;
-            tmp4 = closure_2;
-            ({ width, height } = streamId.nativeEvent.layout);
-            obj = closure_0(closure_2[20]);
-            size = { width: null, height: null };
-            tmp5 = closure_1;
-            size.width = width * closure_1;
-            size.height = height * closure_1;
-            num = 1;
-            updateVideoSizeResult = obj.updateVideoSize(tmp, size, 1);
+      if (cResult[9] === streamId) {
+        if (cResult[10] === streamReadyCallback) {
+          if (cResult[11] === tmp9) {
+            let tmp14;
+            if (cResult[12] === surfaceDirectRendererExperiment) {
+              tmp14 = cResult[13];
+            }
+            if (cResult[14] === token) {
+              if (cResult[15] === streamReadLongTime) {
+                if (cResult[16] === streamReady) {
+                  if (cResult[17] === tmp7.videoUnavailableSpinner) {
+                    let tmp17;
+                    if (cResult[18] === tmp7.videoUnavailableWrap) {
+                      tmp17 = cResult[19];
+                    }
+                    if (cResult[20] === tmp14) {
+                      let tmp22;
+                      if (cResult[21] === tmp17) {
+                        tmp22 = cResult[22];
+                      }
+                      return tmp22;
+                    }
+                    const obj4 = { children: items };
+                    items = [tmp14, tmp17];
+                    const tmp25 = closure_12(closure_13, obj4);
+                    cResult[20] = tmp14;
+                    cResult[21] = tmp17;
+                    cResult[22] = tmp25;
+                    tmp22 = tmp25;
+                  }
+                }
+              }
+            }
+            let tmp18 = null;
+            if (null == streamReady) {
+              tmp18 = null;
+              if (streamReadLongTime) {
+                const obj5 = { style: tmp7.videoUnavailableWrap, children: closure_11(closure_5, obj6) };
+                obj6 = { style: tmp7.videoUnavailableSpinner, size: "large", color: token };
+                tmp18 = closure_11(closure_6, obj5);
+              }
+            }
+            cResult[14] = token;
+            cResult[15] = streamReadLongTime;
+            cResult[16] = streamReady;
+            cResult[17] = tmp7.videoUnavailableSpinner;
+            cResult[18] = tmp7.videoUnavailableWrap;
+            cResult[19] = tmp18;
+            tmp17 = tmp18;
           }
-          return;
         }
       }
     }
-    const obj4 = { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: tmp9, streamId, onReady: streamReadyCallback, onLayout: tmp13 };
+    const obj7 = { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: tmp9, streamId, onReady: streamReadyCallback, onLayout: tmp13 };
+    const tmp16 = closure_11(tmp10(10715), obj7);
     cResult[8] = tmp13;
     cResult[9] = streamId;
     cResult[10] = streamReadyCallback;
     cResult[11] = tmp9;
     cResult[12] = surfaceDirectRendererExperiment;
-    cResult[13] = closure_11(tmp10(9149), obj4);
-    const tmp16 = closure_11(tmp10(9149), obj4);
+    cResult[13] = tmp16;
+    tmp14 = tmp16;
   }
-  const items = [tmp7.video, tmp8];
+  const items1 = [tmp7.video, tmp8];
   cResult[3] = tmp7.video;
   cResult[4] = tmp8;
-  cResult[5] = items;
-  tmp9 = items;
-}) : ((streamId) => {
+  cResult[5] = items1;
+  tmp9 = items1;
+}) : (function ExternalPipViewVideoStream(streamId) {
   let obj4;
   let streamReadLongTime;
   let streamReadyCallback;
   let video;
   streamId = streamId.streamId;
   const userId = streamId.userId;
-  let obj = streamId(9141);
+  let obj = streamId(5229);
   const surfaceDirectRendererExperiment = obj.useSurfaceDirectRendererExperiment(userId, { location: "ExternalPipViewVideoStream" });
   const tmp2 = closure_15(streamId);
   const streamReady = tmp2.streamReady;
@@ -560,7 +569,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((streamId) => {
     items[1] = { opacity: num };
     return items;
   }, items);
-  const obj2 = streamId(4586);
+  const obj2 = streamId(4778);
   const token = obj2.useToken(streamReady(587).colors.TEXT_FEEDBACK_INFO);
   const value = closure_7.get();
   let c3 = value;
@@ -575,7 +584,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((streamId) => {
       obj.updateVideoSize(tmp, size, 1);
     }
   }, items1);
-  const children = [closure_11(streamReady(9149), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: streamReadyCallback, onLayout: callback }), ];
+  const children = [closure_11(streamReady(10715), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: streamReadyCallback, onLayout: callback }), ];
   let tmp10Result = null;
   const tmp8 = closure_12;
   const tmp9 = closure_13;
@@ -591,7 +600,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((streamId) => {
   return tmp8(tmp9, { children });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onLayout) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalPipViewVideo(onLayout) {
   let channelId;
   let first;
   let focusedParticipantType;
@@ -681,7 +690,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   cResult[3] = selectedParticipantUserId;
   cResult[4] = items;
   tmp5 = items;
-}) : ((onLayout) => {
+}) : (function ExternalPipViewVideo(onLayout) {
   let channelId;
   let focusedParticipantType;
   let selectedParticipantSpeaking;

@@ -1,11 +1,11 @@
-// Module ID: 11822
-// Function ID: 11823
+// Module ID: 11907
+// Function ID: 11908
 // Name: UsernameText
-// Dependencies: [19, 21, 558, 576, 5048, 4892, 2]
+// Dependencies: [19, 21, 558, 576, 5405, 5086, 2]
 
-// Module 11822 (UsernameText)
+// Module 11907 (UsernameText)
 import react2 from "react" /* 576 */;
-import NicknameUtils from "NicknameUtils" /* 5048 */;
+import NicknameUtils from "NicknameUtils" /* 5405 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -15,7 +15,7 @@ let c2;
 let c3;
 let closure_4;
 ({ jsxs: c2, Fragment: c3, jsx: closure_4 } = Fragment);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UsernameText(arg0) {
   let color;
   let guildId;
   let items;
@@ -91,7 +91,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp19 = tmp22;
           }
           const obj3 = { color: "text-muted", children: items1 };
-          const Text = tmp(4892).Text;
+          const Text = tmp(5086).Text;
           const merged = Object.assign(tmp4);
           items1 = ["#", user.discriminator];
           const tmp18 = React2(Text, obj3);
@@ -115,7 +115,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 return tmp32;
               }
               const obj4 = { children: tmp25 };
-              const Text3 = tmp(4892).Text;
+              const Text3 = tmp(5086).Text;
               const merged1 = Object.assign(tmp4);
               const tmp37 = React3(Text3, obj4);
               cResult[24] = tmp25;
@@ -130,7 +130,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const obj5 = { children: items2 };
           items2 = [tmp5, " ", ];
           const obj6 = { color: "text-muted", children: items3 };
-          const Text2 = tmp(4892).Text;
+          const Text2 = tmp(5086).Text;
           const merged2 = Object.assign(tmp4);
           items3 = ["(", tmp19, ")"];
           items2[2] = React2(Text2, obj6);
@@ -161,7 +161,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = str;
   cResult[2] = obj7;
   tmp4 = obj7;
-}) : ((guildId) => {
+}) : (function UsernameText(guildId) {
   let items;
   let items1;
   let items2;
@@ -189,14 +189,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj3 = { children: items };
     items = [user.toString(), ];
     const obj4 = { color: "text-muted", children: items1 };
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     const merged = Object.assign(obj);
     items1 = ["#", user.discriminator];
     items[1] = React2(Text, obj4);
     str1 = React2(_false, obj3);
   }
   const obj5 = { children: tmp13 };
-  const Text2 = tmp(4892).Text;
+  const Text2 = tmp(5086).Text;
   const merged1 = Object.assign(obj);
   tmp13 = str1;
   const tmp11 = React3;
@@ -204,7 +204,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj6 = { children: items2 };
     items2 = [name, " ", ];
     const obj7 = { color: "text-muted", children: items3 };
-    const Text3 = tmp(4892).Text;
+    const Text3 = tmp(5086).Text;
     const merged2 = Object.assign(obj);
     items3 = ["(", str1, ")"];
     items2[2] = React2(Text3, obj7);

@@ -1,24 +1,22 @@
-// Module ID: 9743
-// Function ID: 9744
+// Module ID: 10944
+// Function ID: 10945
 // Name: SpeakerTile
-// Dependencies: [19, 17, 4912, 4917, 21, 4896, 587, 4733, 9744, 558, 576, 1484, 5919, 504, 8102, 9157, 9745, 5916, 1126, 7931, 1188, 9747, 9749, 6464, 4892, 2]
+// Dependencies: [19, 17, 6041, 5113, 21, 5090, 587, 4927, 10945, 558, 576, 1496, 8302, 504, 7487, 10723, 10946, 6189, 1126, 8350, 1200, 10948, 10950, 6642, 5086, 2]
 // Exports: getSizeStyle, getTileWidthStyle
 
-// Module 9743 (SpeakerTile)
+// Module 10944 (SpeakerTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import CallConstants from "CallConstants" /* 4917 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8102 */;
-import StageTileTypes from "StageTileTypes" /* 9744 */;
+import CallConstants from "CallConstants" /* 5113 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7487 */;
+import StageTileTypes from "StageTileTypes" /* 10945 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4912 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import ColorUtils_mod from "ColorUtils" /* 4733 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import ColorUtils_mod from "ColorUtils" /* 4927 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let channel;
 
 let ColorUtils;
 let metroImportAll;
@@ -70,7 +68,7 @@ function getTileWidthStyle(arg0, arg1, arg2) {
   }
   return obj;
 }
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SpeakerTile(channel) {
   let blocked;
   let first;
   let ignored;
@@ -425,7 +423,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
   cResult[4] = items9;
   tmp10 = items9;
   tmp9 = S;
-}) : ((channel) => {
+}) : (function SpeakerTile(channel) {
   let blocked;
   let ignored;
   let intl;

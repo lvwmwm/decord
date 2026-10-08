@@ -1,19 +1,19 @@
-// Module ID: 8545
-// Function ID: 8546
+// Module ID: 9030
+// Function ID: 9031
 // Name: TestModeUtils
-// Dependencies: [8546, 8548, 558, 576, 504, 2]
+// Dependencies: [9031, 9032, 558, 576, 504, 2]
 // Exports: isAnyApplicationInTestMode, isTestModeForApplication
 
-// Module 8545 (TestModeUtils)
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 8546 */;
-import TestModeStore from "TestModeStore" /* 8548 */;
+// Module 9030 (TestModeUtils)
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9031 */;
+import TestModeStore from "TestModeStore" /* 9032 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsTestModeForApplication(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -31,7 +31,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function l() {
+    const fn = function p() {
       let tmp2 = null != closure_0;
       if (tmp2) {
         const result = TestModeStore.inTestModeForApplication(tmp) || DeveloperActivityShelfStore.inDevModeForApplication(tmp);
@@ -51,7 +51,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : ((arg0) => {
+}) : (function useIsTestModeForApplication(arg0) {
   let closure_0;
   _require = arg0;
   const items = [TestModeStore, DeveloperActivityShelfStore];

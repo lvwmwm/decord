@@ -1,16 +1,16 @@
-// Module ID: 11984
-// Function ID: 11985
+// Module ID: 12057
+// Function ID: 12058
 // Name: SmartSearchResultsStore
-// Dependencies: [4525, 1377, 11982, 1444, 11985, 504, 584, 2]
+// Dependencies: [4717, 1389, 12055, 1456, 12058, 504, 584, 2]
 
-// Module 11984 (SmartSearchResultsStore)
+// Module 12057 (SmartSearchResultsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import LRUCacheDefault from "LRUCache" /* 1444 */;
-import SmartSearchTypes from "SmartSearchTypes" /* 11985 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 11982 */;
+import LRUCacheDefault from "LRUCache" /* 1456 */;
+import SmartSearchTypes from "SmartSearchTypes" /* 12058 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 12055 */;
 import size from "module_2" /* 2 */;
 
 let MAX_CACHED_ANSWER_GUILDS;
@@ -36,20 +36,20 @@ class SmartSearchResultsStore extends Store {
     if (peekResult1 == null) {
       peekResult1 = null;
     }
-    return peekResult1;
+    let smartSearchResult;
+    if (peekResult1 != null) {
+      smartSearchResult = peekResult1.smartSearchResult;
+    }
+    if (smartSearchResult == null) {
+      smartSearchResult = null;
+    }
+    return smartSearchResult;
   }
   getStatus(arg0, arg1) {
-    const peekResult = closure_6.peek(arg0);
-    let peekResult1;
-    if (peekResult != null) {
-      peekResult1 = peekResult.peek(arg1);
-    }
-    if (peekResult1 == null) {
-      peekResult1 = null;
-    }
+    const answer = this.getAnswer(arg0, arg1);
     let status;
-    if (peekResult1 != null) {
-      status = peekResult1.status;
+    if (answer != null) {
+      status = answer.status;
     }
     if (status == null) {
       status = null;
@@ -66,6 +66,24 @@ class SmartSearchResultsStore extends Store {
       peekResult1 = null;
     }
     return null != peekResult1;
+  }
+  getResultFeedback(guildId, requestKey) {
+    const peekResult = closure_6.peek(guildId);
+    let peekResult1;
+    if (peekResult != null) {
+      peekResult1 = peekResult.peek(requestKey);
+    }
+    if (peekResult1 == null) {
+      peekResult1 = null;
+    }
+    let hasPositiveFeedback;
+    if (peekResult1 != null) {
+      hasPositiveFeedback = peekResult1.hasPositiveFeedback;
+    }
+    if (hasPositiveFeedback == null) {
+      hasPositiveFeedback = null;
+    }
+    return hasPositiveFeedback;
   }
 }
 const prototype = SmartSearchResultsStore.prototype;
@@ -88,7 +106,8 @@ let obj2 = {
       const result = obj.set(guildId, tmp5);
       value = tmp5;
     }
-    const obj3 = { status: SmartSearchTypes.SmartSearchStatus.LOADING, queryText, answerText: "", citations: [], channelIds };
+    const obj3 = { smartSearchResult: { status: SmartSearchTypes.SmartSearchStatus.LOADING, queryText, answerText: "", citations: [], channelIds }, hasPositiveFeedback: null };
+    ({ status: SmartSearchTypes.SmartSearchStatus.LOADING, queryText, answerText: "", citations: [], channelIds });
     const result1 = value.set(requestKey, obj3);
   },
   SMART_SEARCH_FETCH_SUCCESS: function handleFetchSuccess(smartSearchQuery) {
@@ -112,7 +131,8 @@ let obj2 = {
       const result = obj.set(guildId, tmp5);
       value = tmp5;
     }
-    const result1 = value.set(requestKey, { status: smartSearchStatus, queryText, answerText, citations, channelIds });
+    const obj3 = { smartSearchResult: { status: smartSearchStatus, queryText, answerText, citations, channelIds }, hasPositiveFeedback: null };
+    const result1 = value.set(requestKey, obj3);
   },
   SMART_SEARCH_FETCH_FAILURE: function handleFetchFailure(smartSearchQuery) {
     let channelIds;
@@ -132,7 +152,28 @@ let obj2 = {
       const result = obj.set(guildId, tmp5);
       value = tmp5;
     }
-    const result1 = value.set(requestKey, { status, queryText, answerText: "", citations: [], channelIds });
+    const obj3 = { smartSearchResult: { status, queryText, answerText: "", citations: [], channelIds }, hasPositiveFeedback: null };
+    const result1 = value.set(requestKey, obj3);
+  },
+  SMART_SEARCH_SET_RESULT_FEEDBACK: function handleSetResultFeedback(arg0) {
+    let hasPositiveFeedback;
+    let smartSearchQuery;
+    ({ smartSearchQuery, hasPositiveFeedback } = arg0);
+    const requestKey = smartSearchQuery.requestKey;
+    const peekResult = closure_6.peek(smartSearchQuery.guildId);
+    let peekResult1;
+    if (peekResult != null) {
+      peekResult1 = peekResult.peek(requestKey);
+    }
+    if (peekResult1 == null) {
+      peekResult1 = null;
+    }
+    if (null != peekResult1) {
+      if (peekResult1.hasPositiveFeedback !== hasPositiveFeedback) {
+        peekResult1.hasPositiveFeedback = hasPositiveFeedback;
+      }
+    }
+    return false;
   },
   GUILD_DELETE: function handleGuildDelete(guild) {
     guild = guild.guild;
@@ -156,12 +197,12 @@ let obj2 = {
         return false;
       } else {
         items = [];
-        const item = peekResult.forEach((channelIds, index) => {
+        const item = peekResult.forEach((smartSearchResult, index) => {
           let id;
-          channelIds = channelIds.channelIds;
+          const channelIds = smartSearchResult.smartSearchResult.channelIds;
           let hasItem = channelIds.includes(channel.id);
           if (!hasItem) {
-            const citations = channelIds.citations;
+            const citations = smartSearchResult.smartSearchResult.citations;
             hasItem = citations.some((channelId) => channelId.channelId === id.id);
           }
           if (hasItem) {

@@ -1,17 +1,17 @@
-// Module ID: 12526
-// Function ID: 12527
+// Module ID: 12622
+// Function ID: 12623
 // Name: NotificationSettingsMockChannels
-// Dependencies: [19, 17, 5078, 21, 4896, 587, 558, 576, 1126, 12032, 5871, 4892, 1188, 2]
+// Dependencies: [19, 17, 5972, 21, 5090, 587, 558, 576, 1126, 12105, 8183, 5086, 1200, 2]
 
-// Module 12526 (NotificationSettingsMockChannels)
+// Module 12622 (NotificationSettingsMockChannels)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReadStateConstants from "ReadStateConstants" /* 5078 */;
-import TextIcon2 from "TextIcon" /* 5871 */;
-import StaticChannelIndicatorDefault from "StaticChannelIndicator" /* 12032 */;
+import ReadStateConstants from "ReadStateConstants" /* 5972 */;
+import TextIcon2 from "TextIcon" /* 8183 */;
+import StaticChannelIndicatorDefault from "StaticChannelIndicator" /* 12105 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ const UnreadSetting = ReadStateConstants.UnreadSetting;
 let obj = { card: obj2, channel: { display: "flex", flexDirection: "row", alignItems: "center", paddingVertical: 4, justifyContent: "space-between", paddingRight: 12 }, channelName: { display: "flex", flexDirection: "row", alignItems: "center" } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, overflow: "hidden", borderRadius: 10, paddingVertical: 8 };
 let closure_7 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((unreadSetting) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotificationSettingsMockChannels(unreadSetting) {
   let arr;
   let closure_0;
   let intl;
@@ -100,14 +100,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((unreadSetting) => {
     items[1] = hasOwnProperty(TextIcon, obj4);
     const obj5 = { style: { marginLeft: 4 }, variant: "text-sm/semibold", color: str2, children: unread.name };
     str2 = undefined;
-    const Text = tmp5(4892).Text;
+    const Text = tmp5(5086).Text;
     if (unread.resolvedUnreadSetting === tmp6.ONLY_MENTIONS) {
       str2 = "text-muted";
     }
     items[2] = hasOwnProperty(Text, obj5);
     items1 = [metroRequire(View, obj2), ];
     let num = 0;
-    const Badge = tmp5(1188).Badge;
+    const Badge = tmp5(1200).Badge;
     if (unread.badged) {
       num = 1;
     }
@@ -119,7 +119,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((unreadSetting) => {
   cResult[4] = tmp4.channelName;
   cResult[5] = mapped;
   tmp7 = mapped;
-}) : ((unreadSetting) => {
+}) : (function NotificationSettingsMockChannels(unreadSetting) {
   let closure_0;
   let intl;
   let intl2;
@@ -161,14 +161,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((unreadSetting) => {
       items[1] = hasOwnProperty(TextIcon, obj4);
       const obj5 = { style: { marginLeft: 4 }, variant: "text-sm/semibold", color: str2, children: unread.name };
       str2 = undefined;
-      const Text = tmp5(4892).Text;
+      const Text = tmp5(5086).Text;
       if (unread.resolvedUnreadSetting === tmp6.ONLY_MENTIONS) {
         str2 = "text-muted";
       }
       items[2] = hasOwnProperty(Text, obj5);
       items1 = [metroRequire(View, obj2), ];
       let num = 0;
-      const Badge = tmp5(1188).Badge;
+      const Badge = tmp5(1200).Badge;
       if (unread.badged) {
         num = 1;
       }

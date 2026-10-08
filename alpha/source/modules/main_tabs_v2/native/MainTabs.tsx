@@ -1,30 +1,30 @@
-// Module ID: 15963
-// Function ID: 15964
+// Module ID: 16223
+// Function ID: 16224
 // Name: MainTabs
-// Dependencies: [19, 17, 21, 4896, 558, 576, 4738, 7520, 1618, 5918, 15964, 4595, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 4932, 9243, 1630, 10211, 16224, 4787, 2]
 
-// Module 15963 (MainTabs)
+// Module 16223 (MainTabs)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4738 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5918 */;
-import useActiveTheme from "useActiveTheme" /* 7520 */;
-import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 15964 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4932 */;
+import useActiveTheme from "useActiveTheme" /* 9243 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10211 */;
+import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 16224 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const native = tmp(4595);
+const native = tmp(4787);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ container: { flex: 1 } });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MainTabs() {
   let items;
   let left;
   let right;
@@ -103,7 +103,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   cResult[1] = right;
   cResult[2] = obj6;
   tmp9 = obj6;
-}) : (() => {
+}) : (function MainTabs() {
   let ThemeContextProvider;
   let items;
   let items1;

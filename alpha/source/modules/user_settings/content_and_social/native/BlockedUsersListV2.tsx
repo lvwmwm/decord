@@ -1,30 +1,29 @@
-// Module ID: 14622
-// Function ID: 14623
+// Module ID: 14883
+// Function ID: 14884
 // Name: BlockedUsersListV2
-// Dependencies: [19, 17, 4525, 21, 4896, 587, 558, 576, 6664, 6688, 1188, 14623, 1126, 4892, 14627, 6081, 6626, 504, 2]
+// Dependencies: [19, 17, 4717, 21, 5090, 587, 558, 576, 6841, 6865, 1200, 14884, 1126, 5086, 14888, 6267, 6803, 504, 2]
 
-// Module 14622 (BlockedUsersListV2)
+// Module 14883 (BlockedUsersListV2)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import TableRowGroup2 from "TableRowGroup" /* 6081 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6626 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 6664 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6688 */;
-import Blocked from "Blocked" /* 14623 */;
-import BlockedUserRowV2Default from "BlockedUserRowV2" /* 14627 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import TableRowGroup2 from "TableRowGroup" /* 6267 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6803 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 6841 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6865 */;
+import Blocked from "Blocked" /* 14884 */;
+import BlockedUserRowV2Default from "BlockedUserRowV2" /* 14888 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const useAnalyticsLocationsDefault = useAnalyticsLocations;
-let userIds;
 
 let hasOwnProperty;
 let metroRequire;
@@ -41,11 +40,12 @@ createStyles = createStyles.createStyles;
 obj3 = { marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_8 };
 let closure_7 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUsersList(userIds) {
   let intl3;
   let items;
   let list;
   let sectionLabelStyle;
+  let tmp26;
   let obj = react2;
   const cResult = obj.c(21);
   userIds = userIds.userIds;
@@ -57,11 +57,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
     const _Symbol3 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { Illustration: Blocked.Blocked, body: intl3.string(intl4.t.nnsFif) };
-      const EmptyState = tmp(1188).EmptyState;
+      const EmptyState = tmp(1200).EmptyState;
       intl3 = tmp(1126).intl;
-      const tmp33 = hasOwnProperty(EmptyState, obj2);
-      cResult[0] = tmp33;
-      first = tmp33;
+      const tmp32 = hasOwnProperty(EmptyState, obj2);
+      cResult[0] = tmp32;
+      first = tmp32;
     } else {
       first = cResult[0];
     }
@@ -82,8 +82,6 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
     if (cResult[3] === tmp4.sectionLabelStyle) {
       let tmp8;
       let tmp12;
-      let tmp14;
-      let tmp17;
       if (cResult[4] === tmp6) {
         tmp8 = cResult[5];
       }
@@ -100,69 +98,94 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
         let tmp15;
         const _Symbol2 = Symbol;
         if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-          const fn = function v(userId) {
-            const obj = { userId };
-            return closure_1_5(BlockedUserRowV2Default, obj, userId);
-          };
-          cResult[9] = fn;
-          tmp15 = fn;
+          class B {
+            constructor(arg0) {
+              obj = { userId: userIds };
+              return closure_1_5(closure_1_1(closure_1_2[14]), obj, userIds);
+            }
+          }
+          cResult[9] = B;
+          tmp15 = B;
         } else {
-          tmp15 = cResult[9];
+          class B {
+            constructor(arg0) {
+              obj = { userId: userIds };
+              return closure_1_5(closure_1_1(closure_1_2[14]), obj, userIds);
+            }
+          }
         }
         const mapped = userIds.map(tmp15);
         cResult[7] = userIds;
         cResult[8] = mapped;
-        tmp14 = mapped;
       } else {
-        tmp14 = cResult[8];
+        class B {
+          constructor(arg0) {
+            obj = { userId: userIds };
+            return closure_1_5(closure_1_1(closure_1_2[14]), obj, userIds);
+          }
+        }
       }
       if (cResult[10] !== tmp14) {
+        class B {
+          constructor(arg0) {
+            obj = { userId: userIds };
+            return closure_1_5(closure_1_1(closure_1_2[14]), obj, userIds);
+          }
+        }
         const obj4 = { hasIcons: true, children: tmp14 };
-        const tmp19 = hasOwnProperty(TableRowGroup2.TableRowGroup, obj4, tmp12);
         cResult[10] = tmp14;
-        cResult[11] = tmp19;
-        tmp17 = tmp19;
+        cResult[11] = hasOwnProperty(TableRowGroup2.TableRowGroup, obj4, tmp12);
+        const tmp18 = hasOwnProperty(TableRowGroup2.TableRowGroup, obj4, tmp12);
       } else {
-        tmp17 = cResult[11];
+        class B {
+          constructor(arg0) {
+            obj = { userId: userIds };
+            return closure_1_5(closure_1_1(closure_1_2[14]), obj, userIds);
+          }
+        }
       }
       if (cResult[12] === tmp8) {
-        let tmp20;
-        if (cResult[13] === tmp17) {
-          tmp20 = cResult[14];
+        class B {
+          constructor(arg0) {
+            obj = { userId: userIds };
+            return closure_1_5(closure_1_1(closure_1_2[14]), obj, userIds);
+          }
         }
         if (cResult[15] === tmp4.list) {
-          let tmp24;
-          if (cResult[16] === tmp20) {
-            tmp24 = cResult[17];
+          class B {
+            constructor(arg0) {
+              obj = { userId: userIds };
+              return closure_1_5(closure_1_1(closure_1_2[14]), obj, userIds);
+            }
           }
           if (cResult[18] === analyticsLocations) {
-            let tmp27;
-            if (cResult[19] === tmp24) {
-              tmp27 = cResult[20];
+            class B {
+              constructor(arg0) {
+                obj = { userId: userIds };
+                return closure_1_5(closure_1_1(closure_1_2[14]), obj, userIds);
+              }
             }
-            return tmp27;
+            return tmp26;
           }
-          const obj5 = { value: analyticsLocations, children: tmp24 };
-          const tmp29 = hasOwnProperty(useAnalyticsLocations.AnalyticsLocationProvider, obj5);
+          const obj5 = { value: analyticsLocations, children: tmp23 };
+          const tmp28 = hasOwnProperty(useAnalyticsLocations.AnalyticsLocationProvider, obj5);
           cResult[18] = analyticsLocations;
-          cResult[19] = tmp24;
-          cResult[20] = tmp29;
-          tmp27 = tmp29;
+          cResult[19] = tmp23;
+          cResult[20] = tmp28;
+          tmp26 = tmp28;
         }
-        const obj6 = { bottom: true, style: list, children: tmp20 };
-        const tmp26 = hasOwnProperty(common_SafeAreaView.SafeAreaPaddingView, obj6);
+        const obj6 = { bottom: true, style: list, children: tmp19 };
         cResult[15] = tmp4.list;
-        cResult[16] = tmp20;
-        cResult[17] = tmp26;
-        tmp24 = tmp26;
+        cResult[16] = tmp19;
+        cResult[17] = hasOwnProperty(common_SafeAreaView.SafeAreaPaddingView, obj6);
+        const tmp25 = hasOwnProperty(common_SafeAreaView.SafeAreaPaddingView, obj6);
       }
       const obj7 = { children: items };
       items = [tmp8, tmp17];
-      const tmp23 = metroRequire(ScrollView, obj7);
       cResult[12] = tmp8;
       cResult[13] = tmp17;
-      cResult[14] = tmp23;
-      tmp20 = tmp23;
+      cResult[14] = metroRequire(ScrollView, obj7);
+      const tmp22 = metroRequire(ScrollView, obj7);
     }
     const obj8 = { style: sectionLabelStyle, variant: "text-sm/semibold", color: "text-default", children: tmp6 };
     const tmp10 = hasOwnProperty(Text_Text.Text, obj8);
@@ -171,7 +194,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
     cResult[5] = tmp10;
     tmp8 = tmp10;
   }
-}) : ((userIds) => {
+}) : (function BlockedUsersList(userIds) {
   let SafeAreaPaddingView;
   let intl;
   let intl2;
@@ -214,7 +237,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
   return tmp7;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedBlockedUsersList() {
   let blockedIDs;
   let tmp4;
   let tmp5;
@@ -245,7 +268,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[3];
   }
   return tmp8;
-}) : (() => {
+}) : (function ConnectedBlockedUsersList() {
   let blockedIDs;
   const items = [RelationshipStore];
   const obj = get_initialized;

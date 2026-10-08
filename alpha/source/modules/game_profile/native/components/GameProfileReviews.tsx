@@ -1,31 +1,30 @@
-// Module ID: 8407
-// Function ID: 8408
+// Module ID: 8904
+// Function ID: 8905
 // Name: GameProfileReviews
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4602, 8361, 4571, 8408, 8409, 8352, 1126, 8371, 4892, 2027, 8410, 8416, 8367, 8368, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 4794, 8859, 4763, 8905, 8906, 8850, 1126, 8869, 5086, 2039, 8907, 6164, 8913, 8865, 8866, 2]
 
-// Module 8407 (GameProfileReviews)
+// Module 8904 (GameProfileReviews)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import GameDetectionTypes from "GameDetectionTypes" /* 2027 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8352 */;
-import useSteamWebsiteUrl2 from "useSteamWebsiteUrl" /* 8367 */;
-import SteamReleaseStatus from "SteamReleaseStatus" /* 8368 */;
-import calculateSteamReviewScoreDescription2 from "calculateSteamReviewScoreDescription" /* 8408 */;
-import GameProfileReviewUtils from "GameProfileReviewUtils" /* 8409 */;
+import GameDetectionTypes from "GameDetectionTypes" /* 2039 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8850 */;
+import useSteamWebsiteUrl2 from "useSteamWebsiteUrl" /* 8865 */;
+import SteamReleaseStatus from "SteamReleaseStatus" /* 8866 */;
+import calculateSteamReviewScoreDescription2 from "calculateSteamReviewScoreDescription" /* 8905 */;
+import GameProfileReviewUtils from "GameProfileReviewUtils" /* 8906 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let dependencyMap;
+let dependencyMap, tmp2;
 
 let closure_4;
 let hasOwnProperty;
-let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let obj2;
@@ -37,9 +36,9 @@ let obj7;
 let obj8;
 let obj9;
 let size;
-({ View: closure_4, Pressable: hasOwnProperty, Image: metroRequire } = react_native);
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let c9 = 32;
+({ View: closure_4, Pressable: hasOwnProperty } = react_native);
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let c8 = 32;
 let createStyles = createStyles_mod;
 let obj = { container: obj2, headerText: obj3, reviewContainer: obj4, reviewRow: obj5, reviewRowNotLast: obj6, steamNameContainer: obj7, steamRatingContainer: obj8, steamScoreDescription: { flexShrink: 1 }, opencriticRightContainer: obj9, opencriticTopCriticContainer: size, opencriticTopCriticImage: { width: 32, height: 32 }, opencriticTopCriticRatingContainer: { position: "absolute", top: 0, left: 1, right: 0, bottom: 0, alignItems: "center", justifyContent: "center" }, linkText: { textDecorationLine: "underline" } };
 obj2 = { gap: nativeDefault.space.PX_8 };
@@ -52,9 +51,9 @@ obj7 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX
 obj8 = { flexDirection: "row", alignItems: "flex-end", flexShrink: 1, paddingLeft: nativeDefault.space.PX_32, gap: nativeDefault.space.PX_4 };
 obj9 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 };
 size = { width: 32, height: 32, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, alignItems: "center", justifyContent: "center" };
-let closure_10 = createStyles(obj);
+let closure_9 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function SteamReviewRow(url) {
   let closure_2;
   let isRecentRating;
   let items;
@@ -86,10 +85,10 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
   url = url.url;
   ({ showBorderBottom, trackAction } = url);
   ({ title, rating, ratingCount, isRecentRating } = url);
-  const tmp4 = closure_10();
-  const alwaysShowLinkDecorations = react.useContext(url(4602).AccessibilityPreferencesContext).alwaysShowLinkDecorations;
-  const tmp6 = trackAction(8361);
-  const tmp6Result = tmp6(trackAction(4571).openURL);
+  const tmp4 = closure_9();
+  const alwaysShowLinkDecorations = react.useContext(url(4794).AccessibilityPreferencesContext).alwaysShowLinkDecorations;
+  const tmp6 = trackAction(8859);
+  const tmp6Result = tmp6(trackAction(4763).openURL);
   dependencyMap = tmp6Result;
   const tmp5 = trackAction;
   if (cResult[0] === alwaysShowLinkDecorations) {
@@ -163,7 +162,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
                                                 }
                                                 const obj2 = { onPress: tmp18, accessibilityRole: str2, accessibilityLabel: tmp19, style: tmp12, children: items };
                                                 items = [tmp13, tmp50];
-                                                const tmp55 = closure_8(tmp10, obj2);
+                                                const tmp55 = closure_7(tmp10, obj2);
                                                 cResult[62] = tmp10;
                                                 cResult[63] = tmp12;
                                                 cResult[64] = tmp13;
@@ -178,7 +177,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
                                           }
                                           const obj3 = { style: tmp17, children: items1 };
                                           items1 = [tmp43, tmp46];
-                                          const tmp52 = closure_8(tmp9, obj3);
+                                          const tmp52 = closure_7(tmp9, obj3);
                                           cResult[57] = tmp9;
                                           cResult[58] = tmp43;
                                           cResult[59] = tmp46;
@@ -186,16 +185,16 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
                                           cResult[61] = tmp52;
                                           tmp50 = tmp52;
                                         }
-                                        let tmp48 = null != ratingCount && tmp11 !== tmp(2027).SteamReviewScoreDescription.NO_USER_REVIEWS;
+                                        let tmp48 = null != ratingCount && tmp11 !== tmp(2039).SteamReviewScoreDescription.NO_USER_REVIEWS;
                                         if (tmp48) {
                                           const obj4 = { variant: "text-sm/medium", color: "text-subtle", children: str6.toString() };
-                                          const Text2 = tmp(4892).Text;
+                                          const Text2 = tmp(5086).Text;
                                           const intl2 = tmp(1126).intl;
                                           const format = intl2.format;
                                           const obj5 = { rating_count: ratingCount.toLocaleString() };
                                           const sgIoin = tmp(1126).t.sgIoin;
                                           str6 = format(sgIoin, obj5);
-                                          tmp48 = closure_7(Text2, obj4);
+                                          tmp48 = closure_6(Text2, obj4);
                                         }
                                         cResult[54] = ratingCount;
                                         cResult[55] = tmp11;
@@ -207,7 +206,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
                                 }
                               }
                               const obj6 = { variant: str, color: tmp14, lineClamp: num, style: tmp15, children: tmp16 };
-                              const tmp45 = closure_7(tmp8, obj6);
+                              const tmp45 = closure_6(tmp8, obj6);
                               cResult[47] = tmp8;
                               cResult[48] = str;
                               cResult[49] = tmp14;
@@ -230,9 +229,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
       }
     }
   }
-  const tmpResult = url(8408);
+  const tmpResult = url(8905);
   const result = tmpResult.calculateSteamReviewScoreDescription(rating, ratingCount, isRecentRating);
-  const tmpResult3 = url(8409);
+  const tmpResult3 = url(8906);
   const steamReviewScoreDescriptionColor = tmpResult3.getSteamReviewScoreDescriptionColor(result);
   if (cResult[30] === tmp6Result) {
     if (cResult[31] === trackAction) {
@@ -260,8 +259,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
         const _Symbol2 = Symbol;
         if (cResult[38] === Symbol.for("react.memo_cache_sentinel")) {
           const obj7 = { size: "sm", color: tmp5(587).colors.ICON_STRONG };
-          const SteamNeutralIcon = tmp(8371).SteamNeutralIcon;
-          const tmp31 = closure_7(SteamNeutralIcon, obj7);
+          const SteamNeutralIcon = tmp(8869).SteamNeutralIcon;
+          const tmp31 = closure_6(SteamNeutralIcon, obj7);
           cResult[38] = tmp31;
           tmp29 = tmp31;
         } else {
@@ -269,7 +268,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
         }
         if (cResult[39] !== title) {
           const obj8 = { variant: "heading-sm/medium", color: "mobile-text-heading-primary", children: title };
-          const tmp34 = closure_7(url(4892).Text, obj8);
+          const tmp34 = closure_6(url(5086).Text, obj8);
           cResult[39] = title;
           cResult[40] = tmp34;
           tmp32 = tmp34;
@@ -282,7 +281,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
             tmp35 = cResult[43];
           }
           const steamRatingContainer = tmp4.steamRatingContainer;
-          const Text = tmp(4892).Text;
+          const Text = tmp(5086).Text;
           let linkText;
           if (alwaysShowLinkDecorations) {
             linkText = tmp4.linkText;
@@ -292,7 +291,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
             if (cResult[45] === linkText) {
               tmp41 = cResult[46];
             }
-            const tmpResult4 = url(8409);
+            const tmpResult4 = url(8906);
             const steamReviewScoreDescriptionIntl = tmpResult4.getSteamReviewScoreDescriptionIntl(result);
             cResult[0] = alwaysShowLinkDecorations;
             cResult[1] = isRecentRating;
@@ -355,7 +354,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
         }
         const obj9 = { style: tmp4.steamNameContainer, children: items3 };
         items3 = [tmp29, tmp32];
-        const tmp38 = closure_8(closure_4, obj9);
+        const tmp38 = closure_7(closure_4, obj9);
         cResult[41] = tmp4.steamNameContainer;
         cResult[42] = tmp32;
         cResult[43] = tmp38;
@@ -380,7 +379,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
   cResult[32] = url;
   cResult[33] = M;
   tmp22 = M;
-}) : ((url) => {
+}) : (function SteamReviewRow(url) {
   let closure_2;
   let intl;
   let isRecentRating;
@@ -399,15 +398,15 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
   ({ showBorderBottom, trackAction } = url);
   const ratingCount = url.ratingCount;
   ({ title, rating, isRecentRating } = url);
-  const tmp = closure_10();
-  const alwaysShowLinkDecorations = react.useContext(url(4602).AccessibilityPreferencesContext).alwaysShowLinkDecorations;
-  const tmp5 = trackAction(8361);
-  const tmp5Result = tmp5(trackAction(4571).openURL);
+  const tmp = closure_9();
+  const alwaysShowLinkDecorations = react.useContext(url(4794).AccessibilityPreferencesContext).alwaysShowLinkDecorations;
+  const tmp5 = trackAction(8859);
+  const tmp5Result = tmp5(trackAction(4763).openURL);
   dependencyMap = tmp5Result;
-  const obj = url(8408);
+  const obj = url(8905);
   const result = obj.calculateSteamReviewScoreDescription(rating, ratingCount, isRecentRating);
   const items = [tmp5Result, url, trackAction];
-  const obj2 = url(8409);
+  const obj2 = url(8906);
   const steamReviewScoreDescriptionColor = obj2.getSteamReviewScoreDescriptionColor(result);
   const obj3 = {
     onPress: react.useCallback(() => {
@@ -429,25 +428,25 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
   items1[1] = showBorderBottom;
   const obj4 = { style: tmp.steamNameContainer, children: items2 };
   const obj5 = { size: "sm", color: tmp4(587).colors.ICON_STRONG };
-  const SteamNeutralIcon = tmp2(8371).SteamNeutralIcon;
-  items2 = [closure_7(SteamNeutralIcon, obj5), closure_7(tmp2(4892).Text, { variant: "heading-sm/medium", color: "mobile-text-heading-primary", children: title })];
-  items3 = [closure_8(closure_4, obj4), ];
+  const SteamNeutralIcon = tmp2(8869).SteamNeutralIcon;
+  items2 = [closure_6(SteamNeutralIcon, obj5), closure_6(tmp2(5086).Text, { variant: "heading-sm/medium", color: "mobile-text-heading-primary", children: title })];
+  items3 = [closure_7(closure_4, obj4), ];
   const obj6 = { style: tmp.steamRatingContainer, children: items5 };
   const obj7 = { variant: "text-sm/medium", color: steamReviewScoreDescriptionColor, lineClamp: 1, style: items4, children: tmp2Result.getSteamReviewScoreDescriptionIntl(result) };
   items4 = [tmp.steamScoreDescription, ];
   let linkText;
-  const Text = tmp2(4892).Text;
+  const Text = tmp2(5086).Text;
   const tmp11 = closure_4;
   if (alwaysShowLinkDecorations) {
     linkText = tmp.linkText;
   }
   items4[1] = linkText;
-  tmp2Result = url(8409);
-  items5 = [closure_7(Text, obj7), ];
-  let tmp12Result = null != ratingCount && result !== tmp2(2027).SteamReviewScoreDescription.NO_USER_REVIEWS;
+  tmp2Result = url(8906);
+  items5 = [closure_6(Text, obj7), ];
+  let tmp12Result = null != ratingCount && result !== tmp2(2039).SteamReviewScoreDescription.NO_USER_REVIEWS;
   if (tmp12Result) {
     const obj8 = { variant: "text-sm/medium", color: "text-subtle", children: str.toString() };
-    const Text2 = tmp2(4892).Text;
+    const Text2 = tmp2(5086).Text;
     const intl2 = tmp2(1126).intl;
     const format = intl2.format;
     const obj9 = { rating_count: ratingCount.toLocaleString() };
@@ -456,11 +455,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
     tmp12Result = tmp12(Text2, obj8);
   }
   items5[1] = tmp12Result;
-  items3[1] = closure_8(tmp11, obj6);
-  return closure_8(tmp10, obj3);
+  items3[1] = closure_7(tmp11, obj6);
+  return closure_7(tmp10, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function OpenCriticReview(trackAction) {
   let Text2;
   let backgroundColor;
   let closure_2;
@@ -477,6 +476,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) =
   let obj12;
   let obj13;
   let tier;
+  let tmp10Result;
   let tmp7;
   let tmpResult5;
   let tmpResult6;
@@ -486,7 +486,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) =
   const cResult = obj.c(35);
   ({ game, url } = trackAction);
   trackAction = trackAction.trackAction;
-  const tmp4 = closure_10();
+  const tmp4 = closure_9();
   const reviews = game.reviews;
   let opencritic;
   const first = cResult[0];
@@ -500,7 +500,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) =
       opencritic1 = reviews2.opencritic;
     }
     if (opencritic1 == null) {
-      opencritic1 = { topCriticRating: "duration", topCriticRatingCount: "toCharArray$esjava$1", tier: "toCharArray$esjava$1" };
+      opencritic1 = { topCriticRating: "useSharedValue", topCriticRatingCount: "apply", tier: "next" };
     }
     const reviews3 = game.reviews;
     let opencritic2;
@@ -521,10 +521,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) =
   if (num3 == null) {
     num3 = -1;
   }
-  const tmp11 = trackAction(8361);
-  const tmp11Result = tmp11(trackAction(4571).openURL);
+  const tmp11 = trackAction(8859);
+  const tmp11Result = tmp11(trackAction(4763).openURL);
   dependencyMap = tmp11Result;
-  const tmp10 = trackAction;
   if (cResult[2] === tmp11Result) {
     if (cResult[3] === trackAction) {
       let tmp13;
@@ -538,7 +537,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) =
       if (cResult[6] !== tier) {
         let str = "";
         if (null != tier) {
-          const tmpResult = url(8410);
+          const tmpResult = url(8907);
           str = tmpResult.getOpenCriticTierText(tier);
         }
         cResult[6] = tier;
@@ -550,7 +549,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) =
       if (cResult[8] !== tier) {
         let openCriticCircleRatingColor;
         if (null != tier) {
-          const tmpResult4 = url(8410);
+          const tmpResult4 = url(8907);
           openCriticCircleRatingColor = tmpResult4.getOpenCriticCircleRatingColor(tier);
         } else {
           openCriticCircleRatingColor = { foregroundColor: "", backgroundColor: "" };
@@ -574,9 +573,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) =
       const _Symbol2 = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
         const obj2 = { variant: "heading-sm/medium", color: "mobile-text-heading-primary", children: intl2.string(url(1126).t["UxvER+"]) };
-        const Text = tmp(4892).Text;
+        const Text = tmp(5086).Text;
         intl2 = tmp(1126).intl;
-        const tmp22 = closure_7(Text, obj2);
+        const tmp22 = closure_6(Text, obj2);
         cResult[11] = tmp22;
         tmp20 = tmp22;
       } else {
@@ -602,11 +601,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) =
                       if (cResult[24] !== ((topCriticRating <= 0 || num3 <= 0) && null == tier)) {
                         let tmp35 = null;
                         if ((topCriticRating <= 0 || num3 <= 0) && null == tier) {
-                          const obj3 = { variant: "text-xs/medium", color: tmpResult5.getSteamReviewScoreDescriptionColor(url(2027).SteamReviewScoreDescription.NO_USER_REVIEWS), children: intl4.string(url(1126).t["0xYzpO"]) };
-                          const Text3 = tmp(4892).Text;
-                          tmpResult5 = url(8409);
+                          const obj3 = { variant: "text-xs/medium", color: tmpResult5.getSteamReviewScoreDescriptionColor(url(2039).SteamReviewScoreDescription.NO_USER_REVIEWS), children: intl4.string(url(1126).t["0xYzpO"]) };
+                          const Text3 = tmp(5086).Text;
+                          tmpResult5 = url(8906);
                           intl4 = tmp(1126).intl;
-                          tmp35 = closure_7(Text3, obj3);
+                          tmp35 = closure_6(Text3, obj3);
                         }
                         cResult[24] = (topCriticRating <= 0 || num3 <= 0) && null == tier;
                         cResult[25] = tmp35;
@@ -632,7 +631,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) =
                             }
                             const obj4 = { onPress: tmp13, accessibilityRole: "link", accessibilityLabel: tmp18, style: tmp4.reviewRow, children: items };
                             items = [tmp20, tmp37];
-                            const tmp44 = closure_8(closure_5, obj4);
+                            const tmp44 = closure_7(closure_5, obj4);
                             cResult[31] = tmp13;
                             cResult[32] = tmp4.reviewRow;
                             cResult[33] = tmp37;
@@ -643,7 +642,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) =
                       }
                       const obj5 = { style: tmp4.opencriticRightContainer, children: items1 };
                       items1 = [tmp23, tmp28, tmp34];
-                      const tmp40 = closure_8(closure_4, obj5);
+                      const tmp40 = closure_7(closure_4, obj5);
                       cResult[26] = tmp4.opencriticRightContainer;
                       cResult[27] = tmp23;
                       cResult[28] = tmp28;
@@ -663,13 +662,13 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) =
               items2[1] = obj7;
               intl3 = tmp(1126).intl;
               const obj8 = { rating: topCriticRating, strokeColor: foregroundColor, size };
-              items3 = [closure_7(tmp10(8416), obj8), ];
-              const obj9 = { style: tmp4.opencriticTopCriticRatingContainer, children: closure_7(Text2, obj10) };
+              items3 = [closure_6(trackAction(8913), obj8), ];
+              const obj9 = { style: tmp4.opencriticTopCriticRatingContainer, children: closure_6(Text2, obj10) };
               const _Math = Math;
               obj10 = { variant: "text-xs/bold", color: "text-overlay-light", children: Math.floor(topCriticRating) };
-              Text2 = tmp(4892).Text;
-              items3[1] = closure_7(closure_4, obj9);
-              tmp29 = closure_8(closure_4, obj6);
+              Text2 = tmp(5086).Text;
+              items3[1] = closure_6(closure_4, obj9);
+              tmp29 = closure_7(closure_4, obj6);
             }
             cResult[17] = backgroundColor;
             cResult[18] = foregroundColor;
@@ -684,11 +683,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) =
       }
       let tmp24 = null;
       if (null != tier) {
-        const obj11 = { style: tmp4.opencriticTopCriticContainer, accessibilityLabel: tmp14, accessibilityRole: "image", children: closure_7(closure_6, obj12) };
+        const obj11 = { style: tmp4.opencriticTopCriticContainer, accessibilityLabel: tmp14, accessibilityRole: "image", children: closure_6(tmp10Result, obj12) };
         obj12 = { source: obj13, style: tmp4.opencriticTopCriticImage, accessible: true, accessibilityLabel: tmp14 };
         obj13 = { uri: tmpResult6.getOpenCriticTierImage(tier) };
-        tmpResult6 = url(8410);
-        tmp24 = closure_7(closure_4, obj11);
+        tmp10Result = trackAction(6164);
+        tmpResult6 = url(8907);
+        tmp24 = closure_6(closure_4, obj11);
       }
       cResult[12] = tmp4.opencriticTopCriticContainer;
       cResult[13] = tmp4.opencriticTopCriticImage;
@@ -698,16 +698,19 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) =
       tmp23 = tmp24;
     }
   }
-  const fn = function b() {
-    trackAction(GameProfileAnalyticUtils.GameProfileTrackActionActions.OpenCriticReviews);
-    closure_2(url);
-  };
+  class S {
+    constructor() {
+      tmp = trackAction(closure_0(closure_2[12]).GameProfileTrackActionActions.OpenCriticReviews);
+      tmp2 = closure_2(url);
+      return;
+    }
+  }
   cResult[2] = tmp11Result;
   cResult[3] = trackAction;
   cResult[4] = url;
-  cResult[5] = fn;
-  tmp13 = fn;
-}) : ((url) => {
+  cResult[5] = S;
+  tmp13 = S;
+}) : (function OpenCriticReview(url) {
   let Text2;
   let backgroundColor;
   let closure_2;
@@ -728,19 +731,20 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) =
   let tmp11Result;
   let tmp11Result2;
   let tmp12Result2;
+  let tmp2Result;
   let topCriticRating;
   url = url.url;
   const trackAction = url.trackAction;
   dependencyMap = undefined;
   const game = url.game;
-  const tmp = closure_10();
+  const tmp = closure_9();
   const reviews = game.reviews;
   let opencritic;
   if (reviews != null) {
     opencritic = reviews.opencritic;
   }
   if (opencritic == null) {
-    opencritic = { topCriticRating: "duration", topCriticRatingCount: "toCharArray$esjava$1", tier: "toCharArray$esjava$1" };
+    opencritic = { topCriticRating: "useSharedValue", topCriticRatingCount: "apply", tier: "next" };
   }
   ({ tier, topCriticRating } = opencritic);
   if (topCriticRating == null) {
@@ -750,8 +754,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) =
   if (num == null) {
     num = -1;
   }
-  const tmp4 = trackAction(8361);
-  const tmp4Result = tmp4(trackAction(4571).openURL);
+  const tmp4 = trackAction(8859);
+  const tmp4Result = tmp4(trackAction(4763).openURL);
   dependencyMap = tmp4Result;
   const items = [tmp4Result, url, trackAction];
   let str = "";
@@ -759,13 +763,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) =
     trackAction(GameProfileAnalyticUtils.GameProfileTrackActionActions.OpenCriticReviews);
     closure_2(url);
   }, items);
-  const tmp2 = trackAction;
   if (null != tier) {
-    const obj2 = url(8410);
+    const obj2 = url(8907);
     str = obj2.getOpenCriticTierText(tier);
   }
   if (null != tier) {
-    const obj4 = url(8410);
+    const obj4 = url(8907);
     openCriticCircleRatingColor = obj4.getOpenCriticCircleRatingColor(tier);
   } else {
     openCriticCircleRatingColor = { foregroundColor: "", backgroundColor: "" };
@@ -774,17 +777,18 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) =
   const obj = { onPress: callback, accessibilityRole: "link", accessibilityLabel: intl.string(url(1126).t.aLNBAw), style: tmp.reviewRow, children: items1 };
   intl = url(1126).intl;
   const obj3 = { variant: "heading-sm/medium", color: "mobile-text-heading-primary", children: intl2.string(url(1126).t["UxvER+"]) };
-  const Text = url(4892).Text;
+  const Text = url(5086).Text;
   intl2 = url(1126).intl;
-  items1 = [closure_7(Text, obj3), ];
+  items1 = [closure_6(Text, obj3), ];
   let tmp12Result = null;
   const obj5 = { style: tmp.opencriticRightContainer, children: items2 };
   const tmp10 = closure_5;
   if (null != tier) {
-    const obj6 = { style: tmp.opencriticTopCriticContainer, accessibilityLabel: str, accessibilityRole: "image", children: closure_7(closure_6, obj7) };
+    const obj6 = { style: tmp.opencriticTopCriticContainer, accessibilityLabel: str, accessibilityRole: "image", children: closure_6(tmp2Result, obj7) };
     obj7 = { source: obj8, style: tmp.opencriticTopCriticImage, accessible: true, accessibilityLabel: str };
     obj8 = { uri: tmp11Result.getOpenCriticTierImage(tier) };
-    tmp11Result = url(8410);
+    tmp2Result = trackAction(6164);
+    tmp11Result = url(8907);
     tmp12Result = tmp12(tmp13, obj6);
   }
   items2 = [tmp12Result, , ];
@@ -800,12 +804,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) =
         items3[1] = obj10;
         intl3 = tmp11(1126).intl;
         const obj11 = { rating: topCriticRating, strokeColor: foregroundColor, size };
-        items4 = [closure_7(tmp2(8416), obj11), ];
-        const obj12 = { style: tmp.opencriticTopCriticRatingContainer, children: closure_7(Text2, obj13) };
+        items4 = [closure_6(tmp2(8913), obj11), ];
+        const obj12 = { style: tmp.opencriticTopCriticRatingContainer, children: closure_6(Text2, obj13) };
         const _Math = Math;
         obj13 = { variant: "text-xs/bold", color: "text-overlay-light", children: Math.floor(topCriticRating) };
-        Text2 = tmp11(4892).Text;
-        items4[1] = closure_7(closure_4, obj12);
+        Text2 = tmp11(5086).Text;
+        items4[1] = closure_6(closure_4, obj12);
         tmp9Result = tmp9(tmp13, obj9);
       }
     }
@@ -814,9 +818,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) =
   if (topCriticRating <= 0) {
     tmp12Result2 = null;
     if (null == tier) {
-      const obj14 = { variant: "text-xs/medium", color: tmp11Result2.getSteamReviewScoreDescriptionColor(url(2027).SteamReviewScoreDescription.NO_USER_REVIEWS), children: intl4.string(url(1126).t["0xYzpO"]) };
-      const Text3 = tmp11(4892).Text;
-      tmp11Result2 = url(8409);
+      const obj14 = { variant: "text-xs/medium", color: tmp11Result2.getSteamReviewScoreDescriptionColor(url(2039).SteamReviewScoreDescription.NO_USER_REVIEWS), children: intl4.string(url(1126).t["0xYzpO"]) };
+      const Text3 = tmp11(5086).Text;
+      tmp11Result2 = url(8906);
       intl4 = tmp11(1126).intl;
       tmp12Result2 = tmp12(Text3, obj14);
     }
@@ -824,11 +828,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) =
     tmp12Result2 = null;
   }
   items2[2] = tmp12Result2;
-  items1[1] = closure_8(closure_4, obj5);
-  return closure_8(tmp10, obj);
+  items1[1] = closure_7(closure_4, obj5);
+  return closure_7(tmp10, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileReviews(arg0) {
   let container;
   let game;
   let headerText;
@@ -843,7 +847,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = react2;
   const cResult = obj.c(35);
   ({ game, trackAction } = arg0);
-  const tmp4 = closure_10();
+  const tmp4 = closure_9();
   let id;
   const useSteamWebsiteUrl = useSteamWebsiteUrl2.useSteamWebsiteUrl;
   useSteamWebsiteUrl2;
@@ -927,7 +931,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[4] !== tmp4.headerText) {
         const obj2 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: headerText, children: tmp25 };
-        const tmp29 = metroImportDefault(Text_Text.Text, obj2);
+        const tmp29 = metroRequire(Text_Text.Text, obj2);
         cResult[4] = tmp4.headerText;
         cResult[5] = tmp29;
         tmp27 = tmp29;
@@ -988,7 +992,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                         }
                                         const obj3 = { style: container, children: items };
                                         items = [tmp27, tmp50];
-                                        const tmp57 = metroImportAll(React3, obj3);
+                                        const tmp57 = metroImportDefault(React3, obj3);
                                         cResult[31] = tmp4.container;
                                         cResult[32] = tmp50;
                                         cResult[33] = tmp27;
@@ -999,7 +1003,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                   }
                                   const obj4 = { style: tmp4.reviewContainer, children: items1 };
                                   items1 = [tmp34, tmp42, tmp46];
-                                  const tmp53 = metroImportAll(React3, obj4);
+                                  const tmp53 = metroImportDefault(React3, obj4);
                                   cResult[26] = tmp4.reviewContainer;
                                   cResult[27] = tmp46;
                                   cResult[28] = tmp34;
@@ -1014,7 +1018,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                               tmp47 = null;
                               if (null != opencriticUrl) {
                                 const obj5 = { game, url: opencriticUrl, trackAction };
-                                tmp47 = metroImportDefault(closure_12, obj5);
+                                tmp47 = metroRequire(closure_11, obj5);
                               }
                             }
                             cResult[21] = game;
@@ -1035,7 +1039,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   if (null != steamWebsiteUrl) {
                     const obj6 = { url: steamWebsiteUrl, showBorderBottom: null != opencritic && null != opencriticUrl, trackAction, title: intl3.string(tmp20), rating, ratingCount, isRecentRating: false };
                     intl3 = tmp(1126).intl;
-                    tmp43 = metroImportDefault(closure_11, obj6);
+                    tmp43 = metroRequire(closure_10, obj6);
                   }
                 }
                 cResult[13] = null != opencritic && null != opencriticUrl;
@@ -1059,8 +1063,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const obj7 = { url: steamWebsiteUrl, showBorderBottom: tmp8 || null != opencritic && null != opencriticUrl, trackAction, title: intl2.string(intl5.t.MQGNsN), rating: recentRating2, ratingCount: recentRatingCount2, isRecentRating: true };
           intl2 = tmp(1126).intl;
           recentRating2 = undefined;
-          const tmp36 = metroImportDefault;
-          const tmp37 = closure_11;
+          const tmp36 = metroRequire;
+          const tmp37 = closure_10;
           if (steam != null) {
             recentRating2 = steam.recentRating;
           }
@@ -1095,7 +1099,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[2] = result1;
     tmp12 = result1;
   }
-}) : ((arg0) => {
+}) : (function GameProfileReviews(arg0) {
   let game;
   let intl;
   let intl2;
@@ -1108,7 +1112,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp26;
   let trackAction;
   ({ game, trackAction } = arg0);
-  const tmp = closure_10();
+  const tmp = closure_9();
   let id;
   const useSteamWebsiteUrl = useSteamWebsiteUrl2.useSteamWebsiteUrl;
   useSteamWebsiteUrl2;
@@ -1175,9 +1179,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const obj = { style: tmp.container, children: items };
     const obj2 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: tmp.headerText, children: intl.string(intl5.t.GaAQXP) };
-    const Text = tmp2(4892).Text;
+    const Text = tmp2(5086).Text;
     intl = tmp2(1126).intl;
-    items = [metroImportDefault(Text, obj2), ];
+    items = [metroRequire(Text, obj2), ];
     let tmp23Result = null;
     const obj3 = { style: tmp.reviewContainer, children: items1 };
     if (tmp11) {
@@ -1185,7 +1189,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (null != steamWebsiteUrl) {
         const obj4 = { url: steamWebsiteUrl, showBorderBottom: tmp26, trackAction, title: intl2.string(intl5.t.MQGNsN), rating: recentRating1, ratingCount: recentRatingCount1, isRecentRating: true };
         tmp26 = tmp7;
-        const tmp25 = closure_11;
+        const tmp25 = closure_10;
         if (!tmp7) {
           tmp26 = tmp19;
         }
@@ -1208,7 +1212,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (null != steamWebsiteUrl) {
         const obj5 = { url: steamWebsiteUrl, showBorderBottom: null != opencritic && null != opencriticUrl, trackAction, title: intl3.string(tmp17), rating, ratingCount, isRecentRating: false };
         intl3 = tmp2(1126).intl;
-        tmp23Result3 = tmp23(closure_11, obj5);
+        tmp23Result3 = tmp23(closure_10, obj5);
       }
     }
     items1[1] = tmp23Result3;
@@ -1217,11 +1221,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp23Result4 = null;
       if (null != opencriticUrl) {
         const obj6 = { game, url: opencriticUrl, trackAction };
-        tmp23Result4 = tmp23(closure_12, obj6);
+        tmp23Result4 = tmp23(closure_11, obj6);
       }
     }
     items1[2] = tmp23Result4;
-    items[1] = metroImportAll(React3, obj3);
+    items[1] = metroImportDefault(React3, obj3);
     tmp21Result = tmp21(tmp22, obj);
   }
 });

@@ -1,22 +1,22 @@
-// Module ID: 15247
-// Function ID: 15248
+// Module ID: 15509
+// Function ID: 15510
 // Name: EnableSwitchIconsSetting
-// Dependencies: [4885, 7645, 558, 576, 504, 11142, 1126, 14295, 2]
+// Dependencies: [5079, 7966, 558, 576, 504, 11262, 1126, 14520, 2]
 
-// Module 15247 (EnableSwitchIconsSetting)
+// Module 15509 (EnableSwitchIconsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14295 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14520 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEnableSwitchIconsSettingValue() {
   let isSwitchIconsEnabled;
   let tmp4;
   let tmp5;
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useEnableSwitchIconsSettingValue() {
   let isSwitchIconsEnabled;
   const items = [AccessibilityStore];
   const obj = get_initialized;

@@ -1,23 +1,23 @@
-// Module ID: 15093
-// Function ID: 15094
+// Module ID: 15355
+// Function ID: 15356
 // Name: AdvancedVoiceActivitySetting
-// Dependencies: [1999, 7645, 558, 576, 504, 8079, 1126, 11142, 2]
+// Dependencies: [2011, 7966, 558, 576, 504, 5241, 1126, 11262, 2]
 
-// Module 15093 (AdvancedVoiceActivitySetting)
+// Module 15355 (AdvancedVoiceActivitySetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 8079 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5241 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasAdvancedVoiceActivitySetting() {
   let advancedVoiceActivitySupported;
   let tmp4;
   let tmp5;
@@ -37,14 +37,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useHasAdvancedVoiceActivitySetting() {
   let advancedVoiceActivitySupported;
   const items = [MediaEngineStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => advancedVoiceActivitySupported.isAdvancedVoiceActivitySupported());
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAdvancedVoiceActivitySettingValue() {
   let modeOptions;
   let tmp4;
   let tmp5;
@@ -64,7 +64,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useAdvancedVoiceActivitySettingValue() {
   let modeOptions;
   const items = [MediaEngineStore];
   const obj = get_initialized;

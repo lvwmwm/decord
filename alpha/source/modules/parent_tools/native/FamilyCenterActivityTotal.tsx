@@ -1,22 +1,20 @@
-// Module ID: 14719
-// Function ID: 14720
+// Module ID: 14980
+// Function ID: 14981
 // Name: FamilyCenterActivityTotal
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 14718, 8331, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 14979, 7714, 5086, 2]
 
-// Module 14719 (FamilyCenterActivityTotal)
+// Module 14980 (FamilyCenterActivityTotal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8331 */;
-import useFamilyCenterActivities from "useFamilyCenterActivities" /* 14718 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 7714 */;
+import useFamilyCenterActivities from "useFamilyCenterActivities" /* 14979 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let displayType;
 
 let c3;
 let closure_4;
@@ -29,7 +27,7 @@ obj2 = { display: "flex", backgroundColor: nativeDefault.colors.BACKGROUND_SURFA
 createStyles = createStyles.createStyles;
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LEDGE);
 let closure_5 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((displayType) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterActivityTotal(displayType) {
   let items;
   let tmp7;
   const obj = react2;
@@ -100,7 +98,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((displayType) => {
   cResult[3] = num2;
   cResult[4] = tmp11;
   tmp10 = tmp11;
-}) : ((displayType) => {
+}) : (function FamilyCenterActivityTotal(displayType) {
   let items;
   displayType = displayType.displayType;
   const tmp = closure_5();
@@ -121,7 +119,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((displayType) => {
   }
   const obj3 = { style: tmp.container, children: items };
   const obj4 = { variant: "heading-xxl/medium", color: str, children: num };
-  const Text = tmp2(4892).Text;
+  const Text = tmp2(5086).Text;
   const tmp6 = React3;
   const tmp7 = View;
   if (num == null) {

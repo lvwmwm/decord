@@ -1,18 +1,18 @@
-// Module ID: 16229
-// Function ID: 16230
+// Module ID: 16489
+// Function ID: 16490
 // Name: useGuildActionRows
-// Dependencies: [32, 5083, 7058, 1085, 558, 576, 12024, 6777, 6763, 6775, 6741, 6737, 573, 6756, 6738, 11930, 16230, 16233, 6778, 6739, 12185, 16192, 6780, 4792, 16234, 2036, 6901, 2]
+// Dependencies: [32, 6912, 7245, 1085, 558, 576, 12097, 6953, 6939, 6951, 6917, 6911, 573, 6932, 6913, 12003, 16490, 16493, 6954, 6915, 12264, 16452, 6956, 4986, 16494, 2048, 7090, 2]
 
-// Module 16229 (useGuildActionRows)
+// Module 16489 (useGuildActionRows)
 import Constants from "Constants" /* 1085 */;
-import useIsNewMemberDefault from "useIsNewMember" /* 6738 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 7058 */;
-import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 12024 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12185 */;
-import useTotalPossibleBoostCountDefault from "useTotalPossibleBoostCount" /* 16192 */;
-import useIsEligibleForServerOnboardingSetupProgressDefault from "useIsEligibleForServerOnboardingSetupProgress" /* 16230 */;
+import useIsNewMemberDefault from "useIsNewMember" /* 6913 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 7245 */;
+import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 12097 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12264 */;
+import useTotalPossibleBoostCountDefault from "useTotalPossibleBoostCount" /* 16452 */;
+import useIsEligibleForServerOnboardingSetupProgressDefault from "useIsEligibleForServerOnboardingSetupProgress" /* 16490 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5083 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 6912 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let _require;
 
 const ChannelListGuildActionRow = GuildSidebarConstants.ChannelListGuildActionRow;
 const GuildFeatures = Constants.GuildFeatures;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildActionRows(id) {
   let features2;
   let features3;
   let first;
@@ -199,7 +199,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     }
   }
   items3 = [];
-}) : ((id) => {
+}) : (function useGuildActionRows(id) {
   let features2;
   let features3;
   _require = id;

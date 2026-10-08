@@ -1,23 +1,21 @@
-// Module ID: 16990
-// Function ID: 16991
+// Module ID: 17271
+// Function ID: 17272
 // Name: YouSettingsCoachmark
-// Dependencies: [109, 558, 576, 16991, 9895, 2]
+// Dependencies: [109, 558, 576, 17272, 9375, 2]
 // Exports: default
 
-// Module 16990 (YouSettingsCoachmark)
+// Module 17271 (YouSettingsCoachmark)
 import react from "react" /* 576 */;
-import useCoachmark from "useCoachmark" /* 9895 */;
+import useCoachmark from "useCoachmark" /* 9375 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let disabled;
-
 let tmp;
-const useReferralProgramCoachmark = tmp(16991);
+const useReferralProgramCoachmark = tmp(17272);
 let closure_2 = ["buttonRef"];
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouSettingsCoachmark(disabled) {
   let tmp4;
   const obj = react;
   const cResult = obj.c(2);
@@ -36,7 +34,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
     referralProgramCoachmark = null;
   }
   return referralProgramCoachmark;
-}) : ((disabled) => {
+}) : (function useYouSettingsCoachmark(disabled) {
   disabled = disabled.disabled;
   const obj = useReferralProgramCoachmark;
   let referralProgramCoachmark = obj.useReferralProgramCoachmark({ disabled });
@@ -69,7 +67,7 @@ export default function YouSettingsCoachmark(buttonRef) {
       tmp11 = cResult[1];
       tmp12 = cResult[2];
     }
-    const tmp8Result = tmp8(9895);
+    const tmp8Result = tmp8(9375);
     const coachmark = tmp8Result.useCoachmark(tmp11, tmp12);
   } else {
     buttonRef = buttonRef.buttonRef;

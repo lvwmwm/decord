@@ -1,22 +1,20 @@
-// Module ID: 16859
-// Function ID: 16860
+// Module ID: 17138
+// Function ID: 17139
 // Name: MediaGridItem
-// Dependencies: [19, 17, 2051, 7524, 21, 4896, 587, 558, 576, 504, 4618, 4897, 4900, 16860, 6002, 1188, 2]
+// Dependencies: [19, 17, 2063, 9247, 21, 5090, 587, 558, 576, 504, 4810, 5091, 5094, 17139, 6186, 1200, 2]
 
-// Module 16859 (MediaGridItem)
+// Module 17138 (MediaGridItem)
 import nativeDefault from "native" /* 587 */;
-import timing from "timing" /* 4897 */;
-import timingPresets from "timingPresets" /* 4900 */;
-import SearchConstants from "SearchConstants" /* 7524 */;
+import timing from "timing" /* 5091 */;
+import timingPresets from "timingPresets" /* 5094 */;
+import SearchConstants from "SearchConstants" /* 9247 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let media;
 
 let c10;
 let c9;
@@ -33,7 +31,7 @@ let closure_11 = createStyles.createStyles(obj);
 const constants = { HIDDEN: 0, [0]: "HIDDEN", VISIBLE: 1, [1]: "VISIBLE" };
 const __initData = { code: "function MediaGridItemTsx1(){const{withTiming,opacity,timingStandard}=this.__closure;return{opacity:withTiming(opacity.get(),timingStandard)};}" };
 const __initData2 = { code: "function MediaGridItemTsx2(){const{withTiming,opacity,timingStandard}=this.__closure;return{opacity:withTiming(opacity.get(),timingStandard)};}" };
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((media) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MediaGridItem(media) {
   let containerStyle;
   let first;
   let onPress;
@@ -216,7 +214,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((m
   cResult[3] = undefined;
   cResult[4] = media.author;
   cResult[5] = avatarSource;
-}) : ((media) => {
+}) : (function MediaGridItem(media) {
   let Avatar;
   let Card;
   let animate;

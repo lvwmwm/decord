@@ -1,19 +1,19 @@
-// Module ID: 4704
-// Function ID: 4705
+// Module ID: 4898
+// Function ID: 4899
 // Name: DismissibleContentUnsafeUtils
-// Dependencies: [5, 1231, 4705, 1102, 4726, 2041, 2037, 11, 2035, 558, 576, 504, 2033, 2]
+// Dependencies: [5, 1243, 4899, 1102, 4920, 2054, 2049, 11, 2047, 558, 576, 504, 2045, 2]
 // Exports: UNSAFE_markDismissibleContentAsDismissed, UNSAFE_markSingleUseGuildDismissibleContentAsDismissed, UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed, UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed
 
-// Module 4704 (DismissibleContentUnsafeUtils)
+// Module 4898 (DismissibleContentUnsafeUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import Uint8ArrayUtils from "Uint8ArrayUtils" /* 2035 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2037 */;
-import DismissibleContentTypes from "DismissibleContentTypes" /* 2041 */;
-import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 4726 */;
+import Uint8ArrayUtils from "Uint8ArrayUtils" /* 2047 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2049 */;
+import DismissibleContentTypes from "DismissibleContentTypes" /* 2054 */;
+import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 4920 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -368,7 +368,7 @@ obj = function _UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed() {
   });
   return obj(...arguments);
 };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsDismissibleContentDismissed_UNSAFE(arg0, arg1) {
   let closure_0;
   let tmp4;
   let tmp5;
@@ -412,7 +412,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = tmp4;
   cResult[5] = A;
   tmp8 = A;
-}) : ((arg0) => {
+}) : (function useIsDismissibleContentDismissed_UNSAFE(arg0) {
   let closure_0;
   _require = arg0;
   obj = arg1;

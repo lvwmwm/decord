@@ -1,28 +1,26 @@
-// Module ID: 12339
-// Function ID: 12340
+// Module ID: 12435
+// Function ID: 12436
 // Name: HubProgressActionSheet
-// Dependencies: [19, 17, 4513, 9505, 1085, 11952, 12140, 21, 4860, 4896, 558, 576, 12335, 12145, 1252, 1112, 9494, 1197, 12340, 9504, 1126, 4892, 12147, 12150, 12435, 12436, 12437, 5601, 5916, 6652, 2]
+// Dependencies: [19, 17, 4705, 8671, 1085, 12025, 12219, 21, 5054, 5090, 558, 576, 12431, 12224, 1264, 1112, 8658, 1209, 12436, 8670, 1126, 5086, 12226, 12229, 12531, 12532, 12533, 5375, 6189, 6829, 2]
 
-// Module 12339 (HubProgressActionSheet)
+// Module 12435 (HubProgressActionSheet)
 import react_native from "react-native" /* 17 */;
 import router_utils from "router_utils" /* 1112 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9494 */;
-import HubProgressActionCreators from "HubProgressActionCreators" /* 9504 */;
-import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 11952 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8658 */;
+import HubProgressActionCreators from "HubProgressActionCreators" /* 8670 */;
+import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 12025 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4513 */;
-import HubProgressBarConstants from "HubProgressBarConstants" /* 9505 */;
+import GuildChannelStore from "GuildChannelStore" /* 4705 */;
+import HubProgressBarConstants from "HubProgressBarConstants" /* 8671 */;
 import Constants from "Constants" /* 1085 */;
-import GuildProgressConstants from "GuildProgressConstants" /* 12140 */;
+import GuildProgressConstants from "GuildProgressConstants" /* 12219 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let guild;
 
 let c10;
 let c9;
@@ -35,15 +33,15 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const ContactSyncModalActionCreators = tmp(12340);
+const ContactSyncModalActionCreators = tmp(12436);
 let View = react_native.View;
 ({ HUB_PROGRESS_ACTION_SHEET_ID: metroRequire, HUB_PROGRESS_NUM_TOTAL_STEPS: metroImportDefault } = HubProgressBarConstants);
 ({ AnalyticEvents: metroImportAll, AnalyticsLocations: c9, InstantInviteSources: c10, Routes: unpackModuleId } = Constants);
-const constants4 = directory_channels_GuildDirectoryConstants.DirectoryChannelScrollBehavior;
+let closure_12 = directory_channels_GuildDirectoryConstants.DirectoryChannelScrollBehavior;
 ({ AnalyticsActions: map1, AnalyticsSetupTypes: closure_14 } = GuildProgressConstants);
 ({ jsx: closure_15, jsxs: closure_16 } = Fragment);
 let closure_17 = createStyles.createStyles({ container: { padding: 16 }, footer: { marginTop: 12, display: "flex", alignItems: "center" } });
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubProgressActionSheet(guild) {
   let hubProgressBarCompletedSteps;
   let intl;
   let items1;
@@ -54,7 +52,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   let tmp8;
   let tmp = guild;
   let obj = guild(hubProgressBarCompletedSteps[11]);
-  const cResult = obj.c(54);
+  const cResult = obj.c(52);
   guild = guild.guild;
   const analyticsSource = guild.analyticsSource;
   let tmp4 = closure_17();
@@ -62,9 +60,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   hubProgressBarCompletedSteps = obj2.useHubProgressBarCompletedSteps(guild);
   size = hubProgressBarCompletedSteps.size;
   let obj3 = size;
-  const bound = Math.max(guild(hubProgressBarCompletedSteps[13]).MIN_PROGRESS_PERCENT, 100 * size / num_total_actions);
+  const bound = Math.max(guild(hubProgressBarCompletedSteps[13]).MIN_PROGRESS_PERCENT, 100 * size / closure_7);
   View = size.useRef(analyticsSource);
-  const tmp6 = num_total_actions;
+  const tmp6 = closure_7;
   if (cResult[0] !== analyticsSource) {
     const fn = function u() {
       ref.current = analyticsSource;
@@ -102,171 +100,115 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   }
   const effect1 = obj3.useEffect(tmp10, tmp11);
   if (cResult[5] !== guild.id) {
-    class A {
+    class R {
       constructor() {
-        let obj3;
-        const defaultChannel = GuildChannelStore.getDefaultChannel(guild.id);
-        const tmp = guild;
-        if (null != defaultChannel) {
-          const obj2 = { state: obj3 };
-          obj3 = { scrollBehavior: constants.GUILD_LIST_TOP };
-          const obj = router_utils;
-          obj.transitionTo(unpackModuleId.CHANNEL(tmp.id, defaultChannel.id), obj2);
-          const obj4 = ActionSheetActionCreatorsDefault;
-          obj4.hideActionSheet(metroRequire);
-        }
+        const obj = AnalyticsUtilsDefault;
+        const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+        obj.track(metroImportAll.OPEN_MODAL, obj2);
       }
     }
     cResult[5] = guild.id;
-    cResult[6] = A;
+    cResult[6] = tmp14;
   } else {
-    class A {
+    class R {
       constructor() {
-        let obj3;
-        const defaultChannel = GuildChannelStore.getDefaultChannel(guild.id);
-        const tmp = guild;
-        if (null != defaultChannel) {
-          const obj2 = { state: obj3 };
-          obj3 = { scrollBehavior: constants.GUILD_LIST_TOP };
-          const obj = router_utils;
-          obj.transitionTo(unpackModuleId.CHANNEL(tmp.id, defaultChannel.id), obj2);
-          const obj4 = ActionSheetActionCreatorsDefault;
-          obj4.hideActionSheet(metroRequire);
-        }
+        const obj = AnalyticsUtilsDefault;
+        const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+        obj.track(metroImportAll.OPEN_MODAL, obj2);
       }
     }
   }
   if (cResult[7] !== guild) {
-    class A {
+    class R {
       constructor() {
-        let obj3;
-        const defaultChannel = GuildChannelStore.getDefaultChannel(guild.id);
-        const tmp = guild;
-        if (null != defaultChannel) {
-          const obj2 = { state: obj3 };
-          obj3 = { scrollBehavior: constants.GUILD_LIST_TOP };
-          const obj = router_utils;
-          obj.transitionTo(unpackModuleId.CHANNEL(tmp.id, defaultChannel.id), obj2);
-          const obj4 = ActionSheetActionCreatorsDefault;
-          obj4.hideActionSheet(metroRequire);
-        }
+        const obj = AnalyticsUtilsDefault;
+        const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+        obj.track(metroImportAll.OPEN_MODAL, obj2);
       }
     }
     cResult[7] = guild;
-    cResult[8] = tmp15;
+    cResult[8] = tmp16;
   } else {
-    class A {
+    class R {
       constructor() {
-        let obj3;
-        const defaultChannel = GuildChannelStore.getDefaultChannel(guild.id);
-        const tmp = guild;
-        if (null != defaultChannel) {
-          const obj2 = { state: obj3 };
-          obj3 = { scrollBehavior: constants.GUILD_LIST_TOP };
-          const obj = router_utils;
-          obj.transitionTo(unpackModuleId.CHANNEL(tmp.id, defaultChannel.id), obj2);
-          const obj4 = ActionSheetActionCreatorsDefault;
-          obj4.hideActionSheet(metroRequire);
-        }
+        const obj = AnalyticsUtilsDefault;
+        const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+        obj.track(metroImportAll.OPEN_MODAL, obj2);
       }
     }
   }
   if (cResult[9] !== hubProgressBarCompletedSteps) {
-    class L {
+    class R {
       constructor() {
-        if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-          const tmpResult = ContactSyncModalActionCreators;
-          tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-          const obj2 = ActionSheetActionCreatorsDefault;
-          obj2.hideActionSheet(metroRequire);
-        }
+        const obj = AnalyticsUtilsDefault;
+        const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+        obj.track(metroImportAll.OPEN_MODAL, obj2);
       }
     }
     cResult[9] = hubProgressBarCompletedSteps;
-    cResult[10] = L;
+    cResult[10] = tmp18;
   } else {
-    class L {
+    class R {
       constructor() {
-        if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-          const tmpResult = ContactSyncModalActionCreators;
-          tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-          const obj2 = ActionSheetActionCreatorsDefault;
-          obj2.hideActionSheet(metroRequire);
-        }
+        const obj = AnalyticsUtilsDefault;
+        const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+        obj.track(metroImportAll.OPEN_MODAL, obj2);
       }
     }
   }
   if (cResult[11] === guild.id) {
-    class L {
+    class R {
       constructor() {
-        if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-          const tmpResult = ContactSyncModalActionCreators;
-          tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-          const obj2 = ActionSheetActionCreatorsDefault;
-          obj2.hideActionSheet(metroRequire);
-        }
+        const obj = AnalyticsUtilsDefault;
+        const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+        obj.track(metroImportAll.OPEN_MODAL, obj2);
       }
     }
     if (cResult[14] !== (100 === bound)) {
-      class L {
+      class R {
         constructor() {
-          if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-            const tmpResult = ContactSyncModalActionCreators;
-            tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-            const obj2 = ActionSheetActionCreatorsDefault;
-            obj2.hideActionSheet(metroRequire);
-          }
+          const obj = AnalyticsUtilsDefault;
+          const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+          obj.track(metroImportAll.OPEN_MODAL, obj2);
         }
       }
-      const string = tmp20.string;
+      const string = tmp22.string;
       const t = tmp(tmp2[20]).t;
       if (100 === bound) {
-        class L {
+        class R {
           constructor() {
-            if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-              const tmpResult = ContactSyncModalActionCreators;
-              tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-              const obj2 = ActionSheetActionCreatorsDefault;
-              obj2.hideActionSheet(metroRequire);
-            }
+            const obj = AnalyticsUtilsDefault;
+            const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+            obj.track(metroImportAll.OPEN_MODAL, obj2);
           }
         }
       } else {
-        class L {
+        class R {
           constructor() {
-            if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-              const tmpResult = ContactSyncModalActionCreators;
-              tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-              const obj2 = ActionSheetActionCreatorsDefault;
-              obj2.hideActionSheet(metroRequire);
-            }
+            const obj = AnalyticsUtilsDefault;
+            const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+            obj.track(metroImportAll.OPEN_MODAL, obj2);
           }
         }
       }
       cResult[14] = 100 === bound;
-      cResult[15] = tmp21;
+      cResult[15] = tmp23;
     } else {
-      class L {
+      class R {
         constructor() {
-          if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-            const tmpResult = ContactSyncModalActionCreators;
-            tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-            const obj2 = ActionSheetActionCreatorsDefault;
-            obj2.hideActionSheet(metroRequire);
-          }
+          const obj = AnalyticsUtilsDefault;
+          const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+          obj.track(metroImportAll.OPEN_MODAL, obj2);
         }
       }
     }
     const container = tmp4.container;
     if (cResult[16] !== size) {
-      class L {
+      class R {
         constructor() {
-          if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-            const tmpResult = ContactSyncModalActionCreators;
-            tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-            const obj2 = ActionSheetActionCreatorsDefault;
-            obj2.hideActionSheet(metroRequire);
-          }
+          const obj = AnalyticsUtilsDefault;
+          const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+          obj.track(metroImportAll.OPEN_MODAL, obj2);
         }
       }
       const obj5 = {
@@ -281,331 +223,239 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       cResult[17] = obj4.format(tmp(hubProgressBarCompletedSteps[20]).t.l6iRLs, obj5);
       const formatResult = obj4.format(tmp(hubProgressBarCompletedSteps[20]).t.l6iRLs, obj5);
     } else {
-      class L {
+      class R {
         constructor() {
-          if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-            const tmpResult = ContactSyncModalActionCreators;
-            tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-            const obj2 = ActionSheetActionCreatorsDefault;
-            obj2.hideActionSheet(metroRequire);
-          }
+          const obj = AnalyticsUtilsDefault;
+          const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+          obj.track(metroImportAll.OPEN_MODAL, obj2);
         }
       }
     }
-    if (cResult[18] === tmp22) {
-      let tmp27;
-      class L {
+    if (cResult[18] === tmp24) {
+      let tmp29;
+      class R {
         constructor() {
-          if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-            const tmpResult = ContactSyncModalActionCreators;
-            tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-            const obj2 = ActionSheetActionCreatorsDefault;
-            obj2.hideActionSheet(metroRequire);
-          }
+          const obj = AnalyticsUtilsDefault;
+          const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+          obj.track(metroImportAll.OPEN_MODAL, obj2);
         }
       }
       const _Symbol = Symbol;
       if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-        class L {
+        class R {
           constructor() {
-            if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-              const tmpResult = ContactSyncModalActionCreators;
-              tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-              const obj2 = ActionSheetActionCreatorsDefault;
-              obj2.hideActionSheet(metroRequire);
-            }
+            const obj = AnalyticsUtilsDefault;
+            const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+            obj.track(metroImportAll.OPEN_MODAL, obj2);
           }
         }
         const stringResult = obj7.string(tmp(hubProgressBarCompletedSteps[20]).t.iNR25n);
         cResult[21] = stringResult;
-        tmp27 = stringResult;
+        tmp29 = stringResult;
       } else {
-        class L {
+        class R {
           constructor() {
-            if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-              const tmpResult = ContactSyncModalActionCreators;
-              tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-              const obj2 = ActionSheetActionCreatorsDefault;
-              obj2.hideActionSheet(metroRequire);
-            }
+            const obj = AnalyticsUtilsDefault;
+            const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+            obj.track(metroImportAll.OPEN_MODAL, obj2);
           }
         }
       }
       if (cResult[22] !== hubProgressBarCompletedSteps) {
-        class L {
+        class R {
           constructor() {
-            if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-              const tmpResult = ContactSyncModalActionCreators;
-              tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-              const obj2 = ActionSheetActionCreatorsDefault;
-              obj2.hideActionSheet(metroRequire);
-            }
+            const obj = AnalyticsUtilsDefault;
+            const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+            obj.track(metroImportAll.OPEN_MODAL, obj2);
           }
         }
         cResult[22] = hubProgressBarCompletedSteps;
-        cResult[23] = tmp30(tmp(hubProgressBarCompletedSteps[17]).HubProgressStep.JOIN_GUILD);
-        const tmp30Result = tmp30(tmp(hubProgressBarCompletedSteps[17]).HubProgressStep.JOIN_GUILD);
+        cResult[23] = tmp32(tmp(hubProgressBarCompletedSteps[17]).HubProgressStep.JOIN_GUILD);
+        const tmp32Result = tmp32(tmp(hubProgressBarCompletedSteps[17]).HubProgressStep.JOIN_GUILD);
       } else {
-        class L {
+        class R {
           constructor() {
-            if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-              const tmpResult = ContactSyncModalActionCreators;
-              tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-              const obj2 = ActionSheetActionCreatorsDefault;
-              obj2.hideActionSheet(metroRequire);
-            }
+            const obj = AnalyticsUtilsDefault;
+            const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+            obj.track(metroImportAll.OPEN_MODAL, obj2);
           }
         }
       }
       if (cResult[24] === tmp13) {
-        let tmp39;
-        class L {
+        let tmp41;
+        class R {
           constructor() {
-            if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-              const tmpResult = ContactSyncModalActionCreators;
-              tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-              const obj2 = ActionSheetActionCreatorsDefault;
-              obj2.hideActionSheet(metroRequire);
-            }
+            const obj = AnalyticsUtilsDefault;
+            const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+            obj.track(metroImportAll.OPEN_MODAL, obj2);
           }
         }
         const _Symbol2 = Symbol;
         if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
-          class L {
+          class R {
             constructor() {
-              if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-                const tmpResult = ContactSyncModalActionCreators;
-                tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-                const obj2 = ActionSheetActionCreatorsDefault;
-                obj2.hideActionSheet(metroRequire);
-              }
+              const obj = AnalyticsUtilsDefault;
+              const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+              obj.track(metroImportAll.OPEN_MODAL, obj2);
             }
           }
           const stringResult1 = obj9.string(tmp(hubProgressBarCompletedSteps[20]).t["3NlTYU"]);
           cResult[27] = stringResult1;
-          tmp39 = stringResult1;
+          tmp41 = stringResult1;
         } else {
-          class L {
+          class R {
             constructor() {
-              if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-                const tmpResult = ContactSyncModalActionCreators;
-                tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-                const obj2 = ActionSheetActionCreatorsDefault;
-                obj2.hideActionSheet(metroRequire);
-              }
+              const obj = AnalyticsUtilsDefault;
+              const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+              obj.track(metroImportAll.OPEN_MODAL, obj2);
             }
           }
         }
         if (cResult[28] !== hubProgressBarCompletedSteps) {
-          class L {
+          class R {
             constructor() {
-              if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-                const tmpResult = ContactSyncModalActionCreators;
-                tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-                const obj2 = ActionSheetActionCreatorsDefault;
-                obj2.hideActionSheet(metroRequire);
-              }
+              const obj = AnalyticsUtilsDefault;
+              const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+              obj.track(metroImportAll.OPEN_MODAL, obj2);
             }
           }
           cResult[28] = hubProgressBarCompletedSteps;
-          cResult[29] = tmp42(tmp(hubProgressBarCompletedSteps[17]).HubProgressStep.INVITE_USER);
-          const tmp42Result = tmp42(tmp(hubProgressBarCompletedSteps[17]).HubProgressStep.INVITE_USER);
+          cResult[29] = tmp44(tmp(hubProgressBarCompletedSteps[17]).HubProgressStep.INVITE_USER);
+          const tmp44Result = tmp44(tmp(hubProgressBarCompletedSteps[17]).HubProgressStep.INVITE_USER);
         } else {
-          class L {
+          class R {
             constructor() {
-              if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-                const tmpResult = ContactSyncModalActionCreators;
-                tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-                const obj2 = ActionSheetActionCreatorsDefault;
-                obj2.hideActionSheet(metroRequire);
-              }
+              const obj = AnalyticsUtilsDefault;
+              const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+              obj.track(metroImportAll.OPEN_MODAL, obj2);
             }
           }
         }
-        if (cResult[30] === tmp14) {
-          let tmp51;
-          class L {
+        if (cResult[30] === tmp15) {
+          let tmp53;
+          class R {
             constructor() {
-              if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-                const tmpResult = ContactSyncModalActionCreators;
-                tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-                const obj2 = ActionSheetActionCreatorsDefault;
-                obj2.hideActionSheet(metroRequire);
-              }
+              const obj = AnalyticsUtilsDefault;
+              const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+              obj.track(metroImportAll.OPEN_MODAL, obj2);
             }
           }
           const _Symbol3 = Symbol;
           if (cResult[33] === Symbol.for("react.memo_cache_sentinel")) {
-            class L {
+            class R {
               constructor() {
-                if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-                  const tmpResult = ContactSyncModalActionCreators;
-                  tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-                  const obj2 = ActionSheetActionCreatorsDefault;
-                  obj2.hideActionSheet(metroRequire);
-                }
+                const obj = AnalyticsUtilsDefault;
+                const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+                obj.track(metroImportAll.OPEN_MODAL, obj2);
               }
             }
             const stringResult2 = obj11.string(tmp(hubProgressBarCompletedSteps[20]).t.HFvFte);
             cResult[33] = stringResult2;
-            tmp51 = stringResult2;
+            tmp53 = stringResult2;
           } else {
-            class L {
+            class R {
               constructor() {
-                if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-                  const tmpResult = ContactSyncModalActionCreators;
-                  tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-                  const obj2 = ActionSheetActionCreatorsDefault;
-                  obj2.hideActionSheet(metroRequire);
-                }
+                const obj = AnalyticsUtilsDefault;
+                const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+                obj.track(metroImportAll.OPEN_MODAL, obj2);
               }
             }
           }
           if (cResult[34] !== hubProgressBarCompletedSteps) {
-            class L {
+            class R {
               constructor() {
-                if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-                  const tmpResult = ContactSyncModalActionCreators;
-                  tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-                  const obj2 = ActionSheetActionCreatorsDefault;
-                  obj2.hideActionSheet(metroRequire);
-                }
+                const obj = AnalyticsUtilsDefault;
+                const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+                obj.track(metroImportAll.OPEN_MODAL, obj2);
               }
             }
             cResult[34] = hubProgressBarCompletedSteps;
-            cResult[35] = tmp54(tmp(hubProgressBarCompletedSteps[17]).HubProgressStep.CONTACT_SYNC);
-            const tmp54Result = tmp54(tmp(hubProgressBarCompletedSteps[17]).HubProgressStep.CONTACT_SYNC);
+            cResult[35] = tmp56(tmp(hubProgressBarCompletedSteps[17]).HubProgressStep.CONTACT_SYNC);
+            const tmp56Result = tmp56(tmp(hubProgressBarCompletedSteps[17]).HubProgressStep.CONTACT_SYNC);
           } else {
-            class L {
+            class R {
               constructor() {
-                if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-                  const tmpResult = ContactSyncModalActionCreators;
-                  tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-                  const obj2 = ActionSheetActionCreatorsDefault;
-                  obj2.hideActionSheet(metroRequire);
-                }
+                const obj = AnalyticsUtilsDefault;
+                const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+                obj.track(metroImportAll.OPEN_MODAL, obj2);
               }
             }
           }
-          if (cResult[36] === tmp16) {
+          if (cResult[36] === tmp17) {
             let tmp66Result;
-            class L {
+            class R {
               constructor() {
-                if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-                  const tmpResult = ContactSyncModalActionCreators;
-                  tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-                  const obj2 = ActionSheetActionCreatorsDefault;
-                  obj2.hideActionSheet(metroRequire);
-                }
+                const obj = AnalyticsUtilsDefault;
+                const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+                obj.track(metroImportAll.OPEN_MODAL, obj2);
               }
             }
-            if (cResult[39] !== tmp4.footer) {
-              class L {
+            if (cResult[39] === 100 === bound) {
+              class R {
                 constructor() {
-                  if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-                    const tmpResult = ContactSyncModalActionCreators;
-                    tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-                    const obj2 = ActionSheetActionCreatorsDefault;
-                    obj2.hideActionSheet(metroRequire);
-                  }
+                  const obj = AnalyticsUtilsDefault;
+                  const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+                  obj.track(metroImportAll.OPEN_MODAL, obj2);
                 }
               }
-              tmp64[0] = tmp4.footer;
-              cResult[39] = tmp4.footer;
-              cResult[40] = tmp64;
-            } else {
-              class L {
-                constructor() {
-                  if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-                    const tmpResult = ContactSyncModalActionCreators;
-                    tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-                    const obj2 = ActionSheetActionCreatorsDefault;
-                    obj2.hideActionSheet(metroRequire);
-                  }
-                }
-              }
-            }
-            if (cResult[41] === 100 === bound) {
-              class L {
-                constructor() {
-                  if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-                    const tmpResult = ContactSyncModalActionCreators;
-                    tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-                    const obj2 = ActionSheetActionCreatorsDefault;
-                    obj2.hideActionSheet(metroRequire);
-                  }
-                }
-              }
-              if (cResult[44] === tmp63) {
-                class L {
+              if (cResult[42] === tmp4.footer) {
+                class R {
                   constructor() {
-                    if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-                      const tmpResult = ContactSyncModalActionCreators;
-                      tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-                      const obj2 = ActionSheetActionCreatorsDefault;
-                      obj2.hideActionSheet(metroRequire);
-                    }
+                    const obj = AnalyticsUtilsDefault;
+                    const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+                    obj.track(metroImportAll.OPEN_MODAL, obj2);
                   }
                 }
-                if (cResult[47] === tmp4.container) {
-                  class L {
+                if (cResult[45] === tmp4.container) {
+                  class R {
                     constructor() {
-                      if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-                        const tmpResult = ContactSyncModalActionCreators;
-                        tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-                        const obj2 = ActionSheetActionCreatorsDefault;
-                        obj2.hideActionSheet(metroRequire);
-                      }
+                      const obj = AnalyticsUtilsDefault;
+                      const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+                      obj.track(metroImportAll.OPEN_MODAL, obj2);
                     }
                   }
                 }
                 const obj6 = { style: container, children: items1 };
-                items1 = [tmp24, tmp32, tmp44, tmp56, tmp70];
+                items1 = [tmp26, tmp34, tmp46, tmp58, tmp70];
                 const obj8 = { startExpanded: true, children: closure_16(View, obj6) };
                 closure_16(View, obj6);
-                cResult[47] = tmp4.container;
-                cResult[48] = tmp24;
-                cResult[49] = tmp32;
-                cResult[50] = tmp44;
-                cResult[51] = tmp56;
-                cResult[52] = tmp70;
-                cResult[53] = closure_15(tmp(hubProgressBarCompletedSteps[29]).BottomSheet, obj8);
+                cResult[45] = tmp4.container;
+                cResult[46] = tmp26;
+                cResult[47] = tmp34;
+                cResult[48] = tmp46;
+                cResult[49] = tmp58;
+                cResult[50] = tmp70;
+                cResult[51] = closure_15(tmp(hubProgressBarCompletedSteps[29]).BottomSheet, obj8);
                 const tmp79 = closure_15(tmp(hubProgressBarCompletedSteps[29]).BottomSheet, obj8);
               }
-              const obj10 = { style: tmp63, children: tmp65 };
-              cResult[44] = tmp63;
-              cResult[45] = tmp65;
-              cResult[46] = closure_15(View, obj10);
+              const obj10 = { style: tmp4.footer, children: tmp65 };
+              cResult[42] = tmp4.footer;
+              cResult[43] = tmp65;
+              cResult[44] = closure_15(View, obj10);
               const tmp73 = closure_15(View, obj10);
             }
             if (100 === bound) {
-              class L {
+              class R {
                 constructor() {
-                  if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-                    const tmpResult = ContactSyncModalActionCreators;
-                    tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-                    const obj2 = ActionSheetActionCreatorsDefault;
-                    obj2.hideActionSheet(metroRequire);
-                  }
+                  const obj = AnalyticsUtilsDefault;
+                  const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+                  obj.track(metroImportAll.OPEN_MODAL, obj2);
                 }
               }
               const Button = tmp(tmp2[27]).Button;
               const intl2 = tmp(tmp2[20]).intl;
               tmp69[0] = intl2.string(tmp(hubProgressBarCompletedSteps[20]).t["0/5zhg"]);
-              tmp69[1] = tmp17;
+              tmp69[1] = tmp19;
               tmp66Result = tmp66(Button, tmp69);
             } else {
-              class L {
+              class R {
                 constructor() {
-                  if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
-                    const tmpResult = ContactSyncModalActionCreators;
-                    tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
-                    const obj2 = ActionSheetActionCreatorsDefault;
-                    obj2.hideActionSheet(metroRequire);
-                  }
+                  const obj = AnalyticsUtilsDefault;
+                  const obj2 = { type: "Hub Progress Action Sheet", guild_id: guild.id, source: ref.current };
+                  obj.track(metroImportAll.OPEN_MODAL, obj2);
                 }
               }
-              tmp67[1] = tmp17;
+              tmp67[1] = tmp19;
               const PressableOpacity = tmp(tmp2[28]).PressableOpacity;
               const obj12 = { variant: "text-sm/medium", color: "text-default", children: intl.string(tmp(hubProgressBarCompletedSteps[20]).t["9E36wf"]) };
               const Text = tmp(tmp2[21]).Text;
@@ -613,52 +463,50 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
               tmp67[2] = closure_15(Text, obj12);
               tmp66Result = tmp66(PressableOpacity, tmp67);
             }
-            cResult[41] = 100 === bound;
-            cResult[42] = tmp17;
-            cResult[43] = tmp66Result;
+            cResult[39] = 100 === bound;
+            cResult[40] = tmp19;
+            cResult[41] = tmp66Result;
           }
-          const obj13 = { onPress: tmp16, source: analyticsSource(hubProgressBarCompletedSteps[26]), title: tmp51, isCompleted: tmp53, analyticsSetupType: constants6.HUB_PROGRESS, analyticsAction: constants5.CONTACT_SYNC };
-          const tmp59 = analyticsSource(hubProgressBarCompletedSteps[23]);
-          cResult[36] = tmp16;
-          cResult[37] = tmp53;
-          cResult[38] = closure_15(tmp59, obj13);
-          const tmp62 = closure_15(tmp59, obj13);
+          const obj13 = { onPress: tmp17, source: analyticsSource(hubProgressBarCompletedSteps[26]), title: tmp53, isCompleted: tmp55, analyticsSetupType: constants5.HUB_PROGRESS, analyticsAction: constants4.CONTACT_SYNC };
+          const tmp61 = analyticsSource(hubProgressBarCompletedSteps[23]);
+          cResult[36] = tmp17;
+          cResult[37] = tmp55;
+          cResult[38] = closure_15(tmp61, obj13);
+          const tmp64 = closure_15(tmp61, obj13);
         }
-        const obj14 = { onPress: tmp14, source: analyticsSource(hubProgressBarCompletedSteps[25]), title: tmp39, isCompleted: tmp41, analyticsSetupType: constants6.HUB_PROGRESS, analyticsAction: constants5.INVITE };
-        const tmp47 = analyticsSource(hubProgressBarCompletedSteps[23]);
-        cResult[30] = tmp14;
-        cResult[31] = tmp41;
-        cResult[32] = closure_15(tmp47, obj14);
-        const tmp50 = closure_15(tmp47, obj14);
+        const obj14 = { onPress: tmp15, source: analyticsSource(hubProgressBarCompletedSteps[25]), title: tmp41, isCompleted: tmp43, analyticsSetupType: constants5.HUB_PROGRESS, analyticsAction: constants4.INVITE };
+        const tmp49 = analyticsSource(hubProgressBarCompletedSteps[23]);
+        cResult[30] = tmp15;
+        cResult[31] = tmp43;
+        cResult[32] = closure_15(tmp49, obj14);
+        const tmp52 = closure_15(tmp49, obj14);
       }
-      const obj15 = { onPress: tmp13, source: analyticsSource(hubProgressBarCompletedSteps[24]), title: tmp27, isCompleted: tmp29, analyticsSetupType: constants6.HUB_PROGRESS, analyticsAction: constants5.JOIN_GUILD };
-      const tmp35 = analyticsSource(hubProgressBarCompletedSteps[23]);
+      const obj15 = { onPress: tmp13, source: analyticsSource(hubProgressBarCompletedSteps[24]), title: tmp29, isCompleted: tmp31, analyticsSetupType: constants5.HUB_PROGRESS, analyticsAction: constants4.JOIN_GUILD };
+      const tmp37 = analyticsSource(hubProgressBarCompletedSteps[23]);
       cResult[24] = tmp13;
-      cResult[25] = tmp29;
-      cResult[26] = closure_15(tmp35, obj15);
-      const tmp38 = closure_15(tmp35, obj15);
+      cResult[25] = tmp31;
+      cResult[26] = closure_15(tmp37, obj15);
+      const tmp40 = closure_15(tmp37, obj15);
     }
-    const obj16 = { title: tmp19, subtitle: tmp22 };
-    cResult[18] = tmp22;
-    cResult[19] = tmp19;
+    const obj16 = { title: tmp21, subtitle: tmp24 };
+    cResult[18] = tmp24;
+    cResult[19] = tmp21;
     cResult[20] = closure_15(tmp(hubProgressBarCompletedSteps[22]).GuildProgressHeader, obj16);
-    const tmp26 = closure_15(tmp(hubProgressBarCompletedSteps[22]).GuildProgressHeader, obj16);
+    const tmp28 = closure_15(tmp(hubProgressBarCompletedSteps[22]).GuildProgressHeader, obj16);
   }
-  class F {
-    constructor() {
-      const obj = AnalyticsUtilsDefault;
-      const obj2 = { setup_type: constants3.HUB_PROGRESS, action: map1.DISMISS, num_total_actions: metroImportDefault, num_actions_completed: size };
-      obj.track(metroImportAll.SERVER_SETUP_CTA_CLICKED, obj2);
-      const obj3 = HubProgressActionCreators;
-      obj3.skipHubProgress(guild.id);
-      const obj4 = ActionSheetActionCreatorsDefault;
-      obj4.hideActionSheet(metroRequire);
-    }
+  function handleFinishPress() {
+    const obj = AnalyticsUtilsDefault;
+    const obj2 = { setup_type: constants3.HUB_PROGRESS, action: map1.DISMISS, num_total_actions: metroImportDefault, num_actions_completed: size };
+    obj.track(metroImportAll.SERVER_SETUP_CTA_CLICKED, obj2);
+    const obj3 = HubProgressActionCreators;
+    obj3.skipHubProgress(guild.id);
+    const obj4 = ActionSheetActionCreatorsDefault;
+    obj4.hideActionSheet(metroRequire);
   }
   cResult[11] = guild.id;
   cResult[12] = size;
-  cResult[13] = F;
-}) : ((guild) => {
+  cResult[13] = handleFinishPress;
+}) : (function HubProgressActionSheet(guild) {
   let Text;
   let intl2;
   let intl3;
@@ -667,7 +515,6 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   let intl6;
   let intl7;
   let items1;
-  let items2;
   let obj11;
   let obj4;
   let stringResult;
@@ -722,7 +569,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   };
   items1 = [closure_15(GuildProgressHeader, obj3), , , , ];
   const obj5 = {
-    onPress() {
+    onPress: function handleJoinGuildPress() {
       let obj3;
       const defaultChannel = GuildChannelStore.getDefaultChannel(guild.id);
       const tmp = guild;
@@ -738,14 +585,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     source: analyticsSource(hubProgressBarCompletedSteps[24]),
     title: intl3.string(guild(hubProgressBarCompletedSteps[20]).t.iNR25n),
     isCompleted: hubProgressBarCompletedSteps.has(guild(hubProgressBarCompletedSteps[17]).HubProgressStep.JOIN_GUILD),
-    analyticsSetupType: constants6.HUB_PROGRESS,
-    analyticsAction: constants5.JOIN_GUILD
+    analyticsSetupType: constants5.HUB_PROGRESS,
+    analyticsAction: constants4.JOIN_GUILD
   };
   const tmp12 = analyticsSource(hubProgressBarCompletedSteps[23]);
   intl3 = tmp2(tmp3[20]).intl;
   items1[1] = closure_15(tmp12, obj5);
   const obj6 = {
-    onPress() {
+    onPress: function handleInvitePress() {
       const defaultChannel = GuildChannelStore.getDefaultChannel(guild.id);
       const channels = GuildChannelStore.getChannels(guild.id);
       const tmp4 = null != defaultChannel && null != channels;
@@ -757,14 +604,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     source: analyticsSource(hubProgressBarCompletedSteps[25]),
     title: intl4.string(guild(hubProgressBarCompletedSteps[20]).t["3NlTYU"]),
     isCompleted: hubProgressBarCompletedSteps.has(guild(hubProgressBarCompletedSteps[17]).HubProgressStep.INVITE_USER),
-    analyticsSetupType: constants6.HUB_PROGRESS,
-    analyticsAction: constants5.INVITE
+    analyticsSetupType: constants5.HUB_PROGRESS,
+    analyticsAction: constants4.INVITE
   };
   const tmp13 = analyticsSource(hubProgressBarCompletedSteps[23]);
   intl4 = tmp2(tmp3[20]).intl;
   items1[2] = closure_15(tmp13, obj6);
   const obj7 = {
-    onPress() {
+    onPress: function handleContactSyncPress() {
       if (!hubProgressBarCompletedSteps.has(preloaded_user_settings.HubProgressStep.CONTACT_SYNC)) {
         const tmpResult = ContactSyncModalActionCreators;
         tmpResult.openContactSyncModal({}, constants.HUB_PROGRESS);
@@ -775,14 +622,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     source: analyticsSource(hubProgressBarCompletedSteps[26]),
     title: intl5.string(guild(hubProgressBarCompletedSteps[20]).t.HFvFte),
     isCompleted: hubProgressBarCompletedSteps.has(guild(hubProgressBarCompletedSteps[17]).HubProgressStep.CONTACT_SYNC),
-    analyticsSetupType: constants6.HUB_PROGRESS,
-    analyticsAction: constants5.CONTACT_SYNC
+    analyticsSetupType: constants5.HUB_PROGRESS,
+    analyticsAction: constants4.CONTACT_SYNC
   };
   const tmp14 = analyticsSource(hubProgressBarCompletedSteps[23]);
   intl5 = tmp2(tmp3[20]).intl;
   items1[3] = closure_15(tmp14, obj7);
-  const obj8 = { style: items2, children: tmp11Result };
-  items2 = [tmp.footer];
+  const obj8 = { style: tmp.footer, children: tmp11Result };
   const tmp9 = closure_16;
   if (tmp5) {
     const obj9 = { text: intl7.string(guild(hubProgressBarCompletedSteps[20]).t["0/5zhg"]), onPress: handleFinishPress };

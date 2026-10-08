@@ -1,27 +1,25 @@
-// Module ID: 16906
-// Function ID: 16907
+// Module ID: 17187
+// Function ID: 17188
 // Name: BaseMessagesScreen
-// Dependencies: [19, 6794, 11994, 7523, 21, 12001, 558, 576, 11987, 504, 16895, 16907, 11980, 16908, 16909, 11985, 16829, 16841, 2]
+// Dependencies: [19, 6067, 12067, 9246, 21, 12074, 558, 576, 12060, 504, 17176, 17188, 12053, 17189, 17190, 12058, 17108, 17120, 2]
 // Exports: trackMessageItemPress
 
-// Module 16906 (BaseMessagesScreen)
+// Module 17187 (BaseMessagesScreen)
 import Fragment from "Fragment" /* 21 */;
-import TrackingConstants from "TrackingConstants" /* 7523 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11980 */;
-import SearchUtils from "SearchUtils" /* 11987 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12001 */;
-import SearchHistoricalIndexingHeaderDefault from "SearchHistoricalIndexingHeader" /* 16908 */;
+import TrackingConstants from "TrackingConstants" /* 9246 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12053 */;
+import SearchUtils from "SearchUtils" /* 12060 */;
+import tracking_TrackingDefault from "tracking/Tracking" /* 12074 */;
+import SearchHistoricalIndexingHeaderDefault from "SearchHistoricalIndexingHeader" /* 17189 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 6794 */;
-import SearchQueryStore from "SearchQueryStore" /* 11994 */;
+import SearchMessageStore from "SearchMessageStore" /* 6067 */;
+import SearchQueryStore from "SearchQueryStore" /* 12067 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tab;
-
 const constants = TrackingConstants.SearchResultContentEntityTypes;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessagesScreen(tab) {
   let ItemSeparatorComponent;
   let contentContainerStyle;
   let data;
@@ -299,7 +297,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
   cResult[2] = tab;
   cResult[3] = fn;
   tmp8 = fn;
-}) : ((tab) => {
+}) : (function BaseMessagesScreen(tab) {
   let ItemSeparatorComponent;
   let contentContainerStyle;
   let data;
@@ -425,7 +423,7 @@ export const trackMessageItemPress = function trackMessageItemPress(messageId) {
   const message = SearchMessageStore.getMessage(messageId);
   const obj = { searchContext, channelId, messageId, userId: id, index, entityType: constants.MESSAGE };
   id = undefined;
-  const trackSearchResultClicked = search_tracking_TrackingDefault.trackSearchResultClicked;
+  const trackSearchResultClicked = tracking_TrackingDefault.trackSearchResultClicked;
   if (message != null) {
     const author = message.author;
     if (author != null) {

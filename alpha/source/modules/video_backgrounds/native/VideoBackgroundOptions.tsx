@@ -1,17 +1,16 @@
-// Module ID: 9694
-// Function ID: 9695
+// Module ID: 10883
+// Function ID: 10884
 // Name: VideoBackgroundOptions
-// Dependencies: [19, 17, 6491, 21, 4896, 587, 558, 576, 8092, 1126, 6006, 7599, 9695, 2]
+// Dependencies: [19, 5253, 21, 5090, 587, 558, 576, 5259, 1126, 6192, 9306, 10884, 6164, 2]
 // Exports: fromVideoBackgroundRadioValue, parseVideoBackgroundRadioValue, toVideoBackgroundRadioValue
 
-// Module 9694 (VideoBackgroundOptions)
-import react_native from "react-native" /* 17 */;
+// Module 10883 (VideoBackgroundOptions)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import VideoBackgroundConstants from "VideoBackgroundConstants" /* 6491 */;
-import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 8092 */;
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5253 */;
+import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 5259 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -19,14 +18,13 @@ const require = globalThis.__r;
 let _require;
 
 let size;
-const Image = react_native.Image;
 const BLUR_BACKGROUND_OPTION = VideoBackgroundConstants.BLUR_BACKGROUND_OPTION;
 const jsx = Fragment.jsx;
 const none = "none";
 let obj = { imageThumbnail: size };
 size = { width: nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE, height: nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE, borderRadius: nativeDefault.radii.lg };
-let closure_7 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_6 = createStyles.createStyles(obj);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoBackgroundRadioOptions() {
   let first;
   let imageThumbnail;
   let intl;
@@ -36,7 +34,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp8;
   const obj = require("react");
   const cResult = obj.c(5);
-  const tmp5 = closure_7();
+  const tmp5 = closure_6();
   _require = tmp5;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const _Object = Object;
@@ -51,7 +49,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { value: none, label: intl.string(require("intl").t.fUdMeO), icon: null };
     intl = tmp2(1126).intl;
     ({ IconComponent: require("DenyIcon").DenyIcon });
-    const TableRowIcon = tmp2(6006).TableRowIcon;
+    const TableRowIcon = tmp2(6192).TableRowIcon;
     cResult[1] = obj2;
     tmp8 = obj2;
   } else {
@@ -61,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj4 = { value: BLUR_BACKGROUND_OPTION, label: intl2.string(require("intl").t.LhSyL8), icon: null };
     intl2 = tmp2(1126).intl;
     ({ IconComponent: require("BlurBackgroundIcon").BlurBackgroundIcon });
-    const TableRowIcon2 = tmp2(6006).TableRowIcon;
+    const TableRowIcon2 = tmp2(6192).TableRowIcon;
     cResult[2] = obj4;
     tmp11 = obj4;
   } else {
@@ -77,11 +75,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp14 = cResult[4];
   }
   return tmp14;
-}) : (() => {
+}) : (function useVideoBackgroundRadioOptions() {
   let imageThumbnail;
   let intl;
   let intl2;
-  _require = closure_7();
+  _require = closure_6();
   const values = Object.values(getDefaultBackgroundDataDefault());
   const found = values.filter((source) => "" !== source.source);
   const obj = { value: none, label: intl.string(require("intl").t.fUdMeO), icon: null };

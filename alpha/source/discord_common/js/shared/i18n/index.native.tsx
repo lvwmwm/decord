@@ -1,94 +1,94 @@
-// Module ID: 1889
-// Function ID: 1890
-// Dependencies: [1890, 1939, 1940, 1941, 1942, 1943, 1944, 1945, 1946, 1947, 1948, 1949, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 2]
+// Module ID: 1901
+// Function ID: 1902
+// Dependencies: [1902, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 2]
 
-// Module 1889
-import I18NDefault from "I18N" /* 1890 */;
+// Module 1901
+import I18NDefault from "I18N" /* 1902 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let closure_2 = {
   bg() {
-    return require("module_1939");
-  },
-  cs() {
-    return require("module_1940");
-  },
-  da() {
-    return require("module_1941");
-  },
-  de() {
-    return require("module_1942");
-  },
-  el() {
-    return require("module_1943");
-  },
-  "en-GB": () => require("module_1944"),
-  "en-US": () => require("module_1945"),
-  "es-419": () => require("module_1946"),
-  "es-ES": () => require("module_1947"),
-  fi() {
-    return require("module_1948");
-  },
-  fr() {
-    return require("module_1949");
-  },
-  hi() {
-    return require("module_1950");
-  },
-  hr() {
     return require("module_1951");
   },
-  hu() {
+  cs() {
     return require("module_1952");
   },
-  id() {
+  da() {
     return require("module_1953");
   },
-  it() {
+  de() {
     return require("module_1954");
   },
-  ja() {
+  el() {
     return require("module_1955");
   },
-  ko() {
-    return require("module_1956");
-  },
-  lt() {
-    return require("module_1957");
-  },
-  nl() {
-    return require("module_1958");
-  },
-  no() {
-    return require("module_1959");
-  },
-  pl() {
+  "en-GB": () => require("module_1956"),
+  "en-US": () => require("module_1957"),
+  "es-419": () => require("module_1958"),
+  "es-ES": () => require("module_1959"),
+  fi() {
     return require("module_1960");
   },
-  "pt-BR": () => require("module_1961"),
-  ro() {
+  fr() {
+    return require("module_1961");
+  },
+  hi() {
     return require("module_1962");
   },
-  ru() {
+  hr() {
     return require("module_1963");
   },
-  "sv-SE": () => require("module_1964"),
-  th() {
+  hu() {
+    return require("module_1964");
+  },
+  id() {
     return require("module_1965");
   },
-  tr() {
+  it() {
     return require("module_1966");
   },
-  uk() {
+  ja() {
     return require("module_1967");
   },
-  vi() {
+  ko() {
     return require("module_1968");
   },
-  "zh-CN": () => require("module_1969"),
-  "zh-TW": () => require("module_1970")
+  lt() {
+    return require("module_1969");
+  },
+  nl() {
+    return require("module_1970");
+  },
+  no() {
+    return require("module_1971");
+  },
+  pl() {
+    return require("module_1972");
+  },
+  "pt-BR": () => require("module_1973"),
+  ro() {
+    return require("module_1974");
+  },
+  ru() {
+    return require("module_1975");
+  },
+  "sv-SE": () => require("module_1976"),
+  th() {
+    return require("module_1977");
+  },
+  tr() {
+    return require("module_1978");
+  },
+  uk() {
+    return require("module_1979");
+  },
+  vi() {
+    return require("module_1980");
+  },
+  "zh-CN": () => require("module_1981"),
+  "zh-TW": () => require("module_1982")
 };
 const obj = {
   getMessages(arg0) {
@@ -104,7 +104,7 @@ const obj = {
     }
   },
   getLanguages() {
-    return require("module_1971");
+    return require("module_1983");
   }
 };
 const tmp2 = new I18NDefault(obj);

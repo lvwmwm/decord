@@ -1,13 +1,13 @@
-// Module ID: 6665
-// Function ID: 6666
+// Module ID: 6842
+// Function ID: 6843
 // Name: ApplicationActionCreators
-// Dependencies: [5, 6666, 2009, 5124, 1085, 584, 1282, 504, 558, 576, 2]
+// Dependencies: [5, 6843, 2021, 5436, 1085, 584, 1294, 504, 558, 576, 2]
 
-// Module 6665 (ApplicationActionCreators)
+// Module 6842 (ApplicationActionCreators)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6666 */;
-import ApplicationRecord from "ApplicationRecord" /* 2009 */;
-import ApplicationStore from "ApplicationStore" /* 5124 */;
+import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6843 */;
+import ApplicationRecord from "ApplicationRecord" /* 2021 */;
+import ApplicationStore from "ApplicationStore" /* 5436 */;
 import Constants from "Constants" /* 1085 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -276,7 +276,7 @@ obj = {
               let arr = closure_0;
               const arr2 = closure_0;
               if (!flag) {
-                found = arr2.filter((item) => {
+                found = arr2.filter(function shouldFetch(item) {
                   const tmp = null != application.getApplication(item) && application.isHydrated(item);
                   const tmp2 = !tmp && !obj.isFetchingApplication(item) && !obj.didFetchingApplicationFail(item) && item.length > 0;
                   return tmp2;
@@ -393,7 +393,7 @@ let obj2 = {
   }
 };
 const fetchStore = get_initialized.createFetchStore(ApplicationStore, obj2);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplicationWithLoggedOutContext(arg0) {
   let closure_0;
   let error;
   let first;
@@ -454,7 +454,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = items1;
   tmp8 = items1;
   tmp7 = fn;
-}) : ((arg0) => {
+}) : (function useApplicationWithLoggedOutContext(arg0) {
   let closure_0;
   let isLoading;
   let items;

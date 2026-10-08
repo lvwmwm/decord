@@ -1,13 +1,13 @@
-// Module ID: 12249
-// Function ID: 12250
+// Module ID: 12328
+// Function ID: 12329
 // Name: useGameServerPowerupStatus
-// Dependencies: [19, 7683, 558, 576, 504, 12233, 1126, 2553, 2]
+// Dependencies: [19, 8004, 558, 576, 504, 12312, 1126, 2597, 2]
 
-// Module 12249 (useGameServerPowerupStatus)
+// Module 12328 (useGameServerPowerupStatus)
 import intl2 from "intl" /* 1126 */;
-import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 12233 */;
+import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 12312 */;
 import react from "react" /* 19 */;
-import GameServerStore from "GameServerStore" /* 7683 */;
+import GameServerStore from "GameServerStore" /* 8004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,8 +15,8 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 let tmp8;
-const _modDef2553 = tmp8(2553);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const _modDef2597 = tmp8(2597);
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameServerPowerupStatus(arg0) {
   let closure_0;
   let first;
   let intl;
@@ -33,7 +33,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function o() {
+    const fn = function u() {
       const stateForGuild = GameServerStore.getStateForGuild(closure_0);
       let entitlements;
       if (stateForGuild != null) {
@@ -75,7 +75,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp10;
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj3 = { type: "active", statusText: intl.string(_modDef2553.FFLkmx) };
+        const obj3 = { type: "active", statusText: intl.string(_modDef2597.FFLkmx) };
         intl = tmp(1126).intl;
         cResult[6] = obj3;
         tmp10 = obj3;
@@ -86,7 +86,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return tmp9;
-}) : ((arg0) => {
+}) : (function useGameServerPowerupStatus(arg0) {
   let closure_0;
   let length;
   _require = arg0;
@@ -101,7 +101,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return entitlements;
   }, items1);
-  const tmp2 = stateFromStores(12233)(arg0);
+  const tmp2 = stateFromStores(12312)(arg0);
   dependencyMap = tmp2;
   const items2 = [tmp2, stateFromStores];
   return react.useMemo(() => {
@@ -117,7 +117,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         obj3 = { type: "expiring", expiringAt: tmp[0].ends_at };
         const obj2 = { type: "expiring", expiringAt: tmp[0].ends_at };
       } else {
-        obj3 = { type: "active", statusText: intl.string(_modDef2553.FFLkmx) };
+        obj3 = { type: "active", statusText: intl.string(_modDef2597.FFLkmx) };
         intl = intl2.intl;
       }
       return obj3;

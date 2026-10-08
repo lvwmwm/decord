@@ -1,25 +1,24 @@
-// Module ID: 12722
-// Function ID: 12723
+// Module ID: 13391
+// Function ID: 13392
 // Name: InAppReportsGuildPreviewElement
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 6476, 4733, 1126, 4892, 5978, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 6654, 4927, 1126, 5086, 6161, 2]
 
-// Module 12722 (InAppReportsGuildPreviewElement)
+// Module 13391 (InAppReportsGuildPreviewElement)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import ColorUtils from "ColorUtils" /* 4733 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import GuildIcon from "GuildIcon" /* 5978 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6476 */;
+import ColorUtils from "ColorUtils" /* 4927 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import GuildIcon from "GuildIcon" /* 6161 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6654 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
-let guild;
 
 let closure_4;
 let hasOwnProperty;
@@ -33,7 +32,7 @@ obj2 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 createStyles = createStyles.createStyles;
 obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "flex-start", minHeight: 40, borderRadius: nativeDefault.radii.sm, borderWidth: 1, padding: 12 };
 let closure_6 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPreview(guild) {
   let items;
   let items1;
   let title;
@@ -177,7 +176,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   cResult[3] = tmp4.title;
   cResult[4] = title;
   tmp8 = title;
-}) : ((guild) => {
+}) : (function GuildPreview(guild) {
   let items1;
   let items2;
   let items3;

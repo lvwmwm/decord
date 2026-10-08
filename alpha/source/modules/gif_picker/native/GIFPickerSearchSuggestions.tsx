@@ -1,19 +1,17 @@
-// Module ID: 10110
-// Function ID: 10111
+// Module ID: 9695
+// Function ID: 9696
 // Name: GIFPickerSearchSuggestions
-// Dependencies: [19, 17, 10102, 21, 4896, 587, 558, 576, 504, 1126, 4892, 5601, 2]
+// Dependencies: [19, 17, 9686, 21, 5090, 587, 558, 576, 504, 1126, 5086, 5375, 2]
 
-// Module 10110 (GIFPickerSearchSuggestions)
+// Module 9695 (GIFPickerSearchSuggestions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import GIFPickerViewStore from "GIFPickerViewStore" /* 10102 */;
+import GIFPickerViewStore from "GIFPickerViewStore" /* 9686 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let onClickSuggestion;
 
 let hasOwnProperty;
 let metroRequire;
@@ -29,7 +27,7 @@ createStyles = createStyles.createStyles;
 obj3 = { justifyContent: "flex-start", paddingVertical: nativeDefault.space.PX_16 };
 obj4 = { marginBottom: nativeDefault.space.PX_16, textAlign: "center" };
 let closure_7 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onClickSuggestion) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerSearchSuggestions(onClickSuggestion) {
   let footerSuggestionsContainer;
   let footerSuggestionsTitle;
   let items1;
@@ -42,13 +40,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   const tmp4 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GIFPickerViewStore];
-    const fn = function f() {
-      return suggestions.getSuggestions();
-    };
+    class S {
+      constructor() {
+        return closure_1_4.getSuggestions();
+      }
+    }
     cResult[0] = items;
-    cResult[1] = fn;
+    cResult[1] = S;
     tmp5 = items;
-    tmp6 = fn;
+    tmp6 = S;
   } else {
     [tmp5, tmp6] = cResult;
   }
@@ -57,22 +57,33 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   if (0 === stateFromStoresArray.length) {
     return null;
   } else {
-    let tmp8;
     let tmp10;
     let tmp15;
     const _Symbol = Symbol;
     ({ footerSuggestionsContainer, footerSuggestionsTitle } = tmp4);
-    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        return closure_1_4.getSuggestions();
+      }
+    }
+    if (tmp24 === Symbol.for("react.memo_cache_sentinel")) {
       const intl = tmp(1126).intl;
       const stringResult = intl.string(onClickSuggestion(1126).t["3JGJo2"]);
+      class S {
+        constructor() {
+          return closure_1_4.getSuggestions();
+        }
+      }
       cResult[2] = stringResult;
-      tmp8 = stringResult;
-    } else {
-      tmp8 = cResult[2];
     }
     if (cResult[3] !== tmp4.footerSuggestionsTitle) {
-      const obj2 = { style: footerSuggestionsTitle, variant: "text-md/medium", color: "text-default", children: tmp8 };
-      const tmp12 = closure_5(onClickSuggestion(4892).Text, obj2);
+      const obj2 = { style: footerSuggestionsTitle, variant: "text-md/medium", color: "text-default", children: null };
+      class S {
+        constructor() {
+          return closure_1_4.getSuggestions();
+        }
+      }
+      const tmp12 = closure_5(onClickSuggestion(5086).Text, obj2);
       cResult[3] = tmp4.footerSuggestionsTitle;
       cResult[4] = tmp12;
       tmp10 = tmp12;
@@ -91,28 +102,38 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
         }
         if (cResult[13] === tmp4.footerSuggestionsContainer) {
           if (cResult[14] === tmp10) {
-            let tmp21;
+            let tmp20;
             if (cResult[15] === tmp17) {
-              tmp21 = cResult[16];
+              tmp20 = cResult[16];
             }
-            return tmp21;
+            return tmp20;
+          }
+        }
+        class S {
+          constructor() {
+            return closure_1_4.getSuggestions();
           }
         }
         const obj3 = { style: footerSuggestionsContainer, children: items1 };
         items1 = [tmp10, tmp17];
-        const tmp24 = closure_6(View, obj3);
+        const tmp22 = closure_6(View, obj3);
         cResult[13] = tmp4.footerSuggestionsContainer;
         cResult[14] = tmp10;
         cResult[15] = tmp17;
-        cResult[16] = tmp24;
-        tmp21 = tmp24;
+        cResult[16] = tmp22;
+        tmp20 = tmp22;
+      }
+      class S {
+        constructor() {
+          return closure_1_4.getSuggestions();
+        }
       }
       const obj4 = { style: tmp13, children: tmp14 };
-      const tmp20 = closure_5(View, obj4);
+      const tmp19 = closure_5(View, obj4);
       cResult[10] = tmp4.suggestionsContainer;
       cResult[11] = tmp14;
-      cResult[12] = tmp20;
-      tmp17 = tmp20;
+      cResult[12] = tmp19;
+      tmp17 = tmp19;
     }
     if (cResult[8] !== onClickSuggestion) {
       class T {
@@ -122,13 +143,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
           Button = onClickSuggestion(closure_1_2[11]).Button;
           obj.hitSlop = closure_1_1(closure_1_2[5]).space.PX_8;
           obj.text = onClickSuggestion;
-          obj.onPress = function onPress() {
-            return onClickSuggestion(closure_0);
-          };
+          obj.onPress = function onPress() { /* body not rendered: F141301 */ };
           return closure_1_5(Button, obj, onClickSuggestion);
         }
       }
       cResult[8] = onClickSuggestion;
+      class S {
+        constructor() {
+          return closure_1_4.getSuggestions();
+        }
+      }
       cResult[9] = T;
       tmp15 = T;
     } else {
@@ -139,9 +163,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
           Button = onClickSuggestion(closure_1_2[11]).Button;
           obj.hitSlop = closure_1_1(closure_1_2[5]).space.PX_8;
           obj.text = onClickSuggestion;
-          obj.onPress = function onPress() {
-            return onClickSuggestion(closure_0);
-          };
+          obj.onPress = function onPress() { /* body not rendered: F141301 */ };
           return closure_1_5(Button, obj, onClickSuggestion);
         }
       }
@@ -152,7 +174,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
     cResult[7] = mapped;
     tmp14 = mapped;
   }
-}) : ((onClickSuggestion) => {
+}) : (function GIFPickerSearchSuggestions(onClickSuggestion) {
   let intl;
   let items1;
   let suggestions;
@@ -165,7 +187,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   if (0 !== stateFromStoresArray.length) {
     const obj2 = { style: tmp.footerSuggestionsContainer, children: items1 };
     const obj3 = { style: tmp.footerSuggestionsTitle, variant: "text-md/medium", color: "text-default", children: intl.string(onClickSuggestion(1126).t["3JGJo2"]) };
-    const Text = tmp2(4892).Text;
+    const Text = tmp2(5086).Text;
     intl = tmp2(1126).intl;
     items1 = [closure_5(Text, obj3), ];
     const obj4 = {

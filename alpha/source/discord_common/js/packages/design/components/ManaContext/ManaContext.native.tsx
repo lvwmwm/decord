@@ -1,9 +1,9 @@
-// Module ID: 4661
-// Function ID: 4662
+// Module ID: 4853
+// Function ID: 4854
 // Name: ManaContext
 // Dependencies: [19, 21, 558, 576, 2]
 
-// Module 4661 (ManaContext)
+// Module 4853 (ManaContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -16,7 +16,7 @@ const context = react.createContext(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => react.useContext(context)) : (() => react.useContext(context));
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManaContextProvider(arg0) {
   let children;
   let value;
   obj = react2;
@@ -37,7 +37,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = value;
   cResult[2] = tmp3;
   tmp2 = tmp3;
-}) : ((value) => {
+}) : (function ManaContextProvider(value) {
   value = value.value;
   const children = value.children;
   const Provider = context.Provider;

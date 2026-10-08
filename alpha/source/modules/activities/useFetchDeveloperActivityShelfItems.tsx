@@ -1,11 +1,11 @@
-// Module ID: 11756
-// Function ID: 11757
+// Module ID: 11822
+// Function ID: 11823
 // Name: useFetchDeveloperActivityShelfItems
-// Dependencies: [19, 8546, 558, 576, 9045, 2028, 504, 9026, 2]
+// Dependencies: [19, 9031, 558, 576, 10658, 2040, 504, 10635, 2]
 
-// Module 11756 (useFetchDeveloperActivityShelfItems)
-import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 8546 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 9026 */;
+// Module 11822 (useFetchDeveloperActivityShelfItems)
+import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 9031 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10635 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 const DeveloperActivityShelfStore = DeveloperActivityShelfStore2;
 
 const DevShelfFetchState = DeveloperActivityShelfStore2.DevShelfFetchState;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchDeveloperActivityShelfItems() {
   let fetchState;
   let first;
   let isActivitiesEnabledForCurrentPlatform;
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [DeveloperActivityShelfStore];
-    const fn = function f() {
+    const fn = function v() {
       return fetchState.getFetchState();
     };
     const items1 = [];
@@ -62,21 +62,23 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const effect = stateFromStores.useEffect(tmp12, tmp13);
     return null;
   }
-  const fn2 = function h() {
-    const tmp = isActivitiesEnabledForCurrentPlatform && first && stateFromStores === DevShelfFetchState.INITIALIZED;
-    if (tmp) {
-      const obj = EmbeddedActivitiesActionCreators;
-      const developerApplications = obj.fetchDeveloperApplications();
+  class S {
+    constructor() {
+      const tmp = isActivitiesEnabledForCurrentPlatform && first && stateFromStores === DevShelfFetchState.INITIALIZED;
+      if (tmp) {
+        const obj = EmbeddedActivitiesActionCreators;
+        const developerApplications = obj.fetchDeveloperApplications();
+      }
     }
-  };
+  }
   const items2 = [isActivitiesEnabledForCurrentPlatform, stateFromStores, first];
   cResult[4] = isActivitiesEnabledForCurrentPlatform;
   cResult[5] = stateFromStores;
-  cResult[6] = fn2;
+  cResult[6] = S;
   cResult[7] = items2;
   tmp13 = items2;
-  tmp12 = fn2;
-}) : (() => {
+  tmp12 = S;
+}) : (function useFetchDeveloperActivityShelfItems() {
   let fetchState;
   let isActivitiesEnabledForCurrentPlatform;
   let setting;

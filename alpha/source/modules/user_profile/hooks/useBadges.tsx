@@ -1,21 +1,21 @@
-// Module ID: 7925
-// Function ID: 7926
+// Module ID: 8344
+// Function ID: 8345
 // Name: useBadges
-// Dependencies: [4729, 1377, 558, 576, 2028, 573, 1126, 2]
+// Dependencies: [4923, 1389, 558, 576, 2040, 573, 1126, 2]
 
-// Module 7925 (useBadges)
+// Module 8344 (useBadges)
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react from "react" /* 576 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import StreamerModeStore from "StreamerModeStore" /* 4729 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import StreamerModeStore from "StreamerModeStore" /* 4923 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 const legacy_username = "legacy_username";
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((getBadges, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBadges(getBadges, arg1) {
   let currentUser;
   let tmp10;
   let tmp5;
@@ -30,7 +30,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((getBadges, arg1) =
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    const fn = function u() {
+    const fn = function c() {
       return currentUser.getCurrentUser();
     };
     cResult[0] = items;
@@ -164,7 +164,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((getBadges, arg1) =
     cResult[9] = mapped;
     tmp13 = mapped;
   }
-}) : ((getBadges, arg1) => {
+}) : (function useBadges(getBadges, arg1) {
   let currentUser;
   const LegacyUsernameDisabled = UserSettings.LegacyUsernameDisabled;
   let setting = LegacyUsernameDisabled.useSetting();

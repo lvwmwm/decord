@@ -1,33 +1,33 @@
-// Module ID: 9502
-// Function ID: 9503
+// Module ID: 8667
+// Function ID: 8668
 // Name: InstantInviteActionSheet
-// Dependencies: [32, 19, 17, 2056, 9495, 2074, 4515, 7239, 1085, 21, 4896, 587, 558, 576, 9503, 1618, 6664, 6688, 6670, 4878, 504, 7268, 9494, 4860, 7861, 9504, 1197, 9506, 1126, 6651, 1188, 9523, 9527, 9529, 6554, 9521, 9564, 9565, 6652, 2]
+// Dependencies: [32, 19, 17, 2068, 8659, 2086, 4707, 7418, 1085, 21, 5090, 587, 558, 576, 8668, 1630, 6841, 6865, 6847, 5072, 504, 8669, 8658, 5054, 8279, 8670, 1209, 8672, 1126, 6828, 1200, 8693, 8697, 8699, 6730, 8691, 8735, 8736, 6829, 2]
 
-// Module 9502 (InstantInviteActionSheet)
+// Module 8667 (InstantInviteActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 4878 */;
-import Constants2 from "Constants" /* 7239 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9494 */;
-import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 9503 */;
-import HubProgressActionCreators from "HubProgressActionCreators" /* 9504 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 5072 */;
+import Constants2 from "Constants" /* 7418 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8658 */;
+import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 8668 */;
+import HubProgressActionCreators from "HubProgressActionCreators" /* 8670 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import StageInstanceStore from "StageInstanceStore" /* 2056 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 9495 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import StageInstanceStore from "StageInstanceStore" /* 2068 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 8659 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet, channel, message, vanityURLCode;
+let BottomSheet, message, vanityURLCode;
 
 let closure_14;
 let closure_15;
@@ -51,7 +51,7 @@ obj2 = { borderTopWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, mar
 obj3 = { paddingBottom: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_4 };
 let closure_16 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Loading() {
   let first;
   let items1;
   let tmp12;
@@ -99,12 +99,12 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const obj5 = { children: items1 };
   items1 = [tmp8, tmp12, first];
-  const tmp17 = closure_15(authStore2, obj5);
+  const tmp17 = authStore3(authStore2, obj5);
   cResult[5] = tmp8;
   cResult[6] = tmp12;
   cResult[7] = tmp17;
   tmp16 = tmp17;
-}) : (() => {
+}) : (function Loading() {
   let items1;
   let tmp2;
   const tmp = closure_16();
@@ -123,10 +123,10 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj4 = { style: tmp.placeholderLabel };
   items1[1] = tmp2(hasOwnProperty, obj4);
   items1[2] = items;
-  return closure_15(authStore2, obj2);
+  return authStore3(authStore2, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInviteActionSheet(channel) {
   let code;
   let error;
   let targetApplicationId;
@@ -366,7 +366,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[6] = vanityURLCode;
   cResult[7] = M;
   tmp13 = M;
-}) : ((channel) => {
+}) : (function InstantInviteActionSheet(channel) {
   let BottomSheetTitleHeader;
   let code;
   let error;

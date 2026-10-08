@@ -1,36 +1,36 @@
-// Module ID: 11899
-// Function ID: 11900
+// Module ID: 11972
+// Function ID: 11973
 // Name: VoiceMessageButton
-// Dependencies: [5, 32, 19, 17, 4567, 7177, 2051, 7044, 11587, 11588, 1085, 4889, 5105, 21, 4896, 587, 558, 576, 7643, 4742, 5103, 11900, 4618, 11156, 1484, 11498, 7281, 7260, 6978, 8844, 11305, 1121, 4580, 4574, 1126, 11839, 4743, 7288, 4573, 9274, 6147, 11902, 11882, 9702, 2]
+// Dependencies: [5, 32, 19, 17, 4759, 7356, 2063, 7232, 11650, 11651, 1085, 5083, 7477, 21, 5090, 587, 558, 576, 7964, 4936, 7476, 11973, 4810, 11277, 1496, 11484, 7729, 7731, 7167, 9203, 9642, 1121, 4772, 4766, 1126, 6077, 4937, 7494, 4765, 8605, 6326, 11975, 11954, 10891, 2]
 
-// Module 11899 (VoiceMessageButton)
+// Module 11972 (VoiceMessageButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import RootNavigationRef from "RootNavigationRef" /* 4743 */;
-import MessageConstants from "MessageConstants" /* 4889 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 5105 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6147 */;
-import isChannelFocused from "isChannelFocused" /* 11839 */;
-import VoiceMessageUtils from "VoiceMessageUtils" /* 11900 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import RootNavigationRef from "RootNavigationRef" /* 4937 */;
+import MessageConstants from "MessageConstants" /* 5083 */;
+import isChannelFocused from "isChannelFocused" /* 6077 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6326 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7477 */;
+import VoiceMessageUtils from "VoiceMessageUtils" /* 11973 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ActionSheetStore from "ActionSheetStore" /* 4567 */;
-import PendingReplyStore from "PendingReplyStore" /* 7177 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import DraftStore from "DraftStore" /* 7044 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 11587 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 11588 */;
+import ActionSheetStore from "ActionSheetStore" /* 4759 */;
+import PendingReplyStore from "PendingReplyStore" /* 7356 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import DraftStore from "DraftStore" /* 7232 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 11650 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 11651 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let _require, c1, c2, c4, c5, currentState, dependencyMap, disabled, scheduledMessage;
+let _require, c1, c2, c4, c5, currentState, dependencyMap, scheduledMessage;
 
 let closure_12;
 let closure_14;
@@ -48,9 +48,9 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const XSmallBoldIcon2 = tmp(7643);
+const XSmallBoldIcon2 = tmp(7964);
 function triggerHapticGuarded() {
-  if (authStore3.getState().showRecordingOverlay) {
+  if (authStore4.getState().showRecordingOverlay) {
     const obj = VoiceMessageUtils;
     obj.triggerHaptic();
   }
@@ -67,7 +67,7 @@ let obj = { icon: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL, borderRadius: nativeDefault.radii.round, padding: nativeDefault.space.PX_4, marginLeft: nativeDefault.space.PX_4 };
 let closure_27 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMessageRecordingCancelledToastIcon() {
   let first;
   let tmp9;
   const obj = react2;
@@ -90,13 +90,13 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = cResult[2];
   }
   return tmp9;
-}) : (() => {
+}) : (function VoiceMessageRecordingCancelledToastIcon() {
   ({ color: nativeDefault.colors.WHITE, size: "xs" });
   const XSmallBoldIcon = XSmallBoldIcon2.XSmallBoldIcon;
   return <metroRequire style={closure_27().icon} aria-hidden>{null}</metroRequire>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsGestureActive() {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(5);
@@ -126,7 +126,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = tmp4;
   cResult[4] = items;
   tmp5 = items;
-}) : (() => {
+}) : (function useIsGestureActive() {
   const ref = react.useRef(false);
   const obj = ReanimatedRexport;
   const sharedValue = obj.useSharedValue(false);
@@ -145,7 +145,7 @@ const __initData = { code: "function VoiceMessageButtonTsx1(newValue){const{voic
 let closure_32 = { code: "function VoiceMessageButtonTsx2(){const{runOnJS,handleFinalize}=this.__closure;runOnJS(handleFinalize)();}" };
 let closure_33 = { code: "function VoiceMessageButtonTsx3(e_1){const{isGestureActiveValue,LOCK_THRESHOLD,cancelThresholdX,handleUpdateValue,VoiceMessageAnimationState}=this.__closure;if(!isGestureActiveValue.get())return;if(e_1.translationY<=-LOCK_THRESHOLD&&e_1.absoluteX>=cancelThresholdX){handleUpdateValue(VoiceMessageAnimationState.LOCKING);}else if(e_1.absoluteX<cancelThresholdX){handleUpdateValue(VoiceMessageAnimationState.CANCELLING);}else if(e_1.absoluteX>=cancelThresholdX){handleUpdateValue(VoiceMessageAnimationState.SENDING);}}" };
 let closure_34 = { code: "function VoiceMessageButtonTsx4(e_0){const{isGestureActiveValue,runOnJS,setIsUsingHoldGesture,voiceMessageAnimationState,VoiceMessageAnimationState,startRecording}=this.__closure;if(e_0.numberOfTouches>1)return;if(isGestureActiveValue.get())return;runOnJS(setIsUsingHoldGesture)(true);voiceMessageAnimationState.set([VoiceMessageAnimationState.SENDING,VoiceMessageAnimationState.SENDING]);runOnJS(startRecording)();}" };
-const memoResult = react.memo((disabled) => {
+const memoResult = react.memo(function VoiceMessageButton(disabled) {
   let accessibilityActions;
   let cancelThresholdX;
   let closure_7;
@@ -161,7 +161,7 @@ const memoResult = react.memo((disabled) => {
   let c14;
   let tmp = closure_16((voiceMessageAnimationState) => voiceMessageAnimationState.voiceMessageAnimationState);
   dependencyMap = tmp;
-  let obj = disabled(4618);
+  let obj = disabled(4810);
   const sharedValue = obj.useSharedValue(0);
   const tmp3 = first(closure_30(), 3);
   first = tmp3[0];
@@ -172,8 +172,8 @@ const memoResult = react.memo((disabled) => {
   currentState = react.useRef(true);
   let closure_8 = react.useRef(currentState.currentState);
   let closure_9 = react.useRef(null);
-  const tmp7 = channelId(11156)();
-  const width = channelId(1484)().width;
+  const tmp7 = channelId(11277)();
+  const width = channelId(1496)().width;
   const useCallback = react.useCallback;
   _require = sharedValue(function*(arg0, value) {
     let c0;
@@ -344,7 +344,7 @@ const memoResult = react.memo((disabled) => {
   const effect2 = react.useEffect(() => {
     let ref;
     let ref2;
-    let closure_0 = closure_7.addEventListener("change", (event) => {
+    let closure_0 = closure_7.addEventListener("change", function handleVoiceMessageRecordingCancelled(event) {
       let intl;
       let intl2;
       const current = ref.current;
@@ -396,7 +396,7 @@ const memoResult = react.memo((disabled) => {
     const current = first.current;
     return () => {
       closure_7.current = false;
-      const state = authStore3.getState();
+      const state = authStore4.getState();
       const showRecordingOverlay = state.showRecordingOverlay || null != state.recordingStatus || current;
       if (showRecordingOverlay) {
         closure_6(false);
@@ -405,7 +405,7 @@ const memoResult = react.memo((disabled) => {
       }
     };
   }, items2);
-  let obj2 = disabled(4742);
+  let obj2 = disabled(4936);
   const items3 = [first, tmp6, channelId];
   const isModalOpen = obj2.useIsModalOpen();
   const effect4 = react.useEffect(() => {
@@ -662,7 +662,7 @@ const memoResult = react.memo((disabled) => {
       }
     }
   }
-  let obj3 = { voiceMessageAnimationState: tmp, runOnJS: disabled(4618).runOnJS, triggerHapticGuarded };
+  let obj3 = { voiceMessageAnimationState: tmp, runOnJS: disabled(4810).runOnJS, triggerHapticGuarded };
   Q.__closure = obj3;
   Q.__workletHash = 9127775028714;
   Q.__initData = __initData;
@@ -694,7 +694,7 @@ const memoResult = react.memo((disabled) => {
       obj.endAudioRecording();
     }
   }, items7);
-  const tmp19 = channelId(9274);
+  const tmp19 = channelId(8605);
   const tmp20 = sharedValue(function*(arg0, value) {
     if (c2 === 2) {
       c2 = 3;
@@ -804,10 +804,10 @@ const memoResult = react.memo((disabled) => {
     ({ runOnJS: ReanimatedRexport.runOnJS, handleFinalize: callback3 });
     return onUpdateResult.onFinalize(fn3);
   }, items8);
-  const tooltipTargetRef = channelId(11902)().tooltipTargetRef;
-  const GestureDetector = disabled(6147).GestureDetector;
-  let obj5 = { ref: tooltipTargetRef, IconComponent: disabled(9702).MicrophoneIcon, active: false, accessibilityLabel: intl2.string(disabled(1126).t.lwy6aX), accessibilityActions, onAccessibilityAction, disabled };
-  channelId(11882);
+  const tooltipTargetRef = channelId(11975)().tooltipTargetRef;
+  const GestureDetector = disabled(6326).GestureDetector;
+  let obj5 = { ref: tooltipTargetRef, IconComponent: disabled(10891).MicrophoneIcon, active: false, accessibilityLabel: intl2.string(disabled(1126).t.lwy6aX), accessibilityActions, onAccessibilityAction, disabled };
+  channelId(11954);
   intl2 = disabled(1126).intl;
   return <GestureDetector gesture={memo}>{null}</GestureDetector>;
 });

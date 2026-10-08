@@ -14,7 +14,7 @@ import _inherits from "_inherits" /* 98 */;
 
 const require = globalThis.__r;
 
-const f80293 = (nodeType) => nodeType.nodeType === require("module_131").ELEMENT_NODE;
+const f81129 = (nodeType) => nodeType.nodeType === require("module_131").ELEMENT_NODE;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -52,7 +52,7 @@ let obj = {
   key: "childElementCount",
   get() {
     const obj = require("module_131");
-    return obj.getChildNodes(this, f80293).length;
+    return obj.getChildNodes(this, f81129).length;
   }
 };
 const items = [
@@ -63,7 +63,7 @@ const items = [
       const createHTMLCollection = require("module_129").createHTMLCollection;
       require("module_129");
       const obj = require("module_131");
-      return createHTMLCollection(obj.getChildNodes(this, f80293));
+      return createHTMLCollection(obj.getChildNodes(this, f81129));
     }
   },
   {
@@ -122,7 +122,7 @@ const items = [
     key: "firstElementChild",
     get() {
       const obj = require("module_131");
-      const childNodes = obj.getChildNodes(this, f80293);
+      const childNodes = obj.getChildNodes(this, f81129);
       let first = null;
       if (0 !== childNodes.length) {
         first = childNodes[0];
@@ -150,7 +150,7 @@ const items = [
     key: "lastElementChild",
     get() {
       const obj = require("module_131");
-      const childNodes = obj.getChildNodes(this, f80293);
+      const childNodes = obj.getChildNodes(this, f81129);
       let tmp = null;
       if (0 !== childNodes.length) {
         tmp = childNodes[childNodes.length - 1];

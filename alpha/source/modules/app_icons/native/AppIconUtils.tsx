@@ -1,22 +1,22 @@
-// Module ID: 13280
-// Function ID: 13281
+// Module ID: 13581
+// Function ID: 13582
 // Name: AppIconUtils
-// Dependencies: [32, 5, 19, 8858, 1085, 1379, 3, 13281, 8859, 558, 576, 584, 5597, 1252, 4574, 1126, 6895, 1615, 2]
+// Dependencies: [32, 5, 19, 9401, 1085, 1391, 3, 13582, 9402, 558, 576, 584, 5392, 1264, 4766, 1126, 7084, 1627, 2]
 // Exports: isAppIconsSupported, navigateToAppIconSettings, setAppIcon
 
-// Module 13280 (AppIconUtils)
+// Module 13581 (AppIconUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1615 */;
-import useMountEffectDefault from "useMountEffect" /* 5597 */;
-import openUserSettings from "openUserSettings" /* 6895 */;
-import react_nativeDefault from "react-native" /* 13281 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
+import useMountEffectDefault from "useMountEffect" /* 5392 */;
+import openUserSettings from "openUserSettings" /* 7084 */;
+import react_nativeDefault from "react-native" /* 13582 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AppIconConstants from "AppIconConstants" /* 8858 */;
+import AppIconConstants from "AppIconConstants" /* 9401 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -198,7 +198,7 @@ const PremiumTypes = PremiumConstants.PremiumTypes;
 const tmp4 = new LoggerDefault("AppIconUtils");
 let closure_12 = tmp4;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentAppIcon() {
   let closure_0;
   let first;
   let first1;
@@ -260,44 +260,32 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     });
-    const fn = function() {
+    function t0() {
       return closure_0(...arguments);
-    };
-    cResult[0] = fn;
-    first1 = fn;
+    }
+    cResult[0] = t0;
+    first1 = t0;
   } else {
     first1 = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    class A {
-      constructor() {
-        tmp = closure_1();
-        obj = closure_1(closure_2[11]);
-        subscription = obj.subscribe("APP_ICON_UPDATED", closure_1);
-        return () => {
-          obj = first1(dependencyMap[11]);
-          obj.unsubscribe("APP_ICON_UPDATED", closure_1_1);
-        };
-      }
-    }
-    cResult[1] = A;
-    tmp7 = A;
+    const fn = function l() {
+      first1();
+      obj = DispatcherDefault;
+      const subscription = obj.subscribe("APP_ICON_UPDATED", first1);
+      return () => {
+        obj = first1(dependencyMap[11]);
+        obj.unsubscribe("APP_ICON_UPDATED", closure_1_1);
+      };
+    };
+    cResult[1] = fn;
+    tmp7 = fn;
   } else {
-    class A {
-      constructor() {
-        tmp = closure_1();
-        obj = closure_1(closure_2[11]);
-        subscription = obj.subscribe("APP_ICON_UPDATED", closure_1);
-        return () => {
-          obj = first1(dependencyMap[11]);
-          obj.unsubscribe("APP_ICON_UPDATED", closure_1_1);
-        };
-      }
-    }
+    tmp7 = cResult[1];
   }
-  first1(5597)(tmp7);
+  first1(5392)(tmp7);
   return first;
-}) : (() => {
+}) : (function useCurrentAppIcon() {
   let first;
   [first, _require] = react.useState(require("AppIconTypes").FreemiumAppIconIds.DEFAULT);
   importDefault = react.useCallback(_asyncToGenerator(async (arg0, value) => {
@@ -364,7 +352,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 let closure_15 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppIcons() {
   let first;
   let require;
   let tmp10;
@@ -485,11 +473,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     });
-    const fn = function() {
+    function t2() {
       return closure_0(...arguments);
-    };
-    cResult[2] = fn;
-    tmp11 = fn;
+    }
+    cResult[2] = t2;
+    tmp11 = t2;
   } else {
     tmp11 = cResult[2];
   }
@@ -540,7 +528,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[5] = tmp10;
   cResult[6] = tmp7;
   cResult[7] = obj3;
-}) : (() => {
+}) : (function useAppIcons() {
   let limitedTimeAppIcons;
   let require;
   let tmp3;

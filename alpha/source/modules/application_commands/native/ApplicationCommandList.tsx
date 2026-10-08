@@ -1,12 +1,12 @@
-// Module ID: 12059
-// Function ID: 12060
+// Module ID: 12132
+// Function ID: 12133
 // Name: ApplicationCommandList
-// Dependencies: [19, 17, 10085, 21, 558, 576, 1985, 8833, 8968, 7047, 12056, 12057, 2]
+// Dependencies: [19, 17, 9668, 21, 558, 576, 1997, 9192, 9759, 7235, 12129, 12130, 2]
 
-// Module 12059 (ApplicationCommandList)
+// Module 12132 (ApplicationCommandList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10085 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9668 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ const FlatList = react_native.FlatList;
 const AUTOCOMPLETE_ROW_HEIGHT = ApplicationCommandsConstants.AUTOCOMPLETE_ROW_HEIGHT;
 const jsx = Fragment.jsx;
 let closure_7 = 3 * AUTOCOMPLETE_ROW_HEIGHT;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressCommandItem) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationCommandList(onPressCommandItem) {
   let ItemSeparatorComponent;
   let channel;
   let commands;
@@ -218,7 +218,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressCommandItem
       tmp13 = P;
     }
   }
-  class E {
+  class T {
     constructor(arg0) {
       item = onPressCommandItem.item;
       tmp = commands;
@@ -232,7 +232,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressCommandItem
         tmp2 = null;
         found = undefined;
         if (sections != null) {
-          found = arr.find(() => { /* body not rendered: F142301 */ });
+          found = arr.find(() => { /* body not rendered: F143579 */ });
         }
         closure_1 = found;
         tmp4 = closure_1_6;
@@ -240,7 +240,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressCommandItem
         obj = { command: null, section: null, onPress: null, guildId: null, highlighted: null };
         obj.command = item;
         obj.section = found;
-        obj.onPress = function onPress() { /* body not rendered: F142302 */ };
+        obj.onPress = function onPress() { /* body not rendered: F143580 */ };
         tmp6 = item;
         obj.guildId = item.guild_id;
         num = 0;
@@ -252,9 +252,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressCommandItem
   cResult[6] = channel.guild_id;
   cResult[7] = onPressCommandItem;
   cResult[8] = sections;
-  cResult[9] = E;
-  tmp9 = E;
-}) : ((channel) => {
+  cResult[9] = T;
+  tmp9 = T;
+}) : (function ApplicationCommandList(channel) {
   let ItemSeparatorComponent;
   let getItemLayout;
   let items;

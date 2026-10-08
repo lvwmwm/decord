@@ -1,24 +1,24 @@
-// Module ID: 7586
-// Function ID: 7587
+// Module ID: 8106
+// Function ID: 8107
 // Name: IconButton
-// Dependencies: [109, 19, 21, 4896, 587, 558, 576, 7587, 4892, 5617, 2]
+// Dependencies: [109, 19, 21, 5090, 587, 558, 576, 8107, 5086, 5383, 2]
 
-// Module 7586 (IconButton)
+// Module 8106 (IconButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Button_BaseButton from "Button/BaseButton" /* 5617 */;
-import BaseIconButton3 from "BaseIconButton" /* 7587 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Button_BaseButton from "Button/BaseButton" /* 5383 */;
+import BaseIconButton3 from "BaseIconButton" /* 8107 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
-let closure_3 = ["label", "grow", "accessibilityLabel", "maxFontSizeMultiplier", "accessibilityHint"];
+let closure_3 = ["label", "grow", "accessibilityLabel", "maxFontSizeMultiplier", "accessibilityHint", "ref"];
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles((arg0) => {
   let num;
@@ -29,15 +29,16 @@ let closure_7 = createStyles.createStyles((arg0) => {
   }
   return { labelPressable, label: { textAlign: "center" } };
 });
-const forwardRef = react.forwardRef;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconButton(arg0) {
   let accessibilityHint;
   let accessibilityLabel;
   let grow;
   let items;
   let label;
   let maxFontSizeMultiplier;
-  let tmp14;
+  let ref;
+  let tmp10;
+  let tmp15;
   let tmp4;
   let tmp5;
   let tmp6;
@@ -45,18 +46,20 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let tmp8;
   let tmp9;
   const obj = react2;
-  const cResult = obj.c(28);
+  const cResult = obj.c(29);
   if (cResult[0] !== arg0) {
-    ({ label, grow, accessibilityLabel, maxFontSizeMultiplier, accessibilityHint } = arg0);
-    const tmp12 = _objectWithoutProperties(arg0, closure_3);
+    ({ label, grow, accessibilityLabel, maxFontSizeMultiplier, accessibilityHint, ref } = arg0);
+    const tmp13 = _objectWithoutProperties(arg0, closure_3);
     cResult[0] = arg0;
     cResult[1] = accessibilityHint;
     cResult[2] = accessibilityLabel;
     cResult[3] = grow;
     cResult[4] = label;
     cResult[5] = maxFontSizeMultiplier;
-    cResult[6] = tmp12;
-    tmp9 = tmp12;
+    cResult[6] = tmp13;
+    cResult[7] = ref;
+    tmp10 = ref;
+    tmp9 = tmp13;
     tmp8 = maxFontSizeMultiplier;
     tmp7 = label;
     tmp6 = grow;
@@ -69,104 +72,106 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     tmp7 = cResult[4];
     tmp8 = cResult[5];
     tmp9 = cResult[6];
+    tmp10 = cResult[7];
   }
-  const tmp13 = closure_7(tmp6);
+  const tmp14 = closure_7(tmp6);
   if (null != tmp7) {
-    if (cResult[7] === tmp8) {
-      if (cResult[8] === tmp9) {
-        let tmp20;
-        if (cResult[9] === ref) {
-          tmp20 = cResult[10];
+    if (cResult[8] === tmp8) {
+      if (cResult[9] === tmp9) {
+        let tmp21;
+        if (cResult[10] === tmp10) {
+          tmp21 = cResult[11];
         }
-        if (cResult[11] === tmp7) {
-          if (cResult[12] === tmp8) {
-            let tmp26;
-            if (cResult[13] === tmp13.label) {
-              tmp26 = cResult[14];
+        if (cResult[12] === tmp7) {
+          if (cResult[13] === tmp8) {
+            let tmp27;
+            if (cResult[14] === tmp14.label) {
+              tmp27 = cResult[15];
             }
-            if (cResult[15] === tmp4) {
-              if (cResult[16] === tmp5) {
-                if (cResult[17] === tmp9) {
-                  if (cResult[18] === tmp13.labelPressable) {
-                    if (cResult[19] === tmp20) {
-                      let tmp29;
-                      if (cResult[20] === tmp26) {
-                        tmp29 = cResult[21];
+            if (cResult[16] === tmp4) {
+              if (cResult[17] === tmp5) {
+                if (cResult[18] === tmp9) {
+                  if (cResult[19] === tmp14.labelPressable) {
+                    if (cResult[20] === tmp21) {
+                      let tmp30;
+                      if (cResult[21] === tmp27) {
+                        tmp30 = cResult[22];
                       }
-                      tmp14 = tmp29;
+                      tmp15 = tmp30;
                     }
                   }
                 }
               }
             }
-            const obj2 = { style: tmp13.labelPressable, variant: "none", accessibilityLabel: tmp5, accessibilityHint: tmp4, children: items };
-            const BaseButton = tmp(5617).BaseButton;
+            const obj2 = { style: tmp14.labelPressable, variant: "none", accessibilityLabel: tmp5, accessibilityHint: tmp4, children: items };
+            const BaseButton = tmp(5383).BaseButton;
             const merged = Object.assign(tmp9);
-            items = [tmp20, tmp26];
-            const tmp34 = metroRequire(BaseButton, obj2);
-            cResult[15] = tmp4;
-            cResult[16] = tmp5;
-            cResult[17] = tmp9;
-            cResult[18] = tmp13.labelPressable;
-            cResult[19] = tmp20;
-            cResult[20] = tmp26;
-            cResult[21] = tmp34;
-            tmp29 = tmp34;
+            items = [tmp21, tmp27];
+            const tmp35 = metroRequire(BaseButton, obj2);
+            cResult[16] = tmp4;
+            cResult[17] = tmp5;
+            cResult[18] = tmp9;
+            cResult[19] = tmp14.labelPressable;
+            cResult[20] = tmp21;
+            cResult[21] = tmp27;
+            cResult[22] = tmp35;
+            tmp30 = tmp35;
           }
         }
-        const obj3 = { style: tmp13.label, variant: "text-xs/medium", color: "interactive-text-default", maxFontSizeMultiplier: tmp8, children: tmp7 };
-        const tmp28 = hasOwnProperty(Text_Text.Text, obj3);
-        cResult[11] = tmp7;
-        cResult[12] = tmp8;
-        cResult[13] = tmp13.label;
-        cResult[14] = tmp28;
-        tmp26 = tmp28;
+        const obj3 = { style: tmp14.label, variant: "text-xs/medium", color: "interactive-text-default", maxFontSizeMultiplier: tmp8, children: tmp7 };
+        const tmp29 = hasOwnProperty(Text_Text.Text, obj3);
+        cResult[12] = tmp7;
+        cResult[13] = tmp8;
+        cResult[14] = tmp14.label;
+        cResult[15] = tmp29;
+        tmp27 = tmp29;
       }
     }
-    const obj4 = { ref, accessibilityRole: "none", accessibilityLabel: "", size: "lg", maxFontSizeMultiplier: tmp8 };
-    const BaseIconButton2 = tmp(7587).BaseIconButton;
+    const obj4 = { ref: tmp10, accessibilityRole: "none", accessibilityLabel: "", size: "lg", maxFontSizeMultiplier: tmp8 };
+    const BaseIconButton2 = tmp(8107).BaseIconButton;
     const merged1 = Object.assign(tmp9);
-    const tmp25 = hasOwnProperty(BaseIconButton2, obj4);
-    cResult[7] = tmp8;
-    cResult[8] = tmp9;
-    cResult[9] = ref;
-    cResult[10] = tmp25;
-    tmp20 = tmp25;
+    const tmp26 = hasOwnProperty(BaseIconButton2, obj4);
+    cResult[8] = tmp8;
+    cResult[9] = tmp9;
+    cResult[10] = tmp10;
+    cResult[11] = tmp26;
+    tmp21 = tmp26;
   } else {
-    if (cResult[22] === tmp4) {
-      if (cResult[23] === tmp5) {
-        if (cResult[24] === tmp8) {
-          if (cResult[25] === tmp9) {
-            if (cResult[26] === ref) {
-              tmp14 = cResult[27];
+    if (cResult[23] === tmp4) {
+      if (cResult[24] === tmp5) {
+        if (cResult[25] === tmp8) {
+          if (cResult[26] === tmp9) {
+            if (cResult[27] === tmp10) {
+              tmp15 = cResult[28];
             }
           }
         }
       }
     }
-    const obj5 = { ref, accessibilityLabel: tmp5, accessibilityHint: tmp4, maxFontSizeMultiplier: tmp8 };
-    const BaseIconButton = tmp(7587).BaseIconButton;
+    const obj5 = { ref: tmp10, accessibilityLabel: tmp5, accessibilityHint: tmp4, maxFontSizeMultiplier: tmp8 };
+    const BaseIconButton = tmp(8107).BaseIconButton;
     const merged2 = Object.assign(tmp9);
-    const tmp19 = hasOwnProperty(BaseIconButton, obj5);
-    cResult[22] = tmp4;
-    cResult[23] = tmp5;
-    cResult[24] = tmp8;
-    cResult[25] = tmp9;
-    cResult[26] = ref;
-    cResult[27] = tmp19;
-    tmp14 = tmp19;
+    const tmp20 = hasOwnProperty(BaseIconButton, obj5);
+    cResult[23] = tmp4;
+    cResult[24] = tmp5;
+    cResult[25] = tmp8;
+    cResult[26] = tmp9;
+    cResult[27] = tmp10;
+    cResult[28] = tmp20;
+    tmp15 = tmp20;
   }
-  return tmp14;
-}) : ((grow, ref) => {
+  return tmp15;
+}) : (function IconButton(grow) {
   let accessibilityHint;
   let accessibilityLabel;
   let items;
   let label;
   let maxFontSizeMultiplier;
+  let ref;
   let tmp9;
-  ({ label, accessibilityLabel, maxFontSizeMultiplier, accessibilityHint } = grow);
+  ({ label, accessibilityLabel, maxFontSizeMultiplier, accessibilityHint, ref } = grow);
   grow = grow.grow;
-  const merged = Object.assign(grow, Object.assign({ label: 0, grow: 0, accessibilityLabel: 0, maxFontSizeMultiplier: 0, accessibilityHint: 0 }));
+  const merged = Object.assign(grow, Object.assign({ label: 0, grow: 0, accessibilityLabel: 0, maxFontSizeMultiplier: 0, accessibilityHint: 0, ref: 0 }));
   const tmp2 = closure_7(grow);
   if (null != label) {
     const obj2 = { style: tmp2.labelPressable, variant: "none", accessibilityLabel, accessibilityHint, children: items };
@@ -186,7 +191,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     tmp9 = hasOwnProperty(BaseIconButton, obj);
   }
   return tmp9;
-}));
+});
 const result = size.fileFinishedImporting("design/components/Button/native/IconButton.native.tsx");
 
-export const IconButton = forwardRefResult;
+export const IconButton = tmp4;

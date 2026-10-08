@@ -1,29 +1,27 @@
-// Module ID: 12319
-// Function ID: 12320
+// Module ID: 12417
+// Function ID: 12418
 // Name: ChatPlaceholder
-// Dependencies: [19, 17, 9100, 21, 4896, 587, 558, 576, 1618, 6478, 1484, 12320, 12321, 12322, 4618, 2]
+// Dependencies: [19, 17, 9318, 21, 5090, 587, 558, 576, 1630, 6656, 1496, 12418, 12419, 12420, 4810, 2]
 
-// Module 12319 (ChatPlaceholder)
+// Module 12417 (ChatPlaceholder)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9100 */;
-import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 12320 */;
-import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 12321 */;
-import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 12322 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9318 */;
+import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 12418 */;
+import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 12419 */;
+import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 12420 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let screenIndex;
-
 let obj2;
 let tmp3;
-const useSafeAreaInsetsKeyboardAwareDefault = tmp3(6478);
+const useSafeAreaInsetsKeyboardAwareDefault = tmp3(6656);
 const StyleSheet = react_native.StyleSheet;
 let closure_4 = useChatBottomManagerUIStore.useChatInputContainerHeight;
 const jsx = Fragment.jsx;
@@ -34,7 +32,7 @@ createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_6 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLinesForRowIndexCallback() {
   let first;
   let tmp3;
   const obj = react2;
@@ -65,7 +63,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
+}) : (function useLinesForRowIndexCallback() {
   let closure_0 = react.useRef([]);
   return react.useCallback((arg0) => {
     let tmp2 = ref.current[arg0];
@@ -80,7 +78,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }, []);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBottomSafeAreaInset() {
   let first;
   const obj = react2;
   const cResult = obj.c(4);
@@ -107,13 +105,13 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[2] = sum;
   cResult[3] = obj3;
   tmp7 = obj3;
-}) : (() => {
+}) : (function useBottomSafeAreaInset() {
   const rect = useSafeAreaInsetsDefault();
   const insets = useSafeAreaInsetsKeyboardAwareDefault({ isKeyboardAwareOnAndroid: false, includeKeyboardHeight: true }).insets;
   return { containerBottomInset: insets.bottom - rect.bottom, windowVerticalInset: rect.top + insets.bottom };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((screenIndex) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPlaceholder(screenIndex) {
   let diff;
   let sum1;
   let sum2;
@@ -170,7 +168,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
                   }
                   return tmp24;
                 }
-                const tmp26 = jsx(tmp14(4618).View, { style: tmp23, pointerEvents: "none", children: tmp12 });
+                const tmp26 = jsx(tmp14(4810).View, { style: tmp23, pointerEvents: "none", children: tmp12 });
                 cResult[15] = tmp12;
                 cResult[16] = tmp23;
                 cResult[17] = tmp26;
@@ -211,7 +209,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
   cResult[10] = sum1;
   tmp12 = items1;
   tmp14 = tmp16;
-}) : ((screenIndex) => {
+}) : (function ChatPlaceholder(screenIndex) {
   let height;
   let containerBottomInset;
   closure_4 = undefined;

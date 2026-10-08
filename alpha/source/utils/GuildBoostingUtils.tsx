@@ -1,30 +1,32 @@
-// Module ID: 7677
-// Function ID: 7678
+// Module ID: 7998
+// Function ID: 7999
 // Name: GuildBoostingUtils
-// Dependencies: [2074, 1377, 6918, 4540, 1085, 1380, 1379, 4548, 7678, 1126, 1375, 5324, 2115, 12, 4467, 7679, 3233, 4534, 1242, 7682, 7686, 2]
+// Dependencies: [32, 2086, 1389, 7107, 4732, 1085, 1392, 1391, 4740, 7999, 1126, 1387, 5636, 2127, 12, 4659, 8000, 3277, 4726, 1254, 8003, 8007, 2]
 // Exports: appliedGuildBoostsRequiredForPerks, boostedGuildTierToAnalyticsObjectType, generateBlockGuildSubscriptionPurchasesNode, getAppliedGuildBoostMonths, getAvailableGuildBoostSlots, getAvailableSoundboardSoundCount, getAvailableStickerSlotCount, getGracePeriodEndingDate, getGuildBoostingProgressBarFillFactor, getIncrementalSoundboardSoundCountForTier, getIncrementalStickerCountForTier, getMaxEmojiSlots, getMaxSoundboardSlots, getNextGuildTierFromGuild, getNextPremiumTierForSubscriberCount, getNextTier, getNumberOfAppliedBoostsNeededForTier, getShortenedTierName, getTheoreticalPremiumTierForSubscriberCount, getTierName, getTiers, getTotalSoundboardSoundCountForTier, getTotalStickerCountForTier, getUserLevel, isAppliedGuildBoostActive, isGuildBoostSlotCanceled, isGuildBoostedAtLeast, isInGracePeriod, isTierUnlocked
 
-// Module 7677 (GuildBoostingUtils)
+// Module 7998 (GuildBoostingUtils)
 import intl52 from "intl" /* 1126 */;
-import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import _modDef4467 from "module_4467" /* 4467 */;
-import PremiumUtilsAll from "PremiumUtils" /* 4534 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 4548 */;
-import PremiumGuildOverrides from "PremiumGuildOverrides" /* 7678 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 7679 */;
-import useGuildPowerupsBoostCount from "useGuildPowerupsBoostCount" /* 7682 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import UserStore from "UserStore" /* 1377 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 6918 */;
-import SubscriptionStore from "SubscriptionStore" /* 4540 */;
+import SentryUtilsDefault from "SentryUtils" /* 1254 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
+import _modDef4659 from "module_4659" /* 4659 */;
+import PremiumUtilsAll from "PremiumUtils" /* 4726 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 4740 */;
+import PremiumGuildOverrides from "PremiumGuildOverrides" /* 7999 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8000 */;
+import useGuildPowerupsBoostCount from "useGuildPowerupsBoostCount" /* 8003 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import UserStore from "UserStore" /* 1389 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7107 */;
+import SubscriptionStore from "SubscriptionStore" /* 4732 */;
 import Constants from "Constants" /* 1085 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
 let AppliedGuildBoostsRequiredForBoostedGuildTier;
+let c9;
 let closure_12;
 let closure_14;
 let closure_15;
@@ -38,16 +40,15 @@ let closure_22;
 let closure_23;
 let closure_24;
 let closure_25;
+let closure_26;
 let map1;
-let metroImportAll;
 let tmp2;
 let tmp7;
-let unpackModuleId;
-const GlobalUtils = tmp2(1375);
-const _modDef3233 = tmp7(3233);
-const FileSizeUtils = tmp2(5324);
-const f95506 = (isAvailable) => isAvailable.isAvailable();
-const f95507 = (endsAt) => null != endsAt.endsAt;
+const GlobalUtils = tmp2(1387);
+const _modDef3277 = tmp7(3277);
+const FileSizeUtils = tmp2(5636);
+const f96982 = (isAvailable) => isAvailable.isAvailable();
+const f96983 = (endsAt) => null != endsAt.endsAt;
 function getGuildTierFromGuild(arg0) {
   const guild = GuildStore.getGuild(arg0);
   let premiumTier;
@@ -59,14 +60,14 @@ function getGuildTierFromGuild(arg0) {
   }
   return premiumTier;
 }
-({ AnalyticsObjectTypes: metroImportAll, AppliedGuildBoostsRequiredForBoostedGuildTier } = Constants);
+({ AnalyticsObjectTypes: c9, AppliedGuildBoostsRequiredForBoostedGuildTier } = Constants);
 const BoostedGuildTiers = Constants.BoostedGuildTiers;
-({ GuildFeatures: unpackModuleId, HelpdeskArticles: closure_12, MAX_STAGE_VIDEO_USER_LIMIT_TIER2: map1, MAX_STAGE_VIDEO_USER_LIMIT_TIER3: closure_14, SubscriptionStatusTypes: closure_15 } = Constants);
-({ DEFAULT_EMOJI_SLOTS: closure_16, EMOJI_MAX_SLOTS_MORE: closure_17 } = EmojiConstants);
-({ BoostedGuildFeatures: closure_18, DEFAULT_SOUND_SLOTS: closure_19, MORE_SOUNDBOARD_SOUNDS: closure_20, FractionalPremiumStates: closure_21, IncrementalStickerCountsByTier: closure_22, TotalSoundboardSoundCountsByTier: closure_23, TotalStickerCountsByTier: closure_24, PerkIcons: closure_25 } = PremiumConstants);
-let closure_26 = PremiumGroupConstants.getPremiumGroupProductName;
+({ GuildFeatures: closure_12, HelpdeskArticles: map1, MAX_STAGE_VIDEO_USER_LIMIT_TIER2: closure_14, MAX_STAGE_VIDEO_USER_LIMIT_TIER3: closure_15, SubscriptionStatusTypes: closure_16 } = Constants);
+({ DEFAULT_EMOJI_SLOTS: closure_17, EMOJI_MAX_SLOTS_MORE: closure_18 } = EmojiConstants);
+({ BoostedGuildFeatures: closure_19, DEFAULT_SOUND_SLOTS: closure_20, MORE_SOUNDBOARD_SOUNDS: closure_21, FractionalPremiumStates: closure_22, IncrementalStickerCountsByTier: closure_23, TotalSoundboardSoundCountsByTier: closure_24, TotalStickerCountsByTier: closure_25, PerkIcons: closure_26 } = PremiumConstants);
+let closure_27 = PremiumGroupConstants.getPremiumGroupProductName;
 let obj = { LEVEL_1: 1, [1]: "LEVEL_1", LEVEL_2: 2, [2]: "LEVEL_2", LEVEL_3: 3, [3]: "LEVEL_3", LEVEL_4: 4, [4]: "LEVEL_4", LEVEL_5: 5, [5]: "LEVEL_5", LEVEL_6: 6, [6]: "LEVEL_6", LEVEL_7: 7, [7]: "LEVEL_7", LEVEL_8: 8, [8]: "LEVEL_8", LEVEL_9: 9, [9]: "LEVEL_9" };
-let closure_27 = Object.freeze({ [obj.LEVEL_1]: 1, [obj.LEVEL_2]: 2, [obj.LEVEL_3]: 3, [obj.LEVEL_4]: 6, [obj.LEVEL_5]: 9, [obj.LEVEL_6]: 12, [obj.LEVEL_7]: 15, [obj.LEVEL_8]: 18, [obj.LEVEL_9]: 24 });
+let closure_28 = Object.freeze({ [obj.LEVEL_1]: 1, [obj.LEVEL_2]: 2, [obj.LEVEL_3]: 3, [obj.LEVEL_4]: 6, [obj.LEVEL_5]: 9, [obj.LEVEL_6]: 12, [obj.LEVEL_7]: 15, [obj.LEVEL_8]: 18, [obj.LEVEL_9]: 24 });
 let items = [, , , ];
 ({ NONE: arr[0], TIER_1: arr[1], TIER_2: arr[2], TIER_3: arr[3] } = BoostedGuildTiers);
 const substr = items.slice();
@@ -76,7 +77,7 @@ let items1 = [obj2, { tier: BoostedGuildTiers.TIER_2, amount: AppliedGuildBoosts
 let obj3 = { [BoostedGuildTiers.NONE]: 0, [BoostedGuildTiers.TIER_1]: 0.3333333333333333, [BoostedGuildTiers.TIER_2]: 0.6666666666666666, [BoostedGuildTiers.TIER_3]: 1 };
 const memoizeResult = module_12.memoize((arg0) => {
   let TIER_1;
-  const features = authStore4[BoostedGuildTiers.TIER_1].features;
+  const features = closure_19[BoostedGuildTiers.TIER_1].features;
   if (features.includes(arg0)) {
     TIER_1 = tmp2.TIER_1;
   } else {
@@ -113,7 +114,7 @@ export const getNextTier = function getNextTier(arg0) {
 export const getTotalStickerCountForTier = function getTotalStickerCountForTier(premiumTier, guild) {
   if (null != guild) {
     const features = guild.features;
-    if (features.has(unpackModuleId.MORE_STICKERS)) {
+    if (features.has(closure_12.MORE_STICKERS)) {
       let MAX_STICKER_SLOTS;
       if (premiumTier === BoostedGuildTiers.TIER_3) {
         MAX_STICKER_SLOTS = PremiumGuildOverrides.PremiumGuildOverrides.MAX_STICKER_SLOTS;
@@ -121,27 +122,27 @@ export const getTotalStickerCountForTier = function getTotalStickerCountForTier(
       return MAX_STICKER_SLOTS;
     }
   }
-  MAX_STICKER_SLOTS = closure_24[premiumTier];
+  MAX_STICKER_SLOTS = closure_25[premiumTier];
 };
 export const getIncrementalStickerCountForTier = function getIncrementalStickerCountForTier(tier) {
-  return afk[tier];
+  return version[tier];
 };
 export const getTotalSoundboardSoundCountForTier = function getTotalSoundboardSoundCountForTier(arg0, features) {
   if (null != features) {
     let tmp2;
     features = features.features;
-    if (features.has(unpackModuleId.MORE_SOUNDBOARD)) {
-      tmp2 = closure_20;
+    if (features.has(closure_12.MORE_SOUNDBOARD)) {
+      tmp2 = closure_21;
     }
     return tmp2;
   }
-  tmp2 = closure_23[arg0];
+  tmp2 = closure_24[arg0];
 };
 export const getIncrementalSoundboardSoundCountForTier = function getIncrementalSoundboardSoundCountForTier(arg0) {
   if (arg0 === BoostedGuildTiers.NONE) {
-    return closure_23[arg0];
+    return closure_24[arg0];
   } else {
-    return closure_23[arg0] - closure_23[items[items.indexOf(items, arg0) - 1]];
+    return closure_24[arg0] - closure_24[items[items.indexOf(items, arg0) - 1]];
   }
 };
 export const getTiers = (arg0) => {
@@ -227,12 +228,12 @@ export const getTiers = (arg0) => {
   intl = intl52.intl;
   const obj2 = { title: intl2.formatToPlainString(intl52.t.dnLAwl, obj3), description: intl3.string(intl52.t["/Guvxs"]), icon: constants4.EMOJI };
   intl2 = intl52.intl;
-  obj3 = { adding: authStore4[BoostedGuildTiers.TIER_1].limits.emoji - authStore4[BoostedGuildTiers.NONE].limits.emoji, total: authStore4[BoostedGuildTiers.TIER_1].limits.emoji };
+  obj3 = { adding: closure_19[BoostedGuildTiers.TIER_1].limits.emoji - closure_19[BoostedGuildTiers.NONE].limits.emoji, total: closure_19[BoostedGuildTiers.TIER_1].limits.emoji };
   intl3 = intl52.intl;
   items = [obj2, , , , , , ];
   const obj4 = { title: intl4.formatToPlainString(intl52.t["/9p2/g"], obj5), description: intl5.string(intl52.t.JfsnDQ), icon: constants4.STICKER };
   intl4 = intl52.intl;
-  obj5 = { adding: afk[BoostedGuildTiers.TIER_1], total: closure_24[BoostedGuildTiers.TIER_1] };
+  obj5 = { adding: version[BoostedGuildTiers.TIER_1], total: closure_25[BoostedGuildTiers.TIER_1] };
   intl5 = intl52.intl;
   items[1] = obj4;
   const intl6 = intl52.intl;
@@ -240,11 +241,11 @@ export const getTiers = (arg0) => {
   const TIER_1 = BoostedGuildTiers.TIER_1;
   const NRuk5m = intl52.t.NRuk5m;
   if (TIER_1 === BoostedGuildTiers.NONE) {
-    diff = closure_23[TIER_1];
-    tmp9 = closure_23;
+    diff = closure_24[TIER_1];
+    tmp9 = closure_24;
   } else {
-    tmp9 = closure_23;
-    diff = closure_23[TIER_1] - closure_23[items[items.indexOf(items, TIER_1) - 1]];
+    tmp9 = closure_24;
+    diff = closure_24[TIER_1] - closure_24[items[items.indexOf(items, TIER_1) - 1]];
   }
   const obj6 = { title: formatToPlainString(NRuk5m, obj7), description: intl7.string(intl52.t.Oq7OVl), icon: constants4.SOUNDBOARD };
   obj7 = { soundCount: diff, totalSoundCount: tmp9[BoostedGuildTiers.TIER_1] };
@@ -252,7 +253,7 @@ export const getTiers = (arg0) => {
   items[2] = obj6;
   const obj8 = { title: intl8.formatToPlainString(intl52.t.zoT1ZE, obj9), description: intl9.string(intl52.t["8a03jk"]), icon: constants4.AUDIO };
   intl8 = intl52.intl;
-  obj9 = { bitrate: authStore4[BoostedGuildTiers.TIER_1].limits.bitrate / 1000 };
+  obj9 = { bitrate: closure_19[BoostedGuildTiers.TIER_1].limits.bitrate / 1000 };
   intl9 = intl52.intl;
   items[3] = obj8;
   const obj10 = { title: intl10.string(intl52.t.h0s84V), description: intl11.format(intl52.t["t+0cbk"], {}), icon: constants4.ANIMATED };
@@ -272,12 +273,12 @@ export const getTiers = (arg0) => {
   intl16 = intl52.intl;
   const obj14 = { title: intl17.formatToPlainString(intl52.t.dnLAwl, obj15), description: intl18.string(intl52.t.fRiNhw), icon: constants4.EMOJI };
   intl17 = intl52.intl;
-  obj15 = { adding: authStore4[BoostedGuildTiers.TIER_2].limits.emoji - authStore4[BoostedGuildTiers.TIER_1].limits.emoji, total: authStore4[BoostedGuildTiers.TIER_2].limits.emoji };
+  obj15 = { adding: closure_19[BoostedGuildTiers.TIER_2].limits.emoji - closure_19[BoostedGuildTiers.TIER_1].limits.emoji, total: closure_19[BoostedGuildTiers.TIER_2].limits.emoji };
   intl18 = intl52.intl;
   items2 = [obj14, , , , , , , , ];
   const obj16 = { title: intl19.formatToPlainString(intl52.t["/9p2/g"], obj17), description: intl20.string(intl52.t.t4TM28), icon: constants4.STICKER };
   intl19 = intl52.intl;
-  obj17 = { adding: afk[BoostedGuildTiers.TIER_2], total: closure_24[BoostedGuildTiers.TIER_2] };
+  obj17 = { adding: version[BoostedGuildTiers.TIER_2], total: closure_25[BoostedGuildTiers.TIER_2] };
   intl20 = intl52.intl;
   items2[1] = obj16;
   const intl21 = intl52.intl;
@@ -295,7 +296,7 @@ export const getTiers = (arg0) => {
   items2[2] = obj18;
   const obj20 = { title: intl23.formatToPlainString(intl52.t.zoT1ZE, obj21), description: intl24.string(intl52.t["nzRo/I"]), icon: constants4.AUDIO };
   intl23 = intl52.intl;
-  obj21 = { bitrate: authStore4[BoostedGuildTiers.TIER_2].limits.bitrate / 1000 };
+  obj21 = { bitrate: closure_19[BoostedGuildTiers.TIER_2].limits.bitrate / 1000 };
   intl24 = intl52.intl;
   items2[3] = obj20;
   const obj22 = { title: intl25.string(intl52.t["+KhQKM"]), description: intl26.string(intl52.t.ZWf10P), icon: constants4.CUSTOMIZATION };
@@ -305,7 +306,7 @@ export const getTiers = (arg0) => {
   const obj23 = { title: formatToPlainString3(t95LnM, obj24), description: intl28.format(intl52.t.yvht65, {}), icon: constants4.UPLOAD };
   const intl27 = intl52.intl;
   formatToPlainString3 = intl27.formatToPlainString;
-  obj24 = { fileSize: tmp2Result.formatSize(authStore4[BoostedGuildTiers.TIER_2].limits.fileSize / 1024, { useKibibytes: true }) };
+  obj24 = { fileSize: tmp2Result.formatSize(closure_19[BoostedGuildTiers.TIER_2].limits.fileSize / 1024, { useKibibytes: true }) };
   t95LnM = intl52.t.t95LnM;
   tmp2Result = FileSizeUtils;
   intl28 = intl52.intl;
@@ -322,10 +323,10 @@ export const getTiers = (arg0) => {
   if (arg0) {
     const obj27 = { title: intl33.formatToPlainString(intl52.t.T8P3TH, obj28), description: intl34.formatToPlainString(intl52.t.T8P3TH, obj29), icon: constants4.STAGE_VIDEO };
     intl33 = intl52.intl;
-    obj28 = { limit: map1 };
+    obj28 = { limit };
     intl34 = intl52.intl;
     tmp14 = obj27;
-    obj29 = { limit: map1 };
+    obj29 = { limit };
   }
   items2[8] = tmp14;
   items1[1] = obj13;
@@ -333,12 +334,12 @@ export const getTiers = (arg0) => {
   intl35 = intl52.intl;
   const obj31 = { title: intl36.formatToPlainString(intl52.t.dnLAwl, obj32), description: intl37.string(intl52.t.AfJxnV), icon: constants4.EMOJI };
   intl36 = intl52.intl;
-  obj32 = { adding: authStore4[BoostedGuildTiers.TIER_3].limits.emoji - authStore4[BoostedGuildTiers.TIER_2].limits.emoji, total: authStore4[BoostedGuildTiers.TIER_3].limits.emoji };
+  obj32 = { adding: closure_19[BoostedGuildTiers.TIER_3].limits.emoji - closure_19[BoostedGuildTiers.TIER_2].limits.emoji, total: closure_19[BoostedGuildTiers.TIER_3].limits.emoji };
   intl37 = intl52.intl;
   items3 = [obj31, , , , , , , ];
   const obj33 = { title: intl38.formatToPlainString(intl52.t["/9p2/g"], obj34), description: intl39.string(intl52.t["+ZI4QZ"]), icon: constants4.STICKER };
   intl38 = intl52.intl;
-  obj34 = { adding: afk[BoostedGuildTiers.TIER_3], total: closure_24[BoostedGuildTiers.TIER_3] };
+  obj34 = { adding: version[BoostedGuildTiers.TIER_3], total: closure_25[BoostedGuildTiers.TIER_3] };
   intl39 = intl52.intl;
   items3[1] = obj33;
   const intl40 = intl52.intl;
@@ -356,21 +357,21 @@ export const getTiers = (arg0) => {
   items3[2] = obj35;
   const obj37 = { title: intl42.formatToPlainString(intl52.t.zoT1ZE, obj38), description: intl43.string(intl52.t["cOkbp/"]), icon: constants4.AUDIO };
   intl42 = intl52.intl;
-  obj38 = { bitrate: authStore4[BoostedGuildTiers.TIER_3].limits.bitrate / 1000 };
+  obj38 = { bitrate: closure_19[BoostedGuildTiers.TIER_3].limits.bitrate / 1000 };
   intl43 = intl52.intl;
   items3[3] = obj37;
   const obj39 = { title: intl44.string(intl52.t.C2w2cM), description: format(v3Reosx, obj40), icon: constants4.VANITY };
   intl44 = intl52.intl;
   const intl45 = intl52.intl;
   format = intl45.format;
-  obj40 = { helpdeskArticle: obj42.getArticleURL(constants.GUILD_VANITY_URL) };
+  obj40 = { helpdeskArticle: obj42.getArticleURL(map1.GUILD_VANITY_URL) };
   v3Reosx = intl52.t["3Reosx"];
   items3[4] = obj39;
   obj42 = HelpdeskUtilsDefault;
   const obj41 = { title: formatToPlainString5(t95LnM2, obj43), description: intl47.format(intl52.t.IwDqSL, {}), icon: constants4.UPLOAD };
   const intl46 = intl52.intl;
   formatToPlainString5 = intl46.formatToPlainString;
-  obj43 = { fileSize: tmp2Result2.formatSize(authStore4[BoostedGuildTiers.TIER_3].limits.fileSize / 1024, { useKibibytes: true }) };
+  obj43 = { fileSize: tmp2Result2.formatSize(closure_19[BoostedGuildTiers.TIER_3].limits.fileSize / 1024, { useKibibytes: true }) };
   t95LnM2 = intl52.t.t95LnM;
   tmp2Result2 = FileSizeUtils;
   intl47 = intl52.intl;
@@ -383,10 +384,10 @@ export const getTiers = (arg0) => {
   if (arg0) {
     const obj45 = { title: intl50.formatToPlainString(intl52.t.T8P3TH, obj46), description: intl51.formatToPlainString(intl52.t.T8P3TH, obj47), icon: constants4.STAGE_VIDEO };
     intl50 = intl52.intl;
-    obj46 = { limit };
+    obj46 = { limit: limit2 };
     intl51 = intl52.intl;
     tmp19 = obj45;
-    obj47 = { limit };
+    obj47 = { limit: limit2 };
   }
   items3[7] = tmp19;
   items1[2] = obj30;
@@ -451,13 +452,13 @@ export const getShortenedTierName = function getShortenedTierName(arg0) {
 export const minimumRequiredTierForGuildFeature = memoizeResult;
 export const boostedGuildTierToAnalyticsObjectType = function boostedGuildTierToAnalyticsObjectType(arg0) {
   if (BoostedGuildTiers.NONE === arg0) {
-    return metroImportAll.NONE;
+    return React4.NONE;
   } else if (BoostedGuildTiers.TIER_1 === arg0) {
-    return metroImportAll.TIER_1;
+    return React4.TIER_1;
   } else if (BoostedGuildTiers.TIER_2 === arg0) {
-    return metroImportAll.TIER_2;
+    return React4.TIER_2;
   } else if (BoostedGuildTiers.TIER_3 === arg0) {
-    return metroImportAll.TIER_3;
+    return React4.TIER_3;
   } else {
     return null;
   }
@@ -474,8 +475,8 @@ export const getNextGuildTierFromGuild = function getNextGuildTierFromGuild(id) 
   return BoostedGuildTiers.TIER_1;
 };
 export const getAppliedGuildBoostMonths = function getAppliedGuildBoostMonths(arg0) {
-  const obj = _modDef4467();
-  let num = obj.diff(_modDef4467(arg0), "months");
+  const obj = _modDef4659();
+  let num = obj.diff(_modDef4659(arg0), "months");
   if (num == null) {
     num = 1;
   }
@@ -483,12 +484,15 @@ export const getAppliedGuildBoostMonths = function getAppliedGuildBoostMonths(ar
 };
 export const getUserLevel = function getUserLevel(arg0) {
   let num = 1;
-  const obj = _modDef4467();
+  const obj = _modDef4659();
   const diffResult = obj.diff(arg0, "months");
-  const keys = Object.keys(closure_27);
-  for (const item10021 of keys) {
-    if (diffResult >= closure_27[item10021]) {
-      num = +tmp3;
+  const entries = Object.entries(closure_28);
+  const tmp3 = entries[Symbol.iterator]();
+  while (tmp3 !== undefined) {
+    let tmp6 = _slicedToArray(tmp4, 2);
+    let first = tmp6[0];
+    if (diffResult >= tmp6[1]) {
+      num = +first;
     }
     continue;
   }
@@ -512,7 +516,7 @@ export const isTierUnlocked = function isTierUnlocked(premiumTier, arg1) {
 export const getAvailableGuildBoostSlots = function getAvailableGuildBoostSlots(boostSlots) {
   const obj = module_12;
   const values = obj.values(boostSlots);
-  return values.filter(f95506);
+  return values.filter(f96982);
 };
 export const generateBlockGuildSubscriptionPurchasesNode = function generateBlockGuildSubscriptionPurchasesNode(fractionalState) {
   fractionalState = fractionalState.fractionalState;
@@ -528,7 +532,7 @@ export const generateBlockGuildSubscriptionPurchasesNode = function generateBloc
   obj3 = module_12;
   const values = obj3.values(boostSlots);
   let prop;
-  const found = values.filter(f95506);
+  const found = values.filter(f96982);
   if (premiumTypeSubscription != null) {
     prop = premiumTypeSubscription.isPausedOrPausePending;
   }
@@ -547,8 +551,8 @@ export const generateBlockGuildSubscriptionPurchasesNode = function generateBloc
   if (isPremiumGroupMemberResult) {
     const intl7 = intl52.intl;
     const formatToPlainString = intl7.formatToPlainString;
-    const obj = { premiumGroupProductName: closure_26() };
-    const prop1 = _modDef3233["5xN/C1"];
+    const obj = { premiumGroupProductName: closure_27() };
+    const prop1 = _modDef3277["5xN/C1"];
     return formatToPlainString(prop1, obj);
   } else {
     const _Object = Object;
@@ -620,7 +624,7 @@ export const isInGracePeriod = function isInGracePeriod(arr, arg1) {
   const obj = GuildStore;
   if (guild != null) {
     const features = guild.features;
-    hasItem = features.has(unpackModuleId.PREMIUM_TIER_3_OVERRIDE);
+    hasItem = features.has(closure_12.PREMIUM_TIER_3_OVERRIDE);
   }
   let num = 0;
   if (true !== hasItem) {
@@ -632,7 +636,7 @@ export const isInGracePeriod = function isInGracePeriod(arr, arg1) {
     if (premiumTier == null) {
       premiumTier = BoostedGuildTiers.NONE;
     }
-    num = AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier] - (arr.length - arr.filter(f95507).length);
+    num = AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier] - (arr.length - arr.filter(f96983).length);
   }
   return num > 0;
 };
@@ -642,7 +646,7 @@ export const appliedGuildBoostsRequiredForPerks = function appliedGuildBoostsReq
   const obj = GuildStore;
   if (guild != null) {
     const features = guild.features;
-    hasItem = features.has(unpackModuleId.PREMIUM_TIER_3_OVERRIDE);
+    hasItem = features.has(closure_12.PREMIUM_TIER_3_OVERRIDE);
   }
   if (true === hasItem) {
     return 0;
@@ -655,7 +659,7 @@ export const appliedGuildBoostsRequiredForPerks = function appliedGuildBoostsReq
     if (premiumTier == null) {
       premiumTier = BoostedGuildTiers.NONE;
     }
-    return AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier] - (arr.length - arr.filter(f95507).length);
+    return AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier] - (arr.length - arr.filter(f96983).length);
   }
 };
 export const GuildTierSubscriptionsOrdered = items1;
@@ -666,7 +670,7 @@ export const getGracePeriodEndingDate = function getGracePeriodEndingDate(arr, a
   let hasItem;
   if (guild != null) {
     const features = guild.features;
-    hasItem = features.has(unpackModuleId.PREMIUM_TIER_3_OVERRIDE);
+    hasItem = features.has(closure_12.PREMIUM_TIER_3_OVERRIDE);
   }
   let num = 0;
   if (true !== hasItem) {
@@ -678,7 +682,7 @@ export const getGracePeriodEndingDate = function getGracePeriodEndingDate(arr, a
     if (premiumTier == null) {
       premiumTier = BoostedGuildTiers.NONE;
     }
-    num = AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier] - (arr.length - arr.filter(f95507).length);
+    num = AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier] - (arr.length - arr.filter(f96983).length);
   }
   if (num > 0) {
     const sorted = arr.sort((endsAt, endsAt2) => {
@@ -724,7 +728,7 @@ export const getGracePeriodEndingDate = function getGracePeriodEndingDate(arr, a
   }
 };
 export const getAvailableStickerSlotCount = function getAvailableStickerSlotCount(stickers, tier) {
-  const tmp = afk[tier];
+  const tmp = version[tier];
   const index = items.indexOf(tier);
   const tmp2 = items;
   if (-1 === index) {
@@ -732,17 +736,17 @@ export const getAvailableStickerSlotCount = function getAvailableStickerSlotCoun
   } else {
     let num3 = 0;
     if (null != tmp2[index - 1]) {
-      num3 = closure_24[tmp4];
+      num3 = closure_25[tmp4];
     }
     const _Math = Math;
-    return Math.max(0, tmp - stickers.slice(num3, closure_24[tier]).length);
+    return Math.max(0, tmp - stickers.slice(num3, closure_25[tier]).length);
   }
 };
 export const getAvailableSoundboardSoundCount = function getAvailableSoundboardSoundCount(premiumFeatures, arg1, arg2) {
   if (-1 === items.indexOf(arg2)) {
     return 0;
   } else {
-    let tmp4 = closure_19;
+    let tmp4 = closure_20;
     premiumFeatures = premiumFeatures.premiumFeatures;
     let num;
     if (premiumFeatures != null) {
@@ -754,15 +758,15 @@ export const getAvailableSoundboardSoundCount = function getAvailableSoundboardS
     const features = premiumFeatures.features;
     const sum = tmp4 + num;
     const _Math = Math;
-    if (features.has(unpackModuleId.MORE_SOUNDBOARD)) {
-      tmp4 = closure_20;
+    if (features.has(closure_12.MORE_SOUNDBOARD)) {
+      tmp4 = closure_21;
     }
     const _Math2 = Math;
     return Math.max(0, max(tmp4, sum) - arg1.length);
   }
 };
 export const getMaxSoundboardSlots = function getMaxSoundboardSlots(premiumFeatures) {
-  let tmp = closure_19;
+  let tmp = closure_20;
   premiumFeatures = premiumFeatures.premiumFeatures;
   let num;
   if (premiumFeatures != null) {
@@ -774,13 +778,13 @@ export const getMaxSoundboardSlots = function getMaxSoundboardSlots(premiumFeatu
   const features = premiumFeatures.features;
   const sum = tmp + num;
   const _Math = Math;
-  if (features.has(unpackModuleId.MORE_SOUNDBOARD)) {
-    tmp = closure_20;
+  if (features.has(closure_12.MORE_SOUNDBOARD)) {
+    tmp = closure_21;
   }
   return max(tmp, sum);
 };
 export const getMaxEmojiSlots = function getMaxEmojiSlots(stateFromStores) {
-  let tmp = authStore3;
+  let tmp = closure_17;
   const premiumFeatures = stateFromStores.premiumFeatures;
   let num;
   if (premiumFeatures != null) {
@@ -792,8 +796,8 @@ export const getMaxEmojiSlots = function getMaxEmojiSlots(stateFromStores) {
   const features = stateFromStores.features;
   const sum = tmp + num;
   const _Math = Math;
-  if (features.has(unpackModuleId.MORE_EMOJI)) {
-    tmp = closure_17;
+  if (features.has(closure_12.MORE_EMOJI)) {
+    tmp = authStore5;
   }
   return max(tmp, sum);
 };
@@ -828,7 +832,7 @@ export const getNextPremiumTierForSubscriberCount = function getNextPremiumTierF
 export const TierMarkerPositions = obj3;
 export const getGuildBoostingProgressBarFillFactor = function getGuildBoostingProgressBarFillFactor(guild) {
   let totalAvailableBoostsCount;
-  const obj = totalAvailableBoostsCount(7686);
+  const obj = totalAvailableBoostsCount(8007);
   totalAvailableBoostsCount = obj.getGuildPowerupBoostLevelProgress(guild.id);
   let NONE = reversed.find((item) => totalAvailableBoostsCount >= AppliedGuildBoostsRequiredForBoostedGuildTier[item]);
   if (NONE == null) {

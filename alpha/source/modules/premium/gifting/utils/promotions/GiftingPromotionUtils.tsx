@@ -1,17 +1,17 @@
-// Module ID: 10477
-// Function ID: 10478
+// Module ID: 10074
+// Function ID: 10075
 // Name: GiftingPromotionUtils
-// Dependencies: [32, 19, 10409, 1379, 558, 576, 504, 10478, 10482, 10483, 4704, 2036, 2]
+// Dependencies: [32, 19, 10006, 1391, 558, 576, 504, 10075, 10079, 10080, 4898, 2048, 2]
 // Exports: combinePromotionStyles, createBackgroundStyle, createGradientStyle, getRewardAssetIdMap, shouldShowGiftPromotionReminderNotice, useIsPlanEligibleForGiftingPromotion
 
-// Module 10477 (GiftingPromotionUtils)
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4704 */;
-import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10482 */;
-import MarketingComponentType from "MarketingComponentType" /* 10483 */;
+// Module 10074 (GiftingPromotionUtils)
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4898 */;
+import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10079 */;
+import MarketingComponentType from "MarketingComponentType" /* 10080 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PromotionsStore from "PromotionsStore" /* 10409 */;
+import PromotionsStore from "PromotionsStore" /* 10006 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let _require, map;
 
 const SubscriptionPlans = PremiumConstants.SubscriptionPlans;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchClaimableGiftingPromotionRewardSkuIds() {
   let closure_0;
   let fetchPurchasesError;
   let hasPreviouslyFetched;
@@ -69,7 +69,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
   }
-  const fn2 = function b() {
+  const fn2 = function h() {
     const tmp = hasPreviouslyFetched;
     if (tmp) {
       if (!ref.current) {
@@ -96,7 +96,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[7] = items1;
   tmp12 = items1;
   tmp11 = fn2;
-}) : (() => {
+}) : (function useFetchClaimableGiftingPromotionRewardSkuIds() {
   let closure_0;
   let fetchPurchasesError;
   let hasPreviouslyFetched;
@@ -136,9 +136,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return first;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) => {
-  const items = [, ];
-  ({ PREMIUM_YEAR_TIER_2: arr[0], PREMIUM_MONTH_TIER_2: arr[1] } = SubscriptionPlans);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowSelectFreeSkuStep(id, arg1, arg2) {
+  const items = [, , ];
+  ({ PREMIUM_YEAR_TIER_2: arr[0], PREMIUM_MONTH_TIER_2: arr[1], PREMIUM_3_MONTH_TIER_2: arr[2] } = SubscriptionPlans);
   id = undefined;
   const includes = items.includes;
   if (id != null) {
@@ -150,9 +150,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) => {
     tmp3 = arg2.length >= 1;
   }
   return arg1 && hasItem && tmp3;
-}) : ((id, arg1, arg2) => {
-  const items = [, ];
-  ({ PREMIUM_YEAR_TIER_2: arr[0], PREMIUM_MONTH_TIER_2: arr[1] } = SubscriptionPlans);
+}) : (function useShouldShowSelectFreeSkuStep(id, arg1, arg2) {
+  const items = [, , ];
+  ({ PREMIUM_YEAR_TIER_2: arr[0], PREMIUM_MONTH_TIER_2: arr[1], PREMIUM_3_MONTH_TIER_2: arr[2] } = SubscriptionPlans);
   id = undefined;
   const includes = items.includes;
   if (id != null) {
@@ -166,9 +166,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) => {
   return arg1 && hasItem && tmp3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) => {
-  const items = [, ];
-  ({ PREMIUM_YEAR_TIER_2: arr[0], PREMIUM_MONTH_TIER_2: arr[1] } = SubscriptionPlans);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldAutoSelectGiftingPromotionReward(id, arg1, arg2) {
+  const items = [, , ];
+  ({ PREMIUM_YEAR_TIER_2: arr[0], PREMIUM_MONTH_TIER_2: arr[1], PREMIUM_3_MONTH_TIER_2: arr[2] } = SubscriptionPlans);
   id = undefined;
   const includes = items.includes;
   if (id != null) {
@@ -186,9 +186,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) => {
     tmp3 = arg1;
   }
   return tmp3;
-}) : ((id, arg1, arg2) => {
-  const items = [, ];
-  ({ PREMIUM_YEAR_TIER_2: arr[0], PREMIUM_MONTH_TIER_2: arr[1] } = SubscriptionPlans);
+}) : (function useShouldAutoSelectGiftingPromotionReward(id, arg1, arg2) {
+  const items = [, , ];
+  ({ PREMIUM_YEAR_TIER_2: arr[0], PREMIUM_MONTH_TIER_2: arr[1], PREMIUM_3_MONTH_TIER_2: arr[2] } = SubscriptionPlans);
   id = undefined;
   const includes = items.includes;
   if (id != null) {
@@ -208,8 +208,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) => {
   return tmp3;
 });
 function useIsPlanEligibleForGiftingPromotion(id) {
-  const items = [, ];
-  ({ PREMIUM_YEAR_TIER_2: arr[0], PREMIUM_MONTH_TIER_2: arr[1] } = SubscriptionPlans);
+  const items = [, , ];
+  ({ PREMIUM_YEAR_TIER_2: arr[0], PREMIUM_MONTH_TIER_2: arr[1], PREMIUM_3_MONTH_TIER_2: arr[2] } = SubscriptionPlans);
   id = undefined;
   const includes = items.includes;
   if (id != null) {
@@ -318,10 +318,10 @@ export const shouldShowGiftPromotionReminderNotice = function shouldShowGiftProm
       let tmp5 = null != id;
       if (tmp5) {
         const tmpResult = DismissibleContentUnsafeUtils;
-        let isDismissed = tmpResult.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2036).DismissibleContent.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK, id).isDismissed;
+        let isDismissed = tmpResult.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2048).DismissibleContent.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK, id).isDismissed;
         if (isDismissed) {
           const tmpResult2 = DismissibleContentUnsafeUtils;
-          isDismissed = !tmpResult2.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2036).DismissibleContent.GIFTING_PROMOTION_REMINDER, id).isDismissed;
+          isDismissed = !tmpResult2.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2048).DismissibleContent.GIFTING_PROMOTION_REMINDER, id).isDismissed;
         }
         tmp5 = isDismissed;
       }

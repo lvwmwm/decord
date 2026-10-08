@@ -1,23 +1,23 @@
-// Module ID: 17139
-// Function ID: 17140
+// Module ID: 17420
+// Function ID: 17421
 // Name: GooglePlayPriceChangeActionSheet
-// Dependencies: [19, 17, 4540, 17140, 1085, 2048, 21, 4896, 587, 558, 576, 504, 4534, 6750, 6652, 4892, 1126, 2115, 5601, 2]
+// Dependencies: [19, 17, 4732, 17421, 1085, 2060, 21, 5090, 587, 558, 576, 504, 4726, 6926, 6829, 5086, 1126, 2127, 5375, 2]
 
-// Module 17139 (GooglePlayPriceChangeActionSheet)
+// Module 17420 (GooglePlayPriceChangeActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
 import react from "react" /* 19 */;
-import SubscriptionStore from "SubscriptionStore" /* 4540 */;
-import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 17140 */;
+import SubscriptionStore from "SubscriptionStore" /* 4732 */;
+import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 17421 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, markAsDismissed;
+let BottomSheet;
 
 let c9;
 let metroImportAll;
@@ -35,10 +35,11 @@ createStyles = createStyles.createStyles;
 obj3 = { marginBottom: nativeDefault.space.PX_24 };
 obj4 = { marginBottom: nativeDefault.space.PX_16, alignItems: "center", textAlign: "center" };
 let closure_10 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GooglePlayPriceChangeActionSheet(markAsDismissed) {
   let container;
   let intl;
   let items2;
+  let items3;
   let obj11;
   let premiumSubscription;
   let priceChangeRecord;
@@ -53,15 +54,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
   const tmp4 = closure_10();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GooglePlayPriceChangeStore];
-    class P {
-      constructor() {
-        return closure_1_5.priceChangeRecord;
-      }
-    }
+    const fn = function p() {
+      return priceChangeRecord.priceChangeRecord;
+    };
     cResult[0] = items;
-    cResult[1] = P;
+    cResult[1] = fn;
     tmp5 = items;
-    tmp6 = P;
+    tmp6 = fn;
   } else {
     [tmp5, tmp6] = cResult;
   }
@@ -69,14 +68,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [SubscriptionStore];
-    class P {
-      constructor() {
-        return closure_1_5.priceChangeRecord;
-      }
-    }
+    const fn2 = function v() {
+      return premiumSubscription.getPremiumSubscription(true);
+    };
     cResult[2] = items1;
-    cResult[3] = tmp12;
-    tmp10 = tmp12;
+    cResult[3] = fn2;
+    tmp10 = fn2;
     tmp9 = items1;
   } else {
     tmp9 = cResult[2];
@@ -100,139 +97,123 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
               if (cResult[10] === tmp4.container) {
                 if (cResult[11] === tmp4.header) {
                   if (cResult[12] === tmp4.textContainer) {
+                    let tmp13;
                     let tmp14;
                     let tmp15;
                     let tmp16;
-                    let tmp18;
+                    let tmp17;
                     let str2;
+                    let tmp18;
                     let tmp19;
                     let tmp20;
                     let tmp21;
-                    let tmp22;
                     if (cResult[13] === str) {
-                      tmp14 = cResult[14];
-                      tmp15 = cResult[15];
-                      tmp16 = cResult[16];
-                      class P {
-                        constructor() {
-                          return closure_1_5.priceChangeRecord;
-                        }
-                      }
-                      tmp18 = cResult[18];
+                      tmp13 = cResult[14];
+                      tmp14 = cResult[15];
+                      tmp15 = cResult[16];
+                      tmp16 = cResult[17];
+                      tmp17 = cResult[18];
                       str2 = cResult[19];
-                      tmp19 = cResult[20];
-                      tmp20 = cResult[21];
-                      tmp21 = cResult[22];
-                      tmp22 = cResult[23];
+                      tmp18 = cResult[20];
+                      tmp19 = cResult[21];
+                      tmp20 = cResult[22];
+                      tmp21 = cResult[23];
                     }
-                    if (cResult[24] === tmp14) {
+                    if (cResult[24] === tmp13) {
                       if (cResult[25] === str2) {
-                        if (cResult[26] === tmp19) {
-                          let tmp31;
-                          if (cResult[27] === tmp20) {
-                            tmp31 = cResult[28];
+                        if (cResult[26] === tmp18) {
+                          let tmp30;
+                          if (cResult[27] === tmp19) {
+                            tmp30 = cResult[28];
                           }
-                          if (cResult[29] === tmp15) {
-                            if (cResult[30] === tmp31) {
-                              if (cResult[31] === tmp21) {
-                                let tmp35;
-                                let tmp41;
-                                if (cResult[32] === tmp22) {
-                                  tmp35 = cResult[33];
+                          if (cResult[29] === tmp14) {
+                            if (cResult[30] === tmp30) {
+                              if (cResult[31] === tmp20) {
+                                let tmp33;
+                                let tmp36;
+                                let tmp38;
+                                if (cResult[32] === tmp21) {
+                                  tmp33 = cResult[33];
                                 }
                                 const _Symbol = Symbol;
-                                class P {
-                                  constructor() {
-                                    return closure_1_5.priceChangeRecord;
-                                  }
+                                if (cResult[34] === Symbol.for("react.memo_cache_sentinel")) {
+                                  const intl3 = tmp(1126).intl;
+                                  const stringResult = intl3.string(markAsDismissed(1126).t.BddRzS);
+                                  cResult[34] = stringResult;
+                                  tmp36 = stringResult;
+                                } else {
+                                  tmp36 = cResult[34];
                                 }
                                 if (cResult[35] !== markAsDismissed) {
-                                  const obj2 = { variant: "primary", text: tmp40, onPress: null };
-                                  class P {
-                                    constructor() {
-                                      return closure_1_5.priceChangeRecord;
-                                    }
-                                  }
-                                  const tmp43 = closure_8(markAsDismissed(5601).Button, obj2);
+                                  const obj2 = {
+                                    variant: "primary",
+                                    text: tmp36,
+                                    onPress() {
+                                                                      markAsDismissed(ContentDismissActionType.USER_DISMISS);
+                                                                    }
+                                  };
+                                  const tmp40 = closure_8(markAsDismissed(5375).Button, obj2);
                                   cResult[35] = markAsDismissed;
-                                  cResult[36] = tmp43;
-                                  tmp41 = tmp43;
+                                  cResult[36] = tmp40;
+                                  tmp38 = tmp40;
                                 } else {
-                                  tmp41 = cResult[36];
+                                  tmp38 = cResult[36];
                                 }
-                                if (cResult[37] === tmp16) {
-                                  if (cResult[38] === tmp18) {
-                                    if (cResult[39] === tmp35) {
-                                      let tmp44;
-                                      if (cResult[40] === tmp41) {
-                                        tmp44 = cResult[41];
+                                if (cResult[37] === tmp15) {
+                                  if (cResult[38] === tmp17) {
+                                    if (cResult[39] === tmp33) {
+                                      let tmp41;
+                                      if (cResult[40] === tmp38) {
+                                        tmp41 = cResult[41];
                                       }
-                                      if (cResult[42] === tmp17) {
-                                        let tmp47;
-                                        if (cResult[43] === tmp44) {
-                                          tmp47 = cResult[44];
+                                      if (cResult[42] === tmp16) {
+                                        let tmp44;
+                                        if (cResult[43] === tmp41) {
+                                          tmp44 = cResult[44];
                                         }
-                                        return tmp47;
+                                        return tmp44;
                                       }
-                                      class P {
-                                        constructor() {
-                                          return closure_1_5.priceChangeRecord;
-                                        }
-                                      }
-                                      tmp49[0] = tmp44;
-                                      const tmp50 = closure_8(tmp17, tmp49);
-                                      cResult[42] = tmp17;
-                                      cResult[43] = tmp44;
-                                      cResult[44] = tmp50;
-                                      tmp47 = tmp50;
+                                      const obj3 = { children: tmp41 };
+                                      const tmp46 = closure_8(tmp16, obj3);
+                                      cResult[42] = tmp16;
+                                      cResult[43] = tmp41;
+                                      cResult[44] = tmp46;
+                                      tmp44 = tmp46;
                                     }
                                   }
                                 }
-                                const obj3 = { style: tmp18, children: items2 };
-                                items2 = [tmp35, tmp41];
-                                const tmp46 = closure_9(tmp16, obj3);
-                                cResult[37] = tmp16;
-                                cResult[38] = tmp18;
-                                cResult[39] = tmp35;
-                                cResult[40] = tmp41;
-                                cResult[41] = tmp46;
-                                tmp44 = tmp46;
+                                const obj4 = { style: tmp17, children: items2 };
+                                items2 = [tmp33, tmp38];
+                                const tmp43 = closure_9(tmp15, obj4);
+                                cResult[37] = tmp15;
+                                cResult[38] = tmp17;
+                                cResult[39] = tmp33;
+                                cResult[40] = tmp38;
+                                cResult[41] = tmp43;
+                                tmp41 = tmp43;
                               }
                             }
                           }
-                          class P {
-                            constructor() {
-                              return closure_1_5.priceChangeRecord;
-                            }
-                          }
-                          tmp37[0] = tmp21;
-                          const items3 = [tmp22, tmp31];
-                          tmp37[1] = items3;
-                          const tmp38 = closure_9(tmp15, tmp37);
-                          cResult[29] = tmp15;
-                          cResult[30] = tmp31;
-                          cResult[31] = tmp21;
-                          cResult[32] = tmp22;
-                          cResult[33] = tmp38;
-                          tmp35 = tmp38;
+                          const obj5 = { style: tmp20, children: items3 };
+                          items3 = [tmp21, tmp30];
+                          const tmp35 = closure_9(tmp14, obj5);
+                          cResult[29] = tmp14;
+                          cResult[30] = tmp30;
+                          cResult[31] = tmp20;
+                          cResult[32] = tmp21;
+                          cResult[33] = tmp35;
+                          tmp33 = tmp35;
                         }
                       }
                     }
-                    class P {
-                      constructor() {
-                        return closure_1_5.priceChangeRecord;
-                      }
-                    }
-                    tmp33[0] = str2;
-                    tmp33[1] = tmp19;
-                    tmp33[2] = tmp20;
-                    const tmp34 = closure_8(tmp14, tmp33);
-                    cResult[24] = tmp14;
+                    const obj6 = { variant: str2, style: tmp18, children: tmp19 };
+                    const tmp32 = closure_8(tmp13, obj6);
+                    cResult[24] = tmp13;
                     cResult[25] = str2;
-                    cResult[26] = tmp19;
-                    cResult[27] = tmp20;
-                    cResult[28] = tmp34;
-                    tmp31 = tmp34;
+                    cResult[26] = tmp18;
+                    cResult[27] = tmp19;
+                    cResult[28] = tmp32;
+                    tmp30 = tmp32;
                   }
                 }
               }
@@ -242,31 +223,31 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
       }
     }
   }
-  const tmpResult8 = markAsDismissed(4534);
+  const tmpResult8 = markAsDismissed(4726);
   const tierDisplayNameByPlanId = tmpResult8.getTierDisplayNameByPlanId(str);
-  const tmpResult9 = markAsDismissed(4534);
+  const tmpResult9 = markAsDismissed(4726);
   const intervalType = tmpResult9.getInterval(str).intervalType;
-  const tmpResult10 = markAsDismissed(4534);
+  const tmpResult10 = markAsDismissed(4726);
   const intervalStringAsNoun = tmpResult10.getIntervalStringAsNoun(intervalType);
-  const tmpResult11 = markAsDismissed(6750);
+  const tmpResult11 = markAsDismissed(6926);
   const formatPriceResult = tmpResult11.formatPrice(stateFromStores.oldPrice, stateFromStores.oldCurrency);
-  const tmpResult12 = markAsDismissed(6750);
+  const tmpResult12 = markAsDismissed(6926);
   const formatPriceResult1 = tmpResult12.formatPrice(stateFromStores.newPrice, stateFromStores.newCurrency);
-  BottomSheet = tmp(6652).BottomSheet;
+  BottomSheet = tmp(6829).BottomSheet;
   ({ container, textContainer } = tmp4);
-  const obj4 = { variant: "heading-xl/bold", style: tmp4.header, children: intl.format(markAsDismissed(1126).t.x0bFvn, { subscriptionName: tierDisplayNameByPlanId }) };
-  const Text = tmp(4892).Text;
+  const obj7 = { variant: "heading-xl/bold", style: tmp4.header, children: intl.format(markAsDismissed(1126).t.x0bFvn, { subscriptionName: tierDisplayNameByPlanId }) };
+  const Text = tmp(5086).Text;
   intl = tmp(1126).intl;
-  const tmp27 = closure_8(Text, obj4);
-  const Text2 = tmp(4892).Text;
+  const tmp26 = closure_8(Text, obj7);
+  const Text2 = tmp(5086).Text;
   const body = tmp4.body;
   const intl2 = tmp(1126).intl;
   const format = intl2.format;
-  const obj5 = { subscriptionName: tierDisplayNameByPlanId, changeDate: new Date(stateFromStores.expectedChargeTime), interval: intervalStringAsNoun, newPrice: formatPriceResult1, oldPrice: formatPriceResult, hc_article_url: obj11.getArticleURL(HelpdeskArticles.SUBSCRIPTION_CANCEL) };
+  const obj8 = { subscriptionName: tierDisplayNameByPlanId, changeDate: new Date(stateFromStores.expectedChargeTime), interval: intervalStringAsNoun, newPrice: formatPriceResult1, oldPrice: formatPriceResult, hc_article_url: obj11.getArticleURL(HelpdeskArticles.SUBSCRIPTION_CANCEL) };
   const prop = tmp(1126).t["n+Hrjb"];
   new Date(stateFromStores.expectedChargeTime);
   obj11 = HelpdeskUtilsDefault;
-  const formatResult = format(prop, obj5);
+  const formatResult = format(prop, obj8);
   cResult[4] = stateFromStores.expectedChargeTime;
   cResult[5] = stateFromStores.newCurrency;
   cResult[6] = stateFromStores.newPrice;
@@ -286,17 +267,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
   cResult[20] = body;
   cResult[21] = formatResult;
   cResult[22] = textContainer;
-  cResult[23] = tmp27;
-  tmp22 = tmp27;
-  tmp21 = textContainer;
-  tmp20 = formatResult;
-  tmp19 = body;
+  cResult[23] = tmp26;
+  tmp21 = tmp26;
+  tmp20 = textContainer;
+  tmp19 = formatResult;
+  tmp18 = body;
   str2 = "text-md/medium";
-  tmp18 = container;
-  tmp16 = View;
+  tmp17 = container;
+  tmp16 = BottomSheet;
   tmp15 = View;
-  tmp14 = Text2;
-}) : ((markAsDismissed) => {
+  tmp14 = View;
+  tmp13 = Text2;
+}) : (function GooglePlayPriceChangeActionSheet(markAsDismissed) {
   let format;
   let intl;
   let intl3;
@@ -323,26 +305,26 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
   if (str == null) {
     str = "";
   }
-  const tmp2Result = markAsDismissed(4534);
+  const tmp2Result = markAsDismissed(4726);
   const tierDisplayNameByPlanId = tmp2Result.getTierDisplayNameByPlanId(str);
-  const tmp2Result5 = markAsDismissed(4534);
+  const tmp2Result5 = markAsDismissed(4726);
   const intervalType = tmp2Result5.getInterval(str).intervalType;
-  const tmp2Result6 = markAsDismissed(4534);
+  const tmp2Result6 = markAsDismissed(4726);
   const intervalStringAsNoun = tmp2Result6.getIntervalStringAsNoun(intervalType);
-  const tmp2Result7 = markAsDismissed(6750);
+  const tmp2Result7 = markAsDismissed(6926);
   const formatPriceResult = tmp2Result7.formatPrice(stateFromStores.oldPrice, stateFromStores.oldCurrency);
-  const tmp2Result8 = markAsDismissed(6750);
+  const tmp2Result8 = markAsDismissed(6926);
   const obj3 = { children: closure_9(View, obj4) };
   obj4 = { style: tmp.container, children: items3 };
   const obj5 = { style: tmp.textContainer, children: items2 };
   const formatPriceResult1 = tmp2Result8.formatPrice(stateFromStores.newPrice, stateFromStores.newCurrency);
-  BottomSheet = tmp2(6652).BottomSheet;
+  BottomSheet = tmp2(6829).BottomSheet;
   const obj6 = { variant: "heading-xl/bold", style: tmp.header, children: intl.format(markAsDismissed(1126).t.x0bFvn, { subscriptionName: tierDisplayNameByPlanId }) };
-  const Text = tmp2(4892).Text;
+  const Text = tmp2(5086).Text;
   intl = tmp2(1126).intl;
   items2 = [closure_8(Text, obj6), ];
   const obj7 = { variant: "text-md/medium", style: tmp.body, children: format(prop, obj8) };
-  const Text2 = tmp2(4892).Text;
+  const Text2 = tmp2(5086).Text;
   const intl2 = tmp2(1126).intl;
   format = intl2.format;
   obj8 = { subscriptionName: tierDisplayNameByPlanId, changeDate: new Date(stateFromStores.expectedChargeTime), interval: intervalStringAsNoun, newPrice: formatPriceResult1, oldPrice: formatPriceResult, hc_article_url: obj14.getArticleURL(HelpdeskArticles.SUBSCRIPTION_CANCEL) };
@@ -358,7 +340,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
       markAsDismissed(ContentDismissActionType.USER_DISMISS);
     }
   };
-  const Button = tmp2(5601).Button;
+  const Button = tmp2(5375).Button;
   intl3 = tmp2(1126).intl;
   items3[1] = closure_8(Button, obj9);
   return closure_8(BottomSheet, obj3);

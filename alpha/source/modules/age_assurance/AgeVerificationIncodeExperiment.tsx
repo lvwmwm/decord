@@ -1,12 +1,12 @@
-// Module ID: 8136
-// Function ID: 8137
+// Module ID: 7523
+// Function ID: 7524
 // Name: AgeVerificationIncodeExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1452, 558, 576, 2]
 // Exports: isAgeVerificationIncodeEnabled
 
-// Module 8136 (AgeVerificationIncodeExperiment)
+// Module 7523 (AgeVerificationIncodeExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let obj = { kind: "user", name: "2026-06-age-verification-incode", defaultConfig
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
 let closure_2 = ApexExperiment.createApexExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsAgeVerificationIncodeEnabled(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -28,7 +28,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useIsAgeVerificationIncodeEnabled(location) {
   const obj = { location };
   return closure_2.useConfig(obj).enabled;
 });

@@ -1,16 +1,16 @@
-// Module ID: 15350
-// Function ID: 15351
+// Module ID: 15612
+// Function ID: 15613
 // Name: UpcomingServerEventNotificationSetting
-// Dependencies: [7645, 558, 15351, 11142, 1126, 2028, 15352, 2]
+// Dependencies: [7966, 558, 15613, 11262, 1126, 2040, 15614, 2]
 
-// Module 15350 (UpcomingServerEventNotificationSetting)
+// Module 15612 (UpcomingServerEventNotificationSetting)
 import intl2 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import UpcomingServerEventExperiment from "UpcomingServerEventExperiment" /* 15351 */;
-import UpcomingServerEventNotificationUtils from "UpcomingServerEventNotificationUtils" /* 15352 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import UpcomingServerEventExperiment from "UpcomingServerEventExperiment" /* 15613 */;
+import UpcomingServerEventNotificationUtils from "UpcomingServerEventNotificationUtils" /* 15614 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -28,7 +28,7 @@ let obj = {
   parent: MobileUserSettings.NOTIFICATIONS,
   useValue: UserSettings.EnableUpcomingServerEventNotifications.useSetting,
   onValueChange: UpcomingServerEventNotificationUtils.onUpcomingServerEventNotificationSettingsChanged,
-  usePredicate: () => {
+  usePredicate: function useExperiment() {
     const obj = UpcomingServerEventExperiment;
     return obj.useUpcomingServerEventExperiment("tabsV2Settings").showSettingsToggle;
   }

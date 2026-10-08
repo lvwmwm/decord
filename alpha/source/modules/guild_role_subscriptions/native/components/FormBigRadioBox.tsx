@@ -1,19 +1,19 @@
-// Module ID: 17969
-// Function ID: 17970
+// Module ID: 18256
+// Function ID: 18257
 // Name: FormBigRadioBox
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4600, 1188, 4892, 9455, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 4792, 1200, 5086, 7013, 2]
 
-// Module 17969 (FormBigRadioBox)
+// Module 18256 (FormBigRadioBox)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import react_native2 from "react-native" /* 4600 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9455 */;
+import native from "native" /* 1200 */;
+import react_native2 from "react-native" /* 4792 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 7013 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderWid
 size = { height: 40, width: 40, alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: 20, justifyContent: "center", marginBottom: 16 };
 obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 let closure_6 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormBigRadioBox(onPress) {
   let accessibilityRole;
   let accessibilityState;
   let description;
@@ -185,7 +185,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   cResult[1] = selected;
   cResult[2] = obj8;
   tmp6 = obj8;
-}) : ((arg0) => {
+}) : (function FormBigRadioBox(arg0) {
   let accessibilityRole;
   let accessibilityState;
   let description;

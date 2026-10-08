@@ -1,12 +1,12 @@
-// Module ID: 16783
-// Function ID: 16784
+// Module ID: 17058
+// Function ID: 17059
 // Name: debug/ConjureTraceFormat
-// Dependencies: [1126, 3753, 2]
+// Dependencies: [1126, 3827, 2]
 // Exports: categoryLabel, formatDuration, formatTokens, omissionLabel, statusLabel, traceRichStatusLabel
 
-// Module 16783 (debug/ConjureTraceFormat)
+// Module 17058 (debug/ConjureTraceFormat)
 import intl6 from "intl" /* 1126 */;
-import _modDef3753 from "module_3753" /* 3753 */;
+import _modDef3827 from "module_3827" /* 3827 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/debug/ConjureTraceFormat.tsx");
@@ -43,43 +43,43 @@ export const formatTokens = function formatTokens(promptTokens) {
 export const categoryLabel = function categoryLabel(traceCategoryResult) {
   if ("subagent" === traceCategoryResult) {
     const intl5 = intl6.intl;
-    return intl5.string(_modDef3753.PbKt9r);
+    return intl5.string(_modDef3827.PbKt9r);
   } else if ("context" === traceCategoryResult) {
     const intl4 = intl6.intl;
-    return intl4.string(_modDef3753["tNk/P2"]);
+    return intl4.string(_modDef3827["tNk/P2"]);
   } else if ("tool" === traceCategoryResult) {
     const intl3 = intl6.intl;
-    return intl3.string(_modDef3753.NBOJcw);
+    return intl3.string(_modDef3827.NBOJcw);
   } else if ("delegated" === traceCategoryResult) {
     const intl2 = intl6.intl;
-    return intl2.string(_modDef3753.QgrFdt);
+    return intl2.string(_modDef3827.QgrFdt);
   } else {
     const intl = intl6.intl;
-    return intl.string(_modDef3753.LsLVUy);
+    return intl.string(_modDef3827.LsLVUy);
   }
 };
 export const statusLabel = function statusLabel(status) {
   if ("started" === status) {
     const intl3 = intl6.intl;
-    return intl3.string(_modDef3753["2wyRDK"]);
+    return intl3.string(_modDef3827["2wyRDK"]);
   } else if ("error" === status) {
     const intl2 = intl6.intl;
-    return intl2.string(_modDef3753["2Cu8n+"]);
+    return intl2.string(_modDef3827["2Cu8n+"]);
   } else {
     const intl = intl6.intl;
-    return intl.string(_modDef3753["6kgw6D"]);
+    return intl.string(_modDef3827["6kgw6D"]);
   }
 };
 export const omissionLabel = function omissionLabel(content) {
   if ("prose" === content) {
     const intl3 = intl6.intl;
-    return intl3.string(_modDef3753["6oDpz5"]);
+    return intl3.string(_modDef3827["6oDpz5"]);
   } else if ("content" === content) {
     const intl2 = intl6.intl;
-    return intl2.string(_modDef3753.kSGhxQ);
+    return intl2.string(_modDef3827.kSGhxQ);
   } else {
     const intl = intl6.intl;
-    return intl.string(_modDef3753.JwGtRz);
+    return intl.string(_modDef3827.JwGtRz);
   }
 };
 export const traceRichStatusLabel = function traceRichStatusLabel(conjureTraceDetail) {
@@ -93,11 +93,11 @@ export const traceRichStatusLabel = function traceRichStatusLabel(conjureTraceDe
         const intl = intl6.intl;
         const string = intl.string;
         if ("loading" === conjureTraceDetail.status) {
-          SKbSyo = _modDef3753.SKbSyo;
+          SKbSyo = _modDef3827.SKbSyo;
         } else if ("unavailable" === conjureTraceDetail.status) {
-          SKbSyo = _modDef3753.tdq5Zn;
+          SKbSyo = _modDef3827.tdq5Zn;
         } else {
-          SKbSyo = _modDef3753["Dw1JW/"];
+          SKbSyo = _modDef3827["Dw1JW/"];
         }
         stringResult = string(SKbSyo);
       }

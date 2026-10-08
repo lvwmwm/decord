@@ -8,6 +8,8 @@ import react_native from "react-native" /* 17 */;
 import RN_GLOBAL_OBJ2 from "RN_GLOBAL_OBJ" /* 692 */;
 import ReactNativeLibraries from "ReactNativeLibraries" /* 873 */;
 
+let version;
+
 let tmp;
 const _mod878 = tmp(878);
 const Alert = react_native.Alert;
@@ -16,7 +18,7 @@ export const isModalSupported = function isModalSupported() {
   let major;
   let minor;
   const ReactNativeVersion = ReactNativeLibraries.ReactNativeLibraries.ReactNativeVersion;
-  let version;
+  version = undefined;
   if (null !== ReactNativeVersion) {
     if (undefined !== ReactNativeVersion) {
       version = ReactNativeVersion.version;
@@ -34,7 +36,7 @@ export const isNativeDriverSupportedForColorAnimations = function isNativeDriver
   let major;
   let minor;
   const ReactNativeVersion = ReactNativeLibraries.ReactNativeLibraries.ReactNativeVersion;
-  let version;
+  version = undefined;
   if (null !== ReactNativeVersion) {
     if (undefined !== ReactNativeVersion) {
       version = ReactNativeVersion.version;

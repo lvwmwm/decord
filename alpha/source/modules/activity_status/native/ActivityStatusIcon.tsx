@@ -1,21 +1,21 @@
-// Module ID: 10628
-// Function ID: 10629
+// Module ID: 10226
+// Function ID: 10227
 // Name: ActivityStatusIcon
-// Dependencies: [109, 19, 21, 4896, 558, 576, 2]
+// Dependencies: [109, 19, 21, 5090, 558, 576, 2]
 
-// Module 10628 (ActivityStatusIcon)
+// Module 10226 (ActivityStatusIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = ["icon", "style"];
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ icon: { flexShrink: 0 } });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityStatusIcon(arg0) {
   let icon;
   let style;
   let tmp2;
@@ -66,7 +66,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = tmp8.icon;
   cResult[6] = items;
   tmp9 = items;
-}) : ((arg0) => {
+}) : (function ActivityStatusIcon(arg0) {
   let icon;
   let style;
   ({ icon, style } = arg0);

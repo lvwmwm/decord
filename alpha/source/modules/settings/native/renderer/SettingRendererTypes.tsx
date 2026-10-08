@@ -1,9 +1,9 @@
-// Module ID: 17110
-// Function ID: 17111
+// Module ID: 17391
+// Function ID: 17392
 // Name: SettingRendererTypes
 // Dependencies: [2]
 
-// Module 17110 (SettingRendererTypes)
+// Module 17391 (SettingRendererTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/settings/native/renderer/SettingRendererTypes.tsx");

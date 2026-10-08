@@ -1,24 +1,22 @@
-// Module ID: 6592
-// Function ID: 6593
+// Module ID: 6768
+// Function ID: 6769
 // Name: MemberVerificationAlertUpdate
-// Dependencies: [19, 17, 1085, 21, 4896, 558, 576, 1126, 4571, 6593, 4892, 5790, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 558, 576, 1126, 4763, 6769, 5086, 5394, 2]
 
-// Module 6592 (MemberVerificationAlertUpdate)
+// Module 6768 (MemberVerificationAlertUpdate)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
-import LinkingDefault from "Linking" /* 4571 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import AlertDefault from "Alert" /* 5790 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6593 */;
+import LinkingDefault from "Linking" /* 4763 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import AlertDefault from "Alert" /* 5394 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6769 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let onClose;
 
 let hasOwnProperty;
 let metroRequire;
@@ -26,7 +24,7 @@ const Image = react_native.Image;
 const DownloadLinks = Constants.DownloadLinks;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ headerImage: { marginLeft: "auto", marginRight: "auto", marginTop: 8 }, header: { marginTop: 24, textAlign: "center" }, text: { marginVertical: 8, lineHeight: 18, textAlign: "center" } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerificationAlertUpdate(onClose) {
   let items;
   let tmp10;
   let tmp15;
@@ -44,7 +42,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
     const stringResult = intl.string(intl5.t.b8siyY);
     const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(intl5.t["ETE/oC"]);
-    const fn = function u() {
+    const fn = function f() {
       const obj = LinkingDefault;
       return obj.openURL(constants.IOS);
     };
@@ -125,7 +123,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   cResult[14] = tmp17;
   cResult[15] = tmp28;
   tmp25 = tmp28;
-}) : ((onClose) => {
+}) : (function MemberVerificationAlertUpdate(onClose) {
   let intl;
   let intl2;
   let intl3;

@@ -1,15 +1,15 @@
-// Module ID: 6690
-// Function ID: 6691
+// Module ID: 6867
+// Function ID: 6868
 // Name: useProfileThemeValues
-// Dependencies: [19, 4885, 558, 576, 573, 587, 586, 2]
+// Dependencies: [19, 5079, 558, 576, 573, 587, 586, 2]
 
-// Module 6690 (useProfileThemeValues)
+// Module 6867 (useProfileThemeValues)
 import react from "react" /* 19 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import shims from "shims" /* 586 */;
 import nativeDefault from "native" /* 587 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let _require;
 
 const useMemo = react.useMemo;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((theme) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileThemeValues(theme) {
   let saturation;
   let tmp4;
   let tmp5;
@@ -108,7 +108,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((theme) => {
     tmp9 = semanticColor;
   }
   return tmp8;
-}) : ((theme) => {
+}) : (function useProfileThemeValues(theme) {
   let saturation;
   _require = theme;
   let obj = require("useStateFromStores");

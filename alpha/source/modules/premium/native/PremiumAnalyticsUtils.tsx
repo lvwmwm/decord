@@ -1,13 +1,13 @@
-// Module ID: 10407
-// Function ID: 10408
+// Module ID: 10004
+// Function ID: 10005
 // Name: PremiumAnalyticsUtils
-// Dependencies: [1085, 1266, 4534, 1252, 2]
+// Dependencies: [1085, 1278, 4726, 1264, 2]
 // Exports: getBasePurchaseFlowAnalyticsFields, getNewAnalyticsLoadId, getPaymentFlowCompletedAnalyticsFields, getPaymentFlowStepAnalyticsFields, trackPremiumSubscriptionCancellationFlowStep, trackPremiumSubscriptionCancellationStarted
 
-// Module 10407 (PremiumAnalyticsUtils)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import v1 from "v1" /* 1266 */;
-import PremiumUtils from "PremiumUtils" /* 4534 */;
+// Module 10004 (PremiumAnalyticsUtils)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import v1 from "v1" /* 1278 */;
+import PremiumUtils from "PremiumUtils" /* 4726 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

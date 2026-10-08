@@ -1,34 +1,34 @@
-// Module ID: 17109
-// Function ID: 17110
+// Module ID: 17390
+// Function ID: 17391
 // Name: SettingsNavigator
-// Dependencies: [32, 19, 17, 2116, 14517, 1085, 21, 7568, 4896, 587, 558, 576, 17110, 1188, 4892, 1491, 13282, 17111, 6498, 573, 6664, 6688, 14519, 6997, 14520, 6503, 14287, 4586, 5916, 1126, 16385, 17112, 14423, 17113, 38, 2]
+// Dependencies: [32, 19, 17, 2128, 14777, 1085, 21, 9279, 5090, 587, 558, 576, 17391, 1200, 5086, 1503, 13583, 17392, 6675, 573, 6841, 6865, 14779, 7185, 14780, 6679, 14111, 4778, 6189, 1126, 16645, 17393, 14649, 17394, 38, 2]
 
-// Module 17109 (SettingsNavigator)
+// Module 17390 (SettingsNavigator)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Pressables from "Pressables" /* 5916 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6498 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 14519 */;
-import BackIconWithBadge from "BackIconWithBadge" /* 16385 */;
-import SettingRendererTypes from "SettingRendererTypes" /* 17110 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Pressables from "Pressables" /* 6189 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6675 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 14779 */;
+import BackIconWithBadge from "BackIconWithBadge" /* 16645 */;
+import SettingRendererTypes from "SettingRendererTypes" /* 17391 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import LocaleStore_mod from "LocaleStore" /* 2116 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14517 */;
+import LocaleStore from "LocaleStore" /* 2128 */;
+import UserSettingSearchStore_mod from "UserSettingSearchStore" /* 14777 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 7568 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import NativeStackView from "NativeStackView" /* 9279 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, closure_6;
 
 let c10;
 let c9;
@@ -62,7 +62,7 @@ function LeftAlignedHeaderTitle(usePersistentBadge) {
 }
 let react = react_mod;
 let View = react_native.View;
-let LocaleStore = LocaleStore_mod;
+let UserSettingSearchStore = UserSettingSearchStore_mod;
 ({ AnalyticsPages: metroImportAll, UserSettingsSections: c9 } = Constants);
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 let closure_12 = NativeStackView.createNativeStackNavigator();
@@ -75,7 +75,7 @@ obj4 = { flexDirection: "row", alignItems: "center", paddingHorizontal: nativeDe
 obj5 = { borderRadius: nativeDefault.radii.round, marginTop: nativeDefault.space.PX_8 };
 let closure_13 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((badge) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingHeaderBadge(badge) {
   const obj = react2;
   const cResult = obj.c(1);
   if (badge.badge.badgeType === SettingRendererTypes.SettingsBadgeType.BETA) {
@@ -83,7 +83,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((badge) => {
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: native.BetaSizes.SMALL };
-      const BetaTag = tmp(1188).BetaTag;
+      const BetaTag = tmp(1200).BetaTag;
       const tmp7 = authStore(BetaTag, obj2);
       cResult[0] = tmp7;
       first = tmp7;
@@ -92,22 +92,22 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((badge) => {
     }
     return first;
   }
-}) : ((badge) => {
+}) : (function SettingHeaderBadge(badge) {
   if (badge.badge.badgeType === SettingRendererTypes.SettingsBadgeType.BETA) {
     const obj = { size: native.BetaSizes.SMALL };
-    const BetaTag = tmp(1188).BetaTag;
+    const BetaTag = tmp(1200).BetaTag;
     return authStore(BetaTag, obj);
   }
 });
 let memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsNavigator() {
   let Screen;
   let arr4;
   let beforeRemove;
   let closure_0;
-  let closure_5;
   let contentStyle;
+  let listeners;
   let params1;
   let tmp12;
   let tmp13;
@@ -115,17 +115,15 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp16;
   let tmp18;
   let tmp19;
-  let tmp22;
-  let tmp23;
-  let tmp29;
-  let tmp30;
-  let tmp32;
-  let tmp33;
+  let tmp24;
+  let tmp25;
+  let tmp27;
+  let tmp28;
   let transitionStart;
   let tmp = _require;
   let tmp2 = params1;
   let obj = require("react");
-  const cResult = obj.c(58);
+  const cResult = obj.c(54);
   let tmp4 = closure_13();
   _require = tmp4;
   let obj2 = require("Link");
@@ -234,57 +232,16 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult9 = tmp(tmp2[19]);
   const stateFromStores = tmpResult9.useStateFromStores(tmp18, tmp19);
-  const tmp21 = onClose(navigation.useState(false), 2)[1];
-  View = tmp21;
-  if (cResult[8] !== tmp21) {
-    class O {
+  const tmp22 = screen(tmp2[20]);
+  const analyticsLocations = tmp22(screen(tmp2[21]).USER_SETTINGS).analyticsLocations;
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class T {
       constructor() {
-        closure_5((arg0) => !arg0);
-      }
-    }
-    cResult[8] = tmp21;
-    class E {
-      constructor() {
-        return LocaleStore.locale;
-      }
-    }
-    cResult[9] = O;
-    tmp22 = O;
-  } else {
-    class O {
-      constructor() {
-        closure_5((arg0) => !arg0);
-      }
-    }
-  }
-  if (cResult[10] !== stateFromStores) {
-    class O {
-      constructor() {
-        closure_5((arg0) => !arg0);
-      }
-    }
-    tmp24[0] = stateFromStores;
-    class E {
-      constructor() {
-        return LocaleStore.locale;
-      }
-    }
-    cResult[11] = tmp24;
-    tmp23 = tmp24;
-  } else {
-    class O {
-      constructor() {
-        closure_5((arg0) => !arg0);
-      }
-    }
-  }
-  const layoutEffect = obj5.useLayoutEffect(tmp22, tmp23);
-  const tmp27 = screen(tmp2[20]);
-  const analyticsLocations = tmp27(screen(tmp2[21]).USER_SETTINGS).analyticsLocations;
-  if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-    class O {
-      constructor() {
-        closure_5((arg0) => !arg0);
+        return () => {
+          if (onClose != null) {
+            tmp();
+          }
+        };
       }
     }
     const settingScreens = obj7.getSettingScreens();
@@ -295,14 +252,18 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     arr4 = settingScreens;
   } else {
-    class O {
+    class T {
       constructor() {
-        closure_5((arg0) => !arg0);
+        return () => {
+          if (onClose != null) {
+            tmp();
+          }
+        };
       }
     }
   }
-  if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-    class W {
+  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+    class N {
       constructor() {
         const obj = closure_0(params1[23]);
         return obj.trackAppUIViewed();
@@ -314,24 +275,24 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return LocaleStore.locale;
       }
     }
-    cResult[14] = W;
-    tmp30 = W;
-    tmp29 = items3;
+    cResult[10] = items3;
+    tmp25 = items3;
+    tmp24 = N;
   } else {
-    class W {
+    class N {
       constructor() {
         const obj = closure_0(params1[23]);
         return obj.trackAppUIViewed();
       }
     }
-    tmp30 = cResult[14];
+    tmp25 = cResult[10];
   }
-  const layoutEffect1 = obj5.useLayoutEffect(tmp30, tmp29);
-  if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-    class D {
+  const layoutEffect = obj5.useLayoutEffect(tmp24, tmp25);
+  if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+    class N {
       constructor() {
-        const obj = screen(params1[24]);
-        return obj.validate();
+        const obj = closure_0(params1[23]);
+        return obj.trackAppUIViewed();
       }
     }
     const items4 = [];
@@ -340,40 +301,40 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return LocaleStore.locale;
       }
     }
-    cResult[16] = items4;
-    tmp33 = items4;
-    tmp32 = D;
+    cResult[12] = tmp29;
+    tmp28 = tmp29;
+    tmp27 = items4;
   } else {
-    class D {
+    class N {
       constructor() {
-        const obj = screen(params1[24]);
-        return obj.validate();
+        const obj = closure_0(params1[23]);
+        return obj.trackAppUIViewed();
       }
     }
-    tmp33 = cResult[16];
+    tmp28 = cResult[12];
   }
-  const effect2 = obj5.useEffect(tmp32, tmp33);
+  const effect2 = obj5.useEffect(tmp28, tmp27);
   const tmpResult10 = tmp(tmp2[25]);
   const accessibilityNativeStackOptions = tmpResult10.useAccessibilityNativeStackOptions();
   const tmpResult11 = tmp(tmp2[26]);
   const accessibilityNativeStackFocusTracking = tmpResult11.useAccessibilityNativeStackFocusTracking();
   ({ beforeRemove, transitionStart } = accessibilityNativeStackFocusTracking);
   const tmpResult12 = tmp(tmp2[27]);
-  const token = tmpResult12.useToken(tmp26(tmp2[9]).colors.MOBILE_ACTIONSHEET_BACKGROUND);
+  const token = tmpResult12.useToken(tmp21(tmp2[9]).colors.MOBILE_ACTIONSHEET_BACKGROUND);
   const tmpResult13 = tmp(tmp2[27]);
-  const token1 = tmpResult13.useToken(tmp26(tmp2[9]).colors.BORDER_SUBTLE);
-  if (cResult[17] === token) {
-    let tmp42;
-    let tmp44;
-    class D {
+  const token1 = tmpResult13.useToken(tmp21(tmp2[9]).colors.BORDER_SUBTLE);
+  if (cResult[13] === token) {
+    let tmp39;
+    let tmp41;
+    class N {
       constructor() {
-        const obj = screen(params1[24]);
-        return obj.validate();
+        const obj = closure_0(params1[23]);
+        return obj.trackAppUIViewed();
       }
     }
-    LocaleStore = tmp39;
-    if (cResult[20] !== tmp4.backIcon) {
-      class J {
+    View = tmp35;
+    if (cResult[16] !== tmp4.backIcon) {
+      class X {
         constructor(navigation) {
           return () => {
             let PressableOpacity;
@@ -400,15 +361,15 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           };
         }
       }
-      cResult[20] = tmp4.backIcon;
+      cResult[16] = tmp4.backIcon;
       class E {
         constructor() {
           return LocaleStore.locale;
         }
       }
-      cResult[21] = J;
+      cResult[17] = X;
     } else {
-      class J {
+      class X {
         constructor(navigation) {
           return () => {
             let PressableOpacity;
@@ -441,43 +402,100 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return LocaleStore.locale;
       }
     }
-    if (cResult[22] !== navigation) {
-      class Y {
-        constructor() {
-          const obj = navigation;
-          if (navigation.canGoBack()) {
-            obj.goBack();
-          }
+    if (cResult[18] !== navigation) {
+      class X {
+        constructor(navigation) {
+          return () => {
+            let PressableOpacity;
+            let intl;
+            let obj2;
+            let obj3;
+            let obj4;
+            const obj = { collapsable: false, children: authStore(PressableOpacity, obj2) };
+            obj2 = {
+              onPress() {
+                return navigation.goBack();
+              },
+              accessible: true,
+              accessibilityRole: "button",
+              accessibilityLabel: intl.string(intl2.t["13/7kX"]),
+              hitSlop: BackIconWithBadge.BACK_ICON_WITH_BADGE_HIT_SLOP,
+              children: authStore(View, obj3)
+            };
+            PressableOpacity = Pressables.PressableOpacity;
+            intl = intl2.intl;
+            obj3 = { style: navigation.backIcon, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: authStore(BackIconWithBadge.SettingsLeftIconWithBadge, obj4) };
+            obj4 = { navigation };
+            return authStore(View, obj);
+          };
         }
       }
-      cResult[22] = navigation;
+      cResult[18] = navigation;
       class E {
         constructor() {
           return LocaleStore.locale;
         }
       }
-      cResult[23] = Y;
+      cResult[19] = tmp38;
     } else {
-      class Y {
-        constructor() {
-          const obj = navigation;
-          if (navigation.canGoBack()) {
-            obj.goBack();
-          }
+      class X {
+        constructor(navigation) {
+          return () => {
+            let PressableOpacity;
+            let intl;
+            let obj2;
+            let obj3;
+            let obj4;
+            const obj = { collapsable: false, children: authStore(PressableOpacity, obj2) };
+            obj2 = {
+              onPress() {
+                return navigation.goBack();
+              },
+              accessible: true,
+              accessibilityRole: "button",
+              accessibilityLabel: intl.string(intl2.t["13/7kX"]),
+              hitSlop: BackIconWithBadge.BACK_ICON_WITH_BADGE_HIT_SLOP,
+              children: authStore(View, obj3)
+            };
+            PressableOpacity = Pressables.PressableOpacity;
+            intl = intl2.intl;
+            obj3 = { style: navigation.backIcon, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: authStore(BackIconWithBadge.SettingsLeftIconWithBadge, obj4) };
+            obj4 = { navigation };
+            return authStore(View, obj);
+          };
         }
       }
     }
     const _Symbol = Symbol;
-    if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
-      class Y {
-        constructor() {
-          const obj = navigation;
-          if (navigation.canGoBack()) {
-            obj.goBack();
-          }
+    if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
+      class X {
+        constructor(navigation) {
+          return () => {
+            let PressableOpacity;
+            let intl;
+            let obj2;
+            let obj3;
+            let obj4;
+            const obj = { collapsable: false, children: authStore(PressableOpacity, obj2) };
+            obj2 = {
+              onPress() {
+                return navigation.goBack();
+              },
+              accessible: true,
+              accessibilityRole: "button",
+              accessibilityLabel: intl.string(intl2.t["13/7kX"]),
+              hitSlop: BackIconWithBadge.BACK_ICON_WITH_BADGE_HIT_SLOP,
+              children: authStore(View, obj3)
+            };
+            PressableOpacity = Pressables.PressableOpacity;
+            intl = intl2.intl;
+            obj3 = { style: navigation.backIcon, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: authStore(BackIconWithBadge.SettingsLeftIconWithBadge, obj4) };
+            obj4 = { navigation };
+            return authStore(View, obj);
+          };
         }
       }
-      tmp43[0] = function transitionEnd(data) {
+      tmp40[0] = function transitionEnd(data) {
         let isActive = data.data.closing;
         const state = UserSettingSearchStore.getState();
         const query = state.query;
@@ -497,28 +515,66 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return LocaleStore.locale;
         }
       }
-      tmp42 = tmp43;
+      tmp39 = tmp40;
     } else {
-      class Y {
-        constructor() {
-          const obj = navigation;
-          if (navigation.canGoBack()) {
-            obj.goBack();
-          }
+      class X {
+        constructor(navigation) {
+          return () => {
+            let PressableOpacity;
+            let intl;
+            let obj2;
+            let obj3;
+            let obj4;
+            const obj = { collapsable: false, children: authStore(PressableOpacity, obj2) };
+            obj2 = {
+              onPress() {
+                return navigation.goBack();
+              },
+              accessible: true,
+              accessibilityRole: "button",
+              accessibilityLabel: intl.string(intl2.t["13/7kX"]),
+              hitSlop: BackIconWithBadge.BACK_ICON_WITH_BADGE_HIT_SLOP,
+              children: authStore(View, obj3)
+            };
+            PressableOpacity = Pressables.PressableOpacity;
+            intl = intl2.intl;
+            obj3 = { style: navigation.backIcon, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: authStore(BackIconWithBadge.SettingsLeftIconWithBadge, obj4) };
+            obj4 = { navigation };
+            return authStore(View, obj);
+          };
         }
       }
     }
     const _Symbol2 = Symbol;
-    if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
-      class Y {
-        constructor() {
-          const obj = navigation;
-          if (navigation.canGoBack()) {
-            obj.goBack();
-          }
+    if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
+      class X {
+        constructor(navigation) {
+          return () => {
+            let PressableOpacity;
+            let intl;
+            let obj2;
+            let obj3;
+            let obj4;
+            const obj = { collapsable: false, children: authStore(PressableOpacity, obj2) };
+            obj2 = {
+              onPress() {
+                return navigation.goBack();
+              },
+              accessible: true,
+              accessibilityRole: "button",
+              accessibilityLabel: intl.string(intl2.t["13/7kX"]),
+              hitSlop: BackIconWithBadge.BACK_ICON_WITH_BADGE_HIT_SLOP,
+              children: authStore(View, obj3)
+            };
+            PressableOpacity = Pressables.PressableOpacity;
+            intl = intl2.intl;
+            obj3 = { style: navigation.backIcon, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: authStore(BackIconWithBadge.SettingsLeftIconWithBadge, obj4) };
+            obj4 = { navigation };
+            return authStore(View, obj);
+          };
         }
       }
-      tmp45[0] = function transitionEnd(data) {
+      tmp42[0] = function transitionEnd(data) {
         const closing = data.data.closing && null != UserSettingSearchStore.getField("selected");
         if (closing) {
           UserSettingSearchStore.setState({ selected: null });
@@ -529,28 +585,66 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return LocaleStore.locale;
         }
       }
-      tmp44 = tmp45;
+      tmp41 = tmp42;
     } else {
-      class Y {
-        constructor() {
-          const obj = navigation;
-          if (navigation.canGoBack()) {
-            obj.goBack();
-          }
+      class X {
+        constructor(navigation) {
+          return () => {
+            let PressableOpacity;
+            let intl;
+            let obj2;
+            let obj3;
+            let obj4;
+            const obj = { collapsable: false, children: authStore(PressableOpacity, obj2) };
+            obj2 = {
+              onPress() {
+                return navigation.goBack();
+              },
+              accessible: true,
+              accessibilityRole: "button",
+              accessibilityLabel: intl.string(intl2.t["13/7kX"]),
+              hitSlop: BackIconWithBadge.BACK_ICON_WITH_BADGE_HIT_SLOP,
+              children: authStore(View, obj3)
+            };
+            PressableOpacity = Pressables.PressableOpacity;
+            intl = intl2.intl;
+            obj3 = { style: navigation.backIcon, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: authStore(BackIconWithBadge.SettingsLeftIconWithBadge, obj4) };
+            obj4 = { navigation };
+            return authStore(View, obj);
+          };
         }
       }
     }
-    const listeners = tmp44;
+    UserSettingSearchStore = tmp41;
     const tmpResult14 = tmp(tmp2[31]);
     const autoSettingsSearchSessionAnalytics = tmpResult14.useAutoSettingsSearchSessionAnalytics();
     const _Symbol3 = Symbol;
-    if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
-      class Y {
-        constructor() {
-          const obj = navigation;
-          if (navigation.canGoBack()) {
-            obj.goBack();
-          }
+    if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
+      class X {
+        constructor(navigation) {
+          return () => {
+            let PressableOpacity;
+            let intl;
+            let obj2;
+            let obj3;
+            let obj4;
+            const obj = { collapsable: false, children: authStore(PressableOpacity, obj2) };
+            obj2 = {
+              onPress() {
+                return navigation.goBack();
+              },
+              accessible: true,
+              accessibilityRole: "button",
+              accessibilityLabel: intl.string(intl2.t["13/7kX"]),
+              hitSlop: BackIconWithBadge.BACK_ICON_WITH_BADGE_HIT_SLOP,
+              children: authStore(View, obj3)
+            };
+            PressableOpacity = Pressables.PressableOpacity;
+            intl = intl2.intl;
+            obj3 = { style: navigation.backIcon, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: authStore(BackIconWithBadge.SettingsLeftIconWithBadge, obj4) };
+            obj4 = { navigation };
+            return authStore(View, obj);
+          };
         }
       }
       closure_10(screen(tmp2[32]), {});
@@ -560,113 +654,284 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     } else {
-      class Y {
-        constructor() {
-          const obj = navigation;
-          if (navigation.canGoBack()) {
-            obj.goBack();
-          }
+      class X {
+        constructor(navigation) {
+          return () => {
+            let PressableOpacity;
+            let intl;
+            let obj2;
+            let obj3;
+            let obj4;
+            const obj = { collapsable: false, children: authStore(PressableOpacity, obj2) };
+            obj2 = {
+              onPress() {
+                return navigation.goBack();
+              },
+              accessible: true,
+              accessibilityRole: "button",
+              accessibilityLabel: intl.string(intl2.t["13/7kX"]),
+              hitSlop: BackIconWithBadge.BACK_ICON_WITH_BADGE_HIT_SLOP,
+              children: authStore(View, obj3)
+            };
+            PressableOpacity = Pressables.PressableOpacity;
+            intl = intl2.intl;
+            obj3 = { style: navigation.backIcon, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: authStore(BackIconWithBadge.SettingsLeftIconWithBadge, obj4) };
+            obj4 = { navigation };
+            return authStore(View, obj);
+          };
         }
       }
     }
     const _Symbol4 = Symbol;
     const statusBarSpacer = tmp4.statusBarSpacer;
-    if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
-      class Y {
-        constructor() {
-          const obj = navigation;
-          if (navigation.canGoBack()) {
-            obj.goBack();
-          }
+    if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
+      class X {
+        constructor(navigation) {
+          return () => {
+            let PressableOpacity;
+            let intl;
+            let obj2;
+            let obj3;
+            let obj4;
+            const obj = { collapsable: false, children: authStore(PressableOpacity, obj2) };
+            obj2 = {
+              onPress() {
+                return navigation.goBack();
+              },
+              accessible: true,
+              accessibilityRole: "button",
+              accessibilityLabel: intl.string(intl2.t["13/7kX"]),
+              hitSlop: BackIconWithBadge.BACK_ICON_WITH_BADGE_HIT_SLOP,
+              children: authStore(View, obj3)
+            };
+            PressableOpacity = Pressables.PressableOpacity;
+            intl = intl2.intl;
+            obj3 = { style: navigation.backIcon, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: authStore(BackIconWithBadge.SettingsLeftIconWithBadge, obj4) };
+            obj4 = { navigation };
+            return authStore(View, obj);
+          };
         }
       }
-      cResult[27] = tmp50;
+      cResult[23] = tmp47;
       class E {
         constructor() {
           return LocaleStore.locale;
         }
       }
     } else {
-      class Y {
-        constructor() {
-          const obj = navigation;
-          if (navigation.canGoBack()) {
-            obj.goBack();
-          }
+      class X {
+        constructor(navigation) {
+          return () => {
+            let PressableOpacity;
+            let intl;
+            let obj2;
+            let obj3;
+            let obj4;
+            const obj = { collapsable: false, children: authStore(PressableOpacity, obj2) };
+            obj2 = {
+              onPress() {
+                return navigation.goBack();
+              },
+              accessible: true,
+              accessibilityRole: "button",
+              accessibilityLabel: intl.string(intl2.t["13/7kX"]),
+              hitSlop: BackIconWithBadge.BACK_ICON_WITH_BADGE_HIT_SLOP,
+              children: authStore(View, obj3)
+            };
+            PressableOpacity = Pressables.PressableOpacity;
+            intl = intl2.intl;
+            obj3 = { style: navigation.backIcon, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: authStore(BackIconWithBadge.SettingsLeftIconWithBadge, obj4) };
+            obj4 = { navigation };
+            return authStore(View, obj);
+          };
         }
       }
     }
     const _Symbol5 = Symbol;
-    if (cResult[28] === Symbol.for("react.memo_cache_sentinel")) {
-      class Y {
-        constructor() {
-          const obj = navigation;
-          if (navigation.canGoBack()) {
-            obj.goBack();
-          }
+    if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
+      class X {
+        constructor(navigation) {
+          return () => {
+            let PressableOpacity;
+            let intl;
+            let obj2;
+            let obj3;
+            let obj4;
+            const obj = { collapsable: false, children: authStore(PressableOpacity, obj2) };
+            obj2 = {
+              onPress() {
+                return navigation.goBack();
+              },
+              accessible: true,
+              accessibilityRole: "button",
+              accessibilityLabel: intl.string(intl2.t["13/7kX"]),
+              hitSlop: BackIconWithBadge.BACK_ICON_WITH_BADGE_HIT_SLOP,
+              children: authStore(View, obj3)
+            };
+            PressableOpacity = Pressables.PressableOpacity;
+            intl = intl2.intl;
+            obj3 = { style: navigation.backIcon, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: authStore(BackIconWithBadge.SettingsLeftIconWithBadge, obj4) };
+            obj4 = { navigation };
+            return authStore(View, obj);
+          };
         }
       }
-      cResult[28] = tmp52;
+      cResult[24] = tmp49;
       class E {
         constructor() {
           return LocaleStore.locale;
         }
       }
     } else {
-      class Y {
-        constructor() {
-          const obj = navigation;
-          if (navigation.canGoBack()) {
-            obj.goBack();
-          }
+      class X {
+        constructor(navigation) {
+          return () => {
+            let PressableOpacity;
+            let intl;
+            let obj2;
+            let obj3;
+            let obj4;
+            const obj = { collapsable: false, children: authStore(PressableOpacity, obj2) };
+            obj2 = {
+              onPress() {
+                return navigation.goBack();
+              },
+              accessible: true,
+              accessibilityRole: "button",
+              accessibilityLabel: intl.string(intl2.t["13/7kX"]),
+              hitSlop: BackIconWithBadge.BACK_ICON_WITH_BADGE_HIT_SLOP,
+              children: authStore(View, obj3)
+            };
+            PressableOpacity = Pressables.PressableOpacity;
+            intl = intl2.intl;
+            obj3 = { style: navigation.backIcon, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: authStore(BackIconWithBadge.SettingsLeftIconWithBadge, obj4) };
+            obj4 = { navigation };
+            return authStore(View, obj);
+          };
         }
       }
     }
-    if (cResult[29] !== accessibilityNativeStackOptions) {
-      class Y {
-        constructor() {
-          const obj = navigation;
-          if (navigation.canGoBack()) {
-            obj.goBack();
-          }
+    if (cResult[25] !== accessibilityNativeStackOptions) {
+      class X {
+        constructor(navigation) {
+          return () => {
+            let PressableOpacity;
+            let intl;
+            let obj2;
+            let obj3;
+            let obj4;
+            const obj = { collapsable: false, children: authStore(PressableOpacity, obj2) };
+            obj2 = {
+              onPress() {
+                return navigation.goBack();
+              },
+              accessible: true,
+              accessibilityRole: "button",
+              accessibilityLabel: intl.string(intl2.t["13/7kX"]),
+              hitSlop: BackIconWithBadge.BACK_ICON_WITH_BADGE_HIT_SLOP,
+              children: authStore(View, obj3)
+            };
+            PressableOpacity = Pressables.PressableOpacity;
+            intl = intl2.intl;
+            obj3 = { style: navigation.backIcon, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: authStore(BackIconWithBadge.SettingsLeftIconWithBadge, obj4) };
+            obj4 = { navigation };
+            return authStore(View, obj);
+          };
         }
       }
-      tmp54[1] = tmp49;
-      tmp54[3] = tmp51;
+      tmp51[1] = tmp46;
+      tmp51[3] = tmp48;
       class E {
         constructor() {
           return LocaleStore.locale;
         }
       }
       let merged = Object.assign(accessibilityNativeStackOptions);
-      cResult[29] = accessibilityNativeStackOptions;
-      cResult[30] = tmp54;
+      cResult[25] = accessibilityNativeStackOptions;
+      cResult[26] = tmp51;
     } else {
-      class Y {
-        constructor() {
-          const obj = navigation;
-          if (navigation.canGoBack()) {
-            obj.goBack();
-          }
+      class X {
+        constructor(navigation) {
+          return () => {
+            let PressableOpacity;
+            let intl;
+            let obj2;
+            let obj3;
+            let obj4;
+            const obj = { collapsable: false, children: authStore(PressableOpacity, obj2) };
+            obj2 = {
+              onPress() {
+                return navigation.goBack();
+              },
+              accessible: true,
+              accessibilityRole: "button",
+              accessibilityLabel: intl.string(intl2.t["13/7kX"]),
+              hitSlop: BackIconWithBadge.BACK_ICON_WITH_BADGE_HIT_SLOP,
+              children: authStore(View, obj3)
+            };
+            PressableOpacity = Pressables.PressableOpacity;
+            intl = intl2.intl;
+            obj3 = { style: navigation.backIcon, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: authStore(BackIconWithBadge.SettingsLeftIconWithBadge, obj4) };
+            obj4 = { navigation };
+            return authStore(View, obj);
+          };
         }
       }
     }
-    if (cResult[31] === beforeRemove) {
-      class Y {
-        constructor() {
-          const obj = navigation;
-          if (navigation.canGoBack()) {
-            obj.goBack();
-          }
+    if (cResult[27] === beforeRemove) {
+      class X {
+        constructor(navigation) {
+          return () => {
+            let PressableOpacity;
+            let intl;
+            let obj2;
+            let obj3;
+            let obj4;
+            const obj = { collapsable: false, children: authStore(PressableOpacity, obj2) };
+            obj2 = {
+              onPress() {
+                return navigation.goBack();
+              },
+              accessible: true,
+              accessibilityRole: "button",
+              accessibilityLabel: intl.string(intl2.t["13/7kX"]),
+              hitSlop: BackIconWithBadge.BACK_ICON_WITH_BADGE_HIT_SLOP,
+              children: authStore(View, obj3)
+            };
+            PressableOpacity = Pressables.PressableOpacity;
+            intl = intl2.intl;
+            obj3 = { style: navigation.backIcon, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: authStore(BackIconWithBadge.SettingsLeftIconWithBadge, obj4) };
+            obj4 = { navigation };
+            return authStore(View, obj);
+          };
         }
       }
-      if (cResult[34] === tmp39) {
-        class Y {
-          constructor() {
-            const obj = navigation;
-            if (navigation.canGoBack()) {
-              obj.goBack();
-            }
+      if (cResult[30] === tmp35) {
+        class X {
+          constructor(navigation) {
+            return () => {
+              let PressableOpacity;
+              let intl;
+              let obj2;
+              let obj3;
+              let obj4;
+              const obj = { collapsable: false, children: authStore(PressableOpacity, obj2) };
+              obj2 = {
+                onPress() {
+                  return navigation.goBack();
+                },
+                accessible: true,
+                accessibilityRole: "button",
+                accessibilityLabel: intl.string(intl2.t["13/7kX"]),
+                hitSlop: BackIconWithBadge.BACK_ICON_WITH_BADGE_HIT_SLOP,
+                children: authStore(View, obj3)
+              };
+              PressableOpacity = Pressables.PressableOpacity;
+              intl = intl2.intl;
+              obj3 = { style: navigation.backIcon, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: authStore(BackIconWithBadge.SettingsLeftIconWithBadge, obj4) };
+              obj4 = { navigation };
+              return authStore(View, obj);
+            };
           }
         }
         const _Symbol6 = Symbol;
@@ -675,41 +940,98 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             return LocaleStore.locale;
           }
         }
-        if (cResult[38] !== tmp58) {
-          class Y {
-            constructor() {
-              const obj = navigation;
-              if (navigation.canGoBack()) {
-                obj.goBack();
-              }
+        if (cResult[34] !== tmp55) {
+          class X {
+            constructor(navigation) {
+              return () => {
+                let PressableOpacity;
+                let intl;
+                let obj2;
+                let obj3;
+                let obj4;
+                const obj = { collapsable: false, children: authStore(PressableOpacity, obj2) };
+                obj2 = {
+                  onPress() {
+                    return navigation.goBack();
+                  },
+                  accessible: true,
+                  accessibilityRole: "button",
+                  accessibilityLabel: intl.string(intl2.t["13/7kX"]),
+                  hitSlop: BackIconWithBadge.BACK_ICON_WITH_BADGE_HIT_SLOP,
+                  children: authStore(View, obj3)
+                };
+                PressableOpacity = Pressables.PressableOpacity;
+                intl = intl2.intl;
+                obj3 = { style: navigation.backIcon, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: authStore(BackIconWithBadge.SettingsLeftIconWithBadge, obj4) };
+                obj4 = { navigation };
+                return authStore(View, obj);
+              };
             }
           }
-          let obj3 = { name: constants2.OVERVIEW, options: tmp58, listeners: tmp42, getComponent: tmp60 };
+          let obj3 = { name: constants2.OVERVIEW, options: tmp55, listeners: tmp39, getComponent: tmp57 };
           class E {
             constructor() {
               return LocaleStore.locale;
             }
           }
-          cResult[38] = tmp58;
-          cResult[39] = closure_10(Screen.Screen, obj3);
-          const tmp63 = closure_10(Screen.Screen, obj3);
+          cResult[34] = tmp55;
+          cResult[35] = closure_10(Screen.Screen, obj3);
+          const tmp60 = closure_10(Screen.Screen, obj3);
         } else {
-          class Y {
-            constructor() {
-              const obj = navigation;
-              if (navigation.canGoBack()) {
-                obj.goBack();
-              }
+          class X {
+            constructor(navigation) {
+              return () => {
+                let PressableOpacity;
+                let intl;
+                let obj2;
+                let obj3;
+                let obj4;
+                const obj = { collapsable: false, children: authStore(PressableOpacity, obj2) };
+                obj2 = {
+                  onPress() {
+                    return navigation.goBack();
+                  },
+                  accessible: true,
+                  accessibilityRole: "button",
+                  accessibilityLabel: intl.string(intl2.t["13/7kX"]),
+                  hitSlop: BackIconWithBadge.BACK_ICON_WITH_BADGE_HIT_SLOP,
+                  children: authStore(View, obj3)
+                };
+                PressableOpacity = Pressables.PressableOpacity;
+                intl = intl2.intl;
+                obj3 = { style: navigation.backIcon, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: authStore(BackIconWithBadge.SettingsLeftIconWithBadge, obj4) };
+                obj4 = { navigation };
+                return authStore(View, obj);
+              };
             }
           }
         }
-        if (cResult[40] === tmp39) {
-          class Y {
-            constructor() {
-              const obj = navigation;
-              if (navigation.canGoBack()) {
-                obj.goBack();
-              }
+        if (cResult[36] === tmp35) {
+          class X {
+            constructor(navigation) {
+              return () => {
+                let PressableOpacity;
+                let intl;
+                let obj2;
+                let obj3;
+                let obj4;
+                const obj = { collapsable: false, children: authStore(PressableOpacity, obj2) };
+                obj2 = {
+                  onPress() {
+                    return navigation.goBack();
+                  },
+                  accessible: true,
+                  accessibilityRole: "button",
+                  accessibilityLabel: intl.string(intl2.t["13/7kX"]),
+                  hitSlop: BackIconWithBadge.BACK_ICON_WITH_BADGE_HIT_SLOP,
+                  children: authStore(View, obj3)
+                };
+                PressableOpacity = Pressables.PressableOpacity;
+                intl = intl2.intl;
+                obj3 = { style: navigation.backIcon, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: authStore(BackIconWithBadge.SettingsLeftIconWithBadge, obj4) };
+                obj4 = { navigation };
+                return authStore(View, obj);
+              };
             }
           }
         }
@@ -730,7 +1052,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 const obj = { title: children.children, usePersistentBadge: usePersistentBadge.usePersistentBadge };
                 return closure_3_10(LeftAlignedHeaderTitle, obj);
               }
-              let obj = { title: obj2.getSettingTitle(first), headerLeft: UserSettingSearchStore(navigation), headerBackVisible: false, contentStyle: LocaleStore, headerShadowVisible: flag };
+              let obj = { title: obj2.getSettingTitle(first), headerLeft: LocaleStore(navigation), headerBackVisible: false, contentStyle: View, headerShadowVisible: flag };
               navigation = navigation.navigation;
               const navigationOptions = component.navigationOptions;
               flag = undefined;
@@ -769,15 +1091,15 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
           return tmp4(Screen, obj, first);
         });
-        cResult[40] = tmp39;
-        cResult[41] = tmp40;
-        cResult[42] = params1;
-        cResult[43] = screen;
-        cResult[44] = mapped;
+        cResult[36] = tmp35;
+        cResult[37] = tmp36;
+        cResult[38] = params1;
+        cResult[39] = screen;
+        cResult[40] = mapped;
       }
-      function de(navigation) {
+      function re(navigation) {
         let intl;
-        const obj = { title: intl.string(intl2.t["3D5yo/"]), headerLeft: UserSettingSearchStore(navigation), headerBackVisible: false, headerShadowVisible: false, contentStyle: LocaleStore };
+        const obj = { title: intl.string(intl2.t["3D5yo/"]), headerLeft: LocaleStore(navigation), headerBackVisible: false, headerShadowVisible: false, contentStyle: View };
         navigation = navigation.navigation;
         intl = intl2.intl;
         return obj;
@@ -787,28 +1109,27 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return LocaleStore.locale;
         }
       }
-      cResult[34] = tmp39;
-      cResult[35] = tmp40;
-      cResult[36] = de;
+      cResult[30] = tmp35;
+      cResult[31] = tmp36;
+      cResult[32] = re;
     }
     let obj4 = { beforeRemove, transitionStart };
-    cResult[31] = beforeRemove;
-    cResult[32] = transitionStart;
-    cResult[33] = obj4;
+    cResult[27] = beforeRemove;
+    cResult[28] = transitionStart;
+    cResult[29] = obj4;
   }
   const obj6 = { backgroundColor: token, borderTopWidth: 1, borderTopColor: token1 };
-  cResult[17] = token;
-  cResult[18] = token1;
-  cResult[19] = obj6;
-}) : (() => {
+  cResult[13] = token;
+  cResult[14] = token1;
+  cResult[15] = obj6;
+}) : (function SettingsNavigator() {
   let Navigator;
   let Screen;
   let beforeRemove;
   let closure_0;
   let closure_4;
+  let items4;
   let items5;
-  let items6;
-  let obj2;
   let obj5;
   let obj6;
   let params1;
@@ -857,21 +1178,16 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       tmp();
     }
   }, items1);
-  const items2 = [obj2];
+  const items2 = [closure_6];
   const tmp2Result9 = tmp2(tmp3[19]);
-  const stateFromStores = tmp2Result9.useStateFromStores(items2, () => obj2.locale);
-  let closure_5 = onClose(react.useState(false), 2)[1];
-  const items3 = [stateFromStores];
-  const layoutEffect = react.useLayoutEffect(() => {
-    closure_5((arg0) => !arg0);
-  }, items3);
-  const tmp14 = screen(tmp3[20]);
-  const analyticsLocations = tmp14(screen(tmp3[21]).USER_SETTINGS).analyticsLocations;
+  const stateFromStores = tmp2Result9.useStateFromStores(items2, () => closure_6.locale);
+  const tmp13 = screen(tmp3[20]);
+  const analyticsLocations = tmp13(screen(tmp3[21]).USER_SETTINGS).analyticsLocations;
   const memo = react.useMemo(() => {
     const obj = closure_0(params1[22]);
     return obj.getSettingScreens();
   }, []);
-  const layoutEffect1 = react.useLayoutEffect(() => {
+  const layoutEffect = react.useLayoutEffect(() => {
     const obj = closure_0(params1[23]);
     return obj.trackAppUIViewed();
   }, []);
@@ -883,12 +1199,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const accessibilityNativeStackOptions = tmp2Result10.useAccessibilityNativeStackOptions();
   const tmp2Result11 = tmp2(tmp3[26]);
   const accessibilityNativeStackFocusTracking = tmp2Result11.useAccessibilityNativeStackFocusTracking();
-  obj2 = { backgroundColor: tmp2Result12.useToken(screen(tmp3[9]).colors.MOBILE_ACTIONSHEET_BACKGROUND), borderTopWidth: 1, borderTopColor: tmp2Result13.useToken(screen(tmp3[9]).colors.BORDER_SUBTLE) };
+  let obj2 = { backgroundColor: tmp2Result12.useToken(screen(tmp3[9]).colors.MOBILE_ACTIONSHEET_BACKGROUND), borderTopWidth: 1, borderTopColor: tmp2Result13.useToken(screen(tmp3[9]).colors.BORDER_SUBTLE) };
   ({ beforeRemove, transitionStart } = accessibilityNativeStackFocusTracking);
   tmp2Result12 = tmp2(tmp3[27]);
-  const items4 = [tmp.backIcon];
+  const items3 = [tmp.backIcon];
   tmp2Result13 = tmp2(tmp3[27]);
-  let closure_7 = react.useCallback((navigation) => () => {
+  closure_6 = react.useCallback((navigation) => () => {
     let PressableOpacity;
     let intl;
     let obj3;
@@ -909,7 +1225,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     obj3 = { style: navigation.backIcon, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: authStore(BackIconWithBadge.SettingsLeftIconWithBadge, obj4) };
     obj4 = { navigation };
     return authStore(View, obj);
-  }, items4);
+  }, items3);
   const memo1 = react.useMemo(() => {
     let obj = {
       transitionEnd(data) {
@@ -932,21 +1248,21 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }, []);
   const listeners = react.useMemo(() => ({
     transitionEnd(data) {
-      const closing = data.data.closing && null != closure_1_7.getField("selected");
+      const closing = data.data.closing && null != listeners.getField("selected");
       if (closing) {
-        closure_1_7.setState({ selected: null });
+        listeners.setState({ selected: null });
       }
     }
   }), []);
   const tmp2Result14 = tmp2(tmp3[31]);
   const autoSettingsSearchSessionAnalytics = tmp2Result14.useAutoSettingsSearchSessionAnalytics();
-  let obj3 = { value: analyticsLocations, children: items5 };
+  let obj3 = { value: analyticsLocations, children: items4 };
   const AnalyticsLocationProvider = tmp2(tmp3[20]).AnalyticsLocationProvider;
-  items5 = [closure_10(screen(tmp3[32]), {}), ];
+  items4 = [closure_10(screen(tmp3[32]), {}), ];
   let obj4 = {
     style: tmp.statusBarSpacer,
     accessible: false,
-    onAccessibilityEscape() {
+    onAccessibilityEscape: function handleAccessibilityEscape() {
       const obj = closure_4;
       if (closure_4.canGoBack()) {
         obj.goBack();
@@ -955,7 +1271,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     children: closure_11(Navigator, obj5)
   };
   Navigator = Screen.Navigator;
-  obj5 = { id: "settings-navigator", screenOptions: obj6, screenListeners: { beforeRemove, transitionStart }, initialRouteName: screen, children: items6 };
+  obj5 = { id: "settings-navigator", screenOptions: obj6, screenListeners: { beforeRemove, transitionStart }, initialRouteName: screen, children: items5 };
   obj6 = {
     fullScreenGestureEnabled: true,
     headerTitle(children) {
@@ -966,12 +1282,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     unstable_headerInsets: { left: false, right: false }
   };
   let merged = Object.assign(accessibilityNativeStackOptions);
-  items6 = [, ];
+  items5 = [, ];
   const obj7 = {
     name: constants2.OVERVIEW,
     options(navigation) {
       let intl;
-      const obj = { title: intl.string(intl2.t["3D5yo/"]), headerLeft: closure_7(navigation), headerBackVisible: false, headerShadowVisible: false, contentStyle: obj2 };
+      const obj = { title: intl.string(intl2.t["3D5yo/"]), headerLeft: closure_6(navigation), headerBackVisible: false, headerShadowVisible: false, contentStyle: obj2 };
       navigation = navigation.navigation;
       intl = intl2.intl;
       return obj;
@@ -981,8 +1297,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       return closure_0(params1[33]).default;
     }
   };
-  items6[0] = closure_10(Screen.Screen, obj7);
-  items6[1] = memo.map((item) => {
+  items5[0] = closure_10(Screen.Screen, obj7);
+  items5[1] = memo.map((item) => {
     let tmp;
     let tmp2;
     let tmp4;
@@ -997,7 +1313,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const obj = { title: children.children, usePersistentBadge: usePersistentBadge.usePersistentBadge };
           return closure_3_10(LeftAlignedHeaderTitle, obj);
         }
-        let obj = { title: obj2.getSettingTitle(closure_1_0), headerLeft: closure_7(navigation), headerBackVisible: false, contentStyle: obj2, headerShadowVisible: flag };
+        let obj = { title: obj2.getSettingTitle(closure_1_0), headerLeft: closure_6(navigation), headerBackVisible: false, contentStyle: obj2, headerShadowVisible: flag };
         navigation = navigation.navigation;
         obj2 = SettingRendererUtils;
         const navigationOptions = component.navigationOptions;
@@ -1036,7 +1352,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return tmp3(Screen, obj, tmp);
   });
-  items5[1] = closure_10(closure_5, obj4);
+  items4[1] = closure_10(obj2, obj4);
   return closure_11(AnalyticsLocationProvider, obj3);
 }));
 let result = size.fileFinishedImporting("modules/user_settings/core/native/SettingsNavigator.tsx");

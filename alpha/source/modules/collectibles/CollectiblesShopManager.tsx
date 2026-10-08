@@ -1,13 +1,13 @@
-// Module ID: 8571
-// Function ID: 8572
+// Module ID: 9055
+// Function ID: 9056
 // Name: CollectiblesShopManager
-// Dependencies: [8570, 7901, 7900, 8572, 584, 2]
+// Dependencies: [9054, 8320, 8319, 9056, 584, 2]
 
-// Module 8571 (CollectiblesShopManager)
-import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 7900 */;
-import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 8572 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 8570 */;
-import StorefrontProductStore from "StorefrontProductStore" /* 7901 */;
+// Module 9055 (CollectiblesShopManager)
+import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8319 */;
+import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 9056 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9054 */;
+import StorefrontProductStore from "StorefrontProductStore" /* 8320 */;
 import Dispatcher from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 

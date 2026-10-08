@@ -1,12 +1,12 @@
-// Module ID: 7480
-// Function ID: 7481
+// Module ID: 9657
+// Function ID: 9658
 // Name: shouldCheckUploadSizeOnlyAfterCompression
-// Dependencies: [1377, 1976, 2]
+// Dependencies: [1389, 1988, 2]
 // Exports: shouldCheckUploadSizeOnlyAfterCompression
 
-// Module 7480 (shouldCheckUploadSizeOnlyAfterCompression)
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1976 */;
-import UserStore from "UserStore" /* 1377 */;
+// Module 9657 (shouldCheckUploadSizeOnlyAfterCompression)
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1988 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/media_uploads/shouldCheckUploadSizeOnlyAfterCompression.tsx");

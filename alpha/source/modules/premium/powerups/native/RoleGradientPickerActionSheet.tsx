@@ -1,18 +1,18 @@
-// Module ID: 17844
-// Function ID: 17845
+// Module ID: 18131
+// Function ID: 18132
 // Name: RoleGradientPickerActionSheet
-// Dependencies: [32, 19, 17, 17829, 21, 4896, 587, 558, 576, 2109, 1375, 4860, 14437, 1126, 6651, 5601, 5612, 15187, 5916, 1103, 6652, 2]
+// Dependencies: [32, 19, 17, 18116, 21, 5090, 587, 558, 576, 2121, 1387, 5054, 14662, 1126, 6828, 5375, 5387, 15449, 6189, 1103, 6829, 2]
 
-// Module 17844 (RoleGradientPickerActionSheet)
+// Module 18131 (RoleGradientPickerActionSheet)
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14437 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14662 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 17829 */;
+import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 18116 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ size1 = { width: 80, height: 50, borderRadius: nativeDefault.radii.sm, overflow:
 obj6 = { borderWidth: 2, borderColor: nativeDefault.colors.BACKGROUND_BRAND };
 obj7 = { flex: 1, borderRadius: nativeDefault.radii.sm };
 let closure_11 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleGradientPickerActionSheet(arg0) {
   let body;
   let closure_1;
   let closure_3;
@@ -90,10 +90,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[2] === first) {
     let tmp11;
     let tmp13;
-    let tmp18;
-    let tmp20;
+    let tmp19;
+    let tmp21;
+    let tmp26;
     let tmp25;
-    let tmp24;
     if (cResult[3] === onSelect) {
       tmp11 = cResult[4];
     }
@@ -116,65 +116,31 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     I = tmp13;
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      class D {
-        constructor() {
-          closure_3(metroImportDefault);
+      class I {
+        constructor(arg0) {
+          closure_3(arg0);
         }
       }
-      cResult[6] = D;
+      cResult[6] = tmp15;
     } else {
-      class D {
-        constructor() {
-          closure_3(metroImportDefault);
+      class I {
+        constructor(arg0) {
+          closure_3(arg0);
         }
       }
     }
     if (cResult[7] !== first) {
-      class X {
-        constructor() {
-          num = undefined;
-          tmp = closure_1(closure_2[12]);
-          if (closure_2 != null) {
-            num = closure_2.primary_color;
-          }
-          if (num == null) {
-            num = 0;
-          }
-          obj = {
-            color: num,
-            onSelect(primary_color) {
-                      const obj = { primary_color };
-                      const merged = Object.assign(first);
-                      return closure_1_4(obj);
-                    }
-          };
-          tmpResult = tmp(obj, "stack");
-          return;
+      class I {
+        constructor(arg0) {
+          closure_3(arg0);
         }
       }
       cResult[7] = first;
-      cResult[8] = X;
+      cResult[8] = tmp17;
     } else {
-      class X {
-        constructor() {
-          num = undefined;
-          tmp = closure_1(closure_2[12]);
-          if (closure_2 != null) {
-            num = closure_2.primary_color;
-          }
-          if (num == null) {
-            num = 0;
-          }
-          obj = {
-            color: num,
-            onSelect(primary_color) {
-                      const obj = { primary_color };
-                      const merged = Object.assign(first);
-                      return closure_1_4(obj);
-                    }
-          };
-          tmpResult = tmp(obj, "stack");
-          return;
+      class I {
+        constructor(arg0) {
+          closure_3(arg0);
         }
       }
     }
@@ -184,15 +150,15 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           num = undefined;
           tmp = closure_1(closure_2[12]);
           if (closure_2 != null) {
-            num = closure_2.primary_color;
+            num = closure_2.secondary_color;
           }
           if (num == null) {
             num = 0;
           }
           obj = {
             color: num,
-            onSelect(primary_color) {
-                      const obj = { primary_color };
+            onSelect(secondary_color) {
+                      const obj = { secondary_color };
                       const merged = Object.assign(first);
                       return closure_1_4(obj);
                     }
@@ -202,22 +168,22 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       cResult[9] = first;
-      cResult[10] = tmp17;
+      cResult[10] = X;
     } else {
       class X {
         constructor() {
           num = undefined;
           tmp = closure_1(closure_2[12]);
           if (closure_2 != null) {
-            num = closure_2.primary_color;
+            num = closure_2.secondary_color;
           }
           if (num == null) {
             num = 0;
           }
           obj = {
             color: num,
-            onSelect(primary_color) {
-                      const obj = { primary_color };
+            onSelect(secondary_color) {
+                      const obj = { secondary_color };
                       const merged = Object.assign(first);
                       return closure_1_4(obj);
                     }
@@ -234,15 +200,15 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           num = undefined;
           tmp = closure_1(closure_2[12]);
           if (closure_2 != null) {
-            num = closure_2.primary_color;
+            num = closure_2.secondary_color;
           }
           if (num == null) {
             num = 0;
           }
           obj = {
             color: num,
-            onSelect(primary_color) {
-                      const obj = { primary_color };
+            onSelect(secondary_color) {
+                      const obj = { secondary_color };
                       const merged = Object.assign(first);
                       return closure_1_4(obj);
                     }
@@ -253,22 +219,22 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const stringResult = obj3.string(tmp(first[13]).t.XpWmJz);
       cResult[11] = stringResult;
-      tmp18 = stringResult;
+      tmp19 = stringResult;
     } else {
       class X {
         constructor() {
           num = undefined;
           tmp = closure_1(closure_2[12]);
           if (closure_2 != null) {
-            num = closure_2.primary_color;
+            num = closure_2.secondary_color;
           }
           if (num == null) {
             num = 0;
           }
           obj = {
             color: num,
-            onSelect(primary_color) {
-                      const obj = { primary_color };
+            onSelect(secondary_color) {
+                      const obj = { secondary_color };
                       const merged = Object.assign(first);
                       return closure_1_4(obj);
                     }
@@ -285,15 +251,15 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           num = undefined;
           tmp = closure_1(closure_2[12]);
           if (closure_2 != null) {
-            num = closure_2.primary_color;
+            num = closure_2.secondary_color;
           }
           if (num == null) {
             num = 0;
           }
           obj = {
             color: num,
-            onSelect(primary_color) {
-                      const obj = { primary_color };
+            onSelect(secondary_color) {
+                      const obj = { secondary_color };
                       const merged = Object.assign(first);
                       return closure_1_4(obj);
                     }
@@ -304,22 +270,22 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const stringResult1 = obj4.string(tmp(first[13]).t["R3BPH+"]);
       cResult[12] = stringResult1;
-      tmp20 = stringResult1;
+      tmp21 = stringResult1;
     } else {
       class X {
         constructor() {
           num = undefined;
           tmp = closure_1(closure_2[12]);
           if (closure_2 != null) {
-            num = closure_2.primary_color;
+            num = closure_2.secondary_color;
           }
           if (num == null) {
             num = 0;
           }
           obj = {
             color: num,
-            onSelect(primary_color) {
-                      const obj = { primary_color };
+            onSelect(secondary_color) {
+                      const obj = { secondary_color };
                       const merged = Object.assign(first);
                       return closure_1_4(obj);
                     }
@@ -335,15 +301,15 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           num = undefined;
           tmp = closure_1(closure_2[12]);
           if (closure_2 != null) {
-            num = closure_2.primary_color;
+            num = closure_2.secondary_color;
           }
           if (num == null) {
             num = 0;
           }
           obj = {
             color: num,
-            onSelect(primary_color) {
-                      const obj = { primary_color };
+            onSelect(secondary_color) {
+                      const obj = { secondary_color };
                       const merged = Object.assign(first);
                       return closure_1_4(obj);
                     }
@@ -352,27 +318,27 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return;
         }
       }
-      let obj2 = { title: tmp18, trailing: closure_9(tmp(first[15]).Button, obj5) };
+      let obj2 = { title: tmp19, trailing: closure_9(tmp(first[15]).Button, obj5) };
       const BottomSheetTitleHeader = tmp(tmp2[14]).BottomSheetTitleHeader;
-      obj5 = { variant: "secondary", size: "sm", text: tmp20, onPress: tmp11 };
+      obj5 = { variant: "secondary", size: "sm", text: tmp21, onPress: tmp11 };
       cResult[13] = tmp11;
       cResult[14] = closure_9(BottomSheetTitleHeader, obj2);
-      const tmp23 = closure_9(BottomSheetTitleHeader, obj2);
+      const tmp24 = closure_9(BottomSheetTitleHeader, obj2);
     } else {
       class X {
         constructor() {
           num = undefined;
           tmp = closure_1(closure_2[12]);
           if (closure_2 != null) {
-            num = closure_2.primary_color;
+            num = closure_2.secondary_color;
           }
           if (num == null) {
             num = 0;
           }
           obj = {
             color: num,
-            onSelect(primary_color) {
-                      const obj = { primary_color };
+            onSelect(secondary_color) {
+                      const obj = { secondary_color };
                       const merged = Object.assign(first);
                       return closure_1_4(obj);
                     }
@@ -390,15 +356,15 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           num = undefined;
           tmp = closure_1(closure_2[12]);
           if (closure_2 != null) {
-            num = closure_2.primary_color;
+            num = closure_2.secondary_color;
           }
           if (num == null) {
             num = 0;
           }
           obj = {
             color: num,
-            onSelect(primary_color) {
-                      const obj = { primary_color };
+            onSelect(secondary_color) {
+                      const obj = { secondary_color };
                       const merged = Object.assign(first);
                       return closure_1_4(obj);
                     }
@@ -408,25 +374,25 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const point = { x: 1, y: 0 };
-      cResult[15] = tmp26;
+      cResult[15] = tmp27;
       cResult[16] = point;
-      tmp25 = point;
-      tmp24 = tmp26;
+      tmp26 = point;
+      tmp25 = tmp27;
     } else {
       class X {
         constructor() {
           num = undefined;
           tmp = closure_1(closure_2[12]);
           if (closure_2 != null) {
-            num = closure_2.primary_color;
+            num = closure_2.secondary_color;
           }
           if (num == null) {
             num = 0;
           }
           obj = {
             color: num,
-            onSelect(primary_color) {
-                      const obj = { primary_color };
+            onSelect(secondary_color) {
+                      const obj = { secondary_color };
                       const merged = Object.assign(first);
                       return closure_1_4(obj);
                     }
@@ -435,25 +401,25 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return;
         }
       }
-      tmp25 = cResult[16];
+      tmp26 = cResult[16];
     }
     if (cResult[17] === tmp8) {
-      let tmp31;
-      let tmp33;
+      let tmp32;
+      let tmp34;
       class X {
         constructor() {
           num = undefined;
           tmp = closure_1(closure_2[12]);
           if (closure_2 != null) {
-            num = closure_2.primary_color;
+            num = closure_2.secondary_color;
           }
           if (num == null) {
             num = 0;
           }
           obj = {
             color: num,
-            onSelect(primary_color) {
-                      const obj = { primary_color };
+            onSelect(secondary_color) {
+                      const obj = { secondary_color };
                       const merged = Object.assign(first);
                       return closure_1_4(obj);
                     }
@@ -470,15 +436,15 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             num = undefined;
             tmp = closure_1(closure_2[12]);
             if (closure_2 != null) {
-              num = closure_2.primary_color;
+              num = closure_2.secondary_color;
             }
             if (num == null) {
               num = 0;
             }
             obj = {
               color: num,
-              onSelect(primary_color) {
-                          const obj = { primary_color };
+              onSelect(secondary_color) {
+                          const obj = { secondary_color };
                           const merged = Object.assign(first);
                           return closure_1_4(obj);
                         }
@@ -489,22 +455,22 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const stringResult2 = obj9.string(tmp(first[13]).t.QPqIEx);
         cResult[20] = stringResult2;
-        tmp31 = stringResult2;
+        tmp32 = stringResult2;
       } else {
         class X {
           constructor() {
             num = undefined;
             tmp = closure_1(closure_2[12]);
             if (closure_2 != null) {
-              num = closure_2.primary_color;
+              num = closure_2.secondary_color;
             }
             if (num == null) {
               num = 0;
             }
             obj = {
               color: num,
-              onSelect(primary_color) {
-                          const obj = { primary_color };
+              onSelect(secondary_color) {
+                          const obj = { secondary_color };
                           const merged = Object.assign(first);
                           return closure_1_4(obj);
                         }
@@ -521,15 +487,15 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             num = undefined;
             tmp = closure_1(closure_2[12]);
             if (closure_2 != null) {
-              num = closure_2.primary_color;
+              num = closure_2.secondary_color;
             }
             if (num == null) {
               num = 0;
             }
             obj = {
               color: num,
-              onSelect(primary_color) {
-                          const obj = { primary_color };
+              onSelect(secondary_color) {
+                          const obj = { secondary_color };
                           const merged = Object.assign(first);
                           return closure_1_4(obj);
                         }
@@ -538,24 +504,24 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             return;
           }
         }
-        const tmp34 = closure_9(tmp(first[17]).EyeDropperIcon, { color: "white", size: "sm" });
-        cResult[21] = tmp34;
-        tmp33 = tmp34;
+        const tmp35 = closure_9(tmp(first[17]).EyeDropperIcon, { color: "white", size: "sm" });
+        cResult[21] = tmp35;
+        tmp34 = tmp35;
       } else {
         class X {
           constructor() {
             num = undefined;
             tmp = closure_1(closure_2[12]);
             if (closure_2 != null) {
-              num = closure_2.primary_color;
+              num = closure_2.secondary_color;
             }
             if (num == null) {
               num = 0;
             }
             obj = {
               color: num,
-              onSelect(primary_color) {
-                          const obj = { primary_color };
+              onSelect(secondary_color) {
+                          const obj = { secondary_color };
                           const merged = Object.assign(first);
                           return closure_1_4(obj);
                         }
@@ -565,23 +531,23 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
       }
-      if (cResult[22] === tmp15) {
-        let tmp39;
-        let tmp41;
+      if (cResult[22] === tmp16) {
+        let tmp40;
+        let tmp42;
         class X {
           constructor() {
             num = undefined;
             tmp = closure_1(closure_2[12]);
             if (closure_2 != null) {
-              num = closure_2.primary_color;
+              num = closure_2.secondary_color;
             }
             if (num == null) {
               num = 0;
             }
             obj = {
               color: num,
-              onSelect(primary_color) {
-                          const obj = { primary_color };
+              onSelect(secondary_color) {
+                          const obj = { secondary_color };
                           const merged = Object.assign(first);
                           return closure_1_4(obj);
                         }
@@ -598,15 +564,15 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               num = undefined;
               tmp = closure_1(closure_2[12]);
               if (closure_2 != null) {
-                num = closure_2.primary_color;
+                num = closure_2.secondary_color;
               }
               if (num == null) {
                 num = 0;
               }
               obj = {
                 color: num,
-                onSelect(primary_color) {
-                              const obj = { primary_color };
+                onSelect(secondary_color) {
+                              const obj = { secondary_color };
                               const merged = Object.assign(first);
                               return closure_1_4(obj);
                             }
@@ -617,22 +583,22 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           const stringResult3 = obj11.string(tmp(first[13]).t.fLMusI);
           cResult[25] = stringResult3;
-          tmp39 = stringResult3;
+          tmp40 = stringResult3;
         } else {
           class X {
             constructor() {
               num = undefined;
               tmp = closure_1(closure_2[12]);
               if (closure_2 != null) {
-                num = closure_2.primary_color;
+                num = closure_2.secondary_color;
               }
               if (num == null) {
                 num = 0;
               }
               obj = {
                 color: num,
-                onSelect(primary_color) {
-                              const obj = { primary_color };
+                onSelect(secondary_color) {
+                              const obj = { secondary_color };
                               const merged = Object.assign(first);
                               return closure_1_4(obj);
                             }
@@ -649,15 +615,15 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               num = undefined;
               tmp = closure_1(closure_2[12]);
               if (closure_2 != null) {
-                num = closure_2.primary_color;
+                num = closure_2.secondary_color;
               }
               if (num == null) {
                 num = 0;
               }
               obj = {
                 color: num,
-                onSelect(primary_color) {
-                              const obj = { primary_color };
+                onSelect(secondary_color) {
+                              const obj = { secondary_color };
                               const merged = Object.assign(first);
                               return closure_1_4(obj);
                             }
@@ -666,24 +632,24 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               return;
             }
           }
-          const tmp42 = closure_9(tmp(first[17]).EyeDropperIcon, { color: "white", size: "sm" });
-          cResult[26] = tmp42;
-          tmp41 = tmp42;
+          const tmp43 = closure_9(tmp(first[17]).EyeDropperIcon, { color: "white", size: "sm" });
+          cResult[26] = tmp43;
+          tmp42 = tmp43;
         } else {
           class X {
             constructor() {
               num = undefined;
               tmp = closure_1(closure_2[12]);
               if (closure_2 != null) {
-                num = closure_2.primary_color;
+                num = closure_2.secondary_color;
               }
               if (num == null) {
                 num = 0;
               }
               obj = {
                 color: num,
-                onSelect(primary_color) {
-                              const obj = { primary_color };
+                onSelect(secondary_color) {
+                              const obj = { secondary_color };
                               const merged = Object.assign(first);
                               return closure_1_4(obj);
                             }
@@ -693,21 +659,21 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
         }
-        if (cResult[27] === tmp16) {
+        if (cResult[27] === tmp18) {
           class X {
             constructor() {
               num = undefined;
               tmp = closure_1(closure_2[12]);
               if (closure_2 != null) {
-                num = closure_2.primary_color;
+                num = closure_2.secondary_color;
               }
               if (num == null) {
                 num = 0;
               }
               obj = {
                 color: num,
-                onSelect(primary_color) {
-                              const obj = { primary_color };
+                onSelect(secondary_color) {
+                              const obj = { secondary_color };
                               const merged = Object.assign(first);
                               return closure_1_4(obj);
                             }
@@ -722,15 +688,15 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 num = undefined;
                 tmp = closure_1(closure_2[12]);
                 if (closure_2 != null) {
-                  num = closure_2.primary_color;
+                  num = closure_2.secondary_color;
                 }
                 if (num == null) {
                   num = 0;
                 }
                 obj = {
                   color: num,
-                  onSelect(primary_color) {
-                                  const obj = { primary_color };
+                  onSelect(secondary_color) {
+                                  const obj = { secondary_color };
                                   const merged = Object.assign(first);
                                   return closure_1_4(obj);
                                 }
@@ -741,30 +707,30 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
           const obj6 = { style: dropperContainer, children: items };
-          items = [tmp35, tmp43];
+          items = [tmp36, tmp44];
           cResult[30] = tmp4.dropperContainer;
-          cResult[31] = tmp35;
-          cResult[32] = tmp43;
+          cResult[31] = tmp36;
+          cResult[32] = tmp44;
           cResult[33] = closure_10(closure_5, obj6);
-          const tmp50 = closure_10(closure_5, obj6);
+          const tmp51 = closure_10(closure_5, obj6);
         }
-        const obj7 = { style: dropper2, onPress: tmp16, accessibilityLabel: tmp39, accessibilityRole: "button", children: tmp41 };
-        cResult[27] = tmp16;
+        const obj7 = { style: dropper2, onPress: tmp18, accessibilityLabel: tmp40, accessibilityRole: "button", children: tmp42 };
+        cResult[27] = tmp18;
         cResult[28] = tmp4.dropper;
         cResult[29] = closure_9(closure_6, obj7);
-        const tmp46 = closure_9(closure_6, obj7);
+        const tmp47 = closure_9(closure_6, obj7);
       }
-      const obj8 = { style: dropper, onPress: tmp15, accessibilityLabel: tmp31, accessibilityRole: "button", children: tmp33 };
-      cResult[22] = tmp15;
+      const obj8 = { style: dropper, onPress: tmp16, accessibilityLabel: tmp32, accessibilityRole: "button", children: tmp34 };
+      cResult[22] = tmp16;
       cResult[23] = tmp4.dropper;
       cResult[24] = closure_9(closure_6, obj8);
-      const tmp38 = closure_9(closure_6, obj8);
+      const tmp39 = closure_9(closure_6, obj8);
     }
-    const obj10 = { style: tmp4.gradient, colors: tmp8, start: tmp24, end: tmp25 };
+    const obj10 = { style: tmp4.gradient, colors: tmp8, start: tmp25, end: tmp26 };
     cResult[17] = tmp8;
     cResult[18] = tmp4.gradient;
     cResult[19] = closure_9(require("LinearGradient"), obj10);
-    const tmp30 = closure_9(require("LinearGradient"), obj10);
+    const tmp31 = closure_9(require("LinearGradient"), obj10);
   }
   const fn = function w() {
     onSelect(first);
@@ -775,7 +741,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = onSelect;
   cResult[4] = fn;
   tmp11 = fn;
-}) : ((arg0) => {
+}) : (function RoleGradientPickerActionSheet(arg0) {
   let BottomSheetTitleHeader;
   let Button;
   let closure_1;
@@ -921,7 +887,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items5[1] = closure_9(closure_5, obj12);
   const obj13 = {
     text: intl5.string(onSelect(first[13]).t.yBZMsQ),
-    onPress() {
+    onPress: function handleReset() {
       closure_3(metroImportDefault);
     }
   };

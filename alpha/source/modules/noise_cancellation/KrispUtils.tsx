@@ -1,10 +1,10 @@
-// Module ID: 13638
-// Function ID: 13639
+// Module ID: 5232
+// Function ID: 5233
 // Name: KrispUtils
-// Dependencies: [2, 13639]
+// Dependencies: [2, 5233]
 
-// Module 13638 (KrispUtils)
-import noise_cancellation_KrispUtils from "noise_cancellation/KrispUtils" /* 13639 */;
+// Module 5232 (KrispUtils)
+import noise_cancellation_KrispUtils from "noise_cancellation/KrispUtils" /* 5233 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/noise_cancellation/KrispUtils.tsx");

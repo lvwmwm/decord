@@ -1,23 +1,21 @@
-// Module ID: 14705
-// Function ID: 14706
+// Module ID: 14966
+// Function ID: 14967
 // Name: ConnectGuardianCard
-// Dependencies: [19, 17, 1377, 7062, 21, 4896, 587, 558, 576, 573, 6961, 14701, 14702, 6695, 4573, 1126, 2521, 9538, 7315, 4892, 5600, 12730, 5601, 5599, 2]
+// Dependencies: [19, 17, 1389, 7248, 21, 5090, 587, 558, 576, 573, 7150, 14962, 14963, 6872, 4765, 1126, 2565, 8709, 7759, 5086, 5373, 12920, 5375, 5963, 2]
 
-// Module 14705 (ConnectGuardianCard)
+// Module 14966 (ConnectGuardianCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ToastUtils from "ToastUtils" /* 4573 */;
-import ClipboardUtils from "ClipboardUtils" /* 6695 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7062 */;
-import shareGuardianConnectLink from "shareGuardianConnectLink" /* 14702 */;
+import ToastUtils from "ToastUtils" /* 4765 */;
+import ClipboardUtils from "ClipboardUtils" /* 6872 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7248 */;
+import shareGuardianConnectLink from "shareGuardianConnectLink" /* 14963 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let linkCode;
 
 let metroImportAll;
 let metroImportDefault;
@@ -40,7 +38,7 @@ obj5 = { flexDirection: "row", alignItems: "center", paddingHorizontal: nativeDe
 obj6 = { flex: 1, height: 1, backgroundColor: nativeDefault.colors.BORDER_NORMAL };
 obj7 = { marginHorizontal: nativeDefault.space.PX_8 };
 let closure_9 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((linkCode) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuardianCard(linkCode) {
   let currentUser;
   let expiresAt;
   let id;
@@ -465,7 +463,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((linkCode) => {
   cResult[2] = stateFromStores;
   cResult[3] = linkCode;
   cResult[4] = fn2;
-}) : ((linkCode) => {
+}) : (function ConnectGuardianCard(linkCode) {
   let ShareIcon;
   let Stack2;
   let currentUser;

@@ -1,18 +1,16 @@
-// Module ID: 10081
-// Function ID: 10082
+// Module ID: 9664
+// Function ID: 9665
 // Name: useFocusHandlers
 // Dependencies: [32, 19, 558, 576, 2]
 
-// Module 10081 (useFocusHandlers)
+// Module 9664 (useFocusHandlers)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let titleInput;
-
 const PostComposerInputs = { TITLE: 0, [0]: "TITLE", CONTENT: 1, [1]: "CONTENT" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((titleInput) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFocusHandlers(titleInput) {
   let contentInput;
   let focusedInput;
   const obj = titleInput(contentInput[3]);
@@ -50,7 +48,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((titleInput) => {
           tmp7 = obj2;
         }
       }
-      const fn2 = function b() {
+      function blurLastInput() {
         if (obj.TITLE === first) {
           const current2 = titleInput.current;
           if (current2 != null) {
@@ -62,15 +60,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((titleInput) => {
             current.blur();
           }
         }
-      };
+      }
       cResult[4] = contentInput;
       cResult[5] = focusedInput;
       cResult[6] = titleInput;
-      cResult[7] = fn2;
-      tmp6 = fn2;
+      cResult[7] = blurLastInput;
+      tmp6 = blurLastInput;
     }
   }
-  const fn = function c() {
+  function focusLastInput() {
     if (obj.TITLE === first) {
       const current2 = titleInput.current;
       if (current2 != null) {
@@ -82,13 +80,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((titleInput) => {
         current.focus();
       }
     }
-  };
+  }
   cResult[0] = contentInput;
   cResult[1] = focusedInput;
   cResult[2] = titleInput;
-  cResult[3] = fn;
-  tmp5 = fn;
-}) : ((arg0) => {
+  cResult[3] = focusLastInput;
+  tmp5 = focusLastInput;
+}) : (function useFocusHandlers(arg0) {
   let obj;
   let ref;
   let ref2;

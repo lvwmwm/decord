@@ -1,27 +1,27 @@
-// Module ID: 11516
-// Function ID: 11517
+// Module ID: 11508
+// Function ID: 11509
 // Name: ClassificationMessageEvidence
-// Dependencies: [32, 19, 17, 1193, 1377, 8139, 8126, 1085, 21, 7602, 4896, 558, 576, 504, 4735, 11517, 11518, 8125, 5046, 7944, 7994, 11519, 5118, 11, 8336, 2]
+// Dependencies: [32, 19, 17, 1205, 1389, 5920, 5921, 1085, 21, 7719, 5090, 558, 576, 504, 4929, 11509, 11510, 5927, 5415, 8362, 8402, 11511, 5430, 11, 9308, 2]
 
-// Module 11516 (ClassificationMessageEvidence)
+// Module 11508 (ClassificationMessageEvidence)
 import Constants from "Constants" /* 1085 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5046 */;
-import RowGeneratorDefault from "RowGenerator" /* 7602 */;
-import openMediaModal from "openMediaModal" /* 7944 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8125 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5415 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 5927 */;
+import RowGeneratorDefault from "RowGenerator" /* 7719 */;
+import openMediaModal from "openMediaModal" /* 8362 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
-import UserStore_mod from "UserStore" /* 1377 */;
-import SafetyHubStore from "SafetyHubStore" /* 8139 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8126 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
+import UserStore from "UserStore" /* 1389 */;
+import SafetyHubStore from "SafetyHubStore" /* 5920 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 5921 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let dependencyMap, width;
+let closure_10, dependencyMap, width;
 
 let closure_12;
 let closure_14;
@@ -34,7 +34,7 @@ let map1;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f108231 = (arg0, arg1) => {
+const f108355 = (arg0, arg1) => {
   url = arg0;
   return size.getSize(url.url, (width, height) => {
     size = { width, height };
@@ -43,7 +43,6 @@ const f108231 = (arg0, arg1) => {
 };
 let react = react_mod;
 ({ View: hasOwnProperty, findNodeHandle: metroRequire, Image: metroImportDefault, ActivityIndicator: metroImportAll } = react_native);
-let UserStore = UserStore_mod;
 ({ DEFAULT_MEDIA_MAX_WIDTH: closure_12, DEFAULT_MEDIA_MAX_HEIGHT: map1, VIDEO_PLACEHOLDER_WIDTH: closure_14, VIDEO_PLACEHOLDER_HEIGHT: closure_15, VIDEO_PLACEHOLDER_FILENAME: closure_16 } = SafetyHubConstants);
 const MessageTypes = Constants.MessageTypes;
 ({ jsx: closure_18, jsxs: closure_19 } = Fragment);
@@ -51,16 +50,15 @@ let c20 = "1";
 let tmp5 = new RowGeneratorDefault();
 const rowGenerator = tmp5;
 let closure_22 = createStyles.createStyles({ dummyVideoAttachments: { width: 0, height: 0 } });
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedContent) {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClassificationEvidence(flaggedContent) {
+  let ae;
   let channelId;
-  let closure_10;
   let closure_2;
   let closure_4;
   let first1;
   let first3;
   let id;
   let items5;
-  let items6;
   let ref;
   let tmp13;
   let tmp16;
@@ -71,6 +69,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedConte
   let tmp31;
   let tmp5;
   let tmp6;
+  let tmp61;
   let username;
   let tmp = ref;
   let tmp2 = dependencyMap;
@@ -79,16 +78,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedConte
   flaggedContent = flaggedContent.flaggedContent;
   let tmp4 = closure_22();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    class E {
-      constructor() {
-        return closure_10.getCurrentUser();
-      }
-    }
+    const items = [closure_10];
+    const fn = function w() {
+      return closure_10.getCurrentUser();
+    };
     cResult[0] = items;
-    cResult[1] = E;
+    cResult[1] = fn;
     tmp5 = items;
-    tmp6 = E;
+    tmp6 = fn;
   } else {
     [tmp5, tmp6] = cResult;
   }
@@ -171,18 +168,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedConte
       if (cResult[11] === tmp20) {
         tmp31 = cResult[12];
       }
-      UserStore = tmp31;
+      closure_10 = tmp31;
       if (cResult[16] === first2.attachments) {
         if (cResult[17] === first1) {
           if (cResult[18] === id) {
             if (cResult[19] === tmp31) {
-              let tmp34;
-              let tmp36;
-              let tmp40;
               let tmp39;
-              if (cResult[20] === tmp20) {
-                tmp34 = cResult[21];
-              }
+              let tmp38;
               if (cResult[22] !== reactTag) {
                 function me(arg0) {
                   arg0.reactTag = reactTag;
@@ -194,9 +186,6 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedConte
                   }
                 }
                 cResult[23] = me;
-                tmp36 = me;
-              } else {
-                tmp36 = cResult[23];
               }
               if (cResult[24] !== first2.attachments) {
                 function oe() {
@@ -208,7 +197,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedConte
                   });
                   const mapped = found.map((item) => {
                     let closure_0 = item;
-                    const promise = new Promise(f108231);
+                    const promise = new Promise(f108355);
                     const nextPromise = promise.then((result) => {
                       id = result;
                       return closure_1_4((arg0) => {
@@ -237,7 +226,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedConte
                 }
               }
               if (cResult[27] !== first3) {
-                function de() {
+                function ce() {
                   if (0 === first3) {
                     closure_2(metroRequire(ref.current));
                   }
@@ -249,15 +238,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedConte
                   }
                 }
                 cResult[27] = first3;
-                cResult[28] = de;
+                cResult[28] = ce;
                 cResult[29] = items4;
-                tmp40 = items4;
-                tmp39 = de;
+                tmp39 = items4;
+                tmp38 = ce;
               } else {
-                tmp39 = cResult[28];
-                tmp40 = cResult[29];
+                tmp38 = cResult[28];
+                tmp39 = cResult[29];
               }
-              const effect = obj3.useEffect(tmp39, tmp40);
+              const effect = obj3.useEffect(tmp38, tmp39);
               let str = "";
               if ("" === first2.content) {
                 if (0 === first2.attachments.length) {
@@ -265,20 +254,19 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedConte
                 }
               }
               if (first3 > 0) {
-                let tmp62;
-                let tmp67;
+                let tmp51;
                 const _Symbol = Symbol;
                 if (cResult[30] === Symbol.for("react.memo_cache_sentinel")) {
-                  const tmp65 = closure_18(closure_8, {});
+                  const tmp54 = closure_18(closure_8, {});
                   class J {
                     constructor() {
                       return username.getUsername();
                     }
                   }
-                  cResult[30] = tmp65;
-                  tmp62 = tmp65;
+                  cResult[30] = tmp54;
+                  tmp51 = tmp54;
                 } else {
-                  tmp62 = cResult[30];
+                  tmp51 = cResult[30];
                 }
                 class J {
                   constructor() {
@@ -286,23 +274,29 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedConte
                   }
                 }
                 if (cResult[31] !== first2.attachments) {
-                  let tmp68;
-                  let tmp69;
                   const _Symbol2 = Symbol;
                   if (cResult[33] === Symbol.for("react.memo_cache_sentinel")) {
-                    function pe(filename) {
-                      filename = filename.filename;
-                      const obj = ref(closure_2[18]);
-                      return obj.isVideoFile(filename);
+                    class Ee {
+                      constructor(filename) {
+                        filename = filename.filename;
+                        const obj = ref(closure_2[18]);
+                        return obj.isVideoFile(filename);
+                      }
                     }
-                    cResult[33] = pe;
+                    cResult[33] = Ee;
                     class J {
                       constructor() {
                         return username.getUsername();
                       }
                     }
                   } else {
-                    tmp68 = cResult[33];
+                    class Ee {
+                      constructor(filename) {
+                        filename = filename.filename;
+                        const obj = ref(closure_2[18]);
+                        return obj.isVideoFile(filename);
+                      }
+                    }
                   }
                   class J {
                     constructor() {
@@ -310,157 +304,116 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedConte
                     }
                   }
                   if (cResult[34] === Symbol.for("react.memo_cache_sentinel")) {
-                    function we(uri, arg1) {
-                      let closure_0 = uri;
-                      let obj = {
-                        source: { uri: uri.url },
-                        onLoad(arg0) {
-                          let closure_0 = arg0;
-                          closure_1_4((arg0) => {
-                            const obj = {};
-                            const merged = Object.assign(arg0);
-                            size = { width: closure_0.naturalSize.width, height: closure_0.naturalSize.height };
-                            obj[closure_0.id] = size;
-                            return obj;
-                          });
-                          closure_1_8((arg0) => arg0 - 1);
-                        },
-                        onError() {
-                          return closure_1_8((arg0) => arg0 - 1);
-                        }
-                      };
-                      return closure_1_18(first(closure_2[20]), obj, arg1);
+                    class Ee {
+                      constructor(filename) {
+                        filename = filename.filename;
+                        const obj = ref(closure_2[18]);
+                        return obj.isVideoFile(filename);
+                      }
                     }
-                    cResult[34] = we;
+                    cResult[34] = tmp59;
                     class J {
                       constructor() {
                         return username.getUsername();
                       }
                     }
                   } else {
-                    tmp69 = cResult[34];
-                  }
-                  let attachments = first2.attachments;
-                  let found = attachments.filter(tmp68);
-                  let mapped = found.map(tmp69);
-                  cResult[31] = first2.attachments;
-                  cResult[32] = mapped;
-                  tmp67 = mapped;
-                } else {
-                  tmp67 = cResult[32];
-                }
-                if (cResult[35] === tmp4.dummyVideoAttachments) {
-                  let tmp71;
-                  if (cResult[36] === tmp67) {
-                    tmp71 = cResult[37];
-                  }
-                  return tmp71;
-                }
-                let obj4 = { children: items5 };
-                items5 = [tmp62, ];
-                let obj5 = { style: tmp66, children: tmp67 };
-                items5[1] = closure_18(uri, obj5);
-                const tmp75 = closure_19(uri, obj4);
-                cResult[35] = tmp4.dummyVideoAttachments;
-                cResult[36] = tmp67;
-                cResult[37] = tmp75;
-                tmp71 = tmp75;
-              } else {
-                let tmp42;
-                if (cResult[38] !== tmp34) {
-                  const obj6 = { ref: null, onTapImage: tmp34, inverted: false };
-                  class J {
-                    constructor() {
-                      return username.getUsername();
-                    }
-                  }
-                  const tmp45 = closure_18(reactTag(11519), obj6);
-                  cResult[38] = tmp34;
-                  cResult[39] = tmp45;
-                  tmp42 = tmp45;
-                } else {
-                  tmp42 = cResult[39];
-                }
-                if (cResult[40] === first2.content) {
-                  if (cResult[41] === first2.id) {
-                    if (cResult[42] === stateFromStores) {
-                      if (cResult[43] === tmp31) {
-                        let tmp46;
-                        if (cResult[44] === stateFromStores2) {
-                          tmp46 = cResult[45];
-                        }
-                        if (cResult[46] === tmp36) {
-                          let tmp55;
-                          if (cResult[47] === tmp46) {
-                            tmp55 = cResult[48];
-                          }
-                          if (cResult[49] === tmp42) {
-                            let tmp59;
-                            if (cResult[50] === tmp55) {
-                              tmp59 = cResult[51];
-                            }
-                            return tmp59;
-                          }
-                          class J {
-                            constructor() {
-                              return username.getUsername();
-                            }
-                          }
-                          const obj7 = { children: items6 };
-                          items6 = [tmp42, tmp55];
-                          const tmp61 = closure_19(uri, obj7);
-                          cResult[49] = tmp42;
-                          cResult[50] = tmp55;
-                          cResult[51] = tmp61;
-                          tmp59 = tmp61;
-                        }
-                        class J {
-                          constructor() {
-                            return username.getUsername();
-                          }
-                        }
-                        const obj9 = { rowGenerator, message: tmp46, modifyRow: tmp36, pointerEvents: "none" };
-                        const tmp58 = closure_18(reactTag(8336), obj9);
-                        cResult[46] = tmp36;
-                        cResult[47] = tmp46;
-                        cResult[48] = tmp58;
-                        tmp55 = tmp58;
+                    class Ee {
+                      constructor(filename) {
+                        filename = filename.filename;
+                        const obj = ref(closure_2[18]);
+                        return obj.isVideoFile(filename);
                       }
                     }
                   }
+                  let attachments = first2.attachments;
+                  let found = attachments.filter(tmp57);
+                  let mapped = found.map(tmp58);
+                  cResult[31] = first2.attachments;
+                  cResult[32] = mapped;
+                } else {
+                  class Ee {
+                    constructor(filename) {
+                      filename = filename.filename;
+                      const obj = ref(closure_2[18]);
+                      return obj.isVideoFile(filename);
+                    }
+                  }
                 }
-                const tmpResult6 = tmp(5118);
+                if (cResult[35] === tmp4.dummyVideoAttachments) {
+                  class Ee {
+                    constructor(filename) {
+                      filename = filename.filename;
+                      const obj = ref(closure_2[18]);
+                      return obj.isVideoFile(filename);
+                    }
+                  }
+                  return tmp61;
+                }
+                let obj4 = { children: items5 };
+                items5 = [tmp51, ];
+                let obj5 = { style: tmp55, children: tmp56 };
+                items5[1] = closure_18(uri, obj5);
+                const tmp65 = closure_19(uri, obj4);
+                cResult[35] = tmp4.dummyVideoAttachments;
+                cResult[36] = tmp56;
+                cResult[37] = tmp65;
+                tmp61 = tmp65;
+              } else {
+                class Ee {
+                  constructor(filename) {
+                    filename = filename.filename;
+                    const obj = ref(closure_2[18]);
+                    return obj.isVideoFile(filename);
+                  }
+                }
+                if (cResult[40] === first2.content) {
+                  class Ee {
+                    constructor(filename) {
+                      filename = filename.filename;
+                      const obj = ref(closure_2[18]);
+                      return obj.isVideoFile(filename);
+                    }
+                  }
+                }
+                const tmpResult6 = tmp(5430);
                 class J {
                   constructor() {
                     return username.getUsername();
                   }
                 }
-                tmp48[0] = first2.id;
+                tmp43[0] = first2.id;
                 const _Date = Date;
                 const createMessageRecord = tmpResult6.createMessageRecord;
                 const self = this;
                 const self2 = this;
-                const obj8 = reactTag(11);
-                const date = new Date(obj8.extractTimestamp(first2.id));
-                tmp48[1] = date.toUTCString();
-                tmp48[2] = c20;
-                tmp48[3] = MessageTypes.DEFAULT;
-                let tmp53 = stateFromStores;
+                const obj7 = reactTag(11);
+                const date = new Date(obj7.extractTimestamp(first2.id));
+                tmp43[1] = date.toUTCString();
+                tmp43[2] = c20;
+                tmp43[3] = MessageTypes.DEFAULT;
+                let tmp48 = stateFromStores;
                 if (stateFromStores == null) {
-                  tmp53 = { id: "0", avatar: null, discriminator: "0000", username: stateFromStores2 };
-                  const obj10 = { id: "0", avatar: null, discriminator: "0000", username: stateFromStores2 };
+                  class Ee {
+                    constructor(filename) {
+                      filename = filename.filename;
+                      const obj = ref(closure_2[18]);
+                      return obj.isVideoFile(filename);
+                    }
+                  }
+                  tmp49[3] = stateFromStores2;
+                  tmp48 = tmp49;
                 }
-                tmp48[4] = tmp53;
-                tmp48[5] = first2.content;
-                tmp48[6] = tmp31;
-                const messageRecord = createMessageRecord(tmp48);
+                tmp43[4] = tmp48;
+                tmp43[5] = first2.content;
+                tmp43[6] = tmp31;
+                const messageRecord = createMessageRecord(tmp43);
                 cResult[40] = first2.content;
                 cResult[41] = first2.id;
                 cResult[42] = stateFromStores;
                 cResult[43] = tmp31;
                 cResult[44] = stateFromStores2;
                 cResult[45] = messageRecord;
-                tmp46 = messageRecord;
               }
             }
           }
@@ -476,17 +429,19 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedConte
       cResult[18] = id;
       cResult[19] = tmp31;
       cResult[20] = tmp20;
-      cResult[21] = tmp35;
-      tmp34 = tmp35;
+      cResult[21] = tmp34;
     }
   }
   if (cResult[13] === first1) {
-    let tmp32;
-    if (cResult[14] === tmp20) {
-      tmp32 = cResult[15];
+    class Ee {
+      constructor(filename) {
+        filename = filename.filename;
+        const obj = ref(closure_2[18]);
+        return obj.isVideoFile(filename);
+      }
     }
     const attachments1 = first2.attachments;
-    const mapped1 = attachments1.map(tmp32);
+    const mapped1 = attachments1.map(ae);
     class J {
       constructor() {
         return username.getUsername();
@@ -498,7 +453,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedConte
     cResult[12] = mapped1;
     tmp31 = mapped1;
   }
-  function ae(filename) {
+  ae = function ae(filename) {
     let obj2;
     let str;
     let tmp4;
@@ -539,12 +494,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedConte
       }
     }
     return tmp4;
-  }
+  };
   cResult[13] = first1;
   cResult[14] = tmp20;
   cResult[15] = ae;
-  tmp32 = ae;
-}) : (function(flaggedContent) {
+}) : (function ClassificationEvidence(flaggedContent) {
   let assetSource;
   let channelId;
   let closure_2;
@@ -587,10 +541,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedConte
     const obj = ref(closure_2[14]);
     return obj.isThemeLight(id.theme);
   })) {
-    assetSource = resolveAssetSource(tmp12(11517));
+    assetSource = resolveAssetSource(tmp12(11509));
     tmp14 = tmp12;
   } else {
-    assetSource = resolveAssetSource(tmp12(11518));
+    assetSource = resolveAssetSource(tmp12(11510));
     tmp14 = tmp12;
   }
   const first2 = flaggedContent[0];
@@ -710,7 +664,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedConte
     });
     const mapped = found.map((item) => {
       let closure_0 = item;
-      const promise = new Promise(f108231);
+      const promise = new Promise(f108355);
       const nextPromise = promise.then((result) => {
         id = result;
         return closure_1_4((arg0) => {
@@ -769,13 +723,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedConte
       obj10 = obj4;
     } else {
       const obj6 = { ref, onTapImage: callback, inverted: false };
-      const items9 = [closure_18(tmp14(11519), obj6), ];
+      const items9 = [closure_18(tmp14(11511), obj6), ];
       const obj7 = { rowGenerator, message: createMessageRecord(obj8), modifyRow: callback1, pointerEvents: "none" };
-      const tmp14Result = tmp14(8336);
+      const tmp14Result = tmp14(9308);
       const _Date = Date;
       obj8 = { id: first2.id, timestamp: date.toUTCString(), channel_id, type: MessageTypes.DEFAULT, author: tmp27, content: first2.content, attachments: memo };
-      createMessageRecord = tmp2(5118).createMessageRecord;
-      tmp2(5118);
+      createMessageRecord = tmp2(5430).createMessageRecord;
+      tmp2(5430);
       const self = this;
       const self2 = this;
       const tmp14Result2 = tmp14(11);

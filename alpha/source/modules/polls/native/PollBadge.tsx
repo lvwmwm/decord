@@ -1,23 +1,21 @@
-// Module ID: 16866
-// Function ID: 16867
+// Module ID: 17145
+// Function ID: 17146
 // Name: PollBadge
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1188, 16867, 1126, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1200, 17146, 1126, 5086, 2]
 
-// Module 16866 (PollBadge)
+// Module 17145 (PollBadge)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16867 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17146 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let style;
 
 let closure_4;
 let hasOwnProperty;
@@ -27,7 +25,7 @@ const View = react_native.View;
 let obj = { container: obj2, text: { marginLeft: 4, textTransform: "uppercase" } };
 obj2 = { borderRadius: nativeDefault.radii.round, paddingHorizontal: 8, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, color: nativeDefault.colors.TEXT_MUTED, flexDirection: "row", alignItems: "center" };
 let closure_6 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollBadge(style) {
   let items;
   const obj = react2;
   const cResult = obj.c(10);
@@ -44,7 +42,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: native.IconSizes.EXTRA_SMALL_10, source: AssetRegistryDefault };
-      const Icon = tmp(1188).Icon;
+      const Icon = tmp(1200).Icon;
       const tmp10 = React3(Icon, obj2);
       cResult[3] = tmp10;
       tmp7 = tmp10;
@@ -90,7 +88,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   cResult[1] = tmp4.container;
   cResult[2] = items1;
   tmp5 = items1;
-}) : ((style) => {
+}) : (function PollBadge(style) {
   let intl;
   let items;
   let items1;

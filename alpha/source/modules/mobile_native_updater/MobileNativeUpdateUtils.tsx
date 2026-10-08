@@ -1,15 +1,15 @@
-// Module ID: 13737
-// Function ID: 13738
+// Module ID: 13959
+// Function ID: 13960
 // Name: MobileNativeUpdateUtils
-// Dependencies: [5, 4874, 3, 1282, 4571, 1369, 1105, 2]
+// Dependencies: [5, 5068, 3, 1294, 4763, 1381, 1105, 2]
 // Exports: checkForNewerBuild, openBuildInstaller
 
-// Module 13737 (MobileNativeUpdateUtils)
+// Module 13959 (MobileNativeUpdateUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import Linking from "Linking" /* 4571 */;
-import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 4874 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import Linking from "Linking" /* 4763 */;
+import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 5068 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

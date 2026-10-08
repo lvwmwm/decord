@@ -1,18 +1,18 @@
-// Module ID: 4857
-// Function ID: 4858
+// Module ID: 5051
+// Function ID: 5052
 // Name: BrowserManager
-// Dependencies: [5, 17, 1369, 4858, 4859, 570, 558, 576, 1105, 4571, 1375, 2]
+// Dependencies: [5, 17, 1381, 5052, 5053, 570, 558, 576, 1105, 4763, 1387, 2]
 // Exports: browserManagerClearWebsiteData, browserManagerCloseBrowser, browserManagerOpenUrl, browserManagerSelectBrowser, getBrowserManagerIsChromeInstalled, getBrowserManagerSelectedBrowser, getIsInAppBrowserOpen, openPlayStoreInlineInstall, subscribeToIsInAppBrowserOpen
 
-// Module 4857 (BrowserManager)
+// Module 5051 (BrowserManager)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import LinkingDefault from "Linking" /* 4571 */;
-import react_native2 from "react-native" /* 4858 */;
-import react_nativeDefault2 from "react-native" /* 4859 */;
+import LinkingDefault from "Linking" /* 4763 */;
+import react_native2 from "react-native" /* 5052 */;
+import react_nativeDefault2 from "react-native" /* 5053 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -23,7 +23,7 @@ let c0, c1, closure_7;
 
 let importDefaultResult;
 let tmp2;
-const GlobalUtils = tmp2(1375);
+const GlobalUtils = tmp2(1387);
 let obj = function _browserManagerClearWebsiteData() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let obj3;
@@ -93,12 +93,12 @@ let closure_6 = module_570.create(() => {
 });
 let c7 = null;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBrowserManagerIsChromeInstalled() {
   let first;
   obj = react;
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function n(isChromeInstalled) {
+    const fn = function s(isChromeInstalled) {
       return isChromeInstalled.isChromeInstalled;
     };
     cResult[0] = fn;
@@ -107,14 +107,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return closure_6(first);
-}) : (() => closure_6((isChromeInstalled) => isChromeInstalled.isChromeInstalled));
+}) : (function useBrowserManagerIsChromeInstalled() {
+  return closure_6((isChromeInstalled) => isChromeInstalled.isChromeInstalled);
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBrowserManagerSupportsInAppBrowser() {
   let first;
   obj = react;
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function n(supportsInAppBrowser) {
+    const fn = function s(supportsInAppBrowser) {
       return supportsInAppBrowser.supportsInAppBrowser;
     };
     cResult[0] = fn;
@@ -123,14 +125,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return closure_6(first);
-}) : (() => closure_6((supportsInAppBrowser) => supportsInAppBrowser.supportsInAppBrowser));
+}) : (function useBrowserManagerSupportsInAppBrowser() {
+  return closure_6((supportsInAppBrowser) => supportsInAppBrowser.supportsInAppBrowser);
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBrowserManagerSelectedBrowser() {
   let first;
   obj = react;
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function n(selectedBrowser) {
+    const fn = function s(selectedBrowser) {
       return selectedBrowser.selectedBrowser;
     };
     cResult[0] = fn;
@@ -139,14 +143,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return closure_6(first);
-}) : (() => closure_6((selectedBrowser) => selectedBrowser.selectedBrowser));
+}) : (function useBrowserManagerSelectedBrowser() {
+  return closure_6((selectedBrowser) => selectedBrowser.selectedBrowser);
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsInAppBrowserOpen() {
   let first;
   obj = react;
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function n(isInAppBrowserOpen) {
+    const fn = function s(isInAppBrowserOpen) {
       return isInAppBrowserOpen.isInAppBrowserOpen;
     };
     cResult[0] = fn;
@@ -155,7 +161,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return closure_6(first);
-}) : (() => closure_6((isInAppBrowserOpen) => isInAppBrowserOpen.isInAppBrowserOpen));
+}) : (function useIsInAppBrowserOpen() {
+  return closure_6((isInAppBrowserOpen) => isInAppBrowserOpen.isInAppBrowserOpen);
+});
 function getBrowserManagerIsChromeInstalled() {
   return closure_6.getState().isChromeInstalled;
 }

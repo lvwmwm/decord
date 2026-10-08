@@ -1,32 +1,32 @@
-// Module ID: 16202
-// Function ID: 16203
+// Module ID: 16462
+// Function ID: 16463
 // Name: VoiceChannel
-// Dependencies: [5, 19, 17, 7051, 4515, 4911, 5077, 4920, 11711, 1085, 21, 587, 5848, 5967, 1987, 5103, 558, 576, 9195, 16200, 16203, 9090, 504, 16195, 10626, 4883, 9295, 7621, 5041, 16092, 16083, 1252, 16196, 10664, 1126, 16093, 11687, 2]
+// Dependencies: [5, 19, 17, 7238, 4707, 6040, 5971, 5114, 11776, 1085, 21, 587, 8163, 6149, 1999, 7476, 558, 576, 8630, 16460, 16463, 10337, 504, 16455, 10224, 5077, 8626, 7868, 5410, 16352, 16343, 1264, 16456, 10264, 1126, 16353, 11752, 2]
 
-// Module 16202 (VoiceChannel)
+// Module 16462 (VoiceChannel)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import SortedVoiceStateStore2 from "SortedVoiceStateStore" /* 4920 */;
-import ChannelUtils from "ChannelUtils" /* 5041 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9295 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10664 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 11687 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import SortedVoiceStateStore2 from "SortedVoiceStateStore" /* 5114 */;
+import ChannelUtils from "ChannelUtils" /* 5410 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8626 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10264 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 11752 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7051 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import ReadStateStore from "ReadStateStore" /* 4911 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11711 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7238 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11776 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const SortedVoiceStateStore = SortedVoiceStateStore2;
-let channel, voiceStates;
+let voiceStates;
 
 let CHANNEL_MARGIN_VERTICAL;
 let closure_12;
@@ -75,7 +75,7 @@ obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX
 obj3 = { marginVertical: CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md };
 const memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChannel(channel) {
   let collapsed;
   let embeddedActivitiesCount;
   let first;
@@ -390,7 +390,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) 
   cResult[7] = gameMentionsAsPlainText;
   cResult[8] = result;
   tmp19 = result;
-}) : ((channel) => {
+}) : (function VoiceChannel(channel) {
   let c4;
   let collapsed;
   let embeddedActivitiesCount;
@@ -503,7 +503,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) 
 }));
 const memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedVoiceChannel(channel) {
   let bypassLimit;
   let collapsed;
   let first;
@@ -604,7 +604,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((chann
   cResult[14] = tmp14;
   cResult[15] = tmp16;
   tmp15 = tmp16;
-}) : ((channel) => {
+}) : (function ConnectedVoiceChannel(channel) {
   let bypassLimit;
   let collapsed;
   let locked;

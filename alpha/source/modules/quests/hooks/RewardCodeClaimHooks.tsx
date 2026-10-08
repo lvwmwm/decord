@@ -1,30 +1,29 @@
-// Module ID: 10966
-// Function ID: 10967
+// Module ID: 11159
+// Function ID: 11160
 // Name: RewardCodeClaimHooks
-// Dependencies: [5, 32, 19, 558, 576, 10007, 5633, 10967, 10929, 7237, 7226, 7236, 5637, 7225, 4565, 2]
+// Dependencies: [5, 32, 19, 558, 576, 9537, 5980, 11160, 10580, 7416, 7405, 7415, 5984, 7404, 4757, 2]
 
-// Module 10966 (RewardCodeClaimHooks)
-import openURLDefault from "openURL" /* 4565 */;
-import QuestTypes from "QuestTypes" /* 5633 */;
-import AdCreativeType from "AdCreativeType" /* 5637 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7225 */;
-import captureAdUserAction3 from "captureAdUserAction" /* 7226 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7236 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7237 */;
-import QuestActionCreators from "QuestActionCreators" /* 10007 */;
+// Module 11159 (RewardCodeClaimHooks)
+import openURLDefault from "openURL" /* 4757 */;
+import QuestTypes from "QuestTypes" /* 5980 */;
+import AdCreativeType from "AdCreativeType" /* 5984 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7404 */;
+import captureAdUserAction3 from "captureAdUserAction" /* 7405 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7415 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7416 */;
+import QuestActionCreators from "QuestActionCreators" /* 9537 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let _require, c4, c7, closure_12, isClaimingReward;
+let _require, c4, c7, closure_12;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isClaimingReward) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClaimOrFetchRewardCode(isClaimingReward) {
   let first2;
   let questContent;
-  let tmp9;
   let obj = isClaimingReward(questContent[4]);
   const cResult = obj.c(14);
   isClaimingReward = isClaimingReward.isClaimingReward;
@@ -33,14 +32,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isClaimingReward) =>
   const quest = isClaimingReward.quest;
   const rewardCode = isClaimingReward.rewardCode;
   const preview = isClaimingReward.preview;
-  let obj2 = preview;
   const tmp2 = rewardCode(preview.useState(false), 2);
-  const hasError = tmp2[0];
-  const tmp4 = tmp2[1];
-  let closure_7 = tmp4;
-  const tmp5 = rewardCode(preview.useState(false), 2);
-  const first1 = tmp5[0];
-  let closure_9 = tmp5[1];
+  const first = tmp2[0];
+  let closure_7 = tmp2[1];
+  const tmp4 = rewardCode(preview.useState(false), 2);
+  const first1 = tmp4[0];
+  let closure_9 = tmp4[1];
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     _require = quest(function*(arg0, value, arg2) {
       let obj2;
@@ -114,99 +111,86 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isClaimingReward) =>
         }
       }
     });
-    const fn = function() {
+    function t0() {
       return closure_0(...arguments);
-    };
-    cResult[0] = fn;
-    first2 = fn;
+    }
+    cResult[0] = t0;
+    first2 = t0;
   } else {
     first2 = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function v(arg0) {
-      try {
-        const obj = QuestActionCreators;
-        const questRewardCode = obj.fetchQuestRewardCode(arg0);
-      } catch (err) {
-        closure_7(true);
+    class P {
+      constructor(arg0) {
+        try {
+          const obj = QuestActionCreators;
+          const questRewardCode = obj.fetchQuestRewardCode(arg0);
+        } catch (err) {
+          closure_7(true);
+        }
       }
-    };
-    cResult[1] = fn2;
-    tmp9 = fn2;
+    }
+    cResult[1] = P;
   } else {
-    tmp9 = cResult[1];
+    class P {
+      constructor(arg0) {
+        try {
+          const obj = QuestActionCreators;
+          const questRewardCode = obj.fetchQuestRewardCode(arg0);
+        } catch (err) {
+          closure_7(true);
+        }
+      }
+    }
   }
-  let closure_11 = tmp9;
+  P = tmp8;
   if (cResult[2] === first1) {
-    if (cResult[3] === hasError) {
-      if (cResult[4] === isClaimingReward) {
-        if (cResult[5] === isFetchingRewardCode) {
-          if (cResult[6] === preview) {
-            if (cResult[7] === quest) {
-              if (cResult[8] === questContent) {
-                let tmp10;
-                let tmp11;
-                let tmp13;
-                if (cResult[9] === rewardCode) {
-                  tmp10 = cResult[10];
-                  tmp11 = cResult[11];
-                }
-                const effect = obj2.useEffect(tmp10, tmp11);
-                if (cResult[12] !== hasError) {
-                  let obj3 = { claimCode: first2, fetchCode: tmp9, hasError, setHasError: tmp4 };
-                  cResult[12] = hasError;
-                  cResult[13] = obj3;
-                  tmp13 = obj3;
-                } else {
-                  tmp13 = cResult[13];
-                }
-                return tmp13;
-              }
-            }
-          }
+    class P {
+      constructor(arg0) {
+        try {
+          const obj = QuestActionCreators;
+          const questRewardCode = obj.fetchQuestRewardCode(arg0);
+        } catch (err) {
+          closure_7(true);
         }
       }
     }
   }
-  class L {
-    constructor() {
-      const tmp = true === preview || null != rewardCode || first || isClaimingReward || first1 || isFetchingRewardCode;
-      if (!tmp) {
-        closure_7(false);
-        const userStatus = quest.userStatus;
-        let claimedAt;
-        if (userStatus != null) {
-          claimedAt = userStatus.claimedAt;
+  const fn = function v() {
+    const tmp = true === preview || null != rewardCode || first || isClaimingReward || first1 || isFetchingRewardCode;
+    if (!tmp) {
+      closure_7(false);
+      const userStatus = quest.userStatus;
+      let claimedAt;
+      if (userStatus != null) {
+        claimedAt = userStatus.claimedAt;
+      }
+      if (null == claimedAt) {
+        first2(quest.id, QuestTypes.QuestRewardCodePlatforms.CROSS_PLATFORM, questContent);
+      } else {
+        const userStatus2 = tmp6.userStatus;
+        let claimedAt1;
+        if (userStatus2 != null) {
+          claimedAt1 = userStatus2.claimedAt;
         }
-        if (null == claimedAt) {
-          first2(quest.id, QuestTypes.QuestRewardCodePlatforms.CROSS_PLATFORM, questContent);
-        } else {
-          const userStatus2 = tmp6.userStatus;
-          let claimedAt1;
-          if (userStatus2 != null) {
-            claimedAt1 = userStatus2.claimedAt;
-          }
-          if (null != claimedAt1) {
-            closure_11(quest.id);
-          }
+        if (null != claimedAt1) {
+          P(quest.id);
         }
       }
     }
-  }
-  const items = [first2, tmp9, hasError, isClaimingReward, first1, isFetchingRewardCode, questContent, quest, rewardCode, preview];
+  };
+  const items = [first2, tmp8, first, isClaimingReward, first1, isFetchingRewardCode, questContent, quest, rewardCode, preview];
   cResult[2] = first1;
-  cResult[3] = hasError;
+  cResult[3] = first;
   cResult[4] = isClaimingReward;
   cResult[5] = isFetchingRewardCode;
   cResult[6] = preview;
   cResult[7] = quest;
   cResult[8] = questContent;
   cResult[9] = rewardCode;
-  cResult[10] = L;
+  cResult[10] = fn;
   cResult[11] = items;
-  tmp11 = items;
-  tmp10 = L;
-}) : ((isClaimingReward) => {
+}) : (function useClaimOrFetchRewardCode(isClaimingReward) {
   isClaimingReward = isClaimingReward.isClaimingReward;
   const isFetchingRewardCode = isClaimingReward.isFetchingRewardCode;
   const questContent = isClaimingReward.questContent;
@@ -330,7 +314,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isClaimingReward) =>
   return { claimCode, fetchCode, hasError, setHasError };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleRedemptionLinkClick(quest) {
   let questContent;
   let obj = quest(questContent[4]);
   const cResult = obj.c(8);
@@ -390,7 +374,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   cResult[6] = trackQuestContentClickedWithImpression;
   cResult[7] = fn;
   tmp4 = fn;
-}) : ((quest) => {
+}) : (function useHandleRedemptionLinkClick(quest) {
   quest = quest.quest;
   const redemptionLink = quest.redemptionLink;
   const questContent = quest.questContent;
@@ -425,7 +409,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
 });
 let closure_6 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((claimCode) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClaimRewardCodePrimaryCtaClickHandler(claimCode) {
   let hasError;
   let questContentCTA;
   let questContentPosition;
@@ -539,7 +523,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((claimCode) => {
   cResult[13] = trackQuestContentClickedWithImpression;
   cResult[14] = fn;
   tmp10 = fn;
-}) : ((claimCode) => {
+}) : (function useClaimRewardCodePrimaryCtaClickHandler(claimCode) {
   let userStatus;
   claimCode = claimCode.claimCode;
   const fetchCode = claimCode.fetchCode;

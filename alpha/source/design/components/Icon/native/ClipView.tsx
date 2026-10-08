@@ -1,17 +1,17 @@
-// Module ID: 8502
-// Function ID: 8503
+// Module ID: 8986
+// Function ID: 8987
 // Name: ClipView
-// Dependencies: [109, 19, 17, 21, 558, 576, 8503, 8505, 4618, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 8987, 8989, 4810, 2]
 
-// Module 8502 (ClipView)
+// Module 8986 (ClipView)
 import react2 from "react" /* 576 */;
-import ClipViewNativeComponentDefault from "ClipViewNativeComponent" /* 8505 */;
+import ClipViewNativeComponentDefault from "ClipViewNativeComponent" /* 8989 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -20,14 +20,14 @@ let metroImportDefault;
 let metroRequire;
 let obj3;
 let tmp;
-const CutoutBackgroundContext = tmp(8503);
+const CutoutBackgroundContext = tmp(8987);
 let closure_3 = ["children", "cutouts", "style"];
 ({ StyleSheet, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const CutoutShape = { Circle: "circle", RoundedRect: "rounded-rect" };
 let closure_9 = [];
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function SolidCutout(arg0) {
   let backgroundColor;
   let cutout;
   let items1;
@@ -135,7 +135,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = cutout.y;
   cResult[9] = tmp11;
   tmp2 = tmp11;
-}) : ((arg0) => {
+}) : (function SolidCutout(arg0) {
   let backgroundColor;
   let cutout;
   let items1;
@@ -161,7 +161,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroRequire(hasOwnProperty, { style });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColor) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function SolidCutoutOverlay(backgroundColor) {
   let tmp3;
   let obj = backgroundColor(576);
   const cResult = obj.c(7);
@@ -200,7 +200,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColo
   cResult[1] = cutouts;
   cResult[2] = mapped;
   tmp2 = mapped;
-}) : ((arg0) => {
+}) : (function SolidCutoutOverlay(arg0) {
   let backgroundColor;
   let cutouts;
   ({ backgroundColor: require, cutouts } = arg0);
@@ -217,7 +217,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColo
 ReactCompilerGating = ReactCompilerGating_mod;
 let obj2 = { solidCutoutContainer: obj3, solidCutout: { position: "absolute" } };
 obj3 = {};
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClipView(arg0) {
   let arr;
   let children;
   let cutouts;
@@ -300,7 +300,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[12] = tmp6;
   cResult[13] = tmp23;
   tmp20 = tmp23;
-}) : ((cutouts) => {
+}) : (function ClipView(cutouts) {
   let children;
   let items;
   let style;

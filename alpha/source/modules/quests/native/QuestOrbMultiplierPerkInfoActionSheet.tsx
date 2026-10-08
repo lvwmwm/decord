@@ -1,31 +1,31 @@
-// Module ID: 14984
-// Function ID: 14985
+// Module ID: 15246
+// Function ID: 15247
 // Name: QuestOrbMultiplierPerkInfoActionSheet
-// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 4860, 6895, 9658, 4571, 2115, 5601, 1126, 6476, 1618, 6656, 4688, 4892, 10021, 3559, 6652, 14981, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 587, 558, 576, 5054, 7084, 9451, 4763, 2127, 5375, 1126, 6654, 1630, 6833, 4882, 5086, 9552, 3633, 6829, 15243, 2]
 
-// Module 14984 (QuestOrbMultiplierPerkInfoActionSheet)
+// Module 15246 (QuestOrbMultiplierPerkInfoActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import _modDef3559 from "module_3559" /* 3559 */;
-import LinkingDefault from "Linking" /* 4571 */;
-import NitroQuestOrbsMultiplierRive from "NitroQuestOrbsMultiplierRive" /* 4688 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6476 */;
-import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 6656 */;
-import openUserSettings from "openUserSettings" /* 6895 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9658 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 10021 */;
-import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 14981 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
+import _modDef3633 from "module_3633" /* 3633 */;
+import LinkingDefault from "Linking" /* 4763 */;
+import NitroQuestOrbsMultiplierRive from "NitroQuestOrbsMultiplierRive" /* 4882 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6654 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 6833 */;
+import openUserSettings from "openUserSettings" /* 7084 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9451 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9552 */;
+import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 15243 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ obj4 = { textAlign: "center", paddingHorizontal: nativeDefault.space.PX_24, padd
 obj5 = { width: "100%", gap: nativeDefault.space.PX_12, marginVertical: nativeDefault.space.PX_16 };
 let closure_12 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((eligibleToReceivePremiumRewards) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Footer(eligibleToReceivePremiumRewards) {
   let first;
   let intl;
   let intl2;
@@ -64,7 +64,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((eligibleToRece
   let loading;
   let obj2;
   let onPress;
-  let tmp17;
+  let tmp16;
   let tmp7;
   let tmp8;
   let obj = react2;
@@ -112,242 +112,178 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((eligibleToRece
     }
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
+    class M {
       constructor() {
         const obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet();
-        const openURL = LinkingDefault.openURL;
-        LinkingDefault;
-        const obj2 = HelpdeskUtilsDefault;
-        openURL(obj2.getArticleURL(constants.VIRTUAL_CURRENCY_ORB_MULTIPLIER_LEARN_MORE));
       }
     }
-    cResult[2] = tmp9;
-    tmp8 = tmp9;
+    cResult[2] = M;
+    tmp8 = M;
   } else {
-    class R {
+    class M {
       constructor() {
         const obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet();
-        const openURL = LinkingDefault.openURL;
-        LinkingDefault;
-        const obj2 = HelpdeskUtilsDefault;
-        openURL(obj2.getArticleURL(constants.VIRTUAL_CURRENCY_ORB_MULTIPLIER_LEARN_MORE));
       }
     }
   }
   if (eligibleToReceivePremiumRewards) {
-    let tmp21;
-    let tmp23;
-    let tmp25;
-    class R {
+    let tmp20;
+    let tmp22;
+    let tmp24;
+    class M {
       constructor() {
         const obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet();
-        const openURL = LinkingDefault.openURL;
-        LinkingDefault;
-        const obj2 = HelpdeskUtilsDefault;
-        openURL(obj2.getArticleURL(constants.VIRTUAL_CURRENCY_ORB_MULTIPLIER_LEARN_MORE));
       }
     }
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      class R {
+      class M {
         constructor() {
           const obj = ActionSheetActionCreatorsDefault;
           obj.hideActionSheet();
-          const openURL = LinkingDefault.openURL;
-          LinkingDefault;
-          const obj2 = HelpdeskUtilsDefault;
-          openURL(obj2.getArticleURL(constants.VIRTUAL_CURRENCY_ORB_MULTIPLIER_LEARN_MORE));
         }
       }
       let obj3 = { size: "lg", text: intl2.string(intl6.t.hvVgAZ), variant: "primary", onPress: tmp7 };
-      const Button2 = tmp(5601).Button;
+      const Button2 = tmp(5375).Button;
       intl2 = tmp(1126).intl;
-      const tmp22 = metroImportAll(Button2, obj3);
-      cResult[3] = tmp22;
-      tmp21 = tmp22;
+      const tmp21 = metroImportAll(Button2, obj3);
+      cResult[3] = tmp21;
+      tmp20 = tmp21;
     } else {
-      class R {
+      class M {
         constructor() {
           const obj = ActionSheetActionCreatorsDefault;
           obj.hideActionSheet();
-          const openURL = LinkingDefault.openURL;
-          LinkingDefault;
-          const obj2 = HelpdeskUtilsDefault;
-          openURL(obj2.getArticleURL(constants.VIRTUAL_CURRENCY_ORB_MULTIPLIER_LEARN_MORE));
         }
       }
     }
     const _Symbol2 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      class R {
+      class M {
         constructor() {
           const obj = ActionSheetActionCreatorsDefault;
           obj.hideActionSheet();
-          const openURL = LinkingDefault.openURL;
-          LinkingDefault;
-          const obj2 = HelpdeskUtilsDefault;
-          openURL(obj2.getArticleURL(constants.VIRTUAL_CURRENCY_ORB_MULTIPLIER_LEARN_MORE));
         }
       }
       const obj4 = { size: "lg", variant: "secondary", text: intl3.string(intl6.t.cpT0Cq), onPress: tmp8 };
-      const Button3 = tmp(5601).Button;
+      const Button3 = tmp(5375).Button;
       intl3 = tmp(1126).intl;
-      const tmp24 = metroImportAll(Button3, obj4);
-      cResult[4] = tmp24;
-      tmp23 = tmp24;
+      const tmp23 = metroImportAll(Button3, obj4);
+      cResult[4] = tmp23;
+      tmp22 = tmp23;
     } else {
-      class R {
+      class M {
         constructor() {
           const obj = ActionSheetActionCreatorsDefault;
           obj.hideActionSheet();
-          const openURL = LinkingDefault.openURL;
-          LinkingDefault;
-          const obj2 = HelpdeskUtilsDefault;
-          openURL(obj2.getArticleURL(constants.VIRTUAL_CURRENCY_ORB_MULTIPLIER_LEARN_MORE));
         }
       }
     }
     if (cResult[5] !== tmp4.buttonContainer) {
-      class R {
+      class M {
         constructor() {
           const obj = ActionSheetActionCreatorsDefault;
           obj.hideActionSheet();
-          const openURL = LinkingDefault.openURL;
-          LinkingDefault;
-          const obj2 = HelpdeskUtilsDefault;
-          openURL(obj2.getArticleURL(constants.VIRTUAL_CURRENCY_ORB_MULTIPLIER_LEARN_MORE));
         }
       }
       const obj5 = { style: tmp4.buttonContainer, children: items };
-      items = [tmp21, tmp23];
-      const tmp27 = React4(View, obj5);
+      items = [tmp20, tmp22];
+      const tmp26 = React4(View, obj5);
       cResult[5] = tmp4.buttonContainer;
-      cResult[6] = tmp27;
-      tmp25 = tmp27;
+      cResult[6] = tmp26;
+      tmp24 = tmp26;
     } else {
-      class R {
+      class M {
         constructor() {
           const obj = ActionSheetActionCreatorsDefault;
           obj.hideActionSheet();
-          const openURL = LinkingDefault.openURL;
-          LinkingDefault;
-          const obj2 = HelpdeskUtilsDefault;
-          openURL(obj2.getArticleURL(constants.VIRTUAL_CURRENCY_ORB_MULTIPLIER_LEARN_MORE));
         }
       }
     }
-    return tmp25;
+    return tmp24;
   } else {
-    let tmp10;
-    class R {
+    let tmp9;
+    class M {
       constructor() {
         const obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet();
-        const openURL = LinkingDefault.openURL;
-        LinkingDefault;
-        const obj2 = HelpdeskUtilsDefault;
-        openURL(obj2.getArticleURL(constants.VIRTUAL_CURRENCY_ORB_MULTIPLIER_LEARN_MORE));
       }
     }
     const buttonContainer = tmp4.buttonContainer;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      class R {
+      class M {
         constructor() {
           const obj = ActionSheetActionCreatorsDefault;
           obj.hideActionSheet();
-          const openURL = LinkingDefault.openURL;
-          LinkingDefault;
-          const obj2 = HelpdeskUtilsDefault;
-          openURL(obj2.getArticleURL(constants.VIRTUAL_CURRENCY_ORB_MULTIPLIER_LEARN_MORE));
         }
       }
       const stringResult = obj2.string(intl6.t.pj0XBN);
       cResult[7] = stringResult;
-      tmp10 = stringResult;
+      tmp9 = stringResult;
     } else {
-      class R {
+      class M {
         constructor() {
           const obj = ActionSheetActionCreatorsDefault;
           obj.hideActionSheet();
-          const openURL = LinkingDefault.openURL;
-          LinkingDefault;
-          const obj2 = HelpdeskUtilsDefault;
-          openURL(obj2.getArticleURL(constants.VIRTUAL_CURRENCY_ORB_MULTIPLIER_LEARN_MORE));
         }
       }
     }
     if (cResult[8] === onPress) {
-      let tmp15;
-      class R {
+      let tmp14;
+      class M {
         constructor() {
           const obj = ActionSheetActionCreatorsDefault;
           obj.hideActionSheet();
-          const openURL = LinkingDefault.openURL;
-          LinkingDefault;
-          const obj2 = HelpdeskUtilsDefault;
-          openURL(obj2.getArticleURL(constants.VIRTUAL_CURRENCY_ORB_MULTIPLIER_LEARN_MORE));
         }
       }
       const _Symbol = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        class R {
+        class M {
           constructor() {
             const obj = ActionSheetActionCreatorsDefault;
             obj.hideActionSheet();
-            const openURL = LinkingDefault.openURL;
-            LinkingDefault;
-            const obj2 = HelpdeskUtilsDefault;
-            openURL(obj2.getArticleURL(constants.VIRTUAL_CURRENCY_ORB_MULTIPLIER_LEARN_MORE));
           }
         }
         const obj6 = { size: "lg", variant: "secondary", text: intl.string(intl6.t.PcTCB7), onPress: first };
-        const Button = tmp(5601).Button;
+        const Button = tmp(5375).Button;
         intl = tmp(1126).intl;
-        const tmp16 = metroImportAll(Button, obj6);
-        cResult[11] = tmp16;
-        tmp15 = tmp16;
+        const tmp15 = metroImportAll(Button, obj6);
+        cResult[11] = tmp15;
+        tmp14 = tmp15;
       } else {
-        class R {
+        class M {
           constructor() {
             const obj = ActionSheetActionCreatorsDefault;
             obj.hideActionSheet();
-            const openURL = LinkingDefault.openURL;
-            LinkingDefault;
-            const obj2 = HelpdeskUtilsDefault;
-            openURL(obj2.getArticleURL(constants.VIRTUAL_CURRENCY_ORB_MULTIPLIER_LEARN_MORE));
           }
         }
       }
       if (cResult[12] === tmp4.buttonContainer) {
-        class R {
+        class M {
           constructor() {
             const obj = ActionSheetActionCreatorsDefault;
             obj.hideActionSheet();
-            const openURL = LinkingDefault.openURL;
-            LinkingDefault;
-            const obj2 = HelpdeskUtilsDefault;
-            openURL(obj2.getArticleURL(constants.VIRTUAL_CURRENCY_ORB_MULTIPLIER_LEARN_MORE));
           }
         }
-        return tmp17;
+        return tmp16;
       }
       const obj7 = { style: buttonContainer, children: items1 };
-      items1 = [tmp12, tmp15];
-      const tmp20 = React4(View, obj7);
+      items1 = [tmp11, tmp14];
+      const tmp19 = React4(View, obj7);
       cResult[12] = tmp4.buttonContainer;
-      cResult[13] = tmp12;
-      cResult[14] = tmp20;
-      tmp17 = tmp20;
+      cResult[13] = tmp11;
+      cResult[14] = tmp19;
+      tmp16 = tmp19;
     }
-    const obj8 = { size: "lg", variant: "primary", text: tmp10, onPress, loading };
+    const obj8 = { size: "lg", variant: "primary", text: tmp9, onPress, loading };
     cResult[8] = onPress;
     cResult[9] = loading;
     cResult[10] = metroImportAll(components_Button_Button.Button, obj8);
-    const tmp14 = metroImportAll(components_Button_Button.Button, obj8);
+    const tmp13 = metroImportAll(components_Button_Button.Button, obj8);
   }
-}) : ((eligibleToReceivePremiumRewards) => {
+}) : (function Footer(eligibleToReceivePremiumRewards) {
   let intl;
   let intl2;
   let intl3;
@@ -387,7 +323,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((eligibleToRece
     intl3 = tmp10(1126).intl;
     const items = [metroImportAll(Button, obj2), ];
     let obj3 = { size: "lg", variant: "secondary", text: intl4.string(intl6.t.cpT0Cq), onPress: callback2 };
-    const Button3 = tmp10(5601).Button;
+    const Button3 = tmp10(5375).Button;
     intl4 = tmp10(1126).intl;
     items[1] = metroImportAll(Button3, obj3);
     obj.children = items;
@@ -397,7 +333,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((eligibleToRece
     intl = tmp10(1126).intl;
     const items1 = [metroImportAll(Button, obj4), ];
     const obj5 = { size: "lg", variant: "secondary", text: intl2.string(intl6.t.PcTCB7), onPress: callback };
-    const Button2 = tmp10(5601).Button;
+    const Button2 = tmp10(5375).Button;
     intl2 = tmp10(1126).intl;
     items1[1] = metroImportAll(Button2, obj5);
     obj.children = items1;
@@ -406,7 +342,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((eligibleToRece
   return tmp7(tmp8, tmp11);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetContent(arg0) {
   let body;
   let eligibleToReceivePremiumRewards;
   let first;
@@ -554,7 +490,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = tmp9;
   cResult[5] = items3;
   tmp10 = items3;
-}) : ((arg0) => {
+}) : (function SheetContent(arg0) {
   let body;
   let eligibleToReceivePremiumRewards;
   let items;
@@ -588,7 +524,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return React4(authStore, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestOrbMultiplierPerkInfoActionSheet(arg0) {
   let multiplier;
   let obj6;
   let orbMultiplierEligibility;
@@ -624,7 +560,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const intl = tmp(1126).intl;
-      const stringResult1 = intl.string(_modDef3559.c5usUr);
+      const stringResult1 = intl.string(_modDef3633.c5usUr);
       cResult[2] = stringResult1;
       tmp8 = stringResult1;
     } else {
@@ -662,7 +598,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else if (cResult[4] !== multiplier) {
     const intl3 = tmp(1126).intl;
     const obj4 = { bonusOrbMultiplier: multiplier };
-    const formatResult2 = intl3.format(_modDef3559.UkrcSH, obj4);
+    const formatResult2 = intl3.format(_modDef3633.UkrcSH, obj4);
     cResult[4] = multiplier;
     cResult[5] = formatResult2;
     tmp14 = formatResult2;
@@ -683,7 +619,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp23;
       }
       const obj5 = { scrollable: false, handleDisabled: true, startExpanded: true, contentStyles, children: metroImportAll(PremiumRewardGradientDefault, obj6) };
-      BottomSheet = tmp(6652).BottomSheet;
+      BottomSheet = tmp(6829).BottomSheet;
       obj6 = { visible: tmp6, children: tmp21 };
       const tmp27 = metroImportAll(BottomSheet, obj5);
       cResult[14] = tmp6;
@@ -698,24 +634,24 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[12] = tmp8;
   cResult[13] = tmp22;
   tmp21 = tmp22;
-}) : ((multiplier) => {
+}) : (function QuestOrbMultiplierPerkInfoActionSheet(multiplier) {
   let c2;
   let obj3;
   let tmp7;
   multiplier = multiplier.multiplier;
   const orbMultiplierEligibility = multiplier.orbMultiplierEligibility;
   const tmp = multiplier;
-  let obj = multiplier(10021);
+  let obj = multiplier(9552);
   const result = obj.shouldReceiveQuestOrbMultiplier(orbMultiplierEligibility);
   dependencyMap = result;
   const items = [orbMultiplierEligibility];
   const items1 = [result, orbMultiplierEligibility, multiplier];
-  const tmp4 = orbMultiplierEligibility === multiplier(10021).QuestOrbMultiplierEligibilityType.NITRO || orbMultiplierEligibility === tmp(10021).QuestOrbMultiplierEligibilityType.UPSELL;
+  const tmp4 = orbMultiplierEligibility === multiplier(9552).QuestOrbMultiplierEligibilityType.NITRO || orbMultiplierEligibility === tmp(9552).QuestOrbMultiplierEligibilityType.UPSELL;
   const memo = react.useMemo(() => {
     let stringResult;
     if (orbMultiplierEligibility === QuestOrbMultiplierUtils.QuestOrbMultiplierEligibilityType.XBOX_GAME_PASS) {
       const intl2 = tmp(1126).intl;
-      stringResult = intl2.string(_modDef3559.c5usUr);
+      stringResult = intl2.string(_modDef3633.c5usUr);
     } else {
       const intl = tmp(1126).intl;
       stringResult = intl.string(tmp(1126).t.Csf5Ol);
@@ -727,7 +663,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (orbMultiplierEligibility === QuestOrbMultiplierUtils.QuestOrbMultiplierEligibilityType.XBOX_GAME_PASS) {
       const intl2 = tmp(1126).intl;
       const obj2 = { bonusOrbMultiplier: multiplier };
-      formatResult = intl2.format(_modDef3559.UkrcSH, obj2);
+      formatResult = intl2.format(_modDef3633.UkrcSH, obj2);
     } else {
       const intl = tmp(1126).intl;
       const format = intl.format;
@@ -743,9 +679,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return formatResult;
   }, items1);
   let obj2 = { scrollable: false, handleDisabled: true, startExpanded: true, contentStyles, children: closure_8(tmp7, obj3) };
-  BottomSheet = tmp(6652).BottomSheet;
+  BottomSheet = tmp(6829).BottomSheet;
   obj3 = { visible: tmp4, children: closure_8(closure_14, { title: memo, body: memo1, eligibleToReceivePremiumRewards: result }) };
-  tmp7 = orbMultiplierEligibility(14981);
+  tmp7 = orbMultiplierEligibility(15243);
   return closure_8(BottomSheet, obj2);
 });
 let result = size.fileFinishedImporting("modules/quests/native/QuestOrbMultiplierPerkInfoActionSheet.tsx");

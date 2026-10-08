@@ -1,21 +1,23 @@
-// Module ID: 15540
-// Function ID: 15541
+// Module ID: 15802
+// Function ID: 15803
 // Name: CheckpointStore
 // Dependencies: [504, 584, 2]
 
-// Module 15540 (CheckpointStore)
+// Module 15802 (CheckpointStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 let obj = { INIT: 0, [0]: "INIT", FETCHING: 1, [1]: "FETCHING", SUCCESS: 2, [2]: "SUCCESS", ERROR: 3, [3]: "ERROR" };
 const obj2 = { isMuted: false };
+let closure_2 = {};
 const obj3 = {};
 let merged = Object.assign(obj2);
 obj = obj3;
-let c3 = null;
 let c4 = null;
+let c5 = null;
 let INIT = obj.INIT;
+let c7 = null;
 const PersistedStore = get_initializedDefault.PersistedStore;
 class CheckpointStore extends PersistedStore {
   getState() {
@@ -38,19 +40,32 @@ Object.defineProperty(prototype, "isMuted", {
 });
 Object.defineProperty(prototype, "stats", {
   get: function stats() {
-    return c3;
+    return c4;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "character", {
   get: function character() {
-    return c4;
+    return c5;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "fetchState", {
   get: function fetchState() {
     return INIT;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "selectedCharacterTraits", {
+  get: function selectedCharacterTraits() {
+    let tmp = c7;
+    if (c7 == null) {
+      tmp = c5;
+    }
+    if (tmp == null) {
+      tmp = closure_2;
+    }
+    return tmp;
   },
   set: undefined
 });
@@ -64,7 +79,7 @@ const obj4 = {
     INIT = obj.FETCHING;
   },
   CHECKPOINT_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
-    ({ stats: c3, character: c4 } = arg0);
+    ({ stats: c4, character: c5 } = arg0);
     INIT = obj.SUCCESS;
   },
   CHECKPOINT_FETCH_FAILED: function handleFetchFailed() {
@@ -72,16 +87,35 @@ const obj4 = {
   },
   CHECKPOINT_COMPLETE_SUCCESS: function handleCompleteSuccess(character) {
     character = character.character;
+    c7 = null;
   },
   CHECKPOINT_RESET_SUCCESS: function handleResetSuccess() {
-    c4 = null;
+    c5 = null;
+    c7 = null;
+  },
+  CHECKPOINT_SELECT_CHARACTER_TRAIT: function handleSelectCharacterTrait(trait) {
+    let tmp = c7;
+    if (c7 == null) {
+      tmp = c5;
+    }
+    if (tmp == null) {
+      tmp = closure_2;
+    }
+    obj = {};
+    const merged = Object.assign(tmp);
+    obj[trait.trait] = trait.optionId;
+    c7 = obj;
+  },
+  CHECKPOINT_RESET_EDITED_CHARACTER: function handleResetEditedCharacter() {
+    c7 = null;
   },
   LOGOUT: function handleLogout() {
     obj = {};
     const merged = Object.assign(obj2);
-    c3 = null;
     c4 = null;
+    c5 = null;
     INIT = obj.INIT;
+    c7 = null;
   }
 };
 const checkpointStore = new CheckpointStore(DispatcherDefault, obj4);

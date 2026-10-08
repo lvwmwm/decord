@@ -1,12 +1,12 @@
-// Module ID: 15351
-// Function ID: 15352
+// Module ID: 15613
+// Function ID: 15614
 // Name: UpcomingServerEventExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1452, 558, 576, 2]
 // Exports: isEligibleForUpcomingServerEventNotifications
 
-// Module 15351 (UpcomingServerEventExperiment)
+// Module 15613 (UpcomingServerEventExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let obj = { kind: "user", name: "2026-04-upcoming-server-event", defaultConfig: 
 obj2 = { 1: null, 2: { showSettingsToggle: true }, 3: { showSettingsToggle: true } };
 obj2[3] = { showSettingsToggle: true };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUpcomingServerEventExperiment(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -28,7 +28,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return apexExperiment.useConfig(tmp2);
-}) : ((location) => {
+}) : (function useUpcomingServerEventExperiment(location) {
   const obj = { location };
   return apexExperiment.useConfig(obj);
 });

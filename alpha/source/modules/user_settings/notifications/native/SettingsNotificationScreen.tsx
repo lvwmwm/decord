@@ -1,25 +1,25 @@
-// Module ID: 15319
-// Function ID: 15320
+// Module ID: 15581
+// Function ID: 15582
 // Name: SettingsNotificationScreen
-// Dependencies: [19, 17, 15320, 7645, 21, 4896, 587, 558, 576, 6477, 12069, 15321, 15322, 4892, 1126, 6002, 4806, 11142, 15323, 15324, 14515, 2]
+// Dependencies: [19, 17, 15582, 7966, 21, 5090, 587, 558, 576, 6655, 12142, 15583, 15584, 5086, 1126, 6186, 5000, 11262, 15585, 15586, 14775, 2]
 
-// Module 15319 (SettingsNotificationScreen)
+// Module 15581 (SettingsNotificationScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6477 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12069 */;
-import SettingLayoutDefault from "SettingLayout" /* 14515 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15320 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 15321 */;
-import SettingsNotificationUtils from "SettingsNotificationUtils" /* 15322 */;
-import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 15323 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6655 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12142 */;
+import SettingLayoutDefault from "SettingLayout" /* 14775 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15582 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 15583 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 15584 */;
+import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 15585 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -129,7 +129,7 @@ let obj = { card: obj2, cardContent: { flexDirection: "row", alignItems: "center
 obj2 = { marginBottom: 8, borderColor: nativeDefault.unsafe_rawColors.YELLOW_300, borderWidth: 1, borderRadius: nativeDefault.radii.lg };
 let closure_10 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function SystemNotificationsSubLabel() {
   let Card;
   let Text2;
   let first;
@@ -169,7 +169,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[2] !== manaTypeConsolidationExperiment) {
     if (tmp13Result) {
       let str = "text-sm/medium";
-      const Text = tmp(4892).Text;
+      const Text = tmp(5086).Text;
       const tmp13 = metroImportDefault;
       if (manaTypeConsolidationExperiment) {
         str = "experimental/body-xs/normal";
@@ -211,13 +211,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj8 = { style: tmp4.card, children: metroImportDefault(Card, obj9) };
     obj9 = { border: "none", shadow: "none", children: metroImportAll(View, obj10) };
     obj10 = { style: tmp4.cardContent, children: items1 };
-    Card = tmp(6002).Card;
+    Card = tmp(6186).Card;
     const obj11 = { color: nativeDefault.unsafe_rawColors.YELLOW_300 };
-    const CircleErrorIcon = tmp(4806).CircleErrorIcon;
+    const CircleErrorIcon = tmp(5000).CircleErrorIcon;
     items1 = [metroImportDefault(CircleErrorIcon, obj11), ];
     const obj12 = { style: tmp4.text, children: metroImportDefault(Text2, obj13) };
     obj13 = { color: "text-default", variant: "text-sm/medium", children: intl2.string(intl7.t.TAuasM) };
-    Text2 = tmp(4892).Text;
+    Text2 = tmp(5086).Text;
     intl2 = tmp(1126).intl;
     items1[1] = metroImportDefault(View, obj12);
     tmp15 = metroImportDefault(View, obj8);
@@ -227,7 +227,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[6] = tmp4;
   cResult[7] = tmp15;
   tmp14 = tmp15;
-}) : (() => {
+}) : (function SystemNotificationsSubLabel() {
   let Card;
   let Text2;
   let intl;
@@ -248,7 +248,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp9 = React4;
   if (result) {
     let str = "text-sm/medium";
-    const Text = tmp2(4892).Text;
+    const Text = tmp2(5086).Text;
     const tmp10 = metroImportDefault;
     if (manaTypeConsolidationExperiment) {
       str = "experimental/body-xs/normal";
@@ -265,13 +265,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj6 = { style: tmp.card, children: metroImportDefault(Card, obj7) };
     obj7 = { border: "none", shadow: "none", children: metroImportAll(View, obj8) };
     obj8 = { style: tmp.cardContent, children: items1 };
-    Card = tmp2(6002).Card;
+    Card = tmp2(6186).Card;
     const obj9 = { color: nativeDefault.unsafe_rawColors.YELLOW_300 };
-    const CircleErrorIcon = tmp2(4806).CircleErrorIcon;
+    const CircleErrorIcon = tmp2(5000).CircleErrorIcon;
     items1 = [metroImportDefault(CircleErrorIcon, obj9), ];
     const obj10 = { style: tmp.text, children: metroImportDefault(Text2, obj11) };
     obj11 = { color: "text-default", variant: "text-sm/medium", children: intl2.string(intl7.t.TAuasM) };
-    Text2 = tmp2(4892).Text;
+    Text2 = tmp2(5086).Text;
     intl2 = tmp2(1126).intl;
     items1[1] = metroImportDefault(View, obj10);
     showReactivationPrompt = metroImportDefault(View, obj6);
@@ -281,7 +281,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 const memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsNotificationsScreen() {
   let first;
   let tmp12;
   let tmp13;
@@ -303,11 +303,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const inHoldout = obj3.useConfig(first).inHoldout;
   if (cResult[1] !== !inHoldout) {
     const obj4 = { sections: getNotificationSettings(), ListHeaderComponent: tmp5Result };
-    const createList = tmp(11142).createList;
+    const createList = tmp(11262).createList;
     SettingBuilders;
     tmp5Result = undefined;
     if (!inHoldout) {
-      tmp5Result = tmp5(15323);
+      tmp5Result = tmp5(15585);
     }
     const list = createList(obj4);
     cResult[1] = !inHoldout;
@@ -340,7 +340,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const effect = react.useEffect(tmp12, tmp13);
   const obj5 = react;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
+    class T {
       constructor() {
         obj = closure_1_0(closure_1_2[19]);
         result = obj.prefetchFamilyCenterAgeGroup();
@@ -348,12 +348,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     const items1 = [];
-    cResult[5] = S;
+    cResult[5] = T;
     cResult[6] = items1;
     tmp16 = items1;
-    tmp15 = S;
+    tmp15 = T;
   } else {
-    class S {
+    class T {
       constructor() {
         obj = closure_1_0(closure_1_2[19]);
         result = obj.prefetchFamilyCenterAgeGroup();
@@ -364,7 +364,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const effect1 = obj5.useEffect(tmp15, tmp16);
   if (cResult[7] !== tmp7) {
-    class S {
+    class T {
       constructor() {
         obj = closure_1_0(closure_1_2[19]);
         result = obj.prefetchFamilyCenterAgeGroup();
@@ -377,7 +377,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[8] = tmp19;
     tmp18 = tmp19;
   } else {
-    class S {
+    class T {
       constructor() {
         obj = closure_1_0(closure_1_2[19]);
         result = obj.prefetchFamilyCenterAgeGroup();
@@ -386,7 +386,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   return tmp18;
-}) : (() => {
+}) : (function SettingsNotificationsScreen() {
   let obj = ContextualOptInNudgeHoldoutExperimentDefault;
   const tmp = !obj.useConfig({ location: "SettingsNotificationsScreen" }).inHoldout;
   let closure_0 = tmp;

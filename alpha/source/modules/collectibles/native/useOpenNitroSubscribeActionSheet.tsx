@@ -1,11 +1,11 @@
-// Module ID: 13003
-// Function ID: 13004
+// Module ID: 13281
+// Function ID: 13282
 // Name: useOpenNitroSubscribeActionSheet
-// Dependencies: [19, 1085, 1379, 558, 576, 6664, 6941, 2]
+// Dependencies: [19, 1085, 1391, 558, 576, 6841, 7130, 2]
 
-// Module 13003 (useOpenNitroSubscribeActionSheet)
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 6941 */;
+// Module 13281 (useOpenNitroSubscribeActionSheet)
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7130 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -15,7 +15,7 @@ let closure_4;
 let hasOwnProperty;
 ({ AnalyticsPages: closure_4, AnalyticsSections: hasOwnProperty } = Constants);
 const PremiumTypes = PremiumConstants.PremiumTypes;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenNitroSubscribeActionSheet(arg0) {
   let analyticsLocations;
   let COLLECTIBLES_SHOP = arg0;
   let obj = COLLECTIBLES_SHOP(576);
@@ -23,7 +23,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (undefined === arg0) {
     COLLECTIBLES_SHOP = constants2.COLLECTIBLES_SHOP;
   }
-  analyticsLocations = analyticsLocations(6664)().analyticsLocations;
+  analyticsLocations = analyticsLocations(6841)().analyticsLocations;
   if (cResult[0] === analyticsLocations) {
     let tmp4;
     if (cResult[1] === COLLECTIBLES_SHOP) {
@@ -41,13 +41,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = COLLECTIBLES_SHOP;
   cResult[2] = fn;
   tmp4 = fn;
-}) : (() => {
+}) : (function useOpenNitroSubscribeActionSheet() {
   let COLLECTIBLES_SHOP = arg0;
   if (arg0 === undefined) {
     COLLECTIBLES_SHOP = constants2.COLLECTIBLES_SHOP;
   }
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(6664)().analyticsLocations;
+  analyticsLocations = analyticsLocations(6841)().analyticsLocations;
   const items = [analyticsLocations, COLLECTIBLES_SHOP];
   return react.useCallback(() => {
     let obj2;

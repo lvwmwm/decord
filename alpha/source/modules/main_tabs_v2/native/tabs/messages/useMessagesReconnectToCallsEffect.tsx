@@ -1,22 +1,22 @@
-// Module ID: 16015
-// Function ID: 16016
+// Module ID: 16275
+// Function ID: 16276
 // Name: useMessagesReconnectToCallsEffect
-// Dependencies: [32, 19, 5443, 2051, 6733, 584, 558, 576, 2]
+// Dependencies: [32, 19, 5753, 2063, 6909, 584, 558, 576, 2]
 
-// Module 16015 (useMessagesReconnectToCallsEffect)
+// Module 16275 (useMessagesReconnectToCallsEffect)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5443 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6733 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5753 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6909 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let channel;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessagesReconnectToCallsEffect() {
   let sortedChannels;
   let tmp2;
   let tmp3;
@@ -70,7 +70,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     [tmp2, tmp3] = cResult;
   }
   const effect = react.useEffect(tmp2, tmp3);
-}) : (() => {
+}) : (function useMessagesReconnectToCallsEffect() {
   let sortedChannels;
   const effect = react.useEffect(() => {
     let isConnectedResult;

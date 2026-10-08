@@ -1,14 +1,14 @@
-// Module ID: 11297
-// Function ID: 11298
+// Module ID: 9634
+// Function ID: 9635
 // Name: canForwardMessage
-// Dependencies: [2104, 2051, 2074, 4515, 1085, 1390, 558, 576, 504, 2]
+// Dependencies: [2116, 2063, 2086, 4707, 1085, 1402, 558, 576, 504, 2]
 
-// Module 11297 (canForwardMessage)
-import FlagUtils from "FlagUtils" /* 1390 */;
-import GatedChannelStore from "GatedChannelStore" /* 2104 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+// Module 9634 (canForwardMessage)
+import FlagUtils from "FlagUtils" /* 1402 */;
+import GatedChannelStore from "GatedChannelStore" /* 2116 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -110,7 +110,7 @@ function canForwardMessage(state, PermissionStore, GatedChannelStore, ChannelSto
 }
 ({ GuildFeatures: metroRequire, MessageFlags, MessageStates: metroImportDefault, MessageTypesSets: metroImportAll, Permissions: c9 } = Constants);
 let closure_10 = MessageFlags.CROSSPOSTED | MessageFlags.FAILED_TO_MENTION_SOME_ROLES_IN_THREAD | MessageFlags.GUILD_FEED_HIDDEN | MessageFlags.HAS_SNAPSHOT | MessageFlags.HAS_THREAD | MessageFlags.IS_CROSSPOST | MessageFlags.IS_VOICE_MESSAGE | MessageFlags.SHOULD_SHOW_LINK_NOT_DISCORD_WARNING | MessageFlags.SUPPRESS_EMBEDS | MessageFlags.SUPPRESS_NOTIFICATIONS | MessageFlags.URGENT | MessageFlags.IS_COMPONENTS_V2 | MessageFlags.IS_GUILD_OFFICIAL | MessageFlags.IS_SCHEDULED;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanForwardMessage(arg0) {
   let closure_0;
   let first;
   let tmp9;
@@ -137,7 +137,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp9);
-}) : ((arg0) => {
+}) : (function useCanForwardMessage(arg0) {
   let closure_0;
   _require = arg0;
   const items = [PermissionStore, GatedChannelStore, ChannelStore, GuildStore];

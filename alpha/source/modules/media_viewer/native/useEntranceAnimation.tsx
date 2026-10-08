@@ -1,13 +1,13 @@
-// Module ID: 12804
-// Function ID: 12805
+// Module ID: 12951
+// Function ID: 12952
 // Name: useEntranceAnimation
-// Dependencies: [32, 19, 1188, 570, 1259, 558, 576, 4897, 4618, 2]
+// Dependencies: [32, 19, 1200, 570, 1271, 558, 576, 5091, 4810, 2]
 
-// Module 12804 (useEntranceAnimation)
-import native from "native" /* 1188 */;
-import react_native from "react-native" /* 1259 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
+// Module 12951 (useEntranceAnimation)
+import native from "native" /* 1200 */;
+import react_native from "react-native" /* 1271 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import module_570 from "module_570" /* 570 */;
@@ -29,7 +29,7 @@ let closure_7 = { code: "function useEntranceAnimationTsx1(){const{runOnJS,setUs
 const __initData = { code: "function useEntranceAnimationTsx2(){const{runOnJS,setUseEntranceAnimationState,incrementLoads}=this.__closure;runOnJS(setUseEntranceAnimationState)({isComplete:true});runOnJS(incrementLoads)();}" };
 let closure_9 = { code: "function useEntranceAnimationTsx3(){const{runOnJS,setUseEntranceAnimationState}=this.__closure;runOnJS(setUseEntranceAnimationState)({isComplete:true});}" };
 let closure_10 = { code: "function useEntranceAnimationTsx4(){const{runOnJS,setUseEntranceAnimationState,incrementLoads}=this.__closure;runOnJS(setUseEntranceAnimationState)({isComplete:true});runOnJS(incrementLoads)();}" };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEntranceAnimation(arg0) {
   let closure_0;
   let tmp3;
   let tmp5;
@@ -160,7 +160,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = tmp3;
   cResult[7] = tmp5;
   cResult[8] = obj2;
-}) : ((arg0) => {
+}) : (function useEntranceAnimation(arg0) {
   let tmp2;
   let closure_0 = arg0;
   let tmp = incrementLoads(react.useState(0), 2);

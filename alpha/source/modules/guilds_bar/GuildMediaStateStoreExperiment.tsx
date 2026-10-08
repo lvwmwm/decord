@@ -1,11 +1,11 @@
-// Module ID: 16313
-// Function ID: 16314
+// Module ID: 16573
+// Function ID: 16574
 // Name: GuildMediaStateStoreExperiment
-// Dependencies: [1441, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 
-// Module 16313 (GuildMediaStateStoreExperiment)
+// Module 16573 (GuildMediaStateStoreExperiment)
 import react from "react" /* 576 */;
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1441 */;
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ let obj = { HOOK: "hook", STORE: "store", SHADOW: "shadow" };
 let obj2 = { kind: "user", name: "2026-08-guilds-bar-media-state-store", defaultConfig: { source: obj.HOOK }, variations: obj3 };
 obj3 = { 0: { source: obj.HOOK }, 1: { source: obj.STORE }, 2: { source: obj.SHADOW } };
 let closure_2 = apex_ApexExperimentDefault(obj2);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildMediaStateSource(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -27,7 +27,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2).source;
-}) : ((location) => {
+}) : (function useGuildMediaStateSource(location) {
   const obj = { location };
   return closure_2.useConfig(obj).source;
 });

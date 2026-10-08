@@ -1,18 +1,18 @@
-// Module ID: 14868
-// Function ID: 14869
+// Module ID: 15130
+// Function ID: 15131
 // Name: BountiesScrollIndicatorOverlay
-// Dependencies: [32, 19, 17, 21, 4900, 4896, 587, 558, 576, 4618, 4897, 5612, 14869, 1126, 4892, 2]
+// Dependencies: [32, 19, 17, 21, 5094, 5090, 587, 558, 576, 4810, 5091, 5387, 15131, 1126, 5086, 2]
 
-// Module 14868 (BountiesScrollIndicatorOverlay)
+// Module 15130 (BountiesScrollIndicatorOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
-import timingPresets from "timingPresets" /* 4900 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
+import timingPresets from "timingPresets" /* 5094 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let closure_10 = createStyles.createStyles(() => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((enabled) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAnimationTiming(enabled) {
   let tmp12;
   let tmp8;
   let tmp9;
@@ -55,7 +55,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((enabled) => {
   if (cResult[0] !== enabled) {
     const fn = function o() {
       let timeout;
-      const f153284 = () => {
+      const f154814 = () => {
         importDefault(closure_0);
         closure_0 = !closure_0;
         let num = 5000;
@@ -63,13 +63,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((enabled) => {
         if (closure_0) {
           num = closure_2_9;
         }
-        enabled = _setTimeout(f153284, num);
+        enabled = _setTimeout(f154814, num);
       };
       const tmp = timeout;
       if (tmp) {
         let c0 = false;
         let _setTimeout = setTimeout;
-        timeout = setTimeout(f153284, closure_1_9);
+        timeout = setTimeout(f154814, closure_1_9);
         return () => clearTimeout(closure_0);
       }
     };
@@ -94,7 +94,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((enabled) => {
     tmp12 = cResult[4];
   }
   return tmp12;
-}) : ((enabled) => {
+}) : (function useAnimationTiming(enabled) {
   let first;
   let tmp3;
   let visible = enabled.enabled;
@@ -111,7 +111,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((enabled) => {
   const items = [visible];
   const effect = obj.useEffect(() => {
     let timeout;
-    const f153285 = () => {
+    const f154815 = () => {
       importDefault(closure_0);
       closure_0 = !closure_0;
       let num = 5000;
@@ -119,13 +119,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((enabled) => {
       if (closure_0) {
         num = closure_2_9;
       }
-      visible = _setTimeout(f153285, num);
+      visible = _setTimeout(f154815, num);
     };
     const tmp = timeout;
     if (tmp) {
       let c0 = false;
       let _setTimeout = setTimeout;
-      timeout = setTimeout(f153285, closure_1_9);
+      timeout = setTimeout(f154815, closure_1_9);
       return () => clearTimeout(closure_0);
     }
   }, items);
@@ -143,7 +143,7 @@ const __initData6 = { code: "function BountiesScrollIndicatorOverlayTsx6(){const
 const __initData7 = { code: "function BountiesScrollIndicatorOverlayTsx7(){const{withTiming,visible,isEndCardVisible,enabled,timingStandard,timingSlow}=this.__closure;return{opacity:withTiming(visible&&!isEndCardVisible?1:0,isEndCardVisible||!enabled?timingStandard:timingSlow)};}" };
 const __initData8 = { code: "function BountiesScrollIndicatorOverlayTsx8(){const{withTiming,visible,timingStandard}=this.__closure;return{transform:[{scale:withTiming(visible?1:0.9,timingStandard)}]};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((enabled) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesScrollIndicatorOverlay(enabled) {
   let closure_3;
   let items1;
   let items2;
@@ -182,7 +182,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((enabled) => {
     tmp8(false);
   };
   let tmpResult = tmp(tmp2[9]);
-  class A {
+  class H {
     constructor() {
       tmp = closure_0;
       tmp2 = closure_2;
@@ -207,11 +207,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((enabled) => {
       return obj;
     }
   }
-  A.__closure = { withTiming: tmp(visible[10]).withTiming, visible, enabled, timingSlow: tmp(visible[4]).timingSlow, timingStandard: tmp(visible[4]).timingStandard, runOnJS: tmp(visible[9]).runOnJS, animationCallbackJSThread };
-  A.__workletHash = 2517455700007;
-  A.__initData = __initData;
+  H.__closure = { withTiming: tmp(visible[10]).withTiming, visible, enabled, timingSlow: tmp(visible[4]).timingSlow, timingStandard: tmp(visible[4]).timingStandard, runOnJS: tmp(visible[9]).runOnJS, animationCallbackJSThread };
+  H.__workletHash = 2517455700007;
+  H.__initData = __initData;
   ({ withTiming: tmp(visible[10]).withTiming, visible, enabled, timingSlow: tmp(visible[4]).timingSlow, timingStandard: tmp(visible[4]).timingStandard, runOnJS: tmp(visible[9]).runOnJS, animationCallbackJSThread });
-  const animatedStyle = tmpResult.useAnimatedStyle(A);
+  const animatedStyle = tmpResult.useAnimatedStyle(H);
   const tmpResult3 = tmp(visible[9]);
   class F {
     constructor() {
@@ -229,12 +229,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((enabled) => {
         let timingStandard;
         const tmp6 = enabled;
         if (tmp6) {
-          timingStandard = tmp(4900).timingSlow;
+          timingStandard = tmp(5094).timingSlow;
         }
         const obj = { opacity: withTiming(num, timingStandard) };
         return obj;
       }
-      timingStandard = tmp(4900).timingStandard;
+      timingStandard = tmp(5094).timingStandard;
     }
   }
   F.__closure = { withTiming: tmp(visible[10]).withTiming, visible, isEndCardVisible, enabled, timingStandard: tmp(visible[4]).timingStandard, timingSlow: tmp(visible[4]).timingSlow };
@@ -251,7 +251,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((enabled) => {
       num = 1;
     }
     const obj = { transform: items };
-    items = [{ scale: withTiming(num, tmp(4900).timingStandard) }];
+    items = [{ scale: withTiming(num, tmp(5094).timingStandard) }];
     ({ scale: withTiming(num, timingPresets.timingStandard) });
     return obj;
   };
@@ -389,7 +389,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((enabled) => {
   cResult[3] = tmp4.scrollIndicator;
   cResult[4] = items5;
   tmp15 = items5;
-}) : ((enabled) => {
+}) : (function BountiesScrollIndicatorOverlay(enabled) {
   let closure_3;
   let first;
   let intl;
@@ -451,7 +451,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((enabled) => {
   ({ withTiming: enabled(visible[10]).withTiming, visible, enabled, timingSlow: enabled(visible[4]).timingSlow, timingStandard: enabled(visible[4]).timingStandard, runOnJS: enabled(visible[9]).runOnJS, animationCallbackJSThread });
   const animatedStyle = obj2.useAnimatedStyle(B);
   const obj4 = enabled(visible[9]);
-  class D {
+  class A {
     constructor() {
       let num = 0;
       const withTiming = timing.withTiming;
@@ -467,21 +467,21 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((enabled) => {
         let timingStandard;
         const tmp6 = enabled;
         if (tmp6) {
-          timingStandard = tmp(4900).timingSlow;
+          timingStandard = tmp(5094).timingSlow;
         }
         const obj = { opacity: withTiming(num, timingStandard) };
         return obj;
       }
-      timingStandard = tmp(4900).timingStandard;
+      timingStandard = tmp(5094).timingStandard;
     }
   }
-  D.__closure = { withTiming: enabled(visible[10]).withTiming, visible, isEndCardVisible, enabled, timingStandard: enabled(visible[4]).timingStandard, timingSlow: enabled(visible[4]).timingSlow };
-  D.__workletHash = 12078789622246;
-  D.__initData = __initData7;
+  A.__closure = { withTiming: enabled(visible[10]).withTiming, visible, isEndCardVisible, enabled, timingStandard: enabled(visible[4]).timingStandard, timingSlow: enabled(visible[4]).timingSlow };
+  A.__workletHash = 12078789622246;
+  A.__initData = __initData7;
   ({ withTiming: enabled(visible[10]).withTiming, visible, isEndCardVisible, enabled, timingStandard: enabled(visible[4]).timingStandard, timingSlow: enabled(visible[4]).timingSlow });
-  const animatedStyle1 = obj4.useAnimatedStyle(D);
+  const animatedStyle1 = obj4.useAnimatedStyle(A);
   const obj6 = enabled(visible[9]);
-  class H {
+  class D {
     constructor() {
       let items;
       let num = 0.9;
@@ -491,16 +491,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((enabled) => {
         num = 1;
       }
       const obj = { transform: items };
-      items = [{ scale: withTiming(num, tmp(4900).timingStandard) }];
+      items = [{ scale: withTiming(num, tmp(5094).timingStandard) }];
       ({ scale: withTiming(num, timingPresets.timingStandard) });
       return obj;
     }
   }
-  H.__closure = { withTiming: enabled(visible[10]).withTiming, visible, timingStandard: enabled(visible[4]).timingStandard };
-  H.__workletHash = 9473289168623;
-  H.__initData = __initData8;
+  D.__closure = { withTiming: enabled(visible[10]).withTiming, visible, timingStandard: enabled(visible[4]).timingStandard };
+  D.__workletHash = 9473289168623;
+  D.__initData = __initData8;
   ({ withTiming: enabled(visible[10]).withTiming, visible, timingStandard: enabled(visible[4]).timingStandard });
-  const animatedStyle2 = obj6.useAnimatedStyle(H);
+  const animatedStyle2 = obj6.useAnimatedStyle(D);
   const obj8 = { style: items, pointerEvents: "none", children: items2 };
   items = [tmp.scrollIndicator, opacityStyle];
   const View = isEndCardVisible(visible[9]).View;

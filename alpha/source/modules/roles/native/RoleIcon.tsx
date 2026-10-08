@@ -1,26 +1,25 @@
-// Module ID: 6711
-// Function ID: 6712
+// Module ID: 6888
+// Function ID: 6889
 // Name: RoleIcon
-// Dependencies: [19, 17, 21, 1369, 558, 576, 4892, 2]
+// Dependencies: [19, 21, 1381, 558, 576, 6164, 5086, 2]
 
-// Module 6711 (RoleIcon)
-import react_native from "react-native" /* 17 */;
+// Module 6888 (RoleIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
+import FastImageDefault from "FastImage" /* 6164 */;
 import react from "react" /* 19 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp;
-const Text_Text = tmp(4892);
-const Image = react_native.Image;
+const Text_Text = tmp(5086);
 const jsx = Fragment.jsx;
 let num = 0.9375;
 if (PlatformUtils.isAndroid()) {
   num = 0.8125;
 }
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIcon(arg0) {
   let src;
   let tmp4;
   let unicodeEmoji;
@@ -68,7 +67,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           tmp13 = tmp15;
         }
-        const tmp18 = <Image resizeMode="contain" source={tmp14} style={tmp7.roleIcon} />;
+        const tmp18 = jsx(FastImageDefault, { resizeMode: "contain", source: tmp14, style: tmp7.roleIcon });
         cResult[10] = tmp7.roleIcon;
         cResult[11] = tmp14;
         cResult[12] = tmp18;
@@ -110,12 +109,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[7] = obj5;
     tmp7 = obj5;
   }
-  const obj6 = { fontFamily: "System", fontSize: result, lineHeight: "unicodeVersion", textAlign: -102143, width: num, marginBottom: 1358954865 };
+  const obj6 = { fontFamily: "System", fontSize: result, lineHeight: "code", textAlign: "STORAGE_SECURE_KEYS", width: num, marginBottom: "buildSkippedNetworkRequestOrResponse" };
   cResult[2] = num;
   cResult[3] = result;
   cResult[4] = obj6;
   tmp6 = obj6;
-}) : ((arg0) => {
+}) : (function RoleIcon(arg0) {
   let src;
   let tmp;
   let unicodeEmoji;
@@ -124,10 +123,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     size = 20;
   }
   const size1 = { height: size, width: size };
-  const obj = { fontFamily: "System", fontSize: size * num, lineHeight: "unicodeVersion", textAlign: -102143, width: size, marginBottom: 1358954865 };
+  const obj = { fontFamily: "System", fontSize: size * num, lineHeight: "code", textAlign: "STORAGE_SECURE_KEYS", width: size, marginBottom: "buildSkippedNetworkRequestOrResponse" };
   if (null != src) {
-    tmp = <Image resizeMode="contain" source={{ uri: src }} style={size1} />;
     const obj3 = { uri: src };
+    tmp = jsx(FastImageDefault, { resizeMode: "contain", source: obj3, style: size1 });
   } else {
     tmp = null;
     if (null != unicodeEmoji) {

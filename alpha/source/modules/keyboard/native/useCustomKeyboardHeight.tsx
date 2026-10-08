@@ -1,17 +1,17 @@
-// Module ID: 6481
-// Function ID: 6482
+// Module ID: 6659
+// Function ID: 6660
 // Name: useCustomKeyboardHeight
-// Dependencies: [1487, 1488, 558, 576, 2]
+// Dependencies: [1499, 1500, 558, 576, 2]
 // Exports: getCustomKeyboardHeight
 
-// Module 6481 (useCustomKeyboardHeight)
+// Module 6659 (useCustomKeyboardHeight)
 import react from "react" /* 576 */;
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1487 */;
-import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1488 */;
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1499 */;
+import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1500 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCustomKeyboardHeight() {
   let tmp4;
   const obj = react;
   const cResult = obj.c(2);
@@ -28,7 +28,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = cResult[1];
   }
   return KeyboardUIStoreDefault(tmp4);
-}) : (() => {
+}) : (function useCustomKeyboardHeight() {
   const obj = AppEntryKeyContext;
   let closure_0 = obj.useAppEntryKey();
   return KeyboardUIStoreDefault((arg0) => arg0.byAppEntry[closure_0].customKeyboardHeight);

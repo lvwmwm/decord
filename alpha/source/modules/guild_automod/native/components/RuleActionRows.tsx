@@ -1,28 +1,28 @@
-// Module ID: 17751
-// Function ID: 17752
+// Module ID: 18038
+// Function ID: 18039
 // Name: RuleActionRows
-// Dependencies: [19, 2051, 4513, 11487, 21, 4896, 587, 17728, 12117, 1126, 4860, 17752, 1987, 17753, 558, 576, 17731, 6000, 4892, 5600, 5998, 17725, 6081, 2]
+// Dependencies: [19, 2063, 4705, 11473, 21, 5090, 587, 18015, 12195, 1126, 5054, 18039, 1999, 18040, 558, 576, 18018, 6184, 5086, 5373, 6182, 18012, 6267, 2]
 
-// Module 17751 (RuleActionRows)
+// Module 18038 (RuleActionRows)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import GuildChannelStore from "GuildChannelStore" /* 4513 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import FormCheckbox from "FormCheckbox" /* 5998 */;
-import TableRow2 from "TableRow" /* 6000 */;
-import Constants from "Constants" /* 11487 */;
-import AutomodActionUtils from "AutomodActionUtils" /* 17728 */;
-import getActionInfo from "getActionInfo" /* 17731 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import GuildChannelStore from "GuildChannelStore" /* 4705 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import FormCheckbox from "FormCheckbox" /* 6182 */;
+import TableRow2 from "TableRow" /* 6184 */;
+import Constants from "Constants" /* 11473 */;
+import AutomodActionUtils from "AutomodActionUtils" /* 18015 */;
+import getActionInfo from "getActionInfo" /* 18018 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let onPress, set;
+let set;
 
 let metroImportDefault;
 let metroRequire;
@@ -34,7 +34,7 @@ function openAlertChannelPicker(rule) {
   const onChangeRule = rule.onChangeRule;
   const actions = rule.actions;
   let tmp2 = dependencyMap;
-  const found = actions.find(rule(17728).isActionFlagToChannel);
+  const found = actions.find(rule(18015).isActionFlagToChannel);
   let channelId;
   if (found != null) {
     channelId = found.metadata.channelId;
@@ -71,7 +71,7 @@ function openAlertChannelPicker(rule) {
     }
   };
   channel = null;
-  const tmp5 = onChangeRule(12117);
+  const tmp5 = onChangeRule(12195);
   if (null != channelId) {
     channel = ChannelStore.getChannel(channelId);
   }
@@ -88,7 +88,7 @@ let obj = { subLabel: obj2 };
 obj2 = { marginTop: nativeDefault.space.PX_4 };
 let closure_8 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function RuleActionRow(onPress) {
   let actionType;
   let items;
   let items1;
@@ -128,7 +128,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
           if (tmp15) {
             const obj3 = { variant: "text-xs/medium", color: "text-subtle", children: items };
             items = [" ", tmp6.helperText];
-            tmp15 = metroImportDefault(tmp(4892).Text, obj3);
+            tmp15 = metroImportDefault(tmp(5086).Text, obj3);
           }
           cResult[9] = tmp6.helperText;
           cResult[10] = tmp15;
@@ -212,7 +212,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
             tmp32 = tmp34;
           }
           const obj7 = { spacing: nativeDefault.space.PX_4, style: tmp4.subLabel, children: tmp17 };
-          const Stack = tmp(5600).Stack;
+          const Stack = tmp(5373).Stack;
           const tmp23 = metroRequire(Stack, obj7);
           cResult[14] = tmp4.subLabel;
           cResult[15] = tmp17;
@@ -250,7 +250,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   cResult[4] = actionInfo;
   tmp6 = actionInfo;
   tmp5 = found;
-}) : ((onPress) => {
+}) : (function RuleActionRow(onPress) {
   let Stack;
   let Text;
   let actionType;
@@ -274,17 +274,17 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     let Yl1D84;
     const icon = actionInfo.icon;
     const obj2 = { icon: metroRequire(TableRow2.TableRow.Icon, obj3), label: actionInfo.headerText, subLabel: metroRequire(Stack, obj4), trailing: metroRequire(FormCheckbox.FormCheckbox, obj7), accessibilityValue: obj8, disabled: !actionInfo.isEditable, onPress, arrow: true };
-    const TableRow = tmp3(6000).TableRow;
+    const TableRow = tmp3(6184).TableRow;
     obj3 = { IconComponent: icon };
     obj4 = { spacing: nativeDefault.space.PX_4, style: tmp.subLabel, children: metroImportDefault(Text, obj6) };
-    Stack = tmp3(5600).Stack;
+    Stack = tmp3(5373).Stack;
     const items = [actionInfo.descriptionText, ];
     let tmp9Result = null != actionInfo.helperText;
-    Text = tmp3(4892).Text;
+    Text = tmp3(5086).Text;
     if (tmp9Result) {
       const obj5 = { variant: "text-xs/medium", color: "text-subtle", children: items1 };
       items1 = [" ", actionInfo.helperText];
-      tmp9Result = tmp9(tmp3(4892).Text, obj5);
+      tmp9Result = tmp9(tmp3(5086).Text, obj5);
     }
     obj6 = { variant: "text-xs/medium", color: "text-subtle", children: items };
     items[1] = tmp9Result;
@@ -301,7 +301,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RuleActionRows(rule) {
   let closure_2;
   const tmp = rule;
   let obj = rule(576);
@@ -355,7 +355,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
     }
     const _Symbol = Symbol;
     const forResult = Symbol.for("react.early_return_sentinel");
-    const tmpResult = tmp(17725);
+    const tmpResult = tmp(18012);
     const availableActionTypes = tmpResult.getAvailableActionTypes(rule.triggerType);
     let tmp12 = null;
     let mapped;
@@ -365,7 +365,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
     if (0 !== availableActionTypes.length) {
       let tmp16;
       const _Symbol3 = Symbol;
-      const TableRowGroup = tmp(6081).TableRowGroup;
+      const TableRowGroup = tmp(6267).TableRowGroup;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
         const intl = tmp(1126).intl;
         const stringResult = intl.string(tmp(1126).t["18TOiQ"]);
@@ -405,7 +405,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
     tmp6 = tmp14;
     tmp5 = tmp15;
   }
-  const fn = function t(arg0) {
+  function handlePressAction(arg0) {
     let actions;
     let actions2;
     if (AutomodActionType.FLAG_TO_CHANNEL === arg0) {
@@ -439,7 +439,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
       };
       ({ triggerType: obj2.triggerType, actions: actions2 } = rule);
       ActionSheetActionCreatorsDefault;
-      const tmp16 = asyncRequire(17753, dependencyMap.paths);
+      const tmp16 = asyncRequire(18040, dependencyMap.paths);
       openLazy2(tmp16, "AutomodBlockMessage", obj5);
     } else if (AutomodActionType.USER_COMMUNICATION_DISABLED === arg0) {
       closure_0 = rule;
@@ -462,23 +462,23 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
       };
       ({ triggerType: obj.triggerType, actions } = rule);
       ActionSheetActionCreatorsDefault;
-      const tmp8 = asyncRequire(17752, dependencyMap.paths);
+      const tmp8 = asyncRequire(18039, dependencyMap.paths);
       openLazy(tmp8, "AutomodTimeoutDuration", obj);
     } else {
       const QUARANTINE_USER = tmp.QUARANTINE_USER;
     }
-  };
+  }
   cResult[0] = onChangeRule;
   cResult[1] = rule;
-  cResult[2] = fn;
-  tmp4 = fn;
-}) : ((rule) => {
+  cResult[2] = handlePressAction;
+  tmp4 = handlePressAction;
+}) : (function RuleActionRows(rule) {
   let intl;
   rule = rule.rule;
   const onChangeRule = rule.onChangeRule;
   let tmp = rule;
   let tmp2 = dependencyMap;
-  let obj = rule(17725);
+  let obj = rule(18012);
   const availableActionTypes = obj.getAvailableActionTypes(rule.triggerType);
   let tmp3 = null;
   if (0 !== availableActionTypes.length) {
@@ -528,7 +528,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
                 };
                 ({ triggerType: obj2.triggerType, actions: actions2 } = rule);
                 ActionSheetActionCreatorsDefault;
-                const tmp17 = asyncRequire(17753, dependencyMap.paths);
+                const tmp17 = asyncRequire(18040, dependencyMap.paths);
                 openLazy2(tmp17, "AutomodBlockMessage", obj5);
               } else if (tmp2.USER_COMMUNICATION_DISABLED === tmp) {
                 let tmp3 = rule;
@@ -553,7 +553,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
                 };
                 ({ triggerType: obj.triggerType, actions } = rule);
                 ActionSheetActionCreatorsDefault;
-                const tmp9 = asyncRequire(17752, dependencyMap.paths);
+                const tmp9 = asyncRequire(18039, dependencyMap.paths);
                 openLazy(tmp9, "AutomodTimeoutDuration", obj);
               } else {
                 const QUARANTINE_USER = tmp2.QUARANTINE_USER;
@@ -563,7 +563,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
           return closure_1_6(closure_1_10, obj, actionType);
         })
     };
-    const TableRowGroup = tmp(6081).TableRowGroup;
+    const TableRowGroup = tmp(6267).TableRowGroup;
     intl = tmp(1126).intl;
     tmp3 = closure_6(TableRowGroup, obj2);
   }

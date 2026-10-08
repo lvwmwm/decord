@@ -1,39 +1,102 @@
 // Module ID: 14189
 // Function ID: 14190
-// Dependencies: []
-// Exports: getReactNativeVersionWithModules
+// Dependencies: [14152, 14181, 14172, 14177, 14173, 14176, 14183, 14180]
 
 // Module 14189
+import _mod14180 from "module_14180" /* 14180 */;
 
-export const getReactNativeVersionWithModules = function getReactNativeVersionWithModules(constants) {
-  try {
-    const tmp = constants;
-    if (tmp) {
-      if (constants.reactNativeVersion) {
-        const major = constants.reactNativeVersion.major;
-        const minor = constants.reactNativeVersion.minor;
-        const patch = constants.reactNativeVersion.patch;
-        const prerelease = constants.reactNativeVersion.prerelease;
-        if (typeof major !== "number") {
-          return null;
-        } else {
-          const items = [];
-          const _HermesInternal2 = HermesInternal;
-          items.push("" + tmp4 + "." + minor + "." + patch);
-          const tmp16 = prerelease;
-          if (tmp16) {
-            const _HermesInternal = HermesInternal;
-            items.push("-" + prerelease);
-          }
-          return items.join("");
-        }
-      } else {
-        return null;
-      }
+const require = globalThis.__r;
+let _require, closure_1, dependencyMap;
+
+
+export default function(arg0, arg1, arg2, arg3) {
+  let closure_0;
+  let obj;
+  let str;
+  let str3;
+  let tmpResult;
+  let tmpResult4;
+  _require = arg3;
+  let tmp = _require;
+  let tmp2 = dependencyMap;
+  const tmp3 = new require("module_14152")(arg0, arg3);
+  let tmp4 = new require("module_14181")(arg1, arg3);
+  if (">" === arg2) {
+    dependencyMap = tmp(14172);
+    tmpResult = tmp(14177);
+    const tmpResult3 = tmp(14173);
+    let closure_2 = tmpResult3;
+    str3 = ">=";
+    str = ">";
+    tmpResult4 = tmpResult3;
+  } else {
+    str = "<";
+    if ("<" === arg2) {
+      dependencyMap = tmp(14173);
+      tmpResult = tmp(14176);
+      tmpResult4 = tmp(14172);
+      closure_2 = tmpResult4;
+      str3 = "<=";
     } else {
-      return null;
+      const _TypeError = TypeError;
+      let self = this;
+      let self2 = this;
+      const typeError = new TypeError("Must provide a hilo val of \"<\" or \">\"");
+      throw typeError;
     }
-  } catch (err) {
-    return null;
+  }
+  if (tmp(14183)(tmp3, tmp4, arg3)) {
+    return false;
+  } else {
+    let num = 0;
+    let num3 = 0;
+    if (0 < tmp4.set.length) {
+      while (true) {
+        let arr = tmp4.set[num3];
+        _require = null;
+        dependencyMap = null;
+        let item = arr.forEach(function(semver) {
+          let tmp = semver;
+          if (semver.semver === _mod14180.ANY) {
+            const self = this;
+            const self2 = this;
+            tmp = new _mod14180(">=0.0.0");
+          }
+          semver = semver || tmp;
+          closure_1 = closure_1 || tmp;
+          const tmp4 = semver;
+          if (closure_1(tmp.semver, semver.semver, semver)) {
+            semver = tmp;
+          } else if (closure_2(tmp.semver, closure_1.semver, tmp4)) {
+            closure_1 = tmp;
+          }
+        });
+        if (_require.operator !== str) {
+          if (_require.operator !== str3) {
+            if (!dependencyMap.operator) {
+              if (tmpResult(tmp3, dependencyMap.semver)) {
+                obj = { v: false };
+              }
+            }
+            let obj2;
+            if (dependencyMap.operator === str3) {
+              if (tmpResult4(tmp3, dependencyMap.semver)) {
+                obj2 = { v: false };
+              }
+            }
+            obj = obj2;
+          }
+          if (obj) {
+            break;
+          } else {
+            num3 = num + 1;
+            num = num3;
+          }
+        }
+        obj = { v: false };
+      }
+      return obj.v;
+    }
+    return true;
   }
 };

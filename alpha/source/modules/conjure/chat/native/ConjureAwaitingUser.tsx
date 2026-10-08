@@ -1,16 +1,17 @@
-// Module ID: 16750
-// Function ID: 16751
+// Module ID: 17025
+// Function ID: 17026
 // Name: chat/ConjureAwaitingUser
-// Dependencies: [19, 4885, 21, 587, 4896, 558, 576, 504, 4618, 4897, 2]
+// Dependencies: [19, 5079, 21, 587, 5090, 16948, 558, 576, 504, 4810, 5091, 2]
 
-// Module 16750 (chat/ConjureAwaitingUser)
+// Module 17025 (chat/ConjureAwaitingUser)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
+import ConjureNativeCardSurface from "ConjureNativeCardSurface" /* 16948 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import createStyles from "createStyles" /* 4896 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,11 +21,11 @@ let rect;
 const jsx = Fragment.jsx;
 const PX_4 = nativeDefault.space.PX_4;
 let obj = { ring: rect };
-rect = { position: "absolute", top: -PX_4, right: -PX_4, bottom: -PX_4, left: -PX_4, borderWidth: PX_4, borderColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: nativeDefault.radii.md };
+rect = { position: "absolute", top: -PX_4, right: -PX_4, bottom: -PX_4, left: -PX_4, borderWidth: PX_4, borderColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: ConjureNativeCardSurface.CONJURE_NATIVE_CARD_RADIUS + PX_4 };
 let closure_6 = createStyles.createStyles(obj);
 const __initData = { code: "function ConjureAwaitingUserTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
 const __initData2 = { code: "function ConjureAwaitingUserTsx2(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAwaitingPulseRing() {
   let stateFromStores;
   let tmp5;
   let tmp6;
@@ -47,7 +48,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = tmp(504);
   stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmpResult3 = tmp(4618);
+  const tmpResult3 = tmp(4810);
   const sharedValue = tmpResult3.useSharedValue(0);
   if (cResult[2] === sharedValue) {
     let tmp10;
@@ -57,16 +58,18 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       tmp11 = cResult[5];
     }
     const effect = react.useEffect(tmp10, tmp11);
-    const fn3 = function w() {
-      const obj = { opacity: sharedValue.get() };
-      return obj;
-    };
+    const tmpResult4 = tmp(4810);
+    class R {
+      constructor() {
+        const obj = { opacity: sharedValue.get() };
+        return obj;
+      }
+    }
     let obj2 = { opacity: sharedValue };
-    fn3.__closure = obj2;
-    fn3.__workletHash = 8512415125100;
-    fn3.__initData = __initData;
-    const tmpResult4 = tmp(4618);
-    const animatedStyle = tmpResult4.useAnimatedStyle(fn3);
+    R.__closure = obj2;
+    R.__workletHash = 8512415125100;
+    R.__initData = __initData;
+    const animatedStyle = tmpResult4.useAnimatedStyle(R);
     if (cResult[6] === animatedStyle) {
       let tmp16;
       if (cResult[7] === tmp4.ring) {
@@ -75,7 +78,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       return tmp16;
     }
     const items1 = [tmp4.ring, animatedStyle];
-    const tmp19 = jsx(sharedValue(4618).View, { pointerEvents: "none", style: items1 });
+    const tmp19 = jsx(sharedValue(4810).View, { pointerEvents: "none", style: items1 });
     cResult[6] = animatedStyle;
     cResult[7] = tmp4.ring;
     cResult[8] = tmp19;
@@ -99,7 +102,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       Easing = ReanimatedRexport.Easing;
       const result1 = set(withRepeat(withTiming(0.35, obj), -1, true));
       fn = () => {
-        const obj = stateFromStores(dependencyMap[8]);
+        const obj = stateFromStores(dependencyMap[9]);
         return obj.cancelAnimation(sharedValue);
       };
     }
@@ -112,14 +115,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[5] = items2;
   tmp11 = items2;
   tmp10 = fn2;
-}) : (() => {
+}) : (function ConjureAwaitingPulseRing() {
   let stateFromStores;
   let useReducedMotion;
   let tmp = closure_6();
   let obj = stateFromStores(504);
   const items = [AccessibilityStore];
   stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let obj2 = stateFromStores(4618);
+  let obj2 = stateFromStores(4810);
   const sharedValue = obj2.useSharedValue(0);
   const items1 = [sharedValue, stateFromStores];
   const effect = react.useEffect(() => {
@@ -140,7 +143,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       Easing = ReanimatedRexport.Easing;
       const result1 = set(withRepeat(withTiming(0.35, obj), -1, true));
       fn = () => {
-        const obj = stateFromStores(dependencyMap[8]);
+        const obj = stateFromStores(dependencyMap[9]);
         return obj.cancelAnimation(sharedValue);
       };
     }
@@ -153,10 +156,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 4491518532559;
   fn.__initData = __initData2;
-  const obj3 = stateFromStores(4618);
+  const obj3 = stateFromStores(4810);
   const animatedStyle = obj3.useAnimatedStyle(fn);
   const items2 = [tmp.ring, animatedStyle];
-  return jsx(sharedValue(4618).View, { pointerEvents: "none", style: items2 });
+  return jsx(sharedValue(4810).View, { pointerEvents: "none", style: items2 });
 });
 let result = size.fileFinishedImporting("modules/conjure/chat/native/ConjureAwaitingUser.tsx");
 

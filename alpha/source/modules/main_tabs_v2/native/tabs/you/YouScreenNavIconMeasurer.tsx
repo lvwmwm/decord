@@ -1,14 +1,14 @@
-// Module ID: 16987
-// Function ID: 16988
+// Module ID: 17268
+// Function ID: 17269
 // Name: YouScreenNavIconMeasurer
-// Dependencies: [32, 19, 17, 21, 587, 6947, 558, 576, 2]
+// Dependencies: [32, 19, 17, 21, 587, 7136, 558, 576, 2]
 
-// Module 16987 (YouScreenNavIconMeasurer)
+// Module 17268 (YouScreenNavIconMeasurer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ContextUtilsDefault from "ContextUtils" /* 6947 */;
+import ContextUtilsDefault from "ContextUtils" /* 7136 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -26,7 +26,7 @@ const PX_4 = nativeDefault.space.PX_4;
 [metroImportDefault, metroImportAll] = ContextUtilsDefault();
 _slicedToArray(ContextUtilsDefault(), 2);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(children) {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreenNavIconMeasurer(children) {
   let first;
   let ref;
   let tmp10;
@@ -157,7 +157,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(children) 
   cResult[4] = children;
   cResult[5] = tmp8;
   cResult[6] = tmp10;
-}) : ((children) => {
+}) : (function YouScreenNavIconMeasurer(children) {
   let closure_2;
   let width;
   width = undefined;
@@ -187,7 +187,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(children) 
   return <redux.Provider value={onWidthMeasured.useMemo(() => ({ width, onWidthMeasured }), items)}>{children}</redux.Provider>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouScreenNavIconMeasurement() {
   const obj = react2;
   const cResult = obj.c(6);
   const tmp2 = metroImportAll();
@@ -221,7 +221,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return tmp11;
   }
-  const fn = function n() {
+  const fn = function t() {
     const current = ref.current;
     if (null != current) {
       current.measureLayout(current, (arg0, arg1, arg2) => {
@@ -238,7 +238,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = items;
   tmp8 = items;
   tmp7 = fn;
-}) : (() => {
+}) : (function useYouScreenNavIconMeasurement() {
   let closure_3;
   let first;
   let tmp7;

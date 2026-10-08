@@ -1,33 +1,33 @@
-// Module ID: 15675
-// Function ID: 15676
+// Module ID: 15955
+// Function ID: 15956
 // Name: UserSettingsDesignSystemContextMenu
-// Dependencies: [109, 19, 17, 21, 12457, 6596, 7636, 4817, 4856, 15676, 15677, 11194, 4896, 587, 12, 558, 576, 5601, 7590, 4892, 6002, 2]
+// Dependencies: [109, 19, 17, 21, 12553, 6772, 7957, 5011, 5050, 15956, 15957, 11311, 5090, 587, 12, 558, 576, 5375, 9297, 5086, 6186, 2]
 
-// Module 15675 (UserSettingsDesignSystemContextMenu)
+// Module 15955 (UserSettingsDesignSystemContextMenu)
 import _mod12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4817 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 4856 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import Card_Card from "Card/Card" /* 6002 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 6596 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 7636 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11194 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 12457 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 15676 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 15677 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5011 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 5050 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import Card_Card from "Card/Card" /* 6186 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 6772 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 7957 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11311 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 12553 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 15956 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 15957 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let dependencyMap, label;
+let dependencyMap;
 
 let hasOwnProperty;
 let metroImportAll;
@@ -43,7 +43,7 @@ let obj = { container: { flexDirection: "column", gap: 12, padding: 16 }, card: 
 obj2 = { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginVertical: 12 };
 let closure_11 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((label) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoContextMenu(label) {
   let align;
   let alignButton;
   let count;
@@ -193,7 +193,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((label) => {
   cResult[14] = undefined !== triggerOnLongPress && triggerOnLongPress;
   cResult[15] = closure_7(tmp(num[18]).ContextMenu, { triggerOnLongPress: undefined !== triggerOnLongPress && triggerOnLongPress, items: tmp5, align, title: "Sample title", children: tmp15 });
   closure_7(tmp(num[18]).ContextMenu, { triggerOnLongPress: undefined !== triggerOnLongPress && triggerOnLongPress, items: tmp5, align, title: "Sample title", children: tmp15 });
-}) : ((align) => {
+}) : (function DemoContextMenu(align) {
   let obj2;
   let require;
   let text;
@@ -295,7 +295,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((label) => {
   return closure_7(closure_5, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsDesignSystemAlertModal() {
   let items1;
   let items2;
   let items3;
@@ -622,7 +622,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[23] = tmp46;
   cResult[24] = tmp57;
   tmp56 = tmp57;
-}) : (() => {
+}) : (function UserSettingsDesignSystemAlertModal() {
   let items1;
   let items2;
   let items3;

@@ -1,27 +1,27 @@
-// Module ID: 16184
-// Function ID: 16185
+// Module ID: 16444
+// Function ID: 16445
 // Name: ChannelBadge
-// Dependencies: [19, 17, 2116, 21, 4896, 558, 576, 573, 16185, 11938, 1888, 4892, 2]
+// Dependencies: [19, 17, 2128, 21, 5090, 558, 576, 573, 16445, 12011, 1900, 5086, 2]
 
-// Module 16184 (ChannelBadge)
+// Module 16444 (ChannelBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
-import NumberUtils from "NumberUtils" /* 1888 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import NewBadgeDefault from "NewBadge" /* 11938 */;
-import MentionsBadgeDefault from "MentionsBadge" /* 16185 */;
+import NumberUtils from "NumberUtils" /* 1900 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import NewBadgeDefault from "NewBadge" /* 12011 */;
+import MentionsBadgeDefault from "MentionsBadge" /* 16445 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
-import createStyles from "createStyles" /* 4896 */;
+import LocaleStore from "LocaleStore" /* 2128 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles(() => ({ channelInfoContainer: { paddingStart: 4 } }));
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((isNewChannel) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelBadge(isNewChannel) {
   let isMentionLowImportance;
   let locale;
   let mentionCount;
@@ -139,7 +139,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((isNewChannel) => {
     }
     return null;
   }
-}) : ((arg0) => {
+}) : (function ChannelBadge(arg0) {
   let isMentionLowImportance;
   let isNewChannel;
   let locale;
@@ -172,7 +172,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((isNewChannel) => {
           tmp5 = null;
           if (postsWithUnreadsCount > 0) {
             ({ variant: "text-xs/semibold", color: "text-muted", children: tmp2Result.humanizeValue(postsWithUnreadsCount, stateFromStores) });
-            const Text = tmp2(4892).Text;
+            const Text = tmp2(5086).Text;
             tmp5 = <View style={tmp.channelInfoContainer}>{null}</View>;
             tmp2Result = NumberUtils;
           }

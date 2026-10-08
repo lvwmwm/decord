@@ -1,16 +1,16 @@
-// Module ID: 6449
-// Function ID: 6450
+// Module ID: 6627
+// Function ID: 6628
 // Name: useLoginReset
-// Dependencies: [19, 502, 558, 576, 6089, 2]
+// Dependencies: [19, 502, 558, 576, 5936, 2]
 
-// Module 6449 (useLoginReset)
+// Module 6627 (useLoginReset)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoginReset() {
   let tmp2;
   let tmp3;
   let obj = react2;
@@ -34,7 +34,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     [tmp2, tmp3] = cResult;
   }
   const effect = react.useEffect(tmp2, tmp3);
-}) : (() => {
+}) : (function useLoginReset() {
   const effect = react.useEffect(() => {
     let authenticated;
     return () => {

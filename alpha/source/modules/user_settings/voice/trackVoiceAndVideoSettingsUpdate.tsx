@@ -1,12 +1,12 @@
-// Module ID: 8084
-// Function ID: 8085
+// Module ID: 5223
+// Function ID: 5224
 // Name: trackVoiceAndVideoSettingsUpdate
-// Dependencies: [1085, 1252, 2]
+// Dependencies: [1085, 1264, 2]
 // Exports: default
 
-// Module 8084 (trackVoiceAndVideoSettingsUpdate)
+// Module 5223 (trackVoiceAndVideoSettingsUpdate)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

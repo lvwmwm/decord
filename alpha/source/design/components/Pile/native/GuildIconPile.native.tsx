@@ -1,14 +1,14 @@
-// Module ID: 12299
-// Function ID: 12300
+// Module ID: 12397
+// Function ID: 12398
 // Name: GuildIconPile
-// Dependencies: [19, 21, 558, 576, 5978, 12300, 10753, 10752, 8502, 2]
+// Dependencies: [19, 21, 558, 576, 6161, 12398, 11618, 11617, 8986, 2]
 
-// Module 12299 (GuildIconPile)
+// Module 12397 (GuildIconPile)
 import react2 from "react" /* 576 */;
-import GuildIcon from "GuildIcon" /* 5978 */;
-import ClipView from "ClipView" /* 8502 */;
-import Pile2 from "Pile" /* 10752 */;
-import ListUtils from "ListUtils" /* 12300 */;
+import GuildIcon from "GuildIcon" /* 6161 */;
+import ClipView from "ClipView" /* 8986 */;
+import Pile2 from "Pile" /* 11617 */;
+import ListUtils from "ListUtils" /* 12398 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -17,9 +17,9 @@ import size_mod from "module_2" /* 2 */;
 let c3;
 let closure_4;
 let tmp2;
-const PileOverflow = tmp2(10753);
+const PileOverflow = tmp2(11618);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((size) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildIconPile(size) {
   let children;
   let items;
   let names;
@@ -60,7 +60,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((size) => {
           }
         }
         const obj2 = { "aria-label": tmp6, shape: ClipView.CutoutShape.RoundedRect, size: tmp5, gap: num3, depthX: 0.25, children: items };
-        const Pile = tmp(10752).Pile;
+        const Pile = tmp(11617).Pile;
         items = [children, tmp8];
         const tmp14 = React3(Pile, obj2);
         cResult[7] = children;
@@ -75,7 +75,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((size) => {
     let tmp10 = null != totalCount && countResult < totalCount;
     if (tmp10) {
       const obj3 = { size: tmp5, borderRadius: tmp5 / 3, value: totalCount - countResult };
-      tmp10 = _false(tmp(10753).PileOverflow, obj3);
+      tmp10 = _false(tmp(11618).PileOverflow, obj3);
     }
     cResult[3] = countResult;
     cResult[4] = tmp5;
@@ -89,7 +89,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((size) => {
   cResult[1] = totalCount;
   cResult[2] = listSummaryLabel;
   tmp6 = listSummaryLabel;
-}) : ((arg0) => {
+}) : (function GuildIconPile(arg0) {
   let children;
   let items;
   let names;

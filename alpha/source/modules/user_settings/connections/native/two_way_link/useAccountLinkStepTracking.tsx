@@ -1,11 +1,11 @@
-// Module ID: 8795
-// Function ID: 8796
+// Module ID: 9164
+// Function ID: 9165
 // Name: useAccountLinkStepTracking
-// Dependencies: [19, 1085, 1252, 558, 576, 2]
+// Dependencies: [19, 1085, 1264, 558, 576, 2]
 
-// Module 8795 (useAccountLinkStepTracking)
+// Module 9164 (useAccountLinkStepTracking)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 const AnalyticEvents = Constants.AnalyticEvents;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, location_stack) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccountLinkStepTracking(arg0, location_stack) {
   let closure_0;
   let ref;
   _require = arg0;
@@ -81,7 +81,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, location_stack
   cResult[1] = arg0;
   cResult[2] = fn;
   tmp2 = fn;
-}) : ((arg0, location_stack) => {
+}) : (function useAccountLinkStepTracking(arg0, location_stack) {
   let closure_0 = arg0;
   const ref = react.useRef(null);
   let items = [location_stack, arg0];

@@ -1,45 +1,44 @@
-// Module ID: 18015
-// Function ID: 18016
+// Module ID: 18302
+// Function ID: 18303
 // Name: GuildSettingsRoleSubscriptionTierEdit
-// Dependencies: [32, 19, 17, 4508, 17972, 15038, 1085, 2048, 21, 4896, 587, 558, 576, 1490, 17990, 17978, 6766, 9490, 4892, 1188, 18016, 5601, 6626, 18010, 18008, 17984, 15045, 17967, 11866, 1126, 18017, 15060, 4573, 6017, 6890, 9317, 2036, 18018, 1987, 10367, 10368, 9318, 2]
+// Dependencies: [32, 19, 17, 4700, 18259, 15300, 1085, 2060, 21, 5090, 587, 558, 576, 1502, 18277, 18265, 6942, 8654, 5086, 1200, 18303, 5375, 6803, 18297, 18295, 18271, 15307, 18254, 11938, 1126, 18304, 15322, 4765, 6203, 7079, 8505, 2048, 18305, 1999, 9964, 9965, 8752, 2]
 // Exports: default
 
-// Module 18015 (GuildSettingsRoleSubscriptionTierEdit)
-import react2 from "react" /* 19 */;
-import react3 from "react" /* 576 */;
+// Module 18302 (GuildSettingsRoleSubscriptionTierEdit)
+import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1188 */;
-import useNavigation from "useNavigation" /* 1490 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4508 */;
-import ToastUtils from "ToastUtils" /* 4573 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6626 */;
-import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 6766 */;
-import FormHeaderDefault from "FormHeader" /* 9490 */;
-import ErrorBlockDefault from "ErrorBlock" /* 11866 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15038 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15045 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 17967 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 17978 */;
-import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 17984 */;
-import EditStateContextProvider2 from "EditStateContextProvider" /* 17990 */;
-import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 18008 */;
-import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 18010 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18016 */;
-import ActionableNoticeDefault from "ActionableNotice" /* 18017 */;
+import native from "native" /* 1200 */;
+import useNavigation from "useNavigation" /* 1502 */;
+import dismissible_content from "dismissible_content" /* 2048 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4700 */;
+import ToastUtils from "ToastUtils" /* 4765 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6803 */;
+import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 6942 */;
+import FormHeaderDefault from "FormHeader" /* 8654 */;
+import ErrorBlockDefault from "ErrorBlock" /* 11938 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15300 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15307 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18254 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18265 */;
+import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 18271 */;
+import EditStateContextProvider2 from "EditStateContextProvider" /* 18277 */;
+import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 18295 */;
+import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 18297 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18303 */;
+import ActionableNoticeDefault from "ActionableNotice" /* 18304 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 17972 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18259 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const react = react2;
 const GuildRoleSubscriptionsStore = GuildRoleSubscriptionsStore2;
 let navigation;
 
@@ -52,9 +51,8 @@ let obj2;
 let obj3;
 let tmp;
 const intl4 = tmp(1126);
-const DismissibleActionSheet = tmp(10368);
+const DismissibleActionSheet = tmp(9965);
 let _slicedToArray = _slicedToArray_mod;
-const forwardRef = react2.forwardRef;
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
 const FetchState = GuildRoleSubscriptionsStore2.FetchState;
 const GuildRoleSubscriptionsTierScenes = GuildRoleSubscriptionsConstants.GuildRoleSubscriptionsTierScenes;
@@ -74,7 +72,7 @@ let closure_19 = items.reduce((acc, item, index) => {
   return acc;
 }, {});
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ArchiveOrDeleteTierSection() {
   let archiving;
   let buttonText;
   let deleting;
@@ -82,7 +80,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let editStateId;
   let groupListingId;
   let handleArchiveOrDelete;
-  const obj = react3;
+  const obj = react2;
   const cResult = obj.c(18);
   const tmp4 = closure_17();
   const obj2 = useNavigation;
@@ -109,7 +107,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
         const obj5 = { size: native.Icon.Sizes.SMALL, disableColor: true, source: AssetRegistryDefault };
-        const Icon = tmp(1188).Icon;
+        const Icon = tmp(1200).Icon;
         const tmp17 = authStore2(Icon, obj5);
         cResult[6] = tmp17;
         tmp15 = tmp17;
@@ -145,7 +143,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
             const obj6 = { children: items };
             items = [tmp9, tmp11, tmp22];
-            const tmp29 = authStore3(closure_15, obj6);
+            const tmp29 = authStore4(authStore3, obj6);
             cResult[14] = tmp9;
             cResult[15] = tmp11;
             cResult[16] = tmp22;
@@ -181,7 +179,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = tmp4.actionHeader;
   cResult[2] = tmp10;
   tmp9 = tmp10;
-}) : (() => {
+}) : (function ArchiveOrDeleteTierSection() {
   let Button;
   let Icon;
   let archiving;
@@ -216,8 +214,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj8 = { size: native.Icon.Sizes.SMALL, disableColor: true, source: AssetRegistryDefault };
   Icon = native.Icon;
   tmp9 = !allowSelfRemoveMonetization;
-  const tmp5 = authStore3;
-  const tmp6 = closure_15;
+  const tmp5 = authStore4;
+  const tmp6 = authStore3;
   const tmp8 = metroRequire;
   if (allowSelfRemoveMonetization) {
     tmp9 = deleting;
@@ -230,8 +228,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return tmp5(tmp6, obj9);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(selectedTab) {
-  const obj = react3;
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function TabContent(selectedTab) {
+  const obj = react2;
   const cResult = obj.c(7);
   selectedTab = selectedTab.selectedTab;
   const tmp4 = closure_17();
@@ -241,9 +239,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(select
     const _Symbol3 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { bottom: true, children: items };
-      const SafeAreaPaddingView2 = tmp(6626).SafeAreaPaddingView;
+      const SafeAreaPaddingView2 = tmp(6803).SafeAreaPaddingView;
       items = [authStore2(GuildRoleSubscriptionTierDetailsModal.GuildRoleSubscriptionTierDetailsTab, {}), authStore2(closure_20, {})];
-      const tmp26 = authStore3(SafeAreaPaddingView2, obj2);
+      const tmp26 = authStore4(SafeAreaPaddingView2, obj2);
       cResult[0] = tmp26;
       first = tmp26;
     } else {
@@ -265,7 +263,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(select
     const _Symbol2 = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { bottom: true, children: authStore2(GuildRoleSubscriptionTierDesignModal.GuildRoleSubscriptionTierDesignTab, {}) };
-      const SafeAreaPaddingView = tmp(6626).SafeAreaPaddingView;
+      const SafeAreaPaddingView = tmp(6803).SafeAreaPaddingView;
       const tmp16 = authStore2(SafeAreaPaddingView, obj4);
       cResult[3] = tmp16;
       tmp14 = tmp16;
@@ -301,7 +299,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(select
     const error = new Error("Unsupported scene: " + selectedTab);
     throw error;
   }
-}) : (function(selectedTab) {
+}) : (function TabContent(selectedTab) {
   let SafeAreaPaddingView;
   let SafeAreaPaddingView2;
   let obj3;
@@ -309,7 +307,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(select
   selectedTab = selectedTab.selectedTab;
   const tmp = closure_17();
   if (GuildRoleSubscriptionsTierScenes.DETAILS === selectedTab) {
-    const obj2 = { style: tmp.tabContent, children: authStore3(SafeAreaPaddingView2, obj3) };
+    const obj2 = { style: tmp.tabContent, children: authStore4(SafeAreaPaddingView2, obj3) };
     obj3 = { bottom: true, children: items };
     SafeAreaPaddingView2 = common_SafeAreaView.SafeAreaPaddingView;
     items = [authStore2(GuildRoleSubscriptionTierDetailsModal.GuildRoleSubscriptionTierDetailsTab, {}), authStore2(closure_20, {})];
@@ -331,15 +329,16 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(select
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_22 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function DraftPublishPrompt(ref) {
   let error;
   let publishSubscriptionListing;
   let submitting;
   let tmp8;
   const tmp = require;
   const tmp2 = dependencyMap;
-  let obj = react3;
+  let obj = react2;
   const cResult = obj.c(21);
+  ref = ref.ref;
   const obj2 = EditStateContextProvider2;
   const editStateContext = obj2.useEditStateContext();
   const guildId = editStateContext.guildId;
@@ -354,7 +353,7 @@ let closure_22 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
   const obj5 = RoleSubscriptionSettingsDisabledContext;
   const roleSubscriptionSettingsDisabled = obj5.useRoleSubscriptionSettingsDisabled();
   if (cResult[0] !== clearError) {
-    const fn = function o() {
+    const fn = function s() {
       return { dismissError: clearError };
     };
     cResult[0] = clearError;
@@ -417,7 +416,7 @@ let closure_22 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
                 if (cResult[13] !== tmp25) {
                   const obj7 = { children: items };
                   items = [tmp20, tmp25, tmp29];
-                  const tmp35 = authStore3(closure_15, obj7);
+                  const tmp35 = authStore4(authStore3, obj7);
                   cResult[13] = tmp25;
                   cResult[14] = tmp35;
                   tmp32 = tmp35;
@@ -461,88 +460,93 @@ let closure_22 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
             }
           }
         }
-        const fn2 = function l() {
+        function handlePublish() {
           if (null != groupListingId) {
             if (null != subscriptionListing) {
               const obj = { guildId, groupListingId: tmp, listingId: tmp2.id };
               return publishSubscriptionListing(obj);
             }
           }
-        };
+        }
         cResult[2] = groupListingId;
         cResult[3] = guildId;
         cResult[4] = subscriptionListing;
         cResult[5] = publishSubscriptionListing;
-        cResult[6] = fn2;
-        tmp10 = fn2;
+        cResult[6] = handlePublish;
+        tmp10 = handlePublish;
       }
     }
   }
   return null;
-}) : ((arg0, ref) => {
-  let closure_129_0;
-  let closure_129_2;
-  let closure_129_3;
+}) : (function DraftPublishPrompt(ref) {
+  let c0;
+  let c2;
+  let c3;
   let error;
   let groupListingId;
   let intl;
   let intl2;
   let submitting;
-  const tmp = require;
-  const tmp2 = dependencyMap;
+  ref = ref.ref;
+  const merged = Object.assign(ref, Object.assign({ ref: 0 }));
+  c0 = undefined;
+  groupListingId = undefined;
+  c2 = undefined;
+  c3 = undefined;
+  const tmp2 = require;
   let obj = EditStateContextProvider2;
   const editStateContext = obj.useEditStateContext();
-  ({ guildId: closure_129_0, groupListingId } = editStateContext);
+  ({ guildId: c0, groupListingId } = editStateContext);
   const editStateId = editStateContext.editStateId;
   const obj2 = GuildRoleSubscriptionsHooks;
   const publishSubscriptionListing = obj2.usePublishSubscriptionListing();
-  ({ error, publishSubscriptionListing: closure_129_2, clearError: closure_129_3, submitting } = publishSubscriptionListing);
+  ({ error, publishSubscriptionListing: c2, clearError: c3, submitting } = publishSubscriptionListing);
   const obj3 = GuildRoleSubscriptionsHooks;
   const subscriptionListing = obj3.useSubscriptionListing(editStateId);
   const obj4 = RoleSubscriptionSettingsDisabledContext;
   const roleSubscriptionSettingsDisabled = obj4.useRoleSubscriptionSettingsDisabled();
   const imperativeHandle = react.useImperativeHandle(ref, () => ({ dismissError }));
-  let tmp8 = null;
+  let tmp9 = null;
   if (null != groupListingId) {
-    tmp8 = null;
+    tmp9 = null;
     if (null != subscriptionListing) {
-      tmp8 = null;
+      tmp9 = null;
       if (!subscriptionListing.published) {
-        let tmp14;
+        let tmp15;
         if (null != error) {
           const obj5 = { children: items };
           items = [authStore2(native.Spacer, { size: 16 }), , ];
           const obj6 = { children: error.getAnyErrorMessage() };
-          const tmp13 = ErrorBlockDefault;
-          items[1] = authStore2(tmp13, obj6);
+          const tmp14 = ErrorBlockDefault;
+          items[1] = authStore2(tmp14, obj6);
           items[2] = authStore2(native.Spacer, { size: 16 });
-          tmp14 = authStore3(closure_15, obj5);
+          tmp15 = authStore4(authStore3, obj5);
         } else {
           const obj7 = {
             message: intl.string(intl4.t.V5mSpz),
             ctaMessage: intl2.string(intl4.t.Lj6R5m),
-            onClick() {
+            onClick: function handlePublish() {
                       if (null != groupListingId) {
                         if (null != subscriptionListing) {
                           const obj = { guildId, groupListingId: tmp, listingId: tmp2.id };
-                          return closure_1_2(obj);
+                          return _undefined(obj);
                         }
                       }
                     },
             submitting,
             disabled: roleSubscriptionSettingsDisabled
           };
-          const tmp17 = ActionableNoticeDefault;
+          const tmp18 = ActionableNoticeDefault;
           intl = intl4.intl;
           intl2 = intl4.intl;
-          tmp14 = authStore2(tmp17, obj7);
+          tmp15 = authStore2(tmp18, obj7);
         }
-        tmp8 = tmp14;
+        tmp9 = tmp15;
       }
     }
   }
-  return tmp8;
-}));
+  return tmp9;
+});
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionTierEdit.tsx");
 
 export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
@@ -557,7 +561,7 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
   let obj7;
   let obj8;
   let tmp17;
-  const f132944 = (currentScene) => {
+  const f134333 = (currentScene) => {
     let DETAILS = currentScene.currentScene;
     if (DETAILS == null) {
       DETAILS = handleCreateOrUpdateFromEditState.DETAILS;
@@ -637,9 +641,9 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
       presentError(anyErrorMessage);
     }
   }, items1);
-  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f132944), 2);
+  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f134333), 2);
   const items2 = [navigation, hasChanges, first1, loading, callback];
-  _slicedToArray(loading.useRoleTierEditStore(f132944), 2);
+  _slicedToArray(loading.useRoleTierEditStore(f134333), 2);
   const layoutEffect1 = obj.useLayoutEffect(() => {
     let onPress;
     let title;

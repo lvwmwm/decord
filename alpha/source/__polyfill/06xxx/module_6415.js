@@ -1,51 +1,30 @@
 // Module ID: 6415
 // Function ID: 6416
-// Dependencies: [6349, 19, 6367]
-// Exports: useRecyclingState
+// Dependencies: [6394, 6409, 6385]
+// Exports: useLongPressGesture
 
 // Module 6415
-import _mod6367 from "module_6367" /* 6367 */;
-import _slicedToArray from "_slicedToArray" /* 6349 */;
-import react from "react" /* 19 */;
+import ComposedGestureName from "ComposedGestureName" /* 6385 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 6394 */;
+import _mod6409 from "module_6409" /* 6409 */;
 
-let c3;
-let closure_4;
-let hasOwnProperty;
-({ useCallback: c3, useMemo: closure_4, useRef: hasOwnProperty } = react);
+function transformLongPressProps(shouldCancelWhenOutside) {
+  if (undefined === shouldCancelWhenOutside.shouldCancelWhenOutside) {
+    shouldCancelWhenOutside.shouldCancelWhenOutside = true;
+  }
+  return shouldCancelWhenOutside;
+}
+const items = [["minDuration", "minDurationMs"], ["maxDistance", "maxDist"]];
+const map = new Map(items);
+let closure_4 = {};
 
-export const useRecyclingState = function useRecyclingState(arg0, arg1, arg2) {
-  let tmp3;
-  let closure_0 = arg0;
-  let closure_1 = arg2;
-  let tmp = hasOwnProperty(undefined);
-  let closure_2 = tmp;
-  const obj = _mod6367;
-  const tmp2 = _slicedToArray(obj.useLayoutState(0), 2);
-  [r10015, tmp3] = tmp2;
-  let c3 = tmp3;
-  React3(() => {
-    let tmpResult = closure_0;
-    if (typeof closure_0 === "function") {
-      tmpResult = tmp();
-    }
-    ref.current = tmpResult;
-    if (closure_1 != null) {
-      tmp3();
-    }
-  }, arg1);
-  const items = [tmp3];
-  const items1 = [
-    tmp.current,
-    _false((fn, arg1) => {
-      let tmp = fn;
-      if (typeof fn === "function") {
-        tmp = fn(ref.current);
-      }
-      if (tmp !== ref.current) {
-        tmp2.current = tmp;
-        arg1((arg0) => arg0 + 1, arg1);
-      }
-    }, items)
-  ];
-  return items1;
+export const useLongPressGesture = function useLongPressGesture(cResult) {
+  let tmp = cResult;
+  if (cResult === undefined) {
+    tmp = closure_4;
+  }
+  const obj = maybeExtractNativeEvent;
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformLongPressProps);
+  const obj2 = _mod6409;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.LongPress, clonedAndRemappedConfig);
 };

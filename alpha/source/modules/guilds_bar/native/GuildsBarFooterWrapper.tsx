@@ -1,30 +1,28 @@
-// Module ID: 16330
-// Function ID: 16331
+// Module ID: 16590
+// Function ID: 16591
 // Name: GuildsBarFooterWrapper
-// Dependencies: [16262, 21, 4896, 587, 558, 576, 4586, 15988, 5983, 2]
+// Dependencies: [16522, 21, 5090, 587, 558, 576, 4778, 16248, 6166, 2]
 
-// Module 16330 (GuildsBarFooterWrapper)
+// Module 16590 (GuildsBarFooterWrapper)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4586 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 15988 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 16262 */;
-import createStyles from "createStyles" /* 4896 */;
+import useToken from "useToken" /* 4778 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16248 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 16522 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let children;
-
 let obj2;
 let tmp3;
-const NativeViewDefault = tmp3(5983);
+const NativeViewDefault = tmp3(6166);
 const GUILD_ITEM_HIT_SLOP = GuildsBarConstants.GUILD_ITEM_HIT_SLOP;
 const jsx = Fragment.jsx;
 let obj = { footerWrapper: obj2 };
 obj2 = { display: "flex", alignSelf: "stretch", alignItems: "center", gap: nativeDefault.modules.mobile.GUILD_BAR_ITEM_PADDING };
 let closure_5 = createStyles.createStyles(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildsBarFooterWrapper(children) {
   const obj = react;
   const cResult = obj.c(9);
   children = children.children;
@@ -71,7 +69,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[1] = token;
   cResult[2] = tmp8;
   tmp7 = tmp8;
-}) : ((children) => {
+}) : (function GuildsBarFooterWrapper(children) {
   children = children.children;
   const obj = useToken;
   const token = obj.useToken(nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE);

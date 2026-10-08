@@ -1,13 +1,13 @@
-// Module ID: 14284
-// Function ID: 14285
+// Module ID: 14108
+// Function ID: 14109
 // Name: DEFAULT_TOAST_POSITION
-// Dependencies: [32, 19, 4577, 558, 576, 4576, 4602, 4596, 2]
+// Dependencies: [32, 19, 4769, 558, 576, 4768, 4794, 4788, 2]
 
-// Module 14284 (DEFAULT_TOAST_POSITION)
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4596 */;
+// Module 14108 (DEFAULT_TOAST_POSITION)
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4788 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import module_4577 from "module_4577" /* 4577 */;
+import module_4769 from "module_4769" /* 4769 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,13 +17,13 @@ let _require, dependencyMap, set;
 let _slicedToArray = _slicedToArray_mod;
 const top = "top";
 let c5 = 3000;
-let closure_6 = module_4577.create(() => {
+let closure_6 = module_4769.create(() => {
   const obj = { containerIdsBySurface: new Map() };
   new Map();
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOwnsSurface(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -93,7 +93,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => 
   cResult[3] = items;
   tmp3 = items;
   tmp2 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useOwnsSurface(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   let items = [arg0, arg1];
@@ -136,7 +136,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => 
 });
 const key = 0;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useToastContainer(arg0) {
   let closure_0;
   let first;
   let tmp10;
@@ -203,7 +203,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const effect = obj2.useEffect(tmp15, tmp16);
       if (cResult[7] !== toastStore) {
-        const fn3 = function h() {
+        const fn2 = function x() {
           let text;
           if (toastStore != null) {
             text = tmp.toast.text;
@@ -221,10 +221,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         };
         const items = [toastStore];
         cResult[7] = toastStore;
-        cResult[8] = fn3;
+        cResult[8] = fn2;
         cResult[9] = items;
         tmp19 = items;
-        tmp18 = fn3;
+        tmp18 = fn2;
       } else {
         tmp18 = cResult[8];
         tmp19 = cResult[9];
@@ -244,25 +244,31 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp21 = obj3;
     }
   }
-  const fn2 = function _() {
-    if (null != toastStore) {
-      const _setTimeout = setTimeout;
-      const timeout = setTimeout(() => {
-        const obj = closure_0(toastStore[5]);
-        return obj.popToast(closure_0);
-      }, closure_2);
-      return () => clearTimeout(closure_0);
+  class E {
+    constructor() {
+      if (null != c1) {
+        tmp = globalThis;
+        _setTimeout = setTimeout;
+        tmp2 = closure_2;
+        closure_0 = setTimeout(() => {
+          const obj = closure_0(toastStore[5]);
+          return obj.popToast(closure_0);
+        }, closure_2);
+        return () => clearTimeout(closure_0);
+      } else {
+        return;
+      }
     }
-  };
+  }
   const items1 = [toastStore, maxResult, arg0];
   cResult[2] = maxResult;
   cResult[3] = toastStore;
   cResult[4] = arg0;
-  cResult[5] = fn2;
+  cResult[5] = E;
   cResult[6] = items1;
   tmp16 = items1;
-  tmp15 = fn2;
-}) : ((arg0) => {
+  tmp15 = E;
+}) : (function useToastContainer(arg0) {
   let closure_0;
   let entry;
   let position1;
@@ -271,7 +277,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj = react;
   const tmp = closure_7(arg0, react.useId());
   let tmp2 = _require;
-  const obj2 = require("module_4576");
+  const obj2 = require("module_4768");
   const tmp3 = entry;
   entry = undefined;
   if (tmp) {

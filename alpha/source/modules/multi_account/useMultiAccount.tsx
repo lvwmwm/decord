@@ -1,14 +1,14 @@
-// Module ID: 15911
-// Function ID: 15912
+// Module ID: 16170
+// Function ID: 16171
 // Name: useMultiAccount
-// Dependencies: [19, 1377, 12071, 558, 576, 504, 584, 12074, 2]
+// Dependencies: [19, 1389, 12144, 558, 576, 504, 584, 12148, 2]
 
-// Module 15911 (useMultiAccount)
+// Module 16170 (useMultiAccount)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import MultiAccountStore2 from "MultiAccountStore" /* 12071 */;
+import MultiAccountStore2 from "MultiAccountStore" /* 12144 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let currentUser, users;
 let tmp;
 const get_initialized = tmp(504);
 const MultiAccountTokenStatus = MultiAccountStore2.MultiAccountTokenStatus;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMultiAccountUsers() {
   let tmp10;
   let tmp4;
   let tmp5;
@@ -27,7 +27,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [MultiAccountStore, UserStore];
-    const fn = function c() {
+    const fn = function o() {
       let items;
       users = users.getUsers();
       currentUser = currentUser.getCurrentUser();
@@ -55,25 +55,35 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult = get_initialized;
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp4, tmp5);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function v() {
-      let obj = DispatcherDefault;
-      obj.wait(() => {
-        const obj = closure_1_2(closure_1_3[7]);
-        const result = obj.validateMultiAccountTokens();
-      });
-    };
+    class U {
+      constructor() {
+        let obj = DispatcherDefault;
+        obj.wait(() => {
+          const obj = closure_1_2(closure_1_3[7]);
+          const result = obj.validateMultiAccountTokens();
+        });
+      }
+    }
     const items1 = [];
-    cResult[2] = fn2;
+    cResult[2] = U;
     cResult[3] = items1;
     tmp10 = items1;
-    tmp9 = fn2;
+    tmp9 = U;
   } else {
-    tmp9 = cResult[2];
+    class U {
+      constructor() {
+        let obj = DispatcherDefault;
+        obj.wait(() => {
+          const obj = closure_1_2(closure_1_3[7]);
+          const result = obj.validateMultiAccountTokens();
+        });
+      }
+    }
     tmp10 = cResult[3];
   }
   const effect = react.useEffect(tmp9, tmp10);
   return stateFromStoresObject;
-}) : (() => {
+}) : (function useMultiAccountUsers() {
   let obj = get_initialized;
   let items = [MultiAccountStore, UserStore];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {

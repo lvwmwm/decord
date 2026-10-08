@@ -1,26 +1,24 @@
-// Module ID: 12731
-// Function ID: 12732
+// Module ID: 13399
+// Function ID: 13400
 // Name: InAppReportsBlockUserElement
-// Dependencies: [19, 2051, 4525, 1085, 21, 558, 576, 504, 5048, 5076, 9447, 8113, 1126, 7599, 12728, 2]
+// Dependencies: [19, 2063, 4717, 1085, 21, 558, 576, 504, 5405, 5105, 7004, 7014, 1126, 9306, 13397, 2]
 
-// Module 12731 (InAppReportsBlockUserElement)
+// Module 13399 (InAppReportsBlockUserElement)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5048 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5076 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8113 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9447 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5105 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5405 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7004 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7014 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let user;
-
 const AnalyticEvents = Constants.AnalyticEvents;
 const jsx = Fragment.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockUserElement(user) {
   let first;
   let reportId;
   let tmp11;
@@ -97,7 +95,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     if (tmp16 === id) {
       if (cResult[13] === channelId) {
         if (cResult[14] === reportId) {
-          class C {
+          class U {
             constructor() {
               const obj = AppAnalyticsUtilsDefault;
               const obj2 = { other_user_id: user.id, report_id: reportId };
@@ -111,7 +109,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           return null;
         }
       }
-      class C {
+      class U {
         constructor() {
           const obj = AppAnalyticsUtilsDefault;
           const obj2 = { other_user_id: user.id, report_id: reportId };
@@ -125,7 +123,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       cResult[13] = channelId;
       cResult[14] = reportId;
       cResult[15] = user.id;
-      cResult[16] = C;
+      cResult[16] = U;
     }
   }
   let guild_id1;
@@ -151,7 +149,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[10] = id2;
   cResult[11] = user;
   cResult[12] = name;
-}) : ((user) => {
+}) : (function BlockUserElement(user) {
   user = user.user;
   const channelId = user.channelId;
   const reportId = user.reportId;

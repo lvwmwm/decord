@@ -1,24 +1,22 @@
-// Module ID: 10120
-// Function ID: 10121
+// Module ID: 9705
+// Function ID: 9706
 // Name: GIFPickerCategoryView
-// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 1126, 9274, 5981, 10121, 9956, 4892, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 587, 558, 576, 1126, 8605, 6164, 9706, 9483, 5086, 2]
 
-// Module 10120 (GIFPickerCategoryView)
+// Module 9705 (GIFPickerCategoryView)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import useAccessibilityPressDefault from "useAccessibilityPress" /* 9274 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import useAccessibilityPressDefault from "useAccessibilityPress" /* 8605 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let onSelectCategory;
 
 let StyleSheet;
 let closure_4;
@@ -44,7 +42,7 @@ obj5 = { margin: nativeDefault.space.PX_8, justifyContent: "center", flexDirecti
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
 obj6 = { marginRight: nativeDefault.space.PX_4 };
 let closure_9 = createStyles(obj);
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelectCategory) => {
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerCategoryView(onSelectCategory) {
   let items;
   let items1;
   const obj = react2;
@@ -159,13 +157,13 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelectCategory) 
         }
         if (item.type === GIFPickerResultTypes.TRENDING_GIFS) {
           const obj8 = { size: "sm", style: tmp4.categoryNameIcon, color: nativeDefault.colors.WHITE };
-          const AnalyticsIcon = tmp(10121).AnalyticsIcon;
+          const AnalyticsIcon = tmp(9706).AnalyticsIcon;
           tmp20 = metroImportDefault(AnalyticsIcon, obj8);
         } else {
           tmp20 = null;
           if (item.type === tmp19.FAVORITES) {
             const obj9 = { size: "sm", style: tmp4.categoryNameIcon, color: nativeDefault.colors.WHITE };
-            const StarIcon = tmp(9956).StarIcon;
+            const StarIcon = tmp(9483).StarIcon;
             tmp20 = metroImportDefault(StarIcon, obj9);
           }
         }
@@ -190,7 +188,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelectCategory) 
   cResult[2] = onSelectCategory;
   cResult[3] = fn;
   tmp5 = fn;
-}) : ((onSelectCategory) => {
+}) : (function GIFPickerCategoryView(onSelectCategory) {
   let items1;
   let items2;
   let tmp10Result;
@@ -216,13 +214,13 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelectCategory) 
   const tmp8 = hasOwnProperty;
   if (item.type === GIFPickerResultTypes.TRENDING_GIFS) {
     const obj6 = { size: "sm", style: tmp.categoryNameIcon, color: nativeDefault.colors.WHITE };
-    const AnalyticsIcon = tmp3(10121).AnalyticsIcon;
+    const AnalyticsIcon = tmp3(9706).AnalyticsIcon;
     tmp10Result = tmp10(AnalyticsIcon, obj6);
   } else {
     tmp10Result = null;
     if (item.type === tmp12.FAVORITES) {
       const obj7 = { size: "sm", style: tmp.categoryNameIcon, color: nativeDefault.colors.WHITE };
-      const StarIcon = tmp3(9956).StarIcon;
+      const StarIcon = tmp3(9483).StarIcon;
       tmp10Result = tmp10(StarIcon, obj7);
     }
   }

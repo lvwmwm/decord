@@ -1,21 +1,21 @@
-// Module ID: 14674
-// Function ID: 14675
+// Module ID: 14935
+// Function ID: 14936
 // Name: ProfilePrivacySetting
-// Dependencies: [7645, 558, 2028, 14675, 4860, 14676, 1987, 1126, 1197, 11142, 2]
+// Dependencies: [7966, 558, 2040, 14936, 5054, 14937, 1999, 1126, 1209, 11262, 2]
 
-// Module 14674 (ProfilePrivacySetting)
+// Module 14935 (ProfilePrivacySetting)
 import intl7 from "intl" /* 1126 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 14675 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 14936 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const asyncRequire = tmp2(1987);
+const asyncRequire = tmp2(1999);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
@@ -25,7 +25,7 @@ let obj = {
     return intl.string(intl7.t.Qnf32C);
   },
   parent: MobileUserSettings.DATA_AND_PRIVACY,
-  useValue: () => {
+  useValue() {
     const ProfileVisibility = UserSettings.ProfileVisibility;
     return ProfileVisibility.useSetting();
   },
@@ -42,7 +42,7 @@ let obj = {
       const obj4 = { direction: null, affectedGuildIds: null, settingName: null, mappedActivityValue: null };
       ({ direction: obj3.direction, affectedGuildIds: obj3.affectedGuildIds, settingName: obj3.settingName, mappedActivityValue: obj3.mappedActivityValue } = profileToActivityUpsell);
       const obj2 = ActionSheetActionCreatorsDefault;
-      obj2.openLazy(asyncRequire(14676, tmp3.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj4);
+      obj2.openLazy(asyncRequire(14937, tmp3.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj4);
     }
   },
   useOptions() {

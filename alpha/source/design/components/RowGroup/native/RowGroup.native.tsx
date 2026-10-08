@@ -1,16 +1,16 @@
-// Module ID: 13812
-// Function ID: 13813
+// Module ID: 14037
+// Function ID: 14038
 // Name: RowGroup
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 5600, 6081, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 5373, 6267, 2]
 
-// Module 13812 (RowGroup)
+// Module 14037 (RowGroup)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Stack_Stack from "Stack/Stack" /* 5600 */;
+import Stack_Stack from "Stack/Stack" /* 5373 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ const View = react_native.View;
 let obj = { container: { overflow: "hidden" }, content: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.TABLEROW_BACKGROUND_DEFAULT, borderRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS, padding: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
 let closure_5 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RowGroup(arg0) {
   let children;
   let items;
   let items1;
@@ -70,11 +70,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp7Result = null != title || null != trailing;
   if (tmp7Result) {
     let tmp8 = null != title;
-    const Stack = tmp(5600).Stack;
+    const Stack = tmp(5373).Stack;
     const tmp7 = React3;
     if (tmp8) {
       const obj4 = { title };
-      tmp8 = _false(tmp(6081).TableRowGroupTitle, obj4);
+      tmp8 = _false(tmp(6267).TableRowGroupTitle, obj4);
     }
     const obj5 = { direction: "horizontal", spacing: 4, children: items1 };
     items1 = [tmp8, trailing];
@@ -84,7 +84,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = trailing;
   cResult[2] = tmp7Result;
   tmp5 = tmp7Result;
-}) : ((children) => {
+}) : (function RowGroup(children) {
   let items;
   let items1;
   let title;
@@ -100,7 +100,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const tmp5 = require;
     if (tmp7) {
       const obj2 = { title };
-      tmp7 = _false(tmp5(6081).TableRowGroupTitle, obj2);
+      tmp7 = _false(tmp5(6267).TableRowGroupTitle, obj2);
     }
     const obj3 = { direction: "horizontal", spacing: 4, children: items };
     items = [tmp7, trailing];

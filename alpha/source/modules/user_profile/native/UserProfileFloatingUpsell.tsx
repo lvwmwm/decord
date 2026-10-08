@@ -1,24 +1,24 @@
-// Module ID: 14501
-// Function ID: 14502
+// Module ID: 14761
+// Function ID: 14762
 // Name: UserProfileFloatingUpsell
-// Dependencies: [32, 19, 6714, 21, 4896, 14490, 558, 576, 1618, 2]
+// Dependencies: [32, 19, 6891, 21, 5090, 14750, 558, 576, 1630, 2]
 
-// Module 14501 (UserProfileFloatingUpsell)
+// Module 14761 (UserProfileFloatingUpsell)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 14490 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 14750 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 6714 */;
-import createStyles from "createStyles" /* 4896 */;
+import Constants from "Constants" /* 6891 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
 let tmp3;
-const UserProfileUpsellCardV2Default = tmp3(14490);
+const UserProfileUpsellCardV2Default = tmp3(14750);
 ({ FLOATING_UPSELL_HEIGHT: hasOwnProperty, PROFILE_SIDE_PADDING: metroRequire } = Constants);
 const jsx = Fragment.jsx;
 let closure_8 = createStyles.createStyles((bottom) => {
@@ -27,7 +27,7 @@ let closure_8 = createStyles.createStyles((bottom) => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFloatingUpsellHeight() {
   let closure_129_0;
   let first;
   let tmp3;
@@ -54,14 +54,14 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[2];
   }
   return tmp5;
-}) : (() => {
+}) : (function useFloatingUpsellHeight() {
   const tmp = _slicedToArray(react.useState(hasOwnProperty), 2);
   let closure_0 = tmp[1];
   const obj = { height: tmp[0], onLayout: react.useCallback((nativeEvent) => closure_0(nativeEvent.nativeEvent.layout.height), []) };
   return obj;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileFloatingUpsell(arg0) {
   const obj = react2;
   const cResult = obj.c(3);
   const tmp4 = closure_8(useSafeAreaInsetsDefault().bottom);
@@ -79,7 +79,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.container;
   cResult[2] = tmp8;
   tmp5 = tmp8;
-}) : ((arg0) => {
+}) : (function UserProfileFloatingUpsell(arg0) {
   UserProfileUpsellCardV2Default;
   const merged = Object.assign(arg0);
   return <tmp2 style={closure_8(useSafeAreaInsetsDefault().bottom).container} />;

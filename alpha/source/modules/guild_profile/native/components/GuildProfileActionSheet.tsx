@@ -1,24 +1,24 @@
-// Module ID: 9410
-// Function ID: 9411
+// Module ID: 8831
+// Function ID: 8832
 // Name: GuildProfileActionSheet
-// Dependencies: [19, 17, 9262, 9411, 1085, 21, 4896, 587, 558, 576, 4797, 9263, 504, 4586, 7852, 6664, 6688, 9264, 9412, 1126, 5601, 9426, 9413, 9427, 683, 5612, 6119, 6656, 6652, 2]
+// Dependencies: [19, 17, 8592, 8832, 1085, 21, 5090, 587, 558, 576, 4991, 8593, 504, 4778, 8270, 6841, 6865, 8594, 8833, 1126, 5375, 9090, 8834, 9091, 683, 5387, 6298, 6833, 6829, 2]
 
-// Module 9410 (GuildProfileActionSheet)
+// Module 8831 (GuildProfileActionSheet)
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import Constants from "Constants" /* 1085 */;
-import GuildProfileStore2 from "GuildProfileStore" /* 9262 */;
-import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9264 */;
-import GuildProfileConstants from "GuildProfileConstants" /* 9411 */;
+import GuildProfileStore2 from "GuildProfileStore" /* 8592 */;
+import GuildProfileActionCreators from "GuildProfileActionCreators" /* 8594 */;
+import GuildProfileConstants from "GuildProfileConstants" /* 8832 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const GuildProfileStore = GuildProfileStore2;
-let BottomSheet, guildId;
+let BottomSheet;
 
 let c10;
 let closure_4;
@@ -33,7 +33,7 @@ const VerticalGradient = Constants.VerticalGradient;
 let obj = { loadingContainer: { paddingTop: 40 }, footerContainer: { paddingHorizontal: 16, paddingVertical: 40 }, scrollView: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 let closure_12 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfileActionSheet(guildId) {
   let analyticsLocations;
   let bottomSheetClose;
   let bottomSheetRef;
@@ -97,7 +97,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         return closure_6.getErrorCode(guildId);
       }
     }
-    const effect = react.useEffect(G, items3);
+    const effect = react.useEffect(V, items3);
     const obj7 = react;
     if (cResult[7] !== fetchGuildProfile) {
       class E {
@@ -248,7 +248,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
     }
   }
-  class G {
+  class V {
     constructor() {
       obj = closure_0(closure_2[17]);
       result = obj.trackGuildProfileViewed(guildId, analyticsLocations);
@@ -258,9 +258,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   items3 = [guildId, analyticsLocations];
   cResult[3] = analyticsLocations;
   cResult[4] = guildId;
-  cResult[5] = G;
+  cResult[5] = V;
   cResult[6] = items3;
-}) : ((guildId) => {
+}) : (function GuildProfileActionSheet(guildId) {
   let bottomSheetClose;
   let bottomSheetRef;
   let context;

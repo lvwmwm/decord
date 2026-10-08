@@ -1,18 +1,16 @@
-// Module ID: 6118
-// Function ID: 6119
+// Module ID: 6297
+// Function ID: 6298
 // Name: useBottomSheetKeyboardHandling
-// Dependencies: [19, 558, 576, 6119, 2]
+// Dependencies: [19, 558, 576, 6298, 2]
 
-// Module 6118 (useBottomSheetKeyboardHandling)
+// Module 6297 (useBottomSheetKeyboardHandling)
 import react2 from "react" /* 576 */;
-import BottomSheetModal from "BottomSheetModal" /* 6119 */;
+import BottomSheetModal from "BottomSheetModal" /* 6298 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let onFocus;
-
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onFocus) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBottomSheetKeyboardHandling(onFocus) {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(12);
@@ -56,7 +54,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onFocus) => {
       cResult[8] = fn2;
       tmp5 = fn2;
     }
-    const fn = function o(arg0) {
+    const fn = function n(arg0) {
       const shouldHandleKeyboardEvents = bottomSheetInternal.shouldHandleKeyboardEvents;
       const result = shouldHandleKeyboardEvents.set(true);
       if (onFocus != null) {
@@ -80,7 +78,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onFocus) => {
     tmp3 = obj4;
   }
   return tmp3;
-}) : ((onFocus) => {
+}) : (function useBottomSheetKeyboardHandling(onFocus) {
   onFocus = onFocus.onFocus;
   const onBlur = onFocus.onBlur;
   let obj = BottomSheetModal;

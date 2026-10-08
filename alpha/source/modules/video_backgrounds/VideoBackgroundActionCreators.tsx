@@ -1,18 +1,18 @@
-// Module ID: 8087
-// Function ID: 8088
+// Module ID: 5254
+// Function ID: 5255
 // Name: VideoBackgroundActionCreators
-// Dependencies: [5, 1999, 1377, 1085, 1282, 584, 8088, 8089, 8090, 8091, 2]
+// Dependencies: [5, 2011, 1389, 1085, 1294, 584, 5255, 5256, 5257, 5258, 2]
 // Exports: applyMediaFilterSettings, deleteVideoFilterAsset, errorApplyingMediaFilterSettings, fetchVideoFilterAssets, startApplyMediaFilterSettings, uploadVideoFilterAsset
 
-// Module 8087 (VideoBackgroundActionCreators)
+// Module 5254 (VideoBackgroundActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import VideoBackgroundUtils from "VideoBackgroundUtils" /* 8090 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8091 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import VideoBackgroundUtils from "VideoBackgroundUtils" /* 5257 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5258 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import UserStore from "UserStore" /* 1377 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 let asset, c5, closure_1, closure_3, closure_4, closure_5, id, videoBackground;

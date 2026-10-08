@@ -1,18 +1,18 @@
-// Module ID: 6085
-// Function ID: 6086
+// Module ID: 6271
+// Function ID: 6272
 // Name: TrafficConeSpotIllustration
-// Dependencies: [21, 558, 576, 6086, 5981, 2]
+// Dependencies: [21, 558, 576, 6272, 6164, 2]
 
-// Module 6085 (TrafficConeSpotIllustration)
+// Module 6271 (TrafficConeSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import _modDef6086 from "module_6086" /* 6086 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import _modDef6272 from "module_6272" /* 6272 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TrafficConeSpotIllustration(arg0) {
   let accessibilityLabel;
   let accessible;
   let first;
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6086 };
+    const obj2 = { uri: _modDef6272 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -68,12 +68,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[8] = tmp11;
     tmp8 = tmp11;
   }
-  const items = [{ width: result, height: result1 }];
+  size = { width: result, height: result1 };
   cResult[1] = result;
   cResult[2] = result1;
-  cResult[3] = items;
-  tmp7 = items;
-}) : ((width) => {
+  cResult[3] = size;
+  tmp7 = size;
+}) : (function TrafficConeSpotIllustration(width) {
   let accessibilityLabel;
   let accessible;
   let resizeMode;
@@ -90,11 +90,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num3 === undefined) {
     num3 = 1;
   }
-  const obj2 = { uri: _modDef6086 };
+  const obj2 = { uri: _modDef6272 };
   FastImageDefault;
-  size = { width: num * num3, height: num2 * num3 };
-  const items = [size];
-  return <tmp fadeDuration={0} source={obj2} style={items} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
+  return <tmp fadeDuration={0} source={obj2} style={{ width: num * num3, height: num2 * num3 }} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
 });
 let size = size_mod;
 let result = size.fileFinishedImporting("design/components/mana-assets/native/generated/TrafficConeSpotIllustration.native.tsx");

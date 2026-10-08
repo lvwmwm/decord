@@ -1,16 +1,16 @@
-// Module ID: 10610
-// Function ID: 10611
+// Module ID: 10207
+// Function ID: 10208
 // Name: useScaledActionHeight
-// Dependencies: [558, 5609, 4586, 587, 2]
+// Dependencies: [558, 5382, 4778, 587, 2]
 
-// Module 10610 (useScaledActionHeight)
+// Module 10207 (useScaledActionHeight)
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4586 */;
-import useFontScale from "useFontScale" /* 5609 */;
+import useToken from "useToken" /* 4778 */;
+import useFontScale from "useFontScale" /* 5382 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScaledActionHeight() {
   const obj = useFontScale;
   const fontScale = obj.useFontScale();
   const obj2 = useToken;
@@ -18,7 +18,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj3 = useToken;
   const token1 = obj3.useToken(nativeDefault.modules.mobile.TABLE_ROW_CONTENT_HEIGHT);
   return token + Math.max(fontScale * token1 - token1, 0);
-}) : (() => {
+}) : (function useScaledActionHeight() {
   const obj = useFontScale;
   const fontScale = obj.useFontScale();
   const obj2 = useToken;

@@ -1,17 +1,17 @@
-// Module ID: 5616
-// Function ID: 5617
+// Module ID: 5391
+// Function ID: 5392
 // Name: ButtonEllipsis
-// Dependencies: [19, 17, 21, 4618, 4896, 587, 4897, 558, 576, 5608, 5597, 2]
+// Dependencies: [19, 17, 21, 4810, 5090, 587, 5091, 558, 576, 5381, 5392, 2]
 
-// Module 5616 (ButtonEllipsis)
+// Module 5391 (ButtonEllipsis)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -65,7 +65,7 @@ withEllipsisAnimation.__initData = { code: "function withEllipsisAnimation_Butto
 const __initData = { code: "function ButtonEllipsisNativeTsx2(){const{opacity,scale}=this.__closure;return{opacity:opacity.get(),transform:[{scale:scale.get()}]};}" };
 const __initData2 = { code: "function ButtonEllipsisNativeTsx3(){const{opacity,scale}=this.__closure;return{opacity:opacity.get(),transform:[{scale:scale.get()}]};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((offset) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function EllipsisCircle(offset) {
   let items;
   let sharedValue1;
   let variant;
@@ -120,7 +120,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((offset) => {
       tmp11 = tmp14;
     }
   }
-  const fn = function n() {
+  const fn = function s() {
     if (typeof withEllipsisAnimation === "function") {
       const withDelay = ReanimatedRexport.withDelay;
       const result = 166.66666666666666 * tmp4;
@@ -156,7 +156,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((offset) => {
   cResult[2] = sharedValue1;
   cResult[3] = fn;
   tmp7 = fn;
-}) : ((offset) => {
+}) : (function EllipsisCircle(offset) {
   let items;
   let variant;
   offset = offset.offset;
@@ -200,24 +200,26 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((offset) => {
       throw new TypeError("Trying to call a non-function");
     }
   });
-  const fn = function y() {
-    let items;
-    const obj = { opacity: sharedValue.get(), transform: items };
-    items = [{ scale: sharedValue1.get() }];
-    ({ scale: sharedValue1.get() });
-    return obj;
-  };
-  fn.__closure = { opacity: sharedValue, scale: sharedValue1 };
-  fn.__workletHash = 13160478370544;
-  fn.__initData = __initData2;
   const obj5 = offset(sharedValue1[3]);
-  const animatedStyle = obj5.useAnimatedStyle(fn);
+  class E {
+    constructor() {
+      let items;
+      const obj = { opacity: sharedValue.get(), transform: items };
+      items = [{ scale: sharedValue1.get() }];
+      ({ scale: sharedValue1.get() });
+      return obj;
+    }
+  }
+  E.__closure = { opacity: sharedValue, scale: sharedValue1 };
+  E.__workletHash = 13160478370544;
+  E.__initData = __initData2;
+  const animatedStyle = obj5.useAnimatedStyle(E);
   const obj6 = { style: items };
   items = [tmp.circle, animatedStyle];
   return closure_4(sharedValue(sharedValue1[3]).View, obj6);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Ellipsis(arg0) {
   let first;
   let items;
   let tmp3;
@@ -249,7 +251,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp3 = cResult[2];
   }
   return tmp3;
-}) : ((arg0) => {
+}) : (function Ellipsis(arg0) {
   let items;
   const obj = { style: { flexDirection: "row" }, children: items };
   const obj2 = { offset: 0 };

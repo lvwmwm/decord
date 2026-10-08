@@ -1,31 +1,31 @@
-// Module ID: 6575
-// Function ID: 6576
-// Name: fastest_list/FastestList
-// Dependencies: [109, 19, 17, 21, 558, 576, 6570, 6564, 6576, 6568, 2]
+// Module ID: 6751
+// Function ID: 6752
+// Name: FastestList
+// Dependencies: [109, 19, 17, 21, 558, 576, 6746, 6740, 6752, 6744, 2]
 
-// Module 6575 (fastest_list/FastestList)
+// Module 6751 (FastestList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import useFastestListPropsEstimatedListSizeDefault from "useFastestListPropsEstimatedListSize" /* 6564 */;
-import FastestListItemTypeDefault from "FastestListItemType" /* 6568 */;
-import useFastestListPropsScrollReportingDefault from "useFastestListPropsScrollReporting" /* 6570 */;
-import FastList from "FastList" /* 6576 */;
+import FastestListItemTypeDefault from "FastestListItemType" /* 6744 */;
+import useFastestListPropsScrollReportingDefault from "useFastestListPropsScrollReporting" /* 6746 */;
+import FastList from "FastList" /* 6752 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, importDefault;
+let _require, dependencyMap, importDefault, num2, tmp6, tmpResult;
 
+let tmp43;
+const useFastestListPropsEstimatedListSizeDefault = tmp43(6740);
 function noop() {
 
 }
-let closure_3 = ["accessibilityLabel", "enabled", "estimatedListSize", "horizontal", "inActionSheet", "insetStart", "insetEnd", "itemSize", "keyboardDismissMode", "keyboardShouldPersistTaps", "keyExtractor", "listFooterSize", "listFooterAlwaysMounted", "listHeaderSize", "listHeaderAlwaysMounted", "onContentLengthChange", "onLayout", "preventNativeModalDismiss", "renderAhead", "renderItem", "renderListFooter", "renderListHeader", "renderSectionHeader", "renderSectionFooter", "scrollEventThrottle", "scrollIndicatorInsetEnd", "scrollIndicatorInsetStart", "sectionHeaderSize", "sectionHeaderIsSticky", "sectionFooterSize", "sections", "showsHorizontalScrollIndicator", "showsVerticalScrollIndicator", "style"];
+let closure_3 = ["accessibilityLabel", "enabled", "estimatedListSize", "horizontal", "inActionSheet", "insetStart", "insetEnd", "itemSize", "keyboardDismissMode", "keyboardShouldPersistTaps", "keyExtractor", "listFooterSize", "listFooterAlwaysMounted", "listHeaderSize", "listHeaderAlwaysMounted", "onContentLengthChange", "onLayout", "preventNativeModalDismiss", "renderAhead", "renderItem", "renderListFooter", "renderListHeader", "renderSectionHeader", "renderSectionFooter", "scrollEventThrottle", "scrollIndicatorInsetEnd", "scrollIndicatorInsetStart", "sectionHeaderSize", "sectionHeaderIsSticky", "sectionFooterSize", "sections", "showsHorizontalScrollIndicator", "showsVerticalScrollIndicator", "style", "ref"];
 const RefreshControl = react_native.RefreshControl;
 const jsx = Fragment.jsx;
-const forwardRef = react.forwardRef;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FastestList(arg0) {
   let accessibilityLabel;
   let closure_0;
   let closure_1;
@@ -49,6 +49,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let onScrollBeginDrag;
   let onScrollEndDrag;
   let preventNativeModalDismiss;
+  let ref;
   let renderAhead;
   let renderItem;
   let renderListFooter;
@@ -94,15 +95,15 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let tmp38;
   let tmp39;
   let tmp40;
+  let tmp7;
   let tmp8;
-  let tmp9;
-  let tmp2 = dependencyMap;
-  const tmp = _require;
+  const tmp = dependencyMap;
   const obj = require("react");
-  const cResult = obj.c(91);
+  const cResult = obj.c(92);
   if (cResult[0] !== arg0) {
-    ({ accessibilityLabel, enabled, estimatedListSize, horizontal, inActionSheet, insetStart, insetEnd, itemSize, keyboardDismissMode, keyboardShouldPersistTaps, keyExtractor, listFooterSize, listFooterAlwaysMounted, listHeaderSize, listHeaderAlwaysMounted, onContentLengthChange, onLayout, preventNativeModalDismiss, renderAhead, renderItem, renderListFooter, renderListHeader, renderSectionHeader, renderSectionFooter, scrollEventThrottle, scrollIndicatorInsetEnd, scrollIndicatorInsetStart, sectionHeaderSize, sectionHeaderIsSticky, sectionFooterSize, sections, showsHorizontalScrollIndicator, showsVerticalScrollIndicator, style } = arg0);
-    const tmp6 = _objectWithoutProperties(arg0, closure_3);
+    ({ accessibilityLabel, enabled, estimatedListSize, horizontal, inActionSheet, insetStart, insetEnd, itemSize, keyboardDismissMode, keyboardShouldPersistTaps, keyExtractor, listFooterSize, listFooterAlwaysMounted, listHeaderSize, listHeaderAlwaysMounted, onContentLengthChange, onLayout, preventNativeModalDismiss, renderAhead, renderItem, renderListFooter, renderListHeader, renderSectionHeader, renderSectionFooter, scrollEventThrottle, scrollIndicatorInsetEnd, scrollIndicatorInsetStart, sectionHeaderSize, sectionHeaderIsSticky, sectionFooterSize, sections, showsHorizontalScrollIndicator, showsVerticalScrollIndicator, style, ref } = arg0);
+    let tmp3 = _objectWithoutProperties;
+    const tmp5 = _objectWithoutProperties(arg0, closure_3);
     _require = keyExtractor;
     importDefault = onContentLengthChange;
     cResult[0] = arg0;
@@ -121,46 +122,46 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     cResult[12] = onContentLengthChange;
     cResult[13] = onLayout;
     cResult[14] = preventNativeModalDismiss;
-    cResult[15] = tmp6;
-    cResult[16] = renderItem;
-    cResult[17] = renderListFooter;
-    cResult[18] = renderListHeader;
-    cResult[19] = renderSectionFooter;
-    cResult[20] = renderSectionHeader;
-    cResult[21] = scrollEventThrottle;
-    cResult[22] = scrollIndicatorInsetEnd;
-    cResult[23] = scrollIndicatorInsetStart;
-    cResult[24] = sectionFooterSize;
-    cResult[25] = sectionHeaderSize;
-    cResult[26] = sections;
-    cResult[27] = showsHorizontalScrollIndicator;
-    cResult[28] = showsVerticalScrollIndicator;
-    cResult[29] = style;
-    cResult[30] = horizontal;
-    cResult[31] = listFooterAlwaysMounted;
-    cResult[32] = listHeaderAlwaysMounted;
-    cResult[33] = renderAhead;
-    cResult[34] = sectionHeaderIsSticky;
-    let tmp7 = sectionHeaderIsSticky;
-    tmp8 = renderAhead;
-    tmp9 = listHeaderAlwaysMounted;
-    tmp10 = listFooterAlwaysMounted;
-    tmp11 = horizontal;
-    tmp12 = style;
-    tmp13 = showsVerticalScrollIndicator;
-    tmp14 = showsHorizontalScrollIndicator;
-    tmp15 = sections;
-    tmp16 = sectionHeaderSize;
-    tmp17 = sectionFooterSize;
-    tmp18 = scrollIndicatorInsetStart;
-    tmp19 = scrollIndicatorInsetEnd;
-    tmp20 = scrollEventThrottle;
-    tmp21 = renderSectionHeader;
-    tmp22 = renderSectionFooter;
-    tmp23 = renderListHeader;
-    tmp24 = renderListFooter;
-    tmp25 = renderItem;
-    tmp26 = tmp6;
+    cResult[15] = tmp5;
+    cResult[16] = ref;
+    cResult[17] = renderItem;
+    cResult[18] = renderListFooter;
+    cResult[19] = renderListHeader;
+    cResult[20] = renderSectionFooter;
+    cResult[21] = renderSectionHeader;
+    cResult[22] = scrollEventThrottle;
+    cResult[23] = scrollIndicatorInsetEnd;
+    cResult[24] = scrollIndicatorInsetStart;
+    cResult[25] = sectionFooterSize;
+    cResult[26] = sectionHeaderSize;
+    cResult[27] = sections;
+    cResult[28] = showsHorizontalScrollIndicator;
+    cResult[29] = showsVerticalScrollIndicator;
+    cResult[30] = style;
+    cResult[31] = horizontal;
+    cResult[32] = listFooterAlwaysMounted;
+    cResult[33] = listHeaderAlwaysMounted;
+    cResult[34] = renderAhead;
+    cResult[35] = sectionHeaderIsSticky;
+    tmp7 = renderAhead;
+    tmp8 = listHeaderAlwaysMounted;
+    tmp10 = horizontal;
+    tmp11 = style;
+    tmp12 = showsVerticalScrollIndicator;
+    tmp13 = showsHorizontalScrollIndicator;
+    tmp14 = sections;
+    tmp15 = sectionHeaderSize;
+    tmp16 = sectionFooterSize;
+    tmp17 = scrollIndicatorInsetStart;
+    tmp18 = scrollIndicatorInsetEnd;
+    tmp19 = scrollEventThrottle;
+    tmp20 = renderSectionHeader;
+    tmp21 = renderSectionFooter;
+    tmp22 = renderListHeader;
+    tmp23 = renderListFooter;
+    tmp24 = renderItem;
+    tmp25 = ref;
+    tmp26 = tmp5;
     tmp27 = preventNativeModalDismiss;
     tmp28 = onLayout;
     tmp30 = listHeaderSize;
@@ -205,309 +206,933 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     tmp12 = cResult[29];
     tmp11 = cResult[30];
     tmp10 = cResult[31];
-    tmp9 = cResult[32];
     tmp8 = cResult[33];
     tmp7 = cResult[34];
   }
   dependencyMap = tmp41;
-  let tmp43 = undefined !== tmp9 && tmp9;
   let str = "nominal";
-  const tmp42 = undefined !== tmp10 && tmp10;
-  if (undefined !== tmp8) {
-    str = tmp8;
+  if (undefined !== tmp7) {
+    str = tmp7;
   }
-  ({ onScrollBeginDrag, onScrollEndDrag } = useFastestListPropsScrollReportingDefault(tmp26, undefined !== tmp11 && tmp11));
-  useFastestListPropsScrollReportingDefault(tmp26, undefined !== tmp11 && tmp11);
-  if (cResult[35] === tmp39) {
-    let tmp47;
-    let tmp49;
-    if (cResult[36] === (undefined !== tmp11 && tmp11)) {
-      tmp47 = cResult[37];
+  ({ onScrollBeginDrag, onScrollEndDrag } = useFastestListPropsScrollReportingDefault(tmp26, undefined !== tmp10 && tmp10));
+  useFastestListPropsScrollReportingDefault(tmp26, undefined !== tmp10 && tmp10);
+  if (cResult[36] === tmp39) {
+    let tmp45;
+    if (cResult[37] === (undefined !== tmp10 && tmp10)) {
+      tmp45 = cResult[38];
     }
-    const tmp48 = useFastestListPropsEstimatedListSizeDefault(tmp47);
-    if (cResult[38] !== tmp34) {
-      function _e(arg0, arg1, arg2) {
-        if (FastList.FastListItemTypes.ITEM === arg0) {
-          let tmp11Result;
-          if (closure_0 != null) {
-            let num3 = arg2;
-            const ITEM = FastestListItemTypeDefault.ITEM;
-            if (arg2 == null) {
-              num3 = -1;
+    const tmp46 = useFastestListPropsEstimatedListSizeDefault(tmp45);
+    if (cResult[39] !== tmp34) {
+      class Be {
+        constructor(arg0, arg1, arg2) {
+          tmp = closure_0;
+          tmp2 = closure_2;
+          if (closure_0(closure_2[8]).FastListItemTypes.ITEM === arg0) {
+            tmp12 = null;
+            tmp11Result = undefined;
+            if (closure_0 != null) {
+              num3 = arg2;
+              tmp14 = closure_1;
+              ITEM = closure_1(tmp2[9]).ITEM;
+              if (arg2 == null) {
+                num3 = -1;
+              }
+              tmp11Result = tmp11(ITEM, arg1, num3);
             }
-            tmp11Result = tmp11(ITEM, arg1, num3);
+            return tmp11Result;
+          } else if (tmp(tmp2[8]).FastListItemTypes.SECTION === arg0) {
+            tmp8 = null;
+            tmp7Result = undefined;
+            if (closure_0 != null) {
+              tmp10 = closure_1;
+              num2 = -1;
+              tmp7Result = tmp7(closure_1(tmp2[9]).SECTION_HEADER, arg1, -1);
+            }
+            return tmp7Result;
+          } else if (tmp(tmp2[8]).FastListItemTypes.SECTION_FOOTER === arg0) {
+            tmp4 = null;
+            tmp3Result = undefined;
+            if (closure_0 != null) {
+              tmp6 = closure_1;
+              num = -1;
+              tmp3Result = tmp3(closure_1(tmp2[9]).SECTION_FOOTER, arg1, -1);
+            }
+            return tmp3Result;
+          } else {
+            return;
           }
-          return tmp11Result;
-        } else if (FastList.FastListItemTypes.SECTION === arg0) {
-          let tmp7Result;
-          if (closure_0 != null) {
-            tmp7Result = tmp7(FastestListItemTypeDefault.SECTION_HEADER, arg1, -1);
-          }
-          return tmp7Result;
-        } else if (FastList.FastListItemTypes.SECTION_FOOTER === arg0) {
-          let tmp3Result;
-          if (closure_0 != null) {
-            tmp3Result = tmp3(FastestListItemTypeDefault.SECTION_FOOTER, arg1, -1);
-          }
-          return tmp3Result;
         }
       }
-      cResult[38] = tmp34;
-      cResult[39] = _e;
-      tmp49 = _e;
+      cResult[39] = tmp34;
+      cResult[40] = Be;
     } else {
-      tmp49 = cResult[39];
-    }
-    if (null != tmp18) {
-      let rect1;
-      if (undefined !== tmp11 && tmp11) {
-        const rect = { left: tmp18, right: tmp19 };
-        rect1 = rect;
-      } else {
-        rect1 = { top: tmp18, bottom: tmp19 };
+      class Be {
+        constructor(arg0, arg1, arg2) {
+          tmp = closure_0;
+          tmp2 = closure_2;
+          if (closure_0(closure_2[8]).FastListItemTypes.ITEM === arg0) {
+            tmp12 = null;
+            tmp11Result = undefined;
+            if (closure_0 != null) {
+              num3 = arg2;
+              tmp14 = closure_1;
+              ITEM = closure_1(tmp2[9]).ITEM;
+              if (arg2 == null) {
+                num3 = -1;
+              }
+              tmp11Result = tmp11(ITEM, arg1, num3);
+            }
+            return tmp11Result;
+          } else if (tmp(tmp2[8]).FastListItemTypes.SECTION === arg0) {
+            tmp8 = null;
+            tmp7Result = undefined;
+            if (closure_0 != null) {
+              tmp10 = closure_1;
+              num2 = -1;
+              tmp7Result = tmp7(closure_1(tmp2[9]).SECTION_HEADER, arg1, -1);
+            }
+            return tmp7Result;
+          } else if (tmp(tmp2[8]).FastListItemTypes.SECTION_FOOTER === arg0) {
+            tmp4 = null;
+            tmp3Result = undefined;
+            if (closure_0 != null) {
+              tmp6 = closure_1;
+              num = -1;
+              tmp3Result = tmp3(closure_1(tmp2[9]).SECTION_FOOTER, arg1, -1);
+            }
+            return tmp3Result;
+          } else {
+            return;
+          }
+        }
       }
-      cResult[40] = undefined !== tmp11 && tmp11;
-      cResult[41] = tmp19;
-      cResult[42] = tmp18;
-      cResult[43] = rect1;
     }
-    if (cResult[44] === tmp38) {
-      let tmp53;
-      let AnimatedFastList;
-      if (cResult[45] === tmp27) {
-        tmp53 = cResult[46];
+    if (null != tmp17) {
+      class Be {
+        constructor(arg0, arg1, arg2) {
+          tmp = closure_0;
+          tmp2 = closure_2;
+          if (closure_0(closure_2[8]).FastListItemTypes.ITEM === arg0) {
+            tmp12 = null;
+            tmp11Result = undefined;
+            if (closure_0 != null) {
+              num3 = arg2;
+              tmp14 = closure_1;
+              ITEM = closure_1(tmp2[9]).ITEM;
+              if (arg2 == null) {
+                num3 = -1;
+              }
+              tmp11Result = tmp11(ITEM, arg1, num3);
+            }
+            return tmp11Result;
+          } else if (tmp(tmp2[8]).FastListItemTypes.SECTION === arg0) {
+            tmp8 = null;
+            tmp7Result = undefined;
+            if (closure_0 != null) {
+              tmp10 = closure_1;
+              num2 = -1;
+              tmp7Result = tmp7(closure_1(tmp2[9]).SECTION_HEADER, arg1, -1);
+            }
+            return tmp7Result;
+          } else if (tmp(tmp2[8]).FastListItemTypes.SECTION_FOOTER === arg0) {
+            tmp4 = null;
+            tmp3Result = undefined;
+            if (closure_0 != null) {
+              tmp6 = closure_1;
+              num = -1;
+              tmp3Result = tmp3(closure_1(tmp2[9]).SECTION_FOOTER, arg1, -1);
+            }
+            return tmp3Result;
+          } else {
+            return;
+          }
+        }
+      }
+      if (undefined !== tmp10 && tmp10) {
+        class Be {
+          constructor(arg0, arg1, arg2) {
+            tmp = closure_0;
+            tmp2 = closure_2;
+            if (closure_0(closure_2[8]).FastListItemTypes.ITEM === arg0) {
+              tmp12 = null;
+              tmp11Result = undefined;
+              if (closure_0 != null) {
+                num3 = arg2;
+                tmp14 = closure_1;
+                ITEM = closure_1(tmp2[9]).ITEM;
+                if (arg2 == null) {
+                  num3 = -1;
+                }
+                tmp11Result = tmp11(ITEM, arg1, num3);
+              }
+              return tmp11Result;
+            } else if (tmp(tmp2[8]).FastListItemTypes.SECTION === arg0) {
+              tmp8 = null;
+              tmp7Result = undefined;
+              if (closure_0 != null) {
+                tmp10 = closure_1;
+                num2 = -1;
+                tmp7Result = tmp7(closure_1(tmp2[9]).SECTION_HEADER, arg1, -1);
+              }
+              return tmp7Result;
+            } else if (tmp(tmp2[8]).FastListItemTypes.SECTION_FOOTER === arg0) {
+              tmp4 = null;
+              tmp3Result = undefined;
+              if (closure_0 != null) {
+                tmp6 = closure_1;
+                num = -1;
+                tmp3Result = tmp3(closure_1(tmp2[9]).SECTION_FOOTER, arg1, -1);
+              }
+              return tmp3Result;
+            } else {
+              return;
+            }
+          }
+        }
+        tmp52[0] = tmp17;
+        tmp52[1] = tmp18;
+      } else {
+        class Be {
+          constructor(arg0, arg1, arg2) {
+            tmp = closure_0;
+            tmp2 = closure_2;
+            if (closure_0(closure_2[8]).FastListItemTypes.ITEM === arg0) {
+              tmp12 = null;
+              tmp11Result = undefined;
+              if (closure_0 != null) {
+                num3 = arg2;
+                tmp14 = closure_1;
+                ITEM = closure_1(tmp2[9]).ITEM;
+                if (arg2 == null) {
+                  num3 = -1;
+                }
+                tmp11Result = tmp11(ITEM, arg1, num3);
+              }
+              return tmp11Result;
+            } else if (tmp(tmp2[8]).FastListItemTypes.SECTION === arg0) {
+              tmp8 = null;
+              tmp7Result = undefined;
+              if (closure_0 != null) {
+                tmp10 = closure_1;
+                num2 = -1;
+                tmp7Result = tmp7(closure_1(tmp2[9]).SECTION_HEADER, arg1, -1);
+              }
+              return tmp7Result;
+            } else if (tmp(tmp2[8]).FastListItemTypes.SECTION_FOOTER === arg0) {
+              tmp4 = null;
+              tmp3Result = undefined;
+              if (closure_0 != null) {
+                tmp6 = closure_1;
+                num = -1;
+                tmp3Result = tmp3(closure_1(tmp2[9]).SECTION_FOOTER, arg1, -1);
+              }
+              return tmp3Result;
+            } else {
+              return;
+            }
+          }
+        }
+        tmp51[0] = tmp17;
+        tmp51[1] = tmp18;
+      }
+      cResult[41] = undefined !== tmp10 && tmp10;
+      cResult[42] = tmp18;
+      cResult[43] = tmp17;
+      cResult[44] = tmp51;
+    } else {
+      class Be {
+        constructor(arg0, arg1, arg2) {
+          tmp = closure_0;
+          tmp2 = closure_2;
+          if (closure_0(closure_2[8]).FastListItemTypes.ITEM === arg0) {
+            tmp12 = null;
+            tmp11Result = undefined;
+            if (closure_0 != null) {
+              num3 = arg2;
+              tmp14 = closure_1;
+              ITEM = closure_1(tmp2[9]).ITEM;
+              if (arg2 == null) {
+                num3 = -1;
+              }
+              tmp11Result = tmp11(ITEM, arg1, num3);
+            }
+            return tmp11Result;
+          } else if (tmp(tmp2[8]).FastListItemTypes.SECTION === arg0) {
+            tmp8 = null;
+            tmp7Result = undefined;
+            if (closure_0 != null) {
+              tmp10 = closure_1;
+              num2 = -1;
+              tmp7Result = tmp7(closure_1(tmp2[9]).SECTION_HEADER, arg1, -1);
+            }
+            return tmp7Result;
+          } else if (tmp(tmp2[8]).FastListItemTypes.SECTION_FOOTER === arg0) {
+            tmp4 = null;
+            tmp3Result = undefined;
+            if (closure_0 != null) {
+              tmp6 = closure_1;
+              num = -1;
+              tmp3Result = tmp3(closure_1(tmp2[9]).SECTION_FOOTER, arg1, -1);
+            }
+            return tmp3Result;
+          } else {
+            return;
+          }
+        }
+      }
+    }
+    if (cResult[45] === tmp38) {
+      class Be {
+        constructor(arg0, arg1, arg2) {
+          tmp = closure_0;
+          tmp2 = closure_2;
+          if (closure_0(closure_2[8]).FastListItemTypes.ITEM === arg0) {
+            tmp12 = null;
+            tmp11Result = undefined;
+            if (closure_0 != null) {
+              num3 = arg2;
+              tmp14 = closure_1;
+              ITEM = closure_1(tmp2[9]).ITEM;
+              if (arg2 == null) {
+                num3 = -1;
+              }
+              tmp11Result = tmp11(ITEM, arg1, num3);
+            }
+            return tmp11Result;
+          } else if (tmp(tmp2[8]).FastListItemTypes.SECTION === arg0) {
+            tmp8 = null;
+            tmp7Result = undefined;
+            if (closure_0 != null) {
+              tmp10 = closure_1;
+              num2 = -1;
+              tmp7Result = tmp7(closure_1(tmp2[9]).SECTION_HEADER, arg1, -1);
+            }
+            return tmp7Result;
+          } else if (tmp(tmp2[8]).FastListItemTypes.SECTION_FOOTER === arg0) {
+            tmp4 = null;
+            tmp3Result = undefined;
+            if (closure_0 != null) {
+              tmp6 = closure_1;
+              num = -1;
+              tmp3Result = tmp3(closure_1(tmp2[9]).SECTION_FOOTER, arg1, -1);
+            }
+            return tmp3Result;
+          } else {
+            return;
+          }
+        }
       }
       if ("animatedCallbacks" === tmp26.scrollReporting) {
-        AnimatedFastList = tmp(6576).AnimatedFastList;
-      } else {
-        AnimatedFastList = tmp44(6576);
-      }
-      if (cResult[47] === (undefined !== tmp11 && tmp11)) {
-        let tmp58;
-        let tmp60;
-        if (cResult[48] === tmp29) {
-          tmp58 = cResult[49];
-        }
-        if (cResult[50] !== str) {
-          let num48;
-          if ("nominal" !== str) {
-            if ("half" === str) {
-              num48 = 14;
+        class Be {
+          constructor(arg0, arg1, arg2) {
+            tmp = closure_0;
+            tmp2 = closure_2;
+            if (closure_0(closure_2[8]).FastListItemTypes.ITEM === arg0) {
+              tmp12 = null;
+              tmp11Result = undefined;
+              if (closure_0 != null) {
+                num3 = arg2;
+                tmp14 = closure_1;
+                ITEM = closure_1(tmp2[9]).ITEM;
+                if (arg2 == null) {
+                  num3 = -1;
+                }
+                tmp11Result = tmp11(ITEM, arg1, num3);
+              }
+              return tmp11Result;
+            } else if (tmp(tmp2[8]).FastListItemTypes.SECTION === arg0) {
+              tmp8 = null;
+              tmp7Result = undefined;
+              if (closure_0 != null) {
+                tmp10 = closure_1;
+                num2 = -1;
+                tmp7Result = tmp7(closure_1(tmp2[9]).SECTION_HEADER, arg1, -1);
+              }
+              return tmp7Result;
+            } else if (tmp(tmp2[8]).FastListItemTypes.SECTION_FOOTER === arg0) {
+              tmp4 = null;
+              tmp3Result = undefined;
+              if (closure_0 != null) {
+                tmp6 = closure_1;
+                num = -1;
+                tmp3Result = tmp3(closure_1(tmp2[9]).SECTION_FOOTER, arg1, -1);
+              }
+              return tmp3Result;
             } else {
-              num48 = 16;
+              return;
             }
           }
-          cResult[50] = str;
-          class Ge {
+        }
+      } else {
+        class Be {
+          constructor(arg0, arg1, arg2) {
+            tmp = closure_0;
+            tmp2 = closure_2;
+            if (closure_0(closure_2[8]).FastListItemTypes.ITEM === arg0) {
+              tmp12 = null;
+              tmp11Result = undefined;
+              if (closure_0 != null) {
+                num3 = arg2;
+                tmp14 = closure_1;
+                ITEM = closure_1(tmp2[9]).ITEM;
+                if (arg2 == null) {
+                  num3 = -1;
+                }
+                tmp11Result = tmp11(ITEM, arg1, num3);
+              }
+              return tmp11Result;
+            } else if (tmp(tmp2[8]).FastListItemTypes.SECTION === arg0) {
+              tmp8 = null;
+              tmp7Result = undefined;
+              if (closure_0 != null) {
+                tmp10 = closure_1;
+                num2 = -1;
+                tmp7Result = tmp7(closure_1(tmp2[9]).SECTION_HEADER, arg1, -1);
+              }
+              return tmp7Result;
+            } else if (tmp(tmp2[8]).FastListItemTypes.SECTION_FOOTER === arg0) {
+              tmp4 = null;
+              tmp3Result = undefined;
+              if (closure_0 != null) {
+                tmp6 = closure_1;
+                num = -1;
+                tmp3Result = tmp3(closure_1(tmp2[9]).SECTION_FOOTER, arg1, -1);
+              }
+              return tmp3Result;
+            } else {
+              return;
+            }
+          }
+        }
+      }
+      if (cResult[48] === (undefined !== tmp10 && tmp10)) {
+        class Be {
+          constructor(arg0, arg1, arg2) {
+            tmp = closure_0;
+            tmp2 = closure_2;
+            if (closure_0(closure_2[8]).FastListItemTypes.ITEM === arg0) {
+              tmp12 = null;
+              tmp11Result = undefined;
+              if (closure_0 != null) {
+                num3 = arg2;
+                tmp14 = closure_1;
+                ITEM = closure_1(tmp2[9]).ITEM;
+                if (arg2 == null) {
+                  num3 = -1;
+                }
+                tmp11Result = tmp11(ITEM, arg1, num3);
+              }
+              return tmp11Result;
+            } else if (tmp(tmp2[8]).FastListItemTypes.SECTION === arg0) {
+              tmp8 = null;
+              tmp7Result = undefined;
+              if (closure_0 != null) {
+                tmp10 = closure_1;
+                num2 = -1;
+                tmp7Result = tmp7(closure_1(tmp2[9]).SECTION_HEADER, arg1, -1);
+              }
+              return tmp7Result;
+            } else if (tmp(tmp2[8]).FastListItemTypes.SECTION_FOOTER === arg0) {
+              tmp4 = null;
+              tmp3Result = undefined;
+              if (closure_0 != null) {
+                tmp6 = closure_1;
+                num = -1;
+                tmp3Result = tmp3(closure_1(tmp2[9]).SECTION_FOOTER, arg1, -1);
+              }
+              return tmp3Result;
+            } else {
+              return;
+            }
+          }
+        }
+        if (cResult[51] !== str) {
+          class Be {
+            constructor(arg0, arg1, arg2) {
+              tmp = closure_0;
+              tmp2 = closure_2;
+              if (closure_0(closure_2[8]).FastListItemTypes.ITEM === arg0) {
+                tmp12 = null;
+                tmp11Result = undefined;
+                if (closure_0 != null) {
+                  num3 = arg2;
+                  tmp14 = closure_1;
+                  ITEM = closure_1(tmp2[9]).ITEM;
+                  if (arg2 == null) {
+                    num3 = -1;
+                  }
+                  tmp11Result = tmp11(ITEM, arg1, num3);
+                }
+                return tmp11Result;
+              } else if (tmp(tmp2[8]).FastListItemTypes.SECTION === arg0) {
+                tmp8 = null;
+                tmp7Result = undefined;
+                if (closure_0 != null) {
+                  tmp10 = closure_1;
+                  num2 = -1;
+                  tmp7Result = tmp7(closure_1(tmp2[9]).SECTION_HEADER, arg1, -1);
+                }
+                return tmp7Result;
+              } else if (tmp(tmp2[8]).FastListItemTypes.SECTION_FOOTER === arg0) {
+                tmp4 = null;
+                tmp3Result = undefined;
+                if (closure_0 != null) {
+                  tmp6 = closure_1;
+                  num = -1;
+                  tmp3Result = tmp3(closure_1(tmp2[9]).SECTION_FOOTER, arg1, -1);
+                }
+                return tmp3Result;
+              } else {
+                return;
+              }
+            }
+          }
+          cResult[51] = str;
+          class Je {
             constructor(arg0, arg1) {
               if (closure_1 != null) {
-                let tmp2 = arg1;
-                const tmp3 = closure_2;
+                tmp2 = arg1;
+                tmp3 = closure_2;
                 if (tmp3) {
                   tmp2 = arg0;
                 }
-                tmp(tmp2);
+                tmpResult = tmp(tmp2);
+              }
+              return;
+            }
+          }
+        } else {
+          class Be {
+            constructor(arg0, arg1, arg2) {
+              tmp = closure_0;
+              tmp2 = closure_2;
+              if (closure_0(closure_2[8]).FastListItemTypes.ITEM === arg0) {
+                tmp12 = null;
+                tmp11Result = undefined;
+                if (closure_0 != null) {
+                  num3 = arg2;
+                  tmp14 = closure_1;
+                  ITEM = closure_1(tmp2[9]).ITEM;
+                  if (arg2 == null) {
+                    num3 = -1;
+                  }
+                  tmp11Result = tmp11(ITEM, arg1, num3);
+                }
+                return tmp11Result;
+              } else if (tmp(tmp2[8]).FastListItemTypes.SECTION === arg0) {
+                tmp8 = null;
+                tmp7Result = undefined;
+                if (closure_0 != null) {
+                  tmp10 = closure_1;
+                  num2 = -1;
+                  tmp7Result = tmp7(closure_1(tmp2[9]).SECTION_HEADER, arg1, -1);
+                }
+                return tmp7Result;
+              } else if (tmp(tmp2[8]).FastListItemTypes.SECTION_FOOTER === arg0) {
+                tmp4 = null;
+                tmp3Result = undefined;
+                if (closure_0 != null) {
+                  tmp6 = closure_1;
+                  num = -1;
+                  tmp3Result = tmp3(closure_1(tmp2[9]).SECTION_FOOTER, arg1, -1);
+                }
+                return tmp3Result;
+              } else {
+                return;
               }
             }
           }
-          tmp60 = num48;
-        } else {
-          tmp60 = cResult[51];
         }
-        class Ge {
+        class Je {
           constructor(arg0, arg1) {
             if (closure_1 != null) {
-              let tmp2 = arg1;
-              const tmp3 = closure_2;
+              tmp2 = arg1;
+              tmp3 = closure_2;
               if (tmp3) {
                 tmp2 = arg0;
               }
-              tmp(tmp2);
+              tmpResult = tmp(tmp2);
             }
+            return;
           }
         }
-        let tmp61;
         if (null != tmp29) {
-          tmp61 = tmp58;
-        }
-        let tmp62;
-        if ("animatedScrollPosition" !== tmp26.scrollReporting) {
-          tmp62 = tmp46;
-        }
-        let scrollPosition;
-        if ("animatedScrollPosition" === tmp26.scrollReporting) {
-          scrollPosition = tmp26.scrollPosition;
-        }
-        if (!tmp43) {
-          tmp43 = tmp42;
-        }
-        if (cResult[52] === AnimatedFastList) {
-          if (cResult[53] === tmp40) {
-            if (cResult[54] === tmp48) {
-              if (cResult[55] === tmp49) {
-                if (cResult[56] === (undefined !== tmp11 && tmp11)) {
-                  if (cResult[57] === tmp38) {
-                    if (cResult[58] === tmp37) {
-                      if (cResult[59] === tmp36) {
-                        if (cResult[60] === tmp35) {
-                          if (cResult[61] === tmp33) {
-                            if (cResult[62] === tmp32) {
-                              if (cResult[63] === tmp31) {
-                                if (cResult[64] === tmp30) {
-                                  if (cResult[65] === tmp28) {
-                                    if (cResult[66] === onScrollBeginDrag) {
-                                      if (cResult[67] === onScrollEndDrag) {
-                                        if (cResult[68] === tmp53) {
-                                          if (cResult[69] === tmp25) {
-                                            if (cResult[70] === tmp24) {
-                                              if (cResult[71] === tmp23) {
-                                                if (cResult[72] === tmp22) {
-                                                  if (cResult[73] === tmp21) {
-                                                    if (cResult[74] === tmp20) {
-                                                      if (cResult[75] === tmp51) {
-                                                        if (cResult[76] === tmp17) {
-                                                          if (cResult[77] === tmp16) {
-                                                            if (cResult[78] === tmp15) {
-                                                              if (cResult[79] === tmp14) {
-                                                                if (cResult[80] === tmp13) {
-                                                                  if (cResult[81] === tmp12) {
-                                                                    if (cResult[82] === null == tmp51) {
-                                                                      if (cResult[83] === tmp60) {
-                                                                        if (cResult[84] === "disabled") {
-                                                                          if (cResult[85] === tmp61) {
-                                                                            if (cResult[86] === tmp62) {
-                                                                              if (cResult[87] === ref) {
-                                                                                if (cResult[88] === scrollPosition) {
-                                                                                  let tmp65;
-                                                                                  if (cResult[89] === tmp43) {
-                                                                                    tmp65 = cResult[90];
-                                                                                  }
-                                                                                  return tmp65;
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
+          class Be {
+            constructor(arg0, arg1, arg2) {
+              tmp = closure_0;
+              tmp2 = closure_2;
+              if (closure_0(closure_2[8]).FastListItemTypes.ITEM === arg0) {
+                tmp12 = null;
+                tmp11Result = undefined;
+                if (closure_0 != null) {
+                  num3 = arg2;
+                  tmp14 = closure_1;
+                  ITEM = closure_1(tmp2[9]).ITEM;
+                  if (arg2 == null) {
+                    num3 = -1;
                   }
+                  tmp11Result = tmp11(ITEM, arg1, num3);
                 }
+                return tmp11Result;
+              } else if (tmp(tmp2[8]).FastListItemTypes.SECTION === arg0) {
+                tmp8 = null;
+                tmp7Result = undefined;
+                if (closure_0 != null) {
+                  tmp10 = closure_1;
+                  num2 = -1;
+                  tmp7Result = tmp7(closure_1(tmp2[9]).SECTION_HEADER, arg1, -1);
+                }
+                return tmp7Result;
+              } else if (tmp(tmp2[8]).FastListItemTypes.SECTION_FOOTER === arg0) {
+                tmp4 = null;
+                tmp3Result = undefined;
+                if (closure_0 != null) {
+                  tmp6 = closure_1;
+                  num = -1;
+                  tmp3Result = tmp3(closure_1(tmp2[9]).SECTION_FOOTER, arg1, -1);
+                }
+                return tmp3Result;
+              } else {
+                return;
               }
             }
           }
         }
-        const tmp67 = <AnimatedFastList accessibilityLabel={tmp40} automaticallyAdjustsScrollIndicatorInsets={null == tmp51} batchesToRender={tmp60} refreshControl={tmp53} chunkBase={tmp48} stickySectionsVariant="disabled" footerSize={tmp31} getRecyclerKey={tmp49} headerSize={tmp30} horizontal={undefined !== tmp11 && tmp11} inActionSheet={tmp38} insetStart={tmp36} insetEnd={tmp37} itemSize={tmp35} keyboardDismissMode={tmp33} keyboardShouldPersistTaps={tmp32} onContentSizeChange={tmp61} onLayout={tmp28} onScroll={tmp62} onScrollBeginDrag={onScrollBeginDrag} onScrollEndDrag={onScrollEndDrag} optimizeListItemRender ref={arg1} renderItem={tmp25} renderFooter={tmp24} renderHeader={tmp23} renderSection={tmp21} renderSectionFooter={tmp22} scrollEventThrottle={tmp20} scrollIndicatorInsets={tmp51} scrollPosValue={scrollPosition} sections={tmp15} sectionSize={tmp16} sectionFooterSize={tmp17} showsHorizontalScrollIndicator={tmp14} showsVerticalScrollIndicator={tmp13} stickyHeaderFooter={tmp43} style={tmp12} />;
-        cResult[52] = AnimatedFastList;
-        cResult[53] = tmp40;
-        cResult[54] = tmp48;
-        cResult[55] = tmp49;
-        cResult[56] = undefined !== tmp11 && tmp11;
-        cResult[57] = tmp38;
-        cResult[58] = tmp37;
-        cResult[59] = tmp36;
-        cResult[60] = tmp35;
-        cResult[61] = tmp33;
-        cResult[62] = tmp32;
-        cResult[63] = tmp31;
-        cResult[64] = tmp30;
-        cResult[65] = tmp28;
-        cResult[66] = onScrollBeginDrag;
-        cResult[67] = onScrollEndDrag;
-        cResult[68] = tmp53;
-        cResult[69] = tmp25;
+        if ("animatedScrollPosition" !== tmp26.scrollReporting) {
+          class Be {
+            constructor(arg0, arg1, arg2) {
+              tmp = closure_0;
+              tmp2 = closure_2;
+              if (closure_0(closure_2[8]).FastListItemTypes.ITEM === arg0) {
+                tmp12 = null;
+                tmp11Result = undefined;
+                if (closure_0 != null) {
+                  num3 = arg2;
+                  tmp14 = closure_1;
+                  ITEM = closure_1(tmp2[9]).ITEM;
+                  if (arg2 == null) {
+                    num3 = -1;
+                  }
+                  tmp11Result = tmp11(ITEM, arg1, num3);
+                }
+                return tmp11Result;
+              } else if (tmp(tmp2[8]).FastListItemTypes.SECTION === arg0) {
+                tmp8 = null;
+                tmp7Result = undefined;
+                if (closure_0 != null) {
+                  tmp10 = closure_1;
+                  num2 = -1;
+                  tmp7Result = tmp7(closure_1(tmp2[9]).SECTION_HEADER, arg1, -1);
+                }
+                return tmp7Result;
+              } else if (tmp(tmp2[8]).FastListItemTypes.SECTION_FOOTER === arg0) {
+                tmp4 = null;
+                tmp3Result = undefined;
+                if (closure_0 != null) {
+                  tmp6 = closure_1;
+                  num = -1;
+                  tmp3Result = tmp3(closure_1(tmp2[9]).SECTION_FOOTER, arg1, -1);
+                }
+                return tmp3Result;
+              } else {
+                return;
+              }
+            }
+          }
+        }
+        if ("animatedScrollPosition" === tmp26.scrollReporting) {
+          class Be {
+            constructor(arg0, arg1, arg2) {
+              tmp = closure_0;
+              tmp2 = closure_2;
+              if (closure_0(closure_2[8]).FastListItemTypes.ITEM === arg0) {
+                tmp12 = null;
+                tmp11Result = undefined;
+                if (closure_0 != null) {
+                  num3 = arg2;
+                  tmp14 = closure_1;
+                  ITEM = closure_1(tmp2[9]).ITEM;
+                  if (arg2 == null) {
+                    num3 = -1;
+                  }
+                  tmp11Result = tmp11(ITEM, arg1, num3);
+                }
+                return tmp11Result;
+              } else if (tmp(tmp2[8]).FastListItemTypes.SECTION === arg0) {
+                tmp8 = null;
+                tmp7Result = undefined;
+                if (closure_0 != null) {
+                  tmp10 = closure_1;
+                  num2 = -1;
+                  tmp7Result = tmp7(closure_1(tmp2[9]).SECTION_HEADER, arg1, -1);
+                }
+                return tmp7Result;
+              } else if (tmp(tmp2[8]).FastListItemTypes.SECTION_FOOTER === arg0) {
+                tmp4 = null;
+                tmp3Result = undefined;
+                if (closure_0 != null) {
+                  tmp6 = closure_1;
+                  num = -1;
+                  tmp3Result = tmp3(closure_1(tmp2[9]).SECTION_FOOTER, arg1, -1);
+                }
+                return tmp3Result;
+              } else {
+                return;
+              }
+            }
+          }
+        }
+        if (!(undefined !== tmp8 && tmp8)) {
+          class Be {
+            constructor(arg0, arg1, arg2) {
+              tmp = closure_0;
+              tmp2 = closure_2;
+              if (closure_0(closure_2[8]).FastListItemTypes.ITEM === arg0) {
+                tmp12 = null;
+                tmp11Result = undefined;
+                if (closure_0 != null) {
+                  num3 = arg2;
+                  tmp14 = closure_1;
+                  ITEM = closure_1(tmp2[9]).ITEM;
+                  if (arg2 == null) {
+                    num3 = -1;
+                  }
+                  tmp11Result = tmp11(ITEM, arg1, num3);
+                }
+                return tmp11Result;
+              } else if (tmp(tmp2[8]).FastListItemTypes.SECTION === arg0) {
+                tmp8 = null;
+                tmp7Result = undefined;
+                if (closure_0 != null) {
+                  tmp10 = closure_1;
+                  num2 = -1;
+                  tmp7Result = tmp7(closure_1(tmp2[9]).SECTION_HEADER, arg1, -1);
+                }
+                return tmp7Result;
+              } else if (tmp(tmp2[8]).FastListItemTypes.SECTION_FOOTER === arg0) {
+                tmp4 = null;
+                tmp3Result = undefined;
+                if (closure_0 != null) {
+                  tmp6 = closure_1;
+                  num = -1;
+                  tmp3Result = tmp3(closure_1(tmp2[9]).SECTION_FOOTER, arg1, -1);
+                }
+                return tmp3Result;
+              } else {
+                return;
+              }
+            }
+          }
+        }
+        if (cResult[53] === tmp57) {
+          class Be {
+            constructor(arg0, arg1, arg2) {
+              tmp = closure_0;
+              tmp2 = closure_2;
+              if (closure_0(closure_2[8]).FastListItemTypes.ITEM === arg0) {
+                tmp12 = null;
+                tmp11Result = undefined;
+                if (closure_0 != null) {
+                  num3 = arg2;
+                  tmp14 = closure_1;
+                  ITEM = closure_1(tmp2[9]).ITEM;
+                  if (arg2 == null) {
+                    num3 = -1;
+                  }
+                  tmp11Result = tmp11(ITEM, arg1, num3);
+                }
+                return tmp11Result;
+              } else if (tmp(tmp2[8]).FastListItemTypes.SECTION === arg0) {
+                tmp8 = null;
+                tmp7Result = undefined;
+                if (closure_0 != null) {
+                  tmp10 = closure_1;
+                  num2 = -1;
+                  tmp7Result = tmp7(closure_1(tmp2[9]).SECTION_HEADER, arg1, -1);
+                }
+                return tmp7Result;
+              } else if (tmp(tmp2[8]).FastListItemTypes.SECTION_FOOTER === arg0) {
+                tmp4 = null;
+                tmp3Result = undefined;
+                if (closure_0 != null) {
+                  tmp6 = closure_1;
+                  num = -1;
+                  tmp3Result = tmp3(closure_1(tmp2[9]).SECTION_FOOTER, arg1, -1);
+                }
+                return tmp3Result;
+              } else {
+                return;
+              }
+            }
+          }
+        }
+        const tmp67 = <tmp57 accessibilityLabel={tmp40} automaticallyAdjustsScrollIndicatorInsets={null == tmp49} batchesToRender={tmp60} refreshControl={tmp53} chunkBase={tmp46} stickySectionsVariant="disabled" footerSize={tmp31} getRecyclerKey={tmp47} headerSize={tmp30} horizontal={undefined !== tmp10 && tmp10} inActionSheet={tmp38} insetStart={tmp36} insetEnd={tmp37} itemSize={tmp35} keyboardDismissMode={tmp33} keyboardShouldPersistTaps={tmp32} onContentSizeChange={undefined} onLayout={tmp28} onScroll={undefined} onScrollBeginDrag={onScrollBeginDrag} onScrollEndDrag={onScrollEndDrag} optimizeListItemRender ref={tmp25} renderItem={tmp24} renderFooter={tmp23} renderHeader={tmp22} renderSection={tmp20} renderSectionFooter={tmp21} scrollEventThrottle={tmp19} scrollIndicatorInsets={tmp49} scrollPosValue={undefined} sections={tmp14} sectionSize={tmp15} sectionFooterSize={tmp16} showsHorizontalScrollIndicator={tmp13} showsVerticalScrollIndicator={tmp12} stickyHeaderFooter={undefined !== tmp8 && tmp8} style={tmp11} />;
+        cResult[53] = tmp57;
+        cResult[54] = tmp40;
+        cResult[55] = tmp46;
+        cResult[56] = tmp47;
+        cResult[57] = undefined !== tmp10 && tmp10;
+        cResult[58] = tmp38;
+        cResult[59] = tmp37;
+        cResult[60] = tmp36;
+        cResult[61] = tmp35;
+        cResult[62] = tmp33;
+        cResult[63] = tmp32;
+        cResult[64] = tmp31;
+        cResult[65] = tmp30;
+        cResult[66] = tmp28;
+        cResult[67] = onScrollBeginDrag;
+        cResult[68] = onScrollEndDrag;
+        cResult[69] = tmp53;
         cResult[70] = tmp24;
         cResult[71] = tmp23;
         cResult[72] = tmp22;
         cResult[73] = tmp21;
         cResult[74] = tmp20;
-        cResult[75] = tmp51;
-        cResult[76] = tmp17;
+        cResult[75] = tmp19;
+        cResult[76] = tmp49;
         cResult[77] = tmp16;
         cResult[78] = tmp15;
         cResult[79] = tmp14;
         cResult[80] = tmp13;
         cResult[81] = tmp12;
-        cResult[82] = null == tmp51;
-        cResult[83] = tmp60;
-        cResult[84] = "disabled";
-        cResult[85] = tmp61;
-        cResult[86] = tmp62;
-        cResult[87] = ref;
-        cResult[88] = scrollPosition;
-        cResult[89] = tmp43;
-        cResult[90] = tmp67;
-        tmp65 = tmp67;
+        cResult[82] = tmp11;
+        cResult[83] = null == tmp49;
+        cResult[84] = tmp60;
+        cResult[85] = "disabled";
+        cResult[86] = undefined;
+        cResult[87] = undefined;
+        cResult[88] = tmp25;
+        cResult[89] = undefined;
+        cResult[90] = undefined !== tmp8 && tmp8;
+        cResult[91] = tmp67;
       }
-      class Ge {
+      class Je {
         constructor(arg0, arg1) {
           if (closure_1 != null) {
-            let tmp2 = arg1;
-            const tmp3 = closure_2;
+            tmp2 = arg1;
+            tmp3 = closure_2;
             if (tmp3) {
               tmp2 = arg0;
             }
-            tmp(tmp2);
+            tmpResult = tmp(tmp2);
           }
+          return;
         }
       }
-      cResult[47] = undefined !== tmp11 && tmp11;
-      cResult[48] = tmp29;
-      cResult[49] = Ge;
-      tmp58 = Ge;
+      cResult[48] = undefined !== tmp10 && tmp10;
+      cResult[49] = tmp29;
+      cResult[50] = Je;
     }
     let tmp54;
     if (true === tmp27) {
+      class Be {
+        constructor(arg0, arg1, arg2) {
+          tmp = closure_0;
+          tmp2 = closure_2;
+          if (closure_0(closure_2[8]).FastListItemTypes.ITEM === arg0) {
+            tmp12 = null;
+            tmp11Result = undefined;
+            if (closure_0 != null) {
+              num3 = arg2;
+              tmp14 = closure_1;
+              ITEM = closure_1(tmp2[9]).ITEM;
+              if (arg2 == null) {
+                num3 = -1;
+              }
+              tmp11Result = tmp11(ITEM, arg1, num3);
+            }
+            return tmp11Result;
+          } else if (tmp(tmp2[8]).FastListItemTypes.SECTION === arg0) {
+            tmp8 = null;
+            tmp7Result = undefined;
+            if (closure_0 != null) {
+              tmp10 = closure_1;
+              num2 = -1;
+              tmp7Result = tmp7(closure_1(tmp2[9]).SECTION_HEADER, arg1, -1);
+            }
+            return tmp7Result;
+          } else if (tmp(tmp2[8]).FastListItemTypes.SECTION_FOOTER === arg0) {
+            tmp4 = null;
+            tmp3Result = undefined;
+            if (closure_0 != null) {
+              tmp6 = closure_1;
+              num = -1;
+              tmp3Result = tmp3(closure_1(tmp2[9]).SECTION_FOOTER, arg1, -1);
+            }
+            return tmp3Result;
+          } else {
+            return;
+          }
+        }
+      }
       if (true === tmp38) {
-        class Ge {
+        class Be {
+          constructor(arg0, arg1, arg2) {
+            tmp = closure_0;
+            tmp2 = closure_2;
+            if (closure_0(closure_2[8]).FastListItemTypes.ITEM === arg0) {
+              tmp12 = null;
+              tmp11Result = undefined;
+              if (closure_0 != null) {
+                num3 = arg2;
+                tmp14 = closure_1;
+                ITEM = closure_1(tmp2[9]).ITEM;
+                if (arg2 == null) {
+                  num3 = -1;
+                }
+                tmp11Result = tmp11(ITEM, arg1, num3);
+              }
+              return tmp11Result;
+            } else if (tmp(tmp2[8]).FastListItemTypes.SECTION === arg0) {
+              tmp8 = null;
+              tmp7Result = undefined;
+              if (closure_0 != null) {
+                tmp10 = closure_1;
+                num2 = -1;
+                tmp7Result = tmp7(closure_1(tmp2[9]).SECTION_HEADER, arg1, -1);
+              }
+              return tmp7Result;
+            } else if (tmp(tmp2[8]).FastListItemTypes.SECTION_FOOTER === arg0) {
+              tmp4 = null;
+              tmp3Result = undefined;
+              if (closure_0 != null) {
+                tmp6 = closure_1;
+                num = -1;
+                tmp3Result = tmp3(closure_1(tmp2[9]).SECTION_FOOTER, arg1, -1);
+              }
+              return tmp3Result;
+            } else {
+              return;
+            }
+          }
+        }
+        class Je {
           constructor(arg0, arg1) {
             if (closure_1 != null) {
-              let tmp2 = arg1;
-              const tmp3 = closure_2;
+              tmp2 = arg1;
+              tmp3 = closure_2;
               if (tmp3) {
                 tmp2 = arg0;
               }
-              tmp(tmp2);
+              tmpResult = tmp(tmp2);
             }
+            return;
           }
         }
         tmp54 = <RefreshControl refreshing={false} onRefresh={null} tintColor="transparent" />;
       }
     }
-    cResult[44] = tmp38;
-    cResult[45] = tmp27;
-    cResult[46] = tmp54;
-    tmp53 = tmp54;
+    cResult[45] = tmp38;
+    cResult[46] = tmp27;
+    cResult[47] = tmp54;
   }
-  const obj4 = { estimatedListSize: tmp39, horizontal: undefined !== tmp11 && tmp11 };
-  cResult[35] = tmp39;
-  cResult[36] = undefined !== tmp11 && tmp11;
-  cResult[37] = obj4;
-  tmp47 = obj4;
-}) : ((inActionSheet, ref) => {
+  const obj4 = { estimatedListSize: tmp39, horizontal: undefined !== tmp10 && tmp10 };
+  cResult[36] = tmp39;
+  cResult[37] = undefined !== tmp10 && tmp10;
+  cResult[38] = obj4;
+  tmp45 = obj4;
+}) : (function FastestList(inActionSheet) {
   let AnimatedFastList;
   let accessibilityLabel;
   let enabled;
@@ -527,6 +1152,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let onScroll;
   let onScrollBeginDrag;
   let onScrollEndDrag;
+  let ref;
   let renderAhead;
   let renderItem;
   let renderListFooter;
@@ -572,8 +1198,8 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   if (sectionHeaderIsSticky === undefined) {
     sectionHeaderIsSticky = true;
   }
-  ({ sectionFooterSize, sections, showsHorizontalScrollIndicator, showsVerticalScrollIndicator, style } = inActionSheet);
-  const merged = Object.assign(inActionSheet, Object.assign({ accessibilityLabel: 0, enabled: 0, estimatedListSize: 0, horizontal: 0, inActionSheet: 0, insetStart: 0, insetEnd: 0, itemSize: 0, keyboardDismissMode: 0, keyboardShouldPersistTaps: 0, keyExtractor: 0, listFooterSize: 0, listFooterAlwaysMounted: 0, listHeaderSize: 0, listHeaderAlwaysMounted: 0, onContentLengthChange: 0, onLayout: 0, preventNativeModalDismiss: 0, renderAhead: 0, renderItem: 0, renderListFooter: 0, renderListHeader: 0, renderSectionHeader: 0, renderSectionFooter: 0, scrollEventThrottle: 0, scrollIndicatorInsetEnd: 0, scrollIndicatorInsetStart: 0, sectionHeaderSize: 0, sectionHeaderIsSticky: 0, sectionFooterSize: 0, sections: 0, showsHorizontalScrollIndicator: 0, showsVerticalScrollIndicator: 0, style: 0 }));
+  ({ sectionFooterSize, sections, showsHorizontalScrollIndicator, showsVerticalScrollIndicator, style, ref } = inActionSheet);
+  const merged = Object.assign(inActionSheet, Object.assign({ accessibilityLabel: 0, enabled: 0, estimatedListSize: 0, horizontal: 0, inActionSheet: 0, insetStart: 0, insetEnd: 0, itemSize: 0, keyboardDismissMode: 0, keyboardShouldPersistTaps: 0, keyExtractor: 0, listFooterSize: 0, listFooterAlwaysMounted: 0, listHeaderSize: 0, listHeaderAlwaysMounted: 0, onContentLengthChange: 0, onLayout: 0, preventNativeModalDismiss: 0, renderAhead: 0, renderItem: 0, renderListFooter: 0, renderListHeader: 0, renderSectionHeader: 0, renderSectionFooter: 0, scrollEventThrottle: 0, scrollIndicatorInsetEnd: 0, scrollIndicatorInsetStart: 0, sectionHeaderSize: 0, sectionHeaderIsSticky: 0, sectionFooterSize: 0, sections: 0, showsHorizontalScrollIndicator: 0, showsVerticalScrollIndicator: 0, style: 0, ref: 0 }));
   let tmp3 = keyExtractor;
   let tmp2 = inActionSheet;
   let tmp4 = inActionSheet(keyExtractor[6])(merged, horizontal);
@@ -678,7 +1304,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     listHeaderAlwaysMounted = listFooterAlwaysMounted;
   }
   return tmp11(AnimatedFastList, obj2);
-}));
+});
 const result = size.fileFinishedImporting("modules/fastest_list/FastestList.ios.tsx");
 
-export default forwardRefResult;
+export default tmp2;

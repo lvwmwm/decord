@@ -1,18 +1,18 @@
-// Module ID: 11216
-// Function ID: 11217
+// Module ID: 11331
+// Function ID: 11332
 // Name: contentHandlers
-// Dependencies: [5, 11214, 7529, 8061, 4571, 11217, 11177, 7861, 6688, 4860, 11222, 1987, 11, 2028, 1126, 6695, 4573, 5714, 9946, 2]
+// Dependencies: [5, 9625, 9252, 8470, 4763, 11332, 9628, 8279, 6865, 5054, 11337, 1999, 11, 2040, 1126, 6872, 4765, 5297, 9473, 2]
 
-// Module 11216 (contentHandlers)
+// Module 11331 (contentHandlers)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ToastUtils from "ToastUtils" /* 4573 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5714 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6688 */;
-import ClipboardUtils from "ClipboardUtils" /* 6695 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
-import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 11214 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ToastUtils from "ToastUtils" /* 4765 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5297 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6865 */;
+import ClipboardUtils from "ClipboardUtils" /* 6872 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
+import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 9625 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -27,13 +27,13 @@ let obj = {
       showLongPressURLActionSheetDefault(obj);
     }
   },
-  onTapAttachmentLink: function() {
+  onTapAttachmentLink() {
     return closure_6(...arguments);
   },
-  onTapAttachmentTextPreview: function() {
+  onTapAttachmentTextPreview() {
     return closure_5(...arguments);
   },
-  onLongPressAttachmentLink: function() {
+  onLongPressAttachmentLink() {
     return closure_4(...arguments);
   },
   onTapMention(nativeEvent) {
@@ -49,7 +49,7 @@ let obj = {
     let roleId;
     let roleName;
     let userId;
-    let obj = parsedUserId(11177);
+    let obj = parsedUserId(9628);
     const nativeSyntheticEventData = obj.getNativeSyntheticEventData(nativeEvent);
     ({ userId, channelId, roleName, parsedUserId } = nativeSyntheticEventData);
     ({ roleId, guildId } = nativeSyntheticEventData);
@@ -64,7 +64,7 @@ let obj = {
         if (null != guildId) {
           const obj3 = { guildId, roleId, channelId };
           const obj7 = ActionSheetActionCreatorsDefault;
-          obj7.openLazy(parsedUserId(1987)(11222, dependencyMap.paths), "RoleMembersActionSheet", obj3);
+          obj7.openLazy(parsedUserId(1999)(11337, dependencyMap.paths), "RoleMembersActionSheet", obj3);
         }
       }
       if ("@everyone" === roleName) {
@@ -72,13 +72,13 @@ let obj = {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           const obj4 = { guildId, roleId: obj6.castGuildIdAsEveryoneGuildRoleId(guildId), channelId };
           ActionSheetActionCreatorsDefault;
-          const tmp12 = parsedUserId(1987)(11222, dependencyMap.paths);
+          const tmp12 = parsedUserId(1999)(11337, dependencyMap.paths);
           obj6 = SnowflakeUtilsDefault;
           openLazy(tmp12, "RoleMembersActionSheet", obj4);
         }
       }
       if (null == roleName) {
-        const DeveloperMode = tmp(2028).DeveloperMode;
+        const DeveloperMode = tmp(2040).DeveloperMode;
         if (DeveloperMode.getSetting()) {
           let obj9;
           if (null != parsedUserId) {
@@ -125,7 +125,7 @@ let obj = {
   onTapEmoji(nativeEvent) {
     const node = nativeEvent.nativeEvent.node;
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequire(9946, dependencyMap.paths), "MessageEmojiActionSheet", { emojiNode: node });
+    obj.openLazy(asyncRequire(9473, dependencyMap.paths), "MessageEmojiActionSheet", { emojiNode: node });
   }
 };
 let closure_6 = _asyncToGenerator(async (arg0) => {

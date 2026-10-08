@@ -1,12 +1,12 @@
-// Module ID: 15771
-// Function ID: 15772
+// Module ID: 16029
+// Function ID: 16030
 // Name: VisibilitySensor
-// Dependencies: [19, 17, 21, 558, 576, 1484, 2]
+// Dependencies: [19, 17, 21, 558, 576, 1496, 2]
 
-// Module 15771 (VisibilitySensor)
+// Module 16029 (VisibilitySensor)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -91,15 +91,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((resetKey) => {
   }
   View = tmp7;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn3 = function x() {
+    function stopWatching() {
       if (null !== ref.current) {
         const _clearInterval = clearInterval;
         clearInterval(ref.current);
         ref.current = null;
       }
-    };
-    cResult[5] = fn3;
-    tmp8 = fn3;
+    }
+    cResult[5] = stopWatching;
+    tmp8 = stopWatching;
   } else {
     tmp8 = cResult[5];
   }
@@ -136,7 +136,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((resetKey) => {
       return tmp16;
     }
   }
-  class K {
+  class E {
     constructor() {
       closure_6(width, height);
       return closure_7;
@@ -146,10 +146,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((resetKey) => {
   cResult[6] = tmp7;
   cResult[7] = height;
   cResult[8] = width;
-  cResult[9] = K;
+  cResult[9] = E;
   cResult[10] = items2;
   tmp10 = items2;
-  tmp9 = K;
+  tmp9 = E;
 }) : ((onChange) => {
   let children;
   let items3;

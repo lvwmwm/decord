@@ -1,22 +1,22 @@
-// Module ID: 15736
-// Function ID: 15737
+// Module ID: 15994
+// Function ID: 15995
 // Name: ProfileCustomizationTryItOutSettingScreen
-// Dependencies: [19, 17, 1377, 1085, 1379, 21, 4896, 587, 558, 576, 6664, 6688, 504, 10479, 7841, 7869, 7078, 15172, 15173, 7849, 1394, 1252, 14429, 2]
+// Dependencies: [19, 17, 1389, 1085, 1391, 21, 5090, 587, 558, 576, 6841, 6865, 504, 10076, 8259, 8287, 7264, 15434, 15435, 8267, 1406, 1264, 14655, 2]
 
-// Module 15736 (ProfileCustomizationTryItOutSettingScreen)
+// Module 15994 (ProfileCustomizationTryItOutSettingScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1394 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7078 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 7849 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7869 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1406 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7264 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 8267 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8287 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_11 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileCustomizationTryItOutSettingScreen() {
   let analyticsLocations;
   let categories;
   let currentUser;
@@ -135,7 +135,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[9] = setPendingAvatarDecoration;
   cResult[10] = M;
   cResult[11] = items2;
-}) : (() => {
+}) : (function ProfileCustomizationTryItOutSettingScreen() {
   let analyticsLocations;
   let categories;
   let sourceAnalyticsLocations;

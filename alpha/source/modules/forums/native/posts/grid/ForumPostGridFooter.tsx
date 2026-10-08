@@ -1,19 +1,19 @@
-// Module ID: 11645
-// Function ID: 11646
+// Module ID: 11710
+// Function ID: 11711
 // Name: ForumPostGridFooter
-// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 11593, 11646, 11647, 10040, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 587, 558, 576, 11656, 11711, 11712, 10427, 2]
 
-// Module 11645 (ForumPostGridFooter)
+// Module 11710 (ForumPostGridFooter)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import useTypingUsersIds from "useTypingUsersIds" /* 11593 */;
-import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 11646 */;
-import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 11647 */;
+import useTypingUsersIds from "useTypingUsersIds" /* 11656 */;
+import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 11711 */;
+import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 11712 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -22,14 +22,14 @@ let metroImportDefault;
 let metroRequire;
 let size;
 let tmp;
-const ForumPostReactions = tmp(10040);
+const ForumPostReactions = tmp(10427);
 const View = react_native.View;
 const AnalyticsObjects = Constants.AnalyticsObjects;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 let obj = { footer: { display: "flex", alignItems: "center", flexDirection: "row", justifyContent: "flex-start", marginTop: 12 }, dot: size };
 size = { height: 4, width: 4, borderRadius: 2, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginHorizontal: 8 };
 let closure_8 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostGridFooter(arg0) {
   let firstMessage;
   let hasUnreads;
   let items;
@@ -119,7 +119,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = thread;
   cResult[2] = tmp7;
   tmp6 = tmp7;
-}) : ((parentChannel) => {
+}) : (function ForumPostGridFooter(parentChannel) {
   let firstMessage;
   let hasUnreads;
   let items;

@@ -1,16 +1,16 @@
-// Module ID: 15742
-// Function ID: 15743
+// Module ID: 16000
+// Function ID: 16001
 // Name: useMaybeFetchShopHome
-// Dependencies: [32, 19, 4782, 7066, 7108, 1087, 558, 576, 504, 7111, 7065, 15743, 2]
+// Dependencies: [32, 19, 4976, 7252, 7294, 1087, 558, 576, 504, 7297, 7251, 16001, 2]
 
-// Module 15742 (useMaybeFetchShopHome)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7065 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7111 */;
+// Module 16000 (useMaybeFetchShopHome)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7251 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7297 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ExperimentStore_mod from "ExperimentStore" /* 4782 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7066 */;
-import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 7108 */;
+import ExperimentStore_mod from "ExperimentStore" /* 4976 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7252 */;
+import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 7294 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -27,16 +27,16 @@ let _slicedToArray = _slicedToArray_mod;
 ({ useEffect: c3, useCallback: closure_4, useMemo: hasOwnProperty } = react);
 let ExperimentStore = ExperimentStore_mod;
 ({ COLLECTIBLES_SHOP_CACHE_DURATION_MS: c9, COLLECTIBLES_SHOP_FETCH_ERROR_RETRY_THRESHOLD_MS: c10 } = CollectiblesShopConstants);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetchCollectiblesShopHome(arg0, arg1, arg2, arg3) {
   let closure_0;
   let closure_1;
   let hasLoadedExperiments;
   let skipNumCategories;
-  let tmp13;
-  let tmp15;
-  let tmp4;
+  let tmp10;
+  let tmp14;
+  let tmp16;
   let tmp5;
-  let tmp8;
+  let tmp6;
   let tmp9;
   _require = arg0;
   dependencyMap = arg2;
@@ -44,151 +44,235 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
   let tmp2 = dependencyMap;
   let obj = require("react");
   const cResult = obj.c(35);
+  const tmp4 = undefined !== arg3 && arg3;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [ExperimentStore];
-    class E {
+    class C {
       constructor() {
-        return closure_6.hasLoadedExperiments;
+        return hasLoadedExperiments.hasLoadedExperiments;
       }
     }
     let num = 0;
     cResult[0] = items;
     let num2 = 1;
-    cResult[1] = E;
-    tmp4 = items;
-    tmp5 = E;
+    cResult[1] = C;
+    tmp5 = items;
+    tmp6 = C;
   } else {
-    [tmp4, tmp5] = cResult;
+    [tmp5, tmp6] = cResult;
   }
   const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [CollectiblesCategoryStore];
-    class E {
+    const items1 = [skipNumCategories];
+    class C {
       constructor() {
-        return closure_6.hasLoadedExperiments;
+        return hasLoadedExperiments.hasLoadedExperiments;
       }
     }
     cResult[2] = items1;
-    cResult[3] = tmp11;
-    tmp9 = tmp11;
-    tmp8 = items1;
+    cResult[3] = tmp12;
+    tmp10 = tmp12;
+    tmp9 = items1;
   } else {
-    tmp8 = cResult[2];
-    tmp9 = cResult[3];
+    tmp9 = cResult[2];
+    tmp10 = cResult[3];
   }
   const tmpResult3 = tmp(504);
-  const stateFromStores1 = tmpResult3.useStateFromStores(tmp8, tmp9);
+  const stateFromStores1 = tmpResult3.useStateFromStores(tmp9, tmp10);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [CollectiblesShopHomeStore];
-    class E {
+    const items2 = [closure_8];
+    class C {
       constructor() {
-        return closure_6.hasLoadedExperiments;
+        return hasLoadedExperiments.hasLoadedExperiments;
       }
     }
     cResult[4] = items2;
-    tmp13 = items2;
+    tmp14 = items2;
   } else {
-    tmp13 = cResult[4];
+    tmp14 = cResult[4];
   }
   if (cResult[5] !== arg0) {
-    class L {
-      constructor() {
-        obj = closure_8;
-        tmp = closure_0;
-        items = [, , , , , , , ];
-        items[0] = closure_8.getShopBlocks(closure_0);
-        num = closure_8.getLastSuccessfulFetch(closure_0);
-        if (num == null) {
-          num = 0;
-        }
-        items[1] = num;
-        num2 = obj.getLastErrorTimestamp(tmp);
-        if (num2 == null) {
-          num2 = 0;
-        }
-        items[2] = num2;
-        items[3] = obj.getLastFetchOptions(tmp);
-        items[4] = obj.getFetchShopHomeError(tmp);
-        items[5] = obj.getIsFetchingShopHome(tmp);
-        items[6] = obj.getHasKnownStaleData(tmp);
-        items[7] = obj.getShopHomeConfigOverride();
-        return items;
+    const fn = function y() {
+      const items = [CollectiblesShopHomeStore.getShopBlocks(closure_0), , , , , , , ];
+      let num = CollectiblesShopHomeStore.getLastSuccessfulFetch(closure_0);
+      if (num == null) {
+        num = 0;
       }
-    }
+      items[1] = num;
+      let num2 = obj.getLastErrorTimestamp(tmp);
+      if (num2 == null) {
+        num2 = 0;
+      }
+      items[2] = num2;
+      items[3] = CollectiblesShopHomeStore.getLastFetchOptions(closure_0);
+      items[4] = CollectiblesShopHomeStore.getFetchShopHomeError(closure_0);
+      items[5] = CollectiblesShopHomeStore.getIsFetchingShopHome(closure_0);
+      items[6] = CollectiblesShopHomeStore.getHasKnownStaleData(closure_0);
+      items[7] = CollectiblesShopHomeStore.getShopHomeConfigOverride();
+      return items;
+    };
     cResult[5] = arg0;
-    class E {
+    class C {
       constructor() {
-        return closure_6.hasLoadedExperiments;
+        return hasLoadedExperiments.hasLoadedExperiments;
       }
     }
-    cResult[6] = L;
-    tmp15 = L;
+    cResult[6] = fn;
+    tmp16 = fn;
   } else {
-    class L {
-      constructor() {
-        obj = closure_8;
-        tmp = closure_0;
-        items = [, , , , , , , ];
-        items[0] = closure_8.getShopBlocks(closure_0);
-        num = closure_8.getLastSuccessfulFetch(closure_0);
-        if (num == null) {
-          num = 0;
-        }
-        items[1] = num;
-        num2 = obj.getLastErrorTimestamp(tmp);
-        if (num2 == null) {
-          num2 = 0;
-        }
-        items[2] = num2;
-        items[3] = obj.getLastFetchOptions(tmp);
-        items[4] = obj.getFetchShopHomeError(tmp);
-        items[5] = obj.getIsFetchingShopHome(tmp);
-        items[6] = obj.getHasKnownStaleData(tmp);
-        items[7] = obj.getShopHomeConfigOverride();
-        return items;
-      }
-    }
+    tmp16 = cResult[6];
   }
   const tmpResult4 = tmp(504);
-  const tmp16 = stateFromStores(tmpResult4.useStateFromStoresArray(tmp13, tmp15), 8);
-  let closure_3 = tmp16[2];
-  let closure_4 = tmp16[4];
-  let closure_5 = tmp16[5];
-  ExperimentStore = tmp16[6];
+  const tmp17 = stateFromStores(tmpResult4.useStateFromStoresArray(tmp14, tmp16), 8);
+  const first = tmp17[0];
+  let closure_3 = tmp20;
+  let closure_4 = tmp22;
+  let closure_5 = tmp23;
+  ExperimentStore = tmp24;
   if (cResult[7] === arg1) {
-    class L {
-      constructor() {
-        obj = closure_8;
-        tmp = closure_0;
-        items = [, , , , , , , ];
-        items[0] = closure_8.getShopBlocks(closure_0);
-        num = closure_8.getLastSuccessfulFetch(closure_0);
-        if (num == null) {
-          num = 0;
-        }
-        items[1] = num;
-        num2 = obj.getLastErrorTimestamp(tmp);
-        if (num2 == null) {
-          num2 = 0;
-        }
-        items[2] = num2;
-        items[3] = obj.getLastFetchOptions(tmp);
-        items[4] = obj.getFetchShopHomeError(tmp);
-        items[5] = obj.getIsFetchingShopHome(tmp);
-        items[6] = obj.getHasKnownStaleData(tmp);
-        items[7] = obj.getShopHomeConfigOverride();
-        return items;
+    if (cResult[8] === tmp17[7]) {
+      let tmp26;
+      if (cResult[9] === stateFromStores1) {
+        tmp26 = cResult[10];
       }
+      skipNumCategories = tmp26;
+      if (cResult[11] === tmp26) {
+        let tmp28;
+        if (cResult[12] === tmp17[3]) {
+          tmp28 = cResult[13];
+        }
+        closure_8 = tmp30;
+        class C {
+          constructor() {
+            return hasLoadedExperiments.hasLoadedExperiments;
+          }
+        }
+        let flag = tmp23;
+        const useHasExpiredShopBlocks = tmp31.useHasExpiredShopBlocks;
+        if (tmp17[5] == null) {
+          flag = false;
+        }
+        const hasExpiredShopBlocks = useHasExpiredShopBlocks(first, flag, tmp4);
+        let tmp34 = !hasExpiredShopBlocks;
+        if (tmp34) {
+          let _Date = Date;
+          tmp34 = Date.now() - tmp19 < closure_9;
+        }
+        closure_9 = tmp34;
+        if (cResult[14] === stateFromStores) {
+          if (cResult[15] === tmp34) {
+            if (cResult[16] === tmp26) {
+              if (cResult[17] === !tmp28) {
+                if (cResult[18] === tmp17[4]) {
+                  if (cResult[19] === tmp17[6]) {
+                    if (cResult[20] === tmp17[5]) {
+                      if (cResult[21] === tmp17[2]) {
+                        if (cResult[22] === arg2) {
+                          let tmp36;
+                          let tmp37;
+                          if (cResult[23] === arg0) {
+                            tmp36 = cResult[24];
+                            tmp37 = cResult[25];
+                          }
+                          closure_3(tmp37, tmp36);
+                          class C {
+                            constructor() {
+                              return hasLoadedExperiments.hasLoadedExperiments;
+                            }
+                          }
+                          class G {
+                            constructor() {
+                              const obj = CollectiblesActionCreators;
+                              const collectiblesShopHome = obj.fetchCollectiblesShopHome(closure_0, skipNumCategories, closure_1);
+                            }
+                          }
+                          cResult[26] = tmp26;
+                          cResult[27] = arg2;
+                          cResult[28] = arg0;
+                          cResult[29] = G;
+                          class U {
+                            constructor() {
+                              const tmp = stateFromStores;
+                              if (tmp) {
+                                const tmp2 = closure_5;
+                                if (!tmp2) {
+                                  const _Date = Date;
+                                  const tmp8 = null != closure_4 && Date.now() - closure_3 < authStore;
+                                  if (!tmp8) {
+                                    const tmp9 = closure_8 || !closure_9 || hasLoadedExperiments;
+                                    if (tmp9) {
+                                      const obj = CollectiblesActionCreators;
+                                      const collectiblesShopHome = obj.fetchCollectiblesShopHome(closure_0, skipNumCategories, closure_1);
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        class U {
+          constructor() {
+            const tmp = stateFromStores;
+            if (tmp) {
+              const tmp2 = closure_5;
+              if (!tmp2) {
+                const _Date = Date;
+                const tmp8 = null != closure_4 && Date.now() - closure_3 < authStore;
+                if (!tmp8) {
+                  const tmp9 = closure_8 || !closure_9 || hasLoadedExperiments;
+                  if (tmp9) {
+                    const obj = CollectiblesActionCreators;
+                    const collectiblesShopHome = obj.fetchCollectiblesShopHome(closure_0, skipNumCategories, closure_1);
+                  }
+                }
+              }
+            }
+          }
+        }
+        const items3 = [stateFromStores, tmp17[5], tmp17[4], tmp17[2], tmp34, tmp17[6], !tmp28, tmp26, arg0, arg2];
+        cResult[14] = stateFromStores;
+        cResult[15] = tmp34;
+        cResult[16] = tmp26;
+        cResult[17] = !tmp28;
+        cResult[18] = tmp17[4];
+        cResult[19] = tmp17[6];
+        cResult[20] = tmp17[5];
+        cResult[21] = tmp17[2];
+        cResult[22] = arg2;
+        cResult[23] = arg0;
+        cResult[24] = items3;
+        cResult[25] = U;
+        tmp37 = U;
+        tmp36 = items3;
+      }
+      class C {
+        constructor() {
+          return hasLoadedExperiments.hasLoadedExperiments;
+        }
+      }
+      cResult[11] = tmp26;
+      cResult[12] = tmp17[3];
+      cResult[13] = tmp29;
+      tmp28 = tmp29;
     }
   }
-  const obj2 = { variantsReturnStyle: tmp(7111).ShopVariantsReturnStyle.VARIANTS_GROUP, includeBundles: true, includeDynamicBlocks: true, shopHomeConfig: tmp16[7], skipNumCategories: stateFromStores1 };
+  const obj2 = { variantsReturnStyle: tmp(7297).ShopVariantsReturnStyle.VARIANTS_GROUP, includeBundles: true, includeDynamicBlocks: true, shopHomeConfig: tmp17[7], skipNumCategories: stateFromStores1 };
   const merged = Object.assign(arg1);
   cResult[7] = arg1;
-  cResult[8] = tmp16[7];
+  cResult[8] = tmp17[7];
   cResult[9] = stateFromStores1;
   cResult[10] = obj2;
-}) : ((arg0, arg1, arg2) => {
+  tmp26 = obj2;
+}) : (function useMaybeFetchCollectiblesShopHome(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
   let closure_2;

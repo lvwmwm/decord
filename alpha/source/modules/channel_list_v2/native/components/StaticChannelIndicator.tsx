@@ -1,16 +1,16 @@
-// Module ID: 12032
-// Function ID: 12033
+// Module ID: 12105
+// Function ID: 12106
 // Name: StaticChannelIndicator
-// Dependencies: [17, 5078, 21, 4896, 587, 558, 576, 4586, 2]
+// Dependencies: [17, 5972, 21, 5090, 587, 558, 576, 4778, 2]
 
-// Module 12032 (StaticChannelIndicator)
+// Module 12105 (StaticChannelIndicator)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken2 from "useToken" /* 4586 */;
-import ReadStateConstants from "ReadStateConstants" /* 5078 */;
+import useToken2 from "useToken" /* 4778 */;
+import ReadStateConstants from "ReadStateConstants" /* 5972 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 size = { width: 8, height: 8, borderRadius: nativeDefault.radii.round, marginLeft: -4 };
 let closure_6 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((resolvedUnreadSetting) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelIndicator(resolvedUnreadSetting) {
   let CHANNELS_DEFAULT;
   let style;
   let unread;
@@ -70,7 +70,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((resolvedUnreadSett
   cResult[3] = unread;
   cResult[4] = tmp9;
   tmp8 = tmp9;
-}) : ((arg0) => {
+}) : (function ChannelIndicator(arg0) {
   let resolvedUnreadSetting;
   let style;
   let unread;

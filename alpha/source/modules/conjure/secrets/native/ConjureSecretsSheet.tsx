@@ -1,22 +1,22 @@
-// Module ID: 16748
-// Function ID: 16749
+// Module ID: 17023
+// Function ID: 17024
 // Name: ConjureSecretsSheet
-// Dependencies: [5, 32, 19, 17, 12923, 21, 4896, 587, 558, 576, 6478, 6695, 1126, 3753, 6651, 4892, 5601, 6105, 6708, 2]
+// Dependencies: [5, 32, 19, 17, 13072, 21, 5090, 587, 558, 576, 6656, 6872, 1126, 3827, 6828, 5086, 5375, 6283, 6885, 2]
 
-// Module 16748 (ConjureSecretsSheet)
+// Module 17023 (ConjureSecretsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 12923 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let c1, c3, closure_1, importDefault, projectId;
+let c1, c3, closure_1, importDefault;
 
 let c10;
 let c9;
@@ -33,7 +33,7 @@ let closure_11 = createStyles.createStyles((paddingBottom) => {
   ({ flex: 1, gap: nativeDefault.space.PX_4 });
   return obj;
 });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSecretsSheet(projectId) {
   let closure_4;
   let closure_6;
   let closure_7;
@@ -77,25 +77,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   const tmp11 = _slicedToArray(obj3.useState(false), 2);
   [closure_8, closure_9] = obj3.useState(null);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    class I {
-      constructor(arg0) {
-        let closure_0 = arg0;
-        const obj = projectId(ref[11]);
-        obj.copy(arg0, () => closure_9(closure_0));
-      }
-    }
-    cResult[2] = I;
-    tmp13 = I;
+    const fn = function j(arg0) {
+      let closure_0 = arg0;
+      const obj = projectId(ref[11]);
+      obj.copy(arg0, () => closure_9(closure_0));
+    };
+    cResult[2] = fn;
+    tmp13 = fn;
   } else {
-    class I {
-      constructor(arg0) {
-        let closure_0 = arg0;
-        const obj = projectId(ref[11]);
-        obj.copy(arg0, () => closure_9(closure_0));
-      }
-    }
+    tmp13 = cResult[2];
   }
-  I = tmp13;
+  let closure_10 = tmp13;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     class V {
       constructor(arg0, arg1) {
@@ -255,16 +247,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         }
       }
     });
-    const fn = function() {
+    function t6() {
       return closure_0(...arguments);
-    };
+    }
     cResult[10] = arr.length > 0;
     cResult[11] = arr;
     cResult[12] = arr.length < request.fields.length;
     cResult[13] = projectId;
     cResult[14] = first2;
     cResult[15] = first1;
-    cResult[16] = fn;
+    cResult[16] = t6;
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     class X {
@@ -311,7 +303,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   cResult[4] = request.fields;
   cResult[5] = first1;
   cResult[6] = found;
-}) : ((projectId) => {
+}) : (function ConjureSecretsSheet(projectId) {
   let BottomSheetTitleHeader;
   let _undefined;
   let _undefined2;
@@ -486,7 +478,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   }), items);
   let obj = { ref, startExpanded: true, keyboardShouldPersistTaps: "handled", header: c9(BottomSheetTitleHeader, obj2), children: tmp17(tmp18, obj3) };
   const ActionSheet = projectId(ref[18]).ActionSheet;
-  obj2 = { title: intl.string(require("module_3753").TuMGZp) };
+  obj2 = { title: intl.string(require("module_3827").TuMGZp) };
   BottomSheetTitleHeader = projectId(ref[14]).BottomSheetTitleHeader;
   intl = projectId(ref[12]).intl;
   obj3 = { style: tmp3.container, children: items1 };

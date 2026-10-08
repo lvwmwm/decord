@@ -1,22 +1,22 @@
-// Module ID: 4908
-// Function ID: 4909
+// Module ID: 5102
+// Function ID: 5103
 // Name: useGuildIdForChannelRoute
-// Dependencies: [2054, 4705, 1085, 558, 576, 504, 2077, 2]
+// Dependencies: [2066, 4899, 1085, 558, 576, 504, 2089, 2]
 // Exports: getGuildIdForGenericRedirect
 
-// Module 4908 (useGuildIdForChannelRoute)
+// Module 5102 (useGuildIdForChannelRoute)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import FavoritesUtils from "FavoritesUtils" /* 2077 */;
-import FavoriteStore from "FavoriteStore" /* 2054 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
+import FavoritesUtils from "FavoritesUtils" /* 2089 */;
+import FavoriteStore from "FavoriteStore" /* 2066 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 const FAVORITES = Constants.FAVORITES;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((getGuildId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildIdForChannelRoute(getGuildId) {
   let tmp4;
   let tmp5;
   const obj = react;
@@ -48,7 +48,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((getGuildId) => {
     stateFromStores = tmp9;
   }
   return stateFromStores;
-}) : ((getGuildId) => {
+}) : (function useGuildIdForChannelRoute(getGuildId) {
   let guildId;
   const items = [SelectedGuildStore];
   const obj = get_initialized;

@@ -1,17 +1,17 @@
-// Module ID: 13311
-// Function ID: 13312
+// Module ID: 13611
+// Function ID: 13612
 // Name: usePremiumGroupPrimaryName
-// Dependencies: [558, 576, 13312, 13316, 4728, 2]
+// Dependencies: [558, 576, 13612, 13616, 4922, 2]
 
-// Module 13311 (usePremiumGroupPrimaryName)
+// Module 13611 (usePremiumGroupPrimaryName)
 import react from "react" /* 576 */;
-import UserUtils from "UserUtils" /* 4728 */;
-import usePremiumGroupMembershipDefault from "usePremiumGroupMembership" /* 13312 */;
-import usePremiumGroupMembersDefault from "usePremiumGroupMembers" /* 13316 */;
+import UserUtils from "UserUtils" /* 4922 */;
+import usePremiumGroupMembershipDefault from "usePremiumGroupMembership" /* 13612 */;
+import usePremiumGroupMembersDefault from "usePremiumGroupMembers" /* 13616 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumGroupPrimaryName(arg0) {
   let _fetch;
   let tmp4;
   let useCachedData;
@@ -43,7 +43,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp9 = cResult[7];
       }
       let subscriptionId;
-      const tmp8Result = tmp8(13316);
+      const tmp8Result = tmp8(13616);
       if (premiumGroupMembership != null) {
         subscriptionId = premiumGroupMembership.subscriptionId;
       }
@@ -64,7 +64,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let nameFromUserResult = null;
         if (null != primary1) {
           let primary2;
-          const nameFromUser = tmp(4728).nameFromUser;
+          const nameFromUser = tmp(4922).nameFromUser;
           UserUtils;
           if (premiumGroupMembers != null) {
             primary2 = premiumGroupMembers.primary;
@@ -94,7 +94,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = undefined === useCachedData || useCachedData;
   cResult[4] = obj4;
   tmp7 = obj4;
-}) : (() => {
+}) : (function usePremiumGroupPrimaryName() {
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};

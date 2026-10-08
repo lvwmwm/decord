@@ -1,12 +1,12 @@
-// Module ID: 13785
-// Function ID: 13786
+// Module ID: 14007
+// Function ID: 14008
 // Name: GuildBadgeButterfly
-// Dependencies: [109, 19, 21, 558, 576, 13748, 8169, 2]
+// Dependencies: [109, 19, 21, 558, 576, 13970, 7550, 2]
 
-// Module 13785 (GuildBadgeButterfly)
+// Module 14007 (GuildBadgeButterfly)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 8169 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 13748 */;
+import inlineStyles from "inlineStyles" /* 7550 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 13970 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -23,7 +23,7 @@ let items = [{ base: 3, tint: 1 }, { base: 3, tint: 1 }];
 const secondaryBaseColors = ["#5C0084"];
 const secondaryTintLuminances = [0.2];
 const items1 = [{ base: 3, tint: 1 }];
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgeButterfly(arg0) {
   let height;
   let primaryColorsTransformed;
   let primaryTintColor;
@@ -153,7 +153,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj5 = { width: num7, height: num8, viewBox: "0 0 16 16", fill: "none", children: items };
-    const Svg = tmp(8169).Svg;
+    const Svg = tmp(7550).Svg;
     const merged = Object.assign(tmp5);
     items = [tmp15, tmp18, tmp21, tmp27, tmp32, tmp30, tmp31];
     const tmp42 = hasOwnProperty(Svg, obj5);
@@ -173,7 +173,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = tmp6;
   cResult[8] = transformedBadgeColors;
   tmp12 = transformedBadgeColors;
-}) : ((width) => {
+}) : (function GuildBadgeButterfly(width) {
   let primaryColorsTransformed;
   let primaryTintColor;
   let secondaryColorsTransformed;

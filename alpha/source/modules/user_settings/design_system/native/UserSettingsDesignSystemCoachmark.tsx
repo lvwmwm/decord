@@ -1,18 +1,18 @@
-// Module ID: 15686
-// Function ID: 15687
+// Module ID: 15966
+// Function ID: 15967
 // Name: UserSettingsDesignSystemCoachmark
-// Dependencies: [32, 19, 17, 21, 4896, 558, 576, 15684, 15687, 9895, 5601, 5612, 6705, 6081, 6078, 6079, 6658, 6626, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 558, 576, 15964, 15967, 9375, 5375, 5387, 6882, 6267, 6264, 6265, 6835, 6803, 2]
 
-// Module 15686 (UserSettingsDesignSystemCoachmark)
+// Module 15966 (UserSettingsDesignSystemCoachmark)
 import react2 from "react" /* 576 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6626 */;
-import LayerScope2 from "LayerScope" /* 6658 */;
-import _modDef15687 from "module_15687" /* 15687 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6803 */;
+import LayerScope2 from "LayerScope" /* 6835 */;
+import _modDef15967 from "module_15967" /* 15967 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let metroRequire;
 ({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
 let closure_10 = createStyles.createStyles({ container: { paddingTop: 240, flex: 1, alignItems: "center", justifyContent: "center" }, flex: { flex: 1, padding: 16 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Content() {
   let closure_1;
   let tmp21;
   let tmp22;
@@ -44,7 +44,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   _slicedToArray(react.useState(false), 2);
   [tmp9, r10029] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
-  const obj3 = visible(15684);
+  const obj3 = visible(15964);
   [r10035, r10036] = obj3.useCanRotate();
   _slicedToArray(obj3.useCanRotate(), 2);
   const first1 = _slicedToArray(react.useState(false), 2)[0];
@@ -88,7 +88,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return closure_1(false);
       }
     }
-    tmp23[0] = _modDef15687;
+    tmp23[0] = _modDef15967;
     cResult[2] = tmp23;
     tmp22 = tmp23;
   } else {
@@ -160,7 +160,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[11] = undefined;
   cResult[12] = tmp7;
   cResult[13] = obj4;
-}) : (() => {
+}) : (function Content() {
   let TableRadioGroup;
   let TableRadioGroup2;
   let TableRadioGroup3;
@@ -237,8 +237,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       gradientColor: tmp
     };
     str2 = undefined;
-    obj2 = { type: "image", src: { uri: _modDef15687 }, aspectRatio: first5 };
-    ({ uri: _modDef15687 });
+    obj2 = { type: "image", src: { uri: _modDef15967 }, aspectRatio: first5 };
+    ({ uri: _modDef15967 });
     if (first3) {
       str2 = "Button";
     }
@@ -327,7 +327,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return closure_8(tmp32, obj8);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsDesignSystemCoachmark() {
   let LayerScope;
   let first;
   let obj3;
@@ -338,7 +338,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { children: metroImportDefault(LayerScope, obj3) };
     obj3 = { children: metroImportDefault(closure_11, {}) };
-    LayerScope = tmp(6658).LayerScope;
+    LayerScope = tmp(6835).LayerScope;
     const tmp9 = metroImportDefault(metroRequire, obj2);
     cResult[0] = tmp9;
     first = tmp9;
@@ -355,7 +355,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp10 = cResult[2];
   }
   return tmp10;
-}) : (() => {
+}) : (function UserSettingsDesignSystemCoachmark() {
   let LayerScope;
   let obj2;
   let obj3;

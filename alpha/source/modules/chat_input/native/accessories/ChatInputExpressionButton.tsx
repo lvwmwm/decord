@@ -1,18 +1,18 @@
-// Module ID: 11812
-// Function ID: 11813
+// Module ID: 11879
+// Function ID: 11880
 // Name: ChatInputExpressionButton
-// Dependencies: [19, 21, 4896, 587, 558, 576, 4586, 1126, 11072, 8445, 1188, 5916, 2]
+// Dependencies: [19, 21, 5090, 587, 558, 576, 4778, 1126, 11880, 8931, 1200, 6189, 2]
 
-// Module 11812 (ChatInputExpressionButton)
+// Module 11879 (ChatInputExpressionButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import useToken from "useToken" /* 4586 */;
-import Pressables from "Pressables" /* 5916 */;
+import native from "native" /* 1200 */;
+import useToken from "useToken" /* 4778 */;
+import Pressables from "Pressables" /* 6189 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let closure_5 = createStyles.createStyles((height) => {
   ({ tintColor: nativeDefault.colors.CHAT_INPUT_ICON_DEFAULT_TINT });
   return obj;
 });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ExpressionButton(arg0) {
   let active;
   let onPress;
   let showKeyboardIcon;
@@ -78,7 +78,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     } else {
       tmp17 = cResult[7];
     }
-    const tmp5Result = tmp5(showKeyboardIcon ? 11072 : 8445);
+    const tmp5Result = tmp5(showKeyboardIcon ? 11880 : 8931);
     if (cResult[8] === tmp9.expressionButtonIconTint) {
       if (cResult[9] === token1) {
         let tmp19;
@@ -120,7 +120,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[3] = tmp9.expressionButton;
   cResult[4] = items;
   tmp13 = items;
-}) : ((active) => {
+}) : (function ExpressionButton(active) {
   let flag = active.active;
   const style = active.style;
   if (flag === undefined) {
@@ -151,8 +151,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     tmp12 = bound;
   }
   const intl = tmp(1126).intl;
-  ({ size: token1, style: tmp7.expressionButtonIconTint, source: tmp3(showKeyboardIcon ? 11072 : 8445) });
-  const Icon = tmp(1188).Icon;
+  ({ size: token1, style: tmp7.expressionButtonIconTint, source: tmp3(showKeyboardIcon ? 11880 : 8931) });
+  const Icon = tmp(1200).Icon;
   return <PressableOpacity ref={react.useRef(null)} style={items1} hitSlop={tmp12} accessibilityRole="button" accessibilityLabel={intl.string(intl2.t.iZ7Mz9)} accessibilityState={{ expanded: flag }} onPress={callback}>{null}</PressableOpacity>;
 }));
 let size = size_mod;

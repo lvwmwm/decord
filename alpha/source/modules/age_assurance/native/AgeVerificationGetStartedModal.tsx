@@ -1,19 +1,19 @@
-// Module ID: 8293
-// Function ID: 8294
+// Module ID: 7675
+// Function ID: 7676
 // Name: AgeVerificationGetStartedModal
-// Dependencies: [19, 21, 4896, 587, 5099, 6017, 8294, 8298, 8299, 8282, 558, 576, 1266, 8119, 1126, 6503, 2]
+// Dependencies: [19, 21, 5090, 587, 5940, 6203, 7676, 7681, 7682, 7664, 558, 576, 1278, 5915, 1126, 6679, 2]
 
-// Module 8293 (AgeVerificationGetStartedModal)
+// Module 7675 (AgeVerificationGetStartedModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8119 */;
-import GoogleWalletVerificationScreenDefault from "GoogleWalletVerificationScreen" /* 8282 */;
-import AgeVerificationIntroScreenDefault from "AgeVerificationIntroScreen" /* 8294 */;
-import AgeVerificationRetryScreenDefault from "AgeVerificationRetryScreen" /* 8298 */;
-import AgeVerificationEmbeddedIntroScreenDefault from "AgeVerificationEmbeddedIntroScreen" /* 8299 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5915 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+import GoogleWalletVerificationScreenDefault from "GoogleWalletVerificationScreen" /* 7664 */;
+import AgeVerificationIntroScreenDefault from "AgeVerificationIntroScreen" /* 7676 */;
+import AgeVerificationRetryScreenDefault from "AgeVerificationRetryScreen" /* 7681 */;
+import AgeVerificationEmbeddedIntroScreenDefault from "AgeVerificationEmbeddedIntroScreen" /* 7682 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -99,7 +99,7 @@ let obj = { headerStyle: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, shadowColor: "transparent" };
 let closure_5 = createStyles.createStyles(obj);
 let obj3 = { INTRO: "INTRO", RETRY: "RETRY", EXPRESSIVE_INTRO: "EXPRESSIVE_INTRO", GOOGLE_WALLET_VERIFICATION: "GOOGLE_WALLET_VERIFICATION" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((entryPoint) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificationGetStartedModal(entryPoint) {
   let EXPRESSIVE_PRIMARY;
   let classificationId;
   let first;
@@ -217,7 +217,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((entryPoint) => {
   cResult[4] = tmp5;
   cResult[5] = tmp9;
   tmp8 = tmp9;
-}) : ((entryPoint) => {
+}) : (function AgeVerificationGetStartedModal(entryPoint) {
   let EXPRESSIVE_INTRO;
   let intl;
   entryPoint = entryPoint.entryPoint;

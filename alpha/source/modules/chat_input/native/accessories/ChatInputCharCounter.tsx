@@ -1,20 +1,20 @@
-// Module ID: 12088
-// Function ID: 12089
+// Module ID: 12163
+// Function ID: 12164
 // Name: ChatInputCharCounter
-// Dependencies: [32, 19, 1377, 1085, 1379, 21, 4896, 587, 558, 576, 4534, 504, 8839, 8848, 4574, 1126, 4892, 8346, 5916, 2]
+// Dependencies: [32, 19, 1389, 1085, 1391, 21, 5090, 587, 558, 576, 4726, 504, 9198, 9208, 4766, 1126, 5086, 9005, 6189, 2]
 
-// Module 12088 (ChatInputCharCounter)
+// Module 12163 (ChatInputCharCounter)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 8848 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9208 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,8 +32,7 @@ const PremiumUpsellTypes = PremiumConstants.PremiumUpsellTypes;
 let obj = { container: obj2 };
 obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
 let closure_11 = createStyles.createStyles(obj);
-const forwardRef = react.forwardRef;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatCounter(ref) {
   let analyticsLocations;
   let closure_6;
   let currentUser;
@@ -48,30 +47,33 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let tmp = analyticsLocations;
   let obj = analyticsLocations(576);
   const cResult = obj.c(41);
-  ({ style, analyticsLocations } = arg0);
+  ({ style, analyticsLocations } = ref);
+  ref = ref.ref;
   const tmp4 = closure_11();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [currentUser];
-    const fn = function v() {
-      const obj = stateFromStores(maxLength[10]);
-      return obj.canUseIncreasedMessageLength(currentUser.getCurrentUser());
-    };
+    const items = [UserStore];
+    class S {
+      constructor() {
+        obj = closure_1(closure_2[10]);
+        return obj.canUseIncreasedMessageLength(closure_5.getCurrentUser());
+      }
+    }
     cResult[0] = items;
-    cResult[1] = fn;
+    cResult[1] = S;
     tmp5 = items;
-    tmp6 = fn;
+    tmp6 = S;
   } else {
     [tmp5, tmp6] = cResult;
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmp9 = stateFromStores(8839)();
+  const tmp9 = stateFromStores(9198)();
   dependencyMap = tmp9;
   let result = tmp9 / 10;
   _slicedToArray = result;
   let obj3 = first;
   const tmp11 = -result;
-  [first, currentUser] = first.useState(tmp11 - 1);
+  [first, UserStore] = first.useState(tmp11 - 1);
   [tmp15, closure_6] = _slicedToArray(first.useState(false), 2);
   const tmp14 = _slicedToArray(first.useState(false), 2);
   if (cResult[2] === tmp9) {
@@ -83,210 +85,216 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     if (cResult[5] === analyticsLocations) {
       if (cResult[6] === stateFromStores) {
         if (cResult[7] === tmp9) {
-          let tmp19;
+          let tmp18;
           if (cResult[8] === first) {
-            tmp19 = cResult[9];
+            tmp18 = cResult[9];
           }
           if (first > 0) {
             if (cResult[10] === style) {
-              let tmp39;
+              let tmp36;
+              let tmp38;
               let tmp41;
-              let tmp44;
               if (cResult[11] === tmp4.container) {
-                tmp39 = cResult[12];
+                tmp36 = cResult[12];
               }
               const _HermesInternal = HermesInternal;
-              const combined = "-" + first;
-              if (cResult[13] !== combined) {
-                let obj2 = { color: "text-feedback-critical", lineClamp: 1, variant: "text-xxs/semibold", children: combined };
-                const tmp43 = closure_9(tmp(4892).Text, obj2);
-                cResult[13] = combined;
-                cResult[14] = tmp43;
-                tmp41 = tmp43;
+              class S {
+                constructor() {
+                  obj = closure_1(closure_2[10]);
+                  return obj.canUseIncreasedMessageLength(closure_5.getCurrentUser());
+                }
+              }
+              if (cResult[13] !== tmp37) {
+                let obj2 = { color: "text-feedback-critical", lineClamp: 1, variant: "text-xxs/semibold", children: tmp37 };
+                class S {
+                  constructor() {
+                    obj = closure_1(closure_2[10]);
+                    return obj.canUseIncreasedMessageLength(closure_5.getCurrentUser());
+                  }
+                }
+                cResult[13] = tmp37;
+                cResult[14] = tmp40;
+                tmp38 = tmp40;
               } else {
-                tmp41 = cResult[14];
+                tmp38 = cResult[14];
               }
               if (cResult[15] !== stateFromStores) {
-                let tmp45 = null;
+                let tmp42 = null;
                 if (!stateFromStores) {
-                  tmp45 = closure_9(tmp(8346).NitroWheelIcon, { size: "xs", color: "icon-muted" });
+                  tmp42 = closure_9(tmp(9005).NitroWheelIcon, { size: "xs", color: "icon-muted" });
                 }
-                cResult[15] = stateFromStores;
-                cResult[16] = tmp45;
-                tmp44 = tmp45;
+                class S {
+                  constructor() {
+                    obj = closure_1(closure_2[10]);
+                    return obj.canUseIncreasedMessageLength(closure_5.getCurrentUser());
+                  }
+                }
+                cResult[16] = tmp42;
+                tmp41 = tmp42;
               } else {
-                tmp44 = cResult[16];
+                tmp41 = cResult[16];
               }
-              if (cResult[17] === tmp19) {
-                if (cResult[18] === tmp39) {
-                  if (cResult[19] === tmp41) {
-                    let tmp47;
-                    if (cResult[20] === tmp44) {
-                      tmp47 = cResult[21];
+              if (cResult[17] === tmp18) {
+                if (cResult[18] === tmp36) {
+                  if (cResult[19] === tmp38) {
+                    let tmp44;
+                    if (cResult[20] === tmp41) {
+                      tmp44 = cResult[21];
                     }
-                    return tmp47;
+                    return tmp44;
                   }
                 }
               }
-              let obj4 = { onPress: tmp19, style: tmp39, children: items1 };
-              items1 = [tmp41, tmp44];
-              const tmp49 = closure_10(tmp(5916).PressableOpacity, obj4);
-              cResult[17] = tmp19;
-              cResult[18] = tmp39;
-              cResult[19] = tmp41;
-              cResult[20] = tmp44;
-              cResult[21] = tmp49;
-              tmp47 = tmp49;
+              let obj4 = { onPress: tmp18, style: tmp36, children: items1 };
+              items1 = [tmp38, tmp41];
+              const tmp46 = closure_10(tmp(6189).PressableOpacity, obj4);
+              cResult[17] = tmp18;
+              cResult[18] = tmp36;
+              cResult[19] = tmp38;
+              cResult[20] = tmp41;
+              cResult[21] = tmp46;
+              tmp44 = tmp46;
             }
-            const items2 = [tmp4.container, style];
+            const items2 = [tmp4.container, ];
+            class S {
+              constructor() {
+                obj = closure_1(closure_2[10]);
+                return obj.canUseIncreasedMessageLength(closure_5.getCurrentUser());
+              }
+            }
             cResult[10] = style;
             cResult[11] = tmp4.container;
             cResult[12] = items2;
-            tmp39 = items2;
+            tmp36 = items2;
           } else if (first >= tmp11) {
             if (cResult[22] === style) {
-              let tmp28;
-              let tmp30;
-              let tmp33;
+              let tmp27;
+              let tmp29;
               if (cResult[23] === tmp4.container) {
-                tmp28 = cResult[24];
+                tmp27 = cResult[24];
               }
               if (cResult[25] !== -first) {
                 let obj5 = { color: "text-default", lineClamp: 1, variant: "text-xxs/semibold", children: -first };
-                const tmp32 = closure_9(tmp(4892).Text, obj5);
-                cResult[25] = -first;
-                cResult[26] = tmp32;
-                tmp30 = tmp32;
-              } else {
-                tmp30 = cResult[26];
-              }
-              if (cResult[27] !== tmp15) {
-                let tmp34 = null;
-                if (tmp15) {
-                  tmp34 = closure_9(tmp(8346).NitroWheelIcon, { size: "xs", color: "icon-muted" });
+                class S {
+                  constructor() {
+                    obj = closure_1(closure_2[10]);
+                    return obj.canUseIncreasedMessageLength(closure_5.getCurrentUser());
+                  }
                 }
-                cResult[27] = tmp15;
-                cResult[28] = tmp34;
-                tmp33 = tmp34;
+                cResult[25] = -first;
+                cResult[26] = tmp31;
+                tmp29 = tmp31;
               } else {
-                tmp33 = cResult[28];
+                tmp29 = cResult[26];
               }
-              if (cResult[29] === tmp19) {
-                if (cResult[30] === tmp28) {
-                  if (cResult[31] === tmp30) {
-                    let tmp36;
-                    if (cResult[32] === tmp33) {
-                      tmp36 = cResult[33];
+              class S {
+                constructor() {
+                  obj = closure_1(closure_2[10]);
+                  return obj.canUseIncreasedMessageLength(closure_5.getCurrentUser());
+                }
+              }
+              if (cResult[29] === tmp18) {
+                if (cResult[30] === tmp27) {
+                  if (cResult[31] === tmp29) {
+                    let tmp33;
+                    if (cResult[32] === tmp32) {
+                      tmp33 = cResult[33];
                     }
-                    return tmp36;
+                    return tmp33;
                   }
                 }
               }
-              let obj6 = { onPress: tmp19, style: tmp28, children: items3 };
-              items3 = [tmp30, tmp33];
-              const tmp38 = closure_10(tmp(5916).PressableOpacity, obj6);
-              cResult[29] = tmp19;
-              cResult[30] = tmp28;
-              cResult[31] = tmp30;
-              cResult[32] = tmp33;
-              cResult[33] = tmp38;
-              tmp36 = tmp38;
+              let obj6 = { onPress: tmp18, style: tmp27, children: items3 };
+              items3 = [tmp29, tmp32];
+              const tmp35 = closure_10(tmp(6189).PressableOpacity, obj6);
+              cResult[29] = tmp18;
+              cResult[30] = tmp27;
+              cResult[31] = tmp29;
+              cResult[32] = tmp32;
+              cResult[33] = tmp35;
+              tmp33 = tmp35;
             }
-            const items4 = [tmp4.container, style];
+            const items4 = [tmp4.container, ];
+            class S {
+              constructor() {
+                obj = closure_1(closure_2[10]);
+                return obj.canUseIncreasedMessageLength(closure_5.getCurrentUser());
+              }
+            }
             cResult[22] = style;
             cResult[23] = tmp4.container;
             cResult[24] = items4;
-            tmp28 = items4;
+            tmp27 = items4;
           } else {
-            let tmp27 = null;
+            let tmp26 = null;
             if (tmp15) {
               if (cResult[34] === style) {
                 let tmp20;
-                let tmp21;
                 if (cResult[35] === tmp4.container) {
                   tmp20 = cResult[36];
                 }
                 const _Symbol = Symbol;
-                if (cResult[37] === Symbol.for("react.memo_cache_sentinel")) {
-                  const tmp23 = closure_9(tmp(8346).NitroWheelIcon, { size: "xs", color: "icon-muted" });
-                  cResult[37] = tmp23;
-                  tmp21 = tmp23;
-                } else {
-                  tmp21 = cResult[37];
-                }
-                if (cResult[38] === tmp19) {
-                  let tmp24;
-                  if (cResult[39] === tmp20) {
-                    tmp24 = cResult[40];
+                class S {
+                  constructor() {
+                    obj = closure_1(closure_2[10]);
+                    return obj.canUseIncreasedMessageLength(closure_5.getCurrentUser());
                   }
-                  tmp27 = tmp24;
                 }
-                const obj7 = { onPress: tmp19, style: tmp20, children: tmp21 };
-                const tmp26 = closure_9(tmp(5916).PressableOpacity, obj7);
-                cResult[38] = tmp19;
+                if (cResult[38] === tmp18) {
+                  let tmp23;
+                  if (cResult[39] === tmp20) {
+                    tmp23 = cResult[40];
+                  }
+                  tmp26 = tmp23;
+                }
+                const obj7 = { onPress: tmp18, style: tmp20, children: tmp22 };
+                const tmp25 = closure_9(tmp(6189).PressableOpacity, obj7);
+                cResult[38] = tmp18;
                 cResult[39] = tmp20;
-                cResult[40] = tmp26;
-                tmp24 = tmp26;
+                cResult[40] = tmp25;
+                tmp23 = tmp25;
               }
-              const items5 = [tmp4.container, style];
+              const items5 = [tmp4.container, ];
+              class S {
+                constructor() {
+                  obj = closure_1(closure_2[10]);
+                  return obj.canUseIncreasedMessageLength(closure_5.getCurrentUser());
+                }
+              }
               cResult[34] = style;
               cResult[35] = tmp4.container;
               cResult[36] = items5;
               tmp20 = items5;
             }
-            return tmp27;
+            return tmp26;
           }
         }
       }
     }
-    const fn3 = function b() {
-      let intl;
-      let intl2;
-      let obj4;
-      let obj6;
-      const tmp = stateFromStores;
-      if (tmp) {
-        if (first > 0) {
-          const obj2 = { content: intl.string(intl3.t.YSRIqa), key: "premium-message-length-info-toast" };
-          const open = ToastActionCreatorsDefault.open;
-          ToastActionCreatorsDefault;
-          intl = intl3.intl;
-          open(obj2);
-        } else {
-          const obj3 = { content: intl2.formatToPlainString(intl3.t.vcvHa0, obj4), key: "premium-message-length-info-toast" };
-          const open2 = ToastActionCreatorsDefault.open;
-          ToastActionCreatorsDefault;
-          intl2 = intl3.intl;
-          obj4 = { maxLength };
-          open2(obj3);
-        }
-      } else {
-        const obj5 = { initialUpsellKey: metroImportDefault.LONGER_MESSAGE, analyticsLocations, analyticsProperties: obj6 };
-        obj6 = { type: PremiumUpsellTypes.MESSAGE_LENGTH_UPSELL };
-        const obj = PremiumUpsellUtilsDefault;
-        result = obj.handleShowUpsellAlert(obj5);
+    class S {
+      constructor() {
+        obj = closure_1(closure_2[10]);
+        return obj.canUseIncreasedMessageLength(closure_5.getCurrentUser());
       }
-    };
+    }
     cResult[5] = analyticsLocations;
     cResult[6] = stateFromStores;
     cResult[7] = tmp9;
     cResult[8] = first;
-    cResult[9] = fn3;
-    tmp19 = fn3;
+    cResult[9] = tmp19;
+    tmp18 = tmp19;
   }
-  const fn2 = function _() {
-    return {
-      onMessageLengthChanged(arg0) {
-        currentUser(Math.max(-closure_1_3 - 1, arg0 - maxLength));
-        closure_1_6(arg0 > closure_6);
-      }
-    };
-  };
+  class E {
+    constructor() {
+      obj = { onMessageLengthChanged() { /* body not rendered: F143685 */ } };
+      return obj;
+    }
+  }
   cResult[2] = tmp9;
   cResult[3] = result;
-  cResult[4] = fn2;
-  tmp16 = fn2;
-}) : ((arg0, ref) => {
+  cResult[4] = E;
+  tmp16 = E;
+}) : (function ChatCounter(ref) {
   let analyticsLocations;
   let c3;
   let c6;
@@ -301,10 +309,11 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let style;
   let tmp11;
   let tmp16Result;
-  ({ style, analyticsLocations } = arg0);
+  ({ style, analyticsLocations } = ref);
   first = undefined;
   currentUser = undefined;
   c6 = undefined;
+  ref = ref.ref;
   let tmp = closure_11();
   let obj = analyticsLocations(504);
   const items = [currentUser];
@@ -312,7 +321,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     const obj = stateFromStores(maxLength[10]);
     return obj.canUseIncreasedMessageLength(currentUser.getCurrentUser());
   });
-  const tmp5 = stateFromStores(8839)();
+  const tmp5 = stateFromStores(9198)();
   dependencyMap = tmp5;
   let result = tmp5 / 10;
   _slicedToArray = result;
@@ -358,45 +367,45 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     const tmp19 = closure_10;
     let obj2 = { onPress: callback, style: items2, children: items3 };
     items2 = [tmp.container, style];
-    const PressableOpacity3 = tmp2(5916).PressableOpacity;
+    const PressableOpacity3 = tmp2(6189).PressableOpacity;
     let obj3 = { color: "text-feedback-critical", lineClamp: 1, variant: "text-xxs/semibold", children: "-" + first };
     const _HermesInternal = HermesInternal;
-    const Text = tmp2(4892).Text;
+    const Text = tmp2(5086).Text;
     items3 = [closure_9(Text, obj3), ];
     let tmp20Result = null;
     const tmp20 = closure_9;
     if (!stateFromStores) {
-      tmp20Result = tmp20(tmp2(8346).NitroWheelIcon, { size: "xs", color: "icon-muted" });
+      tmp20Result = tmp20(tmp2(9005).NitroWheelIcon, { size: "xs", color: "icon-muted" });
     }
     items3[1] = tmp20Result;
     tmp16Result = tmp19(PressableOpacity3, obj2);
   } else if (first >= -result) {
     let obj4 = { onPress: callback, style: items4, children: items5 };
     items4 = [tmp.container, style];
-    const PressableOpacity2 = tmp2(5916).PressableOpacity;
+    const PressableOpacity2 = tmp2(6189).PressableOpacity;
     let obj5 = { color: "text-default", lineClamp: 1, variant: "text-xxs/semibold", children: -first };
-    items5 = [closure_9(tmp2(4892).Text, obj5), ];
+    items5 = [closure_9(tmp2(5086).Text, obj5), ];
     let tmp17Result = null;
     const tmp16 = closure_10;
     const tmp17 = closure_9;
     if (tmp11) {
-      tmp17Result = tmp17(tmp2(8346).NitroWheelIcon, { size: "xs", color: "icon-muted" });
+      tmp17Result = tmp17(tmp2(9005).NitroWheelIcon, { size: "xs", color: "icon-muted" });
     }
     items5[1] = tmp17Result;
     tmp16Result = tmp16(PressableOpacity2, obj4);
   } else {
     tmp16Result = null;
     if (tmp11) {
-      let obj6 = { onPress: callback, style: items6, children: closure_9(tmp2(8346).NitroWheelIcon, { size: "xs", color: "icon-muted" }) };
+      let obj6 = { onPress: callback, style: items6, children: closure_9(tmp2(9005).NitroWheelIcon, { size: "xs", color: "icon-muted" }) };
       items6 = [tmp.container, style];
-      const PressableOpacity = tmp2(5916).PressableOpacity;
+      const PressableOpacity = tmp2(6189).PressableOpacity;
       tmp16Result = closure_9(PressableOpacity, obj6);
     }
   }
   return tmp16Result;
-}));
-forwardRefResult.displayName = "ChatInputCharCounter";
-const memoResult = react.memo(forwardRefResult);
+});
+tmp4.displayName = "ChatInputCharCounter";
+const memoResult = react.memo(tmp4);
 let result = size.fileFinishedImporting("modules/chat_input/native/accessories/ChatInputCharCounter.tsx");
 
 export default memoResult;

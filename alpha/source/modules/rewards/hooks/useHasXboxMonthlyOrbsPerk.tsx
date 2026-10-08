@@ -1,23 +1,23 @@
-// Module ID: 13558
-// Function ID: 13559
+// Module ID: 13851
+// Function ID: 13852
 // Name: useHasXboxMonthlyOrbsPerk
-// Dependencies: [1377, 1379, 4534, 1383, 1385, 558, 576, 504, 2]
+// Dependencies: [1389, 1391, 4726, 1395, 1397, 558, 576, 504, 2]
 // Exports: hasCrepeMonthlyOrbsPerk
 
-// Module 13558 (useHasXboxMonthlyOrbsPerk)
+// Module 13851 (useHasXboxMonthlyOrbsPerk)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import PerksStateUtils from "PerksStateUtils" /* 1383 */;
-import PremiumUtils from "PremiumUtils" /* 4534 */;
-import UserStore from "UserStore" /* 1377 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import PerksStateUtils from "PerksStateUtils" /* 1395 */;
+import PremiumUtils from "PremiumUtils" /* 4726 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const PremiumUtilsDefault = PremiumUtils;
 
 const PremiumTypes = PremiumConstants.PremiumTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasXboxMonthlyOrbsPerk() {
   let currentUser;
   let tmp4;
   let tmp5;
@@ -26,7 +26,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    const fn = function n() {
+    const fn = function o() {
       return currentUser.getCurrentUser();
     };
     cResult[0] = items;
@@ -51,8 +51,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         if (stateFromStores != null) {
           perks = stateFromStores.perks;
         }
-        const perkSource = getPerkSource(perks, tmp(1385).Perk.MONTHLY_ORBS);
-        const hasItem = null != perkSource && perkSource.includes(tmp(1385).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
+        const perkSource = getPerkSource(perks, tmp(1397).Perk.MONTHLY_ORBS);
+        const hasItem = null != perkSource && perkSource.includes(tmp(1397).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
         flag = hasItem;
       }
     }
@@ -63,7 +63,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[3];
   }
   return tmp8;
-}) : (() => {
+}) : (function useHasXboxMonthlyOrbsPerk() {
   let currentUser;
   const items = [UserStore];
   const obj = get_initialized;
@@ -80,8 +80,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       if (stateFromStores != null) {
         perks = stateFromStores.perks;
       }
-      const perkSource = getPerkSource(perks, tmp(1385).Perk.MONTHLY_ORBS);
-      const hasItem = null != perkSource && perkSource.includes(tmp(1385).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
+      const perkSource = getPerkSource(perks, tmp(1397).Perk.MONTHLY_ORBS);
+      const hasItem = null != perkSource && perkSource.includes(tmp(1397).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
       flag = hasItem;
     }
   }
@@ -98,8 +98,8 @@ function hasCrepeMonthlyOrbsPerk(currentUser) {
       if (currentUser != null) {
         perks = currentUser.perks;
       }
-      const perkSource = getPerkSource(perks, tmp2(1385).Perk.MONTHLY_ORBS);
-      const hasItem = null != perkSource && perkSource.includes(tmp2(1385).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
+      const perkSource = getPerkSource(perks, tmp2(1397).Perk.MONTHLY_ORBS);
+      const hasItem = null != perkSource && perkSource.includes(tmp2(1397).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
       return hasItem;
     }
   }

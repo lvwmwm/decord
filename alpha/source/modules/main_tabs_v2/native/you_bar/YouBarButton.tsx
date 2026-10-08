@@ -1,22 +1,20 @@
-// Module ID: 16374
-// Function ID: 16375
+// Module ID: 16634
+// Function ID: 16635
 // Name: YouBarButton
-// Dependencies: [19, 17, 14915, 21, 4896, 587, 558, 576, 8502, 7514, 7586, 2]
+// Dependencies: [19, 17, 15177, 21, 5090, 587, 558, 576, 8986, 9237, 8106, 2]
 
-// Module 16374 (YouBarButton)
+// Module 16634 (YouBarButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import shared_components_BadgeDefault from "shared_components/Badge" /* 7514 */;
-import ClipViewDefault from "ClipView" /* 8502 */;
+import ClipViewDefault from "ClipView" /* 8986 */;
+import shared_components_BadgeDefault from "shared_components/Badge" /* 9237 */;
 import react from "react" /* 19 */;
-import YouBarConstants from "YouBarConstants" /* 14915 */;
+import YouBarConstants from "YouBarConstants" /* 15177 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let children;
 
 let hasOwnProperty;
 let metroImportAll;
@@ -24,8 +22,8 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const IconButton2 = tmp(7586);
-const ClipView = tmp(8502);
+const IconButton2 = tmp(8106);
+const ClipView = tmp(8986);
 const View = react_native.View;
 ({ YOU_BAR_BUTTON_HIT_SLOP: hasOwnProperty, YOU_BAR_BUTTON_ICON_SIZE: metroRequire } = YouBarConstants);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -33,7 +31,7 @@ let obj = { buttonContainer: obj2 };
 obj2 = { position: "relative", borderRadius: nativeDefault.modules.button.BORDER_RADIUS, overflow: "hidden" };
 let closure_9 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((badgeRadius) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIconBadgeCutout(badgeRadius) {
   let badgeWidth;
   let borderWidth;
   let xOffset;
@@ -81,7 +79,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((badgeRadius) =
   cResult[4] = sum1;
   cResult[5] = size1;
   tmp12 = size1;
-}) : ((size) => {
+}) : (function useIconBadgeCutout(size) {
   size = size.size;
   let num = size.xOffset;
   if (num === undefined) {
@@ -107,7 +105,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((badgeRadius) =
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIconContentStyle(arg0) {
   let badgeSize;
   let xOffset;
   let yOffset;
@@ -133,12 +131,12 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return tmp6;
   }
-  const rect = { position: "absolute", left: sum, top: sum1, right: "concat", bottom: "TypeError", padding: "keys", minWidth: "ind" };
+  const rect = { position: "absolute", left: sum, top: sum1, right: "constructor", bottom: "useStateFromStores", padding: "keys", minWidth: "marginBottom" };
   cResult[0] = sum;
   cResult[1] = sum1;
   cResult[2] = rect;
   tmp6 = rect;
-}) : ((size) => {
+}) : (function useIconContentStyle(size) {
   size = size.size;
   const badgeSize = size.badgeSize;
   let num = size.xOffset;
@@ -151,12 +149,12 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const items = [size, badgeSize, num2, num];
   return react.useMemo(() => {
-    const rect = { position: "absolute", left: size - badgeSize + num, top: size - badgeSize + num2, right: "concat", bottom: "TypeError", padding: "keys", minWidth: "ind" };
+    const rect = { position: "absolute", left: size - badgeSize + num, top: size - badgeSize + num2, right: "constructor", bottom: "useStateFromStores", padding: "keys", minWidth: "marginBottom" };
     return rect;
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouBarButtonIcon(arg0) {
   let badgeStyle;
   let first;
   let hasBadge;
@@ -252,7 +250,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = hasBadge;
   cResult[4] = items2;
   tmp9 = items2;
-}) : ((hasBadge) => {
+}) : (function YouBarButtonIcon(hasBadge) {
   let badgeStyle;
   let icon;
   let items1;
@@ -291,7 +289,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_12 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouBarButtonContainer(children) {
   const obj = react2;
   const cResult = obj.c(3);
   children = children.children;
@@ -309,13 +307,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[1] = tmp2.buttonContainer;
   cResult[2] = tmp4;
   tmp3 = tmp4;
-}) : ((children) => {
+}) : (function YouBarButtonContainer(children) {
   const obj = { style: closure_9().buttonContainer, children: children.children };
   return metroImportDefault(View, obj);
 });
 let closure_13 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((hasNameplate) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function YouBarButton(hasNameplate) {
   let accessibilityLabel;
   let badgeStyle;
   let hasBadge;
@@ -367,7 +365,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((h
   cResult[2] = icon;
   cResult[3] = tmp5;
   tmp4 = tmp5;
-}) : ((arg0) => {
+}) : (function YouBarButton(arg0) {
   let accessibilityLabel;
   let badgeStyle;
   let hasBadge;

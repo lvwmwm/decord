@@ -1,13 +1,13 @@
-// Module ID: 16640
-// Function ID: 16641
+// Module ID: 16902
+// Function ID: 16903
 // Name: useConjureControlBar
-// Dependencies: [32, 19, 12924, 12923, 558, 576, 504, 2]
+// Dependencies: [32, 19, 13073, 13072, 558, 576, 504, 2]
 
-// Module 16640 (useConjureControlBar)
-import ConjureConnectionStore from "ConjureConnectionStore" /* 12923 */;
+// Module 16902 (useConjureControlBar)
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13072 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureChatStore from "ConjureChatStore" /* 12924 */;
+import ConjureChatStore from "ConjureChatStore" /* 13073 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ const interruptTurn = ConjureConnectionStore.interruptTurn;
 let c6 = 2400;
 let c7 = 5000;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureControlPhase(arg0) {
   let closure_1;
   let first;
   let tmp10;
@@ -39,7 +39,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp5[1](!arg0);
   }
   if (cResult[0] !== first) {
-    const fn = function o() {
+    const fn = function n() {
       let closure_0;
       let timeout;
       const tmp = timeout;
@@ -69,7 +69,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     str = str2;
   }
   return str;
-}) : ((arg0) => {
+}) : (function useConjureControlPhase(arg0) {
   let tmp2;
   let tmp3;
   let tmp = _slicedToArray(react.useState(arg0), 2);
@@ -104,7 +104,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return str;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureControlStop(arg0) {
   let closure_0;
   let closure_2;
   let first;
@@ -150,7 +150,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   if (cResult[3] !== first1) {
-    class T {
+    class S {
       constructor() {
         tmp = closure_1;
         if (tmp) {
@@ -166,12 +166,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const items1 = [first1];
     cResult[3] = first1;
-    cResult[4] = T;
+    cResult[4] = S;
     cResult[5] = items1;
     tmp15 = items1;
-    tmp14 = T;
+    tmp14 = S;
   } else {
-    class T {
+    class S {
       constructor() {
         tmp = closure_1;
         if (tmp) {
@@ -191,32 +191,20 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[6] !== arg0) {
     class T {
       constructor() {
-        tmp = closure_1;
-        if (tmp) {
-          tmp2 = globalThis;
-          _setTimeout = setTimeout;
-          tmp3 = closure_1_7;
-          closure_0 = setTimeout(() => closure_1_2(false), closure_1_7);
-          return () => clearTimeout(closure_0);
-        } else {
-          return;
+        if (null != closure_0) {
+          closure_2(true);
+          interruptTurn(tmp);
         }
       }
     }
     cResult[6] = arg0;
-    cResult[7] = tmp18;
+    cResult[7] = T;
   } else {
     class T {
       constructor() {
-        tmp = closure_1;
-        if (tmp) {
-          tmp2 = globalThis;
-          _setTimeout = setTimeout;
-          tmp3 = closure_1_7;
-          closure_0 = setTimeout(() => closure_1_2(false), closure_1_7);
-          return () => clearTimeout(closure_0);
-        } else {
-          return;
+        if (null != closure_0) {
+          closure_2(true);
+          interruptTurn(tmp);
         }
       }
     }
@@ -224,15 +212,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (stateFromStores) {
     class T {
       constructor() {
-        tmp = closure_1;
-        if (tmp) {
-          tmp2 = globalThis;
-          _setTimeout = setTimeout;
-          tmp3 = closure_1_7;
-          closure_0 = setTimeout(() => closure_1_2(false), closure_1_7);
-          return () => clearTimeout(closure_0);
-        } else {
-          return;
+        if (null != closure_0) {
+          closure_2(true);
+          interruptTurn(tmp);
         }
       }
     }
@@ -240,15 +222,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[8] === first1) {
     class T {
       constructor() {
-        tmp = closure_1;
-        if (tmp) {
-          tmp2 = globalThis;
-          _setTimeout = setTimeout;
-          tmp3 = closure_1_7;
-          closure_0 = setTimeout(() => closure_1_2(false), closure_1_7);
-          return () => clearTimeout(closure_0);
-        } else {
-          return;
+        if (null != closure_0) {
+          closure_2(true);
+          interruptTurn(tmp);
         }
       }
     }
@@ -258,7 +234,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = first1;
   cResult[9] = null;
   cResult[10] = obj2;
-}) : ((arg0) => {
+}) : (function useConjureControlStop(arg0) {
   let closure_0;
   let closure_2;
   let stopping;

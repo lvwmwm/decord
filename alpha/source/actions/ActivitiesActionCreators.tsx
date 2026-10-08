@@ -1,15 +1,15 @@
-// Module ID: 11146
-// Function ID: 11147
+// Module ID: 11266
+// Function ID: 11267
 // Name: ActivitiesActionCreators
-// Dependencies: [5, 2051, 1085, 4889, 584, 1282, 7179, 6978, 5076, 4909, 2]
+// Dependencies: [5, 2063, 1085, 5083, 584, 1294, 7358, 7167, 5105, 7001, 2]
 
-// Module 11146 (ActivitiesActionCreators)
+// Module 11266 (ActivitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import MessageConstants from "MessageConstants" /* 4889 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4909 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5076 */;
+import MessageConstants from "MessageConstants" /* 5083 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5105 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7001 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

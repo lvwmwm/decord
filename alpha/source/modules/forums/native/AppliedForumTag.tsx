@@ -1,22 +1,22 @@
-// Module ID: 10369
-// Function ID: 10370
+// Module ID: 9966
+// Function ID: 9967
 // Name: AppliedForumTag
-// Dependencies: [109, 19, 17, 5645, 1380, 21, 4896, 587, 558, 576, 504, 1126, 6632, 1402, 4892, 10370, 2]
+// Dependencies: [109, 19, 17, 5992, 1392, 21, 5090, 587, 558, 576, 504, 1126, 6809, 1414, 5086, 9967, 2]
 
-// Module 10369 (AppliedForumTag)
+// Module 9966 (AppliedForumTag)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
-import EmojiDefault from "Emoji" /* 6632 */;
-import ForumTagContextMenuDefault from "ForumTagContextMenu" /* 10370 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
+import EmojiDefault from "Emoji" /* 6809 */;
+import ForumTagContextMenuDefault from "ForumTagContextMenu" /* 9967 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5645 */;
+import EmojiStore from "EmojiStore" /* 5992 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let c9;
 let metroImportAll;
 let obj2;
 let tmp5;
-const Text_Text = tmp5(4892);
+const Text_Text = tmp5(5086);
 let closure_3 = ["ref"];
 const View = react_native.View;
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
@@ -36,7 +36,7 @@ let obj = { pill: obj2, disableEndMargin: { marginRight: 0 }, emoji: { height: 1
 obj2 = { height: 24, paddingHorizontal: 8, borderRadius: 20, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, marginRight: 4, flexShrink: 1 };
 let closure_10 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppliedForumTagPill(arg0) {
   let containerStyle;
   let disableEndMargin;
   let hasUnreads;
@@ -86,7 +86,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp2.disableEndMargin;
   cResult[2] = tmp4;
   tmp3 = tmp4;
-}) : ((arg0) => {
+}) : (function AppliedForumTagPill(arg0) {
   let containerStyle;
   let disableEndMargin;
   let hasUnreads;
@@ -99,7 +99,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroImportAll(closure_11, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasUnreads) => {
+tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppliedForumTag(hasUnreads) {
   let container;
   let containerStyle;
   let first;
@@ -126,7 +126,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasUnreads) => {
     first = cResult[0];
   }
   if (cResult[1] !== emojiId) {
-    const fn = function x() {
+    const fn = function b() {
       let usableCustomEmojiById = null;
       if (null != emojiId) {
         usableCustomEmojiById = EmojiStore.getUsableCustomEmojiById(tmp);
@@ -215,7 +215,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasUnreads) => {
         if (null != stateFromStores) {
           const obj6 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
           ({ id: obj5.id, animated: obj5.animated } = tmp14);
-          const tmp12Result = tmp12(1402);
+          const tmp12Result = tmp12(1414);
           emojiURL = tmp12Result.getEmojiURL(obj6);
         }
         if (str == null) {
@@ -241,7 +241,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasUnreads) => {
   cResult[12] = tmp4.textEmoji;
   cResult[13] = I;
   tmp9 = I;
-}) : ((hasUnreads) => {
+}) : (function AppliedForumTag(hasUnreads) {
   let c2;
   let c3;
   let c4;
@@ -305,7 +305,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasUnreads) => {
         if (null != closure_5) {
           const obj6 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
           ({ id: obj5.id, animated: obj5.animated } = tmp14);
-          const tmp12Result = tmp12(1402);
+          const tmp12Result = tmp12(1414);
           emojiURL = tmp12Result.getEmojiURL(obj6);
         }
         if (str == null) {

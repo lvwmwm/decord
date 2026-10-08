@@ -1,11 +1,11 @@
-// Module ID: 15899
-// Function ID: 15900
+// Module ID: 16158
+// Function ID: 16159
 // Name: RiveAppStatePlaybackExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1452, 558, 576, 2]
 
-// Module 15899 (RiveAppStatePlaybackExperiment)
+// Module 16158 (RiveAppStatePlaybackExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ let obj = { name: "2026-06-rive-app-state-playback", kind: "user", defaultConfig
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRiveAppStatePlaybackExperiment(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -27,7 +27,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return apexExperiment.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useRiveAppStatePlaybackExperiment(location) {
   const obj = { location };
   return apexExperiment.useConfig(obj).enabled;
 });

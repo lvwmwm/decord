@@ -1,29 +1,29 @@
-// Module ID: 12290
-// Function ID: 12291
+// Module ID: 12388
+// Function ID: 12389
 // Name: UserProfileMutualsActionSheet
-// Dependencies: [32, 19, 17, 4936, 7865, 21, 4896, 587, 558, 576, 7898, 504, 1188, 5048, 10622, 6000, 5978, 4892, 12285, 12291, 10854, 12286, 12295, 12296, 9317, 1126, 12297, 10987, 2]
+// Dependencies: [32, 19, 17, 5106, 8283, 21, 5090, 587, 558, 576, 6058, 504, 1200, 5405, 10220, 6184, 6161, 5086, 12383, 12389, 10505, 12384, 12393, 12394, 8505, 1126, 12395, 11211, 2]
 
-// Module 12290 (UserProfileMutualsActionSheet)
+// Module 12388 (UserProfileMutualsActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5048 */;
-import GuildIcon from "GuildIcon" /* 5978 */;
-import TableRow2 from "TableRow" /* 6000 */;
-import Constants from "Constants" /* 7865 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10622 */;
-import UserProfileStackedActionSheet from "UserProfileStackedActionSheet" /* 10854 */;
-import useUserProfileMutualsDefault from "useUserProfileMutuals" /* 12285 */;
-import NoMutualServers from "NoMutualServers" /* 12286 */;
-import NoMutualFriends from "NoMutualFriends" /* 12291 */;
-import getMutualFriendsLabelDefault from "getMutualFriendsLabel" /* 12295 */;
-import getMutualGuildsLabelDefault from "getMutualGuildsLabel" /* 12296 */;
+import native from "native" /* 1200 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5405 */;
+import GuildIcon from "GuildIcon" /* 6161 */;
+import TableRow2 from "TableRow" /* 6184 */;
+import Constants from "Constants" /* 8283 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10220 */;
+import UserProfileStackedActionSheet from "UserProfileStackedActionSheet" /* 10505 */;
+import useUserProfileMutualsDefault from "useUserProfileMutuals" /* 12383 */;
+import NoMutualServers from "NoMutualServers" /* 12384 */;
+import NoMutualFriends from "NoMutualFriends" /* 12389 */;
+import getMutualFriendsLabelDefault from "getMutualFriendsLabel" /* 12393 */;
+import getMutualGuildsLabelDefault from "getMutualGuildsLabel" /* 12394 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PresenceStore from "PresenceStore" /* 4936 */;
+import PresenceStore from "PresenceStore" /* 5106 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ obj4 = { color: nativeDefault.colors.TEXT_SUBTLE };
 obj5 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
 let closure_11 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((mutualFriend) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function MutualFriendRow(mutualFriend) {
   let end;
   let first;
   let guildId;
@@ -67,7 +67,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((mutualFriend) 
   ({ guildId, onPress, start, end } = mutualFriend);
   user = mutualFriend.mutualFriend.user;
   const tmp4 = closure_11();
-  const obj2 = user(7898);
+  const obj2 = user(6058);
   const avatarDecoration = obj2.useAvatarDecoration(user);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [PresenceStore];
@@ -128,7 +128,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((mutualFriend) 
                     }
                   }
                   const obj3 = { onPress, icon: tmp11, label: tmp13, subLabel: tmp16, start, end };
-                  const tmp22 = closure_9(user(6000).TableRow, obj3, tmp10);
+                  const tmp22 = closure_9(user(6184).TableRow, obj3, tmp10);
                   cResult[17] = end;
                   cResult[18] = onPress;
                   cResult[19] = start;
@@ -159,8 +159,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((mutualFriend) 
       }
     }
   }
-  const obj6 = { user, size: user(1188).AvatarSizes.REFRESH_MEDIUM_32, avatarDecoration, status, guildId, isMobileOnline, isVROnline, autoStatusCutout: true };
-  const Avatar = tmp(1188).Avatar;
+  const obj6 = { user, size: user(1200).AvatarSizes.REFRESH_MEDIUM_32, avatarDecoration, status, guildId, isMobileOnline, isVROnline, autoStatusCutout: true };
+  const Avatar = tmp(1200).Avatar;
   const tmp12 = closure_9(Avatar, obj6);
   cResult[3] = avatarDecoration;
   cResult[4] = guildId;
@@ -170,7 +170,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((mutualFriend) 
   cResult[8] = user;
   cResult[9] = tmp12;
   tmp11 = tmp12;
-}) : ((mutualFriend) => {
+}) : (function MutualFriendRow(mutualFriend) {
   let Avatar;
   let end;
   let isMobileOnline;
@@ -185,7 +185,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((mutualFriend) 
   const guildId = mutualFriend.guildId;
   ({ onPress, start, end } = mutualFriend);
   const tmp = closure_11();
-  let obj = user(7898);
+  let obj = user(6058);
   const avatarDecoration = obj.useAvatarDecoration(user);
   const items = [PresenceStore];
   const obj2 = user(504);
@@ -195,15 +195,15 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((mutualFriend) 
   });
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
   const obj3 = { onPress, icon: closure_9(Avatar, obj4), label: obj5.getName(guildId, undefined, user), subLabel: closure_9(ActivityStatusDefault, obj6), start, end };
-  const TableRow = user(6000).TableRow;
-  obj4 = { user, size: user(1188).AvatarSizes.REFRESH_MEDIUM_32, avatarDecoration, status, guildId, isMobileOnline, isVROnline, autoStatusCutout: true };
-  Avatar = user(1188).Avatar;
+  const TableRow = user(6184).TableRow;
+  obj4 = { user, size: user(1200).AvatarSizes.REFRESH_MEDIUM_32, avatarDecoration, status, guildId, isMobileOnline, isVROnline, autoStatusCutout: true };
+  Avatar = user(1200).Avatar;
   obj5 = NicknameUtilsDefault;
   obj6 = { userId: user.id, guildId, textStyle: tmp.activityStatusText };
   return closure_9(TableRow, obj3, user.id);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MutualGuildRow(arg0) {
   let end;
   let guild;
   let items;
@@ -244,7 +244,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp17 = null != nick;
           if (tmp17) {
             const obj3 = { variant: "text-xs/medium", color: "text-subtle", children: nick };
-            tmp17 = React4(tmp(4892).Text, obj3);
+            tmp17 = React4(tmp(5086).Text, obj3);
           }
           cResult[9] = nick;
           cResult[10] = tmp17;
@@ -310,7 +310,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp21 = null == nick && tmp5;
         if (tmp21) {
           const obj6 = { variant: "text-xs/medium", color: "text-subtle", children: user.username };
-          tmp21 = React4(tmp(4892).Text, obj6);
+          tmp21 = React4(tmp(5086).Text, obj6);
         }
         cResult[11] = tmp5;
         cResult[12] = nick;
@@ -322,7 +322,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp13 = tmp5;
     if (tmp13) {
       const obj7 = { size: native.AvatarSizes.SIZE_16, user, guildId: guild.id };
-      const Avatar = tmp(1188).Avatar;
+      const Avatar = tmp(1200).Avatar;
       tmp13 = React4(Avatar, obj7);
     }
     cResult[5] = guild.id;
@@ -336,7 +336,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = user;
   cResult[2] = hasAvatarForGuildResult;
   tmp5 = hasAvatarForGuildResult;
-}) : ((mutualGuild) => {
+}) : (function MutualGuildRow(mutualGuild) {
   let end;
   let guild;
   let items;
@@ -363,31 +363,32 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   tmp8 = hasOwnProperty;
   if (hasAvatarForGuildResult) {
     const obj4 = { size: native.AvatarSizes.SIZE_16, user, guildId: guild.id };
-    const Avatar = tmp4(1188).Avatar;
+    const Avatar = tmp4(1200).Avatar;
     tmp3Result = tmp3(Avatar, obj4);
   }
   items = [tmp3Result, , ];
   let tmp3Result3 = null != nick;
   if (tmp3Result3) {
     const obj5 = { variant: "text-xs/medium", color: "text-subtle", children: nick };
-    tmp3Result3 = tmp3(tmp4(4892).Text, obj5);
+    tmp3Result3 = tmp3(tmp4(5086).Text, obj5);
   }
   items[1] = tmp3Result3;
   let tmp3Result4 = null == nick && hasAvatarForGuildResult;
   if (tmp3Result4) {
     const obj6 = { variant: "text-xs/medium", color: "text-subtle", children: user.username };
-    tmp3Result4 = tmp3(tmp4(4892).Text, obj6);
+    tmp3Result4 = tmp3(tmp4(5086).Text, obj6);
   }
   items[2] = tmp3Result4;
   return React4(TableRow, obj, guild.id);
 });
 let closure_13 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileMutualsActionSheet(user) {
   let closure_4;
   let closure_5;
   let items;
-  let obj5;
+  let obj3;
+  let obj7;
   let onPressMutualFriend;
   let tmp6;
   let obj = user(onPressMutualFriend[9]);
@@ -422,39 +423,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                   if (cResult[10] === user) {
                     tmp10 = cResult[11];
                   }
-                  class F {
-                    constructor() {
-                      let tmp4;
-                      if (null == mutualGuilds) {
-                        const obj2 = { style: closure_4.loadingState, children: React4(metroRequire, {}) };
-                        tmp4 = React4(hasOwnProperty, obj2);
-                      } else if (0 === mutualGuilds.length) {
-                        const obj3 = { style: closure_4.emptyState, children: React4(NoMutualServers.NoMutualServers, {}) };
-                        tmp4 = React4(hasOwnProperty, obj3);
-                      } else {
-                        let obj = {
-                          data: mutualGuilds,
-                          keyExtractor(guild) {
-                              return guild.guild.id;
-                            },
-                          renderItem(start) {
-                              const item = start.item;
-                              const obj = {
-                                user: item,
-                                mutualGuild: item,
-                                onPress() {
-                                  return onPressMutualGuild(item.guild.id);
-                                },
-                                start: start.start,
-                                end: start.end
-                              };
-                              return closure_1_9(closure_1_13, obj);
-                            }
-                        };
-                        tmp4 = React4(UserProfileStackedActionSheet.UserProfileStackedActionSheetList, obj);
-                      }
-                      return tmp4;
-                    }
+                  let num7 = 0;
+                  if (section === UserProfileSections.MUTUAL_GUILDS) {
+                    num7 = 1;
                   }
                   let length;
                   if (mutualFriends != null) {
@@ -462,40 +433,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                   }
                   if (cResult[12] !== length) {
                     const tmp15 = guildId(onPressMutualFriend[22])(length);
-                    class F {
-                      constructor() {
-                        let tmp4;
-                        if (null == mutualGuilds) {
-                          const obj2 = { style: closure_4.loadingState, children: React4(metroRequire, {}) };
-                          tmp4 = React4(hasOwnProperty, obj2);
-                        } else if (0 === mutualGuilds.length) {
-                          const obj3 = { style: closure_4.emptyState, children: React4(NoMutualServers.NoMutualServers, {}) };
-                          tmp4 = React4(hasOwnProperty, obj3);
-                        } else {
-                          let obj = {
-                            data: mutualGuilds,
-                            keyExtractor(guild) {
-                                return guild.guild.id;
-                              },
-                            renderItem(start) {
-                                const item = start.item;
-                                const obj = {
-                                  user: item,
-                                  mutualGuild: item,
-                                  onPress() {
-                                    return onPressMutualGuild(item.guild.id);
-                                  },
-                                  start: start.start,
-                                  end: start.end
-                                };
-                                return closure_1_9(closure_1_13, obj);
-                              }
-                          };
-                          tmp4 = React4(UserProfileStackedActionSheet.UserProfileStackedActionSheetList, obj);
-                        }
-                        return tmp4;
-                      }
-                    }
+                    cResult[12] = length;
                     cResult[13] = tmp15;
                     tmp14 = tmp15;
                   } else {
@@ -503,40 +441,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                   }
                   if (cResult[14] !== tmp9) {
                     const tmp9Result = tmp9();
-                    class F {
-                      constructor() {
-                        let tmp4;
-                        if (null == mutualGuilds) {
-                          const obj2 = { style: closure_4.loadingState, children: React4(metroRequire, {}) };
-                          tmp4 = React4(hasOwnProperty, obj2);
-                        } else if (0 === mutualGuilds.length) {
-                          const obj3 = { style: closure_4.emptyState, children: React4(NoMutualServers.NoMutualServers, {}) };
-                          tmp4 = React4(hasOwnProperty, obj3);
-                        } else {
-                          let obj = {
-                            data: mutualGuilds,
-                            keyExtractor(guild) {
-                                return guild.guild.id;
-                              },
-                            renderItem(start) {
-                                const item = start.item;
-                                const obj = {
-                                  user: item,
-                                  mutualGuild: item,
-                                  onPress() {
-                                    return onPressMutualGuild(item.guild.id);
-                                  },
-                                  start: start.start,
-                                  end: start.end
-                                };
-                                return closure_1_9(closure_1_13, obj);
-                              }
-                          };
-                          tmp4 = React4(UserProfileStackedActionSheet.UserProfileStackedActionSheetList, obj);
-                        }
-                        return tmp4;
-                      }
-                    }
+                    cResult[14] = tmp9;
                     cResult[15] = tmp9Result;
                     tmp16 = tmp9Result;
                   } else {
@@ -549,76 +454,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                     if (cResult[17] === tmp16) {
                       tmp18 = cResult[18];
                     }
-                    class F {
-                      constructor() {
-                        let tmp4;
-                        if (null == mutualGuilds) {
-                          const obj2 = { style: closure_4.loadingState, children: React4(metroRequire, {}) };
-                          tmp4 = React4(hasOwnProperty, obj2);
-                        } else if (0 === mutualGuilds.length) {
-                          const obj3 = { style: closure_4.emptyState, children: React4(NoMutualServers.NoMutualServers, {}) };
-                          tmp4 = React4(hasOwnProperty, obj3);
-                        } else {
-                          let obj = {
-                            data: mutualGuilds,
-                            keyExtractor(guild) {
-                                return guild.guild.id;
-                              },
-                            renderItem(start) {
-                                const item = start.item;
-                                const obj = {
-                                  user: item,
-                                  mutualGuild: item,
-                                  onPress() {
-                                    return onPressMutualGuild(item.guild.id);
-                                  },
-                                  start: start.start,
-                                  end: start.end
-                                };
-                                return closure_1_9(closure_1_13, obj);
-                              }
-                          };
-                          tmp4 = React4(UserProfileStackedActionSheet.UserProfileStackedActionSheetList, obj);
-                        }
-                        return tmp4;
-                      }
+                    let length1;
+                    if (mutualGuilds != null) {
+                      length1 = mutualGuilds.length;
                     }
-                    if (cResult[19] !== undefined) {
-                      const tmp21 = guildId(onPressMutualFriend[23])(undefined);
-                      class F {
-                        constructor() {
-                          let tmp4;
-                          if (null == mutualGuilds) {
-                            const obj2 = { style: closure_4.loadingState, children: React4(metroRequire, {}) };
-                            tmp4 = React4(hasOwnProperty, obj2);
-                          } else if (0 === mutualGuilds.length) {
-                            const obj3 = { style: closure_4.emptyState, children: React4(NoMutualServers.NoMutualServers, {}) };
-                            tmp4 = React4(hasOwnProperty, obj3);
-                          } else {
-                            let obj = {
-                              data: mutualGuilds,
-                              keyExtractor(guild) {
-                                  return guild.guild.id;
-                                },
-                              renderItem(start) {
-                                  const item = start.item;
-                                  const obj = {
-                                    user: item,
-                                    mutualGuild: item,
-                                    onPress() {
-                                      return onPressMutualGuild(item.guild.id);
-                                    },
-                                    start: start.start,
-                                    end: start.end
-                                  };
-                                  return closure_1_9(closure_1_13, obj);
-                                }
-                            };
-                            tmp4 = React4(UserProfileStackedActionSheet.UserProfileStackedActionSheetList, obj);
-                          }
-                          return tmp4;
-                        }
-                      }
+                    if (cResult[19] !== length1) {
+                      const tmp21 = guildId(onPressMutualFriend[23])(length1);
+                      cResult[19] = length1;
                       cResult[20] = tmp21;
                       tmp20 = tmp21;
                     } else {
@@ -626,40 +468,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                     }
                     if (cResult[21] !== tmp10) {
                       const tmp10Result = tmp10();
-                      class F {
-                        constructor() {
-                          let tmp4;
-                          if (null == mutualGuilds) {
-                            const obj2 = { style: closure_4.loadingState, children: React4(metroRequire, {}) };
-                            tmp4 = React4(hasOwnProperty, obj2);
-                          } else if (0 === mutualGuilds.length) {
-                            const obj3 = { style: closure_4.emptyState, children: React4(NoMutualServers.NoMutualServers, {}) };
-                            tmp4 = React4(hasOwnProperty, obj3);
-                          } else {
-                            let obj = {
-                              data: mutualGuilds,
-                              keyExtractor(guild) {
-                                  return guild.guild.id;
-                                },
-                              renderItem(start) {
-                                  const item = start.item;
-                                  const obj = {
-                                    user: item,
-                                    mutualGuild: item,
-                                    onPress() {
-                                      return onPressMutualGuild(item.guild.id);
-                                    },
-                                    start: start.start,
-                                    end: start.end
-                                  };
-                                  return closure_1_9(closure_1_13, obj);
-                                }
-                            };
-                            tmp4 = React4(UserProfileStackedActionSheet.UserProfileStackedActionSheetList, obj);
-                          }
-                          return tmp4;
-                        }
-                      }
+                      cResult[21] = tmp10;
                       cResult[22] = tmp10Result;
                       tmp22 = tmp10Result;
                     } else {
@@ -677,44 +486,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                         }
                         if (cResult[29] === tmp6) {
                           if (cResult[30] === tmp25) {
-                            let tmp32;
+                            let tmp26;
+                            let tmp29;
+                            let tmp30;
                             let tmp33;
-                            let tmp37;
-                            user(onPressMutualFriend[24]);
-                            class F {
-                              constructor() {
-                                let tmp4;
-                                if (null == mutualGuilds) {
-                                  const obj2 = { style: closure_4.loadingState, children: React4(metroRequire, {}) };
-                                  tmp4 = React4(hasOwnProperty, obj2);
-                                } else if (0 === mutualGuilds.length) {
-                                  const obj3 = { style: closure_4.emptyState, children: React4(NoMutualServers.NoMutualServers, {}) };
-                                  tmp4 = React4(hasOwnProperty, obj3);
-                                } else {
-                                  let obj = {
-                                    data: mutualGuilds,
-                                    keyExtractor(guild) {
-                                        return guild.guild.id;
-                                      },
-                                    renderItem(start) {
-                                        const item = start.item;
-                                        const obj = {
-                                          user: item,
-                                          mutualGuild: item,
-                                          onPress() {
-                                            return onPressMutualGuild(item.guild.id);
-                                          },
-                                          start: start.start,
-                                          end: start.end
-                                        };
-                                        return closure_1_9(closure_1_13, obj);
-                                      }
-                                  };
-                                  tmp4 = React4(UserProfileStackedActionSheet.UserProfileStackedActionSheetList, obj);
-                                }
-                                return tmp4;
-                              }
+                            if (cResult[31] === num7) {
+                              tmp26 = cResult[32];
                             }
+                            const tmpResult = user(onPressMutualFriend[24]);
+                            const segmentedControlState = tmpResult.useSegmentedControlState(tmp26);
                             const _Symbol = Symbol;
                             if (cResult[33] === Symbol.for("react.memo_cache_sentinel")) {
                               class B {
@@ -722,41 +502,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                   closure_5(nativeEvent.nativeEvent.layout.width);
                                 }
                               }
-                              class F {
-                                constructor() {
-                                  let tmp4;
-                                  if (null == mutualGuilds) {
-                                    const obj2 = { style: closure_4.loadingState, children: React4(metroRequire, {}) };
-                                    tmp4 = React4(hasOwnProperty, obj2);
-                                  } else if (0 === mutualGuilds.length) {
-                                    const obj3 = { style: closure_4.emptyState, children: React4(NoMutualServers.NoMutualServers, {}) };
-                                    tmp4 = React4(hasOwnProperty, obj3);
-                                  } else {
-                                    let obj = {
-                                      data: mutualGuilds,
-                                      keyExtractor(guild) {
-                                          return guild.guild.id;
-                                        },
-                                      renderItem(start) {
-                                          const item = start.item;
-                                          const obj = {
-                                            user: item,
-                                            mutualGuild: item,
-                                            onPress() {
-                                              return onPressMutualGuild(item.guild.id);
-                                            },
-                                            start: start.start,
-                                            end: start.end
-                                          };
-                                          return closure_1_9(closure_1_13, obj);
-                                        }
-                                    };
-                                    tmp4 = React4(UserProfileStackedActionSheet.UserProfileStackedActionSheetList, obj);
-                                  }
-                                  return tmp4;
-                                }
-                              }
-                              tmp32 = B;
+                              cResult[33] = B;
+                              tmp29 = B;
                             } else {
                               class B {
                                 constructor(nativeEvent) {
@@ -771,43 +518,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                   closure_5(nativeEvent.nativeEvent.layout.width);
                                 }
                               }
-                              const string = tmp34.string;
-                              class F {
-                                constructor() {
-                                  let tmp4;
-                                  if (null == mutualGuilds) {
-                                    const obj2 = { style: closure_4.loadingState, children: React4(metroRequire, {}) };
-                                    tmp4 = React4(hasOwnProperty, obj2);
-                                  } else if (0 === mutualGuilds.length) {
-                                    const obj3 = { style: closure_4.emptyState, children: React4(NoMutualServers.NoMutualServers, {}) };
-                                    tmp4 = React4(hasOwnProperty, obj3);
-                                  } else {
-                                    let obj = {
-                                      data: mutualGuilds,
-                                      keyExtractor(guild) {
-                                          return guild.guild.id;
-                                        },
-                                      renderItem(start) {
-                                          const item = start.item;
-                                          const obj = {
-                                            user: item,
-                                            mutualGuild: item,
-                                            onPress() {
-                                              return onPressMutualGuild(item.guild.id);
-                                            },
-                                            start: start.start,
-                                            end: start.end
-                                          };
-                                          return closure_1_9(closure_1_13, obj);
-                                        }
-                                    };
-                                    tmp4 = React4(UserProfileStackedActionSheet.UserProfileStackedActionSheetList, obj);
-                                  }
-                                  return tmp4;
-                                }
-                              }
-                              cResult[34] = tmp35;
-                              tmp33 = tmp35;
+                              const stringResult = obj6.string(user(onPressMutualFriend[25]).t["l2/aLi"]);
+                              cResult[34] = stringResult;
+                              tmp30 = stringResult;
                             } else {
                               class B {
                                 constructor(nativeEvent) {
@@ -815,62 +528,28 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                 }
                               }
                             }
-                            if (cResult[35] !== tmp30) {
+                            if (cResult[35] !== segmentedControlState) {
                               class B {
                                 constructor(nativeEvent) {
                                   closure_5(nativeEvent.nativeEvent.layout.width);
                                 }
                               }
-                              class F {
-                                constructor() {
-                                  let tmp4;
-                                  if (null == mutualGuilds) {
-                                    const obj2 = { style: closure_4.loadingState, children: React4(metroRequire, {}) };
-                                    tmp4 = React4(hasOwnProperty, obj2);
-                                  } else if (0 === mutualGuilds.length) {
-                                    const obj3 = { style: closure_4.emptyState, children: React4(NoMutualServers.NoMutualServers, {}) };
-                                    tmp4 = React4(hasOwnProperty, obj3);
-                                  } else {
-                                    let obj = {
-                                      data: mutualGuilds,
-                                      keyExtractor(guild) {
-                                          return guild.guild.id;
-                                        },
-                                      renderItem(start) {
-                                          const item = start.item;
-                                          const obj = {
-                                            user: item,
-                                            mutualGuild: item,
-                                            onPress() {
-                                              return onPressMutualGuild(item.guild.id);
-                                            },
-                                            start: start.start,
-                                            end: start.end
-                                          };
-                                          return closure_1_9(closure_1_13, obj);
-                                        }
-                                    };
-                                    tmp4 = React4(UserProfileStackedActionSheet.UserProfileStackedActionSheetList, obj);
-                                  }
-                                  return tmp4;
-                                }
-                              }
-                              let obj2 = { state: tmp30 };
-                              tmp39[0] = closure_9(user(onPressMutualFriend[26]).Tabs, obj2);
-                              let obj3 = { state: tmp30 };
-                              const tmp40 = closure_9(closure_5, tmp39);
-                              const tmp41 = closure_9(user(onPressMutualFriend[27]).SegmentedControlPages, obj3);
-                              cResult[35] = tmp30;
-                              cResult[36] = tmp40;
-                              cResult[37] = tmp41;
-                              tmp37 = tmp41;
+                              let obj2 = { children: closure_9(tmp(tmp2[26]).Tabs, obj3) };
+                              obj3 = { state: segmentedControlState };
+                              const obj4 = { state: segmentedControlState };
+                              const tmp35 = closure_9(closure_5, obj2);
+                              const tmp36 = closure_9(user(onPressMutualFriend[27]).SegmentedControlPages, obj4);
+                              cResult[35] = segmentedControlState;
+                              cResult[36] = tmp35;
+                              cResult[37] = tmp36;
+                              tmp33 = tmp36;
                             } else {
                               class B {
                                 constructor(nativeEvent) {
                                   closure_5(nativeEvent.nativeEvent.layout.width);
                                 }
                               }
-                              tmp37 = cResult[37];
+                              tmp33 = cResult[37];
                             }
                             if (cResult[38] === tmp4.container) {
                               class B {
@@ -879,161 +558,89 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                 }
                               }
                             }
-                            const obj4 = { scrollable: true, title: tmp33, children: closure_10(closure_5, obj5) };
-                            obj5 = { style: tmp4.container, onLayout: tmp32, children: items };
-                            items = [tmp36, tmp37];
+                            const obj5 = { scrollable: true, title: tmp30, children: closure_10(closure_5, obj7) };
+                            obj7 = { style: tmp4.container, onLayout: tmp29, children: items };
+                            items = [tmp32, tmp33];
                             const tmp7Result = guildId(onPressMutualFriend[20]);
                             cResult[38] = tmp4.container;
-                            cResult[39] = tmp36;
-                            cResult[40] = tmp37;
-                            cResult[41] = closure_9(tmp7Result, obj4);
-                            const tmp47 = closure_9(tmp7Result, obj4);
+                            cResult[39] = tmp32;
+                            cResult[40] = tmp33;
+                            cResult[41] = closure_9(tmp7Result, obj5);
+                            const tmp42 = closure_9(tmp7Result, obj5);
                           }
                         }
-                        class F {
-                          constructor() {
-                            let tmp4;
-                            if (null == mutualGuilds) {
-                              const obj2 = { style: closure_4.loadingState, children: React4(metroRequire, {}) };
-                              tmp4 = React4(hasOwnProperty, obj2);
-                            } else if (0 === mutualGuilds.length) {
-                              const obj3 = { style: closure_4.emptyState, children: React4(NoMutualServers.NoMutualServers, {}) };
-                              tmp4 = React4(hasOwnProperty, obj3);
-                            } else {
-                              let obj = {
-                                data: mutualGuilds,
-                                keyExtractor(guild) {
-                                    return guild.guild.id;
-                                  },
-                                renderItem(start) {
-                                    const item = start.item;
-                                    const obj = {
-                                      user: item,
-                                      mutualGuild: item,
-                                      onPress() {
-                                        return onPressMutualGuild(item.guild.id);
-                                      },
-                                      start: start.start,
-                                      end: start.end
-                                    };
-                                    return closure_1_9(closure_1_13, obj);
-                                  }
-                              };
-                              tmp4 = React4(UserProfileStackedActionSheet.UserProfileStackedActionSheetList, obj);
-                            }
-                            return tmp4;
-                          }
-                        }
-                        tmp28[0] = tmp6;
-                        tmp28[1] = num7;
-                        tmp28[2] = tmp25;
+                        const obj8 = { pageWidth: tmp6, defaultIndex: num7, items: tmp25 };
                         cResult[29] = tmp6;
                         cResult[30] = tmp25;
                         cResult[31] = num7;
-                        cResult[32] = tmp28;
+                        cResult[32] = obj8;
+                        tmp26 = obj8;
                       }
-                      class F {
-                        constructor() {
-                          let tmp4;
-                          if (null == mutualGuilds) {
-                            const obj2 = { style: closure_4.loadingState, children: React4(metroRequire, {}) };
-                            tmp4 = React4(hasOwnProperty, obj2);
-                          } else if (0 === mutualGuilds.length) {
-                            const obj3 = { style: closure_4.emptyState, children: React4(NoMutualServers.NoMutualServers, {}) };
-                            tmp4 = React4(hasOwnProperty, obj3);
-                          } else {
-                            let obj = {
-                              data: mutualGuilds,
-                              keyExtractor(guild) {
-                                  return guild.guild.id;
-                                },
-                              renderItem(start) {
-                                  const item = start.item;
-                                  const obj = {
-                                    user: item,
-                                    mutualGuild: item,
-                                    onPress() {
-                                      return onPressMutualGuild(item.guild.id);
-                                    },
-                                    start: start.start,
-                                    end: start.end
-                                  };
-                                  return closure_1_9(closure_1_13, obj);
-                                }
-                            };
-                            tmp4 = React4(UserProfileStackedActionSheet.UserProfileStackedActionSheetList, obj);
-                          }
-                          return tmp4;
-                        }
-                      }
-                      tmp26[0] = tmp18;
-                      tmp26[1] = tmp24;
+                      const items1 = [tmp18, tmp24];
                       cResult[26] = tmp24;
                       cResult[27] = tmp18;
-                      cResult[28] = tmp26;
-                      tmp25 = tmp26;
+                      cResult[28] = items1;
+                      tmp25 = items1;
                     }
-                    const obj6 = { id: "mutual-guilds", label: tmp20, page: tmp22 };
+                    const obj9 = { id: "mutual-guilds", label: tmp20, page: tmp22 };
                     cResult[23] = tmp22;
                     cResult[24] = tmp20;
-                    cResult[25] = obj6;
-                    tmp24 = obj6;
+                    cResult[25] = obj9;
+                    tmp24 = obj9;
                   }
-                  const obj7 = { id: "mutual-friends", label: tmp14, page: tmp16 };
+                  const obj10 = { id: "mutual-friends", label: tmp14, page: tmp16 };
                   cResult[16] = tmp14;
                   cResult[17] = tmp16;
-                  cResult[18] = obj7;
-                  tmp18 = obj7;
+                  cResult[18] = obj10;
+                  tmp18 = obj10;
                 }
               }
             }
           }
-          class F {
-            constructor() {
-              let tmp4;
-              if (null == mutualGuilds) {
-                const obj2 = { style: closure_4.loadingState, children: React4(metroRequire, {}) };
-                tmp4 = React4(hasOwnProperty, obj2);
-              } else if (0 === mutualGuilds.length) {
-                const obj3 = { style: closure_4.emptyState, children: React4(NoMutualServers.NoMutualServers, {}) };
-                tmp4 = React4(hasOwnProperty, obj3);
-              } else {
-                let obj = {
-                  data: mutualGuilds,
-                  keyExtractor(guild) {
-                      return guild.guild.id;
-                    },
-                  renderItem(start) {
-                      const item = start.item;
-                      const obj = {
-                        user: item,
-                        mutualGuild: item,
-                        onPress() {
-                          return onPressMutualGuild(item.guild.id);
-                        },
-                        start: start.start,
-                        end: start.end
-                      };
-                      return closure_1_9(closure_1_13, obj);
-                    }
-                };
-                tmp4 = React4(UserProfileStackedActionSheet.UserProfileStackedActionSheetList, obj);
-              }
-              return tmp4;
+          function renderMutualGuilds() {
+            let tmp4;
+            if (null == mutualGuilds) {
+              const obj2 = { style: closure_4.loadingState, children: React4(metroRequire, {}) };
+              tmp4 = React4(hasOwnProperty, obj2);
+            } else if (0 === mutualGuilds.length) {
+              const obj3 = { style: closure_4.emptyState, children: React4(NoMutualServers.NoMutualServers, {}) };
+              tmp4 = React4(hasOwnProperty, obj3);
+            } else {
+              let obj = {
+                data: mutualGuilds,
+                keyExtractor(guild) {
+                    return guild.guild.id;
+                  },
+                renderItem(start) {
+                    const item = start.item;
+                    const obj = {
+                      user: item,
+                      mutualGuild: item,
+                      onPress() {
+                        return onPressMutualGuild(item.guild.id);
+                      },
+                      start: start.start,
+                      end: start.end
+                    };
+                    return closure_1_9(closure_1_13, obj);
+                  }
+              };
+              tmp4 = React4(UserProfileStackedActionSheet.UserProfileStackedActionSheetList, obj);
             }
+            return tmp4;
           }
           cResult[6] = mutualGuilds;
           cResult[7] = onPressMutualGuild;
           cResult[8] = tmp4.emptyState;
           cResult[9] = tmp4.loadingState;
           cResult[10] = user;
-          cResult[11] = F;
-          tmp10 = F;
+          cResult[11] = renderMutualGuilds;
+          tmp10 = renderMutualGuilds;
         }
       }
     }
   }
-  const fn = function o() {
+  function renderMutualFriends() {
     let tmp4;
     if (null == mutualFriends) {
       const obj2 = { style: closure_4.loadingState, children: React4(metroRequire, {}) };
@@ -1064,15 +671,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       tmp4 = React4(UserProfileStackedActionSheet.UserProfileStackedActionSheetList, obj);
     }
     return tmp4;
-  };
+  }
   cResult[0] = guildId;
   cResult[1] = mutualFriends;
   cResult[2] = onPressMutualFriend;
   cResult[3] = tmp4.emptyState;
   cResult[4] = tmp4.loadingState;
-  cResult[5] = fn;
-  tmp9 = fn;
-}) : ((user) => {
+  cResult[5] = renderMutualFriends;
+  tmp9 = renderMutualFriends;
+}) : (function UserProfileMutualsActionSheet(user) {
   let closure_4;
   let first;
   let guildId;
@@ -1097,8 +704,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   useUserProfileMutualsDefault(user);
   const obj2 = { pageWidth: first, defaultIndex: num, items };
   num = 0;
-  const useSegmentedControlState = user(9317).useSegmentedControlState;
-  user(9317);
+  const useSegmentedControlState = user(8505).useSegmentedControlState;
+  user(8505);
   if (section === UserProfileSections.MUTUAL_GUILDS) {
     num = 1;
   }
@@ -1113,7 +720,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     tmp12 = closure_9(closure_5, obj4);
     tmp11 = closure_9;
   } else if (0 === mutualFriends.length) {
-    const obj5 = { style: tmp.emptyState, children: closure_9(user(12291).NoMutualFriends, {}) };
+    const obj5 = { style: tmp.emptyState, children: closure_9(user(12389).NoMutualFriends, {}) };
     tmp12 = closure_9(closure_5, obj5);
     tmp11 = closure_9;
   } else {
@@ -1137,7 +744,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           return closure_1_9(closure_1_12, obj);
         }
     };
-    tmp12 = closure_9(tmp7(10854).UserProfileStackedActionSheetList, obj6);
+    tmp12 = closure_9(tmp7(10505).UserProfileStackedActionSheetList, obj6);
   }
   items = [obj3, ];
   let length1;
@@ -1150,7 +757,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     const obj8 = { style: tmp.loadingState, children: tmp11(closure_6, {}) };
     tmp11Result = tmp11(closure_5, obj8);
   } else if (0 === mutualGuilds.length) {
-    const obj9 = { style: tmp.emptyState, children: tmp11(user(12286).NoMutualServers, {}) };
+    const obj9 = { style: tmp.emptyState, children: tmp11(user(12384).NoMutualServers, {}) };
     tmp11Result = tmp11(closure_5, obj9);
   } else {
     const obj10 = {
@@ -1172,7 +779,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           return closure_1_9(closure_1_13, obj);
         }
     };
-    tmp11Result = tmp11(tmp7(10854).UserProfileStackedActionSheetList, obj10);
+    tmp11Result = tmp11(tmp7(10505).UserProfileStackedActionSheetList, obj10);
   }
   items[1] = obj7;
   const segmentedControlState = useSegmentedControlState(obj2);
@@ -1184,9 +791,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   intl = tmp7(1126).intl;
   obj12 = { style: tmp.container, onLayout: callback, children: items1 };
   items1 = [, ];
-  const obj13 = { children: tmp11(user(12297).Tabs, { state: segmentedControlState }) };
+  const obj13 = { children: tmp11(user(12395).Tabs, { state: segmentedControlState }) };
   items1[0] = tmp11(closure_5, obj13);
-  items1[1] = tmp11(user(10987).SegmentedControlPages, { state: segmentedControlState });
+  items1[1] = tmp11(user(11211).SegmentedControlPages, { state: segmentedControlState });
   return tmp11(tmp4Result4, obj11);
 });
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileMutualsActionSheet.tsx");

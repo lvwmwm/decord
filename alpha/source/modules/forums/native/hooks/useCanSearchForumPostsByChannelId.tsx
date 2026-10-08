@@ -1,12 +1,12 @@
-// Module ID: 13118
-// Function ID: 13119
+// Module ID: 12832
+// Function ID: 12833
 // Name: useCanSearchForumPostsByChannelId
-// Dependencies: [2051, 4515, 1085, 558, 576, 504, 2]
+// Dependencies: [2063, 4707, 1085, 558, 576, 504, 2]
 
-// Module 13118 (useCanSearchForumPostsByChannelId)
+// Module 12832 (useCanSearchForumPostsByChannelId)
 import Constants from "Constants" /* 1085 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require;
 
 const Permissions = Constants.Permissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanSearchForumPostsByChannelId(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -43,7 +43,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7);
-}) : ((arg0) => {
+}) : (function useCanSearchForumPostsByChannelId(arg0) {
   let closure_0;
   _require = arg0;
   const items = [ChannelStore, PermissionStore];

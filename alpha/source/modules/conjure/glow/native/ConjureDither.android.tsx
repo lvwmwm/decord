@@ -1,19 +1,19 @@
-// Module ID: 16763
-// Function ID: 16764
+// Module ID: 17038
+// Function ID: 17039
 // Name: ConjureDither
-// Dependencies: [19, 17, 21, 558, 576, 16764, 8169, 4618, 2]
+// Dependencies: [19, 17, 21, 558, 576, 17039, 7550, 4810, 2]
 
-// Module 16763 (ConjureDither)
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4618 */;
-import inlineStyles from "inlineStyles" /* 8169 */;
-import _mod16764 from "module_16764" /* 16764 */;
+// Module 17038 (ConjureDither)
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4810 */;
+import inlineStyles from "inlineStyles" /* 7550 */;
+import _mod17039 from "module_17039" /* 17039 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let set, set2, width;
+let set, set2;
 
 let closure_4;
 let hasOwnProperty;
@@ -24,7 +24,7 @@ let metroRequire;
 let items = [0, Math.PI];
 let c9 = 9000;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((width) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function BandPicture(width) {
   let band;
   let combined3;
   let items1;
@@ -220,7 +220,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((width) => {
                                   let ay;
                                   let x0;
                                   let y0;
-                                  const obj = _mod16764;
+                                  const obj = _mod17039;
                                   const blobReachResult = obj.blobReach(peak.peak, peak.radius, bound);
                                   if (blobReachResult <= 0) {
                                     return null;
@@ -272,12 +272,12 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((width) => {
                         const RadialGradient = inlineStyles.RadialGradient;
                         const obj2 = { offset: isoStop(blobReachResult, obj4.blobReach(peak.peak, peak.radius, bound)), stopColor: "#fff", stopOpacity: 1 };
                         const Stop = inlineStyles.Stop;
-                        isoStop = _mod16764.isoStop;
-                        _mod16764;
+                        isoStop = _mod17039.isoStop;
+                        _mod17039;
                         ({ peak, radius } = peak);
-                        const obj3 = _mod16764;
-                        blobReachResult = obj3.blobReach(peak, radius, metroRequire + _mod16764.FADE_HALF);
-                        obj4 = _mod16764;
+                        const obj3 = _mod17039;
+                        blobReachResult = obj3.blobReach(peak, radius, metroRequire + _mod17039.FADE_HALF);
+                        obj4 = _mod17039;
                         items = [metroRequire(Stop, obj2), metroRequire(inlineStyles.Stop, { offset: 1, stopColor: "#fff", stopOpacity: 0 })];
                         return metroImportDefault(RadialGradient, obj, index);
                       });
@@ -355,7 +355,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((width) => {
         cResult[16] = tmp25;
         class H {
           constructor(arg0) {
-            size = { x: arg0.x, y: arg0.y, width: _mod16764.CELL, height: _mod16764.CELL, rx: _mod16764.CORNER, fill, fillOpacity };
+            size = { x: arg0.x, y: arg0.y, width: _mod17039.CELL, height: _mod17039.CELL, rx: _mod17039.CORNER, fill, fillOpacity };
             const Rect = inlineStyles.Rect;
             return metroRequire(Rect, size, "" + arg0.x + "-" + arg0.y);
           }
@@ -398,7 +398,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((width) => {
   }
   class H {
     constructor(arg0) {
-      size = { x: arg0.x, y: arg0.y, width: _mod16764.CELL, height: _mod16764.CELL, rx: _mod16764.CORNER, fill, fillOpacity };
+      size = { x: arg0.x, y: arg0.y, width: _mod17039.CELL, height: _mod17039.CELL, rx: _mod17039.CORNER, fill, fillOpacity };
       const Rect = inlineStyles.Rect;
       return metroRequire(Rect, size, "" + arg0.x + "-" + arg0.y);
     }
@@ -407,7 +407,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((width) => {
   cResult[25] = fillOpacity;
   cResult[26] = H;
   tmp23 = H;
-}) : ((width) => {
+}) : (function BandPicture(width) {
   let arr;
   let band;
   let closure_4;
@@ -438,7 +438,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((width) => {
     width: state(height[5]).TILE,
     height: state(height[5]).TILE,
     children: arr.map((item) => {
-      size = { x: item.x, y: item.y, width: _mod16764.CELL, height: _mod16764.CELL, rx: _mod16764.CORNER, fill: react, fillOpacity };
+      size = { x: item.x, y: item.y, width: _mod17039.CELL, height: _mod17039.CELL, rx: _mod17039.CORNER, fill: react, fillOpacity };
       const Rect = inlineStyles.Rect;
       return metroRequire(Rect, size, "" + item.x + "-" + item.y);
     })
@@ -465,12 +465,12 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((width) => {
     const RadialGradient = inlineStyles.RadialGradient;
     const obj2 = { offset: isoStop(blobReachResult, obj4.blobReach(peak.peak, peak.radius, bound)), stopColor: "#fff", stopOpacity: 1 };
     const Stop = inlineStyles.Stop;
-    isoStop = _mod16764.isoStop;
-    _mod16764;
+    isoStop = _mod17039.isoStop;
+    _mod17039;
     ({ peak, radius } = peak);
-    const obj3 = _mod16764;
-    blobReachResult = obj3.blobReach(peak, radius, closure_5 + _mod16764.FADE_HALF);
-    obj4 = _mod16764;
+    const obj3 = _mod17039;
+    blobReachResult = obj3.blobReach(peak, radius, closure_5 + _mod17039.FADE_HALF);
+    obj4 = _mod17039;
     items = [metroRequire(Stop, obj2), metroRequire(inlineStyles.Stop, { offset: 1, stopColor: "#fff", stopOpacity: 0 })];
     return metroImportDefault(RadialGradient, obj, index);
   });
@@ -491,7 +491,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((width) => {
     let ay;
     let x0;
     let y0;
-    const obj = _mod16764;
+    const obj = _mod17039;
     const blobReachResult = obj.blobReach(peak.peak, peak.radius, bound);
     if (blobReachResult <= 0) {
       return null;
@@ -522,7 +522,7 @@ const __initData4 = { code: "function ConjureDitherAndroidTsx4(frame){const{STAT
 const __initData5 = { code: "function ConjureDitherAndroidTsx5(){const{phase}=this.__closure;return{opacity:(1+Math.cos(phase.get()))/2};}" };
 const __initData6 = { code: "function ConjureDitherAndroidTsx6(){const{phase}=this.__closure;return{opacity:(1-Math.cos(phase.get()))/2};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((width) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDither(width) {
   let animatedStyle1;
   let thinking;
   let obj = width(thinking[4]);
@@ -668,7 +668,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((width) => {
   cResult[3] = items;
   tmp10 = items;
   tmp9 = fn;
-}) : ((width) => {
+}) : (function ConjureDither(width) {
   let LEVELS;
   let closure_4;
   let closure_9;

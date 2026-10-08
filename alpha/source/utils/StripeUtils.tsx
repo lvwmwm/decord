@@ -1,17 +1,17 @@
-// Module ID: 5426
-// Function ID: 5427
+// Module ID: 5735
+// Function ID: 5736
 // Name: StripeUtils
-// Dependencies: [5, 32, 2116, 1085, 3, 5427, 1282, 558, 576, 504, 2]
+// Dependencies: [5, 32, 2128, 1085, 3, 5736, 1294, 558, 576, 504, 2]
 // Exports: authenticatePaymentIntentForPaymentId, getStripeClientMode, getStripeElementLocale, parseBillingAddressInfoToStripeBillingDetails, parseStripePaymentMethod, validateExpiry
 
-// Module 5426 (StripeUtils)
+// Module 5735 (StripeUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react from "react" /* 576 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import _mod5427 from "module_5427" /* 5427 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import _mod5736 from "module_5736" /* 5736 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
+import LocaleStore from "LocaleStore" /* 2128 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ function getStripe() {
   if (null != React2) {
     resolved = Promise.resolve(React2);
   } else {
-    obj = _mod5427;
+    obj = _mod5736;
     const stripe = obj.loadStripe(metroImportDefault.STRIPE.KEY);
     resolved = stripe.then((result) => {
       let closure_1_2 = result;
@@ -228,7 +228,7 @@ let tmp3 = new LoggerDefault("StripeUtils");
 const logger = tmp3;
 let closure_9 = { REQUIRES_PAYMENT_METHOD: "requires_payment_method", REQUIRES_CONFIRMATION: "requires_confirmation", REQUIRES_ACTION: "requires_action", PROCESSING: "processing", CANCELED: "canceled", SUCCEEDED: "succeeded" };
 let closure_12 = { "en-US": "en", "zh-CN": "zh", "sv-SE": "sv" };
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStripeLocale() {
   let tmp4;
   let tmp5;
   let tmp = require;
@@ -253,7 +253,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useStripeLocale() {
   const items = [LocaleStore];
   obj = get_initialized;
   return obj.useStateFromStores(items, () => {

@@ -1,23 +1,23 @@
-// Module ID: 9818
-// Function ID: 9819
+// Module ID: 10381
+// Function ID: 10382
 // Name: MoreTipsModal
-// Dependencies: [19, 17, 9799, 1085, 21, 4896, 587, 558, 576, 9819, 1126, 4892, 9822, 6890, 5099, 4815, 1188, 1618, 573, 9811, 5416, 5421, 6503, 2]
+// Dependencies: [19, 17, 10266, 1085, 21, 5090, 587, 558, 576, 10382, 1126, 5086, 10385, 7079, 5940, 5009, 1200, 1630, 573, 10374, 5725, 5730, 6679, 2]
 
-// Module 9818 (MoreTipsModal)
+// Module 10381 (MoreTipsModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5416 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 9811 */;
-import SafetyTipsSectionDefault from "SafetyTipsSection" /* 9819 */;
-import WasThisHelpfulSectionDefault from "WasThisHelpfulSection" /* 9822 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5725 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10374 */;
+import SafetyTipsSectionDefault from "SafetyTipsSection" /* 10382 */;
+import WasThisHelpfulSectionDefault from "WasThisHelpfulSection" /* 10385 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 9799 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10266 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const MetricEvents = tmp(5421);
+const MetricEvents = tmp(5730);
 function headerTitle() {
   return null;
 }
@@ -49,7 +49,7 @@ obj4 = { gap: nativeDefault.space.PX_8 };
 obj5 = { marginTop: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_4 };
 let closure_10 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function MoreTipsModalScreen(arg0) {
   let actionItems;
   let channelId;
   let description;
@@ -187,7 +187,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = safetyTips;
   cResult[2] = tmp8;
   tmp7 = tmp8;
-}) : ((learnMore) => {
+}) : (function MoreTipsModalScreen(learnMore) {
   let actionItems;
   let channelId;
   let description;
@@ -224,7 +224,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroImportAll(tmp3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MoreTipsModal(channelId) {
   let closure_129_0;
   let closure_129_1;
   let closure_129_2;
@@ -291,7 +291,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
                                       return closure_2_8(closure_2_11, obj);
                                     }
                   };
-                  class S {
+                  class M {
                     constructor() {
                       let type;
                       const obj = { channelId, warningId, senderId, warningType: type };
@@ -323,7 +323,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
                 }
                 const obj4 = { screens: tmp17, initialRouteName: "MORE_TIPS", headerStatusBarHeight: top };
                 const tmp20 = closure_8(tmp(senderId[22]).Navigator, obj4);
-                class S {
+                class M {
                   constructor() {
                     let type;
                     const obj = { channelId, warningId, senderId, warningType: type };
@@ -349,7 +349,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
           }
           const items1 = [channelId, warningId, senderId, stateFromStores];
           cResult[9] = channelId;
-          class S {
+          class M {
             constructor() {
               let type;
               const obj = { channelId, warningId, senderId, warningType: type };
@@ -378,7 +378,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     if (stateFromStores != null) {
       type1 = stateFromStores.type;
     }
-    class S {
+    class M {
       constructor() {
         let type;
         const obj = { channelId, warningId, senderId, warningType: type };
@@ -398,17 +398,17 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     cResult[5] = type1;
     cResult[6] = senderId;
     cResult[7] = warningId;
-    cResult[8] = S;
-    tmp11 = S;
+    cResult[8] = M;
+    tmp11 = M;
   }
-  const fn = function l() {
+  const fn = function o() {
     return ChannelSafetyWarningsStore.getChannelSafetyWarning(channelId, warningId);
   };
   cResult[1] = channelId;
   cResult[2] = warningId;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((headerStyle) => {
+}) : (function MoreTipsModal(headerStyle) {
   let c0;
   let c1;
   let c2;

@@ -1,22 +1,22 @@
-// Module ID: 17227
-// Function ID: 17228
+// Module ID: 17508
+// Function ID: 17509
 // Name: FramePanelHeader
-// Dependencies: [32, 19, 17, 9000, 8738, 21, 558, 576, 6670, 17206, 17208, 17212, 17213, 17228, 504, 17223, 2]
+// Dependencies: [32, 19, 17, 10612, 10613, 21, 558, 576, 6847, 17487, 17489, 17493, 17494, 17509, 504, 17504, 2]
 
-// Module 17227 (FramePanelHeader)
+// Module 17508 (FramePanelHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6670 */;
-import FramesConstants from "FramesConstants" /* 8738 */;
-import ActivityPanelHeader from "ActivityPanelHeader" /* 17206 */;
-import InviteActivityButtonDefault from "InviteActivityButton" /* 17208 */;
-import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 17212 */;
-import QuestActivityButtonDefault from "QuestActivityButton" /* 17213 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 17223 */;
-import panel_LeaveActivityButtonDefault from "panel/LeaveActivityButton" /* 17228 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6847 */;
+import FramesConstants from "FramesConstants" /* 10613 */;
+import ActivityPanelHeader from "ActivityPanelHeader" /* 17487 */;
+import InviteActivityButtonDefault from "InviteActivityButton" /* 17489 */;
+import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 17493 */;
+import QuestActivityButtonDefault from "QuestActivityButton" /* 17494 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 17504 */;
+import panel_LeaveActivityButtonDefault from "panel/LeaveActivityButton" /* 17509 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 9000 */;
+import FramesStore from "FramesStore" /* 10612 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ const View = react_native.View;
 const asLaunched = FramesConstants.asLaunched;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FramePanelHeaderContentInner(arg0) {
   let frame;
   let gesture;
   let headerStyles;
@@ -202,7 +202,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = wrapperOffset;
   cResult[6] = obj8;
   tmp7 = obj8;
-}) : ((arg0) => {
+}) : (function FramePanelHeaderContentInner(arg0) {
   let frame;
   let gesture;
   let headerStyles;
@@ -266,7 +266,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 const memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function FramePanelHeaderContent(arg0) {
   let mainFrame;
   let tmp4;
   let tmp5;
@@ -304,7 +304,7 @@ let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
     tmp10 = tmp16;
   }
   return tmp8;
-}) : ((arg0) => {
+}) : (function FramePanelHeaderContent(arg0) {
   let mainFrame;
   const items = [FramesStore];
   const obj = get_initialized;
@@ -319,7 +319,7 @@ let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
 }));
 const memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function FramePanelHeader() {
   let first;
   let headerStyles;
   let pipState;
@@ -369,7 +369,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (() => 
   cResult[4] = wrapperOffset;
   cResult[5] = tmp8;
   tmp7 = tmp8;
-}) : (() => {
+}) : (function FramePanelHeader() {
   let obj4;
   const obj = ActivityPanelHeader;
   const obj2 = { context: FramePanelStateContextDefault };

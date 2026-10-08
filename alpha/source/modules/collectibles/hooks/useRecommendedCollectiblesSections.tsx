@@ -1,22 +1,22 @@
-// Module ID: 13023
-// Function ID: 13024
+// Module ID: 13301
+// Function ID: 13302
 // Name: useRecommendedCollectiblesSections
-// Dependencies: [19, 13024, 558, 576, 13025, 5991, 13026, 2]
+// Dependencies: [19, 13302, 558, 576, 13303, 6174, 13304, 2]
 
-// Module 13023 (useRecommendedCollectiblesSections)
+// Module 13301 (useRecommendedCollectiblesSections)
 import react from "react" /* 19 */;
-import useInitialValueDefault from "useInitialValue" /* 5991 */;
-import CollectiblesRecommendationUtils from "CollectiblesRecommendationUtils" /* 13026 */;
-import CollectiblesRecommendationStore from "CollectiblesRecommendationStore" /* 13024 */;
+import useInitialValueDefault from "useInitialValue" /* 6174 */;
+import CollectiblesRecommendationUtils from "CollectiblesRecommendationUtils" /* 13304 */;
+import CollectiblesRecommendationStore from "CollectiblesRecommendationStore" /* 13302 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, arr, dependencyMap, importDefault;
+let _require, dependencyMap, importDefault;
 
 let useMemo = react.useMemo;
 let closure_5 = [];
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRecommendedCollectiblesSections(arr, arg1) {
   let closure_0;
   let tmp4;
   _require = arg1;
@@ -68,34 +68,53 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr, arg1) => {
         tmp7 = cResult[8];
       }
       const mapped = arr.map(tmp7);
+      class C {
+        constructor(section) {
+          if (section.section !== closure_0) {
+            return section;
+          } else {
+            const obj = CollectiblesRecommendationUtils;
+            const result = obj.reorderCollectiblesByRecommendation(section.items, arr);
+            let tmp5 = section;
+            if (result !== section.items) {
+              const obj2 = { items: result };
+              const merged = Object.assign(section);
+              tmp5 = obj2;
+            }
+            return tmp5;
+          }
+        }
+      }
       cResult[2] = arg1;
       cResult[3] = arr;
       cResult[4] = arr;
       cResult[5] = mapped;
       tmp6 = mapped;
     }
-    const fn2 = function p(section) {
-      if (section.section !== closure_0) {
-        return section;
-      } else {
-        const obj = CollectiblesRecommendationUtils;
-        const result = obj.reorderCollectiblesByRecommendation(section.items, arr);
-        let tmp5 = section;
-        if (result !== section.items) {
-          const obj2 = { items: result };
-          const merged = Object.assign(section);
-          tmp5 = obj2;
+    class C {
+      constructor(section) {
+        if (section.section !== closure_0) {
+          return section;
+        } else {
+          const obj = CollectiblesRecommendationUtils;
+          const result = obj.reorderCollectiblesByRecommendation(section.items, arr);
+          let tmp5 = section;
+          if (result !== section.items) {
+            const obj2 = { items: result };
+            const merged = Object.assign(section);
+            tmp5 = obj2;
+          }
+          return tmp5;
         }
-        return tmp5;
       }
-    };
+    }
     cResult[6] = arg1;
     cResult[7] = arr;
-    cResult[8] = fn2;
-    tmp7 = fn2;
+    cResult[8] = C;
+    tmp7 = C;
   }
   return tmp5;
-}) : ((arg0, arg1) => {
+}) : (function useRecommendedCollectiblesSections(arg0, arg1) {
   let closure_0;
   let closure_1;
   let closure_2;

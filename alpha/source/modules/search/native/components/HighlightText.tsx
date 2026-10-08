@@ -1,25 +1,23 @@
-// Module ID: 11717
-// Function ID: 11718
+// Module ID: 11782
+// Function ID: 11783
 // Name: HighlightText
-// Dependencies: [19, 1085, 21, 4896, 4733, 587, 558, 576, 1188, 2]
+// Dependencies: [19, 1085, 21, 5090, 4927, 587, 558, 576, 1200, 2]
 
-// Module 11717 (HighlightText)
+// Module 11782 (HighlightText)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import ColorUtils_mod from "ColorUtils" /* 4733 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import ColorUtils_mod from "ColorUtils" /* 4927 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let children;
 
 let ColorUtils;
 let obj2;
 let tmp;
-const native = tmp(1188);
+const native = tmp(1200);
 const Fonts = Constants.Fonts;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -28,7 +26,7 @@ createStyles = createStyles.createStyles;
 obj2 = { fontFamily: Fonts.PRIMARY_BOLD, backgroundColor: ColorUtils.hexOpacityToRgba(nativeDefault.unsafe_rawColors.YELLOW_300, 0.3), color: nativeDefault.colors.TEXT_STRONG };
 ColorUtils = ColorUtils_mod;
 let closure_3 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HighlightText(children) {
   const obj = react2;
   const cResult = obj.c(3);
   children = children.children;
@@ -45,7 +43,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[1] = tmp4.text;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((children) => {
+}) : (function HighlightText(children) {
   children = children.children;
   return jsx(native.LegacyText, { style: closure_3().text, children });
 });

@@ -1,51 +1,67 @@
-// Module ID: 14239
-// Function ID: 14240
+// Module ID: 14063
+// Function ID: 14064
 // Name: ServerTabLottie
-// Dependencies: [19, 21, 558, 576, 14240, 9642, 2]
+// Dependencies: [109, 19, 21, 558, 576, 14064, 10837, 2]
 
-// Module 14239 (ServerTabLottie)
+// Module 14063 (ServerTabLottie)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import LottieIcon2 from "LottieIcon" /* 9642 */;
-import AssetRegistry from "AssetRegistry" /* 14240 */;
+import LottieIcon2 from "LottieIcon" /* 10837 */;
+import AssetRegistry from "AssetRegistry" /* 14064 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let closure_2 = ["ref"];
 const jsx = Fragment.jsx;
 const layers = ["I", "I"];
 const items = [{ name: "all", start: 0, duration: 67 }, { name: "easteregg", start: 68, duration: 142 }];
-const forwardRef = react.forwardRef;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
-  let first;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ServerTabLottie(ref) {
+  let tmp4;
+  let tmp5;
+  let tmp9;
   const obj = react2;
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = AssetRegistry;
-    cResult[0] = tmpResult;
-    first = tmpResult;
+  const cResult = obj.c(7);
+  if (cResult[0] !== ref) {
+    const tmp8 = _objectWithoutProperties(ref, closure_2);
+    cResult[0] = ref;
+    cResult[1] = tmp8;
+    cResult[2] = ref.ref;
+    tmp5 = ref;
+    tmp4 = tmp8;
   } else {
-    first = cResult[0];
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
   }
-  if (cResult[1] === arg0) {
-    let tmp6;
-    if (cResult[2] === ref) {
-      tmp6 = cResult[3];
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult = AssetRegistry;
+    cResult[3] = tmpResult;
+    tmp9 = tmpResult;
+  } else {
+    tmp9 = cResult[3];
+  }
+  if (cResult[4] === tmp4) {
+    let tmp11;
+    if (cResult[5] === tmp5) {
+      tmp11 = cResult[6];
     }
-    return tmp6;
+    return tmp11;
   }
-  const LottieIcon = tmp(9642).LottieIcon;
-  const merged = Object.assign(arg0);
-  const tmp8 = <LottieIcon dotLottie={first} animation="all" ref={arg1} layers={layers} markers={items} />;
-  cResult[1] = arg0;
-  cResult[2] = ref;
-  cResult[3] = tmp8;
-  tmp6 = tmp8;
-}) : ((arg0, ref) => {
+  const LottieIcon = tmp(10837).LottieIcon;
+  const merged = Object.assign(tmp4);
+  const tmp13 = <LottieIcon dotLottie={tmp9} animation="all" ref={tmp5} layers={layers} markers={items} />;
+  cResult[4] = tmp4;
+  cResult[5] = tmp5;
+  cResult[6] = tmp13;
+  tmp11 = tmp13;
+}) : (function ServerTabLottie(ref) {
+  ref = ref.ref;
+  const merged = Object.assign(ref, Object.assign({ ref: 0 }));
   const LottieIcon = LottieIcon2.LottieIcon;
-  const merged = Object.assign(arg0);
-  return <LottieIcon dotLottie={AssetRegistry} animation="all" ref={arg1} layers={layers} markers={items} />;
-}));
+  const merged1 = Object.assign(merged);
+  return <LottieIcon dotLottie={AssetRegistry} animation="all" ref={ref} layers={layers} markers={items} />;
+});
 const result = size.fileFinishedImporting("design/components/LottieIcon/native/generated/ServerTabLottie.tsx");
 
-export const ServerTabLottie = forwardRefResult;
+export const ServerTabLottie = tmp3;

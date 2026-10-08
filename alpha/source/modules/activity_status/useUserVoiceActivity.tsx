@@ -1,14 +1,14 @@
-// Module ID: 10625
-// Function ID: 10626
+// Module ID: 10223
+// Function ID: 10224
 // Name: useUserVoiceActivity
-// Dependencies: [2051, 4515, 4915, 1096, 558, 576, 504, 2]
+// Dependencies: [2063, 4707, 5111, 1096, 558, 576, 504, 2]
 // Exports: canViewUserVoiceChannel, getUserVoiceState
 
-// Module 10625 (useUserVoiceActivity)
+// Module 10223 (useUserVoiceActivity)
 import Constants from "Constants" /* 1096 */;
-import ChannelStore_mod from "ChannelStore" /* 2051 */;
-import PermissionStore_mod from "PermissionStore" /* 4515 */;
-import VoiceStateStore_mod from "VoiceStateStore" /* 4915 */;
+import ChannelStore_mod from "ChannelStore" /* 2063 */;
+import PermissionStore_mod from "PermissionStore" /* 4707 */;
+import VoiceStateStore_mod from "VoiceStateStore" /* 5111 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -93,7 +93,7 @@ let PermissionStore = PermissionStore_mod;
 let VoiceStateStore = VoiceStateStore_mod;
 const Permissions = Constants.Permissions;
 let closure_6 = { ChannelStore, PermissionStore, VoiceStateStore };
-let closure_7 = Object.freeze({ voiceState: "start", voiceChannel: "unicodeVersion" });
+let closure_7 = Object.freeze({ voiceState: "Array", voiceChannel: "Reflect" });
 function getUserVoiceState(arg0) {
   let guildId;
   let includeNonDiscoverable;
@@ -131,7 +131,7 @@ function getUserVoiceState(arg0) {
     tmp2 = voiceStateForUser;
   }
 }
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserVoiceActivity(userId) {
   let first;
   let guildId;
   let obj = userId(guildId[5]);
@@ -173,7 +173,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[5] = items1;
   tmp9 = items1;
   tmp8 = fn;
-}) : ((userId) => {
+}) : (function useUserVoiceActivity(userId) {
   userId = userId.userId;
   const guildId = userId.guildId;
   const includeNonDiscoverable = userId.includeNonDiscoverable;

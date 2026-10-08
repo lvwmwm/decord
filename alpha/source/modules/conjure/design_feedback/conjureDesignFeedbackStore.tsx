@@ -1,11 +1,11 @@
-// Module ID: 16583
-// Function ID: 16584
+// Module ID: 16838
+// Function ID: 16839
 // Name: conjureDesignFeedbackStore
-// Dependencies: [19, 16584, 558, 576, 2]
+// Dependencies: [19, 16839, 558, 576, 2]
 // Exports: addConjureDesignAnnotation, canEditConjureDesignAnnotation, enterConjureDesignFeedback, exitConjureDesignFeedback, getConjureDesignFeedback, relocateConjureDesignAnnotations, removeConjureDesignAnnotation, setConjureDesignFeedbackContext, updateConjureDesignAnnotation
 
-// Module 16583 (conjureDesignFeedbackStore)
-import ConjureDesignFeedback from "ConjureDesignFeedback" /* 16584 */;
+// Module 16838 (conjureDesignFeedbackStore)
+import ConjureDesignFeedback from "ConjureDesignFeedback" /* 16839 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ function getConjureDesignFeedback(arg0) {
 function canEditConjureDesignAnnotation(authorId, arg1) {
   return null != arg1 && authorId.authorId === arg1;
 }
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureDesignFeedback(arg0) {
   let closure_0;
   let tmp2;
   _require = arg0;
@@ -61,7 +61,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = cResult[1];
   }
   return react.useSyncExternalStore(subscribeConjureDesignFeedback, tmp2, tmp2);
-}) : ((arg0) => {
+}) : (function useConjureDesignFeedback(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   const callback = react.useCallback(() => {
@@ -289,7 +289,6 @@ export const removeConjureDesignAnnotation = function removeConjureDesignAnnotat
   let annotations1;
   let args;
   let closure_0 = arg2;
-  let obj = map;
   let value = map.get(arg0);
   if (value == null) {
     value = active;
@@ -306,7 +305,7 @@ export const removeConjureDesignAnnotation = function removeConjureDesignAnnotat
     annotations1 = value.annotations;
     if (!obj2.active) {
       if (0 === obj2.annotations.length) {
-        obj.delete(arg0);
+        map.delete(arg0);
       }
       (function emit() {
         const items = [...closure_1_5];

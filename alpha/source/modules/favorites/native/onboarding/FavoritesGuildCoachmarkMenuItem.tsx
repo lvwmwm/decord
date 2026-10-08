@@ -1,23 +1,23 @@
-// Module ID: 16201
-// Function ID: 16202
+// Module ID: 16461
+// Function ID: 16462
 // Name: FavoritesGuildCoachmarkMenuItem
-// Dependencies: [19, 2054, 1085, 2048, 21, 558, 576, 10063, 6658, 504, 1126, 3395, 9895, 2]
+// Dependencies: [19, 2066, 1085, 2060, 21, 558, 576, 10308, 6835, 504, 1126, 3439, 9375, 2]
 
-// Module 16201 (FavoritesGuildCoachmarkMenuItem)
+// Module 16461 (FavoritesGuildCoachmarkMenuItem)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import _modDef3395 from "module_3395" /* 3395 */;
-import FavoritesDismissibleContent from "FavoritesDismissibleContent" /* 10063 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import _modDef3439 from "module_3439" /* 3439 */;
+import FavoritesDismissibleContent from "FavoritesDismissibleContent" /* 10308 */;
 import react from "react" /* 19 */;
-import FavoriteStore from "FavoriteStore" /* 2054 */;
+import FavoriteStore from "FavoriteStore" /* 2066 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const LayerScope2 = tmp(6658);
+const LayerScope2 = tmp(6835);
 const ChannelTypes = Constants.ChannelTypes;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
@@ -25,7 +25,7 @@ let items = [, , ];
 ({ GUILD_TEXT: arr[0], GUILD_ANNOUNCEMENT: arr[1], GUILD_FORUM: arr[2] } = ChannelTypes);
 const set = new Set(items);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGuildCoachmarkMenuItem(arg0) {
   const obj = react2;
   const cResult = obj.c(2);
   let tmp4 = null;
@@ -45,7 +45,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp4 = tmp6;
   }
   return tmp4;
-}) : ((arg0) => {
+}) : (function FavoritesGuildCoachmarkMenuItem(arg0) {
   let tmp3 = null;
   const obj = FavoritesDismissibleContent;
   if (obj.useShouldRenderFavoritesMenuItemPopover()) {
@@ -56,10 +56,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelType) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGuildCoachmarkMenuItemContent(channelType) {
   let markPopoverAsDismissed;
   let shouldShowPopover;
-  let tmp12;
   let tmp19;
   let tmp22;
   let tmp4;
@@ -90,86 +89,91 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelType) =>
   } else {
     tmp8 = cResult[3];
   }
-  const tmpResult2 = markPopoverAsDismissed(10063);
+  const tmpResult2 = markPopoverAsDismissed(10308);
   const favoritesMenuItemPopoverDismissibleContent = tmpResult2.useFavoritesMenuItemPopoverDismissibleContent(tmp8);
   ({ shouldShowPopover, markPopoverAsDismissed } = favoritesMenuItemPopoverDismissibleContent);
   if (cResult[4] !== markPopoverAsDismissed) {
-    const fn2 = function b() {
-      markPopoverAsDismissed(ContentDismissActionType.USER_DISMISS);
-    };
+    class S {
+      constructor() {
+        markPopoverAsDismissed(ContentDismissActionType.USER_DISMISS);
+      }
+    }
     cResult[4] = markPopoverAsDismissed;
-    cResult[5] = fn2;
-    tmp12 = fn2;
+    cResult[5] = S;
   } else {
-    tmp12 = cResult[5];
+    class S {
+      constructor() {
+        markPopoverAsDismissed(ContentDismissActionType.USER_DISMISS);
+      }
+    }
   }
   if (cResult[6] !== markPopoverAsDismissed) {
-    class T {
+    class F {
       constructor() {
         markPopoverAsDismissed(ContentDismissActionType.TAKE_ACTION);
       }
     }
     cResult[6] = markPopoverAsDismissed;
-    cResult[7] = T;
+    cResult[7] = F;
   } else {
-    class T {
+    class F {
       constructor() {
         markPopoverAsDismissed(ContentDismissActionType.TAKE_ACTION);
       }
     }
   }
   if (cResult[8] !== stateFromStores) {
-    class T {
+    class F {
       constructor() {
         markPopoverAsDismissed(ContentDismissActionType.TAKE_ACTION);
       }
     }
     const string = tmp15.string;
-    const tmp17 = _modDef3395;
+    const tmp17 = _modDef3439;
     cResult[8] = stateFromStores;
     cResult[9] = string(stateFromStores ? tmp17.TWuDTt : tmp17["25YCHl"]);
     const stringResult = string(stateFromStores ? tmp17.TWuDTt : tmp17["25YCHl"]);
   } else {
-    class T {
+    class F {
       constructor() {
         markPopoverAsDismissed(ContentDismissActionType.TAKE_ACTION);
       }
     }
   }
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-    class T {
+    class F {
       constructor() {
         markPopoverAsDismissed(ContentDismissActionType.TAKE_ACTION);
       }
     }
-    const stringResult1 = obj4.string(_modDef3395.Ztl9ht);
+    const stringResult1 = obj4.string(_modDef3439.Ztl9ht);
     cResult[10] = stringResult1;
     tmp19 = stringResult1;
   } else {
-    class T {
+    class F {
       constructor() {
         markPopoverAsDismissed(ContentDismissActionType.TAKE_ACTION);
       }
     }
   }
   if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-    class T {
+    class F {
       constructor() {
         markPopoverAsDismissed(ContentDismissActionType.TAKE_ACTION);
       }
     }
-    const stringResult2 = obj5.string(_modDef3395["+h9aza"]);
+    const stringResult2 = obj5.string(_modDef3439["+h9aza"]);
     cResult[11] = stringResult2;
     tmp22 = stringResult2;
   } else {
-    class T {
+    class F {
       constructor() {
         markPopoverAsDismissed(ContentDismissActionType.TAKE_ACTION);
       }
     }
   }
   if (cResult[12] === tmp13) {
-    class T {
+    class F {
       constructor() {
         markPopoverAsDismissed(ContentDismissActionType.TAKE_ACTION);
       }
@@ -181,7 +185,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelType) =>
   cResult[14] = shouldShowPopover;
   cResult[15] = tmp14;
   cResult[16] = obj2;
-}) : ((arg0) => {
+}) : (function FavoritesGuildCoachmarkMenuItemContent(arg0) {
   let channelType;
   let targetRef;
   let stateFromStores;
@@ -211,10 +215,10 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelType) =>
     let intl3;
     let string;
     let tmp6;
-    const obj = { visible: shouldShowPopover, position: "bottom", title: string(TWuDTt), description: intl2.string(tmp6(3395).Ztl9ht), onDismiss, renderImgComponent: "r", buttonLabel: intl3.string(tmp6(3395)["+h9aza"]), onButtonPress: callback1 };
+    const obj = { visible: shouldShowPopover, position: "bottom", title: string(TWuDTt), description: intl2.string(tmp6(3439).Ztl9ht), onDismiss, renderImgComponent: "r", buttonLabel: intl3.string(tmp6(3439)["+h9aza"]), onButtonPress: callback1 };
     const intl = intl4.intl;
     string = intl.string;
-    const tmp4 = _modDef3395;
+    const tmp4 = _modDef3439;
     if (stateFromStores) {
       TWuDTt = tmp4.TWuDTt;
       tmp6 = tmp3;

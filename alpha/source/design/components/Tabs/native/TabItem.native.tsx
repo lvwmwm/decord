@@ -1,23 +1,23 @@
-// Module ID: 12298
-// Function ID: 12299
+// Module ID: 12396
+// Function ID: 12397
 // Name: TabItem
-// Dependencies: [109, 19, 17, 21, 4618, 4896, 587, 558, 5604, 576, 4892, 1369, 1126, 2]
+// Dependencies: [109, 19, 17, 21, 4810, 5090, 587, 558, 5374, 576, 5086, 1381, 1126, 2]
 
-// Module 12298 (TabItem)
+// Module 12396 (TabItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4618 */;
-import spring from "spring" /* 5604 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4810 */;
+import spring from "spring" /* 5374 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const ReanimatedRexport = ReanimatedRexport2;
-let _require, obj1;
+let _require;
 
 let metroImportDefault;
 let metroRequire;
@@ -41,7 +41,7 @@ let closure_13 = createStyles.createStyleProperties(obj4);
 const __initData = { code: "function TabItemNativeTsx1(){const{colors,pressed,index,activeIndex,withSpring,TEXT_SPRING_CONFIG}=this.__closure;let color=colors.inactive;const isPressActive=pressed.get()>=0;const isPressed=pressed.get()===index;const isActive=Math.round(activeIndex.get())===index;if(isPressed){color=colors.pressed;}else{if(isPressActive){color=colors.inactive;}else{if(isActive){color=colors.active;}}}return{color:withSpring(color,TEXT_SPRING_CONFIG,\"animate-always\")};}" };
 const __initData2 = { code: "function TabItemNativeTsx2(){const{colors,pressed,index,activeIndex,withSpring,TEXT_SPRING_CONFIG}=this.__closure;let color=colors.inactive;const isPressActive=pressed.get()>=0;const isPressed=pressed.get()===index;const isActive=Math.round(activeIndex.get())===index;if(isPressed){color=colors.pressed;}else if(isPressActive){color=colors.inactive;}else if(isActive){color=colors.active;}return{color:withSpring(color,TEXT_SPRING_CONFIG,'animate-always')};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAnimatedTextStyle(index) {
   index = index.index;
   const activeIndex = index.activeIndex;
   const pressed = index.pressed;
@@ -74,7 +74,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
   fn.__workletHash = 3501288786345;
   fn.__initData = __initData;
   return obj.useAnimatedStyle(fn);
-}) : ((index) => {
+}) : (function useAnimatedTextStyle(index) {
   index = index.index;
   const activeIndex = index.activeIndex;
   const pressed = index.pressed;
@@ -112,7 +112,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
 const __initData3 = { code: "function TabItemNativeTsx3(){const{withSpring,countAnimationState,COUNT_SPRING_CONFIG,interpolate}=this.__closure;return{opacity:withSpring(countAnimationState.get(),COUNT_SPRING_CONFIG),transform:[{translateX:withSpring(interpolate(countAnimationState.get(),[0,1],[-10,0]),COUNT_SPRING_CONFIG)}]};}" };
 const __initData4 = { code: "function TabItemNativeTsx4(){const{withSpring,countAnimationState,COUNT_SPRING_CONFIG,interpolate}=this.__closure;return{opacity:withSpring(countAnimationState.get(),COUNT_SPRING_CONFIG),transform:[{translateX:withSpring(interpolate(countAnimationState.get(),[0,1],[-10,0]),COUNT_SPRING_CONFIG)}]};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function TabItemCount(arg0) {
   let activeIndex;
   let count;
   let index;
@@ -126,7 +126,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(17);
   ({ count, index, activeIndex, pressed, variant } = arg0);
   const tmp4 = closure_11();
-  let obj2 = sharedValue(4618);
+  let obj2 = sharedValue(4810);
   sharedValue = obj2.useSharedValue(0);
   if (cResult[0] !== sharedValue) {
     const fn = function n() {
@@ -143,7 +143,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp7 = cResult[2];
   }
   const layoutEffect = react.useLayoutEffect(tmp6, tmp7);
-  const fn2 = function w() {
+  const fn2 = function y() {
     let items;
     let obj2;
     let obj4;
@@ -157,8 +157,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj4 = ReanimatedRexport2;
     return obj;
   };
-  const tmpResult = tmp(4618);
-  let obj3 = { withSpring: tmp(5604).withSpring, countAnimationState: sharedValue, COUNT_SPRING_CONFIG, interpolate: tmp(4618).interpolate };
+  const tmpResult = tmp(4810);
+  let obj3 = { withSpring: tmp(5374).withSpring, countAnimationState: sharedValue, COUNT_SPRING_CONFIG, interpolate: tmp(4810).interpolate };
   fn2.__closure = obj3;
   fn2.__workletHash = 5074862072194;
   fn2.__initData = __initData3;
@@ -196,7 +196,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp17 = tmp20;
           }
           const obj5 = { animated: true, variant: "text-sm/medium", style: tmp12, lineClamp: 1, children: count };
-          const tmp16 = closure_6(tmp(4892).Text, obj5);
+          const tmp16 = closure_6(tmp(5086).Text, obj5);
           cResult[11] = tmp12;
           cResult[12] = count;
           cResult[13] = tmp16;
@@ -217,7 +217,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = variant;
   cResult[7] = obj6;
   tmp10 = obj6;
-}) : ((arg0) => {
+}) : (function TabItemCount(arg0) {
   let activeIndex;
   let count;
   let index;
@@ -228,13 +228,13 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let sharedValue;
   ({ count, index, activeIndex, pressed, variant } = arg0);
   const tmp = closure_11();
-  let obj = sharedValue(4618);
+  let obj = sharedValue(4810);
   sharedValue = obj.useSharedValue(0);
   let items = [sharedValue];
   const layoutEffect = react.useLayoutEffect(() => {
     const result = sharedValue.set(1);
   }, items);
-  let obj2 = sharedValue(4618);
+  let obj2 = sharedValue(4810);
   class I {
     constructor() {
       let items;
@@ -251,12 +251,12 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return obj;
     }
   }
-  let obj3 = { withSpring: sharedValue(5604).withSpring, countAnimationState: sharedValue, COUNT_SPRING_CONFIG, interpolate: sharedValue(4618).interpolate };
+  let obj3 = { withSpring: sharedValue(5374).withSpring, countAnimationState: sharedValue, COUNT_SPRING_CONFIG, interpolate: sharedValue(4810).interpolate };
   I.__closure = obj3;
   I.__workletHash = 8384757524453;
   I.__initData = __initData4;
   const animatedStyle = obj2.useAnimatedStyle(I);
-  let obj4 = { style: items1, children: closure_6(sharedValue(4892).Text, { animated: true, variant: "text-sm/medium", style: tmp5, lineClamp: 1, children: count }) };
+  let obj4 = { style: items1, children: closure_6(sharedValue(5086).Text, { animated: true, variant: "text-sm/medium", style: tmp5, lineClamp: 1, children: count }) };
   items1 = [tmp.count, animatedStyle];
   tmp5 = closure_16({ index, activeIndex, pressed, variant });
   const View = ReanimatedRexport.View;
@@ -265,39 +265,35 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 const __initData5 = { code: "function TabItemNativeTsx5(){const{activeIndex,index}=this.__closure;return{accessibilityState:{selected:activeIndex.get()===index}};}" };
 const __initData6 = { code: "function TabItemNativeTsx6(){const{activeIndex,index}=this.__closure;return{accessibilityState:{selected:activeIndex.get()===index}};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TabItem(arg0) {
   let closure_0;
   let count;
   let grow;
   let index;
   let itemCount;
+  let items;
   let label;
   let pressed;
   let setItemDimensions;
   let state;
+  let tmp10;
   let tmp11;
   let tmp12;
+  let tmp4;
   let tmp5;
+  let tmp7;
+  let tmp8;
   let tmp9;
   let variant;
   let obj = require("react");
   const cResult = obj.c(43);
-  const tmp = _require;
-  const tmp2 = setItemDimensions;
   if (cResult[0] !== arg0) {
     ({ label, count, index } = arg0);
     _require = index;
     ({ itemCount, state, pressed, grow, variant } = arg0);
-    cResult[0] = arg0;
     const tmp15 = _objectWithoutProperties(arg0, closure_3);
-    class P {
-      constructor() {
-        obj = { accessibilityState: null };
-        obj1 = { selected: activeIndex.get() === closure_0 };
-        obj.accessibilityState = obj1;
-        return obj;
-      }
-    }
+    cResult[0] = arg0;
+    cResult[1] = count;
     cResult[2] = grow;
     cResult[3] = index;
     cResult[4] = itemCount;
@@ -308,31 +304,36 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[9] = variant;
     tmp12 = variant;
     tmp11 = state;
+    tmp10 = tmp15;
     tmp9 = pressed;
+    tmp8 = label;
+    tmp7 = itemCount;
     tmp5 = grow;
+    tmp4 = count;
   } else {
+    tmp4 = cResult[1];
     tmp5 = cResult[2];
     _require = cResult[3];
+    tmp7 = cResult[4];
+    tmp8 = cResult[5];
     tmp9 = cResult[6];
+    tmp10 = cResult[7];
     tmp11 = cResult[8];
     tmp12 = cResult[9];
   }
   const activeIndex = tmp11.activeIndex;
   setItemDimensions = tmp11.setItemDimensions;
   const tmp16 = closure_11();
-  const tmpResult = tmp(tmp2[4]);
-  class P {
-    constructor() {
-      obj = { accessibilityState: null };
-      obj1 = { selected: activeIndex.get() === closure_0 };
-      obj.accessibilityState = obj1;
-      return obj;
-    }
-  }
-  P.__closure = { activeIndex, index: tmp6 };
-  P.__workletHash = 4443106768702;
-  P.__initData = __initData5;
-  const animatedProps = tmpResult.useAnimatedProps(P);
+  const fn = function b() {
+    const obj = { accessibilityState: { selected: activeIndex.get() === closure_0 } };
+    ({ selected: activeIndex.get() === closure_0 });
+    return obj;
+  };
+  fn.__closure = { activeIndex, index: tmp6 };
+  fn.__workletHash = 4443106768702;
+  fn.__initData = __initData5;
+  const tmpResult = require("ReanimatedRexport");
+  const animatedProps = tmpResult.useAnimatedProps(fn);
   if (cResult[10] === activeIndex) {
     if (cResult[11] === tmp6) {
       if (cResult[12] === tmp9) {
@@ -340,9 +341,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (cResult[13] === tmp12) {
           tmp18 = cResult[14];
         }
-        closure_16(tmp18);
+        const tmp20 = closure_16(tmp18);
         if (cResult[15] === tmp6) {
+          let tmp21;
           let tmp22;
+          if (cResult[16] === setItemDimensions) {
+            tmp21 = cResult[17];
+          }
           let num14 = 0;
           if (tmp5) {
             num14 = 1;
@@ -350,51 +355,125 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           if (cResult[18] !== num14) {
             const obj2 = { flexGrow: num14 };
             cResult[18] = num14;
-            class X {
-              constructor(arg0) {
-                obj = closure_0(closure_2[4]);
-                tmp = obj.runOnUI(setItemDimensions)(closure_0, arg0.nativeEvent.layout);
-                return;
-              }
-            }
             cResult[19] = obj2;
             tmp22 = obj2;
           } else {
             tmp22 = cResult[19];
           }
-          class X {
-            constructor(arg0) {
-              obj = closure_0(closure_2[4]);
-              tmp = obj.runOnUI(setItemDimensions)(closure_0, arg0.nativeEvent.layout);
-              return;
+          if (cResult[20] === tmp16.item) {
+            let tmp23;
+            if (cResult[21] === tmp22) {
+              tmp23 = cResult[22];
             }
+            if (cResult[23] === tmp6) {
+              let tmp24;
+              if (cResult[24] === tmp7) {
+                tmp24 = cResult[25];
+              }
+              if (cResult[26] === tmp20) {
+                let tmp26;
+                if (cResult[27] === tmp8) {
+                  tmp26 = cResult[28];
+                }
+                if (cResult[29] === activeIndex) {
+                  if (cResult[30] === tmp4) {
+                    if (cResult[31] === tmp6) {
+                      if (cResult[32] === tmp9) {
+                        let tmp29;
+                        if (cResult[33] === tmp12) {
+                          tmp29 = cResult[34];
+                        }
+                        if (cResult[35] === animatedProps) {
+                          if (cResult[36] === tmp21) {
+                            if (cResult[37] === tmp10) {
+                              if (cResult[38] === tmp23) {
+                                if (cResult[39] === tmp24) {
+                                  if (cResult[40] === tmp26) {
+                                    let tmp33;
+                                    if (cResult[41] === tmp29) {
+                                      tmp33 = cResult[42];
+                                    }
+                                    return tmp33;
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        const obj3 = { style: tmp23, onLayout: tmp21, accessibilityRole: "tab", accessibilityHint: tmp24, animatedProps, children: items };
+                        const merged = Object.assign(tmp10);
+                        items = [tmp26, tmp29];
+                        const tmp39 = closure_7(closure_8, obj3);
+                        cResult[35] = animatedProps;
+                        cResult[36] = tmp21;
+                        cResult[37] = tmp10;
+                        cResult[38] = tmp23;
+                        cResult[39] = tmp24;
+                        cResult[40] = tmp26;
+                        cResult[41] = tmp29;
+                        cResult[42] = tmp39;
+                        tmp33 = tmp39;
+                      }
+                    }
+                  }
+                }
+                let tmp30 = null;
+                if (null != tmp4) {
+                  const obj4 = { count: tmp4, index: tmp6, activeIndex, pressed: tmp9, variant: tmp12 };
+                  tmp30 = closure_6(closure_19, obj4);
+                }
+                cResult[29] = activeIndex;
+                cResult[30] = tmp4;
+                cResult[31] = tmp6;
+                cResult[32] = tmp9;
+                cResult[33] = tmp12;
+                cResult[34] = tmp30;
+                tmp29 = tmp30;
+              }
+              const obj5 = { animated: true, variant: "text-sm/semibold", style: tmp20, lineClamp: 1, children: tmp8 };
+              const tmp28 = closure_6(require("Text/Text").Text, obj5);
+              cResult[26] = tmp20;
+              cResult[27] = tmp8;
+              cResult[28] = tmp28;
+              tmp26 = tmp28;
+            }
+            let formatToPlainStringResult;
+            const tmpResult2 = require("PlatformUtils");
+            if (tmpResult2.isAndroid()) {
+              const intl = tmp(tmp2[12]).intl;
+              const obj6 = { position: tmp6 + 1, tabCount: tmp7 };
+              formatToPlainStringResult = intl.formatToPlainString(tmp(tmp2[12]).t["4EsQA1"], obj6);
+            }
+            cResult[23] = tmp6;
+            cResult[24] = tmp7;
+            cResult[25] = formatToPlainStringResult;
+            tmp24 = formatToPlainStringResult;
           }
-          const items = [tmp16.item, tmp22];
+          const items1 = [tmp16.item, tmp22];
           cResult[20] = tmp16.item;
           cResult[21] = tmp22;
-          cResult[22] = items;
+          cResult[22] = items1;
+          tmp23 = items1;
         }
-        class X {
-          constructor(arg0) {
-            obj = closure_0(closure_2[4]);
-            tmp = obj.runOnUI(setItemDimensions)(closure_0, arg0.nativeEvent.layout);
-            return;
-          }
+        function handleLayout(nativeEvent) {
+          const obj = ReanimatedRexport2;
+          obj.runOnUI(setItemDimensions)(closure_0, nativeEvent.nativeEvent.layout);
         }
         cResult[15] = tmp6;
         cResult[16] = setItemDimensions;
-        cResult[17] = X;
+        cResult[17] = handleLayout;
+        tmp21 = handleLayout;
       }
     }
   }
-  const obj3 = { index: tmp6, activeIndex, pressed: tmp9, variant: tmp12 };
+  const obj7 = { index: tmp6, activeIndex, pressed: tmp9, variant: tmp12 };
   cResult[10] = activeIndex;
   cResult[11] = tmp6;
   cResult[12] = tmp9;
   cResult[13] = tmp12;
-  cResult[14] = obj3;
-  tmp18 = obj3;
-}) : ((arg0) => {
+  cResult[14] = obj7;
+  tmp18 = obj7;
+}) : (function TabItem(arg0) {
   let count;
   let formatToPlainStringResult;
   let grow;
@@ -434,7 +513,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const obj2 = {
     style: items,
-    onLayout(nativeEvent) {
+    onLayout: function handleLayout(nativeEvent) {
       const obj = ReanimatedRexport2;
       obj.runOnUI(setItemDimensions)(index, nativeEvent.nativeEvent.layout);
     },

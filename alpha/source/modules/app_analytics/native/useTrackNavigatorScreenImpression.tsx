@@ -1,17 +1,17 @@
-// Module ID: 14415
-// Function ID: 14416
+// Module ID: 14641
+// Function ID: 14642
 // Name: useTrackNavigatorScreenImpression
-// Dependencies: [558, 576, 1260, 8455, 2]
+// Dependencies: [558, 576, 1272, 8941, 2]
 
-// Module 14415 (useTrackNavigatorScreenImpression)
+// Module 14641 (useTrackNavigatorScreenImpression)
 import react from "react" /* 576 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8455 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8941 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const discord_common_AnalyticsUtils = tmp(1260);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, params) => {
+const discord_common_AnalyticsUtils = tmp(1272);
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackNavigatorScreenImpression(arg0, params) {
   let impressionName;
   let impressionProperties;
   const obj = react;
@@ -43,7 +43,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, params) => {
   cResult[1] = params;
   cResult[2] = impressionPropertiesResult;
   tmp4 = impressionPropertiesResult;
-}) : ((impressionProperties, params) => {
+}) : (function useTrackNavigatorScreenImpression(impressionProperties, params) {
   impressionProperties = impressionProperties.impressionProperties;
   let impressionPropertiesResult = impressionProperties;
   const impressionName = impressionProperties.impressionName;

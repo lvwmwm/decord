@@ -1,12 +1,12 @@
-// Module ID: 8529
-// Function ID: 8530
+// Module ID: 9014
+// Function ID: 9015
 // Name: useProductPurchaseState
-// Dependencies: [7081, 8530, 1980, 558, 576, 504, 2]
+// Dependencies: [7267, 9015, 1992, 558, 576, 504, 2]
 
-// Module 8529 (useProductPurchaseState)
-import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
-import compactDefault from "compact" /* 8530 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7081 */;
+// Module 9014 (useProductPurchaseState)
+import CollectiblesItemType from "CollectiblesItemType" /* 1992 */;
+import compactDefault from "compact" /* 9015 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7267 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -59,7 +59,7 @@ function getProductPurchaseState(CollectiblesPurchaseStore, skuId) {
     return { isPurchased: tmp, isPartiallyOwnedBundle: false, isPartiallyOwnedVariantsGroup: false };
   }
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProductPurchaseState(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -75,7 +75,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function l() {
+    const fn = function c() {
       return getProductPurchaseState(CollectiblesPurchaseStore, closure_0);
     };
     cResult[1] = arg0;
@@ -86,7 +86,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresObject(first, tmp6);
-}) : ((arg0) => {
+}) : (function useProductPurchaseState(arg0) {
   let closure_0;
   _require = arg0;
   const items = [CollectiblesPurchaseStore];

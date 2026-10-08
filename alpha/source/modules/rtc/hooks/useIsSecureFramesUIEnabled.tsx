@@ -1,16 +1,16 @@
-// Module ID: 9398
-// Function ID: 9399
+// Module ID: 8819
+// Function ID: 8820
 // Name: useIsSecureFramesUIEnabled
-// Dependencies: [2051, 4919, 9380, 558, 576, 504, 2]
+// Dependencies: [2063, 5108, 8801, 558, 576, 504, 2]
 
-// Module 9398 (useIsSecureFramesUIEnabled)
-import SecureFramesConstants from "SecureFramesConstants" /* 9380 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
+// Module 8819 (useIsSecureFramesUIEnabled)
+import SecureFramesConstants from "SecureFramesConstants" /* 8801 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channelId;
+let version;
 
 function isSecureFramesUIEnabled(isCallRTCConnectionEmpty, items) {
   let obj;
@@ -25,7 +25,7 @@ function isSecureFramesUIEnabled(isCallRTCConnectionEmpty, items) {
     if (null != channel) {
       if (!channel.isGuildStageVoice()) {
         const secureFramesState = obj.getSecureFramesState();
-        let version;
+        version = undefined;
         if (secureFramesState != null) {
           version = secureFramesState.version;
         }
@@ -36,7 +36,7 @@ function isSecureFramesUIEnabled(isCallRTCConnectionEmpty, items) {
   }
 }
 let closure_4 = SecureFramesConstants.END_TO_END_ENCRYPTION_DISABLED;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSecureFramesUIEnabled(channelId) {
   let first;
   let tmp7;
   let tmp8;
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : ((channelId) => {
+}) : (function useIsSecureFramesUIEnabled(channelId) {
   channelId = channelId.channelId;
   let items = [RTCConnectionStore, ChannelStore];
   const items1 = [channelId];

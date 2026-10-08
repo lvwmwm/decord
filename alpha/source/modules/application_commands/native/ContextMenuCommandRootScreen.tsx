@@ -1,24 +1,22 @@
-// Module ID: 17074
-// Function ID: 17075
+// Module ID: 17355
+// Function ID: 17356
 // Name: ContextMenuCommandRootScreen
-// Dependencies: [32, 19, 17, 2074, 5795, 21, 4896, 587, 558, 576, 504, 8833, 8968, 8963, 6478, 6553, 10736, 1126, 4892, 17075, 6554, 6559, 2]
+// Dependencies: [32, 19, 17, 2086, 5399, 21, 5090, 587, 558, 576, 504, 9192, 9759, 9753, 6656, 6729, 10490, 1126, 5086, 17356, 6730, 6735, 2]
 
-// Module 17074 (ContextMenuCommandRootScreen)
+// Module 17355 (ContextMenuCommandRootScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import executeCommandDefault from "executeCommand" /* 8963 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import executeCommandDefault from "executeCommand" /* 9753 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5795 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5399 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let navigation;
 
 let c10;
 let c9;
@@ -36,7 +34,7 @@ obj2 = { paddingHorizontal: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
 obj3 = { paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 let closure_13 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMenuCommandRootScreen(navigation) {
   let commandTargetId;
   let commandType;
   let first;
@@ -176,22 +174,22 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
                               let tmp33;
                               const _Symbol = Symbol;
                               if (cResult[37] === Symbol.for("react.memo_cache_sentinel")) {
-                                function ie(section) {
+                                function re(section) {
                                   return section.section.id === prop1.FRECENCY;
                                 }
-                                cResult[37] = ie;
-                                tmp31 = ie;
+                                cResult[37] = re;
+                                tmp31 = re;
                               } else {
                                 tmp31 = cResult[37];
                               }
                               let found = prop1.find(tmp31);
                               const _Symbol2 = Symbol;
                               if (cResult[38] === Symbol.for("react.memo_cache_sentinel")) {
-                                function re(section) {
+                                function ie(section) {
                                   return section.section.id !== prop1.FRECENCY;
                                 }
-                                cResult[38] = re;
-                                tmp33 = re;
+                                cResult[38] = ie;
+                                tmp33 = ie;
                               } else {
                                 tmp33 = cResult[38];
                               }
@@ -571,7 +569,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
   cResult[6] = items7;
   tmp12 = items7;
   tmp11 = H;
-}) : ((navigation) => {
+}) : (function ContextMenuCommandRootScreen(navigation) {
   let SearchField;
   let intl;
   let items13;

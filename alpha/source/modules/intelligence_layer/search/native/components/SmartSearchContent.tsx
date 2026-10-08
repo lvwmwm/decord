@@ -1,21 +1,21 @@
-// Module ID: 16879
-// Function ID: 16880
+// Module ID: 17158
+// Function ID: 17159
 // Name: SmartSearchContent
-// Dependencies: [19, 21, 558, 576, 11985, 16880, 16881, 16825, 2]
+// Dependencies: [19, 21, 558, 576, 12058, 17159, 17160, 17104, 2]
 
-// Module 16879 (SmartSearchContent)
+// Module 17158 (SmartSearchContent)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import SmartSearchTypes from "SmartSearchTypes" /* 11985 */;
-import SuggestedSearchListDefault from "SuggestedSearchList" /* 16825 */;
-import SmartSearchSkeletonDefault from "SmartSearchSkeleton" /* 16880 */;
-import SmartSearchResults from "SmartSearchResults" /* 16881 */;
+import SmartSearchTypes from "SmartSearchTypes" /* 12058 */;
+import SuggestedSearchListDefault from "SuggestedSearchList" /* 17104 */;
+import SmartSearchSkeletonDefault from "SmartSearchSkeleton" /* 17159 */;
+import SmartSearchResults from "SmartSearchResults" /* 17160 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SmartSearchContent(arg0) {
   let entry;
   let hasKeywordResults;
   let isCollapsed;
@@ -56,7 +56,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     let tmp4;
     if (SmartSearchTypes.SmartSearchStatus.ERROR !== status) {
-      const EMPTY = tmp(11985).SmartSearchStatus.EMPTY;
+      const EMPTY = tmp(12058).SmartSearchStatus.EMPTY;
     }
     if (cResult[6] !== smartSearchQuery) {
       const tmp7 = jsx(SuggestedSearchListDefault, { smartSearchQuery, source: "smart_search_row" });
@@ -68,7 +68,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return tmp4;
   }
-}) : ((arg0) => {
+}) : (function SmartSearchContent(arg0) {
   let entry;
   let hasKeywordResults;
   let isCollapsed;
@@ -84,7 +84,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return jsx(SmartSearchResults.SmartSearchResults, { smartSearchQuery, hasKeywordResults, entry });
   } else {
     if (SmartSearchTypes.SmartSearchStatus.ERROR !== status) {
-      const EMPTY = tmp(11985).SmartSearchStatus.EMPTY;
+      const EMPTY = tmp(12058).SmartSearchStatus.EMPTY;
     }
     return jsx(SuggestedSearchListDefault, { smartSearchQuery, source: "smart_search_row" });
   }

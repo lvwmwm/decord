@@ -1,16 +1,16 @@
-// Module ID: 4592
-// Function ID: 4593
+// Module ID: 4784
+// Function ID: 4785
 // Name: useFocus
 // Dependencies: [32, 19, 558, 576, 2]
 
-// Module 4592 (useFocus)
+// Module 4784 (useFocus)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFocus() {
   let closure_129_0;
   let first;
   let tmp3;
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[2];
   }
   return tmp5;
-}) : (() => {
+}) : (function useFocus() {
   const tmp = _slicedToArray(react.useState(false), 2);
   let closure_0 = tmp[1];
   const obj = {

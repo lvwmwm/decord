@@ -1,17 +1,17 @@
-// Module ID: 14901
-// Function ID: 14902
+// Module ID: 15163
+// Function ID: 15164
 // Name: useIsCarouselInView
-// Dependencies: [32, 19, 558, 576, 1484, 2]
+// Dependencies: [32, 19, 558, 576, 1496, 2]
 
-// Module 14901 (useIsCarouselInView)
+// Module 15163 (useIsCarouselInView)
 import react2 from "react" /* 576 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsCarouselInView() {
   let closure_129_3;
   let tmp11;
   let tmp3;
@@ -25,7 +25,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const height = useWindowDimensionsDefault().height;
   let closure_2 = react.useRef(height);
   if (cResult[0] !== height) {
-    const fn = function u() {
+    const fn = function n() {
       closure_2.current = height;
     };
     const items = [height];
@@ -43,7 +43,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   _slicedToArray(react.useState(true), 2);
   let closure_4 = obj2.useRef(tmp7);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function o() {
+    const fn2 = function v() {
       ref = setInterval(() => {
         let ref2;
         if (null != ref.current) {
@@ -79,7 +79,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp11 = cResult[6];
   }
   return tmp11;
-}) : (() => {
+}) : (function useIsCarouselInView() {
   let closure_129_3;
   let tmp4;
   const containerRef = react.useRef(null);

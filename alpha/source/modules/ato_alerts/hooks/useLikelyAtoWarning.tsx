@@ -1,20 +1,20 @@
-// Module ID: 9808
-// Function ID: 9809
+// Module ID: 10371
+// Function ID: 10372
 // Name: useLikelyAtoWarning
-// Dependencies: [9799, 558, 9800, 9801, 9802, 9803, 9798, 2]
+// Dependencies: [10266, 558, 10363, 10364, 10365, 10366, 10362, 2]
 
-// Module 9808 (useLikelyAtoWarning)
-import useStrangerDangerWarning from "useStrangerDangerWarning" /* 9798 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 9799 */;
-import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 9800 */;
-import useIsMessageRequest from "useIsMessageRequest" /* 9801 */;
-import useChannelSafetyWarning from "useChannelSafetyWarning" /* 9802 */;
-import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 9803 */;
+// Module 10371 (useLikelyAtoWarning)
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10266 */;
+import useStrangerDangerWarning from "useStrangerDangerWarning" /* 10362 */;
+import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 10363 */;
+import useIsMessageRequest from "useIsMessageRequest" /* 10364 */;
+import useChannelSafetyWarning from "useChannelSafetyWarning" /* 10365 */;
+import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 10366 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const SafetyWarningTypes = ChannelSafetyWarningsStore.SafetyWarningTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLikelyAtoWarning(arg0) {
   const obj = useIsSpamMessageRequest;
   const isSpamMessageRequest = obj.useIsSpamMessageRequest(arg0);
   const obj2 = useIsMessageRequest;
@@ -33,7 +33,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-}) : ((arg0) => {
+}) : (function useLikelyAtoWarning(arg0) {
   const obj = useIsSpamMessageRequest;
   const isSpamMessageRequest = obj.useIsSpamMessageRequest(arg0);
   const obj2 = useIsMessageRequest;

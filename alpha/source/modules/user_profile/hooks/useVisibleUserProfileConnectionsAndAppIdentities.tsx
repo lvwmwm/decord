@@ -1,28 +1,27 @@
-// Module ID: 12953
-// Function ID: 12954
+// Module ID: 13232
+// Function ID: 13233
 // Name: useVisibleUserProfileConnectionsAndAppIdentities
-// Dependencies: [19, 558, 576, 12954, 12955, 6670, 1375, 5449, 2]
+// Dependencies: [19, 558, 576, 13233, 13234, 6847, 1387, 5759, 2]
 
-// Module 12953 (useVisibleUserProfileConnectionsAndAppIdentities)
-import PlatformsDefault from "Platforms" /* 5449 */;
-import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 12954 */;
-import useUserProfileConnectionsDefault from "useUserProfileConnections" /* 12955 */;
+// Module 13232 (useVisibleUserProfileConnectionsAndAppIdentities)
+import PlatformsDefault from "Platforms" /* 5759 */;
+import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 13233 */;
+import useUserProfileConnectionsDefault from "useUserProfileConnections" /* 13234 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let importDefault;
+let _require, importDefault;
 
 let tmp4;
-const useGetOrFetchApplicationsDefault = tmp4(6670);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
-  let _require;
+const useGetOrFetchApplicationsDefault = tmp4(6847);
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVisibleUserProfileConnectionsAndAppIdentities(arg0) {
   let closure_1;
   let tmp11;
   let tmp15;
   let tmp18;
-  let tmp20;
+  let tmp19;
   let tmp5;
   let obj = require("react");
   const cResult = obj.c(20);
@@ -59,7 +58,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
   }
   const arr5 = useGetOrFetchApplicationsDefault(tmp11);
   if (cResult[4] !== arr5) {
-    const found = arr5.filter(tmp(1375).isNotNullish);
+    const found = arr5.filter(tmp(1387).isNotNullish);
     cResult[4] = arr5;
     cResult[5] = found;
     tmp15 = found;
@@ -69,166 +68,85 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
   importDefault = tmp15;
   if (cResult[6] === tmp15) {
     let tmp17;
-    let tmp24;
+    let tmp22;
     if (cResult[7] === prop) {
       tmp17 = cResult[8];
     }
     if (cResult[12] === tmp5) {
-      let tmp23;
+      let tmp21;
       if (cResult[13] === arr2) {
-        tmp23 = cResult[14];
+        tmp21 = cResult[14];
       }
       if (cResult[17] === tmp17) {
-        let tmp26;
-        if (cResult[18] === tmp23) {
-          tmp26 = cResult[19];
+        let tmp24;
+        if (cResult[18] === tmp21) {
+          tmp24 = cResult[19];
         }
-        return tmp26;
+        return tmp24;
       }
-      const obj2 = { appIdentities: tmp17, connections: tmp23 };
+      const obj2 = { appIdentities: tmp17, connections: tmp21 };
       cResult[17] = tmp17;
-      cResult[18] = tmp23;
+      cResult[18] = tmp21;
       cResult[19] = obj2;
-      tmp26 = obj2;
+      tmp24 = obj2;
     }
     if (cResult[15] !== tmp5) {
-      class I {
-        constructor(type) {
-          const obj = PlatformsDefault;
-          const value = obj.get(type.type);
-          let migrationExperimentEnabled;
-          if (value != null) {
-            const migrationData = value.migrationData;
-            if (migrationData != null) {
-              migrationExperimentEnabled = migrationData.getMigrationExperimentEnabled("useVisibleUserProfileConnectionsAndAppIdentities");
-            }
+      const fn3 = function y(type) {
+        const obj = PlatformsDefault;
+        const value = obj.get(type.type);
+        let migrationExperimentEnabled;
+        if (value != null) {
+          const migrationData = value.migrationData;
+          if (migrationData != null) {
+            migrationExperimentEnabled = migrationData.getMigrationExperimentEnabled("useVisibleUserProfileConnectionsAndAppIdentities");
           }
-          let tmp3 = !migrationExperimentEnabled;
-          if (migrationExperimentEnabled) {
-            tmp3 = !set.has(value.migrationData.replacedBy);
-          }
-          return tmp3;
         }
-      }
+        let tmp3 = !migrationExperimentEnabled;
+        if (migrationExperimentEnabled) {
+          tmp3 = !set.has(value.migrationData.replacedBy);
+        }
+        return tmp3;
+      };
       cResult[15] = tmp5;
-      cResult[16] = I;
-      tmp24 = I;
+      cResult[16] = fn3;
+      tmp22 = fn3;
     } else {
-      class I {
-        constructor(type) {
-          const obj = PlatformsDefault;
-          const value = obj.get(type.type);
-          let migrationExperimentEnabled;
-          if (value != null) {
-            const migrationData = value.migrationData;
-            if (migrationData != null) {
-              migrationExperimentEnabled = migrationData.getMigrationExperimentEnabled("useVisibleUserProfileConnectionsAndAppIdentities");
-            }
-          }
-          let tmp3 = !migrationExperimentEnabled;
-          if (migrationExperimentEnabled) {
-            tmp3 = !set.has(value.migrationData.replacedBy);
-          }
-          return tmp3;
-        }
-      }
+      tmp22 = cResult[16];
     }
-    const found1 = arr2.filter(tmp24);
+    const found1 = arr2.filter(tmp22);
     cResult[12] = tmp5;
     cResult[13] = arr2;
     cResult[14] = found1;
-    tmp23 = found1;
+    tmp21 = found1;
   }
   if (cResult[9] !== tmp15) {
-    class I {
-      constructor(type) {
-        const obj = PlatformsDefault;
-        const value = obj.get(type.type);
-        let migrationExperimentEnabled;
-        if (value != null) {
-          const migrationData = value.migrationData;
-          if (migrationData != null) {
-            migrationExperimentEnabled = migrationData.getMigrationExperimentEnabled("useVisibleUserProfileConnectionsAndAppIdentities");
-          }
-        }
-        let tmp3 = !migrationExperimentEnabled;
-        if (migrationExperimentEnabled) {
-          tmp3 = !set.has(value.migrationData.replacedBy);
-        }
-        return tmp3;
-      }
-    }
+    const fn = function v(identity) {
+      let closure_0 = identity;
+      const obj = { identity, application: closure_1.find((id) => id.id === application_id.application_id) };
+      return obj;
+    };
     cResult[9] = tmp15;
-    cResult[10] = tmp19;
-    tmp18 = tmp19;
+    cResult[10] = fn;
+    tmp18 = fn;
   } else {
-    class I {
-      constructor(type) {
-        const obj = PlatformsDefault;
-        const value = obj.get(type.type);
-        let migrationExperimentEnabled;
-        if (value != null) {
-          const migrationData = value.migrationData;
-          if (migrationData != null) {
-            migrationExperimentEnabled = migrationData.getMigrationExperimentEnabled("useVisibleUserProfileConnectionsAndAppIdentities");
-          }
-        }
-        let tmp3 = !migrationExperimentEnabled;
-        if (migrationExperimentEnabled) {
-          tmp3 = !set.has(value.migrationData.replacedBy);
-        }
-        return tmp3;
-      }
-    }
+    tmp18 = cResult[10];
   }
   if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-    class I {
-      constructor(type) {
-        const obj = PlatformsDefault;
-        const value = obj.get(type.type);
-        let migrationExperimentEnabled;
-        if (value != null) {
-          const migrationData = value.migrationData;
-          if (migrationData != null) {
-            migrationExperimentEnabled = migrationData.getMigrationExperimentEnabled("useVisibleUserProfileConnectionsAndAppIdentities");
-          }
-        }
-        let tmp3 = !migrationExperimentEnabled;
-        if (migrationExperimentEnabled) {
-          tmp3 = !set.has(value.migrationData.replacedBy);
-        }
-        return tmp3;
-      }
-    }
-    cResult[11] = tmp21;
-    tmp20 = tmp21;
+    const fn2 = function _(application) {
+      return null != application.application;
+    };
+    cResult[11] = fn2;
+    tmp19 = fn2;
   } else {
-    class I {
-      constructor(type) {
-        const obj = PlatformsDefault;
-        const value = obj.get(type.type);
-        let migrationExperimentEnabled;
-        if (value != null) {
-          const migrationData = value.migrationData;
-          if (migrationData != null) {
-            migrationExperimentEnabled = migrationData.getMigrationExperimentEnabled("useVisibleUserProfileConnectionsAndAppIdentities");
-          }
-        }
-        let tmp3 = !migrationExperimentEnabled;
-        if (migrationExperimentEnabled) {
-          tmp3 = !set.has(value.migrationData.replacedBy);
-        }
-        return tmp3;
-      }
-    }
+    tmp19 = cResult[11];
   }
   const mapped1 = prop.map(tmp18);
-  const found2 = mapped1.filter(tmp20);
+  const found2 = mapped1.filter(tmp19);
   cResult[6] = tmp15;
   cResult[7] = prop;
   cResult[8] = found2;
   tmp17 = found2;
-}) : ((arg0) => {
+}) : (function useVisibleUserProfileConnectionsAndAppIdentities(arg0) {
   let closure_1;
   let found;
   let items2;

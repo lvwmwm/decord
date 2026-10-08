@@ -1,17 +1,17 @@
-// Module ID: 14421
-// Function ID: 14422
+// Module ID: 14647
+// Function ID: 14648
 // Name: DevToolsLazy
-// Dependencies: [19, 17, 7217, 7216, 21, 5788, 14422, 1987, 558, 576, 504, 1369, 15879, 2]
+// Dependencies: [19, 17, 7397, 7396, 21, 5371, 14648, 1999, 558, 576, 504, 1381, 16138, 2]
 
-// Module 14421 (DevToolsLazy)
+// Module 14647 (DevToolsLazy)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import KeyCommands from "KeyCommands" /* 5788 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import KeyCommands from "KeyCommands" /* 5371 */;
 import react from "react" /* 19 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7217 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7216 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7397 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7396 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let obj = {
   eventName: "keyCommandShowDevTools",
   discoverabilityTitle: "Open DevTools Panel",
   onKeyCommand() {
-    const promise = asyncRequire(14422, dependencyMap.paths);
+    const promise = asyncRequire(14648, dependencyMap.paths);
     promise.then((navigateToDevTools) => {
       navigateToDevTools.navigateToDevTools();
     });
@@ -33,7 +33,7 @@ let obj = {
   }
 };
 let items = [obj];
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsLazy() {
   let isDeveloper;
   let showDevWidget;
   let stateFromStores;
@@ -48,7 +48,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(10);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     items = [DeveloperExperimentStore];
-    const fn = function v() {
+    const fn = function c() {
       return isDeveloper.isDeveloper;
     };
     cResult[0] = items;
@@ -114,15 +114,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     tmp14 = cResult[7];
   }
-  const tmpResult5 = tmp(5788);
+  const tmpResult5 = tmp(5371);
   const keyCommands = tmpResult5.useKeyCommands(tmp14);
   if (stateFromStores) {
     if (stateFromStores1) {
       let tmp19;
       const _Symbol = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        cResult[8] = tmp(15879);
-        tmp(15879);
+        cResult[8] = tmp(16138);
+        tmp(16138);
         class D {
           constructor() {
             return showDevWidget.showDevWidget;
@@ -149,7 +149,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   return null;
-}) : (() => {
+}) : (function DevToolsLazy() {
   let isDeveloper;
   let showDevWidget;
   let stateFromStores;
@@ -171,11 +171,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       });
     }
   });
-  const obj3 = stateFromStores(5788);
+  const obj3 = stateFromStores(5371);
   const keyCommands = obj3.useKeyCommands(stateFromStores ? items : []);
   if (stateFromStores) {
     if (stateFromStores1) {
-      return jsx(tmp(15879).default, {});
+      return jsx(tmp(16138).default, {});
     }
   }
   return null;

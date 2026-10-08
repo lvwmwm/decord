@@ -1,12 +1,12 @@
-// Module ID: 6848
-// Function ID: 6849
+// Module ID: 7035
+// Function ID: 7036
 // Name: useGuildOnboardingAvailable
-// Dependencies: [2105, 1085, 558, 576, 504, 2]
+// Dependencies: [2117, 1085, 558, 576, 504, 2]
 // Exports: isGuildOnboardingAvailable
 
-// Module 6848 (useGuildOnboardingAvailable)
+// Module 7035 (useGuildOnboardingAvailable)
 import Constants from "Constants" /* 1085 */;
-import ImpersonateStore from "ImpersonateStore" /* 2105 */;
+import ImpersonateStore from "ImpersonateStore" /* 2117 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require;
 
 const GuildFeatures = Constants.GuildFeatures;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildOnboardingAvailable(features) {
   let first;
   let tmp6;
   _require = features;
@@ -78,7 +78,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
   cResult[4] = stateFromStores;
   cResult[5] = tmp11;
   tmp10 = tmp11;
-}) : ((features) => {
+}) : (function useGuildOnboardingAvailable(features) {
   _require = features;
   const items = [ImpersonateStore];
   const obj = require("get initialized");

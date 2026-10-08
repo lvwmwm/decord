@@ -1,20 +1,20 @@
-// Module ID: 10825
-// Function ID: 10826
+// Module ID: 12777
+// Function ID: 12778
 // Name: PremiumGiftingPromotionSuccessActions
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 10443, 1490, 10484, 10791, 10406, 10826, 10501, 1126, 2585, 5601, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 10040, 1502, 10081, 10482, 10003, 11175, 10098, 1126, 2629, 5375, 2]
 
-// Module 10825 (PremiumGiftingPromotionSuccessActions)
+// Module 12777 (PremiumGiftingPromotionSuccessActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import PremiumGiftModal from "PremiumGiftModal" /* 10406 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 10826 */;
+import PremiumGiftModal from "PremiumGiftModal" /* 10003 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 11175 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let navigation, onCancel, purchase;
+let navigation, onCancel;
 
 let hasOwnProperty;
 let metroRequire;
@@ -28,7 +28,7 @@ obj2 = { flexDirection: "column", alignItems: "center", gap: nativeDefault.space
 createStyles = createStyles.createStyles;
 obj3 = { alignSelf: "stretch", paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
 let closure_7 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((purchase) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftingPromotionSuccessActions(purchase) {
   let first;
   let items;
   let onClose;
@@ -81,7 +81,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((purchase) => {
                       tmp13 = cResult[15];
                     }
                     const _Symbol = Symbol;
-                    class S {
+                    class I {
                       constructor() {
                         if (null != View) {
                           const obj3 = { product: tmp, onCancel };
@@ -113,7 +113,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((purchase) => {
                           return tmp20;
                         }
                       }
-                      class S {
+                      class I {
                         constructor() {
                           if (null != View) {
                             const obj3 = { product: tmp, onCancel };
@@ -148,7 +148,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((purchase) => {
                     tmp17 = tmp19;
                   }
                 }
-                class S {
+                class I {
                   constructor() {
                     if (null != View) {
                       const obj3 = { product: tmp, onCancel };
@@ -176,7 +176,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((purchase) => {
           }
         }
       }
-      class S {
+      class I {
         constructor() {
           if (null != View) {
             const obj3 = { product: tmp, onCancel };
@@ -200,8 +200,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((purchase) => {
       cResult[8] = onClose;
       cResult[9] = tmp10;
       cResult[10] = product;
-      cResult[11] = S;
-      tmp11 = S;
+      cResult[11] = I;
+      tmp11 = I;
     }
   }
   const fn = function _() {
@@ -216,7 +216,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((purchase) => {
   cResult[3] = navigation;
   cResult[4] = fn;
   tmp10 = fn;
-}) : ((purchase) => {
+}) : (function PremiumGiftingPromotionSuccessActions(purchase) {
   let intl;
   let intl2;
   let items2;

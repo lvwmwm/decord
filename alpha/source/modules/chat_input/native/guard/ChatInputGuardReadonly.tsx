@@ -1,26 +1,26 @@
-// Module ID: 12138
-// Function ID: 12139
+// Module ID: 12217
+// Function ID: 12218
 // Name: ChatInputGuardReadonly
-// Dependencies: [19, 2055, 2051, 4513, 4515, 4911, 4525, 1377, 11589, 1085, 21, 558, 576, 11930, 504, 1375, 1126, 5049, 5076, 1112, 11, 12105, 2]
+// Dependencies: [19, 2067, 2063, 4705, 4707, 6040, 4717, 1389, 11652, 1085, 21, 558, 576, 12003, 504, 1387, 1126, 5417, 5105, 1112, 11, 12183, 2]
 
-// Module 12138 (ChatInputGuardReadonly)
+// Module 12217 (ChatInputGuardReadonly)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import router_utils from "router_utils" /* 1112 */;
 import intl4 from "intl" /* 1126 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4513 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5076 */;
-import ChatInputConstants from "ChatInputConstants" /* 11589 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12105 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import ChannelRecord from "ChannelRecord" /* 2067 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4705 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5105 */;
+import ChatInputConstants from "ChatInputConstants" /* 11652 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12183 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import ReadStateStore from "ReadStateStore" /* 4911 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -43,7 +43,7 @@ const TextAreaCta = ChatInputConstants.TextAreaCta;
 ({ AnalyticEvents: closure_12, Permissions: map1 } = Constants);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNotice(arg0, arg1) {
   let closure_0;
   let first;
   let stateFromStores;
@@ -222,7 +222,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
         }
         tmp24 = tmp32;
       }
-      class D {
+      class G {
         constructor() {
           const obj = AppAnalyticsUtilsDefault;
           const obj2 = { cta_type: TextAreaCta.CHANNEL_LINK };
@@ -238,7 +238,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
       cResult[17] = tmp33;
       tmp32 = tmp33;
     }
-    class D {
+    class G {
       constructor() {
         const obj = AppAnalyticsUtilsDefault;
         const obj2 = { cta_type: TextAreaCta.CHANNEL_LINK };
@@ -249,7 +249,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
     }
     cResult[12] = arg0;
     cResult[13] = stateFromStores;
-    cResult[14] = D;
+    cResult[14] = G;
   } else {
     class P {
       constructor() {
@@ -267,7 +267,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
           return found1.filter((item) => closure_1_7.can(constants.SEND_MESSAGES, item));
         }
       }
-      class D {
+      class G {
         constructor() {
           const obj = AppAnalyticsUtilsDefault;
           const obj2 = { cta_type: TextAreaCta.CHANNEL_LINK };
@@ -285,7 +285,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
           }
         }
         tmp29[0] = tmp27;
-        class D {
+        class G {
           constructor() {
             const obj = AppAnalyticsUtilsDefault;
             const obj2 = { cta_type: TextAreaCta.CHANNEL_LINK };
@@ -332,7 +332,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
             }
           }
         }
-        class D {
+        class G {
           constructor() {
             const obj = AppAnalyticsUtilsDefault;
             const obj2 = { cta_type: TextAreaCta.CHANNEL_LINK };
@@ -348,7 +348,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
         cResult[28] = tmp25;
         tmp24 = tmp25;
       }
-      class D {
+      class G {
         constructor() {
           const obj = AppAnalyticsUtilsDefault;
           const obj2 = { cta_type: TextAreaCta.CHANNEL_LINK };
@@ -359,11 +359,11 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
       }
       cResult[23] = stateFromStoresArray1[0];
       cResult[24] = arg0;
-      cResult[25] = H;
+      cResult[25] = F;
     }
   }
   return tmp24;
-}) : ((arg0, arg1) => {
+}) : (function useNotice(arg0, arg1) {
   let closure_0;
   let formatToPlainString;
   let intl;
@@ -463,7 +463,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
   return obj5;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputGuardReadonly(guildId) {
   let first;
   let handlePress;
   let text;
@@ -491,7 +491,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
   cResult[2] = text;
   cResult[3] = tmp8;
   tmp7 = tmp8;
-}) : ((guildId) => {
+}) : (function ChatInputGuardReadonly(guildId) {
   let handlePress;
   let text;
   ({ text, handlePress } = closure_15(guildId.guildId, guildId.channel));

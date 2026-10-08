@@ -1,12 +1,12 @@
-// Module ID: 4730
-// Function ID: 4731
+// Module ID: 4924
+// Function ID: 4925
 // Name: OverlayV3Experiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1452, 558, 576, 2]
 // Exports: getOverlayChatConfig, getOverlayDefaultKeybind, getOverlayStreamerModeConfig, trackOverlayInitializedExperiments
 
-// Module 4730 (OverlayV3Experiment)
+// Module 4924 (OverlayV3Experiment)
 import react from "react" /* 576 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1440 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ let obj2;
 let obj4;
 let obj6;
 let ApexExperiment = ApexExperiment_mod;
-let obj = { name: "2026-03-overlay-default-keybind", kind: "user", defaultConfig: { keybindOverride: "r" }, variations: obj2 };
+let obj = { name: "2026-03-overlay-default-keybind", kind: "user", defaultConfig: { keybindOverride: "create" }, variations: obj2 };
 obj2 = { 1: null, 2: { keybindOverride: "ctrl+tab" }, 3: { keybindOverride: "alt+x" } };
 obj2[3] = { keybindOverride: "ctrl+l" };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
@@ -24,7 +24,7 @@ obj4 = { 1: null, 2: { hasChat: true, hasFriendList: false, showNowPlayingForDif
 obj4[3] = { hasChat: true, hasFriendList: true, showNowPlayingForDifferentGames: true };
 const apexExperiment1 = ApexExperiment.createApexExperiment(obj3);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOverlayChat(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -37,7 +37,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return apexExperiment1.useConfig(tmp2);
-}) : ((location) => {
+}) : (function useOverlayChat(location) {
   const obj = { location };
   return apexExperiment1.useConfig(obj);
 });
@@ -55,7 +55,7 @@ function getOverlayStreamerModeConfig(StreamerModeStore) {
   const obj = { location: StreamerModeStore };
   return apexExperiment2.getConfig(obj);
 }
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOverlayStreamerMode(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -68,7 +68,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return apexExperiment2.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useOverlayStreamerMode(location) {
   const obj = { location };
   return apexExperiment2.useConfig(obj).enabled;
 });

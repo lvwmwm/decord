@@ -1,69 +1,51 @@
 // Module ID: 1867
 // Function ID: 1868
-// Dependencies: [19, 17, 21, 1862, 1837, 1868, 1835, 1861]
-// Exports: default
+// Dependencies: []
+// Exports: debounce, scrollDistanceWithRespectToSnapPoints
 
 // Module 1867
-import Fragment from "Fragment" /* 21 */;
-import KeyboardController2 from "KeyboardController" /* 1835 */;
-import "react";
-import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-
-let StyleSheet;
-let c3;
-let closure_4;
-let hasOwnProperty;
-({ useCallback: c3, useMemo: closure_4 } = react);
-({ StyleSheet, Text: hasOwnProperty } = react_native);
-const jsx = Fragment.jsx;
-const doneButtonContainer = StyleSheet.create({ doneButton: { fontWeight: "600", fontSize: 15 }, doneButtonContainer: { marginRight: 16, marginLeft: 8 } });
-
-export default function _default(rippleRadius) {
-  let button;
-  let children;
-  let doneButton;
-  let keyboardState;
-  let onPress;
-  let text;
-  let theme;
-  ({ children, onPress } = rippleRadius);
-  let num = rippleRadius.rippleRadius;
-  if (num === undefined) {
-    num = 28;
+let __initData = { code: "function pnpm_utilsTs2(...args){const{value,wait,worklet}=this.__closure;const t=Date.now();const now=t-value.time;if(now<wait){value.time=t;return;}value.time=t;return worklet(...args);}" };
+let fn = function t(worklet) {
+  __initData = worklet;
+  let num = arg1;
+  if (arg1 === undefined) {
+    num = 0;
   }
-  ({ button, text } = rippleRadius);
-  if (button === undefined) {
-    const tmp = keyboardState;
-    button = keyboardState(theme[3]);
-  }
-  theme = undefined;
-  let obj = onPress(theme[4]);
-  keyboardState = obj.useKeyboardState((appearance) => appearance.appearance);
-  const obj2 = onPress(theme[5]);
-  theme = obj2.useToolbarContext().theme;
-  let items = [keyboardState, theme];
-  const items1 = [onPress];
-  const tmp4 = closure_4(() => {
-    const items = [doneButton.doneButton, ];
-    const obj = { color: theme[keyboardState].primary };
-    items[1] = obj;
-    return items;
-  }, items);
-  const tmp5 = closure_3((isDefaultPrevented) => {
-    if (onPress != null) {
-      tmp(isDefaultPrevented);
+  const obj = { time: 0 };
+  const fn = function o() {
+    const items = [...arguments];
+    const timestamp = Date.now();
+    if (timestamp - obj.time < num) {
+      obj.time = timestamp;
+    } else {
+      obj.time = timestamp;
+      const items1 = [];
+      HermesBuiltin.arraySpread(items1, items, 0);
+      return HermesBuiltin.apply(closure_0, items1, undefined);
     }
-    if (!isDefaultPrevented.isDefaultPrevented()) {
-      const KeyboardController = KeyboardController2.KeyboardController;
-      KeyboardController.dismiss();
-    }
-  }, items1);
-  if (children == null) {
-    children = text;
-  }
-  if (children == null) {
-    children = "Done";
-  }
-  return <button accessibilityHint="Closes the keyboard" accessibilityLabel="Done" rippleRadius={num} style={doneButtonContainer.doneButtonContainer} testID={onPress(theme[7]).TEST_ID_KEYBOARD_TOOLBAR_DONE} theme={theme} onPress={tmp5}>{null}</button>;
+  };
+  fn.__closure = { value: obj, wait: num, worklet };
+  fn.__workletHash = 8768898864142;
+  fn.__initData = __initData;
+  return fn;
 };
+fn.__closure = {};
+fn.__workletHash = 1678132827161;
+fn.__initData = { code: "function pnpm_utilsTs1(worklet,wait=0){const value={time:0};return function(...args){\"worklet\";const t=Date.now();const now=t-value.time;if(now<wait){value.time=t;return;}value.time=t;return worklet(...args);};}" };
+const fn2 = function n(arg0, arr) {
+  let closure_0 = arg0;
+  let found;
+  if (arr) {
+    found = arr.find((item) => item >= closure_0);
+  }
+  if (found == null) {
+    found = arg0;
+  }
+  return found;
+};
+fn2.__closure = {};
+fn2.__workletHash = 10680474034033;
+fn2.__initData = { code: "function pnpm_utilsTs3(defaultScrollValue,snapPoints){let snapPoint;if(snapPoints){snapPoint=snapPoints.find(function(offset){return offset>=defaultScrollValue;});}return snapPoint!==null&&snapPoint!==void 0?snapPoint:defaultScrollValue;}" };
+
+export const debounce = fn;
+export const scrollDistanceWithRespectToSnapPoints = fn2;

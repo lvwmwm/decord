@@ -1,18 +1,18 @@
-// Module ID: 9248
-// Function ID: 9249
+// Module ID: 8577
+// Function ID: 8578
 // Name: CreateChannelActionCreators
-// Dependencies: [5077, 1085, 1095, 584, 5089, 1260, 2064, 1282, 6621, 6616, 6836, 2]
+// Dependencies: [5971, 1085, 1095, 584, 5944, 1272, 2076, 1294, 6798, 6793, 7018, 2]
 
-// Module 9248 (CreateChannelActionCreators)
+// Module 8577 (CreateChannelActionCreators)
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import TypeUtils from "TypeUtils" /* 2064 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5089 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6616 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6621 */;
-import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 6836 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import TypeUtils from "TypeUtils" /* 2076 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5944 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6793 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6798 */;
+import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7018 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -95,11 +95,11 @@ let obj = {
         obj2.application_id = applicationId;
       }
     }
-    const tmpResult = tmp(5089);
+    const tmpResult = tmp(5944);
     const request = { url: closure_6.GUILD_CHANNELS(guildId), body: obj2, oldFormErrors: true, trackedActionData: obj3, rejectWithError: obj5.rejectWithMigratedError() };
     const post = tmpResult.post;
     obj3 = {
-      event: guildId(1260).NetworkActionNames.CHANNEL_CREATE,
+      event: guildId(1272).NetworkActionNames.CHANNEL_CREATE,
       properties(body) {
         let id;
         let type;
@@ -123,7 +123,7 @@ let obj = {
         return exact(obj);
       }
     };
-    obj5 = guildId(1282);
+    obj5 = guildId(1294);
     const postResult = post(request);
     return postResult.then((body) => {
       let obj2;

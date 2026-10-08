@@ -1,16 +1,16 @@
-// Module ID: 14293
-// Function ID: 14294
+// Module ID: 14117
+// Function ID: 14118
 // Name: AvatarDuoPile
-// Dependencies: [109, 19, 21, 558, 576, 10752, 12300, 12, 12870, 8502, 2]
+// Dependencies: [109, 19, 21, 558, 576, 11617, 12398, 12, 13019, 8986, 2]
 
-// Module 14293 (AvatarDuoPile)
+// Module 14117 (AvatarDuoPile)
 import _mod12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ClipView from "ClipView" /* 8502 */;
-import Pile2 from "Pile" /* 10752 */;
-import ListUtils from "ListUtils" /* 12300 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 12870 */;
+import ClipView from "ClipView" /* 8986 */;
+import Pile2 from "Pile" /* 11617 */;
+import ListUtils from "ListUtils" /* 12398 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 13019 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -18,7 +18,7 @@ import size_mod from "module_2" /* 2 */;
 
 let closure_2 = ["size", "children"];
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AvatarDuoPile(arg0) {
   let arr;
   let children;
   let tmp11;
@@ -31,7 +31,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let prop;
     ({ size, children } = arg0);
     const tmp9 = _objectWithoutProperties(arg0, closure_2);
-    const Pile = tmp(10752).Pile;
+    const Pile = tmp(11617).Pile;
     if ("aria-label" in tmp9) {
       prop = tmp9["aria-label"];
     } else {
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (tmpResult2.isArray(arr)) {
       mapped = arr.map((item) => CutoutableAvatarImage.AVATAR_SIZE_MAP[item]);
     } else {
-      mapped = tmp(12870).AVATAR_SIZE_MAP[arr];
+      mapped = tmp(13019).AVATAR_SIZE_MAP[arr];
     }
     cResult[5] = arr;
     cResult[6] = mapped;
@@ -85,7 +85,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[10] = tmp11;
   cResult[11] = tmp14;
   tmp13 = tmp14;
-}) : ((size) => {
+}) : (function AvatarDuoPile(size) {
   let mapped;
   let prop;
   size = size.size;
@@ -104,7 +104,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (tmp3Result2.isArray(size)) {
     mapped = size.map((item) => CutoutableAvatarImage.AVATAR_SIZE_MAP[item]);
   } else {
-    mapped = tmp3(12870).AVATAR_SIZE_MAP[size];
+    mapped = tmp3(13019).AVATAR_SIZE_MAP[size];
   }
   return tmp2(Pile, obj);
 });

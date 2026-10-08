@@ -1,37 +1,33 @@
-// Module ID: 8789
-// Function ID: 8790
+// Module ID: 12893
+// Function ID: 12894
 // Name: XboxLinkEducation
-// Dependencies: [19, 17, 1085, 21, 4896, 558, 576, 8774, 2115, 8790, 1126, 4892, 5601, 6626, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 558, 576, 9120, 2127, 9159, 6164, 1126, 5086, 5375, 6803, 2]
 
-// Module 8789 (XboxLinkEducation)
+// Module 12893 (XboxLinkEducation)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6626 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 8774 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6803 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9120 */;
+import _modDef9159 from "module_9159" /* 9159 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let onClose;
-
-let closure_4;
-let hasOwnProperty;
-let metroImportAll;
 let metroImportDefault;
-let tmp15;
-const _modDef8790 = tmp15(8790);
-({ Image: closure_4, View: hasOwnProperty } = react_native);
+let metroRequire;
+const View = react_native.View;
 const HelpdeskArticles = Constants.HelpdeskArticles;
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let closure_9 = createStyles.createStyles({ image: { width: 124, height: 160, marginBottom: 24 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let closure_8 = createStyles.createStyles({ image: { width: 124, height: 160, marginBottom: 24 } });
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkEducation(onClose) {
   let container;
   let content;
   let footerButton;
@@ -40,12 +36,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   let items1;
   let tmp17;
   let tmp19;
-  let tmp23;
-  let tmp25;
+  let tmp22;
+  let tmp24;
   const obj = react2;
   const cResult = obj.c(48);
   onClose = onClose.onClose;
-  const tmp4 = closure_9();
+  const tmp4 = closure_8();
   const obj2 = TwoWayLinkStyles;
   const twoWayLinkStyles = obj2.useTwoWayLinkStyles();
   if (cResult[0] === twoWayLinkStyles.body) {
@@ -80,19 +76,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
             if (cResult[23] === str) {
               if (cResult[24] === str2) {
                 if (cResult[25] === tmp9) {
-                  let tmp29;
+                  let tmp28;
                   if (cResult[26] === tmp10) {
-                    tmp29 = cResult[27];
+                    tmp28 = cResult[27];
                   }
                   if (cResult[28] === tmp7) {
                     if (cResult[29] === tmp11) {
                       if (cResult[30] === tmp12) {
                         if (cResult[31] === tmp13) {
-                          let tmp32;
-                          let tmp36;
-                          let tmp38;
-                          if (cResult[32] === tmp29) {
-                            tmp32 = cResult[33];
+                          let tmp31;
+                          let tmp35;
+                          let tmp37;
+                          if (cResult[32] === tmp28) {
+                            tmp31 = cResult[33];
                           }
                           const _Symbol = Symbol;
                           ({ footerContainer, footerButton } = twoWayLinkStyles);
@@ -100,90 +96,90 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
                             const intl3 = tmp(1126).intl;
                             const stringResult = intl3.string(intl4.t.i4jeWR);
                             cResult[34] = stringResult;
-                            tmp36 = stringResult;
+                            tmp35 = stringResult;
                           } else {
-                            tmp36 = cResult[34];
+                            tmp35 = cResult[34];
                           }
                           if (cResult[35] !== onClose) {
-                            const obj4 = { size: "lg", variant: "primary", text: tmp36, onPress: onClose };
-                            const tmp40 = metroImportDefault(components_Button_Button.Button, obj4);
+                            const obj4 = { size: "lg", variant: "primary", text: tmp35, onPress: onClose };
+                            const tmp39 = metroRequire(components_Button_Button.Button, obj4);
                             cResult[35] = onClose;
-                            cResult[36] = tmp40;
-                            tmp38 = tmp40;
+                            cResult[36] = tmp39;
+                            tmp37 = tmp39;
                           } else {
-                            tmp38 = cResult[36];
+                            tmp37 = cResult[36];
                           }
                           if (cResult[37] === twoWayLinkStyles.footerButton) {
-                            let tmp41;
-                            if (cResult[38] === tmp38) {
-                              tmp41 = cResult[39];
+                            let tmp40;
+                            if (cResult[38] === tmp37) {
+                              tmp40 = cResult[39];
                             }
                             if (cResult[40] === twoWayLinkStyles.footerContainer) {
-                              let tmp45;
-                              if (cResult[41] === tmp41) {
-                                tmp45 = cResult[42];
+                              let tmp44;
+                              if (cResult[41] === tmp40) {
+                                tmp44 = cResult[42];
                               }
                               if (cResult[43] === tmp8) {
-                                if (cResult[44] === tmp32) {
-                                  if (cResult[45] === tmp45) {
-                                    let tmp48;
+                                if (cResult[44] === tmp31) {
+                                  if (cResult[45] === tmp44) {
+                                    let tmp47;
                                     if (cResult[46] === tmp14) {
-                                      tmp48 = cResult[47];
+                                      tmp47 = cResult[47];
                                     }
-                                    return tmp48;
+                                    return tmp47;
                                   }
                                 }
                               }
                               const obj5 = { style: tmp14, children: items };
-                              items = [tmp32, tmp45];
-                              const tmp50 = metroImportAll(tmp8, obj5);
+                              items = [tmp31, tmp44];
+                              const tmp49 = metroImportDefault(tmp8, obj5);
                               cResult[43] = tmp8;
-                              cResult[44] = tmp32;
-                              cResult[45] = tmp45;
+                              cResult[44] = tmp31;
+                              cResult[45] = tmp44;
                               cResult[46] = tmp14;
-                              cResult[47] = tmp50;
-                              tmp48 = tmp50;
+                              cResult[47] = tmp49;
+                              tmp47 = tmp49;
                             }
-                            const obj6 = { bottom: true, style: footerContainer, children: tmp41 };
-                            const tmp47 = metroImportDefault(common_SafeAreaView.SafeAreaPaddingView, obj6);
+                            const obj6 = { bottom: true, style: footerContainer, children: tmp40 };
+                            const tmp46 = metroRequire(common_SafeAreaView.SafeAreaPaddingView, obj6);
                             cResult[40] = twoWayLinkStyles.footerContainer;
-                            cResult[41] = tmp41;
-                            cResult[42] = tmp47;
-                            tmp45 = tmp47;
+                            cResult[41] = tmp40;
+                            cResult[42] = tmp46;
+                            tmp44 = tmp46;
                           }
-                          const obj7 = { style: footerButton, children: tmp38 };
-                          const tmp44 = metroImportDefault(hasOwnProperty, obj7);
+                          const obj7 = { style: footerButton, children: tmp37 };
+                          const tmp43 = metroRequire(View, obj7);
                           cResult[37] = twoWayLinkStyles.footerButton;
-                          cResult[38] = tmp38;
-                          cResult[39] = tmp44;
-                          tmp41 = tmp44;
+                          cResult[38] = tmp37;
+                          cResult[39] = tmp43;
+                          tmp40 = tmp43;
                         }
                       }
                     }
                   }
                   const obj8 = { style: tmp11, children: items1 };
-                  items1 = [tmp12, tmp13, tmp29];
-                  const tmp34 = metroImportAll(tmp7, obj8);
+                  items1 = [tmp12, tmp13, tmp28];
+                  const tmp33 = metroImportDefault(tmp7, obj8);
                   cResult[28] = tmp7;
                   cResult[29] = tmp11;
                   cResult[30] = tmp12;
                   cResult[31] = tmp13;
-                  cResult[32] = tmp29;
-                  cResult[33] = tmp34;
-                  tmp32 = tmp34;
+                  cResult[32] = tmp28;
+                  cResult[33] = tmp33;
+                  tmp31 = tmp33;
                 }
               }
             }
           }
           const obj9 = { variant: str, color: str2, style: tmp9, children: tmp10 };
-          const tmp31 = metroImportDefault(tmp6, obj9);
+          const tmp30 = metroRequire(tmp6, obj9);
           cResult[22] = tmp6;
           cResult[23] = str;
           cResult[24] = str2;
           cResult[25] = tmp9;
           cResult[26] = tmp10;
-          cResult[27] = tmp31;
-          tmp29 = tmp31;
+          cResult[27] = tmp30;
+          tmp28 = tmp30;
         }
       }
     }
@@ -191,7 +187,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   const obj3 = HelpdeskUtilsDefault;
   const articleURL = obj3.getArticleURL(HelpdeskArticles.XBOX_CONNECTION);
   if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj10 = { uri: _modDef8790 };
+    const obj10 = { uri: _modDef9159 };
     cResult[16] = obj10;
     tmp17 = obj10;
   } else {
@@ -200,10 +196,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   ({ container, content } = twoWayLinkStyles);
   if (cResult[17] !== tmp4.image) {
     const obj11 = { source: tmp17, style: tmp4.image };
-    const tmp22 = metroImportDefault(React3, obj11);
+    const tmp21 = metroRequire(FastImageDefault, obj11);
     cResult[17] = tmp4.image;
-    cResult[18] = tmp22;
-    tmp19 = tmp22;
+    cResult[18] = tmp21;
+    tmp19 = tmp21;
   } else {
     tmp19 = cResult[18];
   }
@@ -212,20 +208,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
     const intl = tmp(1126).intl;
     const stringResult1 = intl.string(intl4.t.jHytat);
     cResult[19] = stringResult1;
-    tmp23 = stringResult1;
+    tmp22 = stringResult1;
   } else {
-    tmp23 = cResult[19];
+    tmp22 = cResult[19];
   }
   if (cResult[20] !== twoWayLinkStyles.title) {
-    const obj12 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: title, children: tmp23 };
-    const tmp27 = metroImportDefault(Text_Text.Text, obj12);
+    const obj12 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: title, children: tmp22 };
+    const tmp26 = metroRequire(Text_Text.Text, obj12);
     cResult[20] = twoWayLinkStyles.title;
-    cResult[21] = tmp27;
-    tmp25 = tmp27;
+    cResult[21] = tmp26;
+    tmp24 = tmp26;
   } else {
-    tmp25 = cResult[21];
+    tmp24 = cResult[21];
   }
-  const Text = tmp(4892).Text;
+  const Text = tmp(5086).Text;
   const body = twoWayLinkStyles.body;
   const intl2 = tmp(1126).intl;
   const formatResult = intl2.format(intl4.t.yhozpz, { helpdeskArticleUrl: articleURL });
@@ -235,17 +231,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   cResult[3] = twoWayLinkStyles.title;
   cResult[4] = tmp4.image;
   cResult[5] = Text;
-  cResult[6] = hasOwnProperty;
-  cResult[7] = hasOwnProperty;
+  cResult[6] = View;
+  cResult[7] = View;
   cResult[8] = "text-md/medium";
   cResult[9] = "text-default";
   cResult[10] = body;
   cResult[11] = formatResult;
   cResult[12] = content;
   cResult[13] = tmp19;
-  cResult[14] = tmp25;
+  cResult[14] = tmp24;
   cResult[15] = container;
-  tmp13 = tmp25;
+  tmp13 = tmp24;
   tmp14 = container;
   tmp12 = tmp19;
   tmp11 = content;
@@ -256,7 +252,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   tmp8 = tmp18;
   tmp7 = tmp18;
   tmp6 = Text;
-}) : ((onClose) => {
+}) : (function XboxLinkEducation(onClose) {
   let Button;
   let intl;
   let intl2;
@@ -266,40 +262,38 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   let obj10;
   let obj9;
   onClose = onClose.onClose;
-  const tmp = closure_9();
+  const tmp = closure_8();
   let obj = TwoWayLinkStyles;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   const obj2 = HelpdeskUtilsDefault;
   const articleURL = obj2.getArticleURL(HelpdeskArticles.XBOX_CONNECTION);
-  const obj4 = { style: twoWayLinkStyles.content, children: items };
-  items = [, , ];
   const obj3 = { style: twoWayLinkStyles.container, children: items1 };
-  const obj5 = {
-    source: react.useMemo(() => {
-      const obj = { uri: _modDef8790 };
-      return obj;
-    }, []),
-    style: tmp.image
-  };
-  items[0] = metroImportDefault(React3, obj5);
+  const obj4 = { style: twoWayLinkStyles.content, children: items };
+  const memo = react.useMemo(() => {
+    const obj = { uri: _modDef9159 };
+    return obj;
+  }, []);
+  items = [, , ];
+  const obj5 = { source: memo, style: tmp.image };
+  items[0] = metroRequire(FastImageDefault, obj5);
   const obj6 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: intl.string(intl4.t.jHytat) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
-  items[1] = metroImportDefault(Text, obj6);
+  items[1] = metroRequire(Text, obj6);
   const obj7 = { variant: "text-md/medium", color: "text-default", style: twoWayLinkStyles.body, children: intl2.format(intl4.t.yhozpz, { helpdeskArticleUrl: articleURL }) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
-  items[2] = metroImportDefault(Text2, obj7);
-  items1 = [metroImportAll(hasOwnProperty, obj4), ];
-  const obj8 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: metroImportDefault(hasOwnProperty, obj9) };
-  obj9 = { style: twoWayLinkStyles.footerButton, children: metroImportDefault(Button, obj10) };
+  items[2] = metroRequire(Text2, obj7);
+  items1 = [metroImportDefault(View, obj4), ];
+  const obj8 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: metroRequire(View, obj9) };
+  obj9 = { style: twoWayLinkStyles.footerButton, children: metroRequire(Button, obj10) };
   const SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
   obj10 = { size: "lg", variant: "primary", text: intl3.string(intl4.t.i4jeWR), onPress: onClose };
   Button = components_Button_Button.Button;
   intl3 = intl4.intl;
-  items1[1] = metroImportDefault(SafeAreaPaddingView, obj8);
-  return metroImportAll(hasOwnProperty, obj3);
+  items1[1] = metroRequire(SafeAreaPaddingView, obj8);
+  return metroImportDefault(View, obj3);
 });
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkEducation.tsx");
 
-export default tmp4;
+export default tmp3;

@@ -1,21 +1,21 @@
-// Module ID: 17369
-// Function ID: 17370
+// Module ID: 17650
+// Function ID: 17651
 // Name: VoicePanelSoundboardButton
-// Dependencies: [19, 21, 4896, 587, 558, 576, 11915, 17355, 17370, 17356, 1126, 5983, 12200, 2]
+// Dependencies: [19, 21, 5090, 587, 558, 576, 11988, 17636, 17651, 17637, 1126, 6166, 12279, 2]
 
-// Module 17369 (VoicePanelSoundboardButton)
+// Module 17650 (VoicePanelSoundboardButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import NativeViewDefault from "NativeView" /* 5983 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11915 */;
-import SoundboardIcon from "SoundboardIcon" /* 12200 */;
-import VoicePanelStyles from "VoicePanelStyles" /* 17355 */;
-import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 17356 */;
-import useSoundboardConfig from "useSoundboardConfig" /* 17370 */;
+import NativeViewDefault from "NativeView" /* 6166 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11988 */;
+import SoundboardIcon from "SoundboardIcon" /* 12279 */;
+import VoicePanelStyles from "VoicePanelStyles" /* 17636 */;
+import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 17637 */;
+import useSoundboardConfig from "useSoundboardConfig" /* 17651 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let size;
 let obj = { circle: size, iconContainer: { position: "absolute", justifyContent: "center", alignItems: "center", width: "100%", height: "100%" } };
 size = { width: "100%", height: "100%", borderRadius: nativeDefault.radii.round };
 let closure_6 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundboardButton(props) {
   let color;
   let disabled;
   let disabledAccessibilityHint;
@@ -100,7 +100,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
   cResult[7] = visible;
   cResult[8] = tmp10;
   tmp9 = tmp10;
-}) : ((arg0) => {
+}) : (function SoundboardButton(arg0) {
   let color;
   let disabled;
   let disabledAccessibilityHint;

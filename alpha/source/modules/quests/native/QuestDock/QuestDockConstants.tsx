@@ -1,9 +1,9 @@
-// Module ID: 14912
-// Function ID: 14913
+// Module ID: 15174
+// Function ID: 15175
 // Name: QuestDockConstants
 // Dependencies: [587, 2]
 
-// Module 14912 (QuestDockConstants)
+// Module 15174 (QuestDockConstants)
 import nativeDefault from "native" /* 587 */;
 import size from "module_2" /* 2 */;
 

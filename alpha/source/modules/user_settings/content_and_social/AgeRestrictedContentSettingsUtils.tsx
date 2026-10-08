@@ -1,22 +1,22 @@
-// Module ID: 6727
-// Function ID: 6728
+// Module ID: 6903
+// Function ID: 6904
 // Name: AgeRestrictedContentSettingsUtils
-// Dependencies: [1377, 558, 576, 2028, 5108, 6728, 5587, 5588, 2]
+// Dependencies: [1389, 558, 576, 2040, 5905, 6904, 5918, 5917, 2]
 // Exports: getViewNsfwCommandsOrDefault, getViewNsfwGuildsOrDefault, resolveNsfwTogglesWithDefaults
 
-// Module 6727 (AgeRestrictedContentSettingsUtils)
+// Module 6903 (AgeRestrictedContentSettingsUtils)
 import react from "react" /* 576 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5108 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5587 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5588 */;
-import useNSFWAllowed from "useNSFWAllowed" /* 6728 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5905 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5917 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5918 */;
+import useNSFWAllowed from "useNSFWAllowed" /* 6904 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useViewNsfwCommandsOrDefault() {
   const obj = react;
   const cResult = obj.c(5);
   const ViewNsfwCommands = UserSettings.ViewNsfwCommands;
@@ -56,7 +56,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = nSFWAllowed;
   cResult[4] = tmp8;
   tmp6 = tmp8;
-}) : (() => {
+}) : (function useViewNsfwCommandsOrDefault() {
   const ViewNsfwCommands = UserSettings.ViewNsfwCommands;
   let flag = ViewNsfwCommands.useSetting();
   const obj = AgeVerificationUtils;
@@ -79,7 +79,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return tmp4;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useViewNsfwGuildsOrDefault() {
   const obj = react;
   const cResult = obj.c(5);
   const ViewNsfwGuilds = UserSettings.ViewNsfwGuilds;
@@ -119,7 +119,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = nSFWAllowed;
   cResult[4] = tmp8;
   tmp6 = tmp8;
-}) : (() => {
+}) : (function useViewNsfwGuildsOrDefault() {
   const ViewNsfwGuilds = UserSettings.ViewNsfwGuilds;
   let flag = ViewNsfwGuilds.useSetting();
   const obj = AgeVerificationUtils;

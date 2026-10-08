@@ -1,15 +1,15 @@
-// Module ID: 11687
-// Function ID: 11688
+// Module ID: 11752
+// Function ID: 11753
 // Name: useEmbeddedAppsForChannel
-// Dependencies: [19, 4936, 1377, 2050, 558, 576, 504, 4504, 6670, 1375, 2]
+// Dependencies: [19, 5106, 1389, 2062, 558, 576, 504, 4696, 6847, 1387, 2]
 
-// Module 11687 (useEmbeddedAppsForChannel)
-import EmbeddedActivitiesStore2 from "EmbeddedActivitiesStore" /* 2050 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4504 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6670 */;
+// Module 11752 (useEmbeddedAppsForChannel)
+import EmbeddedActivitiesStore2 from "EmbeddedActivitiesStore" /* 2062 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4696 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6847 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 4936 */;
-import UserStore from "UserStore" /* 1377 */;
+import PresenceStore from "PresenceStore" /* 5106 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let _require, application_id, dependencyMap, findActivity, importDefault, map, s
 
 const NO_ACTIVITIES = EmbeddedActivitiesStore2.NO_ACTIVITIES;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedAppsForChannel(arg0, arg1) {
   let first;
   let tmp6;
   let user;
@@ -55,7 +55,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   }
   const tmpResult = tmp(504);
   return closure_8(tmpResult.useStateFromStoresArray(first, tmp6), arg1);
-}) : ((arg0, arg1) => {
+}) : (function useEmbeddedAppsForChannel(arg0, arg1) {
   let user;
   _require = arg0;
   const items = [EmbeddedActivitiesStore];
@@ -74,7 +74,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   }), arg1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedAppsByChannel(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -134,7 +134,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
     closure_1 = cResult[4];
   }
   return tmp7;
-}) : ((arg0) => {
+}) : (function useEmbeddedAppsByChannel(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -169,7 +169,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arr, arg1) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedApps(arr, arg1) {
   let closure_0;
   let closure_1;
   let closure_2;
@@ -187,7 +187,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arr, arg1) {
     let tmp4 = globalThis;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function s(applicationId) {
+      const fn = function o(applicationId) {
         return applicationId.applicationId;
       };
       cResult[2] = fn;
@@ -302,14 +302,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arr, arg1) {
     }
     return tmp13;
   });
-  const found = mapped1.filter(tmp22(1375).isNotNullish);
+  const found = mapped1.filter(tmp22(1387).isNotNullish);
   cResult[10] = tmp7;
   cResult[11] = stateFromStoresArray;
   cResult[12] = arr;
   cResult[13] = arg1;
   cResult[14] = found;
   tmp24 = found;
-}) : ((arr, arg1) => {
+}) : (function useEmbeddedApps(arr, arg1) {
   let closure_1;
   let closure_2;
   _require = arr;
@@ -375,7 +375,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arr, arg1) {
 });
 let closure_8 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedAppsWithPresence(arg0) {
   let first;
   let tmp6;
   let tmp7;
@@ -390,7 +390,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function o() {
+    const fn = function s() {
       map = new Map();
       const item = closure_0.forEach((embeddedActivity) => {
         closure_0 = embeddedActivity;
@@ -438,7 +438,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = require("get initialized");
   return tmpResult.useStateFromStores(first, tmp6, tmp7, require("get initialized").statesWillNeverBeEqual);
-}) : ((arg0) => {
+}) : (function useEmbeddedAppsWithPresence(arg0) {
   _require = arg0;
   let obj = require("get initialized");
   const items = [PresenceStore];

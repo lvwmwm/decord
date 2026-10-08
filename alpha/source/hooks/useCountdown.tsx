@@ -1,12 +1,12 @@
-// Module ID: 6961
-// Function ID: 6962
+// Module ID: 7150
+// Function ID: 7151
 // Name: useCountdown
-// Dependencies: [19, 558, 576, 4558, 6962, 6967, 2]
+// Dependencies: [19, 558, 576, 4750, 7151, 7156, 2]
 
-// Module 6961 (useCountdown)
+// Module 7150 (useCountdown)
 import react from "react" /* 19 */;
-import DateUtils from "DateUtils" /* 4558 */;
-import useIntervalDefault from "useInterval" /* 6967 */;
+import DateUtils from "DateUtils" /* 4750 */;
+import useIntervalDefault from "useInterval" /* 7156 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require, dependencyMap, importDefault;
 
 react.useCallback;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((expiresAt, arg1, arg2, arg3) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCountdown(expiresAt, arg1, arg2, arg3) {
   let closure_1;
   let closure_2;
   let tmp5;
@@ -30,7 +30,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((expiresAt, arg1, a
   dependencyMap = tmp4;
   if (cResult[0] !== expiresAt) {
     const _Date = Date;
-    const tmpResult = tmp(4558);
+    const tmpResult = tmp(4750);
     const diffAsUnitsResult = tmpResult.diffAsUnits(Date.now(), expiresAt);
     cResult[0] = expiresAt;
     cResult[1] = diffAsUnitsResult;
@@ -38,7 +38,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((expiresAt, arg1, a
   } else {
     tmp5 = cResult[1];
   }
-  const tmpResult2 = tmp(6962);
+  const tmpResult2 = tmp(7151);
   const forceUpdate = tmpResult2.useForceUpdate();
   if (cResult[2] === expiresAt) {
     if (cResult[3] === (undefined !== arg3 && arg3)) {
@@ -74,7 +74,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((expiresAt, arg1, a
   cResult[5] = arg2;
   cResult[6] = fn;
   tmp9 = fn;
-}) : ((expiresAt) => {
+}) : (function useCountdown(expiresAt) {
   let closure_1;
   _require = expiresAt;
   let num = arg1;
@@ -88,7 +88,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((expiresAt, arg1, a
   }
   let obj = require("DateUtils");
   const diffAsUnitsResult = obj.diffAsUnits(Date.now(), expiresAt);
-  const obj2 = require("module_6962");
+  const obj2 = require("module_7151");
   const forceUpdate = obj2.useForceUpdate();
   const items = [expiresAt, flag, forceUpdate, arg2];
   let tmp5 = null;

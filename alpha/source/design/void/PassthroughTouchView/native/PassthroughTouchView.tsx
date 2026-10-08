@@ -1,22 +1,20 @@
-// Module ID: 13951
-// Function ID: 13952
+// Module ID: 14046
+// Function ID: 14047
 // Name: PassthroughTouchView
-// Dependencies: [109, 19, 21, 558, 576, 13952, 2]
+// Dependencies: [109, 19, 21, 558, 576, 14047, 2]
 
-// Module 13951 (PassthroughTouchView)
+// Module 14046 (PassthroughTouchView)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import PassthroughTouchNativeComponentDefault from "PassthroughTouchNativeComponent" /* 13952 */;
+import PassthroughTouchNativeComponentDefault from "PassthroughTouchNativeComponent" /* 14047 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let onTouchDown;
-
 let closure_3 = ["onTouchDown"];
 const jsx = Fragment.jsx;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTouchDown) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PassthroughTouchView(onTouchDown) {
   let tmp3;
   let tmp4;
   const obj = react2;
@@ -47,7 +45,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTouchDown) => {
   cResult[4] = tmp4;
   cResult[5] = tmp11;
   tmp8 = tmp11;
-}) : ((onTouchDown) => {
+}) : (function PassthroughTouchView(onTouchDown) {
   onTouchDown = onTouchDown.onTouchDown;
   const merged = Object.assign(onTouchDown, Object.assign({ onTouchDown: 0 }));
   PassthroughTouchNativeComponentDefault;

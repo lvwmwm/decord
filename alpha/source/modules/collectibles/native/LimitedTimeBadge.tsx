@@ -1,22 +1,22 @@
-// Module ID: 8523
-// Function ID: 8524
+// Module ID: 9008
+// Function ID: 9009
 // Name: LimitedTimeBadge
-// Dependencies: [19, 17, 2116, 1193, 21, 4896, 587, 1126, 558, 576, 4735, 504, 6961, 4892, 2]
+// Dependencies: [19, 17, 2128, 1205, 21, 5090, 587, 1126, 558, 576, 4929, 504, 7150, 5086, 2]
 
-// Module 8523 (LimitedTimeBadge)
+// Module 9008 (LimitedTimeBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
-import shared from "shared" /* 4735 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useCountdownDefault from "useCountdown" /* 6961 */;
+import shared from "shared" /* 4929 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import useCountdownDefault from "useCountdown" /* 7150 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import LocaleStore from "LocaleStore" /* 2128 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.WHITE };
 obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
 let closure_7 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function LimitedTimeBadge(arg0) {
   let days;
   let hours;
   let locale;
@@ -194,7 +194,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = hasItem;
   cResult[8] = tmp16;
   tmp15 = tmp16;
-}) : ((unpublishedAt) => {
+}) : (function LimitedTimeBadge(unpublishedAt) {
   let intl;
   let locale;
   let theme;
@@ -218,7 +218,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items3[2] = style;
   let str = "text-overlay-light";
   const tmp7 = getBadgeString(hasItem, days, tmp6.hours);
-  const Text = tmp2(4892).Text;
+  const Text = tmp2(5086).Text;
   if (stateFromStores) {
     str = "text-overlay-dark";
   }

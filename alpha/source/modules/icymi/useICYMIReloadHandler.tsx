@@ -1,10 +1,10 @@
-// Module ID: 16471
-// Function ID: 16472
+// Module ID: 16731
+// Function ID: 16732
 // Name: useICYMIReloadHandler
-// Dependencies: [5, 19, 558, 576, 14183, 8039, 2]
+// Dependencies: [5, 19, 558, 576, 14482, 8447, 2]
 
-// Module 16471 (useICYMIReloadHandler)
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8039 */;
+// Module 16731 (useICYMIReloadHandler)
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8447 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, c1, c2;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMIReloadHandler(arg0) {
   let closure_0;
   let tmp2;
   _require = arg0;
@@ -112,17 +112,17 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     });
-    const fn = function() {
+    function t0() {
       return closure_0(...arguments);
-    };
+    }
     cResult[0] = arg0;
-    cResult[1] = fn;
-    tmp2 = fn;
+    cResult[1] = t0;
+    tmp2 = t0;
   } else {
     tmp2 = cResult[1];
   }
   return tmp2;
-}) : ((arg0) => {
+}) : (function useICYMIReloadHandler(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   return react.useCallback(_asyncToGenerator(async (arg0, value) => {

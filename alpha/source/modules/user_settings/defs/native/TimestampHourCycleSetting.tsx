@@ -1,22 +1,22 @@
-// Module ID: 15311
-// Function ID: 15312
+// Module ID: 15573
+// Function ID: 15574
 // Name: TimestampHourCycleSetting
-// Dependencies: [19, 7645, 2028, 558, 576, 1126, 1197, 11142, 4561, 2]
+// Dependencies: [19, 7966, 2040, 558, 576, 1126, 1209, 11262, 4753, 2]
 
-// Module 15311 (TimestampHourCycleSetting)
+// Module 15573 (TimestampHourCycleSetting)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import SystemDateFormatter from "SystemDateFormatter" /* 4561 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import SystemDateFormatter from "SystemDateFormatter" /* 4753 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDMsMessagePreviewsOptions() {
   let first;
   let intl;
   let intl2;
@@ -39,21 +39,23 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => react.useMemo(() => {
-  let intl;
-  let intl2;
-  let intl3;
-  const obj = { label: intl.string(intl4.t.FMWYvb), value: preloaded_user_settings.TimestampHourCycle.AUTO };
-  intl = intl4.intl;
-  const items = [obj, , ];
-  const obj2 = { label: intl2.string(intl4.t.p8NOwi), value: preloaded_user_settings.TimestampHourCycle.H12 };
-  intl2 = intl4.intl;
-  items[1] = obj2;
-  const obj3 = { label: intl3.string(intl4.t["+o/sOo"]), value: preloaded_user_settings.TimestampHourCycle.H23 };
-  intl3 = intl4.intl;
-  items[2] = obj3;
-  return items;
-}, []));
+}) : (function useDMsMessagePreviewsOptions() {
+  return react.useMemo(() => {
+    let intl;
+    let intl2;
+    let intl3;
+    const obj = { label: intl.string(intl4.t.FMWYvb), value: preloaded_user_settings.TimestampHourCycle.AUTO };
+    intl = intl4.intl;
+    const items = [obj, , ];
+    const obj2 = { label: intl2.string(intl4.t.p8NOwi), value: preloaded_user_settings.TimestampHourCycle.H12 };
+    intl2 = intl4.intl;
+    items[1] = obj2;
+    const obj3 = { label: intl3.string(intl4.t["+o/sOo"]), value: preloaded_user_settings.TimestampHourCycle.H23 };
+    intl3 = intl4.intl;
+    items[2] = obj3;
+    return items;
+  }, []);
+});
 let obj = {
   useTitle() {
     const intl = intl4.intl;

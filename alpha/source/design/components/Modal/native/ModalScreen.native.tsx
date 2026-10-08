@@ -1,16 +1,16 @@
-// Module ID: 8128
-// Function ID: 8129
+// Module ID: 7506
+// Function ID: 7507
 // Name: ModalScreen
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 6478, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 6656, 2]
 
-// Module 8128 (ModalScreen)
+// Module 7506 (ModalScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6478 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6656 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ const jsx = Fragment.jsx;
 let obj = { container: obj2 };
 obj2 = { flex: 1, flexDirection: "column", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 let closure_5 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ModalScreen(arg0) {
   let backgroundColor;
   let children;
   const obj = react2;
@@ -71,7 +71,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = backgroundColor;
   cResult[4] = obj3;
   tmp3 = obj3;
-}) : ((backgroundColor) => {
+}) : (function ModalScreen(backgroundColor) {
   backgroundColor = backgroundColor.backgroundColor;
   const children = backgroundColor.children;
   const tmp = closure_5();

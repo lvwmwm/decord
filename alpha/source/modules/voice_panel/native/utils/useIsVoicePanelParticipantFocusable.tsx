@@ -1,16 +1,16 @@
-// Module ID: 17328
-// Function ID: 17329
+// Module ID: 17609
+// Function ID: 17610
 // Name: useIsVoicePanelParticipantFocusable
-// Dependencies: [2050, 4912, 4918, 1999, 4917, 9154, 1375, 558, 576, 504, 2]
+// Dependencies: [2062, 6041, 5893, 2011, 5113, 10720, 1387, 558, 576, 504, 2]
 
-// Module 17328 (useIsVoicePanelParticipantFocusable)
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import participantHasVideo from "participantHasVideo" /* 9154 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4912 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4918 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import CallConstants from "CallConstants" /* 4917 */;
+// Module 17609 (useIsVoicePanelParticipantFocusable)
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import participantHasVideo from "participantHasVideo" /* 10720 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5893 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import CallConstants from "CallConstants" /* 5113 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -66,7 +66,7 @@ function isVoicePanelParticipantFocusable(guildId, channelId, id2, ChannelRTCSto
   }
 }
 ({ isActivityParticipant: metroRequire, isStreamParticipant: metroImportDefault, isUserParticipant: metroImportAll } = CallConstants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVoicePanelParticipantFocusable(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
   let first;
@@ -103,7 +103,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
   cResult[3] = arg2;
   cResult[4] = P;
   tmp9 = P;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useIsVoicePanelParticipantFocusable(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
   _require = arg0;

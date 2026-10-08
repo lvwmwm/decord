@@ -1,23 +1,23 @@
-// Module ID: 14658
-// Function ID: 14659
+// Module ID: 14919
+// Function ID: 14920
 // Name: DirectMessageSafetyAlertsSetting
-// Dependencies: [7645, 558, 576, 11502, 9805, 9807, 11142, 1126, 9806, 14659, 2]
+// Dependencies: [7966, 558, 576, 11488, 10368, 10370, 11262, 1126, 10369, 14920, 2]
 
-// Module 14658 (DirectMessageSafetyAlertsSetting)
+// Module 14919 (DirectMessageSafetyAlertsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 9805 */;
-import useSafetyAlertsSettingOrDefault from "useSafetyAlertsSettingOrDefault" /* 9806 */;
-import InappropriateConversationsDefaultOn from "InappropriateConversationsDefaultOn" /* 9807 */;
-import useUserIsConsideredAdultDefault from "useUserIsConsideredAdult" /* 11502 */;
-import updateDmSafetyAlertsSetting from "updateDmSafetyAlertsSetting" /* 14659 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 10368 */;
+import useSafetyAlertsSettingOrDefault from "useSafetyAlertsSettingOrDefault" /* 10369 */;
+import InappropriateConversationsDefaultOn from "InappropriateConversationsDefaultOn" /* 10370 */;
+import useUserIsConsideredAdultDefault from "useUserIsConsideredAdult" /* 11488 */;
+import updateDmSafetyAlertsSetting from "updateDmSafetyAlertsSetting" /* 14920 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasDmSafetyAlertsSetting() {
   let first;
   let tmp6;
   const obj = react;
@@ -52,7 +52,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = !isEligibleForInappropriateConversationDefaultOn;
   }
   return tmp8;
-}) : (() => {
+}) : (function useHasDmSafetyAlertsSetting() {
   let flag = useUserIsConsideredAdultDefault();
   if (flag == null) {
     flag = true;

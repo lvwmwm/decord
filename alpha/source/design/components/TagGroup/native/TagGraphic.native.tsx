@@ -1,16 +1,16 @@
-// Module ID: 14274
-// Function ID: 14275
+// Module ID: 14098
+// Function ID: 14099
 // Name: TagGraphic
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 14271, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 14095, 2]
 
-// Module 14274 (TagGraphic)
+// Module 14098 (TagGraphic)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import TagGroupTypes from "TagGroupTypes" /* 14271 */;
+import TagGroupTypes from "TagGroupTypes" /* 14095 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let closure_6 = createStyles.createStyles((width, backgroundColor) => {
   size1 = { width, height: width, borderRadius: nativeDefault.radii.round, borderWidth: 1, borderColor: nativeDefault.colors.TEXT_STRONG, backgroundColor };
   return obj;
 });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TagGraphic(arg0) {
   let graphic;
   let tmp5;
   let tmp8;
@@ -110,7 +110,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[13] = tmp8;
   cResult[14] = tmp11;
   tmp10 = tmp11;
-}) : ((arg0) => {
+}) : (function TagGraphic(arg0) {
   let graphic;
   ({ graphic, size } = arg0);
   let color;

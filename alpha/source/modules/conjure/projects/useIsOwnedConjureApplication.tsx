@@ -1,15 +1,15 @@
-// Module ID: 8733
-// Function ID: 8734
+// Module ID: 12363
+// Function ID: 12364
 // Name: useIsOwnedConjureApplication
-// Dependencies: [19, 2074, 8734, 569, 558, 576, 6756, 504, 8735, 2]
+// Dependencies: [19, 2086, 11251, 569, 558, 576, 6932, 504, 12364, 2]
 
-// Module 8733 (useIsOwnedConjureApplication)
+// Module 12363 (useIsOwnedConjureApplication)
 import BackoffDefault from "Backoff" /* 569 */;
-import ConjureUtils from "ConjureUtils" /* 6756 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 8734 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 8735 */;
+import ConjureUtils from "ConjureUtils" /* 6932 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 11251 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 12364 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ const isProjectOwner = ConjureProjectStore2.isProjectOwner;
 const useIsOwnedVibegrationsApplication = "useIsOwnedVibegrationsApplication";
 let tmp2 = new BackoffDefault(30000, 300000);
 let closure_7 = tmp2;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsOwnedConjureApplication(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -191,7 +191,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     tmp14 = items4;
     tmp13 = fn2;
   }
-  const fn = function p() {
+  const fn = function j() {
     let tmp = closure_1 && null != closure_0;
     if (tmp) {
       const obj = ConjureUtils;
@@ -206,7 +206,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = items5;
   tmp7 = items5;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useIsOwnedConjureApplication(arg0, arg1) {
   let closure_0;
   let closure_1;
   let stateFromStores1;

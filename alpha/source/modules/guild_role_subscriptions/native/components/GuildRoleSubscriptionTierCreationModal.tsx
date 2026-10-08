@@ -1,21 +1,21 @@
-// Module ID: 17981
-// Function ID: 17982
+// Module ID: 18268
+// Function ID: 18269
 // Name: GuildRoleSubscriptionTierCreationModal
-// Dependencies: [5, 32, 19, 17972, 15038, 21, 558, 576, 15060, 4573, 1126, 17982, 17967, 17990, 2]
+// Dependencies: [5, 32, 19, 18259, 15300, 21, 558, 576, 15322, 4765, 1126, 18269, 18254, 18277, 2]
 
-// Module 17981 (GuildRoleSubscriptionTierCreationModal)
+// Module 18268 (GuildRoleSubscriptionTierCreationModal)
 import Fragment from "Fragment" /* 21 */;
-import ToastUtils from "ToastUtils" /* 4573 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15060 */;
+import ToastUtils from "ToastUtils" /* 4765 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15322 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 17972 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15038 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18259 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15300 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let _require, c1, c2, guildId;
+let c1, c2;
 
 let c9;
 let metroImportAll;
@@ -23,7 +23,7 @@ let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ GuildRoleSubscriptionsTierScenes: metroImportAll, GUILD_ROLE_SUBSCRIPTION_TIER_CREATION_KEY: c9 } = GuildRoleSubscriptionsConstants);
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionTierCreationModal(guildId) {
   let closure_5;
   let editStateId;
   let handleCreateOrUpdateFromEditState;
@@ -55,156 +55,86 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               tmp7 = cResult[6];
             }
             if (cResult[7] !== error) {
-              class O {
-                constructor() {
-                  const obj = error;
-                  if (null != error) {
-                    const presentError = ToastUtils.presentError;
-                    ToastUtils;
-                    let anyErrorMessage = obj.getAnyErrorMessage();
-                    if (anyErrorMessage == null) {
-                      const intl = tmp(1126).intl;
-                      anyErrorMessage = intl.string(tmp(1126).t.R0RpRX);
-                    }
-                    presentError(anyErrorMessage);
+              const fn = function b() {
+                const obj = error;
+                if (null != error) {
+                  const presentError = ToastUtils.presentError;
+                  ToastUtils;
+                  let anyErrorMessage = obj.getAnyErrorMessage();
+                  if (anyErrorMessage == null) {
+                    const intl = tmp(1126).intl;
+                    anyErrorMessage = intl.string(tmp(1126).t.R0RpRX);
                   }
+                  presentError(anyErrorMessage);
                 }
-              }
+              };
               const items = [error];
               cResult[7] = error;
-              cResult[8] = O;
+              cResult[8] = fn;
               cResult[9] = items;
               tmp9 = items;
-              tmp8 = O;
+              tmp8 = fn;
             } else {
-              class O {
-                constructor() {
-                  const obj = error;
-                  if (null != error) {
-                    const presentError = ToastUtils.presentError;
-                    ToastUtils;
-                    let anyErrorMessage = obj.getAnyErrorMessage();
-                    if (anyErrorMessage == null) {
-                      const intl = tmp(1126).intl;
-                      anyErrorMessage = intl.string(tmp(1126).t.R0RpRX);
-                    }
-                    presentError(anyErrorMessage);
-                  }
-                }
-              }
+              tmp8 = cResult[8];
               tmp9 = cResult[9];
             }
             const layoutEffect = obj2.useLayoutEffect(tmp8, tmp9);
             const _Symbol = Symbol;
             if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-              class O {
-                constructor() {
-                  const obj = error;
-                  if (null != error) {
-                    const presentError = ToastUtils.presentError;
-                    ToastUtils;
-                    let anyErrorMessage = obj.getAnyErrorMessage();
-                    if (anyErrorMessage == null) {
-                      const intl = tmp(1126).intl;
-                      anyErrorMessage = intl.string(tmp(1126).t.R0RpRX);
-                    }
-                    presentError(anyErrorMessage);
-                  }
-                }
-              }
               const items1 = [, , , , ];
               ({ DETAILS: arr2[0], CHANNEL_BENEFITS: arr2[1], INTANGIBLE_BENEFITS: arr2[2], DESIGN: arr2[3], CONFIRMATION: arr2[4] } = closure_8);
               cResult[10] = items1;
               tmp12 = items1;
             } else {
-              class O {
-                constructor() {
-                  const obj = error;
-                  if (null != error) {
-                    const presentError = ToastUtils.presentError;
-                    ToastUtils;
-                    let anyErrorMessage = obj.getAnyErrorMessage();
-                    if (anyErrorMessage == null) {
-                      const intl = tmp(1126).intl;
-                      anyErrorMessage = intl.string(tmp(1126).t.R0RpRX);
-                    }
-                    presentError(anyErrorMessage);
-                  }
-                }
-              }
+              tmp12 = cResult[10];
             }
             if (cResult[11] === guildId) {
-              class O {
-                constructor() {
-                  const obj = error;
-                  if (null != error) {
-                    const presentError = ToastUtils.presentError;
-                    ToastUtils;
-                    let anyErrorMessage = obj.getAnyErrorMessage();
-                    if (anyErrorMessage == null) {
-                      const intl = tmp(1126).intl;
-                      anyErrorMessage = intl.string(tmp(1126).t.R0RpRX);
-                    }
-                    presentError(anyErrorMessage);
-                  }
-                }
+              let tmp14;
+              if (cResult[12] === tmp7) {
+                tmp14 = cResult[13];
               }
               if (cResult[14] === guildId) {
-                class O {
-                  constructor() {
-                    const obj = error;
-                    if (null != error) {
-                      const presentError = ToastUtils.presentError;
-                      ToastUtils;
-                      let anyErrorMessage = obj.getAnyErrorMessage();
-                      if (anyErrorMessage == null) {
-                        const intl = tmp(1126).intl;
-                        anyErrorMessage = intl.string(tmp(1126).t.R0RpRX);
-                      }
-                      presentError(anyErrorMessage);
-                    }
-                  }
+                let tmp19;
+                if (cResult[15] === tmp14) {
+                  tmp19 = cResult[16];
                 }
                 if (cResult[17] === editStateId) {
-                  class O {
-                    constructor() {
-                      const obj = error;
-                      if (null != error) {
-                        const presentError = ToastUtils.presentError;
-                        ToastUtils;
-                        let anyErrorMessage = obj.getAnyErrorMessage();
-                        if (anyErrorMessage == null) {
-                          const intl = tmp(1126).intl;
-                          anyErrorMessage = intl.string(tmp(1126).t.R0RpRX);
-                        }
-                        presentError(anyErrorMessage);
+                  if (cResult[18] === groupListingId) {
+                    if (cResult[19] === guildId) {
+                      let tmp22;
+                      if (cResult[20] === tmp19) {
+                        tmp22 = cResult[21];
                       }
+                      return tmp22;
                     }
                   }
                 }
+                const tmp24 = jsx(tmp(tmp2[13]).EditStateContextProvider, { guildId, editStateId, groupListingId, children: tmp19 });
                 cResult[17] = editStateId;
                 cResult[18] = groupListingId;
                 cResult[19] = guildId;
-                cResult[20] = tmp18;
-                cResult[21] = jsx(tmp(tmp2[13]).EditStateContextProvider, { guildId, editStateId, groupListingId, children: tmp18 });
-                const tmp23 = jsx(tmp(tmp2[13]).EditStateContextProvider, { guildId, editStateId, groupListingId, children: tmp18 });
+                cResult[20] = tmp19;
+                cResult[21] = tmp24;
+                tmp22 = tmp24;
               }
-              const tmp20 = jsx(tmp(tmp2[12]).RoleSubscriptionSettingsDisabledContextProvider, { guildId, children: tmp13 });
+              const tmp21 = jsx(tmp(tmp2[12]).RoleSubscriptionSettingsDisabledContextProvider, { guildId, children: tmp14 });
               cResult[14] = guildId;
-              cResult[15] = tmp13;
-              cResult[16] = tmp20;
+              cResult[15] = tmp14;
+              cResult[16] = tmp21;
+              tmp19 = tmp21;
             }
-            const tmp15 = groupListingId;
-            const tmp17 = jsx(groupListingId(tmp2[11]), { guildId, modalKey, onDone: tmp7, steps: tmp12 });
+            const tmp15 = jsx;
+            const tmp18 = jsx(groupListingId(tmp2[11]), { guildId, modalKey, onDone: tmp7, steps: tmp12 });
             cResult[11] = guildId;
             cResult[12] = tmp7;
-            cResult[13] = tmp17;
+            cResult[13] = tmp18;
+            tmp14 = tmp18;
           }
         }
       }
     }
   }
-  _require = editStateId(function*(arg0, value) {
+  let closure_0 = editStateId(function*(arg0, value) {
     let v3;
     if (c2 === 2) {
       c2 = 3;
@@ -277,7 +207,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[5] = onClose;
   cResult[6] = handleCreate;
   tmp7 = handleCreate;
-}) : ((guildId) => {
+}) : (function GuildRoleSubscriptionTierCreationModal(guildId) {
   let _undefined;
   let c6;
   let closure_5;
@@ -377,9 +307,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     ({ DETAILS: arr[0], CHANNEL_BENEFITS: arr[1], INTANGIBLE_BENEFITS: arr[2], DESIGN: arr[3], CONFIRMATION: arr[4] } = obj);
     return items;
   }, []);
-  const EditStateContextProvider = guildId(17990).EditStateContextProvider;
+  const EditStateContextProvider = guildId(18277).EditStateContextProvider;
   let obj3 = { guildId, children: null };
-  const RoleSubscriptionSettingsDisabledContextProvider = guildId(17967).RoleSubscriptionSettingsDisabledContextProvider;
+  const RoleSubscriptionSettingsDisabledContextProvider = guildId(18254).RoleSubscriptionSettingsDisabledContextProvider;
   let obj4 = {
     guildId,
     modalKey,

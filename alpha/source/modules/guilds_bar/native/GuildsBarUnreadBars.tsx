@@ -1,32 +1,32 @@
-// Module ID: 16335
-// Function ID: 16336
+// Module ID: 16595
+// Function ID: 16596
 // Name: GuildsBarUnreadBars
-// Dependencies: [32, 19, 17, 7134, 4705, 5623, 16262, 14915, 21, 4896, 6576, 558, 576, 1618, 14908, 14917, 551, 568, 504, 4618, 16336, 2]
+// Dependencies: [32, 19, 17, 6082, 4899, 5968, 16522, 15177, 21, 5090, 6752, 558, 576, 1630, 15170, 15179, 551, 568, 504, 4810, 16596, 2]
 
-// Module 16335 (GuildsBarUnreadBars)
+// Module 16595 (GuildsBarUnreadBars)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import debounceDefault from "debounce" /* 551 */;
 import react2 from "react" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import SortedGuildStore2 from "SortedGuildStore" /* 5623 */;
-import FastList from "FastList" /* 6576 */;
-import QuestHooks from "QuestHooks" /* 14908 */;
-import useYouBarTotalHeight2 from "useYouBarTotalHeight" /* 14917 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 5968 */;
+import FastList from "FastList" /* 6752 */;
+import QuestHooks from "QuestHooks" /* 15170 */;
+import useYouBarTotalHeight2 from "useYouBarTotalHeight" /* 15179 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7134 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 16262 */;
-import YouBarConstants from "YouBarConstants" /* 14915 */;
-import createStyles from "createStyles" /* 4896 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6082 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 16522 */;
+import YouBarConstants from "YouBarConstants" /* 15177 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const SortedGuildStore = SortedGuildStore2;
-let dependencyMap, fastList;
+let dependencyMap;
 
 let GUILD_LIST_WIDTH;
 let c10;
@@ -149,7 +149,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               ({ section, item: item2 } = tmp4);
             }
             let type = tmp4.type;
-            if (tmp41(6576).FastListItemTypes.SECTION === type) {
+            if (tmp41(6752).FastListItemTypes.SECTION === type) {
               let node = guildsTree.getNode(tmp4.recyclerKey);
               let element = node;
               if (null != node) {
@@ -173,7 +173,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               }
               continue;
             } else {
-              if (tmp41(6576).FastListItemTypes.ITEM === type) {
+              if (tmp41(6752).FastListItemTypes.ITEM === type) {
                 let node1 = guildsTree.getNode(tmp4.recyclerKey);
                 let tmp12 = node1;
                 if (null != node1) {
@@ -252,10 +252,10 @@ const GuildsNodeType = SortedGuildStore2.GuildsNodeType;
 const jsx = Fragment.jsx;
 let obj = { wrapper: { position: "absolute", top: 0, left: 0, bottom: 0, width: GUILD_LIST_WIDTH } };
 let closure_15 = createStyles.createStyles(obj);
-let closure_17 = { beforeItem: "start", afterItem: "unicodeVersion" };
+let closure_17 = { beforeItem: "Array", afterItem: "Reflect" };
 let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "Array" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUnreadBarWrapperStyles() {
   const obj = react2;
   const cResult = obj.c(10);
   const tmp2 = closure_15();
@@ -308,7 +308,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = top;
   cResult[2] = rect;
   tmp7 = rect;
-}) : (() => {
+}) : (function useUnreadBarWrapperStyles() {
   const tmp = closure_15();
   let closure_0 = tmp;
   const top = useSafeAreaInsetsDefault().top;
@@ -336,7 +336,7 @@ const __initData2 = { code: "function GuildsBarUnreadBarsTsx2(position,lastPosit
 const __initData3 = { code: "function GuildsBarUnreadBarsTsx3(){const{scrollPosValue}=this.__closure;return scrollPosValue.get();}" };
 const __initData4 = { code: "function GuildsBarUnreadBarsTsx4(position,lastPosition){const{runOnJS,debouncedUpdate}=this.__closure;if(position!==lastPosition){runOnJS(debouncedUpdate)();}}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((fastList) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildsBarUnreadBars(fastList) {
   let afterItem;
   let beforeItem;
   let closure_4;
@@ -350,7 +350,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((f
   const cResult = obj.c(22);
   fastList = fastList.fastList;
   let tmp4 = top;
-  top = top(1618)().top;
+  top = top(1630)().top;
   const result = closure_11() / 2;
   dependencyMap = result;
   if (cResult[0] === fastList) {
@@ -373,17 +373,19 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((f
           }
           react = tmp10;
           if (cResult[8] !== tmp10) {
-            const fn2 = function w() {
-              const items = [GuildReadStateStore, SelectedGuildStore, SortedGuildStore];
-              const batchedStoreListener = new get_initialized.BatchedStoreListener(items, closure_4);
-              batchedStoreListener.attach("guild-mention-bars");
-              return () => {
-                batchedStoreListener.detach();
-              };
-            };
+            class E {
+              constructor() {
+                const items = [GuildReadStateStore, SelectedGuildStore, SortedGuildStore];
+                const batchedStoreListener = new get_initialized.BatchedStoreListener(items, closure_4);
+                batchedStoreListener.attach("guild-mention-bars");
+                return () => {
+                  batchedStoreListener.detach();
+                };
+              }
+            }
             let items = [tmp10];
             cResult[8] = tmp10;
-            cResult[9] = fn2;
+            cResult[9] = E;
             class C {
               constructor() {
                 return scrollPosValue.get();
@@ -391,14 +393,23 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((f
             }
             cResult[10] = items;
             tmp13 = items;
-            tmp12 = fn2;
+            tmp12 = E;
           } else {
-            tmp12 = cResult[9];
+            class E {
+              constructor() {
+                const items = [GuildReadStateStore, SelectedGuildStore, SortedGuildStore];
+                const batchedStoreListener = new get_initialized.BatchedStoreListener(items, closure_4);
+                batchedStoreListener.attach("guild-mention-bars");
+                return () => {
+                  batchedStoreListener.detach();
+                };
+              }
+            }
             tmp13 = cResult[10];
           }
           const effect = obj2.useEffect(tmp12, tmp13);
           const scrollPosValue = fastList.scrollPosValue;
-          const tmpResult = tmp(4618);
+          const tmpResult = tmp(4810);
           class C {
             constructor() {
               return scrollPosValue.get();
@@ -408,70 +419,31 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((f
           C.__closure = obj3;
           C.__workletHash = 16367582542434;
           C.__initData = __initData;
-          class B {
-            constructor(arg0, arg1) {
-              if (arg0 !== arg1) {
-                const obj = ReanimatedRexport;
-                obj.runOnJS(closure_4)();
-              }
+          const fn2 = function k(arg0, arg1) {
+            if (arg0 !== arg1) {
+              const obj = ReanimatedRexport;
+              obj.runOnJS(closure_4)();
             }
-          }
+          };
           const useAnimatedReaction = tmpResult.useAnimatedReaction;
-          B.__closure = { runOnJS: tmp(4618).runOnJS, debouncedUpdate: tmp10 };
-          B.__workletHash = 13727289405147;
-          B.__initData = __initData2;
-          const obj4 = { runOnJS: tmp(4618).runOnJS, debouncedUpdate: tmp10 };
-          const animatedReaction = useAnimatedReaction(C, B);
+          fn2.__closure = { runOnJS: tmp(4810).runOnJS, debouncedUpdate: tmp10 };
+          fn2.__workletHash = 13727289405147;
+          fn2.__initData = __initData2;
+          const obj4 = { runOnJS: tmp(4810).runOnJS, debouncedUpdate: tmp10 };
+          const animatedReaction = useAnimatedReaction(C, fn2);
           const tmp20 = closure_20();
           ({ style, paddingStart } = tmp20);
           const paddingEnd = tmp20.paddingEnd;
           if (cResult[11] === fastList) {
-            if (cResult[12] === paddingEnd) {
-              let tmp21;
-              if (cResult[13] === paddingStart) {
-                tmp21 = cResult[14];
+            class E {
+              constructor() {
+                const items = [GuildReadStateStore, SelectedGuildStore, SortedGuildStore];
+                const batchedStoreListener = new get_initialized.BatchedStoreListener(items, closure_4);
+                batchedStoreListener.attach("guild-mention-bars");
+                return () => {
+                  batchedStoreListener.detach();
+                };
               }
-              if (cResult[15] === afterItem) {
-                if (cResult[16] === beforeItem) {
-                  let tmp22;
-                  if (cResult[17] === tmp21) {
-                    tmp22 = cResult[18];
-                  }
-                  if (cResult[19] === style) {
-                    let tmp25;
-                    if (cResult[20] === tmp22) {
-                      tmp25 = cResult[21];
-                    }
-                    return tmp25;
-                  }
-                  class C {
-                    constructor() {
-                      return scrollPosValue.get();
-                    }
-                  }
-                  cResult[19] = style;
-                  cResult[20] = tmp22;
-                  cResult[21] = tmp28;
-                  tmp25 = tmp28;
-                }
-              }
-              class C {
-                constructor() {
-                  return scrollPosValue.get();
-                }
-              }
-              cResult[15] = afterItem;
-              cResult[16] = beforeItem;
-              cResult[17] = tmp21;
-              class B {
-                constructor(arg0, arg1) {
-                  if (arg0 !== arg1) {
-                    const obj = ReanimatedRexport;
-                    obj.runOnJS(closure_4)();
-                  }
-                }
-              }
-              tmp22 = tmp24;
             }
           }
           const fn3 = function x(arg0) {
@@ -484,7 +456,6 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((f
           cResult[12] = paddingEnd;
           cResult[13] = paddingStart;
           cResult[14] = fn3;
-          tmp21 = fn3;
         }
       }
       const tmp11 = tmp4(551)(() => {
@@ -531,7 +502,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((f
   cResult[2] = top;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((fastList) => {
+}) : (function GuildsBarUnreadBars(fastList) {
   let afterItem;
   let beforeItem;
   let c2;
@@ -543,7 +514,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((f
   let memo;
   let paddingStart;
   let paddingEnd;
-  top = top(1618)().top;
+  top = top(1630)().top;
   const result = closure_11() / 2;
   dependencyMap = result;
   let tmp2 = _slicedToArray(memo.useState(() => {
@@ -591,16 +562,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((f
     };
   }, items1);
   const scrollPosValue = fastList.scrollPosValue;
-  let obj = fastList(4618);
-  class M {
+  let obj = fastList(4810);
+  class B {
     constructor() {
       return scrollPosValue.get();
     }
   }
-  M.__closure = { scrollPosValue };
-  M.__workletHash = 263168135840;
-  M.__initData = __initData3;
-  class O {
+  B.__closure = { scrollPosValue };
+  B.__workletHash = 263168135840;
+  B.__initData = __initData3;
+  class T {
     constructor(arg0, arg1) {
       if (arg0 !== arg1) {
         const obj = ReanimatedRexport;
@@ -608,11 +579,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((f
       }
     }
   }
-  O.__closure = { runOnJS: fastList(4618).runOnJS, debouncedUpdate: memo };
-  O.__workletHash = 3399641848221;
-  O.__initData = __initData4;
-  ({ runOnJS: fastList(4618).runOnJS, debouncedUpdate: memo });
-  const animatedReaction = obj.useAnimatedReaction(M, O);
+  T.__closure = { runOnJS: fastList(4810).runOnJS, debouncedUpdate: memo };
+  T.__workletHash = 3399641848221;
+  T.__initData = __initData4;
+  ({ runOnJS: fastList(4810).runOnJS, debouncedUpdate: memo });
+  const animatedReaction = obj.useAnimatedReaction(B, T);
   const tmp7 = closure_20();
   paddingStart = tmp7.paddingStart;
   paddingEnd = tmp7.paddingEnd;

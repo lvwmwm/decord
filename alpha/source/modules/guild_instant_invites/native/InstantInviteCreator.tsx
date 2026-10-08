@@ -1,18 +1,18 @@
-// Module ID: 10692
-// Function ID: 10693
+// Module ID: 10280
+// Function ID: 10281
 // Name: InstantInviteCreator
-// Dependencies: [19, 17, 21, 4896, 558, 576, 1188, 10693, 5600, 587, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 1200, 10281, 5373, 587, 2]
 
-// Module 10692 (InstantInviteCreator)
+// Module 10280 (InstantInviteCreator)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import Stack_Stack from "Stack/Stack" /* 5600 */;
-import DetailedGuildIdentityUserRow from "DetailedGuildIdentityUserRow" /* 10693 */;
+import native from "native" /* 1200 */;
+import Stack_Stack from "Stack/Stack" /* 5373 */;
+import DetailedGuildIdentityUserRow from "DetailedGuildIdentityUserRow" /* 10281 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ identity: { flex: 1 } });
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInviteCreator(arg0) {
   let guildId;
   let items;
   let user;
@@ -40,7 +40,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
       }
       if (cResult[3] !== tmp6) {
         const obj2 = { source: tmp6, size: native.AvatarSizes.SMALL };
-        const Avatar = tmp(1188).Avatar;
+        const Avatar = tmp(1200).Avatar;
         const tmp10 = React3(Avatar, obj2);
         cResult[3] = tmp6;
         cResult[4] = tmp10;
@@ -66,7 +66,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
             tmp5 = tmp18;
           }
           const obj3 = { direction: "horizontal", align: "center", spacing: nativeDefault.space.PX_8, children: items };
-          const Stack = tmp(5600).Stack;
+          const Stack = tmp(5373).Stack;
           items = [tmp8, tmp14];
           const tmp21 = hasOwnProperty(Stack, obj3);
           cResult[11] = tmp8;
@@ -95,7 +95,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     tmp6 = avatarSource;
   }
   return tmp5;
-}) : ((arg0) => {
+}) : (function InstantInviteCreator(arg0) {
   let guildId;
   let items;
   let obj4;

@@ -1,24 +1,24 @@
-// Module ID: 9430
-// Function ID: 9431
+// Module ID: 9094
+// Function ID: 9095
 // Name: useOpenProfileSettings
-// Dependencies: [19, 1377, 9431, 1085, 1095, 7842, 558, 576, 9432, 9433, 6895, 2]
+// Dependencies: [19, 1389, 9095, 1085, 1095, 8260, 558, 576, 9096, 9097, 7084, 2]
 
-// Module 9430 (useOpenProfileSettings)
+// Module 9094 (useOpenProfileSettings)
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import openUserSettings from "openUserSettings" /* 6895 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9433 */;
-import UserStore from "UserStore" /* 1377 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9431 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7842 */;
+import openUserSettings from "openUserSettings" /* 7084 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9097 */;
+import UserStore from "UserStore" /* 1389 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9095 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8260 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const useCallback = react.useCallback;
 const UserSettingsSections = Constants.UserSettingsSections;
 let closure_5 = UserSettingsConstants.ProfileCustomizationSubsection;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenProfileSettings(arg0) {
   let guild;
   let scrollPosition;
   let tmp4;
@@ -76,7 +76,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = scrollPosition;
   cResult[6] = fn;
   tmp6 = fn;
-}) : (() => {
+}) : (function useOpenProfileSettings() {
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};

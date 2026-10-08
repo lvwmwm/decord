@@ -1,16 +1,16 @@
-// Module ID: 11320
-// Function ID: 11321
+// Module ID: 11573
+// Function ID: 11574
 // Name: ForwardingAnalyticsUtils
-// Dependencies: [19, 2051, 1085, 1252, 5076, 558, 576, 12, 2]
+// Dependencies: [19, 2063, 1085, 1264, 5105, 558, 576, 12, 2]
 // Exports: trackForwardCancel, trackForwardCopyLink, trackForwardSent, trackForwardStart
 
-// Module 11320 (ForwardingAnalyticsUtils)
+// Module 11573 (ForwardingAnalyticsUtils)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5076 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5105 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let tmp;
 const _mod12 = tmp(12);
 const AnalyticEvents = Constants.AnalyticEvents;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackForwardAddRecipientOnce() {
   let first;
   let obj = react2;
   const cResult = obj.c(1);
@@ -35,16 +35,18 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => react.useMemo(() => {
-  let obj = _mod12;
-  return obj.once((channel_id, message_id, has_query) => {
-    const obj = closure_1_1(closure_1_2[3]);
-    const obj2 = { channel_id, message_id, has_query };
-    obj.track(constants.FORWARD_ADD_RECIPIENT, obj2);
-  });
-}, []));
+}) : (function useTrackForwardAddRecipientOnce() {
+  return react.useMemo(() => {
+    let obj = _mod12;
+    return obj.once((channel_id, message_id, has_query) => {
+      const obj = closure_1_1(closure_1_2[3]);
+      const obj2 = { channel_id, message_id, has_query };
+      obj.track(constants.FORWARD_ADD_RECIPIENT, obj2);
+    });
+  }, []);
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackForwardEditSearchOnce() {
   let first;
   let obj = react2;
   const cResult = obj.c(1);
@@ -61,16 +63,18 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => react.useMemo(() => {
-  let obj = _mod12;
-  return obj.once((channel_id, message_id) => {
-    const obj = closure_1_1(closure_1_2[3]);
-    const obj2 = { channel_id, message_id };
-    obj.track(constants.FORWARD_EDIT_SEARCH, obj2);
-  });
-}, []));
+}) : (function useTrackForwardEditSearchOnce() {
+  return react.useMemo(() => {
+    let obj = _mod12;
+    return obj.once((channel_id, message_id) => {
+      const obj = closure_1_1(closure_1_2[3]);
+      const obj2 = { channel_id, message_id };
+      obj.track(constants.FORWARD_EDIT_SEARCH, obj2);
+    });
+  }, []);
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackForwardEditContextMessageOnce() {
   let first;
   let obj = react2;
   const cResult = obj.c(1);
@@ -87,14 +91,16 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => react.useMemo(() => {
-  let obj = _mod12;
-  return obj.once((channel_id, message_id) => {
-    const obj = closure_1_1(closure_1_2[3]);
-    const obj2 = { channel_id, message_id };
-    obj.track(constants.FORWARD_EDIT_CONTEXT_MESSAGE, obj2);
-  });
-}, []));
+}) : (function useTrackForwardEditContextMessageOnce() {
+  return react.useMemo(() => {
+    let obj = _mod12;
+    return obj.once((channel_id, message_id) => {
+      const obj = closure_1_1(closure_1_2[3]);
+      const obj2 = { channel_id, message_id };
+      obj.track(constants.FORWARD_EDIT_CONTEXT_MESSAGE, obj2);
+    });
+  }, []);
+});
 const result = size.fileFinishedImporting("modules/forwarding/ForwardingAnalyticsUtils.tsx");
 
 export const trackForwardStart = function trackForwardStart(channel_id, id, source) {
@@ -129,7 +135,7 @@ export const trackForwardSent = function trackForwardSent(arg0) {
   if ("message-shortcut" === source) {
     const channel = ChannelStore.getChannel(channelId);
     const obj2 = { action: "forward", original_message_id: messageId };
-    const track = tmp(1252).track;
+    const track = tmp(1264).track;
     const MESSAGE_SHORTCUT_ACTION_SENT = tmp3.MESSAGE_SHORTCUT_ACTION_SENT;
     AnalyticsUtilsDefault;
     let guild_id;
@@ -140,7 +146,7 @@ export const trackForwardSent = function trackForwardSent(arg0) {
       guild_id = channel.guild_id;
     }
     const merged = Object.assign(collectGuildAnalyticsMetadata(guild_id));
-    const tmp14Result = tmp14(5076);
+    const tmp14Result = tmp14(5105);
     const merged1 = Object.assign(tmp14Result.collectChannelAnalyticsMetadata(channel));
     track(MESSAGE_SHORTCUT_ACTION_SENT, obj2);
   }

@@ -1,19 +1,17 @@
-// Module ID: 11310
-// Function ID: 11311
+// Module ID: 12803
+// Function ID: 12804
 // Name: LongPressMessageChatItemPreview
-// Dependencies: [21, 4896, 587, 7602, 558, 576, 8336, 2]
+// Dependencies: [21, 5090, 587, 7719, 558, 576, 9308, 2]
 
-// Module 11310 (LongPressMessageChatItemPreview)
+// Module 12803 (LongPressMessageChatItemPreview)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import RowGeneratorDefault from "RowGenerator" /* 7602 */;
-import ChatItemDefault from "ChatItem" /* 8336 */;
-import createStyles from "createStyles" /* 4896 */;
+import RowGeneratorDefault from "RowGenerator" /* 7719 */;
+import ChatItemDefault from "ChatItem" /* 9308 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let message;
 
 let obj2;
 const jsx = Fragment.jsx;
@@ -22,7 +20,7 @@ obj2 = { maxHeight: 2 * nativeDefault.space.PX_80 };
 let closure_4 = createStyles.createStyles(obj);
 const tmp2 = new RowGeneratorDefault();
 const rowGenerator = tmp2;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function LongPressMessageChatItemPreview(message) {
   const obj = react;
   const cResult = obj.c(3);
   message = message.message;
@@ -40,7 +38,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   cResult[1] = tmp3.chatItem.maxHeight;
   cResult[2] = tmp6;
   tmp4 = tmp6;
-}) : ((message) => {
+}) : (function LongPressMessageChatItemPreview(message) {
   message = message.message;
   ChatItemDefault;
   return <tmp2 rowGenerator={rowGenerator} message={message} maxHeight={closure_4().chatItem.maxHeight} backgroundColor={nativeDefault.colors.MOBILE_ALERT_BACKGROUND_DEFAULT} pointerEvents="none" />;

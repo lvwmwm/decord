@@ -1,24 +1,24 @@
-// Module ID: 17003
-// Function ID: 17004
+// Module ID: 17284
+// Function ID: 17285
 // Name: useShouldShowExpiringTrialOfferCard
-// Dependencies: [13549, 1085, 1379, 1102, 558, 576, 573, 6969, 6961, 2]
+// Dependencies: [13846, 1085, 1391, 1102, 558, 576, 573, 7158, 7150, 2]
 
-// Module 17003 (useShouldShowExpiringTrialOfferCard)
+// Module 17284 (useShouldShowExpiringTrialOfferCard)
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import useCountdownDefault from "useCountdown" /* 6961 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 6969 */;
-import NoticeStore from "NoticeStore" /* 13549 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import useCountdownDefault from "useCountdown" /* 7150 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7158 */;
+import NoticeStore from "NoticeStore" /* 13846 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const NoticeTypes = Constants.NoticeTypes;
 const PremiumSubscriptionSKUs = PremiumConstants.PremiumSubscriptionSKUs;
 let closure_6 = 10 * DurationsDefault.Millis.SECOND;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowExpiringTrialOfferCard() {
   let noticeType;
   let tmp4;
   let tmp5;
@@ -101,7 +101,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[6] = premiumTrialOffer;
   cResult[7] = tmp13;
   tmp12 = tmp13;
-}) : (() => {
+}) : (function useShouldShowExpiringTrialOfferCard() {
   let noticeType;
   const items = [NoticeStore];
   const obj = useStateFromStores;

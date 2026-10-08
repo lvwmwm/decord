@@ -1,21 +1,21 @@
-// Module ID: 9840
-// Function ID: 9841
+// Module ID: 10403
+// Function ID: 10404
 // Name: useHelpLineVisibility
-// Dependencies: [19, 2116, 7061, 558, 576, 8329, 573, 9841, 2]
+// Dependencies: [19, 2128, 7247, 558, 576, 7712, 573, 10318, 2]
 
-// Module 9840 (useHelpLineVisibility)
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8329 */;
-import MessageRequestActionCreators from "MessageRequestActionCreators" /* 9841 */;
+// Module 10403 (useHelpLineVisibility)
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7712 */;
+import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10318 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7061 */;
+import LocaleStore from "LocaleStore" /* 2128 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7247 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const set = new Set(["US"]);
 const set1 = new Set(["en-US", "es-ES"]);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowHelplineLink() {
   let locale;
   let stateFromStores;
   let tmp10;
@@ -30,7 +30,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = useIsInAdultAgeGroupDefault();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [FamilyCenterStore];
-    const fn = function c() {
+    const fn = function h() {
       return userCountry.getUserCountry();
     };
     cResult[0] = items;
@@ -90,7 +90,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[9] = stateFromStores1;
   cResult[10] = hasItem;
   tmp16 = hasItem;
-}) : (() => {
+}) : (function useShouldShowHelplineLink() {
   let locale;
   let stateFromStores;
   let userCountry;
@@ -113,11 +113,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 let closure_8 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowThroughlineLink() {
   const tmp = useIsInAdultAgeGroupDefault();
   const tmp2 = !tmp && !closure_8();
   return tmp2;
-}) : (() => {
+}) : (function useShouldShowThroughlineLink() {
   const tmp = useIsInAdultAgeGroupDefault();
   const tmp2 = !tmp && !closure_8();
   return tmp2;

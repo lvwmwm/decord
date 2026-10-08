@@ -1,28 +1,28 @@
-// Module ID: 6766
-// Function ID: 6767
+// Module ID: 6942
+// Function ID: 6943
 // Name: CreatorMonetizationRestrictionsHooks
-// Dependencies: [19, 4508, 2074, 1085, 558, 576, 6767, 6768, 504, 4507, 2]
+// Dependencies: [19, 4700, 2086, 1085, 558, 576, 6943, 6944, 504, 4699, 2]
 
-// Module 6766 (CreatorMonetizationRestrictionsHooks)
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4508 */;
-import useUnmountAbortSignalDefault from "useUnmountAbortSignal" /* 6767 */;
-import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 6768 */;
+// Module 6942 (CreatorMonetizationRestrictionsHooks)
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4700 */;
+import useUnmountAbortSignalDefault from "useUnmountAbortSignal" /* 6943 */;
+import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 6944 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const GuildRoleSubscriptionsStore = GuildRoleSubscriptionsStore2;
-let _require, id, importDefault;
+let _require, importDefault;
 
 let c9;
 let metroImportAll;
 const FetchState = GuildRoleSubscriptionsStore2.FetchState;
 ({ EMPTY_STRING_SNOWFLAKE_ID: metroImportAll, GuildFeatures: c9 } = Constants);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreatorMonetizationRestrictions(id) {
   let signal;
   let tmp20;
   _require = id;
@@ -86,7 +86,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
       tmp16 = cResult[7];
     }
     if (cResult[8] !== id) {
-      class O {
+      class M {
         constructor() {
           let tmp2 = id;
           const getMonetizationRestrictionsFetchState = GuildRoleSubscriptionsStore.getMonetizationRestrictionsFetchState;
@@ -97,10 +97,10 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
         }
       }
       cResult[8] = id;
-      cResult[9] = O;
-      tmp18 = O;
+      cResult[9] = M;
+      tmp18 = M;
     } else {
-      class O {
+      class M {
         constructor() {
           let tmp2 = id;
           const getMonetizationRestrictionsFetchState = GuildRoleSubscriptionsStore.getMonetizationRestrictionsFetchState;
@@ -114,7 +114,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     const tmpResult2 = tmp(504);
     const stateFromStores = tmpResult2.useStateFromStores(tmp16, tmp18);
     if (cResult[10] === stateFromStoresArray) {
-      class O {
+      class M {
         constructor() {
           let tmp2 = id;
           const getMonetizationRestrictionsFetchState = GuildRoleSubscriptionsStore.getMonetizationRestrictionsFetchState;
@@ -154,7 +154,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   cResult[3] = items2;
   tmp6 = items2;
   tmp5 = fn;
-}) : ((id) => {
+}) : (function useCreatorMonetizationRestrictions(id) {
   let items1;
   let items2;
   let obj2;
@@ -213,7 +213,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   return obj;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldHideGuildPurchaseEntryPoints(arg0) {
   let closure_0;
   let first;
   let restrictions;
@@ -334,7 +334,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[9] = restrictionsLoading;
   cResult[10] = tmp21;
   tmp20 = tmp21;
-}) : ((arg0) => {
+}) : (function useShouldHideGuildPurchaseEntryPoints(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildStore];
@@ -372,7 +372,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       result = flag;
     } else {
-      const tmpResult = tmp(4507);
+      const tmpResult = tmp(4699);
       result = tmpResult.isRestrictedFromShowingGuildPurchaseEntryPoints(restrictions);
     }
     shouldHideGuildPurchaseEntryPoints = result;
@@ -380,7 +380,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return { shouldHideGuildPurchaseEntryPoints, restrictionsLoading };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldRestrictUpdatingCreatorMonetizationSettings(arg0) {
   let closure_0;
   let first;
   let restrictions;
@@ -489,7 +489,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = restrictionsLoading;
   cResult[7] = result;
   tmp12 = result;
-}) : ((arg0) => {
+}) : (function useShouldRestrictUpdatingCreatorMonetizationSettings(arg0) {
   let closure_0;
   let result;
   _require = arg0;
@@ -511,7 +511,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     result = flag;
   } else {
-    const tmpResult = tmp(4507);
+    const tmpResult = tmp(4699);
     result = tmpResult.isRestrictedFromUpdatingCreatorMonetizationSettings(tmp5);
   }
   let hasItem;
@@ -522,7 +522,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return { shouldRestrictUpdatingCreatorMonetizationSettings: result || hasItem, allowSelfRemoveMonetization: !result, restrictionsLoading };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsMonetizationReapplicationDisabled(arg0) {
   let closure_0;
   let first;
   let restrictions;
@@ -578,19 +578,19 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = restrictionsLoading;
   cResult[8] = obj2;
   tmp11 = obj2;
-}) : ((arg0) => {
+}) : (function useIsMonetizationReapplicationDisabled(arg0) {
   let closure_0;
   let obj3;
   let restrictions;
   let restrictionsLoading;
-  const f93262 = () => GuildStore.getGuild(closure_0);
+  const f94454 = () => GuildStore.getGuild(closure_0);
   _require = arg0;
   const items = [GuildStore];
   const items1 = [arg0];
   const obj = require("get initialized");
   const obj2 = { isMonetizationReapplicationDisabled: obj3.isRestrictedFromMonetizationReapplication(restrictions), restrictionsLoading };
-  ({ restrictions, restrictionsLoading } = closure_10(obj.useStateFromStores(items, f93262, items1)));
-  closure_10(obj.useStateFromStores(items, f93262, items1));
+  ({ restrictions, restrictionsLoading } = closure_10(obj.useStateFromStores(items, f94454, items1)));
+  closure_10(obj.useStateFromStores(items, f94454, items1));
   obj3 = require("CreatorMonetizationRestrictionsUtils");
   return obj2;
 });

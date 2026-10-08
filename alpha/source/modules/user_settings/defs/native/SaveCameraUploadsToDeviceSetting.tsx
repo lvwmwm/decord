@@ -1,29 +1,29 @@
-// Module ID: 15303
-// Function ID: 15304
+// Module ID: 15565
+// Function ID: 15566
 // Name: SaveCameraUploadsToDeviceSetting
-// Dependencies: [1195, 7645, 558, 576, 504, 8091, 11142, 1126, 2]
+// Dependencies: [1207, 7966, 558, 576, 504, 5258, 11262, 1126, 2]
 
-// Module 15303 (SaveCameraUploadsToDeviceSetting)
+// Module 15565 (SaveCameraUploadsToDeviceSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8091 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5258 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSaveCameraUploadsToDeviceValue() {
   let tmp4;
   let tmp5;
   const obj = react;
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UnsyncedUserSettingsStore];
-    const fn = function n() {
+    const fn = function o() {
       return UnsyncedUserSettingsStore.saveCameraUploadsToDevice;
     };
     cResult[0] = items;
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useSaveCameraUploadsToDeviceValue() {
   const items = [UnsyncedUserSettingsStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => UnsyncedUserSettingsStore.saveCameraUploadsToDevice);

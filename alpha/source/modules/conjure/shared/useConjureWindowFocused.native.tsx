@@ -1,19 +1,19 @@
-// Module ID: 16183
-// Function ID: 16184
+// Module ID: 16443
+// Function ID: 16444
 // Name: useConjureWindowFocused
-// Dependencies: [1986, 1085, 558, 576, 504, 2]
+// Dependencies: [1998, 1085, 558, 576, 504, 2]
 
-// Module 16183 (useConjureWindowFocused)
+// Module 16443 (useConjureWindowFocused)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import AppStateStore from "AppStateStore" /* 1986 */;
+import AppStateStore from "AppStateStore" /* 1998 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 const AppStates = Constants.AppStates;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureWindowFocused() {
   let state;
   let tmp4;
   let tmp5;
@@ -21,7 +21,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AppStateStore];
-    const fn = function s() {
+    const fn = function u() {
       return state.getState() === constants.ACTIVE;
     };
     cResult[0] = items;
@@ -33,7 +33,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useConjureWindowFocused() {
   let state;
   const items = [AppStateStore];
   const obj = get_initialized;

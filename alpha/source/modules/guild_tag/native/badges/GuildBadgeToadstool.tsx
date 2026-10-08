@@ -1,12 +1,12 @@
-// Module ID: 13752
-// Function ID: 13753
+// Module ID: 13974
+// Function ID: 13975
 // Name: GuildBadgeToadstool
-// Dependencies: [109, 19, 21, 558, 576, 13748, 8169, 2]
+// Dependencies: [109, 19, 21, 558, 576, 13970, 7550, 2]
 
-// Module 13752 (GuildBadgeToadstool)
+// Module 13974 (GuildBadgeToadstool)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 8169 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 13748 */;
+import inlineStyles from "inlineStyles" /* 7550 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 13970 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -23,7 +23,7 @@ const primaryTintLuminances = [0.12, 0.25];
 let items = [{ base: 5, tint: 1 }, { base: 4, tint: 1 }];
 const secondaryTintLuminances = [0.4, 0.8];
 const items1 = [{ base: 5, tint: 1 }, { base: 4, tint: 1 }];
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgeToadstool(arg0) {
   let height;
   let primaryColorsTransformed;
   let primaryTintColor;
@@ -263,7 +263,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj10 = { width: num7, height: num8, viewBox: "0 0 16 16", fill: "none", children: items };
-    const Svg = tmp(8169).Svg;
+    const Svg = tmp(7550).Svg;
     const merged = Object.assign(tmp5);
     items = [tmp14, tmp17, tmp21, tmp22, tmp23, tmp24, tmp30, tmp33, tmp36, tmp37, tmp41, tmp44, tmp47, tmp50, tmp53, tmp56, tmp59, tmp60, tmp61, tmp62, tmp63];
     const tmp75 = hasOwnProperty(Svg, obj10);
@@ -288,7 +288,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = tmp6;
   cResult[8] = transformedBadgeColors;
   tmp12 = transformedBadgeColors;
-}) : ((width) => {
+}) : (function GuildBadgeToadstool(width) {
   let primaryColorsTransformed;
   let primaryTintColor;
   let secondaryColorsTransformed;

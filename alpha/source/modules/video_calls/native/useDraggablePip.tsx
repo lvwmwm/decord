@@ -1,16 +1,16 @@
-// Module ID: 9109
-// Function ID: 9110
+// Module ID: 10683
+// Function ID: 10684
 // Name: useDraggablePip
-// Dependencies: [32, 9086, 9093, 558, 576, 4618, 4897, 1188, 9110, 6147, 5604, 2]
+// Dependencies: [32, 10333, 10670, 558, 576, 4810, 5091, 1200, 9512, 6326, 5374, 2]
 
-// Module 9109 (useDraggablePip)
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
-import spring from "spring" /* 5604 */;
-import ChannelCallStore from "ChannelCallStore" /* 9086 */;
-import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 9110 */;
+// Module 10683 (useDraggablePip)
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
+import spring from "spring" /* 5374 */;
+import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 9512 */;
+import ChannelCallStore from "ChannelCallStore" /* 10333 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import Constants from "Constants" /* 9093 */;
+import Constants from "Constants" /* 10670 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let set, set2;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const native = tmp(1188);
+const native = tmp(1200);
 const useChannelCallStore = ChannelCallStore.useChannelCallStore;
 ({ PIP_FOCUS_SCALE: closure_4, PIP_GESTURE_ACTIVE_OFFSET: hasOwnProperty } = Constants);
 let closure_6 = { mass: 1, stiffness: 250, overshootClamping: true, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001, damping: 20 };
@@ -59,11 +59,12 @@ function clamp(arg0, arg1, arg2) {
 clamp.__closure = {};
 clamp.__workletHash = 6958770079339;
 clamp.__initData = { code: "function clamp_useDraggablePipTsx31(value,min,max){return Math.min(Math.max(value,min),max);}" };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((width) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDraggablePip(width) {
   let closure_7;
-  let first;
   let height;
+  let obj8;
   let tmp19;
+  let tmp4;
   let tmp = width;
   let tmp2 = height;
   let obj = width(height[4]);
@@ -76,16 +77,22 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((width) => {
   const onMoved = width.onMoved;
   const snapToCorners = width.snapToCorners;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function b(pipFocus) {
-      return pipFocus.pipFocus;
-    };
+    class W {
+      constructor(pipFocus) {
+        return pipFocus.pipFocus;
+      }
+    }
     let num = 0;
-    cResult[0] = fn;
-    first = fn;
+    cResult[0] = W;
+    tmp4 = W;
   } else {
-    first = cResult[0];
+    class W {
+      constructor(pipFocus) {
+        return pipFocus.pipFocus;
+      }
+    }
   }
-  const tmp5 = containerHeight(first);
+  const tmp5 = containerHeight(tmp4);
   __initData = tmp5;
   const tmpResult = tmp(tmp2[5]);
   class C {
@@ -145,14 +152,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((width) => {
   I.__workletHash = 7163944260205;
   I.__initData = derivedValue3;
   const derivedValue4 = tmpResult18.useDerivedValue(I);
-  const fn2 = function q() {
+  const fn = function q() {
     return containerWidth;
   };
-  fn2.__closure = { containerWidth };
-  fn2.__workletHash = 13449836478609;
-  fn2.__initData = derivedValue4;
+  fn.__closure = { containerWidth };
+  fn.__workletHash = 13449836478609;
+  fn.__initData = derivedValue4;
   const tmpResult19 = tmp(tmp2[5]);
-  const derivedValue5 = tmpResult19.useDerivedValue(fn2);
+  const derivedValue5 = tmpResult19.useDerivedValue(fn);
   const tmpResult20 = tmp(tmp2[5]);
   class J {
     constructor() {
@@ -218,14 +225,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((width) => {
   R.__workletHash = 10272898536596;
   R.__initData = sharedValue;
   const animatedReaction = tmpResult26.useAnimatedReaction(L, R);
-  const fn3 = function z() {
+  const fn2 = function z() {
     const items = [containerHeight - derivedValue4.get(), sharedValue3.get()];
     return items;
   };
-  fn3.__closure = { containerHeight, scaledHeightDv: derivedValue4, yPosition: sharedValue3 };
-  fn3.__workletHash = 11475249153313;
-  fn3.__initData = sharedValue1;
-  const fn4 = function j(arg0, arg1) {
+  fn2.__closure = { containerHeight, scaledHeightDv: derivedValue4, yPosition: sharedValue3 };
+  fn2.__workletHash = 11475249153313;
+  fn2.__initData = sharedValue1;
+  const fn3 = function j(arg0, arg1) {
     let first;
     const cheapWorkletArrayShallowEqual = cheapWorkletShallowEqual.cheapWorkletArrayShallowEqual;
     cheapWorkletShallowEqual;
@@ -255,10 +262,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((width) => {
   };
   const tmpResult27 = tmp(tmp2[5]);
   let obj4 = { cheapWorkletArrayShallowEqual: tmp(tmp2[8]).cheapWorkletArrayShallowEqual, clamp, yPosition: sharedValue3, yDestination: sharedValue2 };
-  fn4.__closure = obj4;
-  fn4.__workletHash = 6281496935578;
-  fn4.__initData = sharedValue2;
-  const animatedReaction1 = tmpResult27.useAnimatedReaction(fn3, fn4);
+  fn3.__closure = obj4;
+  fn3.__workletHash = 6281496935578;
+  fn3.__initData = sharedValue2;
+  const animatedReaction1 = tmpResult27.useAnimatedReaction(fn2, fn3);
   const Gesture = tmp(tmp2[9]).Gesture;
   let items = [-onMoved, onMoved];
   const items1 = [-onMoved, onMoved];
@@ -388,19 +395,27 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((width) => {
   ce.__initData = sharedValue3;
   const onEndResult = onUpdateResult.onEnd(ce);
   if (cResult[1] !== onPress) {
-    const useDraggablePipTsx14 = /* worklet (recovered source) */ function useDraggablePipTsx14(){const{onPress,runOnJS}=this.__closure;if(onPress!=null){runOnJS(onPress)();}};
-    useDraggablePipTsx14.__closure = { onPress, runOnJS: tmp(tmp2[5]).runOnJS };
+    class W {
+      constructor(pipFocus) {
+        return pipFocus.pipFocus;
+      }
+    }
+    tmp20.__closure = { onPress, runOnJS: tmp(tmp2[5]).runOnJS };
     let num2 = 4692146362189;
-    useDraggablePipTsx14.__workletHash = 4692146362189;
-    useDraggablePipTsx14.__initData = __initData2;
+    tmp20.__workletHash = 4692146362189;
+    tmp20.__initData = __initData2;
     let num3 = 1;
     cResult[1] = onPress;
     let num4 = 2;
-    cResult[2] = useDraggablePipTsx14;
-    tmp19 = useDraggablePipTsx14;
+    cResult[2] = tmp20;
     const obj7 = { onPress, runOnJS: tmp(tmp2[5]).runOnJS };
+    tmp19 = tmp20;
   } else {
-    tmp19 = cResult[2];
+    class W {
+      constructor(pipFocus) {
+        return pipFocus.pipFocus;
+      }
+    }
   }
   const Gesture2 = tmp(tmp2[9]).Gesture;
   const TapResult = Gesture2.Tap();
@@ -432,18 +447,18 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((width) => {
   const tmpResult28 = tmp(tmp2[5]);
   const animatedStyle = tmpResult28.useAnimatedStyle(he);
   if (cResult[3] === animatedStyle) {
-    let tmp24;
-    if (cResult[4] === RaceResult) {
-      tmp24 = cResult[5];
+    class W {
+      constructor(pipFocus) {
+        return pipFocus.pipFocus;
+      }
     }
-    return tmp24;
+    return obj8;
   }
-  const obj8 = { gesture: RaceResult, draggableGridItemStyles: animatedStyle };
+  obj8 = { gesture: RaceResult, draggableGridItemStyles: animatedStyle };
   cResult[3] = animatedStyle;
   cResult[4] = RaceResult;
   cResult[5] = obj8;
-  tmp24 = obj8;
-}) : ((width) => {
+}) : (function useDraggablePip(width) {
   let Gesture3;
   let ce;
   let obj29;
@@ -455,6 +470,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((width) => {
   const onPress = width.onPress;
   const onMoved = width.onMoved;
   const snapToCorners = width.snapToCorners;
+  let derivedValue1;
   let derivedValue2;
   let derivedValue3;
   let derivedValue4;
@@ -484,33 +500,33 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((width) => {
   fn.__initData = __initData4;
   const derivedValue = obj.useDerivedValue(fn);
   let obj3 = width(height[5]);
-  const fn2 = function w() {
-    return width;
-  };
-  fn2.__closure = { width };
-  fn2.__workletHash = 4121878739489;
-  fn2.__initData = __initData5;
-  const derivedValue1 = obj3.useDerivedValue(fn2);
-  let obj4 = width(height[5]);
-  class S {
+  class P {
     constructor() {
-      return height;
+      return width;
     }
   }
-  S.__closure = { height };
-  S.__workletHash = 15220665499310;
-  S.__initData = __initData6;
-  derivedValue2 = obj4.useDerivedValue(S);
+  P.__closure = { width };
+  P.__workletHash = 4121878739489;
+  P.__initData = __initData5;
+  derivedValue1 = obj3.useDerivedValue(P);
+  let obj4 = width(height[5]);
+  const fn2 = function w() {
+    return height;
+  };
+  fn2.__closure = { height };
+  fn2.__workletHash = 15220665499310;
+  fn2.__initData = __initData6;
+  derivedValue2 = obj4.useDerivedValue(fn2);
   let obj5 = width(height[5]);
-  class P {
+  class S {
     constructor() {
       return derivedValue.get() * width;
     }
   }
-  P.__closure = { pipScale: derivedValue, width };
-  P.__workletHash = 9619351565040;
-  P.__initData = __initData7;
-  derivedValue3 = obj5.useDerivedValue(P);
+  S.__closure = { pipScale: derivedValue, width };
+  S.__workletHash = 9619351565040;
+  S.__initData = __initData7;
+  derivedValue3 = obj5.useDerivedValue(S);
   let obj6 = width(height[5]);
   const fn3 = function y() {
     return derivedValue.get() * height;
@@ -547,16 +563,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((width) => {
   sharedValue3 = obj14.useSharedValue(sharedValue2.get());
   const obj15 = width(height[5]);
   sharedValue4 = obj15.useSharedValue(false);
+  const fn5 = function b() {
+    const items = [containerWidth - derivedValue3.get(), sharedValue1.get()];
+    return items;
+  };
+  fn5.__closure = { containerWidth, scaledWidthDv: derivedValue3, xPosition: sharedValue1 };
+  fn5.__workletHash = 9975249486241;
+  fn5.__initData = __initData11;
   const obj16 = width(height[5]);
-  class W {
-    constructor() {
-      const items = [containerWidth - derivedValue3.get(), sharedValue1.get()];
-      return items;
-    }
-  }
-  W.__closure = { containerWidth, scaledWidthDv: derivedValue3, xPosition: sharedValue1 };
-  W.__workletHash = 9975249486241;
-  W.__initData = __initData11;
   class H {
     constructor(arg0, arg1) {
       let first;
@@ -591,7 +605,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((width) => {
   H.__workletHash = 4425290890573;
   H.__initData = __initData12;
   ({ cheapWorkletArrayShallowEqual: width(height[8]).cheapWorkletArrayShallowEqual, clamp, xPosition: sharedValue1, xDestination: sharedValue });
-  const animatedReaction = obj16.useAnimatedReaction(W, H);
+  const animatedReaction = obj16.useAnimatedReaction(fn5, H);
   const obj18 = width(height[5]);
   class R {
     constructor() {

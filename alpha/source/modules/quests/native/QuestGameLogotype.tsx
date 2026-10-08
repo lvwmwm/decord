@@ -1,18 +1,18 @@
-// Module ID: 14969
-// Function ID: 14970
+// Module ID: 15231
+// Function ID: 15232
 // Name: QuestGameLogotype
-// Dependencies: [32, 19, 17, 21, 5605, 4896, 587, 558, 576, 4618, 5604, 8169, 5981, 2]
+// Dependencies: [32, 19, 17, 21, 5378, 5090, 587, 558, 576, 4810, 5374, 7550, 6164, 2]
 
-// Module 14969 (QuestGameLogotype)
+// Module 15231 (QuestGameLogotype)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import spring from "spring" /* 5604 */;
-import springPresets from "springPresets" /* 5605 */;
-import FastImageDefault from "FastImage" /* 5981 */;
+import spring from "spring" /* 5374 */;
+import springPresets from "springPresets" /* 5378 */;
+import FastImageDefault from "FastImage" /* 6164 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let closure_9 = createStyles.createStyles(obj2);
 const __initData = { code: "function QuestGameLogotypeTsx1(){const{withSpring,logoDimensionStyles,SPRING_CONFIG}=this.__closure;return{opacity:withSpring(logoDimensionStyles==null?0:1,SPRING_CONFIG,\"animate-always\")};}" };
 const __initData2 = { code: "function QuestGameLogotypeTsx2(){const{withSpring,logoDimensionStyles,SPRING_CONFIG}=this.__closure;return{opacity:withSpring(logoDimensionStyles==null?0:1,SPRING_CONFIG,'animate-always')};}" };
 let memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((assetUrl) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function QuestGameLogotype(assetUrl) {
   let closure_2;
   let height;
   let items1;
@@ -102,7 +102,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((assetUr
   if (cResult[6] !== assetUrl) {
     class R {
       constructor() {
-        size = Image.getSize(assetUrl, () => { /* body not rendered: F144627 */ });
+        size = Image.getSize(assetUrl, () => { /* body not rendered: F146085 */ });
         return;
       }
     }
@@ -115,15 +115,15 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((assetUr
   } else {
     class R {
       constructor() {
-        size = Image.getSize(assetUrl, () => { /* body not rendered: F144627 */ });
+        size = Image.getSize(assetUrl, () => { /* body not rendered: F146085 */ });
         return;
       }
     }
     tmp12 = cResult[8];
   }
   const effect = obj2.useEffect(tmp11, tmp12);
-  const tmpResult = tmp(4618);
-  class W {
+  const tmpResult = tmp(4810);
+  class H {
     constructor() {
       tmp = closure_0(closure_2[10]);
       num = 1;
@@ -135,15 +135,15 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((assetUr
       return obj;
     }
   }
-  W.__closure = { withSpring: tmp(5604).withSpring, logoDimensionStyles: tmp6, SPRING_CONFIG };
-  W.__workletHash = 13667917221894;
-  W.__initData = __initData;
-  ({ withSpring: tmp(5604).withSpring, logoDimensionStyles: tmp6, SPRING_CONFIG });
-  const animatedStyle = tmpResult.useAnimatedStyle(W);
+  H.__closure = { withSpring: tmp(5374).withSpring, logoDimensionStyles: tmp6, SPRING_CONFIG };
+  H.__workletHash = 13667917221894;
+  H.__initData = __initData;
+  ({ withSpring: tmp(5374).withSpring, logoDimensionStyles: tmp6, SPRING_CONFIG });
+  const animatedStyle = tmpResult.useAnimatedStyle(H);
   if (cResult[9] !== assetUrl) {
     class R {
       constructor() {
-        size = Image.getSize(assetUrl, () => { /* body not rendered: F144627 */ });
+        size = Image.getSize(assetUrl, () => { /* body not rendered: F146085 */ });
         return;
       }
     }
@@ -153,7 +153,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((assetUr
   } else {
     class R {
       constructor() {
-        size = Image.getSize(assetUrl, () => { /* body not rendered: F144627 */ });
+        size = Image.getSize(assetUrl, () => { /* body not rendered: F146085 */ });
         return;
       }
     }
@@ -162,14 +162,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((assetUr
     let tmp18Result;
     class R {
       constructor() {
-        size = Image.getSize(assetUrl, () => { /* body not rendered: F144627 */ });
+        size = Image.getSize(assetUrl, () => { /* body not rendered: F146085 */ });
         return;
       }
     }
     if (cResult[14] === assetUrl) {
       class R {
         constructor() {
-          size = Image.getSize(assetUrl, () => { /* body not rendered: F144627 */ });
+          size = Image.getSize(assetUrl, () => { /* body not rendered: F146085 */ });
           return;
         }
       }
@@ -177,7 +177,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((assetUr
     if (tmp15) {
       class R {
         constructor() {
-          size = Image.getSize(assetUrl, () => { /* body not rendered: F144627 */ });
+          size = Image.getSize(assetUrl, () => { /* body not rendered: F146085 */ });
           return;
         }
       }
@@ -188,7 +188,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((assetUr
     } else {
       class R {
         constructor() {
-          size = Image.getSize(assetUrl, () => { /* body not rendered: F144627 */ });
+          size = Image.getSize(assetUrl, () => { /* body not rendered: F146085 */ });
           return;
         }
       }
@@ -208,7 +208,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((assetUr
   cResult[11] = animatedStyle;
   cResult[12] = style;
   cResult[13] = items3;
-}) : ((assetUrl) => {
+}) : (function QuestGameLogotype(assetUrl) {
   let items3;
   let items4;
   let items5;

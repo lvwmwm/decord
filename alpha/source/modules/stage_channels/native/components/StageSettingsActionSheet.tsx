@@ -1,29 +1,27 @@
-// Module ID: 8311
-// Function ID: 8312
+// Module ID: 7694
+// Function ID: 7695
 // Name: StageSettingsActionSheet
-// Dependencies: [19, 17, 4912, 2051, 4515, 2056, 5578, 1085, 21, 4896, 587, 4860, 558, 576, 504, 2060, 5586, 8103, 6895, 8312, 10075, 8924, 1126, 1188, 9228, 12741, 12742, 12743, 12744, 6708, 2]
+// Dependencies: [19, 17, 6041, 2063, 4707, 2068, 5888, 1085, 21, 5090, 587, 5054, 558, 576, 504, 2072, 5954, 7478, 7084, 7695, 9648, 8555, 1126, 1200, 8536, 13409, 13410, 13411, 13412, 6885, 2]
 
-// Module 8311 (StageSettingsActionSheet)
+// Module 7694 (StageSettingsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import StageChannelPermissions from "StageChannelPermissions" /* 2060 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 5578 */;
-import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 8103 */;
-import ReportModals from "ReportModals" /* 8312 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10075 */;
+import StageChannelPermissions from "StageChannelPermissions" /* 2072 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 5888 */;
+import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 7478 */;
+import ReportModals from "ReportModals" /* 7695 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9648 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4912 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import StageInstanceStore from "StageInstanceStore" /* 2056 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import StageInstanceStore from "StageInstanceStore" /* 2068 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channelId;
 
 let c10;
 let closure_12;
@@ -41,15 +39,15 @@ obj2 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 createStyles = createStyles.createStyles;
 obj3 = { color: nativeDefault.unsafe_rawColors.RED_400 };
 let closure_14 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageSettingsActionSheet(channelId) {
   let Icon;
   let first;
   let obj3;
   let stateFromStores;
   let tmp11;
   let tmp14;
-  let tmp15;
   let tmp16;
+  let tmp17;
   let tmp19;
   let tmp20;
   let tmp22;
@@ -89,76 +87,61 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     tmp9 = cResult[3];
   }
   if (cResult[4] !== stateFromStores) {
-    class R {
-      constructor() {
-        return PermissionStore.can(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, stateFromStores);
-      }
-    }
+    const fn2 = function y() {
+      return PermissionStore.can(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, stateFromStores);
+    };
     cResult[4] = stateFromStores;
-    cResult[5] = R;
-    tmp11 = R;
+    cResult[5] = fn2;
+    tmp11 = fn2;
   } else {
-    class R {
-      constructor() {
-        return PermissionStore.can(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, stateFromStores);
-      }
-    }
+    tmp11 = cResult[5];
   }
   const tmpResult5 = tmp(stateFromStores[14]);
   const stateFromStores1 = tmpResult5.useStateFromStores(tmp9, tmp11);
   const tmpResult6 = tmp(stateFromStores[16]);
   const isStageSpeakingDisabledForCurrentUser = tmpResult6.useIsStageSpeakingDisabledForCurrentUser();
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
-      constructor() {
-        return PermissionStore.can(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, stateFromStores);
-      }
-    }
     const items2 = [ChannelRTCStore];
     cResult[6] = items2;
     tmp14 = items2;
   } else {
-    class R {
-      constructor() {
-        return PermissionStore.can(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, stateFromStores);
-      }
-    }
+    tmp14 = cResult[6];
   }
   if (cResult[7] !== channelId) {
-    class R {
+    class A {
       constructor() {
-        return PermissionStore.can(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, stateFromStores);
+        return ChannelRTCStore.getSelectedParticipant(channelId);
       }
     }
     const items3 = [channelId];
     cResult[7] = channelId;
-    cResult[8] = tmp17;
+    cResult[8] = A;
     cResult[9] = items3;
-    tmp16 = items3;
-    tmp15 = tmp17;
+    tmp17 = items3;
+    tmp16 = A;
   } else {
-    class R {
+    class A {
       constructor() {
-        return PermissionStore.can(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, stateFromStores);
+        return ChannelRTCStore.getSelectedParticipant(channelId);
       }
     }
-    tmp16 = cResult[9];
+    tmp17 = cResult[9];
   }
   const tmpResult7 = tmp(stateFromStores[14]);
-  const stateFromStores2 = tmpResult7.useStateFromStores(tmp14, tmp15, tmp16);
+  const stateFromStores2 = tmpResult7.useStateFromStores(tmp14, tmp16, tmp17);
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
+    class A {
       constructor() {
-        return PermissionStore.can(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, stateFromStores);
+        return ChannelRTCStore.getSelectedParticipant(channelId);
       }
     }
     const items4 = [StageInstanceStore];
     cResult[10] = items4;
     tmp19 = items4;
   } else {
-    class R {
+    class A {
       constructor() {
-        return PermissionStore.can(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, stateFromStores);
+        return ChannelRTCStore.getSelectedParticipant(channelId);
       }
     }
   }
@@ -181,221 +164,211 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const tmpResult8 = tmp(stateFromStores[14]);
   const stateFromStores3 = tmpResult8.useStateFromStores(tmp19, tmp20);
   if (cResult[13] !== stateFromStores) {
-    class D {
+    class V {
       constructor() {
-        return StageInstanceStore.getStageInstanceByChannel(channelId);
+        if (null == stateFromStores) {
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
+        }
       }
     }
     const items5 = [stateFromStores];
     cResult[13] = stateFromStores;
-    cResult[14] = tmp24;
+    cResult[14] = V;
     cResult[15] = items5;
     tmp23 = items5;
-    tmp22 = tmp24;
+    tmp22 = V;
   } else {
-    class D {
+    class V {
       constructor() {
-        return StageInstanceStore.getStageInstanceByChannel(channelId);
+        if (null == stateFromStores) {
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
+        }
       }
     }
     tmp23 = cResult[15];
   }
   const effect = react.useEffect(tmp22, tmp23);
   if (null == stateFromStores) {
-    class D {
+    class V {
       constructor() {
-        return StageInstanceStore.getStageInstanceByChannel(channelId);
+        if (null == stateFromStores) {
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
+        }
       }
     }
   } else {
-    class D {
+    class V {
       constructor() {
-        return StageInstanceStore.getStageInstanceByChannel(channelId);
+        if (null == stateFromStores) {
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
+        }
       }
     }
     const _Symbol = Symbol;
     if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-      class B {
+      class V {
         constructor() {
-          const obj = channelId(stateFromStores[18]);
-          const obj2 = { screen: constants.VOICE };
-          obj.openUserSettings(obj2);
-          const obj3 = onOpenRTCDebugOverlay(stateFromStores[11]);
-          obj3.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
+          if (null == stateFromStores) {
+            const obj = ActionSheetActionCreatorsDefault;
+            obj.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
+          }
         }
       }
-      cResult[18] = B;
+      cResult[18] = tmp27;
     } else {
-      class B {
+      class V {
         constructor() {
-          const obj = channelId(stateFromStores[18]);
-          const obj2 = { screen: constants.VOICE };
-          obj.openUserSettings(obj2);
-          const obj3 = onOpenRTCDebugOverlay(stateFromStores[11]);
-          obj3.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
+          if (null == stateFromStores) {
+            const obj = ActionSheetActionCreatorsDefault;
+            obj.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
+          }
         }
       }
     }
     if (cResult[19] !== stateFromStores) {
       class V {
         constructor() {
-          if (null != stateFromStores) {
-            const obj = ReportModals;
-            const result = obj.showReportModalForStageChannel(tmp);
-            const obj2 = ActionSheetActionCreatorsDefault;
-            obj2.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
+          if (null == stateFromStores) {
+            const obj = ActionSheetActionCreatorsDefault;
+            obj.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
           }
         }
       }
       cResult[19] = stateFromStores;
-      cResult[20] = V;
+      cResult[20] = tmp29;
     } else {
       class V {
         constructor() {
-          if (null != stateFromStores) {
-            const obj = ReportModals;
-            const result = obj.showReportModalForStageChannel(tmp);
-            const obj2 = ActionSheetActionCreatorsDefault;
-            obj2.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
+          if (null == stateFromStores) {
+            const obj = ActionSheetActionCreatorsDefault;
+            obj.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
           }
         }
       }
     }
     if (cResult[21] !== stateFromStores) {
-      class H {
+      class V {
         constructor() {
-          if (null != stateFromStores) {
-            const obj = ChannelSettingsActionCreatorsDefault;
-            obj.setSection(constants.NOTIFICATIONS);
-            const obj2 = ChannelSettingsActionCreatorsDefault;
-            obj2.open(tmp.id);
-            const obj3 = ActionSheetActionCreatorsDefault;
-            obj3.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
+          if (null == stateFromStores) {
+            const obj = ActionSheetActionCreatorsDefault;
+            obj.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
           }
         }
       }
       cResult[21] = stateFromStores;
-      cResult[22] = H;
+      cResult[22] = tmp31;
     } else {
-      class H {
+      class V {
         constructor() {
-          if (null != stateFromStores) {
-            const obj = ChannelSettingsActionCreatorsDefault;
-            obj.setSection(constants.NOTIFICATIONS);
-            const obj2 = ChannelSettingsActionCreatorsDefault;
-            obj2.open(tmp.id);
-            const obj3 = ActionSheetActionCreatorsDefault;
-            obj3.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
+          if (null == stateFromStores) {
+            const obj = ActionSheetActionCreatorsDefault;
+            obj.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
           }
         }
       }
     }
     if (cResult[23] !== onOpenRTCDebugOverlay) {
-      class Y {
+      class V {
         constructor() {
-          if (onOpenRTCDebugOverlay != null) {
-            tmp();
-          }
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
-        }
-      }
-      cResult[23] = onOpenRTCDebugOverlay;
-      cResult[24] = Y;
-    } else {
-      class Y {
-        constructor() {
-          if (onOpenRTCDebugOverlay != null) {
-            tmp();
-          }
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
-        }
-      }
-    }
-    if (cResult[25] === stateFromStores1) {
-      class Y {
-        constructor() {
-          if (onOpenRTCDebugOverlay != null) {
-            tmp();
-          }
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
-        }
-      }
-    }
-    let tmp33Result = null;
-    if (stateFromStores1) {
-      class Y {
-        constructor() {
-          if (onOpenRTCDebugOverlay != null) {
-            tmp();
-          }
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
-        }
-      }
-      if (null == stateFromStores2) {
-        class Y {
-          constructor() {
-            if (onOpenRTCDebugOverlay != null) {
-              tmp();
-            }
+          if (null == stateFromStores) {
             const obj = ActionSheetActionCreatorsDefault;
             obj.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
           }
         }
-        if (!isStageSpeakingDisabledForCurrentUser) {
-          let stringResult;
-          class Y {
-            constructor() {
-              if (onOpenRTCDebugOverlay != null) {
-                tmp();
-              }
+      }
+      cResult[23] = onOpenRTCDebugOverlay;
+      cResult[24] = tmp33;
+    } else {
+      class V {
+        constructor() {
+          if (null == stateFromStores) {
+            const obj = ActionSheetActionCreatorsDefault;
+            obj.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
+          }
+        }
+      }
+    }
+    if (cResult[25] === stateFromStores1) {
+      class V {
+        constructor() {
+          if (null == stateFromStores) {
+            const obj = ActionSheetActionCreatorsDefault;
+            obj.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
+          }
+        }
+      }
+    }
+    let tmp36Result = null;
+    if (stateFromStores1) {
+      class V {
+        constructor() {
+          if (null == stateFromStores) {
+            const obj = ActionSheetActionCreatorsDefault;
+            obj.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
+          }
+        }
+      }
+      if (null == stateFromStores2) {
+        class V {
+          constructor() {
+            if (null == stateFromStores) {
               const obj = ActionSheetActionCreatorsDefault;
               obj.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
             }
           }
-          const FormRow = tmp(tmp2[21]).FormRow;
-          if (null != stateFromStores3) {
-            class Y {
-              constructor() {
-                if (onOpenRTCDebugOverlay != null) {
-                  tmp();
-                }
+        }
+        if (!isStageSpeakingDisabledForCurrentUser) {
+          let stringResult;
+          class V {
+            constructor() {
+              if (null == stateFromStores) {
                 const obj = ActionSheetActionCreatorsDefault;
                 obj.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
+              }
+            }
+          }
+          const FormRow = tmp(tmp2[21]).FormRow;
+          if (null != stateFromStores3) {
+            class V {
+              constructor() {
+                if (null == stateFromStores) {
+                  const obj = ActionSheetActionCreatorsDefault;
+                  obj.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
+                }
               }
             }
             stringResult = obj8.string(tmp(tmp2[22]).t["5BKP4y"]);
           } else {
-            class Y {
+            class V {
               constructor() {
-                if (onOpenRTCDebugOverlay != null) {
-                  tmp();
+                if (null == stateFromStores) {
+                  const obj = ActionSheetActionCreatorsDefault;
+                  obj.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
                 }
-                const obj = ActionSheetActionCreatorsDefault;
-                obj.hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
               }
             }
             stringResult = obj7.string(tmp(tmp2[22]).t.s8mM8A);
           }
-          let obj2 = { label: stringResult, leading: tmp33(Icon, obj3), onPress: tmp26 };
+          let obj2 = { label: stringResult, leading: tmp36(Icon, obj3), onPress: tmp25 };
           obj3 = { source: onOpenRTCDebugOverlay(tmp2[24]), color: tmp4.icon.color };
           Icon = tmp(tmp2[23]).Icon;
-          tmp33Result = tmp33(FormRow, obj2);
+          tmp36Result = tmp36(FormRow, obj2);
         }
       }
     }
     cResult[25] = stateFromStores1;
-    cResult[26] = tmp26;
+    cResult[26] = tmp25;
     cResult[27] = stateFromStores2;
     cResult[28] = isStageSpeakingDisabledForCurrentUser;
     cResult[29] = stateFromStores3;
     cResult[30] = tmp4.icon.color;
-    cResult[31] = tmp33Result;
+    cResult[31] = tmp36Result;
   }
-}) : ((channelId) => {
+}) : (function StageSettingsActionSheet(channelId) {
   let FormLabel;
   let Icon;
   let Icon2;
@@ -463,7 +436,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
           const obj7 = {
             label: stringResult,
             leading: closure_12(Icon, obj8),
-            onPress() {
+            onPress: function handleEditStagePress() {
                       if (null != stateFromStores) {
                         const obj = StageChannelActionCreatorExtras;
                         const result = obj.openStageChannelSettings(tmp);
@@ -482,7 +455,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     const obj9 = {
       label: intl3.string(channelId(stateFromStores[22]).t.dsXapM),
       leading: closure_12(Icon2, obj10),
-      onPress() {
+      onPress: function handleVoiceSettingsPress() {
           const obj = channelId(stateFromStores[18]);
           const obj2 = { screen: constants.VOICE };
           obj.openUserSettings(obj2);
@@ -498,7 +471,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     const obj11 = {
       label: intl4.string(channelId(stateFromStores[22]).t.h850Ss),
       leading: closure_12(Icon3, obj12),
-      onPress() {
+      onPress: function handleNotificationSettingsPress() {
           if (null != stateFromStores) {
             const obj = ChannelSettingsActionCreatorsDefault;
             obj.setSection(constants.NOTIFICATIONS);
@@ -519,7 +492,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       const obj13 = {
         label: intl5.string(channelId(stateFromStores[22]).t.X8bCMe),
         leading: closure_12(Icon4, obj14),
-        onPress() {
+        onPress: function handleRtcDebugPress() {
               if (onOpenRTCDebugOverlay != null) {
                 tmp();
               }
@@ -538,7 +511,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     const obj16 = {
       label: closure_12(FormLabel, obj17),
       leading: closure_12(Icon5, obj18),
-      onPress() {
+      onPress: function handleReportStage() {
           if (null != stateFromStores) {
             const obj = ReportModals;
             const result = obj.showReportModalForStageChannel(tmp);

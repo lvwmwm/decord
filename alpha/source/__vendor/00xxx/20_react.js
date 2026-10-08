@@ -41,7 +41,7 @@ function noop() {
 }
 function mapIntoArray(element, items, arg2, arg3, fn) {
   let tmp55;
-  const f133859 = (arg0) => closure_0[arg0];
+  const f135248 = (arg0) => closure_0[arg0];
   let tmp = typeof element !== "undefined";
   if (typeof element !== "undefined") {
     tmp = typeof element !== "boolean";
@@ -83,7 +83,7 @@ function mapIntoArray(element, items, arg2, arg3, fn) {
           if (null != tmp2.key) {
             const text = `${tmp2.key}`;
             _typeof = { "=": "=0", ":": "=2" };
-            let text1 = `$${`${tmp2.key}`.replace(/[=:]/g, f133859)}`;
+            let text1 = `$${`${tmp2.key}`.replace(/[=:]/g, f135248)}`;
           }
           str16 = `.${tmp45}`;
         }
@@ -141,8 +141,8 @@ function mapIntoArray(element, items, arg2, arg3, fn) {
               if (null != tmp36.key) {
                 let text3 = `${tmp36.key}`;
                 _typeof = { "=": "=0", ":": "=2" };
-                let text4 = `$${`${tmp36.key}`.replace(/[=:]/g, f133859)}`;
-                num13 = num13 + tmp35(tmp36, items, arg2, str5 + `$${`${tmp36.key}`.replace(/[=:]/g, f133859)}`, fn);
+                let text4 = `$${`${tmp36.key}`.replace(/[=:]/g, f135248)}`;
+                num13 = num13 + tmp35(tmp36, items, arg2, str5 + `$${`${tmp36.key}`.replace(/[=:]/g, f135248)}`, fn);
                 num12 = num12 + 1;
                 num7 = num13;
                 if (num12 >= tmp2.length) {
@@ -180,9 +180,9 @@ function mapIntoArray(element, items, arg2, arg3, fn) {
                 if (null != value3.key) {
                   let text5 = `${value2.key}`;
                   _typeof = { "=": "=0", ":": "=2" };
-                  let text6 = `$${`${value2.key}`.replace(/[=:]/g, f133859)}`;
+                  let text6 = `$${`${value2.key}`.replace(/[=:]/g, f135248)}`;
                   num5 = num5 + 1;
-                  num6 = num6 + tmp26(value3, items, arg2, str5 + `$${`${value2.key}`.replace(/[=:]/g, f133859)}`, fn);
+                  num6 = num6 + tmp26(value3, items, arg2, str5 + `$${`${value2.key}`.replace(/[=:]/g, f135248)}`, fn);
                   let iter3 = iter.next();
                   iter2 = iter3;
                   num7 = num6;
@@ -358,22 +358,22 @@ const obj6 = {
       let c2 = 0;
       mapIntoArray(element, items, "", "", (arg0) => {
         closure_2 = tmp + 1;
-        return f80035.call(closure_1_1, arg0, +closure_2);
+        return f80871.call(closure_1_1, arg0, +closure_2);
       });
       return items;
     }
   },
   forEach(element, arg1, arg2) {
     let closure_0 = arg1;
-    const f80033 = function() {
-      f80033(...arguments);
+    const f80869 = function() {
+      f80869(...arguments);
     };
     closure_1 = arg2;
     if (null != element) {
       let c2 = 0;
       mapIntoArray(element, [], "", "", (arg0) => {
         closure_2 = tmp + 1;
-        return f80035.call(closure_1_1, arg0, +closure_2);
+        return f80871.call(closure_1_1, arg0, +closure_2);
       });
     }
   },
@@ -386,13 +386,13 @@ const obj6 = {
       let c2 = 0;
       mapIntoArray(element, [], "", "", (arg0) => {
         closure_2 = tmp + 1;
-        return f80035.call(closure_1_1, arg0, +closure_2);
+        return f80871.call(closure_1_1, arg0, +closure_2);
       });
     }
     return c0;
   },
   toArray(element) {
-    const f80035 = (arg0) => arg0;
+    const f80871 = (arg0) => arg0;
     let items1 = element;
     if (null != element) {
       const items = [];
@@ -400,7 +400,7 @@ const obj6 = {
       const tmp = mapIntoArray;
       mapIntoArray(element, items, "", "", (arg0) => {
         closure_2 = tmp + 1;
-        return f80035.call(closure_1_1, arg0, +closure_2);
+        return f80871.call(closure_1_1, arg0, +closure_2);
       });
       items1 = items;
     }

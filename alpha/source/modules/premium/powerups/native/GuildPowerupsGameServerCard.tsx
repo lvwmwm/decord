@@ -1,24 +1,22 @@
-// Module ID: 12248
-// Function ID: 12249
+// Module ID: 12327
+// Function ID: 12328
 // Name: GuildPowerupsGameServerCard
-// Dependencies: [19, 17, 4885, 7683, 21, 4896, 587, 558, 576, 504, 12249, 12250, 12240, 4684, 12245, 2]
+// Dependencies: [19, 17, 5079, 8004, 21, 5090, 587, 558, 576, 504, 12328, 12329, 12319, 4878, 12324, 2]
 
-// Module 12248 (GuildPowerupsGameServerCard)
+// Module 12327 (GuildPowerupsGameServerCard)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 12240 */;
-import GuildPowerupsPerkCardDefault from "GuildPowerupsPerkCard" /* 12245 */;
-import useGameServerPowerupStatusDefault from "useGameServerPowerupStatus" /* 12249 */;
-import useGameServerPerkDefault from "useGameServerPerk" /* 12250 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 12319 */;
+import GuildPowerupsPerkCardDefault from "GuildPowerupsPerkCard" /* 12324 */;
+import useGameServerPowerupStatusDefault from "useGameServerPowerupStatus" /* 12328 */;
+import useGameServerPerkDefault from "useGameServerPerk" /* 12329 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import GameServerStore from "GameServerStore" /* 7683 */;
-import createStyles from "createStyles" /* 4896 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import GameServerStore from "GameServerStore" /* 8004 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let guildId;
 
 let obj2;
 const View = react_native.View;
@@ -26,7 +24,7 @@ const jsx = Fragment.jsx;
 let obj = { riveContainer: obj2 };
 obj2 = { flex: 1, paddingVertical: nativeDefault.space.PX_8 };
 let closure_7 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupsGameServerCard(guildId) {
   let first;
   let tmp12;
   let tmp13;
@@ -59,14 +57,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const tmp11 = useGameServerPerkDefault(guildId);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [AccessibilityStore];
-    class C {
+    class G {
       constructor() {
         return useReducedMotion.useReducedMotion;
       }
     }
     cResult[3] = items1;
-    cResult[4] = C;
-    tmp13 = C;
+    cResult[4] = G;
+    tmp13 = G;
     tmp12 = items1;
   } else {
     tmp12 = cResult[3];
@@ -82,12 +80,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       let tmp18;
       if (cResult[5] !== stateFromStores1) {
         const obj3 = { reducedMotion: null };
-        class C {
+        class G {
           constructor() {
             return useReducedMotion.useReducedMotion;
           }
         }
-        const tmp20 = jsx(guildId(4684).GameServerHostingRive, { stateMachine: "SM_Auto", dataBinding: obj3 });
+        const tmp20 = jsx(guildId(4878).GameServerHostingRive, { stateMachine: "SM_Auto", dataBinding: obj3 });
         cResult[5] = stateFromStores1;
         cResult[6] = tmp20;
         tmp18 = tmp20;
@@ -114,7 +112,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             }
           }
         }
-        class C {
+        class G {
           constructor() {
             return useReducedMotion.useReducedMotion;
           }
@@ -133,7 +131,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         cResult[16] = tmp27;
         tmp24 = tmp27;
       }
-      class C {
+      class G {
         constructor() {
           return useReducedMotion.useReducedMotion;
         }
@@ -146,7 +144,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
   }
   return tmp17;
-}) : ((guildId) => {
+}) : (function GuildPowerupsGameServerCard(guildId) {
   let useReducedMotion;
   guildId = guildId.guildId;
   const items = [GameServerStore];

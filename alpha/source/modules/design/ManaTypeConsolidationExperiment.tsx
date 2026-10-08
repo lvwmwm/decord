@@ -1,11 +1,11 @@
-// Module ID: 6477
-// Function ID: 6478
+// Module ID: 6655
+// Function ID: 6656
 // Name: ManaTypeConsolidationExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1452, 558, 576, 2]
 
-// Module 6477 (ManaTypeConsolidationExperiment)
+// Module 6655 (ManaTypeConsolidationExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ let obj = { name: "2026-05-mana-type-consolidation", kind: "user", defaultConfig
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useManaTypeConsolidationExperiment(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -27,7 +27,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return apexExperiment.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useManaTypeConsolidationExperiment(location) {
   const obj = { location };
   return apexExperiment.useConfig(obj).enabled;
 });

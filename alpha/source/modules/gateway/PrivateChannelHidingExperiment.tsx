@@ -1,13 +1,13 @@
-// Module ID: 13495
-// Function ID: 13496
+// Module ID: 13795
+// Function ID: 13796
 // Name: PrivateChannelHidingExperiment
-// Dependencies: [1440, 558, 576, 2, 13496]
+// Dependencies: [1452, 558, 576, 2, 13796]
 // Exports: isChannelMetadataIntegrityCheckEnabled, isChannelMetadataObfuscationEnabled
 
-// Module 13495 (PrivateChannelHidingExperiment)
+// Module 13795 (PrivateChannelHidingExperiment)
 import react from "react" /* 576 */;
-import PrivateChannelHidingExperimentCache from "PrivateChannelHidingExperimentCache" /* 13496 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import PrivateChannelHidingExperimentCache from "PrivateChannelHidingExperimentCache" /* 13796 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let obj = { name: "2026-02-private-channel-hiding", kind: "user", defaultConfig:
 obj2 = { 1: null, 2: { enableObfuscation: true, enableIntegrityCheck: false }, 3: { enableObfuscation: true, enableIntegrityCheck: true } };
 obj2[3] = { enableObfuscation: false, enableIntegrityCheck: false };
 let closure_2 = ApexExperiment.createApexExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsChannelMetadataObfuscationEnabled(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -29,7 +29,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2).enableObfuscation;
-}) : ((location) => {
+}) : (function useIsChannelMetadataObfuscationEnabled(location) {
   const obj = { location };
   return closure_2.useConfig(obj).enableObfuscation;
 });

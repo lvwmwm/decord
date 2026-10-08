@@ -1,15 +1,15 @@
-// Module ID: 9789
-// Function ID: 9790
+// Module ID: 10354
+// Function ID: 10355
 // Name: useKeyboardActionSheetHeight
-// Dependencies: [6075, 1618, 1484, 6481, 558, 576, 2]
+// Dependencies: [6261, 1630, 1496, 6659, 558, 576, 2]
 // Exports: getKeyboardActionSheetHeight
 
-// Module 9789 (useKeyboardActionSheetHeight)
+// Module 10354 (useKeyboardActionSheetHeight)
 import react from "react" /* 576 */;
-import useWindowDimensions from "useWindowDimensions" /* 1484 */;
-import useSafeAreaInsets from "useSafeAreaInsets" /* 1618 */;
-import NavigatorConstants from "NavigatorConstants" /* 6075 */;
-import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 6481 */;
+import useWindowDimensions from "useWindowDimensions" /* 1496 */;
+import useSafeAreaInsets from "useSafeAreaInsets" /* 1630 */;
+import NavigatorConstants from "NavigatorConstants" /* 6261 */;
+import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 6659 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ const useWindowDimensionsDefault = useWindowDimensions;
 const useSafeAreaInsetsDefault = useSafeAreaInsets;
 const useCustomKeyboardHeightDefault = useCustomKeyboardHeight;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboardActionSheetHeight() {
   let first;
   const obj = react;
   const cResult = obj.c(5);
@@ -40,11 +40,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       return tmp9;
     }
   }
-  const bound = Math.max(0, tmp7.height - tmp(6075).NAV_BAR_HEIGHT_MULTILINE - tmp5.top);
+  const bound = Math.max(0, tmp7.height - tmp(6261).NAV_BAR_HEIGHT_MULTILINE - tmp5.top);
   let bound1 = Math.min(tmp8, bound);
   if (bound1 >= bound) {
     const _Math = Math;
-    bound1 = Math.max(0, bound - tmp(6075).NAV_BAR_HEIGHT_MULTILINE);
+    bound1 = Math.max(0, bound - tmp(6261).NAV_BAR_HEIGHT_MULTILINE);
   }
   const obj3 = { minimum: bound1, maximum: bound };
   cResult[1] = tmp8;
@@ -52,7 +52,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = tmp7;
   cResult[4] = obj3;
   tmp9 = obj3;
-}) : (() => {
+}) : (function useKeyboardActionSheetHeight() {
   const tmp2 = useSafeAreaInsetsDefault();
   const tmp3 = useWindowDimensionsDefault({ ignoreKeyboard: true });
   const tmp4 = useCustomKeyboardHeightDefault();

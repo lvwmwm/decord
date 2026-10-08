@@ -1,24 +1,24 @@
-// Module ID: 16292
-// Function ID: 16293
+// Module ID: 16552
+// Function ID: 16553
 // Name: useFavoritesGuildUnreads
-// Dependencies: [5698, 4517, 2051, 7134, 4515, 4911, 5077, 558, 576, 11, 504, 2]
+// Dependencies: [6039, 4709, 2063, 6082, 4707, 6040, 5971, 558, 576, 11, 504, 2]
 
-// Module 16292 (useFavoritesGuildUnreads)
+// Module 16552 (useFavoritesGuildUnreads)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5698 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4517 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7134 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import ReadStateStore from "ReadStateStore" /* 4911 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6039 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4709 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6082 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, activeJoinedRelevantThreadsForParent, channel, set;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesGuildUnreads(arg0) {
   let closure_0;
   let first;
   let tmp12;
@@ -98,7 +98,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresObject(first, tmp12);
-}) : ((arg0) => {
+}) : (function useFavoritesGuildUnreads(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");

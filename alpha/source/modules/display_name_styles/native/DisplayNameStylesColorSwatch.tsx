@@ -1,21 +1,19 @@
-// Module ID: 14459
-// Function ID: 14460
+// Module ID: 14687
+// Function ID: 14688
 // Name: DisplayNameStylesColorSwatch
-// Dependencies: [17, 21, 4896, 587, 558, 576, 1396, 14460, 1103, 5612, 2]
+// Dependencies: [17, 21, 5090, 587, 558, 576, 1408, 14688, 1103, 5387, 2]
 
-// Module 14459 (DisplayNameStylesColorSwatch)
+// Module 14687 (DisplayNameStylesColorSwatch)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1396 */;
-import LinearGradientDefault from "LinearGradient" /* 5612 */;
-import GummyStripesDefault from "GummyStripes" /* 14460 */;
-import createStyles from "createStyles" /* 4896 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1408 */;
+import LinearGradientDefault from "LinearGradient" /* 5387 */;
+import GummyStripesDefault from "GummyStripes" /* 14688 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let colors;
 
 let size;
 let tmp;
@@ -25,7 +23,7 @@ const jsx = Fragment.jsx;
 let obj = { colorSwatch: size, gummySwatch: { flexDirection: "row", overflow: "hidden" } };
 size = { width: 24, height: 24, borderRadius: nativeDefault.radii.xs };
 let closure_5 = createStyles.createStyles(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((colors) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameStylesColorSwatch(colors) {
   let obj = react;
   const cResult = obj.c(24);
   colors = colors.colors;
@@ -75,7 +73,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((colors) => {
       let tmp13;
       const _Symbol = Symbol;
       if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-        const fn = function _(color) {
+        const fn = function p(color) {
           const obj = utils_ColorUtils;
           return obj.int2hex(color);
         };
@@ -154,7 +152,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((colors) => {
     cResult[18] = str;
     tmp5 = str;
   }
-}) : ((colors) => {
+}) : (function DisplayNameStylesColorSwatch(colors) {
   colors = colors.colors;
   const effectId = colors.effectId;
   const tmp = closure_5();

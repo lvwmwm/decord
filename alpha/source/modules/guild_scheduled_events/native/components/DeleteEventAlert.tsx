@@ -1,24 +1,24 @@
-// Module ID: 9492
-// Function ID: 9493
+// Module ID: 8656
+// Function ID: 8657
 // Name: DeleteEventAlert
-// Dependencies: [5, 19, 7050, 21, 4896, 558, 576, 504, 9213, 4860, 1126, 4892, 5720, 2]
+// Dependencies: [5, 19, 6059, 21, 5090, 558, 576, 504, 8494, 5054, 1126, 5086, 5303, 2]
 
-// Module 9492 (DeleteEventAlert)
+// Module 8656 (DeleteEventAlert)
 import Fragment from "Fragment" /* 21 */;
 import intl7 from "intl" /* 1126 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7050 */;
-import createStyles from "createStyles" /* 4896 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6059 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c1, c2, eventId;
+let c1, c2;
 
 let jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ contentText: { textAlign: "center" } });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((eventId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteEventAlert(eventId) {
   let closure_5;
   let first;
   let recurrenceId;
@@ -73,258 +73,101 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((eventId) => {
             }
             if (cResult[12] !== tmp13) {
               const tmp13Result = tmp13();
-              class E {
-                constructor() {
-                  let stringResult;
-                  const tmp = closure_5;
-                  if (tmp) {
-                    const intl2 = intl7.intl;
-                    stringResult = intl2.string(intl7.t.tqClly);
-                  } else {
-                    const intl = intl7.intl;
-                    const string = intl.string;
-                    const t = intl7.t;
-                    if (closure_4) {
-                      stringResult = string(t.wr33rW);
-                    } else {
-                      stringResult = string(t.B9sJLX);
-                    }
-                  }
-                  return stringResult;
-                }
-              }
+              cResult[12] = tmp13;
               cResult[13] = tmp13Result;
               tmp14 = tmp13Result;
             } else {
               tmp14 = cResult[13];
             }
-            class E {
-              constructor() {
-                let stringResult;
-                const tmp = closure_5;
-                if (tmp) {
-                  const intl2 = intl7.intl;
-                  stringResult = intl2.string(intl7.t.tqClly);
-                } else {
-                  const intl = intl7.intl;
-                  const string = intl.string;
-                  const t = intl7.t;
-                  if (closure_4) {
-                    stringResult = string(t.wr33rW);
-                  } else {
-                    stringResult = string(t.B9sJLX);
-                  }
-                }
-                return stringResult;
-              }
-            }
+            const _Symbol = Symbol;
             if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-              let string = tmp(tmp2[10]).intl.string;
-              class E {
-                constructor() {
-                  let stringResult;
-                  const tmp = closure_5;
-                  if (tmp) {
-                    const intl2 = intl7.intl;
-                    stringResult = intl2.string(intl7.t.tqClly);
-                  } else {
-                    const intl = intl7.intl;
-                    const string = intl.string;
-                    const t = intl7.t;
-                    if (closure_4) {
-                      stringResult = string(t.wr33rW);
-                    } else {
-                      stringResult = string(t.B9sJLX);
-                    }
-                  }
-                  return stringResult;
-                }
-              }
-              cResult[14] = tmp17;
-              tmp16 = tmp17;
+              let intl = tmp(tmp2[10]).intl;
+              let stringResult = intl.string(tmp(tmp2[10]).t.v2GWNQ);
+              cResult[14] = stringResult;
+              tmp16 = stringResult;
             } else {
               tmp16 = cResult[14];
             }
             if (cResult[15] === null != recurrenceId) {
               if (cResult[16] === null != recurrence_rule) {
                 let tmp18;
+                let tmp21;
                 if (cResult[17] === tmp4) {
                   tmp18 = cResult[18];
                 }
                 if (cResult[19] === null != recurrenceId) {
+                  if (cResult[20] === null != recurrence_rule) {
+                    tmp21 = cResult[21];
+                  }
                   if (cResult[22] === tmp12) {
                     let tmp23;
-                    let tmp30;
+                    let tmp26;
+                    let tmp29;
                     if (cResult[23] === tmp21) {
                       tmp23 = cResult[24];
                     }
-                    const _Symbol = Symbol;
-                    class E {
-                      constructor() {
-                        let stringResult;
-                        const tmp = closure_5;
-                        if (tmp) {
-                          const intl2 = intl7.intl;
-                          stringResult = intl2.string(intl7.t.tqClly);
-                        } else {
-                          const intl = intl7.intl;
-                          const string = intl.string;
-                          const t = intl7.t;
-                          if (closure_4) {
-                            stringResult = string(t.wr33rW);
-                          } else {
-                            stringResult = string(t.B9sJLX);
-                          }
-                        }
-                        return stringResult;
-                      }
-                    }
-                    if (tmp25 === Symbol.for("react.memo_cache_sentinel")) {
-                      class E {
-                        constructor() {
-                          let stringResult;
-                          const tmp = closure_5;
-                          if (tmp) {
-                            const intl2 = intl7.intl;
-                            stringResult = intl2.string(intl7.t.tqClly);
-                          } else {
-                            const intl = intl7.intl;
-                            const string = intl.string;
-                            const t = intl7.t;
-                            if (closure_4) {
-                              stringResult = string(t.wr33rW);
-                            } else {
-                              stringResult = string(t.B9sJLX);
-                            }
-                          }
-                          return stringResult;
-                        }
-                      }
-                      const intl3 = tmp(tmp2[10]).intl;
-                      const tmp29 = <tmp28 key="cancel" variant="secondary" text={intl3.string(tmp(recurrenceId[10]).t.oEAioF)} />;
-                      cResult[25] = tmp29;
+                    const _Symbol2 = Symbol;
+                    if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
+                      const AlertActionButton = tmp(tmp2[12]).AlertActionButton;
+                      const intl5 = tmp(tmp2[10]).intl;
+                      const tmp28 = <AlertActionButton key="cancel" variant="secondary" text={intl5.string(tmp(recurrenceId[10]).t.oEAioF)} />;
+                      cResult[25] = tmp28;
+                      tmp26 = tmp28;
+                    } else {
+                      tmp26 = cResult[25];
                     }
                     if (cResult[26] !== tmp23) {
-                      const items1 = [tmp23, ];
-                      class E {
-                        constructor() {
-                          let stringResult;
-                          const tmp = closure_5;
-                          if (tmp) {
-                            const intl2 = intl7.intl;
-                            stringResult = intl2.string(intl7.t.tqClly);
-                          } else {
-                            const intl = intl7.intl;
-                            const string = intl.string;
-                            const t = intl7.t;
-                            if (closure_4) {
-                              stringResult = string(t.wr33rW);
-                            } else {
-                              stringResult = string(t.B9sJLX);
-                            }
-                          }
-                          return stringResult;
-                        }
-                      }
+                      const items1 = [tmp23, tmp26];
                       cResult[26] = tmp23;
                       cResult[27] = items1;
-                      tmp30 = items1;
+                      tmp29 = items1;
                     } else {
-                      tmp30 = cResult[27];
+                      tmp29 = cResult[27];
                     }
-                    if (cResult[28] === tmp30) {
+                    if (cResult[28] === tmp29) {
                       if (cResult[29] === tmp14) {
-                        let tmp31;
+                        let tmp30;
                         if (cResult[30] === tmp18) {
-                          tmp31 = cResult[31];
+                          tmp30 = cResult[31];
                         }
-                        return tmp31;
+                        return tmp30;
                       }
                     }
-                    const tmp33 = jsx(tmp(recurrenceId[12]).AlertModal, { title: tmp14, content: tmp16, extraContent: tmp18, actions: tmp30 });
-                    cResult[28] = tmp30;
+                    const tmp32 = jsx(tmp(recurrenceId[12]).AlertModal, { title: tmp14, content: tmp16, extraContent: tmp18, actions: tmp29 });
+                    cResult[28] = tmp29;
                     cResult[29] = tmp14;
                     cResult[30] = tmp18;
-                    cResult[31] = tmp33;
-                    tmp31 = tmp33;
+                    cResult[31] = tmp32;
+                    tmp30 = tmp32;
                   }
-                  class E {
-                    constructor() {
-                      let stringResult;
-                      const tmp = closure_5;
-                      if (tmp) {
-                        const intl2 = intl7.intl;
-                        stringResult = intl2.string(intl7.t.tqClly);
-                      } else {
-                        const intl = intl7.intl;
-                        const string = intl.string;
-                        const t = intl7.t;
-                        if (closure_4) {
-                          stringResult = string(t.wr33rW);
-                        } else {
-                          stringResult = string(t.B9sJLX);
-                        }
-                      }
-                      return stringResult;
-                    }
-                  }
-                  const tmp24 = jsx(tmp(recurrenceId[12]).AlertActionButton, { variant: "destructive", onPress: tmp12, text: tmp21 }, "delete");
+                  const tmp25 = jsx(tmp(recurrenceId[12]).AlertActionButton, { variant: "destructive", onPress: tmp12, text: tmp21 }, "delete");
                   cResult[22] = tmp12;
                   cResult[23] = tmp21;
-                  cResult[24] = tmp24;
-                  tmp23 = tmp24;
+                  cResult[24] = tmp25;
+                  tmp23 = tmp25;
                 }
-                class E {
-                  constructor() {
-                    let stringResult;
-                    const tmp = closure_5;
-                    if (tmp) {
-                      const intl2 = intl7.intl;
-                      stringResult = intl2.string(intl7.t.tqClly);
-                    } else {
-                      const intl = intl7.intl;
-                      const string = intl.string;
-                      const t = intl7.t;
-                      if (closure_4) {
-                        stringResult = string(t.wr33rW);
-                      } else {
-                        stringResult = string(t.B9sJLX);
-                      }
-                    }
-                    return stringResult;
+                if (null != recurrence_rule) {
+                  let stringResult1;
+                  if (null == recurrenceId) {
+                    const intl3 = tmp(tmp2[10]).intl;
+                    stringResult1 = intl3.string(tmp(tmp2[10]).t["8ZsNv5"]);
                   }
+                  cResult[19] = null != recurrenceId;
+                  cResult[20] = null != recurrence_rule;
+                  cResult[21] = stringResult1;
+                  tmp21 = stringResult1;
                 }
-                let intl2 = tmp(tmp2[10]).intl;
-                let stringResult = intl2.string(tmp(tmp2[10]).t.B9sJLX);
+                const intl4 = tmp(tmp2[10]).intl;
+                stringResult1 = intl4.string(tmp(tmp2[10]).t.B9sJLX);
               }
             }
             let tmp19 = null;
             if (null != recurrence_rule) {
               tmp19 = null;
               if (null == recurrenceId) {
-                class E {
-                  constructor() {
-                    let stringResult;
-                    const tmp = closure_5;
-                    if (tmp) {
-                      const intl2 = intl7.intl;
-                      stringResult = intl2.string(intl7.t.tqClly);
-                    } else {
-                      const intl = intl7.intl;
-                      const string = intl.string;
-                      const t = intl7.t;
-                      if (closure_4) {
-                        stringResult = string(t.wr33rW);
-                      } else {
-                        stringResult = string(t.B9sJLX);
-                      }
-                    }
-                    return stringResult;
-                  }
-                }
                 const Text = tmp(tmp2[11]).Text;
-                let intl = tmp(tmp2[10]).intl;
-                tmp19 = <Text variant="text-md/medium" color="text-default" style={null}>{intl.format(tmp(tmp2[10]).t.ZcpcyO, {})}</Text>;
+                let intl2 = tmp(tmp2[10]).intl;
+                tmp19 = <Text variant="text-md/medium" color="text-default" style={tmp4.contentText}>{intl2.format(tmp(tmp2[10]).t.ZcpcyO, {})}</Text>;
               }
             }
             cResult[15] = null != recurrenceId;
@@ -333,35 +176,33 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((eventId) => {
             cResult[18] = tmp19;
             tmp18 = tmp19;
           }
-          class E {
-            constructor() {
-              let stringResult;
-              const tmp = closure_5;
-              if (tmp) {
-                const intl2 = intl7.intl;
-                stringResult = intl2.string(intl7.t.tqClly);
+          function getHeaderText() {
+            let stringResult;
+            const tmp = closure_5;
+            if (tmp) {
+              const intl2 = intl7.intl;
+              stringResult = intl2.string(intl7.t.tqClly);
+            } else {
+              const intl = intl7.intl;
+              const string = intl.string;
+              const t = intl7.t;
+              if (closure_4) {
+                stringResult = string(t.wr33rW);
               } else {
-                const intl = intl7.intl;
-                const string = intl.string;
-                const t = intl7.t;
-                if (closure_4) {
-                  stringResult = string(t.wr33rW);
-                } else {
-                  stringResult = string(t.B9sJLX);
-                }
+                stringResult = string(t.B9sJLX);
               }
-              return stringResult;
             }
+            return stringResult;
           }
           cResult[9] = null != recurrenceId;
           cResult[10] = null != recurrence_rule;
-          cResult[11] = E;
-          tmp13 = E;
+          cResult[11] = getHeaderText;
+          tmp13 = getHeaderText;
         }
       }
     }
   }
-  _require = eventException(function*(arg0, value) {
+  let closure_0 = eventException(function*(arg0, value) {
     if (c2 === 2) {
       c2 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
@@ -439,12 +280,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((eventId) => {
   cResult[7] = recurrenceId;
   cResult[8] = handleConfirmClick;
   tmp12 = handleConfirmClick;
-}) : ((eventException) => {
+}) : (function DeleteEventAlert(eventException) {
   let intl2;
   let intl3;
   let intl6;
   let recurrenceId;
-  let require;
   let stringResult;
   let tmp8Result;
   ({ eventId: require, guildId: importDefault, recurrenceId } = eventException);
@@ -482,12 +322,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((eventId) => {
               if (closure_2_4) {
                 c1 = 2;
                 c2 = 1;
-                const obj5 = { value: obj8.deleteRecurrence(importDefault, _require, recurrenceId, eventException), done: false };
+                const obj5 = { value: obj8.deleteRecurrence(importDefault, require, recurrenceId, eventException), done: false };
                 return obj5;
               } else {
                 c1 = 1;
                 c2 = 1;
-                const obj6 = { value: obj8.deleteGuildEvent(_require, importDefault), done: false };
+                const obj6 = { value: obj8.deleteGuildEvent(require, importDefault), done: false };
                 return obj6;
               }
             }
@@ -527,7 +367,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((eventId) => {
   const tmp = closure_6();
   obj = require("get initialized");
   const items = [closure_4];
-  const stateFromStores = obj.useStateFromStores(items, () => GuildScheduledEventStore.getGuildScheduledEvent(_require));
+  const stateFromStores = obj.useStateFromStores(items, () => GuildScheduledEventStore.getGuildScheduledEvent(require));
   let recurrence_rule;
   if (stateFromStores != null) {
     recurrence_rule = stateFromStores.recurrence_rule;

@@ -1,25 +1,25 @@
-// Module ID: 18119
-// Function ID: 18120
+// Module ID: 18406
+// Function ID: 18407
 // Name: ParentalConsentConnectionScreen
-// Dependencies: [5, 32, 19, 17, 7061, 1377, 7062, 21, 4896, 587, 18110, 18109, 11541, 5597, 17650, 14704, 8328, 504, 14702, 18120, 18104, 4574, 1126, 2815, 4860, 14703, 1987, 18113, 11549, 5600, 18121, 10742, 18122, 4892, 2521, 14705, 2]
+// Dependencies: [5, 32, 19, 17, 7247, 1389, 7248, 21, 5090, 587, 18397, 18396, 11555, 5392, 17932, 14965, 7711, 504, 14963, 18407, 18391, 4766, 1126, 2859, 5054, 14964, 1999, 18400, 11564, 5373, 18408, 11613, 18409, 5086, 2565, 14966, 2]
 // Exports: default
 
-// Module 18119 (ParentalConsentConnectionScreen)
+// Module 18406 (ParentalConsentConnectionScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import _modDef2815 from "module_2815" /* 2815 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7062 */;
-import shareGuardianConnectLink from "shareGuardianConnectLink" /* 14702 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import _modDef2859 from "module_2859" /* 2859 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7248 */;
+import shareGuardianConnectLink from "shareGuardianConnectLink" /* 14963 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7061 */;
-import UserStore from "UserStore" /* 1377 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7247 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import size from "module_2" /* 2 */;
 
 let c4, closure_2;
@@ -240,9 +240,9 @@ export default function ParentalConsentConnectionScreen() {
     let intl2;
     let obj2;
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-    const obj = { linkCode: str2, expiresAt: parsed, onRefresh: getLinkCode, title: intl.string(_modDef2815.dMMSA0), body: intl2.format(_modDef2815["6GaRTu"], obj2) };
+    const obj = { linkCode: str2, expiresAt: parsed, onRefresh: getLinkCode, title: intl.string(_modDef2859.dMMSA0), body: intl2.format(_modDef2859["6GaRTu"], obj2) };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(14703, dependencyMap.paths);
+    const tmp2 = asyncRequire(14964, dependencyMap.paths);
     intl = intl5.intl;
     intl2 = intl5.intl;
     obj2 = { link };

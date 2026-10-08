@@ -1,12 +1,12 @@
-// Module ID: 12213
-// Function ID: 12214
+// Module ID: 12292
+// Function ID: 12293
 // Name: useGuildPowerupOnShowDeactivate
-// Dependencies: [19, 21, 12214, 1987, 558, 576, 5716, 2]
+// Dependencies: [19, 21, 12293, 1999, 558, 576, 5299, 2]
 
-// Module 12213 (useGuildPowerupOnShowDeactivate)
+// Module 12292 (useGuildPowerupOnShowDeactivate)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import useAlertStore from "useAlertStore" /* 5716 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import useAlertStore from "useAlertStore" /* 5299 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -15,8 +15,8 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 const jsx = Fragment.jsx;
-let closure_4 = react.lazy(() => asyncRequire(12214, dependencyMap.paths));
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, powerup) => {
+let closure_4 = react.lazy(() => asyncRequire(12293, dependencyMap.paths));
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowerupOnShowDeactivate(guildId, powerup) {
   _require = guildId;
   dependencyMap = powerup;
   let obj = require("react");
@@ -36,7 +36,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, powerup) =>
   cResult[1] = powerup;
   cResult[2] = fn;
   tmp2 = fn;
-}) : ((guildId, powerup) => {
+}) : (function useGuildPowerupOnShowDeactivate(guildId, powerup) {
   const items = [guildId, powerup];
   return react.useCallback(() => {
     const obj = useAlertStore;

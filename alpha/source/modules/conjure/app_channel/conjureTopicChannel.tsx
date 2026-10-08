@@ -1,10 +1,10 @@
-// Module ID: 2059
-// Function ID: 2060
+// Module ID: 2071
+// Function ID: 2072
 // Name: conjureTopicChannel
 // Dependencies: [1085, 2]
 // Exports: conjureAppIdFromTopic, conjureTopicForApp, isConjureLegacyTopicChannel, normalizeConjureTopicChannel, normalizeConjureTopicChannelRecord
 
-// Module 2059 (conjureTopicChannel)
+// Module 2071 (conjureTopicChannel)
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

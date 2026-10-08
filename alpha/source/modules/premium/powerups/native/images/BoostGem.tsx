@@ -1,11 +1,11 @@
-// Module ID: 12194
-// Function ID: 12195
+// Module ID: 12273
+// Function ID: 12274
 // Name: BoostGem
-// Dependencies: [19, 21, 558, 576, 8169, 2]
+// Dependencies: [19, 21, 558, 576, 7550, 2]
 
-// Module 12194 (BoostGem)
+// Module 12273 (BoostGem)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 8169 */;
+import inlineStyles from "inlineStyles" /* 7550 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -16,7 +16,7 @@ const inlineStylesDefault = inlineStyles;
 let c3;
 let closure_4;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostGem(arg0) {
   let height;
   let items;
   let style;
@@ -77,7 +77,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = num;
   cResult[9] = tmp18;
   tmp17 = tmp18;
-}) : ((style) => {
+}) : (function BoostGem(style) {
   let items;
   let num = style.width;
   if (num === undefined) {

@@ -1,21 +1,21 @@
-// Module ID: 13456
-// Function ID: 13457
+// Module ID: 13756
+// Function ID: 13757
 // Name: collectCallFeedback
-// Dependencies: [8086, 2051, 1999, 4919, 2103, 1377, 9335, 5076, 8089, 8090, 584, 2]
+// Dependencies: [5252, 2063, 2011, 5108, 2115, 1389, 5130, 5105, 5256, 5257, 584, 2]
 // Exports: default
 
-// Module 13456 (collectCallFeedback)
+// Module 13756 (collectCallFeedback)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5076 */;
-import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 8089 */;
-import VideoBackgroundUtils from "VideoBackgroundUtils" /* 8090 */;
-import VideoBackgroundStore from "VideoBackgroundStore" /* 8086 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import UserStore from "UserStore" /* 1377 */;
-import AudioRouteStore from "AudioRouteStore" /* 9335 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5105 */;
+import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 5256 */;
+import VideoBackgroundUtils from "VideoBackgroundUtils" /* 5257 */;
+import VideoBackgroundStore from "VideoBackgroundStore" /* 5252 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import UserStore from "UserStore" /* 1389 */;
+import AudioRouteStore from "AudioRouteStore" /* 5130 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_calls/collectCallFeedback.tsx");

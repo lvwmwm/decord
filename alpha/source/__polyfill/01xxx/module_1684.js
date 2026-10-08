@@ -1,50 +1,62 @@
 // Module ID: 1684
 // Function ID: 1685
-// Dependencies: [1646, 1680]
-// Exports: isReducedMotionEnabledInSystem
+// Dependencies: [116, 1666]
+// Exports: findHostInstance
 
 // Module 1684
-import module_1646 from "module_1646" /* 1646 */;
-import module_1680_mod from "module_1680" /* 1680 */;
+import ReactFabric from "ReactFabric" /* 116 */;
+import ReanimatedError from "ReanimatedError" /* 1666 */;
 
-let module_1680;
 let prop;
-if (module_1646.isWeb()) {
-  const _module1 = module_1646;
-  let matches = _module1.isWindowAvailable();
-  if (matches) {
-    let _window = window;
-    matches = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  }
-  prop = matches;
-} else {
-  prop = global._REANIMATED_IS_REDUCED_MOTION;
-}
-const ReducedMotionManager = {
-  jsValue: prop,
-  uiValue: module_1680.makeMutable(prop),
-  setEnabled(jsValue) {
-    obj.jsValue = jsValue;
-    obj.uiValue.value = jsValue;
-  }
-};
-function isReducedMotionEnabledInSystem() {
-  let prop;
-  const obj = module_1646;
-  if (obj.isWeb()) {
-    const tmpResult = module_1646;
-    let matches = tmpResult.isWindowAvailable();
-    if (matches) {
-      const _window = window;
-      matches = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    }
-    prop = matches;
-  } else {
-    prop = global._REANIMATED_IS_REDUCED_MOTION;
-  }
-  return prop;
-}
-module_1680 = module_1680_mod;
 
-export { isReducedMotionEnabledInSystem };
-export { ReducedMotionManager };
+
+export const findHostInstance = function findHostInstance(_componentRef) {
+  let tmp2;
+  function resolveFindHostInstance_DEPRECATED() {
+    if (undefined === prop) {
+      try {
+        const tmp3 = ReactFabric;
+        prop = undefined;
+        if (tmp3 != null) {
+          if (tmp3.default != null) {
+            prop = _default.findHostInstance_DEPRECATED;
+          }
+        }
+        if (prop == null) {
+          let prop1;
+          if (tmp3 != null) {
+            prop1 = tmp3.findHostInstance_DEPRECATED;
+          }
+          prop = prop1;
+        }
+      } catch (err) {
+        const self = this;
+        const self2 = this;
+        const reanimatedError = new ReanimatedError.ReanimatedError("Failed to resolve findHostInstance_DEPRECATED");
+        throw reanimatedError;
+      }
+    }
+  }
+  _componentRef = _componentRef._componentRef;
+  let tmp;
+  if (_componentRef) {
+    if (_componentRef.__internalInstanceHandle) {
+      if (_componentRef.__nativeTag) {
+        if (!_componentRef.__viewConfig) {
+          tmp = tmp2;
+        }
+      }
+      tmp2 = _componentRef;
+    }
+  }
+  if (undefined === tmp) {
+    let tmp3 = resolveFindHostInstance_DEPRECATED();
+    let _componentRef2 = _componentRef._componentRef;
+    const tmp4 = React2;
+    if (_componentRef2 == null) {
+      _componentRef2 = _componentRef;
+    }
+    tmp = tmp4(_componentRef2);
+  }
+  return tmp;
+};

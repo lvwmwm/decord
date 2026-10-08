@@ -1,17 +1,17 @@
-// Module ID: 15299
-// Function ID: 15300
+// Module ID: 15561
+// Function ID: 15562
 // Name: ImageDescriptionsSetting
-// Dependencies: [1195, 7645, 558, 2028, 15300, 11142, 1126, 2]
+// Dependencies: [1207, 7966, 558, 2040, 15562, 11262, 1126, 2]
 // Exports: onImageDescriptionSettingValueChange
 
-// Module 15299 (ImageDescriptionsSetting)
+// Module 15561 (ImageDescriptionsSetting)
 import intl2 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import UserSettingsText from "UserSettingsText" /* 15300 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import UserSettingsText from "UserSettingsText" /* 15562 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 function onImageDescriptionSettingValueChange(viewImageDescriptions) {
@@ -28,7 +28,7 @@ let obj = {
     return intl.string(intl2.t["w8j+yW"]);
   },
   parent: MobileUserSettings.CHAT,
-  useValue: () => {
+  useValue: function useImageDescriptionSettingValue() {
     const ViewImageDescriptions = UserSettings.ViewImageDescriptions;
     return ViewImageDescriptions.useSetting();
   },

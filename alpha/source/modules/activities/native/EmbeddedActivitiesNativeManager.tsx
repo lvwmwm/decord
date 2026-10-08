@@ -1,27 +1,28 @@
-// Module ID: 9024
-// Function ID: 9025
+// Module ID: 10623
+// Function ID: 10624
 // Name: EmbeddedActivitiesNativeManager
-// Dependencies: [17, 2051, 4919, 2050, 1085, 1369, 9012, 9014, 9017, 4504, 1252, 584, 9025, 9026, 5715, 1126, 4574, 4811, 1375, 1266, 9054, 2]
+// Dependencies: [17, 2063, 5108, 2062, 1085, 1381, 10624, 10625, 5294, 4696, 1264, 584, 11127, 10635, 5298, 1126, 4766, 5005, 1387, 11128, 11129, 10615, 2]
 
-// Module 9024 (EmbeddedActivitiesNativeManager)
+// Module 10623 (EmbeddedActivitiesNativeManager)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4811 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5715 */;
-import react_nativeDefault from "react-native" /* 9012 */;
-import ThermalUtilsDefault from "ThermalUtils" /* 9017 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 9026 */;
-import createWebViewControllerDefault from "createWebViewController" /* 9054 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 9014 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5005 */;
+import ThermalUtilsDefault from "ThermalUtils" /* 5294 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5298 */;
+import react_nativeDefault from "react-native" /* 10624 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10635 */;
+import makeIframeIdDefault from "makeIframeId" /* 11128 */;
+import createWebViewControllerDefault from "createWebViewController" /* 11129 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 10625 */;
 import size from "module_2" /* 2 */;
 
 let basicChannel, connectedActivityLocation, currentEmbeddedActivity, rawThermalState;
@@ -181,15 +182,16 @@ class EmbeddedActivitiesNativeManager extends EmbeddedActivitiesManager {
     const obj4 = { type: "EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE", applicationId, lockState: null, pictureInPictureLockState: null, gridLockState: null };
     obj3.dispatch(obj4);
   }
-  getOrCreateWebViewController() {
+  getOrCreateWebViewController(applicationId) {
+    let obj2;
     const self = this;
     if (null != this.controller) {
       return self.controller.iframeId;
     } else {
-      let tmp2 = dependencyMap;
-      let obj = self(1266);
-      const v4Result = obj.v4();
-      let obj2 = {
+      let tmp2 = importDefault;
+      const tmp4 = makeIframeIdDefault();
+      let obj = {
+        contextSource: obj2,
         getOrigin() {
             const obj = connectedActivityLocation;
             connectedActivityLocation = connectedActivityLocation.getConnectedActivityLocation();
@@ -231,8 +233,10 @@ class EmbeddedActivitiesNativeManager extends EmbeddedActivitiesManager {
             }
           }
       };
-      self.controller = createWebViewControllerDefault(v4Result, obj2);
-      return v4Result;
+      obj2 = { type: self(10615).EmbeddedContextSourceType.ACTIVITY, applicationId };
+      let tmp5 = createWebViewControllerDefault;
+      self.controller = tmp5(tmp4, obj);
+      return tmp4;
     }
   }
   hasWebView() {

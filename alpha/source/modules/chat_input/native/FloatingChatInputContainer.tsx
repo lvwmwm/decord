@@ -1,14 +1,14 @@
-// Module ID: 12065
-// Function ID: 12066
+// Module ID: 12138
+// Function ID: 12139
 // Name: FloatingChatInputContainer
-// Dependencies: [32, 19, 21, 4618, 558, 576, 4586, 587, 1632, 4753, 1616, 4897, 4900, 2]
+// Dependencies: [32, 19, 21, 4810, 558, 576, 4778, 587, 1644, 4947, 1628, 5091, 5094, 2]
 
-// Module 12065 (FloatingChatInputContainer)
+// Module 12138 (FloatingChatInputContainer)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -19,15 +19,15 @@ let dependencyMap, set;
 
 let tmp2;
 let tmp4;
-const useKeyboardTypeDefault = tmp4(4753);
-const timingPresets = tmp2(4900);
+const useKeyboardTypeDefault = tmp4(4947);
+const timingPresets = tmp2(5094);
 const jsx = Fragment.jsx;
 const Easing = ReanimatedRexport.Easing;
 let closure_6 = Easing.bezier(0.2, 0, 0, 1);
 let ReactCompilerGating = ReactCompilerGating_mod;
 const __initData = { code: "function FloatingChatInputContainerTsx1(){const{paddingSV}=this.__closure;return{paddingBottom:paddingSV.get()};}" };
 const __initData2 = { code: "function FloatingChatInputContainerTsx2(){const{paddingSV}=this.__closure;return{paddingBottom:paddingSV.get()};}" };
-tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FloatingChatInputContainer(arg0) {
   let children;
   let onLayout;
   let style;
@@ -61,7 +61,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = style;
   cResult[2] = items;
   tmp4 = items;
-}) : ((arg0) => {
+}) : (function FloatingChatInputContainer(arg0) {
   let children;
   let onLayout;
   let style;
@@ -71,7 +71,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return jsx(ReanimatedRexportDefault.View, { style: items, onLayout, children });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboardOpenPaddingStyle() {
   let closure_2;
   let easing;
   let first;
@@ -83,7 +83,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp2 = dependencyMap;
   let obj = token(576);
   const cResult = obj.c(8);
-  const obj2 = token(4586);
+  const obj2 = token(4778);
   token = obj2.useToken(nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function o() {
@@ -127,10 +127,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp10 = cResult[2];
   }
   const effect = obj3.useEffect(tmp9, tmp10);
-  const tmpResult = token(4753);
-  const keyboardWillOpen = tmpResult.useKeyboardContextForType(tmp(1616).KeyboardTypes.SYSTEM).keyboardWillOpen;
+  const tmpResult = token(4947);
+  const keyboardWillOpen = tmpResult.useKeyboardContextForType(tmp(1628).KeyboardTypes.SYSTEM).keyboardWillOpen;
   const tmp12 = useKeyboardTypeDefault();
-  const SYSTEM = tmp(1616).KeyboardTypes.SYSTEM;
+  const SYSTEM = tmp(1628).KeyboardTypes.SYSTEM;
   if (!tmp8) {
     tmp8 = true === keyboardWillOpen;
   }
@@ -139,8 +139,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   dependencyMap = tmp8;
   let num3 = 0;
-  const useSharedValue = tmp(4618).useSharedValue;
-  token(4618);
+  const useSharedValue = tmp(4810).useSharedValue;
+  token(4810);
   if (tmp8) {
     num3 = token;
   }
@@ -154,7 +154,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         tmp16 = cResult[7];
       }
       const effect1 = obj3.useEffect(tmp15, tmp16);
-      const fn4 = function v() {
+      const fn4 = function f() {
         const obj = { paddingBottom: sharedValue.get() };
         return obj;
       };
@@ -162,7 +162,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       fn4.__closure = obj4;
       fn4.__workletHash = 5673482424037;
       fn4.__initData = __initData;
-      const tmpResult4 = token(4618);
+      const tmpResult4 = token(4810);
       return tmpResult4.useAnimatedStyle(fn4);
     }
   }
@@ -185,14 +185,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[7] = items1;
   tmp16 = items1;
   tmp15 = fn3;
-}) : (() => {
+}) : (function useKeyboardOpenPaddingStyle() {
   let closure_2;
   let easing;
   let sharedValue;
   let tmp5;
   let token;
   let tmp2 = dependencyMap;
-  let obj = token(4586);
+  let obj = token(4778);
   token = obj.useToken(nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL);
   const tmp4 = sharedValue(react.useState(() => {
     const KeyboardController = token(closure_2[8]).KeyboardController;
@@ -217,10 +217,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       closure_1.remove();
     };
   }, []);
-  const obj3 = token(4753);
-  const keyboardWillOpen = obj3.useKeyboardContextForType(token(1616).KeyboardTypes.SYSTEM).keyboardWillOpen;
+  const obj3 = token(4947);
+  const keyboardWillOpen = obj3.useKeyboardContextForType(token(1628).KeyboardTypes.SYSTEM).keyboardWillOpen;
   const tmp7 = useKeyboardTypeDefault();
-  const SYSTEM = token(1616).KeyboardTypes.SYSTEM;
+  const SYSTEM = token(1628).KeyboardTypes.SYSTEM;
   const obj2 = react;
   if (!tmp5) {
     tmp5 = true === keyboardWillOpen;
@@ -230,8 +230,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   dependencyMap = tmp5;
   let num = 0;
-  const useSharedValue = tmp(4618).useSharedValue;
-  token(4618);
+  const useSharedValue = tmp(4810).useSharedValue;
+  token(4810);
   if (tmp5) {
     num = token;
   }
@@ -248,14 +248,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj = { duration: timingPresets.timingStandardDuration, easing };
     const result = set(withTiming(num, obj));
   }, items);
-  const fn = function b() {
+  const fn = function p() {
     const obj = { paddingBottom: sharedValue.get() };
     return obj;
   };
   fn.__closure = { paddingSV: sharedValue };
   fn.__workletHash = 12921006654950;
   fn.__initData = __initData2;
-  const tmpResult2 = token(4618);
+  const tmpResult2 = token(4810);
   return tmpResult2.useAnimatedStyle(fn);
 });
 let closure_9 = tmp3;

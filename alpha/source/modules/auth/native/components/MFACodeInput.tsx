@@ -1,24 +1,22 @@
-// Module ID: 14592
-// Function ID: 14593
+// Module ID: 14853
+// Function ID: 14854
 // Name: MFACodeInput
-// Dependencies: [32, 19, 17, 502, 1085, 21, 4896, 587, 558, 576, 4735, 6695, 6089, 5597, 4892, 1126, 6104, 2]
+// Dependencies: [32, 19, 17, 502, 1085, 21, 5090, 587, 558, 576, 4929, 6872, 5936, 5392, 5086, 1126, 6282, 2]
 
-// Module 14592 (MFACodeInput)
+// Module 14853 (MFACodeInput)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import shared from "shared" /* 4735 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import ClipboardUtils from "ClipboardUtils" /* 6695 */;
+import shared from "shared" /* 4929 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import ClipboardUtils from "ClipboardUtils" /* 6872 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let appState, error;
 
 let c10;
 let c9;
@@ -33,9 +31,8 @@ const AppStates = Constants.AppStates;
 let obj = { inputContainer: { marginTop: 20, flexDirection: "row", justifyContent: "center", alignSelf: "stretch" }, input: { flex: 1, maxWidth: 336, flexDirection: "row", alignSelf: "stretch" }, status: { flex: 1, maxHeight: 20, alignItems: "center", marginTop: 8 }, error: obj2, minHeightGuard: { minHeight: 20 } };
 obj2 = { color: nativeDefault.unsafe_rawColors.RED_400 };
 let closure_12 = createStyles.createStyles(obj);
-const forwardRef = react.forwardRef;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((appState, ref) => {
-  let closure_4;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFACodeInput(appState) {
+  let error;
   let style;
   let tmp10;
   let tmp = appState;
@@ -46,21 +43,26 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   const handleSubmit = appState.handleSubmit;
   ({ style, error } = appState);
   const showActivityIndicator = appState.showActivityIndicator;
-  const resetLoginOnClose = appState.resetLoginOnClose;
-  react = tmp4;
+  let resetLoginOnClose = appState.resetLoginOnClose;
+  let tmp4 = undefined === resetLoginOnClose;
+  const ref = appState.ref;
+  if (!tmp4) {
+    tmp4 = resetLoginOnClose;
+  }
+  resetLoginOnClose = tmp4;
   const tmp5 = closure_12();
   error = tmp5;
   const tmpResult = tmp(tmp2[10]);
   const theme = tmpResult.useThemeContext().theme;
-  let obj3 = react;
-  const tmp6 = showActivityIndicator(react.useState(""), 2);
+  let obj3 = resetLoginOnClose;
+  const tmp6 = showActivityIndicator(resetLoginOnClose.useState(""), 2);
   const first = tmp6[0];
   let closure_8 = tmp6[1];
-  const tmp8 = showActivityIndicator(react.useState(null), 2);
+  const tmp8 = showActivityIndicator(resetLoginOnClose.useState(null), 2);
   const first1 = tmp8[0];
   let closure_10 = tmp8[1];
   if (cResult[0] !== first1) {
-    const fn = function v() {
+    const fn = function h() {
       let obj = ClipboardUtils;
       const string = obj.getString();
       string.then((result) => {
@@ -98,7 +100,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   if (cResult[2] === first) {
     if (cResult[3] === tmp10) {
       let tmp11;
-      if (cResult[4] === (undefined === resetLoginOnClose || resetLoginOnClose)) {
+      if (cResult[4] === tmp4) {
         tmp11 = cResult[5];
       }
       handleSubmit(tmp2[13])(tmp11);
@@ -188,30 +190,28 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
               }
             }
           }
-          class Y {
-            constructor() {
-              const tmp = showActivityIndicator;
-              if (tmp) {
-                const obj2 = shared;
-                const isThemeDarkResult = obj2.isThemeDark(theme);
-                const unsafe_rawColors = nativeDefault.unsafe_rawColors;
-                const obj3 = { color: isThemeDarkResult ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_500 };
-                return React4(hasOwnProperty, obj3);
-              } else {
-                let tmp3 = null;
-                if (null != error) {
-                  const obj = { style: error.error, variant: "text-md/medium", children: tmp2 };
-                  tmp3 = React4(Text_Text.Text, obj);
-                }
-                return tmp3;
+          function renderStatus() {
+            const tmp = showActivityIndicator;
+            if (tmp) {
+              const obj2 = shared;
+              const isThemeDarkResult = obj2.isThemeDark(theme);
+              const unsafe_rawColors = nativeDefault.unsafe_rawColors;
+              const obj3 = { color: isThemeDarkResult ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_500 };
+              return React4(hasOwnProperty, obj3);
+            } else {
+              let tmp3 = null;
+              if (null != error) {
+                const obj = { style: error.error, variant: "text-md/medium", children: tmp2 };
+                tmp3 = React4(Text_Text.Text, obj);
               }
+              return tmp3;
             }
           }
           cResult[16] = error;
           cResult[17] = showActivityIndicator;
           cResult[18] = tmp5.error;
           cResult[19] = theme;
-          cResult[20] = Y;
+          cResult[20] = renderStatus;
         }
         class P {
           constructor() {
@@ -230,6 +230,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
         }
         const items1 = [first, handleSubmit];
         cResult[10] = first;
+        cResult[11] = handleSubmit;
         cResult[12] = P;
         cResult[13] = items1;
         tmp18 = items1;
@@ -263,10 +264,10 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           }
         });
       } else {
-        const tmp = closure_1_4;
+        const tmp = resetLoginOnClose;
         let tmp2 = handleSubmit;
         let obj = handleSubmit(error[12]);
-        if (closure_1_4) {
+        if (resetLoginOnClose) {
           obj.loginReset();
         } else {
           obj.loginStatusReset();
@@ -276,11 +277,12 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   };
   cResult[2] = first;
   cResult[3] = tmp10;
-  cResult[4] = undefined === resetLoginOnClose || resetLoginOnClose;
+  cResult[4] = tmp4;
   cResult[5] = fn2;
   tmp11 = fn2;
-}) : ((appState, ref) => {
+}) : (function MFACodeInput(appState) {
   let closure_4;
+  let error;
   let intl;
   let items3;
   let resetLoginOnClose;
@@ -296,6 +298,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   }
   let value;
   react = undefined;
+  const ref = appState.ref;
   let tmp = closure_12();
   let tmp2 = appState;
   const tmp3 = resetLoginOnClose;
@@ -415,7 +418,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   const obj6 = { children: items4 };
   items4[1] = closure_9(tmp19, obj3);
   return tmp15(tmp16, obj6);
-}));
+});
 const result = size.fileFinishedImporting("modules/auth/native/components/MFACodeInput.tsx");
 
-export default forwardRefResult;
+export default tmp4;

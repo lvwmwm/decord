@@ -1,24 +1,24 @@
-// Module ID: 12312
-// Function ID: 12313
+// Module ID: 12410
+// Function ID: 12411
 // Name: ChatBeginningRowJoinApplication
-// Dependencies: [19, 17, 4515, 1377, 1085, 21, 4896, 587, 558, 576, 12313, 504, 12314, 5978, 4892, 1126, 4708, 5599, 5601, 2]
+// Dependencies: [19, 17, 4707, 1389, 1085, 21, 5090, 587, 558, 576, 12411, 504, 12412, 6161, 5086, 1126, 4902, 5963, 5375, 2]
 
-// Module 12312 (ChatBeginningRowJoinApplication)
+// Module 12410 (ChatBeginningRowJoinApplication)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4708 */;
-import Text_Text from "Text/Text" /* 4892 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4902 */;
+import Text_Text from "Text/Text" /* 5086 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import UserStore from "UserStore" /* 1377 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, channelId;
+let _require;
 
 let c9;
 let metroImportAll;
@@ -34,7 +34,7 @@ obj2 = { width: "100%", marginTop: 12, display: "flex", flexDirection: "column",
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, height: 1, border: "none", marginVertical: 16 };
 let closure_10 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBeginningRowJoinRequest(channelId) {
   let approveRequest;
   let closure_0;
   let first;
@@ -121,7 +121,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     }
   }
   return null;
-}) : ((channelId) => {
+}) : (function ChatBeginningRowJoinRequest(channelId) {
   let approveRequest;
   let closure_0;
   let intl;

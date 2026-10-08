@@ -1,19 +1,19 @@
-// Module ID: 11462
-// Function ID: 11463
+// Module ID: 11446
+// Function ID: 11447
 // Name: RoleName
-// Dependencies: [19, 17, 4885, 21, 4896, 587, 558, 576, 504, 7631, 1188, 4892, 2]
+// Dependencies: [19, 17, 5079, 21, 5090, 587, 558, 576, 504, 7952, 1200, 5086, 2]
 
-// Module 11462 (RoleName)
+// Module 11446 (RoleName)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7631 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7952 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ const View = react_native.View;
 let obj = { container: obj2, name: { flexShrink: 1 } };
 obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 let closure_6 = createStyles.createStyles(obj);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleName(arg0) {
   let children;
   let colorString;
   let colorStrings;
@@ -148,7 +148,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp15 = "dot" === stateFromStores && null != colorString;
   if (tmp15) {
     const obj5 = { color: colorString, colors: colorStrings, guildId, background: undefined !== dotBackground && dotBackground };
-    tmp15 = React3(tmp(1188).RoleDot, obj5);
+    tmp15 = React3(tmp(1200).RoleDot, obj5);
   }
   cResult[2] = colorString;
   cResult[3] = colorStrings;
@@ -157,7 +157,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = stateFromStores;
   cResult[7] = tmp15;
   tmp14 = tmp15;
-}) : ((children) => {
+}) : (function RoleName(children) {
   let colorString;
   let colorStrings;
   let guildId;
@@ -194,13 +194,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (tmp9) {
     const obj5 = { color: colorString, colors: colorStrings, guildId, background: flag };
-    tmp9 = React3(tmp2(1188).RoleDot, obj5);
+    tmp9 = React3(tmp2(1200).RoleDot, obj5);
   }
   items1 = [tmp9, ];
   const obj6 = { variant: textVariant, style: items2, lineClamp: 1, gradientColors: tmp15, children };
   items2 = [tmp.name, ];
   let tmp13;
-  const Text = tmp2(4892).Text;
+  const Text = tmp2(5086).Text;
   const tmp12 = React3;
   if ("username" === stateFromStores) {
     if (null != colorString) {

@@ -1,14 +1,12 @@
-// Module ID: 14836
-// Function ID: 14837
+// Module ID: 15097
+// Function ID: 15098
 // Name: useBountiesRecapScroll
 // Dependencies: [19, 558, 576, 2]
 
-// Module 14836 (useBountiesRecapScroll)
+// Module 15097 (useBountiesRecapScroll)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let listRef;
 
 function getRevealProgress(scrollY, lastBountyScrollOffset, height2) {
   let num = 0;
@@ -20,7 +18,7 @@ function getRevealProgress(scrollY, lastBountyScrollOffset, height2) {
 getRevealProgress.__closure = {};
 getRevealProgress.__workletHash = 9769647749947;
 getRevealProgress.__initData = { code: "function getRevealProgress_useBountiesRecapScrollTsx1(scrollOffset,startOffset,revealHeight){if(revealHeight<=0){return 0;}return(scrollOffset-startOffset)/revealHeight;}" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((listRef) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountiesRecapScroll(listRef) {
   let closure_3;
   let enabled;
   let tmp2;
@@ -127,13 +125,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((listRef) => {
     cResult[10] = B;
     tmp4 = B;
   }
-  const fn2 = function c() {
+  const fn2 = function f() {
     closure_3(offsets.lastBounty);
   };
   cResult[2] = offsets.lastBounty;
   cResult[3] = tmp2;
   cResult[4] = fn2;
-}) : ((listRef) => {
+}) : (function useBountiesRecapScroll(listRef) {
   let items3;
   listRef = listRef.listRef;
   const enabled = listRef.enabled;

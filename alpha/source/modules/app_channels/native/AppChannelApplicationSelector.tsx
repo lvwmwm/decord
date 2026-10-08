@@ -1,14 +1,14 @@
-// Module ID: 9254
-// Function ID: 9255
+// Module ID: 8583
+// Function ID: 8584
 // Name: AppChannelApplicationSelector
-// Dependencies: [19, 21, 9255, 1126, 6081, 6000, 9257, 4860, 9258, 1987, 9258, 2]
+// Dependencies: [19, 21, 8584, 1126, 6267, 6184, 8587, 5054, 8588, 1999, 8588, 2]
 // Exports: default
 
-// Module 9254 (AppChannelApplicationSelector)
+// Module 8583 (AppChannelApplicationSelector)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import AppChannelApplicationActionSheet from "AppChannelApplicationActionSheet" /* 9258 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import AppChannelApplicationActionSheet from "AppChannelApplicationActionSheet" /* 8588 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ const result = size.fileFinishedImporting("modules/app_channels/native/AppChanne
 
 export default function AppChannelApplicationSelector(guildId) {
   let disabled;
-  let fn;
+  let handlePress;
   let hasNoApplications;
   let intl3;
   let name;
@@ -48,7 +48,7 @@ export default function AppChannelApplicationSelector(guildId) {
   }
   const TableRowGroup = tmp(tmp2[4]).TableRowGroup;
   const intl2 = tmp(tmp2[3]).intl;
-  ({ label: name, accessibilityLabel: "" + intl3.string(tmp(tmp2[3]).t.oYTLIL) + " " + name, icon: tmp5Result, onPress: fn, arrow: true !== disabled && !hasNoApplications, disabled: !(true !== disabled && !hasNoApplications) });
+  ({ label: name, accessibilityLabel: "" + intl3.string(tmp(tmp2[3]).t.oYTLIL) + " " + name, icon: tmp5Result, onPress: handlePress, arrow: true !== disabled && !hasNoApplications, disabled: !(true !== disabled && !hasNoApplications) });
   const TableRow = tmp(tmp2[5]).TableRow;
   intl3 = tmp(tmp2[3]).intl;
   tmp5Result = null;
@@ -56,13 +56,13 @@ export default function AppChannelApplicationSelector(guildId) {
     const obj4 = { application: selectedApplication };
     tmp5Result = tmp5(channelId(tmp2[6]), obj4);
   }
-  fn = undefined;
+  handlePress = undefined;
   if (true !== disabled && !hasNoApplications) {
-    fn = () => {
+    handlePress = function handlePress() {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
       const obj = { guildId, channelId, selectedApplicationId, onChange: jsx };
-      const tmp2 = asyncRequire(9258, dependencyMap.paths);
+      const tmp2 = asyncRequire(8588, dependencyMap.paths);
       openLazy(tmp2, AppChannelApplicationActionSheet.APP_CHANNEL_APPLICATION_ACTION_SHEET_KEY, obj);
     };
   }

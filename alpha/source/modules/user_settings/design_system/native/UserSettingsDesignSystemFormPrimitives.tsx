@@ -1,26 +1,26 @@
-// Module ID: 15702
-// Function ID: 15703
+// Module ID: 15982
+// Function ID: 15983
 // Name: UserSettingsDesignSystemFormPrimitives
-// Dependencies: [32, 19, 17, 1085, 21, 4896, 558, 576, 4892, 6079, 6078, 6081, 6705, 8981, 5997, 6000, 14294, 9680, 5892, 5600, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5090, 558, 576, 5086, 6265, 6264, 6267, 6882, 12885, 6181, 6184, 14118, 10869, 8204, 5373, 2]
 
-// Module 15702 (UserSettingsDesignSystemFormPrimitives)
+// Module 15982 (UserSettingsDesignSystemFormPrimitives)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 5892 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 5997 */;
-import TableRow2 from "TableRow" /* 6000 */;
-import TableRadioRow from "TableRadioRow" /* 6078 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 6079 */;
-import TableRowGroup3 from "TableRowGroup" /* 6081 */;
-import TableSwitchRow5 from "TableSwitchRow" /* 6705 */;
-import VoiceXIcon from "VoiceXIcon" /* 9680 */;
-import Slider2 from "Slider" /* 14294 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 6181 */;
+import TableRow2 from "TableRow" /* 6184 */;
+import TableRadioRow from "TableRadioRow" /* 6264 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 6265 */;
+import TableRowGroup3 from "TableRowGroup" /* 6267 */;
+import TableSwitchRow5 from "TableSwitchRow" /* 6882 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 8204 */;
+import VoiceXIcon from "VoiceXIcon" /* 10869 */;
+import Slider2 from "Slider" /* 14118 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,14 +28,14 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const Stack_Stack = tmp(5600);
-const Checkbox = tmp(8981);
+const Stack_Stack = tmp(5373);
+const Checkbox = tmp(12885);
 const ScrollView = react_native.ScrollView;
 const NOOP = Constants.NOOP;
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
 let closure_9 = createStyles.createStyles({ container: { padding: 16, paddingBottom: 32 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Radio() {
   let items;
   let items1;
   let tmp4;
@@ -57,7 +57,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { children: items };
     items = [tmp4, tmp5, ];
     const obj3 = { title: "Role Colors", hasIcons: false, defaultValue: "color-in-names", onChange: NOOP, children: items1 };
-    const TableRadioGroup = tmp(6079).TableRadioGroup;
+    const TableRadioGroup = tmp(6265).TableRadioGroup;
     items1 = [metroRequire(TableRadioRow.TableRadioRow, { label: "Show role colors in names", value: "color-in-names" }), metroRequire(TableRadioRow.TableRadioRow, { label: "Show role colors next to names", value: "color-next-to-names" }), metroRequire(TableRadioRow.TableRadioRow, { label: "Don't show role colors", value: "no-color" }), metroRequire(TableRadioRow.TableRadioRow, { label: "Disabled Item", subLabel: "This should not be selectable", value: "option4", disabled: true })];
     items[2] = metroImportDefault(TableRadioGroup, obj3);
     const tmp14 = metroImportDefault(metroImportAll, obj2);
@@ -67,7 +67,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = cResult[2];
   }
   return tmp9;
-}) : (() => {
+}) : (function Radio() {
   let items;
   let items1;
   const obj = { children: items };
@@ -79,7 +79,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return metroImportDefault(metroImportAll, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSwitchState(arg0) {
   let closure_129_0;
   let first;
   let tmp4;
@@ -106,7 +106,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp6 = cResult[2];
   }
   return tmp6;
-}) : (() => {
+}) : (function useSwitchState() {
   let flag = arg0;
   if (arg0 === undefined) {
     flag = true;
@@ -122,7 +122,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Switch() {
   let TableSwitchRow;
   let items;
   let items1;
@@ -152,9 +152,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] !== tmp4) {
     const obj2 = { title: "Emoji", hasIcons: false, children: metroRequire(TableSwitchRow, obj3) };
-    const TableRowGroup = tmp(6081).TableRowGroup;
+    const TableRowGroup = tmp(6267).TableRowGroup;
     obj3 = { label: "Show emoji reactions on messages", subLabel: "Show more information in less space" };
-    TableSwitchRow = tmp(6705).TableSwitchRow;
+    TableSwitchRow = tmp(6882).TableSwitchRow;
     const merged = Object.assign(tmp4);
     const tmp18 = metroRequire(TableRowGroup, obj2);
     cResult[2] = tmp4;
@@ -165,7 +165,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[4] !== tmp5) {
     const obj4 = { label: "When posted as links to chat" };
-    const TableSwitchRow2 = tmp(6705).TableSwitchRow;
+    const TableSwitchRow2 = tmp(6882).TableSwitchRow;
     const merged1 = Object.assign(tmp5);
     const tmp24 = metroRequire(TableSwitchRow2, obj4);
     cResult[4] = tmp5;
@@ -176,7 +176,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[6] !== tmp6) {
     const obj5 = { label: "When uploaded directly to Discord" };
-    const TableSwitchRow3 = tmp(6705).TableSwitchRow;
+    const TableSwitchRow3 = tmp(6882).TableSwitchRow;
     const merged2 = Object.assign(tmp6);
     const tmp30 = metroRequire(TableSwitchRow3, obj5);
     cResult[6] = tmp6;
@@ -187,7 +187,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[8] !== tmp7) {
     const obj6 = { label: "With image descriptions" };
-    const TableSwitchRow4 = tmp(6705).TableSwitchRow;
+    const TableSwitchRow4 = tmp(6882).TableSwitchRow;
     const merged3 = Object.assign(tmp7);
     const tmp36 = metroRequire(TableSwitchRow4, obj6);
     cResult[8] = tmp7;
@@ -234,7 +234,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[13] = tmp31;
   cResult[14] = tmp42;
   tmp41 = tmp42;
-}) : (() => {
+}) : (function Switch() {
   let TableSwitchRow;
   let items;
   let items1;
@@ -273,7 +273,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return metroImportDefault(metroImportAll, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCheckboxState(arg0) {
   let closure_129_0;
   let first;
   let tmp4;
@@ -300,7 +300,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp6 = cResult[2];
   }
   return tmp6;
-}) : (() => {
+}) : (function useCheckboxState() {
   let flag = arg0;
   if (arg0 === undefined) {
     flag = true;
@@ -316,7 +316,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function InlineCheckbox(arg0) {
   let checked;
   let description;
   let label;
@@ -353,7 +353,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = required;
   cResult[5] = tmp8;
   tmp7 = tmp8;
-}) : ((startChecked) => {
+}) : (function InlineCheckbox(startChecked) {
   let checked;
   let description;
   let label;
@@ -369,7 +369,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroRequire(Checkbox.Checkbox, { label, description, required, checked, onToggle });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function InlineCheckboxDemo() {
   let first;
   let items;
   const obj = react2;
@@ -384,14 +384,14 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => {
+}) : (function InlineCheckboxDemo() {
   let items;
   const obj = { children: items };
   items = [metroRequire(Text_Text.Text, { variant: "heading-lg/bold", children: "Inline Checkbox" }), metroRequire(closure_14, { label: "Checkbox label", description: "This is a description", startChecked: true }), metroRequire(closure_14, { label: "Trust google.com links from now on" }), metroRequire(closure_14, { label: "I agree to the Terms of Service", required: true })];
   return metroImportDefault(metroImportAll, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckboxRowDemo() {
   let items;
   let items1;
   let tmp4;
@@ -413,7 +413,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { children: items };
     items = [tmp4, tmp5, ];
     const obj3 = { title: "Who can send you a friend request?", hasIcons: false, children: items1 };
-    const TableRowGroup = tmp(6081).TableRowGroup;
+    const TableRowGroup = tmp(6267).TableRowGroup;
     const obj4 = { label: "Everyone", subLabel: "Anyone can send you a friend request", checked: false, onPress: NOOP };
     items1 = [metroRequire(TableCheckboxRow.TableCheckboxRow, obj4), , ];
     const obj5 = { label: "Friends of Friends", subLabel: "Anyone who is friends with your friends can send you a friend request", checked: true, onPress: NOOP };
@@ -428,7 +428,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = cResult[2];
   }
   return tmp9;
-}) : (() => {
+}) : (function CheckboxRowDemo() {
   let items;
   let items1;
   const obj = { children: items };
@@ -446,7 +446,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return metroImportDefault(metroImportAll, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function SliderDemo() {
   let Slider;
   let first;
   let items;
@@ -465,9 +465,9 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { children: items };
     items = [first, ];
     const obj3 = { start: true, end: true, label: "Volume", subLabel: metroRequire(Slider, obj4) };
-    const TableRow = tmp(6000).TableRow;
+    const TableRow = tmp(6184).TableRow;
     obj4 = { startIcon: metroRequire(VoiceXIcon.VoiceXIcon, {}), endIcon: metroRequire(VoiceNormalIcon.VoiceNormalIcon, {}), onValueChange: NOOP };
-    Slider = tmp(14294).Slider;
+    Slider = tmp(14118).Slider;
     items[1] = metroRequire(TableRow, obj3);
     const tmp12 = metroImportDefault(metroImportAll, obj2);
     cResult[1] = tmp12;
@@ -476,7 +476,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[1];
   }
   return tmp7;
-}) : (() => {
+}) : (function SliderDemo() {
   let Slider;
   let items;
   let obj3;
@@ -490,7 +490,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return metroImportDefault(metroImportAll, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsDesignSystemFormPrimitives() {
   let items;
   let obj3;
   let tmp21;
@@ -533,7 +533,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp21 = cResult[6];
   }
   return tmp21;
-}) : (() => {
+}) : (function UserSettingsDesignSystemFormPrimitives() {
   let Stack;
   let items;
   let obj2;

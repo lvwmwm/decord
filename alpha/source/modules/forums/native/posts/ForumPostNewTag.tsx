@@ -1,27 +1,25 @@
-// Module ID: 11643
-// Function ID: 11644
+// Module ID: 11708
+// Function ID: 11709
 // Name: ForumPostNewTag
-// Dependencies: [19, 21, 4896, 587, 558, 576, 1188, 2]
+// Dependencies: [19, 21, 5090, 587, 558, 576, 1200, 2]
 
-// Module 11643 (ForumPostNewTag)
+// Module 11708 (ForumPostNewTag)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let containerStyle;
-
 let obj2;
 let tmp;
-const native = tmp(1188);
+const native = tmp(1200);
 const jsx = Fragment.jsx;
 let obj = { container: obj2 };
 obj2 = { paddingVertical: 1, backgroundColor: nativeDefault.colors.BADGE_BACKGROUND_BRAND };
 let closure_3 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((containerStyle) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostNewTag(containerStyle) {
   const obj = react2;
   const cResult = obj.c(3);
   containerStyle = containerStyle.containerStyle;
@@ -39,7 +37,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((containerStyle) =>
   cResult[1] = tmp4.container;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((containerStyle) => {
+}) : (function ForumPostNewTag(containerStyle) {
   containerStyle = containerStyle.containerStyle;
   const items = [containerStyle, closure_3().container];
   closure_3();

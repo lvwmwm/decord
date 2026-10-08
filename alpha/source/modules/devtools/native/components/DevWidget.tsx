@@ -1,22 +1,22 @@
-// Module ID: 15879
-// Function ID: 15880
+// Module ID: 16138
+// Function ID: 16139
 // Name: DevWidget
-// Dependencies: [19, 7216, 585, 21, 4896, 587, 558, 576, 4618, 9786, 11661, 6147, 5604, 5605, 14422, 15421, 5916, 15880, 15420, 2]
+// Dependencies: [19, 7396, 585, 21, 5090, 587, 558, 576, 4810, 10350, 11726, 6326, 5374, 5378, 14648, 15683, 6189, 16139, 15682, 2]
 
-// Module 15879 (DevWidget)
+// Module 16138 (DevWidget)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 585 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import spring from "spring" /* 5604 */;
-import springPresets from "springPresets" /* 5605 */;
-import Pressables from "Pressables" /* 5916 */;
-import StaffBadgeIcon from "StaffBadgeIcon" /* 15421 */;
-import VEVOODefault from "VEVOO" /* 15880 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import spring from "spring" /* 5374 */;
+import springPresets from "springPresets" /* 5378 */;
+import Pressables from "Pressables" /* 6189 */;
+import StaffBadgeIcon from "StaffBadgeIcon" /* 15683 */;
+import VEVOODefault from "VEVOO" /* 16139 */;
 import react from "react" /* 19 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7216 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7396 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ const __initData8 = { code: "function DevWidgetTsx8(event){const{getClampedPosit
 const __initData9 = { code: "function DevWidgetTsx9(){const{runOnJS,onChangePosition,x,y}=this.__closure;runOnJS(onChangePosition)({x:x.get(),y:y.get()});}" };
 const __initData10 = { code: "function DevWidgetTsx10(){const{getClampedPosition,x,y,withSpring,springUnclamped}=this.__closure;const{x:translateX,y:translateY}=getClampedPosition(x.get(),y.get());return{transform:[{translateX:withSpring(translateX,springUnclamped)},{translateY:withSpring(translateY,springUnclamped)}]};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function DraggableContainer(arg0) {
   let closure_0;
   let closure_1;
   let closure_10;
@@ -391,7 +391,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = tmp9;
   cResult[5] = fn;
   tmp10 = fn;
-}) : ((arg0) => {
+}) : (function DraggableContainer(arg0) {
   let closure_0;
   let closure_1;
   let fn2;
@@ -505,7 +505,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 const memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_21 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function DevWidgetContent() {
   let first;
   let tmp6;
   let tmp9;
@@ -539,7 +539,7 @@ let closure_21 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = cResult[3];
   }
   return tmp9;
-}) : (() => {
+}) : (function DevWidgetContent() {
   let obj = {
     style: closure_9().widget,
     accessibilityRole: "button",
@@ -555,7 +555,7 @@ let closure_21 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return metroRequire(PressableOpacity, obj);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevWidget() {
   let items;
   let obj = react2;
   const cResult = obj.c(11);
@@ -618,7 +618,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = sharedValue1;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : (() => {
+}) : (function DevWidget() {
   let items;
   let obj = ReanimatedRexport;
   const sharedValue = obj.useSharedValue(DevToolsSettingsStore.devWidgetPosition.x);

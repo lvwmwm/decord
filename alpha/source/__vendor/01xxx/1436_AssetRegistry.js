@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 256, height: 256, scales: [1], hash: "c3359f2e4aef01a86f637754d719562b", name: "icon-group", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/group_dms", width: 96, height: 96, scales: [1], hash: "62009eabd9baf2e6b0ee2431e3de721e", name: "icon0", type: "png" });

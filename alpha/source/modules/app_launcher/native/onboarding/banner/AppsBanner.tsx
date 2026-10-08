@@ -1,24 +1,24 @@
-// Module ID: 11691
-// Function ID: 11692
+// Module ID: 11756
+// Function ID: 11757
 // Name: AppsBanner
-// Dependencies: [19, 17, 21, 4896, 558, 576, 11692, 1126, 11689, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 11757, 1126, 11754, 2]
 
-// Module 11691 (AppsBanner)
+// Module 11756 (AppsBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import BannerBaseDefault from "BannerBase" /* 11689 */;
-import OnboardingAppsRocketDefault from "OnboardingAppsRocket" /* 11692 */;
+import BannerBaseDefault from "BannerBase" /* 11754 */;
+import OnboardingAppsRocketDefault from "OnboardingAppsRocket" /* 11757 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ rocketIconContainer: { position: "absolute", top: -20 }, rocketIcon: { width: 90, height: 90 } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppsBaner() {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(8);
@@ -62,7 +62,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = tmp5;
   cResult[4] = tmp10;
   tmp9 = tmp10;
-}) : (() => {
+}) : (function AppsBaner() {
   const tmp = closure_5();
   BannerBaseDefault;
   const intl = intl2.intl;

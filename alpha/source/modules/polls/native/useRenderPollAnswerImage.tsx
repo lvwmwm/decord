@@ -1,20 +1,20 @@
-// Module ID: 11869
-// Function ID: 11870
+// Module ID: 11941
+// Function ID: 11942
 // Name: useRenderPollAnswerImage
-// Dependencies: [32, 19, 17, 7044, 7280, 1380, 21, 558, 576, 504, 11849, 5981, 4532, 1402, 6632, 2]
+// Dependencies: [32, 19, 17, 7232, 7880, 1392, 21, 558, 576, 504, 11933, 6164, 4724, 1414, 6809, 2]
 
-// Module 11869 (useRenderPollAnswerImage)
+// Module 11941 (useRenderPollAnswerImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import EmojiTypes from "EmojiTypes" /* 4532 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import EmojiDefault from "Emoji" /* 6632 */;
-import DraftStore from "DraftStore" /* 7044 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import EmojiTypes from "EmojiTypes" /* 4724 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import EmojiDefault from "Emoji" /* 6809 */;
+import DraftStore from "DraftStore" /* 7232 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7280 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7880 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ const ActivityIndicator = react_native.ActivityIndicator;
 const DraftType = DraftStore.DraftType;
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, mediaAttachmentState, arg3, width) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRenderPollAnswerImage(arg0, arg1, mediaAttachmentState, arg3, width) {
   let closure_0;
   let closure_1;
   let first;
@@ -93,7 +93,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, mediaA
           tmp25 = cResult[13];
           tmp26 = cResult[14];
         }
-        let str = emoji.type === tmp(4532).EmojiTypes.UNICODE ? emoji.surrogates : emoji.name;
+        let str = emoji.type === tmp(4724).EmojiTypes.UNICODE ? emoji.surrogates : emoji.name;
         if (str == null) {
           str = "";
         }
@@ -117,7 +117,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, mediaA
           cResult[18] = tmp25;
           cResult[19] = tmp26;
           cResult[20] = str;
-          class E {
+          class I {
             constructor() {
               return closure_7.getUpload(closure_0, closure_1, DraftType.Poll);
             }
@@ -170,7 +170,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, mediaA
       const tmp22 = jsx(FastImageDefault, { style: tmp17, source: tmp18 });
       cResult[9] = tmp17;
       cResult[10] = tmp18;
-      class E {
+      class I {
         constructor() {
           return closure_7.getUpload(closure_0, closure_1, DraftType.Poll);
         }
@@ -186,7 +186,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, mediaA
       return tmp39;
     }
     const obj7 = { renderImage: null, upload: stateFromStores, setUploadSize: tmp13 };
-    class E {
+    class I {
       constructor() {
         return closure_7.getUpload(closure_0, closure_1, DraftType.Poll);
       }
@@ -196,16 +196,16 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, mediaA
     cResult[25] = obj7;
     tmp39 = obj7;
   }
-  class E {
+  class I {
     constructor() {
       return closure_7.getUpload(closure_0, closure_1, DraftType.Poll);
     }
   }
   cResult[1] = arg0;
   cResult[2] = arg1;
-  cResult[3] = E;
-  tmp6 = E;
-}) : ((arg0, arg1, mediaAttachmentState, arg3, arg4) => {
+  cResult[3] = I;
+  tmp6 = I;
+}) : (function useRenderPollAnswerImage(arg0, arg1, mediaAttachmentState, arg3, arg4) {
   let closure_0;
   let closure_3;
   let closure_4;
@@ -230,7 +230,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, mediaA
       status = mediaAttachmentState.status;
     }
   }
-  const tmp8 = status === tmp(11849).PollMediaUploadAttachmentStatus.PREPARING;
+  const tmp8 = status === tmp(11933).PollMediaUploadAttachmentStatus.PREPARING;
   closure_7 = tmp8;
   let obj3 = {
     renderImage: obj2.useMemo(() => {

@@ -1,16 +1,16 @@
-// Module ID: 17726
-// Function ID: 17727
+// Module ID: 18013
+// Function ID: 18014
 // Name: guild_automod/ExperimentUtils
-// Dependencies: [558, 576, 17727, 6758, 2]
+// Dependencies: [558, 576, 18014, 6934, 2]
 
-// Module 17726 (guild_automod/ExperimentUtils)
+// Module 18013 (guild_automod/ExperimentUtils)
 import react from "react" /* 576 */;
-import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6758 */;
-import AutomodExperiment from "AutomodExperiment" /* 17727 */;
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6934 */;
+import AutomodExperiment from "AutomodExperiment" /* 18014 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsApplicationRuleEnabled(guildId) {
   let tmp4;
   let tmp5;
   const obj = react;
@@ -23,7 +23,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   } else {
     tmp4 = cResult[1];
   }
-  const AutomodApplicationRules = tmp(17727).AutomodApplicationRules;
+  const AutomodApplicationRules = tmp(18014).AutomodApplicationRules;
   let enabled = AutomodApplicationRules.useConfig(tmp4).enabled;
   if (cResult[2] !== guildId) {
     const obj3 = { guildId, location: "automod_settings" };
@@ -38,7 +38,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     enabled = tmpResult.useIsConjureGuildEnabled(tmp5);
   }
   return enabled;
-}) : ((guildId) => {
+}) : (function useIsApplicationRuleEnabled(guildId) {
   const AutomodApplicationRules = AutomodExperiment.AutomodApplicationRules;
   const obj = { guildId, location: "automod_settings" };
   let enabled = AutomodApplicationRules.useConfig(obj).enabled;

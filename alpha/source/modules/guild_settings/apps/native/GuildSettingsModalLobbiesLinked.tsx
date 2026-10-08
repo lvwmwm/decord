@@ -1,19 +1,19 @@
-// Module ID: 17818
-// Function ID: 17819
+// Module ID: 18105
+// Function ID: 18106
 // Name: GuildSettingsModalLobbiesLinked
-// Dependencies: [19, 4525, 1377, 1085, 21, 558, 576, 1490, 6670, 6000, 5049, 5819, 6081, 4586, 587, 17708, 12, 5600, 8924, 6543, 2]
+// Dependencies: [19, 4717, 1389, 1085, 21, 558, 576, 1502, 6847, 6184, 5417, 8134, 6267, 4778, 587, 17995, 12, 5373, 8555, 6719, 2]
 
-// Module 17818 (GuildSettingsModalLobbiesLinked)
+// Module 18105 (GuildSettingsModalLobbiesLinked)
 import Constants from "Constants" /* 1085 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, channels, dependencyMap, navigation;
+let _require, dependencyMap, navigation, obj1;
 
 let metroImportAll;
 let metroImportDefault;
@@ -21,7 +21,7 @@ let metroRequire;
 const GuildSettingsSections = Constants.GuildSettingsSections;
 ({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((channels) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SyncingToGamesItem(channels) {
   let obj = channels(navigation[6]);
   const cResult = obj.c(11);
   const tmp = channels;
@@ -53,7 +53,23 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((channels) => {
           }
           return tmp9;
         }
-        let obj4 = { title: name, hasIcons: true, children: tmp6 };
+        let obj4 = { title: name, hasIcons: true, children: null };
+        class I {
+          constructor(arg0) {
+            closure_0 = channels;
+            obj = { label: null, icon: null, arrow: true, onPress: null };
+            TableRow = channels(closure_2[9]).TableRow;
+            obj2 = channels(closure_2[10]);
+            obj.label = obj2.computeChannelName(channels, closure_1_4, closure_1_3);
+            obj1 = { IconComponent: null };
+            Icon = channels(closure_2[9]).TableRow.Icon;
+            obj4 = channels(closure_2[11]);
+            obj1.IconComponent = obj4.getChannelIconComponent(channels);
+            obj.icon = closure_1_6(Icon, obj1);
+            obj.onPress = function onPress() { /* body not rendered: F150828 */ };
+            return closure_1_6(TableRow, obj, channels.id);
+          }
+        }
         const tmp11 = closure_6(tmp(tmp2[12]).TableRowGroup, obj4);
         cResult[8] = name;
         cResult[9] = tmp6;
@@ -70,64 +86,64 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((channels) => {
         const mapped = channels.map(tmp7);
         cResult[0] = channels;
         cResult[1] = isOnlySection;
+        class I {
+          constructor(arg0) {
+            closure_0 = channels;
+            obj = { label: null, icon: null, arrow: true, onPress: null };
+            TableRow = channels(closure_2[9]).TableRow;
+            obj2 = channels(closure_2[10]);
+            obj.label = obj2.computeChannelName(channels, closure_1_4, closure_1_3);
+            obj1 = { IconComponent: null };
+            Icon = channels(closure_2[9]).TableRow.Icon;
+            obj4 = channels(closure_2[11]);
+            obj1.IconComponent = obj4.getChannelIconComponent(channels);
+            obj.icon = closure_1_6(Icon, obj1);
+            obj.onPress = function onPress() { /* body not rendered: F150828 */ };
+            return closure_1_6(TableRow, obj, channels.id);
+          }
+        }
         cResult[2] = navigation;
         cResult[3] = mapped;
         tmp6 = mapped;
       }
     }
-    const fn = function y(id) {
-      let Icon;
-      let obj2;
-      let obj3;
-      let obj4;
-      const channel = id;
-      let obj = {
-        label: obj2.computeChannelName(id, UserStore, RelationshipStore),
-        icon: closure_1_6(Icon, obj3),
-        arrow: true,
-        onPress() {
-          let num;
-          const obj = { channel, numScreensToPop: num };
-          num = 1;
-          const push = navigation.push;
-          const EDIT_LINKED_LOBBY = GuildSettingsSections.EDIT_LINKED_LOBBY;
-          if (isOnlySection) {
-            num = 1;
-            if (1 === channels.length) {
-              num = 2;
-            }
-          }
-          push(EDIT_LINKED_LOBBY, obj);
-        }
-      };
-      const TableRow = channels(navigation[9]).TableRow;
-      obj2 = channels(navigation[10]);
-      obj3 = { IconComponent: obj4.getChannelIconComponent(id) };
-      Icon = channels(navigation[9]).TableRow.Icon;
-      obj4 = channels(navigation[11]);
-      return closure_1_6(TableRow, obj, id.id);
-    };
+    class I {
+      constructor(arg0) {
+        closure_0 = channels;
+        obj = { label: null, icon: null, arrow: true, onPress: null };
+        TableRow = channels(closure_2[9]).TableRow;
+        obj2 = channels(closure_2[10]);
+        obj.label = obj2.computeChannelName(channels, closure_1_4, closure_1_3);
+        obj1 = { IconComponent: null };
+        Icon = channels(closure_2[9]).TableRow.Icon;
+        obj4 = channels(closure_2[11]);
+        obj1.IconComponent = obj4.getChannelIconComponent(channels);
+        obj.icon = closure_1_6(Icon, obj1);
+        obj.onPress = function onPress() { /* body not rendered: F150828 */ };
+        return closure_1_6(TableRow, obj, channels.id);
+      }
+    }
     let num = 4;
     cResult[4] = channels.length;
     cResult[5] = isOnlySection;
     cResult[6] = navigation;
-    cResult[7] = fn;
-    tmp7 = fn;
+    cResult[7] = I;
+    tmp7 = I;
   }
-}) : ((channels) => {
+}) : (function SyncingToGamesItem(channels) {
   let closure_2;
   channels = channels.channels;
   const isOnlySection = channels.isOnlySection;
   const applicationId = channels.applicationId;
-  let obj = channels(1490);
+  let obj = channels(1502);
   dependencyMap = obj.useNavigation();
-  let obj2 = channels(6670);
+  let obj2 = channels(6847);
   const getOrFetchApplication = obj2.useGetOrFetchApplication(applicationId);
   let tmp5Result = null;
   const tmp = channels;
   if (0 !== channels.length) {
     let name;
-    const TableRowGroup = tmp(6081).TableRowGroup;
+    const TableRowGroup = tmp(6267).TableRowGroup;
     const tmp5 = closure_6;
     if (getOrFetchApplication != null) {
       name = getOrFetchApplication.name;
@@ -173,7 +189,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((channels) => {
   return tmp5Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsModalLobbiesLinked(arg0) {
   let arr;
   let closure_0;
   let contentContainerStyle;
@@ -194,7 +210,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp9;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function l(linkedLobby) {
+      const fn = function t(linkedLobby) {
         linkedLobby = linkedLobby.linkedLobby;
         let application_id;
         if (linkedLobby != null) {
@@ -293,7 +309,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp21 = tmp23;
     }
     const obj8 = { style: tmp15, spacing: arr(587).space.PX_24, children: tmp16 };
-    const Stack = tmp(5600).Stack;
+    const Stack = tmp(5373).Stack;
     const tmp20 = closure_6(Stack, obj8);
     cResult[13] = tmp15;
     cResult[14] = tmp16;
@@ -308,7 +324,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[11] = tmp7;
   cResult[12] = mapped;
   tmp16 = mapped;
-}) : ((arg0) => {
+}) : (function GuildSettingsModalLobbiesLinked(arg0) {
   let Stack;
   let _undefined;
   let contentContainerStyle;

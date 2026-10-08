@@ -1,12 +1,12 @@
-// Module ID: 11741
-// Function ID: 11742
+// Module ID: 11807
+// Function ID: 11808
 // Name: useAnimatedScrollLock
-// Dependencies: [19, 1369, 558, 576, 4618, 2]
+// Dependencies: [19, 1381, 558, 576, 4810, 2]
 
-// Module 11741 (useAnimatedScrollLock)
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+// Module 11807 (useAnimatedScrollLock)
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
 import react from "react" /* 19 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ const __initData6 = { code: "function onEndDrag_useAnimatedScrollLockTsx7(event)
 const __initData7 = { code: "function onMomentumEnd_useAnimatedScrollLockTsx8(event_0,context_0){const{IS_ANDROID,scrollLocked}=this.__closure;if(IS_ANDROID){var _context_0$momentumEn;let count=(_context_0$momentumEn=context_0===null||context_0===void 0?void 0:context_0.momentumEndCount)!==null&&_context_0$momentumEn!==void 0?_context_0$momentumEn:0;count+=1;if(count===3){scrollLocked.set(false);}else if(context_0!=null){context_0.momentumEndCount=count;}}else{scrollLocked.set(false);}}" };
 const __initData8 = { code: "function onScroll_useAnimatedScrollLockTsx9(event_1){const{isDragScrolling,IS_ANDROID,scrollTo,scrollerRef,scrollOffsetValue,scrollLocked,onScrollHandler,runOnJS,onScrollHandlerWorkletized}=this.__closure;var _onScrollHandlerWorkl;const newScrollPosition=event_1.contentOffset.y;if(isDragScrolling.get()!==true){let scrollPosition=newScrollPosition;if(IS_ANDROID&&scrollPosition<0){scrollPosition=0;scrollTo(scrollerRef,0,0,false);}scrollOffsetValue.set(scrollPosition);}else{const isUp=newScrollPosition<scrollOffsetValue.get();if(scrollLocked.get()||isUp&&newScrollPosition<=0){if(!scrollLocked.get()){scrollLocked.set(true);}scrollTo(scrollerRef,0,0,false);scrollOffsetValue.set(0);}else{scrollOffsetValue.set(newScrollPosition);}}const{width:width,height:height}=event_1.layoutMeasurement;const{width:contentWidth,height:contentHeight}=event_1.contentSize;onScrollHandler!=null&&runOnJS(onScrollHandler)({width:width,height:height,offset:newScrollPosition,contentWidth:contentWidth,contentHeight:contentHeight});(_onScrollHandlerWorkl=onScrollHandlerWorkletized)===null||_onScrollHandlerWorkl===void 0||_onScrollHandlerWorkl({width:width,height:height,offset:newScrollPosition,contentWidth:contentWidth,contentHeight:contentHeight});}" };
 const __initData9 = { code: "function useAnimatedScrollLockTsx10(){const{scrollLocked}=this.__closure;return{showsVerticalScrollIndicator:!scrollLocked.get()};}" };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAnimatedScrollLock(arg0) {
   let fn;
   let fn2;
   let fn3;
@@ -204,7 +204,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = animatedRef;
   cResult[4] = obj6;
   tmp16 = obj6;
-}) : (() => {
+}) : (function useAnimatedScrollLock() {
   let fn;
   let fn2;
   let fn3;

@@ -1,14 +1,14 @@
-// Module ID: 4517
-// Function ID: 4518
+// Module ID: 4709
+// Function ID: 4710
 // Name: JoinedThreadsStore
-// Dependencies: [2055, 502, 4518, 12, 504, 584, 2]
+// Dependencies: [2067, 502, 4710, 12, 504, 584, 2]
 
-// Module 4517 (JoinedThreadsStore)
+// Module 4709 (JoinedThreadsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import MuteTimersDefault from "MuteTimers" /* 4518 */;
+import ChannelRecord from "ChannelRecord" /* 2067 */;
+import MuteTimersDefault from "MuteTimers" /* 4710 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
@@ -161,9 +161,9 @@ class JoinedThreadsStoreClass extends Store {
   hasJoined(id) {
     return id in obj;
   }
-  joinTimestamp(id) {
+  joinTimestamp(id2) {
     let joinTimestamp;
-    if (obj[id] != null) {
+    if (obj[id2] != null) {
       joinTimestamp = tmp.joinTimestamp;
     }
     return joinTimestamp;
@@ -312,7 +312,7 @@ obj = {
     if (tmp) {
       if (null !== guildId) {
         if (isJoining) {
-          obj = { threadId: id, guildId, flags: 0, muted: true, muteConfig: { end_time: "r" }, joinTimestamp: date };
+          obj = { threadId: id, guildId, flags: 0, muted: true, muteConfig: { end_time: "create" }, joinTimestamp: date };
           const _Date = Date;
           const self = this;
           const self2 = this;

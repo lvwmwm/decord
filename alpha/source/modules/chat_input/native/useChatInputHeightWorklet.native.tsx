@@ -1,12 +1,12 @@
-// Module ID: 11658
-// Function ID: 11659
+// Module ID: 11723
+// Function ID: 11724
 // Name: useChatInputHeightWorklet
-// Dependencies: [19, 1369, 558, 576, 4618, 11659, 11660, 11661, 2]
+// Dependencies: [19, 1381, 558, 576, 4810, 11724, 11725, 11726, 2]
 // Exports: getIsChatInputHeightWorkletEnabled
 
-// Module 11658 (useChatInputHeightWorklet)
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import useChatInputMaxHeight from "useChatInputMaxHeight" /* 11659 */;
+// Module 11723 (useChatInputHeightWorklet)
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import useChatInputMaxHeight from "useChatInputMaxHeight" /* 11724 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ let __initData2 = { code: "function useChatInputHeightWorkletNativeTsx3(maxHeigh
 const __initData3 = { code: "function useChatInputHeightWorkletNativeTsx4(event){const{contentSize,textFieldHeight,getChatInputHeightAnimationTimingWorklet,textFieldMinHeight}=this.__closure;contentSize.set(event.height);textFieldHeight.set(getChatInputHeightAnimationTimingWorklet(event.height,textFieldMinHeight.get()));}" };
 const __initData4 = { code: "function useChatInputHeightWorkletNativeTsx5(){const{keyboardState,windowDimensions,getChatInputMaxHeightWorklet}=this.__closure;keyboardState.get();windowDimensions.get();return getChatInputMaxHeightWorklet();}" };
 const __initData5 = { code: "function useChatInputHeightWorkletNativeTsx6(maxHeight,maxHeightPrev){const{isWorkletDriven,contentSize,textFieldHeight,getChatInputHeightAnimationTimingWorklet,textFieldMinHeight}=this.__closure;if(!isWorkletDriven||maxHeightPrev==null||maxHeight===maxHeightPrev){return;}if(contentSize.get()===0){return;}textFieldHeight.set(getChatInputHeightAnimationTimingWorklet(contentSize.get(),textFieldMinHeight.get()));}" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((textFieldHeight) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChatInputHeightWorklet(textFieldHeight) {
   let closure_5;
   let closure_6;
   let isAndroidResult;
@@ -171,7 +171,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((textFieldHeight) =
   cResult[3] = fn;
   tmp5 = fn;
   ({ contentSize: sharedValue, textFieldHeight, getChatInputHeightAnimationTimingWorklet: tmp(sharedValue[5]).getChatInputHeightAnimationTimingWorklet, textFieldMinHeight });
-}) : ((textFieldHeight) => {
+}) : (function useChatInputHeightWorklet(textFieldHeight) {
   let items;
   let items1;
   textFieldHeight = textFieldHeight.textFieldHeight;

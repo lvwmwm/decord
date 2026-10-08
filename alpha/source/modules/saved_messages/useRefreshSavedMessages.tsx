@@ -1,16 +1,16 @@
-// Module ID: 13144
-// Function ID: 13145
+// Module ID: 12661
+// Function ID: 12662
 // Name: useRefreshSavedMessages
-// Dependencies: [19, 558, 576, 11348, 2]
+// Dependencies: [19, 558, 576, 12662, 2]
 
-// Module 13144 (useRefreshSavedMessages)
+// Module 12661 (useRefreshSavedMessages)
 import react2 from "react" /* 576 */;
-import SavedMessagesActions from "SavedMessagesActions" /* 11348 */;
+import SavedMessagesActions from "SavedMessagesActions" /* 12662 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRefreshSavedMessages() {
   let tmp2;
   let tmp3;
   let obj = react2;
@@ -29,7 +29,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     [tmp2, tmp3] = cResult;
   }
   const effect = react.useEffect(tmp2, tmp3);
-}) : (() => {
+}) : (function useRefreshSavedMessages() {
   const effect = react.useEffect(() => {
     const obj = SavedMessagesActions;
     const andUpdateSavedMessages = obj.fetchAndUpdateSavedMessages();

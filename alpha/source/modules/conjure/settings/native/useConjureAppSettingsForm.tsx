@@ -1,29 +1,29 @@
-// Module ID: 16617
-// Function ID: 16618
+// Module ID: 16876
+// Function ID: 16877
 // Name: useConjureAppSettingsForm
-// Dependencies: [5, 32, 19, 17, 4513, 2074, 4525, 1377, 12924, 12923, 8734, 21, 4896, 587, 504, 1126, 3753, 9010, 6079, 6078, 6081, 5997, 6105, 4892, 5601, 558, 576, 6756, 6000, 6009, 5049, 4860, 12118, 2]
+// Dependencies: [5, 32, 19, 17, 4705, 2086, 4717, 1389, 13073, 13072, 11251, 21, 5090, 587, 504, 1126, 3827, 12376, 6265, 6264, 6267, 6181, 6283, 5086, 5375, 558, 576, 6932, 6184, 6195, 5417, 5054, 12196, 2]
 // Exports: default
 
-// Module 16617 (useConjureAppSettingsForm)
+// Module 16876 (useConjureAppSettingsForm)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import _modDef3753 from "module_3753" /* 3753 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4860 */;
-import ConjureUtils from "ConjureUtils" /* 6756 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 12118 */;
+import _modDef3827 from "module_3827" /* 3827 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5054 */;
+import ConjureUtils from "ConjureUtils" /* 6932 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 12196 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4513 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
-import ConjureChatStore from "ConjureChatStore" /* 12924 */;
-import ConjureConnectionStore_mod from "ConjureConnectionStore" /* 12923 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 8734 */;
+import GuildChannelStore from "GuildChannelStore" /* 4705 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
+import ConjureChatStore from "ConjureChatStore" /* 13073 */;
+import ConjureConnectionStore_mod from "ConjureConnectionStore" /* 13072 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 11251 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -286,7 +286,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
                 guild: GuildStore.getGuild(stateFromStores),
                 channels,
                 selectedChannel: found,
-                noChannelOptionLabel: intl.string(_modDef3753["jtBVV+"]),
+                noChannelOptionLabel: intl.string(_modDef3827["jtBVV+"]),
                 onSelect(id) {
                   let str;
                   const tmp = closure_1_4;
@@ -339,7 +339,7 @@ export default function useConjureAppSettingsForm(projectId) {
   let notifyAgent;
   let obj10;
   let scopeKeys;
-  const f146401 = (item) => null != item;
+  const f147893 = (item) => null != item;
   projectId = projectId.projectId;
   ({ scopeKeys, note, notifyAgent } = projectId);
   if (notifyAgent === undefined) {
@@ -397,7 +397,7 @@ export default function useConjureAppSettingsForm(projectId) {
       stringResult = intl.string(notifyAgent(flag[16])["4kCM6H"]);
     }
     items[1] = stringResult;
-    found = items.filter(f146401);
+    found = items.filter(f147893);
     if (0 !== found.length) {
       joined = found.join(" ");
     }
@@ -561,7 +561,7 @@ export default function useConjureAppSettingsForm(projectId) {
       stringResult = intl.string(notifyAgent(flag[16])["4kCM6H"]);
     }
     items[1] = stringResult;
-    found = items.filter(f146401);
+    found = items.filter(f147893);
     let joined;
     if (0 !== found.length) {
       joined = found.join(" ");

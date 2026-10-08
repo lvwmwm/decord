@@ -1,24 +1,24 @@
-// Module ID: 16807
-// Function ID: 16808
+// Module ID: 17087
+// Function ID: 17088
 // Name: NavTTISurfaceProvider
-// Dependencies: [109, 19, 17, 4895, 21, 558, 576, 16527, 16520, 16528, 16514, 16523, 504, 16521, 2]
+// Dependencies: [109, 19, 17, 5089, 21, 558, 576, 16782, 16780, 16783, 16774, 11514, 504, 11513, 2]
 
-// Module 16807 (NavTTISurfaceProvider)
+// Module 17087 (NavTTISurfaceProvider)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import useComponentRenderSpan from "useComponentRenderSpan" /* 16520 */;
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 16523 */;
-import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 16527 */;
-import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 16528 */;
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 11514 */;
+import useComponentRenderSpan from "useComponentRenderSpan" /* 16780 */;
+import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 16782 */;
+import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 16783 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 4895 */;
+import DevSettingsStore from "DevSettingsStore" /* 5089 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, importDefault;
+let _require, dependencyMap, importDefault, tmp3Result;
 
 let closure_12;
 let unpackModuleId;
@@ -29,7 +29,7 @@ let closure_6 = ["name", "navigationKey", "definition", "descendantTracking", "v
 const View = react_native.View;
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavTTISurfaceView(children) {
   let measurementProps;
   let onLayout;
   let tmp2;
@@ -45,6 +45,17 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     const tmp8 = _objectWithoutProperties(children, closure_3);
     cResult[0] = children;
     cResult[1] = children;
+    class I {
+      constructor(arg0) {
+        if (onLayout != null) {
+          tmpResult = tmp(children);
+        }
+        if (closure_0 != null) {
+          tmp3Result = tmp3(children);
+        }
+        return;
+      }
+    }
     cResult[2] = measurementProps;
     cResult[3] = onLayout;
     cResult[4] = tmp8;
@@ -76,8 +87,19 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
         return tmp11;
       }
     }
-    const obj2 = { onLayout: tmp4, children: tmp2 };
+    const obj2 = { onLayout: tmp4 };
     const merged = Object.assign(tmp5);
+    class I {
+      constructor(arg0) {
+        if (onLayout != null) {
+          tmpResult = tmp(children);
+        }
+        if (closure_0 != null) {
+          tmp3Result = tmp3(children);
+        }
+        return;
+      }
+    }
     const tmp17 = unpackModuleId(View, obj2);
     cResult[8] = tmp2;
     cResult[9] = tmp4;
@@ -85,19 +107,22 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     cResult[11] = tmp17;
     tmp11 = tmp17;
   }
-  const fn = function y(arg0) {
-    if (onLayout2 != null) {
-      tmp(arg0);
+  class I {
+    constructor(arg0) {
+      if (onLayout != null) {
+        tmpResult = tmp(children);
+      }
+      if (closure_0 != null) {
+        tmp3Result = tmp3(children);
+      }
+      return;
     }
-    if (closure_0 != null) {
-      tmp3(arg0);
-    }
-  };
+  }
   cResult[5] = onLayout2;
   cResult[6] = tmp4;
-  cResult[7] = fn;
-  tmp9 = fn;
-}) : ((onLayout) => {
+  cResult[7] = I;
+  tmp9 = I;
+}) : (function NavTTISurfaceView(onLayout) {
   let children;
   let measurementProps;
   onLayout = onLayout.onLayout;
@@ -123,7 +148,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   return tmp3(tmp4, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function VisualizedNavTTISurfaceView(arg0) {
   let descendantTracking;
   let items;
   let name;
@@ -226,7 +251,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = tmp9;
   cResult[6] = obj5;
   tmp10 = obj5;
-}) : ((arg0) => {
+}) : (function VisualizedNavTTISurfaceView(arg0) {
   let Children;
   let descendantTracking;
   let items;
@@ -253,7 +278,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return closure_12(closure_13, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((definition) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavTTISurfaceProvider(definition) {
   let closure_0;
   let closure_1;
   let closure_2;
@@ -291,7 +316,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((definition) => {
           tmp5 = closure_1;
           fn = obj.subscribe(closure_0, closure_1, definition);
         } else {
-          fn = function() { /* body not rendered: F146776 */ };
+          fn = function() { /* body not rendered: F148293 */ };
         }
         return fn;
       }
@@ -325,7 +350,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((definition) => {
   dependencyMap = tmp14;
   if (cResult[9] === tmp4) {
     if (cResult[12] === tmp4) {
-      class N {
+      class D {
         constructor() {
           activeTraceId = null;
           if (closure_2) {
@@ -351,7 +376,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((definition) => {
                 tmp21 = cResult[20];
               }
               const _Symbol = Symbol;
-              class N {
+              class D {
                 constructor() {
                   activeTraceId = null;
                   if (closure_2) {
@@ -367,7 +392,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((definition) => {
               }
               if (tmp22 === Symbol.for("react.memo_cache_sentinel")) {
                 const items = [];
-                class N {
+                class D {
                   constructor() {
                     activeTraceId = null;
                     if (closure_2) {
@@ -381,14 +406,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((definition) => {
                     return activeTraceId;
                   }
                 }
-                class E {
+                class M {
                   constructor() {
                     return closure_1_10.get("navigation_tti_visualizer");
                   }
                 }
                 cResult[21] = items;
-                cResult[22] = E;
-                tmp24 = E;
+                cResult[22] = M;
+                tmp24 = M;
                 tmp23 = items;
               } else {
                 tmp23 = cResult[21];
@@ -410,7 +435,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((definition) => {
                       }
                       return tmp33;
                     }
-                    class N {
+                    class D {
                       constructor() {
                         activeTraceId = null;
                         if (closure_2) {
@@ -424,7 +449,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((definition) => {
                         return activeTraceId;
                       }
                     }
-                    class E {
+                    class M {
                       constructor() {
                         return closure_1_10.get("navigation_tti_visualizer");
                       }
@@ -441,7 +466,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((definition) => {
               }
               if (stateFromStores) {
                 const obj2 = { name: null, descendantTracking: null, viewProps: tmp9 };
-                class N {
+                class D {
                   constructor() {
                     activeTraceId = null;
                     if (closure_2) {
@@ -455,7 +480,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((definition) => {
                     return activeTraceId;
                   }
                 }
-                class E {
+                class M {
                   constructor() {
                     return closure_1_10.get("navigation_tti_visualizer");
                   }
@@ -463,7 +488,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((definition) => {
                 tmp28Result = tmp28(closure_14, obj2);
               } else {
                 const obj3 = { measurementProps: {} };
-                class N {
+                class D {
                   constructor() {
                     activeTraceId = null;
                     if (closure_2) {
@@ -477,7 +502,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((definition) => {
                     return activeTraceId;
                   }
                 }
-                class E {
+                class M {
                   constructor() {
                     return closure_1_10.get("navigation_tti_visualizer");
                   }
@@ -500,7 +525,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((definition) => {
                     tmp5 = closure_1;
                     fn = obj.subscribe(closure_0, closure_1, definition);
                   } else {
-                    fn = function() { /* body not rendered: F146776 */ };
+                    fn = function() { /* body not rendered: F148293 */ };
                   }
                   return fn;
                 }
@@ -526,7 +551,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((definition) => {
             tmp5 = closure_1;
             fn = obj.subscribe(closure_0, closure_1, definition);
           } else {
-            fn = function() { /* body not rendered: F146776 */ };
+            fn = function() { /* body not rendered: F148293 */ };
           }
           return fn;
         }
@@ -535,7 +560,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((definition) => {
       cResult[20] = obj4;
       tmp21 = obj4;
     }
-    class N {
+    class D {
       constructor() {
         activeTraceId = null;
         if (closure_2) {
@@ -551,7 +576,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((definition) => {
     }
     cResult[12] = tmp4;
     cResult[13] = tmp7;
-    cResult[14] = N;
+    cResult[14] = D;
   }
   class P {
     constructor(arg0) {
@@ -564,7 +589,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((definition) => {
         tmp5 = closure_1;
         fn = obj.subscribe(closure_0, closure_1, definition);
       } else {
-        fn = function() { /* body not rendered: F146776 */ };
+        fn = function() { /* body not rendered: F148293 */ };
       }
       return fn;
     }
@@ -572,7 +597,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((definition) => {
   cResult[9] = tmp4;
   cResult[10] = tmp7;
   cResult[11] = P;
-}) : ((navigationKey) => {
+}) : (function NavTTISurfaceProvider(navigationKey) {
   let children;
   let descendantTracking;
   let isVisible;

@@ -1,21 +1,21 @@
-// Module ID: 11492
-// Function ID: 11493
+// Module ID: 11478
+// Function ID: 11479
 // Name: GuildAutomodActionCreators
-// Dependencies: [5, 2106, 2074, 4515, 1085, 11493, 1375, 11, 1282, 11486, 5076, 7040, 584, 2]
+// Dependencies: [5, 2118, 2086, 4707, 1085, 11479, 1387, 11, 1294, 11472, 5105, 7228, 584, 2]
 // Exports: clearMentionRaidDetected, createAutomodRule, deleteAutomodRule, executeAlertAction, fetchAutomodRules, removeMentionRaidRestrictionWithFeedback, updateAutomodRule, validateAutomodRule
 
-// Module 11492 (GuildAutomodActionCreators)
+// Module 11478 (GuildAutomodActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5076 */;
-import AutomodFeedback from "AutomodFeedback" /* 7040 */;
-import DataUtils from "DataUtils" /* 11493 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5105 */;
+import AutomodFeedback from "AutomodFeedback" /* 7228 */;
+import DataUtils from "DataUtils" /* 11479 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import GuildRoleStore from "GuildRoleStore" /* 2118 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ function _transformClientRuleToApiRule(id) {
   }
   const actions = id.actions;
   const obj3 = { id: id.id, name: id.name, guild_id: id.guildId, event_type: id.eventType, trigger_type: id.triggerType, trigger_metadata: result, actions: found.map(_transformClientActionToApiAction), enabled: null, creator_id: null, position: null, exempt_channels: from(exemptChannels), exempt_roles: from2Result.filter((item) => null != GuildRoleStore.getRole(guildId.guildId, item)) };
-  found = actions.filter(tmp(1375).isNotNullish);
+  found = actions.filter(tmp(1387).isNotNullish);
   ({ enabled: obj2.enabled, creatorId: obj2.creator_id, position: obj2.position } = id);
   exemptChannels = id.exemptChannels;
   const _Array = Array;
@@ -339,7 +339,7 @@ export const removeMentionRaidRestrictionWithFeedback = function removeMentionRa
   }
   if (canResult) {
     obj = require("GuildAutomodActionActionCreators");
-    const result = obj.openConfirmRemoveMentionRaid(() => {
+    const result = obj.openConfirmRemoveMentionRaid(function onConfirm() {
       obj = AppAnalyticsUtils;
       const obj2 = { feedback_type: AutomodFeedback.Feedback.MENTION_RAID_REMOVE_RESTRICTION, decision_id };
       obj.trackWithMetadata(metroImportDefault.GUILD_AUTOMOD_FEEDBACK, obj2);

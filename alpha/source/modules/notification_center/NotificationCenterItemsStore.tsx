@@ -1,21 +1,21 @@
-// Module ID: 7137
-// Function ID: 7138
+// Module ID: 6062
+// Function ID: 6063
 // Name: NotificationCenterItemsStore
-// Dependencies: [4782, 7050, 4526, 4525, 1377, 1085, 7138, 5118, 7139, 11, 504, 584, 2]
+// Dependencies: [4976, 6059, 4718, 4717, 1389, 1085, 6063, 5430, 6064, 11, 504, 584, 2]
 
-// Module 7137 (NotificationCenterItemsStore)
+// Module 6062 (NotificationCenterItemsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5118 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7050 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7138 */;
-import NotificationCenterUtils from "NotificationCenterUtils" /* 7139 */;
-import ExperimentStore from "ExperimentStore" /* 4782 */;
-import MessageRecord from "MessageRecord" /* 4526 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5430 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6059 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6063 */;
+import NotificationCenterUtils from "NotificationCenterUtils" /* 6064 */;
+import ExperimentStore from "ExperimentStore" /* 4976 */;
+import MessageRecord from "MessageRecord" /* 4718 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -25,7 +25,7 @@ function _validate(id) {
 function toNotificationCenterItem(item_enum) {
   let id;
   let messageRecord;
-  const tmp3 = item_enum.item_enum === NotificationCenterItemsTypes.ItemEnum.FIRST_MESSAGE && item_enum.type === tmp(7138).NotificationCenterItems.LIFECYCLE_ITEM;
+  const tmp3 = item_enum.item_enum === NotificationCenterItemsTypes.ItemEnum.FIRST_MESSAGE && item_enum.type === tmp(6063).NotificationCenterItems.LIFECYCLE_ITEM;
   if (tmp3) {
     item_enum.deeplink = "https://discord.com/feature/composeMessage";
   }
@@ -48,7 +48,7 @@ function handleAddItem(type) {
   let messageRecord;
   if ("NOTIFICATION_CENTER_ITEM_CREATE" === type.type) {
     const item2 = type.item;
-    const tmp4 = item2.item_enum === NotificationCenterItemsTypes.ItemEnum.FIRST_MESSAGE && item2.type === tmp2(7138).NotificationCenterItems.LIFECYCLE_ITEM;
+    const tmp4 = item2.item_enum === NotificationCenterItemsTypes.ItemEnum.FIRST_MESSAGE && item2.type === tmp2(6063).NotificationCenterItems.LIFECYCLE_ITEM;
     if (tmp4) {
       item2.deeplink = "https://discord.com/feature/composeMessage";
     }
@@ -163,7 +163,7 @@ function handleRelationshipAddOrUpdate(relationship) {
         tmp4 = id === tmp3;
       }
       if (!tmp4) {
-        let tmp7 = type.type === tmp(7138).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED;
+        let tmp7 = type.type === tmp(6063).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED;
         if (tmp7) {
           const other_user2 = type.other_user;
           let id1;
@@ -175,7 +175,7 @@ function handleRelationshipAddOrUpdate(relationship) {
         tmp4 = tmp7;
       }
       if (!tmp4) {
-        let tmp10 = type.type === tmp(7138).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS;
+        let tmp10 = type.type === tmp(6063).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS;
         if (tmp10) {
           const other_user3 = type.other_user;
           let id2;
@@ -187,7 +187,7 @@ function handleRelationshipAddOrUpdate(relationship) {
         tmp4 = tmp10;
       }
       if (!tmp4) {
-        let tmp13 = type.type === tmp(7138).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED;
+        let tmp13 = type.type === tmp(6063).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED;
         if (tmp13) {
           const other_user4 = type.other_user;
           let id3;
@@ -212,7 +212,7 @@ class NotificationCenterItemsStore extends PersistedStore {
     this.waitFor(UserStore, RelationshipStore, ExperimentStore);
     if (null != notifCenterItems) {
       notifCenterItems = notifCenterItems.notifCenterItems;
-      const mapped = notifCenterItems.map(function(message) {
+      const mapped = notifCenterItems.map(function unpack(message) {
         let tmp2;
         obj = { message: tmp2 };
         const merged = Object.assign(message);
@@ -581,7 +581,7 @@ const obj2 = {
         let tmp8 = obj;
         const items = [];
         const arraySpreadResult = HermesBuiltin.arraySpread(items, obj.notifCenterLocalItems, 0);
-        obj = id(7139);
+        obj = id(6064);
         items[arraySpreadResult] = obj.incomingGameFriendRequestLocalItem(user, since, applicationId);
         obj.notifCenterLocalItems = items;
       }
@@ -689,7 +689,7 @@ const obj2 = {
       if (undefined === prop.find((local_id) => local_id.local_id === _undefined.local_id)) {
         const prop1 = obj.notifCenterLocalItems;
         const items = [];
-        items[HermesBuiltin.arraySpread(items, prop1.filter((type) => type.type !== closure_0.type), 0)] = result;
+        items[HermesBuiltin.arraySpread(items, prop1.filter((type) => type.type !== combined.type), 0)] = result;
         obj.notifCenterLocalItems = items;
       }
     }

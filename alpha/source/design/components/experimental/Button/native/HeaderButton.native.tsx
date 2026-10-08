@@ -1,16 +1,16 @@
-// Module ID: 8605
-// Function ID: 8606
+// Module ID: 8520
+// Function ID: 8521
 // Name: Button/HeaderButton
-// Dependencies: [19, 21, 5607, 4892, 4896, 558, 576, 5602, 2]
+// Dependencies: [19, 21, 5380, 5086, 5090, 558, 576, 5376, 2]
 
-// Module 8605 (Button/HeaderButton)
+// Module 8520 (Button/HeaderButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import BaseTextButton2 from "BaseTextButton" /* 5602 */;
-import ButtonConstants from "ButtonConstants" /* 5607 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import BaseTextButton2 from "BaseTextButton" /* 5376 */;
+import ButtonConstants from "ButtonConstants" /* 5380 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ const diff = ButtonConstants.SMALL_BUTTON_HEIGHT - 2 * ButtonConstants.BUTTON_BO
 const diff1 = diff - Text_Text.TextStyleSheet["heading-md/bold"].lineHeight;
 let obj = { pill: { paddingVertical: diff1 / 2 } };
 let closure_4 = createStyles.createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderButton(arg0) {
   const obj = react2;
   const cResult = obj.c(3);
   const tmp4 = closure_4();
@@ -38,7 +38,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.pill;
   cResult[2] = tmp7;
   tmp5 = tmp7;
-}) : ((arg0) => {
+}) : (function HeaderButton(arg0) {
   const tmp = closure_4();
   const BaseTextButton = BaseTextButton2.BaseTextButton;
   const merged = Object.assign(arg0);

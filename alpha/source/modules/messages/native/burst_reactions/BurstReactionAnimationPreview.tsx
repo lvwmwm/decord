@@ -1,19 +1,19 @@
-// Module ID: 7464
-// Function ID: 7465
+// Module ID: 7939
+// Function ID: 7940
 // Name: BurstReactionAnimationPreview
-// Dependencies: [19, 21, 558, 576, 7272, 7465, 2]
+// Dependencies: [19, 21, 558, 576, 7873, 7940, 2]
 
-// Module 7464 (BurstReactionAnimationPreview)
+// Module 7939 (BurstReactionAnimationPreview)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7272 */;
-import BurstReactionAnimationDefault from "BurstReactionAnimation" /* 7465 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7873 */;
+import BurstReactionAnimationDefault from "BurstReactionAnimation" /* 7940 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReactionAnimationPreview(arg0) {
   let channelId;
   let emoji;
   let messageId;
@@ -40,7 +40,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp4 = tmp7;
   }
   return tmp3;
-}) : ((arg0) => {
+}) : (function BurstReactionAnimationPreview(arg0) {
   let channelId;
   let emoji;
   let messageId;

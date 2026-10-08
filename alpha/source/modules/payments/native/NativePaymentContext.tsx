@@ -1,16 +1,16 @@
-// Module ID: 10564
-// Function ID: 10565
+// Module ID: 10161
+// Function ID: 10162
 // Name: NativePaymentContext
-// Dependencies: [32, 19, 4539, 1096, 21, 6947, 558, 576, 8900, 6770, 10565, 504, 2]
+// Dependencies: [32, 19, 4731, 1096, 21, 7136, 558, 576, 9333, 6946, 10162, 504, 2]
 
-// Module 10564 (NativePaymentContext)
+// Module 10161 (NativePaymentContext)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1096 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6770 */;
-import ContextUtilsDefault from "ContextUtils" /* 6947 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6946 */;
+import ContextUtilsDefault from "ContextUtils" /* 7136 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4539 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4731 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ const PaymentGateways = Constants.PaymentGateways;
 const jsx = Fragment.jsx;
 [metroImportDefault, tmp4, tmp5] = ContextUtilsDefault();
 _slicedToArray(ContextUtilsDefault(), 3);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activeSubscription) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativePaymentContextProvider(activeSubscription) {
   let children;
   let nativePaymentsConnected;
   let selectedPlanId;
@@ -125,10 +125,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activeSubscription) 
   cResult[3] = items2;
   tmp7 = items2;
   tmp6 = fn;
-}) : ((skuIDs) => {
+}) : (function NativePaymentContextProvider(skuIDs) {
   let activeSubscription;
   let children;
-  const f104694 = () => {
+  const f103422 = () => {
     let value = null;
     if (null != selectedPlanId) {
       value = SubscriptionPlanStore.get(tmp);
@@ -161,8 +161,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((activeSubscription) 
   const items1 = [SubscriptionPlanStore];
   const items2 = [selectedPlanId];
   const obj2 = skuIDs(selectedPlanId[11]);
-  ({ isReadyToPurchase: nativePaymentsConnected, setSelectedPlanId, selectedPlan: obj2.useStateFromStores(items1, f104694, items2), storeFront, activeSubscription });
-  return <redux.Provider value={{ isReadyToPurchase: nativePaymentsConnected, setSelectedPlanId, selectedPlan: obj2.useStateFromStores(items1, f104694, items2), storeFront, activeSubscription }}>{children}</redux.Provider>;
+  ({ isReadyToPurchase: nativePaymentsConnected, setSelectedPlanId, selectedPlan: obj2.useStateFromStores(items1, f103422, items2), storeFront, activeSubscription });
+  return <redux.Provider value={{ isReadyToPurchase: nativePaymentsConnected, setSelectedPlanId, selectedPlan: obj2.useStateFromStores(items1, f103422, items2), storeFront, activeSubscription }}>{children}</redux.Provider>;
 });
 const result = size.fileFinishedImporting("modules/payments/native/NativePaymentContext.tsx");
 

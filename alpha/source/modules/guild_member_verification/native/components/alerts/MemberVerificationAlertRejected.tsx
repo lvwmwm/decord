@@ -1,28 +1,28 @@
-// Module ID: 5941
-// Function ID: 5942
+// Module ID: 6124
+// Function ID: 6125
 // Name: MemberVerificationAlertRejected
-// Dependencies: [5, 109, 19, 2112, 1377, 4706, 21, 558, 576, 5942, 504, 5943, 5938, 5967, 1126, 5601, 5934, 6024, 2]
+// Dependencies: [5, 109, 19, 2124, 1389, 4900, 21, 558, 576, 6125, 504, 6126, 6121, 6149, 1126, 5375, 6117, 6210, 2]
 
-// Module 5941 (MemberVerificationAlertRejected)
+// Module 6124 (MemberVerificationAlertRejected)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import UserStore from "UserStore" /* 1377 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4706 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import UserStore from "UserStore" /* 1389 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4900 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c1, currentUser, guildId;
+let _require, c1, currentUser;
 
 let c10;
 let closure_12;
 let unpackModuleId;
 let closure_3 = ["guildId", "secondaryButton", "onClose"];
 ({ jsx: c10, Fragment: unpackModuleId, jsxs: closure_12 } = Fragment);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerificationAlertRejected(guildId) {
   let canReapply;
   let closure_0;
   let isLoading;
@@ -67,7 +67,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    class M {
+    class C {
       constructor() {
         currentUser = currentUser.getCurrentUser();
         let id;
@@ -78,8 +78,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
     }
     cResult[5] = items;
-    cResult[6] = M;
-    tmp13 = M;
+    cResult[6] = C;
+    tmp13 = C;
     tmp12 = items;
   } else {
     tmp12 = cResult[5];
@@ -92,7 +92,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   ({ canReapply, isLoading } = canReapplyToRejectedMemberVerificationApplication);
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [UserGuildJoinRequestStore];
-    class M {
+    class C {
       constructor() {
         currentUser = currentUser.getCurrentUser();
         let id;
@@ -114,7 +114,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
     }
     const items2 = [tmp4];
-    class M {
+    class C {
       constructor() {
         currentUser = currentUser.getCurrentUser();
         let id;
@@ -146,7 +146,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
     }
     const items3 = [GuildMemberStore];
-    class M {
+    class C {
       constructor() {
         currentUser = currentUser.getCurrentUser();
         let id;
@@ -172,8 +172,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
     }
     const tmpResult8 = tmp(stateFromStores[10]);
-    const stateFromStores2 = tmpResult8.useStateFromStores(tmp22, T, items4);
-    class M {
+    const stateFromStores2 = tmpResult8.useStateFromStores(tmp22, V, items4);
+    class C {
       constructor() {
         currentUser = currentUser.getCurrentUser();
         let id;
@@ -196,7 +196,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           }
         }
       }
-      class M {
+      class C {
         constructor() {
           currentUser = currentUser.getCurrentUser();
           let id;
@@ -289,14 +289,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         }
       }
     }
-    const fn = function() {
+    function t9() {
       return closure_0(...arguments);
-    };
+    }
     cResult[17] = undefined;
     cResult[18] = tmp5;
-    cResult[19] = fn;
+    cResult[19] = t9;
   }
-  class T {
+  class V {
     constructor() {
       let member = null;
       if (null != stateFromStores) {
@@ -308,9 +308,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   items4 = [stateFromStores, tmp4];
   cResult[12] = stateFromStores;
   cResult[13] = tmp4;
-  cResult[14] = T;
+  cResult[14] = V;
   cResult[15] = items4;
-}) : ((guildId) => {
+}) : (function MemberVerificationAlertRejected(guildId) {
   let canReapply;
   let formatToPlainStringResult;
   let intl4;

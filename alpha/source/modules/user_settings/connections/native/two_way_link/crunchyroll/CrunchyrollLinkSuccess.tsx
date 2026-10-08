@@ -1,24 +1,22 @@
-// Module ID: 8815
-// Function ID: 8816
+// Module ID: 9173
+// Function ID: 9174
 // Name: CrunchyrollLinkSuccess
-// Dependencies: [19, 17, 21, 4896, 558, 576, 8774, 8816, 1126, 4892, 5601, 6626, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 9120, 9174, 1126, 5086, 5375, 6803, 2]
 
-// Module 8815 (CrunchyrollLinkSuccess)
+// Module 9173 (CrunchyrollLinkSuccess)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6626 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 8774 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8816 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6803 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9120 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9174 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let onClose;
 
 let c3;
 let closure_4;
@@ -27,7 +25,7 @@ let metroRequire;
 ({ Image: c3, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ image: { width: 232, height: 108, marginBottom: 24 } });
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CrunchyrollLinkDiscordSuccess(onClose) {
   let container;
   let content;
   let footerButton;
@@ -172,7 +170,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   cResult[11] = tmp18;
   cResult[12] = tmp22;
   tmp21 = tmp22;
-}) : ((onClose) => {
+}) : (function CrunchyrollLinkDiscordSuccess(onClose) {
   let Button;
   let intl;
   let intl2;

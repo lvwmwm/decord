@@ -1,12 +1,12 @@
-// Module ID: 13011
-// Function ID: 13012
+// Module ID: 13289
+// Function ID: 13290
 // Name: useVirtualCurrencyBalance
-// Dependencies: [8543, 558, 576, 504, 2]
+// Dependencies: [9028, 558, 576, 504, 2]
 // Exports: getVirtualCurrencyBalance
 
-// Module 13011 (useVirtualCurrencyBalance)
+// Module 13289 (useVirtualCurrencyBalance)
 import react from "react" /* 576 */;
-import VirtualCurrencyStore from "VirtualCurrencyStore" /* 8543 */;
+import VirtualCurrencyStore from "VirtualCurrencyStore" /* 9028 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let _require;
 let tmp;
 const get_initialized = tmp(504);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVirtualCurrencyBalance() {
   let balance;
   let tmp4;
   let tmp5;
@@ -24,7 +24,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [VirtualCurrencyStore];
-    const fn = function u() {
+    const fn = function t() {
       return balance.balance;
     };
     cResult[0] = items;
@@ -36,14 +36,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useVirtualCurrencyBalance() {
   let balance;
   const items = [VirtualCurrencyStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => balance.balance);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasEnoughVirtualCurrency(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -80,7 +80,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useHasEnoughVirtualCurrency(arg0) {
   let closure_0;
   _require = arg0;
   const items = [VirtualCurrencyStore];

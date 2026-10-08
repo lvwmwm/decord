@@ -1,15 +1,15 @@
-// Module ID: 7231
-// Function ID: 7232
+// Module ID: 7410
+// Function ID: 7411
 // Name: AdDataUtils
-// Dependencies: [32, 19, 7232, 7233, 7234, 558, 576, 2]
+// Dependencies: [32, 19, 7411, 7412, 7413, 558, 576, 2]
 // Exports: getAdUser
 
-// Module 7231 (AdDataUtils)
-import AdDataUtilsConstants from "AdDataUtilsConstants" /* 7233 */;
-import AdUserActionCreators from "AdUserActionCreators" /* 7234 */;
+// Module 7410 (AdDataUtils)
+import AdDataUtilsConstants from "AdDataUtilsConstants" /* 7412 */;
+import AdUserActionCreators from "AdUserActionCreators" /* 7413 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AdUserStore from "AdUserStore" /* 7232 */;
+import AdUserStore from "AdUserStore" /* 7411 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let _require;
 
 const DEFAULT_TIMEOUT_MS = AdDataUtilsConstants.DEFAULT_TIMEOUT_MS;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAdUser(arg0) {
   let closure_0;
   let tmp3;
   let tmp4;
@@ -66,7 +66,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const effect = obj2.useEffect(tmp4, tmp5);
   return tmp3;
-}) : ((arg0) => {
+}) : (function useAdUser(arg0) {
   let closure_1;
   let first;
   let closure_0 = arg0;

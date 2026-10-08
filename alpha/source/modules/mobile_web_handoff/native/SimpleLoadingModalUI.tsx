@@ -1,17 +1,17 @@
-// Module ID: 6832
-// Function ID: 6833
+// Module ID: 7026
+// Function ID: 7027
 // Name: SimpleLoadingModalUI
-// Dependencies: [19, 17, 21, 4896, 558, 576, 5975, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 6158, 2]
 
-// Module 6832 (SimpleLoadingModalUI)
+// Module 7026 (SimpleLoadingModalUI)
 import Fragment from "Fragment" /* 21 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let catchPromise, dependencyMap, operation;
+let catchPromise, dependencyMap;
 
 let c3;
 let closure_4;
@@ -20,17 +20,17 @@ let react = react_mod;
 let jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ modalBackground: { flex: 1, alignItems: "center", flexDirection: "column", justifyContent: "center" } });
 let constants = { OPENING: 0, [0]: "OPENING", SHOWN: 1, [1]: "SHOWN", DISMISSED: 2, [2]: "DISMISSED" };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((operation) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SimpleLoadingModal(operation) {
   let cancelable;
   let closure_1;
   let closure_2;
   let onDismissed;
   let onRejected;
   let onResolved;
-  let ref;
   let tmp2;
   let tmp3;
-  let tmp4;
+  let tmp5;
+  let tmp7;
   const obj = operation(576);
   const cResult = obj.c(31);
   operation = operation.operation;
@@ -63,7 +63,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((operation) => {
     tmp3 = cResult[3];
   }
   react = tmp3;
-  let closure_3 = undefined !== cancelable && cancelable;
+  let closure_3 = tmp4;
   if (cResult[4] !== onDismissed) {
     let fn3 = onDismissed;
     if (undefined === onDismissed) {
@@ -73,73 +73,87 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((operation) => {
     }
     cResult[4] = onDismissed;
     cResult[5] = fn3;
-    tmp4 = fn3;
+    tmp5 = fn3;
   } else {
-    tmp4 = cResult[5];
+    tmp5 = cResult[5];
   }
-  let closure_4 = tmp4;
-  M();
-  jsx = react.useRef(constants.OPENING);
-  if (cResult[6] !== tmp4) {
-    class M {
-      constructor() {
-        const tmp = ref;
-        const tmp2 = constants;
-        if (ref.current === constants.SHOWN) {
-          closure_4();
-        }
-        tmp.current = tmp2.DISMISSED;
+  let closure_4 = tmp5;
+  closure_6();
+  const ref = react.useRef(constants.OPENING);
+  const obj2 = react;
+  if (cResult[6] !== tmp5) {
+    const fn4 = function y() {
+      const tmp = ref;
+      const tmp2 = constants;
+      if (ref.current === constants.SHOWN) {
+        closure_4();
       }
-    }
-    cResult[6] = tmp4;
-    cResult[7] = M;
+      tmp.current = tmp2.DISMISSED;
+    };
+    cResult[6] = tmp5;
+    cResult[7] = fn4;
+    tmp7 = fn4;
   } else {
-    class M {
-      constructor() {
-        const tmp = ref;
-        const tmp2 = constants;
-        if (ref.current === constants.SHOWN) {
-          closure_4();
-        }
-        tmp.current = tmp2.DISMISSED;
-      }
-    }
+    tmp7 = cResult[7];
   }
-  M = tmp6;
-  if (cResult[8] === tmp6) {
-    class M {
-      constructor() {
-        const tmp = ref;
-        const tmp2 = constants;
-        if (ref.current === constants.SHOWN) {
-          closure_4();
-        }
-        tmp.current = tmp2.DISMISSED;
-      }
+  closure_6 = tmp7;
+  if (cResult[8] === tmp7) {
+    let tmp8;
+    if (cResult[9] === tmp2) {
+      tmp8 = cResult[10];
     }
-    constants = tmp7;
-    if (cResult[11] === tmp6) {
-      class M {
-        constructor() {
-          const tmp = ref;
-          const tmp2 = constants;
-          if (ref.current === constants.SHOWN) {
-            closure_4();
-          }
-          tmp.current = tmp2.DISMISSED;
-        }
+    constants = tmp8;
+    if (cResult[11] === tmp7) {
+      let tmp9;
+      if (cResult[12] === tmp3) {
+        tmp9 = cResult[13];
       }
-      let closure_8 = tmp8;
+      let closure_8 = tmp9;
       if (cResult[14] === operation) {
-        class M {
-          constructor() {
-            const tmp = ref;
-            const tmp2 = constants;
-            if (ref.current === constants.SHOWN) {
-              closure_4();
-            }
-            tmp.current = tmp2.DISMISSED;
+        if (cResult[15] === tmp9) {
+          let tmp10;
+          let tmp11;
+          if (cResult[16] === tmp8) {
+            tmp10 = cResult[17];
+            tmp11 = cResult[18];
           }
+          const effect = obj2.useEffect(tmp10, tmp11);
+          if (cResult[19] !== tmp5) {
+            const fn5 = function w() {
+              if (ref.current === constants.DISMISSED) {
+                closure_4();
+              } else {
+                tmp.current = tmp2.SHOWN;
+              }
+            };
+            cResult[19] = tmp5;
+            class B {
+              constructor() {
+                promise = operation();
+                nextPromise = promise.then((result) => constants(result));
+                catchPromise = nextPromise.catch((error) => closure_1_8(error));
+                return;
+              }
+            }
+            cResult[20] = fn5;
+          }
+          class B {
+            constructor() {
+              promise = operation();
+              nextPromise = promise.then((result) => constants(result));
+              catchPromise = nextPromise.catch((error) => closure_1_8(error));
+              return;
+            }
+          }
+          const fn6 = function x() {
+            const tmp = closure_3;
+            if (tmp) {
+              closure_6();
+            }
+          };
+          cResult[21] = undefined !== cancelable && cancelable;
+          cResult[22] = tmp7;
+          cResult[23] = fn6;
         }
       }
       class B {
@@ -150,33 +164,37 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((operation) => {
           return;
         }
       }
-      const items = [operation, tmp7, tmp8];
+      const items = [operation, tmp8, tmp9];
       cResult[14] = operation;
-      cResult[15] = tmp8;
-      cResult[16] = tmp7;
+      cResult[15] = tmp9;
+      cResult[16] = tmp8;
       cResult[17] = B;
       cResult[18] = items;
+      tmp11 = items;
+      tmp10 = B;
     }
     class W {
       constructor(arg0) {
         closure_2(arg0);
-        M();
+        closure_6();
       }
     }
-    cResult[11] = tmp6;
+    cResult[11] = tmp7;
     cResult[12] = tmp3;
     cResult[13] = W;
+    tmp9 = W;
   }
   class C {
     constructor(arg0) {
       closure_1(arg0);
-      M();
+      closure_6();
     }
   }
-  cResult[8] = tmp6;
+  cResult[8] = tmp7;
   cResult[9] = tmp2;
   cResult[10] = C;
-}) : ((operation) => {
+  tmp8 = C;
+}) : (function SimpleLoadingModal(operation) {
   let ref;
   operation = operation.operation;
   const S = operation.onResolved;

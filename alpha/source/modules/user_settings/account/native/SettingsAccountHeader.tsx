@@ -1,25 +1,25 @@
-// Module ID: 14512
-// Function ID: 14513
+// Module ID: 14772
+// Function ID: 14773
 // Name: SettingsAccountHeader
-// Dependencies: [19, 17, 4525, 1377, 1085, 8108, 21, 4896, 587, 558, 576, 6895, 14513, 1126, 504, 6501, 6014, 6000, 5601, 2]
+// Dependencies: [19, 17, 4717, 1389, 1085, 7015, 21, 5090, 587, 558, 576, 7084, 14773, 1126, 504, 6677, 6200, 6184, 5375, 2]
 
-// Module 14512 (SettingsAccountHeader)
+// Module 14772 (SettingsAccountHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6014 */;
-import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 6501 */;
-import openUserSettings from "openUserSettings" /* 6895 */;
-import Constants2 from "Constants" /* 8108 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14513 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6200 */;
+import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 6677 */;
+import Constants2 from "Constants" /* 7015 */;
+import openUserSettings from "openUserSettings" /* 7084 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14773 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,14 +36,14 @@ let obj = { header: obj2 };
 obj2 = { paddingTop: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 };
 let closure_11 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedAccountRedirect() {
   let first;
   let obj = react2;
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = {
       label: intl.t.zqv4nV,
-      labelHook() {
+      labelHook: function handleRestrictedAccountRedirect() {
           const obj = openUserSettings;
           const obj2 = { screen: constants.SETTINGS_CONTENT_AND_SOCIAL };
           obj.openUserSettings(obj2);
@@ -58,10 +58,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => {
+}) : (function RestrictedAccountRedirect() {
   let obj = {
     label: intl.t.zqv4nV,
-    labelHook() {
+    labelHook: function handleRestrictedAccountRedirect() {
       const obj = openUserSettings;
       const obj2 = { screen: constants.SETTINGS_CONTENT_AND_SOCIAL };
       obj.openUserSettings(obj2);
@@ -73,7 +73,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 const memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAccountHeader() {
   let blockedOrIgnoredIDs;
   let currentUser;
   let items2;
@@ -88,7 +88,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_11();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    const fn = function o() {
+    const fn = function c() {
       return currentUser.getCurrentUser();
     };
     cResult[0] = items;
@@ -125,15 +125,15 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult4 = get_initialized;
   const stateFromStores1 = tmpResult4.useStateFromStores(tmp11, tmp12);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class N {
+    class I {
       constructor() {
         const obj = EmailVerificationModalActionCreatorsDefault;
         obj.open();
       }
     }
-    cResult[6] = N;
+    cResult[6] = I;
   } else {
-    class N {
+    class I {
       constructor() {
         const obj = EmailVerificationModalActionCreatorsDefault;
         obj.open();
@@ -141,7 +141,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   if (null != tmp9) {
-    class N {
+    class I {
       constructor() {
         const obj = EmailVerificationModalActionCreatorsDefault;
         obj.open();
@@ -149,14 +149,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     if (cResult[9] !== tmp9) {
       let tmp19;
-      class N {
+      class I {
         constructor() {
           const obj = EmailVerificationModalActionCreatorsDefault;
           obj.open();
         }
       }
       if (null != tmp9) {
-        class N {
+        class I {
           constructor() {
             const obj = EmailVerificationModalActionCreatorsDefault;
             obj.open();
@@ -164,7 +164,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
         ({ title: obj5.label, title: obj5.accessibilityLabel } = tmp9);
         const obj2 = { onPress: tmp15, variant: "danger", label: null, accessibilityLabel: null, trailing: React4(components_Button_Button.Button, obj3), start: true, end: true };
-        const TableRow = tmp(6000).TableRow;
+        const TableRow = tmp(6184).TableRow;
         obj3 = { text: null, accessibilityLabel: null, onPress: tmp15 };
         ({ button: obj6.text, button: obj6.accessibilityLabel } = tmp9);
         tmp19 = React4(TableRow, obj2);
@@ -172,7 +172,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       cResult[9] = tmp9;
       cResult[10] = tmp19;
     } else {
-      class N {
+      class I {
         constructor() {
           const obj = EmailVerificationModalActionCreatorsDefault;
           obj.open();
@@ -180,7 +180,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     if (cResult[11] === tmp4.header) {
-      class N {
+      class I {
         constructor() {
           const obj = EmailVerificationModalActionCreatorsDefault;
           obj.open();
@@ -195,7 +195,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[14] = authStore(View, obj4);
     const tmp23 = authStore(View, obj4);
   } else {
-    class N {
+    class I {
       constructor() {
         const obj = EmailVerificationModalActionCreatorsDefault;
         obj.open();
@@ -203,7 +203,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   return tmp16;
-}) : (() => {
+}) : (function SettingsAccountHeader() {
   let blockedOrIgnoredIDs;
   let currentUser;
   let items2;
@@ -235,7 +235,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (null != bannerText) {
       ({ title: obj5.label, title: obj5.accessibilityLabel } = bannerText);
       const obj9 = { onPress: callback, variant: "danger", label: null, accessibilityLabel: null, trailing: React4(components_Button_Button.Button, obj10), start: true, end: true };
-      const TableRow = tmp2(6000).TableRow;
+      const TableRow = tmp2(6184).TableRow;
       obj10 = { text: null, accessibilityLabel: null, onPress: callback };
       ({ button: obj6.text, button: obj6.accessibilityLabel } = bannerText);
       tmp14 = React4(TableRow, obj9);

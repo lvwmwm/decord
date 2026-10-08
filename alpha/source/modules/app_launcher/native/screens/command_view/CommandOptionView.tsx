@@ -1,23 +1,21 @@
-// Module ID: 11798
-// Function ID: 11799
+// Module ID: 11865
+// Function ID: 11866
 // Name: CommandOptionView
-// Dependencies: [19, 17, 4885, 21, 1985, 4896, 587, 558, 576, 504, 4618, 11799, 4892, 11800, 1188, 10156, 11807, 2]
+// Dependencies: [19, 17, 5079, 21, 1997, 5090, 587, 558, 576, 504, 4810, 11866, 5086, 11867, 1200, 9742, 11874, 2]
 
-// Module 11798 (CommandOptionView)
+// Module 11865 (CommandOptionView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Server from "Server" /* 1985 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4618 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10156 */;
-import AppLauncherCommandOptionDefault from "AppLauncherCommandOption" /* 11800 */;
+import Server from "Server" /* 1997 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4810 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9742 */;
+import AppLauncherCommandOptionDefault from "AppLauncherCommandOption" /* 11867 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let onPressAttachmentOption;
 
 let hasOwnProperty;
 let metroRequire;
@@ -30,7 +28,7 @@ let obj = { optionDescription: { marginTop: 4 }, optionErrorContainer: { flexDir
 obj2 = { marginRight: 4, tintColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, alignItems: "center" };
 let closure_8 = createStyles.createStyles(obj);
 let items1 = [Server.ApplicationCommandOptionType.STRING, Server.ApplicationCommandOptionType.INTEGER, Server.ApplicationCommandOptionType.NUMBER];
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressAttachmentOption) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandOptionView(onPressAttachmentOption) {
   let EnteringAnimation;
   let autoFocusType;
   let channel;
@@ -137,7 +135,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressAttachmentOpt
   } else {
     return null;
   }
-}) : ((option) => {
+}) : (function CommandOptionView(option) {
   let AwaitAnimationContext;
   let autoFocusType;
   let channel;
@@ -164,9 +162,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressAttachmentOpt
   const items = [AccessibilityStore];
   const obj = option(504);
   const stateFromStores = obj.useStateFromStores(items, () => AccessibilityStore.useReducedMotion);
-  const ReduceMotion = option(4618).ReduceMotion;
+  const ReduceMotion = option(4810).ReduceMotion;
   const tmp5 = stateFromStores ? ReduceMotion.Always : ReduceMotion.Never;
-  const tmp2Result = option(11799);
+  const tmp2Result = option(11866);
   const optionEnteringAnimation = tmp2Result.useOptionEnteringAnimation();
   let fn = optionEnteringAnimation.registerAnimationCompleteCallback;
   const EnteringAnimation = optionEnteringAnimation.EnteringAnimation;
@@ -174,9 +172,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressAttachmentOpt
     if (option.required || isPreSelectedOption) {
       fn = (fn) => fn();
     }
-    const FadeOut = tmp2(4618).FadeOut;
+    const FadeOut = tmp2(4810).FadeOut;
     const reduceMotionResult = FadeOut.reduceMotion(tmp5);
-    const FadeInUp = tmp2(4618).FadeInUp;
+    const FadeInUp = tmp2(4810).FadeInUp;
     const obj2 = { transform: items1 };
     items1 = [{ translateY: -10 }];
     const withInitialValuesResult = FadeInUp.withInitialValues(obj2);
@@ -191,14 +189,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressAttachmentOpt
     }
     const hasItem1 = items1.includes(option.type);
     const obj3 = { skipEntering: option.required || isPreSelectedOption, children: closure_5(AwaitAnimationContext, obj4) };
-    const LayoutAnimationConfig = tmp2(4618).LayoutAnimationConfig;
+    const LayoutAnimationConfig = tmp2(4810).LayoutAnimationConfig;
     obj4 = { handleQueuedCallback: fn, children: closure_5(View, obj5) };
-    AwaitAnimationContext = tmp2(11807).AwaitAnimationContext;
+    AwaitAnimationContext = tmp2(11874).AwaitAnimationContext;
     obj5 = {
       collapsable: false,
       entering: EnteringAnimation,
-      exiting: option(11799).ExitingAnimation,
-      layout: option(11799).LayoutAnimation,
+      exiting: option(11866).ExitingAnimation,
+      layout: option(11866).LayoutAnimation,
       onLayout(arg0) {
           importDefault(arg0, option);
         },
@@ -210,7 +208,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressAttachmentOpt
     tmp20 = View;
     if (hasItem1) {
       const obj7 = { style: tmp.labelText, variant: "text-sm/semibold", color: "text-subtle", children: option.displayName };
-      tmp17Result = tmp17(tmp2(4892).Text, obj7);
+      tmp17Result = tmp17(tmp2(5086).Text, obj7);
     }
     items2 = [tmp17Result, , , ];
     const obj8 = {
@@ -236,15 +234,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressAttachmentOpt
     };
     items2[1] = closure_5(AppLauncherCommandOptionDefault, obj8);
     const obj9 = { style: tmp.optionDescription, variant: "text-xs/medium", color: "text-muted", children: option.displayDescription };
-    items2[2] = closure_5(option(4892).Text, obj9);
+    items2[2] = closure_5(option(5086).Text, obj9);
     if (hasItem) {
       const obj10 = { collapsable: false, entering: reduceMotionResult1, exiting: reduceMotionResult, style: tmp.optionErrorContainer, children: items3 };
-      const View2 = tmp18(4618).View;
-      const obj11 = { style: tmp.optionErrorIcon, source: AssetRegistryDefault, size: option(1188).IconSizes.REFRESH_SMALL_16 };
-      const Icon = tmp2(1188).Icon;
+      const View2 = tmp18(4810).View;
+      const obj11 = { style: tmp.optionErrorIcon, source: AssetRegistryDefault, size: option(1200).IconSizes.REFRESH_SMALL_16 };
+      const Icon = tmp2(1200).Icon;
       items3 = [closure_5(Icon, obj11), ];
       const obj12 = { variant: "text-xs/medium", color: "text-feedback-critical", children: optionValidationResults[option.name].error };
-      items3[1] = closure_5(option(4892).Text, obj12);
+      items3[1] = closure_5(option(5086).Text, obj12);
       hasItem = tmp19(View2, obj10);
     }
     items2[3] = hasItem;

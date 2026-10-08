@@ -1,19 +1,19 @@
-// Module ID: 10851
-// Function ID: 10852
+// Module ID: 10502
+// Function ID: 10503
 // Name: CustomStatusPreview
-// Dependencies: [19, 17, 6714, 21, 4896, 587, 7868, 7925, 7910, 7924, 7921, 4751, 4860, 10852, 1987, 4595, 7929, 7939, 10855, 10840, 10856, 8490, 2]
+// Dependencies: [19, 17, 6891, 21, 5090, 587, 8286, 8344, 8329, 8343, 8340, 4945, 5054, 10503, 1999, 4787, 8348, 8357, 10506, 10489, 10507, 8974, 2]
 // Exports: default
 
-// Module 10851 (CustomStatusPreview)
+// Module 10502 (CustomStatusPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ChatInputUtils from "ChatInputUtils" /* 4751 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ChatInputUtils from "ChatInputUtils" /* 4945 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 6714 */;
+import Constants from "Constants" /* 6891 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -46,9 +46,8 @@ export default function CustomStatusPreview(user) {
   let containerBackground;
   let gradientFallbackBackground;
   let items1;
-  let items2;
+  let items3;
   let items4;
-  let items5;
   let obj3;
   let primaryColor;
   let pronouns;
@@ -73,17 +72,16 @@ export default function CustomStatusPreview(user) {
     obj.dismissKeyboard();
     const obj2 = ActionSheetActionCreatorsDefault;
     const obj3 = { user, previewText: pendingStatusText, previewEmoji: pendingStatusEmoji };
-    obj2.openLazy(asyncRequire(10852, dependencyMap.paths), "UserProfileCustomStatusActionSheet", obj3, "stack");
+    obj2.openLazy(asyncRequire(10503, dependencyMap.paths), "UserProfileCustomStatusActionSheet", obj3, "stack");
   }, items);
   let obj2 = { theme, primaryColor, secondaryColor, children: closure_8(View, obj3) };
-  obj3 = { style: items1, children: items2 };
-  items1 = [tmp7.profileContainer];
+  obj3 = { style: tmp7.profileContainer, children: items1 };
   const ThemeContextProvider = user(pendingStatusEmoji[15]).ThemeContextProvider;
-  items2 = [closure_7(pendingStatusText(pendingStatusEmoji[16]), { user, displayProfile: tmp3, bannerHeight: 132, disableInteraction: true }), , ];
-  const items3 = [closure_7(pendingStatusText(pendingStatusEmoji[17]), { user, backgroundColor: avatarBackground, disableStatus: true }), ];
-  const obj4 = { fallbackBackground: gradientFallbackBackground, primaryColor, secondaryColor: primaryColor, containerStyle: items4, children: items5 };
-  items4 = [, , ];
-  ({ profileContentWrapper: arr5[0], profileContent: arr5[1] } = tmp8);
+  items1 = [closure_7(pendingStatusText(pendingStatusEmoji[16]), { user, displayProfile: tmp3, bannerHeight: 132, disableInteraction: true }), , ];
+  const items2 = [closure_7(pendingStatusText(pendingStatusEmoji[17]), { user, backgroundColor: avatarBackground, disableStatus: true }), ];
+  const obj4 = { fallbackBackground: gradientFallbackBackground, primaryColor, secondaryColor: primaryColor, containerStyle: items3, children: items4 };
+  items3 = [, , ];
+  ({ profileContentWrapper: arr4[0], profileContent: arr4[1] } = tmp8);
   let tmp15 = "" !== pendingStatusText;
   const tmp14 = pendingStatusText(pendingStatusEmoji[18]);
   if (!tmp15) {
@@ -97,20 +95,20 @@ export default function CustomStatusPreview(user) {
     tmp16 = { paddingTop };
     const obj5 = { paddingTop };
   }
-  items4[2] = tmp16;
-  items5 = [, ];
+  items3[2] = tmp16;
+  items4 = [, ];
   const obj6 = { hasCustomProfileTheme: null != primaryColor, style: tmp8.customStatusBubble, emojiOnlyStyle: tmp8.emojiOnlyCustomStatusBubble, onPressTruncatedStatus: callback, previewEmoji: pendingStatusEmoji, previewText: pendingStatusText, placeholderText };
-  items5[0] = closure_7(pendingStatusText(pendingStatusEmoji[19]), obj6);
+  items4[0] = closure_7(pendingStatusText(pendingStatusEmoji[19]), obj6);
   const obj7 = { user, themeType: constants.PREVIEW, pronouns, badges: tmp4, badgeContainerBackground: containerBackground, showBadgeToastOnPress: false };
   pronouns = undefined;
   const tmpResult = pendingStatusText(pendingStatusEmoji[20]);
   if (tmp3 != null) {
     pronouns = tmp3.pronouns;
   }
-  const obj8 = { children: items3 };
-  items5[1] = closure_7(tmpResult, obj7);
-  items3[1] = closure_8(tmp14, obj4);
-  items2[1] = closure_8(View, obj8);
+  const obj8 = { children: items2 };
+  items4[1] = closure_7(tmpResult, obj7);
+  items2[1] = closure_8(tmp14, obj4);
+  items1[1] = closure_8(View, obj8);
   let profileEffect;
   if (tmp3 != null) {
     profileEffect = tmp3.profileEffect;
@@ -125,6 +123,6 @@ export default function CustomStatusPreview(user) {
     const obj9 = { skuId, style: tmp7.profileEffect };
     tmp11Result = tmp11(tmpResult2, obj9);
   }
-  items2[2] = tmp11Result;
+  items1[2] = tmp11Result;
   return closure_7(ThemeContextProvider, obj2);
 };

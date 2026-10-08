@@ -1,14 +1,14 @@
-// Module ID: 15165
-// Function ID: 15166
+// Module ID: 15427
+// Function ID: 15428
 // Name: getSettingsOverrideReason
-// Dependencies: [2029, 1095, 1126, 3915, 558, 576, 504, 2]
+// Dependencies: [2041, 1095, 1126, 3989, 558, 576, 504, 2]
 // Exports: default
 
-// Module 15165 (getSettingsOverrideReason)
+// Module 15427 (getSettingsOverrideReason)
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import intl4 from "intl" /* 1126 */;
-import _modDef3915 from "module_3915" /* 3915 */;
-import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2029 */;
+import _modDef3989 from "module_3989" /* 3989 */;
+import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2041 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let _require;
 
 const constants = UserSettingsConstants.SettingsOverrideReasonKeys;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSettingsOverrideReason(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -44,7 +44,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         formatResult = intl.string(intl4.t["2ExvRu"]);
       } else if (constants.GAME_MODE === appliedOverrideReasonKey) {
         const intl3 = intl4.intl;
-        formatResult = intl3.string(_modDef3915.VGcdxP);
+        formatResult = intl3.string(_modDef3989.VGcdxP);
       }
       return formatResult;
     };
@@ -56,7 +56,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useSettingsOverrideReason(arg0) {
   let closure_0;
   _require = arg0;
   const items = [UserSettingsOverridesStore];
@@ -72,7 +72,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       formatResult = intl.string(intl4.t["2ExvRu"]);
     } else if (constants.GAME_MODE === appliedOverrideReasonKey) {
       const intl3 = intl4.intl;
-      formatResult = intl3.string(_modDef3915.VGcdxP);
+      formatResult = intl3.string(_modDef3989.VGcdxP);
     }
     return formatResult;
   });
@@ -87,10 +87,10 @@ function getSettingsOverrideReason(arg0) {
     return intl2.string(intl4.t["2ExvRu"]);
   } else if (constants.GAME_MODE === arg0) {
     const intl = intl4.intl;
-    return intl.string(_modDef3915.VGcdxP);
+    return intl.string(_modDef3989.VGcdxP);
   }
 }
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSettingLockedByOverride(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -117,7 +117,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useIsSettingLockedByOverride(arg0) {
   let closure_0;
   _require = arg0;
   const items = [UserSettingsOverridesStore];

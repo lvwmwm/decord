@@ -1,23 +1,23 @@
-// Module ID: 16877
-// Function ID: 16878
+// Module ID: 17156
+// Function ID: 17157
 // Name: SmartSearchRow
-// Dependencies: [32, 19, 17, 4885, 11984, 21, 4896, 587, 558, 576, 8404, 16878, 12004, 12002, 11985, 16879, 11983, 16889, 16891, 504, 2]
+// Dependencies: [32, 19, 17, 5079, 12057, 21, 5090, 587, 558, 576, 8600, 17157, 12077, 12075, 12058, 17158, 12056, 17170, 17172, 504, 2]
 
-// Module 16877 (SmartSearchRow)
+// Module 17156 (SmartSearchRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 12002 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 12004 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 12075 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 12077 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import SmartSearchResultsStore from "SmartSearchResultsStore" /* 11984 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import SmartSearchResultsStore from "SmartSearchResultsStore" /* 12057 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, obj1, scrollToTopResult, smartSearchQuery, tmp3;
+let dependencyMap, obj1, scrollToTopResult, tmp3;
 
 let c9;
 let metroImportAll;
@@ -33,16 +33,16 @@ obj3 = { height: 1, marginTop: nativeDefault.space.PX_16, marginBottom: nativeDe
 let closure_10 = createStyles(obj);
 const memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((smartSearchQuery) => {
+let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SmartSearchRowContainer(smartSearchQuery) {
   let closure_2;
   let entry;
   let flashListContext;
   let hasKeywordResults;
+  let items1;
   let items2;
-  let items3;
   let tmp5;
   let obj = smartSearchQuery(576);
-  const cResult = obj.c(33);
+  const cResult = obj.c(31);
   smartSearchQuery = smartSearchQuery.smartSearchQuery;
   ({ hasKeywordResults, entry } = smartSearchQuery);
   const tmp4 = closure_10();
@@ -54,13 +54,13 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((smartSear
   } else {
     tmp5 = cResult[1];
   }
-  const tmpResult = smartSearchQuery(8404);
+  const tmpResult = smartSearchQuery(8600);
   const tmp6 = flashListContext(tmpResult.useRecyclingState(hasKeywordResults, tmp5), 2);
   const isCollapsed = tmp6[0];
   dependencyMap = tmp8;
-  const tmpResult4 = smartSearchQuery(16878);
+  const tmpResult4 = smartSearchQuery(17157);
   const smartSearchRowViewability = tmpResult4.useSmartSearchRowViewability();
-  const tmpResult5 = smartSearchQuery(8404);
+  const tmpResult5 = smartSearchQuery(8600);
   flashListContext = tmpResult5.useFlashListContext();
   if (cResult[2] === flashListContext) {
     if (cResult[3] === isCollapsed) {
@@ -69,128 +69,119 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((smartSear
         if (cResult[5] === smartSearchQuery) {
           tmp11 = cResult[6];
         }
-        if (entry.status === smartSearchQuery(11985).SmartSearchStatus.NOT_QUALIFIED) {
+        if (entry.status === smartSearchQuery(12058).SmartSearchStatus.NOT_QUALIFIED) {
           return null;
         } else {
-          let tmp13;
           const tmp12 = isCollapsed ? tmp4.collapsedFrame : tmp4.expandedContent;
-          if (cResult[7] !== tmp12) {
-            const items1 = [tmp12];
-            cResult[7] = tmp12;
-            cResult[8] = items1;
-            tmp13 = items1;
-          } else {
-            tmp13 = cResult[8];
-          }
-          if (cResult[9] === entry) {
-            if (cResult[10] === hasKeywordResults) {
-              if (cResult[11] === isCollapsed) {
-                let tmp14;
-                let tmp17;
-                if (cResult[12] === smartSearchQuery) {
-                  tmp14 = cResult[13];
+          if (cResult[7] === entry) {
+            if (cResult[8] === hasKeywordResults) {
+              if (cResult[9] === isCollapsed) {
+                let tmp13;
+                let tmp16;
+                if (cResult[10] === smartSearchQuery) {
+                  tmp13 = cResult[11];
                 }
-                if (cResult[14] === entry.status) {
-                  if (cResult[15] === isCollapsed) {
-                    tmp17 = cResult[16];
+                if (cResult[12] === entry.status) {
+                  if (cResult[13] === isCollapsed) {
+                    tmp16 = cResult[14];
                   }
-                  if (cResult[17] === entry.status) {
-                    if (cResult[18] === tmp11) {
-                      if (cResult[19] === hasKeywordResults) {
-                        let tmp24;
-                        if (cResult[20] === isCollapsed) {
-                          tmp24 = cResult[21];
+                  if (cResult[15] === entry.status) {
+                    if (cResult[16] === tmp11) {
+                      if (cResult[17] === hasKeywordResults) {
+                        let tmp23;
+                        if (cResult[18] === isCollapsed) {
+                          tmp23 = cResult[19];
                         }
-                        if (cResult[22] === tmp13) {
-                          if (cResult[23] === tmp14) {
-                            if (cResult[24] === tmp17) {
-                              let tmp28;
-                              if (cResult[25] === tmp24) {
-                                tmp28 = cResult[26];
+                        if (cResult[20] === tmp12) {
+                          if (cResult[21] === tmp13) {
+                            if (cResult[22] === tmp16) {
+                              let tmp27;
+                              if (cResult[23] === tmp23) {
+                                tmp27 = cResult[24];
                               }
-                              if (cResult[27] === hasKeywordResults) {
-                                let tmp32;
-                                if (cResult[28] === tmp4.divider) {
-                                  tmp32 = cResult[29];
+                              if (cResult[25] === hasKeywordResults) {
+                                let tmp31;
+                                if (cResult[26] === tmp4.divider) {
+                                  tmp31 = cResult[27];
                                 }
-                                if (cResult[30] === tmp28) {
-                                  let tmp36;
-                                  if (cResult[31] === tmp32) {
-                                    tmp36 = cResult[32];
+                                if (cResult[28] === tmp27) {
+                                  let tmp35;
+                                  if (cResult[29] === tmp31) {
+                                    tmp35 = cResult[30];
                                   }
-                                  return tmp36;
+                                  return tmp35;
                                 }
-                                let obj2 = { children: items2 };
-                                items2 = [tmp28, tmp32];
-                                const tmp39 = closure_9(View, obj2);
-                                cResult[30] = tmp28;
-                                cResult[31] = tmp32;
-                                cResult[32] = tmp39;
-                                tmp36 = tmp39;
+                                let obj2 = { children: items1 };
+                                items1 = [tmp27, tmp31];
+                                const tmp38 = closure_9(View, obj2);
+                                cResult[28] = tmp27;
+                                cResult[29] = tmp31;
+                                cResult[30] = tmp38;
+                                tmp35 = tmp38;
                               }
-                              let tmp33 = hasKeywordResults;
-                              if (tmp33) {
+                              let tmp32 = hasKeywordResults;
+                              if (tmp32) {
                                 let obj3 = { style: tmp4.divider };
-                                tmp33 = closure_8(View, obj3);
+                                tmp32 = closure_8(View, obj3);
                               }
-                              cResult[27] = hasKeywordResults;
-                              cResult[28] = tmp4.divider;
-                              cResult[29] = tmp33;
-                              tmp32 = tmp33;
+                              cResult[25] = hasKeywordResults;
+                              cResult[26] = tmp4.divider;
+                              cResult[27] = tmp32;
+                              tmp31 = tmp32;
                             }
                           }
                         }
-                        let obj4 = { style: tmp13, children: items3 };
-                        items3 = [tmp14, tmp17, tmp24];
-                        const tmp31 = closure_9(View, obj4);
-                        cResult[22] = tmp13;
-                        cResult[23] = tmp14;
-                        cResult[24] = tmp17;
-                        cResult[25] = tmp24;
-                        cResult[26] = tmp31;
-                        tmp28 = tmp31;
+                        let obj4 = { style: tmp12, children: items2 };
+                        items2 = [tmp13, tmp16, tmp23];
+                        const tmp30 = closure_9(View, obj4);
+                        cResult[20] = tmp12;
+                        cResult[21] = tmp13;
+                        cResult[22] = tmp16;
+                        cResult[23] = tmp23;
+                        cResult[24] = tmp30;
+                        tmp27 = tmp30;
                       }
                     }
                   }
-                  let tmp25 = hasKeywordResults && entry.status === tmp(11985).SmartSearchStatus.LOADED;
-                  if (tmp25) {
+                  let tmp24 = hasKeywordResults && entry.status === tmp(12058).SmartSearchStatus.LOADED;
+                  if (tmp24) {
                     const obj5 = { isCollapsed, onPress: tmp11 };
-                    tmp25 = closure_8(isCollapsed(16891), obj5);
+                    tmp24 = closure_8(isCollapsed(17172), obj5);
                   }
-                  cResult[17] = entry.status;
-                  cResult[18] = tmp11;
-                  cResult[19] = hasKeywordResults;
-                  cResult[20] = isCollapsed;
-                  cResult[21] = tmp25;
-                  tmp24 = tmp25;
+                  cResult[15] = entry.status;
+                  cResult[16] = tmp11;
+                  cResult[17] = hasKeywordResults;
+                  cResult[18] = isCollapsed;
+                  cResult[19] = tmp24;
+                  tmp23 = tmp24;
                 }
                 if (isCollapsed) {
-                  let tmp20;
-                  const tmpResult6 = smartSearchQuery(11983);
+                  let tmp19;
+                  const tmpResult6 = smartSearchQuery(12056);
                   if (!tmpResult6.isSmartSearchEmptyOrErrored(entry.status)) {
-                    tmp20 = closure_8(isCollapsed(16889), { height: 72 });
+                    tmp19 = closure_8(isCollapsed(17170), { height: 72 });
                   }
-                  cResult[14] = entry.status;
-                  cResult[15] = isCollapsed;
-                  cResult[16] = tmp20;
-                  tmp17 = tmp20;
+                  cResult[12] = entry.status;
+                  cResult[13] = isCollapsed;
+                  cResult[14] = tmp19;
+                  tmp16 = tmp19;
                 }
-                let tmp21 = null;
-                if (entry.status === smartSearchQuery(11985).SmartSearchStatus.LOADING) {
-                  tmp21 = closure_8(isCollapsed(16889), { height: 120 });
+                let tmp20 = null;
+                if (entry.status === smartSearchQuery(12058).SmartSearchStatus.LOADING) {
+                  tmp20 = closure_8(isCollapsed(17170), { height: 120 });
                 }
-                tmp20 = tmp21;
+                tmp19 = tmp20;
               }
             }
           }
           const obj6 = { smartSearchQuery, hasKeywordResults, entry, isCollapsed };
-          const tmp16 = closure_8(smartSearchQuery(16879).SmartSearchContent, obj6);
-          cResult[9] = entry;
-          cResult[10] = hasKeywordResults;
-          cResult[11] = isCollapsed;
-          cResult[12] = smartSearchQuery;
-          cResult[13] = tmp16;
-          tmp14 = tmp16;
+          const tmp15 = closure_8(smartSearchQuery(17158).SmartSearchContent, obj6);
+          cResult[7] = entry;
+          cResult[8] = hasKeywordResults;
+          cResult[9] = isCollapsed;
+          cResult[10] = smartSearchQuery;
+          cResult[11] = tmp15;
+          tmp13 = tmp15;
         }
       }
     }
@@ -224,23 +215,22 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((smartSear
   cResult[5] = smartSearchQuery;
   cResult[6] = E;
   tmp11 = E;
-}) : ((smartSearchQuery) => {
+}) : (function SmartSearchRowContainer(smartSearchQuery) {
   let closure_2;
   let entry;
   let hasKeywordResults;
-  let items2;
   smartSearchQuery = smartSearchQuery.smartSearchQuery;
   ({ hasKeywordResults, entry } = smartSearchQuery);
   let flashListContext;
   const tmp = closure_10();
-  let obj = smartSearchQuery(8404);
+  let obj = smartSearchQuery(8600);
   const items = [smartSearchQuery.requestKey];
   const tmp4 = flashListContext(obj.useRecyclingState(hasKeywordResults, items), 2);
   const isCollapsed = tmp4[0];
   dependencyMap = tmp6;
-  let obj2 = smartSearchQuery(16878);
+  let obj2 = smartSearchQuery(17157);
   const smartSearchRowViewability = obj2.useSmartSearchRowViewability();
-  let obj3 = smartSearchQuery(8404);
+  let obj3 = smartSearchQuery(8600);
   flashListContext = obj3.useFlashListContext();
   const items1 = [flashListContext, isCollapsed, tmp4[1], smartSearchQuery];
   const callback = react.useCallback(() => {
@@ -260,45 +250,44 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((smartSear
     const result = obj4.trackSmartSearchAnswerToggled(obj3, SearchSessionAnalyticsManagerDefault);
   }, items1);
   let tmp19Result = null;
-  if (entry.status !== smartSearchQuery(11985).SmartSearchStatus.NOT_QUALIFIED) {
-    let obj4 = { style: items2, children: null };
-    items2 = [isCollapsed ? tmp.collapsedFrame : tmp.expandedContent];
+  if (entry.status !== smartSearchQuery(12058).SmartSearchStatus.NOT_QUALIFIED) {
+    let obj4 = { style: isCollapsed ? tmp.collapsedFrame : tmp.expandedContent, children: null };
     const obj5 = { smartSearchQuery, hasKeywordResults, entry, isCollapsed };
-    const items3 = [closure_8(tmp2(16879).SmartSearchContent, obj5), , ];
+    const items2 = [closure_8(tmp2(17158).SmartSearchContent, obj5), , ];
     if (isCollapsed) {
       let tmp11Result;
-      const tmp2Result = smartSearchQuery(11983);
+      const tmp2Result = smartSearchQuery(12056);
       if (!tmp2Result.isSmartSearchEmptyOrErrored(entry.status)) {
-        tmp11Result = tmp11(isCollapsed(16889), { height: 72 });
+        tmp11Result = tmp11(isCollapsed(17170), { height: 72 });
       }
-      items3[1] = tmp11Result;
-      let tmp11Result4 = hasKeywordResults && entry.status === tmp2(11985).SmartSearchStatus.LOADED;
+      items2[1] = tmp11Result;
+      let tmp11Result4 = hasKeywordResults && entry.status === tmp2(12058).SmartSearchStatus.LOADED;
       if (tmp11Result4) {
         const obj6 = { isCollapsed, onPress: callback };
-        tmp11Result4 = tmp11(isCollapsed(16891), obj6);
+        tmp11Result4 = tmp11(isCollapsed(17172), obj6);
       }
-      items3[2] = tmp11Result4;
-      obj4.children = items3;
-      const items4 = [closure_9(View, obj4), ];
+      items2[2] = tmp11Result4;
+      obj4.children = items2;
+      const items3 = [closure_9(View, obj4), ];
       let tmp11Result5 = hasKeywordResults;
       if (tmp11Result5) {
         const obj7 = { style: tmp.divider };
         tmp11Result5 = tmp11(tmp20, obj7);
       }
-      const obj8 = { children: items4 };
-      items4[1] = tmp11Result5;
+      const obj8 = { children: items3 };
+      items3[1] = tmp11Result5;
       tmp19Result = tmp19(tmp20, obj8);
     }
     let tmp11Result6 = null;
-    if (entry.status === smartSearchQuery(11985).SmartSearchStatus.LOADING) {
-      tmp11Result6 = tmp11(isCollapsed(16889), { height: 120 });
+    if (entry.status === smartSearchQuery(12058).SmartSearchStatus.LOADING) {
+      tmp11Result6 = tmp11(isCollapsed(17170), { height: 120 });
     }
     tmp11Result = tmp11Result6;
   }
   return tmp19Result;
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((smartSearchQuery) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SmartSearchRowConnected(smartSearchQuery) {
   let first;
   const obj = smartSearchQuery(576);
   const cResult = obj.c(9);
@@ -346,14 +335,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((smartSearchQuery) =>
     }
     return tmp9;
   }
-  const fn = function l() {
+  const fn = function n() {
     return SmartSearchResultsStore.getAnswer(smartSearchQuery.guildId, smartSearchQuery.requestKey);
   };
   cResult[1] = smartSearchQuery.guildId;
   cResult[2] = smartSearchQuery.requestKey;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((smartSearchQuery) => {
+}) : (function SmartSearchRowConnected(smartSearchQuery) {
   smartSearchQuery = smartSearchQuery.smartSearchQuery;
   const items = [SmartSearchResultsStore];
   const items1 = [smartSearchQuery];

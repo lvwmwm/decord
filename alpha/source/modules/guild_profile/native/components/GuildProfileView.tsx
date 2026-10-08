@@ -1,57 +1,54 @@
-// Module ID: 9413
-// Function ID: 9414
+// Module ID: 8834
+// Function ID: 8835
 // Name: GuildProfileView
-// Dependencies: [19, 17, 2074, 1085, 21, 4593, 4595, 4896, 587, 558, 576, 2066, 504, 1484, 1402, 9414, 4797, 4586, 9415, 5612, 9416, 4892, 9418, 9425, 2]
+// Dependencies: [19, 17, 2086, 1085, 21, 4785, 4787, 5090, 587, 558, 576, 2078, 504, 1496, 1414, 8835, 6164, 4991, 4778, 8836, 5387, 8837, 5086, 8849, 9089, 2]
 // Exports: getBackgroundForProfile
 
-// Module 9413 (GuildProfileView)
+// Module 8834 (GuildProfileView)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2066 */;
-import useToken from "useToken" /* 4586 */;
-import themes from "themes" /* 4593 */;
-import native from "native" /* 4595 */;
-import useThemeDefault from "useTheme" /* 4797 */;
-import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 9414 */;
-import guild_profile_GuildProfileUtils from "guild_profile/GuildProfileUtils" /* 9415 */;
-import GuildProfileHeaderDefault from "GuildProfileHeader" /* 9416 */;
-import GuildProfileGamesDefault from "GuildProfileGames" /* 9418 */;
-import GuildProfileTraitsDefault from "GuildProfileTraits" /* 9425 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2078 */;
+import useToken from "useToken" /* 4778 */;
+import themes from "themes" /* 4785 */;
+import native from "native" /* 4787 */;
+import useThemeDefault from "useTheme" /* 4991 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 8835 */;
+import guild_profile_GuildProfileUtils from "guild_profile/GuildProfileUtils" /* 8836 */;
+import GuildProfileHeaderDefault from "GuildProfileHeader" /* 8837 */;
+import GuildProfileGamesDefault from "GuildProfileGames" /* 8849 */;
+import GuildProfileTraitsDefault from "GuildProfileTraits" /* 9089 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let guildProfile;
-
-let c9;
-let closure_4;
-let hasOwnProperty;
 let metroImportAll;
+let metroImportDefault;
 let obj2;
 let size;
 let tmp;
 let tmp5;
-const Text_Text = tmp(4892);
-const LinearGradientDefault = tmp5(5612);
-({ View: closure_4, Image: hasOwnProperty } = react_native);
+const Text_Text = tmp(5086);
+const LinearGradientDefault = tmp5(5387);
+const View = react_native.View;
 const GuildFeatures = Constants.GuildFeatures;
-({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: obj2, colorBanner: { height: 140, width: "100%" }, imageBanner: { height: 140, width: "100%", objectFit: "cover" }, body: { marginTop: 12, paddingHorizontal: 16, gap: 16 }, error: { display: "flex", flexDirection: "row", alignItems: "center", gap: 8 }, buttonContainer: { marginTop: 160 }, header: { paddingHorizontal: 16, marginTop: -32, display: "flex", flexDirection: "column", gap: 0 }, avatarBackground: size, restrictedAcronym: { fontSize: 24 } };
+let obj = { container: obj2, colorBanner: { height: 140, width: "100%" }, imageBanner: { height: 140, width: "100%", resizeMode: "cover" }, body: { marginTop: 12, paddingHorizontal: 16, gap: 16 }, error: { display: "flex", flexDirection: "row", alignItems: "center", gap: 8 }, buttonContainer: { marginTop: 160 }, header: { paddingHorizontal: 16, marginTop: -32, display: "flex", flexDirection: "column", gap: 0 }, avatarBackground: size, restrictedAcronym: { fontSize: 24 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 createStyles = createStyles.createStyles;
 size = { width: 86, height: 86, borderRadius: 28.666666666666668, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, display: "flex", justifyContent: "center", alignItems: "center", overflow: "hidden" };
 const styles = createStyles(obj);
 const frozen = Object.freeze({ START: { x: 0, y: 1 }, END: { x: 1.5, y: 0 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildProfile) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfileBackground(guildProfile) {
   let first;
   let tmp11;
   let tmp6;
@@ -67,7 +64,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildProfile) 
     first = cResult[0];
   }
   if (cResult[1] !== guildProfile) {
-    const fn = function l() {
+    const fn = function u() {
       let guild = GuildStore.getGuild(guildProfile.id);
       const tmp = guildProfile;
       if (guild == null) {
@@ -103,11 +100,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildProfile) 
             return tmp18;
           }
           const obj2 = { style: tmp9.imageBanner, source: tmp15 };
-          const tmp21 = closure_8(closure_5, obj2);
+          const tmp20 = closure_7(FastImageDefault, obj2);
           cResult[7] = tmp15;
           cResult[8] = tmp9.imageBanner;
-          cResult[9] = tmp21;
-          tmp18 = tmp21;
+          cResult[9] = tmp20;
+          tmp18 = tmp20;
         }
       }
       ({ id: obj4.id, customBanner: obj4.splash } = guildProfile);
@@ -124,7 +121,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildProfile) 
   }
   if (cResult[10] !== guildProfile) {
     const obj5 = { guildProfile };
-    const tmp14 = closure_8(closure_13, obj5);
+    const tmp14 = closure_7(closure_12, obj5);
     cResult[10] = guildProfile;
     cResult[11] = tmp14;
     tmp11 = tmp14;
@@ -132,7 +129,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildProfile) 
     tmp11 = cResult[11];
   }
   return tmp11;
-}) : ((guildProfile) => {
+}) : (function GuildProfileBackground(guildProfile) {
   guildProfile = guildProfile.guildProfile;
   let tmp = dependencyMap;
   let obj = guildProfile(504);
@@ -152,16 +149,17 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildProfile) 
     if (null != guildProfile.customBanner) {
       ({ id: obj2.id, customBanner: obj2.splash } = guildProfile);
       const obj3 = { id: null, splash: null, size: getDevicePixelRatioDefault() * width };
-      const getGuildDiscoverySplashSource = tmp3(1402).getGuildDiscoverySplashSource;
+      const getGuildDiscoverySplashSource = tmp3(1414).getGuildDiscoverySplashSource;
       AvatarUtilsDefault;
-      const obj5 = { style: tmp4.imageBanner, source: getGuildDiscoverySplashSource(obj3) };
-      return closure_8(closure_5, obj5);
+      const guildDiscoverySplashSource = getGuildDiscoverySplashSource(obj3);
+      const obj5 = { style: tmp4.imageBanner, source: guildDiscoverySplashSource };
+      return closure_7(FastImageDefault, obj5);
     }
   }
-  return closure_8(closure_13, { guildProfile });
+  return closure_7(closure_12, { guildProfile });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildProfile) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfileGradient(guildProfile) {
   let brightenColorResult;
   const obj = react2;
   const cResult = obj.c(6);
@@ -186,7 +184,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildProfile) 
     }
     const obj4 = { style: tmp9, start: null, end: null, colors: tmp10 };
     ({ START: obj6.start, END: obj6.end } = frozen);
-    const tmp16 = metroImportAll(LinearGradientDefault, obj4);
+    const tmp16 = metroImportDefault(LinearGradientDefault, obj4);
     cResult[3] = tmp4.colorBanner;
     cResult[4] = tmp10;
     cResult[5] = tmp16;
@@ -206,7 +204,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildProfile) 
   cResult[1] = tmp6;
   cResult[2] = items;
   tmp10 = items;
-}) : ((guildProfile) => {
+}) : (function GuildProfileGradient(guildProfile) {
   let brightenColorResult;
   let items;
   guildProfile = guildProfile.guildProfile;
@@ -222,7 +220,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildProfile) 
   const obj4 = themes;
   const isThemeDarkResult = obj4.isThemeDark(tmp2);
   const obj5 = native;
-  const tmp5 = metroImportAll;
+  const tmp5 = metroImportDefault;
   if (isThemeDarkResult) {
     brightenColorResult = obj5.brightenColor(profilePrimaryColor, 0.8);
   } else {
@@ -232,21 +230,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildProfile) 
   return tmp5(tmp6, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-function getBackgroundForProfile(theme, token) {
-  let brightenColorResult;
-  const items = [token, ];
-  const obj = themes;
-  const isThemeDarkResult = obj.isThemeDark(theme);
-  const obj2 = native;
-  if (isThemeDarkResult) {
-    brightenColorResult = obj2.brightenColor(token, 0.8);
-  } else {
-    brightenColorResult = obj2.darkenColor(token, 0.8);
-  }
-  items[1] = brightenColorResult;
-  return items;
-}
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildProfile) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfileView(guildProfile) {
   let items;
   let items1;
   let tmp10;
@@ -278,7 +262,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildProfile) => {
   }
   if (cResult[3] !== guildProfile) {
     const obj5 = { guildProfile };
-    const tmp13 = metroImportAll(closure_12, obj5);
+    const tmp13 = metroImportDefault(closure_11, obj5);
     cResult[3] = guildProfile;
     cResult[4] = tmp13;
     tmp10 = tmp13;
@@ -297,7 +281,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildProfile) => {
       let tmp17 = null != guildProfile.description && guildProfile.description.length > 0;
       if (tmp17) {
         const obj6 = { variant: "text-md/medium", color: "text-subtle", children: guildProfile.description };
-        tmp17 = metroImportAll(Text_Text.Text, obj6);
+        tmp17 = metroImportDefault(Text_Text.Text, obj6);
       }
       cResult[8] = guildProfile.description;
       cResult[9] = tmp17;
@@ -307,9 +291,9 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildProfile) => {
     }
     if (cResult[10] !== guildProfile) {
       const obj7 = { profile: guildProfile };
-      const tmp23 = metroImportAll(GuildProfileGamesDefault, obj7);
+      const tmp23 = metroImportDefault(GuildProfileGamesDefault, obj7);
       const obj8 = { profile: guildProfile };
-      const tmp24 = metroImportAll(GuildProfileTraitsDefault, obj8);
+      const tmp24 = metroImportDefault(GuildProfileTraitsDefault, obj8);
       cResult[10] = guildProfile;
       cResult[11] = tmp23;
       cResult[12] = tmp24;
@@ -339,7 +323,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildProfile) => {
           }
           const obj9 = { style: tmp4.container, children: items };
           items = [tmp10, tmp14, tmp25];
-          const tmp32 = React4(React3, obj9);
+          const tmp32 = metroImportAll(View, obj9);
           cResult[18] = tmp4.container;
           cResult[19] = tmp10;
           cResult[20] = tmp14;
@@ -351,7 +335,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildProfile) => {
     }
     const obj16 = { style: tmp4.body, children: items1 };
     items1 = [tmp16, tmp19, tmp20];
-    const tmp28 = React4(React3, obj16);
+    const tmp28 = metroImportAll(View, obj16);
     cResult[13] = tmp4.body;
     cResult[14] = tmp16;
     cResult[15] = tmp19;
@@ -359,12 +343,12 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildProfile) => {
     cResult[17] = tmp28;
     tmp25 = tmp28;
   }
-  const tmp15 = metroImportAll(GuildProfileHeaderDefault, { profile: guildProfile, guildIconSource: tmp5 });
+  const tmp15 = metroImportDefault(GuildProfileHeaderDefault, { profile: guildProfile, guildIconSource: tmp5 });
   cResult[5] = tmp5;
   cResult[6] = guildProfile;
   cResult[7] = tmp15;
   tmp14 = tmp15;
-}) : ((guildProfile) => {
+}) : (function GuildProfileView(guildProfile) {
   let items1;
   let items2;
   guildProfile = guildProfile.guildProfile;
@@ -387,21 +371,35 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildProfile) => {
       return uri;
     }
   }, items);
-  items1 = [closure_8(closure_12, { guildProfile }), closure_8(GuildProfileHeaderDefault, { profile: guildProfile, guildIconSource: memo }), ];
+  items1 = [closure_7(closure_11, { guildProfile }), closure_7(GuildProfileHeaderDefault, { profile: guildProfile, guildIconSource: memo }), ];
   const obj2 = { style: tmp.body, children: items2 };
   let tmp5Result = null != guildProfile.description && guildProfile.description.length > 0;
   if (tmp5Result) {
     let obj3 = { variant: "text-md/medium", color: "text-subtle", children: guildProfile.description };
-    tmp5Result = tmp5(guildProfile(4892).Text, obj3);
+    tmp5Result = tmp5(guildProfile(5086).Text, obj3);
   }
-  items2 = [tmp5Result, closure_8(GuildProfileGamesDefault, { profile: guildProfile }), closure_8(GuildProfileTraitsDefault, { profile: guildProfile })];
-  items1[2] = closure_9(closure_4, obj2);
-  return closure_9(closure_4, obj);
+  items2 = [tmp5Result, closure_7(GuildProfileGamesDefault, { profile: guildProfile }), closure_7(GuildProfileTraitsDefault, { profile: guildProfile })];
+  items1[2] = closure_8(View, obj2);
+  return closure_8(View, obj);
 });
+function getBackgroundForProfile(theme, token) {
+  let brightenColorResult;
+  const items = [token, ];
+  const obj = themes;
+  const isThemeDarkResult = obj.isThemeDark(theme);
+  const obj2 = native;
+  if (isThemeDarkResult) {
+    brightenColorResult = obj2.brightenColor(token, 0.8);
+  } else {
+    brightenColorResult = obj2.darkenColor(token, 0.8);
+  }
+  items[1] = brightenColorResult;
+  return items;
+}
 size = size_mod;
 const result = size.fileFinishedImporting("modules/guild_profile/native/components/GuildProfileView.tsx");
 
-export default tmp7;
+export default tmp6;
 export { getBackgroundForProfile };
 export const useStyles = styles;
 export const DiagonalGradient = frozen;

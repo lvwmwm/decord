@@ -1,20 +1,18 @@
-// Module ID: 9753
-// Function ID: 9754
+// Module ID: 10954
+// Function ID: 10955
 // Name: MediaTile
-// Dependencies: [19, 17, 4912, 4917, 21, 4896, 587, 558, 576, 9743, 1484, 5919, 504, 9754, 1188, 2]
+// Dependencies: [19, 17, 6041, 5113, 21, 5090, 587, 558, 576, 10944, 1496, 8302, 504, 10955, 1200, 2]
 
-// Module 9753 (MediaTile)
+// Module 10954 (MediaTile)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import CallConstants from "CallConstants" /* 4917 */;
+import CallConstants from "CallConstants" /* 5113 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4912 */;
-import createStyles from "createStyles" /* 4896 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let channel;
 
 let obj2;
 const View = react_native.View;
@@ -24,7 +22,7 @@ let obj = { container: { flex: 1, marginHorizontal: 4, marginVertical: 4 }, medi
 obj2 = { flex: 1, borderRadius: nativeDefault.radii.sm };
 let closure_7 = createStyles.createStyles(obj);
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MediaTile(channel) {
   let first;
   const obj = channel(576);
   const cResult = obj.c(23);
@@ -32,10 +30,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
   const participant = channel.participant;
   size = channel.size;
   const tmp4 = closure_7();
-  const obj2 = channel(9743);
+  const obj2 = channel(10944);
   const speakerTileStyles = obj2.useSpeakerTileStyles();
-  const width = participant(1484)().width;
-  const obj3 = channel(5919);
+  const width = participant(1496)().width;
+  const obj3 = channel(8302);
   const isScreenLandscape = obj3.useIsScreenLandscape();
   const tmp6 = participant;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -93,8 +91,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
                       tmp23 = tmp26;
                     }
                   }
-                  tmp6(9754);
-                  const tmp22 = <tmp6Result hasBottomSafeArea={false} hasLeftSafeArea={false} hasRightSafeArea={false} hasTopSafeArea={false} participant={stateFromStores} avatarSize={channel(1188).AvatarSizes.XLARGE} channel={channel} shrinkStreamEmptyState={false} contentStyle={tmp4.media} />;
+                  tmp6(10955);
+                  const tmp22 = <tmp6Result hasBottomSafeArea={false} hasLeftSafeArea={false} hasRightSafeArea={false} hasTopSafeArea={false} participant={stateFromStores} avatarSize={channel(1200).AvatarSizes.XLARGE} channel={channel} shrinkStreamEmptyState={false} contentStyle={tmp4.media} />;
                   cResult[16] = channel;
                   cResult[17] = stateFromStores;
                   cResult[18] = tmp4.media;
@@ -110,7 +108,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
               tmp18 = items1;
             }
           }
-          const tmpResult3 = channel(9743);
+          const tmpResult3 = channel(10944);
           const tileWidthStyle = tmpResult3.getTileWidthStyle(size, width, isScreenLandscape);
           cResult[8] = isScreenLandscape;
           cResult[9] = size;
@@ -118,7 +116,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
           cResult[11] = tileWidthStyle;
           tmp16 = tileWidthStyle;
         }
-        const tmpResult4 = channel(9743);
+        const tmpResult4 = channel(10944);
         const sizeStyle = tmpResult4.getSizeStyle(size, speakerTileStyles);
         cResult[5] = size;
         cResult[6] = speakerTileStyles;
@@ -138,15 +136,15 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
   cResult[4] = items2;
   tmp11 = items2;
   tmp10 = fn;
-}) : ((channel) => {
+}) : (function MediaTile(channel) {
   channel = channel.channel;
   const participant = channel.participant;
   size = channel.size;
   const tmp = closure_7();
-  const obj = channel(9743);
+  const obj = channel(10944);
   const speakerTileStyles = obj.useSpeakerTileStyles();
-  const width = participant(1484)().width;
-  const obj2 = channel(5919);
+  const width = participant(1496)().width;
+  const obj2 = channel(8302);
   const isScreenLandscape = obj2.useIsScreenLandscape();
   const items = [ChannelRTCStore];
   const items1 = [channel.id, participant.id];
@@ -158,12 +156,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
     tmp8 = null;
     if (stateFromStores.type !== ParticipantTypes.ACTIVITY) {
       const items2 = [tmp.container, , ];
-      const tmp2Result = channel(9743);
+      const tmp2Result = channel(10944);
       items2[1] = tmp2Result.getSizeStyle(size, speakerTileStyles);
-      const tmp2Result2 = channel(9743);
+      const tmp2Result2 = channel(10944);
       items2[2] = tmp2Result2.getTileWidthStyle(size, width, isScreenLandscape);
-      ({ hasBottomSafeArea: false, hasLeftSafeArea: false, hasRightSafeArea: false, hasTopSafeArea: false, participant: stateFromStores, avatarSize: channel(1188).AvatarSizes.XLARGE, channel, shrinkStreamEmptyState: false, contentStyle: tmp.media });
-      tmp5(9754);
+      ({ hasBottomSafeArea: false, hasLeftSafeArea: false, hasRightSafeArea: false, hasTopSafeArea: false, participant: stateFromStores, avatarSize: channel(1200).AvatarSizes.XLARGE, channel, shrinkStreamEmptyState: false, contentStyle: tmp.media });
+      tmp5(10955);
       tmp8 = <View style={items2}>{null}</View>;
     }
   }

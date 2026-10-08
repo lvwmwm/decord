@@ -1,14 +1,14 @@
-// Module ID: 9262
-// Function ID: 9263
+// Module ID: 8592
+// Function ID: 8593
 // Name: GuildProfileStore
-// Dependencies: [1085, 569, 5945, 504, 584, 2]
+// Dependencies: [1085, 569, 6128, 504, 584, 2]
 
-// Module 9262 (GuildProfileStore)
+// Module 8592 (GuildProfileStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import GuildProfileBuilders from "GuildProfileBuilders" /* 5945 */;
+import GuildProfileBuilders from "GuildProfileBuilders" /* 6128 */;
 import size from "module_2" /* 2 */;
 
 let obj, set, set2;

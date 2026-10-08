@@ -1,17 +1,17 @@
-// Module ID: 13288
-// Function ID: 13289
+// Module ID: 13589
+// Function ID: 13590
 // Name: LargeCountDownPill
-// Dependencies: [17, 21, 4896, 587, 558, 576, 4580, 4574, 1126, 4818, 4892, 2]
+// Dependencies: [17, 21, 5090, 587, 558, 576, 4772, 4766, 1126, 5012, 5086, 2]
 
-// Module 13288 (LargeCountDownPill)
+// Module 13589 (LargeCountDownPill)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4580 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 4818 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4772 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5012 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ obj2 = { flexDirection: "row", justifyContent: "center", alignItems: "center", b
 createStyles = createStyles.createStyles;
 obj3 = { paddingVertical: 8, color: nativeDefault.colors.TEXT_STATUS_IDLE, fontSize: 14, lineHeight: 16, marginRight: 8 };
 let closure_7 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((countdownText) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function LargeCountDownPill(countdownText) {
   let closure_0;
   let items;
   let largeCountdownPill;
@@ -45,7 +45,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((countdownText) => {
   const tmp4 = closure_7();
   _require = tmp4;
   if (cResult[0] !== tmp4.iconStyle) {
-    const fn = function l() {
+    function handlePress() {
       let intl;
       let intl2;
       let obj = DesignSystemsNotificationComponentsExperiment;
@@ -71,10 +71,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((countdownText) => {
         intl = tmp(1126).intl;
         open(obj3);
       }
-    };
+    }
     cResult[0] = tmp4.iconStyle;
-    cResult[1] = fn;
-    tmp5 = fn;
+    cResult[1] = handlePress;
+    tmp5 = handlePress;
   } else {
     tmp5 = cResult[1];
   }
@@ -95,7 +95,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((countdownText) => {
     }
     if (cResult[7] !== tmp4.iconStyle) {
       let obj2 = { style: tmp4.iconStyle, color: nativeDefault.colors.TEXT_STATUS_IDLE };
-      let CircleInformationIcon = tmp(4818).CircleInformationIcon;
+      let CircleInformationIcon = tmp(5012).CircleInformationIcon;
       const tmp13 = closure_5(CircleInformationIcon, obj2);
       cResult[7] = tmp4.iconStyle;
       cResult[8] = tmp13;
@@ -133,12 +133,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((countdownText) => {
     cResult[12] = tmp17;
     tmp14 = tmp17;
   }
-  const tmp9 = closure_5(tmp(4892).Text, { variant: "text-xs/bold", style: largeCountdownPillText, children: tmp6 });
+  const tmp9 = closure_5(tmp(5086).Text, { variant: "text-xs/bold", style: largeCountdownPillText, children: tmp6 });
   cResult[4] = tmp4.largeCountdownPillText;
   cResult[5] = tmp6;
   cResult[6] = tmp9;
   tmp8 = tmp9;
-}) : ((countdownText) => {
+}) : (function LargeCountDownPill(countdownText) {
   let closure_0;
   let items;
   let obj2;
@@ -146,7 +146,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((countdownText) => {
   const tmp = closure_7();
   _require = tmp;
   let obj = {
-    onPress() {
+    onPress: function handlePress() {
       let intl;
       let intl2;
       let obj = DesignSystemsNotificationComponentsExperiment;

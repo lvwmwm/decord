@@ -1,22 +1,20 @@
-// Module ID: 16490
-// Function ID: 16491
+// Module ID: 16750
+// Function ID: 16751
 // Name: ContentInventoryEntryContainer
-// Dependencies: [19, 17, 1377, 21, 16434, 587, 1369, 558, 576, 8039, 7861, 504, 1188, 16475, 5916, 2]
+// Dependencies: [19, 17, 1389, 21, 16694, 587, 1381, 558, 576, 8447, 8279, 504, 1200, 16735, 6189, 2]
 
-// Module 16490 (ContentInventoryEntryContainer)
+// Module 16750 (ContentInventoryEntryContainer)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8039 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8447 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16434 */;
+import createICYMIStyles from "createICYMIStyles" /* 16694 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let contentId;
 
 let metroImportDefault;
 let metroRequire;
@@ -50,7 +48,7 @@ const iCYMIStyles = createICYMIStyles.createICYMIStyles((marginBottom, arg1) => 
   ({ flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 });
   return obj;
 });
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((contentId) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContentInventoryEntryContainer(contentId) {
   let children;
   let highlight;
   let items1;
@@ -230,7 +228,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((contentId) => {
       }
     }
   }
-  const fn = function o() {
+  const fn = function s() {
     if (null != onPress) {
       const obj = ICYMIActionCreatorsDefault;
       obj.itemInteracted(contentId, type, "press");
@@ -254,7 +252,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((contentId) => {
   cResult[3] = userId;
   cResult[4] = fn;
   tmp7 = fn;
-}) : ((contentId) => {
+}) : (function ContentInventoryEntryContainer(contentId) {
   let SimplePost;
   let highlight;
   let items3;

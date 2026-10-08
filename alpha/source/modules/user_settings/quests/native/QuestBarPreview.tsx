@@ -1,21 +1,19 @@
-// Module ID: 14998
-// Function ID: 14999
+// Module ID: 15260
+// Function ID: 15261
 // Name: QuestBarPreview
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 14916, 14999, 15000, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 15178, 15261, 15262, 2]
 
-// Module 14998 (QuestBarPreview)
+// Module 15260 (QuestBarPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 14916 */;
-import reactDefault from "react" /* 14999 */;
+import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 15178 */;
+import reactDefault from "react" /* 15261 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let quest;
 
 let rect;
 const View = react_native.View;
@@ -24,7 +22,7 @@ const value = { isRendered: true, isVisibleToUser: true };
 let obj = { overlay: { position: "absolute", bottom: 0, left: 0, right: 0, zIndex: 1000, elevation: 1000, pointerEvents: "box-none" }, questDockContainer: rect };
 rect = { position: "absolute", bottom: 0, left: nativeDefault.space.PX_16, right: nativeDefault.space.PX_16, zIndex: 1001, elevation: 1001 };
 let closure_6 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBarPreview(quest) {
   const obj = react2;
   const cResult = obj.c(8);
   quest = quest.quest;
@@ -36,7 +34,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
     if (isVisible) {
       let tmp6;
       if (cResult[0] !== quest) {
-        const QuestDockExternalCoordinationContextProvider = tmp(14916).QuestDockExternalCoordinationContextProvider;
+        const QuestDockExternalCoordinationContextProvider = tmp(15178).QuestDockExternalCoordinationContextProvider;
         const Provider = reactDefault.Provider;
         const tmp10 = <QuestDockExternalCoordinationContextProvider>{null}</QuestDockExternalCoordinationContextProvider>;
         cResult[0] = quest;
@@ -71,7 +69,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
     }
   }
   return tmp5;
-}) : ((quest) => {
+}) : (function QuestBarPreview(quest) {
   quest = quest.quest;
   const isVisible = quest.isVisible;
   const tmp = closure_6();

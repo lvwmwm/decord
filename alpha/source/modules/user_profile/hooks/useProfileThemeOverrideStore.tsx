@@ -1,14 +1,14 @@
-// Module ID: 7911
-// Function ID: 7912
+// Module ID: 8330
+// Function ID: 8331
 // Name: useProfileThemeOverrideStore
-// Dependencies: [1085, 570, 558, 576, 4797, 7912, 4735, 2]
+// Dependencies: [1085, 570, 558, 576, 4991, 8331, 4929, 2]
 
-// Module 7911 (useProfileThemeOverrideStore)
+// Module 8330 (useProfileThemeOverrideStore)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import shared from "shared" /* 4735 */;
-import useThemeDefault from "useTheme" /* 4797 */;
-import UserProfileGradientUtils from "UserProfileGradientUtils" /* 7912 */;
+import shared from "shared" /* 4929 */;
+import useThemeDefault from "useTheme" /* 4991 */;
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8331 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ let tmp2 = module_570.create()((arg0) => {
 });
 let closure_4 = tmp2;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEffectiveThemeOverride() {
   let first;
   const obj = react;
   const cResult = obj.c(9);
@@ -137,7 +137,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[8] = obj2;
     tmp16 = obj2;
   }
-}) : (() => {
+}) : (function useEffectiveThemeOverride() {
   const tmp = closure_4((themeOverride) => themeOverride.themeOverride);
   const tmp3 = useThemeDefault();
   if (null == tmp) {
@@ -205,7 +205,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsBannerDisabledByOverride() {
   let first;
   const obj = react;
   const cResult = obj.c(1);
@@ -225,7 +225,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const tmp5 = "non-nitro" === tmp3.mode || true === tmp3.disableBanner;
   }
   return tmp4;
-}) : (() => {
+}) : (function useIsBannerDisabledByOverride() {
   const tmp = closure_4((themeOverride) => themeOverride.themeOverride);
   let tmp2 = null != tmp;
   if (tmp2) {
@@ -235,7 +235,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return tmp2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasNonNitroThemeOverride() {
   let first;
   const obj = react;
   const cResult = obj.c(1);
@@ -250,7 +250,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmp3 = closure_4(first);
   return null != tmp3 && "non-nitro" === tmp3.mode;
-}) : (() => {
+}) : (function useHasNonNitroThemeOverride() {
   const tmp = closure_4((themeOverride) => themeOverride.themeOverride);
   return null != tmp && "non-nitro" === tmp.mode;
 });

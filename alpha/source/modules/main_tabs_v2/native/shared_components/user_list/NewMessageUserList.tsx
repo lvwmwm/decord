@@ -1,29 +1,29 @@
-// Module ID: 12010
-// Function ID: 12011
+// Module ID: 12083
+// Function ID: 12084
 // Name: NewMessageUserList
-// Dependencies: [32, 19, 17, 2051, 4525, 1377, 10605, 21, 4896, 587, 5709, 4728, 5049, 558, 576, 12, 10607, 1126, 4892, 10609, 10611, 10739, 12011, 2]
+// Dependencies: [32, 19, 17, 2063, 4717, 1389, 10202, 21, 5090, 587, 6099, 4922, 5417, 558, 576, 12, 10204, 1126, 5086, 10206, 10208, 11597, 12084, 2]
 
-// Module 12010 (NewMessageUserList)
+// Module 12083 (NewMessageUserList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import UserUtilsDefault from "UserUtils" /* 4728 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useChannelName from "useChannelName" /* 5049 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5709 */;
-import UserRowConstants from "UserRowConstants" /* 10605 */;
+import UserUtilsDefault from "UserUtils" /* 4922 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import useChannelName from "useChannelName" /* 5417 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6099 */;
+import UserRowConstants from "UserRowConstants" /* 10202 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore_mod from "ChannelStore" /* 2051 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
+import ChannelStore_mod from "ChannelStore" /* 2063 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, selectedUserIds, title;
+let _require, dependencyMap, title;
 
 let c10;
 let closure_12;
@@ -43,14 +43,14 @@ function matchGroupDMRecipients(trimmed1, recipients) {
         obj.return();
         return 1;
       } else {
-        let tmp19Result = tmp19(4728);
+        let tmp19Result = tmp19(4922);
         let globalName = tmp19Result.getGlobalName(tmp4);
         let toLocaleLowerCaseResult1;
         if (globalName != null) {
           toLocaleLowerCaseResult1 = globalName.toLocaleLowerCase();
         }
         if (null != toLocaleLowerCaseResult1) {
-          if (tmp19(5709)(trimmed1, tmp7)) {
+          if (tmp19(6099)(trimmed1, tmp7)) {
             obj.return();
             return 1;
           }
@@ -61,7 +61,7 @@ function matchGroupDMRecipients(trimmed1, recipients) {
           toLocaleLowerCaseResult2 = nickname.toLocaleLowerCase();
         }
         if (null != toLocaleLowerCaseResult2) {
-          if (tmp19(5709)(trimmed1, tmp12)) {
+          if (tmp19(6099)(trimmed1, tmp12)) {
             obj.return();
             return 1;
           }
@@ -124,7 +124,7 @@ createStyles = createStyles.createStyles;
 obj3 = { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 let closure_14 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSearchGDMNames(arg0, arg1, arg2) {
   let closure_2;
   let closure_3;
   let first;
@@ -187,7 +187,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
   cResult[5] = items1;
   tmp6 = items1;
   tmp5 = fn;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useSearchGDMNames(arg0, arg1, arg2) {
   let closure_3;
   let first;
   let mutablePrivateChannels;
@@ -236,7 +236,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
 });
 let closure_19 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedUserIds) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewMessageUserList(selectedUserIds) {
   let actions;
   let afterSearchContent;
   let autoFocusSearch;
@@ -328,20 +328,20 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedUserIds) => 
                     if (cResult[22] !== tmp24) {
                       const _Symbol3 = Symbol;
                       if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
-                        class Me {
+                        class Fe {
                           constructor(items) {
                             return items.items.length;
                           }
                         }
-                        cResult[24] = Me;
+                        cResult[24] = Fe;
                       } else {
-                        class Me {
+                        class Fe {
                           constructor(items) {
                             return items.items.length;
                           }
                         }
                       }
-                      class Le {
+                      class Ce {
                         constructor(arg0, arg1) {
                           let firstMatch;
                           let flag;
@@ -399,21 +399,21 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedUserIds) => 
                       cResult[22] = tmp24;
                       cResult[23] = tmp45;
                     } else {
-                      class Me {
+                      class Fe {
                         constructor(items) {
                           return items.items.length;
                         }
                       }
                     }
                     if (cResult[25] !== tmp24) {
-                      class Me {
+                      class Fe {
                         constructor(items) {
                           return items.items.length;
                         }
                       }
                       cResult[25] = tmp24;
                       cResult[26] = tmp46;
-                      class Le {
+                      class Ce {
                         constructor(arg0, arg1) {
                           let firstMatch;
                           let flag;
@@ -469,20 +469,20 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedUserIds) => 
                         }
                       }
                     } else {
-                      class Me {
+                      class Fe {
                         constructor(items) {
                           return items.items.length;
                         }
                       }
                     }
                     if (cResult[27] === tmp24) {
-                      class Me {
+                      class Fe {
                         constructor(items) {
                           return items.items.length;
                         }
                       }
                     }
-                    class Le {
+                    class Ce {
                       constructor(arg0, arg1) {
                         let firstMatch;
                         let flag;
@@ -542,11 +542,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedUserIds) => 
                     cResult[29] = onSelectUser;
                     cResult[30] = rowMode;
                     cResult[31] = selectedUserIds;
-                    cResult[32] = Le;
+                    cResult[32] = Ce;
                   }
                   const _Symbol = Symbol;
                   if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-                    class Me {
+                    class Fe {
                       constructor(items) {
                         return items.items.length;
                       }
@@ -554,7 +554,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedUserIds) => 
                     cResult[19] = tmp27;
                     tmp26 = tmp27;
                   } else {
-                    class Me {
+                    class Fe {
                       constructor(items) {
                         return items.items.length;
                       }
@@ -565,13 +565,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedUserIds) => 
                   if (0 !== arr3.length) {
                     let tmp29;
                     let tmp32;
-                    class Me {
+                    class Fe {
                       constructor(items) {
                         return items.items.length;
                       }
                     }
                     if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-                      class Me {
+                      class Fe {
                         constructor(items) {
                           return items.items.length;
                         }
@@ -579,7 +579,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedUserIds) => 
                       cResult[20] = tmp30;
                       tmp29 = tmp30;
                     } else {
-                      class Me {
+                      class Fe {
                         constructor(items) {
                           return items.items.length;
                         }
@@ -587,7 +587,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedUserIds) => 
                     }
                     let obj2 = { title: tmp31(tmp2(tmp3[17]).t.qGlQrW), items: arr3.map(tmp29) };
                     let intl = tmp2(tmp3[17]).intl;
-                    class Le {
+                    class Ce {
                       constructor(arg0, arg1) {
                         let firstMatch;
                         let flag;
@@ -644,7 +644,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedUserIds) => 
                     }
                     const _Symbol2 = Symbol;
                     if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-                      class Me {
+                      class Fe {
                         constructor(items) {
                           return items.items.length;
                         }
@@ -652,7 +652,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedUserIds) => 
                       cResult[21] = Re;
                       tmp32 = Re;
                     } else {
-                      class Me {
+                      class Fe {
                         constructor(items) {
                           return items.items.length;
                         }
@@ -660,14 +660,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedUserIds) => 
                     }
                     const findIndexResult = arr2.findIndex(tmp32);
                     if (-1 !== findIndexResult) {
-                      class Me {
+                      class Fe {
                         constructor(items) {
                           return items.items.length;
                         }
                       }
                       const arraySpreadResult = HermesBuiltin.arraySpread(tmp37, mapped.slice(0, findIndexResult), 0);
                       tmp37[arraySpreadResult] = obj2;
-                      class Le {
+                      class Ce {
                         constructor(arg0, arg1) {
                           let firstMatch;
                           let flag;
@@ -725,13 +725,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedUserIds) => 
                       HermesBuiltin.arraySpread(tmp37, mapped.slice(findIndexResult), arraySpreadResult + 1);
                       tmp28 = tmp37;
                     } else {
-                      class Me {
+                      class Fe {
                         constructor(items) {
                           return items.items.length;
                         }
                       }
                       tmp34[HermesBuiltin.arraySpread(tmp34, mapped, 0)] = obj2;
-                      class Le {
+                      class Ce {
                         constructor(arg0, arg1) {
                           let firstMatch;
                           let flag;
@@ -812,7 +812,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedUserIds) => 
   cResult[14] = undefined !== withGuildMembers && withGuildMembers;
   cResult[15] = obj3;
   tmp21 = obj3;
-}) : ((selectedUserIds) => {
+}) : (function NewMessageUserList(selectedUserIds) {
   let UserFlashListActions;
   let _undefined;
   let afterSearchContent;

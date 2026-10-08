@@ -1,28 +1,27 @@
-// Module ID: 12253
-// Function ID: 12254
+// Module ID: 12332
+// Function ID: 12333
 // Name: GuildPowerupsRecentActivitySection
-// Dependencies: [17, 4885, 21, 4896, 587, 558, 576, 6477, 12254, 4558, 504, 7631, 4832, 12256, 12258, 1188, 4892, 12260, 1126, 2]
+// Dependencies: [17, 5079, 21, 5090, 587, 558, 576, 6655, 12333, 4750, 504, 7952, 5026, 12335, 12337, 1200, 5086, 12339, 1126, 2]
 
-// Module 12253 (GuildPowerupsRecentActivitySection)
+// Module 12332 (GuildPowerupsRecentActivitySection)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import DateUtils from "DateUtils" /* 4558 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6477 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7631 */;
-import useMaybeGetSortedBoosts from "useMaybeGetSortedBoosts" /* 12254 */;
-import getBoostRowMessageTextDefault from "getBoostRowMessageText" /* 12260 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import DateUtils from "DateUtils" /* 4750 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6655 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7952 */;
+import useMaybeGetSortedBoosts from "useMaybeGetSortedBoosts" /* 12333 */;
+import getBoostRowMessageTextDefault from "getBoostRowMessageText" /* 12339 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const useMaybeGetSortedBoostsDefault = useMaybeGetSortedBoosts;
-let guildId;
 
 let hasOwnProperty;
 let metroRequire;
@@ -37,7 +36,7 @@ createStyles = createStyles.createStyles;
 obj3 = { gap: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_16 };
 let closure_7 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(row) {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupsRecentActivityRow(row) {
   let boost;
   let phase;
   let roleColor;
@@ -72,14 +71,14 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(row) {
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
-    class R {
+    class I {
       constructor() {
         return closure_1_4.roleStyle;
       }
     }
     cResult[2] = items;
-    cResult[3] = R;
-    tmp15 = R;
+    cResult[3] = I;
+    tmp15 = I;
     tmp14 = items;
   } else {
     tmp14 = cResult[2];
@@ -95,18 +94,18 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(row) {
     }
     const tmpResult4 = enhanced_role_colors_EnhancedRoleColorUtils;
     const processColorStringsArray = tmpResult4.useProcessColorStringsArray(roleColorStrings);
-    class R {
+    class I {
       constructor() {
         return closure_1_4.roleStyle;
       }
     }
     const isRoleStyleAndRoleColorsEligibleForERC = obj8.useIsRoleStyleAndRoleColorsEligibleForERC(boost.guildId, boost.userId, stateFromStores, processColorStringsArray);
     if ("gave" === phase) {
-      BoostGemSlashIcon = tmp(4832).BoostGemIcon;
+      BoostGemSlashIcon = tmp(5026).BoostGemIcon;
     } else if ("expiring" === phase) {
-      BoostGemSlashIcon = tmp(12256).BoostTier1Icon;
+      BoostGemSlashIcon = tmp(12335).BoostTier1Icon;
     } else {
-      BoostGemSlashIcon = tmp(12258).BoostGemSlashIcon;
+      BoostGemSlashIcon = tmp(12337).BoostGemSlashIcon;
     }
     if (cResult[7] === BoostGemSlashIcon) {
       if (cResult[10] === roleColor) {
@@ -120,7 +119,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(row) {
             if (isRoleStyleAndRoleColorsEligibleForERC) {
               tmp35 = processColorStringsArray;
             }
-            class R {
+            class I {
               constructor() {
                 return closure_1_4.roleStyle;
               }
@@ -133,7 +132,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(row) {
             const tmp38 = hasOwnProperty(Text_Text.Text, obj4);
           }
           const items1 = [, ];
-          class R {
+          class I {
             constructor() {
               return closure_1_4.roleStyle;
             }
@@ -145,7 +144,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(row) {
           tmp34 = items1;
         }
       }
-      class R {
+      class I {
         constructor() {
           return closure_1_4.roleStyle;
         }
@@ -155,12 +154,12 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(row) {
       }
       if (tmp31) {
         const obj5 = { size: "small", color: roleColor, colors: null };
-        class R {
+        class I {
           constructor() {
             return closure_1_4.roleStyle;
           }
         }
-        tmp31 = hasOwnProperty(tmp(1188).RoleDot, obj5);
+        tmp31 = hasOwnProperty(tmp(1200).RoleDot, obj5);
       }
       cResult[10] = roleColor;
       cResult[11] = roleColorStrings;
@@ -170,7 +169,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(row) {
     const tmp27 = hasOwnProperty;
     if ("gave" === phase) {
       ({ color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK, size: "sm" });
-      class R {
+      class I {
         constructor() {
           return closure_1_4.roleStyle;
         }
@@ -189,7 +188,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(row) {
       obj10 = { color: roleColor };
       const obj9 = { color: roleColor };
     }
-    class R {
+    class I {
       constructor() {
         return closure_1_4.roleStyle;
       }
@@ -199,7 +198,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(row) {
     tmp18 = obj10;
   }
   obj10 = {};
-}) : ((row) => {
+}) : (function GuildPowerupsRecentActivityRow(row) {
   let boost;
   let items1;
   let items2;
@@ -235,11 +234,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(row) {
     const tmpResult2 = enhanced_role_colors_EnhancedRoleColorUtils;
     const isRoleStyleAndRoleColorsEligibleForERC = tmpResult2.useIsRoleStyleAndRoleColorsEligibleForERC(boost.guildId, boost.userId, stateFromStores, processColorStringsArray);
     if ("gave" === phase) {
-      BoostGemSlashIcon = tmp(4832).BoostGemIcon;
+      BoostGemSlashIcon = tmp(5026).BoostGemIcon;
     } else if ("expiring" === phase) {
-      BoostGemSlashIcon = tmp(12256).BoostTier1Icon;
+      BoostGemSlashIcon = tmp(12335).BoostTier1Icon;
     } else {
-      BoostGemSlashIcon = tmp(12258).BoostGemSlashIcon;
+      BoostGemSlashIcon = tmp(12337).BoostGemSlashIcon;
     }
     const obj5 = { style: tmp4.boostRowContainer, children: items1 };
     if ("gave" === phase) {
@@ -253,24 +252,24 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(row) {
     const obj8 = { style: tmp4.boostMessage, children: items2 };
     if (tmp20Result) {
       const obj9 = { size: "small", color: roleColor, colors: roleColorStrings };
-      tmp20Result = tmp20(tmp(1188).RoleDot, obj9);
+      tmp20Result = tmp20(tmp(1200).RoleDot, obj9);
     }
     items2 = [tmp20Result, , , ];
     const obj10 = { variant: "text-md/medium", color: "interactive-text-active", lineClamp: 1, style: items3, gradientColors: tmp24, children: username };
     items3 = [tmp4.username, {}];
     tmp24 = undefined;
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     if (isRoleStyleAndRoleColorsEligibleForERC) {
       tmp24 = processColorStringsArray;
     }
     items2[1] = hasOwnProperty(Text, obj10);
     items2[2] = hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "interactive-text-active", children: " " });
     const obj11 = { variant: "text-md/medium", lineClamp: 1, style: tmp4.messageText, children: getBoostRowMessageTextDefault(row) };
-    const Text2 = tmp(4892).Text;
+    const Text2 = tmp(5086).Text;
     items2[3] = hasOwnProperty(Text2, obj11);
     items1[1] = metroRequire(View, obj8);
     let str4 = "text-xs/semibold";
-    const Text3 = tmp(4892).Text;
+    const Text3 = tmp(5086).Text;
     if (manaTypeConsolidationExperiment) {
       str4 = "text-xs/medium";
     }
@@ -284,7 +283,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(row) {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupsRecentActivitySection(guildId) {
   let items;
   let obj = react;
   const cResult = obj.c(13);
@@ -298,7 +297,6 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   } else {
     let first;
     let tmp9;
-    let tmp12;
     let str = "text-subtle";
     const sectionContainer = tmp5.sectionContainer;
     if (manaTypeConsolidationExperiment) {
@@ -327,53 +325,63 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       let tmp13;
       const _Symbol2 = Symbol;
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-        const fn = function w(row) {
-          const obj = { row };
-          return closure_1_5(closure_1_8, obj, "boost-" + row.boost.id);
-        };
-        cResult[5] = fn;
-        tmp13 = fn;
+        class R {
+          constructor(arg0) {
+            obj = { row: guildId };
+            return closure_1_5(closure_1_8, obj, "boost-" + guildId.boost.id);
+          }
+        }
+        cResult[5] = R;
+        tmp13 = R;
       } else {
-        tmp13 = cResult[5];
+        class R {
+          constructor(arg0) {
+            obj = { row: guildId };
+            return closure_1_5(closure_1_8, obj, "boost-" + guildId.boost.id);
+          }
+        }
       }
       const mapped = arr.map(tmp13);
       cResult[3] = arr;
       cResult[4] = mapped;
-      tmp12 = mapped;
     } else {
-      tmp12 = cResult[4];
+      class R {
+        constructor(arg0) {
+          obj = { row: guildId };
+          return closure_1_5(closure_1_8, obj, "boost-" + guildId.boost.id);
+        }
+      }
     }
     if (cResult[6] === tmp5.boostContainer) {
-      let tmp15;
-      if (cResult[7] === tmp12) {
-        tmp15 = cResult[8];
+      class R {
+        constructor(arg0) {
+          obj = { row: guildId };
+          return closure_1_5(closure_1_8, obj, "boost-" + guildId.boost.id);
+        }
       }
       if (cResult[9] === tmp5.sectionContainer) {
-        if (cResult[10] === tmp9) {
-          let tmp19;
-          if (cResult[11] === tmp15) {
-            tmp19 = cResult[12];
+        class R {
+          constructor(arg0) {
+            obj = { row: guildId };
+            return closure_1_5(closure_1_8, obj, "boost-" + guildId.boost.id);
           }
-          return tmp19;
         }
       }
       const obj4 = { style: sectionContainer, children: items };
       items = [tmp9, tmp15];
-      const tmp22 = metroRequire(View, obj4);
       cResult[9] = tmp5.sectionContainer;
       cResult[10] = tmp9;
       cResult[11] = tmp15;
-      cResult[12] = tmp22;
-      tmp19 = tmp22;
+      cResult[12] = metroRequire(View, obj4);
+      const tmp22 = metroRequire(View, obj4);
     }
     const obj5 = { style: boostContainer, children: tmp12 };
-    const tmp18 = hasOwnProperty(View, obj5);
     cResult[6] = tmp5.boostContainer;
     cResult[7] = tmp12;
-    cResult[8] = tmp18;
-    tmp15 = tmp18;
+    cResult[8] = hasOwnProperty(View, obj5);
+    const tmp18 = hasOwnProperty(View, obj5);
   }
-}) : ((guildId) => {
+}) : (function GuildPowerupsRecentActivitySection(guildId) {
   let intl;
   let items;
   guildId = guildId.guildId;
@@ -385,7 +393,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   if (0 !== arr.length) {
     let str = "text-subtle";
     const obj2 = { style: tmp4.sectionContainer, children: items };
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     const tmp6 = metroRequire;
     if (manaTypeConsolidationExperiment) {
       str = "text-strong";

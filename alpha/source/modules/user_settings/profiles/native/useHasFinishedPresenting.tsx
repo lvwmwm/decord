@@ -1,11 +1,11 @@
-// Module ID: 14467
-// Function ID: 14468
+// Module ID: 14695
+// Function ID: 14696
 // Name: useHasFinishedPresenting
-// Dependencies: [32, 19, 558, 576, 1490, 2]
+// Dependencies: [32, 19, 558, 576, 1502, 2]
 
-// Module 14467 (useHasFinishedPresenting)
+// Module 14695 (useHasFinishedPresenting)
 import react2 from "react" /* 576 */;
-import useNavigation from "useNavigation" /* 1490 */;
+import useNavigation from "useNavigation" /* 1502 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 
 let navigation;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasFinishedPresenting() {
   let closure_2;
   let first;
   const obj = react2;
@@ -64,7 +64,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = items;
   tmp6 = items;
   tmp5 = fn;
-}) : (() => {
+}) : (function useHasFinishedPresenting() {
   let closure_2;
   let first;
   const obj = useNavigation;

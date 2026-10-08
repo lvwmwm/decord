@@ -1,22 +1,22 @@
-// Module ID: 7275
-// Function ID: 7276
+// Module ID: 7875
+// Function ID: 7876
 // Name: ArchivedThreadsStore
-// Dependencies: [32, 2055, 2051, 4911, 4517, 2061, 7276, 12, 2063, 11, 6820, 504, 584, 2]
+// Dependencies: [32, 2067, 2063, 6040, 4709, 2073, 7876, 12, 2075, 11, 6993, 504, 584, 2]
 
-// Module 7275 (ArchivedThreadsStore)
+// Module 7875 (ArchivedThreadsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import ThreadSortOrder from "ThreadSortOrder" /* 2061 */;
-import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 2063 */;
-import ForumUtils from "ForumUtils" /* 6820 */;
-import tracking_Tracking from "tracking/Tracking" /* 7276 */;
+import ChannelRecord from "ChannelRecord" /* 2067 */;
+import ThreadSortOrder from "ThreadSortOrder" /* 2073 */;
+import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 2075 */;
+import ForumUtils from "ForumUtils" /* 6993 */;
+import Tracking from "Tracking" /* 7876 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import ReadStateStore from "ReadStateStore" /* 4911 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4517 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4709 */;
 import size from "module_2" /* 2 */;
 
 let appliedTags;
@@ -58,7 +58,7 @@ function resortListState(value) {
     let id;
     let tmp3 = sortOrder;
     let tmp4 = dependencyMap;
-    if (sortOrder === sortOrder(2061).ThreadSortOrder.LATEST_ACTIVITY) {
+    if (sortOrder === sortOrder(2073).ThreadSortOrder.LATEST_ACTIVITY) {
       const tmp5 = ReadStateStore;
       id = ReadStateStore.lastMessageId(channel.id);
     } else {
@@ -84,7 +84,7 @@ function resortListState(value) {
         if (true !== someResult) {
           return false;
         }
-      } else if (tmp21(2063).ThreadSearchTagSetting.MATCH_ALL === tmp20) {
+      } else if (tmp21(2075).ThreadSearchTagSetting.MATCH_ALL === tmp20) {
         const values = obj.values();
         const iter = values[Symbol.iterator]();
         const nextResult = iter.next();
@@ -461,8 +461,8 @@ let obj = {
         ({ guild_id: obj3.guildId, id: obj3.channelId } = channel);
         const _Array2 = Array;
         const obj = { guildId: null, channelId: null, numArchivedThreads: value.threads.length, hasMoreThreads: tagFilter.hasMore, filterTagIds: Array.from(tagFilter.tagFilter), sortOrder: tagFilter.sortOrder };
-        const trackForumMorePostsLoaded = tracking_Tracking.trackForumMorePostsLoaded;
-        tracking_Tracking;
+        const trackForumMorePostsLoaded = Tracking.trackForumMorePostsLoaded;
+        Tracking;
         const result = trackForumMorePostsLoaded(obj);
       }
       resortListState(value);

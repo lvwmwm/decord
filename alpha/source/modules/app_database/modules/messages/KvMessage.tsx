@@ -1,13 +1,13 @@
-// Module ID: 7009
-// Function ID: 7010
+// Module ID: 7197
+// Function ID: 7198
 // Name: KvMessage
-// Dependencies: [32, 2112, 1377, 1085, 2]
+// Dependencies: [32, 2124, 1389, 1085, 2]
 
-// Module 7009 (KvMessage)
+// Module 7197 (KvMessage)
 import Constants from "Constants" /* 1085 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import UserStore from "UserStore" /* 1377 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 let author;

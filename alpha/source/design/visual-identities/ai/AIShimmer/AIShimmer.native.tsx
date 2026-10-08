@@ -1,21 +1,21 @@
-// Module ID: 14231
-// Function ID: 14232
+// Module ID: 14055
+// Function ID: 14056
 // Name: AIShimmer
-// Dependencies: [32, 109, 19, 17, 21, 4896, 558, 576, 14232, 4595, 4892, 14233, 4618, 14234, 14235, 14229, 2]
+// Dependencies: [32, 109, 19, 17, 21, 5090, 558, 576, 14056, 4787, 5086, 14057, 4810, 14058, 14059, 14053, 2]
 
-// Module 14231 (AIShimmer)
+// Module 14055 (AIShimmer)
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import AIShimmerTypes from "AIShimmerTypes" /* 14232 */;
-import waveTransition2 from "waveTransition" /* 14233 */;
-import createWaveTransition2 from "createWaveTransition" /* 14234 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import AIShimmerTypes from "AIShimmerTypes" /* 14056 */;
+import waveTransition2 from "waveTransition" /* 14057 */;
+import createWaveTransition2 from "createWaveTransition" /* 14058 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ let closure_13 = createStyles.createStyles((height, height2) => {
 });
 let memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function AIShimmer(arg0) {
   let AI_TEXT_EFFECT_DEFAULT_DELAY;
   let AI_TEXT_EFFECT_DEFAULT_DURATION;
   let delay;
@@ -79,14 +79,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     str = tmp5;
   }
   if (undefined === AI_TEXT_EFFECT_DEFAULT_DELAY) {
-    AI_TEXT_EFFECT_DEFAULT_DELAY = tmp(14232).AI_TEXT_EFFECT_DEFAULT_DELAY;
+    AI_TEXT_EFFECT_DEFAULT_DELAY = tmp(14056).AI_TEXT_EFFECT_DEFAULT_DELAY;
   }
   let num7 = 0;
   if (undefined !== tmp6) {
     num7 = tmp6;
   }
   if (undefined === AI_TEXT_EFFECT_DEFAULT_DURATION) {
-    AI_TEXT_EFFECT_DEFAULT_DURATION = tmp(14232).AI_TEXT_EFFECT_DEFAULT_DURATION;
+    AI_TEXT_EFFECT_DEFAULT_DURATION = tmp(14056).AI_TEXT_EFFECT_DEFAULT_DURATION;
   }
   if (cResult[6] === AI_TEXT_EFFECT_DEFAULT_DELAY) {
     if (cResult[7] === AI_TEXT_EFFECT_DEFAULT_DURATION) {
@@ -111,7 +111,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   cResult[10] = str;
   cResult[11] = tmp12;
   tmp10 = tmp12;
-}) : ((variant) => {
+}) : (function AIShimmer(variant) {
   let str = variant.variant;
   if (str === undefined) {
     str = "text-md/normal";
@@ -133,7 +133,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   return React4(closure_14, obj, str);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function AIShimmerInner(arg0) {
   let bound;
   let color;
   let delay;
@@ -371,7 +371,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = sharedValue1;
   cResult[2] = fn;
   tmp17 = fn;
-}) : ((arg0) => {
+}) : (function AIShimmerInner(arg0) {
   let _undefined;
   let c4;
   let color;
@@ -507,7 +507,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   tmp22Result = tmp22(tmp(tmp2[10]).Text, obj8);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShimmerLayers(arg0) {
   let animationProgress;
   let animationWidth;
   let clippingWindowWidth;
@@ -838,7 +838,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = overshoot;
   cResult[3] = obj16;
   tmp4 = obj16;
-}) : ((pass) => {
+}) : (function ShimmerLayers(pass) {
   let View3;
   let View4;
   let animationProgress;
@@ -904,7 +904,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return closure_10(View, obj5);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShimmerTextSlot(arg0) {
   let animatedStyles;
   let animationWidth;
   let clippingWindowWidth;
@@ -1136,7 +1136,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = tmp4;
   cResult[5] = items5;
   tmp5 = items5;
-}) : ((arg0) => {
+}) : (function ShimmerTextSlot(arg0) {
   let View2;
   let View4;
   let View5;
@@ -1185,7 +1185,7 @@ const __initData3 = { code: "function AIShimmerNativeTsx3(){const{animationProgr
 const __initData4 = { code: "function AIShimmerNativeTsx4(next,previous){const{runOnJS,setGlyphs}=this.__closure;if(next===previous)return;runOnJS(setGlyphs)(next);}" };
 const memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((animationProgress) => {
+let closure_21 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function GlyphBand(animationProgress) {
   let closure_4;
   let color;
   let fontSize;
@@ -1246,7 +1246,7 @@ let closure_21 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((animatio
   cResult[3] = style;
   cResult[4] = tmp10;
   tmp9 = tmp10;
-}) : ((animationProgress) => {
+}) : (function GlyphBand(animationProgress) {
   let children;
   let closure_4;
   let color;
@@ -1300,7 +1300,7 @@ const __initData14 = { code: "function AIShimmerNativeTsx14(){const{slotState,SH
 const __initData15 = { code: "function AIShimmerNativeTsx15(){const{slotState,clippingWindowWidth}=this.__closure;const{incomingTextEnd:incomingTextEnd_1,bandStart:bandStart_0,bandEnd:bandEnd_0,outgoingTextStart:outgoingTextStart_1,isIncoming:isIncoming_2}=slotState.get();const shiftedWidth=isIncoming_2?incomingTextEnd_1-bandStart_0:outgoingTextStart_1-bandEnd_0;return{transform:[{translateX:shiftedWidth-clippingWindowWidth}]};}" };
 const __initData16 = { code: "function AIShimmerNativeTsx16(){const{slotState,clippingWindowWidth}=this.__closure;const{incomingTextEnd:incomingTextEnd_2,outgoingTextStart:outgoingTextStart_2,isIncoming:isIncoming_3}=slotState.get();return{transform:[{translateX:clippingWindowWidth-(isIncoming_3?incomingTextEnd_2:outgoingTextStart_2)}]};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationProgress) => {
+let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAnimatedSlotStyles(animationProgress) {
   let animationWidth;
   let obj = animationProgress(animationWidth[7]);
   const cResult = obj.c(6);
@@ -1433,7 +1433,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationProgr
   cResult[4] = animatedStyle4;
   cResult[5] = obj10;
   tmp8 = obj10;
-}) : ((animationProgress) => {
+}) : (function useAnimatedSlotStyles(animationProgress) {
   let fn2;
   let fn3;
   let fn4;
@@ -1562,7 +1562,7 @@ const __initData24 = { code: "function AIShimmerNativeTsx24(){const{bandState}=t
 const __initData25 = { code: "function AIShimmerNativeTsx25(){const{bandState,clippingWindowWidth}=this.__closure;const{bandStart:bandStart_1,bandEnd:bandEnd_0}=bandState.get();return{transform:[{translateX:bandEnd_0-bandStart_1-clippingWindowWidth}]};}" };
 const __initData26 = { code: "function AIShimmerNativeTsx26(){const{bandState,clippingWindowWidth}=this.__closure;const{bandEnd:bandEnd_1}=bandState.get();return{transform:[{translateX:clippingWindowWidth-bandEnd_1}]};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationProgress) => {
+let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAnimatedBandStyles(animationProgress) {
   let animationWidth;
   let obj = animationProgress(animationWidth[7]);
   const cResult = obj.c(5);
@@ -1657,7 +1657,7 @@ let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationProgr
   cResult[3] = animatedStyle3;
   cResult[4] = obj8;
   tmp7 = obj8;
-}) : ((animationProgress) => {
+}) : (function useAnimatedBandStyles(animationProgress) {
   let fn2;
   let fn3;
   let fn4;

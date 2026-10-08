@@ -1,21 +1,21 @@
-// Module ID: 6780
-// Function ID: 6781
+// Module ID: 6956
+// Function ID: 6957
 // Name: GuildOfficialMessageUtils
-// Dependencies: [2074, 4515, 4889, 1085, 1103, 683, 4733, 4735, 6781, 558, 576, 504, 6782, 6783, 2]
+// Dependencies: [2086, 4707, 5083, 1085, 1103, 683, 4927, 4929, 6957, 558, 576, 504, 6958, 6084, 2]
 // Exports: canManageGuildOfficialMessages, canSendGuildOfficialMessages, getAccessibleGuildOfficialTextColor, isGuildOfficialMessagesEnabled, showGuildOfficialMessageGradient, showGuildOfficialMessageTextColor
 
-// Module 6780 (GuildOfficialMessageUtils)
+// Module 6956 (GuildOfficialMessageUtils)
 import react from "react" /* 576 */;
 import _modDef683 from "module_683" /* 683 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
-import ColorUtils from "ColorUtils" /* 4733 */;
-import shared from "shared" /* 4735 */;
-import MessageConstants from "MessageConstants" /* 4889 */;
-import GuildOfficialMessagesExperimentDefault from "GuildOfficialMessagesExperiment" /* 6781 */;
-import ThreadHooks from "ThreadHooks" /* 6782 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6783 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import ColorUtils from "ColorUtils" /* 4927 */;
+import shared from "shared" /* 4929 */;
+import MessageConstants from "MessageConstants" /* 5083 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6084 */;
+import GuildOfficialMessagesExperimentDefault from "GuildOfficialMessagesExperiment" /* 6957 */;
+import ThreadHooks from "ThreadHooks" /* 6958 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -30,7 +30,7 @@ let metroRequire;
 let closure_5 = MessageConstants.GUILD_OFFICIAL_HIGHLIGHT_ALPHA;
 ({ ChannelTypes: metroRequire, GuildFeatures: metroImportDefault, MessageFlags: metroImportAll, Permissions: c9 } = Constants);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, location) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsGuildOfficialMessagesEnabled(arg0, location) {
   let closure_0;
   let first;
   let tmp7;
@@ -99,7 +99,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, location) => {
   cResult[5] = tmp;
   cResult[6] = obj2;
   tmp10 = obj2;
-}) : ((arg0, location) => {
+}) : (function useIsGuildOfficialMessagesEnabled(arg0, location) {
   let closure_0;
   const tmp = arg0;
   _require = arg0;
@@ -128,7 +128,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, location) => {
 });
 let closure_10 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanManageGuildOfficialMessages(arg0, arg1, arg2) {
   let closure_0;
   let first;
   let tmp7;
@@ -164,7 +164,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
     stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
   }
   return stateFromStores;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useCanManageGuildOfficialMessages(arg0, arg1, arg2) {
   let closure_0;
   _require = arg1;
   let stateFromStores = closure_10(arg0, arg2);
@@ -178,7 +178,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
 });
 let closure_11 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasFlag, guild_id, arg2) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanToggleGuildOfficialMessages(hasFlag, guild_id, arg2) {
   const obj = react;
   const cResult = obj.c(3);
   guild_id = guild_id.guild_id;
@@ -219,7 +219,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasFlag, guild_id, a
     tmp9 = isActiveChannelOrUnarchivableThread;
   }
   return tmp8;
-}) : ((hasFlag, guild_id, arg2) => {
+}) : (function useCanToggleGuildOfficialMessages(hasFlag, guild_id, arg2) {
   guild_id = guild_id.guild_id;
   const tmpResult = closure_11(guild_id, guild_id, arg2);
   let tmp3 = !tmpResult;

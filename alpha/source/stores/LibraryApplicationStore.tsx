@@ -1,16 +1,16 @@
-// Module ID: 6912
-// Function ID: 6913
+// Module ID: 7101
+// Function ID: 7102
 // Name: LibraryApplicationStore
-// Dependencies: [6913, 502, 1085, 510, 6914, 1390, 504, 12, 584, 2]
+// Dependencies: [7102, 502, 1085, 510, 7103, 1402, 504, 12, 584, 2]
 
-// Module 6912 (LibraryApplicationStore)
+// Module 7101 (LibraryApplicationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage6 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import FlagUtilsAll from "FlagUtils" /* 1390 */;
-import LibraryApplicationUtils from "LibraryApplicationUtils" /* 6914 */;
-import LibraryApplicationRecord from "LibraryApplicationRecord" /* 6913 */;
+import FlagUtilsAll from "FlagUtils" /* 1402 */;
+import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7103 */;
+import LibraryApplicationRecord from "LibraryApplicationRecord" /* 7102 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
@@ -149,7 +149,7 @@ class LibraryApplicationStore extends Store {
         obj2 = closure_10[comboId];
       }
       if (null != obj2) {
-        const tmp2Result = tmp2(6914);
+        const tmp2Result = tmp2(7103);
         if (tmp2Result.isUserEntitledToLibraryApplication(obj2)) {
           return obj2;
         }

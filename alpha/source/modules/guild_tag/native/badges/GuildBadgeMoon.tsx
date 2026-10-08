@@ -1,12 +1,12 @@
-// Module ID: 13753
-// Function ID: 13754
+// Module ID: 13975
+// Function ID: 13976
 // Name: GuildBadgeMoon
-// Dependencies: [109, 19, 21, 558, 576, 13748, 8169, 2]
+// Dependencies: [109, 19, 21, 558, 576, 13970, 7550, 2]
 
-// Module 13753 (GuildBadgeMoon)
+// Module 13975 (GuildBadgeMoon)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 8169 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 13748 */;
+import inlineStyles from "inlineStyles" /* 7550 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 13970 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -20,7 +20,7 @@ let closure_2 = ["width", "height", "primaryTintColor"];
 const primaryBaseColors = ["#816bee", "#b79cf8", "#f0f0f0"];
 const primaryTintLuminances = [0.15, 0.45, 0.9];
 let items = [{ base: 5, tint: 1 }, { base: 3, tint: 1 }, { base: 5, tint: 1 }];
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgeMoon(arg0) {
   let height;
   let primaryTintColor;
   let tmp11;
@@ -170,7 +170,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const obj8 = { width: num6, height: num7, viewBox: "0 0 16 16", fill: "none", children: items };
-  const Svg = tmp(8169).Svg;
+  const Svg = tmp(7550).Svg;
   const merged = Object.assign(tmp5);
   items = [tmp16, tmp19, tmp22, tmp25, tmp28, tmp31, tmp34, tmp37, tmp40];
   const tmp45 = hasOwnProperty(Svg, obj8);
@@ -184,7 +184,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[28] = num6;
   cResult[29] = tmp45;
   tmp43 = tmp45;
-}) : ((width) => {
+}) : (function GuildBadgeMoon(width) {
   let num = width.width;
   if (num === undefined) {
     num = 24;

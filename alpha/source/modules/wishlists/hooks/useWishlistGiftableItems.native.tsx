@@ -1,9 +1,9 @@
-// Module ID: 8483
-// Function ID: 8484
+// Module ID: 8969
+// Function ID: 8970
 // Name: useWishlistGiftableItems
 // Dependencies: [19, 1085, 558, 576, 2]
 
-// Module 8483 (useWishlistGiftableItems)
+// Module 8969 (useWishlistGiftableItems)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import react from "react" /* 19 */;
@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 let items = [, , ];
 ({ COLLECTIBLES: arr[0], PREMIUM: arr[1], SOCIAL_LAYER_GAME_ITEM: arr[2] } = Constants.SKUProductLines);
 const set = new Set(items);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((items) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWishlistGiftableItems(items) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -45,7 +45,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((items) => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : ((arg0) => {
+}) : (function useWishlistGiftableItems(arg0) {
   let items = [arg0];
   return react.useMemo(() => {
     let found;

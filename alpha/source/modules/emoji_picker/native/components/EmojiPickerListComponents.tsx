@@ -1,21 +1,21 @@
-// Module ID: 9924
-// Function ID: 9925
+// Module ID: 9445
+// Function ID: 9446
 // Name: EmojiPickerListComponents
-// Dependencies: [19, 17, 9882, 21, 4896, 587, 558, 576, 1188, 7838, 1126, 4892, 9922, 2]
+// Dependencies: [19, 17, 9362, 21, 5090, 587, 558, 576, 1200, 8256, 1126, 5086, 9443, 2]
 
-// Module 9924 (EmojiPickerListComponents)
+// Module 9445 (EmojiPickerListComponents)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7838 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9922 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8256 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9443 */;
 import react from "react" /* 19 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9882 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9362 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let closure_6 = createStyles(obj);
 const memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
 const memo2 = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiPickerListNSFWRow() {
   let first;
   let items;
   let tmp11;
@@ -49,7 +49,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const nsfwContainer = tmp4.nsfwContainer;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { source: AssetRegistryDefault, size: native.Icon.Sizes.SMALL };
-    const Icon = tmp(1188).Icon;
+    const Icon = tmp(1200).Icon;
     const tmp8 = React3(Icon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -88,7 +88,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[5] = tmp11;
   cResult[6] = tmp15;
   tmp14 = tmp15;
-}) : (() => {
+}) : (function EmojiPickerListNSFWRow() {
   let intl;
   let items;
   const tmp = closure_6();
@@ -103,7 +103,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return hasOwnProperty(View, obj);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiPickerListSection(arg0) {
   let isSectionNitroLocked;
   let items;
   let label;
@@ -122,7 +122,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
       let tmp9 = null;
       if ("" !== label) {
         const obj2 = { lineClamp: 1, color: "interactive-text-default", variant: "heading-sm/semibold", children: label };
-        tmp9 = React3(tmp(4892).Text, obj2);
+        tmp9 = React3(tmp(5086).Text, obj2);
       }
       cResult[3] = label;
       cResult[4] = tmp9;
@@ -151,13 +151,13 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
   let tmp6 = isSectionNitroLocked;
   if (tmp6) {
     const obj4 = { useTier0UpsellContent };
-    tmp6 = React3(tmp(9922).PremiumUpsellGradientBackground, obj4);
+    tmp6 = React3(tmp(9443).PremiumUpsellGradientBackground, obj4);
   }
   cResult[0] = isSectionNitroLocked;
   cResult[1] = useTier0UpsellContent;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((useTier0UpsellContent) => {
+}) : (function EmojiPickerListSection(useTier0UpsellContent) {
   let isSectionNitroLocked;
   let items;
   let label;

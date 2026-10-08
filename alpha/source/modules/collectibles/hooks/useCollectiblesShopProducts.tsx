@@ -1,20 +1,20 @@
-// Module ID: 8569
-// Function ID: 8570
+// Module ID: 9053
+// Function ID: 9054
 // Name: useCollectiblesShopProducts
-// Dependencies: [32, 19, 8570, 7901, 7067, 7068, 558, 576, 8571, 504, 7065, 7900, 8572, 2]
+// Dependencies: [32, 19, 9054, 8320, 7253, 7254, 558, 576, 9055, 504, 7251, 8319, 9056, 2]
 // Exports: useCollectiblesShopProducts
 
-// Module 8569 (useCollectiblesShopProducts)
+// Module 9053 (useCollectiblesShopProducts)
 import react2 from "react" /* 576 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7065 */;
-import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 7900 */;
-import CollectiblesShopManager2 from "CollectiblesShopManager" /* 8571 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7251 */;
+import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8319 */;
+import CollectiblesShopManager2 from "CollectiblesShopManager" /* 9055 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 8570 */;
-import StorefrontProductStore from "StorefrontProductStore" /* 7901 */;
-import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7067 */;
-import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7068 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9054 */;
+import StorefrontProductStore from "StorefrontProductStore" /* 8320 */;
+import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7253 */;
+import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7254 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ const require = globalThis.__r;
 let _require, dependencyMap, set, set2;
 
 let tmp;
-const StorefrontCollectionActionCreators = tmp(8572);
+const StorefrontCollectionActionCreators = tmp(9056);
 function computeEntryState(arg0) {
   let needsCategory;
   let product;
@@ -64,7 +64,7 @@ function computeEntryState(arg0) {
 }
 let react = react_mod;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchResolvedAbsent(id, arg1) {
   let tmp2;
   let tmp4;
   let tmp5;
@@ -94,7 +94,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
     }
   }
   return "" !== id && null == arg1 && flag;
-}) : ((id, arg1) => {
+}) : (function useFetchResolvedAbsent(id, arg1) {
   let tmp2;
   let tmp3;
   const obj = { id, sawFetch: false };
@@ -117,7 +117,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
 });
 let closure_9 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCollectiblesShopProduct(arg0, arg1) {
   let closure_0;
   let closure_1;
   let closure_3;
@@ -236,22 +236,20 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
         }
       }
     }
-    class A {
-      constructor() {
-        const tmp = closure_1 && "" !== str3;
-        if (tmp) {
-          const CollectiblesShopManager = CollectiblesShopManager2.CollectiblesShopManager;
-          const items = [str3];
-          const obj = { includeUnpublished };
-          const collections = CollectiblesShopManager.requestCollections(items, obj);
-        }
+    const fn2 = function _() {
+      const tmp = closure_1 && "" !== str3;
+      if (tmp) {
+        const CollectiblesShopManager = CollectiblesShopManager2.CollectiblesShopManager;
+        const items = [str3];
+        const obj = { includeUnpublished };
+        const collections = CollectiblesShopManager.requestCollections(items, obj);
       }
-    }
+    };
     const items2 = [tmp5, str3, tmp7];
     cResult[10] = str3;
     cResult[11] = undefined !== includeUnpublished && includeUnpublished;
     cResult[12] = undefined === needsCategory || needsCategory;
-    cResult[13] = A;
+    cResult[13] = fn2;
     cResult[14] = items2;
   }
   const fn = function b() {
@@ -269,7 +267,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[5] = items3;
   tmp9 = items3;
   tmp8 = fn;
-}) : ((arg0) => {
+}) : (function useCollectiblesShopProduct(arg0) {
   let closure_0;
   let fetchState;
   let products;
@@ -469,13 +467,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   return obj4;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAbsentIds(arg0) {
   let first;
   let first1;
   const obj = first1(576);
   const cResult = obj.c(14);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function l() {
+    const fn = function c() {
       set = new Set();
       return set;
     };
@@ -581,7 +579,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
   cResult[4] = someResult;
   tmp8 = someResult;
   tmp7 = mapped1;
-}) : (function(arg0) {
+}) : (function useAbsentIds(arg0) {
   let first;
   let tmp4;
   [first, tmp4] = react.useState(() => {
@@ -726,10 +724,10 @@ export const useCollectiblesShopProducts = function useCollectiblesShopProducts(
   }, items6);
   const items7 = [memo1];
   const memo2 = memo.useMemo(() => {
-    const f139142 = (item) => "" !== item;
+    const f140815 = (item) => "" !== item;
     const values = Object.values(memo1);
-    const items = [...new Set(values.filter(f139142))];
-    new Set(values.filter(f139142));
+    const items = [...new Set(values.filter(f140815))];
+    new Set(values.filter(f140815));
     return items;
   }, items7);
   const items8 = [flag, memo2.join(",")];

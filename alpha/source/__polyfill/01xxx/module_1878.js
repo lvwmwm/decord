@@ -1,50 +1,20 @@
 // Module ID: 1878
 // Function ID: 1879
-// Dependencies: [19, 17, 21, 1837, 1633]
+// Dependencies: [19, 17, 21, 1873]
 // Exports: default
 
 // Module 1878
-import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
+import TEST_ID_KEYBOARD_TOOLBAR from "TEST_ID_KEYBOARD_TOOLBAR" /* 1873 */;
+import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 
-let size;
-
-let Platform;
 let StyleSheet;
-let c3;
-const useMemo = react2.useMemo;
-({ Platform, StyleSheet, View: c3 } = react_native);
+let c2;
+({ StyleSheet, View: c2 } = react_native);
 const jsx = Fragment.jsx;
-const styles = StyleSheet.create({ absolute: { position: "absolute" }, stretch: { top: 0, bottom: 0, left: 0, right: 0 } });
+const styles = StyleSheet.create({ flex: { flex: 1 } });
 
-export default function _default(visible) {
-  let height;
-  let width;
-  visible = visible.visible;
-  const children = visible.children;
-  const obj = height(width[3]);
-  size = obj.useWindowDimensions();
-  height = size.height;
-  width = size.width;
-  let items = [height, width];
-  const items1 = [
-    useMemo(() => {
-      size = { height, width };
-      return size;
-    }, items)
-  ];
-  ({
-    collapsable: false,
-    style: useMemo(() => {
-      const items = [closure_1_5.absolute, undefined, closure_1_5.stretch];
-      return items;
-    }, items1),
-    children: visible
-  });
-  const RCTOverKeyboardView = height(width[4]).RCTOverKeyboardView;
-  if (visible) {
-    visible = children;
-  }
-  return <RCTOverKeyboardView visible={visible}>{null}</RCTOverKeyboardView>;
+export default function _default(children) {
+  return <React2 style={styles.flex} testID={TEST_ID_KEYBOARD_TOOLBAR.TEST_ID_KEYBOARD_TOOLBAR_CONTENT}>{arg0.children}</React2>;
 };

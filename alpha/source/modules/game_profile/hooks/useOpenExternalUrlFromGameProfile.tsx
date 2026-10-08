@@ -1,11 +1,11 @@
-// Module ID: 8361
-// Function ID: 8362
+// Module ID: 8859
+// Function ID: 8860
 // Name: useOpenExternalUrlFromGameProfile
-// Dependencies: [32, 5, 19, 8362, 8363, 4565, 558, 576, 2]
+// Dependencies: [32, 5, 19, 8860, 8861, 4757, 558, 576, 2]
 
-// Module 8361 (useOpenExternalUrlFromGameProfile)
-import openURLDefault from "openURL" /* 4565 */;
-import GameUtilsDefault from "GameUtils" /* 8362 */;
+// Module 8859 (useOpenExternalUrlFromGameProfile)
+import openURLDefault from "openURL" /* 4757 */;
+import GameUtilsDefault from "GameUtils" /* 8860 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -134,7 +134,7 @@ function openDeepLink(arg0, arg1) {
 const steam = "steam";
 const re7 = /^\/app\/(\d+)(?:\/)?/;
 const re8 = /^\/games\/store\/title\/([^/]+)/;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenExternalUrlFromGameProfile(arg0) {
   let first;
   _require = arg0;
   obj = require("react");
@@ -233,14 +233,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   });
-  const fn = function() {
+  function t0() {
     return closure_0(...arguments);
-  };
+  }
   cResult[0] = arg0;
   cResult[1] = first;
-  cResult[2] = fn;
-  tmp4 = fn;
-}) : ((arg0) => {
+  cResult[2] = t0;
+  tmp4 = t0;
+}) : (function useOpenExternalUrlFromGameProfile(arg0) {
   let closure_2;
   let first;
   [first, closure_2] = react.useState(false);

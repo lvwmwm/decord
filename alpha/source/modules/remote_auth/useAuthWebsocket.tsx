@@ -1,14 +1,14 @@
-// Module ID: 15950
-// Function ID: 15951
+// Module ID: 16210
+// Function ID: 16211
 // Name: useAuthWebsocket
-// Dependencies: [5, 32, 19, 1085, 3, 558, 576, 15949, 569, 6459, 13463, 15951, 1121, 1282, 6089, 15953, 2]
+// Dependencies: [5, 32, 19, 1085, 3, 558, 576, 16209, 569, 6637, 13763, 16211, 1121, 1294, 5936, 16213, 2]
 
-// Module 15950 (useAuthWebsocket)
+// Module 16210 (useAuthWebsocket)
 import LoggerDefault from "Logger" /* 3 */;
 import BackoffDefault from "Backoff" /* 569 */;
-import useStableCallbackDefault from "useStableCallback" /* 6459 */;
-import typing from "typing" /* 15949 */;
-import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 15951 */;
+import useStableCallbackDefault from "useStableCallback" /* 6637 */;
+import typing from "typing" /* 16209 */;
+import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 16211 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -17,7 +17,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c2, closure_0, closure_1, closure_2, dependencyMap, fingerprint, importDefault, infoResult, nonce, tmp10, tmp7, tmp9, user;
+let _require, c2, closure_0, closure_1, closure_2, dependencyMap, errorResult, failResult, fingerprint, importDefault, infoResult, nonce, tmp10, tmp7, tmp9, user;
 
 let metroImportDefault;
 let metroRequire;
@@ -25,14 +25,13 @@ let react = react_mod;
 ({ ComponentActions: metroRequire, Endpoints: metroImportDefault } = Constants);
 let tmp3 = new LoggerDefault("useAuthWebsocket");
 let logger = tmp3;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, arg2) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuthWebsocket(arg0, arg1, arg2) {
   let closure_5;
   let first;
   let first1;
   let tmp12;
   let tmp16;
   let tmp18;
-  let tmp19;
   _require = arg0;
   importDefault = arg1;
   let tmp2 = dependencyMap;
@@ -49,7 +48,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, 
   let tmp8 = tmp6[1];
   react = tmp8;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj3 = { step: tmp(15949).RemoteAuthStep.INITIALIZING };
+    let obj3 = { step: tmp(16209).RemoteAuthStep.INITIALIZING };
     cResult[0] = obj3;
     first1 = obj3;
   } else {
@@ -82,7 +81,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, 
         tmp2 = closure_1;
         if (tmp2) {
           tmp7 = closure_3;
-          tmp8 = closure_3(() => { /* body not rendered: F145414 */ });
+          tmp8 = closure_3(() => { /* body not rendered: F146900 */ });
         } else {
           tmp3 = closure_8;
           str = "document is not visible, will defer reconnection when document becomes visible.";
@@ -106,7 +105,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, 
         tmp2 = closure_1;
         if (tmp2) {
           tmp7 = closure_3;
-          tmp8 = closure_3(() => { /* body not rendered: F145414 */ });
+          tmp8 = closure_3(() => { /* body not rendered: F146900 */ });
         } else {
           tmp3 = closure_8;
           str = "document is not visible, will defer reconnection when document becomes visible.";
@@ -122,21 +121,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, 
   const tmp17 = useStableCallbackDefault(tmp16);
   let closure_10 = tmp17;
   if (cResult[4] !== tmp17) {
-    class R {
+    class P {
       constructor() {
+        errorResult = closure_8.error("Could not complete Remote Auth login, trying to restart with a new Remote Auth session.");
         obj = { step: closure_0(closure_2[7]).RemoteAuthStep.INITIALIZING };
-        tmp = closure_7(obj);
-        tmp2 = closure_1;
-        if (tmp2) {
-          tmp7 = closure_3;
-          tmp8 = closure_3(() => { /* body not rendered: F145414 */ });
-        } else {
-          tmp3 = closure_8;
-          str = "document is not visible, will defer reconnection when document becomes visible.";
-          infoResult = closure_8.info("document is not visible, will defer reconnection when document becomes visible.");
-          tmp5 = closure_5;
-          flag = true;
-          tmp6 = closure_5(true);
+        tmp2 = closure_7(obj);
+        obj2 = closure_9;
+        if (!closure_9.pending) {
+          tmp3 = closure_10;
+          failResult = obj2.fail(closure_10);
         }
         return;
       }
@@ -144,46 +137,34 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, 
     let num5 = 4;
     cResult[4] = tmp17;
     let num6 = 5;
-    cResult[5] = tmp19;
-    tmp18 = tmp19;
+    cResult[5] = P;
+    tmp18 = P;
   } else {
-    class R {
+    class P {
       constructor() {
+        errorResult = closure_8.error("Could not complete Remote Auth login, trying to restart with a new Remote Auth session.");
         obj = { step: closure_0(closure_2[7]).RemoteAuthStep.INITIALIZING };
-        tmp = closure_7(obj);
-        tmp2 = closure_1;
-        if (tmp2) {
-          tmp7 = closure_3;
-          tmp8 = closure_3(() => { /* body not rendered: F145414 */ });
-        } else {
-          tmp3 = closure_8;
-          str = "document is not visible, will defer reconnection when document becomes visible.";
-          infoResult = closure_8.info("document is not visible, will defer reconnection when document becomes visible.");
-          tmp5 = closure_5;
-          flag = true;
-          tmp6 = closure_5(true);
+        tmp2 = closure_7(obj);
+        obj2 = closure_9;
+        if (!closure_9.pending) {
+          tmp3 = closure_10;
+          failResult = obj2.fail(closure_10);
         }
         return;
       }
     }
   }
-  let closure_11 = tmp18;
+  P = tmp18;
   if (cResult[6] === arg1) {
-    class R {
+    class P {
       constructor() {
+        errorResult = closure_8.error("Could not complete Remote Auth login, trying to restart with a new Remote Auth session.");
         obj = { step: closure_0(closure_2[7]).RemoteAuthStep.INITIALIZING };
-        tmp = closure_7(obj);
-        tmp2 = closure_1;
-        if (tmp2) {
-          tmp7 = closure_3;
-          tmp8 = closure_3(() => { /* body not rendered: F145414 */ });
-        } else {
-          tmp3 = closure_8;
-          str = "document is not visible, will defer reconnection when document becomes visible.";
-          infoResult = closure_8.info("document is not visible, will defer reconnection when document becomes visible.");
-          tmp5 = closure_5;
-          flag = true;
-          tmp6 = closure_5(true);
+        tmp2 = closure_7(obj);
+        obj2 = closure_9;
+        if (!closure_9.pending) {
+          tmp3 = closure_10;
+          failResult = obj2.fail(closure_10);
         }
         return;
       }
@@ -206,7 +187,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, 
         flag = false;
         tmp8 = closure_5(false);
         tmp9 = closure_3;
-        tmp10 = closure_3(() => { /* body not rendered: F145415 */ });
+        tmp10 = closure_3(() => { /* body not rendered: F146901 */ });
       }
       return;
     }
@@ -217,7 +198,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, 
   cResult[8] = first2;
   cResult[9] = G;
   cResult[10] = items;
-}) : ((arg0, arg1) => {
+}) : (function useAuthWebsocket(arg0, arg1) {
   let closure_5;
   _require = arg0;
   importDefault = arg1;

@@ -1,23 +1,21 @@
-// Module ID: 11549
-// Function ID: 11550
+// Module ID: 11564
+// Function ID: 11565
 // Name: ModalFooter
-// Dependencies: [19, 17, 21, 4896, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 2]
 
-// Module 11549 (ModalFooter)
+// Module 11564 (ModalFooter)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let children;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ footer: { flexDirection: "column", paddingVertical: 16, paddingHorizontal: 24 } });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ModalFooter(children) {
   const obj = react2;
   const cResult = obj.c(3);
   children = children.children;
@@ -34,7 +32,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[1] = tmp2.footer;
   cResult[2] = tmp4;
   tmp3 = tmp4;
-}) : ((children) => <View style={closure_4().footer}>{arg0.children}</View>);
+}) : (function ModalFooter(children) {
+  return <View style={closure_4().footer}>{arg0.children}</View>;
+});
 const result = size.fileFinishedImporting("design/components/Modal/native/ModalFooter.native.tsx");
 
 export const ModalFooter = tmp3;

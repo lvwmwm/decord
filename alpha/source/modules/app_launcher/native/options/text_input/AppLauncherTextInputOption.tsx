@@ -1,19 +1,19 @@
-// Module ID: 11810
-// Function ID: 11811
+// Module ID: 11877
+// Function ID: 11878
 // Name: AppLauncherTextInputOption
-// Dependencies: [32, 19, 17, 1380, 21, 4896, 587, 558, 576, 11007, 1985, 9885, 11806, 8961, 1188, 11811, 1369, 11812, 1881, 9879, 2]
+// Dependencies: [32, 19, 17, 1392, 21, 5090, 587, 558, 576, 11232, 1997, 9365, 11873, 11233, 1200, 11878, 1381, 11879, 1893, 9359, 2]
 
-// Module 11810 (AppLauncherTextInputOption)
+// Module 11877 (AppLauncherTextInputOption)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1881 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9879 */;
-import TopEmojisUtils from "TopEmojisUtils" /* 9885 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1893 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9359 */;
+import TopEmojisUtils from "TopEmojisUtils" /* 9365 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ obj2 = { width: "100%", backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_D
 createStyles = createStyles.createStyles;
 obj3 = { borderColor: nativeDefault.colors.BORDER_FEEDBACK_CRITICAL };
 let closure_9 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((autoFocus) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherTextInputOption(autoFocus) {
   let closure_4;
   let first;
   let guildId;
@@ -92,26 +92,26 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((autoFocus) => {
   const tmp10 = option.type === tmp(tmp2[10]).ApplicationCommandOptionType.STRING;
   let closure_7 = tmp10;
   if (cResult[3] !== onChangeText) {
-    class G {
+    class P {
       constructor(arg0) {
         closure_4(arg0);
         onChangeText(arg0);
       }
     }
     cResult[3] = onChangeText;
-    cResult[4] = G;
+    cResult[4] = P;
   } else {
-    class G {
+    class P {
       constructor(arg0) {
         closure_4(arg0);
         onChangeText(arg0);
       }
     }
   }
-  G = tmp11;
+  P = tmp11;
   if (cResult[5] === tmp11) {
     let tmp12;
-    class G {
+    class P {
       constructor(arg0) {
         closure_4(arg0);
         onChangeText(arg0);
@@ -119,7 +119,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((autoFocus) => {
     }
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      class G {
+      class P {
         constructor(arg0) {
           closure_4(arg0);
           onChangeText(arg0);
@@ -128,7 +128,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((autoFocus) => {
       cResult[8] = tmp13;
       tmp12 = tmp13;
     } else {
-      class G {
+      class P {
         constructor(arg0) {
           closure_4(arg0);
           onChangeText(arg0);
@@ -138,7 +138,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((autoFocus) => {
     const onClose = tmp12;
     if (cResult[9] === guildId) {
       let tmp17;
-      class G {
+      class P {
         constructor(arg0) {
           closure_4(arg0);
           onChangeText(arg0);
@@ -147,7 +147,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((autoFocus) => {
       const effect = obj2.useEffect(tmp14, tmp15);
       const _Symbol2 = Symbol;
       if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-        class G {
+        class P {
           constructor(arg0) {
             closure_4(arg0);
             onChangeText(arg0);
@@ -156,7 +156,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((autoFocus) => {
         cResult[13] = tmp18;
         tmp17 = tmp18;
       } else {
-        class G {
+        class P {
           constructor(arg0) {
             closure_4(arg0);
             onChangeText(arg0);
@@ -175,7 +175,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((autoFocus) => {
         }
       }
       if (hasError) {
-        class G {
+        class P {
           constructor(arg0) {
             closure_4(arg0);
             onChangeText(arg0);
@@ -183,7 +183,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((autoFocus) => {
         }
       }
       if (cResult[14] === style) {
-        class G {
+        class P {
           constructor(arg0) {
             closure_4(arg0);
             onChangeText(arg0);
@@ -225,7 +225,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((autoFocus) => {
       const substr1 = substring(start);
       if (null == id.id) {
         if (null != id.surrogates) {
-          G(substr + id.surrogates + substr1);
+          P(substr + id.surrogates + substr1);
           length = (substr + id.surrogates).length;
         }
         const obj = { start: length, end: length };
@@ -241,7 +241,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((autoFocus) => {
           name = id.uniqueName;
         }
         const _HermesInternal = HermesInternal;
-        G(substr + ":" + name + ": " + substr1);
+        P(substr + ":" + name + ": " + substr1);
         const _HermesInternal2 = HermesInternal;
         length = (substr + ":" + name + ": ").length;
       }
@@ -251,7 +251,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((autoFocus) => {
   cResult[5] = tmp11;
   cResult[6] = first;
   cResult[7] = V;
-}) : ((guildId) => {
+}) : (function AppLauncherTextInputOption(guildId) {
   let TextInput;
   let autoFocus;
   let closure_4;
@@ -286,11 +286,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((autoFocus) => {
   }), 2);
   value = tmp2[0];
   react = tmp2[1];
-  let obj = onChangeText(11007);
+  let obj = onChangeText(11232);
   const entrypoint = obj.useAppLauncherContext().entrypoint;
   react.useRef({ start: 0, end: 0 });
   const ref = react.useRef(null);
-  let tmp14Result = option.type === onChangeText(1985).ApplicationCommandOptionType.STRING;
+  let tmp14Result = option.type === onChangeText(1997).ApplicationCommandOptionType.STRING;
   let closure_7 = tmp14Result;
   const items = [onChangeText];
   onChangeText = react.useCallback((arg0) => {
@@ -345,17 +345,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((autoFocus) => {
       const result = obj.maybeFetchTopEmojisByGuild(guildId);
     }
   }, items2);
-  let obj2 = onChangeText(11806);
+  let obj2 = onChangeText(11873);
   const animationDelayedAutoFocus = obj2.useAnimationDelayedAutoFocus(autoFocus, () => {
     const current = ref.current;
     if (current != null) {
       current.focus();
     }
   });
-  if (entrypoint === onChangeText(8961).AppLauncherEntrypoint.VOICE) {
-    TextInput = tmp4(1188).TextInput;
+  if (entrypoint === onChangeText(11233).AppLauncherEntrypoint.VOICE) {
+    TextInput = tmp4(1200).TextInput;
   } else {
-    TextInput = guildId(11811);
+    TextInput = guildId(11878);
   }
   const items3 = [tmp.container, , ];
   const tmp12 = onChangeText;
@@ -386,12 +386,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((autoFocus) => {
     onPressIn
   };
   maxLength = undefined;
-  if (option.type === onChangeText(1985).ApplicationCommandOptionType.STRING) {
+  if (option.type === onChangeText(1997).ApplicationCommandOptionType.STRING) {
     maxLength = option.maxLength;
   }
-  if (option.type === onChangeText(1985).ApplicationCommandOptionType.INTEGER) {
+  if (option.type === onChangeText(1997).ApplicationCommandOptionType.INTEGER) {
     let str2 = "numbers-and-punctuation";
-    const tmp4Result = onChangeText(1369);
+    const tmp4Result = onChangeText(1381);
     if (tmp4Result.isAndroid()) {
       str2 = "numeric";
     }
@@ -411,7 +411,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((autoFocus) => {
           const result1 = obj2.openEmojiPickerActionSheet(obj3);
         }
     };
-    tmp14Result = tmp14(guildId(11812), obj5);
+    tmp14Result = tmp14(guildId(11879), obj5);
   }
   items4[1] = tmp14Result;
   return tmp12(tmp13, obj3);

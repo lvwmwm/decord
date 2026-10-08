@@ -1,16 +1,16 @@
-// Module ID: 9719
-// Function ID: 9720
+// Module ID: 10924
+// Function ID: 10925
 // Name: ChannelCallSingleController
-// Dependencies: [19, 4918, 502, 1085, 4917, 21, 558, 576, 1252, 5076, 504, 9720, 9722, 9723, 2]
+// Dependencies: [19, 5893, 502, 1085, 5113, 21, 558, 576, 1264, 5105, 504, 10925, 10927, 10928, 2]
 
-// Module 9719 (ChannelCallSingleController)
+// Module 10924 (ChannelCallSingleController)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import CallConstants from "CallConstants" /* 4917 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5076 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5105 */;
+import CallConstants from "CallConstants" /* 5113 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4918 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5893 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 const AnalyticEvents = Constants.AnalyticEvents;
 const ParticipantTypes = CallConstants.ParticipantTypes;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedParticipant) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCallSingleController(selectedParticipant) {
   let tmp4;
   let tmp5;
   const tmp = selectedParticipant;
@@ -52,15 +52,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedParticipan
     cResult[3] = items1;
   }
   if (cResult[4] !== selectedParticipant.id) {
-    class S {
+    class E {
       constructor() {
         return ApplicationStreamingStore.getActiveStreamForStreamKey(selectedParticipant.id);
       }
     }
     cResult[4] = selectedParticipant.id;
-    cResult[5] = S;
+    cResult[5] = E;
   } else {
-    class S {
+    class E {
       constructor() {
         return ApplicationStreamingStore.getActiveStreamForStreamKey(selectedParticipant.id);
       }
@@ -68,14 +68,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedParticipan
   }
   tmp(504);
   if (ParticipantTypes.STREAM === selectedParticipant.type) {
-    class S {
+    class E {
       constructor() {
         return ApplicationStreamingStore.getActiveStreamForStreamKey(selectedParticipant.id);
       }
     }
     const id = selectedParticipant.user.id;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      class S {
+      class E {
         constructor() {
           return ApplicationStreamingStore.getActiveStreamForStreamKey(selectedParticipant.id);
         }
@@ -83,20 +83,20 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedParticipan
       const id1 = AuthenticationStore.getId();
       cResult[6] = id1;
     } else {
-      class S {
+      class E {
         constructor() {
           return ApplicationStreamingStore.getActiveStreamForStreamKey(selectedParticipant.id);
         }
       }
     }
     if (null != tmp11) {
-      class S {
+      class E {
         constructor() {
           return ApplicationStreamingStore.getActiveStreamForStreamKey(selectedParticipant.id);
         }
       }
       if (cResult[7] === channel) {
-        class S {
+        class E {
           constructor() {
             return ApplicationStreamingStore.getActiveStreamForStreamKey(selectedParticipant.id);
           }
@@ -105,18 +105,18 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedParticipan
       cResult[7] = channel;
       cResult[8] = tmp15;
       cResult[9] = selectedParticipant;
-      cResult[10] = jsx(channel(tmp15 ? 9720 : 9722), { participant: selectedParticipant, channel });
-      const tmp17Result = jsx(channel(tmp15 ? 9720 : 9722), { participant: selectedParticipant, channel });
+      cResult[10] = jsx(channel(tmp15 ? 10925 : 10927), { participant: selectedParticipant, channel });
+      const tmp17Result = jsx(channel(tmp15 ? 10925 : 10927), { participant: selectedParticipant, channel });
     }
     return null;
   } else {
-    class S {
+    class E {
       constructor() {
         return ApplicationStreamingStore.getActiveStreamForStreamKey(selectedParticipant.id);
       }
     }
   }
-}) : (function(selectedParticipant) {
+}) : (function ChannelCallSingleController(selectedParticipant) {
   selectedParticipant = selectedParticipant.selectedParticipant;
   const channel = selectedParticipant.channel;
   const items = [channel.id];
@@ -136,11 +136,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedParticipan
     const id = selectedParticipant.user.id;
     let tmp15Result = null;
     if (null != tmp4) {
-      tmp15Result = jsx(channel(id === tmp13 ? 9720 : 9722), { participant: selectedParticipant, channel });
+      tmp15Result = jsx(channel(id === tmp13 ? 10925 : 10927), { participant: selectedParticipant, channel });
     }
     return tmp15Result;
   } else if (ParticipantTypes.USER === type) {
-    return jsx(channel(9723), { participant: selectedParticipant, channel });
+    return jsx(channel(10928), { participant: selectedParticipant, channel });
   } else if (ParticipantTypes.HIDDEN_STREAM === type) {
     return null;
   } else if (ParticipantTypes.ACTIVITY === type) {

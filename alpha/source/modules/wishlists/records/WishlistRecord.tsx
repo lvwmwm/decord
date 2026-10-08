@@ -1,17 +1,17 @@
-// Module ID: 8465
-// Function ID: 8466
+// Module ID: 8951
+// Function ID: 8952
 // Name: WishlistRecord
-// Dependencies: [1392, 2009, 8466, 8467, 8468, 8469, 1085, 2]
+// Dependencies: [1404, 2021, 8952, 8953, 8954, 8955, 1085, 2]
 // Exports: getWishlistProductLines, getWishlistSkuIds, wishlistHasSkuId
 
-// Module 8465 (WishlistRecord)
+// Module 8951 (WishlistRecord)
 import Constants from "Constants" /* 1085 */;
-import Record from "Record" /* 1392 */;
-import ApplicationRecord from "ApplicationRecord" /* 2009 */;
-import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 8466 */;
-import CollectiblesWishlistItemRecord from "CollectiblesWishlistItemRecord" /* 8467 */;
-import PremiumWishlistItemRecord from "PremiumWishlistItemRecord" /* 8468 */;
-import SKUWishlistItemRecord from "SKUWishlistItemRecord" /* 8469 */;
+import Record from "Record" /* 1404 */;
+import ApplicationRecord from "ApplicationRecord" /* 2021 */;
+import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 8952 */;
+import CollectiblesWishlistItemRecord from "CollectiblesWishlistItemRecord" /* 8953 */;
+import PremiumWishlistItemRecord from "PremiumWishlistItemRecord" /* 8954 */;
+import SKUWishlistItemRecord from "SKUWishlistItemRecord" /* 8955 */;
 import size from "module_2" /* 2 */;
 
 let set, sku_product_line;

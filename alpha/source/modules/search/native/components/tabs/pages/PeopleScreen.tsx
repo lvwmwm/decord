@@ -1,22 +1,22 @@
-// Module ID: 16894
-// Function ID: 16895
+// Module ID: 17175
+// Function ID: 17176
 // Name: PeopleScreen
-// Dependencies: [5, 19, 12009, 11994, 7524, 7523, 21, 558, 576, 11987, 504, 16837, 16833, 4909, 12001, 16895, 16829, 16841, 2]
+// Dependencies: [5, 19, 12082, 12067, 9247, 9246, 21, 558, 576, 12060, 504, 17116, 17112, 7001, 12074, 17176, 17108, 17120, 2]
 
-// Module 16894 (PeopleScreen)
+// Module 17175 (PeopleScreen)
 import Fragment from "Fragment" /* 21 */;
-import TrackingConstants from "TrackingConstants" /* 7523 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12001 */;
+import TrackingConstants from "TrackingConstants" /* 9246 */;
+import tracking_TrackingDefault from "tracking/Tracking" /* 12074 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import SearchPeopleTabStore from "SearchPeopleTabStore" /* 12009 */;
-import SearchQueryStore_mod from "SearchQueryStore" /* 11994 */;
-import SearchConstants from "SearchConstants" /* 7524 */;
+import SearchPeopleTabStore from "SearchPeopleTabStore" /* 12082 */;
+import SearchQueryStore_mod from "SearchQueryStore" /* 12067 */;
+import SearchConstants from "SearchConstants" /* 9247 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let importDefault, searchContext, title;
+let importDefault, title;
 
 let metroImportAll;
 let metroImportDefault;
@@ -25,15 +25,15 @@ let SearchQueryStore = SearchQueryStore_mod;
 ({ SearchListItemTypes: metroImportDefault, USER_ESTIMATED_ITEM_SIZE: metroImportAll } = SearchConstants);
 const constants2 = TrackingConstants.SearchResultContentEntityTypes;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function PeopleScreen(searchContext) {
   let closure_1;
   let closure_4;
   let closure_6;
   let onPressGroupDMItem;
-  let tmp11;
-  let tmp13;
-  let tmp17;
-  let tmp20;
+  let tmp10;
+  let tmp12;
+  let tmp16;
+  let tmp19;
   let tmp4;
   let tmp6;
   let tmp8;
@@ -61,23 +61,38 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
     tmp6 = cResult[2];
   }
   if (cResult[3] !== tmp4) {
-    const fn = function v() {
-      return SearchPeopleTabStore.getResults(closure_1);
-    };
+    class S {
+      constructor() {
+        return SearchPeopleTabStore.getResults(closure_1);
+      }
+    }
     cResult[3] = tmp4;
-    cResult[4] = fn;
-    tmp8 = fn;
+    cResult[4] = S;
+    tmp8 = S;
   } else {
-    tmp8 = cResult[4];
+    class S {
+      constructor() {
+        return SearchPeopleTabStore.getResults(closure_1);
+      }
+    }
   }
   const tmpResult6 = tmp(tmp2[10]);
   const stateFromStores = tmpResult6.useStateFromStores(tmp6, tmp8);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        return SearchPeopleTabStore.getResults(closure_1);
+      }
+    }
     const items1 = [SearchQueryStore];
     cResult[5] = items1;
     tmp9 = items1;
   } else {
-    tmp9 = cResult[5];
+    class S {
+      constructor() {
+        return SearchPeopleTabStore.getResults(closure_1);
+      }
+    }
   }
   if (cResult[6] !== searchContext) {
     class E {
@@ -87,7 +102,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
     }
     cResult[6] = searchContext;
     cResult[7] = E;
-    tmp11 = E;
+    tmp10 = E;
   } else {
     class E {
       constructor() {
@@ -96,16 +111,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
     }
   }
   const tmpResult7 = tmp(tmp2[10]);
-  const stateFromStores1 = tmpResult7.useStateFromStores(tmp9, tmp11);
+  const stateFromStores1 = tmpResult7.useStateFromStores(tmp9, tmp10);
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     class E {
       constructor() {
         return SearchQueryStore.isInitialSearchQuery(searchContext);
       }
     }
-    tmp14[0] = closure_8;
-    cResult[8] = tmp14;
-    tmp13 = tmp14;
+    tmp13[0] = closure_8;
+    cResult[8] = tmp13;
+    tmp12 = tmp13;
   } else {
     class E {
       constructor() {
@@ -114,17 +129,17 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
     }
   }
   const tmpResult8 = tmp(tmp2[11]);
-  const fullscreenPlaceholderCount = tmpResult8.useFullscreenPlaceholderCount(tmp13);
+  const fullscreenPlaceholderCount = tmpResult8.useFullscreenPlaceholderCount(tmp12);
   if (cResult[9] !== searchContext) {
     class E {
       constructor() {
         return SearchQueryStore.isInitialSearchQuery(searchContext);
       }
     }
-    tmp18[0] = searchContext;
+    tmp17[0] = searchContext;
     cResult[9] = searchContext;
-    cResult[10] = tmp18;
-    tmp17 = tmp18;
+    cResult[10] = tmp17;
+    tmp16 = tmp17;
   } else {
     class E {
       constructor() {
@@ -133,17 +148,17 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
     }
   }
   const tmpResult9 = tmp(tmp2[12]);
-  onPressGroupDMItem = tmpResult9.useOnPressGroupDMItem(tmp17);
+  onPressGroupDMItem = tmpResult9.useOnPressGroupDMItem(tmp16);
   if (cResult[11] !== searchContext) {
     class E {
       constructor() {
         return SearchQueryStore.isInitialSearchQuery(searchContext);
       }
     }
-    tmp21[0] = searchContext;
+    tmp20[0] = searchContext;
     cResult[11] = searchContext;
-    cResult[12] = tmp21;
-    tmp20 = tmp21;
+    cResult[12] = tmp20;
+    tmp19 = tmp20;
   } else {
     class E {
       constructor() {
@@ -152,22 +167,22 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
     }
   }
   const tmpResult10 = tmp(tmp2[12]);
-  const onPressDMItem = tmpResult10.useOnPressDMItem(tmp20);
+  const onPressDMItem = tmpResult10.useOnPressDMItem(tmp19);
   if (cResult[13] === onPressDMItem) {
     class E {
       constructor() {
         return SearchQueryStore.isInitialSearchQuery(searchContext);
       }
     }
-    react = tmp23;
+    react = tmp22;
     if (cResult[16] === onPressGroupDMItem) {
       class E {
         constructor() {
           return SearchQueryStore.isInitialSearchQuery(searchContext);
         }
       }
-      SearchQueryStore = tmp24;
-      if (cResult[19] === tmp23) {
+      SearchQueryStore = tmp23;
+      if (cResult[19] === tmp22) {
         class E {
           constructor() {
             return SearchQueryStore.isInitialSearchQuery(searchContext);
@@ -176,7 +191,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
       }
       class D {
         constructor(channelId, index) {
-          const obj = search_tracking_TrackingDefault;
+          const obj = tracking_TrackingDefault;
           const obj2 = { searchContext, channelId, index, entityType: constants2.CHANNEL };
           const result = obj.trackSearchResultClicked(obj2);
           onPressGroupDMItem(channelId);
@@ -243,7 +258,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
           }
           class D {
             constructor(channelId, index) {
-              const obj = search_tracking_TrackingDefault;
+              const obj = tracking_TrackingDefault;
               const obj2 = { searchContext, channelId, index, entityType: constants2.CHANNEL };
               const result = obj.trackSearchResultClicked(obj2);
               onPressGroupDMItem(channelId);
@@ -251,8 +266,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
           }
         }
       }
-      cResult[19] = tmp23;
-      cResult[20] = tmp24;
+      cResult[19] = tmp22;
+      cResult[20] = tmp23;
       cResult[21] = stateFromStores1;
       cResult[22] = fullscreenPlaceholderCount;
       cResult[23] = stateFromStores;
@@ -260,7 +275,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
     }
     class D {
       constructor(channelId, index) {
-        const obj = search_tracking_TrackingDefault;
+        const obj = tracking_TrackingDefault;
         const obj2 = { searchContext, channelId, index, entityType: constants2.CHANNEL };
         const result = obj.trackSearchResultClicked(obj2);
         onPressGroupDMItem(channelId);
@@ -328,13 +343,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
       }
     })();
   });
-  const fn2 = function() {
+  function t9() {
     return closure_0(...arguments);
-  };
+  }
   cResult[13] = onPressDMItem;
   cResult[14] = searchContext;
-  cResult[15] = fn2;
-}) : ((searchContext) => {
+  cResult[15] = t9;
+}) : (function PeopleScreen(searchContext) {
   let closure_1;
   let tmp13;
   searchContext = searchContext.searchContext;
@@ -423,7 +438,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
   }, items2);
   const items3 = [onPressGroupDMItem, searchContext];
   callback1 = fullscreenPlaceholderCount.useCallback((channelId, index) => {
-    const obj = search_tracking_TrackingDefault;
+    const obj = tracking_TrackingDefault;
     const obj2 = { searchContext, channelId, index, entityType: constants.CHANNEL };
     const result = obj.trackSearchResultClicked(obj2);
     onPressGroupDMItem(channelId);

@@ -1,22 +1,22 @@
-// Module ID: 12047
-// Function ID: 12048
+// Module ID: 12120
+// Function ID: 12121
 // Name: TimestampSearchHeader
-// Dependencies: [19, 17, 21, 558, 10736, 4896, 587, 576, 4855, 4892, 1126, 8924, 2]
+// Dependencies: [19, 17, 21, 558, 10490, 5090, 587, 576, 5049, 5086, 1126, 8555, 2]
 // Exports: useTimestampSearchHeaderHeight
 
-// Module 12047 (TimestampSearchHeader)
+// Module 12120 (TimestampSearchHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import ClockIcon from "ClockIcon" /* 4855 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Form from "Form" /* 8924 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10736 */;
+import ClockIcon from "ClockIcon" /* 5049 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Form from "Form" /* 8555 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10490 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -38,13 +38,13 @@ createStyles = createStyles.createStyles;
 obj3 = { marginLeft: 0, backgroundColor: nativeDefault.colors.MOBILE_COMMAND_BAR_DIVIDER };
 let closure_8 = createStyles(obj);
 ReactCompilerGating = ReactCompilerGating_mod;
-const fn = () => {
+function useTimestampSearchHeaderHeight() {
   const obj = useScaledTextLineHeight;
   const sum = 24 + obj.useScaledTextLineHeight(c6);
   const obj2 = useScaledTextLineHeight;
   return sum + obj2.useScaledTextLineHeight(c7) + 12 + hairlineWidth.hairlineWidth;
-};
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+}
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function TimestampSearchHeader() {
   let items;
   let items1;
   let items2;
@@ -145,7 +145,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   cResult[4] = tmp5;
   cResult[5] = tmp13;
   tmp12 = tmp13;
-}) : (() => {
+}) : (function TimestampSearchHeader() {
   let intl;
   let items;
   let items1;
@@ -172,4 +172,4 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
 const result1 = size.fileFinishedImporting("modules/timestamp_autocomplete/native/TimestampSearchHeader.tsx");
 
 export default memoResult;
-export const useTimestampSearchHeaderHeight = fn;
+export { useTimestampSearchHeaderHeight };

@@ -1,21 +1,21 @@
-// Module ID: 17794
-// Function ID: 17795
+// Module ID: 18081
+// Function ID: 18082
 // Name: useLoadGuildStickerWithCreator
-// Dependencies: [5, 32, 19, 1377, 5695, 558, 576, 504, 10125, 2]
+// Dependencies: [5, 32, 19, 1389, 6036, 558, 576, 504, 9710, 2]
 
-// Module 17794 (useLoadGuildStickerWithCreator)
+// Module 18081 (useLoadGuildStickerWithCreator)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
-import GuildStickersStore from "GuildStickersStore" /* 5695 */;
+import UserStore from "UserStore" /* 1389 */;
+import GuildStickersStore from "GuildStickersStore" /* 6036 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c1, c4, closure_0, user;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadGuildStickersWithCreator(arg0) {
   let first;
   let tmp10;
   let tmp16;
@@ -148,7 +148,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp14;
       const _Symbol = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        class E {
+        class W {
           constructor(user_id) {
             user = user.getUser(user_id.user_id);
             let tmp2 = user_id;
@@ -160,10 +160,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             return tmp2;
           }
         }
-        cResult[8] = E;
-        tmp14 = E;
+        cResult[8] = W;
+        tmp14 = W;
       } else {
-        class E {
+        class W {
           constructor(user_id) {
             user = user.getUser(user_id.user_id);
             let tmp2 = user_id;
@@ -180,7 +180,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[6] = stateFromStores;
       cResult[7] = mapped;
     } else {
-      class E {
+      class W {
         constructor(user_id) {
           user = user.getUser(user_id.user_id);
           let tmp2 = user_id;
@@ -194,7 +194,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     if (cResult[9] === tmp5) {
-      class E {
+      class W {
         constructor(user_id) {
           user = user.getUser(user_id.user_id);
           let tmp2 = user_id;
@@ -214,7 +214,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[11] = obj3;
     tmp16 = obj3;
   } else {
-    class E {
+    class W {
       constructor(user_id) {
         user = user.getUser(user_id.user_id);
         let tmp2 = user_id;
@@ -228,7 +228,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return tmp12;
   }
-}) : ((arg0) => {
+}) : (function useLoadGuildStickersWithCreator(arg0) {
   let obj3;
   let tmp2;
   _require = arg0;

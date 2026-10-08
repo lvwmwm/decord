@@ -1,26 +1,26 @@
-// Module ID: 15650
-// Function ID: 15651
+// Module ID: 15930
+// Function ID: 15931
 // Name: UserSettingsDesignSystemText
-// Dependencies: [19, 17, 21, 558, 576, 4586, 587, 6081, 4893, 6000, 4892, 5600, 2]
+// Dependencies: [19, 17, 21, 558, 576, 4778, 587, 6267, 5087, 6184, 5086, 5373, 2]
 
-// Module 15650 (UserSettingsDesignSystemText)
+// Module 15930 (UserSettingsDesignSystemText)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4586 */;
-import TableRow2 from "TableRow" /* 6000 */;
+import useToken from "useToken" /* 4778 */;
+import TableRow2 from "TableRow" /* 6184 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const TextVariants = tmp(4893);
-const Stack_Stack = tmp(5600);
-const TableRowGroup2 = tmp(6081);
+const TextVariants = tmp(5087);
+const Stack_Stack = tmp(5373);
+const TableRowGroup2 = tmp(6267);
 const ScrollView = react_native.ScrollView;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsDesignSystemText() {
   let tmp10;
   let tmp6;
   let tmp7;
@@ -64,7 +64,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp10 = cResult[4];
   }
   return tmp10;
-}) : (() => {
+}) : (function UserSettingsDesignSystemText() {
   let TEXT_VARIANT;
   const obj = useToken;
   const token = obj.useToken(nativeDefault.modules.mobile.TABLE_ROW_PADDING);

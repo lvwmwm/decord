@@ -1,11 +1,11 @@
-// Module ID: 8088
-// Function ID: 8089
+// Module ID: 5255
+// Function ID: 5256
 // Name: VideoFilterImageError
-// Dependencies: [1282, 1126, 2]
+// Dependencies: [1294, 1126, 2]
 
-// Module 8088 (VideoFilterImageError)
+// Module 5255 (VideoFilterImageError)
 import intl3 from "intl" /* 1126 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
 import size from "module_2" /* 2 */;
 
 const React2 = { ASSET_SIZE: "BINARY_TYPE_MAX_SIZE" };

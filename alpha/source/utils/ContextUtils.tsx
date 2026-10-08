@@ -1,15 +1,15 @@
-// Module ID: 6947
-// Function ID: 6948
+// Module ID: 7136
+// Function ID: 7137
 // Name: ContextUtils
 // Dependencies: [19, 21, 558, 576, 2]
 // Exports: default
 
-// Module 6947 (ContextUtils)
+// Module 7136 (ContextUtils)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap;
+let dependencyMap, value;
 
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("utils/ContextUtils.tsx");
@@ -20,7 +20,8 @@ export default function createDefinedContext() {
   let tmp2 = context;
   let tmp3 = dependencyMap;
   let obj = context(558);
-  const tmp4 = obj.isReactCompilerEnabled() ? (function() {
+  const tmp4 = obj.isReactCompilerEnabled() ? (function useContext() {
+    let context;
     context = react.useContext(context);
     if (null == context) {
       const _Error = Error;
@@ -31,7 +32,8 @@ export default function createDefinedContext() {
     } else {
       return context;
     }
-  }) : (function() {
+  }) : (function useContext() {
+    let context;
     context = react.useContext(context);
     if (null == context) {
       const _Error = Error;
@@ -46,26 +48,36 @@ export default function createDefinedContext() {
   dependencyMap = tmp4;
   const items = [context, tmp4, ];
   const tmp2Result = tmp2(558);
-  items[2] = tmp2Result.isReactCompilerEnabled() ? (() => {
+  items[2] = tmp2Result.isReactCompilerEnabled() ? (function useForwardedContext() {
     let tmp3;
     const obj = context(closure_1[3]);
     const cResult = obj.c(2);
     const tmp2 = closure_1();
-    const value = tmp2;
+    value = tmp2;
     if (cResult[0] !== tmp2) {
-      const fn = function n(children) {
-        return <context.Provider value={value}>{arg0.children}</context.Provider>;
-      };
+      class ForwardedContext {
+        constructor(arg0) {
+          obj = { value: closure_0, children: arg0.children };
+          return jsx(closure_0.Provider, obj);
+        }
+      }
       cResult[0] = tmp2;
-      cResult[1] = fn;
-      tmp3 = fn;
+      cResult[1] = ForwardedContext;
+      tmp3 = ForwardedContext;
     } else {
-      tmp3 = cResult[1];
+      class ForwardedContext {
+        constructor(arg0) {
+          obj = { value: closure_0, children: arg0.children };
+          return jsx(closure_0.Provider, obj);
+        }
+      }
     }
     return tmp3;
-  }) : (() => {
-    const value = closure_1();
-    return (children) => <context.Provider value={value}>{arg0.children}</context.Provider>;
+  }) : (function useForwardedContext() {
+    value = closure_1();
+    return function ForwardedContext(children) {
+      return <context.Provider value={value}>{arg0.children}</context.Provider>;
+    };
   });
   return items;
 };

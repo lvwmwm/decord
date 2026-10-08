@@ -1,25 +1,25 @@
-// Module ID: 17018
-// Function ID: 17019
+// Module ID: 17299
+// Function ID: 17300
 // Name: useVoiceChannelApp
-// Dependencies: [2074, 4515, 1085, 558, 576, 504, 6758, 2]
+// Dependencies: [2086, 4707, 1085, 558, 576, 504, 6934, 2]
 // Exports: useVoiceChannelApplicationId
 
-// Module 17018 (useVoiceChannelApp)
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+// Module 17299 (useVoiceChannelApp)
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, guild_id;
+let _require;
 
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
 ({ ChannelTypes: closure_4, GuildFeatures: hasOwnProperty, Permissions: metroRequire } = Constants);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVoiceChannelAppEnabled(guild_id) {
   let first;
   let tmp12;
   let tmp8;
@@ -105,7 +105,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
   cResult[7] = isConjureGuildEnabled;
   cResult[8] = tmp17;
   tmp16 = tmp17;
-}) : ((guild_id) => {
+}) : (function useIsVoiceChannelAppEnabled(guild_id) {
   _require = guild_id;
   const items = [GuildStore];
   const obj = require("get initialized");
@@ -145,7 +145,7 @@ let closure_7 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanConfigureVoiceChannelApp(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -162,7 +162,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function t() {
+    const fn = function o() {
       const canResult = null != closure_0 && PermissionStore.can(metroRequire.MANAGE_CHANNELS, tmp);
       return canResult;
     };
@@ -177,7 +177,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     stateFromStores = tmpResult.useStateFromStores(first, tmp7);
   }
   return stateFromStores;
-}) : ((arg0) => {
+}) : (function useCanConfigureVoiceChannelApp(arg0) {
   let closure_0;
   _require = arg0;
   let stateFromStores = closure_7(arg0);
@@ -191,7 +191,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   return stateFromStores;
 });
-let fn = (application_id) => {
+function useVoiceChannelApplicationId(application_id) {
   let tmp = null;
   if (closure_7(application_id)) {
     application_id = undefined;
@@ -204,9 +204,9 @@ let fn = (application_id) => {
     tmp = application_id;
   }
   return tmp;
-};
+}
 const result1 = size.fileFinishedImporting("modules/voice_channel_apps/useVoiceChannelApp.tsx");
 
 export const useIsVoiceChannelAppEnabled = tmp3;
-export const useVoiceChannelApplicationId = fn;
+export { useVoiceChannelApplicationId };
 export const useCanConfigureVoiceChannelApp = tmp5;

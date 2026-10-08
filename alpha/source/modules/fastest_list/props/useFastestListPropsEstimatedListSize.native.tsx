@@ -1,18 +1,16 @@
-// Module ID: 6564
-// Function ID: 6565
+// Module ID: 6740
+// Function ID: 6741
 // Name: useFastestListPropsEstimatedListSize
-// Dependencies: [32, 19, 558, 576, 1484, 2]
+// Dependencies: [32, 19, 558, 576, 1496, 2]
 
-// Module 6564 (useFastestListPropsEstimatedListSize)
-import useWindowDimensions from "useWindowDimensions" /* 1484 */;
+// Module 6740 (useFastestListPropsEstimatedListSize)
+import useWindowDimensions from "useWindowDimensions" /* 1496 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let estimatedListSize;
-
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((estimatedListSize) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFastestListPropsEstimatedListSize(estimatedListSize) {
   let horizontal;
   let obj = estimatedListSize(horizontal[3]);
   const cResult = obj.c(3);
@@ -38,7 +36,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((estimatedListSize) =
   cResult[1] = horizontal;
   cResult[2] = fn;
   tmp2 = fn;
-}) : ((arg0) => {
+}) : (function useFastestListPropsEstimatedListSize(arg0) {
   ({ estimatedListSize: require, horizontal: dependencyMap } = arg0);
   let tmp = _slicedToArray(react.useState(() => {
     let tmp = require;

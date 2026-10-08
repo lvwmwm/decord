@@ -1,26 +1,24 @@
-// Module ID: 16207
-// Function ID: 16208
+// Module ID: 16467
+// Function ID: 16468
 // Name: DMChannel
-// Dependencies: [19, 4911, 5077, 11711, 5078, 21, 4896, 587, 558, 576, 10664, 4907, 504, 15998, 9295, 16093, 2]
+// Dependencies: [19, 6040, 5971, 11776, 5972, 21, 5090, 587, 558, 576, 10264, 5101, 504, 16258, 8626, 16353, 2]
 
-// Module 16207 (DMChannel)
+// Module 16467 (DMChannel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import transitionToChannel from "transitionToChannel" /* 4907 */;
-import ReadStateConstants from "ReadStateConstants" /* 5078 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9295 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10664 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11711 */;
-import useCallA11yStateDefault from "useCallA11yState" /* 15998 */;
-import ChannelItemDefault from "ChannelItem" /* 16093 */;
+import transitionToChannel from "transitionToChannel" /* 5101 */;
+import ReadStateConstants from "ReadStateConstants" /* 5972 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8626 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10264 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11776 */;
+import useCallA11yStateDefault from "useCallA11yState" /* 16258 */;
+import ChannelItemDefault from "ChannelItem" /* 16353 */;
 import react from "react" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 4911 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
-import createStyles from "createStyles" /* 4896 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channel;
 
 let obj2;
 const CHANNEL_MARGIN_VERTICAL = RedesignChannelListConstants.CHANNEL_MARGIN_VERTICAL;
@@ -30,7 +28,7 @@ let obj = { container: obj2 };
 obj2 = { marginVertical: CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md };
 let closure_8 = createStyles.createStyles(obj);
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function DMChannel(channel) {
   let hasUnread;
   let isIncomingCall;
   let isOngoingCall;
@@ -149,7 +147,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
   cResult[16] = mentionCount;
   cResult[17] = getChannelA11yLabelDefault({ channel, unread: hasUnread, mentionCount, isIncomingCall, isOngoingCall });
   getChannelA11yLabelDefault({ channel, unread: hasUnread, mentionCount, isIncomingCall, isOngoingCall });
-}) : ((channel) => {
+}) : (function DMChannel(channel) {
   let hasUnread;
   let isIncomingCall;
   let isOngoingCall;

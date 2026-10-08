@@ -1,20 +1,20 @@
-// Module ID: 17831
-// Function ID: 17832
+// Module ID: 18118
+// Function ID: 18119
 // Name: GuildSettingsRolesUtils
-// Dependencies: [19, 2112, 1377, 17822, 1085, 558, 576, 504, 4728, 6631, 5711, 1252, 5709, 1375, 2]
+// Dependencies: [19, 2124, 1389, 18109, 1085, 558, 576, 504, 4922, 6808, 6101, 1264, 6099, 1387, 2]
 // Exports: filterFullMembersByQuery, filterRole, getSectionAnalyticsName
 
-// Module 17831 (GuildSettingsRolesUtils)
+// Module 18118 (GuildSettingsRolesUtils)
 import Constants from "Constants" /* 1085 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import UserUtilsDefault from "UserUtils" /* 4728 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5709 */;
-import GuildUtilsDefault from "GuildUtils" /* 5711 */;
-import GuildRoleMemberActionCreators from "GuildRoleMemberActionCreators" /* 6631 */;
-import GuildSettingsConstants from "GuildSettingsConstants" /* 17822 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import UserUtilsDefault from "UserUtils" /* 4922 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6099 */;
+import GuildUtilsDefault from "GuildUtils" /* 6101 */;
+import GuildRoleMemberActionCreators from "GuildRoleMemberActionCreators" /* 6808 */;
+import GuildSettingsConstants from "GuildSettingsConstants" /* 18109 */;
 import react_mod from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import UserStore from "UserStore" /* 1377 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,12 +22,12 @@ const require = globalThis.__r;
 let _require, dependencyMap, importDefault, user;
 
 let tmp;
-const AnalyticsUtilsDefault = tmp(1252);
+const AnalyticsUtilsDefault = tmp(1264);
 let react = react_mod;
 const constants = GuildSettingsConstants.GuildSettingsRoleEditSections;
 const AnalyticEvents = Constants.AnalyticEvents;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildMembers(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -66,95 +66,47 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       tmp11 = cResult[5];
     }
     if (cResult[6] !== stateFromStoresArray) {
-      class R {
-        constructor() {
-          return closure_2.reduce((acc, userId) => {
-            user = user.getUser(userId.userId);
-            if (null != user) {
-              acc[userId.userId] = user;
-            }
-            return acc;
-          }, {});
-        }
-      }
+      const fn2 = function b() {
+        return stateFromStoresArray.reduce((acc, userId) => {
+          user = user.getUser(userId.userId);
+          if (null != user) {
+            acc[userId.userId] = user;
+          }
+          return acc;
+        }, {});
+      };
       const items2 = [stateFromStoresArray];
       cResult[6] = stateFromStoresArray;
-      cResult[7] = R;
+      cResult[7] = fn2;
       cResult[8] = items2;
       tmp14 = items2;
-      tmp13 = R;
+      tmp13 = fn2;
     } else {
-      class R {
-        constructor() {
-          return closure_2.reduce((acc, userId) => {
-            user = user.getUser(userId.userId);
-            if (null != user) {
-              acc[userId.userId] = user;
-            }
-            return acc;
-          }, {});
-        }
-      }
+      tmp13 = cResult[7];
       tmp14 = cResult[8];
     }
     const tmpResult2 = tmp(stateFromStoresArray[7]);
     const stateFromStoresObject = tmpResult2.useStateFromStoresObject(tmp11, tmp13, tmp14);
     if (cResult[9] === arg0) {
-      class R {
-        constructor() {
-          return closure_2.reduce((acc, userId) => {
-            user = user.getUser(userId.userId);
-            if (null != user) {
-              acc[userId.userId] = user;
-            }
-            return acc;
-          }, {});
+      if (cResult[10] === stateFromStoresObject) {
+        let tmp17;
+        if (cResult[11] === stateFromStoresArray) {
+          tmp17 = cResult[12];
         }
+        return tmp17;
       }
     }
     const items3 = [];
     const iter = stateFromStoresArray[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
-      class R {
-        constructor() {
-          return closure_2.reduce((acc, userId) => {
-            user = user.getUser(userId.userId);
-            if (null != user) {
-              acc[userId.userId] = user;
-            }
-            return acc;
-          }, {});
-        }
-      }
+      let tmp23 = nextResult;
       let tmp24 = stateFromStoresObject[nextResult.userId];
       let obj4 = tmp24;
       if (null != tmp24) {
-        class R {
-          constructor() {
-            return closure_2.reduce((acc, userId) => {
-              user = user.getUser(userId.userId);
-              if (null != user) {
-                acc[userId.userId] = user;
-              }
-              return acc;
-            }, {});
-          }
-        }
         let nick = tmp23.nick;
         let push = items3.push;
         if (nick == null) {
-          class R {
-            constructor() {
-              return closure_2.reduce((acc, userId) => {
-                user = user.getUser(userId.userId);
-                if (null != user) {
-                  acc[userId.userId] = user;
-                }
-                return acc;
-              }, {});
-            }
-          }
           let obj5 = require("UserUtils");
           nick = obj5.getName(obj4);
         }
@@ -169,8 +121,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     cResult[10] = stateFromStoresObject;
     cResult[11] = stateFromStoresArray;
     cResult[12] = items3;
+    tmp17 = items3;
   }
-  const fn = function c() {
+  const fn = function l() {
     const members = GuildMemberStore.getMembers(closure_0);
     let found = members;
     if (null != closure_1) {
@@ -185,7 +138,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = items4;
   tmp8 = items4;
   tmp7 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useGuildMembers(arg0, arg1) {
   let closure_0;
   let stateFromStoresArray;
   _require = arg0;
@@ -240,7 +193,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
 });
 let closure_8 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, cResult) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildRoleMembers(arg0, arg1, cResult) {
   let closure_0;
   let current;
   let ref;
@@ -252,7 +205,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, cResult)
   cResult = obj.c(8);
   react = react.useRef(cResult);
   if (cResult[0] !== cResult) {
-    const fn = function o() {
+    const fn = function n() {
       ref.current = current;
     };
     cResult[0] = cResult;
@@ -272,19 +225,26 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, cResult)
     }
     const effect1 = obj2.useEffect(tmp4, tmp5);
     if (cResult[6] !== arg1) {
-      const fn3 = function v(roles) {
-        roles = roles.roles;
-        return roles.includes(closure_1);
-      };
+      class R {
+        constructor(roles) {
+          roles = roles.roles;
+          return roles.includes(closure_1);
+        }
+      }
       cResult[6] = arg1;
-      cResult[7] = fn3;
-      tmp7 = fn3;
+      cResult[7] = R;
+      tmp7 = R;
     } else {
-      tmp7 = cResult[7];
+      class R {
+        constructor(roles) {
+          roles = roles.roles;
+          return roles.includes(closure_1);
+        }
+      }
     }
     return closure_8(arg0, tmp7);
   }
-  const fn2 = function l() {
+  const fn2 = function c() {
     const obj = GuildRoleMemberActionCreators;
     const membersForRole = obj.requestMembersForRole(closure_0, closure_1);
     membersForRole.catch(ref.current);
@@ -296,7 +256,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, cResult)
   cResult[5] = items;
   tmp5 = items;
   tmp4 = fn2;
-}) : ((arg0, arg1, cResult) => {
+}) : (function useGuildRoleMembers(arg0, arg1, cResult) {
   let ref;
   let closure_0 = arg0;
   let closure_1 = arg1;
@@ -318,7 +278,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, cResult)
   }, items1));
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQueryGuildMembers(arg0, arg1) {
   let closure_0;
   let ref;
   _require = arg0;
@@ -336,7 +296,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     }
     const effect = obj2.useEffect(tmp2, tmp3);
   }
-  const fn = function n() {
+  const fn = function o() {
     const obj = GuildUtilsDefault;
     const members = obj.requestMembers(closure_0, closure_1, 200);
     let current = "" === closure_1;
@@ -356,7 +316,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[3] = items;
   tmp3 = items;
   tmp2 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useQueryGuildMembers(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   const ref = react.useRef(false);

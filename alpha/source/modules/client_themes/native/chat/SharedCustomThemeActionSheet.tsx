@@ -1,33 +1,33 @@
-// Module ID: 11571
-// Function ID: 11572
+// Module ID: 11634
+// Function ID: 11635
 // Name: SharedCustomThemeActionSheet
-// Dependencies: [32, 19, 17, 4540, 1085, 1379, 21, 4896, 587, 558, 576, 1252, 11572, 4732, 8091, 6651, 1126, 2751, 4892, 5601, 6652, 504, 4534, 6941, 6688, 1188, 1239, 2]
+// Dependencies: [32, 19, 17, 4732, 1085, 1391, 21, 5090, 587, 558, 576, 1264, 11635, 4926, 5258, 6828, 1126, 2795, 5086, 5375, 6829, 504, 4726, 7130, 6865, 1200, 1251, 2]
 
-// Module 11571 (SharedCustomThemeActionSheet)
+// Module 11634 (SharedCustomThemeActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1188 */;
-import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4534 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 4732 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6688 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 6941 */;
-import UserSettingsActionCreators from "UserSettingsActionCreators" /* 8091 */;
-import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 11572 */;
+import native from "native" /* 1200 */;
+import ClientThemesUtils from "ClientThemesUtils" /* 1251 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4726 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 4926 */;
+import UserSettingsActionCreators from "UserSettingsActionCreators" /* 5258 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6865 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7130 */;
+import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 11635 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import "react";
 import react from "react" /* 19 */;
-import SubscriptionStore from "SubscriptionStore" /* 4540 */;
+import SubscriptionStore from "SubscriptionStore" /* 4732 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, _require, clearPreviewThemeResult, closeActionSheetResult, closure_7, flag, importDefault, obj1, onPressApply, previewCustomThemeResult, refreshThemeResult, saveClientThemeResult, tmp14, tmp17, tmp3, tmp6Result, tmp8, tmp9, trackResult, updateCustomThemeResult;
+let BottomSheet, _require, baseTheme, closure_7, importDefault;
 
 let closure_12;
 let hasOwnProperty;
@@ -35,7 +35,7 @@ let map1;
 let metroImportDefault;
 let metroRequire;
 let obj2;
-const f108347 = (item) => "#" + item;
+const f108750 = (item) => "#" + item;
 ({ useEffect: hasOwnProperty, useLayoutEffect: metroRequire, useRef: metroImportDefault } = react);
 const View = react_native.View;
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -61,7 +61,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   let tmp11;
   let tmp18;
   let tmp19;
-  let tmp53;
+  let tmp55;
   let tmp6;
   let tmp = sharedClientTheme;
   let tmp2 = customUserThemeSettings;
@@ -74,7 +74,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   if (cResult[0] !== sharedClientTheme) {
     let tmp7;
     if (undefined !== sharedClientTheme) {
-      let obj4 = { colors: colors.map(f108347), gradientColorStops: [], gradientAngle: null, baseMix: null };
+      let obj4 = { colors: colors.map(f108750), gradientColorStops: [], gradientAngle: null, baseMix: null };
       colors = sharedClientTheme.colors;
       ({ gradient_angle: obj2.gradientAngle, base_mix: obj2.baseMix } = sharedClientTheme);
       tmp7 = obj4;
@@ -88,7 +88,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   let obj3 = first1;
   [first, _slicedToArray] = first1.useState(tmp6);
   if (cResult[2] !== sharedClientTheme) {
-    let baseTheme;
+    baseTheme = undefined;
     if (undefined !== sharedClientTheme) {
       const tmpResult = tmp(tmp2[26]);
       baseTheme = tmpResult.getBaseTheme(sharedClientTheme.base_theme);
@@ -109,31 +109,25 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   if (cResult[4] !== sharedClientTheme) {
     class M {
       constructor() {
-        tmp2 = sharedClientTheme;
-        tmp3 = undefined !== sharedClientTheme;
-        tmp4 = undefined;
-        tmp = closure_3;
-        if (tmp3) {
-          obj = { colors: null, gradientColorStops: null, gradientAngle: null, baseMix: null };
+        let colors;
+        let tmp4;
+        const tmp = closure_3;
+        if (undefined !== sharedClientTheme) {
+          const obj = { colors: colors.map(f108750), gradientColorStops: [], gradientAngle: null, baseMix: null };
           colors = tmp2.colors;
-          obj.colors = colors.map(() => { /* body not rendered: F108347 */ });
-          obj.gradientColorStops = [];
-          ({ gradient_angle: obj.gradientAngle, base_mix: obj.baseMix } = tmp2);
+          ({ gradient_angle: obj.gradientAngle, base_mix: obj.baseMix } = sharedClientTheme);
           tmp4 = obj;
         }
-        tmpResult = tmp(tmp4);
+        tmp(tmp4);
         baseTheme = undefined;
-        tmp6 = closure_5;
-        if (tmp3) {
-          tmp8 = closure_0;
-          tmp9 = closure_2;
-          obj2 = closure_0(closure_2[26]);
+        const tmp6 = closure_5;
+        if (undefined !== sharedClientTheme) {
+          const obj2 = ClientThemesUtils;
           baseTheme = obj2.getBaseTheme(tmp2.base_theme);
         }
-        tmp6Result = tmp6(baseTheme);
-        obj3 = closure_1(closure_2[11]);
-        trackResult = obj3.track(AnalyticEvents.CUSTOM_THEME_SHARE_PREVIEWED, {});
-        return;
+        tmp6(baseTheme);
+        const obj3 = AnalyticsUtilsDefault;
+        obj3.track(AnalyticEvents.CUSTOM_THEME_SHARE_PREVIEWED, {});
       }
     }
     const items = [sharedClientTheme];
@@ -145,31 +139,25 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   } else {
     class M {
       constructor() {
-        tmp2 = sharedClientTheme;
-        tmp3 = undefined !== sharedClientTheme;
-        tmp4 = undefined;
-        tmp = closure_3;
-        if (tmp3) {
-          obj = { colors: null, gradientColorStops: null, gradientAngle: null, baseMix: null };
+        let colors;
+        let tmp4;
+        const tmp = closure_3;
+        if (undefined !== sharedClientTheme) {
+          const obj = { colors: colors.map(f108750), gradientColorStops: [], gradientAngle: null, baseMix: null };
           colors = tmp2.colors;
-          obj.colors = colors.map(() => { /* body not rendered: F108347 */ });
-          obj.gradientColorStops = [];
-          ({ gradient_angle: obj.gradientAngle, base_mix: obj.baseMix } = tmp2);
+          ({ gradient_angle: obj.gradientAngle, base_mix: obj.baseMix } = sharedClientTheme);
           tmp4 = obj;
         }
-        tmpResult = tmp(tmp4);
+        tmp(tmp4);
         baseTheme = undefined;
-        tmp6 = closure_5;
-        if (tmp3) {
-          tmp8 = closure_0;
-          tmp9 = closure_2;
-          obj2 = closure_0(closure_2[26]);
+        const tmp6 = closure_5;
+        if (undefined !== sharedClientTheme) {
+          const obj2 = ClientThemesUtils;
           baseTheme = obj2.getBaseTheme(tmp2.base_theme);
         }
-        tmp6Result = tmp6(baseTheme);
-        obj3 = closure_1(closure_2[11]);
-        trackResult = obj3.track(AnalyticEvents.CUSTOM_THEME_SHARE_PREVIEWED, {});
-        return;
+        tmp6(baseTheme);
+        const obj3 = AnalyticsUtilsDefault;
+        obj3.track(AnalyticEvents.CUSTOM_THEME_SHARE_PREVIEWED, {});
       }
     }
     tmp19 = cResult[6];
@@ -182,39 +170,32 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     let tmp28;
     class M {
       constructor() {
-        tmp2 = sharedClientTheme;
-        tmp3 = undefined !== sharedClientTheme;
-        tmp4 = undefined;
-        tmp = closure_3;
-        if (tmp3) {
-          obj = { colors: null, gradientColorStops: null, gradientAngle: null, baseMix: null };
+        let colors;
+        let tmp4;
+        const tmp = closure_3;
+        if (undefined !== sharedClientTheme) {
+          const obj = { colors: colors.map(f108750), gradientColorStops: [], gradientAngle: null, baseMix: null };
           colors = tmp2.colors;
-          obj.colors = colors.map(() => { /* body not rendered: F108347 */ });
-          obj.gradientColorStops = [];
-          ({ gradient_angle: obj.gradientAngle, base_mix: obj.baseMix } = tmp2);
+          ({ gradient_angle: obj.gradientAngle, base_mix: obj.baseMix } = sharedClientTheme);
           tmp4 = obj;
         }
-        tmpResult = tmp(tmp4);
+        tmp(tmp4);
         baseTheme = undefined;
-        tmp6 = closure_5;
-        if (tmp3) {
-          tmp8 = closure_0;
-          tmp9 = closure_2;
-          obj2 = closure_0(closure_2[26]);
+        const tmp6 = closure_5;
+        if (undefined !== sharedClientTheme) {
+          const obj2 = ClientThemesUtils;
           baseTheme = obj2.getBaseTheme(tmp2.base_theme);
         }
-        tmp6Result = tmp6(baseTheme);
-        obj3 = closure_1(closure_2[11]);
-        trackResult = obj3.track(AnalyticEvents.CUSTOM_THEME_SHARE_PREVIEWED, {});
-        return;
+        tmp6(baseTheme);
+        const obj3 = AnalyticsUtilsDefault;
+        obj3.track(AnalyticEvents.CUSTOM_THEME_SHARE_PREVIEWED, {});
       }
     }
     closure_5(H, items5);
     if (cResult[11] !== first2) {
       class I {
         constructor() {
-          closure_8.current = !closure_6;
-          return;
+          ref.current = !first2;
         }
       }
       const items1 = [first2];
@@ -226,8 +207,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     } else {
       class I {
         constructor() {
-          closure_8.current = !closure_6;
-          return;
+          ref.current = !first2;
         }
       }
       tmp24 = cResult[13];
@@ -237,7 +217,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
       class N {
         constructor() {
-          return () => { /* body not rendered: F141684 */ };
+          return () => {
+            if (ref.current) {
+              const obj = sharedClientTheme(first[12]);
+              obj.clearPreviewTheme();
+              const obj2 = sharedClientTheme(first[13]);
+              obj2.refreshTheme();
+            }
+          };
         }
       }
       const items2 = [ref];
@@ -248,7 +235,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     } else {
       class N {
         constructor() {
-          return () => { /* body not rendered: F141684 */ };
+          return () => {
+            if (ref.current) {
+              const obj = sharedClientTheme(first[12]);
+              obj.clearPreviewTheme();
+              const obj2 = sharedClientTheme(first[13]);
+              obj2.refreshTheme();
+            }
+          };
         }
       }
       tmp29 = cResult[15];
@@ -256,456 +250,310 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     closure_5(tmp28, tmp29);
     if (cResult[16] === first1) {
       let tmp32;
-      let tmp33;
+      let tmp34;
+      let tmp37;
       class N {
         constructor() {
-          return () => { /* body not rendered: F141684 */ };
+          return () => {
+            if (ref.current) {
+              const obj = sharedClientTheme(first[12]);
+              obj.clearPreviewTheme();
+              const obj2 = sharedClientTheme(first[13]);
+              obj2.refreshTheme();
+            }
+          };
         }
       }
       const _Symbol2 = Symbol;
       if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-        class Q {
+        class N {
           constructor() {
-            if (null !== closure_1.current) {
-              tmp2 = closure_0;
-              tmp3 = closure_2;
-              obj = closure_0(closure_2[12]);
-              clearPreviewThemeResult = obj.clearPreviewTheme();
-              obj2 = closure_0(closure_2[13]);
-              refreshThemeResult = obj2.refreshTheme();
-              current = tmp.current;
-              closeActionSheetResult = current.closeActionSheet();
-            }
-            return;
+            return () => {
+              if (ref.current) {
+                const obj = sharedClientTheme(first[12]);
+                obj.clearPreviewTheme();
+                const obj2 = sharedClientTheme(first[13]);
+                obj2.refreshTheme();
+              }
+            };
           }
         }
-        cResult[19] = Q;
-        tmp32 = Q;
+        cResult[19] = tmp33;
+        tmp32 = tmp33;
       } else {
-        class Q {
+        class N {
           constructor() {
-            if (null !== closure_1.current) {
-              tmp2 = closure_0;
-              tmp3 = closure_2;
-              obj = closure_0(closure_2[12]);
-              clearPreviewThemeResult = obj.clearPreviewTheme();
-              obj2 = closure_0(closure_2[13]);
-              refreshThemeResult = obj2.refreshTheme();
-              current = tmp.current;
-              closeActionSheetResult = current.closeActionSheet();
-            }
-            return;
+            return () => {
+              if (ref.current) {
+                const obj = sharedClientTheme(first[12]);
+                obj.clearPreviewTheme();
+                const obj2 = sharedClientTheme(first[13]);
+                obj2.refreshTheme();
+              }
+            };
           }
         }
       }
       const _Symbol3 = Symbol;
       if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-        class Q {
+        class N {
           constructor() {
-            if (null !== closure_1.current) {
-              tmp2 = closure_0;
-              tmp3 = closure_2;
-              obj = closure_0(closure_2[12]);
-              clearPreviewThemeResult = obj.clearPreviewTheme();
-              obj2 = closure_0(closure_2[13]);
-              refreshThemeResult = obj2.refreshTheme();
-              current = tmp.current;
-              closeActionSheetResult = current.closeActionSheet();
-            }
-            return;
+            return () => {
+              if (ref.current) {
+                const obj = sharedClientTheme(first[12]);
+                obj.clearPreviewTheme();
+                const obj2 = sharedClientTheme(first[13]);
+                obj2.refreshTheme();
+              }
+            };
           }
         }
-        let obj5 = { title: intl.string(require("module_2751")["3ej1LT"]) };
+        let obj5 = { title: intl.string(require("module_2795")["3ej1LT"]) };
         const BottomSheetTitleHeader = tmp(tmp2[15]).BottomSheetTitleHeader;
         intl = tmp(tmp2[16]).intl;
-        const tmp35 = closure_12(BottomSheetTitleHeader, obj5);
-        cResult[20] = tmp35;
-        tmp33 = tmp35;
+        const tmp36 = closure_12(BottomSheetTitleHeader, obj5);
+        cResult[20] = tmp36;
+        tmp34 = tmp36;
       } else {
-        class Q {
+        class N {
           constructor() {
-            if (null !== closure_1.current) {
-              tmp2 = closure_0;
-              tmp3 = closure_2;
-              obj = closure_0(closure_2[12]);
-              clearPreviewThemeResult = obj.clearPreviewTheme();
-              obj2 = closure_0(closure_2[13]);
-              refreshThemeResult = obj2.refreshTheme();
-              current = tmp.current;
-              closeActionSheetResult = current.closeActionSheet();
-            }
-            return;
+            return () => {
+              if (ref.current) {
+                const obj = sharedClientTheme(first[12]);
+                obj.clearPreviewTheme();
+                const obj2 = sharedClientTheme(first[13]);
+                obj2.refreshTheme();
+              }
+            };
           }
         }
       }
       const _Symbol4 = Symbol;
       ({ contentWrapper, centeredText } = tmp4);
       if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-        class Q {
+        class N {
           constructor() {
-            if (null !== closure_1.current) {
-              tmp2 = closure_0;
-              tmp3 = closure_2;
-              obj = closure_0(closure_2[12]);
-              clearPreviewThemeResult = obj.clearPreviewTheme();
-              obj2 = closure_0(closure_2[13]);
-              refreshThemeResult = obj2.refreshTheme();
-              current = tmp.current;
-              closeActionSheetResult = current.closeActionSheet();
-            }
-            return;
+            return () => {
+              if (ref.current) {
+                const obj = sharedClientTheme(first[12]);
+                obj.clearPreviewTheme();
+                const obj2 = sharedClientTheme(first[13]);
+                obj2.refreshTheme();
+              }
+            };
           }
         }
-        cResult[21] = obj6.string(require("module_2751").qZMUoL);
-        const stringResult = obj6.string(require("module_2751").qZMUoL);
+        const stringResult = obj6.string(require("module_2795").qZMUoL);
+        cResult[21] = stringResult;
+        tmp37 = stringResult;
       } else {
-        class Q {
+        class N {
           constructor() {
-            if (null !== closure_1.current) {
-              tmp2 = closure_0;
-              tmp3 = closure_2;
-              obj = closure_0(closure_2[12]);
-              clearPreviewThemeResult = obj.clearPreviewTheme();
-              obj2 = closure_0(closure_2[13]);
-              refreshThemeResult = obj2.refreshTheme();
-              current = tmp.current;
-              closeActionSheetResult = current.closeActionSheet();
-            }
-            return;
+            return () => {
+              if (ref.current) {
+                const obj = sharedClientTheme(first[12]);
+                obj.clearPreviewTheme();
+                const obj2 = sharedClientTheme(first[13]);
+                obj2.refreshTheme();
+              }
+            };
           }
         }
       }
-      class F {
-        constructor() {
-          tmp = closure_2;
-          tmp2 = undefined !== closure_2;
-          if (tmp2) {
-            tmp3 = closure_4;
-            tmp2 = undefined !== closure_4;
+      if (cResult[22] !== tmp4.centeredText) {
+        class N {
+          constructor() {
+            return () => {
+              if (ref.current) {
+                const obj = sharedClientTheme(first[12]);
+                obj.clearPreviewTheme();
+                const obj2 = sharedClientTheme(first[13]);
+                obj2.refreshTheme();
+              }
+            };
           }
-          if (tmp2) {
-            tmp4 = closure_1;
-            tmp5 = null;
-            tmp2 = null !== closure_1.current;
+        }
+        const obj7 = { variant: "heading-md/medium", style: centeredText, children: tmp37 };
+        cResult[22] = tmp4.centeredText;
+        cResult[23] = closure_12(tmp(tmp2[18]).Text, obj7);
+        const tmp41 = closure_12(tmp(tmp2[18]).Text, obj7);
+      } else {
+        class N {
+          constructor() {
+            return () => {
+              if (ref.current) {
+                const obj = sharedClientTheme(first[12]);
+                obj.clearPreviewTheme();
+                const obj2 = sharedClientTheme(first[13]);
+                obj2.refreshTheme();
+              }
+            };
           }
-          if (tmp2) {
-            tmp6 = closure_7;
-            flag = true;
-            tmp7 = closure_7(true);
-            tmp8 = closure_0;
-            tmp9 = closure_2;
-            obj = closure_0(closure_2[12]);
-            tmp10 = closure_4;
-            updateCustomThemeResult = obj.updateCustomTheme(tmp, closure_4);
-            obj2 = closure_0(closure_2[14]);
-            obj1 = { customUserThemeSettings: null, theme: null };
-            obj1.customUserThemeSettings = tmp;
-            obj1.theme = closure_4;
-            saveClientThemeResult = obj2.saveClientTheme(obj1);
-            obj4 = closure_0(closure_2[12]);
-            clearPreviewThemeResult = obj4.clearPreviewTheme();
-            tmp14 = closure_1;
-            obj5 = closure_1(closure_2[11]);
-            tmp15 = AnalyticEvents;
-            trackResult = obj5.track(AnalyticEvents.CUSTOM_THEME_SHARE_APPLIED, {});
-            tmp17 = closure_1;
-            current = closure_1.current;
-            closeActionSheetResult = current.closeActionSheet();
-          }
-          return;
         }
       }
       if (cResult[24] === tmp4.contentWrapper) {
-        class Q {
+        let tmp49;
+        class N {
           constructor() {
-            if (null !== closure_1.current) {
-              tmp2 = closure_0;
-              tmp3 = closure_2;
-              obj = closure_0(closure_2[12]);
-              clearPreviewThemeResult = obj.clearPreviewTheme();
-              obj2 = closure_0(closure_2[13]);
-              refreshThemeResult = obj2.refreshTheme();
-              current = tmp.current;
-              closeActionSheetResult = current.closeActionSheet();
-            }
-            return;
+            return () => {
+              if (ref.current) {
+                const obj = sharedClientTheme(first[12]);
+                obj.clearPreviewTheme();
+                const obj2 = sharedClientTheme(first[13]);
+                obj2.refreshTheme();
+              }
+            };
           }
         }
         if (cResult[27] !== tmp31) {
-          class Q {
+          class N {
             constructor() {
-              if (null !== closure_1.current) {
-                tmp2 = closure_0;
-                tmp3 = closure_2;
-                obj = closure_0(closure_2[12]);
-                clearPreviewThemeResult = obj.clearPreviewTheme();
-                obj2 = closure_0(closure_2[13]);
-                refreshThemeResult = obj2.refreshTheme();
-                current = tmp.current;
-                closeActionSheetResult = current.closeActionSheet();
-              }
-              return;
+              return () => {
+                if (ref.current) {
+                  const obj = sharedClientTheme(first[12]);
+                  obj.clearPreviewTheme();
+                  const obj2 = sharedClientTheme(first[13]);
+                  obj2.refreshTheme();
+                }
+              };
             }
           }
-          const obj7 = { onPressApply: tmp31 };
+          const obj8 = { onPressApply: tmp31 };
           cResult[27] = tmp31;
-          cResult[28] = closure_12(closure_15, obj7);
-          const tmp46 = closure_12(closure_15, obj7);
+          cResult[28] = closure_12(closure_15, obj8);
+          const tmp48 = closure_12(closure_15, obj8);
         } else {
-          class Q {
+          class N {
             constructor() {
-              if (null !== closure_1.current) {
-                tmp2 = closure_0;
-                tmp3 = closure_2;
-                obj = closure_0(closure_2[12]);
-                clearPreviewThemeResult = obj.clearPreviewTheme();
-                obj2 = closure_0(closure_2[13]);
-                refreshThemeResult = obj2.refreshTheme();
-                current = tmp.current;
-                closeActionSheetResult = current.closeActionSheet();
-              }
-              return;
+              return () => {
+                if (ref.current) {
+                  const obj = sharedClientTheme(first[12]);
+                  obj.clearPreviewTheme();
+                  const obj2 = sharedClientTheme(first[13]);
+                  obj2.refreshTheme();
+                }
+              };
             }
           }
         }
         const _Symbol5 = Symbol;
         if (cResult[29] === Symbol.for("react.memo_cache_sentinel")) {
-          class Q {
+          class N {
             constructor() {
-              if (null !== closure_1.current) {
-                tmp2 = closure_0;
-                tmp3 = closure_2;
-                obj = closure_0(closure_2[12]);
-                clearPreviewThemeResult = obj.clearPreviewTheme();
-                obj2 = closure_0(closure_2[13]);
-                refreshThemeResult = obj2.refreshTheme();
-                current = tmp.current;
-                closeActionSheetResult = current.closeActionSheet();
-              }
-              return;
+              return () => {
+                if (ref.current) {
+                  const obj = sharedClientTheme(first[12]);
+                  obj.clearPreviewTheme();
+                  const obj2 = sharedClientTheme(first[13]);
+                  obj2.refreshTheme();
+                }
+              };
             }
           }
-          const obj8 = { text: intl2.string(tmp(tmp2[16]).t["13/7kX"]), onPress: tmp32, variant: "secondary" };
+          const obj9 = { text: intl2.string(tmp(tmp2[16]).t["13/7kX"]), onPress: tmp32, variant: "secondary" };
           const Button = tmp(tmp2[19]).Button;
           intl2 = tmp(tmp2[16]).intl;
-          cResult[29] = closure_12(Button, obj8);
-          const tmp48 = closure_12(Button, obj8);
+          const tmp50 = closure_12(Button, obj9);
+          cResult[29] = tmp50;
+          tmp49 = tmp50;
         } else {
-          class Q {
+          class N {
             constructor() {
-              if (null !== closure_1.current) {
-                tmp2 = closure_0;
-                tmp3 = closure_2;
-                obj = closure_0(closure_2[12]);
-                clearPreviewThemeResult = obj.clearPreviewTheme();
-                obj2 = closure_0(closure_2[13]);
-                refreshThemeResult = obj2.refreshTheme();
-                current = tmp.current;
-                closeActionSheetResult = current.closeActionSheet();
-              }
-              return;
+              return () => {
+                if (ref.current) {
+                  const obj = sharedClientTheme(first[12]);
+                  obj.clearPreviewTheme();
+                  const obj2 = sharedClientTheme(first[13]);
+                  obj2.refreshTheme();
+                }
+              };
             }
           }
         }
         if (cResult[30] === tmp4.ctaContainer) {
-          class Q {
+          class N {
             constructor() {
-              if (null !== closure_1.current) {
-                tmp2 = closure_0;
-                tmp3 = closure_2;
-                obj = closure_0(closure_2[12]);
-                clearPreviewThemeResult = obj.clearPreviewTheme();
-                obj2 = closure_0(closure_2[13]);
-                refreshThemeResult = obj2.refreshTheme();
-                current = tmp.current;
-                closeActionSheetResult = current.closeActionSheet();
-              }
-              return;
-            }
-          }
-          if (cResult[33] === tmp40) {
-            class Q {
-              constructor() {
-                if (null !== closure_1.current) {
-                  tmp2 = closure_0;
-                  tmp3 = closure_2;
-                  obj = closure_0(closure_2[12]);
-                  clearPreviewThemeResult = obj.clearPreviewTheme();
-                  obj2 = closure_0(closure_2[13]);
-                  refreshThemeResult = obj2.refreshTheme();
-                  current = tmp.current;
-                  closeActionSheetResult = current.closeActionSheet();
+              return () => {
+                if (ref.current) {
+                  const obj = sharedClientTheme(first[12]);
+                  obj.clearPreviewTheme();
+                  const obj2 = sharedClientTheme(first[13]);
+                  obj2.refreshTheme();
                 }
-                return;
-              }
-            }
-            return tmp53;
-          }
-          const obj9 = { ref: tmp5, backdropOpacity: 0, children: items3 };
-          items3 = [tmp33, tmp40, tmp49];
-          const tmp55 = closure_13(tmp(tmp2[20]).BottomSheet, obj9);
-          class F {
-            constructor() {
-              tmp = closure_2;
-              tmp2 = undefined !== closure_2;
-              if (tmp2) {
-                tmp3 = closure_4;
-                tmp2 = undefined !== closure_4;
-              }
-              if (tmp2) {
-                tmp4 = closure_1;
-                tmp5 = null;
-                tmp2 = null !== closure_1.current;
-              }
-              if (tmp2) {
-                tmp6 = closure_7;
-                flag = true;
-                tmp7 = closure_7(true);
-                tmp8 = closure_0;
-                tmp9 = closure_2;
-                obj = closure_0(closure_2[12]);
-                tmp10 = closure_4;
-                updateCustomThemeResult = obj.updateCustomTheme(tmp, closure_4);
-                obj2 = closure_0(closure_2[14]);
-                obj1 = { customUserThemeSettings: null, theme: null };
-                obj1.customUserThemeSettings = tmp;
-                obj1.theme = closure_4;
-                saveClientThemeResult = obj2.saveClientTheme(obj1);
-                obj4 = closure_0(closure_2[12]);
-                clearPreviewThemeResult = obj4.clearPreviewTheme();
-                tmp14 = closure_1;
-                obj5 = closure_1(closure_2[11]);
-                tmp15 = AnalyticEvents;
-                trackResult = obj5.track(AnalyticEvents.CUSTOM_THEME_SHARE_APPLIED, {});
-                tmp17 = closure_1;
-                current = closure_1.current;
-                closeActionSheetResult = current.closeActionSheet();
-              }
-              return;
+              };
             }
           }
-          cResult[34] = tmp49;
-          cResult[35] = tmp55;
-          tmp53 = tmp55;
+          if (cResult[33] === tmp42) {
+            class N {
+              constructor() {
+                return () => {
+                  if (ref.current) {
+                    const obj = sharedClientTheme(first[12]);
+                    obj.clearPreviewTheme();
+                    const obj2 = sharedClientTheme(first[13]);
+                    obj2.refreshTheme();
+                  }
+                };
+              }
+            }
+            return tmp55;
+          }
+          const obj10 = { ref: tmp5, backdropOpacity: 0, children: items3 };
+          items3 = [tmp34, tmp42, tmp51];
+          const tmp57 = closure_13(tmp(tmp2[20]).BottomSheet, obj10);
+          cResult[33] = tmp42;
+          cResult[34] = tmp51;
+          cResult[35] = tmp57;
+          tmp55 = tmp57;
         }
-        const obj10 = { style: tmp4.ctaContainer, children: items4 };
-        items4 = [tmp44, ];
-        class F {
-          constructor() {
-            tmp = closure_2;
-            tmp2 = undefined !== closure_2;
-            if (tmp2) {
-              tmp3 = closure_4;
-              tmp2 = undefined !== closure_4;
-            }
-            if (tmp2) {
-              tmp4 = closure_1;
-              tmp5 = null;
-              tmp2 = null !== closure_1.current;
-            }
-            if (tmp2) {
-              tmp6 = closure_7;
-              flag = true;
-              tmp7 = closure_7(true);
-              tmp8 = closure_0;
-              tmp9 = closure_2;
-              obj = closure_0(closure_2[12]);
-              tmp10 = closure_4;
-              updateCustomThemeResult = obj.updateCustomTheme(tmp, closure_4);
-              obj2 = closure_0(closure_2[14]);
-              obj1 = { customUserThemeSettings: null, theme: null };
-              obj1.customUserThemeSettings = tmp;
-              obj1.theme = closure_4;
-              saveClientThemeResult = obj2.saveClientTheme(obj1);
-              obj4 = closure_0(closure_2[12]);
-              clearPreviewThemeResult = obj4.clearPreviewTheme();
-              tmp14 = closure_1;
-              obj5 = closure_1(closure_2[11]);
-              tmp15 = AnalyticEvents;
-              trackResult = obj5.track(AnalyticEvents.CUSTOM_THEME_SHARE_APPLIED, {});
-              tmp17 = closure_1;
-              current = closure_1.current;
-              closeActionSheetResult = current.closeActionSheet();
-            }
-            return;
-          }
-        }
+        const obj11 = { style: tmp4.ctaContainer, children: items4 };
+        items4 = [tmp46, tmp49];
         cResult[30] = tmp4.ctaContainer;
-        cResult[31] = tmp44;
-        cResult[32] = closure_13(ref, obj10);
-        const tmp52 = closure_13(ref, obj10);
+        cResult[31] = tmp46;
+        cResult[32] = closure_13(ref, obj11);
+        const tmp54 = closure_13(ref, obj11);
       }
-      const obj11 = { style: contentWrapper, children: tmp39 };
+      const obj12 = { style: contentWrapper, children: tmp40 };
       cResult[24] = tmp4.contentWrapper;
-      cResult[25] = tmp39;
-      cResult[26] = closure_12(ref, obj11);
-      const tmp43 = closure_12(ref, obj11);
+      cResult[25] = tmp40;
+      cResult[26] = closure_12(ref, obj12);
+      const tmp45 = closure_12(ref, obj12);
     }
-    class F {
-      constructor() {
-        tmp = closure_2;
-        tmp2 = undefined !== closure_2;
-        if (tmp2) {
-          tmp3 = closure_4;
-          tmp2 = undefined !== closure_4;
-        }
-        if (tmp2) {
-          tmp4 = closure_1;
-          tmp5 = null;
-          tmp2 = null !== closure_1.current;
-        }
-        if (tmp2) {
-          tmp6 = closure_7;
-          flag = true;
-          tmp7 = closure_7(true);
-          tmp8 = closure_0;
-          tmp9 = closure_2;
-          obj = closure_0(closure_2[12]);
-          tmp10 = closure_4;
-          updateCustomThemeResult = obj.updateCustomTheme(tmp, closure_4);
-          obj2 = closure_0(closure_2[14]);
-          obj1 = { customUserThemeSettings: null, theme: null };
-          obj1.customUserThemeSettings = tmp;
-          obj1.theme = closure_4;
-          saveClientThemeResult = obj2.saveClientTheme(obj1);
-          obj4 = closure_0(closure_2[12]);
-          clearPreviewThemeResult = obj4.clearPreviewTheme();
-          tmp14 = closure_1;
-          obj5 = closure_1(closure_2[11]);
-          tmp15 = AnalyticEvents;
-          trackResult = obj5.track(AnalyticEvents.CUSTOM_THEME_SHARE_APPLIED, {});
-          tmp17 = closure_1;
-          current = closure_1.current;
-          closeActionSheetResult = current.closeActionSheet();
-        }
-        return;
+    function onPressApply() {
+      const tmp2 = undefined !== customUserThemeSettings && undefined !== first1 && null !== ref.current;
+      if (tmp2) {
+        closure_7(true);
+        const obj = CustomThemeMobileActionCreators;
+        obj.updateCustomTheme(customUserThemeSettings, first1);
+        const obj3 = { customUserThemeSettings, theme: first1 };
+        const obj2 = UserSettingsActionCreators;
+        obj2.saveClientTheme(obj3);
+        const obj4 = CustomThemeMobileActionCreators;
+        obj4.clearPreviewTheme();
+        const obj5 = AnalyticsUtilsDefault;
+        obj5.track(AnalyticEvents.CUSTOM_THEME_SHARE_APPLIED, {});
+        const current = ref.current;
+        current.closeActionSheet();
       }
     }
     cResult[16] = first1;
     cResult[17] = customUserThemeSettings;
-    cResult[18] = F;
+    cResult[18] = onPressApply;
   }
   class H {
     constructor() {
-      tmp2 = undefined !== closure_2;
-      tmp = closure_2;
+      let tmp2 = undefined !== first;
+      const tmp = first;
       if (tmp2) {
-        tmp3 = closure_4;
-        tmp2 = undefined !== closure_4;
+        tmp2 = undefined !== first1;
       }
       if (tmp2) {
-        tmp4 = closure_0;
-        tmp5 = closure_2;
-        obj = closure_0(closure_2[12]);
-        obj1 = { baseTheme: null, customTheme: null };
-        tmp6 = closure_4;
-        obj1.baseTheme = closure_4;
-        obj1.customTheme = tmp;
-        previewCustomThemeResult = obj.previewCustomTheme(obj1);
-        obj3 = closure_0(closure_2[13]);
-        refreshThemeResult = obj3.refreshTheme();
+        const obj2 = { baseTheme: first1, customTheme: tmp };
+        const obj = CustomThemeMobileActionCreators;
+        obj.previewCustomTheme(obj2);
+        const obj3 = ThemeActionCreators;
+        obj3.refreshTheme();
       }
-      return;
     }
   }
   items5 = [customUserThemeSettings, first1];
@@ -733,13 +581,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   let tmp4;
   const useState = first1.useState;
   if (undefined !== sharedClientTheme) {
-    let obj4 = { colors: colors.map(f108347), gradientColorStops: [], gradientAngle: null, baseMix: null };
+    let obj4 = { colors: colors.map(f108750), gradientColorStops: [], gradientAngle: null, baseMix: null };
     colors = sharedClientTheme.colors;
     ({ gradient_angle: obj2.gradientAngle, base_mix: obj2.baseMix } = sharedClientTheme);
     tmp4 = obj4;
   }
   [first, _slicedToArray] = useState(tmp4);
-  let baseTheme;
+  baseTheme = undefined;
   const useState2 = obj.useState;
   if (undefined !== sharedClientTheme) {
     let obj3 = sharedClientTheme(customUserThemeSettings[26]);
@@ -758,13 +606,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     let tmp4;
     const tmp = closure_3;
     if (undefined !== sharedClientTheme) {
-      const obj = { colors: colors.map(f108347), gradientColorStops: [], gradientAngle: null, baseMix: null };
+      const obj = { colors: colors.map(f108750), gradientColorStops: [], gradientAngle: null, baseMix: null };
       colors = tmp2.colors;
       ({ gradient_angle: obj.gradientAngle, base_mix: obj.baseMix } = sharedClientTheme);
       tmp4 = obj;
     }
     tmp(tmp4);
-    let baseTheme;
+    baseTheme = undefined;
     const tmp6 = closure_5;
     if (undefined !== sharedClientTheme) {
       const obj2 = ClientThemesUtils;
@@ -804,12 +652,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   }, items3);
   let obj5 = { ref: tmp2, backdropOpacity: 0, children: items4 };
   BottomSheet = sharedClientTheme(customUserThemeSettings[20]).BottomSheet;
-  const obj6 = { title: intl.string(require("module_2751")["3ej1LT"]) };
+  const obj6 = { title: intl.string(require("module_2795")["3ej1LT"]) };
   const BottomSheetTitleHeader = sharedClientTheme(customUserThemeSettings[15]).BottomSheetTitleHeader;
   intl = sharedClientTheme(customUserThemeSettings[16]).intl;
   items4 = [closure_12(BottomSheetTitleHeader, obj6), , ];
   const obj7 = { style: tmp.contentWrapper, children: closure_12(Text, obj8) };
-  obj8 = { variant: "heading-md/medium", style: tmp.centeredText, children: intl2.string(require("module_2751").qZMUoL) };
+  obj8 = { variant: "heading-md/medium", style: tmp.centeredText, children: intl2.string(require("module_2795").qZMUoL) };
   Text = sharedClientTheme(customUserThemeSettings[18]).Text;
   intl2 = sharedClientTheme(customUserThemeSettings[16]).intl;
   items4[1] = closure_12(ref, obj7);
@@ -837,7 +685,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   items5[0] = closure_12(closure_15, obj10);
   const obj18 = {
     text: intl3.string(sharedClientTheme(customUserThemeSettings[16]).t["13/7kX"]),
-    onPress() {
+    onPress: function onPressBack() {
       if (null !== ref.current) {
         const obj = CustomThemeMobileActionCreators;
         obj.clearPreviewTheme();
@@ -856,7 +704,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   return closure_13(BottomSheet, obj5);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressApply) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function PrimaryActionButton(onPressApply) {
   let TIER_2;
   let nitroWheelButton;
   let premiumTypeSubscription;
@@ -887,16 +735,16 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressApply) 
   const obj3 = PremiumUtilsDefault;
   const premiumTypeFromSubscription = obj3.getPremiumTypeFromSubscription(stateFromStores);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function h() {
+    function onPressSubscribe() {
       let items;
       const obj = { premiumType: TIER_2.TIER_2, analyticsLocations: items, analyticsLocation: {} };
       items = [];
       const tmp = openPremiumPlanSelectionActionSheetDefault;
       items[0] = AnalyticsLocationDefault.SHARE_CUSTOM_CLIENT_THEME_EMBED;
       tmp(obj);
-    };
-    cResult[2] = fn2;
-    tmp10 = fn2;
+    }
+    cResult[2] = onPressSubscribe;
+    tmp10 = onPressSubscribe;
   } else {
     tmp10 = cResult[2];
   }
@@ -913,15 +761,13 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressApply) 
       tmp16 = cResult[3];
     }
     if (cResult[4] !== tmp4.nitroWheelButton) {
-      const fn3 = function f() {
-        let items;
-        const obj = { style: items };
-        items = [nitroWheelButton.nitroWheelButton];
+      const fn2 = function f() {
+        const obj = { style: nitroWheelButton.nitroWheelButton };
         return closure_12(native.NitroWheel, obj);
       };
       cResult[4] = tmp4.nitroWheelButton;
-      cResult[5] = fn3;
-      tmp18 = fn3;
+      cResult[5] = fn2;
+      tmp18 = fn2;
     } else {
       tmp18 = cResult[5];
     }
@@ -933,7 +779,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressApply) 
       tmp13 = tmp19;
     }
     const obj2 = { text: tmp16, onPress: tmp10, renderIcon: tmp18, style: tmp4.getNitroButton };
-    const tmp21 = closure_12(tmp(1188).ShinyButton, obj2);
+    const tmp21 = closure_12(tmp(1200).ShinyButton, obj2);
     cResult[6] = tmp4.getNitroButton;
     cResult[7] = tmp18;
     cResult[8] = tmp21;
@@ -951,7 +797,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressApply) 
     }
     if (cResult[10] !== onPressApply) {
       const obj4 = { text: tmp11, onPress: onPressApply, variant: "primary" };
-      const tmp15 = closure_12(tmp(5601).Button, obj4);
+      const tmp15 = closure_12(tmp(5375).Button, obj4);
       cResult[10] = onPressApply;
       cResult[11] = tmp15;
       tmp13 = tmp15;
@@ -960,7 +806,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressApply) 
     }
   }
   return tmp13;
-}) : ((onPressApply) => {
+}) : (function PrimaryActionButton(onPressApply) {
   let TIER_2;
   let intl;
   let intl2;
@@ -986,19 +832,17 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressApply) 
           tmp(obj);
         },
       renderIcon() {
-          let items;
-          const obj = { style: items };
-          items = [nitroWheelButton.nitroWheelButton];
+          const obj = { style: nitroWheelButton.nitroWheelButton };
           return closure_12(native.NitroWheel, obj);
         },
       style: tmp.getNitroButton
     };
-    const ShinyButton = tmp2(1188).ShinyButton;
+    const ShinyButton = tmp2(1200).ShinyButton;
     intl2 = tmp2(1126).intl;
     tmp6 = closure_12(ShinyButton, obj3);
   } else {
     const obj4 = { text: intl.string(require("intl").t["1Qm822"]), onPress: onPressApply, variant: "primary" };
-    const Button = tmp2(5601).Button;
+    const Button = tmp2(5375).Button;
     intl = tmp2(1126).intl;
     tmp6 = closure_12(Button, obj4);
   }

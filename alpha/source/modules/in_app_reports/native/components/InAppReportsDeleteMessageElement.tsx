@@ -1,28 +1,29 @@
-// Module ID: 12733
-// Function ID: 12734
+// Module ID: 13401
+// Function ID: 13402
 // Name: InAppReportsDeleteMessageElement
-// Dependencies: [32, 19, 5116, 1085, 21, 558, 576, 504, 5076, 6978, 1126, 4853, 12728, 2]
+// Dependencies: [32, 19, 5428, 1085, 21, 558, 576, 504, 5105, 7167, 1126, 5047, 13397, 2]
 
-// Module 12733 (InAppReportsDeleteMessageElement)
+// Module 13401 (InAppReportsDeleteMessageElement)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5076 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6978 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5105 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7167 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 5116 */;
+import MessageStore from "MessageStore" /* 5428 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, message;
+let dependencyMap;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteMessageElement(message) {
   let first;
   let stateFromStores;
   let tmp11;
   let tmp12;
+  let tmp23;
   let tmp5;
   let tmp8;
   let tmp9;
@@ -57,37 +58,48 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   const tmpResult = message(504);
   stateFromStores = tmpResult.useStateFromStores(first, tmp8, tmp9);
   if (cResult[4] !== stateFromStores) {
-    const fn2 = function v() {
-      dependencyMap(stateFromStores);
-    };
+    class T {
+      constructor() {
+        dependencyMap(stateFromStores);
+      }
+    }
     const items2 = [stateFromStores];
     cResult[4] = stateFromStores;
-    cResult[5] = fn2;
+    cResult[5] = T;
     cResult[6] = items2;
     tmp12 = items2;
-    tmp11 = fn2;
+    tmp11 = T;
   } else {
-    tmp11 = cResult[5];
+    class T {
+      constructor() {
+        dependencyMap(stateFromStores);
+      }
+    }
     tmp12 = cResult[6];
   }
   const effect = obj2.useEffect(tmp11, tmp12);
   if (cResult[7] === message) {
-    let tmp14;
     let tmp17;
     let tmp16;
     let tmp15;
     let tmp21;
-    if (cResult[8] === reportId) {
-      tmp14 = cResult[9];
+    class T {
+      constructor() {
+        dependencyMap(stateFromStores);
+      }
     }
     const _Symbol = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+      class T {
+        constructor() {
+          dependencyMap(stateFromStores);
+        }
+      }
+      const stringResult = obj4.string(message(1126).t.c9BHL9);
       const intl = tmp(1126).intl;
-      const stringResult = intl.string(message(1126).t.c9BHL9);
+      const stringResult1 = intl.string(message(1126).t.AT2KSd);
       const intl2 = tmp(1126).intl;
-      const stringResult1 = intl2.string(message(1126).t.AT2KSd);
-      const intl3 = tmp(1126).intl;
-      const stringResult2 = intl3.string(message(1126).t.dK8S0w);
+      const stringResult2 = intl2.string(message(1126).t.dK8S0w);
       cResult[10] = stringResult;
       cResult[11] = stringResult1;
       cResult[12] = stringResult2;
@@ -95,32 +107,46 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
       tmp16 = stringResult1;
       tmp15 = stringResult;
     } else {
-      tmp15 = cResult[10];
+      class T {
+        constructor() {
+          dependencyMap(stateFromStores);
+        }
+      }
       tmp16 = cResult[11];
       tmp17 = cResult[12];
     }
     const _Symbol2 = Symbol;
     if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp23 = jsx(message(4853).TrashIcon, { color: "text-feedback-critical" });
-      cResult[13] = tmp23;
-      tmp21 = tmp23;
+      class T {
+        constructor() {
+          dependencyMap(stateFromStores);
+        }
+      }
+      const tmp22 = jsx(message(5047).TrashIcon, { color: "text-feedback-critical" });
+      cResult[13] = tmp22;
+      tmp21 = tmp22;
     } else {
-      tmp21 = cResult[13];
+      class T {
+        constructor() {
+          dependencyMap(stateFromStores);
+        }
+      }
     }
     if (cResult[14] === tmp14) {
-      let tmp24;
-      if (cResult[15] === tmp5) {
-        tmp24 = cResult[16];
+      class T {
+        constructor() {
+          dependencyMap(stateFromStores);
+        }
       }
-      return tmp24;
+      return tmp23;
     }
-    const tmp27 = jsx(reportId(12728), { title: tmp15, disabledTitle: tmp16, description: tmp17, disabled: tmp5, variant: "danger", onPress: tmp14, icon: tmp21 });
+    const tmp26 = jsx(reportId(13397), { title: tmp15, disabledTitle: tmp16, description: tmp17, disabled: tmp5, variant: "danger", onPress: tmp14, icon: tmp21 });
     cResult[14] = tmp14;
     cResult[15] = tmp5;
-    cResult[16] = tmp27;
-    tmp24 = tmp27;
+    cResult[16] = tmp26;
+    tmp23 = tmp26;
   }
-  class M {
+  class C {
     constructor() {
       dependencyMap(true);
       const obj = AppAnalyticsUtilsDefault;
@@ -132,9 +158,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   }
   cResult[7] = message;
   cResult[8] = reportId;
-  cResult[9] = M;
-  tmp14 = M;
-}) : ((message) => {
+  cResult[9] = C;
+}) : (function DeleteMessageElement(message) {
   let closure_2;
   message = message.message;
   const reportId = message.reportId;
@@ -159,7 +184,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     const obj3 = MessageActionCreatorsDefault;
     obj3.deleteMessage(message.getChannelId(), message.id);
   }, items3);
-  reportId(12728);
+  reportId(13397);
   const intl = message(1126).intl;
   const intl2 = message(1126).intl;
   const intl3 = message(1126).intl;

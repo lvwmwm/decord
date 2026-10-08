@@ -1,21 +1,21 @@
-// Module ID: 14387
-// Function ID: 14388
+// Module ID: 14613
+// Function ID: 14614
 // Name: RPCServer
-// Dependencies: [5, 5323, 1085, 12, 9065, 9059, 14361, 1252, 38, 9008, 1102, 2]
+// Dependencies: [5, 5635, 1085, 12, 11143, 11134, 14557, 1264, 38, 14556, 12374, 1102, 2]
 
-// Module 14387 (RPCServer)
+// Module 14613 (RPCServer)
 import _modDef12 from "module_12" /* 12 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Constants2 from "Constants" /* 5323 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 9008 */;
-import RPCErrorDefault from "RPCError" /* 9059 */;
-import transformUserDefault from "transformUser" /* 9065 */;
-import validateScopeDefault from "validateScope" /* 14361 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import Constants2 from "Constants" /* 5635 */;
+import RPCErrorDefault from "RPCError" /* 11134 */;
+import transformUserDefault from "transformUser" /* 11143 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 12374 */;
+import validateScopeDefault from "validateScope" /* 14557 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
-let c4, c5, dependencyMap, handler, importDefault;
+let c5, command, dependencyMap, importDefault;
 
 let c9;
 let hasOwnProperty;
@@ -82,50 +82,7 @@ class RPCServer {
     this.onDisconnect(abortController, arg1);
   }
   handleRequest(socket, arg1) {
-    let closure_2 = arg1;
-    let self = this;
-    let promise = new Promise(function(fn) {
-      let scope;
-      let str2;
-      if (null != closure_2.nonce) {
-        if ("" !== closure_2.nonce) {
-          const cmd = tmp.cmd;
-          if (null == self.commands[cmd]) {
-            const _HermesInternal = HermesInternal;
-            const self3 = this;
-            const self4 = this;
-            const obj2 = { errorCode: metroImportAll.INVALID_COMMAND };
-            const tmp14 = RPCErrorDefault;
-            const tmp142 = new tmp14(obj2, "Invalid command: " + closure_2.cmd);
-            throw tmp142;
-          } else if (validateScopeDefault(socket.authorization.scopes, self.commands[cmd].scope)) {
-            const obj3 = { command: cmd, scope, application_id: socket.application.id, socket_scope: str2.toString() };
-            const track = AnalyticsUtilsDefault.track;
-            const RPC_COMMAND_SENT = hasOwnProperty.RPC_COMMAND_SENT;
-            AnalyticsUtilsDefault;
-            if (typeof self.commands[cmd].scope === "object") {
-              const _JSON = JSON;
-              scope = JSON.stringify(tmp22.scope);
-            } else {
-              scope = tmp22.scope;
-            }
-            str2 = socket.authorization.scopes;
-            track(RPC_COMMAND_SENT, obj3);
-            fn(self.commands[cmd]);
-          } else {
-            self = this;
-            const self2 = this;
-            const obj = { errorCode: metroImportAll.INVALID_PERMISSIONS };
-            const tmp4 = new RPCErrorDefault(obj, "Not authenticated or invalid scope");
-            throw tmp4;
-          }
-        }
-      }
-      const obj4 = { errorCode: metroImportAll.INVALID_PAYLOAD };
-      const tmp20 = new RPCErrorDefault(obj4, "Payload requires a nonce");
-      throw tmp20;
-    });
-    const nextPromise = promise.then((result) => {
+    const f117702 = (result) => {
       let closure_0 = self(function*(arg0, value) {
         let closure_1;
         closure_0 = arg0;
@@ -200,10 +157,82 @@ class RPCServer {
         return closure_0(...arguments);
       });
       return promise;
+    };
+    let closure_2 = arg1;
+    let self = this;
+    let promise = new Promise(function(fn) {
+      let scope;
+      let str2;
+      if (null != closure_2.nonce) {
+        if ("" !== closure_2.nonce) {
+          const cmd = tmp.cmd;
+          if (null == self.commands[cmd]) {
+            const _HermesInternal = HermesInternal;
+            const self3 = this;
+            const self4 = this;
+            const obj2 = { errorCode: metroImportAll.INVALID_COMMAND };
+            const tmp15 = RPCErrorDefault;
+            const tmp152 = new tmp15(obj2, "Invalid command: " + closure_2.cmd);
+            throw tmp152;
+          } else if (validateScopeDefault(socket.authorization.scopes, self.commands[cmd].scope)) {
+            const obj3 = { command: cmd, scope, application_id: socket.application.id, socket_scope: str2.toString() };
+            const track = AnalyticsUtilsDefault.track;
+            const RPC_COMMAND_SENT = hasOwnProperty.RPC_COMMAND_SENT;
+            AnalyticsUtilsDefault;
+            if (typeof self.commands[cmd].scope === "object") {
+              const _JSON = JSON;
+              scope = JSON.stringify(tmp23.scope);
+            } else {
+              scope = tmp23.scope;
+            }
+            const _Array = Array;
+            str2 = Array.from(socket.authorization.scopes);
+            track(RPC_COMMAND_SENT, obj3);
+            fn(self.commands[cmd]);
+          } else {
+            self = this;
+            const self2 = this;
+            const obj = { errorCode: metroImportAll.INVALID_PERMISSIONS };
+            const tmp4 = new RPCErrorDefault(obj, "Not authenticated or invalid scope");
+            throw tmp4;
+          }
+        }
+      }
+      const obj4 = { errorCode: metroImportAll.INVALID_PAYLOAD };
+      const tmp21 = new RPCErrorDefault(obj4, "Payload requires a nonce");
+      throw tmp21;
     });
-    const nextPromise1 = nextPromise.then((handler) => {
+    const then = promise.then(f117702).then;
+    promise.then(f117702);
+    let closure_0 = self((command) => {
+      let closure_1;
+      let c3 = 0;
+      let c4 = 0;
+      return (function*(arg0) {
+        let validateAccessResult;
+        args = tmp;
+        const obj8 = command(closure_2_2[9]);
+        const isBotScopeOnlyResult = obj8.isBotScopeOnly(args, command.scope);
+        const botScopeOnly = isBotScopeOnlyResult;
+        const validateAccess = command.validateAccess;
+        const tmp18 = args;
+        if (validateAccess != null) {
+          const obj4 = { socket: tmp18, args, botScopeOnly: isBotScopeOnlyResult };
+          args = args.args ?? {};
+          validateAccessResult = validateAccess(obj4);
+        }
+        yield validateAccessResult;
+        return { command, botScopeOnly };
+      })();
+    });
+    const nextPromise1 = then(function() {
+      return closure_0(...arguments);
+    });
+    const nextPromise2 = nextPromise1.then((command) => {
       let args;
       let args1;
+      command = command.command;
+      const botScopeOnly = command.botScopeOnly;
       if (socket.source.type === TransportTypes.POST_MESSAGE) {
         const obj = { cmd: closure_2.cmd, iframeId: socket.source.iframeId, args };
         args = closure_2.args;
@@ -224,6 +253,7 @@ class RPCServer {
         evt: closure_2.evt,
         nonce: closure_2.nonce,
         args: args1,
+        botScopeOnly,
         isSocketConnected() {
           sockets = sockets.sockets;
           return sockets.has(socket);
@@ -231,14 +261,14 @@ class RPCServer {
         signal: socket.abortController.signal
       };
       args1 = closure_2.args;
-      handler = handler.handler;
+      const handler = command.handler;
       if (args1 == null) {
         args1 = {};
       }
       return handler(obj2);
     });
-    const nextPromise2 = nextPromise1.then((result) => self.dispatch(socket, closure_2.nonce, closure_2.cmd, null, result));
-    nextPromise2.catch((error) => self.error(socket, closure_2.nonce, closure_2.cmd, error.code, error.message));
+    const nextPromise3 = nextPromise2.then((result) => self.dispatch(socket, closure_2.nonce, closure_2.cmd, null, result));
+    nextPromise3.catch((error) => self.error(socket, closure_2.nonce, closure_2.cmd, error.code, error.message));
   }
   setCommandHandler(arg0, arg1) {
     this.commands[arg0] = arg1;
@@ -459,7 +489,7 @@ class RPCServer {
             } else {
               throw new TypeError("Trying to call a non-function");
             }
-          }, closure_3 * socket(timeout[10]).Millis.SECOND);
+          }, closure_3 * socket(timeout[11]).Millis.SECOND);
           let obj = { uniqueId };
           self.addSubscription(socket, RPC_STORE_WAIT, obj, () => {
             const tmp = fn();

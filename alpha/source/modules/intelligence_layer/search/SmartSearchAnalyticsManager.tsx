@@ -1,14 +1,14 @@
-// Module ID: 12004
-// Function ID: 12005
+// Module ID: 12077
+// Function ID: 12078
 // Name: SmartSearchAnalyticsManager
-// Dependencies: [11981, 1085, 568, 11987, 5076, 2]
+// Dependencies: [12054, 1085, 568, 12060, 5105, 2]
 
-// Module 12004 (SmartSearchAnalyticsManager)
+// Module 12077 (SmartSearchAnalyticsManager)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import Constants from "Constants" /* 1085 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5076 */;
-import SearchUtils from "SearchUtils" /* 11987 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 11981 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5105 */;
+import SearchUtils from "SearchUtils" /* 12060 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 12054 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -310,6 +310,17 @@ class SmartSearchAnalyticsManager {
     AppAnalyticsUtilsDefault;
     const merged = Object.assign(this.getContextualProperties(smartSearchQuery, getQueryId));
     trackWithMetadata(SMART_SEARCH_ANSWER_DWELLED, obj);
+  }
+  trackSmartSearchFeedbackGiven(arg0, SearchSessionAnalyticsManager) {
+    let hasPositiveFeedback;
+    let smartSearchQuery;
+    ({ smartSearchQuery, hasPositiveFeedback } = arg0);
+    const obj = { is_positive_feedback: hasPositiveFeedback };
+    const trackWithMetadata = AppAnalyticsUtilsDefault.trackWithMetadata;
+    const SMART_SEARCH_FEEDBACK_GIVEN = AnalyticEvents.SMART_SEARCH_FEEDBACK_GIVEN;
+    AppAnalyticsUtilsDefault;
+    const merged = Object.assign(this.getContextualProperties(smartSearchQuery, SearchSessionAnalyticsManager));
+    trackWithMetadata(SMART_SEARCH_FEEDBACK_GIVEN, obj);
   }
 }
 const prototype = SmartSearchAnalyticsManager.prototype;

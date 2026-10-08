@@ -1,34 +1,34 @@
-// Module ID: 12467
-// Function ID: 12468
+// Module ID: 12563
+// Function ID: 12564
 // Name: GuildWelcomeActionSheet
-// Dependencies: [19, 17, 5645, 2051, 2074, 4515, 12464, 12468, 1085, 1380, 1096, 21, 4896, 587, 5922, 558, 576, 504, 5049, 1112, 4860, 1402, 5981, 4529, 4892, 1188, 11428, 8924, 584, 12466, 1252, 12401, 1126, 6708, 2]
+// Dependencies: [19, 17, 5992, 2063, 2086, 4707, 12560, 12564, 1085, 1392, 1096, 21, 5090, 587, 5902, 558, 576, 504, 5417, 1112, 5054, 1414, 6164, 4721, 5086, 1200, 11411, 8555, 584, 12562, 1264, 12497, 1126, 6885, 2]
 
-// Module 12467 (GuildWelcomeActionSheet)
+// Module 12563 (GuildWelcomeActionSheet)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
 import Constants2 from "Constants" /* 1096 */;
 import router_utils from "router_utils" /* 1112 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import WelcomeScreenStore2 from "WelcomeScreenStore" /* 12464 */;
-import WelcomeScreenConstants from "WelcomeScreenConstants" /* 12468 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import WelcomeScreenStore2 from "WelcomeScreenStore" /* 12560 */;
+import WelcomeScreenConstants from "WelcomeScreenConstants" /* 12564 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmojiStore_mod from "EmojiStore" /* 5645 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import EmojiStore_mod from "EmojiStore" /* 5992 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import TextStyles_mod from "TextStyles" /* 5922 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import TextStyles_mod from "TextStyles" /* 5902 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const WelcomeScreenStore = WelcomeScreenStore2;
-let c2, dependencyMap, guildId, has_custom_emojis, welcomeChannel;
+let c2, dependencyMap, has_custom_emojis;
 
 let Fonts;
 let closure_14;
@@ -66,21 +66,21 @@ obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, marginTo
 obj6 = { padding: 4, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.xs };
 let closure_19 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((welcomeChannel) => {
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function WelcomeChannelRow(welcomeChannel) {
   let first;
   let stateFromStores;
-  let tmp10;
-  let tmp12;
-  let tmp14;
-  let tmp16;
+  let tmp11;
+  let tmp13;
+  let tmp15;
   let tmp17;
+  let tmp18;
   let tmp7;
   const tmp = welcomeChannel;
   let obj = welcomeChannel(stateFromStores[16]);
   const cResult = obj.c(39);
   welcomeChannel = welcomeChannel.welcomeChannel;
   const trackOptionSelect = welcomeChannel.trackOptionSelect;
-  closure_19();
+  const tmp4 = closure_19();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ChannelStore];
     cResult[0] = items;
@@ -100,13 +100,13 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((welcomeChannel) => 
   }
   const tmpResult = tmp(stateFromStores[17]);
   stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  trackOptionSelect(stateFromStores[18])(stateFromStores, true);
+  const tmp10 = trackOptionSelect(stateFromStores[18])(stateFromStores, true);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [PermissionStore];
     cResult[3] = items1;
-    tmp10 = items1;
+    tmp11 = items1;
   } else {
-    tmp10 = cResult[3];
+    tmp11 = cResult[3];
   }
   if (cResult[4] !== stateFromStores) {
     const fn2 = function p() {
@@ -115,68 +115,182 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((welcomeChannel) => 
     };
     cResult[4] = stateFromStores;
     cResult[5] = fn2;
-    tmp12 = fn2;
+    tmp13 = fn2;
   } else {
-    tmp12 = cResult[5];
+    tmp13 = cResult[5];
   }
   const tmpResult3 = tmp(stateFromStores[17]);
-  const stateFromStores1 = tmpResult3.useStateFromStores(tmp10, tmp12);
+  const stateFromStores1 = tmpResult3.useStateFromStores(tmp11, tmp13);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [EmojiStore];
     cResult[6] = items2;
-    tmp14 = items2;
+    tmp15 = items2;
   } else {
-    tmp14 = cResult[6];
+    tmp15 = cResult[6];
   }
   if (cResult[7] !== welcomeChannel.emoji_id) {
-    class A {
-      constructor() {
-        let customEmojiById = null;
-        if (null != welcomeChannel.emoji_id) {
-          customEmojiById = EmojiStore.getCustomEmojiById(tmp.emoji_id);
-        }
-        return customEmojiById;
+    const fn3 = function b() {
+      let customEmojiById = null;
+      if (null != welcomeChannel.emoji_id) {
+        customEmojiById = EmojiStore.getCustomEmojiById(tmp.emoji_id);
       }
-    }
+      return customEmojiById;
+    };
     const items3 = [welcomeChannel.emoji_id];
     cResult[7] = welcomeChannel.emoji_id;
-    cResult[8] = A;
+    cResult[8] = fn3;
     cResult[9] = items3;
-    tmp17 = items3;
-    tmp16 = A;
+    tmp18 = items3;
+    tmp17 = fn3;
   } else {
-    class A {
-      constructor() {
-        let customEmojiById = null;
-        if (null != welcomeChannel.emoji_id) {
-          customEmojiById = EmojiStore.getCustomEmojiById(tmp.emoji_id);
-        }
-        return customEmojiById;
-      }
-    }
-    tmp17 = cResult[9];
+    tmp17 = cResult[8];
+    tmp18 = cResult[9];
   }
   const tmpResult4 = tmp(stateFromStores[17]);
-  const stateFromStores2 = tmpResult4.useStateFromStores(tmp14, tmp16, tmp17);
+  const stateFromStores2 = tmpResult4.useStateFromStores(tmp15, tmp17, tmp18);
   if (cResult[10] === stateFromStores) {
-    class A {
-      constructor() {
-        let customEmojiById = null;
-        if (null != welcomeChannel.emoji_id) {
-          customEmojiById = EmojiStore.getCustomEmojiById(tmp.emoji_id);
-        }
-        return customEmojiById;
-      }
+    let tmp20;
+    if (cResult[11] === trackOptionSelect) {
+      tmp20 = cResult[12];
     }
     if (null != stateFromStores) {
-      class A {
-        constructor() {
-          let customEmojiById = null;
-          if (null != welcomeChannel.emoji_id) {
-            customEmojiById = EmojiStore.getCustomEmojiById(tmp.emoji_id);
+      if (stateFromStores1) {
+        let tmp26;
+        let tmp41;
+        if (null != stateFromStores2) {
+          if (cResult[13] === stateFromStores2.animated) {
+            let tmp34;
+            let tmp37;
+            if (cResult[14] === stateFromStores2.id) {
+              tmp34 = cResult[15];
+            }
+            if (cResult[16] !== tmp34) {
+              let obj2 = { uri: tmp34 };
+              cResult[16] = tmp34;
+              cResult[17] = obj2;
+              tmp37 = obj2;
+            } else {
+              tmp37 = cResult[17];
+            }
+            if (cResult[18] === tmp4.emoji) {
+              let tmp38;
+              if (cResult[19] === tmp37) {
+                tmp38 = cResult[20];
+              }
+              tmp26 = tmp38;
+            }
+            const obj3 = { style: tmp33, source: tmp37, resizeMode: "contain" };
+            const tmp40 = closure_17(trackOptionSelect(stateFromStores[22]), obj3);
+            cResult[18] = tmp4.emoji;
+            cResult[19] = tmp37;
+            cResult[20] = tmp40;
+            tmp38 = tmp40;
           }
-          return customEmojiById;
+          const obj4 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
+          ({ id: obj10.id, animated: obj10.animated } = stateFromStores2);
+          const tmp9Result = trackOptionSelect(stateFromStores[21]);
+          const emojiURL = tmp9Result.getEmojiURL(obj4);
+          cResult[13] = stateFromStores2.animated;
+          cResult[14] = stateFromStores2.id;
+          cResult[15] = emojiURL;
+          tmp34 = emojiURL;
+        } else {
+          let tmp23;
+          if (null != welcomeChannel.emoji_name) {
+            const getByName = trackOptionSelect(tmp2[23]).getByName;
+            trackOptionSelect(stateFromStores[23]);
+            const tmp9Result4 = trackOptionSelect(stateFromStores[23]);
+            if (null != getByName(tmp9Result4.convertSurrogateToName(welcomeChannel.emoji_name, false))) {
+              if (cResult[21] === tmp4.emoji) {
+                let tmp30;
+                if (cResult[22] === welcomeChannel.emoji_name) {
+                  tmp30 = cResult[23];
+                }
+                tmp26 = tmp30;
+              }
+              const obj5 = { style: tmp4.emoji, variant: "text-sm/medium", children: welcomeChannel.emoji_name };
+              const tmp32 = closure_17(tmp(stateFromStores[24]).Text, obj5);
+              cResult[21] = tmp4.emoji;
+              cResult[22] = welcomeChannel.emoji_name;
+              cResult[23] = tmp32;
+              tmp30 = tmp32;
+            }
+          }
+          const _Symbol = Symbol;
+          if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
+            const obj6 = { size: tmp(stateFromStores[25]).Icon.Sizes.REFRESH_SMALL_16, source: trackOptionSelect(stateFromStores[26]) };
+            const Icon = tmp(tmp2[25]).Icon;
+            const tmp25 = closure_17(Icon, obj6);
+            cResult[24] = tmp25;
+            tmp23 = tmp25;
+          } else {
+            tmp23 = cResult[24];
+          }
+          if (cResult[25] !== tmp4.placeholderEmojiWrapper) {
+            const obj7 = { style: tmp4.placeholderEmojiWrapper, children: tmp23 };
+            const tmp29 = closure_17(closure_4, obj7);
+            cResult[25] = tmp4.placeholderEmojiWrapper;
+            cResult[26] = tmp29;
+            tmp26 = tmp29;
+          } else {
+            tmp26 = cResult[26];
+          }
         }
+        if (cResult[27] !== welcomeChannel.description) {
+          const obj8 = { variant: "text-sm/semibold", color: "interactive-text-active", children: welcomeChannel.description };
+          const tmp43 = closure_17(tmp(stateFromStores[24]).Text, obj8);
+          cResult[27] = welcomeChannel.description;
+          cResult[28] = tmp43;
+          tmp41 = tmp43;
+        } else {
+          tmp41 = cResult[28];
+        }
+        if (cResult[29] === stateFromStores) {
+          let tmp44;
+          let tmp47;
+          if (cResult[30] === tmp10) {
+            tmp44 = cResult[31];
+          }
+          const _Symbol2 = Symbol;
+          if (cResult[32] === Symbol.for("react.memo_cache_sentinel")) {
+            const tmp49 = closure_17(tmp(stateFromStores[27]).FormRow.Arrow, {});
+            cResult[32] = tmp49;
+            tmp47 = tmp49;
+          } else {
+            tmp47 = cResult[32];
+          }
+          if (cResult[33] === tmp20) {
+            if (cResult[34] === tmp26) {
+              if (cResult[35] === tmp4.welcomeChannel) {
+                if (cResult[36] === tmp44) {
+                  let tmp50;
+                  if (cResult[37] === tmp41) {
+                    tmp50 = cResult[38];
+                  }
+                  return tmp50;
+                }
+              }
+            }
+          }
+          const obj9 = { DEPRECATED_style: tmp4.welcomeChannel, leading: tmp26, label: tmp41, subLabel: tmp44, onPress: tmp20, trailing: tmp47 };
+          const tmp52 = closure_17(tmp(stateFromStores[27]).FormRow, obj9);
+          cResult[33] = tmp20;
+          cResult[34] = tmp26;
+          cResult[35] = tmp4.welcomeChannel;
+          cResult[36] = tmp44;
+          cResult[37] = tmp41;
+          cResult[38] = tmp52;
+          tmp50 = tmp52;
+        }
+        let tmp45 = null;
+        if (null != stateFromStores) {
+          const obj11 = { variant: "text-sm/medium", color: "text-default", children: tmp10 };
+          tmp45 = closure_17(tmp(tmp2[24]).Text, obj11);
+        }
+        cResult[29] = stateFromStores;
+        cResult[30] = tmp10;
+        cResult[31] = tmp45;
+        tmp44 = tmp45;
       }
     }
     return null;
@@ -195,7 +309,8 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((welcomeChannel) => 
   cResult[10] = stateFromStores;
   cResult[11] = trackOptionSelect;
   cResult[12] = I;
-}) : ((welcomeChannel) => {
+  tmp20 = I;
+}) : (function WelcomeChannelRow(welcomeChannel) {
   let Icon;
   let obj12;
   let obj5;
@@ -275,7 +390,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((welcomeChannel) => 
 });
 let closure_20 = tmp10;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildWelcomeActionSheet(guildId) {
   let closure_6;
   let first;
   let tmp11;
@@ -350,8 +465,8 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       if (cResult[14] === guildId) {
         let tmp19;
         let tmp20;
-        let tmp28;
         let tmp29;
+        let tmp28;
         if (cResult[15] === welcomeScreen) {
           tmp19 = cResult[16];
           tmp20 = cResult[17];
@@ -389,26 +504,6 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           }
           cResult[19] = D;
           cResult[20] = items2;
-          class G {
-            constructor(index) {
-              if (null != welcomeScreen) {
-                const items = [];
-                const items1 = [];
-                has_custom_emojis = false;
-                const welcome_channels = tmp.welcome_channels;
-                const item = welcome_channels.forEach((description) => {
-                  items.push(description.description);
-                  items1.push(description.channel_id);
-                  if (null != description.emoji_id) {
-                    c2 = true;
-                  }
-                });
-                const obj2 = { index, guild_id: guildId, options: items, options_channel_ids: items1, guild_description: welcomeScreen.description, has_custom_emojis };
-                const obj = AnalyticsUtilsDefault;
-                obj.track(map1.GUILD_WELCOME_SCREEN_OPTION_SELECTED, obj2);
-              }
-            }
-          }
         } else {
           class D {
             constructor() {
@@ -441,7 +536,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         }
         const effect3 = obj4.useEffect(tmp25, tmp26);
         if (cResult[24] !== onHide) {
-          class W {
+          class B {
             constructor() {
               return () => {
                 if (onHide != null) {
@@ -471,31 +566,12 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               }
             }
           }
-          cResult[25] = W;
+          cResult[25] = B;
           cResult[26] = items3;
-          class G {
-            constructor(index) {
-              if (null != welcomeScreen) {
-                const items = [];
-                const items1 = [];
-                has_custom_emojis = false;
-                const welcome_channels = tmp.welcome_channels;
-                const item = welcome_channels.forEach((description) => {
-                  items.push(description.description);
-                  items1.push(description.channel_id);
-                  if (null != description.emoji_id) {
-                    c2 = true;
-                  }
-                });
-                const obj2 = { index, guild_id: guildId, options: items, options_channel_ids: items1, guild_description: welcomeScreen.description, has_custom_emojis };
-                const obj = AnalyticsUtilsDefault;
-                obj.track(map1.GUILD_WELCOME_SCREEN_OPTION_SELECTED, obj2);
-              }
-            }
-          }
-          tmp28 = W;
+          tmp29 = items3;
+          tmp28 = B;
         } else {
-          class W {
+          class B {
             constructor() {
               return () => {
                 if (onHide != null) {
@@ -508,7 +584,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         }
         const effect4 = obj4.useEffect(tmp28, tmp29);
         if (cResult[27] === guildId) {
-          class W {
+          class B {
             constructor() {
               return () => {
                 if (onHide != null) {
@@ -539,30 +615,28 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             }
           }
         }
-        class G {
-          constructor(index) {
-            if (null != welcomeScreen) {
-              const items = [];
-              const items1 = [];
-              has_custom_emojis = false;
-              const welcome_channels = tmp.welcome_channels;
-              const item = welcome_channels.forEach((description) => {
-                items.push(description.description);
-                items1.push(description.channel_id);
-                if (null != description.emoji_id) {
-                  c2 = true;
-                }
-              });
-              const obj2 = { index, guild_id: guildId, options: items, options_channel_ids: items1, guild_description: welcomeScreen.description, has_custom_emojis };
-              const obj = AnalyticsUtilsDefault;
-              obj.track(map1.GUILD_WELCOME_SCREEN_OPTION_SELECTED, obj2);
-            }
+        const fn4 = function k(index) {
+          if (null != welcomeScreen) {
+            const items = [];
+            const items1 = [];
+            has_custom_emojis = false;
+            const welcome_channels = tmp.welcome_channels;
+            const item = welcome_channels.forEach((description) => {
+              items.push(description.description);
+              items1.push(description.channel_id);
+              if (null != description.emoji_id) {
+                c2 = true;
+              }
+            });
+            const obj2 = { index, guild_id: guildId, options: items, options_channel_ids: items1, guild_description: welcomeScreen.description, has_custom_emojis };
+            const obj = AnalyticsUtilsDefault;
+            obj.track(map1.GUILD_WELCOME_SCREEN_OPTION_SELECTED, obj2);
           }
-        }
+        };
         cResult[27] = guildId;
         cResult[28] = welcomeScreen;
-        cResult[29] = G;
-        tmp31 = G;
+        cResult[29] = fn4;
+        tmp31 = fn4;
       }
       class O {
         constructor() {
@@ -603,13 +677,14 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
     }
     const items4 = [fetching, hasError];
+    cResult[10] = fetching;
     cResult[11] = hasError;
     cResult[12] = R;
     cResult[13] = items4;
     tmp17 = items4;
     tmp16 = R;
   }
-  const fn3 = function v() {
+  const fn3 = function y() {
     if (null == welcomeScreen) {
       let obj = DispatcherDefault;
       obj.wait(() => {
@@ -625,7 +700,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[9] = items5;
   tmp14 = items5;
   tmp13 = fn3;
-}) : ((guildId) => {
+}) : (function GuildWelcomeActionSheet(guildId) {
   let intl;
   let items9;
   let obj4;
@@ -719,12 +794,12 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     if (null != welcomeScreen) {
       const obj3 = { startExpanded: true, children: closure_18(hasError, obj4) };
       obj4 = { contentContainerStyle: tmp.container, children: items9 };
-      const ActionSheet = tmp2(6708).ActionSheet;
-      const obj5 = { style: tmp.guildIcon, guild: stateFromStores, size: onHide(12401).Sizes.MEDIUM, textScale: 2 };
-      const tmp17 = onHide(12401);
+      const ActionSheet = tmp2(6885).ActionSheet;
+      const obj5 = { style: tmp.guildIcon, guild: stateFromStores, size: onHide(12497).Sizes.MEDIUM, textScale: 2 };
+      const tmp17 = onHide(12497);
       items9 = [closure_17(tmp17, obj5), , , , ];
       const obj6 = { style: tmp.header, variant: "heading-xl/extrabold", color: "text-default", children: intl.format(guildId(1126).t["0aydCN"], obj7) };
-      const Text = tmp2(4892).Text;
+      const Text = tmp2(5086).Text;
       intl = tmp2(1126).intl;
       obj7 = {
         guildName: stateFromStores.name,
@@ -735,9 +810,9 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       };
       items9[1] = closure_17(Text, obj6);
       const obj8 = { style: tmp.guildDescription, variant: "text-sm/medium", color: "text-default", children: welcomeScreen.description };
-      items9[2] = closure_17(guildId(4892).Text, obj8);
+      items9[2] = closure_17(guildId(5086).Text, obj8);
       const obj9 = { style: tmp.channelsTitle, variant: "eyebrow", color: "text-default", children: str.toUpperCase() };
-      const Text2 = tmp2(4892).Text;
+      const Text2 = tmp2(5086).Text;
       const intl2 = tmp2(1126).intl;
       str = intl2.string(guildId(1126).t["haj5+i"]);
       items9[3] = closure_17(Text2, obj9);

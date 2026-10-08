@@ -1,25 +1,25 @@
-// Module ID: 9510
-// Function ID: 9511
+// Module ID: 8676
+// Function ID: 8677
 // Name: Autocompleter
-// Dependencies: [9511, 9512, 4513, 4525, 1377, 5707, 5628, 9513, 2033, 5711, 9515, 2018, 4876, 4881, 1936, 1371, 12, 5710, 2]
+// Dependencies: [8677, 8678, 4705, 4717, 1389, 6097, 5975, 8679, 2045, 6101, 8681, 8685, 2030, 5070, 5075, 1948, 1383, 12, 6100, 2]
 
-// Module 9510 (Autocompleter)
+// Module 8676 (Autocompleter)
 import _modDef12 from "module_12" /* 12 */;
-import URLUtilsDefault from "URLUtils" /* 1371 */;
-import _modDef1936 from "module_1936" /* 1936 */;
-import StringUtils from "StringUtils" /* 2018 */;
-import GuildChannelStore from "GuildChannelStore" /* 4513 */;
-import findCodedLinks from "findCodedLinks" /* 4876 */;
-import CodedLink from "CodedLink" /* 4881 */;
-import AutocompleteUtils from "AutocompleteUtils" /* 5628 */;
-import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 5707 */;
-import sortByMatchScoreDefault from "sortByMatchScore" /* 5710 */;
-import GuildUtilsDefault from "GuildUtils" /* 5711 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 9513 */;
-import ThreadMemberListStore from "ThreadMemberListStore" /* 9511 */;
-import LinkRecord from "LinkRecord" /* 9512 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
+import URLUtilsDefault from "URLUtils" /* 1383 */;
+import _modDef1948 from "module_1948" /* 1948 */;
+import StringUtils from "StringUtils" /* 2030 */;
+import GuildChannelStore from "GuildChannelStore" /* 4705 */;
+import findCodedLinks from "findCodedLinks" /* 5070 */;
+import CodedLink from "CodedLink" /* 5075 */;
+import AutocompleteUtils from "AutocompleteUtils" /* 5975 */;
+import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 6097 */;
+import sortByMatchScoreDefault from "sortByMatchScore" /* 6100 */;
+import GuildUtilsDefault from "GuildUtils" /* 6101 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 8679 */;
+import ThreadMemberListStore from "ThreadMemberListStore" /* 8677 */;
+import LinkRecord from "LinkRecord" /* 8678 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -537,7 +537,7 @@ class Autocompleter {
     let closure_0;
     if (this._include(AutocompleterResultTypes.GAME_PROFILE)) {
       let obj = require("queryGamesAutocomplete");
-      let result = obj.queryGamesAutocomplete(query);
+      let result = obj.queryGamesAutocomplete(query, require("GameSearchFilterGroup").GameSearchFilterGroup.DEFAULT);
       if (result == null) {
         result = [];
       }
@@ -589,7 +589,7 @@ class Autocompleter {
         tmp3Result = AutocompleteUtils;
         return items;
       } else {
-        const obj8 = _modDef1936;
+        const obj8 = _modDef1948;
         const sanitizeUrlResult = obj8.sanitizeUrl(query);
         try {
           const _URL = URL;

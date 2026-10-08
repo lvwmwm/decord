@@ -1,17 +1,15 @@
-// Module ID: 17572
-// Function ID: 17573
+// Module ID: 17854
+// Function ID: 17855
 // Name: RadioGroupActionComponent
-// Dependencies: [19, 21, 558, 576, 7806, 4618, 5604, 5605, 6078, 6079, 6000, 6024, 1126, 2]
+// Dependencies: [19, 21, 558, 576, 8225, 4810, 5374, 5378, 6264, 6265, 6184, 6210, 1126, 2]
 
-// Module 17572 (RadioGroupActionComponent)
-import spring from "spring" /* 5604 */;
-import springPresets from "springPresets" /* 5605 */;
+// Module 17854 (RadioGroupActionComponent)
+import spring from "spring" /* 5374 */;
+import springPresets from "springPresets" /* 5378 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let type;
 
 let closure_4;
 let hasOwnProperty;
@@ -20,7 +18,7 @@ let metroRequire;
 const __initData = { code: "function RadioGroupActionComponentTsx1(){const{withSpring,hasValue,SUBTLE_SPRING}=this.__closure;return{maxHeight:withSpring(hasValue?60:0,SUBTLE_SPRING),marginTop:withSpring(hasValue?8:0,SUBTLE_SPRING),opacity:withSpring(hasValue?1:0,SUBTLE_SPRING)};}" };
 const __initData2 = { code: "function RadioGroupActionComponentTsx2(){const{withSpring,hasValue,SUBTLE_SPRING}=this.__closure;return{maxHeight:withSpring(hasValue?60:0,SUBTLE_SPRING),marginTop:withSpring(hasValue?8:0,SUBTLE_SPRING),opacity:withSpring(hasValue?1:0,SUBTLE_SPRING)};}" };
 let memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function RadioGroupActionComponent(type) {
   let executeStateUpdate;
   let options;
   let ref;
@@ -186,7 +184,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((type) =
         }
       }
     }
-    const fn = function v(value) {
+    function onChange(value) {
       if ("" !== value) {
         if (null == value) {
           const obj2 = { type, value: null };
@@ -200,13 +198,13 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((type) =
           executeStateUpdate(obj);
         }
       }
-    };
+    }
     cResult[5] = executeStateUpdate;
     cResult[6] = required;
     cResult[7] = type;
     cResult[8] = str;
-    cResult[9] = fn;
-    tmp16 = fn;
+    cResult[9] = onChange;
+    tmp16 = onChange;
   }
   let tmp8;
   if (null != tmp5) {
@@ -224,7 +222,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((type) =
   cResult[3] = type;
   cResult[4] = tmp8;
   tmp7 = tmp8;
-}) : ((type) => {
+}) : (function RadioGroupActionComponent(type) {
   let Icon;
   let TableRow;
   let intl;

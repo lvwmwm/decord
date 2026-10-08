@@ -1,13 +1,12 @@
-// Module ID: 15526
-// Function ID: 15527
+// Module ID: 15788
+// Function ID: 15789
 // Name: BackupScreen
-// Dependencies: [5, 32, 19, 21, 15524, 4892, 1126, 558, 576, 6439, 15525, 15519, 15520, 2]
+// Dependencies: [5, 32, 19, 21, 15786, 5086, 1126, 558, 576, 6617, 15787, 15781, 15782, 2]
 
-// Module 15526 (BackupScreen)
+// Module 15788 (BackupScreen)
 import intl6 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 6439 */;
-import MFA from "MFA" /* 15524 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import MFA from "MFA" /* 15786 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -21,8 +20,6 @@ let c6, c7, closure_3, importDefault;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-let tmp4;
-const ClipboardCopyInputDefault = tmp4(15525);
 function removeDashes(str) {
   return str.replace(/-/g, "");
 }
@@ -60,41 +57,44 @@ let _asyncToGenerator = _asyncToGenerator_mod;
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ jsxs: metroRequire, jsx: metroImportDefault, Fragment: metroImportAll } = Fragment);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackupScreen(arg0) {
   let closure_7;
   let finish;
   let first;
+  let first1;
+  let items1;
   let mfaChallenge;
-  let obj3;
-  let obj4;
   let tmp10;
   let tmp12;
   let tmp15;
   let tmp16;
   let tmp18;
   let tmp19;
-  let tmp26;
-  let tmp27;
+  let tmp21;
+  let tmp22;
+  let tmp25;
+  let tmp28;
+  let tmp29;
   let tmp7;
   const tmp = finish;
-  let obj = finish(576);
+  let obj = finish(first[8]);
   const cResult = obj.c(34);
   ({ mfaChallenge, finish } = arg0);
   const tmp4 = importDefault;
   let obj2 = react;
-  const tmp5 = useWideAuthViewDefault();
+  const tmp5 = require("useWideAuthView")();
   [tmp7, importDefault] = _slicedToArray(react.useState(false), 2);
   const tmp6 = _slicedToArray(react.useState(false), 2);
-  [dependencyMap, _asyncToGenerator] = react.useState("");
+  [first, _asyncToGenerator] = react.useState("");
   const tmp9 = _slicedToArray(react.useState(undefined), 2);
   [tmp10, _slicedToArray] = tmp9;
   const tmp11 = _slicedToArray(react.useState(false), 2);
   [tmp12, react] = tmp11;
-  [first, closure_7] = react.useState(10);
-  if (cResult[0] !== first) {
+  [first1, closure_7] = react.useState(10);
+  if (cResult[0] !== first1) {
     const fn = function f() {
       let closure_0;
-      if (first > 0) {
+      if (first1 > 0) {
         const _setTimeout = setTimeout;
         const timeout = setTimeout(() => {
           closure_1_7((arg0) => arg0 - 1);
@@ -102,8 +102,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return () => clearTimeout(closure_0);
       }
     };
-    const items = [first];
-    cResult[0] = first;
+    const items = [first1];
+    cResult[0] = first1;
     cResult[1] = fn;
     cResult[2] = items;
     tmp16 = items;
@@ -114,29 +114,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const effect = obj2.useEffect(tmp15, tmp16);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class C {
-      constructor(arg0) {
-        closure_3(arg0);
-        _slicedToArray(undefined);
-      }
+    function onChangeCode(arg0) {
+      closure_3(arg0);
+      _slicedToArray(undefined);
     }
-    cResult[3] = C;
-    tmp18 = C;
+    cResult[3] = onChangeCode;
+    tmp18 = onChangeCode;
   } else {
-    class C {
-      constructor(arg0) {
-        closure_3(arg0);
-        _slicedToArray(undefined);
-      }
-    }
+    tmp18 = cResult[3];
   }
   if (cResult[4] !== finish) {
-    class C {
-      constructor(arg0) {
-        closure_3(arg0);
-        _slicedToArray(undefined);
-      }
-    }
     let closure_0 = _asyncToGenerator(async (arg0, value) => {
       let closure_4;
       let message2;
@@ -168,7 +155,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               return obj3;
             } else {
               closure_3 = tmp;
-              closure_2 = tmp4;
+              let closure_2 = tmp4;
               closure_0 = undefined;
               tmp28(undefined);
               message2(true);
@@ -222,98 +209,154 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     });
-    let fn2 = function() {
+    function t4() {
       return closure_0(...arguments);
-    };
+    }
     cResult[4] = finish;
-    cResult[5] = fn2;
-    tmp19 = fn2;
+    cResult[5] = t4;
+    tmp19 = t4;
   } else {
-    class C {
-      constructor(arg0) {
-        closure_3(arg0);
-        _slicedToArray(undefined);
-      }
-    }
+    tmp19 = cResult[5];
   }
-  fn2 = tmp19;
+  let closure_8 = tmp19;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class C {
-      constructor(arg0) {
-        closure_3(arg0);
-        _slicedToArray(undefined);
-      }
-    }
-    const stringResult = obj3.string(tmp(1126).t.B2T1HD);
-    const intl = tmp(1126).intl;
-    const stringResult1 = intl.string(tmp(1126).t.c5J7O0);
+    const intl = tmp(tmp2[6]).intl;
+    const stringResult = intl.string(tmp(first[6]).t.B2T1HD);
+    const intl2 = tmp(tmp2[6]).intl;
+    const stringResult1 = intl2.string(tmp(first[6]).t.c5J7O0);
     cResult[6] = stringResult;
     cResult[7] = stringResult1;
+    tmp22 = stringResult1;
+    tmp21 = stringResult;
   } else {
-    class C {
-      constructor(arg0) {
-        closure_3(arg0);
-        _slicedToArray(undefined);
-      }
-    }
+    tmp21 = cResult[6];
+    tmp22 = cResult[7];
   }
-  if (cResult[8] !== first) {
-    class C {
-      constructor(arg0) {
-        closure_3(arg0);
-        _slicedToArray(undefined);
-      }
-    }
-    const tmp25 = getFormattedExplainer(first);
-    cResult[8] = first;
-    cResult[9] = tmp25;
+  if (cResult[8] !== first1) {
+    const tmp27 = getFormattedExplainer(first1);
+    cResult[8] = first1;
+    cResult[9] = tmp27;
+    tmp25 = tmp27;
   } else {
-    class C {
-      constructor(arg0) {
-        closure_3(arg0);
-        _slicedToArray(undefined);
-      }
-    }
+    tmp25 = cResult[9];
   }
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-    class C {
-      constructor(arg0) {
-        closure_3(arg0);
-        _slicedToArray(undefined);
-      }
-    }
-    const stringResult2 = obj4.string(tmp(1126).t["C/ZAw/"]);
-    const intl2 = tmp(1126).intl;
-    const stringResult3 = intl2.string(tmp(1126).t.fZSi1D);
+    const intl3 = tmp(tmp2[6]).intl;
+    const stringResult2 = intl3.string(tmp(first[6]).t["C/ZAw/"]);
+    const intl4 = tmp(tmp2[6]).intl;
+    const stringResult3 = intl4.string(tmp(first[6]).t.fZSi1D);
     cResult[10] = stringResult2;
     cResult[11] = stringResult3;
-    tmp27 = stringResult3;
-    tmp26 = stringResult2;
+    tmp29 = stringResult3;
+    tmp28 = stringResult2;
   } else {
-    class C {
-      constructor(arg0) {
-        closure_3(arg0);
-        _slicedToArray(undefined);
-      }
-    }
-    tmp27 = cResult[11];
+    tmp28 = cResult[10];
+    tmp29 = cResult[11];
   }
   if (cResult[12] === tmp10) {
-    class C {
-      constructor(arg0) {
-        closure_3(arg0);
-        _slicedToArray(undefined);
+    if (cResult[13] === (tmp7 || tmp12)) {
+      let tmp34;
+      if (cResult[14] === !tmp5) {
+        tmp34 = cResult[15];
       }
+      if (cResult[16] === tmp34) {
+        let tmp37;
+        let tmp41;
+        if (cResult[17] === tmp25) {
+          tmp37 = cResult[18];
+        }
+        const _Symbol = Symbol;
+        if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
+          const intl5 = tmp(tmp2[6]).intl;
+          const stringResult4 = intl5.string(tmp(first[6]).t.geKm7t);
+          cResult[19] = stringResult4;
+          tmp41 = stringResult4;
+        } else {
+          tmp41 = cResult[19];
+        }
+        if (cResult[20] === first) {
+          let tmp44;
+          if (cResult[21] === tmp19) {
+            tmp44 = cResult[22];
+          }
+          if (!tmp7) {
+            tmp7 = tmp12;
+          }
+          if (!tmp7) {
+            tmp7 = first.length < tmp(tmp2[4]).BACKUP_CODE_MIN_LENGTH;
+          }
+          if (!tmp7) {
+            tmp7 = first1 > 0;
+          }
+          if (cResult[23] === (tmp7 || tmp12)) {
+            if (cResult[24] === tmp44) {
+              let tmp45;
+              if (cResult[25] === tmp7) {
+                tmp45 = cResult[26];
+              }
+              if (cResult[27] === finish) {
+                let tmp48;
+                if (cResult[28] === mfaChallenge) {
+                  tmp48 = cResult[29];
+                }
+                if (cResult[30] === tmp37) {
+                  if (cResult[31] === tmp45) {
+                    let tmp49;
+                    if (cResult[32] === tmp48) {
+                      tmp49 = cResult[33];
+                    }
+                    return tmp49;
+                  }
+                }
+                let obj3 = { headerText: tmp21, subtitle: tmp22, input: tmp37, submit: tmp45, screenProps: tmp48, mfaMethod: "backup" };
+                const tmp51 = closure_7(tmp4(first[12]), obj3);
+                cResult[30] = tmp37;
+                cResult[31] = tmp45;
+                cResult[32] = tmp48;
+                cResult[33] = tmp51;
+                tmp49 = tmp51;
+              }
+              let obj4 = { mfaChallenge, finish };
+              cResult[27] = finish;
+              cResult[28] = mfaChallenge;
+              cResult[29] = obj4;
+              tmp48 = obj4;
+            }
+          }
+          let obj5 = { variant: "primary", text: tmp41, loading: tmp7 || tmp12, onPress: tmp44, disabled: tmp7 };
+          const tmp47 = closure_7(tmp4(first[11]), obj5);
+          cResult[23] = tmp7 || tmp12;
+          cResult[24] = tmp44;
+          cResult[25] = tmp7;
+          cResult[26] = tmp47;
+          tmp45 = tmp47;
+        }
+        function ee() {
+          return closure_8(first);
+        }
+        cResult[20] = first;
+        cResult[21] = tmp19;
+        cResult[22] = ee;
+        tmp44 = ee;
+      }
+      const obj6 = { children: items1 };
+      items1 = [tmp25, tmp34];
+      const tmp40 = first1(closure_8, obj6);
+      cResult[16] = tmp34;
+      cResult[17] = tmp25;
+      cResult[18] = tmp40;
+      tmp37 = tmp40;
     }
   }
-  let obj5 = { label: tmp26, placeholder: tmp27, isValidClipboardCode, maxLength: tmp(15524).BACKUP_CODE_MAX_LENGTH, onChangeCode: tmp18, error: tmp10, isDisabled: tmp30, autoFocus: tmp31 };
-  const tmp4Result = ClipboardCopyInputDefault;
+  const obj7 = { label: tmp28, placeholder: tmp29, isValidClipboardCode, maxLength: tmp(first[4]).BACKUP_CODE_MAX_LENGTH, onChangeCode: tmp18, error: tmp10, isDisabled: tmp7 || tmp12, autoFocus: !tmp5 };
+  const tmp4Result = tmp4(first[10]);
+  const tmp36 = closure_7(tmp4Result, obj7);
   cResult[12] = tmp10;
   cResult[13] = tmp7 || tmp12;
   cResult[14] = !tmp5;
-  cResult[15] = closure_7(tmp4Result, obj5);
-  const tmp33 = closure_7(tmp4Result, obj5);
-}) : ((finish) => {
+  cResult[15] = tmp36;
+  tmp34 = tmp36;
+}) : (function BackupScreen(finish) {
   let _undefined;
   let c1;
   let c4;

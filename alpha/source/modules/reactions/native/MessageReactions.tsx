@@ -1,16 +1,16 @@
-// Module ID: 9986
-// Function ID: 9987
+// Module ID: 9516
+// Function ID: 9517
 // Name: MessageReactions
-// Dependencies: [109, 19, 5116, 21, 558, 576, 504, 6664, 6688, 9987, 2]
+// Dependencies: [109, 19, 5428, 21, 558, 576, 504, 6841, 6865, 9517, 2]
 
-// Module 9986 (MessageReactions)
+// Module 9516 (MessageReactions)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 6664 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6688 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 6841 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6865 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 5116 */;
+import MessageStore from "MessageStore" /* 5428 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let closure_3 = ["channelId", "messageId", "emoji", "reactions", "isSelectedBurs
 const jsx = Fragment.jsx;
 let closure_8 = [];
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageReactions(arg0, arg1) {
   let closure_0;
   let first;
   _require = arg0;
@@ -84,7 +84,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => 
   cResult[4] = items1;
   tmp7 = items1;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useMessageReactions(arg0, arg1) {
   let closure_0;
   let stateFromStores;
   _require = arg0;
@@ -107,7 +107,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => 
   }), items2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReactions(arg0) {
   let arr;
   let channelId;
   let emoji;
@@ -221,11 +221,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   if (arr3.length > 0) {
-    const MessageReactionsContent = tmp(9987).MessageReactionsContent;
+    const MessageReactionsContent = tmp(9517).MessageReactionsContent;
     let merged = Object.assign(tmp5);
     tmp21 = <MessageReactionsContent channelId={tmp4} messageId={tmp7} emoji={tmp6} reactions={arr3} isSelectedBurst={undefined !== tmp8 && tmp8} />;
   } else {
-    tmp21 = jsx(tmp(9987).MessageReactionsEmpty, {});
+    tmp21 = jsx(tmp(9517).MessageReactionsEmpty, {});
   }
   cResult[10] = tmp4;
   cResult[11] = tmp5;
@@ -235,7 +235,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[15] = arr3;
   cResult[16] = tmp21;
   tmp19 = tmp21;
-}) : ((emoji) => {
+}) : (function MessageReactions(emoji) {
   let channelId;
   let isSelectedBurst;
   let messageId;
@@ -281,11 +281,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const AnalyticsLocationProvider = useAnalyticsLocations.AnalyticsLocationProvider;
   if (items.length > 0) {
     let obj2 = { channelId, messageId, emoji, reactions: items, isSelectedBurst };
-    const MessageReactionsContent = tmp8(9987).MessageReactionsContent;
+    const MessageReactionsContent = tmp8(9517).MessageReactionsContent;
     let merged1 = Object.assign(merged);
     tmp7Result = tmp7(MessageReactionsContent, obj2);
   } else {
-    tmp7Result = tmp7(tmp8(9987).MessageReactionsEmpty, {});
+    tmp7Result = tmp7(tmp8(9517).MessageReactionsEmpty, {});
   }
   return <AnalyticsLocationProvider value={analyticsLocations}>{tmp7Result}</AnalyticsLocationProvider>;
 });

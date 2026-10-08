@@ -1,32 +1,32 @@
-// Module ID: 17719
-// Function ID: 17720
+// Module ID: 18006
+// Function ID: 18007
 // Name: GuildSettingsModalModeration
-// Dependencies: [19, 4515, 9283, 1085, 21, 4896, 587, 558, 576, 8327, 9282, 1126, 2115, 6705, 6081, 4595, 6017, 6890, 6079, 14661, 6078, 4892, 8924, 5600, 6543, 1490, 504, 2]
+// Dependencies: [19, 4707, 8614, 1085, 21, 5090, 587, 558, 576, 7710, 8613, 1126, 2127, 6882, 6267, 4787, 6203, 7079, 6265, 14922, 6264, 5086, 8555, 5373, 6719, 1502, 504, 2]
 
-// Module 17719 (GuildSettingsModalModeration)
+// Module 18006 (GuildSettingsModalModeration)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import native from "native" /* 4595 */;
-import Stack_Stack from "Stack/Stack" /* 5600 */;
-import TableRadioRow2 from "TableRadioRow" /* 6078 */;
-import TableRowGroup2 from "TableRowGroup" /* 6081 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 6705 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 6890 */;
-import useUserIsTeen from "useUserIsTeen" /* 8327 */;
-import Form2 from "Form" /* 8924 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9282 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
+import native from "native" /* 4787 */;
+import Stack_Stack from "Stack/Stack" /* 5373 */;
+import TableRadioRow2 from "TableRadioRow" /* 6264 */;
+import TableRowGroup2 from "TableRowGroup" /* 6267 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 6882 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7079 */;
+import useUserIsTeen from "useUserIsTeen" /* 7710 */;
+import Form2 from "Form" /* 8555 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8613 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9283 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8614 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let contentContainerStyle, navigation;
+let navigation;
 
 let c10;
 let c9;
@@ -38,15 +38,15 @@ let obj2;
 let tmp2;
 let tmp5;
 let unpackModuleId;
-const Text_Text = tmp2(4892);
-const NavScrim = tmp5(6543);
+const Text_Text = tmp2(5086);
+const NavScrim = tmp5(6719);
 ({ GuildFeatures: metroRequire, HelpdeskArticles: metroImportDefault, Permissions: metroImportAll, GuildNSFWContentLevel: c9 } = Constants);
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
 let obj = { stack: obj2 };
 obj2 = { paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
 createStyles.createLegacyClassComponentStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsOwnerConfiguredContentLevel(guild) {
   let first;
   let obj4;
   let obj = react2;
@@ -140,7 +140,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     cResult[6] = tmp21;
     tmp19 = tmp21;
   }
-}) : ((guild) => {
+}) : (function GuildSettingsOwnerConfiguredContentLevel(guild) {
   let TableSwitchRow;
   let format;
   let intl;
@@ -167,7 +167,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   let tmp9 = null;
   if (!userIsTeen) {
     let obj2 = { title: intl.string(intl4.t.YJlvBM), hasIcons: false, description: format(iyQQ62, obj3), children: authStore(TableSwitchRow, obj5) };
-    const TableRowGroup = tmp3(6081).TableRowGroup;
+    const TableRowGroup = tmp3(6267).TableRowGroup;
     intl = tmp3(1126).intl;
     const intl2 = tmp3(1126).intl;
     format = intl2.format;
@@ -175,7 +175,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     iyQQ62 = tmp3(1126).t.iyQQ62;
     obj4 = HelpdeskUtilsDefault;
     obj5 = { label: intl3.string(intl4.t.N9xEJF), value: DEFAULT2 === constants4.AGE_RESTRICTED, onValueChange: tmp8, disabled: tmp7 };
-    TableSwitchRow = tmp3(6705).TableSwitchRow;
+    TableSwitchRow = tmp3(6882).TableSwitchRow;
     intl3 = tmp3(1126).intl;
     tmp9 = authStore(TableRowGroup, obj2, "filter-section");
   }
@@ -268,10 +268,10 @@ class GuildSettingsModalModeration extends PureComponent {
         return authStore(TableRadioRow, obj, "level-" + value);
       })
     };
-    const TableRadioGroup = self(6079).TableRadioGroup;
+    const TableRadioGroup = self(6265).TableRadioGroup;
     intl = self(1126).intl;
     intl2 = self(1126).intl;
-    let obj2 = self(14661);
+    let obj2 = self(14922);
     const features = guild.features;
     verificationLevelOptions = obj2.generateVerificationLevelOptions(features.has(constants.COMMUNITY));
     return closure_10(TableRadioGroup, obj, "level-section");
@@ -311,7 +311,7 @@ class GuildSettingsModalModeration extends PureComponent {
         return tmp(TableRadioRow, obj, "filter-" + value);
       })
     };
-    const TableRadioGroup = self(6079).TableRadioGroup;
+    const TableRadioGroup = self(6265).TableRadioGroup;
     intl = self(1126).intl;
     const intl2 = self(1126).intl;
     format = intl2.format;
@@ -319,7 +319,7 @@ class GuildSettingsModalModeration extends PureComponent {
     BI4ukC = self(1126).t.BI4ukC;
     const features = guild.features;
     obj3 = HelpdeskUtilsDefault;
-    const obj4 = self(14661);
+    const obj4 = self(14922);
     contentFilterOptions = obj4.generateContentFilterOptions(features.has(constants.COMMUNITY));
     return closure_10(TableRadioGroup, obj, "filter-section");
   }
@@ -371,7 +371,7 @@ class GuildSettingsModalModeration extends PureComponent {
 const prototype = GuildSettingsModalModeration.prototype;
 GuildSettingsModalModeration.contextType = native.ThemeContext;
 ReactCompilerGating = ReactCompilerGating_mod;
-tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((contentContainerStyle) => {
+tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedGuildSettingsModalModeration(contentContainerStyle) {
   let guild;
   let hasChanges;
   let submitting;
@@ -382,7 +382,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((contentContainerStyle) =
   const obj = guild(576);
   const cResult = obj.c(12);
   contentContainerStyle = contentContainerStyle.contentContainerStyle;
-  const obj2 = guild(1490);
+  const obj2 = guild(1502);
   navigation = obj2.useNavigation();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildSettingsStore];
@@ -409,16 +409,16 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((contentContainerStyle) =
     tmp9 = cResult[2];
   }
   if (cResult[3] !== guild) {
-    class E {
+    class S {
       constructor() {
         return PermissionStore.can(metroImportAll.MANAGE_GUILD, guild);
       }
     }
     cResult[3] = guild;
-    cResult[4] = E;
-    tmp11 = E;
+    cResult[4] = S;
+    tmp11 = S;
   } else {
-    class E {
+    class S {
       constructor() {
         return PermissionStore.can(metroImportAll.MANAGE_GUILD, guild);
       }
@@ -427,7 +427,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((contentContainerStyle) =
   const tmpResult2 = guild(504);
   const stateFromStores = tmpResult2.useStateFromStores(tmp9, tmp11);
   if (cResult[5] === stateFromStores) {
-    class E {
+    class S {
       constructor() {
         return PermissionStore.can(metroImportAll.MANAGE_GUILD, guild);
       }
@@ -435,7 +435,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((contentContainerStyle) =
   }
   let tmp13 = null;
   if (null != guild) {
-    class E {
+    class S {
       constructor() {
         return PermissionStore.can(metroImportAll.MANAGE_GUILD, guild);
       }
@@ -450,12 +450,12 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((contentContainerStyle) =
   cResult[9] = navigation;
   cResult[10] = submitting;
   cResult[11] = tmp13;
-}) : ((contentContainerStyle) => {
+}) : (function ConnectedGuildSettingsModalModeration(contentContainerStyle) {
   let hasChanges;
   let submitting;
   let guild;
   contentContainerStyle = contentContainerStyle.contentContainerStyle;
-  const obj = guild(1490);
+  const obj = guild(1502);
   navigation = obj.useNavigation();
   const items = [GuildSettingsStore];
   const obj2 = guild(504);

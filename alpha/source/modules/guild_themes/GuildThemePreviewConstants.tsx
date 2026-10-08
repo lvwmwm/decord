@@ -1,9 +1,9 @@
-// Module ID: 4771
-// Function ID: 4772
+// Module ID: 4965
+// Function ID: 4966
 // Name: GuildThemePreviewConstants
 // Dependencies: [2]
 
-// Module 4771 (GuildThemePreviewConstants)
+// Module 4965 (GuildThemePreviewConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_themes/GuildThemePreviewConstants.tsx");

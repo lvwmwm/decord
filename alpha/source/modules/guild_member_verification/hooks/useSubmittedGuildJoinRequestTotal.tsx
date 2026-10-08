@@ -1,16 +1,14 @@
-// Module ID: 16179
-// Function ID: 16180
+// Module ID: 16439
+// Function ID: 16440
 // Name: useSubmittedGuildJoinRequestTotal
-// Dependencies: [5939, 558, 576, 504, 2]
+// Dependencies: [6122, 558, 576, 504, 2]
 
-// Module 16179 (useSubmittedGuildJoinRequestTotal)
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5939 */;
+// Module 16439 (useSubmittedGuildJoinRequestTotal)
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6122 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let guildId;
-
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSubmittedGuildJoinRequestTotal(guildId) {
   let first;
   let tmp6;
   let tmp7;
@@ -45,7 +43,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((guildId) => {
+}) : (function useSubmittedGuildJoinRequestTotal(guildId) {
   guildId = guildId.guildId;
   const items = [GuildJoinRequestStore];
   const items1 = [guildId];

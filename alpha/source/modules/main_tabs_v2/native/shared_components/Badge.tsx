@@ -1,15 +1,15 @@
-// Module ID: 7514
-// Function ID: 7515
+// Module ID: 9237
+// Function ID: 9238
 // Name: shared_components/Badge
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 2]
 
-// Module 7514 (shared_components/Badge)
+// Module 9237 (shared_components/Badge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
 let closure_4 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function Badge(arg0) {
   let badgeStyle;
   let classic;
   let maskColor;
@@ -115,7 +115,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[2] = sum;
   cResult[3] = tmp7;
   tmp6 = tmp7;
-}) : ((size) => {
+}) : (function Badge(size) {
   let badgeStyle;
   let style;
   let num = size.size;

@@ -1,9 +1,9 @@
-// Module ID: 10443
-// Function ID: 10444
+// Module ID: 10040
+// Function ID: 10041
 // Name: NativeGiftContext
-// Dependencies: [5, 32, 19, 7874, 10409, 10444, 1377, 1085, 6932, 1379, 1096, 21, 3, 6947, 558, 576, 10445, 6948, 4549, 10446, 1126, 10447, 4534, 6926, 10448, 504, 10477, 10484, 7879, 7866, 5715, 1252, 6688, 10485, 584, 1369, 10407, 2]
+// Dependencies: [5, 32, 19, 8292, 10006, 10041, 1389, 1085, 7121, 1391, 1096, 21, 3, 7136, 558, 576, 10042, 7137, 4741, 10043, 1126, 10044, 4726, 7115, 10045, 504, 10074, 10081, 8297, 8284, 5298, 1264, 6865, 10082, 584, 1381, 10004, 2]
 
-// Module 10443 (NativeGiftContext)
+// Module 10040 (NativeGiftContext)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -11,24 +11,24 @@ import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import Constants2 from "Constants" /* 1096 */;
 import intl3 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import BillingUtils from "BillingUtils" /* 4549 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5715 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6688 */;
-import Constants3 from "Constants" /* 6932 */;
-import ContextUtilsDefault from "ContextUtils" /* 6947 */;
-import BadgeId from "BadgeId" /* 7866 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7879 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10407 */;
-import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10485 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import BillingUtils from "BillingUtils" /* 4741 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5298 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6865 */;
+import Constants3 from "Constants" /* 7121 */;
+import ContextUtilsDefault from "ContextUtils" /* 7136 */;
+import BadgeId from "BadgeId" /* 8284 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8297 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10004 */;
+import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10082 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7874 */;
-import PromotionsStore_mod from "PromotionsStore" /* 10409 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10444 */;
-import UserStore from "UserStore" /* 1377 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8292 */;
+import PromotionsStore_mod from "PromotionsStore" /* 10006 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 10041 */;
+import UserStore from "UserStore" /* 1389 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ let closure_17 = tmp4;
 [closure_18, tmp6, tmp7] = ContextUtilsDefault();
 _slicedToArray(ContextUtilsDefault(), 3);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGiftInfoOptions(arg0) {
   let customGiftMessage;
   let emojiConfetti;
   let giftStyle;
@@ -120,7 +120,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = items1;
   }
   items1 = [];
-}) : ((giftStyle) => {
+}) : (function useGiftInfoOptions(giftStyle) {
   let TIER_2;
   giftStyle = giftStyle.giftStyle;
   const recipientUserId = giftStyle.recipientUserId;
@@ -176,7 +176,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncOrder(order) {
   let closure_16;
   let setRevision;
   let tmp7;
@@ -265,7 +265,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
                                                                       }
                                                                       if (cResult[42] !== tmp14) {
                                                                         let obj2 = { awaitSyncOrder: tmp14 };
-                                                                        class A {
+                                                                        class O {
                                                                           constructor() {
                                                                             flush(giftInfoOptions);
                                                                             const tmp2 = waitForSync();
@@ -281,7 +281,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
                                                                       return tmp15;
                                                                     }
                                                                   }
-                                                                  class A {
+                                                                  class O {
                                                                     constructor() {
                                                                       flush(giftInfoOptions);
                                                                       const tmp2 = waitForSync();
@@ -292,8 +292,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
                                                                   cResult[38] = flush;
                                                                   cResult[39] = giftInfoOptions;
                                                                   cResult[40] = waitForSync;
-                                                                  cResult[41] = A;
-                                                                  tmp14 = A;
+                                                                  cResult[41] = O;
+                                                                  tmp14 = O;
                                                                 }
                                                               }
                                                             }
@@ -631,12 +631,12 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
     cResult[19] = fn;
     tmp11 = fn;
   }
-  let obj4 = { orderId: "a", planId: "no good", planSelection: { premiumType, planInterval }, giftInfo: "zna\u010Dka" };
+  let obj4 = { orderId: "a", planId: "twitch.tv", planSelection: { premiumType, planInterval }, giftInfo: "youtube.com" };
   cResult[0] = planInterval;
   cResult[1] = premiumType;
   cResult[2] = obj4;
   tmp3 = obj4;
-}) : ((order) => {
+}) : (function useSyncOrder(order) {
   let items1;
   order = order.order;
   let revision = order.revision;
@@ -651,7 +651,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
   const setPremiumType = order.setPremiumType;
   const setPlanInterval = order.setPlanInterval;
   const setError = order.setError;
-  let obj = { orderId: "a", planId: "no good", planSelection: { premiumType, planInterval }, giftInfo: "zna\u010Dka" };
+  let obj = { orderId: "a", planId: "twitch.tv", planSelection: { premiumType, planInterval }, giftInfo: "youtube.com" };
   let closure_13 = externalGatewayFacet.useRef(obj);
   const ref = externalGatewayFacet.useRef(false);
   const ref2 = externalGatewayFacet.useRef(null);
@@ -945,7 +945,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
   return obj2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(basePurchaseAnalytics) {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeGiftContextProvider(basePurchaseAnalytics) {
   let closure_15;
   let first1;
   let first2;
@@ -1248,7 +1248,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(basePurchase
   cResult[3] = planIdForPremiumType;
   cResult[4] = productIdForGift;
   tmp29 = productIdForGift;
-}) : (function(basePurchaseAnalytics) {
+}) : (function NativeGiftContextProvider(basePurchaseAnalytics) {
   let children;
   let initialOrder;
   let onClose;
@@ -1665,7 +1665,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(basePurchase
                 analyticsLocations: null,
                 allowPlanChange: false,
                 giftInfoOptions,
-                onPurchaseComplete: function() {
+                onPurchaseComplete() {
                           return closure_1_1(...arguments);
                         },
                 onPurchaseError() {

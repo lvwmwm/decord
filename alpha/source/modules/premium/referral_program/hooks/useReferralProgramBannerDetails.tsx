@@ -1,21 +1,21 @@
-// Module ID: 13261
-// Function ID: 13262
+// Module ID: 13561
+// Function ID: 13562
 // Name: useReferralProgramBannerDetails
-// Dependencies: [19, 1377, 6974, 558, 576, 504, 7863, 2]
+// Dependencies: [19, 1389, 7163, 558, 576, 504, 8281, 2]
 
-// Module 13261 (useReferralProgramBannerDetails)
+// Module 13561 (useReferralProgramBannerDetails)
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 6974 */;
+import UserStore from "UserStore" /* 1389 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7163 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReferralProgramBannerDetails() {
   let stateFromStoresArray;
   let tmp11;
   let tmp12;
-  let tmp14;
   let tmp15;
+  let tmp16;
   let tmp4;
   let tmp5;
   let tmp7;
@@ -44,59 +44,80 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[2];
   }
   if (cResult[3] !== stateFromStoresArray) {
-    const fn2 = function u() {
-      let user;
-      const mapped = stateFromStoresArray.map((item) => user.getUser(item));
-      return mapped.filter((item) => null != item);
-    };
+    class S {
+      constructor() {
+        mapped = closure_0.map((item) => user.getUser(item));
+        return mapped.filter((item) => null != item);
+      }
+    }
     cResult[3] = stateFromStoresArray;
-    cResult[4] = fn2;
-    tmp9 = fn2;
+    cResult[4] = S;
+    tmp9 = S;
   } else {
-    tmp9 = cResult[4];
+    class S {
+      constructor() {
+        mapped = closure_0.map((item) => user.getUser(item));
+        return mapped.filter((item) => null != item);
+      }
+    }
   }
   const tmpResult3 = stateFromStoresArray(504);
   const stateFromStoresArray1 = tmpResult3.useStateFromStoresArray(tmp7, tmp9);
   if (cResult[5] !== stateFromStoresArray) {
-    const fn3 = function h() {
-      const item = stateFromStoresArray.forEach((item) => {
-        const obj = stateFromStoresArray(closure_1_1[6]);
-        const user = obj.getUser(item);
-      });
-    };
+    class S {
+      constructor() {
+        mapped = closure_0.map((item) => user.getUser(item));
+        return mapped.filter((item) => null != item);
+      }
+    }
     const items2 = [stateFromStoresArray];
     cResult[5] = stateFromStoresArray;
-    cResult[6] = fn3;
+    cResult[6] = tmp13;
     cResult[7] = items2;
     tmp12 = items2;
-    tmp11 = fn3;
+    tmp11 = tmp13;
   } else {
-    tmp11 = cResult[6];
+    class S {
+      constructor() {
+        mapped = closure_0.map((item) => user.getUser(item));
+        return mapped.filter((item) => null != item);
+      }
+    }
     tmp12 = cResult[7];
   }
   const effect = react.useEffect(tmp11, tmp12);
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        mapped = closure_0.map((item) => user.getUser(item));
+        return mapped.filter((item) => null != item);
+      }
+    }
     const items3 = [ReferralTrialStore];
-    const fn4 = function v() {
+    const fn2 = function v() {
       return authStore.getRefreshAt();
     };
     cResult[8] = items3;
-    cResult[9] = fn4;
-    tmp15 = fn4;
-    tmp14 = items3;
+    cResult[9] = fn2;
+    tmp16 = fn2;
+    tmp15 = items3;
   } else {
-    tmp14 = cResult[8];
-    tmp15 = cResult[9];
+    class S {
+      constructor() {
+        mapped = closure_0.map((item) => user.getUser(item));
+        return mapped.filter((item) => null != item);
+      }
+    }
+    tmp16 = cResult[9];
   }
   const tmpResult4 = stateFromStoresArray(504);
-  const stateFromStores = tmpResult4.useStateFromStores(tmp14, tmp15);
+  const stateFromStores = tmpResult4.useStateFromStores(tmp15, tmp16);
   if (cResult[10] === 3 === stateFromStoresArray.length) {
-    if (cResult[11] === stateFromStores) {
-      let tmp19;
-      if (cResult[12] === stateFromStoresArray1) {
-        tmp19 = cResult[13];
+    class S {
+      constructor() {
+        mapped = closure_0.map((item) => user.getUser(item));
+        return mapped.filter((item) => null != item);
       }
-      return tmp19;
     }
   }
   const obj2 = { referralSentUsers: stateFromStoresArray1, hasSentAllReferrals: 3 === stateFromStoresArray.length, refreshAt: stateFromStores };
@@ -104,8 +125,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[11] = stateFromStores;
   cResult[12] = stateFromStoresArray1;
   cResult[13] = obj2;
-  tmp19 = obj2;
-}) : (() => {
+}) : (function useReferralProgramBannerDetails() {
   let items3;
   let obj4;
   let stateFromStoresArray;

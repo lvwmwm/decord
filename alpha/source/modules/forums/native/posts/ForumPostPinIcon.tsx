@@ -1,25 +1,23 @@
-// Module ID: 11631
-// Function ID: 11632
+// Module ID: 11695
+// Function ID: 11696
 // Name: ForumPostPinIcon
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1188, 11632, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1200, 11696, 2]
 
-// Module 11631 (ForumPostPinIcon)
+// Module 11695 (ForumPostPinIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11632 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11696 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let containerStyle;
 
 let size;
 let size1;
 let tmp;
-const native = tmp(1188);
+const native = tmp(1200);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -28,7 +26,7 @@ size = { display: "flex", flexDirection: "row", alignItems: "center", justifyCon
 createStyles = createStyles.createStyles;
 size1 = { height: 14, width: 14, tintColor: nativeDefault.colors.WHITE };
 let closure_5 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((containerStyle) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostPinIcon(containerStyle) {
   const obj = react2;
   const cResult = obj.c(8);
   containerStyle = containerStyle.containerStyle;
@@ -66,7 +64,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((containerStyle) => {
   cResult[1] = tmp4.pin;
   cResult[2] = items;
   tmp5 = items;
-}) : ((containerStyle) => {
+}) : (function ForumPostPinIcon(containerStyle) {
   containerStyle = containerStyle.containerStyle;
   const tmp = closure_5();
   const items = [tmp.pin, containerStyle];

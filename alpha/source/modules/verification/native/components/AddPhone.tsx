@@ -1,23 +1,23 @@
-// Module ID: 6548
-// Function ID: 6549
+// Module ID: 6724
+// Function ID: 6725
 // Name: AddPhone
-// Dependencies: [5, 32, 19, 17, 6437, 2044, 1377, 1085, 1096, 21, 4896, 587, 504, 6088, 6549, 5319, 4892, 1126, 6550, 6458, 5099, 6551, 1987, 5601, 5715, 6581, 2]
+// Dependencies: [5, 32, 19, 17, 6615, 2057, 1389, 1085, 1096, 21, 5090, 587, 504, 6274, 6725, 5631, 5086, 1126, 6726, 6636, 5940, 6727, 1999, 5375, 5298, 6757, 2]
 // Exports: default
 
-// Module 6548 (AddPhone)
+// Module 6724 (AddPhone)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import Constants2 from "Constants" /* 1096 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5715 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5298 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PhoneStore from "PhoneStore" /* 6437 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2044 */;
-import UserStore from "UserStore" /* 1377 */;
+import PhoneStore from "PhoneStore" /* 6615 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2057 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -310,7 +310,7 @@ export default function AddPhone(reason) {
         variant: "secondary",
         size: "md",
         text: intl6.string(tmp2(tmp3[17]).t.kYvzoQ),
-        onPress() {
+        onPress: function handleRemovePhone() {
               let tmp2;
               obj = stateFromStores;
               if (null != stateFromStores) {

@@ -1,21 +1,20 @@
-// Module ID: 15881
-// Function ID: 15882
+// Module ID: 16140
+// Function ID: 16141
 // Name: VEVOOPropBlurAmount
-// Dependencies: [32, 19, 5781, 21, 4896, 558, 576, 6706, 15882, 8924, 2]
+// Dependencies: [32, 19, 5364, 21, 5090, 558, 576, 6883, 16141, 8555, 2]
 
-// Module 15881 (VEVOOPropBlurAmount)
+// Module 16140 (VEVOOPropBlurAmount)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import FormSwitch from "FormSwitch" /* 6706 */;
-import Form from "Form" /* 8924 */;
+import FormSwitch from "FormSwitch" /* 6883 */;
+import Form from "Form" /* 8555 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VEVOOStore from "VEVOOStore" /* 5781 */;
-import createStyles from "createStyles" /* 4896 */;
+import VEVOOStore from "VEVOOStore" /* 5364 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
 let dependencyMap;
 
 let hasOwnProperty;
@@ -24,13 +23,13 @@ let _slicedToArray = _slicedToArray_mod;
 ({ getVisualEffectViewOverrides: hasOwnProperty, setVisualEffectViewOverides: metroRequire } = VEVOOStore);
 const jsx = Fragment.jsx;
 let closure_8 = createStyles.createStyles({ enabledSwitchStyle: { alignSelf: "flex-start" } });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VEVOOPropBlurAmount() {
   let closure_2;
   let closure_3;
   let first;
+  let require;
   let tmp13;
   let tmp14;
-  let tmp17;
   let tmp7;
   let tmp2 = dependencyMap;
   let obj = react2;
@@ -51,7 +50,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   dependencyMap = tmp5Result[1];
   const ref = react.useRef(first1);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function w(blurAmountOverride) {
+    const fn = function h(blurAmountOverride) {
       if (null != blurAmountOverride) {
         closure_2(blurAmountOverride);
       }
@@ -81,67 +80,90 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   }
   const combined = "Blur Amount " + tmp14;
   if (cResult[4] !== first1) {
-    const fn2 = function x(arg0) {
-      require(arg0);
-      let tmp3;
-      const tmp2 = closure_3;
-      if (arg0) {
-        tmp3 = first1;
+    class E {
+      constructor(arg0) {
+        _require(arg0);
+        let tmp3;
+        const tmp2 = closure_3;
+        if (arg0) {
+          tmp3 = first1;
+        }
+        tmp2(tmp3);
       }
-      tmp2(tmp3);
-    };
+    }
     cResult[4] = first1;
-    cResult[5] = fn2;
-    tmp17 = fn2;
+    cResult[5] = E;
   } else {
-    tmp17 = cResult[5];
+    class E {
+      constructor(arg0) {
+        _require(arg0);
+        let tmp3;
+        const tmp2 = closure_3;
+        if (arg0) {
+          tmp3 = first1;
+        }
+        tmp2(tmp3);
+      }
+    }
   }
   if (cResult[6] === tmp7) {
-    let tmp18;
-    if (cResult[7] === tmp17) {
-      tmp18 = cResult[8];
+    class E {
+      constructor(arg0) {
+        _require(arg0);
+        let tmp3;
+        const tmp2 = closure_3;
+        if (arg0) {
+          tmp3 = first1;
+        }
+        tmp2(tmp3);
+      }
     }
     if (cResult[9] === !tmp7) {
-      let tmp22;
-      if (cResult[10] === !tmp7) {
-        tmp22 = cResult[11];
+      class E {
+        constructor(arg0) {
+          _require(arg0);
+          let tmp3;
+          const tmp2 = closure_3;
+          if (arg0) {
+            tmp3 = first1;
+          }
+          tmp2(tmp3);
+        }
       }
       if (cResult[12] === tmp4.enabledSwitchStyle) {
-        if (cResult[13] === combined) {
-          if (cResult[14] === tmp18) {
-            if (cResult[15] === tmp22) {
-              let tmp27;
-              if (cResult[16] === !tmp7) {
-                tmp27 = cResult[17];
-              }
-              return tmp27;
+        class E {
+          constructor(arg0) {
+            _require(arg0);
+            let tmp3;
+            const tmp2 = closure_3;
+            if (arg0) {
+              tmp3 = first1;
             }
+            tmp2(tmp3);
           }
         }
       }
-      const tmp29 = jsx(Form.FormRow, { label: combined, leadingStyle: tmp4.enabledSwitchStyle, leading: tmp18, subLabel: tmp22, disabled: !tmp7 });
       cResult[12] = tmp4.enabledSwitchStyle;
       cResult[13] = combined;
       cResult[14] = tmp18;
       cResult[15] = tmp22;
       cResult[16] = !tmp7;
-      cResult[17] = tmp29;
-      tmp27 = tmp29;
+      cResult[17] = jsx(Form.FormRow, { label: combined, leadingStyle: tmp4.enabledSwitchStyle, leading: tmp18, subLabel: tmp22, disabled: !tmp7 });
+      const tmp29 = jsx(Form.FormRow, { label: combined, leadingStyle: tmp4.enabledSwitchStyle, leading: tmp18, subLabel: tmp22, disabled: !tmp7 });
     }
-    const tmp25 = jsx(first1(15882), { disabled: !tmp7, disabledOpacity: !tmp7, initialValue: ref, onValueChange: tmp13 });
     cResult[9] = !tmp7;
     cResult[10] = !tmp7;
-    cResult[11] = tmp25;
-    tmp22 = tmp25;
+    cResult[11] = jsx(first1(16141), { disabled: !tmp7, disabledOpacity: !tmp7, initialValue: ref, onValueChange: tmp13 });
+    const tmp25 = jsx(first1(16141), { disabled: !tmp7, disabledOpacity: !tmp7, initialValue: ref, onValueChange: tmp13 });
   }
-  const tmp19 = jsx(FormSwitch.FormSwitch, { value: tmp7, onValueChange: tmp17 });
   cResult[6] = tmp7;
   cResult[7] = tmp17;
-  cResult[8] = tmp19;
-  tmp18 = tmp19;
-}) : (() => {
+  cResult[8] = jsx(FormSwitch.FormSwitch, { value: tmp7, onValueChange: tmp17 });
+  const tmp19 = jsx(FormSwitch.FormSwitch, { value: tmp7, onValueChange: tmp17 });
+}) : (function VEVOOPropBlurAmount() {
   let closure_2;
   let onValueChange;
+  let require;
   let tmp3;
   const tmp = closure_8();
   let tmp2 = onValueChange(react.useState(false), 2);

@@ -1,13 +1,13 @@
-// Module ID: 12846
-// Function ID: 12847
+// Module ID: 12993
+// Function ID: 12994
 // Name: UserProfileActivityCardBadges
-// Dependencies: [19, 17, 1085, 21, 12847, 558, 576, 2]
+// Dependencies: [19, 17, 1085, 21, 12994, 558, 576, 2]
 
-// Module 12846 (UserProfileActivityCardBadges)
+// Module 12993 (UserProfileActivityCardBadges)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import UserProfileActivityBadges from "UserProfileActivityBadges" /* 12847 */;
+import UserProfileActivityBadges from "UserProfileActivityBadges" /* 12994 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ function getActivityBadges(activity) {
 const View = react_native.View;
 const ActivityTypes = Constants.ActivityTypes;
 const jsx = Fragment.jsx;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileActivityCardBadges(activity) {
   const obj = activity(576);
   const cResult = obj.c(12);
   activity = activity.activity;
@@ -109,7 +109,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
   tmp4 = mapped;
   tmp3 = tmp9;
   tmp2 = tmp10;
-}) : ((activity) => {
+}) : (function UserProfileActivityCardBadges(activity) {
   activity = activity.activity;
   const style = activity.style;
   const arr = getActivityBadges(activity);

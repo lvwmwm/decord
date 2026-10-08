@@ -1,30 +1,30 @@
-// Module ID: 13201
-// Function ID: 13202
+// Module ID: 13501
+// Function ID: 13502
 // Name: PremiumPlanWhatYouLoseActionSheet
-// Dependencies: [19, 17, 1379, 21, 4896, 587, 558, 576, 5981, 4892, 4534, 6664, 13202, 38, 13206, 1126, 13207, 13156, 13208, 13209, 4860, 10407, 6950, 5601, 6652, 2]
+// Dependencies: [19, 17, 1391, 21, 5090, 587, 558, 576, 6164, 5086, 4726, 6841, 13502, 38, 13506, 1126, 13507, 12869, 13508, 13509, 5054, 10004, 7139, 5375, 6829, 2]
 
-// Module 13201 (PremiumPlanWhatYouLoseActionSheet)
+// Module 13501 (PremiumPlanWhatYouLoseActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl9 from "intl" /* 1126 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10407 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13156 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13206 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13207 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13208 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 13209 */;
+import intl15 from "intl" /* 1126 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10004 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12869 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13506 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13507 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13508 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 13509 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, hideActionSheetResult, tmp2, tmp3;
+let BottomSheet;
 
 let metroImportDefault;
 let metroRequire;
@@ -33,7 +33,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 const View = react_native.View;
 const PremiumTypes = PremiumConstants.PremiumTypes;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -46,7 +46,7 @@ obj4 = { marginBottom: 16, borderRadius: nativeDefault.radii.sm, display: "flex"
 obj5 = { textAlign: "center", paddingVertical: 8, color: nativeDefault.colors.TEXT_SUBTLE };
 let closure_8 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function WhatYouLoseItem(arg0) {
   let imageSource;
   let items;
   let text;
@@ -93,7 +93,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = text;
   cResult[4] = tmp10;
   tmp9 = tmp10;
-}) : ((arg0) => {
+}) : (function WhatYouLoseItem(arg0) {
   let imageSource;
   let items;
   let text;
@@ -107,8 +107,11 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let obj6 = { DOWNGRADE: 0, [0]: "DOWNGRADE", CANCEL: 1, [1]: "CANCEL" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((subscription) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPlanWhatYouLoseActionSheet(subscription) {
   let analyticsLocations;
+  let arr;
+  let button;
+  let footer;
   let intl;
   let intl2;
   let intl3;
@@ -117,10 +120,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((subscription) => {
   let intl7;
   let intl8;
   let items4;
+  let items5;
+  let items6;
   let mode;
   let onContinue;
-  let tmp12;
-  let tmp29;
+  let tmp28;
   let tmp5;
   let tmpResult5;
   let tmpResult6;
@@ -144,381 +148,396 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((subscription) => {
   const whatYouLoseProfileTier1Source = tmpResult4.useWhatYouLoseProfileTier1Source();
   subscription(analyticsLocations[13])(null != tmp5, "Expected premium type");
   if (PremiumTypes.TIER_0 === tmp5) {
+    let tmp25;
     let tmp26;
-    let tmp27;
     const _Symbol8 = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { imageSource: subscription(analyticsLocations[14]), text: intl7.format(tmp(analyticsLocations[15]).t["0hUHi6"], {}) };
       intl7 = tmp(tmp2[15]).intl;
       cResult[2] = obj2;
-      tmp26 = obj2;
+      tmp25 = obj2;
     } else {
-      tmp26 = cResult[2];
+      tmp25 = cResult[2];
     }
     const _Symbol9 = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { imageSource: subscription(analyticsLocations[16]), text: intl8.format(tmp(analyticsLocations[15]).t.wFWO6D, {}) };
       intl8 = tmp(tmp2[15]).intl;
       cResult[3] = obj3;
-      tmp27 = obj3;
+      tmp26 = obj3;
     } else {
-      tmp27 = cResult[3];
+      tmp26 = cResult[3];
     }
-    if (cResult[4] === tmp26) {
-      let tmp28;
-      if (cResult[5] === tmp27) {
-        tmp28 = cResult[6];
+    if (cResult[4] === tmp25) {
+      let tmp27;
+      if (cResult[5] === tmp26) {
+        tmp27 = cResult[6];
       }
-      tmp12 = tmp28;
+      arr = tmp27;
     }
-    const items = [tmp26, tmp27];
-    cResult[4] = tmp26;
-    cResult[5] = tmp27;
+    const items = [tmp25, tmp26];
+    cResult[4] = tmp25;
+    cResult[5] = tmp26;
     cResult[6] = items;
-    tmp28 = items;
+    tmp27 = items;
   } else if (PremiumTypes.TIER_1 === tmp5) {
-    let tmp19;
+    let tmp18;
     const _Symbol5 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       const intl4 = tmp(tmp2[15]).intl;
       const formatResult = intl4.format(tmp(analyticsLocations[15]).t.xCaYwE, {});
       cResult[7] = formatResult;
-      tmp19 = formatResult;
+      tmp18 = formatResult;
     } else {
-      tmp19 = cResult[7];
+      tmp18 = cResult[7];
     }
-    if (cResult[8] === tmp19) {
+    if (cResult[8] === tmp18) {
+      let tmp20;
       let tmp21;
       let tmp22;
-      let tmp23;
       if (cResult[9] === whatYouLoseProfileTier1Source) {
-        tmp21 = cResult[10];
+        tmp20 = cResult[10];
       }
       const _Symbol6 = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
         const obj4 = { imageSource: subscription(analyticsLocations[17]), text: intl5.format(tmp(analyticsLocations[15]).t.wK04T1, {}) };
         intl5 = tmp(tmp2[15]).intl;
         cResult[11] = obj4;
-        tmp22 = obj4;
+        tmp21 = obj4;
       } else {
-        tmp22 = cResult[11];
+        tmp21 = cResult[11];
       }
       const _Symbol7 = Symbol;
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
         const obj5 = { imageSource: subscription(analyticsLocations[18]), text: intl6.format(tmp(analyticsLocations[15]).t.K4Hv69, {}) };
         intl6 = tmp(tmp2[15]).intl;
         cResult[12] = obj5;
-        tmp23 = obj5;
+        tmp22 = obj5;
       } else {
-        tmp23 = cResult[12];
+        tmp22 = cResult[12];
       }
-      if (cResult[13] === tmp21) {
-        if (cResult[14] === tmp22) {
-          let tmp24;
-          if (cResult[15] === tmp23) {
-            tmp24 = cResult[16];
+      if (cResult[13] === tmp20) {
+        if (cResult[14] === tmp21) {
+          let tmp23;
+          if (cResult[15] === tmp22) {
+            tmp23 = cResult[16];
           }
-          tmp12 = tmp24;
+          arr = tmp23;
         }
       }
-      const items1 = [tmp21, tmp22, tmp23];
-      cResult[13] = tmp21;
-      cResult[14] = tmp22;
-      cResult[15] = tmp23;
+      const items1 = [tmp20, tmp21, tmp22];
+      cResult[13] = tmp20;
+      cResult[14] = tmp21;
+      cResult[15] = tmp22;
       cResult[16] = items1;
-      tmp24 = items1;
+      tmp23 = items1;
     }
-    obj6 = { imageSource: whatYouLoseProfileTier1Source, text: tmp19 };
-    cResult[8] = tmp19;
+    obj6 = { imageSource: whatYouLoseProfileTier1Source, text: tmp18 };
+    cResult[8] = tmp18;
     cResult[9] = whatYouLoseProfileTier1Source;
     cResult[10] = obj6;
-    tmp21 = obj6;
+    tmp20 = obj6;
   } else if (PremiumTypes.TIER_2 === tmp5) {
+    let tmp13;
     let tmp14;
     let tmp15;
-    let tmp16;
     const _Symbol2 = Symbol;
     if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
       const obj7 = { imageSource: subscription(analyticsLocations[19]), text: intl.format(tmp(analyticsLocations[15]).t["gpqr+n"], {}) };
       intl = tmp(tmp2[15]).intl;
       cResult[17] = obj7;
-      tmp14 = obj7;
+      tmp13 = obj7;
     } else {
-      tmp14 = cResult[17];
+      tmp13 = cResult[17];
     }
     const _Symbol3 = Symbol;
     if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
       const obj8 = { imageSource: subscription(analyticsLocations[18]), text: intl2.format(tmp(analyticsLocations[15]).t.wRxEDW, {}) };
       intl2 = tmp(tmp2[15]).intl;
       cResult[18] = obj8;
-      tmp15 = obj8;
+      tmp14 = obj8;
     } else {
-      tmp15 = cResult[18];
+      tmp14 = cResult[18];
     }
     const _Symbol4 = Symbol;
     if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
       const obj9 = { imageSource: subscription(analyticsLocations[17]), text: intl3.format(tmp(analyticsLocations[15]).t["4WZ7T2"], {}) };
       intl3 = tmp(tmp2[15]).intl;
       cResult[19] = obj9;
-      tmp16 = obj9;
+      tmp15 = obj9;
     } else {
-      tmp16 = cResult[19];
+      tmp15 = cResult[19];
     }
-    if (cResult[20] === tmp14) {
-      if (cResult[21] === tmp15) {
-        let tmp17;
-        if (cResult[22] === tmp16) {
-          tmp17 = cResult[23];
+    if (cResult[20] === tmp13) {
+      if (cResult[21] === tmp14) {
+        let tmp16;
+        if (cResult[22] === tmp15) {
+          tmp16 = cResult[23];
         }
-        tmp12 = tmp17;
+        arr = tmp16;
       }
     }
-    const items2 = [tmp14, tmp15, tmp16];
-    cResult[20] = tmp14;
-    cResult[21] = tmp15;
-    cResult[22] = tmp16;
+    const items2 = [tmp13, tmp14, tmp15];
+    cResult[20] = tmp13;
+    cResult[21] = tmp14;
+    cResult[22] = tmp15;
     cResult[23] = items2;
-    tmp17 = items2;
+    tmp16 = items2;
   } else {
     const _Symbol = Symbol;
     if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
       const items3 = [];
       cResult[24] = items3;
-      tmp12 = items3;
+      arr = items3;
     } else {
-      tmp12 = cResult[24];
+      arr = cResult[24];
     }
   }
   if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
-    class B {
-      constructor() {
-        obj = subscription(analyticsLocations[20]);
-        hideActionSheetResult = obj.hideActionSheet();
-        return;
-      }
+    function onClose() {
+      const obj = subscription(analyticsLocations[20]);
+      obj.hideActionSheet();
     }
-    cResult[25] = B;
-    tmp29 = B;
+    cResult[25] = onClose;
+    tmp28 = onClose;
   } else {
-    class B {
-      constructor() {
-        obj = subscription(analyticsLocations[20]);
-        hideActionSheetResult = obj.hideActionSheet();
-        return;
-      }
-    }
+    tmp28 = cResult[25];
   }
-  B = tmp29;
+  let closure_3 = tmp28;
   if (cResult[26] === analyticsLocations) {
+    let tmp29;
     let tmp30;
-    class B {
-      constructor() {
-        obj = subscription(analyticsLocations[20]);
-        hideActionSheetResult = obj.hideActionSheet();
-        return;
-      }
+    let tmp31;
+    let tmp34;
+    if (cResult[27] === subscription) {
+      tmp29 = cResult[28];
     }
     if (cResult[29] !== onContinue) {
-      class U {
-        constructor(arg0) {
-          tmp = onContinue(subscription);
-          tmp2 = closure_3();
-          return;
-        }
+      function onContinueDowngradeOrCancellation(arg0) {
+        onContinue(arg0);
+        closure_3();
       }
       cResult[29] = onContinue;
-      cResult[30] = U;
-      tmp30 = U;
+      cResult[30] = onContinueDowngradeOrCancellation;
+      tmp30 = onContinueDowngradeOrCancellation;
     } else {
-      class U {
-        constructor(arg0) {
-          tmp = onContinue(subscription);
-          tmp2 = closure_3();
-          return;
-        }
-      }
+      tmp30 = cResult[30];
     }
-    U = tmp30;
+    let closure_4 = tmp30;
     if (cResult[31] !== tmp5) {
-      class U {
-        constructor(arg0) {
-          tmp = onContinue(subscription);
-          tmp2 = closure_3();
-          return;
-        }
-      }
       const obj10 = { premiumType: tmp5 };
+      const tmp33 = closure_6(subscription(analyticsLocations[22]), obj10);
       cResult[31] = tmp5;
-      cResult[32] = closure_6(subscription(analyticsLocations[22]), obj10);
-      const tmp32 = closure_6(subscription(analyticsLocations[22]), obj10);
+      cResult[32] = tmp33;
+      tmp31 = tmp33;
     } else {
-      class U {
-        constructor(arg0) {
-          tmp = onContinue(subscription);
-          tmp2 = closure_3();
-          return;
-        }
-      }
+      tmp31 = cResult[32];
     }
     const body = tmp4.body;
     if (cResult[33] !== mode) {
       let stringResult;
-      class U {
-        constructor(arg0) {
-          tmp = onContinue(subscription);
-          tmp2 = closure_3();
-          return;
-        }
-      }
       if (mode === obj6.CANCEL) {
-        class U {
-          constructor(arg0) {
-            tmp = onContinue(subscription);
-            tmp2 = closure_3();
-            return;
-          }
-        }
-        stringResult = obj14.string(tmp(tmp2[15]).t.PWq8TL);
+        const intl10 = tmp(tmp2[15]).intl;
+        stringResult = intl10.string(tmp(tmp2[15]).t.PWq8TL);
       } else {
-        class U {
-          constructor(arg0) {
-            tmp = onContinue(subscription);
-            tmp2 = closure_3();
-            return;
-          }
-        }
-        stringResult = obj13.string(tmp(tmp2[15]).t["7VcWW0"]);
+        const intl9 = tmp(tmp2[15]).intl;
+        stringResult = intl9.string(tmp(tmp2[15]).t["7VcWW0"]);
       }
       cResult[33] = mode;
       cResult[34] = stringResult;
+      tmp34 = stringResult;
     } else {
-      class U {
-        constructor(arg0) {
-          tmp = onContinue(subscription);
-          tmp2 = closure_3();
-          return;
-        }
-      }
+      tmp34 = cResult[34];
     }
     if (cResult[35] === tmp4.title) {
+      let tmp37;
       let format2Result;
-      class U {
-        constructor(arg0) {
-          tmp = onContinue(subscription);
-          tmp2 = closure_3();
-          return;
-        }
+      if (cResult[36] === tmp34) {
+        tmp37 = cResult[37];
       }
       if (cResult[38] === mode) {
-        class U {
-          constructor(arg0) {
-            tmp = onContinue(subscription);
-            tmp2 = closure_3();
-            return;
-          }
+        let tmp40;
+        if (cResult[39] === tmp5) {
+          tmp40 = cResult[40];
         }
         if (cResult[41] === tmp4.subtitle) {
-          class U {
-            constructor(arg0) {
-              tmp = onContinue(subscription);
-              tmp2 = closure_3();
-              return;
-            }
+          let tmp43;
+          let tmp46;
+          if (cResult[42] === tmp40) {
+            tmp43 = cResult[43];
           }
-          if (cResult[44] !== tmp12) {
-            class U {
-              constructor(arg0) {
-                tmp = onContinue(subscription);
-                tmp2 = closure_3();
-                return;
-              }
-            }
-            cResult[44] = tmp12;
-            cResult[45] = tmp47;
+          if (cResult[44] !== arr) {
+            const mapped = arr.map((item, index) => {
+              const obj = {};
+              const merged = Object.assign(item);
+              return closure_1_6(closure_1_9, obj, index);
+            });
+            cResult[44] = arr;
+            cResult[45] = mapped;
+            tmp46 = mapped;
           } else {
-            class U {
-              constructor(arg0) {
-                tmp = onContinue(subscription);
-                tmp2 = closure_3();
-                return;
-              }
-            }
+            tmp46 = cResult[45];
           }
           if (cResult[46] === tmp4.body) {
-            class U {
-              constructor(arg0) {
-                tmp = onContinue(subscription);
-                tmp2 = closure_3();
-                return;
+            if (cResult[47] === tmp43) {
+              if (cResult[48] === tmp46) {
+                let tmp48;
+                let tmp52;
+                let tmp54;
+                if (cResult[49] === tmp37) {
+                  tmp48 = cResult[50];
+                }
+                const _Symbol10 = Symbol;
+                ({ footer, button } = tmp4);
+                if (cResult[51] === Symbol.for("react.memo_cache_sentinel")) {
+                  const intl13 = tmp(tmp2[15]).intl;
+                  const stringResult1 = intl13.string(tmp(analyticsLocations[15]).t["3PatSz"]);
+                  cResult[51] = stringResult1;
+                  tmp52 = stringResult1;
+                } else {
+                  tmp52 = cResult[51];
+                }
+                if (cResult[52] !== tmp30) {
+                  const obj11 = {
+                    text: tmp52,
+                    grow: true,
+                    onPress() {
+                                      closure_4(PremiumAnalyticsUtils.STEP_ANALYTICS_NAMES[PremiumAnalyticsUtils.CancellationFlowSteps.WHAT_YOU_LOSE]);
+                                    }
+                  };
+                  const tmp56 = closure_6(tmp(analyticsLocations[23]).Button, obj11);
+                  cResult[52] = tmp30;
+                  cResult[53] = tmp56;
+                  tmp54 = tmp56;
+                } else {
+                  tmp54 = cResult[53];
+                }
+                if (cResult[54] === tmp4.button) {
+                  let tmp57;
+                  let tmp61;
+                  if (cResult[55] === tmp54) {
+                    tmp57 = cResult[56];
+                  }
+                  const _Symbol11 = Symbol;
+                  const keepText = tmp4.keepText;
+                  if (cResult[57] === Symbol.for("react.memo_cache_sentinel")) {
+                    const intl14 = tmp(tmp2[15]).intl;
+                    const stringResult2 = intl14.string(tmp(analyticsLocations[15]).t.rzVN6j);
+                    cResult[57] = stringResult2;
+                    tmp61 = stringResult2;
+                  } else {
+                    tmp61 = cResult[57];
+                  }
+                  if (cResult[58] === tmp29) {
+                    let tmp63;
+                    if (cResult[59] === tmp4.keepText) {
+                      tmp63 = cResult[60];
+                    }
+                    if (cResult[61] === tmp4.footer) {
+                      if (cResult[62] === tmp57) {
+                        let tmp66;
+                        if (cResult[63] === tmp63) {
+                          tmp66 = cResult[64];
+                        }
+                        if (cResult[65] === tmp48) {
+                          if (cResult[66] === tmp66) {
+                            let tmp70;
+                            if (cResult[67] === tmp31) {
+                              tmp70 = cResult[68];
+                            }
+                            return tmp70;
+                          }
+                        }
+                        const obj12 = { children: items4 };
+                        items4 = [tmp31, tmp48, tmp66];
+                        const tmp72 = closure_7(tmp(analyticsLocations[24]).BottomSheet, obj12);
+                        cResult[65] = tmp48;
+                        cResult[66] = tmp66;
+                        cResult[67] = tmp31;
+                        cResult[68] = tmp72;
+                        tmp70 = tmp72;
+                      }
+                    }
+                    const obj13 = { style: footer, children: items5 };
+                    items5 = [tmp57, tmp63];
+                    const tmp69 = closure_7(closure_4, obj13);
+                    cResult[61] = tmp4.footer;
+                    cResult[62] = tmp57;
+                    cResult[63] = tmp63;
+                    cResult[64] = tmp69;
+                    tmp66 = tmp69;
+                  }
+                  const obj14 = { variant: "text-sm/medium", style: keepText, onPress: tmp29, children: tmp61 };
+                  const tmp65 = closure_6(tmp(analyticsLocations[9]).Text, obj14);
+                  cResult[58] = tmp29;
+                  cResult[59] = tmp4.keepText;
+                  cResult[60] = tmp65;
+                  tmp63 = tmp65;
+                }
+                const obj15 = { style: button, children: tmp54 };
+                const tmp60 = closure_6(closure_4, obj15);
+                cResult[54] = tmp4.button;
+                cResult[55] = tmp54;
+                cResult[56] = tmp60;
+                tmp57 = tmp60;
               }
             }
           }
-          const obj11 = { style: body, children: items4 };
-          items4 = [tmp35, tmp43, tmp46];
+          const obj16 = { style: body, children: items6 };
+          items6 = [tmp37, tmp43, tmp46];
+          const tmp51 = closure_7(closure_4, obj16);
           cResult[46] = tmp4.body;
           cResult[47] = tmp43;
           cResult[48] = tmp46;
-          cResult[49] = tmp35;
-          cResult[50] = closure_7(U, obj11);
-          const tmp51 = closure_7(U, obj11);
+          cResult[49] = tmp37;
+          cResult[50] = tmp51;
+          tmp48 = tmp51;
         }
-        const obj12 = { variant: "text-md/medium", style: tmp4.subtitle, children: tmp38 };
+        const obj17 = { variant: "text-md/medium", style: tmp4.subtitle, children: tmp40 };
+        const tmp45 = closure_6(tmp(analyticsLocations[9]).Text, obj17);
         cResult[41] = tmp4.subtitle;
-        cResult[42] = tmp38;
-        cResult[43] = closure_6(tmp(analyticsLocations[9]).Text, obj12);
-        const tmp45 = closure_6(tmp(analyticsLocations[9]).Text, obj12);
+        cResult[42] = tmp40;
+        cResult[43] = tmp45;
+        tmp43 = tmp45;
       }
       if (mode === obj6.CANCEL) {
-        class U {
-          constructor(arg0) {
-            tmp = onContinue(subscription);
-            tmp2 = closure_3();
-            return;
-          }
-        }
-        const format2 = tmp42.format;
-        const obj15 = { subscriptionName: tmpResult5.getPremiumTypeDisplayName(tmp5, true) };
+        const intl12 = tmp(tmp2[15]).intl;
+        const format2 = intl12.format;
+        const obj18 = { subscriptionName: tmpResult5.getPremiumTypeDisplayName(tmp5, true) };
         const jh5mUz = tmp(tmp2[15]).t.jh5mUz;
         tmpResult5 = tmp(analyticsLocations[10]);
-        format2Result = format2(jh5mUz, obj15);
+        format2Result = format2(jh5mUz, obj18);
       } else {
-        class U {
-          constructor(arg0) {
-            tmp = onContinue(subscription);
-            tmp2 = closure_3();
-            return;
-          }
-        }
-        const format = tmp40.format;
-        const obj16 = { subscriptionName: tmpResult6.getPremiumTypeDisplayName(tmp5, true) };
+        const intl11 = tmp(tmp2[15]).intl;
+        const format = intl11.format;
+        const obj19 = { subscriptionName: tmpResult6.getPremiumTypeDisplayName(tmp5, true) };
         const Qk34Ik = tmp(tmp2[15]).t.Qk34Ik;
         tmpResult6 = tmp(analyticsLocations[10]);
-        format2Result = format(Qk34Ik, obj16);
+        format2Result = format(Qk34Ik, obj19);
       }
       cResult[38] = mode;
       cResult[39] = tmp5;
       cResult[40] = format2Result;
+      tmp40 = format2Result;
     }
-    const obj17 = { variant: "heading-xl/extrabold", style: tmp4.title, children: tmp33 };
+    const obj20 = { variant: "heading-xl/extrabold", style: tmp4.title, children: tmp34 };
+    const tmp39 = closure_6(tmp(analyticsLocations[9]).Text, obj20);
     cResult[35] = tmp4.title;
-    cResult[36] = tmp33;
-    cResult[37] = closure_6(tmp(analyticsLocations[9]).Text, obj17);
-    const tmp37 = closure_6(tmp(analyticsLocations[9]).Text, obj17);
+    cResult[36] = tmp34;
+    cResult[37] = tmp39;
+    tmp37 = tmp39;
   }
-  class F {
-    constructor() {
-      tmp = closure_0(closure_2[21]);
-      obj = { subscription, analyticsLocations, fromStep: closure_0(closure_2[21]).STEP_ANALYTICS_NAMES[closure_0(undefined, closure_2[21]).CancellationFlowSteps.WHAT_YOU_LOSE], toStep: null };
-      trackPremiumSubscriptionCancellationFlowStep = tmp.trackPremiumSubscriptionCancellationFlowStep;
-      result = trackPremiumSubscriptionCancellationFlowStep(obj);
-      tmp3 = closure_3();
-      return;
-    }
+  function onCloseWithTracking() {
+    const trackPremiumSubscriptionCancellationFlowStep = PremiumAnalyticsUtils.trackPremiumSubscriptionCancellationFlowStep;
+    const obj = { subscription, analyticsLocations, fromStep: PremiumAnalyticsUtils.STEP_ANALYTICS_NAMES[PremiumAnalyticsUtils.CancellationFlowSteps.WHAT_YOU_LOSE], toStep: null };
+    const result = trackPremiumSubscriptionCancellationFlowStep(obj);
+    closure_3();
   }
   cResult[26] = analyticsLocations;
   cResult[27] = subscription;
-  cResult[28] = F;
-}) : ((arg0) => {
+  cResult[28] = onCloseWithTracking;
+  tmp29 = onCloseWithTracking;
+}) : (function PremiumPlanWhatYouLoseActionSheet(arg0) {
   let Button;
   let format2Result;
   let intl5;
@@ -527,7 +546,6 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((subscription) => {
   let items3;
   let mode;
   let obj11;
-  let require;
   let stringResult;
   let subscription;
   let tmp2Result;
@@ -552,33 +570,33 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((subscription) => {
     let intl7;
     let intl8;
     if (PremiumTypes.TIER_0 === premiumTypeFromSubscription) {
-      const obj2 = { imageSource: AssetRegistryDefault2, text: intl7.format(intl9.t["0hUHi6"], {}) };
-      intl7 = intl9.intl;
+      const obj2 = { imageSource: AssetRegistryDefault2, text: intl7.format(intl15.t["0hUHi6"], {}) };
+      intl7 = intl15.intl;
       const items = [obj2, ];
-      const obj3 = { imageSource: AssetRegistryDefault3, text: intl8.format(intl9.t.wFWO6D, {}) };
-      intl8 = intl9.intl;
+      const obj3 = { imageSource: AssetRegistryDefault3, text: intl8.format(intl15.t.wFWO6D, {}) };
+      intl8 = intl15.intl;
       items[1] = obj3;
       return items;
     } else if (PremiumTypes.TIER_1 === premiumTypeFromSubscription) {
-      const obj4 = { imageSource: whatYouLoseProfileTier1Source, text: intl4.format(intl9.t.xCaYwE, {}) };
-      intl4 = intl9.intl;
+      const obj4 = { imageSource: whatYouLoseProfileTier1Source, text: intl4.format(intl15.t.xCaYwE, {}) };
+      intl4 = intl15.intl;
       const items1 = [obj4, , ];
-      const obj5 = { imageSource: AssetRegistryDefault, text: intl5.format(intl9.t.wK04T1, {}) };
-      intl5 = intl9.intl;
+      const obj5 = { imageSource: AssetRegistryDefault, text: intl5.format(intl15.t.wK04T1, {}) };
+      intl5 = intl15.intl;
       items1[1] = obj5;
-      obj6 = { imageSource: AssetRegistryDefault4, text: intl6.format(intl9.t.K4Hv69, {}) };
-      intl6 = intl9.intl;
+      obj6 = { imageSource: AssetRegistryDefault4, text: intl6.format(intl15.t.K4Hv69, {}) };
+      intl6 = intl15.intl;
       items1[2] = obj6;
       return items1;
     } else if (PremiumTypes.TIER_2 === premiumTypeFromSubscription) {
-      const obj = { imageSource: AssetRegistryDefault5, text: intl.format(intl9.t["gpqr+n"], {}) };
-      intl = intl9.intl;
+      const obj = { imageSource: AssetRegistryDefault5, text: intl.format(intl15.t["gpqr+n"], {}) };
+      intl = intl15.intl;
       const items2 = [obj, , ];
-      const obj7 = { imageSource: AssetRegistryDefault4, text: intl2.format(intl9.t.wRxEDW, {}) };
-      intl2 = intl9.intl;
+      const obj7 = { imageSource: AssetRegistryDefault4, text: intl2.format(intl15.t.wRxEDW, {}) };
+      intl2 = intl15.intl;
       items2[1] = obj7;
-      const obj8 = { imageSource: AssetRegistryDefault, text: intl3.format(intl9.t["4WZ7T2"], {}) };
-      intl3 = intl9.intl;
+      const obj8 = { imageSource: AssetRegistryDefault, text: intl3.format(intl15.t["4WZ7T2"], {}) };
+      intl3 = intl15.intl;
       items2[2] = obj8;
       return items2;
     } else {
@@ -630,7 +648,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((subscription) => {
     text: intl5.string(require("intl").t["3PatSz"]),
     grow: true,
     onPress() {
-      _require(PremiumAnalyticsUtils.STEP_ANALYTICS_NAMES[PremiumAnalyticsUtils.CancellationFlowSteps.WHAT_YOU_LOSE]);
+      require(PremiumAnalyticsUtils.STEP_ANALYTICS_NAMES[PremiumAnalyticsUtils.CancellationFlowSteps.WHAT_YOU_LOSE]);
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
     }
@@ -641,7 +659,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((subscription) => {
   const obj12 = {
     variant: "text-sm/medium",
     style: tmp.keepText,
-    onPress() {
+    onPress: function onCloseWithTracking() {
       const trackPremiumSubscriptionCancellationFlowStep = PremiumAnalyticsUtils.trackPremiumSubscriptionCancellationFlowStep;
       const obj = { subscription, analyticsLocations, fromStep: PremiumAnalyticsUtils.STEP_ANALYTICS_NAMES[PremiumAnalyticsUtils.CancellationFlowSteps.WHAT_YOU_LOSE], toStep: null };
       const result = trackPremiumSubscriptionCancellationFlowStep(obj);

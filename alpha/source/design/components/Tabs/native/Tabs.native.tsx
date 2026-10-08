@@ -1,24 +1,23 @@
-// Module ID: 12297
-// Function ID: 12298
+// Module ID: 12395
+// Function ID: 12396
 // Name: Tabs
-// Dependencies: [19, 17, 2116, 21, 4618, 4896, 587, 558, 576, 5604, 9110, 12298, 6147, 1369, 2]
+// Dependencies: [19, 17, 2128, 21, 4810, 5090, 587, 558, 576, 5374, 9512, 12396, 6326, 1381, 2]
 
-// Module 12297 (Tabs)
+// Module 12395 (Tabs)
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4618 */;
-import spring from "spring" /* 5604 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6147 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9110 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4810 */;
+import spring from "spring" /* 5374 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6326 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9512 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
+import LocaleStore from "LocaleStore" /* 2128 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const ReanimatedRexport = ReanimatedRexport2;
-let state;
 
 let ScrollView;
 let closure_4;
@@ -64,7 +63,7 @@ const __initData4 = { code: "function TabsNativeTsx13(event_0){const{scrollOffse
 const __initData5 = { code: "function TabsNativeTsx14(){const{onEndDrag}=this.__closure;var _onEndDrag;(_onEndDrag=onEndDrag)===null||_onEndDrag===void 0||_onEndDrag();}" };
 const __initData6 = { code: "function TabsNativeTsx15(){const{scrollOffset,activeIndex,itemDimensions}=this.__closure;return{scrollOffset:scrollOffset.get(),activeIndex:activeIndex.get(),itemDimensions:itemDimensions.get()};}" };
 const __initData7 = { code: "function TabsNativeTsx16(props,prevState){const{cheapWorkletShallowEqual,itemSpacing,pageWidth,runOnJS,scrollToOffset,AUTO_SCROLL_BUFFER}=this.__closure;var _itemDimensions_0$act,_itemDimensions_0$act2,_itemDimensions_0$act3;if(props.activeIndex===(prevState===null||prevState===void 0?void 0:prevState.activeIndex))return;if(cheapWorkletShallowEqual(props,prevState!==null&&prevState!==void 0?prevState:undefined))return;const{scrollOffset:scrollOffset_0,activeIndex:activeIndex_0,itemDimensions:itemDimensions_0}=props;const width_0=itemDimensions_0.reduce(function(sum,item){var _item$width;return sum+((_item$width=item===null||item===void 0?void 0:item.width)!==null&&_item$width!==void 0?_item$width:0);},0);const itemOffset=((_itemDimensions_0$act=(_itemDimensions_0$act2=itemDimensions_0[activeIndex_0])===null||_itemDimensions_0$act2===void 0?void 0:_itemDimensions_0$act2.x)!==null&&_itemDimensions_0$act!==void 0?_itemDimensions_0$act:0)+(activeIndex_0-1)*itemSpacing;const itemWidth=(_itemDimensions_0$act3=itemDimensions_0[activeIndex_0])===null||_itemDimensions_0$act3===void 0?void 0:_itemDimensions_0$act3.width;if(width_0===0||itemOffset==null||itemWidth==null)return;if(scrollOffset_0+pageWidth<itemOffset+itemWidth){runOnJS(scrollToOffset)(itemOffset+AUTO_SCROLL_BUFFER);}else if(itemOffset<scrollOffset_0){runOnJS(scrollToOffset)(itemOffset-AUTO_SCROLL_BUFFER);}}" };
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tabs(state) {
   let formatCount;
   let grow;
   let ie;
@@ -476,13 +475,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
       grow,
       pressed: pressedIndex,
       selected: index === activeIndex.get(),
-      onPress() {
+      onPress: function handlePress() {
         setActiveIndex(index);
       },
-      onPressIn() {
+      onPressIn: function handlePressIn() {
         const result = pressedIndex.set(index);
       },
-      onPressOut() {
+      onPressOut: function handlePressOut() {
         const result = pressedIndex.set(-1);
       },
       variant
@@ -505,7 +504,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   cResult[19] = variant;
   cResult[20] = me;
   tmp17 = me;
-}) : ((state) => {
+}) : (function Tabs(state) {
   let fn2;
   let items5;
   let items6;
@@ -656,8 +655,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   A.__initData = __initData3;
   const animatedStyle = obj5.useAnimatedStyle(A);
   let obj7 = state(formatCount[4]);
-  let obj8 = { onScroll: P, onEndDrag: fn2 };
-  class P {
+  let obj8 = { onScroll: F, onEndDrag: fn2 };
+  class F {
     constructor(contentOffset) {
       const result = scrollOffset.set(contentOffset.contentOffset.x);
       if (onScrollWorklet != null) {
@@ -665,9 +664,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
       }
     }
   }
-  P.__closure = { scrollOffset, onScrollWorklet };
-  P.__workletHash = 12423910570232;
-  P.__initData = __initData4;
+  F.__closure = { scrollOffset, onScrollWorklet };
+  F.__workletHash = 12423910570232;
+  F.__initData = __initData4;
   fn2 = function w() {
     if (onEndDrag != null) {
       tmp();
@@ -772,13 +771,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
           grow,
           pressed,
           selected: index === closure_7.get(),
-          onPress() {
+          onPress: function handlePress() {
             setActiveIndex(index);
           },
-          onPressIn() {
+          onPressIn: function handlePressIn() {
             const result = pressed.set(index);
           },
-          onPressOut() {
+          onPressOut: function handlePressOut() {
             const result = pressed.set(-1);
           },
           variant

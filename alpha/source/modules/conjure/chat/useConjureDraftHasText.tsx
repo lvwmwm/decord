@@ -1,19 +1,19 @@
-// Module ID: 16756
-// Function ID: 16757
+// Module ID: 17031
+// Function ID: 17032
 // Name: useConjureDraftHasText
-// Dependencies: [32, 19, 16757, 558, 576, 2]
+// Dependencies: [32, 19, 17032, 558, 576, 2]
 
-// Module 16756 (useConjureDraftHasText)
+// Module 17031 (useConjureDraftHasText)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 16757 */;
+import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 17032 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureDraftHasText(arg0) {
   let closure_0;
   let tmp2;
   let tmp4;
@@ -67,16 +67,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = tmp8;
   cResult[5] = tmp10;
   tmp9 = tmp10;
-}) : ((arg0) => {
+}) : (function useConjureDraftHasText(arg0) {
   let tmp2;
   let tmp3;
-  const f126377 = () => {
+  const f127644 = () => {
     const str = ConjureComposerDraftStore.getDraft(closure_0);
     return "" !== str.trim();
   };
   let closure_0 = arg0;
-  [tmp2, tmp3] = react.useState(f126377);
-  _slicedToArray(react.useState(f126377), 2);
+  [tmp2, tmp3] = react.useState(f127644);
+  _slicedToArray(react.useState(f127644), 2);
   const tmp4 = _slicedToArray(react.useState(arg0), 2);
   const tmp5 = tmp4[1];
   if (tmp4[0] !== arg0) {

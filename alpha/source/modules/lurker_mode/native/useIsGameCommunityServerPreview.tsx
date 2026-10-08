@@ -1,12 +1,12 @@
-// Module ID: 16069
-// Function ID: 16070
+// Module ID: 16329
+// Function ID: 16330
 // Name: useIsGameCommunityServerPreview
-// Dependencies: [4516, 1085, 558, 576, 504, 2]
+// Dependencies: [4708, 1085, 558, 576, 504, 2]
 // Exports: isGameCommunityServerPreview
 
-// Module 16069 (useIsGameCommunityServerPreview)
+// Module 16329 (useIsGameCommunityServerPreview)
 import Constants from "Constants" /* 1085 */;
-import LurkingStore from "LurkingStore" /* 4516 */;
+import LurkingStore from "LurkingStore" /* 4708 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require;
 
 const JoinGuildSources = Constants.JoinGuildSources;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsGameCommunityServerPreview(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -51,7 +51,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useIsGameCommunityServerPreview(arg0) {
   let closure_0;
   _require = arg0;
   const items = [LurkingStore];

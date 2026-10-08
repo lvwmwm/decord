@@ -1,16 +1,16 @@
-// Module ID: 7929
-// Function ID: 7930
+// Module ID: 8348
+// Function ID: 8349
 // Name: UserProfileBanner
-// Dependencies: [32, 19, 17, 1085, 21, 4896, 558, 576, 2028, 7930, 1402, 7937, 5916, 1126, 7938, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5090, 558, 576, 2040, 8349, 1414, 8356, 6189, 1126, 8103, 2]
 
-// Module 7929 (UserProfileBanner)
+// Module 8348 (UserProfileBanner)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
-import BannerDefault from "Banner" /* 7937 */;
+import BannerDefault from "Banner" /* 8356 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,15 +22,16 @@ const View = react_native.View;
 const BANNER_HEIGHT = Constants.BANNER_HEIGHT;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = createStyles.createStyles({ bannerContainer: { position: "relative" }, gifTag: { position: "absolute", left: 12, top: 12, right: "auto", bottom: "auto" } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileBanner(style) {
   let backgroundColor;
   let bannerHeight;
   let bannerSafeArea;
   let displayProfile;
+  let intl;
+  let items;
   let pendingAccentColor;
   let pendingAvatarSrc;
   let pendingBanner;
-  let tmp13;
   let user;
   let userProfileBannerBackgroundColor;
   let tmp = displayProfile;
@@ -50,7 +51,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     bannerHeight = backgroundColor;
   }
   const tmp4 = undefined !== disableInteraction && disableInteraction;
-  userProfileBannerBackgroundColor();
+  const tmp5 = userProfileBannerBackgroundColor();
   const GifAutoPlay = tmp(tmp2[8]).GifAutoPlay;
   const setting = GifAutoPlay.useSetting();
   const tmp7 = pendingThemeColors(num.useState(false), 2);
@@ -74,6 +75,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
         if (cResult[5] === (setting || backgroundColor)) {
           if (cResult[6] === displayProfile) {
             let tmp14;
+            let tmp19;
             if (cResult[7] === pendingBanner) {
               source = cResult[8];
               tmp14 = cResult[9];
@@ -85,24 +87,96 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
               tmp14 = !tmp4;
             }
             if (cResult[10] !== backgroundColor) {
-              class M {
-                constructor() {
-                  closure_7(!first);
-                }
+              function handleToggleAnimation() {
+                closure_7(!first);
               }
               cResult[10] = backgroundColor;
-              cResult[11] = M;
+              cResult[11] = handleToggleAnimation;
+              tmp19 = handleToggleAnimation;
             } else {
-              class M {
-                constructor() {
-                  closure_7(!first);
-                }
-              }
+              tmp19 = cResult[11];
             }
             if (cResult[12] === bannerHeight) {
-              class M {
-                constructor() {
-                  closure_7(!first);
+              if (cResult[13] === num) {
+                if (cResult[14] === tmp13) {
+                  if (cResult[15] === userProfileBannerBackgroundColor) {
+                    let banner;
+                    const tmp20 = cResult[16];
+                    if (displayProfile != null) {
+                      banner = displayProfile.banner;
+                    }
+                    if (tmp20 === banner) {
+                      let primaryColor;
+                      const tmp22 = cResult[17];
+                      if (displayProfile != null) {
+                        primaryColor = displayProfile.primaryColor;
+                      }
+                      if (tmp22 === primaryColor) {
+                        if (cResult[18] === pendingAccentColor) {
+                          let first1;
+                          const tmp24 = cResult[19];
+                          if (pendingThemeColors != null) {
+                            first1 = pendingThemeColors[0];
+                          }
+                          if (tmp24 === first1) {
+                            let tmp26;
+                            let tmp26Result;
+                            if (cResult[20] === style) {
+                              tmp26 = cResult[21];
+                            }
+                            if (cResult[22] === (setting || backgroundColor)) {
+                              if (cResult[23] === tmp14) {
+                                if (cResult[24] === tmp19) {
+                                  if (cResult[25] === tmp26) {
+                                    let tmp30;
+                                    if (cResult[26] === tmp5.gifTag) {
+                                      tmp30 = cResult[27];
+                                    }
+                                    if (cResult[28] === tmp5.bannerContainer) {
+                                      let tmp36;
+                                      if (cResult[29] === tmp30) {
+                                        tmp36 = cResult[30];
+                                      }
+                                      return tmp36;
+                                    }
+                                    const obj2 = { style: tmp5.bannerContainer, children: tmp30 };
+                                    const tmp39 = closure_7(bannerHeight, obj2);
+                                    cResult[28] = tmp5.bannerContainer;
+                                    cResult[29] = tmp30;
+                                    cResult[30] = tmp39;
+                                    tmp36 = tmp39;
+                                  }
+                                }
+                              }
+                            }
+                            if (tmp14) {
+                              const obj3 = { onPress: tmp19, accessibilityRole: "button", accessibilityLabel: intl.string(tmp(tmp2[13]).t["3fzj/l"]), children: items };
+                              const PressableOpacity = tmp(tmp2[12]).PressableOpacity;
+                              intl = tmp(tmp2[13]).intl;
+                              items = [tmp26(), ];
+                              let tmp33 = null;
+                              const tmp32 = source;
+                              if (!(setting || backgroundColor)) {
+                                const obj4 = { style: tmp5.gifTag };
+                                tmp33 = closure_7(style(tmp2[14]), obj4);
+                              }
+                              items[1] = tmp33;
+                              tmp26Result = tmp32(PressableOpacity, obj3);
+                            } else {
+                              tmp26Result = tmp26();
+                            }
+                            cResult[22] = setting || backgroundColor;
+                            cResult[23] = tmp14;
+                            cResult[24] = tmp19;
+                            cResult[25] = tmp26;
+                            cResult[26] = tmp5.gifTag;
+                            cResult[27] = tmp26Result;
+                            tmp30 = tmp26Result;
+                          }
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -110,31 +184,22 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
             cResult[13] = num;
             cResult[14] = tmp13;
             cResult[15] = userProfileBannerBackgroundColor;
+            let banner1;
             if (displayProfile != null) {
-              class M {
-                constructor() {
-                  closure_7(!first);
-                }
-              }
+              banner1 = displayProfile.banner;
             }
-            cResult[16] = undefined;
+            cResult[16] = banner1;
+            let primaryColor1;
             if (displayProfile != null) {
-              class M {
-                constructor() {
-                  closure_7(!first);
-                }
-              }
+              primaryColor1 = displayProfile.primaryColor;
             }
-            cResult[17] = undefined;
+            cResult[17] = primaryColor1;
             cResult[18] = pendingAccentColor;
+            let first2;
             if (pendingThemeColors != null) {
-              class M {
-                constructor() {
-                  closure_7(!first);
-                }
-              }
+              first2 = pendingThemeColors[0];
             }
-            const fn = function q() {
+            function renderBanner() {
               const obj = { style, bannerSource: source, backgroundColor, bannerSafeArea: num, bannerHeight };
               backgroundColor = undefined;
               const tmp = metroImportDefault;
@@ -160,73 +225,47 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
                 banner = displayProfile.banner;
               }
               return tmp(tmp2, obj, banner);
-            };
-            cResult[19] = undefined;
+            }
+            cResult[19] = first2;
             cResult[20] = style;
-            cResult[21] = fn;
+            cResult[21] = renderBanner;
+            tmp26 = renderBanner;
           }
         }
         if (undefined !== pendingBanner) {
           let previewBanner;
-          class M {
-            constructor() {
-              closure_7(!first);
-            }
-          }
           if (displayProfile != null) {
-            class M {
-              constructor() {
-                closure_7(!first);
-              }
-            }
             previewBanner = displayProfile.getPreviewBanner(pendingBanner, tmp9, 600);
           }
           bannerURL = previewBanner;
-        } else {
-          class M {
-            constructor() {
-              closure_7(!first);
-            }
-          }
-          if (displayProfile != null) {
-            class M {
-              constructor() {
-                closure_7(!first);
-              }
-            }
-            tmp16[0] = setting || backgroundColor;
-            bannerURL = displayProfile.getBannerURL(tmp16);
-          }
+        } else if (displayProfile != null) {
+          const obj5 = { canAnimate: setting || backgroundColor, size: 600 };
+          bannerURL = displayProfile.getBannerURL(obj5);
         }
         source = null;
         if (null != bannerURL) {
-          class M {
-            constructor() {
-              closure_7(!first);
-            }
-          }
-          source = obj4.makeSource(bannerURL);
+          const tmpResult3 = tmp(tmp2[10]);
+          source = tmpResult3.makeSource(bannerURL);
         }
-        const tmpResult2 = tmp(tmp2[10]);
-        const isAnimatedImageURLResult = tmpResult2.isAnimatedImageURL(bannerURL);
+        const tmpResult4 = tmp(tmp2[10]);
+        const isAnimatedImageURLResult = tmpResult4.isAnimatedImageURL(bannerURL);
         cResult[5] = setting || backgroundColor;
         cResult[6] = displayProfile;
         cResult[7] = pendingBanner;
         cResult[8] = source;
         cResult[9] = isAnimatedImageURLResult;
         tmp14 = isAnimatedImageURLResult;
-        tmp13 = source;
       }
     }
   }
-  const obj2 = { user, guildId, pendingAvatarSrc, displayProfile };
+  const obj6 = { user, guildId, pendingAvatarSrc, displayProfile };
   cResult[0] = displayProfile;
   cResult[1] = pendingAvatarSrc;
   cResult[2] = guildId;
   cResult[3] = user;
-  cResult[4] = obj2;
-  tmp11 = obj2;
-}) : ((displayProfile) => {
+  cResult[4] = obj6;
+  tmp11 = obj6;
+}) : (function UserProfileBanner(displayProfile) {
   let backgroundColor;
   let bannerSafeArea;
   let bannerURL;
@@ -317,7 +356,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
       let renderBannerResult;
       if (!disableInteraction) {
         const obj4 = {
-          onPress() {
+          onPress: function handleToggleAnimation() {
                   closure_7(!first);
                 },
           accessibilityRole: "button",

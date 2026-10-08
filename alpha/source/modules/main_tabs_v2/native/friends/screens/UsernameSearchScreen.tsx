@@ -1,19 +1,17 @@
-// Module ID: 16969
-// Function ID: 16970
+// Module ID: 17250
+// Function ID: 17251
 // Name: UsernameSearchScreen
-// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 1252, 6478, 5777, 7518, 1369, 5918, 1126, 13684, 6544, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 587, 558, 576, 1264, 6656, 5360, 9241, 1381, 10211, 1126, 13906, 6720, 2]
 
-// Module 16969 (UsernameSearchScreen)
+// Module 17250 (UsernameSearchScreen)
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let navigation;
 
 let c9;
 let closure_4;
@@ -38,7 +36,7 @@ obj4 = { paddingTop: nativeDefault.space.PX_40 };
 obj5 = { flexGrow: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: nativeDefault.space.PX_16 };
 obj6 = { marginTop: nativeDefault.space.PX_16, backgroundColor: "transparent", paddingHorizontal: 0 };
 let closure_10 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UsernameSearchScreen(navigation) {
   let constants2;
   let ref;
   let tmp10;
@@ -65,10 +63,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
   }
   let obj2 = react;
   const effect = react.useEffect(tmp5, tmp6);
-  const insets = ref(6478)().insets;
+  const insets = ref(6656)().insets;
   ref = react.useRef(null);
   if (cResult[2] !== navigation) {
-    class S {
+    class T {
       constructor() {
         return navigation.addListener("transitionEnd", (data) => {
           let closing = data.data.closing;
@@ -87,12 +85,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
     }
     const items1 = [navigation];
     cResult[2] = navigation;
-    cResult[3] = S;
+    cResult[3] = T;
     cResult[4] = items1;
     tmp10 = items1;
-    tmp9 = S;
+    tmp9 = T;
   } else {
-    class S {
+    class T {
       constructor() {
         return navigation.addListener("transitionEnd", (data) => {
           let closing = data.data.closing;
@@ -112,10 +110,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
     tmp10 = cResult[4];
   }
   const effect1 = obj2.useEffect(tmp9, tmp10);
-  const tmpResult = navigation(7518);
+  const tmpResult = navigation(9241);
   const clientThemesOverride = tmpResult.useClientThemesOverride();
   if (cResult[5] === insets.top) {
-    class S {
+    class T {
       constructor() {
         return navigation.addListener("transitionEnd", (data) => {
           let closing = data.data.closing;
@@ -134,9 +132,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
     }
   }
   let tmp13 = null;
-  const tmpResult2 = navigation(1369);
+  const tmpResult2 = navigation(1381);
   if (tmpResult2.isIOS()) {
-    class S {
+    class T {
       constructor() {
         return navigation.addListener("transitionEnd", (data) => {
           let closing = data.data.closing;
@@ -154,7 +152,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
       }
     }
     if (null != clientThemesOverride) {
-      class S {
+      class T {
         constructor() {
           return navigation.addListener("transitionEnd", (data) => {
             let closing = data.data.closing;
@@ -173,7 +171,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
       }
       tmp13 = null;
       if (insets.top > 0) {
-        class S {
+        class T {
           constructor() {
             return navigation.addListener("transitionEnd", (data) => {
               let closing = data.data.closing;
@@ -197,7 +195,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
   cResult[6] = tmp4.iosPaddingThemeAdjust;
   cResult[7] = clientThemesOverride;
   cResult[8] = tmp13;
-}) : ((navigation) => {
+}) : (function UsernameSearchScreen(navigation) {
   let constants2;
   let intl;
   let items1;
@@ -215,7 +213,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
     const obj2 = { friend_add_type: constants2.FRIENDS_ADD_BY_USERNAME_MODAL };
     obj.track(constants.FRIEND_ADD_VIEWED, obj2);
   }, []);
-  const insets = ref(6478)().insets;
+  const insets = ref(6656)().insets;
   ref = react.useRef(null);
   const items = [navigation];
   const effect1 = react.useEffect(() => navigation.addListener("transitionEnd", (data) => {
@@ -231,9 +229,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
       }
     }
   }), items);
-  let obj = navigation(7518);
+  let obj = navigation(9241);
   const clientThemesOverride = obj.useClientThemesOverride();
-  let obj2 = navigation(1369);
+  let obj2 = navigation(1381);
   let prop = null;
   if (obj2.isIOS()) {
     prop = null;
@@ -248,13 +246,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
   obj4 = { style: items1, children: items2 };
   items1 = [tmp.content, clientThemesOverride];
   items2 = [, ];
-  tmp3Result = ref(6544);
-  items2[0] = closure_8(ref(5918), { absolute: true });
+  tmp3Result = ref(6720);
+  items2[0] = closure_8(ref(10211), { absolute: true });
   const obj5 = { alwaysBounceVertical: false, keyboardShouldPersistTaps: "handled", contentContainerStyle: items3, children: closure_8(tmp3Result2, obj7) };
   items3 = [tmp.container, prop, { paddingBottom: insets.bottom + tmp3(587).space.PX_16 }];
   obj7 = { style: tmp.inputContainer, autoFocusInput: false, headerText: intl.string(navigation(1126).t.YEOwDM), headerTextStyle: tmp.headerText, ref };
   ({ paddingBottom: insets.bottom + ref(587).space.PX_16 });
-  tmp3Result2 = ref(13684);
+  tmp3Result2 = ref(13906);
   intl = tmp7(1126).intl;
   items2[1] = closure_8(closure_4, obj5);
   return closure_8(closure_5, obj3);

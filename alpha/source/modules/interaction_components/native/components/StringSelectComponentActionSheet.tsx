@@ -1,22 +1,22 @@
-// Module ID: 11444
-// Function ID: 11445
+// Module ID: 11427
+// Function ID: 11428
 // Name: StringSelectComponentActionSheet
-// Dependencies: [32, 19, 21, 4896, 587, 558, 576, 7813, 1985, 4860, 6632, 4892, 1126, 11445, 2]
+// Dependencies: [32, 19, 21, 5090, 587, 558, 576, 8232, 1997, 5054, 6809, 5086, 1126, 11428, 2]
 
-// Module 11444 (StringSelectComponentActionSheet)
+// Module 11427 (StringSelectComponentActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import Server from "Server" /* 1985 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import EmojiDefault from "Emoji" /* 6632 */;
+import Server from "Server" /* 1997 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import EmojiDefault from "Emoji" /* 6809 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, selectionActionComponent, set;
+let dependencyMap, set, tmp5Result, tmp7;
 
 let obj2;
 let react = react_mod;
@@ -24,7 +24,7 @@ let jsx = Fragment.jsx;
 let obj = { selectionOptionItemWithDescription: { minHeight: 64 }, selectionOptionItemDescription: { marginTop: 2 }, emojiWrapper: obj2, textEmoji: { fontSize: 16, color: "#000000" }, fastImageEmoji: { width: 24, height: 24 } };
 obj2 = { flexShrink: 0, borderRadius: nativeDefault.radii.xs, overflow: "hidden" };
 let closure_6 = createStyles.createStyles(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectionActionComponent) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function StringSelectComponentActionSheet(selectionActionComponent) {
   let channelId;
   let closure_2;
   let closure_4;
@@ -35,14 +35,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectionActionCom
   let tmp8;
   let tmp = dependencyMap;
   let obj = selectionActionComponent(576);
-  const cResult = obj.c(38);
+  const cResult = obj.c(36);
   selectionActionComponent = selectionActionComponent.selectionActionComponent;
   ({ labelComponent, channelId, onSubmit } = selectionActionComponent);
   const allowEmpty = selectionActionComponent.allowEmpty;
   const containerId = selectionActionComponent.containerId;
   let tmp3 = closure_6();
   dependencyMap = tmp3;
-  let obj2 = selectionActionComponent(7813);
+  let obj2 = selectionActionComponent(8232);
   const useState = react.useState;
   set = new Set(obj2.getInitialStringSelectOptions(selectionActionComponent, containerId));
   let tmp5 = first(useState(set), 2);
@@ -72,149 +72,302 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectionActionCom
       if (cResult[6] === first) {
         if (cResult[7] === selectionActionComponent.maxValues) {
           let tmp10;
-          let tmp20;
+          let tmp11;
+          let tmp21;
           if (cResult[8] === tmp8) {
             tmp10 = cResult[9];
           }
           if (cResult[10] !== tmp3) {
-            class A {
-              constructor(emoji) {
-                let tmp = null;
-                if (null != emoji.emoji) {
-                  const obj = { src: emoji.emoji.src, name: emoji.emoji.name, style: null, textEmojiStyle: null, fastImageStyle: null };
-                  ({ emojiWrapper: obj.style, textEmoji: obj.textEmojiStyle, fastImageEmoji: obj.fastImageStyle } = closure_2);
-                  tmp = jsx(EmojiDefault, { src: emoji.emoji.src, name: emoji.emoji.name, style: null, textEmojiStyle: null, fastImageStyle: null });
+            function renderIcon(emoji) {
+              let tmp = null;
+              if (null != emoji.emoji) {
+                const obj = { src: emoji.emoji.src, name: emoji.emoji.name, style: null, textEmojiStyle: null, fastImageStyle: null };
+                ({ emojiWrapper: obj.style, textEmoji: obj.textEmojiStyle, fastImageEmoji: obj.fastImageStyle } = closure_2);
+                tmp = jsx(EmojiDefault, { src: emoji.emoji.src, name: emoji.emoji.name, style: null, textEmojiStyle: null, fastImageStyle: null });
+              }
+              return tmp;
+            }
+            class O {
+              constructor(arg0, arg1) {
+                closure_0 = arg1;
+                tmp = closure_3;
+                hasItem = closure_3.has(arg1.value);
+                tmp3 = !hasItem;
+                closure_1 = tmp3;
+                tmp4 = closure_5;
+                if (tmp4) {
+                  if (!hasItem) {
+                    tmp7 = selectionActionComponent;
+                    tmp3 = tmp.size >= selectionActionComponent.maxValues;
+                  }
+                  if (!tmp3) {
+                    tmp8 = closure_4;
+                    tmp9 = closure_4((items) => {
+                      set = new Set(items);
+                      const tmp = closure_1;
+                      if (tmp) {
+                        set.add(closure_0.value);
+                      } else {
+                        set.delete(closure_0.value);
+                      }
+                      return set;
+                    });
+                  }
+                } else {
+                  tmp5 = closure_6;
+                  if (hasItem) {
+                    items = [];
+                  } else {
+                    items = [];
+                    items[0] = arg1.value;
+                  }
+                  tmp5Result = tmp5(items);
                 }
-                return tmp;
+                return;
               }
             }
-            cResult[10] = tmp3;
-            cResult[11] = A;
+            cResult[11] = renderIcon;
+            tmp11 = renderIcon;
           } else {
-            class A {
-              constructor(emoji) {
-                let tmp = null;
-                if (null != emoji.emoji) {
-                  const obj = { src: emoji.emoji.src, name: emoji.emoji.name, style: null, textEmojiStyle: null, fastImageStyle: null };
-                  ({ emojiWrapper: obj.style, textEmoji: obj.textEmojiStyle, fastImageEmoji: obj.fastImageStyle } = closure_2);
-                  tmp = jsx(EmojiDefault, { src: emoji.emoji.src, name: emoji.emoji.name, style: null, textEmojiStyle: null, fastImageStyle: null });
-                }
-                return tmp;
-              }
-            }
+            tmp11 = cResult[11];
           }
-          if (cResult[12] !== tmp3) {
-            class N {
-              constructor(description) {
-                let tmp = null;
-                if (null != description.description) {
-                  tmp = null;
-                  if ("" !== description.description) {
-                    tmp = jsx(Text_Text.Text, { style: closure_2.selectionOptionItemDescription, variant: "text-xs/medium", color: "text-default", children: description.description });
-                  }
+          class O {
+            constructor(arg0, arg1) {
+              closure_0 = arg1;
+              tmp = closure_3;
+              hasItem = closure_3.has(arg1.value);
+              tmp3 = !hasItem;
+              closure_1 = tmp3;
+              tmp4 = closure_5;
+              if (tmp4) {
+                if (!hasItem) {
+                  tmp7 = selectionActionComponent;
+                  tmp3 = tmp.size >= selectionActionComponent.maxValues;
                 }
-                return tmp;
-              }
-            }
-            cResult[12] = tmp3;
-            cResult[13] = N;
-          } else {
-            class N {
-              constructor(description) {
-                let tmp = null;
-                if (null != description.description) {
-                  tmp = null;
-                  if ("" !== description.description) {
-                    tmp = jsx(Text_Text.Text, { style: closure_2.selectionOptionItemDescription, variant: "text-xs/medium", color: "text-default", children: description.description });
-                  }
+                if (!tmp3) {
+                  tmp8 = closure_4;
+                  tmp9 = closure_4((items) => {
+                    set = new Set(items);
+                    const tmp = closure_1;
+                    if (tmp) {
+                      set.add(closure_0.value);
+                    } else {
+                      set.delete(closure_0.value);
+                    }
+                    return set;
+                  });
                 }
-                return tmp;
+              } else {
+                tmp5 = closure_6;
+                if (hasItem) {
+                  items = [];
+                } else {
+                  items = [];
+                  items[0] = arg1.value;
+                }
+                tmp5Result = tmp5(items);
               }
+              return;
             }
           }
           if (cResult[14] !== selectionActionComponent.options) {
-            let tmp14;
-            class N {
-              constructor(description) {
-                let tmp = null;
-                if (null != description.description) {
-                  tmp = null;
-                  if ("" !== description.description) {
-                    tmp = jsx(Text_Text.Text, { style: closure_2.selectionOptionItemDescription, variant: "text-xs/medium", color: "text-default", children: description.description });
+            let tmp15;
+            const _Symbol = Symbol;
+            class O {
+              constructor(arg0, arg1) {
+                closure_0 = arg1;
+                tmp = closure_3;
+                hasItem = closure_3.has(arg1.value);
+                tmp3 = !hasItem;
+                closure_1 = tmp3;
+                tmp4 = closure_5;
+                if (tmp4) {
+                  if (!hasItem) {
+                    tmp7 = selectionActionComponent;
+                    tmp3 = tmp.size >= selectionActionComponent.maxValues;
                   }
+                  if (!tmp3) {
+                    tmp8 = closure_4;
+                    tmp9 = closure_4((items) => {
+                      set = new Set(items);
+                      const tmp = closure_1;
+                      if (tmp) {
+                        set.add(closure_0.value);
+                      } else {
+                        set.delete(closure_0.value);
+                      }
+                      return set;
+                    });
+                  }
+                } else {
+                  tmp5 = closure_6;
+                  if (hasItem) {
+                    items = [];
+                  } else {
+                    items = [];
+                    items[0] = arg1.value;
+                  }
+                  tmp5Result = tmp5(items);
                 }
-                return tmp;
+                return;
               }
             }
-            if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-              class N {
+            if (tmp14 === Symbol.for("react.memo_cache_sentinel")) {
+              class W {
                 constructor(description) {
-                  let tmp = null;
-                  if (null != description.description) {
-                    tmp = null;
-                    if ("" !== description.description) {
-                      tmp = jsx(Text_Text.Text, { style: closure_2.selectionOptionItemDescription, variant: "text-xs/medium", color: "text-default", children: description.description });
-                    }
-                  }
-                  return tmp;
+                  return null != description.description;
                 }
               }
-              cResult[16] = tmp15;
-              tmp14 = tmp15;
-            } else {
-              class N {
-                constructor(description) {
-                  let tmp = null;
-                  if (null != description.description) {
-                    tmp = null;
-                    if ("" !== description.description) {
-                      tmp = jsx(Text_Text.Text, { style: closure_2.selectionOptionItemDescription, variant: "text-xs/medium", color: "text-default", children: description.description });
+              class O {
+                constructor(arg0, arg1) {
+                  closure_0 = arg1;
+                  tmp = closure_3;
+                  hasItem = closure_3.has(arg1.value);
+                  tmp3 = !hasItem;
+                  closure_1 = tmp3;
+                  tmp4 = closure_5;
+                  if (tmp4) {
+                    if (!hasItem) {
+                      tmp7 = selectionActionComponent;
+                      tmp3 = tmp.size >= selectionActionComponent.maxValues;
                     }
+                    if (!tmp3) {
+                      tmp8 = closure_4;
+                      tmp9 = closure_4((items) => {
+                        set = new Set(items);
+                        const tmp = closure_1;
+                        if (tmp) {
+                          set.add(closure_0.value);
+                        } else {
+                          set.delete(closure_0.value);
+                        }
+                        return set;
+                      });
+                    }
+                  } else {
+                    tmp5 = closure_6;
+                    if (hasItem) {
+                      items = [];
+                    } else {
+                      items = [];
+                      items[0] = arg1.value;
+                    }
+                    tmp5Result = tmp5(items);
                   }
-                  return tmp;
+                  return;
+                }
+              }
+              tmp15 = W;
+            } else {
+              class W {
+                constructor(description) {
+                  return null != description.description;
                 }
               }
             }
             const options = selectionActionComponent.options;
             cResult[14] = selectionActionComponent.options;
-            cResult[15] = options.some(tmp14);
-            const someResult = options.some(tmp14);
+            cResult[15] = options.some(tmp15);
+            const someResult = options.some(tmp15);
           } else {
-            class N {
+            class W {
               constructor(description) {
-                let tmp = null;
-                if (null != description.description) {
-                  tmp = null;
-                  if ("" !== description.description) {
-                    tmp = jsx(Text_Text.Text, { style: closure_2.selectionOptionItemDescription, variant: "text-xs/medium", color: "text-default", children: description.description });
-                  }
-                }
-                return tmp;
+                return null != description.description;
               }
             }
           }
           if (cResult[17] !== selectionActionComponent.options) {
-            let tmp18;
-            class N {
+            let tmp19;
+            class W {
               constructor(description) {
-                let tmp = null;
-                if (null != description.description) {
-                  tmp = null;
-                  if ("" !== description.description) {
-                    tmp = jsx(Text_Text.Text, { style: closure_2.selectionOptionItemDescription, variant: "text-xs/medium", color: "text-default", children: description.description });
-                  }
-                }
-                return tmp;
+                return null != description.description;
               }
             }
-            if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
+            class O {
+              constructor(arg0, arg1) {
+                closure_0 = arg1;
+                tmp = closure_3;
+                hasItem = closure_3.has(arg1.value);
+                tmp3 = !hasItem;
+                closure_1 = tmp3;
+                tmp4 = closure_5;
+                if (tmp4) {
+                  if (!hasItem) {
+                    tmp7 = selectionActionComponent;
+                    tmp3 = tmp.size >= selectionActionComponent.maxValues;
+                  }
+                  if (!tmp3) {
+                    tmp8 = closure_4;
+                    tmp9 = closure_4((items) => {
+                      set = new Set(items);
+                      const tmp = closure_1;
+                      if (tmp) {
+                        set.add(closure_0.value);
+                      } else {
+                        set.delete(closure_0.value);
+                      }
+                      return set;
+                    });
+                  }
+                } else {
+                  tmp5 = closure_6;
+                  if (hasItem) {
+                    items = [];
+                  } else {
+                    items = [];
+                    items[0] = arg1.value;
+                  }
+                  tmp5Result = tmp5(items);
+                }
+                return;
+              }
+            }
+            if (tmp18 === Symbol.for("react.memo_cache_sentinel")) {
               class M {
                 constructor(emoji) {
                   return null != emoji.emoji;
                 }
               }
-              cResult[19] = M;
-              tmp18 = M;
+              class O {
+                constructor(arg0, arg1) {
+                  closure_0 = arg1;
+                  tmp = closure_3;
+                  hasItem = closure_3.has(arg1.value);
+                  tmp3 = !hasItem;
+                  closure_1 = tmp3;
+                  tmp4 = closure_5;
+                  if (tmp4) {
+                    if (!hasItem) {
+                      tmp7 = selectionActionComponent;
+                      tmp3 = tmp.size >= selectionActionComponent.maxValues;
+                    }
+                    if (!tmp3) {
+                      tmp8 = closure_4;
+                      tmp9 = closure_4((items) => {
+                        set = new Set(items);
+                        const tmp = closure_1;
+                        if (tmp) {
+                          set.add(closure_0.value);
+                        } else {
+                          set.delete(closure_0.value);
+                        }
+                        return set;
+                      });
+                    }
+                  } else {
+                    tmp5 = closure_6;
+                    if (hasItem) {
+                      items = [];
+                    } else {
+                      items = [];
+                      items[0] = arg1.value;
+                    }
+                    tmp5Result = tmp5(items);
+                  }
+                  return;
+                }
+              }
+              tmp19 = M;
             } else {
               class M {
                 constructor(emoji) {
@@ -223,7 +376,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectionActionCom
               }
             }
             const options2 = selectionActionComponent.options;
-            const someResult1 = options2.some(tmp18);
+            const someResult1 = options2.some(tmp19);
             cResult[17] = selectionActionComponent.options;
             cResult[18] = someResult1;
           } else {
@@ -233,192 +386,204 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectionActionCom
               }
             }
           }
-          const _Symbol = Symbol;
+          const _Symbol2 = Symbol;
           if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-            class H {
+            class M {
               constructor(emoji) {
-                const intl = selectionActionComponent(closure_2[12]).intl;
-                const formatToPlainString = intl.formatToPlainString;
-                emoji = emoji.emoji;
-                let name;
-                const ZbrH2f = selectionActionComponent(closure_2[12]).t.ZbrH2f;
-                if (emoji != null) {
-                  name = emoji.name;
-                }
-                const obj = { emojiName: name, optionName: emoji.label, optionDescription: emoji.description };
-                return formatToPlainString(ZbrH2f, obj);
+                return null != emoji.emoji;
               }
             }
-            cResult[20] = H;
-            tmp20 = H;
-          } else {
-            class H {
-              constructor(emoji) {
-                const intl = selectionActionComponent(closure_2[12]).intl;
-                const formatToPlainString = intl.formatToPlainString;
-                emoji = emoji.emoji;
-                let name;
-                const ZbrH2f = selectionActionComponent(closure_2[12]).t.ZbrH2f;
-                if (emoji != null) {
-                  name = emoji.name;
+            class O {
+              constructor(arg0, arg1) {
+                closure_0 = arg1;
+                tmp = closure_3;
+                hasItem = closure_3.has(arg1.value);
+                tmp3 = !hasItem;
+                closure_1 = tmp3;
+                tmp4 = closure_5;
+                if (tmp4) {
+                  if (!hasItem) {
+                    tmp7 = selectionActionComponent;
+                    tmp3 = tmp.size >= selectionActionComponent.maxValues;
+                  }
+                  if (!tmp3) {
+                    tmp8 = closure_4;
+                    tmp9 = closure_4((items) => {
+                      set = new Set(items);
+                      const tmp = closure_1;
+                      if (tmp) {
+                        set.add(closure_0.value);
+                      } else {
+                        set.delete(closure_0.value);
+                      }
+                      return set;
+                    });
+                  }
+                } else {
+                  tmp5 = closure_6;
+                  if (hasItem) {
+                    items = [];
+                  } else {
+                    items = [];
+                    items[0] = arg1.value;
+                  }
+                  tmp5Result = tmp5(items);
                 }
-                const obj = { emojiName: name, optionName: emoji.label, optionDescription: emoji.description };
-                return formatToPlainString(ZbrH2f, obj);
+                return;
+              }
+            }
+            tmp21 = tmp22;
+          } else {
+            class M {
+              constructor(emoji) {
+                return null != emoji.emoji;
               }
             }
           }
           if (tmp13) {
-            class H {
+            class M {
               constructor(emoji) {
-                const intl = selectionActionComponent(closure_2[12]).intl;
-                const formatToPlainString = intl.formatToPlainString;
-                emoji = emoji.emoji;
-                let name;
-                const ZbrH2f = selectionActionComponent(closure_2[12]).t.ZbrH2f;
-                if (emoji != null) {
-                  name = emoji.name;
-                }
-                const obj = { emojiName: name, optionName: emoji.label, optionDescription: emoji.description };
-                return formatToPlainString(ZbrH2f, obj);
+                return null != emoji.emoji;
               }
             }
           }
-          if (cResult[21] !== tmp13) {
-            class H {
-              constructor(emoji) {
-                const intl = selectionActionComponent(closure_2[12]).intl;
-                const formatToPlainString = intl.formatToPlainString;
-                emoji = emoji.emoji;
-                let name;
-                const ZbrH2f = selectionActionComponent(closure_2[12]).t.ZbrH2f;
-                if (emoji != null) {
-                  name = emoji.name;
-                }
-                const obj = { emojiName: name, optionName: emoji.label, optionDescription: emoji.description };
-                return formatToPlainString(ZbrH2f, obj);
+          if (cResult[21] !== first) {
+            class Z {
+              constructor(value) {
+                return first.has(value.value);
               }
             }
-            tmp23[0] = tmp13;
-            cResult[21] = tmp13;
-            cResult[22] = tmp23;
+            class O {
+              constructor(arg0, arg1) {
+                closure_0 = arg1;
+                tmp = closure_3;
+                hasItem = closure_3.has(arg1.value);
+                tmp3 = !hasItem;
+                closure_1 = tmp3;
+                tmp4 = closure_5;
+                if (tmp4) {
+                  if (!hasItem) {
+                    tmp7 = selectionActionComponent;
+                    tmp3 = tmp.size >= selectionActionComponent.maxValues;
+                  }
+                  if (!tmp3) {
+                    tmp8 = closure_4;
+                    tmp9 = closure_4((items) => {
+                      set = new Set(items);
+                      const tmp = closure_1;
+                      if (tmp) {
+                        set.add(closure_0.value);
+                      } else {
+                        set.delete(closure_0.value);
+                      }
+                      return set;
+                    });
+                  }
+                } else {
+                  tmp5 = closure_6;
+                  if (hasItem) {
+                    items = [];
+                  } else {
+                    items = [];
+                    items[0] = arg1.value;
+                  }
+                  tmp5Result = tmp5(items);
+                }
+                return;
+              }
+            }
+            cResult[22] = Z;
           } else {
-            class H {
-              constructor(emoji) {
-                const intl = selectionActionComponent(closure_2[12]).intl;
-                const formatToPlainString = intl.formatToPlainString;
-                emoji = emoji.emoji;
-                let name;
-                const ZbrH2f = selectionActionComponent(closure_2[12]).t.ZbrH2f;
-                if (emoji != null) {
-                  name = emoji.name;
-                }
-                const obj = { emojiName: name, optionName: emoji.label, optionDescription: emoji.description };
-                return formatToPlainString(ZbrH2f, obj);
-              }
-            }
-          }
-          if (cResult[23] !== first) {
-            class F {
-              constructor(value) {
-                return first.has(value.value);
-              }
-            }
-            cResult[23] = first;
-            cResult[24] = F;
-          } else {
-            class F {
+            class Z {
               constructor(value) {
                 return first.has(value.value);
               }
             }
           }
-          if (cResult[25] === allowEmpty) {
-            class F {
+          if (cResult[23] === allowEmpty) {
+            class Z {
               constructor(value) {
                 return first.has(value.value);
               }
             }
           }
-          cResult[25] = allowEmpty;
-          cResult[26] = channelId;
-          cResult[27] = labelComponent;
-          const tmp28 = jsx(onSubmit(11445), { onPressOptionItem: tmp10, renderIcon: tmp11, skipIcon: !tmp17, renderDescription: tmp12, selectionActionComponent, labelComponent, options: selectionActionComponent.options, itemStyle: tmp22, selectedCount: first.size, isSelected: tmp24, submitSelection: tmp9, itemAccessibilityLabel: tmp20, channelId, allowEmpty });
-          class O {
-            constructor() {
-              const items = [...first];
-              return closure_6(items);
-            }
-          }
-          cResult[29] = tmp12;
-          cResult[30] = tmp11;
-          cResult[31] = first.size;
-          cResult[32] = selectionActionComponent;
-          cResult[33] = tmp9;
-          cResult[34] = tmp22;
-          cResult[35] = tmp24;
-          cResult[36] = !tmp17;
-          cResult[37] = tmp28;
+          cResult[23] = allowEmpty;
+          cResult[24] = channelId;
+          cResult[25] = labelComponent;
+          cResult[26] = tmp10;
+          cResult[27] = tmp12;
+          cResult[28] = tmp11;
+          cResult[29] = first.size;
+          cResult[30] = selectionActionComponent;
+          cResult[31] = tmp9;
+          cResult[32] = tmp13;
+          cResult[33] = tmp24;
+          cResult[34] = !tmp17;
+          cResult[35] = jsx(onSubmit(11428), { onPressOptionItem: tmp10, renderIcon: tmp11, skipIcon: !tmp17, renderDescription: tmp12, selectionActionComponent, labelComponent, options: selectionActionComponent.options, itemStyle: tmp13, selectedCount: first.size, isSelected: tmp24, submitSelection: tmp9, itemAccessibilityLabel: tmp21, channelId, allowEmpty });
+          const tmp28 = jsx(onSubmit(11428), { onPressOptionItem: tmp10, renderIcon: tmp11, skipIcon: !tmp17, renderDescription: tmp12, selectionActionComponent, labelComponent, options: selectionActionComponent.options, itemStyle: tmp13, selectedCount: first.size, isSelected: tmp24, submitSelection: tmp9, itemAccessibilityLabel: tmp21, channelId, allowEmpty });
         }
       }
     }
-    const fn2 = function w(arg0, value) {
-      let closure_0 = value;
-      let tmp = first;
-      const hasItem = first.has(value.value);
-      let tmp3 = !hasItem;
-      let closure_1 = tmp3;
-      const tmp4 = closure_5;
-      if (tmp4) {
-        if (!hasItem) {
-          tmp3 = tmp.size >= selectionActionComponent.maxValues;
-        }
-        if (!tmp3) {
-          closure_4((items) => {
-            set = new Set(items);
-            const tmp = closure_1;
-            if (tmp) {
-              set.add(closure_0.value);
-            } else {
-              set.delete(closure_0.value);
-            }
-            return set;
-          });
-        }
-      } else {
-        let items;
-        const tmp5 = closure_6;
-        if (hasItem) {
-          items = [];
+    class O {
+      constructor(arg0, arg1) {
+        closure_0 = arg1;
+        tmp = closure_3;
+        hasItem = closure_3.has(arg1.value);
+        tmp3 = !hasItem;
+        closure_1 = tmp3;
+        tmp4 = closure_5;
+        if (tmp4) {
+          if (!hasItem) {
+            tmp7 = selectionActionComponent;
+            tmp3 = tmp.size >= selectionActionComponent.maxValues;
+          }
+          if (!tmp3) {
+            tmp8 = closure_4;
+            tmp9 = closure_4((items) => {
+              set = new Set(items);
+              const tmp = closure_1;
+              if (tmp) {
+                set.add(closure_0.value);
+              } else {
+                set.delete(closure_0.value);
+              }
+              return set;
+            });
+          }
         } else {
-          items = [value.value];
+          tmp5 = closure_6;
+          if (hasItem) {
+            items = [];
+          } else {
+            items = [];
+            items[0] = arg1.value;
+          }
+          tmp5Result = tmp5(items);
         }
-        tmp5(items);
+        return;
       }
-    };
+    }
     cResult[5] = selectionActionComponent.maxValues > 1;
     cResult[6] = first;
     cResult[7] = selectionActionComponent.maxValues;
     cResult[8] = tmp8;
-    cResult[9] = fn2;
-    tmp10 = fn2;
+    cResult[9] = O;
+    tmp10 = O;
   }
-  class O {
-    constructor() {
-      const items = [...first];
-      return closure_6(items);
-    }
+  function submitSelectedSelections() {
+    const items = [...first];
+    return closure_6(items);
   }
   cResult[2] = first;
   cResult[3] = tmp8;
-  cResult[4] = O;
-  tmp9 = O;
-}) : ((selectionActionComponent) => {
+  cResult[4] = submitSelectedSelections;
+  tmp9 = submitSelectedSelections;
+}) : (function StringSelectComponentActionSheet(selectionActionComponent) {
   let allowEmpty;
   let channelId;
   let closure_2;
   let closure_4;
   let containerId;
-  let items5;
   let labelComponent;
   selectionActionComponent = selectionActionComponent.selectionActionComponent;
   const onSubmit = selectionActionComponent.onSubmit;
@@ -428,7 +593,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectionActionCom
   ({ labelComponent, channelId, containerId, allowEmpty } = selectionActionComponent);
   let tmp = callback();
   dependencyMap = tmp;
-  let obj = selectionActionComponent(7813);
+  let obj = selectionActionComponent(8232);
   const useState = react.useState;
   set = new Set(obj.getInitialStringSelectOptions(selectionActionComponent, containerId));
   let tmp3 = first(useState(set), 2);
@@ -513,16 +678,16 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectionActionCom
     selectionActionComponent,
     labelComponent,
     options: selectionActionComponent.options,
-    itemStyle: items5,
+    itemStyle: selectionOptionItemWithDescription,
     selectedCount: first.size,
     isSelected(value) {
       return first.has(value.value);
     },
-    submitSelection() {
+    submitSelection: function submitSelectedSelections() {
       const items = [...first];
       return callback(items);
     },
-    itemAccessibilityLabel(emoji) {
+    itemAccessibilityLabel: function accessibilityLabel(emoji) {
       const intl = selectionActionComponent(closure_2[12]).intl;
       const formatToPlainString = intl.formatToPlainString;
       emoji = emoji.emoji;
@@ -537,12 +702,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectionActionCom
     channelId,
     allowEmpty
   };
-  const tmp10 = onSubmit(11445);
+  const tmp10 = onSubmit(11428);
   const tmp9 = memo;
   if (selectionOptionItemWithDescription) {
     selectionOptionItemWithDescription = tmp.selectionOptionItemWithDescription;
   }
-  items5 = [selectionOptionItemWithDescription];
   return tmp9(tmp10, obj2);
 });
 const result = size.fileFinishedImporting("modules/interaction_components/native/components/StringSelectComponentActionSheet.tsx");

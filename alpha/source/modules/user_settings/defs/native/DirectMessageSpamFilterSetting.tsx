@@ -1,23 +1,23 @@
-// Module ID: 14660
-// Function ID: 14661
+// Module ID: 14921
+// Function ID: 14922
 // Name: DirectMessageSpamFilterSetting
-// Dependencies: [19, 7645, 558, 576, 14661, 2028, 11142, 1126, 14663, 2]
+// Dependencies: [19, 7966, 558, 576, 14922, 2040, 11262, 1126, 14924, 2]
 
-// Module 14660 (DirectMessageSpamFilterSetting)
+// Module 14921 (DirectMessageSpamFilterSetting)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import useDerivedDMSpamFilterSetting from "useDerivedDMSpamFilterSetting" /* 14663 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import useDerivedDMSpamFilterSetting from "useDerivedDMSpamFilterSetting" /* 14924 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ModerationUtils = tmp(14661);
+const ModerationUtils = tmp(14922);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDmSpamFilterSettingOptions() {
   let first;
   const obj = react2;
   const cResult = obj.c(1);
@@ -31,11 +31,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => react.useMemo(() => {
-  const obj = ModerationUtils;
-  const dmSpamOptions = obj.generateDmSpamOptions();
-  return dmSpamOptions.map((value) => ({ value: value.value, label: value.name, subLabel: value.desc }));
-}, []));
+}) : (function useDmSpamFilterSettingOptions() {
+  return react.useMemo(() => {
+    const obj = ModerationUtils;
+    const dmSpamOptions = obj.generateDmSpamOptions();
+    return dmSpamOptions.map((value) => ({ value: value.value, label: value.name, subLabel: value.desc }));
+  }, []);
+});
 let obj = {
   useTitle() {
     const intl = intl3.intl;

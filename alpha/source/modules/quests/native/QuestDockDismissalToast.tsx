@@ -1,18 +1,18 @@
-// Module ID: 14923
-// Function ID: 14924
+// Module ID: 15185
+// Function ID: 15186
 // Name: QuestDockDismissalToast
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1126, 11928, 4892, 4574, 4821, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1126, 12001, 5086, 4766, 5015, 2]
 // Exports: displayQuestDismissalToast
 
-// Module 14923 (QuestDockDismissalToast)
+// Module 15185 (QuestDockDismissalToast)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4821 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11928 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5015 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12001 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let closure_6 = createStyles.createStyles(() => {
   items = [{ translateY: -10 }];
   return obj;
 });
-const content = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const content = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockDismissalNotification() {
   let closure_0;
   let tmp5;
   let tmp7;
@@ -62,7 +62,7 @@ const content = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[3];
   }
   return tmp7;
-}) : (() => {
+}) : (function QuestDockDismissalNotification() {
   let closure_0;
   _require = closure_6();
   const Text = require("Text/Text").Text;

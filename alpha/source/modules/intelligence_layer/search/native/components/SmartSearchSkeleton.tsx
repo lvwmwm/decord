@@ -1,36 +1,34 @@
-// Module ID: 16880
-// Function ID: 16881
+// Module ID: 17159
+// Function ID: 17160
 // Name: SmartSearchSkeleton
-// Dependencies: [19, 17, 14228, 21, 3919, 4896, 587, 558, 576, 4602, 1126, 14227, 14231, 16868, 2]
+// Dependencies: [19, 17, 14052, 21, 4051, 5090, 587, 558, 576, 4794, 1126, 14051, 14055, 17147, 2]
 
-// Module 16880 (SmartSearchSkeleton)
+// Module 17159 (SmartSearchSkeleton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef3919 from "module_3919" /* 3919 */;
-import react3 from "react" /* 4602 */;
-import AILoader from "AILoader" /* 14227 */;
-import AIShimmer from "AIShimmer" /* 14231 */;
-import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 16868 */;
+import _modDef4051 from "module_4051" /* 4051 */;
+import react3 from "react" /* 4794 */;
+import AILoader from "AILoader" /* 14051 */;
+import AIShimmer from "AIShimmer" /* 14055 */;
+import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 17147 */;
 import react from "react" /* 19 */;
-import AILoaderConstants from "AILoaderConstants" /* 14228 */;
+import AILoaderConstants from "AILoaderConstants" /* 14052 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let isCollapsed;
 
 let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f127081 = () => Math.random() - 0.5;
+const f128429 = () => Math.random() - 0.5;
 const View = react_native.View;
 ({ AI_LOADER_CYCLE_MS: hasOwnProperty, AI_LOADER_REDUCED_MOTION_CYCLE_MS: metroRequire } = AILoaderConstants);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let items = [_modDef3919.Sb2fo2, _modDef3919.rXNe0Z, _modDef3919["22g6Ju"], _modDef3919.IogGZY, _modDef3919.UEnMJF, _modDef3919.kk7BVL, _modDef3919.UVa49v];
+let items = [_modDef4051.Sb2fo2, _modDef4051.rXNe0Z, _modDef4051["22g6Ju"], _modDef4051.IogGZY, _modDef4051.UEnMJF, _modDef4051.kk7BVL, _modDef4051.UVa49v];
 let closure_10 = createStyles.createStyles((arg0) => {
   let num2;
   let num3;
@@ -52,7 +50,7 @@ let closure_10 = createStyles.createStyles((arg0) => {
   return obj2;
 });
 let memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isCollapsed) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SmartSearchSkeleton(isCollapsed) {
   let first;
   let items1;
   let items2;
@@ -64,8 +62,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isColla
   const tmp5 = closure_10(isCollapsed);
   const reducedMotion = react.useContext(react3.AccessibilityPreferencesContext).reducedMotion;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    items = [_modDef3919.ffCCEe];
-    HermesBuiltin.arraySpread(items, items.sort(f127081), 1);
+    items = [_modDef4051.ffCCEe];
+    HermesBuiltin.arraySpread(items, items.sort(f128429), 1);
     const mapped = items.map((item) => {
       const intl = intl2.intl;
       return intl.string(item);
@@ -184,17 +182,17 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isColla
   cResult[7] = tmp5.label;
   cResult[8] = tmp20;
   tmp19 = tmp20;
-}) : ((isCollapsed) => {
+}) : (function SmartSearchSkeleton(isCollapsed) {
   let fromResult;
   let items1;
   let items2;
   isCollapsed = isCollapsed.isCollapsed;
   let reducedMotion;
   let tmp = closure_10(isCollapsed);
-  reducedMotion = react.useContext(reducedMotion(4602).AccessibilityPreferencesContext).reducedMotion;
+  reducedMotion = react.useContext(reducedMotion(4794).AccessibilityPreferencesContext).reducedMotion;
   items = [reducedMotion.enabled];
   const memo = react.useMemo(() => {
-    items = [_modDef3919.ffCCEe, ...closure_1_9.sort(f127081)];
+    items = [_modDef4051.ffCCEe, ...closure_1_9.sort(f128429)];
     return items.map((item) => {
       const intl = reducedMotion(closure_1_2[10]).intl;
       return intl.string(item);
@@ -212,9 +210,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isColla
   }, items);
   let obj = { style: tmp.block, children: items2 };
   let obj2 = { style: tmp.header, children: items1 };
-  items1 = [closure_7(reducedMotion(14227).AILoader, { size: 12, color: "interactive-text-default" }), ];
+  items1 = [closure_7(reducedMotion(14051).AILoader, { size: 12, color: "interactive-text-default" }), ];
   const obj3 = { text: memo, variant: "text-sm/semibold", color: "interactive-text-default", delay: memo1.shimmerDelayMs, initialDelay: memo1.shimmerInitialDelayMs, duration: memo1.shimmerDurationMs, style: tmp.label };
-  items1[1] = closure_7(reducedMotion(14231).AIShimmer, obj3);
+  items1[1] = closure_7(reducedMotion(14055).AIShimmer, obj3);
   items2 = [closure_8(View, obj2), ];
   let num = 6;
   const _Array = Array;

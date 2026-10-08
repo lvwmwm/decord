@@ -1,13 +1,13 @@
-// Module ID: 16593
-// Function ID: 16594
+// Module ID: 16848
+// Function ID: 16849
 // Name: useConjureAppSlotsLeft
-// Dependencies: [19, 8734, 558, 576, 8735, 504, 2]
+// Dependencies: [19, 11251, 558, 576, 12364, 504, 2]
 
-// Module 16593 (useConjureAppSlotsLeft)
+// Module 16848 (useConjureAppSlotsLeft)
 import react2 from "react" /* 576 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 8735 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 12364 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 8734 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 11251 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let maxProjects;
 
 let tmp;
 const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAppSlotsLeft() {
   let tmp4;
   let tmp5;
   let tmp7;
@@ -23,7 +23,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj = react2;
   const cResult = obj.c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function c() {
+    const fn = function n() {
       const obj = ConjureActionCreators;
       const projectLimit = obj.fetchProjectLimit();
     };
@@ -60,7 +60,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp7, tmp8);
-}) : (() => {
+}) : (function useConjureAppSlotsLeft() {
   const effect = react.useEffect(() => {
     const obj = ConjureActionCreators;
     const projectLimit = obj.fetchProjectLimit();

@@ -1,9 +1,9 @@
-// Module ID: 6812
-// Function ID: 6813
+// Module ID: 6984
+// Function ID: 6985
 // Name: SettingsDefaultFeature
 // Dependencies: [2]
 
-// Module 6812 (SettingsDefaultFeature)
+// Module 6984 (SettingsDefaultFeature)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/SettingsDefaultFeature.tsx");

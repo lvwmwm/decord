@@ -1,17 +1,17 @@
-// Module ID: 7916
-// Function ID: 7917
-// Dependencies: [1085, 558, 576, 4595, 2]
+// Module ID: 8335
+// Function ID: 8336
+// Dependencies: [1085, 558, 576, 4787, 2]
 // Exports: getIllustrationSource
 
-// Module 7916
+// Module 8335
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 4595 */;
+import native from "native" /* 4787 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ThemeTypes = Constants.ThemeTypes;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((fn) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIllustrationSource(fn) {
   const obj = react;
   const cResult = obj.c(3);
   const obj2 = native;
@@ -28,7 +28,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((fn) => {
   cResult[1] = theme;
   cResult[2] = tmp3;
   tmp2 = tmp3;
-}) : ((fn) => {
+}) : (function useIllustrationSource(fn) {
   const obj = native;
   return fn(obj.useThemeContext().theme);
 });

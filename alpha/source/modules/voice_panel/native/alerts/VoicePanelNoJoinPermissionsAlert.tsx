@@ -1,20 +1,20 @@
-// Module ID: 17358
-// Function ID: 17359
+// Module ID: 17639
+// Function ID: 17640
 // Name: VoicePanelNoJoinPermissionsAlert
-// Dependencies: [19, 21, 558, 576, 5720, 17359, 1126, 5720, 2]
+// Dependencies: [19, 21, 558, 576, 5303, 17640, 1126, 5303, 2]
 
-// Module 17358 (VoicePanelNoJoinPermissionsAlert)
+// Module 17639 (VoicePanelNoJoinPermissionsAlert)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import AlertModal2 from "AlertModal" /* 5720 */;
-import VoicePanelLockedIconDefault from "VoicePanelLockedIcon" /* 17359 */;
+import AlertModal2 from "AlertModal" /* 5303 */;
+import VoicePanelLockedIconDefault from "VoicePanelLockedIcon" /* 17640 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelNoJoinPermissionsAlert() {
   let tmp15;
   let tmp5;
   let tmp6;
@@ -44,7 +44,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[3] = stringResult2;
   }
   if (cResult[4] !== dismissModalCallback) {
-    const AlertModal = tmp(5720).AlertModal;
+    const AlertModal = tmp(5303).AlertModal;
     const tmp17 = <AlertModal header={tmp5} title={tmp6} content={tmp7} actions={null} />;
     cResult[4] = dismissModalCallback;
     cResult[5] = tmp17;
@@ -53,7 +53,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp15 = cResult[5];
   }
   return tmp15;
-}) : (() => {
+}) : (function VoicePanelNoJoinPermissionsAlert() {
   let intl3;
   const obj = AlertModal2;
   const dismissModalCallback = obj.useDismissModalCallback();

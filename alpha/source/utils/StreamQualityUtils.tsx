@@ -1,25 +1,25 @@
-// Module ID: 8101
-// Function ID: 8102
+// Module ID: 5268
+// Function ID: 5269
 // Name: StreamQualityUtils
-// Dependencies: [19, 4942, 502, 2074, 4919, 1377, 1085, 4943, 1379, 4921, 1126, 558, 576, 504, 5032, 1252, 2]
+// Dependencies: [19, 5269, 502, 2086, 5108, 1389, 1085, 5210, 1391, 5115, 1126, 558, 576, 504, 5270, 1264, 2]
 // Exports: getFPSText, getMaxQuality, getPremiumRequirement, getResolutionText, isPremiumFPS, isPremiumRequirement, isPremiumResolution, trackStreamSettingsUpdate
 
-// Module 8101 (StreamQualityUtils)
+// Module 5268 (StreamQualityUtils)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import Constants2 from "Constants" /* 4921 */;
-import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 5032 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import Constants2 from "Constants" /* 5115 */;
+import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 5270 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4942 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5269 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
-import UserStore from "UserStore" /* 1377 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 4943 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
+import UserStore from "UserStore" /* 1389 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5210 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ const AnalyticEvents = Constants.AnalyticEvents;
 ({ ApplicationStreamFPS: c10, ApplicationStreamResolutions: unpackModuleId, ApplicationStreamSettingRequirements: closure_12, getApplicationFramerate: map1, getApplicationResolution: closure_14 } = StreamSettingsConstants);
 let closure_15 = PremiumConstants.StreamQualitiesToPremiumType;
 const ResolutionTypes = Constants2.ResolutionTypes;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaxQuality(user) {
   let guildId;
   let id;
   let state;
@@ -50,7 +50,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   const cResult = obj.c(16);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ApplicationStreamingSettingsStore];
-    const fn = function o() {
+    const fn = function s() {
       return state.getState();
     };
     cResult[0] = items;
@@ -147,7 +147,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     tmp16 = cResult[15];
   }
   return tmp16;
-}) : ((arg0) => {
+}) : (function useMaxQuality(arg0) {
   let guildId;
   let id;
   let state;

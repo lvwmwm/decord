@@ -1,17 +1,17 @@
-// Module ID: 15365
-// Function ID: 15366
+// Module ID: 15627
+// Function ID: 15628
 // Name: AppIcon
-// Dependencies: [19, 17, 8858, 21, 4896, 587, 558, 576, 4797, 4735, 2]
+// Dependencies: [19, 17, 9401, 21, 5090, 587, 558, 576, 4991, 4929, 2]
 
-// Module 15365 (AppIcon)
+// Module 15627 (AppIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useThemeDefault from "useTheme" /* 4797 */;
-import AppIconConstants from "AppIconConstants" /* 8858 */;
+import useThemeDefault from "useTheme" /* 4991 */;
+import AppIconConstants from "AppIconConstants" /* 9401 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,14 +19,14 @@ let c3;
 let closure_4;
 let obj2;
 let tmp;
-const shared = tmp(4735);
+const shared = tmp(4929);
 ({ Image: c3, View: closure_4 } = react_native);
 const getIconById = AppIconConstants.getIconById;
 const jsx = Fragment.jsx;
 let obj = { container: obj2, image: { resizeMode: "contain", height: "100%", width: "100%" } };
 obj2 = { overflow: "hidden", borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 let closure_7 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppIcon(arg0) {
   let id;
   let style;
   let tmp6;
@@ -101,7 +101,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = num;
   cResult[4] = size1;
   tmp9 = size1;
-}) : ((size) => {
+}) : (function AppIcon(size) {
   let num = size.size;
   const id = size.id;
   if (num === undefined) {

@@ -1,9 +1,9 @@
-// Module ID: 16789
-// Function ID: 16790
+// Module ID: 17064
+// Function ID: 17065
 // Name: useConjureTraceDetail
-// Dependencies: [32, 19, 558, 576, 16785, 2]
+// Dependencies: [32, 19, 558, 576, 17060, 2]
 
-// Module 16789 (useConjureTraceDetail)
+// Module 17064 (useConjureTraceDetail)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -12,7 +12,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureTraceDetail(arg0, arg1) {
   let closure_0;
   let closure_1;
   let tmp5;
@@ -39,7 +39,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       let tmp9;
       let tmp11;
       if (cResult[4] !== arg1) {
-        const tmpResult = tmp(16785);
+        const tmpResult = tmp(17060);
         const cachedTraceDetailResult = tmpResult.cachedTraceDetail(arg1);
         cResult[4] = arg1;
         cResult[5] = cachedTraceDetailResult;
@@ -106,7 +106,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[3] = items;
   tmp7 = items;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useConjureTraceDetail(arg0, arg1) {
   let closure_0;
   let closure_1;
   let tmp2;

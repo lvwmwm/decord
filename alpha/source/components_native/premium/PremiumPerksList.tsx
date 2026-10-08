@@ -1,20 +1,20 @@
-// Module ID: 15583
-// Function ID: 15584
+// Module ID: 15863
+// Function ID: 15864
 // Name: PremiumPerksList
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 5086, 2]
 
-// Module 15583 (PremiumPerksList)
+// Module 15863 (PremiumPerksList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4892 */;
+import Text_Text from "Text/Text" /* 5086 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, perks;
+let _require;
 
 let c3;
 let closure_4;
@@ -24,7 +24,7 @@ const View = react_native.View;
 let obj = { perkInfoContainer: { flexDirection: "row", alignItems: "center", gap: 16 }, perkInfoTextContainer: { flexDirection: "column", gap: 4, maxWidth: 279 }, perkListContainer: { width: "100%", paddingVertical: 24, flexDirection: "column", gap: 24 }, perkIconContainer: size };
 size = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.round, width: 40, height: 40, justifyContent: "center", alignItems: "center" };
 let closure_5 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((perks) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPerksList(perks) {
   let closure_0;
   let tmp4;
   let obj = require("react");
@@ -90,7 +90,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((perks) => {
   cResult[7] = tmp2.perkInfoTextContainer;
   cResult[8] = fn;
   tmp5 = fn;
-}) : ((perks) => {
+}) : (function PremiumPerksList(perks) {
   perks = perks.perks;
   const tmp = closure_5();
   let closure_0 = tmp;

@@ -1,16 +1,16 @@
-// Module ID: 7832
-// Function ID: 7833
+// Module ID: 8250
+// Function ID: 8251
 // Name: ApplicationAssetUtils
-// Dependencies: [32, 5, 7833, 1085, 38, 3, 1282, 584, 1437, 2]
+// Dependencies: [32, 5, 8251, 1085, 38, 3, 1294, 584, 1449, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 7832 (ApplicationAssetUtils)
+// Module 8250 (ApplicationAssetUtils)
 import _modDef38 from "module_38" /* 38 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1437 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1449 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationAssetsStore from "ApplicationAssetsStore" /* 7833 */;
+import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8251 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let PlatformTypes;
 let metroRequire;
 let tmp;
 const LoggerDefault = tmp(3);
-const f95721 = (item) => {
+const f97342 = (item) => {
   let startsWithResult;
   if (item != null) {
     startsWithResult = item.startsWith("http:");
@@ -183,7 +183,7 @@ obj = function _resolveExternalAssets() {
 };
 function updateUrlAssetIds(arr, arg1) {
   let num = 0;
-  if (arr.filter(f95721).length > 0) {
+  if (arr.filter(f97342).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;
@@ -198,9 +198,12 @@ function updateUrlAssetIds(arr, arg1) {
             let mp = closure_11.mp;
             let str4 = mp.serialize(value);
             let combined = null;
-            if (str4) {
-              let _HermesInternal = HermesInternal;
-              combined = "" + "mp" + ":" + str4.toString();
+            if (null != str4) {
+              combined = null;
+              if ("" !== str4) {
+                let _HermesInternal = HermesInternal;
+                combined = "" + "mp" + ":" + str4.toString();
+              }
             }
             arg1[num3] = combined;
             sum = num4 + 1;
@@ -436,9 +439,12 @@ export const getAssetFromImageURL = function getAssetFromImageURL(SPOTIFY, url) 
   const serializer = closure_11[SPOTIFY];
   const str = serializer.serialize(url);
   let combined = null;
-  if (str) {
-    const _HermesInternal = HermesInternal;
-    combined = "" + SPOTIFY + ":" + str.toString();
+  if (null != str) {
+    combined = null;
+    if ("" !== str) {
+      const _HermesInternal = HermesInternal;
+      combined = "" + SPOTIFY + ":" + str.toString();
+    }
   }
   return combined;
 };
@@ -451,31 +457,31 @@ export const getAssetImage = function getAssetImage(application_id, large_image,
   }
   if (null != large_image) {
     if (large_image.includes(":")) {
-      let deserializeResult1;
       [tmp22, tmp23] = large_image.split(":");
+      const _Object = Object;
+      hasOwnProperty = Object.prototype.hasOwnProperty;
       _slicedToArray(large_image.split(":"), 2);
-      if (tmp22 === PlatformTypes.TWITCH) {
-        if (null != items) {
-          let deserializeResult;
-          if (typeof items !== "number") {
-            const deserializer2 = closure_11[tmp24.TWITCH];
-            deserializeResult = deserializer2.deserialize(tmp23, items);
+      if (hasOwnProperty.call(closure_11, tmp22)) {
+        let deserializeResult1;
+        if (tmp22 === PlatformTypes.TWITCH) {
+          if (null != items) {
+            let deserializeResult;
+            if (typeof items !== "number") {
+              const deserializer2 = tmp25[PlatformTypes.TWITCH];
+              deserializeResult = deserializer2.deserialize(tmp23, items);
+            }
+            deserializeResult1 = deserializeResult;
           }
-          deserializeResult1 = deserializeResult;
-        }
-        const self = this;
-        const self2 = this;
-        const obj2 = new LoggerDefault("ApplicationAssetUtils");
-        obj2.warn("getAssetImage: size must === [number, number] for Twitch");
-      } else {
-        const _Object = Object;
-        hasOwnProperty = Object.prototype.hasOwnProperty;
-        if (hasOwnProperty.call(closure_11, tmp22)) {
-          const deserializer = tmp26[tmp22];
+          const self = this;
+          const self2 = this;
+          const obj2 = new LoggerDefault("ApplicationAssetUtils");
+          obj2.warn("getAssetImage: size must === [number, number] for Twitch");
+        } else {
+          const deserializer = tmp25[tmp22];
           deserializeResult1 = deserializer.deserialize(tmp23);
         }
+        return deserializeResult1;
       }
-      return deserializeResult1;
     }
   }
   if (null != application_id) {
@@ -516,7 +522,7 @@ export { fetchAssetIds };
 export const getAssetIds = function getAssetIds(id, arr) {
   const items = [];
   let num = 0;
-  if (arr.filter(f95721).length > 0) {
+  if (arr.filter(f97342).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;
@@ -531,9 +537,12 @@ export const getAssetIds = function getAssetIds(id, arr) {
             let mp = closure_11.mp;
             let str4 = mp.serialize(value);
             let combined = null;
-            if (str4) {
-              let _HermesInternal = HermesInternal;
-              combined = "" + "mp" + ":" + str4.toString();
+            if (null != str4) {
+              combined = null;
+              if ("" !== str4) {
+                let _HermesInternal = HermesInternal;
+                combined = "" + "mp" + ":" + str4.toString();
+              }
             }
             items[num3] = combined;
             sum = num4 + 1;

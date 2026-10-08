@@ -1,16 +1,16 @@
-// Module ID: 9256
-// Function ID: 9257
+// Module ID: 8585
+// Function ID: 8586
 // Name: useGuildEmbeddedApplications
-// Dependencies: [5, 19, 5124, 1085, 504, 1102, 1375, 6665, 558, 576, 2]
+// Dependencies: [5, 19, 5436, 1085, 504, 1102, 1387, 6842, 558, 576, 2]
 
-// Module 9256 (useGuildEmbeddedApplications)
+// Module 8585 (useGuildEmbeddedApplications)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6665 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6842 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5124 */;
+import ApplicationStore from "ApplicationStore" /* 5436 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -42,7 +42,7 @@ let obj = {
     }
     return found;
   },
-  load: function() {
+  load() {
     return closure_3(...arguments);
   }
 };
@@ -99,7 +99,7 @@ let closure_3 = _asyncToGenerator(async (arg0, value, arg2) => {
   }
 });
 let closure_6 = createFetchStore(ApplicationStore, obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildEmbeddedApplications(arg0, arg1, arg2) {
   const obj = react2;
   const cResult = obj.c(6);
   const tmp2 = closure_6(arg0, arg1, arg2);
@@ -123,7 +123,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
       }
     }
   }
-  const fn = function c() {
+  const fn = function s() {
     if (null != data) {
       ref.current = true;
     } else {
@@ -150,7 +150,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
   cResult[5] = items;
   tmp4 = items;
   tmp3 = fn;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useGuildEmbeddedApplications(arg0, arg1, arg2) {
   let tmp = closure_6(arg0, arg1, arg2);
   const data = tmp.data;
   const error = tmp.error;

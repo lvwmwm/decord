@@ -1,15 +1,15 @@
-// Module ID: 16496
-// Function ID: 16497
+// Module ID: 16756
+// Function ID: 16757
 // Name: ICYMIBottomLoading
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 2]
 
-// Module 16496 (ICYMIBottomLoading)
+// Module 16756 (ICYMIBottomLoading)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let closure_6 = createStyles.createStyles(() => {
   ({ paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_24, alignItems: "center", justifyContent: "center" });
   return obj;
 });
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIBottomLoading() {
   let first;
   let tmp7;
   const obj = react2;
@@ -44,7 +44,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[2];
   }
   return tmp7;
-}) : (() => <_false style={closure_6().container}><React3 size="small" /></_false>);
+}) : (function ICYMIBottomLoading() {
+  return <_false style={closure_6().container}><React3 size="small" /></_false>;
+});
 const result = size.fileFinishedImporting("modules/icymi/native/ICYMIBottomLoading.tsx");
 
 export const ICYMIBottomLoading = tmp4;

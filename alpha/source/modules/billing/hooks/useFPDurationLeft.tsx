@@ -1,18 +1,18 @@
-// Module ID: 13286
-// Function ID: 13287
+// Module ID: 13587
+// Function ID: 13588
 // Name: useFPDurationLeft
-// Dependencies: [558, 576, 1126, 6961, 4558, 1242, 2]
+// Dependencies: [558, 576, 1126, 7150, 4750, 1254, 2]
 
-// Module 13286 (useFPDurationLeft)
+// Module 13587 (useFPDurationLeft)
 import react from "react" /* 576 */;
 import intl from "intl" /* 1126 */;
-import DateUtils from "DateUtils" /* 4558 */;
-import useCountdownDefault from "useCountdown" /* 6961 */;
+import DateUtils from "DateUtils" /* 4750 */;
+import useCountdownDefault from "useCountdown" /* 7150 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp10;
-const SentryUtilsDefault = tmp10(1242);
+const SentryUtilsDefault = tmp10(1254);
 function roundFPCountdownUnits(arg0) {
   let num7;
   const time = {};
@@ -72,7 +72,7 @@ function roundFPCountdownUnits(arg0) {
   }
 }
 const CountDownMessageTypes = { SHORT_TIME_LEFT: 0, [0]: "SHORT_TIME_LEFT", LONG_TIME_LEFT: 1, [1]: "LONG_TIME_LEFT", ENDS_IN: 2, [2]: "ENDS_IN", SHORT_TIME: 3, [3]: "SHORT_TIME", CREDITS_ENDS_IN: 4, [4]: "CREDITS_ENDS_IN" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(toDate, arg1) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFPDurationLeft(toDate, arg1) {
   let time4;
   const obj = react;
   const cResult = obj.c(2);
@@ -112,7 +112,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(toDate, ar
     tmp10Result.captureMessage("Error trying to format string for fractional nitro duration pill");
   }
   return str3;
-}) : (function(arg0, arg1) {
+}) : (function useFPDurationLeft(arg0, arg1) {
   let time4;
   let tmp7;
   if (obj.SHORT_TIME_LEFT === arg1) {
@@ -145,7 +145,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(toDate, ar
   useCountdownDefault;
   let str3 = "";
   try {
-    const tmp7Result = tmp7(4558);
+    const tmp7Result = tmp7(4750);
     str3 = tmp7Result.unitsAsStrings(tmp18, time4);
   } catch (err) {
     const tmp16Result = SentryUtilsDefault;

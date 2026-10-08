@@ -1,14 +1,14 @@
-// Module ID: 17760
-// Function ID: 17761
+// Module ID: 18047
+// Function ID: 18048
 // Name: AuditLogRecord
-// Dependencies: [1392, 1085, 1242, 4467, 11, 2]
+// Dependencies: [1404, 1085, 1254, 4659, 11, 2]
 // Exports: AuditLogChange
 
-// Module 17760 (AuditLogRecord)
+// Module 18047 (AuditLogRecord)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import _modDef4467 from "module_4467" /* 4467 */;
-import Record from "Record" /* 1392 */;
+import SentryUtilsDefault from "SentryUtils" /* 1254 */;
+import _modDef4659 from "module_4659" /* 4659 */;
+import Record from "Record" /* 1404 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -288,7 +288,7 @@ class AuditLogRecord extends Record {
     tmp5.actionType = getActionType(tmp5.action);
     ({ targetId: tmp5.targetId, timestampStart } = timestampEnd);
     if (timestampStart == null) {
-      const tmp8 = _modDef4467;
+      const tmp8 = _modDef4659;
       const obj = SnowflakeUtilsDefault;
       timestampStart = tmp8(obj.extractTimestamp(tmp5.id));
     }
@@ -327,10 +327,10 @@ const result = size.fileFinishedImporting("records/AuditLogRecord.tsx");
 export default AuditLogRecord;
 export { getTargetType };
 export { getActionType };
-export function AuditLogChange(key, items2, added) {
+export function AuditLogChange(key, old_value, added) {
   const obj = Object.create(new.target.prototype);
   obj.key = key;
-  obj.oldValue = items2;
+  obj.oldValue = old_value;
   obj.newValue = added;
   return obj;
 }

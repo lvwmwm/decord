@@ -1,29 +1,29 @@
-// Module ID: 11202
-// Function ID: 11203
+// Module ID: 11319
+// Function ID: 11320
 // Name: LeaveConnectionRoleActionSheet
-// Dependencies: [19, 17, 21, 4896, 558, 576, 4892, 1126, 5601, 6652, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 5086, 1126, 5375, 6829, 2]
 
-// Module 11202 (LeaveConnectionRoleActionSheet)
+// Module 11319 (LeaveConnectionRoleActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6652 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6829 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, onLeaveRolePressed;
+let BottomSheet;
 
 let c3;
 let closure_4;
 const View = react_native.View;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let closure_5 = createStyles.createStyles({ container: { padding: 12 }, marginTop: { marginTop: 8 }, button: { marginTop: 8, marginBottom: 16 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onLeaveRolePressed) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeaveConnectionRoleActionSheet(onLeaveRolePressed) {
   let first;
   let intl;
   let items;
@@ -39,7 +39,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onLeaveRolePressed) 
   const container = tmp4.container;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl4.t.vytvJF) };
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     intl = tmp(1126).intl;
     const tmp7 = _false(Text, obj2);
     cResult[0] = tmp7;
@@ -100,7 +100,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onLeaveRolePressed) 
     const obj5 = { children: React3(View, obj6) };
     obj6 = { style: container, children: items };
     items = [first, tmp10, tmp18];
-    BottomSheet = tmp(6652).BottomSheet;
+    BottomSheet = tmp(6829).BottomSheet;
     const tmp24 = _false(BottomSheet, obj5);
     cResult[10] = tmp4.container;
     cResult[11] = tmp10;
@@ -113,7 +113,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onLeaveRolePressed) 
   cResult[8] = tmp15;
   cResult[9] = tmp19;
   tmp18 = tmp19;
-}) : ((onLeaveRolePressed) => {
+}) : (function LeaveConnectionRoleActionSheet(onLeaveRolePressed) {
   let Button;
   let intl;
   let intl2;

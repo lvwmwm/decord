@@ -1,16 +1,16 @@
-// Module ID: 14897
-// Function ID: 14898
+// Module ID: 15159
+// Function ID: 15160
 // Name: AdContentSeenStore
-// Dependencies: [32, 7197, 7200, 5637, 7196, 504, 584, 2]
+// Dependencies: [32, 7376, 7379, 5984, 7385, 504, 584, 2]
 
-// Module 14897 (AdContentSeenStore)
+// Module 15159 (AdContentSeenStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import AdCreativeType from "AdCreativeType" /* 5637 */;
-import QuestDataUtils from "QuestDataUtils" /* 7196 */;
+import AdCreativeType from "AdCreativeType" /* 5984 */;
+import QuestExpirationUtils from "QuestExpirationUtils" /* 7385 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7197 */;
-import QuestStore from "QuestStore" /* 7200 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7376 */;
+import QuestStore from "QuestStore" /* 7379 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -40,7 +40,7 @@ function syncWithQuestStore() {
     let tmp6 = tmp5;
     let hasItem = obj.has(tmp5);
     if (!hasItem) {
-      let obj2 = QuestDataUtils;
+      let obj2 = QuestExpirationUtils;
       hasItem = obj2.isQuestExpired(tmp7);
     }
     if (!hasItem) {
@@ -75,7 +75,7 @@ function syncWithQuestStore() {
         let value = quests.get(item10063);
         let isQuestExpiredResult = null == value;
         if (!isQuestExpiredResult) {
-          let obj3 = QuestDataUtils;
+          let obj3 = QuestExpirationUtils;
           isQuestExpiredResult = obj3.isQuestExpired(tmp26);
         }
         if (isQuestExpiredResult) {

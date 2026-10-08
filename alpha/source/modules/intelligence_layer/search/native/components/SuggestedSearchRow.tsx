@@ -1,24 +1,22 @@
-// Module ID: 16827
-// Function ID: 16828
+// Module ID: 17106
+// Function ID: 17107
 // Name: SuggestedSearchRow
-// Dependencies: [19, 17, 11982, 21, 4896, 587, 558, 576, 12004, 12002, 12005, 11980, 12021, 4892, 6555, 16828, 2]
+// Dependencies: [19, 17, 12055, 21, 5090, 587, 558, 576, 12077, 12075, 12078, 12053, 12094, 5086, 6731, 17107, 2]
 
-// Module 16827 (SuggestedSearchRow)
+// Module 17106 (SuggestedSearchRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11980 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 12002 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 12004 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12005 */;
-import SuggestedSearchActionCreators from "SuggestedSearchActionCreators" /* 12021 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12053 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 12075 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 12077 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12078 */;
+import SuggestedSearchActionCreators from "SuggestedSearchActionCreators" /* 12094 */;
 import react from "react" /* 19 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 11982 */;
-import createStyles from "createStyles" /* 4896 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 12055 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let suggestedSearch;
 
 let SUGGESTED_SEARCH_COMPACT_LABEL_HEIGHT;
 let hasOwnProperty;
@@ -30,7 +28,7 @@ let obj = { iconCircle: size, text: { flexShrink: 1 }, compactLabel: { height: S
 size = { width: 48, height: 48, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, alignItems: "center", justifyContent: "center" };
 let closure_7 = createStyles.createStyles(obj);
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((suggestedSearch) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SuggestedSearchRow(suggestedSearch) {
   let suggestionSource;
   let obj = suggestedSearch(suggestionSource[7]);
   const cResult = obj.c(21);
@@ -151,7 +149,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((suggest
   cResult[4] = suggestionSource;
   cResult[5] = fn;
   tmp5 = fn;
-}) : ((suggestedSearch) => {
+}) : (function SuggestedSearchRow(suggestedSearch) {
   suggestedSearch = suggestedSearch.suggestedSearch;
   const smartSearchQuery = suggestedSearch.smartSearchQuery;
   const suggestionSource = suggestedSearch.suggestionSource;

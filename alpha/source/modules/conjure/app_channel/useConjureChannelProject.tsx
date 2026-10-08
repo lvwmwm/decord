@@ -1,33 +1,32 @@
-// Module ID: 10749
-// Function ID: 10750
+// Module ID: 12708
+// Function ID: 12709
 // Name: useConjureChannelProject
-// Dependencies: [19, 2112, 2074, 4515, 8734, 1085, 558, 576, 6756, 504, 8735, 11, 6757, 2]
+// Dependencies: [19, 2124, 2086, 4707, 11251, 1085, 558, 576, 6932, 504, 12364, 11, 6933, 2]
 
-// Module 10749 (useConjureChannelProject)
+// Module 12708 (useConjureChannelProject)
 import Constants from "Constants" /* 1085 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 8734 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 8735 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 11251 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 12364 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ConjureProjectStore = ConjureProjectStore2;
-let _require, guild_id, importDefault;
+let _require, listProjectsResult, tmp3, tmp5;
 
 const isProjectOwner = ConjureProjectStore2.isProjectOwner;
 const Permissions = Constants.Permissions;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureChannelProject(guild_id) {
   let closure_0;
-  let closure_1;
   let stateFromStoresArray;
   let tmp11;
   let tmp12;
   let tmp14;
+  let tmp15;
   let tmp16;
-  let tmp17;
   let tmp4;
   let tmp8;
   let tmp = _require;
@@ -45,7 +44,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
   }
   _require = tmp4;
   const tmp6 = null != tmp4;
-  importDefault = tmp6;
+  let closure_1 = tmp6;
   guild_id = undefined;
   if (guild_id != null) {
     guild_id = guild_id.guild_id;
@@ -63,178 +62,174 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
     tmp8 = cResult[2];
   }
   if (cResult[3] !== guild_id) {
-    const fn = function j() {
-      let guild = null;
-      if (null != guild_id) {
-        guild = GuildStore.getGuild(tmp);
+    class S {
+      constructor() {
+        guild = null;
+        if (null != c2) {
+          tmp3 = closure_5;
+          guild = closure_5.getGuild(tmp);
+        }
+        canResult = null != guild;
+        if (canResult) {
+          tmp5 = closure_6;
+          tmp6 = Permissions;
+          canResult = closure_6.can(Permissions.MANAGE_GUILD, guild);
+        }
+        return canResult;
       }
-      const canResult = null != guild && PermissionStore.can(Permissions.MANAGE_GUILD, guild);
-      return canResult;
-    };
+    }
     const items1 = [guild_id];
     cResult[3] = guild_id;
-    cResult[4] = fn;
+    cResult[4] = S;
     cResult[5] = items1;
     tmp12 = items1;
-    tmp11 = fn;
+    tmp11 = S;
   } else {
-    tmp11 = cResult[4];
+    class S {
+      constructor() {
+        guild = null;
+        if (null != c2) {
+          tmp3 = closure_5;
+          guild = closure_5.getGuild(tmp);
+        }
+        canResult = null != guild;
+        if (canResult) {
+          tmp5 = closure_6;
+          tmp6 = Permissions;
+          canResult = closure_6.can(Permissions.MANAGE_GUILD, guild);
+        }
+        return canResult;
+      }
+    }
     tmp12 = cResult[5];
   }
-  const tmpResult4 = tmp(tmp2[9]);
-  const stateFromStores = tmpResult4.useStateFromStores(tmp8, tmp11, tmp12);
+  const tmpResult3 = tmp(tmp2[9]);
+  const stateFromStores = tmpResult3.useStateFromStores(tmp8, tmp11, tmp12);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        guild = null;
+        if (null != c2) {
+          tmp3 = closure_5;
+          guild = closure_5.getGuild(tmp);
+        }
+        canResult = null != guild;
+        if (canResult) {
+          tmp5 = closure_6;
+          tmp6 = Permissions;
+          canResult = closure_6.can(Permissions.MANAGE_GUILD, guild);
+        }
+        return canResult;
+      }
+    }
     const items2 = [stateFromStoresArray];
     cResult[6] = items2;
     tmp14 = items2;
   } else {
-    tmp14 = cResult[6];
-  }
-  if (cResult[7] !== guild_id) {
-    const fn2 = function y() {
-      let items;
-      if (null != guild_id) {
-        const selfMember = GuildMemberStore.getSelfMember(tmp);
-        let roles;
-        if (selfMember != null) {
-          roles = selfMember.roles;
+    class S {
+      constructor() {
+        guild = null;
+        if (null != c2) {
+          tmp3 = closure_5;
+          guild = closure_5.getGuild(tmp);
         }
-        if (roles == null) {
-          roles = [];
+        canResult = null != guild;
+        if (canResult) {
+          tmp5 = closure_6;
+          tmp6 = Permissions;
+          canResult = closure_6.can(Permissions.MANAGE_GUILD, guild);
         }
-        items = roles;
-      } else {
-        items = [];
+        return canResult;
       }
-      return items;
-    };
-    const items3 = [guild_id];
-    cResult[7] = guild_id;
-    cResult[8] = fn2;
-    cResult[9] = items3;
-    tmp17 = items3;
-    tmp16 = fn2;
-  } else {
-    tmp16 = cResult[8];
-    tmp17 = cResult[9];
-  }
-  const tmpResult5 = tmp(tmp2[9]);
-  stateFromStoresArray = tmpResult5.useStateFromStoresArray(tmp14, tmp16, tmp17);
-  if (cResult[10] === tmp4) {
-    if (cResult[11] === guild_id) {
-      let tmp19;
-      if (cResult[12] === tmp6) {
-        tmp19 = cResult[13];
-      }
-      if (cResult[14] === tmp4) {
-        if (cResult[15] === stateFromStores) {
-          if (cResult[16] === stateFromStoresArray) {
-            if (cResult[17] === guild_id) {
-              let tmp20;
-              let tmp23;
-              if (cResult[18] === tmp6) {
-                tmp20 = cResult[19];
-              }
-              const effect = stateFromStores.useEffect(tmp19, tmp20);
-              const _Symbol = Symbol;
-              if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-                const items4 = [ConjureProjectStore];
-                cResult[20] = items4;
-                tmp23 = items4;
-              } else {
-                tmp23 = cResult[20];
-              }
-              if (cResult[21] === tmp4) {
-                if (cResult[22] === stateFromStores) {
-                  if (cResult[23] === stateFromStoresArray) {
-                    let tmp25;
-                    let tmp26;
-                    if (cResult[24] === guild_id) {
-                      tmp25 = cResult[25];
-                      tmp26 = cResult[26];
-                    }
-                    const tmpResult6 = tmp(tmp2[9]);
-                    return tmpResult6.useStateFromStores(tmp23, tmp25, tmp26);
-                  }
-                }
-              }
-              class M {
-                constructor() {
-                  let result1;
-                  if (null == result1) {
-                    return null;
-                  } else {
-                    const result = ConjureProjectStore.findProjectByApplicationId(tmp);
-                    if (null != result) {
-                      if (!isProjectOwner(result)) {
-                        result1 = null;
-                        if (null != guild_id) {
-                          const obj = closure_1(guild_id[11]);
-                          result1 = obj.castGuildIdAsEveryoneGuildRoleId(tmp2);
-                        }
-                        let prop = result.collaborator_role_ids;
-                        if (prop == null) {
-                          prop = [];
-                        }
-                        let tmp7 = null;
-                        if (result.guild_id === guild_id) {
-                          tmp7 = null;
-                          const obj2 = closure_0(guild_id[12]);
-                          if (obj2.isProjectPublic(result)) {
-                            const tmp10 = stateFromStores;
-                            if (tmp10) {
-                              tmp7 = result;
-                            } else {
-                              tmp7 = null;
-                            }
-                          }
-                        }
-                        return tmp7;
-                      }
-                    }
-                    return result;
-                  }
-                }
-              }
-              const items5 = [tmp4, stateFromStores, stateFromStoresArray, guild_id];
-              cResult[21] = tmp4;
-              cResult[22] = stateFromStores;
-              cResult[23] = stateFromStoresArray;
-              cResult[24] = guild_id;
-              cResult[25] = M;
-              cResult[26] = items5;
-              tmp26 = items5;
-              tmp25 = M;
-            }
-          }
-        }
-      }
-      const items6 = [tmp6, tmp4, guild_id, stateFromStores, ];
-      cResult[14] = tmp4;
-      cResult[15] = stateFromStores;
-      cResult[16] = stateFromStoresArray;
-      cResult[17] = guild_id;
-      cResult[18] = tmp6;
-      cResult[19] = items6;
-      tmp20 = items6;
     }
   }
-  class E {
-    constructor() {
-      const tmp = closure_1 && null != closure_0;
-      if (tmp) {
-        const listProjects = ConjureActionCreators.listProjects;
-        ConjureActionCreators;
-        listProjects(guild_id);
+  if (cResult[7] !== guild_id) {
+    class S {
+      constructor() {
+        guild = null;
+        if (null != c2) {
+          tmp3 = closure_5;
+          guild = closure_5.getGuild(tmp);
+        }
+        canResult = null != guild;
+        if (canResult) {
+          tmp5 = closure_6;
+          tmp6 = Permissions;
+          canResult = closure_6.can(Permissions.MANAGE_GUILD, guild);
+        }
+        return canResult;
       }
+    }
+    const items3 = [guild_id];
+    cResult[7] = guild_id;
+    cResult[8] = tmp17;
+    cResult[9] = items3;
+    tmp16 = items3;
+    tmp15 = tmp17;
+  } else {
+    class S {
+      constructor() {
+        guild = null;
+        if (null != c2) {
+          tmp3 = closure_5;
+          guild = closure_5.getGuild(tmp);
+        }
+        canResult = null != guild;
+        if (canResult) {
+          tmp5 = closure_6;
+          tmp6 = Permissions;
+          canResult = closure_6.can(Permissions.MANAGE_GUILD, guild);
+        }
+        return canResult;
+      }
+    }
+    tmp16 = cResult[9];
+  }
+  const tmpResult4 = tmp(tmp2[9]);
+  stateFromStoresArray = tmpResult4.useStateFromStoresArray(tmp14, tmp15, tmp16);
+  if (cResult[10] === tmp4) {
+    class S {
+      constructor() {
+        guild = null;
+        if (null != c2) {
+          tmp3 = closure_5;
+          guild = closure_5.getGuild(tmp);
+        }
+        canResult = null != guild;
+        if (canResult) {
+          tmp5 = closure_6;
+          tmp6 = Permissions;
+          canResult = closure_6.can(Permissions.MANAGE_GUILD, guild);
+        }
+        return canResult;
+      }
+    }
+  }
+  class C {
+    constructor() {
+      tmp = closure_1;
+      if (tmp) {
+        tmp2 = closure_0;
+        tmp3 = null;
+        tmp = null != closure_0;
+      }
+      if (tmp) {
+        tmp4 = closure_0;
+        tmp5 = closure_2;
+        tmp6 = closure_0(closure_2[10]);
+        tmp7 = c2;
+        tmp8 = null;
+        listProjects = tmp6.listProjects;
+        listProjectsResult = listProjects(tmp7);
+      }
+      return;
     }
   }
   cResult[10] = tmp4;
   cResult[11] = guild_id;
   cResult[12] = tmp6;
-  cResult[13] = E;
-  tmp19 = E;
-}) : ((guild_id) => {
+  cResult[13] = C;
+}) : (function useConjureChannelProject(guild_id) {
   let require;
   let stateFromStoresArray;
   let tmp = require;

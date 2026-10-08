@@ -1,18 +1,18 @@
-// Module ID: 17230
-// Function ID: 17231
+// Module ID: 17511
+// Function ID: 17512
 // Name: VoicePanelContainer
-// Dependencies: [19, 2051, 5104, 21, 558, 576, 504, 17231, 17392, 4498, 4595, 2]
+// Dependencies: [19, 2063, 6079, 21, 558, 576, 504, 17512, 17674, 4690, 4787, 2]
 
-// Module 17230 (VoicePanelContainer)
+// Module 17511 (VoicePanelContainer)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import _slicedToArray from "_slicedToArray" /* 4498 */;
-import native from "native" /* 4595 */;
-import VoicePanelUIDefault from "VoicePanelUI" /* 17231 */;
-import VoicePanelControllerDefault from "VoicePanelController" /* 17392 */;
+import _slicedToArray from "_slicedToArray" /* 4690 */;
+import native from "native" /* 4787 */;
+import VoicePanelUIDefault from "VoicePanelUI" /* 17512 */;
+import VoicePanelControllerDefault from "VoicePanelController" /* 17674 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import VoicePanelStore from "VoicePanelStore" /* 5104 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import VoicePanelStore from "VoicePanelStore" /* 6079 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ function renderVoicePanel(arg0, channelId, transitionState, transitionCleanUp) {
 }
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanel(channelId) {
   let first;
   let tmp6;
   let tmp8;
@@ -80,7 +80,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[5] = channelId;
   cResult[6] = tmp15;
   tmp12 = tmp15;
-}) : ((arg0) => {
+}) : (function VoicePanel(arg0) {
   let channelId;
   _require = arg0;
   const items = [ChannelStore];
@@ -98,7 +98,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   return <tmp2 guildId={stateFromStores}>{react.useMemo(() => jsx(VoicePanelUIDefault, {}), [])}</tmp2>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelContainer() {
   let first;
   let tmp6;
   const obj = react2;
@@ -122,7 +122,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     tmp6 = cResult[2];
   }
   return tmp6;
-}) : (() => jsx(native.TransitionGroup, { items: VoicePanelStore((channels) => Array.from(channels.channels), _slicedToArray.shallow), getItemKey: getChannelKey, renderItem: renderVoicePanel })));
+}) : (function VoicePanelContainer() {
+  return jsx(native.TransitionGroup, { items: VoicePanelStore((channels) => Array.from(channels.channels), _slicedToArray.shallow), getItemKey: getChannelKey, renderItem: renderVoicePanel });
+}));
 const result = size.fileFinishedImporting("modules/voice_panel/native/VoicePanelContainer.tsx");
 
 export default memoResult;

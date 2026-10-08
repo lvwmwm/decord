@@ -1,25 +1,25 @@
-// Module ID: 12779
-// Function ID: 12780
+// Module ID: 12926
+// Function ID: 12927
 // Name: MediaViewerThumbnails
-// Dependencies: [32, 19, 17, 7977, 21, 558, 576, 12780, 4586, 587, 5780, 1369, 4618, 4896, 5981, 7950, 4619, 6576, 2]
+// Dependencies: [32, 19, 17, 8394, 21, 558, 576, 12927, 4778, 587, 5363, 1381, 4810, 5090, 6164, 8368, 4811, 6752, 2]
 // Exports: default
 
-// Module 12779 (MediaViewerThumbnails)
+// Module 12926 (MediaViewerThumbnails)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4586 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4618 */;
-import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4619 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5780 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 12780 */;
+import useToken from "useToken" /* 4778 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4810 */;
+import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4811 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5363 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 12927 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 7977 */;
+import Constants from "Constants" /* 8394 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import size from "module_2" /* 2 */;
 
 let THUMBNAIL_HEIGHT;
@@ -30,11 +30,11 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const PlatformUtils = tmp(1369);
+const PlatformUtils = tmp(1381);
 ({ Pressable: hasOwnProperty, StyleSheet: metroRequire } = react_native);
 ({ THUMBNAIL_WIDTH_MARGIN: metroImportDefault, THUMBNAIL_MARGIN, THUMBNAIL_HEIGHT } = Constants);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ObscuredView(arg0) {
   let index;
   let source;
   let tmp5;
@@ -94,7 +94,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return tmp9;
-}) : ((source) => {
+}) : (function ObscuredView(source) {
   let items;
   let obj3;
   let tmp4;
@@ -111,7 +111,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (source.spoiler) {
       const obj2 = { style: items, children: metroImportAll(tmp7Result, obj3) };
       items = [metroRequire.absoluteFill, tmp5];
-      const View = tmp7(4618).View;
+      const View = tmp7(4810).View;
       let str = "light";
       tmp7Result = VisualEffectViewDefault;
       const tmp11 = metroRequire;
@@ -129,42 +129,41 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let obj = { containerPortrait: { height: 60 }, thumbnailButtonPortrait: { overflow: "hidden", marginHorizontal: THUMBNAIL_MARGIN, borderRadius: 2 }, thumbnailImagePortrait: { height: THUMBNAIL_HEIGHT, width: "100%" } };
 let closure_11 = createStyles.createStyles(obj);
-let closure_12 = react.memo((onSelect) => {
-  let index;
-  let items1;
+let closure_12 = react.memo(function MediaThumbnail(source) {
   let items2;
+  let items3;
   let numSources;
   let obj2;
   let selectedIndex;
-  let source;
-  let thumbnail;
-  let tmp6;
-  let tmp7;
   let useThumbnailStyle;
-  ({ source, index } = onSelect);
-  onSelect = onSelect.onSelect;
-  ({ numSources, selectedIndex, useThumbnailStyle } = onSelect);
+  source = source.source;
+  const index = source.index;
+  const onSelect = source.onSelect;
+  ({ numSources, selectedIndex, useThumbnailStyle } = source);
   const tmp = closure_11();
   let first = source;
   if (Array.isArray(source)) {
     first = source[0];
   }
-  const items = [onSelect, index];
+  const items = [first];
+  const memo = react.useMemo(() => {
+    let thumbnail = first.thumbnail;
+    if (thumbnail == null) {
+      thumbnail = first;
+    }
+    return { uri: thumbnail.uri };
+  }, items);
+  const items1 = [onSelect, index];
   const thumbnailStyle = useThumbnailStyle(first, index);
-  const callback = react.useCallback(() => onSelect(index), items);
-  const obj = { style: items1, children: tmp6(tmp7, obj2) };
-  items1 = [tmp.thumbnailButtonPortrait, thumbnailStyle];
-  obj2 = { needsOffscreenAlphaCompositing: true, renderToHardwareTextureAndroid: true, accessibilityRole: "imagebutton", accessibilityLabel: "Thumbnail preview, " + index + 1 + " of " + numSources, accessibilityHint: "Double tap to focus", accessibilityState: { selected: selectedIndex === index }, onPress: callback, children: items2 };
+  const callback = react.useCallback(() => onSelect(index), items1);
+  const obj = { style: items2, children: React4(hasOwnProperty, obj2) };
+  items2 = [tmp.thumbnailButtonPortrait, thumbnailStyle];
+  obj2 = { needsOffscreenAlphaCompositing: true, renderToHardwareTextureAndroid: true, accessibilityRole: "imagebutton", accessibilityLabel: "Thumbnail preview, " + index + 1 + " of " + numSources, accessibilityHint: "Double tap to focus", accessibilityState: { selected: selectedIndex === index }, onPress: callback, children: items3 };
   const View = ReanimatedRexportDefault.View;
-  const obj3 = { style: tmp.thumbnailImagePortrait, source: thumbnail, enableAnimation: false };
-  thumbnail = first.thumbnail;
-  tmp6 = React4;
-  tmp7 = hasOwnProperty;
-  const tmp8 = FastImageDefault;
-  if (thumbnail == null) {
-    thumbnail = first;
-  }
-  items2 = [metroImportAll(tmp8, obj3), metroImportAll(closure_10, { source: first, index })];
+  items3 = [, ];
+  const obj3 = { style: tmp.thumbnailImagePortrait, source: memo, enableAnimation: false };
+  items3[0] = metroImportAll(FastImageDefault, obj3);
+  items3[1] = metroImportAll(closure_10, { source: first, index });
   return metroImportAll(View, obj);
 });
 const __initData = { code: "function MediaViewerThumbnailsTsx1(){const{scrollEnabled}=this.__closure;return{scrollEnabled:scrollEnabled.get()};}" };

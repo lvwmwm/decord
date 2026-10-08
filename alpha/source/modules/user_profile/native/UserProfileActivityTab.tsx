@@ -1,23 +1,23 @@
-// Module ID: 12934
-// Function ID: 12935
+// Module ID: 13213
+// Function ID: 13214
 // Name: UserProfileActivityTab
-// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 4892, 1126, 8057, 2115, 12935, 12938, 12836, 12939, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 587, 558, 576, 5086, 1126, 8466, 2127, 13214, 13217, 12983, 13218, 2]
 
-// Module 12934 (UserProfileActivityTab)
+// Module 13213 (UserProfileActivityTab)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import UserProfileRecentActivityCardDefault from "UserProfileRecentActivityCard" /* 12939 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import UserProfileRecentActivityCardDefault from "UserProfileRecentActivityCard" /* 13218 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, user;
+let _require;
 
 let hasOwnProperty;
 let metroImportDefault;
@@ -46,7 +46,7 @@ size = { width: 60, height: 60, borderRadius: nativeDefault.radii.lg, background
 size1 = { width: 135, height: 16, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 let closure_8 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileActivityTabSkeleton() {
   let closure_0;
   let first;
   let obj = require("react");
@@ -98,7 +98,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = tmp2.loadingThumbnail;
   cResult[4] = mapped;
   tmp4 = mapped;
-}) : (() => {
+}) : (function UserProfileActivityTabSkeleton() {
   let arr;
   const tmp = closure_8();
   let closure_0 = tmp;
@@ -119,7 +119,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return closure_5(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Section(arg0) {
   let children;
   let heading;
   let introText;
@@ -162,7 +162,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp9 = null != introText;
     if (tmp9) {
       const obj3 = { style: tmp4.introText, variant: "text-xs/medium", children: introText };
-      tmp9 = hasOwnProperty(tmp(4892).Text, obj3);
+      tmp9 = hasOwnProperty(tmp(5086).Text, obj3);
     }
     cResult[3] = introText;
     cResult[4] = tmp4.introText;
@@ -175,7 +175,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.sectionHeading;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((introText) => {
+}) : (function Section(introText) {
   let children;
   let heading;
   let items;
@@ -199,7 +199,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp2(tmp3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function RecentActivityIntroText() {
   let learnMore;
   let tmp5;
   const tmp = _require;
@@ -236,7 +236,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[1];
   }
   return tmp5;
-}) : (() => {
+}) : (function RecentActivityIntroText() {
   let learnMore;
   _require = closure_8();
   const intl = require("intl").intl;
@@ -262,7 +262,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return intl.format(require("intl").t["4bk9Ak"], obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileActivityTab(user) {
   let cardStyle;
   let channelId;
   let currentUser;
@@ -287,7 +287,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       if (cResult[2] === user.id) {
         tmp4 = cResult[3];
       }
-      const tmp6 = cardStyle(12935)(tmp4);
+      const tmp6 = cardStyle(13214)(tmp4);
       ({ recent, isCurrentUser, hasCurrentActivity, hasRecentActivity } = tmp6);
       const tmp5 = cardStyle;
       if (!hasCurrentActivity) {
@@ -314,7 +314,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                 }
               }
             }
-            const tmpResult = user(12938);
+            const tmpResult = user(13217);
             if (isCurrentUser) {
               tmp8Result = tmp8(tmpResult.UserProfileActivityEmptyCurrentUser, {});
             } else {
@@ -396,7 +396,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       }
       let tmp17 = hasCurrentActivity;
       if (tmp17) {
-        const obj5 = { heading: intl.string(user(1126).t.J6STd9), children: closure_5(tmp5(12836), obj6) };
+        const obj5 = { heading: intl.string(user(1126).t.J6STd9), children: closure_5(tmp5(12983), obj6) };
         intl = tmp(1126).intl;
         obj6 = { user, currentUser, guildId, style: cardStyle };
         tmp17 = closure_5(closure_10, obj5);
@@ -416,7 +416,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[2] = user.id;
   cResult[3] = obj7;
   tmp4 = obj7;
-}) : ((user) => {
+}) : (function UserProfileActivityTab(user) {
   let cardStyle;
   let currentUser;
   let guildId;
@@ -432,8 +432,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   ({ currentUser, guildId, cardStyle } = user);
   const channelId = user.channelId;
   let obj = { userId: user.id, currentUserId: currentUser.id, guildId };
-  ({ recent, isCurrentUser, hasCurrentActivity, hasRecentActivity } = cardStyle(12935)(obj));
-  cardStyle(12935)(obj);
+  ({ recent, isCurrentUser, hasCurrentActivity, hasRecentActivity } = cardStyle(13214)(obj));
+  cardStyle(13214)(obj);
   const tmp = cardStyle;
   if (!hasCurrentActivity) {
     let tmp10Result;
@@ -441,7 +441,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       if (tmp4) {
         tmp10Result = tmp5(closure_9, {});
       } else {
-        const tmp7 = user(12938);
+        const tmp7 = user(13217);
         if (isCurrentUser) {
           tmp10Result = tmp5(tmp7.UserProfileActivityEmptyCurrentUser, {});
         } else {
@@ -455,7 +455,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   const tmp10 = closure_6;
   const tmp11 = closure_7;
   if (hasCurrentActivity) {
-    const obj3 = { heading: intl.string(user(1126).t.J6STd9), children: closure_5(tmp(12836), obj4) };
+    const obj3 = { heading: intl.string(user(1126).t.J6STd9), children: closure_5(tmp(12983), obj4) };
     intl = user(1126).intl;
     obj4 = { user, currentUser, guildId, style: cardStyle };
     hasCurrentActivity = closure_5(closure_10, obj3);

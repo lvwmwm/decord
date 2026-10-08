@@ -1,19 +1,19 @@
-// Module ID: 12233
-// Function ID: 12234
+// Module ID: 12312
+// Function ID: 12313
 // Name: useGameServerGetExpiringEntitlements
-// Dependencies: [19, 7683, 558, 576, 504, 12167, 2]
+// Dependencies: [19, 8004, 558, 576, 504, 12246, 2]
 
-// Module 12233 (useGameServerGetExpiringEntitlements)
-import getExpiringGuildEntitlements from "getExpiringGuildEntitlements" /* 12167 */;
+// Module 12312 (useGameServerGetExpiringEntitlements)
+import getExpiringGuildEntitlements from "getExpiringGuildEntitlements" /* 12246 */;
 import react from "react" /* 19 */;
-import GameServerStore from "GameServerStore" /* 7683 */;
+import GameServerStore from "GameServerStore" /* 8004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameServerGetExpiringEntitlements(arg0) {
   let closure_0;
   let first;
   let tmp10;
@@ -29,7 +29,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function s() {
+    const fn = function l() {
       return GameServerStore.getStateForGuild(closure_0);
     };
     cResult[1] = arg0;
@@ -80,7 +80,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp10 = cResult[4];
   }
   return tmp10;
-}) : ((arg0) => {
+}) : (function useGameServerGetExpiringEntitlements(arg0) {
   let closure_0;
   let stateFromStores;
   _require = arg0;

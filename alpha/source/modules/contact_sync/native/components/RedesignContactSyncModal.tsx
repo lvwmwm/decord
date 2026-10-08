@@ -1,37 +1,37 @@
-// Module ID: 12349
-// Function ID: 12350
+// Module ID: 12445
+// Function ID: 12446
 // Name: RedesignContactSyncModal
-// Dependencies: [5, 32, 19, 17, 1377, 1986, 12341, 12342, 1085, 5105, 21, 4896, 587, 6075, 12340, 558, 576, 1126, 12344, 4892, 12350, 1618, 1490, 504, 12348, 1369, 1105, 1252, 4860, 12351, 1987, 7288, 5918, 12352, 12353, 12356, 12359, 12360, 12361, 12362, 12364, 1260, 6017, 12366, 12367, 6503, 2]
+// Dependencies: [5, 32, 19, 17, 1389, 1998, 12437, 12438, 1085, 7477, 21, 5090, 587, 6261, 12436, 558, 576, 1126, 12440, 5086, 12446, 1630, 1502, 504, 12444, 1381, 1105, 1264, 5054, 12447, 1999, 7494, 10211, 12448, 12449, 12452, 12455, 12456, 12457, 12458, 12460, 1272, 6203, 12462, 12463, 6679, 2]
 
-// Module 12349 (RedesignContactSyncModal)
+// Module 12445 (RedesignContactSyncModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 5105 */;
-import NavigatorHeader from "NavigatorHeader" /* 6017 */;
-import NavigatorConstants from "NavigatorConstants" /* 6075 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12340 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12344 */;
-import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 12350 */;
-import ContactSyncBackToLandingDefault from "ContactSyncBackToLanding" /* 12366 */;
-import AddPhoneScreens from "AddPhoneScreens" /* 12367 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import NavigatorHeader from "NavigatorHeader" /* 6203 */;
+import NavigatorConstants from "NavigatorConstants" /* 6261 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7477 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12436 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12440 */;
+import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 12446 */;
+import ContactSyncBackToLandingDefault from "ContactSyncBackToLanding" /* 12462 */;
+import AddPhoneScreens from "AddPhoneScreens" /* 12463 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
-import AppStateStore from "AppStateStore" /* 1986 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 12341 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12342 */;
+import UserStore from "UserStore" /* 1389 */;
+import AppStateStore from "AppStateStore" /* 1998 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 12437 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12438 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -201,7 +201,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
       const obj = AnalyticsUtilsDefault;
       obj.track(AnalyticEvents.OPEN_POPOUT, obj2);
       const obj3 = ActionSheetActionCreatorsDefault;
-      obj3.openLazy(asyncRequire(12351, dependencyMap.paths), "Contact Sync Info Settings");
+      obj3.openLazy(asyncRequire(12447, dependencyMap.paths), "Contact Sync Info Settings");
     }
   }, items4);
   const items5 = [onNext, onComplete];
@@ -315,17 +315,17 @@ function getScreens(isOnboarding) {
   let setLoading;
   function render() {
     const obj = { navigateToLandingPage: _slicedToArray };
-    return authStore3(closure_25, obj);
+    return authStore4(closure_25, obj);
   }
   const render2 = function render() {
     const obj = { onComplete: _asyncToGenerator };
-    return authStore3(closure_26, obj);
+    return authStore4(closure_26, obj);
   };
   function headerLeft(arg0) {
     const obj = { navigateToLandingPage: _slicedToArray };
     const tmp = ContactSyncBackToLandingDefault;
     const merged = Object.assign(arg0);
-    return authStore3(tmp, obj);
+    return authStore4(tmp, obj);
   }
   const render3 = function render() {
     return closure_1_16(AddPhoneScreens.AddPhoneScreen, {});
@@ -334,7 +334,7 @@ function getScreens(isOnboarding) {
     const obj = { navigateToLandingPage: _slicedToArray };
     const tmp = ContactSyncBackToLandingDefault;
     const merged = Object.assign(arg0);
-    return authStore3(tmp, obj);
+    return authStore4(tmp, obj);
   };
   const render4 = function render() {
     return closure_1_16(AddPhoneScreens.VerifyPhoneScreen, {});
@@ -343,7 +343,7 @@ function getScreens(isOnboarding) {
     const obj = { navigateToLandingPage: _slicedToArray };
     const tmp = ContactSyncBackToLandingDefault;
     const merged = Object.assign(arg0);
-    return authStore3(tmp, obj);
+    return authStore4(tmp, obj);
   };
   const render5 = function render() {
     return closure_1_16(AddPhoneScreens.VerifyPasswordScreen, {});
@@ -359,7 +359,7 @@ function getScreens(isOnboarding) {
     headerLeft: headerCloseButton,
     render() {
       const obj = { onComplete: _asyncToGenerator, openSettingsSheet: dependencyMap, loading: require, setLoading: importDefault };
-      return authStore3(ContactSyncLandingScreen, obj);
+      return authStore4(ContactSyncLandingScreen, obj);
     }
   };
   isOnboarding = isOnboarding.isOnboarding;
@@ -410,7 +410,7 @@ let obj = { container: obj2, landingTrailing: { textAlign: "center" } };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingTop: NavigatorConstants.NAV_BAR_HEIGHT + 32 };
 let closure_19 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function OnboardingTrailingLanding() {
   let first;
   let tmp8;
   let tmpResult;
@@ -432,7 +432,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] !== tmp4.landingTrailing) {
     const obj3 = { style: landingTrailing, variant: "text-sm/medium", color: "text-muted", children: first };
-    const tmp10 = authStore3(Text_Text.Text, obj3);
+    const tmp10 = authStore4(Text_Text.Text, obj3);
     cResult[1] = tmp4.landingTrailing;
     cResult[2] = tmp10;
     tmp8 = tmp10;
@@ -440,7 +440,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[2];
   }
   return tmp8;
-}) : (() => {
+}) : (function OnboardingTrailingLanding() {
   let format;
   let obj2;
   let obj3;
@@ -452,10 +452,10 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj2 = { learnMoreUrl: obj3.getOpenLearnMoreUrl() };
   prop = intl3.t["84S6+Z"];
   obj3 = ContactSyncUtils;
-  return authStore3(Text, obj);
+  return authStore4(Text, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function OnboardingTrailing(arg0) {
   let discoverabilityEnabled;
   let isOnboarding;
   let setDiscoverabilityEnabled;
@@ -483,7 +483,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = setDiscoverabilityEnabled;
   cResult[3] = tmp4Result;
   tmp3 = tmp4Result;
-}) : ((isOnboarding) => {
+}) : (function OnboardingTrailing(isOnboarding) {
   let tmp3Result;
   if (isOnboarding.isOnboarding) {
     tmp3Result = tmp3(closure_22, {});
@@ -494,7 +494,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp3Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToLandingPage) => {
+let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncNameInputScreen(navigateToLandingPage) {
   let closure_2;
   let closure_3;
   let error;
@@ -507,13 +507,13 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToLand
   const cResult = obj.c(16);
   navigateToLandingPage = navigateToLandingPage.navigateToLandingPage;
   const tmp3 = closure_19();
-  let obj2 = navigation(1490);
+  let obj2 = navigation(1502);
   navigation = obj2.useNavigation();
   let obj3 = react;
   [loading, dependencyMap] = react.useState(false);
   ({ name, error, isNameFromContactBook } = closure_10());
   closure_10();
-  loading(12359)(navigation, navigateToLandingPage);
+  loading(12455)(navigation, navigateToLandingPage);
   const tmp8 = loading;
   if (cResult[0] !== navigation) {
     const _require = _asyncToGenerator(async (arg0, value) => {
@@ -572,12 +572,12 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToLand
         }
       }
     });
-    const fn = function() {
+    function t1() {
       return closure_0(...arguments);
-    };
+    }
     cResult[0] = navigation;
-    cResult[1] = fn;
-    tmp10 = fn;
+    cResult[1] = t1;
+    tmp10 = t1;
   } else {
     tmp10 = cResult[1];
   }
@@ -622,7 +622,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToLand
         }
       }
       let obj5 = { onNext: tmp10, error, loading, initialName: str, prefilledFromContactBook: tmp16 };
-      const tmp19 = closure_16(tmp8(12361), obj5);
+      const tmp19 = closure_16(tmp8(12457), obj5);
       cResult[7] = error;
       cResult[8] = loading;
       cResult[9] = tmp10;
@@ -658,7 +658,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToLand
   cResult[6] = items;
   tmp13 = items;
   tmp12 = A;
-}) : ((navigateToLandingPage) => {
+}) : (function ContactSyncNameInputScreen(navigateToLandingPage) {
   let closure_2;
   let error;
   let isNameFromContactBook;
@@ -673,13 +673,13 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToLand
   let onNext;
   navigateToLandingPage = navigateToLandingPage.navigateToLandingPage;
   const tmp = closure_19();
-  let obj = navigation(1490);
+  let obj = navigation(1502);
   navigation = obj.useNavigation();
   [loading, dependencyMap] = react.useState(false);
   const tmp5 = closure_10();
   const name = tmp5.name;
   ({ isNameFromContactBook, error } = tmp5);
-  loading(12359)(navigation, navigateToLandingPage);
+  loading(12455)(navigation, navigateToLandingPage);
   const useCallback = react.useCallback;
   let closure_0 = onNext(function*(arg0, value) {
     let obj2;
@@ -762,7 +762,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToLand
   obj3 = { onNext, error, loading, initialName: str, prefilledFromContactBook: tmp12 };
   str = name;
   const tmp10 = View;
-  tmp11 = loading(12361);
+  tmp11 = loading(12457);
   if (name == null) {
     str = "";
   }
@@ -770,7 +770,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToLand
   return closure_16(tmp10, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => {
+let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncSuggestionScreen(onComplete) {
   let suggestions;
   let obj = onComplete(suggestions[16]);
   const cResult = obj.c(15);
@@ -867,7 +867,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) =>
   cResult[1] = suggestions.length;
   cResult[2] = fn;
   tmp6 = fn;
-}) : ((onComplete) => {
+}) : (function ContactSyncSuggestionScreen(onComplete) {
   let tmp10;
   onComplete = onComplete.onComplete;
   let suggestions;
@@ -914,7 +914,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) =>
   return tmp10;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncOnboardingModal(route) {
   let initialRoutes;
   let openSettingsSheet;
   const obj = react2;
@@ -930,18 +930,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
       return tmp2;
     }
   }
-  const tmp3 = authStore3(closure_28, { onComplete, openSettingsSheet, initialRoutes });
+  const tmp3 = authStore4(closure_28, { onComplete, openSettingsSheet, initialRoutes });
   cResult[0] = initialRoutes;
   cResult[1] = onComplete;
   cResult[2] = openSettingsSheet;
   cResult[3] = tmp3;
   tmp2 = tmp3;
-}) : ((onComplete) => {
+}) : (function ContactSyncOnboardingModal(onComplete) {
   const obj = { onComplete: onComplete.route.params.onComplete, openSettingsSheet: onComplete.openSettingsSheet, initialRoutes: onComplete.initialRoutes };
-  return authStore3(closure_28, obj);
+  return authStore4(closure_28, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncModal(arg0) {
   let _require;
   let closure_0;
   let first;
@@ -1049,7 +1049,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             return tmp22;
           }
           const obj3 = { screens: tmp13, initialRouteStack: tmp18, headerBackTitle: tmp20 };
-          const tmp24 = closure_16(tmp(6503).Navigator, obj3);
+          const tmp24 = closure_16(tmp(6679).Navigator, obj3);
           cResult[17] = tmp13;
           cResult[18] = tmp18;
           cResult[19] = tmp24;
@@ -1084,7 +1084,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = openSettingsSheet;
   cResult[9] = tmp14;
   tmp13 = tmp14;
-}) : ((onComplete) => {
+}) : (function ContactSyncModal(onComplete) {
   let initialRoutes;
   let intl;
   let isOnboarding;

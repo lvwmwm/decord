@@ -1,12 +1,12 @@
-// Module ID: 9141
-// Function ID: 9142
+// Module ID: 5229
+// Function ID: 5230
 // Name: SurfaceDirectRendererExperiment
-// Dependencies: [502, 1440, 558, 576, 504, 2]
+// Dependencies: [502, 1452, 558, 576, 504, 2]
 // Exports: isSurfaceDirectRendererExperimentEnabled
 
-// Module 9141 (SurfaceDirectRendererExperiment)
+// Module 5229 (SurfaceDirectRendererExperiment)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let obj = { kind: "user", name: "2026-03-surface-direct-renderer", defaultConfig
 obj2 = { 1: null };
 obj2[1] = { enableSurfaceDirectRenderer: true };
 let closure_3 = ApexExperiment.createApexExperiment(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, cResult) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSurfaceDirectRendererExperiment(arg0, cResult) {
   let closure_0;
   let first;
   let tmp6;
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, cResult) => 
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function l() {
+    const fn = function f() {
       return closure_0 === AuthenticationStore.getId();
     };
     const items1 = [arg0];
@@ -52,7 +52,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, cResult) => 
   const tmpResult = tmp(504);
   const tmp8 = null != arg0 && !tmpResult.useStateFromStores(first, tmp6, tmp7) && enableSurfaceDirectRenderer;
   return tmp8;
-}) : ((arg0, cResult) => {
+}) : (function useSurfaceDirectRendererExperiment(arg0, cResult) {
   let closure_0;
   _require = arg0;
   const enableSurfaceDirectRenderer = closure_3.useConfig(cResult).enableSurfaceDirectRenderer;

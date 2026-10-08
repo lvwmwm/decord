@@ -1,30 +1,30 @@
-// Module ID: 16650
-// Function ID: 16651
+// Module ID: 16912
+// Function ID: 16913
 // Name: MediaKeyboardBottomSheet
-// Dependencies: [32, 19, 17, 1614, 1085, 21, 1615, 1369, 4896, 587, 558, 576, 1126, 11837, 4595, 4738, 6119, 4619, 4861, 4862, 1252, 5777, 4751, 5786, 4618, 5597, 1618, 5774, 2]
+// Dependencies: [32, 19, 17, 1626, 1085, 21, 1627, 1381, 5090, 587, 558, 576, 1126, 11922, 4787, 4932, 6298, 4811, 5055, 5056, 1264, 5360, 4945, 5369, 4810, 5392, 1630, 5357, 2]
 
-// Module 16650 (MediaKeyboardBottomSheet)
+// Module 16912 (MediaKeyboardBottomSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import ChatInputUtils from "ChatInputUtils" /* 4751 */;
-import HapticUtils from "HapticUtils" /* 4861 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4862 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import ChatInputUtils from "ChatInputUtils" /* 4945 */;
+import HapticUtils from "HapticUtils" /* 5055 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5056 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1614 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
 import Fragment from "Fragment" /* 21 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1615 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import createStyles from "createStyles" /* 4896 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let handleHeight, onAccessibilityFocusRestore;
+let handleHeight;
 
 let c10;
 let c9;
@@ -43,7 +43,7 @@ let obj = { background: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, borderRadius: nativeDefault.modules.mobile.MOBILE_MEDIA_KEYBOARD_TOP_BORDER_RADIUS };
 let closure_13 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaKeyboardBackground(arg0) {
   let first;
   let pointerEvents;
   let style;
@@ -83,7 +83,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tmp4.background;
   cResult[3] = items;
   tmp7 = items;
-}) : ((arg0) => {
+}) : (function MediaKeyboardBackground(arg0) {
   let intl;
   let items;
   let pointerEvents;
@@ -104,7 +104,7 @@ const __initData5 = { code: "function MediaKeyboardBottomSheetTsx6(isOpen_0,wasO
 const __initData6 = { code: "function MediaKeyboardBottomSheetTsx7(){const{animatedIndex}=this.__closure;return Math.max(animatedIndex.get(),0)>0;}" };
 const __initData7 = { code: "function MediaKeyboardBottomSheetTsx8(result,previous){const{runOnJS,setAccessibilityViewIsModal}=this.__closure;if(result===previous)return;runOnJS(setAccessibilityViewIsModal)(result);}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onAccessibilityFocusRestore) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MediaKeyboardBottomSheet(onAccessibilityFocusRestore) {
   let accessoriesComponent;
   let animatedIndex;
   let animatedPosition;
@@ -141,17 +141,17 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   react = tmp8;
   bottomSheetRef(tmp2[15])();
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    class P {
+    class K {
       constructor(arg0) {
         const obj = {};
         const merged = Object.assign(arg0);
         return ref2(closure_1_14, obj);
       }
     }
-    cResult[1] = P;
-    const tmp10 = P;
+    cResult[1] = K;
+    const tmp10 = K;
   } else {
-    class P {
+    class K {
       constructor(arg0) {
         const obj = {};
         const merged = Object.assign(arg0);
@@ -347,7 +347,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
         }
       }
     }
-    function ae() {
+    function ie() {
       let closure_0;
       let tmp = closure_4;
       if (tmp) {
@@ -372,7 +372,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
     cResult[10] = bottomSheetRef;
     cResult[11] = tmp8;
     cResult[12] = onClose;
-    cResult[13] = ae;
+    cResult[13] = ie;
     cResult[14] = items;
   }
   class F {
@@ -398,7 +398,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   cResult[3] = tmp8;
   cResult[4] = onClose;
   cResult[5] = F;
-}) : ((animatedIndex) => {
+}) : (function MediaKeyboardBottomSheet(animatedIndex) {
   let accessoriesComponent;
   let animatedPosition;
   let animationConfigs;
@@ -490,14 +490,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
     }
   }, items1);
   const tmp5Result = animatedIndex(tmp3[24]);
-  class H {
+  class B {
     constructor() {
       return animatedIndex.get() >= 0;
     }
   }
-  H.__closure = { animatedIndex };
-  H.__workletHash = 2707510631878;
-  H.__initData = __initData4;
+  B.__closure = { animatedIndex };
+  B.__workletHash = 2707510631878;
+  B.__initData = __initData4;
   const fn = function w(arg0, arg1) {
     let tmp = IS_IOS && arg0 !== arg1;
     if (tmp) {
@@ -512,7 +512,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   fn.__closure = obj3;
   fn.__workletHash = 14150445095159;
   fn.__initData = __initData5;
-  const animatedReaction = tmp5Result.useAnimatedReaction(H, fn);
+  const animatedReaction = tmp5Result.useAnimatedReaction(B, fn);
   const tmp5Result2 = animatedIndex(tmp3[24]);
   class J {
     constructor() {
@@ -522,7 +522,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   J.__closure = { animatedIndex };
   J.__workletHash = 634522091630;
   J.__initData = __initData6;
-  class B {
+  class H {
     constructor(arg0, arg1) {
       if (arg0 !== arg1) {
         const obj = ReanimatedRexport;
@@ -530,11 +530,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
       }
     }
   }
-  B.__closure = { runOnJS: animatedIndex(tmp3[24]).runOnJS, setAccessibilityViewIsModal: tmp13[1] };
-  B.__workletHash = 13476860564128;
-  B.__initData = __initData7;
+  H.__closure = { runOnJS: animatedIndex(tmp3[24]).runOnJS, setAccessibilityViewIsModal: tmp13[1] };
+  H.__workletHash = 13476860564128;
+  H.__initData = __initData7;
   ({ runOnJS: animatedIndex(tmp3[24]).runOnJS, setAccessibilityViewIsModal: tmp13[1] });
-  const animatedReaction1 = tmp5Result2.useAnimatedReaction(J, B);
+  const animatedReaction1 = tmp5Result2.useAnimatedReaction(J, H);
   tmp2(tmp3[25])(() => () => {
     if (null != ref.current) {
       const _clearTimeout = clearTimeout;
@@ -581,7 +581,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   obj7 = {
     ref,
     nativeID: "media-keyboard-sheet",
-    onAccessibilityEscape() {
+    onAccessibilityEscape: function handleClose() {
       if (closure_3 != null) {
         tmp();
       }

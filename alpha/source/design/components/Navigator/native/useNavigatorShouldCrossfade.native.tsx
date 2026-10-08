@@ -1,18 +1,18 @@
-// Module ID: 6504
-// Function ID: 6505
+// Module ID: 6680
+// Function ID: 6681
 // Name: useNavigatorShouldCrossfade
-// Dependencies: [19, 1369, 558, 576, 4602, 2]
+// Dependencies: [19, 1381, 558, 576, 4794, 2]
 
-// Module 6504 (useNavigatorShouldCrossfade)
+// Module 6680 (useNavigatorShouldCrossfade)
 import react2 from "react" /* 576 */;
-import react3 from "react" /* 4602 */;
+import react3 from "react" /* 4794 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const PlatformUtils = tmp(1369);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const PlatformUtils = tmp(1381);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNavigatorShouldCrossfade() {
   const obj = react2;
   const cResult = obj.c(3);
   const context = react.useContext(react3.AccessibilityPreferencesContext);
@@ -34,7 +34,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = enabled;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : (() => {
+}) : (function useNavigatorShouldCrossfade() {
   const context = react.useContext(react3.AccessibilityPreferencesContext);
   let prefersCrossfades = context.prefersCrossfades;
   const enabled = context.reducedMotion.enabled;

@@ -1,24 +1,22 @@
-// Module ID: 6889
-// Function ID: 6890
+// Module ID: 7078
+// Function ID: 7079
 // Name: SearchBarNav
-// Dependencies: [109, 19, 17, 21, 4896, 6075, 587, 558, 576, 1126, 1369, 6021, 4892, 5916, 6554, 2]
+// Dependencies: [109, 19, 17, 21, 5090, 6261, 587, 558, 576, 1126, 1381, 6207, 5086, 6189, 6730, 2]
 
-// Module 6889 (SearchBarNav)
+// Module 7078 (SearchBarNav)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import Pressables from "Pressables" /* 5916 */;
-import NavigatorConstants from "NavigatorConstants" /* 6075 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import Pressables from "Pressables" /* 6189 */;
+import NavigatorConstants from "NavigatorConstants" /* 6261 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let onClose;
 
 let StyleSheet;
 let closure_4;
@@ -27,7 +25,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let obj4;
-let closure_2 = ["onClose"];
+let closure_2 = ["onClose", "ref"];
 ({ View: closure_4, StyleSheet } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -37,162 +35,169 @@ createStyles = createStyles.createStyles;
 obj3 = { paddingLeft: nativeDefault.space.PX_16 };
 obj4 = { marginRight: nativeDefault.space.PX_16 };
 let closure_7 = createStyles(obj);
-const forwardRef = react.forwardRef;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((onClose, ref) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchBarNav(arg0) {
   let SearchField;
   let intl2;
   let items;
   let obj5;
-  let tmp10;
-  let tmp12;
-  let tmp14Result;
+  let onClose;
+  let ref;
+  let tmp11;
+  let tmp13;
+  let tmp15Result;
   let tmp4;
   let tmp5;
+  let tmp6;
   const obj = react2;
-  const cResult = obj.c(26);
-  if (cResult[0] !== onClose) {
-    onClose = onClose.onClose;
-    const tmp8 = _objectWithoutProperties(onClose, closure_2);
-    cResult[0] = onClose;
+  const cResult = obj.c(27);
+  if (cResult[0] !== arg0) {
+    ({ onClose, ref } = arg0);
+    const tmp9 = _objectWithoutProperties(arg0, closure_2);
+    cResult[0] = arg0;
     cResult[1] = onClose;
-    cResult[2] = tmp8;
-    tmp5 = tmp8;
+    cResult[2] = tmp9;
+    cResult[3] = ref;
+    tmp6 = ref;
+    tmp5 = tmp9;
     tmp4 = onClose;
   } else {
     tmp4 = cResult[1];
     tmp5 = cResult[2];
+    tmp6 = cResult[3];
   }
-  const tmp9 = closure_7();
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+  const tmp10 = closure_7();
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t["ETE/oC"]);
-    cResult[3] = stringResult;
-    tmp10 = stringResult;
+    cResult[4] = stringResult;
+    tmp11 = stringResult;
   } else {
-    tmp10 = cResult[3];
+    tmp11 = cResult[4];
   }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const rect = { top: 8, right: 8, bottom: 8, left: 8 };
-    cResult[4] = rect;
-    tmp12 = rect;
+    cResult[5] = rect;
+    tmp13 = rect;
   } else {
-    tmp12 = cResult[4];
+    tmp13 = cResult[5];
   }
-  if (cResult[5] === tmp9.cancelIcon) {
-    let tmp13;
-    if (cResult[6] === tmp9.cancelText) {
-      tmp13 = cResult[7];
+  if (cResult[6] === tmp10.cancelIcon) {
+    let tmp14;
+    if (cResult[7] === tmp10.cancelText) {
+      tmp14 = cResult[8];
     }
-    if (cResult[8] === tmp4) {
-      let tmp16;
-      let tmp19;
-      if (cResult[9] === tmp13) {
-        tmp16 = cResult[10];
+    if (cResult[9] === tmp4) {
+      let tmp17;
+      let tmp20;
+      if (cResult[10] === tmp14) {
+        tmp17 = cResult[11];
       }
-      if (cResult[11] !== tmp16) {
-        let tmp20 = null;
+      if (cResult[12] !== tmp17) {
+        let tmp21 = null;
         const tmpResult = PlatformUtils;
         if (tmpResult.isAndroid()) {
-          tmp20 = tmp16;
+          tmp21 = tmp17;
         }
-        cResult[11] = tmp16;
-        cResult[12] = tmp20;
-        tmp19 = tmp20;
+        cResult[12] = tmp17;
+        cResult[13] = tmp21;
+        tmp20 = tmp21;
       } else {
-        tmp19 = cResult[12];
+        tmp20 = cResult[13];
       }
-      if (cResult[13] === tmp5) {
+      if (cResult[14] === tmp5) {
         let tmp22;
-        if (cResult[14] === ref) {
-          tmp22 = cResult[15];
+        if (cResult[15] === tmp6) {
+          tmp22 = cResult[16];
         }
-        if (cResult[16] === tmp9.flex) {
+        if (cResult[17] === tmp10.flex) {
           let tmp29;
           let tmp33;
-          if (cResult[17] === tmp22) {
-            tmp29 = cResult[18];
+          if (cResult[18] === tmp22) {
+            tmp29 = cResult[19];
           }
-          if (cResult[19] !== tmp16) {
+          if (cResult[20] !== tmp17) {
             let tmp34 = null;
             const tmpResult3 = PlatformUtils;
             if (!tmpResult3.isAndroid()) {
-              tmp34 = tmp16;
+              tmp34 = tmp17;
             }
-            cResult[19] = tmp16;
-            cResult[20] = tmp34;
+            cResult[20] = tmp17;
+            cResult[21] = tmp34;
             tmp33 = tmp34;
           } else {
-            tmp33 = cResult[20];
+            tmp33 = cResult[21];
           }
-          if (cResult[21] === tmp9.container) {
-            if (cResult[22] === tmp19) {
-              if (cResult[23] === tmp29) {
+          if (cResult[22] === tmp10.container) {
+            if (cResult[23] === tmp20) {
+              if (cResult[24] === tmp29) {
                 let tmp35;
-                if (cResult[24] === tmp33) {
-                  tmp35 = cResult[25];
+                if (cResult[25] === tmp33) {
+                  tmp35 = cResult[26];
                 }
                 return tmp35;
               }
             }
           }
-          const obj2 = { style: tmp9.container, children: items };
-          items = [tmp19, tmp29, tmp33];
+          const obj2 = { style: tmp10.container, children: items };
+          items = [tmp20, tmp29, tmp33];
           const tmp38 = metroRequire(React3, obj2);
-          cResult[21] = tmp9.container;
-          cResult[22] = tmp19;
-          cResult[23] = tmp29;
-          cResult[24] = tmp33;
-          cResult[25] = tmp38;
+          cResult[22] = tmp10.container;
+          cResult[23] = tmp20;
+          cResult[24] = tmp29;
+          cResult[25] = tmp33;
+          cResult[26] = tmp38;
           tmp35 = tmp38;
         }
-        const obj3 = { style: tmp9.flex, children: tmp22 };
+        const obj3 = { style: tmp10.flex, children: tmp22 };
         const tmp32 = hasOwnProperty(React3, obj3);
-        cResult[16] = tmp9.flex;
-        cResult[17] = tmp22;
-        cResult[18] = tmp32;
+        cResult[17] = tmp10.flex;
+        cResult[18] = tmp22;
+        cResult[19] = tmp32;
         tmp29 = tmp32;
       }
       const obj4 = { children: hasOwnProperty(SearchField, obj5) };
-      obj5 = { size: "md", round: true, ref };
-      SearchField = tmp(6554).SearchField;
+      obj5 = { size: "md", round: true, ref: tmp6 };
+      SearchField = tmp(6730).SearchField;
       const merged = Object.assign(tmp5);
       const tmp28 = hasOwnProperty(React3, obj4);
-      cResult[13] = tmp5;
-      cResult[14] = ref;
-      cResult[15] = tmp28;
+      cResult[14] = tmp5;
+      cResult[15] = tmp6;
+      cResult[16] = tmp28;
       tmp22 = tmp28;
     }
-    const obj6 = { accessibilityRole: "button", accessibilityLabel: tmp10, onPress: tmp4, hitSlop: tmp12, children: tmp13 };
-    const tmp18 = hasOwnProperty(Pressables.PressableOpacity, obj6);
-    cResult[8] = tmp4;
-    cResult[9] = tmp13;
-    cResult[10] = tmp18;
-    tmp16 = tmp18;
+    const obj6 = { accessibilityRole: "button", accessibilityLabel: tmp11, onPress: tmp4, hitSlop: tmp13, children: tmp14 };
+    const tmp19 = hasOwnProperty(Pressables.PressableOpacity, obj6);
+    cResult[9] = tmp4;
+    cResult[10] = tmp14;
+    cResult[11] = tmp19;
+    tmp17 = tmp19;
   }
   const tmpResult4 = PlatformUtils;
   if (tmpResult4.isAndroid()) {
-    const obj7 = { style: tmp9.cancelIcon };
-    tmp14Result = tmp14(tmp(6021).ArrowLargeLeftIcon, obj7);
+    const obj7 = { style: tmp10.cancelIcon };
+    tmp15Result = tmp15(tmp(6207).ArrowLargeLeftIcon, obj7);
   } else {
-    const obj8 = { style: tmp9.cancelText, maxFontSizeMultiplier: 2, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl3.t["ETE/oC"]) };
-    const Text = tmp(4892).Text;
+    const obj8 = { style: tmp10.cancelText, maxFontSizeMultiplier: 2, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl3.t["ETE/oC"]) };
+    const Text = tmp(5086).Text;
     intl2 = tmp(1126).intl;
-    tmp14Result = tmp14(Text, obj8);
+    tmp15Result = tmp15(Text, obj8);
   }
-  cResult[5] = tmp9.cancelIcon;
-  cResult[6] = tmp9.cancelText;
-  cResult[7] = tmp14Result;
-  tmp13 = tmp14Result;
-}) : ((onClose, ref) => {
+  cResult[6] = tmp10.cancelIcon;
+  cResult[7] = tmp10.cancelText;
+  cResult[8] = tmp15Result;
+  tmp14 = tmp15Result;
+}) : (function SearchBarNav(arg0) {
   let SearchField;
   let intl;
   let intl2;
   let items;
   let obj7;
   let obj8;
+  let onClose;
+  let ref;
   let tmp3Result;
-  onClose = onClose.onClose;
-  const merged = Object.assign(onClose, Object.assign({ onClose: 0 }));
+  ({ onClose, ref } = arg0);
+  const merged = Object.assign(arg0, Object.assign({ onClose: 0, ref: 0 }));
   const tmp2 = closure_7();
   const obj = { accessibilityRole: "button", accessibilityLabel: intl.string(intl3.t["ETE/oC"]), onPress: onClose, hitSlop: { top: 8, right: 8, bottom: 8, left: 8 }, children: tmp3Result };
   const PressableOpacity = Pressables.PressableOpacity;
@@ -200,10 +205,10 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   const obj2 = PlatformUtils;
   if (obj2.isAndroid()) {
     const obj3 = { style: tmp2.cancelIcon };
-    tmp3Result = tmp3(tmp4(6021).ArrowLargeLeftIcon, obj3);
+    tmp3Result = tmp3(tmp4(6207).ArrowLargeLeftIcon, obj3);
   } else {
     const obj4 = { style: tmp2.cancelText, maxFontSizeMultiplier: 2, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl3.t["ETE/oC"]) };
-    const Text = tmp4(4892).Text;
+    const Text = tmp4(5086).Text;
     intl2 = tmp4(1126).intl;
     tmp3Result = tmp3(Text, obj4);
   }
@@ -219,7 +224,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   const obj6 = { style: tmp2.flex, children: hasOwnProperty(React3, obj7) };
   obj7 = { children: hasOwnProperty(SearchField, obj8) };
   obj8 = { size: "md", round: true, ref };
-  SearchField = tmp4(6554).SearchField;
+  SearchField = tmp4(6730).SearchField;
   const merged1 = Object.assign(merged);
   items[1] = hasOwnProperty(React3, obj6);
   let tmp12 = null;
@@ -229,7 +234,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   }
   items[2] = tmp12;
   return tmp8(React3, obj5);
-}));
+});
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/SearchBarNav.tsx");
 
-export default forwardRefResult;
+export default tmp6;

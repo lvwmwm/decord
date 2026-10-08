@@ -1,26 +1,28 @@
-// Module ID: 10931
-// Function ID: 10932
+// Module ID: 10582
+// Function ID: 10583
 // Name: QuestPlatformUtils
-// Dependencies: [5630, 1085, 7221, 5638, 7237, 7226, 7236, 5637, 7215, 8764, 1126, 1369, 10023, 4857, 10932, 1121, 10927, 4565, 10933, 10935, 1266, 10947, 10949, 6895, 584, 2]
+// Dependencies: [5977, 1085, 7401, 5985, 7416, 7405, 7415, 5984, 7395, 9147, 1126, 1381, 9554, 5051, 10583, 1121, 10578, 4757, 10584, 10586, 1278, 10598, 10600, 7404, 7084, 584, 2]
 // Exports: getExpiredCredentialsHintMessage, getPlatformTypeForHintMessage, isQuestSupportedOnWeb, openAdGameLinkDirectly, openAdGameLinkDirectlyFromBountyEntireVideoTap, openAddConsoleConnectionModal, openAuthorizationConnectionModal, openConsoleConnectionSettings, openGameLinkDirectly, openSingleConsoleConnectionModal, supportedTaskPlatforms
 
-// Module 10931 (QuestPlatformUtils)
+// Module 10582 (QuestPlatformUtils)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import openURLDefault from "openURL" /* 4565 */;
-import QuestConstants from "QuestConstants" /* 5630 */;
-import AdCreativeType from "AdCreativeType" /* 5637 */;
-import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 5638 */;
-import openUserSettings from "openUserSettings" /* 6895 */;
-import AnalyticsActions from "AnalyticsActions" /* 7215 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7221 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 7226 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7236 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7237 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 8764 */;
-import apexExperiment from "apexExperiment" /* 10927 */;
-import IosAttributionImpressionRegistry from "IosAttributionImpressionRegistry" /* 10949 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import openURLDefault from "openURL" /* 4757 */;
+import BrowserManager from "BrowserManager" /* 5051 */;
+import QuestConstants from "QuestConstants" /* 5977 */;
+import AdCreativeType from "AdCreativeType" /* 5984 */;
+import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 5985 */;
+import openUserSettings from "openUserSettings" /* 7084 */;
+import AnalyticsActions from "AnalyticsActions" /* 7395 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7401 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7404 */;
+import captureAdUserAction3 from "captureAdUserAction" /* 7405 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7415 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7416 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9147 */;
+import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 10583 */;
+import IosAttributionImpressionRegistry from "IosAttributionImpressionRegistry" /* 10600 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -31,9 +33,6 @@ let closure_4;
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
-let tmp;
-const BrowserManager = tmp(4857);
-const AppStoreOverlayTelemetryManager = tmp(10932);
 function supportedConsoles(quest) {
   const keys = Object.keys(quest.config.taskConfigV2.tasks);
   const items = [];
@@ -41,7 +40,7 @@ function supportedConsoles(quest) {
     let tmp2 = require;
     if (FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.PLAY_ON_XBOX === item10013) {
       let arr = items.push(metroRequire.XBOX);
-    } else if (tmp2(5638).FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION === item10013) {
+    } else if (tmp2(5985).FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION === item10013) {
       let arr3 = items.push(metroRequire.PLAYSTATION);
     }
     continue;
@@ -149,16 +148,20 @@ function openAppStoreOrUrl(link) {
     let closure_129_1;
     let closure_129_2;
     let url;
-    let tmp = require;
-    const AppStoreBottomSheetOverlayFeatureGate = apexExperiment.AppStoreBottomSheetOverlayFeatureGate;
+    let tmp = link;
+    const AppStoreBottomSheetOverlayFeatureGate = link(inlineStoreParams[16]).AppStoreBottomSheetOverlayFeatureGate;
     if (!AppStoreBottomSheetOverlayFeatureGate.getConfig({ location: "quest_open_game_link" }).enabled) {
       if (null != importDefault) {
-        let catchPromise;
-        const tmp15 = inlineStoreParams;
+        const tmp7 = inlineStoreParams;
         if (null != inlineStoreParams) {
+          let catchPromise;
+          function toResult(result) {
+            return result && "native";
+          }
+          link = toResult;
           if (null != getIosAttribution) {
-            const promise3 = getIosAttribution();
-            let nextPromise = promise3.then((result) => {
+            const promise4 = getIosAttribution();
+            let nextPromise = promise4.then((result) => {
               let appId;
               let closure_129_1;
               let closure_129_2;
@@ -203,16 +206,17 @@ function openAppStoreOrUrl(link) {
                 return false;
               });
             });
-            catchPromise = nextPromise.catch(() => {
+            const nextPromise1 = nextPromise.then(toResult);
+            catchPromise = nextPromise1.catch(() => {
               let appId;
               let closure_129_1;
               let closure_129_2;
               let url;
-              let closure_0 = closure_1_3;
-              const openPlayStoreInlineInstall = link(inlineStoreParams[13]).openPlayStoreInlineInstall;
-              let tmp = link(inlineStoreParams[14]);
+              let closure_0 = QuestTaskPlatform;
+              const openPlayStoreInlineInstall = BrowserManager.openPlayStoreInlineInstall;
+              let tmp = AppStoreOverlayTelemetryManager;
               ({ clearAppStoreOverlayOpen: closure_129_1, setAppStoreOverlayOpen: closure_129_2 } = tmp);
-              ({ url, appId } = closure_1_2);
+              ({ url, appId } = inlineStoreParams);
               let str;
               if (appId != null) {
                 str = appId.toString();
@@ -241,21 +245,22 @@ function openAppStoreOrUrl(link) {
                 }
                 return result;
               });
-              return nextPromise.catch(() => {
+              const catchPromise = nextPromise.catch(() => {
                 closure_1_1();
                 closure_0(constants.QUEST_APP_STORE_OVERLAY_OPEN_FAILED, str, closure_2_0(closure_2_2[8]).AppStoreOverlayVariant.NATIVE);
                 const ComponentDispatch = closure_2_0(closure_2_2[15]).ComponentDispatch;
                 ComponentDispatch.dispatch(constants2.QUEST_APP_STORE_OVERLAY_FINISHED);
                 return false;
               });
+              return catchPromise.then(toResult);
             });
           } else {
-            let closure_0 = QuestTaskPlatform;
-            let openPlayStoreInlineInstall = BrowserManager.openPlayStoreInlineInstall;
-            ({ clearAppStoreOverlayOpen: closure_129_1, setAppStoreOverlayOpen: closure_129_2 } = AppStoreOverlayTelemetryManager);
-            ({ url, appId } = tmp15);
+            let closure_0 = closure_3;
+            let openPlayStoreInlineInstall = tmp(tmp2[13]).openPlayStoreInlineInstall;
+            ({ clearAppStoreOverlayOpen: closure_129_1, setAppStoreOverlayOpen: closure_129_2 } = tmp(inlineStoreParams[14]));
+            ({ url, appId } = tmp7);
             let str;
-            AppStoreOverlayTelemetryManager;
+            tmp(inlineStoreParams[14]);
             if (appId != null) {
               str = appId.toString();
             }
@@ -265,7 +270,7 @@ function openAppStoreOrUrl(link) {
               const ComponentDispatch = closure_2_0(closure_2_2[15]).ComponentDispatch;
               ComponentDispatch.dispatch(constants2.QUEST_APP_STORE_OVERLAY_FINISHED);
             }, undefined);
-            const nextPromise1 = result.then((result) => {
+            const nextPromise2 = result.then((result) => {
               const tmp = result;
               if (tmp) {
                 const obj = {
@@ -283,23 +288,24 @@ function openAppStoreOrUrl(link) {
               }
               return result;
             });
-            catchPromise = nextPromise1.catch(() => {
+            const catchPromise1 = nextPromise2.catch(() => {
               closure_1_1();
               closure_0(constants.QUEST_APP_STORE_OVERLAY_OPEN_FAILED, str, closure_2_0(closure_2_2[8]).AppStoreOverlayVariant.NATIVE);
               const ComponentDispatch = closure_2_0(closure_2_2[15]).ComponentDispatch;
               ComponentDispatch.dispatch(constants2.QUEST_APP_STORE_OVERLAY_FINISHED);
               return false;
             });
+            catchPromise = catchPromise1.then(toResult);
           }
+          return catchPromise;
         }
-        return catchPromise;
       }
     }
-    const tmp11 = flag;
-    if (tmp11) {
-      openURLDefault(link);
+    const tmp8 = flag;
+    if (tmp8) {
+      require("openURL")(link);
     }
-    catchPromise = Promise.resolve(false);
+    return Promise.resolve(false);
   }
   if (null == getIosAttribution) {
     let tmp = link;
@@ -311,8 +317,9 @@ function openAppStoreOrUrl(link) {
         closure_9 = tmp(tmp2[19]).openAppStoreOverlayBottomSheet;
         const appStoreOverlayContent = getAppStoreOverlayContent(inlineStoreParams, link);
         let nextPromise = appStoreOverlayContent.then((result) => {
+          let str;
           if (null == result) {
-            flag = openNativeAppStoreOrUrl();
+            str = openNativeAppStoreOrUrl();
           } else {
             let appStoreOverlayCarouselScrollTracker;
             const tmp = closure_9;
@@ -321,9 +328,9 @@ function openAppStoreOrUrl(link) {
               appStoreOverlayCarouselScrollTracker = obj.createAppStoreOverlayCarouselScrollTracker(tmp4, result);
             }
             tmp(result, QuestTaskPlatform, closure_4, appStoreOverlayCarouselScrollTracker);
-            flag = true;
+            str = "custom";
           }
-          return flag;
+          return str;
         });
         return nextPromise.catch(() => openNativeAppStoreOrUrl());
       }
@@ -332,10 +339,11 @@ function openAppStoreOrUrl(link) {
   return openNativeAppStoreOrUrl();
 }
 function openAdGameLinkDirectlyImpl(adContentId, impressionId, preferExternalAppStore) {
+  let adCreativeType;
+  let cta;
   let trackingCtx;
   adContentId = adContentId.adContentId;
-  const adCreativeType = adContentId.adCreativeType;
-  const cta = adContentId.cta;
+  ({ adCreativeType: importDefault, cta } = adContentId);
   dependencyMap = impressionId;
   impressionId = undefined;
   let url = cta.url;
@@ -344,35 +352,22 @@ function openAdGameLinkDirectlyImpl(adContentId, impressionId, preferExternalApp
   if (null != tmp) {
     url = tmp;
   }
-  let obj = adContentId(7237);
-  if (obj.shouldMigrateToAdAnalyticsInterface(adContentId(7237).AdAnalyticsInterfaceExperimentStep.STEP_3_CLICKED_EXTERNAL, "open_ad_game_link_directly")) {
-    let obj2 = { type: adContentId(7236).AdUserActionType.CLICK_EXTERNAL_ADVERTISER_CTA, adCreativeType, adCreativeId: adContentId, questContentCTA: null, surfaceId: null, sourceQuestContent: null, questContentPosition: null, impressionId: null };
-    const captureAdUserAction = adContentId(7226).captureAdUserAction;
-    adContentId(7226);
-    ({ ctaContent: obj4.questContentCTA, content: obj4.surfaceId, sourceQuestContent: obj4.sourceQuestContent, position: obj4.questContentPosition, impressionId: obj4.impressionId } = impressionId);
-    captureAdUserAction(obj2);
-  } else {
-    const obj5 = { adContentId, adCreativeType, questContent: null, questContentCTA: null, questContentPosition: null, impressionId: null, sourceQuestContent: null };
-    ({ content: obj3.questContent, ctaContent: obj3.questContentCTA, position: obj3.questContentPosition, impressionId: obj3.impressionId, sourceQuestContent: obj3.sourceQuestContent } = impressionId);
-    const tmp2Result3 = adContentId(7215);
-    const result = tmp2Result3.trackAdContentClicked(obj5);
-  }
-  const ComponentDispatch = tmp2(1121).ComponentDispatch;
+  const ComponentDispatch = adContentId(1121).ComponentDispatch;
   ComponentDispatch.dispatch(constants.QUEST_GAME_LINK_OPENED);
   impressionId = impressionId.impressionId;
   let iosAttributionClickFramework = null;
   if (null != impressionId) {
     const ios = cta.ios;
     let iosAppId;
-    const getIosAttributionClickFramework = adContentId(10947).getIosAttributionClickFramework;
-    adContentId(10947);
+    const getIosAttributionClickFramework = tmp2(10598).getIosAttributionClickFramework;
+    adContentId(10598);
     if (ios != null) {
       iosAppId = ios.iosAppId;
     }
     iosAttributionClickFramework = getIosAttributionClickFramework(null != iosAppId, impressionId.sourceQuestContent, adContentId);
   }
   let fn;
-  const tmp11 = getInlineStoreParamsFromCta(cta);
+  const tmp8 = getInlineStoreParamsFromCta(cta);
   if (null != iosAttributionClickFramework) {
     if (null != impressionId) {
       fn = () => {
@@ -382,29 +377,54 @@ function openAdGameLinkDirectlyImpl(adContentId, impressionId, preferExternalApp
       };
     }
   }
-  if (preferExternalAppStore) {
-    if (null == fn) {
-      adCreativeType(4565)(url);
+  function trackClick(result) {
+    if ("custom" !== result) {
+      const obj = AdAnalyticsInterfaceExperiment;
+      if (obj.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_3_CLICKED_EXTERNAL, "open_ad_game_link_directly")) {
+        const obj2 = { type: captureAdUserActionTypes.AdUserActionType.CLICK_EXTERNAL_ADVERTISER_CTA, adCreativeType: importDefault, adCreativeId: adContentId, questContentCTA: null, surfaceId: null, sourceQuestContent: null, questContentPosition: null, impressionId: null };
+        const captureAdUserAction = captureAdUserAction3.captureAdUserAction;
+        captureAdUserAction3;
+        ({ ctaContent: obj4.questContentCTA, content: obj4.surfaceId, sourceQuestContent: obj4.sourceQuestContent, position: obj4.questContentPosition, impressionId: obj4.impressionId } = trackingCtx);
+        captureAdUserAction(obj2);
+      } else {
+        const obj8 = { adContentId, adCreativeType: importDefault, questContent: null, questContentCTA: null, questContentPosition: null, impressionId: null, sourceQuestContent: null };
+        ({ content: obj3.questContent, ctaContent: obj3.questContentCTA, position: obj3.questContentPosition, impressionId: obj3.impressionId, sourceQuestContent: obj3.sourceQuestContent } = trackingCtx);
+        const tmp5Result2 = AnalyticsActions;
+        result = tmp5Result2.trackAdContentClicked(obj8);
+      }
+    } else {
+      const obj9 = { type: captureAdUserActionTypes.AdUserActionType.CLICK_INTERNAL, adCreativeType: importDefault, adCreativeId: adContentId, questContentCTA: AnalyticsTypes.QuestContentCTA.OPEN_CUSTOM_APP_STORE, surfaceId: null, sourceQuestContent: null, questContentPosition: null, impressionId: null };
+      const captureAdUserAction2 = captureAdUserAction3.captureAdUserAction;
+      captureAdUserAction3;
+      ({ content: obj5.surfaceId, sourceQuestContent: obj5.sourceQuestContent, position: obj5.questContentPosition, impressionId: obj5.impressionId } = trackingCtx);
+      captureAdUserAction2(obj9);
     }
   }
-  const obj8 = {
+  if (preferExternalAppStore) {
+    if (null == fn) {
+      openURLDefault(url);
+      trackClick(false);
+    }
+  }
+  let obj = {
     link: url,
     directLink: tmp,
-    inlineStoreParams: tmp11,
+    inlineStoreParams: tmp8,
     trackOverlayEvent(event, inlineStoreAppId, overlayVariant, timeSpentMs, overlaySurface) {
       const obj = AnalyticsActions;
-      const obj2 = { adContentId, adCreativeType, trackingCtx, inlineStoreAppId, overlayVariant, event, timeSpentMs, overlaySurface };
+      const obj2 = { adContentId, adCreativeType: importDefault, trackingCtx, inlineStoreAppId, overlayVariant, event, timeSpentMs, overlaySurface };
       return obj.trackAdContentAppStoreOverlayEvent(obj2);
     },
     trackOverlaySurfaceClick(overlaySurface) {
       const obj = AnalyticsActions;
-      const obj2 = { adContentId, adCreativeType, trackingCtx, overlaySurface };
+      const obj2 = { adContentId, adCreativeType: importDefault, trackingCtx, overlaySurface };
       return obj.trackAppStoreOverlaySurfaceClickedForAdContent(obj2);
     },
     appStoreOverlayCarouselScrollContext: { adContentId },
     getIosAttribution: fn
   };
-  openAppStoreOrUrl(obj8);
+  const promise = openAppStoreOrUrl(obj);
+  promise.then(trackClick);
 }
 const QuestTaskPlatform = QuestConstants.QuestTaskPlatform;
 ({ AnalyticEvents: closure_4, ComponentActions: hasOwnProperty, PlatformTypes: metroRequire, UserSettingsSections: metroImportDefault } = Constants);
@@ -460,8 +480,8 @@ export const openAuthorizationConnectionModal = function openAuthorizationConnec
   const obj = AdAnalyticsInterfaceExperiment;
   if (obj.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "open_authorization_connection_modal")) {
     const obj2 = { type: captureAdUserActionTypes.AdUserActionType.CLICK_INTERNAL, adCreativeType: AdCreativeType.AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: null, surfaceId: null, sourceQuestContent: null, impressionId: null };
-    const captureAdUserAction = captureAdUserAction2.captureAdUserAction;
-    captureAdUserAction2;
+    const captureAdUserAction = captureAdUserAction3.captureAdUserAction;
+    captureAdUserAction3;
     ({ ctaContent: obj4.questContentCTA, content: obj4.surfaceId, sourceQuestContent: obj4.sourceQuestContent, impressionId: obj4.impressionId } = ctaContent);
     captureAdUserAction(obj2);
   } else {
@@ -497,7 +517,7 @@ export { openAppStoreOrUrl };
 export const openGameLinkDirectly = function openGameLinkDirectly(quest, impressionId) {
   let fn;
   let tmpResult;
-  let tmpResult12;
+  let tmpResult6;
   function urlHasClickId(directAppStoreLinkFromCta) {
     try {
       const _URL = URL;
@@ -542,29 +562,17 @@ export const openGameLinkDirectly = function openGameLinkDirectly(quest, impress
     tmp7 = tmp4;
   }
   if (urlHasClickId(tmp7)) {
-    const tmpResult7 = require("v1");
-    const v4Result = tmpResult7.v4();
+    const tmpResult4 = require("v1");
+    const v4Result = tmpResult4.v4();
+    dependencyMap = v4Result;
     tmp6 = setClickIdOnUrl(tmp7, v4Result);
-  }
-  const tmpResult8 = require("AdAnalyticsInterfaceExperiment");
-  if (tmpResult8.shouldMigrateToAdAnalyticsInterface(require("AdAnalyticsInterfaceExperiment").AdAnalyticsInterfaceExperimentStep.STEP_3_CLICKED_EXTERNAL, "open_game_link_directly")) {
-    const obj4 = { type: require("captureAdUserActionTypes").AdUserActionType.CLICK_EXTERNAL_ADVERTISER_CTA, adCreativeType: require("AdCreativeType").AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: null, surfaceId: null, sourceQuestContent: null, questContentPosition: null, impressionId: null, clickId: tmp8 };
-    const captureAdUserAction = tmp(tmp2[5]).captureAdUserAction;
-    require("captureAdUserAction");
-    ({ ctaContent: obj8.questContentCTA, content: obj8.surfaceId, sourceQuestContent: obj8.sourceQuestContent, position: obj8.questContentPosition, impressionId: obj8.impressionId } = impressionId);
-    captureAdUserAction(obj4);
-  } else {
-    const obj5 = { questId: quest.id, questContent: null, questContentCTA: null, questContentPosition: null, impressionId: null, sourceQuestContent: null, clickId: tmp8 };
-    ({ content: obj7.questContent, ctaContent: obj7.questContentCTA, position: obj7.questContentPosition, impressionId: obj7.impressionId, sourceQuestContent: obj7.sourceQuestContent } = impressionId);
-    const tmpResult10 = require("AnalyticsActions");
-    let result = tmpResult10.trackQuestContentClicked(obj5);
   }
   impressionId = impressionId.impressionId;
   let iosAttributionClickFramework = null;
   if (null != impressionId) {
     const ctaConfig2 = quest.config.ctaConfig;
     let iosAppId;
-    const getIosAttributionClickFramework = tmp(tmp2[21]).getIosAttributionClickFramework;
+    const getIosAttributionClickFramework = tmp(10598).getIosAttributionClickFramework;
     require("IosAttributionEligibility");
     if (ctaConfig2 != null) {
       const ios = ctaConfig2.ios;
@@ -574,20 +582,20 @@ export const openGameLinkDirectly = function openGameLinkDirectly(quest, impress
     }
     iosAttributionClickFramework = getIosAttributionClickFramework(null != iosAppId, impressionId.sourceQuestContent, quest.id);
   }
-  const ComponentDispatch = tmp(tmp2[15]).ComponentDispatch;
+  const ComponentDispatch = tmp(1121).ComponentDispatch;
   ComponentDispatch.dispatch(constants.QUEST_GAME_LINK_OPENED);
   const ctaConfig3 = quest.config.ctaConfig;
-  let tmp17 = null;
+  let tmp13 = null;
   if (null != ctaConfig3) {
-    const obj6 = { url: tmpResult12.getCtaLink(quest.config), android: null, ios: null };
-    ({ android: obj9.android, ios: obj9.ios } = ctaConfig3);
-    tmpResult12 = require("QuestCopyUtils");
-    tmp17 = getInlineStoreParamsFromCta(obj6);
+    const obj4 = { url: tmpResult6.getCtaLink(quest.config), android: null, ios: null };
+    ({ android: obj5.android, ios: obj5.ios } = ctaConfig3);
+    tmpResult6 = require("QuestCopyUtils");
+    tmp13 = getInlineStoreParamsFromCta(obj4);
   }
-  const obj10 = {
+  const obj6 = {
     link: tmp6,
     directLink: tmp4,
-    inlineStoreParams: tmp17,
+    inlineStoreParams: tmp13,
     trackOverlayEvent(event, inlineStoreAppId, overlayVariant, timeSpentMs, overlaySurface) {
       const obj = AnalyticsActions;
       const obj2 = { quest, trackingCtx, inlineStoreAppId, overlayVariant, event, timeSpentMs, overlaySurface };
@@ -602,7 +610,7 @@ export const openGameLinkDirectly = function openGameLinkDirectly(quest, impress
     getIosAttribution: fn
   };
   fn = undefined;
-  const tmp19 = openAppStoreOrUrl;
+  const tmp15 = openAppStoreOrUrl;
   if (null != iosAttributionClickFramework) {
     if (null != impressionId) {
       fn = () => {
@@ -612,7 +620,30 @@ export const openGameLinkDirectly = function openGameLinkDirectly(quest, impress
       };
     }
   }
-  tmp19(obj10);
+  const tmp15Result = tmp15(obj6);
+  tmp15Result.then((result) => {
+    if ("custom" !== result) {
+      const obj = AdAnalyticsInterfaceExperiment;
+      if (obj.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_3_CLICKED_EXTERNAL, "open_game_link_directly")) {
+        const obj2 = { type: captureAdUserActionTypes.AdUserActionType.CLICK_EXTERNAL_ADVERTISER_CTA, adCreativeType: AdCreativeType.AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: null, surfaceId: null, sourceQuestContent: null, questContentPosition: null, impressionId: null, clickId: dependencyMap };
+        const captureAdUserAction = captureAdUserAction3.captureAdUserAction;
+        captureAdUserAction3;
+        ({ ctaContent: obj4.questContentCTA, content: obj4.surfaceId, sourceQuestContent: obj4.sourceQuestContent, position: obj4.questContentPosition, impressionId: obj4.impressionId } = trackingCtx);
+        captureAdUserAction(obj2);
+      } else {
+        const obj8 = { questId: quest.id, questContent: null, questContentCTA: null, questContentPosition: null, impressionId: null, sourceQuestContent: null, clickId: dependencyMap };
+        ({ content: obj3.questContent, ctaContent: obj3.questContentCTA, position: obj3.questContentPosition, impressionId: obj3.impressionId, sourceQuestContent: obj3.sourceQuestContent } = trackingCtx);
+        const tmp5Result2 = AnalyticsActions;
+        result = tmp5Result2.trackQuestContentClicked(obj8);
+      }
+    } else {
+      const obj9 = { type: captureAdUserActionTypes.AdUserActionType.CLICK_INTERNAL, adCreativeType: AdCreativeType.AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: AnalyticsTypes.QuestContentCTA.OPEN_CUSTOM_APP_STORE, surfaceId: null, sourceQuestContent: null, questContentPosition: null, impressionId: null, clickId: dependencyMap };
+      const captureAdUserAction2 = captureAdUserAction3.captureAdUserAction;
+      captureAdUserAction3;
+      ({ content: obj5.surfaceId, sourceQuestContent: obj5.sourceQuestContent, position: obj5.questContentPosition, impressionId: obj5.impressionId } = trackingCtx);
+      captureAdUserAction2(obj9);
+    }
+  });
 };
 export const openAdGameLinkDirectly = function openAdGameLinkDirectly(adContentId, impressionId) {
   const obj = { adContentId: adContentId.adContentId, adCreativeType: adContentId.adCreativeType, cta: adContentId.cta };
@@ -627,8 +658,8 @@ export const openConsoleConnectionSettings = function openConsoleConnectionSetti
   const obj = AdAnalyticsInterfaceExperiment;
   if (obj.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "open_console_connection_settings")) {
     const obj2 = { type: captureAdUserActionTypes.AdUserActionType.CLICK_INTERNAL, adCreativeType: AdCreativeType.AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: null, surfaceId: null, sourceQuestContent: null, impressionId: null, questContentPosition: null };
-    const captureAdUserAction = captureAdUserAction2.captureAdUserAction;
-    captureAdUserAction2;
+    const captureAdUserAction = captureAdUserAction3.captureAdUserAction;
+    captureAdUserAction3;
     ({ ctaContent: obj4.questContentCTA, content: obj4.surfaceId, sourceQuestContent: obj4.sourceQuestContent, impressionId: obj4.impressionId, position: obj4.questContentPosition } = arg1);
     captureAdUserAction(obj2);
   } else {
@@ -645,8 +676,8 @@ export const openAddConsoleConnectionModal = function openAddConsoleConnectionMo
   let obj = AdAnalyticsInterfaceExperiment;
   if (obj.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "open_add_console_connection_modal")) {
     const obj2 = { type: captureAdUserActionTypes.AdUserActionType.CLICK_INTERNAL, adCreativeType: AdCreativeType.AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: null, surfaceId: null, sourceQuestContent: null, impressionId: null, questContentPosition: null, questContentRowIndex: null };
-    const captureAdUserAction = captureAdUserAction2.captureAdUserAction;
-    captureAdUserAction2;
+    const captureAdUserAction = captureAdUserAction3.captureAdUserAction;
+    captureAdUserAction3;
     ({ ctaContent: obj4.questContentCTA, content: obj4.surfaceId, sourceQuestContent: obj4.sourceQuestContent, impressionId: obj4.impressionId, position: obj4.questContentPosition, rowIndex: obj4.questContentRowIndex } = arg1);
     captureAdUserAction(obj2);
   } else {
@@ -684,8 +715,8 @@ export const openSingleConsoleConnectionModal = function openSingleConsoleConnec
   const obj = AdAnalyticsInterfaceExperiment;
   if (obj.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "open_single_console_connection_modal")) {
     const obj2 = { type: captureAdUserActionTypes.AdUserActionType.CLICK_INTERNAL, adCreativeType: AdCreativeType.AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: null, surfaceId: null, sourceQuestContent: null, impressionId: null, questContentPosition: null, questContentRowIndex: null };
-    const captureAdUserAction = captureAdUserAction2.captureAdUserAction;
-    captureAdUserAction2;
+    const captureAdUserAction = captureAdUserAction3.captureAdUserAction;
+    captureAdUserAction3;
     ({ ctaContent: obj4.questContentCTA, content: obj4.surfaceId, sourceQuestContent: obj4.sourceQuestContent, impressionId: obj4.impressionId, position: obj4.questContentPosition, rowIndex: obj4.questContentRowIndex } = arg1);
     captureAdUserAction(obj2);
   } else {

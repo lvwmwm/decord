@@ -1,12 +1,12 @@
-// Module ID: 12508
-// Function ID: 12509
+// Module ID: 12604
+// Function ID: 12605
 // Name: useGetInitialMessagePreview
-// Dependencies: [19, 4526, 558, 576, 6815, 2]
+// Dependencies: [19, 4718, 558, 576, 6988, 2]
 
-// Module 12508 (useGetInitialMessagePreview)
+// Module 12604 (useGetInitialMessagePreview)
 import react2 from "react" /* 576 */;
-import MessageRecord2 from "MessageRecord" /* 4526 */;
-import isForwardMessageDefault from "isForwardMessage" /* 6815 */;
+import MessageRecord2 from "MessageRecord" /* 4718 */;
+import isForwardMessageDefault from "isForwardMessage" /* 6988 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -14,7 +14,7 @@ import size from "module_2" /* 2 */;
 const MessageRecord = MessageRecord2;
 
 const MessageSnapshotRecord = MessageRecord2.MessageSnapshotRecord;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(message) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetInitialMessagePreview(message) {
   let tmp3;
   let tmp = dependencyMap;
   let obj = react2;
@@ -66,7 +66,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(message) {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : ((message) => {
+}) : (function useGetInitialMessagePreview(message) {
   message = message.message;
   const items = [message];
   return react.useMemo(() => {

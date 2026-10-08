@@ -1,22 +1,22 @@
-// Module ID: 10493
-// Function ID: 10494
+// Module ID: 10090
+// Function ID: 10091
 // Name: GiftingBadgeInfoActionSheet
-// Dependencies: [19, 17, 4885, 7874, 1085, 21, 4896, 587, 558, 576, 1618, 7866, 504, 1252, 1126, 2617, 4892, 10488, 10494, 6652, 2]
+// Dependencies: [19, 17, 5079, 8292, 1085, 21, 5090, 587, 558, 576, 1630, 8284, 504, 1264, 1126, 2661, 5086, 10085, 10091, 6829, 2]
 
-// Module 10493 (GiftingBadgeInfoActionSheet)
+// Module 10090 (GiftingBadgeInfoActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import _modDef2617 from "module_2617" /* 2617 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 7874 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10488 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10494 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import _modDef2661 from "module_2661" /* 2661 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8292 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10085 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10091 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,13 +48,15 @@ obj6 = { flexDirection: "row", flexWrap: "wrap", rowGap: nativeDefault.space.PX_
 obj7 = { width: "33.33%", alignItems: "center", padding: nativeDefault.space.PX_8 };
 obj8 = { paddingVertical: nativeDefault.space.PX_8 };
 let closure_11 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingBadgeInfoActionSheet() {
   let badgeById;
   let closure_0;
+  let headerContainer;
   let items3;
   let obj4;
   let obj6;
   let stateFromStores1;
+  let title;
   let tmp10;
   let tmp11;
   let tmp14;
@@ -68,7 +70,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp4 = closure_11();
   _require = tmp4;
   let tmp5 = stateFromStores1;
-  const bottom = stateFromStores1(1618)().bottom;
+  const bottom = stateFromStores1(1630)().bottom;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const tmp8 = BadgeDirectoryStore;
     let items = [BadgeDirectoryStore];
@@ -86,14 +88,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [AccessibilityStore];
-    class S {
-      constructor() {
-        return useReducedMotion.useReducedMotion;
-      }
-    }
+    const fn2 = function v() {
+      return useReducedMotion.useReducedMotion;
+    };
     cResult[2] = items1;
-    cResult[3] = S;
-    tmp11 = S;
+    cResult[3] = fn2;
+    tmp11 = fn2;
     tmp10 = items1;
   } else {
     tmp10 = cResult[2];
@@ -102,23 +102,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult2 = tmp(504);
   stateFromStores1 = tmpResult2.useStateFromStores(tmp10, tmp11);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class I {
+    class B {
       constructor() {
         const obj = stateFromStores1(dependencyMap[13]);
         obj.track(constants.GIFTING_BADGE_INFO_ACTION_SHEET_OPENED);
       }
     }
     const items2 = [];
-    class S {
-      constructor() {
-        return useReducedMotion.useReducedMotion;
-      }
-    }
+    cResult[4] = B;
     cResult[5] = items2;
     tmp15 = items2;
-    tmp14 = I;
+    tmp14 = B;
   } else {
-    class I {
+    class B {
       constructor() {
         const obj = stateFromStores1(dependencyMap[13]);
         obj.track(constants.GIFTING_BADGE_INFO_ACTION_SHEET_OPENED);
@@ -129,21 +125,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const effect = react.useEffect(tmp14, tmp15);
   const sum = bottom + tmp5(587).space.PX_16;
   if (cResult[6] !== sum) {
-    class I {
+    class B {
       constructor() {
         const obj = stateFromStores1(dependencyMap[13]);
         obj.track(constants.GIFTING_BADGE_INFO_ACTION_SHEET_OPENED);
       }
     }
     tmp19[0] = sum;
-    class S {
-      constructor() {
-        return useReducedMotion.useReducedMotion;
-      }
-    }
+    cResult[6] = sum;
     cResult[7] = tmp19;
   } else {
-    class I {
+    class B {
       constructor() {
         const obj = stateFromStores1(dependencyMap[13]);
         obj.track(constants.GIFTING_BADGE_INFO_ACTION_SHEET_OPENED);
@@ -151,35 +143,28 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   if (cResult[8] === tmp4.container) {
-    class I {
+    let tmp20;
+    let tmp24;
+    class B {
       constructor() {
         const obj = stateFromStores1(dependencyMap[13]);
         obj.track(constants.GIFTING_BADGE_INFO_ACTION_SHEET_OPENED);
       }
     }
     const _Symbol = Symbol;
-    const headerContainer = tmp4.headerContainer;
-    class S {
-      constructor() {
-        return useReducedMotion.useReducedMotion;
-      }
-    }
+    ({ headerContainer, title } = tmp4);
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      class I {
+      class B {
         constructor() {
           const obj = stateFromStores1(dependencyMap[13]);
           obj.track(constants.GIFTING_BADGE_INFO_ACTION_SHEET_OPENED);
         }
       }
-      const stringResult = obj4.string(tmp5(2617)["0MB2C6"]);
-      class S {
-        constructor() {
-          return useReducedMotion.useReducedMotion;
-        }
-      }
+      const stringResult = obj4.string(tmp5(2661)["0MB2C6"]);
       cResult[11] = stringResult;
+      tmp20 = stringResult;
     } else {
-      class I {
+      class B {
         constructor() {
           const obj = stateFromStores1(dependencyMap[13]);
           obj.track(constants.GIFTING_BADGE_INFO_ACTION_SHEET_OPENED);
@@ -187,23 +172,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     if (cResult[12] !== tmp4.title) {
-      class I {
+      class B {
         constructor() {
           const obj = stateFromStores1(dependencyMap[13]);
           obj.track(constants.GIFTING_BADGE_INFO_ACTION_SHEET_OPENED);
         }
       }
-      let obj2 = { style: tmp20, variant: "heading-xl/semibold", color: "text-strong", accessibilityRole: "header", children: null };
-      class S {
-        constructor() {
-          return useReducedMotion.useReducedMotion;
-        }
-      }
+      let obj2 = { style: title, variant: "heading-xl/semibold", color: "text-strong", accessibilityRole: "header", children: tmp20 };
       cResult[12] = tmp4.title;
-      cResult[13] = closure_9(tmp(4892).Text, obj2);
-      const tmp24 = closure_9(tmp(4892).Text, obj2);
+      cResult[13] = closure_9(tmp(5086).Text, obj2);
+      const tmp23 = closure_9(tmp(5086).Text, obj2);
     } else {
-      class I {
+      class B {
         constructor() {
           const obj = stateFromStores1(dependencyMap[13]);
           obj.track(constants.GIFTING_BADGE_INFO_ACTION_SHEET_OPENED);
@@ -213,21 +193,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const _Symbol2 = Symbol;
     const description = tmp4.description;
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-      class I {
+      class B {
         constructor() {
           const obj = stateFromStores1(dependencyMap[13]);
           obj.track(constants.GIFTING_BADGE_INFO_ACTION_SHEET_OPENED);
         }
       }
-      const stringResult1 = obj6.string(tmp5(2617).k9sNVH);
-      class S {
-        constructor() {
-          return useReducedMotion.useReducedMotion;
-        }
-      }
+      const stringResult1 = obj6.string(tmp5(2661).k9sNVH);
       cResult[14] = stringResult1;
+      tmp24 = stringResult1;
     } else {
-      class I {
+      class B {
         constructor() {
           const obj = stateFromStores1(dependencyMap[13]);
           obj.track(constants.GIFTING_BADGE_INFO_ACTION_SHEET_OPENED);
@@ -235,23 +211,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     if (cResult[15] !== tmp4.description) {
-      class I {
+      class B {
         constructor() {
           const obj = stateFromStores1(dependencyMap[13]);
           obj.track(constants.GIFTING_BADGE_INFO_ACTION_SHEET_OPENED);
         }
       }
-      let obj3 = { style: description, variant: "text-md/medium", color: "text-default", children: null };
-      class S {
-        constructor() {
-          return useReducedMotion.useReducedMotion;
-        }
-      }
+      let obj3 = { style: description, variant: "text-md/medium", color: "text-default", children: tmp24 };
       cResult[15] = tmp4.description;
-      cResult[16] = closure_9(tmp(4892).Text, obj3);
-      const tmp28 = closure_9(tmp(4892).Text, obj3);
+      cResult[16] = closure_9(tmp(5086).Text, obj3);
+      const tmp27 = closure_9(tmp(5086).Text, obj3);
     } else {
-      class I {
+      class B {
         constructor() {
           const obj = stateFromStores1(dependencyMap[13]);
           obj.track(constants.GIFTING_BADGE_INFO_ACTION_SHEET_OPENED);
@@ -259,7 +230,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     if (cResult[17] === tmp4.headerContainer) {
-      class I {
+      class B {
         constructor() {
           const obj = stateFromStores1(dependencyMap[13]);
           obj.track(constants.GIFTING_BADGE_INFO_ACTION_SHEET_OPENED);
@@ -267,18 +238,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     let obj5 = { style: headerContainer, children: items3 };
-    items3 = [tmp23, tmp27];
+    items3 = [tmp22, tmp26];
     cResult[17] = tmp4.headerContainer;
-    cResult[18] = tmp23;
-    cResult[19] = tmp27;
+    cResult[18] = tmp22;
+    cResult[19] = tmp26;
     cResult[20] = closure_10(View, obj5);
-    const tmp32 = closure_10(View, obj5);
+    const tmp31 = closure_10(View, obj5);
   }
   const items4 = [tmp4.container, tmp18];
   cResult[8] = tmp4.container;
   cResult[9] = tmp18;
   cResult[10] = items4;
-}) : (() => {
+}) : (function GiftingBadgeInfoActionSheet() {
   let badgeById;
   let closure_0;
   let closure_1;
@@ -311,11 +282,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp5 = closure_10;
   items2[1] = obj4;
   let obj5 = { style: tmp.headerContainer, children: items3 };
-  let obj6 = { style: tmp.title, variant: "heading-xl/semibold", color: "text-strong", accessibilityRole: "header", children: intl.string(_modDef2617["0MB2C6"]) };
+  let obj6 = { style: tmp.title, variant: "heading-xl/semibold", color: "text-strong", accessibilityRole: "header", children: intl.string(_modDef2661["0MB2C6"]) };
   let Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items3 = [closure_9(Text, obj6), ];
-  let obj7 = { style: tmp.description, variant: "text-md/medium", color: "text-default", children: intl2.string(_modDef2617.k9sNVH) };
+  let obj7 = { style: tmp.description, variant: "text-md/medium", color: "text-default", children: intl2.string(_modDef2661.k9sNVH) };
   const Text2 = require("Text/Text").Text;
   intl2 = require("intl").intl;
   items3[1] = closure_9(Text2, obj7);
@@ -365,8 +336,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         let tmp13Result = null != tmp4;
         const tmp13 = React4;
         if (tmp13Result) {
-          const obj6 = { variant: "text-md/normal", color: "text-subtle", children: intl.formatToPlainString(_modDef2617.qvx9E4, obj7) };
-          const Text = tmp8(4892).Text;
+          const obj6 = { variant: "text-md/normal", color: "text-subtle", children: intl.formatToPlainString(_modDef2661.qvx9E4, obj7) };
+          const Text = tmp8(5086).Text;
           intl = tmp8(1126).intl;
           obj7 = { count: tmp4 };
           tmp13Result = tmp13(Text, obj6);

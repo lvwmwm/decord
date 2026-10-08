@@ -1,15 +1,15 @@
-// Module ID: 9402
-// Function ID: 9403
+// Module ID: 7017
+// Function ID: 7018
 // Name: useCanRing
-// Dependencies: [502, 5444, 2051, 4525, 1085, 558, 576, 504, 2]
+// Dependencies: [502, 5754, 2063, 4717, 1085, 558, 576, 504, 2]
 // Exports: canRingUsersInChannel
 
-// Module 9402 (useCanRing)
+// Module 7017 (useCanRing)
 import Constants from "Constants" /* 1085 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 5444 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
+import CallStore from "CallStore" /* 5754 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 const ChannelTypesSets = Constants.ChannelTypesSets;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanRing(id, arg1) {
   let closure_1;
   let first;
   let hasItem;
@@ -191,7 +191,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
     }
   }
   return stateFromStores2;
-}) : ((bot, arg1) => {
+}) : (function useCanRing(bot, arg1) {
   let closure_1;
   _require = bot;
   dependencyMap = arg1;

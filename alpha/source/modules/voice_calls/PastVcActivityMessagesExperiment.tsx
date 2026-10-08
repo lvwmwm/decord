@@ -1,13 +1,13 @@
-// Module ID: 17507
-// Function ID: 17508
+// Module ID: 17789
+// Function ID: 17790
 // Name: PastVcActivityMessagesExperiment
-// Dependencies: [4783, 4780, 558, 576, 2]
+// Dependencies: [4977, 4974, 558, 576, 2]
 // Exports: isPastVcActivityMessagesEnabled
 
-// Module 17507 (PastVcActivityMessagesExperiment)
+// Module 17789 (PastVcActivityMessagesExperiment)
 import react from "react" /* 576 */;
-import ExperimentConstants from "ExperimentConstants" /* 4783 */;
-import createExperiment from "module_4780" /* 4780 */;
+import ExperimentConstants from "ExperimentConstants" /* 4977 */;
+import createExperiment from "module_4974" /* 4974 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const CommonTriggerPoints = ExperimentConstants.CommonTriggerPoints;
 let obj = { kind: "guild", id: "2026-02_past_vc_activity_messages", label: "Past VC Activity Messages", commonTriggerPoint: CommonTriggerPoints.VOICE_CALL, defaultConfig: { enabled: false }, treatments: items };
 items = [{ id: 1, label: "Show past VC activity messages in system channel", config: { enabled: true } }];
 const experiment = createExperiment.createExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, location) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPastVcActivityMessagesEnabled(guildId, location) {
   const obj = react;
   const cResult = obj.c(4);
   if (cResult[0] === guildId) {
@@ -40,7 +40,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, location)
   cResult[1] = location;
   cResult[2] = obj3;
   tmp2 = obj3;
-}) : ((guildId, location) => {
+}) : (function useIsPastVcActivityMessagesEnabled(guildId, location) {
   const obj = { guildId, location };
   return experiment.useExperiment(obj, { autoTrackExposure: true }).enabled;
 });

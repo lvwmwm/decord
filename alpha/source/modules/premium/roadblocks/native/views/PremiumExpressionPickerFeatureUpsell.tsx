@@ -1,19 +1,19 @@
-// Module ID: 9944
-// Function ID: 9945
+// Module ID: 9466
+// Function ID: 9467
 // Name: PremiumExpressionPickerFeatureUpsell
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1618, 6117, 1105, 4618, 9656, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1630, 6296, 1105, 4810, 9467, 2]
 
-// Module 9944 (PremiumExpressionPickerFeatureUpsell)
+// Module 9466 (PremiumExpressionPickerFeatureUpsell)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import useKeyboardIsOpenDefault from "useKeyboardIsOpen" /* 6117 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import useKeyboardIsOpenDefault from "useKeyboardIsOpen" /* 6296 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let closure_5 = createStyles.createStyles((arg0) => {
 });
 const __initData = { code: "function PremiumExpressionPickerFeatureUpsellTsx1(){const{shouldShow,inPortalKeyboard,bottomSheetIndex}=this.__closure;if(!shouldShow.get()){return false;}return inPortalKeyboard?bottomSheetIndex.get()===1:bottomSheetIndex.get()===0;}" };
 const __initData2 = { code: "function PremiumExpressionPickerFeatureUpsellTsx2(){const{shouldShow,inPortalKeyboard,bottomSheetIndex}=this.__closure;if(!shouldShow.get()){return false;}return inPortalKeyboard?bottomSheetIndex.get()===1:bottomSheetIndex.get()===0;}" };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((bottomSheetIndex) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumExpressionPickerFeatureUpsell(bottomSheetIndex) {
   let analyticsLocation;
   let featureName;
   let inPortalKeyboard;
@@ -84,7 +84,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((bottomSheetIndex) =>
   cResult[4] = tmp5;
   cResult[5] = tmp8;
   tmp7 = tmp8;
-}) : ((bottomSheetIndex) => {
+}) : (function PremiumExpressionPickerFeatureUpsell(bottomSheetIndex) {
   let analyticsLocation;
   let featureName;
   bottomSheetIndex = bottomSheetIndex.bottomSheetIndex;

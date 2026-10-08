@@ -1,17 +1,17 @@
-// Module ID: 12796
-// Function ID: 12797
+// Module ID: 12943
+// Function ID: 12944
 // Name: MediaModalLoadingOverlay
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4892, 1126, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 5086, 1126, 2]
 
-// Module 12796 (MediaModalLoadingOverlay)
+// Module 12943 (MediaModalLoadingOverlay)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
+import Text_Text from "Text/Text" /* 5086 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj3 = { marginTop: nativeDefault.space.PX_12 };
 let closure_7 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MediaModalLoadingOverlay(arg0) {
   let intl;
   let items;
   let items1;
@@ -74,7 +74,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     }
     if ("error" === status) {
       const obj3 = { style: tmp4.loaderText, variant: "heading-md/semibold", color: "text-overlay-light", children: intl.string(intl2.t["+ITMYX"]) };
-      const Text2 = tmp(4892).Text;
+      const Text2 = tmp(5086).Text;
       intl = tmp(1126).intl;
       tmp17Result2 = hasOwnProperty(Text2, obj3);
     } else {
@@ -83,7 +83,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       if (null != progress) {
         const _Math = Math;
         const obj4 = { style: tmp4.loaderText, variant: "heading-md/semibold", color: "text-overlay-light", children: items };
-        const Text = tmp(4892).Text;
+        const Text = tmp(5086).Text;
         items = [Math.round(progress), "%"];
         tmp17Result = tmp17(Text, obj4);
       }
@@ -105,7 +105,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[1] = tmp4.loader;
   cResult[2] = items2;
   tmp5 = items2;
-}) : ((progress) => {
+}) : (function MediaModalLoadingOverlay(progress) {
   let intl;
   let items;
   let items1;

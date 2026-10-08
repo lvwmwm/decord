@@ -1,29 +1,29 @@
-// Module ID: 7287
-// Function ID: 7288
+// Module ID: 7741
+// Function ID: 7742
 // Name: utils/UploadUtils
-// Dependencies: [109, 5, 17, 1195, 4945, 1377, 1085, 5105, 3, 7288, 7298, 7256, 7304, 1369, 4573, 1126, 1432, 4534, 7260, 1162, 7305, 7307, 7308, 7283, 4872, 38, 7309, 7310, 7311, 1375, 7312, 7313, 7314, 5128, 7315, 2]
+// Dependencies: [109, 5, 17, 1207, 5280, 1389, 1085, 7477, 3, 7494, 7742, 7732, 7748, 1381, 4765, 1126, 1444, 4726, 7731, 1162, 7749, 7751, 7752, 7737, 5066, 38, 7753, 7754, 7755, 1387, 7756, 7757, 7758, 5440, 7759, 2]
 // Exports: cancelGetFileInfo, getAppDir, getCaptionLabel, getFileFromUploadItem, getFileInfo, getFileSize, getImageCompressionQuality, getImageDimensionsIfMissing, getType, openImagePicker, resolveModeToVideoQualityForFreeUser, resolveModeToVideoQualityForUserWithFeature, shouldResolveToMediaFilePath
 
-// Module 7287 (utils/UploadUtils)
+// Module 7741 (utils/UploadUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import react_nativeDefault from "react-native" /* 1162 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import react_nativeDefault2 from "react-native" /* 1432 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4534 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 5105 */;
-import UploadPlatform from "UploadPlatform" /* 7260 */;
-import FileUtils from "FileUtils" /* 7283 */;
-import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7288 */;
-import ImageConversionDecision from "ImageConversionDecision" /* 7305 */;
-import VideoUploadUtils from "VideoUploadUtils" /* 7307 */;
-import UploadLimits from "UploadLimits" /* 7308 */;
-import utils_TimeUtils from "utils/TimeUtils" /* 7315 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import react_nativeDefault2 from "react-native" /* 1444 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4726 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7477 */;
+import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7494 */;
+import UploadPlatform from "UploadPlatform" /* 7731 */;
+import FileUtils from "FileUtils" /* 7737 */;
+import ImageConversionDecision from "ImageConversionDecision" /* 7749 */;
+import VideoUploadUtils from "VideoUploadUtils" /* 7751 */;
+import UploadLimits from "UploadLimits" /* 7752 */;
+import utils_TimeUtils from "utils/TimeUtils" /* 7759 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UnsyncedUserSettingsStore_mod from "UnsyncedUserSettingsStore" /* 1195 */;
-import NetworkStore from "NetworkStore" /* 4945 */;
-import UserStore from "UserStore" /* 1377 */;
+import UnsyncedUserSettingsStore_mod from "UnsyncedUserSettingsStore" /* 1207 */;
+import NetworkStore from "NetworkStore" /* 5280 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -40,8 +40,8 @@ let closure_17;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const DeviceUtils = tmp(4872);
-const UploadUtils = tmp(7256);
+const DeviceUtils = tmp(5066);
+const UploadUtils = tmp(7732);
 function openImagePickerUnhandled() {
   return obj(...arguments);
 }

@@ -1,26 +1,29 @@
 // Module ID: 1621
 // Function ID: 1622
-// Dependencies: [1622, 1625, 1627, 1629]
+// Dependencies: [19, 1505, 1601]
+// Exports: useLinkTo
 
 // Module 1621
-import _mod1622 from "module_1622" /* 1622 */;
-import SafeAreaView from "SafeAreaView" /* 1625 */;
-import react_native from "react-native" /* 1627 */;
-import _mod1629 from "module_1629" /* 1629 */;
+import BaseNavigationContainer from "BaseNavigationContainer" /* 1505 */;
+import _mod1601 from "module_1601" /* 1601 */;
+import react from "react" /* 19 */;
 
-for (const key10013 in _mod1622) {
-  exports[key10013] = _mod1622[key10013];
-  continue;
-}
-for (const key10017 in SafeAreaView) {
-  exports[key10017] = SafeAreaView[key10017];
-  continue;
-}
-for (const key10021 in react_native) {
-  exports[key10021] = react_native[key10021];
-  continue;
-}
-for (const key10025 in _mod1629) {
-  exports[key10025] = _mod1629[key10025];
-  continue;
-}
+
+export const useLinkTo = function useLinkTo() {
+  const context = react.useContext(BaseNavigationContainer.NavigationContainerRefContext);
+  let obj = _mod1601;
+  const buildAction = obj.useBuildAction();
+  const items = [buildAction, context];
+  return react.useCallback(function(arg0) {
+    const obj = context;
+    if (undefined === context) {
+      const _Error = Error;
+      const self = this;
+      const self2 = this;
+      const error = new Error("Couldn't find a navigation object. Is your component inside NavigationContainer?");
+      throw error;
+    } else {
+      obj.dispatch(buildAction(arg0));
+    }
+  }, items);
+};

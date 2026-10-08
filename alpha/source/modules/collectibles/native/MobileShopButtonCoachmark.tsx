@@ -1,45 +1,44 @@
-// Module ID: 16989
-// Function ID: 16990
+// Module ID: 17270
+// Function ID: 17271
 // Name: MobileShopButtonCoachmark
-// Dependencies: [19, 17, 2048, 21, 4896, 587, 558, 576, 1126, 9895, 2]
+// Dependencies: [19, 2060, 21, 5090, 587, 558, 576, 6164, 1126, 9375, 2]
 
-// Module 16989 (MobileShopButtonCoachmark)
-import react_native from "react-native" /* 17 */;
+// Module 17270 (MobileShopButtonCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
+let dependencyMap;
+
 let size;
-let react = react_mod;
-const Image = react_native.Image;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
 let obj = { image: size };
 size = { height: 80, width: 80, marginTop: nativeDefault.space.PX_8, marginBottom: -nativeDefault.space.PX_16 };
 let closure_6 = createStyles.createStyles(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MobileShopButtonCoachmark(arg0) {
   let image;
   let marketing;
   let navigateToShop;
   let onDismiss;
   let stringResult;
   let visible;
-  const obj = navigateToShop(onDismiss[7]);
+  const obj = navigateToShop(576);
   const cResult = obj.c(22);
   const tmp = navigateToShop;
   ({ marketing, navigateToShop } = arg0);
-  const tmp2 = onDismiss;
   ({ visible, onDismiss } = arg0);
   const tmp4 = closure_6();
-  react = tmp4;
+  dependencyMap = tmp4;
   const assetLight = marketing.assetLight;
-  const obj2 = react;
-  let closure_4 = react.useRef(false);
+  let obj2 = assetLight;
+  let closure_4 = assetLight.useRef(false);
   if (cResult[0] === navigateToShop) {
     let tmp5;
     let tmp7;
@@ -67,16 +66,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     let closure_5 = obj2.useRef(onDismiss);
     if (cResult[5] !== onDismiss) {
-      class D {
+      class T {
         constructor() {
           closure_5.current = onDismiss;
         }
       }
       cResult[5] = onDismiss;
-      cResult[6] = D;
-      tmp7 = D;
+      cResult[6] = T;
+      tmp7 = T;
     } else {
-      class D {
+      class T {
         constructor() {
           closure_5.current = onDismiss;
         }
@@ -85,114 +84,88 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const effect = obj2.useEffect(tmp7);
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      class E {
+      class T {
         constructor() {
-          return () => {
-            if (!ref.current) {
-              ref2.current(ref.AUTO_DISMISS);
-            }
-          };
+          closure_5.current = onDismiss;
         }
       }
       const items = [];
-      cResult[7] = E;
+      cResult[7] = tmp12;
       cResult[8] = items;
       tmp11 = items;
-      tmp10 = E;
+      tmp10 = tmp12;
     } else {
-      class E {
+      class T {
         constructor() {
-          return () => {
-            if (!ref.current) {
-              ref2.current(ref.AUTO_DISMISS);
-            }
-          };
+          closure_5.current = onDismiss;
         }
       }
       tmp11 = cResult[8];
     }
     const effect1 = obj2.useEffect(tmp10, tmp11);
     if (cResult[9] === assetLight) {
-      class E {
+      class T {
         constructor() {
-          return () => {
-            if (!ref.current) {
-              ref2.current(ref.AUTO_DISMISS);
-            }
-          };
+          closure_5.current = onDismiss;
         }
       }
       if (cResult[12] !== marketing.buttonLabel) {
-        class E {
+        class T {
           constructor() {
-            return () => {
-              if (!ref.current) {
-                ref2.current(ref.AUTO_DISMISS);
-              }
-            };
+            closure_5.current = onDismiss;
           }
         }
         if (stringResult == null) {
-          class E {
+          class T {
             constructor() {
-              return () => {
-                if (!ref.current) {
-                  ref2.current(ref.AUTO_DISMISS);
-                }
-              };
+              closure_5.current = onDismiss;
             }
           }
-          stringResult = obj3.string(tmp(tmp2[8]).t.fYfGgK);
+          stringResult = obj3.string(tmp(1126).t.fYfGgK);
         }
         cResult[12] = marketing.buttonLabel;
         cResult[13] = stringResult;
       } else {
-        class E {
+        class T {
           constructor() {
-            return () => {
-              if (!ref.current) {
-                ref2.current(ref.AUTO_DISMISS);
-              }
-            };
+            closure_5.current = onDismiss;
           }
         }
       }
       if (cResult[14] === tmp5) {
-        class E {
+        class T {
           constructor() {
-            return () => {
-              if (!ref.current) {
-                ref2.current(ref.AUTO_DISMISS);
-              }
-            };
+            closure_5.current = onDismiss;
           }
         }
       }
-      const obj5 = { title: null, description: null, visible, position: "top", renderImgComponent: tmp13, buttonLabel: tmp14, buttonVariant: "secondary", onButtonPress: tmp5, onDismiss: tmp6 };
+      const obj5 = { title: null, description: null, visible, position: "top", renderImgComponent: tmp14, buttonLabel: tmp15, buttonVariant: "secondary", onButtonPress: tmp5, onDismiss: tmp6 };
       ({ title: obj4.title, body: obj4.description } = marketing);
-      class R {
+      class E {
         constructor() {
-          return <Image style={image.image} source={{ uri: assetLight }} />;
+          const obj2 = { uri: assetLight };
+          return jsx(FastImageDefault, { style: image.image, source: obj2 });
         }
       }
       cResult[15] = tmp6;
       cResult[16] = marketing.body;
       cResult[17] = marketing.title;
-      cResult[18] = tmp13;
-      cResult[19] = tmp14;
+      cResult[18] = tmp14;
+      cResult[19] = tmp15;
       cResult[20] = visible;
       cResult[21] = obj5;
     }
-    class R {
+    class E {
       constructor() {
-        return <Image style={image.image} source={{ uri: assetLight }} />;
+        const obj2 = { uri: assetLight };
+        return jsx(FastImageDefault, { style: image.image, source: obj2 });
       }
     }
     cResult[9] = assetLight;
     cResult[10] = tmp4.image;
-    cResult[11] = R;
+    cResult[11] = E;
   }
-  const fn = function c() {
+  const fn = function l() {
     closure_4.current = true;
     onDismiss(ContentDismissActionType.TAKE_ACTION);
     navigateToShop();
@@ -201,7 +174,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = onDismiss;
   cResult[2] = fn;
   tmp5 = fn;
-}) : ((marketing) => {
+}) : (function MobileShopButtonCoachmark(marketing) {
   marketing = marketing.marketing;
   const navigateToShop = marketing.navigateToShop;
   const visible = marketing.visible;
@@ -211,23 +184,23 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp = closure_6();
   let closure_4 = tmp;
   const assetLight = marketing.assetLight;
-  closure_6 = visible.useRef(false);
+  closure_6 = onDismiss.useRef(false);
   const items = [onDismiss, navigateToShop];
-  const onButtonPress = visible.useCallback(() => {
+  const onButtonPress = onDismiss.useCallback(() => {
     closure_6.current = true;
     onDismiss(ContentDismissActionType.TAKE_ACTION);
     navigateToShop();
   }, items);
   const items1 = [onDismiss];
-  const callback1 = visible.useCallback(() => {
+  const callback1 = onDismiss.useCallback(() => {
     closure_6.current = true;
     onDismiss(ContentDismissActionType.USER_DISMISS);
   }, items1);
-  let closure_9 = visible.useRef(onDismiss);
-  const effect = visible.useEffect(() => {
+  let closure_9 = onDismiss.useRef(onDismiss);
+  const effect = onDismiss.useEffect(() => {
     closure_9.current = onDismiss;
   });
-  const effect1 = visible.useEffect(() => {
+  const effect1 = onDismiss.useEffect(() => {
     let ref;
     let ref2;
     return () => {
@@ -243,7 +216,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items2[5] = tmp.image;
   items2[6] = onButtonPress;
   items2[7] = callback1;
-  const memo = visible.useMemo(() => {
+  const memo = onDismiss.useMemo(() => {
     let buttonLabel;
     let image;
     let uri;
@@ -256,7 +229,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let obj2;
         const obj = { style: image.image, source: obj2 };
         obj2 = { uri };
-        return assetLight(onDismiss, obj);
+        return assetLight(navigateToShop(visible[7]), obj);
       },
       buttonLabel,
       buttonVariant: "secondary",
@@ -270,7 +243,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return obj;
   }, items2);
-  let obj = marketing(navigateToShop[9]);
+  let obj = marketing(visible[9]);
   const coachmark = obj.useCoachmark(shopButtonRef, memo);
   return null;
 });

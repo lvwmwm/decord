@@ -1,19 +1,17 @@
-// Module ID: 17755
-// Function ID: 17756
+// Module ID: 18042
+// Function ID: 18043
 // Name: ExemptRolesActionSheet
-// Dependencies: [19, 2107, 2106, 21, 11462, 558, 576, 504, 1126, 17756, 2]
+// Dependencies: [19, 2119, 2118, 21, 11446, 558, 576, 504, 1126, 18043, 2]
 
-// Module 17755 (ExemptRolesActionSheet)
+// Module 18042 (ExemptRolesActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 2107 */;
-import RoleNameDefault from "RoleName" /* 11462 */;
-import ExemptionActionSheetDefault from "ExemptionActionSheet" /* 17756 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 2119 */;
+import RoleNameDefault from "RoleName" /* 11446 */;
+import ExemptionActionSheetDefault from "ExemptionActionSheet" /* 18043 */;
 import react from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
+import GuildRoleStore from "GuildRoleStore" /* 2118 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let guildId;
 
 function renderRoleName(role) {
   return jsx(RoleNameDefault, { role, children: role.name });
@@ -26,7 +24,7 @@ function getRoleName(name) {
 }
 const isEveryoneRole = GuildRoleRecord.isEveryoneRole;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExemptRolesActionSheet(guildId) {
   let exemptRoles;
   let first;
   let onSave;
@@ -120,7 +118,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[11] = tmp8;
   cResult[12] = jsx(ExemptionActionSheetDefault, { title: tmp11, searchPlaceholder: tmp12, listId: "automod-exempt-roles", items: tmp8, initialSelected: exemptRoles, getId: getRoleId, getSearchText: getRoleName, renderLabel: renderRoleName, onSave });
   jsx(ExemptionActionSheetDefault, { title: tmp11, searchPlaceholder: tmp12, listId: "automod-exempt-roles", items: tmp8, initialSelected: exemptRoles, getId: getRoleId, getSearchText: getRoleName, renderLabel: renderRoleName, onSave });
-}) : ((guildId) => {
+}) : (function ExemptRolesActionSheet(guildId) {
   let exemptRoles;
   let onSave;
   guildId = guildId.guildId;
@@ -131,7 +129,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const stateFromStores = obj.useStateFromStores(items, () => GuildRoleStore.getSortedRoles(guildId), items1);
   const items2 = [stateFromStores];
   const memo = react.useMemo(() => stateFromStores.filter((item) => !closure_1_4(item)), items2);
-  stateFromStores(17756);
+  stateFromStores(18043);
   const intl = guildId(1126).intl;
   const intl2 = guildId(1126).intl;
   return <tmp3 title={intl.string(guildId(1126).t["LPJmL/"])} searchPlaceholder={intl2.string(guildId(1126).t.aFO1I6)} listId="automod-exempt-roles" items={memo} initialSelected={exemptRoles} getId={getRoleId} getSearchText={getRoleName} renderLabel={renderRoleName} onSave={onSave} />;

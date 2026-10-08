@@ -1,16 +1,16 @@
-// Module ID: 5054
-// Function ID: 5055
+// Module ID: 7443
+// Function ID: 7444
 // Name: GuildRoomStore
-// Dependencies: [109, 502, 4919, 2103, 5055, 504, 584, 2]
+// Dependencies: [109, 502, 5108, 2115, 7444, 504, 584, 2]
 
-// Module 5054 (GuildRoomStore)
+// Module 7443 (GuildRoomStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GuildRoomTypes from "GuildRoomTypes" /* 5055 */;
+import GuildRoomTypes from "GuildRoomTypes" /* 7444 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -67,14 +67,14 @@ let closure_11 = [];
 new Map();
 const map1 = {};
 const authStore2 = {};
-let closure_15 = {};
+const authStore3 = {};
 let c16 = null;
 let c17 = null;
-const authStore4 = {};
+const authStore5 = {};
 const map2 = new Map();
 let flag = false;
 let c22 = false;
-let closure_23 = {};
+const version = {};
 let closure_24 = {};
 let closure_25 = [];
 const PersistedStore = get_initializedDefault.PersistedStore;

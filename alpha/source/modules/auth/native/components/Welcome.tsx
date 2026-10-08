@@ -1,39 +1,39 @@
-// Module ID: 15908
-// Function ID: 15909
+// Module ID: 16167
+// Function ID: 16168
 // Name: Welcome
-// Dependencies: [19, 17, 15909, 4782, 6979, 12071, 1391, 4877, 8426, 1085, 6839, 7239, 21, 4896, 587, 558, 576, 12401, 1126, 38, 1188, 4728, 4892, 13077, 6440, 6476, 13691, 1490, 1618, 504, 6997, 1252, 510, 5597, 6089, 5991, 15910, 15905, 1491, 5601, 5599, 6075, 11520, 4595, 2]
+// Dependencies: [19, 17, 16168, 4976, 7168, 12144, 1403, 5071, 8663, 1085, 7021, 7418, 21, 5090, 587, 558, 576, 12497, 1126, 38, 1200, 4922, 5086, 13355, 6618, 6654, 13913, 1502, 1630, 504, 7185, 1264, 510, 5392, 5936, 6174, 16169, 16164, 1503, 5375, 5963, 6261, 11518, 4787, 2]
 
-// Module 15908 (Welcome)
+// Module 16167 (Welcome)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Link from "Link" /* 1491 */;
-import UserUtilsDefault from "UserUtils" /* 4728 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6440 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6476 */;
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 6839 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 6997 */;
-import Constants2 from "Constants" /* 7239 */;
-import GuildInviteIconDefault from "GuildInviteIcon" /* 12401 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13077 */;
-import AssetRegistry from "AssetRegistry" /* 13691 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 15905 */;
+import native from "native" /* 1200 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import Link from "Link" /* 1503 */;
+import UserUtilsDefault from "UserUtils" /* 4922 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6618 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6654 */;
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7021 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7185 */;
+import Constants2 from "Constants" /* 7418 */;
+import GuildInviteIconDefault from "GuildInviteIcon" /* 12497 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13355 */;
+import AssetRegistry from "AssetRegistry" /* 13913 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 16164 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AgeGateStore from "AgeGateStore" /* 15909 */;
-import ExperimentStore from "ExperimentStore" /* 4782 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 6979 */;
-import MultiAccountStore from "MultiAccountStore" /* 12071 */;
-import UserRecord from "UserRecord" /* 1391 */;
-import InviteStore from "InviteStore" /* 4877 */;
-import DisplayedInviteStore from "DisplayedInviteStore" /* 8426 */;
+import AgeGateStore from "AgeGateStore" /* 16168 */;
+import ExperimentStore from "ExperimentStore" /* 4976 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7168 */;
+import MultiAccountStore from "MultiAccountStore" /* 12144 */;
+import UserRecord from "UserRecord" /* 1403 */;
+import InviteStore from "InviteStore" /* 5071 */;
+import DisplayedInviteStore from "DisplayedInviteStore" /* 8663 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -75,7 +75,7 @@ let obj = { container: obj2, text: { marginLeft: 16 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, padding: 16, flexDirection: "row", borderRadius: nativeDefault.radii.sm };
 let closure_24 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteCard(arg0) {
   let guild;
   let invite;
   let inviter;
@@ -153,7 +153,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
         tmp30 = cResult[7];
       }
       if (cResult[8] !== inviter) {
-        const tmp19Result = tmp19(4728);
+        const tmp19Result = tmp19(4922);
         const formattedName = tmp19Result.getFormattedName(inviter);
         cResult[8] = inviter;
         cResult[9] = formattedName;
@@ -248,7 +248,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
           }
           const obj8 = { style: tmp41, children: items };
           items = [tmp11, tmp48];
-          const tmp55 = afk(React3, obj8);
+          const tmp55 = authStore6(React3, obj8);
           cResult[28] = tmp11;
           cResult[29] = tmp41;
           cResult[30] = tmp48;
@@ -258,7 +258,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
       }
       const obj9 = { style: tmp4.text, children: items1 };
       items1 = [tmp42, tmp45];
-      const tmp51 = afk(React3, obj9);
+      const tmp51 = authStore6(React3, obj9);
       cResult[24] = tmp4.text;
       cResult[25] = tmp42;
       cResult[26] = tmp45;
@@ -271,7 +271,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
     cResult[19] = items2;
     tmp41 = items2;
   }
-}) : (function(invite) {
+}) : (function InviteCard(invite) {
   let guild;
   let inviter;
   let items;
@@ -335,15 +335,15 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
     items1 = [tmp12, ];
     const obj6 = { style: tmp.text, children: items2 };
     const obj7 = { variant: "text-sm/medium", color: "text-subtle", children: stringResult };
-    items2 = [tmp16(tmp15(4892).Text, obj7), ];
+    items2 = [tmp16(tmp15(5086).Text, obj7), ];
     const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: name };
-    items2[1] = tmp16(tmp15(4892).Text, obj8);
-    items1[1] = afk(React3, obj6);
-    return afk(React3, obj5);
+    items2[1] = tmp16(tmp15(5086).Text, obj8);
+    items1[1] = authStore6(React3, obj6);
+    return authStore6(React3, obj5);
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildTemplateCard(arg0) {
   let guildTemplate;
   let intl;
   let items;
@@ -373,7 +373,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol2 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { variant: "text-sm/medium", color: "text-subtle", children: intl.string(intl4.t.QzUORX) };
-      const Text = tmp(4892).Text;
+      const Text = tmp(5086).Text;
       intl = tmp(1126).intl;
       const tmp14 = closure_21(Text, obj3);
       cResult[4] = tmp14;
@@ -404,7 +404,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const obj5 = { style: tmp5, children: items };
       items = [tmp7, tmp18];
-      const tmp25 = afk(React3, obj5);
+      const tmp25 = authStore6(React3, obj5);
       cResult[10] = tmp5;
       cResult[11] = tmp18;
       cResult[12] = tmp25;
@@ -412,7 +412,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const obj6 = { style: tmp4.text, children: items1 };
     items1 = [tmp12, tmp15];
-    const tmp21 = afk(React3, obj6);
+    const tmp21 = authStore6(React3, obj6);
     cResult[7] = tmp4.text;
     cResult[8] = tmp15;
     cResult[9] = tmp21;
@@ -423,7 +423,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = style;
   cResult[2] = items2;
   tmp5 = items2;
-}) : ((arg0) => {
+}) : (function GuildTemplateCard(arg0) {
   let guildTemplate;
   let intl;
   let items;
@@ -444,21 +444,22 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items2 = [closure_21(Text, obj4), ];
   const obj5 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: guildTemplate.name };
   items2[1] = closure_21(Text_Text.Text, obj5);
-  items1[1] = afk(React3, obj3);
-  return afk(React3, obj);
+  items1[1] = authStore6(React3, obj3);
+  return authStore6(React3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Centerpiece(arg0) {
+  let centerpieceContainer;
   let first;
   let guildTemplate;
   let inlineButtons;
   let invite;
+  let items;
   let items1;
-  let items2;
+  let scrollViewContainer;
   let tmp12;
-  let tmp13;
   const obj = react2;
-  const cResult = obj.c(37);
+  const cResult = obj.c(35);
   ({ invite, guildTemplate, inlineButtons } = arg0);
   const tmp4 = useIsWindowLargeDefault();
   const tmp5 = closure_23(tmp4);
@@ -471,187 +472,178 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     first = cResult[0];
   }
-  if (cResult[1] !== tmp5.centerpieceContainer) {
-    const items = [tmp5.centerpieceContainer];
-    cResult[1] = tmp5.centerpieceContainer;
-    cResult[2] = items;
-    tmp12 = items;
+  ({ centerpieceContainer, scrollViewContainer } = tmp5);
+  if (cResult[1] !== tmp5.logo) {
+    const obj3 = { style: tmp5.logo, source: first };
+    const tmp15 = closure_21(hasOwnProperty, obj3);
+    cResult[1] = tmp5.logo;
+    cResult[2] = tmp15;
+    tmp12 = tmp15;
   } else {
     tmp12 = cResult[2];
   }
-  const scrollViewContainer = tmp5.scrollViewContainer;
-  if (cResult[3] !== tmp5.logo) {
-    const obj3 = { style: tmp5.logo, source: first };
-    const tmp16 = closure_21(hasOwnProperty, obj3);
-    cResult[3] = tmp5.logo;
-    cResult[4] = tmp16;
-    tmp13 = tmp16;
-  } else {
-    tmp13 = cResult[4];
-  }
-  if (cResult[5] === tmp5.header) {
+  if (cResult[3] === tmp5.header) {
+    let tmp16;
     let tmp17;
-    let tmp18;
-    if (cResult[6] === typeConsolidationTextTransform) {
-      tmp17 = cResult[7];
+    if (cResult[4] === typeConsolidationTextTransform) {
+      tmp16 = cResult[5];
     }
-    let num6 = 2;
+    let num4 = 2;
     if (tmp4) {
-      num6 = 1;
+      num4 = 1;
     }
     const _Symbol = Symbol;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       const intl = tmp(1126).intl;
       const stringResult = intl.string(intl4.t["3S2xmm"]);
-      cResult[8] = stringResult;
-      tmp18 = stringResult;
+      cResult[6] = stringResult;
+      tmp17 = stringResult;
     } else {
-      tmp18 = cResult[8];
+      tmp17 = cResult[6];
     }
-    if (cResult[9] === tmp17) {
-      let tmp20;
+    if (cResult[7] === tmp16) {
+      let tmp19;
       let subHeaderWithInvite;
-      if (cResult[10] === num6) {
-        tmp20 = cResult[11];
+      if (cResult[8] === num4) {
+        tmp19 = cResult[9];
       }
       if (null != invite) {
         subHeaderWithInvite = tmp5.subHeaderWithInvite;
       } else {
         subHeaderWithInvite = null;
       }
-      if (cResult[12] === tmp5.subHeader) {
+      if (cResult[10] === tmp5.subHeader) {
+        let tmp23;
         let tmp24;
-        let tmp25;
-        let tmp27;
-        if (cResult[13] === subHeaderWithInvite) {
-          tmp24 = cResult[14];
+        let tmp26;
+        if (cResult[11] === subHeaderWithInvite) {
+          tmp23 = cResult[12];
         }
         const _Symbol2 = Symbol;
-        if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+        if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
           const intl2 = tmp(1126).intl;
           const stringResult1 = intl2.string(intl4.t.Gtcthl);
-          cResult[15] = stringResult1;
-          tmp25 = stringResult1;
+          cResult[13] = stringResult1;
+          tmp24 = stringResult1;
         } else {
-          tmp25 = cResult[15];
+          tmp24 = cResult[13];
         }
-        if (cResult[16] !== tmp24) {
-          const obj4 = { variant: "text-md/medium", color: "text-overlay-light", style: tmp24, maxFontSizeMultiplier: 3, children: tmp25 };
-          const tmp29 = closure_21(Text_Text.Text, obj4);
-          cResult[16] = tmp24;
-          cResult[17] = tmp29;
-          tmp27 = tmp29;
+        if (cResult[14] !== tmp23) {
+          const obj4 = { variant: "text-md/medium", color: "text-overlay-light", style: tmp23, maxFontSizeMultiplier: 3, children: tmp24 };
+          const tmp28 = closure_21(Text_Text.Text, obj4);
+          cResult[14] = tmp23;
+          cResult[15] = tmp28;
+          tmp26 = tmp28;
         } else {
-          tmp27 = cResult[17];
+          tmp26 = cResult[15];
         }
-        if (cResult[18] === invite) {
-          let tmp30;
-          if (cResult[19] === null != invite) {
-            tmp30 = cResult[20];
+        if (cResult[16] === invite) {
+          let tmp29;
+          if (cResult[17] === null != invite) {
+            tmp29 = cResult[18];
           }
-          if (cResult[21] === guildTemplate) {
-            let tmp34;
-            if (cResult[22] === (null != guildTemplate && guildTemplate.state === GuildTemplateStates.RESOLVED)) {
-              tmp34 = cResult[23];
+          if (cResult[19] === guildTemplate) {
+            let tmp33;
+            if (cResult[20] === (null != guildTemplate && guildTemplate.state === GuildTemplateStates.RESOLVED)) {
+              tmp33 = cResult[21];
             }
-            if (cResult[24] === tmp27) {
-              if (cResult[25] === tmp30) {
-                if (cResult[26] === tmp34) {
-                  let tmp38;
-                  if (cResult[27] === tmp20) {
-                    tmp38 = cResult[28];
+            if (cResult[22] === tmp26) {
+              if (cResult[23] === tmp29) {
+                if (cResult[24] === tmp33) {
+                  let tmp37;
+                  if (cResult[25] === tmp19) {
+                    tmp37 = cResult[26];
                   }
-                  if (cResult[29] === inlineButtons) {
-                    if (cResult[30] === tmp5.scrollViewContainer) {
-                      if (cResult[31] === tmp38) {
-                        let tmp42;
-                        if (cResult[32] === tmp13) {
-                          tmp42 = cResult[33];
+                  if (cResult[27] === inlineButtons) {
+                    if (cResult[28] === tmp5.scrollViewContainer) {
+                      if (cResult[29] === tmp37) {
+                        let tmp41;
+                        if (cResult[30] === tmp12) {
+                          tmp41 = cResult[31];
                         }
-                        if (cResult[34] === tmp42) {
-                          let tmp46;
-                          if (cResult[35] === tmp12) {
-                            tmp46 = cResult[36];
+                        if (cResult[32] === tmp5.centerpieceContainer) {
+                          let tmp45;
+                          if (cResult[33] === tmp41) {
+                            tmp45 = cResult[34];
                           }
-                          return tmp46;
+                          return tmp45;
                         }
-                        const obj5 = { style: tmp12, children: tmp42 };
-                        const tmp49 = closure_21(React3, obj5);
-                        cResult[34] = tmp42;
-                        cResult[35] = tmp12;
-                        cResult[36] = tmp49;
-                        tmp46 = tmp49;
+                        const obj5 = { style: centerpieceContainer, children: tmp41 };
+                        const tmp48 = closure_21(React3, obj5);
+                        cResult[32] = tmp5.centerpieceContainer;
+                        cResult[33] = tmp41;
+                        cResult[34] = tmp48;
+                        tmp45 = tmp48;
                       }
                     }
                   }
-                  const obj6 = { alwaysBounceVertical: false, contentContainerStyle: scrollViewContainer, children: items1 };
-                  items1 = [tmp13, tmp38, inlineButtons];
-                  const tmp45 = afk(metroRequire, obj6);
-                  cResult[29] = inlineButtons;
-                  cResult[30] = tmp5.scrollViewContainer;
-                  cResult[31] = tmp38;
-                  cResult[32] = tmp13;
-                  cResult[33] = tmp45;
-                  tmp42 = tmp45;
+                  const obj6 = { alwaysBounceVertical: false, contentContainerStyle: scrollViewContainer, children: items };
+                  items = [tmp12, tmp37, inlineButtons];
+                  const tmp44 = authStore6(metroRequire, obj6);
+                  cResult[27] = inlineButtons;
+                  cResult[28] = tmp5.scrollViewContainer;
+                  cResult[29] = tmp37;
+                  cResult[30] = tmp12;
+                  cResult[31] = tmp44;
+                  tmp41 = tmp44;
                 }
               }
             }
-            const obj7 = { children: items2 };
-            items2 = [tmp20, tmp27, tmp30, tmp34];
-            const tmp41 = afk(React3, obj7);
-            cResult[24] = tmp27;
-            cResult[25] = tmp30;
-            cResult[26] = tmp34;
-            cResult[27] = tmp20;
-            cResult[28] = tmp41;
-            tmp38 = tmp41;
+            const obj7 = { children: items1 };
+            items1 = [tmp19, tmp26, tmp29, tmp33];
+            const tmp40 = authStore6(React3, obj7);
+            cResult[22] = tmp26;
+            cResult[23] = tmp29;
+            cResult[24] = tmp33;
+            cResult[25] = tmp19;
+            cResult[26] = tmp40;
+            tmp37 = tmp40;
           }
-          let tmp35 = null;
+          let tmp34 = null;
           if (null != guildTemplate && guildTemplate.state === GuildTemplateStates.RESOLVED) {
             const obj8 = { guildTemplate };
-            tmp35 = closure_21(closure_26, obj8);
+            tmp34 = closure_21(closure_26, obj8);
           }
-          cResult[21] = guildTemplate;
-          cResult[22] = null != guildTemplate && guildTemplate.state === GuildTemplateStates.RESOLVED;
-          cResult[23] = tmp35;
-          tmp34 = tmp35;
+          cResult[19] = guildTemplate;
+          cResult[20] = null != guildTemplate && guildTemplate.state === GuildTemplateStates.RESOLVED;
+          cResult[21] = tmp34;
+          tmp33 = tmp34;
         }
-        let tmp31 = null;
+        let tmp30 = null;
         if (null != invite) {
           const obj9 = { invite };
-          tmp31 = closure_21(closure_25, obj9);
+          tmp30 = closure_21(closure_25, obj9);
         }
-        cResult[18] = invite;
-        cResult[19] = null != invite;
-        cResult[20] = tmp31;
-        tmp30 = tmp31;
+        cResult[16] = invite;
+        cResult[17] = null != invite;
+        cResult[18] = tmp30;
+        tmp29 = tmp30;
       }
-      const items3 = [tmp5.subHeader, subHeaderWithInvite];
-      cResult[12] = tmp5.subHeader;
-      cResult[13] = subHeaderWithInvite;
-      cResult[14] = items3;
-      tmp24 = items3;
+      const items2 = [tmp5.subHeader, subHeaderWithInvite];
+      cResult[10] = tmp5.subHeader;
+      cResult[11] = subHeaderWithInvite;
+      cResult[12] = items2;
+      tmp23 = items2;
     }
-    const obj10 = { style: tmp17, lineClamp: num6, variant: "display-md", color: "text-overlay-light", maxFontSizeMultiplier: 1, children: tmp18 };
-    const tmp22 = closure_21(Text_Text.Heading, obj10);
-    cResult[9] = tmp17;
-    cResult[10] = num6;
-    cResult[11] = tmp22;
-    tmp20 = tmp22;
+    const obj10 = { style: tmp16, lineClamp: num4, variant: "display-md", color: "text-overlay-light", maxFontSizeMultiplier: 1, children: tmp17 };
+    const tmp21 = closure_21(Text_Text.Heading, obj10);
+    cResult[7] = tmp16;
+    cResult[8] = num4;
+    cResult[9] = tmp21;
+    tmp19 = tmp21;
   }
-  const items4 = [tmp5.header, typeConsolidationTextTransform];
-  cResult[5] = tmp5.header;
-  cResult[6] = typeConsolidationTextTransform;
-  cResult[7] = items4;
-  tmp17 = items4;
-}) : ((inlineButtons) => {
+  const items3 = [tmp5.header, typeConsolidationTextTransform];
+  cResult[3] = tmp5.header;
+  cResult[4] = typeConsolidationTextTransform;
+  cResult[5] = items3;
+  tmp16 = items3;
+}) : (function Centerpiece(inlineButtons) {
   let guildTemplate;
   let intl;
   let intl2;
   let invite;
   let items;
   let items1;
-  let items2;
   let num;
   let obj3;
   let subHeaderWithInvite;
@@ -667,51 +659,50 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (tmp8) {
     tmp8 = guildTemplate.state === GuildTemplateStates.RESOLVED;
   }
-  const obj2 = { style: items, children: afk(tmp13, obj3) };
-  items = [tmp3.centerpieceContainer];
-  obj3 = { alwaysBounceVertical: false, contentContainerStyle: tmp3.scrollViewContainer, children: items1 };
-  items1 = [, , ];
+  const obj2 = { style: tmp3.centerpieceContainer, children: authStore6(tmp13, obj3) };
+  obj3 = { alwaysBounceVertical: false, contentContainerStyle: tmp3.scrollViewContainer, children: items };
+  items = [, , ];
   const obj4 = { style: tmp3.logo, source: tmp6 };
-  items1[0] = closure_21(hasOwnProperty, obj4);
-  const obj5 = { style: items2, lineClamp: num, variant: "display-md", color: "text-overlay-light", maxFontSizeMultiplier: 1, children: intl.string(intl4.t["3S2xmm"]) };
-  items2 = [tmp3.header, typeConsolidationTextTransform];
+  items[0] = closure_21(hasOwnProperty, obj4);
+  const obj5 = { style: items1, lineClamp: num, variant: "display-md", color: "text-overlay-light", maxFontSizeMultiplier: 1, children: intl.string(intl4.t["3S2xmm"]) };
+  items1 = [tmp3.header, typeConsolidationTextTransform];
   num = 2;
-  const Heading = tmp4(4892).Heading;
+  const Heading = tmp4(5086).Heading;
   tmp13 = metroRequire;
   if (tmp2) {
     num = 1;
   }
   intl = tmp4(1126).intl;
-  const items3 = [closure_21(Heading, obj5), , , ];
-  const items4 = [tmp3.subHeader, ];
-  const Text = tmp4(4892).Text;
+  const items2 = [closure_21(Heading, obj5), , , ];
+  const items3 = [tmp3.subHeader, ];
+  const Text = tmp4(5086).Text;
   if (null != invite) {
     subHeaderWithInvite = tmp3.subHeaderWithInvite;
   } else {
     subHeaderWithInvite = null;
   }
-  items4[1] = subHeaderWithInvite;
-  const obj6 = { variant: "text-md/medium", color: "text-overlay-light", style: items4, maxFontSizeMultiplier: 3, children: intl2.string(intl4.t.Gtcthl) };
+  items3[1] = subHeaderWithInvite;
+  const obj6 = { variant: "text-md/medium", color: "text-overlay-light", style: items3, maxFontSizeMultiplier: 3, children: intl2.string(intl4.t.Gtcthl) };
   intl2 = tmp4(1126).intl;
-  items3[1] = closure_21(Text, obj6);
+  items2[1] = closure_21(Text, obj6);
   let tmp10Result = null;
   if (null != invite) {
     const obj7 = { invite };
     tmp10Result = tmp10(closure_25, obj7);
   }
-  items3[2] = tmp10Result;
+  items2[2] = tmp10Result;
   let tmp10Result2 = null;
   if (tmp8) {
     const obj8 = { guildTemplate };
     tmp10Result2 = tmp10(closure_26, obj8);
   }
-  items3[3] = tmp10Result2;
-  items1[1] = afk(React3, { children: items3 });
-  items1[2] = inlineButtons;
+  items2[3] = tmp10Result2;
+  items[1] = authStore6(React3, { children: items2 });
+  items[2] = inlineButtons;
   return closure_21(React3, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Welcome() {
   let displayedInviteCode;
   let items8;
   let stateFromStores;
@@ -834,14 +825,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     const items3 = [AgeGateStore];
-    class M {
+    class H {
       constructor() {
         return underageAnonymous.isUnderageAnonymous();
       }
     }
     cResult[7] = items3;
-    cResult[8] = M;
-    tmp20 = M;
+    cResult[8] = H;
+    tmp20 = H;
     tmp19 = items3;
   } else {
     class N {
@@ -868,7 +859,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     const items4 = [MultiAccountStore];
-    class M {
+    class H {
       constructor() {
         return underageAnonymous.isUnderageAnonymous();
       }
@@ -1215,7 +1206,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[32] = closure_22(tmp(stateFromStores1[40]).ButtonGroup, obj7);
     const tmp53 = closure_22(tmp(stateFromStores1[40]).ButtonGroup, obj7);
   }
-  function te() {
+  function handlePressRegister() {
     const tmp = stateFromStores3;
     if (tmp) {
       navigation.navigate(constants3.AGE_GATE_UNDERAGE, { fromRegister: true });
@@ -1231,8 +1222,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   cResult[21] = stateFromStores3;
   cResult[22] = navigation;
-  cResult[23] = te;
-}) : (() => {
+  cResult[23] = handlePressRegister;
+}) : (function Welcome() {
   let ButtonGroup;
   let bottom;
   let closure_1;

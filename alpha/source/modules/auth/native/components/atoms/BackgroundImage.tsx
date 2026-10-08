@@ -1,12 +1,12 @@
-// Module ID: 6470
-// Function ID: 6471
+// Module ID: 6648
+// Function ID: 6649
 // Name: BackgroundImage
-// Dependencies: [19, 17, 21, 558, 576, 4797, 4735, 6471, 6472, 2]
+// Dependencies: [19, 17, 21, 558, 576, 4991, 4929, 6649, 6650, 2]
 
-// Module 6470 (BackgroundImage)
+// Module 6648 (BackgroundImage)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useThemeDefault from "useTheme" /* 4797 */;
+import useThemeDefault from "useTheme" /* 4991 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -18,10 +18,10 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const shared = tmp(4735);
+const shared = tmp(4929);
 ({ Image: closure_4, View: hasOwnProperty, StyleSheet: metroRequire } = react_native);
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackgroundImage(arg0) {
   let backgroundImageCover;
   let backgroundImageSource;
   let tmp7;
@@ -41,9 +41,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp5Result;
     const tmpResult = shared;
     if (tmpResult.isThemeDark(tmp6)) {
-      tmp5Result = tmp5(6471);
+      tmp5Result = tmp5(6649);
     } else {
-      tmp5Result = tmp5(6472);
+      tmp5Result = tmp5(6650);
     }
     backgroundImageSource = tmp5Result;
   }
@@ -69,14 +69,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = backgroundImageSource;
   cResult[4] = obj4;
   tmp10 = obj4;
-}) : ((backgroundImageSource) => {
+}) : (function BackgroundImage(backgroundImageSource) {
   let closure_2;
   backgroundImageSource = backgroundImageSource.backgroundImageSource;
   let flag = backgroundImageSource.backgroundImageCover;
   if (flag === undefined) {
     flag = false;
   }
-  let tmp = flag(4797)();
+  let tmp = flag(4991)();
   dependencyMap = tmp;
   let items = [backgroundImageSource, flag, tmp];
   let obj2 = {};
@@ -90,9 +90,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp5Result;
       const obj2 = shared;
       if (obj2.isThemeDark(closure_2)) {
-        tmp5Result = tmp5(6471);
+        tmp5Result = tmp5(6649);
       } else {
-        tmp5Result = tmp5(6472);
+        tmp5Result = tmp5(6650);
       }
       tmp = tmp5Result;
     }

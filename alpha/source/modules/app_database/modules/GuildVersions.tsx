@@ -1,15 +1,15 @@
-// Module ID: 7150
-// Function ID: 7151
+// Module ID: 7330
+// Function ID: 7331
 // Name: GuildVersions
-// Dependencies: [32, 5, 2074, 3, 2078, 1375, 2]
+// Dependencies: [32, 5, 2086, 3, 2090, 1387, 2]
 
-// Module 7150 (GuildVersions)
+// Module 7330 (GuildVersions)
 import LoggerDefault from "Logger" /* 3 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2078 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2090 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, closure_3;

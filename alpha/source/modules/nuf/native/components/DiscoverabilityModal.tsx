@@ -1,9 +1,9 @@
-// Module ID: 12431
-// Function ID: 12432
+// Module ID: 12527
+// Function ID: 12528
 // Name: DiscoverabilityModal
-// Dependencies: [19, 17, 12341, 1377, 1085, 21, 4896, 587, 6075, 558, 576, 1490, 504, 12348, 1105, 12368, 12432, 12361, 1260, 6503, 1126, 2]
+// Dependencies: [19, 17, 12437, 1389, 1085, 21, 5090, 587, 6261, 558, 576, 1502, 504, 12444, 1105, 12464, 12528, 12457, 1272, 6679, 1126, 2]
 
-// Module 12431 (DiscoverabilityModal)
+// Module 12527 (DiscoverabilityModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -11,16 +11,16 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl2 from "intl" /* 1126 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import NavigatorConstants from "NavigatorConstants" /* 6075 */;
-import Navigator2 from "Navigator" /* 6503 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 12341 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12348 */;
-import ContactSyncNameInputDefault from "ContactSyncNameInput" /* 12361 */;
-import NUFActionCreators from "NUFActionCreators" /* 12368 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
+import NavigatorConstants from "NavigatorConstants" /* 6261 */;
+import Navigator2 from "Navigator" /* 6679 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 12437 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12444 */;
+import ContactSyncNameInputDefault from "ContactSyncNameInput" /* 12457 */;
+import NUFActionCreators from "NUFActionCreators" /* 12464 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
-import createStyles from "createStyles" /* 4896 */;
+import UserStore from "UserStore" /* 1389 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ let obj = { container: obj2 };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingBottom: 44, paddingTop: NavigatorConstants.NAV_BAR_HEIGHT + 32 };
 let closure_8 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiscoverabilityLandingScene() {
   let allowPhone;
   let tmp5;
   let tmp6;
@@ -128,7 +128,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[6] = stateFromStores;
   cResult[7] = fn2;
   tmp11 = fn2;
-}) : (() => {
+}) : (function DiscoverabilityLandingScene() {
   let allowPhone;
   let obj = navigation(allowPhone[11]);
   navigation = obj.useNavigation();
@@ -167,7 +167,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return jsx(stateFromStores(tmp[16]), { onNext });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiscoverabilityNameScene() {
   let allowPhone;
   let name;
   let tmp5;
@@ -234,7 +234,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[7] = tmp9;
   cResult[8] = tmp14;
   tmp13 = tmp14;
-}) : (() => {
+}) : (function DiscoverabilityNameScene() {
   let allowPhone;
   let name;
   let tmp = closure_8();
@@ -262,7 +262,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return <tmp6 style={tmp.container}>{null}</tmp6>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiscoverabilityModal() {
   let first;
   let tmp5;
   const obj = react2;
@@ -281,7 +281,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const Navigator = tmp(6503).Navigator;
+    const Navigator = tmp(6679).Navigator;
     const intl = tmp(1126).intl;
     const tmp7 = <Navigator screens={first} initialRouteName={ConstantsIOS.DiscoverabilityScenes.LANDING} headerBackTitle={intl.string(intl2.t["13/7kX"])} />;
     cResult[1] = tmp7;
@@ -290,7 +290,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[1];
   }
   return tmp5;
-}) : (() => {
+}) : (function DiscoverabilityModal() {
   const Navigator = Navigator2.Navigator;
   const intl = intl2.intl;
   return <Navigator screens={react.useMemo(() => {

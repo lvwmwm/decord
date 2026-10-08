@@ -1,25 +1,22 @@
-// Module ID: 17120
-// Function ID: 17121
+// Module ID: 17401
+// Function ID: 17402
 // Name: NativeMenuPresenter
-// Dependencies: [19, 9625, 558, 576, 504, 10394, 5787, 2]
+// Dependencies: [9645, 558, 576, 504, 2]
 
-// Module 17120 (NativeMenuPresenter)
-import useBackPressHandlerDefault from "useBackPressHandler" /* 5787 */;
-import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10394 */;
-import react from "react" /* 19 */;
-import NativeMenuStore from "NativeMenuStore" /* 9625 */;
+// Module 17401 (NativeMenuPresenter)
+import react from "react" /* 576 */;
+import NativeMenuStore from "NativeMenuStore" /* 9645 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  let key;
+let tmp;
+const get_initialized = tmp(504);
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MenuContainer() {
   let tmp4;
   let tmp5;
   let tmp6;
-  let tmp9;
-  const tmp = key;
-  let obj = key(576);
-  const cResult = obj.c(5);
+  let obj = react;
+  const cResult = obj.c(3);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [NativeMenuStore];
     const fn = function u() {
@@ -36,60 +33,33 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     [tmp4, tmp5, tmp6] = cResult;
   }
-  const tmpResult = tmp(504);
+  const tmpResult = get_initialized;
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp4, tmp5, tmp6);
-  key = stateFromStoresObject.key;
   const menu = stateFromStoresObject.menu;
-  if (cResult[3] !== key) {
-    const fn2 = function s() {
-      if (null != key) {
-        const obj = NativeMenuActionCreatorsDefault;
-        obj.hideNativeMenu(tmp);
-      }
-      return null != key;
-    };
-    cResult[3] = key;
-    cResult[4] = fn2;
-    tmp9 = fn2;
-  } else {
-    tmp9 = cResult[4];
-  }
-  useBackPressHandlerDefault(tmp9);
-  let tmp11 = null;
-  if (null != key) {
-    tmp11 = null;
+  let tmp9 = null;
+  if (null != stateFromStoresObject.key) {
+    tmp9 = null;
     if (null != menu) {
-      tmp11 = menu;
+      tmp9 = menu;
     }
   }
-  return tmp11;
-}) : (() => {
-  let key;
-  let obj = key(504);
+  return tmp9;
+}) : (function MenuContainer() {
+  let obj = get_initialized;
   const items = [NativeMenuStore];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     const obj = { key: NativeMenuStore.getKey(), menu: NativeMenuStore.getMenu() };
     return obj;
   }, []);
-  key = stateFromStoresObject.key;
   const menu = stateFromStoresObject.menu;
-  const items1 = [key];
-  const callback = react.useCallback(() => {
-    if (null != key) {
-      const obj = NativeMenuActionCreatorsDefault;
-      obj.hideNativeMenu(tmp);
-    }
-    return null != key;
-  }, items1);
-  useBackPressHandlerDefault(callback);
-  let tmp4 = null;
-  if (null != key) {
-    tmp4 = null;
+  let tmp2 = null;
+  if (null != stateFromStoresObject.key) {
+    tmp2 = null;
     if (null != menu) {
-      tmp4 = menu;
+      tmp2 = menu;
     }
   }
-  return tmp4;
+  return tmp2;
 });
 const result = size.fileFinishedImporting("modules/native_menu/native/NativeMenuPresenter.tsx");
 

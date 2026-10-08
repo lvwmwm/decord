@@ -1,22 +1,22 @@
-// Module ID: 15887
-// Function ID: 15888
+// Module ID: 16146
+// Function ID: 16147
 // Name: AnimatedKeyboardProviderController
-// Dependencies: [19, 21, 4618, 558, 576, 1632, 2]
+// Dependencies: [19, 21, 4810, 558, 576, 1644, 2]
 
-// Module 15887 (AnimatedKeyboardProviderController)
+// Module 16146 (AnimatedKeyboardProviderController)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 4618 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 4810 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let children, set;
+let set;
 
 let c2;
 let c3;
 let tmp;
-const KeyboardChatScrollView = tmp(1632);
+const KeyboardChatScrollView = tmp(1644);
 ({ jsx: c2, jsxs: c3 } = Fragment);
 let ReanimatedRexport = ReanimatedRexport_mod;
 const mutable = ReanimatedRexport.makeMutable(0);
@@ -30,7 +30,7 @@ const __initData4 = { code: "function AnimatedKeyboardProviderControllerTsx4(e){
 const __initData5 = { code: "function AnimatedKeyboardProviderControllerTsx5(e_0){const{animatedKeyboardHeight}=this.__closure;animatedKeyboardHeight.set(e_0.height);}" };
 const __initData6 = { code: "function AnimatedKeyboardProviderControllerTsx6(e_1){const{animatedKeyboardState,KeyboardState,animatedKeyboardHeight}=this.__closure;animatedKeyboardState.set(e_1.height===0?KeyboardState.CLOSED:KeyboardState.OPEN);animatedKeyboardHeight.set(e_1.height);}" };
 const memo = react.memo;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Component(children) {
   let first;
   let items;
   let tmp8;
@@ -55,7 +55,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     tmp8 = cResult[2];
   }
   return tmp8;
-}) : ((children) => {
+}) : (function Component(children) {
   let items;
   const obj = { enabled: true, navigationBarTranslucent: true, preserveEdgeToEdge: true, statusBarTranslucent: true, children: items };
   items = [children.children, ];
@@ -64,7 +64,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   return _false(KeyboardProvider, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ComponentInner() {
   let fn;
   let fn2;
   let fn3;
@@ -121,7 +121,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult = KeyboardChatScrollView;
   tmpResult.useKeyboardHandler(tmp4, tmp5);
   return null;
-}) : (() => {
+}) : (function ComponentInner() {
   let fn;
   let fn2;
   let fn3;

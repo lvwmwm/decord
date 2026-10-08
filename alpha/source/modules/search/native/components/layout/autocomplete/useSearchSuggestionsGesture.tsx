@@ -1,12 +1,12 @@
-// Module ID: 16810
-// Function ID: 16811
+// Module ID: 17089
+// Function ID: 17090
 // Name: useSearchSuggestionsGesture
-// Dependencies: [19, 558, 576, 4618, 11980, 6147, 2]
+// Dependencies: [19, 558, 576, 4810, 12053, 6326, 2]
 
-// Module 16810 (useSearchSuggestionsGesture)
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6147 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11980 */;
+// Module 17089 (useSearchSuggestionsGesture)
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6326 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12053 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -30,9 +30,9 @@ function containsPoint(arg0, arg1, arg2) {
 containsPoint.__closure = {};
 containsPoint.__workletHash = 11759746841411;
 containsPoint.__initData = { code: "function containsPoint_useSearchSuggestionsGestureTsx2(rect,x,y){return rect.x<x&&x<rect.x+rect.width&&rect.y<y&&y<rect.y+rect.height;}" };
-const __initData = { code: "function useSearchSuggestionsGestureTsx3(e,manager){const{suggestionsMounted,measure,suggestionsRef,detectorRef,measureRelativeTo,containsPoint,dismissed}=this.__closure;manager.fail();const touch=e.allTouches[0];if(touch==null){return;}if(!suggestionsMounted.get()){return;}const suggestions=measure(suggestionsRef);if(suggestions==null){return;}const detector=measure(detectorRef);if(detector==null){return;}const card=measureRelativeTo(suggestions,detector);if(containsPoint(card,touch.x,touch.y)){return;}dismissed.set(true);}" };
+let closure_7 = { code: "function useSearchSuggestionsGestureTsx3(e,manager){const{suggestionsMounted,measure,suggestionsRef,detectorRef,measureRelativeTo,containsPoint,dismissed}=this.__closure;manager.fail();const touch=e.allTouches[0];if(touch==null){return;}if(!suggestionsMounted.get()){return;}const suggestions=measure(suggestionsRef);if(suggestions==null){return;}const detector=measure(detectorRef);if(detector==null){return;}const card=measureRelativeTo(suggestions,detector);if(containsPoint(card,touch.x,touch.y)){return;}dismissed.set(true);}" };
 let closure_8 = { code: "function useSearchSuggestionsGestureTsx4(e,manager){const{suggestionsMounted,measure,suggestionsRef,detectorRef,measureRelativeTo,containsPoint,dismissed}=this.__closure;manager.fail();const touch=e.allTouches[0];if(touch==null)return;if(!suggestionsMounted.get())return;const suggestions=measure(suggestionsRef);if(suggestions==null)return;const detector=measure(detectorRef);if(detector==null)return;const card=measureRelativeTo(suggestions,detector);if(containsPoint(card,touch.x,touch.y))return;dismissed.set(true);}" };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSearchSuggestionsContext() {
   context = react.useContext(context);
   if (null == context) {
     const _Error = Error;
@@ -43,7 +43,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   } else {
     return context;
   }
-}) : (function() {
+}) : (function useSearchSuggestionsContext() {
   context = react.useContext(context);
   if (null == context) {
     const _Error = Error;
@@ -56,7 +56,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSearchSuggestionsGesture(arg0) {
   let closure_0;
   let closure_5;
   let sharedValue1;
@@ -123,7 +123,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 }
               }
               const obj6 = { suggestionsRef: animatedRef1, suggestionsMounted: sharedValue1, dismissed: sharedValue, setDismissed: tmp19 };
-              class S {
+              class R {
                 constructor(arg0, fail) {
                   let x;
                   let y;
@@ -135,7 +135,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       const measureResult = obj.measure(animatedRef1);
                       const tmp3 = require;
                       if (null != measureResult) {
-                        const tmp3Result = tmp3(4618);
+                        const tmp3Result = tmp3(4810);
                         const measureResult1 = tmp3Result.measure(animatedRef);
                         if (null != measureResult1) {
                           if (typeof measureRelativeTo === "function") {
@@ -170,7 +170,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const Gesture = tmp(tmp2[5]).Gesture;
         const ManualResult = Gesture.Manual();
         const manualActivationResult = ManualResult.manualActivation(true);
-        class S {
+        class R {
           constructor(arg0, fail) {
             let x;
             let y;
@@ -182,7 +182,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 const measureResult = obj.measure(animatedRef1);
                 const tmp3 = require;
                 if (null != measureResult) {
-                  const tmp3Result = tmp3(4618);
+                  const tmp3Result = tmp3(4810);
                   const measureResult1 = tmp3Result.measure(animatedRef);
                   if (null != measureResult1) {
                     if (typeof measureRelativeTo === "function") {
@@ -207,11 +207,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         const onTouchesDown = manualActivationResult.onTouchesDown;
-        S.__closure = { suggestionsMounted: sharedValue1, measure: require("ReanimatedRexport").measure, suggestionsRef: animatedRef1, detectorRef: animatedRef, measureRelativeTo, containsPoint, dismissed: sharedValue };
-        S.__workletHash = 4841283826141;
-        S.__initData = __initData;
+        R.__closure = { suggestionsMounted: sharedValue1, measure: require("ReanimatedRexport").measure, suggestionsRef: animatedRef1, detectorRef: animatedRef, measureRelativeTo, containsPoint, dismissed: sharedValue };
+        R.__workletHash = 4841283826141;
         const obj7 = { suggestionsMounted: sharedValue1, measure: require("ReanimatedRexport").measure, suggestionsRef: animatedRef1, detectorRef: animatedRef, measureRelativeTo, containsPoint, dismissed: sharedValue };
-        const onTouchesDownResult = onTouchesDown(S);
+        class S {
+          constructor() {
+            const obj = SearchPlatformUtilsDefault;
+            return obj.subscribeTextInputValue(closure_0, closure_5);
+          }
+        }
+        const onTouchesDownResult = onTouchesDown(R);
         cResult[9] = animatedRef;
         cResult[10] = sharedValue;
         cResult[11] = sharedValue1;
@@ -226,15 +231,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[8] = items;
     tmp10 = items;
   }
-  const fn2 = function _() {
-    const obj = SearchPlatformUtilsDefault;
-    return obj.subscribeTextInputValue(closure_0, closure_5);
-  };
+  class S {
+    constructor() {
+      const obj = SearchPlatformUtilsDefault;
+      return obj.subscribeTextInputValue(closure_0, closure_5);
+    }
+  }
   cResult[2] = arg0;
   cResult[3] = tmp8;
-  cResult[4] = fn2;
-  tmp9 = fn2;
-}) : ((arg0) => {
+  cResult[4] = S;
+  tmp9 = S;
+}) : (function useSearchSuggestionsGesture(arg0) {
   let closure_0;
   let sharedValue1;
   _require = arg0;

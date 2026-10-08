@@ -1,20 +1,20 @@
-// Module ID: 5579
-// Function ID: 5580
+// Module ID: 5889
+// Function ID: 5890
 // Name: StageChannelPermissionUtils
-// Dependencies: [4516, 2070, 502, 2051, 2074, 4515, 2056, 1085, 1097, 4520, 2060, 558, 576, 504, 2]
+// Dependencies: [4708, 2082, 502, 2063, 2086, 4707, 2068, 1085, 1097, 4712, 2072, 558, 576, 504, 2]
 // Exports: canLurkerListen, createModeratorOverwrite, createOrUpdateModeratorOverwrite, isEmptyOverwrite, removeModeratorOverwrite
 
-// Module 5579 (StageChannelPermissionUtils)
+// Module 5889 (StageChannelPermissionUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import StageChannelPermissions from "StageChannelPermissions" /* 2060 */;
-import GuildRecord from "GuildRecord" /* 2070 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4520 */;
-import LurkingStore from "LurkingStore" /* 4516 */;
+import StageChannelPermissions from "StageChannelPermissions" /* 2072 */;
+import GuildRecord from "GuildRecord" /* 2082 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4712 */;
+import LurkingStore from "LurkingStore" /* 4708 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import StageInstanceStore from "StageInstanceStore" /* 2056 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import StageInstanceStore from "StageInstanceStore" /* 2068 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ let unpackModuleId;
 const isGuildOwner = GuildRecord.isGuildOwner;
 ({ GuildFeatures: c10, Permissions: unpackModuleId } = Constants);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanCreateStageChannelByGuild(arg0) {
   let closure_0;
   let first;
   let tmp8;
@@ -46,7 +46,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    class E {
+    class S {
       constructor() {
         id = closure_5.getId();
         guild = closure_7.getGuild(closure_0);
@@ -73,12 +73,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const items1 = [arg0];
     cResult[1] = arg0;
-    cResult[2] = E;
+    cResult[2] = S;
     cResult[3] = items1;
     tmp9 = items1;
-    tmp8 = E;
+    tmp8 = S;
   } else {
-    class E {
+    class S {
       constructor() {
         id = closure_5.getId();
         guild = closure_7.getGuild(closure_0);
@@ -107,7 +107,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp8, tmp9);
-}) : ((arg0) => {
+}) : (function useCanCreateStageChannelByGuild(arg0) {
   let closure_0;
   _require = arg0;
   const items = [PermissionStore, AuthenticationStore, GuildStore];
@@ -130,7 +130,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanUpdateStageChannelModerators(arg0) {
   let closure_0;
   let first;
   let tmp8;
@@ -181,7 +181,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp8, tmp9);
-}) : ((arg0) => {
+}) : (function useCanUpdateStageChannelModerators(arg0) {
   let closure_0;
   _require = arg0;
   const items = [PermissionStore, GuildStore, ChannelStore];
@@ -208,7 +208,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanModerateRequestToSpeak(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -241,7 +241,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : ((arg0) => {
+}) : (function useCanModerateRequestToSpeak(arg0) {
   let closure_0;
   _require = arg0;
   const items = [ChannelStore, PermissionStore];
@@ -265,7 +265,7 @@ function createOrUpdateModeratorOverwrite(id, type, deny) {
     deny = deny.deny;
   }
   if (deny == null) {
-    deny = tmp(4520).NONE;
+    deny = tmp(4712).NONE;
   }
   combine = BigFlagUtilsAll.combine;
   allow = undefined;
@@ -275,7 +275,7 @@ function createOrUpdateModeratorOverwrite(id, type, deny) {
     allow = deny.allow;
   }
   if (allow == null) {
-    allow = tmp(4520).NONE;
+    allow = tmp(4712).NONE;
   }
   return obj;
 }
@@ -299,7 +299,7 @@ export const createModeratorOverwrite = function createModeratorOverwrite(id, ME
     deny = tmp.deny;
   }
   if (deny == null) {
-    deny = tmp2(4520).NONE;
+    deny = tmp2(4712).NONE;
   }
   combine = BigFlagUtilsAll.combine;
   allow = undefined;
@@ -309,7 +309,7 @@ export const createModeratorOverwrite = function createModeratorOverwrite(id, ME
     allow = tmp.allow;
   }
   if (allow == null) {
-    allow = tmp2(4520).NONE;
+    allow = tmp2(4712).NONE;
   }
   return obj;
 };
@@ -349,7 +349,7 @@ export const isEmptyOverwrite = function isEmptyOverwrite(arg0) {
   let equalsResult = obj.equals(allow, PermissionUtilsAll.NONE);
   if (equalsResult) {
     const tmpResult = BigFlagUtilsAll;
-    equalsResult = tmpResult.equals(deny, tmp(4520).NONE);
+    equalsResult = tmpResult.equals(deny, tmp(4712).NONE);
   }
   return equalsResult;
 };

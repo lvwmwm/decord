@@ -1,18 +1,18 @@
-// Module ID: 18117
-// Function ID: 18118
+// Module ID: 18404
+// Function ID: 18405
 // Name: AgeVerificationScreen
-// Dependencies: [19, 17, 1377, 1085, 21, 4896, 558, 576, 1266, 18110, 504, 18104, 8300, 1985, 8119, 8130, 1126, 2815, 3073, 8117, 2115, 6089, 14292, 4892, 8302, 18113, 2]
+// Dependencies: [19, 17, 1389, 1085, 21, 5090, 558, 576, 1278, 18397, 504, 18391, 7683, 1997, 5915, 7508, 1126, 2859, 3117, 7492, 2127, 5936, 14116, 5086, 7685, 18400, 2]
 
-// Module 18117 (AgeVerificationScreen)
+// Module 18404 (AgeVerificationScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import Server from "Server" /* 1985 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8119 */;
-import types from "types" /* 18104 */;
+import Server from "Server" /* 1997 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5915 */;
+import types from "types" /* 18391 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
-import createStyles from "createStyles" /* 4896 */;
+import UserStore from "UserStore" /* 1389 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ const Pressable = react_native.Pressable;
 const HelpdeskArticles = Constants.HelpdeskArticles;
 const jsx = Fragment.jsx;
 let closure_8 = createStyles.createStyles({ helpLink: { textAlign: "center" } });
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificationScreen() {
   let ageVerificationMethods;
   let currentUser;
   let first;
@@ -349,7 +349,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[6] = onTaskComplete;
   cResult[7] = V;
   tmp17 = V;
-}) : (() => {
+}) : (function AgeVerificationScreen() {
   let ageVerificationMethods;
   let currentUser;
   let intl3;

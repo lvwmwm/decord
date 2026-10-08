@@ -1,12 +1,12 @@
-// Module ID: 6904
-// Function ID: 6905
+// Module ID: 7093
+// Function ID: 7094
 // Name: useSelectedDismissibleContentShared
-// Dependencies: [19, 2039, 2048, 558, 576, 2040, 2041, 2]
+// Dependencies: [19, 2051, 2060, 558, 576, 2052, 2054, 2]
 
-// Module 6904 (useSelectedDismissibleContentShared)
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+// Module 7093 (useSelectedDismissibleContentShared)
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
 import react_mod from "react" /* 19 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 2039 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 2051 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let _require, dependencyMap, lastDismissed;
 
 let react = react_mod;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedDismissibleContentShared(arg0, arg1, arg2, arg3) {
   let closure_0;
   let closure_1;
   let closure_2;
@@ -42,17 +42,17 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
             tmp8 = cResult[8];
           }
           const effect = react.useEffect(tmp7, tmp8);
-          class D {
+          class T {
             constructor() {
-              return () => { /* body not rendered: F138000 */ };
+              return () => { /* body not rendered: F139382 */ };
             }
           }
         }
       }
     }
-    class D {
+    class T {
       constructor() {
-        return () => { /* body not rendered: F138000 */ };
+        return () => { /* body not rendered: F139382 */ };
       }
     }
     const items = [tmp5, arg1, arg0, arg3];
@@ -60,21 +60,21 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
     cResult[4] = arg1;
     cResult[5] = tmp5;
     cResult[6] = arg0;
-    cResult[7] = D;
+    cResult[7] = T;
     cResult[8] = items;
     tmp8 = items;
-    tmp7 = D;
+    tmp7 = T;
   }
   let tmp6 = null != arg0 && !tmp4;
   if (tmp6) {
-    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = tmp(2040).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
+    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = tmp(2052).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
     tmp6 = !CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(arg0);
   }
   cResult[0] = undefined !== arg2 && arg2;
   cResult[1] = arg0;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((arg0, arg1) => {
+}) : (function useSelectedDismissibleContentShared(arg0, arg1) {
   let closure_0;
   let closure_1;
   let closure_2;

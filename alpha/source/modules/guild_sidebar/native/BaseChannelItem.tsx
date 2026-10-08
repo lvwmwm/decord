@@ -1,24 +1,24 @@
-// Module ID: 12031
-// Function ID: 12032
+// Module ID: 12104
+// Function ID: 12105
 // Name: BaseChannelItem
-// Dependencies: [109, 19, 17, 11711, 5078, 21, 4896, 587, 558, 576, 1370, 4892, 1188, 12032, 8602, 12033, 2]
+// Dependencies: [109, 19, 17, 11776, 5972, 21, 5090, 587, 558, 576, 1382, 5086, 1200, 12105, 8517, 12106, 2]
 // Exports: getChannelSubtitleTextProps, useChannelNameTextProps
 
-// Module 12031 (BaseChannelItem)
+// Module 12104 (BaseChannelItem)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1370 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import ReadStateConstants from "ReadStateConstants" /* 5078 */;
-import StaticChannelIndicatorDefault from "StaticChannelIndicator" /* 12032 */;
-import TouchableBackgroundDefault from "TouchableBackground" /* 12033 */;
+import native from "native" /* 1200 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import ReadStateConstants from "ReadStateConstants" /* 5972 */;
+import StaticChannelIndicatorDefault from "StaticChannelIndicator" /* 12105 */;
+import TouchableBackgroundDefault from "TouchableBackground" /* 12106 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11711 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11776 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let metroImportAll;
 let metroImportDefault;
 let tmp;
 let unpackModuleId;
-const native2 = tmp(8602);
+const native2 = tmp(8517);
 let closure_3 = ["icon", "name", "mode", "hideIcon", "disableHighlightOnPress", "channelInfo", "children", "unread"];
 const View = react_native.View;
 ({ CHANNEL_SUBTITLE_TEXT_VARIANT: metroImportDefault, CHANNEL_TITLE_LINE_HEIGHT: metroImportAll } = RedesignChannelListConstants);
@@ -62,7 +62,7 @@ let closure_12 = createStyles.createStyles((arg0) => {
 });
 const ChannelModes = { SELECTED: "Selected", LOCKED: "Locked", MUTED: "Muted", RELEVANT: "Relevant", UNREAD_LESS_IMPORTANT: "UnreadLessImportant", UNREAD_IMPORTANT: "UnreadImportant", DEFAULT: "Default" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseChannelSubtitle(arg0) {
   let mode;
   let subtitle;
   let tmp4;
@@ -109,7 +109,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj4 = { experimental_useNativeText: tmp9, lineClamp: 1, children: subtitle };
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     const merged = Object.assign(tmp4);
     const tmp17 = authStore(Text, obj4);
     cResult[4] = tmp4;
@@ -119,7 +119,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp12 = tmp17;
   }
   return tmp8;
-}) : ((arg0) => {
+}) : (function BaseChannelSubtitle(arg0) {
   let mode;
   let obj;
   let subtitle;
@@ -146,7 +146,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_14 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseChannelIcon(arg0) {
   let IconComponent;
   let disableColor;
   let isChannelLive;
@@ -212,7 +212,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     tmp15Result = tmp15(IconComponent, obj2);
                   } else {
                     const obj3 = { disableColor, size: native.Icon.Sizes.CUSTOM, style: tmp8, source };
-                    const Icon = tmp(1188).Icon;
+                    const Icon = tmp(1200).Icon;
                     tmp15Result = authStore(Icon, obj3);
                   }
                   cResult[10] = IconComponent;
@@ -264,7 +264,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = mode === obj.UNREAD_IMPORTANT;
   cResult[9] = items;
   tmp8 = items;
-}) : ((arg0) => {
+}) : (function BaseChannelIcon(arg0) {
   let IconComponent;
   let disableColor;
   let isChannelLive;
@@ -322,7 +322,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp11Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseChannelName(arg0) {
   let items;
   let mode;
   let name;
@@ -402,7 +402,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp7 = items1;
   }
   obj2 = { variant: "text-md/semibold", color: "redesign-channel-name-text" };
-}) : ((mode) => {
+}) : (function BaseChannelName(mode) {
   let items;
   let name;
   let subtitle;
@@ -436,7 +436,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj2 = { variant: "text-md/semibold", color: "redesign-channel-name-text" };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseChannelItem(arg0) {
   let ALL_MESSAGES;
   let channelInfo;
   let children;
@@ -590,7 +590,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[12] = rowSelected;
   cResult[13] = items2;
   tmp21 = items2;
-}) : ((mode) => {
+}) : (function BaseChannelItem(mode) {
   let ALL_MESSAGES;
   let AnimatedPressableHighlight;
   let channel;
@@ -628,7 +628,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (!hideIcon) {
     const obj2 = { style: tmp2.unreadIndicator, unread, resolvedUnreadSetting: ALL_MESSAGES };
     const tmp6 = closure_10;
-    const tmp9 = hideIcon(12032);
+    const tmp9 = hideIcon(12105);
     if (mode === obj.UNREAD_LESS_IMPORTANT) {
       ALL_MESSAGES = UnreadSetting.ONLY_MENTIONS;
     } else {
@@ -639,9 +639,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items1 = [tmp6Result, !hideIcon && icon, name, channelInfo];
   const tmp3Result = closure_11(tmp4, obj);
   if (flag) {
-    AnimatedPressableHighlight = hideIcon(12033);
+    AnimatedPressableHighlight = hideIcon(12106);
   } else {
-    AnimatedPressableHighlight = mode(8602).AnimatedPressableHighlight;
+    AnimatedPressableHighlight = mode(8517).AnimatedPressableHighlight;
   }
   const obj3 = { children: items2 };
   const merged1 = Object.assign(merged);

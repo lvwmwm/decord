@@ -1,19 +1,19 @@
-// Module ID: 16904
-// Function ID: 16905
+// Module ID: 17185
+// Function ID: 17186
 // Name: useSearchMessages
-// Dependencies: [6794, 11994, 558, 576, 11987, 504, 2]
+// Dependencies: [6067, 12067, 558, 576, 12060, 504, 2]
 
-// Module 16904 (useSearchMessages)
-import SearchUtils from "SearchUtils" /* 11987 */;
-import SearchMessageStore from "SearchMessageStore" /* 6794 */;
-import SearchQueryStore from "SearchQueryStore" /* 11994 */;
+// Module 17185 (useSearchMessages)
+import SearchUtils from "SearchUtils" /* 12060 */;
+import SearchMessageStore from "SearchMessageStore" /* 6067 */;
+import SearchQueryStore from "SearchQueryStore" /* 12067 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSearchMessages(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -39,7 +39,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     const tmpResult = tmp(504);
     return tmpResult.useStateFromStores(first, tmp7, tmp8);
   }
-  const fn = function u() {
+  const fn = function o() {
     const searchResultsQuery = SearchQueryStore.getSearchResultsQuery(closure_0);
     const obj = SearchUtils;
     return SearchMessageStore.getMessages(obj.getSearchTabFetchId(closure_0, closure_1, searchResultsQuery));
@@ -51,7 +51,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = items1;
   tmp8 = items1;
   tmp7 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useSearchMessages(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;

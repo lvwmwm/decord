@@ -1,25 +1,25 @@
-// Module ID: 15167
-// Function ID: 15168
+// Module ID: 15429
+// Function ID: 15430
 // Name: OfficialMessageStyleSetting
-// Dependencies: [19, 4885, 7645, 558, 576, 504, 14295, 1126, 11142, 2]
+// Dependencies: [19, 5079, 7966, 558, 576, 504, 14520, 1126, 11262, 2]
 // Exports: onOfficialMessageStyleSettingValueChange
 
-// Module 15167 (OfficialMessageStyleSetting)
+// Module 15429 (OfficialMessageStyleSetting)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14295 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14520 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOfficialMessageStyleSettingValue() {
   let officialMessageStyle;
   let tmp4;
   let tmp5;
@@ -39,14 +39,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useOfficialMessageStyleSettingValue() {
   let officialMessageStyle;
   const items = [AccessibilityStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => officialMessageStyle.officialMessageStyle);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOfficialMessageStyleSettingOptions() {
   let first;
   let intl;
   let intl2;
@@ -73,25 +73,27 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => react.useMemo(() => {
-  let intl;
-  let intl2;
-  let intl3;
-  let intl4;
-  const obj = { label: intl.string(intl5.t.ERaS6f), value: "default" };
-  intl = intl5.intl;
-  const items = [obj, , , ];
-  const obj2 = { label: intl2.string(intl5.t.JKfipk), value: "no_text_color" };
-  intl2 = intl5.intl;
-  items[1] = obj2;
-  const obj3 = { label: intl3.string(intl5.t.O2vBoY), value: "no_gradient" };
-  intl3 = intl5.intl;
-  items[2] = obj3;
-  const obj4 = { label: intl4.string(intl5.t["+loyQl"]), value: "hidden" };
-  intl4 = intl5.intl;
-  items[3] = obj4;
-  return items;
-}, []));
+}) : (function useOfficialMessageStyleSettingOptions() {
+  return react.useMemo(() => {
+    let intl;
+    let intl2;
+    let intl3;
+    let intl4;
+    const obj = { label: intl.string(intl5.t.ERaS6f), value: "default" };
+    intl = intl5.intl;
+    const items = [obj, , , ];
+    const obj2 = { label: intl2.string(intl5.t.JKfipk), value: "no_text_color" };
+    intl2 = intl5.intl;
+    items[1] = obj2;
+    const obj3 = { label: intl3.string(intl5.t.O2vBoY), value: "no_gradient" };
+    intl3 = intl5.intl;
+    items[2] = obj3;
+    const obj4 = { label: intl4.string(intl5.t["+loyQl"]), value: "hidden" };
+    intl4 = intl5.intl;
+    items[3] = obj4;
+    return items;
+  }, []);
+});
 function onOfficialMessageStyleSettingValueChange(officialMessageStyle) {
   const obj = AccessibilityActionCreators;
   const result = obj.setOfficialMessageStyle(officialMessageStyle);

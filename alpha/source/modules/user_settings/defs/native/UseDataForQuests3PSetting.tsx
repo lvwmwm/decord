@@ -1,24 +1,24 @@
-// Module ID: 15804
-// Function ID: 15805
+// Module ID: 16062
+// Function ID: 16063
 // Name: UseDataForQuests3PSetting
-// Dependencies: [7645, 558, 2028, 15802, 14641, 11142, 1126, 15803, 2]
+// Dependencies: [7966, 558, 2040, 16060, 14902, 11262, 1126, 16061, 2]
 
-// Module 15804 (UseDataForQuests3PSetting)
+// Module 16062 (UseDataForQuests3PSetting)
 import intl2 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14641 */;
-import useAdPersonalizationTogglesDisabled from "useAdPersonalizationTogglesDisabled" /* 15802 */;
-import AdTopicOptOutClientExperiment from "AdTopicOptOutClientExperiment" /* 15803 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14902 */;
+import useAdPersonalizationTogglesDisabled from "useAdPersonalizationTogglesDisabled" /* 16060 */;
+import AdTopicOptOutClientExperiment from "AdTopicOptOutClientExperiment" /* 16061 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11142 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDataToSupportQuests3PSettingIsDisabled() {
   const obj = useAdPersonalizationTogglesDisabled;
   let adPersonalizationTogglesDisabled = obj.useAdPersonalizationTogglesDisabled();
   const DropsOptedOut = UserSettings.DropsOptedOut;
@@ -32,7 +32,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     adPersonalizationTogglesDisabled = isParentallyControlled;
   }
   return adPersonalizationTogglesDisabled;
-}) : (() => {
+}) : (function useDataToSupportQuests3PSettingIsDisabled() {
   const obj = useAdPersonalizationTogglesDisabled;
   let adPersonalizationTogglesDisabled = obj.useAdPersonalizationTogglesDisabled();
   const DropsOptedOut = UserSettings.DropsOptedOut;
@@ -51,10 +51,10 @@ function onDataToSupportQuests3PSettingValueChange(arg0) {
   const Quests3PDataOptedOut = UserSettings.Quests3PDataOptedOut;
   Quests3PDataOptedOut.updateSetting(!arg0);
 }
-const fn = () => {
+function useDataToSupportQuests3PSettingValue() {
   const Quests3PDataOptedOut = UserSettings.Quests3PDataOptedOut;
   return !Quests3PDataOptedOut.useSetting();
-};
+}
 let SettingBuilders = SettingBuilders_mod;
 let obj = {
   useTitle() {
@@ -66,7 +66,7 @@ let obj = {
     const obj = AdTopicOptOutClientExperiment;
     return !obj.useIsAdTopicOptOutClientEnabled();
   },
-  useValue: fn,
+  useValue: useDataToSupportQuests3PSettingValue,
   onValueChange: onDataToSupportQuests3PSettingValueChange,
   useIsDisabled: tmp3
 };
@@ -79,7 +79,7 @@ let obj2 = {
   },
   parent: MobileUserSettings.SPONSORED_CONTENT_PREFERENCES,
   usePredicate: AdTopicOptOutClientExperiment.useIsAdTopicOptOutClientEnabled,
-  useValue: fn,
+  useValue: useDataToSupportQuests3PSettingValue,
   onValueChange: onDataToSupportQuests3PSettingValueChange,
   useIsDisabled: tmp3
 };

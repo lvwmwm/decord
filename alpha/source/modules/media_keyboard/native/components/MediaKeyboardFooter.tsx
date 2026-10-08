@@ -1,19 +1,19 @@
-// Module ID: 10399
-// Function ID: 10400
+// Module ID: 9996
+// Function ID: 9997
 // Name: MediaKeyboardFooter
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 10388, 1126, 4892, 5601, 10400, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 9985, 1126, 5086, 5375, 9997, 2]
 
-// Module 10399 (MediaKeyboardFooter)
+// Module 9996 (MediaKeyboardFooter)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import DeviceMediaDefault from "DeviceMedia" /* 10388 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import DeviceMediaDefault from "DeviceMedia" /* 9985 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp5;
-const AssetRegistryDefault = tmp5(10400);
+const AssetRegistryDefault = tmp5(9997);
 ({ View: c3, Image: closure_4, ActivityIndicator: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -36,7 +36,7 @@ createStyles = createStyles.createStyles;
 obj3 = { marginBottom: nativeDefault.space.PX_32, height: nativeDefault.space.PX_48 };
 obj4 = { color: nativeDefault.colors.BACKGROUND_SURFACE_HIGHEST, margin: nativeDefault.space.PX_16 };
 let closure_8 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MediaKeyboardFooter(arg0) {
   let container;
   let disabled;
   let items;
@@ -144,7 +144,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     }
     return tmp6;
   }
-}) : ((arg0) => {
+}) : (function MediaKeyboardFooter(arg0) {
   let Button;
   let disabled;
   let intl;

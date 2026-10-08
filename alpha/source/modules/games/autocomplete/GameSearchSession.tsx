@@ -1,18 +1,18 @@
-// Module ID: 8600
-// Function ID: 8601
+// Module ID: 8684
+// Function ID: 8685
 // Name: GameSearchSession
-// Dependencies: [1085, 5900, 5901, 1252, 2]
+// Dependencies: [1085, 8212, 1264, 2]
 // Exports: getGameSearchSession
 
-// Module 8600 (GameSearchSession)
+// Module 8684 (GameSearchSession)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 5901 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8212 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const AnalyticsUtils = tmp(1252);
-const f97796 = (id) => id.id;
+const AnalyticsUtils = tmp(1264);
+const f98829 = (id) => id.id;
 function onQuery(c2) {
   let tmpResult;
   const obj = GameAutocompleteUtils;
@@ -45,12 +45,8 @@ function onQuery(c2) {
 }
 const AnalyticEvents = Constants.AnalyticEvents;
 class GameSearchSession {
-  constructor(surface, DEFAULT) {
-    let obj;
-    if (DEFAULT === undefined) {
-      DEFAULT = obj(5900).GameAutocompleteProfile.DEFAULT;
-    }
-    obj = Object.create(new.target.prototype);
+  constructor(surface, filterGroup) {
+    const obj = Object.create(new.target.prototype);
     obj.state = null;
     obj.selectedQuery = null;
     obj.onQuery = onQuery;
@@ -117,8 +113,8 @@ class GameSearchSession {
             }
           }
           obj2.selectedQuery = normalizeGameAutocompleteQuery(name);
-          const obj = { search_session_id: state.id, surface: null, profile: null, query: state.query, query_length: state.query.length, results_query: query, results_stale: query1 !== state.query, game_id, result_index: num, num_results: num2, result_game_ids: substr.map(f97796), num_result_sets: null, selection_number: null, ms_since_session_start: timestamp - state.startedAt };
-          ({ surface: obj.surface, profile: obj.profile } = obj2);
+          const obj = { search_session_id: state.id, surface: null, filter_group: null, query: state.query, query_length: state.query.length, results_query: query, results_stale: query1 !== state.query, game_id, result_index: num, num_results: num2, result_game_ids: substr.map(f98829), num_result_sets: null, selection_number: null, ms_since_session_start: timestamp - state.startedAt };
+          ({ surface: obj.surface, filterGroup: obj.filter_group } = obj2);
           query = undefined;
           const track = AnalyticsUtilsDefault.track;
           const GAME_SEARCH_RESULT_SELECTED = AnalyticEvents.GAME_SEARCH_RESULT_SELECTED;
@@ -157,7 +153,7 @@ class GameSearchSession {
       obj2.endAt(Date.now());
     };
     obj.surface = surface;
-    obj.profile = DEFAULT;
+    obj.filterGroup = filterGroup;
     return obj;
   }
   endAt(lastActivityAt) {
@@ -169,8 +165,8 @@ class GameSearchSession {
     this.state = null;
     this.selectedQuery = null;
     if (null != state) {
-      const obj = { search_session_id: state.id, surface: null, profile: null, query: state.lastQuery, query_length: state.lastQuery.length, max_query_length: null, results_query: query, num_results: num, result_game_ids: substr.map(f97796), saw_any_results: null, num_result_sets: null, num_selections: null, duration_ms: lastActivityAt - state.startedAt };
-      ({ surface: obj.surface, profile: obj.profile } = this);
+      const obj = { search_session_id: state.id, surface: null, filter_group: null, query: state.lastQuery, query_length: state.lastQuery.length, max_query_length: null, results_query: query, num_results: num, result_game_ids: substr.map(f98829), saw_any_results: null, num_result_sets: null, num_selections: null, duration_ms: lastActivityAt - state.startedAt };
+      ({ surface: obj.surface, filterGroup: obj.filter_group } = this);
       ({ maxQueryLength: obj.max_query_length, displayed: displayed3 } = state);
       query = undefined;
       const track = AnalyticsUtilsDefault.track;
@@ -210,17 +206,14 @@ let result = size.fileFinishedImporting("modules/games/autocomplete/GameSearchSe
 
 export const GAME_SEARCH_SESSION_IDLE_MS = 60000;
 export { GameSearchSession };
-export const getGameSearchSession = function getGameSearchSession(CHAT_MENTION) {
-  let obj2;
+export const getGameSearchSession = function getGameSearchSession(CHAT_MENTION, DEFAULT) {
   let obj = map;
   let value = map.get(CHAT_MENTION);
   if (null == value) {
     const self = this;
     if (typeof GameSearchSession === "function") {
-      let tmp2 = obj2;
-      let tmp3 = dependencyMap;
-      const DEFAULT = obj2(5900).GameAutocompleteProfile.DEFAULT;
-      obj2 = Object.create(tmp6.prototype);
+      let tmp2 = DEFAULT;
+      let obj2 = Object.create(tmp5.prototype);
       obj2.state = null;
       obj2.selectedQuery = null;
       obj2.onQuery = onQuery;
@@ -287,8 +280,8 @@ export const getGameSearchSession = function getGameSearchSession(CHAT_MENTION) 
               }
             }
             obj2.selectedQuery = normalizeGameAutocompleteQuery(name);
-            const obj = { search_session_id: state.id, surface: null, profile: null, query: state.query, query_length: state.query.length, results_query: query, results_stale: query1 !== state.query, game_id, result_index: num, num_results: num2, result_game_ids: substr.map(f97796), num_result_sets: null, selection_number: null, ms_since_session_start: timestamp - state.startedAt };
-            ({ surface: obj.surface, profile: obj.profile } = obj2);
+            const obj = { search_session_id: state.id, surface: null, filter_group: null, query: state.query, query_length: state.query.length, results_query: query, results_stale: query1 !== state.query, game_id, result_index: num, num_results: num2, result_game_ids: substr.map(f98829), num_result_sets: null, selection_number: null, ms_since_session_start: timestamp - state.startedAt };
+            ({ surface: obj.surface, filterGroup: obj.filter_group } = obj2);
             query = undefined;
             const track = AnalyticsUtilsDefault.track;
             const GAME_SEARCH_RESULT_SELECTED = AnalyticEvents.GAME_SEARCH_RESULT_SELECTED;
@@ -327,7 +320,7 @@ export const getGameSearchSession = function getGameSearchSession(CHAT_MENTION) 
         obj2.endAt(Date.now());
       };
       obj2.surface = CHAT_MENTION;
-      obj2.profile = DEFAULT;
+      obj2.filterGroup = DEFAULT;
       let result = obj.set(CHAT_MENTION, obj2);
       value = obj2;
     } else {

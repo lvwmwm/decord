@@ -1,27 +1,27 @@
-// Module ID: 18035
-// Function ID: 18036
+// Module ID: 18322
+// Function ID: 18323
 // Name: InviteSettingsModal
-// Dependencies: [32, 19, 2051, 9495, 2074, 4515, 1085, 21, 4896, 587, 558, 576, 1490, 38, 504, 12, 18036, 9500, 5714, 1126, 584, 5597, 6890, 18037, 9496, 8924, 1260, 6017, 6503, 2]
+// Dependencies: [32, 19, 2063, 8659, 2086, 4707, 1085, 21, 5090, 587, 558, 576, 1502, 38, 504, 12, 18323, 8665, 5297, 1126, 584, 5392, 7079, 18324, 8660, 8555, 1272, 6203, 6679, 2]
 
-// Module 18035 (InviteSettingsModal)
+// Module 18322 (InviteSettingsModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5714 */;
-import NavigatorHeader from "NavigatorHeader" /* 6017 */;
-import Navigator from "Navigator" /* 6503 */;
-import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 9500 */;
-import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 18036 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5297 */;
+import NavigatorHeader from "NavigatorHeader" /* 6203 */;
+import Navigator from "Navigator" /* 6679 */;
+import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 8665 */;
+import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 18323 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 9495 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 8659 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ createStyles = createStyles.createStyles;
 obj3 = { paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
 let closure_12 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function AdvancedInstantInviteScreen() {
   let channel;
   let closure_2;
   let inviteSettings;
@@ -55,13 +55,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj = navigation(576);
   const cResult = obj.c(33);
   const tmp4 = closure_12();
-  let obj2 = navigation(1490);
+  let obj2 = navigation(1502);
   navigation = obj2.useNavigation();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ChannelStore, , ];
     items[1] = CreateInviteModalStore;
     items[2] = GuildStore;
-    const fn = function f() {
+    const fn = function v() {
       const pendingSettings = CreateInviteModalStore.getPendingSettings();
       channel(closure_2[13])(null != pendingSettings, "Received null pending invite settings");
       const inviteSettings = CreateInviteModalStore.getInviteSettings();
@@ -86,7 +86,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp6, tmp7);
   ({ settings, inviteSettings, channel } = stateFromStoresObject);
   let obj4 = react;
-  const tmp12 = G(react.useState(channel), 2);
+  const tmp12 = V(react.useState(channel), 2);
   const first = tmp12[0];
   let tmp15 = null != channel;
   const tmp14 = tmp12[1];
@@ -170,26 +170,26 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const effect = obj4.useEffect(tmp20, tmp21);
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      class V {
+      class O {
         constructor() {
           const obj = channel(closure_2[20]);
           obj.wait(channel(closure_2[17]).resetSettings);
         }
       }
-      cResult[8] = V;
-      tmp23 = V;
+      cResult[8] = O;
+      tmp23 = O;
     } else {
-      class V {
+      class O {
         constructor() {
           const obj = channel(closure_2[20]);
           obj.wait(channel(closure_2[17]).resetSettings);
         }
       }
     }
-    const tmpResult3 = tmp(5597);
+    const tmpResult3 = tmp(5392);
     const unmountEffect = tmpResult3.useUnmountEffect(tmp23);
     if (cResult[9] !== channel) {
-      class G {
+      class V {
         constructor() {
           let intl;
           let intl2;
@@ -210,9 +210,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       cResult[9] = channel;
-      cResult[10] = G;
+      cResult[10] = V;
     } else {
-      class G {
+      class V {
         constructor() {
           let intl;
           let intl2;
@@ -233,9 +233,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     }
-    G = tmp25;
+    V = tmp25;
     if (cResult[11] === !tmp17) {
-      class G {
+      class V {
         constructor() {
           let intl;
           let intl2;
@@ -256,7 +256,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     }
-    class M {
+    class P {
       constructor() {
         obj = {
           headerRight() {
@@ -277,7 +277,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[11] = !tmp17;
     cResult[12] = tmp25;
     cResult[13] = navigation;
-    cResult[14] = M;
+    cResult[14] = P;
     cResult[15] = items2;
   }
   const tmpResult4 = tmp(12);
@@ -286,7 +286,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = settings;
   cResult[4] = isEqualResult;
   tmp17 = isEqualResult;
-}) : (() => {
+}) : (function AdvancedInstantInviteScreen() {
   let callback;
   let channel;
   let closure_2;
@@ -294,7 +294,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let inviteSettings;
   let settings;
   let tmp = closure_12();
-  let obj = navigation(1490);
+  let obj = navigation(1502);
   navigation = obj.useNavigation();
   let obj2 = navigation(504);
   const items = [ChannelStore, CreateInviteModalStore, GuildStore];
@@ -353,7 +353,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
   }, items1);
-  const tmp2Result2 = navigation(5597);
+  const tmp2Result2 = navigation(5392);
   const unmountEffect = tmp2Result2.useUnmountEffect(() => {
     const obj = channel(closure_2[20]);
     obj.wait(channel(closure_2[17]).resetSettings);
@@ -418,14 +418,14 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { roleIds };
     obj.updateSettings(obj2);
   }, []);
-  const Form = tmp2(8924).Form;
-  ({ style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: channel(9496).getMaxUsesOptions, temporary: null, flags: null, roleIds: null, onChangeMaxAge: callback2, onChangeMaxUses: callback1, onChangeTemporary: callback3, onChangeFlags: callback4, onChangeRoleIds: callback5 });
-  channel(18037);
+  const Form = tmp2(8555).Form;
+  ({ style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: channel(8660).getMaxUsesOptions, temporary: null, flags: null, roleIds: null, onChangeMaxAge: callback2, onChangeMaxUses: callback1, onChangeTemporary: callback3, onChangeFlags: callback4, onChangeRoleIds: callback5 });
+  channel(18324);
   ({ temporary: obj7.temporary, flags: obj7.flags, roleIds: obj7.roleIds } = settings);
   return <Form contentContainerStyle={tmp.formContainer}>{null}</Form>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteSettingsModal() {
   let first;
   let intl;
   let tmp7;
@@ -452,7 +452,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[1];
   }
   return tmp7;
-}) : (() => {
+}) : (function InviteSettingsModal() {
   const memo = react.useMemo(() => {
     let intl;
     let obj3;

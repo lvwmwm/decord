@@ -1,17 +1,17 @@
-// Module ID: 7935
-// Function ID: 7936
+// Module ID: 8354
+// Function ID: 8355
 // Name: VideoBackgroundProfileFetchExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1452, 558, 576, 2]
 
-// Module 7935 (VideoBackgroundProfileFetchExperiment)
+// Module 8354 (VideoBackgroundProfileFetchExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-09-video-background-profile-fetch", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
 let closure_2 = ApexExperiment.createApexExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVideoBackgroundProfileFetchEnabled(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -24,7 +24,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useIsVideoBackgroundProfileFetchEnabled(location) {
   const obj = { location };
   return closure_2.useConfig(obj).enabled;
 });

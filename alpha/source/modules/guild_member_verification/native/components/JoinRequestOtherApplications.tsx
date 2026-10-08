@@ -1,23 +1,23 @@
-// Module ID: 16578
-// Function ID: 16579
+// Module ID: 16833
+// Function ID: 16834
 // Name: JoinRequestOtherApplications
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4708, 4798, 4803, 16579, 1126, 4892, 16575, 4558, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 4902, 4992, 4997, 16834, 1126, 5086, 16830, 4750, 2]
 
-// Module 16578 (JoinRequestOtherApplications)
+// Module 16833 (JoinRequestOtherApplications)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import DateUtils from "DateUtils" /* 4558 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4708 */;
-import Text_Text from "Text/Text" /* 4892 */;
+import DateUtils from "DateUtils" /* 4750 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4902 */;
+import Text_Text from "Text/Text" /* 5086 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_0, status;
+let _require, closure_0;
 
 let closure_4;
 let hasOwnProperty;
@@ -36,7 +36,7 @@ createStyles = createStyles.createStyles;
 size = { width: "100%", height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 let closure_9 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationStatusIcon(status) {
   const obj = react2;
   const cResult = obj.c(2);
   status = status.status;
@@ -45,7 +45,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
     const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "sm", color: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: nativeDefault.colors.STATUS_POSITIVE_TEXT };
-      const CircleCheckIcon = tmp(4798).CircleCheckIcon;
+      const CircleCheckIcon = tmp(4992).CircleCheckIcon;
       const tmp14 = metroRequire(CircleCheckIcon, obj2);
       cResult[0] = tmp14;
       first = tmp14;
@@ -58,7 +58,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
     const _Symbol = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, secondaryColor: nativeDefault.colors.WHITE };
-      const CircleXIcon = tmp(4803).CircleXIcon;
+      const CircleXIcon = tmp(4997).CircleXIcon;
       const tmp9 = metroRequire(CircleXIcon, obj3);
       cResult[1] = tmp9;
       tmp6 = tmp9;
@@ -69,15 +69,15 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
   } else {
     return null;
   }
-}) : ((status) => {
+}) : (function ApplicationStatusIcon(status) {
   status = status.status;
   if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.APPROVED === status) {
     const obj2 = { size: "sm", color: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: nativeDefault.colors.STATUS_POSITIVE_TEXT };
-    const CircleCheckIcon = tmp(4798).CircleCheckIcon;
+    const CircleCheckIcon = tmp(4992).CircleCheckIcon;
     return metroRequire(CircleCheckIcon, obj2);
   } else if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.REJECTED === status) {
     const obj = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, secondaryColor: nativeDefault.colors.WHITE };
-    const CircleXIcon = tmp(4803).CircleXIcon;
+    const CircleXIcon = tmp(4997).CircleXIcon;
     return metroRequire(CircleXIcon, obj);
   } else {
     return null;
@@ -85,7 +85,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
 });
 const memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function JoinRequestOtherApplications(arg0) {
   let guildId;
   let items;
   let selectedJoinRequestId;
@@ -220,7 +220,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   cResult[2] = userId;
   cResult[3] = obj5;
   tmp5 = obj5;
-}) : ((arg0) => {
+}) : (function JoinRequestOtherApplications(arg0) {
   let guildId;
   let intl;
   let items;
@@ -236,7 +236,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   if (0 !== otherGuildJoinRequestsForUser.length) {
     let obj2 = { children: items };
     let obj3 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.label, children: intl.string(tmp2(1126).t["hxa+G3"]) };
-    let Text = tmp2(4892).Text;
+    let Text = tmp2(5086).Text;
     intl = tmp2(1126).intl;
     items = [closure_6(Text, obj3), ];
     let obj4 = {

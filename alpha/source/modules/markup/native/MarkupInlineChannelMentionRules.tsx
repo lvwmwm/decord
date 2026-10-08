@@ -1,18 +1,18 @@
-// Module ID: 11719
-// Function ID: 11720
+// Module ID: 11784
+// Function ID: 11785
 // Name: MarkupInlineChannelMentionRules
-// Dependencies: [19, 21, 7779, 1188, 1375, 2]
+// Dependencies: [19, 21, 8101, 1200, 1387, 2]
 // Exports: createInlineChannelReact, inlineChannelMentionReact, inlineChannelReact
 
-// Module 11719 (MarkupInlineChannelMentionRules)
+// Module 11784 (MarkupInlineChannelMentionRules)
 import Fragment from "Fragment" /* 21 */;
-import native from "native" /* 1188 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import MarkupRulesUtils from "MarkupRulesUtils" /* 7779 */;
+import native from "native" /* 1200 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import MarkupRulesUtils from "MarkupRulesUtils" /* 8101 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const inlineChannelReact = (iconType, output, key) => {
+function inlineChannelReact(iconType, output, key) {
   let items;
   let obj3;
   let smartOutputResult;
@@ -289,7 +289,7 @@ const inlineChannelReact = (iconType, output, key) => {
       break;
     }
   }
-};
+}
 const jsxs = Fragment.jsxs;
 let c0 = "\u{1F4AC}";
 const result = size.fileFinishedImporting("modules/markup/native/MarkupInlineChannelMentionRules.tsx");

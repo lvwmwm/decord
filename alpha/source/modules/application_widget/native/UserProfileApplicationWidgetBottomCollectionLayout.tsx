@@ -1,28 +1,27 @@
-// Module ID: 8723
-// Function ID: 8724
+// Module ID: 13196
+// Function ID: 13197
 // Name: UserProfileApplicationWidgetBottomCollectionLayout
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 8629, 8717, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 13102, 6164, 13190, 5086, 2]
 
-// Module 8723 (UserProfileApplicationWidgetBottomCollectionLayout)
+// Module 13196 (UserProfileApplicationWidgetBottomCollectionLayout)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _mod8629 from "module_8629" /* 8629 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import _mod13102 from "module_13102" /* 13102 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let c2;
-let c3;
 let closure_4;
 let hasOwnProperty;
 let obj2;
 let obj3;
 let obj4;
 let size;
-({ Image: c2, View: c3 } = react_native);
+const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { grid: obj2, item: obj3, itemImage: size, itemContent: obj4 };
@@ -33,7 +32,7 @@ size = { width: 48, height: 48, borderRadius: nativeDefault.radii.sm, overflow: 
 obj4 = { flex: 1, gap: nativeDefault.space.PX_4, minWidth: 0 };
 let closure_6 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollectionItem(arg0) {
   let componentConfig;
   let items;
   let items1;
@@ -97,7 +96,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   }
                   const obj2 = { style: tmp4.item, children: items };
                   items = [tmp12, tmp25];
-                  const tmp32 = hasOwnProperty(_false, obj2);
+                  const tmp32 = hasOwnProperty(View, obj2);
                   cResult[22] = tmp4.item;
                   cResult[23] = tmp12;
                   cResult[24] = tmp25;
@@ -107,7 +106,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
               const obj3 = { style: tmp4.itemContent, children: items1 };
               items1 = [tmp17, tmp21];
-              const tmp28 = hasOwnProperty(_false, obj3);
+              const tmp28 = hasOwnProperty(View, obj3);
               cResult[18] = tmp4.itemContent;
               cResult[19] = tmp17;
               cResult[20] = tmp21;
@@ -116,9 +115,9 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
             if ("value" === tmp10.status) {
               const obj4 = { variant: "text-xxs/medium", color: "text-subtle", lineClamp: 2, children: tmp10.text };
-              tmp23 = React3(tmp(4892).Text, obj4);
+              tmp23 = React3(tmp(5086).Text, obj4);
             } else {
-              tmp23 = React3(tmp(8717).TextSkeleton, { variant: "text-xxs/medium", widthChars: 10 });
+              tmp23 = React3(tmp(13190).TextSkeleton, { variant: "text-xxs/medium", widthChars: 10 });
             }
             cResult[15] = tmp10.status;
             cResult[16] = tmp10.text;
@@ -127,9 +126,9 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           if ("value" === tmp8.status) {
             const obj5 = { variant: "text-xs/medium", lineClamp: 2, children: tmp8.text };
-            tmp19 = React3(tmp(4892).Text, obj5);
+            tmp19 = React3(tmp(5086).Text, obj5);
           } else {
-            tmp19 = React3(tmp(8717).TextSkeleton, { variant: "text-xs/medium", widthChars: 6 });
+            tmp19 = React3(tmp(13190).TextSkeleton, { variant: "text-xs/medium", widthChars: 6 });
           }
           cResult[12] = tmp8.status;
           cResult[13] = tmp8.text;
@@ -139,37 +138,37 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (null != tmp6) {
           const obj6 = { source: obj7, style: tmp4.itemImage, resizeMode: "contain" };
           obj7 = { uri: tmp6.media.url };
-          tmp14 = React3(React2, obj6);
+          tmp14 = React3(FastImageDefault, obj6);
         } else {
           const obj8 = { style: tmp4.itemImage };
-          tmp14 = React3(tmp(8717).ImageSkeleton, obj8);
+          tmp14 = React3(tmp(13190).ImageSkeleton, obj8);
         }
         cResult[9] = tmp6;
         cResult[10] = tmp4.itemImage;
         cResult[11] = tmp14;
         tmp12 = tmp14;
       }
-      const tmpResult = _mod8629;
+      const tmpResult = _mod13102;
       const singleStringOrSkeleton = tmpResult.resolveSingleStringOrSkeleton(componentConfig, "description", resolveFieldValue);
       cResult[6] = componentConfig;
       cResult[7] = resolveFieldValue;
       cResult[8] = singleStringOrSkeleton;
       tmp10 = singleStringOrSkeleton;
     }
-    const tmpResult2 = _mod8629;
+    const tmpResult2 = _mod13102;
     const singleStringOrSkeleton1 = tmpResult2.resolveSingleStringOrSkeleton(componentConfig, "name", resolveFieldValue);
     cResult[3] = componentConfig;
     cResult[4] = resolveFieldValue;
     cResult[5] = singleStringOrSkeleton1;
     tmp8 = singleStringOrSkeleton1;
   }
-  const items2 = [_mod8629.ResolvedValueType.MEDIA];
+  const items2 = [_mod13102.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items2);
   cResult[0] = resolveFieldValue;
   cResult[1] = image;
   cResult[2] = fieldValue;
   tmp6 = fieldValue;
-}) : ((arg0) => {
+}) : (function CollectionItem(arg0) {
   let componentConfig;
   let items1;
   let items2;
@@ -185,44 +184,44 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (componentConfig != null) {
     image = componentConfig.fields.image;
   }
-  const items = [_mod8629.ResolvedValueType.MEDIA];
+  const items = [_mod13102.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
-  const obj = _mod8629;
+  const obj = _mod13102;
   const singleStringOrSkeleton = obj.resolveSingleStringOrSkeleton(componentConfig, "name", resolveFieldValue);
-  const obj2 = _mod8629;
+  const obj2 = _mod13102;
   const singleStringOrSkeleton1 = obj2.resolveSingleStringOrSkeleton(componentConfig, "description", resolveFieldValue);
   const obj3 = { style: tmp.item, children: items1 };
   if (null != fieldValue) {
     const obj4 = { source: obj5, style: tmp.itemImage, resizeMode: "contain" };
     obj5 = { uri: fieldValue.media.url };
-    tmp11 = React3(React2, obj4);
+    tmp11 = React3(FastImageDefault, obj4);
     tmp12 = React3;
   } else {
     const obj6 = { style: tmp.itemImage };
-    tmp11 = React3(tmp3(8717).ImageSkeleton, obj6);
+    tmp11 = React3(tmp3(13190).ImageSkeleton, obj6);
     tmp12 = React3;
   }
   items1 = [tmp11, ];
   const obj7 = { style: tmp.itemContent, children: items2 };
   if ("value" === singleStringOrSkeleton.status) {
     const obj8 = { variant: "text-xs/medium", lineClamp: 2, children: singleStringOrSkeleton.text };
-    tmp12Result = tmp12(tmp3(4892).Text, obj8);
+    tmp12Result = tmp12(tmp3(5086).Text, obj8);
   } else {
-    tmp12Result = tmp12(tmp3(8717).TextSkeleton, { variant: "text-xs/medium", widthChars: 6 });
+    tmp12Result = tmp12(tmp3(13190).TextSkeleton, { variant: "text-xs/medium", widthChars: 6 });
   }
   items2 = [tmp12Result, ];
   if ("value" === singleStringOrSkeleton1.status) {
     const obj9 = { variant: "text-xxs/medium", color: "text-subtle", lineClamp: 2, children: singleStringOrSkeleton1.text };
-    tmp12Result2 = tmp12(tmp3(4892).Text, obj9);
+    tmp12Result2 = tmp12(tmp3(5086).Text, obj9);
   } else {
-    tmp12Result2 = tmp12(tmp3(8717).TextSkeleton, { variant: "text-xxs/medium", widthChars: 10 });
+    tmp12Result2 = tmp12(tmp3(13190).TextSkeleton, { variant: "text-xxs/medium", widthChars: 10 });
   }
   items2[1] = tmp12Result2;
-  items1[1] = hasOwnProperty(_false, obj7);
-  return hasOwnProperty(_false, obj3);
+  items1[1] = hasOwnProperty(View, obj7);
+  return hasOwnProperty(View, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileApplicationWidgetBottomCollectionLayout(arg0) {
   let bottomConfig;
   let items;
   let resolveFieldValue;
@@ -265,7 +264,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           const obj2 = { style: tmp2.grid, children: items };
           items = [tmp3, tmp5, tmp9, tmp13];
-          const tmp20 = hasOwnProperty(_false, obj2);
+          const tmp20 = hasOwnProperty(View, obj2);
           cResult[12] = tmp2.grid;
           cResult[13] = tmp3;
           cResult[14] = tmp5;
@@ -301,7 +300,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = resolveFieldValue;
   cResult[2] = tmp4;
   tmp3 = tmp4;
-}) : ((arg0) => {
+}) : (function UserProfileApplicationWidgetBottomCollectionLayout(arg0) {
   let bottomConfig;
   let items;
   let resolveFieldValue;
@@ -316,9 +315,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items[2] = React3(closure_7, obj4);
   const obj5 = { componentConfig: bottomConfig.components.item_4, resolveFieldValue };
   items[3] = React3(closure_7, obj5);
-  return hasOwnProperty(_false, obj);
+  return hasOwnProperty(View, obj);
 });
 size = size_mod;
 const result = size.fileFinishedImporting("modules/application_widget/native/UserProfileApplicationWidgetBottomCollectionLayout.tsx");
 
-export default tmp6;
+export default tmp5;

@@ -1,18 +1,18 @@
-// Module ID: 11470
-// Function ID: 11471
+// Module ID: 11454
+// Function ID: 11455
 // Name: TransferOwnershipModal
-// Dependencies: [5, 19, 11471, 21, 11469, 1260, 1126, 6017, 11472, 6103, 9282, 4573, 558, 576, 6503, 2]
+// Dependencies: [5, 19, 11455, 21, 11453, 1272, 1126, 6203, 11456, 6281, 8613, 4765, 558, 576, 6679, 2]
 
-// Module 11470 (TransferOwnershipModal)
+// Module 11454 (TransferOwnershipModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import Navigator2 from "Navigator" /* 6503 */;
-import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 11469 */;
-import TransferOwnershipDefault from "TransferOwnership" /* 11472 */;
+import Navigator2 from "Navigator" /* 6679 */;
+import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 11453 */;
+import TransferOwnershipDefault from "TransferOwnership" /* 11456 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import TransferOwnershipConstants from "TransferOwnershipConstants" /* 11471 */;
+import TransferOwnershipConstants from "TransferOwnershipConstants" /* 11455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -135,7 +135,7 @@ function getScreens(guild, toUser) {
 }
 ({ TransferOwnershipModalScenes: hasOwnProperty, TransferOwnershipVerificationTypes: metroRequire } = TransferOwnershipConstants);
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TransferOwnershipModal(arg0) {
   let guild;
   let toUser;
   const obj = react2;
@@ -172,12 +172,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = toUser;
   cResult[2] = tmp5;
   tmp4 = tmp5;
-}) : ((guild) => {
+}) : (function TransferOwnershipModal(guild) {
   guild = guild.guild;
   const toUser = guild.toUser;
   const items = [guild, toUser];
   const memo = react.useMemo(() => getScreens(guild, toUser), items);
-  const Navigator = guild(6503).Navigator;
+  const Navigator = guild(6679).Navigator;
   const intl = guild(1126).intl;
   return <Navigator screens={memo} initialRouteName={constants.TRANFSER_OWNERSHIP} headerBackTitle={intl.string(guild(1126).t["13/7kX"])} />;
 });

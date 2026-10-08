@@ -1,11 +1,11 @@
-// Module ID: 15110
-// Function ID: 15111
+// Module ID: 15372
+// Function ID: 15373
 // Name: SynchronizeIconNative
-// Dependencies: [19, 21, 558, 576, 8169, 2]
+// Dependencies: [19, 21, 558, 576, 7550, 2]
 
-// Module 15110 (SynchronizeIconNative)
+// Module 15372 (SynchronizeIconNative)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 8169 */;
+import inlineStyles from "inlineStyles" /* 7550 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -16,7 +16,7 @@ const inlineStylesDefault = inlineStyles;
 let c3;
 let closure_4;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SynchronizeIcon(arg0) {
   let G3;
   let fill;
   let first;
@@ -30,7 +30,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ fill, iconStyles } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { id: "Frame_-_24px", children: _false(inlineStyles.Rect, { y: "0", fill: "none", width: "24", height: "24" }) };
-    const G = tmp(8169).G;
+    const G = tmp(7550).G;
     const tmp6 = _false(G, obj2);
     cResult[0] = tmp6;
     first = tmp6;
@@ -39,9 +39,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[1] !== fill) {
     const obj3 = { id: "Filled_Icons", children: React3(G3, obj4) };
-    const G2 = tmp(8169).G;
+    const G2 = tmp(7550).G;
     obj4 = { children: items };
-    G3 = tmp(8169).G;
+    G3 = tmp(7550).G;
     const obj5 = { fill, d: "M6.351,6.351C7.824,4.871,9.828,4,12,4c4.411,0,8,3.589,8,8h2c0-5.515-4.486-10-10-10\n\t\t\tC9.285,2,6.779,3.089,4.938,4.938L3,3v6h6L6.351,6.351z" };
     items = [_false(inlineStyles.Path, obj5), ];
     const obj6 = { fill, d: "M17.649,17.649C16.176,19.129,14.173,20,12,20c-4.411,0-8-3.589-8-8H2c0,5.515,4.486,10,10,10\n\t\t\tc2.716,0,5.221-1.089,7.062-2.938L21,21v-6h-6L17.649,17.649z" };
@@ -70,7 +70,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = tmp7;
   cResult[6] = tmp12;
   tmp11 = tmp12;
-}) : ((iconStyles) => {
+}) : (function SynchronizeIcon(iconStyles) {
   let G3;
   let items;
   let items1;

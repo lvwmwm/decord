@@ -1,38 +1,38 @@
-// Module ID: 17150
-// Function ID: 17151
+// Module ID: 17431
+// Function ID: 17432
 // Name: ConnectionDeprecationBottomSheet
-// Dependencies: [19, 17, 5124, 5447, 2048, 21, 4896, 587, 4595, 1618, 504, 5449, 6667, 6664, 6688, 17151, 4860, 17153, 1987, 6651, 6652, 5600, 17138, 4892, 1126, 3169, 8524, 5601, 12772, 558, 576, 4593, 1402, 5603, 6674, 6670, 2]
+// Dependencies: [19, 17, 5436, 5757, 2060, 21, 5090, 587, 4787, 1630, 504, 5759, 6844, 6841, 6865, 17432, 5054, 17434, 1999, 6828, 6829, 5373, 17419, 5086, 1126, 3213, 9009, 5375, 12855, 558, 576, 4785, 1414, 5377, 6851, 6847, 2]
 // Exports: default
 
-// Module 17150 (ConnectionDeprecationBottomSheet)
+// Module 17431 (ConnectionDeprecationBottomSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AvatarUtils from "AvatarUtils" /* 1402 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import themes from "themes" /* 4593 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Icon from "Icon" /* 5603 */;
-import useStartAuthorizeDefault from "useStartAuthorize" /* 6667 */;
-import GameIconDefault from "GameIcon" /* 6674 */;
-import AccountLinkManager from "AccountLinkManager" /* 17151 */;
+import AvatarUtils from "AvatarUtils" /* 1414 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import themes from "themes" /* 4785 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Icon from "Icon" /* 5377 */;
+import useStartAuthorizeDefault from "useStartAuthorize" /* 6844 */;
+import GameIconDefault from "GameIcon" /* 6851 */;
+import AccountLinkManager from "AccountLinkManager" /* 17432 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5124 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5447 */;
+import ApplicationStore from "ApplicationStore" /* 5436 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5757 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const IconDefault = Icon;
-let BottomSheet, application, deprecatedPlatformTypes;
+let BottomSheet;
 
 let c9;
 let metroImportAll;
 let obj2;
 let tmp;
-const GameIcon = tmp(6674);
+const GameIcon = tmp(6851);
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -40,7 +40,7 @@ let obj = { iconContainer: { width: 56, height: 56, alignItems: "center", justif
 obj2 = { paddingHorizontal: nativeDefault.space.PX_16 };
 let closure_10 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectionIcon(arg0) {
   let platform;
   let theme;
   let tmp6;
@@ -86,7 +86,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp4.connectionIcon;
   cResult[4] = tmp10;
   tmp8 = tmp10;
-}) : ((arg0) => {
+}) : (function ConnectionIcon(arg0) {
   let obj4;
   let platform;
   let theme;
@@ -104,7 +104,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroImportAll(View, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((application) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationIcon(application) {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(5);
@@ -136,7 +136,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((application) =
   cResult[3] = tmp5;
   cResult[4] = tmp11;
   tmp10 = tmp11;
-}) : ((application) => {
+}) : (function ApplicationIcon(application) {
   let tmpResult;
   application = application.application;
   const obj = { style: closure_10().iconContainer, children: tmpResult };
@@ -150,7 +150,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((application) =
   return metroImportAll(tmp2, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((deprecatedPlatformTypes) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowConnectionDeprecationBottomSheet(deprecatedPlatformTypes) {
   let canStartAuthorization;
   let fetchingConnections;
   let first;
@@ -201,8 +201,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((deprecatedPlatform
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp6);
   ({ fetchingConnections, matchingPlatform } = stateFromStoresObject);
   let replacedBy;
-  const useGetOrFetchApplication = deprecatedPlatformTypes(6670).useGetOrFetchApplication;
-  deprecatedPlatformTypes(6670);
+  const useGetOrFetchApplication = deprecatedPlatformTypes(6847).useGetOrFetchApplication;
+  deprecatedPlatformTypes(6847);
   if (matchingPlatform != null) {
     let migrationData = matchingPlatform.migrationData;
     if (migrationData != null) {
@@ -222,7 +222,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((deprecatedPlatform
     fetchingConnections = null == getOrFetchApplication;
   }
   return !fetchingConnections && !hasAlreadyLinked;
-}) : ((deprecatedPlatformTypes) => {
+}) : (function useShouldShowConnectionDeprecationBottomSheet(deprecatedPlatformTypes) {
   let canStartAuthorization;
   let fetchingConnections;
   let hasAlreadyLinked;
@@ -255,8 +255,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((deprecatedPlatform
   });
   ({ fetchingConnections, matchingPlatform } = stateFromStoresObject);
   let replacedBy;
-  const useGetOrFetchApplication = deprecatedPlatformTypes(6670).useGetOrFetchApplication;
-  deprecatedPlatformTypes(6670);
+  const useGetOrFetchApplication = deprecatedPlatformTypes(6847).useGetOrFetchApplication;
+  deprecatedPlatformTypes(6847);
   if (matchingPlatform != null) {
     let migrationData = matchingPlatform.migrationData;
     if (migrationData != null) {
@@ -405,7 +405,7 @@ export default function ConnectionDeprecationBottomSheet(arg0) {
         text: intl4.string(tmp2(replacedBy[24]).t.TulDPl),
         variant: "secondary",
         size: "lg",
-        onPress() {
+        onPress: function handleDismiss() {
               const obj = ActionSheetActionCreatorsDefault;
               obj.hideActionSheet();
               if (markAsDismissed != null) {

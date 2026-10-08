@@ -1,17 +1,17 @@
-// Module ID: 15621
-// Function ID: 15622
+// Module ID: 15901
+// Function ID: 15902
 // Name: DevToolsPerformanceTestingScreen
-// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 1490, 1618, 15424, 6081, 6000, 14422, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 587, 558, 576, 1502, 1630, 15686, 6267, 6184, 14648, 2]
 
-// Module 15621 (DevToolsPerformanceTestingScreen)
+// Module 15901 (DevToolsPerformanceTestingScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14422 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14648 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ const jsx = Fragment.jsx;
 let obj = { container: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: nativeDefault.space.PX_16 };
 let closure_6 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsPerformanceTestingScreen() {
   let arr;
   let tmp7;
   let tmp9;
@@ -32,7 +32,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   let obj = navigation(576);
   const cResult = obj.c(9);
   const tmp4 = closure_6();
-  let obj2 = navigation(1490);
+  let obj2 = navigation(1502);
   navigation = obj2.useNavigation();
   const container = tmp4.container;
   const sum = useSafeAreaInsetsDefault().bottom + nativeDefault.space.PX_16;
@@ -46,14 +46,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const _Object = Object;
-    const entries = Object.entries(tmp(15424).PerformanceTestingScreens);
+    const entries = Object.entries(tmp(15686).PerformanceTestingScreens);
     cResult[2] = entries;
     arr = entries;
   } else {
     arr = cResult[2];
   }
   if (cResult[3] !== navigation) {
-    const TableRowGroup = tmp(6081).TableRowGroup;
+    const TableRowGroup = tmp(6267).TableRowGroup;
     const tmp11 = <TableRowGroup hasIcons>{arr.map((item) => {
       let Icon;
       let headerTitle;
@@ -92,7 +92,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   cResult[7] = tmp9;
   cResult[8] = tmp13;
   tmp12 = tmp13;
-}) : (() => {
+}) : (function DevToolsPerformanceTestingScreen() {
   let closure_0;
   let entries;
   const tmp = closure_6();

@@ -1,21 +1,21 @@
-// Module ID: 15048
-// Function ID: 15049
+// Module ID: 15310
+// Function ID: 15311
 // Name: LoadingIndicator
-// Dependencies: [19, 17, 21, 4896, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 2]
 
-// Module 15048 (LoadingIndicator)
+// Module 15310 (LoadingIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ActivityIndicator = react_native.ActivityIndicator;
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ indicator: { margin: 16 } });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function LoadingIndicator() {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
@@ -29,7 +29,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => <ActivityIndicator style={closure_4().indicator} />);
+}) : (function LoadingIndicator() {
+  return <ActivityIndicator style={closure_4().indicator} />;
+});
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/LoadingIndicator.tsx");
 
 export default tmp3;

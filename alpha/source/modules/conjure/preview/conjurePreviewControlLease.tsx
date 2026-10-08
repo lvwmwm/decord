@@ -1,10 +1,10 @@
-// Module ID: 9006
-// Function ID: 9007
+// Module ID: 12372
+// Function ID: 12373
 // Name: conjurePreviewControlLease
 // Dependencies: [19, 558, 576, 2]
 // Exports: acquireConjureControlLease, beginConjureControlOperation, endConjureControlOperation, getConjureControlActiveProjectIds, isConjureControlActive, releaseConjureControlLeases, setConjureControlTuning, subscribeConjureControlReleased
 
-// Module 9006 (conjurePreviewControlLease)
+// Module 12372 (conjurePreviewControlLease)
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -47,7 +47,7 @@ let set1 = new Set();
 const map1 = new Map();
 let set2 = new Set();
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureControlTuning(arg0) {
   let closure_0;
   let tmp2;
   _require = arg0;
@@ -65,7 +65,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = cResult[1];
   }
   return react.useSyncExternalStore(subscribeConjureControl, tmp2, tmp2);
-}) : ((arg0) => {
+}) : (function useConjureControlTuning(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   const callback = react.useCallback(() => {
@@ -75,7 +75,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return react.useSyncExternalStore(subscribeConjureControl, callback, callback);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureControlActive(arg0) {
   let closure_0;
   let tmp2;
   _require = arg0;
@@ -105,7 +105,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = cResult[1];
   }
   return react.useSyncExternalStore(subscribeConjureControl, tmp2, tmp2);
-}) : ((arg0) => {
+}) : (function useConjureControlActive(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   const callback = react.useCallback(() => {

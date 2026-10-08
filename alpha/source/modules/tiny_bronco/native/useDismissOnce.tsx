@@ -1,20 +1,20 @@
-// Module ID: 14547
-// Function ID: 14548
+// Module ID: 14808
+// Function ID: 14809
 // Name: useDismissOnce
-// Dependencies: [19, 2048, 558, 576, 2]
+// Dependencies: [19, 2060, 558, 576, 2]
 
-// Module 14547 (useDismissOnce)
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+// Module 14808 (useDismissOnce)
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, cResult, dependencyMap;
+let _require, dependencyMap;
 
 let react = react_mod;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDismissOnce(cResult) {
   let current;
   let ref;
   let ref2;
@@ -29,7 +29,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
   dependencyMap = react.useRef(false);
   react = react.useRef(cResult);
   if (cResult[0] !== cResult) {
-    const fn = function s() {
+    const fn = function c() {
       ref2.current = current;
     };
     const items = [cResult];
@@ -77,7 +77,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
   }
   const effect1 = obj2.useEffect(tmp6, tmp7);
   return tmp5;
-}) : ((cResult) => {
+}) : (function useDismissOnce(cResult) {
   let ref2;
   const current = cResult;
   const ref = react.useRef(false);

@@ -1,20 +1,20 @@
-// Module ID: 7518
-// Function ID: 7519
+// Module ID: 9241
+// Function ID: 9242
 // Name: ClientThemesOverrides
-// Dependencies: [19, 4896, 558, 576, 4702, 7519, 2]
+// Dependencies: [19, 5090, 558, 576, 4896, 9242, 2]
 
-// Module 7518 (ClientThemesOverrides)
+// Module 9241 (ClientThemesOverrides)
 import react2 from "react" /* 576 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4702 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7519 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4896 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9242 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4 = createStyles.createStyles({ none: { backgroundColor: "transparent" } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGradientBottom() {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
@@ -33,7 +33,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
+}) : (function useGradientBottom() {
   let obj = client_themes_ClientThemesUtils;
   const gradientValue = obj.useGradientValue(client_themes_ClientThemesUtils.GradientPercentage.END);
   const items = [gradientValue];
@@ -47,7 +47,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGradientTop() {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
@@ -66,7 +66,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
+}) : (function useGradientTop() {
   let obj = client_themes_ClientThemesUtils;
   const gradientValue = obj.useGradientValue(client_themes_ClientThemesUtils.GradientPercentage.START);
   const items = [gradientValue];
@@ -80,7 +80,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGradientMidpoint() {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
@@ -99,7 +99,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
+}) : (function useGradientMidpoint() {
   let obj = client_themes_ClientThemesUtils;
   const gradientValue = obj.useGradientValue(client_themes_ClientThemesUtils.GradientPercentage.MID);
   const items = [gradientValue];
@@ -113,7 +113,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClientThemesOverride(arg0) {
   let tmp2;
   const tmp = closure_4();
   if (useIsUsingClientThemeDefault()) {
@@ -124,7 +124,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = none;
   }
   return tmp2;
-}) : ((arg0) => {
+}) : (function useClientThemesOverride(arg0) {
   let tmp2;
   const tmp = closure_4();
   if (useIsUsingClientThemeDefault()) {

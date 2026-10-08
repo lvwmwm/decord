@@ -1,24 +1,24 @@
-// Module ID: 16571
-// Function ID: 16572
+// Module ID: 16826
+// Function ID: 16827
 // Name: MembersPruneActionSheet
-// Dependencies: [32, 19, 16572, 2074, 4515, 1377, 21, 558, 576, 584, 16573, 4860, 6651, 1126, 6078, 6079, 4892, 5601, 6708, 6778, 504, 2]
+// Dependencies: [32, 19, 16827, 2086, 4707, 1389, 21, 558, 576, 584, 16828, 5054, 6828, 1126, 6264, 6265, 5086, 5375, 6885, 6954, 504, 2]
 
-// Module 16571 (MembersPruneActionSheet)
+// Module 16826 (MembersPruneActionSheet)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 6778 */;
-import PruneGuildModalActionCreatorsDefault from "PruneGuildModalActionCreators" /* 16573 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 6954 */;
+import PruneGuildModalActionCreatorsDefault from "PruneGuildModalActionCreators" /* 16828 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PrunePreviewStore from "PrunePreviewStore" /* 16572 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import UserStore from "UserStore" /* 1377 */;
+import PrunePreviewStore from "PrunePreviewStore" /* 16827 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let guild;
+let updateEstimateV2Result;
 
 let closure_12;
 let hasOwnProperty;
@@ -29,23 +29,19 @@ let _slicedToArray = _slicedToArray_mod;
 ({ usePrunePreview: hasOwnProperty, setPrunePreview: metroRequire, clearAllPrunePreviews: metroImportDefault } = PrunePreviewStore);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function MembersPruneActionSheetContent(guild) {
   let closure_3;
   let count;
-  let defaultValue;
   let first;
   let first1;
-  let items1;
   let items2;
-  let tmp8;
-  let tmp = guild;
-  let tmp2 = defaultValue;
-  let obj = guild(defaultValue[8]);
+  let tmp6;
+  let obj = guild(first[8]);
   const cResult = obj.c(37);
   guild = guild.guild;
   const id = guild.id;
   let obj2 = count;
-  [defaultValue, _slicedToArray] = count.useState(7);
+  [first, _slicedToArray] = count.useState(7);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [];
     cResult[0] = items;
@@ -53,303 +49,75 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   } else {
     first1 = cResult[0];
   }
-  const tmp7 = closure_5(guild.id, defaultValue, first1);
-  count = tmp7.count;
-  const isLoading = tmp7.isLoading;
+  count = closure_5(guild.id, first, first1).count;
+  const tmp5 = closure_5(guild.id, first, first1);
   if (cResult[1] !== guild.id) {
-    const fn = function y() {
-      function handlePruneUpdate(guildId) {
-        if (guildId.guildId === handlePruneUpdate.id) {
-          if (guildId.prune.isPreview) {
-            const _Number = Number;
-            closure_2_6(guildId.guildId, guildId.prune.days, guildId.prune.includeRoles, Number(guildId.prune.pruneCount), guildId.prune.isFinished);
-          }
-        }
+    class T {
+      constructor() {
+        handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F147779 */ };
+        obj = id(closure_2[9]);
+        subscription = obj.subscribe("GUILD_PRUNE_UPDATE", handlePruneUpdate);
+        return () => { /* body not rendered: F147780 */ };
       }
-      let obj = id(first[9]);
-      const subscription = obj.subscribe("GUILD_PRUNE_UPDATE", handlePruneUpdate);
-      return () => {
-        const obj = DispatcherDefault;
-        obj.unsubscribe("GUILD_PRUNE_UPDATE", handlePruneUpdate);
-      };
-    };
-    cResult[1] = guild.id;
-    cResult[2] = fn;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-  }
-  if (cResult[3] === defaultValue) {
-    let tmp9;
-    if (cResult[4] === guild.id) {
-      tmp9 = cResult[5];
     }
-    const effect = obj2.useEffect(tmp8, tmp9);
-    if (cResult[6] === defaultValue) {
-      if (cResult[7] === count) {
-        let tmp11;
-        let tmp12;
-        if (cResult[8] === guild.id) {
-          tmp11 = cResult[9];
-          tmp12 = cResult[10];
+    cResult[1] = guild.id;
+    cResult[2] = T;
+    tmp6 = T;
+  } else {
+    class T {
+      constructor() {
+        handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F147779 */ };
+        obj = id(closure_2[9]);
+        subscription = obj.subscribe("GUILD_PRUNE_UPDATE", handlePruneUpdate);
+        return () => { /* body not rendered: F147780 */ };
+      }
+    }
+  }
+  if (cResult[3] === first) {
+    class T {
+      constructor() {
+        handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F147779 */ };
+        obj = id(closure_2[9]);
+        subscription = obj.subscribe("GUILD_PRUNE_UPDATE", handlePruneUpdate);
+        return () => { /* body not rendered: F147780 */ };
+      }
+    }
+    const effect = obj2.useEffect(tmp6, items2);
+    if (cResult[6] === first) {
+      class T {
+        constructor() {
+          handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F147779 */ };
+          obj = id(closure_2[9]);
+          subscription = obj.subscribe("GUILD_PRUNE_UPDATE", handlePruneUpdate);
+          return () => { /* body not rendered: F147780 */ };
         }
-        const effect1 = obj2.useEffect(tmp11, tmp12);
-        if (cResult[11] === defaultValue) {
-          let tmp14;
-          if (cResult[12] === id) {
-            tmp14 = cResult[13];
-          }
-          if (cResult[14] === defaultValue) {
-            let tmp15;
-            let tmp18;
-            let tmp20;
-            let tmp23;
-            if (cResult[15] === id) {
-              tmp15 = cResult[16];
-            }
-            const _Symbol = Symbol;
-            class I {
-              constructor(arg0) {
-                const tmp = first !== arg0 && null != id;
-                if (tmp) {
-                  closure_3(arg0);
-                }
-              }
-            }
-            const _Symbol2 = Symbol;
-            if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl = tmp(tmp2[13]).intl;
-              const stringResult = intl.string(tmp(tmp2[13]).t.YccTvK);
-              class I {
-                constructor(arg0) {
-                  const tmp = first !== arg0 && null != id;
-                  if (tmp) {
-                    closure_3(arg0);
-                  }
-                }
-              }
-              cResult[18] = stringResult;
-              tmp18 = stringResult;
-            } else {
-              tmp18 = cResult[18];
-            }
-            const _Symbol3 = Symbol;
-            if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-              const obj3 = { value: 7, label: obj4.formatToPlainString(tmp(tmp2[13]).t.FM1dHS, { days: 7 }) };
-              const TableRadioRow = tmp(tmp2[14]).TableRadioRow;
-              class I {
-                constructor(arg0) {
-                  const tmp = first !== arg0 && null != id;
-                  if (tmp) {
-                    closure_3(arg0);
-                  }
-                }
-              }
-              const tmp22 = closure_11(TableRadioRow, obj3);
-              cResult[19] = tmp22;
-              tmp20 = tmp22;
-            } else {
-              tmp20 = cResult[19];
-            }
-            const _Symbol4 = Symbol;
-            if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-              const obj5 = { value: 30, label: obj6.formatToPlainString(tmp(tmp2[13]).t.FM1dHS, { days: 30 }) };
-              const TableRadioRow2 = tmp(tmp2[14]).TableRadioRow;
-              class I {
-                constructor(arg0) {
-                  const tmp = first !== arg0 && null != id;
-                  if (tmp) {
-                    closure_3(arg0);
-                  }
-                }
-              }
-              const tmp25 = closure_11(TableRadioRow2, obj5);
-              cResult[20] = tmp25;
-              tmp23 = tmp25;
-            } else {
-              tmp23 = cResult[20];
-            }
-            if (cResult[21] === defaultValue) {
-              let tmp26;
-              if (cResult[22] === tmp14) {
-                tmp26 = cResult[23];
-              }
-              if (cResult[24] === defaultValue) {
-                if (cResult[25] === count) {
-                  let tmp29;
-                  let tmp34;
-                  let tmp40;
-                  if (cResult[26] === isLoading) {
-                    tmp29 = cResult[27];
-                  }
-                  if (cResult[28] !== tmp29) {
-                    class I {
-                      constructor(arg0) {
-                        const tmp = first !== arg0 && null != id;
-                        if (tmp) {
-                          closure_3(arg0);
-                        }
-                      }
-                    }
-                    cResult[28] = tmp29;
-                    cResult[29] = tmp36;
-                    tmp34 = tmp36;
-                  } else {
-                    tmp34 = cResult[29];
-                  }
-                  const _Symbol5 = Symbol;
-                  class I {
-                    constructor(arg0) {
-                      const tmp = first !== arg0 && null != id;
-                      if (tmp) {
-                        closure_3(arg0);
-                      }
-                    }
-                  }
-                  if (tmp37 === Symbol.for("react.memo_cache_sentinel")) {
-                    const intl3 = tmp(tmp2[13]).intl;
-                    const stringResult1 = intl3.string(tmp(tmp2[13]).t["2mIlKQ"]);
-                    class I {
-                      constructor(arg0) {
-                        const tmp = first !== arg0 && null != id;
-                        if (tmp) {
-                          closure_3(arg0);
-                        }
-                      }
-                    }
-                    cResult[30] = stringResult1;
-                  }
-                  if (cResult[31] !== tmp15) {
-                    const obj8 = { variant: "destructive", onPress: tmp15, text: null };
-                    class I {
-                      constructor(arg0) {
-                        const tmp = first !== arg0 && null != id;
-                        if (tmp) {
-                          closure_3(arg0);
-                        }
-                      }
-                    }
-                    const tmp42 = closure_11(tmp(tmp2[17]).Button, obj8);
-                    cResult[31] = tmp15;
-                    cResult[32] = tmp42;
-                    tmp40 = tmp42;
-                  } else {
-                    tmp40 = cResult[32];
-                  }
-                  if (cResult[33] === tmp26) {
-                    if (cResult[34] === tmp34) {
-                      let tmp43;
-                      if (cResult[35] === tmp40) {
-                        tmp43 = cResult[36];
-                      }
-                      return tmp43;
-                    }
-                  }
-                  const obj9 = { header: tmp17, children: items1 };
-                  items1 = [tmp26, tmp34, tmp40];
-                  const tmp45 = closure_12(tmp(tmp2[18]).ActionSheet, obj9);
-                  cResult[33] = tmp26;
-                  cResult[34] = tmp34;
-                  cResult[35] = tmp40;
-                  cResult[36] = tmp45;
-                  tmp43 = tmp45;
-                }
-              }
-              const intl2 = tmp(tmp2[13]).intl;
-              class I {
-                constructor(arg0) {
-                  const tmp = first !== arg0 && null != id;
-                  if (tmp) {
-                    closure_3(arg0);
-                  }
-                }
-              }
-              const t = tmp(tmp2[13]).t;
-              let num17 = count;
-              const tmp31 = isLoading ? t["98cHOp"] : t.f13az9;
-              if (count == null) {
-                num17 = -1;
-              }
-              const obj10 = { members: num17, days: defaultValue };
-              const tmp30Result = tmp30(tmp31, obj10);
-              cResult[24] = defaultValue;
-              cResult[25] = count;
-              cResult[26] = isLoading;
-              cResult[27] = tmp30Result;
-              tmp29 = tmp30Result;
-            }
-            const obj11 = { title: tmp18, defaultValue, onChange: tmp14, hasIcons: false, children: items2 };
-            items2 = [tmp20, tmp23];
-            const tmp28 = closure_12(tmp(tmp2[15]).TableRadioGroup, obj11);
-            cResult[21] = defaultValue;
-            cResult[22] = tmp14;
-            cResult[23] = tmp28;
-            tmp26 = tmp28;
-          }
-          const fn2 = function x() {
-            let tmp2 = null != id;
-            const tmp = id;
-            if (tmp2) {
-              tmp2 = null != first;
-            }
-            if (tmp2) {
-              const obj = PruneGuildModalActionCreatorsDefault;
-              obj.prune(tmp, first);
-              const obj2 = ActionSheetActionCreatorsDefault;
-              obj2.hideActionSheet();
-              metroImportDefault();
-            }
-          };
-          class I {
-            constructor(arg0) {
-              const tmp = first !== arg0 && null != id;
-              if (tmp) {
-                closure_3(arg0);
-              }
-            }
-          }
-          cResult[14] = defaultValue;
-          cResult[15] = id;
-          cResult[16] = fn2;
-          tmp15 = fn2;
-        }
-        class I {
-          constructor(arg0) {
-            const tmp = first !== arg0 && null != id;
-            if (tmp) {
-              closure_3(arg0);
-            }
-          }
-        }
-        cResult[11] = defaultValue;
-        cResult[12] = id;
-        cResult[13] = I;
-        tmp14 = I;
       }
     }
     class R {
       constructor() {
         if (null == count) {
-          const obj = PruneGuildModalActionCreatorsDefault;
-          obj.updateEstimateV2(guild.id, first);
+          tmp = closure_1;
+          tmp2 = closure_2;
+          obj = closure_1(closure_2[10]);
+          tmp3 = guild;
+          tmp4 = closure_2;
+          updateEstimateV2Result = obj.updateEstimateV2(guild.id, closure_2);
         }
+        return;
       }
     }
-    const items3 = [guild.id, defaultValue, count];
-    cResult[6] = defaultValue;
+    const items1 = [guild.id, first, count];
+    cResult[6] = first;
     cResult[7] = count;
     cResult[8] = guild.id;
     cResult[9] = R;
-    cResult[10] = items3;
-    tmp12 = items3;
-    tmp11 = R;
+    cResult[10] = items1;
   }
-  const items4 = [guild.id, defaultValue];
-  cResult[3] = defaultValue;
+  items2 = [guild.id, first];
+  cResult[3] = first;
   cResult[4] = guild.id;
-  cResult[5] = items4;
-  tmp9 = items4;
-}) : ((guild) => {
+  cResult[5] = items2;
+}) : (function MembersPruneActionSheetContent(guild) {
   let BottomSheetTitleHeader;
   let closure_3;
   let days;
@@ -403,7 +171,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const obj3 = {
     title: intl2.string(guild(days[13]).t.YccTvK),
     defaultValue: days,
-    onChange(arg0) {
+    onChange: function handleDaysChange(arg0) {
       const tmp = first !== arg0 && null != id;
       if (tmp) {
         closure_3(arg0);
@@ -436,7 +204,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   items3[1] = closure_11(Text, obj6);
   const obj7 = {
     variant: "destructive",
-    onPress() {
+    onPress: function handlePrune() {
       let tmp2 = null != id;
       const tmp = id;
       if (tmp2) {
@@ -458,7 +226,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   return tmp6(ActionSheet, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MembersPruneActionSheet(guild) {
   let first;
   let tmp11;
   let tmp12;
@@ -542,7 +310,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     tmp14 = tmp15;
   }
   return tmp14;
-}) : ((guild) => {
+}) : (function MembersPruneActionSheet(guild) {
   guild = guild.guild;
   let obj = guild(504);
   const items = [GuildStore, PermissionStore, UserStore];

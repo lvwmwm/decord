@@ -1,19 +1,19 @@
-// Module ID: 9297
-// Function ID: 9298
+// Module ID: 8507
+// Function ID: 8508
 // Name: useCanInviteForGuildEvent
-// Dependencies: [2056, 2051, 4513, 2074, 4515, 7050, 2057, 1085, 4520, 9298, 558, 576, 504, 2]
+// Dependencies: [2068, 2063, 4705, 2086, 4707, 6059, 2069, 1085, 4712, 8508, 558, 576, 504, 2]
 
-// Module 9297 (useCanInviteForGuildEvent)
+// Module 8507 (useCanInviteForGuildEvent)
 import Constants from "Constants" /* 1085 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4520 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7050 */;
-import canViewInviteModal from "canViewInviteModal" /* 9298 */;
-import StageInstanceStore from "StageInstanceStore" /* 2056 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildChannelStore from "GuildChannelStore" /* 4513 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2069 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4712 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6059 */;
+import canViewInviteModal from "canViewInviteModal" /* 8508 */;
+import StageInstanceStore from "StageInstanceStore" /* 2068 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildChannelStore from "GuildChannelStore" /* 4705 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -86,7 +86,7 @@ function isGuildEventInvitable(guildEvent, items) {
 const isGuildEventEnded = GuildScheduledEventStore.isGuildEventEnded;
 const constants = GuildScheduledEventsConstants.GuildScheduledEventEntityTypes;
 const Permissions = Constants.Permissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanInviteForGuildEvent(arg0) {
   let closure_0;
   let first;
   let tmp10;
@@ -119,7 +119,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp9, tmp10);
-}) : ((arg0) => {
+}) : (function useCanInviteForGuildEvent(arg0) {
   let closure_0;
   _require = arg0;
   let items = [GuildChannelStore, ChannelStore, GuildStore, StageInstanceStore];

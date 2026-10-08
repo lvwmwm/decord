@@ -1,15 +1,15 @@
-// Module ID: 10481
-// Function ID: 10482
+// Module ID: 10078
+// Function ID: 10079
 // Name: useMaybeFetchCollectiblesCategoriesShared
-// Dependencies: [32, 19, 4782, 7066, 1087, 558, 576, 504, 7111, 7065, 2]
+// Dependencies: [32, 19, 4976, 7252, 1087, 558, 576, 504, 7297, 7251, 2]
 
-// Module 10481 (useMaybeFetchCollectiblesCategoriesShared)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7065 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7111 */;
+// Module 10078 (useMaybeFetchCollectiblesCategoriesShared)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7251 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7297 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ExperimentStore_mod from "ExperimentStore" /* 4782 */;
-import CollectiblesCategoryStore_mod from "CollectiblesCategoryStore" /* 7066 */;
+import ExperimentStore_mod from "ExperimentStore" /* 4976 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7252 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -24,13 +24,11 @@ let metroImportDefault;
 let _slicedToArray = _slicedToArray_mod;
 ({ useEffect: c3, useCallback: closure_4 } = react);
 let ExperimentStore = ExperimentStore_mod;
-let CollectiblesCategoryStore = CollectiblesCategoryStore_mod;
 ({ COLLECTIBLES_SHOP_CACHE_DURATION_MS: metroImportDefault, COLLECTIBLES_SHOP_FETCH_ERROR_RETRY_THRESHOLD_MS: metroImportAll } = CollectiblesShopConstants);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetchCollectiblesCategoriesShared(arg0, arg1, arg2, arg3) {
   let closure_0;
   let closure_1;
   let closure_2;
-  let closure_6;
   let hasLoadedExperiments;
   let tmp10;
   let tmp13;
@@ -61,8 +59,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, 
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [CollectiblesCategoryStore];
-    class E {
+    const items1 = [closure_6];
+    class F {
       constructor() {
         let lastErrorTimestamp;
         const items = [, , , , , , ];
@@ -81,8 +79,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, 
       }
     }
     cResult[2] = items1;
-    cResult[3] = E;
-    tmp10 = E;
+    cResult[3] = F;
+    tmp10 = F;
     tmp9 = items1;
   } else {
     tmp9 = cResult[2];
@@ -92,7 +90,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, 
   let tmp12 = _slicedToArray(tmpResult2.useStateFromStoresArray(tmp9, tmp10), 7);
   [r10048, tmp13] = tmp12;
   ExperimentStore = tmp13;
-  CollectiblesCategoryStore = tmp14;
+  closure_6 = tmp14;
   let closure_7 = tmp15;
   let closure_8 = tmp16;
   const tmp17 = tmp12[6];
@@ -114,7 +112,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, 
                     }
                     let tmp20 = closure_3;
                     closure_3(tmp18, tmp19);
-                    class E {
+                    class F {
                       constructor() {
                         let lastErrorTimestamp;
                         const items = [, , , , , , ];
@@ -132,16 +130,18 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, 
                         return items;
                       }
                     }
-                    const fn2 = function b() {
-                      const obj = { variantsReturnStyle: ShopVariantsReturnStyle.ShopVariantsReturnStyle.VARIANTS_GROUP, includeBundles: true, skipNumCategories };
-                      const merged = Object.assign(closure_0);
-                      const obj2 = CollectiblesActionCreators;
-                      const collectiblesCategories = obj2.fetchCollectiblesCategories(obj, undefined, closure_2);
-                    };
+                    class O {
+                      constructor() {
+                        const obj = { variantsReturnStyle: ShopVariantsReturnStyle.ShopVariantsReturnStyle.VARIANTS_GROUP, includeBundles: true, skipNumCategories };
+                        const merged = Object.assign(closure_0);
+                        const obj2 = CollectiblesActionCreators;
+                        const collectiblesCategories = obj2.fetchCollectiblesCategories(obj, undefined, closure_2);
+                      }
+                    }
                     cResult[16] = arg0;
                     cResult[17] = arg2;
                     cResult[18] = tmp17;
-                    cResult[19] = fn2;
+                    cResult[19] = O;
                   }
                 }
               }
@@ -151,37 +151,35 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, 
       }
     }
   }
-  class O {
-    constructor() {
-      const tmp = closure_3;
-      if (!tmp) {
-        const tmp2 = stateFromStores;
-        if (tmp2) {
-          if (!CollectiblesCategoryStore.isFetchingCategories) {
-            const _Date = Date;
-            const _Boolean = Boolean;
-            Date.now() - metroImportDefault < metroImportAll;
-            if (!Boolean(closure_6)) {
-              const obj = { variantsReturnStyle: ShopVariantsReturnStyle.ShopVariantsReturnStyle.VARIANTS_GROUP, includeBundles: true, skipNumCategories };
-              const merged = Object.assign(closure_0);
-              const obj2 = CollectiblesActionCreators;
-              const result = obj2.areRequestOptionsEqual(ExperimentStore, obj);
-              const _Date2 = Date;
-              let tmp20 = !(!result);
-              const tmp12 = require;
-              if (result) {
-                tmp20 = Date.now() - metroImportAll < metroImportDefault;
-              }
-              if (!tmp20) {
-                const tmp12Result = tmp12(7065);
-                const collectiblesCategories = tmp12Result.fetchCollectiblesCategories(obj, closure_1, closure_2);
-              }
+  const fn2 = function b() {
+    const tmp = closure_3;
+    if (!tmp) {
+      const tmp2 = stateFromStores;
+      if (tmp2) {
+        if (!CollectiblesCategoryStore.isFetchingCategories) {
+          const _Date = Date;
+          const _Boolean = Boolean;
+          Date.now() - metroImportDefault < metroImportAll;
+          if (!Boolean(closure_6)) {
+            const obj = { variantsReturnStyle: ShopVariantsReturnStyle.ShopVariantsReturnStyle.VARIANTS_GROUP, includeBundles: true, skipNumCategories };
+            const merged = Object.assign(closure_0);
+            const obj2 = CollectiblesActionCreators;
+            const result = obj2.areRequestOptionsEqual(ExperimentStore, obj);
+            const _Date2 = Date;
+            let tmp20 = !(!result);
+            const tmp12 = require;
+            if (result) {
+              tmp20 = Date.now() - metroImportAll < metroImportDefault;
+            }
+            if (!tmp20) {
+              const tmp12Result = tmp12(7251);
+              const collectiblesCategories = tmp12Result.fetchCollectiblesCategories(obj, closure_1, closure_2);
             }
           }
         }
       }
     }
-  }
+  };
   const items2 = [tmp4, stateFromStores, tmp13, tmp12[4], arg0, tmp14, tmp15, arg1, arg2, tmp17];
   cResult[4] = tmp12[2];
   cResult[5] = stateFromStores;
@@ -193,11 +191,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, 
   cResult[11] = arg2;
   cResult[12] = undefined !== arg3 && arg3;
   cResult[13] = tmp17;
-  cResult[14] = O;
+  cResult[14] = fn2;
   cResult[15] = items2;
   tmp19 = items2;
-  tmp18 = O;
-}) : ((arg0, arg1, arg2) => {
+  tmp18 = fn2;
+}) : (function useMaybeFetchCollectiblesCategoriesShared(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
   let closure_2;
@@ -265,7 +263,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, 
               tmp20 = Date.now() - metroImportAll < metroImportDefault;
             }
             if (!tmp20) {
-              const tmp12Result = tmp12(7065);
+              const tmp12Result = tmp12(7251);
               const collectiblesCategories = tmp12Result.fetchCollectiblesCategories(obj, closure_1, closure_2);
             }
           }

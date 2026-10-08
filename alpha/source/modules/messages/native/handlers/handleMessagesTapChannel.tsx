@@ -1,22 +1,22 @@
-// Module ID: 11178
-// Function ID: 11179
+// Module ID: 11295
+// Function ID: 11296
 // Name: handleMessagesTapChannel
-// Dependencies: [5, 2055, 2070, 2051, 2112, 2106, 2074, 4515, 1085, 2058, 6603, 6599, 6854, 6730, 8061, 7779, 5099, 11179, 1987, 6760, 4860, 11192, 11200, 1375, 5050, 5103, 5575, 2]
+// Dependencies: [5, 2067, 2082, 2063, 2124, 2118, 2086, 4707, 1085, 2070, 6779, 6775, 7042, 6906, 8470, 8101, 5940, 11296, 1999, 6936, 5054, 11309, 11317, 1387, 5418, 7476, 5885, 2]
 // Exports: handleMessagesTapChannel
 
-// Module 11178 (handleMessagesTapChannel)
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import ChannelConstants from "ChannelConstants" /* 2058 */;
-import GuildRecord from "GuildRecord" /* 2070 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 6599 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6603 */;
-import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 6854 */;
+// Module 11295 (handleMessagesTapChannel)
+import ChannelRecord from "ChannelRecord" /* 2067 */;
+import ChannelConstants from "ChannelConstants" /* 2070 */;
+import GuildRecord from "GuildRecord" /* 2082 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 6775 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6779 */;
+import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7042 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildRoleStore from "GuildRoleStore" /* 2118 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

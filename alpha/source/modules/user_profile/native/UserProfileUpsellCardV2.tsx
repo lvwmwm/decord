@@ -1,20 +1,20 @@
-// Module ID: 14490
-// Function ID: 14491
+// Module ID: 14750
+// Function ID: 14751
 // Name: UserProfileUpsellCardV2
-// Dependencies: [19, 17, 6951, 21, 4896, 587, 558, 576, 4892, 8346, 5601, 5612, 1105, 2]
+// Dependencies: [19, 17, 7140, 21, 5090, 587, 558, 576, 5086, 9005, 5375, 5387, 1105, 2]
 
-// Module 14490 (UserProfileUpsellCardV2)
+// Module 14750 (UserProfileUpsellCardV2)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import LinearGradientDefault from "LinearGradient" /* 5612 */;
-import ColorConstants from "ColorConstants" /* 6951 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import LinearGradientDefault from "LinearGradient" /* 5387 */;
+import ColorConstants from "ColorConstants" /* 7140 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,11 +33,12 @@ createStyles = createStyles.createStyles;
 obj3 = { borderRadius: nativeDefault.radii.lg - 1, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: nativeDefault.space.PX_16 };
 obj4 = { marginBottom: nativeDefault.space.PX_12 };
 let closure_7 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileUpsellCardV2(arg0) {
   let buttonText;
   let buttonVariant;
   let children;
   let disabled;
+  let innerStyle;
   let items;
   let loading;
   let onButtonPress;
@@ -46,8 +47,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let text;
   let textAlign;
   const obj = react2;
-  const cResult = obj.c(25);
-  ({ text, textAlign, buttonText, onButtonPress, buttonVariant, disabled, loading, children, style, onLayout } = arg0);
+  const cResult = obj.c(28);
+  ({ text, textAlign, buttonText, onButtonPress, buttonVariant, disabled, loading, children, style, innerStyle, onLayout } = arg0);
   let str = "left";
   if (undefined !== textAlign) {
     str = textAlign;
@@ -63,113 +64,126 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[1] === tmp6.outer) {
       tmp7 = cResult[2];
     }
-    if (cResult[3] === tmp6.text) {
-      let tmp9;
-      if (cResult[4] === ("center" === str && tmp6.textCenter)) {
-        tmp9 = cResult[5];
+    if (cResult[3] === innerStyle) {
+      let tmp8;
+      if (cResult[4] === tmp6.inner) {
+        tmp8 = cResult[5];
       }
-      if (cResult[6] === tmp9) {
+      if (cResult[6] === tmp6.text) {
         let tmp10;
-        let tmp14;
-        if (cResult[7] === text) {
+        if (cResult[7] === ("center" === str && tmp6.textCenter)) {
           tmp10 = cResult[8];
         }
-        const _Symbol = Symbol;
-        if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj2 = { color: nativeDefault.colors.WHITE, size: "xs" };
-          const NitroWheelIcon = tmp(8346).NitroWheelIcon;
-          const tmp17 = hasOwnProperty(NitroWheelIcon, obj2);
-          cResult[9] = tmp17;
-          tmp14 = tmp17;
-        } else {
-          tmp14 = cResult[9];
-        }
-        if (!tmp4) {
-          tmp4 = tmp5;
-        }
-        if (cResult[10] === buttonText) {
-          if (cResult[11] === str2) {
-            if (cResult[12] === (undefined !== loading && loading)) {
-              if (cResult[13] === onButtonPress) {
-                let tmp18;
-                if (cResult[14] === tmp4) {
-                  tmp18 = cResult[15];
-                }
-                if (cResult[16] === children) {
-                  if (cResult[17] === tmp6.inner) {
-                    if (cResult[18] === tmp18) {
-                      let tmp21;
-                      if (cResult[19] === tmp10) {
-                        tmp21 = cResult[20];
-                      }
-                      if (cResult[21] === onLayout) {
-                        if (cResult[22] === tmp21) {
-                          let tmp25;
-                          if (cResult[23] === tmp7) {
-                            tmp25 = cResult[24];
-                          }
-                          return tmp25;
+        if (cResult[9] === tmp10) {
+          let tmp11;
+          let tmp15;
+          if (cResult[10] === text) {
+            tmp11 = cResult[11];
+          }
+          const _Symbol = Symbol;
+          if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+            const obj2 = { color: nativeDefault.colors.WHITE, size: "xs" };
+            const NitroWheelIcon = tmp(9005).NitroWheelIcon;
+            const tmp18 = hasOwnProperty(NitroWheelIcon, obj2);
+            cResult[12] = tmp18;
+            tmp15 = tmp18;
+          } else {
+            tmp15 = cResult[12];
+          }
+          if (!tmp4) {
+            tmp4 = tmp5;
+          }
+          if (cResult[13] === buttonText) {
+            if (cResult[14] === str2) {
+              if (cResult[15] === (undefined !== loading && loading)) {
+                if (cResult[16] === onButtonPress) {
+                  let tmp19;
+                  if (cResult[17] === tmp4) {
+                    tmp19 = cResult[18];
+                  }
+                  if (cResult[19] === children) {
+                    if (cResult[20] === tmp19) {
+                      if (cResult[21] === tmp8) {
+                        let tmp22;
+                        if (cResult[22] === tmp11) {
+                          tmp22 = cResult[23];
                         }
+                        if (cResult[24] === onLayout) {
+                          if (cResult[25] === tmp22) {
+                            let tmp26;
+                            if (cResult[26] === tmp7) {
+                              tmp26 = cResult[27];
+                            }
+                            return tmp26;
+                          }
+                        }
+                        const obj3 = { start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: Gradients.PREMIUM_TIER_2, style: tmp7, onLayout, children: tmp22 };
+                        const tmp29 = LinearGradientDefault;
+                        const tmp31 = hasOwnProperty(tmp29, obj3);
+                        cResult[24] = onLayout;
+                        cResult[25] = tmp22;
+                        cResult[26] = tmp7;
+                        cResult[27] = tmp31;
+                        tmp26 = tmp31;
                       }
-                      const obj3 = { start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: Gradients.PREMIUM_TIER_2, style: tmp7, onLayout, children: tmp21 };
-                      const tmp28 = LinearGradientDefault;
-                      const tmp30 = hasOwnProperty(tmp28, obj3);
-                      cResult[21] = onLayout;
-                      cResult[22] = tmp21;
-                      cResult[23] = tmp7;
-                      cResult[24] = tmp30;
-                      tmp25 = tmp30;
                     }
                   }
+                  const obj4 = { style: tmp8, children: items };
+                  items = [tmp11, tmp19, children];
+                  const tmp25 = metroRequire(View, obj4);
+                  cResult[19] = children;
+                  cResult[20] = tmp19;
+                  cResult[21] = tmp8;
+                  cResult[22] = tmp11;
+                  cResult[23] = tmp25;
+                  tmp22 = tmp25;
                 }
-                const obj4 = { style: tmp6.inner, children: items };
-                items = [tmp10, tmp18, children];
-                const tmp24 = metroRequire(View, obj4);
-                cResult[16] = children;
-                cResult[17] = tmp6.inner;
-                cResult[18] = tmp18;
-                cResult[19] = tmp10;
-                cResult[20] = tmp24;
-                tmp21 = tmp24;
               }
             }
           }
+          const obj5 = { icon: tmp15, text: buttonText, onPress: onButtonPress, variant: str2, loading: undefined !== loading && loading, disabled: tmp4, grow: true };
+          const tmp21 = hasOwnProperty(components_Button_Button.Button, obj5);
+          cResult[13] = buttonText;
+          cResult[14] = str2;
+          cResult[15] = undefined !== loading && loading;
+          cResult[16] = onButtonPress;
+          cResult[17] = tmp4;
+          cResult[18] = tmp21;
+          tmp19 = tmp21;
         }
-        const obj5 = { icon: tmp14, text: buttonText, onPress: onButtonPress, variant: str2, loading: undefined !== loading && loading, disabled: tmp4, grow: true };
-        const tmp20 = hasOwnProperty(components_Button_Button.Button, obj5);
-        cResult[10] = buttonText;
-        cResult[11] = str2;
-        cResult[12] = undefined !== loading && loading;
-        cResult[13] = onButtonPress;
-        cResult[14] = tmp4;
-        cResult[15] = tmp20;
-        tmp18 = tmp20;
+        const obj6 = { style: tmp10, variant: "text-md/normal", color: "text-default", maxFontSizeMultiplier: 2.5, children: text };
+        const tmp13 = hasOwnProperty(Text_Text.Text, obj6);
+        cResult[9] = tmp10;
+        cResult[10] = text;
+        cResult[11] = tmp13;
+        tmp11 = tmp13;
       }
-      const obj6 = { style: tmp9, variant: "text-md/normal", color: "text-default", maxFontSizeMultiplier: 2.5, children: text };
-      const tmp12 = hasOwnProperty(Text_Text.Text, obj6);
-      cResult[6] = tmp9;
-      cResult[7] = text;
-      cResult[8] = tmp12;
-      tmp10 = tmp12;
+      const items1 = [tmp6.text, "center" === str && tmp6.textCenter];
+      cResult[6] = tmp6.text;
+      cResult[7] = "center" === str && tmp6.textCenter;
+      cResult[8] = items1;
+      tmp10 = items1;
     }
-    const items1 = [tmp6.text, "center" === str && tmp6.textCenter];
-    cResult[3] = tmp6.text;
-    cResult[4] = "center" === str && tmp6.textCenter;
-    cResult[5] = items1;
-    tmp9 = items1;
+    const items2 = [tmp6.inner, innerStyle];
+    cResult[3] = innerStyle;
+    cResult[4] = tmp6.inner;
+    cResult[5] = items2;
+    tmp8 = items2;
   }
-  const items2 = [tmp6.outer, style];
+  const items3 = [tmp6.outer, style];
   cResult[0] = style;
   cResult[1] = tmp6.outer;
-  cResult[2] = items2;
-  tmp7 = items2;
-}) : ((textAlign) => {
+  cResult[2] = items3;
+  tmp7 = items3;
+}) : (function UserProfileUpsellCardV2(textAlign) {
   let NitroWheelIcon;
   let buttonText;
   let buttonVariant;
   let children;
+  let innerStyle;
   let items;
-  let items2;
+  let items1;
+  let items3;
   let obj2;
   let obj4;
   let onButtonPress;
@@ -194,13 +208,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  ({ children, style, onLayout } = textAlign);
+  ({ children, style, innerStyle, onLayout } = textAlign);
   const tmp = closure_7();
   const obj = { start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: Gradients.PREMIUM_TIER_2, style: items, onLayout, children: tmp7(tmp8, obj2) };
   items = [tmp.outer, style];
-  const items1 = [tmp.text, ];
+  obj2 = { style: items1, children: items3 };
+  items1 = [tmp.inner, innerStyle];
+  const items2 = [tmp.text, ];
   let textCenter = "center" === str;
-  obj2 = { style: tmp.inner, children: items2 };
   const tmp5 = LinearGradientDefault;
   const Text = Text_Text.Text;
   tmp7 = metroRequire;
@@ -208,17 +223,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (textCenter) {
     textCenter = tmp.textCenter;
   }
-  items1[1] = textCenter;
-  items2 = [hasOwnProperty(Text, { style: items1, variant: "text-md/normal", color: "text-default", maxFontSizeMultiplier: 2.5, children: text }), , ];
+  items2[1] = textCenter;
+  items3 = [hasOwnProperty(Text, { style: items2, variant: "text-md/normal", color: "text-default", maxFontSizeMultiplier: 2.5, children: text }), , ];
   const obj3 = { icon: hasOwnProperty(NitroWheelIcon, obj4), text: buttonText, onPress: onButtonPress, variant: buttonVariant, loading: flag2, disabled: flag, grow: true };
-  const Button = tmp6(5601).Button;
+  const Button = tmp6(5375).Button;
   obj4 = { color: nativeDefault.colors.WHITE, size: "xs" };
-  NitroWheelIcon = tmp6(8346).NitroWheelIcon;
+  NitroWheelIcon = tmp6(9005).NitroWheelIcon;
   if (!flag) {
     flag = flag2;
   }
-  items2[1] = hasOwnProperty(Button, obj3);
-  items2[2] = children;
+  items3[1] = hasOwnProperty(Button, obj3);
+  items3[2] = children;
   return hasOwnProperty(tmp5, obj);
 });
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileUpsellCardV2.tsx");

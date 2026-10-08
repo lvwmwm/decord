@@ -1,10 +1,10 @@
-// Module ID: 8343
-// Function ID: 8344
+// Module ID: 13208
+// Function ID: 13209
 // Name: PersonalWidgetExpandCollapseContext
 // Dependencies: [32, 19, 21, 558, 576, 2]
 // Exports: usePersonalWidgetExpandCollapse
 
-// Module 8343 (PersonalWidgetExpandCollapseContext)
+// Module 13208 (PersonalWidgetExpandCollapseContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -12,7 +12,7 @@ import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let children, set;
+let set;
 
 const jsx = Fragment.jsx;
 let obj = {
@@ -27,16 +27,14 @@ let obj = {
 };
 const redux = react.createContext(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PersonalWidgetExpandCollapseProvider(arg0) {
   let closure_129_0;
   let first;
-  let tmp10;
   let tmp4;
   let tmp5;
   let tmp7;
   const obj = react2;
   const cResult = obj.c(10);
-  children = children.children;
   let tmp3 = _slicedToArray(react.useState(false), 2);
   [tmp4, tmp5] = tmp3;
   [tmp7, closure_129_0] = react.useState(false);
@@ -44,7 +42,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   const obj2 = react;
   const tmp2 = _slicedToArray;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function o() {
+    const fn = function p() {
       set = new Set();
       return set;
     };
@@ -55,51 +53,60 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   }
   const first1 = tmp2(obj2.useState(first), 1)[0];
   if (cResult[1] !== first1) {
-    const fn2 = function h(arg0, arg1) {
-      let tmp3;
-      const tmp = arg1;
-      if (tmp) {
-        first1.add(arg0);
-        tmp3 = obj;
-      } else {
-        first1.delete(arg0);
-        tmp3 = obj;
-      }
-      closure_1_0(tmp3.size > 0);
-    };
-    cResult[1] = first1;
-    cResult[2] = fn2;
-    tmp10 = fn2;
-  } else {
-    tmp10 = cResult[2];
-  }
-  if (cResult[3] === tmp7) {
-    if (cResult[4] === tmp4) {
-      let tmp11;
-      if (cResult[5] === tmp10) {
-        tmp11 = cResult[6];
-      }
-      if (cResult[7] === children) {
-        let tmp12;
-        if (cResult[8] === tmp11) {
-          tmp12 = cResult[9];
+    class S {
+      constructor(arg0, arg1) {
+        let tmp3;
+        const tmp = arg1;
+        if (tmp) {
+          first1.add(arg0);
+          tmp3 = obj;
+        } else {
+          first1.delete(arg0);
+          tmp3 = obj;
         }
-        return tmp12;
+        closure_1_0(tmp3.size > 0);
       }
-      const tmp15 = <redux.Provider value={tmp11}>{children}</redux.Provider>;
-      cResult[7] = children;
-      cResult[8] = tmp11;
-      cResult[9] = tmp15;
-      tmp12 = tmp15;
+    }
+    cResult[1] = first1;
+    cResult[2] = S;
+  } else {
+    class S {
+      constructor(arg0, arg1) {
+        let tmp3;
+        const tmp = arg1;
+        if (tmp) {
+          first1.add(arg0);
+          tmp3 = obj;
+        } else {
+          first1.delete(arg0);
+          tmp3 = obj;
+        }
+        closure_1_0(tmp3.size > 0);
+      }
     }
   }
-  const obj4 = { isExpanded: tmp4, setIsExpanded: tmp5, isAnyFieldClipped: tmp7, setAnyFieldClipped: tmp10 };
+  if (cResult[3] === tmp7) {
+    class S {
+      constructor(arg0, arg1) {
+        let tmp3;
+        const tmp = arg1;
+        if (tmp) {
+          first1.add(arg0);
+          tmp3 = obj;
+        } else {
+          first1.delete(arg0);
+          tmp3 = obj;
+        }
+        closure_1_0(tmp3.size > 0);
+      }
+    }
+  }
+  const obj3 = { isExpanded: tmp4, setIsExpanded: tmp5, isAnyFieldClipped: tmp7, setAnyFieldClipped: tmp10 };
   cResult[3] = tmp7;
   cResult[4] = tmp4;
   cResult[5] = tmp10;
-  cResult[6] = obj4;
-  tmp11 = obj4;
-}) : ((children) => {
+  cResult[6] = obj3;
+}) : (function PersonalWidgetExpandCollapseProvider(children) {
   let closure_1;
   let closure_3;
   let first;
@@ -134,7 +141,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePersonalWidgetFieldClamp(arg0, arg1) {
   let closure_5;
   let first;
   let closure_0 = arg0;
@@ -197,7 +204,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       }
     }
   }
-  const fn = function o(nativeEvent) {
+  const fn = function p(nativeEvent) {
     if (first !== closure_1) {
       closure_5(tmp);
       setAnyFieldClipped(id, nativeEvent.nativeEvent.lines.length > closure_0);
@@ -210,7 +217,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = arg1;
   cResult[5] = fn;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function usePersonalWidgetFieldClamp(arg0, arg1) {
   let closure_5;
   let first;
   let tmp7;
@@ -239,9 +246,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   }
   return obj;
 });
-let fn = () => react.useContext(redux);
+function usePersonalWidgetExpandCollapse() {
+  return react.useContext(redux);
+}
 const result1 = size.fileFinishedImporting("modules/user_profile/native/PersonalWidgetExpandCollapseContext.tsx");
 
 export const PersonalWidgetExpandCollapseProvider = tmp2;
-export const usePersonalWidgetExpandCollapse = fn;
+export { usePersonalWidgetExpandCollapse };
 export const usePersonalWidgetFieldClamp = tmp4;

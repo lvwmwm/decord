@@ -1,26 +1,26 @@
-// Module ID: 16469
-// Function ID: 16470
+// Module ID: 16729
+// Function ID: 16730
 // Name: useSharedICYMILogic
-// Dependencies: [32, 19, 8021, 16433, 558, 576, 16470, 504, 14183, 16438, 9323, 8039, 16437, 8034, 8038, 16471, 2]
+// Dependencies: [32, 19, 8429, 16693, 558, 576, 16730, 504, 14482, 16698, 8644, 8447, 16697, 8442, 8446, 16731, 2]
 
-// Module 16469 (useSharedICYMILogic)
-import ICYMITypes from "ICYMITypes" /* 8034 */;
-import ICYMIUtils from "ICYMIUtils" /* 8038 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8039 */;
-import ICYMIAnalytics2 from "ICYMIAnalytics" /* 14183 */;
-import ICYMIConstants from "ICYMIConstants" /* 16433 */;
-import ICYMIStoreUtils from "ICYMIStoreUtils" /* 16437 */;
+// Module 16729 (useSharedICYMILogic)
+import ICYMITypes from "ICYMITypes" /* 8442 */;
+import ICYMIUtils from "ICYMIUtils" /* 8446 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8447 */;
+import ICYMIAnalytics2 from "ICYMIAnalytics" /* 14482 */;
+import ICYMIConstants from "ICYMIConstants" /* 16693 */;
+import ICYMIStoreUtils from "ICYMIStoreUtils" /* 16697 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ICYMIStore from "ICYMIStore" /* 8021 */;
+import ICYMIStore from "ICYMIStore" /* 8429 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let closure_12, importDefault, notificationItem;
+let closure_12, importDefault;
 
 const SCROLL_EVENT_THROTTLE_MS = ICYMIConstants.SCROLL_EVENT_THROTTLE_MS;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSharedICYMILogic(arg0) {
   let allUnreadItemsHydrated;
   let arr8;
   let lastScrollEventTimestamp;
@@ -82,17 +82,17 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp13 = cResult[3];
   }
   if (cResult[4] !== stateFromStores) {
-    class E {
+    class L {
       constructor() {
         const isFirstPageHydratedResult = ICYMIStore.isFirstPageHydrated() && stateFromStores > 0;
         return !isFirstPageHydratedResult;
       }
     }
     cResult[4] = stateFromStores;
-    cResult[5] = E;
-    tmp15 = E;
+    cResult[5] = L;
+    tmp15 = L;
   } else {
-    class E {
+    class L {
       constructor() {
         const isFirstPageHydratedResult = ICYMIStore.isFirstPageHydrated() && stateFromStores > 0;
         return !isFirstPageHydratedResult;
@@ -102,7 +102,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult5 = tmp(tmp2[7]);
   stateFromStores1 = tmpResult5.useStateFromStores(tmp13, tmp15);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class E {
+    class L {
       constructor() {
         const isFirstPageHydratedResult = ICYMIStore.isFirstPageHydrated() && stateFromStores > 0;
         return !isFirstPageHydratedResult;
@@ -111,7 +111,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[6] = tmp18;
     tmp17 = tmp18;
   } else {
-    class E {
+    class L {
       constructor() {
         const isFirstPageHydratedResult = ICYMIStore.isFirstPageHydrated() && stateFromStores > 0;
         return !isFirstPageHydratedResult;
@@ -119,7 +119,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   if (cResult[7] !== stateFromStores) {
-    class E {
+    class L {
       constructor() {
         const isFirstPageHydratedResult = ICYMIStore.isFirstPageHydrated() && stateFromStores > 0;
         return !isFirstPageHydratedResult;
@@ -130,7 +130,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[8] = tmp20;
     tmp19 = tmp20;
   } else {
-    class E {
+    class L {
       constructor() {
         const isFirstPageHydratedResult = ICYMIStore.isFirstPageHydrated() && stateFromStores > 0;
         return !isFirstPageHydratedResult;
@@ -139,7 +139,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const effect = obj2.useEffect(tmp17, tmp19);
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    class E {
+    class L {
       constructor() {
         const isFirstPageHydratedResult = ICYMIStore.isFirstPageHydrated() && stateFromStores > 0;
         return !isFirstPageHydratedResult;
@@ -159,7 +159,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp23 = items3;
     tmp22 = items4;
   } else {
-    class E {
+    class L {
       constructor() {
         const isFirstPageHydratedResult = ICYMIStore.isFirstPageHydrated() && stateFromStores > 0;
         return !isFirstPageHydratedResult;
@@ -171,27 +171,27 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult6 = tmp(tmp2[7]);
   stateFromStores2 = tmpResult6.useStateFromStores(tmp23, tmp24, tmp22);
   if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-    class E {
+    class L {
       constructor() {
         const isFirstPageHydratedResult = ICYMIStore.isFirstPageHydrated() && stateFromStores > 0;
         return !isFirstPageHydratedResult;
       }
     }
     const items5 = [lastScrollEventTimestamp];
-    class R {
+    class N {
       constructor() {
         return lastScrollEventTimestamp.isHydrating();
       }
     }
     const items6 = [];
     cResult[12] = items5;
-    cResult[13] = R;
+    cResult[13] = N;
     cResult[14] = items6;
     tmp28 = items6;
-    tmp27 = R;
+    tmp27 = N;
     tmp26 = items5;
   } else {
-    class E {
+    class L {
       constructor() {
         const isFirstPageHydratedResult = ICYMIStore.isFirstPageHydrated() && stateFromStores > 0;
         return !isFirstPageHydratedResult;
@@ -203,20 +203,20 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult7 = tmp(tmp2[7]);
   const stateFromStores3 = tmpResult7.useStateFromStores(tmp26, tmp27, tmp28);
   if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-    class E {
+    class L {
       constructor() {
         const isFirstPageHydratedResult = ICYMIStore.isFirstPageHydrated() && stateFromStores > 0;
         return !isFirstPageHydratedResult;
       }
     }
     cResult[15] = tmp31;
-    class R {
+    class N {
       constructor() {
         return lastScrollEventTimestamp.isHydrating();
       }
     }
   } else {
-    class E {
+    class L {
       constructor() {
         const isFirstPageHydratedResult = ICYMIStore.isFirstPageHydrated() && stateFromStores > 0;
         return !isFirstPageHydratedResult;
@@ -226,7 +226,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   [arr8, react] = tmp4(obj2.useState(tmp30), 2);
   tmp4(obj2.useState(tmp30), 2);
   if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-    class E {
+    class L {
       constructor() {
         const isFirstPageHydratedResult = ICYMIStore.isFirstPageHydrated() && stateFromStores > 0;
         return !isFirstPageHydratedResult;
@@ -244,7 +244,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp34 = G;
     tmp33 = items7;
   } else {
-    class E {
+    class L {
       constructor() {
         const isFirstPageHydratedResult = ICYMIStore.isFirstPageHydrated() && stateFromStores > 0;
         return !isFirstPageHydratedResult;
@@ -256,14 +256,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const stateFromStoresObject = tmpResult8.useStateFromStoresObject(tmp33, tmp34);
   ({ loadId, lastScrollEventTimestamp } = stateFromStoresObject);
   if (cResult[18] !== arr8) {
-    class E {
+    class L {
       constructor() {
         const isFirstPageHydratedResult = ICYMIStore.isFirstPageHydrated() && stateFromStores > 0;
         return !isFirstPageHydratedResult;
       }
     }
     if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-      class E {
+      class L {
         constructor() {
           const isFirstPageHydratedResult = ICYMIStore.isFirstPageHydrated() && stateFromStores > 0;
           return !isFirstPageHydratedResult;
@@ -277,7 +277,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     } else {
-      class E {
+      class L {
         constructor() {
           const isFirstPageHydratedResult = ICYMIStore.isFirstPageHydrated() && stateFromStores > 0;
           return !isFirstPageHydratedResult;
@@ -362,7 +362,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[25] = tmp36;
   cResult[26] = stateFromStores1;
   cResult[27] = Z;
-}) : ((notificationItem) => {
+}) : (function useSharedICYMILogic(notificationItem) {
   let _undefined;
   let arr6;
   let c9;

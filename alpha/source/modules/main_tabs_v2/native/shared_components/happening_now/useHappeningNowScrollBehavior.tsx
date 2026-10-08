@@ -1,17 +1,17 @@
-// Module ID: 16032
-// Function ID: 16033
+// Module ID: 16292
+// Function ID: 16293
 // Name: useHappeningNowScrollBehavior
 // Dependencies: [32, 19, 558, 576, 2]
 // Exports: useHappeningNowScrollSnapping
 
-// Module 16032 (useHappeningNowScrollBehavior)
+// Module 16292 (useHappeningNowScrollBehavior)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHappeningNowScrollBehavior(arg0, arg1) {
   let closure_129_2;
   let tmp3;
   let closure_0 = arg0;
@@ -46,7 +46,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[1] = arg1;
   cResult[2] = fn;
   tmp4 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useHappeningNowScrollBehavior(arg0, arg1) {
   let closure_2;
   let first;
   let closure_0 = arg0;

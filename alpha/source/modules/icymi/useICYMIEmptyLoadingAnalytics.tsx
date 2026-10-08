@@ -1,10 +1,10 @@
-// Module ID: 16472
-// Function ID: 16473
+// Module ID: 16732
+// Function ID: 16733
 // Name: useICYMIEmptyLoadingAnalytics
-// Dependencies: [19, 558, 576, 14183, 2]
+// Dependencies: [19, 558, 576, 14482, 2]
 
-// Module 16472 (useICYMIEmptyLoadingAnalytics)
-import ICYMIAnalytics3 from "ICYMIAnalytics" /* 14183 */;
+// Module 16732 (useICYMIEmptyLoadingAnalytics)
+import ICYMIAnalytics3 from "ICYMIAnalytics" /* 14482 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 let react = react_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMIEmptyLoadingAnalytics(arg0, arg1) {
   let closure_0;
   let closure_1;
   let ref;
@@ -83,7 +83,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[3] = items1;
   tmp3 = items1;
   tmp2 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useICYMIEmptyLoadingAnalytics(arg0, arg1) {
   let ref;
   let closure_0 = arg0;
   let closure_1 = arg1;

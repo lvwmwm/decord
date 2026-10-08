@@ -1,26 +1,26 @@
-// Module ID: 5969
-// Function ID: 5970
+// Module ID: 6152
+// Function ID: 6153
 // Name: MemberVerificationModal
-// Dependencies: [19, 17, 2112, 5970, 5971, 21, 4618, 1188, 4896, 587, 558, 576, 1618, 4797, 4735, 5972, 5974, 504, 4708, 584, 5924, 5975, 5976, 5989, 5990, 1126, 6591, 5916, 6544, 2]
+// Dependencies: [19, 17, 2124, 6153, 6154, 21, 4810, 1200, 5090, 587, 558, 576, 1630, 4991, 4929, 6155, 6157, 504, 4902, 584, 6107, 6158, 6159, 6172, 6173, 1126, 6767, 6189, 6720, 2]
 
-// Module 5969 (MemberVerificationModal)
+// Module 6152 (MemberVerificationModal)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4618 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4708 */;
+import native from "native" /* 1200 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4810 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4902 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5970 */;
-import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 5971 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6153 */;
+import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 6154 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ReanimatedRexport = ReanimatedRexport2;
-let guildId, waitResult;
+let waitResult;
 
 let c10;
 let c9;
@@ -31,7 +31,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp3;
-const MemberVerificationAlertActionCreators = tmp3(5924);
+const MemberVerificationAlertActionCreators = tmp3(6107);
 let View = react_native.View;
 ({ SCROLL_EVENT_TIMER_MS: metroImportDefault, useBannerHeight: metroImportAll } = MemberVerificationFormConstants);
 ({ jsx: c9, jsxs: c10 } = Fragment);
@@ -50,7 +50,7 @@ const __initData3 = { code: "function MemberVerificationModalTsx3(){const{interp
 const __initData4 = { code: "function MemberVerificationModalTsx4({contentOffset:{y:y}}){const{scrollTop}=this.__closure;return scrollTop.set(y);}" };
 const __initData5 = { code: "function MemberVerificationModalTsx5(){const{interpolate,scrollTop,bannerHeight,safeAreaTop,isDarkTheme}=this.__closure;return{opacity:interpolate(scrollTop.get(),[0,bannerHeight-safeAreaTop],[1,isDarkTheme?1:0],'clamp')};}" };
 const __initData6 = { code: "function MemberVerificationModalTsx6(){const{interpolate,scrollTop,bannerHeight,safeAreaTop}=this.__closure;return{opacity:interpolate(scrollTop.get(),[0,bannerHeight-safeAreaTop],[0,1],'clamp')};}" };
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerificationModal(guildId) {
   let bottom;
   let stateFromStores;
   let tmp17;
@@ -76,7 +76,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   ({ bottom, top } = tmp6);
   let obj2 = guildId(top[6]);
   const sharedValue = obj2.useSharedValue(0);
-  const fn = function u(contentOffset) {
+  const fn = function p(contentOffset) {
     return sharedValue.set(contentOffset.contentOffset.y);
   };
   fn.__closure = { scrollTop: sharedValue };
@@ -113,7 +113,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   ({ interpolate: guildId(top[6]).interpolate, scrollTop: sharedValue, bannerHeight: tmp11, safeAreaTop: top, isDarkTheme: isThemeDarkResult });
   const animatedStyle = obj5.useAnimatedStyle(A);
   const obj7 = guildId(top[6]);
-  class C {
+  class M {
     constructor() {
       let items;
       let obj2;
@@ -123,11 +123,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       return obj;
     }
   }
-  C.__closure = { interpolate: guildId(top[6]).interpolate, scrollTop: sharedValue, bannerHeight: tmp11, safeAreaTop: top };
-  C.__workletHash = 12938747435123;
-  C.__initData = __initData3;
+  M.__closure = { interpolate: guildId(top[6]).interpolate, scrollTop: sharedValue, bannerHeight: tmp11, safeAreaTop: top };
+  M.__workletHash = 12938747435123;
+  M.__initData = __initData3;
   ({ interpolate: guildId(top[6]).interpolate, scrollTop: sharedValue, bannerHeight: tmp11, safeAreaTop: top });
-  const animatedStyle1 = obj7.useAnimatedStyle(C);
+  const animatedStyle1 = obj7.useAnimatedStyle(M);
   const obj9 = guildId(top[15]);
   const setInitialVerificationEffect = obj9.useSetInitialVerificationEffect(guildId);
   if (cResult[0] !== bottom) {
@@ -519,7 +519,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
   }
   return tmp41;
-}) : ((guildId) => {
+}) : (function MemberVerificationModal(guildId) {
   let PressableOpacity;
   let intl;
   let items10;
@@ -672,7 +672,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         items5[1] = closure_9(tmp2(tmp3[23]), obj15);
         const obj16 = {
           guild: tmp13,
-          onSuccess(application_status) {
+          onSuccess: function handleSuccess(application_status) {
                   const tmp2 = null != GuildMemberStore.getSelfMember(guildId);
                   const tmp = guildId;
                   const tmp5 = application_status.application_status !== MemberVerificationTypes.GuildJoinRequestApplicationStatuses.SUBMITTED || tmp2;

@@ -1,51 +1,51 @@
-// Module ID: 16400
-// Function ID: 16401
+// Module ID: 16660
+// Function ID: 16661
 // Name: ForYouItems
-// Dependencies: [5, 32, 19, 17, 4885, 5124, 2051, 2074, 1377, 16394, 1085, 6092, 21, 4896, 4892, 587, 558, 5791, 576, 16399, 1126, 1390, 7724, 7270, 11055, 10162, 8309, 504, 7542, 1188, 12309, 16401, 1490, 4873, 13679, 7138, 1252, 13045, 9970, 11259, 4574, 11282, 1987, 4860, 16402, 4853, 16396, 6700, 16403, 16404, 11, 5916, 16405, 7139, 12971, 1491, 2028, 7525, 16415, 16416, 16417, 16418, 16419, 16425, 686, 16426, 16427, 1375, 16398, 16428, 8404, 2]
+// Dependencies: [5, 32, 19, 17, 5079, 5436, 2063, 2086, 1389, 16654, 1085, 5939, 21, 5090, 5086, 587, 558, 5395, 576, 16659, 1126, 1402, 8045, 7870, 11701, 9748, 7692, 504, 8114, 1200, 12407, 16661, 1502, 5067, 13901, 6063, 1264, 13323, 9497, 9599, 4766, 9622, 1999, 5054, 16662, 5047, 16656, 6877, 16663, 16664, 11, 6189, 16665, 6064, 13250, 1503, 2040, 9248, 16675, 16676, 16677, 16678, 16679, 16685, 686, 16686, 16687, 1387, 16658, 16688, 8600, 2]
 
-// Module 16400 (ForYouItems)
+// Module 16660 (ForYouItems)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _mod686 from "module_686" /* 686 */;
 import intl7 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import FlagUtils from "FlagUtils" /* 1390 */;
-import parseURLDefault from "parseURL" /* 4873 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import CustomMarkupAll from "CustomMarkup" /* 5791 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6092 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7138 */;
-import PollsUtils from "PollsUtils" /* 7270 */;
-import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 7724 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12309 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 13679 */;
-import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 16398 */;
-import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 16415 */;
-import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader" /* 16416 */;
-import ForYouHoistedItemsHeader from "ForYouHoistedItemsHeader" /* 16417 */;
-import ForYouSuggestedFriendsSectionHeaderDefault from "ForYouSuggestedFriendsSectionHeader" /* 16418 */;
-import ForYouSuggestedFriendRowDefault from "ForYouSuggestedFriendRow" /* 16419 */;
-import ForYouShowAllRow from "ForYouShowAllRow" /* 16425 */;
-import ForYouUnreadClearedState from "ForYouUnreadClearedState" /* 16426 */;
-import ForYouLoadMore from "ForYouLoadMore" /* 16427 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import FlagUtils from "FlagUtils" /* 1402 */;
+import parseURLDefault from "parseURL" /* 5067 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import CustomMarkupAll from "CustomMarkup" /* 5395 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 5939 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6063 */;
+import PollsUtils from "PollsUtils" /* 7870 */;
+import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 8045 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12407 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 13901 */;
+import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 16658 */;
+import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 16675 */;
+import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader" /* 16676 */;
+import ForYouHoistedItemsHeader from "ForYouHoistedItemsHeader" /* 16677 */;
+import ForYouSuggestedFriendsSectionHeaderDefault from "ForYouSuggestedFriendsSectionHeader" /* 16678 */;
+import ForYouSuggestedFriendRowDefault from "ForYouSuggestedFriendRow" /* 16679 */;
+import ForYouShowAllRow from "ForYouShowAllRow" /* 16685 */;
+import ForYouUnreadClearedState from "ForYouUnreadClearedState" /* 16686 */;
+import ForYouLoadMore from "ForYouLoadMore" /* 16687 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 4885 */;
-import ApplicationStore from "ApplicationStore" /* 5124 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import UserStore from "UserStore" /* 1377 */;
-import NotificationCenterStore from "NotificationCenterStore" /* 16394 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 5079 */;
+import ApplicationStore from "ApplicationStore" /* 5436 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import UserStore from "UserStore" /* 1389 */;
+import NotificationCenterStore from "NotificationCenterStore" /* 16654 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let c1, c4, compactMode, navigation, onAddSuggestionAnimationFinish, onPressLoad, scrollRef;
+let c1, c4, compactMode, navigation, onAddSuggestionAnimationFinish, onPressLoad;
 
 let StyleSheet;
 let closure_15;
@@ -71,8 +71,8 @@ let obj6;
 let obj8;
 let size;
 let tmp;
-const Link = tmp(1491);
-const ForYouMentionPlaceholder = tmp(16399);
+const Link = tmp(1503);
+const ForYouMentionPlaceholder = tmp(16659);
 function getMessageContentPreviewV2(item) {
   let ATTACHMENT;
   let result;
@@ -220,19 +220,19 @@ let closure_27 = createStyles.createStyles(obj7);
 let closure_28 = { channelMentionText: "redesign/message-preview/medium" };
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const f73639 = () => {
+function useMarkupMessagePreview() {
 
-};
+}
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const f73640 = () => {
+function useMarkupReadV2() {
 
-};
+}
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const f73641 = () => {
+function useMarkupUnreadV2() {
 
-};
+}
 createStyles = createStyles_mod;
 let obj9 = { container: { flex: 1 }, row: obj10, rowCompact: { paddingVertical: 6 }, rowActive: obj11, col: { flexDirection: "column", flex: 1 }, unreadIndicatorV2: size, unreadIndicatorCompactV2: { top: 18 }, rowText: { flex: 1 }, rowTextV2: { flexDirection: "row", justifyContent: "space-between" }, rowBody: { lineHeight: 20 }, rowBodyV2: { marginRight: 30 }, rowBodyAcked: obj12, rowTime: { lineHeight: 20 }, rowTimeV2: { marginLeft: -24 }, itemV2: { alignItems: "flex-start", marginRight: 4, marginLeft: 8 }, calloutContainer: { marginTop: 4, flexDirection: "row", marginRight: 16 }, calloutTextAcked: obj13, calloutTextNotAcked: obj14, messagePreviewContainerV2: { marginTop: 4, flexDirection: "row", marginRight: 16 }, messagePreviewBarV2: obj15, messagePreviewIconV2Container: { paddingTop: 4 }, messagePreviewIconV2: obj16, messagePreviewTextV2Acked: obj17, messagePreviewTextV2NotAcked: { color: nativeDefault.colors.TEXT_DEFAULT }, messagePreviewSystemTextV2: { fontStyle: "italic", fontWeight: "normal" }, refreshSpinner: { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT }, forYouDivider: { borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_8 }, friendRequestNoteContainer: { marginTop: 4, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE } };
 obj10 = { marginHorizontal: 4, paddingHorizontal: 12, paddingVertical: 8, marginBottom: 4, borderRadius: nativeDefault.radii.lg, flexDirection: "row", justifyContent: "space-between" };
@@ -251,7 +251,7 @@ obj17 = { color: nativeDefault.colors.TEXT_MUTED };
 ({ marginTop: 4, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE });
 let closure_32 = createStyles3(obj9);
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((loading) => {
+let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYouFooter(loading) {
   const obj = react2;
   const cResult = obj.c(1);
   let tmp4 = null;
@@ -268,7 +268,7 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((loading) => {
     tmp4 = first;
   }
   return tmp4;
-}) : ((loading) => {
+}) : (function ForYouFooter(loading) {
   let tmp = null;
   if (loading.loading) {
     tmp = closure_21(ForYouMentionPlaceholder.ForYouMentionPlaceholder, {});
@@ -277,17 +277,16 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((loading) => {
 });
 const constants4 = { STICKER: "sticker", VOICE_MESSAGE: "voice_message", ATTACHMENT: "attachment" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
+let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Callout(item) {
   let acked;
-  let items1;
+  let items;
   const obj = react2;
-  const cResult = obj.c(15);
+  const cResult = obj.c(13);
   item = item.item;
   ({ acked, compactMode } = item);
   const tmp4 = closure_32();
-  if (typeof f73639 === "function") {
+  if (typeof useMarkupMessagePreview === "function") {
     let tmp8;
-    let tmp13;
     const obj2 = CustomMarkupAll;
     const parser = obj2.getParser(closure_26());
     const calloutContainer = tmp4.calloutContainer;
@@ -301,83 +300,73 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
       tmp8 = cResult[1];
     }
     const tmp12 = acked ? tmp4.calloutTextAcked : tmp4.calloutTextNotAcked;
-    if (cResult[2] !== tmp12) {
-      const items = [tmp12];
-      cResult[2] = tmp12;
-      cResult[3] = items;
-      tmp13 = items;
-    } else {
-      tmp13 = cResult[3];
-    }
-    let num6 = 10;
+    let num4 = 10;
     if (compactMode) {
-      num6 = 3;
+      num4 = 3;
     }
-    if (cResult[4] === item.callout) {
-      let tmp14;
-      if (cResult[5] === parser) {
-        tmp14 = cResult[6];
+    if (cResult[2] === item.callout) {
+      let tmp13;
+      if (cResult[3] === parser) {
+        tmp13 = cResult[4];
       }
-      if (cResult[7] === tmp13) {
-        if (cResult[8] === num6) {
-          let tmp16;
-          if (cResult[9] === tmp14) {
-            tmp16 = cResult[10];
+      if (cResult[5] === tmp12) {
+        if (cResult[6] === num4) {
+          let tmp15;
+          if (cResult[7] === tmp13) {
+            tmp15 = cResult[8];
           }
-          if (cResult[11] === tmp4.calloutContainer) {
-            if (cResult[12] === tmp8) {
-              let tmp19;
-              if (cResult[13] === tmp16) {
-                tmp19 = cResult[14];
+          if (cResult[9] === tmp4.calloutContainer) {
+            if (cResult[10] === tmp8) {
+              let tmp18;
+              if (cResult[11] === tmp15) {
+                tmp18 = cResult[12];
               }
-              return tmp19;
+              return tmp18;
             }
           }
-          const obj4 = { style: calloutContainer, pointerEvents: "none", children: items1 };
-          items1 = [tmp8, tmp16];
-          const tmp22 = afk(metroImportDefault, obj4);
-          cResult[11] = tmp4.calloutContainer;
-          cResult[12] = tmp8;
-          cResult[13] = tmp16;
-          cResult[14] = tmp22;
-          tmp19 = tmp22;
+          const obj4 = { style: calloutContainer, pointerEvents: "none", children: items };
+          items = [tmp8, tmp15];
+          const tmp21 = authStore6(metroImportDefault, obj4);
+          cResult[9] = tmp4.calloutContainer;
+          cResult[10] = tmp8;
+          cResult[11] = tmp15;
+          cResult[12] = tmp21;
+          tmp18 = tmp21;
         }
       }
-      const obj5 = { style: tmp13, variant: "redesign/message-preview/medium", lineClamp: num6, children: tmp14 };
-      const tmp18 = closure_21(Text_Text.Text, obj5);
+      const obj5 = { style: tmp12, variant: "redesign/message-preview/medium", lineClamp: num4, children: tmp13 };
+      const tmp17 = closure_21(Text_Text.Text, obj5);
+      cResult[5] = tmp12;
+      cResult[6] = num4;
       cResult[7] = tmp13;
-      cResult[8] = num6;
-      cResult[9] = tmp14;
-      cResult[10] = tmp18;
-      tmp16 = tmp18;
+      cResult[8] = tmp17;
+      tmp15 = tmp17;
     }
     const parserResult = parser(item.callout);
-    cResult[4] = item.callout;
-    cResult[5] = parser;
-    cResult[6] = parserResult;
-    tmp14 = parserResult;
+    cResult[2] = item.callout;
+    cResult[3] = parser;
+    cResult[4] = parserResult;
+    tmp13 = parserResult;
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-}) : ((arg0) => {
+}) : (function Callout(arg0) {
   let acked;
   let item;
   let items;
-  let items1;
   let num;
   ({ item, acked, compactMode } = arg0);
   const tmp = closure_32();
-  if (typeof f73639 === "function") {
+  if (typeof useMarkupMessagePreview === "function") {
     const obj2 = { style: tmp.calloutContainer, pointerEvents: "none", children: items };
     const obj3 = { style: tmp.messagePreviewBarV2 };
     const obj = CustomMarkupAll;
     const parser = obj.getParser(closure_26());
     items = [closure_21(metroImportDefault, obj3), ];
-    const obj4 = { style: items1, variant: "redesign/message-preview/medium", lineClamp: num, children: parser(item.callout) };
-    items1 = [acked ? tmp.calloutTextAcked : tmp.calloutTextNotAcked];
+    const obj4 = { style: acked ? tmp.calloutTextAcked : tmp.calloutTextNotAcked, variant: "redesign/message-preview/medium", lineClamp: num, children: parser(item.callout) };
     num = 10;
     const Text = Text_Text.Text;
-    const tmp6 = afk;
+    const tmp6 = authStore6;
     const tmp7 = metroImportDefault;
     const tmp8 = closure_21;
     if (compactMode) {
@@ -390,7 +379,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
+let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYouMessagePreviewV2(item) {
   let Icon;
   let content;
   let first;
@@ -410,7 +399,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   const acked = item.acked;
   ({ compactMode, roleStyle } = item);
   const tmp4 = closure_32();
-  const obj2 = message_channel_id(5791);
+  const obj2 = message_channel_id(5395);
   const notifCenterV2MessagePreviewParser = obj2.getNotifCenterV2MessagePreviewParser(closure_27(), closure_28, roleStyle);
   const tmp6 = getMessageContentPreviewV2({ item });
   const iconType = tmp6.iconType;
@@ -493,7 +482,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
     } else {
       tmp26 = cResult[11];
     }
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     const tmp29 = acked ? tmp4.messagePreviewTextV2Acked : tmp4.messagePreviewTextV2NotAcked;
     let prop;
     if (isSystemMessage) {
@@ -511,8 +500,8 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
       const message5 = item.message;
       const obj4 = { content, guildId: guild_id, channelId: message_channel_id, messageId: message_id, authorId: id1 };
       id1 = undefined;
-      const renderMessageContentMarkup = item(7542).renderMessageContentMarkup;
-      item(7542);
+      const renderMessageContentMarkup = item(8114).renderMessageContentMarkup;
+      item(8114);
       if (message5 != null) {
         id1 = message5.author.id;
       }
@@ -526,18 +515,18 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
       if (tmp36Result) {
         let tmp38;
         const obj6 = { style: tmp4.messagePreviewIconV2Container, children: closure_21(Icon, obj7) };
-        Icon = tmp(1188).Icon;
+        Icon = tmp(1200).Icon;
         if (constants4.ATTACHMENT === iconType) {
-          tmp38 = guild_id(11055);
+          tmp38 = guild_id(11701);
         } else if (constants4.STICKER === iconType) {
-          tmp38 = guild_id(10162);
+          tmp38 = guild_id(9748);
         } else {
           tmp38 = null;
           if (constants4.VOICE_MESSAGE === iconType) {
-            tmp38 = guild_id(8309);
+            tmp38 = guild_id(7692);
           }
         }
-        obj7 = { source: tmp38, size: item(1188).IconSizes.SMALL, style: tmp4.messagePreviewIconV2 };
+        obj7 = { source: tmp38, size: item(1200).IconSizes.SMALL, style: tmp4.messagePreviewIconV2 };
         tmp36Result = tmp36(tmp25, obj6);
       }
       if (cResult[15] === Text) {
@@ -627,7 +616,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   cResult[8] = mentions1;
   cResult[9] = fn3;
   tmp21 = fn3;
-}) : ((item) => {
+}) : (function ForYouMessagePreviewV2(item) {
   let Icon;
   let content;
   let id;
@@ -641,7 +630,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   let message_channel_id;
   ({ compactMode, roleStyle } = item);
   const tmp = closure_32();
-  const obj = message_channel_id(5791);
+  const obj = message_channel_id(5395);
   const notifCenterV2MessagePreviewParser = obj.getNotifCenterV2MessagePreviewParser(closure_27(), closure_28, roleStyle);
   const tmp4 = getMessageContentPreviewV2({ item });
   const iconType = tmp4.iconType;
@@ -687,7 +676,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   items3[0] = closure_21(closure_7, obj6);
   const items4 = [acked ? tmp.messagePreviewTextV2Acked : tmp.messagePreviewTextV2NotAcked, ];
   let prop;
-  const Text = item(4892).Text;
+  const Text = item(5086).Text;
   if (isSystemMessage) {
     prop = tmp.messagePreviewSystemTextV2;
   }
@@ -700,8 +689,8 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   let message = item.message;
   const obj8 = { content, guildId: guild_id, channelId: message_channel_id, messageId: message_id, authorId: id };
   id = undefined;
-  const renderMessageContentMarkup = item(7542).renderMessageContentMarkup;
-  item(7542);
+  const renderMessageContentMarkup = item(8114).renderMessageContentMarkup;
+  item(8114);
   if (message != null) {
     id = message.author.id;
   }
@@ -714,18 +703,18 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   if (tmp11Result) {
     let tmp17;
     const obj9 = { style: tmp.messagePreviewIconV2Container, children: closure_21(Icon, obj10) };
-    Icon = tmp5(1188).Icon;
+    Icon = tmp5(1200).Icon;
     if (constants4.ATTACHMENT === iconType) {
-      tmp17 = guild_id(11055);
+      tmp17 = guild_id(11701);
     } else if (constants4.STICKER === iconType) {
-      tmp17 = guild_id(10162);
+      tmp17 = guild_id(9748);
     } else {
       tmp17 = null;
       if (constants4.VOICE_MESSAGE === iconType) {
-        tmp17 = guild_id(8309);
+        tmp17 = guild_id(7692);
       }
     }
-    obj10 = { source: tmp17, size: item(1188).IconSizes.SMALL, style: tmp.messagePreviewIconV2 };
+    obj10 = { source: tmp17, size: item(1200).IconSizes.SMALL, style: tmp.messagePreviewIconV2 };
     tmp11Result = tmp11(tmp10, obj9);
   }
   items5[1] = tmp11Result;
@@ -733,7 +722,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   return closure_22(closure_7, obj5);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
+let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationName(applicationId) {
   let first;
   let tmp6;
   let tmp8;
@@ -786,7 +775,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
     tmp8 = tmp11;
   }
   return tmp8;
-}) : ((applicationId) => {
+}) : (function ApplicationName(applicationId) {
   let tmp5;
   applicationId = applicationId.applicationId;
   const textVariant = applicationId.textVariant;
@@ -801,7 +790,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
   }
   return tmp5;
 });
-let closure_39 = react.memo((item) => {
+let closure_39 = react.memo(function ForYouRowWrapped(item) {
   let forceHoistItem;
   let id;
   let isForceHoisted;
@@ -951,7 +940,7 @@ let closure_39 = react.memo((item) => {
         label: intl3.string(tmp2(tmp3[20]).t.D8z9ju),
         icon: tmp6(tmp3[44]),
         IconComponent: tmp2(tmp3[45]).TrashIcon,
-        onPress: function() {
+        onPress() {
             return closure_0(...arguments);
           }
       };
@@ -1034,13 +1023,13 @@ let closure_39 = react.memo((item) => {
   [tmp10, tmp11] = tmp9;
   const tmp2Result4 = tmp2(tmp3[48]);
   const itemActionButtonPropsV2 = tmp2Result4.useItemActionButtonPropsV2(item, callback, navigation, forceHoistItem, isForceHoisted, onSoftAckItem, tmp11, compactMode);
-  if (typeof f73640 === "function") {
+  if (typeof useMarkupReadV2 === "function") {
     let tmp18 = onSoftAckItem(tmp3[17]);
     const tmp19 = closure_25;
     const getParserWithoutLinks = tmp18.getParserWithoutLinks;
-    let tmp21 = f73641;
+    let tmp21 = useMarkupUnreadV2;
     const tmp17 = onSoftAckItem;
-    if (typeof f73641 === "function") {
+    if (typeof useMarkupUnreadV2 === "function") {
       let tmp22 = closure_24;
       const tmp17Result = tmp17(tmp3[17]);
       const parserWithoutLinks = tmp17Result.getParserWithoutLinks(closure_24());
@@ -1174,7 +1163,7 @@ let closure_39 = react.memo((item) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollRef) => {
+let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScrollToTopRef(scrollRef) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -1200,7 +1189,7 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollRef) => 
   const tmpResult = Link;
   const scrollToTop = tmpResult.useScrollToTop(ref);
   return null;
-}) : ((scrollRef) => {
+}) : (function ScrollToTopRef(scrollRef) {
   scrollRef = scrollRef.scrollRef;
   const obj = {
     scrollToTop() {
@@ -1219,7 +1208,7 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollRef) => 
 });
 const memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isSoftAcked) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ForYouItemsWrapped(isSoftAcked) {
   let closure_9;
   let items;
   let loadMore;
@@ -1264,10 +1253,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isSoftA
   const tmpResult = tmp(onSoftAckItem[27]);
   const stateFromStores = tmpResult.useStateFromStores(tmp7, tmp8);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [U];
+    const items2 = [Y];
     class L {
       constructor() {
-        return U.isRefreshing();
+        return Y.isRefreshing();
       }
     }
     cResult[2] = items2;
@@ -1285,7 +1274,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isSoftA
   const tmp16 = setting1 === tmp(onSoftAckItem[57]).ChannelListLayoutTypes.COMPACT;
   compactMode = tmp16;
   if (cResult[4] !== loadMore) {
-    class U {
+    class Y {
       constructor() {
         loadMore(true);
       }
@@ -1293,20 +1282,20 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isSoftA
     cResult[4] = loadMore;
     class L {
       constructor() {
-        return U.isRefreshing();
+        return Y.isRefreshing();
       }
     }
-    cResult[5] = U;
+    cResult[5] = Y;
   } else {
-    class U {
+    class Y {
       constructor() {
         loadMore(true);
       }
     }
   }
-  U = tmp17;
+  Y = tmp17;
   if (cResult[6] === setting) {
-    class U {
+    class Y {
       constructor() {
         loadMore(true);
       }
@@ -1367,7 +1356,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isSoftA
         }
         case "load-more":
         {
-          const obj = { onPressLoad: U };
+          const obj = { onPressLoad: Y };
           return closure_21(ForYouLoadMore.ForYouLoadMore, obj);
         }
         default:
@@ -1392,7 +1381,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isSoftA
   cResult[16] = tmp5.forYouDivider;
   cResult[17] = suggestedFriendAdded;
   cResult[18] = G;
-}) : ((loadMore) => {
+}) : (function ForYouItemsWrapped(loadMore) {
   let items;
   let items7;
   let loadingMore;

@@ -1,17 +1,17 @@
-// Module ID: 8392
-// Function ID: 8393
+// Module ID: 8890
+// Function ID: 8891
 // Name: useGameProfileInvite
-// Dependencies: [5, 19, 2007, 2053, 4877, 1085, 8366, 504, 1102, 8064, 6822, 558, 576, 2]
+// Dependencies: [5, 19, 2019, 2065, 5071, 1085, 8864, 504, 1102, 8472, 6995, 558, 576, 2]
 // Exports: hasGameProfileDiscordWebsite, preloadGameProfileInvite
 
-// Module 8392 (useGameProfileInvite)
+// Module 8890 (useGameProfileInvite)
 import DurationsDefault from "Durations" /* 1102 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8064 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8472 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GameStore from "GameStore" /* 2007 */;
-import GuildMembershipStore from "GuildMembershipStore" /* 2053 */;
-import InviteStore from "InviteStore" /* 4877 */;
+import GameStore from "GameStore" /* 2019 */;
+import GuildMembershipStore from "GuildMembershipStore" /* 2065 */;
+import InviteStore from "InviteStore" /* 5071 */;
 import Constants from "Constants" /* 1085 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -22,7 +22,7 @@ let _require, c3, c4, current;
 
 let QueryIds;
 let metroImportDefault;
-const f97266 = (category) => category.category === closure_1_0(closure_1_2[6]).ThirdPartyGameApplicationWebsiteCategory.DISCORD;
+const f99237 = (category) => category.category === closure_1_0(closure_1_2[6]).ThirdPartyGameApplicationWebsiteCategory.DISCORD;
 function isUsableGameProfileInvite(state) {
   let tmp = null != state && state.state !== metroImportDefault.RESOLVING;
   if (tmp) {
@@ -79,7 +79,7 @@ let obj = {
       return tmp9;
     }
   },
-  load: function() {
+  load() {
     return closure_9(...arguments);
   }
 };
@@ -145,7 +145,7 @@ let closure_9 = _asyncToGenerator(async function(arg0, value) {
   }
 });
 let closure_10 = createFetchStore(InviteStore, obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((websites, cResult) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameProfileInvite(websites, cResult) {
   let data;
   let tmp14;
   let tmp18;
@@ -180,7 +180,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((websites, cResult)
     if (websites != null) {
       websites = websites.websites;
       if (websites != null) {
-        found = websites.find(f97266);
+        found = websites.find(f99237);
       }
     }
     let arr;
@@ -232,67 +232,45 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((websites, cResult)
     }
   }
   if (tmp16 !== id) {
+    let id1;
     if (data != null) {
       let guild2 = data.guild;
-      class G {
-        constructor() {
-          let id;
-          if (data != null) {
-            const guild = tmp.guild;
-            if (guild != null) {
-              id = guild.id;
-            }
-          }
-          let isMemberResult = null != id;
-          if (isMemberResult) {
-            let id1;
-            const isMember = GuildMembershipStore.isMember;
-            if (data != null) {
-              const guild2 = tmp.guild;
-              if (guild2 != null) {
-                id1 = guild2.id;
-              }
-            }
-            isMemberResult = isMember(id1);
-          }
-          return isMemberResult;
-        }
+      if (guild2 != null) {
+        id1 = guild2.id;
       }
     }
-    class G {
-      constructor() {
-        let id;
+    const fn2 = function p() {
+      let id;
+      if (data != null) {
+        const guild = tmp.guild;
+        if (guild != null) {
+          id = guild.id;
+        }
+      }
+      let isMemberResult = null != id;
+      if (isMemberResult) {
+        let id1;
+        const isMember = GuildMembershipStore.isMember;
         if (data != null) {
-          const guild = tmp.guild;
-          if (guild != null) {
-            id = guild.id;
+          const guild2 = tmp.guild;
+          if (guild2 != null) {
+            id1 = guild2.id;
           }
         }
-        let isMemberResult = null != id;
-        if (isMemberResult) {
-          let id1;
-          const isMember = GuildMembershipStore.isMember;
-          if (data != null) {
-            const guild2 = tmp.guild;
-            if (guild2 != null) {
-              id1 = guild2.id;
-            }
-          }
-          isMemberResult = isMember(id1);
-        }
-        return isMemberResult;
+        isMemberResult = isMember(id1);
       }
-    }
-    cResult[6] = undefined;
-    cResult[7] = G;
-    tmp18 = G;
+      return isMemberResult;
+    };
+    cResult[6] = id1;
+    cResult[7] = fn2;
+    tmp18 = fn2;
   } else {
     tmp18 = cResult[7];
   }
   const tmpResult = tmp(tmp2[7]);
   const stateFromStores = tmpResult.useStateFromStores(tmp14, tmp18);
   if (cResult[8] !== data) {
-    const fn2 = function _() {
+    const fn3 = function _() {
       if (null != data) {
         current = ref.current;
         if (current != null) {
@@ -300,36 +278,12 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((websites, cResult)
         }
       }
     };
-    const items2 = [];
-    class G {
-      constructor() {
-        let id;
-        if (data != null) {
-          const guild = tmp.guild;
-          if (guild != null) {
-            id = guild.id;
-          }
-        }
-        let isMemberResult = null != id;
-        if (isMemberResult) {
-          let id1;
-          const isMember = GuildMembershipStore.isMember;
-          if (data != null) {
-            const guild2 = tmp.guild;
-            if (guild2 != null) {
-              id1 = guild2.id;
-            }
-          }
-          isMemberResult = isMember(id1);
-        }
-        return isMemberResult;
-      }
-    }
+    const items2 = [data];
     cResult[8] = data;
-    cResult[9] = fn2;
+    cResult[9] = fn3;
     cResult[10] = items2;
     tmp22 = items2;
-    tmp21 = fn2;
+    tmp21 = fn3;
   } else {
     tmp21 = cResult[9];
     tmp22 = cResult[10];
@@ -350,7 +304,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((websites, cResult)
   cResult[13] = tmp13;
   cResult[14] = obj3;
   tmp24 = obj3;
-}) : ((websites, cResult) => {
+}) : (function useGameProfileInvite(websites, cResult) {
   let tmp8;
   _require = cResult;
   const ref = react.useRef(cResult);
@@ -363,7 +317,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((websites, cResult)
   if (websites != null) {
     websites = websites.websites;
     if (websites != null) {
-      found = websites.find(f97266);
+      found = websites.find(f99237);
     }
   }
   let arr;
@@ -454,7 +408,7 @@ export const preloadGameProfileInvite = function preloadGameProfileInvite(arg0) 
     if (game != null) {
       const websites = game.websites;
       if (websites != null) {
-        found = websites.find(f97266);
+        found = websites.find(f99237);
       }
     }
     let arr;

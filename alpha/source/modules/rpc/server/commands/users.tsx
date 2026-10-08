@@ -1,14 +1,14 @@
-// Module ID: 14363
-// Function ID: 14364
+// Module ID: 14590
+// Function ID: 14591
 // Name: users
-// Dependencies: [1377, 5323, 1085, 14335, 9065, 2]
+// Dependencies: [1389, 5635, 1085, 14560, 11143, 2]
 
-// Module 14363 (users)
+// Module 14590 (users)
 import Constants2 from "Constants" /* 1085 */;
-import transformUserDefault from "transformUser" /* 9065 */;
-import UserStore from "UserStore" /* 1377 */;
-import Constants from "Constants" /* 5323 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14335 */;
+import transformUserDefault from "transformUser" /* 11143 */;
+import UserStore from "UserStore" /* 1389 */;
+import Constants from "Constants" /* 5635 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14560 */;
 import size from "module_2" /* 2 */;
 
 let RPC_EMBEDDED_APP_SCOPE;

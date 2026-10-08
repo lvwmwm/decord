@@ -1,12 +1,12 @@
-// Module ID: 9316
-// Function ID: 9317
+// Module ID: 8503
+// Function ID: 8504
 // Name: useInterestedEventUsers
-// Dependencies: [19, 7050, 2057, 558, 576, 504, 2]
+// Dependencies: [19, 6059, 2069, 558, 576, 504, 2]
 
-// Module 9316 (useInterestedEventUsers)
+// Module 8503 (useInterestedEventUsers)
 import react from "react" /* 19 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7050 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2069 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6059 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let _require, dependencyMap, set;
 
 const useMemo = react.useMemo;
 let closure_4 = GuildScheduledEventsConstants.GuildScheduledEventUserResponses;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInterestedEventUsers(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -71,16 +71,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1) 
       let tmp13;
       const _Symbol = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        class T {
+        class I {
           constructor(arg0, user_id) {
             arg0[user_id.user_id] = user_id;
             return arg0;
           }
         }
-        cResult[11] = T;
-        tmp13 = T;
+        cResult[11] = I;
+        tmp13 = I;
       } else {
-        class T {
+        class I {
           constructor(arg0, user_id) {
             arg0[user_id.user_id] = user_id;
             return arg0;
@@ -91,7 +91,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1) 
       cResult[9] = stateFromStoresArray1;
       cResult[10] = reduced;
     } else {
-      class T {
+      class I {
         constructor(arg0, user_id) {
           arg0[user_id.user_id] = user_id;
           return arg0;
@@ -100,7 +100,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1) 
     }
     reduced = tmp12;
     if (cResult[12] === stateFromStoresArray) {
-      class T {
+      class I {
         constructor(arg0, user_id) {
           arg0[user_id.user_id] = user_id;
           return arg0;
@@ -138,7 +138,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1) 
   cResult[8] = items4;
   tmp11 = items4;
   tmp10 = fn2;
-}) : ((arg0, arg1) => {
+}) : (function useInterestedEventUsers(arg0, arg1) {
   let closure_1;
   let stateFromStoresArray1;
   _require = arg0;

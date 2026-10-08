@@ -1,18 +1,18 @@
-// Module ID: 8828
-// Function ID: 8829
+// Module ID: 9187
+// Function ID: 9188
 // Name: ApplicationFrecencyStore
-// Dependencies: [2050, 1231, 1360, 1095, 1985, 4933, 12, 504, 584, 2]
+// Dependencies: [2062, 1243, 1372, 1095, 1997, 5127, 12, 504, 584, 2]
 
-// Module 8828 (ApplicationFrecencyStore)
+// Module 9187 (ApplicationFrecencyStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import ApplicationConstants from "ApplicationConstants" /* 1360 */;
-import Server from "Server" /* 1985 */;
-import FrecencyDefault from "Frecency" /* 4933 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import ApplicationConstants from "ApplicationConstants" /* 1372 */;
+import Server from "Server" /* 1997 */;
+import FrecencyDefault from "Frecency" /* 5127 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
 import size from "module_2" /* 2 */;
 
 let closure_6, recentUses;

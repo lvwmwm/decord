@@ -1,17 +1,17 @@
-// Module ID: 14754
-// Function ID: 14755
+// Module ID: 15015
+// Function ID: 15016
 // Name: FamilyCenterParentalControlsContentAndSocial
-// Dependencies: [19, 17, 1085, 7645, 21, 558, 576, 11142, 1126, 2115, 14515, 2]
+// Dependencies: [19, 17, 1085, 7966, 21, 558, 576, 11262, 1126, 2127, 14775, 2]
 
-// Module 14754 (FamilyCenterParentalControlsContentAndSocial)
+// Module 15015 (FamilyCenterParentalControlsContentAndSocial)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ const View = react_native.View;
 const HelpdeskArticles = Constants.HelpdeskArticles;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterParentalControlsContentAndSocial() {
   let dliU4j;
   let format;
   let intl2;
@@ -70,7 +70,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp10 = cResult[1];
   }
   return tmp10;
-}) : (() => {
+}) : (function FamilyCenterParentalControlsContentAndSocial() {
   let dliU4j;
   let format;
   let intl2;

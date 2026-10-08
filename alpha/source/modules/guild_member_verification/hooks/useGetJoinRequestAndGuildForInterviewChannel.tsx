@@ -1,35 +1,35 @@
-// Module ID: 12313
-// Function ID: 12314
+// Module ID: 12411
+// Function ID: 12412
 // Name: useGetJoinRequestAndGuildForInterviewChannel
-// Dependencies: [32, 19, 2074, 4515, 5939, 4706, 1085, 558, 576, 11, 504, 5938, 2]
+// Dependencies: [32, 19, 2086, 4707, 6122, 4900, 1085, 558, 576, 11, 504, 6121, 2]
 
-// Module 12313 (useGetJoinRequestAndGuildForInterviewChannel)
+// Module 12411 (useGetJoinRequestAndGuildForInterviewChannel)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 5938 */;
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6121 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5939 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4706 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6122 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4900 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let cleanupPromise, flag, tmp3, tmp6, tmp7;
+const require = globalThis.__r;
 
 let tmp;
 const get_initialized = tmp(504);
 let _slicedToArray = _slicedToArray_mod;
 const Permissions = Constants.Permissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetJoinRequestAndGuildForInterviewChannel(id) {
   let closure_2;
   let closure_3;
   let first;
+  let fn;
   let guild;
   let items2;
   let joinRequest;
-  let require;
   let tmp11;
   let tmp16;
   let tmp19;
@@ -60,58 +60,40 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     tmp11 = cResult[2];
   }
   if (cResult[3] !== tmp8) {
-    class J {
+    class M {
       constructor() {
-        request = closure_7.getRequest(closure_3);
+        let canResult;
+        const request = GuildJoinRequestStore.getRequest(closure_3);
         if (null == request) {
           return { joinRequest: null, isModmin: false, guild: null };
         } else {
-          tmp2 = closure_5;
-          guild = closure_5.getGuild(request.guildId);
+          guild = GuildStore.getGuild(request.guildId);
           if (guild == null) {
-            tmp4 = closure_8;
-            guild = closure_8.getJoinRequestGuild(request.guildId);
+            guild = UserGuildJoinRequestStore.getJoinRequestGuild(request.guildId);
           }
-          obj = { joinRequest: null, isModmin: null, guild: null };
-          obj.joinRequest = request;
-          canResult = null != guild;
-          if (canResult) {
-            tmp6 = closure_6;
-            tmp7 = Permissions;
-            canResult = closure_6.can(Permissions.KICK_MEMBERS, guild);
-          }
-          obj.isModmin = canResult;
-          obj.guild = guild;
+          const obj = { joinRequest: request, isModmin: canResult, guild };
+          canResult = null != guild && PermissionStore.can(Permissions.KICK_MEMBERS, guild);
           return obj;
         }
       }
     }
     cResult[3] = tmp8;
-    cResult[4] = J;
-    tmp16 = J;
+    cResult[4] = M;
+    tmp16 = M;
   } else {
-    class J {
+    class M {
       constructor() {
-        request = closure_7.getRequest(closure_3);
+        let canResult;
+        const request = GuildJoinRequestStore.getRequest(closure_3);
         if (null == request) {
           return { joinRequest: null, isModmin: false, guild: null };
         } else {
-          tmp2 = closure_5;
-          guild = closure_5.getGuild(request.guildId);
+          guild = GuildStore.getGuild(request.guildId);
           if (guild == null) {
-            tmp4 = closure_8;
-            guild = closure_8.getJoinRequestGuild(request.guildId);
+            guild = UserGuildJoinRequestStore.getJoinRequestGuild(request.guildId);
           }
-          obj = { joinRequest: null, isModmin: null, guild: null };
-          obj.joinRequest = request;
-          canResult = null != guild;
-          if (canResult) {
-            tmp6 = closure_6;
-            tmp7 = Permissions;
-            canResult = closure_6.can(Permissions.KICK_MEMBERS, guild);
-          }
-          obj.isModmin = canResult;
-          obj.guild = guild;
+          const obj = { joinRequest: request, isModmin: canResult, guild };
+          canResult = null != guild && PermissionStore.can(Permissions.KICK_MEMBERS, guild);
           return obj;
         }
       }
@@ -122,163 +104,104 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   joinRequest = stateFromStoresObject.joinRequest;
   guild = stateFromStoresObject.guild;
   if (cResult[5] === first) {
-    class J {
+    class M {
       constructor() {
-        request = closure_7.getRequest(closure_3);
+        let canResult;
+        const request = GuildJoinRequestStore.getRequest(closure_3);
         if (null == request) {
           return { joinRequest: null, isModmin: false, guild: null };
         } else {
-          tmp2 = closure_5;
-          guild = closure_5.getGuild(request.guildId);
+          guild = GuildStore.getGuild(request.guildId);
           if (guild == null) {
-            tmp4 = closure_8;
-            guild = closure_8.getJoinRequestGuild(request.guildId);
+            guild = UserGuildJoinRequestStore.getJoinRequestGuild(request.guildId);
           }
-          obj = { joinRequest: null, isModmin: null, guild: null };
-          obj.joinRequest = request;
-          canResult = null != guild;
-          if (canResult) {
-            tmp6 = closure_6;
-            tmp7 = Permissions;
-            canResult = closure_6.can(Permissions.KICK_MEMBERS, guild);
-          }
-          obj.isModmin = canResult;
-          obj.guild = guild;
+          const obj = { joinRequest: request, isModmin: canResult, guild };
+          canResult = null != guild && PermissionStore.can(Permissions.KICK_MEMBERS, guild);
           return obj;
         }
       }
     }
-    const effect = obj2.useEffect(F, items2);
+    const effect = obj2.useEffect(fn, items2);
     if (cResult[9] === tmp8) {
-      class J {
+      class M {
         constructor() {
-          request = closure_7.getRequest(closure_3);
+          let canResult;
+          const request = GuildJoinRequestStore.getRequest(closure_3);
           if (null == request) {
             return { joinRequest: null, isModmin: false, guild: null };
           } else {
-            tmp2 = closure_5;
-            guild = closure_5.getGuild(request.guildId);
+            guild = GuildStore.getGuild(request.guildId);
             if (guild == null) {
-              tmp4 = closure_8;
-              guild = closure_8.getJoinRequestGuild(request.guildId);
+              guild = UserGuildJoinRequestStore.getJoinRequestGuild(request.guildId);
             }
-            obj = { joinRequest: null, isModmin: null, guild: null };
-            obj.joinRequest = request;
-            canResult = null != guild;
-            if (canResult) {
-              tmp6 = closure_6;
-              tmp7 = Permissions;
-              canResult = closure_6.can(Permissions.KICK_MEMBERS, guild);
-            }
-            obj.isModmin = canResult;
-            obj.guild = guild;
+            const obj = { joinRequest: request, isModmin: canResult, guild };
+            canResult = null != guild && PermissionStore.can(Permissions.KICK_MEMBERS, guild);
             return obj;
           }
         }
       }
       const effect1 = obj2.useEffect(tmp19, tmp20);
       if (cResult[13] === guild) {
-        class J {
+        class M {
           constructor() {
-            request = closure_7.getRequest(closure_3);
+            let canResult;
+            const request = GuildJoinRequestStore.getRequest(closure_3);
             if (null == request) {
               return { joinRequest: null, isModmin: false, guild: null };
             } else {
-              tmp2 = closure_5;
-              guild = closure_5.getGuild(request.guildId);
+              guild = GuildStore.getGuild(request.guildId);
               if (guild == null) {
-                tmp4 = closure_8;
-                guild = closure_8.getJoinRequestGuild(request.guildId);
+                guild = UserGuildJoinRequestStore.getJoinRequestGuild(request.guildId);
               }
-              obj = { joinRequest: null, isModmin: null, guild: null };
-              obj.joinRequest = request;
-              canResult = null != guild;
-              if (canResult) {
-                tmp6 = closure_6;
-                tmp7 = Permissions;
-                canResult = closure_6.can(Permissions.KICK_MEMBERS, guild);
-              }
-              obj.isModmin = canResult;
-              obj.guild = guild;
+              const obj = { joinRequest: request, isModmin: canResult, guild };
+              canResult = null != guild && PermissionStore.can(Permissions.KICK_MEMBERS, guild);
               return obj;
             }
           }
         }
       }
-      class C {
-        constructor() {
-          if (null == joinRequest) {
-            tmp = closure_0;
-            flag = true;
-            tmp2 = closure_0(true);
-            tmp3 = closure_1;
-            tmp4 = closure_2;
-            obj = closure_1(closure_2[11]);
-            tmp5 = closure_3;
-            joinRequestForInterview = obj.fetchJoinRequestForInterview(closure_3);
-            cleanupPromise = joinRequestForInterview.finally(() => { /* body not rendered: F142590 */ });
-          }
-          return;
-        }
-      }
-      tmp23[0] = tmp5;
-      tmp23[1] = joinRequest;
-      tmp23[2] = guild;
+      const obj4 = { loading: tmp5, joinRequest, joinRequestGuild: guild };
       cResult[13] = guild;
       cResult[14] = joinRequest;
       cResult[15] = tmp5;
-      cResult[16] = tmp23;
+      cResult[16] = obj4;
     }
-    class C {
-      constructor() {
-        if (null == joinRequest) {
-          tmp = closure_0;
-          flag = true;
-          tmp2 = closure_0(true);
-          tmp3 = closure_1;
-          tmp4 = closure_2;
-          obj = closure_1(closure_2[11]);
-          tmp5 = closure_3;
-          joinRequestForInterview = obj.fetchJoinRequestForInterview(closure_3);
-          cleanupPromise = joinRequestForInterview.finally(() => { /* body not rendered: F142590 */ });
-        }
-        return;
+    const fn2 = function w() {
+      if (null == joinRequest) {
+        require(true);
+        const obj = GuildJoinRequestActionCreatorsDefault;
+        const joinRequestForInterview = obj.fetchJoinRequestForInterview(closure_3);
+        joinRequestForInterview.finally(() => {
+          closure_1_0(false);
+        });
       }
-    }
+    };
     const items1 = [joinRequest, tmp8];
     cResult[9] = tmp8;
     cResult[10] = joinRequest;
-    cResult[11] = C;
+    cResult[11] = fn2;
     cResult[12] = items1;
-    tmp19 = C;
+    tmp19 = fn2;
     tmp20 = items1;
   }
-  class F {
-    constructor() {
-      tmp = null != guild || closure_1;
-      if (!tmp) {
-        tmp2 = closure_2;
-        flag = true;
-        tmp3 = closure_2(true);
-        tmp4 = closure_1;
-        tmp5 = closure_2;
-        obj = closure_1(closure_2[11]);
-        requestToJoinGuilds = obj.fetchRequestToJoinGuilds();
-      }
-      return;
+  fn = function b() {
+    const tmp = null != guild || first;
+    if (!tmp) {
+      closure_2(true);
+      const obj = GuildJoinRequestActionCreatorsDefault;
+      const requestToJoinGuilds = obj.fetchRequestToJoinGuilds();
     }
-  }
+  };
   items2 = [guild, first];
   cResult[5] = first;
   cResult[6] = guild;
-  cResult[7] = F;
+  cResult[7] = fn;
   cResult[8] = items2;
-}) : ((id) => {
+}) : (function useGetJoinRequestAndGuildForInterviewChannel(id) {
   let closure_2;
   let first;
   let joinRequest;
   let joinRequestGuild;
-  let require;
   let tmp2;
   let tmp = _slicedToArray(joinRequest.useState(false), 2);
   [tmp2, require] = tmp;
@@ -317,7 +240,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   const items2 = [joinRequest, castResult];
   const effect1 = joinRequest.useEffect(() => {
     if (null == joinRequest) {
-      _require(true);
+      require(true);
       const obj = GuildJoinRequestActionCreatorsDefault;
       const joinRequestForInterview = obj.fetchJoinRequestForInterview(_slicedToArray);
       joinRequestForInterview.finally(() => {

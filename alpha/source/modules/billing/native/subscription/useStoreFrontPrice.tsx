@@ -1,19 +1,19 @@
-// Module ID: 8903
-// Function ID: 8904
+// Module ID: 9336
+// Function ID: 9337
 // Name: useStoreFrontPrice
-// Dependencies: [19, 1085, 558, 576, 4534, 2]
+// Dependencies: [19, 1085, 558, 576, 4726, 2]
 
-// Module 8903 (useStoreFrontPrice)
+// Module 9336 (useStoreFrontPrice)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import PremiumUtils from "PremiumUtils" /* 4534 */;
+import PremiumUtils from "PremiumUtils" /* 4726 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const constants = Constants.PriceSetAssignmentPurchaseTypes;
 const PriceStates = { PRICE_AVAILABLE: "PRICE_AVAILABLE", SUBSCRIPTION_PLAN_UNAVAILABLE: "SUBSCRIPTION_PLAN_UNAVAILABLE", STOREFRONT_UNAVAILABLE: "STOREFRONT_UNAVAILABLE", MISMATCHING_COUNTRIES: "MISMATCHING_COUNTRIES", COUNTRY_PRICE_UNAVAILABLE: "COUNTRY_PRICE_UNAVAILABLE" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((prices, currency) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStoreFrontPrice(prices, currency) {
   let PRICE_AVAILABLE;
   let tmp6;
   const obj = react2;
@@ -66,7 +66,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((prices, currency) 
   cResult[4] = PRICE_AVAILABLE;
   cResult[5] = obj3;
   tmp14 = obj3;
-}) : ((arg0, arg1) => {
+}) : (function useStoreFrontPrice(arg0, arg1) {
   const id = arg0;
   let closure_1 = arg1;
   const items = [arg0, arg1];

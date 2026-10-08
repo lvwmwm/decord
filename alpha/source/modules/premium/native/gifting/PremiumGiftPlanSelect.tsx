@@ -1,27 +1,27 @@
-// Module ID: 10408
-// Function ID: 10409
+// Module ID: 10005
+// Function ID: 10006
 // Name: PremiumGiftPlanSelect
-// Dependencies: [32, 19, 17, 7874, 10409, 1379, 1085, 21, 4896, 587, 683, 558, 576, 1490, 1618, 6075, 1484, 10443, 5777, 6023, 504, 10486, 10484, 7866, 10488, 10406, 10492, 10495, 7556, 4618, 1188, 4897, 10503, 6688, 10504, 10538, 9096, 1126, 6024, 5981, 10788, 5612, 4892, 2]
+// Dependencies: [32, 19, 17, 8292, 10006, 1391, 1085, 21, 5090, 587, 683, 558, 576, 1502, 1630, 6261, 1496, 10040, 5360, 6209, 504, 10083, 10081, 8284, 10085, 10003, 10089, 10092, 9267, 4810, 1200, 5091, 10100, 6865, 10101, 10135, 10340, 1126, 6210, 6164, 12741, 5387, 5086, 2]
 
-// Module 10408 (PremiumGiftPlanSelect)
+// Module 10005 (PremiumGiftPlanSelect)
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1188 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import timing from "timing" /* 4897 */;
-import PremiumGiftFeaturesCardDefault from "PremiumGiftFeaturesCard" /* 10495 */;
+import native from "native" /* 1200 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import timing from "timing" /* 5091 */;
+import PremiumGiftFeaturesCardDefault from "PremiumGiftFeaturesCard" /* 10092 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BadgeDirectoryStore_mod from "BadgeDirectoryStore" /* 7874 */;
-import PromotionsStore_mod from "PromotionsStore" /* 10409 */;
+import BadgeDirectoryStore_mod from "BadgeDirectoryStore" /* 8292 */;
+import PromotionsStore_mod from "PromotionsStore" /* 10006 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let navigation, state, v16;
+let closure_0, navigation, state, v16;
 
 let closure_12;
 let closure_14;
@@ -66,7 +66,7 @@ let closure_18 = { code: "function PremiumGiftPlanSelectTsx1(){const{STANDARD_EA
 let closure_19 = { code: "function PremiumGiftPlanSelectTsx2(value,index_0){const{lastItemIndex,CAROUSEL_GAP,centerOffset,rightOffset,carouselStep}=this.__closure;const activeIndex=index_0-value;const leftT=Math.max(0,Math.min(1,activeIndex));const rightT=Math.max(0,Math.min(1,activeIndex-(lastItemIndex-1)));const offset=CAROUSEL_GAP+leftT*(centerOffset-CAROUSEL_GAP)+rightT*(rightOffset-centerOffset);return{transform:[{translateX:value*carouselStep+offset}]};}" };
 const __initData = { code: "function PremiumGiftPlanSelectTsx3(){const{STANDARD_EASING,withTiming,carouselVisibility}=this.__closure;const animationSettings={easing:STANDARD_EASING,duration:500};return{opacity:withTiming(carouselVisibility.get()?1:0,animationSettings),transform:[{translateY:withTiming(carouselVisibility.get()?0:100,animationSettings)}]};}" };
 const __initData2 = { code: "function PremiumGiftPlanSelectTsx4(value,index_0){const{lastItemIndex,leftOffset,centerOffset,rightOffset,carouselStep}=this.__closure;const activeIndex=index_0-value;const leftT=Math.max(0,Math.min(1,activeIndex));const rightT=Math.max(0,Math.min(1,activeIndex-(lastItemIndex-1)));const offset=leftOffset+leftT*(centerOffset-leftOffset)+rightT*(rightOffset-centerOffset);return{transform:[{translateX:value*carouselStep+offset}]};}" };
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftPlanSelect(arg0) {
   let bottom;
   let claimableRewards;
   let closure_6;
@@ -126,14 +126,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   tmpResult.useNavigatorBackPressHandler(tmp11);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     items = [PromotionsStore];
-    class A {
+    class C {
       constructor() {
         return PromotionsStore.getGiftPromotionRewardSkuIds();
       }
     }
     cResult[2] = items;
-    cResult[3] = A;
-    tmp14 = A;
+    cResult[3] = C;
+    tmp14 = C;
     tmp13 = items;
   } else {
     tmp13 = cResult[2];
@@ -146,7 +146,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { location: "PremiumGiftPlanSelect" };
     cResult[4] = obj5;
-    class A {
+    class C {
       constructor() {
         return PromotionsStore.getGiftPromotionRewardSkuIds();
       }
@@ -158,7 +158,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let enabled = tmp5Result.useConfig(tmp18).enabled;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [BadgeDirectoryStore];
-    class A {
+    class C {
       constructor() {
         return PromotionsStore.getGiftPromotionRewardSkuIds();
       }
@@ -193,7 +193,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[7] !== navigation) {
     class K {
       constructor() {
-        navigation = navigation.addListener("state", () => {
+        closure_0 = closure_0.addListener("state", () => {
           state = state.getState();
           closure_1_6(state.routes[state.index].name === navigation(onClose[25]).PremiumGiftScreens.PLAN_SELECT);
         });
@@ -203,7 +203,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const items2 = [navigation];
-    class A {
+    class C {
       constructor() {
         return PromotionsStore.getGiftPromotionRewardSkuIds();
       }
@@ -216,7 +216,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     class K {
       constructor() {
-        navigation = navigation.addListener("state", () => {
+        closure_0 = closure_0.addListener("state", () => {
           state = state.getState();
           closure_1_6(state.routes[state.index].name === navigation(onClose[25]).PremiumGiftScreens.PLAN_SELECT);
         });
@@ -234,7 +234,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
     class K {
       constructor() {
-        navigation = navigation.addListener("state", () => {
+        closure_0 = closure_0.addListener("state", () => {
           state = state.getState();
           closure_1_6(state.routes[state.index].name === navigation(onClose[25]).PremiumGiftScreens.PLAN_SELECT);
         });
@@ -244,7 +244,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     cResult[10] = tmp38;
-    class A {
+    class C {
       constructor() {
         return PromotionsStore.getGiftPromotionRewardSkuIds();
       }
@@ -252,7 +252,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     class K {
       constructor() {
-        navigation = navigation.addListener("state", () => {
+        closure_0 = closure_0.addListener("state", () => {
           state = state.getState();
           closure_1_6(state.routes[state.index].name === navigation(onClose[25]).PremiumGiftScreens.PLAN_SELECT);
         });
@@ -271,7 +271,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     cResult[11] = Se;
-    class A {
+    class C {
       constructor() {
         return PromotionsStore.getGiftPromotionRewardSkuIds();
       }
@@ -301,7 +301,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const effect1 = obj11.useEffect(tmp39, items3);
     const _Symbol = Symbol;
-    class A {
+    class C {
       constructor() {
         return PromotionsStore.getGiftPromotionRewardSkuIds();
       }
@@ -323,7 +323,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       cResult[15] = Ie;
-      class A {
+      class C {
         constructor() {
           return PromotionsStore.getGiftPromotionRewardSkuIds();
         }
@@ -364,7 +364,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       cResult[16] = tmp44;
-      class A {
+      class C {
         constructor() {
           return PromotionsStore.getGiftPromotionRewardSkuIds();
         }
@@ -405,78 +405,58 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     }
-    function be(variant, arg1) {
-      let obj = arg1;
-      if (undefined === arg1) {
-        obj = { forScreenReader: false };
-      }
-      const forScreenReader = obj.forScreenReader;
-      return (item) => {
-        let fn;
-        let obj3;
-        let str;
-        let str2;
-        let tmp5;
-        item = item.item;
-        const index = item.index;
-        let tmp2 = forScreenReader;
-        const tmp3 = forScreenReader ? metroRequire : metroImportDefault;
-        const obj = { accessible: tmp2, accessibilityRole: str, onPress: fn, style: { paddingVertical: nativeDefault.space.PX_8 }, children: closure_12(tmp5, obj3, index) };
-        str = undefined;
-        if (tmp2) {
-          str = "button";
+    class Pe {
+      constructor(arg0, arg1) {
+        closure_0 = arg0;
+        obj = arg1;
+        if (undefined === arg1) {
+          obj = { forScreenReader: false };
         }
-        fn = undefined;
-        if (tmp2) {
-          fn = () => closure_2_3(item);
-        }
-        obj3 = {
-          premiumType: item,
-          variant,
-          onPress() {
-            return closure_2_3(item);
-          },
-          style: size,
-          onLayout(nativeEvent) {
-            const height = nativeEvent.nativeEvent.layout.height;
-            if (height > 0) {
-              let num = ref.current[index];
-              const current = ref.current;
-              const _Math = Math;
-              const tmp2 = index;
-              if (num == null) {
-                num = 0;
-              }
-              current[tmp2] = max(height, num);
-              closure_2_10();
-            }
-          },
-          claimableRewards,
-          isSelected: first === index
+        forScreenReader = obj.forScreenReader;
+        return function PremiumGiftCarouselItem(item) {
+          let fn;
+          let obj3;
+          let str;
+          let str2;
+          let tmp5;
+          item = item.item;
+          const index = item.index;
+          let tmp2 = forScreenReader;
+          const tmp3 = forScreenReader ? metroRequire : metroImportDefault;
+          const obj = { accessible: tmp2, accessibilityRole: str, onPress: fn, style: { paddingVertical: nativeDefault.space.PX_8 }, children: closure_12(tmp5, obj3, index) };
+          str = undefined;
+          if (tmp2) {
+            str = "button";
+          }
+          fn = undefined;
+          if (tmp2) {
+            fn = () => { /* body not rendered: F153540 */ };
+          }
+          obj3 = { premiumType: item, variant, onPress() { /* body not rendered: F153541 */ }, style: size, onLayout() { /* body not rendered: F153542 */ }, claimableRewards, isSelected: first === index };
+          ({ paddingVertical: nativeDefault.space.PX_8 });
+          size = { height: first1, width: VerticalGradient, alignSelf: str2 };
+          str2 = undefined;
+          tmp5 = PremiumGiftFeaturesCardDefault;
+          const tmp6 = variant;
+          if ("default" === tmp6) {
+            str2 = "center";
+          }
+          return closure_12(tmp3, obj);
         };
-        ({ paddingVertical: nativeDefault.space.PX_8 });
-        size = { height: first1, width: VerticalGradient, alignSelf: str2 };
-        str2 = undefined;
-        tmp5 = PremiumGiftFeaturesCardDefault;
-        const tmp6 = variant;
-        if ("default" === tmp6) {
-          str2 = "center";
-        }
-        return closure_12(tmp3, obj);
-      };
+      }
     }
     cResult[17] = first1;
     cResult[18] = result;
     cResult[19] = claimableRewards;
     cResult[20] = first;
     cResult[21] = selectPremiumGift;
-    cResult[22] = be;
+    cResult[22] = Pe;
   }
   items3 = [shouldUseDMWishlistGiftingDesign, undefined];
   cResult[12] = shouldUseDMWishlistGiftingDesign;
   cResult[13] = undefined;
   cResult[14] = items3;
-}) : ((shouldUseDMWishlistGiftingDesign) => {
+}) : (function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) {
   let AvatarSizes;
   let bottom;
   let c16;
@@ -495,7 +475,6 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let items17;
   let items18;
   let items19;
-  let items20;
   let nextTier;
   let obj13;
   let obj14;
@@ -506,6 +485,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj26;
   let obj31;
   let obj32;
+  let obj33;
   let obj39;
   let obj41;
   let recipientUser;
@@ -648,7 +628,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       obj = { forScreenReader: false };
     }
     const forScreenReader = obj.forScreenReader;
-    return (item) => {
+    return function PremiumGiftCarouselItem(item) {
       let fn;
       let obj3;
       let str;
@@ -732,7 +712,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       num = 1;
     }
     const obj3 = { opacity: withTiming(num, obj), transform: items };
-    const withTiming2 = tmp(4897).withTiming;
+    const withTiming2 = tmp(5091).withTiming;
     let num2 = 100;
     timing;
     if (obj2.get()) {
@@ -783,7 +763,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (isLoadingWishlist) {
     const obj11 = { style: items11, children: c12(closure_5, { size: "large" }) };
     items11 = [, ];
-    ({ container: arr23[0], loadingContainer: arr23[1] } = tmp15);
+    ({ container: arr22[0], loadingContainer: arr22[1] } = tmp15);
     tmp64Result6 = c12(c7, obj11);
   } else if (shouldUseDMWishlistGiftingDesign) {
     const obj12 = { style: tmp15.container, children: tmp66(num, obj13) };
@@ -882,10 +862,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     items13[4] = c12(tmp4(tmp2[41]), obj29);
     const obj30 = { contentContainerStyle: obj31, children: callback2(tmp50, obj32) };
     obj31 = { paddingBottom: bottom };
-    obj32 = { style: items17, children: items18 };
-    items17 = [{ paddingTop: top + tmp(tmp2[15]).NAV_BAR_HEIGHT }];
+    obj32 = { style: obj33, children: items17 };
     let tmp48Result = null != recipientUser;
-    const obj33 = { paddingTop: top + tmp(tmp2[15]).NAV_BAR_HEIGHT };
+    obj33 = { paddingTop: top + tmp(tmp2[15]).NAV_BAR_HEIGHT };
     const tmp49 = currentIndex;
     tmp50 = c7;
     if (tmp48Result) {
@@ -894,7 +873,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       AvatarSizes = tmp(tmp2[30]).AvatarSizes;
       tmp48Result = tmp48(Avatar, obj34);
     }
-    items18 = [tmp48Result, , , , ];
+    items17 = [tmp48Result, , , , ];
     const obj35 = { style: tmp15.title, variant: str3, color: "text-overlay-light", children: formatToPlainStringResult };
     str3 = "heading-xxl/extrabold";
     const Text = tmp(tmp2[42]).Text;
@@ -915,11 +894,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const intl2 = tmp(tmp2[37]).intl;
       formatToPlainStringResult = intl2.string(tmp(tmp2[37]).t.dqQgZv);
     }
-    items18[1] = c12(Text, obj35);
+    items17[1] = c12(Text, obj35);
     const obj37 = { style: tmp15.description, variant: "heading-sm/medium", color: "text-overlay-light", children: intl4.string(tmp(tmp2[37]).t["30qzrd"]) };
     const Text2 = tmp(tmp2[42]).Text;
     intl4 = tmp(tmp2[37]).intl;
-    items18[2] = c12(Text2, obj37);
+    items17[2] = c12(Text2, obj37);
     let tmp48Result3 = enabled;
     if (tmp48Result3) {
       const obj38 = { style: tmp15.badgeBanner, onPress: callback1, accessibilityRole: "button", children: c12(tmp4Result7, obj39) };
@@ -932,7 +911,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmpResult10 = tmp(tmp2[24]);
       tmp48Result3 = tmp48(tmp49, obj38);
     }
-    items18[3] = tmp48Result3;
+    items17[3] = tmp48Result3;
     if (0 === stateFromStoresArray.length) {
       let tmp48Result4;
       if (isScreenReaderEnabled) {
@@ -955,7 +934,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp48Result4 = tmp48(tmp53, obj40);
       } else {
         const size1 = {
-          style: items19,
+          style: items18,
           data: sharedValue,
           renderItem: memo1,
           width,
@@ -970,7 +949,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           modeConfig: { parallaxScrollingScale: 1, parallaxScrollingOffset: 40 },
           onSnapToItem: tmp16[1]
         };
-        items19 = [tmp15.carousel, animatedStyle];
+        items18 = [tmp15.carousel, animatedStyle];
         const tmp4Result8 = tmp4(tmp2[34]);
         if (enabled) {
           memo1 = memo;
@@ -983,10 +962,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (enabled) {
           tmp61 = callback3;
         }
-        const obj42 = { children: items20 };
-        items20 = [c12(tmp4Result8, size1), ];
+        const obj42 = { children: items19 };
+        items19 = [c12(tmp4Result8, size1), ];
         const obj43 = { numberOfItems: sharedValue.length, currentIndex };
-        items20[1] = c12(tmp(tmp2[30]).CarouselPagination, obj43);
+        items19[1] = c12(tmp(tmp2[30]).CarouselPagination, obj43);
         tmp48Result4 = tmp45(tmp46, obj42);
       }
       tmp58 = tmp48Result4;
@@ -994,7 +973,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp58 = null;
     }
     const obj44 = { children: items13 };
-    items18[4] = tmp58;
+    items17[4] = tmp58;
     items13[5] = c12(num, obj30);
     tmp64Result6 = tmp45(tmp46, obj44);
   }

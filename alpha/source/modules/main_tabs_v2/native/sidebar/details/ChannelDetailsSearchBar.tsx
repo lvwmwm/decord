@@ -1,21 +1,19 @@
-// Module ID: 16811
-// Function ID: 16812
+// Module ID: 17090
+// Function ID: 17091
 // Name: ChannelDetailsSearchBar
-// Dependencies: [19, 11994, 7522, 10666, 21, 4896, 12022, 558, 576, 11941, 12001, 12005, 5916, 1126, 10112, 16812, 2]
+// Dependencies: [19, 12067, 9245, 9581, 21, 5090, 12095, 558, 576, 12014, 12074, 12078, 6189, 1126, 9697, 17091, 2]
 
-// Module 16811 (ChannelDetailsSearchBar)
+// Module 17090 (ChannelDetailsSearchBar)
 import Fragment from "Fragment" /* 21 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 7522 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10666 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12005 */;
-import SearchButton from "SearchButton" /* 12022 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 9245 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9581 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12078 */;
+import SearchButton from "SearchButton" /* 12095 */;
 import react from "react" /* 19 */;
-import SearchQueryStore_mod from "SearchQueryStore" /* 11994 */;
-import createStyles from "createStyles" /* 4896 */;
+import SearchQueryStore_mod from "SearchQueryStore" /* 12067 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channelId;
 
 let obj2;
 let SearchQueryStore = SearchQueryStore_mod;
@@ -25,10 +23,11 @@ const jsx = Fragment.jsx;
 let obj = { back: obj2 };
 obj2 = { justifyContent: "center", height: SearchButton.SEARCH_BAR_HEIGHT, paddingStart: CHANNEL_DETAILS_MARGIN, paddingEnd: 8 };
 let closure_7 = createStyles.createStyles(obj);
-const forwardRef = react.forwardRef;
-const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId, arg1) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelDetailsSearchBar(channelId) {
   let channelDetailsSearchContext;
   let closure_4;
+  let ref;
+  let showBackButton;
   let tmp12;
   let tmp7;
   let tmp = channelId;
@@ -36,7 +35,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
   const cResult = obj.c(22);
   channelId = channelId.channelId;
   const onBackPress = channelId.onBackPress;
-  const showBackButton = channelId.showBackButton;
+  ({ showBackButton, ref } = channelId);
   let tmp4 = undefined === showBackButton;
   const guildId = channelId.guildId;
   const tmp2 = channelDetailsSearchContext;
@@ -47,7 +46,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
   const tmpResult = tmp(tmp2[9]);
   channelDetailsSearchContext = tmpResult.useChannelDetailsSearchContext(channelId, guildId);
   if (cResult[0] !== channelDetailsSearchContext) {
-    const fn = function h() {
+    const fn = function u() {
       let searchContext;
       return () => {
         const obj = onBackPress(channelDetailsSearchContext[10]);
@@ -142,7 +141,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
   cResult[3] = channelDetailsSearchContext;
   cResult[4] = items;
   tmp8 = items;
-}) : ((channelId, ref) => {
+}) : (function ChannelDetailsSearchBar(channelId) {
   let intl;
   channelId = channelId.channelId;
   const onBackPress = channelId.onBackPress;
@@ -153,6 +152,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
   }
   let channelDetailsSearchContext;
   let callback;
+  const ref = channelId.ref;
   let tmp = closure_7();
   let obj = channelId(channelDetailsSearchContext[9]);
   channelDetailsSearchContext = obj.useChannelDetailsSearchContext(channelId, guildId);
@@ -195,8 +195,8 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
     intl = tmp2(tmp3[13]).intl;
     tmp9Result = tmp9(PressableOpacity, obj3);
   }
-  return <tmp10 ref={arg1} searchContext={channelDetailsSearchContext} backButton={tmp9Result} />;
-})));
+  return <tmp10 ref={ref} searchContext={channelDetailsSearchContext} backButton={tmp9Result} />;
+}));
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsSearchBar.tsx");
 
 export default memoResult;

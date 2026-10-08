@@ -1,25 +1,25 @@
-// Module ID: 11802
-// Function ID: 11803
+// Module ID: 11869
+// Function ID: 11870
 // Name: AppLauncherChoicesActionSheet
-// Dependencies: [32, 109, 19, 17, 1489, 21, 4896, 587, 558, 576, 8404, 1618, 1369, 5628, 8924, 4860, 6440, 11803, 11805, 2]
+// Dependencies: [32, 109, 19, 17, 1501, 21, 5090, 587, 558, 576, 8600, 1630, 1381, 5975, 8555, 5054, 6618, 11870, 11872, 2]
 
-// Module 11802 (AppLauncherChoicesActionSheet)
+// Module 11869 (AppLauncherChoicesActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1489 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5628 */;
-import Form from "Form" /* 8924 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5975 */;
+import Form from "Form" /* 8555 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, item, obj1, option, scrollable;
+let dependencyMap, item, obj1;
 
 let c10;
 let c9;
@@ -28,8 +28,8 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const defaultMVCPConfig = tmp(8404);
-const f109323 = (choice, originalIndex) => ({ choice, originalIndex });
+const defaultMVCPConfig = tmp(8600);
+const f109717 = (choice, originalIndex) => ({ choice, originalIndex });
 let length = ["scrollable"];
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
@@ -45,7 +45,7 @@ obj4 = { borderBottomLeftRadius: nativeDefault.radii.xl, borderBottomRightRadius
 obj5 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginLeft: 16 };
 let closure_11 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollable) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function FlashListWrapper(scrollable) {
   let tmp10Result;
   let tmp4;
   let tmp5;
@@ -86,7 +86,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollable) =>
   cResult[4] = tmp5;
   cResult[5] = tmp10Result;
   tmp9 = tmp10Result;
-}) : ((scrollable) => {
+}) : (function FlashListWrapper(scrollable) {
   let tmp2Result;
   scrollable = scrollable.scrollable;
   const merged = Object.assign(scrollable, Object.assign({ scrollable: 0 }));
@@ -105,7 +105,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollable) =>
   return tmp2Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherChoicesActionSheet(option) {
   let closure_2;
   let closure_4;
   let closure_6;
@@ -121,10 +121,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
   const initChoiceIndex = option.initChoiceIndex;
   const tmp4 = closure_11();
   dependencyMap = tmp4;
-  const bottom = onChoiceSelect(1618)().bottom;
+  const bottom = onChoiceSelect(1630)().bottom;
   if (cResult[0] !== bottom) {
     let sum = bottom;
-    const tmpResult = tmp(1369);
+    const tmpResult = tmp(1381);
     if (!tmpResult.isIOS()) {
       sum = bottom + DEFAULT_CONTENT_PADDING;
     }
@@ -132,64 +132,77 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
     cResult[1] = sum;
   }
   if (cResult[2] !== option.choices) {
-    const fn = function f() {
-      let choices = option.choices;
-      if (choices == null) {
-        choices = [];
+    class A {
+      constructor() {
+        choices = option.choices;
+        if (choices == null) {
+          choices = [];
+        }
+        return choices.map(function() { /* body not rendered: F109717 */ });
       }
-      return choices.map(f109323);
-    };
+    }
     cResult[2] = option.choices;
-    cResult[3] = fn;
-    tmp8 = fn;
+    cResult[3] = A;
+    tmp8 = A;
   } else {
-    tmp8 = cResult[3];
+    class A {
+      constructor() {
+        choices = option.choices;
+        if (choices == null) {
+          choices = [];
+        }
+        return choices.map(function() { /* body not rendered: F109717 */ });
+      }
+    }
   }
   [first, _slicedToArray] = react.useState(tmp8);
   [first1, react] = react.useState(initChoiceIndex);
   if (cResult[4] !== option.choices) {
-    class A {
-      constructor(query) {
-        let choices;
-        const obj = { query, choices, limit: null };
+    class R {
+      constructor(arg0) {
+        tmp = closure_1(closure_2[13]);
+        obj = { query: option, choices: null, limit: null };
         choices = option.choices;
-        const queryChoice = AutocompleteUtilsDefault.queryChoice;
-        AutocompleteUtilsDefault;
+        queryChoice = tmp.queryChoice;
         if (choices == null) {
           choices = [];
         }
-        closure_4(queryChoice(obj));
+        obj.choices = choices;
+        tmp2 = closure_4(queryChoice(obj));
+        return;
       }
     }
     cResult[4] = option.choices;
-    cResult[5] = A;
+    cResult[5] = R;
   } else {
-    class A {
-      constructor(query) {
-        let choices;
-        const obj = { query, choices, limit: null };
+    class R {
+      constructor(arg0) {
+        tmp = closure_1(closure_2[13]);
+        obj = { query: option, choices: null, limit: null };
         choices = option.choices;
-        const queryChoice = AutocompleteUtilsDefault.queryChoice;
-        AutocompleteUtilsDefault;
+        queryChoice = tmp.queryChoice;
         if (choices == null) {
           choices = [];
         }
-        closure_4(queryChoice(obj));
+        obj.choices = choices;
+        tmp2 = closure_4(queryChoice(obj));
+        return;
       }
     }
   }
   if (cResult[6] === first) {
-    class A {
-      constructor(query) {
-        let choices;
-        const obj = { query, choices, limit: null };
+    class R {
+      constructor(arg0) {
+        tmp = closure_1(closure_2[13]);
+        obj = { query: option, choices: null, limit: null };
         choices = option.choices;
-        const queryChoice = AutocompleteUtilsDefault.queryChoice;
-        AutocompleteUtilsDefault;
+        queryChoice = tmp.queryChoice;
         if (choices == null) {
           choices = [];
         }
-        closure_4(queryChoice(obj));
+        obj.choices = choices;
+        tmp2 = closure_4(queryChoice(obj));
+        return;
       }
     }
   }
@@ -220,21 +233,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
       obj = { style: items, children: null };
       items[2] = lastItem;
       tmp5 = tmp === originalIndex;
-      obj1 = {
-        style: null,
-        label: item.choice.displayName,
-        align: "right",
-        selected: tmp5,
-        onPress() {
-              closure_6(item.originalIndex);
-              onChoiceSelect(item.choice, item.originalIndex);
-              const obj = ActionSheetActionCreatorsDefault;
-              obj.hideActionSheet();
-            }
-      };
-      items1 = [];
-      items1[0] = tmp4.listItem;
-      obj1.style = items1;
+      obj1 = { style: tmp4.listItem, label: item.choice.displayName, align: "right", selected: tmp5, onPress() { /* body not rendered: F143285 */ } };
       obj.children = tmp2(option(closure_2[14]).FormRadioRow, obj1);
       return tmp2(tmp3, obj);
     }
@@ -247,7 +246,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
   cResult[11] = tmp4.listItem;
   cResult[12] = tmp4.listItemContainer;
   cResult[13] = N;
-}) : ((option) => {
+}) : (function AppLauncherChoicesActionSheet(option) {
   let closure_2;
   let closure_4;
   let closure_6;
@@ -269,9 +268,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
   let tmp = closure_11();
   dependencyMap = tmp;
   const tmp2 = dependencyMap;
-  const bottom = onChoiceSelect(1618)().bottom;
+  const bottom = onChoiceSelect(1630)().bottom;
   let tmp3 = option;
-  let obj = option(1369);
+  let obj = option(1381);
   let sum = bottom;
   if (!obj.isIOS()) {
     sum = bottom + DEFAULT_CONTENT_PADDING;
@@ -281,11 +280,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
     if (choices == null) {
       choices = [];
     }
-    return choices.map(f109323);
+    return choices.map(f109717);
   });
   [first1, react] = react.useState(initChoiceIndex);
   let items = [option.choices];
-  let items1 = [onChoiceSelect, first1, tmp, data];
+  const items1 = [onChoiceSelect, first1, tmp, data];
   const callback = react.useCallback((query) => {
     let choices;
     const obj = { query, choices, limit: null };
@@ -299,7 +298,6 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
   }, items);
   const items2 = [tmp.divider];
   const callback1 = react.useCallback((item) => {
-    let items1;
     let obj2;
     item = item.item;
     const index = item.index;
@@ -319,7 +317,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
     let obj = { style: items, children: tmp2(option(closure_2[14]).FormRadioRow, obj2) };
     items[2] = lastItem;
     obj2 = {
-      style: items1,
+      style: closure_2.listItem,
       label: item.choice.displayName,
       align: "right",
       selected: tmp === originalIndex,
@@ -330,7 +328,6 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
         obj.hideActionSheet();
       }
     };
-    items1 = [closure_2.listItem];
     return closure_1_9(tmp3, obj);
   }, items1);
   const callback2 = react.useCallback(() => {
@@ -353,15 +350,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
   let obj2 = { option, startExpanded: tmp13, onDismiss, scrollable: tmp13, children: items3 };
   let tmp16 = tmp13;
   length = data.length;
-  const AppLauncherCommandOptionActionSheet = tmp3(11805).AppLauncherCommandOptionActionSheet;
+  const AppLauncherCommandOptionActionSheet = tmp3(11872).AppLauncherCommandOptionActionSheet;
   const tmp15 = closure_10;
   if (tmp13) {
     const obj3 = { onChange: callback };
-    tmp16 = closure_9(tmp3(11803).AppLauncherListSearchBar, obj3);
+    tmp16 = closure_9(tmp3(11870).AppLauncherListSearchBar, obj3);
   }
   items3 = [tmp16, ];
   if (0 === length) {
-    tmp20 = closure_9(tmp3(11803).AppLauncherListEmptyState, {});
+    tmp20 = closure_9(tmp3(11870).AppLauncherListEmptyState, {});
   } else {
     const obj4 = {
       scrollable: tmp13,

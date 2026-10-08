@@ -1,21 +1,21 @@
-// Module ID: 12097
-// Function ID: 12098
+// Module ID: 12175
+// Function ID: 12176
 // Name: ChatInputGuardMessageRequest
-// Dependencies: [5, 19, 1377, 21, 558, 576, 1490, 12098, 504, 4574, 1126, 4813, 12099, 4907, 12105, 2]
+// Dependencies: [5, 19, 1389, 21, 558, 576, 1502, 12176, 504, 4766, 1126, 5007, 12177, 5101, 12183, 2]
 
-// Module 12097 (ChatInputGuardMessageRequest)
+// Module 12175 (ChatInputGuardMessageRequest)
 import Fragment from "Fragment" /* 21 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12105 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12183 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c1, channel, dependencyMap, id, importDefault, navigation;
+let c1, dependencyMap, id, importDefault, navigation;
 
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputGuardMessageRequest(channel) {
   let acceptMessageRequest;
   let first;
   let isAcceptLoading;
@@ -23,8 +23,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   let isOptimisticRejected;
   let isRejectLoading;
   let isUserProfileLoading;
-  let obj5;
   let tmp10;
+  let tmp11;
   let tmp8;
   const tmp = channel;
   const tmp2 = acceptMessageRequest;
@@ -55,167 +55,129 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   const tmpResult = tmp(tmp2[8]);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp8);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function y() {
+    function handleRequestError() {
       let intl;
       const obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: intl.string(channel(acceptMessageRequest[10]).t["EDYbS+"]), icon: navigation(acceptMessageRequest[11]) };
       const open = navigation(acceptMessageRequest[9]).open;
       navigation(acceptMessageRequest[9]);
       intl = channel(acceptMessageRequest[10]).intl;
       open(obj);
-    };
-    cResult[3] = fn2;
-    tmp10 = fn2;
+    }
+    cResult[3] = handleRequestError;
+    tmp10 = handleRequestError;
   } else {
     tmp10 = cResult[3];
   }
   if (cResult[4] !== navigation) {
-    class S {
-      constructor() {
-        navigation.pop();
-      }
+    function handleRejectSuccess() {
+      navigation.pop();
     }
     cResult[4] = navigation;
-    cResult[5] = S;
+    cResult[5] = handleRejectSuccess;
+    tmp11 = handleRejectSuccess;
   } else {
-    class S {
-      constructor() {
-        navigation.pop();
-      }
-    }
+    tmp11 = cResult[5];
   }
   if (cResult[6] === tmp11) {
-    class S {
-      constructor() {
-        navigation.pop();
-      }
+    let tmp12;
+    if (cResult[7] === stateFromStores) {
+      tmp12 = cResult[8];
     }
     const tmpResult2 = tmp(tmp2[12]);
-    const messageRequestActions = tmpResult2.useMessageRequestActions(obj5);
+    const messageRequestActions = tmpResult2.useMessageRequestActions(tmp12);
     acceptMessageRequest = messageRequestActions.acceptMessageRequest;
     const rejectMessageRequest = messageRequestActions.rejectMessageRequest;
     ({ isAcceptLoading, isRejectLoading, isUserProfileLoading, isOptimisticAccepted, isOptimisticRejected } = messageRequestActions);
-    const tmp13 = isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected;
     if (cResult[9] === acceptMessageRequest) {
-      class S {
-        constructor() {
-          navigation.pop();
-        }
+      let tmp15;
+      if (cResult[10] === channel.id) {
+        tmp15 = cResult[11];
       }
       if (cResult[12] === channel.id) {
-        let tmp18;
+        let tmp17;
+        let tmp19;
+        let tmp21;
         let tmp23;
-        class S {
-          constructor() {
-            navigation.pop();
-          }
+        let tmp25;
+        if (cResult[13] === rejectMessageRequest) {
+          tmp17 = cResult[14];
         }
         const _Symbol = Symbol;
         if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-          class S {
-            constructor() {
-              navigation.pop();
-            }
-          }
-          const stringResult = obj7.string(tmp(tmp2[10]).t["e/eQVB"]);
+          let intl = tmp(tmp2[10]).intl;
+          const stringResult = intl.string(tmp(tmp2[10]).t["e/eQVB"]);
           cResult[15] = stringResult;
-          tmp18 = stringResult;
+          tmp19 = stringResult;
         } else {
-          class S {
-            constructor() {
-              navigation.pop();
-            }
-          }
+          tmp19 = cResult[15];
         }
         if (cResult[16] !== isMessageRequestRestrictedViewer) {
-          class S {
-            constructor() {
-              navigation.pop();
-            }
-          }
-          const string = tmp21.string;
+          const intl2 = tmp(tmp2[10]).intl;
+          const string = intl2.string;
           const t = tmp(tmp2[10]).t;
-          cResult[16] = isMessageRequestRestrictedViewer;
-          cResult[17] = string(isMessageRequestRestrictedViewer ? t.YQ0uUE : t.HcVzGI);
           const stringResult1 = string(isMessageRequestRestrictedViewer ? t.YQ0uUE : t.HcVzGI);
+          cResult[16] = isMessageRequestRestrictedViewer;
+          cResult[17] = stringResult1;
+          tmp21 = stringResult1;
         } else {
-          class S {
-            constructor() {
-              navigation.pop();
-            }
-          }
+          tmp21 = cResult[17];
         }
         const _Symbol2 = Symbol;
         if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-          class S {
-            constructor() {
-              navigation.pop();
-            }
-          }
-          const stringResult2 = obj8.string(tmp(tmp2[10]).t.Kz8Pwr);
+          const intl3 = tmp(tmp2[10]).intl;
+          const stringResult2 = intl3.string(tmp(tmp2[10]).t.Kz8Pwr);
           cResult[18] = stringResult2;
           tmp23 = stringResult2;
         } else {
-          class S {
-            constructor() {
-              navigation.pop();
-            }
-          }
+          tmp23 = cResult[18];
         }
         if (!isAcceptLoading) {
-          class S {
-            constructor() {
-              navigation.pop();
-            }
-          }
+          isAcceptLoading = isUserProfileLoading;
         }
         if (!isAcceptLoading) {
-          class S {
-            constructor() {
-              navigation.pop();
-            }
-          }
+          isAcceptLoading = isOptimisticAccepted;
         }
         if (cResult[19] !== isMessageRequestRestrictedViewer) {
-          class S {
-            constructor() {
-              navigation.pop();
-            }
-          }
-          const string2 = tmp26.string;
+          const intl4 = tmp(tmp2[10]).intl;
+          const string2 = intl4.string;
           const t2 = tmp(tmp2[10]).t;
-          cResult[19] = isMessageRequestRestrictedViewer;
-          cResult[20] = string2(isMessageRequestRestrictedViewer ? t2.BVN4pL : t2.B2nygW);
           const string2Result = string2(isMessageRequestRestrictedViewer ? t2.BVN4pL : t2.B2nygW);
+          cResult[19] = isMessageRequestRestrictedViewer;
+          cResult[20] = string2Result;
+          tmp25 = string2Result;
         } else {
-          class S {
-            constructor() {
-              navigation.pop();
-            }
-          }
+          tmp25 = cResult[20];
         }
         if (!isRejectLoading) {
-          class S {
-            constructor() {
-              navigation.pop();
+          isRejectLoading = isOptimisticRejected;
+        }
+        if (cResult[21] === (isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected)) {
+          if (cResult[22] === tmp15) {
+            if (cResult[23] === tmp17) {
+              if (cResult[24] === isAcceptLoading) {
+                if (cResult[25] === tmp25) {
+                  if (cResult[26] === isRejectLoading) {
+                    let tmp27;
+                    if (cResult[27] === tmp21) {
+                      tmp27 = cResult[28];
+                    }
+                    return tmp27;
+                  }
+                }
+              }
             }
           }
         }
-        if (cResult[21] === tmp13) {
-          class S {
-            constructor() {
-              navigation.pop();
-            }
-          }
-        }
-        cResult[21] = tmp13;
-        cResult[22] = tmp14;
-        cResult[23] = tmp16;
+        const tmp30 = jsx(navigation(tmp2[14]), { type: "button-action", message: tmp19, subtext: tmp21, buttonPrimaryText: tmp23, buttonPrimaryOnPress: tmp15, buttonPrimaryDisabled: isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected, buttonPrimaryLoading: isAcceptLoading, buttonSecondaryText: tmp25, buttonSecondaryOnPress: tmp17, buttonSecondaryDisabled: isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected, buttonSecondaryLoading: isRejectLoading });
+        cResult[21] = isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected;
+        cResult[22] = tmp15;
+        cResult[23] = tmp17;
         cResult[24] = isAcceptLoading;
         cResult[25] = tmp25;
         cResult[26] = isRejectLoading;
-        cResult[27] = tmp20;
-        cResult[28] = jsx(navigation(tmp2[14]), { type: "button-action", message: tmp18, subtext: tmp20, buttonPrimaryText: tmp23, buttonPrimaryOnPress: tmp14, buttonPrimaryDisabled: tmp13, buttonPrimaryLoading: isAcceptLoading, buttonSecondaryText: tmp25, buttonSecondaryOnPress: tmp16, buttonSecondaryDisabled: tmp13, buttonSecondaryLoading: isRejectLoading });
-        const tmp31 = jsx(navigation(tmp2[14]), { type: "button-action", message: tmp18, subtext: tmp20, buttonPrimaryText: tmp23, buttonPrimaryOnPress: tmp14, buttonPrimaryDisabled: tmp13, buttonPrimaryLoading: isAcceptLoading, buttonSecondaryText: tmp25, buttonSecondaryOnPress: tmp16, buttonSecondaryDisabled: tmp13, buttonSecondaryLoading: isRejectLoading });
+        cResult[27] = tmp21;
+        cResult[28] = tmp30;
+        tmp27 = tmp30;
       }
       let closure_0 = rejectMessageRequest(function*(arg0, value) {
         closure_0 = arg0;
@@ -272,6 +234,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       cResult[12] = channel.id;
       cResult[13] = rejectMessageRequest;
       cResult[14] = onRejectClick;
+      tmp17 = onRejectClick;
     }
     closure_0 = rejectMessageRequest(function*(arg0, value) {
       let v1;
@@ -332,12 +295,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
     cResult[9] = acceptMessageRequest;
     cResult[10] = channel.id;
     cResult[11] = onAcceptClick;
+    tmp15 = onAcceptClick;
   }
-  obj5 = { user: stateFromStores, onError: tmp10, onRejectSuccess: tmp11 };
+  let obj5 = { user: stateFromStores, onError: tmp10, onRejectSuccess: tmp11 };
   cResult[6] = tmp11;
   cResult[7] = stateFromStores;
   cResult[8] = obj5;
-}) : ((channel) => {
+  tmp12 = obj5;
+}) : (function ChatInputGuardMessageRequest(channel) {
   let _undefined;
   let c2;
   let c3;
@@ -466,14 +431,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   };
   const tmp = channel;
   const tmp2 = dependencyMap;
-  obj = channel(1490);
+  obj = channel(1502);
   importDefault = obj.useNavigation();
-  let obj2 = channel(12098);
+  let obj2 = channel(12176);
   const isMessageRequestRestrictedViewer = obj2.useIsMessageRequestRestrictedViewer();
   let obj3 = channel(504);
   const items = [obj];
   const stateFromStores = obj3.useStateFromStores(items, () => UserStore.getUser(channel.getRecipientId()));
-  let obj4 = channel(12099);
+  let obj4 = channel(12177);
   let obj5 = {
     user: stateFromStores,
     onError: function handleRequestError() {

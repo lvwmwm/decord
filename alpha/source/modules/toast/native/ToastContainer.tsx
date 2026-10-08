@@ -1,21 +1,21 @@
-// Module ID: 17169
-// Function ID: 17170
+// Module ID: 17450
+// Function ID: 17451
 // Name: ToastContainer
-// Dependencies: [109, 19, 4885, 15680, 21, 4896, 5627, 558, 576, 4618, 1484, 14908, 1618, 504, 5777, 14917, 5604, 4595, 4596, 17170, 1188, 4574, 2]
+// Dependencies: [109, 19, 5079, 15960, 21, 5090, 5974, 558, 576, 4810, 1496, 15170, 1630, 504, 5360, 15179, 5374, 4787, 4788, 17451, 1200, 4766, 2]
 
-// Module 17169 (ToastContainer)
+// Module 17450 (ToastContainer)
 import Fragment from "Fragment" /* 21 */;
-import native from "native" /* 1188 */;
-import native2 from "native" /* 4595 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4596 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import spring from "spring" /* 5604 */;
-import LegacyTokens from "LegacyTokens" /* 5627 */;
+import native from "native" /* 1200 */;
+import native2 from "native" /* 4787 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4788 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import spring from "spring" /* 5374 */;
+import LegacyTokens from "LegacyTokens" /* 5974 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import ToastStore from "ToastStore" /* 15680 */;
-import createStyles from "createStyles" /* 4896 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import ToastStore from "ToastStore" /* 15960 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ const __initData2 = { code: "function ToastContainerTsx2(finished){const{state,T
 const __initData3 = { code: "function ToastContainerTsx3(){const{position,safeAreaTop,CONTAINER_DISTANCE_VERTICAL,screenHeight,toastHeight,bottomTabsHeight,youBarHeight,interpolate,animationState,ANIMATION_STATE_INPUT,CONTAINER_TOP_POSITION_START,isReducedMotion,withSpring,OPACITY_SPRING_PHYSICS,TOAST_SPRING_PHYSICS,state,TransitionStates,runOnJS,cleanUp,screenWidth,CONTAINER_DISTANCE_SIDES}=this.__closure;const verticalPositionEnd=position==='top'?safeAreaTop+CONTAINER_DISTANCE_VERTICAL:screenHeight-toastHeight.get()-bottomTabsHeight-CONTAINER_DISTANCE_VERTICAL-youBarHeight;const translateY=interpolate(animationState.get(),ANIMATION_STATE_INPUT,[position==='top'?CONTAINER_TOP_POSITION_START:screenHeight-bottomTabsHeight-toastHeight.get()-youBarHeight,verticalPositionEnd]);return{opacity:!isReducedMotion?withSpring(animationState.get(),OPACITY_SPRING_PHYSICS):animationState.get(),transform:[{translateY:!isReducedMotion?withSpring(translateY,TOAST_SPRING_PHYSICS,'respect-motion-settings',function(finished){if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}):translateY}],maxWidth:screenWidth-CONTAINER_DISTANCE_SIDES*2};}" };
 const __initData4 = { code: "function ToastContainerTsx4(finished){const{state,TransitionStates,runOnJS,cleanUp}=this.__closure;if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((cleanUp) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnimatedToast(cleanUp) {
   let closure_10;
   let content;
   let disableAnimations;
@@ -215,7 +215,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((cleanUp) => {
       if (!tmp20) {
         tmp8Result1 = tmp8(tmp9[16]);
         tmp25 = closure_14;
-        fn = function t() { /* body not rendered: F148260 */ };
+        fn = function t() { /* body not rendered: F149779 */ };
         obj5 = { state: null, TransitionStates: null, runOnJS: null, cleanUp: null };
         tmp26 = state;
         obj5.state = state;
@@ -288,7 +288,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((cleanUp) => {
   cResult[9] = state;
   cResult[10] = J;
   cResult[11] = items1;
-}) : ((toast) => {
+}) : (function AnimatedToast(toast) {
   let items3;
   let obj7;
   let tmp17;
@@ -470,7 +470,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((cleanUp) => {
 });
 const memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ToastContainer() {
   let stateFromStoresArray;
   let tmp11;
   let tmp4;
@@ -528,7 +528,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const effect = react.useEffect(tmp8, tmp9);
   if (cResult[5] !== stateFromStoresArray) {
-    const tmp16 = jsx(tmp(4595).TransitionGroup, { items: stateFromStoresArray, renderItem, getItemKey, wrapChildren });
+    const tmp16 = jsx(tmp(4787).TransitionGroup, { items: stateFromStoresArray, renderItem, getItemKey, wrapChildren });
     cResult[5] = stateFromStoresArray;
     cResult[6] = tmp16;
     tmp11 = tmp16;
@@ -536,7 +536,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp11 = cResult[6];
   }
   return tmp11;
-}) : (() => {
+}) : (function ToastContainer() {
   let stateFromStoresArray;
   let obj = stateFromStoresArray(504);
   items = [ToastStore];
@@ -564,7 +564,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       return () => clearTimeout(closure_0);
     }
   }, items1);
-  return jsx(stateFromStoresArray(4595).TransitionGroup, { items: stateFromStoresArray, renderItem, getItemKey, wrapChildren });
+  return jsx(stateFromStoresArray(4787).TransitionGroup, { items: stateFromStoresArray, renderItem, getItemKey, wrapChildren });
 }));
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/toast/native/ToastContainer.tsx");

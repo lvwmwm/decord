@@ -1,18 +1,18 @@
-// Module ID: 14786
-// Function ID: 14787
+// Module ID: 15047
+// Function ID: 15048
 // Name: ConnectedApplicationIdentity
-// Dependencies: [5, 32, 19, 17, 21, 558, 576, 4896, 14787, 1126, 1188, 4892, 9472, 5714, 14765, 5790, 1402, 5603, 8727, 9399, 7586, 6000, 6705, 6001, 2]
+// Dependencies: [5, 32, 19, 17, 21, 558, 576, 5090, 15048, 1126, 1200, 5086, 10485, 5297, 15026, 5394, 1414, 5377, 13200, 8822, 8106, 6184, 6882, 6185, 2]
 
-// Module 14786 (ConnectedApplicationIdentity)
+// Module 15047 (ConnectedApplicationIdentity)
 import react_native from "react-native" /* 17 */;
 import intl6 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Icon from "Icon" /* 5603 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5714 */;
-import AlertDefault from "Alert" /* 5790 */;
-import InfoBoxDefault from "InfoBox" /* 9472 */;
+import native from "native" /* 1200 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5297 */;
+import Icon from "Icon" /* 5377 */;
+import AlertDefault from "Alert" /* 5394 */;
+import InfoBoxDefault from "InfoBox" /* 10485 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -20,17 +20,17 @@ import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_1, identity, v0, v3;
+let closure_1, v0, v3;
 
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const IconDefault = tmp(5603);
+const IconDefault = tmp(5377);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((identity) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApplicationIdentity(identity) {
   let body;
   let icon1;
   let items;
@@ -333,13 +333,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((identity) => {
         if (profile3 != null) {
           connection_visible1 = profile3.connection_visible;
         }
-        const fn2 = function() {
+        function t4() {
           return closure_0(...arguments);
-        };
+        }
         cResult[10] = connection_visible1;
         cResult[11] = identity.provider_issued_user_id;
-        cResult[12] = fn2;
-        tmp22 = fn2;
+        cResult[12] = t4;
+        tmp22 = t4;
       }
       const tmp16 = token(tmp2[16]);
       const obj11 = { id: identity.application_id, icon: icon1, size: tmpResult2.getIconSize(token(tmp2[17]).Sizes.LARGE), botIconFirst: false };
@@ -411,7 +411,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((identity) => {
   cResult[4] = token;
   cResult[5] = fn;
   tmp11 = fn;
-}) : ((identity) => {
+}) : (function ConnectedApplicationIdentity(identity) {
   let TableRowGroupContext;
   let body;
   let c4;

@@ -1,17 +1,17 @@
-// Module ID: 16865
-// Function ID: 16866
+// Module ID: 17144
+// Function ID: 17145
 // Name: useSearchMessageTimestamp
-// Dependencies: [19, 558, 576, 11, 7139, 2]
+// Dependencies: [19, 558, 576, 11, 6064, 2]
 
-// Module 16865 (useSearchMessageTimestamp)
+// Module 17144 (useSearchMessageTimestamp)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react2 from "react" /* 576 */;
-import NotificationCenterUtils from "NotificationCenterUtils" /* 7139 */;
+import NotificationCenterUtils from "NotificationCenterUtils" /* 6064 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, id2) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSearchMessageTimestamp(id, id2) {
   const obj = react2;
   const cResult = obj.c(7);
   if (cResult[0] === id2) {
@@ -51,7 +51,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, id2) => {
   cResult[3] = relativeTimestamp;
   tmp5 = relativeTimestamp;
   tmp4 = relativeTimestamp1;
-}) : ((arg0, arg1) => {
+}) : (function useSearchMessageTimestamp(arg0, arg1) {
   let id = arg0;
   const id2 = arg1;
   const items = [arg0, arg1];

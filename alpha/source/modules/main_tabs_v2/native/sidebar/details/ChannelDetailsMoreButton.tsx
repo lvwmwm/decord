@@ -1,21 +1,19 @@
-// Module ID: 16936
-// Function ID: 16937
+// Module ID: 17217
+// Function ID: 17218
 // Name: ChannelDetailsMoreButton
-// Dependencies: [19, 21, 558, 576, 10664, 1126, 7515, 7509, 9325, 2]
+// Dependencies: [19, 21, 558, 576, 10264, 1126, 9238, 9232, 8646, 2]
 
-// Module 16936 (ChannelDetailsMoreButton)
+// Module 17217 (ChannelDetailsMoreButton)
 import Fragment from "Fragment" /* 21 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 7515 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9325 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10664 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8646 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9238 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10264 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channel;
-
 const jsx = Fragment.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MoreButton(channel) {
   let tmp4;
   let tmp = channel;
   const obj = channel(576);
@@ -56,7 +54,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       if (cResult[3] !== tmp4) {
         ({ accessibilityLabel: tmp7, source: AssetRegistryDefault, onPress: tmp4 });
         PressableNavigatorButtonWrapperDefault;
-        const HeaderIconButton = tmp(7509).HeaderIconButton;
+        const HeaderIconButton = tmp(9232).HeaderIconButton;
         const tmp13 = <tmp12>{null}</tmp12>;
         cResult[3] = tmp4;
         cResult[4] = tmp13;
@@ -70,7 +68,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
   }
   return tmp5;
-}) : ((channel) => {
+}) : (function MoreButton(channel) {
   let intl;
   let tmp;
   channel = channel.channel;
@@ -80,7 +78,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     if (channel.isDM()) {
       let obj2 = { accessibilityLabel: intl.string(channel(1126).t["UKOtz+"]), source: AssetRegistryDefault, onPress: tmp };
       PressableNavigatorButtonWrapperDefault;
-      const HeaderIconButton = channel(7509).HeaderIconButton;
+      const HeaderIconButton = channel(9232).HeaderIconButton;
       intl = channel(1126).intl;
       tmp2 = <tmp6>{null}</tmp6>;
     } else {

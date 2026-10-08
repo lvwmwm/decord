@@ -1,24 +1,24 @@
-// Module ID: 7595
-// Function ID: 7596
+// Module ID: 9302
+// Function ID: 9303
 // Name: ConversationListScreen
-// Dependencies: [5, 32, 19, 17, 7116, 7118, 21, 4896, 587, 7596, 558, 576, 4892, 1126, 1493, 1618, 7560, 504, 11, 7561, 7564, 8404, 2]
+// Dependencies: [5, 32, 19, 17, 7302, 7304, 21, 5090, 587, 9303, 558, 576, 5086, 1126, 1505, 1630, 9271, 504, 11, 9272, 9275, 8600, 2]
 // Exports: default
 
-// Module 7595 (ConversationListScreen)
+// Module 9302 (ConversationListScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 7564 */;
-import ConversationListItemDefault from "ConversationListItem" /* 7596 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9275 */;
+import ConversationListItemDefault from "ConversationListItem" /* 9303 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7116 */;
-import ConversationConstants from "ConversationConstants" /* 7118 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7302 */;
+import ConversationConstants from "ConversationConstants" /* 7304 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -56,14 +56,14 @@ let obj = { empty: obj2 };
 obj2 = { paddingVertical: nativeDefault.space.PX_24, paddingHorizontal: nativeDefault.space.PX_16 };
 let closure_15 = createStyles.createStyles(obj);
 let memo = react.memo;
-const ListEmptyComponent = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const ListEmptyComponent = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyComponent() {
   let first;
   let tmp8;
   const obj = react2;
   const cResult = obj.c(3);
   const tmp4 = closure_15();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     const intl = tmp(1126).intl;
     const tmp7 = <Text variant="text-md/normal" color="text-muted">{intl.string(intl2.t.LJuFRG)}</Text>;
     cResult[0] = tmp7;
@@ -80,7 +80,7 @@ const ListEmptyComponent = memo(ReactCompilerGating.isReactCompilerEnabled() ? (
     tmp8 = cResult[2];
   }
   return tmp8;
-}) : (() => {
+}) : (function EmptyComponent() {
   let intl;
   ({ variant: "text-md/normal", color: "text-muted", children: intl.string(intl2.t.LJuFRG) });
   const Text = Text_Text.Text;
@@ -100,14 +100,14 @@ export default function ConversationListScreen() {
   let stateFromStores1;
   let tmp16;
   const tmp = channelId;
-  let obj = channelId(1493);
+  let obj = channelId(1505);
   const params = obj.useRoute().params;
   channelId = params.channelId;
   let guildId = params.guildId;
-  const bottom = guildId(1618)().bottom;
+  const bottom = guildId(1630)().bottom;
   let tmp3 = closure_14(bottom);
   dependencyMap = tmp3;
-  let obj2 = channelId(7560);
+  let obj2 = channelId(9271);
   const conversationBackoffRef = obj2.useConversationBackoffRef();
   let obj3 = react;
   const tmp5 = first(react.useState(false), 2);
@@ -287,7 +287,7 @@ export default function ConversationListScreen() {
   }, items9);
   obj8 = { data: memo, renderItem, keyExtractor, contentContainerStyle: tmp3.content, scrollIndicatorInsets: { bottom }, onEndReached: tmp16, ListEmptyComponent, ListFooterComponent: memo1, onViewableItemsChanged: callback1, viewabilityConfig };
   tmp16 = undefined;
-  FlashList = tmp(8404).FlashList;
+  FlashList = tmp(8600).FlashList;
   const tmp15 = memo;
   if (stateFromStores) {
     tmp16 = callback;

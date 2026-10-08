@@ -1,26 +1,26 @@
-// Module ID: 16574
-// Function ID: 16575
+// Module ID: 16829
+// Function ID: 16830
 // Name: GuildSettingsModalMemberApplications
-// Dependencies: [19, 17, 5939, 21, 4896, 587, 558, 576, 4728, 4892, 16575, 1402, 1188, 6000, 1618, 4708, 16580, 16581, 504, 1126, 8404, 7915, 6543, 2]
+// Dependencies: [19, 17, 6122, 21, 5090, 587, 558, 576, 4922, 5086, 16830, 1414, 1200, 6184, 1630, 4902, 16835, 16836, 504, 1126, 8600, 8334, 6719, 2]
 
-// Module 16574 (GuildSettingsModalMemberApplications)
+// Module 16829 (GuildSettingsModalMemberApplications)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4708 */;
-import UserUtilsDefault from "UserUtils" /* 4728 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16575 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4902 */;
+import UserUtilsDefault from "UserUtils" /* 4922 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16830 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5939 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6122 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let importDefault, joinRequest;
+let importDefault;
 
 let c9;
 let closure_4;
@@ -39,7 +39,7 @@ obj3 = { color: nativeDefault.colors.TEXT_BRAND };
 let closure_10 = createStyles(obj);
 const memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MemberApplicationUser(user) {
   let items;
   let tmp4;
   let tmp7;
@@ -91,13 +91,13 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) =
   let tmp11 = null != tmp4;
   if (tmp11) {
     const obj5 = { variant: "text-xs/medium", children: user.username };
-    tmp11 = metroImportDefault(tmp(4892).Text, obj5);
+    tmp11 = metroImportDefault(tmp(5086).Text, obj5);
   }
   cResult[4] = tmp4;
   cResult[5] = user;
   cResult[6] = tmp11;
   tmp10 = tmp11;
-}) : ((user) => {
+}) : (function MemberApplicationUser(user) {
   user = user.user;
   const obj = UserUtilsDefault;
   const globalName = obj.getGlobalName(user);
@@ -120,7 +120,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) =
 const unpackModuleId = memoResult;
 const memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((joinRequest) => {
+let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsModalMemberApplication(joinRequest) {
   let end;
   let start;
   let tmp4;
@@ -161,8 +161,8 @@ let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((joinRequ
         tmp5 = cResult[3];
       }
       if (cResult[4] !== tmp5) {
-        const obj3 = { source: tmp5, size: joinRequest(1188).AvatarSizes.SMALL };
-        const Avatar = tmp(1188).Avatar;
+        const obj3 = { source: tmp5, size: joinRequest(1200).AvatarSizes.SMALL };
+        const Avatar = tmp(1200).Avatar;
         const tmp10 = closure_7(Avatar, obj3);
         cResult[4] = tmp5;
         cResult[5] = tmp10;
@@ -193,7 +193,7 @@ let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((joinRequ
         }
       }
       const obj5 = { arrow: true, icon: tmp8, label: tmp11, onPress: tmp4, start, end };
-      const tmp17 = closure_7(joinRequest(6000).TableRow, obj5);
+      const tmp17 = closure_7(joinRequest(6184).TableRow, obj5);
       cResult[8] = end;
       cResult[9] = tmp4;
       cResult[10] = start;
@@ -203,7 +203,7 @@ let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((joinRequ
       tmp15 = tmp17;
     }
   }
-}) : ((joinRequest) => {
+}) : (function GuildSettingsModalMemberApplication(joinRequest) {
   let Avatar;
   let end;
   let obj3;
@@ -225,22 +225,22 @@ let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((joinRequ
         userAvatarSource = obj.getUserAvatarSource(user);
       }
       const obj2 = { arrow: true, icon: closure_7(Avatar, obj3), label: closure_7(closure_11, obj4), onPress: tmp, start, end };
-      const TableRow = joinRequest(6000).TableRow;
-      obj3 = { source: userAvatarSource, size: joinRequest(1188).AvatarSizes.SMALL };
-      Avatar = joinRequest(1188).Avatar;
+      const TableRow = joinRequest(6184).TableRow;
+      obj3 = { source: userAvatarSource, size: joinRequest(1200).AvatarSizes.SMALL };
+      Avatar = joinRequest(1200).Avatar;
       obj4 = { user };
       return closure_7(TableRow, obj2);
     }
   }
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsModalMemberApplications(arg0) {
   let applicationStatus;
   let closure_1;
   let fetching;
   let guildId;
   let guildJoinRequests;
-  let tmp19;
+  let tmp21;
   let tmp = applicationStatus;
   let obj = applicationStatus(guildJoinRequests[7]);
   const cResult = obj.c(43);
@@ -267,14 +267,12 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
         const items = [GuildJoinRequestStore];
-        class T {
-          constructor() {
-            return fetching.isFetching();
-          }
-        }
+        const fn = function y() {
+          return fetching.isFetching();
+        };
         cResult[6] = items;
-        cResult[7] = T;
-        tmp9 = T;
+        cResult[7] = fn;
+        tmp9 = fn;
         tmp8 = items;
       } else {
         tmp8 = cResult[6];
@@ -296,82 +294,76 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
             tmp14 = cResult[14];
           }
           const effect = fetchNextPage.useEffect(tmp13, tmp14);
-          class M {
-            constructor() {
-              if (0 === guildJoinRequests.length) {
-                closure_5();
+          if (cResult[15] !== guildJoinRequests.length) {
+            class J {
+              constructor(joinRequest) {
+                const index = joinRequest.index;
+                const obj = { joinRequest: joinRequest.item, start: 0 === index, end: index === guildJoinRequests.length - 1 };
+                return metroImportDefault(closure_12, obj);
+              }
+            }
+            cResult[15] = guildJoinRequests.length;
+            cResult[16] = J;
+          } else {
+            class J {
+              constructor(joinRequest) {
+                const index = joinRequest.index;
+                const obj = { joinRequest: joinRequest.item, start: 0 === index, end: index === guildJoinRequests.length - 1 };
+                return metroImportDefault(closure_12, obj);
               }
             }
           }
           const _Symbol2 = Symbol;
           if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-            class D {
+            class F {
               constructor(joinRequestId) {
                 return joinRequestId.joinRequestId;
               }
             }
-            cResult[17] = D;
-            class M {
-              constructor() {
-                if (0 === guildJoinRequests.length) {
-                  closure_5();
-                }
-              }
-            }
+            cResult[17] = F;
           } else {
-            class D {
+            class F {
               constructor(joinRequestId) {
                 return joinRequestId.joinRequestId;
               }
             }
           }
           if (stateFromStores) {
-            class D {
+            class F {
               constructor(joinRequestId) {
                 return joinRequestId.joinRequestId;
               }
             }
             if (0 === guildJoinRequests.length) {
-              class D {
+              class F {
                 constructor(joinRequestId) {
                   return joinRequestId.joinRequestId;
                 }
               }
               if (cResult[20] === tmp4.spinnerContainer) {
-                class D {
+                class F {
                   constructor(joinRequestId) {
                     return joinRequestId.joinRequestId;
                   }
                 }
-                return tmp19;
+                return tmp21;
               }
-              class M {
-                constructor() {
-                  if (0 === guildJoinRequests.length) {
-                    closure_5();
-                  }
-                }
-              }
-              let obj2 = { style: tmp4.spinnerContainer, children: tmp18 };
+              let obj2 = { style: tmp4.spinnerContainer, children: tmp20 };
+              const tmp24 = closure_7(closure_5, obj2);
               cResult[20] = tmp4.spinnerContainer;
-              cResult[21] = tmp18;
-              const tmp21 = closure_7(closure_5, obj2);
-              class C {
-                constructor() {
-                  fetchNextPage(MemberVerificationTypes.GuildJoinRequestSortOrders.TIMESTAMP_DESC, applicationStatus);
-                }
-              }
-              tmp19 = tmp21;
+              cResult[21] = tmp20;
+              cResult[22] = tmp24;
+              tmp21 = tmp24;
             }
           }
           if (cResult[23] === stateFromStores) {
-            class D {
+            class F {
               constructor(joinRequestId) {
                 return joinRequestId.joinRequestId;
               }
             }
           }
-          const fn = function w() {
+          function renderFooter() {
             let obj2;
             let tmp = null;
             if (stateFromStores) {
@@ -380,49 +372,37 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
               tmp = metroImportDefault(hasOwnProperty, obj);
             }
             return tmp;
-          };
+          }
           cResult[23] = stateFromStores;
-          class C {
-            constructor() {
-              fetchNextPage(MemberVerificationTypes.GuildJoinRequestSortOrders.TIMESTAMP_DESC, applicationStatus);
-            }
-          }
+          cResult[24] = tmp4.footerSpinner;
           cResult[25] = tmp4.spinner;
-          cResult[26] = fn;
+          cResult[26] = renderFooter;
         }
-        class M {
-          constructor() {
-            if (0 === guildJoinRequests.length) {
-              closure_5();
-            }
+        const fn3 = function x() {
+          if (0 === guildJoinRequests.length) {
+            closure_5();
           }
-        }
+        };
         const items1 = [tmp12, guildJoinRequests.length];
         cResult[11] = tmp12;
         cResult[12] = guildJoinRequests.length;
-        cResult[13] = M;
-        class C {
-          constructor() {
-            fetchNextPage(MemberVerificationTypes.GuildJoinRequestSortOrders.TIMESTAMP_DESC, applicationStatus);
-          }
-        }
+        cResult[13] = fn3;
         cResult[14] = items1;
         tmp14 = items1;
-        tmp13 = M;
+        tmp13 = fn3;
       }
-      class C {
-        constructor() {
-          fetchNextPage(MemberVerificationTypes.GuildJoinRequestSortOrders.TIMESTAMP_DESC, applicationStatus);
-        }
-      }
+      const fn2 = function q() {
+        fetchNextPage(MemberVerificationTypes.GuildJoinRequestSortOrders.TIMESTAMP_DESC, applicationStatus);
+      };
       cResult[8] = applicationStatus;
       cResult[9] = fetchNextPage;
-      cResult[10] = C;
-      tmp12 = C;
+      cResult[10] = fn2;
+      tmp12 = fn2;
     }
     const obj3 = { guildId, guildJoinRequests };
     cResult[3] = guildId;
     cResult[4] = guildJoinRequests;
+    cResult[5] = obj3;
     tmp6 = obj3;
   }
   const obj4 = { guildId, applicationStatus, sortOrder: tmp(guildJoinRequests[15]).GuildJoinRequestSortOrders.TIMESTAMP_DESC };
@@ -430,7 +410,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
   cResult[1] = guildId;
   cResult[2] = obj4;
   tmp5 = obj4;
-}) : ((arg0) => {
+}) : (function GuildSettingsModalMemberApplications(arg0) {
   let applicationStatus;
   let closure_1;
   let fetching;
@@ -499,7 +479,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
       renderItem: callback1,
       contentContainerStyle: obj9,
       onEndReached,
-      ListFooterComponent() {
+      ListFooterComponent: function renderFooter() {
           let obj2;
           let tmp = null;
           if (stateFromStores) {

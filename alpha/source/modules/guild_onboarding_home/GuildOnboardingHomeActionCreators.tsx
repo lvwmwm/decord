@@ -1,20 +1,20 @@
-// Module ID: 7532
-// Function ID: 7533
+// Module ID: 9254
+// Function ID: 9255
 // Name: GuildOnboardingHomeActionCreators
-// Dependencies: [5, 2105, 2051, 5083, 5084, 1085, 584, 1282, 7533, 1252, 4907, 11, 2]
+// Dependencies: [5, 2117, 2063, 6912, 7888, 1085, 584, 1294, 9255, 1264, 5101, 11, 2]
 // Exports: clearNewMemberActions, completeNewMemberAction, fetchGuildHomeSettings, fetchNewMemberActions, selectHomeResourceChannel, selectNewMemberActionChannel
 
-// Module 7532 (GuildOnboardingHomeActionCreators)
+// Module 9254 (GuildOnboardingHomeActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import transitionToChannel from "transitionToChannel" /* 4907 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import transitionToChannel from "transitionToChannel" /* 5101 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ImpersonateStore from "ImpersonateStore" /* 2105 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5083 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 5084 */;
+import ImpersonateStore from "ImpersonateStore" /* 2117 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 6912 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 7888 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -295,7 +295,7 @@ export const completeNewMemberAction = function completeNewMemberAction(c0, c1) 
           channel_id: null,
           channel_action_type: actionForChannel.actionType,
           has_completed_all: newMemberActions.reduce((acc, channelId) => {
-                  const hasItem = acc && closure_0.includes(channelId.channelId);
+                  const hasItem = acc && backgroundColor.includes(channelId.channelId);
                   return hasItem;
                 }, true)
         };

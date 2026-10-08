@@ -1,30 +1,30 @@
-// Module ID: 9628
-// Function ID: 9629
+// Module ID: 10824
+// Function ID: 10825
 // Name: FocusedControlsBottomControls
-// Dependencies: [32, 19, 17, 9086, 9087, 1085, 21, 1369, 4896, 587, 5922, 1188, 558, 576, 1618, 4618, 9629, 1105, 1126, 6656, 4897, 6147, 9631, 1484, 9113, 1121, 4595, 4735, 5780, 9632, 2]
+// Dependencies: [32, 19, 17, 10333, 10334, 1085, 21, 1381, 5090, 587, 5902, 1200, 558, 576, 1630, 4810, 10825, 1105, 1126, 6833, 5091, 6326, 9694, 1496, 10686, 1121, 4787, 4929, 5363, 10827, 2]
 
-// Module 9628 (FocusedControlsBottomControls)
+// Module 10824 (FocusedControlsBottomControls)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
-import native from "native" /* 1188 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
-import CallPTTButtonDefault from "CallPTTButton" /* 9632 */;
+import native from "native" /* 1200 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
+import CallPTTButtonDefault from "CallPTTButton" /* 10827 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelCallStore from "ChannelCallStore" /* 9086 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 9087 */;
+import ChannelCallStore from "ChannelCallStore" /* 10333 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10334 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import TextStyles from "TextStyles" /* 5922 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import TextStyles from "TextStyles" /* 5902 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
-let height, set, set2, width;
+let flag2, height, openDrawerResult, openDrawerResult1, set, set2, set2Result, tmp29, tmp30, tmp31, tmp32, width;
 
 let Fonts;
 let StyleSheet;
@@ -42,7 +42,7 @@ let obj3;
 let rect;
 let tmp;
 let unpackModuleId;
-const CallPTTButton = tmp(9632);
+const CallPTTButton = tmp(10827);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, TouchableWithoutFeedback: metroRequire, ScrollView: metroImportDefault, StyleSheet } = react_native);
 ({ clearFocusTimer: metroImportAll, resetFocusTimer: c9 } = ChannelCallStore);
@@ -72,7 +72,7 @@ let obj5 = { easing: native.STANDARD_EASING, duration: 400 };
 const __initData = { code: "function FocusedControlsBottomControlsTsx1(){const{positionY,EXPANDED_DRAWER_SHOW_POSITION}=this.__closure;const opacity=Math.min(positionY.get()*-1/EXPANDED_DRAWER_SHOW_POSITION,1);return{opacity:opacity,pointerEvents:opacity===0?\"none\":\"auto\"};}" };
 const __initData2 = { code: "function FocusedControlsBottomControlsTsx2(){const{positionY,EXPANDED_DRAWER_SHOW_POSITION}=this.__closure;const opacity=Math.min(positionY.get()*-1/EXPANDED_DRAWER_SHOW_POSITION,1);return{opacity:opacity,pointerEvents:opacity===0?'none':'auto'};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => {
+let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function FocusedControlsExpanded(positionY) {
   let availableHeight;
   let bottom;
   let closure_4;
@@ -96,38 +96,24 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
       if (cResult[2] === scrollEnabled) {
         tmp8 = cResult[3];
       }
-      const tmpResult = tmp(bottom[15]);
-      class I {
-        constructor() {
-          let str;
-          const bound = Math.min(-1 * positionY.get() / c16, 1);
-          const obj = { opacity: bound, pointerEvents: str };
-          str = "auto";
-          if (0 === bound) {
-            str = "none";
-          }
-          return obj;
+      const fn2 = function w() {
+        let str;
+        const bound = Math.min(-1 * positionY.get() / c16, 1);
+        const obj = { opacity: bound, pointerEvents: str };
+        str = "auto";
+        if (0 === bound) {
+          str = "none";
         }
-      }
+        return obj;
+      };
       const obj2 = { positionY, EXPANDED_DRAWER_SHOW_POSITION };
-      I.__closure = obj2;
-      I.__workletHash = 5181322553799;
-      I.__initData = __initData;
-      const animatedStyle = tmpResult.useAnimatedStyle(I);
+      fn2.__closure = obj2;
+      fn2.__workletHash = 5181322553799;
+      fn2.__initData = __initData;
+      const tmpResult = tmp(bottom[15]);
+      const animatedStyle = tmpResult.useAnimatedStyle(fn2);
       if (cResult[4] !== availableHeight) {
         const obj3 = { height: availableHeight };
-        class I {
-          constructor() {
-            let str;
-            const bound = Math.min(-1 * positionY.get() / c16, 1);
-            const obj = { opacity: bound, pointerEvents: str };
-            str = "auto";
-            if (0 === bound) {
-              str = "none";
-            }
-            return obj;
-          }
-        }
         cResult[4] = availableHeight;
         cResult[5] = obj3;
         tmp12 = obj3;
@@ -146,75 +132,39 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
               tmp14 = cResult[12];
             }
             if (cResult[13] === scrollEnabled) {
-              let tmp16;
+              let tmp17;
               if (cResult[14] === tmp14) {
-                tmp16 = cResult[15];
+                tmp17 = cResult[15];
               }
               if (cResult[16] === tmp12) {
-                let tmp19;
-                if (cResult[17] === tmp16) {
-                  tmp19 = cResult[18];
+                let tmp21;
+                if (cResult[17] === tmp17) {
+                  tmp21 = cResult[18];
                 }
-                return tmp19;
+                return tmp21;
               }
-              class I {
-                constructor() {
-                  let str;
-                  const bound = Math.min(-1 * positionY.get() / c16, 1);
-                  const obj = { opacity: bound, pointerEvents: str };
-                  str = "auto";
-                  if (0 === bound) {
-                    str = "none";
-                  }
-                  return obj;
-                }
-              }
-              obj4 = { style: tmp12, children: tmp16 };
-              const tmp21 = closure_13(closure_5, obj4);
+              obj4 = { style: tmp12, children: tmp17 };
+              const tmp24 = closure_13(closure_5, obj4);
               cResult[16] = tmp12;
-              cResult[17] = tmp16;
-              cResult[18] = tmp21;
-              tmp19 = tmp21;
-            }
-            class I {
-              constructor() {
-                let str;
-                const bound = Math.min(-1 * positionY.get() / c16, 1);
-                const obj = { opacity: bound, pointerEvents: str };
-                str = "auto";
-                if (0 === bound) {
-                  str = "none";
-                }
-                return obj;
-              }
+              cResult[17] = tmp17;
+              cResult[18] = tmp24;
+              tmp21 = tmp24;
             }
             obj5 = { scrollEnabled, children: tmp14 };
-            const tmp18 = closure_13(closure_7, obj5);
+            const tmp20 = closure_13(closure_7, obj5);
             cResult[13] = scrollEnabled;
             cResult[14] = tmp14;
-            cResult[15] = tmp18;
-            tmp16 = tmp18;
-          }
-        }
-        class I {
-          constructor() {
-            let str;
-            const bound = Math.min(-1 * positionY.get() / c16, 1);
-            const obj = { opacity: bound, pointerEvents: str };
-            str = "auto";
-            if (0 === bound) {
-              str = "none";
-            }
-            return obj;
+            cResult[15] = tmp20;
+            tmp17 = tmp20;
           }
         }
         const obj6 = { style: tmp13, onLayout: tmp8, children: expandedControls };
-        const tmp15 = closure_13(tmp5(bottom[15]).View, obj6);
+        const tmp16 = closure_13(tmp5(bottom[15]).View, obj6);
         cResult[9] = expandedControls;
         cResult[10] = tmp8;
         cResult[11] = tmp13;
-        cResult[12] = tmp15;
-        tmp14 = tmp15;
+        cResult[12] = tmp16;
+        tmp14 = tmp16;
       }
       const items = [tmp4.expandedControlsContainer, animatedStyle];
       cResult[6] = animatedStyle;
@@ -233,7 +183,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
   cResult[2] = scrollEnabled;
   cResult[3] = fn;
   tmp8 = fn;
-}) : ((availableHeight) => {
+}) : (function FocusedControlsExpanded(availableHeight) {
   let closure_4;
   let items1;
   availableHeight = availableHeight.availableHeight;
@@ -254,7 +204,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
     }
   }, items);
   let obj = availableHeight(bottom[15]);
-  const fn = function u() {
+  const fn = function h() {
     let str;
     const bound = Math.min(-1 * positionY.get() / c16, 1);
     const obj = { opacity: bound, pointerEvents: str };
@@ -278,7 +228,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
 const __initData3 = { code: "function FocusedControlsBottomControlsTsx3(){const{positionY,EXPANDED_DRAWER_SHOW_POSITION}=this.__closure;return{opacity:1-Math.min(positionY.get()*-1/EXPANDED_DRAWER_SHOW_POSITION,1)};}" };
 const __initData4 = { code: "function FocusedControlsBottomControlsTsx4(){const{positionY,EXPANDED_DRAWER_SHOW_POSITION}=this.__closure;return{opacity:1-Math.min(positionY.get()*-1/EXPANDED_DRAWER_SHOW_POSITION,1)};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => {
+let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function FocusedControlsBottomDrawerTooltip(positionY) {
   let containerStyle;
   let labelStyle;
   let tooltipStyle;
@@ -286,7 +236,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
   const cResult = obj.c(8);
   positionY = positionY.positionY;
   const tmp4 = closure_19();
-  const obj2 = positionY(9629);
+  const obj2 = positionY(10825);
   const canShowTooltip = obj2.useCanShowTooltip(positionY(1105).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
   const fn = function o() {
     const obj = { opacity: 1 - Math.min(-1 * positionY.get() / c16, 1) };
@@ -296,7 +246,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
   fn.__closure = obj4;
   fn.__workletHash = 15386908151356;
   fn.__initData = __initData3;
-  const obj3 = positionY(4618);
+  const obj3 = positionY(4810);
   const animatedStyle = obj3.useAnimatedStyle(fn);
   if (canShowTooltip) {
     let first;
@@ -331,8 +281,8 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
         tmp14 = tmp17;
       }
     }
-    const obj6 = { style: tooltipStyle, arrowPosition: positionY(1188).TooltipArrowPositions.CENTER, arrowDirection: positionY(1188).TooltipArrowDirections.DOWN, arrowWidth: 8, arrowHeight: 4, containerStyle, labelStyle, label: first };
-    const Tooltip = tmp(1188).Tooltip;
+    const obj6 = { style: tooltipStyle, arrowPosition: positionY(1200).TooltipArrowPositions.CENTER, arrowDirection: positionY(1200).TooltipArrowDirections.DOWN, arrowWidth: 8, arrowHeight: 4, containerStyle, labelStyle, label: first };
+    const Tooltip = tmp(1200).Tooltip;
     const tmp13 = closure_13(Tooltip, obj6);
     cResult[1] = tmp4.containerStyle;
     cResult[2] = tmp4.labelStyle;
@@ -342,15 +292,15 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
   } else {
     return null;
   }
-}) : ((positionY) => {
+}) : (function FocusedControlsBottomDrawerTooltip(positionY) {
   let Tooltip;
   let intl;
   let obj7;
   positionY = positionY.positionY;
   const tmp = closure_19();
-  let obj = positionY(9629);
+  let obj = positionY(10825);
   const canShowTooltip = obj.useCanShowTooltip(positionY(1105).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
-  positionY(4618);
+  positionY(4810);
   const fn = function o() {
     const obj = { opacity: 1 - Math.min(-1 * positionY.get() / c16, 1) };
     return obj;
@@ -363,8 +313,8 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
   if (canShowTooltip) {
     const obj3 = { style: tmp6, children: closure_13(Tooltip, obj7) };
     const View = ReanimatedRexportDefault.View;
-    obj7 = { style: tmp.tooltipStyle, arrowPosition: positionY(1188).TooltipArrowPositions.CENTER, arrowDirection: positionY(1188).TooltipArrowDirections.DOWN, arrowWidth: 8, arrowHeight: 4, containerStyle: null, labelStyle: null, label: intl.string(positionY(1126).t.zYzy2i) };
-    Tooltip = tmp2(1188).Tooltip;
+    obj7 = { style: tmp.tooltipStyle, arrowPosition: positionY(1200).TooltipArrowPositions.CENTER, arrowDirection: positionY(1200).TooltipArrowDirections.DOWN, arrowWidth: 8, arrowHeight: 4, containerStyle: null, labelStyle: null, label: intl.string(positionY(1126).t.zYzy2i) };
+    Tooltip = tmp2(1200).Tooltip;
     ({ containerStyle: obj4.containerStyle, labelStyle: obj4.labelStyle } = tmp);
     intl = tmp2(1126).intl;
     tmp7 = closure_13(View, obj3);
@@ -374,7 +324,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
 const __initData5 = { code: "function FocusedControlsBottomControlsTsx5(){const{offsetY,EXPANDED_DRAWER_SHOW_POSITION,positionY}=this.__closure;const maxHeightRange=offsetY/3-EXPANDED_DRAWER_SHOW_POSITION;const opacity=2-Math.max(Math.abs(positionY.get())/maxHeightRange,0);return{opacity:opacity};}" };
 const __initData6 = { code: "function FocusedControlsBottomControlsTsx6(){const{offsetY,EXPANDED_DRAWER_SHOW_POSITION,positionY}=this.__closure;const maxHeightRange=offsetY/3-EXPANDED_DRAWER_SHOW_POSITION;const opacity=2-Math.max(Math.abs(positionY.get())/maxHeightRange,0);return{opacity:opacity};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => {
+let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function FocusedControlsAboveActionBarView(positionY) {
   let aboveActionBar;
   let isExpanded;
   let items;
@@ -398,7 +348,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
   fn.__closure = obj3;
   fn.__workletHash = 16821998405506;
   fn.__initData = __initData5;
-  const obj2 = positionY(4618);
+  const obj2 = positionY(4810);
   const animatedStyle = obj2.useAnimatedStyle(fn);
   if (cResult[0] !== isExpanded) {
     obj4 = { expanded: isExpanded };
@@ -418,7 +368,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
     tmp7 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp13 = closure_13(tmp(6656).ActionSheetHeaderBar, {});
+    const tmp13 = closure_13(tmp(6833).ActionSheetHeaderBar, {});
     cResult[4] = tmp13;
     tmp11 = tmp13;
   } else {
@@ -468,14 +418,14 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
   if (tmp15) {
     const obj8 = { style: items1, children: aboveActionBar };
     items1 = [tmp4.aboveActionBarChildrenContainer, animatedStyle];
-    tmp15 = closure_13(offsetY(4618).View, obj8);
+    tmp15 = closure_13(offsetY(4810).View, obj8);
   }
   cResult[5] = aboveActionBar;
   cResult[6] = animatedStyle;
   cResult[7] = tmp4.aboveActionBarChildrenContainer;
   cResult[8] = tmp15;
   tmp14 = tmp15;
-}) : ((positionY) => {
+}) : (function FocusedControlsAboveActionBarView(positionY) {
   let isExpanded;
   let items;
   let items1;
@@ -487,8 +437,8 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
   const aboveActionBar = positionY.aboveActionBar;
   ({ onPressHeader, isExpanded } = positionY);
   const tmp = closure_19();
-  let obj = positionY(4618);
-  const fn = function u() {
+  let obj = positionY(4810);
+  const fn = function h() {
     const obj = { opacity: 2 - Math.max(Math.abs(positionY.get()) / (offsetY / 3 - c16), 0) };
     return obj;
   };
@@ -499,7 +449,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
   const obj3 = { accessible: true, onPress: onPressHeader, accessibilityRole: "button", accessibilityLabel: "Group DM", accessibilityHint: "Press to start a new conversation", accessibilityState: { expanded: isExpanded }, children: tmp6(tmp7, obj4) };
   obj4 = { style: tmp.aboveActionBarContainer, children: items };
   const animatedStyle = obj.useAnimatedStyle(fn);
-  items = [closure_13(closure_27, { positionY }), closure_13(positionY(6656).ActionSheetHeaderBar, {}), ];
+  items = [closure_13(closure_27, { positionY }), closure_13(positionY(6833).ActionSheetHeaderBar, {}), ];
   let tmp4Result = null != aboveActionBar;
   const tmp5 = closure_6;
   tmp6 = closure_14;
@@ -507,22 +457,24 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
   if (tmp4Result) {
     obj5 = { style: items1, children: aboveActionBar };
     items1 = [tmp.aboveActionBarChildrenContainer, animatedStyle];
-    tmp4Result = tmp4(offsetY(4618).View, obj5);
+    tmp4Result = tmp4(offsetY(4810).View, obj5);
   }
   items[2] = tmp4Result;
   return closure_13(tmp5, obj3);
 });
 const __initData7 = { code: "function FocusedControlsBottomControlsTsx7(){const{isLandscapeMode,controlMaxHeight,landscapeOffsetY,portraitOffsetY}=this.__closure;return isLandscapeMode?controlMaxHeight-landscapeOffsetY:controlMaxHeight-portraitOffsetY;}" };
-let closure_32 = { code: "function FocusedControlsBottomControlsTsx8(){const{drawerOpen,positionY,maxHeight,velocity,MIN_GESTURE_TRIGGER_VELOCITY,CLOSE_DRAWER_POSITION,runOnJS,handleOpen,startY,withTiming,TIMING_CONFIG,TooltipActionCreators,TooltipNames,TIMING_CONFIG_EXIT,resetFocusTimer,handleClose}=this.__closure;var _velocity$get,_velocity$get2;const isDrawerAlreadyOpen=drawerOpen.get();const isPassedTriggerThreshold=positionY.get()*-1>=maxHeight.get()/2;const isHighOpenVelocity=((_velocity$get=velocity.get())!==null&&_velocity$get!==void 0?_velocity$get:0)*-1>=MIN_GESTURE_TRIGGER_VELOCITY;const isHighCloseVelocity=((_velocity$get2=velocity.get())!==null&&_velocity$get2!==void 0?_velocity$get2:0)>=MIN_GESTURE_TRIGGER_VELOCITY;const isLowerThanMinHeight=positionY.get()>CLOSE_DRAWER_POSITION;const openDrawer=function openDrawer(){runOnJS(handleOpen)();startY.set(-maxHeight.get());positionY.set(withTiming(startY.get(),TIMING_CONFIG));drawerOpen.set(true);runOnJS(TooltipActionCreators.acknowledgeTooltip)(TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS);};const closeDrawer=function closeDrawer(){startY.set(0);positionY.set(withTiming(CLOSE_DRAWER_POSITION,TIMING_CONFIG_EXIT));drawerOpen.set(false);runOnJS(resetFocusTimer)();runOnJS(handleClose)();};if(isHighOpenVelocity&&!isDrawerAlreadyOpen||isPassedTriggerThreshold&&!isDrawerAlreadyOpen){openDrawer();}else{if(isLowerThanMinHeight||isHighCloseVelocity&&isDrawerAlreadyOpen){closeDrawer();}else{if(isPassedTriggerThreshold){openDrawer();}else{closeDrawer();}}}}" };
-let closure_33 = { code: "function FocusedControlsBottomControlsTsx9(event){const{velocity,positionY,maxHeight,startY}=this.__closure;var _startY$get;velocity.set(event.velocityY);if(positionY.get()*-1>maxHeight.get()+16){return;}positionY.set(((_startY$get=startY.get())!==null&&_startY$get!==void 0?_startY$get:0)+event.translationY);}" };
-let closure_34 = { code: "function FocusedControlsBottomControlsTsx10(){const{runOnJS,clearFocusTimer,drawerOpen,positionY,CLOSE_DRAWER_POSITION,velocity,startY}=this.__closure;runOnJS(clearFocusTimer)();drawerOpen.set(positionY.get()!==CLOSE_DRAWER_POSITION);velocity.set(0);if(positionY.get()==null||!drawerOpen.get()){startY.set(0);}}" };
-const __initData8 = { code: "function FocusedControlsBottomControlsTsx11(){const{isLandscapeMode,controlMaxHeight,landscapeOffsetY,portraitOffsetY}=this.__closure;return isLandscapeMode?controlMaxHeight-landscapeOffsetY:controlMaxHeight-portraitOffsetY;}" };
-const __initData9 = { code: "function FocusedControlsBottomControlsTsx12(){const{drawerOpen,positionY,maxHeight,velocity,MIN_GESTURE_TRIGGER_VELOCITY,CLOSE_DRAWER_POSITION,runOnJS,handleOpen,startY,withTiming,TIMING_CONFIG,TooltipActionCreators,TooltipNames,TIMING_CONFIG_EXIT,resetFocusTimer,handleClose}=this.__closure;var _velocity$get,_velocity$get2;const isDrawerAlreadyOpen=drawerOpen.get();const isPassedTriggerThreshold=positionY.get()*-1>=maxHeight.get()/2;const isHighOpenVelocity=((_velocity$get=velocity.get())!==null&&_velocity$get!==void 0?_velocity$get:0)*-1>=MIN_GESTURE_TRIGGER_VELOCITY;const isHighCloseVelocity=((_velocity$get2=velocity.get())!==null&&_velocity$get2!==void 0?_velocity$get2:0)>=MIN_GESTURE_TRIGGER_VELOCITY;const isLowerThanMinHeight=positionY.get()>CLOSE_DRAWER_POSITION;function openDrawer(){runOnJS(handleOpen)();startY.set(-maxHeight.get());positionY.set(withTiming(startY.get(),TIMING_CONFIG));drawerOpen.set(true);runOnJS(TooltipActionCreators.acknowledgeTooltip)(TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS);}function closeDrawer(){startY.set(0);positionY.set(withTiming(CLOSE_DRAWER_POSITION,TIMING_CONFIG_EXIT));drawerOpen.set(false);runOnJS(resetFocusTimer)();runOnJS(handleClose)();}if(isHighOpenVelocity&&!isDrawerAlreadyOpen||isPassedTriggerThreshold&&!isDrawerAlreadyOpen){openDrawer();}else if(isLowerThanMinHeight||isHighCloseVelocity&&isDrawerAlreadyOpen){closeDrawer();}else if(isPassedTriggerThreshold){openDrawer();}else{closeDrawer();}}" };
-const __initData10 = { code: "function FocusedControlsBottomControlsTsx13(event){const{velocity,positionY,maxHeight,startY}=this.__closure;var _startY$get;velocity.set(event.velocityY);if(positionY.get()*-1>maxHeight.get()+16){return;}positionY.set(((_startY$get=startY.get())!==null&&_startY$get!==void 0?_startY$get:0)+event.translationY);}" };
-const __initData11 = { code: "function FocusedControlsBottomControlsTsx14(){const{runOnJS,clearFocusTimer,drawerOpen,positionY,CLOSE_DRAWER_POSITION,velocity,startY}=this.__closure;runOnJS(clearFocusTimer)();drawerOpen.set(positionY.get()!==CLOSE_DRAWER_POSITION);velocity.set(0);if(positionY.get()==null||!drawerOpen.get()){startY.set(0);}}" };
+const __initData8 = { code: "function FocusedControlsBottomControlsTsx8(){const{drawerOpen,positionY,maxHeight,velocity,MIN_GESTURE_TRIGGER_VELOCITY,CLOSE_DRAWER_POSITION,runOnJS,handleOpen,startY,withTiming,TIMING_CONFIG,TooltipActionCreators,TooltipNames,TIMING_CONFIG_EXIT,resetFocusTimer,handleClose}=this.__closure;var _velocity$get,_velocity$get2;const isDrawerAlreadyOpen=drawerOpen.get();const isPassedTriggerThreshold=positionY.get()*-1>=maxHeight.get()/2;const isHighOpenVelocity=((_velocity$get=velocity.get())!==null&&_velocity$get!==void 0?_velocity$get:0)*-1>=MIN_GESTURE_TRIGGER_VELOCITY;const isHighCloseVelocity=((_velocity$get2=velocity.get())!==null&&_velocity$get2!==void 0?_velocity$get2:0)>=MIN_GESTURE_TRIGGER_VELOCITY;const isLowerThanMinHeight=positionY.get()>CLOSE_DRAWER_POSITION;const openDrawer=function openDrawer(){runOnJS(handleOpen)();startY.set(-maxHeight.get());positionY.set(withTiming(startY.get(),TIMING_CONFIG));drawerOpen.set(true);runOnJS(TooltipActionCreators.acknowledgeTooltip)(TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS);};const closeDrawer=function closeDrawer(){startY.set(0);positionY.set(withTiming(CLOSE_DRAWER_POSITION,TIMING_CONFIG_EXIT));drawerOpen.set(false);runOnJS(resetFocusTimer)();runOnJS(handleClose)();};if(isHighOpenVelocity&&!isDrawerAlreadyOpen||isPassedTriggerThreshold&&!isDrawerAlreadyOpen){openDrawer();}else{if(isLowerThanMinHeight||isHighCloseVelocity&&isDrawerAlreadyOpen){closeDrawer();}else{if(isPassedTriggerThreshold){openDrawer();}else{closeDrawer();}}}}" };
+const __initData9 = { code: "function FocusedControlsBottomControlsTsx9(event){const{velocity,positionY,maxHeight,startY}=this.__closure;var _startY$get;velocity.set(event.velocityY);if(positionY.get()*-1>maxHeight.get()+16){return;}positionY.set(((_startY$get=startY.get())!==null&&_startY$get!==void 0?_startY$get:0)+event.translationY);}" };
+const __initData10 = { code: "function FocusedControlsBottomControlsTsx10(){const{runOnJS,clearFocusTimer,drawerOpen,positionY,CLOSE_DRAWER_POSITION,velocity,startY}=this.__closure;runOnJS(clearFocusTimer)();drawerOpen.set(positionY.get()!==CLOSE_DRAWER_POSITION);velocity.set(0);if(positionY.get()==null||!drawerOpen.get()){startY.set(0);}}" };
+const __initData11 = { code: "function FocusedControlsBottomControlsTsx11(){const{isLandscapeMode,controlMaxHeight,landscapeOffsetY,portraitOffsetY}=this.__closure;return isLandscapeMode?controlMaxHeight-landscapeOffsetY:controlMaxHeight-portraitOffsetY;}" };
+const __initData12 = { code: "function FocusedControlsBottomControlsTsx12(){const{drawerOpen,positionY,maxHeight,velocity,MIN_GESTURE_TRIGGER_VELOCITY,CLOSE_DRAWER_POSITION,runOnJS,handleOpen,startY,withTiming,TIMING_CONFIG,TooltipActionCreators,TooltipNames,TIMING_CONFIG_EXIT,resetFocusTimer,handleClose}=this.__closure;var _velocity$get,_velocity$get2;const isDrawerAlreadyOpen=drawerOpen.get();const isPassedTriggerThreshold=positionY.get()*-1>=maxHeight.get()/2;const isHighOpenVelocity=((_velocity$get=velocity.get())!==null&&_velocity$get!==void 0?_velocity$get:0)*-1>=MIN_GESTURE_TRIGGER_VELOCITY;const isHighCloseVelocity=((_velocity$get2=velocity.get())!==null&&_velocity$get2!==void 0?_velocity$get2:0)>=MIN_GESTURE_TRIGGER_VELOCITY;const isLowerThanMinHeight=positionY.get()>CLOSE_DRAWER_POSITION;function openDrawer(){runOnJS(handleOpen)();startY.set(-maxHeight.get());positionY.set(withTiming(startY.get(),TIMING_CONFIG));drawerOpen.set(true);runOnJS(TooltipActionCreators.acknowledgeTooltip)(TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS);}function closeDrawer(){startY.set(0);positionY.set(withTiming(CLOSE_DRAWER_POSITION,TIMING_CONFIG_EXIT));drawerOpen.set(false);runOnJS(resetFocusTimer)();runOnJS(handleClose)();}if(isHighOpenVelocity&&!isDrawerAlreadyOpen||isPassedTriggerThreshold&&!isDrawerAlreadyOpen){openDrawer();}else if(isLowerThanMinHeight||isHighCloseVelocity&&isDrawerAlreadyOpen){closeDrawer();}else if(isPassedTriggerThreshold){openDrawer();}else{closeDrawer();}}" };
+const __initData13 = { code: "function FocusedControlsBottomControlsTsx13(event){const{velocity,positionY,maxHeight,startY}=this.__closure;var _startY$get;velocity.set(event.velocityY);if(positionY.get()*-1>maxHeight.get()+16){return;}positionY.set(((_startY$get=startY.get())!==null&&_startY$get!==void 0?_startY$get:0)+event.translationY);}" };
+const __initData14 = { code: "function FocusedControlsBottomControlsTsx14(){const{runOnJS,clearFocusTimer,drawerOpen,positionY,CLOSE_DRAWER_POSITION,velocity,startY}=this.__closure;runOnJS(clearFocusTimer)();drawerOpen.set(positionY.get()!==CLOSE_DRAWER_POSITION);velocity.set(0);if(positionY.get()==null||!drawerOpen.get()){startY.set(0);}}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? ((controlMaxHeight) => {
+let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDrawerGesture(controlMaxHeight) {
   let portraitOffsetY;
+  let tmp = controlMaxHeight;
+  let tmp2 = portraitOffsetY;
   let obj = controlMaxHeight(portraitOffsetY[13]);
   const cResult = obj.c(14);
   controlMaxHeight = controlMaxHeight.controlMaxHeight;
@@ -531,9 +483,9 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? ((controlMaxHeig
   const landscapeOffsetY = controlMaxHeight.landscapeOffsetY;
   const onClose = controlMaxHeight.onClose;
   const onOpen = controlMaxHeight.onOpen;
-  let tmp2 = landscapeOffsetY(onClose.useState(false), 2);
-  const first = tmp2[0];
-  let closure_7 = tmp2[1];
+  let tmp4 = landscapeOffsetY(onClose.useState(false), 2);
+  const first = tmp4[0];
+  let closure_7 = tmp4[1];
   let obj2 = controlMaxHeight(portraitOffsetY[15]);
   const sharedValue = obj2.useSharedValue(0);
   let obj3 = controlMaxHeight(portraitOffsetY[15]);
@@ -557,55 +509,194 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? ((controlMaxHeig
   let obj6 = controlMaxHeight(portraitOffsetY[15]);
   const sharedValue3 = obj6.useSharedValue(0);
   if (cResult[0] === derivedValue) {
+    let tmp11;
+    if (cResult[1] === sharedValue) {
+      tmp11 = cResult[2];
+    }
     if (cResult[3] === first) {
-      let tmp10;
+      let tmp12;
       if (cResult[4] === onOpen) {
-        tmp10 = cResult[5];
+        tmp12 = cResult[5];
       }
-      let closure_13 = tmp10;
-      class N {
-        constructor() {
-          const tmp = first;
-          if (!tmp) {
-            if (onOpen != null) {
-              tmp2();
+      let closure_13 = tmp12;
+      if (cResult[6] === first) {
+        let tmp13;
+        if (cResult[7] === onClose) {
+          tmp13 = cResult[8];
+        }
+        let closure_14 = tmp13;
+        const Gesture = tmp(tmp2[21]).Gesture;
+        const PanResult = Gesture.Pan();
+        class W {
+          constructor() {
+            const obj = ReanimatedRexport;
+            obj.runOnJS(metroImportAll)();
+            const result = sharedValue2.set(0 !== sharedValue.get());
+            const result1 = sharedValue3.set(0);
+            const tmp4 = null != sharedValue.get() && sharedValue2.get();
+            if (!tmp4) {
+              const result2 = sharedValue1.set(0);
             }
-            closure_7(true);
           }
         }
-      }
-      class L {
-        constructor() {
-          const tmp = first;
-          if (tmp) {
-            if (onClose != null) {
-              tmp2();
+        let obj7 = { runOnJS: tmp(tmp2[15]).runOnJS, clearFocusTimer: sharedValue, drawerOpen: sharedValue2, positionY: sharedValue, CLOSE_DRAWER_POSITION: 0, velocity: sharedValue3, startY: sharedValue1 };
+        const onStart = PanResult.onStart;
+        W.__closure = obj7;
+        W.__workletHash = 3178907529318;
+        W.__initData = __initData10;
+        const onStartResult = onStart(W);
+        class G {
+          constructor(velocityY) {
+            const result = sharedValue3.set(velocityY.velocityY);
+            const result1 = -1 * sharedValue.get();
+            const tmp2 = sharedValue;
+            if (result1 <= derivedValue.get() + 16) {
+              set = tmp2.set;
+              let num = sharedValue1.get();
+              if (num == null) {
+                num = 0;
+              }
+              const result2 = set(num + velocityY.translationY);
             }
-            closure_7(false);
           }
+        }
+        let obj8 = { velocity: sharedValue3, positionY: sharedValue, maxHeight: derivedValue, startY: sharedValue1 };
+        G.__closure = obj8;
+        G.__workletHash = 8306201926624;
+        G.__initData = __initData9;
+        const onUpdateResult = onStartResult.onUpdate(G);
+        class M {
+          constructor() {
+            obj = closure_11;
+            value = closure_11.get();
+            tmp2 = closure_8;
+            result = -1 * closure_8.get();
+            result1 = closure_9.get() / 2;
+            obj2 = closure_12;
+            num = closure_12.get();
+            if (num == null) {
+              num = 0;
+            }
+            tmp6 = c15;
+            result2 = -1 * num;
+            num2 = obj2.get();
+            if (num2 == null) {
+              num2 = 0;
+            }
+            tmp7 = num2 >= tmp6;
+            openDrawer = function openDrawer() {
+              const obj = controlMaxHeight(portraitOffsetY[15]);
+              obj.runOnJS(closure_1_13)();
+              const result = sharedValue1.set(-derivedValue.get());
+              const obj2 = controlMaxHeight(portraitOffsetY[20]);
+              const result1 = set(obj2.withTiming(sharedValue1.get(), obj4));
+              const result2 = sharedValue2.set(true);
+              const obj3 = controlMaxHeight(portraitOffsetY[15]);
+              const runOnJSResult = obj3.runOnJS(isLandscapeMode(portraitOffsetY[22]).acknowledgeTooltip);
+              runOnJSResult(controlMaxHeight(portraitOffsetY[17]).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS);
+            };
+            if (result2 < tmp6) {
+              if (result1 <= result) {
+                return;
+              }
+              if (!tmp8) {
+                if (tmp7) {
+                }
+                if (result1 <= result) {
+                  openDrawerResult = openDrawer();
+                } else {
+                  tmp22 = closure_10;
+                  result3 = closure_10.set(0);
+                  tmp24 = closure_0;
+                  tmp25 = closure_2;
+                  set2 = tmp2.set;
+                  obj6 = closure_0(closure_2[20]);
+                  tmp26 = closure_21;
+                  set2Result = set2(obj6.withTiming(0, closure_21));
+                  flag2 = false;
+                  result4 = obj.set(false);
+                  obj7 = closure_0(closure_2[15]);
+                  tmp29 = resetFocusTimer;
+                  tmp30 = obj7.runOnJS(resetFocusTimer)();
+                  obj8 = closure_0(closure_2[15]);
+                  tmp31 = closure_14;
+                  tmp32 = obj8.runOnJS(closure_14)();
+                }
+              }
+              tmp11 = closure_10;
+              result5 = closure_10.set(0);
+              tmp13 = closure_0;
+              tmp14 = closure_2;
+              set = tmp2.set;
+              obj3 = closure_0(closure_2[20]);
+              tmp15 = closure_21;
+              result6 = set(obj3.withTiming(0, closure_21));
+              flag = false;
+              result7 = obj.set(false);
+              obj4 = closure_0(closure_2[15]);
+              tmp18 = resetFocusTimer;
+              tmp19 = obj4.runOnJS(resetFocusTimer)();
+              obj5 = closure_0(closure_2[15]);
+              tmp20 = closure_14;
+              tmp21 = obj5.runOnJS(closure_14)();
+            }
+            openDrawerResult1 = openDrawer();
+            return;
+          }
+        }
+        const onEnd = onUpdateResult.onEnd;
+        M.__closure = { drawerOpen: sharedValue2, positionY: sharedValue, maxHeight: derivedValue, velocity: sharedValue3, MIN_GESTURE_TRIGGER_VELOCITY, CLOSE_DRAWER_POSITION: 0, runOnJS: tmp(tmp2[15]).runOnJS, handleOpen: tmp12, startY: sharedValue1, withTiming: tmp(tmp2[20]).withTiming, TIMING_CONFIG: obj4, TooltipActionCreators: isLandscapeMode(tmp2[22]), TooltipNames: tmp(tmp2[17]).TooltipNames, TIMING_CONFIG_EXIT: obj5, resetFocusTimer: derivedValue, handleClose: tmp13 };
+        M.__workletHash = 15112485511884;
+        M.__initData = __initData8;
+        const obj9 = { drawerOpen: sharedValue2, positionY: sharedValue, maxHeight: derivedValue, velocity: sharedValue3, MIN_GESTURE_TRIGGER_VELOCITY, CLOSE_DRAWER_POSITION: 0, runOnJS: tmp(tmp2[15]).runOnJS, handleOpen: tmp12, startY: sharedValue1, withTiming: tmp(tmp2[20]).withTiming, TIMING_CONFIG: obj4, TooltipActionCreators: isLandscapeMode(tmp2[22]), TooltipNames: tmp(tmp2[17]).TooltipNames, TIMING_CONFIG_EXIT: obj5, resetFocusTimer: derivedValue, handleClose: tmp13 };
+        const onEndResult = onEnd(M);
+        if (cResult[9] === onEndResult) {
+          if (cResult[10] === first) {
+            if (cResult[11] === sharedValue) {
+              let tmp26;
+              if (cResult[12] === tmp11) {
+                tmp26 = cResult[13];
+              }
+              return tmp26;
+            }
+          }
+        }
+        const items = [sharedValue, onEndResult, tmp11, first];
+        cResult[9] = onEndResult;
+        cResult[10] = first;
+        cResult[11] = sharedValue;
+        cResult[12] = tmp11;
+        cResult[13] = items;
+        tmp26 = items;
+      }
+      function handleClose() {
+        const tmp = first;
+        if (tmp) {
+          if (onClose != null) {
+            tmp2();
+          }
+          closure_7(false);
         }
       }
       cResult[6] = first;
       cResult[7] = onClose;
-      cResult[8] = L;
+      cResult[8] = handleClose;
+      tmp13 = handleClose;
     }
-    class N {
-      constructor() {
-        const tmp = first;
-        if (!tmp) {
-          if (onOpen != null) {
-            tmp2();
-          }
-          closure_7(true);
+    function handleOpen() {
+      const tmp = first;
+      if (!tmp) {
+        if (onOpen != null) {
+          tmp2();
         }
+        closure_7(true);
       }
     }
-    cResult[3] = first;
-    let num = 4;
+    let num = 3;
+    let num2 = 4;
     cResult[4] = onOpen;
-    let num2 = 5;
-    cResult[5] = N;
-    tmp10 = N;
+    cResult[5] = handleOpen;
+    tmp12 = handleOpen;
   }
   const fn2 = function l() {
     let num = 0;
@@ -627,7 +718,8 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? ((controlMaxHeig
   cResult[0] = derivedValue;
   cResult[1] = sharedValue;
   cResult[2] = fn2;
-}) : ((controlMaxHeight) => {
+  tmp11 = fn2;
+}) : (function useDrawerGesture(controlMaxHeight) {
   let closure_5;
   let react;
   controlMaxHeight = controlMaxHeight.controlMaxHeight;
@@ -676,7 +768,7 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? ((controlMaxHeig
   }
   O.__closure = { isLandscapeMode, controlMaxHeight, landscapeOffsetY, portraitOffsetY };
   O.__workletHash = 9835520937079;
-  O.__initData = __initData8;
+  O.__initData = __initData11;
   derivedValue = obj2.useDerivedValue(O);
   let obj3 = controlMaxHeight(portraitOffsetY[15]);
   sharedValue1 = obj3.useSharedValue(0);
@@ -719,7 +811,7 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? ((controlMaxHeig
   let obj6 = { runOnJS: controlMaxHeight(portraitOffsetY[15]).runOnJS, clearFocusTimer: sharedValue, drawerOpen: sharedValue2, positionY: sharedValue, CLOSE_DRAWER_POSITION: 0, velocity: sharedValue3, startY: sharedValue1 };
   N.__closure = obj6;
   N.__workletHash = 535397777506;
-  N.__initData = __initData11;
+  N.__initData = __initData14;
   const onStartResult = PanResult.onStart(N);
   class H {
     constructor(velocityY) {
@@ -738,7 +830,7 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? ((controlMaxHeig
   }
   H.__closure = { velocity: sharedValue3, positionY: sharedValue, maxHeight: derivedValue, startY: sharedValue1 };
   H.__workletHash = 2475240610523;
-  H.__initData = __initData10;
+  H.__initData = __initData13;
   const fn = function b() {
     let obj = sharedValue2;
     const value = sharedValue2.get();
@@ -797,16 +889,16 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? ((controlMaxHeig
   let obj7 = { drawerOpen: sharedValue2, positionY: sharedValue, maxHeight: derivedValue, velocity: sharedValue3, MIN_GESTURE_TRIGGER_VELOCITY, CLOSE_DRAWER_POSITION: 0, runOnJS: controlMaxHeight(portraitOffsetY[15]).runOnJS, handleOpen, startY: sharedValue1, withTiming: controlMaxHeight(portraitOffsetY[20]).withTiming, TIMING_CONFIG: obj4, TooltipActionCreators: isLandscapeMode(portraitOffsetY[22]), TooltipNames: controlMaxHeight(portraitOffsetY[17]).TooltipNames, TIMING_CONFIG_EXIT: obj5, resetFocusTimer: derivedValue, handleClose };
   fn.__closure = obj7;
   fn.__workletHash = 14860505928213;
-  fn.__initData = __initData9;
+  fn.__initData = __initData12;
   const items1 = [sharedValue, onUpdateResult.onEnd(fn), callback, first];
   return items1;
 });
-const __initData12 = { code: "function FocusedControlsBottomControlsTsx15(){const{reveal,controlHeightWithOffset,sheetHeight,isLandscapeMode,safeAreaRight,sheetWidth,withTiming,TIMING_CONFIG}=this.__closure;const revealOffset=reveal?0:controlHeightWithOffset;return{position:\"absolute\",height:sheetHeight,overflow:\"hidden\",bottom:isLandscapeMode?16:0,right:isLandscapeMode?16+safeAreaRight:0,borderRadius:isLandscapeMode?8:0,width:sheetWidth,transform:[{translateY:withTiming(revealOffset,TIMING_CONFIG)}]};}" };
-const __initData13 = { code: "function FocusedControlsBottomControlsTsx16(){const{sheetHeight,offsetY,positionY}=this.__closure;return{height:sheetHeight,transform:[{translateY:offsetY+positionY.get()}]};}" };
-const __initData14 = { code: "function FocusedControlsBottomControlsTsx17(){const{reveal,controlHeightWithOffset,sheetHeight,isLandscapeMode,safeAreaRight,sheetWidth,withTiming,TIMING_CONFIG}=this.__closure;const revealOffset=reveal?0:controlHeightWithOffset;return{position:'absolute',height:sheetHeight,overflow:'hidden',bottom:isLandscapeMode?16:0,right:isLandscapeMode?16+safeAreaRight:0,borderRadius:isLandscapeMode?8:0,width:sheetWidth,transform:[{translateY:withTiming(revealOffset,TIMING_CONFIG)}]};}" };
-const __initData15 = { code: "function FocusedControlsBottomControlsTsx18(){const{sheetHeight,offsetY,positionY}=this.__closure;return{height:sheetHeight,transform:[{translateY:offsetY+positionY.get()}]};}" };
+const __initData15 = { code: "function FocusedControlsBottomControlsTsx15(){const{reveal,controlHeightWithOffset,sheetHeight,isLandscapeMode,safeAreaRight,sheetWidth,withTiming,TIMING_CONFIG}=this.__closure;const revealOffset=reveal?0:controlHeightWithOffset;return{position:\"absolute\",height:sheetHeight,overflow:\"hidden\",bottom:isLandscapeMode?16:0,right:isLandscapeMode?16+safeAreaRight:0,borderRadius:isLandscapeMode?8:0,width:sheetWidth,transform:[{translateY:withTiming(revealOffset,TIMING_CONFIG)}]};}" };
+const __initData16 = { code: "function FocusedControlsBottomControlsTsx16(){const{sheetHeight,offsetY,positionY}=this.__closure;return{height:sheetHeight,transform:[{translateY:offsetY+positionY.get()}]};}" };
+const __initData17 = { code: "function FocusedControlsBottomControlsTsx17(){const{reveal,controlHeightWithOffset,sheetHeight,isLandscapeMode,safeAreaRight,sheetWidth,withTiming,TIMING_CONFIG}=this.__closure;const revealOffset=reveal?0:controlHeightWithOffset;return{position:'absolute',height:sheetHeight,overflow:'hidden',bottom:isLandscapeMode?16:0,right:isLandscapeMode?16+safeAreaRight:0,borderRadius:isLandscapeMode?8:0,width:sheetWidth,transform:[{translateY:withTiming(revealOffset,TIMING_CONFIG)}]};}" };
+const __initData18 = { code: "function FocusedControlsBottomControlsTsx18(){const{sheetHeight,offsetY,positionY}=this.__closure;return{height:sheetHeight,transform:[{translateY:offsetY+positionY.get()}]};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDrawerOpen) => {
+let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function FocusedControlsBottomDrawer(onDrawerOpen) {
   let aboveActionBar;
   let actionBarControlsHeight;
   let bottom;
@@ -950,7 +1042,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDrawerOpen) => {
               const useAnimatedStyle = tmpResult6.useAnimatedStyle;
               X.__closure = obj2;
               X.__workletHash = 1100882862174;
-              X.__initData = __initData12;
+              X.__initData = __initData15;
               const animatedStyle = useAnimatedStyle(X);
               if (cResult[11] !== positionY) {
                 const fn2 = function $() {
@@ -1060,7 +1152,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDrawerOpen) => {
                       return size;
                     }
                   }
-                  le.__initData = __initData13;
+                  le.__initData = __initData16;
                   const animatedStyle1 = obj7.useAnimatedStyle(le);
                   if (cResult[23] !== tmp28[2]) {
                     function ce() {
@@ -1528,7 +1620,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDrawerOpen) => {
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-}) : ((onDrawerClose) => {
+}) : (function FocusedControlsBottomDrawer(onDrawerClose) {
   let GestureDetector;
   let View2;
   let aboveActionBar;
@@ -1654,7 +1746,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDrawerOpen) => {
       reveal(right[15]);
       fn.__closure = obj4;
       fn.__workletHash = 15679717820444;
-      fn.__initData = __initData14;
+      fn.__initData = __initData17;
       let items = [size.width > closure_10, positionY];
       const animatedStyle = useAnimatedStyle(fn);
       const effect = width.useEffect(() => {
@@ -1695,7 +1787,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDrawerOpen) => {
       obj5 = { sheetHeight: bound, offsetY: diff, positionY };
       U.__closure = obj5;
       U.__workletHash = 12567422561237;
-      U.__initData = __initData15;
+      U.__initData = __initData18;
       const items3 = [tmp23[2]];
       const animatedStyle1 = tmp20Result4.useAnimatedStyle(U);
       const effect3 = width.useEffect(() => {
@@ -1741,7 +1833,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDrawerOpen) => {
 });
 let closure_44 = tmp11;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function FocusedControlsBottomControls(arg0) {
   let actionBar;
   let children;
   let closure_129_0;
@@ -1829,7 +1921,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tmp5;
   cResult[3] = tmp10;
   tmp9 = tmp10;
-}) : ((omitPTT) => {
+}) : (function FocusedControlsBottomControls(omitPTT) {
   let actionBar;
   let c0;
   let children;

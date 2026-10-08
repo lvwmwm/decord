@@ -1,22 +1,22 @@
-// Module ID: 14663
-// Function ID: 14664
+// Module ID: 14924
+// Function ID: 14925
 // Name: useDerivedDMSpamFilterSetting
-// Dependencies: [1377, 2030, 558, 576, 2028, 504, 5587, 6812, 1197, 2]
+// Dependencies: [1389, 2042, 558, 576, 2040, 504, 5918, 6984, 1209, 2]
 
-// Module 14663 (useDerivedDMSpamFilterSetting)
+// Module 14924 (useDerivedDMSpamFilterSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import DMSafetyConstants from "DMSafetyConstants" /* 2030 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5587 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 6812 */;
-import UserStore from "UserStore" /* 1377 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import DMSafetyConstants from "DMSafetyConstants" /* 2042 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5918 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 6984 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = DMSafetyConstants.ExplicitContentFilterToDmSpamFilterV2;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDerivedDmSpamFilterSettingValue() {
   let currentUser;
   let tmp6;
   let tmp7;
@@ -41,7 +41,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult = get_initialized;
   const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
   const tmpResult2 = RegionalFeatureConfigUtils;
-  const isSettingTeenByDefault = tmpResult2.useIsSettingTeenByDefault(tmp(6812).SettingsDefaultFeature.SPAM_FILTERS);
+  const isSettingTeenByDefault = tmpResult2.useIsSettingTeenByDefault(tmp(6984).SettingsDefaultFeature.SPAM_FILTERS);
   if (setting === preloaded_user_settings.DmSpamFilterV2.DEFAULT_UNSET) {
     let FRIENDS_AND_NON_FRIENDS;
     let nsfwAllowed;
@@ -50,14 +50,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     if (false === nsfwAllowed) {
       if (isSettingTeenByDefault) {
-        FRIENDS_AND_NON_FRIENDS = tmp(1197).DmSpamFilterV2.FRIENDS_AND_NON_FRIENDS;
+        FRIENDS_AND_NON_FRIENDS = tmp(1209).DmSpamFilterV2.FRIENDS_AND_NON_FRIENDS;
       }
       setting = FRIENDS_AND_NON_FRIENDS;
     }
     if (cResult[2] !== setting1) {
       let NON_FRIENDS = closure_3.get(setting1);
       if (NON_FRIENDS == null) {
-        NON_FRIENDS = tmp(1197).DmSpamFilterV2.NON_FRIENDS;
+        NON_FRIENDS = tmp(1209).DmSpamFilterV2.NON_FRIENDS;
       }
       cResult[2] = setting1;
       cResult[3] = NON_FRIENDS;
@@ -67,7 +67,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   return setting;
-}) : (() => {
+}) : (function useDerivedDmSpamFilterSettingValue() {
   let currentUser;
   const DmSpamFilterV2 = UserSettings.DmSpamFilterV2;
   let setting = DmSpamFilterV2.useSetting();
@@ -86,13 +86,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     if (false === nsfwAllowed) {
       if (isSettingTeenByDefault) {
-        NON_FRIENDS = tmp(1197).DmSpamFilterV2.FRIENDS_AND_NON_FRIENDS;
+        NON_FRIENDS = tmp(1209).DmSpamFilterV2.FRIENDS_AND_NON_FRIENDS;
       }
       setting = NON_FRIENDS;
     }
     NON_FRIENDS = closure_3.get(setting1);
     if (NON_FRIENDS == null) {
-      NON_FRIENDS = tmp(1197).DmSpamFilterV2.NON_FRIENDS;
+      NON_FRIENDS = tmp(1209).DmSpamFilterV2.NON_FRIENDS;
     }
   }
   return setting;

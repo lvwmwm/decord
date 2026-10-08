@@ -1,19 +1,19 @@
-// Module ID: 13124
-// Function ID: 13125
+// Module ID: 12839
+// Function ID: 12840
 // Name: GuildRoleSubscriptionsChannelHeader
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1188, 12476, 4892, 1126, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1200, 12572, 5086, 1126, 2]
 
-// Module 13124 (GuildRoleSubscriptionsChannelHeader)
+// Module 12839 (GuildRoleSubscriptionsChannelHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12476 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12572 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ const View = react_native.View;
 let obj = { header: obj2 };
 obj2 = { flex: 1, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 let closure_6 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionsChannelHeader() {
   let first;
   let intl;
   let items;
@@ -36,7 +36,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { source: AssetRegistryDefault, size: native.Icon.Sizes.MEDIUM, disableColor: true };
-    const Icon = tmp(1188).Icon;
+    const Icon = tmp(1200).Icon;
     const tmp8 = React3(Icon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -45,7 +45,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "heading-lg/extrabold", color: "interactive-text-active", children: intl.string(intl2.t["KzCF/6"]) };
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     intl = tmp(1126).intl;
     const tmp11 = React3(Text, obj3);
     cResult[1] = tmp11;
@@ -64,7 +64,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     tmp12 = cResult[3];
   }
   return tmp12;
-}) : (() => {
+}) : (function GuildRoleSubscriptionsChannelHeader() {
   let intl;
   let items;
   const obj = { style: closure_6().header, children: items };

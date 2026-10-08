@@ -1,22 +1,20 @@
-// Module ID: 9904
-// Function ID: 9905
+// Module ID: 9385
+// Function ID: 9386
 // Name: Graphic
-// Dependencies: [109, 19, 17, 21, 4896, 558, 576, 5981, 4595, 4701, 2]
+// Dependencies: [109, 19, 17, 21, 5090, 558, 576, 6164, 4787, 4895, 2]
 
-// Module 9904 (Graphic)
+// Module 9385 (Graphic)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import native from "native" /* 4595 */;
-import GraphicTypes from "GraphicTypes" /* 4701 */;
-import FastImageDefault from "FastImage" /* 5981 */;
+import native from "native" /* 4787 */;
+import GraphicTypes from "GraphicTypes" /* 4895 */;
+import FastImageDefault from "FastImage" /* 6164 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let src;
 
 let closure_3 = ["aspectRatio", "style"];
 const View = react_native.View;
@@ -24,7 +22,7 @@ const jsx = Fragment.jsx;
 let closure_8 = { "21/9": 2.3333333333333335, "16/9": 1.7777777777777777, "6/4": 1.5, "2/1": 2, "1/1": 1 };
 let closure_9 = createStyles.createStyles({ container: { width: "100%", justifyContent: "center", alignItems: "center", overflow: "hidden" }, image: { width: "100%", height: "100%" } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((src) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageGraphic(src) {
   const obj = react2;
   const cResult = obj.c(3);
   src = src.src;
@@ -41,12 +39,12 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((src) => {
   cResult[1] = tmp3.image;
   cResult[2] = tmp5;
   tmp4 = tmp5;
-}) : ((src) => {
+}) : (function ImageGraphic(src) {
   src = src.src;
   return jsx(FastImageDefault, { source: src, style: closure_9().image, resizeMode: "contain", accessibilityElementsHidden: true });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function RiveGraphic(arg0) {
   let rive;
   let riveProps;
   let tmp2;
@@ -92,7 +90,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = tmp3.image;
   cResult[5] = tmp6;
   tmp4 = tmp6;
-}) : ((riveProps) => {
+}) : (function RiveGraphic(riveProps) {
   riveProps = riveProps.riveProps;
   const rive = riveProps.rive;
   if (riveProps === undefined) {
@@ -103,7 +101,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return <View style={tmp.image}>{null}</View>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Graphic(arg0) {
   let aspectRatio;
   let style;
   let tmp11;
@@ -197,7 +195,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[12] = tmp27;
   cResult[13] = items;
   tmp28 = items;
-}) : ((aspectRatio) => {
+}) : (function Graphic(aspectRatio) {
   let str = aspectRatio.aspectRatio;
   if (str === undefined) {
     str = "16/9";

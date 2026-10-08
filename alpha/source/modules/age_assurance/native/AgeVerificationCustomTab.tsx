@@ -1,14 +1,14 @@
-// Module ID: 8133
-// Function ID: 8134
+// Module ID: 7520
+// Function ID: 7521
 // Name: AgeVerificationCustomTab
-// Dependencies: [5, 3, 570, 4858, 1369, 558, 576, 2]
+// Dependencies: [5, 3, 570, 5052, 1381, 558, 576, 2]
 // Exports: getIsAgeVerificationCustomTabAwaitingResult, openAgeVerificationCustomTab, resumeAgeVerificationCustomTab, setAgeVerificationCustomTabCopy
 
-// Module 8133 (AgeVerificationCustomTab)
+// Module 7520 (AgeVerificationCustomTab)
 import LoggerDefault from "Logger" /* 3 */;
 import react from "react" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import react_nativeDefault from "react-native" /* 4858 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import react_nativeDefault from "react-native" /* 5052 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -240,7 +240,7 @@ let closure_6 = module_570.create(() => ({ isOpen: false, copy: null }));
 let c7 = false;
 let c8 = null;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsAgeVerificationCustomTabOpen() {
   let first;
   obj = react;
   const cResult = obj.c(1);
@@ -254,9 +254,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return closure_6(first);
-}) : (() => closure_6((isOpen) => isOpen.isOpen));
+}) : (function useIsAgeVerificationCustomTabOpen() {
+  return closure_6((isOpen) => isOpen.isOpen);
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAgeVerificationCustomTabCopy() {
   let first;
   obj = react;
   const cResult = obj.c(1);
@@ -270,7 +272,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return closure_6(first);
-}) : (() => closure_6((copy) => copy.copy));
+}) : (function useAgeVerificationCustomTabCopy() {
+  return closure_6((copy) => copy.copy);
+});
 const result = size.fileFinishedImporting("modules/age_assurance/native/AgeVerificationCustomTab.tsx");
 
 export const openAgeVerificationCustomTab = function openAgeVerificationCustomTab() {

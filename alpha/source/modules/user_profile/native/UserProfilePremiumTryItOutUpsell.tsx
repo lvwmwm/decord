@@ -1,17 +1,17 @@
-// Module ID: 14491
-// Function ID: 14492
+// Module ID: 14751
+// Function ID: 14752
 // Name: UserProfilePremiumTryItOutUpsell
-// Dependencies: [19, 6714, 21, 4896, 14490, 558, 576, 6664, 6688, 1618, 8943, 8896, 4618, 5604, 1126, 2]
+// Dependencies: [19, 6891, 21, 5090, 14750, 558, 576, 6841, 6865, 1630, 9328, 9329, 4810, 5374, 1126, 2]
 
-// Module 14491 (UserProfilePremiumTryItOutUpsell)
+// Module 14751 (UserProfilePremiumTryItOutUpsell)
 import Fragment from "Fragment" /* 21 */;
-import spring from "spring" /* 5604 */;
-import Constants from "Constants" /* 6714 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8896 */;
-import openPremiumModalDefault from "openPremiumModal" /* 8943 */;
-import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 14490 */;
+import spring from "spring" /* 5374 */;
+import Constants from "Constants" /* 6891 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9328 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9329 */;
+import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 14750 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ const __initData = { code: "function UserProfilePremiumTryItOutUpsellTsx1(){cons
 const __initData2 = { code: "function UserProfilePremiumTryItOutUpsellTsx2(){const{isVisible}=this.__closure;const visible_0=isVisible.get();return{pointerEvents:visible_0?\"box-none\":\"none\",accessibilityElementsHidden:!visible_0,importantForAccessibility:visible_0?\"auto\":\"no-hide-descendants\"};}" };
 const __initData3 = { code: "function UserProfilePremiumTryItOutUpsellTsx3(){const{isVisible,withSpring,FLOATING_UPSELL_SPRING,DISMISSED_TRANSLATE_Y,DISMISSED_SCALE}=this.__closure;const visible=isVisible.get();return{opacity:withSpring(visible?1:0,FLOATING_UPSELL_SPRING),transform:[{translateY:withSpring(visible?0:DISMISSED_TRANSLATE_Y,FLOATING_UPSELL_SPRING)},{scale:withSpring(visible?1:DISMISSED_SCALE,FLOATING_UPSELL_SPRING)}]};}" };
 const __initData4 = { code: "function UserProfilePremiumTryItOutUpsellTsx4(){const{isVisible}=this.__closure;const visible_0=isVisible.get();return{pointerEvents:visible_0?'box-none':'none',accessibilityElementsHidden:!visible_0,importantForAccessibility:visible_0?'auto':'no-hide-descendants'};}" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isVisible) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfilePremiumTryItOutUpsell(isVisible) {
   let analyticsLocations;
   let tmp7;
   let tmp = isVisible;
@@ -39,9 +39,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isVisible) => {
   isVisible = isVisible.isVisible;
   const onPreviewPremium = isVisible.onPreviewPremium;
   const tmp4 = analyticsLocations;
-  const tmp5 = analyticsLocations(6664);
-  analyticsLocations = tmp5(analyticsLocations(6688).USER_SETTINGS_TRY_OUT_PREMIUM).analyticsLocations;
-  const tmp6 = closure_8(analyticsLocations(1618)().bottom);
+  const tmp5 = analyticsLocations(6841);
+  analyticsLocations = tmp5(analyticsLocations(6865).USER_SETTINGS_TRY_OUT_PREMIUM).analyticsLocations;
+  const tmp6 = closure_8(analyticsLocations(1630)().bottom);
   if (cResult[0] !== analyticsLocations) {
     const fn = function n() {
       const obj = { analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_2_LEADING };
@@ -56,8 +56,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isVisible) => {
   } else {
     tmp7 = cResult[1];
   }
-  const tmpResult = tmp(4618);
-  class P {
+  const tmpResult = tmp(4810);
+  class L {
     constructor() {
       let items;
       const value = isVisible.get();
@@ -87,12 +87,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isVisible) => {
       return obj;
     }
   }
-  const obj2 = { isVisible, withSpring: tmp(5604).withSpring, FLOATING_UPSELL_SPRING, DISMISSED_TRANSLATE_Y: 60, DISMISSED_SCALE };
-  P.__closure = obj2;
-  P.__workletHash = 7434922701119;
-  P.__initData = __initData;
-  const animatedStyle = tmpResult.useAnimatedStyle(P);
-  const tmpResult2 = tmp(4618);
+  const obj2 = { isVisible, withSpring: tmp(5374).withSpring, FLOATING_UPSELL_SPRING, DISMISSED_TRANSLATE_Y: 60, DISMISSED_SCALE };
+  L.__closure = obj2;
+  L.__workletHash = 7434922701119;
+  L.__initData = __initData;
+  const animatedStyle = tmpResult.useAnimatedStyle(L);
+  const tmpResult2 = tmp(4810);
   class T {
     constructor() {
       let str2;
@@ -157,7 +157,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isVisible) => {
             return tmp19;
           }
         }
-        const tmp21 = jsx(tmp4(4618).View, { animatedProps, style: tmp10, children: tmp16 });
+        const tmp21 = jsx(tmp4(4810).View, { animatedProps, style: tmp10, children: tmp16 });
         cResult[12] = animatedProps;
         cResult[13] = tmp10;
         cResult[14] = tmp16;
@@ -165,9 +165,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isVisible) => {
         tmp19 = tmp21;
       }
     }
-    const tmp18 = jsx(tmp4(14490), { style: card, text: tmp11, buttonText: tmp14, onButtonPress: onPreviewPremium, buttonVariant: "primary" });
+    const tmp18 = jsx(tmp4(14750), { style: card, text: tmp11, buttonText: tmp14, onButtonPress: onPreviewPremium, buttonVariant: "primary" });
     cResult[8] = onPreviewPremium;
-    class P {
+    class L {
       constructor() {
         let items;
         const value = isVisible.get();
@@ -207,22 +207,22 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isVisible) => {
   cResult[3] = tmp6.container;
   cResult[4] = items;
   tmp10 = items;
-}) : ((isVisible) => {
+}) : (function UserProfilePremiumTryItOutUpsell(isVisible) {
   let intl;
   let intl2;
   isVisible = isVisible.isVisible;
   let analyticsLocations;
   const onPreviewPremium = isVisible.onPreviewPremium;
-  let tmp = analyticsLocations(6664);
-  analyticsLocations = tmp(analyticsLocations(6688).USER_SETTINGS_TRY_OUT_PREMIUM).analyticsLocations;
-  const tmp2 = closure_8(analyticsLocations(1618)().bottom);
+  let tmp = analyticsLocations(6841);
+  analyticsLocations = tmp(analyticsLocations(6865).USER_SETTINGS_TRY_OUT_PREMIUM).analyticsLocations;
+  const tmp2 = closure_8(analyticsLocations(1630)().bottom);
   let items = [analyticsLocations];
   const callback = react.useCallback(() => {
     const obj = { analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_2_LEADING };
     const tmp = openPremiumModalDefault;
     tmp(obj);
   }, items);
-  let obj = isVisible(4618);
+  let obj = isVisible(4810);
   const fn = function c() {
     let items;
     const value = isVisible.get();
@@ -251,12 +251,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isVisible) => {
     ({ scale: withSpring3(num3, FLOATING_UPSELL_SPRING) });
     return obj;
   };
-  const obj2 = { isVisible, withSpring: isVisible(5604).withSpring, FLOATING_UPSELL_SPRING, DISMISSED_TRANSLATE_Y: 60, DISMISSED_SCALE };
+  const obj2 = { isVisible, withSpring: isVisible(5374).withSpring, FLOATING_UPSELL_SPRING, DISMISSED_TRANSLATE_Y: 60, DISMISSED_SCALE };
   fn.__closure = obj2;
   fn.__workletHash = 14790282051517;
   fn.__initData = __initData3;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const obj3 = isVisible(4618);
+  const obj3 = isVisible(4810);
   class E {
     constructor() {
       let str2;
@@ -278,9 +278,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isVisible) => {
   E.__initData = __initData4;
   const animatedProps = obj3.useAnimatedProps(E);
   const items1 = [tmp2.container, animatedStyle];
-  const View = analyticsLocations(4618).View;
+  const View = analyticsLocations(4810).View;
   ({ style: tmp2.card, text: intl.format(isVisible(1126).t.TmfgI2, { onClick: callback }), buttonText: intl2.string(isVisible(1126).t.PxUx8e), onButtonPress: onPreviewPremium, buttonVariant: "primary" });
-  analyticsLocations(14490);
+  analyticsLocations(14750);
   intl = isVisible(1126).intl;
   intl2 = isVisible(1126).intl;
   return <View animatedProps={animatedProps} style={items1}>{null}</View>;

@@ -1,25 +1,25 @@
-// Module ID: 9250
-// Function ID: 9251
+// Module ID: 8579
+// Function ID: 8580
 // Name: ChannelPermissionsUtils
-// Dependencies: [2055, 2070, 2107, 2112, 1377, 8110, 1085, 2110, 1126, 1097, 11, 4728, 1375, 4520, 9251, 1985, 5041, 2]
+// Dependencies: [2067, 2082, 2119, 2124, 1389, 7484, 1085, 2122, 1126, 1097, 11, 4922, 1387, 4712, 8580, 1997, 5410, 2]
 // Exports: canCreatePrivateChannel, extractPermissionOverwrites, flipEveryonePermission, getAllExistingRolesWithPermission, getExistingMembers, getExistingMembersRows, getExistingRoles, getExistingRolesRowWithPermissionDisabled, getExistingRolesRows, getMembersRows, getNoRolesRow, getPrivateChannelHintText, getRemoveTooltipHint, getRolesRows, getRolesRowsWithPermissionDisabled, getRowTypeLabel, grantUserChannelAccess, isEveryoneRoleId, isPrivateGuildChannel, isPrivateTextChannel, toggleChannelEveryonePermission
 
-// Module 9250 (ChannelPermissionsUtils)
+// Module 8579 (ChannelPermissionsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import intl8 from "intl" /* 1126 */;
-import Server from "Server" /* 1985 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import GuildRecord from "GuildRecord" /* 2070 */;
-import GuildRoleUtils from "GuildRoleUtils" /* 2110 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4520 */;
-import UserUtilsDefault from "UserUtils" /* 4728 */;
-import ChannelUtils from "ChannelUtils" /* 5041 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8110 */;
-import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 9251 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 2107 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import UserStore from "UserStore" /* 1377 */;
+import Server from "Server" /* 1997 */;
+import ChannelRecord from "ChannelRecord" /* 2067 */;
+import GuildRecord from "GuildRecord" /* 2082 */;
+import GuildRoleUtils from "GuildRoleUtils" /* 2122 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4712 */;
+import UserUtilsDefault from "UserUtils" /* 4922 */;
+import ChannelUtils from "ChannelUtils" /* 5410 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7484 */;
+import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8580 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 2119 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -511,7 +511,7 @@ export const getExistingMembers = function getExistingMembers(memberIds, channel
     return tmp10;
   });
 };
-export const getExistingMembersRows = function getExistingMembersRows(memberIds, channel, guild, accessPermissions, arg4) {
+export const getExistingMembersRows = function getExistingMembersRows(memberIds, channel, guild, MODERATE_STAGE_CHANNEL_PERMISSIONS, arg4) {
   _require = guild;
   let obj = arg4;
   if (arg4 === undefined) {
@@ -520,7 +520,7 @@ export const getExistingMembersRows = function getExistingMembersRows(memberIds,
   const appChannelBotUserId = obj.appChannelBotUserId;
   _require = channel;
   let closure_1 = guild;
-  let closure_2 = accessPermissions;
+  let closure_2 = MODERATE_STAGE_CHANNEL_PERMISSIONS;
   const permissionUpdates = obj.permissionUpdates;
   const mapped = memberIds.map(UserStore.getUser);
   const found = mapped.filter(require("GlobalUtils").isNotNullish);

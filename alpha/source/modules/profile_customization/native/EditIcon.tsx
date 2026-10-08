@@ -1,15 +1,15 @@
-// Module ID: 14455
-// Function ID: 14456
+// Module ID: 14682
+// Function ID: 14683
 // Name: EditIcon
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 10071, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 9675, 2]
 
-// Module 14455 (EditIcon)
+// Module 14682 (EditIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let obj2;
 let size;
 let size1;
 let tmp;
-const PencilIcon = tmp(10071);
+const PencilIcon = tmp(9675);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -27,7 +27,7 @@ obj2 = { alignItems: "center", justifyContent: "center", backgroundColor: native
 size = { width: 24, height: 24, borderRadius: nativeDefault.radii.md };
 size1 = { width: 32, height: 32, borderRadius: nativeDefault.radii.lg };
 let closure_5 = createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditIcon(arg0) {
   let items;
   let style;
   const obj = react2;
@@ -76,7 +76,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tmp5;
   cResult[3] = obj4;
   tmp6 = obj4;
-}) : ((style) => {
+}) : (function EditIcon(style) {
   style = style.style;
   let str = style.size;
   if (str === undefined) {

@@ -1,13 +1,13 @@
-// Module ID: 17364
-// Function ID: 17365
+// Module ID: 17645
+// Function ID: 17646
 // Name: CircleWithCutout
-// Dependencies: [19, 17, 21, 558, 576, 9114, 8169, 2]
+// Dependencies: [19, 17, 21, 558, 576, 10687, 7550, 2]
 
-// Module 17364 (CircleWithCutout)
+// Module 17645 (CircleWithCutout)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 8169 */;
-import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 9114 */;
+import inlineStyles from "inlineStyles" /* 7550 */;
+import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 10687 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -20,7 +20,7 @@ let closure_4;
 const PixelRatio = react_native.PixelRatio;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let closure_5 = PixelRatio.get();
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function CircleWithCutout(arg0) {
   let alignBadgeEdgeWithCircleEdge;
   let badgeRadius;
   let circleRadius;
@@ -145,7 +145,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
             tmp25 = tmp27;
           }
           const obj5 = { children: React3(inlineStyles.Mask, obj6) };
-          const Defs = tmp(8169).Defs;
+          const Defs = tmp(7550).Defs;
           obj6 = { id: "mask", children: items2 };
           items2 = [tmp15, tmp18];
           const tmp24 = _false(Defs, obj5);
@@ -176,7 +176,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[1] = cutoutPositionInDegrees;
   cResult[2] = cutoutCenterX;
   diff = cutoutCenterX;
-}) : ((arg0) => {
+}) : (function CircleWithCutout(arg0) {
   let Mask;
   let alignBadgeEdgeWithCircleEdge;
   let badgeRadius;
@@ -231,16 +231,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   items[0] = obj4;
   const obj5 = { children: React3(Mask, obj6) };
   const tmp11 = inlineStylesDefault;
-  const Defs = tmp4(8169).Defs;
+  const Defs = tmp4(7550).Defs;
   obj6 = { id: "mask", children: items1 };
-  Mask = tmp4(8169).Mask;
+  Mask = tmp4(7550).Mask;
   items1 = [_false(inlineStyles.Rect, { width: result2, height: result2, fill: "white" }), ];
   const obj7 = { cx: diff, cy: tmp8, r: cutoutRadius * num, fill: "black" };
   items1[1] = _false(inlineStyles.Circle, obj7);
   items2 = [_false(Defs, obj5), ];
   const obj8 = { cx: result, cy: result, r: result, fill, mask: str };
   str = undefined;
-  const Circle = tmp4(8169).Circle;
+  const Circle = tmp4(7550).Circle;
   const tmp10 = React3;
   const tmp12 = _false;
   if (enableCutout) {

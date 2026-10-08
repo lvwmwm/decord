@@ -1,29 +1,29 @@
-// Module ID: 12118
-// Function ID: 12119
+// Module ID: 12196
+// Function ID: 12197
 // Name: ChannelPickerActionSheet
-// Dependencies: [19, 4525, 1377, 21, 558, 576, 1618, 6703, 4860, 6651, 6006, 12119, 6078, 5819, 5049, 6079, 6119, 6708, 2]
+// Dependencies: [19, 4717, 1389, 21, 558, 576, 1630, 6880, 5054, 6828, 6192, 12197, 6264, 8134, 5417, 6265, 6298, 6885, 2]
 
-// Module 12118 (ChannelPickerActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import useChannelName from "useChannelName" /* 5049 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5819 */;
-import TableRadioRow2 from "TableRadioRow" /* 6078 */;
+// Module 12196 (ChannelPickerActionSheet)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import useChannelName from "useChannelName" /* 5417 */;
+import TableRadioRow2 from "TableRadioRow" /* 6264 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8134 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, noChannelOptionLabel;
+let _require, closure_0, hideActionSheetResult, hideActionSheetResult1, onSelectResult, tmp8;
 
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const TableRowIcon2 = tmp(6006);
+const TableRowIcon2 = tmp(6192);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channels) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelPickerActionSheet(channels) {
   let guild;
   let header;
   let items1;
@@ -225,29 +225,39 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channels) => {
       tmp24 = mapped;
     }
   }
-  const fn = function _(arg0) {
-    channels = arg0;
-    if ("" === arg0) {
-      const obj = channels;
-      if (null != channels.noChannelOptionLabel) {
-        const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.hideActionSheet();
-        obj.onSelect(null);
+  class P {
+    constructor(arg0) {
+      closure_0 = channels;
+      if ("" === channels) {
+        obj = closure_0;
+        tmp = null;
+        if (null != closure_0.noChannelOptionLabel) {
+          tmp8 = closure_1;
+          tmp9 = closure_2;
+          obj3 = closure_1(closure_2[8]);
+          hideActionSheetResult = obj3.hideActionSheet();
+          onSelectResult = obj.onSelect(null);
+          return;
+        }
       }
+      found = channels.find((id) => id.id === closure_0);
+      if (null != found) {
+        tmp3 = closure_1;
+        tmp4 = closure_2;
+        obj2 = closure_1(closure_2[8]);
+        hideActionSheetResult1 = obj2.hideActionSheet();
+        tmp6 = onSelect;
+        tmp7 = onSelect(found);
+      }
+      return;
     }
-    const found = channels.find((id) => id.id === closure_0);
-    if (null != found) {
-      const obj2 = ActionSheetActionCreatorsDefault;
-      obj2.hideActionSheet();
-      onSelect(found);
-    }
-  };
+  }
   cResult[10] = channels;
   cResult[11] = onSelect;
   cResult[12] = channels;
-  cResult[13] = fn;
-  tmp22 = fn;
-}) : ((noChannelOptionLabel) => {
+  cResult[13] = P;
+  tmp22 = P;
+}) : (function ChannelPickerActionSheet(noChannelOptionLabel) {
   let BottomSheetScrollView;
   let TableRadioGroup;
   let TableRowIcon;

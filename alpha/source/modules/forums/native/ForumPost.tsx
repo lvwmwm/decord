@@ -1,17 +1,17 @@
-// Module ID: 11628
-// Function ID: 11629
+// Module ID: 11692
+// Function ID: 11693
 // Name: ForumPost
-// Dependencies: [19, 2051, 4525, 11629, 21, 558, 576, 11630, 11634, 11645, 504, 38, 6817, 7539, 11649, 11648, 7551, 11655, 2062, 2]
+// Dependencies: [19, 2063, 4717, 11693, 21, 558, 576, 11694, 11698, 11710, 504, 38, 6990, 9261, 11714, 11713, 8454, 11720, 2074, 2]
 
-// Module 11628 (ForumPost)
+// Module 11692 (ForumPost)
 import react2 from "react" /* 576 */;
-import ForumChannelStore from "ForumChannelStore" /* 11629 */;
-import ForumPostGridHeaderDefault from "ForumPostGridHeader" /* 11630 */;
-import ForumPostGridBodyDefault from "ForumPostGridBody" /* 11634 */;
-import ForumPostGridFooterDefault from "ForumPostGridFooter" /* 11645 */;
+import ForumChannelStore from "ForumChannelStore" /* 11693 */;
+import ForumPostGridHeaderDefault from "ForumPostGridHeader" /* 11694 */;
+import ForumPostGridBodyDefault from "ForumPostGridBody" /* 11698 */;
+import ForumPostGridFooterDefault from "ForumPostGridFooter" /* 11710 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,7 @@ let metroRequire;
 const useForumChannelStore = ForumChannelStore.useForumChannelStore;
 ({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostGrid(arg0) {
   let firstMessage;
   let hasUnreads;
   let isNew;
@@ -100,7 +100,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = thread;
   cResult[3] = tmp4;
   tmp3 = tmp4;
-}) : ((arg0) => {
+}) : (function ForumPostGrid(arg0) {
   let firstMessage;
   let hasUnreads;
   let isNew;
@@ -115,7 +115,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroImportAll(metroImportDefault, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostListDisabled(arg0) {
   let first;
   let firstMessage;
   let loaded;
@@ -169,7 +169,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult4 = threadId(504);
   const stateFromStores1 = tmpResult4.useStateFromStores(tmp10, tmp12);
-  const tmpResult5 = threadId(6817);
+  const tmpResult5 = threadId(6990);
   const firstForumPostMessage = tmpResult5.useFirstForumPostMessage(stateFromStores);
   ({ firstMessage, loaded } = firstForumPostMessage);
   if (cResult[6] !== firstMessage) {
@@ -180,7 +180,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     tmp15 = cResult[7];
   }
-  const tmpResult6 = threadId(7539);
+  const tmpResult6 = threadId(9261);
   const content = tmpResult6.useForumPostFirstMessageMarkup(tmp15).content;
   let tmp16 = null;
   if (loaded) {
@@ -201,7 +201,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 tmp16 = tmp20;
               }
               const obj3 = { style, children: tmp17 };
-              const tmp22 = closure_6(threadId(11648).ForumPostDisabledContainer, obj3);
+              const tmp22 = closure_6(threadId(11713).ForumPostDisabledContainer, obj3);
               cResult[15] = style;
               cResult[16] = tmp17;
               cResult[17] = tmp22;
@@ -212,7 +212,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj4 = { thread: stateFromStores, parentChannel: stateFromStores1, firstMessage, messageContent: content, media: localDeviceMedia, hasUnreads: true, isNew: false, firstMessageLoaded: loaded, isLocalDeviceMedia: true };
-    const tmp19 = closure_6(tmp8(11649), obj4);
+    const tmp19 = closure_6(tmp8(11714), obj4);
     cResult[8] = content;
     cResult[9] = firstMessage;
     cResult[10] = loaded;
@@ -223,7 +223,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp17 = tmp19;
   }
   return tmp16;
-}) : ((threadId) => {
+}) : (function ForumPostListDisabled(threadId) {
   let firstMessage;
   let loaded;
   let localDeviceMedia;
@@ -239,15 +239,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items1 = [ChannelStore];
   const obj2 = threadId(504);
   const stateFromStores1 = obj2.useStateFromStores(items1, () => ChannelStore.getChannel(stateFromStores.parent_id));
-  const obj3 = threadId(6817);
+  const obj3 = threadId(6990);
   const firstForumPostMessage = obj3.useFirstForumPostMessage(stateFromStores);
   ({ firstMessage, loaded } = firstForumPostMessage);
-  threadId(7539);
+  threadId(9261);
   const tmp = threadId;
   const tmp4 = stateFromStores;
   if (loaded) {
-    const obj4 = { style, children: closure_6(tmp4(11649), obj5) };
-    const ForumPostDisabledContainer = tmp(11648).ForumPostDisabledContainer;
+    const obj4 = { style, children: closure_6(tmp4(11714), obj5) };
+    const ForumPostDisabledContainer = tmp(11713).ForumPostDisabledContainer;
     obj5 = { thread: stateFromStores, parentChannel: stateFromStores1, firstMessage, messageContent: tmp10, media: localDeviceMedia, hasUnreads: true, isNew: false, firstMessageLoaded: loaded, isLocalDeviceMedia: true };
     tmp5 = closure_6(ForumPostDisabledContainer, obj4);
   }
@@ -255,7 +255,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 const memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostMissingWrapper(threadId) {
   let first;
   let tmp6;
   _require = threadId;
@@ -296,7 +296,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((threadI
     tmp7 = tmp8;
   }
   return tmp7;
-}) : ((arg0) => {
+}) : (function ForumPostMissingWrapper(arg0) {
   let threadId;
   _require = arg0;
   const items = [ChannelStore];
@@ -310,7 +310,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((threadI
   return tmp;
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedForumPost(threadId) {
   let content;
   let first;
   let firstMessage;
@@ -572,7 +572,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
   cResult[7] = hasUnreads;
   cResult[8] = obj8;
   tmp16 = obj8;
-}) : ((arg0) => {
+}) : (function ConnectedForumPost(arg0) {
   let content;
   let hasSpoilerEmbeds;
   let hasUnreads;

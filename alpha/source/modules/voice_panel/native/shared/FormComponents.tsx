@@ -1,39 +1,37 @@
-// Module ID: 9348
-// Function ID: 9349
+// Module ID: 8770
+// Function ID: 8771
 // Name: FormComponents
-// Dependencies: [109, 19, 4936, 21, 4896, 587, 558, 576, 6081, 5983, 9349, 1188, 6664, 9350, 9359, 9402, 5312, 9403, 7861, 7241, 504, 9405, 9406, 9408, 4892, 1126, 4728, 9409, 9444, 5601, 9446, 9456, 6000, 2]
+// Dependencies: [109, 19, 5106, 21, 5090, 587, 558, 576, 6267, 6166, 8771, 1200, 6841, 8772, 8781, 7017, 5624, 8825, 8279, 7420, 504, 8826, 8827, 8829, 5086, 1126, 4922, 8830, 9105, 5375, 7003, 9107, 6184, 2]
 // Exports: VoicePanelFormSection
 
-// Module 9348 (FormComponents)
+// Module 8770 (FormComponents)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import UserUtils from "UserUtils" /* 4728 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import NativeViewDefault from "NativeView" /* 5983 */;
-import TableRowGroup3 from "TableRowGroup" /* 6081 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7241 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
-import VoiceStateIcons from "VoiceStateIcons" /* 9349 */;
-import ShieldLockIcon from "ShieldLockIcon" /* 9444 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 9446 */;
+import native from "native" /* 1200 */;
+import UserUtils from "UserUtils" /* 4922 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import NativeViewDefault from "NativeView" /* 6166 */;
+import TableRowGroup3 from "TableRowGroup" /* 6267 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 7003 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7420 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
+import VoiceStateIcons from "VoiceStateIcons" /* 8771 */;
+import ShieldLockIcon from "ShieldLockIcon" /* 9105 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 4936 */;
+import PresenceStore from "PresenceStore" /* 5106 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let user;
 
 let metroImportAll;
 let metroImportDefault;
 let obj2;
 let size;
 let tmp6;
-const GuildTagDefault = tmp6(9409);
+const GuildTagDefault = tmp6(8830);
 let closure_3 = ["style"];
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
@@ -45,7 +43,7 @@ let closure_9 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_10 = ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceBadges(arg0) {
   let MuteDeafenIcon;
   let VideoIcon;
   let items;
@@ -93,7 +91,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj3 = { style: tmp4.iconWrapper, children: metroImportDefault(VideoIcon, obj4) };
         obj4 = { state: videoIconState, size: native.IconSizes.SMALL, style: tmp4.icon };
         const tmp14 = NativeViewDefault;
-        VideoIcon = tmp(9349).VideoIcon;
+        VideoIcon = tmp(8771).VideoIcon;
         tmp11 = metroImportDefault(tmp14, obj3);
       }
       cResult[4] = tmp4.icon;
@@ -108,7 +106,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj5 = { style: tmp4.iconWrapper, children: metroImportDefault(MuteDeafenIcon, obj6) };
     obj6 = { state: muteDeafenIconState, size: native.IconSizes.SMALL, style: tmp4.icon };
     const tmp9 = NativeViewDefault;
-    MuteDeafenIcon = tmp(9349).MuteDeafenIcon;
+    MuteDeafenIcon = tmp(8771).MuteDeafenIcon;
     tmp6 = metroImportDefault(tmp9, obj5);
   }
   cResult[0] = muteDeafenIconState;
@@ -116,7 +114,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tmp4.iconWrapper;
   cResult[3] = tmp6;
   tmp5 = tmp6;
-}) : ((arg0) => {
+}) : (function VoiceBadges(arg0) {
   let MuteDeafenIcon;
   let VideoIcon;
   let items;
@@ -150,7 +148,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp2(tmp5, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberRowItem(user) {
   let displayNameStylesFont;
   let guildId;
   let nick;
@@ -271,7 +269,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
               }
             }
           }
-          const fn2 = function q() {
+          function renderLabel() {
             let items;
             let tmp11;
             let name = nick;
@@ -307,7 +305,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
             }
             items[2] = tmp9Result;
             return tmp5(tmp7, obj2);
-          };
+          }
           cResult[17] = displayNameStylesFont;
           cResult[18] = isUserSecureFramesVerified;
           cResult[19] = nick;
@@ -316,7 +314,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           cResult[22] = tmp7.icon;
           cResult[23] = tmp7.memberRow;
           cResult[24] = user;
-          cResult[25] = fn2;
+          cResult[25] = renderLabel;
         }
       }
       const fn = function k() {
@@ -339,7 +337,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[1] = id;
   cResult[2] = obj4;
   tmp11 = obj4;
-}) : ((user) => {
+}) : (function MemberRowItem(user) {
   let Avatar;
   let guildId;
   let intl;
@@ -557,7 +555,7 @@ export const VoicePanelFormSection = function VoicePanelFormSection(style) {
       }
       if (cResult[6] !== tmp18) {
         const obj2 = {};
-        const TableRowGroup2 = tmp15(6081).TableRowGroup;
+        const TableRowGroup2 = tmp15(6267).TableRowGroup;
         const merged = Object.assign(tmp18);
         const tmp31 = metroImportDefault(TableRowGroup2, obj2);
         cResult[6] = tmp18;

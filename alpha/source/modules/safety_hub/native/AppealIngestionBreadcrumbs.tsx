@@ -1,20 +1,20 @@
-// Module ID: 11529
-// Function ID: 11530
+// Module ID: 11527
+// Function ID: 11528
 // Name: AppealIngestionBreadcrumbs
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1126, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1126, 5086, 2]
 
-// Module 11529 (AppealIngestionBreadcrumbs)
+// Module 11527 (AppealIngestionBreadcrumbs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4892 */;
+import Text_Text from "Text/Text" /* 5086 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, reasons;
+let _require;
 
 let c3;
 let closure_4;
@@ -28,7 +28,7 @@ size = { marginStart: 2, marginTop: 8, width: 4, height: 4, borderRadius: 2, bac
 createStyles = createStyles.createStyles;
 rect = { position: "absolute", width: 2, top: 10, bottom: -12, left: 3, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 let closure_5 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((reasons) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngestionBreadcrumbs(reasons) {
   let closure_0;
   let container;
   let items;
@@ -128,7 +128,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((reasons) => {
     cResult[13] = fn;
     tmp11 = fn;
   }
-}) : ((reasons) => {
+}) : (function AppealIngestionBreadcrumbs(reasons) {
   let closure_0;
   let intl;
   let items;

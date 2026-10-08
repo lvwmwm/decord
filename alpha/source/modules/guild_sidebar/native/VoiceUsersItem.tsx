@@ -1,21 +1,21 @@
-// Module ID: 16091
-// Function ID: 16092
+// Module ID: 16351
+// Function ID: 16352
 // Name: VoiceUsersItem
-// Dependencies: [19, 17, 21, 4896, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 2]
 
-// Module 16091 (VoiceUsersItem)
+// Module 16351 (VoiceUsersItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ voiceStates: { paddingRight: 8 }, voiceStatesCollapsed: { paddingRight: 0, flexDirection: "row", flexWrap: "wrap", alignItems: "center" } });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceUsersItem(arg0) {
   let children;
   let collapsed;
   const obj = react2;
@@ -48,7 +48,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = collapsed;
   cResult[2] = items;
   tmp4 = items;
-}) : ((collapsed) => {
+}) : (function VoiceUsersItem(collapsed) {
   let voiceStatesCollapsed = collapsed.collapsed;
   const children = collapsed.children;
   const tmp = closure_4();

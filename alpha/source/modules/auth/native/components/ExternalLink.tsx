@@ -1,19 +1,19 @@
-// Module ID: 15940
-// Function ID: 15941
+// Module ID: 16200
+// Function ID: 16201
 // Name: ExternalLink
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 6439, 1490, 6469, 1126, 4892, 5601, 5599, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 6617, 1502, 6647, 1126, 5086, 5375, 5963, 2]
 
-// Module 15940 (ExternalLink)
+// Module 16200 (ExternalLink)
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let dependencyMap, externalURL, importDefault, navigation;
+let dependencyMap, importDefault, navigation;
 
 let closure_4;
 let hasOwnProperty;
@@ -35,24 +35,27 @@ let closure_9 = createStyles.createStyles((arg0) => {
   space2 = tmp(587).space;
   return { container, description: { textAlign: "center", marginTop: 8 } };
 });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((externalURL) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalLink(externalURL) {
   let closure_2;
   let intl;
   let items1;
   let items2;
   let items3;
   let tmp11;
-  let tmp14;
-  let tmp20;
+  let tmp15;
+  let tmp17;
+  let tmp22;
   let tmp24;
+  let tmp27;
+  let tmp29;
   let tmp7;
   let tmp8;
   let tmp9;
   const obj = externalURL(576);
   const cResult = obj.c(22);
   externalURL = externalURL.externalURL;
-  const tmp5 = closure_9(navigation(6439)());
-  const obj2 = externalURL(1490);
+  const tmp5 = closure_9(navigation(6617)());
+  const obj2 = externalURL(1502);
   const tmp4 = navigation;
   navigation = obj2.useNavigation();
   if (cResult[0] !== externalURL) {
@@ -67,184 +70,124 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((externalURL) => {
   }
   dependencyMap = tmp7;
   if (cResult[2] !== tmp7) {
-    class B {
-      constructor() {
-        closure_2();
-      }
-    }
+    const fn2 = function k() {
+      closure_2();
+    };
     const items = [tmp7];
     cResult[2] = tmp7;
-    cResult[3] = B;
+    cResult[3] = fn2;
     cResult[4] = items;
     tmp9 = items;
-    tmp8 = B;
+    tmp8 = fn2;
   } else {
-    class B {
-      constructor() {
-        closure_2();
-      }
-    }
+    tmp8 = cResult[3];
     tmp9 = cResult[4];
   }
   const effect = react.useEffect(tmp8, tmp9);
   const container = tmp5.container;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class B {
-      constructor() {
-        closure_2();
-      }
-    }
     const obj3 = { children: intl.string(externalURL(1126).t["0Niu/F"]) };
-    const tmp4Result = tmp4(6469);
+    const tmp4Result = tmp4(6647);
     intl = tmp(1126).intl;
-    const tmp13 = closure_7(tmp4Result, obj3);
-    cResult[5] = tmp13;
-    tmp11 = tmp13;
+    const tmp14 = closure_7(tmp4Result, obj3);
+    cResult[5] = tmp14;
+    tmp11 = tmp14;
   } else {
-    class B {
-      constructor() {
-        closure_2();
-      }
-    }
+    tmp11 = cResult[5];
   }
   const description = tmp5.description;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class B {
-      constructor() {
-        closure_2();
-      }
-    }
-    const stringResult = obj4.string(externalURL(1126).t.nToOEg);
+    const intl2 = tmp(1126).intl;
+    const stringResult = intl2.string(externalURL(1126).t.nToOEg);
     cResult[6] = stringResult;
-    tmp14 = stringResult;
+    tmp15 = stringResult;
   } else {
-    class B {
-      constructor() {
-        closure_2();
-      }
-    }
+    tmp15 = cResult[6];
   }
   if (cResult[7] !== tmp5.description) {
-    class B {
-      constructor() {
-        closure_2();
-      }
-    }
-    const obj5 = { children: items1 };
+    const obj4 = { children: items1 };
     items1 = [tmp11, ];
-    const obj6 = { style: description, variant: "text-md/medium", color: "text-default", children: tmp14 };
-    items1[1] = closure_7(externalURL(4892).Text, obj6);
+    const obj5 = { style: description, variant: "text-md/medium", color: "text-default", children: tmp15 };
+    items1[1] = closure_7(externalURL(5086).Text, obj5);
+    const tmp21 = closure_8(closure_6, obj4);
     cResult[7] = tmp5.description;
-    cResult[8] = closure_8(closure_6, obj5);
-    const tmp19 = closure_8(closure_6, obj5);
+    cResult[8] = tmp21;
+    tmp17 = tmp21;
   } else {
-    class B {
-      constructor() {
-        closure_2();
-      }
-    }
+    tmp17 = cResult[8];
   }
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    class B {
-      constructor() {
-        closure_2();
-      }
-    }
-    const stringResult1 = obj7.string(externalURL(1126).t["2ixEBi"]);
+    const intl3 = tmp(1126).intl;
+    const stringResult1 = intl3.string(externalURL(1126).t["2ixEBi"]);
     cResult[9] = stringResult1;
-    tmp20 = stringResult1;
+    tmp22 = stringResult1;
   } else {
-    class B {
-      constructor() {
-        closure_2();
-      }
-    }
+    tmp22 = cResult[9];
   }
   if (cResult[10] !== tmp7) {
-    class B {
-      constructor() {
-        closure_2();
-      }
-    }
-    const obj8 = { shrink: true, variant: "primary", text: tmp20, onPress: tmp7 };
+    const obj6 = { shrink: true, variant: "primary", text: tmp22, onPress: tmp7 };
+    const tmp26 = closure_7(externalURL(5375).Button, obj6);
     cResult[10] = tmp7;
-    cResult[11] = closure_7(externalURL(5601).Button, obj8);
-    const tmp23 = closure_7(externalURL(5601).Button, obj8);
+    cResult[11] = tmp26;
+    tmp24 = tmp26;
   } else {
-    class B {
-      constructor() {
-        closure_2();
-      }
-    }
+    tmp24 = cResult[11];
   }
   if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-    class B {
-      constructor() {
-        closure_2();
-      }
-    }
-    const stringResult2 = obj9.string(externalURL(1126).t.j3cG2p);
+    const intl4 = tmp(1126).intl;
+    const stringResult2 = intl4.string(externalURL(1126).t.j3cG2p);
     cResult[12] = stringResult2;
-    tmp24 = stringResult2;
+    tmp27 = stringResult2;
   } else {
-    class B {
-      constructor() {
-        closure_2();
-      }
-    }
+    tmp27 = cResult[12];
   }
   if (cResult[13] !== navigation) {
-    class B {
-      constructor() {
-        closure_2();
-      }
-    }
-    const obj10 = {
+    const obj7 = {
       shrink: true,
       variant: "secondary",
-      text: tmp24,
+      text: tmp27,
       onPress() {
           return navigation.pop();
         }
     };
+    const tmp31 = closure_7(externalURL(5375).Button, obj7);
     cResult[13] = navigation;
-    cResult[14] = closure_7(externalURL(5601).Button, obj10);
-    const tmp27 = closure_7(externalURL(5601).Button, obj10);
+    cResult[14] = tmp31;
+    tmp29 = tmp31;
   } else {
-    class B {
-      constructor() {
-        closure_2();
-      }
-    }
+    tmp29 = cResult[14];
   }
-  if (cResult[15] === tmp22) {
-    class B {
-      constructor() {
-        closure_2();
-      }
+  if (cResult[15] === tmp24) {
+    let tmp32;
+    if (cResult[16] === tmp29) {
+      tmp32 = cResult[17];
     }
     if (cResult[18] === tmp5.container) {
-      class B {
-        constructor() {
-          closure_2();
+      if (cResult[19] === tmp32) {
+        let tmp34;
+        if (cResult[20] === tmp17) {
+          tmp34 = cResult[21];
         }
+        return tmp34;
       }
     }
-    const obj11 = { alwaysBounceVertical: false, keyboardShouldPersistTaps: "handled", contentContainerStyle: container, children: items2 };
-    items2 = [tmp16, tmp28];
+    const obj8 = { alwaysBounceVertical: false, keyboardShouldPersistTaps: "handled", contentContainerStyle: container, children: items2 };
+    items2 = [tmp17, tmp32];
+    const tmp37 = closure_8(closure_5, obj8);
     cResult[18] = tmp5.container;
-    cResult[19] = tmp28;
-    cResult[20] = tmp16;
-    cResult[21] = closure_8(closure_5, obj11);
-    const tmp33 = closure_8(closure_5, obj11);
+    cResult[19] = tmp32;
+    cResult[20] = tmp17;
+    cResult[21] = tmp37;
+    tmp34 = tmp37;
   }
-  const obj12 = { children: items3 };
-  items3 = [tmp22, tmp26];
-  cResult[15] = tmp22;
-  cResult[16] = tmp26;
-  cResult[17] = closure_8(externalURL(5599).ButtonGroup, obj12);
-  const tmp29 = closure_8(externalURL(5599).ButtonGroup, obj12);
-}) : ((externalURL) => {
+  const obj9 = { children: items3 };
+  items3 = [tmp24, tmp29];
+  const tmp33 = closure_8(externalURL(5963).ButtonGroup, obj9);
+  cResult[15] = tmp24;
+  cResult[16] = tmp29;
+  cResult[17] = tmp33;
+  tmp32 = tmp33;
+}) : (function ExternalLink(externalURL) {
   let closure_1;
   let intl;
   let intl2;

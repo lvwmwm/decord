@@ -1,9 +1,9 @@
-// Module ID: 6583
-// Function ID: 6584
+// Module ID: 6759
+// Function ID: 6760
 // Name: useSmsAutofill
 // Dependencies: [19, 17, 558, 576, 2]
 
-// Module 6583 (useSmsAutofill)
+// Module 6759 (useSmsAutofill)
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -14,7 +14,7 @@ let _require, dependencyMap;
 
 const SmsAutofillManager = react_native.NativeModules.SmsAutofillManager;
 const nativeEventEmitter = new react_native.NativeEventEmitter(SmsAutofillManager);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSmsAutofill(arg0) {
   let closure_1;
   let tmp2;
   let tmp3;
@@ -34,7 +34,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   dependencyMap = tmp2;
   if (cResult[2] !== tmp2) {
-    const fn2 = function c() {
+    const fn2 = function l() {
       closure_0 = nativeEventEmitter.addListener("verificationCodeReceived", closure_1);
       SmsAutofillManager.startSmsRetriever();
       return () => {
@@ -52,7 +52,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp4 = cResult[4];
   }
   return react.useEffect(tmp3, tmp4);
-}) : ((arg0) => {
+}) : (function useSmsAutofill(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   const callback = react.useCallback((code) => closure_0(code.code), items);

@@ -1,17 +1,17 @@
-// Module ID: 14075
-// Function ID: 14076
+// Module ID: 14374
+// Function ID: 14375
 // Name: polyfillsNative
-// Dependencies: [3, 14076, 14146, 14164, 14167, 14170, 1263, 1248, 2]
+// Dependencies: [3, 14375, 14445, 14463, 14466, 14469, 1275, 1260, 2]
 
-// Module 14075 (polyfillsNative)
-import _mod1248 from "module_1248" /* 1248 */;
-import Buffer from "Buffer" /* 1263 */;
-import _mod14170 from "module_14170" /* 14170 */;
+// Module 14374 (polyfillsNative)
+import _mod1260 from "module_1260" /* 1260 */;
+import Buffer from "Buffer" /* 1275 */;
+import _mod14469 from "module_14469" /* 14469 */;
 import Logger from "Logger" /* 3 */;
-import module_14076 from "module_14076" /* 14076 */;
-import react_native from "react-native" /* 14146 */;
-import getPluralRules from "getPluralRules" /* 14164 */;
-import module_14167 from "module_14167" /* 14167 */;
+import module_14375 from "module_14375" /* 14375 */;
+import react_native from "react-native" /* 14445 */;
+import getPluralRules from "getPluralRules" /* 14463 */;
+import module_14466 from "module_14466" /* 14466 */;
 import size from "module_2" /* 2 */;
 
 if (typeof process === "undefined") {
@@ -26,7 +26,7 @@ if (!global.self) {
   global.self = global;
 }
 if (null == window.crypto) {
-  const _module5 = _mod14170;
+  const _module5 = _mod14469;
   const _window = window;
   window.crypto = global.crypto;
 }
@@ -49,6 +49,6 @@ if (tmp7) {
   tmp7 = null != window.TextDecoder;
 }
 if (!tmp7) {
-  const _module6 = _mod1248;
+  const _module6 = _mod1260;
 }
 const result = size.fileFinishedImporting("polyfillsNative.tsx");

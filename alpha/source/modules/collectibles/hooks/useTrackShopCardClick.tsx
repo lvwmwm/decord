@@ -1,23 +1,21 @@
-// Module ID: 8516
-// Function ID: 8517
+// Module ID: 9000
+// Function ID: 9001
 // Name: useTrackShopCardClick
-// Dependencies: [19, 8517, 1085, 558, 576, 8454, 7860, 7078, 7077, 1252, 2]
+// Dependencies: [19, 9001, 1085, 558, 576, 8940, 8278, 7264, 7263, 1264, 2]
 
-// Module 8516 (useTrackShopCardClick)
+// Module 9000 (useTrackShopCardClick)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7077 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7078 */;
-import CollectiblesShopVariantsUIStore from "CollectiblesShopVariantsUIStore" /* 8517 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7263 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7264 */;
+import CollectiblesShopVariantsUIStore from "CollectiblesShopVariantsUIStore" /* 9001 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let product;
-
 const useSelectedVariantIndex = CollectiblesShopVariantsUIStore.useSelectedVariantIndex;
 const AnalyticEvents = Constants.AnalyticEvents;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackShopCardClick(product) {
   let cardId;
   let tmp6;
   let obj = require("react");
@@ -64,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
       }
     }
   }
-  const fn = function v(cta, arg1) {
+  const fn = function h(cta, arg1) {
     let skuId;
     let tmpResult;
     let tmpResult2;
@@ -103,7 +101,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
   cResult[8] = tilePosition;
   cResult[9] = fn;
   tmp8 = fn;
-}) : ((product) => {
+}) : (function useTrackShopCardClick(product) {
   product = product.product;
   require = product;
   const analyticsLocations = product.analyticsLocations;

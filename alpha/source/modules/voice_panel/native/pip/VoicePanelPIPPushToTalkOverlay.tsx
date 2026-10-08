@@ -1,42 +1,43 @@
-// Module ID: 17338
-// Function ID: 17339
+// Module ID: 17619
+// Function ID: 17620
 // Name: VoicePanelPIPPushToTalkOverlay
-// Dependencies: [32, 19, 17, 11916, 21, 4618, 5983, 1188, 4896, 587, 558, 576, 9633, 17236, 5604, 17234, 6147, 17339, 2]
+// Dependencies: [32, 19, 17, 2011, 11989, 21, 4810, 6166, 1200, 5090, 587, 558, 576, 10828, 17517, 5374, 17515, 6326, 17620, 2]
 
-// Module 17338 (VoicePanelPIPPushToTalkOverlay)
+// Module 17619 (VoicePanelPIPPushToTalkOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4618 */;
-import spring from "spring" /* 5604 */;
-import NativeViewDefault from "NativeView" /* 5983 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6147 */;
-import MediaEngineActionCreators from "MediaEngineActionCreators" /* 9633 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11916 */;
+import native from "native" /* 1200 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4810 */;
+import spring from "spring" /* 5374 */;
+import NativeViewDefault from "NativeView" /* 6166 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6326 */;
+import MediaEngineActionCreators from "MediaEngineActionCreators" /* 10828 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11989 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const ReanimatedRexport_mod = ReanimatedRexport2;
 let dependencyMap;
 
+let c9;
 let metroImportAll;
 let metroImportDefault;
-let metroRequire;
 let obj2;
 let size;
 let tmp;
-const VoicePanelPIPUtils = tmp(17234);
+const VoicePanelPIPUtils = tmp(17515);
 const StyleSheet = react_native.StyleSheet;
 const PUSH_TO_TALK_PIP_PHYSICS = VoicePanelConstants.PUSH_TO_TALK_PIP_PHYSICS;
-({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
+({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
 let ReanimatedRexport = ReanimatedRexport_mod;
 const NativeView = ReanimatedRexport.createAnimatedComponent(NativeViewDefault);
 ReanimatedRexport = ReanimatedRexport_mod;
-let closure_10 = ReanimatedRexport.createAnimatedComponent(native.Icon);
+let closure_11 = ReanimatedRexport.createAnimatedComponent(native.Icon);
 const hitSlop = { top: 6, bottom: 6, left: 6, right: 6 };
 let createStyles = createStyles_mod;
 let obj = { iconContainer: size, overlay: obj2 };
@@ -44,14 +45,14 @@ size = { position: "absolute", width: 32, height: 32, alignItems: "center", just
 createStyles = createStyles.createStyles;
 obj2 = { backgroundColor: nativeDefault.colors.BLACK };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-let closure_12 = createStyles(obj);
+let closure_13 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePushToTalk() {
   let sharedValue;
   let tmp3;
   let obj = sharedValue(576);
   const cResult = obj.c(5);
-  const obj2 = sharedValue(4618);
+  const obj2 = sharedValue(4810);
   sharedValue = obj2.useSharedValue(false);
   const ref = react.useRef(false);
   if (cResult[0] !== sharedValue) {
@@ -59,7 +60,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       if (current !== ref.current) {
         ref.current = current;
         const obj = MediaEngineActionCreators;
-        obj.setPushToTalkState(current);
+        obj.setPushToTalkState(MediaEngineStore.getMediaEngine(), current);
         const result = sharedValue.set(current);
       }
     };
@@ -81,9 +82,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = sharedValue;
   cResult[4] = items;
   tmp4 = items;
-}) : (() => {
+}) : (function usePushToTalk() {
   let sharedValue;
-  let obj = sharedValue(4618);
+  let obj = sharedValue(4810);
   sharedValue = obj.useSharedValue(false);
   const ref = react.useRef(false);
   const items = [sharedValue];
@@ -93,7 +94,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       if (current !== ref.current) {
         ref.current = current;
         const obj = MediaEngineActionCreators;
-        obj.setPushToTalkState(current);
+        obj.setPushToTalkState(MediaEngineStore.getMediaEngine(), current);
         const result = sharedValue.set(current);
       }
     }, items)
@@ -109,11 +110,11 @@ const __initData6 = { code: "function VoicePanelPIPPushToTalkOverlayTsx6(){const
 const __initData7 = { code: "function VoicePanelPIPPushToTalkOverlayTsx7(){const{isPushingToTalk,EXPANDED_ICON_SIZE,BASE_ICON_SIZE,withSpring,PUSH_TO_TALK_PIP_PHYSICS,white}=this.__closure;const padding=isPushingToTalk.get()?8*EXPANDED_ICON_SIZE/BASE_ICON_SIZE+8:8;return{right:withSpring(padding,PUSH_TO_TALK_PIP_PHYSICS),bottom:withSpring(padding,PUSH_TO_TALK_PIP_PHYSICS),transform:[{scale:withSpring(isPushingToTalk.get()?EXPANDED_ICON_SIZE/BASE_ICON_SIZE:1,PUSH_TO_TALK_PIP_PHYSICS)}],backgroundColor:withSpring(isPushingToTalk.get()?white:'rgba(0, 0, 0, 0.54)',PUSH_TO_TALK_PIP_PHYSICS)};}" };
 const __initData8 = { code: "function VoicePanelPIPPushToTalkOverlayTsx8(){const{withSpring,isPushingToTalk,black,white,PUSH_TO_TALK_PIP_PHYSICS}=this.__closure;return{tintColor:withSpring(isPushingToTalk.get()?black:white,PUSH_TO_TALK_PIP_PHYSICS)};}" };
 const __initData9 = { code: "function VoicePanelPIPPushToTalkOverlayTsx9(){const{withSpring,isPushingToTalk,PUSH_TO_TALK_PIP_PHYSICS,getVoicePanelPIPBorderRadius,pipState}=this.__closure;return{opacity:withSpring(isPushingToTalk.get()?0.5:0,PUSH_TO_TALK_PIP_PHYSICS),borderRadius:getVoicePanelPIPBorderRadius(pipState.width,pipState.height)};}" };
-let closure_23 = { code: "function VoicePanelPIPPushToTalkOverlayTsx10(event,success){const{runOnJS,handlePushToTalk}=this.__closure;if(!success){return;}runOnJS(handlePushToTalk)(false);}" };
-let closure_24 = { code: "function VoicePanelPIPPushToTalkOverlayTsx11(){const{runOnJS,handlePushToTalk}=this.__closure;runOnJS(handlePushToTalk)(false);}" };
-let closure_25 = { code: "function VoicePanelPIPPushToTalkOverlayTsx12(){const{runOnJS,handlePushToTalk}=this.__closure;runOnJS(handlePushToTalk)(true);}" };
+let closure_24 = { code: "function VoicePanelPIPPushToTalkOverlayTsx10(event,success){const{runOnJS,handlePushToTalk}=this.__closure;if(!success){return;}runOnJS(handlePushToTalk)(false);}" };
+let closure_25 = { code: "function VoicePanelPIPPushToTalkOverlayTsx11(){const{runOnJS,handlePushToTalk}=this.__closure;runOnJS(handlePushToTalk)(false);}" };
+let closure_26 = { code: "function VoicePanelPIPPushToTalkOverlayTsx12(){const{runOnJS,handlePushToTalk}=this.__closure;runOnJS(handlePushToTalk)(true);}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelPIPPushToTalkOverlay() {
   let WHITE;
   let closure_2;
   let items;
@@ -123,15 +124,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp = pIPState;
   let obj = pIPState(576);
   const cResult = obj.c(19);
-  let obj2 = pIPState(17236);
+  let obj2 = pIPState(17517);
   pIPState = obj2.usePIPState();
-  const tmp5 = closure_12();
-  const tmp6 = WHITE(closure_13(), 2);
+  const tmp5 = closure_13();
+  const tmp6 = WHITE(closure_14(), 2);
   const isPushingToTalk = tmp6[0];
   dependencyMap = tmp8;
   WHITE = isPushingToTalk(587).unsafe_rawColors.WHITE;
   const BLACK = isPushingToTalk(587).unsafe_rawColors.BLACK;
-  let obj3 = pIPState(4618);
+  let obj3 = pIPState(4810);
   const fn = function t() {
     let items;
     let obj3;
@@ -153,7 +154,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     items = [{ scale: withSpring(num2, PUSH_TO_TALK_PIP_PHYSICS) }];
     ({ scale: withSpring(num2, PUSH_TO_TALK_PIP_PHYSICS) });
-    withSpring2 = tmp(5604).withSpring;
+    withSpring2 = tmp(5374).withSpring;
     str = "rgba(0, 0, 0, 0.54)";
     spring;
     if (first.get()) {
@@ -161,7 +162,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return rect;
   };
-  let obj4 = { isPushingToTalk, EXPANDED_ICON_SIZE: 48, BASE_ICON_SIZE: 32, withSpring: pIPState(5604).withSpring, PUSH_TO_TALK_PIP_PHYSICS, white: WHITE };
+  let obj4 = { isPushingToTalk, EXPANDED_ICON_SIZE: 48, BASE_ICON_SIZE: 32, withSpring: pIPState(5374).withSpring, PUSH_TO_TALK_PIP_PHYSICS, white: WHITE };
   fn.__closure = obj4;
   fn.__workletHash = 16468415120439;
   fn.__initData = __initData;
@@ -171,55 +172,53 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { tintColor: obj.withSpring(first.get() ? BLACK : WHITE, PUSH_TO_TALK_PIP_PHYSICS) };
     return obj2;
   };
-  const obj5 = pIPState(4618);
-  fn2.__closure = { withSpring: pIPState(5604).withSpring, isPushingToTalk, black: BLACK, white: WHITE, PUSH_TO_TALK_PIP_PHYSICS };
+  const obj5 = pIPState(4810);
+  fn2.__closure = { withSpring: pIPState(5374).withSpring, isPushingToTalk, black: BLACK, white: WHITE, PUSH_TO_TALK_PIP_PHYSICS };
   fn2.__workletHash = 11469896791985;
   fn2.__initData = __initData2;
-  ({ withSpring: pIPState(5604).withSpring, isPushingToTalk, black: BLACK, white: WHITE, PUSH_TO_TALK_PIP_PHYSICS });
+  ({ withSpring: pIPState(5374).withSpring, isPushingToTalk, black: BLACK, white: WHITE, PUSH_TO_TALK_PIP_PHYSICS });
   const animatedStyle1 = obj5.useAnimatedStyle(fn2);
-  const obj7 = pIPState(4618);
-  const tmp9 = isPushingToTalk;
-  class P {
-    constructor() {
-      let tmpResult;
-      const withSpring = spring.withSpring;
-      let num = 0;
-      spring;
-      if (first.get()) {
-        num = 0.5;
-      }
-      const obj = { opacity: withSpring(num, PUSH_TO_TALK_PIP_PHYSICS), borderRadius: tmpResult.getVoicePanelPIPBorderRadius(pIPState.width, pIPState.height) };
-      tmpResult = VoicePanelPIPUtils;
-      return obj;
+  const fn3 = function s() {
+    let tmpResult;
+    const withSpring = spring.withSpring;
+    let num = 0;
+    spring;
+    if (first.get()) {
+      num = 0.5;
     }
-  }
-  P.__closure = { withSpring: pIPState(5604).withSpring, isPushingToTalk, PUSH_TO_TALK_PIP_PHYSICS, getVoicePanelPIPBorderRadius: pIPState(17234).getVoicePanelPIPBorderRadius, pipState: pIPState };
-  P.__workletHash = 450590017248;
-  P.__initData = __initData3;
-  ({ withSpring: pIPState(5604).withSpring, isPushingToTalk, PUSH_TO_TALK_PIP_PHYSICS, getVoicePanelPIPBorderRadius: pIPState(17234).getVoicePanelPIPBorderRadius, pipState: pIPState });
-  const animatedStyle2 = obj7.useAnimatedStyle(P);
+    const obj = { opacity: withSpring(num, PUSH_TO_TALK_PIP_PHYSICS), borderRadius: tmpResult.getVoicePanelPIPBorderRadius(pIPState.width, pIPState.height) };
+    tmpResult = VoicePanelPIPUtils;
+    return obj;
+  };
+  const obj7 = pIPState(4810);
+  fn3.__closure = { withSpring: pIPState(5374).withSpring, isPushingToTalk, PUSH_TO_TALK_PIP_PHYSICS, getVoicePanelPIPBorderRadius: pIPState(17515).getVoicePanelPIPBorderRadius, pipState: pIPState };
+  fn3.__workletHash = 450590017248;
+  fn3.__initData = __initData3;
+  ({ withSpring: pIPState(5374).withSpring, isPushingToTalk, PUSH_TO_TALK_PIP_PHYSICS, getVoicePanelPIPBorderRadius: pIPState(17515).getVoicePanelPIPBorderRadius, pipState: pIPState });
+  const animatedStyle2 = obj7.useAnimatedStyle(fn3);
+  const tmp9 = isPushingToTalk;
   if (cResult[0] !== tmp6[1]) {
-    const Gesture = tmp(6147).Gesture;
+    const Gesture = tmp(6326).Gesture;
     const Exclusive = Gesture.Exclusive;
-    const Gesture2 = tmp(6147).Gesture;
+    const Gesture2 = tmp(6326).Gesture;
     let num = 30;
     const TapResult = Gesture2.Tap();
-    const fn3 = function b(arg0, arg1) {
+    const fn4 = function b(arg0, arg1) {
       const tmp = arg1;
       if (tmp) {
         const obj = ReanimatedRexport2;
         obj.runOnJS(closure_2)(false);
       }
     };
-    const obj9 = { runOnJS: tmp(4618).runOnJS, handlePushToTalk: tmp6[1] };
+    const obj9 = { runOnJS: tmp(4810).runOnJS, handlePushToTalk: tmp6[1] };
     const onEnd = TapResult.maxDistance(30).onEnd;
     TapResult.maxDistance(30);
-    fn3.__closure = obj9;
+    fn4.__closure = obj9;
     let num2 = 13736796804739;
-    fn3.__workletHash = 13736796804739;
-    fn3.__initData = __initData4;
-    const onEndResult = onEnd(fn3);
-    const Gesture3 = tmp(6147).Gesture;
+    fn4.__workletHash = 13736796804739;
+    fn4.__initData = __initData4;
+    const onEndResult = onEnd(fn4);
+    const Gesture3 = tmp(6326).Gesture;
     const PanResult = Gesture3.Pan();
     const maxPointersResult = PanResult.maxPointers(1);
     const result = maxPointersResult.shouldCancelWhenOutside(false);
@@ -230,21 +229,21 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     const onBegin = result.onBegin;
-    E.__closure = { runOnJS: tmp(4618).runOnJS, handlePushToTalk: tmp6[1] };
+    E.__closure = { runOnJS: tmp(4810).runOnJS, handlePushToTalk: tmp6[1] };
     E.__workletHash = 246779667986;
     E.__initData = __initData6;
-    const fn4 = function f() {
+    const fn5 = function f() {
       const obj = ReanimatedRexport2;
       obj.runOnJS(closure_2)(false);
     };
-    const obj10 = { runOnJS: tmp(4618).runOnJS, handlePushToTalk: tmp6[1] };
-    const obj11 = { runOnJS: tmp(4618).runOnJS, handlePushToTalk: tmp6[1] };
+    const obj10 = { runOnJS: tmp(4810).runOnJS, handlePushToTalk: tmp6[1] };
+    const obj11 = { runOnJS: tmp(4810).runOnJS, handlePushToTalk: tmp6[1] };
     const onFinalize = onBegin(E).onFinalize;
     onBegin(E);
-    fn4.__closure = obj11;
-    fn4.__workletHash = 12223608557562;
-    fn4.__initData = __initData5;
-    const ExclusiveResult = Exclusive(onEndResult, onFinalize(fn4));
+    fn5.__closure = obj11;
+    fn5.__workletHash = 12223608557562;
+    fn5.__initData = __initData5;
+    const ExclusiveResult = Exclusive(onEndResult, onFinalize(fn5));
     cResult[0] = tmp6[1];
     cResult[1] = ExclusiveResult;
     tmp13 = ExclusiveResult;
@@ -263,8 +262,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         tmp24 = cResult[7];
       }
       if (cResult[8] !== animatedStyle1) {
-        const obj12 = { style: animatedStyle1, size: tmp(1188).Icon.Sizes.SMALL_20, source: tmp9(17339), disableColor: true };
-        const tmp28 = closure_6(closure_10, obj12);
+        const obj12 = { style: animatedStyle1, size: tmp(1200).Icon.Sizes.SMALL_20, source: tmp9(17620), disableColor: true };
+        const tmp28 = closure_7(closure_11, obj12);
         cResult[8] = animatedStyle1;
         cResult[9] = tmp28;
         tmp25 = tmp28;
@@ -290,21 +289,21 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
           const obj13 = { children: items };
           items = [tmp22, tmp34];
-          const tmp40 = closure_8(closure_7, obj13);
+          const tmp40 = closure_9(closure_8, obj13);
           cResult[16] = tmp22;
           cResult[17] = tmp34;
           cResult[18] = tmp40;
           tmp37 = tmp40;
         }
         const obj14 = { gesture: tmp13, children: tmp29 };
-        const tmp36 = closure_6(tmp(6147).GestureDetector, obj14);
+        const tmp36 = closure_7(tmp(6326).GestureDetector, obj14);
         cResult[13] = tmp13;
         cResult[14] = tmp29;
         cResult[15] = tmp36;
         tmp34 = tmp36;
       }
       const obj15 = { style: tmp24, hitSlop, children: tmp25 };
-      const tmp33 = closure_6(NativeView, obj15);
+      const tmp33 = closure_7(NativeView, obj15);
       cResult[10] = tmp24;
       cResult[11] = tmp25;
       cResult[12] = tmp33;
@@ -318,12 +317,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const obj16 = { pointerEvents: "none", style: items2 };
   items2 = [tmp5.overlay, animatedStyle2];
-  const tmp23 = closure_6(NativeView, obj16);
+  const tmp23 = closure_7(NativeView, obj16);
   cResult[2] = animatedStyle2;
   cResult[3] = tmp5.overlay;
   cResult[4] = tmp23;
   tmp22 = tmp23;
-}) : (() => {
+}) : (function VoicePanelPIPPushToTalkOverlay() {
   let WHITE;
   let handlePushToTalk;
   let items1;
@@ -332,15 +331,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj11;
   let obj12;
   let pIPState;
-  let obj = pIPState(17236);
+  let obj = pIPState(17517);
   pIPState = obj.usePIPState();
-  const tmp2 = closure_12();
-  const tmp3 = WHITE(closure_13(), 2);
+  const tmp2 = closure_13();
+  const tmp3 = WHITE(closure_14(), 2);
   const isPushingToTalk = tmp3[0];
   dependencyMap = tmp5;
   WHITE = isPushingToTalk(587).unsafe_rawColors.WHITE;
   const BLACK = isPushingToTalk(587).unsafe_rawColors.BLACK;
-  let obj2 = pIPState(4618);
+  let obj2 = pIPState(4810);
   let fn = function o() {
     let items;
     let obj3;
@@ -362,7 +361,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     items = [{ scale: withSpring(num2, PUSH_TO_TALK_PIP_PHYSICS) }];
     ({ scale: withSpring(num2, PUSH_TO_TALK_PIP_PHYSICS) });
-    withSpring2 = tmp(5604).withSpring;
+    withSpring2 = tmp(5374).withSpring;
     str = "rgba(0, 0, 0, 0.54)";
     spring;
     if (first.get()) {
@@ -370,45 +369,41 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return rect;
   };
-  let obj3 = { isPushingToTalk, EXPANDED_ICON_SIZE: 48, BASE_ICON_SIZE: 32, withSpring: pIPState(5604).withSpring, PUSH_TO_TALK_PIP_PHYSICS, white: WHITE };
+  let obj3 = { isPushingToTalk, EXPANDED_ICON_SIZE: 48, BASE_ICON_SIZE: 32, withSpring: pIPState(5374).withSpring, PUSH_TO_TALK_PIP_PHYSICS, white: WHITE };
   fn.__closure = obj3;
   fn.__workletHash = 9965349487665;
   fn.__initData = __initData7;
   const animatedStyle = obj2.useAnimatedStyle(fn);
-  let obj4 = pIPState(4618);
-  class P {
-    constructor() {
-      const obj = spring;
-      const obj2 = { tintColor: obj.withSpring(first.get() ? BLACK : WHITE, PUSH_TO_TALK_PIP_PHYSICS) };
-      return obj2;
+  let obj4 = pIPState(4810);
+  let fn2 = function s() {
+    const obj = spring;
+    const obj2 = { tintColor: obj.withSpring(first.get() ? BLACK : WHITE, PUSH_TO_TALK_PIP_PHYSICS) };
+    return obj2;
+  };
+  fn2.__closure = { withSpring: pIPState(5374).withSpring, isPushingToTalk, black: BLACK, white: WHITE, PUSH_TO_TALK_PIP_PHYSICS };
+  fn2.__workletHash = 17504109449275;
+  fn2.__initData = __initData8;
+  ({ withSpring: pIPState(5374).withSpring, isPushingToTalk, black: BLACK, white: WHITE, PUSH_TO_TALK_PIP_PHYSICS });
+  const animatedStyle1 = obj4.useAnimatedStyle(fn2);
+  let fn3 = function l() {
+    let tmpResult;
+    const withSpring = spring.withSpring;
+    let num = 0;
+    spring;
+    if (first.get()) {
+      num = 0.5;
     }
-  }
-  P.__closure = { withSpring: pIPState(5604).withSpring, isPushingToTalk, black: BLACK, white: WHITE, PUSH_TO_TALK_PIP_PHYSICS };
-  P.__workletHash = 17504109449275;
-  P.__initData = __initData8;
-  ({ withSpring: pIPState(5604).withSpring, isPushingToTalk, black: BLACK, white: WHITE, PUSH_TO_TALK_PIP_PHYSICS });
-  const animatedStyle1 = obj4.useAnimatedStyle(P);
-  const obj6 = pIPState(4618);
-  class O {
-    constructor() {
-      let tmpResult;
-      const withSpring = spring.withSpring;
-      let num = 0;
-      spring;
-      if (first.get()) {
-        num = 0.5;
-      }
-      const obj = { opacity: withSpring(num, PUSH_TO_TALK_PIP_PHYSICS), borderRadius: tmpResult.getVoicePanelPIPBorderRadius(pIPState.width, pIPState.height) };
-      tmpResult = VoicePanelPIPUtils;
-      return obj;
-    }
-  }
-  O.__closure = { withSpring: pIPState(5604).withSpring, isPushingToTalk, PUSH_TO_TALK_PIP_PHYSICS, getVoicePanelPIPBorderRadius: pIPState(17234).getVoicePanelPIPBorderRadius, pipState: pIPState };
-  O.__workletHash = 10396812460138;
-  O.__initData = __initData9;
+    const obj = { opacity: withSpring(num, PUSH_TO_TALK_PIP_PHYSICS), borderRadius: tmpResult.getVoicePanelPIPBorderRadius(pIPState.width, pIPState.height) };
+    tmpResult = VoicePanelPIPUtils;
+    return obj;
+  };
+  const obj6 = pIPState(4810);
+  fn3.__closure = { withSpring: pIPState(5374).withSpring, isPushingToTalk, PUSH_TO_TALK_PIP_PHYSICS, getVoicePanelPIPBorderRadius: pIPState(17515).getVoicePanelPIPBorderRadius, pipState: pIPState };
+  fn3.__workletHash = 10396812460138;
+  fn3.__initData = __initData9;
   let items = [tmp5];
-  ({ withSpring: pIPState(5604).withSpring, isPushingToTalk, PUSH_TO_TALK_PIP_PHYSICS, getVoicePanelPIPBorderRadius: pIPState(17234).getVoicePanelPIPBorderRadius, pipState: pIPState });
-  const animatedStyle2 = obj6.useAnimatedStyle(O);
+  ({ withSpring: pIPState(5374).withSpring, isPushingToTalk, PUSH_TO_TALK_PIP_PHYSICS, getVoicePanelPIPBorderRadius: pIPState(17515).getVoicePanelPIPBorderRadius, pipState: pIPState });
+  const animatedStyle2 = obj6.useAnimatedStyle(fn3);
   const obj9 = { pointerEvents: "none", style: items1 };
   items1 = [tmp2.overlay, animatedStyle2];
   const obj8 = { children: items2 };
@@ -419,7 +414,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const fn = function o(arg0, arg1) {
       const tmp = arg1;
       if (tmp) {
-        const obj = pIPState(closure_2[5]);
+        const obj = pIPState(closure_2[6]);
         obj.runOnJS(closure_1_2)(false);
       }
     };
@@ -435,7 +430,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const maxPointersResult = PanResult.maxPointers(1);
     const result = maxPointersResult.shouldCancelWhenOutside(false);
     const fn2 = function t() {
-      const obj = pIPState(closure_2[5]);
+      const obj = pIPState(closure_2[6]);
       obj.runOnJS(closure_1_2)(true);
     };
     fn2.__closure = { runOnJS: ReanimatedRexport2.runOnJS, handlePushToTalk };
@@ -443,7 +438,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     fn2.__initData = __initData3;
     ({ runOnJS: ReanimatedRexport2.runOnJS, handlePushToTalk });
     const fn3 = function n() {
-      const obj = pIPState(closure_2[5]);
+      const obj = pIPState(closure_2[6]);
       obj.runOnJS(closure_1_2)(false);
     };
     const onBeginResult = result.onBegin(fn2);
@@ -453,14 +448,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     ({ runOnJS: ReanimatedRexport2.runOnJS, handlePushToTalk });
     return Exclusive(onEndResult, onBeginResult.onFinalize(fn3));
   }, items);
-  items2 = [closure_6(NativeView, obj9), ];
-  const obj10 = { gesture: memo, children: closure_6(NativeView, obj11) };
-  obj11 = { style: items3, hitSlop, children: closure_6(closure_10, obj12) };
+  items2 = [closure_7(NativeView, obj9), ];
+  const obj10 = { gesture: memo, children: closure_7(NativeView, obj11) };
+  obj11 = { style: items3, hitSlop, children: closure_7(closure_11, obj12) };
   items3 = [tmp2.iconContainer, animatedStyle];
-  obj12 = { style: animatedStyle1, size: pIPState(1188).Icon.Sizes.SMALL_20, source: isPushingToTalk(17339), disableColor: true };
-  const GestureDetector = pIPState(6147).GestureDetector;
-  items2[1] = closure_6(GestureDetector, obj10);
-  return closure_8(closure_7, obj8);
+  obj12 = { style: animatedStyle1, size: pIPState(1200).Icon.Sizes.SMALL_20, source: isPushingToTalk(17620), disableColor: true };
+  const GestureDetector = pIPState(6326).GestureDetector;
+  items2[1] = closure_7(GestureDetector, obj10);
+  return closure_9(closure_8, obj8);
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/voice_panel/native/pip/VoicePanelPIPPushToTalkOverlay.tsx");

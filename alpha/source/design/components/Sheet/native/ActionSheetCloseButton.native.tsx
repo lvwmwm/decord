@@ -1,15 +1,15 @@
-// Module ID: 6703
-// Function ID: 6704
+// Module ID: 6880
+// Function ID: 6881
 // Name: ActionSheetCloseButton
-// Dependencies: [19, 21, 558, 576, 1126, 587, 6024, 5916, 2]
+// Dependencies: [19, 21, 558, 576, 1126, 587, 6210, 6189, 2]
 
-// Module 6703 (ActionSheetCloseButton)
+// Module 6880 (ActionSheetCloseButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Pressables from "Pressables" /* 5916 */;
-import XSmallIcon2 from "XSmallIcon" /* 6024 */;
+import Pressables from "Pressables" /* 6189 */;
+import XSmallIcon2 from "XSmallIcon" /* 6210 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 const jsx = Fragment.jsx;
 const androidRippleConfig = Object.freeze({ radius: 12 });
 const hitSlop = Object.freeze({ top: 8, right: 8, bottom: 8, left: 8 });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionSheetCloseButton(onPress) {
   let ICON_STRONG;
   let first;
   let tmp8;
@@ -58,7 +58,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   cResult[4] = tmp8;
   cResult[5] = tmp12;
   tmp11 = tmp12;
-}) : ((arg0) => {
+}) : (function ActionSheetCloseButton(arg0) {
   let onPress;
   let variant;
   ({ onPress, variant } = arg0);

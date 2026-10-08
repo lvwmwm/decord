@@ -1,11 +1,11 @@
-// Module ID: 8097
-// Function ID: 8098
+// Module ID: 5264
+// Function ID: 5265
 // Name: getFilterImage
-// Dependencies: [6491, 2]
+// Dependencies: [5253, 2]
 // Exports: default
 
-// Module 8097 (getFilterImage)
-import VideoBackgroundConstants from "VideoBackgroundConstants" /* 6491 */;
+// Module 5264 (getFilterImage)
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5253 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_0 = VideoBackgroundConstants.BACKGROUND_REPLACEMENT_SIZE;

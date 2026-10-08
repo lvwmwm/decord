@@ -1,15 +1,15 @@
-// Module ID: 10791
-// Function ID: 10792
+// Module ID: 10482
+// Function ID: 10483
 // Name: useFetchCollectiblesProduct
-// Dependencies: [32, 19, 5702, 7066, 1085, 558, 576, 573, 1980, 7065, 2]
+// Dependencies: [32, 19, 6092, 7252, 1085, 558, 576, 573, 1992, 7251, 2]
 
-// Module 10791 (useFetchCollectiblesProduct)
+// Module 10482 (useFetchCollectiblesProduct)
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7065 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7251 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import SKUStore_mod from "SKUStore" /* 5702 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7066 */;
+import SKUStore_mod from "SKUStore" /* 6092 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7252 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let _slicedToArray = _slicedToArray_mod;
 const useEffect = react.useEffect;
 let SKUStore = SKUStore_mod;
 let SKUProductLines = Constants.SKUProductLines;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, includeBundles) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchCollectiblesProduct(arg0, includeBundles) {
   let closure_0;
   let closure_2;
   let closure_6;
@@ -126,7 +126,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, includeBundles
         }
       }
     }
-    tmp20 = tmp21 === tmp(1980).CollectiblesItemType.BUNDLE;
+    tmp20 = tmp21 === tmp(1992).CollectiblesItemType.BUNDLE;
   }
   if (tmp20) {
     class L {
@@ -195,7 +195,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, includeBundles
   cResult[14] = first1;
   cResult[15] = arg0;
   cResult[16] = E;
-}) : ((arg0, includeBundles) => {
+}) : (function useFetchCollectiblesProduct(arg0, includeBundles) {
   let closure_0;
   let closure_2;
   let closure_6;
@@ -237,7 +237,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, includeBundles
     if (product != null) {
       type = product.type;
     }
-    tmp10 = type === tmp(1980).CollectiblesItemType.BUNDLE;
+    tmp10 = type === tmp(1992).CollectiblesItemType.BUNDLE;
   }
   if (tmp10) {
     tmp10 = 0 === product.items.length;

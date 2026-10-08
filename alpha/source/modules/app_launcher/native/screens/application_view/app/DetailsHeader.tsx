@@ -1,24 +1,24 @@
-// Module ID: 8825
-// Function ID: 8826
+// Module ID: 9184
+// Function ID: 9185
 // Name: DetailsHeader
-// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 4618, 8826, 8971, 5919, 7957, 4897, 4900, 5980, 4892, 1126, 6059, 5612, 1105, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 587, 558, 576, 4810, 9185, 11225, 8302, 5928, 5091, 5094, 6163, 5086, 1126, 6245, 5387, 1105, 2]
 
-// Module 8825 (DetailsHeader)
+// Module 9184 (DetailsHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
-import timingPresets from "timingPresets" /* 4900 */;
-import BioMarkupUtils from "BioMarkupUtils" /* 8971 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
+import timingPresets from "timingPresets" /* 5094 */;
+import BioMarkupUtils from "BioMarkupUtils" /* 11225 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, flag, num, obj1, ref2, set, set2, set2Result, tmp10, tmp14, tmp15, tmp19, tmp2, tmp20, tmp21, tmp22, tmp24, tmp25, tmp3, tmp5, tmp6, tmp8;
+let dependencyMap, set, set2;
 
 let c10;
 let c9;
@@ -37,11 +37,11 @@ let obj = { animatedViewContainer: { overflow: "hidden" }, container: { position
 obj2 = { display: "flex", flexDirection: "row", gap: nativeDefault.space.PX_4, overflow: "hidden" };
 createStyles = createStyles.createStyles;
 obj3 = { justifyContent: "center", paddingVertical: 2, paddingHorizontal: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE, borderRadius: nativeDefault.radii.lg };
-let ref = createStyles(obj);
-let __initData = { code: "function DetailsHeaderTsx1(){const{height}=this.__closure;return{height:height.get()};}" };
-__initData = { code: "function DetailsHeaderTsx2(){const{height}=this.__closure;return{height:height.get()};}" };
+let closure_12 = createStyles(obj);
+const __initData = { code: "function DetailsHeaderTsx1(){const{height}=this.__closure;return{height:height.get()};}" };
+const __initData2 = { code: "function DetailsHeaderTsx2(){const{height}=this.__closure;return{height:height.get()};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useContainerAnimation() {
   let obj = react2;
   const cResult = obj.c(3);
   const obj2 = ReanimatedRexport;
@@ -67,7 +67,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = animatedStyle;
   cResult[2] = obj4;
   tmp4 = obj4;
-}) : (() => {
+}) : (function useContainerAnimation() {
   let fn;
   let obj3;
   let obj = ReanimatedRexport;
@@ -79,14 +79,17 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   };
   fn.__closure = { height: sharedValue };
   fn.__workletHash = 873669633445;
-  fn.__initData = __initData;
+  fn.__initData = __initData2;
   obj3 = ReanimatedRexport;
   return obj2;
 });
-const __initData2 = { code: "function DetailsHeaderTsx3(){const{runOnJS,setShouldLineClamp}=this.__closure;runOnJS(setShouldLineClamp)(true);}" };
+let closure_16 = { code: "function DetailsHeaderTsx3(){const{runOnJS,setShouldLineClamp}=this.__closure;runOnJS(setShouldLineClamp)(true);}" };
 let closure_17 = { code: "function DetailsHeaderTsx4(){const{runOnJS,setShouldLineClamp}=this.__closure;runOnJS(setShouldLineClamp)(true);}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function DetailsHeader(arg0) {
+  let Text;
+  let Text2;
+  let Text3;
   let application;
   let closure_13;
   let closure_2;
@@ -95,19 +98,47 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   let containerStyle;
   let first1;
   let hideName;
+  let intl;
+  let intl3;
+  let intl4;
+  let items;
+  let items1;
+  let items10;
+  let items11;
+  let items2;
+  let items3;
+  let items4;
+  let items5;
+  let items7;
+  let items9;
   let mainContainerStyle;
+  let obj19;
+  let obj21;
+  let obj23;
+  let obj27;
+  let ref;
+  let ref2;
+  let setShouldLineClamp;
+  let tmp14;
   let tmp16;
+  let tmp17;
+  let tmp24;
+  let tmp5;
+  let tmp84;
   let viewContainerStyle;
   let tmp = ref;
   let obj = ref(576);
   const cResult = obj.c(81);
   ({ application, viewContainerStyle, mainContainerStyle, hideName } = arg0);
-  ref();
+  const tmp4 = ref2();
   if (cResult[0] !== application) {
-    const tmpResult = tmp(8826);
+    const tmpResult = tmp(9185);
     const isPartnerApplicationResult = tmpResult.isPartnerApplication(application);
     cResult[0] = application;
     cResult[1] = isPartnerApplicationResult;
+    tmp5 = isPartnerApplicationResult;
+  } else {
+    tmp5 = cResult[1];
   }
   ref = react.useRef(null);
   const tmp9 = first1(react.useState(false), 2);
@@ -120,247 +151,470 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   ({ containerStyle, containerHeight } = closure_15());
   const tmp13 = closure_15();
   if (cResult[2] !== application) {
-    const tmpResult5 = tmp(8826);
+    const tmpResult5 = tmp(9185);
     const sectionName = tmpResult5.getSectionName(application);
     cResult[2] = application;
     cResult[3] = sectionName;
+    tmp14 = sectionName;
+  } else {
+    tmp14 = cResult[3];
   }
   if (cResult[4] !== application) {
-    const tmpResult6 = tmp(8826);
+    const tmpResult6 = tmp(9185);
     const str = tmpResult6.getSectionDescription(application);
     const tmp18 = null != str && str.trim().length > 0;
     cResult[4] = application;
     cResult[5] = str;
     cResult[6] = tmp18;
+    tmp17 = tmp18;
     tmp16 = str;
   } else {
     tmp16 = cResult[5];
+    tmp17 = cResult[6];
   }
   const tmp8Result = first1(react.useState(null), 2);
-  let closure_7 = tmp8Result[0];
+  const first2 = tmp8Result[0];
   let closure_8 = tmp8Result[1];
   const tmp8Result4 = first1(react.useState(null), 2);
-  const first2 = tmp8Result4[0];
+  const first3 = tmp8Result4[0];
   let closure_10 = tmp8Result4[1];
   colors = obj3.useRef(0);
-  ref = obj3.useRef(0);
-  [r10087, closure_13] = first1(react.useState(false), 2);
+  ref2 = obj3.useRef(0);
+  [tmp24, closure_13] = first1(react.useState(false), 2);
   first1(react.useState(false), 2);
   const tmp8Result6 = first1(react.useState(false), 2);
-  const first3 = tmp8Result6[0];
+  const first4 = tmp8Result6[0];
   closure_15 = tmp8Result6[1];
+  let tmp27 = null;
   if (null != tmp16) {
+    let tmp28;
     if (cResult[7] !== tmp16) {
-      const tmpResult7 = tmp(8971);
+      const tmpResult7 = tmp(11225);
       let result = tmpResult7.parseBioReactWithCachedAST(tmp16);
       cResult[7] = tmp16;
       cResult[8] = result;
+      tmp28 = result;
+    } else {
+      tmp28 = cResult[8];
     }
+    tmp27 = tmp28;
   }
-  const tmpResult8 = tmp(5919);
+  const tmpResult8 = tmp(8302);
   const isScreenLandscape = tmpResult8.useIsScreenLandscape();
-  const tmp29 = first(7957)(isScreenLandscape);
-  closure_17 = tmp29;
+  const tmp32 = first(5928)(isScreenLandscape);
+  closure_17 = tmp32;
   if (cResult[9] === isScreenLandscape) {
-    let tmp30;
-    let tmp31;
-    if (cResult[10] === tmp29) {
-      tmp30 = cResult[11];
-      tmp31 = cResult[12];
+    let tmp33;
+    let tmp34;
+    let tmp37;
+    if (cResult[10] === tmp32) {
+      tmp33 = cResult[11];
+      tmp34 = cResult[12];
     }
-    const effect = obj3.useEffect(tmp30, tmp31);
+    const effect = obj3.useEffect(tmp33, tmp34);
     const _Symbol = Symbol;
     if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-      function pe(nativeEvent) {
+      function handleExpandedContainerLayout(nativeEvent) {
         ref2.current = nativeEvent.nativeEvent.layout.height;
         const tmp = ref2.current > 0 && ref.current > 0;
         if (tmp) {
           closure_15(true);
         }
       }
-      cResult[13] = pe;
+      cResult[13] = handleExpandedContainerLayout;
+      tmp37 = handleExpandedContainerLayout;
+    } else {
+      tmp37 = cResult[13];
     }
     if (cResult[14] === containerHeight) {
-      if (cResult[17] !== first2) {
-        class Se {
-          constructor(nativeEvent) {
-            const lines = nativeEvent.nativeEvent.lines;
-            const tmp = null == first2 && null != lines[0];
-            if (tmp) {
-              closure_10(lines[0].height);
-            }
-            if (null == ref.current) {
-              ref.current = lines.length;
-            }
-            if (lines.length > 3) {
-              setShouldLineClamp(true);
-              closure_2(true);
-            }
+      let tmp38;
+      let tmp39;
+      if (cResult[15] === first4) {
+        tmp38 = cResult[16];
+      }
+      if (cResult[17] !== first3) {
+        function handleApplicationDescriptionTextLayout(nativeEvent) {
+          const lines = nativeEvent.nativeEvent.lines;
+          const tmp = null == first3 && null != lines[0];
+          if (tmp) {
+            closure_10(lines[0].height);
+          }
+          if (null == ref.current) {
+            ref.current = lines.length;
+          }
+          if (lines.length > 3) {
+            setShouldLineClamp(true);
+            closure_2(true);
           }
         }
-        cResult[17] = first2;
-        class Te {
-          constructor() {
-            tmp = closure_1;
-            if (tmp) {
-              tmp2 = closure_5;
-              flag = false;
-              closure_5.current = false;
-              tmp3 = closure_3;
-              if (tmp3) {
-                tmp13 = containerHeight;
-                tmp14 = closure_0;
-                tmp15 = closure_2;
-                set2 = containerHeight.set;
-                tmp16 = closure_0(closure_2[13]);
-                tmp17 = closure_11;
-                current = closure_11.current;
-                tmp18 = closure_0;
-                tmp19 = closure_2;
-                withTiming = tmp16.withTiming;
-                fn = function t() {
-                  const obj = ref(closure_2[8]);
-                  obj.runOnJS(setShouldLineClamp)(true);
-                };
-                obj1 = { runOnJS: null, setShouldLineClamp: null };
-                tmp20 = closure_0;
-                tmp21 = closure_2;
-                timingStandard = closure_0(closure_2[14]).timingStandard;
-                obj1.runOnJS = closure_0(closure_2[8]).runOnJS;
-                tmp22 = closure_13;
-                obj1.setShouldLineClamp = closure_13;
-                fn.__closure = obj1;
-                num = 10020568053710;
-                fn.__workletHash = 10020568053710;
-                tmp23 = closure_16;
-                fn.__initData = closure_16;
-                str = "respect-motion-settings";
-                tmp24 = tmp16;
-                tmp25 = current;
-                tmp26 = fn;
-                set2Result = set2(withTiming(current, timingStandard, "respect-motion-settings", fn));
-              } else {
-                tmp4 = closure_13;
-                tmp5 = closure_13(false);
-                tmp6 = containerHeight;
-                tmp7 = closure_0;
-                tmp8 = closure_2;
-                set = containerHeight.set;
-                obj = closure_0(closure_2[13]);
-                tmp9 = closure_12;
-                tmp10 = closure_0;
-                tmp11 = closure_2;
-                result = set(obj.withTiming(closure_12.current, closure_0(closure_2[14]).timingStandard));
-              }
-              tmp28 = closure_4;
-              tmp29 = closure_4(!tmp3);
-            }
-            return;
-          }
-        }
-        cResult[18] = Se;
+        cResult[17] = first3;
+        cResult[18] = handleApplicationDescriptionTextLayout;
+        tmp39 = handleApplicationDescriptionTextLayout;
       } else {
-        class Se {
-          constructor(nativeEvent) {
-            const lines = nativeEvent.nativeEvent.lines;
-            const tmp = null == first2 && null != lines[0];
-            if (tmp) {
-              closure_10(lines[0].height);
-            }
-            if (null == ref.current) {
-              ref.current = lines.length;
-            }
-            if (lines.length > 3) {
-              setShouldLineClamp(true);
-              closure_2(true);
-            }
-          }
-        }
+        tmp39 = cResult[18];
       }
       if (cResult[19] === containerHeight) {
-        class Se {
-          constructor(nativeEvent) {
-            const lines = nativeEvent.nativeEvent.lines;
-            const tmp = null == first2 && null != lines[0];
-            if (tmp) {
-              closure_10(lines[0].height);
-            }
-            if (null == ref.current) {
-              ref.current = lines.length;
-            }
-            if (lines.length > 3) {
-              setShouldLineClamp(true);
-              closure_2(true);
+        if (cResult[20] === first1) {
+          let tmp40;
+          if (cResult[21] === first) {
+            tmp40 = cResult[22];
+          }
+          const tmp41 = first(6163)(ref);
+          if (cResult[23] === containerStyle) {
+            if (cResult[24] === tmp4.animatedViewContainer) {
+              let tmp43;
+              if (cResult[25] === viewContainerStyle) {
+                tmp43 = cResult[26];
+              }
+              if (cResult[27] === mainContainerStyle) {
+                let tmp44;
+                if (cResult[28] === tmp4.container) {
+                  tmp44 = cResult[29];
+                }
+                if (cResult[30] === hideName) {
+                  if (cResult[31] === tmp14) {
+                    let tmp45;
+                    if (cResult[32] === tmp4.nameText) {
+                      tmp45 = cResult[33];
+                    }
+                    if (cResult[34] === tmp5) {
+                      let tmp48;
+                      if (cResult[35] === tmp4.partnerLabelWrapper) {
+                        tmp48 = cResult[36];
+                      }
+                      if (cResult[37] === tmp4.nameContainer) {
+                        if (cResult[38] === tmp45) {
+                          let tmp52;
+                          if (cResult[39] === tmp48) {
+                            tmp52 = cResult[40];
+                          }
+                          if (cResult[41] === tmp41) {
+                            if (cResult[42] === tmp27) {
+                              if (cResult[43] === first1) {
+                                if (cResult[44] === first3) {
+                                  if (cResult[45] === (first && !first1)) {
+                                    if (cResult[46] === tmp40) {
+                                      if (cResult[47] === tmp17) {
+                                        if (cResult[48] === hideName) {
+                                          if (cResult[49] === tmp24) {
+                                            if (cResult[50] === first) {
+                                              if (cResult[51] === tmp4.collapseDescriptionCTA) {
+                                                if (cResult[52] === tmp4.descriptionContainer) {
+                                                  if (cResult[53] === tmp4.maskFade) {
+                                                    if (cResult[54] === tmp4.maskFill) {
+                                                      if (cResult[55] === tmp4.maskLastLine) {
+                                                        if (cResult[56] === tmp4.viewMoreCTA) {
+                                                          let tmp56;
+                                                          if (cResult[57] === first2) {
+                                                            tmp56 = cResult[58];
+                                                          }
+                                                          if (cResult[59] === tmp38) {
+                                                            if (cResult[60] === tmp44) {
+                                                              if (cResult[61] === tmp52) {
+                                                                let tmp70;
+                                                                if (cResult[62] === tmp56) {
+                                                                  tmp70 = cResult[63];
+                                                                }
+                                                                if (cResult[64] === tmp43) {
+                                                                  let tmp74;
+                                                                  if (cResult[65] === tmp70) {
+                                                                    tmp74 = cResult[66];
+                                                                  }
+                                                                  if (cResult[67] === tmp27) {
+                                                                    if (cResult[68] === tmp39) {
+                                                                      if (cResult[69] === tmp17) {
+                                                                        if (cResult[70] === first4) {
+                                                                          if (cResult[71] === hideName) {
+                                                                            if (cResult[72] === mainContainerStyle) {
+                                                                              if (cResult[73] === tmp14) {
+                                                                                if (cResult[74] === tmp4.collapseDescriptionCTA) {
+                                                                                  if (cResult[75] === tmp4.descriptionContainer) {
+                                                                                    let tmp77;
+                                                                                    if (cResult[76] === tmp4.measuringContainer) {
+                                                                                      tmp77 = cResult[77];
+                                                                                    }
+                                                                                    if (cResult[78] === tmp74) {
+                                                                                      let tmp86;
+                                                                                      if (cResult[79] === tmp77) {
+                                                                                        tmp86 = cResult[80];
+                                                                                      }
+                                                                                      return tmp86;
+                                                                                    }
+                                                                                    let obj2 = { children: items };
+                                                                                    items = [tmp74, tmp77];
+                                                                                    const tmp89 = first3(closure_10, obj2);
+                                                                                    cResult[78] = tmp74;
+                                                                                    cResult[79] = tmp77;
+                                                                                    cResult[80] = tmp89;
+                                                                                    tmp86 = tmp89;
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                  let tmp79Result2 = !first4;
+                                                                  if (tmp79Result2) {
+                                                                    const obj4 = { style: items1, onLayout: tmp37, children: items2 };
+                                                                    items1 = [mainContainerStyle, tmp4.measuringContainer, { opacity: 0, pointerEvents: "none" }];
+                                                                    let tmp81 = !hideName;
+                                                                    if (tmp81) {
+                                                                      const obj5 = { variant: "heading-lg/bold", color: "text-default", children: tmp14 };
+                                                                      tmp81 = closure_8(tmp(5086).Heading, obj5);
+                                                                    }
+                                                                    items2 = [tmp81, ];
+                                                                    let tmp79Result = tmp17;
+                                                                    if (tmp79Result) {
+                                                                      const obj6 = { style: tmp84, children: items3 };
+                                                                      const obj7 = { variant: "text-sm/medium", color: "text-default", onTextLayout: tmp39, children: tmp27 };
+                                                                      tmp84 = !hideName && tmp4.descriptionContainer;
+                                                                      items3 = [closure_8(tmp(5086).Text, obj7), ];
+                                                                      const obj8 = { variant: "text-sm/medium", color: "text-brand", style: tmp4.collapseDescriptionCTA, children: intl4.string(tmp(1126).t.D5xGUK) };
+                                                                      const Text5 = tmp(5086).Text;
+                                                                      intl4 = tmp(1126).intl;
+                                                                      items3[1] = closure_8(Text5, obj8);
+                                                                      tmp79Result = tmp79(tmp80, obj6);
+                                                                    }
+                                                                    items2[1] = tmp79Result;
+                                                                    tmp79Result2 = tmp79(tmp80, obj4);
+                                                                  }
+                                                                  cResult[67] = tmp27;
+                                                                  cResult[68] = tmp39;
+                                                                  cResult[69] = tmp17;
+                                                                  cResult[70] = first4;
+                                                                  cResult[71] = hideName;
+                                                                  cResult[72] = mainContainerStyle;
+                                                                  cResult[73] = tmp14;
+                                                                  cResult[74] = tmp4.collapseDescriptionCTA;
+                                                                  cResult[75] = tmp4.descriptionContainer;
+                                                                  cResult[76] = tmp4.measuringContainer;
+                                                                  cResult[77] = tmp79Result2;
+                                                                  tmp77 = tmp79Result2;
+                                                                }
+                                                                const obj9 = { style: tmp43, children: tmp70 };
+                                                                const tmp76 = closure_8(first(4810).View, obj9);
+                                                                cResult[64] = tmp43;
+                                                                cResult[65] = tmp70;
+                                                                cResult[66] = tmp76;
+                                                                tmp74 = tmp76;
+                                                              }
+                                                            }
+                                                          }
+                                                          const obj10 = { style: tmp44, onLayout: tmp38, children: items4 };
+                                                          items4 = [tmp52, tmp56];
+                                                          const tmp73 = first3(closure_5, obj10);
+                                                          cResult[59] = tmp38;
+                                                          cResult[60] = tmp44;
+                                                          cResult[61] = tmp52;
+                                                          cResult[62] = tmp56;
+                                                          cResult[63] = tmp73;
+                                                          tmp70 = tmp73;
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          let tmp58Result2 = tmp17;
+                          if (tmp58Result2) {
+                            let tmp60Result2;
+                            let tmp65;
+                            let descriptionContainer = !hideName;
+                            const tmp59 = containerHeight;
+                            if (!hideName) {
+                              descriptionContainer = tmp4.descriptionContainer;
+                            }
+                            const obj12 = { style: null };
+                            const absoluteFill = first2.absoluteFill;
+                            const obj11 = { style: descriptionContainer, onPress: tmp40, accessibilityRole: "button", children: items9 };
+                            const tmp31Result = first(6245);
+                            if (first && !first1) {
+                              const obj13 = { style: absoluteFill, children: items5 };
+                              obj12.style = tmp4.maskFill;
+                              items5 = [closure_8(closure_5, obj12), ];
+                              const items6 = [tmp4.maskLastLine, ];
+                              let num38 = first3;
+                              if (first3 == null) {
+                                num38 = 0;
+                              }
+                              const obj14 = { style: items6, children: items7 };
+                              const obj15 = { height: num38 };
+                              items6[1] = obj15;
+                              const obj16 = { style: tmp4.maskFill };
+                              items7 = [closure_8(closure_5, obj16), , ];
+                              const obj17 = { start: tmp(1105).HorizontalGradient.START, end: tmp(1105).HorizontalGradient.END, colors, style: tmp4.maskFade };
+                              const tmp31Result2 = first(5387);
+                              items7[1] = closure_8(tmp31Result2, obj17);
+                              let num39 = first2;
+                              if (first2 == null) {
+                                num39 = 0;
+                              }
+                              const obj18 = { style: obj19 };
+                              obj19 = { width: num39 };
+                              items7[2] = closure_8(closure_5, obj18);
+                              items5[1] = first3(closure_5, obj14);
+                              tmp60Result2 = tmp58(tmp62, obj13);
+                              tmp65 = tmp62;
+                            } else {
+                              const items8 = [absoluteFill, tmp4.maskFill];
+                              obj12.style = items8;
+                              tmp60Result2 = tmp60(tmp62, obj12);
+                              tmp65 = tmp62;
+                            }
+                            const obj20 = { maskElement: tmp60Result2, children: closure_8(Text2, obj21) };
+                            Text2 = tmp(5086).Text;
+                            obj21 = { variant: "text-sm/medium", color: "text-default", lineClamp: num40, children: tmp27 };
+                            items9 = [closure_8(tmp31Result, obj20), , ];
+                            let tmp60Result = null;
+                            if (first && !first1) {
+                              const obj22 = { style: tmp4.viewMoreCTA, children: first3(Text3, obj23) };
+                              obj23 = {
+                                onLayout(nativeEvent) {
+                                                              if (null == first2) {
+                                                                closure_8(nativeEvent.nativeEvent.layout.width);
+                                                              }
+                                                            },
+                                variant: "text-sm/medium",
+                                color: "text-brand",
+                                children: items10
+                              };
+                              Text3 = tmp(5086).Text;
+                              const intl2 = tmp(1126).intl;
+                              items10 = ["\u2026 ", intl2.string(tmp(1126).t["OBCR+p"])];
+                              tmp60Result = tmp60(tmp65, obj22);
+                            }
+                            items9[1] = tmp60Result;
+                            let tmp60Result3 = null;
+                            if (first) {
+                              tmp60Result3 = null;
+                              if (first1) {
+                                const obj24 = { variant: "text-sm/medium", color: "text-brand", style: tmp4.collapseDescriptionCTA, children: intl3.string(tmp(1126).t.D5xGUK) };
+                                const Text4 = tmp(5086).Text;
+                                intl3 = tmp(1126).intl;
+                                tmp60Result3 = tmp60(Text4, obj24);
+                              }
+                            }
+                            items9[2] = tmp60Result3;
+                            tmp58Result2 = tmp58(tmp59, obj11);
+                          }
+                          cResult[41] = tmp41;
+                          cResult[42] = tmp27;
+                          cResult[43] = first1;
+                          cResult[44] = first3;
+                          cResult[45] = first && !first1;
+                          cResult[46] = tmp40;
+                          cResult[47] = tmp17;
+                          cResult[48] = hideName;
+                          cResult[49] = tmp24;
+                          cResult[50] = first;
+                          cResult[51] = tmp4.collapseDescriptionCTA;
+                          cResult[52] = tmp4.descriptionContainer;
+                          cResult[53] = tmp4.maskFade;
+                          cResult[54] = tmp4.maskFill;
+                          cResult[55] = tmp4.maskLastLine;
+                          cResult[56] = tmp4.viewMoreCTA;
+                          cResult[57] = first2;
+                          cResult[58] = tmp58Result2;
+                          tmp56 = tmp58Result2;
+                        }
+                      }
+                      const obj25 = { style: tmp4.nameContainer, children: items11 };
+                      items11 = [tmp45, tmp48];
+                      const tmp55 = first3(closure_5, obj25);
+                      cResult[37] = tmp4.nameContainer;
+                      cResult[38] = tmp45;
+                      cResult[39] = tmp48;
+                      cResult[40] = tmp55;
+                      tmp52 = tmp55;
+                    }
+                    let tmp49 = null;
+                    if (tmp5) {
+                      const obj26 = { style: tmp4.partnerLabelWrapper, children: closure_8(Text, obj27) };
+                      obj27 = { variant: "text-xs/medium", color: "text-default", children: intl.string(tmp(1126).t.LO4f0P) };
+                      Text = tmp(5086).Text;
+                      intl = tmp(1126).intl;
+                      tmp49 = closure_8(closure_5, obj26);
+                    }
+                    cResult[34] = tmp5;
+                    cResult[35] = tmp4.partnerLabelWrapper;
+                    cResult[36] = tmp49;
+                    tmp48 = tmp49;
+                  }
+                }
+                let tmp46 = !hideName;
+                if (tmp46) {
+                  const obj28 = { style: tmp4.nameText, variant: "heading-lg/bold", color: "text-default", lineClamp: 1, children: tmp14 };
+                  tmp46 = closure_8(tmp(5086).Heading, obj28);
+                }
+                cResult[30] = hideName;
+                cResult[31] = tmp14;
+                cResult[32] = tmp4.nameText;
+                cResult[33] = tmp46;
+                tmp45 = tmp46;
+              }
+              const items12 = [tmp4.container, mainContainerStyle];
+              cResult[27] = mainContainerStyle;
+              cResult[28] = tmp4.container;
+              cResult[29] = items12;
+              tmp44 = items12;
             }
           }
+          const items13 = [tmp4.animatedViewContainer, containerStyle, viewContainerStyle];
+          cResult[23] = containerStyle;
+          cResult[24] = tmp4.animatedViewContainer;
+          cResult[25] = viewContainerStyle;
+          cResult[26] = items13;
+          tmp43 = items13;
         }
       }
-      class Te {
-        constructor() {
-          tmp = closure_1;
-          if (tmp) {
-            tmp2 = closure_5;
-            flag = false;
-            closure_5.current = false;
-            tmp3 = closure_3;
-            if (tmp3) {
-              tmp13 = containerHeight;
-              tmp14 = closure_0;
-              tmp15 = closure_2;
-              set2 = containerHeight.set;
-              tmp16 = closure_0(closure_2[13]);
-              tmp17 = closure_11;
-              current = closure_11.current;
-              tmp18 = closure_0;
-              tmp19 = closure_2;
-              withTiming = tmp16.withTiming;
-              fn = function t() {
-                const obj = ref(closure_2[8]);
-                obj.runOnJS(setShouldLineClamp)(true);
-              };
-              obj1 = { runOnJS: null, setShouldLineClamp: null };
-              tmp20 = closure_0;
-              tmp21 = closure_2;
-              timingStandard = closure_0(closure_2[14]).timingStandard;
-              obj1.runOnJS = closure_0(closure_2[8]).runOnJS;
-              tmp22 = closure_13;
-              obj1.setShouldLineClamp = closure_13;
-              fn.__closure = obj1;
-              num = 10020568053710;
-              fn.__workletHash = 10020568053710;
-              tmp23 = closure_16;
-              fn.__initData = closure_16;
-              str = "respect-motion-settings";
-              tmp24 = tmp16;
-              tmp25 = current;
-              tmp26 = fn;
-              set2Result = set2(withTiming(current, timingStandard, "respect-motion-settings", fn));
-            } else {
-              tmp4 = closure_13;
-              tmp5 = closure_13(false);
-              tmp6 = containerHeight;
-              tmp7 = closure_0;
-              tmp8 = closure_2;
-              set = containerHeight.set;
-              obj = closure_0(closure_2[13]);
-              tmp9 = closure_12;
-              tmp10 = closure_0;
-              tmp11 = closure_2;
-              result = set(obj.withTiming(closure_12.current, closure_0(closure_2[14]).timingStandard));
-            }
-            tmp28 = closure_4;
-            tmp29 = closure_4(!tmp3);
+      function handleApplicationDescriptionPress() {
+        const tmp = first;
+        if (tmp) {
+          closure_5.current = false;
+          if (first1) {
+            set2 = containerHeight.set;
+            const current = ref.current;
+            const withTiming = timing.withTiming;
+            const fn = function t() {
+              const obj = ref(closure_2[8]);
+              obj.runOnJS(setShouldLineClamp)(true);
+            };
+            const obj2 = { runOnJS: ReanimatedRexport.runOnJS, setShouldLineClamp };
+            const timingStandard = timingPresets.timingStandard;
+            fn.__closure = obj2;
+            fn.__workletHash = 10020568053710;
+            fn.__initData = __initData;
+            set2(withTiming(current, timingStandard, "respect-motion-settings", fn));
+          } else {
+            setShouldLineClamp(false);
+            set = containerHeight.set;
+            let obj = timing;
+            const result = set(obj.withTiming(ref2.current, timingPresets.timingStandard));
           }
-          return;
+          closure_4(!first1);
         }
       }
       cResult[19] = containerHeight;
       cResult[20] = first1;
       cResult[21] = first;
-      cResult[22] = Te;
+      cResult[22] = handleApplicationDescriptionPress;
+      tmp40 = handleApplicationDescriptionPress;
     }
-    function xe(nativeEvent) {
-      const tmp = first3;
+    function handleCollapsedContainerLayout(nativeEvent) {
+      const tmp = first4;
       if (!tmp) {
         ref.current = nativeEvent.nativeEvent.layout.height;
         const result = containerHeight.set(ref.current);
@@ -371,8 +625,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       }
     }
     cResult[14] = containerHeight;
-    cResult[15] = first3;
-    cResult[16] = xe;
+    cResult[15] = first4;
+    cResult[16] = handleCollapsedContainerLayout;
+    tmp38 = handleCollapsedContainerLayout;
   }
   function he() {
     if (isScreenLandscape !== closure_17) {
@@ -381,14 +636,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       ref.current = 0;
     }
   }
-  const items = [isScreenLandscape, tmp29];
+  const items14 = [isScreenLandscape, tmp32];
   cResult[9] = isScreenLandscape;
-  cResult[10] = tmp29;
+  cResult[10] = tmp32;
   cResult[11] = he;
-  cResult[12] = items;
-  tmp31 = items;
-  tmp30 = he;
-}) : ((viewContainerStyle) => {
+  cResult[12] = items14;
+  tmp34 = items14;
+  tmp33 = he;
+}) : (function DetailsHeader(viewContainerStyle) {
   let Text;
   let Text2;
   let Text3;
@@ -421,6 +676,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   let obj21;
   let obj23;
   let obj6;
+  let setShouldLineClamp;
   let tmp17;
   let tmp44;
   ({ application, mainContainerStyle, hideName } = viewContainerStyle);
@@ -431,16 +687,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   let closure_9;
   let num3;
   colors = undefined;
-  ref = undefined;
-  ref2 = undefined;
+  let ref;
+  let ref2;
   c14 = undefined;
   let first2;
-  let closure_16;
+  closure_16 = undefined;
   let isScreenLandscape;
   let closure_18;
   viewContainerStyle = viewContainerStyle.viewContainerStyle;
   let tmp = ref();
-  let obj = ref(8826);
+  let obj = ref(9185);
   let obj2 = react;
   const isPartnerApplicationResult = obj.isPartnerApplication(application);
   ref = react.useRef(null);
@@ -453,9 +709,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   let closure_5 = react.useRef(true);
   ({ containerHeight: c6, containerStyle } = first2());
   const tmp11 = first2();
-  const obj3 = ref(8826);
+  const obj3 = ref(9185);
   const sectionName = obj3.getSectionName(application);
-  const obj4 = ref(8826);
+  const obj4 = ref(9185);
   const str = obj4.getSectionDescription(application);
   let tmp27Result5 = null != str;
   if (tmp27Result5) {
@@ -483,9 +739,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     }
     return result;
   }, items);
-  const tmp2Result = ref(5919);
+  const tmp2Result = ref(8302);
   isScreenLandscape = tmp2Result.useIsScreenLandscape();
-  const tmp23 = first(7957)(isScreenLandscape);
+  const tmp23 = first(5928)(isScreenLandscape);
   closure_18 = tmp23;
   const items1 = [isScreenLandscape, tmp23];
   const effect = obj2.useEffect(() => {
@@ -496,7 +752,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     }
   }, items1);
   let tmp26 = first;
-  first(5980)(ref);
+  first(6163)(ref);
   if (first) {
     tmp26 = !first1;
   }
@@ -504,7 +760,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   items2 = [tmp.animatedViewContainer, containerStyle, viewContainerStyle];
   obj6 = {
     style: items3,
-    onLayout(nativeEvent) {
+    onLayout: function handleCollapsedContainerLayout(nativeEvent) {
       const tmp = first2;
       if (!tmp) {
         ref.current = nativeEvent.nativeEvent.layout.height;
@@ -520,18 +776,18 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   items3 = [tmp.container, mainContainerStyle];
   let tmp29Result = !hideName;
   const obj7 = { style: tmp.nameContainer, children: items4 };
-  const View = tmp22(4618).View;
+  const View = tmp22(4810).View;
   const tmp28 = num3;
   if (!hideName) {
     const obj8 = { style: tmp.nameText, variant: "heading-lg/bold", color: "text-default", lineClamp: 1, children: sectionName };
-    tmp29Result = tmp29(tmp2(4892).Heading, obj8);
+    tmp29Result = tmp29(tmp2(5086).Heading, obj8);
   }
   items4 = [tmp29Result, ];
   let tmp29Result5 = null;
   if (isPartnerApplicationResult) {
     const obj9 = { style: tmp.partnerLabelWrapper, children: num2(Text, obj10) };
     obj10 = { variant: "text-xs/medium", color: "text-default", children: intl.string(ref(1126).t.LO4f0P) };
-    Text = tmp2(4892).Text;
+    Text = tmp2(5086).Text;
     intl = tmp2(1126).intl;
     tmp29Result5 = tmp29(tmp30, obj9);
   }
@@ -549,7 +805,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     const absoluteFill = str.absoluteFill;
     const obj11 = {
       style: descriptionContainer,
-      onPress() {
+      onPress: function handleApplicationDescriptionPress() {
           const tmp = first;
           if (tmp) {
             closure_5.current = false;
@@ -579,7 +835,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       accessibilityRole: "button",
       children: items10
     };
-    const tmp22Result = first(6059);
+    const tmp22Result = first(6245);
     if (tmp26) {
       const obj13 = { style: absoluteFill, children: items6 };
       obj12.style = tmp.maskFill;
@@ -594,7 +850,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       const obj16 = { style: tmp.maskFill };
       items8 = [tmp29(closure_5, obj16), , ];
       const obj17 = { start: ref(1105).HorizontalGradient.START, end: ref(1105).HorizontalGradient.END, colors, style: tmp.maskFade };
-      const tmp22Result2 = first(5612);
+      const tmp22Result2 = first(5387);
       items8[1] = num2(tmp22Result2, obj17);
       if (num2 == null) {
         num2 = 0;
@@ -610,7 +866,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       tmp29Result6 = tmp29(tmp30, obj12);
     }
     const obj20 = { maskElement: tmp29Result6, children: num2(Text2, obj21) };
-    Text2 = tmp2(4892).Text;
+    Text2 = tmp2(5086).Text;
     obj21 = { variant: "text-sm/medium", color: "text-default", lineClamp: num4, children: memo };
     items10 = [tmp29(tmp22Result, obj20), , ];
     let tmp29Result7 = null;
@@ -626,7 +882,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
         color: "text-brand",
         children: items11
       };
-      Text3 = tmp2(4892).Text;
+      Text3 = tmp2(5086).Text;
       const intl2 = tmp2(1126).intl;
       items11 = ["\u2026 ", intl2.string(tmp2(1126).t["OBCR+p"])];
       tmp29Result7 = tmp29(tmp30, obj22);
@@ -637,7 +893,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       tmp29Result8 = null;
       if (first1) {
         const obj24 = { variant: "text-sm/medium", color: "text-brand", style: tmp.collapseDescriptionCTA, children: intl3.string(ref(1126).t.D5xGUK) };
-        const Text4 = tmp2(4892).Text;
+        const Text4 = tmp2(5086).Text;
         intl3 = tmp2(1126).intl;
         tmp29Result8 = tmp29(Text4, obj24);
       }
@@ -651,7 +907,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   if (tmp27Result6) {
     const obj25 = {
       style: items13,
-      onLayout(nativeEvent) {
+      onLayout: function handleExpandedContainerLayout(nativeEvent) {
           ref2.current = nativeEvent.nativeEvent.layout.height;
           const tmp = ref2.current > 0 && ref.current > 0;
           if (tmp) {
@@ -664,7 +920,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     let tmp29Result9 = !hideName;
     if (tmp29Result9) {
       const obj26 = { variant: "heading-lg/bold", color: "text-default", children: sectionName };
-      tmp29Result9 = tmp29(tmp2(4892).Heading, obj26);
+      tmp29Result9 = tmp29(tmp2(5086).Heading, obj26);
     }
     items14 = [tmp29Result9, ];
     if (tmp27Result5) {
@@ -672,7 +928,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       const obj28 = {
         variant: "text-sm/medium",
         color: "text-default",
-        onTextLayout(nativeEvent) {
+        onTextLayout: function handleApplicationDescriptionTextLayout(nativeEvent) {
               const lines = nativeEvent.nativeEvent.lines;
               const tmp = null == num3 && null != lines[0];
               if (tmp) {
@@ -689,9 +945,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
         children: memo
       };
       tmp44 = !hideName && tmp.descriptionContainer;
-      items15 = [tmp29(tmp2(4892).Text, obj28), ];
+      items15 = [tmp29(tmp2(5086).Text, obj28), ];
       const obj29 = { variant: "text-sm/medium", color: "text-brand", style: tmp.collapseDescriptionCTA, children: intl4.string(ref(1126).t.D5xGUK) };
-      const Text5 = tmp2(4892).Text;
+      const Text5 = tmp2(5086).Text;
       intl4 = tmp2(1126).intl;
       items15[1] = num2(Text5, obj29);
       tmp27Result5 = tmp27(tmp30, obj27);

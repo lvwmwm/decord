@@ -1,16 +1,16 @@
-// Module ID: 13022
-// Function ID: 13023
+// Module ID: 13300
+// Function ID: 13301
 // Name: useAvatarDecorationSections
-// Dependencies: [32, 19, 7066, 7081, 558, 576, 573, 7078, 1126, 13023, 2]
+// Dependencies: [32, 19, 7252, 7267, 558, 576, 573, 7264, 1126, 13301, 2]
 
-// Module 13022 (useAvatarDecorationSections)
+// Module 13300 (useAvatarDecorationSections)
 import react from "react" /* 19 */;
 import intl4 from "intl" /* 1126 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7078 */;
-import useRecommendedCollectiblesSectionsDefault from "useRecommendedCollectiblesSections" /* 13023 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7264 */;
+import useRecommendedCollectiblesSectionsDefault from "useRecommendedCollectiblesSections" /* 13301 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7066 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7081 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7252 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7267 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ const useMemo = react.useMemo;
 const Section = { PURCHASE: "purchase", PREMIUM_PURCHASE: "premium_purchase", PREVIEW: "preview" };
 let obj2 = { skuId: "None" };
 let obj3 = { skuId: "Shop" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvatarDecorationSections() {
   let closure_1;
   let purchases;
   let stateFromStores;
@@ -50,7 +50,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   stateFromStores = tmp2Result.useStateFromStores(tmp5, tmp6);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [CollectiblesCategoryStore];
-    const fn2 = function v() {
+    const fn2 = function _() {
       const items = [, ];
       ({ categories: arr[0], products: arr[1] } = CollectiblesCategoryStore);
       return items;
@@ -152,7 +152,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       tmp27 = obj4;
     }
   }
-  const tmp2Result4 = stateFromStores(7078);
+  const tmp2Result4 = stateFromStores(7264);
   const avatarDecorations = tmp2Result4.getAvatarDecorations(stateFromStores, tmp13);
   if (cResult[10] === tmp14) {
     let tmp18;
@@ -225,7 +225,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[11] = stateFromStores;
   cResult[12] = M;
   tmp18 = M;
-}) : (() => {
+}) : (function useAvatarDecorationSections() {
   let closure_2;
   let first;
   let purchases;
@@ -284,7 +284,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     items1[2] = obj4;
     return items1.filter((items) => items.items.length > 0);
   }, items2);
-  return first(13023)(tmp5, obj.PREVIEW);
+  return first(13301)(tmp5, obj.PREVIEW);
 });
 let result = size.fileFinishedImporting("modules/collectibles/avatar_decorations/useAvatarDecorationSections.tsx");
 

@@ -1,23 +1,21 @@
-// Module ID: 10643
-// Function ID: 10644
+// Module ID: 10243
+// Function ID: 10244
 // Name: ActionButton
-// Dependencies: [19, 17, 21, 558, 576, 5608, 7586, 2]
+// Dependencies: [19, 17, 21, 558, 576, 5381, 8106, 2]
 
-// Module 10643 (ActionButton)
+// Module 10243 (ActionButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ButtonHooks from "ButtonHooks" /* 5608 */;
-import IconButton2 from "IconButton" /* 7586 */;
+import ButtonHooks from "ButtonHooks" /* 5381 */;
+import IconButton2 from "IconButton" /* 8106 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let IconComponent;
-
 const View = react_native.View;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((IconComponent) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionButton(IconComponent) {
   const obj = react2;
   const cResult = obj.c(11);
   IconComponent = IconComponent.IconComponent;
@@ -68,7 +66,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((IconComponent) => 
   cResult[1] = color;
   cResult[2] = tmp5;
   tmp4 = tmp5;
-}) : ((IconComponent) => {
+}) : (function ActionButton(IconComponent) {
   let str = "tertiary";
   IconComponent = IconComponent.IconComponent;
   if ("positive" === IconComponent.type) {

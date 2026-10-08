@@ -1,14 +1,14 @@
-// Module ID: 12482
-// Function ID: 12483
+// Module ID: 12578
+// Function ID: 12579
 // Name: RestrictedScheduleNotificationUtils
-// Dependencies: [12, 2521, 1126, 12483, 2]
+// Dependencies: [12, 2565, 1126, 12579, 2]
 // Exports: diffSchedules, getRestrictedScheduleNotificationSubtitle, getRestrictedScheduleNotificationTitle, restrictedScheduleNotificationKey, toScheduleSnapshot
 
-// Module 12482 (RestrictedScheduleNotificationUtils)
+// Module 12578 (RestrictedScheduleNotificationUtils)
 import _modDef12 from "module_12" /* 12 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef2521 from "module_2521" /* 2521 */;
-import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 12483 */;
+import _modDef2565 from "module_2565" /* 2565 */;
+import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 12579 */;
 import size from "module_2" /* 2 */;
 
 let _require, c0, c3, closure_5, dependencyMap, importDefault, set;
@@ -48,7 +48,7 @@ function isOnlyDayLoss(label, label2) {
 }
 let obj = { Created: "created", Enabled: "enabled", Disabled: "disabled", Updated: "updated", Removed: "removed", Multiple: "multiple" };
 let map = new Map();
-let obj2 = { [Created]: _modDef2521["5V7eBH"], [Enabled]: _modDef2521.iefrVg, [Disabled]: _modDef2521["k+s9cM"], [Updated]: _modDef2521.Nm6hZV, [Multiple]: _modDef2521.Nm6hZV, [Removed]: _modDef2521.jR6uOs };
+let obj2 = { [Created]: _modDef2565["5V7eBH"], [Enabled]: _modDef2565.iefrVg, [Disabled]: _modDef2565["k+s9cM"], [Updated]: _modDef2565.Nm6hZV, [Multiple]: _modDef2565.Nm6hZV, [Removed]: _modDef2565.jR6uOs };
 ({ Created, Enabled, Disabled, Updated, Multiple, Removed } = obj);
 let result = size.fileFinishedImporting("modules/parent_tools/RestrictedScheduleNotificationUtils.tsx");
 
@@ -233,7 +233,7 @@ export const getRestrictedScheduleNotificationSubtitle = function getRestrictedS
   }
   if (result == null) {
     const intl = intl2.intl;
-    result = intl.string(_modDef2521["8OlpoY"]);
+    result = intl.string(_modDef2565["8OlpoY"]);
   }
   return result;
 };

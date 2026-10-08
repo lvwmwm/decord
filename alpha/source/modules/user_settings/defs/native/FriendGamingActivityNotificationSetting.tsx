@@ -1,14 +1,14 @@
-// Module ID: 15344
-// Function ID: 15345
+// Module ID: 15606
+// Function ID: 15607
 // Name: FriendGamingActivityNotificationSetting
-// Dependencies: [7645, 11142, 1126, 2028, 15345, 2]
+// Dependencies: [7966, 11262, 1126, 2040, 15607, 2]
 
-// Module 15344 (FriendGamingActivityNotificationSetting)
+// Module 15606 (FriendGamingActivityNotificationSetting)
 import intl2 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import FriendGamingActivityNotificationUtils from "FriendGamingActivityNotificationUtils" /* 15345 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import FriendGamingActivityNotificationUtils from "FriendGamingActivityNotificationUtils" /* 15607 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

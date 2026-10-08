@@ -1,18 +1,16 @@
-// Module ID: 9159
-// Function ID: 9160
+// Module ID: 10725
+// Function ID: 10726
 // Name: useVadColors
-// Dependencies: [2112, 1377, 558, 576, 504, 2]
+// Dependencies: [2124, 1389, 558, 576, 504, 2]
 
-// Module 9159 (useVadColors)
+// Module 10725 (useVadColors)
 import get_initialized from "get initialized" /* 504 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import UserStore from "UserStore" /* 1377 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let userId;
-
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVadColors(userId) {
   let first;
   let guildId;
   let tmp6;
@@ -30,7 +28,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
     first = cResult[0];
   }
   if (cResult[1] !== userId) {
-    const fn = function n() {
+    const fn = function s() {
       let user = null;
       if (null != userId) {
         user = UserStore.getUser(tmp);
@@ -89,7 +87,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[5] = userId;
   cResult[6] = fn2;
   tmp10 = fn2;
-}) : ((arg0) => {
+}) : (function useVadColors(arg0) {
   ({ userId: require, guildId: dependencyMap } = arg0);
   const items = [UserStore];
   const obj = get_initialized;

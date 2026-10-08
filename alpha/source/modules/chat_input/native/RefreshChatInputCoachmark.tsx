@@ -1,13 +1,13 @@
-// Module ID: 11613
-// Function ID: 11614
+// Module ID: 11677
+// Function ID: 11678
 // Name: RefreshChatInputCoachmark
-// Dependencies: [109, 32, 19, 2048, 558, 576, 2036, 6901, 1126, 4690, 9895, 2]
+// Dependencies: [109, 32, 19, 2060, 558, 576, 2048, 7090, 1126, 4884, 9375, 2]
 
-// Module 11613 (RefreshChatInputCoachmark)
+// Module 11677 (RefreshChatInputCoachmark)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import OmnibuttonCoachmarkRive from "OmnibuttonCoachmarkRive" /* 4690 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import OmnibuttonCoachmarkRive from "OmnibuttonCoachmarkRive" /* 4884 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -15,15 +15,16 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, buttonRef, dependencyMap, disabled;
+let _require, dependencyMap;
 
 let tmp;
-const useCoachmark = tmp(9895);
+const useCoachmark = tmp(9375);
 let closure_2 = ["buttonRef"];
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRefreshChatInputCoachmark(disabled) {
   let closure_0;
+  let tmp12;
   let tmp13;
   let tmp4;
   let tmp8;
@@ -36,7 +37,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
     if (disabled) {
       items = [];
     } else {
-      items = [tmp(2036).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK];
+      items = [tmp(2048).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK];
     }
     cResult[0] = disabled;
     cResult[1] = items;
@@ -48,7 +49,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
   const tmp5 = _slicedToArray(tmpResult.useSelectedDismissibleContent(tmp4), 2);
   _require = tmp7;
   const first = tmp5[0];
-  const MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK = tmp(2036).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK;
+  const MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK = tmp(2048).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
     const stringResult = intl.string(require("intl").t.eqI1WA);
@@ -63,62 +64,39 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
     tmp9 = cResult[3];
   }
   if (cResult[4] !== tmp5[1]) {
-    class C {
-      constructor() {
-        tmp = closure_0(ContentDismissActionType.USER_DISMISS);
-        return;
-      }
-    }
+    const fn = function _() {
+      closure_0(ContentDismissActionType.USER_DISMISS);
+    };
     cResult[4] = tmp5[1];
-    cResult[5] = C;
+    cResult[5] = fn;
+    tmp12 = fn;
   } else {
-    class C {
-      constructor() {
-        tmp = closure_0(ContentDismissActionType.USER_DISMISS);
-        return;
-      }
-    }
+    tmp12 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class C {
-      constructor() {
-        tmp = closure_0(ContentDismissActionType.USER_DISMISS);
-        return;
-      }
-    }
-    tmp14[1] = require("OmnibuttonCoachmarkRive").OmnibuttonCoachmarkRive;
-    cResult[6] = tmp14;
-    tmp13 = tmp14;
+    const obj2 = { type: "rive", rive: require("OmnibuttonCoachmarkRive").OmnibuttonCoachmarkRive, aspectRatio: "16/9" };
+    cResult[6] = obj2;
+    tmp13 = obj2;
   } else {
-    class C {
-      constructor() {
-        tmp = closure_0(ContentDismissActionType.USER_DISMISS);
-        return;
-      }
-    }
+    tmp13 = cResult[6];
   }
   if (cResult[7] === first === MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK) {
-    class C {
-      constructor() {
-        tmp = closure_0(ContentDismissActionType.USER_DISMISS);
-        return;
-      }
+    let tmp15;
+    if (cResult[8] === tmp12) {
+      tmp15 = cResult[9];
     }
+    let tmp16 = null;
     if (first === MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK) {
-      class C {
-        constructor() {
-          tmp = closure_0(ContentDismissActionType.USER_DISMISS);
-          return;
-        }
-      }
+      tmp16 = tmp15;
     }
-    return null;
+    return tmp16;
   }
-  const obj2 = { title: tmp8, description: tmp9, position: "top", offsetY: 4, visible: first === MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK, onDismiss: tmp12, graphic: tmp13 };
+  const obj3 = { title: tmp8, description: tmp9, position: "top", offsetY: 4, visible: first === MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK, onDismiss: tmp12, graphic: tmp13 };
   cResult[7] = first === MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK;
   cResult[8] = tmp12;
-  cResult[9] = obj2;
-}) : ((disabled) => {
+  cResult[9] = obj3;
+  tmp15 = obj3;
+}) : (function useRefreshChatInputCoachmark(disabled) {
   let closure_0;
   let items;
   let visible;
@@ -130,7 +108,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
   if (disabled) {
     items = [];
   } else {
-    items = [tmp(2036).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK];
+    items = [tmp(2048).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK];
   }
   const tmp4 = _slicedToArray(useSelectedDismissibleContent(items), 2);
   _require = tmp5;
@@ -162,7 +140,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
   return memo;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((buttonRef) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RefreshChatInputCoachmark(buttonRef) {
   let tmp4;
   let tmp5;
   const obj = react2;
@@ -182,7 +160,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((buttonRef) => {
   const tmpResult = useCoachmark;
   const coachmark = tmpResult.useCoachmark(tmp4, tmp5);
   return null;
-}) : ((buttonRef) => {
+}) : (function RefreshChatInputCoachmark(buttonRef) {
   buttonRef = buttonRef.buttonRef;
   const merged = Object.assign(buttonRef, Object.assign({ buttonRef: 0 }));
   const obj = useCoachmark;

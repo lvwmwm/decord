@@ -1,12 +1,12 @@
-// Module ID: 11417
-// Function ID: 11418
+// Module ID: 11400
+// Function ID: 11401
 // Name: useTrackCreateGuildViewed
-// Dependencies: [19, 6839, 1085, 558, 576, 1252, 2]
+// Dependencies: [19, 7021, 1085, 558, 576, 1264, 2]
 
-// Module 11417 (useTrackCreateGuildViewed)
+// Module 11400 (useTrackCreateGuildViewed)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 6839 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7021 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ let _require;
 
 const GuildTemplateStates = GuildTemplatesConstants.GuildTemplateStates;
 const AnalyticEvents = Constants.AnalyticEvents;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackCreateGuildViewed(arg0) {
   let closure_0;
   let first;
   let tmp3;
@@ -33,7 +33,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj2 = react;
   const ref = react.useRef(first);
   if (cResult[1] !== arg0) {
-    const fn = function s() {
+    const fn = function _() {
       const tmp2 = null != closure_0 && tmp.state !== GuildTemplateStates.RESOLVING;
       if (tmp2) {
         const current = ref.current;
@@ -55,7 +55,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp3 = cResult[2];
   }
   const effect = obj2.useEffect(tmp3);
-}) : ((arg0) => {
+}) : (function useTrackCreateGuildViewed(arg0) {
   let closure_0 = arg0;
   const ref = react.useRef([]);
   const effect = react.useEffect(() => {

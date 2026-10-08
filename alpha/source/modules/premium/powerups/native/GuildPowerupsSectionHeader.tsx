@@ -1,16 +1,16 @@
-// Module ID: 12226
-// Function ID: 12227
+// Module ID: 12305
+// Function ID: 12306
 // Name: GuildPowerupsSectionHeader
-// Dependencies: [17, 21, 4896, 587, 558, 576, 6477, 4892, 2]
+// Dependencies: [17, 21, 5090, 587, 558, 576, 6655, 5086, 2]
 
-// Module 12226 (GuildPowerupsSectionHeader)
+// Module 12305 (GuildPowerupsSectionHeader)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6477 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6655 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ const View = react_native.View;
 let obj = { headerContainer: obj2 };
 obj2 = { padding: nativeDefault.space.PX_16 };
 let closure_5 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupsSectionHeader(arg0) {
   let description;
   let items;
   let title;
@@ -74,7 +74,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = str;
   cResult[4] = tmp10;
   tmp9 = tmp10;
-}) : ((arg0) => {
+}) : (function GuildPowerupsSectionHeader(arg0) {
   let description;
   let items;
   let title;

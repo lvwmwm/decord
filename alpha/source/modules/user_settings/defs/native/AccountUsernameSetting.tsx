@@ -1,32 +1,32 @@
-// Module ID: 14530
-// Function ID: 14531
+// Module ID: 14791
+// Function ID: 14792
 // Name: AccountUsernameSetting
-// Dependencies: [19, 1377, 7645, 1085, 21, 558, 576, 4728, 504, 11496, 4892, 11142, 1126, 14531, 2]
+// Dependencies: [19, 1389, 7966, 1085, 21, 558, 576, 4922, 504, 11482, 5086, 11262, 1126, 14792, 2]
 
-// Module 14530 (AccountUsernameSetting)
+// Module 14791 (AccountUsernameSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import UserUtilsDefault from "UserUtils" /* 4728 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 11496 */;
+import UserUtilsDefault from "UserUtils" /* 4922 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 11482 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let tmp;
 const get_initialized = tmp(504);
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserSettingsSections = Constants.UserSettingsSections;
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccountUsernameSettingTrailing() {
   let currentUser;
   let tmp4;
   let tmp5;
@@ -34,7 +34,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    const fn = function o() {
+    const fn = function s() {
       const obj = UserUtilsDefault;
       return obj.getUserTag(currentUser.getCurrentUser(), { decoration: "never" });
     };
@@ -47,7 +47,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useAccountUsernameSettingTrailing() {
   let currentUser;
   let obj = get_initialized;
   const items = [UserStore];
@@ -57,7 +57,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccountUsernameSettingDescription() {
   const obj = react2;
   const cResult = obj.c(2);
   const obj2 = AutomodQuarantineUtils;
@@ -83,7 +83,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp6 = tmp7;
   }
   return tmp6;
-}) : (() => {
+}) : (function useAccountUsernameSettingDescription() {
   const obj = AutomodQuarantineUtils;
   const guildAutomodProfileQuarantineErrors = obj.useGuildAutomodProfileQuarantineErrors();
   let first;

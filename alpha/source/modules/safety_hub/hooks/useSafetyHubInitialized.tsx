@@ -1,17 +1,17 @@
-// Module ID: 11535
-// Function ID: 11536
+// Module ID: 11533
+// Function ID: 11534
 // Name: useSafetyHubInitialized
-// Dependencies: [8139, 558, 576, 504, 2]
+// Dependencies: [5920, 558, 576, 504, 2]
 
-// Module 11535 (useSafetyHubInitialized)
+// Module 11533 (useSafetyHubInitialized)
 import react from "react" /* 576 */;
-import SafetyHubStore from "SafetyHubStore" /* 8139 */;
+import SafetyHubStore from "SafetyHubStore" /* 5920 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafetyHubInitialized() {
   let initialized;
   let tmp4;
   let tmp5;
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useSafetyHubInitialized() {
   let initialized;
   const items = [SafetyHubStore];
   const obj = get_initialized;

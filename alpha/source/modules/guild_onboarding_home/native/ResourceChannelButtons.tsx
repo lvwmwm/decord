@@ -1,20 +1,20 @@
-// Module ID: 11926
-// Function ID: 11927
+// Module ID: 11999
+// Function ID: 12000
 // Name: ResourceChannelButtons
-// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 1491, 11927, 7532, 5601, 1188, 11209, 11928, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 587, 558, 576, 1503, 12000, 9254, 5375, 1200, 11326, 12001, 2]
 
-// Module 11926 (ResourceChannelButtons)
+// Module 11999 (ResourceChannelButtons)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 7532 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 9254 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channel, navigation;
+let navigation;
 
 let metroImportDefault;
 let metroRequire;
@@ -30,7 +30,7 @@ obj2 = { display: "flex", flexDirection: "row", padding: 12, backgroundColor: na
 createStyles = createStyles.createStyles;
 obj3 = { color: nativeDefault.colors.WHITE };
 let closure_8 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ResourceChannelButtons(channel) {
   let Button;
   let Button2;
   let Icon;
@@ -178,7 +178,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[1] = navigation;
   cResult[2] = fn;
   tmp9 = fn;
-}) : ((channel) => {
+}) : (function ResourceChannelButtons(channel) {
   let Button;
   let Button2;
   let Icon;

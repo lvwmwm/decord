@@ -1,18 +1,18 @@
-// Module ID: 12921
-// Function ID: 12922
+// Module ID: 13070
+// Function ID: 13071
 // Name: ConjureCustomWidget
-// Dependencies: [2074, 558, 576, 1440, 6756, 504, 2]
+// Dependencies: [2086, 558, 576, 1452, 6932, 504, 2]
 // Exports: composeConjureCustomWidgetPrompt
 
-// Module 12921 (ConjureCustomWidget)
-import GuildStore from "GuildStore" /* 2074 */;
+// Module 13070 (ConjureCustomWidget)
+import GuildStore from "GuildStore" /* 2086 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanConjureCustomWidget(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -55,7 +55,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = items1;
   tmp8 = items1;
   tmp7 = fn;
-}) : ((arg0) => {
+}) : (function useCanConjureCustomWidget(arg0) {
   let closure_0;
   _require = arg0;
   let flag = arg1;

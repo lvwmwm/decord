@@ -1,71 +1,74 @@
 // Module ID: 1852
 // Function ID: 1853
-// Dependencies: [19, 21, 1837, 1643]
+// Dependencies: [32, 19, 1847, 1645]
+// Exports: useKeyboardState
 
 // Module 1852
-import Fragment from "Fragment" /* 21 */;
-import _mod1643 from "module_1643" /* 1643 */;
-import react_mod from "react" /* 19 */;
+import KeyboardController3 from "KeyboardController" /* 1847 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 
 let c3;
-let forwardRef;
-let react = react_mod;
-({ useMemo: c3, forwardRef } = react);
-react = react_mod;
-const jsx = Fragment.jsx;
-let closure_5 = { code: "function pnpm_indexTsx1(){const{interpolate,progress,closed,opened,enabled,height}=this.__closure;const offset=interpolate(progress.value,[0,1],[closed,opened]);return{transform:[{translateY:enabled?height.value+offset:closed}]};}" };
+let closure_4;
+({ useEffect: c3, useState: closure_4 } = react);
+let closure_5 = ["keyboardWillShow", "keyboardDidHide"];
+function getLatestState() {
 
-export default forwardRef((offset, ref) => {
-  offset = offset.offset;
-  const children = offset.children;
-  if (offset === undefined) {
-    offset = {};
+}
+function defaultSelector(arg0) {
+  return arg0;
+}
+
+export const useKeyboardState = function useKeyboardState(cResult) {
+  let closure_1;
+  let first;
+  let tmp = cResult;
+  if (cResult === undefined) {
+    tmp = defaultSelector;
   }
-  let num = offset.closed;
-  if (num === undefined) {
-    num = 0;
-  }
-  let num2 = offset.opened;
-  if (num2 === undefined) {
-    num2 = 0;
-  }
-  const style = offset.style;
-  let flag = offset.enabled;
-  if (flag === undefined) {
-    flag = true;
-  }
-  const merged = Object.assign(offset, Object.assign({ children: 0, offset: 0, style: 0, enabled: 0 }));
-  const obj2 = num(style[2]);
-  const reanimatedKeyboardAnimation = obj2.useReanimatedKeyboardAnimation();
-  const height = reanimatedKeyboardAnimation.height;
-  const progress = reanimatedKeyboardAnimation.progress;
-  const fn = function h() {
-    let items1;
-    _mod1643;
-    let sum = num;
-    const items = [num, num2];
-    const tmp4 = flag;
-    if (tmp4) {
-      sum = height.value + tmp3;
+  let closure_0 = tmp;
+  closure_1 = undefined;
+  [first, closure_1] = closure_4(() => {
+    let KeyboardController2;
+    if (typeof getLatestState === "function") {
+      const obj = { isVisible: KeyboardController2.isVisible() };
+      const KeyboardController = KeyboardController3.KeyboardController;
+      const merged = Object.assign(KeyboardController.state());
+      KeyboardController2 = KeyboardController3.KeyboardController;
+      return tmp(obj);
+    } else {
+      throw new TypeError("Trying to call a non-function");
     }
-    const obj = { transform: items1 };
-    items1 = [{ translateY: sum }];
-    return obj;
-  };
-  const obj3 = num(style[3]);
-  let obj = { interpolate: num(style[3]).interpolate, progress, closed: num, opened: num2, enabled: flag, height };
-  fn.__closure = obj;
-  fn.__workletHash = 13627085806149;
-  fn.__initData = progress;
-  let items = [num, num2, flag];
-  const animatedStyle = obj3.useAnimatedStyle(fn, items);
-  let items1 = [style, animatedStyle];
-  let tmp4 = flag(() => {
-    const items = [style, animatedStyle];
-    return items;
-  }, items1);
-  const obj4 = { ref, style: tmp4, children };
-  const View = num2(style[3]).View;
-  const merged1 = Object.assign(merged);
-  return height(View, obj4);
-});
+  });
+  const tmp4 = closure_3(() => {
+    let KeyboardController2;
+    closure_0 = closure_1_5.map((item) => {
+      const KeyboardEvents = closure_0(closure_1[3]).KeyboardEvents;
+      return KeyboardEvents.addListener(item, () => {
+        let KeyboardController2;
+        if (typeof closure_2_6 === "function") {
+          const obj = { isVisible: KeyboardController2.isVisible() };
+          const KeyboardController = closure_0(closure_2_1[2]).KeyboardController;
+          const merged = Object.assign(KeyboardController.state());
+          KeyboardController2 = closure_0(closure_2_1[2]).KeyboardController;
+          return tmp(tmp2(obj));
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+      });
+    });
+    if (typeof getLatestState === "function") {
+      let obj = { isVisible: KeyboardController2.isVisible() };
+      let KeyboardController = closure_0(closure_1[2]).KeyboardController;
+      let merged = Object.assign(KeyboardController.state());
+      KeyboardController2 = closure_0(closure_1[2]).KeyboardController;
+      tmp(tmp2(obj));
+      return () => {
+        const item = closure_0.forEach((remove) => remove.remove());
+      };
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  }, []);
+  return first;
+};

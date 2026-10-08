@@ -1,16 +1,16 @@
-// Module ID: 12178
-// Function ID: 12179
+// Module ID: 12257
+// Function ID: 12258
 // Name: useBoostToUnlockFeaturedPowerup
-// Dependencies: [32, 19, 2074, 4773, 4774, 1085, 4777, 558, 576, 504, 7682, 2]
+// Dependencies: [32, 19, 2086, 4967, 4968, 1085, 4971, 558, 576, 504, 8003, 2]
 
-// Module 12178 (useBoostToUnlockFeaturedPowerup)
+// Module 12257 (useBoostToUnlockFeaturedPowerup)
 import Constants from "Constants" /* 1085 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4774 */;
-import Powerups from "Powerups" /* 4777 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4968 */;
+import Powerups from "Powerups" /* 4971 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4773 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4967 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ items[5] = { skuId: Powerups.GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID, threshol
 ({ skuId: Powerups.GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID, threshold: 1 });
 items[6] = { skuId: Powerups.GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID, threshold: 1 };
 ({ skuId: Powerups.GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID, threshold: 1 });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBoostToUnlockFeaturedPowerup(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = require("get initialized");
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  const available = unlockedPowerups(7682)(arg0).available;
+  const available = unlockedPowerups(8003)(arg0).available;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     class E {
       constructor() {
@@ -86,7 +86,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   if (cResult[4] !== arg0) {
-    class S {
+    class U {
       constructor() {
         guild = closure_5.getGuild(closure_0);
         hasItem = undefined;
@@ -99,10 +99,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     cResult[4] = arg0;
-    cResult[5] = S;
-    tmp9 = S;
+    cResult[5] = U;
+    tmp9 = U;
   } else {
-    class S {
+    class U {
       constructor() {
         guild = closure_5.getGuild(closure_0);
         hasItem = undefined;
@@ -171,7 +171,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[10] = unlockedPowerups;
     cResult[11] = items2;
   }
-}) : ((arg0) => {
+}) : (function useBoostToUnlockFeaturedPowerup(arg0) {
   let available;
   let closure_0;
   let first;

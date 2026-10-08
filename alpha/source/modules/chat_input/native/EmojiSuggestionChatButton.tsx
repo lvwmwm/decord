@@ -1,21 +1,22 @@
-// Module ID: 12087
-// Function ID: 12088
+// Module ID: 12162
+// Function ID: 12163
 // Name: EmojiSuggestionChatButton
-// Dependencies: [32, 19, 17, 1193, 1229, 21, 4896, 587, 1369, 4586, 12083, 4618, 5604, 11812, 5916, 1126, 5981, 4735, 6633, 6634, 9926, 1188, 2]
+// Dependencies: [32, 19, 17, 1205, 1241, 21, 5090, 587, 1381, 4778, 12157, 4810, 5374, 11879, 6189, 1126, 6164, 4929, 6810, 6811, 9447, 1200, 2]
+// Exports: EmojiSuggestionChatButton
 
-// Module 12087 (EmojiSuggestionChatButton)
+// Module 12162 (EmojiSuggestionChatButton)
 import nativeDefault from "native" /* 587 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1229 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import spring from "spring" /* 5604 */;
-import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 12083 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1241 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import spring from "spring" /* 5374 */;
+import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 12157 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import size_mod from "module_2" /* 2 */;
 
 let set, set2;
@@ -48,7 +49,10 @@ let closure_11 = createStyles.createStyles((height) => {
 let closure_12 = { code: "function EmojiSuggestionChatButtonTsx1(finished){const{runOnJS,setDisplayedEmoji}=this.__closure;if(finished===true){runOnJS(setDisplayedEmoji)(undefined);}}" };
 const __initData = { code: "function EmojiSuggestionChatButtonTsx2(){const{emojiAnimationProgress}=this.__closure;return{opacity:emojiAnimationProgress.get(),transform:[{scale:emojiAnimationProgress.get()}]};}" };
 const __initData2 = { code: "function EmojiSuggestionChatButtonTsx3(){const{emojiAnimationProgress}=this.__closure;return{opacity:1-emojiAnimationProgress.get()};}" };
-const forwardRefResult = react.forwardRef((arg0, arg1) => {
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/chat_input/native/EmojiSuggestionChatButton.tsx");
+
+export const EmojiSuggestionChatButton = function EmojiSuggestionChatButton(arg0) {
   let PressableOpacity;
   let active;
   let c4;
@@ -59,6 +63,7 @@ const forwardRefResult = react.forwardRef((arg0, arg1) => {
   let obj7;
   let obj9;
   let onPress;
+  let ref;
   let setDisplayedEmoji;
   let showKeyboardIcon;
   let str;
@@ -69,8 +74,8 @@ const forwardRefResult = react.forwardRef((arg0, arg1) => {
   let tmp4Result3;
   let tmp4Result4;
   ({ active, onPress } = arg0);
-  ({ style, showKeyboardIcon } = arg0);
-  const merged = Object.assign(arg0, Object.assign({ style: 0, active: 0, showKeyboardIcon: 0, onPress: 0 }));
+  ({ style, showKeyboardIcon, ref } = arg0);
+  const merged = Object.assign(arg0, Object.assign({ style: 0, active: 0, showKeyboardIcon: 0, onPress: 0, ref: 0 }));
   let unlockedEmojis;
   let lockedEmojis;
   react = undefined;
@@ -82,7 +87,7 @@ const forwardRefResult = react.forwardRef((arg0, arg1) => {
   const token = obj.useToken(unlockedEmojis(lockedEmojis[7]).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
   const tmp6 = closure_11(token);
   let obj2 = onPress(lockedEmojis[10]);
-  const emojiSuggestionBarState = obj2.useEmojiSuggestionBarState(merged, onPress(lockedEmojis[10]).MAX_SUGGESTIONS_LARGE, 1, arg1);
+  const emojiSuggestionBarState = obj2.useEmojiSuggestionBarState(merged, onPress(lockedEmojis[10]).MAX_SUGGESTIONS_LARGE, 1, ref);
   unlockedEmojis = emojiSuggestionBarState.unlockedEmojis;
   lockedEmojis = emojiSuggestionBarState.lockedEmojis;
   let first;
@@ -128,7 +133,7 @@ const forwardRefResult = react.forwardRef((arg0, arg1) => {
     }
   }, items);
   const tmp2Result6 = tmp2(tmp3[11]);
-  class R {
+  class G {
     constructor() {
       let items;
       const obj = { opacity: sharedValue.get(), transform: items };
@@ -137,22 +142,22 @@ const forwardRefResult = react.forwardRef((arg0, arg1) => {
       return obj;
     }
   }
-  R.__closure = { emojiAnimationProgress: sharedValue };
-  R.__workletHash = 12888902078160;
-  R.__initData = __initData;
-  const animatedStyle = tmp2Result6.useAnimatedStyle(R);
+  G.__closure = { emojiAnimationProgress: sharedValue };
+  G.__workletHash = 12888902078160;
+  G.__initData = __initData;
+  const animatedStyle = tmp2Result6.useAnimatedStyle(G);
   const tmp2Result7 = tmp2(tmp3[11]);
-  class G {
+  class M {
     constructor() {
       const obj = { opacity: 1 - sharedValue.get() };
       return obj;
     }
   }
-  G.__closure = { emojiAnimationProgress: sharedValue };
-  G.__workletHash = 3538426469891;
-  G.__initData = __initData2;
+  M.__closure = { emojiAnimationProgress: sharedValue };
+  M.__workletHash = 3538426469891;
+  M.__initData = __initData2;
   const items1 = [onPress, unlockedEmojis, lockedEmojis];
-  const animatedStyle1 = tmp2Result7.useAnimatedStyle(G);
+  const animatedStyle1 = tmp2Result7.useAnimatedStyle(M);
   const obj3 = { style: items2, children: items3 };
   items2 = [tmp6.wrapper, style];
   const callback = obj4.useCallback(() => {
@@ -200,8 +205,4 @@ const forwardRefResult = react.forwardRef((arg0, arg1) => {
   }
   items3[1] = tmp20Result2;
   return tmp18(tmp19, obj3);
-});
-let size = size_mod;
-let result = size.fileFinishedImporting("modules/chat_input/native/EmojiSuggestionChatButton.tsx");
-
-export const EmojiSuggestionChatButton = forwardRefResult;
+};

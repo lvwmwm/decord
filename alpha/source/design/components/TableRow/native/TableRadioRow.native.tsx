@@ -1,9 +1,9 @@
-// Module ID: 6078
-// Function ID: 6079
+// Module ID: 6264
+// Function ID: 6265
 // Name: TableRadioRow
-// Dependencies: [109, 19, 21, 558, 576, 6079, 4588, 4600, 6082, 6000, 2]
+// Dependencies: [109, 19, 21, 558, 576, 6265, 4780, 4792, 6268, 6184, 2]
 
-// Module 6078 (TableRadioRow)
+// Module 6264 (TableRadioRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -11,17 +11,15 @@ import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let value;
-
 let tmp;
-const native = tmp(4588);
-const react_native = tmp(4600);
-const TableRow2 = tmp(6000);
-const TableRadioGroup = tmp(6079);
-const FormRadio = tmp(6082);
+const native = tmp(4780);
+const react_native = tmp(4792);
+const TableRow2 = tmp(6184);
+const TableRadioGroup = tmp(6265);
+const FormRadio = tmp(6268);
 let closure_2 = ["value", "label", "subLabel", "disabled", "accessibilityHint", "legacyCompat_selected", "legacyCompat_onPress"];
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((value) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRadioRow(value) {
   let accessibilityHint;
   let accessibilityRole;
   let accessibilityState;
@@ -169,18 +167,18 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((value) => {
       tmp21 = obj4;
     }
   }
-  const fn = function x(arg0) {
+  function handleOnPress(arg0) {
     if (closure_0 != null) {
       tmp(arg0);
     }
     onSelect(closure_1);
-  };
+  }
   cResult[9] = tmp6;
   cResult[10] = onSelect;
   cResult[11] = tmp11;
-  cResult[12] = fn;
-  tmp17 = fn;
-}) : ((value) => {
+  cResult[12] = handleOnPress;
+  tmp17 = handleOnPress;
+}) : (function TableRadioRow(value) {
   let accessibilityRole;
   let accessibilityState;
   let closure_129_1;
@@ -208,13 +206,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((value) => {
   const tmp2Result4 = react_native;
   const radioA11yNative = tmp2Result4.useRadioA11yNative({ selected: legacyCompat_selected, disabled });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
-  const TableRow = tmp2(6000).TableRow;
+  const TableRow = tmp2(6184).TableRow;
   const merged1 = Object.assign(merged);
   let str = nodeText1;
   if (nodeText1 == null) {
     str = "";
   }
-  return <TableRow arrow={false} label={label} subLabel={subLabel} disabled={disabled} accessibilityState={accessibilityState} accessible accessibilityRole={accessibilityRole} accessibilityLabel={"" + nodeText + ", " + str} accessibilityHint={accessibilityHint} onPress={function onPress(arg0) {
+  return <TableRow arrow={false} label={label} subLabel={subLabel} disabled={disabled} accessibilityState={accessibilityState} accessible accessibilityRole={accessibilityRole} accessibilityLabel={"" + nodeText + ", " + str} accessibilityHint={accessibilityHint} onPress={function handleOnPress(arg0) {
     if (closure_1_1 != null) {
       tmp(arg0);
     }

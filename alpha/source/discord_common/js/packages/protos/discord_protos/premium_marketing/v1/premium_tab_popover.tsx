@@ -1,14 +1,14 @@
-// Module ID: 10431
-// Function ID: 10432
+// Module ID: 10028
+// Function ID: 10029
 // Name: premium_tab_popover
-// Dependencies: [32, 1198, 10424, 10416, 10415, 10414, 2]
+// Dependencies: [32, 1210, 10021, 10013, 10012, 10011, 2]
 
-// Module 10431 (premium_tab_popover)
-import _mod1198 from "module_1198" /* 1198 */;
-import localized_string from "localized_string" /* 10414 */;
-import help_article from "help_article" /* 10415 */;
-import cta_button from "cta_button" /* 10416 */;
-import theme_aware_asset from "theme_aware_asset" /* 10424 */;
+// Module 10028 (premium_tab_popover)
+import _mod1210 from "module_1210" /* 1210 */;
+import localized_string from "localized_string" /* 10011 */;
+import help_article from "help_article" /* 10012 */;
+import cta_button from "cta_button" /* 10013 */;
+import theme_aware_asset from "theme_aware_asset" /* 10021 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ const T4 = function T() {
 const T5 = function T() {
   return require("localized_string").LocalizedString;
 };
-const MessageType = _mod1198.MessageType;
+const MessageType = _mod1210.MessageType;
 class PremiumTabPopover$Type extends MessageType {
   constructor() {
     const items = [{ no: 1, name: "header", kind: "scalar", T: 9 }, { no: 2, name: "body", kind: "scalar", T: 9 }, { no: 3, name: "asset", kind: "message", T: T2 }, { no: 4, name: "button", kind: "message", T: T3 }, { no: 5, name: "help_article_id", kind: "scalar", T: 9 }, { no: 6, name: "help_article", kind: "message", T: T4 }, , ];
@@ -47,9 +47,9 @@ class PremiumTabPopover$Type extends MessageType {
     const obj = { header: "", body: "", helpArticleId: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1198.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1210.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1198;
+      const tmpResult = _mod1210;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -105,7 +105,7 @@ class PremiumTabPopover$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1198.UnknownFieldHandler.onRead;
+                onRead = _mod1210.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -117,18 +117,18 @@ class PremiumTabPopover$Type extends MessageType {
   }
   internalBinaryWrite(header, tag, writeUnknownFields) {
     if ("" !== header.header) {
-      const tagResult = tag.tag(1, _mod1198.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1210.WireType.LengthDelimited);
       tagResult.string(header.header);
     }
     if ("" !== header.body) {
-      const tagResult1 = tag.tag(2, _mod1198.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1210.WireType.LengthDelimited);
       tagResult1.string(header.body);
     }
     if (header.asset) {
       const ThemeAwareAsset = theme_aware_asset.ThemeAwareAsset;
       internalBinaryWrite = ThemeAwareAsset.internalBinaryWrite;
       const asset = header.asset;
-      const tagResult2 = tag.tag(3, _mod1198.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1210.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(asset, tagResult2.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
@@ -136,19 +136,19 @@ class PremiumTabPopover$Type extends MessageType {
       const CTAButton = cta_button.CTAButton;
       internalBinaryWrite2 = CTAButton.internalBinaryWrite;
       const button = header.button;
-      const tagResult3 = tag.tag(4, _mod1198.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1210.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(button, tagResult3.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     if ("" !== header.helpArticleId) {
-      const tagResult4 = tag.tag(5, _mod1198.WireType.LengthDelimited);
+      const tagResult4 = tag.tag(5, _mod1210.WireType.LengthDelimited);
       tagResult4.string(header.helpArticleId);
     }
     if (header.helpArticle) {
       const HelpArticle = help_article.HelpArticle;
       internalBinaryWrite3 = HelpArticle.internalBinaryWrite;
       const helpArticle = header.helpArticle;
-      const tagResult5 = tag.tag(6, _mod1198.WireType.LengthDelimited);
+      const tagResult5 = tag.tag(6, _mod1210.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(helpArticle, tagResult5.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
@@ -156,7 +156,7 @@ class PremiumTabPopover$Type extends MessageType {
       const LocalizedString = localized_string.LocalizedString;
       internalBinaryWrite4 = LocalizedString.internalBinaryWrite;
       const headerLocalized = header.headerLocalized;
-      const tagResult6 = tag.tag(7, _mod1198.WireType.LengthDelimited);
+      const tagResult6 = tag.tag(7, _mod1210.WireType.LengthDelimited);
       const internalBinaryWrite4Result = internalBinaryWrite4(headerLocalized, tagResult6.fork(), writeUnknownFields);
       const joined3 = internalBinaryWrite4Result.join();
     }
@@ -164,14 +164,14 @@ class PremiumTabPopover$Type extends MessageType {
       const LocalizedString2 = localized_string.LocalizedString;
       internalBinaryWrite5 = LocalizedString2.internalBinaryWrite;
       const bodyLocalized = header.bodyLocalized;
-      const tagResult7 = tag.tag(8, _mod1198.WireType.LengthDelimited);
+      const tagResult7 = tag.tag(8, _mod1210.WireType.LengthDelimited);
       const internalBinaryWrite5Result = internalBinaryWrite5(bodyLocalized, tagResult7.fork(), writeUnknownFields);
       const joined4 = internalBinaryWrite5Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1198.UnknownFieldHandler.onWrite;
+        onWrite = _mod1210.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, header, tag);

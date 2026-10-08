@@ -1,10 +1,10 @@
-// Module ID: 4599
-// Function ID: 4600
+// Module ID: 4791
+// Function ID: 4792
 // Name: ThemeContext
 // Dependencies: [19, 1096, 21, 558, 576, 2]
 // Exports: createThemedContext
 
-// Module 4599 (ThemeContext)
+// Module 4791 (ThemeContext)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1096 */;
 import react from "react" /* 19 */;
@@ -12,15 +12,13 @@ import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let children;
-
 let c3;
 let closure_4;
 let json;
 const ThemeTypes = Constants.ThemeTypes;
 ({ Fragment: c3, jsx: closure_4 } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useThemeContext() {
   context = react.useContext(context);
   if (null == context) {
     const _Error = Error;
@@ -31,7 +29,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   } else {
     return context;
   }
-}) : (function() {
+}) : (function useThemeContext() {
   context = react.useContext(context);
   if (null == context) {
     const _Error = Error;
@@ -57,7 +55,7 @@ function createThemedContext(arg0) {
   const merged = Object.assign(arg0);
   return obj;
 }
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UseThemeContext(children) {
   const obj = react2;
   const cResult = obj.c(5);
   children = children.children;
@@ -84,7 +82,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[1] = tmp2;
   cResult[2] = childrenResult;
   tmp3 = childrenResult;
-}) : ((children) => {
+}) : (function UseThemeContext(children) {
   const obj = { children: children.children(closure_5()) };
   return React3(_false, obj);
 });

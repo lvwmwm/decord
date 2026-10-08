@@ -1,37 +1,37 @@
-// Module ID: 12939
-// Function ID: 12940
+// Module ID: 13218
+// Function ID: 13219
 // Name: UserProfileRecentActivityCard
-// Dependencies: [19, 17, 21, 12850, 7829, 12855, 4896, 587, 558, 576, 8027, 4595, 4735, 8281, 1402, 5981, 2018, 4892, 12837, 6664, 6688, 12862, 12863, 8352, 8353, 5916, 1126, 2]
+// Dependencies: [19, 17, 21, 12999, 8247, 13004, 5090, 587, 558, 576, 8435, 4787, 4929, 7662, 1414, 6164, 2030, 5086, 12984, 6841, 6865, 13011, 13012, 8850, 8851, 6189, 1126, 2]
 
-// Module 12939 (UserProfileRecentActivityCard)
+// Module 13218 (UserProfileRecentActivityCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AvatarUtils from "AvatarUtils" /* 1402 */;
-import StringUtils from "StringUtils" /* 2018 */;
-import native from "native" /* 4595 */;
-import shared from "shared" /* 4735 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 6664 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6688 */;
-import utils from "utils" /* 7829 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8027 */;
-import UnknownGameIcon2 from "UnknownGameIcon" /* 8281 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8352 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8353 */;
-import ContentInventoryActivityImageUtils from "ContentInventoryActivityImageUtils" /* 12837 */;
-import BadgesAll from "Badges" /* 12850 */;
-import TrendingType from "TrendingType" /* 12855 */;
-import useTrackUserProfileActivityActionDefault from "useTrackUserProfileActivityAction" /* 12862 */;
-import useTrackUserProfileActivityViewDefault from "useTrackUserProfileActivityView" /* 12863 */;
+import AvatarUtils from "AvatarUtils" /* 1414 */;
+import StringUtils from "StringUtils" /* 2030 */;
+import native from "native" /* 4787 */;
+import shared from "shared" /* 4929 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 6841 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6865 */;
+import UnknownGameIcon2 from "UnknownGameIcon" /* 7662 */;
+import utils from "utils" /* 8247 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8435 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8850 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8851 */;
+import ContentInventoryActivityImageUtils from "ContentInventoryActivityImageUtils" /* 12984 */;
+import BadgesAll from "Badges" /* 12999 */;
+import TrendingType from "TrendingType" /* 13004 */;
+import useTrackUserProfileActivityActionDefault from "useTrackUserProfileActivityAction" /* 13011 */;
+import useTrackUserProfileActivityViewDefault from "useTrackUserProfileActivityView" /* 13012 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const useAnalyticsLocationsDefault = useAnalyticsLocations;
-let _require, importDefault, poster, tmp2;
+let _require, importDefault, tmp2;
 
 let metroImportDefault;
 let metroRequire;
@@ -76,7 +76,7 @@ function getEntryText(entry) {
           obj6 = { title: entry.extra.activity_name };
           const obj5 = { title: entry.extra.activity_name };
         } else {
-          obj6 = { title: "r" };
+          obj6 = { title: "create" };
         }
         return obj6;
       }
@@ -147,7 +147,7 @@ obj9 = { flexDirection: "row", flexWrap: "wrap", alignItems: "center", rowGap: n
 ({ width: "50%", paddingRight: nativeDefault.space.PX_8 });
 let closure_9 = createStyles(obj7);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GamingEntryBadges(entry) {
   let obj4;
   let tmp11;
   let tmp8;
@@ -191,16 +191,16 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
     }
   }
   if (cResult[7] !== entry) {
-    class C {
+    class E {
       constructor(arg0) {
         return entry.predicate(entry);
       }
     }
     cResult[7] = entry;
-    cResult[8] = C;
-    tmp8 = C;
+    cResult[8] = E;
+    tmp8 = E;
   } else {
-    class C {
+    class E {
       constructor(arg0) {
         return entry.predicate(entry);
       }
@@ -209,9 +209,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   const found = items.filter(tmp8);
   const BadgesContainer = BadgesAll.BadgesContainer;
   const badges = tmp4.badges;
-  const tmpResult = tmp(8027);
+  const tmpResult = tmp(8435);
   if (tmpResult.isTopGameEntry(entry)) {
-    class C {
+    class E {
       constructor(arg0) {
         return entry.predicate(entry);
       }
@@ -220,7 +220,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
     obj4 = { entry };
     tmp11 = closure_6(View, obj3);
   } else {
-    class C {
+    class E {
       constructor(arg0) {
         return entry.predicate(entry);
       }
@@ -237,7 +237,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   tmp6 = badges;
   str = "user-profile";
   tmp5 = BadgesContainer;
-}) : ((entry) => {
+}) : (function GamingEntryBadges(entry) {
   let mapped;
   let obj4;
   entry = entry.entry;
@@ -246,7 +246,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   const found = items.filter((predicate) => predicate.predicate(entry));
   let obj = { location: "user-profile", style: tmp.badges, children: mapped };
   const BadgesContainer = BadgesAll.BadgesContainer;
-  let obj2 = entry(8027);
+  let obj2 = entry(8435);
   if (obj2.isTopGameEntry(entry)) {
     const obj3 = { style: tmp.badgeCell, children: closure_6(BadgesAll.TopGameBadge, obj4) };
     obj4 = { entry };
@@ -263,7 +263,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
 });
 const memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((poster) => {
+let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function EntryImage(poster) {
   let items1;
   let largeImage;
   let obj7;
@@ -404,7 +404,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((poster) =
     cResult[11] = items2;
     tmp7 = items2;
   }
-}) : ((poster) => {
+}) : (function EntryImage(poster) {
   let UnknownGameIcon;
   let colors;
   let isThemeDarkResult;
@@ -431,7 +431,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((poster) =
     items = [, ];
     ({ imageContainer: arr2[0], imageAspectRatio: arr2[1] } = tmp);
     obj3 = { size: "custom", style: tmp.largeImage, color: isThemeDarkResult ? colors.WHITE : colors.BLACK };
-    UnknownGameIcon = tmp2(8281).UnknownGameIcon;
+    UnknownGameIcon = tmp2(7662).UnknownGameIcon;
     const tmp2Result = shared;
     isThemeDarkResult = tmp2Result.isThemeDark(theme);
     colors = nativeDefault.colors;
@@ -454,7 +454,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((poster) =
     if (tmp5Result) {
       const obj6 = { style: tmp.smallImageBackground, children: metroRequire(tmp6Result, obj7) };
       obj7 = { source: tmp2Result4.makeSource(smallImage.src), accessibilityLabel: smallImage.alt, style: tmp.smallImage };
-      tmp6Result = tmp6(5981);
+      tmp6Result = tmp6(6164);
       tmp2Result4 = AvatarUtils;
       tmp5Result = tmp5(tmp17, obj6);
     }
@@ -465,7 +465,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((poster) =
 }));
 const memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function EntryCardBody(arg0) {
   let entry;
   let items1;
   let largeImage;
@@ -503,7 +503,7 @@ let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
         tmpResult4.isNullOrEmpty(title);
         if (tmp11) {
           const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: title };
-          tmp11 = metroRequire(tmp(4892).Text, obj2);
+          tmp11 = metroRequire(tmp(5086).Text, obj2);
         }
         cResult[6] = title;
         cResult[7] = tmp11;
@@ -517,7 +517,7 @@ let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
         tmpResult5.isNullOrEmpty(subtitle);
         if (tmp15) {
           const obj3 = { variant: "text-xs/medium", lineClamp: 1, children: subtitle };
-          tmp15 = metroRequire(tmp(4892).Text, obj3);
+          tmp15 = metroRequire(tmp(5086).Text, obj3);
         }
         cResult[8] = subtitle;
         cResult[9] = tmp15;
@@ -594,7 +594,7 @@ let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
   cResult[4] = tmp5;
   cResult[5] = tmp8;
   tmp7 = tmp8;
-}) : ((arg0) => {
+}) : (function EntryCardBody(arg0) {
   let entry;
   let items1;
   let largeImage;
@@ -618,7 +618,7 @@ let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
   obj6.isNullOrEmpty(title);
   if (tmp2Result) {
     const obj7 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: title };
-    tmp2Result = tmp2(tmp5(4892).Text, obj7);
+    tmp2Result = tmp2(tmp5(5086).Text, obj7);
   }
   items1 = [tmp2Result, , ];
   const tmp5Result = StringUtils;
@@ -626,7 +626,7 @@ let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
   tmp5Result.isNullOrEmpty(subtitle);
   if (tmp2Result2) {
     const obj8 = { variant: "text-xs/medium", lineClamp: 1, children: subtitle };
-    tmp2Result2 = tmp2(tmp5(4892).Text, obj8);
+    tmp2Result2 = tmp2(tmp5(5086).Text, obj8);
   }
   items1[1] = tmp2Result2;
   const tmp5Result2 = ContentInventoryTypes;
@@ -640,7 +640,7 @@ let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
   return metroRequire(View, obj);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileRecentActivityCard(arg0) {
   let entry;
   let largeImage;
   let smallImage;
@@ -838,7 +838,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = user;
   cResult[5] = obj6;
   tmp8 = obj6;
-}) : ((style) => {
+}) : (function UserProfileRecentActivityCard(style) {
   let entry;
   let formatToPlainString;
   let largeImage;
@@ -889,10 +889,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp15 = metroRequire(closure_12, { entry, largeImage, smallImage, title: str, subtitle: trimmed, style });
   const obj4 = { value: analyticsLocations, children: tmp14Result };
   tmp14Result = tmp15;
-  const AnalyticsLocationProvider = tmp(6664).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = tmp(6841).AnalyticsLocationProvider;
   if (null != tmp4ResultResult) {
     const obj5 = { onPress: callback, accessibilityRole: "button", accessibilityLabel: formatToPlainString(v9sZWVp, obj6), children: tmp15 };
-    const PressableOpacity = tmp(5916).PressableOpacity;
+    const PressableOpacity = tmp(6189).PressableOpacity;
     const intl = tmp(1126).intl;
     formatToPlainString = intl.formatToPlainString;
     v9sZWVp = tmp(1126).t["9sZWVp"];

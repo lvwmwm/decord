@@ -1,22 +1,22 @@
-// Module ID: 9359
-// Function ID: 9360
+// Module ID: 8781
+// Function ID: 8782
 // Name: useIsSecureFramesVerified
-// Dependencies: [502, 4919, 9360, 9361, 9362, 558, 576, 9398, 504, 9401, 4948, 2]
+// Dependencies: [502, 5108, 8782, 8783, 8784, 558, 576, 8819, 504, 8824, 5896, 2]
 
-// Module 9359 (useIsSecureFramesVerified)
-import StreamKeyUtils from "StreamKeyUtils" /* 4948 */;
+// Module 8781 (useIsSecureFramesVerified)
+import StreamKeyUtils from "StreamKeyUtils" /* 5896 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
-import SecureFramesVerifiedStore from "SecureFramesVerifiedStore" /* 9360 */;
-import TransientKeyStore from "TransientKeyStore" /* 9361 */;
-import VerifiedKeyStore from "VerifiedKeyStore" /* 9362 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
+import SecureFramesVerifiedStore from "SecureFramesVerifiedStore" /* 8782 */;
+import TransientKeyStore from "TransientKeyStore" /* 8783 */;
+import VerifiedKeyStore from "VerifiedKeyStore" /* 8784 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let streamKey, userId;
+let flag, tmp5, tmp8;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsUserSecureFramesVerified(userId) {
   let channelId;
   let tmp4;
   let tmp6;
@@ -59,39 +59,55 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
       return tmpResult2.useStateFromStores(tmp6, tmp12, tmp13);
     }
   }
-  const fn = function h() {
-    if (null != userId) {
-      const tmp13 = isSecureFramesUIEnabled;
-      if (tmp13) {
-        if (RTCConnectionStore.isUserConnected(userId)) {
-          if (AuthenticationStore.getId() !== userId) {
-            if (undefined === userKey) {
-              return SecureFramesVerifiedStore.isUserVerified(userId);
-            } else if (null === userKey) {
-              return false;
-            } else {
-              const _Uint8Array = Uint8Array;
-              const self = this;
-              const self2 = this;
-              const uint8Array = new Uint8Array(tmp4);
-              const isKeyVerifiedResult = VerifiedKeyStore.isKeyVerified(tmp, uint8Array) || TransientKeyStore.isKeyVerified(tmp, uint8Array);
-              return isKeyVerifiedResult;
+  class C {
+    constructor() {
+      tmp = userId;
+      if (null != userId) {
+        tmp13 = closure_2;
+        if (tmp13) {
+          tmp2 = closure_3;
+          if (closure_3.isUserConnected(tmp)) {
+            tmp3 = closure_2;
+            if (closure_2.getId() !== tmp) {
+              tmp4 = userKey;
+              if (undefined === userKey) {
+                tmp12 = closure_4;
+                return closure_4.isUserVerified(tmp);
+              } else if (null === tmp4) {
+                flag = false;
+                return false;
+              } else {
+                tmp5 = globalThis;
+                _Uint8Array = Uint8Array;
+                self = this;
+                self2 = this;
+                tmp6 = tmp4;
+                uint8Array = new Uint8Array(tmp4);
+                tmp8 = uint8Array;
+                tmp9 = closure_6;
+                isKeyVerifiedResult = closure_6.isKeyVerified(tmp, uint8Array);
+                if (!isKeyVerifiedResult) {
+                  tmp11 = closure_5;
+                  isKeyVerifiedResult = closure_5.isKeyVerified(tmp, uint8Array);
+                }
+                return isKeyVerifiedResult;
+              }
             }
           }
         }
       }
+      return false;
     }
-    return false;
-  };
+  }
   const items1 = [isSecureFramesUIEnabled, userId, userKey];
   cResult[3] = isSecureFramesUIEnabled;
   cResult[4] = userId;
   cResult[5] = userKey;
-  cResult[6] = fn;
+  cResult[6] = C;
   cResult[7] = items1;
   tmp13 = items1;
-  tmp12 = fn;
-}) : ((userId) => {
+  tmp12 = C;
+}) : (function useIsUserSecureFramesVerified(userId) {
   userId = userId.userId;
   const userKey = userId.userKey;
   const channelId = userId.channelId;
@@ -126,7 +142,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((streamKey) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsStreamSecureFramesVerified(streamKey) {
   let isSecureFramesUIEnabled;
   let tmp4;
   let tmp7;
@@ -192,7 +208,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((streamKey) => {
   cResult[7] = items1;
   tmp11 = items1;
   tmp10 = fn;
-}) : ((streamKey) => {
+}) : (function useIsStreamSecureFramesVerified(streamKey) {
   streamKey = streamKey.streamKey;
   let isSecureFramesUIEnabled;
   const channelId = streamKey.channelId;
@@ -222,7 +238,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((streamKey) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsCallSecureFramesVerified(channelId) {
   let isCallRTCConnectionEmpty;
   let isSecureFramesUIEnabled;
   let tmp4;
@@ -275,7 +291,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[6] = items1;
   tmp10 = items1;
   tmp9 = fn;
-}) : ((channelId) => {
+}) : (function useIsCallSecureFramesVerified(channelId) {
   let isSecureFramesUIEnabled;
   let isCallRTCConnectionEmpty;
   channelId = channelId.channelId;

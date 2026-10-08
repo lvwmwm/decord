@@ -1,26 +1,26 @@
-// Module ID: 11641
-// Function ID: 11642
+// Module ID: 11706
+// Function ID: 11707
 // Name: ForumPostAppliedTags
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 10369, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 9966, 2]
 
-// Module 11641 (ForumPostAppliedTags)
+// Module 11706 (ForumPostAppliedTags)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import AppliedForumTag2 from "AppliedForumTag" /* 10369 */;
+import AppliedForumTag2 from "AppliedForumTag" /* 9966 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let dependencyMap;
+let dependencyMap, obj1;
 
 let c3;
 let closure_4;
 let hasOwnProperty;
 let obj2;
 let size;
-const View = react_native.View;
+let View = react_native.View;
 ({ jsx: c3, jsxs: closure_4, Fragment: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { pillTagsContainer: { display: "flex", flexDirection: "row", alignItems: "center" }, tag: obj2, tagsContainer: { display: "flex", flexDirection: "row", alignItems: "center" }, dot: size };
@@ -29,7 +29,7 @@ createStyles = createStyles.createStyles;
 size = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, height: 4, width: 4, borderRadius: 10, marginHorizontal: 8 };
 let closure_6 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostAppliedTagPills(arg0) {
   let additionalTagsCount;
   let appliedTags;
   let containerStyle;
@@ -89,7 +89,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const obj3 = { tag: obj4, containerStyle: tmp4.tag, hasUnreads };
           const _HermesInternal = HermesInternal;
           obj4 = { id: "-1", name: "+" + num };
-          const AppliedForumTagPill = tmp(10369).AppliedForumTagPill;
+          const AppliedForumTagPill = tmp(9966).AppliedForumTagPill;
           tmp10 = closure_3(AppliedForumTagPill, obj3);
         }
         cResult[10] = num;
@@ -125,7 +125,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.pillTagsContainer;
   cResult[2] = items1;
   tmp5 = items1;
-}) : ((additionalTagsCount) => {
+}) : (function ForumPostAppliedTagPills(additionalTagsCount) {
   let appliedTags;
   let hasUnreads;
   let items;
@@ -156,22 +156,19 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj2 = { tag: obj3, containerStyle: tmp.tag, hasUnreads };
     const _HermesInternal = HermesInternal;
     obj3 = { id: "-1", name: "+" + num };
-    const AppliedForumTagPill = hasUnreads(10369).AppliedForumTagPill;
+    const AppliedForumTagPill = hasUnreads(9966).AppliedForumTagPill;
     tmp4 = closure_3(AppliedForumTagPill, obj2);
   }
   items1[1] = tmp4;
   return tmp2(tmp3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((appliedTags) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostAppliedTags(appliedTags) {
   let additionalTagsCount;
   let containerStyle;
+  let dot;
   let hasUnreads;
   let items;
-  let items1;
-  let obj6;
-  let tmp = appliedTags;
-  let tmp2 = hasUnreads;
   let obj = appliedTags(hasUnreads[6]);
   const cResult = obj.c(19);
   appliedTags = appliedTags.appliedTags;
@@ -181,104 +178,156 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((appliedTags) => {
   if (undefined !== additionalTagsCount) {
     num = additionalTagsCount;
   }
-  const tmp4 = closure_6();
-  const dot = tmp4;
+  let tmp2 = closure_6();
+  View = tmp2;
   if (cResult[0] === containerStyle) {
-    let tmp5;
-    let tmp6;
-    if (cResult[1] === tmp4.tagsContainer) {
-      tmp5 = cResult[2];
+    let tmp3;
+    let tmp4;
+    if (cResult[1] === tmp2.tagsContainer) {
+      tmp3 = cResult[2];
     }
     if (cResult[3] === appliedTags) {
       if (cResult[4] === hasUnreads) {
-        if (cResult[5] === tmp4.dot) {
-          tmp6 = cResult[6];
+        if (cResult[5] === tmp2.dot) {
+          tmp4 = cResult[6];
         }
         if (cResult[11] === num) {
           if (cResult[12] === hasUnreads) {
-            let tmp9;
-            if (cResult[13] === tmp4.dot) {
-              tmp9 = cResult[14];
+            let tmp7;
+            if (cResult[13] === tmp2.dot) {
+              tmp7 = cResult[14];
             }
-            if (cResult[15] === tmp5) {
-              if (cResult[16] === tmp6) {
-                let tmp16;
-                if (cResult[17] === tmp9) {
-                  tmp16 = cResult[18];
+            if (cResult[15] === tmp3) {
+              if (cResult[16] === tmp4) {
+                let tmp9;
+                if (cResult[17] === tmp7) {
+                  tmp9 = cResult[18];
                 }
-                return tmp16;
+                return tmp9;
               }
             }
-            let obj2 = { style: tmp5, children: items };
-            items = [tmp6, tmp9];
-            const tmp19 = closure_4(dot, obj2);
-            cResult[15] = tmp5;
-            cResult[16] = tmp6;
-            cResult[17] = tmp9;
-            cResult[18] = tmp19;
-            tmp16 = tmp19;
+            class T {
+              constructor(arg0, arg1) {
+                tmp = jsxs;
+                tmp2 = Fragment;
+                tmp3 = jsx;
+                obj = { tag: appliedTags, hasUnreads };
+                items = [, ];
+                items[0] = jsx(closure_0(closure_1[7]).AppliedForumTag, obj, appliedTags.id);
+                tmp3Result = arg1 !== appliedTags.length - 1;
+                if (tmp3Result) {
+                  tmp5 = View;
+                  obj1 = { style: null };
+                  tmp6 = closure_2;
+                  obj1.style = closure_2.dot;
+                  tmp3Result = tmp3(View, obj1);
+                }
+                items[1] = tmp3Result;
+                return tmp(tmp2, { children: items });
+              }
+            }
+            let obj2 = { style: tmp3, children: items };
+            items = [tmp4, tmp7];
+            const tmp11 = closure_4(View, obj2);
+            cResult[15] = tmp3;
+            cResult[16] = tmp4;
+            cResult[17] = tmp7;
+            cResult[18] = tmp11;
+            tmp9 = tmp11;
           }
         }
-        let tmp10 = num > 0;
-        if (tmp10) {
-          const obj3 = { children: items1 };
-          const obj4 = { style: tmp4.dot };
-          items1 = [closure_3(dot, obj4), ];
-          const obj5 = { tag: obj6, hasUnreads };
-          const _HermesInternal = HermesInternal;
-          obj6 = { id: "-1", name: "+" + num };
-          const AppliedForumTag = tmp(tmp2[7]).AppliedForumTag;
-          items1[1] = closure_3(AppliedForumTag, obj5);
-          tmp10 = closure_4(closure_5, obj3);
+        class T {
+          constructor(arg0, arg1) {
+            tmp = jsxs;
+            tmp2 = Fragment;
+            tmp3 = jsx;
+            obj = { tag: appliedTags, hasUnreads };
+            items = [, ];
+            items[0] = jsx(closure_0(closure_1[7]).AppliedForumTag, obj, appliedTags.id);
+            tmp3Result = arg1 !== appliedTags.length - 1;
+            if (tmp3Result) {
+              tmp5 = View;
+              obj1 = { style: null };
+              tmp6 = closure_2;
+              obj1.style = closure_2.dot;
+              tmp3Result = tmp3(View, obj1);
+            }
+            items[1] = tmp3Result;
+            return tmp(tmp2, { children: items });
+          }
         }
         cResult[11] = num;
         cResult[12] = hasUnreads;
-        cResult[13] = tmp4.dot;
-        cResult[14] = tmp10;
-        tmp9 = tmp10;
+        cResult[13] = tmp2.dot;
+        cResult[14] = num > 0;
+        tmp7 = tmp8;
       }
     }
     if (cResult[7] === appliedTags.length) {
       if (cResult[8] === hasUnreads) {
-        let tmp7;
-        if (cResult[9] === tmp4.dot) {
-          tmp7 = cResult[10];
+        let tmp5;
+        if (cResult[9] === tmp2.dot) {
+          tmp5 = cResult[10];
         }
-        const mapped = appliedTags.map(tmp7);
-        cResult[3] = appliedTags;
+        const mapped = appliedTags.map(tmp5);
+        class T {
+          constructor(arg0, arg1) {
+            tmp = jsxs;
+            tmp2 = Fragment;
+            tmp3 = jsx;
+            obj = { tag: appliedTags, hasUnreads };
+            items = [, ];
+            items[0] = jsx(closure_0(closure_1[7]).AppliedForumTag, obj, appliedTags.id);
+            tmp3Result = arg1 !== appliedTags.length - 1;
+            if (tmp3Result) {
+              tmp5 = View;
+              obj1 = { style: null };
+              tmp6 = closure_2;
+              obj1.style = closure_2.dot;
+              tmp3Result = tmp3(View, obj1);
+            }
+            items[1] = tmp3Result;
+            return tmp(tmp2, { children: items });
+          }
+        }
         cResult[4] = hasUnreads;
-        cResult[5] = tmp4.dot;
+        cResult[5] = tmp2.dot;
         cResult[6] = mapped;
-        tmp6 = mapped;
+        tmp4 = mapped;
       }
     }
-    const fn = function h(tag, arg1) {
-      const children = [, ];
-      const obj = { tag, hasUnreads };
-      children[0] = _false(AppliedForumTag2.AppliedForumTag, obj, tag.id);
-      let tmp3Result = arg1 !== appliedTags.length - 1;
-      const tmp = React3;
-      const tmp2 = hasOwnProperty;
-      const tmp3 = _false;
-      if (tmp3Result) {
-        const obj2 = { style: dot.dot };
-        tmp3Result = tmp3(View, obj2);
+    class T {
+      constructor(arg0, arg1) {
+        tmp = jsxs;
+        tmp2 = Fragment;
+        tmp3 = jsx;
+        obj = { tag: appliedTags, hasUnreads };
+        items = [, ];
+        items[0] = jsx(closure_0(closure_1[7]).AppliedForumTag, obj, appliedTags.id);
+        tmp3Result = arg1 !== appliedTags.length - 1;
+        if (tmp3Result) {
+          tmp5 = View;
+          obj1 = { style: null };
+          tmp6 = closure_2;
+          obj1.style = closure_2.dot;
+          tmp3Result = tmp3(View, obj1);
+        }
+        items[1] = tmp3Result;
+        return tmp(tmp2, { children: items });
       }
-      children[1] = tmp3Result;
-      return tmp(tmp2, { children });
-    };
+    }
     cResult[7] = appliedTags.length;
     cResult[8] = hasUnreads;
-    cResult[9] = tmp4.dot;
-    cResult[10] = fn;
-    tmp7 = fn;
+    cResult[9] = tmp2.dot;
+    cResult[10] = T;
+    tmp5 = T;
   }
-  const items2 = [containerStyle, tmp4.tagsContainer];
+  const items1 = [containerStyle, tmp2.tagsContainer];
   cResult[0] = containerStyle;
-  cResult[1] = tmp4.tagsContainer;
-  cResult[2] = items2;
-  tmp5 = items2;
-}) : ((appliedTags) => {
+  cResult[1] = tmp2.tagsContainer;
+  cResult[2] = items1;
+  tmp3 = items1;
+}) : (function ForumPostAppliedTags(appliedTags) {
   let items;
   let items1;
   let items2;

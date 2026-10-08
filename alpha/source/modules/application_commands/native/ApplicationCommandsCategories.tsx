@@ -1,20 +1,20 @@
-// Module ID: 12058
-// Function ID: 12059
+// Module ID: 12131
+// Function ID: 12132
 // Name: ApplicationCommandsCategories
-// Dependencies: [19, 17, 2112, 12053, 21, 4896, 587, 558, 576, 504, 11874, 5981, 1126, 5916, 4861, 4862, 2]
+// Dependencies: [19, 17, 2124, 12126, 21, 5090, 587, 558, 576, 504, 11946, 6164, 1126, 6189, 5055, 5056, 2]
 
-// Module 12058 (ApplicationCommandsCategories)
+// Module 12131 (ApplicationCommandsCategories)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import HapticUtils from "HapticUtils" /* 4861 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4862 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11874 */;
+import HapticUtils from "HapticUtils" /* 5055 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5056 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11946 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 12053 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 12126 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ obj3 = { opacity: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER
 let closure_9 = createStyles(obj);
 let memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
+let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function CategoryItem(section) {
   let active;
   let first;
   let index;
@@ -143,7 +143,7 @@ let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((section) 
     cResult[6] = applicationCommandsIconSource;
     tmp9 = applicationCommandsIconSource;
   }
-  const fn = function o() {
+  const fn = function l() {
     if (null != guildId) {
       let botId;
       if (section != null) {
@@ -158,7 +158,7 @@ let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((section) 
   cResult[2] = section.botId;
   cResult[3] = fn;
   tmp7 = fn;
-}) : ((section) => {
+}) : (function CategoryItem(section) {
   let active;
   let formatToPlainStringResult;
   section = section.section;
@@ -184,7 +184,7 @@ let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((section) 
     return obj.getApplicationCommandsIconSource(section, stateFromStores);
   }, items1);
   null != memo && jsx(FastImageDefault, { style: tmp.categoryImage, source: memo });
-  const PressableOpacity = tmp2(5916).PressableOpacity;
+  const PressableOpacity = tmp2(6189).PressableOpacity;
   const intl = tmp2(1126).intl;
   const formatToPlainString = intl.formatToPlainString;
   const t = tmp2(1126).t;
@@ -201,18 +201,14 @@ let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((section) 
   }} accessibilityRole="button" accessibilityLabel={formatToPlainStringResult}>{null}</PressableOpacity>;
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedIndex) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationCommandsCategories(selectedIndex) {
   let guildId;
   let onPressSection;
   let sections;
   let style;
-  let tmp10;
-  let tmp18;
   let tmp4;
   let tmp5;
   let tmp7;
-  let tmp8;
-  let tmp9;
   let obj = onPressSection(guildId[8]);
   const cResult = obj.c(22);
   ({ style, sections, onPressSection } = selectedIndex);
@@ -274,89 +270,58 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedIndex) => 
       ref2.current = contentOffset.x + nativeEvent.layoutMeasurement.width;
     };
     cResult[5] = fn3;
-    tmp8 = fn3;
+    let tmp8 = fn3;
   } else {
     tmp8 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn4 = function w(nativeEvent) {
-      const layout = nativeEvent.nativeEvent.layout;
-      ref.current = 0;
-      ref2.current = layout.width;
-      ref3.current = layout.width;
-    };
-    cResult[6] = fn4;
-    tmp9 = fn4;
+    class M {
+      constructor(nativeEvent) {
+        const layout = nativeEvent.nativeEvent.layout;
+        ref.current = 0;
+        ref2.current = layout.width;
+        ref3.current = layout.width;
+      }
+    }
+    cResult[6] = M;
   } else {
-    tmp9 = cResult[6];
+    class M {
+      constructor(nativeEvent) {
+        const layout = nativeEvent.nativeEvent.layout;
+        ref.current = 0;
+        ref2.current = layout.width;
+        ref3.current = layout.width;
+      }
+    }
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn5 = function k(arg0, index) {
-      return { length: handlePressCategory, offset: handlePressCategory * index, index };
-    };
-    cResult[7] = fn5;
-    tmp10 = fn5;
+    class M {
+      constructor(nativeEvent) {
+        const layout = nativeEvent.nativeEvent.layout;
+        ref.current = 0;
+        ref2.current = layout.width;
+        ref3.current = layout.width;
+      }
+    }
+    cResult[7] = tmp11;
   } else {
-    tmp10 = cResult[7];
+    class M {
+      constructor(nativeEvent) {
+        const layout = nativeEvent.nativeEvent.layout;
+        ref.current = 0;
+        ref2.current = layout.width;
+        ref3.current = layout.width;
+      }
+    }
   }
   if (cResult[8] === guildId) {
-    if (cResult[9] === tmp7) {
-      let tmp11;
-      if (cResult[10] === selectedIndex) {
-        tmp11 = cResult[11];
+    class M {
+      constructor(nativeEvent) {
+        const layout = nativeEvent.nativeEvent.layout;
+        ref.current = 0;
+        ref2.current = layout.width;
+        ref3.current = layout.width;
       }
-      if (cResult[12] === style) {
-        let tmp12;
-        let tmp13;
-        if (cResult[13] === tmp2.container) {
-          tmp12 = cResult[14];
-        }
-        const _Symbol = Symbol;
-        if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-          class G {
-            constructor(id) {
-              return id.id;
-            }
-          }
-          cResult[15] = G;
-          tmp13 = G;
-        } else {
-          class G {
-            constructor(id) {
-              return id.id;
-            }
-          }
-        }
-        if (cResult[16] === tmp11) {
-          class G {
-            constructor(id) {
-              return id.id;
-            }
-          }
-          if (cResult[19] === tmp14) {
-            class G {
-              constructor(id) {
-                return id.id;
-              }
-            }
-            return tmp18;
-          }
-          const tmp21 = <ref2 style={tmp12}>{tmp14}</ref2>;
-          cResult[19] = tmp14;
-          cResult[20] = tmp12;
-          cResult[21] = tmp21;
-          tmp18 = tmp21;
-        }
-        const tmp17 = <ref3 ref={ref} getItemLayout={tmp10} data={sections} keyboardShouldPersistTaps="always" horizontal keyExtractor={tmp13} renderItem={tmp11} showsHorizontalScrollIndicator={false} onScroll={tmp8} onLayout={tmp9} />;
-        cResult[16] = tmp11;
-        cResult[17] = sections;
-        cResult[18] = tmp17;
-      }
-      const items1 = [tmp2.container, style];
-      cResult[12] = style;
-      cResult[13] = tmp2.container;
-      cResult[14] = items1;
-      tmp12 = items1;
     }
   }
   class N {
@@ -369,8 +334,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedIndex) => 
   cResult[9] = tmp7;
   cResult[10] = selectedIndex;
   cResult[11] = N;
-  tmp11 = N;
-}) : ((onPressSection) => {
+}) : (function ApplicationCommandsCategories(onPressSection) {
   let sections;
   let style;
   onPressSection = onPressSection.onPressSection;

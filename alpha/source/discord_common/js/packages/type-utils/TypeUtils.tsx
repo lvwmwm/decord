@@ -1,10 +1,10 @@
-// Module ID: 2064
-// Function ID: 2065
+// Module ID: 2076
+// Function ID: 2077
 // Name: TypeUtils
 // Dependencies: [2]
 // Exports: arrayIsNotEmpty, assertUnreachable, dangerouslyCast, exact, hasOwnProperty
 
-// Module 2064 (TypeUtils)
+// Module 2076 (TypeUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/type-utils/TypeUtils.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 16144
-// Function ID: 16145
+// Module ID: 16404
+// Function ID: 16405
 // Name: registerSidebarVisibilityMethods
-// Dependencies: [7229, 2074, 5623, 2]
+// Dependencies: [7408, 2086, 5968, 2]
 // Exports: registerFastListChannelVisibilityMethod, registerGuildVisibilityMethod
 
-// Module 16144 (registerSidebarVisibilityMethods)
-import SortedGuildStore2 from "SortedGuildStore" /* 5623 */;
-import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 7229 */;
-import GuildStore from "GuildStore" /* 2074 */;
+// Module 16404 (registerSidebarVisibilityMethods)
+import SortedGuildStore2 from "SortedGuildStore" /* 5968 */;
+import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 7408 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import size from "module_2" /* 2 */;
 
 const SortedGuildStore = SortedGuildStore2;
@@ -23,7 +23,7 @@ export const registerGuildVisibilityMethod = function registerGuildVisibilityMet
   const current = fastListRef.current;
   if (null != current) {
     let tmp = closure_1;
-    let tmp2 = closure_1(function() {
+    let tmp2 = closure_1(function getVisibleGuildIds() {
       if (null == current) {
         return [];
       } else {
@@ -75,7 +75,7 @@ export const registerFastListChannelVisibilityMethod = function registerFastList
   const current = ref.current;
   if (null != current) {
     const tmp = React;
-    React(() => {
+    React(function getVisibleChannelIds() {
       let containerSize;
       if (null == containerSize) {
         return [];

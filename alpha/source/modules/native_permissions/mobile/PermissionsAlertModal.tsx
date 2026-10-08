@@ -1,12 +1,12 @@
-// Module ID: 7297
-// Function ID: 7298
+// Module ID: 7502
+// Function ID: 7503
 // Name: PermissionsAlertModal
-// Dependencies: [19, 21, 558, 576, 1126, 5720, 5720, 2]
+// Dependencies: [19, 21, 558, 576, 1126, 5303, 5303, 2]
 
-// Module 7297 (PermissionsAlertModal)
+// Module 7502 (PermissionsAlertModal)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import AlertModal2 from "AlertModal" /* 5720 */;
+import AlertModal2 from "AlertModal" /* 5303 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 let c2;
 let c3;
 ({ jsx: c2, jsxs: c3 } = Fragment);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PermissionsAlertModal(arg0) {
   let body;
   let first;
   let intl2;
@@ -47,7 +47,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "secondary", text: intl2.string(intl3.t.cpT0Cq) };
-    const AlertActionButton = tmp(5720).AlertActionButton;
+    const AlertActionButton = tmp(5303).AlertActionButton;
     intl2 = tmp(1126).intl;
     const tmp11 = React2(AlertActionButton, obj3, "close");
     cResult[3] = tmp11;
@@ -80,7 +80,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = title;
   cResult[9] = tmp16;
   tmp15 = tmp16;
-}) : ((arg0) => {
+}) : (function PermissionsAlertModal(arg0) {
   let AlertActions;
   let body;
   let intl;

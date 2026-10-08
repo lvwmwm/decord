@@ -1,58 +1,57 @@
-// Module ID: 16481
-// Function ID: 16482
+// Module ID: 16741
+// Function ID: 16742
 // Name: ICYMICardInteractionRow
-// Dependencies: [32, 19, 17, 6819, 2051, 5577, 4515, 1085, 1380, 21, 4527, 7273, 4896, 587, 1369, 4733, 558, 576, 504, 4909, 6978, 9879, 1126, 8444, 4892, 5916, 9990, 1103, 1402, 9867, 10642, 11083, 11328, 11379, 16475, 5862, 7272, 7641, 11297, 8039, 11319, 11305, 4586, 5612, 683, 6715, 2]
+// Dependencies: [32, 19, 17, 6992, 2063, 5887, 4707, 1085, 1392, 21, 4719, 7872, 5090, 587, 1381, 4927, 558, 576, 504, 7001, 7167, 9359, 1126, 8930, 5086, 6189, 9520, 1103, 1414, 9317, 6164, 10242, 10447, 11584, 12815, 16735, 8174, 7873, 7962, 9634, 8447, 11572, 9642, 4778, 5387, 683, 6892, 2]
 // Exports: onAddReaction
 
-// Module 16481 (ICYMICardInteractionRow)
+// Module 16741 (ICYMICardInteractionRow)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import ReactionUtils from "ReactionUtils" /* 4527 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4909 */;
-import Pressables from "Pressables" /* 5916 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6978 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7272 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 7273 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 7641 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8039 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9867 */;
-import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9879 */;
-import PendingReplyActionCreators from "PendingReplyActionCreators" /* 11305 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 11319 */;
-import ForwardingIconDefault from "ForwardingIcon" /* 11328 */;
-import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 11379 */;
-import ICYMIShared from "ICYMIShared" /* 16475 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import ReactionUtils from "ReactionUtils" /* 4719 */;
+import Pressables from "Pressables" /* 6189 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7001 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7167 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 7872 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7873 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 7962 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8447 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9317 */;
+import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9359 */;
+import PendingReplyActionCreators from "PendingReplyActionCreators" /* 9642 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 11572 */;
+import ForwardingIconDefault from "ForwardingIcon" /* 11584 */;
+import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12815 */;
+import ICYMIShared from "ICYMIShared" /* 16735 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 6819 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5577 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 6992 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5887 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, message, nativeEvent, parentMessage;
+let _require, dependencyMap, nativeEvent;
 
 let closure_12;
-let closure_14;
+let closure_15;
 let closure_16;
 let closure_17;
-let closure_18;
 let hasOwnProperty;
 let map1;
-let metroImportDefault;
 let metroRequire;
 let tmp4;
-const ColorUtils = tmp4(4733);
+let unpackModuleId;
+const ColorUtils = tmp4(4927);
 function EmojiReaction(messageId) {
   let backgroundColor1;
   let items5;
@@ -60,8 +59,8 @@ function EmojiReaction(messageId) {
   let items7;
   let obj9;
   let tmp17Result;
-  let tmp24;
-  let tmp25;
+  let tmp22;
+  let tmp23;
   messageId = messageId.messageId;
   const channel = messageId.channel;
   const reaction = messageId.reaction;
@@ -69,7 +68,7 @@ function EmojiReaction(messageId) {
   const handleItemInteracted = messageId.handleItemInteracted;
   let emoji;
   const count = messageId.count;
-  let tmp = closure_20();
+  let tmp = closure_19();
   let tmp2 = messageId;
   let burst_colors = reaction.burst_colors;
   const useEmojiColorPalette = messageId(reaction[26]).useEmojiColorPalette;
@@ -149,7 +148,7 @@ function EmojiReaction(messageId) {
   const items3 = [tmp.emojiContainer, selected, ];
   let tmp16 = isBurstReaction;
   const PressableOpacity = tmp2(tmp3[25]).PressableOpacity;
-  const tmp15 = closure_17;
+  const tmp15 = closure_16;
   if (isBurstReaction) {
     tmp16 = obj;
   }
@@ -170,34 +169,34 @@ function EmojiReaction(messageId) {
       const obj6 = { style: items6, source: memo };
       items6 = [, ];
       ({ defaultEmoji: arr7[0], emojiImage: arr7[1] } = tmp);
-      tmp17Result = tmp17(closure_6, obj6);
+      tmp17Result = tmp17(tmp24(tmp3[30]), obj6);
     } else {
       const obj7 = { emoji, size: v20, style: tmp.defaultEmoji, animate: true };
-      tmp17Result = tmp17(channel(tmp3[30]), obj7);
+      tmp17Result = tmp17(tmp24(tmp3[31]), obj7);
     }
   }
-  items7 = [closure_16(emoji, obj4), ];
+  items7 = [closure_15(emoji, obj4), ];
   const items8 = [tmp.innerTextContainer, ];
   if (selectedInnerTextContainer) {
     selectedInnerTextContainer = tmp.selectedInnerTextContainer;
   }
   items8[1] = selectedInnerTextContainer;
-  const obj8 = { style: items8, children: closure_16(tmp24, obj9) };
-  obj9 = { animate: true, count, textStyle: tmp25, textVariant: "text-md/semibold" };
-  tmp25 = null;
-  tmp24 = channel(reaction[31]);
+  const obj8 = { style: items8, children: closure_15(tmp22, obj9) };
+  obj9 = { animate: true, count, textStyle: tmp23, textVariant: "text-md/semibold" };
+  tmp23 = null;
+  tmp22 = channel(reaction[32]);
   if (isBurstReaction) {
-    tmp25 = tmp10;
+    tmp23 = tmp10;
   }
-  items7[1] = closure_16(emoji, obj8);
+  items7[1] = closure_15(emoji, obj8);
   return tmp15(PressableOpacity, obj3);
 }
-({ View: hasOwnProperty, Image: metroRequire, ScrollView: metroImportDefault } = react_native);
-({ MessageFlags: closure_12, Permissions: map1, HorizontalGradient: closure_14 } = Constants);
+({ View: hasOwnProperty, ScrollView: metroRequire } = react_native);
+({ MessageFlags: unpackModuleId, Permissions: closure_12, HorizontalGradient: map1 } = Constants);
 const EmojiIntention = EmojiConstants.EmojiIntention;
-({ jsx: closure_16, jsxs: closure_17, Fragment: closure_18 } = Fragment);
-let c19 = 20;
-let closure_20 = createStyles.createStyles(() => {
+({ jsx: closure_15, jsxs: closure_16, Fragment: closure_17 } = Fragment);
+let c18 = 20;
+let closure_19 = createStyles.createStyles(() => {
   let num;
   let obj3;
   let size1;
@@ -217,7 +216,7 @@ let closure_20 = createStyles.createStyles(() => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useThread(id, arg1, arg2) {
   let closure_2;
   let first;
   let messageCount;
@@ -294,8 +293,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) => {
     const fn2 = function y() {
       let tmp = null != closure_1 && null != id;
       if (tmp) {
-        tmp = closure_1.hasFlag(constants.HAS_THREAD) || closure_2;
-        closure_1.hasFlag(constants.HAS_THREAD) || closure_2;
+        tmp = closure_1.hasFlag(unpackModuleId.HAS_THREAD) || closure_2;
+        closure_1.hasFlag(unpackModuleId.HAS_THREAD) || closure_2;
       }
       if (tmp) {
         tmp = null == ThreadMessageStore.getMostRecentMessage(obj.id);
@@ -314,7 +313,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) => {
     cResult[7] = fn2;
     tmp9 = fn2;
   }
-  const fn = function c() {
+  const fn = function h() {
     let num;
     let obj2;
     if (null != closure_1) {
@@ -339,7 +338,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) => {
   cResult[2] = arg1;
   cResult[3] = fn;
   tmp7 = fn;
-}) : ((id, arg1, arg2) => {
+}) : (function useThread(id, arg1, arg2) {
   let closure_2;
   let messageCount;
   let mostRecentMessage;
@@ -380,8 +379,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) => {
   const effect = useEffect(() => {
     let tmp = null != closure_1 && null != id;
     if (tmp) {
-      tmp = closure_1.hasFlag(constants.HAS_THREAD) || closure_2;
-      closure_1.hasFlag(constants.HAS_THREAD) || closure_2;
+      tmp = closure_1.hasFlag(unpackModuleId.HAS_THREAD) || closure_2;
+      closure_1.hasFlag(unpackModuleId.HAS_THREAD) || closure_2;
     }
     if (tmp) {
       tmp = null == ThreadMessageStore.getMostRecentMessage(obj.id);
@@ -396,9 +395,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) => {
   }, items1);
   return { thread, messageCount, mostRecentMessage };
 });
-let closure_21 = tmp5;
+let closure_20 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddEmojiButton(channel) {
   let disabled;
   let handleItemInteracted;
   let intl2;
@@ -410,7 +409,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   channel = channel.channel;
   const onPressEmoji = channel.onPressEmoji;
   ({ showText, disabled, handleItemInteracted } = channel);
-  const tmp4 = closure_20();
+  const tmp4 = closure_19();
   if (cResult[0] === channel) {
     if (cResult[1] === handleItemInteracted) {
       let tmp5;
@@ -441,7 +440,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           }
           const _Symbol2 = Symbol;
           if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp13 = closure_16(channel(tmp2[23]).ReactionIcon, { size: "sm" });
+            const tmp13 = closure_15(channel(tmp2[23]).ReactionIcon, { size: "sm" });
             cResult[9] = tmp13;
             tmp11 = tmp13;
           } else {
@@ -453,7 +452,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
               const obj2 = { variant: "text-sm/semibold", color: "redesign-button-tertiary-text", children: intl2.string(channel(tmp2[22]).t.m9O1gd) };
               const Text = tmp(tmp2[24]).Text;
               intl2 = tmp(tmp2[22]).intl;
-              tmp15 = closure_16(Text, obj2);
+              tmp15 = closure_15(Text, obj2);
             }
             cResult[10] = showText;
             cResult[11] = tmp15;
@@ -474,7 +473,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           }
           const obj3 = { onPress: tmp5, style: tmp7, accessible: true, accessibilityLabel: tmp9, disabled, children: items };
           items = [tmp11, tmp14];
-          const tmp19 = closure_17(channel(tmp2[25]).PressableOpacity, obj3);
+          const tmp19 = closure_16(channel(tmp2[25]).PressableOpacity, obj3);
           cResult[12] = disabled;
           cResult[13] = tmp5;
           cResult[14] = tmp7;
@@ -510,7 +509,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[2] = onPressEmoji;
   cResult[3] = fn;
   tmp5 = fn;
-}) : ((channel) => {
+}) : (function AddEmojiButton(channel) {
   let disabled;
   let handleItemInteracted;
   let intl;
@@ -521,7 +520,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   channel = channel.channel;
   const onPressEmoji = channel.onPressEmoji;
   ({ showText, disabled, handleItemInteracted } = channel);
-  const tmp = closure_20();
+  const tmp = closure_19();
   const items = [channel, onPressEmoji, handleItemInteracted];
   const callback = react.useCallback(() => {
     let guild_id;
@@ -540,14 +539,14 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   ({ emojiContainer: arr2[0], addEmojiContainer: arr2[1] } = tmp);
   let disabled1 = null;
   const PressableOpacity = channel(handleItemInteracted[25]).PressableOpacity;
-  const tmp3 = closure_17;
+  const tmp3 = closure_16;
   if (disabled) {
     disabled1 = tmp.disabled;
   }
   items1[2] = disabled1;
   intl = tmp4(tmp5[22]).intl;
-  items2 = [closure_16(channel(handleItemInteracted[23]).ReactionIcon, { size: "sm" }), ];
-  const tmp7 = closure_16;
+  items2 = [closure_15(channel(handleItemInteracted[23]).ReactionIcon, { size: "sm" }), ];
+  const tmp7 = closure_15;
   if (showText) {
     const obj2 = { variant: "text-sm/semibold", color: "redesign-button-tertiary-text", children: intl2.string(channel(handleItemInteracted[22]).t.m9O1gd) };
     const Text = tmp4(tmp5[24]).Text;
@@ -558,13 +557,13 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   return tmp3(PressableOpacity, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardButton(arg0) {
   let disabled;
   let onPress;
   const obj = react2;
   const cResult = obj.c(10);
   ({ onPress, disabled } = arg0);
-  const tmp4 = closure_20();
+  const tmp4 = closure_19();
   let disabled1 = null;
   if (disabled) {
     disabled1 = tmp4.disabled;
@@ -616,12 +615,12 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = disabled1;
   cResult[3] = items;
   tmp6 = items;
-}) : ((disabled) => {
+}) : (function ForwardButton(disabled) {
   let intl;
   let items;
   disabled = disabled.disabled;
   const onPress = disabled.onPress;
-  const tmp = closure_20();
+  const tmp = closure_19();
   const obj = { onPress, style: items, accessible: true, disabled, accessibilityLabel: intl.string(intl3.t.xIUfJS), children: authStore3(ForwardingIconDefault, { size: "sm" }) };
   items = [, , ];
   ({ emojiContainer: arr[0], addEmojiContainer: arr[1] } = tmp);
@@ -635,13 +634,13 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return authStore3(PressableOpacity, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReplyButton(arg0) {
   let disabled;
   let onPress;
   const obj = react2;
   const cResult = obj.c(10);
   ({ onPress, disabled } = arg0);
-  const tmp4 = closure_20();
+  const tmp4 = closure_19();
   let disabled1 = null;
   if (disabled) {
     disabled1 = tmp4.disabled;
@@ -693,12 +692,12 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = disabled1;
   cResult[3] = items;
   tmp6 = items;
-}) : ((disabled) => {
+}) : (function ReplyButton(disabled) {
   let intl;
   let items;
   disabled = disabled.disabled;
   const onPress = disabled.onPress;
-  const tmp = closure_20();
+  const tmp = closure_19();
   const obj = { onPress, style: items, accessible: true, disabled, accessibilityLabel: intl.string(intl3.t["5NwaNY"]), children: authStore3(ArrowAngleLeftUpIcon.ArrowAngleLeftUpIcon, { size: "sm" }) };
   items = [, , ];
   ({ emojiContainer: arr[0], addEmojiContainer: arr[1] } = tmp);
@@ -712,7 +711,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return authStore3(PressableOpacity, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage) => {
+let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadAsCommentsButton(parentMessage) {
   let handleItemInteracted;
   let items1;
   let style;
@@ -722,7 +721,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage)
   parentMessage = parentMessage.parentMessage;
   const threadData = parentMessage.threadData;
   ({ style, handleItemInteracted } = parentMessage);
-  const tmp4 = closure_20();
+  const tmp4 = closure_19();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [PermissionStore];
     cResult[0] = items;
@@ -733,7 +732,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage)
   if (cResult[1] !== parentMessage.id) {
     const fn = function o() {
       const obj = { channelId: parentMessage.id };
-      return PermissionStore.canWithPartialContext(map1.VIEW_CHANNEL, obj);
+      return PermissionStore.canWithPartialContext(constants.VIEW_CHANNEL, obj);
     };
     cResult[1] = parentMessage.id;
     cResult[2] = fn;
@@ -762,7 +761,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage)
                 }
                 if (cResult[22] !== tmp4.commentsIcon) {
                   let obj2 = { style: tmp4.commentsIcon };
-                  const tmp25 = closure_16(parentMessage(tmp2[35]).ChatIcon, obj2);
+                  const tmp25 = closure_15(parentMessage(tmp2[36]).ChatIcon, obj2);
                   cResult[22] = tmp4.commentsIcon;
                   cResult[23] = tmp25;
                   tmp23 = tmp25;
@@ -771,7 +770,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage)
                 }
                 if (cResult[24] !== str) {
                   const obj3 = { variant: "text-md/semibold", color: "text-strong", children: str };
-                  const tmp28 = closure_16(parentMessage(tmp2[24]).Text, obj3);
+                  const tmp28 = closure_15(parentMessage(tmp2[24]).Text, obj3);
                   cResult[24] = str;
                   cResult[25] = tmp28;
                   tmp26 = tmp28;
@@ -794,7 +793,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage)
                       }
                     }
                     const obj4 = { style: tmp22, onPress: tmp10, children: tmp29 };
-                    const tmp35 = closure_16(parentMessage(tmp2[25]).PressableHighlight, obj4);
+                    const tmp35 = closure_15(parentMessage(tmp2[25]).PressableHighlight, obj4);
                     cResult[30] = tmp10;
                     cResult[31] = tmp22;
                     cResult[32] = tmp29;
@@ -804,7 +803,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage)
                 }
                 const obj5 = { style: tmp4.commentCount, children: items1 };
                 items1 = [tmp23, tmp26];
-                const tmp32 = closure_17(closure_5, obj5);
+                const tmp32 = closure_16(closure_5, obj5);
                 cResult[26] = tmp4.commentCount;
                 cResult[27] = tmp23;
                 cResult[28] = tmp26;
@@ -826,7 +825,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage)
             }
             if (cResult[10] !== tmp4.commentsIcon) {
               const obj6 = { style: tmp4.commentsIcon };
-              const tmp14 = closure_16(parentMessage(tmp2[35]).ChatIcon, obj6);
+              const tmp14 = closure_15(parentMessage(tmp2[36]).ChatIcon, obj6);
               cResult[10] = tmp4.commentsIcon;
               cResult[11] = tmp14;
               tmp12 = tmp14;
@@ -848,7 +847,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage)
                 }
               }
               const obj7 = { style: tmp11, onPress: tmp10, children: tmp15 };
-              const tmp21 = closure_16(parentMessage(tmp2[25]).PressableHighlight, obj7);
+              const tmp21 = closure_15(parentMessage(tmp2[25]).PressableHighlight, obj7);
               cResult[15] = tmp10;
               cResult[16] = tmp11;
               cResult[17] = tmp15;
@@ -856,7 +855,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage)
               tmp19 = tmp21;
             }
             const obj8 = { style: tmp4.commentCount, children: tmp12 };
-            const tmp18 = closure_16(closure_5, obj8);
+            const tmp18 = closure_15(closure_5, obj8);
             cResult[12] = tmp4.commentCount;
             cResult[13] = tmp12;
             cResult[14] = tmp18;
@@ -872,20 +871,22 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage)
       return null;
     }
   }
-  const fn2 = function b() {
-    handleItemInteracted("press_comments", { actionGestureType: "press", actionTargetElement: "thread_comments_button", actionIntentType: "navigate", actionDestinationType: "channel" });
-    const tmp2 = null != parentMessage && null != threadData.thread;
-    if (tmp2) {
-      const obj2 = ICYMIShared;
-      obj2.navigateToPost(parentMessage.getChannelId(), threadData.thread.guild_id, parentMessage.id);
+  class T {
+    constructor() {
+      handleItemInteracted("press_comments", { actionGestureType: "press", actionTargetElement: "thread_comments_button", actionIntentType: "navigate", actionDestinationType: "channel" });
+      const tmp2 = null != parentMessage && null != threadData.thread;
+      if (tmp2) {
+        const obj2 = ICYMIShared;
+        obj2.navigateToPost(parentMessage.getChannelId(), threadData.thread.guild_id, parentMessage.id);
+      }
     }
-  };
+  }
   cResult[3] = handleItemInteracted;
   cResult[4] = parentMessage;
   cResult[5] = threadData.thread;
-  cResult[6] = fn2;
-  tmp10 = fn2;
-}) : ((parentMessage) => {
+  cResult[6] = T;
+  tmp10 = T;
+}) : (function ThreadAsCommentsButton(parentMessage) {
   let handleItemInteracted;
   let items2;
   let items3;
@@ -897,14 +898,14 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage)
   parentMessage = parentMessage.parentMessage;
   const threadData = parentMessage.threadData;
   ({ style, handleItemInteracted } = parentMessage);
-  const tmp = closure_20();
+  const tmp = closure_19();
   let tmp2 = parentMessage;
   let obj = parentMessage(handleItemInteracted[18]);
   const items = [PermissionStore];
   const items1 = [parentMessage, threadData.thread, handleItemInteracted];
   const stateFromStores = obj.useStateFromStores(items, () => {
     const obj = { channelId: parentMessage.id };
-    return PermissionStore.canWithPartialContext(map1.VIEW_CHANNEL, obj);
+    return PermissionStore.canWithPartialContext(constants.VIEW_CHANNEL, obj);
   });
   const callback = react.useCallback(() => {
     handleItemInteracted("press_comments", { actionGestureType: "press", actionTargetElement: "thread_comments_button", actionIntentType: "navigate", actionDestinationType: "channel" });
@@ -922,29 +923,29 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage)
           if (threadData.messageCount <= 9) {
             str = threadData.messageCount;
           }
-          let obj2 = { style: items2, onPress: callback, children: closure_17(closure_5, obj3) };
+          let obj2 = { style: items2, onPress: callback, children: closure_16(closure_5, obj3) };
           items2 = [tmp.comments, style];
           obj3 = { style: tmp.commentCount, children: items3 };
           const PressableHighlight2 = tmp2(tmp3[25]).PressableHighlight;
           const obj4 = { style: tmp.commentsIcon };
-          items3 = [closure_16(tmp2(tmp3[35]).ChatIcon, obj4), ];
+          items3 = [closure_15(tmp2(tmp3[36]).ChatIcon, obj4), ];
           const obj5 = { variant: "text-md/semibold", color: "text-strong", children: str };
-          items3[1] = closure_16(tmp2(handleItemInteracted[24]).Text, obj5);
-          return closure_16(PressableHighlight2, obj2);
+          items3[1] = closure_15(tmp2(handleItemInteracted[24]).Text, obj5);
+          return closure_15(PressableHighlight2, obj2);
         }
       }
-      const obj6 = { style: items4, onPress: callback, children: closure_16(closure_5, obj7) };
+      const obj6 = { style: items4, onPress: callback, children: closure_15(closure_5, obj7) };
       items4 = [tmp.comments, style];
-      obj7 = { style: tmp.commentCount, children: closure_16(tmp2(handleItemInteracted[35]).ChatIcon, obj8) };
+      obj7 = { style: tmp.commentCount, children: closure_15(tmp2(handleItemInteracted[36]).ChatIcon, obj8) };
       const PressableHighlight = tmp2(tmp3[25]).PressableHighlight;
       obj8 = { style: tmp.commentsIcon };
-      return closure_16(PressableHighlight, obj6);
+      return closure_15(PressableHighlight, obj6);
     }
   }
   return null;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMICardInteractionRow(message) {
   let arr;
   let backgroundVariant;
   let channel;
@@ -968,8 +969,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     tmp4 = hideAdditionalButtons;
   }
   const tmp5 = undefined !== inForum && inForum;
-  closure_20();
-  const tmp8 = closure_21(guild, message, tmp5);
+  closure_19();
+  const tmp8 = closure_20(guild, message, tmp5);
   if (cResult[0] !== message.reactions) {
     const items = [];
     _require = items;
@@ -999,7 +1000,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   if (cResult[2] !== channel) {
     let tmp12 = null != channel;
     if (tmp12) {
-      tmp12 = message(tmp2[37])(channel);
+      tmp12 = message(tmp2[38])(channel);
     }
     cResult[2] = channel;
     cResult[3] = tmp12;
@@ -1016,7 +1017,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   if (cResult[5] !== channel) {
     class W {
       constructor() {
-        return PermissionStore.can(map1.SEND_MESSAGES, channel);
+        return PermissionStore.can(constants.SEND_MESSAGES, channel);
       }
     }
     cResult[5] = channel;
@@ -1025,7 +1026,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   } else {
     class W {
       constructor() {
-        return PermissionStore.can(map1.SEND_MESSAGES, channel);
+        return PermissionStore.can(constants.SEND_MESSAGES, channel);
       }
     }
   }
@@ -1034,7 +1035,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   if (tmp4) {
     class W {
       constructor() {
-        return PermissionStore.can(map1.SEND_MESSAGES, channel);
+        return PermissionStore.can(constants.SEND_MESSAGES, channel);
       }
     }
   }
@@ -1042,7 +1043,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   if (tmp8.messageCount > 0) {
     class W {
       constructor() {
-        return PermissionStore.can(map1.SEND_MESSAGES, channel);
+        return PermissionStore.can(constants.SEND_MESSAGES, channel);
       }
     }
     diff = num8 - 1;
@@ -1050,7 +1051,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   if (arr.length > diff) {
     class W {
       constructor() {
-        return PermissionStore.can(map1.SEND_MESSAGES, channel);
+        return PermissionStore.can(constants.SEND_MESSAGES, channel);
       }
     }
   }
@@ -1058,7 +1059,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   if (tmp20) {
     class W {
       constructor() {
-        return PermissionStore.can(map1.SEND_MESSAGES, channel);
+        return PermissionStore.can(constants.SEND_MESSAGES, channel);
       }
     }
     tmp20 = tmp21;
@@ -1066,7 +1067,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   if (cResult[7] === 0 > 0) {
     class W {
       constructor() {
-        return PermissionStore.can(map1.SEND_MESSAGES, channel);
+        return PermissionStore.can(constants.SEND_MESSAGES, channel);
       }
     }
   }
@@ -1075,7 +1076,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   cResult[8] = tmp20;
   cResult[9] = tmp8.messageCount > 0;
   cResult[10] = obj2;
-}) : ((message) => {
+}) : (function ICYMICardInteractionRow(message) {
   let _undefined;
   let c12;
   let hasOverflow;
@@ -1084,8 +1085,6 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   let items12;
   let items13;
   let items14;
-  let items15;
-  let items16;
   let items9;
   let obj5;
   let showReplyForwardButtons;
@@ -1114,10 +1113,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   }
   let id = message.id;
   const itemType = message.itemType;
-  let handleItemInteracted;
+  let stateFromStores;
   c12 = undefined;
-  let tmp = closure_20();
-  let tmp2 = closure_21(guild, message, flag3);
+  let tmp = closure_19();
+  let tmp2 = closure_20(guild, message, flag3);
   const messageCount = tmp2;
   let items = [message.reactions];
   const memo = str.useMemo(() => {
@@ -1127,13 +1126,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
       if (null == me_vote.me_vote) {
         if (me_vote.burst_count > 0) {
           const push = items.push;
-          const obj = { type: message(flag[36]).ReactionTypes.BURST };
+          const obj = { type: message(flag[37]).ReactionTypes.BURST };
           const merged = Object.assign(me_vote);
           push(obj);
         }
         if (me_vote.count > 0) {
           const push2 = items.push;
-          const obj2 = { type: message(flag[36]).ReactionTypes.NORMAL };
+          const obj2 = { type: message(flag[37]).ReactionTypes.NORMAL };
           const merged1 = Object.assign(me_vote);
           push2(obj2);
         }
@@ -1148,11 +1147,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   }, items1);
   let tmp5 = flag;
   let tmp4 = message;
-  let obj = message(flag[38]);
+  let obj = message(flag[39]);
   const canForwardMessage = obj.useCanForwardMessage(message);
   let obj2 = message(flag[18]);
-  const items2 = [handleItemInteracted];
-  const stateFromStores = obj2.useStateFromStores(items2, () => PermissionStore.can(map1.SEND_MESSAGES, channel));
+  const items2 = [stateFromStores];
+  stateFromStores = obj2.useStateFromStores(items2, () => PermissionStore.can(_undefined.SEND_MESSAGES, channel));
   const items3 = [flag, tmp2.messageCount, memo.length, stateFromStores, canForwardMessage];
   const memo2 = str.useMemo(() => {
     let tmp4;
@@ -1180,7 +1179,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   }, items3);
   ({ hasOverflow, showReplyForwardButtons, showThreadAsComments } = memo2);
   const items4 = [id, itemType];
-  handleItemInteracted = str.useCallback((open_profile, actionParameters) => {
+  const handleItemInteracted = str.useCallback((open_profile, actionParameters) => {
     const obj = ICYMIActionCreatorsDefault;
     obj.itemInteracted(id, itemType, open_profile);
     const obj2 = ICYMIActionCreatorsDefault;
@@ -1229,7 +1228,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
       return nativeDefault.colors.BACKGROUND_BASE_LOW;
     }
   }, items8);
-  let obj3 = message(flag[42]);
+  let obj3 = message(flag[43]);
   const token = obj3.useToken(memo3);
   [tmp16, c12] = flag2(str.useState(true), 2);
   [][0] = handleItemInteracted;
@@ -1239,36 +1238,35 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     _undefined(nativeEvent.contentOffset.x + nativeEvent.layoutMeasurement.width < nativeEvent.contentSize.width);
   }, []);
   if (0 !== memo.length) {
-    const obj4 = { style: tmp.container, children: closure_16(id, obj5) };
+    const obj4 = { style: tmp.container, children: closure_15(id, obj5) };
     obj5 = { style: tmp.emojisRowContainer, children: tmp23Result4 };
     if (memo.length > 0) {
-      const obj6 = { style: items9, children: items13 };
-      items9 = [tmp.emojisContainer];
       let tmp23Result = !flag;
-      const obj7 = { horizontal: true, scrollEnabled: hasOverflow, contentContainerStyle: { gap: 6 }, onScroll: callback4, onScrollEndDrag: tmp18, showsHorizontalScrollIndicator: false, children: items12 };
-      const tmp24 = messageCount;
+      const obj6 = { style: tmp.emojisContainer, children: items12 };
+      const obj7 = { horizontal: true, scrollEnabled: hasOverflow, contentContainerStyle: { gap: 6 }, onScroll: callback4, onScrollEndDrag: tmp18, showsHorizontalScrollIndicator: false, children: items11 };
+      const tmp24 = itemType;
       if (!flag) {
         tmp23Result = showReplyForwardButtons || showThreadAsComments;
       }
       if (tmp23Result) {
-        const obj8 = { style: tmp.replyForwardButtonContainer, children: items10 };
+        const obj8 = { style: tmp.replyForwardButtonContainer, children: items9 };
         if (showThreadAsComments) {
           const obj9 = { threadData: tmp2, parentMessage: message, handleItemInteracted };
-          showThreadAsComments = tmp20(closure_26, obj9);
+          showThreadAsComments = tmp20(closure_25, obj9);
         }
-        items10 = [showThreadAsComments, ];
+        items9 = [showThreadAsComments, ];
         if (showReplyForwardButtons) {
-          const obj10 = { children: items11 };
+          const obj10 = { children: items10 };
           const obj11 = { onPress: callback3, disabled: !stateFromStores };
-          items11 = [closure_16(closure_25, obj11), ];
+          items10 = [closure_15(closure_24, obj11), ];
           const obj12 = { onPress: callback2, disabled: !canForwardMessage };
-          items11[1] = closure_16(closure_24, obj12);
-          showReplyForwardButtons = tmp23(closure_18, obj10);
+          items10[1] = closure_15(closure_23, obj12);
+          showReplyForwardButtons = tmp23(closure_17, obj10);
         }
-        items10[1] = showReplyForwardButtons;
+        items9[1] = showReplyForwardButtons;
         tmp23Result = tmp23(tmp21, obj8);
       }
-      items12 = [
+      items11 = [
         tmp23Result,
         memo.map((reaction, index) => {
               const obj = { messageId: message.id, channel, reaction, count: reaction.type === MessageReactionsTypes.ReactionTypes.BURST ? reaction.burst_count : reaction.count, isBurstReaction: reaction.type === MessageReactionsTypes.ReactionTypes.BURST, handleItemInteracted };
@@ -1282,33 +1280,32 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
         tmp20Result = null;
         if (memo1) {
           const obj13 = { channel, onPressEmoji: callback1, handleItemInteracted };
-          tmp20Result = tmp20(closure_22, obj13);
+          tmp20Result = tmp20(closure_21, obj13);
         }
       }
-      items12[2] = tmp20Result;
-      items13 = [closure_17(tmp24, obj7), ];
+      items11[2] = tmp20Result;
+      items12 = [closure_16(tmp24, obj7), ];
       let tmp23Result3 = null;
       if (hasOverflow) {
         tmp23Result3 = null;
         if (tmp16) {
-          const obj14 = { children: items15 };
-          const obj17 = { style: tmp.gradient, start: null, end: null, colors: items14, locations: [0, 0.8, 1] };
-          ({ START: obj15.start, END: obj15.end } = closure_14);
-          const tmp36 = channel(tmp5[43]);
-          items14 = [, , ];
-          const obj16 = channel(tmp5[44])(token);
+          const obj14 = { children: items14 };
+          const obj17 = { style: tmp.gradient, start: null, end: null, colors: items13, locations: [0, 0.8, 1] };
+          ({ START: obj15.start, END: obj15.end } = closure_13);
+          const tmp36 = channel(tmp5[44]);
+          items13 = [, , ];
+          const obj16 = channel(tmp5[45])(token);
           const alphaResult = obj16.alpha(0);
-          items14[0] = alphaResult.hex();
-          items14[1] = token;
-          items14[2] = token;
-          items15 = [closure_16(tmp36, obj17), ];
-          const obj18 = { style: items16, size: "xs", color: "icon-muted" };
-          items16 = [tmp.overflowChevron];
-          items15[1] = closure_16(tmp4(tmp5[45]).ChevronSmallRightIcon, obj18);
-          tmp23Result3 = tmp23(closure_18, obj14);
+          items13[0] = alphaResult.hex();
+          items13[1] = token;
+          items13[2] = token;
+          items14 = [closure_15(tmp36, obj17), ];
+          const obj18 = { style: tmp.overflowChevron, size: "xs", color: "icon-muted" };
+          items14[1] = closure_15(tmp4(tmp5[46]).ChevronSmallRightIcon, obj18);
+          tmp23Result3 = tmp23(closure_17, obj14);
         }
       }
-      items13[1] = tmp23Result3;
+      items12[1] = tmp23Result3;
       tmp23Result4 = tmp23(tmp21, obj6);
     } else {
       tmp23Result4 = null;

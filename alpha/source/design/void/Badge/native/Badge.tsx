@@ -1,23 +1,23 @@
-// Module ID: 13961
-// Function ID: 13962
+// Module ID: 14260
+// Function ID: 14261
 // Name: Badge/Badge
-// Dependencies: [19, 17, 2116, 1085, 1190, 21, 4896, 587, 1369, 558, 576, 4735, 504, 4892, 1888, 8941, 2]
+// Dependencies: [19, 17, 2128, 1085, 1202, 21, 5090, 587, 1381, 558, 576, 4929, 504, 5086, 1900, 8572, 2]
 
-// Module 13961 (Badge/Badge)
+// Module 14260 (Badge/Badge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import NumberUtils from "NumberUtils" /* 1888 */;
-import shared from "shared" /* 4735 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8941 */;
+import NumberUtils from "NumberUtils" /* 1900 */;
+import shared from "shared" /* 4929 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8572 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
-import BadgeConstants from "BadgeConstants" /* 1190 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1369 */;
+import LocaleStore from "LocaleStore" /* 2128 */;
+import BadgeConstants from "BadgeConstants" /* 1202 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ obj6 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_NOTIFICATION 
 ({ backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG });
 let closure_11 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Badge(arg0) {
   let accessibilityElementsHidden;
   let accessibilityLabel;
   let accessible;
@@ -214,7 +214,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   } else if (flag) {
                     const obj5 = { variant: "experimental/body-xs/semibold", color: "none", style: items2, lineClamp: 1, allowFontScaling: false, children: tmpResult5.humanizeValue(Math.min(value, num), stateFromStores) };
                     items2 = [tmp8.experimentalBadgeText, textStyle];
-                    const Text = tmp(4892).Text;
+                    const Text = tmp(5086).Text;
                     const _Math2 = Math;
                     tmpResult5 = NumberUtils;
                     tmp20Result = tmp20(Text, obj5);
@@ -263,7 +263,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     unread = tmp7 ? tmp8.lowImportanceMention : tmp8.mention;
   }
   tmp14 = BADGE_SIZE;
-}) : ((value) => {
+}) : (function Badge(value) {
   let accessibilityElementsHidden;
   let accessibilityLabel;
   let accessible;
@@ -362,7 +362,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_12 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MaskedBadge(arg0) {
   let accessibilityElementsHidden;
   let accessibilityLabel;
   let dotStyle;
@@ -472,7 +472,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp6 = obj4;
   }
   tmp4 = metroRequire;
-}) : ((maskStyle) => {
+}) : (function MaskedBadge(maskStyle) {
   let accessibilityElementsHidden;
   let accessibilityLabel;
   let dotStyle;

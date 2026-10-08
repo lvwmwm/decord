@@ -1,12 +1,12 @@
-// Module ID: 16678
-// Function ID: 16679
+// Module ID: 16941
+// Function ID: 16942
 // Name: useConjureAttachmentImage
-// Dependencies: [32, 19, 12923, 558, 576, 2]
+// Dependencies: [32, 19, 13072, 558, 576, 2]
 
-// Module 16678 (useConjureAttachmentImage)
+// Module 16941 (useConjureAttachmentImage)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 12923 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13072 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let _require, dependencyMap;
 let closure_4;
 let hasOwnProperty;
 ({ getAttachmentUrl: closure_4, isAttachmentAvailable: hasOwnProperty } = ConjureConnectionStore);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAttachmentImage(arg0, arg1) {
   let closure_0;
   let closure_1;
   let closure_5;
@@ -115,7 +115,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = items;
   tmp9 = items;
   tmp8 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useConjureAttachmentImage(arg0, arg1) {
   let closure_2;
   let closure_3;
   let closure_5;

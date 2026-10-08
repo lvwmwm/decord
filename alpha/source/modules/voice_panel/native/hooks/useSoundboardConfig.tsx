@@ -1,14 +1,14 @@
-// Module ID: 17370
-// Function ID: 17371
+// Module ID: 17651
+// Function ID: 17652
 // Name: useSoundboardConfig
-// Dependencies: [19, 2051, 1999, 558, 576, 17219, 504, 17255, 6888, 1126, 2]
+// Dependencies: [19, 2063, 2011, 558, 576, 17500, 504, 17536, 7077, 1126, 2]
 
-// Module 17370 (useSoundboardConfig)
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 17219 */;
-import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 17255 */;
+// Module 17651 (useSoundboardConfig)
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 17500 */;
+import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 17536 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,9 +16,9 @@ const require = globalThis.__r;
 let _require, importDefault;
 
 let tmp4;
-const canChannelUseSoundboardDefault = tmp4(6888);
+const canChannelUseSoundboardDefault = tmp4(7077);
 const SoundboardButtonLocation = { VOICE_CONTROLS: "call control drawer", VOICE_PANEL_CONTROLS: "voice panel controls" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, analyticsSource) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundboardConfig(arg0, analyticsSource) {
   let closure_0;
   let deaf;
   let tmp6;
@@ -49,33 +49,66 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, analyticsSourc
     }
     if (cResult[5] === arg0) {
       let tmp13;
-      let tmp14;
       let tmp19;
       if (cResult[6] === analyticsSource) {
         tmp13 = cResult[7];
       }
       if (cResult[8] !== arg0) {
-        const tmp4Result = canChannelUseSoundboardDefault;
-        const tmp4ResultResult = tmp4Result(ChannelStore.getChannel(arg0));
+        canChannelUseSoundboardDefault;
+        class C {
+          constructor() {
+            const channel = ChannelStore.getChannel(closure_0);
+            if (null != channel) {
+              const obj2 = { channel, analyticsSource };
+              const obj = soundboard_SoundboardActionCreators;
+              const result = obj.showSoundboardSoundPickerActionSheet(obj2);
+            }
+          }
+        }
         cResult[8] = arg0;
-        cResult[9] = tmp4ResultResult;
-        tmp14 = tmp4ResultResult;
-      } else {
-        tmp14 = cResult[9];
+        cResult[9] = tmp17;
+      }
+      class C {
+        constructor() {
+          const channel = ChannelStore.getChannel(closure_0);
+          if (null != channel) {
+            const obj2 = { channel, analyticsSource };
+            const obj = soundboard_SoundboardActionCreators;
+            const result = obj.showSoundboardSoundPickerActionSheet(obj2);
+          }
+        }
       }
       if (cResult[10] !== stateFromStores) {
-        let stringResult;
         if (stateFromStores) {
-          const intl = tmp(1126).intl;
-          stringResult = intl.string(tmp(1126).t.X1lQli);
+          const string = tmp(1126).intl.string;
+          class C {
+            constructor() {
+              const channel = ChannelStore.getChannel(closure_0);
+              if (null != channel) {
+                const obj2 = { channel, analyticsSource };
+                const obj = soundboard_SoundboardActionCreators;
+                const result = obj.showSoundboardSoundPickerActionSheet(obj2);
+              }
+            }
+          }
+        }
+        class C {
+          constructor() {
+            const channel = ChannelStore.getChannel(closure_0);
+            if (null != channel) {
+              const obj2 = { channel, analyticsSource };
+              const obj = soundboard_SoundboardActionCreators;
+              const result = obj.showSoundboardSoundPickerActionSheet(obj2);
+            }
+          }
         }
         cResult[10] = stateFromStores;
-        cResult[11] = stringResult;
-        tmp19 = stringResult;
+        cResult[11] = undefined;
+        tmp19 = tmp20;
       } else {
         tmp19 = cResult[11];
       }
-      if (cResult[12] === (stateFromStores || !tmp14)) {
+      if (cResult[12] === tmp18) {
         if (cResult[13] === tmp19) {
           if (cResult[14] === tmp13) {
             let tmp21;
@@ -86,26 +119,28 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, analyticsSourc
           }
         }
       }
-      let obj2 = { visible: tmp10, handlePress: tmp13, disabled: stateFromStores || !tmp14, disabledAccessibilityHint: tmp19 };
-      cResult[12] = stateFromStores || !tmp14;
+      let obj2 = { visible: tmp10, handlePress: tmp13, disabled: tmp18, disabledAccessibilityHint: tmp19 };
+      cResult[12] = tmp18;
       cResult[13] = tmp19;
       cResult[14] = tmp13;
       cResult[15] = tmp10;
       cResult[16] = obj2;
       tmp21 = obj2;
     }
-    const fn2 = function h() {
-      const channel = ChannelStore.getChannel(closure_0);
-      if (null != channel) {
-        const obj2 = { channel, analyticsSource };
-        const obj = soundboard_SoundboardActionCreators;
-        const result = obj.showSoundboardSoundPickerActionSheet(obj2);
+    class C {
+      constructor() {
+        const channel = ChannelStore.getChannel(closure_0);
+        if (null != channel) {
+          const obj2 = { channel, analyticsSource };
+          const obj = soundboard_SoundboardActionCreators;
+          const result = obj.showSoundboardSoundPickerActionSheet(obj2);
+        }
       }
-    };
+    }
     cResult[5] = arg0;
     cResult[6] = analyticsSource;
-    cResult[7] = fn2;
-    tmp13 = fn2;
+    cResult[7] = C;
+    tmp13 = C;
   }
   let tmp11 = tmp5;
   if (tmp11) {
@@ -121,11 +156,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, analyticsSourc
   cResult[3] = analyticsSource;
   cResult[4] = tmp11;
   tmp10 = tmp11;
-}) : ((arg0, analyticsSource) => {
+}) : (function useSoundboardConfig(arg0, analyticsSource) {
   let closure_0;
   let deaf;
   let stringResult;
-  const f130223 = () => {
+  const f131580 = () => {
     const tmp = canChannelUseSoundboardDefault;
     return tmp(ChannelStore.getChannel(closure_0));
   };
@@ -155,9 +190,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, analyticsSourc
       const result = obj.showSoundboardSoundPickerActionSheet(obj2);
     }
   }, items1);
-  let obj2 = { visible: tmp2, handlePress: callback, disabled: stateFromStores || !react.useMemo(f130223, items2), disabledAccessibilityHint: stringResult };
+  let obj2 = { visible: tmp2, handlePress: callback, disabled: stateFromStores || !react.useMemo(f131580, items2), disabledAccessibilityHint: stringResult };
   stringResult = undefined;
-  stateFromStores || !react.useMemo(f130223, items2);
+  stateFromStores || !react.useMemo(f131580, items2);
   if (stateFromStores) {
     const intl = tmp3(1126).intl;
     stringResult = intl.string(tmp3(1126).t.X1lQli);

@@ -1,19 +1,19 @@
-// Module ID: 13282
-// Function ID: 13283
+// Module ID: 13583
+// Function ID: 13584
 // Name: useCommonTriggerPoint
-// Dependencies: [32, 19, 4782, 558, 576, 504, 2]
+// Dependencies: [32, 19, 4976, 558, 576, 504, 2]
 
-// Module 13282 (useCommonTriggerPoint)
+// Module 13583 (useCommonTriggerPoint)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ExperimentStore from "ExperimentStore" /* 4782 */;
+import ExperimentStore from "ExperimentStore" /* 4976 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCommonTriggerPoint(arg0) {
   let closure_0;
   let tmp10;
   let tmp4;
@@ -63,9 +63,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = tmp8;
   cResult[7] = items1;
   tmp11 = items1;
-}) : ((arg0) => {
+}) : (function useCommonTriggerPoint(arg0) {
   let closure_0;
-  const f114482 = () => {
+  const f115762 = () => {
     const items = [authStore.getAllUserExperimentDescriptors(), authStore.getGuildExperiments()];
     return items;
   };
@@ -73,8 +73,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let items = [ExperimentStore];
   const obj = require("get initialized");
   const items1 = [arg0, , ];
-  [arr2[1], arr2[2]] = obj.useStateFromStoresArray(items, f114482);
-  _slicedToArray(obj.useStateFromStoresArray(items, f114482), 2);
+  [arr2[1], arr2[2]] = obj.useStateFromStoresArray(items, f115762);
+  _slicedToArray(obj.useStateFromStoresArray(items, f115762), 2);
   const effect = react.useEffect(() => {
     closure_0.trigger();
   }, items1);

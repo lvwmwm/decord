@@ -1,21 +1,21 @@
-// Module ID: 16035
-// Function ID: 16036
+// Module ID: 16295
+// Function ID: 16296
 // Name: useLiveStageData
-// Dependencies: [19, 5582, 2051, 558, 576, 5589, 573, 12, 2]
+// Dependencies: [19, 5892, 2063, 558, 576, 5955, 573, 12, 2]
 
-// Module 16035 (useLiveStageData)
+// Module 16295 (useLiveStageData)
 import _modDef12 from "module_12" /* 12 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 5589 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 5955 */;
 import react from "react" /* 19 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5582 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5892 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel_id) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLiveStageData(channel_id) {
   let first;
   let tmp10;
   let tmp12;
@@ -136,19 +136,19 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel_id) => {
             tmp34 = cResult[25];
           }
           if (cResult[26] !== channel_id.channel_id) {
-            class B {
+            class O {
               constructor() {
                 return ChannelStore.getChannel(channel_id.channel_id);
               }
             }
             const items7 = [channel_id.channel_id];
             cResult[26] = channel_id.channel_id;
-            cResult[27] = B;
+            cResult[27] = O;
             cResult[28] = items7;
             tmp37 = items7;
-            tmp36 = B;
+            tmp36 = O;
           } else {
-            class B {
+            class O {
               constructor() {
                 return ChannelStore.getChannel(channel_id.channel_id);
               }
@@ -158,7 +158,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel_id) => {
           const tmp2Result6 = require("useStateFromStores");
           const stateFromStores = tmp2Result6.useStateFromStores(tmp34, tmp36, tmp37);
           if (cResult[29] === stateFromStoresArray2.length) {
-            class B {
+            class O {
               constructor() {
                 return ChannelStore.getChannel(channel_id.channel_id);
               }
@@ -196,15 +196,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel_id) => {
     tmp22 = differenceByResult1;
   }
   if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-    class B {
+    class O {
       constructor() {
         return ChannelStore.getChannel(channel_id.channel_id);
       }
     }
-    cResult[15] = I;
-    tmp20 = I;
+    cResult[15] = E;
+    tmp20 = E;
   } else {
-    class B {
+    class O {
       constructor() {
         return ChannelStore.getChannel(channel_id.channel_id);
       }
@@ -217,7 +217,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel_id) => {
   cResult[13] = stateFromStoresArray1;
   cResult[14] = uniqByResult;
   tmp19 = uniqByResult;
-}) : ((channel_id) => {
+}) : (function useLiveStageData(channel_id) {
   let memo1;
   let stateFromStoresArray1;
   _require = channel_id;

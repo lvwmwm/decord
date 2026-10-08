@@ -1,15 +1,15 @@
-// Module ID: 7741
-// Function ID: 7742
+// Module ID: 8062
+// Function ID: 8063
 // Name: PremiumSubscriptionTrialUtil
-// Dependencies: [1377, 4540, 6972, 1379, 558, 576, 504, 2]
+// Dependencies: [1389, 4732, 7161, 1391, 558, 576, 504, 2]
 // Exports: getPremiumTrialOffer, hasActiveTrial, isEligibleTrialSub
 
-// Module 7741 (PremiumSubscriptionTrialUtil)
+// Module 8062 (PremiumSubscriptionTrialUtil)
 import react from "react" /* 576 */;
-import UserStore from "UserStore" /* 1377 */;
-import SubscriptionStore from "SubscriptionStore" /* 4540 */;
-import UserOfferStore from "UserOfferStore" /* 6972 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+import UserStore from "UserStore" /* 1389 */;
+import SubscriptionStore from "SubscriptionStore" /* 4732 */;
+import UserOfferStore from "UserOfferStore" /* 7161 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let tmp;
 const get_initialized = tmp(504);
 ({ PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID: hasOwnProperty, PREMIUM_TIER_2_REACTIVATION_TRIAL_ID: metroRequire, PREMIUM_TIER_2_3P_ONE_MONTH_TRIAL_ID: metroImportDefault, PREMIUM_TIER_2_REFERRAL_TRIAL_ID: metroImportAll, PREMIUM_TRIAL_IDS_ALL: c9 } = PremiumConstants);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasActiveTrial() {
   let premiumTypeSubscription;
   let tmp4;
   let tmp5;
@@ -47,7 +47,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     hasActiveTrial = stateFromStores.hasActiveTrial;
   }
   return hasActiveTrial;
-}) : (() => {
+}) : (function useHasActiveTrial() {
   let premiumTypeSubscription;
   const items = [SubscriptionStore];
   const obj = get_initialized;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return hasActiveTrial;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentPremiumTrialTier() {
   let currentUser;
   let premiumTypeSubscription;
   let tmp4;
@@ -70,7 +70,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SubscriptionStore];
-    const fn = function n() {
+    const fn = function s() {
       return premiumTypeSubscription.getPremiumTypeSubscription();
     };
     cResult[0] = items;
@@ -84,12 +84,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [UserStore];
-    const fn2 = function c() {
-      return currentUser.getCurrentUser();
-    };
+    class T {
+      constructor() {
+        return currentUser.getCurrentUser();
+      }
+    }
     cResult[2] = items1;
-    cResult[3] = fn2;
-    tmp9 = fn2;
+    cResult[3] = T;
+    tmp9 = T;
     tmp8 = items1;
   } else {
     tmp8 = cResult[2];
@@ -110,7 +112,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp13 = premiumType;
   }
   return tmp13;
-}) : (() => {
+}) : (function useCurrentPremiumTrialTier() {
   let currentUser;
   let premiumTypeSubscription;
   const items = [SubscriptionStore];

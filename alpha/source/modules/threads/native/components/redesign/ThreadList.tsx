@@ -1,34 +1,34 @@
-// Module ID: 16915
-// Function ID: 16916
+// Module ID: 17196
+// Function ID: 17197
 // Name: ThreadList
-// Dependencies: [19, 17, 21, 4896, 558, 576, 4892, 16916, 4618, 4595, 5604, 5605, 12446, 2061, 2063, 1126, 6000, 8926, 11880, 16918, 16919, 8404, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 5086, 17197, 4810, 4787, 5374, 5378, 12542, 2073, 2075, 1126, 6184, 8557, 11952, 17199, 17200, 8600, 2]
 
-// Module 16915 (ThreadList)
+// Module 17196 (ThreadList)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
-import native from "native" /* 4595 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import spring from "spring" /* 5604 */;
-import springPresets from "springPresets" /* 5605 */;
-import TableRow2 from "TableRow" /* 6000 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 8404 */;
-import RowButton from "RowButton" /* 8926 */;
-import ThreadPlusIcon from "ThreadPlusIcon" /* 11880 */;
-import ThreadListTableRowDefault from "ThreadListTableRow" /* 16916 */;
-import ThreadListLoadingIndicatorDefault from "ThreadListLoadingIndicator" /* 16919 */;
+import native from "native" /* 4787 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import spring from "spring" /* 5374 */;
+import springPresets from "springPresets" /* 5378 */;
+import TableRow2 from "TableRow" /* 6184 */;
+import RowButton from "RowButton" /* 8557 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 8600 */;
+import ThreadPlusIcon from "ThreadPlusIcon" /* 11952 */;
+import ThreadListTableRowDefault from "ThreadListTableRow" /* 17197 */;
+import ThreadListLoadingIndicatorDefault from "ThreadListLoadingIndicator" /* 17200 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let onCreateThreadPress, onEndReached;
+let onEndReached;
 
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 function renderItem(item) {
   item = item.item;
   const type = item.type;
@@ -57,7 +57,7 @@ const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ container: { flex: 1, flexGrow: 1 }, center: { justifyContent: "center", alignItems: "center" }, header: { marginTop: 24, marginBottom: 10 }, footer: { marginVertical: 16, justifyContent: "center", alignItems: "center" }, section: { marginTop: 16, marginBottom: 8 } });
 let set = new Set();
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadListSection(title) {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(5);
@@ -83,7 +83,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
   cResult[3] = tmp5;
   cResult[4] = tmp8;
   tmp7 = tmp8;
-}) : ((title) => {
+}) : (function ThreadListSection(title) {
   const str = title.title;
   const Text = Text_Text.Text;
   return <Text style={closure_7().section} accessibilityRole="header" variant="text-xs/bold" color="text-default">{str.toUpperCase()}</Text>;
@@ -93,7 +93,7 @@ let ListHeaderComponent = { code: "function ThreadListTsx2(finished){const{state
 __initData = { code: "function ThreadListTsx3(){const{withSpring,opacity,springStandard,state,TransitionStates,runOnJS,cleanUp}=this.__closure;return{opacity:withSpring(opacity.get(),springStandard,'respect-motion-settings',function(finished){if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}})};}" };
 let closure_15 = { code: "function ThreadListTsx4(finished){const{state,TransitionStates,runOnJS,cleanUp}=this.__closure;if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnterExitCrossFadeContainer(state) {
   let cleanUp;
   let contentContainerStyle;
   let sharedValue;
@@ -195,7 +195,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   cResult[3] = items1;
   tmp8 = items1;
   tmp7 = fn2;
-}) : ((cleanUp) => {
+}) : (function EnterExitCrossFadeContainer(cleanUp) {
   let children;
   let contentContainerStyle;
   cleanUp = cleanUp.cleanUp;
@@ -254,7 +254,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
 });
 const constants = { LIST: "list", EMPTY: "empty", LOADING: "loading" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCreateThreadPress) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadList(onCreateThreadPress) {
   let Icon;
   let arr4;
   let canLoadMore;
@@ -781,7 +781,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCreateThreadPress)
   cResult[2] = loading;
   cResult[3] = fn;
   tmp8 = fn;
-}) : ((onCreateThreadPress) => {
+}) : (function ThreadList(onCreateThreadPress) {
   let channel;
   let header;
   let onThreadPress;

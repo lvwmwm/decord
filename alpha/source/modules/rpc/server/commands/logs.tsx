@@ -1,12 +1,12 @@
-// Module ID: 14347
-// Function ID: 14348
+// Module ID: 14575
+// Function ID: 14576
 // Name: logs
-// Dependencies: [1085, 3, 9062, 9064, 2]
+// Dependencies: [1085, 3, 11137, 11142, 2]
 
-// Module 14347 (logs)
+// Module 14575 (logs)
 import LoggerDefault from "Logger" /* 3 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9062 */;
-import RPCHelpers from "RPCHelpers" /* 9064 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11137 */;
+import RPCHelpers from "RPCHelpers" /* 11142 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

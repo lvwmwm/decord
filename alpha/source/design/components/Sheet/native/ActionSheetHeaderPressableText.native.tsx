@@ -1,20 +1,20 @@
-// Module ID: 9230
-// Function ID: 9231
+// Module ID: 8538
+// Function ID: 8539
 // Name: ActionSheetHeaderPressableText
-// Dependencies: [21, 4896, 558, 576, 4892, 5916, 2]
+// Dependencies: [21, 5090, 558, 576, 5086, 6189, 2]
 
-// Module 9230 (ActionSheetHeaderPressableText)
+// Module 8538 (ActionSheetHeaderPressableText)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Pressables from "Pressables" /* 5916 */;
-import createStyles from "createStyles" /* 4896 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Pressables from "Pressables" /* 6189 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let closure_3 = createStyles.createStyles(() => ({ container: { marginTop: 3 } }));
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionSheetHeaderPressableText(arg0) {
   let accessibilityLabel;
   let label;
   let onPress;
@@ -53,7 +53,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = tmp6;
   cResult[6] = tmp10;
   tmp9 = tmp10;
-}) : ((onPress) => {
+}) : (function ActionSheetHeaderPressableText(onPress) {
   let accessibilityLabel;
   let label;
   ({ label, accessibilityLabel } = onPress);

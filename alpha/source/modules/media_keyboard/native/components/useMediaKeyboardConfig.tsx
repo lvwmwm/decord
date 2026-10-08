@@ -1,17 +1,17 @@
-// Module ID: 16647
-// Function ID: 16648
+// Module ID: 16909
+// Function ID: 16910
 // Name: useMediaKeyboardConfig
-// Dependencies: [19, 1614, 1085, 558, 576, 7270, 11879, 6782, 9033, 10377, 1985, 2]
+// Dependencies: [19, 1626, 1085, 558, 576, 7870, 11951, 6958, 8488, 9974, 1997, 2]
 
-// Module 16647 (useMediaKeyboardConfig)
+// Module 16909 (useMediaKeyboardConfig)
 import react2 from "react" /* 576 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1614 */;
-import Server from "Server" /* 1985 */;
-import ThreadHooks from "ThreadHooks" /* 6782 */;
-import PollsUtils from "PollsUtils" /* 7270 */;
-import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 9033 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10377 */;
-import useUploadDisabledDefault from "useUploadDisabled" /* 11879 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
+import Server from "Server" /* 1997 */;
+import ThreadHooks from "ThreadHooks" /* 6958 */;
+import PollsUtils from "PollsUtils" /* 7870 */;
+import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 8488 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 9974 */;
+import useUploadDisabledDefault from "useUploadDisabled" /* 11951 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -23,7 +23,7 @@ let hasOwnProperty;
 let metroRequire;
 let MediaKeyboardTarget = MediaKeyboardConstants.MediaKeyboardTarget;
 ({ ChannelTypesSets: hasOwnProperty, MAX_UPLOAD_COUNT: metroRequire } = Constants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaKeyboardConfig(arg0) {
   let channel;
   let context;
   let fileTypes;
@@ -125,7 +125,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
   cResult[3] = target;
   cResult[4] = tmp15;
   tmp14 = tmp15;
-}) : ((arg0) => {
+}) : (function useMediaKeyboardConfig(arg0) {
   let canPostPolls;
   let channel;
   let context;
@@ -135,12 +135,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
   MediaKeyboardTarget = undefined;
   let mediaKeyboardDraftType;
   const tmp = context.target === MediaKeyboardTarget.COMMAND;
-  let obj = context(7270);
+  let obj = context(7870);
   const tmp4 = obj.useCanPostPollsInChannel(channel) && !tmp;
   importDefault = tmp4;
   const tmp5 = useUploadDisabledDefault(channel);
   dependencyMap = tmp5;
-  const tmp2Result = context(6782);
+  const tmp2Result = context(6958);
   let canStartThread = tmp2Result.useCanStartThread(channel);
   if (canStartThread) {
     const GUILD_THREADS_ONLY = mediaKeyboardDraftType.GUILD_THREADS_ONLY;
@@ -152,10 +152,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
   if (canStartThread) {
     canStartThread = !tmp;
   }
-  const tmp2Result3 = context(9033);
+  const tmp2Result3 = context(8488);
   const tmp8 = tmp2Result3.useIsAppLauncherEnabled(channel.id) && !tmp;
   MediaKeyboardTarget = tmp8;
-  const tmp2Result4 = context(10377);
+  const tmp2Result4 = context(9974);
   mediaKeyboardDraftType = tmp2Result4.getMediaKeyboardDraftType(context.target);
   let items = [context, tmp4, tmp5, mediaKeyboardDraftType, canStartThread, tmp8];
   return canStartThread.useMemo(function() {

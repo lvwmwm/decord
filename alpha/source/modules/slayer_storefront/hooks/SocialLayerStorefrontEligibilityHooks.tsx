@@ -1,29 +1,29 @@
-// Module ID: 8479
-// Function ID: 8480
+// Module ID: 8965
+// Function ID: 8966
 // Name: SocialLayerStorefrontEligibilityHooks
-// Dependencies: [19, 8480, 2006, 7124, 2074, 4936, 6743, 558, 576, 8027, 504, 8481, 2]
+// Dependencies: [19, 8966, 2018, 7309, 2086, 5106, 6919, 558, 576, 8435, 504, 8967, 2]
 // Exports: useIsCurrentUserPlayingSocialLayerStorefrontGames
 
-// Module 8479 (SocialLayerStorefrontEligibilityHooks)
+// Module 8965 (SocialLayerStorefrontEligibilityHooks)
 import react2 from "react" /* 576 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8027 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8435 */;
 import react from "react" /* 19 */;
-import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8480 */;
-import RunningGameStore from "RunningGameStore" /* 2006 */;
-import UserProfileStore from "UserProfileStore" /* 7124 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PresenceStore from "PresenceStore" /* 4936 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6743 */;
+import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8966 */;
+import RunningGameStore from "RunningGameStore" /* 2018 */;
+import UserProfileStore from "UserProfileStore" /* 7309 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PresenceStore from "PresenceStore" /* 5106 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6919 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, gamesSeen, userIds;
+let _require, gamesSeen;
 
 let tmp;
 const get_initialized = tmp(504);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds(userIds) {
   let first;
   let tmp7;
   let tmp8;
@@ -42,7 +42,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
     first = cResult[0];
   }
   if (cResult[1] !== userIds) {
-    const fn = function l() {
+    const fn = function s() {
       const items = [];
       const tmp2 = userIds[Symbol.iterator]();
       while (tmp2 !== undefined) {
@@ -83,7 +83,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresArray(first, tmp7, tmp8);
-}) : ((userIds) => {
+}) : (function useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds(userIds) {
   userIds = userIds.userIds;
   let obj = userIds(504);
   let items = [ContentInventoryOutboxStore, SocialLayerStorefrontStore];
@@ -119,7 +119,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAreUsersInSocialLayerStorefrontMutualGuildsApplicationIds(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -174,7 +174,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresArray(first, tmp7, tmp8);
-}) : ((arg0) => {
+}) : (function useAreUsersInSocialLayerStorefrontMutualGuildsApplicationIds(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -205,7 +205,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUsersPlayingStorefrontEnabledGamesApplicationIds(userIds) {
   let first;
   let tmp8;
   let tmp9;
@@ -255,7 +255,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
   }
   const tmp2Result = tmp2(504);
   const stateFromStoresArray = tmp2Result.useStateFromStoresArray(first, tmp8, tmp9);
-  const tmp2Result2 = tmp2(8481);
+  const tmp2Result2 = tmp2(8967);
   const slayerStorefrontDevApplicationIdOverride = tmp2Result2.useSlayerStorefrontDevApplicationIdOverride();
   let tmp12 = stateFromStoresArray;
   if (null != slayerStorefrontDevApplicationIdOverride) {
@@ -274,7 +274,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
     tmp13 = items2;
   }
   return tmp12;
-}) : ((userIds) => {
+}) : (function useUsersPlayingStorefrontEnabledGamesApplicationIds(userIds) {
   userIds = userIds.userIds;
   let stateFromStoresArray;
   let items = [PresenceStore, SocialLayerStorefrontStore];
@@ -315,7 +315,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
 });
 let closure_9 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAreUsersPlayingStorefrontEnabledGames(userIds) {
   let tmp2;
   const obj = react2;
   const cResult = obj.c(2);
@@ -329,12 +329,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
     tmp2 = cResult[1];
   }
   return closure_9(tmp2).length > 0;
-}) : ((userIds) => {
+}) : (function useAreUsersPlayingStorefrontEnabledGames(userIds) {
   const obj = { userIds: userIds.userIds };
   return closure_9(obj).length > 0;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentUserPlayedSocialLayerStorefrontGamesApplicationIds() {
   let tmp4;
   let tmp5;
   const obj = react2;
@@ -368,7 +368,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStoresArray(tmp4, tmp5);
-}) : (() => {
+}) : (function useCurrentUserPlayedSocialLayerStorefrontGamesApplicationIds() {
   let items = [RunningGameStore, SocialLayerStorefrontStore];
   const obj = get_initialized;
   return obj.useStateFromStoresArray(items, () => {
@@ -389,7 +389,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentUserPlayingSocialLayerStorefrontGamesApplicationIds() {
   let tmp4;
   let tmp5;
   let tmp6;
@@ -429,7 +429,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStoresArray(tmp4, tmp5, tmp6);
-}) : (() => {
+}) : (function useCurrentUserPlayingSocialLayerStorefrontGamesApplicationIds() {
   let items = [RunningGameStore, SocialLayerStorefrontStore];
   const obj = get_initialized;
   return obj.useStateFromStoresArray(items, () => {
@@ -456,7 +456,7 @@ let closure_10 = tmp7;
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsCurrentUserInSocialLayerStorefrontGuildsApplicationIds() {
   let guildIds;
   let stateFromStores;
   let tmp10;
@@ -490,7 +490,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[2];
   }
   if (cResult[3] !== stateFromStores) {
-    const fn2 = function s() {
+    const fn2 = function u() {
       const items = [];
       const tmp2 = stateFromStores[Symbol.iterator]();
       while (tmp2 !== undefined) {
@@ -514,7 +514,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult2 = stateFromStores(504);
   return tmpResult2.useStateFromStoresArray(tmp8, tmp10, tmp11);
-}) : (() => {
+}) : (function useIsCurrentUserInSocialLayerStorefrontGuildsApplicationIds() {
   let guildIds;
   let stateFromStores;
   let items = [GuildStore];
@@ -536,7 +536,9 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return items;
   }, items2);
 });
-let fn = () => closure_10().length > 0;
+function useIsCurrentUserPlayingSocialLayerStorefrontGames() {
+  return closure_10().length > 0;
+}
 const result1 = size.fileFinishedImporting("modules/slayer_storefront/hooks/SocialLayerStorefrontEligibilityHooks.tsx");
 
 export const useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds = tmp2;
@@ -545,5 +547,5 @@ export const useUsersPlayingStorefrontEnabledGamesApplicationIds = tmp4;
 export const useAreUsersPlayingStorefrontEnabledGames = tmp5;
 export const useCurrentUserPlayedSocialLayerStorefrontGamesApplicationIds = tmp6;
 export const useCurrentUserPlayingSocialLayerStorefrontGamesApplicationIds = tmp7;
-export const useIsCurrentUserPlayingSocialLayerStorefrontGames = fn;
+export { useIsCurrentUserPlayingSocialLayerStorefrontGames };
 export const useIsCurrentUserInSocialLayerStorefrontGuildsApplicationIds = tmp9;

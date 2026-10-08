@@ -1,13 +1,13 @@
-// Module ID: 5848
-// Function ID: 5849
+// Module ID: 8163
+// Function ID: 8164
 // Name: useShowMemberVerificationGate
-// Dependencies: [2112, 2074, 1377, 5849, 558, 576, 504, 2]
+// Dependencies: [2124, 2086, 1389, 6175, 558, 576, 504, 2]
 
-// Module 5848 (useShowMemberVerificationGate)
-import MemberVerificationUtils from "MemberVerificationUtils" /* 5849 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import UserStore from "UserStore" /* 1377 */;
+// Module 8163 (useShowMemberVerificationGate)
+import MemberVerificationUtils from "MemberVerificationUtils" /* 6175 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ function shouldShowMembershipVerificationGate(guildId, items) {
     return flag;
   }
 }
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowMemberVerificationGate(arg0) {
   let closure_0;
   let first;
   let tmp8;
@@ -88,7 +88,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp8, tmp9);
-}) : ((arg0) => {
+}) : (function useShowMemberVerificationGate(arg0) {
   let closure_0;
   _require = arg0;
   let items = [GuildStore, UserStore, GuildMemberStore];

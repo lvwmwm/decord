@@ -1,20 +1,18 @@
-// Module ID: 13725
-// Function ID: 13726
+// Module ID: 13947
+// Function ID: 13948
 // Name: useFilteredGuilds
-// Dependencies: [19, 2074, 5623, 1377, 558, 576, 504, 38, 2]
+// Dependencies: [19, 2086, 5968, 1389, 558, 576, 504, 38, 2]
 
-// Module 13725 (useFilteredGuilds)
+// Module 13947 (useFilteredGuilds)
 import _modDef38 from "module_38" /* 38 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import SortedGuildStore from "SortedGuildStore" /* 5623 */;
-import UserStore from "UserStore" /* 1377 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import SortedGuildStore from "SortedGuildStore" /* 5968 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let isGuildIncluded;
-
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGuildIncluded) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFilteredGuilds(isGuildIncluded) {
   let currentUser;
   let flattenedGuildIds;
   let guilds;
@@ -186,7 +184,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGuildIncluded) =
   cResult[17] = tmp16;
   cResult[18] = undefined;
   cResult[19] = obj2;
-}) : ((isGuildIncluded) => {
+}) : (function useFilteredGuilds(isGuildIncluded) {
   let currentUser;
   let flattenedGuildIds;
   let guilds;

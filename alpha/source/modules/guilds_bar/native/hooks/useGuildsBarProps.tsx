@@ -1,45 +1,45 @@
-// Module ID: 16272
-// Function ID: 16273
+// Module ID: 16532
+// Function ID: 16533
 // Name: useGuildsBarProps
-// Dependencies: [19, 5443, 4516, 6734, 6735, 13572, 5625, 2112, 2074, 13580, 4705, 5623, 16265, 16262, 21, 16273, 16287, 16288, 16291, 16296, 16323, 16326, 16327, 16328, 16330, 16331, 16332, 16333, 16335, 558, 576, 4586, 587, 1618, 14908, 14917, 15160, 13666, 504, 16337, 16338, 5777, 1484, 16340, 6576, 2]
+// Dependencies: [19, 5753, 4708, 6060, 6061, 13865, 5970, 2124, 2086, 13873, 4899, 5968, 16525, 16522, 21, 16533, 16547, 16548, 16551, 16556, 16583, 16586, 16587, 16588, 16590, 16591, 16592, 16593, 16595, 558, 576, 4778, 587, 1630, 15170, 15179, 15422, 6080, 504, 16597, 16598, 5360, 1496, 16600, 6752, 2]
 
-// Module 16272 (useGuildsBarProps)
+// Module 16532 (useGuildsBarProps)
 import Fragment from "Fragment" /* 21 */;
-import useWindowDimensions from "useWindowDimensions" /* 1484 */;
-import SortedGuildStore2 from "SortedGuildStore" /* 5623 */;
-import GuildsBarGuildFolderDefault from "GuildsBarGuildFolder" /* 16273 */;
-import GuildsBarPendingGuildFolderDefault from "GuildsBarPendingGuildFolder" /* 16287 */;
-import GuildsBarMessagesDefault from "GuildsBarMessages" /* 16288 */;
-import GuildsBarFavoritesDefault from "GuildsBarFavorites" /* 16291 */;
-import GuildsBarGuildDefault from "GuildsBarGuild" /* 16296 */;
-import GuildsBarDirectMessageDefault from "GuildsBarDirectMessage" /* 16323 */;
-import GuildsBarSeparatorDefault from "GuildsBarSeparator" /* 16326 */;
-import GuildsBarPendingGuildDefault from "GuildsBarPendingGuild" /* 16327 */;
-import GuildsBarGeoRestrictedGuildDefault from "GuildsBarGeoRestrictedGuild" /* 16328 */;
-import GuildsBarFooterWrapperDefault from "GuildsBarFooterWrapper" /* 16330 */;
+import useWindowDimensions from "useWindowDimensions" /* 1496 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 5968 */;
+import GuildsBarGuildFolderDefault from "GuildsBarGuildFolder" /* 16533 */;
+import GuildsBarPendingGuildFolderDefault from "GuildsBarPendingGuildFolder" /* 16547 */;
+import GuildsBarMessagesDefault from "GuildsBarMessages" /* 16548 */;
+import GuildsBarFavoritesDefault from "GuildsBarFavorites" /* 16551 */;
+import GuildsBarGuildDefault from "GuildsBarGuild" /* 16556 */;
+import GuildsBarDirectMessageDefault from "GuildsBarDirectMessage" /* 16583 */;
+import GuildsBarSeparatorDefault from "GuildsBarSeparator" /* 16586 */;
+import GuildsBarPendingGuildDefault from "GuildsBarPendingGuild" /* 16587 */;
+import GuildsBarGeoRestrictedGuildDefault from "GuildsBarGeoRestrictedGuild" /* 16588 */;
+import GuildsBarFooterWrapperDefault from "GuildsBarFooterWrapper" /* 16590 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5443 */;
-import LurkingStore from "LurkingStore" /* 4516 */;
-import MessageRequestStore from "MessageRequestStore" /* 6734 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6735 */;
-import GeoRestrictedGuildStore from "GeoRestrictedGuildStore" /* 13572 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5625 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PrivateChannelReadStateStore_mod from "PrivateChannelReadStateStore" /* 13580 */;
-import SelectedGuildStore_mod from "SelectedGuildStore" /* 4705 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16265 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 16262 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5753 */;
+import LurkingStore from "LurkingStore" /* 4708 */;
+import MessageRequestStore from "MessageRequestStore" /* 6060 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6061 */;
+import GeoRestrictedGuildStore from "GeoRestrictedGuildStore" /* 13865 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5970 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PrivateChannelReadStateStore_mod from "PrivateChannelReadStateStore" /* 13873 */;
+import SelectedGuildStore_mod from "SelectedGuildStore" /* 4899 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16525 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 16522 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const SortedGuildStore = SortedGuildStore2;
-let _require, importDefault;
+let _require, importDefault, version;
 
 let closure_17;
 let closure_18;
-const f123724 = (item) => {
+const f124898 = (item) => {
   if ("unavailable-guilds" === item) {
     return closure_1_19(itemSize(itemMargin[25]), {}, item);
   } else if ("empty-nux" === item) {
@@ -464,7 +464,7 @@ const GuildsNodeType = SortedGuildStore2.GuildsNodeType;
 ({ FastListRenderSections: closure_17, useGuildWrapperSize: closure_18 } = GuildsBarConstants);
 const jsx = Fragment.jsx;
 const constants2 = { MESSAGES: "section-messages", FAVORITES: "section-favorites", PENDING_JOIN_REQUESTS: "section-pending-join-requests", LURKING_GUILDS: "section-lurking-guilds", GUEST_GUILDS: "section-guest-guilds", UNREAD_PRIVATE_CHANNELS: "section-private-channels", SEPARATOR: "section-separator", GUILDS: "section-guilds" };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildsBarProps(arg0) {
   let guildsNFolders;
   let itemSize;
   let pendingFolderNode;
@@ -569,8 +569,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp22 = cResult[8];
         tmp23 = cResult[9];
       }
-      const tmpResult8 = tmp(token[38]);
-      const stateFromStores = tmpResult8.useStateFromStores(tmp22, tmp23);
+      const tmpResult9 = tmp(token[38]);
+      const stateFromStores = tmpResult9.useStateFromStores(tmp22, tmp23);
       const _Symbol3 = Symbol;
       if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
         const items3 = [stateFromStores1];
@@ -594,8 +594,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp26 = cResult[10];
         tmp27 = cResult[11];
       }
-      const tmpResult9 = tmp(token[38]);
-      stateFromStoresArray1 = tmpResult9.useStateFromStoresArray(tmp26, tmp27);
+      const tmpResult10 = tmp(token[38]);
+      stateFromStoresArray1 = tmpResult10.useStateFromStoresArray(tmp26, tmp27);
       const _Symbol4 = Symbol;
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
         const items4 = [youBarTotalHeight];
@@ -619,8 +619,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp30 = cResult[12];
         tmp31 = cResult[13];
       }
-      const tmpResult10 = tmp(token[38]);
-      stateFromStores1 = tmpResult10.useStateFromStores(tmp31, tmp30);
+      const tmpResult11 = tmp(token[38]);
+      stateFromStores1 = tmpResult11.useStateFromStores(tmp31, tmp30);
       const _Symbol5 = Symbol;
       if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
         const items5 = [pendingFolderNode, ];
@@ -630,12 +630,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         items5[1] = guildsNFolders;
-        class B {
-          constructor() {
-            guildIds = pendingFolderNode.getGuildIds();
-            return guildIds.filter((item) => currentUserGuest.isCurrentUserGuest(item));
-          }
-        }
+        const fn2 = function q() {
+          let currentUserGuest;
+          const guildIds = pendingFolderNode.getGuildIds();
+          return guildIds.filter((item) => currentUserGuest.isCurrentUserGuest(item));
+        };
         class C {
           constructor() {
             unreadPrivateChannelIds = unreadPrivateChannelIds.getUnreadPrivateChannelIds();
@@ -644,15 +643,15 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             return obj.filterOutMessageRequestsAndSpamById(unreadPrivateChannelIds, items);
           }
         }
-        cResult[15] = B;
-        tmp35 = B;
+        cResult[15] = fn2;
+        tmp35 = fn2;
         tmp34 = items5;
       } else {
         tmp34 = cResult[14];
         tmp35 = cResult[15];
       }
-      const tmpResult11 = tmp(token[38]);
-      const stateFromStoresArray2 = tmpResult11.useStateFromStoresArray(tmp34, tmp35);
+      const tmpResult12 = tmp(token[38]);
+      const stateFromStoresArray2 = tmpResult12.useStateFromStoresArray(tmp34, tmp35);
       const _Symbol6 = Symbol;
       if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
         const items6 = [SortedGuildStore];
@@ -663,12 +662,6 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         const items7 = [];
-        class B {
-          constructor() {
-            guildIds = pendingFolderNode.getGuildIds();
-            return guildIds.filter((item) => currentUserGuest.isCurrentUserGuest(item));
-          }
-        }
         cResult[16] = items6;
         class C {
           constructor() {
@@ -688,10 +681,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp38 = cResult[17];
         tmp39 = cResult[18];
       }
-      const tmpResult12 = tmp(token[38]);
-      const stateFromStores2 = tmpResult12.useStateFromStores(tmp37, tmp38, tmp39, tmp5(tmp2[39]));
+      const tmpResult13 = tmp(token[38]);
+      const stateFromStores2 = tmpResult13.useStateFromStores(tmp37, tmp38, tmp39, tmp5(tmp2[39]));
       guildsNFolders = stateFromStores2.guildsNFolders;
-      const version = stateFromStores2.version;
+      version = stateFromStores2.version;
       const tmp46 = tmp5(token[40])();
       pendingFolderNode = tmp46.pendingFolderNode;
       const _Symbol7 = Symbol;
@@ -704,12 +697,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             return obj;
           }
         }
-        class B {
-          constructor() {
-            guildIds = pendingFolderNode.getGuildIds();
-            return guildIds.filter((item) => currentUserGuest.isCurrentUserGuest(item));
-          }
-        }
+        cResult[19] = items8;
         class C {
           constructor() {
             unreadPrivateChannelIds = unreadPrivateChannelIds.getUnreadPrivateChannelIds();
@@ -724,10 +712,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp47 = cResult[19];
         tmp48 = cResult[20];
       }
-      const tmpResult13 = tmp(token[38]);
-      const stateFromStores3 = tmpResult13.useStateFromStores(tmp47, tmp48);
-      const tmpResult14 = tmp(token[41]);
-      const tmp52 = !tmpResult14.useIsScreenReaderEnabled();
+      const tmpResult14 = tmp(token[38]);
+      const stateFromStores3 = tmpResult14.useStateFromStores(tmp47, tmp48);
+      const tmpResult15 = tmp(token[41]);
+      const tmp52 = !tmpResult15.useIsScreenReaderEnabled();
       let result = 3 * token;
       if (youBarTotalHeight > 0) {
         diff = youBarTotalHeight - 16;
@@ -736,6 +724,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[21] === result) {
         let tmp55;
+        let tmp57;
         if (cResult[22] === diff) {
           tmp55 = cResult[23];
         }
@@ -746,11 +735,18 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             return obj;
           }
         }
-        class B {
-          constructor() {
-            guildIds = pendingFolderNode.getGuildIds();
-            return guildIds.filter((item) => currentUserGuest.isCurrentUserGuest(item));
+        if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
+          const tmpResult16 = tmp(token[42]);
+          const windowDimensions = tmpResult16.getWindowDimensions();
+          class Y {
+            constructor() {
+              const obj = { guildsNFolders: SortedGuildStore.getFastListGuildFolders(), version: SortedGuildStore.getGuildsTree().version };
+              return obj;
+            }
           }
+          tmp57 = windowDimensions;
+        } else {
+          tmp57 = cResult[24];
         }
         if (cResult[25] === top) {
           if (cResult[26] === tmp52) {
@@ -818,12 +814,6 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     if (null != guildId) {
                       tmp68 = findGuildSectionIndex(guildId);
                     }
-                    class B {
-                      constructor() {
-                        guildIds = pendingFolderNode.getGuildIds();
-                        return guildIds.filter((item) => currentUserGuest.isCurrentUserGuest(item));
-                      }
-                    }
                     cResult[34] = tmp68;
                     class C {
                       constructor() {
@@ -834,12 +824,6 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       }
                     }
                   }
-                  class B {
-                    constructor() {
-                      guildIds = pendingFolderNode.getGuildIds();
-                      return guildIds.filter((item) => currentUserGuest.isCurrentUserGuest(item));
-                    }
-                  }
                   class C {
                     constructor() {
                       unreadPrivateChannelIds = unreadPrivateChannelIds.getUnreadPrivateChannelIds();
@@ -848,13 +832,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       return obj.filterOutMessageRequestsAndSpamById(unreadPrivateChannelIds, items);
                     }
                   }
-                  let num32 = 0;
+                  let num35 = 0;
                   if (null != pendingFolderNode) {
-                    let num33 = 1;
+                    let num36 = 1;
                     if (expanded) {
-                      num33 = pendingFolderNode.children.length;
+                      num36 = pendingFolderNode.children.length;
                     }
-                    num32 = num33;
+                    num35 = num36;
                   }
                   const _Math = Math;
                   const length = stateFromStores1.length;
@@ -865,17 +849,17 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       if (cResult[38] === stateFromStoresArray2.length) {
                         if (cResult[39] === guildsNFolders) {
                           if (cResult[40] === stateFromStores1.length) {
-                            if (cResult[41] === num32) {
-                              let tmp72;
+                            if (cResult[41] === num35) {
+                              let tmp73;
                               if (cResult[42] === bound) {
-                                tmp72 = cResult[43];
+                                tmp73 = cResult[43];
                               }
                               if (cResult[44] === guildsNFolders) {
                                 if (cResult[45] === stateFromStores) {
                                   if (cResult[46] === stateFromStores3) {
                                     SelectedGuildStore = cResult[47];
                                   }
-                                  if (cResult[48] === tmp83) {
+                                  if (cResult[48] === tmp84) {
                                     if (cResult[49] === stateFromStoresArray1) {
                                       if (cResult[50] === stateFromStoresArray2) {
                                         if (cResult[51] === token) {
@@ -884,18 +868,18 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                               if (cResult[54] === stateFromStores1) {
                                                 if (cResult[55] === pendingFolderNode) {
                                                   if (cResult[56] === stateFromStoresArray) {
-                                                    let tmp88;
-                                                    if (cResult[57] === tmp72) {
-                                                      tmp88 = cResult[58];
+                                                    let tmp89;
+                                                    if (cResult[57] === tmp73) {
+                                                      tmp89 = cResult[58];
                                                     }
-                                                    if (cResult[59] === tmp88) {
-                                                      let tmp90;
+                                                    if (cResult[59] === tmp89) {
+                                                      let tmp92;
                                                       if (cResult[60] === tmp59) {
-                                                        tmp90 = cResult[61];
+                                                        tmp92 = cResult[61];
                                                       }
-                                                      return tmp90;
+                                                      return tmp92;
                                                     }
-                                                    const obj5 = { listProps: null, listDataProps: tmp88 };
+                                                    const obj5 = { listProps: null, listDataProps: tmp89 };
                                                     class Ee {
                                                       constructor(guildId, arg1) {
                                                         if (null != guildId) {
@@ -918,13 +902,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                                         }
                                                       }
                                                     }
-                                                    class B {
-                                                      constructor() {
-                                                        guildIds = pendingFolderNode.getGuildIds();
-                                                        return guildIds.filter((item) => currentUserGuest.isCurrentUserGuest(item));
-                                                      }
-                                                    }
-                                                    cResult[59] = tmp88;
+                                                    cResult[59] = tmp89;
                                                     class C {
                                                       constructor() {
                                                         unreadPrivateChannelIds = unreadPrivateChannelIds.getUnreadPrivateChannelIds();
@@ -935,7 +913,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                                     }
                                                     cResult[60] = tmp59;
                                                     cResult[61] = obj5;
-                                                    tmp90 = obj5;
+                                                    tmp92 = obj5;
                                                   }
                                                 }
                                               }
@@ -946,7 +924,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                     }
                                   }
                                   const obj6 = {
-                                    sections: tmp72,
+                                    sections: tmp73,
                                     itemSize(section, row) {
                                                                       const obj = { section, row, guildsNFolders, pendingFolderNode, privateChannelIds: stateFromStoresArray, geoRestrictedGuilds: stateFromStoresArray1, itemSize, itemMargin: token };
                                                                       return getItemSize(obj);
@@ -980,7 +958,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                                                     },
                                     renderFooter() {
                                                                       GuildsBarFooterWrapperDefault;
-                                                                      return <tmp>{closure_13.map(f123724)}</tmp>;
+                                                                      return <tmp>{closure_13.map(f124898)}</tmp>;
                                                                     },
                                     getRecyclerKey(arg0, arg1, arg2) {
                                                                       if (arg1 >= constants.GUILDS) {
@@ -1038,12 +1016,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                       }
                                     }
                                   }
-                                  class B {
-                                    constructor() {
-                                      guildIds = pendingFolderNode.getGuildIds();
-                                      return guildIds.filter((item) => currentUserGuest.isCurrentUserGuest(item));
-                                    }
-                                  }
+                                  let merged = Object.assign(tmp71);
                                   class C {
                                     constructor() {
                                       unreadPrivateChannelIds = unreadPrivateChannelIds.getUnreadPrivateChannelIds();
@@ -1052,7 +1025,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                       return obj.filterOutMessageRequestsAndSpamById(unreadPrivateChannelIds, items);
                                     }
                                   }
-                                  cResult[48] = tmp83;
+                                  cResult[48] = tmp84;
                                   cResult[49] = stateFromStoresArray1;
                                   cResult[50] = stateFromStoresArray2;
                                   cResult[51] = token;
@@ -1061,9 +1034,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                   cResult[54] = stateFromStores1;
                                   cResult[55] = pendingFolderNode;
                                   cResult[56] = stateFromStoresArray;
-                                  cResult[57] = tmp72;
+                                  cResult[57] = tmp73;
                                   cResult[58] = obj6;
-                                  tmp88 = obj6;
+                                  tmp89 = obj6;
                                 }
                               }
                               const items9 = [];
@@ -1092,13 +1065,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                               if (stateFromStores3 > 0) {
                                 items9.push("unavailable-guilds");
                               }
-                              class B {
-                                constructor() {
-                                  guildIds = pendingFolderNode.getGuildIds();
-                                  return guildIds.filter((item) => currentUserGuest.isCurrentUserGuest(item));
-                                }
-                              }
-                              if (tmp85) {
+                              const tmp86 = stateFromStores && 0 === guildsNFolders.length && 0 === stateFromStores3;
+                              if (tmp86) {
                                 items9.push("empty-nux");
                               }
                               class C {
@@ -1120,12 +1088,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       }
                     }
                   }
-                  const items10 = [1, num2, num32, length, length2, bound, 1];
+                  const items10 = [1, num2, num35, length, length2, bound, 1];
                   for (const item10298 of guildsNFolders) {
                     let element = item10298;
                     if (item10298.type === GuildsNodeType.GUILD) {
                       let arr4 = items10.push(1);
-                    } else if (element.type === tmp75.FOLDER) {
+                    } else if (element.type === tmp76.FOLDER) {
                       let push = items10.push;
                       if (element.expanded) {
                         let arr5 = push(element.children.length);
@@ -1143,10 +1111,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   cResult[38] = stateFromStoresArray2.length;
                   cResult[39] = guildsNFolders;
                   cResult[40] = stateFromStores1.length;
-                  cResult[41] = num32;
+                  cResult[41] = num35;
                   cResult[42] = bound;
                   cResult[43] = items10;
-                  tmp72 = items10;
+                  tmp73 = items10;
                 }
               }
               class Ee {
@@ -1171,12 +1139,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   }
                 }
               }
-              class B {
-                constructor() {
-                  guildIds = pendingFolderNode.getGuildIds();
-                  return guildIds.filter((item) => currentUserGuest.isCurrentUserGuest(item));
-                }
-              }
+              cResult[30] = arg0;
               class C {
                 constructor() {
                   unreadPrivateChannelIds = unreadPrivateChannelIds.getUnreadPrivateChannelIds();
@@ -1203,7 +1166,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp60[1] = tmp55;
         tmp60[2] = top;
         tmp60[3] = sum;
-        tmp60[4] = tmp58.height;
+        tmp60[4] = tmp57.height;
         cResult[25] = top;
         cResult[26] = tmp52;
         cResult[27] = tmp55;
@@ -1231,7 +1194,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = items11;
   tmp12 = items11;
   tmp11 = fn;
-}) : ((arg0) => {
+}) : (function useGuildsBarProps(arg0) {
   let closure_1;
   let guildsNFolders;
   let isScreenReaderEnabled;
@@ -1296,7 +1259,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return obj;
   }, [], tmp4(tmp3[39]));
   guildsNFolders = stateFromStores2.guildsNFolders;
-  const version = stateFromStores2.version;
+  version = stateFromStores2.version;
   const tmp16 = tmp4(tmp3[40])();
   const expanded = tmp16.expanded;
   const pendingFolderNode = tmp16.pendingFolderNode;
@@ -1462,7 +1425,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         },
         renderFooter() {
           GuildsBarFooterWrapperDefault;
-          return <tmp>{items1.map(f123724)}</tmp>;
+          return <tmp>{items1.map(f124898)}</tmp>;
         },
         getRecyclerKey(arg0, arg1, arg2) {
           if (arg1 >= stateFromStores3.GUILDS) {

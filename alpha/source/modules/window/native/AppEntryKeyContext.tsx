@@ -1,9 +1,9 @@
-// Module ID: 1487
-// Function ID: 1488
+// Module ID: 1499
+// Function ID: 1500
 // Name: AppEntryKeyContext
 // Dependencies: [19, 3, 558, 576, 2]
 
-// Module 1487 (AppEntryKeyContext)
+// Module 1499 (AppEntryKeyContext)
 import LoggerDefault from "Logger" /* 3 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -14,7 +14,7 @@ const main = "main";
 const tmp2 = new LoggerDefault("AppEntryKeyContext");
 let context = react.createContext(undefined);
 let c6 = false;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppEntryKey() {
   let logger;
   let tmp3;
   let tmp4;
@@ -45,7 +45,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     context = main;
   }
   return context;
-}) : (() => {
+}) : (function useAppEntryKey() {
   let logger;
   context = react.useContext(context);
   const items = [context];

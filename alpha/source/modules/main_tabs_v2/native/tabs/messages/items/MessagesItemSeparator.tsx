@@ -1,15 +1,15 @@
-// Module ID: 16059
-// Function ID: 16060
+// Module ID: 16319
+// Function ID: 16320
 // Name: MessagesItemSeparator
-// Dependencies: [19, 17, 21, 587, 4896, 558, 576, 2]
+// Dependencies: [19, 17, 21, 587, 5090, 558, 576, 2]
 
-// Module 16059 (MessagesItemSeparator)
+// Module 16319 (MessagesItemSeparator)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ obj2 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, height: StyleSheet
 createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_4 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemSeperator() {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(5);
@@ -50,7 +50,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   cResult[3] = tmp3;
   cResult[4] = tmp8;
   tmp7 = tmp8;
-}) : (() => {
+}) : (function MessagesItemSeperator() {
   const tmp = closure_4();
   return <React2 style={tmp.container} collapsable={false}>{null}</React2>;
 }));

@@ -1,25 +1,25 @@
-// Module ID: 11836
-// Function ID: 11837
+// Module ID: 11921
+// Function ID: 11922
 // Name: PortalKeyboardBottomSheet
-// Dependencies: [32, 19, 17, 9625, 21, 1369, 4896, 587, 8602, 558, 576, 5777, 4618, 11837, 4595, 6655, 11838, 504, 6119, 4861, 11839, 1881, 5597, 4586, 1618, 1484, 4758, 4738, 5774, 9906, 6543, 2]
+// Dependencies: [32, 19, 17, 9645, 21, 1381, 5090, 587, 8517, 558, 576, 5360, 4810, 11922, 4787, 6832, 11923, 504, 6298, 5055, 6077, 1893, 5392, 4778, 1630, 1496, 4952, 4932, 5357, 9387, 6719, 2]
 
-// Module 11836 (PortalKeyboardBottomSheet)
+// Module 11921 (PortalKeyboardBottomSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1881 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import HapticUtils from "HapticUtils" /* 4861 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5777 */;
-import BottomSheetModal from "BottomSheetModal" /* 6119 */;
-import native from "native" /* 8602 */;
-import isChannelFocused from "isChannelFocused" /* 11839 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1893 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import HapticUtils from "HapticUtils" /* 5055 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5360 */;
+import isChannelFocused from "isChannelFocused" /* 6077 */;
+import BottomSheetModal from "BottomSheetModal" /* 6298 */;
+import native from "native" /* 8517 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import NativeMenuStore from "NativeMenuStore" /* 9625 */;
+import NativeMenuStore from "NativeMenuStore" /* 9645 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ size = { borderTopLeftRadius: nativeDefault.radii.none, borderTopRightRadius: na
 obj3 = { marginBottom: -nativeDefault.space.PX_8 };
 let closure_10 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function PortalKeyboardBottomSheetHeader(arg0) {
   let handleCollapse;
   let style;
   const obj = react2;
@@ -93,7 +93,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = prop;
   cResult[3] = items;
   tmp6 = items;
-}) : ((arg0) => {
+}) : (function PortalKeyboardBottomSheetHeader(arg0) {
   let handleCollapse;
   let style;
   ({ style, handleCollapse } = arg0);
@@ -111,7 +111,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroImportDefault(tmp5, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PortalKeyboardBackground(arg0) {
   let pointerEvents;
   let roundingStyle;
   let style;
@@ -146,7 +146,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tmp3.background;
   cResult[3] = items;
   tmp4 = items;
-}) : ((arg0) => {
+}) : (function PortalKeyboardBackground(arg0) {
   let items;
   let pointerEvents;
   let roundingStyle;
@@ -170,7 +170,7 @@ const __initData4 = { code: "function PortalKeyboardBottomSheetTsx10(){const{int
 const __initData5 = { code: "function PortalKeyboardBottomSheetTsx11(){const{animatedIndex}=this.__closure;return Math.max(animatedIndex.get(),0)>0;}" };
 const __initData6 = { code: "function PortalKeyboardBottomSheetTsx12(result,previous){const{runOnJS,setAccessibilityViewIsModal}=this.__closure;if(result===previous)return;runOnJS(setAccessibilityViewIsModal)(result);}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((animatedIndex, arg1) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PortalKeyboardBottomSheet(animatedIndex) {
   let animatedPosition;
   let animationConfigs;
   let backdropComponent;
@@ -188,6 +188,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   let rendersHandle;
   let roundingStyle;
   let roundingViewStyle;
+  let transitionState;
   let width;
   let tmp = animatedIndex;
   let tmp2 = onClose;
@@ -200,7 +201,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   ({ disableHeaderRoundingAnimation, roundingViewStyle, onAnimate } = animatedIndex);
   ({ rendersHandle, width, forceMaxHeight, enablePanDownToClose, renderExpressionFooter } = animatedIndex);
   let tmp4 = undefined !== isAppsKeyboard;
-  const transitionState = animatedIndex.transitionState;
+  ({ transitionState, ref } = animatedIndex);
   if (tmp4) {
     tmp4 = isAppsKeyboard;
   }
@@ -209,20 +210,20 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   let closure_7 = tmp5;
   let tmp7 = closure_10();
   let obj2 = onAnimate;
-  ref = onAnimate.useRef(null);
+  const ref1 = onAnimate.useRef(null);
   if (cResult[0] === (undefined !== enablePanDownToClose && enablePanDownToClose)) {
     let tmp9;
-    let tmp16;
     let tmp15;
+    let tmp14;
     if (cResult[1] === (undefined !== forceMaxHeight && forceMaxHeight)) {
       tmp9 = cResult[2];
     }
-    const tmp12 = chatInputRef(tmp2[13])(tmp9);
-    const tmp13 = transitionState === tmp(tmp2[14]).TransitionStates.YEETED;
-    closure_9 = tmp13;
+    const tmp11 = chatInputRef(tmp2[13])(tmp9);
+    const tmp12 = transitionState === tmp(tmp2[14]).TransitionStates.YEETED;
+    closure_9 = tmp12;
     const tmpResult = tmp(tmp2[15]);
-    const bottomSheetImperativeHandle = tmpResult.useBottomSheetImperativeHandle(arg1, ref);
-    if (cResult[3] !== tmp13) {
+    const bottomSheetImperativeHandle = tmpResult.useBottomSheetImperativeHandle(ref, ref1);
+    if (cResult[3] !== tmp12) {
       class W {
         constructor() {
           tmp = closure_9;
@@ -237,12 +238,12 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
           return;
         }
       }
-      let items = [ref, tmp13];
-      cResult[3] = tmp13;
+      let items = [ref1, tmp12];
+      cResult[3] = tmp12;
       cResult[4] = W;
       cResult[5] = items;
-      tmp16 = items;
-      tmp15 = W;
+      tmp15 = items;
+      tmp14 = W;
     } else {
       class W {
         constructor() {
@@ -258,9 +259,9 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
           return;
         }
       }
-      tmp16 = cResult[5];
+      tmp15 = cResult[5];
     }
-    const layoutEffect = obj2.useLayoutEffect(tmp15, tmp16);
+    const layoutEffect = obj2.useLayoutEffect(tmp14, tmp15);
     if (cResult[6] === animatedIndex) {
       class W {
         constructor() {
@@ -277,21 +278,20 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
         }
       }
     }
-    let obj3 = { animatedIndex, bottomSheetRef: ref, containerHeight: tmp12.containerHeight, forceMaxHeight: tmp5, isYeeted: tmp13, snapPoints: tmp12.snapPoints };
+    let obj3 = { animatedIndex, bottomSheetRef: ref1, containerHeight: tmp11.containerHeight, forceMaxHeight: tmp5, isYeeted: tmp12, snapPoints: tmp11.snapPoints };
     cResult[6] = animatedIndex;
-    cResult[7] = tmp12.containerHeight;
-    cResult[8] = tmp12.snapPoints;
+    cResult[7] = tmp11.containerHeight;
+    cResult[8] = tmp11.snapPoints;
     cResult[9] = undefined !== forceMaxHeight && forceMaxHeight;
-    cResult[10] = tmp13;
+    cResult[10] = tmp12;
     cResult[11] = obj3;
-    const tmp18 = obj3;
   }
   const obj4 = { forceMaxHeight: undefined !== forceMaxHeight && forceMaxHeight, enablePanDownToClose: undefined !== enablePanDownToClose && enablePanDownToClose };
   cResult[0] = undefined !== enablePanDownToClose && enablePanDownToClose;
   cResult[1] = undefined !== forceMaxHeight && forceMaxHeight;
   cResult[2] = obj4;
   tmp9 = obj4;
-}) : ((animatedIndex, arg1) => {
+}) : (function PortalKeyboardBottomSheet(animatedIndex) {
   let AccessibilityViewAnimated;
   let View;
   let animatedPosition;
@@ -348,27 +348,28 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   let token;
   let animatedStyle;
   closure_14 = undefined;
+  ref = animatedIndex.ref;
   let tmp = isScreenReaderEnabled();
   let obj = headerStyle;
-  ref = headerStyle.useRef(null);
+  const ref1 = headerStyle.useRef(null);
   let tmp3 = chatInputRef;
   const tmp4 = flag;
   const tmp5 = chatInputRef(flag[13])({ forceMaxHeight, enablePanDownToClose: flag2 });
   let tmp7 = transitionState === animatedIndex(flag[14]).TransitionStates.YEETED;
   closure_9 = tmp7;
   let obj2 = animatedIndex(flag[15]);
-  const bottomSheetImperativeHandle = obj2.useBottomSheetImperativeHandle(arg1, ref);
-  let items = [ref, tmp7];
+  const bottomSheetImperativeHandle = obj2.useBottomSheetImperativeHandle(ref, ref1);
+  let items = [ref1, tmp7];
   const layoutEffect = headerStyle.useLayoutEffect(() => {
     const tmp = closure_9;
     if (tmp) {
-      const current = ref.current;
+      const current = ref1.current;
       if (current != null) {
         current.forceClose();
       }
     }
   }, items);
-  let obj3 = { animatedIndex, bottomSheetRef: ref, containerHeight: tmp5.containerHeight, forceMaxHeight, isYeeted: tmp7, snapPoints: tmp5.snapPoints };
+  let obj3 = { animatedIndex, bottomSheetRef: ref1, containerHeight: tmp5.containerHeight, forceMaxHeight, isYeeted: tmp7, snapPoints: tmp5.snapPoints };
   chatInputRef(flag[16])(obj3);
   let items1 = [rendersHandle];
   const obj4 = animatedIndex(flag[17]);
@@ -454,7 +455,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
       tmp();
     }
   });
-  const items3 = [headerStyle, ref, rendersHandle, derivedValue, isScreenReaderEnabled];
+  const items3 = [headerStyle, ref1, rendersHandle, derivedValue, isScreenReaderEnabled];
   const callback1 = obj.useCallback((arg0) => {
     const obj = { pressBehavior: "collapse" };
     const BottomSheetBackdrop = animatedIndex(flag[18]).BottomSheetBackdrop;
@@ -531,12 +532,12 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   const tmp26 = onClose(obj.useState(false), 2);
   closure_14 = tmp28;
   const first = tmp26[0];
-  function ne() {
+  function te() {
     return Math.max(animatedIndex.get(), 0) > 0;
   }
-  ne.__closure = { animatedIndex };
-  ne.__workletHash = 3058608499945;
-  ne.__initData = __initData5;
+  te.__closure = { animatedIndex };
+  te.__workletHash = 3058608499945;
+  te.__initData = __initData5;
   function ee(arg0, arg1) {
     if (arg0 !== arg1) {
       const obj = ReanimatedRexport;
@@ -548,12 +549,12 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   ee.__workletHash = 15997614745643;
   ee.__initData = __initData6;
   ({ runOnJS: animatedIndex(tmp4[12]).runOnJS, setAccessibilityViewIsModal: tmp26[1] });
-  const animatedReaction1 = tmp6Result11.useAnimatedReaction(ne, ee);
+  const animatedReaction1 = tmp6Result11.useAnimatedReaction(te, ee);
   const obj8 = { gradient: tmp3(tmp4[27])(), children: tmp33(View, obj9) };
   const ThemeContextProvider = tmp6(tmp4[14]).ThemeContextProvider;
   let str;
   View = tmp3(tmp4[12]).View;
-  tmp33 = ref;
+  tmp33 = ref1;
   if (stateFromStores) {
     str = "no-hide-descendants";
   }
@@ -566,7 +567,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   }
   size = { width: min(width, width2 - left - right), height };
   items5[2] = size;
-  const obj10 = { ref, animatedIndex, animatedPosition, animationConfigs, onClose, onAnimate: callback, enableContentPanningGesture: !(isScreenReaderEnabled || tmp7), enableHandlePanningGesture: !(isScreenReaderEnabled || tmp7), handleComponent: callback2, renderFooter: tmp35, backgroundComponent: callback3, backgroundStyle: tmp.background, backdropComponent, activeOffsetY: [-10, 10], handleHeight: num, children: forceMaxHeight(AccessibilityViewAnimated, obj11) };
+  const obj10 = { ref: ref1, animatedIndex, animatedPosition, animationConfigs, onClose, onAnimate: callback, enableContentPanningGesture: !(isScreenReaderEnabled || tmp7), enableHandlePanningGesture: !(isScreenReaderEnabled || tmp7), handleComponent: callback2, renderFooter: tmp35, backgroundComponent: callback3, backgroundStyle: tmp.background, backdropComponent, activeOffsetY: [-10, 10], handleHeight: num, children: forceMaxHeight(AccessibilityViewAnimated, obj11) };
   tmp35 = undefined;
   const tmp3Result = tmp3(tmp4[18]);
   const tmp6Result12 = animatedIndex(tmp4[5]);
@@ -592,8 +593,8 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   obj11 = {
     nativeID: "portal-keyboard-sheet",
     style: items6,
-    onAccessibilityEscape() {
-      const current = ref.current;
+    onAccessibilityEscape: function handleClose() {
+      const current = ref1.current;
       if (current != null) {
         current.collapse();
       }
@@ -612,8 +613,8 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   items7[1] = tmp32Result;
   items7[2] = forceMaxHeight(animatedIndex(tmp4[30]).NavScrim, {});
   return forceMaxHeight(ThemeContextProvider, obj8);
-}));
+});
 size = size_mod;
 let result = size.fileFinishedImporting("modules/keyboard/native/PortalKeyboardBottomSheet.tsx");
 
-export default forwardRefResult;
+export default tmp5;

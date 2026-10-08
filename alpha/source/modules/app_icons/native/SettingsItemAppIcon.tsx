@@ -1,19 +1,19 @@
-// Module ID: 15364
-// Function ID: 15365
+// Module ID: 15626
+// Function ID: 15627
 // Name: SettingsItemAppIcon
-// Dependencies: [19, 8858, 21, 4896, 587, 558, 576, 13280, 8859, 10560, 15365, 2]
+// Dependencies: [19, 9401, 21, 5090, 587, 558, 576, 13581, 9402, 10157, 15627, 2]
 
-// Module 15364 (SettingsItemAppIcon)
+// Module 15626 (SettingsItemAppIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AppIconConstants from "AppIconConstants" /* 8858 */;
-import AppIconTypes from "AppIconTypes" /* 8859 */;
-import ClydeIcon from "ClydeIcon" /* 10560 */;
-import AppIconUtils from "AppIconUtils" /* 13280 */;
-import AppIconDefault from "AppIcon" /* 15365 */;
+import AppIconConstants from "AppIconConstants" /* 9401 */;
+import AppIconTypes from "AppIconTypes" /* 9402 */;
+import ClydeIcon from "ClydeIcon" /* 10157 */;
+import AppIconUtils from "AppIconUtils" /* 13581 */;
+import AppIconDefault from "AppIcon" /* 15627 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ const jsx = Fragment.jsx;
 let obj = { icon: obj2 };
 obj2 = { borderRadius: nativeDefault.radii.round };
 let closure_5 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsItemAppIcon(color) {
   let tmp13;
   const obj = react2;
   const cResult = obj.c(5);
@@ -60,7 +60,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
     tmp13 = cResult[1];
   }
   tmp9 = tmp13;
-}) : ((color) => {
+}) : (function SettingsItemAppIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;

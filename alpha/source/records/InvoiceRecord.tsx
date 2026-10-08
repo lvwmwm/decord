@@ -1,15 +1,17 @@
-// Module ID: 4543
-// Function ID: 4544
+// Module ID: 4735
+// Function ID: 4736
 // Name: InvoiceRecord
-// Dependencies: [1392, 4544, 2]
+// Dependencies: [1404, 1085, 4736, 2]
 
-// Module 4543 (InvoiceRecord)
-import PremiumSubscriptionInvoiceItem from "PremiumSubscriptionInvoiceItem" /* 4544 */;
-import Record from "Record" /* 1392 */;
+// Module 4735 (InvoiceRecord)
+import Constants from "Constants" /* 1085 */;
+import PremiumSubscriptionInvoiceItem from "PremiumSubscriptionInvoiceItem" /* 4736 */;
+import Record from "Record" /* 1404 */;
 import size from "module_2" /* 2 */;
 
 let billing_facet, order_line_items;
 
+const PaymentGateways = Constants.PaymentGateways;
 class BaseInvoiceRecord extends Record {
   constructor(currency) {
     let invoiceItems;
@@ -120,18 +122,24 @@ const prototype = BaseInvoiceRecord.prototype;
 class InvoiceRecord extends BaseInvoiceRecord {
   constructor(arg0) {
     let invoiceItems;
+    let paymentLegs;
     const tmp = new InvoiceRecord(arg0, new.target, this);
     ({ id: tmp.id, invoiceItems } = arg0);
     if (invoiceItems == null) {
       invoiceItems = [];
     }
     tmp.invoiceItems = invoiceItems;
-    ({ taxInclusive: tmp.taxInclusive, subscriptionPeriodStart: tmp.subscriptionPeriodStart, subscriptionPeriodEnd: tmp.subscriptionPeriodEnd, status: tmp.status, orbsReward: tmp.orbsReward, checkoutContext: tmp.checkoutContext, applyWalletBalance: tmp.applyWalletBalance } = arg0);
+    ({ taxInclusive: tmp.taxInclusive, subscriptionPeriodStart: tmp.subscriptionPeriodStart, subscriptionPeriodEnd: tmp.subscriptionPeriodEnd, status: tmp.status, orbsReward: tmp.orbsReward, checkoutContext: tmp.checkoutContext, applyWalletBalance: tmp.applyWalletBalance, paymentLegs } = arg0);
+    if (paymentLegs == null) {
+      paymentLegs = [];
+    }
+    tmp.paymentLegs = paymentLegs;
     return tmp;
   }
   static createInvoiceFromServer(body) {
     let invoiceItems;
     let mapped;
+    let paymentLegs;
     let tmp3;
     const obj = { id: body.id, invoiceItems: mapped, total: null, subtotal: null, currency: null, tax: null, taxInclusive: null, subscriptionPeriodStart: new Date(body.subscription_period_start), subscriptionPeriodEnd: new Date(body.subscription_period_end), status: null, orbsReward: null, checkoutContext: null };
     const invoice_items = body.invoice_items;
@@ -156,7 +164,11 @@ class InvoiceRecord extends BaseInvoiceRecord {
         invoiceItems = [];
       }
       tmp9.invoiceItems = invoiceItems;
-      ({ taxInclusive: tmp9.taxInclusive, subscriptionPeriodStart: tmp9.subscriptionPeriodStart, subscriptionPeriodEnd: tmp9.subscriptionPeriodEnd, status: tmp9.status, orbsReward: tmp9.orbsReward, checkoutContext: tmp9.checkoutContext, applyWalletBalance: tmp9.applyWalletBalance } = obj);
+      ({ taxInclusive: tmp9.taxInclusive, subscriptionPeriodStart: tmp9.subscriptionPeriodStart, subscriptionPeriodEnd: tmp9.subscriptionPeriodEnd, status: tmp9.status, orbsReward: tmp9.orbsReward, checkoutContext: tmp9.checkoutContext, applyWalletBalance: tmp9.applyWalletBalance, paymentLegs } = obj);
+      if (paymentLegs == null) {
+        paymentLegs = [];
+      }
+      tmp9.paymentLegs = paymentLegs;
       return tmp9;
     } else {
       throw new TypeError("Trying to call a non-function");
@@ -167,6 +179,7 @@ class InvoiceRecord extends BaseInvoiceRecord {
     let date;
     let date1;
     let invoiceItems;
+    let paymentLegs;
     let tmp3;
     let closure_0 = billing_facet;
     billing_facet = billing_facet.billing_facet;
@@ -256,7 +269,11 @@ class InvoiceRecord extends BaseInvoiceRecord {
           invoiceItems = [];
         }
         tmp6.invoiceItems = invoiceItems;
-        ({ taxInclusive: tmp6.taxInclusive, subscriptionPeriodStart: tmp6.subscriptionPeriodStart, subscriptionPeriodEnd: tmp6.subscriptionPeriodEnd, status: tmp6.status, orbsReward: tmp6.orbsReward, checkoutContext: tmp6.checkoutContext, applyWalletBalance: tmp6.applyWalletBalance } = obj);
+        ({ taxInclusive: tmp6.taxInclusive, subscriptionPeriodStart: tmp6.subscriptionPeriodStart, subscriptionPeriodEnd: tmp6.subscriptionPeriodEnd, status: tmp6.status, orbsReward: tmp6.orbsReward, checkoutContext: tmp6.checkoutContext, applyWalletBalance: tmp6.applyWalletBalance, paymentLegs } = obj);
+        if (paymentLegs == null) {
+          paymentLegs = [];
+        }
+        tmp6.paymentLegs = paymentLegs;
         return tmp6;
       } else {
         let str = "Trying to call a non-function";
@@ -265,8 +282,9 @@ class InvoiceRecord extends BaseInvoiceRecord {
     }
   }
   static createFromOTPPreview(invoice_items) {
-    let checkout_context;
+    let apply_wallet_balance;
     let invoiceItems;
+    let paymentLegs;
     let tmp3;
     invoice_items = invoice_items.invoice_items;
     let mapped;
@@ -274,24 +292,41 @@ class InvoiceRecord extends BaseInvoiceRecord {
       mapped = invoice_items.map(PremiumSubscriptionInvoiceItem.createInvoiceItemFromServer);
       tmp3 = require;
     }
-    const obj = { id: "", invoiceItems: mapped, total: invoice_items.amount, subtotal: invoice_items.subtotal, currency: invoice_items.currency, tax: invoice_items.tax, taxInclusive: invoice_items.tax_inclusive, subscriptionPeriodStart: new Date(0), subscriptionPeriodEnd: new Date(0), orbsReward: null, checkoutContext: checkout_context, applyWalletBalance: invoice_items.apply_wallet_balance };
+    const obj = { id: "", invoiceItems: mapped, total: invoice_items.amount, subtotal: invoice_items.subtotal, currency: invoice_items.currency, tax: invoice_items.tax, taxInclusive: invoice_items.tax_inclusive, subscriptionPeriodStart: new Date(0), subscriptionPeriodEnd: new Date(0), orbsReward: null, checkoutContext: null, applyWalletBalance: apply_wallet_balance, paymentLegs: invoice_items.payment_legs };
     new Date(0);
-    ({ orbs_reward: obj.orbsReward, checkout_context } = invoice_items);
+    ({ orbs_reward: obj.orbsReward, checkout_context: obj.checkoutContext, apply_wallet_balance } = invoice_items);
     new Date(0);
     if (typeof InvoiceRecord === "function") {
       const self = this;
       const self2 = this;
-      const tmp9 = new InvoiceRecord(obj, tmp3, this, this, checkout_context, InvoiceRecord);
+      const tmp9 = new InvoiceRecord(obj, tmp3, this, this, apply_wallet_balance, InvoiceRecord);
       ({ id: tmp9.id, invoiceItems } = obj);
       if (invoiceItems == null) {
         invoiceItems = [];
       }
       tmp9.invoiceItems = invoiceItems;
-      ({ taxInclusive: tmp9.taxInclusive, subscriptionPeriodStart: tmp9.subscriptionPeriodStart, subscriptionPeriodEnd: tmp9.subscriptionPeriodEnd, status: tmp9.status, orbsReward: tmp9.orbsReward, checkoutContext: tmp9.checkoutContext, applyWalletBalance: tmp9.applyWalletBalance } = obj);
+      ({ taxInclusive: tmp9.taxInclusive, subscriptionPeriodStart: tmp9.subscriptionPeriodStart, subscriptionPeriodEnd: tmp9.subscriptionPeriodEnd, status: tmp9.status, orbsReward: tmp9.orbsReward, checkoutContext: tmp9.checkoutContext, applyWalletBalance: tmp9.applyWalletBalance, paymentLegs } = obj);
+      if (paymentLegs == null) {
+        paymentLegs = [];
+      }
+      tmp9.paymentLegs = paymentLegs;
       return tmp9;
     } else {
       throw new TypeError("Trying to call a non-function");
     }
+  }
+  getWalletAmount() {
+    const paymentLegs = this.paymentLegs;
+    return paymentLegs.reduce((acc, payment_gateway) => {
+      let sum = acc;
+      if (payment_gateway.payment_gateway === constants.TDS) {
+        sum = acc + payment_gateway.amount;
+      }
+      return sum;
+    }, 0);
+  }
+  getAmountDue() {
+    return this.total - this.getWalletAmount();
   }
   findInvoiceItemByPlanId(id) {
     let closure_0 = id;

@@ -1,23 +1,21 @@
-// Module ID: 11306
-// Function ID: 11307
+// Module ID: 12800
+// Function ID: 12801
 // Name: PublishModal
-// Dependencies: [32, 19, 17, 21, 4896, 5627, 558, 576, 11307, 1188, 1126, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 5974, 558, 576, 12801, 1200, 1126, 2]
 
-// Module 11306 (PublishModal)
+// Module 12800 (PublishModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import LegacyTokens from "LegacyTokens" /* 5627 */;
-import useChannelFollowerStatsDefault from "useChannelFollowerStats" /* 11307 */;
+import native from "native" /* 1200 */;
+import LegacyTokens from "LegacyTokens" /* 5974 */;
+import useChannelFollowerStatsDefault from "useChannelFollowerStats" /* 12801 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channelId;
 
 let closure_4;
 let hasOwnProperty;
@@ -27,7 +25,7 @@ const jsx = Fragment.jsx;
 let obj = { alertContainer: { paddingTop: 16 }, alertLoading: { paddingTop: 62, paddingBottom: 46 }, alertBodyText: obj2 };
 obj2 = { marginBottom: 16, fontSize: 16, lineHeight: 24, color: LegacyTokens.DARK_PRIMARY_300_LIGHT_PRIMARY_400 };
 let closure_7 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PublishModal(channelId) {
   const obj = react2;
   const cResult = obj.c(10);
   channelId = channelId.channelId;
@@ -94,7 +92,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       }
     }
     const obj4 = { style: tmp4.alertBodyText, children: null };
-    const LegacyText = tmp(1188).LegacyText;
+    const LegacyText = tmp(1200).LegacyText;
     const intl = tmp(1126).intl;
     const tmp14 = jsx;
     if (tmp9) {
@@ -125,7 +123,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     cResult[6] = tmp14Result;
     tmp13 = tmp14Result;
   }
-}) : ((channelId) => {
+}) : (function PublishModal(channelId) {
   channelId = channelId.channelId;
   const tmp = closure_7();
   const tmp3 = _slicedToArray(useChannelFollowerStatsDefault(channelId), 2);

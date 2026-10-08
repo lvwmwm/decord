@@ -1,11 +1,11 @@
-// Module ID: 16276
-// Function ID: 16277
+// Module ID: 16536
+// Function ID: 16537
 // Name: useHomeDrawerToggleAccessibilityAction
-// Dependencies: [19, 558, 576, 1126, 4742, 4596, 2]
+// Dependencies: [19, 558, 576, 1126, 4936, 4788, 2]
 
-// Module 16276 (useHomeDrawerToggleAccessibilityAction)
+// Module 16536 (useHomeDrawerToggleAccessibilityAction)
 import intl2 from "intl" /* 1126 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4742 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4936 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -14,9 +14,9 @@ const require = globalThis.__r;
 let _require;
 
 let tmp;
-const AccessibilityAnnouncer2 = tmp(4596);
+const AccessibilityAnnouncer2 = tmp(4788);
 let c3 = "toggle-home-drawer";
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHomeDrawerToggleAccessibilityAction(arg0, arg1) {
   let closure_0;
   _require = arg1;
   let tmp = _require;
@@ -43,7 +43,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       tmp5 = cResult[1];
     }
     if (cResult[2] !== arg1) {
-      const fn = function u() {
+      function action() {
         let stringResult;
         const obj = NavigationRouteUtils;
         obj.setHomeDrawerState(!closure_0);
@@ -57,10 +57,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
         }
         const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
         AccessibilityAnnouncer.announce(stringResult);
-      };
+      }
       cResult[2] = arg1;
-      cResult[3] = fn;
-      tmp7 = fn;
+      cResult[3] = action;
+      tmp7 = action;
     } else {
       tmp7 = cResult[3];
     }
@@ -78,7 +78,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     tmp8 = obj2;
   }
   return tmp4;
-}) : ((arg0, arg1) => {
+}) : (function useHomeDrawerToggleAccessibilityAction(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   const items = [arg0, arg1];

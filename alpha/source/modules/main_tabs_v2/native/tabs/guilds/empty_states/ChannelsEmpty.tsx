@@ -1,25 +1,23 @@
-// Module ID: 16222
-// Function ID: 16223
+// Module ID: 16482
+// Function ID: 16483
 // Name: ChannelsEmpty
-// Dependencies: [19, 17, 4515, 1085, 21, 4896, 4892, 587, 558, 576, 573, 9282, 9249, 14917, 8926, 1188, 16223, 1126, 16224, 5602, 2]
+// Dependencies: [19, 17, 4707, 1085, 21, 5090, 5086, 587, 558, 576, 573, 8613, 8578, 15179, 8557, 1200, 16483, 1126, 16484, 5376, 2]
 
-// Module 16222 (ChannelsEmpty)
+// Module 16482 (ChannelsEmpty)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 9249 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9282 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16223 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16224 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8578 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8613 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16483 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16484 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let guild;
 
 let c9;
 let closure_4;
@@ -37,7 +35,7 @@ createStyles = createStyles.createStyles;
 const merged = Object.assign(Text_Text.TextStyleSheet["heading-md/bold"]);
 obj3 = { borderRadius: nativeDefault.radii.xl, height: 44, paddingHorizontal: 20 };
 let closure_10 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelsEmpty(guild) {
   let Icon;
   let RowButton;
   let canCreateChannel;
@@ -106,7 +104,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
       }
     }
   }
-  const tmpResult2 = guild(14917);
+  const tmpResult2 = guild(15179);
   const youBarTotalHeight = tmpResult2.useYouBarTotalHeight(16);
   if (cResult[8] !== youBarTotalHeight) {
     class S {
@@ -151,9 +149,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
       }
       const obj2 = { style: tmp4.personalizeButtonWrapper, children: closure_8(RowButton, obj3) };
       obj3 = { icon: closure_8(Icon, obj4), label: intl.string(guild(1126).t["Yhi9/N"]), onPress: tmp10 };
-      RowButton = tmp(8926).RowButton;
+      RowButton = tmp(8557).RowButton;
       obj4 = { source: AssetRegistryDefault, disableColor: true };
-      Icon = tmp(1188).Icon;
+      Icon = tmp(1200).Icon;
       intl = tmp(1126).intl;
       tmp16 = closure_8(closure_4, obj2);
     }
@@ -166,7 +164,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
   cResult[10] = tmp4.wrapper;
   cResult[11] = tmp13;
   cResult[12] = items2;
-}) : ((guild) => {
+}) : (function ChannelsEmpty(guild) {
   let BaseTextButton;
   let Icon;
   let RowButton;
@@ -205,15 +203,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
   }, items3);
   const obj3 = { style: items4, children: items5 };
   items4 = [tmp.wrapper, ];
-  const obj2 = guild(14917);
+  const obj2 = guild(15179);
   items4[1] = { paddingBottom: obj2.useYouBarTotalHeight(16) };
   ({ paddingBottom: obj2.useYouBarTotalHeight(16) });
   if (canCustomizeGuild) {
     const obj5 = { style: tmp.personalizeButtonWrapper, children: closure_8(RowButton, obj6) };
     obj6 = { icon: closure_8(Icon, obj7), label: intl.string(guild(1126).t["Yhi9/N"]), onPress: callback };
-    RowButton = tmp2(8926).RowButton;
+    RowButton = tmp2(8557).RowButton;
     obj7 = { source: AssetRegistryDefault, disableColor: true };
-    Icon = tmp2(1188).Icon;
+    Icon = tmp2(1200).Icon;
     intl = tmp2(1126).intl;
     canCustomizeGuild = closure_8(tmp8, obj5);
   }
@@ -225,17 +223,17 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
   const obj10 = { color: "mobile-text-heading-primary", variant: "heading-md/bold", style: items7, children: intl2.string(guild(1126).t.o4s29v) };
   items7 = [, ];
   ({ text: arr8[0], headerText: arr8[1] } = tmp);
-  const Text = tmp2(4892).Text;
+  const Text = tmp2(5086).Text;
   intl2 = tmp2(1126).intl;
   items6[1] = closure_8(Text, obj10);
   const obj11 = { color: "text-default", variant: "text-md/medium", style: tmp.text, children: intl3.string(guild(1126).t.iypvFu) };
-  const Text2 = tmp2(4892).Text;
+  const Text2 = tmp2(5086).Text;
   intl3 = tmp2(1126).intl;
   items6[2] = closure_8(Text2, obj11);
   if (canCreateChannel) {
     const obj12 = { style: tmp.buttonWrapper, children: closure_8(BaseTextButton, obj13) };
     obj13 = { shrink: true, size: "md", pillStyle: tmp.buttonPill, text: intl4.string(guild(1126).t["63PyJQ"]), onPress: callback1 };
-    BaseTextButton = tmp2(5602).BaseTextButton;
+    BaseTextButton = tmp2(5376).BaseTextButton;
     intl4 = tmp2(1126).intl;
     canCreateChannel = tmp11(tmp8, obj12);
   }

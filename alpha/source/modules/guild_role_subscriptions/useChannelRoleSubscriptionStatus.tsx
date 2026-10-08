@@ -1,13 +1,13 @@
-// Module ID: 5804
-// Function ID: 5805
+// Module ID: 5409
+// Function ID: 5410
 // Name: useChannelRoleSubscriptionStatus
-// Dependencies: [2104, 2051, 4515, 1085, 558, 576, 504, 2]
+// Dependencies: [2116, 2063, 4707, 1085, 558, 576, 504, 2]
 
-// Module 5804 (useChannelRoleSubscriptionStatus)
+// Module 5409 (useChannelRoleSubscriptionStatus)
 import Constants from "Constants" /* 1085 */;
-import GatedChannelStore from "GatedChannelStore" /* 2104 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import GatedChannelStore from "GatedChannelStore" /* 2116 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ function getChannelRoleSubscriptionStatus(id, ChannelStore, GatedChannelStore, P
 }
 const Permissions = Constants.Permissions;
 let closure_6 = { needSubscriptionToAccess: false, isSubscriptionGated: false };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelRoleSubscriptionStatus(arg0) {
   let closure_0;
   let first;
   let tmp8;
@@ -87,7 +87,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresObject(first, tmp8, tmp9);
-}) : ((arg0) => {
+}) : (function useChannelRoleSubscriptionStatus(arg0) {
   let closure_0;
   _require = arg0;
   const items = [ChannelStore, GatedChannelStore, PermissionStore];

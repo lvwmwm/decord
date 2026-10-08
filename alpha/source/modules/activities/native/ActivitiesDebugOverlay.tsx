@@ -1,18 +1,18 @@
-// Module ID: 17314
-// Function ID: 17315
+// Module ID: 17595
+// Function ID: 17596
 // Name: ActivitiesDebugOverlay
-// Dependencies: [19, 17, 21, 4896, 4733, 587, 558, 576, 9025, 1618, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 4927, 587, 558, 576, 11127, 1630, 5086, 2]
 
-// Module 17314 (ActivitiesDebugOverlay)
+// Module 17595 (ActivitiesDebugOverlay)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useThermalState from "useThermalState" /* 9025 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import useThermalState from "useThermalState" /* 11127 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import ColorUtils_mod from "ColorUtils" /* 4733 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import ColorUtils_mod from "ColorUtils" /* 4927 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let closure_4;
 let hasOwnProperty;
 let rect;
 let tmp5;
-const useSafeAreaInsetsDefault = tmp5(1618);
+const useSafeAreaInsetsDefault = tmp5(1630);
 const View = react_native.View;
 ({ jsxs: closure_4, jsx: hasOwnProperty } = Fragment);
 let c6 = 16;
@@ -33,7 +33,7 @@ rect = { position: "absolute", top: 0, left: 0, backgroundColor: ColorUtils.hexW
 createStyles = createStyles.createStyles;
 ColorUtils = ColorUtils_mod;
 let closure_7 = createStyles(obj);
-tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitiesDebugOverlay() {
   let items;
   const obj = react2;
   const cResult = obj.c(16);
@@ -132,7 +132,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = sum;
   cResult[2] = obj6;
   tmp9 = obj6;
-}) : (() => {
+}) : (function ActivitiesDebugOverlay() {
   let items;
   let items1;
   let obj3;

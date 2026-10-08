@@ -1,12 +1,12 @@
-// Module ID: 12904
-// Function ID: 12905
+// Module ID: 13053
+// Function ID: 13054
 // Name: useBadgeDirectoryNuxCoachmarkVariant
-// Dependencies: [32, 19, 558, 576, 10897, 12905, 2]
+// Dependencies: [32, 19, 558, 576, 10548, 13054, 2]
 
-// Module 12904 (useBadgeDirectoryNuxCoachmarkVariant)
+// Module 13053 (useBadgeDirectoryNuxCoachmarkVariant)
 import react2 from "react" /* 576 */;
-import useCanOpenBadgeDirectoryFromProfile from "useCanOpenBadgeDirectoryFromProfile" /* 10897 */;
-import useBadgeDirectoryNuxPopoverVariant from "useBadgeDirectoryNuxPopoverVariant" /* 12905 */;
+import useCanOpenBadgeDirectoryFromProfile from "useCanOpenBadgeDirectoryFromProfile" /* 10548 */;
+import useBadgeDirectoryNuxPopoverVariant from "useBadgeDirectoryNuxPopoverVariant" /* 13054 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -14,7 +14,7 @@ import size from "module_2" /* 2 */;
 
 let closure_4 = { variantProps: null, isPending: false };
 let closure_5 = { variantProps: null, isPending: true };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBadgeDirectoryNuxCoachmarkVariant(arg0) {
   let _location;
   let enabled;
   let fetchCatalog;
@@ -81,7 +81,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = userId;
   cResult[5] = obj4;
   tmp5 = obj4;
-}) : ((enabled) => {
+}) : (function useBadgeDirectoryNuxCoachmarkVariant(enabled) {
   let _location;
   let fetchCatalog;
   let isPending;

@@ -1,21 +1,21 @@
-// Module ID: 14789
-// Function ID: 14790
+// Module ID: 15050
+// Function ID: 15051
 // Name: XboxTwoWayLinkUpsell
-// Dependencies: [19, 1085, 21, 4896, 558, 576, 2115, 14790, 1126, 5981, 14791, 8765, 2036, 2]
+// Dependencies: [19, 1085, 21, 5090, 558, 576, 2127, 15051, 1126, 6164, 15052, 9111, 2048, 2]
 
-// Module 14789 (XboxTwoWayLinkUpsell)
+// Module 15050 (XboxTwoWayLinkUpsell)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 8765 */;
-import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 14790 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14791 */;
+import dismissible_content from "dismissible_content" /* 2048 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9111 */;
+import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 15051 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15052 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let closure_4;
 ({ HelpdeskArticles: c3, AnalyticsLocations: closure_4 } = Constants);
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ upsellImage: { alignSelf: "center", width: 84, marginLeft: 16 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxTwoWayLinkUpsell() {
   let tmp13;
   let tmp18;
   let tmp19;
@@ -37,7 +37,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = HelpdeskUtilsDefault;
     const articleURL = obj2.getArticleURL(constants.XBOX_CONNECTION);
-    const OneWayToTwoWayLinkUpsell = tmp(14790).OneWayToTwoWayLinkUpsell;
+    const OneWayToTwoWayLinkUpsell = tmp(15051).OneWayToTwoWayLinkUpsell;
     const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t["2okkZV"]);
     const intl2 = tmp(1126).intl;
@@ -61,51 +61,26 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp13 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class O {
-      constructor() {
-        obj = closure_1_1(closure_1_2[11]);
-        items = [];
-        items[0] = closure_1_4.RELINK_UPSELL;
-        return obj.showModal(items);
-      }
-    }
-    cResult[5] = O;
-    tmp18 = O;
+    const fn = function p() {
+      const items = [constants.RELINK_UPSELL];
+      const obj = XboxLinkModalActionCreatorsDefault;
+      return obj.showModal(items);
+    };
+    cResult[5] = fn;
+    tmp18 = fn;
   } else {
-    class O {
-      constructor() {
-        obj = closure_1_1(closure_1_2[11]);
-        items = [];
-        items[0] = closure_1_4.RELINK_UPSELL;
-        return obj.showModal(items);
-      }
-    }
+    tmp18 = cResult[5];
   }
   if (cResult[6] !== tmp13) {
-    class O {
-      constructor() {
-        obj = closure_1_1(closure_1_2[11]);
-        items = [];
-        items[0] = closure_1_4.RELINK_UPSELL;
-        return obj.showModal(items);
-      }
-    }
-    const tmp20 = <tmp5 title={tmp6} body={tmp7} img={tmp13} newIndicatorDismissibleContent={dismissible_content.DismissibleContent.XBOX_ONE_WAY_RECONNECT} onPress={tmp18} />;
+    const tmp21 = <tmp5 title={tmp6} body={tmp7} img={tmp13} newIndicatorDismissibleContent={dismissible_content.DismissibleContent.XBOX_ONE_WAY_RECONNECT} onPress={tmp18} />;
     cResult[6] = tmp13;
-    cResult[7] = tmp20;
-    tmp19 = tmp20;
+    cResult[7] = tmp21;
+    tmp19 = tmp21;
   } else {
-    class O {
-      constructor() {
-        obj = closure_1_1(closure_1_2[11]);
-        items = [];
-        items[0] = closure_1_4.RELINK_UPSELL;
-        return obj.showModal(items);
-      }
-    }
+    tmp19 = cResult[7];
   }
   return tmp19;
-}) : (() => {
+}) : (function XboxTwoWayLinkUpsell() {
   const tmp = closure_6();
   let obj = HelpdeskUtilsDefault;
   const articleURL = obj.getArticleURL(constants.XBOX_CONNECTION);

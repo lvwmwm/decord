@@ -1,63 +1,60 @@
-// Module ID: 7539
-// Function ID: 7540
+// Module ID: 9261
+// Function ID: 9262
 // Name: ForumHooks
-// Dependencies: [5, 19, 5645, 5698, 5699, 6819, 2051, 5590, 2074, 4515, 4911, 1377, 6818, 6790, 7540, 7277, 6786, 1085, 2058, 1125, 558, 576, 504, 6820, 584, 12, 1375, 5597, 11, 7420, 2061, 7541, 5311, 7542, 7551, 7552, 6612, 2]
+// Dependencies: [5, 19, 5992, 6039, 6065, 6992, 2063, 5956, 2086, 4707, 6040, 1389, 6991, 6965, 9262, 7877, 6961, 1085, 2070, 1125, 558, 576, 504, 6993, 584, 12, 1387, 5392, 11, 7895, 2073, 7862, 5623, 8114, 8454, 9263, 6789, 2]
 // Exports: getForumPostAuthor
 
-// Module 7539 (ForumHooks)
+// Module 9261 (ForumHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ThreadConstants from "ThreadConstants" /* 1125 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import ChannelConstants from "ChannelConstants" /* 2058 */;
-import ThreadSortOrder from "ThreadSortOrder" /* 2061 */;
-import useMessageAuthor from "useMessageAuthor" /* 5311 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 6612 */;
-import ForumConstants from "ForumConstants" /* 6786 */;
-import ForumUtils from "ForumUtils" /* 6820 */;
-import ThreadUtils from "ThreadUtils" /* 7420 */;
-import renderMessageMarkupDefault from "renderMessageMarkup" /* 7542 */;
-import ForumPostMediaUtils from "ForumPostMediaUtils" /* 7551 */;
-import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import ChannelConstants from "ChannelConstants" /* 2070 */;
+import ThreadSortOrder from "ThreadSortOrder" /* 2073 */;
+import useMessageAuthor from "useMessageAuthor" /* 5623 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 6789 */;
+import ForumConstants from "ForumConstants" /* 6961 */;
+import ForumUtils from "ForumUtils" /* 6993 */;
+import ThreadUtils from "ThreadUtils" /* 7895 */;
+import renderMessageMarkupDefault from "renderMessageMarkup" /* 8114 */;
+import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8454 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5645 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5698 */;
-import ActiveThreadsStore_mod from "ActiveThreadsStore" /* 5699 */;
-import ThreadMessageStore_mod from "ThreadMessageStore" /* 6819 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 5590 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import ReadStateStore from "ReadStateStore" /* 4911 */;
-import UserStore from "UserStore" /* 1377 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 6818 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6790 */;
-import ForumPostUnreadCountStore from "ForumPostUnreadCountStore" /* 7540 */;
-import ForumSearchStore from "ForumSearchStore" /* 7277 */;
+import EmojiStore from "EmojiStore" /* 5992 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6039 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6065 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 6992 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 5956 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
+import UserStore from "UserStore" /* 1389 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 6991 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6965 */;
+import ForumPostUnreadCountStore from "ForumPostUnreadCountStore" /* 9262 */;
+import ForumSearchStore from "ForumSearchStore" /* 7877 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c0, channelId, clearForumSearchResult, clearForumSearchResult1, defaultReactionEmoji, dependencyMap, dispatchResult, importDefault, obj1, set;
+let _require, c0, dependencyMap, dispatchResult, importDefault, obj1, set;
 
 let closure_20;
 let closure_21;
 let closure_22;
 let closure_23;
-const f95129 = (count) => count.count + count.burst_count;
-const f95130 = (burst_count) => burst_count.burst_count;
-let _asyncToGenerator = _asyncToGenerator_mod;
-let ActiveThreadsStore = ActiveThreadsStore_mod;
-let ThreadMessageStore = ThreadMessageStore_mod;
+const f100260 = (count) => count.count + count.burst_count;
+const f100261 = (burst_count) => burst_count.burst_count;
 const ForumTimestampFormats = ForumConstants.ForumTimestampFormats;
 ({ AnalyticsObjectTypes: closure_20, AnalyticsObjects: closure_21, EMPTY_STRING_SNOWFLAKE_ID: closure_22, Permissions: closure_23 } = Constants);
 const ChannelFlags = ChannelConstants.ChannelFlags;
 let closure_25 = ThreadConstants.MAX_THREAD_UNREAD_MESSAGE_COUNT;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id, arg1, arg2, arg3) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadForumUnreadCounts(guild_id, arg1, arg2, arg3) {
   let closure_1;
   let closure_2;
   let first;
@@ -158,7 +155,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id, arg1, arg2
   cResult[10] = items1;
   tmp9 = items1;
   tmp8 = S;
-}) : ((arg0, arg1, arg2, arg3) => {
+}) : (function useLoadForumUnreadCounts(arg0, arg1, arg2, arg3) {
   let closure_0;
   let closure_2;
   _require = arg0;
@@ -200,7 +197,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id, arg1, arg2
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExistingPin(guild_id) {
   let first;
   _require = guild_id;
   let tmp = _require;
@@ -239,7 +236,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
   cResult[2] = guild_id.parent_id;
   cResult[3] = fn;
   tmp7 = fn;
-}) : ((arg0) => {
+}) : (function useExistingPin(arg0) {
   let closure_0;
   _require = arg0;
   const items = [ActiveThreadsStore, ChannelStore];
@@ -260,7 +257,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFacepileUsers(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -279,7 +276,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg1) {
-    const fn = function i() {
+    const fn = function s() {
       let user;
       const mapped = closure_1.map((item) => user.getUser(item));
       return mapped.filter(GlobalUtils.isNotNullish);
@@ -310,7 +307,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = stateFromStoresArray;
   cResult[5] = fn2;
   tmp8 = fn2;
-}) : ((arg0, arg1) => {
+}) : (function useFacepileUsers(arg0, arg1) {
   let closure_0;
   let closure_1;
   let stateFromStoresArray;
@@ -332,7 +329,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   return stateFromStoresArray;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, DURATION_AGO) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLastActiveTimestamp(id, arg1, DURATION_AGO) {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(10);
@@ -387,7 +384,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, DURATION_A
   cResult[3] = arg1;
   cResult[4] = forumTimestampFormatter;
   tmp9 = forumTimestampFormatter;
-}) : ((id, arg1) => {
+}) : (function useLastActiveTimestamp(id, arg1) {
   _require = id;
   let closure_1 = arg1;
   let DURATION_AGO = arg2;
@@ -421,7 +418,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, DURATION_A
   }, items2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((reactions) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMostUsedReaction(reactions) {
   let arr;
   const obj = react2;
   const cResult = obj.c(4);
@@ -452,7 +449,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((reactions) => {
   if (0 !== arr.length) {
     let tmp7;
     if (cResult[2] !== arr) {
-      const items = [f95129, f95130];
+      const items = [f100260, f100261];
       const obj2 = _modDef12;
       const orderByResult = obj2.orderBy(arr, items, ["desc", "desc"]);
       cResult[2] = arr;
@@ -464,7 +461,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((reactions) => {
     first1 = tmp7[0];
   }
   return first1;
-}) : ((reactions) => {
+}) : (function useMostUsedReaction(reactions) {
   reactions = undefined;
   const useMemo = react.useMemo;
   if (reactions != null) {
@@ -480,14 +477,14 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((reactions) => {
       reactions = [];
     }
     if (0 !== reactions.length) {
-      const items = [f95129, f95130];
+      const items = [f100260, f100261];
       const obj = _modDef12;
       return obj.orderBy(reactions, items, ["desc", "desc"])[0];
     }
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((defaultReactionEmoji) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDefaultReactionEmoji(defaultReactionEmoji) {
   let first;
   let tmp7;
   const tmp = defaultReactionEmoji;
@@ -505,7 +502,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((defaultReactionEmoji
     first = cResult[0];
   }
   if (cResult[1] !== defaultReactionEmoji) {
-    const fn = function i() {
+    const fn = function s() {
       let emojiId;
       if (defaultReactionEmoji != null) {
         emojiId = tmp.emojiId;
@@ -566,7 +563,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((defaultReactionEmoji
     }
   }
   return tmp9;
-}) : ((defaultReactionEmoji) => {
+}) : (function useDefaultReactionEmoji(defaultReactionEmoji) {
   defaultReactionEmoji = undefined;
   if (defaultReactionEmoji != null) {
     defaultReactionEmoji = defaultReactionEmoji.defaultReactionEmoji;
@@ -606,7 +603,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((defaultReactionEmoji
 });
 let closure_26 = tmp8;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSomeForumPostReactions(parentChannel) {
   let count;
   let message;
   let sorted;
@@ -683,15 +680,15 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => {
     const substr = items.slice(0, num);
     const _Symbol = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      class T {
+      class M {
         constructor(arg0) {
           return parentChannel.count + parentChannel.burst_count;
         }
       }
-      cResult[10] = T;
-      tmp15 = T;
+      cResult[10] = M;
+      tmp15 = M;
     } else {
-      class T {
+      class M {
         constructor(arg0) {
           return parentChannel.count + parentChannel.burst_count;
         }
@@ -711,12 +708,12 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => {
   }
   let orderByResult = tmp7;
   if (undefined === sorted || sorted) {
-    class T {
+    class M {
       constructor(arg0) {
         return parentChannel.count + parentChannel.burst_count;
       }
     }
-    const items2 = [f95129, f95130];
+    const items2 = [f100260, f100261];
     const obj2 = _modDef12;
     orderByResult = obj2.orderBy(tmp7, items2, ["desc", "desc"]);
   }
@@ -724,7 +721,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => {
   cResult[3] = undefined === sorted || sorted;
   cResult[4] = orderByResult;
   arr2 = orderByResult;
-}) : ((message) => {
+}) : (function useSomeForumPostReactions(message) {
   let substr;
   let sum;
   message = message.message;
@@ -754,7 +751,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => {
     }
     let orderByResult = reactions;
     if (flag) {
-      const items = [f95129, f95130];
+      const items = [f100260, f100261];
       const obj = _modDef12;
       orderByResult = obj.orderBy(reactions, items, ["desc", "desc"]);
     }
@@ -776,7 +773,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => {
   return obj2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaxPossibleForumPostReactions(message) {
   let arr2;
   let arr4;
   let containerWidth;
@@ -812,7 +809,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     tmp6 = cResult[1];
   }
   if (cResult[2] !== tmp6) {
-    const items = [f95129, f95130];
+    const items = [f100260, f100261];
     const obj2 = _modDef12;
     const orderByResult = obj2.orderBy(tmp6, items, ["desc", "desc"]);
     cResult[2] = tmp6;
@@ -898,7 +895,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   cResult[8] = diff1;
   cResult[9] = substr;
   tmp19 = substr;
-}) : ((message) => {
+}) : (function useMaxPossibleForumPostReactions(message) {
   let containerWidth;
   let digitWidth;
   let reactionEmojiWidth;
@@ -919,7 +916,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     if (reactions == null) {
       reactions = [];
     }
-    const items = [f95129, f95130];
+    const items = [f100260, f100261];
     const obj = _modDef12;
     return obj.orderBy(reactions, items, ["desc", "desc"]);
   }, items);
@@ -967,7 +964,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   return obj2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageCount(id) {
   let first;
   let stateFromStores1;
   let tmp6;
@@ -1103,7 +1100,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   cResult[4] = stateFromStores;
   cResult[5] = messageCountText;
   tmp8 = messageCountText;
-}) : ((id) => {
+}) : (function useMessageCount(id) {
   let closure_2;
   let stateFromStores1;
   let tmp4;
@@ -1158,7 +1155,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   return obj5;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((author, getGuildId) => {
+let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPostMessageAuthor(author, getGuildId) {
   let id;
   let tmp5;
   let tmp7;
@@ -1202,7 +1199,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((author, getGuildId)
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp7, tmp9);
-  const tmpResult2 = tmp(5311);
+  const tmpResult2 = tmp(5623);
   const nullableMessageAuthor = tmpResult2.useNullableMessageAuthor(author);
   if (cResult[5] === tmp5) {
     let tmp12;
@@ -1273,7 +1270,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((author, getGuildId)
   cResult[8] = items1;
   tmp13 = items1;
   tmp12 = fn2;
-}) : ((author, getGuildId) => {
+}) : (function useForumPostMessageAuthor(author, getGuildId) {
   let colorString;
   let colorStrings;
   let id;
@@ -1287,7 +1284,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((author, getGuildId)
   const items = [UserStore];
   const obj = id(504);
   const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(id));
-  const obj2 = id(5311);
+  const obj2 = id(5623);
   const nullableMessageAuthor = obj2.useNullableMessageAuthor(author);
   const items1 = [guildId, id];
   const effect = react.useEffect(() => {
@@ -1329,7 +1326,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((author, getGuildId)
   return obj3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((ownerId) => {
+let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPostAuthor(ownerId) {
   let first;
   let tmp10;
   let tmp6;
@@ -1346,7 +1343,7 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((ownerId) => {
     first = cResult[0];
   }
   if (cResult[1] !== ownerId.ownerId) {
-    const fn = function i() {
+    const fn = function s() {
       return UserStore.getUser(ownerId.ownerId);
     };
     cResult[1] = ownerId.ownerId;
@@ -1382,8 +1379,8 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((ownerId) => {
   const tmpResult3 = tmp(504);
   const stateFromStores1 = tmpResult3.useStateFromStores(tmp8, tmp10);
   let author;
-  const useNullableUserAuthor = tmp(5311).useNullableUserAuthor;
-  tmp(5311);
+  const useNullableUserAuthor = tmp(5623).useNullableUserAuthor;
+  tmp(5623);
   if (stateFromStores1 != null) {
     author = stateFromStores1.author;
   }
@@ -1427,7 +1424,7 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((ownerId) => {
   cResult[9] = items2;
   tmp16 = items2;
   tmp15 = S;
-}) : ((arg0) => {
+}) : (function useForumPostAuthor(arg0) {
   let closure_0;
   _require = arg0;
   const items = [UserStore];
@@ -1463,7 +1460,7 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((ownerId) => {
   return { user, author: author1 };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPostFirstMessageMarkup(arg0) {
   let content;
   let firstMessage;
   let formatInline;
@@ -1530,7 +1527,7 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp6 = obj4;
   }
   obj4 = { hasSpoilerEmbeds: false, content: null };
-}) : ((firstMessage) => {
+}) : (function useForumPostFirstMessageMarkup(firstMessage) {
   let obj2;
   let obj3;
   firstMessage = firstMessage.firstMessage;
@@ -1572,7 +1569,7 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_27 = { isNew: false, hasUnreads: false };
-let tmp15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanManageChannel(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -1599,7 +1596,7 @@ let tmp15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useCanManageChannel(arg0) {
   let closure_0;
   _require = arg0;
   const items = [PermissionStore];
@@ -1607,7 +1604,7 @@ let tmp15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj.useStateFromStores(items, () => PermissionStore.can(constants.MANAGE_CHANNELS, closure_0));
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPostReadStates(arg0) {
   let first;
   let tmp7;
   _require = arg0;
@@ -1630,7 +1627,7 @@ let tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const tmp2 = guildId;
       guildId = guildId.getGuildId();
       if (guildId == null) {
-        guildId = afk;
+        guildId = authStore6;
       }
       const guild = getGuild(guildId);
       if (null == guild) {
@@ -1650,7 +1647,7 @@ let tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresObject(first, tmp7);
-}) : ((arg0) => {
+}) : (function useForumPostReadStates(arg0) {
   _require = arg0;
   let obj = require("get initialized");
   let items = [GuildStore, ReadStateStore];
@@ -1660,7 +1657,7 @@ let tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const tmp2 = guildId;
     guildId = guildId.getGuildId();
     if (guildId == null) {
-      guildId = afk;
+      guildId = authStore6;
     }
     const guild = getGuild(guildId);
     if (null == guild) {
@@ -1674,7 +1671,7 @@ let tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp17 = ReactCompilerGating.isReactCompilerEnabled() ? ((template) => {
+let tmp17 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelTemplate(template) {
   let tmp2;
   const obj = react2;
   const cResult = obj.c(2);
@@ -1694,7 +1691,7 @@ let tmp17 = ReactCompilerGating.isReactCompilerEnabled() ? ((template) => {
     tmp2 = cResult[1];
   }
   return tmp2;
-}) : ((arg0) => {
+}) : (function useChannelTemplate(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   return react.useMemo(() => {
@@ -1710,7 +1707,7 @@ let tmp17 = ReactCompilerGating.isReactCompilerEnabled() ? ((template) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumThreadsForChannelList(arg0) {
   let activeJoinedThreads;
   let activeUnjoinedThreads;
   let closure_0;
@@ -1757,7 +1754,7 @@ const tmp18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = newThreadCounts;
   cResult[6] = obj2;
   tmp8 = obj2;
-}) : ((arg0) => {
+}) : (function useForumThreadsForChannelList(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -1769,7 +1766,7 @@ const tmp18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return { activeJoinedThreads: stateFromStoresObject.activeJoinedThreads, activeUnjoinedThreads: stateFromStoresObject.activeUnjoinedThreads, newThreadCounts: stateFromStoresObject.newThreadCounts };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp19 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanSearchForumPosts(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -1796,7 +1793,7 @@ let tmp19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useCanSearchForumPosts(arg0) {
   let closure_0;
   _require = arg0;
   const items = [PermissionStore];
@@ -1805,7 +1802,7 @@ let tmp19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_28 = tmp19;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanViewArchivedPosts(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -1832,7 +1829,7 @@ let tmp20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useCanViewArchivedPosts(arg0) {
   let closure_0;
   _require = arg0;
   const items = [PermissionStore];
@@ -1840,7 +1837,7 @@ let tmp20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj.useStateFromStores(items, () => PermissionStore.can(constants.READ_MESSAGE_HISTORY, closure_0));
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp21 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp21 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumSearchQuery(channelId) {
   let first;
   let tmp6;
   const tmp = channelId;
@@ -1870,7 +1867,7 @@ let tmp21 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((channelId) => {
+}) : (function useForumSearchQuery(channelId) {
   channelId = channelId.channelId;
   const items = [ForumSearchStore];
   const obj = channelId(504);
@@ -1883,7 +1880,7 @@ let tmp21 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp22 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp22 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumSearchState(channelId) {
   let first;
   let tmp6;
   let obj = channelId(576);
@@ -1910,7 +1907,7 @@ let tmp22 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresObject(first, tmp6);
-}) : ((channelId) => {
+}) : (function useForumSearchState(channelId) {
   channelId = channelId.channelId;
   let obj = channelId(504);
   const items = [ForumSearchStore];
@@ -1921,7 +1918,7 @@ let tmp22 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
 });
 let closure_29 = tmp22;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasForumSearchQuery(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -1948,7 +1945,7 @@ let tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useHasForumSearchQuery(arg0) {
   let closure_0;
   _require = arg0;
   const items = [ForumSearchStore];
@@ -1956,21 +1953,17 @@ let tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj.useStateFromStores(items, () => null != ForumSearchStore.getSearchQuery(closure_0));
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? (function(id, arg1, arg2, arg3) {
-  let closure_1;
+const tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAutomaticForumSearch(id, arg1, arg2, arg3) {
   let closure_2;
-  let closure_3;
-  let ref;
-  let ref2;
   let tmp3;
   let tmp6;
   _require = id;
-  importDefault = arg1;
+  let closure_1 = arg1;
   dependencyMap = arg2;
   let obj = require("react");
   const cResult = obj.c(13);
   let tmp2 = undefined !== arg3 && arg3;
-  _asyncToGenerator = tmp2;
+  let closure_3 = tmp2;
   if (cResult[0] !== id.id) {
     let obj2 = { channelId: id.id };
     cResult[0] = id.id;
@@ -1985,7 +1978,7 @@ const tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? (function(id, arg1,
   const tmp5 = closure_28(id);
   let closure_6 = tmp5;
   let obj3 = isSearchLoading;
-  ActiveThreadsStore = isSearchLoading.useRef(null);
+  const ref = isSearchLoading.useRef(null);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const _Set = Set;
     const self = this;
@@ -1996,7 +1989,7 @@ const tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? (function(id, arg1,
   } else {
     tmp6 = cResult[2];
   }
-  ThreadMessageStore = obj3.useRef(tmp6);
+  const ref2 = obj3.useRef(tmp6);
   if (cResult[3] === tmp5) {
     if (cResult[4] === id.guild_id) {
       if (cResult[5] === id.id) {
@@ -2018,55 +2011,101 @@ const tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? (function(id, arg1,
       }
     }
   }
-  class C {
-    constructor() {
-      arr = searchQuery;
-      if (null == searchQuery) {
-        if (null != closure_7.current) {
-          tmp13 = closure_1;
-          tmp14 = closure_2;
-          obj2 = closure_1(closure_2[35]);
-          tmp15 = closure_0;
-          clearForumSearchResult = obj2.clearForumSearch(closure_0.id);
-          tmp.current = null;
-          return;
-        }
+  const fn = function b() {
+    let closure_0;
+    let current;
+    if (null == searchQuery) {
+      if (null != ref.current) {
+        let obj2 = current(closure_2[35]);
+        const tmp15 = user;
+        obj2.clearForumSearch(user.id);
+        tmp.current = null;
       }
-      if (null != arr) {
-        num2 = 0;
-        if (0 !== arr.length) {
-          tmp17 = closure_3;
-          if (!tmp17) {
-            tmp2 = closure_6;
-            if (tmp2) {
-              tmp7 = closure_7;
-              if (closure_7.current !== arr) {
-                tmp10 = isSearchLoading;
-                if (!tmp10) {
-                  tmp11 = globalThis;
-                  _setTimeout = setTimeout;
-                  tmp12 = closure_3;
-                  num = 350;
-                  closure_0 = setTimeout(closure_3(function() { /* body not rendered: F138442 */ }), 350);
-                  return () => { /* body not rendered: F138443 */ };
-                }
-              } else {
-                tmp8 = closure_8;
-                tmp9 = closure_1;
+    }
+    if (null != searchQuery) {
+      if (0 !== searchQuery.length) {
+        const tmp17 = closure_3;
+        if (!tmp17) {
+          const tmp2 = closure_6;
+          if (tmp2) {
+            if (ref.current !== searchQuery) {
+              const tmp10 = isSearchLoading;
+              if (!tmp10) {
+                const _setTimeout = setTimeout;
+                user = setTimeout(closure_3(function*(arg0, value) {
+                  if (c0 === 2) {
+                    c0 = 3;
+                    throw new TypeError("Generator functions may not be called on executing generators");
+                  } else if (tmp2 === 3) {
+                    if (arg0 === 1) {
+                      throw value;
+                    } else if (arg0 === 2) {
+                      const obj3 = { value, done: true };
+                      return obj3;
+                    } else {
+                      return { value: "IconComponent", done: null };
+                    }
+                  } else {
+                    let c2;
+                    try {
+                      c0 = 2;
+                      if (0 === current) {
+                        if (arg0 === 1) {
+                          c0 = 3;
+                          throw value;
+                        } else if (arg0 === 2) {
+                          c0 = 3;
+                          const obj4 = { value, done: true };
+                          return obj4;
+                        } else {
+                          ref.current = current2;
+                          ref2.current = current;
+                          c2 = 1;
+                          const obj2 = closure_2_1(closure_2_2[35]);
+                          current = 2;
+                          c0 = 1;
+                          const obj5 = { value: obj2.searchForumPosts(c0.guild_id, c0.id, current2, current, c2), done: false };
+                          return obj5;
+                        }
+                      } else {
+                        if (1 === tmp3) {
+                          c2 = 0;
+                        } else if (arg0 === 1) {
+                          c0 = 3;
+                          throw value;
+                        } else if (arg0 === 2) {
+                          c2 = 0;
+                          c0 = 3;
+                          const obj = { value, done: true };
+                          return obj;
+                        } else {
+                          c2 = 0;
+                        }
+                        c0 = 3;
+                        return { value: "IconComponent", done: null };
+                      }
+                    } catch (tmp15) {
+                      if (0 === c2) {
+                        c0 = 3;
+                        throw tmp15;
+                      } else {
+                        current = 1;
+                      }
+                    }
+                  }
+                }), 350);
+                return () => clearTimeout(closure_0);
               }
-            } else {
-              tmp3 = closure_1;
-              tmp4 = closure_2;
-              obj = closure_1(closure_2[35]);
-              tmp5 = closure_0;
-              clearForumSearchResult1 = obj.clearForumSearch(closure_0.id);
             }
+          } else {
+            const tmp3 = current;
+            let obj = current(closure_2[35]);
+            obj.clearForumSearch(user.id);
           }
         }
       }
-      return;
     }
-  }
+  };
   const items = [tmp5, , , , , , , ];
   ({ guild_id: arr[1], id: arr[2] } = id);
   items[3] = tmp2;
@@ -2082,11 +2121,11 @@ const tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? (function(id, arg1,
   cResult[8] = searchQuery;
   cResult[9] = arg1;
   cResult[10] = arg2;
-  cResult[11] = C;
+  cResult[11] = fn;
   cResult[12] = items;
   tmp10 = items;
-  tmp9 = C;
-}) : ((channelId, arg1, arg2) => {
+  tmp9 = fn;
+}) : (function useAutomaticForumSearch(channelId, arg1, arg2) {
   let closure_1 = arg1;
   let closure_2 = arg2;
   let flag = arg3;
@@ -2207,7 +2246,7 @@ const tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? (function(id, arg1,
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUnreadThreadsCountForParent(arg0, arg1) {
   let closure_0;
   let first;
   _require = arg0;
@@ -2231,7 +2270,7 @@ let tmp25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     const tmpResult = tmp(504);
     return tmpResult.useStateFromStores(first, tmp8);
   }
-  const fn = function s() {
+  const fn = function i() {
     const channel = ChannelStore.getChannel(closure_1);
     let isForumLikeChannelResult;
     if (channel != null) {
@@ -2288,7 +2327,7 @@ let tmp25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[2] = arg1;
   cResult[3] = fn;
   tmp8 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useUnreadThreadsCountForParent(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;
@@ -2350,7 +2389,7 @@ let tmp25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
 });
 let closure_30 = tmp25;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp26 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp26 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumActiveThreadIds(channel) {
   let first;
   let tagFilter;
   let tmp = channel;
@@ -2407,7 +2446,7 @@ let tmp26 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
             const effect = shouldAutomaticallyAck.useEffect(tmp15, tmp16);
             return stateFromStoresArray;
           }
-          class T {
+          class M {
             constructor() {
               const tmp = stateFromStores;
               if (tmp) {
@@ -2418,32 +2457,43 @@ let tmp26 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
             }
           }
           const items2 = [channel, stateFromStores];
-          cResult[11] = stateFromStores;
+          class F {
+            constructor() {
+              let tmp = shouldAutomaticallyAck;
+              if (tmp) {
+                const canAckThreads = closure_5 > 0 || ForumActivePostStore.getCanAckThreads();
+                tmp = canAckThreads;
+              }
+              return tmp;
+            }
+          }
           cResult[12] = channel;
-          cResult[13] = T;
+          cResult[13] = M;
           cResult[14] = items2;
           tmp16 = items2;
-          tmp15 = T;
+          tmp15 = M;
         }
-        const fn2 = function _() {
-          let tmp = shouldAutomaticallyAck;
-          if (tmp) {
-            const canAckThreads = closure_5 > 0 || ForumActivePostStore.getCanAckThreads();
-            tmp = canAckThreads;
+        class F {
+          constructor() {
+            let tmp = shouldAutomaticallyAck;
+            if (tmp) {
+              const canAckThreads = closure_5 > 0 || ForumActivePostStore.getCanAckThreads();
+              tmp = canAckThreads;
+            }
+            return tmp;
           }
-          return tmp;
-        };
+        }
         const items3 = [shouldAutomaticallyAck, tmp9];
         cResult[7] = tmp9;
         cResult[8] = shouldAutomaticallyAck;
-        cResult[9] = fn2;
+        cResult[9] = F;
         cResult[10] = items3;
         tmp13 = items3;
-        tmp12 = fn2;
+        tmp12 = F;
       }
     }
   }
-  const fn = function i() {
+  const fn = function s() {
     return ForumActivePostStore.getThreadIds(channel.id, sortOrder, tagFilter, tagSetting);
   };
   cResult[1] = channel.id;
@@ -2452,7 +2502,7 @@ let tmp26 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[4] = tagSetting;
   cResult[5] = fn;
   tmp6 = fn;
-}) : ((channel) => {
+}) : (function useForumActiveThreadIds(channel) {
   let shouldAutomaticallyAck;
   channel = channel.channel;
   ({ sortOrder: importDefault, tagFilter: dependencyMap, tagSetting: _asyncToGenerator, shouldAutomaticallyAck } = channel);

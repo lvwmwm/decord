@@ -1,14 +1,12 @@
-// Module ID: 4934
-// Function ID: 4935
+// Module ID: 5128
+// Function ID: 5129
 // Name: MediaEngineStatsStore
-// Dependencies: [502, 4935, 4948, 504, 584, 2]
+// Dependencies: [502, 504, 584, 2]
 
-// Module 4934 (MediaEngineStatsStore)
+// Module 5128 (MediaEngineStatsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 4948 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4935 */;
 import size from "module_2" /* 2 */;
 
 function updateAveragedStatsHelper(minVersion, arg1, arg2, arr, arr2) {
@@ -190,30 +188,29 @@ function getStatsHistoryAtIndex(arg0, arg1) {
     return null;
   } else {
     let tmp2 = null;
-    if (null != closure_4[arg0]) {
+    if (null != closure_1[arg0]) {
       tmp2 = null;
-      if (closure_4[arg0].length > 15) {
+      if (closure_1[arg0].length > 15) {
         tmp2 = arr[arr.length - 15 - 1];
       }
     }
     return tmp2;
   }
 }
-const React3 = {};
-let closure_5 = {};
-let closure_6 = {};
+let closure_2 = {};
+let closure_3 = {};
 const Store = get_initializedDefault.Store;
 class MediaEngineStatsStore extends Store {
   initialize() {
-    this.waitFor(AuthenticationStore, StreamRTCConnectionStore);
+    this.waitFor(AuthenticationStore);
   }
   getConnectionStats(mediaEngineConnectionId) {
     let tmp = null;
     if (null != mediaEngineConnectionId) {
       let tmp3 = null;
-      if (null != closure_4[mediaEngineConnectionId]) {
+      if (null != closure_1[mediaEngineConnectionId]) {
         tmp3 = null;
-        if (closure_4[mediaEngineConnectionId].length > 0) {
+        if (closure_1[mediaEngineConnectionId].length > 0) {
           tmp3 = arr[arr.length - 1];
         }
       }
@@ -225,9 +222,9 @@ class MediaEngineStatsStore extends Store {
     let tmp = null;
     if (null != mediaEngineConnectionId) {
       let tmp3 = null;
-      if (null != closure_4[mediaEngineConnectionId]) {
+      if (null != closure_1[mediaEngineConnectionId]) {
         tmp3 = null;
-        if (closure_4[mediaEngineConnectionId].length > 1) {
+        if (closure_1[mediaEngineConnectionId].length > 1) {
           tmp3 = arr[arr.length - 1 - 1];
         }
       }
@@ -240,7 +237,7 @@ class MediaEngineStatsStore extends Store {
     if (null == arg0) {
       items = [];
     } else {
-      items = closure_4[arg0];
+      items = closure_1[arg0];
       if (items == null) {
         items = [];
       }
@@ -251,7 +248,7 @@ class MediaEngineStatsStore extends Store {
     if (null == mediaEngineConnectionId) {
       return null;
     } else {
-      const tmp2 = ("long" === long ? closure_5 : closure_6)[mediaEngineConnectionId];
+      const tmp2 = ("long" === long ? closure_2 : closure_3)[mediaEngineConnectionId];
       let tmp3;
       if (tmp2 != null) {
         tmp3 = tmp2[ownerId];
@@ -275,8 +272,8 @@ let obj = {
       let tmp3 = prop;
       if (0 !== prop.length) {
         ({}[tmp3]) = tmp2;
-        let tmp28 = closure_4;
-        if (!(tmp3 in closure_4)) {
+        let tmp28 = closure_1;
+        if (!(tmp3 in closure_1)) {
           tmp28[tmp3] = [];
         }
         let arr2 = tmp28[tmp3];
@@ -287,12 +284,12 @@ let obj = {
           arr5 = arr3.shift();
         }
         let tmp10 = updateAveragedStats;
-        let tmp11 = closure_6;
+        let tmp11 = closure_3;
         let tmp12 = prop;
         let tmp13 = nextResult;
         let tmp15 = getStatsHistoryAtIndex(tmp3, 15);
         let tmp10Result = tmp10(tmp11, tmp12, tmp13, tmp15);
-        let tmp10Result2 = tmp10(closure_5, tmp3, tmp2, arr5);
+        let tmp10Result2 = tmp10(closure_2, tmp3, tmp2, arr5);
       }
       continue;
     }
@@ -300,43 +297,30 @@ let obj = {
   MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET: function handleResetStats(mediaEngineConnectionId) {
     mediaEngineConnectionId = mediaEngineConnectionId.mediaEngineConnectionId;
     if (null != mediaEngineConnectionId) {
-      delete closure_4[mediaEngineConnectionId];
-      delete closure_5[mediaEngineConnectionId];
-      delete closure_6[mediaEngineConnectionId];
+      delete closure_1[mediaEngineConnectionId];
+      delete closure_2[mediaEngineConnectionId];
+      delete closure_3[mediaEngineConnectionId];
     }
   },
-  STREAM_UPDATE: function handleStreamUpdate(streamKey) {
-    streamKey = streamKey.streamKey;
-    if (streamKey.paused) {
-      return false;
-    } else {
-      const rTCConnection = StreamRTCConnectionStore.getRTCConnection(streamKey);
-      let mediaEngineConnectionId;
-      if (rTCConnection != null) {
-        mediaEngineConnectionId = rTCConnection.getMediaEngineConnectionId();
-      }
-      if (null == mediaEngineConnectionId) {
-        return false;
-      } else {
-        const obj2 = StreamKeyUtils;
-        const ownerId = obj2.decodeStreamKey(streamKey).ownerId;
-        let tmp8;
-        const tmp6 = closure_5;
-        if (closure_5[mediaEngineConnectionId] != null) {
-          tmp8 = tmp7[ownerId];
-        }
-        if (null != tmp8) {
-          delete tmp6[tmp3][ownerId];
-        }
-        let tmp11;
-        const tmp9 = closure_6;
-        if (closure_6[mediaEngineConnectionId] != null) {
-          tmp11 = tmp10[ownerId];
-        }
-        if (null != tmp11) {
-          delete tmp9[tmp3][ownerId];
-        }
-      }
+  MEDIA_ENGINE_CONNECTION_USER_STATS_RESET: function handleUserStatsReset(arg0) {
+    let mediaEngineConnectionId;
+    let userId;
+    ({ mediaEngineConnectionId, userId } = arg0);
+    let tmp3;
+    const tmp = closure_2;
+    if (closure_2[mediaEngineConnectionId] != null) {
+      tmp3 = tmp2[userId];
+    }
+    if (null != tmp3) {
+      delete tmp[mediaEngineConnectionId][userId];
+    }
+    let tmp6;
+    const tmp4 = closure_3;
+    if (closure_3[mediaEngineConnectionId] != null) {
+      tmp6 = tmp5[userId];
+    }
+    if (null != tmp6) {
+      delete tmp4[mediaEngineConnectionId][userId];
     }
   },
   RTC_CONNECTION_VIDEO: function handleVideo(arg0) {
@@ -347,16 +331,16 @@ let obj = {
       return false;
     } else {
       let tmp3;
-      const tmp = closure_5;
-      if (closure_5[mediaEngineConnectionId] != null) {
+      const tmp = closure_2;
+      if (closure_2[mediaEngineConnectionId] != null) {
         tmp3 = tmp2[userId];
       }
       if (null != tmp3) {
         delete tmp[mediaEngineConnectionId][userId];
       }
       let tmp6;
-      const tmp4 = closure_6;
-      if (closure_6[mediaEngineConnectionId] != null) {
+      const tmp4 = closure_3;
+      if (closure_3[mediaEngineConnectionId] != null) {
         tmp6 = tmp5[userId];
       }
       if (null != tmp6) {

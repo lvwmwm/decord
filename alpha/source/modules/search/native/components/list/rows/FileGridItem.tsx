@@ -1,21 +1,19 @@
-// Module ID: 16872
-// Function ID: 16873
+// Module ID: 17151
+// Function ID: 17152
 // Name: FileGridItem
-// Dependencies: [19, 17, 2051, 7524, 21, 4896, 5046, 5878, 11247, 11814, 558, 576, 504, 7951, 16860, 16862, 7283, 2]
+// Dependencies: [19, 17, 2063, 9247, 21, 5090, 5415, 8190, 11362, 11882, 558, 576, 504, 8369, 17139, 17141, 7737, 2]
 
-// Module 16872 (FileGridItem)
-import MediaFormatTesters from "MediaFormatTesters" /* 5046 */;
-import SearchMediaImage from "SearchMediaImage" /* 16860 */;
+// Module 17151 (FileGridItem)
+import MediaFormatTesters from "MediaFormatTesters" /* 5415 */;
+import SearchMediaImage from "SearchMediaImage" /* 17139 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import SearchConstants from "SearchConstants" /* 7524 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import SearchConstants from "SearchConstants" /* 9247 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let data;
 
 let c10;
 let c9;
@@ -28,7 +26,7 @@ let react = react_mod;
 ({ FILE_OR_LINK_IMAGE_BUFFER: metroImportDefault, SearchFileTypes: metroImportAll } = SearchConstants);
 ({ jsx: c9, jsxs: c10 } = Fragment);
 let closure_11 = createStyles.createStyles({ icon: { alignItems: "center", justifyContent: "center" } });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((data) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function FileGridItem(data) {
   let first;
   let imageStyle;
   let items1;
@@ -278,7 +276,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((d
   cResult[4] = data.author;
   cResult[5] = avatarSource;
   tmp11 = avatarSource;
-}) : ((data) => {
+}) : (function FileGridItem(data) {
   let closure_3;
   let items4;
   let sizeStringResult;

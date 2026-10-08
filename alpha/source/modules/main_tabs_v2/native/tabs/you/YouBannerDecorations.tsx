@@ -1,32 +1,30 @@
-// Module ID: 16981
-// Function ID: 16982
+// Module ID: 17262
+// Function ID: 17263
 // Name: YouBannerDecorations
-// Dependencies: [19, 17, 2117, 1377, 2048, 1379, 21, 1370, 587, 4896, 558, 13381, 6971, 4704, 2036, 1126, 504, 7868, 7910, 7921, 4735, 683, 4534, 16982, 10925, 6758, 16983, 10921, 5633, 4860, 16984, 1987, 16986, 12515, 3753, 14819, 16988, 8346, 6893, 16987, 5612, 2]
+// Dependencies: [19, 17, 2129, 1389, 2060, 1391, 21, 1382, 587, 5090, 558, 13681, 7160, 4898, 2048, 1126, 504, 8286, 8329, 8340, 4929, 683, 4726, 17263, 10576, 6934, 17264, 10572, 5980, 5054, 17265, 1999, 17267, 12611, 3827, 15080, 17269, 9005, 7082, 17268, 5387, 2]
 // Exports: getFloatingNavBottomMargin
 
-// Module 16981 (YouBannerDecorations)
+// Module 17262 (YouBannerDecorations)
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1370 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2117 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4704 */;
-import QuestTypes from "QuestTypes" /* 5633 */;
-import useTrialOffer from "useTrialOffer" /* 6971 */;
-import QuestUtils from "QuestUtils" /* 10921 */;
-import PromotionsHooks from "PromotionsHooks" /* 13381 */;
-import you_tracking_Tracking from "you/tracking/Tracking" /* 16983 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import dismissible_content from "dismissible_content" /* 2048 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2129 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4898 */;
+import QuestTypes from "QuestTypes" /* 5980 */;
+import useTrialOffer from "useTrialOffer" /* 7160 */;
+import QuestUtils from "QuestUtils" /* 10572 */;
+import PromotionsHooks from "PromotionsHooks" /* 13681 */;
+import you_tracking_Tracking from "you/tracking/Tracking" /* 17264 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let navigateToSettings;
 
 let c10;
 let closure_4;
@@ -66,7 +64,7 @@ let closure_12 = createStyles.createStyles((arg0, arg1, color, borderColor) => {
   ({ flexDirection: "row", flexShrink: 1, alignItems: "flex-start", gap: nativeDefault.space.PX_8 });
   return obj;
 });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasSettingsBadge() {
   const obj = PromotionsHooks;
   let tmp = obj.useUnseenOutboundPromotions().length > 0;
   const obj2 = useTrialOffer;
@@ -78,7 +76,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp = tmp4;
   }
   return tmp;
-}) : (() => {
+}) : (function useHasSettingsBadge() {
   const obj = PromotionsHooks;
   let tmp = obj.useUnseenOutboundPromotions().length > 0;
   const obj2 = useTrialOffer;
@@ -104,7 +102,7 @@ function getFloatingNavBottomMargin(bottom) {
   }
   return PX_24;
 }
-const memoResult = react.memo((navigateToSettings) => {
+const memoResult = react.memo(function YouBannerDecorations(navigateToSettings) {
   let c3;
   let containerBorderColor;
   let found;
@@ -208,11 +206,11 @@ const memoResult = react.memo((navigateToSettings) => {
     let tmp5 = currentUser;
     if (tmp5) {
       const tmpResult = DismissibleContentUnsafeUtils;
-      tmp5 = !tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(2036).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+      tmp5 = !tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(2048).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
     }
     if (tmp5) {
       const tmpResult2 = DismissibleContentUnsafeUtils;
-      const result1 = tmpResult2.UNSAFE_markDismissibleContentAsDismissed(tmp(2036).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+      const result1 = tmpResult2.UNSAFE_markDismissibleContentAsDismissed(tmp(2048).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
     }
   }, items2);
   const items4 = [showBadge, dismissBadge];

@@ -1,13 +1,13 @@
-// Module ID: 7926
-// Function ID: 7927
+// Module ID: 8345
+// Function ID: 8346
 // Name: useUserProfileOverscrollStyles
-// Dependencies: [32, 19, 4885, 558, 576, 1484, 504, 4618, 2]
+// Dependencies: [32, 19, 5079, 558, 576, 1496, 504, 4810, 2]
 
-// Module 7926 (useUserProfileOverscrollStyles)
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+// Module 8345 (useUserProfileOverscrollStyles)
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ const __initData11 = { code: "function useUserProfileOverscrollStylesTsx11(){con
 const __initData12 = { code: "function useUserProfileOverscrollStylesTsx12(){const{clamp,interpolate,position,windowHeight,coefficient}=this.__closure;return{blurAmount:clamp(interpolate(position.get(),[0,-windowHeight*coefficient],[0,1]),0,1)};}" };
 const __initData13 = { code: "function useUserProfileOverscrollStylesTsx13(){const{position}=this.__closure;return position.get()<0;}" };
 const __initData14 = { code: "function useUserProfileOverscrollStylesTsx14(result,previous){const{runOnJS,setShowBlur}=this.__closure;return result!==previous&&runOnJS(setShowBlur)(result);}" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfileOverscrollStyles(arg0) {
   let bannerHeight;
   let closure_3;
   let closure_6;
@@ -147,7 +147,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   N.__initData = __initData4;
   const animatedStyle2 = tmpResult12.useAnimatedStyle(N);
   const tmpResult13 = tmp(scrollPosition[7]);
-  class D {
+  class U {
     constructor() {
       let clamp;
       let items;
@@ -161,23 +161,23 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   let obj3 = { clamp: tmp(tmp2[7]).clamp, interpolate: tmp(tmp2[7]).interpolate, position: scrollPosition, windowHeight: height, coefficient: stateFromStores };
-  D.__closure = obj3;
-  D.__workletHash = 849678936428;
-  D.__initData = __initData5;
-  const animatedProps = tmpResult13.useAnimatedProps(D);
+  U.__closure = obj3;
+  U.__workletHash = 849678936428;
+  U.__initData = __initData5;
+  const animatedProps = tmpResult13.useAnimatedProps(U);
   [tmp17, tmp18] = react.useState(scrollPosition.get() < 0);
   SCALE_FACTOR = tmp18;
   _slicedToArray(react.useState(scrollPosition.get() < 0), 2);
   const tmpResult14 = tmp(scrollPosition[7]);
-  class U {
+  class Y {
     constructor() {
       return scrollPosition.get() < 0;
     }
   }
-  U.__closure = { position: scrollPosition };
-  U.__workletHash = 3867620644429;
-  U.__initData = __initData6;
-  class Y {
+  Y.__closure = { position: scrollPosition };
+  Y.__workletHash = 3867620644429;
+  Y.__initData = __initData6;
+  class D {
     constructor(arg0, arg1) {
       let tmp = arg0 !== arg1;
       if (tmp) {
@@ -188,10 +188,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   let obj4 = { runOnJS: tmp(tmp2[7]).runOnJS, setShowBlur: tmp18 };
-  Y.__closure = obj4;
-  Y.__workletHash = 6548835412849;
-  Y.__initData = __initData7;
-  const animatedReaction = tmpResult14.useAnimatedReaction(U, Y);
+  D.__closure = obj4;
+  D.__workletHash = 6548835412849;
+  D.__initData = __initData7;
+  const animatedReaction = tmpResult14.useAnimatedReaction(Y, D);
   if (cResult[3] === animatedStyle) {
     if (cResult[4] === animatedStyle1) {
       if (cResult[5] === animatedProps) {
@@ -213,7 +213,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = tmp17;
   cResult[8] = obj5;
   tmp20 = obj5;
-}) : ((arg0) => {
+}) : (function useUserProfileOverscrollStyles(arg0) {
   let bannerHeight;
   let c4;
   let closure_3;

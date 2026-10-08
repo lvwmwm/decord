@@ -1,29 +1,28 @@
-// Module ID: 16688
-// Function ID: 16689
+// Module ID: 16957
+// Function ID: 16958
 // Name: useConjureRevealedText
-// Dependencies: [32, 19, 4885, 558, 576, 504, 16689, 16690, 2]
+// Dependencies: [32, 19, 5079, 558, 576, 504, 16958, 16959, 2]
 
-// Module 16688 (useConjureRevealedText)
-import ConjureStreamReveal from "ConjureStreamReveal" /* 16689 */;
-import conjurePageVisibility from "conjurePageVisibility" /* 16690 */;
+// Module 16957 (useConjureRevealedText)
+import ConjureStreamReveal from "ConjureStreamReveal" /* 16958 */;
+import conjurePageVisibility from "conjurePageVisibility" /* 16959 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, obj1, target, tmp2Result, tmp6;
+let _require, dependencyMap;
 
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
-let AccessibilityStore = AccessibilityStore_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((target, streaming) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRevealedText(target, streaming) {
   let arr2;
   let closure_2;
   let closure_3;
   let ref;
-  let tmp28;
+  let tmp29;
   let tmp4;
   let tmp5;
   let tmp7;
@@ -35,7 +34,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((target, streaming) =
   const cResult = obj.c(22);
   streaming = streaming.streaming;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AccessibilityStore];
+    const items = [ref];
     const fn = function h() {
       return ref.useReducedMotion;
     };
@@ -78,7 +77,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((target, streaming) =
         tmp9(arr3);
       }
       react = tmp15;
-      AccessibilityStore = obj3.useRef(arr3);
+      ref = obj3.useRef(arr3);
       if (cResult[8] !== arr3) {
         class L {
           constructor() {
@@ -120,73 +119,21 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((target, streaming) =
       }
       const effect = obj3.useEffect(tmp18, tmp19);
       if (cResult[13] !== (streaming && arr3.length < target.length)) {
-        class V {
+        class L {
           constructor() {
-            tmp = closure_3;
-            if (tmp) {
-              tmp2 = closure_0;
-              tmp3 = closure_1;
-              obj = closure_0(closure_1[7]);
-              if (obj.isPageHidden()) {
-                tmp4 = closure_4;
-                target = closure_4.current.target;
-                tmp5 = closure_2;
-                obj1 = { target: null, length: null };
-                obj1.target = target;
-                obj1.length = target.length;
-                tmp6 = closure_2(obj1);
-              }
-              flushIfHidden = function flushIfHidden() {
-                const obj = closure_0(arr2[7]);
-                if (obj.isPageHidden()) {
-                  target = ref.current.target;
-                  const obj2 = { target, length: target.length };
-                  closure_1_2(obj2);
-                }
-              };
-              tmp2Result = tmp2(tmp3[7]);
-              return tmp2Result.subscribePageVisibility(flushIfHidden);
-            } else {
-              return;
-            }
+            ref.current = arr2;
           }
         }
         const items2 = [streaming && arr3.length < target.length];
         cResult[13] = streaming && arr3.length < target.length;
-        cResult[14] = V;
+        cResult[14] = tmp24;
         cResult[15] = items2;
         tmp23 = items2;
-        tmp22 = V;
+        tmp22 = tmp24;
       } else {
-        class V {
+        class L {
           constructor() {
-            tmp = closure_3;
-            if (tmp) {
-              tmp2 = closure_0;
-              tmp3 = closure_1;
-              obj = closure_0(closure_1[7]);
-              if (obj.isPageHidden()) {
-                tmp4 = closure_4;
-                target = closure_4.current.target;
-                tmp5 = closure_2;
-                obj1 = { target: null, length: null };
-                obj1.target = target;
-                obj1.length = target.length;
-                tmp6 = closure_2(obj1);
-              }
-              flushIfHidden = function flushIfHidden() {
-                const obj = closure_0(arr2[7]);
-                if (obj.isPageHidden()) {
-                  target = ref.current.target;
-                  const obj2 = { target, length: target.length };
-                  closure_1_2(obj2);
-                }
-              };
-              tmp2Result = tmp2(tmp3[7]);
-              return tmp2Result.subscribePageVisibility(flushIfHidden);
-            } else {
-              return;
-            }
+            ref.current = arr2;
           }
         }
         tmp23 = cResult[15];
@@ -195,140 +142,36 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((target, streaming) =
       const _Math = Math;
       const bound = Math.min(arr3.length, target.length);
       if (cResult[16] === bound) {
-        class V {
+        class L {
           constructor() {
-            tmp = closure_3;
-            if (tmp) {
-              tmp2 = closure_0;
-              tmp3 = closure_1;
-              obj = closure_0(closure_1[7]);
-              if (obj.isPageHidden()) {
-                tmp4 = closure_4;
-                target = closure_4.current.target;
-                tmp5 = closure_2;
-                obj1 = { target: null, length: null };
-                obj1.target = target;
-                obj1.length = target.length;
-                tmp6 = closure_2(obj1);
-              }
-              flushIfHidden = function flushIfHidden() {
-                const obj = closure_0(arr2[7]);
-                if (obj.isPageHidden()) {
-                  target = ref.current.target;
-                  const obj2 = { target, length: target.length };
-                  closure_1_2(obj2);
-                }
-              };
-              tmp2Result = tmp2(tmp3[7]);
-              return tmp2Result.subscribePageVisibility(flushIfHidden);
-            } else {
-              return;
-            }
+            ref.current = arr2;
           }
         }
         if (streaming) {
-          class V {
+          class L {
             constructor() {
-              tmp = closure_3;
-              if (tmp) {
-                tmp2 = closure_0;
-                tmp3 = closure_1;
-                obj = closure_0(closure_1[7]);
-                if (obj.isPageHidden()) {
-                  tmp4 = closure_4;
-                  target = closure_4.current.target;
-                  tmp5 = closure_2;
-                  obj1 = { target: null, length: null };
-                  obj1.target = target;
-                  obj1.length = target.length;
-                  tmp6 = closure_2(obj1);
-                }
-                flushIfHidden = function flushIfHidden() {
-                  const obj = closure_0(arr2[7]);
-                  if (obj.isPageHidden()) {
-                    target = ref.current.target;
-                    const obj2 = { target, length: target.length };
-                    closure_1_2(obj2);
-                  }
-                };
-                tmp2Result = tmp2(tmp3[7]);
-                return tmp2Result.subscribePageVisibility(flushIfHidden);
-              } else {
-                return;
-              }
+              ref.current = arr2;
             }
           }
         }
         if (cResult[19] === streaming) {
-          class V {
+          class L {
             constructor() {
-              tmp = closure_3;
-              if (tmp) {
-                tmp2 = closure_0;
-                tmp3 = closure_1;
-                obj = closure_0(closure_1[7]);
-                if (obj.isPageHidden()) {
-                  tmp4 = closure_4;
-                  target = closure_4.current.target;
-                  tmp5 = closure_2;
-                  obj1 = { target: null, length: null };
-                  obj1.target = target;
-                  obj1.length = target.length;
-                  tmp6 = closure_2(obj1);
-                }
-                flushIfHidden = function flushIfHidden() {
-                  const obj = closure_0(arr2[7]);
-                  if (obj.isPageHidden()) {
-                    target = ref.current.target;
-                    const obj2 = { target, length: target.length };
-                    closure_1_2(obj2);
-                  }
-                };
-                tmp2Result = tmp2(tmp3[7]);
-                return tmp2Result.subscribePageVisibility(flushIfHidden);
-              } else {
-                return;
-              }
+              ref.current = arr2;
             }
           }
-          return tmp28;
+          return tmp29;
         }
-        let obj2 = { text: tmp26, revealing: streaming };
+        let obj2 = { text: tmp27, revealing: streaming };
         cResult[19] = streaming;
-        cResult[20] = tmp26;
+        cResult[20] = tmp27;
         cResult[21] = obj2;
-        tmp28 = obj2;
+        tmp29 = obj2;
       }
       if (bound < target.length) {
-        class V {
+        class L {
           constructor() {
-            tmp = closure_3;
-            if (tmp) {
-              tmp2 = closure_0;
-              tmp3 = closure_1;
-              obj = closure_0(closure_1[7]);
-              if (obj.isPageHidden()) {
-                tmp4 = closure_4;
-                target = closure_4.current.target;
-                tmp5 = closure_2;
-                obj1 = { target: null, length: null };
-                obj1.target = target;
-                obj1.length = target.length;
-                tmp6 = closure_2(obj1);
-              }
-              flushIfHidden = function flushIfHidden() {
-                const obj = closure_0(arr2[7]);
-                if (obj.isPageHidden()) {
-                  target = ref.current.target;
-                  const obj2 = { target, length: target.length };
-                  closure_1_2(obj2);
-                }
-              };
-              tmp2Result = tmp2(tmp3[7]);
-              return tmp2Result.subscribePageVisibility(flushIfHidden);
-            } else {
-              return;
-            }
+            ref.current = arr2;
           }
         }
       }
@@ -340,101 +183,23 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((target, streaming) =
   let arr4 = arr2;
   if (arr2.target !== target) {
     let result;
-    class V {
+    class L {
       constructor() {
-        tmp = closure_3;
-        if (tmp) {
-          tmp2 = closure_0;
-          tmp3 = closure_1;
-          obj = closure_0(closure_1[7]);
-          if (obj.isPageHidden()) {
-            tmp4 = closure_4;
-            target = closure_4.current.target;
-            tmp5 = closure_2;
-            obj1 = { target: null, length: null };
-            obj1.target = target;
-            obj1.length = target.length;
-            tmp6 = closure_2(obj1);
-          }
-          flushIfHidden = function flushIfHidden() {
-            const obj = closure_0(arr2[7]);
-            if (obj.isPageHidden()) {
-              target = ref.current.target;
-              const obj2 = { target, length: target.length };
-              closure_1_2(obj2);
-            }
-          };
-          tmp2Result = tmp2(tmp3[7]);
-          return tmp2Result.subscribePageVisibility(flushIfHidden);
-        } else {
-          return;
-        }
+        ref.current = arr2;
       }
     }
     tmp10[0] = target;
     if (streaming) {
-      class V {
+      class L {
         constructor() {
-          tmp = closure_3;
-          if (tmp) {
-            tmp2 = closure_0;
-            tmp3 = closure_1;
-            obj = closure_0(closure_1[7]);
-            if (obj.isPageHidden()) {
-              tmp4 = closure_4;
-              target = closure_4.current.target;
-              tmp5 = closure_2;
-              obj1 = { target: null, length: null };
-              obj1.target = target;
-              obj1.length = target.length;
-              tmp6 = closure_2(obj1);
-            }
-            flushIfHidden = function flushIfHidden() {
-              const obj = closure_0(arr2[7]);
-              if (obj.isPageHidden()) {
-                target = ref.current.target;
-                const obj2 = { target, length: target.length };
-                closure_1_2(obj2);
-              }
-            };
-            tmp2Result = tmp2(tmp3[7]);
-            return tmp2Result.subscribePageVisibility(flushIfHidden);
-          } else {
-            return;
-          }
+          ref.current = arr2;
         }
       }
       result = obj4.reconcileRevealedLength(arr2.target, target, arr2.length);
     } else {
-      class V {
+      class L {
         constructor() {
-          tmp = closure_3;
-          if (tmp) {
-            tmp2 = closure_0;
-            tmp3 = closure_1;
-            obj = closure_0(closure_1[7]);
-            if (obj.isPageHidden()) {
-              tmp4 = closure_4;
-              target = closure_4.current.target;
-              tmp5 = closure_2;
-              obj1 = { target: null, length: null };
-              obj1.target = target;
-              obj1.length = target.length;
-              tmp6 = closure_2(obj1);
-            }
-            flushIfHidden = function flushIfHidden() {
-              const obj = closure_0(arr2[7]);
-              if (obj.isPageHidden()) {
-                target = ref.current.target;
-                const obj2 = { target, length: target.length };
-                closure_1_2(obj2);
-              }
-            };
-            tmp2Result = tmp2(tmp3[7]);
-            return tmp2Result.subscribePageVisibility(flushIfHidden);
-          } else {
-            return;
-          }
+          ref.current = arr2;
         }
       }
     }
@@ -444,35 +209,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((target, streaming) =
   }
   const tmp12 = streaming || arr4.length === target.length;
   if (!tmp12) {
-    class V {
+    class L {
       constructor() {
-        tmp = closure_3;
-        if (tmp) {
-          tmp2 = closure_0;
-          tmp3 = closure_1;
-          obj = closure_0(closure_1[7]);
-          if (obj.isPageHidden()) {
-            tmp4 = closure_4;
-            target = closure_4.current.target;
-            tmp5 = closure_2;
-            obj1 = { target: null, length: null };
-            obj1.target = target;
-            obj1.length = target.length;
-            tmp6 = closure_2(obj1);
-          }
-          flushIfHidden = function flushIfHidden() {
-            const obj = closure_0(arr2[7]);
-            if (obj.isPageHidden()) {
-              target = ref.current.target;
-              const obj2 = { target, length: target.length };
-              closure_1_2(obj2);
-            }
-          };
-          tmp2Result = tmp2(tmp3[7]);
-          return tmp2Result.subscribePageVisibility(flushIfHidden);
-        } else {
-          return;
-        }
+        ref.current = arr2;
       }
     }
     tmp13[0] = target;
@@ -484,7 +223,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((target, streaming) =
   cResult[5] = streaming;
   cResult[6] = target;
   cResult[7] = arr4;
-}) : ((target, streaming) => {
+}) : (function useConjureRevealedText(target, streaming) {
   let _undefined;
   let arr2;
   let closure_3;
@@ -513,7 +252,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((target, streaming) =
   if (arr2.target !== target) {
     let obj3 = { target, length };
     if (streaming) {
-      let tmpResult = tmp(16689);
+      let tmpResult = tmp(16958);
       length = tmpResult.reconcileRevealedLength(arr2.target, target, arr2.length);
     } else {
       length = target.length;
@@ -585,7 +324,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((target, streaming) =
           _undefined(obj2);
         }
       }
-      const tmpResult = tmp(16690);
+      const tmpResult = tmp(16959);
       return tmpResult.subscribePageVisibility(flushIfHidden);
     }
   }, items2);

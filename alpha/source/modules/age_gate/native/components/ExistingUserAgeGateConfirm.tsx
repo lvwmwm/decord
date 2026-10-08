@@ -1,19 +1,19 @@
-// Module ID: 17478
-// Function ID: 17479
+// Module ID: 17760
+// Function ID: 17761
 // Name: ExistingUserAgeGateConfirm
-// Dependencies: [5, 32, 19, 17, 1085, 21, 4896, 558, 576, 1490, 1126, 4892, 2115, 5601, 6626, 2]
+// Dependencies: [5, 32, 19, 17, 1085, 21, 5090, 558, 576, 1502, 1126, 5086, 2127, 5375, 6803, 2]
 
-// Module 17478 (ExistingUserAgeGateConfirm)
+// Module 17760 (ExistingUserAgeGateConfirm)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import useNavigation from "useNavigation" /* 1490 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import useNavigation from "useNavigation" /* 1502 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,14 +23,14 @@ let c9;
 let metroImportAll;
 let tmp;
 const intl4 = tmp(1126);
-const Text_Text = tmp(4892);
-const components_Button_Button = tmp(5601);
-const common_SafeAreaView = tmp(6626);
+const Text_Text = tmp(5086);
+const components_Button_Button = tmp(5375);
+const common_SafeAreaView = tmp(6803);
 const View = react_native.View;
 const HelpdeskArticles = Constants.HelpdeskArticles;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let closure_10 = createStyles.createStyles({ container: { padding: 16, flex: 1, alignItems: "center", justifyContent: "center" }, header: { textAlign: "center", marginBottom: 8 }, body: { textAlign: "center", lineHeight: 20, marginBottom: 16 }, buttonWrapper: { width: "100%" } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUserAgeGateConfirm(arg0) {
   let age;
   let closure_129_2;
   let container;
@@ -152,7 +152,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp24 = tmp26;
     }
     const obj10 = { style: header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp9 };
-    const tmp13 = metroImportAll(Text_Text.Text, obj10);
+    const tmp13 = metroImportAll(Text_Text.Heading, obj10);
     cResult[5] = tmp4.header;
     cResult[6] = tmp9;
     cResult[7] = tmp13;
@@ -231,7 +231,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = onConfirm;
   cResult[2] = handleConfirm;
   tmp8 = handleConfirm;
-}) : ((onConfirm) => {
+}) : (function ExistingUserAgeGateConfirm(onConfirm) {
   let Button;
   let _undefined;
   let c2;
@@ -319,24 +319,24 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   };
   const age = onConfirm.age;
   const tmp = closure_10();
-  obj = onConfirm(1490);
+  obj = onConfirm(1502);
   importDefault = obj.useNavigation();
   [tmp3, c2] = _slicedToArray(react.useState(false), 2);
   let obj2 = { top: true, style: tmp.container, children: items };
   const tmp2 = _slicedToArray(react.useState(false), 2);
-  const SafeAreaPaddingView = onConfirm(6626).SafeAreaPaddingView;
+  const SafeAreaPaddingView = onConfirm(6803).SafeAreaPaddingView;
   let obj3 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.format(onConfirm(1126).t.wumolR, { age }) };
-  const Text = onConfirm(4892).Text;
+  const Heading = onConfirm(5086).Heading;
   intl = onConfirm(1126).intl;
-  items = [closure_8(Text, obj3), , ];
+  items = [closure_8(Heading, obj3), , ];
   let obj4 = { style: tmp.body, variant: "text-md/medium", color: "interactive-text-default", children: format(n3QjDE, obj5) };
-  const Text2 = onConfirm(4892).Text;
+  const Text = onConfirm(5086).Text;
   const intl2 = onConfirm(1126).intl;
   format = intl2.format;
   obj5 = { helpURL: obj6.getArticleURL(HelpdeskArticles.AGE_GATE) };
   n3QjDE = onConfirm(1126).t.n3QjDE;
   obj6 = HelpdeskUtilsDefault;
-  items[1] = closure_8(Text2, obj4);
+  items[1] = closure_8(Text, obj4);
   const obj7 = { style: tmp.buttonWrapper, children: closure_8(Button, obj8) };
   obj8 = {
     loading: tmp3,
@@ -347,7 +347,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     },
     grow: true
   };
-  Button = onConfirm(5601).Button;
+  Button = onConfirm(5375).Button;
   intl3 = onConfirm(1126).intl;
   items[2] = closure_8(View, obj7);
   return closure_9(SafeAreaPaddingView, obj2);

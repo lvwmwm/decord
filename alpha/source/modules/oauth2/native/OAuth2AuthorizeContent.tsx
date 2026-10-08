@@ -1,24 +1,22 @@
-// Module ID: 8994
-// Function ID: 8995
+// Module ID: 10648
+// Function ID: 10649
 // Name: OAuth2AuthorizeContent
-// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 1484, 1618, 8388, 6544, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 587, 558, 576, 1496, 1630, 8886, 6720, 2]
 
-// Module 8994 (OAuth2AuthorizeContent)
+// Module 10648 (OAuth2AuthorizeContent)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import KeyboardAwareViewDefault from "KeyboardAwareView" /* 6544 */;
-import ObscuredSurfaceDefault from "ObscuredSurface" /* 8388 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import KeyboardAwareViewDefault from "KeyboardAwareView" /* 6720 */;
+import ObscuredSurfaceDefault from "ObscuredSurface" /* 8886 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let onScroll;
 
 let c9;
 let hasOwnProperty;
@@ -37,7 +35,7 @@ createStyles = createStyles.createStyles;
 obj3 = { marginHorizontal: 16, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.lg };
 obj4 = { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 let closure_10 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onScroll) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OAuth2AuthorizeContent(onScroll) {
   let appDetails;
   let body;
   let bottom;
@@ -48,16 +46,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onScroll) => {
   let first2;
   let footer;
   let header;
+  let items;
   let items1;
   let items2;
   let items3;
-  let items4;
   let left;
   let right;
   let setAllContentSeen;
   let tmp = dependencyMap;
   let obj = react2;
-  const cResult = obj.c(57);
+  const cResult = obj.c(55);
   ({ header, body, footer, appDetails, centerContent, setAllContentSeen } = onScroll);
   onScroll = onScroll.onScroll;
   const obscured = onScroll.obscured;
@@ -107,123 +105,114 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onScroll) => {
             }
             if (cResult[14] === tmp3.scrollView) {
               let tmp22;
-              let tmp24;
+              let tmp25;
               let tmp26;
-              let tmp27;
               if (cResult[15] === tmp21) {
                 tmp22 = cResult[16];
               }
               const tmp23 = size.width > size.height ? tmp3.scrollViewContentLandscape : tmp3.scrollViewContentPortrait;
-              if (cResult[17] !== tmp23) {
-                const items = [tmp23];
-                cResult[17] = tmp23;
-                cResult[18] = items;
-                tmp24 = items;
-              } else {
-                tmp24 = cResult[18];
-              }
               const _Symbol = Symbol;
-              if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-                function ee(arg0, arg1) {
+              if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
+                const fn2 = function $(arg0, arg1) {
                   const current = ref.current;
                   if (current != null) {
                     current.scrollTo({ y: 0 });
                   }
                   closure_4(arg1);
-                }
-                cResult[19] = ee;
-                tmp26 = ee;
+                };
+                cResult[17] = fn2;
+                tmp25 = fn2;
               } else {
-                tmp26 = cResult[19];
+                tmp25 = cResult[17];
               }
               const _Symbol2 = Symbol;
-              if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-                function te(nativeEvent) {
+              if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
+                function ee(nativeEvent) {
                   closure_6(nativeEvent.nativeEvent.layout.height);
                 }
-                cResult[20] = te;
-                tmp27 = te;
+                cResult[18] = ee;
+                tmp26 = ee;
               } else {
-                tmp27 = cResult[20];
+                tmp26 = cResult[18];
               }
-              if (cResult[21] === onScroll) {
-                let tmp28;
-                if (cResult[22] === setAllContentSeen) {
-                  tmp28 = cResult[23];
+              if (cResult[19] === onScroll) {
+                let tmp27;
+                if (cResult[20] === setAllContentSeen) {
+                  tmp27 = cResult[21];
                 }
-                if (cResult[24] === header) {
-                  let tmp29;
-                  let tmp34;
-                  if (cResult[25] === tmp3.header) {
-                    tmp29 = cResult[26];
+                if (cResult[22] === header) {
+                  let tmp28;
+                  let tmp33;
+                  if (cResult[23] === tmp3.header) {
+                    tmp28 = cResult[24];
                   }
                   let prop = null;
                   if (hasContentBackground) {
                     prop = tmp3.bodyContainerBackground;
                   }
-                  if (cResult[27] !== size.width > size.height) {
-                    const tmp35 = size.width > size.height ? { flex: 1 } : {};
-                    cResult[27] = size.width > size.height;
-                    cResult[28] = tmp35;
-                    tmp34 = tmp35;
+                  if (cResult[25] !== size.width > size.height) {
+                    const tmp34 = size.width > size.height ? { flex: 1 } : {};
+                    cResult[25] = size.width > size.height;
+                    cResult[26] = tmp34;
+                    tmp33 = tmp34;
                   } else {
-                    tmp34 = cResult[28];
+                    tmp33 = cResult[26];
                   }
-                  if (cResult[29] === tmp3.bodyContainer) {
-                    if (cResult[30] === prop) {
-                      let tmp36;
-                      if (cResult[31] === tmp34) {
-                        tmp36 = cResult[32];
+                  if (cResult[27] === tmp3.bodyContainer) {
+                    if (cResult[28] === prop) {
+                      let tmp35;
+                      if (cResult[29] === tmp33) {
+                        tmp35 = cResult[30];
                       }
-                      if (cResult[33] === appDetails) {
-                        let tmp37;
-                        if (cResult[34] === tmp3.separator) {
-                          tmp37 = cResult[35];
+                      if (cResult[31] === appDetails) {
+                        let tmp36;
+                        if (cResult[32] === tmp3.separator) {
+                          tmp36 = cResult[33];
                         }
-                        if (cResult[36] === body) {
-                          if (cResult[37] === tmp36) {
-                            let tmp43;
-                            if (cResult[38] === tmp37) {
-                              tmp43 = cResult[39];
+                        if (cResult[34] === body) {
+                          if (cResult[35] === tmp35) {
+                            let tmp42;
+                            if (cResult[36] === tmp36) {
+                              tmp42 = cResult[37];
                             }
-                            if (cResult[40] === obscured) {
-                              if (cResult[41] === tmp29) {
-                                let tmp47;
-                                if (cResult[42] === tmp43) {
-                                  tmp47 = cResult[43];
+                            if (cResult[38] === obscured) {
+                              if (cResult[39] === tmp28) {
+                                let tmp46;
+                                if (cResult[40] === tmp42) {
+                                  tmp46 = cResult[41];
                                 }
-                                if (cResult[44] === centerContent) {
-                                  if (cResult[45] === tmp28) {
-                                    if (cResult[46] === tmp47) {
-                                      if (cResult[47] === tmp22) {
-                                        let tmp50;
-                                        if (cResult[48] === tmp24) {
-                                          tmp50 = cResult[49];
+                                if (cResult[42] === centerContent) {
+                                  if (cResult[43] === tmp27) {
+                                    if (cResult[44] === tmp46) {
+                                      if (cResult[45] === tmp22) {
+                                        let tmp49;
+                                        if (cResult[46] === tmp23) {
+                                          tmp49 = cResult[47];
                                         }
-                                        if (cResult[50] === footer) {
-                                          let tmp54;
-                                          if (cResult[51] === tmp3.footerPortrait) {
-                                            tmp54 = cResult[52];
+                                        if (cResult[48] === footer) {
+                                          let tmp53;
+                                          if (cResult[49] === tmp3.footerPortrait) {
+                                            tmp53 = cResult[50];
                                           }
-                                          if (cResult[53] === tmp50) {
-                                            if (cResult[54] === tmp54) {
-                                              let tmp58;
-                                              if (cResult[55] === tmp20) {
-                                                tmp58 = cResult[56];
+                                          if (cResult[51] === tmp49) {
+                                            if (cResult[52] === tmp53) {
+                                              let tmp57;
+                                              if (cResult[53] === tmp20) {
+                                                tmp57 = cResult[54];
                                               }
-                                              return tmp58;
+                                              return tmp57;
                                             }
                                           }
-                                          const obj4 = { style: tmp20, children: items1 };
-                                          items1 = [tmp50, tmp54];
-                                          const tmp60 = React4(KeyboardAwareViewDefault, obj4);
-                                          cResult[53] = tmp50;
-                                          cResult[54] = tmp54;
-                                          cResult[55] = tmp20;
-                                          cResult[56] = tmp60;
-                                          tmp58 = tmp60;
+                                          const obj4 = { style: tmp20, children: items };
+                                          items = [tmp49, tmp53];
+                                          const tmp59 = React4(KeyboardAwareViewDefault, obj4);
+                                          cResult[51] = tmp49;
+                                          cResult[52] = tmp53;
+                                          cResult[53] = tmp20;
+                                          cResult[54] = tmp59;
+                                          tmp57 = tmp59;
                                         }
-                                        let tmp55 = null;
+                                        let tmp54 = null;
                                         if (null != footer) {
                                           const obj5 = {
                                             onLayout(nativeEvent) {
@@ -232,79 +221,79 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onScroll) => {
                                             style: tmp3.footerPortrait,
                                             children: footer
                                           };
-                                          tmp55 = metroImportDefault(hasOwnProperty, obj5);
+                                          tmp54 = metroImportDefault(hasOwnProperty, obj5);
                                         }
-                                        cResult[50] = footer;
-                                        cResult[51] = tmp3.footerPortrait;
-                                        cResult[52] = tmp55;
-                                        tmp54 = tmp55;
+                                        cResult[48] = footer;
+                                        cResult[49] = tmp3.footerPortrait;
+                                        cResult[50] = tmp54;
+                                        tmp53 = tmp54;
                                       }
                                     }
                                   }
                                 }
-                                const obj6 = { style: tmp22, contentContainerStyle: tmp24, ref, onContentSizeChange: tmp26, scrollEventThrottle: 16, onLayout: tmp27, onScroll: tmp28, centerContent, children: tmp47 };
-                                const tmp53 = metroImportDefault(metroRequire, obj6);
-                                cResult[44] = centerContent;
-                                cResult[45] = tmp28;
-                                cResult[46] = tmp47;
-                                cResult[47] = tmp22;
-                                cResult[48] = tmp24;
-                                cResult[49] = tmp53;
-                                tmp50 = tmp53;
+                                const obj6 = { style: tmp22, contentContainerStyle: tmp23, ref, onContentSizeChange: tmp25, scrollEventThrottle: 16, onLayout: tmp26, onScroll: tmp27, centerContent, children: tmp46 };
+                                const tmp52 = metroImportDefault(metroRequire, obj6);
+                                cResult[42] = centerContent;
+                                cResult[43] = tmp27;
+                                cResult[44] = tmp46;
+                                cResult[45] = tmp22;
+                                cResult[46] = tmp23;
+                                cResult[47] = tmp52;
+                                tmp49 = tmp52;
                               }
                             }
-                            const obj7 = { obscured, children: items2 };
-                            items2 = [tmp29, tmp43];
-                            const tmp49 = React4(ObscuredSurfaceDefault, obj7);
-                            cResult[40] = obscured;
-                            cResult[41] = tmp29;
-                            cResult[42] = tmp43;
-                            cResult[43] = tmp49;
-                            tmp47 = tmp49;
+                            const obj7 = { obscured, children: items1 };
+                            items1 = [tmp28, tmp42];
+                            const tmp48 = React4(ObscuredSurfaceDefault, obj7);
+                            cResult[38] = obscured;
+                            cResult[39] = tmp28;
+                            cResult[40] = tmp42;
+                            cResult[41] = tmp48;
+                            tmp46 = tmp48;
                           }
                         }
-                        const obj8 = { style: tmp36, children: items3 };
-                        items3 = [body, tmp37];
-                        const tmp46 = React4(hasOwnProperty, obj8);
-                        cResult[36] = body;
-                        cResult[37] = tmp36;
-                        cResult[38] = tmp37;
-                        cResult[39] = tmp46;
-                        tmp43 = tmp46;
+                        const obj8 = { style: tmp35, children: items2 };
+                        items2 = [body, tmp36];
+                        const tmp45 = React4(hasOwnProperty, obj8);
+                        cResult[34] = body;
+                        cResult[35] = tmp35;
+                        cResult[36] = tmp36;
+                        cResult[37] = tmp45;
+                        tmp42 = tmp45;
                       }
-                      let tmp38 = null;
+                      let tmp37 = null;
                       if (null != appDetails) {
                         const obj10 = { style: tmp3.separator };
-                        const obj9 = { children: items4 };
-                        items4 = [metroImportDefault(hasOwnProperty, obj10), ];
+                        const obj9 = { children: items3 };
+                        items3 = [metroImportDefault(hasOwnProperty, obj10), ];
                         const obj11 = { children: appDetails };
-                        items4[1] = metroImportDefault(hasOwnProperty, obj11);
-                        tmp38 = React4(metroImportAll, obj9);
+                        items3[1] = metroImportDefault(hasOwnProperty, obj11);
+                        tmp37 = React4(metroImportAll, obj9);
                       }
-                      cResult[33] = appDetails;
-                      cResult[34] = tmp3.separator;
-                      cResult[35] = tmp38;
-                      tmp37 = tmp38;
+                      cResult[31] = appDetails;
+                      cResult[32] = tmp3.separator;
+                      cResult[33] = tmp37;
+                      tmp36 = tmp37;
                     }
                   }
-                  const items5 = [tmp3.bodyContainer, prop, tmp34];
-                  cResult[29] = tmp3.bodyContainer;
-                  cResult[30] = prop;
-                  cResult[31] = tmp34;
-                  cResult[32] = items5;
-                  tmp36 = items5;
+                  const items4 = [tmp3.bodyContainer, prop, tmp33];
+                  cResult[27] = tmp3.bodyContainer;
+                  cResult[28] = prop;
+                  cResult[29] = tmp33;
+                  cResult[30] = items4;
+                  tmp35 = items4;
                 }
-                let tmp30 = null;
+                let tmp29 = null;
                 if (null != header) {
                   const obj12 = { style: tmp3.header, children: header };
-                  tmp30 = metroImportDefault(hasOwnProperty, obj12);
+                  tmp29 = metroImportDefault(hasOwnProperty, obj12);
                 }
-                cResult[24] = header;
-                cResult[25] = tmp3.header;
-                cResult[26] = tmp30;
-                tmp29 = tmp30;
+                cResult[22] = header;
+                cResult[23] = tmp3.header;
+                cResult[24] = tmp29;
+                tmp28 = tmp29;
               }
-              function oe(nativeEvent) {
+              function te(nativeEvent) {
                 nativeEvent = nativeEvent.nativeEvent;
                 let contentOffset = nativeEvent.contentOffset;
                 const layoutMeasurement = nativeEvent.layoutMeasurement;
@@ -320,16 +309,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onScroll) => {
                   onScroll(nativeEvent);
                 }
               }
-              cResult[21] = onScroll;
-              cResult[22] = setAllContentSeen;
-              cResult[23] = oe;
-              tmp28 = oe;
+              cResult[19] = onScroll;
+              cResult[20] = setAllContentSeen;
+              cResult[21] = te;
+              tmp27 = te;
             }
-            const items6 = [tmp3.scrollView, tmp21];
+            const items5 = [tmp3.scrollView, tmp21];
             cResult[14] = tmp3.scrollView;
             cResult[15] = tmp21;
-            cResult[16] = items6;
-            tmp22 = items6;
+            cResult[16] = items5;
+            tmp22 = items5;
           }
           const obj13 = { paddingLeft: left, paddingRight: right };
           cResult[11] = left;
@@ -337,11 +326,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onScroll) => {
           cResult[13] = obj13;
           tmp21 = obj13;
         }
-        const items7 = [tmp3.fill, tmp19];
+        const items6 = [tmp3.fill, tmp19];
         cResult[8] = tmp3.fill;
         cResult[9] = tmp19;
-        cResult[10] = items7;
-        tmp20 = items7;
+        cResult[10] = items6;
+        tmp20 = items6;
       }
     }
   }
@@ -367,16 +356,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onScroll) => {
       }
     }
   };
-  const items8 = [first, tmp14, first1, setAllContentSeen];
+  const items7 = [first, tmp14, first1, setAllContentSeen];
   cResult[0] = first;
   cResult[1] = tmp14;
   cResult[2] = first1;
   cResult[3] = setAllContentSeen;
   cResult[4] = fn;
-  cResult[5] = items8;
-  tmp17 = items8;
+  cResult[5] = items7;
+  tmp17 = items7;
   tmp16 = fn;
-}) : ((onScroll) => {
+}) : (function OAuth2AuthorizeContent(onScroll) {
   let appDetails;
   let body;
   let bottom;
@@ -391,10 +380,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onScroll) => {
   let items1;
   let items2;
   let items3;
-  let items4;
+  let items5;
   let items6;
   let items7;
-  let items8;
   let left;
   let obj4;
   let obscured;
@@ -448,11 +436,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onScroll) => {
       }
     }
   }, items);
-  let obj2 = { style: items1, children: items8 };
+  let obj2 = { style: items1, children: items7 };
   items1 = [tmp.fill, { marginBottom: bottom }];
   let obj3 = {
     style: items2,
-    contentContainerStyle: items3,
+    contentContainerStyle: tmp5 ? tmp.scrollViewContentLandscape : tmp.scrollViewContentPortrait,
     ref,
     onContentSizeChange(arg0, arg1) {
       const current = ref.current;
@@ -485,9 +473,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onScroll) => {
     children: React4(tmp3Result2, obj4)
   };
   items2 = [tmp.scrollView, { paddingLeft: left, paddingRight: right }];
-  items3 = [tmp5 ? tmp.scrollViewContentLandscape : tmp.scrollViewContentPortrait];
   let tmp18Result = null;
-  obj4 = { obscured, children: items4 };
+  obj4 = { obscured, children: items3 };
   const tmp3Result = KeyboardAwareViewDefault;
   const tmp19 = metroRequire;
   tmp3Result2 = ObscuredSurfaceDefault;
@@ -495,28 +482,28 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onScroll) => {
     const obj5 = { style: tmp.header, children: header };
     tmp18Result = tmp18(hasOwnProperty, obj5);
   }
-  items4 = [tmp18Result, ];
-  const items5 = [tmp.bodyContainer, , ];
+  items3 = [tmp18Result, ];
+  const items4 = [tmp.bodyContainer, , ];
   let prop = null;
   if (hasContentBackground) {
     prop = tmp.bodyContainerBackground;
   }
-  items5[1] = prop;
-  const obj6 = { style: items5, children: items6 };
-  items5[2] = size.width > size.height ? { flex: 1 } : {};
-  items6 = [body, ];
+  items4[1] = prop;
+  const obj6 = { style: items4, children: items5 };
+  items4[2] = size.width > size.height ? { flex: 1 } : {};
+  items5 = [body, ];
   let tmp16Result = null;
   if (null != appDetails) {
-    const obj7 = { children: items7 };
+    const obj7 = { children: items6 };
     const obj8 = { style: tmp.separator };
-    items7 = [metroImportDefault(hasOwnProperty, obj8), ];
+    items6 = [metroImportDefault(hasOwnProperty, obj8), ];
     const obj9 = { children: appDetails };
-    items7[1] = metroImportDefault(hasOwnProperty, obj9);
+    items6[1] = metroImportDefault(hasOwnProperty, obj9);
     tmp16Result = tmp16(metroImportAll, obj7);
   }
-  items6[1] = tmp16Result;
-  items4[1] = React4(hasOwnProperty, obj6);
-  items8 = [metroImportDefault(tmp19, obj3), ];
+  items5[1] = tmp16Result;
+  items3[1] = React4(hasOwnProperty, obj6);
+  items7 = [metroImportDefault(tmp19, obj3), ];
   let tmp18Result2 = null;
   if (null != footer) {
     const obj10 = {
@@ -528,7 +515,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onScroll) => {
     };
     tmp18Result2 = tmp18(tmp23, obj10);
   }
-  items8[1] = tmp18Result2;
+  items7[1] = tmp18Result2;
   return React4(tmp3Result, obj2);
 });
 let size = size_mod;

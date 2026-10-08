@@ -1,13 +1,13 @@
-// Module ID: 2017
-// Function ID: 2018
+// Module ID: 2029
+// Function ID: 2030
 // Name: getGameMediaRefURL
-// Dependencies: [2018, 1402, 2022, 2]
+// Dependencies: [2030, 1414, 2034, 2]
 // Exports: default
 
-// Module 2017 (getGameMediaRefURL)
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import StringUtils from "StringUtils" /* 2018 */;
-import ImageProxyUtils from "ImageProxyUtils" /* 2022 */;
+// Module 2029 (getGameMediaRefURL)
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import StringUtils from "StringUtils" /* 2030 */;
+import ImageProxyUtils from "ImageProxyUtils" /* 2034 */;
 import size_mod from "module_2" /* 2 */;
 
 let size = size_mod;

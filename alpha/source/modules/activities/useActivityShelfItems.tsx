@@ -1,17 +1,17 @@
-// Module ID: 11667
-// Function ID: 11668
+// Module ID: 11732
+// Function ID: 11733
 // Name: useActivityShelfItems
-// Dependencies: [19, 8546, 558, 576, 504, 11668, 11669, 11670, 2]
+// Dependencies: [19, 9031, 558, 576, 504, 11733, 11734, 11735, 2]
 
-// Module 11667 (useActivityShelfItems)
+// Module 11732 (useActivityShelfItems)
 import react from "react" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 8546 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9031 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(enableFilter) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityShelfItems(enableFilter) {
   let tmp6;
   let tmp7;
   let obj = enableFilter(576);
@@ -38,10 +38,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(enableFilter
   }
   const tmp2Result = enableFilter(504);
   const filter = tmp2Result.useStateFromStoresObject(tmp6, tmp7).filter;
-  const tmp2Result3 = enableFilter(11668);
+  const tmp2Result3 = enableFilter(11733);
   const activityShelfData = tmp2Result3.useActivityShelfData(guildId);
-  const tmp10 = filter(11669)(activityShelfData);
-  const tmp2Result4 = enableFilter(11670);
+  const tmp10 = filter(11734)(activityShelfData);
+  const tmp2Result4 = enableFilter(11735);
   const developerActivityShelfItems = tmp2Result4.useDeveloperActivityShelfItems();
   if (cResult[2] === tmp5) {
     let tmp12;
@@ -82,7 +82,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(enableFilter
     cResult[8] = found;
     tmp13 = found;
   }
-  const fn2 = function p(application) {
+  function shouldKeepShelfItem(application) {
     let tmp = !enableFilter;
     if (enableFilter) {
       let hasItem = "" === filter;
@@ -95,12 +95,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(enableFilter
       tmp = hasItem;
     }
     return tmp;
-  };
+  }
   cResult[2] = tmp5;
   cResult[3] = filter;
-  cResult[4] = fn2;
-  tmp12 = fn2;
-}) : ((enableFilter) => {
+  cResult[4] = shouldKeepShelfItem;
+  tmp12 = shouldKeepShelfItem;
+}) : (function useActivityShelfItems(enableFilter) {
   let closure_2;
   let flag = enableFilter.enableFilter;
   const guildId = enableFilter.guildId;
@@ -113,11 +113,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(enableFilter
     const obj = { filter: filter.getFilter() };
     return obj;
   }).filter;
-  const obj2 = flag(11668);
+  const obj2 = flag(11733);
   const activityShelfData = obj2.useActivityShelfData(guildId);
-  const tmp2 = filter(11669)(activityShelfData);
+  const tmp2 = filter(11734)(activityShelfData);
   dependencyMap = tmp2;
-  const obj3 = flag(11670);
+  const obj3 = flag(11735);
   const developerActivityShelfItems = obj3.useDeveloperActivityShelfItems();
   const items1 = [developerActivityShelfItems, flag, filter, tmp2];
   return developerActivityShelfItems.useMemo(() => {

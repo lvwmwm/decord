@@ -1,23 +1,21 @@
-// Module ID: 12263
-// Function ID: 12264
+// Module ID: 12342
+// Function ID: 12343
 // Name: GuildProgressItem
-// Dependencies: [19, 21, 4896, 558, 576, 12145, 12148, 12264, 1126, 12265, 12150, 2]
+// Dependencies: [19, 21, 5090, 558, 576, 12224, 12227, 12343, 1126, 12344, 12229, 2]
 
-// Module 12263 (GuildProgressItem)
+// Module 12342 (GuildProgressItem)
 import Fragment from "Fragment" /* 21 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 12145 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 12148 */;
-import GuildProgressCircleDefault from "GuildProgressCircle" /* 12265 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 12224 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 12227 */;
+import GuildProgressCircleDefault from "GuildProgressCircle" /* 12344 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let guild;
-
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ icon: { width: 32, height: 32 } });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProgressItem(guild) {
   let completed;
   let tmp = guild;
   let obj = guild(completed[4]);
@@ -79,18 +77,18 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       cResult[12] = tmp16;
       tmp13 = tmp16;
     }
-    let fn2;
+    let fn;
     if (numFinished > 0) {
       if (numFinished < totalSteps) {
-        fn2 = () => jsx(GuildProgressCircleDefault, { percent: 100 * numFinished / totalSteps, size: 32 });
+        fn = () => jsx(GuildProgressCircleDefault, { percent: 100 * numFinished / totalSteps, size: 32 });
       }
     }
     cResult[5] = numFinished;
     cResult[6] = totalSteps;
-    cResult[7] = fn2;
-    tmp12 = fn2;
+    cResult[7] = fn;
+    tmp12 = fn;
   }
-  const fn = function s() {
+  function openGuildProgress() {
     const tmp = completed;
     if (!tmp) {
       const obj = GuildProgressActionCreatorsDefault;
@@ -98,12 +96,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     }
     const obj2 = GuildProgressUtils;
     obj2.openActionSheet(guild);
-  };
+  }
   cResult[0] = completed;
   cResult[1] = guild;
-  cResult[2] = fn;
-  tmp6 = fn;
-}) : ((guild) => {
+  cResult[2] = openGuildProgress;
+  tmp6 = openGuildProgress;
+}) : (function GuildProgressItem(guild) {
   let fn;
   let intl;
   let obj3;
@@ -116,7 +114,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   completed = iOSCompletionStates.completed;
   const totalSteps = iOSCompletionStates.totalSteps;
   let obj2 = {
-    onPress() {
+    onPress: function openGuildProgress() {
       const tmp = completed;
       if (!tmp) {
         const obj = GuildProgressActionCreatorsDefault;

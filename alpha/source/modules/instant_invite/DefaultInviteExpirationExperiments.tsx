@@ -1,14 +1,14 @@
-// Module ID: 9498
-// Function ID: 9499
+// Module ID: 8662
+// Function ID: 8663
 // Name: DefaultInviteExpirationExperiments
-// Dependencies: [2074, 1085, 9496, 4780, 558, 576, 573, 2]
+// Dependencies: [2086, 1085, 8660, 4974, 558, 576, 573, 2]
 
-// Module 9498 (DefaultInviteExpirationExperiments)
+// Module 8662 (DefaultInviteExpirationExperiments)
 import react from "react" /* 576 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9496 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 8660 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import Constants from "Constants" /* 1085 */;
-import createExperiment_mod from "module_4780" /* 4780 */;
+import createExperiment_mod from "module_4974" /* 4974 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ let obj2 = { kind: "guild", id: "2026-05_default_invite_expiration_guild_web", l
 items1 = [{ id: 1, label: "14 days", config: { defaultMaxAge: 1209600 } }, { id: 2, label: "30 days", config: { defaultMaxAge: 2592000 } }, { id: 3, label: "60 days", config: { defaultMaxAge: 5184000 } }];
 let experiment1 = createExperiment.createExperiment(obj2);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDefaultInviteExpiration(guildId) {
   const obj = guildId(576);
   const cResult = obj.c(12);
   const tmp = guildId;
@@ -150,7 +150,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[1] = tmp4;
   cResult[2] = obj4;
   tmp5 = obj4;
-}) : ((guildId) => {
+}) : (function useDefaultInviteExpiration(guildId) {
   guildId = guildId.guildId;
   const _location = guildId.location;
   let tmp = guildId;
@@ -176,7 +176,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   return tmp7;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaxAgeOptions(arg0) {
   let _location;
   let guildId;
   let items;
@@ -244,7 +244,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = guildId;
   cResult[2] = obj4;
   tmp3 = obj4;
-}) : ((arg0) => {
+}) : (function useMaxAgeOptions(arg0) {
   let _location;
   let guildId;
   let items;

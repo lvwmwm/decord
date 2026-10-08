@@ -1,25 +1,23 @@
-// Module ID: 15628
-// Function ID: 15629
+// Module ID: 15908
+// Function ID: 15909
 // Name: useFrameMonitor
-// Dependencies: [32, 19, 558, 576, 15626, 2]
+// Dependencies: [32, 19, 558, 576, 15906, 2]
 
-// Module 15628 (useFrameMonitor)
-import startFrameMonitor from "startFrameMonitor" /* 15626 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+// Module 15908 (useFrameMonitor)
+import startFrameMonitor from "startFrameMonitor" /* 15906 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, cResult;
+let _require, ref;
 
-let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
-  let ref;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrameMonitor(cResult) {
   let ref2;
   let tmp10;
-  let tmp13;
+  let tmp12;
   let tmp3;
   let tmp4;
   let tmp5;
@@ -29,12 +27,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
   _require = cResult;
   let obj = require("react");
   cResult = obj.c(9);
-  [tmp3, dependencyMap] = _slicedToArray(react.useState(false), 2);
-  const tmp2 = _slicedToArray(react.useState(false), 2);
-  _slicedToArray = react.useRef(null);
+  [tmp3, dependencyMap] = ref(react.useState(false), 2);
+  const tmp2 = ref(react.useState(false), 2);
+  ref = react.useRef(null);
   react = react.useRef(cResult);
   if (cResult[0] !== cResult) {
-    const fn = function c() {
+    const fn = function o() {
       ref2.current = current;
     };
     const items = [cResult];
@@ -65,7 +63,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
     tmp7 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
+    class M {
       constructor() {
         current = ref.current;
         if (null != current) {
@@ -76,10 +74,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
         }
       }
     }
-    cResult[4] = R;
-    tmp8 = R;
+    cResult[4] = M;
+    tmp8 = M;
   } else {
-    class R {
+    class M {
       constructor() {
         current = ref.current;
         if (null != current) {
@@ -94,30 +92,32 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     class R {
       constructor() {
-        current = ref.current;
-        if (null != current) {
-          ref.current = null;
-          const stopResult = current.stop();
-          dependencyMap(false);
-          ref2.current(stopResult);
-        }
+        return () => {
+          current = ref.current;
+          const tmp = ref;
+          if (current != null) {
+            current.stop();
+          }
+          tmp.current = null;
+        };
       }
     }
     const items1 = [];
-    cResult[5] = tmp11;
+    cResult[5] = R;
     cResult[6] = items1;
     tmp10 = items1;
-    tmp9 = tmp11;
+    tmp9 = R;
   } else {
     class R {
       constructor() {
-        current = ref.current;
-        if (null != current) {
-          ref.current = null;
-          const stopResult = current.stop();
-          dependencyMap(false);
-          ref2.current(stopResult);
-        }
+        return () => {
+          current = ref.current;
+          const tmp = ref;
+          if (current != null) {
+            current.stop();
+          }
+          tmp.current = null;
+        };
       }
     }
     tmp10 = cResult[6];
@@ -126,43 +126,44 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
   if (cResult[7] !== tmp3) {
     class R {
       constructor() {
-        current = ref.current;
-        if (null != current) {
-          ref.current = null;
-          const stopResult = current.stop();
-          dependencyMap(false);
-          ref2.current(stopResult);
-        }
+        return () => {
+          current = ref.current;
+          const tmp = ref;
+          if (current != null) {
+            current.stop();
+          }
+          tmp.current = null;
+        };
       }
     }
-    tmp14[0] = tmp3;
-    tmp14[1] = tmp7;
-    tmp14[2] = tmp8;
+    tmp13[0] = tmp3;
+    tmp13[1] = tmp7;
+    tmp13[2] = tmp8;
     cResult[7] = tmp3;
-    cResult[8] = tmp14;
-    tmp13 = tmp14;
+    cResult[8] = tmp13;
+    tmp12 = tmp13;
   } else {
     class R {
       constructor() {
-        current = ref.current;
-        if (null != current) {
-          ref.current = null;
-          const stopResult = current.stop();
-          dependencyMap(false);
-          ref2.current(stopResult);
-        }
+        return () => {
+          current = ref.current;
+          const tmp = ref;
+          if (current != null) {
+            current.stop();
+          }
+          tmp.current = null;
+        };
       }
     }
   }
-  return tmp13;
-}) : ((cResult) => {
-  let closure_1;
-  let monitoring;
-  let ref;
+  return tmp12;
+}) : (function useFrameMonitor(cResult) {
   let ref2;
   let current = cResult;
-  [monitoring, closure_1] = react.useState(false);
-  _slicedToArray = react.useRef(null);
+  let tmp = ref(react.useState(false), 2);
+  let closure_1 = tmp[1];
+  const monitoring = tmp[0];
+  ref = react.useRef(null);
   react = react.useRef(cResult);
   const items = [cResult];
   const effect = react.useEffect(() => {

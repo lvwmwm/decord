@@ -1,14 +1,14 @@
-// Module ID: 17988
-// Function ID: 17989
+// Module ID: 18275
+// Function ID: 18276
 // Name: FormTrialActiveUserLimitPicker
-// Dependencies: [19, 21, 17989, 13726, 1126, 4860, 8978, 1987, 2]
+// Dependencies: [19, 21, 18276, 13948, 1126, 5054, 8529, 1999, 2]
 // Exports: default
 
-// Module 17988 (FormTrialActiveUserLimitPicker)
+// Module 18275 (FormTrialActiveUserLimitPicker)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -26,9 +26,9 @@ export default function FormTrialActiveUserLimitPicker(activeTrialUserlimit) {
   dependencyMap = undefined;
   let tmp = dependencyMap;
   const disabled = activeTrialUserlimit.disabled;
-  dependencyMap = onChange(17989)();
+  dependencyMap = onChange(18276)();
   let tmp2 = jsx;
-  const tmp3 = onChange(13726);
+  const tmp3 = onChange(13948);
   if (null == str) {
     let intl = str(1126).intl;
     stringResult = intl.string(str(1126).t.zHfL6o);
@@ -37,7 +37,7 @@ export default function FormTrialActiveUserLimitPicker(activeTrialUserlimit) {
   }
   let obj = {
     label: stringResult,
-    onPress() {
+    onPress: function handleSelectLimit() {
       let intl;
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       let obj = {
@@ -51,7 +51,7 @@ export default function FormTrialActiveUserLimitPicker(activeTrialUserlimit) {
         selectedItem: str,
         hasIcons: false
       };
-      const tmp2 = asyncRequire(8978, dependencyMap.paths);
+      const tmp2 = asyncRequire(8529, dependencyMap.paths);
       intl = intl2.intl;
       openLazy(tmp2, GuildRoleSubscriptionTrialActiveUserLimitSelect, obj);
     },

@@ -1,15 +1,15 @@
-// Module ID: 16156
-// Function ID: 16157
+// Module ID: 16416
+// Function ID: 16417
 // Name: UnclaimedGamesActionCreators
-// Dependencies: [5, 16157, 1085, 1282, 584, 504, 1102, 569, 558, 2]
+// Dependencies: [5, 16417, 1085, 1294, 584, 504, 1102, 569, 558, 2]
 
-// Module 16156 (UnclaimedGamesActionCreators)
+// Module 16416 (UnclaimedGamesActionCreators)
 import BackoffDefault from "Backoff" /* 569 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UnclaimedGamesStore from "UnclaimedGamesStore" /* 16157 */;
+import UnclaimedGamesStore from "UnclaimedGamesStore" /* 16417 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -107,7 +107,7 @@ obj = {
 };
 const fetchStore = get_initialized.createFetchStore(UnclaimedGamesStore, obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUnclaimedGameIdsForGuild(arg0, arg1) {
   let tmp2 = undefined === arg1;
   const tmp = fetchStore;
   if (!tmp2) {
@@ -122,7 +122,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     tmp3 = closure_6;
   }
   return tmp3;
-}) : ((arg0) => {
+}) : (function useUnclaimedGameIdsForGuild(arg0) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
@@ -139,14 +139,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
 });
 let closure_10 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasUnclaimedGames(arg0, arg1) {
   let tmp2 = undefined === arg1;
   const tmp = closure_10;
   if (!tmp2) {
     tmp2 = arg1;
   }
   return tmp(arg0, tmp2).length > 0;
-}) : ((arg0) => {
+}) : (function useHasUnclaimedGames(arg0) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;

@@ -1,26 +1,24 @@
-// Module ID: 13033
-// Function ID: 13034
+// Module ID: 13311
+// Function ID: 13312
 // Name: EditCollectiblesPickerList
-// Dependencies: [32, 19, 17, 21, 4896, 13028, 558, 576, 4892, 12, 8404, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 13306, 558, 576, 5086, 12, 8600, 2]
 
-// Module 13033 (EditCollectiblesPickerList)
+// Module 13311 (EditCollectiblesPickerList)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 13028 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 13306 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let header;
 
 let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 let react = react_mod;
 ({ ActivityIndicator: closure_4, View: hasOwnProperty } = react_native);
 const jsx = Fragment.jsx;
@@ -29,7 +27,7 @@ obj2 = { paddingHorizontal: useCollectibleListLayout.GUTTER_SIZE, paddingTop: 10
 let closure_7 = createStyles.createStyles(obj);
 let memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((header) => {
+let closure_8 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function DefaultHeader(header) {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(5);
@@ -55,12 +53,12 @@ let closure_8 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((header) =>
   cResult[3] = tmp5;
   cResult[4] = tmp9;
   tmp8 = tmp9;
-}) : ((header) => {
+}) : (function DefaultHeader(header) {
   header = header.header;
   return <hasOwnProperty style={closure_7().header}>{jsx(Text_Text.Heading, { variant: "heading-sm/medium", color: "mobile-text-heading-primary", children: header })}</hasOwnProperty>;
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderRow) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCollectiblesPickerList(renderRow) {
   let closure_3;
   let contentContainerStyle;
   let first;
@@ -132,15 +130,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderRow) => {
       }
       const _Symbol2 = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        class O {
+        class F {
           constructor(type) {
             return type.type;
           }
         }
-        cResult[8] = O;
-        tmp14 = O;
+        cResult[8] = F;
+        tmp14 = F;
       } else {
-        class O {
+        class F {
           constructor(type) {
             return type.type;
           }
@@ -148,15 +146,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderRow) => {
       }
       const _Symbol3 = Symbol;
       if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        class B {
+        class O {
           constructor(key) {
             return key.key;
           }
         }
-        cResult[9] = B;
-        tmp15 = B;
+        cResult[9] = O;
+        tmp15 = O;
       } else {
-        class B {
+        class O {
           constructor(key) {
             return key.key;
           }
@@ -165,13 +163,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderRow) => {
       if (tmp4) {
         let tmp19;
         let tmp22;
-        class B {
+        class O {
           constructor(key) {
             return key.key;
           }
         }
         if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-          class B {
+          class O {
             constructor(key) {
               return key.key;
             }
@@ -180,14 +178,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderRow) => {
           cResult[10] = tmp21;
           tmp19 = tmp21;
         } else {
-          class B {
+          class O {
             constructor(key) {
               return key.key;
             }
           }
         }
         if (cResult[11] !== tmp5.loadingContainer) {
-          class B {
+          class O {
             constructor(key) {
               return key.key;
             }
@@ -197,7 +195,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderRow) => {
           cResult[12] = tmp24;
           tmp22 = tmp24;
         } else {
-          class B {
+          class O {
             constructor(key) {
               return key.key;
             }
@@ -205,20 +203,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderRow) => {
         }
         return tmp22;
       } else {
-        class B {
+        class O {
           constructor(key) {
             return key.key;
           }
         }
         if (contentContainerStyle == null) {
-          class B {
+          class O {
             constructor(key) {
               return key.key;
             }
           }
         }
         if (cResult[13] === tmp10) {
-          class B {
+          class O {
             constructor(key) {
               return key.key;
             }
@@ -233,7 +231,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderRow) => {
       }
     }
   }
-  const fn2 = function z(item) {
+  const fn2 = function $(item) {
     let tmp4;
     item = item.item;
     if ("header" === item.type) {
@@ -249,7 +247,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderRow) => {
   cResult[6] = selectedSkuId;
   cResult[7] = fn2;
   tmp13 = fn2;
-}) : ((sections) => {
+}) : (function EditCollectiblesPickerList(sections) {
   let _undefined;
   let c4;
   let tmp17;

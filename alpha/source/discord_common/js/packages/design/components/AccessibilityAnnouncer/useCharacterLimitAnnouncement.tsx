@@ -1,17 +1,15 @@
-// Module ID: 6589
-// Function ID: 6590
+// Module ID: 6765
+// Function ID: 6766
 // Name: useCharacterLimitAnnouncement
-// Dependencies: [19, 558, 576, 4596, 2]
+// Dependencies: [19, 558, 576, 4788, 2]
 
-// Module 6589 (useCharacterLimitAnnouncement)
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4596 */;
+// Module 6765 (useCharacterLimitAnnouncement)
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4788 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let currentLength;
-
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentLength) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCharacterLimitAnnouncement(currentLength) {
   let maxLength;
   const obj = currentLength(maxLength[2]);
   const cResult = obj.c(5);
@@ -31,7 +29,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentLength) => {
       const effect = obj2.useEffect(tmp2, tmp3);
     }
   }
-  const fn = function t() {
+  const fn = function c() {
     if (null != maxLength) {
       if (currentLength >= tmp) {
         if (!ref.current) {
@@ -53,7 +51,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentLength) => {
   cResult[4] = items;
   tmp3 = items;
   tmp2 = fn;
-}) : ((currentLength) => {
+}) : (function useCharacterLimitAnnouncement(currentLength) {
   currentLength = currentLength.currentLength;
   const maxLength = currentLength.maxLength;
   const message = currentLength.message;

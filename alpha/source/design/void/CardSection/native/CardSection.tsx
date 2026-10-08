@@ -1,18 +1,18 @@
-// Module ID: 8940
-// Function ID: 8941
+// Module ID: 8571
+// Function ID: 8572
 // Name: CardSection
-// Dependencies: [19, 17, 1085, 21, 4896, 5922, 587, 558, 576, 8941, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 5902, 587, 558, 576, 8572, 2]
 
-// Module 8940 (CardSection)
+// Module 8571 (CardSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8941 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8572 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import TextStyles_mod from "TextStyles" /* 5922 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import TextStyles_mod from "TextStyles" /* 5902 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ DISPLAY_EXTRABOLD = Fonts.DISPLAY_EXTRABOLD;
 TextStyles = TextStyles_mod;
 obj2 = { borderRadius: nativeDefault.radii.xs, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 let closure_6 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CardSection(arg0) {
   let accessibilityLabel;
   let accessibilityRole;
   let cardStyle;
@@ -126,7 +126,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp3.container;
   cResult[2] = items3;
   tmp4 = items3;
-}) : ((arg0) => {
+}) : (function CardSection(arg0) {
   let accessibilityLabel;
   let accessibilityRole;
   let cardStyle;

@@ -1,9 +1,9 @@
-// Module ID: 12033
-// Function ID: 12034
+// Module ID: 12106
+// Function ID: 12107
 // Name: TouchableBackground
-// Dependencies: [32, 109, 19, 17, 21, 4896, 587, 558, 576, 2]
+// Dependencies: [32, 109, 19, 17, 21, 5090, 587, 558, 576, 2]
 
-// Module 12033 (TouchableBackground)
+// Module 12106 (TouchableBackground)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,11 +11,9 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let onPressOut;
 
 let metroImportDefault;
 let metroRequire;
@@ -26,7 +24,7 @@ const jsx = Fragment.jsx;
 let obj = { default: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE };
 let closure_9 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressOut) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TouchableBackground(onPressOut) {
   let activeBackgroundColor;
   let children;
   let closure_129_2;
@@ -71,7 +69,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressOut) => {
     cResult[9] = fn;
   }
   if (cResult[10] !== tmp5) {
-    class E {
+    class R {
       constructor(arg0) {
         if (closure_1 != null) {
           tmp(arg0);
@@ -80,9 +78,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressOut) => {
       }
     }
     cResult[10] = tmp5;
-    cResult[11] = E;
+    cResult[11] = R;
   } else {
-    class E {
+    class R {
       constructor(arg0) {
         if (closure_1 != null) {
           tmp(arg0);
@@ -92,7 +90,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressOut) => {
     }
   }
   if (cResult[12] === tmp2) {
-    class E {
+    class R {
       constructor(arg0) {
         if (closure_1 != null) {
           tmp(arg0);
@@ -103,7 +101,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressOut) => {
   }
   let tmp17 = tmp14;
   if (tmp17) {
-    class E {
+    class R {
       constructor(arg0) {
         if (closure_1 != null) {
           tmp(arg0);
@@ -113,7 +111,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressOut) => {
     }
     const tmp18 = tmp2;
     if (tmp2 == null) {
-      class E {
+      class R {
         constructor(arg0) {
           if (closure_1 != null) {
             tmp(arg0);
@@ -129,7 +127,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressOut) => {
   cResult[13] = tmp14;
   cResult[14] = tmp12;
   cResult[15] = tmp17;
-}) : ((onPressOut) => {
+}) : (function TouchableBackground(onPressOut) {
   let activeBackgroundColor;
   let c2;
   let children;

@@ -1,86 +1,78 @@
-// Module ID: 17666
-// Function ID: 17667
+// Module ID: 17949
+// Function ID: 17950
 // Name: MessageRemindersNotificationManager
-// Dependencies: [11296, 7496, 584, 1102, 6620, 2]
+// Dependencies: [9632, 584, 1102, 6797, 2]
 
-// Module 17666 (MessageRemindersNotificationManager)
+// Module 17949 (MessageRemindersNotificationManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import DurationsDefault from "Durations" /* 1102 */;
-import ForLaterExperiment from "ForLaterExperiment" /* 7496 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11296 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6620 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 9632 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6797 */;
 import size from "module_2" /* 2 */;
 
+let importDefault;
+
 function scheduleNextNotification() {
-  let found;
   let timeout;
-  let tmp = dependencyMap;
-  let obj = found(7496);
-  if (obj.isForLaterExperimentOn("MessageRemindersNotificationManager")) {
-    if (null != timeout) {
-      const _clearTimeout = clearTimeout;
-      clearTimeout(timeout);
+  if (null != timeout) {
+    let tmp = globalThis;
+    const _clearTimeout = clearTimeout;
+    clearTimeout(timeout);
+  }
+  const messageReminders = SavedMessagesStore.getMessageReminders();
+  const found = messageReminders.find(function(saveData) {
+    let tmp = null != saveData.saveData.dueAt;
+    if (tmp) {
+      const _Date = Date;
+      const self = this;
+      const self2 = this;
+      const dueAt = saveData.saveData.dueAt;
+      tmp = dueAt > new Date();
+      const date = new Date();
     }
-    const messageReminders = SavedMessagesStore.getMessageReminders();
-    found = messageReminders.find(function(saveData) {
-      let tmp = null != saveData.saveData.dueAt;
-      if (tmp) {
-        const _Date = Date;
-        const self = this;
-        const self2 = this;
-        const dueAt = saveData.saveData.dueAt;
-        tmp = dueAt > new Date();
-        const date = new Date();
-      }
-      return tmp;
-    });
-    let dueAt1;
-    if (found != null) {
-      const saveData = found.saveData;
-      if (saveData != null) {
-        dueAt1 = saveData.dueAt;
-      }
-    }
-    if (null != dueAt1) {
-      let _Date = Date;
-      const timestamp = Date.now();
-      let dueAt = found.saveData.dueAt;
-      const sum = timestamp + DurationsDefault.Millis.WEEK;
-      if (dueAt.getTime() <= sum) {
-        const dueAt2 = found.saveData.dueAt;
-        const _Date2 = Date;
-        const time = dueAt2.getTime();
-        const _setTimeout = setTimeout;
-        timeout = setTimeout(() => {
-          const obj = ForLaterExperiment;
-          const tmp = found;
-          if (obj.isForLaterExperimentOn("MessageRemindersNotificationManager")) {
-            const obj3 = { type: "MESSAGE_REMINDER_DUE", savedMessage: tmp };
-            const obj2 = DispatcherDefault;
-            obj2.dispatch(obj3);
-            scheduleNextNotification();
-          }
-        }, time - Date.now());
-      }
-    } else {
-      timeout = null;
+    return tmp;
+  });
+  let dueAt1;
+  if (found != null) {
+    const saveData = found.saveData;
+    if (saveData != null) {
+      dueAt1 = saveData.dueAt;
     }
   }
+  if (null != dueAt1) {
+    let _Date = Date;
+    const timestamp = Date.now();
+    let dueAt = found.saveData.dueAt;
+    const sum = timestamp + found(1102).Millis.WEEK;
+    if (dueAt.getTime() <= sum) {
+      const dueAt2 = found.saveData.dueAt;
+      const _Date2 = Date;
+      const time = dueAt2.getTime();
+      const _setTimeout = setTimeout;
+      timeout = setTimeout(() => {
+        const obj = DispatcherDefault;
+        const obj2 = { type: "MESSAGE_REMINDER_DUE", savedMessage: found };
+        obj.dispatch(obj2);
+        scheduleNextNotification();
+      }, time - Date.now());
+    }
+  } else {
+    timeout = null;
+  }
 }
-let c4 = null;
+let c3 = null;
 class MessageRemindersNotificationManager extends AutomaticLifecycleManager {
   constructor() {
     const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
-    require = applyArgumentsResult;
+    importDefault = applyArgumentsResult;
     applyArgumentsResult.actions = {
       SAVED_MESSAGES_UPDATE() {
-        return require.handleUpdates();
+        return importDefault.handleUpdates();
       },
       SAVED_MESSAGE_CREATE() {
-        return require.handleUpdates();
+        return importDefault.handleUpdates();
       },
       SAVED_MESSAGE_DELETE() {
-        return require.handleUpdates();
+        return importDefault.handleUpdates();
       }
     };
     applyArgumentsResult.handleUpdates = function handleUpdates() {

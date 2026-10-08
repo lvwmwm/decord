@@ -1,14 +1,14 @@
-// Module ID: 6604
-// Function ID: 6605
+// Module ID: 6780
+// Function ID: 6781
 // Name: DefaultChannelUtils
-// Dependencies: [2104, 2051, 1085, 1097, 558, 576, 4520, 504, 2]
+// Dependencies: [2116, 2063, 1085, 1097, 558, 576, 4712, 504, 2]
 // Exports: canChannelBeDefault
 
-// Module 6604 (DefaultChannelUtils)
+// Module 6780 (DefaultChannelUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4520 */;
-import GatedChannelStore from "GatedChannelStore" /* 2104 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4712 */;
+import GatedChannelStore from "GatedChannelStore" /* 2116 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ let _require;
 let hasOwnProperty;
 let metroRequire;
 ({ ChannelTypesSets: hasOwnProperty, Permissions: metroRequire } = Constants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanChannelBeDefault(arg0, arg1) {
   let closure_0;
   let first;
   _require = arg0;
@@ -66,7 +66,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[2] = arg0;
   cResult[3] = fn;
   tmp7 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useCanChannelBeDefault(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;

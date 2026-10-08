@@ -1,20 +1,20 @@
-// Module ID: 9990
-// Function ID: 9991
+// Module ID: 9520
+// Function ID: 9521
 // Name: useEmojiColorPalette
-// Dependencies: [4885, 1193, 558, 576, 504, 4735, 7627, 2]
+// Dependencies: [5079, 1205, 558, 576, 504, 4929, 7948, 2]
 
-// Module 9990 (useEmojiColorPalette)
+// Module 9520 (useEmojiColorPalette)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import EmojiColorUtils from "EmojiColorUtils" /* 7627 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
+import EmojiColorUtils from "EmojiColorUtils" /* 7948 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((colors) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiColorPalette(colors) {
   let saturation;
   let theme;
   let tmp4;
@@ -71,7 +71,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((colors) => {
   cResult[6] = stateFromStores;
   cResult[7] = emojiColorPalette;
   tmp12 = emojiColorPalette;
-}) : ((colors) => {
+}) : (function useEmojiColorPalette(colors) {
   let saturation;
   let theme;
   let obj = get_initialized;

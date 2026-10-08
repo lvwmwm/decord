@@ -1,19 +1,17 @@
-// Module ID: 9815
-// Function ID: 9816
+// Module ID: 10378
+// Function ID: 10379
 // Name: SafetyWarningBanner
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 5416, 5421, 9811, 1126, 1188, 9816, 9817, 4892, 5601, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 5725, 5730, 10374, 1126, 1200, 10379, 10380, 5086, 5375, 2]
 
-// Module 9815 (SafetyWarningBanner)
+// Module 10378 (SafetyWarningBanner)
 import nativeDefault from "native" /* 587 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 9811 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10374 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channelId;
 
 let closure_4;
 let hasOwnProperty;
@@ -39,7 +37,7 @@ rect = { position: "absolute", top: nativeDefault.space.PX_8, right: nativeDefau
 obj5 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 obj6 = { flexDirection: "row", marginTop: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8 };
 let closure_9 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyWarningBanner(channelId) {
   let closeButton;
   let container;
   let description;
@@ -309,7 +307,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[6] = warningType;
   cResult[7] = fn2;
   tmp8 = fn2;
-}) : ((channelId) => {
+}) : (function SafetyWarningBanner(channelId) {
   let Icon;
   let description;
   let header;

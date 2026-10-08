@@ -1,19 +1,19 @@
-// Module ID: 5313
-// Function ID: 5314
+// Module ID: 5625
+// Function ID: 5626
 // Name: useDisplayNameStylesEnabled
-// Dependencies: [19, 4885, 558, 576, 504, 5314, 2]
+// Dependencies: [19, 5079, 558, 576, 504, 5626, 2]
 
-// Module 5313 (useDisplayNameStylesEnabled)
+// Module 5625 (useDisplayNameStylesEnabled)
 import react from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import react3 from "react" /* 5314 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import react3 from "react" /* 5626 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const useContext = react.useContext;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDisplayNameStylesEnabled() {
   let tmp4;
   let tmp5;
   const obj = react2;
@@ -31,9 +31,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     [tmp4, tmp5] = cResult;
   }
   const tmpResult = get_initialized;
-  const overrideSettings = tmpResult.useStateFromStores(tmp4, tmp5) || useContext(tmp(5314).DisplayNameStylesContext).overrideSettings;
+  const overrideSettings = tmpResult.useStateFromStores(tmp4, tmp5) || useContext(tmp(5626).DisplayNameStylesContext).overrideSettings;
   return overrideSettings;
-}) : (() => {
+}) : (function useDisplayNameStylesEnabled() {
   const items = [AccessibilityStore];
   const obj = get_initialized;
   const overrideSettings = obj.useStateFromStores(items, () => AccessibilityStore.displayNameStylesEnabled) || useContext(react3.DisplayNameStylesContext).overrideSettings;

@@ -1,11 +1,11 @@
-// Module ID: 7952
-// Function ID: 7953
+// Module ID: 8370
+// Function ID: 8371
 // Name: useStateFromSharedValue
-// Dependencies: [32, 19, 1259, 558, 576, 4618, 2]
+// Dependencies: [32, 19, 1271, 558, 576, 4810, 2]
 
-// Module 7952 (useStateFromSharedValue)
+// Module 8370 (useStateFromSharedValue)
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -21,7 +21,7 @@ let closure_7 = { code: "function useStateFromSharedValueTsx2(id_0,sharedValue_1
 let closure_8 = { code: "function useStateFromSharedValueTsx3(id,listener,sharedValue_0){const{runOnJS}=this.__closure;sharedValue_0.addListener(id,function(value){return runOnJS(listener)(value);});}" };
 let closure_9 = { code: "function useStateFromSharedValueTsx4(id_0,sharedValue_1){sharedValue_1.removeListener(id_0);}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useListenerSubscription(arg0, arg1) {
   let closure_1;
   _require = arg0;
   dependencyMap = arg1;
@@ -107,7 +107,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
   cResult[3] = items;
   tmp3 = items;
   tmp2 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useListenerSubscription(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   const items = [arg0, arg1];
@@ -177,7 +177,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStateFromSharedValue(arg0) {
   let tmp2;
   let closure_0 = arg0;
   const obj = react2;
@@ -196,7 +196,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const first = tmp3[0];
   closure_10(arg0, tmp3[1]);
   return first;
-}) : ((arg0) => {
+}) : (function useStateFromSharedValue(arg0) {
   let closure_0 = arg0;
   const tmp = _slicedToArray(react.useState(() => closure_0.get()), 2);
   const first = tmp[0];
@@ -204,7 +204,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return first;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, cResult) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDerivedStateFromSharedValue(arg0, cResult) {
   let closure_129_2;
   let tmp5;
   let closure_0 = arg0;
@@ -255,14 +255,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, cResult) => 
   cResult[1] = arg0;
   cResult[2] = fn;
   tmp2 = fn;
-}) : ((arg0, cResult) => {
+}) : (function useDerivedStateFromSharedValue(arg0, cResult) {
   let closure_129_2;
   let tmp2;
-  const f96134 = () => current(closure_0.get(), undefined);
+  const f97751 = () => current(closure_0.get(), undefined);
   let closure_0 = arg0;
   let closure_1 = cResult;
-  [tmp2, closure_129_2] = react.useState(f96134);
-  _slicedToArray(react.useState(f96134), 2);
+  [tmp2, closure_129_2] = react.useState(f97751);
+  _slicedToArray(react.useState(f97751), 2);
   let closure_3 = react.useRef(cResult);
   const layoutEffect = react.useLayoutEffect(() => {
     closure_3.current = current;

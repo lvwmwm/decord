@@ -1,17 +1,17 @@
-// Module ID: 15802
-// Function ID: 15803
+// Module ID: 16060
+// Function ID: 16061
 // Name: useAdPersonalizationTogglesDisabled
-// Dependencies: [13511, 558, 576, 504, 2]
+// Dependencies: [13808, 558, 576, 504, 2]
 
-// Module 15802 (useAdPersonalizationTogglesDisabled)
+// Module 16060 (useAdPersonalizationTogglesDisabled)
 import react from "react" /* 576 */;
-import AdPersonalizationStore from "AdPersonalizationStore" /* 13511 */;
+import AdPersonalizationStore from "AdPersonalizationStore" /* 13808 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAdPersonalizationTogglesDisabled() {
   let tmp4;
   let tmp5;
   let togglesDisabled;
@@ -19,7 +19,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AdPersonalizationStore];
-    const fn = function t() {
+    const fn = function l() {
       return togglesDisabled.isTogglesDisabled();
     };
     cResult[0] = items;
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useAdPersonalizationTogglesDisabled() {
   let togglesDisabled;
   const items = [AdPersonalizationStore];
   const obj = get_initialized;

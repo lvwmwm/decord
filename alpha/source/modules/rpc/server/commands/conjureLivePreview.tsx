@@ -1,64 +1,58 @@
-// Module ID: 14367
-// Function ID: 14368
+// Module ID: 14594
+// Function ID: 14595
 // Name: conjureLivePreview
-// Dependencies: [5124, 8734, 9000, 5323, 1085, 14335, 14320, 9059, 14368, 2]
+// Dependencies: [5436, 11251, 5635, 1085, 14560, 14545, 11134, 12381, 2]
 
-// Module 14367 (conjureLivePreview)
-import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 14320 */;
-import conjureLiveRelaunch from "conjureLiveRelaunch" /* 14368 */;
-import ApplicationStore from "ApplicationStore" /* 5124 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 8734 */;
-import FramesStore from "FramesStore" /* 9000 */;
-import Constants_mod from "Constants" /* 5323 */;
+// Module 14594 (conjureLivePreview)
+import conjureLiveRelaunch from "conjureLiveRelaunch" /* 12381 */;
+import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 14545 */;
+import ApplicationStore from "ApplicationStore" /* 5436 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 11251 */;
+import Constants_mod from "Constants" /* 5635 */;
 import Constants_mod2 from "Constants" /* 1085 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14335 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14560 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;
 let RPC_AUTHENTICATED_SCOPE;
 let RPC_EMBEDDED_APP_SCOPE;
 let RPC_SCOPE_CONFIG;
-let metroRequire;
+let hasOwnProperty;
 let tmp;
-const RPCErrorDefault = tmp(9059);
+const RPCErrorDefault = tmp(11134);
 let Constants = Constants_mod2;
 ({ RPC_AUTHENTICATED_SCOPE, RPC_EMBEDDED_APP_SCOPE, RPC_SCOPE_CONFIG } = Constants);
 Constants = Constants_mod2;
-({ RPCCommands, RPCErrors: metroRequire } = Constants);
+({ RPCCommands, RPCErrors: hasOwnProperty } = Constants);
 const items = [RPC_EMBEDDED_APP_SCOPE, RPC_AUTHENTICATED_SCOPE];
 let obj = {};
 const RELAUNCH_FRAME = RPCCommands.RELAUNCH_FRAME;
 let obj2 = {
   scope: { [RPC_SCOPE_CONFIG.ANY]: items },
   handler(args) {
-    let obj2;
+    let obj3;
     const build = args.args.build;
-    const tmp3 = validateEmbeddedAppFrameDefault(args.socket);
-    const applicationId = tmp3.applicationId;
-    const frameByIframeId = FramesStore.getFrameByIframeId(tmp3.iframeId);
+    const applicationId = validateEmbeddedAppFrameDefault(args.socket).frame.applicationId;
     const application = ApplicationStore.getApplication(applicationId);
     let prop;
     if (application != null) {
       prop = application.vibegrationsProjectId;
     }
-    const result = null != prop || ConjureProjectStore.isConjureProjectApplication(applicationId);
-    let applicationId1;
-    if (frameByIframeId != null) {
-      applicationId1 = frameByIframeId.applicationId;
-    }
-    if (applicationId1 === applicationId) {
-      if (result) {
-        const obj = { relaunched: obj2.relaunchAppFramesForBuild(applicationId, build) };
-        obj2 = conjureLiveRelaunch;
-        return obj;
+    if (null == prop) {
+      if (!ConjureProjectStore.isConjureProjectApplication(applicationId)) {
+        const self = this;
+        const self2 = this;
+        const obj = { errorCode: hasOwnProperty.UNAUTHORIZED_FOR_APPLICATION };
+        const tmp8 = new RPCErrorDefault(obj, "Only a Conjuring app frame can relaunch");
+        throw tmp8;
       }
     }
-    const obj3 = { errorCode: metroRequire.UNAUTHORIZED_FOR_APPLICATION };
-    const tmp11 = new RPCErrorDefault(obj3, "Only a Conjuring app frame can relaunch");
-    throw tmp11;
+    const obj2 = { relaunched: obj3.relaunchAppFramesForBuild(applicationId, build) };
+    obj3 = conjureLiveRelaunch;
+    return obj2;
   }
 };
 obj[RELAUNCH_FRAME] = CONTEXT_MENU_ICON_NAMES.createRPCCommand(RPCCommands.RELAUNCH_FRAME, obj2);
-let result = size.fileFinishedImporting("modules/rpc/server/commands/conjureLivePreview.tsx");
+const result = size.fileFinishedImporting("modules/rpc/server/commands/conjureLivePreview.tsx");
 
 export default obj;

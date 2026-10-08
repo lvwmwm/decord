@@ -1,17 +1,17 @@
-// Module ID: 17189
-// Function ID: 17190
+// Module ID: 17470
+// Function ID: 17471
 // Name: ActivityPanelUtils
-// Dependencies: [2051, 2103, 2050, 9001, 4504, 9047, 1106, 558, 576, 504, 2]
+// Dependencies: [2063, 2115, 2062, 6072, 4696, 10458, 1106, 558, 576, 504, 2]
 // Exports: isActivityPanelFullscreen, isConnectedToActivityInText
 
-// Module 17189 (ActivityPanelUtils)
+// Module 17470 (ActivityPanelUtils)
 import react from "react" /* 576 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4504 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 9001 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 9047 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4696 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6072 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 10458 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let tmp;
 const get_initialized = tmp(504);
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsActivityPanelFullscreen() {
   let tmp4;
   let tmp5;
   let tmp = require;
@@ -48,7 +48,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useIsActivityPanelFullscreen() {
   let obj = get_initialized;
   const items = [EmbeddedActivitiesStore];
   return obj.useStateFromStores(items, () => {
@@ -63,7 +63,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsConnectedToActivityInText() {
   let tmp4;
   let tmp5;
   let voiceChannelId;
@@ -75,7 +75,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let tmp7 = ChannelStore;
     items[1] = ChannelStore;
     items[2] = SelectedChannelStore;
-    const fn = function l() {
+    const fn = function s() {
       connectedActivityLocation = connectedActivityLocation.getConnectedActivityLocation();
       let flag = false;
       if (null != connectedActivityLocation) {
@@ -113,7 +113,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useIsConnectedToActivityInText() {
   let voiceChannelId;
   let obj = get_initialized;
   const items = [EmbeddedActivitiesStore, ChannelStore, SelectedChannelStore];

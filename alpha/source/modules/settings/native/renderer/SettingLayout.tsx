@@ -1,24 +1,22 @@
-// Module ID: 14515
-// Function ID: 14516
+// Module ID: 14775
+// Function ID: 14776
 // Name: SettingLayout
-// Dependencies: [19, 11143, 21, 558, 576, 14516, 14529, 2]
+// Dependencies: [19, 11263, 21, 558, 576, 14776, 14790, 2]
 
-// Module 14515 (SettingLayout)
+// Module 14775 (SettingLayout)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11143 */;
-import SettingSegmentedControlRendererDefault from "SettingSegmentedControlRenderer" /* 14529 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11263 */;
+import SettingSegmentedControlRendererDefault from "SettingSegmentedControlRenderer" /* 14790 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let node;
-
 let tmp;
-const SettingListRenderer = tmp(14516);
+const SettingListRenderer = tmp(14776);
 const NodeType = SettingRendererConstants.NodeType;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SettingLayout(node) {
   const obj = react2;
   const cResult = obj.c(4);
   node = node.node;
@@ -46,7 +44,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((n
     }
     return tmp5;
   }
-}) : ((node) => {
+}) : (function SettingLayout(node) {
   node = node.node;
   const type = node.type;
   if (NodeType.LIST === type) {

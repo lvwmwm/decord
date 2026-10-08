@@ -1,13 +1,13 @@
-// Module ID: 11174
-// Function ID: 11175
+// Module ID: 9578
+// Function ID: 9579
 // Name: isAlertOrActionSheetOpen
-// Dependencies: [4567, 11175, 5716, 2]
+// Dependencies: [4759, 9579, 5299, 2]
 // Exports: isAlertOrActionSheetOpen
 
-// Module 11174 (isAlertOrActionSheetOpen)
-import useAlertStore2 from "useAlertStore" /* 5716 */;
-import ActionSheetStore from "ActionSheetStore" /* 4567 */;
-import AlertStore from "AlertStore" /* 11175 */;
+// Module 9578 (isAlertOrActionSheetOpen)
+import useAlertStore2 from "useAlertStore" /* 5299 */;
+import ActionSheetStore from "ActionSheetStore" /* 4759 */;
+import AlertStore from "AlertStore" /* 9579 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("components_native/chat/isAlertOrActionSheetOpen.tsx");

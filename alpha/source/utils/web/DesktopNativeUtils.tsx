@@ -1,17 +1,17 @@
-// Module ID: 5962
-// Function ID: 5963
+// Module ID: 6144
+// Function ID: 6145
 // Name: DesktopNativeUtils
-// Dependencies: [32, 5, 1085, 38, 4793, 1369, 510, 5963, 5964, 4, 5965, 5966, 1371, 1282, 4922, 2]
+// Dependencies: [32, 5, 1085, 38, 4987, 1381, 510, 6145, 6146, 4, 6147, 6148, 1383, 1294, 5116, 2]
 
-// Module 5962 (DesktopNativeUtils)
+// Module 6144 (DesktopNativeUtils)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1085 */;
-import flow_Client from "flow/Client" /* 4793 */;
-import discord_common_DiscordNative from "discord_common/DiscordNative" /* 4922 */;
-import DomainMigrationUtils from "DomainMigrationUtils" /* 5963 */;
-import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 5964 */;
-import IPCEvents from "IPCEvents" /* 5965 */;
+import flow_Client from "flow/Client" /* 4987 */;
+import discord_common_DiscordNative from "discord_common/DiscordNative" /* 5116 */;
+import DomainMigrationUtils from "DomainMigrationUtils" /* 6145 */;
+import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 6146 */;
+import IPCEvents from "IPCEvents" /* 6147 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ const require = globalThis.__r;
 let _require, c10, c9, closeResult, importDefault;
 
 let tmp2;
-const FileExtensionUtils = tmp2(5966);
+const FileExtensionUtils = tmp2(6148);
 function sanitizeFilename(str) {
   try {
     const _decodeURIComponent = decodeURIComponent;
@@ -370,9 +370,9 @@ let obj2 = {
       return items1;
     }), arg2, arg3);
   },
-  inputEventUnregister(match) {
+  inputEventUnregister(arg0) {
     const discordUtils = this.getDiscordUtils();
-    discordUtils.inputEventUnregister(parseInt(match));
+    discordUtils.inputEventUnregister(arg0);
   },
   setOnInputEventCallback(arg0) {
     if (require("PlatformUtils").isPlatformEmbedded) {
@@ -974,7 +974,7 @@ let obj2 = {
     if (null != uri) {
       const tmp = require;
       if (require("PlatformUtils").isPlatformEmbedded) {
-        const tmpResult = tmp(5966);
+        const tmpResult = tmp(6148);
         const decideFileExtensionResult = tmpResult.decideFileExtension(uri, contentType);
         const hasItem = null == decideFileExtensionResult || set2.has(decideFileExtensionResult);
         return hasItem;

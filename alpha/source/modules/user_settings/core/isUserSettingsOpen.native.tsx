@@ -1,10 +1,10 @@
-// Module ID: 13587
-// Function ID: 13588
+// Module ID: 13880
+// Function ID: 13881
 // Name: isUserSettingsOpen
-// Dependencies: [32, 19, 4743, 558, 576, 2]
+// Dependencies: [32, 19, 4937, 558, 576, 2]
 
-// Module 13587 (isUserSettingsOpen)
-import RootNavigationRef from "RootNavigationRef" /* 4743 */;
+// Module 13880 (isUserSettingsOpen)
+import RootNavigationRef from "RootNavigationRef" /* 4937 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -12,7 +12,7 @@ import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const f115189 = (name) => {
+const f116441 = (name) => {
   let tmp = "settings" === name.name;
   if (!tmp) {
     const state = name.state;
@@ -23,7 +23,7 @@ const f115189 = (name) => {
     let someResult = null != routes1;
     if (someResult) {
       const routes = state.routes;
-      someResult = routes.some(f115189);
+      someResult = routes.some(f116441);
     }
     tmp = someResult;
   }
@@ -43,13 +43,13 @@ function isUserSettingsOpen() {
     let someResult = null != routes1;
     if (someResult) {
       const routes = rootState.routes;
-      someResult = routes.some(f115189);
+      someResult = routes.some(f116441);
     }
     tmp2 = someResult;
   }
   return tmp2;
 }
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsUserSettingsOpen() {
   let closure_0;
   let first;
   let tmp4;
@@ -75,7 +75,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             let someResult = null != routes1;
             if (someResult) {
               const routes = rootState.routes;
-              someResult = routes.some(f115189);
+              someResult = routes.some(f116441);
             }
             rootNavigationRef(someResult);
           }
@@ -96,7 +96,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const effect = obj2.useEffect(tmp4, tmp5);
   return first;
-}) : (() => {
+}) : (function useIsUserSettingsOpen() {
   let require;
   let tmp2;
   let tmp = _slicedToArray(react.useState(isUserSettingsOpen), 2);
@@ -113,7 +113,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         let someResult = null != routes1;
         if (someResult) {
           let routes = rootState.routes;
-          someResult = routes.some(f115189);
+          someResult = routes.some(f116441);
         }
         _require(someResult);
       }

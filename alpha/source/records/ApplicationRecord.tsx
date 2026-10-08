@@ -1,18 +1,18 @@
-// Module ID: 2009
-// Function ID: 2010
+// Module ID: 2021
+// Function ID: 2022
 // Name: ApplicationRecord
-// Dependencies: [1392, 2010, 1391, 2011, 1360, 1097, 2013, 1402, 2015, 11, 2016, 2]
+// Dependencies: [1404, 2022, 1403, 2023, 1372, 1097, 2025, 1414, 2027, 11, 2028, 2]
 
-// Module 2009 (ApplicationRecord)
+// Module 2021 (ApplicationRecord)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import ApplicationConstants from "ApplicationConstants" /* 1360 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import ApplicationOverlayMethodFlags from "ApplicationOverlayMethodFlags" /* 2015 */;
-import Record from "Record" /* 1392 */;
-import CompanyRecord from "CompanyRecord" /* 2010 */;
-import UserRecord from "UserRecord" /* 1391 */;
-import Constants from "Constants" /* 2011 */;
+import ApplicationConstants from "ApplicationConstants" /* 1372 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import ApplicationOverlayMethodFlags from "ApplicationOverlayMethodFlags" /* 2027 */;
+import Record from "Record" /* 1404 */;
+import CompanyRecord from "CompanyRecord" /* 2022 */;
+import UserRecord from "UserRecord" /* 1403 */;
+import Constants from "Constants" /* 2023 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

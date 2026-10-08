@@ -1,22 +1,22 @@
-// Module ID: 15082
-// Function ID: 15083
+// Module ID: 15344
+// Function ID: 15345
 // Name: AutoVoiceSensitivitySetting
-// Dependencies: [1999, 7645, 558, 576, 504, 8079, 11142, 1126, 2]
+// Dependencies: [2011, 7966, 558, 576, 504, 5241, 11262, 1126, 2]
 
-// Module 15082 (AutoVoiceSensitivitySetting)
+// Module 15344 (AutoVoiceSensitivitySetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 8079 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5241 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAutoVoiceSensitivitySettingValue() {
   let modeOptions;
   let tmp4;
   let tmp5;
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useAutoVoiceSensitivitySettingValue() {
   let modeOptions;
   const items = [MediaEngineStore];
   const obj = get_initialized;

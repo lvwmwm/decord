@@ -1,16 +1,16 @@
-// Module ID: 11226
-// Function ID: 11227
+// Module ID: 11341
+// Function ID: 11342
 // Name: GroupDMNitroUpsellModel
-// Dependencies: [1377, 1085, 1379, 1976, 558, 576, 504, 1126, 2]
+// Dependencies: [1389, 1085, 1391, 1988, 558, 576, 504, 1126, 2]
 // Exports: getGroupDMAddMembersEntryAction, getGroupDMNitroAudience, getGroupDMNitroCapCTAMessage, getGroupDMNitroUpsellRoute, isGroupDMNitroUpsellAudience, shouldUseGroupDMParticipantLimitUI
 
-// Module 11226 (GroupDMNitroUpsellModel)
+// Module 11341 (GroupDMNitroUpsellModel)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl from "intl" /* 1126 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1976 */;
-import UserStore from "UserStore" /* 1377 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1988 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ const MAX_GROUP_DM_PARTICIPANTS = Constants.MAX_GROUP_DM_PARTICIPANTS;
 const PremiumTypes = PremiumConstants.PremiumTypes;
 const GroupDMNitroAcquisitionStrategy = { MARKETING: "marketing", CHECKOUT: "checkout" };
 let obj2 = { NONE: "none", MANAGE: "manage", MARKETING: "marketing", CHECKOUT: "checkout" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGroupDMNitroAudience() {
   let TIER_2;
   let tmp4;
   let tmp5;
@@ -70,7 +70,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useGroupDMNitroAudience() {
   let TIER_2;
   const items = [UserStore];
   const obj = get_initialized;

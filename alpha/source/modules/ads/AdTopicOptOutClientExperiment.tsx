@@ -1,12 +1,12 @@
-// Module ID: 15803
-// Function ID: 15804
+// Module ID: 16061
+// Function ID: 16062
 // Name: AdTopicOptOutClientExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1452, 558, 576, 2]
 // Exports: isAdTopicOptOutClientEnabled
 
-// Module 15803 (AdTopicOptOutClientExperiment)
+// Module 16061 (AdTopicOptOutClientExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let obj = { kind: "user", name: "2026-08-ad-topic-opt-out-client", defaultConfig
 obj2 = { 1: null, 2: { enabled: false }, 3: { enabled: true }, 4: { enabled: true }, 5: { enabled: true } };
 obj2[5] = { enabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsAdTopicOptOutClientEnabled() {
   let first;
   const obj = react;
   const cResult = obj.c(1);
@@ -27,7 +27,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return apexExperiment.useConfig(first).enabled;
-}) : (() => apexExperiment.useConfig({ location: "useIsAdTopicOptOutClientEnabled" }).enabled);
+}) : (function useIsAdTopicOptOutClientEnabled() {
+  return apexExperiment.useConfig({ location: "useIsAdTopicOptOutClientEnabled" }).enabled;
+});
 const result = size.fileFinishedImporting("modules/ads/AdTopicOptOutClientExperiment.tsx");
 
 export const AdTopicOptOutClientExperiment = apexExperiment;

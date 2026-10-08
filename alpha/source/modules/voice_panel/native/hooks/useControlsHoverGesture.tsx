@@ -1,13 +1,13 @@
-// Module ID: 17238
-// Function ID: 17239
+// Module ID: 17519
+// Function ID: 17520
 // Name: useControlsHoverGesture
-// Dependencies: [19, 11916, 11914, 558, 576, 11915, 4618, 6147, 2]
+// Dependencies: [19, 11989, 11987, 558, 576, 11988, 4810, 6326, 2]
 
-// Module 17238 (useControlsHoverGesture)
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6147 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11914 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11916 */;
+// Module 17519 (useControlsHoverGesture)
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6326 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11987 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11989 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ const VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsMo
 let c6 = 500;
 const __initData = { code: "function useControlsHoverGestureTsx1(){const{connected,mode,VoicePanelModes,controlsSpecs,VoicePanelControlsModes,runOnJS,showControls,lastIdleRefreshMillis,IDLE_REFRESH_DEBOUNCE_MILLIS,refreshIdleTimeout}=this.__closure;if(!connected.get()){return;}if(mode.get()!==VoicePanelModes.PANEL){return;}const controlsHidden=controlsSpecs.get().mode===VoicePanelControlsModes.HIDDEN;if(controlsHidden){runOnJS(showControls)();return;}const currentTimeMillis=Date.now();if(currentTimeMillis-lastIdleRefreshMillis.get()<IDLE_REFRESH_DEBOUNCE_MILLIS){return;}lastIdleRefreshMillis.set(currentTimeMillis);refreshIdleTimeout();}" };
 let closure_8 = { code: "function useControlsHoverGestureTsx2(){const{connected,mode,VoicePanelModes,controlsSpecs,VoicePanelControlsModes,runOnJS,showControls,lastIdleRefreshMillis,IDLE_REFRESH_DEBOUNCE_MILLIS,refreshIdleTimeout}=this.__closure;if(!connected.get())return;if(mode.get()!==VoicePanelModes.PANEL)return;const controlsHidden=controlsSpecs.get().mode===VoicePanelControlsModes.HIDDEN;if(controlsHidden){runOnJS(showControls)();return;}const currentTimeMillis=Date.now();if(currentTimeMillis-lastIdleRefreshMillis.get()<IDLE_REFRESH_DEBOUNCE_MILLIS)return;lastIdleRefreshMillis.set(currentTimeMillis);refreshIdleTimeout();}" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useControlsHoverGesture() {
   let connected;
   let controlsSpecs;
   let mode;
@@ -80,7 +80,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[5] = showControls;
   cResult[6] = onUpdateResult;
   tmp6 = onUpdateResult;
-}) : (() => {
+}) : (function useControlsHoverGesture() {
   let controlsSpecs;
   let mode;
   let refreshIdleTimeout;

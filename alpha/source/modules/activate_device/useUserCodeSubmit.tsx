@@ -1,11 +1,11 @@
-// Module ID: 13713
-// Function ID: 13714
+// Module ID: 13935
+// Function ID: 13936
 // Name: useUserCodeSubmit
-// Dependencies: [5, 32, 19, 13712, 1126, 558, 576, 8759, 2]
+// Dependencies: [5, 32, 19, 13934, 1126, 558, 576, 9139, 2]
 
-// Module 13713 (useUserCodeSubmit)
+// Module 13935 (useUserCodeSubmit)
 import intl4 from "intl" /* 1126 */;
-import OAuthConstants2 from "OAuthConstants" /* 13712 */;
+import OAuthConstants2 from "OAuthConstants" /* 13934 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -34,7 +34,7 @@ function verifyUserCodeStatusToErrorMessage(arg0) {
 }
 let _asyncToGenerator = _asyncToGenerator_mod;
 const OAuthConstants = OAuthConstants2.OAuthConstants;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserCodeSubmit(arg0, arg1, arg2) {
   let closure_1;
   let closure_2;
   let length;
@@ -81,7 +81,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
         cResult[11] = obj3;
         tmp10 = obj3;
       }
-      const fn2 = function h() {
+      const fn = function h() {
         if (length.length === OAuthConstants.USER_CODE_LENGTH) {
           closure_5();
         } else {
@@ -91,10 +91,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
       const items = [arg0, tmp6];
       cResult[4] = tmp6;
       cResult[5] = arg0;
-      cResult[6] = fn2;
+      cResult[6] = fn;
       cResult[7] = items;
       tmp8 = items;
-      tmp7 = fn2;
+      tmp7 = fn;
     }
   }
   _require = _asyncToGenerator(async (arg0, value) => {
@@ -184,15 +184,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
       }
     }
   });
-  const fn = function() {
+  function t0() {
     return closure_0(...arguments);
-  };
+  }
   cResult[0] = arg2;
   cResult[1] = arg1;
   cResult[2] = arg0;
-  cResult[3] = fn;
-  tmp6 = fn;
-}) : ((arg0, arg1, arg2) => {
+  cResult[3] = t0;
+  tmp6 = t0;
+}) : (function useUserCodeSubmit(arg0, arg1, arg2) {
   let closure_3;
   let closure_4;
   let error;

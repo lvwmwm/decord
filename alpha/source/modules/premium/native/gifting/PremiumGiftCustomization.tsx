@@ -1,17 +1,17 @@
-// Module ID: 10792
-// Function ID: 10793
+// Module ID: 12744
+// Function ID: 12745
 // Name: PremiumGiftCustomization
-// Dependencies: [32, 19, 17, 1379, 21, 4896, 587, 558, 576, 1490, 10443, 10793, 1126, 10574, 10794, 4892, 10601, 10603, 10795, 2]
+// Dependencies: [32, 19, 17, 1391, 21, 5090, 587, 558, 576, 1502, 10040, 12745, 1126, 10171, 12746, 5086, 10198, 10200, 12747, 2]
 
-// Module 10792 (PremiumGiftCustomization)
+// Module 12744 (PremiumGiftCustomization)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ createStyles = createStyles.createStyles;
 obj3 = { paddingBottom: nativeDefault.space.PX_24 };
 obj4 = { marginTop: nativeDefault.space.PX_24, marginLeft: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_8, fontSize: 14 };
 let closure_11 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftCustomization() {
   let claimableRewards;
   let intl3;
   let items;
@@ -64,7 +64,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   ref = react.useRef(null);
   const obj5 = react;
   if (cResult[0] !== first) {
-    const fn = function l() {
+    const fn = function o() {
       let closure_1;
       const timerId = setTimeout(() => {
         const current = ref.current;
@@ -215,7 +215,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[7] = items3;
   tmp17 = items3;
   tmp16 = H;
-}) : (() => {
+}) : (function PremiumGiftCustomization() {
   let claimableRewards;
   let first;
   let intl3;

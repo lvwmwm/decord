@@ -1,22 +1,22 @@
-// Module ID: 4886
-// Function ID: 4887
+// Module ID: 5080
+// Function ID: 5081
 // Name: GameModeStore
-// Dependencies: [1246, 2006, 4887, 4888, 504, 1369, 584, 2]
+// Dependencies: [1258, 2018, 5081, 5082, 504, 1381, 584, 2]
 
-// Module 4886 (GameModeStore)
+// Module 5080 (GameModeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GameModeConstants from "GameModeConstants" /* 4887 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import RunningGameStore from "RunningGameStore" /* 2006 */;
+import GameModeConstants from "GameModeConstants" /* 5081 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1258 */;
+import RunningGameStore from "RunningGameStore" /* 2018 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const f89573 = (isLauncher) => true !== isLauncher.isLauncher;
+const f90662 = (isLauncher) => true !== isLauncher.isLauncher;
 function syncRunningGame() {
   const visibleRunningGames = RunningGameStore.getVisibleRunningGames();
-  const someResult = visibleRunningGames.some(f89573);
+  const someResult = visibleRunningGames.some(f90662);
   let flag = someResult !== c6;
   if (flag) {
     c6 = someResult;
@@ -66,7 +66,7 @@ class GameModeStore extends DeviceSettingsStore {
     const items1 = [ApexExperimentStore];
     this.syncWith(items1, syncExperimentAssignment);
     const visibleRunningGames = RunningGameStore.getVisibleRunningGames();
-    const someResult = visibleRunningGames.some(f89573);
+    const someResult = visibleRunningGames.some(f90662);
     let flag = someResult !== c6;
     if (flag) {
       c6 = someResult;
@@ -111,6 +111,21 @@ Object.defineProperty(prototype, "enabled", {
 Object.defineProperty(prototype, "hasRunningGame", {
   get: function hasRunningGame() {
     return c6;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "runningGameId", {
+  get: function runningGameId() {
+    const visibleRunningGames = RunningGameStore.getVisibleRunningGames();
+    let id;
+    const found = visibleRunningGames.find((isLauncher) => true !== isLauncher.isLauncher);
+    if (found != null) {
+      id = found.id;
+    }
+    if (id == null) {
+      id = null;
+    }
+    return id;
   },
   set: undefined
 });

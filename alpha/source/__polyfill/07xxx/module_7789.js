@@ -1,28 +1,73 @@
 // Module ID: 7789
 // Function ID: 7790
-// Dependencies: [7790, 7791]
-// Exports: parse, unparse
+// Dependencies: [7790, 7791, 7792, 7793]
 
 // Module 7789
-import decodeAstJson2 from "decodeAstJson" /* 7790 */;
-import react_nativeDefault from "react-native" /* 7791 */;
+import _mod7790 from "module_7790" /* 7790 */;
+import _mod7791 from "module_7791" /* 7791 */;
+import _mod7792 from "module_7792" /* 7792 */;
+import _mod7793 from "module_7793" /* 7793 */;
 
+let hasOwnProperty;
 
-export const parse = function parse(arg0, arg1, arg2) {
-  const decodeAstJson = decodeAstJson2.decodeAstJson;
-  decodeAstJson2;
-  let json;
-  const parseToAstString = react_nativeDefault.parseToAstString;
-  react_nativeDefault;
-  if (null != arg1) {
-    const _JSON = JSON;
-    json = JSON.stringify(arg1);
+const self = this;
+let tmp = this && self.__createBinding;
+if (!tmp) {
+  let tmp2 = globalThis;
+  let _Object = Object;
+  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
+    }
+    closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+      }
+      tmp3 = !tmp4;
+    }
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let closure_0 = tmp;
+let tmp3 = self && self.__exportStar || ((obj, arg1) => {
+  for (const key10007 in obj) {
+    let callResult = "default" === key10007;
+    if (!callResult) {
+      let _Object = Object;
+      hasOwnProperty = Object.prototype.hasOwnProperty;
+      callResult = hasOwnProperty.call(arg1, key10007);
+    }
+    if (callResult) {
+      continue;
+    } else {
+      let tmp3 = closure_0(arg1, obj, key10007);
+      continue;
+    }
+    continue;
   }
-  return decodeAstJson(parseToAstString(arg0, json, arg2));
-};
-export const unparse = function unparse(arg0) {
-  const unparseFromAstString = react_nativeDefault.unparseFromAstString;
-  react_nativeDefault;
-  const obj = decodeAstJson2;
-  return unparseFromAstString(obj.encodeAstJson(arg0));
-};
+});
+tmp3(_mod7790, exports);
+tmp3(_mod7791, exports);
+tmp3(_mod7792, exports);
+tmp3(_mod7793, exports);

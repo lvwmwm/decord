@@ -1,33 +1,33 @@
-// Module ID: 14803
-// Function ID: 14804
+// Module ID: 15064
+// Function ID: 15065
 // Name: FriendRequestsMutualGuildsSetting
-// Dependencies: [19, 7645, 1085, 558, 14641, 576, 2028, 6498, 1390, 11142, 1126, 2]
+// Dependencies: [19, 7966, 1085, 558, 14902, 576, 2040, 6675, 1402, 11262, 1126, 2]
 
-// Module 14803 (FriendRequestsMutualGuildsSetting)
+// Module 15064 (FriendRequestsMutualGuildsSetting)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import FlagUtilsAll from "FlagUtils" /* 1390 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14641 */;
+import FlagUtilsAll from "FlagUtils" /* 1402 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14902 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const UserSettingsUtils = tmp(6498);
+const UserSettingsUtils = tmp(6675);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const FriendSourceFlags = Constants.FriendSourceFlags;
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-const fn = () => {
+function useIsDisabled() {
   const obj = useParentalControlSettings;
   return obj.useIsParentallyControlled();
-};
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+}
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFriendRequestsMutualGuildsSettingValue() {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(2);
@@ -43,9 +43,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[1];
   }
   return tmp5.mutualGuilds;
-}) : (() => {
+}) : (function useFriendRequestsMutualGuildsSettingValue() {
   let setting;
-  const FriendSourceFlagsSetting = setting(2028).FriendSourceFlagsSetting;
+  const FriendSourceFlagsSetting = setting(2040).FriendSourceFlagsSetting;
   setting = FriendSourceFlagsSetting.useSetting();
   const items = [setting];
   return react.useMemo(() => {
@@ -75,7 +75,7 @@ let obj = {
     }
     updateSetting(addFlagResult);
   },
-  useIsDisabled: fn
+  useIsDisabled
 };
 const toggle = SettingBuilders.createToggle(obj);
 const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/FriendRequestsMutualGuildsSetting.tsx");

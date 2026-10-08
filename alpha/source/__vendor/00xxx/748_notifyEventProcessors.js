@@ -14,7 +14,7 @@ let _require, closure_0, closure_1, dependencyMap;
 
 function _notifyEventProcessors(tmp15Result, arg1, arg2, arg3) {
   let closure_2;
-  const f81989 = (result) => {
+  const f82825 = (result) => {
     const sum = closure_2 + 1;
     let tmp5 = result;
     if (tmp5) {
@@ -37,7 +37,7 @@ function _notifyEventProcessors(tmp15Result, arg1, arg2, arg3) {
         }
         const tmp9Result = _mod703;
         if (tmp9Result.isThenable(tmp4Result)) {
-          nextPromise = tmp4Result.then(f81989);
+          nextPromise = tmp4Result.then(f82825);
         } else {
           const sum1 = sum + 1;
           closure_0 = tmp;
@@ -63,7 +63,7 @@ function _notifyEventProcessors(tmp15Result, arg1, arg2, arg3) {
               }
               const tmp9Result2 = _mod703;
               if (tmp9Result2.isThenable(tmp15Result)) {
-                nextPromise1 = tmp15Result.then(f81989);
+                nextPromise1 = tmp15Result.then(f82825);
               } else {
                 nextPromise1 = _notifyEventProcessors(tmp15Result, tmp, tmp2, sum1 + 1);
               }
@@ -104,7 +104,7 @@ function _notifyEventProcessors(tmp15Result, arg1, arg2, arg3) {
       }
       const tmp5Result = tmp5(703);
       if (tmp5Result.isThenable(tmpResult)) {
-        nextPromise = tmpResult.then(f81989);
+        nextPromise = tmpResult.then(f82825);
       } else {
         nextPromise = _notifyEventProcessors(tmpResult, arg1, arg2, arg3 + 1);
       }

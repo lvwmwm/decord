@@ -1,34 +1,32 @@
-// Module ID: 9969
-// Function ID: 9970
+// Module ID: 9496
+// Function ID: 9497
 // Name: EmojiPickerCategoryIcon
-// Dependencies: [19, 5649, 21, 558, 576, 8397, 9956, 4855, 9970, 8444, 9972, 9974, 8771, 9976, 9978, 8461, 8348, 8346, 2]
+// Dependencies: [19, 5996, 21, 558, 576, 8895, 9483, 5049, 9497, 8930, 9499, 9501, 9117, 9503, 9505, 8947, 9507, 9005, 2]
 
-// Module 9969 (EmojiPickerCategoryIcon)
+// Module 9496 (EmojiPickerCategoryIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ClockIcon from "ClockIcon" /* 4855 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 5649 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8346 */;
-import FlagIcon from "FlagIcon" /* 8348 */;
-import TrophyIcon from "TrophyIcon" /* 8397 */;
-import ReactionIcon from "ReactionIcon" /* 8444 */;
-import HeartIcon from "HeartIcon" /* 8461 */;
-import GameControllerIcon from "GameControllerIcon" /* 8771 */;
-import StarIcon from "StarIcon" /* 9956 */;
-import LightbulbIcon from "LightbulbIcon" /* 9970 */;
-import NatureIcon from "NatureIcon" /* 9972 */;
-import FoodIcon from "FoodIcon" /* 9974 */;
-import BicycleIcon from "BicycleIcon" /* 9976 */;
-import ObjectIcon from "ObjectIcon" /* 9978 */;
+import ClockIcon from "ClockIcon" /* 5049 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 5996 */;
+import TrophyIcon from "TrophyIcon" /* 8895 */;
+import ReactionIcon from "ReactionIcon" /* 8930 */;
+import HeartIcon from "HeartIcon" /* 8947 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9005 */;
+import GameControllerIcon from "GameControllerIcon" /* 9117 */;
+import StarIcon from "StarIcon" /* 9483 */;
+import LightbulbIcon from "LightbulbIcon" /* 9497 */;
+import NatureIcon from "NatureIcon" /* 9499 */;
+import FoodIcon from "FoodIcon" /* 9501 */;
+import BicycleIcon from "BicycleIcon" /* 9503 */;
+import ObjectIcon from "ObjectIcon" /* 9505 */;
+import FlagIcon from "FlagIcon" /* 9507 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let id;
-
 const EmojiCategories = EmojiPickerConstants.EmojiCategories;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiPickerCategoryIcon(id) {
   const obj = react2;
   const cResult = obj.c(13);
   id = id.id;
@@ -179,7 +177,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
     }
     return tmp6;
   }
-}) : ((id) => {
+}) : (function EmojiPickerCategoryIcon(id) {
   id = id.id;
   if (EmojiCategories.TOP_GUILD_EMOJI === id) {
     return jsx(TrophyIcon.TrophyIcon, {});

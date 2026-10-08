@@ -1,17 +1,17 @@
-// Module ID: 15191
-// Function ID: 15192
+// Module ID: 15453
+// Function ID: 15454
 // Name: TypingIndicatorSetting
-// Dependencies: [1085, 14550, 2036, 11142, 1126, 3755, 15192, 11594, 15194, 2]
+// Dependencies: [1085, 14811, 2048, 11262, 1126, 3829, 15454, 11657, 15456, 2]
 
-// Module 15191 (TypingIndicatorSetting)
+// Module 15453 (TypingIndicatorSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import _modDef3755 from "module_3755" /* 3755 */;
-import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 11594 */;
-import ChatDotsIcon from "ChatDotsIcon" /* 15192 */;
-import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 14550 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import dismissible_content from "dismissible_content" /* 2048 */;
+import _modDef3829 from "module_3829" /* 3829 */;
+import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 11657 */;
+import ChatDotsIcon from "ChatDotsIcon" /* 15454 */;
+import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 14811 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,7 +24,7 @@ const dismissibleBadgeRouteProps = DismissibleBadgeUtils.createDismissibleBadgeR
 let obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef3755["pT+BVM"]);
+    return intl.string(_modDef3829["pT+BVM"]);
   },
   parent: null,
   IconComponent: ChatDotsIcon.ChatDotsIcon,

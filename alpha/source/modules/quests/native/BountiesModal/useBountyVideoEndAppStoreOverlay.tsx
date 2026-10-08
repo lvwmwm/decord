@@ -1,29 +1,29 @@
-// Module ID: 14841
-// Function ID: 14842
+// Module ID: 15102
+// Function ID: 15103
 // Name: useBountyVideoEndAppStoreOverlay
-// Dependencies: [19, 5630, 21, 558, 576, 14842, 10011, 10929, 14843, 5635, 7225, 7215, 5637, 10932, 2]
+// Dependencies: [19, 5977, 21, 558, 576, 15103, 9541, 10580, 15104, 5982, 7404, 7395, 5984, 10583, 2]
 // Exports: canUseBountyVideoEndAppStoreOverlay
 
-// Module 14841 (useBountyVideoEndAppStoreOverlay)
+// Module 15102 (useBountyVideoEndAppStoreOverlay)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import QuestConstants from "QuestConstants" /* 5630 */;
-import QuestContent from "QuestContent" /* 5635 */;
-import AnalyticsActions from "AnalyticsActions" /* 7215 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7225 */;
-import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 10011 */;
-import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 14842 */;
+import QuestConstants from "QuestConstants" /* 5977 */;
+import QuestContent from "QuestContent" /* 5982 */;
+import AnalyticsActions from "AnalyticsActions" /* 7395 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7404 */;
+import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9541 */;
+import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 15103 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let appId, bounty, trackingCtx;
+let appId, trackingCtx;
 
 const QuestsExperimentLocations = QuestConstants.QuestsExperimentLocations;
 const jsx = Fragment.jsx;
 const redux = react.createContext(null);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountyVideoEndAppStoreProvider(arg0) {
   let children;
   let value;
   const obj = react2;
@@ -41,12 +41,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = value;
   cResult[2] = tmp3;
   tmp2 = tmp3;
-}) : ((value) => <redux.Provider value={arg0.value}>{arg0.children}</redux.Provider>);
+}) : (function BountyVideoEndAppStoreProvider(value) {
+  return <redux.Provider value={arg0.value}>{arg0.children}</redux.Provider>;
+});
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const useBountyVideoEndAppStoreContext = () => react.useContext(redux);
+function useBountyVideoEndAppStoreContext() {
+  return react.useContext(redux);
+}
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyVideoEndAppStoreOverlay(bounty) {
   let context;
   let sourceQuestContent;
   const obj = bounty(sourceQuestContent[4]);
@@ -216,7 +220,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-}) : ((bounty) => {
+}) : (function useBountyVideoEndAppStoreOverlay(bounty) {
   let items2;
   bounty = bounty.bounty;
   const sourceQuestContent = bounty.sourceQuestContent;
@@ -329,7 +333,7 @@ export { useBountyVideoEndAppStoreContext };
 export const canUseBountyVideoEndAppStoreOverlay = function canUseBountyVideoEndAppStoreOverlay(cta) {
   const obj = QuestCustomAppStoreOverlayUtils;
   if (obj.canOpenCustomAppStoreOverlayFromCta(cta.cta)) {
-    const BountiesMobileQuestBarExperiment = tmp(10011).BountiesMobileQuestBarExperiment;
+    const BountiesMobileQuestBarExperiment = tmp(9541).BountiesMobileQuestBarExperiment;
     const obj2 = { location: QuestsExperimentLocations.VIDEO_MODAL_MOBILE };
     const config = BountiesMobileQuestBarExperiment.getConfig(obj2);
     const tmp5 = config.enabled && tmp6 === BountiesMobileQuestBarExperiment2.BountiesMobileQuestBarCtrVariant.LOOP_SQUEEZED_BACK_APP_STORE_OVERLAY;

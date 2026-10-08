@@ -1,11 +1,11 @@
-// Module ID: 13792
-// Function ID: 13793
+// Module ID: 14014
+// Function ID: 14015
 // Name: GuildActionSheetUtils
-// Dependencies: [4515, 1085, 558, 576, 504, 2]
+// Dependencies: [4707, 1085, 558, 576, 504, 2]
 
-// Module 13792 (GuildActionSheetUtils)
+// Module 14014 (GuildActionSheetUtils)
 import Constants from "Constants" /* 1085 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 let _require, obj2, tmp3;
 
 const Permissions = Constants.Permissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildActionSheetPermissions(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -75,7 +75,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresObject(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useGuildActionSheetPermissions(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");

@@ -1,16 +1,16 @@
-// Module ID: 14446
-// Function ID: 14447
+// Module ID: 14674
+// Function ID: 14675
 // Name: useUserProfileEditForm
-// Dependencies: [109, 5, 19, 7842, 7124, 1377, 1085, 558, 576, 504, 584, 6484, 10835, 6492, 6495, 14447, 7849, 5319, 14448, 7863, 7879, 12942, 2028, 13745, 1126, 2]
+// Dependencies: [109, 5, 19, 8260, 7309, 1389, 1085, 558, 576, 504, 584, 6662, 11184, 6669, 6672, 14675, 8267, 5631, 14676, 8281, 8297, 13221, 2040, 13967, 1126, 2]
 
-// Module 14446 (useUserProfileEditForm)
+// Module 14674 (useUserProfileEditForm)
 import Constants from "Constants" /* 1085 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7842 */;
-import UserProfileStore from "UserProfileStore" /* 7124 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8260 */;
+import UserProfileStore from "UserProfileStore" /* 7309 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let c1, c3, c6, c7, closure_12, isSubmitting;
 let closure_3 = ["bannerOriginalMd5"];
 let closure_4 = ["bannerOriginalMd5"];
 const FormStates = Constants.FormStates;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfileEditForm() {
   let errors;
   let pendingChanges;
   let tmp13;
@@ -129,7 +129,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
         }
       }
-      let obj2 = { hasAvatarDecorationEdits: tmp19, errors: null, isSubmitting: stateFromStores, handleSubmit: tmp16, handleSubmitAvatarDecoration: tmp17, resetPending: tmp(6484).resetAllPending };
+      let obj2 = { hasAvatarDecorationEdits: tmp19, errors: null, isSubmitting: stateFromStores, handleSubmit: tmp16, handleSubmitAvatarDecoration: tmp17, resetPending: tmp(6662).resetAllPending };
       class S {
         constructor() {
           isSubmitting = UserProfileSettingsStore.getFormState() === constants.SUBMITTING || isSubmitting.isSubmitting;
@@ -213,9 +213,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     });
-    const fn3 = function() {
+    function t7() {
       return closure_0(...arguments);
-    };
+    }
     class S {
       constructor() {
         isSubmitting = UserProfileSettingsStore.getFormState() === constants.SUBMITTING || isSubmitting.isSubmitting;
@@ -224,7 +224,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     cResult[9] = stateFromStores;
     cResult[10] = pendingChanges.pendingAvatarDecoration;
-    cResult[11] = fn3;
+    cResult[11] = t7;
   }
   closure_0 = _asyncToGenerator(async function(arg0, value) {
     let _false;
@@ -639,13 +639,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
   });
-  const fn2 = function() {
+  function t6() {
     return closure_0(...arguments);
-  };
+  }
   cResult[6] = stateFromStores;
   cResult[7] = pendingChanges;
-  cResult[8] = fn2;
-}) : (() => {
+  cResult[8] = t6;
+}) : (function useUserProfileEditForm() {
   let errors;
   let pendingChanges;
   let tryItOutChanges;
@@ -1154,7 +1154,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     }), items3),
-    resetPending: pendingChanges(6484).resetAllPending
+    resetPending: pendingChanges(6662).resetAllPending
   };
   const merged = Object.assign(pendingChanges);
   const merged1 = Object.assign(tryItOutChanges);

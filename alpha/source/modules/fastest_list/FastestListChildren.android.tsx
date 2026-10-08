@@ -1,19 +1,19 @@
-// Module ID: 6571
-// Function ID: 6572
+// Module ID: 6747
+// Function ID: 6748
 // Name: FastestListChildren
-// Dependencies: [32, 19, 17, 21, 4896, 6572, 568, 6573, 6574, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 6748, 568, 6749, 6750, 2]
 
-// Module 6571 (FastestListChildren)
+// Module 6747 (FastestListChildren)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import getFastestListVisibleItemsDefault from "getFastestListVisibleItemsDefault" /* 6572 */;
+import getFastestListVisibleItemsDefault from "getFastestListVisibleItemsDefault" /* 6748 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let listFooterAlwaysMounted, map1;
+let map1;
 
 let map;
 const View = react_native.View;
@@ -21,7 +21,7 @@ const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ portal: { position: "absolute", opacity: 0, height: 0, top: 0 } });
 let obj = { items: [], keys: map, keyIndex: 0 };
 map = new Map();
-const memoResult = react.memo(react.forwardRef((listFooterAlwaysMounted, ref) => {
+const memoResult = react.memo(function FastestListChildren(listFooterAlwaysMounted) {
   let estimatedListSize;
   let horizontal;
   ({ estimatedListSize: importDefault, horizontal } = listFooterAlwaysMounted);
@@ -46,7 +46,7 @@ const memoResult = react.memo(react.forwardRef((listFooterAlwaysMounted, ref) =>
   if (flag2 === undefined) {
     flag2 = false;
   }
-  ref = undefined;
+  let ref = listFooterAlwaysMounted.ref;
   let tmp = marginStart();
   const portal = tmp;
   let items = [tmp.portal, marginStart, marginEnd];
@@ -305,7 +305,7 @@ const memoResult = react.memo(react.forwardRef((listFooterAlwaysMounted, ref) =>
   }, items2);
   obj = { pointerEvents: "none", style: memo, children: memo1.items };
   return marginEnd(flag, obj);
-}));
+});
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/fastest_list/FastestListChildren.android.tsx");
 

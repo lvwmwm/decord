@@ -1,15 +1,15 @@
-// Module ID: 5416
-// Function ID: 5417
+// Module ID: 5725
+// Function ID: 5726
 // Name: MonitoringAgent
-// Dependencies: [1085, 1369, 5417, 5418, 17, 5419, 5420, 1282, 2]
+// Dependencies: [1085, 1381, 5726, 5727, 17, 5728, 5729, 1294, 2]
 
-// Module 5416 (MonitoringAgent)
+// Module 5725 (MonitoringAgent)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import react_native2 from "react-native" /* 5419 */;
-import MonitoringAgentUtils from "MonitoringAgentUtils" /* 5420 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import react_native2 from "react-native" /* 5728 */;
+import MonitoringAgentUtils from "MonitoringAgentUtils" /* 5729 */;
 import size from "module_2" /* 2 */;
 
 let obj;
@@ -57,10 +57,10 @@ class MonitoringAgent {
       const _HermesInternal = HermesInternal;
       tags1.push("platform:" + str);
     }
-    const CurrentReleaseChannel = tmp(5417).CurrentReleaseChannel;
+    const CurrentReleaseChannel = tmp(5726).CurrentReleaseChannel;
     let tmp9 = null;
     if (null != CurrentReleaseChannel) {
-      const ALL = tmp(5418).ReleaseChannelsSets.ALL;
+      const ALL = tmp(5727).ReleaseChannelsSets.ALL;
       tmp9 = null;
       if (ALL.has(CurrentReleaseChannel)) {
         tmp9 = CurrentReleaseChannel;
@@ -113,7 +113,7 @@ class MonitoringAgent {
       HermesBuiltin.arraySpread(items, self._metrics, 0);
       const HTTP = HTTPUtils.HTTP;
       const request = { url: Endpoints.METRICS_V2, body, retries: 1, rejectWithError: true };
-      body = { metrics: items, client_info: { built_at: "1791264304835", build_number: "35020100000000" } };
+      body = { metrics: items, client_info: { built_at: "1791436869203", build_number: "35020200000000" } };
       const postResult = HTTP.post(request);
       postResult.catch(() => {
         if (self._metrics.length + items.length < 100) {

@@ -1,26 +1,24 @@
-// Module ID: 12196
-// Function ID: 12197
+// Module ID: 12275
+// Function ID: 12276
 // Name: GuildPowerupsCardFooter
-// Dependencies: [17, 21, 4896, 558, 576, 4798, 587, 4892, 4806, 1126, 2553, 12197, 12172, 6477, 4832, 2]
+// Dependencies: [17, 21, 5090, 558, 576, 4992, 587, 5086, 5000, 1126, 2597, 12276, 12251, 6655, 5026, 2]
 
-// Module 12196 (GuildPowerupsCardFooter)
+// Module 12275 (GuildPowerupsCardFooter)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef2553 from "module_2553" /* 2553 */;
-import CircleCheckIcon2 from "CircleCheckIcon" /* 4798 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 4806 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6477 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 12172 */;
-import entitlementExpirationDateToStringDefault from "entitlementExpirationDateToString" /* 12197 */;
+import _modDef2597 from "module_2597" /* 2597 */;
+import CircleCheckIcon2 from "CircleCheckIcon" /* 4992 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 5000 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6655 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 12251 */;
+import entitlementExpirationDateToStringDefault from "entitlementExpirationDateToString" /* 12276 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let dateString, removingAt, text;
 
 let closure_4;
 let hasOwnProperty;
@@ -28,7 +26,7 @@ const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ container: { justifyContent: "space-between" }, inline: { flexDirection: "row", alignItems: "center", gap: 2 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupCardFooterActive(text) {
   let first;
   let items;
   let tmp9;
@@ -38,7 +36,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.STATUS_POSITIVE };
-    const CircleCheckIcon = tmp(4798).CircleCheckIcon;
+    const CircleCheckIcon = tmp(4992).CircleCheckIcon;
     const tmp8 = React3(CircleCheckIcon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -68,7 +66,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
   cResult[4] = tmp9;
   cResult[5] = tmp13;
   tmp12 = tmp13;
-}) : ((text) => {
+}) : (function GuildPowerupCardFooterActive(text) {
   let items;
   text = text.text;
   const obj = { style: closure_6().inline, children: items };
@@ -79,7 +77,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
 });
 let closure_7 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((dateString) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupCardFooterExpiring(dateString) {
   let first;
   let items;
   let tmp13;
@@ -91,7 +89,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((dateString) => {
   const inline = tmp4.inline;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.STATUS_WARNING };
-    const CircleErrorIcon = tmp(4806).CircleErrorIcon;
+    const CircleErrorIcon = tmp(5000).CircleErrorIcon;
     const tmp8 = React3(CircleErrorIcon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -102,7 +100,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((dateString) => {
     const intl = tmp(1126).intl;
     const formatToMarkdownString = intl.formatToMarkdownString;
     const obj3 = { dateString: entitlementExpirationDateToStringDefault(dateString) };
-    const prop = _modDef2553["ol/ao/"];
+    const prop = _modDef2597["ol/ao/"];
     const result = formatToMarkdownString(prop, obj3);
     cResult[1] = dateString;
     cResult[2] = result;
@@ -133,7 +131,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((dateString) => {
   cResult[6] = tmp13;
   cResult[7] = tmp17;
   tmp16 = tmp17;
-}) : ((dateString) => {
+}) : (function GuildPowerupCardFooterExpiring(dateString) {
   let formatToMarkdownString;
   let items;
   let obj4;
@@ -148,13 +146,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((dateString) => {
   const intl = intl2.intl;
   formatToMarkdownString = intl.formatToMarkdownString;
   obj4 = { dateString: entitlementExpirationDateToStringDefault(dateString) };
-  prop = _modDef2553["ol/ao/"];
+  prop = _modDef2597["ol/ao/"];
   items[1] = React3(Text, obj3);
   return hasOwnProperty(View, obj);
 });
 let closure_8 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((removingAt) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupCardFooterRemoving(removingAt) {
   let first;
   let items;
   let tmp13;
@@ -166,7 +164,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((removingAt) => {
   const inline = tmp4.inline;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.STATUS_WARNING };
-    const CircleErrorIcon = tmp(4806).CircleErrorIcon;
+    const CircleErrorIcon = tmp(5000).CircleErrorIcon;
     const tmp8 = React3(CircleErrorIcon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -177,7 +175,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((removingAt) => {
     const intl = tmp(1126).intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj3 = { dateString: getGuildPowerupFormattedDateStringDefault(removingAt) };
-    const v6e2ry1 = _modDef2553["6e2ry1"];
+    const v6e2ry1 = _modDef2597["6e2ry1"];
     const formatToPlainStringResult = formatToPlainString(v6e2ry1, obj3);
     cResult[1] = removingAt;
     cResult[2] = formatToPlainStringResult;
@@ -208,7 +206,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((removingAt) => {
   cResult[6] = tmp13;
   cResult[7] = tmp17;
   tmp16 = tmp17;
-}) : ((removingAt) => {
+}) : (function GuildPowerupCardFooterRemoving(removingAt) {
   let formatToPlainString;
   let items;
   let obj4;
@@ -223,13 +221,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((removingAt) => {
   const intl = intl2.intl;
   formatToPlainString = intl.formatToPlainString;
   obj4 = { dateString: getGuildPowerupFormattedDateStringDefault(removingAt) };
-  v6e2ry1 = _modDef2553["6e2ry1"];
+  v6e2ry1 = _modDef2597["6e2ry1"];
   items[1] = React3(Text, obj3);
   return hasOwnProperty(View, obj);
 });
 let closure_9 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupCardFooterStatus(status) {
   const obj = react;
   const cResult = obj.c(6);
   status = status.status;
@@ -275,7 +273,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
       return tmp2;
     }
   }
-}) : ((status) => {
+}) : (function GuildPowerupCardFooterStatus(status) {
   status = status.status;
   if (null == status) {
     return null;
@@ -295,7 +293,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
 });
 let closure_10 = tmp6;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupCardFooterCost(arg0) {
   let cost;
   let costDecorator;
   let items;
@@ -313,7 +311,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const inline = tmp4.inline;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "sm", color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
-      const BoostGemIcon = tmp(4832).BoostGemIcon;
+      const BoostGemIcon = tmp(5026).BoostGemIcon;
       const tmp10 = React3(BoostGemIcon, obj2);
       cResult[0] = tmp10;
       first = tmp10;
@@ -370,7 +368,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[3] = formatToPlainStringResult;
     tmp11 = formatToPlainStringResult;
   }
-}) : ((arg0) => {
+}) : (function GuildPowerupCardFooterCost(arg0) {
   let cost;
   let costDecorator;
   let formatToPlainString;
@@ -384,10 +382,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (null != cost) {
     const obj = { style: tmp.inline, children: items };
     const obj2 = { size: "sm", color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
-    const BoostGemIcon = tmp2(4832).BoostGemIcon;
+    const BoostGemIcon = tmp2(5026).BoostGemIcon;
     items = [React3(BoostGemIcon, obj2), ];
     let str = "heading-sm/semibold";
-    const Text = tmp2(4892).Text;
+    const Text = tmp2(5086).Text;
     const tmp7 = hasOwnProperty;
     const tmp8 = View;
     const tmp9 = React3;
@@ -409,7 +407,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_11 = tmp7;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupsCardFooter(arg0) {
   let cost;
   let costDecorator;
   let items;
@@ -474,7 +472,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tmp2.inline;
   cResult[3] = items1;
   tmp3 = items1;
-}) : ((cost) => {
+}) : (function GuildPowerupsCardFooter(cost) {
   let items;
   let items1;
   const obj = { style: items, children: items1 };

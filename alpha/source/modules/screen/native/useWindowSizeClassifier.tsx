@@ -1,19 +1,19 @@
-// Module ID: 4746
-// Function ID: 4747
+// Module ID: 4940
+// Function ID: 4941
 // Name: useWindowSizeClassifier
-// Dependencies: [4747, 558, 576, 2]
+// Dependencies: [4941, 558, 576, 2]
 // Exports: getWindowSizeClassifier
 
-// Module 4746 (useWindowSizeClassifier)
+// Module 4940 (useWindowSizeClassifier)
 import react from "react" /* 576 */;
-import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 4747 */;
+import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 4941 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const useBaseAppContainerDimensionsDefault = useBaseAppContainerDimensions;
 
 const WindowSizeClassifier = { SMALL: 0, [0]: "SMALL", NORMAL: 1, [1]: "NORMAL", LARGE: 2, [2]: "LARGE", XLARGE: 3, [3]: "XLARGE" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWindowSizeClassifier() {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -36,7 +36,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp2 = cResult[1];
   }
   return tmp2;
-}) : (() => {
+}) : (function useWindowSizeClassifier() {
   let XLARGE;
   const width = useBaseAppContainerDimensionsDefault().width;
   if (width <= 360) {

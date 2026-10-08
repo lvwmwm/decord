@@ -1,17 +1,17 @@
-// Module ID: 12884
-// Function ID: 12885
+// Module ID: 13033
+// Function ID: 13034
 // Name: useUserProfileVoiceActivity
-// Dependencies: [4936, 4915, 7242, 558, 576, 10625, 504, 2]
+// Dependencies: [5106, 5111, 7421, 558, 576, 10223, 504, 2]
 // Exports: isUserProfileVoiceActivityForChannel
 
-// Module 12884 (useUserProfileVoiceActivity)
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7242 */;
-import PresenceStore from "PresenceStore" /* 4936 */;
-import VoiceStateStore from "VoiceStateStore" /* 4915 */;
+// Module 13033 (useUserProfileVoiceActivity)
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7421 */;
+import PresenceStore from "PresenceStore" /* 5106 */;
+import VoiceStateStore from "VoiceStateStore" /* 5111 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfileVoiceActivity(userId) {
   let id;
   let voiceChannel;
   let voiceState;
@@ -26,8 +26,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
     if (cResult[1] === userId) {
       tmp4 = cResult[2];
     }
-    ({ voiceState, voiceChannel } = id(10625)(tmp4));
-    id(10625)(tmp4);
+    ({ voiceState, voiceChannel } = id(10223)(tmp4));
+    id(10223)(tmp4);
     id = undefined;
     if (voiceChannel != null) {
       id = voiceChannel.id;
@@ -95,13 +95,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[1] = userId;
   cResult[2] = obj3;
   tmp4 = obj3;
-}) : ((guildId) => {
+}) : (function useUserProfileVoiceActivity(guildId) {
   let items;
   let obj2;
   const userId = guildId.userId;
   let id;
   let tmp = dependencyMap;
-  const tmp2 = id(10625)({ userId, guildId: guildId.guildId });
+  const tmp2 = id(10223)({ userId, guildId: guildId.guildId });
   const voiceChannel = tmp2.voiceChannel;
   id = undefined;
   const voiceState = tmp2.voiceState;

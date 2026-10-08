@@ -1,18 +1,18 @@
-// Module ID: 10898
-// Function ID: 10899
+// Module ID: 10549
+// Function ID: 10550
 // Name: BadgeDirectoryUpdatesExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1452, 558, 576, 2]
 
-// Module 10898 (BadgeDirectoryUpdatesExperiment)
+// Module 10549 (BadgeDirectoryUpdatesExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-10-badge-directory-updates", kind: "user", defaultConfig: { enabled: false, swipeBetweenBadges: false }, variations: { 0: { enabled: false, swipeBetweenBadges: false }, 1: { enabled: true, swipeBetweenBadges: false }, 2: { enabled: true, swipeBetweenBadges: true } } };
 let closure_2 = ApexExperiment.createApexExperiment(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsBadgeDirectoryUpdatesEnabled(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -26,12 +26,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useIsBadgeDirectoryUpdatesEnabled(location) {
   const obj = { location: location.location };
   return closure_2.useConfig(obj).enabled;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsBadgeDetailsSwipeEnabled(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -46,7 +46,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
   }
   const config = closure_2.useConfig(tmp2);
   return config.enabled && config.swipeBetweenBadges;
-}) : ((location) => {
+}) : (function useIsBadgeDetailsSwipeEnabled(location) {
   const obj = { location: location.location };
   const config = closure_2.useConfig(obj);
   return config.enabled && config.swipeBetweenBadges;

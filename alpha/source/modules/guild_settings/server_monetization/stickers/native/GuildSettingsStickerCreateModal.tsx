@@ -1,12 +1,12 @@
-// Module ID: 17796
-// Function ID: 17797
+// Module ID: 18083
+// Function ID: 18084
 // Name: GuildSettingsStickerCreateModal
-// Dependencies: [19, 21, 558, 576, 10671, 1126, 17797, 10674, 2]
+// Dependencies: [19, 21, 558, 576, 9584, 1126, 18084, 9587, 2]
 
-// Module 17796 (GuildSettingsStickerCreateModal)
+// Module 18083 (GuildSettingsStickerCreateModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
-import GuildSettingsStickerCreateDefault from "GuildSettingsStickerCreate" /* 17797 */;
+import GuildSettingsStickerCreateDefault from "GuildSettingsStickerCreate" /* 18084 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -14,7 +14,7 @@ import size from "module_2" /* 2 */;
 let dependencyMap;
 
 const jsx = Fragment.jsx;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsStickerCreateModal(guildId) {
   let onGoBack;
   let tmp6;
   const obj = guildId(onGoBack[3]);
@@ -73,7 +73,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[5] = stickerId;
   cResult[6] = fn;
   tmp10 = fn;
-}) : ((arg0) => {
+}) : (function GuildSettingsStickerCreateModal(arg0) {
   let c2;
   let c3;
   let guildId;
@@ -84,9 +84,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   ({ guildId: require, stickerId } = arg0);
   dependencyMap = undefined;
   c3 = undefined;
-  ({ onGoBack: c2, ref: c3 } = stickerId(10671)());
-  stickerId(10671)();
-  const tmp4 = stickerId(10674);
+  ({ onGoBack: c2, ref: c3 } = stickerId(9584)());
+  stickerId(9584)();
+  const tmp4 = stickerId(9587);
   const intl = intl2.intl;
   const string = intl.string;
   const tmp3 = c3;

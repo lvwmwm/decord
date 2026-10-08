@@ -1,9 +1,9 @@
-// Module ID: 11807
-// Function ID: 11808
+// Module ID: 11874
+// Function ID: 11875
 // Name: useAwaitAnimationComplete
 // Dependencies: [19, 21, 558, 576, 2]
 
-// Module 11807 (useAwaitAnimationComplete)
+// Module 11874 (useAwaitAnimationComplete)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 const jsx = Fragment.jsx;
 const redux = react.createContext(null);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AwaitAnimationContext(arg0) {
   let children;
   let handleQueuedCallback;
   let tmp2;
@@ -40,13 +40,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp2;
   cResult[4] = tmp4;
   tmp3 = tmp4;
-}) : ((children) => {
+}) : (function AwaitAnimationContext(children) {
   const handleQueuedCallback = children.handleQueuedCallback;
   const items = [handleQueuedCallback];
   return <redux.Provider value={react.useMemo(() => ({ handleQueuedCallback }), items)}>{arg0.children}</redux.Provider>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAwaitAnimationCompletion() {
   let handleQueuedCallback;
   const obj = react2;
   const cResult = obj.c(1);
@@ -55,7 +55,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let first;
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function l(fn) {
+      const fn = function t(fn) {
         return fn();
       };
       cResult[0] = fn;
@@ -68,7 +68,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     handleQueuedCallback = context.handleQueuedCallback;
   }
   return handleQueuedCallback;
-}) : (() => {
+}) : (function useAwaitAnimationCompletion() {
   let fn;
   const context = react.useContext(redux);
   if (null == context) {

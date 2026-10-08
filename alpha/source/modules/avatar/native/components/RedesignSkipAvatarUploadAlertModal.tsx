@@ -1,23 +1,21 @@
-// Module ID: 17634
-// Function ID: 17635
+// Module ID: 17916
+// Function ID: 17917
 // Name: RedesignSkipAvatarUploadAlertModal
-// Dependencies: [19, 21, 558, 576, 1126, 5720, 5720, 2]
+// Dependencies: [19, 21, 558, 576, 1126, 5303, 5303, 2]
 
-// Module 17634 (RedesignSkipAvatarUploadAlertModal)
+// Module 17916 (RedesignSkipAvatarUploadAlertModal)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
-import AlertModal2 from "AlertModal" /* 5720 */;
+import AlertModal2 from "AlertModal" /* 5303 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let onConfirm;
-
 let c2;
 let c3;
 ({ jsx: c2, jsxs: c3 } = Fragment);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignSkipAvatarUploadAlertModal(onConfirm) {
   let intl4;
   let items;
   let obj5;
@@ -61,7 +59,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "secondary", text: intl4.string(intl5.t["7eZ3ji"]) };
-    const AlertActionButton = tmp(5720).AlertActionButton;
+    const AlertActionButton = tmp(5303).AlertActionButton;
     intl4 = tmp(1126).intl;
     const tmp15 = React2(AlertActionButton, obj3, "add-profile-picture");
     cResult[5] = tmp15;
@@ -71,7 +69,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   }
   if (cResult[6] !== tmp10) {
     const obj4 = { title: tmp4, content: tmp5, actions: _false(AlertModal2.AlertActions, obj5) };
-    const AlertModal = tmp(5720).AlertModal;
+    const AlertModal = tmp(5303).AlertModal;
     obj5 = { children: items };
     items = [tmp10, tmp13];
     const tmp19 = React2(AlertModal, obj4);
@@ -82,7 +80,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
     tmp16 = cResult[7];
   }
   return tmp16;
-}) : ((onConfirm) => {
+}) : (function RedesignSkipAvatarUploadAlertModal(onConfirm) {
   let AlertActions;
   let intl;
   let intl2;

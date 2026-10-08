@@ -1,13 +1,13 @@
-// Module ID: 12496
-// Function ID: 12497
+// Module ID: 12592
+// Function ID: 12593
 // Name: GuildAntiRaidPermissionsUtils
-// Dependencies: [4515, 11173, 1085, 558, 576, 504, 7696, 2]
+// Dependencies: [4707, 11293, 1085, 558, 576, 504, 8017, 2]
 // Exports: canEnableRaidAlerts, canReportRaid
 
-// Module 12496 (GuildAntiRaidPermissionsUtils)
+// Module 12592 (GuildAntiRaidPermissionsUtils)
 import Constants from "Constants" /* 1085 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11173 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11293 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let _require;
 
 const Permissions = Constants.Permissions;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanReportRaid(arg0) {
   let closure_0;
   let first;
   let tmp11;
@@ -130,7 +130,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return !tmp14 && stateFromStores;
-}) : ((arg0) => {
+}) : (function useCanReportRaid(arg0) {
   let closure_0;
   _require = arg0;
   const tmp = _require;
@@ -155,13 +155,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items3);
   let hasDetectedActivityResult = null != stateFromStores1;
   if (hasDetectedActivityResult) {
-    const tmpResult = tmp(7696);
+    const tmpResult = tmp(8017);
     hasDetectedActivityResult = tmpResult.hasDetectedActivity(stateFromStores1);
   }
   return !hasDetectedActivityResult && stateFromStores;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanEnableRaidAlerts(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -178,7 +178,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function l() {
+    const fn = function s() {
       const obj = PermissionStore;
       if (PermissionStore !== undefined) {
         return obj.can(Permissions.MANAGE_GUILD, tmp);
@@ -196,7 +196,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useCanEnableRaidAlerts(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");

@@ -1,15 +1,15 @@
-// Module ID: 14351
-// Function ID: 14352
+// Module ID: 14579
+// Function ID: 14580
 // Name: setActivity
-// Dependencies: [5124, 5323, 1085, 8025, 9062, 10636, 14320, 9059, 584, 11136, 9027, 12, 1102, 7832, 1252, 2]
+// Dependencies: [5436, 5635, 1085, 8433, 11137, 10236, 14545, 11134, 584, 11256, 10617, 12, 1102, 8250, 1264, 2]
 
-// Module 14351 (setActivity)
+// Module 14579 (setActivity)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8025 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9062 */;
-import StatusDisplayTypes from "StatusDisplayTypes" /* 10636 */;
-import ApplicationStore from "ApplicationStore" /* 5124 */;
-import Constants_mod from "Constants" /* 5323 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8433 */;
+import StatusDisplayTypes from "StatusDisplayTypes" /* 10236 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11137 */;
+import ApplicationStore from "ApplicationStore" /* 5436 */;
+import Constants_mod from "Constants" /* 5635 */;
 import Constants_mod2 from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -17,17 +17,19 @@ let RPC_EMBEDDED_APP_SCOPE;
 let RPC_SCOPE_CONFIG;
 let c10;
 let c9;
-let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let obj3;
 let Constants = Constants_mod2;
 const RPC_LOCAL_SCOPE = Constants.RPC_LOCAL_SCOPE;
-({ TransportTypes: hasOwnProperty, RPC_SCOPE_CONFIG, RPC_EMBEDDED_APP_SCOPE } = Constants);
+const TransportTypes = Constants.TransportTypes;
+({ RPC_SCOPE_CONFIG, RPC_EMBEDDED_APP_SCOPE } = Constants);
 Constants = Constants_mod2;
 ({ ActivityGamePlatforms: metroRequire, ActivityPartyPrivacy: metroImportDefault, ActivityTypes: metroImportAll, AnalyticEvents: c9, RPCErrors: c10 } = Constants);
 let closure_11 = ["1402418171662569542"];
+let items = [, , ];
+({ IPC: arr[0], WEBSOCKET: arr[1], POST_MESSAGE: arr[2] } = TransportTypes);
 let obj = {};
 let obj2 = {
   scope: obj3,
@@ -119,7 +121,7 @@ let obj2 = {
     createRpcJoiSchemaObjectDefault(number);
     const stringResult12 = number.string();
     minResult12 = stringResult12.min(2);
-    const items = number.array().items;
+    items = number.array().items;
     number.array();
     const numberResult3 = number.number();
     itemsResult = items(numberResult3.min(0));
@@ -182,36 +184,34 @@ let obj2 = {
     const tmp = socket;
     const tmp2 = activity;
     const tmp3 = activity;
-    let hasItem = scopes.includes(socket(activity[3]).OAuth2Scopes.RPC);
+    let hasItem = scopes.has(socket(activity[3]).OAuth2Scopes.RPC);
     if (!hasItem) {
       const scopes2 = socket.authorization.scopes;
       let tmp5 = tmp2;
-      hasItem = scopes2.includes(tmp(tmp3[3]).OAuth2Scopes.RPC_ACTIVITIES_WRITE);
+      hasItem = scopes2.has(tmp(tmp3[3]).OAuth2Scopes.RPC_ACTIVITIES_WRITE);
     }
     if (!hasItem) {
       const scopes3 = socket.authorization.scopes;
-      hasItem = scopes3.includes(id);
+      hasItem = scopes3.has(id);
     }
     if (!hasItem) {
       const tmp10 = pid(tmp3[6])(socket);
     }
-    const items = [, , ];
-    ({ IPC: arr[0], WEBSOCKET: arr[1], POST_MESSAGE: arr[2] } = privacy);
     if (items.includes(socket.transport)) {
       if (null == pid) {
         if (privacy.IPC === socket.transport) {
           let obj2 = { errorCode: constants4.INVALID_COMMAND };
           const self11 = this;
           const self12 = this;
-          const tmp86 = new pid(tmp2[7])(obj2, "nonzero pid required");
-          throw tmp86;
+          const tmp88 = new pid(tmp2[7])(obj2, "nonzero pid required");
+          throw tmp88;
         }
       }
       id = socket.application.id;
       if (null == activity) {
         const obj3 = { type: "LOCAL_ACTIVITY_UPDATE", socketId: socket.id, pid, applicationId: id, activity };
-        const obj9 = pid(tmp3[8]);
-        obj9.dispatch(obj3);
+        const obj10 = pid(tmp3[8]);
+        obj10.dispatch(obj3);
         return Promise.resolve(activity);
       } else {
         let resolved;
@@ -244,9 +244,9 @@ let obj2 = {
           result = tmpResult2.canLaunchContextlessFrame(application);
         }
         if (result) {
-          result = tmp22;
+          result = tmp23;
         }
-        const activityFlags = computeActivityFlags(activity, flag, tmp22, result, privacy);
+        const activityFlags = computeActivityFlags(activity, flag, tmp23, result, privacy);
         if (activityFlags > 0) {
           activity.flags = activityFlags;
         }
@@ -256,35 +256,33 @@ let obj2 = {
           activity.type = constants2.PLAYING;
         }
         if (null != secrets) {
-          const obj12 = pid(tmp3[11]);
-          const values = obj12.values(secrets);
+          const obj13 = pid(tmp3[11]);
+          const values = obj13.values(secrets);
           const found = values.filter((item) => item);
           if (null != party3) {
-            const items1 = [party3.id];
-            const tmp89Result = pid(tmp3[11]);
-            if (tmp89Result.intersection(found, items1).length > 0) {
-              if (!closure_11.includes(socket.application.id)) {
-                let obj4 = { errorCode: constants4.INVALID_ACTIVITY_SECRET };
-                const self3 = this;
-                const self4 = this;
-                const tmp45 = new pid(tmp3[7])(obj4, "secrets cannot match the party id");
-                throw tmp45;
-              }
+            items = [party3.id];
+            const tmp91Result = pid(tmp3[11]);
+            if (tmp91Result.intersection(found, items).length > 0) {
+              let obj4 = { errorCode: constants4.INVALID_ACTIVITY_SECRET };
+              const self9 = this;
+              const self10 = this;
+              const tmp77 = new pid(tmp3[7])(obj4, "secrets cannot match the party id");
+              throw tmp77;
             }
           }
-          const tmp89Result2 = pid(tmp3[11]);
-          if (tmp89Result2.uniq(found).length < found.length) {
-            const self9 = this;
-            const self10 = this;
-            const obj5 = { errorCode: constants4.INVALID_ACTIVITY_SECRET };
-            const tmp75 = new pid(tmp3[7])(obj5, "secrets must be unique");
-            throw tmp75;
-          } else if (null != buttons) {
+          const tmp91Result2 = pid(tmp3[11]);
+          if (tmp91Result2.uniq(found).length < found.length) {
             const self7 = this;
             const self8 = this;
+            const obj5 = { errorCode: constants4.INVALID_ACTIVITY_SECRET };
+            const tmp71 = new pid(tmp3[7])(obj5, "secrets must be unique");
+            throw tmp71;
+          } else if (null != buttons) {
+            const self5 = this;
+            const self6 = this;
             const obj7 = { errorCode: constants4.INVALID_ACTIVITY_SECRET };
-            const tmp69 = new pid(tmp3[7])(obj7, "secrets cannot currently be sent with buttons");
-            throw tmp69;
+            const tmp65 = new pid(tmp3[7])(obj7, "secrets cannot currently be sent with buttons");
+            throw tmp65;
           }
         }
         const obj8 = {};
@@ -299,13 +297,13 @@ let obj2 = {
           const iter = keys[Symbol.iterator]();
           const nextResult = iter.next();
           while (iter !== undefined) {
-            let tmp52 = nextResult;
+            let tmp48 = nextResult;
             let _Date = Date;
-            let str4 = Date.now();
-            let str5 = timestamps[nextResult];
-            if (str4.toString().length - str5.toString().length > 2) {
+            let str3 = Date.now();
+            let str4 = timestamps[nextResult];
+            if (str3.toString().length - str4.toString().length > 2) {
               let _Math = Math;
-              timestamps[tmp52] = Math.floor(timestamps[tmp52] * pid(activity[12]).Millis.SECOND);
+              timestamps[tmp48] = Math.floor(timestamps[tmp48] * pid(activity[12]).Millis.SECOND);
             }
             continue;
           }
@@ -315,15 +313,15 @@ let obj2 = {
         } else {
           if (null != socket.application) {
             if (null != socket.application.id) {
-              const items2 = [, , ];
+              const items1 = [, , ];
               ({ large_image: arr2[0], small_image: arr2[1], invite_cover_image: arr2[2] } = assets);
               const obj6 = socket(activity[13]);
-              resolved = obj6.fetchAssetIds(socket.application.id, items2);
+              resolved = obj6.fetchAssetIds(socket.application.id, items1);
             }
           }
           const _Error = Error;
-          const self5 = this;
-          const self6 = this;
+          const self3 = this;
+          const self4 = this;
           const error = new Error();
           throw error;
         }
@@ -404,32 +402,32 @@ let obj2 = {
               obj4.party_max = tmp17;
               obj4.party_id = party.id;
             }
-            const tmp5Result = tmp5(1252);
+            const tmp5Result = tmp5(1264);
             tmp5Result.track(constants.ACTIVITY_UPDATED, obj4);
             return activity;
           }
         });
       }
     } else {
-      let tmp13 = pid;
+      let tmp13 = tmp2;
       let obj = { errorCode: constants4.INVALID_COMMAND };
-      let tmp16 = constants4;
-      let tmp17 = globalThis;
+      let tmp16 = globalThis;
       const _HermesInternal = HermesInternal;
       let str = "\" transport";
       const self = this;
       const self2 = this;
-      const tmp15 = pid(tmp3[7]);
-      const tmp152 = new tmp15(obj, "command not available from \"" + socket.transport + "\" transport");
-      throw tmp152;
+      let tmp17 = obj;
+      const tmp14 = pid(tmp3[7]);
+      const tmp142 = new tmp14(obj, "command not available from \"" + socket.transport + "\" transport");
+      throw tmp142;
     }
   }
 };
 obj3 = {};
 const SET_ACTIVITY = Constants.RPCCommands.SET_ACTIVITY;
 const ANY = RPC_SCOPE_CONFIG.ANY;
-let items = [OAuth2Scopes.OAuth2Scopes.RPC, OAuth2Scopes.OAuth2Scopes.RPC_ACTIVITIES_WRITE, RPC_LOCAL_SCOPE, RPC_EMBEDDED_APP_SCOPE];
-obj3[ANY] = items;
+let items1 = [OAuth2Scopes.OAuth2Scopes.RPC, OAuth2Scopes.OAuth2Scopes.RPC_ACTIVITIES_WRITE, RPC_LOCAL_SCOPE, RPC_EMBEDDED_APP_SCOPE];
+obj3[ANY] = items1;
 obj[SET_ACTIVITY] = obj2;
 let result = size.fileFinishedImporting("modules/rpc/server/commands/setActivity.tsx");
 

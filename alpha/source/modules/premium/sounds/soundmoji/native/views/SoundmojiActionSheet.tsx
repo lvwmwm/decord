@@ -1,22 +1,22 @@
-// Module ID: 11558
-// Function ID: 11559
+// Module ID: 11621
+// Function ID: 11622
 // Name: SoundmojiActionSheet
-// Dependencies: [19, 17, 21, 4896, 587, 1369, 558, 576, 5808, 6632, 11559, 4892, 1126, 6652, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 1381, 558, 576, 5423, 6809, 11622, 5086, 1126, 6829, 2]
 
-// Module 11558 (SoundmojiActionSheet)
+// Module 11621 (SoundmojiActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 5808 */;
-import EmojiDefault from "Emoji" /* 6632 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6652 */;
-import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 11559 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 5423 */;
+import EmojiDefault from "Emoji" /* 6809 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6829 */;
+import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 11622 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ if (PlatformUtils.isIOS()) {
 size = { width: 32, height: 32, fontSize: num, lineHeight: 36, marginEnd: nativeDefault.space.PX_16 };
 obj3 = { gap: nativeDefault.space.PX_4, display: "flex", flex: 1 };
 let closure_7 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundmojiActionSheet(arg0) {
   let channelId;
   let guildId;
   let intl;
@@ -81,7 +81,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             const _Symbol = Symbol;
             if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
               const obj4 = { variant: "text-sm/normal", children: intl.string(intl2.t.Tj5Nwi) };
-              const Text = tmp(4892).Text;
+              const Text = tmp(5086).Text;
               intl = tmp(1126).intl;
               const tmp20 = hasOwnProperty(Text, obj4);
               cResult[10] = tmp20;
@@ -161,7 +161,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = soundId;
   cResult[4] = soundmojiFromMessage;
   tmp5 = soundmojiFromMessage;
-}) : ((guildId) => {
+}) : (function SoundmojiActionSheet(guildId) {
   let intl;
   let items1;
   let items2;

@@ -1,17 +1,17 @@
-// Module ID: 13135
-// Function ID: 13136
+// Module ID: 12850
+// Function ID: 12851
 // Name: useIsForumChannelSearchActive
-// Dependencies: [7277, 558, 576, 13118, 504, 2]
+// Dependencies: [7877, 558, 576, 12832, 504, 2]
 
-// Module 13135 (useIsForumChannelSearchActive)
-import ForumSearchStore from "ForumSearchStore" /* 7277 */;
+// Module 12850 (useIsForumChannelSearchActive)
+import ForumSearchStore from "ForumSearchStore" /* 7877 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsForumChannelSearchActive(arg0) {
   let closure_0;
   _require = arg0;
   const tmp = _require;
@@ -27,7 +27,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function l() {
+    const fn = function s() {
       let searchQuery = null;
       if (null != closure_0) {
         searchQuery = ForumSearchStore.getSearchQuery(tmp);
@@ -44,7 +44,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     canSearchForumPostsByChannelId = null != tmp10;
   }
   return canSearchForumPostsByChannelId;
-}) : ((arg0) => {
+}) : (function useIsForumChannelSearchActive(arg0) {
   let closure_0;
   _require = arg0;
   const obj = require("useCanSearchForumPostsByChannelId");

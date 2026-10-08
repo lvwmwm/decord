@@ -1,21 +1,19 @@
-// Module ID: 9764
-// Function ID: 9765
+// Module ID: 10967
+// Function ID: 10968
 // Name: AudienceGridRow
-// Dependencies: [19, 17, 5578, 21, 4896, 558, 576, 9765, 9766, 2]
+// Dependencies: [19, 17, 5888, 21, 5090, 558, 576, 10968, 10969, 2]
 
-// Module 9764 (AudienceGridRow)
+// Module 10967 (AudienceGridRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 5578 */;
-import BlankAudienceTileDefault from "BlankAudienceTile" /* 9765 */;
-import AudienceTileDefault from "AudienceTile" /* 9766 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 5888 */;
+import BlankAudienceTileDefault from "BlankAudienceTile" /* 10968 */;
+import AudienceTileDefault from "AudienceTile" /* 10969 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let count;
 
 let hasOwnProperty;
 let metroRequire;
@@ -24,7 +22,7 @@ const MAX_AUDIENCE_ROW_LIMIT = StageChannelsConstants.MAX_AUDIENCE_ROW_LIMIT;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ rowContainer: { flex: 1, flexDirection: "row", marginVertical: 16, paddingHorizontal: 4, justifyContent: "space-between" } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((count) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlankAudience(count) {
   let tmp2;
   const obj = react2;
   const cResult = obj.c(2);
@@ -42,7 +40,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((count) => {
     tmp2 = cResult[1];
   }
   return tmp2;
-}) : ((count) => {
+}) : (function BlankAudience(count) {
   let num;
   count = count.count;
   const items = [];
@@ -54,7 +52,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((count) => {
 let closure_8 = tmp4;
 const memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function AudienceGridRow(channel) {
   let items;
   let participants;
   let renderBlankAudience;
@@ -150,7 +148,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
   cResult[3] = tmp5;
   cResult[4] = items1;
   tmp6 = items1;
-}) : ((theme) => {
+}) : (function AudienceGridRow(theme) {
   let channel;
   let items1;
   let participants;

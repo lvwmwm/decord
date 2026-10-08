@@ -1,23 +1,23 @@
-// Module ID: 17569
-// Function ID: 17570
+// Module ID: 17851
+// Function ID: 17852
 // Name: LabelLayoutComponent
-// Dependencies: [19, 17, 21, 558, 576, 7806, 1985, 6430, 2]
+// Dependencies: [19, 17, 21, 558, 576, 8225, 1997, 6284, 2]
 
-// Module 17569 (LabelLayoutComponent)
+// Module 17851 (LabelLayoutComponent)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Server from "Server" /* 1985 */;
-import ComponentStateContext from "ComponentStateContext" /* 7806 */;
+import Server from "Server" /* 1997 */;
+import ComponentStateContext from "ComponentStateContext" /* 8225 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Input2 = tmp(6430);
+const Input2 = tmp(6284);
 const View = react_native.View;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabelLayoutComponent(arg0) {
   let component;
   let description;
   let label;
@@ -93,7 +93,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[6] = renderComponentResult1;
     tmp6 = renderComponentResult1;
   }
-}) : ((arg0) => {
+}) : (function LabelLayoutComponent(arg0) {
   let component;
   let description;
   let label;

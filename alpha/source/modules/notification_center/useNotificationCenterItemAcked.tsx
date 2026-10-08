@@ -1,17 +1,17 @@
-// Module ID: 16401
-// Function ID: 16402
+// Module ID: 16661
+// Function ID: 16662
 // Name: useNotificationCenterItemAcked
-// Dependencies: [16394, 558, 576, 504, 7139, 2]
+// Dependencies: [16654, 558, 576, 504, 6064, 2]
 
-// Module 16401 (useNotificationCenterItemAcked)
-import NotificationCenterStore from "NotificationCenterStore" /* 16394 */;
+// Module 16661 (useNotificationCenterItemAcked)
+import NotificationCenterStore from "NotificationCenterStore" /* 16654 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((forceUnacked, setting) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNotificationCenterItemAcked(forceUnacked, setting) {
   let first;
   let tmp6;
   _require = forceUnacked;
@@ -59,7 +59,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((forceUnacked, sett
     tmp10 = isRemoteAckedResult;
   }
   return tmp8;
-}) : ((forceUnacked, setting) => {
+}) : (function useNotificationCenterItemAcked(forceUnacked, setting) {
   _require = forceUnacked;
   const items = [NotificationCenterStore];
   const obj = require("get initialized");
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((forceUnacked, sett
   const tmp = _require;
   if (tmp4) {
     if (!stateFromStores) {
-      const tmpResult = tmp(7139);
+      const tmpResult = tmp(6064);
       stateFromStores = tmpResult.isRemoteAcked(forceUnacked, setting);
     }
     tmp4 = stateFromStores;

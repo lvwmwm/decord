@@ -1,9 +1,9 @@
-// Module ID: 9479
-// Function ID: 9480
+// Module ID: 12896
+// Function ID: 12897
 // Name: ScrollHandlingActionSheet
-// Dependencies: [109, 19, 21, 558, 576, 6652, 2]
+// Dependencies: [109, 19, 21, 558, 576, 6829, 2]
 
-// Module 9479 (ScrollHandlingActionSheet)
+// Module 12896 (ScrollHandlingActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -14,10 +14,10 @@ import size from "module_2" /* 2 */;
 let BottomSheet;
 
 let tmp;
-const Sheet_BottomSheet = tmp(6652);
+const Sheet_BottomSheet = tmp(6829);
 let closure_2 = ["children", "scrollableDeviceHeightBreakpoint"];
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScrollHandlingActionSheet(arg0) {
   let children;
   let scrollableDeviceHeightBreakpoint;
   let tmp4;
@@ -50,7 +50,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = tmp5;
   cResult[5] = tmp11;
   tmp9 = tmp11;
-}) : ((children) => {
+}) : (function ScrollHandlingActionSheet(children) {
   children = children.children;
   const merged = Object.assign(children, Object.assign({ children: 0, scrollableDeviceHeightBreakpoint: 0 }));
   BottomSheet = Sheet_BottomSheet.BottomSheet;

@@ -1,18 +1,16 @@
-// Module ID: 8472
-// Function ID: 8473
+// Module ID: 8958
+// Function ID: 8959
 // Name: useGetOrFetchStorefrontPrices
-// Dependencies: [19, 558, 576, 8473, 2]
+// Dependencies: [19, 558, 576, 8959, 2]
 
-// Module 8472 (useGetOrFetchStorefrontPrices)
-import StorefrontActionCreators from "StorefrontActionCreators" /* 8473 */;
+// Module 8958 (useGetOrFetchStorefrontPrices)
+import StorefrontActionCreators from "StorefrontActionCreators" /* 8959 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let applicationId, skuIds;
-
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetchStorefrontPricesForApplicationId(applicationId) {
   let tmp2;
   let tmp3;
   let obj = applicationId(576);
@@ -37,7 +35,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
     tmp3 = cResult[2];
   }
   const effect = react.useEffect(tmp2, tmp3);
-}) : ((applicationId) => {
+}) : (function useGetOrFetchStorefrontPricesForApplicationId(applicationId) {
   applicationId = applicationId.applicationId;
   const items = [applicationId];
   const effect = react.useEffect(() => {
@@ -49,7 +47,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuIds) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetchStorefrontPricesForSkuIds(skuIds) {
   let tmp2;
   let tmp3;
   let obj = skuIds(576);
@@ -74,7 +72,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuIds) => {
     tmp3 = cResult[2];
   }
   const effect = react.useEffect(tmp2, tmp3);
-}) : ((skuIds) => {
+}) : (function useGetOrFetchStorefrontPricesForSkuIds(skuIds) {
   skuIds = skuIds.skuIds;
   const items = [skuIds];
   const effect = react.useEffect(() => {

@@ -1,18 +1,18 @@
-// Module ID: 11739
-// Function ID: 11740
+// Module ID: 11805
+// Function ID: 11806
 // Name: useTrackAppLauncherItemImpressionOnFirstView
-// Dependencies: [19, 558, 576, 11007, 1491, 8455, 1260, 2]
+// Dependencies: [19, 558, 576, 11232, 1503, 8941, 1272, 2]
 
-// Module 11739 (useTrackAppLauncherItemImpressionOnFirstView)
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import useTrackImpression from "useTrackImpression" /* 8455 */;
+// Module 11805 (useTrackAppLauncherItemImpressionOnFirstView)
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
+import useTrackImpression from "useTrackImpression" /* 8941 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackAppLauncherItemImpressionOnFirstView() {
   let entrypoint;
   let first;
   let ref;
@@ -22,7 +22,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   let tmp = entrypoint;
   let obj = entrypoint(576);
   const cResult = obj.c(6);
-  let obj2 = entrypoint(11007);
+  let obj2 = entrypoint(11232);
   entrypoint = obj2.useAppLauncherContext().entrypoint;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const _Set = Set;
@@ -45,7 +45,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   } else {
     tmp7 = cResult[1];
   }
-  const tmpResult = tmp(1491);
+  const tmpResult = tmp(1503);
   const focusEffect = tmpResult.useFocusEffect(tmp7);
   if (cResult[2] !== entrypoint) {
     const fn2 = function p(itemKey) {
@@ -85,16 +85,16 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
     tmp10 = cResult[5];
   }
   return tmp10;
-}) : (() => {
+}) : (function useTrackAppLauncherItemImpressionOnFirstView() {
   let entrypoint;
   let items;
   let ref;
-  let obj = entrypoint(11007);
+  let obj = entrypoint(11232);
   entrypoint = obj.useAppLauncherContext().entrypoint;
   const useRef = react.useRef;
   set = new Set();
   dependencyMap = useRef(set);
-  let obj2 = entrypoint(1491);
+  let obj2 = entrypoint(1503);
   const focusEffect = obj2.useFocusEffect(react.useCallback(() => {
     const current = ref.current;
     current.clear();

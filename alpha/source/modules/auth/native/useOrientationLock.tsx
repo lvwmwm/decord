@@ -1,11 +1,11 @@
-// Module ID: 15962
-// Function ID: 15963
+// Module ID: 16222
+// Function ID: 16223
 // Name: useOrientationLock
-// Dependencies: [19, 4872, 1615, 558, 576, 6439, 8018, 2]
+// Dependencies: [19, 5066, 1627, 558, 576, 6617, 8426, 2]
 
-// Module 15962 (useOrientationLock)
-import DeviceUtils from "DeviceUtils" /* 4872 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 6439 */;
+// Module 16222 (useOrientationLock)
+import DeviceUtils from "DeviceUtils" /* 5066 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 6617 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -14,9 +14,9 @@ const require = globalThis.__r;
 let _require;
 
 let tmp;
-const MetaQuestUtils = tmp(1615);
-const DeviceOrientation = tmp(8018);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const MetaQuestUtils = tmp(1627);
+const DeviceOrientation = tmp(8426);
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePortraitOrientationOnly() {
   let tmp3;
   let tmp4;
   let obj = require("react");
@@ -60,7 +60,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = cResult[2];
   }
   const effect = react.useEffect(tmp3, tmp4);
-}) : (() => {
+}) : (function usePortraitOrientationOnly() {
   let tmp = useWideAuthViewDefault();
   let closure_0 = tmp;
   const items = [tmp];

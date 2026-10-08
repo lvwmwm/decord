@@ -1,9 +1,9 @@
-// Module ID: 15680
-// Function ID: 15681
+// Module ID: 15960
+// Function ID: 15961
 // Name: ToastStore
 // Dependencies: [504, 584, 2]
 
-// Module 15680 (ToastStore)
+// Module 15960 (ToastStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

@@ -1,14 +1,13 @@
-// Module ID: 16606
-// Function ID: 16607
+// Module ID: 16861
+// Function ID: 16862
 // Name: ConjureRemix
-// Dependencies: [5, 12923, 8735, 6757, 3753, 1126, 2]
+// Dependencies: [5, 13072, 12364, 3827, 1126, 2]
 // Exports: remixConjureProjectInto
 
-// Module 16606 (ConjureRemix)
-import ConjureTypes from "ConjureTypes" /* 6757 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 8735 */;
+// Module 16861 (ConjureRemix)
+import ConjureActionCreators from "ConjureActionCreators" /* 12364 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 12923 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13072 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, status;
@@ -25,11 +24,9 @@ let obj = function _remixConjureProjectInto() {
     let c7 = 0;
     let c5 = 0;
     return (async (arg0, value) => {
-      let conjureCreateFlags;
       let deleteProjectResult;
       let intl;
       let name;
-      let obj15;
       if (c7 === 2) {
         c7 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -59,16 +56,13 @@ let obj = function _remixConjureProjectInto() {
               Cn8H0Y = undefined;
               projectId = null;
               c5 = 1;
-              const obj4 = { name: "" + name.slice(0, 120) + closure_2_8, guild_id: projectId, install_scope: user.install_scope, flags: conjureCreateFlags(obj15.projectUsesNativeAppChannels(user)) };
+              const obj4 = { name: "" + name.slice(0, 120) + closure_2_8, guild_id: projectId, install_scope: user.install_scope };
               name = user.name;
               const createProject = ConjureActionCreators.createProject;
               const _HermesInternal = HermesInternal;
               ConjureActionCreators;
-              conjureCreateFlags = ConjureTypes.conjureCreateFlags;
-              ConjureTypes;
               c6 = 2;
               c7 = 1;
-              obj15 = ConjureTypes;
               const obj5 = { value: createProject(obj4), done: false };
               return obj5;
             }
@@ -115,8 +109,8 @@ let obj = function _remixConjureProjectInto() {
               } else {
                 c5 = 0;
                 closure_131_5(projectId);
-                const intl2 = closure_131_0(closure_131_2[5]).intl;
-                closure_131_7(projectId, intl2.string(closure_131_1(closure_131_2[4]).jviD6Y), undefined, { remix: true });
+                const intl2 = closure_131_0(closure_131_2[4]).intl;
+                closure_131_7(projectId, intl2.string(closure_131_1(closure_131_2[3]).jviD6Y), undefined, { remix: true });
                 c7 = 3;
                 return { value: { ok: true, projectId }, done: true };
               }
@@ -129,14 +123,14 @@ let obj = function _remixConjureProjectInto() {
             }
             if (status instanceof closure_131_4) {
               if (409 === status.status) {
-                Cn8H0Y = closure_131_1(closure_131_2[4]).kQerlZ;
+                Cn8H0Y = closure_131_1(closure_131_2[3]).kQerlZ;
               }
               const obj13 = { ok: false, message: intl.string(Cn8H0Y) };
-              intl = closure_131_0(closure_131_2[5]).intl;
+              intl = closure_131_0(closure_131_2[4]).intl;
               c7 = 3;
               return { value: obj13, done: true };
             }
-            Cn8H0Y = closure_131_1(closure_131_2[4]).Cn8H0Y;
+            Cn8H0Y = closure_131_1(closure_131_2[3]).Cn8H0Y;
           }
         } catch (tmp36) {
           closure_4 = tmp36;

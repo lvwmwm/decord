@@ -1,37 +1,37 @@
-// Module ID: 11504
-// Function ID: 11505
+// Module ID: 11496
+// Function ID: 11497
 // Name: ClassificationDetail
-// Dependencies: [19, 17, 2116, 8139, 8126, 1085, 21, 4896, 587, 558, 576, 4892, 8127, 1126, 504, 3137, 4571, 8952, 9455, 6000, 5601, 11505, 11507, 8138, 8119, 1252, 11508, 5416, 5421, 11510, 11515, 8125, 6626, 2]
+// Dependencies: [19, 17, 2128, 5920, 5921, 1085, 21, 5090, 587, 558, 576, 5086, 5922, 1126, 504, 3181, 4763, 10386, 7013, 6184, 5375, 11497, 11499, 7525, 5915, 1264, 11500, 5725, 5730, 11502, 11507, 5927, 6803, 2]
 
-// Module 11504 (ClassificationDetail)
+// Module 11496 (ClassificationDetail)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import _modDef3137 from "module_3137" /* 3137 */;
-import LinkingDefault from "Linking" /* 4571 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5416 */;
-import MetricEvents from "MetricEvents" /* 5421 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import TableRow2 from "TableRow" /* 6000 */;
-import SafetyHubModels from "SafetyHubModels" /* 8127 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9455 */;
-import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 11508 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 11510 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import _modDef3181 from "module_3181" /* 3181 */;
+import LinkingDefault from "Linking" /* 4763 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5725 */;
+import MetricEvents from "MetricEvents" /* 5730 */;
+import SafetyHubModels from "SafetyHubModels" /* 5922 */;
+import TableRow2 from "TableRow" /* 6184 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 7013 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 11500 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 11502 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
-import SafetyHubStore from "SafetyHubStore" /* 8139 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8126 */;
+import LocaleStore from "LocaleStore" /* 2128 */;
+import SafetyHubStore from "SafetyHubStore" /* 5920 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 5921 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, classificationId, closure_8, guildMetadata;
+let _require, closure_8, guildMetadata;
 
 let c10;
 let c9;
@@ -59,9 +59,8 @@ function ClassificationPolicyCard(policyExplainerLink) {
   let Text;
   let classificationTypeText2;
   let intl;
+  let items;
   let items1;
-  let items2;
-  let items3;
   let obj10;
   let obj12;
   let obj14;
@@ -72,131 +71,122 @@ function ClassificationPolicyCard(policyExplainerLink) {
   const tmp = closure_25;
   if (tmp) {
     let tmp17;
-    let tmp18;
-    let tmp20;
-    let tmp24;
-    let tmp28;
-    let tmp30;
+    let tmp19;
+    let tmp23;
+    let tmp27;
+    let tmp29;
     const obj8 = policyExplainerLink(576);
-    const cResult = obj8.c(19);
+    const cResult = obj8.c(17);
     ({ classificationTypeText: classificationTypeText2, policyExplainerLink } = policyExplainerLink);
     const tmp16 = closure_16();
     if (cResult[0] !== policyExplainerLink) {
-      const fn = function t() {
+      function openPolicyExplainer() {
         const obj = LinkingDefault;
         obj.openURL(policyExplainerLink);
-      };
+      }
       cResult[0] = policyExplainerLink;
-      cResult[1] = fn;
-      tmp17 = fn;
+      cResult[1] = openPolicyExplainer;
+      tmp17 = openPolicyExplainer;
     } else {
       tmp17 = cResult[1];
     }
-    if (cResult[2] !== tmp16.classificationPolicyCard) {
-      const items = [tmp16.classificationPolicyCard];
-      cResult[2] = tmp16.classificationPolicyCard;
-      cResult[3] = items;
-      tmp18 = items;
-    } else {
-      tmp18 = cResult[3];
-    }
     const _Symbol = Symbol;
-    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const classificationPolicyCard = tmp16.classificationPolicyCard;
+    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "sm", color: nativeDefault.colors.TEXT_LINK };
-      const ShieldIcon2 = tmp12(8952).ShieldIcon;
-      const tmp23 = closure_13(ShieldIcon2, obj2);
-      cResult[4] = tmp23;
-      tmp20 = tmp23;
+      const ShieldIcon2 = tmp12(10386).ShieldIcon;
+      const tmp22 = closure_13(ShieldIcon2, obj2);
+      cResult[2] = tmp22;
+      tmp19 = tmp22;
     } else {
-      tmp20 = cResult[4];
+      tmp19 = cResult[2];
     }
-    if (cResult[5] !== tmp16.classificationPolicyCardIcon) {
-      const obj3 = { style: tmp16.classificationPolicyCardIcon, children: tmp20 };
-      const tmp27 = closure_13(closure_4, obj3);
-      cResult[5] = tmp16.classificationPolicyCardIcon;
-      cResult[6] = tmp27;
-      tmp24 = tmp27;
+    if (cResult[3] !== tmp16.classificationPolicyCardIcon) {
+      const obj3 = { style: tmp16.classificationPolicyCardIcon, children: tmp19 };
+      const tmp26 = closure_13(closure_4, obj3);
+      cResult[3] = tmp16.classificationPolicyCardIcon;
+      cResult[4] = tmp26;
+      tmp23 = tmp26;
     } else {
-      tmp24 = cResult[6];
+      tmp23 = cResult[4];
     }
     const classificationPolicyCardContent = tmp16.classificationPolicyCardContent;
-    if (cResult[7] !== classificationTypeText2) {
+    if (cResult[5] !== classificationTypeText2) {
       const intl2 = tmp12(1126).intl;
       const obj4 = { classificationDescription: classificationTypeText2 };
       const formatResult = intl2.format(policyExplainerLink(1126).t.zxUdpj, obj4);
-      cResult[7] = classificationTypeText2;
-      cResult[8] = formatResult;
-      tmp28 = formatResult;
+      cResult[5] = classificationTypeText2;
+      cResult[6] = formatResult;
+      tmp27 = formatResult;
     } else {
-      tmp28 = cResult[8];
+      tmp27 = cResult[6];
     }
-    if (cResult[9] !== tmp28) {
-      const obj5 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: tmp28 };
-      const tmp32 = closure_13(policyExplainerLink(4892).Text, obj5);
-      cResult[9] = tmp28;
-      cResult[10] = tmp32;
-      tmp30 = tmp32;
+    if (cResult[7] !== tmp27) {
+      const obj5 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: tmp27 };
+      const tmp31 = closure_13(policyExplainerLink(5086).Text, obj5);
+      cResult[7] = tmp27;
+      cResult[8] = tmp31;
+      tmp29 = tmp31;
     } else {
-      tmp30 = cResult[10];
+      tmp29 = cResult[8];
     }
-    if (cResult[11] === tmp16.classificationPolicyCardContent) {
-      let tmp33;
-      if (cResult[12] === tmp30) {
-        tmp33 = cResult[13];
+    if (cResult[9] === tmp16.classificationPolicyCardContent) {
+      let tmp32;
+      if (cResult[10] === tmp29) {
+        tmp32 = cResult[11];
       }
-      if (cResult[14] === tmp17) {
-        if (cResult[15] === tmp18) {
-          if (cResult[16] === tmp24) {
-            let tmp37;
-            if (cResult[17] === tmp33) {
-              tmp37 = cResult[18];
+      if (cResult[12] === tmp17) {
+        if (cResult[13] === tmp16.classificationPolicyCard) {
+          if (cResult[14] === tmp23) {
+            let tmp36;
+            if (cResult[15] === tmp32) {
+              tmp36 = cResult[16];
             }
-            tmp11 = tmp37;
+            tmp11 = tmp36;
           }
         }
       }
       const obj6 = { children: closure_14(TouchableHitBoxDefault, obj7) };
-      obj7 = { onPress: tmp17, style: tmp18, children: items1 };
-      items1 = [tmp24, tmp33];
-      const tmp42 = closure_13(closure_4, obj6);
-      cResult[14] = tmp17;
-      cResult[15] = tmp18;
-      cResult[16] = tmp24;
-      cResult[17] = tmp33;
-      cResult[18] = tmp42;
-      tmp37 = tmp42;
+      obj7 = { onPress: tmp17, style: classificationPolicyCard, children: items };
+      items = [tmp23, tmp32];
+      const tmp41 = closure_13(closure_4, obj6);
+      cResult[12] = tmp17;
+      cResult[13] = tmp16.classificationPolicyCard;
+      cResult[14] = tmp23;
+      cResult[15] = tmp32;
+      cResult[16] = tmp41;
+      tmp36 = tmp41;
     }
-    const obj9 = { style: classificationPolicyCardContent, children: tmp30 };
-    const tmp36 = closure_13(closure_4, obj9);
-    cResult[11] = tmp16.classificationPolicyCardContent;
-    cResult[12] = tmp30;
-    cResult[13] = tmp36;
-    tmp33 = tmp36;
+    const obj9 = { style: classificationPolicyCardContent, children: tmp29 };
+    const tmp35 = closure_13(closure_4, obj9);
+    cResult[9] = tmp16.classificationPolicyCardContent;
+    cResult[10] = tmp29;
+    cResult[11] = tmp35;
+    tmp32 = tmp35;
   } else {
     policyExplainerLink = policyExplainerLink.policyExplainerLink;
     const classificationTypeText = policyExplainerLink.classificationTypeText;
     const tmp3 = closure_16();
     let obj = { children: closure_14(tmp9, obj10) };
     obj10 = {
-      onPress() {
+      onPress: function openPolicyExplainer() {
           const obj = LinkingDefault;
           obj.openURL(policyExplainerLink);
         },
-      style: items2,
-      children: items3
+      style: tmp3.classificationPolicyCard,
+      children: items1
     };
-    items2 = [tmp3.classificationPolicyCard];
     const obj11 = { style: tmp3.classificationPolicyCardIcon, children: closure_13(ShieldIcon, obj12) };
     obj12 = { size: "sm", color: nativeDefault.colors.TEXT_LINK };
     tmp9 = TouchableHitBoxDefault;
-    ShieldIcon = policyExplainerLink(8952).ShieldIcon;
-    items3 = [closure_13(closure_4, obj11), ];
+    ShieldIcon = policyExplainerLink(10386).ShieldIcon;
+    items1 = [closure_13(closure_4, obj11), ];
     const obj13 = { style: tmp3.classificationPolicyCardContent, children: closure_13(Text, obj14) };
     obj14 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.format(policyExplainerLink(1126).t.zxUdpj, obj15) };
-    Text = policyExplainerLink(4892).Text;
+    Text = policyExplainerLink(5086).Text;
     intl = policyExplainerLink(1126).intl;
     obj15 = { classificationDescription: classificationTypeText };
-    items3[1] = closure_13(closure_4, obj13);
+    items1[1] = closure_13(closure_4, obj13);
     tmp11 = closure_13(closure_4, obj);
   }
   return tmp11;
@@ -222,7 +212,7 @@ obj11 = { display: "flex", flexDirection: "row", gap: nativeDefault.space.PX_8 }
 obj12 = { width: 300, alignSelf: "center", marginTop: nativeDefault.space.PX_32 };
 let closure_16 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClassificationHeader(arg0) {
   let classificationTypeText;
   let formatResult;
   let name;
@@ -312,13 +302,13 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = guildMetadata;
   cResult[2] = formatResult;
   tmp5 = formatResult;
-}) : ((classificationTypeText) => {
+}) : (function ClassificationHeader(classificationTypeText) {
   let obj2;
   classificationTypeText = classificationTypeText.classificationTypeText;
   guildMetadata = classificationTypeText.guildMetadata;
   const tmp = closure_16();
   const items = [classificationTypeText, guildMetadata];
-  let obj = { style: tmp.header, children: closure_13(classificationTypeText(4892).Text, obj2) };
+  let obj = { style: tmp.header, children: closure_13(classificationTypeText(5086).Text, obj2) };
   const memo = react.useMemo(() => {
     let formatResult;
     let name;
@@ -370,7 +360,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return closure_13(closure_4, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function SectionHeader(arg0) {
   let children;
   let obj3;
   let plain;
@@ -397,7 +387,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = undefined !== plain && plain;
   cResult[2] = tmp6Result;
   tmp5 = tmp6Result;
-}) : ((arg0) => {
+}) : (function SectionHeader(arg0) {
   let children;
   let obj;
   let plain;
@@ -416,7 +406,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp(Text, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function BulletRow(arg0) {
   let children;
   let items;
   let large;
@@ -471,7 +461,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = str;
   cResult[5] = tmp10;
   tmp9 = tmp10;
-}) : ((large) => {
+}) : (function BulletRow(large) {
   let items;
   let flag = large.large;
   const children = large.children;
@@ -490,7 +480,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return authStore2(React3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClassificationActionsTaken(arg0) {
   let TByIjT;
   let actions;
   let classificationExpiration;
@@ -505,7 +495,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp4;
   let tmp5;
   let obj = redesigned(576);
-  const cResult = obj.c(35);
+  const cResult = obj.c(33);
   ({ actions, classificationExpiration, redesigned } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [LocaleStore];
@@ -543,67 +533,67 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const _Symbol2 = Symbol;
         if (tmp15 === Symbol.for("react.early_return_sentinel")) {
-          if (cResult[21] === classificationExpiration) {
-            if (cResult[22] === stateFromStores) {
-              let tmp34;
-              if (cResult[23] === redesigned) {
-                tmp34 = cResult[24];
+          if (cResult[19] === classificationExpiration) {
+            if (cResult[20] === stateFromStores) {
+              let tmp32;
+              if (cResult[21] === redesigned) {
+                tmp32 = cResult[22];
               }
-              if (cResult[25] === tmp9) {
-                if (cResult[26] === tmp11) {
-                  if (cResult[27] === tmp12) {
-                    let tmp38;
-                    if (cResult[28] === tmp34) {
-                      tmp38 = cResult[29];
+              if (cResult[23] === tmp9) {
+                if (cResult[24] === tmp11) {
+                  if (cResult[25] === tmp12) {
+                    let tmp36;
+                    if (cResult[26] === tmp32) {
+                      tmp36 = cResult[27];
                     }
-                    if (cResult[30] === tmp10) {
-                      if (cResult[31] === tmp13) {
-                        if (cResult[32] === tmp14) {
-                          let tmp41;
-                          if (cResult[33] === tmp38) {
-                            tmp41 = cResult[34];
+                    if (cResult[28] === tmp10) {
+                      if (cResult[29] === tmp13) {
+                        if (cResult[30] === tmp14) {
+                          let tmp39;
+                          if (cResult[31] === tmp36) {
+                            tmp39 = cResult[32];
                           }
-                          tmp15 = tmp41;
+                          tmp15 = tmp39;
                         }
                       }
                     }
                     const obj2 = { style: tmp13, children: items1 };
-                    items1 = [tmp14, tmp38];
-                    const tmp43 = closure_14(tmp10, obj2);
-                    cResult[30] = tmp10;
-                    cResult[31] = tmp13;
-                    cResult[32] = tmp14;
-                    cResult[33] = tmp38;
-                    cResult[34] = tmp43;
-                    tmp41 = tmp43;
+                    items1 = [tmp14, tmp36];
+                    const tmp41 = closure_14(tmp10, obj2);
+                    cResult[28] = tmp10;
+                    cResult[29] = tmp13;
+                    cResult[30] = tmp14;
+                    cResult[31] = tmp36;
+                    cResult[32] = tmp41;
+                    tmp39 = tmp41;
                   }
                 }
               }
               const obj4 = { style: tmp11, children: items2 };
-              items2 = [tmp12, tmp34];
-              const tmp40 = closure_14(tmp9, obj4);
-              cResult[25] = tmp9;
-              cResult[26] = tmp11;
-              cResult[27] = tmp12;
-              cResult[28] = tmp34;
-              cResult[29] = tmp40;
-              tmp38 = tmp40;
+              items2 = [tmp12, tmp32];
+              const tmp38 = closure_14(tmp9, obj4);
+              cResult[23] = tmp9;
+              cResult[24] = tmp11;
+              cResult[25] = tmp12;
+              cResult[26] = tmp32;
+              cResult[27] = tmp38;
+              tmp36 = tmp38;
             }
           }
-          let tmp35 = null;
+          let tmp33 = null;
           if (null != classificationExpiration) {
             const obj5 = { large: redesigned, children: format(TByIjT, obj6) };
             const intl = tmp(1126).intl;
             format = intl.format;
             obj6 = { expirationDate: classificationExpiration.toLocaleDateString(stateFromStores, { dateStyle: "medium" }) };
             TByIjT = tmp(1126).t.TByIjT;
-            tmp35 = closure_13(closure_19, obj5, "expiration");
+            tmp33 = closure_13(closure_19, obj5, "expiration");
           }
-          cResult[21] = classificationExpiration;
-          cResult[22] = stateFromStores;
-          cResult[23] = redesigned;
-          cResult[24] = tmp35;
-          tmp34 = tmp35;
+          cResult[19] = classificationExpiration;
+          cResult[20] = stateFromStores;
+          cResult[21] = redesigned;
+          cResult[22] = tmp33;
+          tmp32 = tmp33;
         }
         return tmp15;
       }
@@ -611,15 +601,15 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   Symbol.for("react.early_return_sentinel");
   if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-    class N {
+    class R {
       constructor(descriptions) {
         return descriptions.descriptions.length > 0;
       }
     }
-    cResult[13] = N;
-    tmp17 = N;
+    cResult[13] = R;
+    tmp17 = R;
   } else {
-    class N {
+    class R {
       constructor(descriptions) {
         return descriptions.descriptions.length > 0;
       }
@@ -628,8 +618,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const found = actions.filter(tmp17);
   if (0 !== found.length) {
     let tmp26;
-    let tmp33;
-    class N {
+    let tmp31;
+    class R {
       constructor(descriptions) {
         return descriptions.descriptions.length > 0;
       }
@@ -637,7 +627,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol = Symbol;
     const sectionContainer = tmp8.sectionContainer;
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-      class N {
+      class R {
         constructor(descriptions) {
           return descriptions.descriptions.length > 0;
         }
@@ -646,14 +636,14 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[14] = stringResult;
       tmp26 = stringResult;
     } else {
-      class N {
+      class R {
         constructor(descriptions) {
           return descriptions.descriptions.length > 0;
         }
       }
     }
     if (cResult[15] !== redesigned) {
-      class N {
+      class R {
         constructor(descriptions) {
           return descriptions.descriptions.length > 0;
         }
@@ -663,49 +653,34 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[15] = redesigned;
       cResult[16] = tmp30;
     } else {
-      class N {
+      class R {
         constructor(descriptions) {
           return descriptions.descriptions.length > 0;
         }
       }
     }
-    if (cResult[17] !== tmp8.actionsTaken) {
-      class N {
-        constructor(descriptions) {
-          return descriptions.descriptions.length > 0;
-        }
-      }
-      tmp32[0] = tmp8.actionsTaken;
-      cResult[17] = tmp8.actionsTaken;
-      cResult[18] = tmp32;
-    } else {
-      class N {
-        constructor(descriptions) {
-          return descriptions.descriptions.length > 0;
-        }
-      }
-    }
-    if (cResult[19] !== redesigned) {
-      class G {
+    const actionsTaken = tmp8.actionsTaken;
+    if (cResult[17] !== redesigned) {
+      class M {
         constructor(action) {
           const obj = { action, large: redesigned };
           return map1(closure_22, obj, action.id);
         }
       }
-      cResult[19] = redesigned;
-      cResult[20] = G;
-      tmp33 = G;
+      cResult[17] = redesigned;
+      cResult[18] = M;
+      tmp31 = M;
     } else {
-      class G {
+      class M {
         constructor(action) {
           const obj = { action, large: redesigned };
           return map1(closure_22, obj, action.id);
         }
       }
     }
-    mapped = found.map(tmp33);
+    mapped = found.map(tmp31);
   } else {
-    class G {
+    class M {
       constructor(action) {
         const obj = { action, large: redesigned };
         return map1(closure_22, obj, action.id);
@@ -730,7 +705,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   tmp11 = tmp22;
   tmp10 = tmp23;
   tmp9 = tmp24;
-}) : ((arg0) => {
+}) : (function ClassificationActionsTaken(arg0) {
   let TByIjT;
   let actions;
   let classificationExpiration;
@@ -738,7 +713,6 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let intl;
   let items1;
   let items2;
-  let items3;
   let locale;
   let obj6;
   let redesigned;
@@ -754,9 +728,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj3 = { plain: redesigned, children: intl.string(redesigned(1126).t["O2nYk+"]) };
     intl = tmp(1126).intl;
     items1 = [closure_13(closure_18, obj3), ];
-    const obj4 = { style: items2, children: items3 };
-    items2 = [tmp4.actionsTaken];
-    items3 = [
+    const obj4 = { style: tmp4.actionsTaken, children: items2 };
+    items2 = [
       found.map((action) => {
           const obj = { action, large: redesigned };
           return map1(closure_22, obj, action.id);
@@ -773,7 +746,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       TByIjT = tmp(1126).t.TByIjT;
       tmp8Result = tmp8(closure_19, obj5, "expiration");
     }
-    items3[1] = tmp8Result;
+    items2[1] = tmp8Result;
     items1[1] = closure_14(closure_4, obj4);
     tmp6Result = tmp6(tmp7, obj2);
   } else {
@@ -782,16 +755,15 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp6Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManualReviewDecidedUnderageActionsTaken() {
   let first;
   let intl;
   let intl2;
-  let items1;
-  let tmp10;
-  let tmp15;
+  let items;
+  let tmp14;
   let tmp9;
   const obj = react2;
-  const cResult = obj.c(9);
+  const cResult = obj.c(7);
   const tmp4 = closure_16();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { plain: true, children: intl.string(intl4.t["O2nYk+"]) };
@@ -802,66 +774,56 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     first = cResult[0];
   }
-  if (cResult[1] !== tmp4.actionsTaken) {
-    const items = [tmp4.actionsTaken];
-    cResult[1] = tmp4.actionsTaken;
-    cResult[2] = items;
-    tmp9 = items;
-  } else {
-    tmp9 = cResult[2];
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { large: true, children: intl2.string(_modDef3137.rn3Gto) };
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { large: true, children: intl2.string(_modDef3181.rn3Gto) };
     intl2 = tmp(1126).intl;
-    const tmp14 = map1(closure_19, obj3);
-    cResult[3] = tmp14;
-    tmp10 = tmp14;
+    const tmp13 = map1(closure_19, obj3);
+    cResult[1] = tmp13;
+    tmp9 = tmp13;
   } else {
-    tmp10 = cResult[3];
+    tmp9 = cResult[1];
   }
-  if (cResult[4] !== tmp9) {
-    const obj4 = { style: tmp9, children: tmp10 };
-    const tmp18 = map1(React3, obj4);
-    cResult[4] = tmp9;
-    cResult[5] = tmp18;
-    tmp15 = tmp18;
+  if (cResult[2] !== tmp4.actionsTaken) {
+    const obj4 = { style: tmp4.actionsTaken, children: tmp9 };
+    const tmp17 = map1(React3, obj4);
+    cResult[2] = tmp4.actionsTaken;
+    cResult[3] = tmp17;
+    tmp14 = tmp17;
   } else {
-    tmp15 = cResult[5];
+    tmp14 = cResult[3];
   }
-  if (cResult[6] === tmp4.sectionContainer) {
-    let tmp19;
-    if (cResult[7] === tmp15) {
-      tmp19 = cResult[8];
+  if (cResult[4] === tmp4.sectionContainer) {
+    let tmp18;
+    if (cResult[5] === tmp14) {
+      tmp18 = cResult[6];
     }
-    return tmp19;
+    return tmp18;
   }
-  const obj5 = { style: tmp4.sectionContainer, children: items1 };
-  items1 = [first, tmp15];
-  const tmp20 = authStore2(React3, obj5);
-  cResult[6] = tmp4.sectionContainer;
-  cResult[7] = tmp15;
-  cResult[8] = tmp20;
-  tmp19 = tmp20;
-}) : (() => {
+  const obj5 = { style: tmp4.sectionContainer, children: items };
+  items = [first, tmp14];
+  const tmp19 = authStore2(React3, obj5);
+  cResult[4] = tmp4.sectionContainer;
+  cResult[5] = tmp14;
+  cResult[6] = tmp19;
+  tmp18 = tmp19;
+}) : (function ManualReviewDecidedUnderageActionsTaken() {
   let intl;
   let intl2;
   let items;
-  let items1;
   let obj4;
   const tmp = closure_16();
   const obj = { style: tmp.sectionContainer, children: items };
   const obj2 = { plain: true, children: intl.string(intl4.t["O2nYk+"]) };
   intl = intl4.intl;
   items = [map1(closure_18, obj2), ];
-  const obj3 = { style: items1, children: map1(closure_19, obj4) };
-  items1 = [tmp.actionsTaken];
-  obj4 = { large: true, children: intl2.string(_modDef3137.rn3Gto) };
+  const obj3 = { style: tmp.actionsTaken, children: map1(closure_19, obj4) };
+  obj4 = { large: true, children: intl2.string(_modDef3181.rn3Gto) };
   intl2 = intl4.intl;
   items[1] = map1(React3, obj3);
   return authStore2(React3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClassificationActionsTakenRows(arg0) {
   let action;
   let large;
   let tmp3;
@@ -902,7 +864,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = large;
   cResult[2] = mapped;
   tmp2 = mapped;
-}) : ((large) => {
+}) : (function ClassificationActionsTakenRows(large) {
   let descriptions;
   large = large.large;
   let obj = {
@@ -915,16 +877,15 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return closure_13(closure_15, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManualReviewDecidedUnderageGuidance() {
   let first;
   let intl;
   let intl2;
-  let items1;
-  let tmp10;
-  let tmp15;
+  let items;
+  let tmp14;
   let tmp9;
   const obj = react2;
-  const cResult = obj.c(9);
+  const cResult = obj.c(7);
   const tmp4 = closure_16();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { plain: true, children: intl.string(intl4.t["977iei"]) };
@@ -935,66 +896,56 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     first = cResult[0];
   }
-  if (cResult[1] !== tmp4.actionsTaken) {
-    const items = [tmp4.actionsTaken];
-    cResult[1] = tmp4.actionsTaken;
-    cResult[2] = items;
-    tmp9 = items;
-  } else {
-    tmp9 = cResult[2];
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { large: true, children: intl2.string(_modDef3137["yV/t/V"]) };
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { large: true, children: intl2.string(_modDef3181["yV/t/V"]) };
     intl2 = tmp(1126).intl;
-    const tmp14 = map1(closure_19, obj3);
-    cResult[3] = tmp14;
-    tmp10 = tmp14;
+    const tmp13 = map1(closure_19, obj3);
+    cResult[1] = tmp13;
+    tmp9 = tmp13;
   } else {
-    tmp10 = cResult[3];
+    tmp9 = cResult[1];
   }
-  if (cResult[4] !== tmp9) {
-    const obj4 = { style: tmp9, children: tmp10 };
-    const tmp18 = map1(React3, obj4);
-    cResult[4] = tmp9;
-    cResult[5] = tmp18;
-    tmp15 = tmp18;
+  if (cResult[2] !== tmp4.actionsTaken) {
+    const obj4 = { style: tmp4.actionsTaken, children: tmp9 };
+    const tmp17 = map1(React3, obj4);
+    cResult[2] = tmp4.actionsTaken;
+    cResult[3] = tmp17;
+    tmp14 = tmp17;
   } else {
-    tmp15 = cResult[5];
+    tmp14 = cResult[3];
   }
-  if (cResult[6] === tmp4.sectionContainer) {
-    let tmp19;
-    if (cResult[7] === tmp15) {
-      tmp19 = cResult[8];
+  if (cResult[4] === tmp4.sectionContainer) {
+    let tmp18;
+    if (cResult[5] === tmp14) {
+      tmp18 = cResult[6];
     }
-    return tmp19;
+    return tmp18;
   }
-  const obj5 = { style: tmp4.sectionContainer, children: items1 };
-  items1 = [first, tmp15];
-  const tmp20 = authStore2(React3, obj5);
-  cResult[6] = tmp4.sectionContainer;
-  cResult[7] = tmp15;
-  cResult[8] = tmp20;
-  tmp19 = tmp20;
-}) : (() => {
+  const obj5 = { style: tmp4.sectionContainer, children: items };
+  items = [first, tmp14];
+  const tmp19 = authStore2(React3, obj5);
+  cResult[4] = tmp4.sectionContainer;
+  cResult[5] = tmp14;
+  cResult[6] = tmp19;
+  tmp18 = tmp19;
+}) : (function ManualReviewDecidedUnderageGuidance() {
   let intl;
   let intl2;
   let items;
-  let items1;
   let obj4;
   const tmp = closure_16();
   const obj = { style: tmp.sectionContainer, children: items };
   const obj2 = { plain: true, children: intl.string(intl4.t["977iei"]) };
   intl = intl4.intl;
   items = [map1(closure_18, obj2), ];
-  const obj3 = { style: items1, children: map1(closure_19, obj4) };
-  items1 = [tmp.actionsTaken];
-  obj4 = { large: true, children: intl2.string(_modDef3137["yV/t/V"]) };
+  const obj3 = { style: tmp.actionsTaken, children: map1(closure_19, obj4) };
+  obj4 = { large: true, children: intl2.string(_modDef3181["yV/t/V"]) };
   intl2 = intl4.intl;
   items[1] = map1(React3, obj3);
   return authStore2(React3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClassificationGuidance(arg0) {
   let appealComponent;
   let classificationTypeText;
   let communityGuidelinesLink;
@@ -1010,7 +961,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const sectionContainer = tmp4.sectionContainer;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "eyebrow", color: "text-muted", children: intl.string(intl4.t["977iei"]) };
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     intl = tmp(1126).intl;
     const tmp7 = map1(Text, obj2);
     cResult[0] = tmp7;
@@ -1072,7 +1023,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tosLink;
   cResult[3] = formatResult;
   tmp8 = formatResult;
-}) : ((arg0) => {
+}) : (function ClassificationGuidance(arg0) {
   let appealComponent;
   let classificationTypeText;
   let communityGuidelinesLink;
@@ -1098,14 +1049,14 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_25 = ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealStatus() {
   let first;
   let intl;
   const obj = react2;
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "text-md/normal", color: "text-muted", children: intl.string(intl4.t["I2H0/E"]) };
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     intl = tmp(1126).intl;
     const tmp6 = map1(Text, obj2);
     cResult[0] = tmp6;
@@ -1114,7 +1065,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => {
+}) : (function AppealStatus() {
   let intl;
   const obj = { variant: "text-md/normal", color: "text-muted", children: intl.string(intl4.t["I2H0/E"]) };
   const Text = Text_Text.Text;
@@ -1122,7 +1073,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return map1(Text, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressLetUsKnow) => {
+let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function LetUsKnow(onPressLetUsKnow) {
   let tmp4;
   let tmp6;
   _require = onPressLetUsKnow;
@@ -1153,7 +1104,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressLetUsKn
     tmp6 = cResult[3];
   }
   return tmp6;
-}) : ((arg0) => {
+}) : (function LetUsKnow(arg0) {
   let intl;
   let obj2;
   let onPressLetUsKnow;
@@ -1170,7 +1121,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressLetUsKn
   return closure_13(Text, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasBeenAppealed) => {
+let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealFooter(hasBeenAppealed) {
   let tmp4Result;
   const obj = react2;
   const cResult = obj.c(6);
@@ -1204,7 +1155,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasBeenAppeale
   cResult[1] = hasBeenAppealed.onPressLetUsKnow;
   cResult[2] = tmp4Result;
   tmp3 = tmp4Result;
-}) : ((hasBeenAppealed) => {
+}) : (function AppealFooter(hasBeenAppealed) {
   let tmpResult;
   const obj = { style: closure_16().letUsKnowContainer, children: tmpResult };
   const tmp2 = React3;
@@ -1217,7 +1168,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasBeenAppeale
   return map1(tmp2, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmMinimumAgeGuidance(arg0) {
   let communityGuidelinesLink;
   let first;
   let intl;
@@ -1298,7 +1249,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = tosLink;
   cResult[6] = formatResult;
   tmp15 = formatResult;
-}) : ((arg0) => {
+}) : (function ConfirmMinimumAgeGuidance(arg0) {
   let communityGuidelinesLink;
   let intl;
   let intl2;
@@ -1323,7 +1274,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return authStore2(React3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManualReviewDecidedUnderageFooter(arg0) {
   let communityGuidelinesLink;
   let tosLink;
   const obj = react2;
@@ -1347,23 +1298,23 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return tmp6;
   }
   const intl = tmp(1126).intl;
-  const formatResult = intl.format(_modDef3137.vPOpia, { tosLink, communityGuidelinesLink });
+  const formatResult = intl.format(_modDef3181.vPOpia, { tosLink, communityGuidelinesLink });
   cResult[0] = communityGuidelinesLink;
   cResult[1] = tosLink;
   cResult[2] = formatResult;
   tmp4 = formatResult;
-}) : ((arg0) => {
+}) : (function ManualReviewDecidedUnderageFooter(arg0) {
   let communityGuidelinesLink;
   let intl;
   let tosLink;
   ({ tosLink, communityGuidelinesLink } = arg0);
-  const obj = { variant: "text-sm/normal", color: "text-muted", children: intl.format(_modDef3137.vPOpia, { tosLink, communityGuidelinesLink }) };
+  const obj = { variant: "text-sm/normal", color: "text-muted", children: intl.format(_modDef3181.vPOpia, { tosLink, communityGuidelinesLink }) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   return map1(Text, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManualReviewDecidedUnderageView() {
   let first;
   let items;
   const obj = react2;
@@ -1374,23 +1325,23 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj5 = { tosLink: null, communityGuidelinesLink: null };
     ({ TOS_LINK: obj3.tosLink, COMMUNITY_GUIDELINES: obj3.communityGuidelinesLink } = unpackModuleId);
     items[2] = map1(closure_31, obj5);
-    const tmp10 = authStore2(closure_15, obj2);
+    const tmp10 = authStore2(authStore3, obj2);
     cResult[0] = tmp10;
     first = tmp10;
   } else {
     first = cResult[0];
   }
   return first;
-}) : (() => {
+}) : (function ManualReviewDecidedUnderageView() {
   let items;
   const obj = { children: items };
   items = [map1(closure_21, {}), map1(closure_23, {}), ];
   const obj2 = { tosLink: unpackModuleId.TOS_LINK, communityGuidelinesLink: unpackModuleId.COMMUNITY_GUIDELINES };
   items[2] = map1(closure_31, obj2);
-  return authStore2(closure_15, obj);
+  return authStore2(authStore3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClassificationDetailFooter(onClose) {
   let first;
   let tmp7;
   const obj = react2;
@@ -1427,7 +1378,7 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   cResult[4] = tmp7;
   cResult[5] = tmp11;
   tmp10 = tmp11;
-}) : ((onClose) => {
+}) : (function ClassificationDetailFooter(onClose) {
   let Button;
   let intl;
   let obj2;
@@ -1439,9 +1390,8 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   return map1(React3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((classificationId) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedClassificationDetail(classificationId) {
   let items3;
-  let items4;
   let obj12;
   let onClose;
   let tmp6;
@@ -1656,11 +1606,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((classificationId) =>
                                   tmp64Result = closure_13(isAppealEligible, { size: "large" });
                                 } else {
                                   let tmp64Result1;
-                                  const obj5 = { style: items3, children: items4 };
-                                  items3 = [tmp5.classificationDetailContainer];
+                                  const obj5 = { style: tmp5.classificationDetailContainer, children: items3 };
                                   const obj6 = { classificationTypeText: null, guildMetadata: null };
                                   ({ description: obj21.classificationTypeText, guild_metadata: obj21.guildMetadata } = classification);
-                                  items4 = [closure_13(closure_17, obj6), , , ];
+                                  items3 = [closure_13(closure_17, obj6), , , ];
                                   let flagged_content1 = classification.flagged_content;
                                   const tmp65 = classification;
                                   const tmp69 = source(onClose[30]);
@@ -1668,14 +1617,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((classificationId) =>
                                     flagged_content1 = [];
                                   }
                                   const obj7 = { flaggedContent: flagged_content1 };
-                                  items4[1] = closure_13(tmp69, obj7);
+                                  items3[1] = closure_13(tmp69, obj7);
                                   if (is_coppa2 && stateFromStores1) {
                                     tmp64Result1 = tmp66(closure_32, {});
                                   } else {
                                     let tmp66Result3;
                                     const obj8 = { actions: classification.actions, classificationExpiration: tmpResult8.getClassificationAccountStatusExpiration(classification), redesigned: tmp25 };
                                     tmpResult8 = tmp(tmp2[31]);
-                                    const items5 = [closure_13(closure_20, obj8), ];
+                                    const items4 = [closure_13(closure_20, obj8), ];
                                     const tmp41 = closure_15;
                                     if (tmp25) {
                                       const obj10 = { tosLink: null, communityGuidelinesLink: null, onPressLetUsKnow: tmp39 };
@@ -1688,17 +1637,17 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((classificationId) =>
                                       obj12 = { hasBeenAppealed: null != classification.appeal_status, onPressLetUsKnow: tmp39 };
                                       tmp66Result3 = tmp66(closure_24, obj11);
                                     }
-                                    const obj14 = { children: items5 };
-                                    items5[1] = tmp66Result3;
+                                    const obj14 = { children: items4 };
+                                    items4[1] = tmp66Result3;
                                     tmp64Result1 = tmp64(tmp41, obj14);
                                   }
-                                  items4[2] = tmp64Result1;
+                                  items3[2] = tmp64Result1;
                                   let tmp66Result4 = !tmp25;
                                   if (tmp66Result4) {
                                     const obj16 = { onClose };
                                     tmp66Result4 = tmp66(closure_33, obj16);
                                   }
-                                  items4[3] = tmp66Result4;
+                                  items3[3] = tmp66Result4;
                                   tmp64Result = tmp64(tmp65, obj5);
                                 }
                                 cResult[32] = classification;
@@ -1718,7 +1667,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((classificationId) =>
                   }
                 }
               }
-              function ne() {
+              function onPressLetUsKnow() {
                 let SystemDM;
                 let items;
                 const obj = { action: authStore.ClickLetUsKnow, account_standing: safetyHubAccountStanding.state, classification_ids: items, source: SystemDM, is_violative_content_shown, is_dsa_eligible: null, violation_type: null };
@@ -1769,8 +1718,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((classificationId) =>
               cResult[28] = tmp15;
               cResult[29] = onClose;
               cResult[30] = source;
-              cResult[31] = ne;
-              tmp39 = ne;
+              cResult[31] = onPressLetUsKnow;
+              tmp39 = onPressLetUsKnow;
             }
           }
         }
@@ -1811,11 +1760,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((classificationId) =>
   cResult[3] = is_coppa6;
   cResult[4] = hasItem1;
   tmp15 = hasItem1;
-}) : ((classificationId) => {
+}) : (function ConnectedClassificationDetail(classificationId) {
   let SafeAreaPaddingView;
   let hasItem;
   let items3;
-  let items4;
   let obj13;
   let obj5;
   let tmp38Result;
@@ -1916,11 +1864,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((classificationId) =>
     tmp38Result = tmp20(isAppealEligible, { size: "large" });
   } else {
     let tmp20Result5;
-    const obj6 = { style: items3, children: items4 };
-    items3 = [tmp4.classificationDetailContainer];
+    const obj6 = { style: tmp4.classificationDetailContainer, children: items3 };
     const obj7 = { classificationTypeText: null, guildMetadata: null };
     ({ description: obj18.classificationTypeText, guild_metadata: obj18.guildMetadata } = classification);
-    items4 = [closure_13(closure_17, obj7), , , ];
+    items3 = [closure_13(closure_17, obj7), , , ];
     let flagged_content1 = classification.flagged_content;
     const tmp39 = classification;
     const tmp42 = source(onClose[30]);
@@ -1928,7 +1875,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((classificationId) =>
       flagged_content1 = [];
     }
     const obj8 = { flaggedContent: flagged_content1 };
-    items4[1] = closure_13(tmp42, obj8);
+    items3[1] = closure_13(tmp42, obj8);
     if (tmp17) {
       tmp20Result5 = tmp20(closure_32, {});
     } else {
@@ -1976,7 +1923,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((classificationId) =>
       }
       const obj9 = { actions: classification.actions, classificationExpiration: tmpResult6.getClassificationAccountStatusExpiration(classification), redesigned: hasItem1 };
       tmpResult6 = tmp(tmp2[31]);
-      const items5 = [closure_13(closure_20, obj9), ];
+      const items4 = [closure_13(closure_20, obj9), ];
       const tmp22 = closure_15;
       if (hasItem1) {
         const obj10 = { tosLink: null, communityGuidelinesLink: null, onPressLetUsKnow };
@@ -1989,17 +1936,17 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((classificationId) =>
         obj13 = { hasBeenAppealed: null != classification.appeal_status, onPressLetUsKnow };
         tmp20Result6 = tmp20(closure_24, obj11);
       }
-      const obj15 = { children: items5 };
-      items5[1] = tmp20Result6;
+      const obj15 = { children: items4 };
+      items4[1] = tmp20Result6;
       tmp20Result5 = tmp38(tmp22, obj15);
     }
-    items4[2] = tmp20Result5;
+    items3[2] = tmp20Result5;
     let tmp20Result7 = !hasItem1;
     if (tmp20Result7) {
       const obj16 = { onClose };
       tmp20Result7 = tmp20(closure_33, obj16);
     }
-    items4[3] = tmp20Result7;
+    items3[3] = tmp20Result7;
     tmp38Result = tmp38(tmp39, obj6);
   }
   tmp20Result8 = tmp20(tmp21, obj4);

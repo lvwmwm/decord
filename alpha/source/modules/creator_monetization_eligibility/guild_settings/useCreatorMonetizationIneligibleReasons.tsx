@@ -1,15 +1,15 @@
-// Module ID: 17958
-// Function ID: 17959
+// Module ID: 18245
+// Function ID: 18246
 // Name: useCreatorMonetizationIneligibleReasons
-// Dependencies: [558, 576, 17930, 2]
+// Dependencies: [558, 576, 18217, 2]
 
-// Module 17958 (useCreatorMonetizationIneligibleReasons)
+// Module 18245 (useCreatorMonetizationIneligibleReasons)
 import react from "react" /* 576 */;
-import useCreatorMonetizationEligibilityItemsDefault from "useCreatorMonetizationEligibilityItems" /* 17930 */;
+import useCreatorMonetizationEligibilityItemsDefault from "useCreatorMonetizationEligibilityItems" /* 18217 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreatorMonetizationIneligibleReasons(arg0) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -37,7 +37,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = null;
   }
   return tmp2;
-}) : ((arg0) => {
+}) : (function useCreatorMonetizationIneligibleReasons(arg0) {
   const obj = useCreatorMonetizationEligibilityItemsDefault(arg0);
   let flatMapResult;
   if (obj != null) {

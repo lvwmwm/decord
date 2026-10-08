@@ -1,28 +1,26 @@
-// Module ID: 16208
-// Function ID: 16209
+// Module ID: 16468
+// Function ID: 16469
 // Name: UnknownChannel
-// Dependencies: [19, 11711, 5078, 21, 4896, 587, 4574, 1126, 4818, 558, 576, 5049, 10664, 16093, 2]
+// Dependencies: [19, 11776, 5972, 21, 5090, 587, 4766, 1126, 5012, 558, 576, 5417, 10264, 16353, 2]
 
-// Module 16208 (UnknownChannel)
+// Module 16468 (UnknownChannel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4818 */;
-import useChannelNameDefault from "useChannelName" /* 5049 */;
-import ReadStateConstants from "ReadStateConstants" /* 5078 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10664 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11711 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5012 */;
+import useChannelNameDefault from "useChannelName" /* 5417 */;
+import ReadStateConstants from "ReadStateConstants" /* 5972 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10264 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11776 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channel;
-
 let obj2;
 let tmp5;
-const ChannelItemDefault = tmp5(16093);
+const ChannelItemDefault = tmp5(16353);
 function handlePress() {
   let intl;
   const obj = { key: "UNKNOWN_CHANNEL_UPDATE_DISCORD", content: intl.string(intl2.t["/ZjyYE"]), IconComponent: CircleInformationIcon.CircleInformationIcon };
@@ -38,7 +36,7 @@ let obj = { container: obj2 };
 obj2 = { marginVertical: CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md };
 let closure_6 = createStyles.createStyles(obj);
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function UnknownChannel(channel) {
   let tmp10;
   let tmp7;
   let tmp8;
@@ -102,7 +100,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
   cResult[11] = tmp10;
   cResult[12] = tmp12;
   tmp11 = tmp12;
-}) : ((channel) => {
+}) : (function UnknownChannel(channel) {
   channel = channel.channel;
   const selected = channel.selected;
   const items = [channel.id];

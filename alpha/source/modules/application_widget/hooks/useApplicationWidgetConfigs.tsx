@@ -1,21 +1,21 @@
-// Module ID: 8728
-// Function ID: 8729
+// Module ID: 13201
+// Function ID: 13202
 // Name: useApplicationWidgetConfigs
-// Dependencies: [19, 8729, 558, 576, 2028, 504, 1375, 8730, 2]
+// Dependencies: [19, 12380, 558, 576, 2040, 504, 1387, 12379, 2]
 
-// Module 8728 (useApplicationWidgetConfigs)
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 8729 */;
-import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 8730 */;
+// Module 13201 (useApplicationWidgetConfigs)
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 12379 */;
+import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 12380 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, tmp8;
 
 const FetchState = ApplicationWidgetConfigStore2.FetchState;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplicationWidgetConfigs(arg0) {
   let closure_0;
   let setting;
   let stateFromStores1;
@@ -23,7 +23,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp13;
   let tmp15;
   let tmp17;
-  let tmp19;
+  let tmp18;
   let tmp21;
   let tmp22;
   let tmp24;
@@ -82,24 +82,34 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp13 = cResult[4];
   }
   if (cResult[5] !== arg0) {
-    const fn2 = function _() {
-      let fetchState;
-      return closure_0.filter((item) => fetchState.getFetchState(item) === constants.NOT_FETCHED);
-    };
+    class C {
+      constructor() {
+        return closure_0.filter((item) => fetchState.getFetchState(item) === constants.NOT_FETCHED);
+      }
+    }
     cResult[5] = arg0;
     class S {
       constructor() {
         return stateFromStores1.getDeveloperFetchState();
       }
     }
-    cResult[6] = fn2;
-    tmp15 = fn2;
+    cResult[6] = C;
+    tmp15 = C;
   } else {
-    tmp15 = cResult[6];
+    class C {
+      constructor() {
+        return closure_0.filter((item) => fetchState.getFetchState(item) === constants.NOT_FETCHED);
+      }
+    }
   }
   const tmpResult5 = tmp(setting[5]);
   const stateFromStoresArray = tmpResult5.useStateFromStoresArray(tmp13, tmp15);
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+    class C {
+      constructor() {
+        return closure_0.filter((item) => fetchState.getFetchState(item) === constants.NOT_FETCHED);
+      }
+    }
     const items3 = [stateFromStores1];
     class S {
       constructor() {
@@ -109,14 +119,16 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[7] = items3;
     tmp17 = items3;
   } else {
-    tmp17 = cResult[7];
+    class C {
+      constructor() {
+        return closure_0.filter((item) => fetchState.getFetchState(item) === constants.NOT_FETCHED);
+      }
+    }
   }
   if (cResult[8] !== arg0) {
-    class T {
+    class C {
       constructor() {
-        let config;
-        const mapped = closure_0.map((item) => config.getConfig(item));
-        return mapped.filter(GlobalUtils.isNotNullish);
+        return closure_0.filter((item) => fetchState.getFetchState(item) === constants.NOT_FETCHED);
       }
     }
     cResult[8] = arg0;
@@ -125,27 +137,26 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return stateFromStores1.getDeveloperFetchState();
       }
     }
-    cResult[9] = T;
-    tmp19 = T;
+    cResult[9] = tmp19;
+    tmp18 = tmp19;
   } else {
-    class T {
+    class C {
       constructor() {
-        let config;
-        const mapped = closure_0.map((item) => config.getConfig(item));
-        return mapped.filter(GlobalUtils.isNotNullish);
+        return closure_0.filter((item) => fetchState.getFetchState(item) === constants.NOT_FETCHED);
       }
     }
   }
   const tmpResult6 = tmp(setting[5]);
-  const stateFromStoresArray1 = tmpResult6.useStateFromStoresArray(tmp17, tmp19);
+  const stateFromStoresArray1 = tmpResult6.useStateFromStoresArray(tmp17, tmp18);
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
     class N {
       constructor() {
-        const obj = closure_0(setting[7]);
-        const featuredWidgetConfigs = obj.fetchFeaturedWidgetConfigs();
-        featuredWidgetConfigs.catch(() => {
+        obj = closure_0(closure_1[7]);
+        featuredWidgetConfigs = obj.fetchFeaturedWidgetConfigs();
+        catchPromise = featuredWidgetConfigs.catch(() => {
 
         });
+        return;
       }
     }
     const items4 = [];
@@ -160,11 +171,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     class N {
       constructor() {
-        const obj = closure_0(setting[7]);
-        const featuredWidgetConfigs = obj.fetchFeaturedWidgetConfigs();
-        featuredWidgetConfigs.catch(() => {
+        obj = closure_0(closure_1[7]);
+        featuredWidgetConfigs = obj.fetchFeaturedWidgetConfigs();
+        catchPromise = featuredWidgetConfigs.catch(() => {
 
         });
+        return;
       }
     }
     tmp22 = cResult[11];
@@ -174,11 +186,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[12] !== setting) {
     class N {
       constructor() {
-        const obj = closure_0(setting[7]);
-        const featuredWidgetConfigs = obj.fetchFeaturedWidgetConfigs();
-        featuredWidgetConfigs.catch(() => {
+        obj = closure_0(closure_1[7]);
+        featuredWidgetConfigs = obj.fetchFeaturedWidgetConfigs();
+        catchPromise = featuredWidgetConfigs.catch(() => {
 
         });
+        return;
       }
     }
     const items5 = [setting];
@@ -195,11 +208,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     class N {
       constructor() {
-        const obj = closure_0(setting[7]);
-        const featuredWidgetConfigs = obj.fetchFeaturedWidgetConfigs();
-        featuredWidgetConfigs.catch(() => {
+        obj = closure_0(closure_1[7]);
+        featuredWidgetConfigs = obj.fetchFeaturedWidgetConfigs();
+        catchPromise = featuredWidgetConfigs.catch(() => {
 
         });
+        return;
       }
     }
     tmp25 = cResult[14];
@@ -208,39 +222,49 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[15] === stateFromStores1) {
     class N {
       constructor() {
-        const obj = closure_0(setting[7]);
-        const featuredWidgetConfigs = obj.fetchFeaturedWidgetConfigs();
-        featuredWidgetConfigs.catch(() => {
+        obj = closure_0(closure_1[7]);
+        featuredWidgetConfigs = obj.fetchFeaturedWidgetConfigs();
+        catchPromise = featuredWidgetConfigs.catch(() => {
 
         });
+        return;
       }
     }
   }
-  const fn3 = function b() {
-    if (stateFromStores !== FetchState.NOT_FETCHED) {
-      if (tmp !== FetchState.FETCHING) {
-        const tmp3 = setting;
-        if (!tmp3) {
-          for (const item10012 of stateFromStoresArray) {
-            let obj = ApplicationWidgetConfigActions;
-            let widgetConfigs = obj.fetchWidgetConfigs(item10012);
-            let catchPromise = widgetConfigs.catch(() => {
+  class W {
+    constructor() {
+      tmp2 = FetchState;
+      if (closure_2 !== FetchState.NOT_FETCHED) {
+        if (tmp !== tmp2.FETCHING) {
+          tmp3 = closure_1;
+          if (!tmp3) {
+            tmp5 = closure_4;
+            tmp6 = closure_4;
+            for (const item10012 of closure_4) {
+              tmp7 = closure_0;
+              tmp8 = closure_1;
+              obj = closure_0(closure_1[7]);
+              widgetConfigs = obj.fetchWidgetConfigs(item10012);
+              catchPromise = widgetConfigs.catch(() => {
 
-            });
-            continue;
+              });
+              continue;
+            }
+          } else if (closure_3 !== tmp2.NOT_FETCHED) {
           }
         }
       }
+      return;
     }
-  };
+  }
   const items6 = [stateFromStores1, stateFromStores, stateFromStoresArray, setting];
   cResult[15] = stateFromStores1;
   cResult[16] = stateFromStores;
   cResult[17] = stateFromStoresArray;
   cResult[18] = setting;
-  cResult[19] = fn3;
+  cResult[19] = W;
   cResult[20] = items6;
-}) : ((arg0) => {
+}) : (function useApplicationWidgetConfigs(arg0) {
   let closure_0;
   let setting;
   let stateFromStores1;

@@ -1,17 +1,17 @@
-// Module ID: 10640
-// Function ID: 10641
+// Module ID: 10240
+// Function ID: 10241
 // Name: VoiceActivityStatus
-// Dependencies: [19, 21, 4896, 1126, 558, 576, 10641, 10631, 2]
+// Dependencies: [19, 21, 5090, 1126, 558, 576, 10241, 10229, 2]
 // Exports: getVoiceActivityStatusText
 
-// Module 10640 (VoiceActivityStatus)
+// Module 10240 (VoiceActivityStatus)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import ActivityStatusTextDefault from "ActivityStatusText" /* 10631 */;
-import UserProfileVoiceActivityIconDefault from "UserProfileVoiceActivityIcon" /* 10641 */;
+import ActivityStatusTextDefault from "ActivityStatusText" /* 10229 */;
+import UserProfileVoiceActivityIconDefault from "UserProfileVoiceActivityIcon" /* 10241 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let closure_4;
 let hasOwnProperty;
 ({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ icon: { flexShrink: 0 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceActivityStatus(arg0) {
   let channel;
   let hideIcon;
   let hideText;
@@ -115,7 +115,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp7 = null;
   }
   return tmp7;
-}) : ((hideText) => {
+}) : (function VoiceActivityStatus(hideText) {
   let channel;
   let hideIcon;
   let iconStyle;

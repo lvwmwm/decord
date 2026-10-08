@@ -1,23 +1,21 @@
-// Module ID: 11524
-// Function ID: 11525
+// Module ID: 11522
+// Function ID: 11523
 // Name: AppealIngestionPolicySummary
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 8125, 4733, 1126, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 5927, 4927, 1126, 5086, 2]
 
-// Module 11524 (AppealIngestionPolicySummary)
+// Module 11522 (AppealIngestionPolicySummary)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import ColorUtils from "ColorUtils" /* 4733 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8125 */;
+import ColorUtils from "ColorUtils" /* 4927 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 5927 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let classification;
 
 let c3;
 let closure_4;
@@ -31,7 +29,7 @@ obj2 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 createStyles = createStyles.createStyles;
 obj3 = { marginTop: 8, justifyContent: "flex-start", minHeight: 40, borderRadius: nativeDefault.radii.sm, borderWidth: 1, padding: 18 };
 let closure_5 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((classification) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngestionPolicySummary(classification) {
   let items;
   let policy;
   let sectionTitle;
@@ -142,7 +140,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((classification) =>
   cResult[10] = tmp15;
   cResult[11] = items1;
   tmp16 = items1;
-}) : ((classification) => {
+}) : (function AppealIngestionPolicySummary(classification) {
   let intl;
   let items;
   let items1;
@@ -159,7 +157,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((classification) =>
   const tmp2Result = ColorUtils;
   const obj2 = { style: tmp.sectionTitle, variant: "text-sm/bold", children: intl.string(intl2.t.xsdcxh) };
   const hexWithOpacityResult = tmp2Result.hexWithOpacity(tmp.borderColor.color, 0.08);
-  const Text = tmp2(4892).Text;
+  const Text = tmp2(5086).Text;
   intl = tmp2(1126).intl;
   items = [_false(Text, obj2), ];
   const obj3 = { style: items1, children: _false(Text_Text.Text, { variant: "text-md/semibold", children: capitalizeTextResult }) };

@@ -1,21 +1,19 @@
-// Module ID: 16159
-// Function ID: 16160
+// Module ID: 16419
+// Function ID: 16420
 // Name: ShowAllVoiceChannelsButton
-// Dependencies: [19, 7057, 21, 558, 576, 504, 16160, 1484, 1126, 5892, 5601, 2]
+// Dependencies: [19, 7244, 21, 558, 576, 504, 16420, 1496, 1126, 8204, 5375, 2]
 
-// Module 16159 (ShowAllVoiceChannelsButton)
+// Module 16419 (ShowAllVoiceChannelsButton)
 import Fragment from "Fragment" /* 21 */;
-import VoiceCategoryActionCreators from "VoiceCategoryActionCreators" /* 16160 */;
+import VoiceCategoryActionCreators from "VoiceCategoryActionCreators" /* 16420 */;
 import react from "react" /* 19 */;
-import ChannelListVoiceCategoryStore from "ChannelListVoiceCategoryStore" /* 7057 */;
+import ChannelListVoiceCategoryStore from "ChannelListVoiceCategoryStore" /* 7244 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let flag, guildId, num, scrollToTopResult, tmp3, tmp4, voiceCategoryExpandResult;
-
 const jsx = Fragment.jsx;
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ShowAllVoiceChannelsButton(guildId) {
   let first;
   let section;
   let stateFromStores;
@@ -93,49 +91,40 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId
       }
     }
   }
-  class C {
-    constructor() {
-      obj = closure_0(closure_1[6]);
-      if (closure_3) {
-        tmp6 = guildId;
-        voiceCategoryExpandResult = obj.voiceCategoryExpand(guildId);
-        tmp8 = globalThis;
-        _setTimeout = setTimeout;
-        num = 0;
-        timerId = setTimeout(() => {
-          let obj2;
-          let round;
-          const current = ref.current;
-          if (current != null) {
-            const _Math = Math;
-            const scrollToLocation = current.scrollToLocation;
-            const obj = { animated: false, section, item: 0, paddingStart: round(0.3 * obj2.getWindowDimensions().height) };
-            round = Math.round;
-            obj2 = guildId(section[7]);
-            scrollToLocation(obj);
-          }
-        }, 0);
-      } else {
-        tmp = guildId;
-        result = obj.voiceCategoryCollapse(guildId);
-        tmp3 = listRef;
-        current = listRef.current;
-        tmp4 = null;
+  const fn2 = function v() {
+    let ref;
+    let obj = VoiceCategoryActionCreators;
+    if (stateFromStores) {
+      obj.voiceCategoryExpand(guildId);
+      const _setTimeout = setTimeout;
+      const timerId = setTimeout(() => {
+        let obj2;
+        let round;
+        const current = ref.current;
         if (current != null) {
-          flag = false;
-          scrollToTopResult = current.scrollToTop(false);
+          const _Math = Math;
+          const scrollToLocation = current.scrollToLocation;
+          const obj = { animated: false, section, item: 0, paddingStart: round(0.3 * obj2.getWindowDimensions().height) };
+          round = Math.round;
+          obj2 = guildId(section[7]);
+          scrollToLocation(obj);
         }
+      }, 0);
+    } else {
+      const result = obj.voiceCategoryCollapse(guildId);
+      let current = listRef.current;
+      if (current != null) {
+        current.scrollToTop(false);
       }
-      return;
     }
-  }
+  };
   cResult[3] = stateFromStores;
   cResult[4] = guildId;
   cResult[5] = listRef;
   cResult[6] = section;
-  cResult[7] = C;
-  tmp8 = C;
-}) : ((guildId) => {
+  cResult[7] = fn2;
+  tmp8 = fn2;
+}) : (function ShowAllVoiceChannelsButton(guildId) {
   let stringResult;
   guildId = guildId.guildId;
   const section = guildId.section;

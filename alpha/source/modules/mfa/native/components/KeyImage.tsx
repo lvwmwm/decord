@@ -1,26 +1,26 @@
-// Module ID: 14612
-// Function ID: 14613
+// Module ID: 14873
+// Function ID: 14874
 // Name: KeyImage
-// Dependencies: [17, 21, 4896, 587, 558, 576, 14613, 2]
+// Dependencies: [17, 21, 5090, 587, 558, 576, 14874, 2]
 
-// Module 14612 (KeyImage)
+// Module 14873 (KeyImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const SecurityKeySpotIllustration = tmp(14613);
+const SecurityKeySpotIllustration = tmp(14874);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { container: obj2 };
 obj2 = { marginBottom: nativeDefault.space.PX_8 };
 let closure_4 = createStyles.createStyles(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function KeyImage() {
   let first;
   let tmp8;
   const obj = react;
@@ -42,7 +42,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[2];
   }
   return tmp8;
-}) : (() => <View style={closure_4().container}>{jsx(SecurityKeySpotIllustration.SecurityKeySpotIllustration, { scale: 0.6 })}</View>);
+}) : (function KeyImage() {
+  return <View style={closure_4().container}>{jsx(SecurityKeySpotIllustration.SecurityKeySpotIllustration, { scale: 0.6 })}</View>;
+});
 const result = size.fileFinishedImporting("modules/mfa/native/components/KeyImage.tsx");
 
 export const KeyImage = tmp2;

@@ -1,13 +1,13 @@
-// Module ID: 13506
-// Function ID: 13507
+// Module ID: 13803
+// Function ID: 13804
 // Name: settings/NotifSettingsUtils
-// Dependencies: [13507, 1233, 13508, 558, 576, 504, 2]
+// Dependencies: [13804, 1245, 13805, 558, 576, 504, 2]
 // Exports: b64ToDeclarativeSettingsProto
 
-// Module 13506 (settings/NotifSettingsUtils)
-import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1233 */;
-import notification_settings from "notification_settings" /* 13508 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 13507 */;
+// Module 13803 (settings/NotifSettingsUtils)
+import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1245 */;
+import notification_settings from "notification_settings" /* 13805 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 13804 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 let _require;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNotifSettingValue(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -47,7 +47,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useNotifSettingValue(arg0) {
   let closure_0;
   _require = arg0;
   const items = [NotifSettingsProtoStore];
@@ -57,7 +57,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_3 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNotifSettingToggleValue(arg0) {
   const tmp = closure_3(arg0);
   let flag;
   if (tmp != null) {
@@ -67,7 +67,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     flag = true;
   }
   return flag;
-}) : ((arg0) => {
+}) : (function useNotifSettingToggleValue(arg0) {
   const tmp = closure_3(arg0);
   let flag;
   if (tmp != null) {
@@ -79,7 +79,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return flag;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNotifSettingRadioValue(arg0) {
   const tmp = closure_3(arg0);
   let num;
   if (tmp != null) {
@@ -89,7 +89,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num = 0;
   }
   return num;
-}) : ((arg0) => {
+}) : (function useNotifSettingRadioValue(arg0) {
   const tmp = closure_3(arg0);
   let num;
   if (tmp != null) {

@@ -1,27 +1,27 @@
-// Module ID: 15106
-// Function ID: 15107
+// Module ID: 15368
+// Function ID: 15369
 // Name: SettingsAppearanceThemeCarousel
-// Dependencies: [19, 17, 15107, 1085, 21, 4618, 1188, 4896, 587, 558, 576, 5777, 12, 4861, 1241, 1126, 15108, 4897, 4900, 8894, 4892, 1615, 10504, 15111, 2]
+// Dependencies: [19, 17, 15369, 1085, 21, 4810, 1200, 5090, 587, 558, 576, 5360, 12, 5055, 1253, 1126, 15370, 5091, 5094, 9437, 5086, 1627, 10101, 15373, 2]
 
-// Module 15106 (SettingsAppearanceThemeCarousel)
+// Module 15368 (SettingsAppearanceThemeCarousel)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1241 */;
-import HapticUtils from "HapticUtils" /* 4861 */;
-import timing from "timing" /* 4897 */;
+import native from "native" /* 1200 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1253 */;
+import HapticUtils from "HapticUtils" /* 5055 */;
+import timing from "timing" /* 5091 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15107 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15369 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let flag, ref, set, themes, tmp10, tmp11, tmp15, tmp16, tmp4, tmp6, tmp9;
+let set;
 
 let c10;
 let c9;
@@ -37,7 +37,7 @@ let obj6;
 let obj7;
 let size;
 let tmp;
-const timingPresets = tmp(4900);
+const timingPresets = tmp(5094);
 ({ View: closure_4, ScrollView: hasOwnProperty } = react_native);
 const ThemeTypes = Constants.ThemeTypes;
 ({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = Fragment);
@@ -57,7 +57,7 @@ size = { position: "absolute", alignSelf: "center", width: SettingsAppearanceCon
 let closure_12 = createStyles(obj);
 let closure_13 = { code: "function SettingsAppearanceThemeCarouselTsx1(){const{withTiming,isOnyxNuxVisible,timingStandard}=this.__closure;return{opacity:withTiming(isOnyxNuxVisible.get()?1:0,timingStandard),pointerEvents:isOnyxNuxVisible.get()?\"auto\":\"none\"};}" };
 const __initData = { code: "function SettingsAppearanceThemeCarouselTsx2(){const{withTiming,isOnyxNuxVisible,timingStandard}=this.__closure;return{opacity:withTiming(isOnyxNuxVisible.get()?1:0,timingStandard),pointerEvents:isOnyxNuxVisible.get()?'auto':'none'};}" };
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((themes) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAppearanceThemeCarousel(themes) {
   let animatedStyles;
   let debounceResult;
   let defaultIndex;
@@ -82,11 +82,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((themes) => {
   const isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
   let obj3 = deviceWidth;
   deviceWidth.useRef(null);
-  ref = deviceWidth.useRef(defaultIndex);
+  const ref = deviceWidth.useRef(defaultIndex);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     class S {
-      constructor(arg0) {
-        return themes.theme === closure_7.ONYX;
+      constructor(theme) {
+        return theme.theme === ref.ONYX;
       }
     }
     let num = 0;
@@ -94,8 +94,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((themes) => {
     tmp7 = S;
   } else {
     class S {
-      constructor(arg0) {
-        return themes.theme === closure_7.ONYX;
+      constructor(theme) {
+        return theme.theme === ref.ONYX;
       }
     }
   }
@@ -103,8 +103,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((themes) => {
   const findIndexResult = themes.findIndex(tmp7);
   if (findIndexResult >= 0) {
     class S {
-      constructor(arg0) {
-        return themes.theme === closure_7.ONYX;
+      constructor(theme) {
+        return theme.theme === ref.ONYX;
       }
     }
   }
@@ -115,104 +115,56 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((themes) => {
   if (cResult[1] === sharedValue1) {
     let tmp12;
     class S {
-      constructor(arg0) {
-        return themes.theme === closure_7.ONYX;
+      constructor(theme) {
+        return theme.theme === ref.ONYX;
       }
     }
-    const effect = obj3.useEffect(P, items);
+    const effect = obj3.useEffect(D, items);
     if (cResult[5] !== onThemeSelected) {
       class S {
-        constructor(arg0) {
-          return themes.theme === closure_7.ONYX;
+        constructor(theme) {
+          return theme.theme === ref.ONYX;
         }
       }
       const obj6 = currentThemeIndex(tmp2[12]);
       debounceResult = obj6.debounce(onThemeSelected, 180);
-      class W {
-        constructor(arg0, arg1) {
-          rounded = Math.round(arg1);
-          if (rounded !== closure_8.current) {
-            tmp3 = closure_0;
-            tmp4 = closure_2;
-            obj = closure_0(closure_2[13]);
-            result = obj.triggerHapticFeedback(closure_0(closure_2[13]).HapticFeedbackTypes.IMPACT_LIGHT);
-            tmp2.current = rounded;
-            tmp6 = closure_12;
-            tmp7 = closure_12(rounded);
-          }
-          tmp8 = hasOnyxNux;
-          if (tmp8) {
-            tmp9 = closure_6;
-            _Math = Math;
-            tmp10 = deviceWidth;
-            tmp11 = closure_9;
-            num = 2;
-            tmp12 = arg1 < closure_9 + Math.ceil(deviceWidth / (closure_6.THEME_ITEM_WIDTH + closure_6.THEME_ITEM_HORIZONTAL_MARGIN)) / 2;
-            if (tmp12) {
-              tmp13 = closure_11;
-              flag = true;
-              result1 = closure_11.set(true);
-            }
-            tmp16 = closure_11;
-            tmp15 = closure_10;
-            set = closure_10.set;
-            value = closure_11.get();
-            tmp18 = !value && !tmp12;
-            result2 = set(tmp18);
-          }
-          return;
-        }
-      }
+      cResult[5] = onThemeSelected;
       cResult[6] = debounceResult;
       tmp12 = debounceResult;
     } else {
       class S {
-        constructor(arg0) {
-          return themes.theme === closure_7.ONYX;
+        constructor(theme) {
+          return theme.theme === ref.ONYX;
         }
       }
     }
     debounceResult = tmp12;
     if (cResult[7] === deviceWidth) {
       class S {
-        constructor(arg0) {
-          return themes.theme === closure_7.ONYX;
+        constructor(theme) {
+          return theme.theme === ref.ONYX;
         }
       }
     }
-    class W {
-      constructor(arg0, arg1) {
-        rounded = Math.round(arg1);
-        if (rounded !== closure_8.current) {
-          tmp3 = closure_0;
-          tmp4 = closure_2;
-          obj = closure_0(closure_2[13]);
-          result = obj.triggerHapticFeedback(closure_0(closure_2[13]).HapticFeedbackTypes.IMPACT_LIGHT);
-          tmp2.current = rounded;
-          tmp6 = closure_12;
-          tmp7 = closure_12(rounded);
+    function onProgressChange(arg0, arg1) {
+      const rounded = Math.round(arg1);
+      if (rounded !== ref.current) {
+        const obj = HapticUtils;
+        const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_LIGHT);
+        tmp2.current = rounded;
+        debounceResult(rounded);
+      }
+      const tmp8 = hasOnyxNux;
+      if (tmp8) {
+        const _Math = Math;
+        const tmp12 = arg1 < num2 + Math.ceil(deviceWidth / (SettingsAppearanceConstants.THEME_ITEM_WIDTH + SettingsAppearanceConstants.THEME_ITEM_HORIZONTAL_MARGIN)) / 2;
+        if (tmp12) {
+          const result1 = sharedValue1.set(true);
         }
-        tmp8 = hasOnyxNux;
-        if (tmp8) {
-          tmp9 = closure_6;
-          _Math = Math;
-          tmp10 = deviceWidth;
-          tmp11 = closure_9;
-          num = 2;
-          tmp12 = arg1 < closure_9 + Math.ceil(deviceWidth / (closure_6.THEME_ITEM_WIDTH + closure_6.THEME_ITEM_HORIZONTAL_MARGIN)) / 2;
-          if (tmp12) {
-            tmp13 = closure_11;
-            flag = true;
-            result1 = closure_11.set(true);
-          }
-          tmp16 = closure_11;
-          tmp15 = closure_10;
-          set = closure_10.set;
-          value = closure_11.get();
-          tmp18 = !value && !tmp12;
-          result2 = set(tmp18);
-        }
-        return;
+        set = sharedValue.set;
+        const value = sharedValue1.get();
+        const tmp18 = !value && !tmp12;
+        const result2 = set(tmp18);
       }
     }
     cResult[7] = deviceWidth;
@@ -221,24 +173,26 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((themes) => {
     cResult[10] = sharedValue;
     cResult[11] = tmp12;
     cResult[12] = num2;
-    cResult[13] = W;
+    cResult[13] = onProgressChange;
   }
-  class P {
+  class D {
     constructor() {
-      closure_0 = setTimeout(() => { /* body not rendered: F144777 */ }, 5500);
-      return () => { /* body not rendered: F144778 */ };
+      closure_0 = setTimeout(() => {
+        const result = sharedValue.set(false);
+        const result1 = sharedValue1.set(true);
+      }, 5500);
+      return () => clearTimeout(closure_0);
     }
   }
   items = [sharedValue, sharedValue1];
   cResult[1] = sharedValue1;
   cResult[2] = sharedValue;
-  cResult[3] = P;
+  cResult[3] = D;
   cResult[4] = items;
-}) : ((themes) => {
+}) : (function SettingsAppearanceThemeCarousel(themes) {
   let View;
   let animatedStyles;
   let closure_4;
-  let closure_8;
   let defaultIndex;
   let deviceWidth;
   let intl3;
@@ -268,9 +222,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((themes) => {
   let obj = themes(isPreview[11]);
   const isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
   deviceWidth.useRef(null);
-  deviceWidth.useRef(defaultIndex);
+  const ref = deviceWidth.useRef(defaultIndex);
   const items = [themes];
-  ref = deviceWidth.useMemo(() => {
+  let closure_8 = deviceWidth.useMemo(() => {
     const findIndexResult = themes.findIndex((theme) => theme.theme === constants.ONYX);
     let num = 0;
     if (findIndexResult >= 0) {
@@ -334,7 +288,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((themes) => {
     return closure_8(currentThemeIndex(isPreview[16]), obj);
   }, items3);
   const obj4 = themes(isPreview[5]);
-  class D {
+  class P {
     constructor() {
       let str;
       const withTiming = timing.withTiming;
@@ -352,29 +306,29 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((themes) => {
       return obj2;
     }
   }
-  D.__closure = { withTiming: themes(isPreview[17]).withTiming, isOnyxNuxVisible: sharedValue, timingStandard: themes(isPreview[18]).timingStandard };
-  D.__workletHash = 16840053984177;
-  D.__initData = __initData;
+  P.__closure = { withTiming: themes(isPreview[17]).withTiming, isOnyxNuxVisible: sharedValue, timingStandard: themes(isPreview[18]).timingStandard };
+  P.__workletHash = 16840053984177;
+  P.__initData = __initData;
   let tmp12 = closure_4;
   ({ withTiming: themes(isPreview[17]).withTiming, isOnyxNuxVisible: sharedValue, timingStandard: themes(isPreview[18]).timingStandard });
-  const animatedStyle = obj4.useAnimatedStyle(D);
+  const animatedStyle = obj4.useAnimatedStyle(P);
   let tmp13 = null;
   if (themes[currentThemeIndex].type !== themes(isPreview[14]).ClientThemeType.STANDARD_BACKGROUND_THEME) {
     const obj7 = { source: currentThemeIndex(tmp3[19]), style: animatedStyles.iconHeaderSecondary, size: tmp2(tmp3[6]).IconSizes.SMALL_20 };
-    tmp13 = ref(closure_11, obj7);
+    tmp13 = closure_8(closure_11, obj7);
   }
   const items4 = [tmp13, ];
   const obj8 = { animated: true, style: animatedStyles.headerPrimary, variant: "heading-sm/semibold", children: obj9.getName() };
   obj9 = themes[currentThemeIndex];
   const Text = tmp2(tmp3[20]).Text;
-  items4[1] = ref(Text, obj8);
+  items4[1] = closure_8(Text, obj8);
   if (!isScreenReaderEnabled) {
     let tmp17Result1;
     let stringResult;
     if (!tmp2(tmp3[21]).isThumbstickScrollDevice) {
       const obj10 = { children: items5 };
       const obj11 = { pointerEvents: "none", style: tmp.selectionBorder };
-      items5 = [ref(tmp12, obj11), ];
+      items5 = [closure_8(tmp12, obj11), ];
       size = {
         ref,
         data: themes,
@@ -410,13 +364,13 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((themes) => {
             }
       };
       obj12 = { width: deviceWidth, justifyContent: "center", alignItems: "center", marginLeft: ref.THEME_ITEM_HORIZONTAL_MARGIN };
-      items5[1] = ref(currentThemeIndex(tmp3[22]), size);
+      items5[1] = closure_8(currentThemeIndex(tmp3[22]), size);
       tmp17Result1 = tmp11(sharedValue1, obj10);
     }
     const obj14 = { animated: true, style: items6, variant: "text-sm/medium", children: null };
     items6 = [animatedStyles.headerSecondary, tmp.textCentered];
     const obj13 = { children: tmp17Result1 };
-    const tmp17Result = ref(tmp12, obj13);
+    const tmp17Result = closure_8(tmp12, obj13);
     if (isPreview) {
       if (themes[currentThemeIndex].type !== tmp2(tmp3[14]).ClientThemeType.STANDARD_BACKGROUND_THEME) {
         const intl2 = tmp2(tmp3[15]).intl;
@@ -426,7 +380,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((themes) => {
       const obj15 = { children: items7 };
       items7 = [tmp17Result, ];
       const obj16 = { style: tmp.labelGroup, children: items8 };
-      items8 = [tmp18, ref(tmp24, obj14)];
+      items8 = [tmp18, closure_8(tmp24, obj14)];
       items7[1] = sharedValue(tmp12, obj16);
       const obj17 = { style: tmp.container, children: items13 };
       const obj18 = { style: tmp.floatingNuxContainer, children: sharedValue(View, obj19) };
@@ -437,13 +391,13 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((themes) => {
       items10 = [tmp.arrowLeft, animatedStyles.iconInteractive];
       const tmp11Result2 = sharedValue(sharedValue1, obj15);
       View = currentThemeIndex(tmp3[5]).View;
-      items11 = [ref(closure_11, obj20), ];
+      items11 = [closure_8(closure_11, obj20), ];
       const obj21 = { animated: true, style: items12, variant: "eyebrow", maxFontSizeMultiplier: 1.5, children: intl3.string(tmp2(tmp3[15]).t.y2b7CA) };
       items12 = [animatedStyles.textNormal, tmp.uppercase];
       const Text2 = tmp2(tmp3[20]).Text;
       intl3 = tmp2(tmp3[15]).intl;
-      items11[1] = ref(Text2, obj21);
-      items13 = [ref(tmp12, obj18), tmp11Result2];
+      items11[1] = closure_8(Text2, obj21);
+      items13 = [closure_8(tmp12, obj18), tmp11Result2];
       return sharedValue(tmp12, obj17);
     }
     const intl = tmp2(tmp3[15]).intl;

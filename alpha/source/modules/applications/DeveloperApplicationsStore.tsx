@@ -1,12 +1,12 @@
-// Module ID: 12271
-// Function ID: 12272
+// Module ID: 12350
+// Function ID: 12351
 // Name: DeveloperApplicationsStore
-// Dependencies: [12272, 504, 584, 2]
+// Dependencies: [12351, 504, 584, 2]
 
-// Module 12271 (DeveloperApplicationsStore)
+// Module 12350 (DeveloperApplicationsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import DeveloperApplicationsConstants from "DeveloperApplicationsConstants" /* 12272 */;
+import DeveloperApplicationsConstants from "DeveloperApplicationsConstants" /* 12351 */;
 import size from "module_2" /* 2 */;
 
 const DeveloperApplicationsFetchState = DeveloperApplicationsConstants.DeveloperApplicationsFetchState;

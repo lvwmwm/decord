@@ -1,19 +1,19 @@
-// Module ID: 16099
-// Function ID: 16100
+// Module ID: 16359
+// Function ID: 16360
 // Name: useStickyServerHeaderSubtitle
-// Dependencies: [4786, 1085, 558, 576, 504, 2]
+// Dependencies: [4980, 1085, 558, 576, 504, 2]
 
-// Module 16099 (useStickyServerHeaderSubtitle)
+// Module 16359 (useStickyServerHeaderSubtitle)
 import Constants from "Constants" /* 1085 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4786 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4980 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, features;
+let _require;
 
 const GuildFeatures = Constants.GuildFeatures;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickyServerHeaderSubtitle(features) {
   let first;
   _require = features;
   let tmp = _require;
@@ -45,7 +45,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
   cResult[2] = features.id;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((arg0) => {
+}) : (function useStickyServerHeaderSubtitle(arg0) {
   _require = arg0;
   const items = [GuildMemberCountStore];
   const obj = require("get initialized");

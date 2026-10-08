@@ -1,14 +1,14 @@
-// Module ID: 17415
-// Function ID: 17416
+// Module ID: 17697
+// Function ID: 17698
 // Name: useLaunchPadAnimatedStyles
-// Dependencies: [11138, 1369, 4896, 558, 576, 16621, 11661, 1618, 4618, 5604, 2]
+// Dependencies: [11258, 1381, 5090, 558, 576, 16881, 11726, 1630, 4810, 5374, 2]
 
-// Module 17415 (useLaunchPadAnimatedStyles)
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import spring from "spring" /* 5604 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11138 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import createStyles from "createStyles" /* 4896 */;
+// Module 17697 (useLaunchPadAnimatedStyles)
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import spring from "spring" /* 5374 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11258 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ const __initData2 = { code: "function useLaunchPadAnimatedStylesNativeTsx3(){con
 const __initData3 = { code: "function useLaunchPadAnimatedStylesNativeTsx4(){const{withSpring,interpolate,launchPadSharedState,windowDimensions,LAUNCH_PAD_SPRING_CONFIG,gestureState,launchPadShown,IS_ANDROID,height}=this.__closure;return{transform:[{translateX:withSpring(interpolate(launchPadSharedState.get(),[0,1],[windowDimensions.get().width-16,0]),LAUNCH_PAD_SPRING_CONFIG,'animate-always',function(finished){'worklet';if(!finished||gestureState.get().active)return;if(launchPadSharedState.get()===1||launchPadSharedState.get()===0){launchPadShown.set(launchPadSharedState.get()===1);}})}],bottom:IS_ANDROID?0:height.get()};}" };
 let closure_10 = { code: "function useLaunchPadAnimatedStylesNativeTsx5(finished){const{gestureState,launchPadSharedState,launchPadShown}=this.__closure;if(!finished||gestureState.get().active)return;if(launchPadSharedState.get()===1||launchPadSharedState.get()===0){launchPadShown.set(launchPadSharedState.get()===1);}}" };
 const __initData4 = { code: "function useLaunchPadAnimatedStylesNativeTsx6(){const{withSpring,interpolate,launchPadSharedState,LAUNCH_PAD_SPRING_CONFIG}=this.__closure;return{opacity:withSpring(interpolate(launchPadSharedState.get(),[0,1],[0,0.6]),LAUNCH_PAD_SPRING_CONFIG,'animate-always')};}" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((launchPadSharedState) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLaunchpadAnimatedStyles(launchPadSharedState) {
   let closure_3;
   let closure_4;
   let launchPadShown;
@@ -141,7 +141,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((launchPadSharedState
   cResult[1] = tmp2.launchPadCover;
   cResult[2] = items1;
   tmp7 = items1;
-}) : ((launchPadSharedState) => {
+}) : (function useLaunchpadAnimatedStyles(launchPadSharedState) {
   let closure_3;
   let closure_4;
   let items;

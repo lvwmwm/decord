@@ -1,14 +1,14 @@
-// Module ID: 9408
-// Function ID: 9409
+// Module ID: 8829
+// Function ID: 8830
 // Name: useGetGameForAppId
-// Dependencies: [19, 2007, 558, 576, 6670, 6822, 1375, 504, 2]
+// Dependencies: [19, 2019, 558, 576, 6847, 6995, 1387, 504, 2]
 
-// Module 9408 (useGetGameForAppId)
+// Module 8829 (useGetGameForAppId)
 import react2 from "react" /* 576 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6670 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6847 */;
 import react from "react" /* 19 */;
-import GameStore from "GameStore" /* 2007 */;
+import GameStore from "GameStore" /* 2019 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,9 +17,9 @@ const useGetOrFetchApplicationsDefault = useGetOrFetchApplications;
 let _require;
 
 let tmp;
-const useGame = tmp(6822);
+const useGame = tmp(6995);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetGameForAppId(arg0) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(6);
@@ -61,7 +61,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = null != arg0 && null == getOrFetchApplication || isLoading;
   cResult[5] = obj3;
   tmp10 = obj3;
-}) : ((arg0) => {
+}) : (function useGetGameForAppId(arg0) {
   let isLoading;
   const obj = useGetOrFetchApplications;
   const getOrFetchApplication = obj.useGetOrFetchApplication(arg0);
@@ -83,7 +83,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetGamesForAppIds(arg0) {
   let closure_0;
   let tmp11;
   let tmp4;
@@ -95,7 +95,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp6;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function s(getCanonicalGameId) {
+      const fn = function o(getCanonicalGameId) {
         return getCanonicalGameId.getCanonicalGameId();
       };
       cResult[2] = fn;
@@ -103,9 +103,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else {
       tmp6 = cResult[2];
     }
-    const found = arr.filter(tmp(1375).isNotNullish);
+    const found = arr.filter(tmp(1387).isNotNullish);
     let mapped = found.map(tmp6);
-    const found1 = mapped.filter(tmp(1375).isNotNullish);
+    const found1 = mapped.filter(tmp(1387).isNotNullish);
     cResult[0] = arr;
     cResult[1] = found1;
     tmp4 = found1;
@@ -123,7 +123,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp9 = cResult[3];
   }
   if (cResult[4] !== tmp4) {
-    const fn2 = function f() {
+    const fn2 = function p() {
       let game;
       const mapped = closure_0.map((item) => game.getGame(item));
       return mapped.filter(GlobalUtils.isNotNullish);
@@ -136,10 +136,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult2 = require("get initialized");
   return tmpResult2.useStateFromStoresArray(tmp9, tmp11);
-}) : ((arg0) => {
+}) : (function useGetGamesForAppIds(arg0) {
   let closure_0;
   let memo;
-  const tmp = memo(6670)(arg0);
+  const tmp = memo(6847)(arg0);
   _require = tmp;
   const items = [tmp];
   memo = react.useMemo(() => {

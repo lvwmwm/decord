@@ -1,17 +1,16 @@
-// Module ID: 1394
-// Function ID: 1395
+// Module ID: 1406
+// Function ID: 1407
 // Name: DisplayNameStylesUtils
-// Dependencies: [32, 1395, 568, 1396, 683, 1103, 1397, 2]
-// Exports: applyFlywheelViewingFallback, areDisplayNameStylesEqual, buildGummyColors, doesEffectImpactLayout, generateColorVariants, generateRandomDisplayNameStyles, getEffectColorCount, hasNonLatinLetters, hueToGummyColor, isSolidPresetColor, parseServerDisplayNameStyles, rebuildGummySourceColor, resolveSolidColor, resolveSolidPresetSeed, toEditorDisplayNameStyles, wrapHue
+// Dependencies: [32, 1407, 568, 1408, 683, 1103, 2]
+// Exports: areDisplayNameStylesEqual, buildGummyColors, doesEffectImpactLayout, generateColorVariants, generateRandomDisplayNameStyles, getEffectColorCount, hasNonLatinLetters, hueToGummyColor, isSolidPresetColor, parseServerDisplayNameStyles, rebuildGummySourceColor, resolveSolidColor, resolveSolidPresetSeed, toEditorDisplayNameStyles, wrapHue
 
-// Module 1394 (DisplayNameStylesUtils)
+// Module 1406 (DisplayNameStylesUtils)
 import shallowEqual from "shallowEqual" /* 568 */;
 import _modDef683 from "module_683" /* 683 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1396 */;
-import DisplayNameFont from "DisplayNameFont" /* 1397 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1408 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1395 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1407 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -19,10 +18,8 @@ let _require;
 
 let closure_4;
 let hasOwnProperty;
-let metroImportAll;
-let metroImportDefault;
 let metroRequire;
-({ DISPLAY_NAME_STYLES_GUMMY_HUE_LIGHTNESS: closure_4, DISPLAY_NAME_STYLES_GUMMY_HUE_SATURATION: hasOwnProperty, FLYWHEEL_EFFECTS: metroRequire, FLYWHEEL_FONTS: metroImportDefault, getColorPresetsForEffect: metroImportAll } = DisplayNameStylesConstants);
+({ DISPLAY_NAME_STYLES_GUMMY_HUE_LIGHTNESS: closure_4, DISPLAY_NAME_STYLES_GUMMY_HUE_SATURATION: hasOwnProperty, getColorPresetsForEffect: metroRequire } = DisplayNameStylesConstants);
 let items = [DisplayNameEffect.DisplayNameEffect.NEON, DisplayNameEffect.DisplayNameEffect.TOON, DisplayNameEffect.DisplayNameEffect.POP, DisplayNameEffect.DisplayNameEffect.GUMMY];
 const set = new Set(items);
 const items1 = [{ hueShift: -18, saturation: 0.54, lightness: 0.72 }, { hueShift: -5, saturation: 0.66, lightness: 0.6 }, { hueShift: 9, saturation: 0.56, lightness: 0.68 }, { hueShift: 22, saturation: 0.6, lightness: 0.63 }];
@@ -58,7 +55,7 @@ export const areDisplayNameStylesEqual = function areDisplayNameStylesEqual(font
 };
 export const isSolidPresetColor = function isSolidPresetColor(arg0, arg1) {
   let closure_0 = arg0;
-  const obj = metroImportAll(arg1);
+  const obj = metroRequire(arg1);
   return obj.some((item) => item[0] === closure_0);
 };
 export const resolveSolidColor = function resolveSolidColor(arg0, arg1, arg2) {
@@ -67,15 +64,15 @@ export const resolveSolidColor = function resolveSolidColor(arg0, arg1, arg2) {
     tmp = arg0;
   } else {
     let closure_0 = arg0;
-    metroImportAll(arg2);
+    metroRequire(arg2);
   }
   return tmp;
 };
 export const resolveSolidPresetSeed = function resolveSolidPresetSeed(selectedColor, selectedEffectId) {
   let first = selectedColor;
   let closure_0 = selectedColor;
-  const obj = metroImportAll(selectedEffectId);
-  const tmp2 = metroImportAll;
+  const obj = metroRequire(selectedEffectId);
+  const tmp2 = metroRequire;
   if (!obj.some((item) => item[0] === closure_0)) {
     first = tmp2(selectedEffectId)[0][0];
   }
@@ -193,38 +190,10 @@ export const generateRandomDisplayNameStyles = function generateRandomDisplayNam
   let items;
   const tmp = visibleEffectOrder[Math.floor(Math, Math.random(Math) * visibleEffectOrder.length)];
   const tmp2 = visibleFontOrder[Math.floor(Math, Math.random(Math) * visibleFontOrder.length)];
-  const arr = metroImportAll(tmp);
+  const arr = metroRequire(tmp);
   const obj = { fontId: tmp2, effectId: tmp, colors: items };
   items = [...arr[floor(Math, Math.random(Math) * arr.length)]];
   return obj;
-};
-export const applyFlywheelViewingFallback = function applyFlywheelViewingFallback(fontId, isDisplayNameStylesFlywheelViewersEnabled) {
-  const tmp = isDisplayNameStylesFlywheelViewersEnabled;
-  if (!tmp) {
-    if (null != fontId) {
-      let effectId;
-      let tmp8;
-      if (metroImportDefault.includes(fontId.fontId)) {
-        fontId = DisplayNameFont.DisplayNameFont.DEFAULT;
-      } else {
-        fontId = fontId.fontId;
-      }
-      if (metroRequire.includes(fontId.effectId)) {
-        effectId = DisplayNameEffect.DisplayNameEffect.SOLID;
-      } else {
-        effectId = fontId.effectId;
-      }
-      if (fontId !== fontId.fontId) {
-        const obj = { fontId, effectId };
-        const merged = Object.assign(fontId);
-        tmp8 = obj;
-      } else {
-        tmp8 = fontId;
-      }
-      return tmp8;
-    }
-  }
-  return fontId;
 };
 export const hasNonLatinLetters = function hasNonLatinLetters(displayName) {
   if (null == displayName) {

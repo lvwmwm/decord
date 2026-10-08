@@ -1,8 +1,8 @@
-// Module ID: 5176
-// Function ID: 5177
+// Module ID: 5488
+// Function ID: 5489
 // Dependencies: [2]
 
-// Module 5176
+// Module 5488
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/shoes/ballet.png.js");

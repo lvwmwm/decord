@@ -1,17 +1,17 @@
-// Module ID: 10860
-// Function ID: 10861
+// Module ID: 10511
+// Function ID: 10512
 // Name: useIsPremiumSubscriber
-// Dependencies: [1377, 1379, 558, 576, 1976, 504, 2]
+// Dependencies: [1389, 1391, 558, 576, 1988, 504, 2]
 
-// Module 10860 (useIsPremiumSubscriber)
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1976 */;
-import UserStore from "UserStore" /* 1377 */;
+// Module 10511 (useIsPremiumSubscriber)
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1988 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const PremiumTypes = PremiumConstants.PremiumTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPremiumSubscriber(arg0) {
   let first;
   let tmp7;
   let TIER_2 = arg0;
@@ -29,7 +29,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== TIER_2) {
-    const fn = function o() {
+    const fn = function c() {
       const currentUser = UserStore.getCurrentUser();
       const obj = PremiumTypeUtils;
       return obj.isPremiumExactly(currentUser, TIER_2);
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7);
-}) : (() => {
+}) : (function useIsPremiumSubscriber() {
   let TIER_2 = arg0;
   if (arg0 === undefined) {
     TIER_2 = PremiumTypes.TIER_2;

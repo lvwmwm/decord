@@ -1,17 +1,17 @@
-// Module ID: 11783
-// Function ID: 11784
+// Module ID: 11850
+// Function ID: 11851
 // Name: useIsAppDM
-// Dependencies: [1377, 558, 576, 573, 2]
+// Dependencies: [1389, 558, 576, 573, 2]
 
-// Module 11783 (useIsAppDM)
-import UserStore from "UserStore" /* 1377 */;
+// Module 11850 (useIsAppDM)
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsAppDM(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -47,7 +47,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(573);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useIsAppDM(arg0) {
   let closure_0;
   _require = arg0;
   const obj = require("useStateFromStores");

@@ -1,22 +1,22 @@
-// Module ID: 5898
-// Function ID: 5899
+// Module ID: 8210
+// Function ID: 8211
 // Name: useGameMentionData
-// Dependencies: [2007, 5899, 1377, 5903, 558, 576, 504, 568, 2]
+// Dependencies: [2019, 8211, 1389, 8213, 558, 576, 504, 568, 2]
 // Exports: getGameMentionData
 
-// Module 5898 (useGameMentionData)
+// Module 8210 (useGameMentionData)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
-import useGameProfileObscured from "useGameProfileObscured" /* 5903 */;
-import GameStore from "GameStore" /* 2007 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 5899 */;
-import UserStore from "UserStore" /* 1377 */;
+import useGameProfileObscured from "useGameProfileObscured" /* 8213 */;
+import GameStore from "GameStore" /* 2019 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 8211 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameMentionData(gameId) {
   let first;
   let tmp8;
   let tmp9;
@@ -77,7 +77,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp8, tmp9, shallowEqualDefault);
-}) : ((gameId) => {
+}) : (function useGameMentionData(gameId) {
   _require = gameId;
   let obj = require("get initialized");
   const items = [GameStore, GameAutocompleteStore, UserStore];

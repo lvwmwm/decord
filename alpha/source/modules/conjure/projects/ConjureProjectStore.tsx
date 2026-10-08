@@ -1,15 +1,15 @@
-// Module ID: 8734
-// Function ID: 8735
+// Module ID: 11251
+// Function ID: 11252
 // Name: ConjureProjectStore
-// Dependencies: [32, 1377, 6757, 504, 584, 2]
+// Dependencies: [32, 1389, 6933, 504, 584, 2]
 // Exports: canPublishProject, canRemixProject
 
-// Module 8734 (ConjureProjectStore)
+// Module 11251 (ConjureProjectStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureTypes from "ConjureTypes" /* 6757 */;
+import ConjureTypes from "ConjureTypes" /* 6933 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 function isProjectOwner(item10010) {
@@ -61,15 +61,16 @@ let c14 = false;
 let obj = null;
 const set3 = new Set();
 const map4 = new Map();
-let closure_18 = [];
+let success = "unattempted";
+let closure_19 = [];
 const map5 = new Map();
 let sum = 0;
 const map6 = new Map();
 const map7 = new Map();
-let closure_23 = [];
+let closure_24 = [];
 const map8 = new Map();
 const map9 = new Map();
-let closure_26 = { status: "idle", truncated: false, count: 0 };
+let closure_27 = { status: "idle", truncated: false, count: 0 };
 const map10 = new Map();
 const Store = get_initializedDefault.Store;
 class ConjureProjectStore extends Store {
@@ -153,7 +154,7 @@ class ConjureProjectStore extends Store {
   getLogs(projectId) {
     let value = map5.get(projectId);
     if (value == null) {
-      value = closure_18;
+      value = closure_19;
     }
     return value;
   }
@@ -189,7 +190,7 @@ class ConjureProjectStore extends Store {
   getTrace(projectId) {
     let value = map8.get(projectId);
     if (value == null) {
-      value = closure_23;
+      value = closure_24;
     }
     return value;
   }
@@ -200,7 +201,7 @@ class ConjureProjectStore extends Store {
       value2 = value.get(arg1);
     }
     if (value2 == null) {
-      value2 = closure_26;
+      value2 = closure_27;
     }
     return value2;
   }
@@ -216,6 +217,9 @@ class ConjureProjectStore extends Store {
       str = "unattempted";
     }
     return str;
+  }
+  getOwnedProjectsFetchState() {
+    return success;
   }
   isConjureProjectApplication(applicationId) {
     let tmp = null != applicationId;
@@ -280,6 +284,7 @@ obj = {
     map9.clear();
     obj = null;
     c12 = false;
+    success = "unattempted";
     maxProjects = null;
     c14 = false;
     map11.clear();
@@ -288,6 +293,8 @@ obj = {
     guildId = guildId.guildId;
     if (null != guildId) {
       const result = map4.set(guildId, "loading");
+    } else {
+      success = "loading";
     }
   },
   CONJURE_PROJECTS_FETCH_SUCCESS: function handleProjectsFetchSuccess(arg0) {
@@ -363,12 +370,15 @@ obj = {
     }
     pruneProjectScopedState();
     c12 = true;
+    success = "success";
     ({ type: "success", fetchedAt: Date.now() });
   },
   CONJURE_PROJECTS_FETCH_FAIL: function handleProjectsFetchFail(guildId) {
     guildId = guildId.guildId;
     if (null != guildId) {
       const result = map4.set(guildId, "error");
+    } else {
+      success = "error";
     }
     ({ type: "error", fetchedAt: Date.now() });
   },
@@ -477,7 +487,7 @@ obj = {
     set = map11.set;
     let value = map8.get(projectId);
     if (value == null) {
-      value = closure_23;
+      value = closure_24;
     }
     obj = { snapshot: _Set1, touched: new Set() };
     _Set1 = new _Set(value.map((kind) => "" + kind.kind + ":" + kind.id));
@@ -659,7 +669,7 @@ obj = {
       let obj24;
       let value7 = map8.get(projectId);
       if (value7 == null) {
-        value7 = closure_23;
+        value7 = closure_24;
       }
       const tool = "tool";
       const id2 = toolCall.id;
@@ -874,7 +884,7 @@ obj = {
       let obj10;
       let value7 = map8.get(projectId);
       if (value7 == null) {
-        value7 = closure_23;
+        value7 = closure_24;
       }
       const model = "model";
       const id2 = modelCall.id;

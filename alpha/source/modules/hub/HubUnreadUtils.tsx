@@ -1,19 +1,19 @@
-// Module ID: 16176
-// Function ID: 16177
+// Module ID: 16436
+// Function ID: 16437
 // Name: HubUnreadUtils
-// Dependencies: [11954, 4911, 558, 576, 11, 11946, 504, 2]
+// Dependencies: [12027, 6040, 558, 576, 11, 12019, 504, 2]
 
-// Module 16176 (HubUnreadUtils)
-import GuildDirectoryUtils from "GuildDirectoryUtils" /* 11946 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 11954 */;
-import ReadStateStore from "ReadStateStore" /* 4911 */;
+// Module 16436 (HubUnreadUtils)
+import GuildDirectoryUtils from "GuildDirectoryUtils" /* 12019 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 12027 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHubUnreadCount(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : ((arg0) => {
+}) : (function useHubUnreadCount(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildDirectoryStore, ReadStateStore];

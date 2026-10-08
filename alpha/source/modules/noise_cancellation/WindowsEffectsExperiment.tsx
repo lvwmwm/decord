@@ -1,12 +1,12 @@
-// Module ID: 9689
-// Function ID: 9690
+// Module ID: 10878
+// Function ID: 10879
 // Name: WindowsEffectsExperiment
-// Dependencies: [1246, 1440, 558, 576, 504, 2]
+// Dependencies: [1258, 1452, 558, 576, 504, 2]
 // Exports: getWindowsAudioEffectsExperimentConfig
 
-// Module 9689 (WindowsEffectsExperiment)
-import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+// Module 10878 (WindowsEffectsExperiment)
+import ApexExperimentStore from "ApexExperimentStore" /* 1258 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ function getWindowsAudioEffectsExperimentConfig(location) {
   const obj = { location: location.location };
   return config.getConfig(obj);
 }
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWindowsAudioEffectsExperimentConfig(location) {
   let _location;
   let first;
   let tmp6;
@@ -51,7 +51,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((location) => {
+}) : (function useWindowsAudioEffectsExperimentConfig(location) {
   location = location.location;
   let obj = location(504);
   const items = [ApexExperimentStore];

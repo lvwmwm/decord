@@ -1,10 +1,10 @@
-// Module ID: 13386
-// Function ID: 13387
+// Module ID: 13686
+// Function ID: 13687
 // Name: useResettingValue
-// Dependencies: [32, 19, 558, 576, 2046, 5991, 2]
+// Dependencies: [32, 19, 558, 576, 2058, 6174, 2]
 
-// Module 13386 (useResettingValue)
-import useInitialValueDefault from "useInitialValue" /* 5991 */;
+// Module 13686 (useResettingValue)
+import useInitialValueDefault from "useInitialValue" /* 6174 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -18,7 +18,7 @@ let hasOwnProperty;
 let metroRequire;
 let _slicedToArray = _slicedToArray_mod;
 ({ useState: closure_4, useCallback: hasOwnProperty, useEffect: metroRequire } = react);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useResettingValue(arg0, arg1) {
   let closure_0;
   let closure_1;
   let closure_3;
@@ -33,7 +33,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   [tmp4, dependencyMap] = _slicedToArray(closure_4(arg0), 2);
   const tmp3 = _slicedToArray(closure_4(arg0), 2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function c() {
+    const fn = function l() {
       const timeout = new closure_0(dependencyMap[4]).Timeout();
       return timeout;
     };
@@ -79,7 +79,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       tmp11 = items1;
     }
   }
-  const fn3 = function k(arg0) {
+  const fn3 = function h(arg0) {
     dependencyMap(arg0);
     if (arg0 !== closure_0) {
       closure_3.start(closure_1, () => closure_1_2(closure_1_0));
@@ -90,7 +90,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[6] = tmp6;
   cResult[7] = fn3;
   tmp10 = fn3;
-}) : ((arg0, arg1) => {
+}) : (function useResettingValue(arg0, arg1) {
   let closure_1;
   let closure_2;
   let closure_3;

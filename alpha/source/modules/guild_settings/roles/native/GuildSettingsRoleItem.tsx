@@ -1,17 +1,17 @@
-// Module ID: 17837
-// Function ID: 17838
+// Module ID: 18124
+// Function ID: 18125
 // Name: GuildSettingsRoleItem
-// Dependencies: [5, 19, 17, 1085, 21, 4896, 587, 4892, 558, 576, 5800, 6692, 5715, 1126, 11203, 5712, 5790, 4853, 7586, 6711, 6709, 5612, 1375, 1103, 9267, 5880, 1188, 9917, 5886, 6000, 2]
+// Dependencies: [5, 19, 17, 1085, 21, 5090, 587, 5086, 558, 576, 5404, 6869, 5298, 1126, 11320, 6102, 5394, 5047, 8106, 6888, 6886, 5387, 1387, 1103, 8597, 8192, 1200, 9399, 8198, 6184, 2]
 
-// Module 17837 (GuildSettingsRoleItem)
+// Module 18124 (GuildSettingsRoleItem)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import Text_Text from "Text/Text" /* 4892 */;
+import Text_Text from "Text/Text" /* 5086 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ size = { width: 32, height: 32, borderRadius: nativeDefault.radii.round, overflo
 obj5 = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_10 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsRoleItem(guildId) {
   let found;
   let intl5;
   let isEveryoneRole;
@@ -99,22 +99,22 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
           }
           if (cResult[8] === onPress) {
             if (cResult[11] === onMoveDown) {
-              let tmp13;
+              let tmp14;
               if (cResult[12] === onMoveUp) {
-                tmp13 = cResult[13];
+                tmp14 = cResult[13];
               }
               if (cResult[16] === onMoveDown) {
-                let tmp22;
+                let tmp23;
                 let flag2;
                 if (cResult[17] === onMoveUp) {
-                  tmp22 = cResult[18];
+                  tmp23 = cResult[18];
                 }
                 if (sorting) {
-                  let tmp47;
+                  let tmp48;
                   let obj13;
                   if (!locked) {
-                    let tmp23;
-                    let tmp27;
+                    let tmp24;
+                    let tmp28;
                     if (cResult[19] !== role.name) {
                       let intl3 = tmp(tmp2[13]).intl;
                       const formatToPlainString = intl3.formatToPlainString;
@@ -132,13 +132,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                           }
                         }
                       }
-                      tmp24[0] = role.name;
-                      const formatToPlainStringResult = formatToPlainString(tmp(onMoveUp[13]).t.Zazao2, tmp24);
+                      tmp25[0] = role.name;
+                      const formatToPlainStringResult = formatToPlainString(tmp(onMoveUp[13]).t.Zazao2, tmp25);
                       cResult[19] = role.name;
                       cResult[20] = formatToPlainStringResult;
-                      tmp23 = formatToPlainStringResult;
+                      tmp24 = formatToPlainStringResult;
                     } else {
-                      tmp23 = cResult[20];
+                      tmp24 = cResult[20];
                     }
                     class D {
                       constructor(nativeEvent) {
@@ -170,26 +170,26 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                           }
                         }
                       }
-                      cResult[21] = tmp28;
-                      tmp27 = tmp28;
+                      cResult[21] = tmp29;
+                      tmp28 = tmp29;
                     } else {
-                      tmp27 = cResult[21];
+                      tmp28 = cResult[21];
                     }
                     let style;
                     if (sortHandlers != null) {
                       style = sortHandlers.style;
                     }
                     if (cResult[22] === tmp6.dragHandlePressable) {
-                      let tmp30;
+                      let tmp31;
                       if (cResult[23] === style) {
-                        tmp30 = cResult[24];
+                        tmp31 = cResult[24];
                       }
-                      if (cResult[25] === tmp13) {
-                        if (cResult[26] === tmp22) {
+                      if (cResult[25] === tmp14) {
+                        if (cResult[26] === tmp23) {
                           if (cResult[27] === sortHandlers) {
-                            if (cResult[28] === tmp23) {
+                            if (cResult[28] === tmp24) {
                               if (!role.managed) {
-                                let tmp40;
+                                let tmp41;
                                 const _Symbol3 = Symbol;
                                 class D {
                                   constructor(nativeEvent) {
@@ -222,13 +222,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                                       }
                                     }
                                   }
-                                  tmp41[0] = role.name;
-                                  const formatToPlainString2Result = formatToPlainString2(tmp(onMoveUp[13]).t.FiMFTZ, tmp41);
+                                  tmp42[0] = role.name;
+                                  const formatToPlainString2Result = formatToPlainString2(tmp(onMoveUp[13]).t.FiMFTZ, tmp42);
                                   cResult[32] = role.name;
                                   cResult[33] = formatToPlainString2Result;
-                                  tmp40 = formatToPlainString2Result;
+                                  tmp41 = formatToPlainString2Result;
                                 } else {
-                                  tmp40 = cResult[33];
+                                  tmp41 = cResult[33];
                                 }
                                 if (cResult[34] === tmp11) {
                                   class D {
@@ -246,11 +246,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                                     }
                                   }
                                 }
-                                let obj2 = { icon: tmp39, accessibilityLabel: tmp40, size: "sm", variant: "destructive", onPress: tmp11 };
-                                const tmp45 = closure_7(tmp(onMoveUp[18]).IconButton, obj2);
+                                let obj2 = { icon: tmp40, accessibilityLabel: tmp41, size: "sm", variant: "destructive", onPress: tmp11 };
+                                const tmp46 = closure_7(tmp(onMoveUp[18]).IconButton, obj2);
                                 cResult[34] = tmp11;
-                                cResult[35] = tmp40;
-                                cResult[36] = tmp45;
+                                cResult[35] = tmp41;
+                                cResult[36] = tmp46;
                               } else {
                                 flag2 = true;
                                 class D {
@@ -286,28 +286,28 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                           }
                         }
                       }
-                      tmp32[1] = tmp23;
-                      tmp32[2] = tmp27;
-                      tmp32[3] = tmp13;
-                      tmp32[4] = tmp22;
-                      tmp32[7] = tmp4(onMoveUp[6]).space.PX_4;
+                      tmp33[1] = tmp24;
+                      tmp33[2] = tmp28;
+                      tmp33[3] = tmp14;
+                      tmp33[4] = tmp23;
+                      tmp33[7] = tmp4(onMoveUp[6]).space.PX_4;
                       const merged = Object.assign(sortHandlers);
-                      tmp32.style = tmp30;
-                      cResult[25] = tmp13;
-                      cResult[26] = tmp22;
+                      tmp33.style = tmp31;
+                      cResult[25] = tmp14;
+                      cResult[26] = tmp23;
                       cResult[27] = sortHandlers;
-                      cResult[28] = tmp23;
-                      cResult[29] = tmp30;
-                      cResult[30] = tmp32;
+                      cResult[28] = tmp24;
+                      cResult[29] = tmp31;
+                      cResult[30] = tmp33;
                     }
                     const items = [tmp6.dragHandlePressable, style];
                     cResult[22] = tmp6.dragHandlePressable;
                     cResult[23] = style;
                     cResult[24] = items;
-                    tmp30 = items;
+                    tmp31 = items;
                   }
                   if (null != roleIconProps) {
-                    let tmp60;
+                    let tmp61;
                     if (cResult[37] !== roleIconProps) {
                       let obj3 = {};
                       class D {
@@ -326,14 +326,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                       }
                       const tmp4Result = tmp4(onMoveUp[19]);
                       const merged1 = Object.assign(roleIconProps);
-                      const tmp65 = closure_7(tmp4Result, obj3);
+                      const tmp66 = closure_7(tmp4Result, obj3);
                       cResult[37] = roleIconProps;
-                      cResult[38] = tmp65;
-                      tmp60 = tmp65;
+                      cResult[38] = tmp66;
+                      tmp61 = tmp66;
                     } else {
-                      tmp60 = cResult[38];
+                      tmp61 = cResult[38];
                     }
-                    tmp47 = tmp60;
+                    tmp48 = tmp61;
                   } else {
                     const tags5 = role.tags;
                     class D {
@@ -352,11 +352,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                     }
                     if (null === undefined) {
                       if (cResult[39] === guildId) {
-                        let tmp56;
+                        let tmp57;
                         if (cResult[40] === role) {
-                          tmp56 = cResult[41];
+                          tmp57 = cResult[41];
                         }
-                        tmp47 = tmp56;
+                        tmp48 = tmp57;
                       }
                       class D {
                         constructor(nativeEvent) {
@@ -372,13 +372,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                           }
                         }
                       }
-                      tmp58[1] = guildId;
-                      tmp58[2] = role;
-                      const tmp59 = closure_7(tmp4(onMoveUp[20]), tmp58);
+                      tmp59[1] = guildId;
+                      tmp59[2] = role;
+                      const tmp60 = closure_7(tmp4(onMoveUp[20]), tmp59);
                       cResult[39] = guildId;
                       cResult[40] = role;
-                      cResult[41] = tmp59;
-                      tmp56 = tmp59;
+                      cResult[41] = tmp60;
+                      tmp57 = tmp60;
                     } else {
                       if (cResult[42] === tmp5) {
                         if (cResult[43] === role.colorString) {
@@ -386,7 +386,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                             if (cResult[45] === tmp6.container) {
                               if (cResult[46] === tmp6.gradient) {
                                 if (cResult[47] === tmp6.image) {
-                                  tmp47 = cResult[48];
+                                  tmp48 = cResult[48];
                                 }
                               }
                             }
@@ -395,7 +395,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                       }
                       if (tmp5) {
                         if (null != role.colors) {
-                          let tmp48Result;
+                          let tmp49Result;
                           if (null != role.colors.secondary_color) {
                             class D {
                               constructor(nativeEvent) {
@@ -411,7 +411,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                                 }
                               }
                             }
-                            tmp53[0] = tmp6.container;
+                            tmp54[0] = tmp6.container;
                             let obj4 = {
                               colors: found.map((item) => {
                                                           const obj = role(onMoveUp[23]);
@@ -427,8 +427,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                             const items2 = [closure_7(tmp4Result2, obj4), ];
                             let obj5 = { size: "md", style: tmp6.image };
                             items2[1] = closure_7(tmp(onMoveUp[24]).ShieldUserIcon, obj5);
-                            tmp53[1] = items2;
-                            tmp48Result = closure_8(closure_5, tmp53);
+                            tmp54[1] = items2;
+                            tmp49Result = closure_8(closure_5, tmp54);
                           }
                           class D {
                             constructor(nativeEvent) {
@@ -449,8 +449,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                           cResult[45] = tmp6.container;
                           cResult[46] = tmp6.gradient;
                           cResult[47] = tmp6.image;
-                          cResult[48] = tmp48Result;
-                          tmp47 = tmp48Result;
+                          cResult[48] = tmp49Result;
+                          tmp48 = tmp49Result;
                         }
                       }
                       class D {
@@ -468,11 +468,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                         }
                       }
                       const items3 = [tmp6.container, ];
-                      let obj6 = { style: items3, children: tmp48(tmp(tmp2[24]).ShieldUserIcon, obj8) };
+                      let obj6 = { style: items3, children: tmp49(tmp(tmp2[24]).ShieldUserIcon, obj8) };
                       const obj7 = { backgroundColor: null != role.colorString ? role.colorString : DEFAULT_ROLE_COLOR_HEX };
                       items3[1] = obj7;
                       obj8 = { size: "md", style: tmp6.image };
-                      tmp48Result = tmp48(closure_5, obj6);
+                      tmp49Result = tmp49(closure_5, obj6);
                     }
                   }
                   class D {
@@ -493,12 +493,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                     sorting = !flag2;
                   }
                   if (cResult[49] === isEveryoneRole) {
-                    if (cResult[50] === tmp47) {
+                    if (cResult[50] === tmp48) {
                       if (cResult[53] === role.name) {
-                        let tmp71;
+                        let tmp72;
                         let subscription_listing_id;
                         if (cResult[54] === tmp6.label) {
-                          tmp71 = cResult[55];
+                          tmp72 = cResult[55];
                         }
                         const tags2 = role.tags;
                         class D {
@@ -515,20 +515,20 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                             }
                           }
                         }
-                        const tmp74 = cResult[56];
+                        const tmp75 = cResult[56];
                         if (tags2 != null) {
                           subscription_listing_id = tags2.subscription_listing_id;
                         }
-                        if (tmp74 === subscription_listing_id) {
-                          let tmp75;
-                          let tmp81;
+                        if (tmp75 === subscription_listing_id) {
+                          let tmp76;
+                          let tmp82;
                           if (cResult[57] === tmp6.sparkleIcon) {
-                            tmp75 = cResult[58];
+                            tmp76 = cResult[58];
                           }
                           if (cResult[59] !== locked) {
-                            let tmp82 = null;
+                            let tmp83 = null;
                             if (locked) {
-                              tmp82 = closure_7(tmp(tmp2[28]).LockIcon, { size: "xxs", color: "icon-subtle" });
+                              tmp83 = closure_7(tmp(tmp2[28]).LockIcon, { size: "xxs", color: "icon-subtle" });
                             }
                             class D {
                               constructor(nativeEvent) {
@@ -545,10 +545,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                               }
                             }
                             cResult[59] = locked;
-                            cResult[60] = tmp82;
-                            tmp81 = tmp82;
+                            cResult[60] = tmp83;
+                            tmp82 = tmp83;
                           } else {
-                            tmp81 = cResult[60];
+                            tmp82 = cResult[60];
                           }
                           class D {
                             constructor(nativeEvent) {
@@ -565,20 +565,20 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                             }
                           }
                           const obj9 = { style: tmp6.row, children: items4 };
-                          items4 = [tmp71, tmp75, tmp81];
+                          items4 = [tmp72, tmp76, tmp82];
                           cResult[61] = tmp6.row;
-                          cResult[62] = tmp71;
-                          cResult[63] = tmp75;
-                          cResult[64] = tmp81;
+                          cResult[62] = tmp72;
+                          cResult[63] = tmp76;
+                          cResult[64] = tmp82;
                           cResult[65] = closure_8(closure_5, obj9);
-                          const tmp87 = closure_8(closure_5, obj9);
+                          const tmp88 = closure_8(closure_5, obj9);
                         }
                         const tags3 = role.tags;
                         let prop;
                         if (tags3 != null) {
                           prop = tags3.subscription_listing_id;
                         }
-                        let tmp77 = null;
+                        let tmp78 = null;
                         if (null != prop) {
                           const obj10 = { size: tmp(onMoveUp[26]).Icon.Sizes.REFRESH_SMALL_16, source: tmp4(onMoveUp[27]), "aria-label": intl5.string(tmp(onMoveUp[13]).t.a2Ak8b), style: tmp6.sparkleIcon };
                           class D {
@@ -596,7 +596,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                             }
                           }
                           intl5 = tmp(tmp2[13]).intl;
-                          tmp77 = closure_7(tmp79, obj10);
+                          tmp78 = closure_7(tmp80, obj10);
                         }
                         const tags4 = role.tags;
                         let prop1;
@@ -605,8 +605,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                         }
                         cResult[56] = prop1;
                         cResult[57] = tmp6.sparkleIcon;
-                        cResult[58] = tmp77;
-                        tmp75 = tmp77;
+                        cResult[58] = tmp78;
+                        tmp76 = tmp78;
                       }
                       class D {
                         constructor(nativeEvent) {
@@ -623,15 +623,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                         }
                       }
                       const obj11 = { lineClamp: 1, style: tmp6.label, variant, color: "interactive-text-active", children: role.name };
-                      const tmp73 = closure_7(tmp(onMoveUp[7]).Text, obj11);
+                      const tmp74 = closure_7(tmp(onMoveUp[7]).Text, obj11);
                       cResult[53] = role.name;
                       cResult[54] = tmp6.label;
-                      cResult[55] = tmp73;
-                      tmp71 = tmp73;
+                      cResult[55] = tmp74;
+                      tmp72 = tmp74;
                     }
                   }
-                  const tmp68 = closure_7;
-                  const tmp69 = closure_5;
+                  const tmp69 = closure_7;
+                  const tmp70 = closure_5;
                   if (isEveryoneRole) {
                     const obj12 = { style: tmp6.everyone, children: null };
                     class D {
@@ -650,13 +650,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                     }
                     obj13 = obj12;
                   } else {
-                    obj13 = { children: tmp47 };
+                    obj13 = { children: tmp48 };
                   }
                   cResult[49] = isEveryoneRole;
-                  cResult[50] = tmp47;
+                  cResult[50] = tmp48;
                   cResult[51] = tmp6.everyone;
-                  cResult[52] = tmp68(tmp69, obj13);
-                  const tmp68Result = tmp68(tmp69, obj13);
+                  cResult[52] = tmp69(tmp70, obj13);
+                  const tmp69Result = tmp69(tmp70, obj13);
                 }
                 class D {
                   constructor(nativeEvent) {
@@ -708,17 +708,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
               cResult[16] = onMoveDown;
               cResult[17] = onMoveUp;
               cResult[18] = D;
-              tmp22 = D;
-            }
-            class H {
-              constructor() {
-                if (onPress != null) {
-                  tmp(role);
-                }
-              }
+              tmp23 = D;
             }
             if (null != onMoveUp) {
-              let tmp15;
+              let tmp16;
+              const tmp15 = globalThis;
               const _Symbol = Symbol;
               class D {
                 constructor(nativeEvent) {
@@ -735,7 +729,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                 }
               }
               if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-                const obj14 = { name: "moveup", label: tmp16(tmp(onMoveUp[13]).t.Yl8E4h) };
+                const obj14 = { name: "moveup", label: tmp17(tmp(onMoveUp[13]).t.Yl8E4h) };
                 let intl = tmp(tmp2[13]).intl;
                 class D {
                   constructor(nativeEvent) {
@@ -752,14 +746,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                   }
                 }
                 cResult[14] = obj14;
-                tmp15 = obj14;
+                tmp16 = obj14;
               } else {
-                tmp15 = cResult[14];
+                tmp16 = cResult[14];
               }
-              arr.push(tmp15);
+              arr.push(tmp16);
             }
             if (null != onMoveDown) {
-              let tmp19;
+              let tmp20;
+              let tmp19 = globalThis;
               const _Symbol2 = Symbol;
               class D {
                 constructor(nativeEvent) {
@@ -776,7 +771,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                 }
               }
               if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-                const obj15 = { name: "movedown", label: tmp20(tmp(onMoveUp[13]).t["5PbXSy"]) };
+                const obj15 = { name: "movedown", label: tmp21(tmp(onMoveUp[13]).t["5PbXSy"]) };
                 let intl2 = tmp(tmp2[13]).intl;
                 class D {
                   constructor(nativeEvent) {
@@ -793,31 +788,24 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                   }
                 }
                 cResult[15] = obj15;
-                tmp19 = obj15;
+                tmp20 = obj15;
               } else {
-                tmp19 = cResult[15];
+                tmp20 = cResult[15];
               }
-              arr.push(tmp19);
+              arr.push(tmp20);
             }
             cResult[11] = onMoveDown;
             cResult[12] = onMoveUp;
             cResult[13] = arr;
-            tmp13 = arr;
-          }
-          class H {
-            constructor() {
-              if (onPress != null) {
-                tmp(role);
-              }
-            }
+            tmp14 = arr;
           }
           cResult[8] = onPress;
           cResult[9] = role;
-          cResult[10] = H;
+          cResult[10] = tmp13;
         }
       }
     }
-    const fn = function z() {
+    function handleDeleteRow() {
       let closure_0;
       let intl;
       let intl2;
@@ -830,7 +818,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
         body: intl2.string(role(onMoveUp[13]).t.qALKny),
         cancelText: intl3.string(role(onMoveUp[13]).t.gm1Vej),
         confirmText: intl4.string(role(onMoveUp[13]).t.p89ACt),
-        onConfirm: function() {
+        onConfirm() {
           return closure_0(...arguments);
         },
         confirmColor: onPress(onMoveUp[16]).Colors.RED
@@ -895,25 +883,25 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
         }
       });
       show(obj);
-    };
+    }
     cResult[3] = guildId;
     cResult[4] = null === guild_connections;
     cResult[5] = role.id;
     cResult[6] = role.name;
-    cResult[7] = fn;
-    tmp11 = fn;
+    cResult[7] = handleDeleteRow;
+    tmp11 = handleDeleteRow;
   }
   const obj16 = { guildId, roleId: role.id, size: 32 };
   cResult[0] = guildId;
   cResult[1] = role.id;
   cResult[2] = obj16;
   tmp7 = obj16;
-}) : ((guildId) => {
+}) : (function GuildSettingsRoleItem(guildId) {
   let TrashIcon;
   let flag;
   let flag2;
-  let fn;
   let found;
+  let handlePress;
   let intl;
   let intl2;
   let intl3;
@@ -1012,7 +1000,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                     body: intl2.string(role(onMoveUp[13]).t.qALKny),
                     cancelText: intl3.string(role(onMoveUp[13]).t.gm1Vej),
                     confirmText: intl4.string(role(onMoveUp[13]).t.p89ACt),
-                    onConfirm: function() {
+                    onConfirm() {
                       return closure_0(...arguments);
                     },
                     confirmColor: require("Alert").Colors.RED
@@ -1140,11 +1128,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
         tmp24 = tmp21;
       }
     }
-    const obj18 = { onLongPress, onPress: fn, disabled: sorting, draggable: flag2, dragHandlePressableProps: tmp17, trailing: tmp18, arrow: flag, icon: tmp24(closure_5, obj20), label: tmp36(closure_5, obj21), subLabel: stringResult, start: isFirstRole, end: isLastRole };
-    fn = undefined;
+    const obj18 = { onLongPress, onPress: handlePress, disabled: sorting, draggable: flag2, dragHandlePressableProps: tmp17, trailing: tmp18, arrow: flag, icon: tmp24(closure_5, obj20), label: tmp36(closure_5, obj21), subLabel: stringResult, start: isFirstRole, end: isLastRole };
+    handlePress = undefined;
     const TableRow = tmp5(tmp2[29]).TableRow;
     if (!sorting) {
-      fn = () => {
+      handlePress = function handlePress() {
         if (importDefault != null) {
           tmp(role);
         }

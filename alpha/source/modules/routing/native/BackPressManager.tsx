@@ -1,15 +1,15 @@
-// Module ID: 14298
-// Function ID: 14299
+// Module ID: 14523
+// Function ID: 14524
 // Name: BackPressManager
-// Dependencies: [17, 4753, 1616, 1488, 1989, 1369, 2]
+// Dependencies: [17, 4947, 1628, 1500, 2001, 1381, 2]
 
-// Module 14298 (BackPressManager)
+// Module 14523 (BackPressManager)
 import react_native from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import KeyboardUIStore from "KeyboardUIStore" /* 1488 */;
-import KeyboardTypes from "KeyboardTypes" /* 1616 */;
-import useKeyboardType from "useKeyboardType" /* 4753 */;
-import LifecycleManager from "LifecycleManager" /* 1989 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import KeyboardUIStore from "KeyboardUIStore" /* 1500 */;
+import KeyboardTypes from "KeyboardTypes" /* 1628 */;
+import useKeyboardType from "useKeyboardType" /* 4947 */;
+import LifecycleManager from "LifecycleManager" /* 2001 */;
 import size from "module_2" /* 2 */;
 
 function handleBackPress() {

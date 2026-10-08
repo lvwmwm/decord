@@ -1,18 +1,18 @@
-// Module ID: 13016
-// Function ID: 13017
+// Module ID: 13294
+// Function ID: 13295
 // Name: useCanGiftProduct
-// Dependencies: [558, 7860, 7078, 7077, 4534, 1980, 4547, 2]
+// Dependencies: [558, 8278, 7264, 7263, 4726, 1992, 4739, 2]
 
-// Module 13016 (useCanGiftProduct)
-import PremiumUtilsDefault from "PremiumUtils" /* 4534 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 4547 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7077 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7078 */;
-import useCurrentUser from "useCurrentUser" /* 7860 */;
+// Module 13294 (useCanGiftProduct)
+import PremiumUtilsDefault from "PremiumUtils" /* 4726 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 4739 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7263 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7264 */;
+import useCurrentUser from "useCurrentUser" /* 8278 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanGiftProduct(type) {
   const obj = useCurrentUser;
   const currentUser = obj.useCurrentUser();
   const obj2 = CollectiblesUtils;
@@ -34,7 +34,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
     result = result2;
   }
   if (!result) {
-    result = type.type === tmp(1980).CollectiblesItemType.EXTERNAL_SKU;
+    result = type.type === tmp(1992).CollectiblesItemType.EXTERNAL_SKU;
   }
   if (!result) {
     let currency;
@@ -50,7 +50,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
     result = !tmpResult2.isCollectibleGiftingSupported();
   }
   return !result;
-}) : ((type) => {
+}) : (function useCanGiftProduct(type) {
   const obj = useCurrentUser;
   const currentUser = obj.useCurrentUser();
   const obj2 = CollectiblesUtils;
@@ -72,7 +72,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
     result = result2;
   }
   if (!result) {
-    result = type.type === tmp(1980).CollectiblesItemType.EXTERNAL_SKU;
+    result = type.type === tmp(1992).CollectiblesItemType.EXTERNAL_SKU;
   }
   if (!result) {
     let currency;

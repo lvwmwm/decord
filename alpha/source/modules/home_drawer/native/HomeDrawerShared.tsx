@@ -1,14 +1,14 @@
-// Module ID: 16286
-// Function ID: 16287
+// Module ID: 16546
+// Function ID: 16547
 // Name: HomeDrawerShared
-// Dependencies: [19, 17, 21, 4896, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 2]
 
-// Module 16286 (HomeDrawerShared)
+// Module 16546 (HomeDrawerShared)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let closure_4;
 const View = react_native.View;
 ({ jsxs: c3, jsx: closure_4 } = Fragment);
 let closure_5 = createStyles.createStyles({ container: { flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 12 }, titleContainer: { flex: 1, flexDirection: "column", justifyContent: "center", gap: 2 }, rightContainer: { overflow: "hidden" } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDrawerSharedItem(arg0) {
   let items;
   let items1;
   let right;
@@ -75,7 +75,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = title;
   cResult[3] = tmp4;
   tmp3 = tmp4;
-}) : ((right) => {
+}) : (function HomeDrawerSharedItem(right) {
   let items;
   let items1;
   let subtitle;

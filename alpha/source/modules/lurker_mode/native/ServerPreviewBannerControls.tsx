@@ -1,21 +1,21 @@
-// Module ID: 16141
-// Function ID: 16142
+// Module ID: 16401
+// Function ID: 16402
 // Name: ServerPreviewBannerControls
-// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 6855, 7586, 6022, 1126, 16142, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 587, 558, 576, 7043, 8106, 6208, 1126, 16402, 2]
 
-// Module 16141 (ServerPreviewBannerControls)
+// Module 16401 (ServerPreviewBannerControls)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6022 */;
-import transitionToGuild from "transitionToGuild" /* 6855 */;
-import IconButton2 from "IconButton" /* 7586 */;
-import ServerPreviewPillDefault from "ServerPreviewPill" /* 16142 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6208 */;
+import transitionToGuild from "transitionToGuild" /* 7043 */;
+import IconButton2 from "IconButton" /* 8106 */;
+import ServerPreviewPillDefault from "ServerPreviewPill" /* 16402 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ const MOBILE_GUILD_UPSELL_LIST = Constants.MOBILE_GUILD_UPSELL_LIST;
 let obj = { row: rect };
 rect = { position: "absolute", top: nativeDefault.space.PX_16, left: nativeDefault.space.PX_16, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 let closure_8 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ServerPreviewBannerControls() {
   let first;
   let intl;
   let items;
@@ -39,7 +39,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(5);
   const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t() {
+    const fn = function n() {
       const obj = transitionToGuild;
       obj.transitionToGuild(MOBILE_GUILD_UPSELL_LIST);
     };
@@ -50,7 +50,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "md", variant: "secondary-overlay", icon: AssetRegistryDefault, onPress: first, accessibilityLabel: intl.string(intl2.t["13/7kX"]), maxFontSizeMultiplier: 1.5 };
-    const IconButton = tmp(7586).IconButton;
+    const IconButton = tmp(8106).IconButton;
     intl = tmp(1126).intl;
     const tmp10 = metroRequire(IconButton, obj2);
     const tmp11 = metroRequire(ServerPreviewPillDefault, {});
@@ -73,7 +73,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp12 = cResult[4];
   }
   return tmp12;
-}) : (() => {
+}) : (function ServerPreviewBannerControls() {
   let intl;
   let items;
   let obj = { style: closure_8().row, children: items };

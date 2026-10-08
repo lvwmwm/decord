@@ -1,55 +1,55 @@
-// Module ID: 16997
-// Function ID: 16998
+// Module ID: 17278
+// Function ID: 17279
 // Name: YouScreenUserProfileContent
-// Dependencies: [32, 19, 17, 2042, 5445, 7124, 7865, 6714, 2048, 14430, 21, 558, 576, 16983, 16350, 1369, 7939, 7924, 12919, 12920, 8351, 12934, 4586, 587, 7872, 2036, 10071, 5975, 1126, 5601, 12834, 16998, 17001, 16994, 9404, 10896, 17002, 12904, 11594, 6901, 12907, 10856, 12908, 1491, 7868, 10839, 7925, 504, 7910, 7921, 12763, 17003, 12719, 12921, 12944, 12945, 12946, 10844, 17004, 12949, 15589, 12836, 10999, 8928, 12952, 17006, 12891, 12957, 12962, 9317, 10840, 9295, 12297, 10987, 4618, 6658, 2]
+// Dependencies: [32, 19, 17, 2055, 5755, 7309, 8283, 6891, 2060, 14656, 21, 558, 576, 17264, 16610, 1381, 8357, 8343, 13068, 13069, 13084, 13213, 4778, 587, 8290, 2048, 9675, 6158, 1126, 5375, 12981, 17279, 17282, 17275, 14685, 10547, 17283, 13053, 11657, 7090, 13056, 10507, 13057, 1503, 8286, 10488, 8344, 504, 8329, 8340, 12911, 17284, 13211, 13070, 13223, 13224, 13225, 10495, 17285, 13228, 15869, 12983, 11223, 8559, 13231, 17287, 13040, 13236, 13241, 8505, 10489, 8626, 12395, 11211, 4810, 6835, 2]
 
-// Module 16997 (YouScreenUserProfileContent)
+// Module 17278 (YouScreenUserProfileContent)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2042 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import Constants from "Constants" /* 6714 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6901 */;
-import Constants2 from "Constants" /* 7865 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7924 */;
-import UserProfileAvatarDefault from "UserProfileAvatar" /* 7939 */;
-import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 8351 */;
-import FormDividerDefault from "FormDivider" /* 8928 */;
-import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 9404 */;
-import getRandomCustomStatusPromptDefault from "getRandomCustomStatusPrompt" /* 10844 */;
-import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 10856 */;
-import BadgeManagementExperiment from "BadgeManagementExperiment" /* 10896 */;
-import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 10999 */;
-import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 11594 */;
-import UserProfileActivityDefault from "UserProfileActivity" /* 12836 */;
-import UserProfileNoteDefault from "UserProfileNote" /* 12891 */;
-import useBadgeDirectoryNuxCoachmarkVariant from "useBadgeDirectoryNuxCoachmarkVariant" /* 12904 */;
-import useBadgeDirectoryNuxEntryPoint from "useBadgeDirectoryNuxEntryPoint" /* 12907 */;
-import UserProfileWidgetsBoardEditNoticeDefault from "UserProfileWidgetsBoardEditNotice" /* 12919 */;
-import ConjureCustomWidgetAddOptionDefault from "ConjureCustomWidgetAddOption" /* 12920 */;
-import UserProfileConnections from "UserProfileConnections" /* 12952 */;
-import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 12957 */;
-import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 12962 */;
-import UserProfileEditConstants from "UserProfileEditConstants" /* 14430 */;
-import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 15589 */;
-import showYouAccountActionSheet from "showYouAccountActionSheet" /* 16350 */;
-import you_tracking_Tracking from "you/tracking/Tracking" /* 16983 */;
-import useOwnsAnyBadgeDefault from "useOwnsAnyBadge" /* 17002 */;
-import YouExpiringTrialOfferCardDefault from "YouExpiringTrialOfferCard" /* 17004 */;
-import UserProfileYourFriendsCardDefault from "UserProfileYourFriendsCard" /* 17006 */;
+import dismissible_content from "dismissible_content" /* 2048 */;
+import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2055 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import Constants from "Constants" /* 6891 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7090 */;
+import Constants2 from "Constants" /* 8283 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8343 */;
+import UserProfileAvatarDefault from "UserProfileAvatar" /* 8357 */;
+import FormDividerDefault from "FormDivider" /* 8559 */;
+import getRandomCustomStatusPromptDefault from "getRandomCustomStatusPrompt" /* 10495 */;
+import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 10507 */;
+import BadgeManagementExperiment from "BadgeManagementExperiment" /* 10547 */;
+import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 11223 */;
+import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 11657 */;
+import UserProfileActivityDefault from "UserProfileActivity" /* 12983 */;
+import UserProfileNoteDefault from "UserProfileNote" /* 13040 */;
+import useBadgeDirectoryNuxCoachmarkVariant from "useBadgeDirectoryNuxCoachmarkVariant" /* 13053 */;
+import useBadgeDirectoryNuxEntryPoint from "useBadgeDirectoryNuxEntryPoint" /* 13056 */;
+import UserProfileWidgetsBoardEditNoticeDefault from "UserProfileWidgetsBoardEditNotice" /* 13068 */;
+import ConjureCustomWidgetAddOptionDefault from "ConjureCustomWidgetAddOption" /* 13069 */;
+import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 13084 */;
+import UserProfileConnections from "UserProfileConnections" /* 13231 */;
+import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 13236 */;
+import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 13241 */;
+import UserProfileEditConstants from "UserProfileEditConstants" /* 14656 */;
+import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 14685 */;
+import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 15869 */;
+import showYouAccountActionSheet from "showYouAccountActionSheet" /* 16610 */;
+import you_tracking_Tracking from "you/tracking/Tracking" /* 17264 */;
+import useOwnsAnyBadgeDefault from "useOwnsAnyBadge" /* 17283 */;
+import YouExpiringTrialOfferCardDefault from "YouExpiringTrialOfferCard" /* 17285 */;
+import UserProfileYourFriendsCardDefault from "UserProfileYourFriendsCard" /* 17287 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SelfPresenceStore_mod from "SelfPresenceStore" /* 5445 */;
-import UserProfileStore from "UserProfileStore" /* 7124 */;
+import SelfPresenceStore_mod from "SelfPresenceStore" /* 5755 */;
+import UserProfileStore from "UserProfileStore" /* 7309 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const UserProfileWishlistGridDefault = UserProfileWishlistGrid;
-let navigation;
+let navigation, obj1, setParamsResult;
 
 let closure_14;
 let closure_15;
@@ -58,8 +58,8 @@ let hasOwnProperty;
 let metroRequire;
 let tmp;
 let tmp3;
-const PlatformUtils = tmp(1369);
-const UserProfileActivityTabDefault = tmp3(12934);
+const PlatformUtils = tmp(1381);
+const UserProfileActivityTabDefault = tmp3(13213);
 let react = react_mod;
 ({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
 const useIsContentShown = DismissibleContentShownStateStore.useIsContentShown;
@@ -67,10 +67,10 @@ let SelfPresenceStore = SelfPresenceStore_mod;
 let UserProfileSections = Constants2.UserProfileSections;
 let UserProfileThemeTypes = Constants.UserProfileThemeTypes;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
-const constants = UserProfileEditConstants.UserProfileEditAutoFocusElement;
+let closure_13 = UserProfileEditConstants.UserProfileEditAutoFocusElement;
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouAvatar(arg0) {
   let first;
   let tmp5;
   let tmp7;
@@ -108,7 +108,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp7 = cResult[3];
   }
   return tmp7;
-}) : ((arg0) => {
+}) : (function YouAvatar(arg0) {
   const callback = react.useCallback(() => {
     const obj = require("you/tracking/Tracking");
     const result = obj.trackYouTabAvatarPress();
@@ -123,7 +123,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return authStore2(tmp4, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColor, borderColor) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouScreenCardStyle(backgroundColor, borderColor) {
   const obj = react2;
   const cResult = obj.c(6);
   const tmp2 = UserProfileSharedStylesDefault();
@@ -150,14 +150,14 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColo
   cResult[1] = borderColor;
   cResult[2] = obj2;
   tmp3 = obj2;
-}) : ((backgroundColor, borderColor) => {
+}) : (function useYouScreenCardStyle(backgroundColor, borderColor) {
   const items = [UserProfileSharedStylesDefault().card, ];
   const obj = { backgroundColor, borderColor, borderWidth: 1 };
   items[1] = obj;
   return items;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreenWidgetsBoardContainer(userId) {
   let activeSection;
   let containerBackground;
   let containerBorderColor;
@@ -196,7 +196,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
       }
       const obj2 = { style: tmp4.profileContent, children: items };
       items = [tmp6, tmp7, tmp12];
-      const tmp17 = closure_15(metroRequire, obj2);
+      const tmp17 = authStore3(metroRequire, obj2);
       cResult[6] = tmp4.profileContent;
       cResult[7] = tmp12;
       cResult[8] = tmp17;
@@ -209,7 +209,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[4] = userId;
   cResult[5] = tmp13;
   tmp12 = tmp13;
-}) : ((arg0) => {
+}) : (function YouScreenWidgetsBoardContainer(arg0) {
   let activeSection;
   let containerBackground;
   let containerBorderColor;
@@ -224,10 +224,10 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   items[1] = authStore2(ConjureCustomWidgetAddOptionDefault, {});
   const obj2 = { userId, isVisible: activeSection === WIDGETS, cardStyle: tmp2 };
   items[2] = authStore2(UserProfileWidgetsBoardDefault, obj2);
-  return closure_15(metroRequire, obj);
+  return authStore3(metroRequire, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreenActivityTabContainer(arg0) {
   let containerBackground;
   let containerBorderColor;
   let user;
@@ -273,7 +273,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.profileContent;
   cResult[2] = items;
   tmp6 = items;
-}) : ((user) => {
+}) : (function YouScreenActivityTabContainer(user) {
   let containerBackground;
   let containerBorderColor;
   let items;
@@ -288,9 +288,11 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return authStore2(metroRequire, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToProfileCustomization) => {
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditSection(navigateToProfileCustomization) {
   let closure_4;
+  let intl2;
   let isProfileLoaded;
+  let items;
   let markAsDismissed;
   let trackUserProfileAction;
   let visibleContent;
@@ -298,125 +300,167 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToProf
   const cResult = obj.c(37);
   navigateToProfileCustomization = navigateToProfileCustomization.navigateToProfileCustomization;
   ({ isProfileLoaded, visibleContent, markAsDismissed } = navigateToProfileCustomization);
-  let tmp4 = markAsDismissed(trackUserProfileAction[17])();
+  let tmp4 = markAsDismissed;
+  const tmp5 = markAsDismissed(trackUserProfileAction[17])();
   const obj2 = navigateToProfileCustomization(trackUserProfileAction[22]);
   const token = obj2.useToken(markAsDismissed(trackUserProfileAction[23]).colors.WHITE);
   const obj3 = navigateToProfileCustomization(trackUserProfileAction[24]);
   trackUserProfileAction = obj3.useUserProfileAnalyticsContext().trackUserProfileAction;
   const ref = react.useRef(null);
-  const tmp7 = visibleContent === navigateToProfileCustomization(trackUserProfileAction[25]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_PROFILE_COACHMARK;
-  let closure_3 = tmp7;
-  const tmp8 = visibleContent === navigateToProfileCustomization(trackUserProfileAction[25]).DismissibleContent.BADGE_CUSTOMIZATION_COACHMARK;
-  react = tmp8;
-  const tmp9 = visibleContent === navigateToProfileCustomization(trackUserProfileAction[25]).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_PROFILE_COACHMARK;
-  let closure_5 = tmp9;
+  const tmp8 = visibleContent === navigateToProfileCustomization(trackUserProfileAction[25]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_PROFILE_COACHMARK;
+  let closure_3 = tmp8;
+  const tmp9 = visibleContent === navigateToProfileCustomization(trackUserProfileAction[25]).DismissibleContent.BADGE_CUSTOMIZATION_COACHMARK;
+  react = tmp9;
+  const tmp10 = visibleContent === navigateToProfileCustomization(trackUserProfileAction[25]).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_PROFILE_COACHMARK;
+  let closure_5 = tmp10;
   if (cResult[0] === markAsDismissed) {
     if (cResult[1] === navigateToProfileCustomization) {
-      if (cResult[2] === tmp8) {
-        if (cResult[3] === tmp9) {
-          if (cResult[4] === tmp7) {
-            let tmp10;
-            let tmp13Result;
+      if (cResult[2] === tmp9) {
+        if (cResult[3] === tmp10) {
+          if (cResult[4] === tmp8) {
+            let tmp11;
+            let tmp12;
+            let tmp15Result;
             if (cResult[5] === trackUserProfileAction) {
-              tmp10 = cResult[6];
+              tmp11 = cResult[6];
             }
             if (cResult[7] !== navigateToProfileCustomization) {
-              class A {
-                constructor() {
-                  navigateToProfileCustomization(constants.BADGES);
-                }
-              }
+              const fn2 = function _() {
+                navigateToProfileCustomization(constants.BADGES);
+              };
               cResult[7] = navigateToProfileCustomization;
-              cResult[8] = A;
+              cResult[8] = fn2;
+              tmp12 = fn2;
             } else {
-              class A {
-                constructor() {
-                  navigateToProfileCustomization(constants.BADGES);
-                }
-              }
+              tmp12 = cResult[8];
             }
             if (cResult[9] === token) {
+              let tmp14;
               let tmp18;
-              class A {
-                constructor() {
-                  navigateToProfileCustomization(constants.BADGES);
-                }
+              let tmp20;
+              if (cResult[10] === isProfileLoaded) {
+                tmp14 = cResult[11];
               }
               const _Symbol = Symbol;
               if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-                class A {
-                  constructor() {
-                    navigateToProfileCustomization(constants.BADGES);
-                  }
-                }
-                const stringResult = obj4.string(navigateToProfileCustomization(trackUserProfileAction[28]).t.AAjhgi);
+                const intl = tmp(tmp2[28]).intl;
+                const stringResult = intl.string(navigateToProfileCustomization(trackUserProfileAction[28]).t.AAjhgi);
                 cResult[12] = stringResult;
                 tmp18 = stringResult;
               } else {
-                class A {
-                  constructor() {
-                    navigateToProfileCustomization(constants.BADGES);
-                  }
-                }
+                tmp18 = cResult[12];
               }
               if (cResult[13] !== isProfileLoaded) {
-                class A {
-                  constructor() {
-                    navigateToProfileCustomization(constants.BADGES);
-                  }
-                }
+                let tmp21;
                 if (!isProfileLoaded) {
-                  class A {
-                    constructor() {
-                      navigateToProfileCustomization(constants.BADGES);
-                    }
-                  }
-                  const intl = tmp(tmp2[28]).intl;
-                  tmp22[0] = intl.string(navigateToProfileCustomization(trackUserProfileAction[28]).t.ZTNur7);
+                  const obj4 = { text: intl2.string(navigateToProfileCustomization(trackUserProfileAction[28]).t.ZTNur7) };
+                  intl2 = tmp(tmp2[28]).intl;
+                  tmp21 = obj4;
                 }
                 cResult[13] = isProfileLoaded;
                 cResult[14] = tmp21;
+                tmp20 = tmp21;
               } else {
-                class A {
-                  constructor() {
-                    navigateToProfileCustomization(constants.BADGES);
+                tmp20 = cResult[14];
+              }
+              if (cResult[15] === tmp11) {
+                if (cResult[16] === tmp14) {
+                  let tmp22;
+                  if (cResult[17] === tmp20) {
+                    tmp22 = cResult[18];
                   }
+                  if (cResult[19] === tmp5.primaryButtons) {
+                    let tmp25;
+                    if (cResult[20] === tmp22) {
+                      tmp25 = cResult[21];
+                    }
+                    if (cResult[22] === markAsDismissed) {
+                      let tmp28;
+                      if (cResult[23] === tmp8) {
+                        tmp28 = cResult[24];
+                      }
+                      if (cResult[25] === markAsDismissed) {
+                        if (cResult[26] === tmp12) {
+                          let tmp31;
+                          if (cResult[27] === tmp9) {
+                            tmp31 = cResult[28];
+                          }
+                          if (cResult[29] === markAsDismissed) {
+                            let tmp34;
+                            if (cResult[30] === tmp10) {
+                              tmp34 = cResult[31];
+                            }
+                            if (cResult[32] === tmp31) {
+                              if (cResult[33] === tmp34) {
+                                if (cResult[34] === tmp25) {
+                                  let tmp37;
+                                  if (cResult[35] === tmp28) {
+                                    tmp37 = cResult[36];
+                                  }
+                                  return tmp37;
+                                }
+                              }
+                            }
+                            const obj5 = { children: items };
+                            items = [tmp25, tmp28, tmp31, tmp34];
+                            const tmp40 = closure_15(closure_16, obj5);
+                            cResult[32] = tmp31;
+                            cResult[33] = tmp34;
+                            cResult[34] = tmp25;
+                            cResult[35] = tmp28;
+                            cResult[36] = tmp40;
+                            tmp37 = tmp40;
+                          }
+                          const obj6 = { targetRef: ref, visible: tmp10, markAsDismissed };
+                          const tmp36 = closure_14(tmp4(trackUserProfileAction[33]), obj6);
+                          cResult[29] = markAsDismissed;
+                          cResult[30] = tmp10;
+                          cResult[31] = tmp36;
+                          tmp34 = tmp36;
+                        }
+                      }
+                      const obj7 = { targetRef: ref, visible: tmp9, markAsDismissed, onTryItOut: tmp12 };
+                      const tmp33 = closure_14(tmp4(trackUserProfileAction[32]), obj7);
+                      cResult[25] = markAsDismissed;
+                      cResult[26] = tmp12;
+                      cResult[27] = tmp9;
+                      cResult[28] = tmp33;
+                      tmp31 = tmp33;
+                    }
+                    const obj8 = { targetRef: ref, visible: tmp8, markAsDismissed };
+                    const tmp30 = closure_14(tmp4(trackUserProfileAction[31]), obj8);
+                    cResult[22] = markAsDismissed;
+                    cResult[23] = tmp8;
+                    cResult[24] = tmp30;
+                    tmp28 = tmp30;
+                  }
+                  const obj9 = { style: tmp13, secondaryButton: tmp22 };
+                  const tmp27 = closure_14(tmp4(trackUserProfileAction[30]), obj9);
+                  cResult[19] = tmp5.primaryButtons;
+                  cResult[20] = tmp22;
+                  cResult[21] = tmp27;
+                  tmp25 = tmp27;
                 }
               }
-              if (cResult[15] === tmp10) {
-                class A {
-                  constructor() {
-                    navigateToProfileCustomization(constants.BADGES);
-                  }
-                }
-              }
-              const obj5 = { ref, variant: "primary", icon: tmp12, text: tmp18, onPress: tmp10, accessibilityValue: tmp20, grow: true };
-              cResult[15] = tmp10;
-              cResult[16] = tmp12;
+              const obj10 = { ref, variant: "primary", icon: tmp14, text: tmp18, onPress: tmp11, accessibilityValue: tmp20, grow: true };
+              const tmp24 = closure_14(navigateToProfileCustomization(trackUserProfileAction[29]).Button, obj10);
+              cResult[15] = tmp11;
+              cResult[16] = tmp14;
               cResult[17] = tmp20;
-              cResult[18] = closure_14(navigateToProfileCustomization(trackUserProfileAction[29]).Button, obj5);
-              const tmp25 = closure_14(navigateToProfileCustomization(trackUserProfileAction[29]).Button, obj5);
+              cResult[18] = tmp24;
+              tmp22 = tmp24;
             }
             if (isProfileLoaded) {
-              class A {
-                constructor() {
-                  navigateToProfileCustomization(constants.BADGES);
-                }
-              }
-              tmp16[1] = token;
-              tmp13Result = tmp13(tmp(tmp2[26]).PencilIcon, tmp16);
+              const obj11 = { size: "sm", color: token };
+              tmp15Result = tmp15(tmp(tmp2[26]).PencilIcon, obj11);
             } else {
-              class A {
-                constructor() {
-                  navigateToProfileCustomization(constants.BADGES);
-                }
-              }
-              tmp14[1] = token;
-              tmp13Result = tmp13(tmp(tmp2[27]).ActivityIndicator, tmp14);
+              const obj12 = { size: "small", color: token, accessible: false };
+              tmp15Result = tmp15(tmp(tmp2[27]).ActivityIndicator, obj12);
             }
             cResult[9] = token;
             cResult[10] = isProfileLoaded;
-            cResult[11] = tmp13Result;
+            cResult[11] = tmp15Result;
+            tmp14 = tmp15Result;
           }
         }
       }
@@ -434,13 +478,13 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToProf
   };
   cResult[0] = markAsDismissed;
   cResult[1] = navigateToProfileCustomization;
-  cResult[2] = tmp8;
-  cResult[3] = tmp9;
-  cResult[4] = tmp7;
+  cResult[2] = tmp9;
+  cResult[3] = tmp10;
+  cResult[4] = tmp8;
   cResult[5] = trackUserProfileAction;
   cResult[6] = fn;
-  tmp10 = fn;
-}) : ((navigateToProfileCustomization) => {
+  tmp11 = fn;
+}) : (function EditSection(navigateToProfileCustomization) {
   let Button;
   let closure_4;
   let intl;
@@ -509,7 +553,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToProf
   return tmp12(tmp13, obj8);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreenPrimaryInfoSection(arg0) {
   let canSet;
   let entryPoint;
   let entryPointRef;
@@ -611,7 +655,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                       }
                                       const obj5 = { style: tmp30, children: items };
                                       items = [tmp31, tmp38, tmp42];
-                                      const tmp49 = closure_15(metroRequire, obj5);
+                                      const tmp49 = authStore3(metroRequire, obj5);
                                       cResult[31] = tmp30;
                                       cResult[32] = tmp31;
                                       cResult[33] = tmp38;
@@ -636,7 +680,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         let tmp40 = null != badgeDirectoryNuxCoachmarkVariant.variantProps;
                         if (tmp40) {
                           const obj7 = { targetRef: entryPointRef, userId: id, variantProps: badgeDirectoryNuxCoachmarkVariant.variantProps, visible: tmp28, markAsDismissed: tmp27 };
-                          tmp40 = authStore2(tmp4(12908), obj7);
+                          tmp40 = authStore2(tmp4(13057), obj7);
                         }
                         cResult[20] = badgeDirectoryNuxCoachmarkVariant.variantProps;
                         cResult[21] = entryPointRef;
@@ -699,7 +743,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[11] = tmp9;
   cResult[12] = items2;
   tmp14 = items2;
-}) : ((navigateToProfileCustomization) => {
+}) : (function YouScreenPrimaryInfoSection(navigateToProfileCustomization) {
   let canSet;
   let entryPoint;
   let isProfileLoaded;
@@ -756,18 +800,18 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const merged = Object.assign(primaryInfoProps);
   items2 = [authStore2(tmpResult, obj6), , ];
   let tmp27Result = null != badgeDirectoryNuxCoachmarkVariant.variantProps;
-  const tmp25 = closure_15;
+  const tmp25 = authStore3;
   const tmp26 = metroRequire;
   if (tmp27Result) {
     const obj7 = { targetRef: entryPointRef, userId: id, variantProps: badgeDirectoryNuxCoachmarkVariant.variantProps, visible: tmp23, markAsDismissed: tmp22 };
-    tmp27Result = tmp27(tmp(12908), obj7);
+    tmp27Result = tmp27(tmp(13057), obj7);
   }
   items2[1] = tmp27Result;
   items2[2] = authStore2(closure_21, { navigateToProfileCustomization, isProfileLoaded, visibleContent: tmp21, markAsDismissed: tmp22 });
   return tmp25(tmp26, obj5);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreenUserProfileContent(user) {
   let avatarBackground;
   let backgroundColor;
   let closure_14;
@@ -808,7 +852,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     let items = [SelfPresenceStore];
     class S {
       constructor() {
-        return displayProfile.getStatus();
+        return closure_8.getStatus();
       }
     }
     cResult[0] = items;
@@ -829,7 +873,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     const theme = tmp16.theme;
     class S {
       constructor() {
-        return displayProfile.getStatus();
+        return closure_8.getStatus();
       }
     }
     const secondaryColor = tmp16.secondaryColor;
@@ -846,7 +890,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         const userProfileColors = tmpResult16.useUserProfileColors(tmp19);
         class S {
           constructor() {
-            return displayProfile.getStatus();
+            return closure_8.getStatus();
           }
         }
         UserProfileThemeTypes = tmp21;
@@ -857,24 +901,26 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         if (cResult[9] !== trackUserProfileAction) {
           class Z {
             constructor() {
-              trackUserProfileAction({ action: "PRESS_SET_STATUS" });
-              const obj = showYouAccountActionSheet;
-              const result = obj.showYouAccountActionSheet();
+              tmp = trackUserProfileAction({ action: "PRESS_SET_STATUS" });
+              obj = closure_0(closure_2[14]);
+              result = obj.showYouAccountActionSheet();
+              return;
             }
           }
           cResult[9] = trackUserProfileAction;
           class S {
             constructor() {
-              return displayProfile.getStatus();
+              return closure_8.getStatus();
             }
           }
           cResult[10] = Z;
         } else {
           class Z {
             constructor() {
-              trackUserProfileAction({ action: "PRESS_SET_STATUS" });
-              const obj = showYouAccountActionSheet;
-              const result = obj.showYouAccountActionSheet();
+              tmp = trackUserProfileAction({ action: "PRESS_SET_STATUS" });
+              obj = closure_0(closure_2[14]);
+              result = obj.showYouAccountActionSheet();
+              return;
             }
           }
         }
@@ -889,15 +935,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
           class Z {
             constructor() {
-              trackUserProfileAction({ action: "PRESS_SET_STATUS" });
-              const obj = showYouAccountActionSheet;
-              const result = obj.showYouAccountActionSheet();
+              tmp = trackUserProfileAction({ action: "PRESS_SET_STATUS" });
+              obj = closure_0(closure_2[14]);
+              result = obj.showYouAccountActionSheet();
+              return;
             }
           }
           let items1 = [customStatusActivity];
           class S {
             constructor() {
-              return displayProfile.getStatus();
+              return closure_8.getStatus();
             }
           }
           cResult[11] = items1;
@@ -905,24 +952,26 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         } else {
           class Z {
             constructor() {
-              trackUserProfileAction({ action: "PRESS_SET_STATUS" });
-              const obj = showYouAccountActionSheet;
-              const result = obj.showYouAccountActionSheet();
+              tmp = trackUserProfileAction({ action: "PRESS_SET_STATUS" });
+              obj = closure_0(closure_2[14]);
+              result = obj.showYouAccountActionSheet();
+              return;
             }
           }
         }
         if (cResult[12] !== user.id) {
           class Z {
             constructor() {
-              trackUserProfileAction({ action: "PRESS_SET_STATUS" });
-              const obj = showYouAccountActionSheet;
-              const result = obj.showYouAccountActionSheet();
+              tmp = trackUserProfileAction({ action: "PRESS_SET_STATUS" });
+              obj = closure_0(closure_2[14]);
+              result = obj.showYouAccountActionSheet();
+              return;
             }
           }
           cResult[12] = user.id;
           class S {
             constructor() {
-              return displayProfile.getStatus();
+              return closure_8.getStatus();
             }
           }
           cResult[13] = tmp29;
@@ -930,9 +979,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         } else {
           class Z {
             constructor() {
-              trackUserProfileAction({ action: "PRESS_SET_STATUS" });
-              const obj = showYouAccountActionSheet;
-              const result = obj.showYouAccountActionSheet();
+              tmp = trackUserProfileAction({ action: "PRESS_SET_STATUS" });
+              obj = closure_0(closure_2[14]);
+              result = obj.showYouAccountActionSheet();
+              return;
             }
           }
         }
@@ -953,24 +1003,26 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         if (null != initialTab) {
           class Z {
             constructor() {
-              trackUserProfileAction({ action: "PRESS_SET_STATUS" });
-              const obj = showYouAccountActionSheet;
-              const result = obj.showYouAccountActionSheet();
+              tmp = trackUserProfileAction({ action: "PRESS_SET_STATUS" });
+              obj = closure_0(closure_2[14]);
+              result = obj.showYouAccountActionSheet();
+              return;
             }
           }
           let obj2 = { wishlistTabIndex, boardTabIndex: null, activityTabIndex };
           class S {
             constructor() {
-              return displayProfile.getStatus();
+              return closure_8.getStatus();
             }
           }
           MAIN = initialTab;
           if (obj17.getProfileTabSectionIndex(initialTab, obj2) < 0) {
             class Z {
               constructor() {
-                trackUserProfileAction({ action: "PRESS_SET_STATUS" });
-                const obj = showYouAccountActionSheet;
-                const result = obj.showYouAccountActionSheet();
+                tmp = trackUserProfileAction({ action: "PRESS_SET_STATUS" });
+                obj = closure_0(closure_2[14]);
+                result = obj.showYouAccountActionSheet();
+                return;
               }
             }
             MAIN = UserProfileSections.MAIN;
@@ -983,23 +1035,25 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
           class Z {
             constructor() {
-              trackUserProfileAction({ action: "PRESS_SET_STATUS" });
-              const obj = showYouAccountActionSheet;
-              const result = obj.showYouAccountActionSheet();
+              tmp = trackUserProfileAction({ action: "PRESS_SET_STATUS" });
+              obj = closure_0(closure_2[14]);
+              result = obj.showYouAccountActionSheet();
+              return;
             }
           }
           cResult[14] = tmp36;
           class S {
             constructor() {
-              return displayProfile.getStatus();
+              return closure_8.getStatus();
             }
           }
         } else {
           class Z {
             constructor() {
-              trackUserProfileAction({ action: "PRESS_SET_STATUS" });
-              const obj = showYouAccountActionSheet;
-              const result = obj.showYouAccountActionSheet();
+              tmp = trackUserProfileAction({ action: "PRESS_SET_STATUS" });
+              obj = closure_0(closure_2[14]);
+              result = obj.showYouAccountActionSheet();
+              return;
             }
           }
         }
@@ -1009,24 +1063,30 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         if (cResult[15] === initialTab) {
           class Z {
             constructor() {
-              trackUserProfileAction({ action: "PRESS_SET_STATUS" });
-              const obj = showYouAccountActionSheet;
-              const result = obj.showYouAccountActionSheet();
+              tmp = trackUserProfileAction({ action: "PRESS_SET_STATUS" });
+              obj = closure_0(closure_2[14]);
+              result = obj.showYouAccountActionSheet();
+              return;
             }
           }
         }
-        function _e(section) {
-          const obj = { action: "PRESS_SECTION", section };
-          trackUserProfileAction(obj);
-          if (section !== initialTab) {
-            const obj2 = { initialTab: section };
-            navigation.setParams(obj2);
+        class Ae {
+          constructor(arg0) {
+            obj = { action: "PRESS_SECTION", section: user };
+            tmp = trackUserProfileAction(obj);
+            if (user !== initialTab) {
+              tmp2 = closure_6;
+              obj1 = { initialTab: null };
+              obj1.initialTab = user;
+              setParamsResult = closure_6.setParams(obj1);
+            }
+            return;
           }
         }
         cResult[15] = initialTab;
         cResult[16] = navigation;
         cResult[17] = trackUserProfileAction;
-        cResult[18] = _e;
+        cResult[18] = Ae;
       }
     }
     let obj3 = { theme, primaryColor: tmp17, secondaryColor };
@@ -1041,7 +1101,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[3] = user;
   cResult[4] = obj4;
   tmp15 = obj4;
-}) : ((user) => {
+}) : (function YouScreenUserProfileContent(user) {
   let LayerScope;
   let Tabs;
   let activeProfileTabSectionIndex;
@@ -1217,12 +1277,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     const obj3 = { navigateToPremium, style: items };
     items2[0] = authStore2(YouExpiringTrialOfferCardDefault, obj3);
     let tmp3Result = !shouldShowExpiringTrialOfferCard;
-    const tmp = closure_15;
+    const tmp = authStore3;
     const tmp2 = metroRequire;
     const tmp6 = navigateToPremium;
     if (tmp3Result) {
       const obj4 = { navigateToPremium: tmp6, navigateToShop, hasCustomProfileTheme };
-      tmp3Result = tmp3(tmp4(12949), obj4);
+      tmp3Result = tmp3(tmp4(13228), obj4);
     }
     items2[1] = tmp3Result;
     items2[2] = enabled && authStore2(BalanceWidgetMenuDefault, {});
@@ -1250,7 +1310,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     let tmp4Result;
     let tmp8;
     const obj = { style: closure_5.profileContent, children: items };
-    const tmp = closure_15;
+    const tmp = authStore3;
     const tmp2 = metroRequire;
     if (null == stateFromStores1) {
       tmp4Result = authStore2(UserProfileWishlistGrid.WishlistEmptyState, {});

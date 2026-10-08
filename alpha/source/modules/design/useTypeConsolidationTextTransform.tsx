@@ -1,12 +1,12 @@
-// Module ID: 6476
-// Function ID: 6477
+// Module ID: 6654
+// Function ID: 6655
 // Name: useTypeConsolidationTextTransform
-// Dependencies: [558, 6477, 576, 2]
+// Dependencies: [558, 6655, 576, 2]
 // Exports: useTypeConsolidationTextTransform
 
-// Module 6476 (useTypeConsolidationTextTransform)
+// Module 6654 (useTypeConsolidationTextTransform)
 import react from "react" /* 576 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6477 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6655 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const style = { textTransform: "none" };
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, variant) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTypeConsolidationEyebrow(arg0, variant) {
   let obj4;
   const obj = react;
   const cResult = obj.c(3);
@@ -37,7 +37,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, variant) => {
   cResult[1] = manaTypeConsolidationExperiment;
   cResult[2] = obj4;
   tmp3 = obj4;
-}) : ((arg0, variant) => {
+}) : (function useTypeConsolidationEyebrow(arg0, variant) {
   let obj3;
   const obj = ManaTypeConsolidationExperiment;
   if (obj.useManaTypeConsolidationExperiment(arg0)) {
@@ -48,15 +48,15 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, variant) => {
   }
   return obj3;
 });
-const fn = (arg0) => {
+function useTypeConsolidationTextTransform(AcceptGuildTemplate) {
   let tmp;
   const obj = ManaTypeConsolidationExperiment;
-  if (obj.useManaTypeConsolidationExperiment(arg0)) {
+  if (obj.useManaTypeConsolidationExperiment(AcceptGuildTemplate)) {
     tmp = style;
   }
   return tmp;
-};
+}
 const result1 = size.fileFinishedImporting("modules/design/useTypeConsolidationTextTransform.tsx");
 
-export const useTypeConsolidationTextTransform = fn;
+export { useTypeConsolidationTextTransform };
 export const useTypeConsolidationEyebrow = tmp3;

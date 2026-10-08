@@ -1,50 +1,58 @@
 // Module ID: 1800
 // Function ID: 1801
-// Dependencies: [1748, 1788, 1790]
-// Exports: useComposedEventHandler
+// Dependencies: [19, 1685, 1680, 1666, 1801, 1658]
+// Exports: useHandler
 
 // Module 1800
-let set, workletEventHandler;
+import _mod1658 from "module_1658" /* 1658 */;
+import LayoutAnimationType from "LayoutAnimationType" /* 1680 */;
+import _mod1685 from "module_1685" /* 1685 */;
+import _mod1801 from "module_1801" /* 1801 */;
+import react from "react" /* 19 */;
 
-let closure_2 = { code: "function pnpm_useComposedEventHandlerTs1(event){const{workletsMap}=this.__closure;if(workletsMap[event.eventName]){workletsMap[event.eventName].forEach(function(worklet){return worklet(event);});}}" };
+let c2;
+let c3;
+({ useEffect: c2, useRef: c3 } = react);
 
-export const useComposedEventHandler = function useComposedEventHandler(tmp8Result4) {
-  const obj = {};
-  set = new Set();
-  const obj2 = {};
-  const found = tmp8Result4.filter((item) => null !== item);
-  let item = found.forEach((workletEventHandler) => {
-    workletEventHandler = workletEventHandler.workletEventHandler;
-    if (workletEventHandler instanceof obj(set[0]).WorkletEventHandler) {
-      const eventNames = workletEventHandler.eventNames;
-      const item = eventNames.forEach((item) => {
-        let tmp3;
-        set.add(item);
-        if (obj2[item]) {
-          const arr2 = obj2[item];
-          arr2.push(workletEventHandler.worklet);
-          tmp3 = workletEventHandler;
-        } else {
-          tmp3 = workletEventHandler;
-          const items = [workletEventHandler.worklet];
-          obj2[item] = items;
-        }
-        obj[item + "" + obj2[item].length] = tmp3.worklet;
-      });
+export const useHandler = function useHandler(memoizedGestureCallbacks, items10) {
+  let context;
+  let isWebResult;
+  let obj;
+  let savedDependencies;
+  const tmp = _false(null);
+  let closure_0 = tmp;
+  if (null === tmp.current) {
+    const obj2 = { context: obj.makeShareable({}), savedDependencies: [] };
+    tmp.current = obj2;
+    obj = _mod1685;
+  }
+  React2(() => () => {
+    closure_1_0.current = null;
+  }, []);
+  ({ context, savedDependencies } = tmp.current);
+  for (const key10024 in memoizedGestureCallbacks) {
+    let tmp12 = require;
+    let obj8 = LayoutAnimationType;
+    if (obj8.isWorkletFunction(memoizedGestureCallbacks[key10024])) {
+      continue;
+    } else {
+      let self = this;
+      let str = "Passed a function that is not a worklet. Please provide a worklet function.";
+      let self2 = this;
+      let reanimatedError = new tmp12(1666).ReanimatedError("Passed a function that is not a worklet. Please provide a worklet function.");
+      throw reanimatedError;
     }
-  });
-  const obj3 = obj(set[1]);
-  const doDependenciesDiffer = obj3.useHandler(obj).doDependenciesDiffer;
-  const fn = function v(arg0) {
-    let closure_0 = arg0;
-    if (obj2[arg0.eventName]) {
-      const arr = tmp[arg0.eventName];
-      const item = arr.forEach((fn) => fn(closure_0));
-    }
-  };
-  fn.__closure = { workletsMap: obj2 };
-  fn.__workletHash = 14960316830945;
-  fn.__initData = obj2;
-  const obj4 = obj(set[2]);
-  return obj4.useEvent(fn, Array.from(set), doDependenciesDiffer);
+  }
+  const obj3 = _mod1801;
+  const dependencies = obj3.buildDependencies(items10, memoizedGestureCallbacks);
+  tmp.current.savedDependencies = dependencies;
+  const obj4 = _mod1801;
+  const obj5 = { context, doDependenciesDiffer: !obj4.areDependenciesEqual(dependencies, savedDependencies), useWeb: isWebResult };
+  const obj6 = _mod1658;
+  isWebResult = obj6.isWeb();
+  if (!isWebResult) {
+    const tmp7Result = _mod1658;
+    isWebResult = tmp7Result.isJest();
+  }
+  return obj5;
 };

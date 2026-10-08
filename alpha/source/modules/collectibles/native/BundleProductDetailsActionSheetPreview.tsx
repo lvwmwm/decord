@@ -1,24 +1,22 @@
-// Module ID: 12988
-// Function ID: 12989
+// Module ID: 13266
+// Function ID: 13267
 // Name: BundleProductDetailsActionSheetPreview
-// Dependencies: [32, 19, 17, 1087, 21, 4896, 587, 558, 576, 12989, 6147, 1126, 7853, 7078, 12990, 4892, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 5090, 587, 558, 576, 13267, 6326, 1126, 8271, 7264, 13268, 5086, 2]
 
-// Module 12988 (BundleProductDetailsActionSheetPreview)
+// Module 13266 (BundleProductDetailsActionSheetPreview)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import intl2 from "intl" /* 1126 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6147 */;
-import useShopProductItems from "useShopProductItems" /* 7853 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6326 */;
+import useShopProductItems from "useShopProductItems" /* 8271 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let activeIndex;
 
 let c10;
 let c9;
@@ -37,9 +35,9 @@ let obj5;
 let rect;
 let size;
 let tmp;
-const Text_Text = tmp(4892);
-const CollectiblesUtils = tmp(7078);
-const IndividualProductPreview = tmp(12990);
+const Text_Text = tmp(5086);
+const CollectiblesUtils = tmp(7264);
+const IndividualProductPreview = tmp(13268);
 ({ memo, useCallback: closure_4, useLayoutEffect: hasOwnProperty, useMemo: metroRequire, useState: metroImportDefault } = react);
 ({ Pressable: metroImportAll, ScrollView: c9, View: c10 } = react_native);
 const ShopCtaEnum = CollectiblesShopConstants.ShopCtaEnum;
@@ -55,7 +53,7 @@ obj4 = { paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.
 obj5 = { gap: nativeDefault.space.PX_8 };
 let closure_14 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onTrackPress) => {
+let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function BundleThumbnail(onTrackPress) {
   let index;
   let isSelected;
   let item;
@@ -153,7 +151,7 @@ let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onTrackPr
   cResult[3] = trackedSkuId;
   cResult[4] = fn;
   tmp3 = fn;
-}) : ((index) => {
+}) : (function BundleThumbnail(index) {
   let isSelected;
   let item;
   let items1;
@@ -188,7 +186,7 @@ let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onTrackPr
   return tmp3(tmp4, obj);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((activeIndex) => {
+let closure_16 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function BundleThumbnailRow(activeIndex) {
   let bundledProducts;
   let first;
   let items;
@@ -276,45 +274,39 @@ let closure_16 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((activeInd
       }
     }
   }
-  class P {
-    constructor(arg0, arg1) {
-      obj = { item: activeIndex, index: arg1, isSelected: arg1 === activeIndex, setSelected: onSelect, label: null, trackedSkuId: null, onTrackPress: null };
-      tmp3 = bundledProducts;
-      name = undefined;
-      tmp = jsx;
-      tmp2 = closure_15;
-      if (bundledProducts != null) {
-        tmp5 = tmp3[arg1];
-        if (tmp5 != null) {
-          name = tmp5.name;
-        }
+  const fn = function f(item, index) {
+    let name;
+    let skuId;
+    const obj = { item, index, isSelected: index === activeIndex, setSelected: onSelect, label: name, trackedSkuId: skuId, onTrackPress };
+    name = undefined;
+    const tmp = closure_12;
+    const tmp2 = closure_15;
+    if (bundledProducts != null) {
+      if (bundledProducts[index] != null) {
+        name = tmp5.name;
       }
-      if (name == null) {
-        name = activeIndex.skuId;
-      }
-      obj.label = name;
-      skuId = undefined;
-      if (tmp3 != null) {
-        tmp7 = tmp3[arg1];
-        if (tmp7 != null) {
-          skuId = tmp7.skuId;
-        }
-      }
-      if (skuId == null) {
-        skuId = activeIndex.skuId;
-      }
-      obj.trackedSkuId = skuId;
-      obj.onTrackPress = onTrackPress;
-      return tmp(tmp2, obj, activeIndex.skuId);
     }
-  }
+    if (name == null) {
+      name = item.skuId;
+    }
+    skuId = undefined;
+    if (bundledProducts != null) {
+      if (bundledProducts[index] != null) {
+        skuId = tmp7.skuId;
+      }
+    }
+    if (skuId == null) {
+      skuId = item.skuId;
+    }
+    return tmp(tmp2, obj, item.skuId);
+  };
   cResult[8] = activeIndex;
   cResult[9] = bundledProducts;
   cResult[10] = onSelect;
   cResult[11] = onTrackPress;
-  cResult[12] = P;
-  tmp10 = P;
-}) : ((arg0) => {
+  cResult[12] = fn;
+  tmp10 = fn;
+}) : (function BundleThumbnailRow(arg0) {
   let intl;
   let items;
   let obj3;
@@ -363,7 +355,7 @@ let closure_16 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((activeInd
   return closure_12(GestureDetector, obj2);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BundleProductDetailsActionSheetPreview(arg0) {
   let bundleContainer;
   let bundleInfoContainer;
   let bundledProducts;
@@ -643,7 +635,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = items7;
   tmp15 = items7;
   tmp14 = L;
-}) : ((arg0) => {
+}) : (function BundleProductDetailsActionSheetPreview(arg0) {
   let bundledProducts;
   let firstAvatarDecoration;
   let firstProfileEffect;
@@ -716,7 +708,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj5 = { variant: "heading-xl/bold", children: product.name };
   items4[0] = closure_12(Text_Text.Text, obj5);
   const obj6 = { variant: "text-sm/medium", color: "text-default", children: intl.formatToPlainString(intl2.t["/0Yndu"], obj7) };
-  const Text = tmp7(4892).Text;
+  const Text = tmp7(5086).Text;
   intl = tmp7(1126).intl;
   obj7 = { num: items.length };
   items4[1] = closure_12(Text, obj6);
@@ -725,12 +717,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items6 = [closure_12(closure_16, { items, bundledProducts, activeIndex: num, onSelect: tmp3, onTrackPress }), ];
   const items7 = [name, ];
   let tmp20Result = null != collectibleTypeLabel;
-  const Text2 = tmp7(4892).Text;
+  const Text2 = tmp7(5086).Text;
   const tmp20 = closure_12;
   if (tmp20Result) {
     const _HermesInternal = HermesInternal;
     const obj9 = { variant: "text-sm/medium", color: "text-muted", children: " - " + collectibleTypeLabel };
-    const Text3 = tmp7(4892).Text;
+    const Text3 = tmp7(5086).Text;
     tmp20Result = tmp20(Text3, obj9);
   }
   items7[1] = tmp20Result;

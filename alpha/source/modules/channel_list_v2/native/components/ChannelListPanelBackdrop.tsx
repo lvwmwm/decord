@@ -1,19 +1,19 @@
-// Module ID: 16066
-// Function ID: 16067
+// Module ID: 16326
+// Function ID: 16327
 // Name: ChannelListPanelBackdrop
-// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 15988, 1618, 14908, 16067, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 587, 558, 576, 16248, 1630, 15170, 16327, 2]
 
-// Module 16066 (ChannelListPanelBackdrop)
+// Module 16326 (ChannelListPanelBackdrop)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import QuestHooks from "QuestHooks" /* 14908 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 15988 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import QuestHooks from "QuestHooks" /* 15170 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16248 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ obj2 = { backgroundColor: nativeDefault.colors.PANEL_BG };
 createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_8 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelListPanelBackdrop(arg0) {
   let children;
   let contentInset;
   let items;
@@ -168,7 +168,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = num4;
   cResult[4] = obj8;
   tmp9 = obj8;
-}) : ((style) => {
+}) : (function ChannelListPanelBackdrop(style) {
   let ScreenAlignedThemedGradientSliding;
   let items1;
   style = style.style;

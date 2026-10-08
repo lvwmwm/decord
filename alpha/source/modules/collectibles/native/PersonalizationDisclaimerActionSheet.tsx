@@ -1,18 +1,18 @@
-// Module ID: 15776
-// Function ID: 15777
+// Module ID: 16034
+// Function ID: 16035
 // Name: PersonalizationDisclaimerActionSheet
-// Dependencies: [19, 1085, 21, 4896, 587, 558, 576, 4571, 2115, 1126, 4892, 5601, 8296, 5599, 4860, 6652, 2]
+// Dependencies: [19, 1085, 21, 5090, 587, 558, 576, 4763, 2127, 1126, 5086, 5375, 7679, 5963, 5054, 6829, 2]
 
-// Module 15776 (PersonalizationDisclaimerActionSheet)
+// Module 16034 (PersonalizationDisclaimerActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import LinkingDefault from "Linking" /* 4571 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
+import LinkingDefault from "Linking" /* 4763 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,11 +24,11 @@ let obj2;
 let obj3;
 let tmp;
 const intl4 = tmp(1126);
-const Text_Text = tmp(4892);
-const ButtonGroup2 = tmp(5599);
-const components_Button_Button = tmp(5601);
-const Sheet_BottomSheet = tmp(6652);
-const LinkExternalSmallIcon2 = tmp(8296);
+const Text_Text = tmp(5086);
+const components_Button_Button = tmp(5375);
+const ButtonGroup2 = tmp(5963);
+const Sheet_BottomSheet = tmp(6829);
+const LinkExternalSmallIcon2 = tmp(7679);
 const HelpdeskArticles = Constants.HelpdeskArticles;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -37,7 +37,7 @@ obj2 = { paddingHorizontal: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
 obj3 = { paddingVertical: nativeDefault.space.PX_8, alignSelf: "center", textAlign: "center" };
 let closure_7 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PersonalizationDisclaimerActionSheet() {
   let LinkExternalSmallIcon;
   let container;
   let first;
@@ -139,7 +139,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[8] = tmp8;
   cResult[9] = tmp22;
   tmp21 = tmp22;
-}) : (() => {
+}) : (function PersonalizationDisclaimerActionSheet() {
   let LinkExternalSmallIcon;
   let intl;
   let intl2;

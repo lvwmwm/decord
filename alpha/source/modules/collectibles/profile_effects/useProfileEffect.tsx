@@ -1,14 +1,14 @@
-// Module ID: 7909
-// Function ID: 7910
+// Module ID: 8328
+// Function ID: 8329
 // Name: useProfileEffect
-// Dependencies: [19, 7066, 7081, 7072, 558, 576, 504, 7065, 2]
+// Dependencies: [19, 7252, 7267, 7258, 558, 576, 504, 7251, 2]
 
-// Module 7909 (useProfileEffect)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7065 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7072 */;
+// Module 8328 (useProfileEffect)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7251 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7258 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7066 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7081 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7252 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7267 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 const isProfileEffectRecord = ProfileEffectRecord.isProfileEffectRecord;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileEffect(arg0) {
   let closure_0;
   let closure_1;
   let first;
@@ -34,7 +34,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function f() {
+    const fn = function o() {
       if (null != closure_0) {
         const product = CollectiblesCategoryStore.getProduct(tmp);
         let first;
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = items1;
   tmp11 = items1;
   tmp10 = fn2;
-}) : ((arg0) => {
+}) : (function useProfileEffect(arg0) {
   let closure_0;
   let closure_1;
   _require = arg0;

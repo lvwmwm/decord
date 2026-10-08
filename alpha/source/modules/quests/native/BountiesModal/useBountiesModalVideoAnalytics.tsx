@@ -1,22 +1,22 @@
-// Module ID: 14847
-// Function ID: 14848
+// Module ID: 15108
+// Function ID: 15109
 // Name: useBountiesModalVideoAnalytics
-// Dependencies: [5, 32, 19, 4945, 1085, 10929, 1266, 7231, 7225, 5635, 14848, 7215, 5637, 7174, 1369, 7206, 10953, 14839, 14849, 5416, 5421, 2]
+// Dependencies: [5, 32, 19, 5280, 1085, 10580, 1278, 7410, 7404, 5982, 15109, 7395, 5984, 7353, 1381, 7386, 10604, 15100, 15110, 5725, 5730, 2]
 // Exports: useBountiesModalVideoAnalytics
 
-// Module 14847 (useBountiesModalVideoAnalytics)
+// Module 15108 (useBountiesModalVideoAnalytics)
 import Constants from "Constants" /* 1085 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5416 */;
-import MetricEvents from "MetricEvents" /* 5421 */;
-import AdCreativeType from "AdCreativeType" /* 5637 */;
-import AnalyticsActions from "AnalyticsActions" /* 7215 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 10953 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 14839 */;
-import AdsVideoUtils from "AdsVideoUtils" /* 14849 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5725 */;
+import MetricEvents from "MetricEvents" /* 5730 */;
+import AdCreativeType from "AdCreativeType" /* 5984 */;
+import AnalyticsActions from "AnalyticsActions" /* 7395 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 10604 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 15100 */;
+import AdsVideoUtils from "AdsVideoUtils" /* 15110 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NetworkStore from "NetworkStore" /* 4945 */;
+import NetworkStore from "NetworkStore" /* 5280 */;
 import size_mod from "module_2" /* 2 */;
 
 let c5, c6, closure_12, closure_3, set;
@@ -114,7 +114,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
         const current = ref.current;
         return current.getImpressionId();
       },
-      onEmit: function() {
+      onEmit() {
         return closure_0(...arguments);
       }
     };

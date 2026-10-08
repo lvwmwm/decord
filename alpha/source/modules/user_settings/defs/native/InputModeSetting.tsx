@@ -1,23 +1,23 @@
-// Module ID: 15081
-// Function ID: 15082
+// Module ID: 15343
+// Function ID: 15344
 // Name: InputModeSetting
-// Dependencies: [1999, 7645, 4921, 558, 576, 504, 1126, 11142, 9676, 2]
+// Dependencies: [2011, 7966, 5115, 558, 576, 504, 1126, 11262, 10865, 2]
 
-// Module 15081 (InputModeSetting)
+// Module 15343 (InputModeSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import Constants from "Constants" /* 4921 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import UserSettingsVoiceInputOptions from "UserSettingsVoiceInputOptions" /* 9676 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import Constants from "Constants" /* 5115 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import UserSettingsVoiceInputOptions from "UserSettingsVoiceInputOptions" /* 10865 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const InputModes = Constants.InputModes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInputModeSettingTrailing() {
   let mode;
   let tmp4;
   let tmp5;
@@ -54,7 +54,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[3];
   }
   return tmp8;
-}) : (() => {
+}) : (function useInputModeSettingTrailing() {
   let mode;
   let stringResult;
   const items = [MediaEngineStore];

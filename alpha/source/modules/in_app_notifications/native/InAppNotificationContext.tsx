@@ -1,15 +1,15 @@
-// Module ID: 12509
-// Function ID: 12510
+// Module ID: 12605
+// Function ID: 12606
 // Name: InAppNotificationContext
 // Dependencies: [19, 558, 2]
 
-// Module 12509 (InAppNotificationContext)
+// Module 12605 (InAppNotificationContext)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let context = react.createContext(undefined);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInAppNotificationContext() {
   context = react.useContext(context);
   if (null == context) {
     const _Error = Error;
@@ -20,7 +20,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   } else {
     return context;
   }
-}) : (function() {
+}) : (function useInAppNotificationContext() {
   context = react.useContext(context);
   if (null == context) {
     const _Error = Error;

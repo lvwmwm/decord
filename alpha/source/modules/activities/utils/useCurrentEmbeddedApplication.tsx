@@ -1,18 +1,18 @@
-// Module ID: 9166
-// Function ID: 9167
+// Module ID: 10732
+// Function ID: 10733
 // Name: useCurrentEmbeddedApplication
-// Dependencies: [32, 558, 576, 9167, 6670, 2]
+// Dependencies: [32, 558, 576, 10733, 6847, 2]
 
-// Module 9166 (useCurrentEmbeddedApplication)
+// Module 10732 (useCurrentEmbeddedApplication)
 import react from "react" /* 576 */;
-import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 9167 */;
+import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 10733 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp5;
-const useGetOrFetchApplicationsDefault = tmp5(6670);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const useGetOrFetchApplicationsDefault = tmp5(6847);
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentEmbeddedApplication(arg0) {
   let tmp3;
   let tmp7;
   const obj = react;
@@ -46,7 +46,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const first = _slicedToArray(useGetOrFetchApplicationsDefault(tmp7, tmp4), 1)[0];
   return first;
-}) : (() => {
+}) : (function useCurrentEmbeddedApplication() {
   let items;
   let obj = arg0;
   if (arg0 === undefined) {

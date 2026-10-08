@@ -1,28 +1,28 @@
-// Module ID: 11862
-// Function ID: 11863
+// Module ID: 12862
+// Function ID: 12863
 // Name: ScheduledMessagesIntro
-// Dependencies: [17, 21, 4896, 587, 558, 576, 11863, 1126, 4892, 10382, 11852, 10702, 2]
+// Dependencies: [17, 21, 5090, 587, 558, 576, 12166, 1126, 5086, 9979, 11936, 10290, 2]
 
-// Module 11862 (ScheduledMessagesIntro)
+// Module 12862 (ScheduledMessagesIntro)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import AttachmentIcon from "AttachmentIcon" /* 10382 */;
-import PlusLargeIcon2 from "PlusLargeIcon" /* 10702 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 11852 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11863 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import AttachmentIcon from "AttachmentIcon" /* 9979 */;
+import PlusLargeIcon2 from "PlusLargeIcon" /* 10290 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 11936 */;
+import ScheduleMessageSpotIllustration from "ScheduleMessageSpotIllustration" /* 12166 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 let hasOwnProperty;
-let metroImportDefault;
 let metroRequire;
+let obj10;
 let obj2;
 let obj3;
 let obj4;
@@ -32,26 +32,26 @@ let obj7;
 let obj8;
 let obj9;
 let size;
-let size1;
-({ Image: c3, ScrollView: closure_4, View: hasOwnProperty } = react_native);
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+({ ScrollView: c3, View: closure_4 } = react_native);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { scrollView: { flex: 1 }, pageContainer: obj2, container: { alignItems: "center" }, upsellImage: size, textContainer: obj3, text: { textAlign: "center" }, demo: obj4, menu: obj5, menuRow: obj6, menuRowHighlighted: obj7, menuDivider: obj8, chatInput: obj9, plusButton: size1 };
+let obj = { scrollView: { flex: 1 }, pageContainer: obj2, container: { alignItems: "center" }, upsellImage: obj3, textContainer: obj4, text: { textAlign: "center" }, demo: obj5, menu: obj6, menuRow: obj7, menuRowHighlighted: obj8, menuDivider: obj9, chatInput: obj10, plusButton: size };
 obj2 = { alignItems: "center", flexGrow: 1, justifyContent: "center", paddingBottom: nativeDefault.space.PX_32, paddingHorizontal: nativeDefault.space.PX_32 };
 createStyles = createStyles.createStyles;
-size = { height: 144, marginBottom: nativeDefault.space.PX_16, width: 180 };
-obj3 = { gap: nativeDefault.space.PX_8 };
-obj4 = { alignSelf: "stretch", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderColor: nativeDefault.colors.BORDER_NORMAL, borderRadius: nativeDefault.radii.md, borderWidth: 1, gap: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_24, overflow: "hidden", padding: nativeDefault.space.PX_12 };
-obj5 = { alignSelf: "flex-start", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
-obj6 = { alignItems: "center", flexDirection: "row", gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_12, paddingVertical: nativeDefault.space.PX_8 };
-obj7 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
-obj8 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, height: 1 };
-obj9 = { alignItems: "center", backgroundColor: nativeDefault.colors.CHAT_INPUT_BACKGROUND, borderRadius: nativeDefault.modules.mobile.CHAT_INPUT_BORDER_RADIUS, flexDirection: "row", gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_8 };
-size1 = { alignItems: "center", backgroundColor: nativeDefault.colors.CHAT_INPUT_ACTION_BUTTON_BACKGROUND, borderRadius: nativeDefault.radii.round, height: nativeDefault.modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE, justifyContent: "center", width: nativeDefault.modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE };
-let closure_8 = createStyles(obj);
+obj3 = { marginBottom: nativeDefault.space.PX_16 };
+obj4 = { gap: nativeDefault.space.PX_8 };
+obj5 = { alignSelf: "stretch", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderColor: nativeDefault.colors.BORDER_NORMAL, borderRadius: nativeDefault.radii.md, borderWidth: 1, gap: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_24, overflow: "hidden", padding: nativeDefault.space.PX_12 };
+obj6 = { alignSelf: "flex-start", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
+obj7 = { alignItems: "center", flexDirection: "row", gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_12, paddingVertical: nativeDefault.space.PX_8 };
+obj8 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
+obj9 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, height: 1 };
+obj10 = { alignItems: "center", backgroundColor: nativeDefault.colors.CHAT_INPUT_BACKGROUND, borderRadius: nativeDefault.modules.mobile.CHAT_INPUT_BORDER_RADIUS, flexDirection: "row", gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_8 };
+size = { alignItems: "center", backgroundColor: nativeDefault.colors.CHAT_INPUT_ACTION_BUTTON_BACKGROUND, borderRadius: nativeDefault.radii.round, height: nativeDefault.modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE, justifyContent: "center", width: nativeDefault.modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE };
+let closure_7 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledMessagesIntro() {
   let container;
+  let first;
   let intl3;
   let intl4;
   let intl5;
@@ -64,219 +64,226 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let scrollView;
   let text;
   let textContainer;
-  let tmp10;
   let tmp12;
-  let tmp15;
+  let tmp14;
   let tmp17;
-  let tmp5;
+  let tmp19;
+  let tmp8;
   const obj = react;
-  const cResult = obj.c(39);
-  const tmp4 = closure_8();
+  const cResult = obj.c(40);
+  const tmp4 = closure_7();
   ({ scrollView, pageContainer, container } = tmp4);
-  if (cResult[0] !== tmp4.upsellImage) {
-    const obj2 = { source: AssetRegistryDefault, style: tmp4.upsellImage };
-    const tmp9 = metroRequire(_false, obj2);
-    cResult[0] = tmp4.upsellImage;
-    cResult[1] = tmp9;
-    tmp5 = tmp9;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp7 = hasOwnProperty(ScheduleMessageSpotIllustration.ScheduleMessageSpotIllustration, { width: 180, height: 120, accessible: false });
+    cResult[0] = tmp7;
+    first = tmp7;
   } else {
-    tmp5 = cResult[1];
+    first = cResult[0];
+  }
+  if (cResult[1] !== tmp4.upsellImage) {
+    const obj2 = { style: tmp4.upsellImage, children: first };
+    const tmp11 = hasOwnProperty(React3, obj2);
+    cResult[1] = tmp4.upsellImage;
+    cResult[2] = tmp11;
+    tmp8 = tmp11;
+  } else {
+    tmp8 = cResult[2];
   }
   ({ textContainer, text } = tmp4);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
     const stringResult = intl.string(intl6.t["C/j9NE"]);
-    cResult[2] = stringResult;
-    tmp10 = stringResult;
+    cResult[3] = stringResult;
+    tmp12 = stringResult;
   } else {
-    tmp10 = cResult[2];
+    tmp12 = cResult[3];
   }
-  if (cResult[3] !== tmp4.text) {
-    const obj3 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: text, children: tmp10 };
-    const tmp14 = metroRequire(Text_Text.Heading, obj3);
-    cResult[3] = tmp4.text;
-    cResult[4] = tmp14;
-    tmp12 = tmp14;
+  if (cResult[4] !== tmp4.text) {
+    const obj3 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: text, children: tmp12 };
+    const tmp16 = hasOwnProperty(Text_Text.Heading, obj3);
+    cResult[4] = tmp4.text;
+    cResult[5] = tmp16;
+    tmp14 = tmp16;
   } else {
-    tmp12 = cResult[4];
+    tmp14 = cResult[5];
   }
   const text2 = tmp4.text;
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const intl2 = tmp(1126).intl;
     const formatResult = intl2.format(intl6.t.PqmI8J, {});
-    cResult[5] = formatResult;
-    tmp15 = formatResult;
+    cResult[6] = formatResult;
+    tmp17 = formatResult;
   } else {
-    tmp15 = cResult[5];
+    tmp17 = cResult[6];
   }
-  if (cResult[6] !== tmp4.text) {
-    const obj4 = { variant: "text-sm/medium", color: "text-default", style: text2, includeFontPadding: true, children: tmp15 };
-    const tmp19 = metroRequire(Text_Text.Text, obj4);
-    cResult[6] = tmp4.text;
-    cResult[7] = tmp19;
-    tmp17 = tmp19;
+  if (cResult[7] !== tmp4.text) {
+    const obj4 = { variant: "text-sm/medium", color: "text-default", style: text2, includeFontPadding: true, children: tmp17 };
+    const tmp21 = hasOwnProperty(Text_Text.Text, obj4);
+    cResult[7] = tmp4.text;
+    cResult[8] = tmp21;
+    tmp19 = tmp21;
   } else {
-    tmp17 = cResult[7];
+    tmp19 = cResult[8];
   }
-  if (cResult[8] === tmp4.textContainer) {
-    if (cResult[9] === tmp17) {
-      let tmp20;
+  if (cResult[9] === tmp4.textContainer) {
+    if (cResult[10] === tmp19) {
       let tmp22;
-      let tmp26;
-      let tmp30;
-      if (cResult[10] === tmp12) {
-        tmp20 = cResult[11];
-      }
-      const _Symbol = Symbol;
-      if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj5 = { icon: AttachmentIcon.AttachmentIcon, label: intl3.string(intl6.t["8Hvr3+"]), highlighted: false };
-        intl3 = tmp(1126).intl;
-        const tmp25 = metroRequire(closure_9, obj5);
-        cResult[12] = tmp25;
-        tmp22 = tmp25;
-      } else {
+      let tmp24;
+      let tmp28;
+      let tmp32;
+      if (cResult[11] === tmp14) {
         tmp22 = cResult[12];
       }
-      if (cResult[13] !== tmp4.menuDivider) {
-        const obj6 = { style: tmp4.menuDivider };
-        const tmp29 = metroRequire(hasOwnProperty, obj6);
-        cResult[13] = tmp4.menuDivider;
-        cResult[14] = tmp29;
-        tmp26 = tmp29;
+      const _Symbol = Symbol;
+      if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+        const obj5 = { icon: AttachmentIcon.AttachmentIcon, label: intl3.string(intl6.t["8Hvr3+"]), highlighted: false };
+        intl3 = tmp(1126).intl;
+        const tmp27 = hasOwnProperty(closure_8, obj5);
+        cResult[13] = tmp27;
+        tmp24 = tmp27;
       } else {
-        tmp26 = cResult[14];
+        tmp24 = cResult[13];
+      }
+      if (cResult[14] !== tmp4.menuDivider) {
+        const obj6 = { style: tmp4.menuDivider };
+        const tmp31 = hasOwnProperty(React3, obj6);
+        cResult[14] = tmp4.menuDivider;
+        cResult[15] = tmp31;
+        tmp28 = tmp31;
+      } else {
+        tmp28 = cResult[15];
       }
       const _Symbol2 = Symbol;
-      if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+      if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
         const obj7 = { icon: CalendarPlusIcon.CalendarPlusIcon, label: intl4.string(intl6.t["3+ii4F"]), highlighted: true };
         intl4 = tmp(1126).intl;
-        const tmp33 = metroRequire(closure_9, obj7);
-        cResult[15] = tmp33;
-        tmp30 = tmp33;
+        const tmp35 = hasOwnProperty(closure_8, obj7);
+        cResult[16] = tmp35;
+        tmp32 = tmp35;
       } else {
-        tmp30 = cResult[15];
+        tmp32 = cResult[16];
       }
-      if (cResult[16] === tmp4.menu) {
-        let tmp34;
-        let tmp38;
-        let tmp42;
-        let tmp46;
-        if (cResult[17] === tmp26) {
-          tmp34 = cResult[18];
+      if (cResult[17] === tmp4.menu) {
+        let tmp36;
+        let tmp40;
+        let tmp44;
+        let tmp48;
+        if (cResult[18] === tmp28) {
+          tmp36 = cResult[19];
         }
         const _Symbol3 = Symbol;
-        if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
+        if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
           const obj8 = { size: "xs", color: nativeDefault.colors.CHAT_INPUT_ACTION_BUTTON_ICON_DEFAULT_TINT };
-          const PlusLargeIcon = tmp(10702).PlusLargeIcon;
-          const tmp41 = metroRequire(PlusLargeIcon, obj8);
-          cResult[19] = tmp41;
-          tmp38 = tmp41;
+          const PlusLargeIcon = tmp(10290).PlusLargeIcon;
+          const tmp43 = hasOwnProperty(PlusLargeIcon, obj8);
+          cResult[20] = tmp43;
+          tmp40 = tmp43;
         } else {
-          tmp38 = cResult[19];
+          tmp40 = cResult[20];
         }
-        if (cResult[20] !== tmp4.plusButton) {
-          const obj9 = { style: tmp4.plusButton, children: tmp38 };
-          const tmp45 = metroRequire(hasOwnProperty, obj9);
-          cResult[20] = tmp4.plusButton;
-          cResult[21] = tmp45;
-          tmp42 = tmp45;
+        if (cResult[21] !== tmp4.plusButton) {
+          const obj9 = { style: tmp4.plusButton, children: tmp40 };
+          const tmp47 = hasOwnProperty(React3, obj9);
+          cResult[21] = tmp4.plusButton;
+          cResult[22] = tmp47;
+          tmp44 = tmp47;
         } else {
-          tmp42 = cResult[21];
+          tmp44 = cResult[22];
         }
         const _Symbol4 = Symbol;
-        if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
+        if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
           const obj10 = { variant: "text-sm/normal", color: "text-muted", children: intl5.string(intl6.t.fxxYiB) };
-          const Text = tmp(4892).Text;
+          const Text = tmp(5086).Text;
           intl5 = tmp(1126).intl;
-          const tmp48 = metroRequire(Text, obj10);
-          cResult[22] = tmp48;
-          tmp46 = tmp48;
+          const tmp50 = hasOwnProperty(Text, obj10);
+          cResult[23] = tmp50;
+          tmp48 = tmp50;
         } else {
-          tmp46 = cResult[22];
+          tmp48 = cResult[23];
         }
-        if (cResult[23] === tmp4.chatInput) {
-          let tmp49;
-          if (cResult[24] === tmp42) {
-            tmp49 = cResult[25];
+        if (cResult[24] === tmp4.chatInput) {
+          let tmp51;
+          if (cResult[25] === tmp44) {
+            tmp51 = cResult[26];
           }
-          if (cResult[26] === tmp4.demo) {
-            if (cResult[27] === tmp34) {
-              let tmp53;
-              if (cResult[28] === tmp49) {
-                tmp53 = cResult[29];
+          if (cResult[27] === tmp4.demo) {
+            if (cResult[28] === tmp36) {
+              let tmp55;
+              if (cResult[29] === tmp51) {
+                tmp55 = cResult[30];
               }
-              if (cResult[30] === tmp4.container) {
-                if (cResult[31] === tmp20) {
-                  if (cResult[32] === tmp53) {
-                    let tmp57;
-                    if (cResult[33] === tmp5) {
-                      tmp57 = cResult[34];
+              if (cResult[31] === tmp4.container) {
+                if (cResult[32] === tmp22) {
+                  if (cResult[33] === tmp55) {
+                    let tmp59;
+                    if (cResult[34] === tmp8) {
+                      tmp59 = cResult[35];
                     }
-                    if (cResult[35] === tmp4.pageContainer) {
-                      if (cResult[36] === tmp4.scrollView) {
-                        let tmp61;
-                        if (cResult[37] === tmp57) {
-                          tmp61 = cResult[38];
+                    if (cResult[36] === tmp4.pageContainer) {
+                      if (cResult[37] === tmp4.scrollView) {
+                        let tmp63;
+                        if (cResult[38] === tmp59) {
+                          tmp63 = cResult[39];
                         }
-                        return tmp61;
+                        return tmp63;
                       }
                     }
-                    const obj11 = { style: scrollView, contentContainerStyle: pageContainer, children: tmp57 };
-                    const tmp64 = metroRequire(React3, obj11);
-                    cResult[35] = tmp4.pageContainer;
-                    cResult[36] = tmp4.scrollView;
-                    cResult[37] = tmp57;
-                    cResult[38] = tmp64;
-                    tmp61 = tmp64;
+                    const obj11 = { style: scrollView, contentContainerStyle: pageContainer, children: tmp59 };
+                    const tmp66 = hasOwnProperty(_false, obj11);
+                    cResult[36] = tmp4.pageContainer;
+                    cResult[37] = tmp4.scrollView;
+                    cResult[38] = tmp59;
+                    cResult[39] = tmp66;
+                    tmp63 = tmp66;
                   }
                 }
               }
               const obj12 = { style: container, children: items };
-              items = [tmp5, tmp20, tmp53];
-              const tmp60 = metroImportDefault(hasOwnProperty, obj12);
-              cResult[30] = tmp4.container;
-              cResult[31] = tmp20;
-              cResult[32] = tmp53;
-              cResult[33] = tmp5;
-              cResult[34] = tmp60;
-              tmp57 = tmp60;
+              items = [tmp8, tmp22, tmp55];
+              const tmp62 = metroRequire(React3, obj12);
+              cResult[31] = tmp4.container;
+              cResult[32] = tmp22;
+              cResult[33] = tmp55;
+              cResult[34] = tmp8;
+              cResult[35] = tmp62;
+              tmp59 = tmp62;
             }
           }
           const obj13 = { style: tmp4.demo, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: items1 };
-          items1 = [tmp34, tmp49];
-          const tmp56 = metroImportDefault(hasOwnProperty, obj13);
-          cResult[26] = tmp4.demo;
-          cResult[27] = tmp34;
-          cResult[28] = tmp49;
-          cResult[29] = tmp56;
-          tmp53 = tmp56;
+          items1 = [tmp36, tmp51];
+          const tmp58 = metroRequire(React3, obj13);
+          cResult[27] = tmp4.demo;
+          cResult[28] = tmp36;
+          cResult[29] = tmp51;
+          cResult[30] = tmp58;
+          tmp55 = tmp58;
         }
         const obj14 = { style: tmp4.chatInput, children: items2 };
-        items2 = [tmp42, tmp46];
-        const tmp52 = metroImportDefault(hasOwnProperty, obj14);
-        cResult[23] = tmp4.chatInput;
-        cResult[24] = tmp42;
-        cResult[25] = tmp52;
-        tmp49 = tmp52;
+        items2 = [tmp44, tmp48];
+        const tmp54 = metroRequire(React3, obj14);
+        cResult[24] = tmp4.chatInput;
+        cResult[25] = tmp44;
+        cResult[26] = tmp54;
+        tmp51 = tmp54;
       }
       const obj15 = { style: tmp4.menu, children: items3 };
-      items3 = [tmp22, tmp26, tmp30];
-      const tmp37 = metroImportDefault(hasOwnProperty, obj15);
-      cResult[16] = tmp4.menu;
-      cResult[17] = tmp26;
-      cResult[18] = tmp37;
-      tmp34 = tmp37;
+      items3 = [tmp24, tmp28, tmp32];
+      const tmp39 = metroRequire(React3, obj15);
+      cResult[17] = tmp4.menu;
+      cResult[18] = tmp28;
+      cResult[19] = tmp39;
+      tmp36 = tmp39;
     }
   }
   const obj16 = { style: textContainer, children: items4 };
-  items4 = [tmp12, tmp17];
-  const tmp21 = metroImportDefault(hasOwnProperty, obj16);
-  cResult[8] = tmp4.textContainer;
-  cResult[9] = tmp17;
-  cResult[10] = tmp12;
-  cResult[11] = tmp21;
-  tmp20 = tmp21;
-}) : (() => {
+  items4 = [tmp14, tmp19];
+  const tmp23 = metroRequire(React3, obj16);
+  cResult[9] = tmp4.textContainer;
+  cResult[10] = tmp19;
+  cResult[11] = tmp14;
+  cResult[12] = tmp23;
+  tmp22 = tmp23;
+}) : (function ScheduledMessagesIntro() {
   let PlusLargeIcon;
   let intl;
   let intl2;
@@ -290,48 +297,48 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let items4;
   let obj14;
   let obj2;
-  const tmp = closure_8();
-  const obj = { style: tmp.scrollView, contentContainerStyle: tmp.pageContainer, children: metroImportDefault(hasOwnProperty, obj2) };
+  const tmp = closure_7();
+  const obj = { style: tmp.scrollView, contentContainerStyle: tmp.pageContainer, children: metroRequire(React3, obj2) };
   obj2 = { style: tmp.container, children: items };
   items = [, , ];
-  const obj3 = { source: AssetRegistryDefault, style: tmp.upsellImage };
-  items[0] = metroRequire(_false, obj3);
+  const obj3 = { style: tmp.upsellImage, children: hasOwnProperty(ScheduleMessageSpotIllustration.ScheduleMessageSpotIllustration, { width: 180, height: 120, accessible: false }) };
+  items[0] = hasOwnProperty(React3, obj3);
   const obj4 = { style: tmp.textContainer, children: items1 };
   const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: tmp.text, children: intl.string(intl6.t["C/j9NE"]) };
   const Heading = Text_Text.Heading;
   intl = intl6.intl;
-  items1 = [metroRequire(Heading, obj5), ];
+  items1 = [hasOwnProperty(Heading, obj5), ];
   const obj6 = { variant: "text-sm/medium", color: "text-default", style: tmp.text, includeFontPadding: true, children: intl2.format(intl6.t.PqmI8J, {}) };
   const Text = Text_Text.Text;
   intl2 = intl6.intl;
-  items1[1] = metroRequire(Text, obj6);
-  items[1] = metroImportDefault(hasOwnProperty, obj4);
+  items1[1] = hasOwnProperty(Text, obj6);
+  items[1] = metroRequire(React3, obj4);
   const obj7 = { style: tmp.demo, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: items3 };
   const obj8 = { style: tmp.menu, children: items2 };
   const obj9 = { icon: AttachmentIcon.AttachmentIcon, label: intl3.string(intl6.t["8Hvr3+"]), highlighted: false };
   intl3 = intl6.intl;
-  items2 = [metroRequire(closure_9, obj9), , ];
+  items2 = [hasOwnProperty(closure_8, obj9), , ];
   const obj10 = { style: tmp.menuDivider };
-  items2[1] = metroRequire(hasOwnProperty, obj10);
+  items2[1] = hasOwnProperty(React3, obj10);
   const obj11 = { icon: CalendarPlusIcon.CalendarPlusIcon, label: intl4.string(intl6.t["3+ii4F"]), highlighted: true };
   intl4 = intl6.intl;
-  items2[2] = metroRequire(closure_9, obj11);
-  items3 = [metroImportDefault(hasOwnProperty, obj8), ];
+  items2[2] = hasOwnProperty(closure_8, obj11);
+  items3 = [metroRequire(React3, obj8), ];
   const obj12 = { style: tmp.chatInput, children: items4 };
-  const obj13 = { style: tmp.plusButton, children: metroRequire(PlusLargeIcon, obj14) };
+  const obj13 = { style: tmp.plusButton, children: hasOwnProperty(PlusLargeIcon, obj14) };
   obj14 = { size: "xs", color: nativeDefault.colors.CHAT_INPUT_ACTION_BUTTON_ICON_DEFAULT_TINT };
   PlusLargeIcon = PlusLargeIcon2.PlusLargeIcon;
-  items4 = [metroRequire(hasOwnProperty, obj13), ];
+  items4 = [hasOwnProperty(React3, obj13), ];
   const obj15 = { variant: "text-sm/normal", color: "text-muted", children: intl5.string(intl6.t.fxxYiB) };
   const Text2 = Text_Text.Text;
   intl5 = intl6.intl;
-  items4[1] = metroRequire(Text2, obj15);
-  items3[1] = metroImportDefault(hasOwnProperty, obj12);
-  items[2] = metroImportDefault(hasOwnProperty, obj7);
-  return metroRequire(React3, obj);
+  items4[1] = hasOwnProperty(Text2, obj15);
+  items3[1] = metroRequire(React3, obj12);
+  items[2] = metroRequire(React3, obj7);
+  return hasOwnProperty(_false, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlighted) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function MenuRow(highlighted) {
   let icon;
   let items;
   let label;
@@ -339,7 +346,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlighted) =>
   const cResult = obj.c(11);
   ({ icon, label } = highlighted);
   highlighted = highlighted.highlighted;
-  const tmp4 = closure_8();
+  const tmp4 = closure_7();
   let menuRowHighlighted = null;
   if (highlighted) {
     menuRowHighlighted = tmp4.menuRowHighlighted;
@@ -353,7 +360,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlighted) =>
     }
     if (cResult[3] !== icon) {
       const obj2 = { size: "sm", color: nativeDefault.colors.TEXT_STRONG };
-      const tmp10 = metroRequire(icon, obj2);
+      const tmp10 = hasOwnProperty(icon, obj2);
       cResult[3] = icon;
       cResult[4] = tmp10;
       tmp7 = tmp10;
@@ -362,7 +369,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlighted) =>
     }
     if (cResult[5] !== label) {
       const obj3 = { variant: "text-sm/medium", color: "text-default", children: label };
-      const tmp13 = metroRequire(Text_Text.Text, obj3);
+      const tmp13 = hasOwnProperty(Text_Text.Text, obj3);
       cResult[5] = label;
       cResult[6] = tmp13;
       tmp11 = tmp13;
@@ -380,7 +387,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlighted) =>
     }
     const obj4 = { style: tmp6, children: items };
     items = [tmp7, tmp11];
-    const tmp17 = metroImportDefault(hasOwnProperty, obj4);
+    const tmp17 = metroRequire(React3, obj4);
     cResult[7] = tmp6;
     cResult[8] = tmp7;
     cResult[9] = tmp11;
@@ -392,17 +399,17 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlighted) =>
   cResult[1] = menuRowHighlighted;
   cResult[2] = items1;
   tmp6 = items1;
-}) : ((arg0) => {
+}) : (function MenuRow(arg0) {
   let highlighted;
   let icon;
   let items1;
   let label;
   ({ icon, label, highlighted } = arg0);
-  const tmp = closure_8();
+  const tmp = closure_7();
   const items = [tmp.menuRow, ];
   let menuRowHighlighted = null;
-  const tmp2 = metroImportDefault;
-  const tmp3 = hasOwnProperty;
+  const tmp2 = metroRequire;
+  const tmp3 = React3;
   if (highlighted) {
     menuRowHighlighted = tmp.menuRowHighlighted;
   }
@@ -410,8 +417,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlighted) =>
   items[1] = menuRowHighlighted;
   items1 = [, ];
   const obj2 = { size: "sm", color: nativeDefault.colors.TEXT_STRONG };
-  items1[0] = metroRequire(icon, obj2);
-  items1[1] = metroRequire(Text_Text.Text, { variant: "text-sm/medium", color: "text-default", children: label });
+  items1[0] = hasOwnProperty(icon, obj2);
+  items1[1] = hasOwnProperty(Text_Text.Text, { variant: "text-sm/medium", color: "text-default", children: label });
   return tmp2(tmp3, obj);
 });
 size = size_mod;

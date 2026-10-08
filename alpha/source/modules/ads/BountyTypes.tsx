@@ -1,17 +1,18 @@
-// Module ID: 10012
-// Function ID: 10013
+// Module ID: 9542
+// Function ID: 9543
 // Name: BountyTypes
-// Dependencies: [32, 10013, 2]
+// Dependencies: [32, 9543, 9544, 2]
 // Exports: bountyCtaFromServer, bountyFromServer
 
-// Module 10012 (BountyTypes)
-import AssetUtils from "AssetUtils" /* 10013 */;
+// Module 9542 (BountyTypes)
+import BountyAspectRatio from "BountyAspectRatio" /* 9543 */;
+import AssetUtils from "AssetUtils" /* 9544 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 function videoRenditionsFromServer(video_renditions) {
   let tmp10;
-  let tmp11;
+  let tmp12;
   if (null != video_renditions) {
     const obj = {};
     const _Object = Object;
@@ -19,17 +20,27 @@ function videoRenditionsFromServer(video_renditions) {
     const tmp4 = entries[Symbol.iterator]();
     while (tmp4 !== undefined) {
       let tmp9 = _slicedToArray(tmp6, 2);
-      [tmp10, tmp11] = tmp9;
-      let obj2 = AssetUtils;
-      obj[tmp10] = obj2.resolveAdCreativeCdnUrl(tmp11);
+      [tmp10, tmp12] = tmp9;
+      let _Object2 = Object;
+      let tmp11 = tmp10;
+      let tmp13 = require;
+      let values = Object.values(BountyAspectRatio.BountyAspectRatio);
+      let hasItem = values.includes(tmp10);
+      if (hasItem) {
+        hasItem = "" !== tmp12;
+      }
+      if (hasItem) {
+        let tmp13Result = tmp13(9544);
+        obj[tmp11] = tmp13Result.resolveAdCreativeCdnUrl(tmp12);
+      }
       continue;
     }
-    const _Object2 = Object;
-    let tmp14;
+    const _Object3 = Object;
+    let tmp19;
     if (Object.keys(obj).length > 0) {
-      tmp14 = obj;
+      tmp19 = obj;
     }
-    return tmp14;
+    return tmp19;
   }
 }
 const result = size.fileFinishedImporting("modules/ads/BountyTypes.tsx");

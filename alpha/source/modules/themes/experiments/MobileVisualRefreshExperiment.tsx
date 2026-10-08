@@ -1,12 +1,12 @@
-// Module ID: 11827
-// Function ID: 11828
+// Module ID: 11912
+// Function ID: 11913
 // Name: MobileVisualRefreshExperiment
-// Dependencies: [1441, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: isMobileVisualRefreshEnabled, resolveRefreshToken
 
-// Module 11827 (MobileVisualRefreshExperiment)
+// Module 11912 (MobileVisualRefreshExperiment)
 import react from "react" /* 576 */;
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1441 */;
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ let obj = { kind: "user", name: "2026-02-mobile-visual-refresh", defaultConfig: 
 let tmp2 = apex_ApexExperimentDefault(obj);
 let closure_2 = tmp2;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsMobileVisualRefreshExperimentEnabled(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -27,12 +27,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useIsMobileVisualRefreshExperimentEnabled(location) {
   const obj = { location };
   return closure_2.useConfig(obj).enabled;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMobileVisualRefreshConfig(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -46,7 +46,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2);
-}) : ((location) => {
+}) : (function useMobileVisualRefreshConfig(location) {
   const obj = { location: location.location };
   return closure_2.useConfig(obj);
 });

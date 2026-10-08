@@ -1,20 +1,18 @@
-// Module ID: 16929
-// Function ID: 16930
+// Module ID: 17210
+// Function ID: 17211
 // Name: useAutoTrackSearchTabCountsViewedAnalytics
-// Dependencies: [19, 7524, 558, 576, 12001, 2]
+// Dependencies: [19, 9247, 558, 576, 12074, 2]
 
-// Module 16929 (useAutoTrackSearchTabCountsViewedAnalytics)
-import SearchConstants from "SearchConstants" /* 7524 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12001 */;
+// Module 17210 (useAutoTrackSearchTabCountsViewedAnalytics)
+import SearchConstants from "SearchConstants" /* 9247 */;
+import tracking_TrackingDefault from "tracking/Tracking" /* 12074 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let searchContext;
-
 let react = react_mod;
 const SearchTabs = SearchConstants.SearchTabs;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAutoTrackSearchTabCountsViewedAnalytics(searchContext) {
   let closure_3;
   let tmp2;
   let tmp3;
@@ -169,7 +167,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
   cResult[6] = items1;
   tmp6 = items1;
   tmp5 = fn2;
-}) : ((searchContext) => {
+}) : (function useAutoTrackSearchTabCountsViewedAnalytics(searchContext) {
   let closure_3;
   searchContext = searchContext.searchContext;
   const visibleTabCounts = searchContext.visibleTabCounts;
@@ -213,7 +211,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
         const MEMBERS = SearchTabs.MEMBERS;
         const obj = { searchContext, searchResultTotalCount: reduced, numMemberTabReturnedResults: tmp4, numChannelTabReturnedResults: tmp5, numPeopleTabReturnedResults: tmp8, numMessageTabReturnedResults: tmp11, numMediaTabReturnedResults: tmp14, numFileTabReturnedResults: tmp17, numLinkTabReturnedResults: tmp20 };
         tmp4 = null;
-        const trackSearchResultReturned = search_tracking_TrackingDefault.trackSearchResultReturned;
+        const trackSearchResultReturned = tracking_TrackingDefault.trackSearchResultReturned;
         if (null != tmp) {
           let current = ref.current;
           let tmp3 = null;

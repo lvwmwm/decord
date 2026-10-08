@@ -1,14 +1,14 @@
-// Module ID: 12937
-// Function ID: 12938
+// Module ID: 13216
+// Function ID: 13217
 // Name: ContentInventoryHttpApi
-// Dependencies: [5, 8037, 1085, 1282, 5319, 584, 1126, 2]
+// Dependencies: [5, 8445, 1085, 1294, 5631, 584, 1126, 2]
 // Exports: deleteContentInventoryEntryHistory, getContentInventoryOutbox, getMyContentInventory, postTrackToContentInventory
 
-// Module 12937 (ContentInventoryHttpApi)
+// Module 13216 (ContentInventoryHttpApi)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 8037 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 8445 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

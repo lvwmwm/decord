@@ -1,21 +1,21 @@
-// Module ID: 8775
-// Function ID: 8776
+// Module ID: 9121
+// Function ID: 9122
 // Name: TwoWayLinkStepHeader
-// Dependencies: [19, 21, 558, 576, 8774, 6476, 1126, 4892, 2]
+// Dependencies: [19, 21, 558, 576, 9120, 6654, 1126, 5086, 2]
 
-// Module 8775 (TwoWayLinkStepHeader)
+// Module 9121 (TwoWayLinkStepHeader)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6476 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 8774 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6654 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9120 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLinkStepHeader(arg0) {
   let idx;
   let total;
   const obj = react2;
@@ -64,7 +64,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = twoWayLinkStyles.stepHeader;
   cResult[2] = items;
   tmp7 = items;
-}) : ((arg0) => {
+}) : (function TwoWayLinkStepHeader(arg0) {
   let idx;
   let total;
   ({ idx, total } = arg0);

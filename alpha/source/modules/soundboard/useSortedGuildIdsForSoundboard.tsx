@@ -1,31 +1,31 @@
-// Module ID: 17261
-// Function ID: 17262
+// Module ID: 17542
+// Function ID: 17543
 // Name: useSortedGuildIdsForSoundboard
-// Dependencies: [19, 4515, 5623, 1377, 1085, 1096, 558, 576, 573, 4534, 2]
+// Dependencies: [19, 4707, 5968, 1389, 1085, 1096, 558, 576, 573, 4726, 2]
 
-// Module 17261 (useSortedGuildIdsForSoundboard)
+// Module 17542 (useSortedGuildIdsForSoundboard)
 import Constants from "Constants" /* 1085 */;
 import Constants2 from "Constants" /* 1096 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4534 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4726 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import SortedGuildStore from "SortedGuildStore" /* 5623 */;
-import UserStore from "UserStore" /* 1377 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import SortedGuildStore from "SortedGuildStore" /* 5968 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, guild_id;
+let _require;
 
 const EMPTY_STRING_SNOWFLAKE_ID = Constants.EMPTY_STRING_SNOWFLAKE_ID;
 const Permissions = Constants2.Permissions;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSortedGuildIdsForSoundboard(guild_id, arg1) {
   let currentUser;
   let flattenedGuildIds;
   let tmp10;
-  let tmp13;
-  let tmp15;
-  let tmp18;
+  let tmp12;
+  let tmp14;
+  let tmp17;
   let tmp4;
   let tmp5;
   let tmp9;
@@ -56,14 +56,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id, arg1) => {
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [SortedGuildStore];
-    class F {
-      constructor() {
-        return flattenedGuildIds.getFlattenedGuildIds();
-      }
-    }
+    const fn2 = function v() {
+      return flattenedGuildIds.getFlattenedGuildIds();
+    };
     cResult[2] = items1;
-    cResult[3] = F;
-    tmp10 = F;
+    cResult[3] = fn2;
+    tmp10 = fn2;
     tmp9 = items1;
   } else {
     tmp9 = cResult[2];
@@ -73,82 +71,61 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id, arg1) => {
   const stateFromStores1 = tmpResult3.useStateFromStores(tmp9, tmp10);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [PermissionStore];
-    class F {
-      constructor() {
-        return flattenedGuildIds.getFlattenedGuildIds();
-      }
-    }
     cResult[4] = items2;
-    tmp13 = items2;
+    tmp12 = items2;
   } else {
-    tmp13 = cResult[4];
+    tmp12 = cResult[4];
   }
   if (cResult[5] !== guild_id) {
-    class U {
-      constructor() {
-        const canResult = null == guild_id || null == tmp.guild_id || PermissionStore.can(Permissions.USE_EXTERNAL_SOUNDS, tmp);
-        return canResult;
-      }
-    }
+    const fn3 = function h() {
+      const canResult = null == guild_id || null == tmp.guild_id || PermissionStore.can(Permissions.USE_EXTERNAL_SOUNDS, tmp);
+      return canResult;
+    };
     cResult[5] = guild_id;
-    class F {
-      constructor() {
-        return flattenedGuildIds.getFlattenedGuildIds();
-      }
-    }
-    cResult[6] = U;
-    tmp15 = U;
+    cResult[6] = fn3;
+    tmp14 = fn3;
   } else {
-    class U {
-      constructor() {
-        const canResult = null == guild_id || null == tmp.guild_id || PermissionStore.can(Permissions.USE_EXTERNAL_SOUNDS, tmp);
-        return canResult;
-      }
-    }
+    tmp14 = cResult[6];
   }
   const tmpResult4 = tmp(573);
-  const stateFromStores2 = tmpResult4.useStateFromStores(tmp13, tmp15);
-  const obj5 = guild_id(4534);
+  const stateFromStores2 = tmpResult4.useStateFromStores(tmp12, tmp14);
+  const obj5 = guild_id(4726);
   if (obj5.canUseSoundboardEverywhere(stateFromStores)) {
-    class U {
-      constructor() {
-        const canResult = null == guild_id || null == tmp.guild_id || PermissionStore.can(Permissions.USE_EXTERNAL_SOUNDS, tmp);
-        return canResult;
+    if (stateFromStores2) {
+      if (cResult[7] === "" !== guild_id) {
+        if (cResult[8] === guild_id) {
+          let arr6;
+          if (cResult[9] === stateFromStores1) {
+            arr6 = cResult[10];
+          }
+          tmp17 = arr6;
+          if ("" !== guild_id) {
+            arr6.unshift(guild_id);
+            tmp17 = arr6;
+          }
+        }
       }
-    }
-    return tmp18;
-  } else {
-    class U {
-      constructor() {
-        const canResult = null == guild_id || null == tmp.guild_id || PermissionStore.can(Permissions.USE_EXTERNAL_SOUNDS, tmp);
-        return canResult;
+      let found = stateFromStores1;
+      if ("" !== guild_id) {
+        found = stateFromStores1.filter((item) => item !== guild_id);
       }
+      cResult[7] = "" !== guild_id;
+      cResult[8] = guild_id;
+      cResult[9] = stateFromStores1;
+      cResult[10] = found;
+      arr6 = found;
     }
+    return tmp17;
   }
   if (cResult[11] !== guild_id) {
-    class U {
-      constructor() {
-        const canResult = null == guild_id || null == tmp.guild_id || PermissionStore.can(Permissions.USE_EXTERNAL_SOUNDS, tmp);
-        return canResult;
-      }
-    }
-    tmp19[0] = guild_id;
-    class F {
-      constructor() {
-        return flattenedGuildIds.getFlattenedGuildIds();
-      }
-    }
-    cResult[12] = tmp19;
-    tmp18 = tmp19;
+    const items3 = [guild_id];
+    cResult[11] = guild_id;
+    cResult[12] = items3;
+    tmp17 = items3;
   } else {
-    class U {
-      constructor() {
-        const canResult = null == guild_id || null == tmp.guild_id || PermissionStore.can(Permissions.USE_EXTERNAL_SOUNDS, tmp);
-        return canResult;
-      }
-    }
+    tmp17 = cResult[12];
   }
-}) : ((guild_id, arg1) => {
+}) : (function useSortedGuildIdsForSoundboard(guild_id, arg1) {
   let currentUser;
   let stateFromStores;
   let stateFromStores2;

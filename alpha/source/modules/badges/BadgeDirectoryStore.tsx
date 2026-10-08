@@ -1,18 +1,18 @@
-// Module ID: 7874
-// Function ID: 7875
+// Module ID: 8292
+// Function ID: 8293
 // Name: BadgeDirectoryStore
-// Dependencies: [1377, 1102, 1444, 7875, 569, 7879, 504, 584, 2]
+// Dependencies: [1389, 1102, 1456, 8293, 569, 8297, 504, 584, 2]
 // Exports: getObtainedAtFromBadge, getSingleRequirementThreshold
 
-// Module 7874 (BadgeDirectoryStore)
+// Module 8292 (BadgeDirectoryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import LRUCacheDefault from "LRUCache" /* 1444 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 7875 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7879 */;
-import UserStore from "UserStore" /* 1377 */;
+import LRUCacheDefault from "LRUCache" /* 1456 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 8293 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8297 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
@@ -200,7 +200,7 @@ let obj = {
   BADGE_DIRECTORY_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
     let badges;
     let userId;
-    const f95889 = (badge_id) => {
+    const f97510 = (badge_id) => {
       const items = [badge_id.badge_id, badge_id];
       return items;
     };
@@ -215,10 +215,10 @@ let obj = {
       peekResult = obj2;
       map = new Map();
     }
-    peekResult.badges = new Map(badges.map(f95889));
+    peekResult.badges = new Map(badges.map(f97510));
     peekResult.catalogFetched = true;
     peekResult.fetchError = false;
-    new Map(badges.map(f95889));
+    new Map(badges.map(f97510));
     peekResult.fetchedAt = Date.now();
     const result = obj.set(userId, peekResult);
   },

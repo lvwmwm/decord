@@ -1,36 +1,36 @@
-// Module ID: 7528
-// Function ID: 7529
+// Module ID: 9251
+// Function ID: 9252
 // Name: MessageManager
-// Dependencies: [32, 4912, 5443, 2055, 6793, 2051, 2074, 4911, 2103, 4705, 1085, 2058, 1102, 3, 5438, 7529, 4793, 7530, 6978, 7531, 510, 4710, 1112, 6795, 5714, 1126, 584, 6620, 2]
+// Dependencies: [32, 6041, 5753, 2067, 6066, 2063, 2086, 6040, 2115, 4899, 1085, 2070, 1102, 3, 5748, 9252, 4987, 6089, 7167, 9253, 510, 4904, 1112, 6068, 5297, 1126, 584, 6797, 2]
 
-// Module 7528 (MessageManager)
+// Module 9251 (MessageManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import router_utils from "router_utils" /* 1112 */;
 import intl3 from "intl" /* 1126 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import ChannelConstants from "ChannelConstants" /* 2058 */;
-import matchPathCompat from "matchPathCompat" /* 4710 */;
-import flow_Client from "flow/Client" /* 4793 */;
-import ChannelMessagesDefault from "ChannelMessages" /* 5438 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5714 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 6795 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6978 */;
-import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 7529 */;
-import getAdaptiveMessageLimit from "getAdaptiveMessageLimit" /* 7531 */;
+import ChannelRecord from "ChannelRecord" /* 2067 */;
+import ChannelConstants from "ChannelConstants" /* 2070 */;
+import matchPathCompat from "matchPathCompat" /* 4904 */;
+import flow_Client from "flow/Client" /* 4987 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5297 */;
+import ChannelMessagesDefault from "ChannelMessages" /* 5748 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 6068 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7167 */;
+import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9252 */;
+import getAdaptiveMessageLimit from "getAdaptiveMessageLimit" /* 9253 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4912 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5443 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6793 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import ReadStateStore from "ReadStateStore" /* 4911 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5753 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6066 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
 import Constants from "Constants" /* 1085 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6620 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6797 */;
 import size from "module_2" /* 2 */;
 
 let map, obj3;
@@ -103,7 +103,7 @@ function fetchMessages(arg0) {
             if (!GatewayConnectionStore.isConnected()) {
               flag = true;
             }
-            const hasUnreadResult = tmp7(7530)(channelId) && ReadStateStore.hasUnread(channelId);
+            const hasUnreadResult = tmp7(6089)(channelId) && ReadStateStore.hasUnread(channelId);
             if (hasUnreadResult) {
               flag = true;
             }
@@ -224,7 +224,7 @@ function handleConnectionOpen() {
       const id2 = channel1.id;
       const matchPath = matchPathCompat.matchPath;
       matchPathCompat;
-      const obj2 = { path: authStore4.CHANNEL(":guild", ":channel", ":message"), exact: true };
+      const obj2 = { path: authStore5.CHANNEL(":guild", ":channel", ":message"), exact: true };
       const obj7 = router_utils;
       const pathname = obj7.getHistory().location.pathname;
       const matchPathResult = matchPath(pathname, obj2);
@@ -334,7 +334,7 @@ function handleChannelPreload(context) {
   let channelId;
   let guildId;
   ({ guildId, channelId } = context);
-  if (context.context === closure_15) {
+  if (context.context === authStore3) {
     const obj = { guildId, channelId };
     fetchMessages(obj);
     const currentSidebarChannelId = ChannelSectionStore.getCurrentSidebarChannelId(channelId);

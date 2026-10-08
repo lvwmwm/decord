@@ -1,27 +1,27 @@
-// Module ID: 16342
-// Function ID: 16343
+// Module ID: 16602
+// Function ID: 16603
 // Name: HomeDrawerTTIFirstContentfulPaint
-// Dependencies: [19, 21, 558, 576, 6997, 11520, 2]
+// Dependencies: [19, 21, 558, 576, 7185, 11518, 2]
 
-// Module 16342 (HomeDrawerTTIFirstContentfulPaint)
+// Module 16602 (HomeDrawerTTIFirstContentfulPaint)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 6997 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7185 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const TTIFirstContentfulPaint = tmp(11520);
+const TTIFirstContentfulPaint = tmp(11518);
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDrawerTTIFirstContentfulPaint() {
   let tmp4;
   let tmp5;
   let tmp7;
   let obj = react2;
   const cResult = obj.c(3);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function c() {
+    const fn = function o() {
       const obj = TTIAnalyticsUtils;
       obj.trackAppUIViewed();
     };
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[2];
   }
   return tmp7;
-}) : (() => {
+}) : (function HomeDrawerTTIFirstContentfulPaint() {
   const layoutEffect = react.useLayoutEffect(() => {
     const obj = TTIAnalyticsUtils;
     obj.trackAppUIViewed();

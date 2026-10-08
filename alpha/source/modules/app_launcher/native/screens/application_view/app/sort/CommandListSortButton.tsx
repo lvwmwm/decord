@@ -1,19 +1,19 @@
-// Module ID: 11787
-// Function ID: 11788
+// Module ID: 11854
+// Function ID: 11855
 // Name: CommandListSortButton
-// Dependencies: [19, 17, 11773, 1192, 21, 4896, 587, 1126, 5916, 4860, 11788, 1987, 4892, 10857, 2]
+// Dependencies: [19, 17, 11840, 1204, 21, 5090, 587, 1126, 6189, 5054, 11855, 1999, 5086, 10508, 2]
 // Exports: default
 
-// Module 11787 (CommandListSortButton)
+// Module 11854 (CommandListSortButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import FormConstants from "FormConstants" /* 1192 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import AppLauncherConstants from "AppLauncherConstants" /* 11773 */;
+import FormConstants from "FormConstants" /* 1204 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import AppLauncherConstants from "AppLauncherConstants" /* 11840 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -51,7 +51,7 @@ export default function CommandListSortButton(sortOrder) {
     androidRippleConfig: ANDROID_FOREGROUND_RIPPLE,
     activeOpacity: 0.8,
     style: tmp.container,
-    onPress() {
+    onPress: function handlePress() {
       let obj = ActionSheetActionCreatorsDefault;
       const obj2 = {
         sortOrder,
@@ -61,15 +61,15 @@ export default function CommandListSortButton(sortOrder) {
           obj.hideActionSheet("CommandListSortActionSheet");
         }
       };
-      obj.openLazy(asyncRequire(11788, dependencyMap.paths), "CommandListSortActionSheet", obj2);
+      obj.openLazy(asyncRequire(11855, dependencyMap.paths), "CommandListSortActionSheet", obj2);
     },
     children: closure_7(View, obj2)
   };
   obj2 = { style: tmp.button, children: items };
-  const PressableOpacity = sortOrder(5916).PressableOpacity;
-  items = [closure_6(sortOrder(4892).Text, { variant: "text-sm/medium", color: "text-default", children: stringResult }), ];
+  const PressableOpacity = sortOrder(6189).PressableOpacity;
+  items = [closure_6(sortOrder(5086).Text, { variant: "text-sm/medium", color: "text-default", children: stringResult }), ];
   const obj3 = { size: "xs", color: onSortOptionPress(587).colors.TEXT_DEFAULT };
-  const ChevronSmallDownIcon = sortOrder(10857).ChevronSmallDownIcon;
+  const ChevronSmallDownIcon = sortOrder(10508).ChevronSmallDownIcon;
   items[1] = closure_6(ChevronSmallDownIcon, obj3);
   return closure_6(PressableOpacity, obj);
 };

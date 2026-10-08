@@ -1,26 +1,24 @@
-// Module ID: 13930
-// Function ID: 13931
+// Module ID: 14233
+// Function ID: 14234
 // Name: SummarizedIconRow
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 5086, 2]
 
-// Module 13930 (SummarizedIconRow)
+// Module 14233 (SummarizedIconRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let offsetAmount;
 
 let obj2;
 let obj3;
 let obj4;
 let obj5;
 let tmp;
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -33,7 +31,7 @@ obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius
 ({ backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, margin: 2, paddingHorizontal: 8, height: 30, alignItems: "center", justifyContent: "center", borderRadius: 15 });
 let closure_4 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OverflowSquircle(style) {
   const obj = react2;
   const cResult = obj.c(11);
   style = style.style;
@@ -84,7 +82,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   cResult[1] = tmp4.overflowSquircleWrap;
   cResult[2] = items;
   tmp5 = items;
-}) : ((arg0) => {
+}) : (function OverflowSquircle(arg0) {
   let overflow;
   let style;
   ({ overflow, style } = arg0);
@@ -95,7 +93,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   return <View style={items}>{null}</View>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OverflowText(style) {
   const obj = react2;
   const cResult = obj.c(8);
   style = style.style;
@@ -135,7 +133,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   cResult[1] = tmp4.overflowTextOnly;
   cResult[2] = items;
   tmp5 = items;
-}) : ((arg0) => {
+}) : (function OverflowText(arg0) {
   let overflow;
   let style;
   ({ overflow, style } = arg0);
@@ -145,7 +143,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   return <View style={items}>{null}</View>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OverflowTextSmall(style) {
   const obj = react2;
   const cResult = obj.c(8);
   style = style.style;
@@ -185,7 +183,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   cResult[1] = tmp4.overflowTextOnly;
   cResult[2] = items;
   tmp5 = items;
-}) : ((arg0) => {
+}) : (function OverflowTextSmall(arg0) {
   let overflow;
   let style;
   ({ overflow, style } = arg0);
@@ -195,7 +193,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   return <View style={items}>{null}</View>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OverflowCircle(style) {
   const obj = react2;
   const cResult = obj.c(11);
   style = style.style;
@@ -246,7 +244,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   cResult[1] = tmp4.overflowCircleWrap;
   cResult[2] = items;
   tmp5 = items;
-}) : ((arg0) => {
+}) : (function OverflowCircle(arg0) {
   let overflow;
   let style;
   ({ overflow, style } = arg0);
@@ -257,7 +255,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   return <View style={items}>{null}</View>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((offsetAmount) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function SummarizedIconRow(offsetAmount) {
   let items;
   let max;
   let overflowComponent;
@@ -293,7 +291,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((offsetAmount) => {
             let closure_9 = tmp4;
             if (cResult[7] === style) {
               let tmp5;
-              let tmp6;
+              let tmp7;
               if (cResult[8] === tmp2.container) {
                 tmp5 = cResult[9];
               }
@@ -304,21 +302,37 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((offsetAmount) => {
                       if (cResult[14] === bound) {
                         if (cResult[15] === overflowStyle) {
                           if (cResult[16] === tmp4) {
-                            tmp6 = cResult[17];
+                            tmp7 = cResult[17];
                           }
                           if (cResult[25] === tmp5) {
-                            let tmp9;
-                            if (cResult[26] === tmp6) {
-                              tmp9 = cResult[27];
+                            let tmp10;
+                            if (cResult[26] === tmp7) {
+                              tmp10 = cResult[27];
                             }
-                            return tmp9;
+                            return tmp10;
                           }
-                          let obj2 = { style: tmp5, children: tmp6 };
+                          class I {
+                            constructor(arg0, arg1) {
+                              if (arg1 < num) {
+                                if (arg1 === tmp - 1) {
+                                  let tmp5;
+                                  if (bound > 0) {
+                                    items = [{ marginLeft: offsetAmount }, overflowStyle];
+                                    tmp5 = <overflowComponent key={arg1} style={items} overflow={tmp2 + 1} />;
+                                    const obj2 = { marginLeft: offsetAmount };
+                                  }
+                                  return tmp5;
+                                }
+                                tmp5 = closure_9(arg0, arg1);
+                              }
+                            }
+                          }
+                          let obj2 = { style: tmp5, children: tmp7 };
                           const tmp12 = iconWrapperStyle(offsetAmount, obj2);
                           cResult[25] = tmp5;
-                          cResult[26] = tmp6;
+                          cResult[26] = tmp7;
                           cResult[27] = tmp12;
-                          tmp9 = tmp12;
+                          tmp10 = tmp12;
                         }
                       }
                     }
@@ -330,12 +344,27 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((offsetAmount) => {
                   if (cResult[20] === offsetAmount) {
                     if (cResult[21] === bound) {
                       if (cResult[22] === overflowStyle) {
-                        let tmp7;
+                        let tmp8;
                         if (cResult[23] === tmp4) {
-                          tmp7 = cResult[24];
+                          tmp8 = cResult[24];
                         }
-                        const mapped = items.map(tmp7);
-                        cResult[10] = overflowComponent;
+                        const mapped = items.map(tmp8);
+                        class I {
+                          constructor(arg0, arg1) {
+                            if (arg1 < num) {
+                              if (arg1 === tmp - 1) {
+                                let tmp5;
+                                if (bound > 0) {
+                                  items = [{ marginLeft: offsetAmount }, overflowStyle];
+                                  tmp5 = <overflowComponent key={arg1} style={items} overflow={tmp2 + 1} />;
+                                  const obj2 = { marginLeft: offsetAmount };
+                                }
+                                return tmp5;
+                              }
+                              tmp5 = closure_9(arg0, arg1);
+                            }
+                          }
+                        }
                         cResult[11] = items;
                         cResult[12] = num;
                         cResult[13] = offsetAmount;
@@ -343,46 +372,49 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((offsetAmount) => {
                         cResult[15] = overflowStyle;
                         cResult[16] = tmp4;
                         cResult[17] = mapped;
-                        tmp6 = mapped;
+                        tmp7 = mapped;
                       }
                     }
                   }
                 }
               }
-              const fn2 = function _(arg0, arg1) {
-                if (arg1 < num) {
-                  if (arg1 === tmp - 1) {
-                    let tmp5;
-                    if (bound > 0) {
-                      items = [{ marginLeft: offsetAmount }, overflowStyle];
-                      tmp5 = <overflowComponent key={arg1} style={items} overflow={tmp2 + 1} />;
-                      const obj2 = { marginLeft: offsetAmount };
+              class I {
+                constructor(arg0, arg1) {
+                  if (arg1 < num) {
+                    if (arg1 === tmp - 1) {
+                      let tmp5;
+                      if (bound > 0) {
+                        items = [{ marginLeft: offsetAmount }, overflowStyle];
+                        tmp5 = <overflowComponent key={arg1} style={items} overflow={tmp2 + 1} />;
+                        const obj2 = { marginLeft: offsetAmount };
+                      }
+                      return tmp5;
                     }
-                    return tmp5;
+                    tmp5 = closure_9(arg0, arg1);
                   }
-                  tmp5 = closure_9(arg0, arg1);
                 }
-              };
+              }
               cResult[18] = overflowComponent;
               cResult[19] = num;
               cResult[20] = offsetAmount;
               cResult[21] = bound;
               cResult[22] = overflowStyle;
               cResult[23] = tmp4;
-              cResult[24] = fn2;
-              tmp7 = fn2;
+              cResult[24] = I;
+              tmp8 = I;
             }
-            const items1 = [tmp2.container, style];
+            tmp6[0] = tmp2.container;
+            tmp6[1] = style;
             cResult[7] = style;
             cResult[8] = tmp2.container;
-            cResult[9] = items1;
-            tmp5 = items1;
+            cResult[9] = tmp6;
+            tmp5 = tmp6;
           }
         }
       }
     }
   }
-  const fn = function f(arg0, arg1) {
+  function renderListItem(arg0, arg1) {
     let tmp4Result = null;
     if (arg0) {
       let obj;
@@ -400,16 +432,16 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((offsetAmount) => {
       tmp4Result = tmp4(tmp5, obj3, arg1);
     }
     return tmp4Result;
-  };
+  }
   cResult[0] = iconWrapperStyle;
   cResult[1] = items.length;
   cResult[2] = num;
   cResult[3] = offsetAmount;
   cResult[4] = renderItem;
   cResult[5] = tmp2.iconWrapper;
-  cResult[6] = fn;
-  tmp4 = fn;
-}) : ((max) => {
+  cResult[6] = renderListItem;
+  tmp4 = renderListItem;
+}) : (function SummarizedIconRow(max) {
   let marginLeft;
   let overflowComponent;
   let style;

@@ -1,13 +1,13 @@
-// Module ID: 17930
-// Function ID: 17931
+// Module ID: 18217
+// Function ID: 18218
 // Name: useCreatorMonetizationEligibilityItems
-// Dependencies: [5, 19, 1085, 558, 576, 17931, 17932, 4565, 2115, 1126, 17933, 2]
+// Dependencies: [5, 19, 1085, 558, 576, 18218, 18219, 4757, 2127, 1126, 18220, 2]
 // Exports: default
 
-// Module 17930 (useCreatorMonetizationEligibilityItems)
+// Module 18217 (useCreatorMonetizationEligibilityItems)
 import Constants from "Constants" /* 1085 */;
 import intl27 from "intl" /* 1126 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -117,13 +117,13 @@ export default function useCreatorMonetizationEligibilityItems(hasEnabled2FA, ar
             const tmp23 = globalThis;
             const _Symbol = Symbol;
             if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-              const fn2 = function q() {
+              function handleContactSupportClick() {
                 const tmp = onEligibilityBecameStale(actions[7]);
                 const obj = onEligibilityBecameStale(actions[8]);
                 return tmp(obj.getSubmitRequestURL());
-              };
-              cResult[9] = fn2;
-              tmp24 = fn2;
+              }
+              cResult[9] = handleContactSupportClick;
+              tmp24 = handleContactSupportClick;
             } else {
               tmp24 = cResult[9];
             }
@@ -450,15 +450,15 @@ export default function useCreatorMonetizationEligibilityItems(hasEnabled2FA, ar
         }
       }
     });
-    let fn = function() {
+    function t2() {
       return closure_0(...arguments);
-    };
+    }
     cResult[2] = actions2;
     cResult[3] = isModerationMFAEnabled2;
     cResult[4] = isUserMFAEnabled2;
     cResult[5] = onEligibilityBecameStale2;
-    cResult[6] = fn;
-    tmp16 = fn;
+    cResult[6] = t2;
+    tmp16 = t2;
   } else {
     class D {
       constructor(checked) {
@@ -585,9 +585,9 @@ export default function useCreatorMonetizationEligibilityItems(hasEnabled2FA, ar
     memo = isUserMFAEnabled.useMemo(() => {
       let HFY0m6;
       let Zwv84O;
-      let fn;
       let format;
       let formatToPlainString;
+      let handleContactSupportClick;
       let intl11;
       let intl12;
       let intl13;
@@ -627,7 +627,7 @@ export default function useCreatorMonetizationEligibilityItems(hasEnabled2FA, ar
         return null;
       } else {
         ({ minimumOwnerAgeInYears, minimumSize, noRecentViolations } = tmp);
-        const obj2 = { key: "no_violations_requirement", checkedLabel: intl18.string(intl27.t["1lGNPZ"]), uncheckedLabel: intl19.string(intl27.t["D+gTJt"]), description: format(HFY0m6, obj3), checked: tmp.noRecentViolations, actionLabel: stringResult, actionHandler: fn };
+        const obj2 = { key: "no_violations_requirement", checkedLabel: intl18.string(intl27.t["1lGNPZ"]), uncheckedLabel: intl19.string(intl27.t["D+gTJt"]), description: format(HFY0m6, obj3), checked: tmp.noRecentViolations, actionLabel: stringResult, actionHandler: handleContactSupportClick };
         intl18 = intl27.intl;
         intl19 = intl27.intl;
         const intl20 = intl27.intl;
@@ -641,9 +641,9 @@ export default function useCreatorMonetizationEligibilityItems(hasEnabled2FA, ar
           const intl = tmp23(1126).intl;
           stringResult = intl.string(tmp23(1126).t["xU2fl+"]);
         }
-        fn = undefined;
+        handleContactSupportClick = undefined;
         if (!noRecentViolations) {
-          fn = () => {
+          handleContactSupportClick = function handleContactSupportClick() {
             const tmp = onEligibilityBecameStale(actions[7]);
             const obj = onEligibilityBecameStale(actions[8]);
             return tmp(obj.getSubmitRequestURL());
@@ -678,7 +678,7 @@ export default function useCreatorMonetizationEligibilityItems(hasEnabled2FA, ar
           intl9 = tmp23(1126).intl;
           const intl10 = tmp23(1126).intl;
           formatToPlainString = intl10.formatToPlainString;
-          obj8 = { minimumAge: tmp25(17933)(tmp.minimumAgeInDays) };
+          obj8 = { minimumAge: tmp25(18220)(tmp.minimumAgeInDays) };
           Zwv84O = tmp23(1126).t.Zwv84O;
           push3(obj7);
         }

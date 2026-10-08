@@ -1,16 +1,16 @@
-// Module ID: 8900
-// Function ID: 8901
+// Module ID: 9333
+// Function ID: 9334
 // Name: NativePaymentHooks
-// Dependencies: [5, 32, 19, 6931, 3, 558, 576, 504, 12, 8901, 4549, 2]
+// Dependencies: [5, 32, 19, 7120, 3, 558, 576, 504, 12, 9334, 4741, 2]
 // Exports: useNativeIAPPayments
 
-// Module 8900 (NativePaymentHooks)
+// Module 9333 (NativePaymentHooks)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 6931 */;
+import IAPStore from "IAPStore" /* 7120 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let tmp2 = new LoggerDefault("NativePaymentHooks.android.tsx");
 let closure_7 = tmp2;
 let closure_8 = { nativePaymentsConnected: true, storeFront: null, canMakePayments: true };
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGoogleSkuIds(arg0, arg1) {
   let fetchingGoogleSkus;
   let stateFromStores;
   let tmp10;
@@ -196,7 +196,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[7] = items2;
   tmp12 = items2;
   tmp11 = fn2;
-}) : ((arg0, arg1) => {
+}) : (function useGoogleSkuIds(arg0, arg1) {
   let closure_4;
   let fetchError;
   let fetchingGoogleSkus;

@@ -1,20 +1,20 @@
-// Module ID: 17422
-// Function ID: 17423
+// Module ID: 17704
+// Function ID: 17705
 // Name: SimpleGuildContainer
-// Dependencies: [19, 17, 21, 4896, 558, 576, 7513, 16314, 587, 17421, 4586, 17423, 4618, 5604, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 9236, 16574, 587, 17703, 4778, 17705, 4810, 5374, 2]
 // Exports: SimpleGuildContainer
 
-// Module 17422 (SimpleGuildContainer)
+// Module 17704 (SimpleGuildContainer)
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import spring from "spring" /* 5604 */;
-import MaskedBadgeDefault from "MaskedBadge" /* 7513 */;
-import GuildsBarActivityIndicatorDefault from "GuildsBarActivityIndicator" /* 16314 */;
-import CutoutImageDefault from "CutoutImage" /* 17423 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import spring from "spring" /* 5374 */;
+import MaskedBadgeDefault from "MaskedBadge" /* 9236 */;
+import GuildsBarActivityIndicatorDefault from "GuildsBarActivityIndicator" /* 16574 */;
+import CutoutImageDefault from "CutoutImage" /* 17705 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const GuildsBarActivityIndicator = tmp(16314);
+const GuildsBarActivityIndicator = tmp(16574);
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let c9 = 48;
@@ -32,7 +32,7 @@ const springConfig = { mass: 0.2, damping: 40, stiffness: 300, overshootClamping
 let closure_11 = createStyles.createStyles({ badgeWrapper: { position: "absolute", right: -4, bottom: 0 } });
 let memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SimpleGuildContainerBadge(arg0) {
   let backgroundColor;
   let badge;
   let tmp4;
@@ -74,7 +74,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
     tmp4 = null;
   }
   return tmp4;
-}) : ((backgroundColor) => {
+}) : (function SimpleGuildContainerBadge(backgroundColor) {
   let badge;
   let obj2;
   let tmp2;
@@ -92,7 +92,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
 }));
 const memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_13 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function SimpleGuildActivityIndicator(arg0) {
   let activityIndicatorState;
   let backgroundColor;
   let guildId;
@@ -162,7 +162,7 @@ let closure_13 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
     }
   }
   return tmp10;
-}) : ((arg0) => {
+}) : (function SimpleGuildActivityIndicator(arg0) {
   let activityIndicatorState;
   let backgroundColor;
   let guildId;
@@ -200,7 +200,7 @@ const __initData8 = { code: "function SimpleGuildContainerTsx8(){const{withSprin
 const __initData9 = { code: "function SimpleGuildContainerTsx9(){const{withSpring,toRadius,springConfig,interpolate,toStrokeWidth,borderColor,GUILD_SIZE}=this.__closure;return{borderRadius:withSpring(toRadius.get()+2,springConfig),borderWidth:withSpring(interpolate(toStrokeWidth.get(),[0,1],[0,2]),springConfig),borderColor:borderColor,position:'absolute',top:-2,left:-2,width:GUILD_SIZE+4,height:GUILD_SIZE+4};}" };
 const __initData10 = { code: "function SimpleGuildContainerTsx10(){const{withSpring,toRadius,springConfig,interpolate,toStrokeWidth,backgroundColor,GUILD_SIZE}=this.__closure;return{borderRadius:withSpring(toRadius.get(),springConfig),borderWidth:withSpring(interpolate(toStrokeWidth.get(),[0,1],[0,3]),springConfig),borderColor:backgroundColor,position:'absolute',top:0,left:0,width:GUILD_SIZE,height:GUILD_SIZE};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SimpleGuildContainerAnimated(arg0) {
   let accessibilityLabel;
   let activityIndicatorState;
   let backgroundColor;
@@ -231,7 +231,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else if (borderRadius == null) {
     borderRadius = 24;
   }
-  const fn = function t() {
+  const fn = function o() {
     return borderRadius;
   };
   fn.__closure = { targetRadius: borderRadius };
@@ -239,7 +239,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   fn.__initData = __initData;
   const tmpResult = tmp(iconBackground[12]);
   const derivedValue = tmpResult.useDerivedValue(fn);
-  const fn2 = function l() {
+  const fn2 = function s() {
     let num = 0;
     if (selected) {
       num = 1;
@@ -251,18 +251,20 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   fn2.__initData = __initData2;
   const tmpResult5 = tmp(iconBackground[12]);
   const derivedValue1 = tmpResult5.useDerivedValue(fn2);
-  const fn3 = function _() {
-    let obj2;
-    size = { borderRadius: obj2.withSpring(derivedValue.get(), springConfig), width: height, height, overflow: "hidden", backgroundColor: iconBackground.color };
-    obj2 = spring;
-    return size;
-  };
   const tmpResult6 = tmp(iconBackground[12]);
+  class S {
+    constructor() {
+      let obj2;
+      size = { borderRadius: obj2.withSpring(derivedValue.get(), springConfig), width: height, height, overflow: "hidden", backgroundColor: iconBackground.color };
+      obj2 = spring;
+      return size;
+    }
+  }
   let obj2 = { withSpring: tmp(tmp2[13]).withSpring, toRadius: derivedValue, springConfig, GUILD_SIZE: v48, iconBackground };
-  fn3.__closure = obj2;
-  fn3.__workletHash = 2705390387971;
-  fn3.__initData = __initData3;
-  const animatedStyle = tmpResult6.useAnimatedStyle(fn3);
+  S.__closure = obj2;
+  S.__workletHash = 2705390387971;
+  S.__initData = __initData3;
+  const animatedStyle = tmpResult6.useAnimatedStyle(S);
   const BRAND_500 = tmp4(tmp2[8]).unsafe_rawColors.BRAND_500;
   const tmpResult7 = tmp(iconBackground[12]);
   class R {
@@ -284,7 +286,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   R.__initData = __initData4;
   const animatedStyle1 = tmpResult7.useAnimatedStyle(R);
   const tmpResult8 = tmp(iconBackground[12]);
-  class D {
+  class G {
     constructor() {
       let obj2;
       let obj3;
@@ -297,11 +299,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return size;
     }
   }
-  D.__closure = { withSpring: tmp(iconBackground[13]).withSpring, toRadius: derivedValue, springConfig, interpolate: tmp(iconBackground[12]).interpolate, toStrokeWidth: derivedValue1, backgroundColor, GUILD_SIZE: v48 };
-  D.__workletHash = 4716643044607;
-  D.__initData = __initData5;
+  G.__closure = { withSpring: tmp(iconBackground[13]).withSpring, toRadius: derivedValue, springConfig, interpolate: tmp(iconBackground[12]).interpolate, toStrokeWidth: derivedValue1, backgroundColor, GUILD_SIZE: v48 };
+  G.__workletHash = 4716643044607;
+  G.__initData = __initData5;
   ({ withSpring: tmp(iconBackground[13]).withSpring, toRadius: derivedValue, springConfig, interpolate: tmp(iconBackground[12]).interpolate, toStrokeWidth: derivedValue1, backgroundColor, GUILD_SIZE: v48 });
-  const animatedStyle2 = tmpResult8.useAnimatedStyle(D);
+  const animatedStyle2 = tmpResult8.useAnimatedStyle(G);
   if (cResult[0] === animatedStyle) {
     let tmp11;
     let tmp13;
@@ -427,7 +429,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = children;
   cResult[2] = tmp12;
   tmp11 = tmp12;
-}) : ((arg0) => {
+}) : (function SimpleGuildContainerAnimated(arg0) {
   let accessibilityLabel;
   let activityIndicatorState;
   let backgroundColor;

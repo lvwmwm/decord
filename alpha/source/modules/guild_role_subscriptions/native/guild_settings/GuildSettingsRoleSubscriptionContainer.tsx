@@ -1,21 +1,21 @@
-// Module ID: 17975
-// Function ID: 17976
+// Module ID: 18262
+// Function ID: 18263
 // Name: GuildSettingsRoleSubscriptionContainer
-// Dependencies: [19, 17, 2074, 1085, 21, 4896, 558, 576, 504, 17953, 11866, 17926, 1126, 15046, 17967, 2]
+// Dependencies: [19, 17, 2086, 1085, 21, 5090, 558, 576, 504, 18240, 11938, 18213, 1126, 15308, 18254, 2]
 
-// Module 17975 (GuildSettingsRoleSubscriptionContainer)
+// Module 18262 (GuildSettingsRoleSubscriptionContainer)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import ErrorBlockDefault from "ErrorBlock" /* 11866 */;
-import GroupListingsFetchContext from "GroupListingsFetchContext" /* 15046 */;
-import WarningNoticeDefault from "WarningNotice" /* 17926 */;
-import useOnboardingMonetizationEnableFlowDefault from "useOnboardingMonetizationEnableFlow" /* 17953 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 17967 */;
+import ErrorBlockDefault from "ErrorBlock" /* 11938 */;
+import GroupListingsFetchContext from "GroupListingsFetchContext" /* 15308 */;
+import WarningNoticeDefault from "WarningNotice" /* 18213 */;
+import useOnboardingMonetizationEnableFlowDefault from "useOnboardingMonetizationEnableFlow" /* 18240 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18254 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ const GuildFeatures = Constants.GuildFeatures;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = createStyles.createStyles({ container: { flex: 1 }, warningBlockContainer: { marginHorizontal: 16, marginTop: 16 }, spinner: { marginTop: 12 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationRejectedNotice(guildId) {
   let createEnableRequest;
   let first;
   let hasItem;
@@ -197,7 +197,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[18] = tmp4;
   cResult[19] = tmp43;
   tmp42 = tmp43;
-}) : ((guildId) => {
+}) : (function ApplicationRejectedNotice(guildId) {
   let hasItem;
   let hasItem1;
   let intl;
@@ -229,7 +229,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     tmp14 = closure_7(tmp9Result, obj2);
   } else if (null != requestRejectedNoticeText) {
     const obj3 = { notice: requestRejectedNoticeText };
-    tmp14 = closure_7(tmp9(17926), obj3);
+    tmp14 = closure_7(tmp9(18213), obj3);
   } else if (tmp13) {
     const obj4 = { notice: intl3.string(guildId(1126).t.MyJpJT) };
     const tmp9Result5 = WarningNoticeDefault;
@@ -262,7 +262,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   return tmp24;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsRoleSubscription(arg0) {
   let children;
   let guildId;
   let items;
@@ -321,7 +321,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return tmp8;
-}) : ((arg0) => {
+}) : (function GuildSettingsRoleSubscription(arg0) {
   let children;
   let guildId;
   let items;
@@ -341,7 +341,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp5;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsRoleSubscriptionContainer(guildId) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(8);
@@ -380,7 +380,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[3] = tmp4;
   cResult[4] = tmp12;
   tmp11 = tmp12;
-}) : ((guildId) => {
+}) : (function GuildSettingsRoleSubscriptionContainer(guildId) {
   let RoleSubscriptionSettingsDisabledContextProvider;
   let obj2;
   let obj3;

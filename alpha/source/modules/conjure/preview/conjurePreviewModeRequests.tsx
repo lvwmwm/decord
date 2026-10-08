@@ -1,10 +1,10 @@
-// Module ID: 12929
-// Function ID: 12930
+// Module ID: 13079
+// Function ID: 13080
 // Name: conjurePreviewModeRequests
 // Dependencies: [19, 558, 576, 2]
 // Exports: requestConjurePreviewMode
 
-// Module 12929 (conjurePreviewModeRequests)
+// Module 13079 (conjurePreviewModeRequests)
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -14,7 +14,7 @@ let _require, dependencyMap;
 
 let react = react_mod;
 const set = new Set();
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, cResult) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePreviewModeRequests(arg0, cResult) {
   let closure_0;
   let closure_2;
   let current;
@@ -27,7 +27,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, cResult) => 
   cResult = obj.c(5);
   react = react.useRef(cResult);
   if (cResult[0] !== cResult) {
-    const fn = function f() {
+    const fn = function s() {
       closure_2.current = current;
     };
     cResult[0] = cResult;
@@ -38,7 +38,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, cResult) => 
   }
   const layoutEffect = obj2.useLayoutEffect(tmp2);
   if (cResult[2] !== arg0) {
-    const fn2 = function s() {
+    const fn2 = function f() {
       let listener;
       let ref;
       if (null != listener) {
@@ -64,7 +64,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, cResult) => 
     tmp5 = cResult[4];
   }
   const effect = obj2.useEffect(tmp4, tmp5);
-}) : ((arg0, cResult) => {
+}) : (function useConjurePreviewModeRequests(arg0, cResult) {
   let closure_2;
   let closure_0 = arg0;
   const current = cResult;

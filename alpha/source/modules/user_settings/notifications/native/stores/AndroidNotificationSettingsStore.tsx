@@ -1,14 +1,14 @@
-// Module ID: 15320
-// Function ID: 15321
+// Module ID: 15582
+// Function ID: 15583
 // Name: AndroidNotificationSettingsStore
-// Dependencies: [5, 1254, 1369, 8995, 1259, 558, 576, 4498, 2]
+// Dependencies: [5, 1266, 1381, 10820, 1271, 558, 576, 4690, 2]
 // Exports: initializeAndroidNotificationSettingsStore, setAndroidMessageNotificationsEnabled, setAndroidNotificationLightsEnabled, setAndroidNotificationSoundsEnabled, setAndroidNotificationVibrationsEnabled
 
-// Module 15320 (AndroidNotificationSettingsStore)
+// Module 15582 (AndroidNotificationSettingsStore)
 import react from "react" /* 576 */;
-import PushNotificationDefault from "PushNotification" /* 8995 */;
+import PushNotificationDefault from "PushNotification" /* 10820 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_1254 from "module_1254" /* 1254 */;
+import module_1266 from "module_1266" /* 1266 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, c3, c4;
 
 let tmp;
-const _slicedToArray = tmp(4498);
+const _slicedToArray = tmp(4690);
 let obj = function _initializeAndroidNotificationSettingsStore() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let closure_0;
@@ -148,9 +148,9 @@ let obj = function _initializeAndroidNotificationSettingsStore() {
   });
   return obj(...arguments);
 };
-let closure_4 = module_1254.createWithEqualityFn(() => ({ isLightsEnabled: "toCharArray$esjava$1", isVibrationsEnabled: "Symbol", isSoundsEnabled: "IconComponent", isNotifyEveryTime: "Reflect" }));
+let closure_4 = module_1266.createWithEqualityFn(() => ({ isLightsEnabled: "code", isVibrationsEnabled: "max", isSoundsEnabled: "shapes", isNotifyEveryTime: "Array" }));
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAndroidNotificationLightsEnabled() {
   let first;
   obj = react;
   const cResult = obj.c(1);
@@ -164,9 +164,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return closure_4(first, _slicedToArray.shallow);
-}) : (() => closure_4((isLightsEnabled) => isLightsEnabled.isLightsEnabled, _slicedToArray.shallow));
+}) : (function useAndroidNotificationLightsEnabled() {
+  return closure_4((isLightsEnabled) => isLightsEnabled.isLightsEnabled, _slicedToArray.shallow);
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAndroidNotificationVibrationsEnabled() {
   let first;
   obj = react;
   const cResult = obj.c(1);
@@ -180,9 +182,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return closure_4(first, _slicedToArray.shallow);
-}) : (() => closure_4((isVibrationsEnabled) => isVibrationsEnabled.isVibrationsEnabled, _slicedToArray.shallow));
+}) : (function useAndroidNotificationVibrationsEnabled() {
+  return closure_4((isVibrationsEnabled) => isVibrationsEnabled.isVibrationsEnabled, _slicedToArray.shallow);
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAndroidNotificationSoundsEnabled() {
   let first;
   obj = react;
   const cResult = obj.c(1);
@@ -196,9 +200,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return closure_4(first, _slicedToArray.shallow);
-}) : (() => closure_4((isSoundsEnabled) => isSoundsEnabled.isSoundsEnabled, _slicedToArray.shallow));
+}) : (function useAndroidNotificationSoundsEnabled() {
+  return closure_4((isSoundsEnabled) => isSoundsEnabled.isSoundsEnabled, _slicedToArray.shallow);
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAndroidMessageNotificationsEnabled() {
   let first;
   obj = react;
   const cResult = obj.c(1);
@@ -212,7 +218,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return closure_4(first, _slicedToArray.shallow);
-}) : (() => closure_4((isNotifyEveryTime) => isNotifyEveryTime.isNotifyEveryTime, _slicedToArray.shallow));
+}) : (function useAndroidMessageNotificationsEnabled() {
+  return closure_4((isNotifyEveryTime) => isNotifyEveryTime.isNotifyEveryTime, _slicedToArray.shallow);
+});
 let result = size.fileFinishedImporting("modules/user_settings/notifications/native/stores/AndroidNotificationSettingsStore.tsx");
 
 export const initializeAndroidNotificationSettingsStore = function initializeAndroidNotificationSettingsStore() {

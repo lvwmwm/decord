@@ -1,12 +1,12 @@
-// Module ID: 5430
-// Function ID: 5431
+// Module ID: 5739
+// Function ID: 5740
 // Name: HandleConfirmPaymentRegistry
-// Dependencies: [5, 1085, 1096, 5412, 5426, 1282, 2]
+// Dependencies: [5, 1085, 1096, 5721, 5735, 1294, 2]
 // Exports: getIsStripeDirectConfirmationPaymentSource, getIsStripeRedirectedPaymentSource
 
-// Module 5430 (HandleConfirmPaymentRegistry)
+// Module 5739 (HandleConfirmPaymentRegistry)
 import Constants2 from "Constants" /* 1096 */;
-import BillingSharedActionCreators from "BillingSharedActionCreators" /* 5412 */;
+import BillingSharedActionCreators from "BillingSharedActionCreators" /* 5721 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;

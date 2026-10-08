@@ -1,22 +1,22 @@
-// Module ID: 9598
-// Function ID: 9599
+// Module ID: 10791
+// Function ID: 10792
 // Name: RequestToSpeakParticipantList
-// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 6664, 7861, 9599, 1188, 4892, 5916, 1126, 5043, 9600, 9601, 4815, 5595, 8107, 6576, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 587, 558, 576, 6841, 8279, 10792, 1200, 5086, 6189, 1126, 5412, 10793, 10794, 5009, 5961, 7482, 6752, 2]
 
-// Module 9598 (RequestToSpeakParticipantList)
+// Module 10791 (RequestToSpeakParticipantList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 8107 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 7482 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let channel, importDefault, obj1, participant, tmp2, tmp3, tmp8;
+let importDefault;
 
 let closure_4;
 let hasOwnProperty;
@@ -32,7 +32,7 @@ createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 let closure_6 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function RequestToSpeakParticipant(participant) {
   let analyticsLocations;
   let items;
   let items1;
@@ -43,7 +43,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) =>
   let obj = participant(analyticsLocations[7]);
   const cResult = obj.c(54);
   participant = participant.participant;
-  channel = participant.channel;
+  const channel = participant.channel;
   ({ onGrantRequest, onDenyRequest } = participant);
   const tmp4 = closure_6();
   analyticsLocations = channel(analyticsLocations[8])().analyticsLocations;
@@ -287,16 +287,16 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) =>
       obj3 = items5;
     }
   }
-  const fn = function o() {
+  function handleUserProfile() {
     const obj = { userId: participant.user.id, channelId: channel.id, isVoiceContext: true, sourceAnalyticsLocations: analyticsLocations };
     showUserProfileActionSheetDefault(obj);
-  };
+  }
   cResult[0] = analyticsLocations;
   cResult[1] = channel.id;
   cResult[2] = participant.user.id;
-  cResult[3] = fn;
-  tmp6 = fn;
-}) : ((participant) => {
+  cResult[3] = handleUserProfile;
+  tmp6 = handleUserProfile;
+}) : (function RequestToSpeakParticipant(participant) {
   let Avatar;
   let intl;
   let intl2;
@@ -310,14 +310,14 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) =>
   let onGrantRequest;
   let tmp6Result;
   participant = participant.participant;
-  channel = participant.channel;
+  const channel = participant.channel;
   let analyticsLocations;
   ({ onGrantRequest, onDenyRequest } = participant);
   const tmp = closure_6();
   analyticsLocations = channel(analyticsLocations[8])().analyticsLocations;
   let obj = { style: tmp.participantItemContainer, children: items4 };
   const obj2 = {
-    onPress() {
+    onPress: function handleUserProfile() {
       const obj = { userId: participant.user.id, channelId: channel.id, isVoiceContext: true, sourceAnalyticsLocations: analyticsLocations };
       showUserProfileActionSheetDefault(obj);
     },
@@ -367,7 +367,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) =>
   return closure_5(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RequestToSpeakParticipantList(channel) {
   let container;
   let emptyContainer;
   let emptyParticipant;
@@ -380,30 +380,31 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   let obj = channel(sortedRequestToSpeakParticipants[7]);
   const cResult = obj.c(34);
   channel = channel.channel;
+  const height = channel.height;
   const tmp4 = closure_6();
   importDefault = tmp4;
   let obj2 = channel(sortedRequestToSpeakParticipants[19]);
   sortedRequestToSpeakParticipants = obj2.useSortedRequestToSpeakParticipants(channel.id);
   if (cResult[0] !== channel) {
-    const fn = function o(user) {
+    function handleGrantRequest(user) {
       const obj = StageChannelActionCreators;
       obj.setUserSuppress(channel, user.user.id, false);
-    };
+    }
     cResult[0] = channel;
-    cResult[1] = fn;
-    tmp5 = fn;
+    cResult[1] = handleGrantRequest;
+    tmp5 = handleGrantRequest;
   } else {
     tmp5 = cResult[1];
   }
   let closure_3 = tmp5;
   if (cResult[2] !== channel) {
-    const fn2 = function x(user) {
+    function handleDenyRequest(user) {
       const obj = StageChannelActionCreators;
       obj.setUserSuppress(channel, user.user.id, true);
-    };
+    }
     cResult[2] = channel;
-    cResult[3] = fn2;
-    tmp6 = fn2;
+    cResult[3] = handleDenyRequest;
+    tmp6 = handleDenyRequest;
   } else {
     tmp6 = cResult[3];
   }
@@ -486,37 +487,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         if (cResult[19] === tmp5) {
           if (cResult[20] === sortedRequestToSpeakParticipants) {
             let tmp7;
+            let tmp8;
             if (cResult[21] === tmp4.emptyParticipant) {
               tmp7 = cResult[22];
             }
-            class C {
-              constructor(arg0, arg1) {
-                tmp = closure_2[arg1];
-                closure_0 = tmp;
-                if (null == tmp) {
-                  tmp6 = closure_4;
-                  tmp7 = closure_3;
-                  obj1 = { style: null };
-                  tmp8 = closure_1;
-                  obj1.style = closure_1.emptyParticipant;
-                  tmp5 = closure_4(closure_3, obj1);
-                } else {
-                  tmp2 = closure_4;
-                  tmp3 = closure_1_7;
-                  obj = { participant: null, channel: null, onGrantRequest: null, onDenyRequest: null };
-                  obj.participant = tmp;
-                  tmp4 = closure_0;
-                  obj.channel = closure_0;
-                  obj.onGrantRequest = function onGrantRequest() {
-                    return closure_3(closure_0);
-                  };
-                  obj.onDenyRequest = function onDenyRequest() {
-                    return closure_4(closure_0);
-                  };
-                  tmp5 = closure_4(closure_1_7, obj, tmp.user.id);
-                }
-                return tmp5;
-              }
+            if (cResult[23] !== height) {
+              const obj7 = { height };
+              cResult[23] = height;
+              cResult[24] = obj7;
+              tmp8 = obj7;
+            } else {
+              tmp8 = cResult[24];
             }
             if (cResult[25] === tmp4.listContainer) {
               let tmp9;
@@ -524,67 +505,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
               if (cResult[26] === tmp8) {
                 tmp9 = cResult[27];
               }
-              class C {
-                constructor(arg0, arg1) {
-                  tmp = closure_2[arg1];
-                  closure_0 = tmp;
-                  if (null == tmp) {
-                    tmp6 = closure_4;
-                    tmp7 = closure_3;
-                    obj1 = { style: null };
-                    tmp8 = closure_1;
-                    obj1.style = closure_1.emptyParticipant;
-                    tmp5 = closure_4(closure_3, obj1);
-                  } else {
-                    tmp2 = closure_4;
-                    tmp3 = closure_1_7;
-                    obj = { participant: null, channel: null, onGrantRequest: null, onDenyRequest: null };
-                    obj.participant = tmp;
-                    tmp4 = closure_0;
-                    obj.channel = closure_0;
-                    obj.onGrantRequest = function onGrantRequest() {
-                      return closure_3(closure_0);
-                    };
-                    obj.onDenyRequest = function onDenyRequest() {
-                      return closure_4(closure_0);
-                    };
-                    tmp5 = closure_4(closure_1_7, obj, tmp.user.id);
-                  }
-                  return tmp5;
-                }
-              }
               const sum = sortedRequestToSpeakParticipants.length + 1;
               if (cResult[28] !== sum) {
-                const items1 = [];
-                class C {
-                  constructor(arg0, arg1) {
-                    tmp = closure_2[arg1];
-                    closure_0 = tmp;
-                    if (null == tmp) {
-                      tmp6 = closure_4;
-                      tmp7 = closure_3;
-                      obj1 = { style: null };
-                      tmp8 = closure_1;
-                      obj1.style = closure_1.emptyParticipant;
-                      tmp5 = closure_4(closure_3, obj1);
-                    } else {
-                      tmp2 = closure_4;
-                      tmp3 = closure_1_7;
-                      obj = { participant: null, channel: null, onGrantRequest: null, onDenyRequest: null };
-                      obj.participant = tmp;
-                      tmp4 = closure_0;
-                      obj.channel = closure_0;
-                      obj.onGrantRequest = function onGrantRequest() {
-                        return closure_3(closure_0);
-                      };
-                      obj.onDenyRequest = function onDenyRequest() {
-                        return closure_4(closure_0);
-                      };
-                      tmp5 = closure_4(closure_1_7, obj, tmp.user.id);
-                    }
-                    return tmp5;
-                  }
-                }
+                const items1 = [sum];
                 cResult[28] = sum;
                 cResult[29] = items1;
                 tmp11 = items1;
@@ -593,43 +516,20 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
               }
               if (cResult[30] === tmp7) {
                 if (cResult[31] === tmp9) {
-                  class C {
-                    constructor(arg0, arg1) {
-                      tmp = closure_2[arg1];
-                      closure_0 = tmp;
-                      if (null == tmp) {
-                        tmp6 = closure_4;
-                        tmp7 = closure_3;
-                        obj1 = { style: null };
-                        tmp8 = closure_1;
-                        obj1.style = closure_1.emptyParticipant;
-                        tmp5 = closure_4(closure_3, obj1);
-                      } else {
-                        tmp2 = closure_4;
-                        tmp3 = closure_1_7;
-                        obj = { participant: null, channel: null, onGrantRequest: null, onDenyRequest: null };
-                        obj.participant = tmp;
-                        tmp4 = closure_0;
-                        obj.channel = closure_0;
-                        obj.onGrantRequest = function onGrantRequest() {
-                          return closure_3(closure_0);
-                        };
-                        obj.onDenyRequest = function onDenyRequest() {
-                          return closure_4(closure_0);
-                        };
-                        tmp5 = closure_4(closure_1_7, obj, tmp.user.id);
-                      }
-                      return tmp5;
-                    }
+                  let tmp12;
+                  if (cResult[32] === tmp11) {
+                    tmp12 = cResult[33];
                   }
+                  return tmp12;
                 }
               }
-              const obj7 = { style: tmp9, itemSize: 64, renderItem: tmp7, keyboardShouldPersistTaps: "always", sections: tmp11 };
+              const obj8 = { style: tmp9, itemSize: 64, renderItem: tmp7, keyboardShouldPersistTaps: "always", sections: tmp11 };
+              const tmp15 = closure_4(require("FastList"), obj8);
               cResult[30] = tmp7;
               cResult[31] = tmp9;
               cResult[32] = tmp11;
-              cResult[33] = closure_4(require("FastList"), obj7);
-              const tmp15 = closure_4(require("FastList"), obj7);
+              cResult[33] = tmp15;
+              tmp12 = tmp15;
             }
             const items2 = [tmp4.listContainer, tmp8];
             cResult[25] = tmp4.listContainer;
@@ -640,44 +540,37 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         }
       }
     }
-    class C {
-      constructor(arg0, arg1) {
-        tmp = closure_2[arg1];
-        closure_0 = tmp;
-        if (null == tmp) {
-          tmp6 = closure_4;
-          tmp7 = closure_3;
-          obj1 = { style: null };
-          tmp8 = closure_1;
-          obj1.style = closure_1.emptyParticipant;
-          tmp5 = closure_4(closure_3, obj1);
-        } else {
-          tmp2 = closure_4;
-          tmp3 = closure_1_7;
-          obj = { participant: null, channel: null, onGrantRequest: null, onDenyRequest: null };
-          obj.participant = tmp;
-          tmp4 = closure_0;
-          obj.channel = closure_0;
-          obj.onGrantRequest = function onGrantRequest() {
-            return closure_3(closure_0);
-          };
-          obj.onDenyRequest = function onDenyRequest() {
-            return closure_4(closure_0);
-          };
-          tmp5 = closure_4(closure_1_7, obj, tmp.user.id);
-        }
-        return tmp5;
+    function renderRow(arg0, arg1) {
+      let closure_0;
+      let tmp5;
+      channel = tmp;
+      if (null == sortedRequestToSpeakParticipants[arg1]) {
+        const obj2 = { style: emptyParticipant.emptyParticipant };
+        tmp5 = closure_4(closure_3, obj2);
+      } else {
+        const obj = {
+          participant: sortedRequestToSpeakParticipants[arg1],
+          channel,
+          onGrantRequest() {
+              return closure_3(closure_0);
+            },
+          onDenyRequest() {
+              return closure_4(closure_0);
+            }
+        };
+        tmp5 = closure_4(closure_1_7, obj, tmp.user.id);
       }
+      return tmp5;
     }
     cResult[17] = channel;
     cResult[18] = tmp6;
     cResult[19] = tmp5;
     cResult[20] = sortedRequestToSpeakParticipants;
     cResult[21] = tmp4.emptyParticipant;
-    cResult[22] = C;
-    tmp7 = C;
+    cResult[22] = renderRow;
+    tmp7 = renderRow;
   }
-}) : ((channel) => {
+}) : (function RequestToSpeakParticipantList(channel) {
   let emptyParticipant;
   let intl;
   let intl2;
@@ -710,7 +603,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     const obj6 = {
       style: items1,
       itemSize: 64,
-      renderItem(arg0, arg1) {
+      renderItem: function renderRow(arg0, arg1) {
           let closure_0;
           let tmp5;
           channel = tmp;

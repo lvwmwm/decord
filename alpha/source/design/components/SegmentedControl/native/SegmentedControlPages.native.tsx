@@ -1,16 +1,16 @@
-// Module ID: 10987
-// Function ID: 10988
+// Module ID: 11211
+// Function ID: 11212
 // Name: SegmentedControlPages
-// Dependencies: [109, 32, 19, 17, 21, 4618, 558, 576, 10988, 1369, 6147, 5786, 5745, 2]
+// Dependencies: [109, 32, 19, 17, 21, 4810, 558, 576, 11212, 1381, 6326, 5369, 5328, 2]
 
-// Module 10987 (SegmentedControlPages)
+// Module 11211 (SegmentedControlPages)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4618 */;
-import react_native2 from "react-native" /* 5786 */;
-import MathUtils from "MathUtils" /* 10988 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4810 */;
+import react_native2 from "react-native" /* 5369 */;
+import MathUtils from "MathUtils" /* 11212 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -19,7 +19,7 @@ import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const ReanimatedRexport = ReanimatedRexport2;
-let _require, dependencyMap, importDefault, set;
+let _require, dependencyMap, importDefault, obj1, set, tmp3;
 
 let closure_3 = ["reportedPageIndex", "pageIndex", "scrollTargetPageIndex", "index", "item", "activePageRangeStart", "activePageRangeEnd"];
 const ScrollView = react_native.ScrollView;
@@ -64,7 +64,7 @@ const __initData21 = { code: "function SegmentedControlPagesNativeTsx35(hidden){
 const __initData22 = { code: "function SegmentedControlPagesNativeTsx36(){const{isVisibleOnScreen}=this.__closure;return{display:isVisibleOnScreen.get()?'flex':'none',flex:1};}" };
 const __initData23 = { code: "function SegmentedControlPagesNativeTsx37(){const{activePageRangeStart,activePageRangeEnd}=this.__closure;return[activePageRangeStart.get(),activePageRangeEnd.get()];}" };
 const __initData24 = { code: "function SegmentedControlPagesNativeTsx38([start,end]){const{index,runOnJS,setFreeze}=this.__closure;const isInActiveRange_0=index>=start&&index<=end;runOnJS(setFreeze)(!isInActiveRange_0);}" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onEndDragWorklet) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SegmentedControlPages(onEndDragWorklet) {
   let activeIndex;
   let ae;
   let bounces;
@@ -197,7 +197,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onEndDragWorklet) =>
           }
           if (tmp4) {
             const result2 = sharedValue1.set(obj2.get());
-            const tmp13Result = tmp13(4618);
+            const tmp13Result = tmp13(4810);
             const runOnJSResult = tmp13Result.runOnJS(onPageChanged);
             runOnJSResult(sharedValue.get());
           }
@@ -236,7 +236,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onEndDragWorklet) =>
             const result = obj.set(-1);
           } else {
             const value = obj.get();
-            const tmpResult = tmp(4618);
+            const tmpResult = tmp(4810);
             tmpResult.runOnJS(closure_18)(value);
           }
         }
@@ -360,7 +360,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onEndDragWorklet) =>
       he.__initData = __initData3;
       const derivedValue = useDerivedValue(he);
       const tmpResult9 = tmp(tmp2[5]);
-      class Ie {
+      class Se {
         constructor() {
           const value = sharedValue.get();
           const rounded = Math.floor(value);
@@ -379,9 +379,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onEndDragWorklet) =>
         }
       }
       const obj15 = { pageIndex: sharedValue, scrollTargetPageIndex: derivedValue };
-      Ie.__closure = obj15;
-      Ie.__workletHash = 9125733538935;
-      Ie.__initData = re;
+      Se.__closure = obj15;
+      Se.__workletHash = 9125733538935;
+      Se.__initData = re;
       function ve(arg0, arg1) {
         const tmp = null != arg1 && arg1[0] === arg0[0] && arg1[1] === arg0[1];
         if (!tmp) {
@@ -392,7 +392,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onEndDragWorklet) =>
       ve.__closure = obj16;
       ve.__workletHash = 14106897948399;
       ve.__initData = style;
-      const animatedReaction2 = tmpResult9.useAnimatedReaction(Ie, ve);
+      const animatedReaction2 = tmpResult9.useAnimatedReaction(Se, ve);
       if (0 === pageWidth) {
         return null;
       } else {
@@ -554,7 +554,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onEndDragWorklet) =>
   cResult[2] = pagerRef;
   cResult[3] = scrollTarget;
   tmp11 = Z;
-}) : ((onEndDragWorklet) => {
+}) : (function SegmentedControlPages(onEndDragWorklet) {
   let activeIndex;
   let bounces;
   let c21;
@@ -603,14 +603,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onEndDragWorklet) =>
     ref2.current = current;
   }, []);
   let obj4 = onBeginDragWorklet(onScrollWorklet[5]);
-  class I {
+  class S {
     constructor() {
       return activeIndex.get();
     }
   }
-  I.__closure = { activeIndex };
-  I.__workletHash = 1395514015727;
-  I.__initData = __initData;
+  S.__closure = { activeIndex };
+  S.__workletHash = 1395514015727;
+  S.__initData = __initData;
   const fn = function v(arg0) {
     const obj = ReanimatedRexport2;
     obj.runOnJS(callback)(arg0);
@@ -619,7 +619,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onEndDragWorklet) =>
   fn.__workletHash = 12907997375351;
   fn.__initData = __initData;
   ({ runOnJS: onBeginDragWorklet(onScrollWorklet[5]).runOnJS, updateCurrentActiveIndex });
-  const animatedReaction = obj4.useAnimatedReaction(I, fn);
+  const animatedReaction = obj4.useAnimatedReaction(S, fn);
   const fn2 = function p() {
     return sharedValue.get();
   };
@@ -627,15 +627,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onEndDragWorklet) =>
   fn2.__workletHash = 10499929423113;
   fn2.__initData = derivedValue;
   const obj6 = onBeginDragWorklet(onScrollWorklet[5]);
-  class S {
+  class I {
     constructor(arg0) {
       const result = activeIndex.set(arg0);
     }
   }
-  S.__closure = { activeIndex };
-  S.__workletHash = 4431632836916;
-  S.__initData = __initData4;
-  const animatedReaction1 = obj6.useAnimatedReaction(fn2, S);
+  I.__closure = { activeIndex };
+  I.__workletHash = 4431632836916;
+  I.__initData = __initData4;
+  const animatedReaction1 = obj6.useAnimatedReaction(fn2, I);
   const items1 = [onPageChangeRef];
   callback1 = scrollTarget.useCallback((AUTO_DISMISS) => {
     const tmp = onPageChangeRef;
@@ -687,7 +687,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onEndDragWorklet) =>
         }
         if (tmp4) {
           const result2 = sharedValue1.set(obj2.get());
-          const tmp13Result = tmp13(4618);
+          const tmp13Result = tmp13(4810);
           const runOnJSResult = tmp13Result.runOnJS(callback1);
           runOnJSResult(sharedValue.get());
         }
@@ -729,7 +729,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onEndDragWorklet) =>
         const result = obj.set(-1);
       } else {
         const value = obj.get();
-        const tmpResult = tmp(4618);
+        const tmpResult = tmp(4810);
         tmpResult.runOnJS(callback2)(value);
       }
     }
@@ -862,7 +862,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onEndDragWorklet) =>
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportedPageIndex) => {
+let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? (function SegmentedControlPage(reportedPageIndex) {
   let closure_0;
   let closure_1;
   let closure_2;
@@ -885,13 +885,15 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportedPageIn
     const item = reportedPageIndex.item;
     class P {
       constructor() {
-        let tmp2 = Math.floor(closure_3.get()) === closure_2;
-        const obj = closure_3;
+        obj = closure_3;
+        tmp = closure_2;
+        tmp2 = Math.floor(closure_3.get()) === closure_2;
         if (!tmp2) {
-          const _Math = Math;
+          _Math = Math;
           tmp2 = Math.ceil(obj.get()) === tmp;
         }
         if (!tmp2) {
+          tmp3 = closure_5;
           tmp2 = closure_5.get() === tmp;
         }
         return tmp2;
@@ -906,8 +908,8 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportedPageIn
     reportedPageIndex(reportedPageIndex, closure_3);
     class O {
       constructor() {
-        let pointerEvents = "box-none";
-        if (reportedPageIndex.get() !== closure_2) {
+        pointerEvents = "box-none";
+        if (closure_4.get() !== closure_2) {
           pointerEvents = "none";
         }
         return { pointerEvents };
@@ -920,7 +922,7 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportedPageIn
     cResult[7] = scrollTargetPageIndex;
     class C {
       constructor() {
-        return reportedPageIndex.get() !== closure_2;
+        return closure_4.get() !== closure_2;
       }
     }
     tmp10 = scrollTargetPageIndex;
@@ -933,13 +935,15 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportedPageIn
     closure_3 = cResult[5];
     class P {
       constructor() {
-        let tmp2 = Math.floor(closure_3.get()) === closure_2;
-        const obj = closure_3;
+        obj = closure_3;
+        tmp = closure_2;
+        tmp2 = Math.floor(closure_3.get()) === closure_2;
         if (!tmp2) {
-          const _Math = Math;
+          _Math = Math;
           tmp2 = Math.ceil(obj.get()) === tmp;
         }
         if (!tmp2) {
+          tmp3 = closure_5;
           tmp2 = closure_5.get() === tmp;
         }
         return tmp2;
@@ -948,16 +952,18 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportedPageIn
     reportedPageIndex = tmp9;
     closure_5 = cResult[7];
   }
-  const tmpResult = tmp(4618);
+  const tmpResult = tmp(4810);
   class P {
     constructor() {
-      let tmp2 = Math.floor(closure_3.get()) === closure_2;
-      const obj = closure_3;
+      obj = closure_3;
+      tmp = closure_2;
+      tmp2 = Math.floor(closure_3.get()) === closure_2;
       if (!tmp2) {
-        const _Math = Math;
+        _Math = Math;
         tmp2 = Math.ceil(obj.get()) === tmp;
       }
       if (!tmp2) {
+        tmp3 = closure_5;
         tmp2 = closure_5.get() === tmp;
       }
       return tmp2;
@@ -967,11 +973,11 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportedPageIn
   P.__workletHash = 2724531395868;
   P.__initData = __initData13;
   const derivedValue = tmpResult.useDerivedValue(P);
-  const tmpResult3 = tmp(4618);
+  const tmpResult3 = tmp(4810);
   class O {
     constructor() {
-      let pointerEvents = "box-none";
-      if (reportedPageIndex.get() !== closure_2) {
+      pointerEvents = "box-none";
+      if (closure_4.get() !== closure_2) {
         pointerEvents = "none";
       }
       return { pointerEvents };
@@ -993,13 +999,15 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportedPageIn
     const obj4 = derivedValue;
     class P {
       constructor() {
-        let tmp2 = Math.floor(closure_3.get()) === closure_2;
-        const obj = closure_3;
+        obj = closure_3;
+        tmp = closure_2;
+        tmp2 = Math.floor(closure_3.get()) === closure_2;
         if (!tmp2) {
-          const _Math = Math;
+          _Math = Math;
           tmp2 = Math.ceil(obj.get()) === tmp;
         }
         if (!tmp2) {
+          tmp3 = closure_5;
           tmp2 = closure_5.get() === tmp;
         }
         return tmp2;
@@ -1007,7 +1015,7 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportedPageIn
     }
     class D {
       constructor() {
-        return reportedPageIndex.get() !== closure_2;
+        return closure_4.get() !== closure_2;
       }
     }
     let obj2 = { reportedPageIndex: tmp9, index: tmp6 };
@@ -1016,16 +1024,17 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportedPageIn
     D.__initData = __initData15;
     class R {
       constructor(arg0) {
-        const obj = ReanimatedRexport2;
-        obj.runOnJS(closure_8)(arg0);
+        obj = closure_0(closure_2[5]);
+        tmp = obj.runOnJS(closure_8)(reportedPageIndex);
+        return;
       }
     }
     let obj3 = { runOnJS: null, setIsAccessibilityHidden: tmp20[1] };
     const useAnimatedReaction = tmp23.useAnimatedReaction;
     class O {
       constructor() {
-        let pointerEvents = "box-none";
-        if (reportedPageIndex.get() !== closure_2) {
+        pointerEvents = "box-none";
+        if (closure_4.get() !== closure_2) {
           pointerEvents = "none";
         }
         return { pointerEvents };
@@ -1038,27 +1047,35 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportedPageIn
     ref = derivedValue.useRef(null);
     class C {
       constructor() {
-        return reportedPageIndex.get() !== closure_2;
+        return closure_4.get() !== closure_2;
       }
     }
     if (cResult[12] !== current) {
       class H {
         constructor() {
-          current = ref.current;
-          const tmp = ref;
+          current = closure_10.current;
+          tmp = closure_10;
           if (current) {
-            current = !current;
+            tmp2 = closure_7;
+            current = !closure_7;
           }
-          tmp.current = current;
+          tmp.current = closure_7;
           if (current) {
-            const obj = PlatformUtils;
+            tmp3 = closure_0;
+            tmp4 = closure_2;
+            obj = closure_0(closure_2[9]);
             current = obj.isIOS();
           }
           if (current) {
-            const obj3 = { ref, delay: 100 };
-            const obj2 = react_native2;
-            const result = obj2.setAccessibilityFocus(obj3);
+            tmp5 = closure_0;
+            tmp6 = closure_2;
+            obj2 = closure_0(closure_2[11]);
+            obj1 = { ref: null, delay: 100 };
+            tmp7 = closure_9;
+            obj1.ref = closure_9;
+            result = obj2.setAccessibilityFocus(obj1);
           }
+          return;
         }
       }
       let items = [current];
@@ -1067,13 +1084,15 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportedPageIn
       cResult[14] = items;
       class P {
         constructor() {
-          let tmp2 = Math.floor(closure_3.get()) === closure_2;
-          const obj = closure_3;
+          obj = closure_3;
+          tmp = closure_2;
+          tmp2 = Math.floor(closure_3.get()) === closure_2;
           if (!tmp2) {
-            const _Math = Math;
+            _Math = Math;
             tmp2 = Math.ceil(obj.get()) === tmp;
           }
           if (!tmp2) {
+            tmp3 = closure_5;
             tmp2 = closure_5.get() === tmp;
           }
           return tmp2;
@@ -1081,71 +1100,90 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportedPageIn
       }
       class D {
         constructor() {
-          return reportedPageIndex.get() !== closure_2;
+          return closure_4.get() !== closure_2;
         }
       }
     } else {
       class H {
         constructor() {
-          current = ref.current;
-          const tmp = ref;
+          current = closure_10.current;
+          tmp = closure_10;
           if (current) {
-            current = !current;
+            tmp2 = closure_7;
+            current = !closure_7;
           }
-          tmp.current = current;
+          tmp.current = closure_7;
           if (current) {
-            const obj = PlatformUtils;
+            tmp3 = closure_0;
+            tmp4 = closure_2;
+            obj = closure_0(closure_2[9]);
             current = obj.isIOS();
           }
           if (current) {
-            const obj3 = { ref, delay: 100 };
-            const obj2 = react_native2;
-            const result = obj2.setAccessibilityFocus(obj3);
+            tmp5 = closure_0;
+            tmp6 = closure_2;
+            obj2 = closure_0(closure_2[11]);
+            obj1 = { ref: null, delay: 100 };
+            tmp7 = closure_9;
+            obj1.ref = closure_9;
+            result = obj2.setAccessibilityFocus(obj1);
           }
+          return;
         }
       }
       tmp30 = cResult[14];
     }
     const effect = obj4.useEffect(tmp29, tmp30);
-    const fn = function z() {
-      let display = "none";
-      if (derivedValue.get()) {
-        display = "flex";
+    const tmpResult4 = tmp(4810);
+    class A {
+      constructor() {
+        display = "none";
+        if (closure_6.get()) {
+          display = "flex";
+        }
+        return { display, flex: 1 };
       }
-      return { display, flex: 1 };
-    };
+    }
     const obj5 = { isVisibleOnScreen: derivedValue };
-    fn.__closure = obj5;
-    fn.__workletHash = 6740536171688;
-    fn.__initData = __initData17;
-    const tmpResult4 = tmp(4618);
-    const animatedStyle = tmpResult4.useAnimatedStyle(fn);
+    A.__closure = obj5;
+    A.__workletHash = 6740536171688;
+    A.__initData = __initData17;
+    const animatedStyle = tmpResult4.useAnimatedStyle(A);
     if (cResult[15] === tmp4) {
       class H {
         constructor() {
-          current = ref.current;
-          const tmp = ref;
+          current = closure_10.current;
+          tmp = closure_10;
           if (current) {
-            current = !current;
+            tmp2 = closure_7;
+            current = !closure_7;
           }
-          tmp.current = current;
+          tmp.current = closure_7;
           if (current) {
-            const obj = PlatformUtils;
+            tmp3 = closure_0;
+            tmp4 = closure_2;
+            obj = closure_0(closure_2[9]);
             current = obj.isIOS();
           }
           if (current) {
-            const obj3 = { ref, delay: 100 };
-            const obj2 = react_native2;
-            const result = obj2.setAccessibilityFocus(obj3);
+            tmp5 = closure_0;
+            tmp6 = closure_2;
+            obj2 = closure_0(closure_2[11]);
+            obj1 = { ref: null, delay: 100 };
+            tmp7 = closure_9;
+            obj1.ref = closure_9;
+            result = obj2.setAccessibilityFocus(obj1);
           }
+          return;
         }
       }
     }
     class N {
       constructor() {
-        let tmp2 = closure_2 >= closure_1.get();
-        const tmp = closure_2;
+        tmp = closure_2;
+        tmp2 = closure_2 >= closure_1.get();
         if (tmp2) {
+          tmp3 = closure_0;
           tmp2 = tmp <= closure_0.get();
         }
         return !tmp2;
@@ -1158,14 +1196,13 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportedPageIn
   }
   class C {
     constructor() {
-      return reportedPageIndex.get() !== closure_2;
+      return closure_4.get() !== closure_2;
     }
   }
   cResult[9] = tmp6;
-  cResult[10] = tmp9;
   cResult[11] = C;
   tmp18 = C;
-}) : ((reportedPageIndex) => {
+}) : (function SegmentedControlPage(reportedPageIndex) {
   let Freeze;
   let first;
   let obj10;
@@ -1202,7 +1239,7 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportedPageIn
   fn.__initData = __initData18;
   const derivedValue = obj.useDerivedValue(fn);
   let obj2 = reportedPageIndex(scrollTargetPageIndex[5]);
-  class I {
+  class S {
     constructor() {
       let pointerEvents = "box-none";
       if (reportedPageIndex.get() !== index) {
@@ -1211,10 +1248,10 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportedPageIn
       return { pointerEvents };
     }
   }
-  I.__closure = { reportedPageIndex, index };
-  I.__workletHash = 12899986233414;
-  I.__initData = __initData19;
-  const animatedProps = obj2.useAnimatedProps(I);
+  S.__closure = { reportedPageIndex, index };
+  S.__workletHash = 12899986233414;
+  S.__initData = __initData19;
+  const animatedProps = obj2.useAnimatedProps(S);
   const tmp6 = activePageRangeEnd(derivedValue.useState(() => reportedPageIndex.get() !== index), 2);
   accessibilityElementsHidden = tmp6[0];
   closure_8 = tmp8;
@@ -1225,17 +1262,17 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportedPageIn
   fn2.__closure = { reportedPageIndex, index };
   fn2.__workletHash = 2345652853959;
   fn2.__initData = __initData20;
-  class S {
+  class I {
     constructor(arg0) {
       const obj = ReanimatedRexport2;
       obj.runOnJS(closure_8)(arg0);
     }
   }
-  S.__closure = { runOnJS: reportedPageIndex(scrollTargetPageIndex[5]).runOnJS, setIsAccessibilityHidden: tmp6[1] };
-  S.__workletHash = 15518480728660;
-  S.__initData = __initData21;
+  I.__closure = { runOnJS: reportedPageIndex(scrollTargetPageIndex[5]).runOnJS, setIsAccessibilityHidden: tmp6[1] };
+  I.__workletHash = 15518480728660;
+  I.__initData = __initData21;
   ({ runOnJS: reportedPageIndex(scrollTargetPageIndex[5]).runOnJS, setIsAccessibilityHidden: tmp6[1] });
-  const animatedReaction = obj3.useAnimatedReaction(fn2, S);
+  const animatedReaction = obj3.useAnimatedReaction(fn2, I);
   derivedValue.useRef(null);
   ref = derivedValue.useRef(accessibilityElementsHidden);
   let items = [accessibilityElementsHidden];
@@ -1327,7 +1364,7 @@ const __initData28 = { code: "function SegmentedControlPagesNativeTsx42(min,max)
 const __initData29 = { code: "function SegmentedControlPagesNativeTsx43(){const{activeIndex,pressedIndex}=this.__closure;return{activeIndex:activeIndex.get(),pressedIndex:pressedIndex.get()};}" };
 const __initData30 = { code: "function SegmentedControlPagesNativeTsx44({activeIndex:activeIndex_0,pressedIndex:pressedIndex_0}){const{expandActivePageRange}=this.__closure;let min_0=activeIndex_0;let max_0=activeIndex_0;if(pressedIndex_0!==-1){min_0=Math.min(activeIndex_0,pressedIndex_0);max_0=Math.max(activeIndex_0,pressedIndex_0);}expandActivePageRange(Math.floor(min_0),Math.ceil(max_0));}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_54 = ReactCompilerGating.isReactCompilerEnabled() ? ((activeIndex, pressedIndex) => {
+let closure_54 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrozenPageIndices(activeIndex, pressedIndex) {
   let closure_0 = activeIndex;
   let closure_1 = pressedIndex;
   let obj = react2;
@@ -1388,7 +1425,7 @@ let closure_54 = ReactCompilerGating.isReactCompilerEnabled() ? ((activeIndex, p
   cResult[1] = sharedValue;
   cResult[2] = items;
   tmp5 = items;
-}) : ((activeIndex, pressedIndex) => {
+}) : (function useFrozenPageIndices(activeIndex, pressedIndex) {
   let closure_0 = activeIndex;
   let closure_1 = pressedIndex;
   let obj = ReanimatedRexport2;

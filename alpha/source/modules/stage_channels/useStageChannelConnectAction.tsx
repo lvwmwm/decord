@@ -1,18 +1,18 @@
-// Module ID: 9207
-// Function ID: 9208
+// Module ID: 10764
+// Function ID: 10765
 // Name: useStageChannelConnectAction
-// Dependencies: [558, 576, 8105, 9203, 2]
+// Dependencies: [558, 576, 7480, 10763, 2]
 
-// Module 9207 (useStageChannelConnectAction)
+// Module 10764 (useStageChannelConnectAction)
 import react from "react" /* 576 */;
-import useStateChannelIsLiveDefault from "useStateChannelIsLive" /* 8105 */;
-import useCurrentUserStageRolesDefault from "useCurrentUserStageRoles" /* 9203 */;
+import useStateChannelIsLiveDefault from "useStateChannelIsLive" /* 7480 */;
+import useCurrentUserStageRolesDefault from "useCurrentUserStageRoles" /* 10763 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ChannelConnectAction = { NORMAL: 0, [0]: "NORMAL", START_EVENT: 1, [1]: "START_EVENT" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStageChannelStartEvent(arg0) {
   const obj = react;
   const cResult = obj.c(3);
   const tmp2 = useStateChannelIsLiveDefault(arg0);
@@ -29,12 +29,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = moderator;
   cResult[2] = obj2;
   tmp3 = obj2;
-}) : ((arg0) => {
+}) : (function useStageChannelStartEvent(arg0) {
   const obj = { isLive: useStateChannelIsLiveDefault(arg0), isModerator: useCurrentUserStageRolesDefault(arg0, true).moderator };
   return obj;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStageChannelConnectAction(arg0) {
   const tmp = useStateChannelIsLiveDefault(arg0);
   if (!tmp) {
     let NORMAL;
@@ -44,7 +44,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return NORMAL;
   }
   NORMAL = obj.NORMAL;
-}) : ((arg0) => {
+}) : (function useStageChannelConnectAction(arg0) {
   const tmp = useStateChannelIsLiveDefault(arg0);
   if (!tmp) {
     let NORMAL;

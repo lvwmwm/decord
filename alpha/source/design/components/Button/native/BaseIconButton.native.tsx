@@ -1,25 +1,26 @@
-// Module ID: 7587
-// Function ID: 7588
+// Module ID: 8107
+// Function ID: 8108
 // Name: BaseIconButton
-// Dependencies: [19, 21, 4896, 5607, 4618, 5603, 558, 576, 5608, 5610, 5617, 2]
+// Dependencies: [109, 19, 21, 5090, 5380, 4810, 5377, 558, 576, 5381, 5383, 5385, 2]
 
-// Module 7587 (BaseIconButton)
+// Module 8107 (BaseIconButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4618 */;
-import IconDefault from "Icon" /* 5603 */;
-import ButtonConstants from "ButtonConstants" /* 5607 */;
-import ButtonHooks from "ButtonHooks" /* 5608 */;
-import ButtonPill2 from "ButtonPill" /* 5610 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4810 */;
+import IconDefault from "Icon" /* 5377 */;
+import ButtonConstants from "ButtonConstants" /* 5380 */;
+import ButtonHooks from "ButtonHooks" /* 5381 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const ReanimatedRexport = ReanimatedRexport2;
 
+let closure_2 = ["ref"];
 const jsx = Fragment.jsx;
-let closure_4 = createStyles.createStyles((arg0, arg1) => {
+let closure_6 = createStyles.createStyles((arg0, arg1) => {
   let obj;
   let obj6;
   if ("sm" === arg1) {
@@ -41,152 +42,7 @@ let closure_4 = createStyles.createStyles((arg0, arg1) => {
   return obj5;
 });
 const Icon = ReanimatedRexport.createAnimatedComponent(IconDefault);
-const forwardRef = react.forwardRef;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((maxFontSizeMultiplier, ref) => {
-  let icon;
-  let loading;
-  let pillStyle;
-  let scaleAmountInPx;
-  let style;
-  let tmp8;
-  let variant;
-  const obj = react2;
-  const cResult = obj.c(28);
-  ({ style, pillStyle, variant, size, loading, icon, scaleAmountInPx } = maxFontSizeMultiplier);
-  let str = "primary";
-  maxFontSizeMultiplier = maxFontSizeMultiplier.maxFontSizeMultiplier;
-  if (undefined !== variant) {
-    str = variant;
-  }
-  if (undefined === size) {
-    size = tmp(5607).DEFAULT_BUTTON_SIZE;
-  }
-  let num = 4;
-  if (undefined !== scaleAmountInPx) {
-    num = scaleAmountInPx;
-  }
-  const tmp4 = closure_4(str, size);
-  const tmpResult = ReanimatedRexport2;
-  const sharedValue = tmpResult.useSharedValue(0);
-  const tmpResult3 = ButtonHooks;
-  const iconTintStyles = tmpResult3.useIconTintStyles(str, sharedValue);
-  const tmpResult4 = ButtonHooks;
-  const iconSizeStyles = tmpResult4.useIconSizeStyles(size, true, maxFontSizeMultiplier);
-  if (cResult[0] !== size) {
-    let MEDIUM_BUTTON_HEIGHT = tmp(5607).LARGE_BUTTON_HEIGHT;
-    if ("sm" === size) {
-      MEDIUM_BUTTON_HEIGHT = tmp(5607).SMALL_BUTTON_HEIGHT;
-    } else if ("md" === size) {
-      MEDIUM_BUTTON_HEIGHT = tmp(5607).MEDIUM_BUTTON_HEIGHT;
-    }
-    const _Math = Math;
-    const bound = Math.max((tmp(5607).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
-    cResult[0] = size;
-    cResult[1] = bound;
-    tmp8 = bound;
-  } else {
-    tmp8 = cResult[1];
-  }
-  if (cResult[2] === style) {
-    let tmp11;
-    if (cResult[3] === tmp4.button) {
-      tmp11 = cResult[4];
-    }
-    if (cResult[5] === pillStyle) {
-      let tmp12;
-      if (cResult[6] === tmp4.pill) {
-        tmp12 = cResult[7];
-      }
-      let str4 = "xs";
-      if ("lg" === size) {
-        str4 = "sm";
-      }
-      if (cResult[8] === icon) {
-        if (cResult[9] === iconTintStyles) {
-          let tmp13;
-          if (cResult[10] === iconSizeStyles) {
-            tmp13 = cResult[11];
-          }
-          if (cResult[12] === loading) {
-            if (cResult[13] === sharedValue) {
-              if (cResult[14] === size) {
-                if (cResult[15] === tmp12) {
-                  if (cResult[16] === str4) {
-                    if (cResult[17] === tmp13) {
-                      let tmp18;
-                      if (cResult[18] === str) {
-                        tmp18 = cResult[19];
-                      }
-                      if (cResult[20] === tmp8) {
-                        if (cResult[21] === sharedValue) {
-                          if (cResult[22] === maxFontSizeMultiplier) {
-                            if (cResult[23] === ref) {
-                              if (cResult[24] === num) {
-                                if (cResult[25] === tmp11) {
-                                  let tmp22;
-                                  if (cResult[26] === tmp18) {
-                                    tmp22 = cResult[27];
-                                  }
-                                  return tmp22;
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                      const BaseButton = tmp(5617).BaseButton;
-                      const merged = Object.assign(maxFontSizeMultiplier);
-                      const tmp27 = <BaseButton ref={arg1} style={tmp11} pressed={sharedValue} scaleAmountInPx={num} hitSlop={tmp8}>{tmp18}</BaseButton>;
-                      cResult[20] = tmp8;
-                      cResult[21] = sharedValue;
-                      cResult[22] = maxFontSizeMultiplier;
-                      cResult[23] = ref;
-                      cResult[24] = num;
-                      cResult[25] = tmp11;
-                      cResult[26] = tmp18;
-                      cResult[27] = tmp27;
-                      tmp22 = tmp27;
-                    }
-                  }
-                }
-              }
-            }
-          }
-          const tmp20 = jsx(ButtonPill2.ButtonPill, { style: tmp12, variant: str, size, loading, loaderSize: str4, pressed: sharedValue, children: tmp13 });
-          cResult[12] = loading;
-          cResult[13] = sharedValue;
-          cResult[14] = size;
-          cResult[15] = tmp12;
-          cResult[16] = str4;
-          cResult[17] = tmp13;
-          cResult[18] = str;
-          cResult[19] = tmp20;
-          tmp18 = tmp20;
-        }
-      }
-      let tmp15 = icon;
-      if (!react.isValidElement(icon)) {
-        const items = [iconTintStyles, iconSizeStyles];
-        tmp15 = <Icon source={icon} style={items} />;
-      }
-      cResult[8] = icon;
-      cResult[9] = iconTintStyles;
-      cResult[10] = iconSizeStyles;
-      cResult[11] = tmp15;
-      tmp13 = tmp15;
-    }
-    const items1 = [tmp4.pill, pillStyle];
-    cResult[5] = pillStyle;
-    cResult[6] = tmp4.pill;
-    cResult[7] = items1;
-    tmp12 = items1;
-  }
-  const items2 = [tmp4.button, style];
-  cResult[2] = style;
-  cResult[3] = tmp4.button;
-  cResult[4] = items2;
-  tmp11 = items2;
-}) : ((variant, ref) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseIconButton(ref) {
   let icon;
   let items2;
   let loading;
@@ -194,23 +50,90 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let pillStyle;
   let scaleAmountInPx;
   let style;
-  variant = variant.variant;
+  let tmp9;
+  let variant;
+  const obj = react2;
+  const cResult = obj.c(2);
+  ref = ref.ref;
+  const tmp4 = _objectWithoutProperties(ref, closure_2);
+  ({ variant, size, icon, scaleAmountInPx } = tmp4);
   let str = "primary";
-  ({ style, pillStyle } = variant);
+  ({ style, pillStyle, maxFontSizeMultiplier, loading } = tmp4);
   if (undefined !== variant) {
     str = variant;
   }
-  let DEFAULT_BUTTON_SIZE = variant.size;
-  if (undefined === DEFAULT_BUTTON_SIZE) {
-    DEFAULT_BUTTON_SIZE = ButtonConstants.DEFAULT_BUTTON_SIZE;
+  if (undefined === size) {
+    size = tmp(5380).DEFAULT_BUTTON_SIZE;
   }
-  ({ icon, scaleAmountInPx } = variant);
   let num = 4;
-  ({ maxFontSizeMultiplier, loading } = variant);
   if (undefined !== scaleAmountInPx) {
     num = scaleAmountInPx;
   }
-  const tmp3 = closure_4(str, DEFAULT_BUTTON_SIZE);
+  const tmp5 = closure_6(str, size);
+  const tmpResult = ReanimatedRexport2;
+  const sharedValue = tmpResult.useSharedValue(0);
+  const tmpResult3 = ButtonHooks;
+  const iconTintStyles = tmpResult3.useIconTintStyles(str, sharedValue);
+  const tmpResult4 = ButtonHooks;
+  const iconSizeStyles = tmpResult4.useIconSizeStyles(size, true, maxFontSizeMultiplier);
+  if (cResult[0] !== size) {
+    let MEDIUM_BUTTON_HEIGHT = tmp(5380).LARGE_BUTTON_HEIGHT;
+    if ("sm" === size) {
+      MEDIUM_BUTTON_HEIGHT = tmp(5380).SMALL_BUTTON_HEIGHT;
+    } else if ("md" === size) {
+      MEDIUM_BUTTON_HEIGHT = tmp(5380).MEDIUM_BUTTON_HEIGHT;
+    }
+    const _Math = Math;
+    const bound = Math.max((tmp(5380).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
+    cResult[0] = size;
+    cResult[1] = bound;
+    tmp9 = bound;
+  } else {
+    tmp9 = cResult[1];
+  }
+  const BaseButton = tmp(5383).BaseButton;
+  const merged = Object.assign(tmp4);
+  const items = [tmp5.button, style];
+  const items1 = [tmp5.pill, pillStyle];
+  let str4 = "xs";
+  const ButtonPill = tmp(5385).ButtonPill;
+  if ("lg" === size) {
+    str4 = "sm";
+  }
+  let tmp12Result = icon;
+  if (!react.isValidElement(icon)) {
+    const obj4 = { source: icon, style: items2 };
+    items2 = [iconTintStyles, iconSizeStyles];
+    tmp12Result = tmp12(Icon, obj4);
+  }
+  return <BaseButton ref={ref} style={items} pressed={sharedValue} scaleAmountInPx={num} hitSlop={tmp9}><ButtonPill style={items1} variant={str} size={size} loading={loading} loaderSize={str4} pressed={sharedValue}>{tmp12Result}</ButtonPill></BaseButton>;
+}) : (function BaseIconButton(ref) {
+  let icon;
+  let items2;
+  let loading;
+  let maxFontSizeMultiplier;
+  let pillStyle;
+  let scaleAmountInPx;
+  let style;
+  ref = ref.ref;
+  const merged = Object.assign(ref, Object.assign({ ref: 0 }));
+  const variant = merged.variant;
+  let str = "primary";
+  ({ style, pillStyle } = merged);
+  if (undefined !== variant) {
+    str = variant;
+  }
+  let DEFAULT_BUTTON_SIZE = merged.size;
+  if (undefined === DEFAULT_BUTTON_SIZE) {
+    DEFAULT_BUTTON_SIZE = ButtonConstants.DEFAULT_BUTTON_SIZE;
+  }
+  ({ icon, scaleAmountInPx } = merged);
+  let num = 4;
+  ({ maxFontSizeMultiplier, loading } = merged);
+  if (undefined !== scaleAmountInPx) {
+    num = scaleAmountInPx;
+  }
+  const tmp4 = closure_6(str, DEFAULT_BUTTON_SIZE);
   const obj = ReanimatedRexport2;
   const sharedValue = obj.useSharedValue(0);
   const obj2 = ButtonHooks;
@@ -219,29 +142,29 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   const iconSizeStyles = obj3.useIconSizeStyles(DEFAULT_BUTTON_SIZE, true, maxFontSizeMultiplier);
   let MEDIUM_BUTTON_HEIGHT = ButtonConstants.LARGE_BUTTON_HEIGHT;
   if ("sm" === DEFAULT_BUTTON_SIZE) {
-    MEDIUM_BUTTON_HEIGHT = tmp4(5607).SMALL_BUTTON_HEIGHT;
+    MEDIUM_BUTTON_HEIGHT = tmp5(5380).SMALL_BUTTON_HEIGHT;
   } else if ("md" === DEFAULT_BUTTON_SIZE) {
-    MEDIUM_BUTTON_HEIGHT = tmp4(5607).MEDIUM_BUTTON_HEIGHT;
+    MEDIUM_BUTTON_HEIGHT = tmp5(5380).MEDIUM_BUTTON_HEIGHT;
   }
-  const bound = Math.max((tmp4(5607).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
-  const BaseButton = tmp4(5617).BaseButton;
-  const merged = Object.assign(variant);
-  const items = [tmp3.button, style];
-  const items1 = [tmp3.pill, pillStyle];
+  const bound = Math.max((tmp5(5380).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
+  const BaseButton = tmp5(5383).BaseButton;
+  const merged1 = Object.assign(merged);
+  const items = [tmp4.button, style];
+  const items1 = [tmp4.pill, pillStyle];
   let str3 = "xs";
-  const ButtonPill = tmp4(5610).ButtonPill;
+  const ButtonPill = tmp5(5385).ButtonPill;
   if ("lg" === DEFAULT_BUTTON_SIZE) {
     str3 = "sm";
   }
-  let tmp10Result = icon;
+  let tmp11Result = icon;
   if (!react.isValidElement(icon)) {
     const obj6 = { source: icon, style: items2 };
     items2 = [iconTintStyles, iconSizeStyles];
-    tmp10Result = tmp10(Icon, obj6);
+    tmp11Result = tmp11(Icon, obj6);
   }
-  return <BaseButton ref={arg1} style={items} pressed={sharedValue} scaleAmountInPx={num} hitSlop={bound}><ButtonPill style={items1} variant={str} size={DEFAULT_BUTTON_SIZE} loading={loading} loaderSize={str3} pressed={sharedValue}>{tmp10Result}</ButtonPill></BaseButton>;
-}));
+  return <BaseButton ref={ref} style={items} pressed={sharedValue} scaleAmountInPx={num} hitSlop={bound}><ButtonPill style={items1} variant={str} size={DEFAULT_BUTTON_SIZE} loading={loading} loaderSize={str3} pressed={sharedValue}>{tmp11Result}</ButtonPill></BaseButton>;
+});
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/Button/native/BaseIconButton.native.tsx");
 
-export const BaseIconButton = forwardRefResult;
+export const BaseIconButton = tmp2;

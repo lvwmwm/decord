@@ -1,12 +1,12 @@
-// Module ID: 11092
-// Function ID: 11093
+// Module ID: 10456
+// Function ID: 10457
 // Name: useShowChannelOptInNotice
-// Dependencies: [5077, 1085, 2058, 558, 576, 7059, 504, 6737, 2]
+// Dependencies: [5971, 1085, 2070, 558, 576, 6081, 504, 6911, 2]
 
-// Module 11092 (useShowChannelOptInNotice)
+// Module 10456 (useShowChannelOptInNotice)
 import Constants from "Constants" /* 1085 */;
-import ChannelConstants from "ChannelConstants" /* 2058 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
+import ChannelConstants from "ChannelConstants" /* 2070 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let _require;
 
 const NULL_STRING_GUILD_ID = Constants.NULL_STRING_GUILD_ID;
 const ChannelFlags = ChannelConstants.ChannelFlags;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((getGuildId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowChannelOptInNotice(getGuildId) {
   let first;
   let tmp9;
   _require = getGuildId;
@@ -50,8 +50,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((getGuildId) => {
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp9);
   let guild_id;
-  const useCanSeeOnboardingHome = tmp(6737).useCanSeeOnboardingHome;
-  tmp(6737);
+  const useCanSeeOnboardingHome = tmp(6911).useCanSeeOnboardingHome;
+  tmp(6911);
   if (getGuildId != null) {
     guild_id = getGuildId.guild_id;
   }
@@ -92,7 +92,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((getGuildId) => {
     cResult[5] = hasFlagResult;
     tmp14 = hasFlagResult;
   }
-}) : ((getGuildId) => {
+}) : (function useShowChannelOptInNotice(getGuildId) {
   _require = getGuildId;
   const tmp = _require;
   let guildId;
@@ -109,8 +109,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((getGuildId) => {
     return result;
   });
   let guild_id;
-  const useCanSeeOnboardingHome = tmp(6737).useCanSeeOnboardingHome;
-  tmp(6737);
+  const useCanSeeOnboardingHome = tmp(6911).useCanSeeOnboardingHome;
+  tmp(6911);
   if (getGuildId != null) {
     guild_id = getGuildId.guild_id;
   }

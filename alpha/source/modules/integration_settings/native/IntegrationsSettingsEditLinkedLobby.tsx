@@ -1,18 +1,18 @@
-// Module ID: 17057
-// Function ID: 17058
+// Module ID: 17338
+// Function ID: 17339
 // Name: IntegrationsSettingsEditLinkedLobby
-// Dependencies: [19, 17, 1377, 21, 4896, 587, 558, 576, 4586, 1490, 6664, 6688, 6670, 5049, 504, 10684, 7861, 1126, 4892, 1402, 1188, 6081, 6000, 5600, 8924, 2]
+// Dependencies: [19, 17, 1389, 21, 5090, 587, 558, 576, 4778, 1502, 6841, 6865, 6847, 5417, 504, 10272, 8279, 1126, 5086, 1414, 1200, 6267, 6184, 5373, 8555, 2]
 
-// Module 17057 (IntegrationsSettingsEditLinkedLobby)
+// Module 17338 (IntegrationsSettingsEditLinkedLobby)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 createStyles = createStyles.createStyles;
 size = { height: 1, width: 48, backgroundColor: nativeDefault.colors.BORDER_STRONG };
 let closure_9 = createStyles(obj);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channel) {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditLinkedLobby(channel) {
   let first;
   let items1;
   let items2;
@@ -155,7 +155,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channel) {
             const obj5 = { linkedAtDate: date };
             formatResult = intl.formatToPlainString(tmp(tmp2[17]).t.EyygeM, obj5);
           }
-          class I {
+          class E {
             constructor() {
               if (null != stateFromStores) {
                 const obj = { userId: tmp.id, channelId: channel.id, sourceAnalyticsLocations: analyticsLocations };
@@ -202,7 +202,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channel) {
               const Avatar = tmp(tmp2[20]).Avatar;
               const tmp37 = closure_6(Avatar, obj8);
               cResult[20] = tmp33;
-              class I {
+              class E {
                 constructor() {
                   if (null != stateFromStores) {
                     const obj = { userId: tmp.id, channelId: channel.id, sourceAnalyticsLocations: analyticsLocations };
@@ -220,7 +220,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channel) {
               cResult[22] = getOrFetchApplication.name;
               cResult[23] = closure_6(tmp(navigation[18]).Text, obj9);
               closure_6(tmp(navigation[18]).Text, obj9);
-              class I {
+              class E {
                 constructor() {
                   if (null != stateFromStores) {
                     const obj = { userId: tmp.id, channelId: channel.id, sourceAnalyticsLocations: analyticsLocations };
@@ -249,7 +249,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channel) {
                       const obj10 = { channelName: tmp12 };
                       cResult[32] = tmp12;
                       const formatResult1 = intl3.format(tmp(navigation[17]).t.DA9v5F, obj10);
-                      class I {
+                      class E {
                         constructor() {
                           if (null != stateFromStores) {
                             const obj = { userId: tmp.id, channelId: channel.id, sourceAnalyticsLocations: analyticsLocations };
@@ -266,7 +266,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channel) {
                       cResult[34] = tmp51;
                       cResult[35] = closure_6(tmp(navigation[18]).Text, obj11);
                       closure_6(tmp(navigation[18]).Text, obj11);
-                      class I {
+                      class E {
                         constructor() {
                           if (null != stateFromStores) {
                             const obj = { userId: tmp.id, channelId: channel.id, sourceAnalyticsLocations: analyticsLocations };
@@ -289,7 +289,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channel) {
                       const TableRowGroup = tmp(tmp2[21]).TableRowGroup;
                       obj13 = { label: tmp56, variant: "danger", onPress: tmp4ResultResult };
                       const tmp60 = closure_6(TableRowGroup, obj12);
-                      class I {
+                      class E {
                         constructor() {
                           if (null != stateFromStores) {
                             const obj = { userId: tmp.id, channelId: channel.id, sourceAnalyticsLocations: analyticsLocations };
@@ -319,7 +319,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channel) {
                           }
                           const obj14 = { style: screenContainer, contentContainerStyle: tmp30, children: tmp61 };
                           const tmp65 = closure_6(tmp(navigation[24]).Form, obj14);
-                          class I {
+                          class E {
                             constructor() {
                               if (null != stateFromStores) {
                                 const obj = { userId: tmp.id, channelId: channel.id, sourceAnalyticsLocations: analyticsLocations };
@@ -334,7 +334,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channel) {
                         }
                       }
                     }
-                    class I {
+                    class E {
                       constructor() {
                         if (null != stateFromStores) {
                           const obj = { userId: tmp.id, channelId: channel.id, sourceAnalyticsLocations: analyticsLocations };
@@ -357,7 +357,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channel) {
               }
               const obj16 = { style: tmp32, children: items2 };
               items2 = [tmp35, , ];
-              class I {
+              class E {
                 constructor() {
                   if (null != stateFromStores) {
                     const obj = { userId: tmp.id, channelId: channel.id, sourceAnalyticsLocations: analyticsLocations };
@@ -378,7 +378,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channel) {
             if (tmp42) {
               const obj17 = { children: items3 };
               items3 = [, ];
-              class I {
+              class E {
                 constructor() {
                   if (null != stateFromStores) {
                     const obj = { userId: tmp.id, channelId: channel.id, sourceAnalyticsLocations: analyticsLocations };
@@ -391,7 +391,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channel) {
               tmp42 = closure_8(closure_7, obj17);
             }
             cResult[24] = tmp24;
-            class I {
+            class E {
               constructor() {
                 if (null != stateFromStores) {
                   const obj = { userId: tmp.id, channelId: channel.id, sourceAnalyticsLocations: analyticsLocations };
@@ -405,7 +405,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channel) {
           }
           const obj20 = { id: null, icon: getOrFetchApplication.icon };
           const tmp4Result2 = numScreensToPop(navigation[19]);
-          class I {
+          class E {
             constructor() {
               if (null != stateFromStores) {
                 const obj = { userId: tmp.id, channelId: channel.id, sourceAnalyticsLocations: analyticsLocations };
@@ -421,7 +421,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channel) {
         }
       }
     }
-    class I {
+    class E {
       constructor() {
         if (null != stateFromStores) {
           const obj = { userId: tmp.id, channelId: channel.id, sourceAnalyticsLocations: analyticsLocations };
@@ -432,8 +432,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channel) {
     cResult[6] = analyticsLocations;
     cResult[7] = channel.id;
     cResult[8] = stateFromStores;
-    cResult[9] = I;
-    tmp23 = I;
+    cResult[9] = E;
+    tmp23 = E;
   }
   const fn2 = function f() {
     navigation.pop(numScreensToPop);
@@ -442,7 +442,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channel) {
   cResult[4] = numScreensToPop;
   cResult[5] = fn2;
   tmp20 = fn2;
-}) : ((channel) => {
+}) : (function EditLinkedLobby(channel) {
   let Stack;
   let TableRow;
   let intl;

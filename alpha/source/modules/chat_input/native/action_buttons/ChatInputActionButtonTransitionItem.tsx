@@ -1,18 +1,18 @@
-// Module ID: 11890
-// Function ID: 11891
+// Module ID: 11962
+// Function ID: 11963
 // Name: ChatInputActionButtonTransitionItem
-// Dependencies: [19, 17, 11589, 21, 558, 576, 4595, 4618, 4897, 11891, 2]
+// Dependencies: [19, 17, 11652, 21, 558, 576, 4787, 4810, 5091, 11963, 2]
 // Exports: interactivityProps
 
-// Module 11890 (ChatInputActionButtonTransitionItem)
+// Module 11962 (ChatInputActionButtonTransitionItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import native from "native" /* 4595 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
-import ChatInputConstants from "ChatInputConstants" /* 11589 */;
-import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 11891 */;
+import native from "native" /* 4787 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
+import ChatInputConstants from "ChatInputConstants" /* 11652 */;
+import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 11963 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ const __initData = { code: "function ChatInputActionButtonTransitionItemTsx2(){c
 let closure_9 = { code: "function ChatInputActionButtonTransitionItemTsx3(finished){const{runOnJS,cleanup}=this.__closure;if(finished===true){runOnJS(cleanup)();}}" };
 const __initData2 = { code: "function ChatInputActionButtonTransitionItemTsx4(){const{visible}=this.__closure;return{opacity:visible.get()};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function FadeTransitionItem(state) {
   let sharedValue;
   let str2;
   const tmp2 = sharedValue;
@@ -58,17 +58,25 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
       }
       const effect = react.useEffect(tmp7, tmp8);
       let tmpResult = tmp(tmp2[7]);
-      const fn2 = function b() {
-        const obj = { opacity: sharedValue.get() };
-        return obj;
-      };
+      class I {
+        constructor() {
+          const obj = { opacity: sharedValue.get() };
+          return obj;
+        }
+      }
       const obj2 = { visible: sharedValue };
-      fn2.__closure = obj2;
-      fn2.__workletHash = 13386937038500;
-      fn2.__initData = __initData;
-      const animatedStyle = tmpResult.useAnimatedStyle(fn2);
+      I.__closure = obj2;
+      I.__workletHash = 13386937038500;
+      I.__initData = __initData;
+      const animatedStyle = tmpResult.useAnimatedStyle(I);
       if (cResult[5] !== animatedStyle) {
         const items = [closure_6.transitionItem, animatedStyle];
+        class I {
+          constructor() {
+            const obj = { opacity: sharedValue.get() };
+            return obj;
+          }
+        }
         cResult[5] = animatedStyle;
         cResult[6] = items;
         tmp13 = items;
@@ -80,7 +88,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
         if (!tmp4) {
           str = "auto";
         }
-        const obj3 = { pointerEvents: str, accessibilityElementsHidden: !(!tmp4), importantForAccessibility: str2 };
+        const obj3 = { pointerEvents: str, accessibilityElementsHidden: null, importantForAccessibility: str2 };
+        class I {
+          constructor() {
+            const obj = { opacity: sharedValue.get() };
+            return obj;
+          }
+        }
         str2 = "no-hide-descendants";
         if (!tmp4) {
           str2 = "auto";
@@ -120,7 +134,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
         }
       };
       const tmpResult = timing;
-      let obj = { runOnJS: tmp(4618).runOnJS, cleanup };
+      let obj = { runOnJS: tmp(4810).runOnJS, cleanup };
       const withTiming = tmpResult.withTiming;
       fn.__closure = obj;
       fn.__workletHash = 10965161938750;
@@ -140,7 +154,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   cResult[4] = items1;
   tmp8 = items1;
   tmp7 = fn;
-}) : ((state) => {
+}) : (function FadeTransitionItem(state) {
   let items1;
   let str2;
   state = state.state;
@@ -168,7 +182,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
         }
       };
       const tmpResult = timing;
-      let obj = { runOnJS: tmp(4618).runOnJS, cleanup };
+      let obj = { runOnJS: tmp(4810).runOnJS, cleanup };
       const withTiming = tmpResult.withTiming;
       fn.__closure = obj;
       fn.__workletHash = 12574891324796;
@@ -181,14 +195,16 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
     }
   }, items);
   let tmpResult = tmp(tmp2[7]);
-  let fn = function v() {
-    const obj = { opacity: sharedValue.get() };
-    return obj;
-  };
-  fn.__closure = { visible: sharedValue };
-  fn.__workletHash = 3550175919586;
-  fn.__initData = __initData2;
-  const animatedStyle = tmpResult.useAnimatedStyle(fn);
+  class T {
+    constructor() {
+      const obj = { opacity: sharedValue.get() };
+      return obj;
+    }
+  }
+  T.__closure = { visible: sharedValue };
+  T.__workletHash = 3550175919586;
+  T.__initData = __initData2;
+  const animatedStyle = tmpResult.useAnimatedStyle(T);
   let obj = { style: items1, children };
   items1 = [closure_6.transitionItem, animatedStyle];
   let str = "none";
@@ -206,7 +222,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   return tmp8(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function BounceTransitionItem(arg0) {
   let animatedStyle;
   let bounceEnterDelayMs;
   let children;
@@ -264,7 +280,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             return tmp11;
           }
         }
-        const View = tmp6(4618).View;
+        const View = tmp6(4810).View;
         const merged = Object.assign(tmp10);
         const tmp16 = <View style={tmp8}>{children}</View>;
         cResult[9] = children;
@@ -282,7 +298,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = state !== ENTERED;
   cResult[4] = obj4;
   tmp5 = obj4;
-}) : ((state) => {
+}) : (function BounceTransitionItem(state) {
   let animatedStyle;
   let bounceEnterDelayMs;
   let children;
@@ -314,7 +330,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp3(View, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputActionButtonTransitionItem(arg0) {
   let bounceEnterDelayMs;
   let children;
   let cleanup;
@@ -355,7 +371,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = undefined !== withBounce && withBounce;
   cResult[5] = tmp4Result;
   tmp3 = tmp4Result;
-}) : ((bounceEnterDelayMs) => {
+}) : (function ChatInputActionButtonTransitionItem(bounceEnterDelayMs) {
   let children;
   let cleanup;
   let state;

@@ -1,14 +1,14 @@
-// Module ID: 14812
-// Function ID: 14813
+// Module ID: 15073
+// Function ID: 15074
 // Name: SubscriptionIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 14813, 4585, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 15074, 4777, 2]
 
-// Module 14812 (SubscriptionIcon)
+// Module 15073 (SubscriptionIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4585 */;
-import AssetRegistry from "AssetRegistry" /* 14813 */;
+import BaseIconImage2 from "BaseIconImage" /* 4777 */;
+import AssetRegistry from "AssetRegistry" /* 15074 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 
 let closure_3 = ["style", "color"];
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubscriptionIcon(arg0) {
   let ICON_STRONG;
   let color;
   let style;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4585).BaseIconImage;
+  const BaseIconImage = tmp(4777).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={ICON_STRONG} style={tmp5} />;
   cResult[5] = ICON_STRONG;
@@ -67,7 +67,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = tmp5;
   cResult[8] = tmp14;
   tmp12 = tmp14;
-}) : ((color) => {
+}) : (function SubscriptionIcon(color) {
   let ICON_STRONG = color.color;
   const style = color.style;
   if (ICON_STRONG === undefined) {

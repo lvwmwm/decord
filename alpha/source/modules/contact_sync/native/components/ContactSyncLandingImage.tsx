@@ -1,16 +1,16 @@
-// Module ID: 12353
-// Function ID: 12354
+// Module ID: 12449
+// Function ID: 12450
 // Name: ContactSyncLandingImage
-// Dependencies: [19, 17, 21, 4896, 558, 576, 12354, 12355, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 12450, 12451, 2]
 
-// Module 12353 (ContactSyncLandingImage)
+// Module 12449 (ContactSyncLandingImage)
 import react2 from "react" /* 576 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12354 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12355 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12450 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12451 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let metroRequire;
 ({ Image: c3, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ leftContainer: { zIndex: 2, height: 106, width: 102, position: "absolute" }, landingImageLeft: { left: 58, top: -92 }, rightContainer: { position: "absolute", height: 113, width: 103 }, landingImageRight: { left: 134, top: -99 } });
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncLandingImage() {
   let items;
   let tmp4;
   const obj = react2;
@@ -85,7 +85,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = tmp4;
   cResult[4] = tmp10;
   tmp9 = tmp10;
-}) : (() => {
+}) : (function ContactSyncLandingImage() {
   let items;
   let obj3;
   let obj5;

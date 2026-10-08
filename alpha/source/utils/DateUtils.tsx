@@ -1,19 +1,19 @@
-// Module ID: 4558
-// Function ID: 4559
+// Module ID: 4750
+// Function ID: 4751
 // Name: DateUtils
-// Dependencies: [2116, 3, 4559, 2028, 1197, 4561, 1126, 584, 4563, 4467, 2]
+// Dependencies: [2128, 3, 4751, 2040, 1209, 4753, 1126, 584, 4755, 4659, 2]
 // Exports: accessibilityLabelCalendarFormat, calendarFormat, calendarFormatCompact, dateStringToMoment, diffAsUnits, differenceInDays, formatDateForDatetimeLocal, getDaysRemainingInMonth, getESTDate, getMonthlyProgressPercentage, isSameDay, isSameHourMoment, isWithinInterval, unitsAsStrings
 
-// Module 4558 (DateUtils)
+// Module 4750 (DateUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import intl4 from "intl" /* 1126 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import _modDef4467 from "module_4467" /* 4467 */;
-import react_nativeDefault from "react-native" /* 4559 */;
-import SystemDateFormatter from "SystemDateFormatter" /* 4561 */;
-import makeDateFormatterDefault from "makeDateFormatter" /* 4563 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import _modDef4659 from "module_4659" /* 4659 */;
+import react_nativeDefault from "react-native" /* 4751 */;
+import SystemDateFormatter from "SystemDateFormatter" /* 4753 */;
+import makeDateFormatterDefault from "makeDateFormatter" /* 4755 */;
+import LocaleStore from "LocaleStore" /* 2128 */;
 import Dispatcher_mod from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
@@ -98,9 +98,9 @@ function differenceInCalendarDays(d, d2) {
 }
 function dateFormat(date, LL, setting) {
   let obj2 = date;
-  const obj = _modDef4467;
+  const obj = _modDef4659;
   if (!obj.isMoment(date)) {
-    obj2 = tmp(4467)(date);
+    obj2 = tmp(4659)(date);
   }
   const localeResult = obj2.locale();
   if (setting == null) {
@@ -115,7 +115,7 @@ function dateFormat(date, LL, setting) {
     tmp7 = tmp9;
   }
   let toDateResult = date;
-  const tmpResult = _modDef4467;
+  const tmpResult = _modDef4659;
   if (tmpResult.isMoment(date)) {
     toDateResult = date.toDate();
   }
@@ -167,11 +167,11 @@ export const calendarFormat = function calendarFormat(date, arg1, setting) {
   if (arg1 === undefined) {
     flag = false;
   }
-  const obj = _modDef4467;
+  const obj = _modDef4659;
   const localeDataResult = obj.localeData();
-  const obj2 = _modDef4467();
+  const obj2 = _modDef4659();
   let toDateResult = date;
-  const obj3 = _modDef4467;
+  const obj3 = _modDef4659;
   const tmp4 = differenceInCalendarDays;
   if (obj3.isMoment(date)) {
     toDateResult = date.toDate();
@@ -198,19 +198,19 @@ export const calendarFormat = function calendarFormat(date, arg1, setting) {
     const calendar = localeDataResult.calendar;
     let tmp9 = date;
     const tmp8 = dateFormat;
-    const tmpResult = _modDef4467;
+    const tmpResult = _modDef4659;
     if (!tmpResult.isMoment(date)) {
-      tmp9 = tmp(4467)(date);
+      tmp9 = tmp(4659)(date);
     }
     return tmp8(date, calendar(str2, tmp9, obj2), setting);
   }
 };
 export const calendarFormatCompact = function calendarFormatCompact(timestamp, arg1) {
-  const obj = _modDef4467;
+  const obj = _modDef4659;
   const localeDataResult = obj.localeData();
-  const obj2 = _modDef4467();
+  const obj2 = _modDef4659();
   let toDateResult = timestamp;
-  const obj3 = _modDef4467;
+  const obj3 = _modDef4659;
   const tmp4 = differenceInCalendarDays;
   if (obj3.isMoment(timestamp)) {
     toDateResult = timestamp.toDate();
@@ -223,9 +223,9 @@ export const calendarFormatCompact = function calendarFormatCompact(timestamp, a
     if (-1 === tmp4Result) {
       const calendar = localeDataResult.calendar;
       let tmp8 = timestamp;
-      const tmpResult = _modDef4467;
+      const tmpResult = _modDef4659;
       if (!tmpResult.isMoment(timestamp)) {
-        tmp8 = tmp(4467)(timestamp);
+        tmp8 = tmp(4659)(timestamp);
       }
       str2 = calendar("lastDay", tmp8, obj2);
     } else {
@@ -246,11 +246,11 @@ export const dateStringToMoment = function dateStringToMoment(arg0) {
     const error = new Error("Date string exceeds maximum length");
     throw error;
   } else {
-    return _modDef4467(arg0);
+    return _modDef4659(arg0);
   }
 };
 export const accessibilityLabelCalendarFormat = function accessibilityLabelCalendarFormat(timestamp) {
-  const obj = _modDef4467;
+  const obj = _modDef4659;
   const localeDataResult = obj.localeData();
   const date = new Date();
   const tmp5 = differenceInCalendarDays(timestamp, date);
@@ -274,8 +274,8 @@ export const accessibilityLabelCalendarFormat = function accessibilityLabelCalen
   let str5 = "LLL";
   if ("sameElse" !== str) {
     const calendar = localeDataResult.calendar;
-    const tmp7 = _modDef4467(timestamp);
-    str5 = calendar(str, tmp7, tmp(4467)(date));
+    const tmp7 = _modDef4659(timestamp);
+    str5 = calendar(str, tmp7, tmp(4659)(date));
   }
   return tmp6(timestamp, str5);
 };
@@ -369,7 +369,7 @@ export const formatDateForDatetimeLocal = function formatDateForDatetimeLocal(ar
       const error = new Error("Date string exceeds maximum length");
       throw error;
     } else {
-      const obj = _modDef4467(arg0);
+      const obj = _modDef4659(arg0);
       str = obj.format("YYYY-MM-DDTHH:mm");
     }
   }

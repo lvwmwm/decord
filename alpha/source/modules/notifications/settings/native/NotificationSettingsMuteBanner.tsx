@@ -1,19 +1,19 @@
-// Module ID: 12513
-// Function ID: 12514
+// Module ID: 12609
+// Function ID: 12610
 // Name: NotificationSettingsMuteBanner
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4892, 1126, 5601, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 5086, 1126, 5375, 2]
 // Exports: getMuteBannerSubtitleFromConfig
 
-// Module 12513 (NotificationSettingsMuteBanner)
+// Module 12609 (NotificationSettingsMuteBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ const View = react_native.View;
 let obj = { card: obj2 };
 obj2 = { padding: 16, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", borderRadius: nativeDefault.radii.lg + 8, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 let closure_5 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotificationSettingsMuteBanner(style) {
   let items;
   let items1;
   const obj = react2;
@@ -121,7 +121,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   cResult[1] = tmp4.card;
   cResult[2] = items2;
   tmp5 = items2;
-}) : ((children) => {
+}) : (function NotificationSettingsMuteBanner(children) {
   let intl;
   let items;
   let items1;

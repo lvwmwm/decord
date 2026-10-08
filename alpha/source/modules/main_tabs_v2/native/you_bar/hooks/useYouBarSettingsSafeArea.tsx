@@ -1,26 +1,26 @@
-// Module ID: 13284
-// Function ID: 13285
+// Module ID: 13585
+// Function ID: 13586
 // Name: useYouBarSettingsSafeArea
-// Dependencies: [558, 1618, 576, 6440, 1370, 2]
+// Dependencies: [558, 1630, 576, 6618, 1382, 2]
 
-// Module 13284 (useYouBarSettingsSafeArea)
+// Module 13585 (useYouBarSettingsSafeArea)
 import react from "react" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6440 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6618 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const utils_PlatformUtils = tmp(1370);
+const utils_PlatformUtils = tmp(1382);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarSettingsCustomHeaderPaddingTop() {
   const top = useSafeAreaInsetsDefault().top;
   let num = 16;
   if (!closure_3()) {
     num = top;
   }
   return num;
-}) : (() => {
+}) : (function useYouBarSettingsCustomHeaderPaddingTop() {
   const top = useSafeAreaInsetsDefault().top;
   let num = 16;
   if (!closure_3()) {
@@ -29,7 +29,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return num;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarSettingsOutsideSafeAreaTop() {
   let tmp5;
   const obj = react;
   const cResult = obj.c(2);
@@ -44,7 +44,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[1];
   }
   return tmp5;
-}) : (() => {
+}) : (function useYouBarSettingsOutsideSafeAreaTop() {
   const tmp = useIsWindowLargeDefault();
   const obj = utils_PlatformUtils;
   const tmp2 = obj.isIOS() || tmp;

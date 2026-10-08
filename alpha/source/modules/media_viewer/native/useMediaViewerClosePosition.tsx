@@ -1,12 +1,12 @@
-// Module ID: 12806
-// Function ID: 12807
+// Module ID: 12953
+// Function ID: 12954
 // Name: useMediaViewerClosePosition
-// Dependencies: [32, 19, 1085, 12803, 558, 576, 6459, 4618, 2]
+// Dependencies: [32, 19, 1085, 12950, 558, 576, 6637, 4810, 2]
 
-// Module 12806 (useMediaViewerClosePosition)
+// Module 12953 (useMediaViewerClosePosition)
 import Constants from "Constants" /* 1085 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import getMediaViewerStateForScreenDefault from "getMediaViewerStateForScreen" /* 12803 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import getMediaViewerStateForScreenDefault from "getMediaViewerStateForScreen" /* 12950 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -20,7 +20,7 @@ let __initData = { code: "function useMediaViewerClosePositionTsx1(){const{index
 const __initData2 = { code: "function useMediaViewerClosePositionTsx2(index_1){const{runOnJS,setClosePosition}=this.__closure;runOnJS(setClosePosition)(index_1);}" };
 const __initData3 = { code: "function useMediaViewerClosePositionTsx3(){const{index}=this.__closure;return index.get();}" };
 const __initData4 = { code: "function useMediaViewerClosePositionTsx4(index_1){const{runOnJS,setClosePosition}=this.__closure;runOnJS(setClosePosition)(index_1);}" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaViewerClosePosition(index) {
   let closure_4;
   let closure_6;
   let onClose;
@@ -57,26 +57,28 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
                 tmp9 = cResult[9];
               }
               __initData = tmp9;
-              const fn3 = function b() {
-                return index.get();
-              };
-              const obj3 = { index };
-              fn3.__closure = obj3;
-              fn3.__workletHash = 5031282724746;
-              fn3.__initData = __initData;
               const tmpResult = tmp(tmp2[7]);
-              class M {
+              class H {
+                constructor() {
+                  return index.get();
+                }
+              }
+              const obj3 = { index };
+              H.__closure = obj3;
+              H.__workletHash = 5031282724746;
+              H.__initData = __initData;
+              class V {
                 constructor(arg0) {
                   const obj = ReanimatedRexport;
                   obj.runOnJS(closure_6)(arg0);
                 }
               }
               const useAnimatedReaction = tmpResult.useAnimatedReaction;
-              M.__closure = { runOnJS: tmp(tmp2[7]).runOnJS, setClosePosition: tmp9 };
-              M.__workletHash = 10222005330358;
-              M.__initData = __initData2;
+              V.__closure = { runOnJS: tmp(tmp2[7]).runOnJS, setClosePosition: tmp9 };
+              V.__workletHash = 10222005330358;
+              V.__initData = __initData2;
               const obj4 = { runOnJS: tmp(tmp2[7]).runOnJS, setClosePosition: tmp9 };
-              const animatedReaction = useAnimatedReaction(fn3, M);
+              const animatedReaction = useAnimatedReaction(H, V);
               if (cResult[10] === index) {
                 let tmp14;
                 let tmp15;
@@ -87,16 +89,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
                 const effect = obj2.useEffect(tmp14, tmp15);
                 return tmp8;
               }
-              const fn4 = function k() {
+              const fn3 = function b() {
                 closure_6(index.get());
               };
               const items = [tmp9, index];
               cResult[10] = index;
               cResult[11] = tmp9;
-              cResult[12] = fn4;
+              cResult[12] = fn3;
               cResult[13] = items;
               tmp15 = items;
-              tmp14 = fn4;
+              tmp14 = fn3;
             }
           }
         }
@@ -138,7 +140,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
   cResult[3] = windowWidth;
   cResult[4] = fn;
   tmp5 = fn;
-}) : ((index) => {
+}) : (function useMediaViewerClosePosition(index) {
   let closure_4;
   index = index.index;
   const sources = index.sources;
@@ -178,21 +180,23 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
     tmp4((windowHeight + obj.height) / 2);
   }, items);
   let obj = index(windowHeight[7]);
-  const fn = function x() {
-    return index.get();
-  };
-  fn.__closure = { index };
-  fn.__workletHash = 3888496641736;
-  fn.__initData = __initData3;
-  const fn2 = function w(arg0) {
+  class P {
+    constructor() {
+      return index.get();
+    }
+  }
+  P.__closure = { index };
+  P.__workletHash = 3888496641736;
+  P.__initData = __initData3;
+  const fn = function w(arg0) {
     const obj = ReanimatedRexport;
     obj.runOnJS(callback)(arg0);
   };
-  fn2.__closure = { runOnJS: index(windowHeight[7]).runOnJS, setClosePosition };
-  fn2.__workletHash = 9607289589872;
-  fn2.__initData = __initData4;
+  fn.__closure = { runOnJS: index(windowHeight[7]).runOnJS, setClosePosition };
+  fn.__workletHash = 9607289589872;
+  fn.__initData = __initData4;
   ({ runOnJS: index(windowHeight[7]).runOnJS, setClosePosition });
-  const animatedReaction = obj.useAnimatedReaction(fn, fn2);
+  const animatedReaction = obj.useAnimatedReaction(P, fn);
   const items1 = [setClosePosition, index];
   const effect = react.useEffect(() => {
     callback(index.get());

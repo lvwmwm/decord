@@ -1,23 +1,21 @@
-// Module ID: 17804
-// Function ID: 17805
+// Module ID: 18091
+// Function ID: 18092
 // Name: GuildSettingsServerTagUpsellCard
-// Dependencies: [19, 17, 4773, 21, 4896, 587, 558, 576, 4777, 504, 12192, 12162, 5612, 12195, 1126, 4892, 5600, 16188, 5601, 2]
+// Dependencies: [19, 17, 4967, 21, 5090, 587, 558, 576, 4971, 504, 12271, 12241, 5387, 12274, 1126, 5086, 5373, 16448, 5375, 2]
 
-// Module 17804 (GuildSettingsServerTagUpsellCard)
+// Module 18091 (GuildSettingsServerTagUpsellCard)
 import nativeDefault from "native" /* 587 */;
-import Powerups from "Powerups" /* 4777 */;
-import LinearGradientDefault from "LinearGradient" /* 5612 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12162 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 12192 */;
+import Powerups from "Powerups" /* 4971 */;
+import LinearGradientDefault from "LinearGradient" /* 5387 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12241 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 12271 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4773 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4967 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let guildId;
 
 let StyleSheet;
 let closure_4;
@@ -34,7 +32,7 @@ let c12 = "#29292D";
 let obj = { card: obj2, imageContainer: { height: 104, justifyContent: "center" }, textBlock: { alignItems: "center" }, centerText: { textAlign: "center" }, body: { maxWidth: 320 }, backgroundLayer: StyleSheet.absoluteFillObject, powerupImage: { width: "92%" } };
 obj2 = { borderRadius: nativeDefault.radii.xl, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: "#29292D", overflow: "hidden", paddingHorizontal: nativeDefault.space.PX_24, paddingTop: nativeDefault.space.PX_20, paddingBottom: nativeDefault.space.PX_24 };
 let closure_13 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsServerTagUpsellCard(guildId) {
   let centerText;
   let first;
   let items5;
@@ -83,7 +81,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
   const tmp11 = useGetGuildPowerupBannerImageDefault(stateFromStores, true);
   if (cResult[4] !== guildId) {
-    class E {
+    class C {
       constructor() {
         const tmp = guildId;
         if (GuildPowerupsStore.shouldFetchCatalogForGuild(guildId)) {
@@ -94,12 +92,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     const items2 = [guildId];
     cResult[4] = guildId;
-    cResult[5] = E;
+    cResult[5] = C;
     cResult[6] = items2;
     tmp13 = items2;
-    tmp12 = E;
+    tmp12 = C;
   } else {
-    class E {
+    class C {
       constructor() {
         const tmp = guildId;
         if (GuildPowerupsStore.shouldFetchCatalogForGuild(guildId)) {
@@ -112,7 +110,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   }
   const effect = react.useEffect(tmp12, tmp13);
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    class E {
+    class C {
       constructor() {
         const tmp = guildId;
         if (GuildPowerupsStore.shouldFetchCatalogForGuild(guildId)) {
@@ -134,7 +132,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     tmp16 = items3;
     tmp15 = point1;
   } else {
-    class E {
+    class C {
       constructor() {
         const tmp = guildId;
         if (GuildPowerupsStore.shouldFetchCatalogForGuild(guildId)) {
@@ -148,7 +146,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     tmp18 = cResult[10];
   }
   if (cResult[11] !== tmp4.backgroundLayer) {
-    class E {
+    class C {
       constructor() {
         const tmp = guildId;
         if (GuildPowerupsStore.shouldFetchCatalogForGuild(guildId)) {
@@ -168,7 +166,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     cResult[14] = closure_6(LinearGradientDefault, obj4);
     const tmp28 = closure_6(LinearGradientDefault, obj4);
   } else {
-    class E {
+    class C {
       constructor() {
         const tmp = guildId;
         if (GuildPowerupsStore.shouldFetchCatalogForGuild(guildId)) {
@@ -179,7 +177,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
   }
   if (cResult[15] === tmp11) {
-    class E {
+    class C {
       constructor() {
         const tmp = guildId;
         if (GuildPowerupsStore.shouldFetchCatalogForGuild(guildId)) {
@@ -190,7 +188,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     if (cResult[18] === tmp4.imageContainer) {
       let tmp35;
-      class E {
+      class C {
         constructor() {
           const tmp = guildId;
           if (GuildPowerupsStore.shouldFetchCatalogForGuild(guildId)) {
@@ -202,7 +200,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       const _Symbol = Symbol;
       ({ textBlock, centerText } = tmp4);
       if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-        class E {
+        class C {
           constructor() {
             const tmp = guildId;
             if (GuildPowerupsStore.shouldFetchCatalogForGuild(guildId)) {
@@ -215,7 +213,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         cResult[21] = stringResult;
         tmp35 = stringResult;
       } else {
-        class E {
+        class C {
           constructor() {
             const tmp = guildId;
             if (GuildPowerupsStore.shouldFetchCatalogForGuild(guildId)) {
@@ -226,7 +224,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         }
       }
       if (cResult[22] !== tmp4.centerText) {
-        class E {
+        class C {
           constructor() {
             const tmp = guildId;
             if (GuildPowerupsStore.shouldFetchCatalogForGuild(guildId)) {
@@ -237,10 +235,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         }
         const obj5 = { variant: "heading-xl/semibold", color: "text-strong", style: centerText, children: tmp35 };
         cResult[22] = tmp4.centerText;
-        cResult[23] = closure_6(tmp(4892).Text, obj5);
-        const tmp38 = closure_6(tmp(4892).Text, obj5);
+        cResult[23] = closure_6(tmp(5086).Text, obj5);
+        const tmp38 = closure_6(tmp(5086).Text, obj5);
       } else {
-        class E {
+        class C {
           constructor() {
             const tmp = guildId;
             if (GuildPowerupsStore.shouldFetchCatalogForGuild(guildId)) {
@@ -252,7 +250,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
       if (cResult[24] === tmp4.body) {
         let tmp40;
-        class E {
+        class C {
           constructor() {
             const tmp = guildId;
             if (GuildPowerupsStore.shouldFetchCatalogForGuild(guildId)) {
@@ -263,7 +261,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         }
         const _Symbol2 = Symbol;
         if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
-          class E {
+          class C {
             constructor() {
               const tmp = guildId;
               if (GuildPowerupsStore.shouldFetchCatalogForGuild(guildId)) {
@@ -276,7 +274,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           cResult[27] = stringResult1;
           tmp40 = stringResult1;
         } else {
-          class E {
+          class C {
             constructor() {
               const tmp = guildId;
               if (GuildPowerupsStore.shouldFetchCatalogForGuild(guildId)) {
@@ -287,7 +285,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           }
         }
         if (cResult[28] !== tmp39) {
-          class E {
+          class C {
             constructor() {
               const tmp = guildId;
               if (GuildPowerupsStore.shouldFetchCatalogForGuild(guildId)) {
@@ -298,10 +296,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           }
           const obj6 = { variant: "text-sm/medium", color: "text-subtle", style: tmp39, children: tmp40 };
           cResult[28] = tmp39;
-          cResult[29] = closure_6(tmp(4892).Text, obj6);
-          const tmp43 = closure_6(tmp(4892).Text, obj6);
+          cResult[29] = closure_6(tmp(5086).Text, obj6);
+          const tmp43 = closure_6(tmp(5086).Text, obj6);
         } else {
-          class E {
+          class C {
             constructor() {
               const tmp = guildId;
               if (GuildPowerupsStore.shouldFetchCatalogForGuild(guildId)) {
@@ -312,7 +310,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           }
         }
         if (cResult[30] === tmp4.textBlock) {
-          class E {
+          class C {
             constructor() {
               const tmp = guildId;
               if (GuildPowerupsStore.shouldFetchCatalogForGuild(guildId)) {
@@ -323,7 +321,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           }
         }
         const obj7 = { spacing: nativeDefault.space.PX_8, style: textBlock, children: items5 };
-        const Stack = tmp(5600).Stack;
+        const Stack = tmp(5373).Stack;
         items5 = [tmp37, tmp42];
         cResult[30] = tmp4.textBlock;
         cResult[31] = tmp37;
@@ -345,7 +343,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   }
   let tmp30 = null != tmp11;
   if (tmp30) {
-    class E {
+    class C {
       constructor() {
         const tmp = guildId;
         if (GuildPowerupsStore.shouldFetchCatalogForGuild(guildId)) {
@@ -355,12 +353,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
     }
     const obj9 = { imageUrl: tmp11, style: tmp4.powerupImage };
-    tmp30 = closure_6(tmp10(12195), obj9);
+    tmp30 = closure_6(tmp10(12274), obj9);
   }
   cResult[15] = tmp11;
   cResult[16] = tmp4.powerupImage;
   cResult[17] = tmp30;
-}) : ((guildId) => {
+}) : (function GuildSettingsServerTagUpsellCard(guildId) {
   let intl;
   let intl2;
   let intl3;
@@ -403,29 +401,29 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const obj5 = { style: tmp.backgroundLayer, colors: colors2, start, end, pointerEvents: "none" };
   items4[2] = closure_6(LinearGradientDefault, obj5);
   const obj6 = { spacing: nativeDefault.space.PX_16, children: items5 };
-  const Stack = guildId(5600).Stack;
+  const Stack = guildId(5373).Stack;
   const obj7 = { style: tmp.imageContainer, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp10Result };
   tmp10Result = null != tmp6;
   if (tmp10Result) {
     const obj8 = { imageUrl: tmp6, style: tmp.powerupImage };
-    tmp10Result = tmp10(tmp5(12195), obj8);
+    tmp10Result = tmp10(tmp5(12274), obj8);
   }
   items5 = [closure_6(closure_4, obj7), , ];
   const obj9 = { spacing: nativeDefault.space.PX_8, style: tmp.textBlock, children: items6 };
-  const Stack2 = tmp2(5600).Stack;
+  const Stack2 = tmp2(5373).Stack;
   const obj10 = { variant: "heading-xl/semibold", color: "text-strong", style: tmp.centerText, children: intl.string(tmp2(1126).t["2QmKZ2"]) };
-  const Text = tmp2(4892).Text;
+  const Text = tmp2(5086).Text;
   intl = tmp2(1126).intl;
   items6 = [closure_6(Text, obj10), ];
   const obj11 = { variant: "text-sm/medium", color: "text-subtle", style: items7, children: intl2.string(tmp2(1126).t.Tg0fDm) };
   items7 = [, ];
   ({ centerText: arr8[0], body: arr8[1] } = tmp);
-  const Text2 = tmp2(4892).Text;
+  const Text2 = tmp2(5086).Text;
   intl2 = tmp2(1126).intl;
   items6[1] = closure_6(Text2, obj11);
   items5[1] = closure_7(Stack2, obj9);
-  const obj12 = { variant: "primary", size: "lg", text: intl3.string(tmp2(1126).t.kMRDWs), icon: closure_6(tmp2(16188).BoostTier2Icon, { color: "white" }), iconPosition: "start", onPress: onUnlockPress };
-  const Button = tmp2(5601).Button;
+  const obj12 = { variant: "primary", size: "lg", text: intl3.string(tmp2(1126).t.kMRDWs), icon: closure_6(tmp2(16448).BoostTier2Icon, { color: "white" }), iconPosition: "start", onPress: onUnlockPress };
+  const Button = tmp2(5375).Button;
   intl3 = tmp2(1126).intl;
   items5[2] = closure_6(Button, obj12);
   items4[3] = closure_7(Stack, obj6);

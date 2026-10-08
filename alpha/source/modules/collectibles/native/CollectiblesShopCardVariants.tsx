@@ -1,28 +1,26 @@
-// Module ID: 8560
-// Function ID: 8561
+// Module ID: 9044
+// Function ID: 9045
 // Name: CollectiblesShopCardVariants
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 8529, 8561, 6635, 8562, 8452, 7077, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 9014, 9045, 6812, 9046, 8938, 7263, 2]
 
-// Module 8560 (CollectiblesShopCardVariants)
+// Module 9044 (CollectiblesShopCardVariants)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 8529 */;
-import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 8561 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9014 */;
+import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 9045 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let product;
 
 let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const CheckmarkSmallIcon2 = tmp(6635);
-const PlusSmallIcon2 = tmp(8562);
+const CheckmarkSmallIcon2 = tmp(6812);
+const PlusSmallIcon2 = tmp(9046);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -44,7 +42,7 @@ let closure_7 = createStyles.createStyles((arg0) => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSelected) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function VariantOption(isSelected) {
   let tmp3;
   let variant;
   let zIndex;
@@ -133,7 +131,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSelected) => 
   cResult[3] = tmp3;
   cResult[4] = items1;
   tmp4 = items1;
-}) : ((variant) => {
+}) : (function VariantOption(variant) {
   let items;
   let items1;
   let obj3;
@@ -153,7 +151,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSelected) => 
   return React3(View, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((variant) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function VariantCheckmark(variant) {
   let tmp6;
   const obj = react2;
   const cResult = obj.c(2);
@@ -170,7 +168,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((variant) => {
     tmp6 = cResult[1];
   }
   return tmp6;
-}) : ((variant) => {
+}) : (function VariantCheckmark(variant) {
   const tmp = useIsVariantColorLightDefault(variant.variant);
   const CheckmarkSmallIcon = CheckmarkSmallIcon2.CheckmarkSmallIcon;
   const colors = nativeDefault.colors;
@@ -178,7 +176,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((variant) => {
   return React3(CheckmarkSmallIcon, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((zIndex) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function VariantOverflowOption(zIndex) {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(14);
@@ -249,7 +247,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((zIndex) => {
   cResult[3] = tmp5;
   cResult[4] = items1;
   tmp6 = items1;
-}) : ((zIndex) => {
+}) : (function VariantOverflowOption(zIndex) {
   let PlusSmallIcon;
   let items;
   let items1;
@@ -267,7 +265,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((zIndex) => {
   return React3(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function CardProductVariants(product) {
   let defaultVariantIndex;
   let items;
   let num8;
@@ -275,9 +273,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((p
   const cResult = obj.c(14);
   product = product.product;
   const tmp2 = closure_6();
-  const obj2 = defaultVariantIndex(8452);
+  const obj2 = defaultVariantIndex(8938);
   defaultVariantIndex = obj2.useDefaultVariantIndex(product);
-  const obj3 = defaultVariantIndex(7077);
+  const obj3 = defaultVariantIndex(7263);
   if (obj3.getIsVariantProduct(product)) {
     let tmp7;
     let num3 = 3;
@@ -334,7 +332,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((p
       }
     }
     if (cResult[4] !== defaultVariantIndex) {
-      const fn = function x(variant, arg1) {
+      const fn = function f(variant, arg1) {
         const obj = { variant, isSelected: arg1 === defaultVariantIndex, zIndex: 4 - Math.abs(defaultVariantIndex - arg1) };
         return React3(closure_8, obj, variant.variantValue);
       };
@@ -355,15 +353,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((p
   } else {
     return null;
   }
-}) : ((product) => {
+}) : (function CardProductVariants(product) {
   let items;
   let num5;
   product = product.product;
   let defaultVariantIndex;
   const tmp = closure_6();
-  let obj = defaultVariantIndex(8452);
+  let obj = defaultVariantIndex(8938);
   defaultVariantIndex = obj.useDefaultVariantIndex(product);
-  const obj2 = defaultVariantIndex(7077);
+  const obj2 = defaultVariantIndex(7263);
   if (obj2.getIsVariantProduct(product)) {
     let num3 = 3;
     if (product.variants.length <= 4) {

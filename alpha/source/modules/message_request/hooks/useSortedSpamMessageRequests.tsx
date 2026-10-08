@@ -1,19 +1,19 @@
-// Module ID: 17098
-// Function ID: 17099
+// Module ID: 17379
+// Function ID: 17380
 // Name: useSortedSpamMessageRequests
-// Dependencies: [19, 2051, 1377, 6735, 558, 576, 504, 17088, 2]
+// Dependencies: [19, 2063, 1389, 6061, 558, 576, 504, 17369, 2]
 
-// Module 17098 (useSortedSpamMessageRequests)
+// Module 17379 (useSortedSpamMessageRequests)
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import UserStore from "UserStore" /* 1377 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6735 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import UserStore from "UserStore" /* 1389 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6061 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let user;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSortedSpamMessageRequests() {
   let spamChannelIds;
   let stateFromStoresArray;
   let stateFromStoresObject;
@@ -30,7 +30,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(15);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ChannelStore];
-    const fn = function l() {
+    const fn = function u() {
       return ChannelStore.getPrivateChannelsVersion();
     };
     cResult[0] = items;
@@ -161,7 +161,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[11] = stateFromStoresObject;
   cResult[12] = mapped;
   tmp18 = mapped;
-}) : (() => {
+}) : (function useSortedSpamMessageRequests() {
   let spamChannelIds;
   let stateFromStoresArray;
   let stateFromStoresObject;

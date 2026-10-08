@@ -1,21 +1,21 @@
-// Module ID: 11445
-// Function ID: 11446
+// Module ID: 11428
+// Function ID: 11429
 // Name: SelectComponentActionSheet
-// Dependencies: [19, 17, 2051, 2103, 6653, 21, 4896, 587, 558, 576, 1126, 5601, 6651, 9270, 4600, 5998, 8991, 6000, 6478, 4596, 1618, 1484, 6075, 504, 4860, 6119, 6652, 2]
+// Dependencies: [19, 17, 2063, 2115, 6830, 21, 5090, 587, 558, 576, 1126, 5375, 6828, 8601, 4792, 6182, 8742, 6184, 6656, 4788, 1630, 1496, 6261, 504, 5054, 6298, 6829, 2]
 
-// Module 11445 (SelectComponentActionSheet)
+// Module 11428 (SelectComponentActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import react_native2 from "react-native" /* 4600 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import TableRow2 from "TableRow" /* 6000 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6653 */;
+import react_native2 from "react-native" /* 4792 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import TableRow2 from "TableRow" /* 6184 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6830 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ items = [{ scale: 0.75 }];
 obj3 = { paddingHorizontal: nativeDefault.space.PX_4, marginTop: nativeDefault.space.PX_16, marginHorizontal: nativeDefault.space.PX_16 };
 let closure_11 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderIcon) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectionHeader(renderIcon) {
   let intl3;
   let items;
   let labelComponent;
@@ -258,7 +258,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderIcon) =>
   cResult[2] = tmp4;
   cResult[3] = mapped;
   arr = mapped;
-}) : ((renderIcon) => {
+}) : (function SelectionHeader(renderIcon) {
   let formatToPlainStringResult;
   let intl3;
   let labelComponent;
@@ -296,7 +296,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderIcon) =>
     return mapped;
   }, items);
   let label;
-  const BottomSheetTitleHeader = renderIcon(6651).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = renderIcon(6828).BottomSheetTitleHeader;
   const tmp3 = closure_10;
   const tmp4 = closure_9;
   if (labelComponent != null) {
@@ -321,7 +321,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderIcon) =>
   tmp5Result = undefined;
   if (tmp2) {
     let str = "primary";
-    const Button = tmp6(5601).Button;
+    const Button = tmp6(5375).Button;
     if (selectButtonDisabled) {
       str = "secondary";
     }
@@ -361,7 +361,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderIcon) =>
             }
       };
       tmp5Result3 = undefined;
-      const tmp13 = selectedOptions(9270);
+      const tmp13 = selectedOptions(8601);
       if (tmp2) {
         if (0 !== memo.length) {
           tmp5Result3 = tmp5(onQueryChange, {});
@@ -374,7 +374,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderIcon) =>
   return tmp3(tmp4, { children });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectionOptionItem(item) {
   let clearable;
   let disabled;
   let end;
@@ -619,7 +619,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   cResult[1] = flag;
   cResult[2] = obj6;
   tmp5 = obj6;
-}) : ((item) => {
+}) : (function SelectionOptionItem(item) {
   let clearable;
   let closure_129_1;
   let closure_129_2;
@@ -682,7 +682,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
     trailing: tmp13(tmp14, obj3)
   };
   result = undefined;
-  const TableRow = tmp2(6000).TableRow;
+  const TableRow = tmp2(6184).TableRow;
   if (itemAccessibilityLabel != null) {
     result = itemAccessibilityLabel(item);
   }
@@ -705,7 +705,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   }
   items1 = [renderOptionSuffixResult, ];
   if (clearable) {
-    const FormCheckbox = tmp2(5998).FormCheckbox;
+    const FormCheckbox = tmp2(6182).FormCheckbox;
     if (!selected) {
       selected = false;
     }
@@ -714,14 +714,14 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   } else {
     tmp8Result2 = null;
     if (true === selected) {
-      tmp8Result2 = tmp8(tmp2(8991).CheckmarkSmallBoldIcon, { color: "text-brand" });
+      tmp8Result2 = tmp8(tmp2(8742).CheckmarkSmallBoldIcon, { color: "text-brand" });
     }
   }
   items1[1] = tmp8Result2;
   return metroImportAll(TableRow, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectionActionComponent) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectComponentActionSheet(selectionActionComponent) {
   let allowEmpty;
   let expanded;
   let first;
@@ -951,7 +951,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectionActionCompo
   cResult[11] = stateFromStores;
   cResult[12] = items2;
   cResult[13] = U;
-}) : ((selectionActionComponent) => {
+}) : (function SelectComponentActionSheet(selectionActionComponent) {
   let BottomSheetFlatList;
   let expanded;
   let iconContainerStyle;

@@ -1,20 +1,20 @@
-// Module ID: 15586
-// Function ID: 15587
+// Module ID: 15866
+// Function ID: 15867
 // Name: PaymentFlowTest
-// Dependencies: [32, 19, 17, 1377, 21, 4896, 587, 558, 576, 573, 4892, 6105, 5601, 6002, 5600, 4860, 15587, 1987, 6478, 10564, 2]
+// Dependencies: [32, 19, 17, 1389, 21, 5090, 587, 558, 576, 573, 5086, 6283, 5375, 6186, 5373, 5054, 15867, 1999, 6656, 10161, 2]
 
-// Module 15586 (PaymentFlowTest)
+// Module 15866 (PaymentFlowTest)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6478 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6656 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let metroImportDefault;
 let obj2;
 let obj3;
 let tmp;
-const NativePaymentContext = tmp(10564);
+const NativePaymentContext = tmp(10161);
 const ScrollView = react_native.ScrollView;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
@@ -35,7 +35,7 @@ createStyles = createStyles.createStyles;
 obj3 = { padding: nativeDefault.space.PX_16 };
 let closure_9 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function TestView() {
   let closure_1;
   let currentUser;
   let first1;
@@ -101,46 +101,46 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       const _Symbol2 = Symbol;
       if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        class U {
+        class G {
           constructor(arg0) {
             return closure_1(arg0);
           }
         }
-        cResult[9] = U;
-        tmp26 = U;
+        cResult[9] = G;
+        tmp26 = G;
       } else {
-        class U {
+        class G {
           constructor(arg0) {
             return closure_1(arg0);
           }
         }
       }
       if (cResult[10] === value) {
-        class U {
+        class G {
           constructor(arg0) {
             return closure_1(arg0);
           }
         }
         if (cResult[13] === first1) {
-          class U {
+          class G {
             constructor(arg0) {
               return closure_1(arg0);
             }
           }
           if (cResult[16] === first2) {
-            class U {
+            class G {
               constructor(arg0) {
                 return closure_1(arg0);
               }
             }
             if (cResult[19] === tmp19) {
-              class U {
+              class G {
                 constructor(arg0) {
                   return closure_1(arg0);
                 }
               }
               if (cResult[22] === tmp37) {
-                class U {
+                class G {
                   constructor(arg0) {
                     return closure_1(arg0);
                   }
@@ -181,28 +181,26 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const tmp29 = closure_7(tmp(tmp2[11]).TextInput, obj8);
     }
   }
-  class I {
-    constructor() {
-      let tmp2 = null != first;
-      const tmp = first;
-      if (tmp2) {
-        tmp2 = null != first1;
-      }
-      if (tmp2) {
-        const obj = { selectedSkuId: tmp, requestType: "giftSku", giftRecipientId: first1, giftMessage: first2 };
-        const obj2 = ActionSheetActionCreatorsDefault;
-        obj2.hideActionSheet();
-        const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(15587, dependencyMap.paths), "SimpleRequestOTPActionSheet", obj);
-      }
+  function giftSKU() {
+    let tmp2 = null != first;
+    const tmp = first;
+    if (tmp2) {
+      tmp2 = null != first1;
+    }
+    if (tmp2) {
+      const obj = { selectedSkuId: tmp, requestType: "giftSku", giftRecipientId: first1, giftMessage: first2 };
+      const obj2 = ActionSheetActionCreatorsDefault;
+      obj2.hideActionSheet();
+      const obj3 = ActionSheetActionCreatorsDefault;
+      obj3.openLazy(asyncRequire(15867, dependencyMap.paths), "SimpleRequestOTPActionSheet", obj);
     }
   }
   cResult[2] = first2;
   cResult[3] = first1;
   cResult[4] = value;
-  cResult[5] = I;
-  tmp19 = I;
-}) : (() => {
+  cResult[5] = giftSKU;
+  tmp19 = giftSKU;
+}) : (function TestView() {
   let currentUser;
   let first1;
   let first2;
@@ -259,7 +257,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj9 = {
     disabled: tmp17,
     text: "Send Gift",
-    onPress() {
+    onPress: function giftSKU() {
       let tmp2 = null != first;
       const tmp = first;
       if (tmp2) {
@@ -270,7 +268,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const obj2 = ActionSheetActionCreatorsDefault;
         obj2.hideActionSheet();
         const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(15587, dependencyMap.paths), "SimpleRequestOTPActionSheet", obj);
+        obj3.openLazy(asyncRequire(15867, dependencyMap.paths), "SimpleRequestOTPActionSheet", obj);
       }
     }
   };
@@ -279,7 +277,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return closure_8(Stack, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function PaymentFlowTest() {
   let first;
   let obj4;
   let tmp6;
@@ -342,7 +340,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   cResult[5] = insets.top;
   cResult[6] = obj5;
   tmp7 = obj5;
-}) : (() => {
+}) : (function PaymentFlowTest() {
   let obj2;
   const tmp = closure_9();
   const insets = useSafeAreaInsetsKeyboardAwareDefault({ includeKeyboardHeight: true }).insets;

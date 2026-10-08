@@ -1,15 +1,15 @@
-// Module ID: 5048
-// Function ID: 5049
+// Module ID: 5405
+// Function ID: 5406
 // Name: NicknameUtils
-// Dependencies: [2051, 2112, 4525, 1126, 4728, 558, 576, 504, 2]
+// Dependencies: [2063, 2124, 4717, 1126, 4922, 558, 576, 504, 2]
 // Exports: getNickname
 
-// Module 5048 (NicknameUtils)
+// Module 5405 (NicknameUtils)
 import intl2 from "intl" /* 1126 */;
-import UserUtilsDefault from "UserUtils" /* 4728 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
+import UserUtilsDefault from "UserUtils" /* 4922 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ function getName(guildId, arg1, id) {
   }
   return stringResult;
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useName(arg0, arg1, arg2) {
   let closure_0;
   let closure_2;
   let first;
@@ -83,7 +83,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
   cResult[3] = arg2;
   cResult[4] = fn;
   tmp8 = fn;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useName(arg0, arg1, arg2) {
   let closure_0;
   let closure_2;
   _require = arg0;

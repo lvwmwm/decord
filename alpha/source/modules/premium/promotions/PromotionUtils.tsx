@@ -1,23 +1,22 @@
-// Module ID: 13247
-// Function ID: 13248
+// Module ID: 13547
+// Function ID: 13548
 // Name: PromotionUtils
-// Dependencies: [5, 1231, 10410, 10409, 1379, 1085, 2011, 4735, 1282, 1369, 1252, 1390, 2036, 11, 2037, 10441, 2]
+// Dependencies: [5, 1243, 10007, 10006, 1391, 1085, 4929, 1294, 1381, 1264, 1402, 2048, 11, 2049, 10038, 2]
 // Exports: claimOutboundPromotion, getClaimedEndedOutboundPromotions, getClaimedOutboundPromotionCodeMap, getNextUnseenOutboundPromotionId, getOutboundPromotionRedemptionUrl, getPromotionImageURL, isDedicatedSurfacePromotion, isRecurringPromotion, shouldShowOutboundPromotionNotice, shouldShowOutboundPromotionOnPlatform
 
-// Module 13247 (PromotionUtils)
+// Module 13547 (PromotionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import FlagUtils from "FlagUtils" /* 1390 */;
-import Constants2 from "Constants" /* 2011 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2037 */;
-import shared from "shared" /* 4735 */;
-import promotions_constants from "promotions/constants" /* 10441 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import FlagUtils from "FlagUtils" /* 1402 */;
+import dismissible_content from "dismissible_content" /* 2048 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2049 */;
+import shared from "shared" /* 4929 */;
+import promotions_constants from "promotions/constants" /* 10038 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import PromotionRecord from "PromotionRecord" /* 10410 */;
-import PromotionsStore from "PromotionsStore" /* 10409 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
+import PromotionRecord from "PromotionRecord" /* 10007 */;
+import PromotionsStore from "PromotionsStore" /* 10006 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +25,7 @@ let closure_4, location_stack, name, partner, promotion_id, set;
 let c10;
 let c9;
 let metroImportAll;
-const f114403 = (startDate, startDate2) => {
+const f115683 = (startDate, startDate2) => {
   let num = 1;
   const date = new Date(startDate.startDate);
   const date1 = new Date(startDate2.startDate);
@@ -94,12 +93,12 @@ let obj = function _claimOutboundPromotion() {
               c6 = 3;
               return { value, done: true };
             } else {
-              const HTTP = closure_132_0(closure_132_2[8]).HTTP;
+              const HTTP = closure_132_0(closure_132_2[7]).HTTP;
               const post = HTTP.post;
               const obj5 = { url: closure_132_9.CLAIM_OUTBOUND_PROMOTION_CODE(promotion_id), rejectWithError: obj10.rejectWithMigratedError() };
               c5 = 2;
               c6 = 1;
-              obj10 = closure_132_0(closure_132_2[8]);
+              obj10 = closure_132_0(closure_132_2[7]);
               const obj6 = { value: post(obj5), done: false };
               return obj6;
             }
@@ -112,16 +111,16 @@ let obj = function _claimOutboundPromotion() {
           } else {
             closure_4 = value;
             body = closure_4.body;
-            const obj8 = closure_132_0(closure_132_2[9]);
+            const obj8 = closure_132_0(closure_132_2[8]);
             if (obj8.isIOS()) {
               ANDROID = tmp37.IOS;
             } else {
               ANDROID = tmp37.ANDROID;
             }
             obj = { platform: ANDROID, status: closure_4.status, location_stack, promotion_id, name, partner };
-            const track = closure_132_1(closure_132_2[10]).track;
+            const track = closure_132_1(closure_132_2[9]).track;
             const OUTBOUND_PROMOTION_CLAIMED = closure_132_8.OUTBOUND_PROMOTION_CLAIMED;
-            closure_132_1(closure_132_2[10]);
+            closure_132_1(closure_132_2[9]);
             if (name == null) {
               name = null;
             }
@@ -146,7 +145,6 @@ let obj = function _claimOutboundPromotion() {
 };
 const PromotionFlags = PremiumConstants.PromotionFlags;
 ({ AnalyticEvents: metroImportAll, Endpoints: c9, Platforms: c10 } = Constants);
-const ActivityPlatform = Constants2.ActivityPlatform;
 const result = size.fileFinishedImporting("modules/premium/promotions/PromotionUtils.tsx");
 
 export const getPromotionImageURL = function getPromotionImageURL(id, arg1) {
@@ -223,7 +221,7 @@ export const getNextUnseenOutboundPromotionId = function getNextUnseenOutboundPr
   }
   let id = null;
   if (0 !== found1.length) {
-    id = found1.sort(f114403)[0].id;
+    id = found1.sort(f115683)[0].id;
   }
   return id;
 };
@@ -264,7 +262,7 @@ export const shouldShowOutboundPromotionNotice = function shouldShowOutboundProm
   }
   let id = null;
   if (0 !== found1.length) {
-    id = found1.sort(f114403)[0].id;
+    id = found1.sort(f115683)[0].id;
   }
   let tmp6 = null != id;
   if (tmp6) {

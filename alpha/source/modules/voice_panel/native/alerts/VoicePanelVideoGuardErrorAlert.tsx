@@ -1,23 +1,21 @@
-// Module ID: 13122
-// Function ID: 13123
+// Module ID: 12837
+// Function ID: 12838
 // Name: VoicePanelVideoGuardErrorAlert
-// Dependencies: [19, 21, 558, 576, 5720, 1126, 4892, 13120, 5720, 2]
+// Dependencies: [19, 21, 558, 576, 5303, 1126, 5086, 12834, 5303, 2]
 
-// Module 13122 (VoicePanelVideoGuardErrorAlert)
+// Module 12837 (VoicePanelVideoGuardErrorAlert)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import AlertModal2 from "AlertModal" /* 5720 */;
-import VideoGuardExperiment from "VideoGuardExperiment" /* 13120 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import AlertModal2 from "AlertModal" /* 5303 */;
+import VideoGuardExperiment from "VideoGuardExperiment" /* 12834 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let title;
-
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelVideoGuardErrorAlert(title) {
   let first;
   let tmp10;
   let tmp12;
@@ -36,7 +34,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     const intl2 = tmp(1126).intl;
     const format = intl2.format;
     const obj4 = { helpdeskArticle: VideoGuardExperiment.VIDEO_GUARD_BLOG_POST_URL };
@@ -75,7 +73,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
   cResult[6] = title;
   cResult[7] = tmp16;
   tmp15 = tmp16;
-}) : ((title) => {
+}) : (function VoicePanelVideoGuardErrorAlert(title) {
   let BPDKoA;
   let format;
   let intl3;

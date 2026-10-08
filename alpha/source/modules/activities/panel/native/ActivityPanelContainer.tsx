@@ -1,19 +1,19 @@
-// Module ID: 17188
-// Function ID: 17189
+// Module ID: 17469
+// Function ID: 17470
 // Name: ActivityPanelContainer
-// Dependencies: [19, 21, 558, 576, 17189, 17190, 17198, 2]
+// Dependencies: [19, 21, 558, 576, 17470, 17471, 17479, 2]
 
-// Module 17188 (ActivityPanelContainer)
+// Module 17469 (ActivityPanelContainer)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ActivityPanelUtils from "ActivityPanelUtils" /* 17189 */;
-import ActivityPanelControllerDefault from "ActivityPanelController" /* 17190 */;
+import ActivityPanelUtils from "ActivityPanelUtils" /* 17470 */;
+import ActivityPanelControllerDefault from "ActivityPanelController" /* 17471 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityPanelContainer() {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -32,7 +32,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : (() => {
+}) : (function ActivityPanelContainer() {
   let tmp2 = null;
   const obj = ActivityPanelUtils;
   if (obj.useIsConnectedToActivityInText()) {

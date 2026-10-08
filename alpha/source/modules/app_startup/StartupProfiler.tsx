@@ -1,9 +1,9 @@
-// Module ID: 11584
-// Function ID: 11585
+// Module ID: 11647
+// Function ID: 11648
 // Name: StartupProfiler
 // Dependencies: [19, 21, 558, 576, 10, 2]
 
-// Module 11584 (StartupProfiler)
+// Module 11647 (StartupProfiler)
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
@@ -37,7 +37,7 @@ for (const key10073 in obj3) {
   }
   continue;
 }
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartupProfiler(arg0) {
   let children;
   let profile;
   let tmp3;
@@ -72,7 +72,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = tmp3;
   cResult[5] = tmp5;
   tmp4 = tmp5;
-}) : ((profile) => {
+}) : (function StartupProfiler(profile) {
   function onRender(arg0, arg1, arg2) {
     const obj = AppStartPerformanceDefault;
     obj.mark("\u{1F3A8}", "" + obj2[profile] + profile + " " + arg1, arg2);

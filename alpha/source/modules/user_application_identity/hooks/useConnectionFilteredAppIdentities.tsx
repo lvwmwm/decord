@@ -1,10 +1,10 @@
-// Module ID: 12954
-// Function ID: 12955
+// Module ID: 13233
+// Function ID: 13234
 // Name: useConnectionFilteredAppIdentities
-// Dependencies: [19, 2013, 558, 576, 8727, 2]
+// Dependencies: [19, 2025, 558, 576, 13200, 2]
 
-// Module 12954 (useConnectionFilteredAppIdentities)
-import UserApplicationIdentityConstants from "UserApplicationIdentityConstants" /* 2013 */;
+// Module 13233 (useConnectionFilteredAppIdentities)
+import UserApplicationIdentityConstants from "UserApplicationIdentityConstants" /* 2025 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 let _require, closure_0;
 
 let closure_3 = UserApplicationIdentityConstants.APPLICATION_IDENTITY_CONNECTIONS_ALLOWED_APPLICATIONS;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConnectionFilteredAppIdentities(arg0, arg1) {
   let arr;
   let data;
   let isLoading;
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   }
   const includeHidden = tmp4.includeHidden;
   _require = tmp5;
-  const tmpResult = tmp(8727);
+  const tmpResult = tmp(13200);
   const userApplicationIdentities = tmpResult.useUserApplicationIdentities(arg0);
   ({ isLoading, data } = userApplicationIdentities);
   if (cResult[2] !== data) {
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[5] = arr;
   cResult[6] = found;
   tmp8 = found;
-}) : ((arg0) => {
+}) : (function useConnectionFilteredAppIdentities(arg0) {
   let items;
   let obj = arg1;
   if (arg1 === undefined) {

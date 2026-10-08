@@ -1,15 +1,15 @@
-// Module ID: 6551
-// Function ID: 6552
+// Module ID: 6727
+// Function ID: 6728
 // Name: CountrySelectModal
-// Dependencies: [19, 21, 1126, 6017, 5099, 6552, 6549, 558, 576, 6541, 6580, 6503, 2]
+// Dependencies: [19, 21, 1126, 6203, 5940, 6728, 6725, 558, 576, 6717, 6756, 6679, 2]
 
-// Module 6551 (CountrySelectModal)
+// Module 6727 (CountrySelectModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
-import NavigatorHeader from "NavigatorHeader" /* 6017 */;
-import Navigator from "Navigator" /* 6503 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+import NavigatorHeader from "NavigatorHeader" /* 6203 */;
+import Navigator from "Navigator" /* 6679 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ function render() {
   return closure_1_4(closure_1_1(closure_1_2[5]), obj);
 }
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CountrySelectModal() {
   let first;
   let intl;
   let obj3;
@@ -73,7 +73,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = cResult[3];
   }
   return tmp9;
-}) : (() => {
+}) : (function CountrySelectModal() {
   const screens = react.useMemo(() => {
     let intl;
     let obj2;

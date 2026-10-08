@@ -1,23 +1,23 @@
-// Module ID: 7508
-// Function ID: 7509
+// Module ID: 12658
+// Function ID: 12659
 // Name: ForLaterModal
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1618, 1126, 7506, 7509, 1369, 6017, 5099, 6026, 13142, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1630, 1126, 9633, 9232, 1381, 6203, 5940, 6212, 12659, 2]
 
-// Module 7508 (ForLaterModal)
+// Module 12658 (ForLaterModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
-import HeaderShared from "HeaderShared" /* 7509 */;
-import ForLaterScreenDefault from "ForLaterScreen" /* 13142 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+import HeaderShared from "HeaderShared" /* 9232 */;
+import ForLaterScreenDefault from "ForLaterScreen" /* 12659 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, type;
+let _require;
 
 let closure_4;
 let hasOwnProperty;
@@ -33,7 +33,7 @@ createStyles = createStyles.createStyles;
 obj3 = { paddingLeft: nativeDefault.space.PX_16 };
 obj4 = { paddingRight: nativeDefault.space.PX_16 };
 let closure_6 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterModal(type) {
   let items;
   let title;
   let tmp10;
@@ -89,7 +89,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
   const sum = tmp10 + tmp5(587).space.PX_8;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const tmpResult2 = require("NavigatorHeader");
-    const headerCloseButton = tmpResult2.getHeaderCloseButton(tmp5(5099).pop);
+    const headerCloseButton = tmpResult2.getHeaderCloseButton(tmp5(5940).pop);
     cResult[6] = headerCloseButton;
     tmp12 = headerCloseButton;
   } else {
@@ -136,7 +136,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
     }
   }
   const obj4 = { title: tmp6, headerTitle: tmp9, headerTitleAlign: "center", headerStatusBarHeight: sum, headerLeft: tmp12, headerLeftContainerStyle: tmp4.headerLeftContainer, headerRightContainerStyle: tmp4.headerRightContainer };
-  const tmp15 = closure_4(require("module_6026").Header, obj4);
+  const tmp15 = closure_4(require("module_6212").Header, obj4);
   cResult[7] = tmp4.headerLeftContainer;
   cResult[8] = tmp4.headerRightContainer;
   cResult[9] = tmp9;
@@ -144,7 +144,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
   cResult[11] = tmp6;
   cResult[12] = tmp15;
   tmp14 = tmp15;
-}) : ((type) => {
+}) : (function ForLaterModal(type) {
   let aUXxzT;
   let items;
   let num;
@@ -176,7 +176,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
     headerLeftContainerStyle: null,
     headerRightContainerStyle: null
   };
-  const Header = tmp4(6026).Header;
+  const Header = tmp4(6212).Header;
   num = 0;
   const tmp4Result = require("PlatformUtils");
   const tmp7 = closure_5;

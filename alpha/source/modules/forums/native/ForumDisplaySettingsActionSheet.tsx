@@ -1,19 +1,19 @@
-// Module ID: 12448
-// Function ID: 12449
+// Module ID: 12544
+// Function ID: 12545
 // Name: ForumDisplaySettingsActionSheet
-// Dependencies: [32, 19, 2051, 11629, 21, 1126, 2061, 2062, 2063, 558, 576, 504, 7276, 5597, 6651, 9230, 6078, 6079, 6119, 5600, 587, 6708, 2]
+// Dependencies: [32, 19, 2063, 11693, 21, 1126, 2073, 2074, 2075, 558, 576, 504, 7876, 5392, 6828, 8538, 6264, 6265, 6298, 5373, 587, 6885, 2]
 
-// Module 12448 (ForumDisplaySettingsActionSheet)
-import tracking_Tracking from "tracking/Tracking" /* 7276 */;
+// Module 12544 (ForumDisplaySettingsActionSheet)
+import Tracking from "Tracking" /* 7876 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import ForumChannelStore from "ForumChannelStore" /* 11629 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import ForumChannelStore from "ForumChannelStore" /* 11693 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channelId, closure_6;
+let closure_6;
 
 let c9;
 let metroImportAll;
@@ -22,18 +22,37 @@ let metroRequire;
 let react = react_mod;
 ({ useForumChannelStoreApi: metroRequire, useForumChannelStore: metroImportDefault } = ForumChannelStore);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumDisplaySettingsActionSheet(channelId) {
+  let Stack;
   let closure_4;
   let first;
   let first1;
   let first2;
+  let intl10;
+  let intl11;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let intl6;
+  let intl7;
+  let intl8;
+  let intl9;
+  let items2;
+  let items3;
+  let items4;
+  let obj10;
+  let obj3;
+  let obj5;
+  let obj6;
   let sortOrder;
+  let tmp18;
+  let tmp19;
+  let tmp20;
   let tmp6;
   let obj = channelId(sortOrder[10]);
   const cResult = obj.c(40);
-  const tmp = channelId;
   channelId = channelId.channelId;
-  const tmp2 = sortOrder;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [first1];
     cResult[0] = items;
@@ -51,64 +70,574 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   } else {
     tmp6 = cResult[2];
   }
-  const tmpResult = tmp(tmp2[11]);
+  const tmpResult = channelId(sortOrder[11]);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  const tmp8 = first2(channelId);
-  sortOrder = tmp8.sortOrder;
-  const layoutType = tmp8.layoutType;
-  const tagSetting = tmp8.tagSetting;
-  const tmp9 = closure_6();
-  react = tmp9;
-  const tmp10 = layoutType(react.useState(sortOrder), 2);
-  first1 = tmp10[0];
-  closure_6 = tmp10[1];
-  const tmp12 = layoutType(react.useState(layoutType), 2);
-  first2 = tmp12[0];
-  let closure_8 = tmp12[1];
-  const tmp14 = layoutType(react.useState(tagSetting), 2);
-  const first3 = tmp14[0];
-  let closure_10 = tmp14[1];
+  const tmp7 = first2(channelId);
+  sortOrder = tmp7.sortOrder;
+  const layoutType = tmp7.layoutType;
+  const tagSetting = tmp7.tagSetting;
+  const tmp8 = closure_6();
+  react = tmp8;
+  const tmp9 = layoutType(react.useState(sortOrder), 2);
+  first1 = tmp9[0];
+  closure_6 = tmp9[1];
+  const tmp11 = layoutType(react.useState(layoutType), 2);
+  first2 = tmp11[0];
+  let closure_8 = tmp11[1];
+  const tmp13 = layoutType(react.useState(tagSetting), 2);
+  const first3 = tmp13[0];
+  let closure_10 = tmp13[1];
   const ref = react.useRef(null);
   const ref1 = react.useRef(null);
   const ref2 = react.useRef(null);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function p(arg0) {
+    function handleSortOrderChange(arg0) {
       closure_6(arg0);
-    };
-    cResult[3] = fn2;
+    }
+    cResult[3] = handleSortOrderChange;
+    tmp18 = handleSortOrderChange;
+  } else {
+    tmp18 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class B {
-      constructor(arg0) {
-        closure_8(arg0);
-      }
+    function handleLayoutTypeChange(arg0) {
+      closure_8(arg0);
     }
-    cResult[4] = B;
+    cResult[4] = handleLayoutTypeChange;
+    tmp19 = handleLayoutTypeChange;
   } else {
-    class B {
-      constructor(arg0) {
-        closure_8(arg0);
-      }
-    }
+    tmp19 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class B {
-      constructor(arg0) {
-        closure_8(arg0);
-      }
+    function handleTagSettingChange(arg0) {
+      closure_10(arg0);
     }
-    cResult[5] = tmp22;
+    cResult[5] = handleTagSettingChange;
+    tmp20 = handleTagSettingChange;
   } else {
-    class B {
-      constructor(arg0) {
-        closure_8(arg0);
-      }
-    }
+    tmp20 = cResult[5];
   }
   if (cResult[6] === stateFromStores) {
-    class B {
-      constructor(arg0) {
-        closure_8(arg0);
+    if (cResult[7] === channelId) {
+      if (cResult[8] === layoutType) {
+        if (cResult[9] === first2) {
+          if (cResult[10] === first1) {
+            if (cResult[11] === first3) {
+              if (cResult[12] === sortOrder) {
+                let tmp21;
+                if (cResult[13] === tmp8) {
+                  tmp21 = cResult[14];
+                }
+                const tmpResult2 = channelId(sortOrder[13]);
+                const unmountEffect = tmpResult2.useUnmountEffect(tmp21);
+                if (cResult[15] !== stateFromStores) {
+                  class Y {
+                    constructor() {
+                      if (null != stateFromStores) {
+                        const current = ref.current;
+                        if (current != null) {
+                          current.setValue(stateFromStores.getDefaultSortOrder());
+                        }
+                        const current2 = ref1.current;
+                        if (current2 != null) {
+                          current2.setValue(stateFromStores.getDefaultLayout());
+                        }
+                        const current3 = ref2.current;
+                        if (current3 != null) {
+                          current3.setValue(stateFromStores.getDefaultTagSetting());
+                        }
+                      }
+                    }
+                  }
+                  cResult[15] = stateFromStores;
+                  cResult[16] = Y;
+                } else {
+                  class Y {
+                    constructor() {
+                      if (null != stateFromStores) {
+                        const current = ref.current;
+                        if (current != null) {
+                          current.setValue(stateFromStores.getDefaultSortOrder());
+                        }
+                        const current2 = ref1.current;
+                        if (current2 != null) {
+                          current2.setValue(stateFromStores.getDefaultLayout());
+                        }
+                        const current3 = ref2.current;
+                        if (current3 != null) {
+                          current3.setValue(stateFromStores.getDefaultTagSetting());
+                        }
+                      }
+                    }
+                  }
+                }
+                if (null == stateFromStores) {
+                  class Y {
+                    constructor() {
+                      if (null != stateFromStores) {
+                        const current = ref.current;
+                        if (current != null) {
+                          current.setValue(stateFromStores.getDefaultSortOrder());
+                        }
+                        const current2 = ref1.current;
+                        if (current2 != null) {
+                          current2.setValue(stateFromStores.getDefaultLayout());
+                        }
+                        const current3 = ref2.current;
+                        if (current3 != null) {
+                          current3.setValue(stateFromStores.getDefaultTagSetting());
+                        }
+                      }
+                    }
+                  }
+                } else {
+                  let tmp25;
+                  let tmp27;
+                  let tmp33;
+                  let tmp32;
+                  let tmp31;
+                  class Y {
+                    constructor() {
+                      if (null != stateFromStores) {
+                        const current = ref.current;
+                        if (current != null) {
+                          current.setValue(stateFromStores.getDefaultSortOrder());
+                        }
+                        const current2 = ref1.current;
+                        if (current2 != null) {
+                          current2.setValue(stateFromStores.getDefaultLayout());
+                        }
+                        const current3 = ref2.current;
+                        if (current3 != null) {
+                          current3.setValue(stateFromStores.getDefaultTagSetting());
+                        }
+                      }
+                    }
+                  }
+                  if (tmp24) {
+                    class Y {
+                      constructor() {
+                        if (null != stateFromStores) {
+                          const current = ref.current;
+                          if (current != null) {
+                            current.setValue(stateFromStores.getDefaultSortOrder());
+                          }
+                          const current2 = ref1.current;
+                          if (current2 != null) {
+                            current2.setValue(stateFromStores.getDefaultLayout());
+                          }
+                          const current3 = ref2.current;
+                          if (current3 != null) {
+                            current3.setValue(stateFromStores.getDefaultTagSetting());
+                          }
+                        }
+                      }
+                    }
+                  }
+                  const _Symbol = Symbol;
+                  if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
+                    class Y {
+                      constructor() {
+                        if (null != stateFromStores) {
+                          const current = ref.current;
+                          if (current != null) {
+                            current.setValue(stateFromStores.getDefaultSortOrder());
+                          }
+                          const current2 = ref1.current;
+                          if (current2 != null) {
+                            current2.setValue(stateFromStores.getDefaultLayout());
+                          }
+                          const current3 = ref2.current;
+                          if (current3 != null) {
+                            current3.setValue(stateFromStores.getDefaultTagSetting());
+                          }
+                        }
+                      }
+                    }
+                    const stringResult = obj5.string(channelId(sortOrder[5]).t.xyYt8A);
+                    cResult[17] = stringResult;
+                    tmp25 = stringResult;
+                  } else {
+                    class Y {
+                      constructor() {
+                        if (null != stateFromStores) {
+                          const current = ref.current;
+                          if (current != null) {
+                            current.setValue(stateFromStores.getDefaultSortOrder());
+                          }
+                          const current2 = ref1.current;
+                          if (current2 != null) {
+                            current2.setValue(stateFromStores.getDefaultLayout());
+                          }
+                          const current3 = ref2.current;
+                          if (current3 != null) {
+                            current3.setValue(stateFromStores.getDefaultTagSetting());
+                          }
+                        }
+                      }
+                    }
+                  }
+                  const _Symbol2 = Symbol;
+                  if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
+                    class Y {
+                      constructor() {
+                        if (null != stateFromStores) {
+                          const current = ref.current;
+                          if (current != null) {
+                            current.setValue(stateFromStores.getDefaultSortOrder());
+                          }
+                          const current2 = ref1.current;
+                          if (current2 != null) {
+                            current2.setValue(stateFromStores.getDefaultLayout());
+                          }
+                          const current3 = ref2.current;
+                          if (current3 != null) {
+                            current3.setValue(stateFromStores.getDefaultTagSetting());
+                          }
+                        }
+                      }
+                    }
+                    const stringResult1 = obj6.string(channelId(sortOrder[5]).t.yBZMsQ);
+                    cResult[18] = stringResult1;
+                    tmp27 = stringResult1;
+                  } else {
+                    class Y {
+                      constructor() {
+                        if (null != stateFromStores) {
+                          const current = ref.current;
+                          if (current != null) {
+                            current.setValue(stateFromStores.getDefaultSortOrder());
+                          }
+                          const current2 = ref1.current;
+                          if (current2 != null) {
+                            current2.setValue(stateFromStores.getDefaultLayout());
+                          }
+                          const current3 = ref2.current;
+                          if (current3 != null) {
+                            current3.setValue(stateFromStores.getDefaultTagSetting());
+                          }
+                        }
+                      }
+                    }
+                  }
+                  if (cResult[19] !== tmp23) {
+                    class Y {
+                      constructor() {
+                        if (null != stateFromStores) {
+                          const current = ref.current;
+                          if (current != null) {
+                            current.setValue(stateFromStores.getDefaultSortOrder());
+                          }
+                          const current2 = ref1.current;
+                          if (current2 != null) {
+                            current2.setValue(stateFromStores.getDefaultLayout());
+                          }
+                          const current3 = ref2.current;
+                          if (current3 != null) {
+                            current3.setValue(stateFromStores.getDefaultTagSetting());
+                          }
+                        }
+                      }
+                    }
+                    const obj2 = { title: tmp25, leading: closure_8(tmp(tmp2[15]).ActionSheetHeaderPressableText, obj3) };
+                    const BottomSheetTitleHeader = tmp(tmp2[14]).BottomSheetTitleHeader;
+                    obj3 = { onPress: tmp23, label: tmp27 };
+                    cResult[19] = tmp23;
+                    cResult[20] = closure_8(BottomSheetTitleHeader, obj2);
+                    const tmp30 = closure_8(BottomSheetTitleHeader, obj2);
+                  } else {
+                    class Y {
+                      constructor() {
+                        if (null != stateFromStores) {
+                          const current = ref.current;
+                          if (current != null) {
+                            current.setValue(stateFromStores.getDefaultSortOrder());
+                          }
+                          const current2 = ref1.current;
+                          if (current2 != null) {
+                            current2.setValue(stateFromStores.getDefaultLayout());
+                          }
+                          const current3 = ref2.current;
+                          if (current3 != null) {
+                            current3.setValue(stateFromStores.getDefaultTagSetting());
+                          }
+                        }
+                      }
+                    }
+                  }
+                  const _Symbol3 = Symbol;
+                  if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
+                    class Y {
+                      constructor() {
+                        if (null != stateFromStores) {
+                          const current = ref.current;
+                          if (current != null) {
+                            current.setValue(stateFromStores.getDefaultSortOrder());
+                          }
+                          const current2 = ref1.current;
+                          if (current2 != null) {
+                            current2.setValue(stateFromStores.getDefaultLayout());
+                          }
+                          const current3 = ref2.current;
+                          if (current3 != null) {
+                            current3.setValue(stateFromStores.getDefaultTagSetting());
+                          }
+                        }
+                      }
+                    }
+                    const stringResult2 = obj9.string(channelId(sortOrder[5]).t.f8wNDl);
+                    const intl = tmp(tmp2[5]).intl;
+                    const stringResult3 = intl.string(channelId(sortOrder[5]).t.f8wNDl);
+                    const obj4 = { label: intl2.string(tmp(tmp2[5]).t.jOPmcI), value: tmp(tmp2[6]).ThreadSortOrder.LATEST_ACTIVITY };
+                    intl2 = tmp(tmp2[5]).intl;
+                    const items1 = [obj4, ];
+                    const obj7 = { label: intl3.string(channelId(sortOrder[5]).t.UIltXd), value: channelId(sortOrder[6]).ThreadSortOrder.CREATION_DATE };
+                    intl3 = tmp(tmp2[5]).intl;
+                    items1[1] = obj7;
+                    const mapped = items1.map((label) => {
+                      const value = label.value;
+                      return closure_8(channelId(sortOrder[16]).TableRadioRow, { label: label.label, value }, value);
+                    });
+                    cResult[21] = stringResult2;
+                    cResult[22] = stringResult3;
+                    cResult[23] = mapped;
+                    tmp33 = mapped;
+                    tmp32 = stringResult3;
+                    tmp31 = stringResult2;
+                  } else {
+                    class Y {
+                      constructor() {
+                        if (null != stateFromStores) {
+                          const current = ref.current;
+                          if (current != null) {
+                            current.setValue(stateFromStores.getDefaultSortOrder());
+                          }
+                          const current2 = ref1.current;
+                          if (current2 != null) {
+                            current2.setValue(stateFromStores.getDefaultLayout());
+                          }
+                          const current3 = ref2.current;
+                          if (current3 != null) {
+                            current3.setValue(stateFromStores.getDefaultTagSetting());
+                          }
+                        }
+                      }
+                    }
+                    tmp32 = cResult[22];
+                    tmp33 = cResult[23];
+                  }
+                  if (cResult[24] === sortOrder) {
+                    class Y {
+                      constructor() {
+                        if (null != stateFromStores) {
+                          const current = ref.current;
+                          if (current != null) {
+                            current.setValue(stateFromStores.getDefaultSortOrder());
+                          }
+                          const current2 = ref1.current;
+                          if (current2 != null) {
+                            current2.setValue(stateFromStores.getDefaultLayout());
+                          }
+                          const current3 = ref2.current;
+                          if (current3 != null) {
+                            current3.setValue(stateFromStores.getDefaultTagSetting());
+                          }
+                        }
+                      }
+                    }
+                    if (cResult[27] === stateFromStores) {
+                      class Y {
+                        constructor() {
+                          if (null != stateFromStores) {
+                            const current = ref.current;
+                            if (current != null) {
+                              current.setValue(stateFromStores.getDefaultSortOrder());
+                            }
+                            const current2 = ref1.current;
+                            if (current2 != null) {
+                              current2.setValue(stateFromStores.getDefaultLayout());
+                            }
+                            const current3 = ref2.current;
+                            if (current3 != null) {
+                              current3.setValue(stateFromStores.getDefaultTagSetting());
+                            }
+                          }
+                        }
+                      }
+                      if (cResult[30] === tmp24) {
+                        class Y {
+                          constructor() {
+                            if (null != stateFromStores) {
+                              const current = ref.current;
+                              if (current != null) {
+                                current.setValue(stateFromStores.getDefaultSortOrder());
+                              }
+                              const current2 = ref1.current;
+                              if (current2 != null) {
+                                current2.setValue(stateFromStores.getDefaultLayout());
+                              }
+                              const current3 = ref2.current;
+                              if (current3 != null) {
+                                current3.setValue(stateFromStores.getDefaultTagSetting());
+                              }
+                            }
+                          }
+                        }
+                        if (cResult[33] === tmp37) {
+                          class Y {
+                            constructor() {
+                              if (null != stateFromStores) {
+                                const current = ref.current;
+                                if (current != null) {
+                                  current.setValue(stateFromStores.getDefaultSortOrder());
+                                }
+                                const current2 = ref1.current;
+                                if (current2 != null) {
+                                  current2.setValue(stateFromStores.getDefaultLayout());
+                                }
+                                const current3 = ref2.current;
+                                if (current3 != null) {
+                                  current3.setValue(stateFromStores.getDefaultTagSetting());
+                                }
+                              }
+                            }
+                          }
+                        }
+                        const obj8 = { children: first3(Stack, obj10) };
+                        const BottomSheetScrollView = tmp(tmp2[18]).BottomSheetScrollView;
+                        obj10 = { direction: "vertical", spacing: stateFromStores(sortOrder[20]).space.PX_16, children: items2 };
+                        Stack = tmp(tmp2[19]).Stack;
+                        items2 = [tmp37, tmp40, tmp42];
+                        cResult[33] = tmp37;
+                        cResult[34] = tmp40;
+                        cResult[35] = tmp42;
+                        cResult[36] = closure_8(BottomSheetScrollView, obj8);
+                        const tmp48 = closure_8(BottomSheetScrollView, obj8);
+                      }
+                      let tmp43 = null;
+                      if (tmp24) {
+                        class Y {
+                          constructor() {
+                            if (null != stateFromStores) {
+                              const current = ref.current;
+                              if (current != null) {
+                                current.setValue(stateFromStores.getDefaultSortOrder());
+                              }
+                              const current2 = ref1.current;
+                              if (current2 != null) {
+                                current2.setValue(stateFromStores.getDefaultLayout());
+                              }
+                              const current3 = ref2.current;
+                              if (current3 != null) {
+                                current3.setValue(stateFromStores.getDefaultTagSetting());
+                              }
+                            }
+                          }
+                        }
+                        const obj11 = {
+                          groupRef: ref2,
+                          hasIcons: false,
+                          defaultValue: tagSetting,
+                          onChange: tmp20,
+                          title: intl8.string(channelId(sortOrder[5]).t.Paxaug),
+                          accessibilityLabel: intl9.string(channelId(sortOrder[5]).t.f8wNDl),
+                          children: items3.map((label) => {
+                                                  const value = label.value;
+                                                  return closure_8(channelId(sortOrder[16]).TableRadioRow, { label: label.label, value }, value);
+                                                })
+                        };
+                        const TableRadioGroup2 = tmp(tmp2[17]).TableRadioGroup;
+                        intl8 = tmp(tmp2[5]).intl;
+                        intl9 = tmp(tmp2[5]).intl;
+                        const obj12 = { label: intl10.string(channelId(sortOrder[5]).t.rQ0ctQ), value: channelId(sortOrder[8]).ThreadSearchTagSetting.MATCH_SOME };
+                        intl10 = tmp(tmp2[5]).intl;
+                        items3 = [obj12, ];
+                        const obj13 = { label: intl11.string(channelId(sortOrder[5]).t.FCXUu0), value: channelId(sortOrder[8]).ThreadSearchTagSetting.MATCH_ALL };
+                        intl11 = tmp(tmp2[5]).intl;
+                        items3[1] = obj13;
+                        tmp43 = closure_8(TableRadioGroup2, obj11);
+                      }
+                      cResult[30] = tmp24;
+                      cResult[31] = tagSetting;
+                      cResult[32] = tmp43;
+                    }
+                    let tmp41 = null;
+                    if (stateFromStores.isForumChannel()) {
+                      class Y {
+                        constructor() {
+                          if (null != stateFromStores) {
+                            const current = ref.current;
+                            if (current != null) {
+                              current.setValue(stateFromStores.getDefaultSortOrder());
+                            }
+                            const current2 = ref1.current;
+                            if (current2 != null) {
+                              current2.setValue(stateFromStores.getDefaultLayout());
+                            }
+                            const current3 = ref2.current;
+                            if (current3 != null) {
+                              current3.setValue(stateFromStores.getDefaultTagSetting());
+                            }
+                          }
+                        }
+                      }
+                      if (!stateFromStores.isGameInvitesChannel()) {
+                        class Y {
+                          constructor() {
+                            if (null != stateFromStores) {
+                              const current = ref.current;
+                              if (current != null) {
+                                current.setValue(stateFromStores.getDefaultSortOrder());
+                              }
+                              const current2 = ref1.current;
+                              if (current2 != null) {
+                                current2.setValue(stateFromStores.getDefaultLayout());
+                              }
+                              const current3 = ref2.current;
+                              if (current3 != null) {
+                                current3.setValue(stateFromStores.getDefaultTagSetting());
+                              }
+                            }
+                          }
+                        }
+                        const obj14 = {
+                          groupRef: ref1,
+                          hasIcons: false,
+                          defaultValue: layoutType,
+                          onChange: tmp19,
+                          title: intl4.string(channelId(sortOrder[5]).t.mFMDSq),
+                          accessibilityLabel: intl5.string(channelId(sortOrder[5]).t.h850Ss),
+                          children: items4.map((label) => {
+                                                  const value = label.value;
+                                                  return closure_8(channelId(sortOrder[16]).TableRadioRow, { label: label.label, value }, value);
+                                                })
+                        };
+                        const TableRadioGroup = tmp(tmp2[17]).TableRadioGroup;
+                        intl4 = tmp(tmp2[5]).intl;
+                        intl5 = tmp(tmp2[5]).intl;
+                        const obj15 = { label: intl6.string(channelId(sortOrder[5]).t["NJFr+g"]), value: channelId(sortOrder[7]).ForumLayout.LIST };
+                        intl6 = tmp(tmp2[5]).intl;
+                        items4 = [obj15, ];
+                        const obj16 = { label: intl7.string(channelId(sortOrder[5]).t.wKeggb), value: channelId(sortOrder[7]).ForumLayout.GRID };
+                        intl7 = tmp(tmp2[5]).intl;
+                        items4[1] = obj16;
+                        tmp41 = closure_8(TableRadioGroup, obj14);
+                      }
+                    }
+                    cResult[27] = stateFromStores;
+                    cResult[28] = layoutType;
+                    cResult[29] = tmp41;
+                  }
+                  const obj17 = { groupRef: ref, hasIcons: false, defaultValue: sortOrder, onChange: tmp18, title: tmp31, accessibilityLabel: tmp32, children: tmp33 };
+                  cResult[24] = sortOrder;
+                  cResult[25] = tmp33;
+                  cResult[26] = closure_8(channelId(sortOrder[17]).TableRadioGroup, obj17);
+                  const tmp39 = closure_8(channelId(sortOrder[17]).TableRadioGroup, obj17);
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -118,13 +647,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
         if (sortOrder !== first1) {
           const obj5 = { guildId: null, channelId: null, sortOrder: first1 };
           ({ guild_id: obj2.guildId, id: obj2.channelId } = stateFromStores);
-          const obj = tracking_Tracking;
+          const obj = Tracking;
           const result = obj.trackForumSortOrderUpdated(obj5);
         }
         if (layoutType !== first2) {
           const obj6 = { guildId: null, channelId: null, forumLayout: first2 };
           ({ guild_id: obj4.guildId, id: obj4.channelId } = stateFromStores);
-          const obj3 = tracking_Tracking;
+          const obj3 = Tracking;
           const result1 = obj3.trackForumLayoutUpdated(obj6);
         }
         const state = closure_4.getState();
@@ -143,9 +672,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[10] = first1;
   cResult[11] = first3;
   cResult[12] = sortOrder;
-  cResult[13] = tmp9;
+  cResult[13] = tmp8;
   cResult[14] = X;
-}) : ((channelId) => {
+  tmp21 = X;
+}) : (function ForumDisplaySettingsActionSheet(channelId) {
   let ActionSheetHeaderPressableText;
   let BottomSheetScrollView;
   let BottomSheetTitleHeader;
@@ -212,13 +742,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       if (sortOrder !== sortOrder) {
         const obj5 = { guildId: null, channelId: null, sortOrder };
         ({ guild_id: obj2.guildId, id: obj2.channelId } = stateFromStores);
-        const obj = tracking_Tracking;
+        const obj = Tracking;
         const result = obj.trackForumSortOrderUpdated(obj5);
       }
       if (layoutType !== forumLayout) {
         const obj6 = { guildId: null, channelId: null, forumLayout };
         ({ guild_id: obj4.guildId, id: obj4.channelId } = stateFromStores);
-        const obj3 = tracking_Tracking;
+        const obj3 = Tracking;
         const result1 = obj3.trackForumLayoutUpdated(obj6);
       }
       const state = closure_4.getState();
@@ -249,7 +779,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       groupRef: ref,
       hasIcons: false,
       defaultValue: sortOrder,
-      onChange(arg0) {
+      onChange: function handleSortOrderChange(arg0) {
           _undefined(arg0);
         },
       title: intl3.string(channelId(sortOrder[5]).t.f8wNDl),
@@ -278,7 +808,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
           groupRef: ref1,
           hasIcons: false,
           defaultValue: layoutType,
-          onChange(arg0) {
+          onChange: function handleLayoutTypeChange(arg0) {
                   _undefined2(arg0);
                 },
           title: intl7.string(channelId(sortOrder[5]).t.mFMDSq),
@@ -307,7 +837,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
         groupRef: ref2,
         hasIcons: false,
         defaultValue: tagSetting,
-        onChange(arg0) {
+        onChange: function handleTagSettingChange(arg0) {
               _undefined3(arg0);
             },
         title: intl11.string(channelId(sortOrder[5]).t.Paxaug),

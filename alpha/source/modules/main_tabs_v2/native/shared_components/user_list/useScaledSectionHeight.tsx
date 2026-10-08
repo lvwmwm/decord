@@ -1,21 +1,21 @@
-// Module ID: 10614
-// Function ID: 10615
+// Module ID: 10212
+// Function ID: 10213
 // Name: useScaledSectionHeight
-// Dependencies: [10612, 558, 5609, 2]
+// Dependencies: [10209, 558, 5382, 2]
 
-// Module 10614 (useScaledSectionHeight)
-import useFontScale from "useFontScale" /* 5609 */;
-import UsersFastListConstants from "UsersFastListConstants" /* 10612 */;
+// Module 10212 (useScaledSectionHeight)
+import useFontScale from "useFontScale" /* 5382 */;
+import UsersFastListConstants from "UsersFastListConstants" /* 10209 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c2;
 let c3;
 ({ USERS_LIST_SECTION_HEIGHT: c2, USERS_LIST_SECTION_TEXT_HEIGHT: c3 } = UsersFastListConstants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScaledSectionHeight() {
   const obj = useFontScale;
   return React2 + Math.max(Math.min(obj.useFontScale(), 2) * _false - _false, 0);
-}) : (() => {
+}) : (function useScaledSectionHeight() {
   const obj = useFontScale;
   return React2 + Math.max(Math.min(obj.useFontScale(), 2) * _false - _false, 0);
 });

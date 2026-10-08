@@ -1,26 +1,26 @@
-// Module ID: 16341
-// Function ID: 16342
+// Module ID: 16601
+// Function ID: 16602
 // Name: GuildsBarDragPreview
-// Dependencies: [19, 5623, 16265, 16262, 21, 4896, 558, 576, 15988, 4618, 5604, 4595, 6577, 4586, 587, 16273, 16296, 4498, 2]
+// Dependencies: [19, 5968, 16525, 16522, 21, 5090, 558, 576, 16248, 4810, 5374, 4787, 6753, 4778, 587, 16533, 16556, 4690, 2]
 
-// Module 16341 (GuildsBarDragPreview)
+// Module 16601 (GuildsBarDragPreview)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import native from "native" /* 4595 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import spring from "spring" /* 5604 */;
-import SortedGuildStore from "SortedGuildStore" /* 5623 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 16262 */;
+import native from "native" /* 4787 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import spring from "spring" /* 5374 */;
+import SortedGuildStore from "SortedGuildStore" /* 5968 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 16522 */;
 import react_mod from "react" /* 19 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16265 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16525 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let min, obj1, set, str, tmp11, tmp12, tmp16, tmp18;
 
 let tmp;
-const _slicedToArray = tmp(4498);
+const _slicedToArray = tmp(4690);
 function getItemPreviewKey(id) {
   return "" + id.id;
 }
@@ -52,7 +52,7 @@ const __initData6 = { code: "function GuildsBarDragPreviewTsx6(){const{scrollPos
 const __initData7 = { code: "function GuildsBarDragPreviewTsx7(){const{dropPosition,scrollPosition,gestureState,draggedHeight,minY,maxY,windowSize,withSpring,DRAG_SPRING_PHYSICS,runOnJS,dropComplete}=this.__closure;let translateY=function(){if(dropPosition!=null){return dropPosition-scrollPosition.get();}return gestureState.get().absoluteY-draggedHeight/2;}();if(gestureState.get().mode!=null&&dropPosition==null){translateY=Math.min(Math.max(translateY,minY.get()),maxY.get());}else{translateY=Math.max(-draggedHeight,Math.min(translateY,windowSize));}return{top:withSpring(translateY,DRAG_SPRING_PHYSICS,'animate-always',function(finished){if(finished&&dropPosition!=null){runOnJS(dropComplete)();}})};}" };
 let closure_18 = { code: "function GuildsBarDragPreviewTsx8(finished){const{dropPosition,runOnJS,dropComplete}=this.__closure;if(finished&&dropPosition!=null){runOnJS(dropComplete)();}}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((dragRegion) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewItem(dragRegion) {
   let derivedValue;
   let draggedNode;
   let dropComplete;
@@ -182,7 +182,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((dragRegion) =>
   if ("convert-after" === overState) {
     if (null != overNode) {
       if (cResult[0] !== overNode) {
-        const element = { type: listInsets.FOLDER, id: -1, parentId: "Reflect", name: "Array", color: "apply", expanded: false, children: items };
+        const element = { type: listInsets.FOLDER, id: -1, parentId: "Reflect", name: "Array", color: "bm", expanded: "Array", children: items };
         items = [overNode];
         let num = 0;
         cResult[0] = overNode;
@@ -235,7 +235,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((dragRegion) =>
   cResult[4] = dragPreviewHome;
   cResult[5] = items2;
   tmp14 = items2;
-}) : ((dragRegion) => {
+}) : (function PreviewItem(dragRegion) {
   let TransitionGroup;
   let draggedNode;
   let dropComplete;
@@ -349,7 +349,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((dragRegion) =>
     let items;
     if ("convert-after" === overState) {
       if (null != overNode) {
-        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "Reflect", name: "Array", color: "apply", expanded: false, children: items };
+        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "Reflect", name: "Array", color: "bm", expanded: "Array", children: items };
         items = [tmp2];
         return element;
       }
@@ -377,7 +377,7 @@ let closure_23 = { code: "function GuildsBarDragPreviewTsx10(finished){const{tra
 const __initData9 = { code: "function GuildsBarDragPreviewTsx11(){const{isFolder,visible,withSpring,DRAG_SPRING_PHYSICS,transitionState,TransitionStates,runOnJS,cleanUp}=this.__closure;const targetScale=function(){if(isFolder){return visible.get()===1?1:0.3;}return visible.get()===1?1:0.33;}();const{translateX:translateX,translateY:translateY}=function(){if(isFolder){return{translateX:0,translateY:0};}if(visible.get()===1){return{translateX:0,translateY:0};}return{translateX:10,translateY:-10};}();return{zIndex:isFolder?0:1,transform:[{translateY:withSpring(translateY,DRAG_SPRING_PHYSICS,'animate-always')},{translateX:withSpring(translateX,DRAG_SPRING_PHYSICS,'animate-always')},{scale:withSpring(targetScale,DRAG_SPRING_PHYSICS,'animate-always',function(finished){if(finished&&transitionState===TransitionStates.YEETED&&isFolder){runOnJS(cleanUp)();}})}],opacity:withSpring(isFolder?visible.get():1,DRAG_SPRING_PHYSICS,'animate-always')};}" };
 let closure_25 = { code: "function GuildsBarDragPreviewTsx12(finished){const{transitionState,TransitionStates,isFolder,runOnJS,cleanUp}=this.__closure;if(finished&&transitionState===TransitionStates.YEETED&&isFolder){runOnJS(cleanUp)();}}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((cleanUp) => {
+let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnimatedItemPreview(cleanUp) {
   let closure_3;
   let node;
   let sharedValue;
@@ -408,7 +408,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((cleanUp) => {
   if (isHomeDrawerEnabled) {
     isHomeDrawerEnabled = !tmp11;
   }
-  let fn = function p() {
+  let fn = function w() {
     let fn;
     let items;
     let num2;
@@ -567,7 +567,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((cleanUp) => {
     cResult[6] = items;
     tmp17 = items;
   }
-  const fn2 = function w() {
+  const fn2 = function p() {
     let num = 1;
     set = sharedValue.set;
     if (transitionState === native.TransitionStates.YEETED) {
@@ -579,7 +579,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((cleanUp) => {
   cResult[1] = sharedValue;
   cResult[2] = fn2;
   tmp13 = fn2;
-}) : ((cleanUp) => {
+}) : (function AnimatedItemPreview(cleanUp) {
   let closure_3;
   let node;
   let tmp13Result;
@@ -719,7 +719,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((cleanUp) => {
   return jsx(tmp4Result, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildsBarDragPreview() {
   let first;
   let tmp6;
   let obj = react2;
@@ -782,7 +782,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     tmp6 = cResult[2];
   }
   return tmp6;
-}) : (() => {
+}) : (function GuildsBarDragPreview() {
   const tmp = GuildsBarDnDStore((arg0) => {
     let dragRegion;
     let dragSpecs;

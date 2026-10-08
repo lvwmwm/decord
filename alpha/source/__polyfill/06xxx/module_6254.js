@@ -1,17 +1,19 @@
 // Module ID: 6254
 // Function ID: 6255
-// Dependencies: [6255, 6206]
-// Exports: useCompetingGestures
+// Dependencies: []
+// Exports: getLabel
 
 // Module 6254
-import ComposedGestureName from "ComposedGestureName" /* 6206 */;
-import _mod6255 from "module_6255" /* 6255 */;
 
-
-export const useCompetingGestures = function useCompetingGestures() {
-  const items = [...arguments];
-  const useComposedGesture = _mod6255.useComposedGesture;
-  _mod6255;
-  const items1 = [ComposedGestureName.ComposedGestureName.Race, ...items];
-  return useComposedGesture.apply(items1);
+export const getLabel = function getLabel(label, arg1) {
+  let title;
+  if (undefined !== label.label) {
+    title = label.label;
+  } else {
+    title = arg1;
+    if (undefined !== label.title) {
+      title = label.title;
+    }
+  }
+  return title;
 };

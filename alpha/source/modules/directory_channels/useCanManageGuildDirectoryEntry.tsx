@@ -1,13 +1,13 @@
-// Module ID: 11949
-// Function ID: 11950
+// Module ID: 12022
+// Function ID: 12023
 // Name: useCanManageGuildDirectoryEntry
-// Dependencies: [2051, 2074, 4515, 1085, 558, 576, 504, 2]
+// Dependencies: [2063, 2086, 4707, 1085, 558, 576, 504, 2]
 
-// Module 11949 (useCanManageGuildDirectoryEntry)
+// Module 12022 (useCanManageGuildDirectoryEntry)
 import Constants from "Constants" /* 1085 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,17 +16,17 @@ let _require, closure_2, dependencyMap;
 
 const Permissions = Constants.Permissions;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanManageGuildDirectoryEntry(guildId) {
   let first;
   let stateFromStores;
   let stateFromStores1;
-  let tmp10;
   let tmp12;
-  let tmp14;
+  let tmp13;
+  let tmp15;
   let tmp16;
-  let tmp18;
   let tmp6;
   let tmp8;
+  let tmp9;
   _require = guildId;
   const obj = require("react");
   const cResult = obj.c(16);
@@ -38,81 +38,130 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     first = cResult[0];
   }
   if (cResult[1] !== guildId.guildId) {
-    const fn = function l() {
-      return GuildStore.getGuild(guildId.guildId);
-    };
+    class S {
+      constructor() {
+        return closure_3.getGuild(closure_0.guildId);
+      }
+    }
     cResult[1] = guildId.guildId;
-    cResult[2] = fn;
-    tmp6 = fn;
+    cResult[2] = S;
+    tmp6 = S;
   } else {
-    tmp6 = cResult[2];
+    class S {
+      constructor() {
+        return closure_3.getGuild(closure_0.guildId);
+      }
+    }
   }
   const tmpResult = require("get initialized");
   stateFromStores = tmpResult.useStateFromStores(first, tmp6);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        return closure_3.getGuild(closure_0.guildId);
+      }
+    }
     const items1 = [stateFromStores1];
     cResult[3] = items1;
     tmp8 = items1;
   } else {
-    tmp8 = cResult[3];
+    class S {
+      constructor() {
+        return closure_3.getGuild(closure_0.guildId);
+      }
+    }
   }
   if (cResult[4] !== guildId.channelId) {
-    const fn2 = function _() {
-      return ChannelStore.getChannel(guildId.channelId);
-    };
+    class S {
+      constructor() {
+        return closure_3.getGuild(closure_0.guildId);
+      }
+    }
     cResult[4] = guildId.channelId;
-    cResult[5] = fn2;
-    tmp10 = fn2;
+    cResult[5] = tmp10;
+    tmp9 = tmp10;
   } else {
-    tmp10 = cResult[5];
+    class S {
+      constructor() {
+        return closure_3.getGuild(closure_0.guildId);
+      }
+    }
   }
   const tmpResult4 = require("get initialized");
-  stateFromStores1 = tmpResult4.useStateFromStores(tmp8, tmp10);
+  stateFromStores1 = tmpResult4.useStateFromStores(tmp8, tmp9);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        return closure_3.getGuild(closure_0.guildId);
+      }
+    }
     const items2 = [PermissionStore];
     cResult[6] = items2;
     tmp12 = items2;
   } else {
-    tmp12 = cResult[6];
+    class S {
+      constructor() {
+        return closure_3.getGuild(closure_0.guildId);
+      }
+    }
   }
   if (cResult[7] !== stateFromStores) {
-    const fn3 = function f() {
-      return PermissionStore.can(Permissions.ADMINISTRATOR, stateFromStores);
-    };
+    class I {
+      constructor() {
+        return closure_4.can(Permissions.ADMINISTRATOR, closure_1);
+      }
+    }
     cResult[7] = stateFromStores;
-    cResult[8] = fn3;
-    tmp14 = fn3;
+    cResult[8] = I;
+    tmp13 = I;
   } else {
-    tmp14 = cResult[8];
+    class I {
+      constructor() {
+        return closure_4.can(Permissions.ADMINISTRATOR, closure_1);
+      }
+    }
   }
   const tmpResult5 = require("get initialized");
-  const stateFromStores2 = tmpResult5.useStateFromStores(tmp12, tmp14);
+  const stateFromStores2 = tmpResult5.useStateFromStores(tmp12, tmp13);
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+    class I {
+      constructor() {
+        return closure_4.can(Permissions.ADMINISTRATOR, closure_1);
+      }
+    }
     const items3 = [PermissionStore];
     cResult[9] = items3;
-    tmp16 = items3;
+    tmp15 = items3;
   } else {
-    tmp16 = cResult[9];
+    class I {
+      constructor() {
+        return closure_4.can(Permissions.ADMINISTRATOR, closure_1);
+      }
+    }
   }
   if (cResult[10] !== stateFromStores1) {
-    const fn4 = function v() {
-      return PermissionStore.can(Permissions.MANAGE_MESSAGES, stateFromStores1);
-    };
+    class I {
+      constructor() {
+        return closure_4.can(Permissions.ADMINISTRATOR, closure_1);
+      }
+    }
     cResult[10] = stateFromStores1;
-    cResult[11] = fn4;
-    tmp18 = fn4;
+    cResult[11] = tmp17;
+    tmp16 = tmp17;
   } else {
-    tmp18 = cResult[11];
+    class I {
+      constructor() {
+        return closure_4.can(Permissions.ADMINISTRATOR, closure_1);
+      }
+    }
   }
   const tmpResult6 = require("get initialized");
-  const stateFromStores3 = tmpResult6.useStateFromStores(tmp16, tmp18);
+  const stateFromStores3 = tmpResult6.useStateFromStores(tmp15, tmp16);
   if (cResult[12] === stateFromStores2) {
-    if (cResult[13] === (stateFromStores2 || stateFromStores3)) {
-      let tmp22;
-      if (cResult[14] === (stateFromStores2 || stateFromStores3)) {
-        tmp22 = cResult[15];
+    class I {
+      constructor() {
+        return closure_4.can(Permissions.ADMINISTRATOR, closure_1);
       }
-      return tmp22;
     }
   }
   const obj2 = { isEntryAdmin: stateFromStores2, canEdit: stateFromStores2 || stateFromStores3, canRemove: stateFromStores2 || stateFromStores3 };
@@ -120,8 +169,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[13] = stateFromStores2 || stateFromStores3;
   cResult[14] = stateFromStores2 || stateFromStores3;
   cResult[15] = obj2;
-  tmp22 = obj2;
-}) : ((arg0) => {
+}) : (function useCanManageGuildDirectoryEntry(arg0) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -144,7 +192,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   return obj5;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanCreateOrAddGuildInDirectory(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -171,7 +219,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useCanCreateOrAddGuildInDirectory(arg0) {
   let closure_0;
   _require = arg0;
   const items = [PermissionStore];

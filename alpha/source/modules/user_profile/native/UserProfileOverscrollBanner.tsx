@@ -1,29 +1,29 @@
-// Module ID: 7927
-// Function ID: 7928
+// Module ID: 8346
+// Function ID: 8347
 // Name: UserProfileOverscrollBanner
-// Dependencies: [109, 19, 17, 21, 4618, 7928, 558, 576, 7929, 1369, 2]
+// Dependencies: [109, 19, 17, 21, 4810, 8347, 558, 576, 8348, 1381, 2]
 
-// Module 7927 (UserProfileOverscrollBanner)
+// Module 8346 (UserProfileOverscrollBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 7928 */;
-import UserProfileBannerDefault from "UserProfileBanner" /* 7929 */;
+import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8347 */;
+import UserProfileBannerDefault from "UserProfileBanner" /* 8348 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const PlatformUtils = tmp(1369);
+const PlatformUtils = tmp(1381);
 let closure_3 = ["bannerAnimatedStyle", "bannerImageAnimatedStyle", "blurAnimatedProps", "showBlur", "privateBanner"];
 const StyleSheet = react_native.StyleSheet;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const VisualEffectViewThemed = ReanimatedRexport.createAnimatedComponent(VisualEffectViewThemedDefault);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileOverscrollBanner(arg0) {
   let bannerAnimatedStyle;
   let bannerImageAnimatedStyle;
   let blurAnimatedProps;
@@ -124,7 +124,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[10] = tmp9;
   cResult[11] = tmp22;
   tmp21 = tmp22;
-}) : ((arg0) => {
+}) : (function UserProfileOverscrollBanner(arg0) {
   let bannerAnimatedStyle;
   let bannerImageAnimatedStyle;
   let blurAnimatedProps;

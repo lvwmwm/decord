@@ -1,19 +1,19 @@
-// Module ID: 16105
-// Function ID: 16106
+// Module ID: 16365
+// Function ID: 16366
 // Name: useFavoritesGuildAutoAddedThreadsAction
-// Dependencies: [19, 1377, 2054, 558, 576, 10049, 504, 10048, 1126, 3395, 2]
+// Dependencies: [19, 1389, 2066, 558, 576, 10294, 504, 10293, 1126, 3439, 2]
 
-// Module 16105 (useFavoritesGuildAutoAddedThreadsAction)
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10048 */;
+// Module 16365 (useFavoritesGuildAutoAddedThreadsAction)
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10293 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
-import FavoriteStore from "FavoriteStore" /* 2054 */;
+import UserStore from "UserStore" /* 1389 */;
+import FavoriteStore from "FavoriteStore" /* 2066 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesGuildAutoAddedThreadsAction() {
   let autoAddJoinedThreads;
   let hasAccess;
   let tmp4;
@@ -23,11 +23,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp = hasAccess;
   let obj = hasAccess(576);
   const cResult = obj.c(13);
-  const obj2 = hasAccess(10049);
+  const obj2 = hasAccess(10294);
   hasAccess = obj2.useFavoritesAccess("useFavoritesGuildAutoAddedThreadsAction").hasAccess;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    const fn = function n() {
+    const fn = function u() {
       currentUser = currentUser.getCurrentUser();
       let flag;
       if (currentUser != null) {
@@ -93,7 +93,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[12] = obj3;
     tmp15 = obj3;
   }
-  const fn2 = function f() {
+  const fn2 = function h() {
     const tmp = hasAccess;
     if (tmp) {
       const obj = FavoritesActionCreators;
@@ -104,14 +104,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[5] = stateFromStores;
   cResult[6] = fn2;
   tmp11 = fn2;
-}) : (() => {
+}) : (function useFavoritesGuildAutoAddedThreadsAction() {
   let autoAddJoinedThreads;
   let callback;
   let hasAccess;
   let intl;
   let intl2;
   let tmp = hasAccess;
-  let obj = hasAccess(10049);
+  let obj = hasAccess(10294);
   hasAccess = obj.useFavoritesAccess("useFavoritesGuildAutoAddedThreadsAction").hasAccess;
   const items = [UserStore];
   const obj2 = hasAccess(504);
@@ -132,7 +132,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(items1, () => autoAddJoinedThreads.autoAddJoinedThreads);
   const items2 = [hasAccess, stateFromStores];
-  const obj3 = { isAvailable: hasAccess, isEnabled: stateFromStores, label: intl.string(stateFromStores(3395).DIyQIF), subLabel: intl2.string(stateFromStores(3395).g2vHYJ), toggle: callback };
+  const obj3 = { isAvailable: hasAccess, isEnabled: stateFromStores, label: intl.string(stateFromStores(3439).DIyQIF), subLabel: intl2.string(stateFromStores(3439).g2vHYJ), toggle: callback };
   callback = react.useCallback(() => {
     const tmp = hasAccess;
     if (tmp) {

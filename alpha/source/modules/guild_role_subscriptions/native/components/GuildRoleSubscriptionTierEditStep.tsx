@@ -1,26 +1,26 @@
-// Module ID: 17974
-// Function ID: 17975
+// Module ID: 18261
+// Function ID: 18262
 // Name: GuildRoleSubscriptionTierEditStep
-// Dependencies: [109, 19, 17, 21, 4896, 587, 558, 576, 4892, 15050, 6626, 1126, 1618, 5601, 1490, 2]
+// Dependencies: [109, 19, 17, 21, 5090, 587, 558, 576, 5086, 15312, 6803, 1126, 1630, 5375, 1502, 2]
 
-// Module 17974 (GuildRoleSubscriptionTierEditStep)
+// Module 18261 (GuildRoleSubscriptionTierEditStep)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6626 */;
-import FormSeparatorDefault from "FormSeparator" /* 15050 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6803 */;
+import FormSeparatorDefault from "FormSeparator" /* 15312 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let navigation, scrollable;
+let arr, navigation, tmp3;
 
 let c9;
 let metroImportAll;
@@ -28,7 +28,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const useNavigation = tmp(1490);
+const useNavigation = tmp(1502);
 let closure_3 = ["scrollable"];
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -36,7 +36,7 @@ let obj = { container: obj2, scrollContainer: { flexGrow: 1 }, headerContainer: 
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, height: "100%" };
 let closure_10 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header(arg0) {
   let description;
   let items;
   let title;
@@ -98,7 +98,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = title;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((arg0) => {
+}) : (function Header(arg0) {
   let description;
   let items;
   let title;
@@ -116,7 +116,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return React4(SafeAreaPaddingView, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((canProceedToNextStep) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Footer(canProceedToNextStep) {
   let nextStep;
   let onProceed;
   let submitting;
@@ -193,7 +193,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((canProceedToNe
   cResult[5] = tmp8;
   cResult[6] = items;
   tmp9 = items;
-}) : ((arg0) => {
+}) : (function Footer(arg0) {
   let canProceedToNextStep;
   let items;
   let nextStep;
@@ -213,22 +213,22 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((canProceedToNe
     stringResult = intl.string(intl3.t["bm6P5/"]);
     tmp5 = require;
   }
-  const obj = { style: items, children: metroImportAll(tmp5(5601).Button, obj3) };
+  const obj = { style: items, children: metroImportAll(tmp5(5375).Button, obj3) };
   items = [tmp.footerContainer, { paddingBottom: useSafeAreaInsetsDefault().bottom }];
   ({ paddingBottom: useSafeAreaInsetsDefault().bottom });
   obj3 = { loading: submitting, disabled: !canProceedToNextStep, text: stringResult, onPress: onProceed };
   return metroImportAll(metroRequire, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollable) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionTierEditStep(scrollable) {
+  let items;
   let items1;
-  let items2;
   let tmp4;
   let tmp5;
   const tmp = require;
   const tmp2 = dependencyMap;
   const obj = react2;
-  const cResult = obj.c(32);
+  const cResult = obj.c(30);
   if (cResult[0] !== scrollable) {
     scrollable = scrollable.scrollable;
     const tmp8 = _objectWithoutProperties(scrollable, closure_3);
@@ -255,7 +255,6 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollable) => {
       }
       if (false !== tmp5) {
         let tmp30;
-        let tmp37;
         if (cResult[7] !== tmp4) {
           const obj2 = {};
           const merged = Object.assign(tmp4);
@@ -266,122 +265,139 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollable) => {
         } else {
           tmp30 = cResult[8];
         }
-        if (cResult[9] !== tmp9.scrollContainer) {
-          const items = [tmp9.scrollContainer];
-          cResult[9] = tmp9.scrollContainer;
-          cResult[10] = items;
-          tmp37 = items;
-        } else {
-          tmp37 = cResult[10];
-        }
-        if (cResult[11] === tmp4.children) {
-          let tmp38;
-          if (cResult[12] === tmp37) {
-            tmp38 = cResult[13];
+        if (cResult[9] === tmp4.children) {
+          let tmp37;
+          if (cResult[10] === tmp9.scrollContainer) {
+            tmp37 = cResult[11];
           }
-          if (cResult[14] === tmp11) {
-            let tmp42;
-            if (cResult[15] === tmp4) {
-              tmp42 = cResult[16];
+          if (cResult[12] === tmp11) {
+            let tmp41;
+            if (cResult[13] === tmp4) {
+              tmp41 = cResult[14];
             }
-            if (cResult[17] === tmp9.container) {
-              if (cResult[18] === tmp30) {
-                if (cResult[19] === tmp38) {
-                  let tmp49;
-                  if (cResult[20] === tmp42) {
-                    tmp49 = cResult[21];
+            if (cResult[15] === tmp9.container) {
+              if (cResult[16] === tmp30) {
+                if (cResult[17] === tmp37) {
+                  let tmp48;
+                  if (cResult[18] === tmp41) {
+                    tmp48 = cResult[19];
                   }
-                  tmp26 = tmp49;
+                  tmp26 = tmp48;
                 }
               }
             }
-            const obj3 = { style: tmp9.container, children: items1 };
-            items1 = [tmp30, tmp38, tmp42];
-            const tmp52 = React4(metroRequire, obj3);
-            cResult[17] = tmp9.container;
-            cResult[18] = tmp30;
-            cResult[19] = tmp38;
-            cResult[20] = tmp42;
-            cResult[21] = tmp52;
-            tmp49 = tmp52;
+            const obj3 = { style: tmp9.container, children: items };
+            items = [tmp30, tmp37, tmp41];
+            const tmp51 = React4(metroRequire, obj3);
+            cResult[15] = tmp9.container;
+            cResult[16] = tmp30;
+            cResult[17] = tmp37;
+            class S {
+              constructor() {
+                if (null != onProceed) {
+                  tmpResult = tmp();
+                } else if (null != nextStep) {
+                  tmp3 = closure_0;
+                  arr = closure_0.push(tmp2);
+                }
+                return;
+              }
+            }
+            cResult[18] = tmp41;
+            cResult[19] = tmp51;
+            tmp48 = tmp51;
           }
           const obj4 = { onProceed: tmp11 };
           const merged1 = Object.assign(tmp4);
-          const tmp48 = metroImportAll(closure_12, obj4);
-          cResult[14] = tmp11;
-          cResult[15] = tmp4;
-          cResult[16] = tmp48;
-          tmp42 = tmp48;
+          const tmp47 = metroImportAll(closure_12, obj4);
+          cResult[12] = tmp11;
+          cResult[13] = tmp4;
+          cResult[14] = tmp47;
+          tmp41 = tmp47;
         }
-        const obj5 = { keyboardShouldPersistTaps: "handled", showsVerticalScrollIndicator: false, alwaysBounceVertical: false, contentContainerStyle: tmp37, children: tmp4.children };
-        const tmp41 = metroImportAll(metroImportDefault, obj5);
-        cResult[11] = tmp4.children;
-        cResult[12] = tmp37;
-        cResult[13] = tmp41;
-        tmp38 = tmp41;
+        const obj5 = { keyboardShouldPersistTaps: "handled", showsVerticalScrollIndicator: false, alwaysBounceVertical: false, contentContainerStyle: tmp9.scrollContainer, children: tmp4.children };
+        const tmp40 = metroImportAll(metroImportDefault, obj5);
+        cResult[9] = tmp4.children;
+        cResult[10] = tmp9.scrollContainer;
+        cResult[11] = tmp40;
+        tmp37 = tmp40;
       } else {
         let tmp12;
-        if (cResult[22] !== tmp4) {
+        if (cResult[20] !== tmp4) {
           const obj6 = {};
           const merged2 = Object.assign(tmp4);
           const tmp18 = metroImportAll(closure_11, obj6);
-          cResult[22] = tmp4;
-          cResult[23] = tmp18;
+          cResult[20] = tmp4;
+          cResult[21] = tmp18;
           tmp12 = tmp18;
         } else {
-          tmp12 = cResult[23];
+          tmp12 = cResult[21];
         }
-        if (cResult[24] === tmp11) {
+        if (cResult[22] === tmp11) {
           let tmp19;
-          if (cResult[25] === tmp4) {
-            tmp19 = cResult[26];
+          if (cResult[23] === tmp4) {
+            tmp19 = cResult[24];
           }
-          if (cResult[27] === tmp4.children) {
-            if (cResult[28] === tmp9.container) {
-              if (cResult[29] === tmp12) {
-                if (cResult[30] === tmp19) {
-                  tmp26 = cResult[31];
+          if (cResult[25] === tmp4.children) {
+            if (cResult[26] === tmp9.container) {
+              if (cResult[27] === tmp12) {
+                if (cResult[28] === tmp19) {
+                  tmp26 = cResult[29];
                 }
               }
             }
           }
-          const obj7 = { style: tmp9.container, children: items2 };
-          items2 = [tmp12, tmp4.children, tmp19];
+          const obj7 = { style: tmp9.container, children: items1 };
+          items1 = [tmp12, tmp4.children, tmp19];
           const tmp29 = React4(metroRequire, obj7);
-          cResult[27] = tmp4.children;
-          cResult[28] = tmp9.container;
-          cResult[29] = tmp12;
-          cResult[30] = tmp19;
-          cResult[31] = tmp29;
+          cResult[25] = tmp4.children;
+          cResult[26] = tmp9.container;
+          cResult[27] = tmp12;
+          class S {
+            constructor() {
+              if (null != onProceed) {
+                tmpResult = tmp();
+              } else if (null != nextStep) {
+                tmp3 = closure_0;
+                arr = closure_0.push(tmp2);
+              }
+              return;
+            }
+          }
+          cResult[28] = tmp19;
+          cResult[29] = tmp29;
           tmp26 = tmp29;
         }
         const obj8 = { onProceed: tmp11 };
         const merged3 = Object.assign(tmp4);
         const tmp25 = metroImportAll(closure_12, obj8);
-        cResult[24] = tmp11;
-        cResult[25] = tmp4;
-        cResult[26] = tmp25;
+        cResult[22] = tmp11;
+        cResult[23] = tmp4;
+        cResult[24] = tmp25;
         tmp19 = tmp25;
       }
       return tmp26;
     }
   }
-  const fn = function v() {
-    if (null != onProceed) {
-      tmp();
-    } else if (null != nextStep) {
-      navigation.push(tmp2);
+  class S {
+    constructor() {
+      if (null != onProceed) {
+        tmpResult = tmp();
+      } else if (null != nextStep) {
+        tmp3 = closure_0;
+        arr = closure_0.push(tmp2);
+      }
+      return;
     }
-  };
+  }
   cResult[3] = navigation;
   cResult[4] = nextStep;
   cResult[5] = onProceed;
-  cResult[6] = fn;
-  tmp11 = fn;
-}) : ((scrollable) => {
+  cResult[6] = S;
+  tmp11 = S;
+}) : (function GuildRoleSubscriptionTierEditStep(scrollable) {
   let items1;
   let items2;
-  let items3;
   let obj6;
   scrollable = scrollable.scrollable;
   const merged = Object.assign(scrollable, Object.assign({ scrollable: 0 }));
@@ -405,21 +421,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollable) => {
     const obj3 = {};
     const merged1 = Object.assign(merged);
     items1 = [metroImportAll(closure_11, obj3), , ];
-    const obj4 = { keyboardShouldPersistTaps: "handled", showsVerticalScrollIndicator: false, alwaysBounceVertical: false, contentContainerStyle: items2, children: merged.children };
-    items2 = [tmp2.scrollContainer];
+    const obj4 = { keyboardShouldPersistTaps: "handled", showsVerticalScrollIndicator: false, alwaysBounceVertical: false, contentContainerStyle: tmp2.scrollContainer, children: merged.children };
     items1[1] = metroImportAll(metroImportDefault, obj4);
     const obj5 = { onProceed: callback };
     const merged2 = Object.assign(merged);
     items1[2] = metroImportAll(closure_12, obj5);
     obj6 = obj2;
   } else {
-    obj6 = { style: tmp2.container, children: items3 };
+    obj6 = { style: tmp2.container, children: items2 };
     const obj7 = {};
     const merged3 = Object.assign(merged);
-    items3 = [metroImportAll(closure_11, obj7), merged.children, ];
+    items2 = [metroImportAll(closure_11, obj7), merged.children, ];
     const obj8 = { onProceed: callback };
     const merged4 = Object.assign(merged);
-    items3[2] = metroImportAll(closure_12, obj8);
+    items2[2] = metroImportAll(closure_12, obj8);
   }
   return tmp5(tmp6, obj6);
 });

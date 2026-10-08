@@ -1,19 +1,19 @@
-// Module ID: 17087
-// Function ID: 17088
+// Module ID: 17368
+// Function ID: 17369
 // Name: useSortedMessageRequests
-// Dependencies: [19, 2051, 1377, 6734, 558, 576, 504, 17088, 2]
+// Dependencies: [19, 2063, 1389, 6060, 558, 576, 504, 17369, 2]
 
-// Module 17087 (useSortedMessageRequests)
+// Module 17368 (useSortedMessageRequests)
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import UserStore from "UserStore" /* 1377 */;
-import MessageRequestStore from "MessageRequestStore" /* 6734 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import UserStore from "UserStore" /* 1389 */;
+import MessageRequestStore from "MessageRequestStore" /* 6060 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let user;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSortedMessageRequests() {
   let messageRequestChannelIds;
   let stateFromStoresArray;
   let stateFromStoresObject;
@@ -21,7 +21,6 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp13;
   let tmp15;
   let tmp16;
-  let tmp19;
   let tmp4;
   let tmp5;
   let tmp8;
@@ -30,7 +29,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(15);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ChannelStore];
-    const fn = function l() {
+    const fn = function u() {
       return ChannelStore.getPrivateChannelsVersion();
     };
     cResult[0] = items;
@@ -44,17 +43,19 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [ChannelStore, MessageRequestStore];
-    const fn2 = function h() {
-      const mutablePrivateChannels = ChannelStore.getMutablePrivateChannels();
-      const arr = Array.from(messageRequestChannelIds.getMessageRequestChannelIds());
-      const mapped = arr.map((item) => closure_0[item]);
-      const found = mapped.filter((item) => null != item);
-      const obj = stateFromStoresArray(stateFromStoresObject[7]);
-      return obj.sortChannelIds(found);
-    };
+    class S {
+      constructor() {
+        const mutablePrivateChannels = ChannelStore.getMutablePrivateChannels();
+        const arr = Array.from(messageRequestChannelIds.getMessageRequestChannelIds());
+        const mapped = arr.map((item) => closure_0[item]);
+        const found = mapped.filter((item) => null != item);
+        const obj = stateFromStoresArray(stateFromStoresObject[7]);
+        return obj.sortChannelIds(found);
+      }
+    }
     cResult[2] = items1;
-    cResult[3] = fn2;
-    tmp9 = fn2;
+    cResult[3] = S;
+    tmp9 = S;
     tmp8 = items1;
   } else {
     tmp8 = cResult[2];
@@ -63,7 +64,16 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[4] !== stateFromStores) {
     const items2 = [stateFromStores];
     cResult[4] = stateFromStores;
-    cResult[5] = items2;
+    class S {
+      constructor() {
+        const mutablePrivateChannels = ChannelStore.getMutablePrivateChannels();
+        const arr = Array.from(messageRequestChannelIds.getMessageRequestChannelIds());
+        const mapped = arr.map((item) => closure_0[item]);
+        const found = mapped.filter((item) => null != item);
+        const obj = stateFromStoresArray(stateFromStoresObject[7]);
+        return obj.sortChannelIds(found);
+      }
+    }
     tmp12 = items2;
   } else {
     tmp12 = cResult[5];
@@ -73,12 +83,21 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const items3 = [UserStore];
     cResult[6] = items3;
-    tmp13 = items3;
+    class S {
+      constructor() {
+        const mutablePrivateChannels = ChannelStore.getMutablePrivateChannels();
+        const arr = Array.from(messageRequestChannelIds.getMessageRequestChannelIds());
+        const mapped = arr.map((item) => closure_0[item]);
+        const found = mapped.filter((item) => null != item);
+        const obj = stateFromStoresArray(stateFromStoresObject[7]);
+        return obj.sortChannelIds(found);
+      }
+    }
   } else {
     tmp13 = cResult[6];
   }
   if (cResult[7] !== stateFromStoresArray) {
-    const fn3 = function _() {
+    const fn2 = function _() {
       const obj = {};
       const item = stateFromStoresArray.forEach((id) => {
         user = user.getUser(id.recipients[0]);
@@ -90,10 +109,20 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     };
     const items4 = [stateFromStoresArray];
     cResult[7] = stateFromStoresArray;
-    cResult[8] = fn3;
+    class S {
+      constructor() {
+        const mutablePrivateChannels = ChannelStore.getMutablePrivateChannels();
+        const arr = Array.from(messageRequestChannelIds.getMessageRequestChannelIds());
+        const mapped = arr.map((item) => closure_0[item]);
+        const found = mapped.filter((item) => null != item);
+        const obj = stateFromStoresArray(stateFromStoresObject[7]);
+        return obj.sortChannelIds(found);
+      }
+    }
+    cResult[8] = fn2;
     cResult[9] = items4;
     tmp16 = items4;
-    tmp15 = fn3;
+    tmp15 = fn2;
   } else {
     tmp15 = cResult[8];
     tmp16 = cResult[9];
@@ -108,21 +137,36 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return tmp18;
   }
   if (cResult[13] !== stateFromStoresObject) {
-    const fn4 = function y(channel) {
-      return { channel, user: stateFromStoresObject[channel.id] };
-    };
+    class M {
+      constructor(channel) {
+        return { channel, user: stateFromStoresObject[channel.id] };
+      }
+    }
     cResult[13] = stateFromStoresObject;
-    cResult[14] = fn4;
-    tmp19 = fn4;
+    cResult[14] = M;
+    class S {
+      constructor() {
+        const mutablePrivateChannels = ChannelStore.getMutablePrivateChannels();
+        const arr = Array.from(messageRequestChannelIds.getMessageRequestChannelIds());
+        const mapped = arr.map((item) => closure_0[item]);
+        const found = mapped.filter((item) => null != item);
+        const obj = stateFromStoresArray(stateFromStoresObject[7]);
+        return obj.sortChannelIds(found);
+      }
+    }
   } else {
-    tmp19 = cResult[14];
+    class M {
+      constructor(channel) {
+        return { channel, user: stateFromStoresObject[channel.id] };
+      }
+    }
   }
   let mapped = stateFromStoresArray.map(tmp19);
   cResult[10] = stateFromStoresArray;
   cResult[11] = stateFromStoresObject;
   cResult[12] = mapped;
   tmp18 = mapped;
-}) : (() => {
+}) : (function useSortedMessageRequests() {
   let messageRequestChannelIds;
   let stateFromStoresArray;
   let stateFromStoresObject;

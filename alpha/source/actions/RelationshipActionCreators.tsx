@@ -1,30 +1,30 @@
-// Module ID: 9447
-// Function ID: 9448
+// Module ID: 7004
+// Function ID: 7005
 // Name: RelationshipActionCreators
-// Dependencies: [32, 1377, 1085, 9448, 5950, 5714, 5920, 1126, 9449, 9450, 9451, 1282, 4728, 4735, 584, 9452, 8113, 2]
+// Dependencies: [32, 1389, 1085, 7005, 6133, 5297, 6104, 1126, 7006, 7007, 7008, 1294, 4922, 4929, 584, 7010, 7014, 2]
 
-// Module 9447 (RelationshipActionCreators)
+// Module 7004 (RelationshipActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl10 from "intl" /* 1126 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import UserUtilsDefault from "UserUtils" /* 4728 */;
-import shared from "shared" /* 4735 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5714 */;
-import openQuarantineModeInfoModalDefault from "openQuarantineModeInfoModal" /* 5920 */;
-import ContextMenuActionCreators from "ContextMenuActionCreators" /* 5950 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8113 */;
-import RelationshipConstants from "RelationshipConstants" /* 9448 */;
-import ClaimAccountModalActionCreatorsAll from "ClaimAccountModalActionCreators" /* 9449 */;
-import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 9450 */;
-import FriendsUtils from "FriendsUtils" /* 9451 */;
-import ClearAllIncomingRequestsConfirmationModalDefault from "ClearAllIncomingRequestsConfirmationModal" /* 9452 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import UserUtilsDefault from "UserUtils" /* 4922 */;
+import shared from "shared" /* 4929 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5297 */;
+import openQuarantineModeInfoModalDefault from "openQuarantineModeInfoModal" /* 6104 */;
+import ContextMenuActionCreators from "ContextMenuActionCreators" /* 6133 */;
+import RelationshipConstants from "RelationshipConstants" /* 7005 */;
+import ClaimAccountModalActionCreatorsAll from "ClaimAccountModalActionCreators" /* 7006 */;
+import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 7007 */;
+import FriendsUtils from "FriendsUtils" /* 7008 */;
+import ClearAllIncomingRequestsConfirmationModalDefault from "ClearAllIncomingRequestsConfirmationModal" /* 7010 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7014 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, obj;
 
 let metroImportAll;
 let metroImportDefault;
@@ -130,12 +130,12 @@ let obj2 = {
     }
     [tmp3, tmp4] = str.split("#");
     _slicedToArray(str.split("#"), 2);
-    const HTTP = str(1282).HTTP;
+    const HTTP = str(1294).HTTP;
     const request = { url: closure_6.USER_RELATIONSHIPS(), body, context, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
     const post = HTTP.post;
     body = { username: tmp3, discriminator: parseInt(tmp4), note };
     const merged = Object.assign(captchaPayload);
-    obj3 = str(1282);
+    obj3 = str(1294);
     const postResult = post(request);
     return postResult.catch((error) => {
       handleRelationshipAddError(error, errorUxConfig, str);
@@ -179,7 +179,7 @@ let obj2 = {
     });
   },
   acceptFriendRequest(arg0) {
-    return obj2.addRelationship(arg0, () => {
+    return obj2.addRelationship(arg0, function onSuccess() {
       const AccessibilityAnnouncer = require("shared").AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
       const intl = require("intl").intl;
@@ -187,7 +187,7 @@ let obj2 = {
     });
   },
   cancelFriendRequest(arg0, arg1) {
-    return obj2.removeRelationship(arg0, arg1, () => {
+    return obj2.removeRelationship(arg0, arg1, function onSuccess() {
       const AccessibilityAnnouncer = require("shared").AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
       const intl = require("intl").intl;
@@ -195,7 +195,7 @@ let obj2 = {
     });
   },
   removeFriend(arg0, arg1) {
-    obj2.removeRelationship(arg0, arg1, () => {
+    obj2.removeRelationship(arg0, arg1, function onSuccess() {
       const AccessibilityAnnouncer = require("shared").AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
       const intl = require("intl").intl;
@@ -204,7 +204,7 @@ let obj2 = {
   },
   blockUser(userId, context) {
     obj = { userId, context, type: metroImportAll.BLOCKED };
-    return obj2.addRelationship(obj, () => {
+    return obj2.addRelationship(obj, function onSuccess() {
       const AccessibilityAnnouncer = require("shared").AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
       const intl = require("intl").intl;
@@ -212,7 +212,7 @@ let obj2 = {
     });
   },
   unblockUser(id, arg1) {
-    return obj2.removeRelationship(id, arg1, () => {
+    return obj2.removeRelationship(id, arg1, function onSuccess() {
       const AccessibilityAnnouncer = require("shared").AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
       const intl = require("intl").intl;

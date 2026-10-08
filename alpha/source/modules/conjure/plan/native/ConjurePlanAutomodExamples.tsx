@@ -1,30 +1,27 @@
-// Module ID: 16684
-// Function ID: 16685
+// Module ID: 16960
+// Function ID: 16961
 // Name: ConjurePlanAutomodExamples
-// Dependencies: [19, 17, 21, 8952, 9301, 4798, 587, 4896, 558, 576, 4892, 1126, 3753, 16685, 1188, 1402, 1405, 5600, 2]
+// Dependencies: [19, 17, 21, 10386, 8747, 4992, 587, 5090, 558, 576, 5086, 16961, 1200, 1414, 1417, 1126, 3827, 5373, 2]
 
-// Module 16684 (ConjurePlanAutomodExamples)
+// Module 16960 (ConjurePlanAutomodExamples)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import AvatarUtils from "AvatarUtils" /* 1402 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1405 */;
-import _modDef3753 from "module_3753" /* 3753 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 4798 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Stack_Stack from "Stack/Stack" /* 5600 */;
-import ShieldIcon2 from "ShieldIcon" /* 8952 */;
-import BellIcon from "BellIcon" /* 9301 */;
-import ConjurePlanAutomodOutcomes from "ConjurePlanAutomodOutcomes" /* 16685 */;
+import native from "native" /* 1200 */;
+import AvatarUtils from "AvatarUtils" /* 1414 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1417 */;
+import _modDef3827 from "module_3827" /* 3827 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 4992 */;
+import Stack_Stack from "Stack/Stack" /* 5373 */;
+import BellIcon from "BellIcon" /* 8747 */;
+import ShieldIcon from "ShieldIcon" /* 10386 */;
+import ConjurePlanAutomodOutcomes from "ConjurePlanAutomodOutcomes" /* 16961 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let automod, group, reason;
 
 let closure_4;
 let hasOwnProperty;
@@ -34,19 +31,20 @@ let obj5;
 let obj7;
 let obj8;
 let rect;
+let tmp;
+const Text_Text = tmp(5086);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-let obj = { blocked: ShieldIcon2.ShieldIcon, alert: BellIcon.BellIcon, allowed: CircleCheckIcon.CircleCheckIcon };
+let obj = { blocked: ShieldIcon.ShieldIcon, alert: BellIcon.BellIcon, allowed: CircleCheckIcon.CircleCheckIcon };
 let obj2 = { blurple: obj3, red: obj4, green: obj5 };
 obj3 = { text: "text-brand", icon: nativeDefault.colors.TEXT_BRAND };
 obj4 = { text: "text-feedback-critical", icon: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
 obj5 = { text: "text-feedback-positive", icon: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE };
 let createStyles = createStyles_mod;
-let obj6 = { typeTag: obj7, heading: obj8, examples: { gap: nativeDefault.space.PX_12 }, section: { gap: nativeDefault.space.PX_8 }, sectionHeader: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 }, sectionLabel: { textTransform: "uppercase", letterSpacing: 0.24 }, rows: { gap: nativeDefault.space.PX_4, paddingVertical: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, overflow: "hidden" }, row: { flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_6, paddingHorizontal: nativeDefault.space.PX_12 }, blockedRow: { backgroundColor: nativeDefault.colors.MESSAGE_AUTOMOD_BACKGROUND_DEFAULT }, blockedBar: rect, rowBody: { flex: 1, minWidth: 0, gap: nativeDefault.space.PX_4 / 2 } };
-obj7 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
+let obj6 = { heading: obj7, examples: obj8, section: { gap: nativeDefault.space.PX_8 }, sectionHeader: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 }, sectionLabel: { textTransform: "uppercase", letterSpacing: 0.24 }, rows: { gap: nativeDefault.space.PX_4, paddingVertical: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, overflow: "hidden" }, row: { flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_6, paddingHorizontal: nativeDefault.space.PX_12 }, blockedRow: { backgroundColor: nativeDefault.colors.MESSAGE_AUTOMOD_BACKGROUND_DEFAULT }, blockedBar: rect, rowBody: { flex: 1, minWidth: 0, gap: nativeDefault.space.PX_4 / 2 } };
+obj7 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 createStyles = createStyles.createStyles;
-obj8 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
-({ gap: nativeDefault.space.PX_12 });
+obj8 = { gap: nativeDefault.space.PX_12 };
 ({ gap: nativeDefault.space.PX_8 });
 ({ flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 });
 ({ gap: nativeDefault.space.PX_4, paddingVertical: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, overflow: "hidden" });
@@ -56,60 +54,7 @@ rect = { position: "absolute", top: 0, bottom: 0, start: 0, width: 2, background
 ({ flex: 1, minWidth: 0, gap: nativeDefault.space.PX_4 / 2 });
 let closure_8 = createStyles(obj6);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  let first;
-  let intl;
-  let items;
-  let tmp13;
-  let tmp9;
-  obj = react2;
-  const cResult = obj.c(4);
-  const tmp4 = closure_8();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    obj2 = { size: "xs", color: nativeDefault.colors.TEXT_SUBTLE };
-    const ShieldIcon = tmp(8952).ShieldIcon;
-    const tmp8 = React3(ShieldIcon, obj2);
-    cResult[0] = tmp8;
-    first = tmp8;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { variant: "text-sm/medium", color: "text-subtle", children: intl.string(_modDef3753.DnWMLj) };
-    const Text = tmp(4892).Text;
-    intl = tmp(1126).intl;
-    const tmp12 = React3(Text, obj3);
-    cResult[1] = tmp12;
-    tmp9 = tmp12;
-  } else {
-    tmp9 = cResult[1];
-  }
-  if (cResult[2] !== tmp4.typeTag) {
-    const obj4 = { style: tmp4.typeTag, children: items };
-    items = [first, tmp9];
-    const tmp16 = hasOwnProperty(View, obj4);
-    cResult[2] = tmp4.typeTag;
-    cResult[3] = tmp16;
-    tmp13 = tmp16;
-  } else {
-    tmp13 = cResult[3];
-  }
-  return tmp13;
-}) : (() => {
-  let intl;
-  let items;
-  obj = { style: closure_8().typeTag, children: items };
-  obj2 = { size: "xs", color: nativeDefault.colors.TEXT_SUBTLE };
-  const ShieldIcon = ShieldIcon2.ShieldIcon;
-  items = [React3(ShieldIcon, obj2), ];
-  const obj3 = { variant: "text-sm/medium", color: "text-subtle", children: intl.string(_modDef3753.DnWMLj) };
-  const Text = Text_Text.Text;
-  intl = intl4.intl;
-  items[1] = React3(Text, obj3);
-  return hasOwnProperty(View, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Footnote(reason) {
   obj = react2;
   const cResult = obj.c(2);
   reason = reason.reason;
@@ -128,7 +73,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
     tmp4 = tmp5;
   }
   return tmp4;
-}) : ((reason) => {
+}) : (function Footnote(reason) {
   reason = reason.reason;
   let tmp = null;
   if (null != reason) {
@@ -138,7 +83,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
   return tmp;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((example) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExampleRow(example) {
   let blockedStyle;
   let items;
   let items1;
@@ -194,7 +139,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((example) => {
         const _Symbol = Symbol;
         if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
           obj2 = { source: makeSource(tmpResult5.getDefaultAvatarURL(undefined, undefined)), size: native.AvatarSizes.XSMALL };
-          const Avatar = tmp(1188).Avatar;
+          const Avatar = tmp(1200).Avatar;
           makeSource = AvatarUtils.makeSource;
           AvatarUtils;
           tmpResult5 = AvatarUtils;
@@ -291,7 +236,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((example) => {
   cResult[3] = blockedStyle && tmp4.blockedRow;
   cResult[4] = items3;
   tmp8 = items3;
-}) : ((example) => {
+}) : (function ExampleRow(example) {
   let blockedStyle;
   let found;
   let items2;
@@ -318,21 +263,21 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((example) => {
   }
   items2 = [tmp8, , ];
   const obj4 = { source: makeSource(tmp2Result3.getDefaultAvatarURL(undefined, undefined)), size: native.AvatarSizes.XSMALL };
-  const Avatar = tmp2(1188).Avatar;
+  const Avatar = tmp2(1200).Avatar;
   makeSource = AvatarUtils.makeSource;
   AvatarUtils;
   tmp2Result3 = AvatarUtils;
   items2[1] = React3(Avatar, obj4);
   const obj5 = { style: tmp.rowBody, children: items3 };
   const obj6 = { variant: "text-sm/normal", color: "text-default", children: tmp2Result4.renderPlanAutomodExampleContent(example.content) };
-  const Text = tmp2(4892).Text;
+  const Text = tmp2(5086).Text;
   tmp2Result4 = ConjurePlanAutomodOutcomes;
   items3 = [React3(Text, obj6), React3(closure_9, { reason: result })];
   items2[2] = hasOwnProperty(View, obj5);
   return hasOwnProperty(View, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((group) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExampleSection(group) {
   let items;
   let items1;
   obj = react2;
@@ -365,7 +310,6 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((group) => {
         if (cResult[9] === tmp4.sectionHeader) {
           if (cResult[10] === tmp9) {
             let tmp16;
-            let tmp20;
             if (cResult[11] === tmp13) {
               tmp16 = cResult[12];
             }
@@ -374,52 +318,62 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((group) => {
               let tmp22;
               const _Symbol = Symbol;
               if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-                const fn = function w(example, arg1) {
-                  obj = { example };
-                  return closure_1_4(closure_1_10, obj, arg1);
-                };
-                cResult[15] = fn;
-                tmp22 = fn;
+                class L {
+                  constructor(arg0, arg1) {
+                    obj = { example: group };
+                    return closure_1_4(closure_1_10, obj, arg1);
+                  }
+                }
+                cResult[15] = L;
+                tmp22 = L;
               } else {
-                tmp22 = cResult[15];
+                class L {
+                  constructor(arg0, arg1) {
+                    obj = { example: group };
+                    return closure_1_4(closure_1_10, obj, arg1);
+                  }
+                }
               }
               const examples = group.examples;
               const mapped = examples.map(tmp22);
               cResult[13] = group.examples;
               cResult[14] = mapped;
-              tmp20 = mapped;
             } else {
-              tmp20 = cResult[14];
+              class L {
+                constructor(arg0, arg1) {
+                  obj = { example: group };
+                  return closure_1_4(closure_1_10, obj, arg1);
+                }
+              }
             }
             if (cResult[16] === tmp4.rows) {
-              let tmp24;
-              if (cResult[17] === tmp20) {
-                tmp24 = cResult[18];
+              class L {
+                constructor(arg0, arg1) {
+                  obj = { example: group };
+                  return closure_1_4(closure_1_10, obj, arg1);
+                }
               }
               if (cResult[19] === tmp4.section) {
-                if (cResult[20] === tmp24) {
-                  let tmp28;
-                  if (cResult[21] === tmp16) {
-                    tmp28 = cResult[22];
+                class L {
+                  constructor(arg0, arg1) {
+                    obj = { example: group };
+                    return closure_1_4(closure_1_10, obj, arg1);
                   }
-                  return tmp28;
                 }
               }
               const obj3 = { style: tmp7, children: items };
               items = [tmp16, tmp24];
-              const tmp31 = hasOwnProperty(View, obj3);
               cResult[19] = tmp4.section;
               cResult[20] = tmp24;
               cResult[21] = tmp16;
-              cResult[22] = tmp31;
-              tmp28 = tmp31;
+              cResult[22] = hasOwnProperty(View, obj3);
+              const tmp31 = hasOwnProperty(View, obj3);
             }
             const obj4 = { style: rows, children: tmp20 };
-            const tmp27 = React3(View, obj4);
             cResult[16] = tmp4.rows;
             cResult[17] = tmp20;
-            cResult[18] = tmp27;
-            tmp24 = tmp27;
+            cResult[18] = React3(View, obj4);
+            const tmp27 = React3(View, obj4);
           }
         }
         const obj5 = { style: tmp8, children: items1 };
@@ -446,7 +400,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((group) => {
   cResult[1] = obj2[obj2.tone].icon;
   cResult[2] = tmp10;
   tmp9 = tmp10;
-}) : ((group) => {
+}) : (function ExampleSection(group) {
   let examples;
   let items;
   let items1;
@@ -474,7 +428,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((group) => {
   return hasOwnProperty(View, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((automod) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanAutomodExamples(automod) {
   let first;
   let intl;
   let intl2;
@@ -502,7 +456,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((automod) => {
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     obj2 = { source: first, size: native.AvatarSizes.SIZE_16, accessibilityLabel: intl.string(intl4.t.hG1StD) };
-    const Avatar = tmp(1188).Avatar;
+    const Avatar = tmp(1200).Avatar;
     intl = tmp(1126).intl;
     const tmp10 = React3(Avatar, obj2);
     cResult[1] = tmp10;
@@ -511,8 +465,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((automod) => {
     tmp8 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { variant: "text-sm/semibold", color: "text-muted", children: intl2.string(_modDef3753.z4ZKYG) };
-    const Text = tmp(4892).Text;
+    const obj3 = { variant: "text-sm/semibold", color: "text-muted", children: intl2.string(_modDef3827.z4ZKYG) };
+    const Text = tmp(5086).Text;
     intl2 = tmp(1126).intl;
     const tmp14 = React3(Text, obj3);
     cResult[2] = tmp14;
@@ -580,8 +534,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((automod) => {
           return closure_1_4(closure_1_11, obj, automod.section);
         }
       }
-      const obj5 = { variant: "text-xs/normal", color: "text-muted", children: intl3.string(_modDef3753.bo4MOx) };
-      const Text2 = tmp(4892).Text;
+      const obj5 = { variant: "text-xs/normal", color: "text-muted", children: intl3.string(_modDef3827.bo4MOx) };
+      const Text2 = tmp(5086).Text;
       intl3 = tmp(1126).intl;
       const tmp26 = React3(Text2, obj5);
       cResult[11] = tmp26;
@@ -615,7 +569,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((automod) => {
   cResult[9] = tmp19;
   cResult[10] = React3(View, { style: examples, children: tmp19 });
   const tmp23 = React3(View, { style: examples, children: tmp19 });
-}) : ((automod) => {
+}) : (function ConjurePlanAutomodExamples(automod) {
   let intl;
   let intl2;
   let intl3;
@@ -636,7 +590,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((automod) => {
   obj4 = utils_AvatarUtils;
   intl = intl4.intl;
   items = [React3(Avatar, obj3), ];
-  const obj5 = { variant: "text-sm/semibold", color: "text-muted", children: intl2.string(_modDef3753.z4ZKYG) };
+  const obj5 = { variant: "text-sm/semibold", color: "text-muted", children: intl2.string(_modDef3827.z4ZKYG) };
   const Text = Text_Text.Text;
   intl2 = intl4.intl;
   items[1] = React3(Text, obj5);
@@ -651,7 +605,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((automod) => {
   const obj7 = ConjurePlanAutomodOutcomes;
   result = obj7.groupPlanAutomodExamples(automod.examples);
   items1[1] = React3(View, obj6);
-  const obj8 = { variant: "text-xs/normal", color: "text-muted", children: intl3.string(_modDef3753.bo4MOx) };
+  const obj8 = { variant: "text-xs/normal", color: "text-muted", children: intl3.string(_modDef3827.bo4MOx) };
   const Text2 = Text_Text.Text;
   intl3 = intl4.intl;
   items1[2] = React3(Text2, obj8);
@@ -659,5 +613,4 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((automod) => {
 });
 let result = size.fileFinishedImporting("modules/conjure/plan/native/ConjurePlanAutomodExamples.tsx");
 
-export default tmp6;
-export const ConjurePlanAutomodTypeTag = tmp5;
+export default tmp5;

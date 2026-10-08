@@ -1,17 +1,17 @@
-// Module ID: 11882
-// Function ID: 11883
+// Module ID: 11954
+// Function ID: 11955
 // Name: ChatInputActionButton
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4586, 5916, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 4778, 6189, 2]
 
-// Module 11882 (ChatInputActionButton)
+// Module 11954 (ChatInputActionButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4586 */;
-import Pressables from "Pressables" /* 5916 */;
+import useToken from "useToken" /* 4778 */;
+import Pressables from "Pressables" /* 6189 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -26,8 +26,7 @@ let closure_5 = createStyles.createStyles((height, marginHorizontal) => {
   ({ tintColor: nativeDefault.colors.ICON_MUTED });
   return obj;
 });
-const forwardRef = react.forwardRef;
-const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function Button(arg0) {
   let IconComponent;
   let accessibilityActions;
   let accessibilityHint;
@@ -40,10 +39,11 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
   let disabled;
   let onAccessibilityAction;
   let onPress;
+  let ref;
   let style;
   const obj = react2;
   const cResult = obj.c(28);
-  ({ active, style, disabled, onPress, accessible, accessibilityLabel, accessibilityHint, accessibilityState, accessibilityActions, onAccessibilityAction, IconComponent } = arg0);
+  ({ active, style, disabled, onPress, accessible, accessibilityLabel, accessibilityHint, accessibilityState, accessibilityActions, onAccessibilityAction, IconComponent, ref } = arg0);
   let tmp4 = undefined !== active;
   ({ activeStyle, activeIconStyle } = arg0);
   if (tmp4) {
@@ -103,11 +103,11 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
                                 if (cResult[23] === tmp23) {
                                   if (cResult[24] === tmp14) {
                                     if (cResult[25] === tmp15) {
-                                      let tmp27;
+                                      let tmp26;
                                       if (cResult[26] === tmp16) {
-                                        tmp27 = cResult[27];
+                                        tmp26 = cResult[27];
                                       }
-                                      return tmp27;
+                                      return tmp26;
                                     }
                                   }
                                 }
@@ -119,7 +119,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
                     }
                   }
                 }
-                const tmp29 = jsx(Pressables.PressableOpacity, { ref, style: tmp14, hitSlop: tmp15, disabled, accessible, accessibilityRole: "button", accessibilityState: tmp16, accessibilityLabel, accessibilityHint, accessibilityActions, onAccessibilityAction, onPress, children: tmp23 });
+                const tmp28 = jsx(Pressables.PressableOpacity, { ref, style: tmp14, hitSlop: tmp15, disabled, accessible, accessibilityRole: "button", accessibilityState: tmp16, accessibilityLabel, accessibilityHint, accessibilityActions, onAccessibilityAction, onPress, children: tmp23 });
                 cResult[15] = accessibilityActions;
                 cResult[16] = accessibilityHint;
                 cResult[17] = accessibilityLabel;
@@ -132,8 +132,8 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
                 cResult[24] = tmp14;
                 cResult[25] = tmp15;
                 cResult[26] = tmp16;
-                cResult[27] = tmp29;
-                tmp27 = tmp29;
+                cResult[27] = tmp28;
+                tmp26 = tmp28;
               }
               const tmp25 = <IconComponent size="custom" style={tmp22} />;
               cResult[12] = IconComponent;
@@ -165,7 +165,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
   cResult[2] = tmp4 && !disabled && activeStyle;
   cResult[3] = items1;
   tmp14 = items1;
-}) : ((active, ref) => {
+}) : (function Button(active) {
   let IconComponent;
   let accessibilityActions;
   let accessibilityHint;
@@ -177,12 +177,13 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
   let disabled;
   let onAccessibilityAction;
   let onPress;
+  let ref;
   let style;
   let flag = active.active;
   if (flag === undefined) {
     flag = false;
   }
-  ({ style, disabled, accessibilityState, activeStyle, activeIconStyle, onPress, accessible, accessibilityLabel, accessibilityHint, accessibilityActions, onAccessibilityAction, IconComponent } = active);
+  ({ style, disabled, accessibilityState, activeStyle, activeIconStyle, onPress, accessible, accessibilityLabel, accessibilityHint, accessibilityActions, onAccessibilityAction, IconComponent, ref } = active);
   const obj = useToken;
   const token = obj.useToken(nativeDefault.modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
   const obj2 = useToken;
@@ -225,8 +226,8 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
     disabled = tmp6.actionButtonIconDisabled;
   }
   items1[3] = disabled;
-  return <PressableOpacity ref={arg1} style={items} hitSlop={tmp13} disabled={disabled} accessible={accessible} accessibilityRole="button" accessibilityState={obj5} accessibilityLabel={accessibilityLabel} accessibilityHint={accessibilityHint} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} onPress={onPress}>{null}</PressableOpacity>;
-})));
+  return <PressableOpacity ref={ref} style={items} hitSlop={tmp13} disabled={disabled} accessible={accessible} accessibilityRole="button" accessibilityState={obj5} accessibilityLabel={accessibilityLabel} accessibilityHint={accessibilityHint} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} onPress={onPress}>{null}</PressableOpacity>;
+}));
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/chat_input/native/action_buttons/ChatInputActionButton.tsx");
 

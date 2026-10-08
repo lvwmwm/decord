@@ -1,22 +1,22 @@
-// Module ID: 12504
-// Function ID: 12505
+// Module ID: 12600
+// Function ID: 12601
 // Name: usePreviewableMedia
-// Dependencies: [19, 17, 1085, 21, 4896, 558, 576, 4586, 587, 8169, 8401, 12505, 5046, 11814, 6815, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 558, 576, 4778, 587, 7550, 8899, 12601, 5415, 11882, 6988, 2]
 
-// Module 12504 (usePreviewableMedia)
+// Module 12600 (usePreviewableMedia)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4586 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5046 */;
-import isForwardMessageDefault from "isForwardMessage" /* 6815 */;
-import inlineStyles from "inlineStyles" /* 8169 */;
-import CirclePlayIcon from "CirclePlayIcon" /* 8401 */;
-import WaveformIcon from "WaveformIcon" /* 12505 */;
+import useToken from "useToken" /* 4778 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5415 */;
+import isForwardMessageDefault from "isForwardMessage" /* 6988 */;
+import inlineStyles from "inlineStyles" /* 7550 */;
+import CirclePlayIcon from "CirclePlayIcon" /* 8899 */;
+import WaveformIcon from "WaveformIcon" /* 12601 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let metroImportDefault;
 let metroRequire;
 let obj3;
 let tmp5;
-const inlineStylesDefault = tmp5(8169);
+const inlineStylesDefault = tmp5(7550);
 function getBasePreviewableMedia(arg0) {
   let isForward;
   let message;
@@ -72,7 +72,7 @@ function getBasePreviewableMedia(arg0) {
           }
           let push3Result = push3(obj3);
         } else {
-          let tmp8Result = tmp8(5046);
+          let tmp8Result = tmp8(5415);
           if (tmp8Result.isVideoFile(tmp7)) {
             let obj4 = { id: "" + tmp6.id + "-" + obj.VIDEO, type: obj.VIDEO, media: tmp6, parentType: str6 };
             let _HermesInternal3 = HermesInternal;
@@ -83,7 +83,7 @@ function getBasePreviewableMedia(arg0) {
             }
             let push2Result = push2(obj4);
           } else {
-            let tmp8Result2 = tmp8(5046);
+            let tmp8Result2 = tmp8(5415);
             let push = items.push;
             let obj5 = { id: null, type: null, media: null, icon: null, parentType: null };
             let id = tmp6.id;
@@ -93,7 +93,7 @@ function getBasePreviewableMedia(arg0) {
               obj5.id = "" + id + "-" + tmp13.AUDIO;
               obj5.type = tmp13.AUDIO;
               obj5.media = tmp6;
-              obj5.icon = metroImportDefault(tmp8(8401).CirclePlayIcon, { size: "lg", color: "background-brand", secondaryColor: "white" });
+              obj5.icon = metroImportDefault(tmp8(8899).CirclePlayIcon, { size: "lg", color: "background-brand", secondaryColor: "white" });
               let str5 = null;
               if (isForward) {
                 str5 = "forward";
@@ -106,7 +106,7 @@ function getBasePreviewableMedia(arg0) {
               obj5.type = tmp13.FILE;
               obj5.media = tmp6;
               let obj6 = { size: "lg", color: nativeDefault.colors.ICON_SUBTLE };
-              let FileIcon = tmp8(11814).FileIcon;
+              let FileIcon = tmp8(11882).FileIcon;
               obj5.icon = metroImportDefault(FileIcon, obj6);
               let str4 = null;
               if (isForward) {
@@ -161,7 +161,7 @@ createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_11 = createStyles(obj2);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMessageIcon() {
   let items;
   let items1;
   const obj = react2;
@@ -223,7 +223,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = token1;
   cResult[2] = tmp10;
   tmp8 = tmp10;
-}) : (() => {
+}) : (function VoiceMessageIcon() {
   let items;
   let items1;
   const tmp = closure_11();
@@ -241,7 +241,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return metroImportAll(React4, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreviewableMedia(message) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(4);
@@ -279,7 +279,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : ((message) => {
+}) : (function usePreviewableMedia(message) {
   let items = [message];
   return react.useMemo(() => {
     const items = [];

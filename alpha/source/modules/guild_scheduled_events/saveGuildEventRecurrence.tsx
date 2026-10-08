@@ -1,24 +1,24 @@
-// Module ID: 9212
-// Function ID: 9213
+// Module ID: 8512
+// Function ID: 8513
 // Name: saveGuildEventRecurrence
-// Dependencies: [9198, 9213, 11, 2]
+// Dependencies: [8496, 8494, 11, 2]
 // Exports: default
 
-// Module 9212 (saveGuildEventRecurrence)
+// Module 8512 (saveGuildEventRecurrence)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import ScheduleUtils from "ScheduleUtils" /* 9198 */;
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 9213 */;
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8494 */;
+import ScheduleUtils from "ScheduleUtils" /* 8496 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/guild_scheduled_events/saveGuildEventRecurrence.tsx");
 
-export default function saveGuildEventRecurrence(guild_id, nextRecurrenceIdInEvent, startDate, event_exception_id) {
+export default function saveGuildEventRecurrence(guild_id, c2, startDate, event_exception_id) {
   let date;
   let toISOStringResult1;
   let toISOStringResult2;
   let toISOStringResult3;
   const obj = ScheduleUtils;
-  const baseScheduleForRecurrence = obj.getBaseScheduleForRecurrence(nextRecurrenceIdInEvent, guild_id);
+  const baseScheduleForRecurrence = obj.getBaseScheduleForRecurrence(c2, guild_id);
   startDate = null;
   const obj2 = ScheduleUtils;
   if (!obj2.areDatesIdentical(baseScheduleForRecurrence.startDate, startDate.startDate)) {
@@ -53,12 +53,12 @@ export default function saveGuildEventRecurrence(guild_id, nextRecurrenceIdInEve
       if (toISOStringResult1 == null) {
         toISOStringResult1 = null;
       }
-      result1 = updateGuildEventException(obj3, guild_id.guild_id, guild_id.id, nextRecurrenceIdInEvent);
+      result1 = updateGuildEventException(obj3, guild_id.guild_id, guild_id.id, c2);
     }
     return result1;
   } else {
     const obj7 = SnowflakeUtilsDefault;
-    const extractTimestampResult = obj7.extractTimestamp(nextRecurrenceIdInEvent);
+    const extractTimestampResult = obj7.extractTimestamp(c2);
     const _Date = Date;
     const self = this;
     const self2 = this;

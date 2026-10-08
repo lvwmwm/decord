@@ -1,40 +1,39 @@
-// Module ID: 15550
-// Function ID: 15551
+// Module ID: 15816
+// Function ID: 15817
 // Name: CheckpointBackground
-// Dependencies: [17, 5121, 1085, 21, 4896, 558, 576, 5612, 15551, 2]
+// Dependencies: [5433, 1085, 21, 5090, 558, 576, 5387, 15817, 6164, 2]
 
-// Module 15550 (CheckpointBackground)
-import react_native from "react-native" /* 17 */;
+// Module 15816 (CheckpointBackground)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import CheckpointConstants from "CheckpointConstants" /* 5121 */;
-import LinearGradientDefault from "LinearGradient" /* 5612 */;
-import _modDef15551 from "module_15551" /* 15551 */;
+import LinearGradientDefault from "LinearGradient" /* 5387 */;
+import CheckpointConstants from "CheckpointConstants" /* 5433 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import _modDef15817 from "module_15817" /* 15817 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let metroImportAll;
+let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
-const Image = react_native.Image;
 const colors = CheckpointConstants.CHECKPOINT_BACKGROUND_GRADIENT;
 const VerticalGradient = Constants.VerticalGradient;
-({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let closure_9 = createStyles.createStyles({ background: { position: "absolute", width: "100%", height: "100%" } });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
+let closure_8 = createStyles.createStyles({ background: { position: "absolute", width: "100%", height: "100%" } });
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointBackground() {
   let items;
   let tmp10;
   let tmp12;
   let tmp4;
   const obj = react;
   const cResult = obj.c(8);
-  const tmp3 = closure_9();
+  const tmp3 = closure_8();
   if (cResult[0] !== tmp3.background) {
     const obj3 = { colors, start: null, end: null, style: tmp3.background };
     ({ START: obj2.start, END: obj2.end } = VerticalGradient);
-    const tmp9 = metroRequire(LinearGradientDefault, obj3);
+    const tmp9 = hasOwnProperty(LinearGradientDefault, obj3);
     cResult[0] = tmp3.background;
     cResult[1] = tmp9;
     tmp4 = tmp9;
@@ -42,7 +41,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { uri: _modDef15551 };
+    const obj4 = { uri: _modDef15817 };
     cResult[2] = obj4;
     tmp10 = obj4;
   } else {
@@ -50,7 +49,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[3] !== tmp3.background) {
     const obj5 = { source: tmp10, style: tmp3.background, resizeMode: "cover" };
-    const tmp15 = metroRequire(Image, obj5);
+    const tmp15 = hasOwnProperty(FastImageDefault, obj5);
     cResult[3] = tmp3.background;
     cResult[4] = tmp15;
     tmp12 = tmp15;
@@ -66,22 +65,24 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const obj9 = { children: items };
   items = [tmp4, tmp12];
-  const tmp17 = metroImportAll(metroImportDefault, obj9);
+  const tmp17 = metroImportDefault(metroRequire, obj9);
   cResult[5] = tmp4;
   cResult[6] = tmp12;
   cResult[7] = tmp17;
   tmp16 = tmp17;
-}) : (() => {
+}) : (function CheckpointBackground() {
   let items;
-  const tmp = closure_9();
+  let obj4;
+  const tmp = closure_8();
   const obj = { children: items };
   items = [, ];
   const obj2 = { colors, start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.background };
-  items[0] = metroRequire(LinearGradientDefault, obj2);
-  const obj3 = { source: { uri: _modDef15551 }, style: tmp.background, resizeMode: "cover" };
-  ({ uri: _modDef15551 });
-  items[1] = metroRequire(Image, obj3);
-  return metroImportAll(metroImportDefault, obj);
+  items[0] = hasOwnProperty(LinearGradientDefault, obj2);
+  const obj3 = { source: obj4, style: tmp.background, resizeMode: "cover" };
+  obj4 = { uri: _modDef15817 };
+  const tmp2 = FastImageDefault;
+  items[1] = hasOwnProperty(tmp2, obj3);
+  return metroImportDefault(metroRequire, obj);
 });
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointBackground.tsx");
 

@@ -1,32 +1,32 @@
-// Module ID: 7642
-// Function ID: 7643
+// Module ID: 7963
+// Function ID: 7964
 // Name: DoubleTapErrorToast
-// Dependencies: [19, 17, 1380, 21, 4896, 587, 558, 576, 7643, 1126, 4580, 4574, 4892, 2]
+// Dependencies: [19, 17, 1392, 21, 5090, 587, 558, 576, 7964, 1126, 4772, 4766, 5086, 2]
 // Exports: showDoubleTapErrorToast
 
-// Module 7642 (DoubleTapErrorToast)
+// Module 7963 (DoubleTapErrorToast)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
-import Text_Text from "Text/Text" /* 4892 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
+import Text_Text from "Text/Text" /* 5086 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const XSmallBoldIcon2 = tmp(7643);
+const XSmallBoldIcon2 = tmp(7964);
 const View = react_native.View;
 const EmojiDisabledReasons = EmojiConstants.EmojiDisabledReasons;
 const jsx = Fragment.jsx;
 let obj = { icon: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL, borderRadius: nativeDefault.radii.round, padding: nativeDefault.space.PX_4, marginLeft: nativeDefault.space.PX_4 };
 let closure_6 = createStyles.createStyles(obj);
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DoubleTapErrorToastIcon() {
   let first;
   let tmp9;
   const obj = react2;
@@ -49,7 +49,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = cResult[2];
   }
   return tmp9;
-}) : (() => {
+}) : (function DoubleTapErrorToastIcon() {
   ({ color: nativeDefault.colors.WHITE, size: "xs" });
   const XSmallBoldIcon = XSmallBoldIcon2.XSmallBoldIcon;
   return <View style={closure_6().icon} aria-hidden>{null}</View>;
@@ -60,9 +60,9 @@ export const showDoubleTapErrorToast = function showDoubleTapErrorToast(emojiNam
   emojiName = emojiName.emojiName;
   const reason = emojiName.reason;
   const tmp = emojiName;
-  let obj = emojiName(4580);
+  let obj = emojiName(4772);
   const designSystemsNotificationComponents = obj.getDesignSystemsNotificationComponents("showDoubleTapErrorToast");
-  const obj2 = reason(4574);
+  const obj2 = reason(4766);
   if (designSystemsNotificationComponents) {
     let stringResult;
     const openMana = obj2.openMana;

@@ -1,14 +1,14 @@
-// Module ID: 7526
-// Function ID: 7527
+// Module ID: 9249
+// Function ID: 9250
 // Name: AppChannelChat
-// Dependencies: [6793, 4911, 7527, 6795, 558, 576, 504, 2]
+// Dependencies: [6066, 6040, 9250, 6068, 558, 576, 504, 2]
 // Exports: closeAppChannelChat, openAppChannelChat
 
-// Module 7526 (AppChannelChat)
-import SidebarActionTypes from "SidebarActionTypes" /* 6795 */;
-import SidebarActionCreatorsDefault from "SidebarActionCreators" /* 7527 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6793 */;
-import ReadStateStore from "ReadStateStore" /* 4911 */;
+// Module 9249 (AppChannelChat)
+import SidebarActionTypes from "SidebarActionTypes" /* 6068 */;
+import SidebarActionCreatorsDefault from "SidebarActionCreators" /* 9250 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6066 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsAppChannelChatOpen(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -50,7 +50,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useIsAppChannelChatOpen(arg0) {
   let closure_0;
   _require = arg0;
   const items = [ChannelSectionStore];
@@ -62,7 +62,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChannelChatUnread(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -101,7 +101,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresObject(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useAppChannelChatUnread(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");

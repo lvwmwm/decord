@@ -1,26 +1,26 @@
-// Module ID: 5803
-// Function ID: 5804
+// Module ID: 5408
+// Function ID: 5409
 // Name: MarkupChannelMentionRule
-// Dependencies: [2104, 2051, 2074, 4515, 4525, 1377, 1085, 2018, 1402, 1126, 5804, 5041, 5049, 5805, 5050, 5802, 1936, 2]
+// Dependencies: [2116, 2063, 2086, 4707, 4717, 1389, 1085, 2030, 1414, 1126, 5409, 5410, 5417, 5420, 5418, 5407, 1948, 2]
 // Exports: getGuildIdFromChannelId
 
-// Module 5803 (MarkupChannelMentionRule)
+// Module 5408 (MarkupChannelMentionRule)
 import intl3 from "intl" /* 1126 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import _modDef1936 from "module_1936" /* 1936 */;
-import StringUtils from "StringUtils" /* 2018 */;
-import ChannelUtils from "ChannelUtils" /* 5041 */;
-import useChannelName from "useChannelName" /* 5049 */;
-import LinkUtils from "LinkUtils" /* 5050 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 5802 */;
-import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5804 */;
-import markup_ChannelUtils from "markup/ChannelUtils" /* 5805 */;
-import GatedChannelStore from "GatedChannelStore" /* 2104 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import _modDef1948 from "module_1948" /* 1948 */;
+import StringUtils from "StringUtils" /* 2030 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 5407 */;
+import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5409 */;
+import ChannelUtils from "ChannelUtils" /* 5410 */;
+import useChannelName from "useChannelName" /* 5417 */;
+import LinkUtils from "LinkUtils" /* 5418 */;
+import markup_ChannelUtils from "markup/ChannelUtils" /* 5420 */;
+import GatedChannelStore from "GatedChannelStore" /* 2116 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -157,7 +157,7 @@ function parseChannel(channel, messageId, guildIdFromChannelId, url) {
           obj11 = obj4;
           obj20 = StringUtils;
         } else if (null != url) {
-          const obj9 = { type: "link", content: items4, target: url, title: "unicodeVersion" };
+          const obj9 = { type: "link", content: items4, target: url, title: "apply" };
           items4 = [{ type: "text", content: url }];
           obj11 = obj9;
           const obj10 = { type: "text", content: url };
@@ -313,7 +313,7 @@ obj2 = {
   }
 };
 obj3 = {
-  order: _modDef1936.defaultRules.url.order - 0.5,
+  order: _modDef1948.defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
     const CHANNEL_OR_MESSAGES_URL_RE = LinkUtils.CHANNEL_OR_MESSAGES_URL_RE;
@@ -342,7 +342,7 @@ obj3 = {
     let tmp4;
     [tmp, tmp2, tmp3, tmp4] = arg0;
     if (null == tmp3) {
-      const obj = { type: "link", content: items, target: tmp, title: "unicodeVersion" };
+      const obj = { type: "link", content: items, target: tmp, title: "apply" };
       items = [{ type: "text", content: tmp }];
       return obj;
     } else {
@@ -370,7 +370,7 @@ obj3 = {
   }
 };
 obj4 = {
-  order: _modDef1936.defaultRules.url.order - 0.5,
+  order: _modDef1948.defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
     const MEDIA_POST_URL_RE = LinkUtils.MEDIA_POST_URL_RE;
@@ -420,7 +420,7 @@ obj4 = {
         }
       }
     }
-    const obj = { type: "link", content: items, target: tmp, title: "unicodeVersion" };
+    const obj = { type: "link", content: items, target: tmp, title: "apply" };
     items = [{ type: "text", content: tmp }];
     return obj;
   }

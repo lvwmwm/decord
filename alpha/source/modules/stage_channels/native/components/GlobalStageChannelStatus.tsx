@@ -1,30 +1,30 @@
-// Module ID: 9627
-// Function ID: 9628
+// Module ID: 10819
+// Function ID: 10820
 // Name: GlobalStageChannelStatus
-// Dependencies: [5, 32, 19, 17, 4567, 2056, 1085, 21, 1126, 4896, 587, 558, 576, 5049, 504, 8995, 5597, 8310, 9617, 5586, 8117, 8119, 8107, 8103, 1188, 4892, 5602, 5601, 9619, 9118, 4797, 4593, 9096, 5819, 2]
+// Dependencies: [5, 32, 19, 17, 4759, 2068, 1085, 21, 1126, 5090, 587, 558, 576, 5417, 504, 10820, 5392, 7693, 10810, 5954, 7492, 5915, 7482, 7478, 1200, 5086, 5376, 5375, 10812, 10691, 4991, 4785, 10340, 8134, 2]
 
-// Module 9627 (GlobalStageChannelStatus)
+// Module 10819 (GlobalStageChannelStatus)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl8 from "intl" /* 1126 */;
-import useChannelNameDefault from "useChannelName" /* 5049 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 8107 */;
-import PushNotificationDefault from "PushNotification" /* 8995 */;
-import StatusBarDefault from "StatusBar" /* 9096 */;
-import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 9118 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 9619 */;
+import useChannelNameDefault from "useChannelName" /* 5417 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 7482 */;
+import StatusBarDefault from "StatusBar" /* 10340 */;
+import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 10691 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 10812 */;
+import PushNotificationDefault from "PushNotification" /* 10820 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 4567 */;
-import StageInstanceStore from "StageInstanceStore" /* 2056 */;
+import ActionSheetStore from "ActionSheetStore" /* 4759 */;
+import StageInstanceStore from "StageInstanceStore" /* 2068 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let _require, c4, c5, dependencyMap, importDefault;
+let c4, c5, dependencyMap, importDefault;
 
 let c10;
 let obj10;
@@ -40,7 +40,7 @@ let obj8;
 let obj9;
 let tmp5;
 let unpackModuleId;
-const useMountEffectDefault = tmp5(5597);
+const useMountEffectDefault = tmp5(5392);
 const View = react_native.View;
 const Fonts = Constants.Fonts;
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
@@ -60,8 +60,9 @@ obj11 = { flexGrow: 1, margin: nativeDefault.space.PX_8 };
 obj12 = { borderColor: nativeDefault.colors.WHITE };
 let closure_12 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannelRaiseHandAck(channel) {
   let first;
+  let fn;
   let formatResult;
   let invitedHeaderText;
   let obj3;
@@ -130,11 +131,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         }
       }
     }
-    useMountEffectDefault(I);
+    useMountEffectDefault(fn);
     [r10071, dependencyMap] = _slicedToArray(react.useState(false), 2);
     const tmp17 = _slicedToArray(react.useState(false), 2);
-    const useStageBlockedUsersCount = tmp(8310).useStageBlockedUsersCount;
-    tmp(8310);
+    const useStageBlockedUsersCount = tmp(7693).useStageBlockedUsersCount;
+    tmp(7693);
     if (channel != null) {
       class S {
         constructor() {
@@ -144,8 +145,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
     const stageBlockedUsersCount = useStageBlockedUsersCount(tmp19);
     let tmp22;
-    const useStageIgnoredUsersCount = tmp(8310).useStageIgnoredUsersCount;
-    tmp(8310);
+    const useStageIgnoredUsersCount = tmp(7693).useStageIgnoredUsersCount;
+    tmp(7693);
     if (channel != null) {
       class S {
         constructor() {
@@ -155,8 +156,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
     const stageIgnoredUsersCount = useStageIgnoredUsersCount(tmp22);
     let tmp25;
-    const useGetStageRTCPanelHeight = tmp(9617).useGetStageRTCPanelHeight;
-    tmp(9617);
+    const useGetStageRTCPanelHeight = tmp(10810).useGetStageRTCPanelHeight;
+    tmp(10810);
     if (channel != null) {
       class S {
         constructor() {
@@ -171,7 +172,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           return StageInstanceStore.getStageInstanceByChannel(channel.id);
         }
       }
-      _require = _asyncToGenerator(async (arg0, value) => {
+      let closure_0 = _asyncToGenerator(async (arg0, value) => {
         let tmp38Result;
         let v0;
         if (c5 === 2) {
@@ -265,226 +266,173 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
     }
     if (cResult[9] !== channel) {
-      class B {
+      class S {
         constructor() {
-          if (null != channel) {
-            const obj = StageChannelActionCreators;
-            const result = obj.audienceAckRequestToSpeak(tmp, true);
-          }
+          return StageInstanceStore.getStageInstanceByChannel(channel.id);
         }
       }
       cResult[9] = channel;
-      cResult[10] = B;
+      cResult[10] = tmp29;
     } else {
-      class B {
+      class S {
         constructor() {
-          if (null != channel) {
-            const obj = StageChannelActionCreators;
-            const result = obj.audienceAckRequestToSpeak(tmp, true);
-          }
+          return StageInstanceStore.getStageInstanceByChannel(channel.id);
         }
       }
     }
     if (null == stateFromStores) {
-      class B {
+      class S {
         constructor() {
-          if (null != channel) {
-            const obj = StageChannelActionCreators;
-            const result = obj.audienceAckRequestToSpeak(tmp, true);
-          }
+          return StageInstanceStore.getStageInstanceByChannel(channel.id);
         }
       }
     } else {
-      class B {
+      class S {
         constructor() {
-          if (null != channel) {
-            const obj = StageChannelActionCreators;
-            const result = obj.audienceAckRequestToSpeak(tmp, true);
-          }
+          return StageInstanceStore.getStageInstanceByChannel(channel.id);
         }
       }
       if (cResult[13] === tmp4.invitedContainer) {
-        let tmp31;
-        class B {
+        let tmp32;
+        class S {
           constructor() {
-            if (null != channel) {
-              const obj = StageChannelActionCreators;
-              const result = obj.audienceAckRequestToSpeak(tmp, true);
-            }
+            return StageInstanceStore.getStageInstanceByChannel(channel.id);
           }
         }
         const _Symbol = Symbol;
         ({ row, invitedHeaderText } = tmp4);
         if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-          class B {
+          class S {
             constructor() {
-              if (null != channel) {
-                const obj = StageChannelActionCreators;
-                const result = obj.audienceAckRequestToSpeak(tmp, true);
-              }
+              return StageInstanceStore.getStageInstanceByChannel(channel.id);
             }
           }
           const stringResult1 = obj3.string(tmp(1126).t.Ul1RJQ);
           cResult[16] = stringResult1;
-          tmp31 = stringResult1;
+          tmp32 = stringResult1;
         } else {
-          class B {
+          class S {
             constructor() {
-              if (null != channel) {
-                const obj = StageChannelActionCreators;
-                const result = obj.audienceAckRequestToSpeak(tmp, true);
-              }
+              return StageInstanceStore.getStageInstanceByChannel(channel.id);
             }
           }
         }
         if (cResult[17] !== tmp4.invitedHeaderText) {
-          class B {
+          class S {
             constructor() {
-              if (null != channel) {
-                const obj = StageChannelActionCreators;
-                const result = obj.audienceAckRequestToSpeak(tmp, true);
-              }
+              return StageInstanceStore.getStageInstanceByChannel(channel.id);
             }
           }
-          let obj2 = { style: invitedHeaderText, accessibilityRole: "header", children: tmp31 };
-          const tmp34 = closure_10(tmp(1188).LegacyText, obj2);
+          let obj2 = { style: invitedHeaderText, accessibilityRole: "header", children: tmp32 };
+          const tmp35 = closure_10(tmp(1200).LegacyText, obj2);
           cResult[17] = tmp4.invitedHeaderText;
-          cResult[18] = tmp34;
+          cResult[18] = tmp35;
         } else {
-          class B {
+          class S {
             constructor() {
-              if (null != channel) {
-                const obj = StageChannelActionCreators;
-                const result = obj.audienceAckRequestToSpeak(tmp, true);
-              }
+              return StageInstanceStore.getStageInstanceByChannel(channel.id);
             }
           }
         }
         if (cResult[19] === tmp4.row) {
-          let tmp41Result;
-          class B {
+          let tmp42Result;
+          class S {
             constructor() {
-              if (null != channel) {
-                const obj = StageChannelActionCreators;
-                const result = obj.audienceAckRequestToSpeak(tmp, true);
-              }
+              return StageInstanceStore.getStageInstanceByChannel(channel.id);
             }
           }
           if (cResult[22] === stageBlockedUsersCount) {
-            class B {
+            class S {
               constructor() {
-                if (null != channel) {
-                  const obj = StageChannelActionCreators;
-                  const result = obj.audienceAckRequestToSpeak(tmp, true);
-                }
+                return StageInstanceStore.getStageInstanceByChannel(channel.id);
               }
             }
           }
           if (stageBlockedUsersCount > 0) {
-            class B {
+            class S {
               constructor() {
-                if (null != channel) {
-                  const obj = StageChannelActionCreators;
-                  const result = obj.audienceAckRequestToSpeak(tmp, true);
-                }
+                return StageInstanceStore.getStageInstanceByChannel(channel.id);
               }
             }
             let obj4 = { style: tmp4.row, children: null };
-            const tmp42 = View;
+            const tmp43 = View;
             if (stageBlockedUsersCount > 0) {
-              class B {
+              class S {
                 constructor() {
-                  if (null != channel) {
-                    const obj = StageChannelActionCreators;
-                    const result = obj.audienceAckRequestToSpeak(tmp, true);
-                  }
+                  return StageInstanceStore.getStageInstanceByChannel(channel.id);
                 }
               }
               let obj5 = { variant: "text-xs/medium", color: "text-overlay-light", children: formatResult };
-              obj4.children = tmp41(tmp43, obj5);
-              tmp41Result = tmp41(tmp42, obj4);
+              obj4.children = tmp42(tmp44, obj5);
+              tmp42Result = tmp42(tmp43, obj4);
             }
             if (stageIgnoredUsersCount > 0) {
-              class B {
+              class S {
                 constructor() {
-                  if (null != channel) {
-                    const obj = StageChannelActionCreators;
-                    const result = obj.audienceAckRequestToSpeak(tmp, true);
-                  }
+                  return StageInstanceStore.getStageInstanceByChannel(channel.id);
                 }
               }
               const obj6 = { number: stageIgnoredUsersCount };
               formatResult = obj9.format(tmp(1126).t["0bU4FO"], obj6);
             } else {
-              class B {
+              class S {
                 constructor() {
-                  if (null != channel) {
-                    const obj = StageChannelActionCreators;
-                    const result = obj.audienceAckRequestToSpeak(tmp, true);
-                  }
+                  return StageInstanceStore.getStageInstanceByChannel(channel.id);
                 }
               }
               let obj8 = { number: stageBlockedUsersCount };
               formatResult = obj7.format(tmp(1126).t.sFzx0G, obj8);
             }
           } else {
-            class B {
+            class S {
               constructor() {
-                if (null != channel) {
-                  const obj = StageChannelActionCreators;
-                  const result = obj.audienceAckRequestToSpeak(tmp, true);
-                }
+                return StageInstanceStore.getStageInstanceByChannel(channel.id);
               }
             }
           }
           cResult[22] = stageBlockedUsersCount;
           cResult[23] = stageIgnoredUsersCount;
           cResult[24] = tmp4.row;
-          cResult[25] = tmp41Result;
+          cResult[25] = tmp42Result;
         }
-        const obj10 = { style: row, children: tmp33 };
-        const tmp38 = closure_10(View, obj10);
+        const obj10 = { style: row, children: tmp34 };
         cResult[19] = tmp4.row;
-        cResult[20] = tmp33;
-        cResult[21] = tmp38;
+        cResult[20] = tmp34;
+        cResult[21] = closure_10(View, obj10);
+        const tmp39 = closure_10(View, obj10);
       }
-      const items2 = [tmp4.invitedContainer, tmp29];
+      const items2 = [tmp4.invitedContainer, tmp30];
       cResult[13] = tmp4.invitedContainer;
-      cResult[14] = tmp29;
+      cResult[14] = tmp30;
       cResult[15] = items2;
     }
   }
   cResult[4] = stringResult;
   if (stateFromStores != null) {
-    class B {
+    class S {
       constructor() {
-        if (null != channel) {
-          const obj = StageChannelActionCreators;
-          const result = obj.audienceAckRequestToSpeak(tmp, true);
-        }
+        return StageInstanceStore.getStageInstanceByChannel(channel.id);
       }
     }
   }
-  class I {
-    constructor() {
-      let topic;
-      const presentLocalNotification = PushNotificationDefault.presentLocalNotification;
-      PushNotificationDefault;
-      const intl = intl8.intl;
-      const formatToPlainString = intl.formatToPlainString;
-      const obj = { channelName: importDefault, channelTopic: topic };
-      topic = undefined;
-      const sqnsSP = intl8.t.sqnsSP;
-      if (stateFromStores != null) {
-        topic = stateFromStores.topic;
-      }
-      const obj2 = { alertBody: formatToPlainString(sqnsSP, obj) };
-      const result = presentLocalNotification(obj2);
+  fn = function _() {
+    let topic;
+    const presentLocalNotification = PushNotificationDefault.presentLocalNotification;
+    PushNotificationDefault;
+    const intl = intl8.intl;
+    const formatToPlainString = intl.formatToPlainString;
+    const obj = { channelName: importDefault, channelTopic: topic };
+    topic = undefined;
+    const sqnsSP = intl8.t.sqnsSP;
+    if (stateFromStores != null) {
+      topic = stateFromStores.topic;
     }
-  }
+    const obj2 = { alertBody: formatToPlainString(sqnsSP, obj) };
+    const result = presentLocalNotification(obj2);
+  };
   cResult[5] = undefined;
-  cResult[6] = I;
-}) : ((channel) => {
+  cResult[6] = fn;
+}) : (function StageChannelRaiseHandAck(channel) {
   let BaseTextButton;
   let Button;
   let LegacyText;
@@ -619,20 +567,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   [tmp10, c3] = _slicedToArray(react.useState(false), 2);
   const tmp9 = _slicedToArray(react.useState(false), 2);
   let id1;
-  const useStageBlockedUsersCount = channel(8310).useStageBlockedUsersCount;
-  const tmp11 = channel(8310);
+  const useStageBlockedUsersCount = channel(7693).useStageBlockedUsersCount;
+  const tmp11 = channel(7693);
   if (channel != null) {
     id1 = channel.id;
   }
   const stageBlockedUsersCount = useStageBlockedUsersCount(id1);
   let id2;
-  const useStageIgnoredUsersCount = tmp6(8310).useStageIgnoredUsersCount;
-  channel(8310);
+  const useStageIgnoredUsersCount = tmp6(7693).useStageIgnoredUsersCount;
+  channel(7693);
   if (channel != null) {
     id2 = channel.id;
   }
   const stageIgnoredUsersCount = useStageIgnoredUsersCount(id2);
-  channel(9617);
+  channel(10810);
   if (channel != null) {
     let id = channel.id;
   }
@@ -646,7 +594,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     let tmp22 = closure_10;
     let obj4 = { style: tmp.row, children: closure_10(LegacyText, obj5) };
     obj5 = { style: tmp.invitedHeaderText, accessibilityRole: "header", children: intl2.string(tmp6(1126).t.Ul1RJQ) };
-    LegacyText = tmp6(1188).LegacyText;
+    LegacyText = tmp6(1200).LegacyText;
     intl2 = tmp6(1126).intl;
     items3 = [closure_10(View, obj4), , ];
     if (stageBlockedUsersCount > 0) {
@@ -690,7 +638,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       text: intl6.string(channel(1126).t["1YDv7a"]),
       grow: true
     };
-    BaseTextButton = tmp6(5602).BaseTextButton;
+    BaseTextButton = tmp6(5376).BaseTextButton;
     intl6 = tmp6(1126).intl;
     items4 = [tmp22(tmp21, obj12), ];
     const obj14 = { style: tmp.buttonWrapper, children: tmp22(Button, obj15) };
@@ -705,7 +653,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       disabled: tmp10,
       grow: true
     };
-    Button = tmp6(5601).Button;
+    Button = tmp6(5375).Button;
     intl7 = tmp6(1126).intl;
     items4[1] = tmp22(View, obj14);
     items3[2] = closure_11(View, obj11);
@@ -773,7 +721,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStageChann
     let str;
     if (!tmp8) {
       str = "dark-content";
-      id(4593);
+      id(4785);
     }
     if (null != channel) {
       if (null != guild) {
@@ -865,7 +813,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStageChann
                               }
                               const obj5 = { numberOfLines: 1, children: items3 };
                               items3 = [tmp26, tmp30];
-                              const tmp35 = closure_11(id(1188).LegacyText, obj5);
+                              const tmp35 = closure_11(id(1200).LegacyText, obj5);
                               cResult[26] = tmp30;
                               cResult[27] = tmp26;
                               cResult[28] = tmp35;
@@ -878,7 +826,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStageChann
                       if (tmp32Result) {
                         const items4 = [tmp4.channel, ];
                         let invitedHeaderText2 = tmp9;
-                        const LegacyText2 = tmp(1188).LegacyText;
+                        const LegacyText2 = tmp(1200).LegacyText;
                         const tmp32 = closure_10;
                         if (tmp9) {
                           invitedHeaderText2 = tmp4.invitedHeaderText;
@@ -902,7 +850,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStageChann
               if (tmp28Result) {
                 const items5 = [tmp4.topic, ];
                 let invitedHeaderText = tmp9;
-                const LegacyText = tmp(1188).LegacyText;
+                const LegacyText = tmp(1200).LegacyText;
                 const tmp28 = closure_11;
                 if (tmp9) {
                   invitedHeaderText = tmp4.invitedHeaderText;
@@ -924,15 +872,15 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStageChann
               cResult[19] = tmp28Result;
               tmp26 = tmp28Result;
             }
-            const obj8 = { style: activeSpeakerIcon, size: id(1188).Icon.Sizes.REFRESH_SMALL_16, source: tmp20 };
-            const Icon = tmp(1188).Icon;
+            const obj8 = { style: activeSpeakerIcon, size: id(1200).Icon.Sizes.REFRESH_SMALL_16, source: tmp20 };
+            const Icon = tmp(1200).Icon;
             const tmp24 = closure_10(Icon, obj8);
             cResult[11] = activeSpeakerIcon;
             cResult[12] = tmp20;
             cResult[13] = tmp24;
             tmp22 = tmp24;
           }
-          const tmpResult4 = id(5819);
+          const tmpResult4 = id(8134);
           const channelIconWithGuild = tmpResult4.getChannelIconWithGuild(channel, guild);
           cResult[8] = channel;
           cResult[9] = guild;
@@ -963,7 +911,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStageChann
     stringResult = intl.string(id(1126).t["/YzI63"]);
   }
   const tmp7 = useIsInvitedToSpeakDefault();
-  let invitedHeaderText = tmp3(9118)(id);
+  let invitedHeaderText = tmp3(10691)(id);
   const items = [StageInstanceStore];
   const items1 = [id];
   const obj = id(504);
@@ -977,7 +925,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStageChann
     let str;
     if (!tmp7) {
       str = "dark-content";
-      id(4593);
+      id(4785);
     }
     if (null != channel) {
       if (null != guild) {
@@ -999,18 +947,18 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStageChann
           const obj3 = { style: tmp.noticeContainer, children: items2 };
           const obj4 = { animated: true, barStyle: str };
           items2 = [closure_10(StatusBarDefault, obj4), , ];
-          const obj5 = { style: activeSpeakerIcon, size: id(1188).Icon.Sizes.REFRESH_SMALL_16, source: tmp8Result2.getChannelIconWithGuild(channel, guild) };
-          const Icon = tmp8(1188).Icon;
-          tmp8Result2 = id(5819);
+          const obj5 = { style: activeSpeakerIcon, size: id(1200).Icon.Sizes.REFRESH_SMALL_16, source: tmp8Result2.getChannelIconWithGuild(channel, guild) };
+          const Icon = tmp8(1200).Icon;
+          tmp8Result2 = id(8134);
           items2[1] = closure_10(Icon, obj5);
           let tmp13Result = "" !== str2;
-          const LegacyText = tmp8(1188).LegacyText;
+          const LegacyText = tmp8(1200).LegacyText;
           const tmp14 = View;
           const tmp15 = closure_10;
           if (tmp13Result) {
             const items3 = [tmp.topic, ];
             let invitedHeaderText2 = invitedHeaderText;
-            const LegacyText2 = tmp8(1188).LegacyText;
+            const LegacyText2 = tmp8(1200).LegacyText;
             if (invitedHeaderText) {
               invitedHeaderText2 = tmp.invitedHeaderText;
             }
@@ -1027,7 +975,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStageChann
           let tmp15Result = !tmp12;
           if (tmp15Result) {
             const items6 = [tmp.channel, ];
-            const LegacyText3 = tmp8(1188).LegacyText;
+            const LegacyText3 = tmp8(1200).LegacyText;
             if (invitedHeaderText) {
               invitedHeaderText = tmp.invitedHeaderText;
             }

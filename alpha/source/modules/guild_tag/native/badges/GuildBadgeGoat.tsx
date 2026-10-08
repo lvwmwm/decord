@@ -1,12 +1,12 @@
-// Module ID: 13773
-// Function ID: 13774
+// Module ID: 13995
+// Function ID: 13996
 // Name: GuildBadgeGoat
-// Dependencies: [109, 19, 21, 558, 576, 13748, 8169, 2]
+// Dependencies: [109, 19, 21, 558, 576, 13970, 7550, 2]
 
-// Module 13773 (GuildBadgeGoat)
+// Module 13995 (GuildBadgeGoat)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 8169 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 13748 */;
+import inlineStyles from "inlineStyles" /* 7550 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 13970 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -20,7 +20,7 @@ let closure_2 = ["width", "height", "primaryTintColor"];
 const primaryBaseColors = ["#87553B", "#B88166"];
 const primaryTintLuminances = [0.2, 0.5];
 let items = [{ base: 7, tint: 1 }, { base: 3, tint: 1 }];
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgeGoat(arg0) {
   let height;
   let primaryTintColor;
   let tmp11;
@@ -286,7 +286,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const obj12 = { width: num6, height: num7, viewBox: "0 0 16 16", fill: "none", children: items };
-  const Svg = tmp(8169).Svg;
+  const Svg = tmp(7550).Svg;
   const merged = Object.assign(tmp5);
   items = [tmp16, tmp17, tmp18, tmp26, tmp27, tmp28, tmp23, tmp24, tmp25, tmp36, tmp37, tmp38, tmp39, tmp40, tmp41, tmp42, tmp43, tmp44, tmp45, tmp46, tmp47, tmp48, tmp49, tmp50, tmp51, tmp52, tmp53, tmp54, tmp55, tmp56, tmp57, tmp58, tmp59, tmp60];
   const tmp89 = hasOwnProperty(Svg, obj12);
@@ -304,7 +304,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[54] = num6;
   cResult[55] = tmp89;
   tmp87 = tmp89;
-}) : ((width) => {
+}) : (function GuildBadgeGoat(width) {
   let num = width.width;
   if (num === undefined) {
     num = 24;

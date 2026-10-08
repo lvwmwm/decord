@@ -1,17 +1,17 @@
-// Module ID: 7856
-// Function ID: 7857
+// Module ID: 8274
+// Function ID: 8275
 // Name: ShopStandalonePdpMobileExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1452, 558, 576, 2]
 
-// Module 7856 (ShopStandalonePdpMobileExperiment)
+// Module 8274 (ShopStandalonePdpMobileExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-08-shop-standalone-pdp-mobile", kind: "user", defaultConfig: { standalonePdpEnabled: false }, variations: { 0: { standalonePdpEnabled: false }, 1: { standalonePdpEnabled: true } } };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsShopStandalonePdpMobileEnabled(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -24,7 +24,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return apexExperiment.useConfig(tmp2).standalonePdpEnabled;
-}) : ((location) => {
+}) : (function useIsShopStandalonePdpMobileEnabled(location) {
   const obj = { location };
   return apexExperiment.useConfig(obj).standalonePdpEnabled;
 });

@@ -1,26 +1,24 @@
-// Module ID: 11720
-// Function ID: 11721
+// Module ID: 11785
+// Function ID: 11786
 // Name: Timestamp
-// Dependencies: [19, 21, 4896, 587, 558, 576, 11721, 4574, 1188, 2]
+// Dependencies: [19, 21, 5090, 587, 558, 576, 11786, 4766, 1200, 2]
 
-// Module 11720 (Timestamp)
+// Module 11785 (Timestamp)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import useFormattedTimestampDefault from "useFormattedTimestamp" /* 11721 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import useFormattedTimestampDefault from "useFormattedTimestamp" /* 11786 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let node;
 
 let obj2;
 const jsx = Fragment.jsx;
 let obj = { timestamp: obj2 };
 obj2 = { color: nativeDefault.colors.TEXT_DEFAULT, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 let closure_4 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Timestamp(node) {
   let tmp6;
   let obj = node(576);
   const cResult = obj.c(6);
@@ -54,19 +52,19 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
       return tmp7;
     }
   }
-  const tmp8 = jsx(tmp(1188).LegacyText, { style: timestamp, onPress: tmp6, children: tmp5 });
+  const tmp8 = jsx(tmp(1200).LegacyText, { style: timestamp, onPress: tmp6, children: tmp5 });
   cResult[2] = tmp5;
   cResult[3] = timestamp;
   cResult[4] = tmp6;
   cResult[5] = tmp8;
   tmp7 = tmp8;
-}) : ((node) => {
+}) : (function Timestamp(node) {
   node = node.node;
   const style = node.style;
   let timestamp = closure_4().timestamp;
   const tmp = closure_4();
   const tmp2 = useFormattedTimestampDefault(node);
-  const LegacyText = node(1188).LegacyText;
+  const LegacyText = node(1200).LegacyText;
   const tmp3 = jsx;
   if (timestamp == null) {
     timestamp = style;

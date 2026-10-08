@@ -1,21 +1,19 @@
-// Module ID: 11264
-// Function ID: 11265
+// Module ID: 9604
+// Function ID: 9605
 // Name: FeedbackForm
-// Dependencies: [32, 19, 11262, 21, 4896, 587, 558, 576, 7957, 12, 11265, 5597, 8924, 4892, 6002, 11266, 1126, 2]
+// Dependencies: [32, 19, 9602, 21, 5090, 587, 558, 576, 5928, 12, 9605, 5392, 8555, 5086, 6186, 9606, 1126, 2]
 
-// Module 11264 (FeedbackForm)
+// Module 9604 (FeedbackForm)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 11262 */;
-import FeedbackUtils from "FeedbackUtils" /* 11265 */;
+import Constants from "Constants" /* 9602 */;
+import FeedbackUtils from "FeedbackUtils" /* 9605 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let otherKey;
 
 let metroImportDefault;
 let metroRequire;
@@ -31,87 +29,213 @@ obj2 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
 createStyles = createStyles.createStyles;
 obj3 = { paddingHorizontal: 0, paddingVertical: 8, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_8 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((otherKey) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FeedbackForm(otherKey) {
+  let Checkbox;
+  let Label;
   let arr;
+  let closure_5;
   let closure_6;
+  let intl;
+  let items;
+  let items1;
+  let obj6;
+  let obj7;
   let onFeedbackChanged;
   let ratingsBodyLabel;
   let reasons;
   let reasonsHeaderLabel;
   let showDoNotShowAgainCheckbox;
-  let tmp6;
-  let tmp = onFeedbackChanged;
+  let tmp25;
+  let tmp7;
+  let tmp = reasons;
+  let tmp2 = onFeedbackChanged;
   let obj = reasons(onFeedbackChanged[7]);
   const cResult = obj.c(48);
   ({ showDoNotShowAgainCheckbox, ratingsBodyLabel, reasonsHeaderLabel, reasons } = otherKey);
   otherKey = otherKey.otherKey;
   onFeedbackChanged = otherKey.onFeedbackChanged;
   const trackOpen = otherKey.trackOpen;
-  const tmp3 = closure_8();
-  react = tmp3;
-  const tmp5 = otherKey(onFeedbackChanged[8])(reasons);
-  let closure_5 = tmp5;
+  const tmp4 = closure_8();
+  react = tmp4;
+  const tmp6 = otherKey(onFeedbackChanged[8])(reasons);
+  FeedbackRating = tmp6;
   if (cResult[0] !== reasons) {
-    const tmp4Result = otherKey(tmp[9]);
-    const shuffleResult = tmp4Result.shuffle(reasons);
+    const tmp5Result = otherKey(tmp2[9]);
+    const shuffleResult = tmp5Result.shuffle(reasons);
     cResult[0] = reasons;
     cResult[1] = shuffleResult;
-    tmp6 = shuffleResult;
+    tmp7 = shuffleResult;
   } else {
-    tmp6 = cResult[1];
+    tmp7 = cResult[1];
   }
   let obj3 = react;
-  [arr, closure_6] = trackOpen(react.useState(tmp6), 2);
-  trackOpen(react.useState(tmp6), 2);
-  const tmp8 = trackOpen;
+  [arr, closure_6] = trackOpen(react.useState(tmp7), 2);
+  trackOpen(react.useState(tmp7), 2);
+  const tmp9 = trackOpen;
   if (cResult[2] === otherKey) {
-    if (cResult[3] === tmp5) {
-      let tmp10;
+    if (cResult[3] === tmp6) {
       let tmp11;
-      let tmp14;
-      let tmp17;
+      let tmp12;
+      let tmp15;
+      let tmp18;
       if (cResult[4] === reasons) {
-        tmp10 = cResult[5];
-        tmp11 = cResult[6];
+        tmp11 = cResult[5];
+        tmp12 = cResult[6];
       }
-      const effect = obj3.useEffect(tmp10, tmp11);
+      const effect = obj3.useEffect(tmp11, tmp12);
       const _Symbol = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
         let obj2 = {};
         cResult[7] = obj2;
-        tmp14 = obj2;
+        tmp15 = obj2;
       } else {
-        tmp14 = cResult[7];
+        tmp15 = cResult[7];
       }
-      const tmp8Result = tmp8(obj3.useState(tmp14), 2);
-      const first = tmp8Result[0];
-      closure_8 = tmp8Result[1];
+      const tmp9Result = tmp9(obj3.useState(tmp15), 2);
+      const first = tmp9Result[0];
+      closure_8 = tmp9Result[1];
       if (cResult[8] !== trackOpen) {
-        const fn = function _() {
+        const fn2 = function _() {
           trackOpen();
         };
         cResult[8] = trackOpen;
-        cResult[9] = fn;
-        tmp17 = fn;
+        cResult[9] = fn2;
+        tmp18 = fn2;
       } else {
-        tmp17 = cResult[9];
+        tmp18 = cResult[9];
       }
-      otherKey(tmp[11])(tmp17);
+      otherKey(tmp2[11])(tmp18);
       if (cResult[10] === first) {
+        let tmp20;
+        if (cResult[11] === onFeedbackChanged) {
+          tmp20 = cResult[12];
+        }
         if (cResult[13] === first) {
+          let tmp21;
+          if (cResult[14] === onFeedbackChanged) {
+            tmp21 = cResult[15];
+          }
           if (cResult[16] === first) {
-            let tmp21;
+            let tmp22;
+            let tmp24;
             let tmp23;
             if (cResult[17] === onFeedbackChanged) {
-              tmp21 = cResult[18];
+              tmp22 = cResult[18];
             }
-            let closure_9 = tmp21;
-            class I {
-              constructor(reason) {
-                const obj = { reason };
-                const merged = Object.assign(first);
-                closure_8(obj);
-                onFeedbackChanged(obj);
+            let closure_9 = tmp22;
+            if (cResult[19] === tmp22) {
+              if (cResult[20] === arr) {
+                if (cResult[21] === tmp4) {
+                  tmp23 = cResult[22];
+                }
+                if (cResult[27] === (null != first.rating && first.rating !== FeedbackRating.GOOD)) {
+                  if (cResult[28] === tmp23) {
+                    if (cResult[29] === reasonsHeaderLabel) {
+                      let tmp30;
+                      if (cResult[30] === tmp4) {
+                        tmp30 = cResult[31];
+                      }
+                      if (cResult[32] === ratingsBodyLabel) {
+                        let tmp34;
+                        if (cResult[33] === tmp4) {
+                          tmp34 = cResult[34];
+                        }
+                        let rating = first.rating;
+                        if (rating == null) {
+                          rating = null;
+                        }
+                        if (cResult[35] === tmp21) {
+                          let tmp38;
+                          if (cResult[36] === rating) {
+                            tmp38 = cResult[37];
+                          }
+                          if (cResult[38] === first.doNotShowAgain) {
+                            if (cResult[39] === tmp20) {
+                              if (cResult[40] === showDoNotShowAgainCheckbox) {
+                                let tmp41;
+                                if (cResult[41] === tmp4) {
+                                  tmp41 = cResult[42];
+                                }
+                                if (cResult[43] === tmp30) {
+                                  if (cResult[44] === tmp34) {
+                                    if (cResult[45] === tmp38) {
+                                      let tmp44;
+                                      if (cResult[46] === tmp41) {
+                                        tmp44 = cResult[47];
+                                      }
+                                      return tmp44;
+                                    }
+                                  }
+                                }
+                                const obj4 = { children: items };
+                                items = [tmp34, tmp38, tmp30, tmp41];
+                                const tmp46 = first(obj3.Fragment, obj4);
+                                cResult[43] = tmp30;
+                                cResult[44] = tmp34;
+                                cResult[45] = tmp38;
+                                cResult[46] = tmp41;
+                                cResult[47] = tmp46;
+                                tmp44 = tmp46;
+                              }
+                            }
+                          }
+                          let tmp43Result = null;
+                          if (showDoNotShowAgainCheckbox) {
+                            const obj5 = { style: tmp4.doNotShowAgainContainer, leading: closure_6(Checkbox, obj6), label: closure_6(Label, obj7), onPress: tmp20 };
+                            let FormRow = tmp(tmp2[12]).FormRow;
+                            let flag = first.doNotShowAgain;
+                            Checkbox = tmp(tmp2[12]).FormRow.Checkbox;
+                            if (flag == null) {
+                              flag = false;
+                            }
+                            obj6 = { selected: flag };
+                            obj7 = { text: intl.string(tmp(tmp2[16]).t["5E9SB9"]) };
+                            Label = tmp(tmp2[12]).FormRow.Label;
+                            intl = tmp(tmp2[16]).intl;
+                            tmp43Result = tmp43(FormRow, obj5);
+                          }
+                          cResult[38] = first.doNotShowAgain;
+                          cResult[39] = tmp20;
+                          cResult[40] = showDoNotShowAgainCheckbox;
+                          cResult[41] = tmp4;
+                          cResult[42] = tmp43Result;
+                          tmp41 = tmp43Result;
+                        }
+                        const obj8 = { selectedRating: rating, onChangeRating: tmp21 };
+                        const tmp40 = closure_6(otherKey(tmp2[15]), obj8);
+                        cResult[35] = tmp21;
+                        cResult[36] = rating;
+                        cResult[37] = tmp40;
+                        tmp38 = tmp40;
+                      }
+                      let tmp35 = null;
+                      if (null != ratingsBodyLabel) {
+                        const obj9 = { style: tmp4.ratingsLabel, variant: "heading-md/semibold", color: "text-default", children: ratingsBodyLabel };
+                        tmp35 = closure_6(tmp(tmp2[13]).Text, obj9);
+                      }
+                      cResult[32] = ratingsBodyLabel;
+                      cResult[33] = tmp4;
+                      cResult[34] = tmp35;
+                      tmp34 = tmp35;
+                    }
+                  }
+                }
+                let tmp31 = null;
+                if (null != first.rating && first.rating !== FeedbackRating.GOOD) {
+                  let Fragment = obj3.Fragment;
+                  const obj10 = { children: items1 };
+                  const obj11 = { style: tmp4.reasonsHeader, variant: "eyebrow", color: "text-default", children: reasonsHeaderLabel };
+                  items1 = [closure_6(tmp(tmp2[13]).Text, obj11), ];
+                  const obj12 = { border: "subtle", style: tmp4.reasonsList, children: tmp23 };
+                  items1[1] = closure_6(tmp(tmp2[14]).Card, obj12);
+                  tmp31 = first(Fragment, obj10);
+                }
+                cResult[27] = null != first.rating && first.rating !== FeedbackRating.GOOD;
+                cResult[28] = tmp23;
+                cResult[29] = reasonsHeaderLabel;
+                cResult[30] = tmp4;
+                cResult[31] = tmp31;
+                tmp30 = tmp31;
               }
             }
             const _Symbol2 = Symbol;
@@ -121,15 +245,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((otherKey) => {
                   return Boolean(label.label);
                 }
               }
-              class I {
-                constructor(reason) {
-                  const obj = { reason };
-                  const merged = Object.assign(first);
-                  closure_8(obj);
-                  onFeedbackChanged(obj);
-                }
-              }
-              tmp23 = V;
+              cResult[23] = V;
+              tmp24 = V;
             } else {
               class V {
                 constructor(label) {
@@ -137,27 +254,21 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((otherKey) => {
                 }
               }
             }
-            if (cResult[24] === tmp21) {
+            if (cResult[24] === tmp22) {
               class V {
                 constructor(label) {
                   return Boolean(label.label);
                 }
               }
-              const found = arr.filter(tmp23);
-              class I {
-                constructor(reason) {
-                  const obj = { reason };
-                  const merged = Object.assign(first);
-                  closure_8(obj);
-                  onFeedbackChanged(obj);
-                }
-              }
-              cResult[19] = tmp21;
+              const found = arr.filter(tmp24);
+              const mapped = found.map(tmp25);
+              cResult[19] = tmp22;
               cResult[20] = arr;
-              cResult[21] = tmp3;
-              cResult[22] = tmp26;
+              cResult[21] = tmp4;
+              cResult[22] = mapped;
+              tmp23 = mapped;
             }
-            const fn3 = function q(label, arg1) {
+            const fn4 = function q(label, arg1) {
               let items;
               let obj3;
               let closure_0 = label;
@@ -181,40 +292,38 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((otherKey) => {
               items[1] = closure_6(FormRow, obj2);
               return tmp(Fragment, obj, arg1);
             };
-            cResult[24] = tmp21;
-            cResult[25] = tmp3;
-            cResult[26] = fn3;
+            cResult[24] = tmp22;
+            cResult[25] = tmp4;
+            cResult[26] = fn4;
+            tmp25 = fn4;
           }
-          class I {
-            constructor(reason) {
-              const obj = { reason };
-              const merged = Object.assign(first);
-              closure_8(obj);
-              onFeedbackChanged(obj);
-            }
-          }
-          cResult[16] = first;
-          cResult[17] = onFeedbackChanged;
-          cResult[18] = I;
-          tmp21 = I;
-        }
-        class P {
-          constructor(rating) {
-            reason = null;
-            if (rating !== FeedbackRating.GOOD) {
-              reason = first.reason;
-            }
-            const obj = { rating, reason };
+          function handlePressReason(reason) {
+            const obj = { reason };
             const merged = Object.assign(first);
             closure_8(obj);
             onFeedbackChanged(obj);
           }
+          cResult[16] = first;
+          cResult[17] = onFeedbackChanged;
+          cResult[18] = handlePressReason;
+          tmp22 = handlePressReason;
+        }
+        function handleChangeRating(rating) {
+          let reason = null;
+          if (rating !== FeedbackRating.GOOD) {
+            reason = first.reason;
+          }
+          const obj = { rating, reason };
+          const merged = Object.assign(first);
+          closure_8(obj);
+          onFeedbackChanged(obj);
         }
         cResult[13] = first;
         cResult[14] = onFeedbackChanged;
-        cResult[15] = P;
+        cResult[15] = handleChangeRating;
+        tmp21 = handleChangeRating;
       }
-      const fn2 = function p() {
+      const fn3 = function p() {
         let flag = first.doNotShowAgain;
         if (flag == null) {
           flag = false;
@@ -226,28 +335,27 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((otherKey) => {
       };
       cResult[10] = first;
       cResult[11] = onFeedbackChanged;
-      cResult[12] = fn2;
+      cResult[12] = fn3;
+      tmp20 = fn3;
     }
   }
-  class A {
-    constructor() {
-      const obj = _modDef12;
-      const tmp2 = reasons;
-      if (!obj.isEqual(closure_5, reasons)) {
-        const obj2 = FeedbackUtils;
-        closure_6(obj2.shuffleProblems(tmp2, otherKey));
-      }
+  const fn = function y() {
+    const obj = _modDef12;
+    const tmp2 = reasons;
+    if (!obj.isEqual(closure_5, reasons)) {
+      const obj2 = FeedbackUtils;
+      closure_6(obj2.shuffleProblems(tmp2, otherKey));
     }
-  }
-  let items = [reasons, tmp5, otherKey];
+  };
+  const items2 = [reasons, tmp6, otherKey];
   cResult[2] = otherKey;
-  cResult[3] = tmp5;
+  cResult[3] = tmp6;
   cResult[4] = reasons;
-  cResult[5] = A;
-  cResult[6] = items;
-  tmp11 = items;
-  tmp10 = A;
-}) : ((otherKey) => {
+  cResult[5] = fn;
+  cResult[6] = items2;
+  tmp12 = items2;
+  tmp11 = fn;
+}) : (function FeedbackForm(otherKey) {
   let Checkbox;
   let Label;
   let _undefined;
@@ -334,8 +442,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((otherKey) => {
   }
   const obj6 = {
     selectedRating: rating,
-    onChangeRating(rating) {
-      reason = null;
+    onChangeRating: function handleChangeRating(rating) {
+      let reason = null;
       if (rating !== FeedbackRating.GOOD) {
         reason = first.reason;
       }

@@ -1,28 +1,26 @@
-// Module ID: 12734
-// Function ID: 12735
+// Module ID: 13402
+// Function ID: 13403
 // Name: InAppReportsLeaveGuildElement
-// Dependencies: [32, 19, 1085, 21, 558, 576, 9282, 5076, 5715, 1126, 5790, 9589, 12728, 2]
+// Dependencies: [32, 19, 1085, 21, 558, 576, 8613, 5105, 5298, 1126, 5394, 10782, 13397, 2]
 
-// Module 12734 (InAppReportsLeaveGuildElement)
+// Module 13402 (InAppReportsLeaveGuildElement)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5076 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5715 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5105 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5298 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let guild, onConfirm;
-
 let tmp;
-const AlertDefault = tmp(5790);
+const AlertDefault = tmp(5394);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const AnalyticEvents = Constants.AnalyticEvents;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeaveGuildElement(guild) {
   let closure_4;
   let reportId;
   let tmp5;
@@ -59,18 +57,18 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       if (cResult[5] === reportId) {
         tmp10 = cResult[6];
       }
-      onConfirm = tmp10;
-      let name1;
+      const onConfirm = tmp10;
+      let name;
       const tmp11 = cResult[7];
       if (guild != null) {
-        name1 = guild.name;
+        name = guild.name;
       }
-      if (tmp11 === name1) {
+      if (tmp11 === name) {
         let tmp13;
         let tmp17;
         let tmp16;
         let tmp22;
-        let tmp26;
+        let tmp27;
         if (cResult[8] === tmp10) {
           tmp13 = cResult[9];
         }
@@ -81,30 +79,6 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           let intl2 = tmp(tmp2[9]).intl;
           const stringResult1 = intl2.string(tmp(reportId[9]).t.rJGMXU);
           cResult[10] = stringResult;
-          class A {
-            constructor() {
-              let TB1og8;
-              let formatToPlainString;
-              let intl;
-              let intl3;
-              let intl4;
-              let name;
-              const obj = { title: intl.string(intl5.t.J2TBi3), body: formatToPlainString(TB1og8, { name }), confirmText: intl3.string(intl5.t.p89ACt), cancelText: intl4.string(intl5.t.gm1Vej), onConfirm, confirmColor: AlertDefault.Colors.RED };
-              const show = actions_AlertActionCreatorsDefault.show;
-              actions_AlertActionCreatorsDefault;
-              intl = intl5.intl;
-              const intl2 = intl5.intl;
-              formatToPlainString = intl2.formatToPlainString;
-              name = undefined;
-              TB1og8 = intl5.t.TB1og8;
-              if (guild != null) {
-                name = guild.name;
-              }
-              intl3 = tmp4(1126).intl;
-              intl4 = tmp4(1126).intl;
-              show(obj);
-            }
-          }
           cResult[11] = stringResult1;
           tmp17 = stringResult1;
           tmp16 = stringResult;
@@ -112,33 +86,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           tmp16 = cResult[10];
           tmp17 = cResult[11];
         }
+        let name1;
         const tmp20 = cResult[12];
-        class A {
-          constructor() {
-            let TB1og8;
-            let formatToPlainString;
-            let intl;
-            let intl3;
-            let intl4;
-            let name;
-            const obj = { title: intl.string(intl5.t.J2TBi3), body: formatToPlainString(TB1og8, { name }), confirmText: intl3.string(intl5.t.p89ACt), cancelText: intl4.string(intl5.t.gm1Vej), onConfirm, confirmColor: AlertDefault.Colors.RED };
-            const show = actions_AlertActionCreatorsDefault.show;
-            actions_AlertActionCreatorsDefault;
-            intl = intl5.intl;
-            const intl2 = intl5.intl;
-            formatToPlainString = intl2.formatToPlainString;
-            name = undefined;
-            TB1og8 = intl5.t.TB1og8;
-            if (guild != null) {
-              name = guild.name;
-            }
-            intl3 = tmp4(1126).intl;
-            intl4 = tmp4(1126).intl;
-            show(obj);
-          }
+        if (guild != null) {
+          name1 = guild.name;
         }
-        if (tmp20 !== undefined) {
-          let name;
+        if (tmp20 !== name1) {
           let intl3 = tmp(tmp2[9]).intl;
           let formatToPlainString = intl3.formatToPlainString;
           let name2;
@@ -148,34 +101,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           }
           const obj3 = { guildName: name2 };
           const formatToPlainStringResult = formatToPlainString(prop, obj3);
-          class A {
-            constructor() {
-              let TB1og8;
-              let formatToPlainString;
-              let intl;
-              let intl3;
-              let intl4;
-              let name;
-              const obj = { title: intl.string(intl5.t.J2TBi3), body: formatToPlainString(TB1og8, { name }), confirmText: intl3.string(intl5.t.p89ACt), cancelText: intl4.string(intl5.t.gm1Vej), onConfirm, confirmColor: AlertDefault.Colors.RED };
-              const show = actions_AlertActionCreatorsDefault.show;
-              actions_AlertActionCreatorsDefault;
-              intl = intl5.intl;
-              const intl2 = intl5.intl;
-              formatToPlainString = intl2.formatToPlainString;
-              name = undefined;
-              TB1og8 = intl5.t.TB1og8;
-              if (guild != null) {
-                name = guild.name;
-              }
-              intl3 = tmp4(1126).intl;
-              intl4 = tmp4(1126).intl;
-              show(obj);
-            }
-          }
+          let name3;
           if (guild != null) {
-            name = guild.name;
+            name3 = guild.name;
           }
-          cResult[12] = name;
+          cResult[12] = name3;
           cResult[13] = formatToPlainStringResult;
           tmp22 = formatToPlainStringResult;
         } else {
@@ -183,60 +113,58 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         }
         const _Symbol2 = Symbol;
         if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp28 = jsx(tmp(reportId[11]).DoorExitIcon, { color: "text-feedback-critical" });
-          cResult[14] = tmp28;
-          tmp26 = tmp28;
+          const tmp29 = jsx(tmp(reportId[11]).DoorExitIcon, { color: "text-feedback-critical" });
+          cResult[14] = tmp29;
+          tmp27 = tmp29;
         } else {
-          tmp26 = cResult[14];
+          tmp27 = cResult[14];
         }
         if (cResult[15] === tmp13) {
           if (cResult[16] === tmp5) {
-            let tmp29;
+            let tmp30;
             if (cResult[17] === tmp22) {
-              tmp29 = cResult[18];
+              tmp30 = cResult[18];
             }
-            return tmp29;
+            return tmp30;
           }
         }
-        const tmp32 = jsx(addCallback(reportId[12]), { title: tmp16, disabledTitle: tmp17, description: tmp22, disabled: tmp5, variant: "danger", onPress: tmp13, icon: tmp26 });
+        const tmp33 = jsx(addCallback(reportId[12]), { title: tmp16, disabledTitle: tmp17, description: tmp22, disabled: tmp5, variant: "danger", onPress: tmp13, icon: tmp27 });
         cResult[15] = tmp13;
         cResult[16] = tmp5;
         cResult[17] = tmp22;
-        cResult[18] = tmp32;
-        tmp29 = tmp32;
+        cResult[18] = tmp33;
+        tmp30 = tmp33;
       }
-      let name3;
+      let name4;
       if (guild != null) {
-        name3 = guild.name;
+        name4 = guild.name;
       }
-      class A {
-        constructor() {
-          let TB1og8;
-          let formatToPlainString;
-          let intl;
-          let intl3;
-          let intl4;
-          let name;
-          const obj = { title: intl.string(intl5.t.J2TBi3), body: formatToPlainString(TB1og8, { name }), confirmText: intl3.string(intl5.t.p89ACt), cancelText: intl4.string(intl5.t.gm1Vej), onConfirm, confirmColor: AlertDefault.Colors.RED };
-          const show = actions_AlertActionCreatorsDefault.show;
-          actions_AlertActionCreatorsDefault;
-          intl = intl5.intl;
-          const intl2 = intl5.intl;
-          formatToPlainString = intl2.formatToPlainString;
-          name = undefined;
-          TB1og8 = intl5.t.TB1og8;
-          if (guild != null) {
-            name = guild.name;
-          }
-          intl3 = tmp4(1126).intl;
-          intl4 = tmp4(1126).intl;
-          show(obj);
+      function handleLeaveGuild() {
+        let TB1og8;
+        let formatToPlainString;
+        let intl;
+        let intl3;
+        let intl4;
+        let name;
+        const obj = { title: intl.string(intl5.t.J2TBi3), body: formatToPlainString(TB1og8, { name }), confirmText: intl3.string(intl5.t.p89ACt), cancelText: intl4.string(intl5.t.gm1Vej), onConfirm, confirmColor: AlertDefault.Colors.RED };
+        const show = actions_AlertActionCreatorsDefault.show;
+        actions_AlertActionCreatorsDefault;
+        intl = intl5.intl;
+        const intl2 = intl5.intl;
+        formatToPlainString = intl2.formatToPlainString;
+        name = undefined;
+        TB1og8 = intl5.t.TB1og8;
+        if (guild != null) {
+          name = guild.name;
         }
+        intl3 = tmp4(1126).intl;
+        intl4 = tmp4(1126).intl;
+        show(obj);
       }
-      cResult[7] = name3;
+      cResult[7] = name4;
       cResult[8] = tmp10;
-      cResult[9] = A;
-      tmp13 = A;
+      cResult[9] = handleLeaveGuild;
+      tmp13 = handleLeaveGuild;
     }
   }
   const fn2 = function f() {
@@ -257,7 +185,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   cResult[5] = reportId;
   cResult[6] = fn2;
   tmp10 = fn2;
-}) : ((guild) => {
+}) : (function LeaveGuildElement(guild) {
   let closure_3;
   let closure_4;
   let first;
@@ -280,7 +208,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     closure_3(!closure_4);
   }, items);
   const items1 = [addCallback, reportId, guild];
-  onConfirm = react.useCallback(() => {
+  const onConfirm = react.useCallback(() => {
     let id;
     if (null != guild) {
       addCallback(() => {
@@ -299,7 +227,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     description: formatToPlainString(prop, { guildName: name }),
     disabled: first,
     variant: "danger",
-    onPress() {
+    onPress: function handleLeaveGuild() {
       let TB1og8;
       let formatToPlainString;
       let intl;

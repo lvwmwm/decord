@@ -1,22 +1,20 @@
-// Module ID: 15888
-// Function ID: 15889
+// Module ID: 16147
+// Function ID: 16148
 // Name: AccessibilityPreferencesContextProvider
-// Dependencies: [19, 4885, 21, 558, 576, 504, 4602, 2]
+// Dependencies: [19, 5079, 21, 558, 576, 504, 4794, 2]
 
-// Module 15888 (AccessibilityPreferencesContextProvider)
+// Module 16147 (AccessibilityPreferencesContextProvider)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import react3 from "react" /* 4602 */;
+import react3 from "react" /* 4794 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let children;
-
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccessibilityPreferencesContextProvider(children) {
   let tmp12;
   let tmp13;
   let tmp16;
@@ -25,8 +23,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   let tmp21;
   let tmp24;
   let tmp25;
-  let tmp28;
   let tmp29;
+  let tmp30;
   let tmp4;
   let tmp5;
   let tmp8;
@@ -65,7 +63,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   const stateFromStores = tmpResult7.useStateFromStores(tmp8, tmp9);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [AccessibilityStore];
-    const fn3 = function y() {
+    const fn3 = function h() {
       return { enabled: AccessibilityStore.useForcedColors, rawValue: AccessibilityStore.systemForcedColors };
     };
     cResult[4] = items2;
@@ -95,13 +93,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   const stateFromStores1 = tmpResult9.useStateFromStores(tmp16, tmp17);
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     const items4 = [AccessibilityStore];
-    const fn5 = function _() {
-      return AccessibilityStore.keyboardModeEnabled;
-    };
-    cResult[8] = fn5;
+    class M {
+      constructor() {
+        return AccessibilityStore.keyboardModeEnabled;
+      }
+    }
+    cResult[8] = M;
     cResult[9] = items4;
     tmp21 = items4;
-    tmp20 = fn5;
+    tmp20 = M;
   } else {
     tmp20 = cResult[8];
     tmp21 = cResult[9];
@@ -110,12 +110,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   const stateFromStores2 = tmpResult10.useStateFromStores(tmp21, tmp20);
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
     const items5 = [AccessibilityStore];
-    const fn6 = function k() {
-      return AccessibilityStore.isSwitchIconsEnabled;
-    };
+    class M {
+      constructor() {
+        return AccessibilityStore.keyboardModeEnabled;
+      }
+    }
     cResult[10] = items5;
-    cResult[11] = fn6;
-    tmp25 = fn6;
+    cResult[11] = tmp27;
+    tmp25 = tmp27;
     tmp24 = items5;
   } else {
     tmp24 = cResult[10];
@@ -125,48 +127,57 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   const stateFromStores3 = tmpResult11.useStateFromStores(tmp24, tmp25);
   if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
     const items6 = [AccessibilityStore];
-    const fn7 = function p() {
-      return AccessibilityStore.minToastDurationMs;
-    };
+    class M {
+      constructor() {
+        return AccessibilityStore.keyboardModeEnabled;
+      }
+    }
     cResult[12] = items6;
-    cResult[13] = fn7;
-    tmp29 = fn7;
-    tmp28 = items6;
+    cResult[13] = tmp32;
+    tmp30 = tmp32;
+    tmp29 = items6;
   } else {
-    tmp28 = cResult[12];
-    tmp29 = cResult[13];
+    tmp29 = cResult[12];
+    tmp30 = cResult[13];
   }
   const tmpResult12 = get_initialized;
-  const stateFromStores4 = tmpResult12.useStateFromStores(tmp28, tmp29);
+  const stateFromStores4 = tmpResult12.useStateFromStores(tmp29, tmp30);
   if (cResult[14] === stateFromStores1) {
     if (cResult[15] === stateFromStoresObject1) {
       if (cResult[16] === stateFromStores2) {
         if (cResult[17] === stateFromStores4) {
           if (cResult[18] === stateFromStores) {
             if (cResult[19] === stateFromStoresObject) {
-              let tmp32;
+              let tmp34;
               if (cResult[20] === stateFromStores3) {
-                tmp32 = cResult[21];
+                tmp34 = cResult[21];
               }
-              if (cResult[22] === tmp32) {
-                let tmp33;
+              if (cResult[22] === tmp34) {
+                let tmp35;
                 if (cResult[23] === children) {
-                  tmp33 = cResult[24];
+                  tmp35 = cResult[24];
                 }
-                return tmp33;
+                return tmp35;
               }
-              const tmp35 = jsx(react3.AccessibilityPreferencesContext.Provider, { value: tmp32, children });
-              cResult[22] = tmp32;
+              class M {
+                constructor() {
+                  return AccessibilityStore.keyboardModeEnabled;
+                }
+              }
+              tmp37[0] = tmp34;
+              tmp37[1] = children;
+              const tmp38 = jsx(react3.AccessibilityPreferencesContext.Provider, tmp37);
+              cResult[22] = tmp34;
               cResult[23] = children;
-              cResult[24] = tmp35;
-              tmp33 = tmp35;
+              cResult[24] = tmp38;
+              tmp35 = tmp38;
             }
           }
         }
       }
     }
   }
-  const obj3 = { reducedMotion: stateFromStoresObject, prefersCrossfades: stateFromStores, forcedColors: stateFromStoresObject1, alwaysShowLinkDecorations: stateFromStores1, highContrastModeEnabled: false, keyboardModeEnabled: stateFromStores2, switchIconsEnabled: stateFromStores3, minToastDurationMs: stateFromStores4 };
+  const obj2 = { reducedMotion: stateFromStoresObject, prefersCrossfades: stateFromStores, forcedColors: stateFromStoresObject1, alwaysShowLinkDecorations: stateFromStores1, highContrastModeEnabled: false, keyboardModeEnabled: stateFromStores2, switchIconsEnabled: stateFromStores3, minToastDurationMs: stateFromStores4 };
   cResult[14] = stateFromStores1;
   cResult[15] = stateFromStoresObject1;
   cResult[16] = stateFromStores2;
@@ -174,9 +185,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[18] = stateFromStores;
   cResult[19] = stateFromStoresObject;
   cResult[20] = stateFromStores3;
-  cResult[21] = obj3;
-  tmp32 = obj3;
-}) : ((children) => {
+  cResult[21] = obj2;
+  tmp34 = obj2;
+}) : (function AccessibilityPreferencesContextProvider(children) {
   let stateFromStoresObject;
   let stateFromStores;
   let stateFromStores1;

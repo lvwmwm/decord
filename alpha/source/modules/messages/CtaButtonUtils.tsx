@@ -1,20 +1,20 @@
-// Module ID: 11536
-// Function ID: 11537
+// Module ID: 11547
+// Function ID: 11548
 // Name: CtaButtonUtils
-// Dependencies: [5109, 11537, 5108, 558, 576, 504, 2]
+// Dependencies: [5906, 11548, 5905, 558, 576, 504, 2]
 // Exports: getCtaButtonType
 
-// Module 11536 (CtaButtonUtils)
+// Module 11547 (CtaButtonUtils)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5108 */;
-import useShouldRenderReportFalsePositiveButton from "useShouldRenderReportFalsePositiveButton" /* 11537 */;
-import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 5109 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5905 */;
+import useShouldRenderReportFalsePositiveButton from "useShouldRenderReportFalsePositiveButton" /* 11548 */;
+import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 5906 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const CtaButtonType = { MARK_AS_FALSE_POSITIVE: "mark_as_false_positive", AGE_VERIFICATION_RETRY: "age_verification_retry", CONNECT_TO_TEEN: "connect_to_teen", AGE_VERIFICATION_MANUAL_REVIEW: "age_verification_manual_review" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, channel_id) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCtaButtonType(id, channel_id) {
   let CONNECT_TO_TEEN;
   let pendingConnection;
   let tmp6;
@@ -53,7 +53,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, channel_id) =>
     CONNECT_TO_TEEN = obj.CONNECT_TO_TEEN;
   }
   return CONNECT_TO_TEEN;
-}) : ((id, channel_id) => {
+}) : (function useCtaButtonType(id, channel_id) {
   let CONNECT_TO_TEEN;
   let pendingConnection;
   const obj = useShouldRenderReportFalsePositiveButton;

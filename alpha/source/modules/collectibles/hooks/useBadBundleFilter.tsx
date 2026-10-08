@@ -1,24 +1,24 @@
-// Module ID: 14893
-// Function ID: 14894
+// Module ID: 15155
+// Function ID: 15156
 // Name: useBadBundleFilter
-// Dependencies: [19, 1377, 7081, 558, 576, 573, 4534, 8529, 7078, 7077, 2]
+// Dependencies: [19, 1389, 7267, 558, 576, 573, 4726, 9014, 7264, 7263, 2]
 
-// Module 14893 (useBadBundleFilter)
+// Module 15155 (useBadBundleFilter)
 import react from "react" /* 19 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4534 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7077 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7078 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 8529 */;
-import UserStore from "UserStore" /* 1377 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7081 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4726 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7263 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7264 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9014 */;
+import UserStore from "UserStore" /* 1389 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7267 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let _require;
 
 const useCallback = react.useCallback;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBadBundleFilter() {
   let closure_0;
   let currentUser;
   let tmp11;
@@ -86,7 +86,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                           let num2 = 0;
                           if (null != product.bundledProducts) {
                             const bundledProducts = product.bundledProducts;
-                            num2 = bundledProducts.reduce(() => { /* body not rendered: F153288 */ }, 0);
+                            num2 = bundledProducts.reduce(() => { /* body not rendered: F154818 */ }, 0);
                           }
                           return result.amount < num2;
                         }
@@ -138,7 +138,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                           let num2 = 0;
                           if (null != product.bundledProducts) {
                             const bundledProducts = product.bundledProducts;
-                            num2 = bundledProducts.reduce(() => { /* body not rendered: F153288 */ }, 0);
+                            num2 = bundledProducts.reduce(() => { /* body not rendered: F154818 */ }, 0);
                           }
                           return result.amount < num2;
                         }
@@ -157,7 +157,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   return tmp11;
-}) : (() => {
+}) : (function useBadBundleFilter() {
   let currentUser;
   let obj = useStateFromStores;
   const items = [UserStore];

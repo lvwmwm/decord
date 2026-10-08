@@ -1,23 +1,23 @@
-// Module ID: 17740
-// Function ID: 17741
+// Module ID: 18027
+// Function ID: 18028
 // Name: TriggerFields
-// Dependencies: [19, 21, 558, 576, 17724, 4892, 1126, 17741, 17742, 17746, 17750, 2]
+// Dependencies: [19, 21, 558, 576, 18011, 5086, 1126, 18028, 18029, 18033, 18037, 2]
 
-// Module 17740 (TriggerFields)
+// Module 18027 (TriggerFields)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 17724 */;
-import MentionSpamTriggerFieldsDefault from "MentionSpamTriggerFields" /* 17741 */;
-import DefaultKeywordListTriggerFieldsDefault from "DefaultKeywordListTriggerFields" /* 17742 */;
-import ApplicationTriggerFieldsDefault from "ApplicationTriggerFields" /* 17746 */;
-import KeywordFilterTriggerFieldsDefault from "KeywordFilterTriggerFields" /* 17750 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 18011 */;
+import MentionSpamTriggerFieldsDefault from "MentionSpamTriggerFields" /* 18028 */;
+import DefaultKeywordListTriggerFieldsDefault from "DefaultKeywordListTriggerFields" /* 18029 */;
+import ApplicationTriggerFieldsDefault from "ApplicationTriggerFields" /* 18033 */;
+import KeywordFilterTriggerFieldsDefault from "KeywordFilterTriggerFields" /* 18037 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TriggerFields(arg0) {
   let onChangeRule;
   let onValidityChange;
   let rule;
@@ -30,7 +30,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let first;
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const Text = tmp(4892).Text;
+      const Text = tmp(5086).Text;
       const intl = tmp(1126).intl;
       const tmp24 = <Text variant="text-md/normal" color="text-default">{intl.string(intl2.t["1YgPj/"])}</Text>;
       cResult[0] = tmp24;
@@ -111,7 +111,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return tmp4;
-}) : ((onValidityChange) => {
+}) : (function TriggerFields(onValidityChange) {
   let onChangeRule;
   let rule;
   let tmp3;
@@ -119,7 +119,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   onValidityChange = onValidityChange.onValidityChange;
   const obj = AutomodRuleUtils;
   if (obj.isRuleMLSpamFilter(rule)) {
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     const intl = tmp(1126).intl;
     tmp3 = <Text variant="text-md/normal" color="text-default">{intl.string(intl2.t["1YgPj/"])}</Text>;
   } else {

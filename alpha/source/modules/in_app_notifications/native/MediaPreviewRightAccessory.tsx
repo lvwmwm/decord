@@ -1,38 +1,36 @@
-// Module ID: 12535
-// Function ID: 12536
+// Module ID: 12631
+// Function ID: 12632
 // Name: MediaPreviewRightAccessory
-// Dependencies: [19, 17, 4885, 12493, 21, 4896, 587, 558, 576, 7959, 4892, 4586, 1369, 5780, 5872, 6465, 573, 7122, 11316, 12504, 7819, 7950, 1483, 5981, 6805, 6810, 7993, 10140, 1188, 8502, 2]
+// Dependencies: [19, 17, 5079, 12589, 21, 5090, 587, 558, 576, 8376, 5086, 4778, 1381, 5363, 8184, 6643, 573, 8218, 11491, 12600, 8238, 8368, 1495, 6164, 6976, 6982, 8401, 9725, 1200, 8986, 2]
 
-// Module 12535 (MediaPreviewRightAccessory)
+// Module 12631 (MediaPreviewRightAccessory)
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import utils_ImageUtils from "utils/ImageUtils" /* 1483 */;
-import useToken from "useToken" /* 4586 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import EyeIcon from "EyeIcon" /* 6465 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6805 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 6810 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7122 */;
-import ExplicitMediaUtils from "ExplicitMediaUtils" /* 7819 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 7950 */;
-import common_VideoDefault from "common/Video" /* 7993 */;
-import ClipViewDefault from "ClipView" /* 8502 */;
-import StickerDefault from "Sticker" /* 10140 */;
-import useContentHarmTypes from "useContentHarmTypes" /* 11316 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 12493 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 12504 */;
+import native from "native" /* 1200 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import utils_ImageUtils from "utils/ImageUtils" /* 1495 */;
+import useToken from "useToken" /* 4778 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import EyeIcon from "EyeIcon" /* 6643 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6976 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 6982 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8218 */;
+import ExplicitMediaUtils from "ExplicitMediaUtils" /* 8238 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8368 */;
+import common_VideoDefault from "common/Video" /* 8401 */;
+import ClipViewDefault from "ClipView" /* 8986 */;
+import StickerDefault from "Sticker" /* 9725 */;
+import useContentHarmTypes from "useContentHarmTypes" /* 11491 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 12589 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 12600 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let isSpoiler, total;
 
 let StyleSheet;
 let c10;
@@ -48,10 +46,10 @@ let size;
 let size1;
 let tmp;
 let tmp5;
-const Text_Text = tmp(4892);
-const VisualEffectViewDefault = tmp5(5780);
-const PlayIcon = tmp(7959);
-const ClipView = tmp(8502);
+const Text_Text = tmp(5086);
+const VisualEffectViewDefault = tmp5(5363);
+const PlayIcon = tmp(8376);
+const ClipView = tmp(8986);
 ({ PixelRatio: closure_4, StyleSheet } = react_native);
 const View = react_native.View;
 const RIGHT_ACCESSORY_LEFT_MARGIN = InAppNotificationConstants.RIGHT_ACCESSORY_LEFT_MARGIN;
@@ -81,7 +79,7 @@ createStyles = createStyles_mod;
 let obj9 = { rightAccessoryContainer: { marginLeft: RIGHT_ACCESSORY_LEFT_MARGIN } };
 let closure_15 = createStyles.createStyles(obj9);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoBadge() {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(5);
@@ -108,7 +106,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = tmp5;
   cResult[4] = tmp9;
   tmp8 = tmp9;
-}) : (() => {
+}) : (function VideoBadge() {
   let obj2;
   const tmp = closure_11();
   const obj = { style: tmp.badge, children: metroImportAll(PlayIcon.PlayIcon, obj2) };
@@ -116,7 +114,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return metroImportAll(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((total) => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function CountBadge(total) {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(5);
@@ -144,13 +142,13 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((total) => {
   cResult[3] = tmp5;
   cResult[4] = tmp9;
   tmp8 = tmp9;
-}) : ((total) => {
+}) : (function CountBadge(total) {
   total = total.total;
   const obj = { style: closure_12().badge, children: metroImportAll(Text_Text.Text, { variant: "text-xs/semibold", color: "text-default", children: total }) };
   return metroImportAll(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSpoiler) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function ObscuredMediaOverlay(isSpoiler) {
   let children;
   let isObscured;
   let items;
@@ -221,7 +219,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSpoiler) => 
         tmp19 = tmp22;
       }
       if (isObscured) {
-        tmp16Result = tmp16(tmp(5872).ImageWarningIcon, { size: "sm", color: "white" });
+        tmp16Result = tmp16(tmp(8184).ImageWarningIcon, { size: "sm", color: "white" });
       } else {
         const obj5 = { style: tmp4.spoilerPill, children: metroImportAll(EyeIcon.EyeIcon, { size: "sm", color: "white" }) };
         tmp16Result = tmp16(View, obj5);
@@ -250,7 +248,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSpoiler) => 
   cResult[1] = tmp4.obscureBackground;
   cResult[2] = tmp8;
   tmp7 = tmp8;
-}) : ((isSpoiler) => {
+}) : (function ObscuredMediaOverlay(isSpoiler) {
   let children;
   let isObscured;
   let tmp14Result;
@@ -286,7 +284,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSpoiler) => 
   items[2] = tmp11;
   const obj4 = { style: tmp.spoilerIconContainer, children: tmp14Result };
   if (isObscured) {
-    tmp14Result = tmp14(tmp2(5872).ImageWarningIcon, { size: "sm", color: "white" });
+    tmp14Result = tmp14(tmp2(8184).ImageWarningIcon, { size: "sm", color: "white" });
   } else {
     const obj5 = { style: tmp.spoilerPill, children: metroImportAll(EyeIcon.EyeIcon, { size: "sm", color: "white" }) };
     tmp14Result = tmp14(tmp15, obj5);
@@ -296,7 +294,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSpoiler) => 
   return tmp6(tmp7, obj6);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function SinglePreviewableMedia(arg0) {
   let height;
   let icon;
   let items3;
@@ -726,7 +724,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[11] = items5;
     tmp77 = items5;
   }
-}) : ((arg0) => {
+}) : (function SinglePreviewableMedia(arg0) {
   let height;
   let icon;
   let items1;
@@ -882,7 +880,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function MultiplePreviewableMedia(arg0) {
   let first;
   let items1;
   let message;
@@ -952,7 +950,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = previewableMedia;
   cResult[4] = tmp12;
   tmp10 = tmp12;
-}) : ((arg0) => {
+}) : (function MultiplePreviewableMedia(arg0) {
   let items;
   let items1;
   let message;
@@ -976,7 +974,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return authStore(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPreviewRightAccessoryContent(arg0) {
   let message;
   let tmp3;
   let totalMediaCount;
@@ -1015,7 +1013,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp3 = tmp6;
   }
   return tmp3;
-}) : ((arg0) => {
+}) : (function MediaPreviewRightAccessoryContent(arg0) {
   let message;
   let tmp4;
   let totalMediaCount;
@@ -1031,7 +1029,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp4;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPreviewRightAccessory(message) {
   const obj = react2;
   const cResult = obj.c(7);
   message = message.message;
@@ -1070,7 +1068,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     tmp4 = tmp7;
   }
   return tmp3;
-}) : ((message) => {
+}) : (function MediaPreviewRightAccessory(message) {
   let obj3;
   message = message.message;
   const tmp = closure_15();

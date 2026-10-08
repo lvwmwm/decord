@@ -1,17 +1,17 @@
-// Module ID: 10063
-// Function ID: 10064
+// Module ID: 10308
+// Function ID: 10309
 // Name: FavoritesDismissibleContent
-// Dependencies: [32, 19, 2048, 2036, 558, 6902, 576, 10051, 10049, 10062, 6901, 10061, 2]
+// Dependencies: [32, 19, 2060, 2048, 558, 7091, 576, 10296, 10294, 10307, 7090, 10306, 2]
 
-// Module 10063 (FavoritesDismissibleContent)
+// Module 10308 (FavoritesDismissibleContent)
 import react2 from "react" /* 576 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6901 */;
-import useGetDismissibleContent from "useGetDismissibleContent" /* 6902 */;
-import FavoritesHooks from "FavoritesHooks" /* 10049 */;
-import FavoritesGuildExperiment from "FavoritesGuildExperiment" /* 10051 */;
-import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10062 */;
+import dismissible_content from "dismissible_content" /* 2048 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7090 */;
+import useGetDismissibleContent from "useGetDismissibleContent" /* 7091 */;
+import FavoritesHooks from "FavoritesHooks" /* 10294 */;
+import FavoritesGuildExperiment from "FavoritesGuildExperiment" /* 10296 */;
+import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10307 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -21,20 +21,20 @@ const require = globalThis.__r;
 let _require;
 
 let tmp;
-const FavoritesGuildIntroPopover = tmp(10061);
+const FavoritesGuildIntroPopover = tmp(10306);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 let items = [dismissible_content.DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO, dismissible_content.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM, dismissible_content.DismissibleContent.FAVORITES_GUILD_NEW_BADGE, dismissible_content.DismissibleContent.FAVORITES_GUILD_SUGGESTIONS];
 let items1 = [dismissible_content.DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO, dismissible_content.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM];
 const items2 = [dismissible_content.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM];
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNextFavoritesOnboardingPopover() {
   const obj = useGetDismissibleContent;
   let first = _slicedToArray(obj.useDangerouslyPeekDismissibleContents(items1), 1)[0];
   if (first == null) {
     first = null;
   }
   return first;
-}) : (() => {
+}) : (function useNextFavoritesOnboardingPopover() {
   const obj = useGetDismissibleContent;
   let first = _slicedToArray(obj.useDangerouslyPeekDismissibleContents(items1), 1)[0];
   if (first == null) {
@@ -43,7 +43,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return first;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesMenuItemPopoverDismissibleContent(arg0) {
   let first;
   let tmp12;
   let tmp13;
@@ -111,7 +111,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   items = [];
-}) : ((arg0) => {
+}) : (function useFavoritesMenuItemPopoverDismissibleContent(arg0) {
   let tmp11;
   let tmp12;
   const obj = FavoritesGuildExperiment;
@@ -142,7 +142,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items = [];
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldRenderFavoritesMenuItemPopover() {
   let first;
   let tmp7;
   const obj = react2;
@@ -173,7 +173,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = tmp4;
   cResult[2] = tmp11;
   tmp10 = tmp11;
-}) : (() => {
+}) : (function useShouldRenderFavoritesMenuItemPopover() {
   let first;
   let tmp6;
   const obj = useGetDismissibleContent;
@@ -194,7 +194,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return tmp9;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesBetaTagDismissibleContent(arg0) {
   let closure_0;
   let first;
   let tmp5;
@@ -208,16 +208,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     first = cResult[0];
   }
-  const tmpResult = tmp(10051);
+  const tmpResult = tmp(10296);
   const isFreemium = tmpResult.useFavoritesGuildConfig(first).isFreemium;
   if (cResult[1] === arg0) {
     if (cResult[2] === isFreemium) {
       tmp5 = cResult[3];
     }
-    const tmpResult2 = tmp(6901);
+    const tmpResult2 = tmp(7090);
     const tmp7 = _slicedToArray(tmpResult2.useSelectedDismissibleContent(tmp5), 2);
     _require = tmp8;
-    const tmp9 = tmp7[0] === tmp(2036).DismissibleContent.FAVORITES_GUILD_NEW_BADGE;
+    const tmp9 = tmp7[0] === tmp(2048).DismissibleContent.FAVORITES_GUILD_NEW_BADGE;
     let closure_1 = tmp9;
     if (cResult[4] === tmp7[1]) {
       let tmp10;
@@ -235,37 +235,22 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[7] = tmp9;
       cResult[8] = tmp10;
       cResult[9] = obj3;
-      class D {
-        constructor() {
-          tmp = closure_1;
-          if (tmp) {
-            tmp2 = closure_0;
-            tmp3 = ContentDismissActionType;
-            tmp4 = closure_0(ContentDismissActionType.TAKE_ACTION);
-          }
-          return;
-        }
-      }
+      tmp11 = obj3;
     }
-    class D {
-      constructor() {
-        tmp = closure_1;
-        if (tmp) {
-          tmp2 = closure_0;
-          tmp3 = ContentDismissActionType;
-          tmp4 = closure_0(ContentDismissActionType.TAKE_ACTION);
-        }
-        return;
+    const fn = function u() {
+      const tmp = closure_1;
+      if (tmp) {
+        closure_0(ContentDismissActionType.TAKE_ACTION);
       }
-    }
+    };
     cResult[4] = tmp7[1];
     cResult[5] = tmp9;
-    cResult[6] = D;
-    tmp10 = D;
+    cResult[6] = fn;
+    tmp10 = fn;
   }
   if (isFreemium) {
     if (arg0) {
-      const items = [tmp(2036).DismissibleContent.FAVORITES_GUILD_NEW_BADGE];
+      const items = [tmp(2048).DismissibleContent.FAVORITES_GUILD_NEW_BADGE];
       items1 = items;
     }
     cResult[1] = arg0;
@@ -274,7 +259,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp5 = items1;
   }
   items1 = [];
-}) : ((arg0) => {
+}) : (function useFavoritesBetaTagDismissibleContent(arg0) {
   let require;
   let tmp9;
   let tmp = require;

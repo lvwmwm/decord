@@ -1,17 +1,17 @@
-// Module ID: 14755
-// Function ID: 14756
+// Module ID: 15016
+// Function ID: 15017
 // Name: FamilyCenterParentalControlsDataAndPrivacy
-// Dependencies: [19, 1085, 7645, 21, 558, 576, 1126, 2521, 2115, 11142, 14515, 2]
+// Dependencies: [19, 1085, 7966, 21, 558, 576, 1126, 2565, 2127, 11262, 14775, 2]
 
-// Module 14755 (FamilyCenterParentalControlsDataAndPrivacy)
+// Module 15016 (FamilyCenterParentalControlsDataAndPrivacy)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import _modDef2521 from "module_2521" /* 2521 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
-import SettingLayoutDefault from "SettingLayout" /* 14515 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
+import _modDef2565 from "module_2565" /* 2565 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
+import SettingLayoutDefault from "SettingLayout" /* 14775 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ import size from "module_2" /* 2 */;
 const HelpdeskArticles = Constants.HelpdeskArticles;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterParentalControlsDataAndPrivacy() {
   let Imp6Ns;
   let Z5yJZy;
   let cnCK6b;
@@ -51,7 +51,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const intl = tmp(1126).intl;
     format = intl.format;
     obj3 = { helpdeskArticle: obj4.getArticleURL(HelpdeskArticles.DATA_PRIVACY_CONTROLS) };
-    Z5yJZy = _modDef2521.Z5yJZy;
+    Z5yJZy = _modDef2565.Z5yJZy;
     const items1 = [obj2, , , ];
     obj4 = HelpdeskUtilsDefault;
     const obj5 = { settings: items2, subLabel: format2(Imp6Ns, obj6) };
@@ -59,7 +59,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const intl2 = tmp(1126).intl;
     format2 = intl2.format;
     obj6 = { helpdeskArticle: obj7.getArticleURL(HelpdeskArticles.DATA_USED_FOR_RECOMMENDED) };
-    Imp6Ns = _modDef2521.Imp6Ns;
+    Imp6Ns = _modDef2565.Imp6Ns;
     items1[1] = obj5;
     obj7 = HelpdeskUtilsDefault;
     const obj8 = { settings: items3, subLabel: format3(cnCK6b, obj9) };
@@ -67,7 +67,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const intl3 = tmp(1126).intl;
     format3 = intl3.format;
     obj9 = { helpdeskArticle: obj10.getArticleURL(HelpdeskArticles.QUESTS_PRIVACY_CONTROLS) };
-    cnCK6b = _modDef2521.cnCK6b;
+    cnCK6b = _modDef2565.cnCK6b;
     items1[2] = obj8;
     obj10 = HelpdeskUtilsDefault;
     const obj11 = { settings: items4, subLabel: format4(v6mK5Pz, obj12) };
@@ -75,7 +75,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const intl4 = tmp(1126).intl;
     format4 = intl4.format;
     obj12 = { helpdeskArticle: obj13.getArticleURL(HelpdeskArticles.QUESTS_PRIVACY_CONTROLS) };
-    v6mK5Pz = _modDef2521["6mK5Pz"];
+    v6mK5Pz = _modDef2565["6mK5Pz"];
     items1[3] = obj11;
     cResult[0] = items1;
     first = items1;
@@ -100,7 +100,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp11 = cResult[2];
   }
   return tmp11;
-}) : (() => {
+}) : (function FamilyCenterParentalControlsDataAndPrivacy() {
   const memo = react.useMemo(() => {
     let Imp6Ns;
     let Z5yJZy;
@@ -127,7 +127,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const intl = memo(dependencyMap[6]).intl;
     format = intl.format;
     obj2 = { helpdeskArticle: obj3.getArticleURL(constants.DATA_PRIVACY_CONTROLS) };
-    Z5yJZy = _modDef2521.Z5yJZy;
+    Z5yJZy = _modDef2565.Z5yJZy;
     const items1 = [obj, , , ];
     obj3 = HelpdeskUtilsDefault;
     const obj4 = { settings: items2, subLabel: format2(Imp6Ns, obj5) };
@@ -135,7 +135,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const intl2 = memo(dependencyMap[6]).intl;
     format2 = intl2.format;
     obj5 = { helpdeskArticle: obj6.getArticleURL(constants.DATA_USED_FOR_RECOMMENDED) };
-    Imp6Ns = _modDef2521.Imp6Ns;
+    Imp6Ns = _modDef2565.Imp6Ns;
     items1[1] = obj4;
     obj6 = HelpdeskUtilsDefault;
     const obj7 = { settings: items3, subLabel: format3(cnCK6b, obj8) };
@@ -143,7 +143,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const intl3 = memo(dependencyMap[6]).intl;
     format3 = intl3.format;
     obj8 = { helpdeskArticle: obj9.getArticleURL(constants.QUESTS_PRIVACY_CONTROLS) };
-    cnCK6b = _modDef2521.cnCK6b;
+    cnCK6b = _modDef2565.cnCK6b;
     items1[2] = obj7;
     obj9 = HelpdeskUtilsDefault;
     const obj10 = { settings: items4, subLabel: format4(v6mK5Pz, obj11) };
@@ -151,7 +151,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const intl4 = memo(dependencyMap[6]).intl;
     format4 = intl4.format;
     obj11 = { helpdeskArticle: obj12.getArticleURL(constants.QUESTS_PRIVACY_CONTROLS) };
-    v6mK5Pz = _modDef2521["6mK5Pz"];
+    v6mK5Pz = _modDef2565["6mK5Pz"];
     items1[3] = obj10;
     obj12 = HelpdeskUtilsDefault;
     return items1;

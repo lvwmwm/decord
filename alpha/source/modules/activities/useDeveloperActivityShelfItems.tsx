@@ -1,17 +1,17 @@
-// Module ID: 11670
-// Function ID: 11671
+// Module ID: 11735
+// Function ID: 11736
 // Name: useDeveloperActivityShelfItems
-// Dependencies: [19, 8546, 2011, 558, 576, 504, 2]
+// Dependencies: [19, 9031, 2023, 558, 576, 504, 2]
 
-// Module 11670 (useDeveloperActivityShelfItems)
-import Constants from "Constants" /* 2011 */;
+// Module 11735 (useDeveloperActivityShelfItems)
+import Constants from "Constants" /* 2023 */;
 import react from "react" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 8546 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9031 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4 = Constants.DEFAULT_EMBEDDED_ACTIVITY_CONFIG;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDeveloperActivityShelfItems() {
   let lastUsedObject;
   let tmp10;
   let tmp11;
@@ -77,7 +77,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const _Symbol = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      class E {
+      class I {
         constructor(application) {
           let obj2;
           const obj = { application, activity: obj2 };
@@ -87,10 +87,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return obj;
         }
       }
-      cResult[10] = E;
-      tmp16 = E;
+      cResult[10] = I;
+      tmp16 = I;
     } else {
-      class E {
+      class I {
         constructor(application) {
           let obj2;
           const obj = { application, activity: obj2 };
@@ -103,33 +103,27 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     if (cResult[11] !== lastUsedObject) {
       class I {
-        constructor(arg0, arg1) {
-          let num = 1;
-          if (null != lastUsedObject[arg0.application.id]) {
-            let num2 = -1;
-            if (null != lastUsedObject[arg1.application.id]) {
-              num2 = tmp2 - tmp;
-            }
-            num = num2;
-          }
-          return num;
+        constructor(application) {
+          let obj2;
+          const obj = { application, activity: obj2 };
+          obj2 = { application_id: application.id };
+          const merged = Object.assign(closure_1_4);
+          const merged1 = Object.assign(application.embeddedActivityConfig);
+          return obj;
         }
       }
       cResult[11] = lastUsedObject;
-      cResult[12] = I;
-      tmp17 = I;
+      cResult[12] = tmp18;
+      tmp17 = tmp18;
     } else {
       class I {
-        constructor(arg0, arg1) {
-          let num = 1;
-          if (null != lastUsedObject[arg0.application.id]) {
-            let num2 = -1;
-            if (null != lastUsedObject[arg1.application.id]) {
-              num2 = tmp2 - tmp;
-            }
-            num = num2;
-          }
-          return num;
+        constructor(application) {
+          let obj2;
+          const obj = { application, activity: obj2 };
+          obj2 = { application_id: application.id };
+          const merged = Object.assign(closure_1_4);
+          const merged1 = Object.assign(application.embeddedActivityConfig);
+          return obj;
         }
       }
     }
@@ -141,52 +135,43 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp15 = sorted;
   } else {
     class I {
-      constructor(arg0, arg1) {
-        let num = 1;
-        if (null != lastUsedObject[arg0.application.id]) {
-          let num2 = -1;
-          if (null != lastUsedObject[arg1.application.id]) {
-            num2 = tmp2 - tmp;
-          }
-          num = num2;
-        }
-        return num;
+      constructor(application) {
+        let obj2;
+        const obj = { application, activity: obj2 };
+        obj2 = { application_id: application.id };
+        const merged = Object.assign(closure_1_4);
+        const merged1 = Object.assign(application.embeddedActivityConfig);
+        return obj;
       }
     }
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       class I {
-        constructor(arg0, arg1) {
-          let num = 1;
-          if (null != lastUsedObject[arg0.application.id]) {
-            let num2 = -1;
-            if (null != lastUsedObject[arg1.application.id]) {
-              num2 = tmp2 - tmp;
-            }
-            num = num2;
-          }
-          return num;
+        constructor(application) {
+          let obj2;
+          const obj = { application, activity: obj2 };
+          obj2 = { application_id: application.id };
+          const merged = Object.assign(closure_1_4);
+          const merged1 = Object.assign(application.embeddedActivityConfig);
+          return obj;
         }
       }
       cResult[6] = tmp14;
       tmp13 = tmp14;
     } else {
       class I {
-        constructor(arg0, arg1) {
-          let num = 1;
-          if (null != lastUsedObject[arg0.application.id]) {
-            let num2 = -1;
-            if (null != lastUsedObject[arg1.application.id]) {
-              num2 = tmp2 - tmp;
-            }
-            num = num2;
-          }
-          return num;
+        constructor(application) {
+          let obj2;
+          const obj = { application, activity: obj2 };
+          obj2 = { application_id: application.id };
+          const merged = Object.assign(closure_1_4);
+          const merged1 = Object.assign(application.embeddedActivityConfig);
+          return obj;
         }
       }
     }
   }
   return tmp13;
-}) : (() => {
+}) : (function useDeveloperActivityShelfItems() {
   let isEnabled;
   let lastUsedObject;
   let obj = isEnabled(lastUsedObject[5]);

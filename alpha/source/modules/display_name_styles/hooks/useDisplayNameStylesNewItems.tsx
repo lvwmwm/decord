@@ -1,13 +1,13 @@
-// Module ID: 15174
-// Function ID: 15175
+// Module ID: 15436
+// Function ID: 15437
 // Name: useDisplayNameStylesNewItems
-// Dependencies: [19, 15175, 1395, 558, 576, 504, 15176, 2]
+// Dependencies: [19, 15437, 1407, 558, 576, 504, 15438, 2]
 
-// Module 15174 (useDisplayNameStylesNewItems)
+// Module 15436 (useDisplayNameStylesNewItems)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import DisplayNameStylesSeenStore from "DisplayNameStylesSeenStore" /* 15175 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1395 */;
+import DisplayNameStylesSeenStore from "DisplayNameStylesSeenStore" /* 15437 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1407 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let tmp;
 const get_initialized = tmp(504);
 ({ FLYWHEEL_EFFECTS: closure_4, FLYWHEEL_FONTS: hasOwnProperty } = DisplayNameStylesConstants);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDisplayNameStylesNewFonts(arr) {
   let seenFonts;
   let stateFromStores;
   let tmp4;
@@ -31,7 +31,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   const tmp = stateFromStores;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [DisplayNameStylesSeenStore];
-    const fn = function n() {
+    const fn = function l() {
       return seenFonts.getSeenFonts();
     };
     cResult[0] = items;
@@ -94,7 +94,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   cResult[3] = arr;
   cResult[4] = set;
   tmp8 = set;
-}) : ((arg0) => {
+}) : (function useDisplayNameStylesNewFonts(arg0) {
   let closure_0;
   let items1;
   let seenFonts;
@@ -120,7 +120,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   return obj2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDisplayNameStylesNewEffects(arr) {
   let seenEffects;
   let stateFromStores;
   let tmp4;
@@ -131,7 +131,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   const tmp = stateFromStores;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [DisplayNameStylesSeenStore];
-    const fn = function l() {
+    const fn = function n() {
       return seenEffects.getSeenEffects();
     };
     cResult[0] = items;
@@ -194,7 +194,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   cResult[3] = arr;
   cResult[4] = set;
   tmp8 = set;
-}) : ((arg0) => {
+}) : (function useDisplayNameStylesNewEffects(arg0) {
   let closure_0;
   let items1;
   let seenEffects;
@@ -220,7 +220,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   return obj2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDisplayNameStylesNewFontsBadge(arr) {
   let newFontsBadgeDismissed;
   let tmp11;
   let tmp13;
@@ -230,7 +230,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   const cResult = obj.c(8);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [DisplayNameStylesSeenStore];
-    const fn = function n() {
+    const fn = function l() {
       return newFontsBadgeDismissed.getNewFontsBadgeDismissed();
     };
     cResult[0] = items;
@@ -311,7 +311,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
     }
   }
   return tmp13;
-}) : ((arg0) => {
+}) : (function useDisplayNameStylesNewFontsBadge(arg0) {
   let closure_0;
   let newFontsBadgeDismissed;
   const _require = arg0;
@@ -330,7 +330,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   return obj3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDisplayNameStylesNewEffectsBadge(arr) {
   let newEffectsBadgeDismissed;
   let tmp11;
   let tmp13;
@@ -340,7 +340,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   const cResult = obj.c(8);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [DisplayNameStylesSeenStore];
-    const fn = function l() {
+    const fn = function n() {
       return newEffectsBadgeDismissed.getNewEffectsBadgeDismissed();
     };
     cResult[0] = items;
@@ -421,7 +421,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
     }
   }
   return tmp13;
-}) : ((arg0) => {
+}) : (function useDisplayNameStylesNewEffectsBadge(arg0) {
   let closure_0;
   let newEffectsBadgeDismissed;
   const _require = arg0;

@@ -1,13 +1,13 @@
-// Module ID: 8367
-// Function ID: 8368
+// Module ID: 8865
+// Function ID: 8866
 // Name: useSteamWebsiteUrl
-// Dependencies: [2007, 1085, 558, 576, 8368, 8366, 2018, 504, 2]
+// Dependencies: [2019, 1085, 558, 576, 8866, 8864, 2030, 504, 2]
 // Exports: buildSteamStoreUrl
 
-// Module 8367 (useSteamWebsiteUrl)
+// Module 8865 (useSteamWebsiteUrl)
 import Constants from "Constants" /* 1085 */;
-import SteamReleaseStatus from "SteamReleaseStatus" /* 8368 */;
-import GameStore from "GameStore" /* 2007 */;
+import SteamReleaseStatus from "SteamReleaseStatus" /* 8866 */;
+import GameStore from "GameStore" /* 2019 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 let _require;
 
 const Distributors = Constants.Distributors;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSteamWebsiteUrl(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -67,7 +67,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               id = first.id;
             }
             let combined = null;
-            const tmp11Result = tmp11(2018);
+            const tmp11Result = tmp11(2030);
             if (!tmp11Result.isNullOrEmpty(id)) {
               const _encodeURIComponent = encodeURIComponent;
               const _HermesInternal = HermesInternal;
@@ -102,7 +102,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useSteamWebsiteUrl(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -143,7 +143,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             id = first.id;
           }
           let combined = null;
-          const tmp11Result = tmp11(2018);
+          const tmp11Result = tmp11(2030);
           if (!tmp11Result.isNullOrEmpty(id)) {
             const _encodeURIComponent = encodeURIComponent;
             const _HermesInternal = HermesInternal;

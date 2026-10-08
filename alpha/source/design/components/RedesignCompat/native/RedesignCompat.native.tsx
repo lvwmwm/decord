@@ -1,9 +1,9 @@
-// Module ID: 6080
-// Function ID: 6081
+// Module ID: 6266
+// Function ID: 6267
 // Name: RedesignCompat
 // Dependencies: [19, 21, 558, 576, 2]
 
-// Module 6080 (RedesignCompat)
+// Module 6266 (RedesignCompat)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -12,7 +12,7 @@ import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 const context = react.createContext(false);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignCompat(arg0) {
   let children;
   let enabled;
   const obj = react2;
@@ -33,7 +33,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = enabled;
   cResult[2] = tmp3;
   tmp2 = tmp3;
-}) : ((enabled) => {
+}) : (function RedesignCompat(enabled) {
   enabled = enabled.enabled;
   const children = enabled.children;
   const Provider = context.Provider;

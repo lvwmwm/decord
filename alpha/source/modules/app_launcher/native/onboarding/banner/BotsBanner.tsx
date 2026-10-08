@@ -1,23 +1,21 @@
-// Module ID: 11693
-// Function ID: 11694
+// Module ID: 11758
+// Function ID: 11759
 // Name: BotsBanner
-// Dependencies: [19, 21, 558, 576, 11694, 11678, 1126, 11689, 2]
+// Dependencies: [19, 21, 558, 576, 11759, 11743, 1126, 11754, 2]
 
-// Module 11693 (BotsBanner)
+// Module 11758 (BotsBanner)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import ApplicationsImageDefault from "ApplicationsImage" /* 11678 */;
-import BannerBaseDefault from "BannerBase" /* 11689 */;
-import useBannerBots from "useBannerBots" /* 11694 */;
+import ApplicationsImageDefault from "ApplicationsImage" /* 11743 */;
+import BannerBaseDefault from "BannerBase" /* 11754 */;
+import useBannerBots from "useBannerBots" /* 11759 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let context;
-
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotsBanner(context) {
   let firstBotApplication;
   let secondBotApplication;
   let tmp4;
@@ -78,7 +76,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
   cResult[3] = secondBotApplication;
   cResult[4] = tmp7;
   tmp6 = tmp7;
-}) : ((context) => {
+}) : (function BotsBanner(context) {
   let firstBotApplication;
   let intl;
   let obj3;

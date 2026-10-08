@@ -1,15 +1,15 @@
-// Module ID: 16136
-// Function ID: 16137
+// Module ID: 16396
+// Function ID: 16397
 // Name: useGuildPowerupsBoostAction
-// Dependencies: [5, 19, 6918, 4774, 1085, 558, 576, 12212, 6664, 6938, 7679, 7677, 5619, 6919, 2]
+// Dependencies: [5, 19, 7107, 4968, 1085, 558, 576, 12291, 6841, 7127, 8000, 7998, 5964, 7108, 2]
 
-// Module 16136 (useGuildPowerupsBoostAction)
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6664 */;
-import useGuildBoostPurchaseHandlerDefault from "useGuildBoostPurchaseHandler" /* 12212 */;
+// Module 16396 (useGuildPowerupsBoostAction)
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6841 */;
+import useGuildBoostPurchaseHandlerDefault from "useGuildBoostPurchaseHandler" /* 12291 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 6918 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4774 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7107 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4968 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ let metroRequire;
 let _asyncToGenerator = _asyncToGenerator_mod;
 ({ BoostPurchaseIntent: metroRequire, GuildPowerupType: metroImportDefault } = GuildPowerupsConstants);
 ({ AnalyticsObjects: metroImportAll, AnalyticsObjectTypes: c9 } = Constants);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3, arg4) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4) {
   let closure_0;
   let closure_1;
   let closure_2;
@@ -158,9 +158,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, 
       }
     }
   });
-  const fn = function() {
+  function t0() {
     return closure_0(...arguments);
-  };
+  }
   cResult[0] = arg4;
   cResult[1] = analyticsLocations;
   cResult[2] = arg2;
@@ -168,9 +168,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, 
   cResult[4] = handleMobileWebRedirectCheckout;
   cResult[5] = arg1;
   cResult[6] = shouldUseMobileWebRedirectCheckout;
-  cResult[7] = fn;
-  tmp3 = fn;
-}) : ((arg0, arg1, arg2, arg3, arg4) => {
+  cResult[7] = t0;
+  tmp3 = t0;
+}) : (function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4) {
   let closure_1;
   let closure_2;
   let closure_3;

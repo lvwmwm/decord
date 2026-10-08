@@ -1,23 +1,23 @@
-// Module ID: 17265
-// Function ID: 17266
+// Module ID: 17546
+// Function ID: 17547
 // Name: SoundButton
-// Dependencies: [19, 17, 17258, 21, 4618, 4896, 587, 1369, 5916, 558, 576, 5604, 11559, 6632, 17266, 17267, 6664, 6688, 17269, 17255, 17271, 4892, 5886, 2]
+// Dependencies: [19, 17, 17539, 21, 4810, 5090, 587, 1381, 6189, 558, 576, 5374, 11622, 6809, 17547, 17548, 6841, 6865, 17550, 17536, 17552, 5086, 8198, 2]
 
-// Module 17265 (SoundButton)
+// Module 17546 (SoundButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4618 */;
-import spring from "spring" /* 5604 */;
-import Pressables from "Pressables" /* 5916 */;
-import EmojiDefault from "Emoji" /* 6632 */;
-import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 11559 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 17258 */;
-import openSoundboardSoundPreviewActionSheetDefault from "openSoundboardSoundPreviewActionSheet" /* 17271 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4810 */;
+import spring from "spring" /* 5374 */;
+import Pressables from "Pressables" /* 6189 */;
+import EmojiDefault from "Emoji" /* 6809 */;
+import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 11622 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 17539 */;
+import openSoundboardSoundPreviewActionSheetDefault from "openSoundboardSoundPreviewActionSheet" /* 17552 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -58,7 +58,7 @@ let closure_9 = createStyles(obj);
 ReanimatedRexport = ReanimatedRexport_mod;
 let closure_10 = ReanimatedRexport.createAnimatedComponent(Pressables.PressableOpacity);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAnimationSharedValuesAndHandlers(arg0) {
   let tmp4;
   let tmp5;
   let closure_0 = arg0;
@@ -156,7 +156,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = sharedValue1;
   cResult[6] = fn3;
   tmp6 = fn3;
-}) : ((arg0) => {
+}) : (function useAnimationSharedValuesAndHandlers(arg0) {
   let closure_0 = arg0;
   const obj = ReanimatedRexport2;
   const sharedValue = obj.useSharedValue(0);
@@ -184,7 +184,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 const __initData = { code: "function SoundButtonTsx1(){const{animationConfig,withDelay,withSpring,interpolate,SPRING_CONFIG}=this.__closure;var _animationConfig$play,_animationConfig$pres,_animationConfig;const isNotPressed=animationConfig.sharedValues.pressed.get()===0;const isPlaying=animationConfig.sharedValues.playing.get()>0;const shouldDoPlayingAnimation=isNotPressed&&isPlaying;const playingAnimationScaleValue=withDelay((_animationConfig$play=animationConfig.playingAnimationDelay)!==null&&_animationConfig$play!==void 0?_animationConfig$play:0,withSpring(interpolate(animationConfig.sharedValues.playing.get(),[0,1],[1,animationConfig.scaleFactors.playing]),SPRING_CONFIG));const pressedAnimationScaleValue=withSpring(interpolate(animationConfig.sharedValues.pressed.get(),[0,1],[1,animationConfig.scaleFactors.pressed]),SPRING_CONFIG);const rotationScaleValue=interpolate(animationConfig.sharedValues.pressed.get(),[0,1],[0,(_animationConfig$pres=(_animationConfig=animationConfig)===null||_animationConfig===void 0?void 0:_animationConfig.pressedRotationDegrees)!==null&&_animationConfig$pres!==void 0?_animationConfig$pres:0]);return{transform:[{scale:shouldDoPlayingAnimation?playingAnimationScaleValue:pressedAnimationScaleValue},{rotate:rotationScaleValue+\"deg\"}]};}" };
 const __initData2 = { code: "function SoundButtonTsx2(){const{animationConfig,withDelay,withSpring,interpolate,SPRING_CONFIG}=this.__closure;var _animationConfig$play,_animationConfig$pres,_animationConfig;const isNotPressed=animationConfig.sharedValues.pressed.get()===0;const isPlaying=animationConfig.sharedValues.playing.get()>0;const shouldDoPlayingAnimation=isNotPressed&&isPlaying;const playingAnimationScaleValue=withDelay((_animationConfig$play=animationConfig.playingAnimationDelay)!==null&&_animationConfig$play!==void 0?_animationConfig$play:0,withSpring(interpolate(animationConfig.sharedValues.playing.get(),[0,1],[1,animationConfig.scaleFactors.playing]),SPRING_CONFIG));const pressedAnimationScaleValue=withSpring(interpolate(animationConfig.sharedValues.pressed.get(),[0,1],[1,animationConfig.scaleFactors.pressed]),SPRING_CONFIG);const rotationScaleValue=interpolate(animationConfig.sharedValues.pressed.get(),[0,1],[0,(_animationConfig$pres=(_animationConfig=animationConfig)===null||_animationConfig===void 0?void 0:_animationConfig.pressedRotationDegrees)!==null&&_animationConfig$pres!==void 0?_animationConfig$pres:0]);return{transform:[{scale:shouldDoPlayingAnimation?playingAnimationScaleValue:pressedAnimationScaleValue},{rotate:rotationScaleValue+\"deg\"}]};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationConfig) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAnimation(animationConfig) {
   _require = animationConfig;
   let obj = require("ReanimatedRexport");
   const fn = function t() {
@@ -241,7 +241,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationConfi
   fn.__workletHash = 13932429225740;
   fn.__initData = __initData;
   return obj.useAnimatedStyle(fn);
-}) : ((animationConfig) => {
+}) : (function useAnimation(animationConfig) {
   _require = animationConfig;
   let obj = require("ReanimatedRexport");
   const fn = function t() {
@@ -300,7 +300,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationConfi
   return obj.useAnimatedStyle(fn);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundButtonEmoji(arg0) {
   let emoji;
   let emoji2;
   let first;
@@ -411,7 +411,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = tmp3.emojiWrapper;
   cResult[8] = items;
   tmp11 = items;
-}) : ((arg0) => {
+}) : (function SoundButtonEmoji(arg0) {
   let items;
   let obj2;
   let obj3;
@@ -434,7 +434,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return hasOwnProperty(closure_7, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sound) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SoundButtonComponent(sound) {
   let isSectionLocked;
   let items;
   let items1;
@@ -588,7 +588,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
                                                               const tmp48 = onLockedPress(analyticsLocations, obj5);
                                                               cResult[53] = tmp38;
                                                               cResult[54] = tmp42;
-                                                              class E {
+                                                              class G {
                                                                 constructor() {
                                                                   openSoundboardSoundPreviewActionSheetDefault(channel, sound, analyticsLocations[analyticsLocations.length - 1], soundGridLocation);
                                                                 }
@@ -618,7 +618,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
                                         }
                                         const obj7 = { style: tmp24, accessibilityRole: "button", accessibilityLabel: sound.name, accessibilityHint: lockedAccessibilityHint, onPressIn: tmp12.handlers.pressIn, onPressOut: tmp12.handlers.pressOut, onPress: tmp10, onLongPress: tmp19, children: items1 };
                                         items1 = [tmp25, , ];
-                                        class E {
+                                        class G {
                                           constructor() {
                                             openSoundboardSoundPreviewActionSheetDefault(channel, sound, analyticsLocations[analyticsLocations.length - 1], soundGridLocation);
                                           }
@@ -679,7 +679,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
                     }
                   }
                   const items3 = [tmp6.button, tmp20, buttonPressed, tmp17, , , ];
-                  class E {
+                  class G {
                     constructor() {
                       openSoundboardSoundPreviewActionSheetDefault(channel, sound, analyticsLocations[analyticsLocations.length - 1], soundGridLocation);
                     }
@@ -698,7 +698,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
                 }
               }
             }
-            class E {
+            class G {
               constructor() {
                 openSoundboardSoundPreviewActionSheetDefault(channel, sound, analyticsLocations[analyticsLocations.length - 1], soundGridLocation);
               }
@@ -707,8 +707,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
             cResult[11] = channel;
             cResult[12] = sound;
             cResult[13] = soundGridLocation;
-            cResult[14] = E;
-            tmp19 = E;
+            cResult[14] = G;
+            tmp19 = G;
           }
         }
       }
@@ -735,7 +735,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
   cResult[5] = soundGridLocation;
   cResult[6] = fn;
   tmp10 = fn;
-}) : ((sound) => {
+}) : (function SoundButtonComponent(sound) {
   let items3;
   sound = sound.sound;
   const channel = sound.channel;

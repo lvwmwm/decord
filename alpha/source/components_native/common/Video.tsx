@@ -1,39 +1,39 @@
-// Module ID: 7993
-// Function ID: 7994
+// Module ID: 8401
+// Function ID: 8402
 // Name: common/Video
-// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 7994, 4595, 7944, 6541, 1126, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 587, 558, 576, 8402, 4787, 8362, 6717, 6164, 1126, 2]
 // Exports: createVideoControls
 
-// Module 7993 (common/Video)
+// Module 8401 (common/Video)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 4595 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6541 */;
-import openMediaModal2 from "openMediaModal" /* 7944 */;
+import native from "native" /* 4787 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6717 */;
+import openMediaModal2 from "openMediaModal" /* 8362 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let _require, closure_0, dependencyMap, tmp2;
+let _require, closure_0, tmp2;
 
-let closure_4;
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
-({ TouchableWithoutFeedback: closure_4, View: hasOwnProperty, Image: metroRequire, AppState: metroImportDefault } = react_native);
+({ TouchableWithoutFeedback: hasOwnProperty, View: metroRequire, AppState: metroImportDefault } = react_native);
 const jsx = Fragment.jsx;
 let obj = { container: obj2, video: obj3 };
 obj2 = { flex: 1, shadowColor: nativeDefault.unsafe_rawColors.BLACK, shadowOpacity: 0.5, shadowOffset: { height: 1, width: 0 }, shadowRadius: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 const createLegacyClassComponentStyles = createStyles.createLegacyClassComponentStyles;
 obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 const React4 = createLegacyClassComponentStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoComponent(arg0) {
   let ariaHidden;
   let controls;
   let disableFocus;
@@ -72,13 +72,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   _require = tmp6;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(7994);
+    const tmpResult = tmp(8402);
     cResult[0] = tmpResult;
     let first = tmpResult;
   } else {
     first = cResult[0];
   }
-  [r10058, dependencyMap] = react.useState("active" === closure_7.currentState);
+  [r10058, importDefault] = react.useState("active" === closure_7.currentState);
   _slicedToArray(react.useState("active" === closure_7.currentState), 2);
   const obj2 = react;
   if (cResult[1] !== (undefined === pauseWhileAppInactive || pauseWhileAppInactive)) {
@@ -88,8 +88,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (tmp) {
           tmp2 = closure_1_7;
           str = "change";
-          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F138699 */ });
-          return () => { /* body not rendered: F138700 */ };
+          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F140265 */ });
+          return () => { /* body not rendered: F140266 */ };
         } else {
           return;
         }
@@ -108,8 +108,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (tmp) {
           tmp2 = closure_1_7;
           str = "change";
-          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F138699 */ });
-          return () => { /* body not rendered: F138700 */ };
+          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F140265 */ });
+          return () => { /* body not rendered: F140266 */ };
         } else {
           return;
         }
@@ -125,8 +125,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (tmp) {
           tmp2 = closure_1_7;
           str = "change";
-          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F138699 */ });
-          return () => { /* body not rendered: F138700 */ };
+          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F140265 */ });
+          return () => { /* body not rendered: F140266 */ };
         } else {
           return;
         }
@@ -141,8 +141,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (tmp) {
           tmp2 = closure_1_7;
           str = "change";
-          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F138699 */ });
-          return () => { /* body not rendered: F138700 */ };
+          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F140265 */ });
+          return () => { /* body not rendered: F140266 */ };
         } else {
           return;
         }
@@ -156,8 +156,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (tmp) {
           tmp2 = closure_1_7;
           str = "change";
-          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F138699 */ });
-          return () => { /* body not rendered: F138700 */ };
+          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F140265 */ });
+          return () => { /* body not rendered: F140266 */ };
         } else {
           return;
         }
@@ -186,7 +186,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[22] = tmp4;
   cResult[23] = undefined;
   cResult[24] = <_default style={style} source={source} importantForAccessibility={importantForAccessibility} poster={poster} muted={undefined === muted || muted} paused={tmp4} posterResizeMode={str2} resizeMode={str} repeat playInBackground={undefined !== playInBackground && playInBackground} pictureInPicture={false} playWhenInactive={false} onLoadStart={onLoadStart} onLoad={onLoad} onReadyForDisplay={onReadyForDisplay} onError={onError} onEnd={onEnd} disableFocus={disableFocus} aria-hidden={ariaHidden} mixWithOthers={mixWithOthers} preventsDisplaySleepDuringVideoPlayback={undefined === preventsDisplaySleepDuringVideoPlayback || preventsDisplaySleepDuringVideoPlayback} httpEngine={httpEngine} />;
-}) : ((paused) => {
+}) : (function VideoComponent(paused) {
   let ariaHidden;
   let closure_1;
   let controls;
@@ -232,10 +232,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (flag4 === undefined) {
     flag4 = true;
   }
-  dependencyMap = undefined;
+  closure_1 = undefined;
   const httpEngine = paused.httpEngine;
-  const _default = pauseWhileAppInactive(7994).default;
-  [first, dependencyMap] = react.useState("active" === closure_7.currentState);
+  const _default = pauseWhileAppInactive(8402).default;
+  [first, closure_1] = react.useState("active" === closure_7.currentState);
   const items = [pauseWhileAppInactive];
   const effect = react.useEffect(() => {
     const tmp = closure_0;
@@ -336,11 +336,23 @@ class Video extends PureComponent {
     return null;
   }
   renderImage() {
-    const src = this.props.src;
+    let ariaHidden;
+    let obj2;
+    let src;
+    let str2;
+    ({ src, ariaHidden } = this.props);
     if ("uri" in src) {
       if ("" !== src.uri) {
+        const obj = { source: obj2, style: size, accessible: true !== ariaHidden, accessibilityElementsHidden: ariaHidden, importantForAccessibility: str2 };
         size = { width: tmp, height: tmp2 };
-        return <metroRequire source={{ uri: src.uri }} style={size} aria-hidden={tmp3} />;
+        obj2 = { uri: src.uri };
+        str2 = undefined;
+        const tmp3 = jsx;
+        const tmp6 = FastImageDefault;
+        if (true === ariaHidden) {
+          str2 = "no-hide-descendants";
+        }
+        return tmp3(tmp6, obj);
       }
     }
   }
@@ -365,7 +377,7 @@ class Video extends PureComponent {
     const tmp2Result = <tmp3 ref={this.ref} style={items} accessible={null != accessibilityLabel} accessibilityLabel={accessibilityLabel}>{tmp4}</tmp3>;
     let tmp2Result2 = tmp2Result;
     if (canOpenFullscreen) {
-      const tmp8 = React3;
+      const tmp8 = hasOwnProperty;
       if (accessibilityLabel == null) {
         const intl = intl2.intl;
         accessibilityLabel = intl.string(intl2.t.OIDkcp);
@@ -383,7 +395,8 @@ const result = size.fileFinishedImporting("components_native/common/Video.tsx");
 
 export default Video;
 export const createVideoControls = function createVideoControls(NOOP) {
-  const ref = react.createRef();
+  let ref;
+  ref = ref.createRef();
   let c5 = 0;
   let c6 = 0;
   let progressPercent = 0;
@@ -402,7 +415,7 @@ export const createVideoControls = function createVideoControls(NOOP) {
       NOOP(arg0);
       if (closure_8 !== arg0) {
         closure_8 = arg0;
-        if (_slicedToArray != null) {
+        if (dependencyMap != null) {
           tmp2(closure_8);
         }
       }
@@ -428,20 +441,20 @@ export const createVideoControls = function createVideoControls(NOOP) {
       onPlaybackRateChange(nativeEvent) {
         if (closure_8 !== 0 === nativeEvent.playbackRate) {
           closure_8 = tmp;
-          if (_slicedToArray != null) {
+          if (dependencyMap != null) {
             tmp2(closure_8);
           }
         }
       },
       onProgress(arg0) {
         ({ currentTime: c5, seekableDuration: c6 } = arg0);
-        if (dependencyMap != null) {
+        if (importDefault != null) {
           tmp(c5, c6);
         }
       },
       onDownloadProgress(progressPercent) {
         progressPercent = progressPercent.progressPercent;
-        if (react != null) {
+        if (_slicedToArray != null) {
           tmp(progressPercent);
         }
       }

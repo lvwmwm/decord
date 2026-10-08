@@ -1,20 +1,20 @@
-// Module ID: 9390
-// Function ID: 9391
+// Module ID: 8811
+// Function ID: 8812
 // Name: useIsSecureFramesKeyInconsistent
-// Dependencies: [19, 4919, 4935, 558, 576, 9378, 504, 2]
+// Dependencies: [19, 5108, 7423, 558, 576, 8800, 504, 2]
 
-// Module 9390 (useIsSecureFramesKeyInconsistent)
-import SecureFramesUtils from "SecureFramesUtils" /* 9378 */;
+// Module 8811 (useIsSecureFramesKeyInconsistent)
+import SecureFramesUtils from "SecureFramesUtils" /* 8800 */;
 import react from "react" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4935 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7423 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channelId, clearTimeoutResult, num, tmp6;
+let clearTimeoutResult, num, tmp6;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSecureFramesKeyInconsistent(userId) {
   let first;
   let tmp7;
   let obj = userId(576);
@@ -42,7 +42,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7);
-}) : ((userId) => {
+}) : (function useIsSecureFramesKeyInconsistent(userId) {
   userId = userId.userId;
   let obj = userId(504);
   let items = [RTCConnectionStore, StreamRTCConnectionStore];
@@ -54,7 +54,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
 });
 let ref = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAlertIfSecureFramesKeyInconsistent(channelId) {
   let tmp2;
   let userId;
   let obj = channelId(userId[4]);
@@ -100,11 +100,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
           tmp6 = globalThis;
           _setTimeout = setTimeout;
           num = 1000;
-          tmp2.current = setTimeout(() => { /* body not rendered: F140018 */ }, 1000);
+          tmp2.current = setTimeout(() => { /* body not rendered: F140683 */ }, 1000);
           tmp4 = tmp2;
         }
         current = tmp4.current;
-        return () => { /* body not rendered: F140019 */ };
+        return () => { /* body not rendered: F140684 */ };
       }
       tmp4 = closure_5;
       clearTimeoutResult = clearTimeout(closure_5.current);
@@ -122,7 +122,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[8] = items;
   tmp5 = items;
   tmp4 = S;
-}) : ((channelId) => {
+}) : (function useAlertIfSecureFramesKeyInconsistent(channelId) {
   channelId = channelId.channelId;
   const userId = channelId.userId;
   const nickname = channelId.nickname;

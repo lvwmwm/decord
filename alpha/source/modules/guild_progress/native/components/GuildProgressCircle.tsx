@@ -1,16 +1,16 @@
-// Module ID: 12265
-// Function ID: 12266
+// Module ID: 12344
+// Function ID: 12345
 // Name: GuildProgressCircle
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 12266, 12145, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 12345, 12224, 2]
 
-// Module 12265 (GuildProgressCircle)
+// Module 12344 (GuildProgressCircle)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ProgressCircleDefault from "ProgressCircle" /* 12266 */;
+import ProgressCircleDefault from "ProgressCircle" /* 12345 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -18,13 +18,13 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const GuildProgressUtils = tmp(12145);
+const GuildProgressUtils = tmp(12224);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { wrapper: { position: "relative" }, circle: { position: "absolute" }, progressCircle: obj2 };
 obj2 = { color: nativeDefault.colors.BACKGROUND_BRAND };
 let closure_6 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProgressCircle(arg0) {
   let items;
   let percent;
   let style;
@@ -132,7 +132,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = result;
   cResult[2] = size1;
   tmp6 = size1;
-}) : ((size) => {
+}) : (function GuildProgressCircle(size) {
   let items;
   let items1;
   let items2;

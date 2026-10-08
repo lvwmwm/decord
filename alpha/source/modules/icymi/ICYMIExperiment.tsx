@@ -1,14 +1,14 @@
-// Module ID: 8040
-// Function ID: 8041
+// Module ID: 8448
+// Function ID: 8449
 // Name: ICYMIExperiment
-// Dependencies: [8041, 1440, 558, 576, 8043, 2]
+// Dependencies: [8449, 1452, 558, 576, 8451, 2]
 // Exports: getICYMIEnabled, icymiEnabled
 
-// Module 8040 (ICYMIExperiment)
+// Module 8448 (ICYMIExperiment)
 import react from "react" /* 576 */;
-import useLabFeatureDefault from "useLabFeature" /* 8043 */;
-import LabFeatureStore from "LabFeatureStore" /* 8041 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1440 */;
+import useLabFeatureDefault from "useLabFeature" /* 8451 */;
+import LabFeatureStore from "LabFeatureStore" /* 8449 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let obj = { name: "2026-04-icymi-staff-only", kind: "user", defaultConfig: { ena
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMIEnabled(location) {
   let tmp3;
   let tmp4;
   const obj = react;
@@ -46,7 +46,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
   }
   const config = apexExperiment2.useConfig(tmp4);
   return !tmp2 && enabled;
-}) : ((location) => {
+}) : (function useICYMIEnabled(location) {
   const obj = { location };
   const obj2 = { location };
   const tmp = useLabFeatureDefault(hide_icymi_tab);

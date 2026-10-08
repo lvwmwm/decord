@@ -1,17 +1,17 @@
-// Module ID: 14441
-// Function ID: 14442
+// Module ID: 14666
+// Function ID: 14667
 // Name: HSVColorPicker
-// Dependencies: [19, 17, 21, 4896, 558, 576, 4618, 14442, 14443, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 4810, 14667, 14668, 2]
 
-// Module 14441 (HSVColorPicker)
+// Module 14666 (HSVColorPicker)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import SaturationValueColorPickerDefault from "SaturationValueColorPicker" /* 14442 */;
-import HuePickerDefault from "HuePicker" /* 14443 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import SaturationValueColorPickerDefault from "SaturationValueColorPicker" /* 14667 */;
+import HuePickerDefault from "HuePicker" /* 14668 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let hasOwnProperty;
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ hsvColorPicker: { alignItems: "center" } });
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HSVColorPicker(arg0) {
   let hue;
   let hueColorBarInnerStyle;
   let huePickerStyle;
@@ -130,7 +130,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = value;
   cResult[9] = tmp9;
   tmp8 = tmp9;
-}) : ((arg0) => {
+}) : (function HSVColorPicker(arg0) {
   let hue;
   let hueColorBarInnerStyle;
   let huePickerStyle;

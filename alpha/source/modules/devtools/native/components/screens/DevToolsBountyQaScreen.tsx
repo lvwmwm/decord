@@ -1,24 +1,24 @@
-// Module ID: 15511
-// Function ID: 15512
+// Module ID: 15773
+// Function ID: 15774
 // Name: DevToolsBountyQaScreen
-// Dependencies: [5, 32, 19, 17, 7197, 21, 4896, 587, 4574, 558, 576, 1618, 5633, 7198, 504, 10962, 10007, 5637, 4892, 6078, 6079, 14926, 6000, 14924, 6465, 6081, 2]
+// Dependencies: [5, 32, 19, 17, 7376, 21, 5090, 587, 4766, 558, 576, 1630, 5980, 7377, 504, 11155, 9537, 5984, 5086, 6264, 6265, 15188, 6184, 15186, 6643, 6267, 2]
 
-// Module 15511 (DevToolsBountyQaScreen)
+// Module 15773 (DevToolsBountyQaScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import AdCreativeType from "AdCreativeType" /* 5637 */;
-import QuestActionCreators from "QuestActionCreators" /* 10007 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import AdCreativeType from "AdCreativeType" /* 5984 */;
+import QuestActionCreators from "QuestActionCreators" /* 9537 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7197 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7376 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let _require, c1, c3;
+let c1, c3;
 
 let c9;
 let metroImportAll;
@@ -38,7 +38,7 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
 createStyles = createStyles.createStyles;
 obj3 = { padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };
 let closure_11 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBountyQaScreen() {
   let first;
   let items1;
   let items2;
@@ -51,7 +51,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj = stateFromStores(576);
   const cResult = obj.c(39);
   const tmp4 = closure_11();
-  const tmp5 = str(1618)();
+  const tmp5 = str(1630)();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     items = [AdDeliveryStore];
     const fn = function h() {
@@ -93,434 +93,197 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     str = first;
   }
   if (cResult[2] === stateFromStores) {
-    let tmp15;
+    let arr2;
     if (cResult[3] === null != stateFromStores) {
-      tmp15 = cResult[4];
+      arr2 = cResult[4];
     }
     if (cResult[5] === stateFromStores) {
+      let tmp15;
+      let tmp17;
       let tmp18;
       let tmp20;
       if (cResult[6] === str) {
-        tmp18 = cResult[7];
+        tmp15 = cResult[7];
       }
       const _Symbol = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        class D {
-          constructor() {
-            const obj = stateFromStores(dependencyMap[16]);
-            const questToDeliver = obj.fetchQuestToDeliver(stateFromStores(dependencyMap[12]).AdPlacement.MOBILE_HOME_DOCK_AREA, "devTools-bountyQa");
-            const obj2 = str(dependencyMap[8]);
-            obj2.open({ content: "Refreshing dock serve", key: "bounty-qa-refresh" });
-          }
+        function handleRefreshOrganicServe() {
+          const obj = stateFromStores(dependencyMap[16]);
+          const questToDeliver = obj.fetchQuestToDeliver(stateFromStores(dependencyMap[12]).AdPlacement.MOBILE_HOME_DOCK_AREA, "devTools-bountyQa");
+          const obj2 = str(dependencyMap[8]);
+          obj2.open({ content: "Refreshing dock serve", key: "bounty-qa-refresh" });
         }
-        cResult[8] = D;
-        tmp20 = D;
+        cResult[8] = handleRefreshOrganicServe;
+        tmp17 = handleRefreshOrganicServe;
       } else {
-        class D {
-          constructor() {
-            const obj = stateFromStores(dependencyMap[16]);
-            const questToDeliver = obj.fetchQuestToDeliver(stateFromStores(dependencyMap[12]).AdPlacement.MOBILE_HOME_DOCK_AREA, "devTools-bountyQa");
-            const obj2 = str(dependencyMap[8]);
-            obj2.open({ content: "Refreshing dock serve", key: "bounty-qa-refresh" });
-          }
-        }
+        tmp17 = cResult[8];
       }
       if (cResult[9] !== stateFromStores) {
-        class B {
-          constructor() {
-            if (null != stateFromStores) {
-              items = [tmp];
-              const obj2 = QuestActionCreators;
-              obj2.markAdContentUnseen(AdCreativeType.AdCreativeType.BOUNTY, items);
-              const obj3 = ToastActionCreatorsDefault;
-              obj3.open({ content: "Reset seen", key: "bounty-qa-reset-seen" });
-            } else {
-              const obj = ToastActionCreatorsDefault;
-              obj.open({ content: "No dock bounty in memory to reset seen for.", key: "bounty-qa-missing-id" });
-            }
+        function handleResetSeen() {
+          if (null != stateFromStores) {
+            items = [tmp];
+            const obj2 = QuestActionCreators;
+            obj2.markAdContentUnseen(AdCreativeType.AdCreativeType.BOUNTY, items);
+            const obj3 = ToastActionCreatorsDefault;
+            obj3.open({ content: "Reset seen", key: "bounty-qa-reset-seen" });
+          } else {
+            const obj = ToastActionCreatorsDefault;
+            obj.open({ content: "No dock bounty in memory to reset seen for.", key: "bounty-qa-missing-id" });
           }
         }
         cResult[9] = stateFromStores;
-        cResult[10] = B;
+        cResult[10] = handleResetSeen;
+        tmp18 = handleResetSeen;
       } else {
-        class B {
-          constructor() {
-            if (null != stateFromStores) {
-              items = [tmp];
-              const obj2 = QuestActionCreators;
-              obj2.markAdContentUnseen(AdCreativeType.AdCreativeType.BOUNTY, items);
-              const obj3 = ToastActionCreatorsDefault;
-              obj3.open({ content: "Reset seen", key: "bounty-qa-reset-seen" });
-            } else {
-              const obj = ToastActionCreatorsDefault;
-              obj.open({ content: "No dock bounty in memory to reset seen for.", key: "bounty-qa-missing-id" });
-            }
-          }
-        }
+        tmp18 = cResult[10];
       }
       const sum = tmp4.content.padding + tmp5.bottom;
       const container = tmp4.container;
       if (cResult[11] !== sum) {
-        class B {
-          constructor() {
-            if (null != stateFromStores) {
-              items = [tmp];
-              const obj2 = QuestActionCreators;
-              obj2.markAdContentUnseen(AdCreativeType.AdCreativeType.BOUNTY, items);
-              const obj3 = ToastActionCreatorsDefault;
-              obj3.open({ content: "Reset seen", key: "bounty-qa-reset-seen" });
-            } else {
-              const obj = ToastActionCreatorsDefault;
-              obj.open({ content: "No dock bounty in memory to reset seen for.", key: "bounty-qa-missing-id" });
-            }
-          }
-        }
-        tmp24[0] = sum;
+        let obj2 = { paddingBottom: sum };
         cResult[11] = sum;
-        cResult[12] = tmp24;
+        cResult[12] = obj2;
+        tmp20 = obj2;
       } else {
-        class B {
-          constructor() {
-            if (null != stateFromStores) {
-              items = [tmp];
-              const obj2 = QuestActionCreators;
-              obj2.markAdContentUnseen(AdCreativeType.AdCreativeType.BOUNTY, items);
-              const obj3 = ToastActionCreatorsDefault;
-              obj3.open({ content: "Reset seen", key: "bounty-qa-reset-seen" });
-            } else {
-              const obj = ToastActionCreatorsDefault;
-              obj.open({ content: "No dock bounty in memory to reset seen for.", key: "bounty-qa-missing-id" });
-            }
-          }
-        }
+        tmp20 = cResult[12];
       }
       if (cResult[13] === tmp4.content) {
-        let tmp26;
-        class B {
-          constructor() {
-            if (null != stateFromStores) {
-              items = [tmp];
-              const obj2 = QuestActionCreators;
-              obj2.markAdContentUnseen(AdCreativeType.AdCreativeType.BOUNTY, items);
-              const obj3 = ToastActionCreatorsDefault;
-              obj3.open({ content: "Reset seen", key: "bounty-qa-reset-seen" });
-            } else {
-              const obj = ToastActionCreatorsDefault;
-              obj.open({ content: "No dock bounty in memory to reset seen for.", key: "bounty-qa-missing-id" });
-            }
-          }
+        let tmp21;
+        let tmp22;
+        let tmp25;
+        if (cResult[14] === tmp20) {
+          tmp21 = cResult[15];
         }
         let str4 = "No dock bounty in memory (app kill or refresh). Use a lookback window.";
         if (null != stateFromStores) {
-          class B {
-            constructor() {
-              if (null != stateFromStores) {
-                items = [tmp];
-                const obj2 = QuestActionCreators;
-                obj2.markAdContentUnseen(AdCreativeType.AdCreativeType.BOUNTY, items);
-                const obj3 = ToastActionCreatorsDefault;
-                obj3.open({ content: "Reset seen", key: "bounty-qa-reset-seen" });
-              } else {
-                const obj = ToastActionCreatorsDefault;
-                obj.open({ content: "No dock bounty in memory to reset seen for.", key: "bounty-qa-missing-id" });
-              }
-            }
-          }
+          const _HermesInternal2 = HermesInternal;
           str4 = "Last dock bounty still in memory: " + stateFromStores + ".";
         }
         if (cResult[16] !== str4) {
-          class B {
-            constructor() {
-              if (null != stateFromStores) {
-                items = [tmp];
-                const obj2 = QuestActionCreators;
-                obj2.markAdContentUnseen(AdCreativeType.AdCreativeType.BOUNTY, items);
-                const obj3 = ToastActionCreatorsDefault;
-                obj3.open({ content: "Reset seen", key: "bounty-qa-reset-seen" });
-              } else {
-                const obj = ToastActionCreatorsDefault;
-                obj.open({ content: "No dock bounty in memory to reset seen for.", key: "bounty-qa-missing-id" });
-              }
-            }
-          }
-          let obj2 = { variant: "text-sm/medium", color: "text-muted", children: str4 };
-          const tmp27 = closure_8(tmp(4892).Text, obj2);
+          let obj3 = { variant: "text-sm/medium", color: "text-muted", children: str4 };
+          const tmp24 = closure_8(tmp(5086).Text, obj3);
           cResult[16] = str4;
-          cResult[17] = tmp27;
-          tmp26 = tmp27;
+          cResult[17] = tmp24;
+          tmp22 = tmp24;
         } else {
-          class B {
-            constructor() {
-              if (null != stateFromStores) {
-                items = [tmp];
-                const obj2 = QuestActionCreators;
-                obj2.markAdContentUnseen(AdCreativeType.AdCreativeType.BOUNTY, items);
-                const obj3 = ToastActionCreatorsDefault;
-                obj3.open({ content: "Reset seen", key: "bounty-qa-reset-seen" });
-              } else {
-                const obj = ToastActionCreatorsDefault;
-                obj.open({ content: "No dock bounty in memory to reset seen for.", key: "bounty-qa-missing-id" });
-              }
-            }
-          }
+          tmp22 = cResult[17];
         }
-        if (cResult[18] !== tmp15) {
-          class B {
-            constructor() {
-              if (null != stateFromStores) {
-                items = [tmp];
-                const obj2 = QuestActionCreators;
-                obj2.markAdContentUnseen(AdCreativeType.AdCreativeType.BOUNTY, items);
-                const obj3 = ToastActionCreatorsDefault;
-                obj3.open({ content: "Reset seen", key: "bounty-qa-reset-seen" });
-              } else {
-                const obj = ToastActionCreatorsDefault;
-                obj.open({ content: "No dock bounty in memory to reset seen for.", key: "bounty-qa-missing-id" });
-              }
-            }
-          }
-          cResult[18] = tmp15;
-          cResult[19] = tmp29;
+        if (cResult[18] !== arr2) {
+          const mapped = arr2.map((value) => {
+            let label;
+            let subLabel;
+            value = value.value;
+            ({ label, subLabel } = value);
+            return closure_1_8(stateFromStores(dependencyMap[19]).TableRadioRow, { value, label, subLabel }, value);
+          });
+          cResult[18] = arr2;
+          cResult[19] = mapped;
+          tmp25 = mapped;
         } else {
-          class B {
-            constructor() {
-              if (null != stateFromStores) {
-                items = [tmp];
-                const obj2 = QuestActionCreators;
-                obj2.markAdContentUnseen(AdCreativeType.AdCreativeType.BOUNTY, items);
-                const obj3 = ToastActionCreatorsDefault;
-                obj3.open({ content: "Reset seen", key: "bounty-qa-reset-seen" });
-              } else {
-                const obj = ToastActionCreatorsDefault;
-                obj.open({ content: "No dock bounty in memory to reset seen for.", key: "bounty-qa-missing-id" });
-              }
-            }
-          }
+          tmp25 = cResult[19];
         }
         if (cResult[20] === str) {
+          let tmp27;
+          let tmp30;
           let tmp33;
-          let tmp37;
-          class B {
-            constructor() {
-              if (null != stateFromStores) {
-                items = [tmp];
-                const obj2 = QuestActionCreators;
-                obj2.markAdContentUnseen(AdCreativeType.AdCreativeType.BOUNTY, items);
-                const obj3 = ToastActionCreatorsDefault;
-                obj3.open({ content: "Reset seen", key: "bounty-qa-reset-seen" });
-              } else {
-                const obj = ToastActionCreatorsDefault;
-                obj.open({ content: "No dock bounty in memory to reset seen for.", key: "bounty-qa-missing-id" });
-              }
-            }
+          let tmp36;
+          if (cResult[21] === tmp25) {
+            tmp27 = cResult[22];
           }
           const _Symbol2 = Symbol;
           if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
-            class B {
-              constructor() {
-                if (null != stateFromStores) {
-                  items = [tmp];
-                  const obj2 = QuestActionCreators;
-                  obj2.markAdContentUnseen(AdCreativeType.AdCreativeType.BOUNTY, items);
-                  const obj3 = ToastActionCreatorsDefault;
-                  obj3.open({ content: "Reset seen", key: "bounty-qa-reset-seen" });
-                } else {
-                  const obj = ToastActionCreatorsDefault;
-                  obj.open({ content: "No dock bounty in memory to reset seen for.", key: "bounty-qa-missing-id" });
-                }
-              }
-            }
-            const tmp34 = closure_8(tmp(14926).UndoIcon, {});
-            cResult[23] = tmp34;
-            tmp33 = tmp34;
+            const tmp32 = closure_8(tmp(15188).UndoIcon, {});
+            cResult[23] = tmp32;
+            tmp30 = tmp32;
           } else {
-            class B {
-              constructor() {
-                if (null != stateFromStores) {
-                  items = [tmp];
-                  const obj2 = QuestActionCreators;
-                  obj2.markAdContentUnseen(AdCreativeType.AdCreativeType.BOUNTY, items);
-                  const obj3 = ToastActionCreatorsDefault;
-                  obj3.open({ content: "Reset seen", key: "bounty-qa-reset-seen" });
-                } else {
-                  const obj = ToastActionCreatorsDefault;
-                  obj.open({ content: "No dock bounty in memory to reset seen for.", key: "bounty-qa-missing-id" });
-                }
-              }
-            }
+            tmp30 = cResult[23];
           }
-          if (cResult[24] !== tmp18) {
-            class B {
-              constructor() {
-                if (null != stateFromStores) {
-                  items = [tmp];
-                  const obj2 = QuestActionCreators;
-                  obj2.markAdContentUnseen(AdCreativeType.AdCreativeType.BOUNTY, items);
-                  const obj3 = ToastActionCreatorsDefault;
-                  obj3.open({ content: "Reset seen", key: "bounty-qa-reset-seen" });
-                } else {
-                  const obj = ToastActionCreatorsDefault;
-                  obj.open({ content: "No dock bounty in memory to reset seen for.", key: "bounty-qa-missing-id" });
-                }
-              }
-            }
-            let obj3 = { label: "Reset and re-serve", subLabel: "Clears serve, dismiss, claim, and impression for the selected scope, then asks the dock for a new decision.", icon: tmp33, onPress: tmp18 };
-            cResult[24] = tmp18;
-            cResult[25] = closure_8(tmp(6000).TableRow, obj3);
-            const tmp36 = closure_8(tmp(6000).TableRow, obj3);
+          if (cResult[24] !== tmp15) {
+            let obj4 = { label: "Reset and re-serve", subLabel: "Clears serve, dismiss, claim, and impression for the selected scope, then asks the dock for a new decision.", icon: tmp30, onPress: tmp15 };
+            const tmp35 = closure_8(tmp(6184).TableRow, obj4);
+            cResult[24] = tmp15;
+            cResult[25] = tmp35;
+            tmp33 = tmp35;
           } else {
-            class B {
-              constructor() {
-                if (null != stateFromStores) {
-                  items = [tmp];
-                  const obj2 = QuestActionCreators;
-                  obj2.markAdContentUnseen(AdCreativeType.AdCreativeType.BOUNTY, items);
-                  const obj3 = ToastActionCreatorsDefault;
-                  obj3.open({ content: "Reset seen", key: "bounty-qa-reset-seen" });
-                } else {
-                  const obj = ToastActionCreatorsDefault;
-                  obj.open({ content: "No dock bounty in memory to reset seen for.", key: "bounty-qa-missing-id" });
-                }
-              }
-            }
+            tmp33 = cResult[25];
           }
           const _Symbol3 = Symbol;
           if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
-            class B {
-              constructor() {
-                if (null != stateFromStores) {
-                  items = [tmp];
-                  const obj2 = QuestActionCreators;
-                  obj2.markAdContentUnseen(AdCreativeType.AdCreativeType.BOUNTY, items);
-                  const obj3 = ToastActionCreatorsDefault;
-                  obj3.open({ content: "Reset seen", key: "bounty-qa-reset-seen" });
-                } else {
-                  const obj = ToastActionCreatorsDefault;
-                  obj.open({ content: "No dock bounty in memory to reset seen for.", key: "bounty-qa-missing-id" });
-                }
-              }
-            }
-            let obj4 = { label: "Refresh Organic Serve", subLabel: "Re-runs the dock decision without clearing delivery state. Use to confirm a cooldown still blocks.", icon: closure_8(tmp(14924).RedoIcon, {}), onPress: tmp20 };
-            const TableRow = tmp(6000).TableRow;
-            const tmp38 = closure_8(TableRow, obj4);
+            let obj5 = { label: "Refresh Organic Serve", subLabel: "Re-runs the dock decision without clearing delivery state. Use to confirm a cooldown still blocks.", icon: closure_8(tmp(15186).RedoIcon, {}), onPress: tmp17 };
+            const TableRow = tmp(6184).TableRow;
+            const tmp38 = closure_8(TableRow, obj5);
             cResult[26] = tmp38;
-            tmp37 = tmp38;
+            tmp36 = tmp38;
           } else {
-            class B {
-              constructor() {
-                if (null != stateFromStores) {
-                  items = [tmp];
-                  const obj2 = QuestActionCreators;
-                  obj2.markAdContentUnseen(AdCreativeType.AdCreativeType.BOUNTY, items);
-                  const obj3 = ToastActionCreatorsDefault;
-                  obj3.open({ content: "Reset seen", key: "bounty-qa-reset-seen" });
-                } else {
-                  const obj = ToastActionCreatorsDefault;
-                  obj.open({ content: "No dock bounty in memory to reset seen for.", key: "bounty-qa-missing-id" });
-                }
-              }
-            }
+            tmp36 = cResult[26];
           }
-          if (cResult[27] === tmp21) {
-            class B {
-              constructor() {
-                if (null != stateFromStores) {
-                  items = [tmp];
-                  const obj2 = QuestActionCreators;
-                  obj2.markAdContentUnseen(AdCreativeType.AdCreativeType.BOUNTY, items);
-                  const obj3 = ToastActionCreatorsDefault;
-                  obj3.open({ content: "Reset seen", key: "bounty-qa-reset-seen" });
-                } else {
-                  const obj = ToastActionCreatorsDefault;
-                  obj.open({ content: "No dock bounty in memory to reset seen for.", key: "bounty-qa-missing-id" });
-                }
-              }
+          if (cResult[27] === tmp18) {
+            let tmp39;
+            if (cResult[28] === null != stateFromStores) {
+              tmp39 = cResult[29];
             }
-            if (cResult[30] === tmp35) {
-              class B {
-                constructor() {
-                  if (null != stateFromStores) {
-                    items = [tmp];
-                    const obj2 = QuestActionCreators;
-                    obj2.markAdContentUnseen(AdCreativeType.AdCreativeType.BOUNTY, items);
-                    const obj3 = ToastActionCreatorsDefault;
-                    obj3.open({ content: "Reset seen", key: "bounty-qa-reset-seen" });
-                  } else {
-                    const obj = ToastActionCreatorsDefault;
-                    obj.open({ content: "No dock bounty in memory to reset seen for.", key: "bounty-qa-missing-id" });
-                  }
-                }
+            if (cResult[30] === tmp33) {
+              let tmp42;
+              if (cResult[31] === tmp39) {
+                tmp42 = cResult[32];
               }
               if (cResult[33] === tmp4.container) {
-                class B {
-                  constructor() {
-                    if (null != stateFromStores) {
-                      items = [tmp];
-                      const obj2 = QuestActionCreators;
-                      obj2.markAdContentUnseen(AdCreativeType.AdCreativeType.BOUNTY, items);
-                      const obj3 = ToastActionCreatorsDefault;
-                      obj3.open({ content: "Reset seen", key: "bounty-qa-reset-seen" });
-                    } else {
-                      const obj = ToastActionCreatorsDefault;
-                      obj.open({ content: "No dock bounty in memory to reset seen for.", key: "bounty-qa-missing-id" });
+                if (cResult[34] === tmp22) {
+                  if (cResult[35] === tmp27) {
+                    if (cResult[36] === tmp42) {
+                      let tmp45;
+                      if (cResult[37] === tmp21) {
+                        tmp45 = cResult[38];
+                      }
+                      return tmp45;
                     }
                   }
                 }
               }
-              let obj5 = { style: container, contentContainerStyle: tmp25, children: items1 };
-              items1 = [tmp26, tmp30, tmp41];
+              let obj6 = { style: container, contentContainerStyle: tmp21, children: items1 };
+              items1 = [tmp22, tmp27, tmp42];
+              const tmp48 = closure_9(ScrollView, obj6);
               cResult[33] = tmp4.container;
-              cResult[34] = tmp26;
-              cResult[35] = tmp30;
-              cResult[36] = tmp41;
-              cResult[37] = tmp25;
-              cResult[38] = closure_9(ScrollView, obj5);
-              const tmp47 = closure_9(ScrollView, obj5);
+              cResult[34] = tmp22;
+              cResult[35] = tmp27;
+              cResult[36] = tmp42;
+              cResult[37] = tmp21;
+              cResult[38] = tmp48;
+              tmp45 = tmp48;
             }
-            let obj6 = { title: "Dock QA", hasIcons: true, children: items2 };
-            items2 = [tmp35, tmp37, tmp39];
-            cResult[30] = tmp35;
+            let obj7 = { title: "Dock QA", hasIcons: true, children: items2 };
+            items2 = [tmp33, tmp36, tmp39];
+            const tmp44 = closure_9(tmp(6267).TableRowGroup, obj7);
+            cResult[30] = tmp33;
             cResult[31] = tmp39;
-            cResult[32] = closure_9(tmp(6081).TableRowGroup, obj6);
-            const tmp43 = closure_9(tmp(6081).TableRowGroup, obj6);
+            cResult[32] = tmp44;
+            tmp42 = tmp44;
           }
           let tmp40 = null;
           if (null != stateFromStores) {
-            class B {
-              constructor() {
-                if (null != stateFromStores) {
-                  items = [tmp];
-                  const obj2 = QuestActionCreators;
-                  obj2.markAdContentUnseen(AdCreativeType.AdCreativeType.BOUNTY, items);
-                  const obj3 = ToastActionCreatorsDefault;
-                  obj3.open({ content: "Reset seen", key: "bounty-qa-reset-seen" });
-                } else {
-                  const obj = ToastActionCreatorsDefault;
-                  obj.open({ content: "No dock bounty in memory to reset seen for.", key: "bounty-qa-missing-id" });
-                }
-              }
-            }
-            let obj7 = { label: "Reset Seen", subLabel: "Clears the Quest Home NEW pill for the last dock bounty. Does not restore the dock.", icon: closure_8(tmp(6465).EyeIcon, {}), onPress: tmp21 };
-            const TableRow2 = tmp(6000).TableRow;
-            tmp40 = closure_8(TableRow2, obj7);
+            let obj8 = { label: "Reset Seen", subLabel: "Clears the Quest Home NEW pill for the last dock bounty. Does not restore the dock.", icon: closure_8(tmp(6643).EyeIcon, {}), onPress: tmp18 };
+            const TableRow2 = tmp(6184).TableRow;
+            tmp40 = closure_8(TableRow2, obj8);
           }
-          cResult[27] = tmp21;
+          cResult[27] = tmp18;
           cResult[28] = null != stateFromStores;
           cResult[29] = tmp40;
+          tmp39 = tmp40;
         }
-        let obj8 = { title: "Reset scope", description: "Used by Reset and re-serve. Refresh Organic Serve ignores this.", value: str, onChange: tmp14, hasIcons: false, children: tmp28 };
-        const tmp32 = closure_8(tmp(6079).TableRadioGroup, obj8);
+        let obj9 = { title: "Reset scope", description: "Used by Reset and re-serve. Refresh Organic Serve ignores this.", value: str, onChange: tmp14, hasIcons: false, children: tmp25 };
+        const tmp29 = closure_8(tmp(6265).TableRadioGroup, obj9);
         cResult[20] = str;
-        cResult[21] = tmp28;
-        cResult[22] = tmp32;
+        cResult[21] = tmp25;
+        cResult[22] = tmp29;
+        tmp27 = tmp29;
       }
-      const items3 = [tmp4.content, tmp23];
+      const items3 = [tmp4.content, tmp20];
       cResult[13] = tmp4.content;
-      cResult[14] = tmp23;
+      cResult[14] = tmp20;
       cResult[15] = items3;
+      tmp21 = items3;
     }
-    const tmp19 = _asyncToGenerator;
-    _require = _asyncToGenerator(async (arg0, value) => {
+    let closure_0 = _asyncToGenerator(async (arg0, value) => {
       let obj4;
       let obj6;
       if (c3 === 2) {
@@ -620,48 +383,22 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[5] = stateFromStores;
     cResult[6] = str;
     cResult[7] = handleResetAndRefresh;
-    tmp18 = handleResetAndRefresh;
+    tmp15 = handleResetAndRefresh;
   }
   if (null != stateFromStores) {
-    class B {
-      constructor() {
-        if (null != stateFromStores) {
-          items = [tmp];
-          const obj2 = QuestActionCreators;
-          obj2.markAdContentUnseen(AdCreativeType.AdCreativeType.BOUNTY, items);
-          const obj3 = ToastActionCreatorsDefault;
-          obj3.open({ content: "Reset seen", key: "bounty-qa-reset-seen" });
-        } else {
-          const obj = ToastActionCreatorsDefault;
-          obj.open({ content: "No dock bounty in memory to reset seen for.", key: "bounty-qa-missing-id" });
-        }
-      }
-    }
     const _HermesInternal = HermesInternal;
-    tmp17[2] = "Creative " + stateFromStores;
-    const items4 = [tmp17];
+    const items4 = [{ value: "most_recent", label: "Most recent", subLabel: "Creative " + stateFromStores }];
+    let items5 = items4;
+    const obj10 = { value: "most_recent", label: "Most recent", subLabel: "Creative " + stateFromStores };
   } else {
-    class B {
-      constructor() {
-        if (null != stateFromStores) {
-          items = [tmp];
-          const obj2 = QuestActionCreators;
-          obj2.markAdContentUnseen(AdCreativeType.AdCreativeType.BOUNTY, items);
-          const obj3 = ToastActionCreatorsDefault;
-          obj3.open({ content: "Reset seen", key: "bounty-qa-reset-seen" });
-        } else {
-          const obj = ToastActionCreatorsDefault;
-          obj.open({ content: "No dock bounty in memory to reset seen for.", key: "bounty-qa-missing-id" });
-        }
-      }
-    }
+    items5 = [];
   }
-  const items5 = [...items];
+  const items6 = [...items];
   cResult[2] = stateFromStores;
   cResult[3] = null != stateFromStores;
-  cResult[4] = items5;
-  tmp15 = items5;
-}) : (() => {
+  cResult[4] = items6;
+  arr2 = items6;
+}) : (function DevToolsBountyQaScreen() {
   let first;
   let items4;
   let items5;

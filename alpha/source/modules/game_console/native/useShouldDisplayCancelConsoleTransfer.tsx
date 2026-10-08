@@ -1,9 +1,9 @@
-// Module ID: 17345
-// Function ID: 17346
+// Module ID: 17626
+// Function ID: 17627
 // Name: useShouldDisplayCancelConsoleTransfer
 // Dependencies: [32, 19, 558, 576, 2]
 
-// Module 17345 (useShouldDisplayCancelConsoleTransfer)
+// Module 17626 (useShouldDisplayCancelConsoleTransfer)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 let _require;
 
 let c4 = 6000;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldDisplayCancelConsoleTransfer(arg0) {
   let closure_0;
   let tmp2;
   let tmp4;
@@ -82,7 +82,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const effect = obj2.useEffect(tmp5, tmp6);
   return tmp4;
-}) : ((arg0) => {
+}) : (function useShouldDisplayCancelConsoleTransfer(arg0) {
   let closure_1;
   let first;
   let closure_0 = arg0;

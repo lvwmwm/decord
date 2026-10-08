@@ -1,26 +1,26 @@
-// Module ID: 7848
-// Function ID: 7849
+// Module ID: 8266
+// Function ID: 8267
 // Name: ProfileCustomizationUtils
-// Dependencies: [19, 7842, 7124, 2112, 558, 576, 504, 4735, 1126, 2]
+// Dependencies: [19, 8260, 7309, 2124, 558, 576, 504, 4929, 1126, 2]
 // Exports: announcePendingAvatarChange, getProfilePreviewValue, resolveCollectiblesOverride, showRemoveAvatar, showRemoveBanner
 
-// Module 7848 (ProfileCustomizationUtils)
+// Module 8266 (ProfileCustomizationUtils)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import shared from "shared" /* 4735 */;
+import shared from "shared" /* 4929 */;
 import react from "react" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7842 */;
-import UserProfileStore from "UserProfileStore" /* 7124 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8260 */;
+import UserProfileStore from "UserProfileStore" /* 7309 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, displayNameStyles;
+let _require, dependencyMap;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvatarsWithGuilds(arg0) {
   let first;
   let tmp5;
   const obj = react2;
@@ -62,7 +62,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp5 = cResult[2];
   }
   return tmp5;
-}) : ((arg0) => {
+}) : (function useAvatarsWithGuilds(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   return react.useMemo(() => {
@@ -91,7 +91,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildMemberAndUserPendingNameplate(id, arg1) {
   let closure_1;
   let first;
   let pendingErrors;
@@ -176,7 +176,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
   cResult[2] = id.id;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((nameplate, arg1) => {
+}) : (function useGuildMemberAndUserPendingNameplate(nameplate, arg1) {
   let closure_1;
   let pendingErrors;
   let pendingNameplate;
@@ -209,7 +209,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
   return obj3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((displayNameStyles, arg1) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildMemberOrUserPendingDisplayNameStyles(displayNameStyles, arg1) {
   let closure_1;
   let first;
   let pendingDisplayNameStyles;
@@ -302,7 +302,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((displayNameStyles, a
   cResult[2] = displayNameStyles;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((displayNameStyles, arg1) => {
+}) : (function useGuildMemberOrUserPendingDisplayNameStyles(displayNameStyles, arg1) {
   let closure_1;
   let displayNameStyles1;
   let pendingDisplayNameStyles;
@@ -341,7 +341,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((displayNameStyles, a
   return obj3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserAvatarDecoration(user) {
   let first;
   let guildId;
   const tmp = user;
@@ -387,7 +387,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[2] = user;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((user) => {
+}) : (function useUserAvatarDecoration(user) {
   let avatarDecoration;
   user = user.user;
   const guildId = user.guildId;
@@ -412,7 +412,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   return avatarDecoration;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfileEffect(user) {
   let first;
   let guildId;
   const tmp = user;
@@ -436,7 +436,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     const tmpResult = tmp(tmp2[6]);
     return tmpResult.useStateFromStores(first, tmp6);
   }
-  const fn = function o() {
+  const fn = function s() {
     let profileEffect;
     if (null == guildId) {
       const userProfile = UserProfileStore.getUserProfile(user.id);
@@ -457,7 +457,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[2] = user.id;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((arg0) => {
+}) : (function useUserProfileEffect(arg0) {
   let require;
   let user;
   ({ user: require, guildId: dependencyMap } = arg0);
@@ -482,7 +482,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfileFrame(user) {
   let first;
   let guildId;
   const tmp = user;
@@ -506,7 +506,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     const tmpResult = tmp(tmp2[6]);
     return tmpResult.useStateFromStores(first, tmp6);
   }
-  const fn = function o() {
+  const fn = function s() {
     let profileFrame;
     if (null == guildId) {
       const userProfile = UserProfileStore.getUserProfile(user.id);
@@ -527,7 +527,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[2] = user.id;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((arg0) => {
+}) : (function useUserProfileFrame(arg0) {
   let require;
   let user;
   ({ user: require, guildId: dependencyMap } = arg0);
@@ -552,7 +552,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvatarDecorationSettings(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -568,7 +568,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function o() {
+    const fn = function s() {
       const obj = { pendingAvatarDecoration: UserProfileSettingsStore.getPendingChanges(closure_0).pendingAvatarDecoration, errors: UserProfileSettingsStore.getErrors(closure_0).avatarDecoration };
       return obj;
     };
@@ -580,7 +580,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresObject(first, tmp6);
-}) : ((arg0) => {
+}) : (function useAvatarDecorationSettings(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -591,7 +591,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileEffectSettings(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -607,7 +607,7 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function o() {
+    const fn = function s() {
       const obj = { pendingProfileEffect: UserProfileSettingsStore.getPendingChanges(closure_0).pendingProfileEffect, errors: UserProfileSettingsStore.getErrors(closure_0).profileEffect };
       return obj;
     };
@@ -619,7 +619,7 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresObject(first, tmp6);
-}) : ((arg0) => {
+}) : (function useProfileEffectSettings(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -630,7 +630,7 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileFrameSettings(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -646,7 +646,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function o() {
+    const fn = function s() {
       const obj = { pendingProfileFrame: UserProfileSettingsStore.getPendingChanges(closure_0).pendingProfileFrame, errors: UserProfileSettingsStore.getErrors(closure_0).profileFrame };
       return obj;
     };
@@ -658,7 +658,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresObject(first, tmp6);
-}) : ((arg0) => {
+}) : (function useProfileFrameSettings(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");

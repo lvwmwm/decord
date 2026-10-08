@@ -1,18 +1,18 @@
-// Module ID: 8488
-// Function ID: 8489
+// Module ID: 8972
+// Function ID: 8973
 // Name: ProfileEffectSampleV2
-// Dependencies: [17, 8487, 21, 4896, 587, 558, 576, 8489, 5981, 8490, 2]
+// Dependencies: [17, 8971, 21, 5090, 587, 558, 576, 8973, 6164, 8974, 2]
 
-// Module 8488 (ProfileEffectSampleV2)
+// Module 8972 (ProfileEffectSampleV2)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 8487 */;
-import _modDef8489 from "module_8489" /* 8489 */;
-import ProfileEffectDefault from "ProfileEffect" /* 8490 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 8971 */;
+import _modDef8973 from "module_8973" /* 8973 */;
+import ProfileEffectDefault from "ProfileEffect" /* 8974 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,101 +29,91 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
 createStyles = createStyles.createStyles;
 size = { position: "absolute", height: "100%", width: "100%", borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
 let closure_6 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileEffectSample(arg0) {
   let hideBackground;
   let item;
-  let items1;
+  let items;
   const obj = react;
-  const cResult = obj.c(18);
+  const cResult = obj.c(16);
   ({ item, hideBackground } = arg0);
   const tmp4 = closure_6();
   if (cResult[0] === tmp4.profileContainer) {
     let tmp6;
-    let tmp7;
-    let tmp9;
-    let tmp11;
+    let tmp8;
+    let tmp10;
     if (cResult[1] === (!(undefined !== hideBackground && hideBackground) && tmp4.profileBackground)) {
       tmp6 = cResult[2];
     }
-    if (cResult[3] !== tmp4.sampleProfileImage) {
-      const items = [tmp4.sampleProfileImage];
-      cResult[3] = tmp4.sampleProfileImage;
-      cResult[4] = items;
-      tmp7 = items;
-    } else {
-      tmp7 = cResult[4];
-    }
     const _Symbol = Symbol;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { uri: _modDef8489 };
-      cResult[5] = obj2;
-      tmp9 = obj2;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj2 = { uri: _modDef8973 };
+      cResult[3] = obj2;
+      tmp8 = obj2;
     } else {
-      tmp9 = cResult[5];
+      tmp8 = cResult[3];
     }
-    if (cResult[6] !== tmp7) {
-      const obj3 = { style: tmp7, source: tmp9, accessible: false, resizeMode: "cover" };
-      const tmp14 = React3(FastImageDefault, obj3);
-      cResult[6] = tmp7;
-      cResult[7] = tmp14;
-      tmp11 = tmp14;
+    if (cResult[4] !== tmp4.sampleProfileImage) {
+      const obj3 = { style: tmp4.sampleProfileImage, source: tmp8, accessible: false, resizeMode: "cover" };
+      const tmp13 = React3(FastImageDefault, obj3);
+      cResult[4] = tmp4.sampleProfileImage;
+      cResult[5] = tmp13;
+      tmp10 = tmp13;
     } else {
-      tmp11 = cResult[7];
+      tmp10 = cResult[5];
     }
-    if (cResult[8] === (undefined !== hideBackground && hideBackground)) {
-      let tmp15;
-      let tmp19;
-      if (cResult[9] === tmp4.profileBorder) {
-        tmp15 = cResult[10];
+    if (cResult[6] === (undefined !== hideBackground && hideBackground)) {
+      let tmp14;
+      let tmp18;
+      if (cResult[7] === tmp4.profileBorder) {
+        tmp14 = cResult[8];
       }
-      if (cResult[11] !== item.skuId) {
+      if (cResult[9] !== item.skuId) {
         const obj4 = { skuId: item.skuId, bannerAdjustment: 0, useThumbnail: true };
-        const tmp22 = React3(ProfileEffectDefault, obj4);
-        cResult[11] = item.skuId;
-        cResult[12] = tmp22;
-        tmp19 = tmp22;
+        const tmp21 = React3(ProfileEffectDefault, obj4);
+        cResult[9] = item.skuId;
+        cResult[10] = tmp21;
+        tmp18 = tmp21;
       } else {
-        tmp19 = cResult[12];
+        tmp18 = cResult[10];
       }
-      if (cResult[13] === tmp6) {
-        if (cResult[14] === tmp11) {
-          if (cResult[15] === tmp15) {
-            let tmp23;
-            if (cResult[16] === tmp19) {
-              tmp23 = cResult[17];
+      if (cResult[11] === tmp6) {
+        if (cResult[12] === tmp10) {
+          if (cResult[13] === tmp14) {
+            let tmp22;
+            if (cResult[14] === tmp18) {
+              tmp22 = cResult[15];
             }
-            return tmp23;
+            return tmp22;
           }
         }
       }
-      const obj5 = { style: tmp6, children: items1 };
-      items1 = [tmp11, tmp15, tmp19];
-      const tmp26 = hasOwnProperty(View, obj5);
-      cResult[13] = tmp6;
-      cResult[14] = tmp11;
-      cResult[15] = tmp15;
-      cResult[16] = tmp19;
-      cResult[17] = tmp26;
-      tmp23 = tmp26;
+      const obj5 = { style: tmp6, children: items };
+      items = [tmp10, tmp14, tmp18];
+      const tmp25 = hasOwnProperty(View, obj5);
+      cResult[11] = tmp6;
+      cResult[12] = tmp10;
+      cResult[13] = tmp14;
+      cResult[14] = tmp18;
+      cResult[15] = tmp25;
+      tmp22 = tmp25;
     }
-    let tmp16 = !tmp3;
-    if (tmp16) {
+    let tmp15 = !tmp3;
+    if (tmp15) {
       const obj6 = { style: tmp4.profileBorder };
-      tmp16 = React3(View, obj6);
+      tmp15 = React3(View, obj6);
     }
-    cResult[8] = undefined !== hideBackground && hideBackground;
-    cResult[9] = tmp4.profileBorder;
-    cResult[10] = tmp16;
-    tmp15 = tmp16;
+    cResult[6] = undefined !== hideBackground && hideBackground;
+    cResult[7] = tmp4.profileBorder;
+    cResult[8] = tmp15;
+    tmp14 = tmp15;
   }
-  const items2 = [tmp4.profileContainer, !(undefined !== hideBackground && hideBackground) && tmp4.profileBackground];
+  const items1 = [tmp4.profileContainer, !(undefined !== hideBackground && hideBackground) && tmp4.profileBackground];
   cResult[0] = tmp4.profileContainer;
   cResult[1] = !(undefined !== hideBackground && hideBackground) && tmp4.profileBackground;
-  cResult[2] = items2;
-  tmp6 = items2;
-}) : ((hideBackground) => {
+  cResult[2] = items1;
+  tmp6 = items1;
+}) : (function ProfileEffectSample(hideBackground) {
   let items1;
-  let items2;
   let obj3;
   let flag = hideBackground.hideBackground;
   const item = hideBackground.item;
@@ -137,21 +127,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (!flag) {
     profileBackground = tmp.profileBackground;
   }
-  const obj = { style: items, children: items2 };
+  const obj = { style: items, children: items1 };
   items[1] = profileBackground;
-  const obj2 = { style: items1, source: obj3, accessible: false, resizeMode: "cover" };
-  items1 = [tmp.sampleProfileImage];
-  obj3 = { uri: _modDef8489 };
+  const obj2 = { style: tmp.sampleProfileImage, source: obj3, accessible: false, resizeMode: "cover" };
+  obj3 = { uri: _modDef8973 };
   const tmp7 = FastImageDefault;
-  items2 = [React3(tmp7, obj2), , ];
+  items1 = [React3(tmp7, obj2), , ];
   let tmp4Result = !flag;
   if (tmp4Result) {
     const obj4 = { style: tmp.profileBorder };
     tmp4Result = tmp4(tmp3, obj4);
   }
-  items2[1] = tmp4Result;
+  items1[1] = tmp4Result;
   const obj5 = { skuId: item.skuId, bannerAdjustment: 0, useThumbnail: true };
-  items2[2] = React3(ProfileEffectDefault, obj5);
+  items1[2] = React3(ProfileEffectDefault, obj5);
   return tmp2(View, obj);
 });
 size = size_mod;

@@ -1,16 +1,16 @@
-// Module ID: 9142
-// Function ID: 9143
+// Module ID: 10711
+// Function ID: 10712
 // Name: useVideoSpinnerTimer
-// Dependencies: [32, 19, 558, 576, 9139, 2]
+// Dependencies: [32, 19, 558, 576, 10709, 2]
 
-// Module 9142 (useVideoSpinnerTimer)
-import VideoSpinnerTimer from "VideoSpinnerTimer" /* 9139 */;
+// Module 10711 (useVideoSpinnerTimer)
+import VideoSpinnerTimer from "VideoSpinnerTimer" /* 10709 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoSpinnerTimer(location) {
   let _location;
   let tmp3;
   let videoSpinnerContext;
@@ -54,17 +54,19 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
       }
     }
   }
-  const fn2 = function _() {
-    const tmp = closure_5;
-    if (!tmp) {
-      const tmp2 = loading;
-      if (tmp2) {
-        first.onSpinnerStarted();
-      } else if (null != streamId) {
-        first.trackSpinnerDuration(videoSpinnerContext, userId, tmp3);
+  class T {
+    constructor() {
+      const tmp = closure_5;
+      if (!tmp) {
+        const tmp2 = loading;
+        if (tmp2) {
+          first.onSpinnerStarted();
+        } else if (null != streamId) {
+          first.trackSpinnerDuration(videoSpinnerContext, userId, tmp3);
+        }
       }
     }
-  };
+  }
   const items = [loading, tmp2, streamId, first, videoSpinnerContext, userId];
   cResult[2] = loading;
   cResult[3] = tmp2;
@@ -72,11 +74,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
   cResult[5] = userId;
   cResult[6] = videoSpinnerContext;
   cResult[7] = first;
-  cResult[8] = fn2;
+  cResult[8] = T;
   cResult[9] = items;
   tmp6 = items;
-  tmp5 = fn2;
-}) : ((userId) => {
+  tmp5 = T;
+}) : (function useVideoSpinnerTimer(userId) {
   let videoSpinnerContext;
   ({ location: require, videoSpinnerContext } = userId);
   userId = userId.userId;

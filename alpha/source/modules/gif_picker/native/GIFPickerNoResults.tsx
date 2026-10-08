@@ -1,20 +1,20 @@
-// Module ID: 10114
-// Function ID: 10115
+// Module ID: 9699
+// Function ID: 9700
 // Name: GIFPickerNoResults
-// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 10099, 9934, 1126, 9938, 6119, 1188, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 587, 558, 576, 9683, 9456, 1126, 9460, 6298, 1200, 2]
 
-// Module 10114 (GIFPickerNoResults)
+// Module 9699 (GIFPickerNoResults)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1188 */;
-import SearchEmpty from "SearchEmpty" /* 9934 */;
-import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 9938 */;
-import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 10099 */;
+import native from "native" /* 1200 */;
+import SearchEmpty from "SearchEmpty" /* 9456 */;
+import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 9460 */;
+import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 9683 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ obj2 = { color: nativeDefault.colors.TEXT_SUBTLE };
 createStyles = createStyles.createStyles;
 obj3 = { marginBottom: nativeDefault.space.PX_8, marginTop: 0 };
 let closure_7 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerNoResults(arg0) {
   let BottomSheetScrollView;
   let categoryType;
   let first;
@@ -76,7 +76,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   const tmpResult2 = useModalDismissGuardRefreshControl;
   const modalDismissGuardRefreshControl = tmpResult2.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    BottomSheetScrollView = tmp(6119).BottomSheetScrollView;
+    BottomSheetScrollView = tmp(6298).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }
@@ -118,7 +118,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[9] = tmp4.emptyStateImage;
   cResult[10] = tmp14;
   tmp13 = tmp14;
-}) : ((inActionSheet) => {
+}) : (function GIFPickerNoResults(inActionSheet) {
   inActionSheet = inActionSheet.inActionSheet;
   const categoryType = inActionSheet.categoryType;
   const tmp = closure_7();
@@ -137,7 +137,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   const tmp4Result = useModalDismissGuardRefreshControl;
   const modalDismissGuardRefreshControl = tmp4Result.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp4(6119).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp4(6298).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }

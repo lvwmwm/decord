@@ -1,15 +1,15 @@
-// Module ID: 17294
-// Function ID: 17295
+// Module ID: 17575
+// Function ID: 17576
 // Name: useCanConnect
-// Dependencies: [2051, 2074, 4515, 4915, 1096, 558, 576, 5041, 504, 2]
+// Dependencies: [2063, 2086, 4707, 5111, 1096, 558, 576, 5410, 504, 2]
 
-// Module 17294 (useCanConnect)
+// Module 17575 (useCanConnect)
 import Constants from "Constants" /* 1096 */;
-import ChannelUtils from "ChannelUtils" /* 5041 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import VoiceStateStore from "VoiceStateStore" /* 4915 */;
+import ChannelUtils from "ChannelUtils" /* 5410 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import VoiceStateStore from "VoiceStateStore" /* 5111 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let _require, obj1, tmp3, tmp4, tmp6, tmp7, tmp8;
 
 const Permissions = Constants.Permissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanConnect(arg0) {
   let closure_0;
   let first;
   let tmp10;
@@ -102,7 +102,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresObject(first, tmp9, tmp10);
-}) : ((arg0) => {
+}) : (function useCanConnect(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");

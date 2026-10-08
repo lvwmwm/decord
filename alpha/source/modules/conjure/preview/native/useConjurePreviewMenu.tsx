@@ -1,22 +1,22 @@
-// Module ID: 16666
-// Function ID: 16667
+// Module ID: 16928
+// Function ID: 16929
 // Name: useConjurePreviewMenu
-// Dependencies: [19, 12923, 558, 576, 12713, 16667, 4573, 504, 12933, 16668, 1126, 3753, 2]
+// Dependencies: [19, 13072, 558, 576, 13203, 16929, 4765, 504, 13083, 16930, 1126, 3827, 2]
 
-// Module 16666 (useConjurePreviewMenu)
+// Module 16928 (useConjurePreviewMenu)
 import intl2 from "intl" /* 1126 */;
-import _modDef3753 from "module_3753" /* 3753 */;
-import ToastUtils from "ToastUtils" /* 4573 */;
-import conjureExternalConnections from "conjureExternalConnections" /* 12933 */;
-import conjureProjectMenuItems from "conjureProjectMenuItems" /* 16668 */;
+import _modDef3827 from "module_3827" /* 3827 */;
+import ToastUtils from "ToastUtils" /* 4765 */;
+import conjureExternalConnections from "conjureExternalConnections" /* 13083 */;
+import conjureProjectMenuItems from "conjureProjectMenuItems" /* 16930 */;
 import react from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 12923 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13072 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let presentErrorResult, projectId, tmp12, tmp3, tmp5, tmp6, tmp7;
+let presentErrorResult, tmp12, tmp3, tmp5, tmp6, tmp7;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePreviewMenu(projectId) {
   let connect;
   let first;
   let pending;
@@ -86,7 +86,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
               }
               return tmp17;
             }
-            class S {
+            class E {
               constructor(arg0) {
                 closure_0 = projectId;
                 if ("refresh" !== projectId.kind) {
@@ -122,7 +122,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
             tmp17 = tmp18;
           }
         }
-        class S {
+        class E {
           constructor(arg0) {
             closure_0 = projectId;
             if ("refresh" !== projectId.kind) {
@@ -153,8 +153,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         cResult[11] = connect;
         cResult[12] = stateFromStores;
         cResult[13] = refresh;
-        cResult[14] = S;
-        tmp16 = S;
+        cResult[14] = E;
+        tmp16 = E;
       }
     }
   }
@@ -166,7 +166,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   cResult[9] = null != refreshApplicationId;
   cResult[10] = previewMenuItemsResult;
   tmp14 = previewMenuItemsResult;
-}) : ((projectId) => {
+}) : (function useConjurePreviewMenu(projectId) {
   projectId = projectId.projectId;
   const refreshApplicationId = projectId.refreshApplicationId;
   let pending;
@@ -204,7 +204,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
           const presentError = ToastUtils.presentError;
           ToastUtils;
           const intl = intl2.intl;
-          presentError(intl.string(_modDef3753["jCQ/1B"]));
+          presentError(intl.string(_modDef3827["jCQ/1B"]));
         }
       }
     } else {

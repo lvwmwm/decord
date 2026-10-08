@@ -1,24 +1,24 @@
-// Module ID: 14557
-// Function ID: 14558
+// Module ID: 14818
+// Function ID: 14819
 // Name: AccountAgeGroupNonAdultSetting
-// Dependencies: [7645, 8117, 8119, 558, 576, 5108, 1126, 5587, 14511, 11142, 2]
+// Dependencies: [7966, 7492, 5915, 558, 576, 5905, 1126, 5918, 14771, 11262, 2]
 
-// Module 14557 (AccountAgeGroupNonAdultSetting)
+// Module 14818 (AccountAgeGroupNonAdultSetting)
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5108 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5587 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8117 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8119 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14511 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5905 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5915 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5918 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7492 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14771 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccountAgeGroupNonAdultSettingTrailing() {
   let first;
   let tmp7;
   const obj = react;
@@ -45,7 +45,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[2];
   }
   return tmp7;
-}) : (() => {
+}) : (function useAccountAgeGroupNonAdultSettingTrailing() {
   const obj = AgeVerificationUtils;
   const isAgeVerified = obj.useIsAgeVerified();
   const intl = intl3.intl;
@@ -57,7 +57,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return stringResult;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccountAgeGroupNonAdultSettingPredicate() {
   const obj = AgeVerificationUtils;
   const isAgeVerified = obj.useIsAgeVerified();
   const obj2 = AgeVerificationUtils;
@@ -77,7 +77,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     hasTeenDefaults = !isTinyBroncoSettingsEnabled;
   }
   return hasTeenDefaults;
-}) : (() => {
+}) : (function AccountAgeGroupNonAdultSettingPredicate() {
   const obj = AgeVerificationUtils;
   const isAgeVerified = obj.useIsAgeVerified();
   const obj2 = AgeVerificationUtils;

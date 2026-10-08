@@ -1,23 +1,23 @@
-// Module ID: 11031
-// Function ID: 11032
+// Module ID: 12778
+// Function ID: 12779
 // Name: PremiumGiftAnalytics
-// Dependencies: [19, 1085, 558, 576, 10443, 10407, 1369, 1252, 1126, 10552, 2]
+// Dependencies: [19, 1085, 558, 576, 10040, 10004, 1381, 1264, 1126, 10149, 2]
 
-// Module 11031 (PremiumGiftAnalytics)
+// Module 12778 (PremiumGiftAnalytics)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10407 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10552 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10004 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10149 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let currentStep, flag, obj1, obj12, obj13, obj14, obj15, obj16, ref, ref2, tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp18, tmp19, tmp20, tmp21, tmp22, tmp24, tmp25, tmp26, tmp27, tmp28, tmp29, tmp3, tmp30, tmp31, tmp32, tmp33, tmp34, tmp37, tmp38, tmp4, tmp40, tmp41, tmp42, tmp43, tmp45, tmp46, tmp47, tmp48, tmp49, tmp50, tmp51, tmp8, track2Result, track3Result, trackResult;
+let flag, obj1, obj12, obj13, obj14, obj15, obj16, ref, ref2, tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp18, tmp19, tmp20, tmp21, tmp22, tmp24, tmp25, tmp26, tmp27, tmp28, tmp29, tmp3, tmp30, tmp31, tmp32, tmp33, tmp34, tmp37, tmp38, tmp4, tmp40, tmp41, tmp42, tmp43, tmp45, tmp46, tmp47, tmp48, tmp49, tmp50, tmp51, tmp8, track2Result, track3Result, trackResult;
 
 const AnalyticEvents = Constants.AnalyticEvents;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentStep) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftAnalytics(currentStep) {
   let first;
   let productId;
   let obj = currentStep(productId[3]);
@@ -54,21 +54,21 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentStep) => {
         }
         const effect = obj3.useEffect(tmp6, tmp7);
         if (cResult[7] !== basePurchaseAnalytics) {
-          class A {
+          class E {
             constructor() {
-              return () => { /* body not rendered: F141136 */ };
+              return () => { /* body not rendered: F144274 */ };
             }
           }
           const items = [basePurchaseAnalytics, ref];
           cResult[7] = basePurchaseAnalytics;
-          cResult[8] = A;
+          cResult[8] = E;
           cResult[9] = items;
           tmp10 = items;
-          tmp9 = A;
+          tmp9 = E;
         } else {
-          class A {
+          class E {
             constructor() {
-              return () => { /* body not rendered: F141136 */ };
+              return () => { /* body not rendered: F144274 */ };
             }
           }
           tmp10 = cResult[9];
@@ -78,7 +78,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentStep) => {
       }
     }
   }
-  class E {
+  class P {
     constructor() {
       tmp = currentStep;
       tmp2 = closure_4;
@@ -182,11 +182,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentStep) => {
   cResult[2] = currentStep;
   cResult[3] = customGiftMessage;
   cResult[4] = productId;
-  cResult[5] = E;
+  cResult[5] = P;
   cResult[6] = items1;
   tmp7 = items1;
-  tmp6 = E;
-}) : ((currentStep) => {
+  tmp6 = P;
+}) : (function PremiumGiftAnalytics(currentStep) {
   currentStep = currentStep.currentStep;
   let productId;
   const children = currentStep.children;

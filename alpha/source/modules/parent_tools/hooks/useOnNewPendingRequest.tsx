@@ -1,21 +1,20 @@
-// Module ID: 14704
-// Function ID: 14705
+// Module ID: 14965
+// Function ID: 14966
 // Name: useOnNewPendingRequest
-// Dependencies: [19, 7061, 558, 576, 8328, 504, 7063, 5597, 2]
+// Dependencies: [19, 7247, 558, 576, 7711, 504, 7249, 5392, 2]
 
-// Module 14704 (useOnNewPendingRequest)
+// Module 14965 (useOnNewPendingRequest)
 import react_mod from "react" /* 19 */;
-import FamilyCenterStore_mod from "FamilyCenterStore" /* 7061 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7247 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, cResult;
 
 let react = react_mod;
-let FamilyCenterStore = FamilyCenterStore_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
-  let current;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnNewPendingRequest(cResult) {
+  let fn3;
+  let items2;
   let ref;
   let ref2;
   let stateFromStores;
@@ -24,14 +23,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
   let tmp5;
   let tmp6;
   let tmp9;
-  _require = cResult;
+  const _require = cResult;
   let tmp = _require;
   let obj = require("react");
   cResult = obj.c(10);
   const obj2 = require("useUserLinks");
   const pendingRequestCount = obj2.usePendingRequestCount();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [FamilyCenterStore];
+    const items = [ref2];
     const fn = function c() {
       return ref2.getAreLinkedUsersProcessed();
     };
@@ -62,58 +61,58 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
   pendingRequestCount(stateFromStores[7])(tmp9);
   react = react.useRef(cResult);
   if (cResult[3] !== cResult) {
-    const fn3 = function _() {
-      ref.current = current;
-    };
+    class P {
+      constructor() {
+        ref.current = current;
+      }
+    }
     const items1 = [cResult];
     cResult[3] = cResult;
-    cResult[4] = fn3;
+    cResult[4] = P;
     cResult[5] = items1;
     tmp12 = items1;
-    tmp11 = fn3;
+    tmp11 = P;
   } else {
-    tmp11 = cResult[4];
+    class P {
+      constructor() {
+        ref.current = current;
+      }
+    }
     tmp12 = cResult[5];
   }
   const effect = obj4.useEffect(tmp11, tmp12);
-  FamilyCenterStore = obj4.useRef(null);
+  ref2 = obj4.useRef(null);
   if (cResult[6] === stateFromStores) {
-    let tmp14;
-    let tmp15;
-    if (cResult[7] === pendingRequestCount) {
-      tmp14 = cResult[8];
-      tmp15 = cResult[9];
-    }
-    const effect1 = obj4.useEffect(tmp14, tmp15);
-  }
-  class R {
-    constructor() {
-      const tmp = stateFromStores;
-      if (tmp) {
-        if (null != ref2.current) {
-          ref2.current = pendingRequestCount;
-          if (pendingRequestCount > ref2.current) {
-            ref.current();
-          }
-        } else {
-          ref2.current = pendingRequestCount;
-        }
+    class P {
+      constructor() {
+        ref.current = current;
       }
     }
+    const effect1 = obj4.useEffect(fn3, items2);
   }
-  const items2 = [stateFromStores, pendingRequestCount];
+  fn3 = function h() {
+    const tmp = stateFromStores;
+    if (tmp) {
+      if (null != ref2.current) {
+        ref2.current = pendingRequestCount;
+        if (pendingRequestCount > ref2.current) {
+          ref.current();
+        }
+      } else {
+        ref2.current = pendingRequestCount;
+      }
+    }
+  };
+  items2 = [stateFromStores, pendingRequestCount];
   cResult[6] = stateFromStores;
   cResult[7] = pendingRequestCount;
-  cResult[8] = R;
+  cResult[8] = fn3;
   cResult[9] = items2;
-  tmp15 = items2;
-  tmp14 = R;
-}) : ((cResult) => {
-  let current;
+}) : (function useOnNewPendingRequest(cResult) {
   let ref;
   let ref2;
   let stateFromStores;
-  _require = cResult;
+  const _require = cResult;
   let obj = require("useUserLinks");
   const pendingRequestCount = obj.usePendingRequestCount();
   const items = [ref2];

@@ -1,11 +1,11 @@
-// Module ID: 4581
-// Function ID: 4582
+// Module ID: 4773
+// Function ID: 4774
 // Name: toastMapping
-// Dependencies: [4582, 2]
+// Dependencies: [4774, 2]
 // Exports: toManaToast
 
-// Module 4581 (toastMapping)
-import toastIconSubstitutions from "toastIconSubstitutions" /* 4582 */;
+// Module 4773 (toastMapping)
+import toastIconSubstitutions from "toastIconSubstitutions" /* 4774 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/toast/native/toastMapping.tsx");

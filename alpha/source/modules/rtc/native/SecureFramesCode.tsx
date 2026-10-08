@@ -1,16 +1,16 @@
-// Module ID: 9393
-// Function ID: 9394
+// Module ID: 8814
+// Function ID: 8815
 // Name: SecureFramesCode
-// Dependencies: [19, 17, 1096, 21, 4896, 587, 558, 576, 4892, 2]
+// Dependencies: [19, 17, 1096, 21, 5090, 587, 558, 576, 5086, 2]
 
-// Module 9393 (SecureFramesCode)
+// Module 8814 (SecureFramesCode)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 let react = react_mod;
 ({ ActivityIndicator: c3, View: closure_4 } = react_native);
 const Fonts = Constants.Fonts;
@@ -39,7 +39,7 @@ obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderTop
 obj4 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, paddingVertical: 8, paddingHorizontal: 16, borderBottomRightRadius: nativeDefault.radii.lg, borderBottomLeftRadius: nativeDefault.radii.lg };
 let closure_8 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFramesCodeGrid(arg0) {
   let arr;
   let chunks;
   let columns;
@@ -104,7 +104,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = columns;
   cResult[2] = items;
   arr = items;
-}) : ((chunks) => {
+}) : (function SecureFramesCodeGrid(chunks) {
   let row;
   chunks = chunks.chunks;
   const columns = chunks.columns;
@@ -150,7 +150,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return closure_5(closure_7, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFramesCode(arg0) {
   let chunks;
   let columns;
   let items;
@@ -234,7 +234,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = trailing;
   cResult[5] = tmp9;
   tmp8 = tmp9;
-}) : ((chunks) => {
+}) : (function SecureFramesCode(chunks) {
   let columns;
   let items;
   let title;

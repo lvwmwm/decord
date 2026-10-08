@@ -1,13 +1,13 @@
-// Module ID: 9340
-// Function ID: 9341
+// Module ID: 8762
+// Function ID: 8763
 // Name: useChannelVideoLimit
-// Dependencies: [2074, 4920, 1085, 558, 576, 504, 2]
+// Dependencies: [2086, 5114, 1085, 558, 576, 504, 2]
 // Exports: getChannelVideoLimit
 
-// Module 9340 (useChannelVideoLimit)
+// Module 8762 (useChannelVideoLimit)
 import Constants from "Constants" /* 1085 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4920 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5114 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 let _require;
 
 const ChannelTypes = Constants.ChannelTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelVideoLimit(arg0) {
   let first;
   let guildId;
   let tmp7;
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresObject(first, tmp7, tmp8);
-}) : ((arg0) => {
+}) : (function useChannelVideoLimit(arg0) {
   let guildId;
   _require = arg0;
   let obj = require("get initialized");

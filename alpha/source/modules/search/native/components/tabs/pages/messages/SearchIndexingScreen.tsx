@@ -1,20 +1,18 @@
-// Module ID: 16909
-// Function ID: 16910
+// Module ID: 17190
+// Function ID: 17191
 // Name: SearchIndexingScreen
-// Dependencies: [19, 21, 558, 576, 12001, 11987, 16829, 2]
+// Dependencies: [19, 21, 558, 576, 12074, 12060, 17108, 2]
 
-// Module 16909 (SearchIndexingScreen)
+// Module 17190 (SearchIndexingScreen)
 import Fragment from "Fragment" /* 21 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12001 */;
-import ErrorScreenDefault from "ErrorScreen" /* 16829 */;
+import tracking_TrackingDefault from "tracking/Tracking" /* 12074 */;
+import ErrorScreenDefault from "ErrorScreen" /* 17108 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let searchContext;
-
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchIndexingScreen(searchContext) {
   let tmp4;
   let tmp5;
   let tmp7;
@@ -25,7 +23,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => 
   searchContext = searchContext.searchContext;
   if (cResult[0] !== searchContext) {
     const fn = function s() {
-      const obj = search_tracking_TrackingDefault;
+      const obj = tracking_TrackingDefault;
       const obj2 = { searchContext };
       obj.trackSearchIndexing(obj2);
     };
@@ -41,7 +39,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => 
   }
   const effect = react.useEffect(tmp4, tmp5);
   if (cResult[3] !== searchContext) {
-    const tmpResult = tmp(11987);
+    const tmpResult = tmp(12060);
     const indexingErrorText = tmpResult.getIndexingErrorText(searchContext);
     cResult[3] = searchContext;
     cResult[4] = indexingErrorText;
@@ -58,15 +56,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => 
     tmp9 = cResult[6];
   }
   return tmp9;
-}) : ((searchContext) => {
+}) : (function SearchIndexingScreen(searchContext) {
   searchContext = searchContext.searchContext;
   const items = [searchContext];
   const effect = react.useEffect(() => {
-    const obj = search_tracking_TrackingDefault;
+    const obj = tracking_TrackingDefault;
     const obj2 = { searchContext };
     obj.trackSearchIndexing(obj2);
   }, items);
-  let obj = searchContext(11987);
+  let obj = searchContext(12060);
   const text = obj.getIndexingErrorText(searchContext);
   return jsx(ErrorScreenDefault, { text });
 });

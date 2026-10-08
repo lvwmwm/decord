@@ -1,20 +1,20 @@
-// Module ID: 10087
-// Function ID: 10088
+// Module ID: 9670
+// Function ID: 9671
 // Name: MediaPostMultipleThumbnailActionSheet
-// Dependencies: [19, 17, 2048, 21, 4896, 587, 558, 576, 1618, 4892, 1126, 1188, 5601, 6119, 6652, 2]
+// Dependencies: [19, 17, 2060, 21, 5090, 587, 558, 576, 1630, 5086, 1126, 1200, 5375, 6298, 6829, 2]
 
-// Module 10087 (MediaPostMultipleThumbnailActionSheet)
+// Module 9670 (MediaPostMultipleThumbnailActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, markAsDismissed;
+let BottomSheet;
 
 let hasOwnProperty;
 let metroRequire;
@@ -31,7 +31,7 @@ createStyles = createStyles.createStyles;
 obj3 = { flex: 1, width: "100%", paddingVertical: 40, paddingHorizontal: 12, backgroundColor: nativeDefault.colors.TEXT_FEEDBACK_WARNING, borderRadius: nativeDefault.radii.sm };
 obj4 = { flex: 1, flexDirection: "row", padding: 12, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, borderRadius: nativeDefault.radii.sm, alignItems: "center", justifyContent: "space-between" };
 let closure_7 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPostThumbnailActionSheet(markAsDismissed) {
   let intl;
   let items;
   let items1;
@@ -72,10 +72,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(1126).t.ews2pj) };
-      const Text = tmp(4892).Text;
+      const Text = tmp(5086).Text;
       intl = tmp(1126).intl;
       const tmp12 = closure_5(Text, obj3);
-      const tmp13 = closure_5(markAsDismissed(1188).Checkbox, { selected: true });
+      const tmp13 = closure_5(markAsDismissed(1200).Checkbox, { selected: true });
       cResult[7] = tmp12;
       cResult[8] = tmp13;
       tmp10 = tmp13;
@@ -119,7 +119,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
       }
       if (cResult[15] !== tmp4.title) {
         const obj5 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: title, children: tmp22 };
-        const tmp26 = closure_5(markAsDismissed(4892).Text, obj5);
+        const tmp26 = closure_5(markAsDismissed(5086).Text, obj5);
         cResult[15] = tmp4.title;
         cResult[16] = tmp26;
         tmp24 = tmp26;
@@ -128,7 +128,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
       }
       const _Symbol3 = Symbol;
       if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp29 = closure_5(markAsDismissed(1188).Spacer, { size: 12 });
+        const tmp29 = closure_5(markAsDismissed(1200).Spacer, { size: 12 });
         cResult[17] = tmp29;
         tmp27 = tmp29;
       } else {
@@ -146,7 +146,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
       }
       if (cResult[19] !== tmp4.description) {
         const obj6 = { variant: "text-md/normal", color: "text-default", style: description, children: tmp30 };
-        const tmp34 = closure_5(markAsDismissed(4892).Text, obj6);
+        const tmp34 = closure_5(markAsDismissed(5086).Text, obj6);
         cResult[19] = tmp4.description;
         cResult[20] = tmp34;
         tmp32 = tmp34;
@@ -155,7 +155,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
       }
       const _Symbol5 = Symbol;
       if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp37 = closure_5(markAsDismissed(1188).Spacer, { size: 48 });
+        const tmp37 = closure_5(markAsDismissed(1200).Spacer, { size: 48 });
         cResult[21] = tmp37;
         tmp35 = tmp37;
       } else {
@@ -178,7 +178,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
                   return markAsDismissed(ContentDismissActionType.UNKNOWN);
                 }
         };
-        const tmp42 = closure_5(markAsDismissed(5601).Button, obj7);
+        const tmp42 = closure_5(markAsDismissed(5375).Button, obj7);
         cResult[23] = markAsDismissed;
         cResult[24] = tmp42;
         tmp40 = tmp42;
@@ -206,7 +206,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
                   return tmp50;
                 }
                 const obj8 = { backdropOpacity: 0.8, onDismiss: tmp5, children: tmp46 };
-                const tmp52 = closure_5(markAsDismissed(6652).BottomSheet, obj8);
+                const tmp52 = closure_5(markAsDismissed(6829).BottomSheet, obj8);
                 cResult[34] = tmp5;
                 cResult[35] = tmp46;
                 cResult[36] = tmp52;
@@ -224,7 +224,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
       }
       const obj10 = { contentContainerStyle: tmp7, children: items1 };
       items1 = [tmp18, tmp24, tmp27, tmp32, tmp35, tmp40];
-      const tmp45 = closure_6(markAsDismissed(6119).BottomSheetScrollView, obj10);
+      const tmp45 = closure_6(markAsDismissed(6298).BottomSheetScrollView, obj10);
       cResult[25] = tmp24;
       cResult[26] = tmp32;
       cResult[27] = tmp40;
@@ -245,7 +245,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
   cResult[5] = tmp6;
   cResult[6] = items2;
   tmp7 = items2;
-}) : ((markAsDismissed) => {
+}) : (function MediaPostThumbnailActionSheet(markAsDismissed) {
   let BottomSheetScrollView;
   let intl;
   let intl2;
@@ -268,27 +268,27 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
     children: closure_5(View, obj2)
   };
   obj2 = { style: tmp.container, children: closure_6(BottomSheetScrollView, obj3) };
-  BottomSheet = markAsDismissed(6652).BottomSheet;
+  BottomSheet = markAsDismissed(6829).BottomSheet;
   obj3 = { contentContainerStyle: items, children: items2 };
   items = [tmp.contentContainer, { paddingBottom: bottom }];
   const obj4 = { style: tmp.topContainer, children: closure_6(View, obj5) };
   obj5 = { style: tmp.setAsThumbnailContainer, children: items1 };
-  BottomSheetScrollView = markAsDismissed(6119).BottomSheetScrollView;
+  BottomSheetScrollView = markAsDismissed(6298).BottomSheetScrollView;
   const obj6 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(1126).t.ews2pj) };
-  const Text = markAsDismissed(4892).Text;
+  const Text = markAsDismissed(5086).Text;
   intl = markAsDismissed(1126).intl;
-  items1 = [closure_5(Text, obj6), closure_5(markAsDismissed(1188).Checkbox, { selected: true })];
+  items1 = [closure_5(Text, obj6), closure_5(markAsDismissed(1200).Checkbox, { selected: true })];
   items2 = [closure_5(View, obj4), , , , , ];
   const obj7 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: intl2.string(markAsDismissed(1126).t.WJisip) };
-  const Text2 = markAsDismissed(4892).Text;
+  const Text2 = markAsDismissed(5086).Text;
   intl2 = markAsDismissed(1126).intl;
   items2[1] = closure_5(Text2, obj7);
-  items2[2] = closure_5(markAsDismissed(1188).Spacer, { size: 12 });
+  items2[2] = closure_5(markAsDismissed(1200).Spacer, { size: 12 });
   const obj8 = { variant: "text-md/normal", color: "text-default", style: tmp.description, children: intl3.string(markAsDismissed(1126).t.X6ZH6d) };
-  const Text3 = markAsDismissed(4892).Text;
+  const Text3 = markAsDismissed(5086).Text;
   intl3 = markAsDismissed(1126).intl;
   items2[3] = closure_5(Text3, obj8);
-  items2[4] = closure_5(markAsDismissed(1188).Spacer, { size: 48 });
+  items2[4] = closure_5(markAsDismissed(1200).Spacer, { size: 48 });
   const obj9 = {
     text: intl4.string(markAsDismissed(1126).t["NX+WJN"]),
     grow: true,
@@ -296,7 +296,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
       return markAsDismissed(ContentDismissActionType.UNKNOWN);
     }
   };
-  const Button = markAsDismissed(5601).Button;
+  const Button = markAsDismissed(5375).Button;
   intl4 = markAsDismissed(1126).intl;
   items2[5] = closure_5(Button, obj9);
   return closure_5(BottomSheet, obj);

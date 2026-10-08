@@ -1,11 +1,11 @@
-// Module ID: 8126
-// Function ID: 8127
+// Module ID: 5921
+// Function ID: 5922
 // Name: SafetyHubConstants
-// Dependencies: [1085, 1260, 2]
+// Dependencies: [1085, 1272, 2]
 
-// Module 8126 (SafetyHubConstants)
+// Module 5921 (SafetyHubConstants)
 import Constants from "Constants" /* 1085 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticsSections = Constants.AnalyticsSections;

@@ -1,31 +1,31 @@
-// Module ID: 7864
-// Function ID: 7865
+// Module ID: 8282
+// Function ID: 8283
 // Name: UserProfileSpeedBumpActionSheet
-// Dependencies: [32, 19, 17, 2051, 2112, 1377, 7865, 1085, 21, 4896, 587, 7867, 1126, 558, 576, 6081, 6000, 1188, 4735, 4797, 504, 7868, 6688, 6664, 7872, 7881, 1252, 7863, 7861, 7600, 6464, 4892, 5048, 5601, 5916, 2028, 6652, 6119, 2]
+// Dependencies: [32, 19, 17, 2063, 2124, 1389, 8283, 1085, 21, 5090, 587, 8285, 1126, 558, 576, 6267, 6184, 1200, 4929, 4991, 504, 8286, 6865, 6841, 8290, 8299, 1264, 8281, 8279, 8300, 6642, 5086, 5405, 5375, 6189, 2040, 6829, 6298, 2]
 
-// Module 7864 (UserProfileSpeedBumpActionSheet)
+// Module 8282 (UserProfileSpeedBumpActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import TableRow2 from "TableRow" /* 6000 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
-import UserActionCreators from "UserActionCreators" /* 7863 */;
-import Constants2 from "Constants" /* 7865 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7867 */;
+import native from "native" /* 1200 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import TableRow2 from "TableRow" /* 6184 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
+import UserActionCreators from "UserActionCreators" /* 8281 */;
+import Constants2 from "Constants" /* 8283 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8285 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import UserStore_mod from "UserStore" /* 1377 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import UserStore_mod from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, c6, userId;
+let BottomSheet, c6;
 
 let c10;
 let closure_12;
@@ -56,7 +56,7 @@ function SPEEDBUMP_ROWS(arg0) {
 
 }
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((speedBumpType) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function InformationTable(speedBumpType) {
   let flag;
   let intl;
   let items;
@@ -80,7 +80,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((speedBumpType)
         stringResult = intl2.string(tmp(1126).t.W6fjkS);
       }
       items[1] = obj3;
-      const TableRowGroup = tmp(6081).TableRowGroup;
+      const TableRowGroup = tmp(6267).TableRowGroup;
       const mapped = items.map((icon, index) => {
         let Icon;
         let obj2;
@@ -120,7 +120,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((speedBumpType)
   cResult[6] = tmp5;
   cResult[7] = tmp11;
   tmp10 = tmp11;
-}) : ((arg0) => {
+}) : (function InformationTable(arg0) {
   let intl;
   let stringResult;
   let items;
@@ -149,14 +149,14 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((speedBumpType)
           return closure_12(TableRow, obj, index);
         })
     };
-    const TableRowGroup = tmp4(6081).TableRowGroup;
+    const TableRowGroup = tmp4(6267).TableRowGroup;
     return closure_12(TableRowGroup, obj3);
   } else {
     throw new TypeError("Trying to call a non-function");
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileSpeedBumpActionSheet(userId) {
   let closure_8;
   let closure_9;
   let fn;
@@ -382,7 +382,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((u
   cResult[10] = undefined;
   cResult[11] = userId;
   cResult[12] = fn;
-}) : ((userId) => {
+}) : (function UserProfileSpeedBumpActionSheet(userId) {
   let Icon;
   let Text3;
   let UserProfileAnalyticsProvider;

@@ -1,12 +1,12 @@
-// Module ID: 13769
-// Function ID: 13770
+// Module ID: 13991
+// Function ID: 13992
 // Name: GuildBadgeWind
-// Dependencies: [109, 19, 21, 558, 576, 13748, 8169, 2]
+// Dependencies: [109, 19, 21, 558, 576, 13970, 7550, 2]
 
-// Module 13769 (GuildBadgeWind)
+// Module 13991 (GuildBadgeWind)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 8169 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 13748 */;
+import inlineStyles from "inlineStyles" /* 7550 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 13970 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -23,7 +23,7 @@ const primaryTintLuminances = [0.07, 0.35, 1];
 let items = [{ base: 4, tint: 1 }, { base: 1, tint: 1 }, { base: 8, tint: 1 }, { base: 6, tint: 1 }];
 const secondaryTintLuminances = [0.2, 0.75, 1];
 const items1 = [{ base: 2, tint: 1 }, { base: 1, tint: 1 }, { base: 6, tint: 1 }];
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgeWind(arg0) {
   let height;
   let primaryColorsTransformed;
   let primaryTintColor;
@@ -320,7 +320,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj18 = { width: num7, height: num8, viewBox: "0 0 16 16", fill: "none", children: items };
-    const Svg = tmp(8169).Svg;
+    const Svg = tmp(7550).Svg;
     const merged = Object.assign(tmp5);
     items = [tmp14, tmp17, tmp18, tmp22, tmp25, tmp29, tmp32, tmp35, tmp36, tmp40, tmp43, tmp46, tmp49, tmp52, tmp55, tmp58, tmp61, tmp64, tmp67, tmp70, tmp73, tmp76];
     const tmp84 = hasOwnProperty(Svg, obj18);
@@ -353,7 +353,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = tmp6;
   cResult[8] = transformedBadgeColors;
   tmp12 = transformedBadgeColors;
-}) : ((width) => {
+}) : (function GuildBadgeWind(width) {
   let primaryColorsTransformed;
   let primaryTintColor;
   let secondaryColorsTransformed;

@@ -1,35 +1,32 @@
-// Module ID: 14236
-// Function ID: 14237
+// Module ID: 14060
+// Function ID: 14061
 // Name: ActionSheetPresenter
-// Dependencies: [32, 19, 17, 4567, 1085, 21, 558, 576, 1260, 8455, 4860, 5787, 5773, 6654, 504, 12080, 5721, 2]
+// Dependencies: [32, 19, 17, 4759, 1085, 21, 558, 576, 1272, 8941, 5054, 5370, 5356, 6831, 504, 12154, 5304, 2]
 
-// Module 14236 (ActionSheetPresenter)
+// Module 14060 (ActionSheetPresenter)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8455 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 4567 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8941 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import ActionSheetStore from "ActionSheetStore" /* 4759 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let appEntryKey, dependencyMap, sheetKey;
+let dependencyMap;
 
-let _slicedToArray = _slicedToArray_mod;
-let react = react_mod;
 const StyleSheet = react_native.StyleSheet;
 const NOOP = Constants.NOOP;
 const jsx = Fragment.jsx;
-const forwardRef = react.forwardRef;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((sheetKey, ref) => {
-  let closure_4;
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function TrackedWrapperInner(sheetKey) {
   let content;
   let first;
   let impressionName;
   let impressionProperties;
+  let obj5;
   let ref2;
   let tmp5;
   let tmp8;
@@ -38,12 +35,13 @@ let closure_9 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((shee
   const cResult = obj.c(22);
   sheetKey = sheetKey.sheetKey;
   ({ content, impressionName, impressionProperties, zIndex } = sheetKey);
-  [tmp5, importDefault] = react.useState("visible");
-  _slicedToArray(react.useState("visible"), 2);
-  dependencyMap = react.useRef(NOOP);
+  ref = sheetKey.ref;
+  [tmp5, importDefault] = ref(T.useState("visible"), 2);
+  ref(T.useState("visible"), 2);
+  dependencyMap = T.useRef(NOOP);
   const tmp6 = NOOP;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function p(current) {
+    const fn = function o(current) {
       ref.current = current;
     };
     cResult[0] = fn;
@@ -51,81 +49,119 @@ let closure_9 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((shee
   } else {
     first = cResult[0];
   }
-  _slicedToArray = obj2.useRef(tmp6);
+  ref = obj2.useRef(tmp6);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function _() {
-      ref2.current();
-    };
-    cResult[1] = fn2;
-    tmp8 = fn2;
+    class K {
+      constructor() {
+        ref2.current();
+      }
+    }
+    cResult[1] = K;
+    tmp8 = K;
   } else {
-    tmp8 = cResult[1];
+    class K {
+      constructor() {
+        ref2.current();
+      }
+    }
   }
   if (cResult[2] === impressionName) {
-    let tmp9;
-    let tmp13;
     let tmp12;
-    let tmp16;
-    if (cResult[3] === impressionProperties) {
-      tmp9 = cResult[4];
+    let tmp11;
+    class K {
+      constructor() {
+        ref2.current();
+      }
     }
-    useTrackImpressionDefault(tmp9);
+    useTrackImpressionDefault(obj5);
     const _Symbol = Symbol;
-    const tmp10 = importDefault;
+    const tmp9 = importDefault;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn3 = function k() {
-        return {
-          componentDidEnter() {
-            closure_1_1("visible");
-          },
-          componentWillLeave(current) {
-            closure_1_1("exiting");
-            ref2.current = current;
-          },
-          componentDidLeave() {
-            closure_1_1("exited");
-            ref2.current = current;
-          }
-        };
-      };
+      class F {
+        constructor() {
+          obj = {
+            componentDidEnter() {
+                      closure_1_1("visible");
+                    },
+            componentWillLeave(current) {
+                      closure_1_1("exiting");
+                      ref2.current = current;
+                    },
+            componentDidLeave() {
+                      closure_1_1("exited");
+                      ref2.current = current;
+                    }
+          };
+          return obj;
+        }
+      }
       const items = [];
-      cResult[5] = fn3;
+      cResult[5] = F;
       cResult[6] = items;
-      tmp13 = items;
-      tmp12 = fn3;
+      tmp12 = items;
+      tmp11 = F;
     } else {
-      tmp12 = cResult[5];
-      tmp13 = cResult[6];
+      class F {
+        constructor() {
+          obj = {
+            componentDidEnter() {
+                      closure_1_1("visible");
+                    },
+            componentWillLeave(current) {
+                      closure_1_1("exiting");
+                      ref2.current = current;
+                    },
+            componentDidLeave() {
+                      closure_1_1("exited");
+                      ref2.current = current;
+                    }
+          };
+          return obj;
+        }
+      }
+      tmp12 = cResult[6];
     }
-    const imperativeHandle = obj2.useImperativeHandle(ref, tmp12, tmp13);
+    const imperativeHandle = obj2.useImperativeHandle(ref, tmp11, tmp12);
     if (cResult[7] !== sheetKey) {
-      const fn4 = function z() {
-        const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet(sheetKey);
-      };
+      class T {
+        constructor() {
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet(sheetKey);
+        }
+      }
       cResult[7] = sheetKey;
-      cResult[8] = fn4;
-      tmp16 = fn4;
+      cResult[8] = T;
     } else {
-      tmp16 = cResult[8];
+      class T {
+        constructor() {
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet(sheetKey);
+        }
+      }
     }
-    react = tmp16;
-    if (cResult[9] === tmp16) {
-      let tmp18;
-      if (cResult[12] !== tmp16) {
+    T = tmp14;
+    if (cResult[9] === tmp14) {
+      let tmp16;
+      class T {
+        constructor() {
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet(sheetKey);
+        }
+      }
+      if (cResult[12] !== tmp14) {
         class N {
           constructor() {
             current = ref.current;
             if (current != null) {
               current();
             }
-            closure_4();
+            T();
             return true;
           }
         }
-        cResult[12] = tmp16;
+        cResult[12] = tmp14;
         cResult[13] = N;
-        tmp18 = N;
+        tmp16 = N;
       } else {
         class N {
           constructor() {
@@ -133,56 +169,55 @@ let closure_9 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((shee
             if (current != null) {
               current();
             }
-            closure_4();
+            T();
             return true;
           }
         }
       }
-      tmp10(5787)(tmp18);
-      if (cResult[14] === tmp16) {
+      tmp9(5370)(tmp16);
+      if (cResult[14] === tmp14) {
         class N {
           constructor() {
             current = ref.current;
             if (current != null) {
               current();
             }
-            closure_4();
+            T();
             return true;
           }
         }
       }
-      cResult[14] = tmp16;
+      cResult[14] = tmp14;
       cResult[15] = content;
       cResult[16] = sheetKey;
       cResult[17] = zIndex;
-      cResult[18] = jsx(sheetKey(5773).Dialog, { dialogKey: sheetKey, onDismiss: tmp16, zIndex, children: content });
-      const tmp22 = jsx(sheetKey(5773).Dialog, { dialogKey: sheetKey, onDismiss: tmp16, zIndex, children: content });
+      cResult[18] = jsx(sheetKey(5356).Dialog, { dialogKey: sheetKey, onDismiss: tmp14, zIndex, children: content });
+      const tmp20 = jsx(sheetKey(5356).Dialog, { dialogKey: sheetKey, onDismiss: tmp14, zIndex, children: content });
     }
-    const obj4 = { transitionState: tmp5, close: tmp16, onLeave: tmp8, registerDismissHandler: first };
-    cResult[9] = tmp16;
+    const obj4 = { transitionState: tmp5, close: tmp14, onLeave: tmp8, registerDismissHandler: first };
+    cResult[9] = tmp14;
     cResult[10] = tmp5;
     cResult[11] = obj4;
   }
-  const obj5 = { type: sheetKey(1260).ImpressionTypes.HALFSHEET, name: impressionName, properties: impressionProperties };
+  obj5 = { type: sheetKey(1272).ImpressionTypes.HALFSHEET, name: impressionName, properties: impressionProperties };
   cResult[2] = impressionName;
   cResult[3] = impressionProperties;
   cResult[4] = obj5;
-  tmp9 = obj5;
-}) : ((sheetKey, ref) => {
+}) : (function TrackedWrapperInner(sheetKey) {
   let closure_2;
   let content;
   let impressionName;
   let impressionProperties;
-  let transitionState;
   let zIndex;
   sheetKey = sheetKey.sheetKey;
-  transitionState = undefined;
-  dependencyMap = undefined;
+  ref = undefined;
   let registerDismissHandler;
   let callback2;
-  ({ content, impressionName, impressionProperties, zIndex } = sheetKey);
-  [transitionState, dependencyMap] = registerDismissHandler.useState("visible");
-  _slicedToArray = registerDismissHandler.useRef(callback2);
+  ({ content, impressionName, impressionProperties, zIndex, ref } = sheetKey);
+  const tmp = ref(registerDismissHandler.useState("visible"), 2);
+  const transitionState = tmp[0];
+  dependencyMap = tmp[1];
+  ref = registerDismissHandler.useRef(callback2);
   registerDismissHandler = registerDismissHandler.useCallback((current) => {
     ref.current = current;
   }, []);
@@ -190,8 +225,8 @@ let closure_9 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((shee
   const callback1 = registerDismissHandler.useCallback(() => {
     ref2.current();
   }, []);
-  let obj = { type: sheetKey(1260).ImpressionTypes.HALFSHEET, name: impressionName, properties: impressionProperties };
-  const tmp5 = transitionState(8455);
+  let obj = { type: sheetKey(1272).ImpressionTypes.HALFSHEET, name: impressionName, properties: impressionProperties };
+  const tmp5 = transitionState(8941);
   tmp5(obj);
   const imperativeHandle = registerDismissHandler.useImperativeHandle(ref, () => ({
     componentDidEnter() {
@@ -222,12 +257,12 @@ let closure_9 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((shee
     callback2();
     return true;
   }, items2);
-  transitionState(5787)(callback3);
-  const Provider = transitionState(6654).Provider;
+  transitionState(5370)(callback3);
+  const Provider = transitionState(6831).Provider;
   return <Provider value={memo}>{null}</Provider>;
-}));
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((appEntryKey) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionSheetPresenter(appEntryKey) {
   let stack;
   let tmp12;
   let tmp4;
@@ -282,8 +317,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((appEntryKey) => {
       tmp11 = cResult[8];
     }
     if (cResult[10] !== tmp11) {
-      const TransitionGroup = tmp(12080).TransitionGroup;
-      const tmp17 = <TransitionGroup style={StyleSheet.absoluteFill} component={appEntryKey(5721).TransitionGroupOverlayView}>{tmp11}</TransitionGroup>;
+      const TransitionGroup = tmp(12154).TransitionGroup;
+      const tmp17 = <TransitionGroup style={StyleSheet.absoluteFill} component={appEntryKey(5304).TransitionGroupOverlayView}>{tmp11}</TransitionGroup>;
       cResult[10] = tmp11;
       cResult[11] = tmp17;
       tmp14 = tmp17;
@@ -313,7 +348,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((appEntryKey) => {
   cResult[7] = stateFromStoresArray;
   cResult[8] = mapped;
   tmp11 = mapped;
-}) : ((appEntryKey) => {
+}) : (function ActionSheetPresenter(appEntryKey) {
   let stack;
   appEntryKey = appEntryKey.appEntryKey;
   const items = [appEntryKey];
@@ -326,9 +361,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((appEntryKey) => {
   const stateFromStoresArray = obj.useStateFromStoresArray(items1, () => stack.getStack(), []);
   const found = stateFromStoresArray.filter((appEntryKey) => appEntryKey.appEntryKey === appEntryKey);
   const mapped = found.map((content) => <closure_1_9 key={arg0.key} sheetKey={arg0.key} content={arg0.content} impressionName={arg0.impressionName} impressionProperties={arg0.impressionProperties} zIndex={arg0.zIndex} />);
-  const TransitionGroup = appEntryKey(12080).TransitionGroup;
-  return <TransitionGroup style={StyleSheet.absoluteFill} component={appEntryKey(5721).TransitionGroupOverlayView}>{mapped}</TransitionGroup>;
+  const TransitionGroup = appEntryKey(12154).TransitionGroup;
+  return <TransitionGroup style={StyleSheet.absoluteFill} component={appEntryKey(5304).TransitionGroupOverlayView}>{mapped}</TransitionGroup>;
 });
 let result = size.fileFinishedImporting("design/components/Sheet/native/ActionSheetPresenter.native.tsx");
 
-export const ActionSheetPresenter = tmp3;
+export const ActionSheetPresenter = tmp2;

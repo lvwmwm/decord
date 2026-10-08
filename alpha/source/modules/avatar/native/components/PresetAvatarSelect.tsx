@@ -1,31 +1,29 @@
-// Module ID: 17617
-// Function ID: 17618
+// Module ID: 17899
+// Function ID: 17900
 // Name: PresetAvatarSelect
-// Dependencies: [19, 17, 21, 17618, 17619, 17620, 17621, 17622, 17623, 17624, 17625, 1126, 4896, 587, 558, 576, 4892, 5981, 5916, 2]
+// Dependencies: [19, 17, 21, 17900, 17901, 17902, 17903, 17904, 17905, 17906, 17907, 1126, 5090, 587, 558, 576, 5086, 6164, 6189, 2]
 
-// Module 17617 (PresetAvatarSelect)
+// Module 17899 (PresetAvatarSelect)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Pressables from "Pressables" /* 5916 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import defaultAvatar1Default from "defaultAvatar1" /* 17618 */;
-import defaultAvatar2Default from "defaultAvatar2" /* 17619 */;
-import defaultAvatar3Default from "defaultAvatar3" /* 17620 */;
-import defaultAvatar4Default from "defaultAvatar4" /* 17621 */;
-import defaultAvatar5Default from "defaultAvatar5" /* 17622 */;
-import defaultAvatar6Default from "defaultAvatar6" /* 17623 */;
-import defaultAvatar7Default from "defaultAvatar7" /* 17624 */;
-import defaultAvatar8Default from "defaultAvatar8" /* 17625 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import Pressables from "Pressables" /* 6189 */;
+import defaultAvatar1Default from "defaultAvatar1" /* 17900 */;
+import defaultAvatar2Default from "defaultAvatar2" /* 17901 */;
+import defaultAvatar3Default from "defaultAvatar3" /* 17902 */;
+import defaultAvatar4Default from "defaultAvatar4" /* 17903 */;
+import defaultAvatar5Default from "defaultAvatar5" /* 17904 */;
+import defaultAvatar6Default from "defaultAvatar6" /* 17905 */;
+import defaultAvatar7Default from "defaultAvatar7" /* 17906 */;
+import defaultAvatar8Default from "defaultAvatar8" /* 17907 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let onAvatarSelect;
 
 let closure_4;
 let hasOwnProperty;
@@ -98,7 +96,7 @@ createStyles = createStyles.createStyles;
 ({ borderColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE });
 let closure_7 = createStyles(obj9);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAvatarSelect) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PresetAvatarSelect(onAvatarSelect) {
   let arr;
   let first;
   let intl;
@@ -112,7 +110,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAvatarSelect) =>
   const container = tmp4.container;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { variant: "text-sm/medium", color: "text-default", children: intl.string(tmp(1126).t.yP28YL) };
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     intl = tmp(1126).intl;
     const tmp7 = closure_4(Text, obj2);
     cResult[0] = tmp7;
@@ -239,7 +237,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAvatarSelect) =>
   cResult[3] = selectedAvatar;
   cResult[4] = mapped1;
   tmp8 = mapped1;
-}) : ((arg0) => {
+}) : (function PresetAvatarSelect(arg0) {
   let intl;
   let items;
   let items2;
@@ -303,7 +301,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAvatarSelect) =>
   return closure_5(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function DefaultAvatarButton(arg0) {
   let accessibilityLabel;
   let onSelect;
   let selected;
@@ -389,7 +387,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = prop;
   cResult[2] = items;
   tmp6 = items;
-}) : ((selected) => {
+}) : (function DefaultAvatarButton(selected) {
   let accessibilityLabel;
   let intl;
   let obj2;

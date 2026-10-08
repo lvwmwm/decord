@@ -1,25 +1,23 @@
-// Module ID: 10606
-// Function ID: 10607
+// Module ID: 10203
+// Function ID: 10204
 // Name: SearchableUserList
-// Dependencies: [32, 19, 17, 1377, 10605, 21, 4896, 587, 558, 576, 10607, 1375, 10608, 4735, 1126, 10609, 10611, 10739, 5918, 9270, 2]
+// Dependencies: [32, 19, 17, 1389, 10202, 21, 5090, 587, 558, 576, 10204, 1387, 10205, 4929, 1126, 10206, 10208, 11597, 10211, 8601, 2]
 
-// Module 10606 (SearchableUserList)
+// Module 10203 (SearchableUserList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import shared from "shared" /* 4735 */;
-import UserRowConstants from "UserRowConstants" /* 10605 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 10608 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import shared from "shared" /* 4929 */;
+import UserRowConstants from "UserRowConstants" /* 10202 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 10205 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore_mod from "UserStore" /* 1377 */;
+import UserStore_mod from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let selectedUserIds;
 
 let c10;
 let c9;
@@ -32,13 +30,13 @@ let UserStore = UserStore_mod;
 const UserRowModes = UserRowConstants.UserRowModes;
 ({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { searchBarContainer: obj2, searchBar: { height: "duration", minHeight: false }, searchBarRowContainer: obj3, noResults: obj4 };
+let obj = { searchBarContainer: obj2, searchBar: { height: "emoji", minHeight: false }, searchBarRowContainer: obj3, noResults: obj4 };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 createStyles = createStyles.createStyles;
 obj3 = { paddingTop: nativeDefault.space.PX_8 };
 obj4 = { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 let closure_11 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedUserIds) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchableUserList(selectedUserIds) {
   let actions;
   let autoFocusSearch;
   let closure_6;
@@ -295,7 +293,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedUserIds) => 
   cResult[12] = undefined !== withGuildMembers && withGuildMembers;
   cResult[13] = obj2;
   tmp20 = obj2;
-}) : ((selectedUserIds) => {
+}) : (function SearchableUserList(selectedUserIds) {
   let UserFlashListActions;
   let defaultNoResultsFound;
   let disableGradient;

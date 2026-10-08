@@ -1,14 +1,14 @@
-// Module ID: 13804
-// Function ID: 13805
+// Module ID: 14029
+// Function ID: 14030
 // Name: useGuildHeaderCounts
-// Dependencies: [19, 4786, 13805, 558, 576, 12, 584, 504, 2]
+// Dependencies: [19, 4980, 14030, 558, 576, 12, 584, 504, 2]
 
-// Module 13804 (useGuildHeaderCounts)
+// Module 14029 (useGuildHeaderCounts)
 import _mod12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import react_mod from "react" /* 19 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4786 */;
-import GuildHeaderCountsStore from "GuildHeaderCountsStore" /* 13805 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4980 */;
+import GuildHeaderCountsStore from "GuildHeaderCountsStore" /* 14030 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let _require, dependencyMap;
 
 let react = react_mod;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((type, guildId, arg2) => {
+let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useThrottledDispatch(type, guildId, arg2) {
   let closure_2;
   let closure_3;
   _require = type;
@@ -81,7 +81,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((type, guildId, 
   cResult[1] = type;
   cResult[2] = throttleResult;
   tmp4 = throttleResult;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useThrottledDispatch(arg0, arg1, arg2) {
   let memo;
   let closure_0 = arg0;
   let closure_1 = arg1;
@@ -107,7 +107,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((type, guildId, 
   }, items2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMemberCount(arg0) {
   let closure_0;
   let first;
   let tmp10;
@@ -125,7 +125,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function s() {
+    const fn = function c() {
       let num = GuildMemberCountStore.getMemberCount(closure_0);
       if (num == null) {
         num = 0;
@@ -159,7 +159,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult2 = require("get initialized");
   return tmpResult2.useStateFromStores(tmp8, tmp10);
-}) : ((arg0) => {
+}) : (function useMemberCount(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildMemberCountStore];
@@ -176,7 +176,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj2.useStateFromStores(items1, () => GuildHeaderCountsStore.getMemberCount(closure_0));
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnlineCount(arg0) {
   let closure_0;
   let first;
   let tmp10;
@@ -194,7 +194,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function s() {
+    const fn = function c() {
       let num = GuildMemberCountStore.getOnlineCount(closure_0);
       if (num == null) {
         num = 0;
@@ -228,7 +228,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult2 = require("get initialized");
   return tmpResult2.useStateFromStores(tmp8, tmp10);
-}) : ((arg0) => {
+}) : (function useOnlineCount(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildMemberCountStore];
@@ -245,7 +245,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj2.useStateFromStores(items1, () => GuildHeaderCountsStore.getOnlineCount(closure_0));
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildHeaderCounts(arg0) {
   let closure_0;
   let first;
   let tmp8;
@@ -289,7 +289,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = tmp5;
   cResult[6] = obj2;
   tmp10 = obj2;
-}) : ((arg0) => {
+}) : (function useGuildHeaderCounts(arg0) {
   let closure_0;
   let items;
   let obj2;

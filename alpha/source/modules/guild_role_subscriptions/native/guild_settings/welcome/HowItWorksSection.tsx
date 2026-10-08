@@ -1,22 +1,22 @@
-// Module ID: 17937
-// Function ID: 17938
+// Module ID: 18224
+// Function ID: 18225
 // Name: HowItWorksSection
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4892, 5981, 1126, 17938, 1188, 17939, 17940, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 5086, 6164, 1126, 18225, 1200, 18226, 18227, 2]
 
-// Module 17937 (HowItWorksSection)
+// Module 18224 (HowItWorksSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17938 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17939 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 17940 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18225 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18226 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 18227 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ size = { width: 18, height: 18, position: "absolute", top: 9, start: 9, textAlig
 obj3 = { width: "100%", paddingHorizontal: 18, paddingVertical: 8, textAlign: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, borderBottomStartRadius: 8, borderBottomEndRadius: 8, overflow: "hidden" };
 let closure_6 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function HowItWorksCard(arg0) {
   let cardNumber;
   let description;
   let iconSource;
@@ -116,7 +116,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.cardNumber;
   cResult[2] = tmp7;
   tmp6 = tmp7;
-}) : ((iconSource) => {
+}) : (function HowItWorksCard(iconSource) {
   let cardNumber;
   let description;
   let items;
@@ -136,7 +136,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return hasOwnProperty(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HowItWorksSection() {
   let intl;
   let intl2;
   let intl3;
@@ -204,7 +204,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[7] = tmp17;
   cResult[8] = tmp27;
   tmp26 = tmp27;
-}) : (() => {
+}) : (function HowItWorksSection() {
   let intl;
   let intl2;
   let intl3;

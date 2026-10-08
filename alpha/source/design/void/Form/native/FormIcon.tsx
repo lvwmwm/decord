@@ -1,22 +1,22 @@
-// Module ID: 6650
-// Function ID: 6651
+// Module ID: 6827
+// Function ID: 6828
 // Name: FormIcon
-// Dependencies: [109, 19, 21, 4896, 558, 576, 1188, 2]
+// Dependencies: [109, 19, 21, 5090, 558, 576, 1200, 2]
 
-// Module 6650 (FormIcon)
+// Module 6827 (FormIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import native from "native" /* 1188 */;
+import native from "native" /* 1200 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = ["style", "color", "themedColor"];
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ icon: { opacity: 0.6 } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormIcon(arg0) {
   let color;
   let style;
   let themedColor;
@@ -61,7 +61,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp13 = tmp20;
         }
       }
-      const ThemedIcon = tmp(1188).ThemedIcon;
+      const ThemedIcon = tmp(1200).ThemedIcon;
       const merged = Object.assign(tmp5);
       const tmp25 = <ThemedIcon style={tmp19} themedColor={tmp7} />;
       cResult[8] = tmp5;
@@ -88,7 +88,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
       }
-      const Icon = tmp(1188).Icon;
+      const Icon = tmp(1200).Icon;
       const merged1 = Object.assign(tmp5);
       const tmp18 = <Icon style={tmp12} color={tmp4} />;
       cResult[15] = tmp4;
@@ -104,7 +104,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp12 = items1;
   }
   return tmp13;
-}) : ((color) => {
+}) : (function FormIcon(color) {
   let style;
   let themedColor;
   let tmp9;

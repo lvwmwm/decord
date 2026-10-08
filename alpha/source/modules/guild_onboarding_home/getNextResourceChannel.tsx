@@ -1,18 +1,18 @@
-// Module ID: 11927
-// Function ID: 11928
+// Module ID: 12000
+// Function ID: 12001
 // Name: getNextResourceChannel
-// Dependencies: [5083, 558, 576, 504, 2]
+// Dependencies: [6912, 558, 576, 504, 2]
 // Exports: default
 
-// Module 11927 (getNextResourceChannel)
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5083 */;
+// Module 12000 (getNextResourceChannel)
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 6912 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreviousAndNextResourceChannel(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -80,7 +80,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     tmp13 = cResult[3];
   }
   return tmp13;
-}) : ((arg0, arg1) => {
+}) : (function usePreviousAndNextResourceChannel(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;

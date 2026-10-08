@@ -1,35 +1,35 @@
-// Module ID: 14345
-// Function ID: 14346
+// Module ID: 14573
+// Function ID: 14574
 // Name: ActivityShareLinkModal
-// Dependencies: [5, 32, 19, 17, 2051, 1377, 2050, 10605, 4889, 21, 4896, 587, 558, 576, 504, 10724, 11770, 14344, 6670, 1375, 14346, 6978, 7179, 4574, 1126, 6695, 4573, 6890, 4845, 1484, 1618, 1369, 7509, 6017, 6026, 5918, 10727, 10741, 2]
+// Dependencies: [5, 32, 19, 17, 2063, 1389, 2062, 10202, 5083, 21, 5090, 587, 558, 576, 504, 11577, 11837, 14572, 6847, 1387, 14574, 7167, 7358, 4766, 1126, 6872, 4765, 7079, 5039, 1496, 1630, 1381, 9232, 6203, 6212, 10211, 11588, 11612, 2]
 
-// Module 14345 (ActivityShareLinkModal)
+// Module 14573 (ActivityShareLinkModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import ToastUtils from "ToastUtils" /* 4573 */;
-import LinkIcon from "LinkIcon" /* 4845 */;
-import MessageConstants from "MessageConstants" /* 4889 */;
-import ClipboardUtils from "ClipboardUtils" /* 6695 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 6890 */;
-import HeaderShared from "HeaderShared" /* 7509 */;
-import UserRowConstants from "UserRowConstants" /* 10605 */;
-import formatResults from "formatResults" /* 10724 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 11770 */;
-import openActivityShareLinkModal from "openActivityShareLinkModal" /* 14344 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import ToastUtils from "ToastUtils" /* 4765 */;
+import LinkIcon from "LinkIcon" /* 5039 */;
+import MessageConstants from "MessageConstants" /* 5083 */;
+import ClipboardUtils from "ClipboardUtils" /* 6872 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7079 */;
+import HeaderShared from "HeaderShared" /* 9232 */;
+import UserRowConstants from "UserRowConstants" /* 10202 */;
+import formatResults from "formatResults" /* 11577 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 11837 */;
+import openActivityShareLinkModal from "openActivityShareLinkModal" /* 14572 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import UserStore from "UserStore" /* 1377 */;
-import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 2050 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import UserStore from "UserStore" /* 1389 */;
+import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 2062 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let applicationId, c1, c2, c3, channel, closure_0;
+let c1, c2, c3, channel, closure_0;
 
 let closure_12;
 let map1;
@@ -50,7 +50,7 @@ obj3 = { paddingRight: nativeDefault.space.PX_16 };
 obj4 = { borderBottomWidth: 0, shadowColor: "transparent", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj5 = { flex: 1, display: "flex", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 let closure_14 = createStyles(obj);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShareLinkModal(applicationId) {
   let connectedActivityChannelId;
   let linkId;
   let tmp15;
@@ -178,7 +178,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => 
   };
   cResult[11] = undefined;
   cResult[12] = fn3;
-}) : ((applicationId) => {
+}) : (function ActivityShareLinkModal(applicationId) {
   let c6;
   let closure_10;
   let intl;

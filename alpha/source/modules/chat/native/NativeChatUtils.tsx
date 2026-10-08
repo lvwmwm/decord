@@ -1,14 +1,14 @@
-// Module ID: 10002
-// Function ID: 10003
+// Module ID: 9532
+// Function ID: 9533
 // Name: NativeChatUtils
-// Dependencies: [17, 1369, 10003, 1242, 10004, 10005, 2]
+// Dependencies: [17, 1381, 9533, 1254, 9534, 9535, 2]
 
-// Module 10002 (NativeChatUtils)
-import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import ChatNativeComponent from "ChatNativeComponent" /* 10003 */;
-import ChatChangesetUpdateTracker from "ChatChangesetUpdateTracker" /* 10004 */;
-import react_nativeDefault from "react-native" /* 10005 */;
+// Module 9532 (NativeChatUtils)
+import SentryUtilsDefault from "SentryUtils" /* 1254 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import ChatNativeComponent from "ChatNativeComponent" /* 9533 */;
+import ChatChangesetUpdateTracker from "ChatChangesetUpdateTracker" /* 9534 */;
+import react_nativeDefault from "react-native" /* 9535 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let obj2 = {
           DCDChatManager.scrollTo(tmp15, arg1, undefined !== animated && animated, undefined !== highlight && highlight, TOP);
         }
       } else {
-        const Commands = tmp5(10003).Commands;
+        const Commands = tmp5(9533).Commands;
         Commands.scrollTo(arg0, arg1, undefined !== animated && animated, undefined !== highlight && highlight, TOP);
       }
     }
@@ -54,7 +54,7 @@ let obj2 = {
           DCDChatManager.scrollToBottom(tmp6, arg1);
         }
       } else {
-        const Commands = tmp2(10003).Commands;
+        const Commands = tmp2(9533).Commands;
         Commands.scrollToBottom(arg0, arg1);
       }
     }
@@ -100,7 +100,7 @@ let obj2 = {
           DCDChatManager.scrollIntoView(tmp13, arg1, undefined !== animated && animated, undefined !== highlight && highlight);
         }
       } else {
-        const Commands = tmp4(10003).Commands;
+        const Commands = tmp4(9533).Commands;
         Commands.scrollIntoView(arg0, arg1, undefined !== animated && animated, undefined !== highlight && highlight);
       }
     }
@@ -123,7 +123,7 @@ let obj2 = {
         SentryUtilsDefault;
         obj2 = { changesetUpdateId: andIncrementChangesetIdForChat, opCount: rows.length, rows, forceReload };
         addBreadcrumb(obj);
-        const Commands = tmp32(10003).Commands;
+        const Commands = tmp32(9533).Commands;
         const _JSON2 = JSON;
         const updateRows = Commands.updateRows;
         const json = JSON.stringify(rows.rows);
@@ -178,20 +178,26 @@ let obj2 = {
     }
   },
   clearRows(arg0) {
-    if (null != arg0) {
-      const obj3 = PlatformUtils;
-      if (obj3.isIOS()) {
-        const Commands = tmp7(10003).Commands;
-        const clearRows2 = Commands.clearRows;
-        const tmp7Result = ChatChangesetUpdateTracker;
-        clearRows2(arg0, tmp7Result.getAndIncrementChangesetIdForChat(arg0));
+    if (null == arg0) {
+      return null;
+    } else {
+      const obj4 = PlatformUtils;
+      if (obj4.isIOS()) {
+        const tmp8Result = ChatChangesetUpdateTracker;
+        const andIncrementChangesetIdForChat = tmp8Result.getAndIncrementChangesetIdForChat(arg0);
+        const Commands = tmp8(9533).Commands;
+        Commands.clearRows(arg0, andIncrementChangesetIdForChat);
+        return andIncrementChangesetIdForChat;
       } else {
         const tmp2 = React3(arg0);
-        if (null != tmp2) {
-          const clearRows = react_nativeDefault.clearRows;
-          react_nativeDefault;
-          const tmp7Result2 = ChatChangesetUpdateTracker;
-          clearRows(tmp2, tmp7Result2.getAndIncrementChangesetIdForChat(arg0));
+        if (null == tmp2) {
+          return null;
+        } else {
+          const tmp8Result2 = ChatChangesetUpdateTracker;
+          const andIncrementChangesetIdForChat1 = tmp8Result2.getAndIncrementChangesetIdForChat(arg0);
+          const obj2 = react_nativeDefault;
+          obj2.clearRows(tmp2, andIncrementChangesetIdForChat1);
+          return andIncrementChangesetIdForChat1;
         }
       }
     }

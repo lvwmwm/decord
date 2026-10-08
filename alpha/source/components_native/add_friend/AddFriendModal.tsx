@@ -1,32 +1,32 @@
-// Module ID: 13682
-// Function ID: 13683
+// Module ID: 13904
+// Function ID: 13905
 // Name: AddFriendModal
-// Dependencies: [32, 19, 17, 1377, 1085, 12342, 21, 4896, 5922, 587, 558, 576, 12344, 1252, 1369, 5597, 1493, 5099, 4728, 1126, 8048, 6890, 13683, 6017, 4892, 13684, 13686, 1618, 6503, 2]
+// Dependencies: [32, 19, 17, 1389, 1085, 12438, 21, 5090, 5902, 587, 558, 576, 12440, 1264, 1381, 5392, 1505, 5940, 4922, 1126, 8457, 7079, 13905, 6203, 5086, 13906, 13908, 1630, 6679, 2]
 
-// Module 13682 (AddFriendModal)
+// Module 13904 (AddFriendModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
-import NavigatorHeader from "NavigatorHeader" /* 6017 */;
-import Navigator from "Navigator" /* 6503 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12342 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12344 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+import NavigatorHeader from "NavigatorHeader" /* 6203 */;
+import Navigator from "Navigator" /* 6679 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12438 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12440 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import TextStyles from "TextStyles" /* 5922 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import TextStyles from "TextStyles" /* 5902 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, currentUser, navigation, onSkip;
+let _require, currentUser, navigation;
 
 let Fonts;
 let c10;
@@ -54,7 +54,7 @@ let merged = Object.assign(TextStyles(Fonts.DISPLAY_EXTRABOLD, nativeDefault.col
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, marginTop: 8 };
 let closure_12 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSkip) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddFriendModalScene(onSkip) {
   let constants2;
   let contactSyncAccount;
   let intl;
@@ -119,7 +119,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSkip) => {
     I = tmp14;
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      class F {
+      class M {
         constructor() {
           currentUser = currentUser.getCurrentUser();
           let userTag;
@@ -135,9 +135,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSkip) => {
           obj3.showShareActionSheet({ message: formatToPlainStringResult }, "Add Friend Modal");
         }
       }
-      cResult[7] = F;
+      cResult[7] = M;
     } else {
-      class F {
+      class M {
         constructor() {
           currentUser = currentUser.getCurrentUser();
           let userTag;
@@ -154,12 +154,12 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSkip) => {
         }
       }
     }
-    F = tmp16;
+    M = tmp16;
     if (cResult[8] === tmp14) {
       let tmp20;
       let tmp24;
       let tmp30;
-      class F {
+      class M {
         constructor() {
           currentUser = currentUser.getCurrentUser();
           let userTag;
@@ -179,7 +179,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSkip) => {
       const _Symbol2 = Symbol;
       const headerText = tmp4.headerText;
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-        class F {
+        class M {
           constructor() {
             currentUser = currentUser.getCurrentUser();
             let userTag;
@@ -199,7 +199,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSkip) => {
         cResult[12] = stringResult;
         tmp20 = stringResult;
       } else {
-        class F {
+        class M {
           constructor() {
             currentUser = currentUser.getCurrentUser();
             let userTag;
@@ -217,7 +217,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSkip) => {
         }
       }
       if (cResult[13] !== tmp4.headerText) {
-        class F {
+        class M {
           constructor() {
             currentUser = currentUser.getCurrentUser();
             let userTag;
@@ -238,7 +238,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSkip) => {
         cResult[14] = closure_10(tmp(tmp2[24]).Text, obj3);
         const tmp23 = closure_10(tmp(tmp2[24]).Text, obj3);
       } else {
-        class F {
+        class M {
           constructor() {
             currentUser = currentUser.getCurrentUser();
             let userTag;
@@ -258,7 +258,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSkip) => {
       const _Symbol3 = Symbol;
       const subheaderText = tmp4.subheaderText;
       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-        class F {
+        class M {
           constructor() {
             currentUser = currentUser.getCurrentUser();
             let userTag;
@@ -278,7 +278,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSkip) => {
         cResult[15] = stringResult1;
         tmp24 = stringResult1;
       } else {
-        class F {
+        class M {
           constructor() {
             currentUser = currentUser.getCurrentUser();
             let userTag;
@@ -296,7 +296,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSkip) => {
         }
       }
       if (cResult[16] !== tmp4.subheaderText) {
-        class F {
+        class M {
           constructor() {
             currentUser = currentUser.getCurrentUser();
             let userTag;
@@ -317,7 +317,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSkip) => {
         cResult[17] = closure_10(tmp(tmp2[24]).Text, obj5);
         const tmp27 = closure_10(tmp(tmp2[24]).Text, obj5);
       } else {
-        class F {
+        class M {
           constructor() {
             currentUser = currentUser.getCurrentUser();
             let userTag;
@@ -335,7 +335,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSkip) => {
         }
       }
       if (cResult[18] !== tmp4.input) {
-        class F {
+        class M {
           constructor() {
             currentUser = currentUser.getCurrentUser();
             let userTag;
@@ -356,7 +356,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSkip) => {
         cResult[19] = closure_10(sourceMetadata(tmp2[25]), obj7);
         const tmp29 = closure_10(sourceMetadata(tmp2[25]), obj7);
       } else {
-        class F {
+        class M {
           constructor() {
             currentUser = currentUser.getCurrentUser();
             let userTag;
@@ -375,7 +375,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSkip) => {
       }
       const _Symbol4 = Symbol;
       if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-        class F {
+        class M {
           constructor() {
             currentUser = currentUser.getCurrentUser();
             let userTag;
@@ -398,7 +398,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSkip) => {
         cResult[20] = tmp31;
         tmp30 = tmp31;
       } else {
-        class F {
+        class M {
           constructor() {
             currentUser = currentUser.getCurrentUser();
             let userTag;
@@ -416,7 +416,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSkip) => {
         }
       }
       if (cResult[21] === tmp9) {
-        class F {
+        class M {
           constructor() {
             currentUser = currentUser.getCurrentUser();
             let userTag;
@@ -433,7 +433,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSkip) => {
           }
         }
         if (cResult[24] === tmp4.otherOptionsContainer) {
-          class F {
+          class M {
             constructor() {
               currentUser = currentUser.getCurrentUser();
               let userTag;
@@ -450,7 +450,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSkip) => {
             }
           }
           if (cResult[27] === tmp26) {
-            class F {
+            class M {
               constructor() {
                 currentUser = currentUser.getCurrentUser();
                 let userTag;
@@ -473,8 +473,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSkip) => {
           cResult[28] = tmp28;
           cResult[29] = tmp34;
           cResult[30] = tmp22;
-          cResult[31] = closure_11(F, obj10);
-          const tmp41 = closure_11(F, obj10);
+          cResult[31] = closure_11(M, obj10);
+          const tmp41 = closure_11(M, obj10);
         }
         const obj11 = { style: tmp4.otherOptionsContainer, children: items1 };
         items1 = [tmp30, tmp32];
@@ -485,7 +485,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSkip) => {
       }
       let tmp33 = null;
       if (tmp9) {
-        class F {
+        class M {
           constructor() {
             currentUser = currentUser.getCurrentUser();
             let userTag;
@@ -533,7 +533,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSkip) => {
     tmp17 = fn2;
     tmp18 = items2;
   }
-  const fn = function x() {
+  const fn = function b() {
     let obj = AnalyticsUtilsDefault;
     obj.track(metroImportAll.FRIEND_ADD_VIEWED, sourceMetadata);
     const obj2 = ContactSyncUtils;
@@ -556,7 +556,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSkip) => {
   cResult[3] = sourceMetadata;
   cResult[4] = fn;
   tmp10 = fn;
-}) : ((onSkip) => {
+}) : (function AddFriendModalScene(onSkip) {
   let c3;
   let constants2;
   let intl;
@@ -668,7 +668,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSkip) => {
   return closure_11(tmp13, obj10);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialParams) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddFriendModal(initialParams) {
   let intl;
   let obj3;
   let tmp4;
@@ -697,7 +697,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialParams) => {
   cResult[3] = top;
   cResult[4] = tmp6;
   tmp5 = tmp6;
-}) : ((initialParams) => {
+}) : (function AddFriendModal(initialParams) {
   _require = initialParams;
   const items = [initialParams];
   const headerStatusBarHeight = useSafeAreaInsetsDefault().top;

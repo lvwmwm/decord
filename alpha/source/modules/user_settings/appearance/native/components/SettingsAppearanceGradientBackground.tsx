@@ -1,18 +1,18 @@
-// Module ID: 15133
-// Function ID: 15134
+// Module ID: 15395
+// Function ID: 15396
 // Name: SettingsAppearanceGradientBackground
-// Dependencies: [19, 17, 15107, 21, 4618, 5612, 558, 576, 15134, 4897, 4900, 587, 15135, 2]
+// Dependencies: [19, 17, 15369, 21, 4810, 5387, 558, 576, 15396, 5091, 5094, 587, 15397, 2]
 
-// Module 15133 (SettingsAppearanceGradientBackground)
+// Module 15395 (SettingsAppearanceGradientBackground)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import timing from "timing" /* 4897 */;
-import timingPresets from "timingPresets" /* 4900 */;
-import LinearGradient from "LinearGradient" /* 5612 */;
-import SettingsAppearancePickerUtils from "SettingsAppearancePickerUtils" /* 15134 */;
+import timing from "timing" /* 5091 */;
+import timingPresets from "timingPresets" /* 5094 */;
+import LinearGradient from "LinearGradient" /* 5387 */;
+import SettingsAppearancePickerUtils from "SettingsAppearancePickerUtils" /* 15396 */;
 import react from "react" /* 19 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15107 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 4618 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15369 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 4810 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let closure_7 = ReanimatedRexport.createAnimatedComponent(LinearGradient.LinearG
 let animatedLinearGradientLoadingProps = { colors: items, locations: [], startPoint: { x: 0, y: 0 }, endPoint: { x: 0, y: 0 } };
 items = [num, num];
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((theme) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useThemeStateTracker(theme) {
   let launchWelcomeSystemTheme;
   let sharedValue1;
   let tmp = theme;
@@ -98,7 +98,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((theme) => {
   cResult[2] = sharedValue1;
   cResult[3] = fn;
   tmp8 = fn;
-}) : ((theme) => {
+}) : (function useThemeStateTracker(theme) {
   let launchWelcomeSystemTheme;
   let tweener;
   let tmp = theme;
@@ -126,7 +126,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((theme) => {
 const __initData = { code: "function SettingsAppearanceGradientBackgroundTsx1(){const{gradientSize,animatedLinearGradientLoadingProps,themeState,interpolate,tweener,getGradientStartPoint,processColor,interpolateColor}=this.__closure;const{width:width,height:height}=gradientSize.get();if(width===0||height===0){return animatedLinearGradientLoadingProps;}const{themePrev:t7,themeCurrent:t8}=themeState.get();const{colors:colorsPrev,angle:anglePrev}=t7;const{colors:colorsCurrent,angle:angleCurrent}=t8;const angle=90-interpolate(tweener.get(),[0,1],[anglePrev,angleCurrent]);const originPoint=getGradientStartPoint(angle,width,height);return{colors:colorsPrev.map(function(_,i){var _processColor;return(_processColor=processColor(interpolateColor(tweener.get(),[0,1],[colorsPrev[i].hex,colorsCurrent[i].hex])))!==null&&_processColor!==void 0?_processColor:0;}),locations:colorsPrev.map(function(__0,i_0){return interpolate(tweener.get(),[0,1],[colorsPrev[i_0].stop/100,colorsCurrent[i_0].stop/100]);}),startPoint:{x:(width/2+originPoint[0])/width,y:(height/2-originPoint[1])/height},endPoint:{x:(width/2-originPoint[0])/width,y:(height/2+originPoint[1])/height}};}" };
 const __initData2 = { code: "function SettingsAppearanceGradientBackgroundTsx2(){const{gradientSize,animatedLinearGradientLoadingProps,themeState,interpolate,tweener,getGradientStartPoint,processColor,interpolateColor}=this.__closure;const{width:width,height:height}=gradientSize.get();if(width===0||height===0){return animatedLinearGradientLoadingProps;}const{themePrev:{colors:colorsPrev,angle:anglePrev},themeCurrent:{colors:colorsCurrent,angle:angleCurrent}}=themeState.get();const angle=90-interpolate(tweener.get(),[0,1],[anglePrev,angleCurrent]);const originPoint=getGradientStartPoint(angle,width,height);return{colors:colorsPrev.map(function(_,i){var _processColor;return(_processColor=processColor(interpolateColor(tweener.get(),[0,1],[colorsPrev[i].hex,colorsCurrent[i].hex])))!==null&&_processColor!==void 0?_processColor:0;}),locations:colorsPrev.map(function(__0,i_0){return interpolate(tweener.get(),[0,1],[colorsPrev[i_0].stop/100,colorsCurrent[i_0].stop/100]);}),startPoint:{x:(width/2+originPoint[0])/width,y:(height/2-originPoint[1])/height},endPoint:{x:(width/2-originPoint[0])/width,y:(height/2+originPoint[1])/height}};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAppearanceGradientBackground(arg0) {
   let backgroundToken;
   let first;
   let isDimmed;
@@ -134,6 +134,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   let themeIndex;
   let themeState;
   let themes;
+  let tmp21;
   let tweener;
   const tmp = themeState;
   animatedLinearGradientLoadingProps = themeState(sharedValue[7]);
@@ -163,7 +164,6 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     if (cResult[2] === prop) {
       if (cResult[3] === prop1) {
         let tmp10;
-        let tmp15;
         if (cResult[4] === themes) {
           tmp10 = cResult[5];
         }
@@ -173,18 +173,25 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
         const tmpResult = tmp(sharedValue[4]);
         sharedValue = tmpResult.useSharedValue({ width: 0, height: 0 });
         if (cResult[6] !== sharedValue) {
-          const fn = function x(nativeEvent) {
-            nativeEvent = nativeEvent.nativeEvent;
-            size = { width: nativeEvent.layout.width, height: nativeEvent.layout.height };
-            const result = sharedValue.set(size);
-          };
+          class T {
+            constructor(nativeEvent) {
+              nativeEvent = nativeEvent.nativeEvent;
+              size = { width: nativeEvent.layout.width, height: nativeEvent.layout.height };
+              const result = sharedValue.set(size);
+            }
+          }
           cResult[6] = sharedValue;
-          cResult[7] = fn;
-          tmp15 = fn;
+          cResult[7] = T;
         } else {
-          tmp15 = cResult[7];
+          class T {
+            constructor(nativeEvent) {
+              nativeEvent = nativeEvent.nativeEvent;
+              size = { width: nativeEvent.layout.width, height: nativeEvent.layout.height };
+              const result = sharedValue.set(size);
+            }
+          }
         }
-        const fn2 = function b() {
+        const fn = function b() {
           let colors;
           let height;
           let point;
@@ -237,14 +244,17 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
         let obj2 = { gradientSize: sharedValue, animatedLinearGradientLoadingProps, themeState, interpolate: tmp(tmp2[4]).interpolate, tweener, getGradientStartPoint: tweener(tmp2[12]), processColor: tmp(tmp2[4]).processColor, interpolateColor: tmp(tmp2[4]).interpolateColor };
         const useAnimatedProps = tmp(tmp2[4]).useAnimatedProps;
         tmp(sharedValue[4]);
-        fn2.__closure = obj2;
-        fn2.__workletHash = 12558395784936;
-        fn2.__initData = __initData;
-        const animatedProps = useAnimatedProps(fn2);
+        fn.__closure = obj2;
+        fn.__workletHash = 12558395784936;
+        fn.__initData = __initData;
+        const animatedProps = useAnimatedProps(fn);
         if (cResult[8] === animatedProps) {
-          let tmp21;
-          if (cResult[9] === tmp15) {
-            tmp21 = cResult[10];
+          class T {
+            constructor(nativeEvent) {
+              nativeEvent = nativeEvent.nativeEvent;
+              size = { width: nativeEvent.layout.width, height: nativeEvent.layout.height };
+              const result = sharedValue.set(size);
+            }
           }
           return tmp21;
         }
@@ -265,7 +275,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[4] = themes;
   cResult[5] = result;
   tmp10 = result;
-}) : ((isDimmed) => {
+}) : (function SettingsAppearanceGradientBackground(isDimmed) {
   let animatedProps;
   isDimmed = isDimmed.isDimmed;
   const themes = isDimmed.themes;

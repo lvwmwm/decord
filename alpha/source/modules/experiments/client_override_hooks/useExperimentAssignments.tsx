@@ -1,14 +1,14 @@
-// Module ID: 11433
-// Function ID: 11434
+// Module ID: 11416
+// Function ID: 11417
 // Name: useExperimentAssignments
-// Dependencies: [32, 4782, 1246, 558, 576, 4787, 504, 2]
+// Dependencies: [32, 4976, 1258, 558, 576, 4981, 504, 2]
 // Exports: getExperimentServerAssignment
 
-// Module 11433 (useExperimentAssignments)
-import ExperimentManager from "ExperimentManager" /* 4787 */;
+// Module 11416 (useExperimentAssignments)
+import ExperimentManager from "ExperimentManager" /* 4981 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 4782 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
+import ExperimentStore from "ExperimentStore" /* 4976 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1258 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((kind, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExperimentAssignment(kind, arg1) {
   let closure_1;
   let first;
   _require = kind;
@@ -44,7 +44,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((kind, arg1) => {
       }
     }
   }
-  const fn = function c() {
+  const fn = function p() {
     let variantId;
     if (kind.system === ExperimentManager.ExperimentSystem.LEGACY) {
       const userExperimentDescriptor = ExperimentStore.getUserExperimentDescriptor(tmp.name);
@@ -67,7 +67,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((kind, arg1) => {
   cResult[4] = arg1;
   cResult[5] = fn;
   tmp7 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useExperimentAssignment(arg0, arg1) {
   let closure_1;
   let system;
   _require = arg0;
@@ -93,7 +93,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((kind, arg1) => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExperimentServerAssignment(arg0, arg1) {
   let closure_1;
   let first;
   let system;
@@ -119,7 +119,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     const tmpResult = tmp(504);
     return tmpResult.useStateFromStores(first, tmp7);
   }
-  const fn = function c() {
+  const fn = function p() {
     let obj;
     let obj2;
     const items = [ExperimentStore, ApexExperimentStore];
@@ -142,7 +142,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[2] = arg1;
   cResult[3] = fn;
   tmp7 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useExperimentServerAssignment(arg0, arg1) {
   let closure_1;
   let system;
   _require = arg0;

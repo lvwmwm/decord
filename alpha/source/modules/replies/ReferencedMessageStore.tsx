@@ -1,19 +1,19 @@
-// Module ID: 7115
-// Function ID: 7116
+// Module ID: 7301
+// Function ID: 7302
 // Name: ReferencedMessageStore
-// Dependencies: [32, 7116, 7121, 2051, 5116, 1085, 1444, 5118, 7122, 504, 584, 2]
+// Dependencies: [32, 7302, 7307, 2063, 5428, 1085, 1456, 5430, 7308, 504, 584, 2]
 
-// Module 7115 (ReferencedMessageStore)
+// Module 7301 (ReferencedMessageStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import LRUCacheDefault from "LRUCache" /* 1444 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5118 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7122 */;
+import LRUCacheDefault from "LRUCache" /* 1456 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5430 */;
+import handleExplicitMediaScanTimeoutForMessage from "handleExplicitMediaScanTimeoutForMessage" /* 7308 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7116 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7121 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import MessageStore from "MessageStore" /* 5116 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7302 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7307 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import MessageStore from "MessageStore" /* 5428 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -356,7 +356,7 @@ let obj3 = {
         if (value.state === merged.LOADED) {
           const obj2 = { state: tmp3.LOADED, message: obj3.handleExplicitMediaScanTimeoutForMessage(value.message) };
           set = merged.set;
-          obj3 = ExplicitMediaRedactionUtils;
+          obj3 = handleExplicitMediaScanTimeoutForMessage;
           const result = set(channelId, messageId, obj2);
         }
       }

@@ -1,25 +1,25 @@
-// Module ID: 14656
-// Function ID: 14657
+// Module ID: 14917
+// Function ID: 14918
 // Name: GoreMediaFiltersNonFriendsDMsSetting
-// Dependencies: [7645, 558, 576, 14649, 7122, 6814, 14650, 1126, 11142, 14652, 2]
+// Dependencies: [7966, 558, 576, 14910, 8218, 6986, 14911, 1126, 11262, 14913, 2]
 // Exports: onGoreContentNonFriendsDmOnPress
 
-// Module 14656 (GoreMediaFiltersNonFriendsDMsSetting)
+// Module 14917 (GoreMediaFiltersNonFriendsDMsSetting)
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 6814 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 14649 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 14650 */;
-import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 14652 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 6986 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 14910 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 14911 */;
+import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 14913 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ExplicitMediaRedactionUtils = tmp(7122);
+const ExplicitMediaRedactionUtils = tmp(8218);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGoreContentNonFriendsDmSettingValue() {
   let tmp4;
   const obj = react;
   const cResult = obj.c(2);
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : (() => {
+}) : (function useGoreContentNonFriendsDmSettingValue() {
   const obj = useExplicitContentSettingsOrDefault;
   const goreContentNonFriendDm = obj.useGoreContentSettingOrDefault().goreContentNonFriendDm;
   const obj2 = ExplicitMediaRedactionUtils;

@@ -1,31 +1,31 @@
-// Module ID: 10386
-// Function ID: 10387
+// Module ID: 9983
+// Function ID: 9984
 // Name: MediaKeyboardBottomSheetActions
-// Dependencies: [19, 17, 21, 4896, 587, 1369, 558, 576, 4702, 683, 1618, 4586, 5612, 5916, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 1381, 558, 576, 4896, 683, 1630, 4778, 5387, 6189, 5086, 2]
 
-// Module 10386 (MediaKeyboardBottomSheetActions)
+// Module 9983 (MediaKeyboardBottomSheetActions)
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import LinearGradientDefault from "LinearGradient" /* 5612 */;
-import Pressables from "Pressables" /* 5916 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import LinearGradientDefault from "LinearGradient" /* 5387 */;
+import Pressables from "Pressables" /* 6189 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let dependencyMap, importDefault, obj1, onHeightChange, tmp3, tmp4, variant;
+let dependencyMap, importDefault, obj1, tmp3, tmp4, variant;
 
 let closure_4;
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp2;
-const Text_Text = tmp2(4892);
+const Text_Text = tmp2(5086);
 let react = react_mod;
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -55,7 +55,7 @@ let closure_8 = createStyles.createStyles((arg0, arg1, arg2) => {
   const merged2 = Object.assign(tmp.absoluteFillObject);
   return obj;
 });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onHeightChange) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MediaKeyboardBottomSheetActions(onHeightChange) {
   let button;
   let items;
   let tmp13;
@@ -219,7 +219,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   cResult[9] = tmp17;
   cResult[10] = obj5;
   tmp19 = obj5;
-}) : ((onHeightChange) => {
+}) : (function MediaKeyboardBottomSheetActions(onHeightChange) {
   let closure_1;
   let closure_2;
   let closure_3;
@@ -233,8 +233,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   variant = undefined;
   let tmp = onHeightChange;
   let tmp2 = dependencyMap;
-  let obj = onHeightChange(4702);
-  const gradientValue = obj.useGradientValue(onHeightChange(4702).GradientPercentage.END);
+  let obj = onHeightChange(4896);
+  const gradientValue = obj.useGradientValue(onHeightChange(4896).GradientPercentage.END);
   let hexResult = null;
   if (null != gradientValue) {
     let obj2 = _modDef683(gradientValue);
@@ -242,14 +242,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
     hexResult = alphaResult.hex();
   }
   const bottom = useSafeAreaInsetsDefault().bottom;
-  const tmpResult = tmp(4586);
+  const tmpResult = tmp(4778);
   const tmp6 = closure_8(bottom, tmpResult.useToken(nativeDefault.colors.MOBILE_FLOATINGBAR_BACKGROUND_HIGHER), hexResult);
   importDefault = tmp6;
-  const tmpResult4 = tmp(4586);
+  const tmpResult4 = tmp(4778);
   dependencyMap = tmpResult4.useToken(nativeDefault.modules.mobile.MEDIA_KEYBOARD_BUTTON_ICON_COLOR_ACTIVE);
-  const tmpResult5 = tmp(4586);
+  const tmpResult5 = tmp(4778);
   react = tmpResult5.useToken(nativeDefault.modules.mobile.MEDIA_KEYBOARD_BUTTON_TEXT_COLOR_ACTIVE);
-  const tmpResult6 = tmp(4586);
+  const tmpResult6 = tmp(4778);
   variant = tmpResult6.useToken(nativeDefault.modules.mobile.MEDIA_KEYBOARD_BUTTON_TEXT_VARIANT);
   let items = [tmp6.gradient.color];
   const memo = react.useMemo(() => {

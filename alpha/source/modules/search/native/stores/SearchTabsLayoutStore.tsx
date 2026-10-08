@@ -1,21 +1,21 @@
-// Module ID: 12006
-// Function ID: 12007
+// Module ID: 12079
+// Function ID: 12080
 // Name: SearchTabsLayoutStore
-// Dependencies: [11984, 2051, 6794, 12007, 12008, 12009, 11994, 7524, 568, 11987, 11983, 11985, 504, 584, 2]
+// Dependencies: [12057, 2063, 6067, 12080, 12081, 12082, 12067, 9247, 568, 12060, 12056, 12058, 504, 584, 2]
 
-// Module 12006 (SearchTabsLayoutStore)
+// Module 12079 (SearchTabsLayoutStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import SmartSearchUtils from "SmartSearchUtils" /* 11983 */;
-import SearchUtils from "SearchUtils" /* 11987 */;
-import SmartSearchResultsStore from "SmartSearchResultsStore" /* 11984 */;
-import ChannelStore_mod from "ChannelStore" /* 2051 */;
-import SearchMessageStore from "SearchMessageStore" /* 6794 */;
-import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 12007 */;
-import SearchMemberTabStore from "SearchMemberTabStore" /* 12008 */;
-import SearchPeopleTabStore from "SearchPeopleTabStore" /* 12009 */;
-import SearchQueryStore from "SearchQueryStore" /* 11994 */;
-import SearchConstants from "SearchConstants" /* 7524 */;
+import SmartSearchUtils from "SmartSearchUtils" /* 12056 */;
+import SearchUtils from "SearchUtils" /* 12060 */;
+import SmartSearchResultsStore from "SmartSearchResultsStore" /* 12057 */;
+import ChannelStore_mod from "ChannelStore" /* 2063 */;
+import SearchMessageStore from "SearchMessageStore" /* 6067 */;
+import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 12080 */;
+import SearchMemberTabStore from "SearchMemberTabStore" /* 12081 */;
+import SearchPeopleTabStore from "SearchPeopleTabStore" /* 12082 */;
+import SearchQueryStore from "SearchQueryStore" /* 12067 */;
+import SearchConstants from "SearchConstants" /* 9247 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -117,7 +117,7 @@ function computeLayoutForState(value) {
         const tmp11 = searchResultsQuery;
         const tmp8 = require;
         if (null != totalCount2) {
-          const tmp8Result = tmp8(11983);
+          const tmp8Result = tmp8(12056);
           sum = totalCount2 + tmp8Result.getSmartSearchCitationsCount(tmp10, tmp11, totalCount2 > 0);
         }
         acc[item] = sum;
@@ -154,7 +154,7 @@ function computeLayoutForState(value) {
               if (tmp8) {
                 const tmp4Result = SmartSearchUtils;
                 const smartSearchStatus = tmp4Result.getSmartSearchStatus(smartSearchQuery);
-                tmp8 = smartSearchStatus === tmp4(11985).SmartSearchStatus.LOADING;
+                tmp8 = smartSearchStatus === tmp4(12058).SmartSearchStatus.LOADING;
               }
               flag = tmp8;
             }

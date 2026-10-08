@@ -1,15 +1,15 @@
-// Module ID: 7515
-// Function ID: 7516
+// Module ID: 9238
+// Function ID: 9239
 // Name: PressableNavigatorButtonWrapper
-// Dependencies: [17, 7510, 21, 4896, 587, 558, 576, 2]
+// Dependencies: [17, 9233, 21, 5090, 587, 558, 576, 2]
 
-// Module 7515 (PressableNavigatorButtonWrapper)
+// Module 9238 (PressableNavigatorButtonWrapper)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import react_native2 from "react-native" /* 7510 */;
-import createStyles from "createStyles" /* 4896 */;
+import react_native2 from "react-native" /* 9233 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ const jsx = Fragment.jsx;
 let obj = { buttonWrapper: size, buttonWrapperModal: { marginLeft: -8 } };
 size = { flexShrink: 0, flexDirection: "row", alignItems: "center", padding: nativeDefault.space.PX_8, height: MIN_HEADER_HEIGHT, width: MIN_HEADER_HEIGHT };
 let closure_4 = createStyles.createStyles(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PressableNavigatorButtonWrapper(arg0) {
   let children;
   let isModal;
   const obj = react;
@@ -41,7 +41,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((isModal) => {
+}) : (function PressableNavigatorButtonWrapper(isModal) {
   let flag = isModal.isModal;
   const children = isModal.children;
   if (flag === undefined) {

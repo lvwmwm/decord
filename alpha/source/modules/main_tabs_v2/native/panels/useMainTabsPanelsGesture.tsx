@@ -1,18 +1,18 @@
-// Module ID: 15967
-// Function ID: 15968
+// Module ID: 16227
+// Function ID: 16228
 // Name: useMainTabsPanelsGesture
-// Dependencies: [19, 11138, 1369, 15968, 11139, 1618, 1484, 4618, 4897, 4900, 5604, 15969, 6147, 2]
+// Dependencies: [19, 11258, 1381, 16228, 11259, 1630, 1496, 4810, 5091, 5094, 5374, 16229, 6326, 2]
 // Exports: default
 
-// Module 15967 (useMainTabsPanelsGesture)
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
-import timingPresets from "timingPresets" /* 4900 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6147 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11138 */;
+// Module 16227 (useMainTabsPanelsGesture)
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
+import timingPresets from "timingPresets" /* 5094 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6326 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11258 */;
 import react from "react" /* 19 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1369 */;
-import PanelsConfig from "PanelsConfig" /* 15968 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
+import PanelsConfig from "PanelsConfig" /* 16228 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -34,7 +34,6 @@ let closure_16 = { code: "function useMainTabsPanelsGestureTsx10(event){const{st
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/panels/useMainTabsPanelsGesture.tsx");
 
 export default function useMainTabsPanelsGesture(canDrag) {
-  let __initData6;
   let cancelOnSwipeRightFromStart;
   let openWidth;
   canDrag = canDrag.canDrag;

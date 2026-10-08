@@ -1,17 +1,17 @@
-// Module ID: 12451
-// Function ID: 12452
+// Module ID: 12547
+// Function ID: 12548
 // Name: ForumChannelEmptyState
-// Dependencies: [19, 17, 21, 4896, 558, 576, 4735, 1618, 12452, 12453, 1126, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 4929, 1630, 12548, 12549, 1126, 5086, 2]
 
-// Module 12451 (ForumChannelEmptyState)
+// Module 12547 (ForumChannelEmptyState)
 import react2 from "react" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import shared from "shared" /* 4735 */;
-import Text_Text from "Text/Text" /* 4892 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import shared from "shared" /* 4929 */;
+import Text_Text from "Text/Text" /* 5086 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let metroRequire;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ container: { flex: 1, alignSelf: "stretch", justifyContent: "center", alignItems: "center" }, image: { width: 120, height: 80 }, title: { textAlign: "center", marginTop: 16, marginHorizontal: 20 }, subtext: { textAlign: "center", marginTop: 4, marginHorizontal: 20 } });
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ForumChannelEmptyState(arg0) {
   let channelName;
   let items;
   let tagFilter;
@@ -57,9 +57,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     }
     const tmpResult2 = shared;
     if (tmpResult2.isThemeLight(theme)) {
-      tmp5Result = tmp5(12452);
+      tmp5Result = tmp5(12548);
     } else {
-      tmp5Result = tmp5(12453);
+      tmp5Result = tmp5(12549);
     }
     if (cResult[5] === tmp4.image) {
       let tmp11;
@@ -165,7 +165,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   cResult[3] = tmp8;
   cResult[4] = items1;
   tmp9 = items1;
-}) : ((topViewHeight) => {
+}) : (function ForumChannelEmptyState(topViewHeight) {
   let formatToPlainStringResult;
   let formatToPlainStringResult1;
   let items;
@@ -188,15 +188,15 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   const tmp7 = _false;
   const tmp9 = React3;
   if (obj3.isThemeLight(theme)) {
-    tmp4Result = tmp4(12452);
+    tmp4Result = tmp4(12548);
   } else {
-    tmp4Result = tmp4(12453);
+    tmp4Result = tmp4(12549);
   }
   items1 = [, , ];
   const obj4 = { source: tmp4Result, style: tmp.image };
   items1[0] = hasOwnProperty(tmp9, obj4);
   const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: formatToPlainStringResult };
-  const Text = tmp2(4892).Text;
+  const Text = tmp2(5086).Text;
   const intl = tmp2(1126).intl;
   if (tagFilter.size > 0) {
     const obj6 = { numTags: tagFilter.size };
@@ -206,7 +206,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   }
   items1[1] = hasOwnProperty(Text, obj5);
   const obj7 = { style: tmp.subtext, variant: "text-sm/medium", color: "text-default", children: formatToPlainStringResult1 };
-  const Text2 = tmp2(4892).Text;
+  const Text2 = tmp2(5086).Text;
   const intl2 = tmp2(1126).intl;
   const formatToPlainString = intl2.formatToPlainString;
   const t = tmp2(1126).t;

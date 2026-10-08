@@ -1,15 +1,15 @@
-// Module ID: 7670
-// Function ID: 7671
+// Module ID: 7991
+// Function ID: 7992
 // Name: NativeLottieView
-// Dependencies: [19, 17, 21, 1369, 7671, 113, 558, 576, 2]
+// Dependencies: [19, 17, 21, 1381, 7992, 113, 558, 576, 2]
 
-// Module 7670 (NativeLottieView)
+// Module 7991 (NativeLottieView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import codegenNativeCommandsDefault from "codegenNativeCommands" /* 113 */;
-import LottieNodeNativeComponentDefault from "LottieNodeNativeComponent" /* 7671 */;
+import LottieNodeNativeComponentDefault from "LottieNodeNativeComponent" /* 7992 */;
 import react_mod from "react" /* 19 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ if (PlatformUtils.isAndroid()) {
 const metroRequire = importDefaultResult;
 let closure_7 = codegenNativeCommandsDefault({ supportedCommands: ["setup"] });
 const NativeLottieRenderMode = { LOOP: 0, [0]: "LOOP", STILL: 1, [1]: "STILL", ONCE: 2, [2]: "ONCE" };
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeLottieView(arg0) {
   let accessibilityLabel;
   let animating;
   let asset;
@@ -54,7 +54,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   ref = react.useRef(null);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function l(arg0) {
+    function setup(arg0) {
       let accessibilityLabel;
       let animating;
       let asset;
@@ -66,9 +66,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (tmp) {
         closure_7.setup(ref.current, asset, url, width, height, renderMode, animating, accessibilityLabel);
       }
-    };
-    cResult[0] = fn;
-    first = fn;
+    }
+    cResult[0] = setup;
+    first = setup;
   } else {
     first = cResult[0];
   }
@@ -105,39 +105,45 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             first(tmp9);
             const tmp10 = first;
             if (cResult[10] !== renderMode) {
-              class S {
+              class V {
                 constructor() {
-                  ref.current = current;
+                  current = ref.current;
+                  size = { asset: current.asset, url: current.url, width: current.width, height: current.height, renderMode, animating: current.animating, accessibilityLabel: current.accessibilityLabel };
+                  first(size);
                 }
               }
               const items = [renderMode];
               cResult[10] = renderMode;
-              cResult[11] = tmp14;
+              cResult[11] = V;
               cResult[12] = items;
               tmp13 = items;
-              tmp12 = tmp14;
+              tmp12 = V;
             } else {
-              class S {
+              class V {
                 constructor() {
-                  ref.current = current;
+                  current = ref.current;
+                  size = { asset: current.asset, url: current.url, width: current.width, height: current.height, renderMode, animating: current.animating, accessibilityLabel: current.accessibilityLabel };
+                  first(size);
                 }
               }
               tmp13 = cResult[12];
             }
             tmp10(tmp12, tmp13);
             if (cResult[13] === height) {
-              class S {
+              class V {
                 constructor() {
-                  ref.current = current;
+                  current = ref.current;
+                  size = { asset: current.asset, url: current.url, width: current.width, height: current.height, renderMode, animating: current.animating, accessibilityLabel: current.accessibilityLabel };
+                  first(size);
                 }
               }
             }
             size = { width, height, opacity: num };
-            const tmp19 = <closure_6 ref={ref} style={size} />;
+            const tmp18 = <closure_6 ref={ref} style={size} />;
             cResult[13] = height;
             cResult[14] = num;
             cResult[15] = width;
-            cResult[16] = tmp19;
+            cResult[16] = tmp18;
           }
         }
       }
@@ -152,7 +158,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = width;
   cResult[7] = size1;
   tmp6 = size1;
-}) : ((renderMode) => {
+}) : (function NativeLottieView(renderMode) {
   let asset;
   let height;
   let obj;

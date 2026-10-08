@@ -1,16 +1,16 @@
-// Module ID: 16800
-// Function ID: 16801
+// Module ID: 17080
+// Function ID: 17081
 // Name: FrameSurfaceState
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4892, 5975, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 5086, 6158, 2]
 
-// Module 16800 (FrameSurfaceState)
+// Module 17080 (FrameSurfaceState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4892 */;
+import Text_Text from "Text/Text" /* 5086 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,14 +18,14 @@ let c3;
 let closure_4;
 let obj2;
 let tmp;
-const ActivityIndicator_ActivityIndicator = tmp(5975);
+const ActivityIndicator_ActivityIndicator = tmp(6158);
 const View = react_native.View;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let obj = { container: obj2 };
 obj2 = { flex: 1, alignItems: "center", justifyContent: "center", gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_24 };
 let closure_5 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameSurfaceExplanation(arg0) {
   let description;
   let error;
   let heading;
@@ -41,7 +41,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp6 = null;
     if (null != heading) {
       const obj2 = { variant: "heading-md/semibold", color: "text-default", children: heading };
-      tmp6 = _false(tmp(4892).Heading, obj2);
+      tmp6 = _false(tmp(5086).Heading, obj2);
     }
     cResult[0] = heading;
     cResult[1] = tmp6;
@@ -53,7 +53,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp9 = null;
     if (null != description) {
       const obj3 = { variant: "text-sm/normal", color: "text-muted", children: description };
-      tmp9 = _false(tmp(4892).Text, obj3);
+      tmp9 = _false(tmp(5086).Text, obj3);
     }
     cResult[2] = description;
     cResult[3] = tmp9;
@@ -65,7 +65,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp12 = null;
     if (null != error) {
       const obj4 = { variant: "text-sm/normal", color: "text-feedback-critical", children: error };
-      tmp12 = _false(tmp(4892).Text, obj4);
+      tmp12 = _false(tmp(5086).Text, obj4);
     }
     cResult[4] = error;
     cResult[5] = tmp12;
@@ -93,7 +93,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[9] = tmp11;
   cResult[10] = tmp15;
   tmp14 = tmp15;
-}) : ((arg0) => {
+}) : (function FrameSurfaceExplanation(arg0) {
   let description;
   let error;
   let heading;
@@ -123,7 +123,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp(tmp2, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameSurfaceLoading() {
   let first;
   let tmp8;
   const obj = react2;
@@ -146,7 +146,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[2];
   }
   return tmp8;
-}) : (() => {
+}) : (function FrameSurfaceLoading() {
   const obj = { style: closure_5().container, children: _false(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
   return _false(View, obj);
 });

@@ -1,26 +1,26 @@
-// Module ID: 12425
-// Function ID: 12426
+// Module ID: 12521
+// Function ID: 12522
 // Name: HubEmailConnectionGuildSelectSearch
-// Dependencies: [5, 32, 19, 17, 12400, 21, 4896, 587, 558, 576, 12426, 1126, 4892, 1490, 5709, 1618, 12414, 5319, 6017, 6889, 1188, 12421, 2]
+// Dependencies: [5, 32, 19, 17, 12496, 21, 5090, 587, 558, 576, 12522, 1126, 5086, 1502, 6099, 1630, 12510, 5631, 6203, 7078, 1200, 12517, 2]
 // Exports: default
 
-// Module 12425 (HubEmailConnectionGuildSelectSearch)
+// Module 12521 (HubEmailConnectionGuildSelectSearch)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import useNavigation from "useNavigation" /* 1490 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5709 */;
-import HubConstants from "HubConstants" /* 12400 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12426 */;
+import native from "native" /* 1200 */;
+import useNavigation from "useNavigation" /* 1502 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6099 */;
+import HubConstants from "HubConstants" /* 12496 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12522 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,8 +37,8 @@ let obj3;
 let tmp2;
 let tmp9;
 let unpackModuleId;
-const NavigatorHeader = tmp2(6017);
-const SearchBarNavDefault = tmp9(6889);
+const NavigatorHeader = tmp2(6203);
+const SearchBarNavDefault = tmp9(7078);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ View: metroRequire, Image: metroImportDefault, FlatList: metroImportAll } = react_native);
@@ -50,7 +50,7 @@ obj2 = { flex: 1, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUN
 createStyles = createStyles.createStyles;
 obj3 = { color: nativeDefault.unsafe_rawColors.RED_400, alignSelf: "center", fontSize: 14, marginBottom: 8 };
 let closure_13 = createStyles(obj);
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState() {
   let items;
   let tmp10;
   let tmp12;
@@ -103,7 +103,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[7] = tmp12;
   cResult[8] = tmp16;
   tmp15 = tmp16;
-}) : (() => {
+}) : (function EmptyState() {
   let intl;
   let items;
   const tmp = closure_13();

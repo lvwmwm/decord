@@ -1,24 +1,24 @@
-// Module ID: 12422
-// Function ID: 12423
+// Module ID: 12518
+// Function ID: 12519
 // Name: HubEmailConnectionPinVerify
-// Dependencies: [32, 5, 19, 17, 2074, 21, 4896, 4574, 4822, 558, 576, 12423, 11009, 12414, 1126, 5319, 12, 6855, 12409, 12424, 4892, 6584, 2]
+// Dependencies: [32, 5, 19, 17, 2086, 21, 5090, 4766, 5016, 558, 576, 12519, 11235, 12510, 1126, 5631, 12, 7043, 12505, 12520, 5086, 6760, 2]
 
-// Module 12422 (HubEmailConnectionPinVerify)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4822 */;
-import HubJoinManagerDefault from "HubJoinManager" /* 12423 */;
+// Module 12518 (HubEmailConnectionPinVerify)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5016 */;
+import HubJoinManagerDefault from "HubJoinManager" /* 12519 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let c5, c6, email, importDefault;
+let c5, c6, importDefault;
 
 let c10;
 let c9;
@@ -33,7 +33,7 @@ let _slicedToArray = _slicedToArray_mod;
 ({ View: metroRequire, Image: metroImportDefault } = react_native);
 ({ jsx: c9, jsxs: c10 } = Fragment);
 let closure_11 = createStyles.createStyles({ container: { alignItems: "center" }, title: { marginBottom: 8, textAlign: "center" }, description: { textAlign: "center", marginBottom: 24 }, label: { textAlign: "center", marginBottom: 12 }, error: { alignSelf: "center", marginVertical: 8 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((email) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConnectionPinVerify(email) {
   let items1;
   let obj4;
   let onClose;
@@ -406,14 +406,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((email) => {
       }
     }
   });
-  const fn2 = function() {
+  function t3() {
     return closure_0(...arguments);
-  };
+  }
   cResult[3] = email;
   cResult[4] = guildId;
-  cResult[5] = fn2;
-  tmp8 = fn2;
-}) : ((email) => {
+  cResult[5] = t3;
+  tmp8 = t3;
+}) : (function HubEmailConnectionPinVerify(email) {
   let c3;
   let intl;
   let intl2;

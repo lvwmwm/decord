@@ -1,25 +1,23 @@
-// Module ID: 16501
-// Function ID: 16502
+// Module ID: 16761
+// Function ID: 16762
 // Name: ICYMIForumThreadRow
-// Dependencies: [19, 17, 2051, 2074, 21, 16434, 587, 558, 576, 504, 5712, 8039, 16475, 10664, 16437, 5049, 1126, 11, 4892, 4883, 16479, 5916, 16481, 16482, 2]
+// Dependencies: [19, 17, 2063, 2086, 21, 16694, 587, 558, 576, 504, 6102, 8447, 16735, 10264, 16697, 5417, 1126, 11, 5086, 5077, 16739, 6189, 16741, 16742, 2]
 
-// Module 16501 (ICYMIForumThreadRow)
+// Module 16761 (ICYMIForumThreadRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5712 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8039 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10664 */;
-import ICYMIShared from "ICYMIShared" /* 16475 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6102 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8447 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10264 */;
+import ICYMIShared from "ICYMIShared" /* 16735 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16434 */;
+import createICYMIStyles from "createICYMIStyles" /* 16694 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channel;
 
 let metroImportAll;
 let metroImportDefault;
@@ -31,7 +29,7 @@ let closure_9 = createICYMIStyles.createICYMIStyles((marginHorizontal) => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIForumThreadRow(channel) {
   let first;
   let stateFromStores;
   let tmp17;
@@ -124,7 +122,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           return ChannelStore.getChannel(channel.parent_id);
         }
       }
-      const effect = author.useEffect(S, tmp17);
+      const effect = author.useEffect(R, tmp17);
       if (cResult[12] === channel) {
         class C {
           constructor() {
@@ -132,7 +130,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           }
         }
       }
-      class A {
+      class F {
         constructor() {
           const obj = ICYMIActionCreatorsDefault;
           obj.itemInteracted(message.id, "forum_thread", "press_forum_thread");
@@ -154,7 +152,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       cResult[12] = channel;
       cResult[13] = stateFromStores;
       cResult[14] = message.id;
-      cResult[15] = A;
+      cResult[15] = F;
     }
     const items2 = [author.id, undefined];
     cResult[9] = author.id;
@@ -170,7 +168,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
     }
   }
-  class S {
+  class R {
     constructor() {
       let id;
       if (stateFromStores != null) {
@@ -189,8 +187,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
   }
   cResult[7] = undefined;
-  cResult[8] = S;
-}) : ((channel) => {
+  cResult[8] = R;
+}) : (function ICYMIForumThreadRow(channel) {
   let intl;
   let items5;
   let items6;
@@ -316,7 +314,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
 });
 let closure_10 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumThreadRowWrapper(arg0) {
   let message;
   let threadChannel;
   let visible;
@@ -338,7 +336,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = visible;
   cResult[3] = tmp3;
   tmp2 = tmp3;
-}) : ((message) => {
+}) : (function ForumThreadRowWrapper(message) {
   const obj = { message: message.message, channel: message.threadChannel, visible: message.visible };
   return metroImportDefault(closure_10, obj);
 });

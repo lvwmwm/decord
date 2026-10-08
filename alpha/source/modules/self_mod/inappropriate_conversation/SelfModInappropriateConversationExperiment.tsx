@@ -1,19 +1,19 @@
-// Module ID: 9805
-// Function ID: 9806
+// Module ID: 10368
+// Function ID: 10369
 // Name: SelfModInappropriateConversationExperiment
-// Dependencies: [1441, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: isEligibleForInappropriateConversationWarning
 
-// Module 9805 (SelfModInappropriateConversationExperiment)
+// Module 10368 (SelfModInappropriateConversationExperiment)
 import react from "react" /* 576 */;
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1441 */;
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-04-inappropriate-conversations-prescan", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
 let tmp2 = apex_ApexExperimentDefault(obj);
 let closure_2 = tmp2;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEligibleForInappropriateConversationWarning(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -27,7 +27,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useIsEligibleForInappropriateConversationWarning(location) {
   const obj = { location: location.location };
   return closure_2.useConfig(obj).enabled;
 });

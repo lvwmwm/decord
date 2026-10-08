@@ -1,25 +1,21 @@
-// Module ID: 10832
-// Function ID: 10833
+// Module ID: 11181
+// Function ID: 11182
 // Name: useHandleUseNow
-// Dependencies: [19, 10833, 558, 576, 4860, 5099, 4743, 4574, 1126, 10834, 9430, 2]
+// Dependencies: [19, 11182, 558, 576, 5054, 5940, 4937, 4766, 1126, 11183, 9094, 2]
 
-// Module 10832 (useHandleUseNow)
-import RootNavigationRef from "RootNavigationRef" /* 4743 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
-import MainTabsConstants from "MainTabsConstants" /* 10833 */;
-import react_mod from "react" /* 19 */;
+// Module 11181 (useHandleUseNow)
+import RootNavigationRef from "RootNavigationRef" /* 4937 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+import MainTabsConstants from "MainTabsConstants" /* 11182 */;
+import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let product;
-
-let react = react_mod;
 const RootNavigatorScreen = MainTabsConstants.RootNavigatorScreen;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleUseNow(product) {
   let analyticsLocations;
   let canUseNow;
-  let closure_3;
   let isApplying;
   let stageCollectibleChangeForEditProfile;
   const tmp2 = stageCollectibleChangeForEditProfile;
@@ -36,7 +32,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
     if (cResult[1] === stageCollectibleChangeForEditProfile) {
       tmp4 = cResult[2];
     }
-    react = tmp4;
+    let closure_3 = tmp4;
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const fn2 = function h() {
@@ -64,55 +60,46 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
       if (cResult[7] === tmp4) {
         if (cResult[8] === product) {
           if (cResult[9] === handleUseNow) {
+            let tmp9;
             let tmp10;
-            let tmp11;
             if (cResult[10] === stageCollectibleChangeForEditProfile) {
-              tmp10 = cResult[11];
+              tmp9 = cResult[11];
             }
             if (cResult[12] !== analyticsLocations) {
               let obj2 = { analyticsLocations };
               cResult[12] = analyticsLocations;
               cResult[13] = obj2;
-              tmp11 = obj2;
+              tmp10 = obj2;
             } else {
-              tmp11 = cResult[13];
+              tmp10 = cResult[13];
             }
-            const tmp13 = onSuccess(tmp2[10])(tmp11);
-            let closure_5 = tmp13;
+            const tmp12 = onSuccess(tmp2[10])(tmp10);
+            let closure_5 = tmp12;
             if (cResult[14] === onSuccess) {
-              let tmp14;
-              if (cResult[15] === tmp13) {
-                tmp14 = cResult[16];
+              let tmp13;
+              if (cResult[15] === tmp12) {
+                tmp13 = cResult[16];
               }
               if (cResult[17] === canUseNow) {
-                if (cResult[18] === tmp14) {
-                  if (cResult[19] === tmp10) {
-                    let tmp15;
+                if (cResult[18] === tmp13) {
+                  if (cResult[19] === tmp9) {
+                    let tmp14;
                     if (cResult[20] === isApplying) {
-                      tmp15 = cResult[21];
+                      tmp14 = cResult[21];
                     }
-                    return tmp15;
+                    return tmp14;
                   }
                 }
               }
-              let obj3 = { handleUseNow: tmp10, isApplying, canUseNow, handleEditProfile: tmp14 };
-              class A {
-                constructor() {
-                  if (null != stageCollectibleChangeForEditProfile) {
-                    tmp(require);
-                    closure_3();
-                  } else {
-                    handleUseNow();
-                  }
-                }
-              }
-              cResult[18] = tmp14;
-              cResult[19] = tmp10;
+              let obj3 = { handleUseNow: tmp9, isApplying, canUseNow, handleEditProfile: tmp13 };
+              cResult[17] = canUseNow;
+              cResult[18] = tmp13;
+              cResult[19] = tmp9;
               cResult[20] = isApplying;
               cResult[21] = obj3;
-              tmp15 = obj3;
+              tmp14 = obj3;
             }
-            const fn3 = function k() {
+            const fn4 = function k() {
               closure_5();
               if (null == onSuccess) {
                 const obj = ActionSheetActionCreatorsDefault;
@@ -123,46 +110,33 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
                 tmp2();
               }
             };
-            class A {
-              constructor() {
-                if (null != stageCollectibleChangeForEditProfile) {
-                  tmp(require);
-                  closure_3();
-                } else {
-                  handleUseNow();
-                }
-              }
-            }
-            cResult[15] = tmp13;
-            cResult[16] = fn3;
-            tmp14 = fn3;
+            cResult[14] = onSuccess;
+            cResult[15] = tmp12;
+            cResult[16] = fn4;
+            tmp13 = fn4;
           }
         }
       }
-      class A {
-        constructor() {
-          if (null != stageCollectibleChangeForEditProfile) {
-            tmp(require);
-            closure_3();
-          } else {
-            handleUseNow();
-          }
+      const fn3 = function y() {
+        if (null != stageCollectibleChangeForEditProfile) {
+          tmp(require);
+          closure_3();
+        } else {
+          handleUseNow();
         }
-      }
+      };
       cResult[7] = tmp4;
       cResult[8] = product;
       cResult[9] = handleUseNow;
       cResult[10] = stageCollectibleChangeForEditProfile;
-      cResult[11] = A;
-      tmp10 = A;
+      cResult[11] = fn3;
+      tmp9 = fn3;
     }
-    tmp8[0] = product;
-    tmp8[1] = tmp4;
-    tmp8[2] = tmp6;
+    const obj4 = { product, onSuccess: tmp4, onError: tmp6 };
     cResult[4] = tmp4;
     cResult[5] = product;
-    cResult[6] = tmp8;
-    tmp7 = tmp8;
+    cResult[6] = obj4;
+    tmp7 = obj4;
   }
   const fn = function n() {
     if (null == onSuccess) {
@@ -186,7 +160,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
   cResult[1] = stageCollectibleChangeForEditProfile;
   cResult[2] = fn;
   tmp4 = fn;
-}) : ((product) => {
+}) : (function useHandleUseNow(product) {
   let canUseNow;
   let isApplying;
   let items2;

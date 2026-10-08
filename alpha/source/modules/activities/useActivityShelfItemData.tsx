@@ -1,16 +1,16 @@
-// Module ID: 17312
-// Function ID: 17313
+// Module ID: 17593
+// Function ID: 17594
 // Name: useActivityShelfItemData
-// Dependencies: [19, 558, 576, 11667, 2]
+// Dependencies: [19, 558, 576, 11732, 2]
 
-// Module 17312 (useActivityShelfItemData)
+// Module 17593 (useActivityShelfItemData)
 import react2 from "react" /* 576 */;
-import useActivityShelfItemsDefault from "useActivityShelfItems" /* 11667 */;
+import useActivityShelfItemsDefault from "useActivityShelfItems" /* 11732 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityShelfItemData(guildId, arg1) {
   let tmp3;
   let closure_0 = arg1;
   const obj = react2;
@@ -39,7 +39,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, arg1) => 
   cResult[3] = arr;
   cResult[4] = found;
   tmp4 = found;
-}) : ((guildId, arg1) => {
+}) : (function useActivityShelfItemData(guildId, arg1) {
   let closure_0 = arg1;
   const obj = { guildId };
   const tmp = useActivityShelfItemsDefault(obj);

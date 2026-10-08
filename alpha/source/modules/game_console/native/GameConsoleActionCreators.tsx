@@ -1,11 +1,11 @@
-// Module ID: 9468
-// Function ID: 9469
+// Module ID: 10904
+// Function ID: 10905
 // Name: game_console/GameConsoleActionCreators
-// Dependencies: [5, 9461, 5714, 1126, 2]
+// Dependencies: [5, 10897, 5297, 1126, 2]
 // Exports: transferToPlaystationWithAlert
 
-// Module 9468 (game_console/GameConsoleActionCreators)
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 9461 */;
+// Module 10904 (game_console/GameConsoleActionCreators)
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 10897 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

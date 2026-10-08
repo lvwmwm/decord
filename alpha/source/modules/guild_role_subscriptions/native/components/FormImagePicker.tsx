@@ -1,19 +1,19 @@
-// Module ID: 17973
-// Function ID: 17974
+// Module ID: 18260
+// Function ID: 18261
 // Name: FormImagePicker
-// Dependencies: [109, 5, 19, 17, 21, 4896, 587, 7287, 1437, 9455, 1126, 5981, 16745, 10071, 558, 576, 4892, 5601, 2]
+// Dependencies: [109, 5, 19, 17, 21, 5090, 587, 7741, 1449, 7013, 1126, 6164, 17020, 9675, 558, 576, 5086, 5375, 2]
 
-// Module 17973 (FormImagePicker)
+// Module 18260 (FormImagePicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1437 */;
-import utils_UploadUtilsDefault from "utils/UploadUtils" /* 7287 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9455 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1449 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 7013 */;
+import utils_UploadUtilsDefault from "utils/UploadUtils" /* 7741 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj2;
 let obj3;
 let size;
 let tmp6;
-const FastImageDefault = tmp6(5981);
+const FastImageDefault = tmp6(6164);
 function pickImage() {
   return obj(...arguments);
 }
@@ -145,7 +145,7 @@ class ImagePickerIcon {
       accessibilityRole: "button",
       accessibilityLabel: intl.string(image(1126).t.HNo5cG),
       accessibilityState: { disabled: flag },
-      onPress() {
+      onPress: function handleSelectImage() {
         return pickImage(importDefault, dependencyMap);
       },
       style: items1,
@@ -168,7 +168,7 @@ class ImagePickerIcon {
       tmp10 = tmp12;
     } else {
       tmp10 = closure_8;
-      tmp12Result = closure_8(tmp9(16745).ImagePlusIcon, {});
+      tmp12Result = closure_8(tmp9(17020).ImagePlusIcon, {});
     }
     items3 = [tmp12Result, ];
     let tmp10Result = null != image && !flag;
@@ -178,7 +178,7 @@ class ImagePickerIcon {
       if (standalone) {
         standalone = tmp.standaloneIcon;
       }
-      obj4 = { style: items4, children: tmp10(image(10071).PencilIcon, { color: "#292b30", size: "sm" }) };
+      obj4 = { style: items4, children: tmp10(image(9675).PencilIcon, { color: "#292b30", size: "sm" }) };
       items4[1] = standalone;
       tmp10Result = tmp10(tmp15, obj4);
     }
@@ -197,7 +197,7 @@ obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 size = { alignItems: "center", backgroundColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: nativeDefault.radii.lg, top: 0, height: 24, justifyContent: "center", right: 0, padding: 4, position: "absolute", width: 24 };
 const authStore = createStyles(obj);
 let obj4 = { CIRCLE: 0, [0]: "CIRCLE", SQUIRCLE: 1, [1]: "SQUIRCLE" };
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormImagePicker(disabled) {
   let closure_0;
   let description;
   let image;
@@ -342,14 +342,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
     cResult[14] = tmp20;
     tmp18 = tmp20;
   }
-  const fn = function h() {
+  function handleSelectImage() {
     return pickImage(closure_0, closure_1);
-  };
+  }
   cResult[7] = tmp8;
   cResult[8] = tmp9;
-  cResult[9] = fn;
-  tmp14 = fn;
-}) : ((imageUploadSize) => {
+  cResult[9] = handleSelectImage;
+  tmp14 = handleSelectImage;
+}) : (function FormImagePicker(imageUploadSize) {
   let image;
   let items;
   let items1;
@@ -375,17 +375,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
   items = [, ];
   obj = { style: tmp2.imageSelectionRow, children: items1 };
   const obj3 = { style: tmp2.imageDescription, variant: "text-sm/medium", color: "text-default", children: description };
-  items[0] = closure_8(tmp6(4892).Text, obj3);
+  items[0] = closure_8(tmp6(5086).Text, obj3);
   obj4 = {
     text: stringResult,
     variant: "secondary",
-    onPress() {
+    onPress: function handleSelectImage() {
       return pickImage(imageUploadSize, setImage);
     },
     size: "md",
     disabled
   };
-  items[1] = closure_8(tmp6(5601).Button, obj4);
+  items[1] = closure_8(tmp6(5375).Button, obj4);
   items1 = [closure_9(View, obj2), ];
   const obj5 = { disabled, imageUploadSize, image, setImage };
   const merged1 = Object.assign(merged);

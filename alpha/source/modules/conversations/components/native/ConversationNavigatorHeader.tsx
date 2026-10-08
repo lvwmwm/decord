@@ -1,28 +1,28 @@
-// Module ID: 7580
-// Function ID: 7581
+// Module ID: 9291
+// Function ID: 9292
 // Name: ConversationNavigatorHeader
-// Dependencies: [19, 17, 2051, 21, 4896, 587, 558, 576, 504, 5049, 7509, 4586, 1370, 1126, 7581, 2]
+// Dependencies: [19, 17, 2063, 21, 5090, 587, 558, 576, 504, 5417, 9232, 4778, 1382, 1126, 9292, 2]
 // Exports: conversationNavigatorFocusHeaderOptions, conversationNavigatorListHeaderOptions
 
-// Module 7580 (ConversationNavigatorHeader)
+// Module 9291 (ConversationNavigatorHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1370 */;
-import useToken from "useToken" /* 4586 */;
-import useChannelNameDefault from "useChannelName" /* 5049 */;
-import HeaderShared from "HeaderShared" /* 7509 */;
-import ConversationNavigatorMoreMenuDefault from "ConversationNavigatorMoreMenu" /* 7581 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
+import useToken from "useToken" /* 4778 */;
+import useChannelNameDefault from "useChannelName" /* 5417 */;
+import HeaderShared from "HeaderShared" /* 9232 */;
+import ConversationNavigatorMoreMenuDefault from "ConversationNavigatorMoreMenu" /* 9292 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import createStyles from "createStyles" /* 4896 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, channelId;
+let _require;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
@@ -36,7 +36,7 @@ let closure_6 = createStyles.createStyles((arg0) => {
   return { container };
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConversationNavigatorHeader(channelId) {
   let first;
   let hasRightAction;
   let title;
@@ -94,12 +94,12 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     cResult[9] = tmp18;
     tmp15 = tmp18;
   }
-  const tmp14 = jsx(channelId(7509).GenericHeaderTitle, { title, subtitle: tmp12, variant: "heading-lg/semibold", subtitleColor: "text-muted" });
+  const tmp14 = jsx(channelId(9232).GenericHeaderTitle, { title, subtitle: tmp12, variant: "heading-lg/semibold", subtitleColor: "text-muted" });
   cResult[4] = tmp12;
   cResult[5] = title;
   cResult[6] = tmp14;
   tmp13 = tmp14;
-}) : ((channelId) => {
+}) : (function ConversationNavigatorHeader(channelId) {
   channelId = channelId.channelId;
   let flag = channelId.hasRightAction;
   const title = channelId.title;
@@ -112,11 +112,11 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const obj = channelId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
   const tmp3 = useChannelNameDefault(stateFromStores, true);
-  const GenericHeaderTitle = channelId(7509).GenericHeaderTitle;
+  const GenericHeaderTitle = channelId(9232).GenericHeaderTitle;
   return <tmp5 style={tmp.container}>{null}</tmp5>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((shouldHandleSafeArea) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderWithBorder(shouldHandleSafeArea) {
   const obj = react2;
   const cResult = obj.c(4);
   const obj2 = useToken;
@@ -147,7 +147,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((shouldHandleSaf
   cResult[2] = shouldHandleSafeArea;
   cResult[3] = renderHeaderResult;
   tmp6 = renderHeaderResult;
-}) : ((shouldHandleSafeArea) => {
+}) : (function HeaderWithBorder(shouldHandleSafeArea) {
   const obj = useToken;
   const token = obj.useToken(nativeDefault.colors.BORDER_SUBTLE);
   const obj2 = useToken;

@@ -1,25 +1,25 @@
-// Module ID: 14454
-// Function ID: 14455
+// Module ID: 14670
+// Function ID: 14671
 // Name: ProfileGIFSelectActionSheet
-// Dependencies: [32, 5, 19, 17, 21, 4896, 587, 558, 576, 6486, 14435, 7851, 7849, 7846, 7848, 6493, 4860, 1126, 8346, 6651, 10101, 6652, 2]
+// Dependencies: [32, 5, 19, 17, 21, 5090, 587, 558, 576, 6664, 14660, 8269, 8267, 8264, 8266, 6670, 5054, 1126, 9005, 6828, 9685, 6829, 2]
 
-// Module 14454 (ProfileGIFSelectActionSheet)
+// Module 14670 (ProfileGIFSelectActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6651 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6652 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8346 */;
-import GIFPickerDefault from "GIFPicker" /* 10101 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6828 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6829 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9005 */;
+import GIFPickerDefault from "GIFPicker" /* 9685 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, c4, c5, profileAssetType;
+let BottomSheet, c4, c5;
 
 let metroImportAll;
 let metroImportDefault;
@@ -53,7 +53,7 @@ obj2 = { flex: 1, marginTop: nativeDefault.space.PX_4, marginLeft: nativeDefault
 let closure_9 = createStyles.createStyles(obj);
 let obj3 = { AVATAR: 0, [0]: "AVATAR", BANNER: 1, [1]: "BANNER" };
 let obj4 = { PROFILE_EDIT: 0, [0]: "PROFILE_EDIT", PROFILE_TRY_IT_OUT: 1, [1]: "PROFILE_TRY_IT_OUT" };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((profileAssetType) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileGIFSelectActionSheet(profileAssetType) {
   let guildId;
   let items;
   const tmp = profileAssetType;
@@ -285,7 +285,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((profileAssetType) 
   cResult[2] = selectionContext;
   cResult[3] = onPressGIF;
   tmp6 = onPressGIF;
-}) : ((arg0) => {
+}) : (function ProfileGIFSelectActionSheet(arg0) {
   let intl;
   let items;
   let obj7;

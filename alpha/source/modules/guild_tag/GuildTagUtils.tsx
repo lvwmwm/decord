@@ -1,16 +1,16 @@
-// Module ID: 7847
-// Function ID: 7848
+// Module ID: 8265
+// Function ID: 8266
 // Name: GuildTagUtils
-// Dependencies: [2112, 2074, 1377, 7614, 1085, 558, 576, 504, 4521, 2]
+// Dependencies: [2124, 2086, 1389, 7860, 1085, 558, 576, 504, 4713, 2]
 // Exports: getGuildTagBadgeUrl, getUserPrimaryGuild, guildHasTag, guildSupportsTags, shouldDisplayGuildTag
 
-// Module 7847 (GuildTagUtils)
+// Module 8265 (GuildTagUtils)
 import Constants from "Constants" /* 1085 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4521 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import UserStore from "UserStore" /* 1377 */;
-import GuildTagConstants from "GuildTagConstants" /* 7614 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4713 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import UserStore from "UserStore" /* 1389 */;
+import GuildTagConstants from "GuildTagConstants" /* 7860 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let metroRequire;
 ({ GuildTagBadgeMediaProxySizes, GuildTagBadgeMediaProxySizesMobile: hasOwnProperty, GuildTagBadgeSize: metroRequire } = GuildTagConstants);
 const GuildFeatures = Constants.GuildFeatures;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserPrimaryGuild(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -86,7 +86,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[7] = obj2;
     tmp11 = obj2;
   }
-}) : ((arg0) => {
+}) : (function useUserPrimaryGuild(arg0) {
   let badge;
   let closure_0;
   let profile;
@@ -127,10 +127,12 @@ function getUserPrimaryGuild(primaryGuild) {
     return {};
   }
 }
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldDisplayGuildTag(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
   let first;
+  let items3;
+  let obj2;
   let tmp6;
   let tmp7;
   let tmp9;
@@ -148,76 +150,98 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function f() {
-      return UserStore.getUser(closure_0);
-    };
+    class G {
+      constructor() {
+        return closure_4.getUser(closure_0);
+      }
+    }
     const items1 = [arg0];
     cResult[1] = arg0;
-    cResult[2] = fn;
+    cResult[2] = G;
     cResult[3] = items1;
     tmp7 = items1;
-    tmp6 = fn;
+    tmp6 = G;
   } else {
-    tmp6 = cResult[2];
+    class G {
+      constructor() {
+        return closure_4.getUser(closure_0);
+      }
+    }
     tmp7 = cResult[3];
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    class G {
+      constructor() {
+        return closure_4.getUser(closure_0);
+      }
+    }
     const items2 = [GuildMemberStore];
     cResult[4] = items2;
     tmp9 = items2;
   } else {
-    tmp9 = cResult[4];
+    class G {
+      constructor() {
+        return closure_4.getUser(closure_0);
+      }
+    }
   }
   if (cResult[5] === arg1) {
-    let tmp11;
-    let tmp12;
-    if (cResult[6] === arg0) {
-      tmp11 = cResult[7];
-      tmp12 = cResult[8];
+    class G {
+      constructor() {
+        return closure_4.getUser(closure_0);
+      }
     }
-    let tmp13 = arg2;
+    let tmp10 = arg2;
     const tmpResult2 = tmp(504);
-    const stateFromStores1 = tmpResult2.useStateFromStores(tmp9, tmp11, tmp12);
+    const stateFromStores1 = tmpResult2.useStateFromStores(tmp9, S, items3);
     if (undefined === arg2) {
-      let primaryGuild;
+      class G {
+        constructor() {
+          return closure_4.getUser(closure_0);
+        }
+      }
       if (stateFromStores != null) {
-        primaryGuild = stateFromStores.primaryGuild;
+        class G {
+          constructor() {
+            return closure_4.getUser(closure_0);
+          }
+        }
       }
-      tmp13 = primaryGuild;
+      tmp10 = tmp12;
     }
-    if (null != tmp13) {
-      let obj3;
-      if (tmp13.identityEnabled) {
-        const obj2 = { guildId: null, tag: null, badge: null };
-        ({ identityGuildId: obj5.guildId, tag: obj5.tag, badge: obj5.badge } = tmp13);
-        obj3 = obj2;
+    if (null != tmp10) {
+      class G {
+        constructor() {
+          return closure_4.getUser(closure_0);
+        }
       }
-      return null != obj3.guildId && null != obj3.tag && !stateFromStores1;
+      return null != obj2.guildId && null != obj2.tag && !stateFromStores1;
     }
-    obj3 = {};
+    obj2 = {};
   }
   class S {
     constructor() {
       if (null != closure_1) {
         if (null != closure_0) {
-          const member = GuildMemberStore.getMember(tmp, tmp2);
-          const obj = AutomodPermissionUtils;
+          tmp3 = closure_2;
+          tmp5 = closure_0;
+          tmp6 = closure_1;
+          member = closure_2.getMember(tmp, tmp2);
+          obj = closure_0(closure_1[8]);
           return obj.hasAutomodQuarantinedProfile(member);
         }
       }
       return null;
     }
   }
-  const items3 = [arg1, arg0];
+  items3 = [arg1, arg0];
   cResult[5] = arg1;
   cResult[6] = arg0;
   cResult[7] = S;
   cResult[8] = items3;
-  tmp12 = items3;
-  tmp11 = S;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useShouldDisplayGuildTag(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
   _require = arg0;

@@ -1,23 +1,22 @@
-// Module ID: 11765
-// Function ID: 11766
+// Module ID: 11832
+// Function ID: 11833
 // Name: AppLauncherApplicationViewScreen
-// Dependencies: [19, 17, 8827, 1489, 5795, 21, 4896, 558, 576, 11007, 11766, 8826, 1616, 11767, 6670, 4618, 11768, 2]
+// Dependencies: [19, 17, 9186, 1501, 5399, 21, 5090, 558, 576, 11232, 11833, 9185, 1628, 11834, 6847, 4810, 11835, 2]
 
-// Module 11765 (AppLauncherApplicationViewScreen)
+// Module 11832 (AppLauncherApplicationViewScreen)
 import Fragment from "Fragment" /* 21 */;
-import KeyboardTypes from "KeyboardTypes" /* 1616 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5795 */;
-import AppLauncherContext from "AppLauncherContext" /* 11007 */;
+import KeyboardTypes from "KeyboardTypes" /* 1628 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5399 */;
+import AppLauncherContext from "AppLauncherContext" /* 11232 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8827 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1489 */;
-import createStyles from "createStyles" /* 4896 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9186 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let navigation;
 
 let SCREEN_BACKGROUND_COLOR;
 let closure_4;
@@ -30,7 +29,7 @@ const jsx = Fragment.jsx;
 let obj = { container: { backgroundColor: SCREEN_BACKGROUND_COLOR, flex: 1 } };
 let closure_10 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCommandExecuted) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherApplicationViewScreenInner(onCommandExecuted) {
   let application;
   let bottomSheetExpandReasonRef;
   let context;
@@ -69,22 +68,41 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCommandExecu
       if (cResult[6] === bottomSheetExpandReasonRef) {
         if (cResult[7] === expandBottomSheet) {
           if (cResult[8] === tmp7) {
-            let tmp10;
-            let tmp11;
-            if (cResult[9] === tmp6) {
-              tmp10 = cResult[10];
-              tmp11 = cResult[11];
-            }
-            const effect = chatInputRef.useEffect(tmp10, tmp11);
-            class P {
+            class N {
               constructor() {
-                let obj2;
-                const current = chatInputRef.current;
-                const obj = { type: KeyboardTypes.KeyboardTypes.APP_LAUNCHER, context: obj2 };
-                obj2 = { initialRouteName: metroImportDefault.APPLICATION_VIEW, application };
-                current.openCustomKeyboard(obj);
+                const tmp = closure_5 && closure_4;
+                if (tmp) {
+                  bottomSheetExpandReasonRef.current = AppLauncherContext.AppLauncherBottomSheetExpandReason.APP_VIEW;
+                  if (expandBottomSheet != null) {
+                    expandBottomSheet();
+                  }
+                }
               }
             }
+            if (cResult[12] === application) {
+              if (cResult[13] === context) {
+                if (cResult[14] === entrypoint) {
+                  if (cResult[15] === installOnDemand) {
+                    if (cResult[16] === lockableScrollableContentOffsetY) {
+                      if (cResult[17] === tmp9) {
+                        if (cResult[18] === onActivityItemSelected) {
+                          if (cResult[19] === onCommandExecuted) {
+                            if (cResult[20] === onPressBack) {
+                              let tmp13;
+                              if (cResult[21] === sectionName) {
+                                tmp13 = cResult[22];
+                              }
+                              return tmp13;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            const tmp15 = jsx(tmp5(bottomSheetExpandReasonRef[13]), { application, context, lockableScrollableContentOffsetY, installOnDemand, sectionName, onPressBack, onActivityItemSelected, entrypoint, onCommandExecuted, onAauth2Cancel: tmp9 });
             cResult[12] = application;
             cResult[13] = context;
             cResult[14] = entrypoint;
@@ -95,55 +113,41 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCommandExecu
             cResult[19] = onCommandExecuted;
             cResult[20] = onPressBack;
             cResult[21] = sectionName;
-            cResult[22] = jsx(tmp5(bottomSheetExpandReasonRef[13]), { application, context, lockableScrollableContentOffsetY, installOnDemand, sectionName, onPressBack, onActivityItemSelected, entrypoint, onCommandExecuted, onAauth2Cancel: tmp9 });
-            const tmp17 = jsx(tmp5(bottomSheetExpandReasonRef[13]), { application, context, lockableScrollableContentOffsetY, installOnDemand, sectionName, onPressBack, onActivityItemSelected, entrypoint, onCommandExecuted, onAauth2Cancel: tmp9 });
+            cResult[22] = tmp15;
+            tmp13 = tmp15;
           }
         }
       }
-      const fn = function v() {
-        const tmp = closure_5 && closure_4;
-        if (tmp) {
-          bottomSheetExpandReasonRef.current = AppLauncherContext.AppLauncherBottomSheetExpandReason.APP_VIEW;
-          if (expandBottomSheet != null) {
-            expandBottomSheet();
-          }
-        }
-      };
-      class P {
+      class N {
         constructor() {
-          let obj2;
-          const current = chatInputRef.current;
-          const obj = { type: KeyboardTypes.KeyboardTypes.APP_LAUNCHER, context: obj2 };
-          obj2 = { initialRouteName: metroImportDefault.APPLICATION_VIEW, application };
-          current.openCustomKeyboard(obj);
+          const tmp = closure_5 && closure_4;
+          if (tmp) {
+            bottomSheetExpandReasonRef.current = AppLauncherContext.AppLauncherBottomSheetExpandReason.APP_VIEW;
+            if (expandBottomSheet != null) {
+              expandBottomSheet();
+            }
+          }
         }
       }
-      tmp12[0] = tmp6;
-      tmp12[1] = tmp7;
-      tmp12[2] = expandBottomSheet;
-      tmp12[3] = bottomSheetExpandReasonRef;
+      const items = [tmp6, tmp7, expandBottomSheet, bottomSheetExpandReasonRef];
       cResult[6] = bottomSheetExpandReasonRef;
       cResult[7] = expandBottomSheet;
       cResult[8] = tmp7;
       cResult[9] = tmp6;
-      cResult[10] = fn;
-      cResult[11] = tmp12;
-      tmp11 = tmp12;
-      tmp10 = fn;
+      cResult[10] = N;
+      cResult[11] = items;
     }
-    class P {
-      constructor() {
-        let obj2;
-        const current = chatInputRef.current;
-        const obj = { type: KeyboardTypes.KeyboardTypes.APP_LAUNCHER, context: obj2 };
-        obj2 = { initialRouteName: metroImportDefault.APPLICATION_VIEW, application };
-        current.openCustomKeyboard(obj);
-      }
-    }
+    const fn = function _() {
+      let obj2;
+      const current = chatInputRef.current;
+      const obj = { type: KeyboardTypes.KeyboardTypes.APP_LAUNCHER, context: obj2 };
+      obj2 = { initialRouteName: metroImportDefault.APPLICATION_VIEW, application };
+      current.openCustomKeyboard(obj);
+    };
     cResult[3] = application;
     cResult[4] = chatInputRef;
-    cResult[5] = P;
-    tmp9 = P;
+    cResult[5] = fn;
+    tmp9 = fn;
   }
   let isActivityAppResult = initiallyExpanded;
   if (initiallyExpanded == null) {
@@ -154,7 +158,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCommandExecu
   cResult[1] = initiallyExpanded;
   cResult[2] = isActivityAppResult;
   tmp7 = isActivityAppResult;
-}) : ((application) => {
+}) : (function AppLauncherApplicationViewScreenInner(application) {
   let context;
   let entrypoint;
   let expandBottomSheet;
@@ -203,7 +207,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCommandExecu
   return jsx(tmp4(bottomSheetExpandReasonRef[13]), { application, context, lockableScrollableContentOffsetY, installOnDemand, sectionName, onPressBack, onActivityItemSelected, entrypoint, onCommandExecuted, onAauth2Cancel });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherApplicationViewScreen(navigation) {
   let FAKE_BUILT_IN_APP;
   let application;
   let applicationId;
@@ -266,22 +270,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
         }
         if (cResult[5] === id) {
           if (cResult[6] === context) {
+            let tmp13;
+            let tmp14;
             let tmp21;
-            class G {
-              constructor() {
-                let tmp2 = null != id;
-                const tmp = id;
-                if (tmp2) {
-                  tmp2 = "channel" === context.type;
-                }
-                if (tmp2) {
-                  tmp2 = installOnDemand;
-                }
-                if (tmp2) {
-                  const result = ApplicationCommandIndexStore.queryInstallOnDemandApp(tmp, context.channel.id);
-                }
-              }
+            if (cResult[7] === installOnDemand) {
+              tmp13 = cResult[8];
+              tmp14 = cResult[9];
             }
+            const effect = installOnDemand.useEffect(tmp13, tmp14);
             if (cResult[10] === FAKE_BUILT_IN_APP) {
               if (cResult[11] === context) {
                 if (cResult[12] === entrypoint) {
@@ -292,37 +288,22 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
                           if (cResult[17] === sharedValue) {
                             if (cResult[18] === onActivityItemSelected) {
                               if (cResult[19] === onCommandExecuted) {
-                                let tmp16;
+                                let tmp17;
                                 if (cResult[20] === sectionName) {
-                                  tmp16 = cResult[21];
+                                  tmp17 = cResult[21];
                                 }
                                 if (cResult[22] === tmp5.container) {
-                                  let tmp25;
-                                  if (cResult[23] === tmp16) {
-                                    tmp25 = cResult[24];
+                                  let tmp24;
+                                  if (cResult[23] === tmp17) {
+                                    tmp24 = cResult[24];
                                   }
-                                  return tmp25;
+                                  return tmp24;
                                 }
-                                class G {
-                                  constructor() {
-                                    let tmp2 = null != id;
-                                    const tmp = id;
-                                    if (tmp2) {
-                                      tmp2 = "channel" === context.type;
-                                    }
-                                    if (tmp2) {
-                                      tmp2 = installOnDemand;
-                                    }
-                                    if (tmp2) {
-                                      const result = ApplicationCommandIndexStore.queryInstallOnDemandApp(tmp, context.channel.id);
-                                    }
-                                  }
-                                }
-                                const tmp27 = <keyboardCloseReasonRef style={tmp5.container}>{tmp16}</keyboardCloseReasonRef>;
+                                const tmp27 = <keyboardCloseReasonRef style={tmp5.container}>{tmp17}</keyboardCloseReasonRef>;
                                 cResult[22] = tmp5.container;
-                                cResult[23] = tmp16;
+                                cResult[23] = tmp17;
                                 cResult[24] = tmp27;
-                                tmp25 = tmp27;
+                                tmp24 = tmp27;
                               }
                             }
                           }
@@ -334,53 +315,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
               }
             }
             if (null != FAKE_BUILT_IN_APP) {
-              class G {
-                constructor() {
-                  let tmp2 = null != id;
-                  const tmp = id;
-                  if (tmp2) {
-                    tmp2 = "channel" === context.type;
-                  }
-                  if (tmp2) {
-                    tmp2 = installOnDemand;
-                  }
-                  if (tmp2) {
-                    const result = ApplicationCommandIndexStore.queryInstallOnDemandApp(tmp, context.channel.id);
-                  }
-                }
-              }
-              tmp24[0] = context;
-              tmp24[1] = FAKE_BUILT_IN_APP;
-              tmp24[2] = sharedValue;
-              tmp24[3] = initiallyExpanded;
-              tmp24[4] = installOnDemand;
-              tmp24[5] = sectionName;
-              tmp24[6] = tmp12;
-              tmp24[7] = onActivityItemSelected;
-              tmp24[8] = entrypoint;
-              tmp24[9] = expandBottomSheet;
-              tmp24[10] = onCommandExecuted;
-              tmp21 = <closure_11 {...tmp24} />;
+              tmp21 = <closure_11 context={context} application={FAKE_BUILT_IN_APP} lockableScrollableContentOffsetY={sharedValue} initiallyExpanded={initiallyExpanded} installOnDemand={installOnDemand} sectionName={sectionName} onPressBack={tmp12} onActivityItemSelected={onActivityItemSelected} entrypoint={entrypoint} expandBottomSheet={expandBottomSheet} onCommandExecuted={onCommandExecuted} />;
             } else {
-              class G {
-                constructor() {
-                  let tmp2 = null != id;
-                  const tmp = id;
-                  if (tmp2) {
-                    tmp2 = "channel" === context.type;
-                  }
-                  if (tmp2) {
-                    tmp2 = installOnDemand;
-                  }
-                  if (tmp2) {
-                    const result = ApplicationCommandIndexStore.queryInstallOnDemandApp(tmp, context.channel.id);
-                  }
-                }
-              }
-              tmp19[0] = { paddingTop: tmp(tmp2[16]).EXPANDED_HEADER_HEIGHT };
-              tmp19[1] = <chatInputRef />;
-              tmp21 = <keyboardCloseReasonRef {...tmp19} />;
-              const obj4 = { paddingTop: tmp(tmp2[16]).EXPANDED_HEADER_HEIGHT };
+              tmp21 = <keyboardCloseReasonRef style={{ paddingTop: tmp(tmp2[16]).EXPANDED_HEADER_HEIGHT }}>{null}</keyboardCloseReasonRef>;
+              const obj6 = { paddingTop: tmp(tmp2[16]).EXPANDED_HEADER_HEIGHT };
             }
             cResult[10] = FAKE_BUILT_IN_APP;
             cResult[11] = context;
@@ -394,34 +332,34 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
             cResult[19] = onCommandExecuted;
             cResult[20] = sectionName;
             cResult[21] = tmp21;
-            tmp16 = tmp21;
+            tmp17 = tmp21;
           }
         }
-        class G {
-          constructor() {
-            let tmp2 = null != id;
-            const tmp = id;
-            if (tmp2) {
-              tmp2 = "channel" === context.type;
-            }
-            if (tmp2) {
-              tmp2 = installOnDemand;
-            }
-            if (tmp2) {
-              const result = ApplicationCommandIndexStore.queryInstallOnDemandApp(tmp, context.channel.id);
-            }
+        const fn = function w() {
+          let tmp2 = null != id;
+          const tmp = id;
+          if (tmp2) {
+            tmp2 = "channel" === context.type;
           }
-        }
+          if (tmp2) {
+            tmp2 = installOnDemand;
+          }
+          if (tmp2) {
+            const result = ApplicationCommandIndexStore.queryInstallOnDemandApp(tmp, context.channel.id);
+          }
+        };
         const items = [id, context, installOnDemand];
         cResult[5] = id;
         cResult[6] = context;
         cResult[7] = installOnDemand;
-        cResult[8] = G;
+        cResult[8] = fn;
         cResult[9] = items;
+        tmp14 = items;
+        tmp13 = fn;
       }
     }
   }
-  const fn = function p() {
+  function handlePressBack() {
     if (onPressBack != null) {
       tmp();
     }
@@ -435,14 +373,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
         current.closeCustomKeyboard();
       }
     }
-  };
+  }
   cResult[0] = chatInputRef;
   cResult[1] = keyboardCloseReasonRef;
   cResult[2] = navigation;
   cResult[3] = onPressBack;
-  cResult[4] = fn;
-  tmp12 = fn;
-}) : ((route) => {
+  cResult[4] = handlePressBack;
+  tmp12 = handlePressBack;
+}) : (function AppLauncherApplicationViewScreen(route) {
   let FAKE_BUILT_IN_APP;
   let application;
   let applicationId;
@@ -520,7 +458,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
       initiallyExpanded,
       installOnDemand,
       sectionName,
-      onPressBack() {
+      onPressBack: function handlePressBack() {
           if (_require != null) {
             tmp();
           }

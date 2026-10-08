@@ -1,18 +1,18 @@
-// Module ID: 12181
-// Function ID: 12182
+// Module ID: 12260
+// Function ID: 12261
 // Name: ExpiringPowerupCoachmarkExperiment
-// Dependencies: [1441, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 
-// Module 12181 (ExpiringPowerupCoachmarkExperiment)
+// Module 12260 (ExpiringPowerupCoachmarkExperiment)
 import react from "react" /* 576 */;
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1441 */;
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-02-expiring-powerup-coachmark", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
 let tmp2 = apex_ApexExperimentDefault(obj);
 let closure_2 = tmp2;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExpiringPowerupCoachmarkEnabled(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -25,7 +25,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useExpiringPowerupCoachmarkEnabled(location) {
   const obj = { location };
   return closure_2.useConfig(obj).enabled;
 });

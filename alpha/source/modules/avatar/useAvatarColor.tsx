@@ -1,16 +1,16 @@
-// Module ID: 7826
-// Function ID: 7827
+// Module ID: 8244
+// Function ID: 8245
 // Name: useAvatarColor
-// Dependencies: [32, 5, 19, 4885, 570, 1259, 1481, 4733, 558, 576, 504, 7076, 2]
+// Dependencies: [32, 5, 19, 5079, 570, 1271, 1493, 4927, 558, 576, 504, 7262, 2]
 // Exports: maybeFetchColors
 
-// Module 7826 (useAvatarColor)
+// Module 8244 (useAvatarColor)
 import react2 from "react" /* 576 */;
-import _modDef7076 from "module_7076" /* 7076 */;
+import _modDef7262 from "module_7262" /* 7262 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -189,13 +189,13 @@ obj = function _fetchColors() {
 };
 obj = module_570.create(() => ({ palette: {}, fetching: {} }));
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasFetchedColors(arg0) {
   let tmp2;
   let closure_0 = arg0;
   obj = react2;
   const cResult = obj.c(2);
   if (cResult[0] !== arg0) {
-    const fn = function e(arg0) {
+    const fn = function t(arg0) {
       return null != closure_0 && arg0.fetching[tmp];
     };
     cResult[0] = arg0;
@@ -205,19 +205,19 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = cResult[1];
   }
   return !obj(tmp2);
-}) : ((arg0) => {
+}) : (function useHasFetchedColors(arg0) {
   let closure_0 = arg0;
   return !obj((arg0) => null != closure_0 && arg0.fetching[tmp]);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvatarColor(arg0, arg1, arg2) {
   let tmp2 = undefined === arg2;
   const tmp = closure_12;
   if (!tmp2) {
     tmp2 = arg2;
   }
   return _slicedToArray(tmp(arg0, arg1, tmp2), 1)[0];
-}) : ((arg0, arg1) => {
+}) : (function useAvatarColor(arg0, arg1) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = true;
@@ -225,7 +225,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
   return _slicedToArray(closure_12(arg0, arg1, flag), 1)[0];
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvatarColors(arg0, arg1, arg2) {
   let closure_0;
   let closure_2;
   let fn2;
@@ -380,7 +380,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
     cResult[10] = stateFromStores;
     cResult[11] = undefined;
   }
-  fn2 = function v() {
+  fn2 = function p() {
     let tmp2 = null != closure_0;
     const tmp = closure_0;
     if (tmp2) {
@@ -395,7 +395,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
   cResult[6] = tmp6;
   cResult[7] = fn2;
   cResult[8] = items1;
-}) : ((arg0, arg1) => {
+}) : (function useAvatarColors(arg0, arg1) {
   let closure_0;
   let closure_2;
   _require = arg0;

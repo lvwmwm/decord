@@ -1,11 +1,11 @@
-// Module ID: 16318
-// Function ID: 16319
+// Module ID: 16578
+// Function ID: 16579
 // Name: usePreloadedGuildAsset
-// Dependencies: [32, 19, 558, 576, 5980, 1886, 2]
+// Dependencies: [32, 19, 558, 576, 6163, 1898, 2]
 
-// Module 16318 (usePreloadedGuildAsset)
-import react_nativeDefault from "react-native" /* 1886 */;
-import useRefValueDefault from "useRefValue" /* 5980 */;
+// Module 16578 (usePreloadedGuildAsset)
+import react_nativeDefault from "react-native" /* 1898 */;
+import useRefValueDefault from "useRefValue" /* 6163 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 let _require, dependencyMap, importDefault;
 
 let _slicedToArray = _slicedToArray_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, icon, asset) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreloadedGuildAsset(guildId, icon, asset) {
   let closure_3;
   let first;
   let ref;
@@ -117,7 +117,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, icon, asset
   cResult[3] = asset;
   cResult[4] = obj4;
   tmp5 = obj4;
-}) : ((guildId, icon, asset) => {
+}) : (function usePreloadedGuildAsset(guildId, icon, asset) {
   let closure_3;
   let ref;
   let closure_0 = guildId;

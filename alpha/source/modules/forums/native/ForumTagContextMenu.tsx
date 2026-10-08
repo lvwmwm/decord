@@ -1,26 +1,24 @@
-// Module ID: 10370
-// Function ID: 10371
+// Module ID: 9967
+// Function ID: 9968
 // Name: ForumTagContextMenu
-// Dependencies: [21, 558, 576, 2028, 1126, 10371, 6695, 4573, 7590, 2]
+// Dependencies: [21, 558, 576, 2040, 1126, 9968, 6872, 4765, 9297, 2]
 
-// Module 10370 (ForumTagContextMenu)
+// Module 9967 (ForumTagContextMenu)
 import Fragment from "Fragment" /* 21 */;
-import ToastUtils from "ToastUtils" /* 4573 */;
-import ClipboardUtils from "ClipboardUtils" /* 6695 */;
+import ToastUtils from "ToastUtils" /* 4765 */;
+import ClipboardUtils from "ClipboardUtils" /* 6872 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tagId;
-
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((tagId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumTagContextMenu(tagId) {
   let first;
   let tmp7;
   let obj = tagId(576);
   const cResult = obj.c(7);
   tagId = tagId.tagId;
   const children = tagId.children;
-  const DeveloperMode = tagId(2028).DeveloperMode;
+  const DeveloperMode = tagId(2040).DeveloperMode;
   const setting = DeveloperMode.useSetting();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
@@ -33,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((tagId) => {
   if (cResult[1] !== tagId) {
     let obj2 = {
       label: first,
-      IconComponent: tagId(10371).IdIcon,
+      IconComponent: tagId(9968).IdIcon,
       action() {
           const obj = ClipboardUtils;
           obj.copy(tagId);
@@ -57,20 +55,20 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((tagId) => {
       return tmp8;
     }
   }
-  const tmp9 = jsx(tagId(7590).ContextMenu, { triggerOnLongPress: true, items: tmp7, enabled: setting, children });
+  const tmp9 = jsx(tagId(9297).ContextMenu, { triggerOnLongPress: true, items: tmp7, enabled: setting, children });
   cResult[3] = children;
   cResult[4] = tmp7;
   cResult[5] = setting;
   cResult[6] = tmp9;
   tmp8 = tmp9;
-}) : ((tagId) => {
+}) : (function ForumTagContextMenu(tagId) {
   let intl;
   tagId = tagId.tagId;
   const children = tagId.children;
-  const DeveloperMode = tagId(2028).DeveloperMode;
+  const DeveloperMode = tagId(2040).DeveloperMode;
   let obj = {
     label: intl.string(tagId(1126).t["8VG6IY"]),
-    IconComponent: tagId(10371).IdIcon,
+    IconComponent: tagId(9968).IdIcon,
     action() {
       const obj = ClipboardUtils;
       obj.copy(tagId);
@@ -81,7 +79,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((tagId) => {
   const enabled = DeveloperMode.useSetting();
   intl = tagId(1126).intl;
   const items = [obj];
-  return jsx(tagId(7590).ContextMenu, { triggerOnLongPress: true, items, enabled, children });
+  return jsx(tagId(9297).ContextMenu, { triggerOnLongPress: true, items, enabled, children });
 });
 const result = size.fileFinishedImporting("modules/forums/native/ForumTagContextMenu.tsx");
 

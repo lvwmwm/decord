@@ -1,17 +1,17 @@
-// Module ID: 15706
-// Function ID: 15707
+// Module ID: 15986
+// Function ID: 15987
 // Name: UserSettingsDesignSystemAILoader
-// Dependencies: [19, 17, 21, 4896, 558, 576, 4892, 6002, 5600, 14227, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 5086, 6186, 5373, 14051, 2]
 
-// Module 15706 (UserSettingsDesignSystemAILoader)
+// Module 15986 (UserSettingsDesignSystemAILoader)
 import react2 from "react" /* 576 */;
-import Stack_Stack from "Stack/Stack" /* 5600 */;
-import Card_Card from "Card/Card" /* 6002 */;
-import AILoader from "AILoader" /* 14227 */;
+import Stack_Stack from "Stack/Stack" /* 5373 */;
+import Card_Card from "Card/Card" /* 6186 */;
+import AILoader from "AILoader" /* 14051 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,14 +20,14 @@ let c3;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 ({ ScrollView: c2, View: c3 } = react_native);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ container: { padding: 16 }, row: { flexDirection: "row", alignItems: "center", justifyContent: "space-between" } });
 let closure_7 = [12, 16, 24];
 let items = [{ color: "text-default", label: "text-default" }, { color: "text-subtle", label: "text-subtle" }];
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoRow(arg0) {
   let children;
   let label;
   let tmp5;
@@ -61,7 +61,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = tmp5;
   cResult[5] = tmp9;
   tmp8 = tmp9;
-}) : ((arg0) => {
+}) : (function DemoRow(arg0) {
   let children;
   let label;
   ({ label, children } = arg0);
@@ -70,7 +70,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return hasOwnProperty(_false, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsDesignSystemAILoader() {
   let Stack;
   let Stack3;
   let first;
@@ -85,9 +85,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { children: hasOwnProperty(Stack, obj3) };
-    const Card = tmp(6002).Card;
+    const Card = tmp(6186).Card;
     obj3 = { children: items };
-    Stack = tmp(5600).Stack;
+    Stack = tmp(5373).Stack;
     items = [
       React3(Text_Text.Text, { variant: "text-lg/bold", children: "Sizes" }),
       React3(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "`size` is the glyph size in pixels; the gap between slots scales with it. Default 16." }),
@@ -107,11 +107,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { spacing: 24, children: items1 };
     items1 = [first, ];
-    const Stack2 = tmp(5600).Stack;
+    const Stack2 = tmp(5373).Stack;
     const obj5 = { children: hasOwnProperty(Stack3, obj6) };
-    const Card2 = tmp(6002).Card;
+    const Card2 = tmp(6186).Card;
     obj6 = { children: items2 };
-    Stack3 = tmp(5600).Stack;
+    Stack3 = tmp(5373).Stack;
     items2 = [
       React3(Text_Text.Text, { variant: "text-lg/bold", children: "Colors" }),
       React3(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Any semantic text token. Defaults to `text-default`." }),
@@ -138,7 +138,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp15 = cResult[3];
   }
   return tmp15;
-}) : (() => {
+}) : (function UserSettingsDesignSystemAILoader() {
   let Stack;
   let Stack2;
   let Stack3;

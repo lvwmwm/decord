@@ -1,16 +1,16 @@
-// Module ID: 7922
-// Function ID: 7923
+// Module ID: 8341
+// Function ID: 8342
 // Name: useUserProfileGradientColors
-// Dependencies: [19, 4885, 558, 576, 504, 4595, 6690, 7912, 2]
+// Dependencies: [19, 5079, 558, 576, 504, 4787, 6867, 8331, 2]
 
-// Module 7922 (useUserProfileGradientColors)
+// Module 8341 (useUserProfileGradientColors)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import native from "native" /* 4595 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 6690 */;
-import UserProfileGradientUtils from "UserProfileGradientUtils" /* 7912 */;
+import native from "native" /* 4787 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 6867 */;
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8331 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 let react = react_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((secondaryColor, secondaryColor2, arg2) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfileGradientColors(secondaryColor, secondaryColor2, arg2) {
   let overlay;
   let tmp4;
   let tmp5;
@@ -86,7 +86,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((secondaryColor, se
   cResult[5] = overlay;
   cResult[6] = userProfileGradientContainerColors;
   tmp11 = userProfileGradientContainerColors;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useUserProfileGradientColors(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
   let closure_2;

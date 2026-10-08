@@ -1,12 +1,12 @@
-// Module ID: 7894
-// Function ID: 7895
+// Module ID: 8314
+// Function ID: 8315
 // Name: useProfileFrame
-// Dependencies: [7066, 7081, 7073, 558, 576, 504, 2]
+// Dependencies: [7252, 7267, 7259, 558, 576, 504, 2]
 
-// Module 7894 (useProfileFrame)
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7073 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7066 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7081 */;
+// Module 8314 (useProfileFrame)
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7259 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7252 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7267 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require;
 
 const isProfileFrameRecord = ProfileFrameRecord.isProfileFrameRecord;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileFrame(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function l() {
+    const fn = function n() {
       if (null != closure_0) {
         const product = CollectiblesCategoryStore.getProduct(tmp);
         let first;
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7);
-}) : ((arg0) => {
+}) : (function useProfileFrame(arg0) {
   let closure_0;
   _require = arg0;
   const items = [CollectiblesCategoryStore, CollectiblesPurchaseStore];

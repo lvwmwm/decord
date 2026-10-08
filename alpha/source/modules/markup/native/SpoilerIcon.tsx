@@ -1,11 +1,11 @@
-// Module ID: 11638
-// Function ID: 11639
+// Module ID: 11703
+// Function ID: 11704
 // Name: SpoilerIcon
-// Dependencies: [109, 19, 21, 558, 576, 8169, 2]
+// Dependencies: [109, 19, 21, 558, 576, 7550, 2]
 
-// Module 11638 (SpoilerIcon)
+// Module 11703 (SpoilerIcon)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 8169 */;
+import inlineStyles from "inlineStyles" /* 7550 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -16,7 +16,7 @@ let closure_4;
 let hasOwnProperty;
 let closure_2 = ["width", "height", "color"];
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Spoiler(arg0) {
   let color;
   let height;
   let items;
@@ -87,7 +87,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const obj4 = { viewBox: "0 0 24 24", width: num7, height: num6, children: items };
-  const Svg = tmp(8169).Svg;
+  const Svg = tmp(7550).Svg;
   const merged = Object.assign(tmp4);
   items = [tmp11, tmp12];
   const tmp18 = hasOwnProperty(Svg, obj4);
@@ -98,7 +98,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[12] = num7;
   cResult[13] = tmp18;
   tmp16 = tmp18;
-}) : ((width) => {
+}) : (function Spoiler(width) {
   let items;
   let num = width.width;
   if (num === undefined) {

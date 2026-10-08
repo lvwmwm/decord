@@ -1,17 +1,17 @@
-// Module ID: 6576
-// Function ID: 6577
+// Module ID: 6752
+// Function ID: 6753
 // Name: FastList
-// Dependencies: [109, 32, 19, 17, 21, 12, 568, 558, 576, 4892, 5983, 1369, 4618, 6577, 6578, 6119, 6579, 2]
+// Dependencies: [109, 32, 19, 17, 21, 12, 568, 558, 576, 5086, 6166, 1381, 4810, 6753, 6754, 6298, 6755, 2]
 // Exports: getItemSizeOverrideKey
 
-// Module 6576 (FastList)
+// Module 6752 (FastList)
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqual from "shallowEqual" /* 568 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4618 */;
-import NativeViewDefault from "NativeView" /* 5983 */;
-import BottomSheetModal from "BottomSheetModal" /* 6119 */;
-import refObjectUnionAsPropDefault from "refObjectUnionAsProp" /* 6579 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4810 */;
+import NativeViewDefault from "NativeView" /* 6166 */;
+import BottomSheetModal from "BottomSheetModal" /* 6298 */;
+import refObjectUnionAsPropDefault from "refObjectUnionAsProp" /* 6755 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -23,7 +23,7 @@ import size_mod from "module_2" /* 2 */;
 const require = globalThis.__r;
 const shallowEqualDefault = shallowEqual;
 const ReanimatedRexport = ReanimatedRexport2;
-let _require, obj1, scrollViewRef, set;
+let _require, obj1, set;
 
 let StyleSheet;
 let c10;
@@ -1006,7 +1006,7 @@ ReactCompilerGating.isReactCompilerEnabled();
 const __initData = { code: "function FastListTsx1(){const{scrollPosValue,interpolate,inputRange,outputRange,horizontal}=this.__closure;const interpolatedValue=scrollPosValue!=null?interpolate(scrollPosValue.get(),inputRange,outputRange):null;return{transform:interpolatedValue!=null?[horizontal?{translateX:interpolatedValue}:{translateY:interpolatedValue}]:undefined};}" };
 const __initData2 = { code: "function FastListTsx2(){const{scrollPosValue,interpolate,inputRange,outputRange,horizontal}=this.__closure;const interpolatedValue=scrollPosValue!=null?interpolate(scrollPosValue.get(),inputRange,outputRange):null;return{transform:interpolatedValue!=null?[horizontal?{translateX:interpolatedValue}:{translateY:interpolatedValue}]:undefined};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_21 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function FastListStickySectionRendererComponent(arg0) {
   let children;
   let debug;
   let fastListInstance;
@@ -1178,7 +1178,7 @@ let closure_21 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
   cResult[4] = section;
   cResult[5] = onlyResult;
   tmp12 = onlyResult;
-}) : ((children) => {
+}) : (function FastListStickySectionRendererComponent(children) {
   let debug;
   let fastListInstance;
   let horizontal;
@@ -2610,7 +2610,7 @@ FastList.defaultProps = { batchesToRender: 12, contentInset: { top: 0, right: 0,
 const __initData3 = { code: "function FastListTsx3(event){const{horizontal,workletMounted,scrollPosValue,onScrollWorklet}=this.__closure;const scrollPosition=!horizontal?event.contentOffset.y:event.contentOffset.x;const contentSize=!horizontal?event.contentSize.height:event.contentSize.width;if(contentSize===0&&!workletMounted.get()){return;}workletMounted.set(true);scrollPosValue.set(Math.min(scrollPosition,contentSize));if(onScrollWorklet!=null){const layoutSize=!horizontal?event.layoutMeasurement.height:event.layoutMeasurement.width;onScrollWorklet(scrollPosition,contentSize,layoutSize);}}" };
 const __initData4 = { code: "function FastListTsx4(event){const{horizontal,workletMounted,scrollPosValue,onScrollWorklet}=this.__closure;const scrollPosition=!horizontal?event.contentOffset.y:event.contentOffset.x;const contentSize=!horizontal?event.contentSize.height:event.contentSize.width;if(contentSize===0&&!workletMounted.get())return;workletMounted.set(true);scrollPosValue.set(Math.min(scrollPosition,contentSize));if(onScrollWorklet!=null){const layoutSize=!horizontal?event.layoutMeasurement.height:event.layoutMeasurement.width;onScrollWorklet(scrollPosition,contentSize,layoutSize);}}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollViewRef) => {
+let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function FastListScrollWorklet(scrollViewRef) {
   let horizontal;
   let workletMounted;
   let tmp = scrollViewRef;
@@ -2701,7 +2701,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollViewRef)
   cResult[3] = scrollPosValue;
   cResult[4] = fn;
   tmp6 = fn;
-}) : ((scrollViewRef) => {
+}) : (function FastListScrollWorklet(scrollViewRef) {
   scrollViewRef = scrollViewRef.scrollViewRef;
   const scrollPosValue = scrollViewRef.scrollPosValue;
   const horizontal = scrollViewRef.horizontal;

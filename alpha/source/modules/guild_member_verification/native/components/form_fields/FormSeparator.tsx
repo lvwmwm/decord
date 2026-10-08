@@ -1,15 +1,15 @@
-// Module ID: 5989
-// Function ID: 5990
+// Module ID: 6172
+// Function ID: 6173
 // Name: form_fields/FormSeparator
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 2]
 
-// Module 5989 (form_fields/FormSeparator)
+// Module 6172 (form_fields/FormSeparator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ const jsx = Fragment.jsx;
 let obj = { separator: obj2 };
 obj2 = { borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1, marginVertical: 12 };
 let closure_4 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormSeparator(style) {
   const obj = react2;
   const cResult = obj.c(6);
   const tmp2 = closure_4();
@@ -47,7 +47,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   cResult[1] = tmp2.separator;
   cResult[2] = items;
   tmp3 = items;
-}) : ((style) => {
+}) : (function FormSeparator(style) {
   const tmp = closure_4();
   const merged = Object.assign(style);
   const items = [tmp.separator, style.style];

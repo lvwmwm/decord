@@ -1,25 +1,23 @@
-// Module ID: 6502
-// Function ID: 6503
+// Module ID: 6678
+// Function ID: 6679
 // Name: ChangeEmailComplete
-// Dependencies: [19, 17, 6016, 21, 4896, 587, 6014, 558, 576, 6101, 1126, 4892, 5601, 2]
+// Dependencies: [19, 17, 6202, 21, 5090, 587, 6200, 558, 576, 6279, 1126, 5086, 5375, 2]
 
-// Module 6502 (ChangeEmailComplete)
+// Module 6678 (ChangeEmailComplete)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6014 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 6016 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6101 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6200 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 6202 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6279 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let email;
 
 let c3;
 let closure_4;
@@ -43,7 +41,7 @@ createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, width: "100%", padding: 12, borderWidth: 1, borderStyle: "solid", borderRadius: nativeDefault.radii.sm, borderColor: nativeDefault.colors.BORDER_SUBTLE };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 let closure_9 = createStyles(obj);
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((email) => {
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmailComplete(email) {
   let bodyInner;
   let intl4;
   let items;
@@ -132,7 +130,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((email) => {
         const _Symbol2 = Symbol;
         if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
           const obj6 = { text: intl4.string(intl5.t.BddRzS), onPress: handlePress, grow: true };
-          const Button = tmp(5601).Button;
+          const Button = tmp(5375).Button;
           intl4 = tmp(1126).intl;
           const tmp31 = metroImportDefault(Button, obj6);
           cResult[17] = tmp31;
@@ -176,7 +174,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((email) => {
   cResult[8] = tmp15;
   cResult[9] = tmp18;
   tmp17 = tmp18;
-}) : ((email) => {
+}) : (function ChangeEmailComplete(email) {
   let intl;
   let intl2;
   let intl3;

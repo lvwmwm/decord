@@ -1,20 +1,18 @@
-// Module ID: 12960
-// Function ID: 12961
+// Module ID: 13239
+// Function ID: 13240
 // Name: useTrackUserProfileWishlistView
-// Dependencies: [19, 8464, 558, 576, 504, 2]
+// Dependencies: [19, 8950, 558, 576, 504, 2]
 
-// Module 12960 (useTrackUserProfileWishlistView)
+// Module 13239 (useTrackUserProfileWishlistView)
 import react from "react" /* 19 */;
-import WishlistStore from "WishlistStore" /* 8464 */;
+import WishlistStore from "WishlistStore" /* 8950 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let wishlistId;
 
 let c2;
 let c3;
 ({ useEffect: c2, useRef: c3 } = react);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((wishlistId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackUserProfileWishlistView(wishlistId) {
   let first;
   let onAction;
   let stateFromStores;
@@ -90,7 +88,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((wishlistId) => {
   cResult[9] = items1;
   tmp10 = items1;
   tmp9 = fn2;
-}) : ((wishlistId) => {
+}) : (function useTrackUserProfileWishlistView(wishlistId) {
   wishlistId = wishlistId.wishlistId;
   const onAction = wishlistId.onAction;
   const productLines = wishlistId.productLines;

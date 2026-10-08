@@ -1,29 +1,28 @@
-// Module ID: 8720
-// Function ID: 8721
+// Module ID: 13193
+// Function ID: 13194
 // Name: UserProfileApplicationWidgetTopContainedLayout
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 8629, 8716, 8717, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 13102, 13189, 6164, 13190, 2]
 
-// Module 8720 (UserProfileApplicationWidgetTopContainedLayout)
+// Module 13193 (UserProfileApplicationWidgetTopContainedLayout)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _mod8629 from "module_8629" /* 8629 */;
-import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 8716 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import _mod13102 from "module_13102" /* 13102 */;
+import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 13189 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let c2;
-let c3;
 let closure_4;
 let hasOwnProperty;
 let obj2;
 let obj3;
 let size;
 let size1;
-({ Image: c2, View: c3 } = react_native);
+const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { contentRow: obj2, text: obj3, imageContainer: size, image: { width: "100%", height: "100%" }, imageSkeleton: size1 };
@@ -33,7 +32,7 @@ obj3 = { flex: 1, gap: nativeDefault.space.PX_4 };
 size = { width: 96, height: 96, marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.md, overflow: "hidden", borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
 size1 = { width: 96, height: 96, marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_16 };
 let closure_6 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileApplicationWidgetTopContainedLayout(arg0) {
   let header;
   let items;
   let items1;
@@ -152,7 +151,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                       }
                                       const obj6 = { children: items };
                                       items = [header, tmp39];
-                                      const tmp46 = hasOwnProperty(_false, obj6);
+                                      const tmp46 = hasOwnProperty(View, obj6);
                                       cResult[42] = header;
                                       cResult[43] = tmp39;
                                       cResult[44] = tmp46;
@@ -161,7 +160,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                   }
                                   const obj7 = { style: tmp4.contentRow, children: items1 };
                                   items1 = [tmp29, tmp33];
-                                  const tmp42 = hasOwnProperty(_false, obj7);
+                                  const tmp42 = hasOwnProperty(View, obj7);
                                   cResult[38] = tmp4.contentRow;
                                   cResult[39] = tmp29;
                                   cResult[40] = tmp33;
@@ -171,13 +170,13 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                               }
                             }
                             if (null != tmp15) {
-                              const obj8 = { style: tmp4.imageContainer, children: React3(React2, obj9) };
+                              const obj8 = { style: tmp4.imageContainer, children: React3(FastImageDefault, obj9) };
                               obj9 = { source: obj10, style: tmp4.image, resizeMode: "contain" };
                               obj10 = { uri: tmp15.media.url };
-                              tmp35 = React3(_false, obj8);
+                              tmp35 = React3(View, obj8);
                             } else {
                               const obj11 = { style: tmp4.imageSkeleton };
-                              tmp35 = React3(tmp(8717).ImageSkeleton, obj11);
+                              tmp35 = React3(tmp(13190).ImageSkeleton, obj11);
                             }
                             cResult[33] = tmp15;
                             cResult[34] = tmp4.image;
@@ -191,7 +190,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     }
                     const obj12 = { style: tmp4.text, children: items2 };
                     items2 = [tmp17, tmp20, tmp23, tmp26];
-                    const tmp32 = hasOwnProperty(_false, obj12);
+                    const tmp32 = hasOwnProperty(View, obj12);
                     cResult[27] = tmp4.text;
                     cResult[28] = tmp26;
                     cResult[29] = tmp17;
@@ -200,7 +199,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     cResult[32] = tmp32;
                     tmp29 = tmp32;
                   }
-                  const items3 = [_mod8629.ResolvedValueType.MEDIA];
+                  const items3 = [_mod13102.ResolvedValueType.MEDIA];
                   const fieldValue = resolveFieldValue(image, items3);
                   cResult[16] = resolveFieldValue;
                   cResult[17] = image;
@@ -208,7 +207,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   tmp15 = fieldValue;
                 }
               }
-              const tmpResult = _mod8629;
+              const tmpResult = _mod13102;
               const textComponentValues = tmpResult.resolveTextComponentValues(topConfig.components.subtitle_3, resolveFieldValue, numberFormat);
               cResult[12] = numberFormat;
               cResult[13] = resolveFieldValue;
@@ -217,7 +216,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               tmp11 = textComponentValues;
             }
           }
-          const tmpResult4 = _mod8629;
+          const tmpResult4 = _mod13102;
           const textComponentValues1 = tmpResult4.resolveTextComponentValues(topConfig.components.subtitle_2, resolveFieldValue, numberFormat);
           cResult[8] = numberFormat;
           cResult[9] = resolveFieldValue;
@@ -226,7 +225,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp9 = textComponentValues1;
         }
       }
-      const tmpResult5 = _mod8629;
+      const tmpResult5 = _mod13102;
       const textComponentValues2 = tmpResult5.resolveTextComponentValues(topConfig.components.subtitle_1, resolveFieldValue, numberFormat);
       cResult[4] = numberFormat;
       cResult[5] = resolveFieldValue;
@@ -235,14 +234,14 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp7 = textComponentValues2;
     }
   }
-  const tmpResult6 = _mod8629;
+  const tmpResult6 = _mod13102;
   const textComponentValues3 = tmpResult6.resolveTextComponentValues(topConfig.components.title, resolveFieldValue, numberFormat, true);
   cResult[0] = numberFormat;
   cResult[1] = resolveFieldValue;
   cResult[2] = topConfig.components.title;
   cResult[3] = textComponentValues3;
   tmp5 = textComponentValues3;
-}) : ((header) => {
+}) : (function UserProfileApplicationWidgetTopContainedLayout(header) {
   let items2;
   let items3;
   let numberFormat;
@@ -254,41 +253,41 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ topConfig, resolveFieldValue, numberFormat } = header);
   header = header.header;
   const tmp = closure_6();
-  const obj = _mod8629;
+  const obj = _mod13102;
   const textComponentValues = obj.resolveTextComponentValues(topConfig.components.title, resolveFieldValue, numberFormat, true);
-  const obj2 = _mod8629;
+  const obj2 = _mod13102;
   const textComponentValues1 = obj2.resolveTextComponentValues(topConfig.components.subtitle_1, resolveFieldValue, numberFormat);
-  const obj3 = _mod8629;
+  const obj3 = _mod13102;
   const textComponentValues2 = obj3.resolveTextComponentValues(topConfig.components.subtitle_2, resolveFieldValue, numberFormat);
   const contained_image = topConfig.components.contained_image;
   let image;
-  const obj4 = _mod8629;
+  const obj4 = _mod13102;
   const textComponentValues3 = obj4.resolveTextComponentValues(topConfig.components.subtitle_3, resolveFieldValue, numberFormat);
   if (contained_image != null) {
     image = contained_image.fields.image;
   }
-  const items = [_mod8629.ResolvedValueType.MEDIA];
+  const items = [_mod13102.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
   const items1 = [header, ];
   const obj5 = { style: tmp.contentRow, children: items3 };
   const obj6 = { style: tmp.text, children: items2 };
   items2 = [React3(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues, variant: "text-lg/medium", color: "text-default" }), React3(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues1, variant: "text-sm/normal", color: "text-muted" }), React3(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues2, variant: "text-sm/normal", color: "text-muted" }), React3(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues3, variant: "text-sm/normal", color: "text-muted" })];
-  items3 = [hasOwnProperty(_false, obj6), ];
+  items3 = [hasOwnProperty(View, obj6), ];
   if (null != fieldValue) {
-    const obj7 = { style: tmp.imageContainer, children: React3(React2, obj8) };
+    const obj7 = { style: tmp.imageContainer, children: React3(FastImageDefault, obj8) };
     obj8 = { source: obj9, style: tmp.image, resizeMode: "contain" };
     obj9 = { uri: fieldValue.media.url };
     tmp12Result = tmp12(tmp11, obj7);
   } else {
     const obj10 = { style: tmp.imageSkeleton };
-    tmp12Result = tmp12(tmp2(8717).ImageSkeleton, obj10);
+    tmp12Result = tmp12(tmp2(13190).ImageSkeleton, obj10);
   }
   const obj11 = { children: items1 };
   items3[1] = tmp12Result;
-  items1[1] = hasOwnProperty(_false, obj5);
-  return hasOwnProperty(_false, obj11);
+  items1[1] = hasOwnProperty(View, obj5);
+  return hasOwnProperty(View, obj11);
 });
 size = size_mod;
 const result = size.fileFinishedImporting("modules/application_widget/native/UserProfileApplicationWidgetTopContainedLayout.tsx");
 
-export default tmp6;
+export default tmp5;

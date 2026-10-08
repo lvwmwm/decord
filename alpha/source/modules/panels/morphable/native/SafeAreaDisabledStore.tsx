@@ -1,9 +1,9 @@
-// Module ID: 9191
-// Function ID: 9192
+// Module ID: 10759
+// Function ID: 10760
 // Name: SafeAreaDisabledStore
-// Dependencies: [570, 1259, 2]
+// Dependencies: [570, 1271, 2]
 
-// Module 9191 (SafeAreaDisabledStore)
+// Module 10759 (SafeAreaDisabledStore)
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 

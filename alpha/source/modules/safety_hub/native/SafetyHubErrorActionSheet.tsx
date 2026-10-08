@@ -1,22 +1,22 @@
-// Module ID: 14571
-// Function ID: 14572
+// Module ID: 14832
+// Function ID: 14833
 // Name: SafetyHubErrorActionSheet
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 14570, 4803, 4892, 1126, 11506, 5601, 6652, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 14831, 4997, 5086, 1126, 11498, 5375, 6829, 2]
 
-// Module 14571 (SafetyHubErrorActionSheet)
+// Module 14832 (SafetyHubErrorActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import CircleXIcon2 from "CircleXIcon" /* 4803 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6652 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 11506 */;
-import useSafetyHubLoadingDefault from "useSafetyHubLoading" /* 14570 */;
+import CircleXIcon2 from "CircleXIcon" /* 4997 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6829 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 11498 */;
+import useSafetyHubLoadingDefault from "useSafetyHubLoading" /* 14831 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -34,153 +34,147 @@ obj2 = { display: "flex", alignItems: "center", justifyContent: "center", paddin
 createStyles = createStyles.createStyles;
 size = { display: "flex", justifyContent: "center", alignItems: "center", height: 40, width: 40, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.WHITE };
 let closure_7 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubErrorActionSheet() {
   let intl;
-  let items2;
-  let items3;
-  let items4;
+  let items;
+  let items1;
+  let tmp25;
   let tmp7;
-  let tmp8;
-  let tmp9;
   let obj = react2;
-  const cResult = obj.c(20);
+  const cResult = obj.c(16);
   const tmp4 = closure_7();
   const tmp6 = useSafetyHubLoadingDefault();
-  if (cResult[0] !== tmp4.errorContainer) {
-    const items = [tmp4.errorContainer];
-    cResult[0] = tmp4.errorContainer;
-    cResult[1] = items;
-    tmp7 = items;
+  if (cResult[0] !== tmp4.redesignErrorIcon) {
+    const obj2 = { size: "custom", color: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT, style: tmp4.redesignErrorIcon };
+    const CircleXIcon = tmp(4997).CircleXIcon;
+    const tmp9 = hasOwnProperty(CircleXIcon, obj2);
+    cResult[0] = tmp4.redesignErrorIcon;
+    cResult[1] = tmp9;
+    tmp7 = tmp9;
   } else {
     tmp7 = cResult[1];
   }
-  if (cResult[2] !== tmp4.redesignErrorIconContainer) {
-    const items1 = [tmp4.redesignErrorIconContainer];
-    cResult[2] = tmp4.redesignErrorIconContainer;
-    cResult[3] = items1;
-    tmp8 = items1;
-  } else {
-    tmp8 = cResult[3];
-  }
-  if (cResult[4] !== tmp4.redesignErrorIcon) {
-    const obj2 = { size: "custom", color: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT, style: items2 };
-    const CircleXIcon = tmp(4803).CircleXIcon;
-    items2 = [tmp4.redesignErrorIcon];
-    const tmp11 = hasOwnProperty(CircleXIcon, obj2);
-    cResult[4] = tmp4.redesignErrorIcon;
-    cResult[5] = tmp11;
-    tmp9 = tmp11;
-  } else {
-    tmp9 = cResult[5];
-  }
-  if (cResult[6] === tmp8) {
-    let tmp12;
-    let tmp15;
-    if (cResult[7] === tmp9) {
-      tmp12 = cResult[8];
+  if (cResult[2] === tmp4.redesignErrorIconContainer) {
+    let tmp10;
+    let tmp13;
+    if (cResult[3] === tmp7) {
+      tmp10 = cResult[4];
     }
     const _Symbol = Symbol;
-    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { variant: "heading-lg/normal", children: intl.string(intl3.t.TDRvqs) };
-      const Text = tmp(4892).Text;
+      const Text = tmp(5086).Text;
       intl = tmp(1126).intl;
-      const tmp17 = hasOwnProperty(Text, obj3);
-      cResult[9] = tmp17;
-      tmp15 = tmp17;
+      const tmp15 = hasOwnProperty(Text, obj3);
+      cResult[5] = tmp15;
+      tmp13 = tmp15;
     } else {
-      tmp15 = cResult[9];
+      tmp13 = cResult[5];
     }
-    if (cResult[10] === tmp7) {
-      let tmp18;
-      let tmp23;
-      let tmp22;
-      let tmp25;
-      if (cResult[11] === tmp12) {
-        tmp18 = cResult[12];
+    if (cResult[6] === tmp4.errorContainer) {
+      let tmp16;
+      let tmp21;
+      let tmp20;
+      if (cResult[7] === tmp10) {
+        tmp16 = cResult[8];
       }
       const _Symbol2 = Symbol;
-      if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-        const fn = function _() {
-          const obj = SafetyHubActionCreatorsAll;
-          return obj.getSafetyHubData();
-        };
+      if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+        class C {
+          constructor() {
+            obj = closure_1_2(closure_1_3[11]);
+            return obj.getSafetyHubData();
+          }
+        }
         const intl2 = tmp(1126).intl;
         const stringResult = intl2.string(intl3.t.R1AN4F);
-        cResult[13] = fn;
-        cResult[14] = stringResult;
-        tmp23 = stringResult;
-        tmp22 = fn;
+        cResult[9] = C;
+        cResult[10] = stringResult;
+        tmp21 = stringResult;
+        tmp20 = C;
       } else {
-        tmp22 = cResult[13];
-        tmp23 = cResult[14];
-      }
-      if (cResult[15] !== tmp6) {
-        const obj4 = { onPress: tmp22, text: tmp23, loading: tmp6, disabled: tmp6 };
-        const tmp27 = hasOwnProperty(components_Button_Button.Button, obj4);
-        cResult[15] = tmp6;
-        cResult[16] = tmp27;
-        tmp25 = tmp27;
-      } else {
-        tmp25 = cResult[16];
-      }
-      if (cResult[17] === tmp18) {
-        let tmp28;
-        if (cResult[18] === tmp25) {
-          tmp28 = cResult[19];
+        class C {
+          constructor() {
+            obj = closure_1_2(closure_1_3[11]);
+            return obj.getSafetyHubData();
+          }
         }
-        return tmp28;
+        tmp21 = cResult[10];
       }
-      const obj5 = { children: items3 };
-      items3 = [tmp18, tmp25];
-      const tmp30 = metroRequire(Sheet_BottomSheet.BottomSheet, obj5);
-      cResult[17] = tmp18;
-      cResult[18] = tmp25;
-      cResult[19] = tmp30;
-      tmp28 = tmp30;
+      if (cResult[11] !== tmp6) {
+        class C {
+          constructor() {
+            obj = closure_1_2(closure_1_3[11]);
+            return obj.getSafetyHubData();
+          }
+        }
+        const obj4 = { onPress: tmp20, text: tmp21, loading: tmp6, disabled: tmp6 };
+        cResult[11] = tmp6;
+        cResult[12] = hasOwnProperty(components_Button_Button.Button, obj4);
+        const tmp24 = hasOwnProperty(components_Button_Button.Button, obj4);
+      } else {
+        class C {
+          constructor() {
+            obj = closure_1_2(closure_1_3[11]);
+            return obj.getSafetyHubData();
+          }
+        }
+      }
+      if (cResult[13] === tmp16) {
+        class C {
+          constructor() {
+            obj = closure_1_2(closure_1_3[11]);
+            return obj.getSafetyHubData();
+          }
+        }
+        return tmp25;
+      }
+      const obj5 = { children: items };
+      items = [tmp16, tmp23];
+      const tmp27 = metroRequire(Sheet_BottomSheet.BottomSheet, obj5);
+      cResult[13] = tmp16;
+      cResult[14] = tmp23;
+      cResult[15] = tmp27;
+      tmp25 = tmp27;
     }
-    const obj6 = { style: tmp7, children: items4 };
-    items4 = [tmp12, tmp15];
-    const tmp21 = metroRequire(View, obj6);
-    cResult[10] = tmp7;
-    cResult[11] = tmp12;
-    cResult[12] = tmp21;
-    tmp18 = tmp21;
+    const obj6 = { style: tmp4.errorContainer, children: items1 };
+    items1 = [tmp10, tmp13];
+    const tmp19 = metroRequire(View, obj6);
+    cResult[6] = tmp4.errorContainer;
+    cResult[7] = tmp10;
+    cResult[8] = tmp19;
+    tmp16 = tmp19;
   }
-  const tmp13 = hasOwnProperty(View, { style: tmp8, children: tmp9 });
-  cResult[6] = tmp8;
-  cResult[7] = tmp9;
-  cResult[8] = tmp13;
-  tmp12 = tmp13;
-}) : ((arg0) => {
+  const obj7 = { style: tmp4.redesignErrorIconContainer, children: tmp7 };
+  const tmp11 = hasOwnProperty(View, obj7);
+  cResult[2] = tmp4.redesignErrorIconContainer;
+  cResult[3] = tmp7;
+  cResult[4] = tmp11;
+  tmp10 = tmp11;
+}) : (function SafetyHubErrorActionSheet(arg0) {
   let CircleXIcon;
   let intl;
   let intl2;
   let items;
   let items1;
-  let items2;
-  let items3;
-  let items4;
   let obj4;
   if (arg0 == null) {
     throw new TypeError("Cannot destructure 'undefined' or 'null'.");
   } else {
     const tmp2 = closure_7();
     const tmp5 = useSafetyHubLoadingDefault();
-    let obj = { children: items4 };
-    const obj2 = { style: items, children: items3 };
-    items = [tmp2.errorContainer];
-    const obj3 = { style: items1, children: hasOwnProperty(CircleXIcon, obj4) };
-    items1 = [tmp2.redesignErrorIconContainer];
+    let obj = { children: items1 };
+    const obj2 = { style: tmp2.errorContainer, children: items };
+    const obj3 = { style: tmp2.redesignErrorIconContainer, children: hasOwnProperty(CircleXIcon, obj4) };
     BottomSheet = Sheet_BottomSheet.BottomSheet;
-    obj4 = { size: "custom", color: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT, style: items2 };
+    obj4 = { size: "custom", color: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT, style: tmp2.redesignErrorIcon };
     CircleXIcon = CircleXIcon2.CircleXIcon;
-    items2 = [tmp2.redesignErrorIcon];
-    items3 = [hasOwnProperty(View, obj3), ];
+    items = [hasOwnProperty(View, obj3), ];
     const obj5 = { variant: "heading-lg/normal", children: intl.string(intl3.t.TDRvqs) };
     const Text = Text_Text.Text;
     intl = intl3.intl;
-    items3[1] = hasOwnProperty(Text, obj5);
-    items4 = [metroRequire(View, obj2), ];
+    items[1] = hasOwnProperty(Text, obj5);
+    items1 = [metroRequire(View, obj2), ];
     const obj6 = {
       onPress() {
           const obj = SafetyHubActionCreatorsAll;
@@ -192,7 +186,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     };
     const Button = components_Button_Button.Button;
     intl2 = intl3.intl;
-    items4[1] = hasOwnProperty(Button, obj6);
+    items1[1] = hasOwnProperty(Button, obj6);
     return metroRequire(BottomSheet, obj);
   }
 });

@@ -1,14 +1,14 @@
-// Module ID: 4508
-// Function ID: 4509
+// Module ID: 4700
+// Function ID: 4701
 // Name: GuildRoleSubscriptionsStore
-// Dependencies: [4509, 4510, 504, 38, 584, 2]
+// Dependencies: [4701, 4702, 504, 38, 584, 2]
 
-// Module 4508 (GuildRoleSubscriptionsStore)
+// Module 4700 (GuildRoleSubscriptionsStore)
 import _modDef38 from "module_38" /* 38 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import CreatorMonetizationReviewConstants from "CreatorMonetizationReviewConstants" /* 4509 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4510 */;
+import CreatorMonetizationReviewConstants from "CreatorMonetizationReviewConstants" /* 4701 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4702 */;
 import size from "module_2" /* 2 */;
 
 let closure_10, closure_11, closure_7, closure_9;

@@ -1,17 +1,17 @@
-// Module ID: 11465
-// Function ID: 11466
+// Module ID: 11449
+// Function ID: 11450
 // Name: GuildDisableCommunicationModal
-// Dependencies: [19, 21, 558, 576, 10673, 1126, 5048, 11466, 10674, 2]
+// Dependencies: [19, 21, 558, 576, 9586, 1126, 5405, 11450, 9587, 2]
 
-// Module 11465 (GuildDisableCommunicationModal)
+// Module 11449 (GuildDisableCommunicationModal)
 import Fragment from "Fragment" /* 21 */;
-import GuildDisableCommunicationDefault from "GuildDisableCommunication" /* 11466 */;
+import GuildDisableCommunicationDefault from "GuildDisableCommunication" /* 11450 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDisableCommunicationModal(guildId) {
   let onGoBack;
   let tmp4;
   let tmp5Result;
@@ -53,7 +53,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         tmp9 = tmp11;
       }
     }
-    const fn = function b() {
+    const fn = function f() {
       return jsx(GuildDisableCommunicationDefault, { user, guildId, onClose: onGoBack });
     };
     cResult[5] = guildId;
@@ -72,7 +72,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[3] = user;
   cResult[4] = formatToPlainStringResult;
   tmp6 = formatToPlainStringResult;
-}) : ((onBeforeGoBack) => {
+}) : (function GuildDisableCommunicationModal(onBeforeGoBack) {
   let obj3;
   const guildId = onBeforeGoBack.guildId;
   const user = onBeforeGoBack.user;

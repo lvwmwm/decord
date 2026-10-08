@@ -1,15 +1,15 @@
-// Module ID: 13157
-// Function ID: 13158
+// Module ID: 12870
+// Function ID: 12871
 // Name: MobileRoadblockCtaUtils
-// Dependencies: [1379, 1126, 4534, 8904, 13158, 2]
+// Dependencies: [1391, 1126, 4726, 9337, 12871, 2]
 // Exports: formatMobileRoadblockOfferText, getMobileRoadblockButtonText
 
-// Module 13157 (MobileRoadblockCtaUtils)
+// Module 12870 (MobileRoadblockCtaUtils)
 import intl3 from "intl" /* 1126 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import PremiumUtils from "PremiumUtils" /* 4534 */;
-import getTrialCtaOverride from "getTrialCtaOverride" /* 8904 */;
-import MobileRoadblockOfferCtaExperiment from "MobileRoadblockOfferCtaExperiment" /* 13158 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import PremiumUtils from "PremiumUtils" /* 4726 */;
+import getTrialCtaOverride from "getTrialCtaOverride" /* 9337 */;
+import MobileRoadblockOfferCtaExperiment from "MobileRoadblockOfferCtaExperiment" /* 12871 */;
 import size from "module_2" /* 2 */;
 
 const PremiumSubscriptionSKUs = PremiumConstants.PremiumSubscriptionSKUs;

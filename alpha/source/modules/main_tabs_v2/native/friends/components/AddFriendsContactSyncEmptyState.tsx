@@ -1,21 +1,21 @@
-// Module ID: 16968
-// Function ID: 16969
+// Module ID: 17249
+// Function ID: 17250
 // Name: AddFriendsContactSyncEmptyState
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 12340, 12357, 1126, 4892, 12344, 5601, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 12436, 12453, 1126, 5086, 12440, 5375, 2]
 
-// Module 16968 (AddFriendsContactSyncEmptyState)
+// Module 17249 (AddFriendsContactSyncEmptyState)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12340 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12344 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12357 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12436 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12440 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12453 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ obj3 = { marginBottom: nativeDefault.space.PX_8, width: "100%", textAlign: "cent
 obj4 = { marginBottom: nativeDefault.space.PX_24, paddingHorizontal: nativeDefault.space.PX_48, width: "100%", alignContent: "center" };
 obj5 = { width: "100%", paddingBottom: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_12 };
 let closure_7 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddFriendsContactSyncEmptyState() {
   let first;
   let intl3;
   let items;
@@ -54,12 +54,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(21);
   const tmp4 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t() {
+    function handleNext() {
       const obj = ContactSyncModalActionCreators;
       obj.openContactSyncModal({}, "Add Friends Contact Sync Empty State");
-    };
-    cResult[0] = fn;
-    first = fn;
+    }
+    cResult[0] = handleNext;
+    first = handleNext;
   } else {
     first = cResult[0];
   }
@@ -122,7 +122,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const _Symbol = Symbol;
     if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
       const obj6 = { variant: "primary", size: "lg", text: intl3.string(intl4.t.QUXSpo), onPress: first };
-      const Button = tmp(5601).Button;
+      const Button = tmp(5375).Button;
       intl3 = tmp(1126).intl;
       const tmp25 = hasOwnProperty(Button, obj6);
       cResult[12] = tmp25;
@@ -168,7 +168,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[10] = tmp18;
   cResult[11] = tmp22;
   tmp21 = tmp22;
-}) : (() => {
+}) : (function AddFriendsContactSyncEmptyState() {
   let Button;
   let OXdOPf;
   let Text2;
@@ -201,7 +201,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     variant: "primary",
     size: "lg",
     text: intl3.string(intl4.t.QUXSpo),
-    onPress() {
+    onPress: function handleNext() {
       const obj = ContactSyncModalActionCreators;
       obj.openContactSyncModal({}, "Add Friends Contact Sync Empty State");
     }

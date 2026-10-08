@@ -1,17 +1,17 @@
-// Module ID: 15834
-// Function ID: 15835
+// Module ID: 16093
+// Function ID: 16094
 // Name: useIsAllowGameFriendDMsSettingVisible
-// Dependencies: [7155, 558, 576, 504, 2]
+// Dependencies: [7335, 558, 576, 504, 2]
 
-// Module 15834 (useIsAllowGameFriendDMsSettingVisible)
+// Module 16093 (useIsAllowGameFriendDMsSettingVisible)
 import react from "react" /* 576 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7155 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7335 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsAllowGameFriendDMsSettingVisible() {
   let gameRelationshipCount;
   let tmp4;
   let tmp5;
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useIsAllowGameFriendDMsSettingVisible() {
   let gameRelationshipCount;
   const items = [GameRelationshipStore];
   const obj = get_initialized;

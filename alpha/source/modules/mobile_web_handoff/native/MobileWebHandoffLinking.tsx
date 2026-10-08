@@ -1,13 +1,13 @@
-// Module ID: 6830
-// Function ID: 6831
+// Module ID: 7024
+// Function ID: 7025
 // Name: MobileWebHandoffLinking
-// Dependencies: [5, 502, 1085, 5099, 6831, 6833, 1252, 1265, 6834, 1371, 4571, 2]
+// Dependencies: [5, 502, 1085, 5940, 7025, 7027, 1264, 1277, 7028, 1383, 4763, 2]
 
-// Module 6830 (MobileWebHandoffLinking)
-import FingerprintUtils from "FingerprintUtils" /* 1265 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
-import SimpleLoadingModal from "SimpleLoadingModal" /* 6831 */;
-import MobileWebHandoffUtilsDefault from "MobileWebHandoffUtils" /* 6833 */;
+// Module 7024 (MobileWebHandoffLinking)
+import FingerprintUtils from "FingerprintUtils" /* 1277 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+import SimpleLoadingModal from "SimpleLoadingModal" /* 7025 */;
+import MobileWebHandoffUtilsDefault from "MobileWebHandoffUtils" /* 7027 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1085 */;
@@ -20,7 +20,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const AnalyticsUtilsDefault = tmp(1252);
+const AnalyticsUtilsDefault = tmp(1264);
 function createHandoffTokenWithLoadingModal(arg0) {
   let authenticated;
   let fingerprint;

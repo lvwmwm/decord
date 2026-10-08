@@ -1,15 +1,15 @@
-// Module ID: 14288
-// Function ID: 14289
+// Module ID: 14112
+// Function ID: 14113
 // Name: createAccessibleNativeStackNavigator
-// Dependencies: [109, 19, 21, 558, 576, 6503, 1491, 7568, 2]
+// Dependencies: [109, 19, 21, 558, 576, 6679, 1503, 9279, 2]
 // Exports: default
 
-// Module 14288 (createAccessibleNativeStackNavigator)
+// Module 14112 (createAccessibleNativeStackNavigator)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Link from "Link" /* 1491 */;
-import Navigator from "Navigator" /* 6503 */;
-import NativeStackView2 from "NativeStackView" /* 7568 */;
+import Link from "Link" /* 1503 */;
+import Navigator from "Navigator" /* 6679 */;
+import NativeStackView2 from "NativeStackView" /* 9279 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 let closure_2 = ["id", "initialRouteName", "UNSTABLE_routeNamesChangeBehavior", "children", "layout", "screenListeners", "screenOptions", "screenLayout", "UNSTABLE_router"];
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((obj) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccessibilityPatchedDescriptors(obj) {
   obj = react2;
   const cResult = obj.c(3);
   const obj2 = Navigator;
@@ -53,7 +53,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((obj) => {
     tmp4 = obj3;
   }
   return tmp3;
-}) : ((arg0) => {
+}) : (function useAccessibilityPatchedDescriptors(arg0) {
   let closure_0 = arg0;
   let obj = Navigator;
   const accessibilityNativeStackOptions = obj.useAccessibilityNativeStackOptions();
@@ -83,7 +83,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((obj) => {
 });
 let closure_6 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccessibleNativeStackNavigator(arg0) {
   let NavigationContent;
   let UNSTABLE_routeNamesChangeBehavior;
   let UNSTABLE_router;
@@ -157,7 +157,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     tmp17 = cResult[20];
                   }
                   const tmpResult = Link;
-                  const navigationBuilder = tmpResult.useNavigationBuilder(tmp(1491).StackRouter, tmp17);
+                  const navigationBuilder = tmpResult.useNavigationBuilder(tmp(1503).StackRouter, tmp17);
                   ({ state, describe, navigation, NavigationContent } = navigationBuilder);
                   const tmp20 = closure_6(navigationBuilder.descriptors);
                   if (cResult[21] === describe) {
@@ -184,7 +184,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       }
                     }
                   }
-                  const NativeStackView = tmp(7568).NativeStackView;
+                  const NativeStackView = tmp(9279).NativeStackView;
                   const merged = Object.assign(tmp10);
                   const tmp26 = <NativeStackView state={state} navigation={navigation} descriptors={tmp20} describe={describe} />;
                   cResult[21] = describe;
@@ -214,7 +214,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[19] = tmp13;
   cResult[20] = obj4;
   tmp17 = obj4;
-}) : ((arg0) => {
+}) : (function AccessibleNativeStackNavigator(arg0) {
   let NavigationContent;
   let UNSTABLE_routeNamesChangeBehavior;
   let UNSTABLE_router;

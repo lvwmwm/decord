@@ -1,31 +1,28 @@
-// Module ID: 11332
-// Function ID: 11333
+// Module ID: 11599
+// Function ID: 11600
 // Name: useShareChatInputActions
-// Dependencies: [32, 19, 1380, 558, 576, 9879, 2]
+// Dependencies: [32, 19, 1392, 558, 576, 9359, 2]
 
-// Module 11332 (useShareChatInputActions)
-import EmojiConstants from "EmojiConstants" /* 1380 */;
-import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9879 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+// Module 11599 (useShareChatInputActions)
+import EmojiConstants from "EmojiConstants" /* 1392 */;
+import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9359 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap;
+let _require, dependencyMap, onPressEmoji;
 
-let _slicedToArray = _slicedToArray_mod;
 const EmojiIntention = EmojiConstants.EmojiIntention;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, channel, appEntryKey) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShareChatInputActions(arg0, channel, appEntryKey) {
   let closure_0;
   let closure_5;
   let first;
   let ref;
-  let tmp8;
-  let tmp9;
+  let tmp11;
   _require = arg0;
   dependencyMap = channel;
-  _slicedToArray = appEntryKey;
   let obj = require("react");
   const cResult = obj.c(14);
   let obj2 = ref;
@@ -38,8 +35,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, channel, appEn
     first = cResult[0];
   }
   let closure_4 = obj2.useRef(first);
-  [r10032, closure_5] = _slicedToArray(obj2.useState(false), 2);
-  const tmp4 = _slicedToArray(obj2.useState(false), 2);
+  [r10032, closure_5] = appEntryKey(obj2.useState(false), 2);
+  const tmp4 = appEntryKey(obj2.useState(false), 2);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function v(nativeEvent) {
       const obj = {};
@@ -49,52 +46,51 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, channel, appEn
     cResult[1] = fn;
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function _() {
-      closure_5(true);
-    };
-    cResult[2] = fn2;
+    class E {
+      constructor() {
+        closure_5(true);
+      }
+    }
+    cResult[2] = E;
+  } else {
+    class E {
+      constructor() {
+        closure_5(true);
+      }
+    }
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn3 = function k() {
-      closure_5(false);
-    };
-    cResult[3] = fn3;
+    class E {
+      constructor() {
+        closure_5(true);
+      }
+    }
+    cResult[3] = tmp8;
+  } else {
+    class E {
+      constructor() {
+        closure_5(true);
+      }
+    }
   }
   if (cResult[4] !== arg0) {
-    const fn4 = function j(id) {
-      let surrogates = "";
-      if (null == id.id) {
-        if (null != id.surrogates) {
-          surrogates = id.surrogates;
-        }
-        surrogates((arr) => {
-          const sum = arr.slice(0, ref.current.start) + closure_0;
-          return sum + arr.slice(ref.current.end);
-        });
-        const current = ref.current;
-        if (current != null) {
-          current.focus();
-        }
+    class E {
+      constructor() {
+        closure_5(true);
       }
-      if (null != id.uniqueName) {
-        let name;
-        if ("" !== id.uniqueName) {
-          name = id.uniqueName;
-        }
-        const _HermesInternal = HermesInternal;
-        surrogates = ":" + name + ": ";
-      }
-      name = id.name;
-    };
+    }
     cResult[4] = arg0;
-    cResult[5] = fn4;
-    tmp8 = fn4;
+    cResult[5] = tmp10;
   } else {
-    tmp8 = cResult[5];
+    class E {
+      constructor() {
+        closure_5(true);
+      }
+    }
   }
-  const onPressEmoji = tmp8;
+  onPressEmoji = tmp9;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class P {
+    class F {
       constructor() {
         const current = ref.current;
         if (current != null) {
@@ -102,10 +98,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, channel, appEn
         }
       }
     }
-    cResult[6] = P;
-    tmp9 = P;
+    cResult[6] = F;
+    tmp11 = F;
   } else {
-    class P {
+    class F {
       constructor() {
         const current = ref.current;
         if (current != null) {
@@ -114,9 +110,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, channel, appEn
       }
     }
   }
-  P = tmp9;
+  F = tmp11;
   if (cResult[7] === appEntryKey) {
-    class P {
+    class F {
       constructor() {
         const current = ref.current;
         if (current != null) {
@@ -125,35 +121,36 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, channel, appEn
       }
     }
   }
-  const fn5 = function q() {
-    let guildId;
-    const current = ref.current;
-    if (current != null) {
-      current.blur();
+  class R {
+    constructor() {
+      let guildId;
+      const current = ref.current;
+      if (current != null) {
+        current.blur();
+      }
+      const obj = { onPressEmoji, onClose: F, pickerIntention: EmojiIntention.CHAT, autoFocus: false, startExpanded: false, channel, appEntryKey, guildId };
+      guildId = undefined;
+      const openEmojiPickerActionSheet = openEmojiPickerActionSheet2.openEmojiPickerActionSheet;
+      openEmojiPickerActionSheet2;
+      const obj2 = channel;
+      if (channel != null) {
+        guildId = obj2.getGuildId();
+      }
+      const result = openEmojiPickerActionSheet(obj);
     }
-    const obj = { onPressEmoji, onClose: P, pickerIntention: EmojiIntention.CHAT, autoFocus: false, startExpanded: false, channel, appEntryKey, guildId };
-    guildId = undefined;
-    const openEmojiPickerActionSheet = openEmojiPickerActionSheet2.openEmojiPickerActionSheet;
-    openEmojiPickerActionSheet2;
-    const obj2 = channel;
-    if (channel != null) {
-      guildId = obj2.getGuildId();
-    }
-    const result = openEmojiPickerActionSheet(obj);
-  };
+  }
   cResult[7] = appEntryKey;
   cResult[8] = channel;
-  cResult[9] = tmp8;
-  cResult[10] = fn5;
-}) : ((arg0, channel, appEntryKey) => {
+  cResult[9] = tmp9;
+  cResult[10] = R;
+}) : (function useShareChatInputActions(arg0, channel, appEntryKey) {
   let closure_5;
   let ref;
   let tmp3;
   let closure_0 = arg0;
-  _slicedToArray = appEntryKey;
   ref = ref.useRef(null);
   let closure_4 = ref.useRef({ start: 0, end: 0 });
-  const tmp2 = _slicedToArray(ref.useState(false), 2);
+  const tmp2 = appEntryKey(ref.useState(false), 2);
   [tmp3, closure_5] = tmp2;
   const callback = ref.useCallback((nativeEvent) => {
     const obj = {};

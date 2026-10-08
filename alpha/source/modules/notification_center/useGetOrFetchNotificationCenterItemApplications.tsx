@@ -1,11 +1,11 @@
-// Module ID: 16397
-// Function ID: 16398
+// Module ID: 16657
+// Function ID: 16658
 // Name: useGetOrFetchNotificationCenterItemApplications
-// Dependencies: [19, 7138, 558, 576, 6670, 2]
+// Dependencies: [19, 6063, 558, 576, 6847, 2]
 
-// Module 16397 (useGetOrFetchNotificationCenterItemApplications)
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6670 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7138 */;
+// Module 16657 (useGetOrFetchNotificationCenterItemApplications)
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6063 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6847 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ let _require, applicationId;
 
 let items = [NotificationCenterItemsTypes.NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS, NotificationCenterItemsTypes.NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, NotificationCenterItemsTypes.NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS, NotificationCenterItemsTypes.NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED];
 let set = new Set(items);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arr) {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetchNotificationCenterItemsApplications(arr) {
   let closure_0;
   let tmp3;
   const obj = require("react");
@@ -43,8 +43,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arr) {
   } else {
     _require = cResult[1];
   }
-  return set(6670)(tmp3);
-}) : ((arg0) => {
+  return set(6847)(tmp3);
+}) : (function useGetOrFetchNotificationCenterItemsApplications(arg0) {
   let closure_0 = arg0;
   let items = [arg0];
   const memo = react.useMemo(() => {

@@ -1,26 +1,26 @@
-// Module ID: 16107
-// Function ID: 16108
+// Module ID: 16367
+// Function ID: 16368
 // Name: FavoritesGuildChannelSortModal
-// Dependencies: [19, 16108, 2055, 1085, 21, 558, 576, 16109, 1618, 1126, 16110, 16106, 6503, 2]
+// Dependencies: [19, 16368, 2067, 1085, 21, 558, 576, 16369, 1630, 1126, 16370, 16366, 6679, 2]
 
-// Module 16107 (FavoritesGuildChannelSortModal)
+// Module 16367 (FavoritesGuildChannelSortModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import openFavoritesGuildChannelSortModal from "openFavoritesGuildChannelSortModal" /* 16106 */;
-import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 16109 */;
-import GuildSettingsModalChannelsDefault from "GuildSettingsModalChannels" /* 16110 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import ChannelRecord from "ChannelRecord" /* 2067 */;
+import openFavoritesGuildChannelSortModal from "openFavoritesGuildChannelSortModal" /* 16366 */;
+import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 16369 */;
+import GuildSettingsModalChannelsDefault from "GuildSettingsModalChannels" /* 16370 */;
 import react from "react" /* 19 */;
-import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 16108 */;
+import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 16368 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ALL_CHANNEL_TYPES = ChannelRecord.ALL_CHANNEL_TYPES;
 const FAVORITES = Constants.FAVORITES;
 const jsx = Fragment.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGuildChannelSortModal() {
   let args;
   let bottom;
   let obj3;
@@ -81,7 +81,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = cResult[4];
   }
   if (cResult[5] !== tmp9) {
-    const tmp12 = jsx(tmp(6503).Navigator, { screens: tmp9, initialRouteName: "FAVORITES_GUILD_CHANNEL_SORT" });
+    const tmp12 = jsx(tmp(6679).Navigator, { screens: tmp9, initialRouteName: "FAVORITES_GUILD_CHANNEL_SORT" });
     cResult[5] = tmp9;
     cResult[6] = tmp12;
     tmp10 = tmp12;
@@ -89,7 +89,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp10 = cResult[6];
   }
   return tmp10;
-}) : (() => {
+}) : (function FavoritesGuildChannelSortModal() {
   let args;
   let guildId;
   const effect = react.useEffect(() => {
@@ -121,7 +121,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     intl = intl2.intl;
     return obj;
   }, items);
-  return jsx(bottom(6503).Navigator, { screens, initialRouteName: "FAVORITES_GUILD_CHANNEL_SORT" });
+  return jsx(bottom(6679).Navigator, { screens, initialRouteName: "FAVORITES_GUILD_CHANNEL_SORT" });
 });
 const result = size.fileFinishedImporting("modules/favorites/native/modal/FavoritesGuildChannelSortModal.tsx");
 

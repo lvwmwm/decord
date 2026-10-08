@@ -1,15 +1,16 @@
-// Module ID: 14477
-// Function ID: 14478
+// Module ID: 14707
+// Function ID: 14708
 // Name: useProfileFrameSections
-// Dependencies: [32, 19, 7066, 7081, 558, 576, 573, 7078, 1126, 13023, 2]
+// Dependencies: [32, 19, 7252, 7267, 558, 576, 573, 7264, 1126, 13301, 2]
 
-// Module 14477 (useProfileFrameSections)
+// Module 14707 (useProfileFrameSections)
 import react from "react" /* 19 */;
 import intl4 from "intl" /* 1126 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7078 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7264 */;
+import useRecommendedCollectiblesSectionsDefault from "useRecommendedCollectiblesSections" /* 13301 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7066 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7081 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7252 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7267 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +20,7 @@ const useMemo = react.useMemo;
 const Section = { PURCHASE: "purchase", PREMIUM_PURCHASE: "premium_purchase", PREVIEW: "preview" };
 let obj2 = { skuId: "None" };
 let obj3 = { skuId: "Shop" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileFrameSections() {
   let closure_1;
   let purchases;
   let stateFromStores;
@@ -29,6 +30,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp15;
   let tmp16;
   let tmp17;
+  let tmp18;
   let tmp5;
   let tmp6;
   let tmp9;
@@ -50,16 +52,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   stateFromStores = tmp2Result.useStateFromStores(tmp5, tmp6);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [CollectiblesCategoryStore];
-    class P {
-      constructor() {
-        const items = [, ];
-        ({ categories: arr[0], products: arr[1] } = CollectiblesCategoryStore);
-        return items;
-      }
-    }
+    const fn2 = function _() {
+      const items = [, ];
+      ({ categories: arr[0], products: arr[1] } = CollectiblesCategoryStore);
+      return items;
+    };
     cResult[2] = items1;
-    cResult[3] = P;
-    tmp10 = P;
+    cResult[3] = fn2;
+    tmp10 = fn2;
     tmp9 = items1;
   } else {
     tmp9 = cResult[2];
@@ -71,25 +71,21 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   _slicedToArray(tmp2Result3.useStateFromStoresArray(tmp9, tmp10), 2);
   if (cResult[4] === tmp13) {
     if (cResult[5] === tmp14) {
+      let tmp28;
       if (cResult[6] === stateFromStores) {
         tmp15 = cResult[7];
         tmp16 = cResult[8];
         tmp17 = cResult[9];
-        class P {
-          constructor() {
-            const items = [, ];
-            ({ categories: arr[0], products: arr[1] } = CollectiblesCategoryStore);
-            return items;
-          }
-        }
+        tmp18 = cResult[10];
       }
       const _Symbol2 = Symbol;
-      class P {
-        constructor() {
-          const items = [, ];
-          ({ categories: arr[0], products: arr[1] } = CollectiblesCategoryStore);
-          return items;
-        }
+      if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl2 = tmp2(1126).intl;
+        const stringResult = intl2.string(stateFromStores(1126).t["9eZ4aO"]);
+        cResult[15] = stringResult;
+        tmp28 = stringResult;
+      } else {
+        tmp28 = cResult[15];
       }
       if (cResult[16] === tmp17) {
         let tmp30;
@@ -105,37 +101,16 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
           const _Symbol3 = Symbol;
           let preview = tmp15.preview;
-          class P {
-            constructor() {
-              const items = [, ];
-              ({ categories: arr[0], products: arr[1] } = CollectiblesCategoryStore);
-              return items;
-            }
-          }
-          if (tmp32 === Symbol.for("react.memo_cache_sentinel")) {
-            const intl2 = tmp2(1126).intl;
-            const stringResult = intl2.string(stateFromStores(1126).t["1vbbee"]);
-            class P {
-              constructor() {
-                const items = [, ];
-                ({ categories: arr[0], products: arr[1] } = CollectiblesCategoryStore);
-                return items;
-              }
-            }
-            cResult[22] = stringResult;
-            tmp33 = stringResult;
+          if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
+            const intl3 = tmp2(1126).intl;
+            const stringResult1 = intl3.string(stateFromStores(1126).t["1vbbee"]);
+            cResult[22] = stringResult1;
+            tmp33 = stringResult1;
           } else {
             tmp33 = cResult[22];
           }
           if (cResult[23] !== tmp15.preview) {
-            obj2 = { section: obj.PREVIEW, items: null, height: 12, header: tmp33 };
-            class P {
-              constructor() {
-                const items = [, ];
-                ({ categories: arr[0], products: arr[1] } = CollectiblesCategoryStore);
-                return items;
-              }
-            }
+            obj2 = { section: obj.PREVIEW, items: preview, height: 12, header: tmp33 };
             cResult[23] = tmp15.preview;
             cResult[24] = obj2;
             tmp35 = obj2;
@@ -144,13 +119,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
           if (cResult[25] === tmp35) {
             if (cResult[26] === tmp30) {
-              class P {
-                constructor() {
-                  const items = [, ];
-                  ({ categories: arr[0], products: arr[1] } = CollectiblesCategoryStore);
-                  return items;
-                }
+              let tmp37;
+              if (cResult[27] === tmp31) {
+                tmp37 = cResult[28];
               }
+              return useRecommendedCollectiblesSectionsDefault(tmp37, obj.PREVIEW);
             }
           }
           const items2 = [tmp30, tmp31, tmp35];
@@ -159,28 +132,22 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           cResult[26] = tmp30;
           cResult[27] = tmp31;
           cResult[28] = found;
+          tmp37 = found;
         }
         obj3 = { section: obj.PREMIUM_PURCHASE, items: tmp15.premium_purchase, height: 12, header: tmp16 };
-        class P {
-          constructor() {
-            const items = [, ];
-            ({ categories: arr[0], products: arr[1] } = CollectiblesCategoryStore);
-            return items;
-          }
-        }
         cResult[19] = tmp15.premium_purchase;
         cResult[20] = tmp16;
         cResult[21] = obj3;
         tmp31 = obj3;
       }
-      const obj4 = { section: tmp17, items: tmp18, height: 12, header: tmp29 };
+      const obj4 = { section: tmp17, items: tmp18, height: 12, header: tmp28 };
       cResult[16] = tmp17;
       cResult[17] = tmp18;
       cResult[18] = obj4;
       tmp30 = obj4;
     }
   }
-  const tmp2Result4 = stateFromStores(7078);
+  const tmp2Result4 = stateFromStores(7264);
   const profileFrames = tmp2Result4.getProfileFrames(stateFromStores, tmp13);
   if (cResult[11] === tmp14) {
     let tmp19;
@@ -188,28 +155,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (cResult[12] === stateFromStores) {
       tmp19 = cResult[13];
     }
-    const obj5 = { purchase: [], premium_purchase: null, preview: [] };
-    class P {
-      constructor() {
-        const items = [, ];
-        ({ categories: arr[0], products: arr[1] } = CollectiblesCategoryStore);
-        return items;
-      }
-    }
+    const obj5 = { purchase: [], premium_purchase: [], preview: [] };
     const reduced = profileFrames.reduce(tmp19, obj5);
     const _Symbol = Symbol;
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
       const intl = tmp2(1126).intl;
-      const stringResult1 = intl.string(stateFromStores(1126).t.TiLCgw);
-      class P {
-        constructor() {
-          const items = [, ];
-          ({ categories: arr[0], products: arr[1] } = CollectiblesCategoryStore);
-          return items;
-        }
-      }
-      cResult[14] = stringResult1;
-      tmp21 = stringResult1;
+      const stringResult2 = intl.string(stateFromStores(1126).t.TiLCgw);
+      cResult[14] = stringResult2;
+      tmp21 = stringResult2;
     } else {
       tmp21 = cResult[14];
     }
@@ -220,65 +173,41 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[5] = tmp14;
     cResult[6] = stateFromStores;
     cResult[7] = reduced;
-    class A {
-      constructor(premium_purchase, skuId) {
-        let result;
-        const value = stateFromStores.get(skuId.skuId);
-        if (null != value) {
-          obj2 = CollectiblesUtils;
-          result = obj2.isPremiumCollectiblesPurchase(value);
-        } else {
-          const obj = CollectiblesUtils;
-          result = obj.isPremiumCollectiblesProduct(tmp14.get(skuId.skuId));
-        }
-        if (result) {
-          premium_purchase = premium_purchase.premium_purchase;
-          premium_purchase.push(skuId);
-        } else if (null != value) {
-          const purchase = premium_purchase.purchase;
-          purchase.push(skuId);
-        } else {
-          const preview = premium_purchase.preview;
-          preview.push(skuId);
-        }
-        return premium_purchase;
-      }
-    }
+    cResult[8] = tmp21;
     cResult[9] = PURCHASE;
     cResult[10] = items3;
     tmp16 = tmp21;
+    tmp18 = items3;
     tmp17 = PURCHASE;
     tmp15 = reduced;
   }
-  class A {
-    constructor(premium_purchase, skuId) {
-      let result;
-      const value = stateFromStores.get(skuId.skuId);
-      if (null != value) {
-        obj2 = CollectiblesUtils;
-        result = obj2.isPremiumCollectiblesPurchase(value);
-      } else {
-        const obj = CollectiblesUtils;
-        result = obj.isPremiumCollectiblesProduct(tmp14.get(skuId.skuId));
-      }
-      if (result) {
-        premium_purchase = premium_purchase.premium_purchase;
-        premium_purchase.push(skuId);
-      } else if (null != value) {
-        const purchase = premium_purchase.purchase;
-        purchase.push(skuId);
-      } else {
-        const preview = premium_purchase.preview;
-        preview.push(skuId);
-      }
-      return premium_purchase;
+  const fn3 = function y(premium_purchase, skuId) {
+    let result;
+    const value = stateFromStores.get(skuId.skuId);
+    if (null != value) {
+      obj2 = CollectiblesUtils;
+      result = obj2.isPremiumCollectiblesPurchase(value);
+    } else {
+      const obj = CollectiblesUtils;
+      result = obj.isPremiumCollectiblesProduct(tmp14.get(skuId.skuId));
     }
-  }
+    if (result) {
+      premium_purchase = premium_purchase.premium_purchase;
+      premium_purchase.push(skuId);
+    } else if (null != value) {
+      const purchase = premium_purchase.purchase;
+      purchase.push(skuId);
+    } else {
+      const preview = premium_purchase.preview;
+      preview.push(skuId);
+    }
+    return premium_purchase;
+  };
   cResult[11] = tmp14;
   cResult[12] = stateFromStores;
-  cResult[13] = A;
-  tmp19 = A;
-}) : (() => {
+  cResult[13] = fn3;
+  tmp19 = fn3;
+}) : (function useProfileFrameSections() {
   let closure_2;
   let first;
   let purchases;
@@ -336,7 +265,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     items1[2] = obj3;
     return items1.filter((items) => items.items.length > 0);
   }, items2);
-  return first(13023)(tmp5, obj.PREVIEW);
+  return first(13301)(tmp5, obj.PREVIEW);
 });
 let result = size.fileFinishedImporting("modules/collectibles/profile_frames/hooks/useProfileFrameSections.tsx");
 

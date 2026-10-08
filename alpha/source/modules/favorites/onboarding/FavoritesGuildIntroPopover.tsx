@@ -1,44 +1,44 @@
-// Module ID: 10061
-// Function ID: 10062
+// Module ID: 10306
+// Function ID: 10307
 // Name: FavoritesGuildIntroPopover
-// Dependencies: [32, 19, 2042, 2054, 1085, 570, 558, 576, 2036, 10049, 504, 10062, 6901, 2]
+// Dependencies: [32, 19, 2055, 2066, 1085, 570, 558, 576, 2048, 10294, 504, 10307, 7090, 2]
 // Exports: hasOfferedFavoritesGuildOnboarding, isFavoritesIntroPopoverShown, resetHasOfferedFavoritesGuildOnboarding
 
-// Module 10061 (FavoritesGuildIntroPopover)
+// Module 10306 (FavoritesGuildIntroPopover)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import FavoritesHooks from "FavoritesHooks" /* 10049 */;
-import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10062 */;
+import dismissible_content from "dismissible_content" /* 2048 */;
+import FavoritesHooks from "FavoritesHooks" /* 10294 */;
+import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10307 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DismissibleContentShownStateStore_mod from "DismissibleContentShownStateStore" /* 2042 */;
-import FavoriteStore from "FavoriteStore" /* 2054 */;
+import DismissibleContentShownStateStore_mod from "DismissibleContentShownStateStore" /* 2055 */;
+import FavoriteStore from "FavoriteStore" /* 2066 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, importDefault;
+let importDefault;
 
 let hasOwnProperty;
 let metroRequire;
 let tmp;
 const get_initialized = tmp(504);
+const useSelectedDismissibleContent2 = tmp(7090);
 let DismissibleContentShownStateStore = DismissibleContentShownStateStore_mod;
 ({ isContentShown: hasOwnProperty, useIsContentShown: metroRequire } = DismissibleContentShownStateStore);
 DismissibleContentShownStateStore = DismissibleContentShownStateStore_mod;
 const NOOP = Constants.NOOP;
-let closure_10 = module_570.create(() => ({ shouldShowPopover: false, markPopoverAsDismissed: NOOP }));
+const state = module_570.create(() => ({ shouldShowPopover: false, markPopoverAsDismissed: NOOP }));
 let c11 = false;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesIntroPopover() {
   let first;
   let tmp5;
   const obj = react2;
   const cResult = obj.c(5);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function s(shouldShowPopover) {
+    const fn = function o(shouldShowPopover) {
       return shouldShowPopover.shouldShowPopover;
     };
     cResult[0] = fn;
@@ -46,8 +46,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     first = cResult[0];
   }
-  const tmp4 = closure_10(first);
-  const tmp3 = closure_10;
+  const tmp4 = state(first);
+  const tmp3 = state;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const fn2 = function t(markPopoverAsDismissed) {
       return markPopoverAsDismissed.markPopoverAsDismissed;
@@ -70,26 +70,29 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = tmp4;
   cResult[4] = obj2;
   tmp7 = obj2;
-}) : (() => {
-  const obj = { shouldShowPopover: closure_10((shouldShowPopover) => shouldShowPopover.shouldShowPopover), markPopoverAsDismissed: closure_10((markPopoverAsDismissed) => markPopoverAsDismissed.markPopoverAsDismissed) };
+}) : (function useFavoritesIntroPopover() {
+  const obj = { shouldShowPopover: state((shouldShowPopover) => shouldShowPopover.shouldShowPopover), markPopoverAsDismissed: state((markPopoverAsDismissed) => markPopoverAsDismissed.markPopoverAsDismissed) };
   return obj;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFavoritesIntroPopoverShown() {
   const tmp = metroRequire(dismissible_content.DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO) && metroRequire(dismissible_content.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM);
   return tmp;
-}) : (() => {
+}) : (function useIsFavoritesIntroPopoverShown() {
   const tmp = metroRequire(dismissible_content.DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO) && metroRequire(dismissible_content.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM);
   return tmp;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGuildIntroPopover() {
   let hasAccess;
   let isFreemium;
-  let markPopoverAsDismissed;
+  let require;
   let shouldShowPopover;
-  let state;
   let tmp10;
+  let tmp15;
+  let tmp16;
+  let tmp22;
+  let tmp23;
   let tmp5;
   let tmp6;
   let tmp = require;
@@ -114,41 +117,144 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   const tmp9 = useCanShowFavoritesGuildOnboardingDefault();
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    class I {
-      constructor(postConnectionOpen) {
-        return postConnectionOpen.postConnectionOpen;
-      }
-    }
-    cResult[2] = I;
-    tmp10 = I;
+    const fn2 = function c(postConnectionOpen) {
+      return postConnectionOpen.postConnectionOpen;
+    };
+    cResult[2] = fn2;
+    tmp10 = fn2;
   } else {
-    class I {
-      constructor(postConnectionOpen) {
-        return postConnectionOpen.postConnectionOpen;
-      }
-    }
+    tmp10 = cResult[2];
   }
-  DismissibleContentShownStateStore(tmp10);
+  const tmp11 = DismissibleContentShownStateStore(tmp10);
   if (cResult[3] === tmp9) {
-    class I {
-      constructor(postConnectionOpen) {
-        return postConnectionOpen.postConnectionOpen;
+    if (cResult[4] === hasAccess) {
+      if (cResult[5] === isFreemium) {
+        if (cResult[6] === stateFromStores) {
+          let tmp17;
+          let tmp20;
+          let tmp19;
+          const tmpResult3 = useSelectedDismissibleContent2;
+          [tmp15, tmp16] = tmpResult3.useSelectedDismissibleContent(tmp12);
+          require = tmp16;
+          _slicedToArray(tmpResult3.useSelectedDismissibleContent(tmp12), 2);
+          const tmp13 = _slicedToArray;
+          if (cResult[9] !== tmp15) {
+            let items2;
+            if (tmp15 === dismissible_content.DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO) {
+              const items1 = [dismissible_content.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM];
+              items2 = items1;
+            } else {
+              items2 = [];
+            }
+            cResult[9] = tmp15;
+            cResult[10] = items2;
+            tmp17 = items2;
+          } else {
+            tmp17 = cResult[10];
+          }
+          const tmpResult4 = useSelectedDismissibleContent2;
+          const tmp18 = tmp13(tmpResult4.useSelectedDismissibleContent(tmp17, undefined, true), 1)[0] === dismissible_content.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
+          importDefault = tmp18;
+          if (cResult[11] !== tmp18) {
+            class V {
+              constructor() {
+                const tmp = shouldShowPopover;
+                if (tmp) {
+                  c11 = true;
+                }
+              }
+            }
+            const items3 = [tmp18];
+            cResult[11] = tmp18;
+            cResult[12] = V;
+            cResult[13] = items3;
+            tmp20 = items3;
+            tmp19 = V;
+          } else {
+            class V {
+              constructor() {
+                const tmp = shouldShowPopover;
+                if (tmp) {
+                  c11 = true;
+                }
+              }
+            }
+            tmp20 = cResult[13];
+          }
+          const effect = react.useEffect(tmp19, tmp20);
+          if (cResult[14] === tmp16) {
+            let tmp26;
+            let tmp25;
+            class V {
+              constructor() {
+                const tmp = shouldShowPopover;
+                if (tmp) {
+                  c11 = true;
+                }
+              }
+            }
+            const layoutEffect = obj6.useLayoutEffect(tmp22, tmp23);
+            const _Symbol = Symbol;
+            if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
+              class M {
+                constructor() {
+                  return () => {
+                    const obj = { shouldShowPopover: false, markPopoverAsDismissed };
+                    return state.setState(obj);
+                  };
+                }
+              }
+              const items4 = [];
+              cResult[18] = items4;
+              cResult[19] = M;
+              tmp26 = M;
+              tmp25 = items4;
+            } else {
+              class M {
+                constructor() {
+                  return () => {
+                    const obj = { shouldShowPopover: false, markPopoverAsDismissed };
+                    return state.setState(obj);
+                  };
+                }
+              }
+              tmp26 = cResult[19];
+            }
+            const layoutEffect1 = obj6.useLayoutEffect(tmp26, tmp25);
+            return null;
+          }
+          class C {
+            constructor() {
+              const obj = { shouldShowPopover, markPopoverAsDismissed: require };
+              state.setState(obj);
+            }
+          }
+          const items5 = [tmp18, tmp16];
+          cResult[14] = tmp16;
+          cResult[15] = tmp18;
+          cResult[16] = C;
+          cResult[17] = items5;
+          tmp22 = C;
+          tmp23 = items5;
+        }
       }
     }
   }
   if (hasAccess) {
-    class I {
-      constructor(postConnectionOpen) {
-        return postConnectionOpen.postConnectionOpen;
+    class M {
+      constructor() {
+        return () => {
+          const obj = { shouldShowPopover: false, markPopoverAsDismissed };
+          return state.setState(obj);
+        };
       }
     }
   }
-}) : (() => {
+}) : (function FavoritesGuildIntroPopover() {
+  let _require;
   let hasAccess;
   let isFreemium;
-  let markPopoverAsDismissed;
   let shouldShowPopover;
-  let state;
   let tmp = _require;
   let obj = require("FavoritesHooks");
   const favoritesAccess = obj.useFavoritesAccess("FavoritesGuildIntroPopover");
@@ -166,21 +272,21 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
           let items1;
           let items3;
           if (tmp6) {
-            items1 = [tmp(2036).DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO];
+            items1 = [tmp(2048).DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO];
           }
           const tmp10 = _slicedToArray(tmp8(items1), 2);
           _require = tmp12;
           const first = tmp10[0];
-          const useSelectedDismissibleContent = tmp(6901).useSelectedDismissibleContent;
-          tmp(6901);
+          const useSelectedDismissibleContent = tmp(7090).useSelectedDismissibleContent;
+          tmp(7090);
           const tmp9 = _slicedToArray;
-          if (first === tmp(2036).DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO) {
-            const items2 = [tmp(2036).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM];
+          if (first === tmp(2048).DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO) {
+            const items2 = [tmp(2048).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM];
             items3 = items2;
           } else {
             items3 = [];
           }
-          const tmp14 = tmp9(useSelectedDismissibleContent(items3, undefined, true), 1)[0] === tmp(2036).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
+          const tmp14 = tmp9(useSelectedDismissibleContent(items3, undefined, true), 1)[0] === tmp(2048).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
           importDefault = tmp14;
           const items4 = [tmp14];
           const effect = react.useEffect(() => {

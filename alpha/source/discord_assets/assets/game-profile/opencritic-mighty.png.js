@@ -1,8 +1,8 @@
-// Module ID: 8412
-// Function ID: 8413
+// Module ID: 8909
+// Function ID: 8910
 // Dependencies: [2]
 
-// Module 8412
+// Module 8909
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/game-profile/opencritic-mighty.png.js");

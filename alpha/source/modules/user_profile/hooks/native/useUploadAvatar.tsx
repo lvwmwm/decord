@@ -1,19 +1,19 @@
-// Module ID: 14452
-// Function ID: 14453
+// Module ID: 14680
+// Function ID: 14681
 // Name: useUploadAvatar
-// Dependencies: [5, 19, 1377, 1085, 1379, 558, 576, 573, 8848, 4860, 7287, 4534, 14435, 7851, 7849, 7846, 7848, 2]
+// Dependencies: [5, 19, 1389, 1085, 1391, 558, 576, 573, 9208, 5054, 7741, 4726, 14660, 8269, 8267, 8264, 8266, 2]
 
-// Module 14452 (useUploadAvatar)
+// Module 14680 (useUploadAvatar)
 import react from "react" /* 19 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 8848 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9208 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c3, dependencyMap, guildId;
+let c3, dependencyMap;
 
 let c10;
 let c9;
@@ -28,13 +28,14 @@ function isGIF(arg0) {
 let useCallback = react.useCallback;
 ({ AnalyticsPages: metroRequire, UPLOAD_MEDIUM_SIZE: metroImportDefault, Base64GIFPrefix: metroImportAll, AnalyticsSections: c9, UpsellTypes: c10 } = Constants);
 const PremiumUpsellTypes = PremiumConstants.PremiumUpsellTypes;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUploadAvatar(guildId) {
   let analyticsLocations;
   let closure_2;
   let currentUser;
   let isTryItOut;
   let tmp5;
   let tmp6;
+  let tmp9;
   const tmp = guildId;
   let obj = guildId(576);
   const cResult = obj.c(9);
@@ -58,48 +59,35 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   if (cResult[2] !== analyticsLocations) {
-    class E {
-      constructor() {
-        let obj3;
-        let obj4;
-        const obj2 = { initialUpsellKey: constants2.ANIMATED_AVATAR, analyticsLocation: obj3, analyticsProperties: obj4, analyticsLocations };
-        obj3 = { page: metroRequire.USER_SETTINGS, section: constants.SETTINGS_OVERVIEW };
-        obj4 = { type: PremiumUpsellTypes.ANIMATED_USER_AVATAR_MODAL };
-        const obj = PremiumUpsellUtilsDefault;
-        const result = obj.handleShowUpsellAlert(obj2);
-      }
-    }
+    const fn = function _() {
+      let obj3;
+      let obj4;
+      const obj2 = { initialUpsellKey: constants2.ANIMATED_AVATAR, analyticsLocation: obj3, analyticsProperties: obj4, analyticsLocations };
+      obj3 = { page: metroRequire.USER_SETTINGS, section: constants.SETTINGS_OVERVIEW };
+      obj4 = { type: PremiumUpsellTypes.ANIMATED_USER_AVATAR_MODAL };
+      const obj = PremiumUpsellUtilsDefault;
+      const result = obj.handleShowUpsellAlert(obj2);
+    };
     cResult[2] = analyticsLocations;
     class A {
       constructor() {
         return currentUser.getCurrentUser();
       }
     }
-    cResult[3] = E;
+    cResult[3] = fn;
+    tmp9 = fn;
   } else {
-    class E {
-      constructor() {
-        let obj3;
-        let obj4;
-        const obj2 = { initialUpsellKey: constants2.ANIMATED_AVATAR, analyticsLocation: obj3, analyticsProperties: obj4, analyticsLocations };
-        obj3 = { page: metroRequire.USER_SETTINGS, section: constants.SETTINGS_OVERVIEW };
-        obj4 = { type: PremiumUpsellTypes.ANIMATED_USER_AVATAR_MODAL };
-        const obj = PremiumUpsellUtilsDefault;
-        const result = obj.handleShowUpsellAlert(obj2);
-      }
-    }
+    tmp9 = cResult[3];
   }
-  E = tmp9;
+  let closure_4 = tmp9;
   if (cResult[4] === guildId) {
-    class E {
-      constructor() {
-        let obj3;
-        let obj4;
-        const obj2 = { initialUpsellKey: constants2.ANIMATED_AVATAR, analyticsLocation: obj3, analyticsProperties: obj4, analyticsLocations };
-        obj3 = { page: metroRequire.USER_SETTINGS, section: constants.SETTINGS_OVERVIEW };
-        obj4 = { type: PremiumUpsellTypes.ANIMATED_USER_AVATAR_MODAL };
-        const obj = PremiumUpsellUtilsDefault;
-        const result = obj.handleShowUpsellAlert(obj2);
+    if (cResult[5] === (undefined !== isTryItOut && isTryItOut)) {
+      if (cResult[6] === tmp9) {
+        let tmp10;
+        if (cResult[7] === stateFromStores) {
+          tmp10 = cResult[8];
+        }
+        return tmp10;
       }
     }
   }
@@ -196,15 +184,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
     }
   });
-  const fn = function() {
+  function t5() {
     return closure_0(...arguments);
-  };
+  }
   cResult[4] = guildId;
   cResult[5] = undefined !== isTryItOut && isTryItOut;
   cResult[6] = tmp9;
   cResult[7] = stateFromStores;
-  cResult[8] = fn;
-}) : ((guildId) => {
+  cResult[8] = t5;
+  tmp10 = t5;
+}) : (function useUploadAvatar(guildId) {
   let closure_4;
   let currentUser;
   guildId = guildId.guildId;

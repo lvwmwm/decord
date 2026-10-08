@@ -1,25 +1,25 @@
-// Module ID: 14683
-// Function ID: 14684
+// Module ID: 14944
+// Function ID: 14945
 // Name: HarvesterUtils
-// Dependencies: [32, 19, 1377, 13539, 14684, 558, 576, 504, 2]
+// Dependencies: [32, 19, 1389, 13836, 14945, 558, 576, 504, 2]
 // Exports: harvestDisabled
 
-// Module 14683 (HarvesterUtils)
+// Module 14944 (HarvesterUtils)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import HarvesterConstants from "HarvesterConstants" /* 14684 */;
+import HarvesterConstants from "HarvesterConstants" /* 14945 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
-import DataHarvestStore from "DataHarvestStore" /* 13539 */;
+import UserStore from "UserStore" /* 1389 */;
+import DataHarvestStore from "DataHarvestStore" /* 13836 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let clearTimeoutResult, dependencyMap;
+let dependencyMap;
 
 let _slicedToArray = _slicedToArray_mod;
 const REQUEST_DATA_LIMIT_MS = HarvesterConstants.REQUEST_DATA_LIMIT_MS;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequestHarvestStatus() {
   let closure_1;
   let currentUser;
   let harvestType;
@@ -47,7 +47,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [DataHarvestStore];
-    const fn2 = function v() {
+    const fn2 = function _() {
       return harvestType.harvestType;
     };
     cResult[2] = items1;
@@ -79,7 +79,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   if (cResult[5] === stateFromStores1) {
     let tmp21;
     let tmp20;
-    let tmp24;
+    let tmp25;
     class S {
       constructor() {
         return Date.now();
@@ -88,141 +88,69 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
     dependencyMap = tmp15;
     _slicedToArray = obj4.useRef(null);
     if (cResult[8] !== tmp15) {
-      class E {
+      class S {
         constructor() {
-          diff = closure_1 - Date.now();
-          if (diff > 0) {
-            _setTimeout = setTimeout;
-            _clearTimeout = clearTimeout;
-            tmp3 = closure_2;
-            timerId = setTimeout(() => closure_1_0(Date.now()), diff);
-            clearTimeoutResult = clearTimeout(closure_2.current);
-            closure_2.current = timerId;
-          }
-          return () => clearTimeout(ref.current);
+          return Date.now();
         }
       }
       const items2 = [tmp15];
       cResult[8] = tmp15;
-      cResult[9] = E;
+      cResult[9] = tmp22;
       cResult[10] = items2;
       tmp21 = items2;
-      tmp20 = E;
+      tmp20 = tmp22;
     } else {
-      class E {
+      class S {
         constructor() {
-          diff = closure_1 - Date.now();
-          if (diff > 0) {
-            _setTimeout = setTimeout;
-            _clearTimeout = clearTimeout;
-            tmp3 = closure_2;
-            timerId = setTimeout(() => closure_1_0(Date.now()), diff);
-            clearTimeoutResult = clearTimeout(closure_2.current);
-            closure_2.current = timerId;
-          }
-          return () => clearTimeout(ref.current);
+          return Date.now();
         }
       }
       tmp21 = cResult[10];
     }
     const effect = obj4.useEffect(tmp20, tmp21);
     if (stateFromStores != null) {
-      class E {
+      class S {
         constructor() {
-          diff = closure_1 - Date.now();
-          if (diff > 0) {
-            _setTimeout = setTimeout;
-            _clearTimeout = clearTimeout;
-            tmp3 = closure_2;
-            timerId = setTimeout(() => closure_1_0(Date.now()), diff);
-            clearTimeoutResult = clearTimeout(closure_2.current);
-            closure_2.current = timerId;
-          }
-          return () => clearTimeout(ref.current);
+          return Date.now();
         }
       }
     }
     if (undefined) {
-      class E {
+      class S {
         constructor() {
-          diff = closure_1 - Date.now();
-          if (diff > 0) {
-            _setTimeout = setTimeout;
-            _clearTimeout = clearTimeout;
-            tmp3 = closure_2;
-            timerId = setTimeout(() => closure_1_0(Date.now()), diff);
-            clearTimeoutResult = clearTimeout(closure_2.current);
-            closure_2.current = timerId;
-          }
-          return () => clearTimeout(ref.current);
+          return Date.now();
         }
       }
-      tmp24 = tmp26;
+      tmp25 = tmp27;
     } else {
-      class E {
+      class S {
         constructor() {
-          diff = closure_1 - Date.now();
-          if (diff > 0) {
-            _setTimeout = setTimeout;
-            _clearTimeout = clearTimeout;
-            tmp3 = closure_2;
-            timerId = setTimeout(() => closure_1_0(Date.now()), diff);
-            clearTimeoutResult = clearTimeout(closure_2.current);
-            closure_2.current = timerId;
-          }
-          return () => clearTimeout(ref.current);
+          return Date.now();
         }
       }
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        class E {
+        class S {
           constructor() {
-            diff = closure_1 - Date.now();
-            if (diff > 0) {
-              _setTimeout = setTimeout;
-              _clearTimeout = clearTimeout;
-              tmp3 = closure_2;
-              timerId = setTimeout(() => closure_1_0(Date.now()), diff);
-              clearTimeoutResult = clearTimeout(closure_2.current);
-              closure_2.current = timerId;
-            }
-            return () => clearTimeout(ref.current);
+            return Date.now();
           }
         }
-        cResult[11] = tmp25;
-        tmp24 = tmp25;
+        cResult[11] = tmp26;
+        tmp25 = tmp26;
       } else {
-        class E {
+        class S {
           constructor() {
-            diff = closure_1 - Date.now();
-            if (diff > 0) {
-              _setTimeout = setTimeout;
-              _clearTimeout = clearTimeout;
-              tmp3 = closure_2;
-              timerId = setTimeout(() => closure_1_0(Date.now()), diff);
-              clearTimeoutResult = clearTimeout(closure_2.current);
-              closure_2.current = timerId;
-            }
-            return () => clearTimeout(ref.current);
+            return Date.now();
           }
         }
       }
     }
-    return tmp24;
+    return tmp25;
   }
   let sum = tmp14;
   if (null != stateFromStores1) {
-    class E {
+    class S {
       constructor() {
-        diff = closure_1 - Date.now();
-        if (diff > 0) {
-          _setTimeout = setTimeout;
-          _clearTimeout = clearTimeout;
-          tmp3 = closure_2;
-          timerId = setTimeout(() => closure_1_0(Date.now()), diff);
-          clearTimeoutResult = clearTimeout(closure_2.current);
-          closure_2.current = timerId;
-        }
-        return () => clearTimeout(ref.current);
+        return Date.now();
       }
     }
     const self = this;
@@ -233,23 +161,23 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   cResult[5] = stateFromStores1;
   cResult[6] = tmp14;
   cResult[7] = sum;
-}) : (function() {
+}) : (function useRequestHarvestStatus() {
   let currentUser;
   let date1;
   let harvestType;
   let obj6;
   let ref;
   let tmp3;
-  const f117757 = () => Date.now();
+  const f118843 = () => Date.now();
   const items = [UserStore];
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   const items1 = [DataHarvestStore];
   const obj3 = get_initialized;
   const stateFromStores1 = obj3.useStateFromStores(items1, () => harvestType.harvestType);
-  [tmp3, require] = react.useState(f117757);
+  [tmp3, require] = react.useState(f118843);
   let sum = tmp3;
-  _slicedToArray(react.useState(f117757), 2);
+  _slicedToArray(react.useState(f118843), 2);
   if (null != stateFromStores1) {
     const _Date = Date;
     const self = this;

@@ -1,13 +1,13 @@
-// Module ID: 10942
-// Function ID: 10943
+// Module ID: 10593
+// Function ID: 10594
 // Name: AppStoreOverlayMediaSize
-// Dependencies: [32, 19, 17, 2022, 1402, 558, 576, 2]
+// Dependencies: [32, 19, 17, 2034, 1414, 558, 576, 2]
 // Exports: getAppStoreOverlayCarouselImageUrl, getMediaSizeFromLoadEvent, getMediaTileSize
 
-// Module 10942 (AppStoreOverlayMediaSize)
+// Module 10593 (AppStoreOverlayMediaSize)
 import react_native from "react-native" /* 17 */;
-import AvatarUtils from "AvatarUtils" /* 1402 */;
-import ImageProxyUtils from "ImageProxyUtils" /* 2022 */;
+import AvatarUtils from "AvatarUtils" /* 1414 */;
+import ImageProxyUtils from "ImageProxyUtils" /* 2034 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -19,7 +19,7 @@ const Image = react_native.Image;
 let closure_5 = { width: 166, height: 289 };
 let closure_6 = { width: 289, height: 166 };
 let map = new Map();
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppStoreOverlayMediaSizes(arg0) {
   let first;
   let first1;
   let tmp4;
@@ -127,7 +127,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp9 = cResult[5];
   }
   return tmp9;
-}) : ((arg0) => {
+}) : (function useAppStoreOverlayMediaSizes(arg0) {
   let tmp3;
   let first = _slicedToArray(react.useState(arg0), 1)[0];
   [tmp3, dependencyMap] = _slicedToArray(react.useState(map), 2);

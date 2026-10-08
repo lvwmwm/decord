@@ -1,54 +1,52 @@
-// Module ID: 9427
-// Function ID: 9428
+// Module ID: 9091
+// Function ID: 9092
 // Name: GuildProfileCTA
-// Dependencies: [19, 4877, 1085, 1095, 21, 558, 576, 9428, 9430, 4860, 6855, 8064, 9434, 9443, 4708, 5924, 5947, 5967, 6854, 6730, 1126, 5601, 2]
+// Dependencies: [19, 5071, 1085, 1095, 21, 558, 576, 9092, 9094, 5054, 7043, 8472, 9098, 9104, 4902, 6107, 6130, 6149, 7042, 6906, 1126, 5375, 2]
 
-// Module 9427 (GuildProfileCTA)
+// Module 9091 (GuildProfileCTA)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4708 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 5924 */;
-import GuildProfileTypes from "GuildProfileTypes" /* 5947 */;
-import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6730 */;
-import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 6854 */;
-import transitionToGuild from "transitionToGuild" /* 6855 */;
-import handleNSFWGuildInvite from "handleNSFWGuildInvite" /* 9434 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4902 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6107 */;
+import GuildProfileTypes from "GuildProfileTypes" /* 6130 */;
+import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6906 */;
+import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 7042 */;
+import transitionToGuild from "transitionToGuild" /* 7043 */;
+import handleNSFWGuildInvite from "handleNSFWGuildInvite" /* 9098 */;
 import react_mod from "react" /* 19 */;
-import InviteStore_mod from "InviteStore" /* 4877 */;
+import InviteStore_mod from "InviteStore" /* 5071 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let profile;
+let hideActionSheetResult, obj1, obj6, str, tmp6, tmp8;
 
 let tmp4;
-const MemberVerificationModalActionCreators = tmp4(5967);
+const MemberVerificationModalActionCreators = tmp4(6149);
 let react = react_mod;
 let InviteStore = InviteStore_mod;
 let AnalyticsObjects = Constants.AnalyticsObjects;
 const constants = UserSettingsConstants.ProfileCustomizationScrollPositions;
 const jsx = Fragment.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfileCTA(profile) {
+  let applicationStatus;
   let closure_4;
   let context;
   let first;
   let guildId;
   let inviteKey;
-  let obj3;
   let tmp9;
   let validInviteKey;
-  const tmp = profile;
-  let tmp2 = validInviteKey;
+  const tmp = validInviteKey;
   let obj = profile(validInviteKey[6]);
   const cResult = obj.c(41);
   profile = profile.profile;
-  let tmp4 = guildId;
+  let tmp3 = guildId;
   ({ context, inviteKey } = profile);
-  const tmp5 = guildId(validInviteKey[7])(profile, context, inviteKey);
-  guildId = tmp5.guildId;
-  validInviteKey = tmp5.validInviteKey;
-  const ctaType = tmp5.ctaType;
+  let tmp4 = guildId(validInviteKey[7])(profile, context, inviteKey);
+  guildId = tmp4.guildId;
+  validInviteKey = tmp4.validInviteKey;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { scrollPosition: constants.GUILD_TAG };
     cResult[0] = obj2;
@@ -56,212 +54,163 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
   } else {
     first = cResult[0];
   }
-  const tmp8 = tmp4(tmp2[8])(first);
-  let closure_3 = tmp8;
+  const tmp7 = tmp3(tmp[8])(first);
+  let closure_3 = tmp7;
   if (cResult[1] !== guildId) {
-    const fn = function _() {
-      const obj = ActionSheetActionCreatorsDefault;
-      obj.hideActionSheet("GuildProfileActionSheet:" + guildId);
-      const obj2 = transitionToGuild;
-      obj2.transitionToGuild(guildId);
-    };
+    class I {
+      constructor() {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet("GuildProfileActionSheet:" + guildId);
+        const obj2 = transitionToGuild;
+        obj2.transitionToGuild(guildId);
+      }
+    }
     cResult[1] = guildId;
-    cResult[2] = fn;
-    tmp9 = fn;
+    cResult[2] = I;
   } else {
-    tmp9 = cResult[2];
+    class I {
+      constructor() {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet("GuildProfileActionSheet:" + guildId);
+        const obj2 = transitionToGuild;
+        obj2.transitionToGuild(guildId);
+      }
+    }
   }
   if (cResult[3] === guildId) {
-    if (cResult[6] === guildId) {
-      let tmp11;
-      if (cResult[7] === validInviteKey) {
-        tmp11 = cResult[8];
+    class I {
+      constructor() {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet("GuildProfileActionSheet:" + guildId);
+        const obj2 = transitionToGuild;
+        obj2.transitionToGuild(guildId);
       }
-      InviteStore = tmp11;
-      const tmp12 = tmp4(tmp2[13])(guildId);
-      AnalyticsObjects = tmp12;
+    }
+    if (cResult[6] === guildId) {
+      class I {
+        constructor() {
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet("GuildProfileActionSheet:" + guildId);
+          const obj2 = transitionToGuild;
+          obj2.transitionToGuild(guildId);
+        }
+      }
+      InviteStore = tmp9;
+      class C {
+        constructor() {
+          tmp = validInviteKey;
+          if (null != validInviteKey) {
+            tmp3 = closure_1;
+            tmp4 = closure_2;
+            obj3 = closure_1(closure_2[9]);
+            tmp5 = guildId;
+            tmp6 = globalThis;
+            _HermesInternal = HermesInternal;
+            str = "GuildProfileActionSheet:";
+            hideActionSheetResult = obj3.hideActionSheet("GuildProfileActionSheet:" + guildId);
+            closure_0 = tmp;
+            tmp8 = closure_0;
+            obj4 = closure_0(closure_2[12]);
+            tmp9 = closure_4;
+            obj1 = { onConfirm: null };
+            obj1.onConfirm = function join() {
+              const obj = guildId(validInviteKey[11]);
+              const obj2 = { inviteKey, context: { location: "guild_profile" } };
+              const result = obj.acceptInviteAndTransitionToInviteChannel(obj2);
+            };
+            if (!obj4.handleNSFWGuildInvite(closure_4.getInvite(tmp), obj1)) {
+              tmp3Result = tmp3(tmp4[11]);
+              obj6 = { inviteKey: null, context: null };
+              obj6.inviteKey = tmp;
+              obj6.context = { location: "guild_profile" };
+              result = tmp3Result.acceptInviteAndTransitionToInviteChannel(obj6);
+            }
+          }
+          return;
+        }
+      }
+      AnalyticsObjects = tmp10;
       if (cResult[9] === guildId) {
-        let applicationStatus;
-        if (tmp12 != null) {
-          applicationStatus = tmp12.applicationStatus;
+        class I {
+          constructor() {
+            const obj = ActionSheetActionCreatorsDefault;
+            obj.hideActionSheet("GuildProfileActionSheet:" + guildId);
+            const obj2 = transitionToGuild;
+            obj2.transitionToGuild(guildId);
+          }
+        }
+        class C {
+          constructor() {
+            tmp = validInviteKey;
+            if (null != validInviteKey) {
+              tmp3 = closure_1;
+              tmp4 = closure_2;
+              obj3 = closure_1(closure_2[9]);
+              tmp5 = guildId;
+              tmp6 = globalThis;
+              _HermesInternal = HermesInternal;
+              str = "GuildProfileActionSheet:";
+              hideActionSheetResult = obj3.hideActionSheet("GuildProfileActionSheet:" + guildId);
+              closure_0 = tmp;
+              tmp8 = closure_0;
+              obj4 = closure_0(closure_2[12]);
+              tmp9 = closure_4;
+              obj1 = { onConfirm: null };
+              obj1.onConfirm = function join() {
+                const obj = guildId(validInviteKey[11]);
+                const obj2 = { inviteKey, context: { location: "guild_profile" } };
+                const result = obj.acceptInviteAndTransitionToInviteChannel(obj2);
+              };
+              if (!obj4.handleNSFWGuildInvite(closure_4.getInvite(tmp), obj1)) {
+                tmp3Result = tmp3(tmp4[11]);
+                obj6 = { inviteKey: null, context: null };
+                obj6.inviteKey = tmp;
+                obj6.context = { location: "guild_profile" };
+                result = tmp3Result.acceptInviteAndTransitionToInviteChannel(obj6);
+              }
+            }
+            return;
+          }
+        }
+        if (tmp10 != null) {
+          class I {
+            constructor() {
+              const obj = ActionSheetActionCreatorsDefault;
+              obj.hideActionSheet("GuildProfileActionSheet:" + guildId);
+              const obj2 = transitionToGuild;
+              obj2.transitionToGuild(guildId);
+            }
+          }
+        }
+        if (tmp11 === undefined) {
+          class I {
+            constructor() {
+              const obj = ActionSheetActionCreatorsDefault;
+              obj.hideActionSheet("GuildProfileActionSheet:" + guildId);
+              const obj2 = transitionToGuild;
+              obj2.transitionToGuild(guildId);
+            }
+          }
         }
         if (cResult[12] === guildId) {
-          if (cResult[13] === tmp11) {
-            if (cResult[14] === profile.visibility) {
-              if (cResult[17] !== guildId) {
-                class L {
-                  constructor() {
-                    const obj = ActionSheetActionCreatorsDefault;
-                    obj.hideActionSheet("GuildProfileActionSheet:" + guildId);
-                    const obj2 = GuildDiscoveryUtils;
-                    const obj3 = { object: AnalyticsObjects.GUILD_PROFILE };
-                    const startLurkingResult = obj2.startLurking(guildId, obj3);
-                    startLurkingResult.catch(JoinGuildRefusedError.ignoreJoinGuildRefused);
-                  }
-                }
-                cResult[17] = guildId;
-                cResult[18] = L;
-              } else {
-                class L {
-                  constructor() {
-                    const obj = ActionSheetActionCreatorsDefault;
-                    obj.hideActionSheet("GuildProfileActionSheet:" + guildId);
-                    const obj2 = GuildDiscoveryUtils;
-                    const obj3 = { object: AnalyticsObjects.GUILD_PROFILE };
-                    const startLurkingResult = obj2.startLurking(guildId, obj3);
-                    startLurkingResult.catch(JoinGuildRefusedError.ignoreJoinGuildRefused);
-                  }
-                }
-              }
-              const _Symbol = Symbol;
-              if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-                class L {
-                  constructor() {
-                    const obj = ActionSheetActionCreatorsDefault;
-                    obj.hideActionSheet("GuildProfileActionSheet:" + guildId);
-                    const obj2 = GuildDiscoveryUtils;
-                    const obj3 = { object: AnalyticsObjects.GUILD_PROFILE };
-                    const startLurkingResult = obj2.startLurking(guildId, obj3);
-                    startLurkingResult.catch(JoinGuildRefusedError.ignoreJoinGuildRefused);
-                  }
-                }
-                cResult[19] = tmp22;
-              } else {
-                class L {
-                  constructor() {
-                    const obj = ActionSheetActionCreatorsDefault;
-                    obj.hideActionSheet("GuildProfileActionSheet:" + guildId);
-                    const obj2 = GuildDiscoveryUtils;
-                    const obj3 = { object: AnalyticsObjects.GUILD_PROFILE };
-                    const startLurkingResult = obj2.startLurking(guildId, obj3);
-                    startLurkingResult.catch(JoinGuildRefusedError.ignoreJoinGuildRefused);
-                  }
-                }
-              }
-              if (tmp(tmp2[7]).CTATypes.IS_MEMBER === ctaType) {
-                let tmp23;
-                let tmp25;
-                class L {
-                  constructor() {
-                    const obj = ActionSheetActionCreatorsDefault;
-                    obj.hideActionSheet("GuildProfileActionSheet:" + guildId);
-                    const obj2 = GuildDiscoveryUtils;
-                    const obj3 = { object: AnalyticsObjects.GUILD_PROFILE };
-                    const startLurkingResult = obj2.startLurking(guildId, obj3);
-                    startLurkingResult.catch(JoinGuildRefusedError.ignoreJoinGuildRefused);
-                  }
-                }
-                if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-                  class L {
-                    constructor() {
-                      const obj = ActionSheetActionCreatorsDefault;
-                      obj.hideActionSheet("GuildProfileActionSheet:" + guildId);
-                      const obj2 = GuildDiscoveryUtils;
-                      const obj3 = { object: AnalyticsObjects.GUILD_PROFILE };
-                      const startLurkingResult = obj2.startLurking(guildId, obj3);
-                      startLurkingResult.catch(JoinGuildRefusedError.ignoreJoinGuildRefused);
-                    }
-                  }
-                  const stringResult = obj3.string(tmp(tmp2[20]).t.KLOhbO);
-                  cResult[20] = stringResult;
-                  tmp23 = stringResult;
-                } else {
-                  class L {
-                    constructor() {
-                      const obj = ActionSheetActionCreatorsDefault;
-                      obj.hideActionSheet("GuildProfileActionSheet:" + guildId);
-                      const obj2 = GuildDiscoveryUtils;
-                      const obj3 = { object: AnalyticsObjects.GUILD_PROFILE };
-                      const startLurkingResult = obj2.startLurking(guildId, obj3);
-                      startLurkingResult.catch(JoinGuildRefusedError.ignoreJoinGuildRefused);
-                    }
-                  }
-                }
-                if (cResult[21] !== tmp9) {
-                  class L {
-                    constructor() {
-                      const obj = ActionSheetActionCreatorsDefault;
-                      obj.hideActionSheet("GuildProfileActionSheet:" + guildId);
-                      const obj2 = GuildDiscoveryUtils;
-                      const obj3 = { object: AnalyticsObjects.GUILD_PROFILE };
-                      const startLurkingResult = obj2.startLurking(guildId, obj3);
-                      startLurkingResult.catch(JoinGuildRefusedError.ignoreJoinGuildRefused);
-                    }
-                  }
-                  const Button = tmp(tmp2[21]).Button;
-                  const merged = Object.assign(tmp21);
-                  class M {
-                    constructor() {
-                      const obj = ActionSheetActionCreatorsDefault;
-                      obj.hideActionSheet("GuildProfileActionSheet:" + guildId);
-                      const tmp2 = guildId;
-                      if (profile.visibility !== GuildProfileTypes.GuildProfileVisibility.PUBLIC_WITH_RECRUITMENT) {
-                        if (null != validInviteKey) {
-                          closure_4();
-                        }
-                      }
-                      const tmp4Result = MemberVerificationModalActionCreators;
-                      const result = tmp4Result.openMemberVerificationModal(tmp2);
-                    }
-                  }
-                  const tmp29 = <Button text={tmp23} />;
-                  class G {
-                    constructor() {
-                      applicationStatus = undefined;
-                      if (applicationStatus != null) {
-                        applicationStatus = applicationStatus.applicationStatus;
-                      }
-                      if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
-                        const tmp2Result = MemberVerificationAlertActionCreators;
-                        const result = tmp2Result.openMemberVerificationPendingAlert(guildId);
-                      } else if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
-                        const obj = { guildId, canWithdraw: true };
-                        const tmp2Result3 = MemberVerificationAlertActionCreators;
-                        const result1 = tmp2Result3.openMemberVerificationRejectedAlert(obj);
-                      } else if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.STARTED === applicationStatus) {
-                        const tmp2Result4 = MemberVerificationAlertActionCreators;
-                        const result2 = tmp2Result4.openMemberVerificationIncompleteAlert(guildId);
-                      }
-                    }
-                  }
-                  cResult[22] = tmp29;
-                  tmp25 = tmp29;
-                } else {
-                  class L {
-                    constructor() {
-                      const obj = ActionSheetActionCreatorsDefault;
-                      obj.hideActionSheet("GuildProfileActionSheet:" + guildId);
-                      const obj2 = GuildDiscoveryUtils;
-                      const obj3 = { object: AnalyticsObjects.GUILD_PROFILE };
-                      const startLurkingResult = obj2.startLurking(guildId, obj3);
-                      startLurkingResult.catch(JoinGuildRefusedError.ignoreJoinGuildRefused);
-                    }
-                  }
-                }
-                return tmp25;
-              } else {
-                class L {
-                  constructor() {
-                    const obj = ActionSheetActionCreatorsDefault;
-                    obj.hideActionSheet("GuildProfileActionSheet:" + guildId);
-                    const obj2 = GuildDiscoveryUtils;
-                    const obj3 = { object: AnalyticsObjects.GUILD_PROFILE };
-                    const startLurkingResult = obj2.startLurking(guildId, obj3);
-                    startLurkingResult.catch(JoinGuildRefusedError.ignoreJoinGuildRefused);
-                  }
-                }
-              }
+          class I {
+            constructor() {
+              const obj = ActionSheetActionCreatorsDefault;
+              obj.hideActionSheet("GuildProfileActionSheet:" + guildId);
+              const obj2 = transitionToGuild;
+              obj2.transitionToGuild(guildId);
             }
           }
         }
         class M {
           constructor() {
+            let tmp9;
             const obj = ActionSheetActionCreatorsDefault;
             obj.hideActionSheet("GuildProfileActionSheet:" + guildId);
             const tmp2 = guildId;
             if (profile.visibility !== GuildProfileTypes.GuildProfileVisibility.PUBLIC_WITH_RECRUITMENT) {
               if (null != validInviteKey) {
-                closure_4();
+                tmp9 = tmp9();
               }
             }
             const tmp4Result = MemberVerificationModalActionCreators;
@@ -271,18 +220,18 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
         cResult[12] = guildId;
         class G {
           constructor() {
-            applicationStatus = undefined;
-            if (applicationStatus != null) {
-              applicationStatus = applicationStatus.applicationStatus;
+            AnalyticsObjects = undefined;
+            if (AnalyticsObjects != null) {
+              AnalyticsObjects = AnalyticsObjects.applicationStatus;
             }
-            if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
+            if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.SUBMITTED === AnalyticsObjects) {
               const tmp2Result = MemberVerificationAlertActionCreators;
               const result = tmp2Result.openMemberVerificationPendingAlert(guildId);
-            } else if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
+            } else if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.REJECTED === AnalyticsObjects) {
               const obj = { guildId, canWithdraw: true };
               const tmp2Result3 = MemberVerificationAlertActionCreators;
               const result1 = tmp2Result3.openMemberVerificationRejectedAlert(obj);
-            } else if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.STARTED === applicationStatus) {
+            } else if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.STARTED === AnalyticsObjects) {
               const tmp2Result4 = MemberVerificationAlertActionCreators;
               const result2 = tmp2Result4.openMemberVerificationIncompleteAlert(guildId);
             }
@@ -292,32 +241,30 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
         cResult[15] = validInviteKey;
         cResult[16] = M;
       }
-      if (tmp12 != null) {
-        class L {
+      if (tmp10 != null) {
+        class I {
           constructor() {
             const obj = ActionSheetActionCreatorsDefault;
             obj.hideActionSheet("GuildProfileActionSheet:" + guildId);
-            const obj2 = GuildDiscoveryUtils;
-            const obj3 = { object: AnalyticsObjects.GUILD_PROFILE };
-            const startLurkingResult = obj2.startLurking(guildId, obj3);
-            startLurkingResult.catch(JoinGuildRefusedError.ignoreJoinGuildRefused);
+            const obj2 = transitionToGuild;
+            obj2.transitionToGuild(guildId);
           }
         }
       }
       class G {
         constructor() {
-          applicationStatus = undefined;
-          if (applicationStatus != null) {
-            applicationStatus = applicationStatus.applicationStatus;
+          AnalyticsObjects = undefined;
+          if (AnalyticsObjects != null) {
+            AnalyticsObjects = AnalyticsObjects.applicationStatus;
           }
-          if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
+          if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.SUBMITTED === AnalyticsObjects) {
             const tmp2Result = MemberVerificationAlertActionCreators;
             const result = tmp2Result.openMemberVerificationPendingAlert(guildId);
-          } else if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
+          } else if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.REJECTED === AnalyticsObjects) {
             const obj = { guildId, canWithdraw: true };
             const tmp2Result3 = MemberVerificationAlertActionCreators;
             const result1 = tmp2Result3.openMemberVerificationRejectedAlert(obj);
-          } else if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.STARTED === applicationStatus) {
+          } else if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.STARTED === AnalyticsObjects) {
             const tmp2Result4 = MemberVerificationAlertActionCreators;
             const result2 = tmp2Result4.openMemberVerificationIncompleteAlert(guildId);
           }
@@ -326,41 +273,52 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
       cResult[10] = undefined;
       cResult[11] = G;
     }
-    const fn3 = function b() {
-      if (null != validInviteKey) {
-        const _HermesInternal = HermesInternal;
-        const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.hideActionSheet("GuildProfileActionSheet:" + guildId);
-        let closure_0 = tmp;
-        let obj = {
-          onConfirm: function join() {
-              const obj = guildId(validInviteKey[11]);
-              const obj2 = { inviteKey, context: { location: "guild_profile" } };
-              const result = obj.acceptInviteAndTransitionToInviteChannel(obj2);
-            }
-        };
-        const obj4 = handleNSFWGuildInvite;
-        const tmp3 = importDefault;
-        if (!obj4.handleNSFWGuildInvite(InviteStore.getInvite(validInviteKey), obj)) {
-          let obj2 = { inviteKey: validInviteKey, context: { location: "guild_profile" } };
-          const tmp3Result = tmp3(8064);
-          let result = tmp3Result.acceptInviteAndTransitionToInviteChannel(obj2);
+    class C {
+      constructor() {
+        tmp = validInviteKey;
+        if (null != validInviteKey) {
+          tmp3 = closure_1;
+          tmp4 = closure_2;
+          obj3 = closure_1(closure_2[9]);
+          tmp5 = guildId;
+          tmp6 = globalThis;
+          _HermesInternal = HermesInternal;
+          str = "GuildProfileActionSheet:";
+          hideActionSheetResult = obj3.hideActionSheet("GuildProfileActionSheet:" + guildId);
+          closure_0 = tmp;
+          tmp8 = closure_0;
+          obj4 = closure_0(closure_2[12]);
+          tmp9 = closure_4;
+          obj1 = { onConfirm: null };
+          obj1.onConfirm = function join() {
+            const obj = guildId(validInviteKey[11]);
+            const obj2 = { inviteKey, context: { location: "guild_profile" } };
+            const result = obj.acceptInviteAndTransitionToInviteChannel(obj2);
+          };
+          if (!obj4.handleNSFWGuildInvite(closure_4.getInvite(tmp), obj1)) {
+            tmp3Result = tmp3(tmp4[11]);
+            obj6 = { inviteKey: null, context: null };
+            obj6.inviteKey = tmp;
+            obj6.context = { location: "guild_profile" };
+            result = tmp3Result.acceptInviteAndTransitionToInviteChannel(obj6);
+          }
         }
+        return;
       }
-    };
+    }
     cResult[6] = guildId;
-    cResult[8] = fn3;
-    tmp11 = fn3;
+    cResult[8] = C;
+    tmp9 = C;
   }
-  const fn2 = function v() {
+  function handleGoToTagSettings() {
     const obj = ActionSheetActionCreatorsDefault;
     obj.hideActionSheet("GuildProfileActionSheet:" + guildId);
     closure_3();
-  };
+  }
   cResult[3] = guildId;
-  cResult[4] = tmp8;
-  cResult[5] = fn2;
-}) : ((profile) => {
+  cResult[4] = tmp7;
+  cResult[5] = handleGoToTagSettings;
+}) : (function GuildProfileCTA(profile) {
   let closure_3;
   let context;
   let inviteKey;
@@ -400,7 +358,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
       const tmp3 = importDefault;
       if (!obj4.handleNSFWGuildInvite(InviteStore.getInvite(validInviteKey), obj)) {
         let obj2 = { inviteKey: validInviteKey, context: { location: "guild_profile" } };
-        const tmp3Result = tmp3(8064);
+        const tmp3Result = tmp3(8472);
         let result = tmp3Result.acceptInviteAndTransitionToInviteChannel(obj2);
       }
     }

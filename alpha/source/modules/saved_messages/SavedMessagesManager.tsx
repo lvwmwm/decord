@@ -1,20 +1,19 @@
-// Module ID: 17664
-// Function ID: 17665
+// Module ID: 17947
+// Function ID: 17948
 // Name: SavedMessagesManager
-// Dependencies: [5, 7496, 11348, 17665, 6620, 2]
+// Dependencies: [5, 12662, 17948, 6797, 2]
 
-// Module 17664 (SavedMessagesManager)
-import ForLaterExperiment from "ForLaterExperiment" /* 7496 */;
-import SavedMessagesActions from "SavedMessagesActions" /* 11348 */;
+// Module 17947 (SavedMessagesManager)
+import SavedMessagesActions from "SavedMessagesActions" /* 12662 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6620 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6797 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
 
 let obj = function _refreshSavedMessages() {
   obj = _asyncToGenerator(async (arg0, value) => {
-    let obj4;
+    let obj3;
     if (c2 === 2) {
       c2 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
@@ -36,35 +35,32 @@ let obj = function _refreshSavedMessages() {
             throw value;
           } else if (arg0 === 2) {
             c2 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
+            const obj4 = { value, done: true };
+            return obj4;
           } else {
             let closure_0 = tmp3;
-            const obj3 = ForLaterExperiment;
-            if (obj3.isForLaterExperimentOn("saved_messages_manager")) {
-              c1 = 1;
-              c2 = 1;
-              const obj6 = { value: obj4.fetchAndUpdateSavedMessages(), done: false };
-              obj4 = SavedMessagesActions;
-              return obj6;
-            }
+            c1 = 1;
+            c2 = 1;
+            const obj5 = { value: obj3.fetchAndUpdateSavedMessages(), done: false };
+            obj3 = SavedMessagesActions;
+            return obj5;
           }
         } else if (arg0 === 1) {
           c2 = 3;
           throw value;
         } else if (arg0 === 2) {
           c2 = 3;
-          const obj7 = { value, done: true };
-          return obj7;
+          const obj6 = { value, done: true };
+          return obj6;
         } else {
-          obj = closure_128_0(closure_128_1[3]);
+          obj = closure_128_0(closure_128_1[2]);
           const result = obj.showOverdueRemindersToast();
+          c2 = 3;
+          return { value: "IconComponent", done: null };
         }
+      } catch (tmp10) {
         c2 = 3;
-        return { value: "IconComponent", done: null };
-      } catch (tmp12) {
-        c2 = 3;
-        throw tmp12;
+        throw tmp10;
       }
     }
   });

@@ -1,27 +1,26 @@
-// Module ID: 15046
-// Function ID: 15047
+// Module ID: 15308
+// Function ID: 15309
 // Name: GroupListingsFetchContext
-// Dependencies: [32, 19, 5443, 4508, 21, 558, 576, 573, 6768, 2]
+// Dependencies: [32, 19, 5753, 4700, 21, 558, 576, 573, 6944, 2]
 
-// Module 15046 (GroupListingsFetchContext)
+// Module 15308 (GroupListingsFetchContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4508 */;
-import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 6768 */;
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4700 */;
+import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 6944 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5443 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5753 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const GuildRoleSubscriptionsStore = GuildRoleSubscriptionsStore2;
-let guildId;
 
 const FetchState = GuildRoleSubscriptionsStore2.FetchState;
 const jsx = Fragment.jsx;
 const redux = react.createContext(undefined);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGroupListingsFetchContext(arg0) {
   const obj = react2;
   const cResult = obj.c(3);
   const context = react.useContext(redux);
@@ -59,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
     const effect = obj2.useEffect(tmp3, tmp4);
     return listingsLoaded;
   }
-}) : (function(arg0) {
+}) : (function useGroupListingsFetchContext(arg0) {
   const context = react.useContext(redux);
   const obj = react;
   if (null == context) {
@@ -84,7 +83,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupListingsFetchContextProvider(guildId) {
   let children;
   let countryCode;
   let first;
@@ -103,7 +102,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const refetchOnMount = guildId.refetchOnMount;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [first];
-    const fn = function f() {
+    const fn = function p() {
       return first.isConnected();
     };
     cResult[0] = items;
@@ -123,7 +122,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     tmp8 = cResult[2];
   }
   if (cResult[3] !== guildId) {
-    const fn2 = function x() {
+    const fn2 = function b() {
       let FETCHED;
       if (null != guildId) {
         FETCHED = GuildRoleSubscriptionsStore.getSubscriptionGroupListingsForGuildFetchState(tmp);
@@ -205,7 +204,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[10] = first;
   cResult[11] = fn3;
   tmp14 = fn3;
-}) : ((guildId) => {
+}) : (function GroupListingsFetchContextProvider(guildId) {
   let children;
   let refetchOnMount;
   guildId = guildId.guildId;

@@ -1,28 +1,28 @@
-// Module ID: 10043
-// Function ID: 10044
+// Module ID: 10430
+// Function ID: 10431
 // Name: ForumPostReactionButton
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 10044, 1126, 4892, 5916, 7272, 9868, 10041, 2028, 9990, 1103, 1402, 4527, 6632, 11083, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 10431, 1126, 5086, 6189, 7873, 9319, 10428, 2040, 9520, 1103, 1414, 4719, 6809, 10447, 2]
 
-// Module 10043 (ForumPostReactionButton)
+// Module 10430 (ForumPostReactionButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
 import intl2 from "intl" /* 1126 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import ReactionUtils from "ReactionUtils" /* 4527 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Pressables from "Pressables" /* 5916 */;
-import EmojiDefault from "Emoji" /* 6632 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7272 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9868 */;
-import useEmojiColorPalette from "useEmojiColorPalette" /* 9990 */;
-import useReactionPermissionsDefault from "useReactionPermissions" /* 10041 */;
-import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10044 */;
-import AnimatedCounterDefault from "AnimatedCounter" /* 11083 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import ReactionUtils from "ReactionUtils" /* 4719 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Pressables from "Pressables" /* 6189 */;
+import EmojiDefault from "Emoji" /* 6809 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7873 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9319 */;
+import useEmojiColorPalette from "useEmojiColorPalette" /* 9520 */;
+import useReactionPermissionsDefault from "useReactionPermissions" /* 10428 */;
+import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10431 */;
+import AnimatedCounterDefault from "AnimatedCounter" /* 10447 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const UserSettings = tmp(2028);
+const UserSettings = tmp(2040);
 class BurstReactionButton {
   constructor(arg0) {
     let accentColor;
@@ -102,7 +102,7 @@ createStyles = createStyles.createStyles;
 obj3 = { borderColor: nativeDefault.colors.REACTION_BORDER_REACTED_DEFAULT, backgroundColor: nativeDefault.colors.REACTION_BACKGROUND_REACTED_DEFAULT };
 let closure_7 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AdditionalReactionCount(arg0) {
   let containerStyle;
   let count;
   let items;
@@ -168,7 +168,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = tmp4.container;
   cResult[5] = items1;
   tmp8 = items1;
-}) : ((arg0) => {
+}) : (function AdditionalReactionCount(arg0) {
   let containerStyle;
   let count;
   let intl;
@@ -188,7 +188,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroRequire(PressableOpacity, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddReactionButton(arg0) {
   let containerStyle;
   let reactionType;
   let threadId;
@@ -196,7 +196,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(13);
   ({ threadId, containerStyle, reactionType } = arg0);
   if (undefined === reactionType) {
-    reactionType = tmp(7272).ReactionTypes.NORMAL;
+    reactionType = tmp(7873).ReactionTypes.NORMAL;
   }
   const tmp4 = closure_7();
   if (cResult[0] === reactionType) {
@@ -258,7 +258,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = threadId;
   cResult[2] = obj3;
   tmp5 = obj3;
-}) : ((reactionType) => {
+}) : (function AddReactionButton(reactionType) {
   let containerStyle;
   let intl;
   let items;
@@ -279,7 +279,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroRequire(PressableOpacity, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiSize) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostReactionButton(emojiSize) {
   let animateCount;
   let containerStyle;
   let locationAnalyticsObject;
@@ -381,7 +381,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiSize) => {
               cResult[18] = tmp10;
               cResult[19] = tmp9;
               cResult[20] = reaction.burst_count;
-              cResult[21] = reaction.emoji;
+              class P {
+                constructor() {
+                  const obj = { reaction, disableReactionCreates, disableReactionUpdates, locationAnalyticsObject };
+                  onTapReaction(obj);
+                }
+              }
               cResult[22] = reaction.me_burst;
               cResult[23] = tmp16;
               cResult[24] = textStyle;
@@ -423,6 +428,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiSize) => {
               cResult[32] = tmp9;
               cResult[33] = reaction.count;
               cResult[34] = reaction.emoji;
+              class P {
+                constructor() {
+                  const obj = { reaction, disableReactionCreates, disableReactionUpdates, locationAnalyticsObject };
+                  onTapReaction(obj);
+                }
+              }
               cResult[35] = reaction.me;
               cResult[36] = textStyle;
               cResult[37] = tmp15;
@@ -430,29 +441,31 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiSize) => {
             }
             return tmp12;
           }
-          const fn2 = function v() {
+          const fn = function v() {
             onLongTapReaction(reaction);
           };
           cResult[8] = onLongTapReaction;
           cResult[9] = reaction;
-          cResult[10] = fn2;
-          tmp10 = fn2;
+          cResult[10] = fn;
+          tmp10 = fn;
         }
       }
     }
   }
-  const fn = function p() {
-    const obj = { reaction, disableReactionCreates, disableReactionUpdates, locationAnalyticsObject };
-    onTapReaction(obj);
-  };
+  class P {
+    constructor() {
+      const obj = { reaction, disableReactionCreates, disableReactionUpdates, locationAnalyticsObject };
+      onTapReaction(obj);
+    }
+  }
   cResult[2] = disableReactionCreates;
   cResult[3] = disableReactionUpdates;
   cResult[4] = locationAnalyticsObject;
   cResult[5] = onTapReaction;
   cResult[6] = reaction;
-  cResult[7] = fn;
-  tmp9 = fn;
-}) : ((emojiSize) => {
+  cResult[7] = P;
+  tmp9 = P;
+}) : (function ForumPostReactionButton(emojiSize) {
   let animateCount;
   let burst_colors;
   let containerStyle;
@@ -506,7 +519,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiSize) => {
   return tmp10Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactionButton(arg0) {
   let accessible;
   let animate;
   let animateCount;
@@ -659,7 +672,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = emojiSize;
   cResult[4] = emojiURL;
   tmp6 = emojiURL;
-}) : ((arg0) => {
+}) : (function ReactionButton(arg0) {
   let accessible;
   let animate;
   let animateCount;

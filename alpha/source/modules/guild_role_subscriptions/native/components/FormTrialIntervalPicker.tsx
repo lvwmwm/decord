@@ -1,15 +1,15 @@
-// Module ID: 17987
-// Function ID: 17988
+// Module ID: 18274
+// Function ID: 18275
 // Name: FormTrialIntervalPicker
-// Dependencies: [19, 21, 13726, 1126, 15064, 4860, 8978, 1987, 2]
+// Dependencies: [19, 21, 13948, 1126, 15326, 5054, 8529, 1999, 2]
 // Exports: default
 
-// Module 17987 (FormTrialIntervalPicker)
+// Module 18274 (FormTrialIntervalPicker)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import FormDropdownDefault from "FormDropdown" /* 13726 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import FormDropdownDefault from "FormDropdown" /* 13948 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -31,12 +31,12 @@ export default function FormTrialIntervalPicker(interval) {
     stringResult = intl.string(interval(1126).t.WZG1BU);
   } else {
     let tmp4 = interval;
-    let obj = interval(15064);
+    let obj = interval(15326);
     stringResult = obj.formatPlanIntervalDuration(interval);
   }
   const obj2 = {
     label: stringResult,
-    onPress() {
+    onPress: function handleSelectTrialInterval() {
       let intl;
       let tmp4;
       const tmp = ActionSheetActionCreatorsDefault;
@@ -54,7 +54,7 @@ export default function FormTrialIntervalPicker(interval) {
         selectedItem: tmp4,
         hasIcons: false
       };
-      const tmp2 = asyncRequire(8978, dependencyMap.paths);
+      const tmp2 = asyncRequire(8529, dependencyMap.paths);
       intl = intl2.intl;
       tmp4 = interval;
       const tmp3 = GuildRoleSubscriptionTrialIntervalSelect;

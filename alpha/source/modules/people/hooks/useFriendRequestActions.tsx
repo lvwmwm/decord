@@ -1,17 +1,15 @@
-// Module ID: 12970
-// Function ID: 12971
+// Module ID: 13249
+// Function ID: 13250
 // Name: useFriendRequestActions
-// Dependencies: [19, 558, 576, 10617, 2]
+// Dependencies: [19, 558, 576, 10215, 2]
 
-// Module 12970 (useFriendRequestActions)
-import PeopleUtilsDefault from "PeopleUtils" /* 10617 */;
+// Module 13249 (useFriendRequestActions)
+import PeopleUtilsDefault from "PeopleUtils" /* 10215 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let userId;
-
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFriendRequestActions(userId) {
   let isGameRelationship;
   let obj = userId(isGameRelationship[2]);
   const cResult = obj.c(16);
@@ -46,7 +44,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
                       }
                       return tmp4;
                     }
-                    class I {
+                    class C {
                       constructor() {
                         let tmp2;
                         const obj = { userId, applicationId: tmp2, location: _location, onConfirm, onCancel, onFinally };
@@ -71,7 +69,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
             }
           }
         }
-        class I {
+        class C {
           constructor() {
             let tmp2;
             const obj = { userId, applicationId: tmp2, location: _location, onConfirm, onCancel, onFinally };
@@ -91,8 +89,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
         cResult[9] = onConfirm;
         cResult[10] = onFinally;
         cResult[11] = userId;
-        cResult[12] = I;
-        tmp3 = I;
+        cResult[12] = C;
+        tmp3 = C;
       }
     }
   }
@@ -113,7 +111,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[3] = userId;
   cResult[4] = fn;
   tmp2 = fn;
-}) : ((userId) => {
+}) : (function useFriendRequestActions(userId) {
   let callback;
   let items1;
   userId = userId.userId;

@@ -1,19 +1,19 @@
-// Module ID: 18040
-// Function ID: 18041
+// Module ID: 18327
+// Function ID: 18328
 // Name: SelectInviteRolesActionSheet
-// Dependencies: [32, 19, 21, 4896, 558, 576, 10613, 6553, 4860, 12, 8924, 11462, 4892, 1126, 5916, 6651, 6559, 6708, 2]
+// Dependencies: [32, 19, 21, 5090, 558, 576, 10210, 6729, 5054, 12, 8555, 11446, 5086, 1126, 6189, 6828, 6735, 6885, 2]
 
-// Module 18040 (SelectInviteRolesActionSheet)
+// Module 18327 (SelectInviteRolesActionSheet)
 import _mod12 from "module_12" /* 12 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let set;
+let dependencyMap, set;
 
 let hasOwnProperty;
 let metroImportDefault;
@@ -21,7 +21,7 @@ let metroRequire;
 let _slicedToArray = _slicedToArray_mod;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ list: { flex: 1 } });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(assignableRoles) {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectInviteRolesActionSheet(assignableRoles) {
   let args;
   let closure_5;
   let first;
@@ -29,8 +29,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(assignableRo
   let selectedRoleIds;
   let tmp10;
   let tmp4;
-  let tmp = set;
-  let obj = assignableRoles(set[5]);
+  let tmp = dependencyMap;
+  let obj = assignableRoles(576);
   const cResult = obj.c(35);
   assignableRoles = assignableRoles.assignableRoles;
   ({ selectedRoleIds, onSave } = assignableRoles);
@@ -39,19 +39,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(assignableRo
     let tmp6;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      class S {
-        constructor(id) {
-          return id.id;
-        }
-      }
-      cResult[2] = S;
-      tmp6 = S;
+      const fn = function v(id) {
+        return id.id;
+      };
+      cResult[2] = fn;
+      tmp6 = fn;
     } else {
-      class S {
-        constructor(id) {
-          return id.id;
-        }
-      }
+      tmp6 = cResult[2];
     }
     const _Set = Set;
     const self = this;
@@ -61,44 +55,34 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(assignableRo
     cResult[1] = set;
     tmp4 = set;
   } else {
-    class S {
-      constructor(id) {
-        return id.id;
-      }
-    }
+    tmp4 = cResult[1];
   }
-  set = tmp4;
+  dependencyMap = tmp4;
   if (cResult[3] === tmp4) {
-    let tmp12;
+    let tmp9;
+    let tmp13;
     let tmp22;
-    class S {
-      constructor(id) {
-        return id.id;
-      }
+    if (cResult[4] === selectedRoleIds) {
+      tmp9 = cResult[5];
     }
     _slicedToArray = tmp9;
     if (cResult[8] !== tmp9) {
-      class S {
-        constructor(id) {
-          return id.id;
-        }
-      }
+      const fn2 = function x() {
+        set = new Set(args);
+        return set;
+      };
       cResult[8] = tmp9;
-      cResult[9] = tmp13;
-      tmp12 = tmp13;
+      cResult[9] = fn2;
+      tmp13 = fn2;
     } else {
-      class S {
-        constructor(id) {
-          return id.id;
-        }
-      }
+      tmp13 = cResult[9];
     }
-    [first, closure_5] = first.useState(tmp12);
-    onSave(tmp[6])();
-    onSave(tmp[7])();
+    [first, closure_5] = first.useState(tmp13);
+    onSave(10210)();
+    onSave(6729)();
     const _Symbol2 = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      class A {
+      class C {
         constructor(arg0) {
           closure_0 = assignableRoles;
           tmp = closure_5((items) => {
@@ -112,10 +96,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(assignableRo
           return;
         }
       }
-      cResult[10] = A;
-      tmp22 = A;
+      cResult[10] = C;
+      tmp22 = C;
     } else {
-      class A {
+      class C {
         constructor(arg0) {
           closure_0 = assignableRoles;
           tmp = closure_5((items) => {
@@ -130,9 +114,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(assignableRo
         }
       }
     }
-    A = tmp22;
+    C = tmp22;
     if (cResult[11] === tmp9) {
-      class A {
+      class C {
         constructor(arg0) {
           closure_0 = assignableRoles;
           tmp = closure_5((items) => {
@@ -147,7 +131,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(assignableRo
         }
       }
     }
-    const fn = function k() {
+    const fn3 = function k() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
       const arr = Array.from(first);
@@ -162,10 +146,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(assignableRo
     cResult[11] = tmp9;
     cResult[12] = onSave;
     cResult[13] = first;
-    cResult[14] = fn;
+    cResult[14] = fn3;
   }
   if (cResult[6] !== tmp4) {
-    class A {
+    class C {
       constructor(arg0) {
         closure_0 = assignableRoles;
         tmp = closure_5((items) => {
@@ -180,10 +164,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(assignableRo
       }
     }
     cResult[6] = tmp4;
-    cResult[7] = R;
-    tmp10 = R;
+    cResult[7] = tmp11;
+    tmp10 = tmp11;
   } else {
-    class A {
+    class C {
       constructor(arg0) {
         closure_0 = assignableRoles;
         tmp = closure_5((items) => {
@@ -202,7 +186,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(assignableRo
   cResult[3] = tmp4;
   cResult[4] = selectedRoleIds;
   cResult[5] = found;
-}) : ((assignableRoles) => {
+  tmp9 = found;
+}) : (function SelectInviteRolesActionSheet(assignableRoles) {
   let Text;
   let intl;
   let intl2;

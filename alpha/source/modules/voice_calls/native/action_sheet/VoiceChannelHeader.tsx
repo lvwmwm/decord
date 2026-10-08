@@ -1,35 +1,35 @@
-// Module ID: 13621
-// Function ID: 13622
+// Module ID: 13444
+// Function ID: 13445
 // Name: VoiceChannelHeader
-// Dependencies: [19, 17, 2050, 2074, 4515, 1085, 21, 4896, 587, 558, 576, 13622, 13623, 4892, 13624, 504, 9613, 5049, 9494, 1126, 11225, 5853, 13626, 9707, 1188, 9728, 5916, 2]
+// Dependencies: [19, 17, 2062, 2086, 4707, 1085, 21, 5090, 587, 558, 576, 13445, 13446, 5086, 13447, 504, 10806, 5417, 8658, 1126, 11340, 6785, 13449, 10912, 1200, 10311, 6189, 2]
 
-// Module 13621 (VoiceChannelHeader)
+// Module 13444 (VoiceChannelHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import useChannelNameDefault from "useChannelName" /* 5049 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 5853 */;
-import Pressables from "Pressables" /* 5916 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9494 */;
-import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 9613 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9728 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11225 */;
-import CallStateHooks from "CallStateHooks" /* 13622 */;
-import OngoingCallStatusLabelDefault from "OngoingCallStatusLabel" /* 13623 */;
+import native from "native" /* 1200 */;
+import useChannelNameDefault from "useChannelName" /* 5417 */;
+import Pressables from "Pressables" /* 6189 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 6785 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8658 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10311 */;
+import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 10806 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11340 */;
+import CallStateHooks from "CallStateHooks" /* 13445 */;
+import OngoingCallStatusLabelDefault from "OngoingCallStatusLabel" /* 13446 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const CallStateHooksDefault = CallStateHooks;
-let applicationId, channel, importDefault;
+let applicationId, importDefault;
 
 let c10;
 let c9;
@@ -39,7 +39,7 @@ let obj2;
 let obj3;
 let tmp2;
 let unpackModuleId;
-const OngoingCallTimerDefault = tmp2(13624);
+const OngoingCallTimerDefault = tmp2(13447);
 const View = react_native.View;
 ({ Permissions: metroImportDefault, AnalyticsPages: metroImportAll, InstantInviteSources: c9 } = Constants);
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
@@ -50,7 +50,7 @@ createStyles = createStyles.createStyles;
 obj3 = { fontSize: 12, lineHeight: 16, color: nativeDefault.colors.WHITE };
 let closure_12 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function PrivateChannelSubtitle(channel) {
   let items;
   const obj = react2;
   const cResult = obj.c(16);
@@ -96,10 +96,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
             tmp14 = tmp17;
           }
         }
-        let tmp12 = state === tmp(13622).CallStates.CONNECTED;
+        let tmp12 = state === tmp(13445).CallStates.CONNECTED;
         if (tmp12) {
           const obj3 = { channelId: channel.id, style: tmp4.subtitle };
-          tmp12 = authStore(tmp5(13624), obj3);
+          tmp12 = authStore(tmp5(13447), obj3);
         }
         cResult[7] = channel.id;
         cResult[8] = tmp4.subtitle;
@@ -107,10 +107,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         cResult[10] = tmp12;
         tmp11 = tmp12;
       }
-      let tmp9 = state === tmp(13622).CallStates.CONNECTED;
+      let tmp9 = state === tmp(13445).CallStates.CONNECTED;
       if (tmp9) {
         const obj4 = { style: tmp4.subtitle, variant: "text-xs/medium", color: "text-overlay-light", children: " - " };
-        tmp9 = authStore(tmp(4892).Text, obj4);
+        tmp9 = authStore(tmp(5086).Text, obj4);
       }
       cResult[4] = tmp4.subtitle;
       cResult[5] = state;
@@ -125,7 +125,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[2] = state;
   cResult[3] = tmp7;
   tmp6 = tmp7;
-}) : ((channel) => {
+}) : (function PrivateChannelSubtitle(channel) {
   let items;
   channel = channel.channel;
   const tmp = closure_12();
@@ -139,10 +139,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const tmp5 = View;
   if (tmp6Result) {
     const obj3 = { style: tmp.subtitle, variant: "text-xs/medium", color: "text-overlay-light", children: " - " };
-    tmp6Result = tmp6(tmp7(4892).Text, obj3);
+    tmp6Result = tmp6(tmp7(5086).Text, obj3);
   }
   items[1] = tmp6Result;
-  let tmp6Result2 = state === tmp7(13622).CallStates.CONNECTED;
+  let tmp6Result2 = state === tmp7(13445).CallStates.CONNECTED;
   if (tmp6Result2) {
     const obj4 = { channelId: channel.id, style: tmp.subtitle };
     tmp6Result2 = tmp6(OngoingCallTimerDefault, obj4);
@@ -151,13 +151,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   return tmp4(tmp5, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChannelHeader(channel) {
   let first;
   let items2;
   let stateFromStores1;
   let tmp11;
-  let tmp12;
   let tmp13;
+  let tmp14;
   let tmp7;
   const tmp = channel;
   let tmp2 = dependencyMap;
@@ -173,261 +173,246 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     first = cResult[0];
   }
   if (cResult[1] !== channel) {
-    class C {
-      constructor() {
-        return closure_5.getGuild(channel.getGuildId());
-      }
-    }
+    const fn = function v() {
+      return GuildStore.getGuild(channel.getGuildId());
+    };
     cResult[1] = channel;
-    cResult[2] = C;
-    tmp7 = C;
+    cResult[2] = fn;
+    tmp7 = fn;
   } else {
-    class C {
-      constructor() {
-        return closure_5.getGuild(channel.getGuildId());
-      }
-    }
+    tmp7 = cResult[2];
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmp10 = stateFromStores1(9613)(channel);
+  const tmp10 = stateFromStores1(10806)(channel);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class C {
-      constructor() {
-        return closure_5.getGuild(channel.getGuildId());
-      }
-    }
     const items1 = [EmbeddedActivitiesStore];
     cResult[3] = items1;
     tmp11 = items1;
   } else {
-    class C {
-      constructor() {
-        return closure_5.getGuild(channel.getGuildId());
-      }
-    }
+    tmp11 = cResult[3];
   }
   if (cResult[4] !== channel.id) {
-    class N {
+    class A {
       constructor() {
-        return closure_4.getSelfEmbeddedActivityForChannel(channel.id);
+        return EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id);
       }
     }
     cResult[4] = channel.id;
-    cResult[5] = N;
-    tmp12 = N;
+    cResult[5] = A;
+    tmp13 = A;
   } else {
-    class N {
+    class A {
       constructor() {
-        return closure_4.getSelfEmbeddedActivityForChannel(channel.id);
+        return EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id);
       }
     }
   }
   if (cResult[6] !== channel) {
-    class N {
+    class A {
       constructor() {
-        return closure_4.getSelfEmbeddedActivityForChannel(channel.id);
+        return EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id);
       }
     }
-    tmp14[0] = channel;
+    tmp15[0] = channel;
     cResult[6] = channel;
-    cResult[7] = tmp14;
-    tmp13 = tmp14;
+    cResult[7] = tmp15;
+    tmp14 = tmp15;
   } else {
-    class N {
+    class A {
       constructor() {
-        return closure_4.getSelfEmbeddedActivityForChannel(channel.id);
+        return EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id);
       }
     }
   }
   const tmpResult2 = tmp(504);
-  stateFromStores1 = tmpResult2.useStateFromStores(tmp11, tmp12, tmp13);
-  let tmp16 = tmp9(5049)(channel);
+  stateFromStores1 = tmpResult2.useStateFromStores(tmp11, tmp13, tmp14);
+  let tmp17 = tmp9(5417)(channel);
   if (stateFromStores != null) {
-    class N {
+    class A {
       constructor() {
-        return closure_4.getSelfEmbeddedActivityForChannel(channel.id);
+        return EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id);
       }
     }
   }
   if (cResult[8] === channel) {
-    class N {
+    class A {
       constructor() {
-        return closure_4.getSelfEmbeddedActivityForChannel(channel.id);
+        return EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id);
       }
     }
-    const tmp18 = cResult[9];
+    const tmp19 = cResult[9];
     if (stateFromStores1 != null) {
-      class N {
+      class A {
         constructor() {
-          return closure_4.getSelfEmbeddedActivityForChannel(channel.id);
+          return EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id);
         }
       }
     }
-    if (tmp18 === tmp19) {
-      class N {
+    if (tmp19 === tmp20) {
+      class A {
         constructor() {
-          return closure_4.getSelfEmbeddedActivityForChannel(channel.id);
+          return EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id);
         }
       }
       if (channel.isPrivate()) {
-        class N {
+        class A {
           constructor() {
-            return closure_4.getSelfEmbeddedActivityForChannel(channel.id);
+            return EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id);
           }
         }
         if (cResult[14] !== channel) {
-          class N {
+          class A {
             constructor() {
-              return closure_4.getSelfEmbeddedActivityForChannel(channel.id);
+              return EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id);
             }
           }
           const obj2 = { channel };
-          const tmp25 = closure_10(closure_13, obj2);
+          const tmp26 = closure_10(closure_13, obj2);
           cResult[14] = channel;
-          cResult[15] = tmp25;
+          cResult[15] = tmp26;
         } else {
-          class N {
+          class A {
             constructor() {
-              return closure_4.getSelfEmbeddedActivityForChannel(channel.id);
+              return EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id);
             }
           }
         }
         if (cResult[16] !== channel.id) {
-          class V {
+          class O {
             constructor() {
-              return closure_1(closure_2[20])(channel.id, AnalyticsPages.CHANNEL_CALL);
+              return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
             }
           }
           cResult[16] = channel.id;
-          cResult[17] = V;
+          cResult[17] = O;
         } else {
-          class V {
+          class O {
             constructor() {
-              return closure_1(closure_2[20])(channel.id, AnalyticsPages.CHANNEL_CALL);
+              return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
             }
           }
         }
-        tmp16 = tmp22;
+        tmp17 = tmp23;
       }
-      if (stateFromStores1(5853)(channel)) {
-        class V {
+      if (stateFromStores1(6785)(channel)) {
+        class O {
           constructor() {
-            return closure_1(closure_2[20])(channel.id, AnalyticsPages.CHANNEL_CALL);
+            return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
           }
         }
       } else {
-        class V {
+        class O {
           constructor() {
-            return closure_1(closure_2[20])(channel.id, AnalyticsPages.CHANNEL_CALL);
+            return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
           }
         }
       }
       if (cResult[18] === tmp4.icons) {
-        class V {
+        class O {
           constructor() {
-            return closure_1(closure_2[20])(channel.id, AnalyticsPages.CHANNEL_CALL);
+            return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
           }
         }
-        if (cResult[21] !== tmp16) {
-          let tmp32;
-          class V {
+        if (cResult[21] !== tmp17) {
+          let tmp33;
+          class O {
             constructor() {
-              return closure_1(closure_2[20])(channel.id, AnalyticsPages.CHANNEL_CALL);
-            }
-          }
-          if (typeof tmp16 === "string") {
-            class V {
-              constructor() {
-                return closure_1(closure_2[20])(channel.id, AnalyticsPages.CHANNEL_CALL);
-              }
-            }
-            const obj3 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-md/semibold", color: "text-overlay-light", children: tmp16 };
-            tmp32 = closure_10(tmp(4892).Text, obj3);
-          }
-          cResult[21] = tmp16;
-          cResult[22] = tmp32;
-        } else {
-          class V {
-            constructor() {
-              return closure_1(closure_2[20])(channel.id, AnalyticsPages.CHANNEL_CALL);
-            }
-          }
-        }
-        if (cResult[23] !== tmp17) {
-          let tmp34;
-          class V {
-            constructor() {
-              return closure_1(closure_2[20])(channel.id, AnalyticsPages.CHANNEL_CALL);
+              return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
             }
           }
           if (typeof tmp17 === "string") {
-            class V {
+            class O {
               constructor() {
-                return closure_1(closure_2[20])(channel.id, AnalyticsPages.CHANNEL_CALL);
+                return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
               }
             }
-            const obj4 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-xs/medium", color: "text-overlay-light", children: tmp17 };
-            tmp34 = closure_10(tmp(4892).Text, obj4);
+            const obj3 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-md/semibold", color: "text-overlay-light", children: tmp17 };
+            tmp33 = closure_10(tmp(5086).Text, obj3);
           }
-          cResult[23] = tmp17;
-          cResult[24] = tmp34;
+          cResult[21] = tmp17;
+          cResult[22] = tmp33;
         } else {
-          class V {
+          class O {
             constructor() {
-              return closure_1(closure_2[20])(channel.id, AnalyticsPages.CHANNEL_CALL);
+              return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
+            }
+          }
+        }
+        if (cResult[23] !== tmp18) {
+          let tmp35;
+          class O {
+            constructor() {
+              return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
+            }
+          }
+          if (typeof tmp18 === "string") {
+            class O {
+              constructor() {
+                return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
+              }
+            }
+            const obj4 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-xs/medium", color: "text-overlay-light", children: tmp18 };
+            tmp35 = closure_10(tmp(5086).Text, obj4);
+          }
+          cResult[23] = tmp18;
+          cResult[24] = tmp35;
+        } else {
+          class O {
+            constructor() {
+              return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
             }
           }
         }
         if (cResult[25] === tmp4.middle) {
-          class V {
+          class O {
             constructor() {
-              return closure_1(closure_2[20])(channel.id, AnalyticsPages.CHANNEL_CALL);
+              return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
             }
           }
         }
         const obj5 = { style: tmp4.middle, children: items2 };
-        items2 = [tmp31, tmp33];
+        items2 = [tmp32, tmp34];
         cResult[25] = tmp4.middle;
-        cResult[26] = tmp33;
-        cResult[27] = tmp31;
+        cResult[26] = tmp34;
+        cResult[27] = tmp32;
         cResult[28] = closure_11(View, obj5);
-        const tmp38 = closure_11(View, obj5);
+        const tmp39 = closure_11(View, obj5);
       }
-      const obj6 = { size: tmp(1188).Icon.Sizes.MEDIUM, source: tmp27, disableColor: true, style: tmp4.icons };
-      const Icon = tmp(1188).Icon;
+      const obj6 = { size: tmp(1200).Icon.Sizes.MEDIUM, source: tmp28, disableColor: true, style: tmp4.icons };
+      const Icon = tmp(1200).Icon;
       cResult[18] = tmp4.icons;
-      cResult[19] = tmp27;
+      cResult[19] = tmp28;
       cResult[20] = closure_10(Icon, obj6);
-      const tmp30 = closure_10(Icon, obj6);
+      const tmp31 = closure_10(Icon, obj6);
     }
   }
   if (PermissionStore.can(constants.CREATE_INSTANT_INVITE, channel)) {
-    class V {
+    class O {
       constructor() {
-        return closure_1(closure_2[20])(channel.id, AnalyticsPages.CHANNEL_CALL);
+        return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
       }
     }
     if (!tmp10) {
-      class V {
+      class O {
         constructor() {
-          return closure_1(closure_2[20])(channel.id, AnalyticsPages.CHANNEL_CALL);
+          return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
         }
       }
     }
   }
   cResult[8] = channel;
   if (stateFromStores1 != null) {
-    class V {
+    class O {
       constructor() {
-        return closure_1(closure_2[20])(channel.id, AnalyticsPages.CHANNEL_CALL);
+        return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
       }
     }
   }
   cResult[9] = undefined;
   cResult[10] = tmp10;
   cResult[11] = null;
-}) : ((channel) => {
+}) : (function VoiceChannelHeader(channel) {
   let items3;
   let items4;
   let tmp14Result4;
@@ -448,11 +433,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   if (stateFromStores != null) {
     name = stateFromStores.name;
   }
-  let N = null;
+  let A = null;
   if (PermissionStore.can(constants.CREATE_INSTANT_INVITE, channel)) {
-    N = null;
+    A = null;
     if (!tmp6) {
-      N = () => {
+      A = () => {
         const obj = { source: constants.VOICE_CHANNEL, targetApplicationId: applicationId };
         applicationId = undefined;
         const showInstantInviteActionSheet = instant_invite_InstantInviteUtils.showInstantInviteActionSheet;
@@ -472,46 +457,46 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     formatToPlainStringResult = intl.formatToPlainString(tmp2(1126).t["8bn8Br"], obj3);
     const obj4 = { channel };
     name = closure_10(closure_13, obj4);
-    class N {
+    class A {
       constructor() {
         return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
       }
     }
   }
   const obj5 = { style: tmp.container, children: items3 };
-  const obj6 = { size: tmp2(1188).Icon.Sizes.MEDIUM, source: tmp5Result, disableColor: true, style: tmp.icons };
-  const Icon = tmp2(1188).Icon;
+  const obj6 = { size: tmp2(1200).Icon.Sizes.MEDIUM, source: tmp5Result, disableColor: true, style: tmp.icons };
+  const Icon = tmp2(1200).Icon;
   if (isRoleRequiredDefault(channel)) {
-    tmp5Result = tmp5(13626);
+    tmp5Result = tmp5(13449);
   } else {
-    tmp5Result = tmp5(9707);
+    tmp5Result = tmp5(10912);
   }
   items3 = [closure_10(Icon, obj6), , ];
   let tmp14Result = formatToPlainStringResult;
   const obj7 = { style: tmp.middle, children: items4 };
   if (typeof formatToPlainStringResult === "string") {
     const obj8 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-md/semibold", color: "text-overlay-light", children: formatToPlainStringResult };
-    tmp14Result = tmp14(tmp2(4892).Text, obj8);
+    tmp14Result = tmp14(tmp2(5086).Text, obj8);
   }
   items4 = [tmp14Result, ];
   let tmp14Result3 = name;
   if (typeof name === "string") {
     const obj9 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-xs/medium", color: "text-overlay-light", children: name };
-    tmp14Result3 = tmp14(tmp2(4892).Text, obj9);
+    tmp14Result3 = tmp14(tmp2(5086).Text, obj9);
   }
   items4[1] = tmp14Result3;
   items3[1] = closure_11(View, obj7);
   const obj10 = { style: tmp.icons, children: tmp14Result4 };
-  tmp14Result4 = null != N;
+  tmp14Result4 = null != A;
   if (tmp14Result4) {
-    const obj11 = { onPress: N };
+    const obj11 = { onPress: A };
     tmp14Result4 = tmp14(closure_14, obj11);
   }
   items3[2] = closure_10(View, obj10);
   return closure_11(View, obj5);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddMemberButton(onPress) {
   let first;
   const obj = react2;
   const cResult = obj.c(4);
@@ -539,7 +524,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   cResult[2] = tmp4.icons;
   cResult[3] = tmp8;
   tmp7 = tmp8;
-}) : ((onPress) => {
+}) : (function AddMemberButton(onPress) {
   let intl;
   let tmp;
   const obj = { onPress: onPress.onPress, iconSource: AssetRegistryDefault, iconStyle: tmp.icons, accessibilityLabel: intl.string(intl2.t["6Qgrev"]) };
@@ -548,7 +533,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   return authStore(closure_15, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconButton(arg0) {
   let accessibilityLabel;
   let iconSource;
   let iconStyle;
@@ -587,7 +572,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = iconStyle;
   cResult[2] = tmp5;
   tmp4 = tmp5;
-}) : ((arg0) => {
+}) : (function IconButton(arg0) {
   let accessibilityLabel;
   let iconSource;
   let iconStyle;

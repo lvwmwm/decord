@@ -1,35 +1,33 @@
-// Module ID: 16248
-// Function ID: 16249
+// Module ID: 16508
+// Function ID: 16509
 // Name: GameCommunityMultiGuildUpsellCard
-// Dependencies: [5, 32, 19, 17, 4885, 4516, 2074, 1085, 21, 4896, 587, 504, 1402, 1437, 1484, 1252, 5712, 6730, 6855, 6854, 1126, 8502, 8427, 1188, 4892, 5601, 7590, 7586, 7588, 2]
+// Dependencies: [5, 32, 19, 17, 5079, 4708, 2086, 1085, 21, 5090, 587, 504, 1414, 1449, 1496, 1264, 6102, 6906, 7043, 7042, 1126, 8986, 6164, 8841, 1200, 5086, 5375, 9297, 8106, 9180, 2]
 // Exports: default
 
-// Module 16248 (GameCommunityMultiGuildUpsellCard)
+// Module 16508 (GameCommunityMultiGuildUpsellCard)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1437 */;
-import transitionToGuild from "transitionToGuild" /* 6855 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1449 */;
+import transitionToGuild from "transitionToGuild" /* 7043 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import LurkingStore from "LurkingStore" /* 4516 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import LurkingStore from "LurkingStore" /* 4708 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import size_mod from "module_2" /* 2 */;
 
 let c4, c5;
 
+let c10;
 let closure_12;
 let closure_14;
-let closure_15;
 let map1;
-let metroImportDefault;
-let metroRequire;
 let obj2;
 let obj3;
 let obj4;
@@ -44,9 +42,9 @@ let size2;
 let size3;
 let unpackModuleId;
 let _slicedToArray = _slicedToArray_mod;
-({ Image: metroRequire, View: metroImportDefault } = react_native);
-({ GuildFeatures: unpackModuleId, JoinGuildSources: closure_12, AnalyticEvents: map1 } = Constants);
-({ jsx: closure_14, jsxs: closure_15 } = Fragment);
+const View = react_native.View;
+({ GuildFeatures: c10, JoinGuildSources: unpackModuleId, AnalyticEvents: closure_12 } = Constants);
+({ jsx: map1, jsxs: closure_14 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { card: obj2, bannerContainer: obj3, banner: { flex: 1 }, content: obj4, guildIconContainer: { position: "absolute", top: 58, left: 16 }, guildIcon: size, guildNameRow: obj5, guildBadge: obj6, guildName: { flex: 1, minWidth: 0 }, description: obj7, memberCounts: obj8, memberCount: obj9, dot: size1, dotOnline: size2, dismissButton: size3 };
 obj2 = { backgroundColor: nativeDefault.colors.BG_SURFACE_RAISED, borderColor: nativeDefault.colors.BORDER_MUTED, borderWidth: 1, borderRadius: nativeDefault.radii.lg, overflow: "hidden", flex: 1, marginBottom: nativeDefault.space.PX_16 };
@@ -62,7 +60,7 @@ obj9 = { display: "flex", flexDirection: "row", alignItems: "center", marginBott
 size1 = { width: 12, height: 12, borderRadius: 6, backgroundColor: nativeDefault.colors.TEXT_STATUS_OFFLINE };
 size2 = { width: 12, height: 12, borderRadius: 6, backgroundColor: nativeDefault.colors.TEXT_STATUS_ONLINE };
 size3 = { position: "absolute", top: 8, right: 8, width: 2 * nativeDefault.radii.lg, height: 2 * nativeDefault.radii.lg, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, alignItems: "center", justifyContent: "center" };
-let closure_16 = createStyles(obj);
+let closure_15 = createStyles(obj);
 size = size_mod;
 let result = size.fileFinishedImporting("modules/game_community_upsell/native/GameCommunityMultiGuildUpsellCard.tsx");
 
@@ -89,21 +87,20 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
   let obj6;
   let tmp17Result;
   let tmp19;
-  let useReducedMotion;
   guild = guild.guild;
   const gameId = guild.gameId;
   let onDismiss = guild.onDismiss;
   loading = undefined;
   _slicedToArray = undefined;
   let stateFromStores;
-  let closure_7;
+  let useReducedMotion;
   const cardAction = guild.cardAction;
-  let tmp = closure_16();
+  let tmp = closure_15();
   let obj = stateFromStores;
   [loading, _slicedToArray] = stateFromStores.useState(false);
   const tmp4 = guild;
   let obj2 = guild(onDismiss[11]);
-  let items = [AccessibilityStore];
+  let items = [useReducedMotion];
   stateFromStores = obj2.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   let obj3 = guild(onDismiss[11]);
   const items1 = [GuildStore, LurkingStore];
@@ -137,7 +134,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
     const features = guild.features;
     tmp9 = true === features.has(constants.ANIMATED_BANNER);
   }
-  closure_7 = tmp9;
+  useReducedMotion = tmp9;
   const items4 = [, , , ];
   ({ id: arr5[0], splash: arr5[1], banner: arr5[2] } = guild);
   items4[3] = tmp9;
@@ -419,26 +416,25 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
   obj6 = { style: tmp.banner, cutouts: items9, children: tmp17Result };
   size = { shape: tmp4(tmp5[21]).CutoutShape.RoundedRect, x: 12, y: 54, width: 64, height: 64, cornerRadius: gameId(tmp5[10]).radii.lg + 4 };
   items9 = [size];
-  const tmp18 = gameId;
   tmp19 = gameId(onDismiss[21]);
   if (null != memo1) {
     let obj7 = { style: tmp.banner, source: memo1, resizeMode: "cover" };
-    tmp17Result = tmp17(stateFromStores1, obj7);
+    tmp17Result = tmp17(tmp18(tmp5[22]), obj7);
   } else {
     let obj8 = { style: tmp.banner };
     tmp17Result = tmp17(tmp16, obj8);
   }
   items10 = [tmp17(tmp16, obj5), , , ];
-  let obj9 = { style: tmp.guildIconContainer, children: tmp17(stateFromStores1, obj10) };
+  let obj9 = { style: tmp.guildIconContainer, children: tmp17(tmp18(tmp5[22]), obj10) };
   obj10 = { style: tmp.guildIcon, source: memo };
-  items10[1] = closure_14(closure_7, obj9);
+  items10[1] = closure_13(stateFromStores1, obj9);
   let obj11 = { style: tmp.content, children: items13 };
   let obj12 = { style: tmp.guildNameRow, children: items11 };
-  const obj13 = { guild, size: tmp4(onDismiss[23]).Icon.Sizes.REFRESH_SMALL_16, style: tmp.guildBadge };
-  const tmp18Result = tmp18(onDismiss[22]);
+  const obj13 = { guild, size: tmp4(onDismiss[24]).Icon.Sizes.REFRESH_SMALL_16, style: tmp.guildBadge };
+  const tmp18Result = gameId(onDismiss[23]);
   items11 = [tmp17(tmp18Result, obj13), ];
   const obj14 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", style: tmp.guildName, lineClamp: 1, children: name };
-  items11[1] = closure_14(tmp4(onDismiss[24]).Text, obj14);
+  items11[1] = closure_13(tmp4(onDismiss[25]).Text, obj14);
   const items12 = [tmp15(tmp16, obj12), ];
   let tmp17Result3 = null != description;
   if (tmp17Result3) {
@@ -446,7 +442,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
   }
   if (tmp17Result3) {
     const obj15 = { variant: "text-sm/medium", style: tmp.description, lineClamp: 3, children: description };
-    tmp17Result3 = tmp17(tmp4(tmp5[24]).Text, obj15);
+    tmp17Result3 = tmp17(tmp4(tmp5[25]).Text, obj15);
   }
   items12[1] = tmp17Result3;
   items13 = [tmp15(tmp16, { children: items12 }), ];
@@ -457,10 +453,10 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
     const obj18 = { style: tmp.dotOnline };
     items14 = [tmp17(tmp16, obj18), ];
     const obj19 = { variant: "text-xs/medium", color: "text-subtle", children: intl.format(tmp4(onDismiss[20]).t["LC+S+m"], obj20) };
-    const Text = tmp4(tmp5[24]).Text;
+    const Text = tmp4(tmp5[25]).Text;
     intl = tmp4(tmp5[20]).intl;
     obj20 = { membersOnline: num };
-    items14[1] = closure_14(Text, obj19);
+    items14[1] = closure_13(Text, obj19);
     tmp15Result = tmp15(tmp16, obj17);
   }
   items15 = [tmp15Result, ];
@@ -470,15 +466,15 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
     const obj22 = { style: tmp.dot };
     items16 = [tmp17(tmp16, obj22), ];
     const obj23 = { variant: "text-xs/medium", color: "text-subtle", children: intl2.format(tmp4(onDismiss[20]).t.zRl6XR, obj24) };
-    const Text2 = tmp4(tmp5[24]).Text;
+    const Text2 = tmp4(tmp5[25]).Text;
     intl2 = tmp4(tmp5[20]).intl;
     obj24 = { count: num2 };
-    items16[1] = closure_14(Text2, obj23);
+    items16[1] = closure_13(Text2, obj23);
     tmp15Result2 = tmp15(tmp16, obj21);
   }
   items15[1] = tmp15Result2;
   const items17 = [tmp15(tmp16, obj16), ];
-  const Button = tmp4(tmp5[25]).Button;
+  const Button = tmp4(tmp5[26]).Button;
   if (stateFromStores1) {
     const obj25 = { variant: "active", size: "md", text: intl5.string(tmp4(onDismiss[20]).t.KLOhbO), onPress: callback1, grow: true };
     intl5 = tmp4(tmp5[20]).intl;
@@ -492,27 +488,27 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
     intl3 = tmp4(tmp5[20]).intl;
   }
   const obj28 = { children: items17 };
-  items17[1] = closure_14(Button, obj27);
-  items13[1] = closure_15(closure_7, obj28);
-  items10[2] = closure_15(closure_7, obj11);
+  items17[1] = closure_13(Button, obj27);
+  items13[1] = closure_14(stateFromStores1, obj28);
+  items10[2] = closure_14(stateFromStores1, obj11);
   let tmp17Result4 = memo2.length > 0;
   if (tmp17Result4) {
-    const obj29 = { style: tmp.dismissButton, children: closure_14(tmp4(onDismiss[26]).ContextMenu, obj30) };
+    const obj29 = { style: tmp.dismissButton, children: closure_13(tmp4(onDismiss[27]).ContextMenu, obj30) };
     obj30 = {
       items: memo2,
       children(ref) {
           let intl;
           ref = ref.ref;
           const merged = Object.assign(ref, Object.assign({ ref: 0 }));
-          const obj = { ref, icon: closure_1_14(guild(onDismiss[28]).MoreHorizontalIcon, { size: "sm" }), size: "sm", variant: "secondary-overlay", accessibilityLabel: intl.string(guild(onDismiss[20]).t.ogxXGq) };
-          const IconButton = guild(onDismiss[27]).IconButton;
+          const obj = { ref, icon: closure_1_13(guild(onDismiss[29]).MoreHorizontalIcon, { size: "sm" }), size: "sm", variant: "secondary-overlay", accessibilityLabel: intl.string(guild(onDismiss[20]).t.ogxXGq) };
+          const IconButton = guild(onDismiss[28]).IconButton;
           const merged1 = Object.assign(merged);
           intl = guild(onDismiss[20]).intl;
-          return closure_1_14(IconButton, obj);
+          return closure_1_13(IconButton, obj);
         }
     };
     tmp17Result4 = tmp17(tmp16, obj29);
   }
   items10[3] = tmp17Result4;
-  return closure_15(closure_7, obj4);
+  return closure_14(stateFromStores1, obj4);
 };

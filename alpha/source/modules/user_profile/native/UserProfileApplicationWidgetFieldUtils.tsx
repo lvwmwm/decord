@@ -1,34 +1,33 @@
-// Module ID: 8716
-// Function ID: 8717
+// Module ID: 13189
+// Function ID: 13190
 // Name: UserProfileApplicationWidgetFieldUtils
-// Dependencies: [19, 17, 21, 4896, 587, 1126, 558, 576, 8717, 8718, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 1126, 558, 576, 13190, 13191, 5086, 6164, 2]
 // Exports: formatDurationNarrow
 
-// Module 8716 (UserProfileApplicationWidgetFieldUtils)
+// Module 13189 (UserProfileApplicationWidgetFieldUtils)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import UserProfileApplicationWidgetSkeletons from "UserProfileApplicationWidgetSkeletons" /* 8717 */;
-import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 8718 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import UserProfileApplicationWidgetSkeletons from "UserProfileApplicationWidgetSkeletons" /* 13190 */;
+import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 13191 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c2;
-let c3;
 let closure_4;
 let hasOwnProperty;
 let obj2;
-({ Image: c2, View: c3 } = react_native);
+const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { fieldTextRow: obj2, fieldIcon: { width: 16, height: 16 } };
 obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
 let closure_6 = createStyles.createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FieldText(arg0) {
   let color;
   let field;
   let items;
@@ -83,7 +82,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
             const obj3 = { style: tmp23, children: items };
             items = [tmp7, tmp10];
-            const tmp18 = hasOwnProperty(_false, obj3);
+            const tmp18 = hasOwnProperty(View, obj3);
             cResult[13] = tmp4.fieldTextRow;
             cResult[14] = tmp7;
             cResult[15] = tmp10;
@@ -94,7 +93,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           if (tmp12) {
             const obj4 = { source: obj5, style: tmp4.fieldIcon, resizeMode: "contain" };
             obj5 = { uri: field.icon.url };
-            tmp12 = React3(React2, obj4);
+            tmp12 = React3(FastImageDefault, obj4);
           }
           cResult[10] = field.icon;
           cResult[11] = tmp4.fieldIcon;
@@ -118,7 +117,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[5] = result;
     tmp5 = result;
   }
-}) : ((arg0) => {
+}) : (function FieldText(arg0) {
   let color;
   let field;
   let items;
@@ -144,13 +143,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       obj6 = ApplicationWidgetMarkupUtils;
       items = [React3(Text, obj4), ];
       let tmp11Result = null != field.icon;
-      const tmp10 = _false;
+      const tmp10 = View;
       const tmp11 = React3;
       const tmp9 = hasOwnProperty;
       if (tmp11Result) {
         const obj = { source: obj7, style: tmp.fieldIcon, resizeMode: "contain" };
         obj7 = { uri: field.icon.url };
-        tmp11Result = tmp11(React2, obj);
+        tmp11Result = tmp11(FastImageDefault, obj);
       }
       items[1] = tmp11Result;
       tmp9Result = tmp9(tmp10, obj3);
@@ -196,4 +195,4 @@ export const formatDurationNarrow = function formatDurationNarrow(arg0) {
   }
   return items.join(" ");
 };
-export const FieldText = tmp5;
+export const FieldText = tmp4;

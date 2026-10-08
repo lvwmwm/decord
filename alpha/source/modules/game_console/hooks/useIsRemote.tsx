@@ -1,17 +1,17 @@
-// Module ID: 6784
-// Function ID: 6785
+// Module ID: 6959
+// Function ID: 6960
 // Name: useIsRemote
-// Dependencies: [4913, 558, 576, 504, 2]
+// Dependencies: [5109, 558, 576, 504, 2]
 
-// Module 6784 (useIsRemote)
+// Module 6959 (useIsRemote)
 import react from "react" /* 576 */;
-import GameConsoleStore from "GameConsoleStore" /* 4913 */;
+import GameConsoleStore from "GameConsoleStore" /* 5109 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsRemote() {
   let remoteSessionId;
   let tmp4;
   let tmp5;
@@ -20,7 +20,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GameConsoleStore];
-    const fn = function n() {
+    const fn = function s() {
       const tmp = null != remoteSessionId.getRemoteSessionId() || null != remoteSessionId.getAwaitingRemoteSessionInfo();
       return tmp;
     };
@@ -33,7 +33,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useIsRemote() {
   let remoteSessionId;
   const items = [GameConsoleStore];
   const obj = get_initialized;

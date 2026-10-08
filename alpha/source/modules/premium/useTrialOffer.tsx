@@ -1,14 +1,14 @@
-// Module ID: 6971
-// Function ID: 6972
+// Module ID: 7160
+// Function ID: 7161
 // Name: useTrialOffer
-// Dependencies: [32, 19, 1377, 6972, 558, 576, 504, 4534, 2046, 2]
+// Dependencies: [32, 19, 1389, 7161, 558, 576, 504, 4726, 2058, 2]
 // Exports: hasUserTrialOfferExpired
 
-// Module 6971 (useTrialOffer)
+// Module 7160 (useTrialOffer)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
-import UserOfferStore from "UserOfferStore" /* 6972 */;
+import UserStore from "UserStore" /* 1389 */;
+import UserOfferStore from "UserOfferStore" /* 7161 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, startResult, tmp3;
 
 let react = react_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialOffer(arg0) {
   let closure_0;
   let closure_3;
   let currentUser;
@@ -41,7 +41,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function f() {
+    const fn = function o() {
       return UserOfferStore.getUserTrialOffer(closure_0);
     };
     cResult[1] = arg0;
@@ -66,15 +66,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   react = tmp8[1];
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [UserStore];
-    class T {
-      constructor() {
-        const obj = closure_0(stateFromStores[7]);
-        return obj.isPremium(currentUser.getCurrentUser());
-      }
-    }
+    const fn2 = function p() {
+      const obj = closure_0(stateFromStores[7]);
+      return obj.isPremium(currentUser.getCurrentUser());
+    };
     cResult[3] = items1;
-    cResult[4] = T;
-    tmp11 = T;
+    cResult[4] = fn2;
+    tmp11 = fn2;
     tmp10 = items1;
   } else {
     tmp10 = cResult[3];
@@ -82,8 +80,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult2 = tmp(tmp2[6]);
   const stateFromStores1 = tmpResult2.useStateFromStores(tmp10, tmp11);
+  let result = !stateFromStores1;
   if (stateFromStores1) {
-    const result = UserOfferStore.canFractionalPremiumUserUseOffer();
+    result = UserOfferStore.canFractionalPremiumUserUseOffer();
   }
   if (cResult[5] === first1) {
     let tmp16;
@@ -93,15 +92,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp17 = cResult[8];
     }
     const effect = obj3.useEffect(tmp16, tmp17);
-    class T {
-      constructor() {
-        const obj = closure_0(stateFromStores[7]);
-        return obj.isPremium(currentUser.getCurrentUser());
+    let tmp19 = null;
+    if (!first1) {
+      tmp19 = null;
+      if (result) {
+        tmp19 = stateFromStores;
       }
     }
-    return null;
+    return tmp19;
   }
-  class U {
+  class E {
     constructor() {
       tmp = closure_1;
       if (null != closure_1) {
@@ -139,7 +139,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 }
                 const obj = timeout;
                 if (timeout != null) {
-                  obj.start(num, f151368);
+                  obj.start(num, f152881);
                 }
               }
             });
@@ -153,11 +153,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items2 = [first1, stateFromStores];
   cResult[5] = first1;
   cResult[6] = stateFromStores;
-  cResult[7] = U;
+  cResult[7] = E;
   cResult[8] = items2;
   tmp17 = items2;
-  tmp16 = U;
-}) : ((arg0) => {
+  tmp16 = E;
+}) : (function useTrialOffer(arg0) {
   let closure_0;
   let closure_3;
   let currentUser;
@@ -194,7 +194,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const items2 = [first, stateFromStores];
   const effect = obj3.useEffect(function() {
-    const f151369 = () => {
+    const f152882 = () => {
       const tmp = first;
       if (!tmp) {
         if (stateFromStores.hasExpired) {
@@ -211,7 +211,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const obj = timeout;
         if (timeout != null) {
-          obj.start(num, f151369);
+          obj.start(num, f152882);
         }
       }
     };
@@ -229,7 +229,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             let time = expiresAt.getTime();
             num = time - Date.now();
           }
-          timeout.start(num, f151369);
+          timeout.start(num, f152882);
         }
         return () => timeout.stop();
       }

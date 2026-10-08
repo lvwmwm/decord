@@ -1,22 +1,20 @@
-// Module ID: 11867
-// Function ID: 11868
+// Module ID: 11939
+// Function ID: 11940
 // Name: MessageBlock
-// Dependencies: [19, 17, 21, 587, 4896, 558, 576, 1188, 2]
+// Dependencies: [19, 17, 21, 587, 5090, 558, 576, 1200, 2]
 
-// Module 11867 (MessageBlock)
+// Module 11939 (MessageBlock)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let children;
-
 let tmp;
-const native = tmp(1188);
+const native = tmp(1200);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 const MessageBlockColors = { RED: 0, [0]: "RED", YELLOW: 1, [1]: "YELLOW" };
@@ -42,7 +40,7 @@ let closure_6 = createStyles.createStyles((arg0) => {
   }
   return obj3;
 });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageBlock(children) {
   const obj = react2;
   const cResult = obj.c(6);
   children = children.children;
@@ -70,7 +68,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[1] = tmp4.text;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((children) => {
+}) : (function MessageBlock(children) {
   children = children.children;
   const tmp = closure_6(children.color);
   return <View style={tmp.container}>{null}</View>;

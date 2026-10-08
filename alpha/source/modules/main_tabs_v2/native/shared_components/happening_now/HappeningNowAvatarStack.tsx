@@ -1,21 +1,21 @@
-// Module ID: 16046
-// Function ID: 16047
+// Module ID: 16306
+// Function ID: 16307
 // Name: HappeningNowAvatarStack
-// Dependencies: [32, 19, 17, 2116, 12871, 21, 4896, 587, 1188, 558, 576, 4618, 573, 5604, 8502, 1888, 4892, 16047, 2]
+// Dependencies: [32, 19, 17, 2128, 13020, 21, 5090, 587, 1200, 558, 576, 4810, 573, 5374, 8986, 1900, 5086, 16307, 2]
 
-// Module 16046 (HappeningNowAvatarStack)
+// Module 16306 (HappeningNowAvatarStack)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import spring from "spring" /* 5604 */;
-import ClipView from "ClipView" /* 8502 */;
-import ChannelAnimationConstants from "ChannelAnimationConstants" /* 12871 */;
+import native from "native" /* 1200 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import spring from "spring" /* 5374 */;
+import ClipView from "ClipView" /* 8986 */;
+import ChannelAnimationConstants from "ChannelAnimationConstants" /* 13020 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import LocaleStore_mod from "LocaleStore" /* 2116 */;
+import LocaleStore_mod from "LocaleStore" /* 2128 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ let closure_14 = { code: "function HappeningNowAvatarStackTsx3(){const{isStage,e
 const __initData2 = { code: "function HappeningNowAvatarStackTsx4(){const{interpolate,typingValue,ELLIPSIS_WIDTH}=this.__closure;return{opacity:interpolate(typingValue.get(),[0,1],[0,1]),width:interpolate(typingValue.get(),[0,1],[0,ELLIPSIS_WIDTH])};}" };
 let closure_16 = { code: "function HappeningNowAvatarStackTsx5(finished){const{runOnJS,setRenderComponents,isTyping}=this.__closure;if(!finished)return;runOnJS(setRenderComponents)(isTyping);}" };
 const __initData3 = { code: "function HappeningNowAvatarStackTsx6(){const{isStage,extraUsers,avatars,AVATAR_SIZE_MAP,avatarSize,avatarOverlap,withSpring,SPRING_CONFIG}=this.__closure;const hasExtraBubble=!isStage&&extraUsers>0;const numBubbles=avatars.length+(hasExtraBubble?1:0);const width=numBubbles>0?numBubbles*AVATAR_SIZE_MAP[avatarSize]-(numBubbles-1)*avatarOverlap:0;return{width:withSpring(width,SPRING_CONFIG),marginRight:numBubbles===0?0:4};}" };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HappeningNowAvatarStack(arg0) {
   let avatarBorderWidth;
   let avatarOverlap;
   let avatarSize;
@@ -77,7 +77,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num = userLimit;
   }
   if (undefined === avatarSize) {
-    avatarSize = tmp(1188).AvatarSizes.XSMALL_20;
+    avatarSize = tmp(1200).AvatarSizes.XSMALL_20;
   }
   let num2 = 2;
   if (undefined !== avatarBorderWidth) {
@@ -104,8 +104,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp7 = avatarSize(num2.useState(tmp6), 2);
   [tmp8, CHANNEL_SPRING_CONFIG] = tmp7;
   let num6 = 0;
-  const useSharedValue = tmp(4618).useSharedValue;
-  tmp(4618);
+  const useSharedValue = tmp(4810).useSharedValue;
+  tmp(4810);
   if (tmp4) {
     num6 = 1;
   }
@@ -128,7 +128,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult3 = tmp(573);
   const stateFromStores = tmpResult3.useStateFromStores(tmp11, tmp12);
-  const tmpResult4 = tmp(4618);
+  const tmpResult4 = tmp(4810);
   class J {
     constructor() {
       let obj2;
@@ -139,7 +139,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return obj;
     }
   }
-  let obj3 = { interpolate: tmp(4618).interpolate, typingValue: sharedValue, ELLIPSIS_WIDTH: 28 };
+  let obj3 = { interpolate: tmp(4810).interpolate, typingValue: sharedValue, ELLIPSIS_WIDTH: 28 };
   J.__closure = obj3;
   J.__workletHash = 14140918847743;
   J.__initData = __initData;
@@ -232,7 +232,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = fn2;
   tmp17 = fn2;
   tmp16 = items1;
-}) : ((userLimit) => {
+}) : (function HappeningNowAvatarStack(userLimit) {
   let Text;
   let c10;
   let c7;
@@ -371,7 +371,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return metroImportAll(tmp7, obj2, user.id);
   });
   const tmp6Result6 = tmp6(tmp7[11]);
-  class H {
+  class L {
     constructor() {
       let num4;
       let obj2;
@@ -398,10 +398,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   let obj3 = { isStage, extraUsers: diff, avatars: mapped, AVATAR_SIZE_MAP: tmp6(tmp7[8]).AVATAR_SIZE_MAP, avatarSize: XSMALL_20, avatarOverlap: num3, withSpring: tmp6(tmp7[13]).withSpring, SPRING_CONFIG };
-  H.__closure = obj3;
-  H.__workletHash = 9687356498740;
-  H.__initData = __initData3;
-  const animatedStyle1 = tmp6Result6.useAnimatedStyle(H);
+  L.__closure = obj3;
+  L.__workletHash = 9687356498740;
+  L.__initData = __initData3;
+  const animatedStyle1 = tmp6Result6.useAnimatedStyle(L);
   const obj4 = { style: null, children: null };
   if (isStage) {
     const items2 = [tmp3.stageAvatarStack, style];

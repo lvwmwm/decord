@@ -1,28 +1,26 @@
-// Module ID: 14869
-// Function ID: 14870
+// Module ID: 15131
+// Function ID: 15132
 // Name: BountiesScrollIndicatorAnimation
-// Dependencies: [32, 19, 17, 21, 4896, 558, 576, 4586, 587, 4670, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 558, 576, 4778, 587, 4862, 2]
 
-// Module 14869 (BountiesScrollIndicatorAnimation)
+// Module 15131 (BountiesScrollIndicatorAnimation)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4586 */;
+import useToken from "useToken" /* 4778 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let visible;
-
 let tmp;
-const BountiesScrollIndicatorRive = tmp(4670);
+const BountiesScrollIndicatorRive = tmp(4862);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles(() => ({ container: { width: 80, height: 80 } }));
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesScrollIndicatorAnimation(visible) {
   let tmp7;
   let tmp8;
   const obj = react2;
@@ -75,7 +73,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   cResult[1] = !isFadingInContent;
   cResult[2] = obj5;
   tmp13 = obj5;
-}) : ((visible) => {
+}) : (function BountiesScrollIndicatorAnimation(visible) {
   let tmp6;
   let tmp7;
   visible = visible.visible;

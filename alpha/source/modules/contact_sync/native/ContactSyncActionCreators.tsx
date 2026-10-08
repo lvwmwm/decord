@@ -1,13 +1,13 @@
-// Module ID: 12348
-// Function ID: 12349
+// Module ID: 12444
+// Function ID: 12445
 // Name: ContactSyncActionCreators
-// Dependencies: [5, 5447, 1085, 2028, 1390, 1252, 12344, 6684, 2]
+// Dependencies: [5, 5757, 1085, 2040, 1402, 1264, 12440, 6861, 2]
 
-// Module 12348 (ContactSyncActionCreators)
-import FlagUtils from "FlagUtils" /* 1390 */;
-import UserSettings from "UserSettings" /* 2028 */;
+// Module 12444 (ContactSyncActionCreators)
+import FlagUtils from "FlagUtils" /* 1402 */;
+import UserSettings from "UserSettings" /* 2040 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5447 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5757 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -328,13 +328,13 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
   }
 });
 obj = {
-  updateName: function() {
+  updateName() {
     return closure_0(...arguments);
   },
   updateDiscoverability() {
     return obj(...arguments);
   },
-  updateContactSyncEnabled: function() {
+  updateContactSyncEnabled() {
     return closure_0(...arguments);
   }
 };

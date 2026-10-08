@@ -1,26 +1,26 @@
-// Module ID: 17256
-// Function ID: 17257
+// Module ID: 17537
+// Function ID: 17538
 // Name: SoundboardSoundPicker
-// Dependencies: [32, 19, 17, 17257, 4919, 1377, 5689, 17258, 1085, 21, 4896, 587, 558, 576, 4618, 573, 17259, 6856, 6478, 6664, 6688, 1260, 8455, 1369, 9906, 4758, 1126, 4892, 6554, 17264, 17274, 17275, 6652, 2]
+// Dependencies: [32, 19, 17, 17538, 5108, 1389, 5426, 17539, 1085, 21, 5090, 587, 558, 576, 4810, 573, 17540, 7045, 6656, 6841, 6865, 1272, 8941, 1381, 9387, 4952, 1126, 5086, 6730, 17545, 17555, 17556, 6829, 2]
 
-// Module 17256 (SoundboardSoundPicker)
+// Module 17537 (SoundboardSoundPicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import SoundboardConstants from "SoundboardConstants" /* 5689 */;
-import searchSounds from "searchSounds" /* 6856 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 17258 */;
+import SoundboardConstants from "SoundboardConstants" /* 5426 */;
+import searchSounds from "searchSounds" /* 7045 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 17539 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ExpressionPickerStore from "ExpressionPickerStore" /* 17257 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
-import UserStore from "UserStore" /* 1377 */;
+import ExpressionPickerStore from "ExpressionPickerStore" /* 17538 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, channel;
+let BottomSheet;
 
 let closure_12;
 let map1;
@@ -36,7 +36,7 @@ const EXPRESSION_FOOTER_HEIGHT = Constants.EXPRESSION_FOOTER_HEIGHT;
 let obj = { title: { marginBottom: 8 }, container: { flex: 1, alignItems: "center" }, header: obj2, body: { flex: 1, width: "100%" } };
 obj2 = { paddingHorizontal: SOUND_ROW_HORIZONTAL_PADDING, padding: nativeDefault.space.PX_8, width: "100%" };
 let closure_14 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SoundboardSoundPicker(channel) {
   let analyticsSource;
   let availableSounds;
   let categories;
@@ -135,7 +135,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   cResult[9] = tmp19;
   cResult[10] = tmpResult4.searchSounds(tmp19, availableSounds, stateFromStores, channel);
   tmpResult4.searchSounds(tmp19, availableSounds, stateFromStores, channel);
-}) : ((channel) => {
+}) : (function SoundboardSoundPicker(channel) {
   let SearchField;
   let SoundboardSoundPickerList;
   let _undefined;

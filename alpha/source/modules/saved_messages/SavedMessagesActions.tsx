@@ -1,14 +1,14 @@
-// Module ID: 11348
-// Function ID: 11349
+// Module ID: 12662
+// Function ID: 12663
 // Name: SavedMessagesActions
-// Dependencies: [5, 11296, 1085, 1282, 7506, 584, 5118, 2]
+// Dependencies: [5, 9632, 1085, 1294, 9633, 584, 5430, 2]
 // Exports: deleteSavedMessage, fetchAndUpdateSavedMessages, upsertSavedMessage
 
-// Module 11348 (SavedMessagesActions)
+// Module 12662 (SavedMessagesActions)
 import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11296 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 9632 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4;

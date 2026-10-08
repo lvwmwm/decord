@@ -1,17 +1,17 @@
-// Module ID: 6006
-// Function ID: 6007
+// Module ID: 6192
+// Function ID: 6193
 // Name: TableRowIcon
-// Dependencies: [109, 19, 17, 21, 4896, 587, 5603, 558, 576, 2]
+// Dependencies: [109, 19, 17, 21, 5090, 587, 5377, 558, 576, 2]
 
-// Module 6006 (TableRowIcon)
+// Module 6192 (TableRowIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Icon from "Icon" /* 5603 */;
+import Icon from "Icon" /* 5377 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ obj4 = { color: nativeDefault.colors.TEXT_STATUS_IDLE };
 ({ color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT });
 ({ color: nativeDefault.colors.WHITE });
 let closure_8 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRowIcon(arg0) {
   let IconComponent;
   let source;
   let tmp5;
@@ -78,9 +78,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[6] !== str) {
       let REFRESH_SMALL_16;
       if ("default" === str) {
-        REFRESH_SMALL_16 = tmp(5603).IconSizes.MEDIUM;
+        REFRESH_SMALL_16 = tmp(5377).IconSizes.MEDIUM;
       } else {
-        REFRESH_SMALL_16 = tmp(5603).IconSizes.REFRESH_SMALL_16;
+        REFRESH_SMALL_16 = tmp(5377).IconSizes.REFRESH_SMALL_16;
       }
       cResult[6] = str;
       cResult[7] = REFRESH_SMALL_16;
@@ -218,7 +218,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       break;
     }
   }
-}) : ((arg0) => {
+}) : (function TableRowIcon(arg0) {
   let IconComponent;
   let items;
   let source;

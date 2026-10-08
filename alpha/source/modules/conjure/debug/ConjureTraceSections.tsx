@@ -1,10 +1,10 @@
-// Module ID: 16788
-// Function ID: 16789
+// Module ID: 17063
+// Function ID: 17064
 // Name: ConjureTraceSections
 // Dependencies: [2]
 // Exports: traceDetailSections
 
-// Module 16788 (ConjureTraceSections)
+// Module 17063 (ConjureTraceSections)
 import size from "module_2" /* 2 */;
 
 let set;

@@ -1,15 +1,15 @@
-// Module ID: 14349
-// Function ID: 14350
+// Module ID: 14577
+// Function ID: 14578
 // Name: providers
-// Dependencies: [5, 5447, 5323, 1085, 2011, 1096, 9062, 9064, 5449, 9059, 584, 1121, 8764, 6684, 2]
+// Dependencies: [5, 5757, 5635, 1085, 2023, 1096, 11137, 11142, 5759, 11134, 584, 1121, 9147, 6861, 2]
 
-// Module 14349 (providers)
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9062 */;
+// Module 14577 (providers)
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11137 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5447 */;
-import Constants_mod from "Constants" /* 5323 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5757 */;
+import Constants_mod from "Constants" /* 5635 */;
 import Constants_mod2 from "Constants" /* 1085 */;
-import Constants_mod3 from "Constants" /* 2011 */;
+import Constants_mod3 from "Constants" /* 2023 */;
 import Constants_mod4 from "Constants" /* 1096 */;
 import size from "module_2" /* 2 */;
 
@@ -258,7 +258,7 @@ let obj3 = {
     stringResult = string.string();
     return keys(obj2);
   },
-  handler: function() {
+  handler() {
     return closure_3(...arguments);
   }
 };

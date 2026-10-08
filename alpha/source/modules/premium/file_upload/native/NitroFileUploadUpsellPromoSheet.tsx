@@ -1,24 +1,22 @@
-// Module ID: 17162
-// Function ID: 17163
+// Module ID: 17443
+// Function ID: 17444
 // Name: NitroFileUploadUpsellPromoSheet
-// Dependencies: [19, 17, 1085, 2048, 21, 4896, 587, 558, 576, 5597, 6895, 9658, 17160, 1126, 2621, 5601, 10058, 2]
+// Dependencies: [19, 17, 1085, 2060, 21, 5090, 587, 558, 576, 5392, 7084, 9451, 17441, 1126, 2665, 5375, 10303, 2]
 
-// Module 17162 (NitroFileUploadUpsellPromoSheet)
+// Module 17443 (NitroFileUploadUpsellPromoSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import _modDef2621 from "module_2621" /* 2621 */;
-import openUserSettings from "openUserSettings" /* 6895 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9658 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import openUserSettings from "openUserSettings" /* 7084 */;
 import react_mod from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let dependencyMap, importDefault, markAsDismissed;
+let flag, importDefault, obj1, openUserSettingsResult, tmp2;
 
 let hasOwnProperty;
 let metroRequire;
@@ -31,86 +29,117 @@ const jsx = Fragment.jsx;
 let obj = { illustration: obj2 };
 obj2 = { paddingTop: nativeDefault.space.PX_12 };
 let closure_9 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => {
-  let closure_2;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroFileUploadUpsellPromoSheet(markAsDismissed) {
   let loading;
   let onPress;
   let ref;
   let ref2;
-  let tmp13;
-  let tmp18;
-  let tmp19;
-  let tmp22;
-  let tmp5;
+  let tmp15;
+  let tmp20;
+  let tmp21;
+  let tmp24;
   let tmp6;
   const tmp = markAsDismissed;
-  let obj = markAsDismissed(576);
+  let obj = markAsDismissed(U[8]);
   const cResult = obj.c(23);
   markAsDismissed = markAsDismissed.markAsDismissed;
   const tmp4 = closure_9();
   let obj2 = react;
   importDefault = react.useRef(false);
   if (cResult[0] !== markAsDismissed) {
-    const fn = function _(arg0) {
-      if (!ref.current) {
-        tmp.current = true;
-        markAsDismissed(arg0);
+    class U {
+      constructor(arg0) {
+        if (!closure_1.current) {
+          tmp2 = markAsDismissed;
+          flag = true;
+          tmp.current = true;
+          tmp3 = markAsDismissed;
+          tmp4 = markAsDismissed(markAsDismissed);
+        }
+        return;
       }
-    };
+    }
     cResult[0] = markAsDismissed;
-    cResult[1] = fn;
-    tmp5 = fn;
+    cResult[1] = U;
   } else {
-    tmp5 = cResult[1];
+    class U {
+      constructor(arg0) {
+        if (!closure_1.current) {
+          tmp2 = markAsDismissed;
+          flag = true;
+          tmp.current = true;
+          tmp3 = markAsDismissed;
+          tmp4 = markAsDismissed(markAsDismissed);
+        }
+        return;
+      }
+    }
   }
-  dependencyMap = tmp5;
+  U = tmp5;
   react = obj2.useRef(ContentDismissActionType.AUTO_DISMISS);
   if (cResult[2] !== tmp5) {
-    class A {
-      constructor() {
-        closure_2(ref2.current);
+    class U {
+      constructor(arg0) {
+        if (!closure_1.current) {
+          tmp2 = markAsDismissed;
+          flag = true;
+          tmp.current = true;
+          tmp3 = markAsDismissed;
+          tmp4 = markAsDismissed(markAsDismissed);
+        }
+        return;
       }
     }
     cResult[2] = tmp5;
-    cResult[3] = A;
-    tmp6 = A;
+    cResult[3] = tmp7;
+    tmp6 = tmp7;
   } else {
-    class A {
-      constructor() {
-        closure_2(ref2.current);
+    class U {
+      constructor(arg0) {
+        if (!closure_1.current) {
+          tmp2 = markAsDismissed;
+          flag = true;
+          tmp.current = true;
+          tmp3 = markAsDismissed;
+          tmp4 = markAsDismissed(markAsDismissed);
+        }
+        return;
       }
     }
   }
-  const tmpResult = tmp(5597);
+  const tmpResult = tmp(U[9]);
   const unmountEffect = tmpResult.useUnmountEffect(tmp6);
   if (cResult[4] !== tmp5) {
-    class P {
+    class A {
       constructor() {
-        closure_2(ContentDismissActionType.TAKE_ACTION);
-        const obj = openUserSettings;
-        const obj2 = { screen: metroRequire.PREMIUM };
-        obj.openUserSettings(obj2);
+        tmp = closure_2(ContentDismissActionType.TAKE_ACTION);
+        obj = closure_0(closure_2[10]);
+        obj1 = { screen: UserSettingsSections.PREMIUM };
+        openUserSettingsResult = obj.openUserSettings(obj1);
+        return;
       }
     }
     cResult[4] = tmp5;
-    cResult[5] = P;
+    cResult[5] = A;
   } else {
-    class P {
+    class A {
       constructor() {
-        closure_2(ContentDismissActionType.TAKE_ACTION);
-        const obj = openUserSettings;
-        const obj2 = { screen: metroRequire.PREMIUM };
-        obj.openUserSettings(obj2);
+        tmp = closure_2(ContentDismissActionType.TAKE_ACTION);
+        obj = closure_0(closure_2[10]);
+        obj1 = { screen: UserSettingsSections.PREMIUM };
+        openUserSettingsResult = obj.openUserSettings(obj1);
+        return;
       }
     }
   }
-  ({ loading, onPress } = usePremiumFeatureUpsellGetNitroDefault(false, tmp8, constants.PREMIUM_UPSELL_FILE_UPLOAD));
-  usePremiumFeatureUpsellGetNitroDefault(false, tmp8, constants.PREMIUM_UPSELL_FILE_UPLOAD);
+  ({ loading, onPress } = require("usePremiumFeatureUpsellGetNitro")(false, tmp9, constants.PREMIUM_UPSELL_FILE_UPLOAD));
+  require("usePremiumFeatureUpsellGetNitro")(false, tmp9, constants.PREMIUM_UPSELL_FILE_UPLOAD);
   if (cResult[6] !== onPress) {
     class M {
       constructor() {
-        ref2.current = ContentDismissActionType.TAKE_ACTION;
-        onPress();
+        closure_3.current = ContentDismissActionType.TAKE_ACTION;
+        tmp = onPress();
+        return;
       }
     }
     cResult[6] = onPress;
@@ -118,126 +147,153 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
   } else {
     class M {
       constructor() {
-        ref2.current = ContentDismissActionType.TAKE_ACTION;
-        onPress();
+        closure_3.current = ContentDismissActionType.TAKE_ACTION;
+        tmp = onPress();
+        return;
       }
     }
   }
   if (cResult[8] !== tmp5) {
-    class D {
+    class M {
       constructor() {
-        closure_2(ContentDismissActionType.USER_DISMISS);
+        closure_3.current = ContentDismissActionType.TAKE_ACTION;
+        tmp = onPress();
+        return;
       }
     }
     cResult[8] = tmp5;
-    cResult[9] = D;
+    cResult[9] = tmp14;
   } else {
-    class D {
+    class M {
       constructor() {
-        closure_2(ContentDismissActionType.USER_DISMISS);
+        closure_3.current = ContentDismissActionType.TAKE_ACTION;
+        tmp = onPress();
+        return;
       }
     }
   }
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-    class D {
+    class M {
       constructor() {
-        closure_2(ContentDismissActionType.USER_DISMISS);
+        closure_3.current = ContentDismissActionType.TAKE_ACTION;
+        tmp = onPress();
+        return;
       }
     }
-    const tmp14 = jsx(tmp(17160).FileUploadSpotIllustration, { accessible: false, resizeMode: "contain" });
-    cResult[10] = tmp14;
-    tmp13 = tmp14;
+    const tmp16 = jsx(tmp(U[12]).FileUploadSpotIllustration, { accessible: false, resizeMode: "contain" });
+    cResult[10] = tmp16;
+    tmp15 = tmp16;
   } else {
-    class D {
+    class M {
       constructor() {
-        closure_2(ContentDismissActionType.USER_DISMISS);
+        closure_3.current = ContentDismissActionType.TAKE_ACTION;
+        tmp = onPress();
+        return;
       }
     }
   }
   if (cResult[11] !== tmp4.illustration) {
-    class D {
+    class M {
       constructor() {
-        closure_2(ContentDismissActionType.USER_DISMISS);
+        closure_3.current = ContentDismissActionType.TAKE_ACTION;
+        tmp = onPress();
+        return;
       }
     }
-    const tmp17 = <onPress style={tmp4.illustration}>{tmp13}</onPress>;
+    const tmp19 = <onPress style={tmp4.illustration}>{tmp15}</onPress>;
     cResult[11] = tmp4.illustration;
-    cResult[12] = tmp17;
+    cResult[12] = tmp19;
   } else {
-    class D {
+    class M {
       constructor() {
-        closure_2(ContentDismissActionType.USER_DISMISS);
+        closure_3.current = ContentDismissActionType.TAKE_ACTION;
+        tmp = onPress();
+        return;
       }
     }
   }
   if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-    class D {
+    class M {
       constructor() {
-        closure_2(ContentDismissActionType.USER_DISMISS);
+        closure_3.current = ContentDismissActionType.TAKE_ACTION;
+        tmp = onPress();
+        return;
       }
     }
-    const stringResult = obj5.string(_modDef2621["Uty2/X"]);
-    const intl = tmp(1126).intl;
-    const stringResult1 = intl.string(_modDef2621.VAgI8Q);
+    const stringResult = obj5.string(require("module_2665")["Uty2/X"]);
+    const intl = tmp(tmp2[13]).intl;
+    const stringResult1 = intl.string(require("module_2665").VAgI8Q);
     cResult[13] = stringResult;
     cResult[14] = stringResult1;
-    tmp19 = stringResult1;
-    tmp18 = stringResult;
+    tmp21 = stringResult1;
+    tmp20 = stringResult;
   } else {
-    class D {
+    class M {
       constructor() {
-        closure_2(ContentDismissActionType.USER_DISMISS);
+        closure_3.current = ContentDismissActionType.TAKE_ACTION;
+        tmp = onPress();
+        return;
       }
     }
-    tmp19 = cResult[14];
+    tmp21 = cResult[14];
   }
   if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-    class D {
+    class M {
       constructor() {
-        closure_2(ContentDismissActionType.USER_DISMISS);
+        closure_3.current = ContentDismissActionType.TAKE_ACTION;
+        tmp = onPress();
+        return;
       }
     }
-    const stringResult2 = obj6.string(_modDef2621.mRy6sO);
+    const stringResult2 = obj6.string(require("module_2665").mRy6sO);
     cResult[15] = stringResult2;
-    tmp22 = stringResult2;
+    tmp24 = stringResult2;
   } else {
-    class D {
+    class M {
       constructor() {
-        closure_2(ContentDismissActionType.USER_DISMISS);
+        closure_3.current = ContentDismissActionType.TAKE_ACTION;
+        tmp = onPress();
+        return;
       }
     }
   }
   if (!loading) {
-    class D {
+    class M {
       constructor() {
-        closure_2(ContentDismissActionType.USER_DISMISS);
+        closure_3.current = ContentDismissActionType.TAKE_ACTION;
+        tmp = onPress();
+        return;
       }
     }
   }
   if (cResult[16] === loading) {
-    class D {
+    class M {
       constructor() {
-        closure_2(ContentDismissActionType.USER_DISMISS);
+        closure_3.current = ContentDismissActionType.TAKE_ACTION;
+        tmp = onPress();
+        return;
       }
     }
-    if (cResult[19] === tmp12) {
-      class D {
+    if (cResult[19] === tmp13) {
+      class M {
         constructor() {
-          closure_2(ContentDismissActionType.USER_DISMISS);
+          closure_3.current = ContentDismissActionType.TAKE_ACTION;
+          tmp = onPress();
+          return;
         }
       }
     }
-    cResult[19] = tmp12;
-    cResult[20] = tmp25;
-    cResult[21] = tmp15;
-    cResult[22] = jsx(tmp(10058).PromoSheet, { illustration: tmp15, title: tmp18, description: tmp19, onDismiss: tmp12, actions: tmp25 });
-    const tmp29 = jsx(tmp(10058).PromoSheet, { illustration: tmp15, title: tmp18, description: tmp19, onDismiss: tmp12, actions: tmp25 });
+    cResult[19] = tmp13;
+    cResult[20] = tmp27;
+    cResult[21] = tmp17;
+    cResult[22] = jsx(tmp(U[16]).PromoSheet, { illustration: tmp17, title: tmp20, description: tmp21, onDismiss: tmp13, actions: tmp27 });
+    const tmp31 = jsx(tmp(U[16]).PromoSheet, { illustration: tmp17, title: tmp20, description: tmp21, onDismiss: tmp13, actions: tmp27 });
   }
   cResult[16] = loading;
   cResult[17] = null;
-  cResult[18] = jsx(tmp(5601).Button, { grow: true, size: "lg", variant: "primary", loading, text: tmp22, onPress: null });
-  const tmp26 = jsx(tmp(5601).Button, { grow: true, size: "lg", variant: "primary", loading, text: tmp22, onPress: null });
-}) : ((markAsDismissed) => {
+  cResult[18] = jsx(tmp(U[15]).Button, { grow: true, size: "lg", variant: "primary", loading, text: tmp24, onPress: null });
+  const tmp28 = jsx(tmp(U[15]).Button, { grow: true, size: "lg", variant: "primary", loading, text: tmp24, onPress: null });
+}) : (function NitroFileUploadUpsellPromoSheet(markAsDismissed) {
   let intl3;
   let loading;
   let onPress;
@@ -282,14 +338,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
   const PromoSheet = markAsDismissed(callback[16]).PromoSheet;
   const intl = markAsDismissed(callback[13]).intl;
   const intl2 = markAsDismissed(callback[13]).intl;
-  ({ grow: true, size: "lg", variant: "primary", loading, text: intl3.string(require("module_2621").mRy6sO), onPress: tmp9 });
+  ({ grow: true, size: "lg", variant: "primary", loading, text: intl3.string(require("module_2665").mRy6sO), onPress: tmp9 });
   const Button = markAsDismissed(callback[15]).Button;
   intl3 = markAsDismissed(callback[13]).intl;
   tmp9 = null;
   if (!loading) {
     tmp9 = callback2;
   }
-  return <PromoSheet illustration={null} title={intl.string(require("module_2621")["Uty2/X"])} description={intl2.string(require("module_2621").VAgI8Q)} onDismiss={callback3} actions={null} />;
+  return <PromoSheet illustration={null} title={intl.string(require("module_2665")["Uty2/X"])} description={intl2.string(require("module_2665").VAgI8Q)} onDismiss={callback3} actions={null} />;
 });
 const result = size.fileFinishedImporting("modules/premium/file_upload/native/NitroFileUploadUpsellPromoSheet.tsx");
 

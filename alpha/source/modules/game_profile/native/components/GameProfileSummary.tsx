@@ -1,15 +1,15 @@
-// Module ID: 8417
-// Function ID: 8418
+// Module ID: 8914
+// Function ID: 8915
 // Name: GameProfileSummary
-// Dependencies: [32, 19, 17, 21, 4896, 558, 576, 8352, 1126, 4892, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 558, 576, 8850, 1126, 5086, 2]
 
-// Module 8417 (GameProfileSummary)
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8352 */;
+// Module 8914 (GameProfileSummary)
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8850 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let _slicedToArray = _slicedToArray_mod;
 ({ View: closure_4, Pressable: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ container: { flexDirection: "column" } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileSummary(arg0) {
   let closure_2;
   let closure_4;
   let first;
@@ -144,7 +144,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = trackAction;
   cResult[4] = fn2;
   tmp10 = fn2;
-}) : ((arg0) => {
+}) : (function GameProfileSummary(arg0) {
   let closure_2;
   let closure_4;
   let first;

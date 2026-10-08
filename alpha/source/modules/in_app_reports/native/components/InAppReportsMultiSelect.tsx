@@ -1,22 +1,21 @@
-// Module ID: 12736
-// Function ID: 12737
+// Module ID: 13404
+// Function ID: 13405
 // Name: InAppReportsMultiSelect
-// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 5997, 6081, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 587, 558, 576, 6181, 6267, 2]
 
-// Module 12736 (InAppReportsMultiSelect)
+// Module 13404 (InAppReportsMultiSelect)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 5997 */;
-import TableRowGroup2 from "TableRowGroup" /* 6081 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 6181 */;
+import TableRowGroup2 from "TableRowGroup" /* 6267 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let state;
 
 let obj2;
 const View = react_native.View;
@@ -24,7 +23,7 @@ const jsx = Fragment.jsx;
 let obj = { container: obj2 };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_16 };
 let closure_5 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MultiSelect(state) {
   let element;
   let onPress;
   let tmp = onPress;
@@ -98,7 +97,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
     }
   }
   return null;
-}) : ((arg0) => {
+}) : (function MultiSelect(arg0) {
   let element;
   ({ element, onPress: require, state: dependencyMap } = arg0);
   if (null != element) {

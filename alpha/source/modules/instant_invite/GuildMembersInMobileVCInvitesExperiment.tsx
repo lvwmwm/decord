@@ -1,11 +1,11 @@
-// Module ID: 9520
-// Function ID: 9521
+// Module ID: 8690
+// Function ID: 8691
 // Name: GuildMembersInMobileVCInvitesExperiment
-// Dependencies: [1440, 2]
+// Dependencies: [1452, 2]
 // Exports: getGuildMembersInMobileVCInvitesExperiment
 
-// Module 9520 (GuildMembersInMobileVCInvitesExperiment)
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+// Module 8690 (GuildMembersInMobileVCInvitesExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

@@ -1,25 +1,25 @@
-// Module ID: 6436
-// Function ID: 6437
+// Module ID: 6614
+// Function ID: 6615
 // Name: Login
-// Dependencies: [5, 32, 19, 17, 6437, 502, 1085, 21, 4896, 558, 576, 4892, 5916, 5715, 1126, 1369, 6438, 6439, 1490, 504, 1493, 6089, 6441, 5716, 6442, 6443, 6444, 5319, 6445, 6449, 6450, 6452, 6446, 5601, 6453, 1615, 6455, 6457, 6105, 6463, 6465, 6467, 5600, 6474, 6435, 2]
+// Dependencies: [5, 32, 19, 17, 6615, 502, 1085, 21, 5090, 558, 576, 5086, 6189, 5298, 1126, 1381, 6616, 6617, 1502, 504, 1505, 5936, 6619, 5299, 6620, 6621, 6622, 5631, 6623, 6627, 6628, 6630, 6624, 5375, 6631, 1627, 6633, 6635, 6283, 6641, 6643, 6645, 5373, 6652, 6613, 2]
 // Exports: default
 
-// Module 6436 (Login)
+// Module 6614 (Login)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl11 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5715 */;
-import Pressables from "Pressables" /* 5916 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5298 */;
+import Pressables from "Pressables" /* 6189 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import PhoneStore from "PhoneStore" /* 6437 */;
+import PhoneStore from "PhoneStore" /* 6615 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -70,17 +70,16 @@ let closure_12 = createStyles.createStyles((arg0) => {
   }
   return obj;
 });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkButton(arg0) {
   let containerStyle;
+  let first;
   let onPress;
   let text;
   let textColor;
   let textStyle;
-  let tmp4;
-  let tmp5;
   let variant;
   const obj = react2;
-  const cResult = obj.c(12);
+  const cResult = obj.c(10);
   ({ onPress, text, containerStyle, textStyle, variant, textColor } = arg0);
   let str = "text-xs/medium";
   if (undefined !== variant) {
@@ -90,57 +89,48 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (undefined !== textColor) {
     str2 = textColor;
   }
-  if (cResult[0] !== containerStyle) {
-    const items = [containerStyle];
-    cResult[0] = containerStyle;
-    cResult[1] = items;
-    tmp4 = items;
-  } else {
-    tmp4 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const rect = { top: 8, right: 8, bottom: 8 };
-    cResult[2] = rect;
-    tmp5 = rect;
+    cResult[0] = rect;
+    first = rect;
   } else {
-    tmp5 = cResult[2];
+    first = cResult[0];
   }
-  if (cResult[3] === text) {
-    if (cResult[4] === str2) {
-      if (cResult[5] === textStyle) {
-        let tmp6;
-        if (cResult[6] === str) {
-          tmp6 = cResult[7];
+  if (cResult[1] === text) {
+    if (cResult[2] === str2) {
+      if (cResult[3] === textStyle) {
+        let tmp5;
+        if (cResult[4] === str) {
+          tmp5 = cResult[5];
         }
-        if (cResult[8] === onPress) {
-          if (cResult[9] === tmp4) {
-            let tmp8;
-            if (cResult[10] === tmp6) {
-              tmp8 = cResult[11];
+        if (cResult[6] === containerStyle) {
+          if (cResult[7] === onPress) {
+            let tmp7;
+            if (cResult[8] === tmp5) {
+              tmp7 = cResult[9];
             }
-            return tmp8;
+            return tmp7;
           }
         }
-        const obj2 = { style: tmp4, hitSlop: tmp5, accessibilityRole: "button", onPress, children: tmp6 };
-        const tmp10 = authStore(Pressables.PressableOpacity, obj2);
-        cResult[8] = onPress;
-        cResult[9] = tmp4;
-        cResult[10] = tmp6;
-        cResult[11] = tmp10;
-        tmp8 = tmp10;
+        const obj2 = { style: containerStyle, hitSlop: first, accessibilityRole: "button", onPress, children: tmp5 };
+        const tmp9 = authStore(Pressables.PressableOpacity, obj2);
+        cResult[6] = containerStyle;
+        cResult[7] = onPress;
+        cResult[8] = tmp5;
+        cResult[9] = tmp9;
+        tmp7 = tmp9;
       }
     }
   }
-  const tmp7 = authStore(Text_Text.Text, { style: textStyle, variant: str, color: str2, children: text });
-  cResult[3] = text;
-  cResult[4] = str2;
-  cResult[5] = textStyle;
-  cResult[6] = str;
-  cResult[7] = tmp7;
-  tmp6 = tmp7;
-}) : ((variant) => {
+  const tmp6 = authStore(Text_Text.Text, { style: textStyle, variant: str, color: str2, children: text });
+  cResult[1] = text;
+  cResult[2] = str2;
+  cResult[3] = textStyle;
+  cResult[4] = str;
+  cResult[5] = tmp6;
+  tmp5 = tmp6;
+}) : (function LinkButton(variant) {
   let containerStyle;
-  let items;
   let onPress;
   let text;
   let textStyle;
@@ -153,8 +143,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (str2 === undefined) {
     str2 = "text-link";
   }
-  const obj = { style: items, hitSlop: { top: 8, right: 8, bottom: 8 }, accessibilityRole: "button", onPress, children: authStore(Text_Text.Text, { style: textStyle, variant: str, color: str2, children: text }) };
-  items = [containerStyle];
+  const obj = { style: containerStyle, hitSlop: { top: 8, right: 8, bottom: 8 }, accessibilityRole: "button", onPress, children: authStore(Text_Text.Text, { style: textStyle, variant: str, color: str2, children: text }) };
   const PressableOpacity = Pressables.PressableOpacity;
   return authStore(PressableOpacity, obj);
 });
@@ -591,7 +580,7 @@ export default function Login(isMultiAccount) {
     keyboardType: "email-address",
     alpha2: stateFromStores.alpha2,
     countryCode: first,
-    onChange(arg0, arg1) {
+    onChange: function handleLoginUpdated(arg0, arg1) {
       countryCode(arg1 + arg0);
     },
     onSubmitEditing() {

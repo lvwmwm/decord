@@ -1,11 +1,11 @@
-// Module ID: 9484
-// Function ID: 9485
+// Module ID: 8648
+// Function ID: 8649
 // Name: useStartEvent
-// Dependencies: [5, 32, 19, 558, 576, 9485, 9486, 5319, 2]
+// Dependencies: [5, 32, 19, 558, 576, 8649, 8650, 5631, 2]
 
-// Module 9484 (useStartEvent)
+// Module 8648 (useStartEvent)
 import react2 from "react" /* 576 */;
-import StartEventUtilsAll from "StartEventUtils" /* 9485 */;
+import StartEventUtilsAll from "StartEventUtils" /* 8649 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -20,7 +20,7 @@ let closure_6 = {
   },
   permissionOverwrites: []
 };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStartEvent() {
   let first;
   let tmp3;
   let tmp5;
@@ -197,7 +197,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[2] = tmp3;
   cResult[3] = items;
   tmp8 = items;
-}) : (() => {
+}) : (function useStartEvent() {
   let closure_0;
   let first;
   let obj = function _startEvent2() {

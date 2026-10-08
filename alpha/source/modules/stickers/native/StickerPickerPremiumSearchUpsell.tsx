@@ -1,22 +1,22 @@
-// Module ID: 10158
-// Function ID: 10159
+// Module ID: 9744
+// Function ID: 9745
 // Name: StickerPickerPremiumSearchUpsell
-// Dependencies: [19, 1085, 1379, 21, 4896, 587, 558, 576, 6664, 9657, 7494, 8848, 9658, 1252, 4534, 1126, 8346, 9931, 2]
+// Dependencies: [19, 1085, 1391, 21, 5090, 587, 558, 576, 6841, 9394, 9219, 9208, 9451, 1264, 4726, 1126, 9005, 9453, 2]
 
-// Module 10158 (StickerPickerPremiumSearchUpsell)
+// Module 9744 (StickerPickerPremiumSearchUpsell)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PremiumUtils from "PremiumUtils" /* 4534 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PremiumUtils from "PremiumUtils" /* 4726 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import createStyles from "createStyles" /* 4896 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let guildId, importDefault;
+let flag, importDefault, obj1, tmp12, tmp15, tmp3, tmp5, tmp6, tmp7, tmp8, trackResult;
 
 let closure_4;
 let hasOwnProperty;
@@ -30,7 +30,7 @@ const jsx = Fragment.jsx;
 let obj = { nitroIcon: obj2 };
 obj2 = { marginRight: nativeDefault.space.PX_8, alignSelf: "center" };
 let closure_10 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StickerPickerPremiumSearchUpsell(guildId) {
   let analyticsLocations;
   let first;
   let loading;
@@ -110,35 +110,55 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       tmp20 = tmp22;
     }
   }
-  const fn = function p() {
-    let obj2;
-    let obj3;
-    if (!ref.current) {
-      let DM_CHANNEL;
-      tmp.current = true;
-      const obj = { type: metroImportAll.STICKERS_EVERYWHERE_INLINE_UPSELL, location: obj2, location_stack: analyticsLocations, sku_id: obj3.castPremiumSubscriptionAsSkuId(useTier0UpsellContent ? metroImportDefault.TIER_0 : metroImportDefault.TIER_2) };
-      const track = AnalyticsUtilsDefault.track;
-      const PREMIUM_UPSELL_VIEWED = constants.PREMIUM_UPSELL_VIEWED;
-      AnalyticsUtilsDefault;
-      if (null != guildId) {
-        DM_CHANNEL = hasOwnProperty.GUILD_CHANNEL;
-      } else {
-        DM_CHANNEL = hasOwnProperty.DM_CHANNEL;
+  class L {
+    constructor() {
+      if (!closure_1.current) {
+        flag = true;
+        tmp.current = true;
+        tmp2 = closure_1;
+        tmp3 = closure_2;
+        tmp4 = closure_1(closure_2[13]);
+        tmp5 = AnalyticEvents;
+        obj = { type: null, location: null, location_stack: null, sku_id: null };
+        tmp6 = PremiumUpsellTypes;
+        obj.type = PremiumUpsellTypes.STICKERS_EVERYWHERE_INLINE_UPSELL;
+        tmp7 = guildId;
+        tmp8 = null;
+        track = tmp4.track;
+        PREMIUM_UPSELL_VIEWED = AnalyticEvents.PREMIUM_UPSELL_VIEWED;
+        if (null != guildId) {
+          tmp10 = AnalyticsPages;
+          DM_CHANNEL = AnalyticsPages.GUILD_CHANNEL;
+        } else {
+          tmp9 = AnalyticsPages;
+          DM_CHANNEL = AnalyticsPages.DM_CHANNEL;
+        }
+        obj1 = { page: null, section: null };
+        obj1.page = DM_CHANNEL;
+        tmp11 = AnalyticsSections;
+        obj1.section = AnalyticsSections.STICKER_PICKER_UPSELL;
+        obj.location = obj1;
+        tmp12 = analyticsLocations;
+        obj.location_stack = analyticsLocations;
+        tmp13 = closure_0;
+        obj3 = closure_0(tmp3[14]);
+        tmp14 = useTier0UpsellContent;
+        tmp15 = PremiumSubscriptionSKUs;
+        obj.sku_id = obj3.castPremiumSubscriptionAsSkuId(useTier0UpsellContent ? tmp15.TIER_0 : tmp15.TIER_2);
+        trackResult = track(PREMIUM_UPSELL_VIEWED, obj);
       }
-      obj2 = { page: DM_CHANNEL, section: metroRequire.STICKER_PICKER_UPSELL };
-      obj3 = PremiumUtils;
-      track(PREMIUM_UPSELL_VIEWED, obj);
+      return;
     }
-  };
+  }
   const items = [analyticsLocations, guildId, useTier0UpsellContent];
   cResult[1] = analyticsLocations;
   cResult[2] = guildId;
   cResult[3] = useTier0UpsellContent;
-  cResult[4] = fn;
+  cResult[4] = L;
   cResult[5] = items;
   tmp11 = items;
-  tmp10 = fn;
-}) : ((guildId) => {
+  tmp10 = L;
+}) : (function StickerPickerPremiumSearchUpsell(guildId) {
   let loading;
   let onPress;
   let ref;

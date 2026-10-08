@@ -1,30 +1,30 @@
-// Module ID: 11944
-// Function ID: 11945
+// Module ID: 12017
+// Function ID: 12018
 // Name: GuildDirectorySearch
-// Dependencies: [32, 19, 17, 2074, 11945, 1085, 21, 4896, 587, 558, 576, 6476, 11948, 1126, 1188, 4892, 504, 11949, 11950, 11958, 1252, 1618, 11977, 11978, 11942, 6889, 6017, 2]
+// Dependencies: [32, 19, 17, 2086, 12018, 1085, 21, 5090, 587, 558, 576, 6654, 12021, 1126, 1200, 5086, 504, 12022, 12023, 12031, 1264, 1630, 12050, 12051, 12015, 7078, 6203, 2]
 
-// Module 11944 (GuildDirectorySearch)
+// Module 12017 (GuildDirectorySearch)
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 11942 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11948 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 11950 */;
-import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 11958 */;
+import native from "native" /* 1200 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 12015 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12021 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 12023 */;
+import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 12031 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 11945 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 12018 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, channel, flag, importDefault, nextPromise, obj1, tmp3, tmp8, trackResult;
+let _require, importDefault;
 
 let Fonts;
 let closure_12;
@@ -45,7 +45,7 @@ createStyles = createStyles.createStyles;
 obj3 = { fontFamily: Fonts.PRIMARY_BOLD, color: nativeDefault.unsafe_rawColors.GREEN_360, textTransform: "uppercase" };
 let closure_14 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DefaultState() {
   let items;
   let proTip;
   let tmp6;
@@ -57,7 +57,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const typeConsolidationTextTransform = obj2.useTypeConsolidationTextTransform("GuildDirectorySearch");
   const emptyWrapper = tmp4.emptyWrapper;
   if (cResult[0] !== tmp4.emptyStateImage) {
-    const obj3 = { style: tmp4.emptyStateImage, source: typeConsolidationTextTransform(11948) };
+    const obj3 = { style: tmp4.emptyStateImage, source: typeConsolidationTextTransform(12021) };
     const tmp10 = closure_12(closure_7, obj3);
     cResult[0] = tmp4.emptyStateImage;
     cResult[1] = tmp10;
@@ -114,7 +114,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = typeConsolidationTextTransform;
   cResult[4] = formatResult;
   tmp12 = formatResult;
-}) : (() => {
+}) : (function DefaultState() {
   let closure_1;
   let intl;
   let items;
@@ -143,7 +143,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return closure_13(closure_6, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState(channel) {
   let first;
   let formatResult;
   let items1;
@@ -171,7 +171,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }
   const tmpResult = channel(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmpResult2 = channel(11949);
+  const tmpResult2 = channel(12022);
   const canCreateOrAddGuildInDirectory = tmpResult2.useCanCreateOrAddGuildInDirectory(channel);
   if (cResult[3] === canCreateOrAddGuildInDirectory) {
     if (cResult[4] === channel.id) {
@@ -184,7 +184,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
       const emptyWrapper = tmp4.emptyWrapper;
       if (cResult[7] !== tmp4.emptyStateImage) {
-        let obj2 = { style: tmp4.emptyStateImage, source: stateFromStores(11948) };
+        let obj2 = { style: tmp4.emptyStateImage, source: stateFromStores(12021) };
         const tmp16 = closure_12(closure_7, obj2);
         cResult[7] = tmp4.emptyStateImage;
         cResult[8] = tmp16;
@@ -204,7 +204,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
       if (cResult[10] !== tmp4.emptyStateTitle) {
         const obj3 = { style: emptyStateTitle, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: tmp17 };
-        const tmp21 = closure_12(channel(4892).Text, obj3);
+        const tmp21 = closure_12(channel(5086).Text, obj3);
         cResult[10] = tmp4.emptyStateTitle;
         cResult[11] = tmp21;
         tmp19 = tmp21;
@@ -238,7 +238,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         tmp25 = tmp28;
       }
       const obj5 = { style: tmp4.emptyStateText, variant: "text-sm/medium", color: "text-default", children: tmp10 };
-      const tmp24 = closure_12(channel(4892).Text, obj5);
+      const tmp24 = closure_12(channel(5086).Text, obj5);
       cResult[12] = tmp4.emptyStateText;
       cResult[13] = tmp10;
       cResult[14] = tmp24;
@@ -263,7 +263,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[5] = stateFromStores;
   cResult[6] = formatResult;
   tmp10 = formatResult;
-}) : ((channel) => {
+}) : (function EmptyState(channel) {
   let formatResult;
   let intl2;
   let items1;
@@ -273,7 +273,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   let obj = channel(504);
   const items = [GuildStore];
   importDefault = obj.useStateFromStores(items, () => GuildStore.getGuild(channel.getGuildId()));
-  let obj2 = channel(11949);
+  let obj2 = channel(12022);
   const canCreateOrAddGuildInDirectory = obj2.useCanCreateOrAddGuildInDirectory(channel);
   const intl = channel(1126).intl;
   if (canCreateOrAddGuildInDirectory) {
@@ -293,17 +293,17 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const obj5 = { style: tmp.emptyStateImage, source: AssetRegistryDefault };
   items1[0] = closure_12(closure_7, obj5);
   const obj6 = { style: tmp.emptyStateTitle, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: intl2.string(channel(1126).t["6HXiuE"]) };
-  const Text = tmp2(4892).Text;
+  const Text = tmp2(5086).Text;
   intl2 = tmp2(1126).intl;
   items1[1] = closure_12(Text, obj6);
   const obj7 = { style: tmp.emptyStateText, variant: "text-sm/medium", color: "text-default", children: formatResult };
-  items1[2] = closure_12(channel(4892).Text, obj7);
+  items1[2] = closure_12(channel(5086).Text, obj7);
   return closure_13(closure_6, obj4);
 });
 const ArrayResult = Array(20);
 let closure_17 = ArrayResult.fill(null);
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirectorySearch(channel) {
   let closure_1;
   let fauxHeader;
   let first;
@@ -362,7 +362,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     let tmp21;
     let tmp22;
     let tmp23;
-    let tmp36;
+    let tmp40;
     if (cResult[6] === first1) {
       tmp18 = cResult[7];
     }
@@ -370,125 +370,61 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     const _Symbol = Symbol;
     const tmp19 = importDefault;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      class N {
-        constructor(guildId, arg1) {
-          if (null != guildId) {
-            guildId = guildId.guildId;
-          } else {
-            guildId = arg1.toString();
-          }
-          return guildId;
+      function keyExtractor(guildId, arg1) {
+        if (null != guildId) {
+          guildId = guildId.guildId;
+        } else {
+          guildId = arg1.toString();
         }
+        return guildId;
       }
-      cResult[8] = N;
-      tmp21 = N;
+      cResult[8] = keyExtractor;
+      tmp21 = keyExtractor;
     } else {
-      class N {
-        constructor(guildId, arg1) {
-          if (null != guildId) {
-            guildId = guildId.guildId;
-          } else {
-            guildId = arg1.toString();
-          }
-          return guildId;
-        }
-      }
+      tmp21 = cResult[8];
     }
     const _Symbol2 = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      class K {
-        constructor(item) {
-          let tmp4;
-          item = item.item;
-          if (null != item) {
-            const obj = { entry: item };
-            tmp4 = closure_1_12(closure_1(dependencyMap[22]), obj);
-          } else {
-            tmp4 = closure_1_12(closure_1(dependencyMap[23]), {});
-          }
-          return tmp4;
+      function renderItem(item) {
+        let tmp4;
+        item = item.item;
+        if (null != item) {
+          const obj = { entry: item };
+          tmp4 = closure_1_12(closure_1(dependencyMap[22]), obj);
+        } else {
+          tmp4 = closure_1_12(closure_1(dependencyMap[23]), {});
         }
+        return tmp4;
       }
-      cResult[9] = K;
-      tmp22 = K;
+      cResult[9] = renderItem;
+      tmp22 = renderItem;
     } else {
-      class K {
-        constructor(item) {
-          let tmp4;
-          item = item.item;
-          if (null != item) {
-            const obj = { entry: item };
-            tmp4 = closure_1_12(closure_1(dependencyMap[22]), obj);
-          } else {
-            tmp4 = closure_1_12(closure_1(dependencyMap[23]), {});
-          }
-          return tmp4;
-        }
-      }
+      tmp22 = cResult[9];
     }
     const _Symbol3 = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      class K {
-        constructor(item) {
-          let tmp4;
-          item = item.item;
-          if (null != item) {
-            const obj = { entry: item };
-            tmp4 = closure_1_12(closure_1(dependencyMap[22]), obj);
-          } else {
-            tmp4 = closure_1_12(closure_1(dependencyMap[23]), {});
-          }
-          return tmp4;
-        }
-      }
-      const tmp25 = closure_12(closure_15, {});
-      cResult[10] = tmp25;
-      tmp23 = tmp25;
+      const tmp26 = closure_12(closure_15, {});
+      cResult[10] = tmp26;
+      tmp23 = tmp26;
     } else {
-      class K {
-        constructor(item) {
-          let tmp4;
-          item = item.item;
-          if (null != item) {
-            const obj = { entry: item };
-            tmp4 = closure_1_12(closure_1(dependencyMap[22]), obj);
-          } else {
-            tmp4 = closure_1_12(closure_1(dependencyMap[23]), {});
-          }
-          return tmp4;
-        }
-      }
+      tmp23 = cResult[10];
     }
     if (first) {
-      let tmp28;
-      class K {
-        constructor(item) {
-          let tmp4;
-          item = item.item;
-          if (null != item) {
-            const obj = { entry: item };
-            tmp4 = closure_1_12(closure_1(dependencyMap[22]), obj);
-          } else {
-            tmp4 = closure_1_12(closure_1(dependencyMap[23]), {});
-          }
-          return tmp4;
-        }
-      }
+      let tmp32;
       if (0 === searchResults.length) {
-        class K {
-          constructor(item) {
-            let tmp4;
-            item = item.item;
-            if (null != item) {
-              const obj = { entry: item };
-              tmp4 = closure_1_12(closure_1(dependencyMap[22]), obj);
-            } else {
-              tmp4 = closure_1_12(closure_1(dependencyMap[23]), {});
-            }
-            return tmp4;
+        let tmp27;
+        if (!searchFetching) {
+          if (cResult[11] !== channel) {
+            let obj2 = { channel };
+            const tmp30 = closure_12(closure_16, obj2);
+            cResult[11] = channel;
+            cResult[12] = tmp30;
+            tmp27 = tmp30;
+          } else {
+            tmp27 = cResult[12];
           }
         }
-        tmp23 = tmp26;
+        tmp23 = tmp27;
       }
       if (cResult[13] !== channel) {
         class P {
@@ -515,8 +451,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
             return closure_12(closure_16, obj);
           }
         }
-        cResult[15] = tmp29;
-        tmp28 = tmp29;
+        cResult[15] = tmp33;
+        tmp32 = tmp33;
       } else {
         class P {
           constructor() {
@@ -532,9 +468,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
             return closure_12(closure_16, obj);
           }
         }
-        tmp31[0] = sum;
+        tmp35[0] = sum;
         cResult[16] = sum;
-        cResult[17] = tmp31;
+        cResult[17] = tmp35;
       } else {
         class P {
           constructor() {
@@ -551,13 +487,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           }
         }
       }
-      let obj2 = { data: tmp14, renderItem: tmp22, keyExtractor: tmp21, ListEmptyComponent: tmp27, scrollIndicatorInsets: tmp28, style: tmp4.scrollContainer, contentContainerStyle: tmp30 };
+      const obj3 = { data: tmp14, renderItem: tmp22, keyExtractor: tmp21, ListEmptyComponent: tmp31, scrollIndicatorInsets: tmp32, style: tmp4.scrollContainer, contentContainerStyle: tmp34 };
       cResult[18] = tmp14;
       cResult[19] = tmp4.scrollContainer;
-      cResult[20] = tmp27;
-      cResult[21] = tmp30;
-      cResult[22] = closure_12(closure_8, obj2);
-      const tmp35 = closure_12(closure_8, obj2);
+      cResult[20] = tmp31;
+      cResult[21] = tmp34;
+      cResult[22] = closure_12(closure_8, obj3);
+      const tmp39 = closure_12(closure_8, obj3);
     }
     const _Symbol5 = Symbol;
     ({ flex, fauxHeader } = tmp4);
@@ -568,9 +504,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           return closure_12(closure_16, obj);
         }
       }
-      const stringResult = obj4.string(tmp(1126).t.nL2wKD);
+      const stringResult = obj5.string(tmp(1126).t.nL2wKD);
       cResult[23] = stringResult;
-      tmp36 = stringResult;
+      tmp40 = stringResult;
     } else {
       class P {
         constructor() {
@@ -587,7 +523,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         }
       }
       cResult[24] = channel.id;
-      cResult[25] = tmp39;
+      cResult[25] = tmp43;
     } else {
       class P {
         constructor() {
@@ -618,61 +554,48 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
             }
           }
         }
-        const obj3 = { style: flex, children: items1 };
-        items1 = [tmp43, tmp23];
+        const obj4 = { style: flex, children: items1 };
+        items1 = [tmp47, tmp23];
         cResult[32] = tmp23;
         cResult[33] = tmp4.flex;
-        cResult[34] = tmp43;
-        cResult[35] = closure_13(closure_6, obj3);
-        const tmp49 = closure_13(closure_6, obj3);
+        cResult[34] = tmp47;
+        cResult[35] = closure_13(closure_6, obj4);
+        const tmp53 = closure_13(closure_6, obj4);
       }
-      const obj5 = { style: fauxHeader, children: tmp40 };
+      const obj6 = { style: fauxHeader, children: tmp44 };
       cResult[29] = tmp4.fauxHeader;
-      cResult[30] = tmp40;
-      cResult[31] = closure_12(tmp(6017).FauxHeader, obj5);
-      const tmp45 = closure_12(tmp(6017).FauxHeader, obj5);
+      cResult[30] = tmp44;
+      cResult[31] = closure_12(tmp(6203).FauxHeader, obj6);
+      const tmp49 = closure_12(tmp(6203).FauxHeader, obj6);
     }
-    const obj6 = { placeholder: tmp36, onChange: tmp9, onClose: tmp38, onSubmitEditing: tmp18 };
+    const obj7 = { placeholder: tmp40, onChange: tmp9, onClose: tmp42, onSubmitEditing: tmp18 };
     cResult[26] = tmp18;
-    cResult[27] = tmp38;
-    cResult[28] = closure_12(tmp19(6889), obj6);
-    const tmp42 = closure_12(tmp19(6889), obj6);
+    cResult[27] = tmp42;
+    cResult[28] = closure_12(tmp19(7078), obj7);
+    const tmp46 = closure_12(tmp19(7078), obj7);
   }
-  class Y {
-    constructor() {
-      tmp = closure_2;
-      if (0 !== closure_2.trim().length) {
-        tmp5 = closure_2;
-        tmp6 = closure_3;
-        obj = closure_2(closure_3[19]);
-        tmp7 = channel;
-        result = obj.searchDirectoryEntries(channel.id, tmp);
-        tmp8 = closure_1;
-        tmp9 = closure_1(closure_3[20]);
-        tmp10 = AnalyticEvents;
-        obj1 = { directory_channel_id: null, directory_guild_id: null };
-        obj1.directory_channel_id = channel.id;
-        track = tmp9.track;
-        GUILD_DIRECTORY_SEARCH = AnalyticEvents.GUILD_DIRECTORY_SEARCH;
-        obj1.directory_guild_id = channel.getGuildId();
-        trackResult = track(GUILD_DIRECTORY_SEARCH, obj1);
-        tmp12 = null;
-        if (null != result) {
-          nextPromise = result.then(() => closure_1_1(true));
-        } else {
-          tmp2 = closure_1;
-          flag = true;
-          tmp3 = closure_1(true);
-        }
+  function handleSearch() {
+    const tmp = first1;
+    if (0 !== first1.trim().length) {
+      const obj = GuildDirectoryActionCreatorsAll;
+      const result = obj.searchDirectoryEntries(channel.id, tmp);
+      const obj2 = { directory_channel_id: channel.id, directory_guild_id: channel.getGuildId() };
+      const track = AnalyticsUtilsDefault.track;
+      const GUILD_DIRECTORY_SEARCH = unpackModuleId.GUILD_DIRECTORY_SEARCH;
+      AnalyticsUtilsDefault;
+      track(GUILD_DIRECTORY_SEARCH, obj2);
+      if (null != result) {
+        result.then(() => closure_1_1(true));
+      } else {
+        closure_1(true);
       }
-      return;
     }
   }
   cResult[5] = channel;
   cResult[6] = first1;
-  cResult[7] = Y;
-  tmp18 = Y;
-}) : ((channel) => {
+  cResult[7] = handleSearch;
+  tmp18 = handleSearch;
+}) : (function GuildDirectorySearch(channel) {
   let closure_1;
   let intl;
   let items2;
@@ -763,7 +686,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       const obj2 = GuildDirectorySearchModalActionCreatorsDefault;
       obj2.close();
     },
-    onSubmitEditing() {
+    onSubmitEditing: function handleSearch() {
       const tmp = closure_2;
       if (0 !== closure_2.trim().length) {
         const obj = GuildDirectoryActionCreatorsAll;

@@ -1,19 +1,19 @@
-// Module ID: 8990
-// Function ID: 8991
+// Module ID: 8741
+// Function ID: 8742
 // Name: BotTag
-// Dependencies: [19, 17, 1360, 21, 4896, 587, 1126, 558, 576, 8991, 4892, 2]
+// Dependencies: [19, 17, 1372, 21, 5090, 587, 1126, 558, 576, 8742, 5086, 2]
 
-// Module 8990 (BotTag)
+// Module 8741 (BotTag)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import ApplicationConstants from "ApplicationConstants" /* 1360 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import CheckmarkSmallBoldIcon2 from "CheckmarkSmallBoldIcon" /* 8991 */;
+import ApplicationConstants from "ApplicationConstants" /* 1372 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import CheckmarkSmallBoldIcon2 from "CheckmarkSmallBoldIcon" /* 8742 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,16 +55,16 @@ obj4 = { backgroundColor: nativeDefault.colors.WHITE };
 ({ color: nativeDefault.colors.WHITE });
 ({ color: nativeDefault.colors.BACKGROUND_BRAND });
 let closure_7 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotTag(arg0) {
   let invertColor;
-  let items1;
+  let items;
   let style;
   let tmp22;
   let tmp7;
   let type;
   let verified;
   const obj = react2;
-  const cResult = obj.c(22);
+  const cResult = obj.c(20);
   ({ invertColor, type, style, verified } = arg0);
   if (undefined === type) {
     type = BotTagTypes.BOT;
@@ -87,7 +87,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "xs", color: nativeDefault.colors.WHITE };
-      const CheckmarkSmallBoldIcon = tmp(8991).CheckmarkSmallBoldIcon;
+      const CheckmarkSmallBoldIcon = tmp(8742).CheckmarkSmallBoldIcon;
       const tmp17 = hasOwnProperty(CheckmarkSmallBoldIcon, obj2);
       cResult[2] = tmp17;
       tmp14 = tmp17;
@@ -153,64 +153,54 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[8] === style) {
       if (cResult[9] === tmp6.tag) {
         let tmp33;
-        let tmp34;
         if (cResult[10] === tmp18) {
           tmp33 = cResult[11];
         }
-        if (cResult[12] !== tmp19) {
-          const items = [tmp19];
-          cResult[12] = tmp19;
-          cResult[13] = items;
-          tmp34 = items;
-        } else {
-          tmp34 = cResult[13];
-        }
-        if (cResult[14] === tmp34) {
-          let tmp35;
-          if (cResult[15] === tmp7) {
-            tmp35 = cResult[16];
+        if (cResult[12] === tmp7) {
+          let tmp34;
+          if (cResult[13] === tmp19) {
+            tmp34 = cResult[14];
           }
-          if (cResult[17] === tmp22) {
-            if (cResult[18] === tmp33) {
-              if (cResult[19] === tmp35) {
-                let tmp38;
-                if (cResult[20] === tmp12) {
-                  tmp38 = cResult[21];
+          if (cResult[15] === tmp22) {
+            if (cResult[16] === tmp33) {
+              if (cResult[17] === tmp34) {
+                let tmp37;
+                if (cResult[18] === tmp12) {
+                  tmp37 = cResult[19];
                 }
-                return tmp38;
+                return tmp37;
               }
             }
           }
-          const obj3 = { style: tmp33, accessible: true, accessibilityRole: "image", accessibilityLabel: tmp22, children: items1 };
-          items1 = [tmp12, tmp35];
-          const tmp41 = metroRequire(View, obj3);
-          cResult[17] = tmp22;
-          cResult[18] = tmp33;
-          cResult[19] = tmp35;
-          cResult[20] = tmp12;
-          cResult[21] = tmp41;
-          tmp38 = tmp41;
+          const obj3 = { style: tmp33, accessible: true, accessibilityRole: "image", accessibilityLabel: tmp22, children: items };
+          items = [tmp12, tmp34];
+          const tmp40 = metroRequire(View, obj3);
+          cResult[15] = tmp22;
+          cResult[16] = tmp33;
+          cResult[17] = tmp34;
+          cResult[18] = tmp12;
+          cResult[19] = tmp40;
+          tmp37 = tmp40;
         }
-        const obj4 = { variant: "text-xs/semibold", lineClamp: 1, maxFontSizeMultiplier: 2, style: tmp34, children: tmp7 };
-        const tmp37 = hasOwnProperty(Text_Text.Text, obj4);
-        cResult[14] = tmp34;
-        cResult[15] = tmp7;
-        cResult[16] = tmp37;
-        tmp35 = tmp37;
+        const obj4 = { variant: "text-xs/semibold", lineClamp: 1, maxFontSizeMultiplier: 2, style: tmp19, children: tmp7 };
+        const tmp36 = hasOwnProperty(Text_Text.Text, obj4);
+        cResult[12] = tmp7;
+        cResult[13] = tmp19;
+        cResult[14] = tmp36;
+        tmp34 = tmp36;
       }
     }
   }
-  const items2 = [tmp6.tag, tmp18, style, prop];
+  const items1 = [tmp6.tag, tmp18, style, prop];
   cResult[7] = prop;
   cResult[8] = style;
   cResult[9] = tmp6.tag;
   cResult[10] = tmp18;
-  cResult[11] = items2;
-  tmp33 = items2;
-}) : ((invertColor) => {
+  cResult[11] = items1;
+  tmp33 = items1;
+}) : (function BotTag(invertColor) {
   let items;
   let items1;
-  let items2;
   let stringResult;
   let tmp17;
   let flag = invertColor.invertColor;
@@ -263,10 +253,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const obj2 = { style: items, accessible: true, accessibilityRole: "image", accessibilityLabel: stringResult, children: items1 };
   items = [tmp2.tag, tmp11, style, prop];
-  items1 = [tmp6, ];
-  const obj3 = { variant: "text-xs/semibold", lineClamp: 1, maxFontSizeMultiplier: 2, style: items2, children: tmp3 };
-  items2 = [tmp12];
-  items1[1] = hasOwnProperty(tmp17(4892).Text, obj3);
+  items1 = [tmp6, hasOwnProperty(tmp17(5086).Text, { variant: "text-xs/semibold", lineClamp: 1, maxFontSizeMultiplier: 2, style: tmp12, children: tmp3 })];
   return metroRequire(View, obj2);
 });
 tmp5.Types = BotTagTypes;

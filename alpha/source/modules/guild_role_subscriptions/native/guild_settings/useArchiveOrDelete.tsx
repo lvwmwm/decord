@@ -1,12 +1,12 @@
-// Module ID: 17978
-// Function ID: 17979
+// Module ID: 18265
+// Function ID: 18266
 // Name: useArchiveOrDelete
-// Dependencies: [5, 32, 19, 558, 576, 15045, 15060, 1126, 5715, 1188, 38, 4573, 2]
+// Dependencies: [5, 32, 19, 558, 576, 15307, 15322, 1126, 5298, 1200, 38, 4765, 2]
 
-// Module 17978 (useArchiveOrDelete)
+// Module 18265 (useArchiveOrDelete)
 import intl13 from "intl" /* 1126 */;
-import ToastUtilsAll from "ToastUtils" /* 4573 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15060 */;
+import ToastUtilsAll from "ToastUtils" /* 4765 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15322 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -20,9 +20,10 @@ let metroImportDefault;
 let metroRequire;
 let _slicedToArray = _slicedToArray_mod;
 ({ useEffect: metroRequire, useRef: metroImportDefault } = react);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, guildId, arg3) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchiveOrDelete(arg0, arg1, arg2, arg3) {
   let archiveSubscriptionListing;
   let closure_0;
+  let closure_2;
   let closure_3;
   let deleteSubscriptionListing;
   let error;
@@ -36,14 +37,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, guildI
   let tmp16;
   _require = arg0;
   let closure_1 = arg1;
-  importAll = guildId;
+  importAll = arg2;
   dependencyMap = arg3;
   let tmp = _require;
   let tmp2 = dependencyMap;
   let obj = require("react");
   const cResult = obj.c(41);
   let obj2 = require("GuildRoleSubscriptionsHooks");
-  const subscriptionListing = obj2.useSubscriptionListing(guildId);
+  const subscriptionListing = obj2.useSubscriptionListing(arg2);
   let obj3 = GuildRoleSubscriptionListingEditStateUtilsAll;
   const removeEditStateId = obj3.useEditStateIds(arg1, arg0).removeEditStateId;
   let obj4 = require("GuildRoleSubscriptionsHooks");
@@ -55,7 +56,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, guildI
   const error2 = archiveSubscriptionListing1.error;
   const ref = removeEditStateId(null);
   let obj6 = GuildRoleSubscriptionListingEditStateUtilsAll;
-  const first = stringResult3(obj6.useName(guildId), 1)[0];
+  const first = stringResult3(obj6.useName(arg2), 1)[0];
   let archived;
   if (subscriptionListing != null) {
     archived = subscriptionListing.archived;
@@ -83,7 +84,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, guildI
           if (cResult[20] === tmp13) {
             if (cResult[21] === archiveSubscriptionListing) {
               if (cResult[22] === deleteSubscriptionListing) {
-                if (cResult[23] === guildId) {
+                if (cResult[23] === arg2) {
                   if (cResult[24] === arg1) {
                     if (cResult[25] === arg0) {
                       if (cResult[26] === tmp9) {
@@ -276,7 +277,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, guildI
       cResult[20] = tmp13;
       cResult[21] = archiveSubscriptionListing;
       cResult[22] = deleteSubscriptionListing;
-      cResult[23] = guildId;
+      cResult[23] = arg2;
       cResult[24] = arg1;
       cResult[25] = arg0;
       cResult[26] = tmp9;
@@ -473,8 +474,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, guildI
   stringResult2 = intl2.string(tmp(1126).t.uG6b1w);
   const intl3 = tmp(1126).intl;
   stringResult3 = intl3.string(tmp(1126).t.JoCdPC);
-}) : ((arg0, arg1, guildId, arg3) => {
+}) : (function useArchiveOrDelete(arg0, arg1, arg2, arg3) {
   let closure_0;
+  let closure_2;
   let closure_3;
   let closure_5;
   let closure_8;
@@ -485,7 +487,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, guildI
   let submitting2;
   _require = arg0;
   let closure_1 = arg1;
-  importAll = guildId;
+  importAll = arg2;
   dependencyMap = arg3;
   let obj = function _handleArchiveOrDelete2() {
     let body;
@@ -589,7 +591,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, guildI
   let tmp = _require;
   let tmp2 = dependencyMap;
   obj = require("GuildRoleSubscriptionsHooks");
-  const subscriptionListing = obj.useSubscriptionListing(guildId);
+  const subscriptionListing = obj.useSubscriptionListing(arg2);
   let obj2 = GuildRoleSubscriptionListingEditStateUtilsAll;
   const removeEditStateId = obj2.useEditStateIds(arg1, arg0).removeEditStateId;
   let obj3 = require("GuildRoleSubscriptionsHooks");
@@ -601,7 +603,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, guildI
   ({ submitting: submitting2, error: error2 } = archiveSubscriptionListing);
   const ref = removeEditStateId(null);
   let obj5 = GuildRoleSubscriptionListingEditStateUtilsAll;
-  const first = _slicedToArray(obj5.useName(guildId), 1)[0];
+  const first = _slicedToArray(obj5.useName(arg2), 1)[0];
   let archived;
   if (subscriptionListing != null) {
     archived = subscriptionListing.archived;

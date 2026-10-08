@@ -1,19 +1,19 @@
-// Module ID: 14871
-// Function ID: 14872
+// Module ID: 15133
+// Function ID: 15134
 // Name: BountiesModalTimer
-// Dependencies: [19, 17, 21, 5607, 4618, 8169, 4896, 587, 1369, 558, 576, 4897, 4892, 8991, 2]
+// Dependencies: [19, 17, 21, 5380, 4810, 7550, 5090, 587, 1381, 558, 576, 5091, 5086, 8742, 2]
 
-// Module 14871 (BountiesModalTimer)
+// Module 15133 (BountiesModalTimer)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
-import ButtonConstants from "ButtonConstants" /* 5607 */;
-import inlineStyles from "inlineStyles" /* 8169 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
+import ButtonConstants from "ButtonConstants" /* 5380 */;
+import inlineStyles from "inlineStyles" /* 7550 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ const __initData3 = { code: "function BountiesModalTimerTsx3(){const{checkmarkSc
 const __initData4 = { code: "function BountiesModalTimerTsx4(){const{PROGRESS_CIRCUMFERENCE,animatedProgress}=this.__closure;return{strokeDashoffset:PROGRESS_CIRCUMFERENCE-PROGRESS_CIRCUMFERENCE*animatedProgress.get()};}" };
 const __initData5 = { code: "function BountiesModalTimerTsx5(){const{checkmarkBackgroundScale}=this.__closure;return{transform:[{scale:checkmarkBackgroundScale.get()}]};}" };
 const __initData6 = { code: "function BountiesModalTimerTsx6(){const{checkmarkScale}=this.__closure;return{transform:[{scale:checkmarkScale.get()}]};}" };
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesModalTimer(arg0) {
   let c0;
   let closure_1;
   let isCompleted;
@@ -854,7 +854,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = remainingSeconds;
   cResult[2] = totalSeconds;
   cResult[3] = num2;
-}) : ((arg0) => {
+}) : (function BountiesModalTimer(arg0) {
   let CheckmarkSmallBoldIcon;
   let c1;
   let closure_0;

@@ -1,17 +1,17 @@
-// Module ID: 5993
-// Function ID: 5994
+// Module ID: 6177
+// Function ID: 6178
 // Name: TermsField
-// Dependencies: [19, 17, 21, 4896, 558, 576, 5994, 1126, 5997, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 6178, 1126, 6181, 2]
 
-// Module 5993 (TermsField)
+// Module 6177 (TermsField)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import TermsFieldListDefault from "TermsFieldList" /* 5994 */;
-import TableCheckboxRow2 from "TableCheckboxRow" /* 5997 */;
+import TermsFieldListDefault from "TermsFieldList" /* 6178 */;
+import TableCheckboxRow2 from "TableCheckboxRow" /* 6181 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let hasOwnProperty;
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ container: { marginVertical: 12, flexDirection: "column" } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TermsField(arg0) {
   let field;
   let items;
   let onChange;
@@ -85,7 +85,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = values;
   cResult[2] = tmp7;
   tmp6 = tmp7;
-}) : ((field) => {
+}) : (function TermsField(field) {
   let intl;
   let items;
   let onChange;

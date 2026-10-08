@@ -1,30 +1,30 @@
-// Module ID: 10796
-// Function ID: 10797
+// Module ID: 12748
+// Function ID: 12749
 // Name: IAPUtils
-// Dependencies: [5, 17, 4895, 5111, 1377, 6931, 1085, 1379, 1369, 10797, 10798, 3, 38, 10817, 6926, 12, 1266, 4549, 558, 576, 504, 10818, 1368, 4872, 10819, 2]
+// Dependencies: [5, 17, 5089, 5908, 1389, 7120, 1085, 1391, 1381, 12749, 12750, 3, 38, 12769, 7115, 12, 1278, 4741, 558, 576, 504, 12770, 1380, 5066, 12771, 2]
 // Exports: makeIAPRequest, manageSubscription, shouldMockIAPForceEnable
 
-// Module 10796 (IAPUtils)
+// Module 12748 (IAPUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
-import v1 from "v1" /* 1266 */;
-import react_nativeAll from "react-native" /* 1368 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import DeviceUtils from "DeviceUtils" /* 4872 */;
-import CountryCodeUtils from "CountryCodeUtils" /* 5111 */;
-import react_native2 from "react-native" /* 10797 */;
-import _mod10798 from "module_10798" /* 10798 */;
-import StorekitIAPQueueDefault from "StorekitIAPQueue" /* 10817 */;
-import GeneratedPaymentCurrencies from "GeneratedPaymentCurrencies" /* 10818 */;
-import iapProducts from "iapProducts" /* 10819 */;
+import v1 from "v1" /* 1278 */;
+import react_nativeAll from "react-native" /* 1380 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import DeviceUtils from "DeviceUtils" /* 5066 */;
+import CountryCodeUtils from "CountryCodeUtils" /* 5908 */;
+import react_native2 from "react-native" /* 12749 */;
+import _mod12750 from "module_12750" /* 12750 */;
+import StorekitIAPQueueDefault from "StorekitIAPQueue" /* 12769 */;
+import GeneratedPaymentCurrencies from "GeneratedPaymentCurrencies" /* 12770 */;
+import iapProducts from "iapProducts" /* 12771 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevSettingsStore from "DevSettingsStore" /* 4895 */;
-import UserStore from "UserStore" /* 1377 */;
-import IAPStore from "IAPStore" /* 6931 */;
+import DevSettingsStore from "DevSettingsStore" /* 5089 */;
+import UserStore from "UserStore" /* 1389 */;
+import IAPStore from "IAPStore" /* 7120 */;
 import Constants from "Constants" /* 1085 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1369 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let _require, appAccountToken, arr4, c4, closure_3, closure_4, code, currentUser
 let IOS_BUNDLE_ID;
 let metroImportAll;
 let tmp;
-const ProductIds = tmp(6926);
+const ProductIds = tmp(7115);
 function serializePurchaseResponse(originalTransactionDate) {
   let parsed;
   _modDef38(null != originalTransactionDate.transactionId, "should have transactionId");
@@ -291,7 +291,7 @@ obj = function _fetchStoreFront() {
               c4 = 2;
               c5 = 1;
               const obj6 = { value: obj4.getStorefront(), done: false };
-              obj4 = require("module_10798");
+              obj4 = require("module_12750");
               return obj6;
             } else {
               c5 = 3;
@@ -350,7 +350,7 @@ let _default = null;
 if (PlatformUtils.isIOS()) {
   _default = react_native2.default;
 }
-let items = [_mod10798.ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED, _mod10798.ErrorCode.E_UNKNOWN];
+let items = [_mod12750.ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED, _mod12750.ErrorCode.E_UNKNOWN];
 let set = new Set(items);
 let tmp5 = new LoggerDefault("IAPUtils.tsx");
 obj = {
@@ -525,7 +525,7 @@ obj = {
     return obj(...arguments);
   }
 };
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanPurchaseIAP(arg0) {
   let closure_0;
   let tmp4;
   let tmp5;
@@ -595,7 +595,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = stateFromStores;
   cResult[6] = fn2;
   tmp11 = fn2;
-}) : ((arg0) => {
+}) : (function useCanPurchaseIAP(arg0) {
   let closure_0;
   _require = arg0;
   obj = require("get initialized");

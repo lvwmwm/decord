@@ -1,16 +1,16 @@
-// Module ID: 11296
-// Function ID: 11297
+// Module ID: 9632
+// Function ID: 9633
 // Name: SavedMessagesStore
-// Dependencies: [1377, 4510, 7506, 5118, 504, 584, 2]
+// Dependencies: [1389, 4702, 9633, 5430, 504, 584, 2]
 // Exports: getComparator
 
-// Module 11296 (SavedMessagesStore)
+// Module 9632 (SavedMessagesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4510 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5118 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 7506 */;
-import UserStore from "UserStore" /* 1377 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4702 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5430 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 9633 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 function getTimeSafe(dueAt) {
@@ -105,9 +105,9 @@ const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap((saveData) => 
   saveData = saveData.saveData;
   const items = [SavedMessagesTypes.SavedMessageSortTypes.ALL, ];
   if (null != saveData.dueAt) {
-    BOOKMARK = tmp(7506).SavedMessageSortTypes.REMINDER;
+    BOOKMARK = tmp(9633).SavedMessageSortTypes.REMINDER;
   } else {
-    BOOKMARK = tmp(7506).SavedMessageSortTypes.BOOKMARK;
+    BOOKMARK = tmp(9633).SavedMessageSortTypes.BOOKMARK;
   }
   items[1] = BOOKMARK;
   return items;

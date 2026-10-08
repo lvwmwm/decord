@@ -1,12 +1,12 @@
-// Module ID: 11993
-// Function ID: 11994
+// Module ID: 12066
+// Function ID: 12067
 // Name: SearchTokenStreamerModeUtils
-// Dependencies: [4729, 1085, 11991, 2]
+// Dependencies: [4923, 1085, 12064, 2]
 // Exports: getValidFilterTokens, isFromUserFilterSupported, isInChannelFilterSupported, isMentionsUserFilterSupported
 
-// Module 11993 (SearchTokenStreamerModeUtils)
-import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 11991 */;
-import StreamerModeStore from "StreamerModeStore" /* 4729 */;
+// Module 12066 (SearchTokenStreamerModeUtils)
+import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 12064 */;
+import StreamerModeStore from "StreamerModeStore" /* 4923 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

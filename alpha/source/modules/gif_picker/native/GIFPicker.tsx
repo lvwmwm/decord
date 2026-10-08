@@ -1,25 +1,25 @@
-// Module ID: 10101
-// Function ID: 10102
+// Module ID: 9685
+// Function ID: 9686
 // Name: GIFPicker
-// Dependencies: [32, 19, 17, 10102, 1085, 21, 4896, 558, 576, 10103, 1252, 6440, 10106, 12, 10109, 504, 9631, 10110, 10111, 10114, 10115, 10119, 2]
+// Dependencies: [32, 19, 17, 9686, 1085, 21, 5090, 558, 576, 9687, 1264, 6618, 9690, 12, 9693, 504, 9694, 9695, 9696, 9699, 9700, 9704, 2]
 
-// Module 10101 (GIFPicker)
+// Module 9685 (GIFPicker)
 import react_native from "react-native" /* 17 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import GIFPickerActionCreatorsAll from "GIFPickerActionCreators" /* 10103 */;
-import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 10106 */;
-import GifPickerUtils from "GifPickerUtils" /* 10109 */;
-import GIFPickerSearchSuggestionsDefault from "GIFPickerSearchSuggestions" /* 10110 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import GIFPickerActionCreatorsAll from "GIFPickerActionCreators" /* 9687 */;
+import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 9690 */;
+import GifPickerUtils from "GifPickerUtils" /* 9693 */;
+import GIFPickerSearchSuggestionsDefault from "GIFPickerSearchSuggestions" /* 9695 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GIFPickerViewStore from "GIFPickerViewStore" /* 10102 */;
+import GIFPickerViewStore from "GIFPickerViewStore" /* 9686 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let bottomSheetRef, constants3, limit;
+let constants2, limit;
 
 let c10;
 let c9;
@@ -33,10 +33,9 @@ const View = react_native.View;
 ({ AnalyticEvents: metroImportAll, ChatInputComponentViewedTypes: c9, GIF_FETCH_LIMIT_IOS: c10, GIFPickerResultTypes: unpackModuleId, TooltipNames: closure_12 } = Constants);
 ({ jsx: map1, jsxs: closure_14 } = Fragment);
 let closure_15 = createStyles.createStyles({ container: { flex: 1 } });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((bottomSheetRef) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPicker(bottomSheetRef) {
   let closure_10;
   let closure_13;
-  let closure_18;
   let closure_5;
   let columnWidth;
   let columns;
@@ -59,7 +58,6 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((b
   let tmp38;
   let tmp41;
   let tmp42;
-  let tmp43;
   const tmp = bottomSheetRef;
   let obj = bottomSheetRef(initialQuery[8]);
   const cResult = obj.c(66);
@@ -273,7 +271,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((b
           const stateFromStoresObject = tmpResult3.useStateFromStoresObject(tmp37, tmp38);
           let resultItems = stateFromStoresObject.resultItems;
           const resultQuery = stateFromStoresObject.resultQuery;
-          class Te {
+          class Fe {
             constructor() {
               if (first1 !== unpackModuleId.FAVORITES) {
                 resultItems = GIFPickerViewStore.getResultItems();
@@ -285,68 +283,157 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((b
             }
           }
           if (cResult[17] !== resultQuery) {
-            class U {
-              constructor() {
-                GIFPickerViewStore(false);
-                closure_12(unpackModuleId.SEARCH);
-                tmp29("");
-                const obj = GIFPickerActionCreatorsAll;
-                obj.resetSearch();
-                const current = ref.current;
-                if (current != null) {
-                  current.blur();
+            class Re {
+              constructor(current, arg1) {
+                if (ref.current !== current) {
+                  let search;
+                  ref.current = current;
+                  closure_12(unpackModuleId.SEARCH);
+                  const tmp22 = current.trim().length > 0;
+                  let tmp3 = tmp22;
+                  const tmp20 = unpackModuleId;
+                  const tmp23 = closure_10;
+                  if (tmp3) {
+                    tmp3 = query !== current;
+                  }
+                  tmp23(tmp3);
+                  GIFPickerViewStore(tmp22);
+                  if (undefined === arg1 || arg1) {
+                    search = debounceResult;
+                  } else {
+                    search = GIFPickerActionCreatorsAll.search;
+                  }
+                  let SEARCH = null;
+                  if ("" !== current) {
+                    SEARCH = tmp20.SEARCH;
+                  }
+                  search(current, SEARCH, !(undefined === arg1 || arg1), c10);
+                  if (!(undefined === arg1 || arg1)) {
+                    current = ref.current;
+                    if (current != null) {
+                      current.setText(current);
+                    }
+                  }
                 }
               }
             }
             cResult[17] = resultQuery;
-            cResult[18] = tmp41;
+            cResult[18] = Re;
           } else {
-            class U {
-              constructor() {
-                GIFPickerViewStore(false);
-                closure_12(unpackModuleId.SEARCH);
-                tmp29("");
-                const obj = GIFPickerActionCreatorsAll;
-                obj.resetSearch();
-                const current = ref.current;
-                if (current != null) {
-                  current.blur();
+            class Re {
+              constructor(current, arg1) {
+                if (ref.current !== current) {
+                  let search;
+                  ref.current = current;
+                  closure_12(unpackModuleId.SEARCH);
+                  const tmp22 = current.trim().length > 0;
+                  let tmp3 = tmp22;
+                  const tmp20 = unpackModuleId;
+                  const tmp23 = closure_10;
+                  if (tmp3) {
+                    tmp3 = query !== current;
+                  }
+                  tmp23(tmp3);
+                  GIFPickerViewStore(tmp22);
+                  if (undefined === arg1 || arg1) {
+                    search = debounceResult;
+                  } else {
+                    search = GIFPickerActionCreatorsAll.search;
+                  }
+                  let SEARCH = null;
+                  if ("" !== current) {
+                    SEARCH = tmp20.SEARCH;
+                  }
+                  search(current, SEARCH, !(undefined === arg1 || arg1), c10);
+                  if (!(undefined === arg1 || arg1)) {
+                    current = ref.current;
+                    if (current != null) {
+                      current.setText(current);
+                    }
+                  }
                 }
               }
             }
           }
-          tmp41 = tmp40;
+          Re = tmp40;
           if (cResult[19] === tmp40) {
+            let tmp45;
             let tmp46;
-            let tmp47;
-            class U {
-              constructor() {
-                GIFPickerViewStore(false);
-                closure_12(unpackModuleId.SEARCH);
-                tmp29("");
-                const obj = GIFPickerActionCreatorsAll;
-                obj.resetSearch();
-                const current = ref.current;
-                if (current != null) {
-                  current.blur();
+            class Re {
+              constructor(current, arg1) {
+                if (ref.current !== current) {
+                  let search;
+                  ref.current = current;
+                  closure_12(unpackModuleId.SEARCH);
+                  const tmp22 = current.trim().length > 0;
+                  let tmp3 = tmp22;
+                  const tmp20 = unpackModuleId;
+                  const tmp23 = closure_10;
+                  if (tmp3) {
+                    tmp3 = query !== current;
+                  }
+                  tmp23(tmp3);
+                  GIFPickerViewStore(tmp22);
+                  if (undefined === arg1 || arg1) {
+                    search = debounceResult;
+                  } else {
+                    search = GIFPickerActionCreatorsAll.search;
+                  }
+                  let SEARCH = null;
+                  if ("" !== current) {
+                    SEARCH = tmp20.SEARCH;
+                  }
+                  search(current, SEARCH, !(undefined === arg1 || arg1), c10);
+                  if (!(undefined === arg1 || arg1)) {
+                    current = ref.current;
+                    if (current != null) {
+                      current.setText(current);
+                    }
+                  }
                 }
               }
             }
-            const effect1 = obj2.useEffect(tmp42, tmp43);
+            const effect1 = obj2.useEffect(tmp41, tmp42);
             const _Symbol5 = Symbol;
             if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
-              class Pe {
-                constructor() {
-                  const obj = channelId(initialQuery[16]);
-                  obj.acknowledgeTooltip(closure_12.GIF_PICKER_TOOLTIP);
-                  const obj2 = guildId(initialQuery[9]);
-                  const trendingSearchTerms = obj2.fetchTrendingSearchTerms();
+              class Re {
+                constructor(current, arg1) {
+                  if (ref.current !== current) {
+                    let search;
+                    ref.current = current;
+                    closure_12(unpackModuleId.SEARCH);
+                    const tmp22 = current.trim().length > 0;
+                    let tmp3 = tmp22;
+                    const tmp20 = unpackModuleId;
+                    const tmp23 = closure_10;
+                    if (tmp3) {
+                      tmp3 = query !== current;
+                    }
+                    tmp23(tmp3);
+                    GIFPickerViewStore(tmp22);
+                    if (undefined === arg1 || arg1) {
+                      search = debounceResult;
+                    } else {
+                      search = GIFPickerActionCreatorsAll.search;
+                    }
+                    let SEARCH = null;
+                    if ("" !== current) {
+                      SEARCH = tmp20.SEARCH;
+                    }
+                    search(current, SEARCH, !(undefined === arg1 || arg1), c10);
+                    if (!(undefined === arg1 || arg1)) {
+                      current = ref.current;
+                      if (current != null) {
+                        current.setText(current);
+                      }
+                    }
+                  }
                 }
               }
               const items1 = [];
-              cResult[23] = Pe;
+              cResult[23] = tmp47;
               cResult[24] = items1;
-              class Te {
+              class Fe {
                 constructor() {
                   if (first1 !== unpackModuleId.FAVORITES) {
                     resultItems = GIFPickerViewStore.getResultItems();
@@ -357,20 +444,46 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((b
                   return obj;
                 }
               }
-              tmp46 = Pe;
+              tmp45 = tmp47;
             } else {
-              class Pe {
-                constructor() {
-                  const obj = channelId(initialQuery[16]);
-                  obj.acknowledgeTooltip(closure_12.GIF_PICKER_TOOLTIP);
-                  const obj2 = guildId(initialQuery[9]);
-                  const trendingSearchTerms = obj2.fetchTrendingSearchTerms();
+              class Re {
+                constructor(current, arg1) {
+                  if (ref.current !== current) {
+                    let search;
+                    ref.current = current;
+                    closure_12(unpackModuleId.SEARCH);
+                    const tmp22 = current.trim().length > 0;
+                    let tmp3 = tmp22;
+                    const tmp20 = unpackModuleId;
+                    const tmp23 = closure_10;
+                    if (tmp3) {
+                      tmp3 = query !== current;
+                    }
+                    tmp23(tmp3);
+                    GIFPickerViewStore(tmp22);
+                    if (undefined === arg1 || arg1) {
+                      search = debounceResult;
+                    } else {
+                      search = GIFPickerActionCreatorsAll.search;
+                    }
+                    let SEARCH = null;
+                    if ("" !== current) {
+                      SEARCH = tmp20.SEARCH;
+                    }
+                    search(current, SEARCH, !(undefined === arg1 || arg1), c10);
+                    if (!(undefined === arg1 || arg1)) {
+                      current = ref.current;
+                      if (current != null) {
+                        current.setText(current);
+                      }
+                    }
+                  }
                 }
               }
-              tmp47 = cResult[24];
+              tmp46 = cResult[24];
             }
-            const effect2 = obj2.useEffect(tmp46, tmp47);
-            class Te {
+            const effect2 = obj2.useEffect(tmp45, tmp46);
+            class Fe {
               constructor() {
                 if (first1 !== unpackModuleId.FAVORITES) {
                   resultItems = GIFPickerViewStore.getResultItems();
@@ -383,22 +496,48 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((b
             }
             const effect3 = obj2.useEffect(tmp49, tmp50);
             if (cResult[28] !== tmp40) {
-              class Pe {
-                constructor() {
-                  const obj = channelId(initialQuery[16]);
-                  obj.acknowledgeTooltip(closure_12.GIF_PICKER_TOOLTIP);
-                  const obj2 = guildId(initialQuery[9]);
-                  const trendingSearchTerms = obj2.fetchTrendingSearchTerms();
+              class Re {
+                constructor(current, arg1) {
+                  if (ref.current !== current) {
+                    let search;
+                    ref.current = current;
+                    closure_12(unpackModuleId.SEARCH);
+                    const tmp22 = current.trim().length > 0;
+                    let tmp3 = tmp22;
+                    const tmp20 = unpackModuleId;
+                    const tmp23 = closure_10;
+                    if (tmp3) {
+                      tmp3 = query !== current;
+                    }
+                    tmp23(tmp3);
+                    GIFPickerViewStore(tmp22);
+                    if (undefined === arg1 || arg1) {
+                      search = debounceResult;
+                    } else {
+                      search = GIFPickerActionCreatorsAll.search;
+                    }
+                    let SEARCH = null;
+                    if ("" !== current) {
+                      SEARCH = tmp20.SEARCH;
+                    }
+                    search(current, SEARCH, !(undefined === arg1 || arg1), c10);
+                    if (!(undefined === arg1 || arg1)) {
+                      current = ref.current;
+                      if (current != null) {
+                        current.setText(current);
+                      }
+                    }
+                  }
                 }
               }
               let obj3 = {
                 onClickSuggestion(arg0) {
-                              return tmp41(arg0, false);
+                              return Re(arg0, false);
                             }
               };
               cResult[28] = tmp40;
               const tmp53 = tmp29(tmp8(initialQuery[17]), obj3);
-              class Te {
+              class Fe {
                 constructor() {
                   if (first1 !== unpackModuleId.FAVORITES) {
                     resultItems = GIFPickerViewStore.getResultItems();
@@ -411,22 +550,74 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((b
               }
               cResult[29] = tmp53;
             } else {
-              class Pe {
-                constructor() {
-                  const obj = channelId(initialQuery[16]);
-                  obj.acknowledgeTooltip(closure_12.GIF_PICKER_TOOLTIP);
-                  const obj2 = guildId(initialQuery[9]);
-                  const trendingSearchTerms = obj2.fetchTrendingSearchTerms();
+              class Re {
+                constructor(current, arg1) {
+                  if (ref.current !== current) {
+                    let search;
+                    ref.current = current;
+                    closure_12(unpackModuleId.SEARCH);
+                    const tmp22 = current.trim().length > 0;
+                    let tmp3 = tmp22;
+                    const tmp20 = unpackModuleId;
+                    const tmp23 = closure_10;
+                    if (tmp3) {
+                      tmp3 = query !== current;
+                    }
+                    tmp23(tmp3);
+                    GIFPickerViewStore(tmp22);
+                    if (undefined === arg1 || arg1) {
+                      search = debounceResult;
+                    } else {
+                      search = GIFPickerActionCreatorsAll.search;
+                    }
+                    let SEARCH = null;
+                    if ("" !== current) {
+                      SEARCH = tmp20.SEARCH;
+                    }
+                    search(current, SEARCH, !(undefined === arg1 || arg1), c10);
+                    if (!(undefined === arg1 || arg1)) {
+                      current = ref.current;
+                      if (current != null) {
+                        current.setText(current);
+                      }
+                    }
+                  }
                 }
               }
             }
             if (cResult[30] === onPressGIF) {
-              class Pe {
-                constructor() {
-                  const obj = channelId(initialQuery[16]);
-                  obj.acknowledgeTooltip(closure_12.GIF_PICKER_TOOLTIP);
-                  const obj2 = guildId(initialQuery[9]);
-                  const trendingSearchTerms = obj2.fetchTrendingSearchTerms();
+              class Re {
+                constructor(current, arg1) {
+                  if (ref.current !== current) {
+                    let search;
+                    ref.current = current;
+                    closure_12(unpackModuleId.SEARCH);
+                    const tmp22 = current.trim().length > 0;
+                    let tmp3 = tmp22;
+                    const tmp20 = unpackModuleId;
+                    const tmp23 = closure_10;
+                    if (tmp3) {
+                      tmp3 = query !== current;
+                    }
+                    tmp23(tmp3);
+                    GIFPickerViewStore(tmp22);
+                    if (undefined === arg1 || arg1) {
+                      search = debounceResult;
+                    } else {
+                      search = GIFPickerActionCreatorsAll.search;
+                    }
+                    let SEARCH = null;
+                    if ("" !== current) {
+                      SEARCH = tmp20.SEARCH;
+                    }
+                    search(current, SEARCH, !(undefined === arg1 || arg1), c10);
+                    if (!(undefined === arg1 || arg1)) {
+                      current = ref.current;
+                      if (current != null) {
+                        current.setText(current);
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -446,12 +637,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((b
           const items2 = [tmp40, initialQuery];
           cResult[19] = tmp40;
           cResult[20] = initialQuery;
-          cResult[21] = tmp44;
+          cResult[21] = tmp43;
           cResult[22] = items2;
-          tmp42 = tmp44;
-          tmp43 = items2;
+          tmp41 = tmp43;
+          tmp42 = items2;
         }
-        class Te {
+        class Fe {
           constructor() {
             if (first1 !== unpackModuleId.FAVORITES) {
               resultItems = GIFPickerViewStore.getResultItems();
@@ -463,8 +654,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((b
           }
         }
         cResult[14] = first1;
-        cResult[16] = Te;
-        tmp38 = Te;
+        cResult[16] = Fe;
+        tmp38 = Fe;
       }
       const tmpResult4 = tmp(initialQuery[14]);
       const result = tmpResult4.filterFavoriteGIFsByQuery(favorites, tmp28);
@@ -497,7 +688,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((b
   cResult[3] = items3;
   tmp6 = items3;
   tmp5 = fn;
-}) : ((bottomSheetRef) => {
+}) : (function GIFPicker(bottomSheetRef) {
   let c13;
   let columnWidth;
   let columns;
@@ -569,11 +760,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((b
   const tmp11 = contentHorizontalPadding(onPressGIF.useState(false), 2);
   limit = tmp11[1];
   const first1 = tmp11[0];
-  constants3 = onPressGIF.useRef("");
+  constants2 = onPressGIF.useRef("");
   const ref2 = onPressGIF.useRef(false);
   [tmp14, c13] = contentHorizontalPadding(onPressGIF.useState(false), 2);
   const tmp13 = contentHorizontalPadding(onPressGIF.useState(false), 2);
-  const tmp16 = contentHorizontalPadding(onPressGIF.useState(constants3.SEARCH), 2);
+  const tmp16 = contentHorizontalPadding(onPressGIF.useState(constants2.SEARCH), 2);
   const first2 = tmp16[0];
   closure_15 = tmp16[1];
   const tmp18 = contentHorizontalPadding(onPressGIF.useState(""), 2);

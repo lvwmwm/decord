@@ -1,25 +1,25 @@
-// Module ID: 11792
-// Function ID: 11793
+// Module ID: 11859
+// Function ID: 11860
 // Name: AppLauncherCommandViewHeader
-// Dependencies: [19, 17, 1489, 21, 11769, 4896, 587, 558, 576, 11679, 4618, 4586, 7826, 5981, 4892, 1188, 2]
+// Dependencies: [19, 17, 1501, 21, 11836, 5090, 587, 558, 576, 11744, 4810, 4778, 8244, 6164, 5086, 1200, 2]
 
-// Module 11792 (AppLauncherCommandViewHeader)
+// Module 11859 (AppLauncherCommandViewHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import useAvatarColorDefault from "useAvatarColor" /* 7826 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11679 */;
-import AppLauncherBackButton from "AppLauncherBackButton" /* 11769 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import useAvatarColorDefault from "useAvatarColor" /* 8244 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11744 */;
+import AppLauncherBackButton from "AppLauncherBackButton" /* 11836 */;
 import react from "react" /* 19 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1489 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
 const AppLauncherBackButtonDefault = AppLauncherBackButton;
-let obj1, section;
+let obj1;
 
 let items;
 let metroImportDefault;
@@ -52,7 +52,7 @@ const __initData4 = { code: "function AppLauncherCommandViewHeaderTsx4(){const{i
 const __initData5 = { code: "function AppLauncherCommandViewHeaderTsx5(){const{APP_ICON_SIZE,APP_ICON_BORDER_WIDTH,DEFAULT_CONTENT_PADDING,interpolate,scrollOffsetY,TOTAL_SCROLL_RANGE}=this.__closure;return{transform:[{translateX:-APP_ICON_SIZE/2-APP_ICON_BORDER_WIDTH+DEFAULT_CONTENT_PADDING},{translateY:interpolate(scrollOffsetY.get(),[0,TOTAL_SCROLL_RANGE],[0,-APP_ICON_SIZE/2],'clamp')},{scale:interpolate(scrollOffsetY.get(),[0,TOTAL_SCROLL_RANGE],[1,0],'clamp')}],opacity:interpolate(scrollOffsetY.get(),[0,TOTAL_SCROLL_RANGE],[1,0],'clamp')};}" };
 const __initData6 = { code: "function AppLauncherCommandViewHeaderTsx6(){const{interpolate,scrollOffsetY,TOTAL_SCROLL_RANGE}=this.__closure;return{opacity:interpolate(scrollOffsetY.get(),[0,TOTAL_SCROLL_RANGE],[0,0.5],'clamp')};}" };
 const sum1 = sum + -16;
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherCommandViewHeader(section) {
   let command;
   let items;
   let items3;
@@ -71,7 +71,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
     application = section.application;
   }
   if (cResult[0] !== application) {
-    const tmpResult = scrollOffsetY(11679);
+    const tmpResult = scrollOffsetY(11744);
     const appLauncherIconSource = tmpResult.getAppLauncherIconSource(application);
     cResult[0] = application;
     cResult[1] = appLauncherIconSource;
@@ -79,7 +79,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
   } else {
     tmp6 = cResult[1];
   }
-  const tmpResult5 = scrollOffsetY(4618);
+  const tmpResult5 = scrollOffsetY(4810);
   class I {
     constructor() {
       obj = { opacity: null, transform: null };
@@ -98,12 +98,12 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
       return obj;
     }
   }
-  let obj2 = { interpolate: tmp(4618).interpolate, scrollOffsetY, TOTAL_SCROLL_RANGE };
+  let obj2 = { interpolate: tmp(4810).interpolate, scrollOffsetY, TOTAL_SCROLL_RANGE };
   I.__closure = obj2;
   I.__workletHash = 12508066849017;
   I.__initData = __initData;
   const animatedStyle = tmpResult5.useAnimatedStyle(I);
-  const tmpResult6 = scrollOffsetY(4618);
+  const tmpResult6 = scrollOffsetY(4810);
   class S {
     constructor() {
       obj = { transform: null, opacity: null };
@@ -130,12 +130,12 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
       return obj;
     }
   }
-  let obj3 = { APP_ICON_SIZE: 72, APP_ICON_BORDER_WIDTH: 4, DEFAULT_CONTENT_PADDING, interpolate: tmp(4618).interpolate, scrollOffsetY, TOTAL_SCROLL_RANGE };
+  let obj3 = { APP_ICON_SIZE: 72, APP_ICON_BORDER_WIDTH: 4, DEFAULT_CONTENT_PADDING, interpolate: tmp(4810).interpolate, scrollOffsetY, TOTAL_SCROLL_RANGE };
   S.__closure = obj3;
   S.__workletHash = 12727209734626;
   S.__initData = __initData2;
   const animatedStyle1 = tmpResult6.useAnimatedStyle(S);
-  const tmpResult7 = scrollOffsetY(4618);
+  const tmpResult7 = scrollOffsetY(4810);
   class D {
     constructor() {
       obj = { opacity: null };
@@ -146,12 +146,12 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
       return obj;
     }
   }
-  let obj4 = { interpolate: tmp(4618).interpolate, scrollOffsetY, TOTAL_SCROLL_RANGE };
+  let obj4 = { interpolate: tmp(4810).interpolate, scrollOffsetY, TOTAL_SCROLL_RANGE };
   D.__closure = obj4;
   D.__workletHash = 5435153794228;
   D.__initData = __initData3;
   const animatedStyle2 = tmpResult7.useAnimatedStyle(D);
-  const tmpResult8 = scrollOffsetY(4586);
+  const tmpResult8 = scrollOffsetY(4778);
   let str = tmpResult8.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
   let tmp13 = tmp6;
   const tmp12 = useAvatarColorDefault;
@@ -216,7 +216,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
                   }
                   const _Symbol = Symbol;
                   if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
-                    const tmp37 = closure_6(scrollOffsetY(1188).Spacer, { size: 32 });
+                    const tmp37 = closure_6(scrollOffsetY(1200).Spacer, { size: 32 });
                     cResult[24] = tmp37;
                     tmp35 = tmp37;
                   } else {
@@ -287,7 +287,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
                   tmp38 = items1;
                 }
                 const obj8 = { lineClamp: 1, animated: true, style: tmp29, variant: "heading-lg/bold", color: "text-overlay-light", children: displayName };
-                const tmp33 = closure_6(scrollOffsetY(4892).Text, obj8);
+                const tmp33 = closure_6(scrollOffsetY(5086).Text, obj8);
                 cResult[21] = tmp29;
                 cResult[22] = displayName;
                 cResult[23] = tmp33;
@@ -328,7 +328,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
   }
   if (null != tmp6) {
     const obj10 = { style: tmp4.appIcon, source: tmp6 };
-    tmp19 = closure_6(tmp11(5981), obj10);
+    tmp19 = closure_6(tmp11(6164), obj10);
   } else {
     const obj11 = { style: items5 };
     items5 = [, ];
@@ -340,7 +340,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
   cResult[4] = tmp4.loadingIcon;
   cResult[5] = tmp19;
   tmp16 = tmp19;
-}) : ((section) => {
+}) : (function AppLauncherCommandViewHeader(section) {
   let command;
   let displayName;
   let items1;
@@ -366,7 +366,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
     }
     return getAppLauncherIconSource(application);
   }, items);
-  let obj = scrollOffsetY(4618);
+  let obj = scrollOffsetY(4810);
   class A {
     constructor() {
       let items;
@@ -384,12 +384,12 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
       return obj;
     }
   }
-  let obj2 = { interpolate: scrollOffsetY(4618).interpolate, scrollOffsetY, TOTAL_SCROLL_RANGE };
+  let obj2 = { interpolate: scrollOffsetY(4810).interpolate, scrollOffsetY, TOTAL_SCROLL_RANGE };
   A.__closure = obj2;
   A.__workletHash = 7452027319932;
   A.__initData = __initData4;
   const animatedStyle = obj.useAnimatedStyle(A);
-  let obj3 = scrollOffsetY(4618);
+  let obj3 = scrollOffsetY(4810);
   class C {
     constructor() {
       let items;
@@ -416,12 +416,12 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
       return obj;
     }
   }
-  let obj4 = { APP_ICON_SIZE: 72, APP_ICON_BORDER_WIDTH: 4, DEFAULT_CONTENT_PADDING, interpolate: scrollOffsetY(4618).interpolate, scrollOffsetY, TOTAL_SCROLL_RANGE };
+  let obj4 = { APP_ICON_SIZE: 72, APP_ICON_BORDER_WIDTH: 4, DEFAULT_CONTENT_PADDING, interpolate: scrollOffsetY(4810).interpolate, scrollOffsetY, TOTAL_SCROLL_RANGE };
   C.__closure = obj4;
   C.__workletHash = 3695464152805;
   C.__initData = __initData5;
   const animatedStyle1 = obj3.useAnimatedStyle(C);
-  let obj5 = scrollOffsetY(4618);
+  let obj5 = scrollOffsetY(4810);
   const fn = function f() {
     let items;
     let obj2;
@@ -430,15 +430,15 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
     obj2 = ReanimatedRexport;
     return obj;
   };
-  let obj6 = { interpolate: scrollOffsetY(4618).interpolate, scrollOffsetY, TOTAL_SCROLL_RANGE };
+  let obj6 = { interpolate: scrollOffsetY(4810).interpolate, scrollOffsetY, TOTAL_SCROLL_RANGE };
   fn.__closure = obj6;
   fn.__workletHash = 10778290362673;
   fn.__initData = __initData6;
   const animatedStyle2 = obj5.useAnimatedStyle(fn);
-  let obj7 = scrollOffsetY(4586);
+  let obj7 = scrollOffsetY(4778);
   let str = obj7.useToken(section(587).colors.BACKGROUND_BASE_LOW);
   let tmp10 = memo;
-  const tmp9 = section(7826);
+  const tmp9 = section(8244);
   if (typeof memo !== "number") {
     let uri;
     if (memo != null) {
@@ -452,7 +452,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
   const tmp9Result = tmp9(tmp10, str);
   if (null != memo) {
     const obj8 = { style: tmp.appIcon, source: memo };
-    tmp15 = closure_6(tmp8(5981), obj8);
+    tmp15 = closure_6(tmp8(6164), obj8);
     tmp16 = closure_6;
   } else {
     const obj9 = { style: items1 };
@@ -473,19 +473,19 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
   items2[1] = prop;
   const obj11 = { style: items3 };
   items3 = [tmp.headerBannerOverlay, animatedStyle2];
-  items4 = [tmp16(section(4618).View, obj11), tmp16(section(11769), { onPress: onPressBack }), , , ];
+  items4 = [tmp16(section(4810).View, obj11), tmp16(section(11836), { onPress: onPressBack }), , , ];
   const obj12 = { lineClamp: 1, animated: true, style: items5, variant: "heading-lg/bold", color: "text-overlay-light", children: displayName };
   items5 = [tmp.appSmallName, animatedStyle];
   displayName = undefined;
-  const Text = tmp3(4892).Text;
+  const Text = tmp3(5086).Text;
   if (command != null) {
     displayName = command.displayName;
   }
   items4[2] = tmp16(Text, obj12);
-  items4[3] = tmp16(scrollOffsetY(1188).Spacer, { size: 32 });
+  items4[3] = tmp16(scrollOffsetY(1200).Spacer, { size: 32 });
   const obj13 = { style: items6, children: tmp15 };
   items6 = [tmp.appIconMask, animatedStyle1];
-  items4[4] = tmp16(section(4618).View, obj13);
+  items4[4] = tmp16(section(4810).View, obj13);
   return tmp18(tmp19, obj10);
 });
 size = size_mod;

@@ -1,13 +1,13 @@
-// Module ID: 6739
-// Function ID: 6740
+// Module ID: 6915
+// Function ID: 6916
 // Name: canUseGuildSpace
-// Dependencies: [2074, 4515, 1085, 558, 576, 504, 6740, 2]
+// Dependencies: [2086, 4707, 1085, 558, 576, 504, 6916, 2]
 // Exports: canUseGuildSpace, isGuildSpaceAdmin
 
-// Module 6739 (canUseGuildSpace)
+// Module 6915 (canUseGuildSpace)
 import Constants from "Constants" /* 1085 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let _require;
 
 const Permissions = Constants.Permissions;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsGuildSpaceAdmin(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -33,7 +33,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function s() {
+    const fn = function c() {
       const canResult = null != closure_0 && PermissionStore.can(Permissions.MANAGE_GUILD, tmp);
       return canResult;
     };
@@ -49,7 +49,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useIsGuildSpaceAdmin(arg0) {
   let closure_0;
   _require = arg0;
   const items = [PermissionStore];
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_5 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanUseGuildSpace(arg0, arg1) {
   let closure_0;
   let first;
   let tmp10;
@@ -98,7 +98,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   const tmpResult = tmp(504);
   closure_5(tmpResult.useStateFromStores(first, tmp9, tmp10));
   return false;
-}) : ((arg0, arg1) => {
+}) : (function useCanUseGuildSpace(arg0, arg1) {
   let closure_0;
   _require = arg0;
   const useGuildSpaceExperimentEnabled = require("GuildSpaceExperiment").useGuildSpaceExperimentEnabled;

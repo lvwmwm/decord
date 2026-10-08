@@ -1,10 +1,10 @@
-// Module ID: 9803
-// Function ID: 9804
+// Module ID: 10366
+// Function ID: 10367
 // Name: useInappropriateConversationWarningsForChannel
-// Dependencies: [9799, 558, 576, 504, 2]
+// Dependencies: [10266, 558, 576, 504, 2]
 
-// Module 9803 (useInappropriateConversationWarningsForChannel)
-import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 9799 */;
+// Module 10366 (useInappropriateConversationWarningsForChannel)
+import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 10266 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ const ChannelSafetyWarningsStore = ChannelSafetyWarningsStore2;
 let _require;
 
 const SafetyWarningTypes = ChannelSafetyWarningsStore2.SafetyWarningTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInappropriateConversationWarningsForChannel(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function _() {
+    const fn = function p() {
       return ChannelSafetyWarningsStore.getChannelSafetyWarnings(closure_0);
     };
     const items1 = [arg0];
@@ -76,7 +76,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return tmp8;
-}) : ((arg0) => {
+}) : (function useInappropriateConversationWarningsForChannel(arg0) {
   let closure_0;
   _require = arg0;
   const items = [ChannelSafetyWarningsStore];

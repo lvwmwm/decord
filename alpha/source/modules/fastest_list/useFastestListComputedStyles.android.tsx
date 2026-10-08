@@ -1,9 +1,9 @@
-// Module ID: 6561
-// Function ID: 6562
+// Module ID: 6737
+// Function ID: 6738
 // Name: useFastestListComputedStyles
 // Dependencies: [19, 17, 558, 576, 2]
 
-// Module 6561 (useFastestListComputedStyles)
+// Module 6737 (useFastestListComputedStyles)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -11,7 +11,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const StyleSheet = react_native.StyleSheet;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(style) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFastestListComputedStyles(style) {
   let tmp2;
   const obj = react2;
   const cResult = obj.c(6);
@@ -180,7 +180,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(style) {
   }
   const error1 = new Error("FastestList: marginStart and marginEnd must be numbers.");
   throw error1;
-}) : ((style) => {
+}) : (function useFastestListComputedStyles(style) {
   style = style.style;
   let items = [style];
   return react.useMemo(function() {

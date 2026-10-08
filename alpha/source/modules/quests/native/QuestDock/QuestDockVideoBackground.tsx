@@ -1,28 +1,28 @@
-// Module ID: 15019
-// Function ID: 15020
+// Module ID: 15281
+// Function ID: 15282
 // Name: QuestDockVideoBackground
-// Dependencies: [32, 19, 17, 4885, 5630, 14912, 1085, 21, 4896, 558, 576, 14913, 4618, 5604, 6577, 14916, 14999, 7952, 1484, 1618, 504, 14911, 683, 15020, 1369, 10921, 1886, 7993, 5981, 5612, 2]
+// Dependencies: [32, 19, 17, 5079, 5977, 15174, 1085, 21, 5090, 558, 576, 15175, 4810, 5374, 6753, 15178, 15261, 8370, 1496, 1630, 504, 15173, 683, 15282, 1381, 10572, 1898, 8401, 6164, 5387, 2]
 
-// Module 15019 (QuestDockVideoBackground)
+// Module 15281 (QuestDockVideoBackground)
 import _modDef683 from "module_683" /* 683 */;
 import Constants from "Constants" /* 1085 */;
-import react_nativeDefault from "react-native" /* 1886 */;
-import spring from "spring" /* 5604 */;
-import QuestConstants from "QuestConstants" /* 5630 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6577 */;
-import QuestDockUtils from "QuestDockUtils" /* 14911 */;
+import react_nativeDefault from "react-native" /* 1898 */;
+import spring from "spring" /* 5374 */;
+import QuestConstants from "QuestConstants" /* 5977 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6753 */;
+import QuestDockUtils from "QuestDockUtils" /* 15173 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import QuestDockConstants from "QuestDockConstants" /* 14912 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import QuestDockConstants from "QuestDockConstants" /* 15174 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let currentState, imageUrl, importDefault;
+let currentState, importDefault;
 
 let StyleSheet;
 let c10;
@@ -69,7 +69,7 @@ let closure_17 = createStyles(obj2);
 const __initData = { code: "function QuestDockVideoBackgroundTsx1(){const{withSpring,activeQuestDockMode,QuestDockMode,QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED}=this.__closure;return{opacity:withSpring(activeQuestDockMode.get()===QuestDockMode.EXPANDED?1:0,QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED)};}" };
 const __initData2 = { code: "function QuestDockVideoBackgroundTsx2(){const{withSpring,activeQuestDockMode,QuestDockMode,QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED}=this.__closure;return{opacity:withSpring(activeQuestDockMode.get()===QuestDockMode.EXPANDED?1:0,QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED)};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockBackgroundMediaFade(arg0) {
   let activeQuestDockMode;
   let children;
   let style;
@@ -77,7 +77,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(7);
   ({ children, style } = arg0);
   const tmp3 = closure_17();
-  activeQuestDockMode = react.useContext(activeQuestDockMode(14913).QuestDockGestureContext).activeQuestDockMode;
+  activeQuestDockMode = react.useContext(activeQuestDockMode(15175).QuestDockGestureContext).activeQuestDockMode;
   const fn = function n() {
     const withSpring = spring.withSpring;
     let num = 0;
@@ -88,11 +88,11 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj = { opacity: withSpring(num, c9) };
     return obj;
   };
-  const obj2 = activeQuestDockMode(4618);
-  fn.__closure = { withSpring: activeQuestDockMode(5604).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
+  const obj2 = activeQuestDockMode(4810);
+  fn.__closure = { withSpring: activeQuestDockMode(5374).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
   fn.__workletHash = 5908890006198;
   fn.__initData = __initData;
-  ({ withSpring: activeQuestDockMode(5604).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED });
+  ({ withSpring: activeQuestDockMode(5374).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED });
   const animatedStyle = obj2.useAnimatedStyle(fn);
   if (cResult[0] === animatedStyle) {
     if (cResult[1] === style) {
@@ -122,15 +122,15 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tmp3.media;
   cResult[3] = items;
   tmp5 = items;
-}) : ((arg0) => {
+}) : (function QuestDockBackgroundMediaFade(arg0) {
   let children;
   let items;
   let style;
   let activeQuestDockMode;
   ({ children, style } = arg0);
   const tmp = closure_17();
-  activeQuestDockMode = react.useContext(activeQuestDockMode(14913).QuestDockGestureContext).activeQuestDockMode;
-  let obj = activeQuestDockMode(4618);
+  activeQuestDockMode = react.useContext(activeQuestDockMode(15175).QuestDockGestureContext).activeQuestDockMode;
+  let obj = activeQuestDockMode(4810);
   const fn = function s() {
     const withSpring = spring.withSpring;
     let num = 0;
@@ -141,10 +141,10 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj = { opacity: withSpring(num, c9) };
     return obj;
   };
-  fn.__closure = { withSpring: activeQuestDockMode(5604).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
+  fn.__closure = { withSpring: activeQuestDockMode(5374).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
   fn.__workletHash = 9800697298933;
   fn.__initData = __initData2;
-  ({ withSpring: activeQuestDockMode(5604).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED });
+  ({ withSpring: activeQuestDockMode(5374).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED });
   const animatedStyle = obj.useAnimatedStyle(fn);
   const obj3 = { style: items, children };
   items = [tmp.media, style, animatedStyle];
@@ -155,7 +155,7 @@ const __initData4 = { code: "function QuestDockVideoBackgroundTsx4(){const{withS
 const __initData5 = { code: "function QuestDockVideoBackgroundTsx5(){const{withSpring,activeQuestDockMode,QuestDockMode,QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED,QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED,windowDimensions}=this.__closure;return{transform:[{translateX:withSpring(activeQuestDockMode.get()===QuestDockMode.COLLAPSED?QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED*-1:0,QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED)},{translateY:withSpring(activeQuestDockMode.get()===QuestDockMode.COLLAPSED?QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED*-1:0,QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED)}],width:windowDimensions.get().width};}" };
 const __initData6 = { code: "function QuestDockVideoBackgroundTsx6(){const{withSpring,shouldShowVideo,isVideoReadyForDisplay,isMediaHiddenWhenCollapsed,activeQuestDockMode,QuestDockMode,QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED}=this.__closure;return{opacity:withSpring(shouldShowVideo&&isVideoReadyForDisplay&&(isMediaHiddenWhenCollapsed||activeQuestDockMode.get()===QuestDockMode.EXPANDED)?0:1,QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED)};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((imageUrl) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockVideoBackground(imageUrl) {
   let activeQuestDockMode;
   let backdropColor;
   let closure_1;
@@ -246,7 +246,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
         }
         const items = [{ translateX: withSpring(num, c9) }, ];
         ({ translateX: withSpring(num, c9) });
-        const withSpring2 = tmp(5604).withSpring;
+        const withSpring2 = tmp(5374).withSpring;
         let num3 = 0;
         spring;
         if (obj.get() === tmp4.COLLAPSED) {
@@ -492,7 +492,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
   cResult[4] = height;
   cResult[5] = questDockExpandedHeightLimits;
   tmp14 = questDockExpandedHeightLimits;
-}) : ((imageUrl) => {
+}) : (function QuestDockVideoBackground(imageUrl) {
   let backdropColor;
   let c9;
   let closure_3;
@@ -569,7 +569,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
       }
       const items = [{ translateX: withSpring(num, c9) }, ];
       ({ translateX: withSpring(num, c9) });
-      const withSpring2 = tmp(5604).withSpring;
+      const withSpring2 = tmp(5374).withSpring;
       let num3 = 0;
       spring;
       if (obj.get() === tmp4.COLLAPSED) {
@@ -650,7 +650,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
       obj.preload(obj2);
     }
   }, items4);
-  function se() {
+  function de() {
     let num = 1;
     const withSpring = spring.withSpring;
     spring;
@@ -669,12 +669,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
     return obj;
   }
   const tmp4Result4 = tmp4(expandedHeight[12]);
-  se.__closure = { withSpring: tmp4(expandedHeight[13]).withSpring, shouldShowVideo: isHeroVideoSupportedResult, isVideoReadyForDisplay, isMediaHiddenWhenCollapsed: tmp2, activeQuestDockMode, QuestDockMode: top, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
-  se.__workletHash = 7848759251612;
-  se.__initData = __initData6;
+  de.__closure = { withSpring: tmp4(expandedHeight[13]).withSpring, shouldShowVideo: isHeroVideoSupportedResult, isVideoReadyForDisplay, isMediaHiddenWhenCollapsed: tmp2, activeQuestDockMode, QuestDockMode: top, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
+  de.__workletHash = 7848759251612;
+  de.__initData = __initData6;
   let tmp32 = null;
   ({ withSpring: tmp4(expandedHeight[13]).withSpring, shouldShowVideo: isHeroVideoSupportedResult, isVideoReadyForDisplay, isMediaHiddenWhenCollapsed: tmp2, activeQuestDockMode, QuestDockMode: top, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED });
-  const animatedStyle1 = tmp4Result4.useAnimatedStyle(se);
+  const animatedStyle1 = tmp4Result4.useAnimatedStyle(de);
   const Fragment = obj.Fragment;
   if (isHeroVideoSupportedResult) {
     const obj6 = { style: tmp3.backgroundVideo, onReadyForDisplay: callback, source: obj7, paused: tmp8 !== top.EXPANDED, resizeMode: "cover", muted: true, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false };

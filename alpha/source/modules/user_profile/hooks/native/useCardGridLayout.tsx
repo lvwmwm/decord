@@ -1,17 +1,17 @@
-// Module ID: 12824
-// Function ID: 12825
+// Module ID: 12971
+// Function ID: 12972
 // Name: useCardGridLayout
-// Dependencies: [6714, 558, 576, 1484, 2]
+// Dependencies: [6891, 558, 576, 1496, 2]
 
-// Module 12824 (useCardGridLayout)
+// Module 12971 (useCardGridLayout)
 import react from "react" /* 576 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import Constants from "Constants" /* 6714 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import Constants from "Constants" /* 6891 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const PROFILE_SIDE_PADDING = Constants.PROFILE_SIDE_PADDING;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCardGridLayout(arg0) {
   let containerWidth;
   let gap;
   let maxCardSize;
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (diff < bound1 * num6 + num5 * diff1) {
       let tmp15;
       if (cResult[5] !== num5) {
-        const obj3 = { columns: 1, cardWidth: "Array", rowWidth: "apply", gap: num5 };
+        const obj3 = { columns: 1, cardWidth: "Array", rowWidth: "backgroundColor", gap: num5 };
         cResult[5] = num5;
         cResult[6] = obj3;
         tmp15 = obj3;
@@ -125,7 +125,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = num5;
   cResult[4] = diff2;
   tmp6 = diff2;
-}) : (() => {
+}) : (function useCardGridLayout() {
   let containerWidth;
   let maxWidth;
   let obj3;
@@ -184,8 +184,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const bound1 = Math.min(Math.max(tmp4, num), num2);
   const diff2 = num4 - 1;
   if (diff < bound1 * num4 + num3 * diff2) {
-    obj3 = { columns: 1, cardWidth: "Array", rowWidth: "apply", gap: num3 };
-    const obj2 = { columns: 1, cardWidth: "Array", rowWidth: "apply", gap: num3 };
+    obj3 = { columns: 1, cardWidth: "Array", rowWidth: "backgroundColor", gap: num3 };
+    const obj2 = { columns: 1, cardWidth: "Array", rowWidth: "backgroundColor", gap: num3 };
   } else {
     obj3 = { columns: num4, cardWidth: bound1, rowWidth: bound1 * num4 + num3 * diff2, gap: num3 };
   }

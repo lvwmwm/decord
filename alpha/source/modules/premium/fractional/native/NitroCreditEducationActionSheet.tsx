@@ -1,24 +1,24 @@
-// Module ID: 13342
-// Function ID: 13343
+// Module ID: 13642
+// Function ID: 13643
 // Name: NitroCreditEducationActionSheet
-// Dependencies: [17, 1085, 21, 4896, 587, 558, 576, 4806, 4892, 1126, 2115, 6652, 2]
+// Dependencies: [17, 1085, 21, 5090, 587, 558, 576, 5000, 5086, 1126, 2127, 6829, 2]
 
-// Module 13342 (NitroCreditEducationActionSheet)
+// Module 13642 (NitroCreditEducationActionSheet)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 4806 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6652 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 5000 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6829 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, aboutText;
+let BottomSheet;
 
 let hasOwnProperty;
 let metroRequire;
@@ -29,7 +29,7 @@ const HelpdeskArticles = Constants.HelpdeskArticles;
 let obj = { container: { marginTop: 32, marginHorizontal: 30 }, aboutContainer: obj2, warningIcon: { margin: 16 }, aboutTextContainer: { justifyContent: "center", flex: 1, marginRight: 30 }, helpdeskText: { textAlign: "center", marginBottom: 24 } };
 obj2 = { flexDirection: "row", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, justifyContent: "center", borderRadius: nativeDefault.radii.lg, marginBottom: 12 };
 let closure_7 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((aboutText) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroCreditEducationActionSheet(aboutText) {
   let items;
   let items1;
   let obj7;
@@ -107,7 +107,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((aboutText) => {
         const obj6 = { children: metroRequire(View, obj8) };
         obj8 = { style: container, children: items };
         items = [tmp13, tmp22];
-        BottomSheet = tmp(6652).BottomSheet;
+        BottomSheet = tmp(6829).BottomSheet;
         const tmp29 = hasOwnProperty(BottomSheet, obj6);
         cResult[14] = tmp4.container;
         cResult[15] = tmp13;
@@ -131,7 +131,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((aboutText) => {
   cResult[5] = tmp8;
   cResult[6] = tmp12;
   tmp11 = tmp12;
-}) : ((aboutText) => {
+}) : (function NitroCreditEducationActionSheet(aboutText) {
   let bg3jBj;
   let format;
   let items;

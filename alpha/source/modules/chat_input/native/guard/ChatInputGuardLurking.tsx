@@ -1,34 +1,34 @@
-// Module ID: 12112
-// Function ID: 12113
+// Module ID: 12190
+// Function ID: 12191
 // Name: ChatInputGuardLurking
-// Dependencies: [19, 4516, 2051, 11589, 1085, 21, 558, 576, 504, 1112, 5076, 12113, 9504, 1197, 6854, 5712, 6730, 1126, 12105, 2]
+// Dependencies: [19, 4708, 2063, 11652, 1085, 21, 558, 576, 504, 1112, 5105, 12191, 8670, 1209, 7042, 6102, 6906, 1126, 12183, 2]
 
-// Module 12112 (ChatInputGuardLurking)
+// Module 12190 (ChatInputGuardLurking)
 import Fragment from "Fragment" /* 21 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5076 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5712 */;
-import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6730 */;
-import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 6854 */;
-import HubProgressActionCreators from "HubProgressActionCreators" /* 9504 */;
-import ChatInputConstants from "ChatInputConstants" /* 11589 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12105 */;
-import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 12113 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5105 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6102 */;
+import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6906 */;
+import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7042 */;
+import HubProgressActionCreators from "HubProgressActionCreators" /* 8670 */;
+import ChatInputConstants from "ChatInputConstants" /* 11652 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12183 */;
+import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 12191 */;
 import react from "react" /* 19 */;
-import LurkingStore from "LurkingStore" /* 4516 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import LurkingStore from "LurkingStore" /* 4708 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let catchPromise, channel, goBackResult, importDefault, obj1, obj7, tmp13, tmp14, tmp19, tmp2, tmp5, tmp7, trackWithMetadataResult;
+let catchPromise, goBackResult, importDefault, obj1, obj7, tmp13, tmp14, tmp19, tmp2, tmp5, tmp7, trackWithMetadataResult;
 
 let c9;
 let metroImportAll;
 const TextAreaCta = ChatInputConstants.TextAreaCta;
 ({ AnalyticEvents: metroImportAll, JoinGuildSources: c9 } = Constants);
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputGuardLurking(channel) {
   let closure_1;
   let isLurking;
   let lurkingSource;
@@ -97,7 +97,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp6, tmp8, tmp9);
   ({ isLurking, lurkingSource } = stateFromStoresObject);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class G {
+    class L {
       constructor() {
         obj = channel(closure_1_3[9]);
         history = obj.getHistory();
@@ -105,10 +105,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
         return;
       }
     }
-    cResult[6] = G;
-    tmp11 = G;
+    cResult[6] = L;
+    tmp11 = L;
   } else {
-    class G {
+    class L {
       constructor() {
         obj = channel(closure_1_3[9]);
         history = obj.getHistory();
@@ -118,7 +118,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
     }
   }
   if (cResult[7] === channel.id) {
-    class G {
+    class L {
       constructor() {
         obj = channel(closure_1_3[9]);
         history = obj.getHistory();
@@ -127,7 +127,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       }
     }
     if (cResult[10] !== tmp4) {
-      class I {
+      class R {
         constructor() {
           tmp = closure_1;
           if (null != closure_1) {
@@ -172,9 +172,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
         }
       }
       cResult[10] = tmp4;
-      cResult[11] = I;
+      cResult[11] = R;
     } else {
-      class I {
+      class R {
         constructor() {
           tmp = closure_1;
           if (null != closure_1) {
@@ -220,7 +220,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       }
     }
     if (lurkingSource != null) {
-      class I {
+      class R {
         constructor() {
           tmp = closure_1;
           if (null != closure_1) {
@@ -270,7 +270,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       let tmp16;
       let tmp20;
       let tmp22;
-      class I {
+      class R {
         constructor() {
           tmp = closure_1;
           if (null != closure_1) {
@@ -315,7 +315,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
         }
       }
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-        class I {
+        class R {
           constructor() {
             tmp = closure_1;
             if (null != closure_1) {
@@ -367,7 +367,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
         tmp17 = stringResult1;
         tmp16 = stringResult;
       } else {
-        class I {
+        class R {
           constructor() {
             tmp = closure_1;
             if (null != closure_1) {
@@ -415,7 +415,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       }
       const _Symbol = Symbol;
       if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-        class I {
+        class R {
           constructor() {
             tmp = closure_1;
             if (null != closure_1) {
@@ -463,7 +463,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
         cResult[14] = stringResult2;
         tmp20 = stringResult2;
       } else {
-        class I {
+        class R {
           constructor() {
             tmp = closure_1;
             if (null != closure_1) {
@@ -509,7 +509,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
         }
       }
       if (cResult[15] !== tmp12) {
-        class I {
+        class R {
           constructor() {
             tmp = closure_1;
             if (null != closure_1) {
@@ -558,7 +558,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
         cResult[16] = tmp24;
         tmp22 = tmp24;
       } else {
-        class I {
+        class R {
           constructor() {
             tmp = closure_1;
             if (null != closure_1) {
@@ -605,7 +605,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       }
       return tmp22;
     } else {
-      class I {
+      class R {
         constructor() {
           tmp = closure_1;
           if (null != closure_1) {
@@ -673,7 +673,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   cResult[7] = channel.id;
   cResult[8] = tmp4;
   cResult[9] = E;
-}) : ((channel) => {
+}) : (function ChatInputGuardLurking(channel) {
   let intl;
   let intl2;
   let intl3;
@@ -745,7 +745,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
     type = lurkingSource.type;
   }
   if (type === constants2.DIRECTORY_ENTRY) {
-    guildId(12105);
+    guildId(12183);
     const intl6 = tmp2(1126).intl;
     const intl7 = tmp2(1126).intl;
     const intl8 = tmp2(1126).intl;
@@ -753,7 +753,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   } else {
     let obj4;
     const tmp15 = jsx;
-    const tmp17 = guildId(12105);
+    const tmp17 = guildId(12183);
     if (isReadonlyAnnouncementsChannel) {
       let obj3 = { type: "button-action", message: intl3.string(tmp2(1126).t.Hl0Mqh), buttonSecondaryText: stringResult, buttonSecondaryOnPress: tmp10, buttonPrimaryText: intl5.string(tmp2(1126).t["3aOv+h"]), buttonPrimaryOnPress: callback1 };
       intl3 = tmp2(1126).intl;

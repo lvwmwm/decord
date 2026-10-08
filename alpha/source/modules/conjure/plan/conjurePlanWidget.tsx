@@ -1,18 +1,18 @@
-// Module ID: 16679
-// Function ID: 16680
+// Module ID: 16943
+// Function ID: 16944
 // Name: conjurePlanWidget
-// Dependencies: [32, 19, 2116, 12923, 8734, 8629, 16680, 16681, 8712, 558, 576, 504, 2]
+// Dependencies: [32, 19, 2128, 13072, 11251, 13102, 16944, 16945, 13185, 558, 576, 504, 2]
 
-// Module 16679 (conjurePlanWidget)
-import _mod8629 from "module_8629" /* 8629 */;
-import ApplicationWidgetConfigSurface from "ApplicationWidgetConfigSurface" /* 8712 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 12923 */;
-import ApplicationAssetType from "ApplicationAssetType" /* 16680 */;
-import ApplicationAssetVisibility from "ApplicationAssetVisibility" /* 16681 */;
+// Module 16943 (conjurePlanWidget)
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13072 */;
+import _mod13102 from "module_13102" /* 13102 */;
+import ApplicationWidgetConfigSurface from "ApplicationWidgetConfigSurface" /* 13185 */;
+import ApplicationAssetType from "ApplicationAssetType" /* 16944 */;
+import ApplicationAssetVisibility from "ApplicationAssetVisibility" /* 16945 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 8734 */;
+import LocaleStore from "LocaleStore" /* 2128 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 11251 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -121,19 +121,19 @@ function sampleValues(widget_config, sample_data, tmp12Result) {
       let _String = String;
       let tmp13 = tmp12Result[String(undefined, tmp8)];
       if (null != tmp13) {
-        let obj3 = { type: _mod8629.ResolvedValueType.MEDIA, media: size };
+        let obj3 = { type: _mod13102.ResolvedValueType.MEDIA, media: size };
         size = { url: tmp14, width: v256, height: v256 };
         obj2[tmp7] = obj3;
       }
     } else {
       let obj5;
       if (typeof tmp8 === "number") {
-        let obj4 = { type: _mod8629.ResolvedValueType.NUMBER, value: tmp8 };
+        let obj4 = { type: _mod13102.ResolvedValueType.NUMBER, value: tmp8 };
         let tmp10 = dependencyMap;
         let tmp11 = tmp8;
         obj5 = obj4;
       } else {
-        obj5 = { type: _mod8629.ResolvedValueType.STRING, value: tmp8 };
+        obj5 = { type: _mod13102.ResolvedValueType.STRING, value: tmp8 };
       }
       obj2[tmp7] = obj5;
     }
@@ -163,7 +163,7 @@ function buildConjurePlanWidgetRendererProps(widget_config, widget_preview, tmp1
     }
     continue;
   }
-  const applicationWidgetSurfaceConfigsSchema = _mod8629.applicationWidgetSurfaceConfigsSchema;
+  const applicationWidgetSurfaceConfigsSchema = _mod13102.applicationWidgetSurfaceConfigsSchema;
   const safeParseResult = applicationWidgetSurfaceConfigsSchema.safeParse(obj);
   if (safeParseResult.success) {
     const data = safeParseResult.data;
@@ -199,7 +199,7 @@ const localizedStrings = [];
 let closure_8 = {};
 let c9 = 256;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureWidgetImageSrcs(arg0, arg1) {
   let closure_1;
   let closure_2;
   _require = arg0;
@@ -218,7 +218,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
     const effect = obj2.useEffect(tmp4, tmp5);
     return tmp3;
   }
-  const fn = function u() {
+  const fn = function o() {
     let obj = closure_1;
     let _Object = Object;
     if (closure_1 == null) {
@@ -257,7 +257,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
   cResult[3] = items;
   tmp5 = items;
   tmp4 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useConjureWidgetImageSrcs(arg0, arg1) {
   let closure_2;
   let first;
   let closure_0 = arg0;
@@ -299,7 +299,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
   return first;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePlanWidget(arg0, arg1) {
   let closure_0;
   let locale;
   let tmp10;
@@ -314,7 +314,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   ({ widget_config, widget_preview } = arg1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [LocaleStore];
-    const fn = function u() {
+    const fn = function o() {
       return locale.locale;
     };
     cResult[0] = items;
@@ -408,7 +408,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[8] = widget_preview;
   cResult[9] = tmp16;
   tmp15 = tmp16;
-}) : ((arg0, widget_config) => {
+}) : (function useConjurePlanWidget(arg0, widget_config) {
   let closure_0;
   let memo;
   let stateFromStores1;

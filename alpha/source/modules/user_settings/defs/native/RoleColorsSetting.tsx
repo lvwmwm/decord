@@ -1,25 +1,25 @@
-// Module ID: 15166
-// Function ID: 15167
+// Module ID: 15428
+// Function ID: 15429
 // Name: RoleColorsSetting
-// Dependencies: [19, 4885, 7645, 558, 576, 504, 14295, 1126, 11142, 2]
+// Dependencies: [19, 5079, 7966, 558, 576, 504, 14520, 1126, 11262, 2]
 // Exports: onRoleColorSettingValueChange
 
-// Module 15166 (RoleColorsSetting)
+// Module 15428 (RoleColorsSetting)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14295 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14520 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRoleColorSettingValue() {
   let roleStyle;
   let tmp4;
   let tmp5;
@@ -27,7 +27,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
-    const fn = function n() {
+    const fn = function o() {
       return roleStyle.roleStyle;
     };
     cResult[0] = items;
@@ -39,14 +39,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useRoleColorSettingValue() {
   let roleStyle;
   const items = [AccessibilityStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => roleStyle.roleStyle);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRoleColorSettingOptions() {
   let first;
   let intl;
   let intl2;
@@ -69,21 +69,23 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => react.useMemo(() => {
-  let intl;
-  let intl2;
-  let intl3;
-  const obj = { label: intl.string(intl4.t.YEOEi6), value: "username" };
-  intl = intl4.intl;
-  const items = [obj, , ];
-  const obj2 = { label: intl2.string(intl4.t.mQaro3), value: "dot" };
-  intl2 = intl4.intl;
-  items[1] = obj2;
-  const obj3 = { label: intl3.string(intl4.t.Ji2EVJ), value: "hidden" };
-  intl3 = intl4.intl;
-  items[2] = obj3;
-  return items;
-}, []));
+}) : (function useRoleColorSettingOptions() {
+  return react.useMemo(() => {
+    let intl;
+    let intl2;
+    let intl3;
+    const obj = { label: intl.string(intl4.t.YEOEi6), value: "username" };
+    intl = intl4.intl;
+    const items = [obj, , ];
+    const obj2 = { label: intl2.string(intl4.t.mQaro3), value: "dot" };
+    intl2 = intl4.intl;
+    items[1] = obj2;
+    const obj3 = { label: intl3.string(intl4.t.Ji2EVJ), value: "hidden" };
+    intl3 = intl4.intl;
+    items[2] = obj3;
+    return items;
+  }, []);
+});
 function onRoleColorSettingValueChange(roleStyle) {
   const obj = AccessibilityActionCreators;
   obj.setRoleStyle(roleStyle);

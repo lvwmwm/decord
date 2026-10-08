@@ -1,17 +1,17 @@
-// Module ID: 9350
-// Function ID: 9351
+// Module ID: 8772
+// Function ID: 8773
 // Name: VoiceStateIconUtils
-// Dependencies: [1999, 4915, 568, 558, 576, 504, 2]
+// Dependencies: [2011, 5111, 568, 558, 576, 504, 2]
 
-// Module 9350 (VoiceStateIconUtils)
+// Module 8772 (VoiceStateIconUtils)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import VoiceStateStore from "VoiceStateStore" /* 4915 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import VoiceStateStore from "VoiceStateStore" /* 5111 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, obj1;
+let _require;
 
 function isStableVoiceStateEqual(arg0, arg1) {
   let tmp = arg0 === arg1;
@@ -24,7 +24,7 @@ function isStableVoiceStateEqual(arg0, arg1) {
 const MuteDeafenIconState = { DEAFENED_SERVER: 0, [0]: "DEAFENED_SERVER", DEAFENED: 1, [1]: "DEAFENED", MUTED_SERVER: 2, [2]: "MUTED_SERVER", MUTED_LOCAL: 3, [3]: "MUTED_LOCAL", MUTED: 4, [4]: "MUTED" };
 let obj2 = { VIDEO_DISABLED_LOCAL_AUTO: 0, [0]: "VIDEO_DISABLED_LOCAL_AUTO", VIDEO_DISABLED_LOCAL: 1, [1]: "VIDEO_DISABLED_LOCAL", VIDEO_ACTIVE: 2, [2]: "VIDEO_ACTIVE" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStableVoiceParticipant(arg0, arg1) {
   let closure_0;
   let first;
   _require = arg0;
@@ -49,32 +49,24 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     const tmpResult = tmp(504);
     return tmpResult.useStateFromStores(first, tmp7, tmp8, isStableVoiceStateEqual);
   }
-  class E {
-    constructor() {
-      if (null != closure_0) {
-        tmp2 = closure_4;
-        tmp3 = closure_1;
-        voiceState = closure_4.getVoiceState(closure_1, tmp);
-        if (null != voiceState) {
-          obj = { deaf: null, selfDeaf: null, mute: null, isLocalMute: null, selfMute: null };
-          ({ deaf: obj.deaf, selfDeaf: obj.selfDeaf, mute: obj.mute } = voiceState);
-          tmp5 = closure_3;
-          obj.isLocalMute = closure_3.isLocalMute(voiceState.userId);
-          obj.selfMute = voiceState.selfMute;
-          return obj;
-        }
+  const fn = function s() {
+    if (null != closure_0) {
+      const voiceState = VoiceStateStore.getVoiceState(closure_1, tmp);
+      if (null != voiceState) {
+        const obj = { deaf: null, selfDeaf: null, mute: null, isLocalMute: MediaEngineStore.isLocalMute(voiceState.userId), selfMute: voiceState.selfMute };
+        ({ deaf: obj.deaf, selfDeaf: obj.selfDeaf, mute: obj.mute } = voiceState);
+        return obj;
       }
-      return;
     }
-  }
+  };
   const items1 = [arg0, arg1];
   cResult[1] = arg1;
   cResult[2] = arg0;
-  cResult[3] = E;
+  cResult[3] = fn;
   cResult[4] = items1;
   tmp8 = items1;
-  tmp7 = E;
-}) : ((arg0, arg1) => {
+  tmp7 = fn;
+}) : (function useStableVoiceParticipant(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;
@@ -94,7 +86,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
 });
 let closure_8 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMuteDeafenIconState(arg0, arg1) {
   const tmp = closure_8(arg0, arg1);
   let tmp2 = null;
   if (null != tmp) {
@@ -116,7 +108,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     tmp2 = DEAFENED_SERVER;
   }
   return tmp2;
-}) : ((arg0, arg1) => {
+}) : (function useMuteDeafenIconState(arg0, arg1) {
   const tmp = closure_8(arg0, arg1);
   let tmp2 = null;
   if (null != tmp) {
@@ -140,7 +132,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   return tmp2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStableVideoState(arg0, arg1) {
   let closure_0;
   let first;
   _require = arg0;
@@ -166,42 +158,37 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     const tmpResult = tmp(504);
     return tmpResult.useStateFromStoresObject(first, tmp7, tmp8);
   }
-  class E {
-    constructor() {
-      tmp = closure_0;
-      if (null != closure_0) {
-        tmp3 = closure_4;
-        tmp4 = closure_1;
-        voiceState = closure_4.getVoiceState(closure_1, tmp);
-      }
-      if (null != tmp) {
-        if (null != voiceState) {
-          obj = closure_3;
-          obj1 = { selfVideo: null, localVideoDisabledState: null };
-          obj1.selfVideo = voiceState.selfVideo;
-          tmp5 = null;
-          if (closure_3.isLocalVideoDisabled(voiceState.userId)) {
-            str = "manual";
-            if (obj.isLocalVideoAutoDisabled(voiceState.userId)) {
-              str = "auto";
-            }
-            tmp5 = str;
-          }
-          obj1.localVideoDisabledState = tmp5;
-          return obj1;
-        }
-      }
-      return { selfVideo: false, localVideoDisabledState: null };
+  const fn = function s() {
+    let tmp5;
+    let voiceState;
+    if (null != closure_0) {
+      voiceState = VoiceStateStore.getVoiceState(closure_1, tmp);
     }
-  }
+    if (null != closure_0) {
+      if (null != voiceState) {
+        obj2 = { selfVideo: voiceState.selfVideo, localVideoDisabledState: tmp5 };
+        tmp5 = null;
+        const obj = MediaEngineStore;
+        if (MediaEngineStore.isLocalVideoDisabled(voiceState.userId)) {
+          let str = "manual";
+          if (obj.isLocalVideoAutoDisabled(voiceState.userId)) {
+            str = "auto";
+          }
+          tmp5 = str;
+        }
+        return obj2;
+      }
+    }
+    return { selfVideo: false, localVideoDisabledState: null };
+  };
   const items1 = [arg1, arg0];
   cResult[1] = arg1;
   cResult[2] = arg0;
-  cResult[3] = E;
+  cResult[3] = fn;
   cResult[4] = items1;
   tmp8 = items1;
-  tmp7 = E;
-}) : ((arg0, arg1) => {
+  tmp7 = fn;
+}) : (function useStableVideoState(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;
@@ -234,7 +221,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
 });
 let closure_9 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoIconState(arg0, arg1) {
   const tmp = closure_9(arg0, arg1);
   let tmp2 = null;
   if (null != tmp) {
@@ -253,7 +240,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     tmp2 = tmp3;
   }
   return tmp2;
-}) : ((arg0, arg1) => {
+}) : (function useVideoIconState(arg0, arg1) {
   const tmp = closure_9(arg0, arg1);
   let tmp2 = null;
   if (null != tmp) {

@@ -1,18 +1,18 @@
-// Module ID: 14300
-// Function ID: 14301
+// Module ID: 14525
+// Function ID: 14526
 // Name: AccessibilityCallManager
-// Dependencies: [502, 2051, 4525, 1377, 1369, 2028, 5049, 4735, 1126, 1989, 584, 2]
+// Dependencies: [502, 2063, 4717, 1389, 1381, 2040, 5417, 4929, 1126, 2001, 584, 2]
 
-// Module 14300 (AccessibilityCallManager)
+// Module 14525 (AccessibilityCallManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import useChannelName from "useChannelName" /* 5049 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import useChannelName from "useChannelName" /* 5417 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
-import LifecycleManager from "LifecycleManager" /* 1989 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
+import LifecycleManager from "LifecycleManager" /* 2001 */;
 import size from "module_2" /* 2 */;
 
 const set = new Set();

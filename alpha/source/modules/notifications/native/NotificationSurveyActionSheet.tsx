@@ -1,22 +1,20 @@
-// Module ID: 11282
-// Function ID: 11283
+// Module ID: 9622
+// Function ID: 9623
 // Name: NotificationSurveyActionSheet
-// Dependencies: [19, 11260, 1085, 21, 1126, 1252, 558, 576, 11263, 4573, 11283, 2]
+// Dependencies: [19, 9600, 1085, 21, 1126, 1264, 558, 576, 9603, 4765, 9623, 2]
 
-// Module 11282 (NotificationSurveyActionSheet)
+// Module 9622 (NotificationSurveyActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import intl7 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ToastUtils from "ToastUtils" /* 4573 */;
-import Constants2 from "Constants" /* 11260 */;
-import PushFeedbackActions from "PushFeedbackActions" /* 11263 */;
-import FeedbackActionSheetDefault from "FeedbackActionSheet" /* 11283 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import ToastUtils from "ToastUtils" /* 4765 */;
+import Constants2 from "Constants" /* 9600 */;
+import PushFeedbackActions from "PushFeedbackActions" /* 9603 */;
+import FeedbackActionSheetDefault from "FeedbackActionSheet" /* 9623 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let notificationType;
 
 function trackOpen() {
   const obj = AnalyticsUtilsDefault;
@@ -25,7 +23,7 @@ function trackOpen() {
 const constants = Constants2.NotificationUserFeedbackReasons;
 const AnalyticEvents = Constants.AnalyticEvents;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((notificationType) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotificationSurveyActionSheet(notificationType) {
   let first;
   let intl;
   let intl2;
@@ -95,7 +93,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((notificationType) 
       return tmp13;
     }
   }
-  const fn = function b(arg0) {
+  function handleSubmit(arg0) {
     let rating;
     let reason;
     ({ rating, reason } = arg0);
@@ -114,13 +112,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((notificationType) 
       const obj3 = ToastUtils;
       obj3.presentFeedbackSent();
     }
-  };
+  }
   cResult[1] = _location;
   cResult[2] = messageId;
   cResult[3] = notificationType;
-  cResult[4] = fn;
-  tmp6 = fn;
-}) : ((arg0) => {
+  cResult[4] = handleSubmit;
+  tmp6 = handleSubmit;
+}) : (function NotificationSurveyActionSheet(arg0) {
   let _location;
   let intl;
   let intl2;
@@ -141,7 +139,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((notificationType) 
   const intl4 = intl7.intl;
   const intl5 = intl7.intl;
   const intl6 = intl7.intl;
-  return <tmp headerLabel={intl4.string(intl7.t.wGioO1)} showHeaderCloseButton hideDontShowAgainCheckbox ratingsBodyLabel={intl5.string(intl7.t.Yzl7Or)} reasonsHeaderLabel={intl6.string(intl7.t.g1q5fr)} reasons={items} trackOpen={trackOpen} trackReport={function trackReport(arg0) {
+  return <tmp headerLabel={intl4.string(intl7.t.wGioO1)} showHeaderCloseButton hideDontShowAgainCheckbox ratingsBodyLabel={intl5.string(intl7.t.Yzl7Or)} reasonsHeaderLabel={intl6.string(intl7.t.g1q5fr)} reasons={items} trackOpen={trackOpen} trackReport={function handleSubmit(arg0) {
     let rating;
     let reason;
     ({ rating, reason } = arg0);

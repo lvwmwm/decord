@@ -1,15 +1,15 @@
-// Module ID: 17963
-// Function ID: 17964
+// Module ID: 18250
+// Function ID: 18251
 // Name: useRoleSubscriptionFormat
-// Dependencies: [19, 2107, 2106, 2074, 15038, 1085, 558, 576, 504, 2]
+// Dependencies: [19, 2119, 2118, 2086, 15300, 1085, 558, 576, 504, 2]
 
-// Module 17963 (useRoleSubscriptionFormat)
+// Module 18250 (useRoleSubscriptionFormat)
 import Constants from "Constants" /* 1085 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 2107 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15038 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 2119 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15300 */;
 import react from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildRoleStore from "GuildRoleStore" /* 2118 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let _require, tmp3;
 const hasPermission = GuildRoleRecord.hasPermission;
 const constants = GuildRoleSubscriptionsConstants.GuildRoleSubscriptionFormat;
 const Permissions = Constants.Permissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRoleSubscriptionFormat(arg0) {
   let SOME_CHANNELS;
   let closure_0;
   let first;
@@ -136,7 +136,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = SOME_CHANNELS;
   cResult[4] = SOME_CHANNELS === tmp9.ALL_CHANNELS;
   cResult[5] = obj2;
-}) : ((arg0) => {
+}) : (function useRoleSubscriptionFormat(arg0) {
   let closure_0;
   let stateFromStores;
   _require = arg0;

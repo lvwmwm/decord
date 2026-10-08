@@ -1,18 +1,16 @@
-// Module ID: 16579
-// Function ID: 16580
+// Module ID: 16834
+// Function ID: 16835
 // Name: useOtherGuildJoinRequestsForUser
-// Dependencies: [19, 5939, 558, 576, 504, 5938, 2]
+// Dependencies: [19, 6122, 558, 576, 504, 6121, 2]
 
-// Module 16579 (useOtherGuildJoinRequestsForUser)
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 5938 */;
+// Module 16834 (useOtherGuildJoinRequestsForUser)
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6121 */;
 import react from "react" /* 19 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5939 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6122 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let guildId;
-
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOtherGuildJoinRequestsForUser(guildId) {
   let first;
   let selectedJoinRequestId;
   let obj = guildId(selectedJoinRequestId[3]);
@@ -57,42 +55,45 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           return tmp13;
         }
         if (cResult[13] !== selectedJoinRequestId) {
-          class I {
-            constructor(joinRequestId) {
-              return joinRequestId.joinRequestId !== selectedJoinRequestId;
-            }
-          }
+          const fn3 = function _(joinRequestId) {
+            return joinRequestId.joinRequestId !== selectedJoinRequestId;
+          };
           cResult[13] = selectedJoinRequestId;
-          cResult[14] = I;
-          tmp14 = I;
+          cResult[14] = fn3;
+          tmp14 = fn3;
         } else {
-          class I {
-            constructor(joinRequestId) {
-              return joinRequestId.joinRequestId !== selectedJoinRequestId;
-            }
-          }
+          tmp14 = cResult[14];
         }
         const _Symbol = Symbol;
         if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
           class I {
-            constructor(joinRequestId) {
-              return joinRequestId.joinRequestId !== selectedJoinRequestId;
+            constructor(createdAt, createdAt2) {
+              const date = new Date(createdAt2.createdAt);
+              const time = date.getTime();
+              const date1 = new Date(createdAt.createdAt);
+              return time - date1.getTime();
             }
           }
-          cResult[15] = tmp16;
-          tmp15 = tmp16;
+          cResult[15] = I;
+          tmp15 = I;
         } else {
           class I {
-            constructor(joinRequestId) {
-              return joinRequestId.joinRequestId !== selectedJoinRequestId;
+            constructor(createdAt, createdAt2) {
+              const date = new Date(createdAt2.createdAt);
+              const time = date.getTime();
+              const date1 = new Date(createdAt.createdAt);
+              return time - date1.getTime();
             }
           }
         }
         const arr4 = stateFromStores;
         if (stateFromStores == null) {
           class I {
-            constructor(joinRequestId) {
-              return joinRequestId.joinRequestId !== selectedJoinRequestId;
+            constructor(createdAt, createdAt2) {
+              const date = new Date(createdAt2.createdAt);
+              const time = date.getTime();
+              const date1 = new Date(createdAt.createdAt);
+              return time - date1.getTime();
             }
           }
         }
@@ -130,7 +131,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[4] = items2;
   tmp7 = items2;
   tmp6 = fn;
-}) : ((guildId) => {
+}) : (function useOtherGuildJoinRequestsForUser(guildId) {
   guildId = guildId.guildId;
   const userId = guildId.userId;
   const selectedJoinRequestId = guildId.selectedJoinRequestId;

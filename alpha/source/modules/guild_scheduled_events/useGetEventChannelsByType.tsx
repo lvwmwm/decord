@@ -1,14 +1,14 @@
-// Module ID: 9238
-// Function ID: 9239
+// Module ID: 8546
+// Function ID: 8547
 // Name: useGetEventChannelsByType
-// Dependencies: [2056, 4513, 4515, 9205, 558, 576, 504, 9204, 2]
+// Dependencies: [2068, 4705, 4707, 8547, 558, 576, 504, 8548, 2]
 
-// Module 9238 (useGetEventChannelsByType)
-import GuildChannelStore2 from "GuildChannelStore" /* 4513 */;
-import useManageResourcePermissions from "useManageResourcePermissions" /* 9204 */;
-import StageInstanceStore from "StageInstanceStore" /* 2056 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import PermissionsConstants from "PermissionsConstants" /* 9205 */;
+// Module 8546 (useGetEventChannelsByType)
+import GuildChannelStore2 from "GuildChannelStore" /* 4705 */;
+import useManageResourcePermissions from "useManageResourcePermissions" /* 8548 */;
+import StageInstanceStore from "StageInstanceStore" /* 2068 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import PermissionsConstants from "PermissionsConstants" /* 8547 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ function getEventChannelsByType(id, channelTypeFromEntity, items) {
 const GUILD_VOCAL_CHANNELS_KEY = GuildChannelStore2.GUILD_VOCAL_CHANNELS_KEY;
 ({ CREATE_GUILD_EVENT_VOICE_CHANNEL_PERMISSIONS: metroRequire, CREATE_GUILD_EVENT_STAGE_CHANNEL_PERMISSIONS: metroImportDefault } = PermissionsConstants);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanCreateEventInStageChannel(id) {
   let first;
   let tmp11;
   let tmp6;
@@ -95,16 +95,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     tmp9 = cResult[4];
   }
   if (cResult[5] !== id.id) {
-    class C {
+    class S {
       constructor() {
         return StageInstanceStore.getStageInstanceByChannel(id.id);
       }
     }
     cResult[5] = id.id;
-    cResult[6] = C;
-    tmp11 = C;
+    cResult[6] = S;
+    tmp11 = S;
   } else {
-    class C {
+    class S {
       constructor() {
         return StageInstanceStore.getStageInstanceByChannel(id.id);
       }
@@ -113,7 +113,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   const tmpResult2 = require("get initialized");
   const stateFromStores1 = tmpResult2.useStateFromStores(tmp9, tmp11);
   if (cResult[7] === id) {
-    class C {
+    class S {
       constructor() {
         return StageInstanceStore.getStageInstanceByChannel(id.id);
       }
@@ -121,7 +121,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   }
   let tmp13 = id.isGuildStageVoice() && stateFromStores;
   if (tmp13) {
-    class C {
+    class S {
       constructor() {
         return StageInstanceStore.getStageInstanceByChannel(id.id);
       }
@@ -132,7 +132,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   cResult[8] = stateFromStores;
   cResult[9] = stateFromStores1;
   cResult[10] = tmp13;
-}) : ((isGuildStageVoice) => {
+}) : (function useCanCreateEventInStageChannel(isGuildStageVoice) {
   const _require = isGuildStageVoice;
   const items = [PermissionStore];
   const items1 = [isGuildStageVoice];
@@ -145,7 +145,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   return tmp3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGuildVoice) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanCreateEventInVoiceChannel(isGuildVoice) {
   let first;
   let tmp6;
   let tmp7;
@@ -188,7 +188,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGuildVoice) => {
   cResult[5] = stateFromStores;
   cResult[6] = tmp10;
   tmp9 = tmp10;
-}) : ((isGuildVoice) => {
+}) : (function useCanCreateEventInVoiceChannel(isGuildVoice) {
   const _require = isGuildVoice;
   const items = [PermissionStore];
   const items1 = [isGuildVoice];
@@ -198,7 +198,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGuildVoice) => {
   return tmp2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetEventChannelsByType(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -235,7 +235,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = items1;
   tmp7 = items1;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useGetEventChannelsByType(arg0, arg1) {
   let closure_0;
   let closure_1;
   const _require = arg0;

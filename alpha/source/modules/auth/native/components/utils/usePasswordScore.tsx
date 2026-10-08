@@ -1,9 +1,9 @@
-// Module ID: 15929
-// Function ID: 15930
+// Module ID: 16189
+// Function ID: 16190
 // Name: usePasswordScore
-// Dependencies: [5, 32, 19, 558, 576, 12, 15917, 2]
+// Dependencies: [5, 32, 19, 558, 576, 12, 16176, 2]
 
-// Module 15929 (usePasswordScore)
+// Module 16189 (usePasswordScore)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require, c5, c6;
 
 let _slicedToArray = _slicedToArray_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePasswordScore(arg0) {
   let ref;
   let tmp10;
   let tmp3;
@@ -32,7 +32,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   [tmp5, _asyncToGenerator] = tmp4;
   _slicedToArray = react.useRef(null);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function c() {
+    const fn = function s() {
       let tmp = closure_0(dependencyMap[5]);
       const throttle = tmp.throttle;
       closure_0 = _asyncToGenerator(async (arg0, value) => {
@@ -168,7 +168,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = tmp5;
   cResult[7] = obj3;
   tmp12 = obj3;
-}) : ((arg0) => {
+}) : (function usePasswordScore(arg0) {
   let ref;
   let tmp2;
   let tmp4;

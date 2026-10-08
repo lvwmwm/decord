@@ -1,18 +1,18 @@
-// Module ID: 15980
-// Function ID: 15981
+// Module ID: 16240
+// Function ID: 16241
 // Name: guilds/Guilds
-// Dependencies: [19, 10833, 21, 558, 576, 15981, 4738, 10925, 14916, 15982, 16344, 15000, 4595, 2]
+// Dependencies: [19, 11182, 21, 558, 576, 16241, 4932, 10576, 15178, 16242, 16604, 15262, 4787, 2]
 
-// Module 15980 (guilds/Guilds)
+// Module 16240 (guilds/Guilds)
 import react2 from "react" /* 576 */;
-import native from "native" /* 4595 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4738 */;
-import MainTabsConstants from "MainTabsConstants" /* 10833 */;
-import QuestsEligibility from "QuestsEligibility" /* 10925 */;
-import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 14916 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 15981 */;
-import MainChannelsDefault from "MainChannels" /* 15982 */;
-import YouBarDefault from "YouBar" /* 16344 */;
+import native from "native" /* 4787 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4932 */;
+import QuestsEligibility from "QuestsEligibility" /* 10576 */;
+import MainTabsConstants from "MainTabsConstants" /* 11182 */;
+import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 15178 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 16241 */;
+import MainChannelsDefault from "MainChannels" /* 16242 */;
+import YouBarDefault from "YouBar" /* 16604 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -21,10 +21,10 @@ import size from "module_2" /* 2 */;
 let closure_4;
 let hasOwnProperty;
 let tmp3;
-const QuestDockDefault = tmp3(15000);
+const QuestDockDefault = tmp3(15262);
 const YouBarNavigatorScreens = MainTabsConstants.YouBarNavigatorScreens;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildsOnly() {
   let first;
   let tmp13;
   let tmp9;
@@ -42,12 +42,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const QuestDockExternalCoordinationContextProvider = tmp(14916).QuestDockExternalCoordinationContextProvider;
+    const QuestDockExternalCoordinationContextProvider = tmp(15178).QuestDockExternalCoordinationContextProvider;
     const items = [React3(MainChannelsDefault, {}), React3(YouBarDefault, {}), ];
     const tmp10 = hasOwnProperty;
     const tmp11 = React3;
     if (first) {
-      first = tmp11(tmp5(15000), {});
+      first = tmp11(tmp5(15262), {});
     }
     const obj3 = { children: items };
     items[2] = first;
@@ -67,7 +67,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     tmp13 = cResult[3];
   }
   return tmp13;
-}) : (() => {
+}) : (function GuildsOnly() {
   let QuestDockExternalCoordinationContextProvider;
   let items;
   let tmp7;

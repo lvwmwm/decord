@@ -1,19 +1,19 @@
-// Module ID: 10107
-// Function ID: 10108
+// Module ID: 9691
+// Function ID: 9692
 // Name: FavoriteGIFHooks
-// Dependencies: [19, 558, 10108, 576, 12, 2]
+// Dependencies: [19, 558, 9692, 576, 12, 2]
 
-// Module 10107 (FavoriteGIFHooks)
+// Module 9691 (FavoriteGIFHooks)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
-import FrecencyUserSettingsHooks from "FrecencyUserSettingsHooks" /* 10108 */;
+import FrecencyUserSettingsHooks from "FrecencyUserSettingsHooks" /* 9692 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4 = {};
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoriteGIFs(arg0) {
   const tmp = undefined === arg0 || arg0;
   const obj = FrecencyUserSettingsHooks;
   const favoriteGifs = obj.useFrecencySettings(tmp).favoriteGifs;
@@ -25,7 +25,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     gifs = closure_4;
   }
   return gifs;
-}) : (() => {
+}) : (function useFavoriteGIFs() {
   let flag = arg0;
   if (arg0 === undefined) {
     flag = true;
@@ -43,7 +43,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_5 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSortedFavoriteGIFs(arg0) {
   let tmp5;
   let closure_0 = arg0;
   let obj = react2;
@@ -57,7 +57,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return tmp4;
   }
   if (cResult[3] !== arg0) {
-    const fn = function s(src, url) {
+    const fn = function u(src, url) {
       const obj = { url, src };
       const merged = Object.assign(src);
       src = undefined;
@@ -84,7 +84,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = arg0;
   cResult[2] = valueResult;
   tmp4 = valueResult;
-}) : ((arg0) => {
+}) : (function useSortedFavoriteGIFs(arg0) {
   let closure_0 = arg0;
   const tmp = closure_5();
   let closure_1 = tmp;
@@ -109,7 +109,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowTooltipOnFavorite() {
   const obj = FrecencyUserSettingsHooks;
   const favoriteGifs = obj.useFrecencySettings().favoriteGifs;
   let flag;
@@ -120,7 +120,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     flag = false;
   }
   return flag;
-}) : (() => {
+}) : (function useShouldShowTooltipOnFavorite() {
   const obj = FrecencyUserSettingsHooks;
   const favoriteGifs = obj.useFrecencySettings().favoriteGifs;
   let flag;
@@ -133,14 +133,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return flag;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFavoriteGIF(arg0, arg1) {
   let tmp2 = undefined === arg1;
   const tmp = closure_5;
   if (!tmp2) {
     tmp2 = arg1;
   }
   return null != tmp(tmp2)[arg0];
-}) : ((arg0) => {
+}) : (function useIsFavoriteGIF(arg0) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;

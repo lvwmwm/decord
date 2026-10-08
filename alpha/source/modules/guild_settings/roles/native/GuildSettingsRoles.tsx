@@ -1,49 +1,49 @@
-// Module ID: 17820
-// Function ID: 17821
+// Module ID: 18107
+// Function ID: 18108
 // Name: GuildSettingsRoles
-// Dependencies: [32, 19, 17, 2107, 502, 4786, 2106, 2074, 4515, 6630, 17821, 17822, 1085, 21, 4896, 587, 5922, 558, 576, 1252, 17823, 504, 16109, 9282, 1490, 4520, 5076, 17824, 17833, 17834, 6081, 1126, 5916, 11789, 4892, 17835, 5601, 17837, 6890, 12457, 1369, 17831, 5712, 6631, 6554, 8924, 1188, 9269, 16359, 6543, 2]
+// Dependencies: [32, 19, 17, 2119, 502, 4980, 2118, 2086, 4707, 6807, 18108, 18109, 1085, 21, 5090, 587, 5902, 558, 576, 1264, 18110, 504, 16369, 8613, 1502, 4712, 5105, 18111, 18120, 18121, 6267, 1126, 6189, 11856, 5086, 18122, 5375, 18124, 7079, 12553, 1381, 18118, 6102, 6808, 6730, 8555, 1200, 8599, 16619, 6719, 2]
 
-// Module 17820 (GuildSettingsRoles)
+// Module 18107 (GuildSettingsRoles)
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 2107 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4520 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5076 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5712 */;
-import TableRowGroup from "TableRowGroup" /* 6081 */;
-import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 6631 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9282 */;
-import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 16109 */;
-import GuildSettingsConstants from "GuildSettingsConstants" /* 17822 */;
-import GuildSettingsRolesManager from "GuildSettingsRolesManager" /* 17823 */;
-import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 17831 */;
-import actions_GuildActionCreators from "actions/GuildActionCreators" /* 17833 */;
-import GuildSettingsModalRolesActionCreatorsDefault from "GuildSettingsModalRolesActionCreators" /* 17834 */;
-import MemberRolesAbstractUI from "MemberRolesAbstractUI" /* 17835 */;
-import GuildSettingsRoleItemDefault from "GuildSettingsRoleItem" /* 17837 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 2119 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4712 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5105 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6102 */;
+import TableRowGroup from "TableRowGroup" /* 6267 */;
+import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 6808 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8613 */;
+import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 16369 */;
+import GuildSettingsConstants from "GuildSettingsConstants" /* 18109 */;
+import GuildSettingsRolesManager from "GuildSettingsRolesManager" /* 18110 */;
+import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 18118 */;
+import actions_GuildActionCreators from "actions/GuildActionCreators" /* 18120 */;
+import GuildSettingsModalRolesActionCreatorsDefault from "GuildSettingsModalRolesActionCreators" /* 18121 */;
+import MemberRolesAbstractUI from "MemberRolesAbstractUI" /* 18122 */;
+import GuildSettingsRoleItemDefault from "GuildSettingsRoleItem" /* 18124 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4786 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
-import GuildStore_mod from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 6630 */;
-import GuildSettingsModalRolesStore from "GuildSettingsModalRolesStore" /* 17821 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4980 */;
+import GuildRoleStore from "GuildRoleStore" /* 2118 */;
+import GuildStore_mod from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 6807 */;
+import GuildSettingsModalRolesStore from "GuildSettingsModalRolesStore" /* 18108 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import TextStyles from "TextStyles" /* 5922 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import TextStyles from "TextStyles" /* 5902 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_12, guildId, importDefault, navigation, role, str2, tmp12, tmp8Result, to, trackResult;
+let _require, closure_12, importDefault, navigation, role, str2, tmp12, tmp8Result, to, trackResult;
 
 let Fonts;
 let StyleSheet;
@@ -60,7 +60,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const GuildSettingsRoleCreateModalActionCreatorsDefault = tmp(17824);
+const GuildSettingsRoleCreateModalActionCreatorsDefault = tmp(18111);
 let react = react_mod;
 ({ View: metroRequire, StyleSheet } = react_native);
 const isEveryoneRole = GuildRoleRecord.isEveryoneRole;
@@ -78,7 +78,7 @@ let merged = Object.assign(TextStyles(Fonts.DISPLAY_EXTRABOLD, nativeDefault.col
 obj5 = { marginTop: nativeDefault.space.PX_16, marginLeft: nativeDefault.space.PX_16 };
 let closure_23 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSearchQueryStateWithAnalytics(arg0, arg1) {
   let closure_0;
   let closure_1;
   let closure_3;
@@ -243,7 +243,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
   cResult[7] = arg0;
   cResult[8] = E;
   cResult[9] = items;
-}) : ((arg0, arg1) => {
+}) : (function useSearchQueryStateWithAnalytics(arg0, arg1) {
   let closure_3;
   let closure_4;
   let first;
@@ -298,7 +298,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
   return obj;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRoleJustCreatedHelper(arg0) {
   let closure_0;
   let first;
   _require = arg0;
@@ -314,7 +314,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     first = cResult[0];
   }
-  const tmpResult = tmp(17823);
+  const tmpResult = tmp(18110);
   const guildSettingsRolesManagerState = tmpResult.useGuildSettingsRolesManagerState(first);
   if (cResult[1] === arg0) {
     let tmp6;
@@ -356,7 +356,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = items;
   tmp7 = items;
   tmp6 = fn2;
-}) : ((arg0) => {
+}) : (function useRoleJustCreatedHelper(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("GuildSettingsRolesManager");
@@ -388,7 +388,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildRoleAccessGuard(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -445,7 +445,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = items1;
   tmp10 = items1;
   tmp9 = fn2;
-}) : ((arg0) => {
+}) : (function useGuildRoleAccessGuard(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -470,7 +470,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedGuildSettingsModalRoles(guildId) {
   let closure_11;
   let currentUserId;
   let filteredRoles;
@@ -1117,7 +1117,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[4] = guildId;
   cResult[5] = rolesOrder;
   cResult[6] = W;
-}) : ((guildId) => {
+}) : (function ConnectedGuildSettingsModalRoles(guildId) {
   let Icon;
   let Text;
   let closure_1;
@@ -1346,13 +1346,13 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       tmpResult = null;
       if (!hasSearchQuery) {
         const obj4 = { accessibilityRole: "button", accessibilityLabel: intl2.string(intl5.t["0dOFq+"]), onPress: callback4, style: closure_1.reorderButton, children: items2 };
-        const PressableOpacity = tmp7(5916).PressableOpacity;
+        const PressableOpacity = tmp7(6189).PressableOpacity;
         intl2 = tmp7(1126).intl;
         const obj5 = { color: nativeDefault.colors.TEXT_LINK, size: "sm" };
-        const ArrowsUpDownIcon = tmp7(11789).ArrowsUpDownIcon;
+        const ArrowsUpDownIcon = tmp7(11856).ArrowsUpDownIcon;
         items2 = [closure_20(ArrowsUpDownIcon, obj5), ];
         const obj6 = { style: closure_1.reorderButtonText, variant: "text-sm/medium", color: "text-link", children: intl3.string(intl5.t["0dOFq+"]) };
-        const Text = tmp7(4892).Text;
+        const Text = tmp7(5086).Text;
         intl3 = tmp7(1126).intl;
         items2[1] = closure_20(Text, obj6);
         tmpResult = tmp(PressableOpacity, obj4);
@@ -1363,7 +1363,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     let tmp6Result = null;
     if (first) {
       const obj7 = { style: closure_1.rolesBody, variant: "text-sm/medium", color: "interactive-text-default", children: intl4.string(intl5.t.nHcwVl) };
-      const Text2 = tmp7(4892).Text;
+      const Text2 = tmp7(5086).Text;
       intl4 = tmp7(1126).intl;
       tmp6Result = tmp6(Text2, obj7);
     }
@@ -1388,7 +1388,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     if (hasRoles) {
       const items = [closure_1.subheaderContainer, ];
       let num = 0;
-      const tmp38 = afk;
+      const tmp38 = authStore6;
       const tmp39 = closure_20;
       const tmp40 = metroRequire;
       if (closure_20) {
@@ -1457,8 +1457,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     return null;
   }, items12);
   const callback10 = obj.useCallback((role, from) => {
-    let fn;
-    let fn2;
+    let handleMoveDown;
+    let handleMoveUp;
     let id;
     let tmp19;
     let tmp3;
@@ -1469,7 +1469,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       memberCount = role.memberCount;
       let obj = navigation(guild[25]);
       const diff = roleData.length - 1;
-      const obj2 = { sorting, isEveryoneRole: tmp3, role, locked: tmp19, guildId: id, numMembers: memberCount, isFirstRole: 0 === from, isLastRole: from === diff, onPress: callback2, onLongPress: callback3, onMoveUp: fn, onMoveDown: fn2 };
+      const obj2 = { sorting, isEveryoneRole: tmp3, role, locked: tmp19, guildId: id, numMembers: memberCount, isFirstRole: 0 === from, isLastRole: from === diff, onPress: callback2, onLongPress: callback3, onMoveUp: handleMoveUp, onMoveDown: handleMoveDown };
       tmp3 = null != tmp;
       tmp19 = !obj.isRoleHigher(guild, currentUserId, highestRole, role);
       const tmp22 = closure_20;
@@ -1481,16 +1481,16 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       if (guild != null) {
         id = tmp.id;
       }
-      fn = undefined;
+      handleMoveUp = undefined;
       if (0 !== from) {
-        fn = () => {
+        handleMoveUp = function handleMoveUp() {
           const obj = { from, to: from - 1 };
           callback6(obj);
         };
       }
-      fn2 = undefined;
+      handleMoveDown = undefined;
       if (from !== diff) {
-        fn2 = () => {
+        handleMoveDown = function handleMoveDown() {
           const obj = { from, to: from + 1 };
           callback6(obj);
         };

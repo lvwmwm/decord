@@ -1,12 +1,12 @@
-// Module ID: 9889
-// Function ID: 9890
+// Module ID: 9369
+// Function ID: 9370
 // Name: SoundmojiSendingExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1452, 558, 576, 2]
 // Exports: getSoundmojiSendExperiment
 
-// Module 9889 (SoundmojiSendingExperiment)
+// Module 9369 (SoundmojiSendingExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ obj2 = { 1: null, 2: { enabled: true, showSoundmojiInEmojiPicker: false } };
 obj2[2] = { enabled: true, showSoundmojiInEmojiPicker: true };
 let closure_2 = ApexExperiment.createApexExperiment(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundmojiSendExperiment(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -30,12 +30,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useSoundmojiSendExperiment(location) {
   const obj = { location: location.location };
   return closure_2.useConfig(obj).enabled;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundmojiEmojiPickerSectionExperiment(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -49,7 +49,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2).showSoundmojiInEmojiPicker;
-}) : ((location) => {
+}) : (function useSoundmojiEmojiPickerSectionExperiment(location) {
   const obj = { location: location.location };
   return closure_2.useConfig(obj).showSoundmojiInEmojiPicker;
 });

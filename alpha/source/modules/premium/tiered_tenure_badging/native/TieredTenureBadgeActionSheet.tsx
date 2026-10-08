@@ -1,31 +1,31 @@
-// Module ID: 10861
-// Function ID: 10862
+// Module ID: 10512
+// Function ID: 10513
 // Name: TieredTenureBadgeActionSheet
-// Dependencies: [19, 17, 1377, 1379, 1085, 21, 4896, 587, 558, 576, 10862, 7132, 10887, 5981, 4892, 1126, 10888, 504, 1976, 1260, 8455, 1618, 6895, 4860, 7861, 9658, 9661, 6119, 6652, 2]
+// Dependencies: [19, 17, 1389, 1391, 1085, 21, 5090, 587, 558, 576, 10513, 7318, 10538, 6164, 5086, 1126, 10539, 504, 1988, 1272, 8941, 1630, 7084, 5054, 8279, 9451, 9733, 6298, 6829, 2]
 
-// Module 10861 (TieredTenureBadgeActionSheet)
+// Module 10512 (TieredTenureBadgeActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import openUserSettings from "openUserSettings" /* 6895 */;
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7132 */;
-import showUserProfileActionSheet from "showUserProfileActionSheet" /* 7861 */;
-import useMobileTenureBadgeImages from "useMobileTenureBadgeImages" /* 10862 */;
-import useTenureBadgeRequirementString from "useTenureBadgeRequirementString" /* 10887 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import openUserSettings from "openUserSettings" /* 7084 */;
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7318 */;
+import showUserProfileActionSheet from "showUserProfileActionSheet" /* 8279 */;
+import useMobileTenureBadgeImages from "useMobileTenureBadgeImages" /* 10513 */;
+import useTenureBadgeRequirementString from "useTenureBadgeRequirementString" /* 10538 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+import UserStore from "UserStore" /* 1389 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, importDefault, userId;
+let BottomSheet, importDefault;
 
 let c10;
 let c9;
@@ -44,7 +44,7 @@ let obj = { headerContainer: { paddingHorizontal: 24, alignItems: "center" }, ti
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderWidth: 1.2, borderColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, borderRadius: nativeDefault.radii.sm };
 let closure_13 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function TieredTenureBadgeItem(arg0) {
   let Hu4jfi;
   let badge;
   let date;
@@ -140,7 +140,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
                     let tmp43 = isUsersBadge && null != premiumSince;
                     if (tmp43) {
                       const obj4 = { style: tmp4.badgePremiumSince, variant: "text-xs/normal", color: "text-muted", children: formatToPlainString(Hu4jfi, obj5) };
-                      const Text = tmp(4892).Text;
+                      const Text = tmp(5086).Text;
                       const intl2 = tmp(1126).intl;
                       formatToPlainString = intl2.formatToPlainString;
                       const _Date = Date;
@@ -221,7 +221,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
       } else {
         tmp31 = cResult[18];
       }
-      Text1 = tmp(4892).Text;
+      Text1 = tmp(5086).Text;
       badgeName = tmp4.badgeName;
       const intl = tmp(1126).intl;
       stringResult = intl.string(tieredTenureBadgeData.nameUnformatted);
@@ -262,7 +262,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
   tmp8 = tmp27;
   tmp7 = Text1;
   tmp16 = tenureBadgeRequirementString;
-}) : (function(arg0) {
+}) : (function TieredTenureBadgeItem(arg0) {
   let Hu4jfi;
   let badge;
   let date;
@@ -300,7 +300,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
     const obj3 = { resizeMode: "contain", source: small };
     items1 = [authStore(FastImageDefault, obj3), , , ];
     const obj4 = { style: tmp.badgeName, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.string(tieredTenureBadgeData.nameUnformatted) };
-    const Text = tmp2(4892).Text;
+    const Text = tmp2(5086).Text;
     intl = tmp2(1126).intl;
     items1[1] = authStore(Text, obj4);
     const obj5 = { style: tmp.badgeRequirement, variant: "text-xs/normal", color: "mobile-text-heading-primary", children: tmp7 };
@@ -311,7 +311,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
     }
     if (isUsersBadge) {
       const obj6 = { style: tmp.badgePremiumSince, variant: "text-xs/normal", color: "text-muted", children: formatToPlainString(Hu4jfi, obj7) };
-      const Text2 = tmp2(4892).Text;
+      const Text2 = tmp2(5086).Text;
       const intl2 = tmp2(1126).intl;
       formatToPlainString = intl2.formatToPlainString;
       const _Date = Date;
@@ -328,7 +328,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
   return tmp9Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TieredTenureBadgeActionSheet(userId) {
   let closure_1;
   let currentUser;
   let items5;
@@ -356,7 +356,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   const premiumSinceForUser = tmpResult5.usePremiumSinceForUser(userId);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [UserStore];
-    const fn = function u() {
+    const fn = function c() {
       return currentUser.getCurrentUser();
     };
     cResult[0] = items;
@@ -768,7 +768,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[8] = userId;
   cResult[9] = obj16;
   tmp20 = obj16;
-}) : ((userId) => {
+}) : (function TieredTenureBadgeActionSheet(userId) {
   let BottomSheetScrollView;
   let closure_1;
   let closure_3;

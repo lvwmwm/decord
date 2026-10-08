@@ -1,13 +1,13 @@
-// Module ID: 10731
-// Function ID: 10732
+// Module ID: 11591
+// Function ID: 11592
 // Name: PlaygroundAccessExperiment
-// Dependencies: [1377, 1440, 558, 576, 504, 2]
+// Dependencies: [1389, 1452, 558, 576, 504, 2]
 // Exports: getHasPlaygroundAccess, getPlaygroundAccessExperiment
 
-// Module 10731 (PlaygroundAccessExperiment)
+// Module 11591 (PlaygroundAccessExperiment)
 import react from "react" /* 576 */;
-import UserStore from "UserStore" /* 1377 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import UserStore from "UserStore" /* 1389 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ obj2 = { 1: null };
 obj2[1] = { enabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePlaygroundAccessExperiment(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -32,13 +32,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return apexExperiment.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function usePlaygroundAccessExperiment(location) {
   const obj = { location };
   return apexExperiment.useConfig(obj).enabled;
 });
 let closure_4 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasPlaygroundAccess(arg0) {
   let currentUser;
   let tmp4;
   let tmp5;
@@ -47,7 +47,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    const fn = function c() {
+    const fn = function o() {
       return currentUser.getCurrentUser();
     };
     cResult[0] = items;
@@ -82,7 +82,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp7 = closure_4(arg0);
   }
   return tmp7;
-}) : ((arg0) => {
+}) : (function useHasPlaygroundAccess(arg0) {
   let currentUser;
   const items = [UserStore];
   const obj = get_initialized;

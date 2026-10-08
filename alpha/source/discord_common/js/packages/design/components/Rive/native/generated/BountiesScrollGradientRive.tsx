@@ -1,138 +1,142 @@
-// Module ID: 4668
-// Function ID: 4669
+// Module ID: 4860
+// Function ID: 4861
 // Name: BountiesScrollGradientRive
-// Dependencies: [109, 19, 21, 558, 576, 4612, 4669, 4665, 2]
+// Dependencies: [109, 19, 21, 558, 576, 4804, 4861, 4857, 2]
 
-// Module 4668 (BountiesScrollGradientRive)
+// Module 4860 (BountiesScrollGradientRive)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import _modDef4669 from "module_4669" /* 4669 */;
+import _modDef4861 from "module_4861" /* 4861 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const BaseRive2 = tmp(4612);
-const RiveErrorBoundary2 = tmp(4665);
-let closure_3 = ["fallback", "artboard", "stateMachine", "defaultViewModelInstance"];
-let closure_4 = ["fallback", "artboard", "stateMachine", "defaultViewModelInstance"];
+const BaseRive2 = tmp(4804);
+const RiveErrorBoundary2 = tmp(4857);
+let closure_3 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance"];
+let closure_4 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance"];
 const jsx = Fragment.jsx;
 const artboardProperties = { "Bounty Scroll Gradient": {} };
 const artboardViewModelInstances = { "Bounty Scroll Gradient": [] };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = react.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesScrollGradientRiveInner(arg0) {
   let artboard;
   let defaultViewModelInstance;
   let fallback;
+  let ref;
   let stateMachine;
   let tmp4;
   let tmp5;
   let tmp6;
   let tmp7;
+  let tmp8;
   const obj = react2;
-  const cResult = obj.c(11);
+  const cResult = obj.c(12);
   if (cResult[0] !== arg0) {
-    ({ fallback, artboard, stateMachine, defaultViewModelInstance } = arg0);
-    const tmp10 = _objectWithoutProperties(arg0, closure_3);
+    ({ ref, fallback, artboard, stateMachine, defaultViewModelInstance } = arg0);
+    const tmp11 = _objectWithoutProperties(arg0, closure_3);
     cResult[0] = arg0;
-    cResult[1] = tmp10;
-    cResult[2] = stateMachine;
-    cResult[3] = artboard;
-    cResult[4] = defaultViewModelInstance;
-    tmp7 = defaultViewModelInstance;
-    tmp6 = artboard;
-    tmp5 = stateMachine;
-    tmp4 = tmp10;
+    cResult[1] = ref;
+    cResult[2] = tmp11;
+    cResult[3] = stateMachine;
+    cResult[4] = artboard;
+    cResult[5] = defaultViewModelInstance;
+    tmp8 = defaultViewModelInstance;
+    tmp7 = artboard;
+    tmp6 = stateMachine;
+    tmp5 = tmp11;
+    tmp4 = ref;
   } else {
     tmp4 = cResult[1];
     tmp5 = cResult[2];
     tmp6 = cResult[3];
     tmp7 = cResult[4];
+    tmp8 = cResult[5];
   }
   let str = "Bounty Scroll Gradient";
-  if (undefined !== tmp6) {
-    str = tmp6;
-  }
-  let tmp11;
   if (undefined !== tmp7) {
-    tmp11 = tmp7;
+    str = tmp7;
   }
-  if (cResult[5] === str) {
-    if (cResult[6] === tmp11) {
-      if (cResult[7] === ref) {
-        if (cResult[8] === tmp4) {
-          let tmp12;
-          if (cResult[9] === tmp5) {
-            tmp12 = cResult[10];
+  let tmp12;
+  if (undefined !== tmp8) {
+    tmp12 = tmp8;
+  }
+  if (cResult[6] === str) {
+    if (cResult[7] === tmp12) {
+      if (cResult[8] === tmp4) {
+        if (cResult[9] === tmp5) {
+          let tmp13;
+          if (cResult[10] === tmp6) {
+            tmp13 = cResult[11];
           }
-          return tmp12;
+          return tmp13;
         }
       }
     }
   }
   const BaseRive = BaseRive2.BaseRive;
-  const merged = Object.assign(tmp4);
-  const tmp14 = <BaseRive ref={arg1} src={_modDef4669} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={tmp11} stateMachine={tmp5} />;
-  cResult[5] = str;
-  cResult[6] = tmp11;
-  cResult[7] = ref;
+  const merged = Object.assign(tmp5);
+  const tmp15 = <BaseRive ref={tmp4} src={_modDef4861} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={tmp12} stateMachine={tmp6} />;
+  cResult[6] = str;
+  cResult[7] = tmp12;
   cResult[8] = tmp4;
   cResult[9] = tmp5;
-  cResult[10] = tmp14;
-  tmp12 = tmp14;
-}) : ((defaultViewModelInstance, ref) => {
+  cResult[10] = tmp6;
+  cResult[11] = tmp15;
+  tmp13 = tmp15;
+}) : (function BountiesScrollGradientRiveInner(ref) {
   let artboard;
   let fallback;
-  ({ fallback, artboard } = defaultViewModelInstance);
+  ({ fallback, artboard } = ref);
   let str = "Bounty Scroll Gradient";
+  ref = ref.ref;
   if (undefined !== artboard) {
     str = artboard;
   }
-  defaultViewModelInstance = defaultViewModelInstance.defaultViewModelInstance;
+  const defaultViewModelInstance = ref.defaultViewModelInstance;
   let tmp;
-  const stateMachine = defaultViewModelInstance.stateMachine;
+  const stateMachine = ref.stateMachine;
   if (undefined !== defaultViewModelInstance) {
     tmp = defaultViewModelInstance;
   }
-  const tmp2 = _objectWithoutProperties(defaultViewModelInstance, closure_4);
+  const tmp2 = _objectWithoutProperties(ref, closure_4);
   const BaseRive = BaseRive2.BaseRive;
   const merged = Object.assign(tmp2);
-  return <BaseRive ref={arg1} src={_modDef4669} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={tmp} stateMachine={stateMachine} />;
-}));
+  return <BaseRive ref={ref} src={_modDef4861} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={tmp} stateMachine={stateMachine} />;
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((fallback, ref) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesScrollGradientRiveWithBoundary(fallback) {
+  let tmp4;
   const obj = react2;
-  const cResult = obj.c(6);
-  if (cResult[0] === fallback) {
-    let tmp4;
-    if (cResult[1] === ref) {
-      tmp4 = cResult[2];
-    }
-    if (cResult[3] === fallback.fallback) {
-      let tmp7;
-      if (cResult[4] === tmp4) {
-        tmp7 = cResult[5];
-      }
-      return tmp7;
-    }
-    const tmp9 = jsx(RiveErrorBoundary2.RiveErrorBoundary, { fallback: fallback.fallback, children: tmp4 });
-    cResult[3] = fallback.fallback;
-    cResult[4] = tmp4;
-    cResult[5] = tmp9;
-    tmp7 = tmp9;
+  const cResult = obj.c(5);
+  if (cResult[0] !== fallback) {
+    const merged = Object.assign(fallback);
+    const tmp10 = <closure_9 />;
+    cResult[0] = fallback;
+    cResult[1] = tmp10;
+    tmp4 = tmp10;
+  } else {
+    tmp4 = cResult[1];
   }
-  const merged = Object.assign(fallback);
-  const tmp6 = <closure_9 ref={arg1} />;
-  cResult[0] = fallback;
-  cResult[1] = ref;
-  cResult[2] = tmp6;
-  tmp4 = tmp6;
-}) : ((fallback, ref) => {
+  if (cResult[2] === fallback.fallback) {
+    let tmp11;
+    if (cResult[3] === tmp4) {
+      tmp11 = cResult[4];
+    }
+    return tmp11;
+  }
+  const tmp12 = jsx(RiveErrorBoundary2.RiveErrorBoundary, { fallback: fallback.fallback, children: tmp4 });
+  cResult[2] = fallback.fallback;
+  cResult[3] = tmp4;
+  cResult[4] = tmp12;
+  tmp11 = tmp12;
+}) : (function BountiesScrollGradientRiveWithBoundary(fallback) {
   const RiveErrorBoundary = RiveErrorBoundary2.RiveErrorBoundary;
   const merged = Object.assign(fallback);
   return <RiveErrorBoundary fallback={arg0.fallback}>{null}</RiveErrorBoundary>;
-}));
+});
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/BountiesScrollGradientRive.tsx");
 
-export const BountiesScrollGradientRive = forwardRefResult;
+export const BountiesScrollGradientRive = tmp3;

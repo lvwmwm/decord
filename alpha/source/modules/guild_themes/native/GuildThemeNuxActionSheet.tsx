@@ -1,25 +1,25 @@
-// Module ID: 16124
-// Function ID: 16125
+// Module ID: 16384
+// Function ID: 16385
 // Name: GuildThemeNuxActionSheet
-// Dependencies: [5, 32, 19, 17, 4705, 4772, 2048, 21, 3, 4896, 587, 558, 576, 16125, 4793, 504, 4860, 1126, 16126, 4892, 6078, 6079, 1188, 5601, 6652, 2]
+// Dependencies: [5, 32, 19, 17, 4899, 4966, 2060, 21, 3, 5090, 587, 558, 576, 16385, 4987, 504, 5054, 1126, 16386, 5086, 6264, 6265, 1200, 5375, 6829, 2]
 
-// Module 16124 (GuildThemeNuxActionSheet)
+// Module 16384 (GuildThemeNuxActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
-import GuildThemeRuntimeStore_mod from "GuildThemeRuntimeStore" /* 4772 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
+import GuildThemeRuntimeStore_mod from "GuildThemeRuntimeStore" /* 4966 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, _undefined, c5, closure_2, dependencyMap, guildId;
+let BottomSheet, _undefined, c5, closure_2, dependencyMap;
 
 let c10;
 let obj2;
@@ -36,7 +36,7 @@ const View = react_native.View;
 let GuildThemeRuntimeStore = GuildThemeRuntimeStore_mod;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
-const GuildThemeNuxActionSheet = "GuildThemeNuxActionSheet";
+const GuildThemeNuxActionSheet_str = "GuildThemeNuxActionSheet";
 let tmp3 = new LoggerDefault("GuildThemeNuxActionSheet");
 let closure_13 = tmp3;
 let createStyles = createStyles_mod;
@@ -49,7 +49,7 @@ obj5 = { marginBottom: nativeDefault.space.PX_12 };
 obj6 = { marginBottom: nativeDefault.space.PX_12 };
 obj7 = { gap: nativeDefault.space.PX_8 };
 let closure_14 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeNuxActionSheet(guildId) {
   let closure_8;
   let ref;
   let stateFromStores;
@@ -67,14 +67,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const markAsDismissed = guildId.markAsDismissed;
   const tmp4 = closure_14();
   let obj2 = react;
-  [tmp6, dependencyMap] = _slicedToArray(react.useState(guildId(16125).getInitialGuildThemeNuxSelection), 2);
-  const tmp5 = _slicedToArray(react.useState(guildId(16125).getInitialGuildThemeNuxSelection), 2);
+  [tmp6, dependencyMap] = _slicedToArray(react.useState(guildId(16385).getInitialGuildThemeNuxSelection), 2);
+  const tmp5 = _slicedToArray(react.useState(guildId(16385).getInitialGuildThemeNuxSelection), 2);
   [r10028, _asyncToGenerator] = _slicedToArray(react.useState(null), 2);
   const tmp7 = _slicedToArray(react.useState(null), 2);
   const tmp8 = _slicedToArray(react.useState(false), 2);
   [r10034, _slicedToArray] = tmp8;
   react = react.useRef(false);
-  const tmp9 = tmp6 === guildId(4793).GuildThemeSourcePreference.PERSONAL;
+  const tmp9 = tmp6 === guildId(4987).GuildThemeSourcePreference.PERSONAL;
   let closure_6 = tmp9;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [stateFromStores];
@@ -242,7 +242,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             c5.current = true;
             tmp(constants.TAKE_ACTION);
             const obj = markAsDismissed(dependencyMap[16]);
-            obj.hideActionSheet(GuildThemeNuxActionSheet);
+            obj.hideActionSheet(GuildThemeNuxActionSheet_str);
           }
           c5 = 3;
           return { value: "IconComponent", done: null };
@@ -257,20 +257,20 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         }
       }
     });
-    const fn3 = function() {
+    function t10() {
       return closure_0(...arguments);
-    };
+    }
     cResult[13] = guildId;
     cResult[14] = tmp9;
     cResult[15] = markAsDismissed;
     cResult[16] = stateFromStores;
-    cResult[17] = fn3;
+    cResult[17] = t10;
   }
   class Q {
     constructor() {
       if (stateFromStores !== guildId) {
         const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet(GuildThemeNuxActionSheet);
+        obj.hideActionSheet(GuildThemeNuxActionSheet_str);
       }
     }
   }
@@ -281,7 +281,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[9] = items3;
   tmp20 = items3;
   tmp19 = Q;
-}) : ((guildId) => {
+}) : (function GuildThemeNuxActionSheet(guildId) {
   let Button;
   let HelpMessage;
   let HelpMessage2;
@@ -319,14 +319,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const tmp = closure_14();
   let tmp2 = guildId;
   const tmp3 = dependencyMap;
-  const tmp4 = _slicedToArray(react.useState(guildId(16125).getInitialGuildThemeNuxSelection), 2);
+  const tmp4 = _slicedToArray(react.useState(guildId(16385).getInitialGuildThemeNuxSelection), 2);
   [tmp5, c2] = tmp4;
   [tmp7, c3] = _slicedToArray(react.useState(null), 2);
   const tmp6 = _slicedToArray(react.useState(null), 2);
   [tmp9, c4] = _slicedToArray(react.useState(false), 2);
   const tmp8 = _slicedToArray(react.useState(false), 2);
   react = react.useRef(false);
-  const tmp10 = tmp5 === guildId(4793).GuildThemeSourcePreference.PERSONAL;
+  const tmp10 = tmp5 === guildId(4987).GuildThemeSourcePreference.PERSONAL;
   let closure_6 = tmp10;
   let obj = guildId(504);
   const items = [stateFromStores];
@@ -353,7 +353,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const effect = react.useEffect(() => {
     if (stateFromStores !== guildId) {
       const obj = ActionSheetActionCreatorsDefault;
-      obj.hideActionSheet(GuildThemeNuxActionSheet);
+      obj.hideActionSheet(GuildThemeNuxActionSheet_str);
     }
   }, items3);
   const items4 = [markAsDismissed];
@@ -434,7 +434,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           closure_129_5.current = true;
           closure_129_1(constants.TAKE_ACTION);
           const obj = tmp(closure_2[16]);
-          obj.hideActionSheet(GuildThemeNuxActionSheet);
+          obj.hideActionSheet(GuildThemeNuxActionSheet_str);
         }
         c5 = 3;
         return { value: "IconComponent", done: null };
@@ -461,26 +461,26 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     stringResult = string(t["cY+Oob"]);
   }
   let obj3 = { startExpanded: true, dismissAccessibilityLabel: intl2.string(tmp2(1126).t.cpT0Cq), onDismiss: callback3, contentStyles: tmp.container, children: items7 };
-  BottomSheet = tmp2(6652).BottomSheet;
+  BottomSheet = tmp2(6829).BottomSheet;
   intl2 = tmp2(1126).intl;
-  items7 = [closure_10(markAsDismissed(16126), { themeSettings: stateFromStores1, isPersonal: tmp10 }), , , , , , ];
+  items7 = [closure_10(markAsDismissed(16386), { themeSettings: stateFromStores1, isPersonal: tmp10 }), , , , , , ];
   let obj4 = { accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: intl3.string(tmp2(1126).t.Q9zFy9) };
-  const Text = tmp2(4892).Text;
+  const Text = tmp2(5086).Text;
   intl3 = tmp2(1126).intl;
   items7[1] = closure_10(Text, obj4);
   let obj5 = { variant: "text-md/normal", color: "text-default", style: tmp.description, children: intl4.string(tmp2(1126).t.XLpBLj) };
-  const Text2 = tmp2(4892).Text;
+  const Text2 = tmp2(5086).Text;
   intl4 = tmp2(1126).intl;
   items7[2] = closure_10(Text2, obj5);
   let obj6 = { style: tmp.options, children: closure_11(TableRadioGroup, obj7) };
   obj7 = { hasIcons: false, value: tmp5, onChange: callback, children: items8 };
-  TableRadioGroup = tmp2(6079).TableRadioGroup;
-  const obj8 = { label: intl5.string(tmp2(1126).t.aN3RNQ), value: tmp2(4793).GuildThemeSourcePreference.GUILD };
-  const TableRadioRow = tmp2(6078).TableRadioRow;
+  TableRadioGroup = tmp2(6265).TableRadioGroup;
+  const obj8 = { label: intl5.string(tmp2(1126).t.aN3RNQ), value: tmp2(4987).GuildThemeSourcePreference.GUILD };
+  const TableRadioRow = tmp2(6264).TableRadioRow;
   intl5 = tmp2(1126).intl;
   items8 = [closure_10(TableRadioRow, obj8), ];
-  const obj9 = { label: intl6.string(tmp2(1126).t.js8y7t), value: tmp2(4793).GuildThemeSourcePreference.PERSONAL };
-  const TableRadioRow2 = tmp2(6078).TableRadioRow;
+  const obj9 = { label: intl6.string(tmp2(1126).t.js8y7t), value: tmp2(4987).GuildThemeSourcePreference.PERSONAL };
+  const TableRadioRow2 = tmp2(6264).TableRadioRow;
   intl6 = tmp2(1126).intl;
   items8[1] = closure_10(TableRadioRow2, obj9);
   items7[3] = closure_10(closure_6, obj6);
@@ -488,8 +488,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const tmp19 = closure_11;
   if (tmp10) {
     const obj10 = { style: tmp.warning, children: closure_10(HelpMessage, obj11) };
-    obj11 = { messageType: tmp2(1188).HelpMessageTypes.WARNING, borderRadius: markAsDismissed(587).radii.md, children: intl7.string(tmp2(1126).t.tTHQAy) };
-    HelpMessage = tmp2(1188).HelpMessage;
+    obj11 = { messageType: tmp2(1200).HelpMessageTypes.WARNING, borderRadius: markAsDismissed(587).radii.md, children: intl7.string(tmp2(1126).t.tTHQAy) };
+    HelpMessage = tmp2(1200).HelpMessage;
     intl7 = tmp2(1126).intl;
     tmp20Result = tmp20(tmp22, obj10);
   }
@@ -497,15 +497,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let tmp20Result2 = null;
   if (null != tmp7) {
     const obj12 = { style: tmp.warning, children: closure_10(HelpMessage2, obj13) };
-    obj13 = { messageType: tmp2(1188).HelpMessageTypes.ERROR, borderRadius: markAsDismissed(587).radii.md, children: tmp7 };
-    HelpMessage2 = tmp2(1188).HelpMessage;
+    obj13 = { messageType: tmp2(1200).HelpMessageTypes.ERROR, borderRadius: markAsDismissed(587).radii.md, children: tmp7 };
+    HelpMessage2 = tmp2(1200).HelpMessage;
     tmp20Result2 = tmp20(tmp22, obj12);
   }
   items7[5] = tmp20Result2;
   const obj14 = { style: tmp.footer, children: closure_10(Button, obj15) };
   obj15 = { text: stringResult, variant: str, loading: tmp9, disabled: tmp9, onPress: callback2 };
   str = "primary";
-  Button = tmp2(5601).Button;
+  Button = tmp2(5375).Button;
   if (tmp10) {
     str = "secondary";
   }

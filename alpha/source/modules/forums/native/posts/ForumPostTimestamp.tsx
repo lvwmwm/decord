@@ -1,24 +1,24 @@
-// Module ID: 11642
-// Function ID: 11643
+// Module ID: 11707
+// Function ID: 11708
 // Name: ForumPostTimestamp
-// Dependencies: [19, 11629, 21, 4896, 558, 576, 7539, 4892, 2]
+// Dependencies: [19, 11693, 21, 5090, 558, 576, 9261, 5086, 2]
 
-// Module 11642 (ForumPostTimestamp)
+// Module 11707 (ForumPostTimestamp)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ForumHooks from "ForumHooks" /* 7539 */;
-import ForumChannelStore from "ForumChannelStore" /* 11629 */;
+import ForumHooks from "ForumHooks" /* 9261 */;
+import ForumChannelStore from "ForumChannelStore" /* 11693 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 const useForumChannelStore = ForumChannelStore.useForumChannelStore;
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ text: { lineHeight: 18, height: 18 } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTimestamp(arg0) {
   let format;
   let hasUnreads;
   let textStyle;
@@ -61,7 +61,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = textStyle;
   cResult[2] = items;
   tmp6 = items;
-}) : ((thread) => {
+}) : (function ForumPostTimestamp(thread) {
   let format;
   let hasUnreads;
   let textStyle;

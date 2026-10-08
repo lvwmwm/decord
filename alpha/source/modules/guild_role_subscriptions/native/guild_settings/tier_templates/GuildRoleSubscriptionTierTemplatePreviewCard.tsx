@@ -1,30 +1,30 @@
-// Module ID: 18024
-// Function ID: 18025
+// Module ID: 18311
+// Function ID: 18312
 // Name: GuildRoleSubscriptionTierTemplatePreviewCard
-// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 6476, 4892, 4860, 18025, 1987, 18029, 1188, 18028, 1126, 6660, 1490, 15060, 18030, 1252, 5076, 15066, 18026, 9966, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 587, 558, 576, 6654, 5086, 5054, 18312, 1999, 18316, 1200, 18315, 1126, 6837, 1502, 15322, 18317, 1264, 5105, 15328, 18313, 9493, 2]
 
-// Module 18024 (GuildRoleSubscriptionTierTemplatePreviewCard)
+// Module 18311 (GuildRoleSubscriptionTierTemplatePreviewCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6476 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6660 */;
-import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 18028 */;
-import GuildRoleSubscriptionTierTemplateActionCreators from "GuildRoleSubscriptionTierTemplateActionCreators" /* 18030 */;
+import native from "native" /* 1200 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6654 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6837 */;
+import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 18315 */;
+import GuildRoleSubscriptionTierTemplateActionCreators from "GuildRoleSubscriptionTierTemplateActionCreators" /* 18317 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let navigation, template;
+let navigation;
 
 let c10;
 let c9;
@@ -40,7 +40,7 @@ let obj6;
 let rect;
 let size;
 let tmp;
-const AppAnalyticsUtils = tmp(5076);
+const AppAnalyticsUtils = tmp(5105);
 ({ TouchableOpacity: hasOwnProperty, View: metroRequire } = react_native);
 ({ AnalyticEvents: metroImportDefault, GuildSettingsSections: metroImportAll } = Constants);
 ({ jsx: c9, jsxs: c10 } = Fragment);
@@ -56,7 +56,7 @@ obj6 = { paddingVertical: 16, display: "flex", flexDirection: "row", justifyCont
 rect = { position: "absolute", left: 0, right: 0, height: 1, bottom: 0, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 let closure_11 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContentHeader(arg0) {
   let count;
   let items;
   let title;
@@ -112,7 +112,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.contentHeader;
   cResult[2] = items1;
   tmp6 = items1;
-}) : ((arg0) => {
+}) : (function ContentHeader(arg0) {
   let count;
   let items;
   let items1;
@@ -132,7 +132,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return authStore(Text, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Separator() {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
@@ -147,12 +147,12 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
+}) : (function Separator() {
   const obj = { style: closure_11().separator };
   return React4(metroRequire, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function BenefitShowCase(arg0) {
   let description;
   let items;
   let title;
@@ -166,7 +166,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp5 = title;
     if (typeof title === "string") {
       const obj2 = { variant: "text-md/semibold", color: "text-default", children: title };
-      tmp5 = React4(tmp(4892).Text, obj2);
+      tmp5 = React4(tmp(5086).Text, obj2);
     }
     cResult[0] = title;
     cResult[1] = tmp5;
@@ -204,7 +204,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = tmp9;
   cResult[7] = tmp13;
   tmp12 = tmp13;
-}) : ((title) => {
+}) : (function BenefitShowCase(title) {
   let items;
   title = title.title;
   let tmp3 = title;
@@ -220,7 +220,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp(tmp2, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelBenefitShowCase(channel) {
   let description;
   let items;
   let name;
@@ -299,7 +299,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[9] = tmp13;
   cResult[10] = tmp17;
   tmp16 = tmp17;
-}) : ((channel) => {
+}) : (function ChannelBenefitShowCase(channel) {
   let description;
   let items;
   let name;
@@ -315,7 +315,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   return React4(closure_14, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewEntireTemplateFooter() {
   let Icon;
   let intl;
   let items;
@@ -332,7 +332,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_11();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "text-sm/semibold", color: "interactive-text-hover", style: { marginTop: -1 }, children: intl.string(intl3.t.kejaOD) };
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     intl = tmp(1126).intl;
     const tmp8 = React4(Text, obj2);
     const tmp9 = React4(native.Spacer, { size: 3 });
@@ -358,7 +358,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { children: React4(Icon, obj6) };
     obj6 = { size: native.Icon.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, style: obj7 };
-    Icon = tmp(1188).Icon;
+    Icon = tmp(1200).Icon;
     obj7 = { transform: items1 };
     items1 = [{ rotate: "180deg" }];
     const tmp19 = React4(metroRequire, obj5);
@@ -381,7 +381,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[6] = tmp10;
   cResult[7] = tmp21;
   tmp20 = tmp21;
-}) : (() => {
+}) : (function ViewEntireTemplateFooter() {
   let Icon;
   let intl;
   let items;
@@ -408,7 +408,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return authStore(metroRequire, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((template) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionTierTemplatePreviewCard(template) {
   let additional_perks;
   let channels;
   let first;
@@ -416,8 +416,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((template) => {
   let items;
   let items1;
   let items2;
+  let items3;
   let priceTiers;
-  let tmp56;
   let tmp = template;
   let obj = template(navigation[7]);
   const cResult = obj.c(54);
@@ -472,330 +472,287 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((template) => {
             if (cResult[11] === tmp14) {
               if (cResult[12] === tmp4.descriptionPlanTextStyle) {
                 if (cResult[13] === tmp4.subscriptionPlanTextStyle) {
+                  let tmp16;
                   let tmp19;
+                  let tmp20;
+                  if (cResult[14] === template) {
+                    tmp16 = cResult[15];
+                  }
                   const _Symbol2 = Symbol;
                   const contentContainer = tmp4.contentContainer;
                   if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-                    class W {
-                      constructor() {
-                        return closure_1_9(closure_1_13, {});
-                      }
-                    }
-                    cResult[16] = W;
-                    tmp19 = W;
+                    const fn2 = function q() {
+                      return closure_1_9(closure_1_13, {});
+                    };
+                    cResult[16] = fn2;
+                    tmp19 = fn2;
                   } else {
-                    class W {
-                      constructor() {
-                        return closure_1_9(closure_1_13, {});
-                      }
-                    }
+                    tmp19 = cResult[16];
                   }
                   if (cResult[17] !== channels.length) {
-                    class W {
-                      constructor() {
-                        return closure_1_9(closure_1_13, {});
-                      }
-                    }
+                    const intl = tmp(tmp2[16]).intl;
                     const obj6 = { numChannels: channels.length };
+                    const formatToPlainStringResult = intl.formatToPlainString(tmp(navigation[16]).t.y7dUrm, obj6);
                     cResult[17] = channels.length;
-                    cResult[18] = obj7.formatToPlainString(tmp(navigation[16]).t.y7dUrm, obj6);
-                    const formatToPlainStringResult = obj7.formatToPlainString(tmp(navigation[16]).t.y7dUrm, obj6);
+                    cResult[18] = formatToPlainStringResult;
+                    tmp20 = formatToPlainStringResult;
                   } else {
-                    class W {
-                      constructor() {
-                        return closure_1_9(closure_1_13, {});
-                      }
-                    }
+                    tmp20 = cResult[18];
                   }
                   if (cResult[19] === channels.length) {
+                    let tmp22;
                     let tmp26;
-                    let tmp31;
-                    class W {
-                      constructor() {
-                        return closure_1_9(closure_1_13, {});
-                      }
+                    let tmp29;
+                    let tmp33;
+                    if (cResult[20] === tmp20) {
+                      tmp22 = cResult[21];
                     }
                     const _Symbol3 = Symbol;
                     if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-                      class W {
-                        constructor() {
-                          return closure_1_9(closure_1_13, {});
-                        }
-                      }
-                      const tmp27 = closure_9(tmp(navigation[14]).Spacer, { size: 12 });
-                      cResult[22] = tmp27;
-                      tmp26 = tmp27;
+                      const tmp28 = closure_9(tmp(navigation[14]).Spacer, { size: 12 });
+                      cResult[22] = tmp28;
+                      tmp26 = tmp28;
                     } else {
-                      class W {
-                        constructor() {
-                          return closure_1_9(closure_1_13, {});
-                        }
-                      }
+                      tmp26 = cResult[22];
                     }
                     if (cResult[23] !== first1) {
-                      class W {
-                        constructor() {
-                          return closure_1_9(closure_1_13, {});
-                        }
-                      }
-                      const obj8 = { channel: first1 };
+                      const obj7 = { channel: first1 };
+                      const tmp32 = closure_9(closure_15, obj7);
                       cResult[23] = first1;
-                      cResult[24] = closure_9(closure_15, obj8);
-                      const tmp30 = closure_9(closure_15, obj8);
+                      cResult[24] = tmp32;
+                      tmp29 = tmp32;
                     } else {
-                      class W {
-                        constructor() {
-                          return closure_1_9(closure_1_13, {});
-                        }
-                      }
+                      tmp29 = cResult[24];
                     }
                     const _Symbol4 = Symbol;
                     if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
-                      class W {
-                        constructor() {
-                          return closure_1_9(closure_1_13, {});
-                        }
-                      }
-                      const tmp32 = closure_9(tmp(navigation[14]).Spacer, { size: 6 });
-                      cResult[25] = tmp32;
-                      tmp31 = tmp32;
+                      const tmp35 = closure_9(tmp(navigation[14]).Spacer, { size: 6 });
+                      cResult[25] = tmp35;
+                      tmp33 = tmp35;
                     } else {
-                      class W {
-                        constructor() {
-                          return closure_1_9(closure_1_13, {});
-                        }
-                      }
+                      tmp33 = cResult[25];
                     }
                     if (cResult[26] === tmp22) {
-                      let tmp38;
-                      class W {
-                        constructor() {
-                          return closure_1_9(closure_1_13, {});
-                        }
+                      let tmp36;
+                      let tmp41;
+                      if (cResult[27] === tmp29) {
+                        tmp36 = cResult[28];
                       }
                       if (cResult[29] !== additional_perks.length) {
-                        class W {
-                          constructor() {
-                            return closure_1_9(closure_1_13, {});
-                          }
-                        }
-                        const obj9 = { numBenefits: additional_perks.length };
-                        const formatToPlainStringResult1 = obj12.formatToPlainString(tmp(navigation[16]).t.MR7oOF, obj9);
+                        const intl2 = tmp(tmp2[16]).intl;
+                        const obj8 = { numBenefits: additional_perks.length };
+                        const formatToPlainStringResult1 = intl2.formatToPlainString(tmp(navigation[16]).t.MR7oOF, obj8);
                         cResult[29] = additional_perks.length;
                         cResult[30] = formatToPlainStringResult1;
-                        tmp38 = formatToPlainStringResult1;
+                        tmp41 = formatToPlainStringResult1;
                       } else {
-                        class W {
-                          constructor() {
-                            return closure_1_9(closure_1_13, {});
-                          }
-                        }
+                        tmp41 = cResult[30];
                       }
                       if (cResult[31] === additional_perks.length) {
-                        let tmp44;
-                        class W {
-                          constructor() {
-                            return closure_1_9(closure_1_13, {});
-                          }
+                        let tmp43;
+                        let tmp47;
+                        if (cResult[32] === tmp41) {
+                          tmp43 = cResult[33];
                         }
                         const _Symbol5 = Symbol;
                         if (cResult[34] === Symbol.for("react.memo_cache_sentinel")) {
-                          class W {
-                            constructor() {
-                              return closure_1_9(closure_1_13, {});
-                            }
-                          }
-                          const tmp45 = closure_9(tmp(navigation[14]).Spacer, { size: 12 });
-                          cResult[34] = tmp45;
-                          tmp44 = tmp45;
+                          const tmp49 = closure_9(tmp(navigation[14]).Spacer, { size: 12 });
+                          cResult[34] = tmp49;
+                          tmp47 = tmp49;
                         } else {
-                          class W {
-                            constructor() {
-                              return closure_1_9(closure_1_13, {});
-                            }
-                          }
+                          tmp47 = cResult[34];
                         }
                         if (cResult[35] === first2.description) {
-                          class W {
-                            constructor() {
-                              return closure_1_9(closure_1_13, {});
-                            }
+                          let tmp50;
+                          if (cResult[36] === first2.name) {
+                            tmp50 = cResult[37];
                           }
                           const _Symbol6 = Symbol;
                           if (cResult[38] === Symbol.for("react.memo_cache_sentinel")) {
-                            class W {
-                              constructor() {
-                                return closure_1_9(closure_1_13, {});
-                              }
-                            }
                             cResult[38] = closure_9(tmp(navigation[14]).Spacer, { size: 6 });
-                            const tmp51 = closure_9(tmp(navigation[14]).Spacer, { size: 6 });
-                          } else {
-                            class W {
-                              constructor() {
-                                return closure_1_9(closure_1_13, {});
-                              }
-                            }
+                            const tmp56 = closure_9(tmp(navigation[14]).Spacer, { size: 6 });
                           }
-                          if (cResult[39] === tmp40) {
-                            class W {
-                              constructor() {
-                                return closure_1_9(closure_1_13, {});
-                              }
+                          if (cResult[39] === tmp43) {
+                            let tmp57;
+                            if (cResult[40] === tmp50) {
+                              tmp57 = cResult[41];
                             }
-                            if (cResult[42] === tmp33) {
-                              let tmp59;
-                              class W {
-                                constructor() {
-                                  return closure_1_9(closure_1_13, {});
-                                }
+                            if (cResult[42] === tmp36) {
+                              let tmp61;
+                              let tmp64;
+                              if (cResult[43] === tmp57) {
+                                tmp61 = cResult[44];
                               }
                               const _Symbol7 = Symbol;
                               if (cResult[45] === Symbol.for("react.memo_cache_sentinel")) {
-                                class W {
-                                  constructor() {
-                                    return closure_1_9(closure_1_13, {});
-                                  }
-                                }
-                                const tmp61 = closure_9(closure_16, {});
-                                cResult[45] = tmp61;
-                                tmp59 = tmp61;
+                                const tmp67 = closure_9(closure_16, {});
+                                cResult[45] = tmp67;
+                                tmp64 = tmp67;
                               } else {
-                                class W {
-                                  constructor() {
-                                    return closure_1_9(closure_1_13, {});
-                                  }
-                                }
+                                tmp64 = cResult[45];
                               }
                               function handleViewEntireTemplate() {
                                 const obj = ActionSheetActionCreatorsDefault;
                                 const obj2 = { template, guildId, handleSelectTemplateInPreview };
-                                obj.openLazy(asyncRequire(18025, dependencyMap.paths), "TierTemplateCard", obj2);
+                                obj.openLazy(asyncRequire(18312, dependencyMap.paths), "TierTemplateCard", obj2);
                               }
                               if (cResult[46] === handleViewEntireTemplate) {
-                                class W {
-                                  constructor() {
-                                    return closure_1_9(closure_1_13, {});
+                                if (cResult[47] === tmp4.contentContainer) {
+                                  let tmp68;
+                                  if (cResult[48] === tmp61) {
+                                    tmp68 = cResult[49];
                                   }
+                                  if (cResult[50] === tmp4.container) {
+                                    if (cResult[51] === tmp68) {
+                                      let tmp72;
+                                      if (cResult[52] === tmp16) {
+                                        tmp72 = cResult[53];
+                                      }
+                                      return tmp72;
+                                    }
+                                  }
+                                  const obj9 = { style: container, children: items };
+                                  items = [tmp16, tmp68];
+                                  const tmp75 = closure_10(suggestedUnusedPrices, obj9);
+                                  class N {
+                                    constructor(selectedTemplate, arg1) {
+                                      if (closure_7) {
+                                        const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
+                                        const obj = ActionSheetActionCreatorsDefault;
+                                        obj.openLazy(asyncRequire(18316, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                                      } else {
+                                        handleCreateFromTemplate(selectedTemplate, arg1);
+                                      }
+                                    }
+                                  }
+                                  cResult[51] = tmp68;
+                                  cResult[52] = tmp16;
+                                  cResult[53] = tmp75;
+                                  tmp72 = tmp75;
                                 }
                               }
-                              const obj10 = { style: contentContainer, onPress: handleViewEntireTemplate, children: items };
-                              items = [, ];
+                              const obj10 = { style: contentContainer, onPress: handleViewEntireTemplate, children: items1 };
+                              items1 = [, ];
                               class N {
                                 constructor(selectedTemplate, arg1) {
                                   if (closure_7) {
                                     const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                                     const obj = ActionSheetActionCreatorsDefault;
-                                    obj.openLazy(asyncRequire(18029, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                                    obj.openLazy(asyncRequire(18316, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                                   } else {
                                     handleCreateFromTemplate(selectedTemplate, arg1);
                                   }
                                 }
                               }
-                              items[1] = tmp59;
+                              items1[1] = tmp64;
+                              const tmp71 = closure_10(handleCreateFromTemplate, obj10);
                               cResult[46] = handleViewEntireTemplate;
                               cResult[47] = tmp4.contentContainer;
-                              cResult[48] = tmp56;
-                              cResult[49] = closure_10(handleCreateFromTemplate, obj10);
-                              const tmp65 = closure_10(handleCreateFromTemplate, obj10);
+                              cResult[48] = tmp61;
+                              cResult[49] = tmp71;
+                              tmp68 = tmp71;
                             }
-                            const obj11 = { renderGap: tmp19, children: items1 };
-                            items1 = [tmp33, tmp52];
-                            const tmp58 = closure_10(tmp(navigation[25]).GappedList, obj11);
-                            cResult[42] = tmp33;
+                            const obj11 = { renderGap: tmp19, children: items2 };
+                            items2 = [tmp36, tmp57];
+                            const tmp63 = closure_10(tmp(navigation[25]).GappedList, obj11);
+                            cResult[42] = tmp36;
                             class N {
                               constructor(selectedTemplate, arg1) {
                                 if (closure_7) {
                                   const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                                   const obj = ActionSheetActionCreatorsDefault;
-                                  obj.openLazy(asyncRequire(18029, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                                  obj.openLazy(asyncRequire(18316, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                                 } else {
                                   handleCreateFromTemplate(selectedTemplate, arg1);
                                 }
                               }
                             }
-                            cResult[43] = tmp52;
-                            cResult[44] = tmp58;
-                            tmp56 = tmp58;
+                            cResult[43] = tmp57;
+                            cResult[44] = tmp63;
+                            tmp61 = tmp63;
                           }
-                          const obj13 = { children: items2 };
-                          items2 = [tmp40, tmp44, tmp46, ];
+                          const obj12 = { children: items3 };
+                          items3 = [tmp43, tmp47, tmp50, ];
                           class N {
                             constructor(selectedTemplate, arg1) {
                               if (closure_7) {
                                 const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                                 const obj = ActionSheetActionCreatorsDefault;
-                                obj.openLazy(asyncRequire(18029, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                                obj.openLazy(asyncRequire(18316, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                               } else {
                                 handleCreateFromTemplate(selectedTemplate, arg1);
                               }
                             }
                           }
-                          cResult[39] = tmp40;
-                          cResult[40] = tmp46;
-                          cResult[41] = closure_10(suggestedUnusedPrices, obj13);
-                          const tmp55 = closure_10(suggestedUnusedPrices, obj13);
+                          const tmp60 = closure_10(suggestedUnusedPrices, obj12);
+                          cResult[39] = tmp43;
+                          cResult[40] = tmp50;
+                          cResult[41] = tmp60;
+                          tmp57 = tmp60;
                         }
                         const obj14 = { title: null, description: null };
-                        ({ name: obj15.title, description: obj15.description } = first2);
-                        const tmp49 = closure_9(closure_14, obj14);
+                        ({ name: obj13.title, description: obj13.description } = first2);
+                        const tmp53 = closure_9(closure_14, obj14);
                         class N {
                           constructor(selectedTemplate, arg1) {
                             if (closure_7) {
                               const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                               const obj = ActionSheetActionCreatorsDefault;
-                              obj.openLazy(asyncRequire(18029, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                              obj.openLazy(asyncRequire(18316, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                             } else {
                               handleCreateFromTemplate(selectedTemplate, arg1);
                             }
                           }
                         }
                         cResult[36] = first2.name;
-                        cResult[37] = tmp49;
+                        cResult[37] = tmp53;
+                        tmp50 = tmp53;
                       }
-                      const obj16 = { title: tmp38, count: additional_perks.length };
+                      const obj15 = { title: tmp41, count: additional_perks.length };
+                      const tmp46 = closure_9(closure_12, obj15);
                       cResult[31] = additional_perks.length;
-                      const tmp43 = closure_9(closure_12, obj16);
                       class N {
                         constructor(selectedTemplate, arg1) {
                           if (closure_7) {
                             const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                             const obj = ActionSheetActionCreatorsDefault;
-                            obj.openLazy(asyncRequire(18029, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                            obj.openLazy(asyncRequire(18316, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                           } else {
                             handleCreateFromTemplate(selectedTemplate, arg1);
                           }
                         }
                       }
-                      cResult[33] = tmp43;
+                      cResult[33] = tmp46;
+                      tmp43 = tmp46;
                     }
-                    const obj17 = { children: tmp36 };
+                    const obj16 = { children: tmp39 };
                     class N {
                       constructor(selectedTemplate, arg1) {
                         if (closure_7) {
                           const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                           const obj = ActionSheetActionCreatorsDefault;
-                          obj.openLazy(asyncRequire(18029, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                          obj.openLazy(asyncRequire(18316, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                         } else {
                           handleCreateFromTemplate(selectedTemplate, arg1);
                         }
                       }
                     }
-                    tmp36[0] = tmp22;
-                    tmp36[1] = tmp26;
-                    tmp36[2] = tmp28;
-                    tmp36[3] = tmp31;
+                    tmp39[0] = tmp22;
+                    tmp39[1] = tmp26;
+                    tmp39[2] = tmp29;
+                    tmp39[3] = tmp33;
+                    const tmp40 = closure_10(suggestedUnusedPrices, obj16);
                     cResult[26] = tmp22;
-                    cResult[27] = tmp28;
-                    cResult[28] = closure_10(suggestedUnusedPrices, obj17);
-                    const tmp37 = closure_10(suggestedUnusedPrices, obj17);
+                    cResult[27] = tmp29;
+                    cResult[28] = tmp40;
+                    tmp36 = tmp40;
                   }
                   class N {
                     constructor(selectedTemplate, arg1) {
                       if (closure_7) {
                         const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                         const obj = ActionSheetActionCreatorsDefault;
-                        obj.openLazy(asyncRequire(18029, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                        obj.openLazy(asyncRequire(18316, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                       } else {
                         handleCreateFromTemplate(selectedTemplate, arg1);
                       }
@@ -804,6 +761,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((template) => {
                   cResult[19] = channels.length;
                   cResult[20] = tmp20;
                   cResult[21] = tmp25;
+                  tmp22 = tmp25;
                 }
               }
             }
@@ -813,18 +771,19 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((template) => {
                 if (closure_7) {
                   const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                   const obj = ActionSheetActionCreatorsDefault;
-                  obj.openLazy(asyncRequire(18029, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                  obj.openLazy(asyncRequire(18316, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                 } else {
                   handleCreateFromTemplate(selectedTemplate, arg1);
                 }
               }
             }
+            const tmp18 = closure_9(tmp(navigation[24]).GuildRoleSubscriptionTierTemplateBasicInfo, obj31);
             cResult[11] = tmp14;
             cResult[12] = tmp4.descriptionPlanTextStyle;
             cResult[13] = tmp4.subscriptionPlanTextStyle;
             cResult[14] = template;
-            cResult[15] = closure_9(tmp(navigation[24]).GuildRoleSubscriptionTierTemplateBasicInfo, obj31);
-            const tmp18 = closure_9(tmp(navigation[24]).GuildRoleSubscriptionTierTemplateBasicInfo, obj31);
+            cResult[15] = tmp18;
+            tmp16 = tmp18;
           }
         }
         class N {
@@ -832,7 +791,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((template) => {
             if (closure_7) {
               const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
               const obj = ActionSheetActionCreatorsDefault;
-              obj.openLazy(asyncRequire(18029, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+              obj.openLazy(asyncRequire(18316, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
             } else {
               handleCreateFromTemplate(selectedTemplate, arg1);
             }
@@ -846,34 +805,32 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((template) => {
       }
     }
   }
-  class L {
-    constructor(selectedTemplate, arg1) {
-      const obj = GuildRoleSubscriptionTierTemplateActionCreators;
-      const result = obj.stashTemplateChannels(selectedTemplate, guildId);
-      const tmp3 = guildId;
-      const tmp5 = addNewEditStateFromTemplate(selectedTemplate);
-      if (arg1) {
-        const obj2 = ActionSheetActionCreatorsDefault;
-        obj2.hideActionSheet();
-      }
-      const track = AnalyticsUtilsDefault.track;
-      const ROLE_SUBSCRIPTION_LISTING_TEMPLATE_SELECTOR_EXITED = metroImportDefault.ROLE_SUBSCRIPTION_LISTING_TEMPLATE_SELECTOR_EXITED;
-      const obj3 = { exit_reason: "template_selected" };
-      AnalyticsUtilsDefault;
-      const tmpResult = AppAnalyticsUtils;
-      const merged = Object.assign(tmpResult.collectGuildAnalyticsMetadata(tmp3));
-      track(ROLE_SUBSCRIPTION_LISTING_TEMPLATE_SELECTOR_EXITED, obj3);
-      const obj4 = { groupListingId, initialEditStateId: tmp5 };
-      const replaced = navigation.replace(metroImportAll.ROLE_SUBSCRIPTIONS_TIER_EDIT, obj4);
+  const fn = function w(selectedTemplate, arg1) {
+    const obj = GuildRoleSubscriptionTierTemplateActionCreators;
+    const result = obj.stashTemplateChannels(selectedTemplate, guildId);
+    const tmp3 = guildId;
+    const tmp5 = addNewEditStateFromTemplate(selectedTemplate);
+    if (arg1) {
+      const obj2 = ActionSheetActionCreatorsDefault;
+      obj2.hideActionSheet();
     }
-  }
+    const track = AnalyticsUtilsDefault.track;
+    const ROLE_SUBSCRIPTION_LISTING_TEMPLATE_SELECTOR_EXITED = metroImportDefault.ROLE_SUBSCRIPTION_LISTING_TEMPLATE_SELECTOR_EXITED;
+    const obj3 = { exit_reason: "template_selected" };
+    AnalyticsUtilsDefault;
+    const tmpResult = AppAnalyticsUtils;
+    const merged = Object.assign(tmpResult.collectGuildAnalyticsMetadata(tmp3));
+    track(ROLE_SUBSCRIPTION_LISTING_TEMPLATE_SELECTOR_EXITED, obj3);
+    const obj4 = { groupListingId, initialEditStateId: tmp5 };
+    const replaced = navigation.replace(metroImportAll.ROLE_SUBSCRIPTIONS_TIER_EDIT, obj4);
+  };
   cResult[1] = addNewEditStateFromTemplate;
   cResult[2] = groupListingId;
   cResult[3] = guildId;
   cResult[4] = navigation;
-  cResult[5] = L;
-  tmp10 = L;
-}) : ((template) => {
+  cResult[5] = fn;
+  tmp10 = fn;
+}) : (function GuildRoleSubscriptionTierTemplatePreviewCard(template) {
   let additional_perks;
   let channels;
   let guildId;
@@ -931,7 +888,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((template) => {
     if (closure_7) {
       const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
       const obj = ActionSheetActionCreatorsDefault;
-      obj.openLazy(asyncRequire(18029, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+      obj.openLazy(asyncRequire(18316, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
     } else {
       handleCreateFromTemplate(selectedTemplate, arg1);
     }
@@ -942,10 +899,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((template) => {
   items2[0] = closure_9(template(tmp3[24]).GuildRoleSubscriptionTierTemplateBasicInfo, obj5);
   const obj6 = {
     style: tmp.contentContainer,
-    onPress() {
+    onPress: function handleViewEntireTemplate() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { template, guildId, handleSelectTemplateInPreview: callback1 };
-      obj.openLazy(asyncRequire(18025, dependencyMap.paths), "TierTemplateCard", obj2);
+      obj.openLazy(asyncRequire(18312, dependencyMap.paths), "TierTemplateCard", obj2);
     },
     children: items6
   };

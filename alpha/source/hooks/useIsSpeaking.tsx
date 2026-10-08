@@ -1,14 +1,14 @@
-// Module ID: 9051
-// Function ID: 9052
+// Module ID: 6044
+// Function ID: 6045
 // Name: useIsSpeaking
-// Dependencies: [5687, 2103, 5583, 4915, 558, 576, 504, 2]
+// Dependencies: [5424, 2115, 5952, 5111, 558, 576, 504, 2]
 // Exports: getIsSpeaking
 
-// Module 9051 (useIsSpeaking)
-import SoundboardStore from "SoundboardStore" /* 5687 */;
-import SelectedChannelStore_mod from "SelectedChannelStore" /* 2103 */;
-import SpeakingStore_mod from "SpeakingStore" /* 5583 */;
-import VoiceStateStore from "VoiceStateStore" /* 4915 */;
+// Module 6044 (useIsSpeaking)
+import SoundboardStore from "SoundboardStore" /* 5424 */;
+import SelectedChannelStore_mod from "SelectedChannelStore" /* 2115 */;
+import SpeakingStore_mod from "SpeakingStore" /* 5952 */;
+import VoiceStateStore from "VoiceStateStore" /* 5111 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 
 let SelectedChannelStore = SelectedChannelStore_mod;
 let SpeakingStore = SpeakingStore_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSpeaking(userId) {
   let checkIsMuted;
   let checkSoundSharing;
   let checkSoundboardSounds;
@@ -166,7 +166,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[5] = tmp4;
   cResult[6] = userId;
   cResult[7] = fn;
-}) : ((checkSoundboardSounds) => {
+}) : (function useIsSpeaking(checkSoundboardSounds) {
   let checkSoundSharing;
   ({ userId: require, checkSoundSharing } = checkSoundboardSounds);
   if (checkSoundSharing === undefined) {

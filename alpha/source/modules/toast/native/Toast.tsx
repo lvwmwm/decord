@@ -1,17 +1,17 @@
-// Module ID: 17170
-// Function ID: 17171
+// Module ID: 17451
+// Function ID: 17452
 // Name: Toast
-// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 4586, 1188, 4892, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 587, 558, 576, 4778, 1200, 5086, 2]
 
-// Module 17170 (Toast)
+// Module 17451 (Toast)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken2 from "useToken" /* 4586 */;
+import useToken2 from "useToken" /* 4778 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,8 +21,8 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const native = tmp(1188);
-const Text_Text = tmp(4892);
+const native = tmp(1200);
+const Text_Text = tmp(5086);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -33,7 +33,7 @@ let merged = Object.assign(nativeDefault.shadows.SHADOW_HIGH);
 obj3 = { paddingLeft: nativeDefault.space.PX_12 };
 let closure_8 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ToastIcon(arg0) {
   let IconComponent;
   let icon;
   let iconColor;
@@ -121,7 +121,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = recolorLegacyIcon;
   cResult[2] = obj6;
   tmp6 = obj6;
-}) : ((recolorLegacyIcon) => {
+}) : (function ToastIcon(recolorLegacyIcon) {
   let IconComponent;
   let icon;
   let iconColor;
@@ -159,7 +159,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp9;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ToastContent(arg0) {
   let content;
   let onTextLayout;
   const obj = react2;
@@ -208,7 +208,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[8] = tmp7;
     tmp5 = tmp7;
   }
-}) : ((content) => {
+}) : (function ToastContent(content) {
   let tmp4;
   content = content.content;
   const onTextLayout = content.onTextLayout;
@@ -223,7 +223,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp4;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Toast(arg0) {
   let IconComponent;
   let closure_129_0;
   let containerStyle;
@@ -316,7 +316,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = multilineContainer;
   cResult[4] = items1;
   tmp7 = items1;
-}) : ((arg0) => {
+}) : (function Toast(arg0) {
   let IconComponent;
   let c0;
   let containerStyle;

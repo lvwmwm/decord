@@ -1,29 +1,29 @@
-// Module ID: 9677
-// Function ID: 9678
+// Module ID: 10866
+// Function ID: 10867
 // Name: VoiceSensitivity
-// Dependencies: [5, 32, 19, 17, 1999, 5583, 1986, 1085, 5105, 21, 4896, 587, 4733, 558, 576, 1484, 504, 7288, 4951, 4596, 1126, 1188, 8924, 1369, 7963, 2]
+// Dependencies: [5, 32, 19, 17, 2011, 5952, 1998, 1085, 7477, 21, 5090, 587, 4927, 558, 576, 1496, 504, 7494, 5135, 4788, 1126, 1200, 8555, 1381, 8380, 2]
 
-// Module 9677 (VoiceSensitivity)
+// Module 10866 (VoiceSensitivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4596 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4951 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 5105 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4788 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5135 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7477 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MediaEngineStore_mod from "MediaEngineStore" /* 1999 */;
-import SpeakingStore from "SpeakingStore" /* 5583 */;
-import AppStateStore from "AppStateStore" /* 1986 */;
+import MediaEngineStore_mod from "MediaEngineStore" /* 2011 */;
+import SpeakingStore from "SpeakingStore" /* 5952 */;
+import AppStateStore from "AppStateStore" /* 1998 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import ColorUtils_mod from "ColorUtils" /* 4733 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import ColorUtils_mod from "ColorUtils" /* 4927 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let auto, c1, c2;
+let c1, c2;
 
 let ColorUtils;
 let closure_12;
@@ -49,7 +49,7 @@ obj4 = { flex: 1, backgroundColor: ColorUtils.hexWithOpacity(nativeDefault.unsaf
 ColorUtils = ColorUtils_mod;
 obj5 = { flex: 1, backgroundColor: nativeDefault.unsafe_rawColors.GREEN_360 };
 let closure_14 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((auto) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceSensitivity(auto) {
   let closure_3;
   let closure_7;
   let first;
@@ -558,7 +558,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((auto) => {
   cResult[7] = items7;
   tmp28 = items7;
   tmp27 = W;
-}) : ((auto) => {
+}) : (function VoiceSensitivity(auto) {
   let _undefined;
   let c10;
   let fn;

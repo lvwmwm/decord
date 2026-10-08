@@ -1,11 +1,11 @@
-// Module ID: 12048
-// Function ID: 12049
+// Module ID: 12121
+// Function ID: 12122
 // Name: useMentionAnchor
-// Dependencies: [32, 19, 10084, 558, 576, 2]
+// Dependencies: [32, 19, 9667, 558, 576, 2]
 
-// Module 12048 (useMentionAnchor)
+// Module 12121 (useMentionAnchor)
 import react2 from "react" /* 576 */;
-import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 10084 */;
+import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 9667 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -43,7 +43,7 @@ function isMentionAnchorValid(text, selectionEnd, anchor, prefix, options) {
   }
   return startsWithResult;
 }
-function transition(kind, enabled, enabled2) {
+function transition(kind, arg1, enabled) {
   let anchor;
   let options;
   let prefix;
@@ -77,14 +77,14 @@ function transition(kind, enabled, enabled2) {
       }
       return tmp17;
     } else if ("active" === kind) {
-      if (!enabled) {
+      if (!arg1) {
         tmp2 = closure_6;
       }
       return tmp2;
     } else if ("pending" === kind) {
       let tmp4;
       ({ anchor, seenText } = tmp2);
-      if (enabled) {
+      if (arg1) {
         tmp4 = { kind: "active", anchor };
         const obj3 = { kind: "active", anchor };
       } else if (text.startsWith(prefix, anchor)) {
@@ -109,7 +109,7 @@ function transition(kind, enabled, enabled2) {
 }
 const re4 = /\s\s/;
 let closure_6 = { kind: "idle" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((text, selectionEnd, enabled, prefix, options) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMentionAnchor(text, selectionEnd, enabled, prefix, options) {
   let tmp3;
   let tmp4;
   let closure_0 = enabled;
@@ -204,7 +204,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((text, selectionEnd, 
   tmp7 = tmp18;
   tmp6 = tmp17;
   tmp5 = tmp16;
-}) : ((text, selectionEnd, enabled, prefix, options) => {
+}) : (function useMentionAnchor(text, selectionEnd, enabled, prefix, options) {
   let items;
   let tmp2;
   let tmp3;

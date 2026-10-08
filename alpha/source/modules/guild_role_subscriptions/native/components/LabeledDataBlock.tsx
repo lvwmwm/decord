@@ -1,19 +1,19 @@
-// Module ID: 15053
-// Function ID: 15054
+// Module ID: 15315
+// Function ID: 15316
 // Name: LabeledDataBlock
-// Dependencies: [19, 17, 1085, 21, 4896, 587, 5922, 558, 576, 4892, 5916, 1188, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 587, 5902, 558, 576, 5086, 6189, 1200, 2]
 
-// Module 15053 (LabeledDataBlock)
+// Module 15315 (LabeledDataBlock)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4892 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5086 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import TextStyles from "TextStyles" /* 5922 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import TextStyles from "TextStyles" /* 5902 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ createStyles = createStyles.createStyles;
 obj3 = {};
 const merged = Object.assign(TextStyles(Fonts.PRIMARY_MEDIUM, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
 let closure_5 = createStyles(obj);
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledDataBlock(arg0) {
   let Icon;
   let children;
   let icon;
@@ -92,7 +92,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             let tmp18 = children;
             if (typeof children === "string") {
               const obj3 = { style: tmp4.data, children };
-              tmp18 = _false(tmp(1188).LegacyText, obj3);
+              tmp18 = _false(tmp(1200).LegacyText, obj3);
             }
             cResult[13] = children;
             cResult[14] = tmp4.data;
@@ -112,9 +112,9 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp11 = null != icon;
       if (tmp11) {
         const obj5 = { accessibilityRole: "button", onPress: onPressIcon, children: _false(Icon, obj6) };
-        const PressableOpacity = tmp(5916).PressableOpacity;
+        const PressableOpacity = tmp(6189).PressableOpacity;
         obj6 = { size: native.Icon.Sizes.SMALL, source: icon };
-        Icon = tmp(1188).Icon;
+        Icon = tmp(1200).Icon;
         tmp11 = _false(PressableOpacity, obj5);
       }
       cResult[6] = icon;
@@ -134,7 +134,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.container;
   cResult[2] = items2;
   tmp5 = items2;
-}) : ((arg0) => {
+}) : (function LabeledDataBlock(arg0) {
   let Icon;
   let children;
   let icon;
@@ -157,9 +157,9 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp4Result = null != icon;
   if (tmp4Result) {
     const obj4 = { accessibilityRole: "button", onPress: onPressIcon, children: _false(Icon, obj5) };
-    const PressableOpacity = tmp5(5916).PressableOpacity;
+    const PressableOpacity = tmp5(6189).PressableOpacity;
     obj5 = { size: native.Icon.Sizes.SMALL, source: icon };
-    Icon = tmp5(1188).Icon;
+    Icon = tmp5(1200).Icon;
     tmp4Result = tmp4(PressableOpacity, obj4);
   }
   items1[1] = tmp4Result;
@@ -167,7 +167,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp4Result2 = children;
   if (typeof children === "string") {
     const obj6 = { style: tmp.data, children };
-    tmp4Result2 = tmp4(tmp5(1188).LegacyText, obj6);
+    tmp4Result2 = tmp4(tmp5(1200).LegacyText, obj6);
   }
   items2[1] = tmp4Result2;
   return React3(View, obj);

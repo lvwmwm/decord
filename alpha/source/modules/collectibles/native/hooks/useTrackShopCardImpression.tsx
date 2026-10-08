@@ -1,13 +1,13 @@
-// Module ID: 8453
-// Function ID: 8454
+// Module ID: 8939
+// Function ID: 8940
 // Name: useTrackShopCardImpression
-// Dependencies: [19, 558, 576, 8454, 6664, 1484, 7860, 7078, 8455, 1260, 7077, 6967, 2]
+// Dependencies: [19, 558, 576, 8940, 6841, 1496, 8278, 7264, 8941, 1272, 7263, 7156, 2]
 
-// Module 8453 (useTrackShopCardImpression)
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7077 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7078 */;
-import useTrackImpression from "useTrackImpression" /* 8455 */;
+// Module 8939 (useTrackShopCardImpression)
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7263 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7264 */;
+import useTrackImpression from "useTrackImpression" /* 8941 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ import size_mod from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, importDefault, measureResult, ref;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, skuId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackShopCardImpression(arg0, skuId) {
   let closure_0;
   let collectiblesAnalyticsContext;
   let tmp10;
@@ -227,7 +227,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, skuId) => {
   cResult[11] = skuId.skuId;
   cResult[12] = S;
   tmp19 = S;
-}) : ((arg0, skuId) => {
+}) : (function useTrackShopCardImpression(arg0, skuId) {
   let closure_0;
   let closure_4;
   let closure_5;

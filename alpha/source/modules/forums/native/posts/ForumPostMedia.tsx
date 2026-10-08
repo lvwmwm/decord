@@ -1,25 +1,25 @@
-// Module ID: 11637
-// Function ID: 11638
+// Module ID: 11702
+// Function ID: 11703
 // Name: ForumPostMedia
-// Dependencies: [32, 19, 17, 1193, 1192, 21, 4896, 587, 558, 576, 5981, 5780, 11638, 7122, 11639, 1369, 6809, 8117, 8119, 5916, 11640, 4735, 2028, 10044, 1483, 2]
+// Dependencies: [32, 19, 17, 1205, 1204, 21, 5090, 587, 558, 576, 6164, 5363, 11703, 8218, 11704, 1381, 6981, 7492, 5915, 6189, 11705, 4929, 2040, 10431, 1495, 2]
 
-// Module 11637 (ForumPostMedia)
+// Module 11702 (ForumPostMedia)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FormConstants from "FormConstants" /* 1192 */;
-import utils_ImageUtils from "utils/ImageUtils" /* 1483 */;
-import shared from "shared" /* 4735 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5780 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10044 */;
-import SpoilerIconDefault from "SpoilerIcon" /* 11638 */;
-import MessageAttachmentUtils from "MessageAttachmentUtils" /* 11640 */;
+import FormConstants from "FormConstants" /* 1204 */;
+import utils_ImageUtils from "utils/ImageUtils" /* 1495 */;
+import shared from "shared" /* 4929 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5363 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10431 */;
+import SpoilerIconDefault from "SpoilerIcon" /* 11703 */;
+import MessageAttachmentUtils from "MessageAttachmentUtils" /* 11705 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -28,85 +28,139 @@ let _require, obj1;
 
 let PixelRatio;
 let c10;
-let closure_12;
+let c9;
 let hasOwnProperty;
-let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
 let tmp;
 let unpackModuleId;
-const UserSettings = tmp(2028);
+const UserSettings = tmp(2040);
 let react = react_mod;
-({ View: hasOwnProperty, StyleSheet: metroRequire, ImageBackground: metroImportDefault, PixelRatio } = react_native);
+({ View: hasOwnProperty, StyleSheet: metroRequire, PixelRatio } = react_native);
 const ANDROID_FOREGROUND_RIPPLE = FormConstants.ANDROID_FOREGROUND_RIPPLE;
-({ jsx: c10, Fragment: unpackModuleId, jsxs: closure_12 } = Fragment);
+({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = Fragment);
+let closure_12 = Math.min(PixelRatio.get(), 4);
 let closure_13 = Math.min(PixelRatio.get(), 4);
-let closure_14 = Math.min(PixelRatio.get(), 4);
 let createStyles = createStyles_mod;
 let obj = { mediaContainer: { position: "relative", overflow: "hidden" }, thumbnailBorder: obj2, thumbnail: { height: 80, width: 80 }, spoilerIconContainer: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, justifyContent: "center" }, spoilerIcon: obj3, gridMediaContainer: { borderRadius: 2, overflow: "hidden" } };
 obj2 = { borderRadius: nativeDefault.radii.sm };
 createStyles = createStyles.createStyles;
 obj3 = { color: nativeDefault.unsafe_rawColors.PRIMARY_300, alignSelf: "center" };
-let closure_15 = createStyles(obj);
+let closure_14 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostMediaAndroid(arg0) {
   let androidStyle;
   let blurTheme;
+  let height;
+  let items;
   let shouldSpoiler;
   let source;
+  let tmp3;
+  let width;
   const obj = react2;
-  const cResult = obj.c(8);
+  const cResult = obj.c(16);
   ({ shouldSpoiler, blurTheme, source, androidStyle } = arg0);
   let num = 0;
   if (shouldSpoiler) {
     num = 10;
   }
-  if (cResult[0] === blurTheme) {
-    let tmp2;
-    if (cResult[1] === shouldSpoiler) {
-      tmp2 = cResult[2];
+  if (cResult[0] !== androidStyle) {
+    let flattenResult = metroRequire.flatten(androidStyle);
+    if (flattenResult == null) {
+      flattenResult = {};
     }
-    if (cResult[3] === androidStyle) {
-      if (cResult[4] === num) {
-        if (cResult[5] === source) {
-          let tmp4;
-          if (cResult[6] === tmp2) {
-            tmp4 = cResult[7];
-          }
-          return tmp4;
+    cResult[0] = androidStyle;
+    cResult[1] = flattenResult;
+    tmp3 = flattenResult;
+  } else {
+    tmp3 = cResult[1];
+  }
+  ({ width, height } = tmp3);
+  if (cResult[2] === height) {
+    let tmp6;
+    if (cResult[3] === width) {
+      tmp6 = cResult[4];
+    }
+    if (cResult[5] === num) {
+      if (cResult[6] === source) {
+        let tmp7;
+        if (cResult[7] === tmp6) {
+          tmp7 = cResult[8];
         }
+        if (cResult[9] === blurTheme) {
+          let tmp11;
+          if (cResult[10] === shouldSpoiler) {
+            tmp11 = cResult[11];
+          }
+          if (cResult[12] === androidStyle) {
+            if (cResult[13] === tmp7) {
+              let tmp15;
+              if (cResult[14] === tmp11) {
+                tmp15 = cResult[15];
+              }
+              return tmp15;
+            }
+          }
+          const obj2 = { style: androidStyle, children: items };
+          items = [tmp7, tmp11];
+          const tmp18 = authStore(hasOwnProperty, obj2);
+          cResult[12] = androidStyle;
+          cResult[13] = tmp7;
+          cResult[14] = tmp11;
+          cResult[15] = tmp18;
+          tmp15 = tmp18;
+        }
+        const obj3 = { shouldSpoiler, blurTheme };
+        const tmp14 = React4(closure_17, obj3);
+        cResult[9] = blurTheme;
+        cResult[10] = shouldSpoiler;
+        cResult[11] = tmp14;
+        tmp11 = tmp14;
       }
     }
-    const obj2 = { style: androidStyle, source, blurRadius: num, resizeMode: "cover", children: tmp2 };
-    const tmp7 = authStore(metroImportDefault, obj2);
-    cResult[3] = androidStyle;
-    cResult[4] = num;
-    cResult[5] = source;
-    cResult[6] = tmp2;
-    cResult[7] = tmp7;
-    tmp4 = tmp7;
+    const obj4 = { style: tmp6, source, blurRadius: num, resizeMode: "cover" };
+    const tmp10 = React4(FastImageDefault, obj4);
+    cResult[5] = num;
+    cResult[6] = source;
+    cResult[7] = tmp6;
+    cResult[8] = tmp10;
+    tmp7 = tmp10;
   }
-  const tmp3 = authStore(closure_18, { shouldSpoiler, blurTheme });
-  cResult[0] = blurTheme;
-  cResult[1] = shouldSpoiler;
-  cResult[2] = tmp3;
-  tmp2 = tmp3;
-}) : ((shouldSpoiler) => {
+  const items1 = [metroRequire.absoluteFill, { width, height }];
+  cResult[2] = height;
+  cResult[3] = width;
+  cResult[4] = items1;
+  tmp6 = items1;
+}) : (function ForumPostMediaAndroid(arg0) {
+  let androidStyle;
   let blurTheme;
-  let num;
-  shouldSpoiler = shouldSpoiler.shouldSpoiler;
-  const obj = { style: shouldSpoiler.androidStyle, source: shouldSpoiler.source, blurRadius: num, resizeMode: "cover", children: authStore(closure_18, { shouldSpoiler, blurTheme }) };
-  num = 0;
-  blurTheme = shouldSpoiler.blurTheme;
-  const tmp2 = metroImportDefault;
+  let height;
+  let items;
+  let items1;
+  let shouldSpoiler;
+  let source;
+  let width;
+  ({ shouldSpoiler, androidStyle } = arg0);
+  let num = 0;
+  ({ blurTheme, source } = arg0);
   if (shouldSpoiler) {
     num = 10;
   }
-  return authStore(tmp2, obj);
+  let flattenResult = metroRequire.flatten(androidStyle);
+  const tmp = metroRequire;
+  if (flattenResult == null) {
+    flattenResult = {};
+  }
+  const obj = { style: androidStyle, children: items1 };
+  ({ width, height } = flattenResult);
+  const obj2 = { style: items, source, blurRadius: num, resizeMode: "cover" };
+  items = [tmp.absoluteFill, { width, height }];
+  items1 = [React4(FastImageDefault, obj2), React4(closure_17, { shouldSpoiler, blurTheme })];
+  return authStore(hasOwnProperty, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostMediaIOS(arg0) {
   let blurTheme;
   let iosStyle;
   let items;
@@ -134,25 +188,25 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const obj2 = { children: items };
       items = [tmp3, tmp5];
-      const tmp12 = closure_12(unpackModuleId, obj2);
+      const tmp12 = authStore(unpackModuleId, obj2);
       cResult[6] = tmp3;
       cResult[7] = tmp5;
       cResult[8] = tmp12;
       tmp9 = tmp12;
     }
     const obj3 = { shouldSpoiler, blurTheme };
-    const tmp8 = authStore(closure_18, obj3);
+    const tmp8 = React4(closure_17, obj3);
     cResult[3] = blurTheme;
     cResult[4] = shouldSpoiler;
     cResult[5] = tmp8;
     tmp5 = tmp8;
   }
-  const tmp4 = authStore(FastImageDefault, { style: iosStyle, source, resizeMode: "cover" });
+  const tmp4 = React4(FastImageDefault, { style: iosStyle, source, resizeMode: "cover" });
   cResult[0] = iosStyle;
   cResult[1] = source;
   cResult[2] = tmp4;
   tmp3 = tmp4;
-}) : ((arg0) => {
+}) : (function ForumPostMediaIOS(arg0) {
   let blurTheme;
   let iosStyle;
   let items;
@@ -160,24 +214,24 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let source;
   const obj = { children: items };
   ({ shouldSpoiler, blurTheme, source, iosStyle } = arg0);
-  items = [authStore(FastImageDefault, { style: iosStyle, source, resizeMode: "cover" }), authStore(closure_18, { shouldSpoiler, blurTheme })];
-  return closure_12(unpackModuleId, obj);
+  items = [React4(FastImageDefault, { style: iosStyle, source, resizeMode: "cover" }), React4(closure_17, { shouldSpoiler, blurTheme })];
+  return authStore(unpackModuleId, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((blurTheme) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostMediaSpoiler(blurTheme) {
   let items;
   const obj = react2;
   const cResult = obj.c(10);
   blurTheme = blurTheme.blurTheme;
   const shouldSpoiler = blurTheme.shouldSpoiler;
-  const tmp3 = closure_15();
+  const tmp3 = closure_14();
   let tmp4 = null;
   if (shouldSpoiler) {
     let tmp5;
     let tmp10;
     if (cResult[0] !== blurTheme) {
       const obj2 = { blurTheme, style: metroRequire.absoluteFill };
-      const tmp9 = authStore(VisualEffectViewDefault, obj2);
+      const tmp9 = React4(VisualEffectViewDefault, obj2);
       cResult[0] = blurTheme;
       cResult[1] = tmp9;
       tmp5 = tmp9;
@@ -186,7 +240,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((blurTheme) => {
     }
     if (cResult[2] !== tmp3.spoilerIcon) {
       size = { style: tmp3.spoilerIcon, height: 30, width: 30 };
-      const tmp13 = authStore(SpoilerIconDefault, size);
+      const tmp13 = React4(SpoilerIconDefault, size);
       cResult[2] = tmp3.spoilerIcon;
       cResult[3] = tmp13;
       tmp10 = tmp13;
@@ -207,47 +261,47 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((blurTheme) => {
       }
       const obj3 = { children: items };
       items = [tmp5, tmp14];
-      const tmp21 = closure_12(unpackModuleId, obj3);
+      const tmp21 = authStore(unpackModuleId, obj3);
       cResult[7] = tmp5;
       cResult[8] = tmp14;
       cResult[9] = tmp21;
       tmp18 = tmp21;
     }
     const obj4 = { style: tmp3.spoilerIconContainer, children: tmp10 };
-    const tmp17 = authStore(hasOwnProperty, obj4);
+    const tmp17 = React4(hasOwnProperty, obj4);
     cResult[4] = tmp3.spoilerIconContainer;
     cResult[5] = tmp10;
     cResult[6] = tmp17;
     tmp14 = tmp17;
   }
   return tmp4;
-}) : ((arg0) => {
+}) : (function ForumPostMediaSpoiler(arg0) {
   let blurTheme;
   let items;
   let shouldSpoiler;
   ({ shouldSpoiler, blurTheme } = arg0);
-  const tmp = closure_15();
+  const tmp = closure_14();
   let tmp2 = null;
   if (shouldSpoiler) {
     const obj = { children: items };
     const obj2 = { blurTheme, style: metroRequire.absoluteFill };
-    items = [authStore(VisualEffectViewDefault, obj2), ];
-    const obj3 = { style: tmp.spoilerIconContainer, children: authStore(SpoilerIconDefault, size) };
+    items = [React4(VisualEffectViewDefault, obj2), ];
+    const obj3 = { style: tmp.spoilerIconContainer, children: React4(SpoilerIconDefault, size) };
     size = { style: tmp.spoilerIcon, height: 30, width: 30 };
-    items[1] = authStore(hasOwnProperty, obj3);
-    tmp2 = closure_12(unpackModuleId, obj);
+    items[1] = React4(hasOwnProperty, obj3);
+    tmp2 = authStore(unpackModuleId, obj);
   }
   return tmp2;
 });
-let closure_18 = tmp5;
+let closure_17 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((obscureReason) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostMedia(obscureReason) {
   let tmp38;
   let tmp7;
   _require = obscureReason;
   let obj = require("react");
   const cResult = obj.c(32);
-  const tmp4 = closure_15();
+  const tmp4 = closure_14();
   const ref = react.useRef(null);
   let obj2 = require("ExplicitMediaRedactionUtils");
   const shouldAgeVerifyForReason = obj2.useShouldAgeVerifyForReason(obscureReason.obscureReason);
@@ -255,9 +309,9 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((obscureReason)
     let tmp21;
     if (cResult[0] !== obscureReason) {
       const obj3 = {};
-      const tmp24 = ref(11639);
+      const tmp24 = ref(11704);
       const merged = Object.assign(obscureReason);
-      const tmp28 = closure_10(tmp24, obj3);
+      const tmp28 = closure_9(tmp24, obj3);
       cResult[0] = obscureReason;
       cResult[1] = tmp28;
       tmp21 = tmp28;
@@ -272,7 +326,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((obscureReason)
       if (cResult[2] !== obscureReason) {
         const obj4 = {};
         const merged1 = Object.assign(obscureReason);
-        const tmp20 = closure_10(closure_16, obj4);
+        const tmp20 = closure_9(closure_15, obj4);
         cResult[2] = obscureReason;
         cResult[3] = tmp20;
         tmp14 = tmp20;
@@ -283,7 +337,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((obscureReason)
     } else if (cResult[4] !== obscureReason) {
       const obj5 = {};
       const merged2 = Object.assign(obscureReason);
-      const tmp13 = closure_10(closure_17, obj5);
+      const tmp13 = closure_9(closure_16, obj5);
       cResult[4] = obscureReason;
       cResult[5] = tmp13;
       tmp7 = tmp13;
@@ -292,7 +346,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((obscureReason)
     }
   }
   if (null != obscureReason.obscureReason) {
-    const AGE_VERIFICATION_OBSCURABLE_REASONS = tmp(6809).AGE_VERIFICATION_OBSCURABLE_REASONS;
+    const AGE_VERIFICATION_OBSCURABLE_REASONS = tmp(6981).AGE_VERIFICATION_OBSCURABLE_REASONS;
     if (AGE_VERIFICATION_OBSCURABLE_REASONS.has(obscureReason.obscureReason)) {
       let tmp30;
       if (shouldAgeVerifyForReason) {
@@ -304,7 +358,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((obscureReason)
           }
           const _Symbol = Symbol;
           if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-            class S {
+            class M {
               constructor() {
                 obj = closure_1(closure_1_2[17]);
                 obj1 = { entryPoint: closure_0(closure_1_2[18]).AgeVerificationModalEntryPoint.FORUM_POST_MEDIA_PREVIEW };
@@ -312,10 +366,10 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((obscureReason)
                 return;
               }
             }
-            cResult[9] = S;
-            tmp34 = S;
+            cResult[9] = M;
+            tmp34 = M;
           } else {
-            class S {
+            class M {
               constructor() {
                 obj = closure_1(closure_1_2[17]);
                 obj1 = { entryPoint: closure_0(closure_1_2[18]).AgeVerificationModalEntryPoint.FORUM_POST_MEDIA_PREVIEW };
@@ -325,7 +379,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((obscureReason)
             }
           }
           if (cResult[10] !== tmp7) {
-            class S {
+            class M {
               constructor() {
                 obj = closure_1(closure_1_2[17]);
                 obj1 = { entryPoint: closure_0(closure_1_2[18]).AgeVerificationModalEntryPoint.FORUM_POST_MEDIA_PREVIEW };
@@ -335,10 +389,10 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((obscureReason)
             }
             const obj6 = { androidRippleConfig: ANDROID_FOREGROUND_RIPPLE, activeOpacity: 0, onPress: tmp34, children: tmp7 };
             cResult[10] = tmp7;
-            cResult[11] = closure_10(require("Pressables").PressableOpacity, obj6);
-            const tmp37 = closure_10(require("Pressables").PressableOpacity, obj6);
+            cResult[11] = closure_9(require("Pressables").PressableOpacity, obj6);
+            const tmp37 = closure_9(require("Pressables").PressableOpacity, obj6);
           } else {
-            class S {
+            class M {
               constructor() {
                 obj = closure_1(closure_1_2[17]);
                 obj1 = { entryPoint: closure_0(closure_1_2[18]).AgeVerificationModalEntryPoint.FORUM_POST_MEDIA_PREVIEW };
@@ -348,7 +402,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((obscureReason)
             }
           }
           if (cResult[12] === tmp32) {
-            class S {
+            class M {
               constructor() {
                 obj = closure_1(closure_1_2[17]);
                 obj1 = { entryPoint: closure_0(closure_1_2[18]).AgeVerificationModalEntryPoint.FORUM_POST_MEDIA_PREVIEW };
@@ -359,7 +413,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((obscureReason)
             tmp30 = tmp38;
           }
           const obj7 = { style: tmp32, ref, children: tmp35 };
-          const tmp41 = closure_10(closure_5, obj7);
+          const tmp41 = closure_9(closure_5, obj7);
           cResult[12] = tmp32;
           cResult[13] = tmp35;
           cResult[14] = tmp41;
@@ -375,7 +429,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((obscureReason)
     }
   }
   if (null != obscureReason.onPress) {
-    class S {
+    class M {
       constructor() {
         obj = closure_1(closure_1_2[17]);
         obj1 = { entryPoint: closure_0(closure_1_2[18]).AgeVerificationModalEntryPoint.FORUM_POST_MEDIA_PREVIEW };
@@ -388,7 +442,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((obscureReason)
     cResult[16] = tmp4.mediaContainer;
     cResult[17] = items1;
   } else {
-    class S {
+    class M {
       constructor() {
         obj = closure_1(closure_1_2[17]);
         obj1 = { entryPoint: closure_0(closure_1_2[18]).AgeVerificationModalEntryPoint.FORUM_POST_MEDIA_PREVIEW };
@@ -401,7 +455,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((obscureReason)
     cResult[27] = tmp4.mediaContainer;
     cResult[28] = items2;
   }
-}) : ((obscureReason) => {
+}) : (function ForumPostMedia(obscureReason) {
   let items;
   let items1;
   let items2;
@@ -411,32 +465,32 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((obscureReason)
   let tmp12Result;
   let tmp6Result;
   _require = obscureReason;
-  const tmp = closure_15();
+  const tmp = closure_14();
   const ref = react.useRef(null);
   let obj = require("ExplicitMediaRedactionUtils");
   const shouldAgeVerifyForReason = obj.useShouldAgeVerifyForReason(obscureReason.obscureReason);
   if (obscureReason.isMediaPost) {
     let obj2 = {};
-    const tmp19 = ref(11639);
+    const tmp19 = ref(11704);
     const merged = Object.assign(obscureReason);
-    tmp6Result = closure_10(tmp19, obj2);
-    tmp12 = closure_10;
+    tmp6Result = closure_9(tmp19, obj2);
+    tmp12 = closure_9;
   } else {
     const tmp3Result = require("PlatformUtils");
     if (tmp3Result.isAndroid()) {
       const obj3 = {};
       const merged1 = Object.assign(obscureReason);
-      tmp6Result = tmp6(closure_16, obj3);
+      tmp6Result = tmp6(closure_15, obj3);
       tmp12 = tmp6;
     } else {
       const obj4 = {};
       const merged2 = Object.assign(obscureReason);
-      tmp6Result = tmp6(closure_17, obj4);
+      tmp6Result = tmp6(closure_16, obj4);
       tmp12 = tmp6;
     }
   }
   if (null != obscureReason.obscureReason) {
-    const AGE_VERIFICATION_OBSCURABLE_REASONS = tmp3(6809).AGE_VERIFICATION_OBSCURABLE_REASONS;
+    const AGE_VERIFICATION_OBSCURABLE_REASONS = tmp3(6981).AGE_VERIFICATION_OBSCURABLE_REASONS;
     if (AGE_VERIFICATION_OBSCURABLE_REASONS.has(obscureReason.obscureReason)) {
       if (shouldAgeVerifyForReason) {
         const obj5 = { style: items, ref, children: tmp12(require("Pressables").PressableOpacity, obj6) };
@@ -480,7 +534,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((obscureReason)
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSharedMediaProps(arg0) {
   let channel;
   let media;
   let tmp7;
@@ -501,7 +555,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (tmpResult2.isThemeDark(ThemeStore.theme)) {
       str = "dark";
     }
-    const GifAutoPlay = tmp(2028).GifAutoPlay;
+    const GifAutoPlay = tmp(2040).GifAutoPlay;
     let tmp10 = "png";
     if (GifAutoPlay.useSetting()) {
       tmp10 = null;
@@ -527,7 +581,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = media;
   cResult[2] = obj3;
   tmp4 = obj3;
-}) : ((arg0) => {
+}) : (function useSharedMediaProps(arg0) {
   let channel;
   let media;
   let str;
@@ -548,9 +602,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   return obj2;
 });
-let closure_20 = tmp6;
+let closure_19 = tmp6;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((media) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostMediaThumbnail(media) {
   let blurTheme;
   let channel;
   let containerStyle;
@@ -567,7 +621,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((media) => {
   media = media.media;
   ({ isEmbed, embedLeftBorderColor, containerStyle } = media);
   const isLocalDeviceMedia = media.isLocalDeviceMedia;
-  const tmp4 = closure_15();
+  const tmp4 = closure_14();
   if (cResult[0] !== channel.id) {
     const obj2 = { threadId: channel.id };
     cResult[0] = channel.id;
@@ -589,8 +643,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((media) => {
         if (cResult[7] === media) {
           tmp7 = cResult[8];
         }
-        ({ shouldObscure, obscureReason, blurTheme, format } = closure_20(tmp7));
-        closure_20(tmp7);
+        ({ shouldObscure, obscureReason, blurTheme, format } = closure_19(tmp7));
+        closure_19(tmp7);
         if (isLocalDeviceMedia) {
           let tmp16;
           if (cResult[9] !== media.src) {
@@ -625,8 +679,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((media) => {
           }
           ({ src: obj4.src, width: obj4.sourceWidth, height: obj4.sourceHeight } = media);
           const _Math = Math;
-          const obj6 = { src: null, sourceWidth: null, sourceHeight: null, targetWidth: Math.ceil(80 * closure_13), targetHeight: Math.ceil(80 * closure_13), format, animated: media.srcIsAnimated };
-          const getSrcWithWidthAndHeight = tmp(1483).getSrcWithWidthAndHeight;
+          const obj6 = { src: null, sourceWidth: null, sourceHeight: null, targetWidth: Math.ceil(80 * closure_12), targetHeight: Math.ceil(80 * closure_12), format, animated: media.srcIsAnimated };
+          const getSrcWithWidthAndHeight = tmp(1495).getSrcWithWidthAndHeight;
           utils_ImageUtils;
           const _Math2 = Math;
           const srcWithWidthAndHeight = getSrcWithWidthAndHeight(obj6);
@@ -681,7 +735,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((media) => {
                 }
               }
               const obj7 = { iosStyle: tmp17, androidStyle: tmp18, containerStyle: tmp21, obscureReason, shouldSpoiler: shouldObscure, blurTheme, source: tmp15, onPress: tmp6, isMediaPost: tmp23 };
-              const tmp28 = authStore(closure_19, obj7);
+              const tmp28 = React4(closure_18, obj7);
               cResult[28] = blurTheme;
               cResult[29] = obscureReason;
               cResult[30] = tmp6;
@@ -729,7 +783,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((media) => {
   cResult[4] = onTapMedia;
   cResult[5] = fn;
   tmp6 = fn;
-}) : ((firstMessageId) => {
+}) : (function ForumPostMediaThumbnail(firstMessageId) {
   let blurTheme;
   let channel;
   let containerStyle;
@@ -746,7 +800,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((media) => {
   let isEmbed = firstMessageId.isEmbed;
   format = undefined;
   ({ embedLeftBorderColor, containerStyle } = firstMessageId);
-  const tmp = closure_15();
+  const tmp = closure_14();
   let obj = { threadId: channel.id };
   const onTapMedia = firstMessageId(media[23])(obj).onTapMedia;
   let items = [firstMessageId, media, onTapMedia];
@@ -756,7 +810,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((media) => {
     items = [media];
     onTapMedia(obj);
   }, items);
-  const tmp3 = closure_20({ channel, media });
+  const tmp3 = closure_19({ channel, media });
   ({ shouldObscure, format } = tmp3);
   const items1 = [format, isLocalDeviceMedia, , , , ];
   ({ height: arr2[2], src: arr2[3], width: arr2[4], srcIsAnimated: arr2[5] } = media);
@@ -772,7 +826,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((media) => {
     } else {
       ({ src: obj2.src, width: obj2.sourceWidth, height: obj2.sourceHeight } = media);
       const _Math = Math;
-      const obj3 = { src: null, sourceWidth: null, sourceHeight: null, targetWidth: Math.ceil(80 * closure_13), targetHeight: Math.ceil(80 * closure_13), format, animated: media.srcIsAnimated };
+      const obj3 = { src: null, sourceWidth: null, sourceHeight: null, targetWidth: Math.ceil(80 * closure_12), targetHeight: Math.ceil(80 * closure_12), format, animated: media.srcIsAnimated };
       const getSrcWithWidthAndHeight = utils_ImageUtils.getSrcWithWidthAndHeight;
       utils_ImageUtils;
       const _Math2 = Math;
@@ -781,8 +835,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((media) => {
     }
     return tmp8;
   }, items1);
-  const tmp5 = closure_10;
-  const tmp6 = closure_19;
+  const tmp5 = closure_9;
+  const tmp6 = closure_18;
   if (isEmbed) {
     let obj3 = { borderLeftWidth: 2, borderLeftColor: embedLeftBorderColor };
     isEmbed = obj3;
@@ -795,7 +849,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((media) => {
   return tmp5(tmp6, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostGridMedia(arg0) {
   let blurTheme;
   let channel;
   let format;
@@ -813,7 +867,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = react2;
   const cResult = obj.c(37);
   ({ channel, media, targetWidth, targetHeight } = arg0);
-  const tmp4 = closure_15();
+  const tmp4 = closure_14();
   if (cResult[0] === channel) {
     let tmp5;
     let tmp8;
@@ -821,8 +875,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[1] === media) {
       tmp5 = cResult[2];
     }
-    ({ shouldObscure, obscureReason, blurTheme, format } = closure_20(tmp5));
-    closure_20(tmp5);
+    ({ shouldObscure, obscureReason, blurTheme, format } = closure_19(tmp5));
+    closure_19(tmp5);
     if (cResult[3] !== channel) {
       const isMediaPostResult = channel.isMediaPost();
       cResult[3] = channel;
@@ -833,7 +887,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (tmp8) {
       const _Math3 = Math;
-      const bound = Math.min(1, targetWidth * closure_14 / media.width, targetHeight * closure_14 / media.height);
+      const bound = Math.min(1, targetWidth * closure_13 / media.width, targetHeight * closure_13 / media.height);
       const _Math4 = Math;
       ({ src: src2, width: width2, height: height2 } = media);
       const rounded = Math.ceil(media.width * bound);
@@ -877,9 +931,9 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else {
       const _Math = Math;
       ({ src, width, height } = media);
-      const rounded2 = Math.ceil(targetWidth * closure_14);
+      const rounded2 = Math.ceil(targetWidth * closure_13);
       const _Math2 = Math;
-      const rounded3 = Math.ceil(targetHeight * closure_14);
+      const rounded3 = Math.ceil(targetHeight * closure_13);
       if (cResult[14] === format) {
         if (cResult[15] === media.height) {
           if (cResult[16] === media.src) {
@@ -946,7 +1000,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const obj6 = { containerStyle: tmp4.gridMediaContainer, iosStyle: tmp24, androidStyle: tmp25, shouldSpoiler: shouldObscure, obscureReason, blurTheme, source: tmp16, isPortrait: media.height >= media.width, isMediaPost: tmp8 };
-      const tmp31 = authStore(closure_19, obj6);
+      const tmp31 = React4(closure_18, obj6);
       cResult[27] = blurTheme;
       cResult[28] = tmp8;
       cResult[29] = obscureReason;
@@ -973,7 +1027,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = media;
   cResult[2] = obj7;
   tmp5 = obj7;
-}) : ((targetWidth) => {
+}) : (function ForumPostGridMedia(targetWidth) {
   let blurTheme;
   let c4;
   let channel;
@@ -986,8 +1040,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   targetWidth = targetWidth.targetWidth;
   const targetHeight = targetWidth.targetHeight;
   format = undefined;
-  let tmp = closure_15();
-  const tmp2 = closure_20({ channel, media });
+  let tmp = closure_14();
+  const tmp2 = closure_19({ channel, media });
   ({ shouldObscure, format } = tmp2);
   ({ obscureReason, blurTheme } = tmp2);
   const isMediaPostResult = channel.isMediaPost();
@@ -1007,7 +1061,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const tmp = c4;
     if (tmp) {
       const _Math3 = Math;
-      const bound = Math.min(1, targetWidth * closure_14 / media.width, targetHeight * closure_14 / media.height);
+      const bound = Math.min(1, targetWidth * closure_13 / media.width, targetHeight * closure_13 / media.height);
       const obj3 = { uri: getSrcWithWidthAndHeight2(obj7) };
       ({ src: obj4.src, width: obj4.sourceWidth, height: obj4.sourceHeight } = media);
       const _Math4 = Math;
@@ -1020,15 +1074,15 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj = { uri: getSrcWithWidthAndHeight(obj8) };
       ({ src: obj2.src, width: obj2.sourceWidth, height: obj2.sourceHeight } = media);
       const _Math = Math;
-      obj8 = { src: null, sourceWidth: null, sourceHeight: null, targetWidth: Math.ceil(targetWidth * closure_14), targetHeight: Math.ceil(targetHeight * closure_14), format };
+      obj8 = { src: null, sourceWidth: null, sourceHeight: null, targetWidth: Math.ceil(targetWidth * closure_13), targetHeight: Math.ceil(targetHeight * closure_13), format };
       getSrcWithWidthAndHeight = utils_ImageUtils.getSrcWithWidthAndHeight;
       utils_ImageUtils;
       const _Math2 = Math;
       return obj;
     }
   }, items);
-  const tmp5 = closure_10;
-  const tmp6 = closure_19;
+  const tmp5 = closure_9;
+  const tmp6 = closure_18;
   if (shouldObscure == null) {
     shouldObscure = false;
   }

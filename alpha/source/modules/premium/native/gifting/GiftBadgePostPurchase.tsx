@@ -1,27 +1,27 @@
-// Module ID: 10777
-// Function ID: 10778
+// Module ID: 12731
+// Function ID: 12732
 // Name: GiftBadgePostPurchase
-// Dependencies: [19, 17, 7874, 10778, 2048, 21, 4896, 587, 558, 576, 1618, 5099, 4743, 10779, 1126, 2617, 5601, 10780, 4892, 10488, 4861, 4862, 10494, 10781, 4704, 2036, 7866, 504, 2]
+// Dependencies: [19, 17, 8292, 12732, 2060, 21, 5090, 587, 558, 576, 1630, 5940, 4937, 11561, 1126, 2661, 5375, 12733, 5086, 10085, 5055, 5056, 10091, 12734, 4898, 2048, 8284, 504, 2]
 
-// Module 10777 (GiftBadgePostPurchase)
+// Module 12731 (GiftBadgePostPurchase)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import _modDef2617 from "module_2617" /* 2617 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4862 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10488 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10494 */;
-import GiftingBadgeLevelUpProgressDefault from "GiftingBadgeLevelUpProgress" /* 10781 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import _modDef2661 from "module_2661" /* 2661 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5056 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10085 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10091 */;
+import GiftingBadgeLevelUpProgressDefault from "GiftingBadgeLevelUpProgress" /* 12734 */;
 import react from "react" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7874 */;
-import GiftingBadgeConstants from "GiftingBadgeConstants" /* 10778 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8292 */;
+import GiftingBadgeConstants from "GiftingBadgeConstants" /* 12732 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp4;
 let unpackModuleId;
-const GiftingBadgeProgressDefault = tmp4(10780);
+const GiftingBadgeProgressDefault = tmp4(12733);
 const View = react_native.View;
 ({ getRemainingGiftsToNextTier: metroRequire, getTierForProgress: metroImportDefault, getNextTierForProgress: metroImportAll } = GiftingBadgeConstants);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -50,7 +50,7 @@ let closure_12 = createStyles.createStyles((arg0) => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSendGift) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function PostPurchaseFooter(onSendGift) {
   let intl2;
   let items;
   let tmp14;
@@ -116,10 +116,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSendGift) =>
       }
     }
     const obj2 = { size: "sm", color: nativeDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-    const GiftIcon = tmp(10779).GiftIcon;
+    const GiftIcon = tmp(11561).GiftIcon;
     const tmp10 = closure_10(GiftIcon, obj2);
     const intl = tmp(1126).intl;
-    const stringResult = intl.string(_modDef2617.g86YiI);
+    const stringResult = intl.string(_modDef2661.g86YiI);
     cResult[3] = tmp10;
     cResult[4] = stringResult;
     tmp9 = stringResult;
@@ -152,8 +152,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSendGift) =>
     }
     const obj3 = { grow: true, variant: "primary", icon: tmp8, text: tmp9, onPress: tmp6 };
     cResult[5] = tmp6;
-    cResult[6] = closure_10(onSendGift(5601).Button, obj3);
-    const tmp13 = closure_10(onSendGift(5601).Button, obj3);
+    cResult[6] = closure_10(onSendGift(5375).Button, obj3);
+    const tmp13 = closure_10(onSendGift(5375).Button, obj3);
   } else {
     class T {
       constructor() {
@@ -179,8 +179,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSendGift) =>
         }
       }
     }
-    const obj4 = { grow: true, variant: "secondary", text: intl2.string(_modDef2617["sa/cfM"]), onPress: tmp7 };
-    const Button = tmp(5601).Button;
+    const obj4 = { grow: true, variant: "secondary", text: intl2.string(_modDef2661["sa/cfM"]), onPress: tmp7 };
+    const Button = tmp(5375).Button;
     intl2 = tmp(1126).intl;
     const tmp15 = closure_10(Button, obj4);
     cResult[7] = tmp15;
@@ -218,7 +218,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSendGift) =>
   cResult[8] = tmp5.footer;
   cResult[9] = tmp12;
   cResult[10] = tmp16;
-}) : ((onSendGift) => {
+}) : (function PostPurchaseFooter(onSendGift) {
   let GiftIcon;
   let intl;
   let intl2;
@@ -242,20 +242,20 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSendGift) =>
       rootNavigationRef.navigate("you");
     }
   }, []);
-  const obj2 = { grow: true, variant: "primary", icon: closure_10(GiftIcon, obj3), text: intl.string(_modDef2617.g86YiI), onPress: callback };
-  const Button = onSendGift(5601).Button;
+  const obj2 = { grow: true, variant: "primary", icon: closure_10(GiftIcon, obj3), text: intl.string(_modDef2661.g86YiI), onPress: callback };
+  const Button = onSendGift(5375).Button;
   obj3 = { size: "sm", color: nativeDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-  GiftIcon = onSendGift(10779).GiftIcon;
+  GiftIcon = onSendGift(11561).GiftIcon;
   intl = onSendGift(1126).intl;
   items1 = [closure_10(Button, obj2), ];
-  const obj4 = { grow: true, variant: "secondary", text: intl2.string(_modDef2617["sa/cfM"]), onPress: callback1 };
-  const Button2 = onSendGift(5601).Button;
+  const obj4 = { grow: true, variant: "secondary", text: intl2.string(_modDef2661["sa/cfM"]), onPress: callback1 };
+  const Button2 = onSendGift(5375).Button;
   intl2 = onSendGift(1126).intl;
   items1[1] = closure_10(Button2, obj4);
   return closure_11(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function InProgressScreen(arg0) {
   let currentTier;
   let description;
   let items;
@@ -382,7 +382,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = progressBarTitle;
   cResult[4] = tmp7;
   tmp6 = tmp7;
-}) : ((arg0) => {
+}) : (function InProgressScreen(arg0) {
   let currentTier;
   let description;
   let items;
@@ -411,7 +411,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return unpackModuleId(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function LevelUpScreen(arg0) {
   let content;
   let currentTier;
   let giftsToNextTier;
@@ -538,7 +538,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = newTier;
   cResult[2] = giftingBadgeTierIconUrl;
   tmp7 = giftingBadgeTierIconUrl;
-}) : ((arg0) => {
+}) : (function LevelUpScreen(arg0) {
   let currentTier;
   let format;
   let format2;
@@ -574,7 +574,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj4 = { style: tmp3.content, children: items };
   if (tmp10Result) {
     const obj6 = { icon: giftingBadgeTierIconUrl, size: 140 };
-    tmp10Result = tmp10(tmp(10494), obj6);
+    tmp10Result = tmp10(tmp(10091), obj6);
   }
   items = [authStore(View, obj5), ];
   const obj7 = { style: tmp3.levelUpBody, children: items1 };
@@ -583,11 +583,11 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items1[0] = authStore(GiftingBadgeLevelUpProgressDefault, obj8);
   const obj9 = { style: tmp3.messageSection, children: items2 };
   const obj10 = { variant: "heading-xxl/bold", style: tmp3.centerText, children: format(k8MmO8, { tierName: str }) };
-  const Text = tmp4(4892).Text;
+  const Text = tmp4(5086).Text;
   const intl = tmp4(1126).intl;
   format = intl.format;
   str = newTier.name;
-  k8MmO8 = tmp(2617).k8MmO8;
+  k8MmO8 = tmp(2661).k8MmO8;
   if (str == null) {
     str = "";
   }
@@ -595,12 +595,12 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp10Result2 = null != nextTier && null != giftsToNextTier && giftsToNextTier > 0;
   if (tmp10Result2) {
     const obj11 = { variant: "text-md/normal", color: "text-subtle", style: tmp3.centerText, children: format2(v6QVlxw, obj12) };
-    const Text2 = tmp4(4892).Text;
+    const Text2 = tmp4(5086).Text;
     const intl2 = tmp4(1126).intl;
     format2 = intl2.format;
     obj12 = { count: giftsToNextTier, nextTierName: str2 };
     str2 = nextTier.name;
-    v6QVlxw = tmp(2617)["6QVlxw"];
+    v6QVlxw = tmp(2661)["6QVlxw"];
     if (str2 == null) {
       str2 = "";
     }
@@ -613,7 +613,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return unpackModuleId(View, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBadgePostPurchase(arg0) {
   let currentProgress;
   let onSendGift;
   let tmp37;
@@ -642,7 +642,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const effect = react.useEffect(tmp4, tmp5);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [BadgeDirectoryStore];
-    const fn2 = function y() {
+    const fn2 = function v() {
       badgeById = badgeById.getBadgeById(require("BadgeId").BadgeId.GIFTING);
       let tiers;
       if (badgeById != null) {
@@ -775,9 +775,9 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const _Symbol3 = Symbol;
           if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
             const intl3 = tmp(1126).intl;
-            const stringResult = intl3.string(_modDef2617["/rBQud"]);
+            const stringResult = intl3.string(_modDef2661["/rBQud"]);
             const intl4 = tmp(1126).intl;
-            const stringResult1 = intl4.string(_modDef2617.DDQMlx);
+            const stringResult1 = intl4.string(_modDef2661.DDQMlx);
             cResult[23] = stringResult;
             cResult[24] = stringResult1;
           }
@@ -789,7 +789,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             const intl5 = tmp(1126).intl;
             const formatToPlainString = intl5.formatToPlainString;
             let name1;
-            const bwyQt8 = _modDef2617.bwyQt8;
+            const bwyQt8 = _modDef2661.bwyQt8;
             if (tmp21 != null) {
               name1 = tmp21.name;
             }
@@ -803,7 +803,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const intl6 = tmp(1126).intl;
           const formatToPlainString2 = intl6.formatToPlainString;
           let str2;
-          const KjdBPz = _modDef2617.KjdBPz;
+          const KjdBPz = _modDef2661.KjdBPz;
           if (tmp26 != null) {
             str2 = tmp26.name;
           }
@@ -815,9 +815,9 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const formatToPlainString2Result = formatToPlainString2(KjdBPz, obj5);
           if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
             const intl = tmp(1126).intl;
-            const stringResult2 = intl.string(_modDef2617.oqDrEM);
+            const stringResult2 = intl.string(_modDef2661.oqDrEM);
             const intl2 = tmp(1126).intl;
-            const stringResult3 = intl2.string(_modDef2617["Ka5s+Q"]);
+            const stringResult3 = intl2.string(_modDef2661["Ka5s+Q"]);
             cResult[21] = stringResult2;
             cResult[22] = stringResult3;
             tmp32 = stringResult3;
@@ -844,7 +844,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[17] = tmp20Result;
     tmp23 = tmp20Result;
   }
-}) : ((arg0) => {
+}) : (function GiftBadgePostPurchase(arg0) {
   let currentProgress;
   let intl3;
   let intl4;
@@ -904,14 +904,14 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const intl2 = tmp2(1126).intl;
       const formatToPlainString2 = intl2.formatToPlainString;
       let str2;
-      const KjdBPz = _modDef2617.KjdBPz;
+      const KjdBPz = _modDef2661.KjdBPz;
       if (tmp8 != null) {
         str2 = tmp8.name;
       }
       if (str2 == null) {
         str2 = "";
       }
-      const obj3 = { title: formatToPlainString2(KjdBPz, obj4), description: intl3.string(_modDef2617.oqDrEM), progressBarTitle: intl4.string(_modDef2617["Ka5s+Q"]), progress: sum, currentTier: tmp18, nextTier: tmp19, onSendGift };
+      const obj3 = { title: formatToPlainString2(KjdBPz, obj4), description: intl3.string(_modDef2661.oqDrEM), progressBarTitle: intl4.string(_modDef2661["Ka5s+Q"]), progress: sum, currentTier: tmp18, nextTier: tmp19, onSendGift };
       obj4 = { nextTier: str2 };
       intl3 = tmp2(1126).intl;
       intl4 = tmp2(1126).intl;
@@ -919,7 +919,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp18 = tmp26;
       tmp19 = tmp8;
     } else {
-      obj5 = { title: intl5.string(_modDef2617["/rBQud"]), description: intl6.string(_modDef2617.DDQMlx), progressBarTitle: str, progress: sum, currentTier: tmp15, nextTier: tmp16, onSendGift };
+      obj5 = { title: intl5.string(_modDef2661["/rBQud"]), description: intl6.string(_modDef2661.DDQMlx), progressBarTitle: str, progress: sum, currentTier: tmp15, nextTier: tmp16, onSendGift };
       intl5 = tmp2(1126).intl;
       intl6 = tmp2(1126).intl;
       let name;
@@ -932,7 +932,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const intl = tmp2(1126).intl;
         const formatToPlainString = intl.formatToPlainString;
         let name1;
-        const bwyQt8 = tmp27(2617).bwyQt8;
+        const bwyQt8 = tmp27(2661).bwyQt8;
         if (tmp24 != null) {
           name1 = tmp24.name;
         }

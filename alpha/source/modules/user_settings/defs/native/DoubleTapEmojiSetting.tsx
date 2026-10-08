@@ -1,29 +1,29 @@
-// Module ID: 15836
-// Function ID: 15837
+// Module ID: 16095
+// Function ID: 16096
 // Name: DoubleTapEmojiSetting
-// Dependencies: [5, 19, 7645, 1085, 1380, 21, 4896, 587, 558, 576, 2028, 7638, 1402, 6632, 9879, 1252, 6688, 9892, 11142, 1126, 2]
+// Dependencies: [5, 19, 7966, 1085, 1392, 21, 5090, 587, 558, 576, 2040, 7959, 1414, 6809, 9359, 1264, 6865, 9372, 11262, 1126, 2]
 
-// Module 15836 (DoubleTapEmojiSetting)
+// Module 16095 (DoubleTapEmojiSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import EmojiDefault from "Emoji" /* 6632 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 7638 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import EmojiDefault from "Emoji" /* 6809 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 7959 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_2, constants, emoji;
+let _require, closure_2, constants;
 
 let obj2;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -34,7 +34,7 @@ let obj = { textEmoji: obj2 };
 obj2 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 let closure_7 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDoubleTapEmojiSettingTrailing() {
   let tmp5;
   let tmp7;
   let tmp9;
@@ -87,7 +87,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     tmp9 = tmp10;
   }
-}) : (() => {
+}) : (function useDoubleTapEmojiSettingTrailing() {
   let tmp4;
   const DoubleTapReactionEmoji = UserSettings.DoubleTapReactionEmoji;
   const setting = DoubleTapReactionEmoji.useSetting();
@@ -107,7 +107,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsEmoji(emoji) {
   let url;
   const obj = react2;
   const cResult = obj.c(8);
@@ -158,7 +158,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
   cResult[1] = emoji.url;
   cResult[2] = url;
   tmp4 = url;
-}) : ((emoji) => {
+}) : (function SettingsEmoji(emoji) {
   let str;
   let url;
   emoji = emoji.emoji;
@@ -181,16 +181,16 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const useIsDisabled = () => {
+function useDoubleTapDisabled() {
   const DoubleTapReactionEmoji = UserSettings.DoubleTapReactionEmoji;
   let flag = DoubleTapReactionEmoji.useSetting().disableDoubleTap;
   if (flag == null) {
     flag = false;
   }
   return flag;
-};
+}
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDoubleTapEmojiDescription() {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(2);
@@ -211,7 +211,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     combined = ":" + tmp5.name + ":";
   }
   return combined;
-}) : (() => {
+}) : (function useDoubleTapEmojiDescription() {
   const DoubleTapReactionEmoji = UserSettings.DoubleTapReactionEmoji;
   const setting = DoubleTapReactionEmoji.useSetting();
   const obj = DoubleTapToReactUtils;
@@ -237,7 +237,7 @@ let obj3 = {
     const tmp = require("openEmojiPickerActionSheet");
     let obj = {
       pickerIntention: EmojiIntention.DEFAULT_REACT_EMOJI,
-      onPressEmoji: function() {
+      onPressEmoji() {
         return closure_0(...arguments);
       },
       startExpanded: true
@@ -309,9 +309,9 @@ let obj3 = {
   },
   withArrow: true,
   useDescription: tmp5,
-  useIsDisabled,
-  usePredicate: () => {
-    if (typeof fn === "function") {
+  useIsDisabled: useDoubleTapDisabled,
+  usePredicate: function useShouldShowSetting() {
+    if (typeof useDoubleTapDisabled === "function") {
       const DoubleTapReactionEmoji = UserSettings.DoubleTapReactionEmoji;
       let flag = DoubleTapReactionEmoji.useSetting().disableDoubleTap;
       if (flag == null) {

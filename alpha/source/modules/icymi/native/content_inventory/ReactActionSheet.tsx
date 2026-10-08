@@ -1,30 +1,30 @@
-// Module ID: 16489
-// Function ID: 16490
+// Module ID: 16749
+// Function ID: 16750
 // Name: ReactActionSheet
-// Dependencies: [11884, 5, 32, 19, 17, 6653, 1380, 21, 1126, 4896, 587, 558, 576, 9879, 7272, 8444, 5916, 7824, 8039, 9883, 4738, 7518, 1484, 4892, 5918, 4702, 16484, 4595, 5981, 1402, 4728, 6105, 4847, 7586, 6708, 16435, 2]
+// Dependencies: [11956, 5, 32, 19, 17, 6830, 1392, 21, 1126, 5090, 587, 558, 576, 9359, 7873, 8930, 6189, 8243, 8447, 9363, 4932, 9241, 1496, 5086, 10211, 4896, 16744, 4787, 6164, 1414, 4922, 6283, 5041, 8106, 6885, 16695, 2]
 // Exports: getStatusReplyContent
 
-// Module 16489 (ReactActionSheet)
+// Module 16749 (ReactActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6653 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7272 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8039 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9879 */;
-import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 11884 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6830 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7873 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8447 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9359 */;
+import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 11956 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, content;
+let _require;
 
 let c10;
 let obj2;
@@ -33,7 +33,7 @@ let obj4;
 let obj5;
 let tmp;
 let unpackModuleId;
-const ICYMIContext = tmp(16435);
+const ICYMIContext = tmp(16695);
 let _asyncToGenerator = _asyncToGenerator_mod;
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
@@ -50,10 +50,10 @@ obj4 = { flex: 1, borderRadius: nativeDefault.radii.round };
 obj5 = { padding: 8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
 let closure_12 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddEmojiButton(channel) {
   let onPressEmoji;
   let obj = channel(onPressEmoji[12]);
-  const cResult = obj.c(12);
+  const cResult = obj.c(10);
   channel = channel.channel;
   const onOpenPicker = channel.onOpenPicker;
   onPressEmoji = channel.onPressEmoji;
@@ -62,53 +62,45 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   if (cResult[0] === channel) {
     if (cResult[1] === onOpenPicker) {
       let tmp5;
-      let tmp6;
-      let tmp8;
-      let tmp10;
+      let tmp7;
+      let tmp9;
       if (cResult[2] === onPressEmoji) {
         tmp5 = cResult[3];
       }
-      if (cResult[4] !== tmp4.emoji) {
-        const items = [tmp4.emoji];
-        cResult[4] = tmp4.emoji;
-        cResult[5] = items;
-        tmp6 = items;
-      } else {
-        tmp6 = cResult[5];
-      }
       const _Symbol = Symbol;
-      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      const emoji = tmp4.emoji;
+      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
         const intl = tmp(tmp2[8]).intl;
         const stringResult = intl.string(channel(onPressEmoji[8]).t.lfIHs4);
-        cResult[6] = stringResult;
-        tmp8 = stringResult;
+        cResult[4] = stringResult;
+        tmp7 = stringResult;
       } else {
-        tmp8 = cResult[6];
+        tmp7 = cResult[4];
       }
       const _Symbol2 = Symbol;
-      if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp12 = closure_10(channel(onPressEmoji[15]).ReactionIcon, { size: "md" });
-        cResult[7] = tmp12;
-        tmp10 = tmp12;
+      if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+        const tmp11 = closure_10(channel(onPressEmoji[15]).ReactionIcon, { size: "md" });
+        cResult[5] = tmp11;
+        tmp9 = tmp11;
       } else {
-        tmp10 = cResult[7];
+        tmp9 = cResult[5];
       }
-      if (cResult[8] === disabled) {
-        if (cResult[9] === tmp5) {
-          let tmp13;
-          if (cResult[10] === tmp6) {
-            tmp13 = cResult[11];
+      if (cResult[6] === disabled) {
+        if (cResult[7] === tmp5) {
+          let tmp12;
+          if (cResult[8] === tmp4.emoji) {
+            tmp12 = cResult[9];
           }
-          return tmp13;
+          return tmp12;
         }
       }
-      let obj2 = { onPress: tmp5, style: tmp6, accessible: true, accessibilityLabel: tmp8, disabled, children: tmp10 };
-      const tmp15 = closure_10(channel(onPressEmoji[16]).PressableHighlight, obj2);
-      cResult[8] = disabled;
-      cResult[9] = tmp5;
-      cResult[10] = tmp6;
-      cResult[11] = tmp15;
-      tmp13 = tmp15;
+      let obj2 = { onPress: tmp5, style: emoji, accessible: true, accessibilityLabel: tmp7, disabled, children: tmp9 };
+      const tmp14 = closure_10(channel(onPressEmoji[16]).PressableHighlight, obj2);
+      cResult[6] = disabled;
+      cResult[7] = tmp5;
+      cResult[8] = tmp4.emoji;
+      cResult[9] = tmp14;
+      tmp12 = tmp14;
     }
   }
   const fn = function n() {
@@ -122,9 +114,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[2] = onPressEmoji;
   cResult[3] = fn;
   tmp5 = fn;
-}) : ((channel) => {
+}) : (function AddEmojiButton(channel) {
   let intl;
-  let items1;
   channel = channel.channel;
   const onOpenPicker = channel.onOpenPicker;
   const onPressEmoji = channel.onPressEmoji;
@@ -137,14 +128,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     const obj2 = { pickerIntention: EmojiIntention.REACTION, autoFocus: false, startExpanded: false, onPressEmoji, channel, reactionType: MessageReactionsTypes.ReactionTypes.NORMAL };
     const result = obj.openEmojiPickerActionSheet(obj2);
   }, items);
-  let obj = { onPress: callback, style: items1, accessible: true, accessibilityLabel: intl.string(channel(onPressEmoji[8]).t.lfIHs4), disabled, children: closure_10(channel(onPressEmoji[15]).ReactionIcon, { size: "md" }) };
-  items1 = [tmp.emoji];
+  let obj = { onPress: callback, style: tmp.emoji, accessible: true, accessibilityLabel: intl.string(channel(onPressEmoji[8]).t.lfIHs4), disabled, children: closure_10(channel(onPressEmoji[15]).ReactionIcon, { size: "md" }) };
   const PressableHighlight = channel(onPressEmoji[16]).PressableHighlight;
   intl = channel(onPressEmoji[8]).intl;
   return closure_10(PressableHighlight, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((content) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactActionSheetBase(content) {
   let author;
   let channel;
   let closure_4;
@@ -696,14 +686,14 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((content) => {
             }
           })();
         });
-        const fn2 = function() {
+        function t2() {
           return closure_0(...arguments);
-        };
+        }
         cResult[11] = content.id;
         cResult[12] = tmp8;
         cResult[13] = onPressEmoji;
-        cResult[14] = fn2;
-        tmp20 = fn2;
+        cResult[14] = t2;
+        tmp20 = t2;
       }
     }
   }
@@ -763,16 +753,16 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((content) => {
       }
     }
   });
-  const fn = function() {
+  function t1() {
     return closure_0(...arguments);
-  };
+  }
   cResult[6] = content.id;
   cResult[7] = tmp8;
   cResult[8] = first1;
   cResult[9] = sendMessage;
-  cResult[10] = fn;
-  tmp19 = fn;
-}) : ((content) => {
+  cResult[10] = t1;
+  tmp19 = t1;
+}) : (function ReactActionSheetBase(content) {
   let SendMessageIcon;
   let author;
   let channel;
@@ -1078,7 +1068,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((content) => {
   str = "hotwheels_gaming_activity";
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactActionSheet(arg0) {
   let obj6;
   let tmp4;
   let tmp9;
@@ -1107,7 +1097,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp9 = cResult[3];
   }
   return tmp9;
-}) : ((arg0) => {
+}) : (function ReactActionSheet(arg0) {
   let obj2;
   if (arg0 == null) {
     throw new TypeError("Cannot destructure 'undefined' or 'null'.");

@@ -1,21 +1,22 @@
-// Module ID: 15431
-// Function ID: 15432
+// Module ID: 15693
+// Function ID: 15694
 // Name: DevToolsLoggingFlagsScreen
-// Dependencies: [17, 1357, 21, 4896, 587, 558, 576, 504, 1358, 6705, 6081, 2]
+// Dependencies: [17, 1369, 21, 5090, 587, 558, 576, 504, 1370, 6882, 6267, 2]
 
-// Module 15431 (DevToolsLoggingFlagsScreen)
+// Module 15693 (DevToolsLoggingFlagsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import DeveloperOptionsActionCreators from "DeveloperOptionsActionCreators" /* 1358 */;
-import TableRowGroup2 from "TableRowGroup" /* 6081 */;
-import TableSwitchRow from "TableSwitchRow" /* 6705 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1357 */;
+import TableRowGroup2 from "TableRowGroup" /* 6267 */;
+import TableSwitchRow from "TableSwitchRow" /* 6882 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1369 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+const require = globalThis.__r;
 
 let closure_4;
 let hasOwnProperty;
@@ -29,7 +30,7 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 createStyles = createStyles.createStyles;
 obj3 = { padding: nativeDefault.space.PX_16 };
 let closure_6 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsLoggingFlagsScreen() {
   let isLoggingAnalyticsEvents;
   let isLoggingGatewayEvents;
   let isLoggingInteractionTTIAnalytics;
@@ -37,17 +38,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let items1;
   let tmp10;
   let tmp13;
-  let tmp14;
-  let tmp17;
-  let tmp18;
-  let tmp21;
-  let tmp22;
+  let tmp16;
+  let tmp20;
   let tmp5;
   let tmp6;
   let tmp9;
   let obj = react;
   const cResult = obj.c(23);
-  const tmp4 = closure_6();
+  closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [DeveloperOptionsStore];
     const fn = function v() {
@@ -65,7 +63,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   ({ isLoggingGatewayEvents, isLoggingAnalyticsEvents, isLoggingInteractionTTIAnalytics, isTracingRequests } = stateFromStoresObject);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const fn2 = function y(logGatewayEvents) {
-      const obj = DeveloperOptionsActionCreators;
+      const obj = require("DeveloperOptionsActionCreators");
       const obj2 = { logGatewayEvents };
       return obj.setDeveloperOptionSettings(obj2);
     };
@@ -84,102 +82,143 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp10 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn3 = function h(logAnalyticsEvents) {
-      const obj = DeveloperOptionsActionCreators;
-      const obj2 = { logAnalyticsEvents };
-      return obj.setDeveloperOptionSettings(obj2);
-    };
-    cResult[5] = fn3;
-    tmp13 = fn3;
+    class L {
+      constructor(logAnalyticsEvents) {
+        const obj = require("DeveloperOptionsActionCreators");
+        const obj2 = { logAnalyticsEvents };
+        return obj.setDeveloperOptionSettings(obj2);
+      }
+    }
+    cResult[5] = L;
+    tmp13 = L;
   } else {
-    tmp13 = cResult[5];
-  }
-  if (cResult[6] !== isLoggingAnalyticsEvents) {
-    const obj3 = { label: "Analytics Events", subLabel: "Logs all analytics events to the developer console.", value: isLoggingAnalyticsEvents, onValueChange: tmp13 };
-    const tmp16 = React3(TableSwitchRow.TableSwitchRow, obj3);
-    cResult[6] = isLoggingAnalyticsEvents;
-    cResult[7] = tmp16;
-    tmp14 = tmp16;
-  } else {
-    tmp14 = cResult[7];
-  }
-  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn4 = function w(logInteractionTTIAnalytics) {
-      const obj = DeveloperOptionsActionCreators;
-      const obj2 = { logInteractionTTIAnalytics };
-      return obj.setDeveloperOptionSettings(obj2);
-    };
-    cResult[8] = fn4;
-    tmp17 = fn4;
-  } else {
-    tmp17 = cResult[8];
-  }
-  if (cResult[9] !== isLoggingInteractionTTIAnalytics) {
-    const obj4 = { label: "Interaction TTI Analytics", subLabel: "Logs Interaction TTI analytics events to the developer console.", value: isLoggingInteractionTTIAnalytics, onValueChange: tmp17 };
-    const tmp20 = React3(TableSwitchRow.TableSwitchRow, obj4);
-    cResult[9] = isLoggingInteractionTTIAnalytics;
-    cResult[10] = tmp20;
-    tmp18 = tmp20;
-  } else {
-    tmp18 = cResult[10];
-  }
-  if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn5 = function p(trace) {
-      const obj = DeveloperOptionsActionCreators;
-      const obj2 = { trace };
-      return obj.setDeveloperOptionSettings(obj2);
-    };
-    cResult[11] = fn5;
-    tmp21 = fn5;
-  } else {
-    tmp21 = cResult[11];
-  }
-  if (cResult[12] !== isTracingRequests) {
-    const obj5 = { label: "Tracing Requests", subLabel: "Force trace all client requests with APM.", value: isTracingRequests, onValueChange: tmp21 };
-    const tmp24 = React3(TableSwitchRow.TableSwitchRow, obj5);
-    cResult[12] = isTracingRequests;
-    cResult[13] = tmp24;
-    tmp22 = tmp24;
-  } else {
-    tmp22 = cResult[13];
-  }
-  if (cResult[14] === tmp10) {
-    if (cResult[15] === tmp14) {
-      if (cResult[16] === tmp18) {
-        let tmp25;
-        if (cResult[17] === tmp22) {
-          tmp25 = cResult[18];
-        }
-        if (cResult[19] === tmp4.container) {
-          if (cResult[20] === tmp4.content) {
-            let tmp27;
-            if (cResult[21] === tmp25) {
-              tmp27 = cResult[22];
-            }
-            return tmp27;
-          }
-        }
-        const obj6 = { style: null, contentContainerStyle: null, children: tmp25 };
-        ({ container: obj8.style, content: obj8.contentContainerStyle } = tmp4);
-        const tmp30 = React3(ScrollView, obj6);
-        cResult[19] = tmp4.container;
-        cResult[20] = tmp4.content;
-        cResult[21] = tmp25;
-        cResult[22] = tmp30;
-        tmp27 = tmp30;
+    class L {
+      constructor(logAnalyticsEvents) {
+        const obj = require("DeveloperOptionsActionCreators");
+        const obj2 = { logAnalyticsEvents };
+        return obj.setDeveloperOptionSettings(obj2);
       }
     }
   }
-  const obj7 = { title: "Logging", hasIcons: false, children: items1 };
+  if (cResult[6] !== isLoggingAnalyticsEvents) {
+    class L {
+      constructor(logAnalyticsEvents) {
+        const obj = require("DeveloperOptionsActionCreators");
+        const obj2 = { logAnalyticsEvents };
+        return obj.setDeveloperOptionSettings(obj2);
+      }
+    }
+    const obj3 = { label: "Analytics Events", subLabel: "Logs all analytics events to the developer console.", value: isLoggingAnalyticsEvents, onValueChange: tmp13 };
+    cResult[6] = isLoggingAnalyticsEvents;
+    cResult[7] = React3(TableSwitchRow.TableSwitchRow, obj3);
+    const tmp15 = React3(TableSwitchRow.TableSwitchRow, obj3);
+  } else {
+    class L {
+      constructor(logAnalyticsEvents) {
+        const obj = require("DeveloperOptionsActionCreators");
+        const obj2 = { logAnalyticsEvents };
+        return obj.setDeveloperOptionSettings(obj2);
+      }
+    }
+  }
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class L {
+      constructor(logAnalyticsEvents) {
+        const obj = require("DeveloperOptionsActionCreators");
+        const obj2 = { logAnalyticsEvents };
+        return obj.setDeveloperOptionSettings(obj2);
+      }
+    }
+    cResult[8] = tmp17;
+    tmp16 = tmp17;
+  } else {
+    class L {
+      constructor(logAnalyticsEvents) {
+        const obj = require("DeveloperOptionsActionCreators");
+        const obj2 = { logAnalyticsEvents };
+        return obj.setDeveloperOptionSettings(obj2);
+      }
+    }
+  }
+  if (cResult[9] !== isLoggingInteractionTTIAnalytics) {
+    class L {
+      constructor(logAnalyticsEvents) {
+        const obj = require("DeveloperOptionsActionCreators");
+        const obj2 = { logAnalyticsEvents };
+        return obj.setDeveloperOptionSettings(obj2);
+      }
+    }
+    const obj4 = { label: "Interaction TTI Analytics", subLabel: "Logs Interaction TTI analytics events to the developer console.", value: isLoggingInteractionTTIAnalytics, onValueChange: tmp16 };
+    cResult[9] = isLoggingInteractionTTIAnalytics;
+    cResult[10] = React3(TableSwitchRow.TableSwitchRow, obj4);
+    const tmp19 = React3(TableSwitchRow.TableSwitchRow, obj4);
+  } else {
+    class L {
+      constructor(logAnalyticsEvents) {
+        const obj = require("DeveloperOptionsActionCreators");
+        const obj2 = { logAnalyticsEvents };
+        return obj.setDeveloperOptionSettings(obj2);
+      }
+    }
+  }
+  if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+    class L {
+      constructor(logAnalyticsEvents) {
+        const obj = require("DeveloperOptionsActionCreators");
+        const obj2 = { logAnalyticsEvents };
+        return obj.setDeveloperOptionSettings(obj2);
+      }
+    }
+    cResult[11] = tmp21;
+    tmp20 = tmp21;
+  } else {
+    class L {
+      constructor(logAnalyticsEvents) {
+        const obj = require("DeveloperOptionsActionCreators");
+        const obj2 = { logAnalyticsEvents };
+        return obj.setDeveloperOptionSettings(obj2);
+      }
+    }
+  }
+  if (cResult[12] !== isTracingRequests) {
+    class L {
+      constructor(logAnalyticsEvents) {
+        const obj = require("DeveloperOptionsActionCreators");
+        const obj2 = { logAnalyticsEvents };
+        return obj.setDeveloperOptionSettings(obj2);
+      }
+    }
+    const obj5 = { label: "Tracing Requests", subLabel: "Force trace all client requests with APM.", value: isTracingRequests, onValueChange: tmp20 };
+    cResult[12] = isTracingRequests;
+    cResult[13] = React3(TableSwitchRow.TableSwitchRow, obj5);
+    const tmp23 = React3(TableSwitchRow.TableSwitchRow, obj5);
+  } else {
+    class L {
+      constructor(logAnalyticsEvents) {
+        const obj = require("DeveloperOptionsActionCreators");
+        const obj2 = { logAnalyticsEvents };
+        return obj.setDeveloperOptionSettings(obj2);
+      }
+    }
+  }
+  if (cResult[14] === tmp10) {
+    class L {
+      constructor(logAnalyticsEvents) {
+        const obj = require("DeveloperOptionsActionCreators");
+        const obj2 = { logAnalyticsEvents };
+        return obj.setDeveloperOptionSettings(obj2);
+      }
+    }
+  }
+  const obj6 = { title: "Logging", hasIcons: false, children: items1 };
   items1 = [tmp10, tmp14, tmp18, tmp22];
-  const tmp26 = hasOwnProperty(TableRowGroup2.TableRowGroup, obj7);
   cResult[14] = tmp10;
   cResult[15] = tmp14;
   cResult[16] = tmp18;
   cResult[17] = tmp22;
-  cResult[18] = tmp26;
-  tmp25 = tmp26;
-}) : (() => {
+  cResult[18] = hasOwnProperty(TableRowGroup2.TableRowGroup, obj6);
+  hasOwnProperty(TableRowGroup2.TableRowGroup, obj6);
+}) : (function DevToolsLoggingFlagsScreen() {
   let TableRowGroup;
   let isLoggingAnalyticsEvents;
   let isLoggingGatewayEvents;
@@ -201,7 +240,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     subLabel: "Logs all gateway events to console, including content. Enable verbose logs to see them.",
     value: isLoggingGatewayEvents,
     onValueChange(logGatewayEvents) {
-      const obj = DeveloperOptionsActionCreators;
+      const obj = require("DeveloperOptionsActionCreators");
       const obj2 = { logGatewayEvents };
       return obj.setDeveloperOptionSettings(obj2);
     }
@@ -212,7 +251,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     subLabel: "Logs all analytics events to the developer console.",
     value: isLoggingAnalyticsEvents,
     onValueChange(logAnalyticsEvents) {
-      const obj = DeveloperOptionsActionCreators;
+      const obj = require("DeveloperOptionsActionCreators");
       const obj2 = { logAnalyticsEvents };
       return obj.setDeveloperOptionSettings(obj2);
     }
@@ -223,7 +262,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     subLabel: "Logs Interaction TTI analytics events to the developer console.",
     value: isLoggingInteractionTTIAnalytics,
     onValueChange(logInteractionTTIAnalytics) {
-      const obj = DeveloperOptionsActionCreators;
+      const obj = require("DeveloperOptionsActionCreators");
       const obj2 = { logInteractionTTIAnalytics };
       return obj.setDeveloperOptionSettings(obj2);
     }
@@ -234,7 +273,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     subLabel: "Force trace all client requests with APM.",
     value: isTracingRequests,
     onValueChange(trace) {
-      const obj = DeveloperOptionsActionCreators;
+      const obj = require("DeveloperOptionsActionCreators");
       const obj2 = { trace };
       return obj.setDeveloperOptionSettings(obj2);
     }

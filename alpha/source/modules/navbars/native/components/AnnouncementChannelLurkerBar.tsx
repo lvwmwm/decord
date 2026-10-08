@@ -1,19 +1,17 @@
-// Module ID: 12563
-// Function ID: 12564
+// Module ID: 12694
+// Function ID: 12695
 // Name: AnnouncementChannelLurkerBar
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 12113, 1126, 4892, 5601, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 12191, 1126, 5086, 5375, 2]
 
-// Module 12563 (AnnouncementChannelLurkerBar)
+// Module 12694 (AnnouncementChannelLurkerBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 12113 */;
+import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 12191 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channel;
 
 let c3;
 let closure_4;
@@ -23,7 +21,7 @@ const View = react_native.View;
 let obj = { wrapper: obj2, text: { textAlign: "center", marginBottom: 8 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 16, paddingTop: 8 };
 let closure_5 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnnouncementChannelLurkerBar(channel) {
   let items;
   let text;
   let tmp11;
@@ -37,17 +35,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   channel = channel.channel;
   const tmp4 = closure_5();
   if (cResult[0] !== channel) {
-    const fn = function c() {
+    function handleFollowing() {
       const id = channel.id;
       const guildId = channel.getGuildId();
       if (null != guildId) {
         const obj = showChannelFollowingActionSheet;
         const result = obj.showChannelFollowingActionSheet(id, guildId);
       }
-    };
+    }
     cResult[0] = channel;
-    cResult[1] = fn;
-    tmp5 = fn;
+    cResult[1] = handleFollowing;
+    tmp5 = handleFollowing;
   } else {
     tmp5 = cResult[1];
   }
@@ -62,7 +60,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }
   if (cResult[3] !== tmp4.text) {
     const obj2 = { style: text, variant: "text-sm/medium", color: "mobile-text-heading-primary", children: tmp6 };
-    const tmp10 = closure_3(channel(4892).Text, obj2);
+    const tmp10 = closure_3(channel(5086).Text, obj2);
     cResult[3] = tmp4.text;
     cResult[4] = tmp10;
     tmp8 = tmp10;
@@ -79,7 +77,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }
   if (cResult[6] !== tmp5) {
     const obj3 = { onPress: tmp5, text: tmp11, size: "sm", variant: "secondary", grow: true };
-    const tmp15 = closure_3(channel(5601).Button, obj3);
+    const tmp15 = closure_3(channel(5375).Button, obj3);
     cResult[6] = tmp5;
     cResult[7] = tmp15;
     tmp13 = tmp15;
@@ -103,7 +101,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[10] = tmp13;
   cResult[11] = tmp17;
   tmp16 = tmp17;
-}) : ((channel) => {
+}) : (function AnnouncementChannelLurkerBar(channel) {
   let intl;
   let intl2;
   let items;
@@ -111,11 +109,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const tmp = closure_5();
   let obj = { style: tmp.wrapper, children: items };
   const obj2 = { style: tmp.text, variant: "text-sm/medium", color: "mobile-text-heading-primary", children: intl.string(channel(1126).t.Hl0Mqh) };
-  const Text = channel(4892).Text;
+  const Text = channel(5086).Text;
   intl = channel(1126).intl;
   items = [closure_3(Text, obj2), ];
   const obj3 = {
-    onPress() {
+    onPress: function handleFollowing() {
       const id = channel.id;
       const guildId = channel.getGuildId();
       if (null != guildId) {
@@ -128,7 +126,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     variant: "secondary",
     grow: true
   };
-  const Button = channel(5601).Button;
+  const Button = channel(5375).Button;
   intl2 = channel(1126).intl;
   items[1] = closure_3(Button, obj3);
   return closure_4(View, obj);

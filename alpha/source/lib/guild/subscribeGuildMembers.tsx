@@ -1,29 +1,22 @@
-// Module ID: 6824
-// Function ID: 6825
+// Module ID: 6997
+// Function ID: 6998
 // Name: subscribeGuildMembers
-// Dependencies: [109, 19, 5590, 1377, 21, 12, 6825, 568, 558, 576, 1242, 2]
-// Exports: default
+// Dependencies: [19, 5956, 1389, 558, 576, 12, 1254, 6998, 2]
 
-// Module 6824 (subscribeGuildMembers)
+// Module 6997 (subscribeGuildMembers)
 import _modDef12 from "module_12" /* 12 */;
-import Fragment from "Fragment" /* 21 */;
-import shallowEqualDefault from "shallowEqual" /* 568 */;
-import react2 from "react" /* 576 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 5590 */;
-import UserStore from "UserStore" /* 1377 */;
+import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 5956 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, isEqualResult, item1, tmpResult, tmpResult1, tmpResult2;
+let _require, importDefault;
 
-let closure_3 = ["forwardedRef"];
-const jsx = Fragment.jsx;
-let c9 = false;
+let c6 = false;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSubscribeGuildMembers(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;
@@ -38,26 +31,26 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     }
     const effect = react.useEffect(tmp2, tmp3);
   }
-  const fn = function n() {
+  const fn = function l() {
     let reason;
     let arr = _modDef12;
     let item = arr.forEach(closure_0, (userIds, guildId) => {
       let obj3;
-      const tmp = !c9 && userIds.length > 50;
+      const tmp = !c6 && userIds.length > 50;
       if (tmp) {
-        c9 = true;
+        c6 = true;
         const obj2 = { extra: obj3 };
         obj3 = { count: userIds.length, guildId, reason };
-        const obj = reason(dependencyMap[10]);
+        const obj = reason(dependencyMap[6]);
         obj.captureMessage("SubscribeGuildMembers called with more than 50 userIds.", obj2);
       }
-      const obj4 = closure_0(dependencyMap[6]);
+      const obj4 = closure_0(dependencyMap[7]);
       obj4.subscribeMembers(guildId, userIds);
     });
     return () => {
       const arr = reason(dependencyMap[5]);
       const item = arr.forEach(closure_1_0, (userIds, guildId) => {
-        const obj = closure_1_0(closure_1_2[6]);
+        const obj = closure_1_0(closure_1_2[7]);
         return obj.unsubscribeMembers(guildId, userIds);
       });
     };
@@ -69,7 +62,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[3] = items;
   tmp3 = items;
   tmp2 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useSubscribeGuildMembers(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   const items = [arg0, arg1];
@@ -78,34 +71,35 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     let arr = _modDef12;
     let item = arr.forEach(closure_0, (userIds, guildId) => {
       let obj3;
-      const tmp = !c9 && userIds.length > 50;
+      const tmp = !c6 && userIds.length > 50;
       if (tmp) {
-        c9 = true;
+        c6 = true;
         const obj2 = { extra: obj3 };
         obj3 = { count: userIds.length, guildId, reason };
-        const obj = reason(dependencyMap[10]);
+        const obj = reason(dependencyMap[6]);
         obj.captureMessage("SubscribeGuildMembers called with more than 50 userIds.", obj2);
       }
-      const obj4 = closure_0(dependencyMap[6]);
+      const obj4 = closure_0(dependencyMap[7]);
       obj4.subscribeMembers(guildId, userIds);
     });
     return () => {
       const arr = reason(dependencyMap[5]);
       const item = arr.forEach(closure_1_0, (userIds, guildId) => {
-        const obj = closure_1_0(closure_1_2[6]);
+        const obj = closure_1_0(closure_1_2[7]);
         return obj.unsubscribeMembers(guildId, userIds);
       });
     };
   }, items);
 });
-let closure_10 = tmp2;
+let closure_7 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEnsureHydratedGuildUsers(arg0, arg1) {
   let closure_0;
+  let closure_1;
   let first;
   let user;
   _require = arg0;
-  let closure_1 = arg1;
+  importDefault = arg1;
   const obj = require("react");
   const cResult = obj.c(8);
   if (0 !== arg1.length) {
@@ -140,23 +134,22 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       tmp6 = cResult[7];
     }
     const effect = react.useEffect(tmp5, tmp6);
-    closure_10(first, "useEnsureHydratedGuildUsers");
+    closure_7(first, "useEnsureHydratedGuildUsers");
   }
-  const fn = function h() {
-    const item = closure_1.forEach((item) => {
-      if (null == user.getUser(item)) {
-        const member = GuildMemberRequesterStore.requestMember(closure_1_0, item);
-      }
-    });
-  };
+  class M {
+    constructor() {
+      item = closure_1.forEach(() => { /* body not rendered: F139322 */ });
+      return;
+    }
+  }
   const items = [arg0, arg1];
   cResult[4] = arg0;
   cResult[5] = arg1;
-  cResult[6] = fn;
+  cResult[6] = M;
   cResult[7] = items;
   tmp6 = items;
-  tmp5 = fn;
-}) : ((arg0, arg1) => {
+  tmp5 = M;
+}) : (function useEnsureHydratedGuildUsers(arg0, arg1) {
   let user;
   let closure_0 = arg0;
   let closure_1 = arg1;
@@ -179,112 +172,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       }
     });
   }, items1);
-  closure_10(memo, "useEnsureHydratedGuildUsers");
+  closure_7(memo, "useEnsureHydratedGuildUsers");
 });
 const result = size.fileFinishedImporting("lib/guild/subscribeGuildMembers.tsx");
 
-export default function subscribeGuildMembers(arg0) {
-  let closure_0 = arg0;
-  return (displayName) => {
-    let str = displayName.displayName;
-    if (str == null) {
-      str = displayName.name;
-    }
-    if (str == null) {
-      str = "Component";
-    }
-    const combined = "SubscribeGuildMembersContainer(" + str + ")";
-    const Component = React.Component;
-    class WrappedComponent extends Component {
-      constructor(arg0) {
-        tmp3 = new WrappedComponent(displayName, tmp2, tmp);
-        tmp4 = closure_0(displayName);
-        arr = closure_1(closure_2[5]);
-        item = arr.forEach(tmp4, (userIds, guildId) => {
-          const obj = displayName(WrappedComponent[6]);
-          return obj.subscribeMembers(guildId, userIds);
-        });
-        tmp3._subscriptions = tmp4;
-        return tmp3;
-      }
-      componentDidUpdate(arg0) {
-        self = this;
-        tmp = closure_2_1;
-        tmp2 = closure_2_2;
-        if (!closure_2_1(closure_2_2[7])(this.props, displayName)) {
-          tmp3 = closure_0;
-          tmp4 = closure_0(self.props);
-          tmp5 = null;
-          isEqualResult = null != self._subscriptions;
-          if (isEqualResult) {
-            tmpResult = tmp(tmp2[5]);
-            isEqualResult = tmpResult.isEqual(self._subscriptions, tmp4);
-          }
-          if (!isEqualResult) {
-            if (null != self._subscriptions) {
-              tmpResult1 = tmp(tmp2[5]);
-              item = tmpResult1.forEach(self._subscriptions, (userIds, guildId) => {
-                const obj = displayName(WrappedComponent[6]);
-                return obj.unsubscribeMembers(guildId, userIds);
-              });
-            }
-            tmpResult2 = tmp(tmp2[5]);
-            item1 = tmpResult2.forEach(tmp4, (userIds, guildId) => {
-              const obj = displayName(WrappedComponent[6]);
-              return obj.subscribeMembers(guildId, userIds);
-            });
-            self._subscriptions = tmp4;
-          }
-        }
-        return;
-      }
-      componentWillUnmount() {
-        if (null != this._subscriptions) {
-          tmp2 = WrappedComponent;
-          tmp3 = WrappedComponent;
-          arr = WrappedComponent(WrappedComponent[5]);
-          item = arr.forEach(tmp._subscriptions, (userIds, guildId) => {
-            const obj = displayName(WrappedComponent[6]);
-            return obj.unsubscribeMembers(guildId, userIds);
-          });
-        }
-        return;
-      }
-      render() {
-        const props = this.props;
-        const merged = Object.assign(_objectWithoutProperties(props, closure_3));
-        return <displayName ref={props.forwardedRef} />;
-      }
-    }
-    const prototype = WrappedComponent.prototype;
-    let tmp2 = React;
-    WrappedComponent.displayName = combined;
-    const forwardRef = React.forwardRef;
-    let obj = displayName(dependencyMap[8]);
-    const forwardRefResult = forwardRef(obj.isReactCompilerEnabled() ? ((arg0, forwardedRef) => {
-      const obj = react2;
-      const cResult = obj.c(3);
-      if (cResult[0] === arg0) {
-        let tmp2;
-        if (cResult[1] === forwardedRef) {
-          tmp2 = cResult[2];
-        }
-        return tmp2;
-      }
-      const merged = Object.assign(arg0);
-      const tmp4 = <WrappedComponent forwardedRef={arg1} />;
-      cResult[0] = arg0;
-      cResult[1] = forwardedRef;
-      cResult[2] = tmp4;
-      tmp2 = tmp4;
-    }) : ((arg0, forwardedRef) => {
-      const merged = Object.assign(arg0);
-      return <WrappedComponent forwardedRef={arg1} />;
-    }));
-    forwardRefResult.displayName = "ForwardRef(" + combined + ")";
-    return forwardRefResult;
-  };
-};
 export const MAX_GUILD_MEMBER_SUBSCRIPTIONS = 50;
 export const useSubscribeGuildMembers = tmp2;
 export const useEnsureHydratedGuildUsers = tmp3;

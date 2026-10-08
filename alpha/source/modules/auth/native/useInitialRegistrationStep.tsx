@@ -1,15 +1,15 @@
-// Module ID: 15921
-// Function ID: 15922
+// Module ID: 16181
+// Function ID: 16182
 // Name: useInitialRegistrationStep
-// Dependencies: [19, 502, 6091, 15906, 15905, 558, 576, 504, 6089, 2]
+// Dependencies: [19, 502, 5938, 16165, 16164, 558, 576, 504, 5936, 2]
 
-// Module 15921 (useInitialRegistrationStep)
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6089 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 15905 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 15906 */;
+// Module 16181 (useInitialRegistrationStep)
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 5936 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 16164 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 16165 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ConsentStore from "ConsentStore" /* 6091 */;
+import ConsentStore from "ConsentStore" /* 5938 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let _require;
 
 const resetRegistration = RegistrationUIStore.resetRegistration;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInitialRegistrationStep(arg0) {
   let authenticationConsentRequired;
   let closure_0;
   let tmp4;
@@ -53,7 +53,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const effect = react.useEffect(tmp8, tmp9);
     const obj3 = react;
     if (cResult[6] !== arg0) {
-      class F {
+      class R {
         constructor() {
           obj = closure_0(closure_2[4]);
           if (closure_0 === obj.getRegistrationSteps()[1]) {
@@ -71,12 +71,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const items1 = [arg0];
       cResult[6] = arg0;
-      cResult[7] = F;
+      cResult[7] = R;
       cResult[8] = items1;
       tmp12 = items1;
-      tmp11 = F;
+      tmp11 = R;
     } else {
-      class F {
+      class R {
         constructor() {
           obj = closure_0(closure_2[4]);
           if (closure_0 === obj.getRegistrationSteps()[1]) {
@@ -113,7 +113,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = items2;
   tmp9 = items2;
   tmp8 = S;
-}) : ((arg0) => {
+}) : (function useInitialRegistrationStep(arg0) {
   let authenticationConsentRequired;
   let closure_0;
   _require = arg0;

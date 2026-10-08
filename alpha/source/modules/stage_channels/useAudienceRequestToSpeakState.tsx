@@ -1,11 +1,11 @@
-// Module ID: 5043
-// Function ID: 5044
+// Module ID: 5412
+// Function ID: 5413
 // Name: useAudienceRequestToSpeakState
-// Dependencies: [4915, 558, 576, 504, 2]
+// Dependencies: [5111, 558, 576, 504, 2]
 // Exports: getAudienceRequestToSpeakState
 
-// Module 5043 (useAudienceRequestToSpeakState)
-import VoiceStateStore from "VoiceStateStore" /* 4915 */;
+// Module 5412 (useAudienceRequestToSpeakState)
+import VoiceStateStore from "VoiceStateStore" /* 5111 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 let _require, dependencyMap, tmp3, tmp4, tmp5, tmp8;
 
 let obj = { NONE: 0, [0]: "NONE", REQUESTED_TO_SPEAK: 1, [1]: "REQUESTED_TO_SPEAK", REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK: 2, [2]: "REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK", ON_STAGE: 3, [3]: "ON_STAGE" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAudienceRequestToSpeakState(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -85,7 +85,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = items1;
   tmp7 = items1;
   tmp6 = E;
-}) : ((arg0, arg1) => {
+}) : (function useAudienceRequestToSpeakState(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;

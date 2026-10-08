@@ -1,14 +1,14 @@
-// Module ID: 16722
-// Function ID: 16723
+// Module ID: 16995
+// Function ID: 16996
 // Name: ConjurePublishNoticeLine
-// Dependencies: [32, 19, 21, 558, 576, 16652, 16723, 1126, 16724, 4892, 3753, 16725, 2]
+// Dependencies: [32, 19, 21, 558, 576, 16914, 16996, 1126, 16997, 5086, 3827, 16998, 2]
 
-// Module 16722 (ConjurePublishNoticeLine)
+// Module 16995 (ConjurePublishNoticeLine)
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useConjurePublishAction from "useConjurePublishAction" /* 16652 */;
-import conjureReminderSlot from "conjureReminderSlot" /* 16725 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import useConjurePublishAction from "useConjurePublishAction" /* 16914 */;
+import conjureReminderSlot from "conjureReminderSlot" /* 16998 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -21,10 +21,10 @@ let dependencyMap, importDefault;
 let hasOwnProperty;
 let metroRequire;
 let tmp4;
-const _modDef3753 = tmp4(3753);
+const _modDef3827 = tmp4(3827);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePublishNoticeLine(arg0) {
   let notice;
   let projectId;
   let tmp5;
@@ -49,7 +49,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = projectId;
   cResult[2] = tmp5;
   tmp2 = tmp5;
-}) : ((arg0) => {
+}) : (function ConjurePublishNoticeLine(arg0) {
   let notice;
   let projectId;
   let tmp3;
@@ -64,14 +64,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PublishedNoticeLine(projectId) {
   const tmp = projectId;
   let obj = projectId(576);
   const cResult = obj.c(9);
   projectId = projectId.projectId;
   const notice = projectId.notice;
-  const context = react.useContext(projectId(16652).ConjurePublishActionContext);
-  const tmp5 = context(16723)(projectId);
+  const context = react.useContext(projectId(16914).ConjurePublishActionContext);
+  const tmp5 = context(16996)(projectId);
   if (cResult[0] === context) {
     let tmp6;
     if (cResult[1] === projectId) {
@@ -86,7 +86,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         }
         if (cResult[7] !== tmp7) {
           const obj2 = { variant: "text-md/normal", color: "text-default", children: tmp7 };
-          const tmp11 = closure_5(tmp(4892).Text, obj2);
+          const tmp11 = closure_5(tmp(5086).Text, obj2);
           cResult[7] = tmp7;
           cResult[8] = tmp11;
           tmp9 = tmp11;
@@ -99,7 +99,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     const intl = tmp(1126).intl;
     const format = intl.format;
     const obj3 = { name: tmp5, onOpen: tmp6 };
-    const tmpResult = tmp(16724);
+    const tmpResult = tmp(16997);
     const formatResult = format(tmpResult.publishNoticeMessage(notice), obj3);
     cResult[3] = tmp6;
     cResult[4] = tmp5;
@@ -117,14 +117,14 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   cResult[1] = projectId;
   cResult[2] = fn;
   tmp6 = fn;
-}) : ((projectId) => {
+}) : (function PublishedNoticeLine(projectId) {
   let format;
   let obj2;
   projectId = projectId.projectId;
   const notice = projectId.notice;
-  const context = react.useContext(projectId(16652).ConjurePublishActionContext);
+  const context = react.useContext(projectId(16914).ConjurePublishActionContext);
   const items = [context, projectId];
-  const tmp2 = context(16723)(projectId);
+  const tmp2 = context(16996)(projectId);
   const callback = react.useCallback(() => {
     if (null != context) {
       const obj = useConjurePublishAction;
@@ -132,14 +132,14 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     }
   }, items);
   let obj = { variant: "text-md/normal", color: "text-default", children: format(obj2.publishNoticeMessage(notice), { name: tmp2, onOpen: callback }) };
-  const Text = projectId(4892).Text;
+  const Text = projectId(5086).Text;
   const intl = projectId(1126).intl;
   format = intl.format;
-  obj2 = projectId(16724);
+  obj2 = projectId(16997);
   return closure_5(Text, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutdatedNoticeLine(projectId) {
   let closure_1;
   let closure_2;
   let tmp10;
@@ -174,7 +174,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       }
       if (cResult[4] !== tmp8) {
         const obj2 = { variant: "text-xs/normal", color: "text-muted", children: tmp8 };
-        const tmp12 = closure_5(projectId(4892).Text, obj2);
+        const tmp12 = closure_5(projectId(5086).Text, obj2);
         cResult[4] = tmp8;
         cResult[5] = tmp12;
         tmp10 = tmp12;
@@ -192,14 +192,14 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
           closure_1.run("outdated_notice");
         }
     };
-    const formatResult = intl.format(_modDef3753.X8tdbS, obj3);
+    const formatResult = intl.format(_modDef3827.X8tdbS, obj3);
     cResult[1] = projectId;
     cResult[2] = tmp5;
     cResult[3] = formatResult;
     tmp8 = formatResult;
   }
   return tmp7;
-}) : ((projectId) => {
+}) : (function OutdatedNoticeLine(projectId) {
   let closure_1;
   let closure_2;
   let intl;
@@ -214,8 +214,8 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   if (null != tmp3) {
     let tmp8;
     if (!tmp4[0]) {
-      let obj = { variant: "text-xs/normal", color: "text-muted", children: intl.format(_modDef3753.X8tdbS, obj2) };
-      const Text = projectId(4892).Text;
+      let obj = { variant: "text-xs/normal", color: "text-muted", children: intl.format(_modDef3827.X8tdbS, obj2) };
+      const Text = projectId(5086).Text;
       intl = projectId(1126).intl;
       obj2 = {
         action: tmp3.label,
@@ -235,7 +235,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   return tmp5;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpdatingNoticeLine() {
   let first;
   let items;
   let tmp8;
@@ -243,7 +243,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(3);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
-    const stringResult = intl.string(_modDef3753.lexcBN);
+    const stringResult = intl.string(_modDef3827.lexcBN);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -262,10 +262,10 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[2];
   }
   return tmp8;
-}) : (() => {
+}) : (function UpdatingNoticeLine() {
   let items;
   const intl = intl2.intl;
-  const stringResult = intl.string(_modDef3753.lexcBN);
+  const stringResult = intl.string(_modDef3827.lexcBN);
   const obj = conjureReminderSlot;
   const conjureUpdatingDots = obj.useConjureUpdatingDots();
   const obj2 = { variant: "text-xs/normal", color: "text-muted", accessibilityLabel: stringResult, children: items };

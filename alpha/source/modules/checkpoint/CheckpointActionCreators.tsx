@@ -1,13 +1,13 @@
-// Module ID: 15535
-// Function ID: 15536
+// Module ID: 15797
+// Function ID: 15798
 // Name: CheckpointActionCreators
-// Dependencies: [5, 1085, 584, 15536, 1282, 15537, 2]
-// Exports: completeCheckpoint, fetchCheckpointData, resetCheckpoint, toggleMute
+// Dependencies: [5, 1085, 584, 15798, 1294, 15799, 2]
+// Exports: completeCheckpoint, fetchCheckpointData, resetCheckpoint, resetEditedCharacter, selectCharacterTrait, toggleMute
 
-// Module 15535 (CheckpointActionCreators)
+// Module 15797 (CheckpointActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -274,6 +274,15 @@ const result = size.fileFinishedImporting("modules/checkpoint/CheckpointActionCr
 export const toggleMute = function toggleMute() {
   obj = DispatcherDefault;
   return obj.dispatch({ type: "CHECKPOINT_TOGGLE_MUTE" });
+};
+export const selectCharacterTrait = function selectCharacterTrait(trait, optionId) {
+  obj = DispatcherDefault;
+  const obj2 = { type: "CHECKPOINT_SELECT_CHARACTER_TRAIT", trait, optionId };
+  return obj.dispatch(obj2);
+};
+export const resetEditedCharacter = function resetEditedCharacter() {
+  obj = DispatcherDefault;
+  return obj.dispatch({ type: "CHECKPOINT_RESET_EDITED_CHARACTER" });
 };
 export const fetchCheckpointData = function fetchCheckpointData() {
   return obj(...arguments);

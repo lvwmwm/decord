@@ -1,30 +1,30 @@
-// Module ID: 11165
-// Function ID: 11166
+// Module ID: 11287
+// Function ID: 11288
 // Name: MediaModalOverlayAltTextSheet
-// Dependencies: [19, 21, 4896, 587, 558, 576, 11166, 5919, 6651, 1126, 4892, 6652, 2]
+// Dependencies: [19, 21, 5090, 587, 558, 576, 11288, 8302, 6828, 1126, 5086, 6829, 2]
 
-// Module 11165 (MediaModalOverlayAltTextSheet)
+// Module 11287 (MediaModalOverlayAltTextSheet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5919 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6652 */;
-import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11166 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6829 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8302 */;
+import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11288 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, description;
+let BottomSheet;
 
 let obj2;
 const jsx = Fragment.jsx;
 let obj = { container: obj2 };
 obj2 = { padding: nativeDefault.space.PX_16 };
 let closure_3 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((description) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaViewerAltTextSheet(description) {
   let first;
   let tmp9;
   const obj = react2;
@@ -39,7 +39,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((description) => {
     num = messagePreviewCollapsedheight + 20 + 50;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const BottomSheetTitleHeader = tmp(6651).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(6828).BottomSheetTitleHeader;
     const intl = tmp(1126).intl;
     const tmp8 = <BottomSheetTitleHeader title={intl.string(intl2.t.J3IOO1)} />;
     cResult[0] = tmp8;
@@ -87,7 +87,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((description) => {
   cResult[4] = tmp9;
   cResult[5] = items;
   tmp10 = items;
-}) : ((description) => {
+}) : (function MediaViewerAltTextSheet(description) {
   let intl;
   description = description.description;
   const tmp = closure_3();
@@ -98,9 +98,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((description) => {
   if (!obj2.useIsScreenLandscape()) {
     num = messagePreviewCollapsedheight + 20 + 50;
   }
-  BottomSheet = tmp2(6652).BottomSheet;
+  BottomSheet = tmp2(6829).BottomSheet;
   ({ title: intl.string(intl2.t.J3IOO1) });
-  const BottomSheetTitleHeader = tmp2(6651).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = tmp2(6828).BottomSheetTitleHeader;
   intl = tmp2(1126).intl;
   const items = [tmp.container, { minHeight: num }];
   return <BottomSheet header={null} contentStyles={items}>{null}</BottomSheet>;

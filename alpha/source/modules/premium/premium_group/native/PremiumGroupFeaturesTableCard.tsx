@@ -1,22 +1,22 @@
-// Module ID: 13309
-// Function ID: 13310
+// Module ID: 13609
+// Function ID: 13610
 // Name: PremiumGroupFeaturesTableCard
-// Dependencies: [17, 6951, 21, 4896, 587, 558, 576, 1126, 4892, 13310, 4733, 8915, 5612, 1188, 2]
+// Dependencies: [17, 7140, 21, 5090, 587, 558, 576, 1126, 5086, 13610, 4927, 9348, 5387, 1200, 2]
 
-// Module 13309 (PremiumGroupFeaturesTableCard)
+// Module 13609 (PremiumGroupFeaturesTableCard)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import ColorUtils from "ColorUtils" /* 4733 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import LinearGradientDefault from "LinearGradient" /* 5612 */;
-import ColorConstants from "ColorConstants" /* 6951 */;
-import PremiumGroupWordmarkDefault from "PremiumGroupWordmark" /* 8915 */;
-import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 13310 */;
+import native from "native" /* 1200 */;
+import ColorUtils from "ColorUtils" /* 4927 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import LinearGradientDefault from "LinearGradient" /* 5387 */;
+import ColorConstants from "ColorConstants" /* 7140 */;
+import PremiumGroupWordmarkDefault from "PremiumGroupWordmark" /* 9348 */;
+import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 13610 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ obj5 = { color: nativeDefault.colors.TEXT_DEFAULT, marginBottom: 16 };
 obj6 = { color: nativeDefault.colors.TEXT_DEFAULT };
 let closure_7 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BetaPill() {
   let betaPill;
   let betaText;
   let first;
@@ -78,7 +78,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[4] = tmp7;
   cResult[5] = tmp11;
   tmp10 = tmp11;
-}) : (() => {
+}) : (function BetaPill() {
   let Text;
   let intl;
   let obj2;
@@ -91,7 +91,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 let closure_8 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGroupFeaturesTableCard(style) {
   let bodyString;
   let items2;
   let items3;
@@ -183,7 +183,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
                 return tmp30;
               }
               const obj3 = { borderWidth: 2, direction: native.GradientBorder.Direction.HORIZONTAL, colors: Gradients.PREMIUM_TIER_2, borderRadius: nativeDefault.radii.sm, style, children: tmp27 };
-              const GradientBorder = tmp(1188).GradientBorder;
+              const GradientBorder = tmp(1200).GradientBorder;
               const tmp33 = hasOwnProperty(GradientBorder, obj3);
               cResult[19] = style;
               cResult[20] = tmp27;
@@ -216,7 +216,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     cResult[10] = tmp23;
     tmp21 = tmp23;
   }
-}) : ((arg0) => {
+}) : (function PremiumGroupFeaturesTableCard(arg0) {
   let bodyString;
   let items;
   let items1;

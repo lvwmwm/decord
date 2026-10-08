@@ -1,13 +1,13 @@
-// Module ID: 11818
-// Function ID: 11819
+// Module ID: 11903
+// Function ID: 11904
 // Name: AppLauncherMentionableListActionSheet
-// Dependencies: [32, 19, 1085, 21, 558, 576, 7043, 5628, 4860, 10615, 4892, 4728, 11819, 5708, 11820, 10667, 6000, 11803, 11805, 2]
+// Dependencies: [32, 19, 1085, 21, 558, 576, 7231, 5975, 5054, 10213, 5086, 4922, 11904, 6098, 11905, 10267, 6184, 11870, 11872, 2]
 
-// Module 11818 (AppLauncherMentionableListActionSheet)
+// Module 11903 (AppLauncherMentionableListActionSheet)
 import Constants from "Constants" /* 1085 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5628 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7043 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5975 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7231 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -15,15 +15,14 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let onMentionablePress;
 
 let metroImportDefault;
 let metroRequire;
 let RelationshipTypes = Constants.RelationshipTypes;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-const AppLauncherMentionableListActionSheet = "AppLauncherMentionableListActionSheet";
+const AppLauncherMentionableListActionSheet_str = "AppLauncherMentionableListActionSheet";
 const MentionableItemTypes = { USER: "user", ROLE: "role", GLOBAL: "global" };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMentionablePress) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherMentionableListActionSheet(onMentionablePress) {
   let channel;
   let closure_5;
   let first1;
@@ -66,29 +65,29 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMentionablePress
       }
       const effect = obj2.useEffect(tmp11, tmp12);
       if (cResult[6] !== onActionSheetDismiss) {
-        const fn2 = function _() {
+        function hideActionSheet() {
           const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet(AppLauncherMentionableListActionSheet);
+          obj.hideActionSheet(AppLauncherMentionableListActionSheet_str);
           onActionSheetDismiss();
-        };
+        }
         cResult[6] = onActionSheetDismiss;
-        cResult[7] = fn2;
-        tmp14 = fn2;
+        cResult[7] = hideActionSheet;
+        tmp14 = hideActionSheet;
       } else {
         tmp14 = cResult[7];
       }
       let closure_10 = tmp14;
       const _Symbol = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const fn3 = function w(str) {
+        function handleQueryUpdate(str) {
           closure_5(str.toLowerCase());
           const current = ref.current;
           if (current != null) {
             current.scrollToOffset({ offset: 0, animated: false });
           }
-        };
-        cResult[8] = fn3;
-        tmp15 = fn3;
+        }
+        cResult[8] = handleQueryUpdate;
+        tmp15 = handleQueryUpdate;
       } else {
         tmp15 = cResult[8];
       }
@@ -127,7 +126,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMentionablePress
                 }
                 let obj4 = { option, onDismiss: onActionSheetDismiss, children: items1 };
                 items1 = [tmp17, ];
-                class P {
+                class Item {
                   constructor(item) {
                     let Text;
                     let obj4;
@@ -196,7 +195,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMentionablePress
                 tmp25 = tmp27;
               }
             }
-            class P {
+            class Item {
               constructor(item) {
                 let Text;
                 let obj4;
@@ -271,7 +270,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMentionablePress
           }
         }
       }
-      class P {
+      class Item {
         constructor(item) {
           let Text;
           let obj4;
@@ -336,11 +335,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMentionablePress
       cResult[10] = tmp14;
       cResult[11] = first2.length;
       cResult[12] = onMentionablePress;
-      cResult[13] = P;
-      tmp16 = P;
+      cResult[13] = Item;
+      tmp16 = Item;
     }
   }
-  const fn = function x() {
+  const fn = function v() {
     let globals;
     let roles;
     const obj = ApplicationCommandUtils;
@@ -361,7 +360,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMentionablePress
   cResult[5] = items2;
   tmp12 = items2;
   tmp11 = fn;
-}) : ((channel) => {
+}) : (function AppLauncherMentionableListActionSheet(channel) {
   let items1;
   let onActionSheetDismiss;
   let tmp9Result;
@@ -398,7 +397,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMentionablePress
   let tmp9 = ref;
   const AppLauncherCommandOptionActionSheet = require("AppLauncherCommandOptionActionSheet").AppLauncherCommandOptionActionSheet;
   let obj2 = {
-    onChange(str) {
+    onChange: function handleQueryUpdate(str) {
       closure_5(str.toLowerCase());
       const current = ref.current;
       if (current != null) {
@@ -414,7 +413,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMentionablePress
     let obj3 = {
       ref,
       data: first1,
-      renderItem(item) {
+      renderItem: function Item(item) {
           let Text;
           let obj4;
           let obj8;
@@ -426,7 +425,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMentionablePress
               const obj = { mentionable: item };
               require(obj);
               const obj2 = ActionSheetActionCreatorsDefault;
-              obj2.hideActionSheet(AppLauncherMentionableListActionSheet);
+              obj2.hideActionSheet(AppLauncherMentionableListActionSheet_str);
               onActionSheetDismiss();
             },
             start: 0 === index,

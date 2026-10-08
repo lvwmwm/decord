@@ -1,28 +1,28 @@
-// Module ID: 15085
-// Function ID: 15086
+// Module ID: 15347
+// Function ID: 15348
 // Name: StreamOutputVolumeSetting
-// Dependencies: [4918, 502, 1999, 7645, 558, 576, 4951, 504, 38, 8079, 9673, 11142, 1126, 2]
+// Dependencies: [5893, 502, 2011, 7966, 558, 576, 5135, 504, 38, 5241, 10862, 11262, 1126, 2]
 
-// Module 15085 (StreamOutputVolumeSetting)
+// Module 15347 (StreamOutputVolumeSetting)
 import _modDef38 from "module_38" /* 38 */;
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4951 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 8079 */;
-import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 9673 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4918 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5135 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5241 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 10862 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5893 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStreamVolumeSettingValue() {
   let localVolume;
   let tmp4;
   let tmp5;
@@ -60,7 +60,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useStreamVolumeSettingValue() {
   let localVolume;
   const obj = get_initialized;
   let items = [ApplicationStreamingStore, AuthenticationStore, MediaEngineStore];
@@ -85,7 +85,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasStreamVolumeSetting() {
   let first;
   let tmp2 = dependencyMap;
   const obj = react;
@@ -117,7 +117,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return null != tmp2;
   }) && audioOutputPresent;
   return tmp7;
-}) : (() => {
+}) : (function useHasStreamVolumeSetting() {
   const obj = MobileAudioOutputExperimentDefault;
   const audioOutputPresent = obj.getConfig({ location: "StreamOutputVolumeSetting" }).audioOutputPresent;
   const obj2 = get_initialized;

@@ -1,18 +1,18 @@
-// Module ID: 13015
-// Function ID: 13016
+// Module ID: 13293
+// Function ID: 13294
 // Name: useHandleClaim
-// Dependencies: [5, 19, 558, 576, 7065, 4860, 10826, 4574, 1126, 2]
+// Dependencies: [5, 19, 558, 576, 7251, 5054, 11175, 4766, 1126, 2]
 
-// Module 13015 (useHandleClaim)
+// Module 13293 (useHandleClaim)
 import react2 from "react" /* 576 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c4, product;
+let c4;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleClaim(product) {
   let obj = react2;
   const cResult = obj.c(5);
   product = product.product;
@@ -110,14 +110,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
       }
     }
   });
-  const fn = function() {
+  function t1() {
     return closure_0(...arguments);
-  };
+  }
   cResult[0] = product;
   cResult[1] = stageCollectibleChangeForEditProfile;
-  cResult[2] = fn;
-  tmp2 = fn;
-}) : ((product) => {
+  cResult[2] = t1;
+  tmp2 = t1;
+}) : (function useHandleClaim(product) {
   let items;
   product = product.product;
   require = product;

@@ -1,18 +1,18 @@
-// Module ID: 1441
-// Function ID: 1442
+// Module ID: 1453
+// Function ID: 1454
 // Name: apex/ApexExperiment
-// Dependencies: [32, 502, 1246, 1442, 1265, 1375, 558, 576, 504, 2]
+// Dependencies: [32, 502, 1258, 1454, 1277, 1387, 558, 576, 504, 2]
 // Exports: default
 
-// Module 1441 (apex/ApexExperiment)
+// Module 1453 (apex/ApexExperiment)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import FingerprintUtils from "FingerprintUtils" /* 1265 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import discord_common_apex_ApexExperiment from "discord_common/apex/ApexExperiment" /* 1442 */;
+import FingerprintUtils from "FingerprintUtils" /* 1277 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import discord_common_apex_ApexExperiment from "discord_common/apex/ApexExperiment" /* 1454 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1258 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ function getUnitId(arg0, guildId) {
     obj.assertNever(arg0);
   }
 }
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, guildId) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUnitId(arg0, guildId) {
   let tmp4;
   let tmp5;
   const obj = react;
@@ -78,7 +78,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, guildId) 
     const tmpResult4 = GlobalUtils;
     tmpResult4.assertNever(arg0);
   }
-}) : ((arg0, guildId) => {
+}) : (function useUnitId(arg0, guildId) {
   let items = [AuthenticationStore];
   const obj = get_initialized;
   _slicedToArray(obj.useStateFromStoresArray(items, () => {

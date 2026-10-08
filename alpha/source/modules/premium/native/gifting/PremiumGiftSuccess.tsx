@@ -1,18 +1,18 @@
-// Module ID: 10821
-// Function ID: 10822
+// Module ID: 12773
+// Function ID: 12774
 // Name: PremiumGiftSuccess
-// Dependencies: [19, 17, 10409, 2048, 21, 4896, 587, 558, 576, 1618, 10443, 38, 10822, 10497, 10478, 504, 2037, 2036, 10823, 10824, 10825, 2]
+// Dependencies: [19, 17, 10006, 2060, 21, 5090, 587, 558, 576, 1630, 10040, 38, 12774, 10094, 10075, 504, 2049, 2048, 12775, 12776, 12777, 2]
 
-// Module 10821 (PremiumGiftSuccess)
+// Module 12773 (PremiumGiftSuccess)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2037 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import dismissible_content from "dismissible_content" /* 2048 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2049 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
 import react from "react" /* 19 */;
-import PromotionsStore from "PromotionsStore" /* 10409 */;
+import PromotionsStore from "PromotionsStore" /* 10006 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let closure_10 = createStyles.createStyles((arg0) => {
   const merged = Object.assign(nativeDefault.shadows.SHADOW_TOP_LOW);
   return obj;
 });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftSuccess() {
   let closure_1;
   let giftCodeRecord;
   let recipientUser;
@@ -59,7 +59,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const getOrFetchPurchase = obj3.useGetOrFetchPurchase(selectedGiftingPromotionReward, false);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [PromotionsStore];
-    class A {
+    class S {
       constructor() {
         giftPromotion = giftPromotion.getGiftPromotion();
         let id;
@@ -70,9 +70,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     cResult[0] = items;
-    cResult[1] = A;
+    cResult[1] = S;
     tmp11 = items;
-    tmp12 = A;
+    tmp12 = S;
   } else {
     [tmp11, tmp12] = cResult;
   }
@@ -88,7 +88,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         tmp16 = cResult[6];
       }
       const effect = react.useEffect(tmp15, tmp16);
-      class A {
+      class S {
         constructor() {
           giftPromotion = giftPromotion.getGiftPromotion();
           let id;
@@ -99,7 +99,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       if (null == recipientUser) {
-        class A {
+        class S {
           constructor() {
             giftPromotion = giftPromotion.getGiftPromotion();
             let id;
@@ -133,7 +133,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[6] = items1;
   tmp16 = items1;
   tmp15 = fn;
-}) : (() => {
+}) : (function PremiumGiftSuccess() {
   let closure_1;
   let giftCodeRecord;
   let items2;

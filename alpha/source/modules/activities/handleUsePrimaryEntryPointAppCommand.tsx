@@ -1,14 +1,14 @@
-// Module ID: 10959
-// Function ID: 10960
+// Module ID: 11125
+// Function ID: 11126
 // Name: handleUsePrimaryEntryPointAppCommand
-// Dependencies: [5, 2051, 1377, 9037, 9084, 9023, 10960, 9026, 2]
+// Dependencies: [5, 2063, 1389, 10650, 10667, 10622, 11126, 10635, 2]
 // Exports: default
 
-// Module 10959 (handleUsePrimaryEntryPointAppCommand)
-import getCachedOrFetchActivityApplicationForLaunchDefault from "getCachedOrFetchActivityApplicationForLaunch" /* 9037 */;
+// Module 11125 (handleUsePrimaryEntryPointAppCommand)
+import getCachedOrFetchActivityApplicationForLaunchDefault from "getCachedOrFetchActivityApplicationForLaunch" /* 10650 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import UserStore from "UserStore" /* 1377 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 let analyticsLocations, channelId, commandOrigin, componentId, customId, embeddedActivitiesManager, inviterUserId, locationObject, onConfirmActivityLaunchChecksAlertOpen, referrerId, sectionName, source;

@@ -1,17 +1,15 @@
-// Module ID: 6460
-// Function ID: 6461
+// Module ID: 6638
+// Function ID: 6639
 // Name: hooks/useStableCallback
 // Dependencies: [19, 558, 576, 2]
 
-// Module 6460 (hooks/useStableCallback)
+// Module 6638 (hooks/useStableCallback)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let cResult;
-
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStableCallback(cResult) {
   let tmp2;
   let tmp4;
   let closure_0 = cResult;
@@ -41,7 +39,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
     tmp4 = cResult[2];
   }
   return tmp4;
-}) : ((cResult) => {
+}) : (function useStableCallback(cResult) {
   let closure_0 = cResult;
   let closure_1 = react.useRef(cResult);
   const insertionEffect = react.useInsertionEffect(() => {

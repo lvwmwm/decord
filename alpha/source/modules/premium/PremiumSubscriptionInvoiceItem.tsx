@@ -1,10 +1,10 @@
-// Module ID: 4544
-// Function ID: 4545
+// Module ID: 4736
+// Function ID: 4737
 // Name: PremiumSubscriptionInvoiceItem
 // Dependencies: [12, 2]
 // Exports: coalesceInvoiceItems, createInvoiceItemFromServer
 
-// Module 4544 (PremiumSubscriptionInvoiceItem)
+// Module 4736 (PremiumSubscriptionInvoiceItem)
 import _modDef12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 15818
-// Function ID: 15819
+// Module ID: 16077
+// Function ID: 16078
 // Name: DefultGuildsRestrictedSetting
-// Dependencies: [558, 2028, 2]
+// Dependencies: [558, 2040, 2]
 
-// Module 15818 (DefultGuildsRestrictedSetting)
-import UserSettings from "UserSettings" /* 2028 */;
+// Module 16077 (DefultGuildsRestrictedSetting)
+import UserSettings from "UserSettings" /* 2040 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDefaultGuildsRestricted() {
   const DefaultGuildsRestricted = UserSettings.DefaultGuildsRestricted;
   const setting = DefaultGuildsRestricted.useSetting();
   const DefaultGuildsRestrictedV2 = UserSettings.DefaultGuildsRestrictedV2;
@@ -17,7 +17,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     setting1 = setting || setting;
   }
   return setting1;
-}) : (() => {
+}) : (function useDefaultGuildsRestricted() {
   const DefaultGuildsRestricted = UserSettings.DefaultGuildsRestricted;
   const setting = DefaultGuildsRestricted.useSetting();
   const DefaultGuildsRestrictedV2 = UserSettings.DefaultGuildsRestrictedV2;

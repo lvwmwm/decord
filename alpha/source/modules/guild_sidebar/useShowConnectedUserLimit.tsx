@@ -1,18 +1,18 @@
-// Module ID: 11936
-// Function ID: 11937
+// Module ID: 12009
+// Function ID: 12010
 // Name: useShowConnectedUserLimit
-// Dependencies: [1085, 558, 9340, 576, 2]
+// Dependencies: [1085, 558, 8762, 576, 2]
 
-// Module 11936 (useShowConnectedUserLimit)
+// Module 12009 (useShowConnectedUserLimit)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import useChannelVideoLimitDefault from "useChannelVideoLimit" /* 9340 */;
+import useChannelVideoLimitDefault from "useChannelVideoLimit" /* 8762 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = Constants.MAX_STAGE_VOICE_USER_LIMIT;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConnectedUserLimit(arg0) {
   let channel;
   let considerMaxStageVoiceUserLimit;
   let num2;
@@ -42,7 +42,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num2 = 0;
   }
   return num2;
-}) : ((arg0) => {
+}) : (function useConnectedUserLimit(arg0) {
   let channel;
   let considerMaxStageVoiceUserLimit;
   let num2;
@@ -77,7 +77,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_4 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConnectedUserLimitFormatted(arg0) {
   let channel;
   let userCount;
   let video;
@@ -156,7 +156,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = video;
   cResult[2] = obj2;
   tmp2 = obj2;
-}) : ((channel) => {
+}) : (function useConnectedUserLimitFormatted(channel) {
   const userCount = channel.userCount;
   const obj = { channel: channel.channel, video: channel.video };
   const obj2 = closure_4(obj);
@@ -212,7 +212,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowConnectedUserLimit(arg0) {
   let channel;
   let video;
   const obj = react;
@@ -231,7 +231,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = video;
   cResult[2] = obj2;
   tmp4 = obj2;
-}) : ((channel) => {
+}) : (function useShowConnectedUserLimit(channel) {
   let locked;
   let selected;
   const obj = { channel: channel.channel, video: channel.video };

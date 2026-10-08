@@ -1,33 +1,37 @@
-// Module ID: 12242
-// Function ID: 12243
+// Module ID: 12321
+// Function ID: 12322
 // Name: MarketingCardsScroller
-// Dependencies: [32, 19, 17, 4885, 21, 4896, 4733, 587, 558, 576, 504, 5777, 1126, 1370, 5916, 10112, 12012, 2]
+// Dependencies: [32, 109, 19, 17, 5079, 21, 5090, 4927, 587, 558, 576, 504, 5360, 1126, 1382, 6189, 9697, 12085, 2]
 
-// Module 12242 (MarketingCardsScroller)
+// Module 12321 (MarketingCardsScroller)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1370 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
+import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import ColorUtils_mod from "ColorUtils" /* 4733 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import ColorUtils_mod from "ColorUtils" /* 4927 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
+let closure_12, name;
+
 let ColorUtils;
-let c9;
-let hasOwnProperty;
+let c10;
 let items;
 let metroImportAll;
-let metroRequire;
+let metroImportDefault;
 let size;
-let react = react_mod;
-({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
-let AccessibilityStore = AccessibilityStore_mod;
-({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let unpackModuleId;
+let closure_3 = ["ref"];
+let _slicedToArray = _slicedToArray_mod;
+let _objectWithoutProperties = _objectWithoutProperties_mod;
+({ ScrollView: metroImportDefault, View: metroImportAll } = react_native);
+({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 const previous = "previous";
 const next = "next";
 let createStyles = createStyles_mod;
@@ -36,466 +40,577 @@ size = { alignItems: "center", backgroundColor: ColorUtils.hexWithOpacity(native
 createStyles = createStyles.createStyles;
 ColorUtils = ColorUtils_mod;
 items = [{ translateY: -22 }];
-let closure_12 = createStyles(obj);
-const forwardRef = react.forwardRef;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? (function(onScrollingChange, ref) {
+let closure_14 = createStyles(obj);
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarketingCardsScroller(arg0) {
   let cardMarginRight;
   let cardWidth;
   let children;
   let closure_7;
   let closure_8;
-  let closure_9;
   let contentContainerStyle;
+  let first;
   let initialIndex;
   let itemCount;
   let num;
-  let tmp12;
+  let ref;
+  let style;
+  let tmp11;
+  let tmp13;
   let tmp14;
+  let tmp15;
   let tmp = itemCount;
   let tmp2 = num;
-  let obj = itemCount(num[9]);
-  const cResult = obj.c(86);
-  ({ children, contentContainerStyle, initialIndex, itemCount } = onScrollingChange);
-  onScrollingChange = onScrollingChange.onScrollingChange;
+  let obj = itemCount(num[10]);
+  const cResult = obj.c(65);
+  let tmp4 = _objectWithoutProperties(arg0, ref);
+  ({ contentContainerStyle, initialIndex, itemCount } = tmp4);
+  const onScrollingChange = tmp4.onScrollingChange;
   num = 0;
-  ({ cardMarginRight, cardWidth } = onScrollingChange);
+  ({ cardMarginRight, cardWidth, children, style } = tmp4);
   if (undefined !== initialIndex) {
     num = initialIndex;
   }
-  let tmp4 = closure_12();
-  react.useRef(null);
+  const tmp5 = closure_14();
+  ref = first.useRef(null);
   const sum = cardWidth + cardMarginRight;
-  react = sum;
-  ref = react.useRef(Math.max(0, Math.min(itemCount - 1, num)) * sum);
-  if (cResult[0] === num) {
-    let tmp7;
-    let tmp16;
-    let tmp15;
-    if (cResult[1] === itemCount) {
-      tmp7 = cResult[2];
+  _slicedToArray = sum;
+  _objectWithoutProperties = first.useRef(Math.max(0, Math.min(itemCount - 1, num)) * sum);
+  [first, closure_7] = first.useState(() => Math.max(0, Math.min(itemCount - 1, num)));
+  [tmp11, closure_8] = first.useState(0);
+  _slicedToArray(first.useState(0), 2);
+  [tmp13, AccessibilityStore] = first.useState(0);
+  _slicedToArray(first.useState(0), 2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AccessibilityStore];
+    class C {
+      constructor() {
+        return AccessibilityStore.useReducedMotion;
+      }
     }
-    const tmp9 = ref(react.useState(tmp7), 2);
-    const first = tmp9[0];
-    AccessibilityStore = tmp9[1];
-    [tmp12, closure_8] = ref(react.useState(0), 2);
-    ref(react.useState(0), 2);
-    [tmp14, closure_9] = ref(react.useState(0), 2);
-    const _Symbol = Symbol;
-    let str = "react.memo_cache_sentinel";
-    ref(react.useState(0), 2);
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const items = [AccessibilityStore];
-      class L {
-        constructor() {
-          return closure_7.useReducedMotion;
-        }
-      }
-      cResult[3] = items;
-      cResult[4] = L;
-      tmp16 = L;
-      tmp15 = items;
-    } else {
-      tmp15 = cResult[3];
-      tmp16 = cResult[4];
+    cResult[0] = items;
+    cResult[1] = C;
+    tmp14 = items;
+    tmp15 = C;
+  } else {
+    [tmp14, tmp15] = cResult;
+  }
+  const tmpResult = tmp(tmp2[11]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp14, tmp15);
+  const ref2 = obj2.useRef(stateFromStores);
+  tmp(tmp2[12]);
+  if (cResult[2] === tmp11) {
+    let tmp20;
+    let tmp26;
+    if (cResult[3] === tmp13) {
+      tmp20 = cResult[4];
     }
-    const tmpResult = tmp(tmp2[10]);
-    const stateFromStores = tmpResult.useStateFromStores(tmp15, tmp16);
-    const ref2 = obj2.useRef(stateFromStores);
-    tmp(tmp2[11]);
-    if (cResult[5] === tmp12) {
-      let tmp20;
-      let tmp26;
-      if (cResult[6] === tmp14) {
-        tmp20 = cResult[7];
+    name = tmp20;
+    class C {
+      constructor() {
+        return AccessibilityStore.useReducedMotion;
       }
-      closure_12 = tmp20;
-      class L {
-        constructor() {
-          return closure_7.useReducedMotion;
-        }
+    }
+    closure_14 = tmp24;
+    if (cResult[5] === itemCount) {
+      let tmp25;
+      let tmp31;
+      let tmp30;
+      let tmp34;
+      let tmp33;
+      if (cResult[6] === sum) {
+        tmp25 = cResult[7];
       }
-      let closure_14 = tmp24;
-      if (cResult[8] === itemCount) {
-        let tmp32;
-        let tmp31;
-        let tmp35;
-        let tmp34;
-        if (cResult[13] !== stateFromStores) {
-          function ie() {
-            ref2.current = stateFromStores;
-          }
-          const items1 = [stateFromStores];
-          class L {
-            constructor() {
-              return closure_7.useReducedMotion;
-            }
-          }
-          cResult[13] = stateFromStores;
-          cResult[14] = ie;
-          cResult[15] = items1;
-          tmp32 = items1;
-          tmp31 = ie;
-        } else {
-          tmp31 = cResult[14];
-          tmp32 = cResult[15];
+      if (cResult[10] !== stateFromStores) {
+        function oe() {
+          ref2.current = stateFromStores;
         }
-        const effect = obj2.useEffect(tmp31, tmp32);
-        class L {
+        const items1 = [stateFromStores];
+        class C {
           constructor() {
-            return closure_7.useReducedMotion;
+            return AccessibilityStore.useReducedMotion;
           }
         }
-        if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-          function oe() {
-            const current = ref.current;
-            if (0 !== current) {
-              const current2 = ref.current;
-              if (current2 != null) {
-                const obj = { x: current, animated: false };
-                current2.scrollTo(obj);
-              }
+        cResult[10] = stateFromStores;
+        cResult[11] = oe;
+        cResult[12] = items1;
+        tmp31 = items1;
+        tmp30 = oe;
+      } else {
+        tmp30 = cResult[11];
+        tmp31 = cResult[12];
+      }
+      const effect = obj2.useEffect(tmp30, tmp31);
+      class C {
+        constructor() {
+          return AccessibilityStore.useReducedMotion;
+        }
+      }
+      if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+        function le() {
+          const current = ref.current;
+          if (0 !== current) {
+            const current2 = ref.current;
+            if (current2 != null) {
+              const obj = { x: current, animated: false };
+              current2.scrollTo(obj);
             }
           }
-          const items2 = [];
-          class L {
+        }
+        const items2 = [];
+        class C {
+          constructor() {
+            return AccessibilityStore.useReducedMotion;
+          }
+        }
+        cResult[14] = items2;
+        tmp34 = items2;
+        tmp33 = le;
+      } else {
+        tmp33 = cResult[13];
+        tmp34 = cResult[14];
+      }
+      const effect1 = obj2.useEffect(tmp33, tmp34);
+      if (cResult[15] === itemCount) {
+        let tmp36;
+        if (cResult[16] === sum) {
+          tmp36 = cResult[17];
+        }
+        const scrollToIndex = tmp36;
+        if (cResult[18] !== tmp36) {
+          function de() {
+            return { scrollToIndex };
+          }
+          const items3 = [tmp36];
+          class C {
             constructor() {
-              return closure_7.useReducedMotion;
+              return AccessibilityStore.useReducedMotion;
             }
           }
-          cResult[17] = items2;
-          tmp35 = items2;
-          tmp34 = oe;
-        } else {
-          tmp34 = cResult[16];
-          tmp35 = cResult[17];
+          cResult[18] = tmp36;
+          cResult[19] = de;
+          cResult[20] = items3;
         }
-        const effect1 = obj2.useEffect(tmp34, tmp35);
-        if (cResult[18] === itemCount) {
-          let tmp37;
-          let tmp39;
-          let tmp38;
-          if (cResult[19] === sum) {
-            tmp37 = cResult[20];
+        class C {
+          constructor() {
+            return AccessibilityStore.useReducedMotion;
           }
-          const scrollToIndex = tmp37;
-          if (cResult[21] !== tmp37) {
-            function ce() {
-              return { scrollToIndex };
-            }
-            const items3 = [tmp37];
-            class L {
-              constructor() {
-                return closure_7.useReducedMotion;
-              }
-            }
-            cResult[21] = tmp37;
-            cResult[22] = ce;
-            cResult[23] = items3;
-            tmp39 = items3;
-            tmp38 = ce;
-          } else {
-            tmp38 = cResult[22];
+        }
+        if (cResult[21] === (tmp20 && first < itemCount - 1)) {
+          let tmp39;
+          if (cResult[22] === (tmp20 && first > 0)) {
             tmp39 = cResult[23];
           }
-          class L {
-            constructor() {
-              return closure_7.useReducedMotion;
-            }
-          }
-          const imperativeHandle = obj2.useImperativeHandle(ref, tmp38, tmp39);
-          if (cResult[24] === (tmp20 && first < itemCount - 1)) {
-            if (cResult[29] === first) {
-              if (cResult[30] === (tmp20 && first > 0)) {
-                let tmp48;
-                if (cResult[31] === tmp37) {
-                  tmp48 = cResult[32];
-                }
-                let closure_16 = tmp48;
-                if (cResult[33] === first) {
-                  if (cResult[34] === (tmp20 && first < itemCount - 1)) {
-                    let tmp49;
-                    if (cResult[35] === tmp37) {
-                      tmp49 = cResult[36];
+          if (cResult[26] === first) {
+            if (cResult[27] === (tmp20 && first > 0)) {
+              let tmp44;
+              if (cResult[28] === tmp36) {
+                tmp44 = cResult[29];
+              }
+              let closure_16 = tmp44;
+              if (cResult[30] === first) {
+                if (cResult[31] === (tmp20 && first < itemCount - 1)) {
+                  let closure_17 = tmp45;
+                  if (cResult[34] === tmp45) {
+                    let tmp47;
+                    if (cResult[35] === tmp44) {
+                      tmp47 = cResult[36];
                     }
-                    let closure_17 = tmp49;
-                    if (cResult[37] === tmp49) {
-                      if (cResult[40] !== onScrollingChange) {
-                        function xe() {
-                          if (onScrollingChange != null) {
-                            tmp(true);
-                          }
-                        }
-                        cResult[40] = onScrollingChange;
-                        class L {
-                          constructor() {
-                            return closure_7.useReducedMotion;
-                          }
-                        }
-                        cResult[41] = xe;
+                    const _Symbol3 = Symbol;
+                    class C {
+                      constructor() {
+                        return AccessibilityStore.useReducedMotion;
                       }
-                      const _Symbol2 = Symbol;
-                      class L {
+                    }
+                    const _Symbol4 = Symbol;
+                    if (cResult[38] === Symbol.for("react.memo_cache_sentinel")) {
+                      function handleContentSizeChange(arg0) {
+                        closure_8(arg0);
+                      }
+                      cResult[38] = handleContentSizeChange;
+                      class C {
                         constructor() {
-                          return closure_7.useReducedMotion;
+                          return AccessibilityStore.useReducedMotion;
                         }
                       }
-                      if (tmp54 === Symbol.for("react.memo_cache_sentinel")) {
-                        class Ie {
-                          constructor(nativeEvent) {
-                            closure_9(nativeEvent.nativeEvent.layout.width);
-                          }
+                    }
+                    function handleScrollEnd(nativeEvent) {
+                      closure_7(Math.max(0, Math.min(itemCount - 1, Math.round(nativeEvent.nativeEvent.contentOffset.x / _slicedToArray))));
+                      const obj = utils_PlatformUtils;
+                      if (obj.isIOS()) {
+                        const velocity = nativeEvent.nativeEvent.velocity;
+                        let tmp3 = null == velocity;
+                        if (!tmp3) {
+                          tmp3 = 0 === velocity.x && 0 === velocity.y;
                         }
-                        cResult[42] = Ie;
-                        class L {
-                          constructor() {
-                            return closure_7.useReducedMotion;
-                          }
-                        }
-                      } else {
-                        class Ie {
-                          constructor(nativeEvent) {
-                            closure_9(nativeEvent.nativeEvent.layout.width);
+                        if (tmp3) {
+                          if (onScrollingChange != null) {
+                            tmp5(false);
                           }
                         }
                       }
-                      const _Symbol3 = Symbol;
-                      if (cResult[43] === Symbol.for("react.memo_cache_sentinel")) {
-                        class Re {
-                          constructor(arg0) {
-                            closure_8(arg0);
-                          }
-                        }
-                        cResult[43] = Re;
-                        class L {
-                          constructor() {
-                            return closure_7.useReducedMotion;
-                          }
-                        }
-                      } else {
-                        class Re {
-                          constructor(arg0) {
-                            closure_8(arg0);
-                          }
+                    }
+                    if (cResult[39] === first) {
+                      let tmp54;
+                      if (cResult[40] === tmp20) {
+                        tmp54 = cResult[41];
+                      }
+                      function handleScrollBeginDrag() {
+                        if (onScrollingChange != null) {
+                          tmp(true);
                         }
                       }
-                      if (cResult[44] === itemCount) {
-                        class Re {
-                          constructor(arg0) {
-                            closure_8(arg0);
-                          }
+                      function handleMomentumScrollEnd(arg0) {
+                        handleScrollEnd(arg0);
+                        if (onScrollingChange != null) {
+                          tmp2(false);
                         }
                       }
-                      class Pe {
-                        constructor(nativeEvent) {
-                          closure_7(Math.max(0, Math.min(itemCount - 1, Math.round(nativeEvent.nativeEvent.contentOffset.x / react))));
-                          const obj = utils_PlatformUtils;
-                          if (obj.isIOS()) {
-                            const velocity = nativeEvent.nativeEvent.velocity;
-                            let tmp3 = null == velocity;
-                            if (!tmp3) {
-                              tmp3 = 0 === velocity.x && 0 === velocity.y;
-                            }
-                            if (tmp3) {
-                              if (onScrollingChange != null) {
-                                tmp5(false);
+                      class C {
+                        constructor() {
+                          return AccessibilityStore.useReducedMotion;
+                        }
+                      }
+                      const mapped = arr7.map(children, tmp54);
+                      if (cResult[42] === closure_7) {
+                        if (cResult[43] === tmp39) {
+                          if (cResult[44] === contentContainerStyle) {
+                            if (cResult[45] === tmp47) {
+                              if (cResult[46] === tmp51) {
+                                if (cResult[47] === tmp50) {
+                                  if (cResult[48] === handleMomentumScrollEnd) {
+                                    if (cResult[49] === handleScrollBeginDrag) {
+                                      if (cResult[50] === handleScrollEnd) {
+                                        if (cResult[51] === tmp25) {
+                                          if (cResult[52] === (tmp20 && !tmp19)) {
+                                            let tmp56;
+                                            if (cResult[53] === mapped) {
+                                              tmp56 = cResult[54];
+                                            }
+                                            if (cResult[55] === (tmp20 && first > 0)) {
+                                              if (cResult[56] === tmp44) {
+                                                if (cResult[57] === tmp5.navigationButton) {
+                                                  let tmp59;
+                                                  if (cResult[58] === tmp5.navigationButtonPrevious) {
+                                                    tmp59 = cResult[59];
+                                                  }
+                                                  if (cResult[60] === (tmp20 && first < itemCount - 1)) {
+                                                    if (cResult[61] === tmp45) {
+                                                      if (cResult[62] === tmp5.navigationButton) {
+                                                        let tmp61;
+                                                        if (cResult[63] === tmp5.navigationButtonNext) {
+                                                          tmp61 = cResult[64];
+                                                        }
+                                                        class C {
+                                                          constructor() {
+                                                            return AccessibilityStore.useReducedMotion;
+                                                          }
+                                                        }
+                                                        const items4 = [style, tmp5.wrapper];
+                                                        tmp65[0] = items4;
+                                                        const items5 = [tmp56, tmp59, tmp61];
+                                                        class Me {
+                                                          constructor(children, arg1) {
+                                                            let str;
+                                                            let tmp4 = closure_12;
+                                                            const tmp = authStore;
+                                                            const tmp2 = metroImportAll;
+                                                            if (closure_12) {
+                                                              tmp4 = arg1 !== first;
+                                                            }
+                                                            const obj = { accessibilityElementsHidden: tmp4, importantForAccessibility: str, children };
+                                                            str = undefined;
+                                                            if (closure_12) {
+                                                              if (arg1 !== first) {
+                                                                str = "no-hide-descendants";
+                                                              }
+                                                            }
+                                                            return tmp(tmp2, obj);
+                                                          }
+                                                        }
+                                                        return ref2(closure_8, tmp65);
+                                                      }
+                                                    }
+                                                  }
+                                                  class C {
+                                                    constructor() {
+                                                      return AccessibilityStore.useReducedMotion;
+                                                    }
+                                                  }
+                                                  cResult[60] = tmp20 && first < itemCount - 1;
+                                                  cResult[61] = tmp45;
+                                                  cResult[62] = tmp5.navigationButton;
+                                                  cResult[63] = tmp5.navigationButtonNext;
+                                                  class Me {
+                                                    constructor(children, arg1) {
+                                                      let str;
+                                                      let tmp4 = closure_12;
+                                                      const tmp = authStore;
+                                                      const tmp2 = metroImportAll;
+                                                      if (closure_12) {
+                                                        tmp4 = arg1 !== first;
+                                                      }
+                                                      const obj = { accessibilityElementsHidden: tmp4, importantForAccessibility: str, children };
+                                                      str = undefined;
+                                                      if (closure_12) {
+                                                        if (arg1 !== first) {
+                                                          str = "no-hide-descendants";
+                                                        }
+                                                      }
+                                                      return tmp(tmp2, obj);
+                                                    }
+                                                  }
+                                                  cResult[64] = tmp20 && first < itemCount - 1;
+                                                  tmp61 = tmp62;
+                                                }
+                                              }
+                                            }
+                                            class C {
+                                              constructor() {
+                                                return AccessibilityStore.useReducedMotion;
+                                              }
+                                            }
+                                            cResult[55] = tmp20 && first > 0;
+                                            cResult[56] = tmp44;
+                                            cResult[57] = tmp5.navigationButton;
+                                            cResult[58] = tmp5.navigationButtonPrevious;
+                                            class Me {
+                                              constructor(children, arg1) {
+                                                let str;
+                                                let tmp4 = closure_12;
+                                                const tmp = authStore;
+                                                const tmp2 = metroImportAll;
+                                                if (closure_12) {
+                                                  tmp4 = arg1 !== first;
+                                                }
+                                                const obj = { accessibilityElementsHidden: tmp4, importantForAccessibility: str, children };
+                                                str = undefined;
+                                                if (closure_12) {
+                                                  if (arg1 !== first) {
+                                                    str = "no-hide-descendants";
+                                                  }
+                                                }
+                                                return tmp(tmp2, obj);
+                                              }
+                                            }
+                                            cResult[59] = tmp20 && first > 0;
+                                            tmp59 = tmp60;
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
                               }
                             }
                           }
                         }
                       }
-                      cResult[44] = itemCount;
-                      cResult[45] = sum;
-                      cResult[46] = onScrollingChange;
-                      cResult[47] = Pe;
+                      const obj3 = { accessibilityActions: tmp39, centerContent: true, contentContainerStyle, decelerationRate: 0.1, horizontal: true, onAccessibilityAction: tmp47, onContentSizeChange: tmp51, onLayout: null, onMomentumScrollEnd: handleMomentumScrollEnd, onScrollBeginDrag: handleScrollBeginDrag, onScrollEndDrag: handleScrollEnd, ref, scrollEnabled: tmp20 && !tmp19, snapToOffsets: tmp25, children: mapped };
+                      class Me {
+                        constructor(children, arg1) {
+                          let str;
+                          let tmp4 = closure_12;
+                          const tmp = authStore;
+                          const tmp2 = metroImportAll;
+                          if (closure_12) {
+                            tmp4 = arg1 !== first;
+                          }
+                          const obj = { accessibilityElementsHidden: tmp4, importantForAccessibility: str, children };
+                          str = undefined;
+                          if (closure_12) {
+                            if (arg1 !== first) {
+                              str = "no-hide-descendants";
+                            }
+                          }
+                          return tmp(tmp2, obj);
+                        }
+                      }
+                      const tmp58 = stateFromStores(closure_7, obj3);
+                      cResult[42] = closure_7;
+                      cResult[43] = tmp39;
+                      cResult[44] = contentContainerStyle;
+                      cResult[45] = tmp47;
+                      cResult[46] = tmp51;
+                      cResult[47] = tmp50;
+                      cResult[48] = handleMomentumScrollEnd;
+                      cResult[49] = handleScrollBeginDrag;
+                      cResult[50] = handleScrollEnd;
+                      cResult[51] = tmp25;
+                      cResult[52] = tmp20 && !tmp19;
+                      cResult[53] = mapped;
+                      cResult[54] = tmp58;
+                      tmp56 = tmp58;
                     }
-                    class L {
-                      constructor() {
-                        return closure_7.useReducedMotion;
+                    class Me {
+                      constructor(children, arg1) {
+                        let str;
+                        let tmp4 = closure_12;
+                        const tmp = authStore;
+                        const tmp2 = metroImportAll;
+                        if (closure_12) {
+                          tmp4 = arg1 !== first;
+                        }
+                        const obj = { accessibilityElementsHidden: tmp4, importantForAccessibility: str, children };
+                        str = undefined;
+                        if (closure_12) {
+                          if (arg1 !== first) {
+                            str = "no-hide-descendants";
+                          }
+                        }
+                        return tmp(tmp2, obj);
                       }
                     }
-                    cResult[37] = tmp49;
-                    cResult[38] = tmp48;
+                    cResult[39] = first;
+                    cResult[40] = tmp20;
+                    cResult[41] = Me;
+                    tmp54 = Me;
                   }
-                }
-                class L {
-                  constructor() {
-                    return closure_7.useReducedMotion;
+                  class C {
+                    constructor() {
+                      return AccessibilityStore.useReducedMotion;
+                    }
                   }
-                }
-                cResult[33] = first;
-                cResult[34] = tmp20 && first < itemCount - 1;
-                cResult[36] = tmp50;
-                tmp49 = tmp50;
-              }
-            }
-            function me() {
-              const tmp = closure_1_13;
-              if (tmp) {
-                scrollToIndex(first - 1);
-              }
-            }
-            class L {
-              constructor() {
-                return closure_7.useReducedMotion;
-              }
-            }
-            cResult[29] = first;
-            cResult[30] = tmp20 && first > 0;
-            cResult[31] = tmp37;
-            cResult[32] = me;
-            tmp48 = me;
-          }
-          const items4 = [];
-          if (tmp20 && first > 0) {
-            class Re {
-              constructor(arg0) {
-                closure_8(arg0);
-              }
-            }
-            if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
-              class Re {
-                constructor(arg0) {
-                  closure_8(arg0);
+                  cResult[34] = tmp45;
+                  cResult[35] = tmp44;
+                  cResult[36] = tmp48;
+                  tmp47 = tmp48;
                 }
               }
-              tmp43[0] = stateFromStores;
-              class L {
+              class C {
                 constructor() {
-                  return closure_7.useReducedMotion;
+                  return AccessibilityStore.useReducedMotion;
                 }
               }
-              tmp43[1] = obj5.string(tmp(tmp2[12]).t.vgfxaA);
-              cResult[27] = tmp43;
-            } else {
-              class Re {
-                constructor(arg0) {
-                  closure_8(arg0);
-                }
-              }
-            }
-            class L {
-              constructor() {
-                return closure_7.useReducedMotion;
-              }
+              cResult[30] = first;
+              cResult[31] = tmp20 && first < itemCount - 1;
+              cResult[32] = tmp36;
+              cResult[33] = tmp46;
             }
           }
-          if (tmp20 && first < itemCount - 1) {
-            class Re {
-              constructor(arg0) {
-                closure_8(arg0);
-              }
-            }
-            if (cResult[28] === Symbol.for("react.memo_cache_sentinel")) {
-              class Re {
-                constructor(arg0) {
-                  closure_8(arg0);
-                }
-              }
-              tmp46[0] = ref2;
-              class L {
-                constructor() {
-                  return closure_7.useReducedMotion;
-                }
-              }
-              tmp46[1] = obj6.string(tmp(tmp2[12]).t.XiOHRX);
-              cResult[28] = tmp46;
-            } else {
-              class Re {
-                constructor(arg0) {
-                  closure_8(arg0);
-                }
-              }
-            }
-            class L {
-              constructor() {
-                return closure_7.useReducedMotion;
-              }
+          function handleNavigatePrevious() {
+            const tmp = next;
+            if (tmp) {
+              scrollToIndex(first - 1);
             }
           }
-          cResult[24] = tmp20 && first < itemCount - 1;
-          cResult[25] = tmp20 && first > 0;
-          cResult[26] = items4;
+          class C {
+            constructor() {
+              return AccessibilityStore.useReducedMotion;
+            }
+          }
+          cResult[26] = first;
+          cResult[27] = tmp20 && first > 0;
+          cResult[28] = tmp36;
+          cResult[29] = handleNavigatePrevious;
+          tmp44 = handleNavigatePrevious;
         }
-        function le(arg0) {
-          const bound = Math.max(0, Math.min(itemCount - 1, arg0));
-          closure_7(bound);
-          const current = ref.current;
-          if (current != null) {
-            const obj = { x: bound * react, animated: !ref2.current };
-            current.scrollTo(obj);
+        const items6 = [];
+        if (tmp20 && first > 0) {
+          const _Symbol = Symbol;
+          if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
+            const obj5 = { name, label: obj6.string(tmp(tmp2[13]).t.vgfxaA) };
+            class C {
+              constructor() {
+                return AccessibilityStore.useReducedMotion;
+              }
+            }
+            cResult[24] = obj5;
+          }
+          class C {
+            constructor() {
+              return AccessibilityStore.useReducedMotion;
+            }
           }
         }
-        cResult[18] = itemCount;
-        cResult[19] = sum;
-        cResult[20] = le;
-        tmp37 = le;
+        if (tmp20 && first < itemCount - 1) {
+          const _Symbol2 = Symbol;
+          if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
+            const obj7 = { name: next, label: obj8.string(tmp(tmp2[13]).t.XiOHRX) };
+            class C {
+              constructor() {
+                return AccessibilityStore.useReducedMotion;
+              }
+            }
+            cResult[25] = obj7;
+          }
+          class C {
+            constructor() {
+              return AccessibilityStore.useReducedMotion;
+            }
+          }
+        }
+        cResult[21] = tmp20 && first < itemCount - 1;
+        cResult[22] = tmp20 && first > 0;
+        cResult[23] = items6;
+        tmp39 = items6;
       }
-      if (cResult[11] !== sum) {
-        class Re {
-          constructor(arg0) {
-            closure_8(arg0);
-          }
-        }
-        cResult[11] = sum;
-        class L {
-          constructor() {
-            return closure_7.useReducedMotion;
-          }
-        }
-        cResult[12] = tmp27;
-        tmp26 = tmp27;
-      } else {
-        class Re {
-          constructor(arg0) {
-            closure_8(arg0);
-          }
+      function ce(arg0) {
+        const bound = Math.max(0, Math.min(itemCount - 1, arg0));
+        closure_7(bound);
+        const current = ref.current;
+        if (current != null) {
+          const obj = { x: bound * _slicedToArray, animated: !ref2.current };
+          current.scrollTo(obj);
         }
       }
-      const _Array = Array;
-      const self = this;
-      const array = new Array(itemCount);
-      const fillResult = array.fill(0);
-      const mapped = fillResult.map(tmp26);
-      cResult[8] = itemCount;
-      cResult[9] = sum;
-      cResult[10] = mapped;
+      cResult[15] = itemCount;
+      cResult[17] = ce;
+      tmp36 = ce;
     }
-    if (tmp14 > 0) {
-      class Re {
-        constructor(arg0) {
-          closure_8(arg0);
-        }
+    if (cResult[8] !== sum) {
+      function ne(arg0, arg1) {
+        return arg1 * _slicedToArray;
       }
-      const _Math = Math;
-      const rounded = Math.round(tmp12);
-      class L {
+      cResult[8] = sum;
+      class C {
         constructor() {
-          return closure_7.useReducedMotion;
+          return AccessibilityStore.useReducedMotion;
         }
       }
+      cResult[9] = ne;
+      tmp26 = ne;
+    } else {
+      tmp26 = cResult[9];
     }
-    cResult[5] = tmp12;
-    cResult[6] = tmp14;
-    cResult[7] = tmp14 > 0;
-    tmp20 = tmp21;
+    const _Array = Array;
+    const self = this;
+    const self2 = this;
+    const fillResult = obj4.fill(0);
+    const mapped1 = fillResult.map(tmp26);
+    cResult[5] = itemCount;
+    cResult[6] = sum;
+    cResult[7] = mapped1;
+    tmp25 = mapped1;
   }
-  const fn = function p() {
-    return Math.max(0, Math.min(itemCount - 1, num));
-  };
-  cResult[0] = num;
-  cResult[1] = itemCount;
-  cResult[2] = fn;
-  tmp7 = fn;
-}) : ((initialIndex, ref) => {
+  if (tmp13 > 0) {
+    const _Math = Math;
+    const _Math2 = Math;
+    const rounded = Math.round(tmp11);
+    class C {
+      constructor() {
+        return AccessibilityStore.useReducedMotion;
+      }
+    }
+  }
+  cResult[2] = tmp11;
+  cResult[3] = tmp13;
+  cResult[4] = tmp13 > 0;
+  tmp20 = tmp21;
+}) : (function MarketingCardsScroller(ref) {
   let ChevronLargeLeftIcon;
   let ChevronLargeRightIcon;
   let Children;
+  let _undefined;
+  let _undefined2;
+  let c4;
+  let c8;
+  let c9;
   let cardMarginRight;
   let cardWidth;
   let children;
-  let closure_8;
-  let closure_9;
+  let closure_7;
   let contentContainerStyle;
+  let first;
   let intl;
   let intl2;
   let items6;
@@ -504,10 +619,27 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let items9;
   let obj7;
   let obj9;
-  let tmp7;
-  let tmp9;
+  let tmp10;
+  let tmp8;
+  ref = ref.ref;
+  const merged = Object.assign(ref, Object.assign({ ref: 0 }));
+  let itemCount;
+  let onScrollingChange;
+  let ref1;
+  _slicedToArray = undefined;
+  ref = undefined;
+  first = undefined;
+  closure_7 = undefined;
+  c8 = undefined;
+  c9 = undefined;
+  let stateFromStores;
+  let ref2;
+  closure_12 = undefined;
+  let closure_13;
+  closure_14 = undefined;
+  let scrollToIndex;
   function handleScrollEnd(nativeEvent) {
-    closure_7(Math.max(0, Math.min(itemCount - 1, Math.round(nativeEvent.nativeEvent.contentOffset.x / react))));
+    closure_7(Math.max(0, Math.min(itemCount - 1, Math.round(nativeEvent.nativeEvent.contentOffset.x / c4))));
     const obj = utils_PlatformUtils;
     if (obj.isIOS()) {
       const velocity = nativeEvent.nativeEvent.velocity;
@@ -522,46 +654,44 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       }
     }
   }
-  initialIndex = initialIndex.initialIndex;
+  const initialIndex = merged.initialIndex;
   let num = 0;
-  ({ cardMarginRight, cardWidth, children, contentContainerStyle } = initialIndex);
+  ({ cardMarginRight, cardWidth, children, contentContainerStyle } = merged);
   if (undefined !== initialIndex) {
     num = initialIndex;
   }
-  const itemCount = initialIndex.itemCount;
-  const onScrollingChange = initialIndex.onScrollingChange;
-  const style = initialIndex.style;
-  let tmp = closure_12();
-  let obj = react;
-  react.useRef(null);
+  itemCount = merged.itemCount;
+  onScrollingChange = merged.onScrollingChange;
+  const style = merged.style;
+  let tmp2 = closure_14();
+  let obj = first;
+  ref1 = first.useRef(null);
   const sum = cardWidth + cardMarginRight;
-  react = sum;
-  ref = react.useRef(Math.max(0, Math.min(itemCount - 1, num)) * sum);
-  let tmp4 = ref(react.useState(() => Math.max(0, Math.min(itemCount - 1, num))), 2);
-  const first = tmp4[0];
-  let closure_7 = tmp4[1];
-  let tmp6 = ref(react.useState(0), 2);
-  [tmp7, closure_8] = tmp6;
-  let tmp8 = ref(react.useState(0), 2);
-  [tmp9, closure_9] = tmp8;
-  let obj2 = num(onScrollingChange[10]);
-  let items = [closure_7];
-  const stateFromStores = obj2.useStateFromStores(items, () => closure_7.useReducedMotion);
-  const ref2 = react.useRef(stateFromStores);
-  let tmp14 = tmp9 > 0;
-  const obj3 = num(onScrollingChange[11]);
+  _slicedToArray = sum;
+  ref = first.useRef(Math.max(0, Math.min(itemCount - 1, num)) * sum);
+  [first, closure_7] = first.useState(() => Math.max(0, Math.min(itemCount - 1, num)));
+  [tmp8, c8] = _slicedToArray(first.useState(0), 2);
+  const tmp7 = _slicedToArray(first.useState(0), 2);
+  [tmp10, c9] = _slicedToArray(first.useState(0), 2);
+  const tmp9 = _slicedToArray(first.useState(0), 2);
+  let obj2 = num(onScrollingChange[11]);
+  let items = [c9];
+  stateFromStores = obj2.useStateFromStores(items, () => _undefined2.useReducedMotion);
+  ref2 = first.useRef(stateFromStores);
+  let tmp15 = tmp10 > 0;
+  const obj3 = num(onScrollingChange[12]);
   const isScreenReaderEnabled = obj3.useIsScreenReaderEnabled();
-  if (tmp14) {
+  if (tmp15) {
     const _Math = Math;
     const _Math2 = Math;
-    const rounded = Math.round(tmp7);
-    tmp14 = rounded > Math.round(tmp9);
+    const rounded = Math.round(tmp8);
+    tmp15 = rounded > Math.round(tmp10);
   }
-  closure_12 = tmp14;
-  let tmp25Result = tmp14 && first > 0;
-  let closure_13 = tmp25Result;
-  let tmp25Result2 = tmp14 && first < itemCount - 1;
-  let closure_14 = tmp25Result2;
+  closure_12 = tmp15;
+  let tmp26Result = tmp15 && first > 0;
+  closure_13 = tmp26Result;
+  let tmp26Result2 = tmp15 && first < itemCount - 1;
+  closure_14 = tmp26Result2;
   const items1 = [itemCount, sum];
   const items2 = [stateFromStores];
   const memo = obj.useMemo(() => {
@@ -575,7 +705,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   const effect1 = obj.useEffect(() => {
     const current = ref.current;
     if (0 !== current) {
-      const current2 = ref.current;
+      const current2 = ref1.current;
       if (current2 != null) {
         const obj = { x: current, animated: false };
         current2.scrollTo(obj);
@@ -583,20 +713,20 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     }
   }, []);
   const items3 = [itemCount, sum];
-  const scrollToIndex = obj.useCallback((arg0) => {
+  scrollToIndex = obj.useCallback((arg0) => {
     const bound = Math.max(0, Math.min(itemCount - 1, arg0));
     closure_7(bound);
-    const current = ref.current;
+    const current = ref1.current;
     if (current != null) {
-      const obj = { x: bound * react, animated: !ref2.current };
+      const obj = { x: bound * c4, animated: !ref2.current };
       current.scrollTo(obj);
     }
   }, items3);
   const items4 = [scrollToIndex];
   const imperativeHandle = obj.useImperativeHandle(ref, () => ({ scrollToIndex }), items4);
-  const items5 = [tmp25Result2, tmp25Result];
+  const items5 = [tmp26Result2, tmp26Result];
   const obj4 = { style: items6, children: items7 };
-  items6 = [style, tmp.wrapper];
+  items6 = [style, tmp2.wrapper];
   const obj5 = {
     accessibilityActions: obj.useMemo(() => {
       let intl;
@@ -622,7 +752,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     contentContainerStyle,
     decelerationRate: 0.1,
     horizontal: true,
-    onAccessibilityAction(nativeEvent) {
+    onAccessibilityAction: function handleAccessibilityAction(nativeEvent) {
       const actionName = nativeEvent.nativeEvent.actionName;
       if (previous === actionName) {
         const tmp6 = closure_13;
@@ -636,32 +766,32 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
         }
       }
     },
-    onContentSizeChange(arg0) {
-      closure_8(arg0);
+    onContentSizeChange: function handleContentSizeChange(arg0) {
+      _undefined(arg0);
     },
-    onLayout(nativeEvent) {
-      closure_9(nativeEvent.nativeEvent.layout.width);
+    onLayout: function handleLayout(nativeEvent) {
+      _undefined2(nativeEvent.nativeEvent.layout.width);
     },
-    onMomentumScrollEnd(nativeEvent) {
-      handleScrollEnd(nativeEvent);
+    onMomentumScrollEnd: function handleMomentumScrollEnd(arg0) {
+      handleScrollEnd(arg0);
       if (onScrollingChange != null) {
         tmp2(false);
       }
     },
-    onScrollBeginDrag() {
+    onScrollBeginDrag: function handleScrollBeginDrag() {
       if (onScrollingChange != null) {
         tmp(true);
       }
     },
     onScrollEndDrag: handleScrollEnd,
-    ref,
-    scrollEnabled: tmp14,
+    ref: ref1,
+    scrollEnabled: tmp15,
     snapToOffsets: memo,
     children: Children.map(children, (children, arg1) => {
       let str;
       let tmp4 = closure_12;
-      const tmp = metroImportAll;
-      const tmp2 = metroRequire;
+      const tmp = authStore;
+      const tmp2 = metroImportAll;
       if (closure_12) {
         tmp4 = arg1 !== first;
       }
@@ -675,51 +805,51 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       return tmp(tmp2, obj);
     })
   };
-  const tmp23 = closure_9;
-  const tmp24 = first;
-  const tmp26 = ref;
-  if (tmp14) {
-    tmp14 = !isScreenReaderEnabled;
+  const tmp24 = ref2;
+  const tmp25 = c8;
+  const tmp27 = closure_7;
+  if (tmp15) {
+    tmp15 = !isScreenReaderEnabled;
   }
   Children = obj.Children;
-  items7 = [closure_8(tmp26, obj5), , ];
-  if (tmp25Result) {
+  items7 = [stateFromStores(tmp27, obj5), , ];
+  if (tmp26Result) {
     function handleNavigatePrevious() {
       const tmp = closure_13;
       if (tmp) {
         callback(first - 1);
       }
     }
-    const obj6 = { accessibilityLabel: intl.string(num(onScrollingChange[12]).t.vgfxaA), accessibilityRole: "button", onPress: handleNavigatePrevious, style: items8, children: closure_8(ChevronLargeLeftIcon, obj7) };
-    const PressableOpacity = tmp10(tmp11[14]).PressableOpacity;
-    intl = tmp10(tmp11[12]).intl;
+    const obj6 = { accessibilityLabel: intl.string(num(onScrollingChange[13]).t.vgfxaA), accessibilityRole: "button", onPress: handleNavigatePrevious, style: items8, children: stateFromStores(ChevronLargeLeftIcon, obj7) };
+    const PressableOpacity = tmp11(tmp12[15]).PressableOpacity;
+    intl = tmp11(tmp12[13]).intl;
     items8 = [, ];
-    ({ navigationButton: arr10[0], navigationButtonPrevious: arr10[1] } = tmp);
-    obj7 = { color: itemCount(onScrollingChange[7]).colors.WHITE, size: "sm" };
-    ChevronLargeLeftIcon = tmp10(tmp11[15]).ChevronLargeLeftIcon;
-    tmp25Result = tmp25(PressableOpacity, obj6);
+    ({ navigationButton: arr10[0], navigationButtonPrevious: arr10[1] } = tmp2);
+    obj7 = { color: itemCount(onScrollingChange[8]).colors.WHITE, size: "sm" };
+    ChevronLargeLeftIcon = tmp11(tmp12[16]).ChevronLargeLeftIcon;
+    tmp26Result = tmp26(PressableOpacity, obj6);
   }
-  items7[1] = tmp25Result;
-  if (tmp25Result2) {
+  items7[1] = tmp26Result;
+  if (tmp26Result2) {
     function handleNavigateNext() {
       const tmp = closure_14;
       if (tmp) {
         callback(first + 1);
       }
     }
-    const obj8 = { accessibilityLabel: intl2.string(num(onScrollingChange[12]).t.XiOHRX), accessibilityRole: "button", onPress: handleNavigateNext, style: items9, children: closure_8(ChevronLargeRightIcon, obj9) };
-    const PressableOpacity2 = tmp10(tmp11[14]).PressableOpacity;
-    intl2 = tmp10(tmp11[12]).intl;
+    const obj8 = { accessibilityLabel: intl2.string(num(onScrollingChange[13]).t.XiOHRX), accessibilityRole: "button", onPress: handleNavigateNext, style: items9, children: stateFromStores(ChevronLargeRightIcon, obj9) };
+    const PressableOpacity2 = tmp11(tmp12[15]).PressableOpacity;
+    intl2 = tmp11(tmp12[13]).intl;
     items9 = [, ];
-    ({ navigationButton: arr11[0], navigationButtonNext: arr11[1] } = tmp);
-    obj9 = { color: itemCount(onScrollingChange[7]).colors.WHITE, size: "sm" };
-    ChevronLargeRightIcon = tmp10(tmp11[16]).ChevronLargeRightIcon;
-    tmp25Result2 = tmp25(PressableOpacity2, obj8);
+    ({ navigationButton: arr11[0], navigationButtonNext: arr11[1] } = tmp2);
+    obj9 = { color: itemCount(onScrollingChange[8]).colors.WHITE, size: "sm" };
+    ChevronLargeRightIcon = tmp11(tmp12[17]).ChevronLargeRightIcon;
+    tmp26Result2 = tmp26(PressableOpacity2, obj8);
   }
-  items7[2] = tmp25Result2;
-  return tmp23(tmp24, obj4);
-}));
+  items7[2] = tmp26Result2;
+  return tmp24(tmp25, obj4);
+});
 size = size_mod;
 const result = size.fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/MarketingCardsScroller.tsx");
 
-export const MarketingCardsScroller = forwardRefResult;
+export const MarketingCardsScroller = tmp5;

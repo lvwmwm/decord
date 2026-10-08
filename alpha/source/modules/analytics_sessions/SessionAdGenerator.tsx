@@ -1,15 +1,15 @@
-// Module ID: 7218
-// Function ID: 7219
+// Module ID: 7398
+// Function ID: 7399
 // Name: SessionAdGenerator
-// Dependencies: [1102, 1266, 6993, 584, 1242, 2]
+// Dependencies: [1102, 1278, 7182, 584, 1254, 2]
 // Exports: clearAdSession, getCurrentAdSession, getOrRefreshAdSession, isAdSessionExpired
 
-// Module 7218 (SessionAdGenerator)
+// Module 7398 (SessionAdGenerator)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import v1 from "v1" /* 1266 */;
-import SessionUtils from "SessionUtils" /* 6993 */;
+import SentryUtilsDefault from "SentryUtils" /* 1254 */;
+import v1 from "v1" /* 1278 */;
+import SessionUtils from "SessionUtils" /* 7182 */;
 import size from "module_2" /* 2 */;
 
 let _null;

@@ -1,28 +1,28 @@
-// Module ID: 18000
-// Function ID: 18001
+// Module ID: 18287
+// Function ID: 18288
 // Name: GuildRoleSubscriptionEmojiEditorModal
-// Dependencies: [5, 32, 19, 17, 5646, 21, 4896, 587, 558, 576, 17991, 504, 5714, 1126, 5790, 5981, 1402, 8924, 17986, 4892, 17997, 2]
+// Dependencies: [5, 32, 19, 17, 5993, 21, 5090, 587, 558, 576, 18278, 504, 5297, 1126, 5394, 6164, 1414, 8555, 18273, 5086, 18284, 2]
 
-// Module 18000 (GuildRoleSubscriptionEmojiEditorModal)
+// Module 18287 (GuildRoleSubscriptionEmojiEditorModal)
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5714 */;
-import AlertDefault from "Alert" /* 5790 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import EmojiAliasDefault from "EmojiAlias" /* 17986 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5297 */;
+import AlertDefault from "Alert" /* 5394 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import EmojiAliasDefault from "EmojiAlias" /* 18273 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SubscriptionRoleStore_mod from "SubscriptionRoleStore" /* 5646 */;
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5993 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c1, c4, guildId, roles, set;
+let c1, c4, roles, set;
 
 let c10;
 let c9;
@@ -34,7 +34,6 @@ let unpackModuleId;
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ View: metroRequire, SectionList: metroImportDefault } = react_native);
-let SubscriptionRoleStore = SubscriptionRoleStore_mod;
 ({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, emojiList: obj3, row: { alignItems: "flex-start", paddingTop: 16, paddingBottom: 14 }, emojiImage: { width: 24, height: 24, marginBottom: 2 }, emojiAlias: { marginBottom: 2 } };
@@ -42,7 +41,7 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, display: "fl
 createStyles = createStyles.createStyles;
 obj3 = { flexGrow: 0, marginVertical: 24, marginHorizontal: 16, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_12 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionEmojiEditorModal(guildId) {
   let closure_7;
   let emojiImage;
   let first;
@@ -50,7 +49,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let listingId;
   let onClose;
   let onConfirm;
-  let tmp8;
+  let tmp12;
+  let tmp7;
   let tmp = guildId;
   const tmp2 = onClose;
   let obj = guildId(onClose[9]);
@@ -62,44 +62,93 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const initialTierEmojiIds = guildId.initialTierEmojiIds;
   const tmp4 = closure_12();
   _slicedToArray = tmp4;
-  subscriptionRoleId(onClose[10])(guildId);
+  const arr = subscriptionRoleId(onClose[10])(guildId);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SubscriptionRoleStore];
+    const items = [set];
     cResult[0] = items;
     first = items;
   } else {
     first = cResult[0];
   }
   if (cResult[1] !== guildId) {
-    class S {
-      constructor() {
-        return SubscriptionRoleStore.getSubscriptionRoles(guildId);
-      }
-    }
+    const fn = function v() {
+      return SubscriptionRoleStore.getSubscriptionRoles(guildId);
+    };
     cResult[1] = guildId;
-    cResult[2] = S;
-    tmp8 = S;
+    cResult[2] = fn;
+    tmp7 = fn;
   } else {
-    class S {
-      constructor() {
-        return SubscriptionRoleStore.getSubscriptionRoles(guildId);
-      }
-    }
+    tmp7 = cResult[2];
   }
   let tmpResult = tmp(tmp2[11]);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp8);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
   [first1, closure_7] = stateFromStores.useState(initialTierEmojiIds);
   if (null != subscriptionRoleId) {
-    class S {
-      constructor() {
-        return SubscriptionRoleStore.getSubscriptionRoles(guildId);
+    let tmp13;
+    if (cResult[4] === stateFromStores) {
+      if (cResult[5] === arr) {
+        if (cResult[6] === subscriptionRoleId) {
+          if (cResult[7] === first1) {
+            tmp13 = cResult[8];
+          }
+          tmp12 = tmp13;
+        }
       }
     }
     if (cResult[9] === stateFromStores) {
-      class S {
-        constructor() {
-          return SubscriptionRoleStore.getSubscriptionRoles(guildId);
+      if (cResult[10] === subscriptionRoleId) {
+        let tmp14;
+        let tmp15;
+        if (cResult[11] === first1) {
+          tmp14 = cResult[12];
         }
+        const found = arr.filter(tmp14);
+        class D {
+          constructor(arg0) {
+            closure_0 = guildId;
+            roles = guildId.roles;
+            return 0 === roles.filter((item) => {
+              const tmp = item === subscriptionRoleId && !first1.has(roles.id);
+              const hasItem = !tmp && stateFromStores.has(item);
+              return hasItem;
+            }).length;
+          }
+        }
+        if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+          class G {
+            constructor(id) {
+              return id.id;
+            }
+          }
+          class D {
+            constructor(arg0) {
+              closure_0 = guildId;
+              roles = guildId.roles;
+              return 0 === roles.filter((item) => {
+                const tmp = item === subscriptionRoleId && !first1.has(roles.id);
+                const hasItem = !tmp && stateFromStores.has(item);
+                return hasItem;
+              }).length;
+            }
+          }
+          tmp15 = G;
+        } else {
+          class G {
+            constructor(id) {
+              return id.id;
+            }
+          }
+        }
+        const _Set = Set;
+        const self = this;
+        const self2 = this;
+        set = new Set(found.map(tmp15));
+        cResult[4] = stateFromStores;
+        cResult[5] = arr;
+        cResult[6] = subscriptionRoleId;
+        cResult[7] = first1;
+        cResult[8] = set;
+        tmp13 = set;
       }
     }
     class D {
@@ -117,12 +166,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     cResult[10] = subscriptionRoleId;
     cResult[11] = first1;
     cResult[12] = D;
+    tmp14 = D;
   } else {
-    class S {
-      constructor() {
-        return SubscriptionRoleStore.getSubscriptionRoles(guildId);
+    class G {
+      constructor(id) {
+        return id.id;
       }
     }
+    const tmp11 = cResult[3];
     class D {
       constructor(arg0) {
         closure_0 = guildId;
@@ -135,11 +186,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
     }
   }
-  SubscriptionRoleStore = tmp13;
+  set = tmp12;
   if (cResult[14] === onClose) {
-    class S {
-      constructor() {
-        return SubscriptionRoleStore.getSubscriptionRoles(guildId);
+    class G {
+      constructor(id) {
+        return id.id;
       }
     }
   }
@@ -213,7 +264,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[15] = onSave;
   cResult[16] = first1;
   cResult[17] = handleSave;
-}) : ((guildId) => {
+}) : (function GuildRoleSubscriptionEmojiEditorModal(guildId) {
   let closure_4;
   let closure_5;
   let closure_8;
@@ -336,7 +387,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let obj3 = {
     title: intl.string(guildId(onClose[13]).t.W4XhnR),
     onClose,
-    onSave() {
+    onSave: function handleConfirmAndSave() {
       let intl;
       let intl2;
       let intl3;

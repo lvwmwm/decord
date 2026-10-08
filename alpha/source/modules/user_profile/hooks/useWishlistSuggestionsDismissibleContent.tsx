@@ -1,25 +1,23 @@
-// Module ID: 12963
-// Function ID: 12964
+// Module ID: 13242
+// Function ID: 13243
 // Name: useWishlistSuggestionsDismissibleContent
-// Dependencies: [32, 19, 7124, 2048, 1102, 558, 576, 504, 6901, 2036, 2]
+// Dependencies: [32, 19, 7309, 2060, 1102, 558, 576, 504, 7090, 2048, 2]
 
-// Module 12963 (useWishlistSuggestionsDismissibleContent)
+// Module 13242 (useWishlistSuggestionsDismissibleContent)
 import DurationsDefault from "Durations" /* 1102 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7124 */;
+import UserProfileStore from "UserProfileStore" /* 7309 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let userId;
 
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const cooldownDurationMs = 90 * DurationsDefault.Millis.DAY;
 let closure_7 = 90 * DurationsDefault.Millis.DAY;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWishlistSuggestionsDismissibleContent(userId) {
   let closure_2;
   let closure_3;
   let first;
@@ -154,7 +152,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[4] = items1;
   tmp14 = items1;
   tmp13 = I;
-}) : ((userId) => {
+}) : (function useWishlistSuggestionsDismissibleContent(userId) {
   let _undefined;
   let closure_3;
   let items2;

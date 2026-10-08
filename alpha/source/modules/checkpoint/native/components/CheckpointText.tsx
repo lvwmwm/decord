@@ -1,23 +1,23 @@
-// Module ID: 15555
-// Function ID: 15556
+// Module ID: 15821
+// Function ID: 15822
 // Name: CheckpointText
-// Dependencies: [109, 5121, 21, 558, 576, 4892, 2]
+// Dependencies: [109, 5433, 21, 558, 576, 5086, 2]
 
-// Module 15555 (CheckpointText)
+// Module 15821 (CheckpointText)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import CheckpointConstants from "CheckpointConstants" /* 5121 */;
+import CheckpointConstants from "CheckpointConstants" /* 5433 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 let closure_2 = ["children", "style"];
 const CHECKPOINT_PRIMARY = CheckpointConstants.CHECKPOINT_PRIMARY;
 const jsx = Fragment.jsx;
 let closure_5 = { color: CHECKPOINT_PRIMARY };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointText(arg0) {
   let children;
   let style;
   let tmp10;
@@ -66,7 +66,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = tmp10;
   cResult[9] = tmp14;
   tmp12 = tmp14;
-}) : ((arg0) => {
+}) : (function CheckpointText(arg0) {
   let children;
   let style;
   ({ children, style } = arg0);

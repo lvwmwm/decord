@@ -1,11 +1,11 @@
-// Module ID: 13160
-// Function ID: 13161
+// Module ID: 13460
+// Function ID: 13461
 // Name: PremiumOfferReminderExperiment
-// Dependencies: [1440, 2]
+// Dependencies: [1452, 2]
 // Exports: isPremiumOfferReminderExperimentEnabled
 
-// Module 13160 (PremiumOfferReminderExperiment)
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+// Module 13460 (PremiumOfferReminderExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

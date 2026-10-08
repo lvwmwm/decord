@@ -1,13 +1,13 @@
-// Module ID: 11711
-// Function ID: 11712
+// Module ID: 11776
+// Function ID: 11777
 // Name: RedesignChannelListConstants
-// Dependencies: [17, 1370, 10736, 2]
+// Dependencies: [17, 1382, 10490, 2]
 // Exports: getScaledCategoryRowHeight, getScaledChannelRowHeight, getScaledChannelSubtitleHeight, getScaledSearchBarHeight
 
-// Module 11711 (RedesignChannelListConstants)
+// Module 11776 (RedesignChannelListConstants)
 import react_native from "react-native" /* 17 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10736 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1370 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10490 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1382 */;
 import size from "module_2" /* 2 */;
 
 let c2 = "text-xs/medium";
@@ -56,10 +56,10 @@ export const getScaledCategoryRowHeight = function getScaledCategoryRowHeight(fo
   const obj = useScaledTextLineHeight;
   return obj.scaleTextLineHeight(c5, fontScale) + 8 + 4;
 };
-export const getScaledChannelRowHeight = function getScaledChannelRowHeight(arg0) {
+export const getScaledChannelRowHeight = function getScaledChannelRowHeight(fontScale) {
   const sum = 8 + hairlineWidth;
   const obj = useScaledTextLineHeight;
-  return 2 * sum + obj.scaleLineHeight(num, arg0);
+  return 2 * sum + obj.scaleLineHeight(num, fontScale);
 };
 export const getScaledSearchBarHeight = function getScaledSearchBarHeight(fontScale) {
   const obj = useScaledTextLineHeight;

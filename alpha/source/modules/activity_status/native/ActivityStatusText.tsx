@@ -1,23 +1,23 @@
-// Module ID: 10631
-// Function ID: 10632
+// Module ID: 10229
+// Function ID: 10230
 // Name: ActivityStatusText
-// Dependencies: [109, 19, 21, 4896, 558, 576, 4892, 2]
+// Dependencies: [109, 19, 21, 5090, 558, 576, 5086, 2]
 
-// Module 10631 (ActivityStatusText)
+// Module 10229 (ActivityStatusText)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 let closure_2 = ["children", "style", "variant"];
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ text: { flexShrink: 1 } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityStatusText(arg0) {
   let children;
   let style;
   let tmp4;
@@ -81,7 +81,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = tmp11.text;
   cResult[7] = items;
   tmp12 = items;
-}) : ((variant) => {
+}) : (function ActivityStatusText(variant) {
   let children;
   let style;
   let str = variant.variant;

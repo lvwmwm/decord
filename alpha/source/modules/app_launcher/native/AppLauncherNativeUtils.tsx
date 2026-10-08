@@ -1,30 +1,30 @@
-// Module ID: 11679
-// Function ID: 11680
+// Module ID: 11744
+// Function ID: 11745
 // Name: AppLauncherNativeUtils
-// Dependencies: [19, 2051, 1377, 1489, 1085, 5795, 5076, 7047, 11680, 7043, 1985, 7417, 1975, 8826, 1402, 558, 576, 11007, 9137, 11685, 6670, 9024, 4861, 2]
+// Dependencies: [19, 2063, 1389, 1501, 1085, 5399, 5105, 7235, 11745, 7231, 1997, 7892, 1987, 9185, 1414, 558, 576, 11232, 9471, 11750, 6847, 10623, 5055, 2]
 // Exports: getAppLauncherIconSource, getInitialOptionValues, handleApplicationCommandSelected, handleApplicationSelected, handleViewAllSelected
 
-// Module 11679 (AppLauncherNativeUtils)
+// Module 11744 (AppLauncherNativeUtils)
 import Constants from "Constants" /* 1085 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import AssetRegistryDefault from "AssetRegistry" /* 1975 */;
-import Server from "Server" /* 1985 */;
-import HapticUtils from "HapticUtils" /* 4861 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5076 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5795 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7043 */;
-import ApplicationCommandActionCreatorsAll from "ApplicationCommandActionCreators" /* 7417 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 8826 */;
-import FrecencySection from "FrecencySection" /* 11680 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import AssetRegistryDefault from "AssetRegistry" /* 1987 */;
+import Server from "Server" /* 1997 */;
+import HapticUtils from "HapticUtils" /* 5055 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5105 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5399 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7231 */;
+import ApplicationCommandActionCreatorsAll from "ApplicationCommandActionCreators" /* 7892 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9185 */;
+import FrecencySection from "FrecencySection" /* 11745 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import UserStore from "UserStore" /* 1377 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1489 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import UserStore from "UserStore" /* 1389 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, onActivityItemSelected;
+let _require;
 
 let metroImportAll;
 let metroImportDefault;
@@ -32,7 +32,7 @@ let metroImportDefault;
 const AnalyticEvents = Constants.AnalyticEvents;
 const BuiltInSectionId = ApplicationCommandConstants.BuiltInSectionId;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLogAppLauncherEmptyStateView(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let obj = require("react");
@@ -71,7 +71,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[1] = arg0;
   cResult[2] = fn;
   tmp2 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useLogAppLauncherEmptyStateView(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let obj = require("AppLauncherContext");
@@ -86,7 +86,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onActivityItemSelected) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleActivityItemSelected(onActivityItemSelected) {
   let applicationId;
   let context;
   let entrypoint;
@@ -213,7 +213,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onActivityItemSelect
   cResult[2] = undefined === fetchesApplication || fetchesApplication;
   cResult[3] = obj4;
   tmp6 = obj4;
-}) : ((fetchesApplication) => {
+}) : (function useHandleActivityItemSelected(fetchesApplication) {
   let _location;
   let applicationId;
   let context;
@@ -303,9 +303,9 @@ export const handleApplicationSelected = function handleApplicationSelected(entr
   const APPLICATION_COMMAND_SECTION_SELECTED = AnalyticEvents.APPLICATION_COMMAND_SECTION_SELECTED;
   AppAnalyticsUtils;
   if (application.id === BuiltInSectionId.BUILT_IN) {
-    APP = tmp(7047).ApplicationCommandTriggerSections.BUILT_IN;
+    APP = tmp(7235).ApplicationCommandTriggerSections.BUILT_IN;
   } else {
-    APP = tmp(7047).ApplicationCommandTriggerSections.APP;
+    APP = tmp(7235).ApplicationCommandTriggerSections.APP;
   }
   id = application.id;
   if (id == null) {

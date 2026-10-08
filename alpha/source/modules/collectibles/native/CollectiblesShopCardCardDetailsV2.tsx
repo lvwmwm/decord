@@ -1,33 +1,33 @@
-// Module ID: 8538
-// Function ID: 8539
+// Module ID: 9023
+// Function ID: 9024
 // Name: CollectiblesShopCardCardDetailsV2
-// Dependencies: [19, 17, 6931, 1085, 21, 4896, 587, 558, 576, 8452, 7077, 8539, 7078, 8541, 8556, 1126, 4892, 8524, 1369, 8557, 8346, 7860, 4534, 4586, 4733, 8559, 504, 8560, 5612, 2]
+// Dependencies: [19, 17, 7120, 1085, 21, 5090, 587, 558, 576, 8938, 7263, 9024, 7264, 9026, 9040, 1126, 5086, 9009, 1381, 9041, 9005, 8278, 4726, 4778, 4927, 9043, 504, 9044, 5387, 2]
 
-// Module 8538 (CollectiblesShopCardCardDetailsV2)
+// Module 9023 (CollectiblesShopCardCardDetailsV2)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4534 */;
-import useToken from "useToken" /* 4586 */;
-import ColorUtils from "ColorUtils" /* 4733 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7077 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7078 */;
-import useCurrentUser from "useCurrentUser" /* 7860 */;
-import useDefaultVariantIndex from "useDefaultVariantIndex" /* 8452 */;
-import OrbsIcon from "OrbsIcon" /* 8524 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 8539 */;
-import _mod8541 from "module_8541" /* 8541 */;
-import CollectiblesShopPricePlaceholder from "CollectiblesShopPricePlaceholder" /* 8556 */;
-import getProductName from "getProductName" /* 8559 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4726 */;
+import useToken from "useToken" /* 4778 */;
+import ColorUtils from "ColorUtils" /* 4927 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7263 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7264 */;
+import useCurrentUser from "useCurrentUser" /* 8278 */;
+import useDefaultVariantIndex from "useDefaultVariantIndex" /* 8938 */;
+import OrbsIcon from "OrbsIcon" /* 9009 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9024 */;
+import _mod9026 from "module_9026" /* 9026 */;
+import CollectiblesShopPricePlaceholder from "CollectiblesShopPricePlaceholder" /* 9040 */;
+import getProductName from "getProductName" /* 9043 */;
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 6931 */;
+import IAPStore from "IAPStore" /* 7120 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -39,8 +39,8 @@ let obj2;
 let size;
 let tmp11;
 let tmp4;
-const LinearGradientDefault = tmp11(5612);
-const CollectiblesShopCardVariantsDefault = tmp4(8560);
+const LinearGradientDefault = tmp11(5387);
+const CollectiblesShopCardVariantsDefault = tmp4(9044);
 const View = react_native.View;
 ({ CurrencyCodes: metroRequire, VerticalGradient: metroImportDefault } = Constants);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -103,7 +103,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
               tmp13 = cResult[13];
             }
             const discountPercentage2 = tmp13.discountPercentage;
-            const tmpResult = _mod8541;
+            const tmpResult = _mod9026;
             const balance = tmpResult.useFetchVirtualCurrencyBalance().balance;
             let tmp17 = null;
             if (null != tmp9) {
@@ -394,11 +394,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
                               }
                             }
                           }
-                          let tmp53Result = discountPercentage2 >= tmp(7078).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
+                          let tmp53Result = discountPercentage2 >= tmp(7264).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
                           if (tmp53Result) {
                             const items1 = [, , ];
                             ({ discountPercentage: arr6[0], text: arr6[1] } = styles);
-                            const Text2 = tmp(4892).Text;
+                            const Text2 = tmp(5086).Text;
                             let androidTextPadding;
                             const tmp53 = metroImportAll;
                             const tmpResult11 = PlatformUtils;
@@ -495,11 +495,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
                           }
                         }
                       }
-                      let tmp31Result = discountPercentage >= tmp(7078).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
+                      let tmp31Result = discountPercentage >= tmp(7264).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
                       if (tmp31Result) {
                         const items5 = [, , ];
                         ({ discountPercentage: arr2[0], text: arr2[1] } = styles);
-                        const Text = tmp(4892).Text;
+                        const Text = tmp(5086).Text;
                         let androidTextPadding1;
                         const tmp31 = metroImportAll;
                         const tmpResult13 = PlatformUtils;
@@ -537,10 +537,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
                 let tmp21;
                 if (discountSource === CollectiblesUtils.ShopDiscountSource.THIRDPARTY) {
                   const obj22 = { size: "xs", color: "mobile-text-heading-primary", style: styles.wheelIcon };
-                  tmp21 = metroImportAll(tmp(8557).TagIcon, obj22);
+                  tmp21 = metroImportAll(tmp(9041).TagIcon, obj22);
                 } else {
                   const obj23 = { size: "xs", color: "mobile-text-heading-primary", style: styles.wheelIcon };
-                  tmp21 = metroImportAll(tmp(8346).NitroWheelIcon, obj23);
+                  tmp21 = metroImportAll(tmp(9005).NitroWheelIcon, obj23);
                 }
                 tmp19 = tmp21;
               }
@@ -784,7 +784,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
 const unpackModuleId = memoResult;
 memoResult.displayName = "PriceDescription";
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function CardDetailsV2(arg0) {
   let collectibleProductState;
   let fetchingGoogleSkus;
   let hidePrice;
@@ -796,11 +796,10 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
   let tmp19;
   let tmp21;
   let tmp22;
-  let tmp25;
   let tmp6;
   let tmp9;
   const obj = react2;
-  const cResult = obj.c(37);
+  const cResult = obj.c(35);
   ({ product, collectibleProductState, preferVCPrice, isDisabled, hidePrice } = arg0);
   const tmp4 = closure_10();
   const obj2 = useCurrentUser;
@@ -873,23 +872,11 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
   }
   const tmpResult14 = get_initialized;
   const stateFromStores = tmpResult14.useStateFromStores(tmp21, tmp22);
-  if (cResult[12] !== tmp4.regularMetadataContainer) {
-    const items1 = [tmp4.regularMetadataContainer];
-    class V {
-      constructor() {
-        return closure_1_5.isFetchingGoogleSkus();
-      }
-    }
-    cResult[13] = items1;
-    tmp25 = items1;
-  } else {
-    tmp25 = cResult[13];
-  }
-  if (cResult[14] === token) {
-    if (cResult[15] === tmp13) {
-      let tmp26;
-      if (cResult[16] === tmp16) {
-        tmp26 = cResult[17];
+  if (cResult[12] === token) {
+    if (cResult[13] === tmp13) {
+      let tmp25;
+      if (cResult[14] === tmp16) {
+        tmp25 = cResult[15];
       }
       const _Symbol = Symbol;
       class V {
@@ -897,31 +884,31 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
           return closure_1_5.isFetchingGoogleSkus();
         }
       }
-      if (cResult[19] === tmp19) {
-        let tmp29;
-        if (cResult[20] === tmp4.assetName) {
-          tmp29 = cResult[21];
+      if (cResult[17] === tmp19) {
+        let tmp28;
+        if (cResult[18] === tmp4.assetName) {
+          tmp28 = cResult[19];
         }
-        if (cResult[22] === collectibleProductState) {
-          if (cResult[23] === tmp9) {
-            if (cResult[24] === hidePrice) {
-              if (cResult[25] === isDisabled) {
-                if (cResult[26] === stateFromStores) {
-                  if (cResult[27] === preferVCPrice) {
-                    if (cResult[28] === product) {
-                      if (cResult[29] === tmp6) {
-                        let tmp32;
-                        if (cResult[30] === tmp4) {
-                          tmp32 = cResult[31];
+        if (cResult[20] === collectibleProductState) {
+          if (cResult[21] === tmp9) {
+            if (cResult[22] === hidePrice) {
+              if (cResult[23] === isDisabled) {
+                if (cResult[24] === stateFromStores) {
+                  if (cResult[25] === preferVCPrice) {
+                    if (cResult[26] === product) {
+                      if (cResult[27] === tmp6) {
+                        let tmp31;
+                        if (cResult[28] === tmp4) {
+                          tmp31 = cResult[29];
                         }
-                        if (cResult[32] === tmp29) {
-                          if (cResult[33] === tmp32) {
-                            if (cResult[34] === tmp25) {
-                              let tmp34;
-                              if (cResult[35] === tmp26) {
-                                tmp34 = cResult[36];
+                        if (cResult[30] === tmp4.regularMetadataContainer) {
+                          if (cResult[31] === tmp28) {
+                            if (cResult[32] === tmp31) {
+                              let tmp33;
+                              if (cResult[33] === tmp25) {
+                                tmp33 = cResult[34];
                               }
-                              return tmp34;
+                              return tmp33;
                             }
                           }
                         }
@@ -930,19 +917,19 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
                             return closure_1_5.isFetchingGoogleSkus();
                           }
                         }
-                        tmp36[0] = tmp25;
-                        tmp36[1] = tmp26;
-                        tmp36[2] = tmp28;
-                        ({ START: tmp36[3], END: tmp36[4] } = metroImportDefault);
-                        const items2 = [tmp29, tmp32];
-                        tmp36[5] = items2;
-                        const tmp38 = React4(LinearGradientDefault, tmp36);
-                        cResult[32] = tmp29;
-                        cResult[33] = tmp32;
-                        cResult[34] = tmp25;
-                        cResult[35] = tmp26;
-                        cResult[36] = tmp38;
-                        tmp34 = tmp38;
+                        tmp35[0] = tmp4.regularMetadataContainer;
+                        tmp35[1] = tmp25;
+                        tmp35[2] = tmp27;
+                        ({ START: tmp35[3], END: tmp35[4] } = metroImportDefault);
+                        const items1 = [tmp28, tmp31];
+                        tmp35[5] = items1;
+                        const tmp37 = React4(LinearGradientDefault, tmp35);
+                        cResult[30] = tmp4.regularMetadataContainer;
+                        cResult[31] = tmp28;
+                        cResult[32] = tmp31;
+                        cResult[33] = tmp25;
+                        cResult[34] = tmp37;
+                        tmp33 = tmp37;
                       }
                     }
                   }
@@ -956,33 +943,33 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
             return closure_1_5.isFetchingGoogleSkus();
           }
         }
-        cResult[22] = collectibleProductState;
-        cResult[23] = tmp9;
-        cResult[24] = hidePrice;
-        cResult[25] = isDisabled;
-        cResult[26] = stateFromStores;
-        cResult[27] = preferVCPrice;
-        cResult[28] = product;
-        cResult[29] = tmp6;
-        cResult[30] = tmp4;
-        cResult[31] = !hidePrice;
-        tmp32 = tmp33;
+        cResult[20] = collectibleProductState;
+        cResult[21] = tmp9;
+        cResult[22] = hidePrice;
+        cResult[23] = isDisabled;
+        cResult[24] = stateFromStores;
+        cResult[25] = preferVCPrice;
+        cResult[26] = product;
+        cResult[27] = tmp6;
+        cResult[28] = tmp4;
+        cResult[29] = !hidePrice;
+        tmp31 = tmp32;
       }
       const obj4 = { style: tmp4.assetName, variant: "heading-sm/bold", color: "mobile-text-heading-primary", lineClamp: 1, accessibilityRole: "header", children: tmp19 };
-      const tmp31 = metroImportAll(Text_Text.Text, obj4);
-      cResult[19] = tmp19;
-      cResult[20] = tmp4.assetName;
-      cResult[21] = tmp31;
-      tmp29 = tmp31;
+      const tmp30 = metroImportAll(Text_Text.Text, obj4);
+      cResult[17] = tmp19;
+      cResult[18] = tmp4.assetName;
+      cResult[19] = tmp30;
+      tmp28 = tmp30;
     }
   }
-  const items3 = [tmp16, tmp13, token];
-  cResult[14] = token;
-  cResult[15] = tmp13;
-  cResult[16] = tmp16;
-  cResult[17] = items3;
-  tmp26 = items3;
-}) : ((arg0) => {
+  const items2 = [tmp16, tmp13, token];
+  cResult[12] = token;
+  cResult[13] = tmp13;
+  cResult[14] = tmp16;
+  cResult[15] = items2;
+  tmp25 = items2;
+}) : (function CardDetailsV2(arg0) {
   let collectibleProductState;
   let fetchingGoogleSkus;
   let hidePrice;
@@ -990,7 +977,6 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
   let items1;
   let items2;
   let items3;
-  let items4;
   let preferVCPrice;
   let product;
   ({ product, hidePrice } = arg0);
@@ -1017,23 +1003,22 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
   const items = [IAPStore];
   const obj8 = get_initialized;
   const stateFromStores = obj8.useStateFromStores(items, () => fetchingGoogleSkus.isFetchingGoogleSkus());
-  const obj9 = { style: items1, colors: items2, locations: [0, 0.4, 1], start: metroImportDefault.START, end: metroImportDefault.END, children: items3 };
-  items1 = [tmp.regularMetadataContainer];
-  items2 = [hexToRgbaString2Result, hexToRgbaStringResult, token];
-  items3 = [, ];
+  const obj9 = { style: tmp.regularMetadataContainer, colors: items1, locations: [0, 0.4, 1], start: metroImportDefault.START, end: metroImportDefault.END, children: items2 };
+  items1 = [hexToRgbaString2Result, hexToRgbaStringResult, token];
+  items2 = [, ];
   const obj10 = { style: tmp.assetName, variant: "heading-sm/bold", color: "mobile-text-heading-primary", lineClamp: 1, accessibilityRole: "header", children: cardProductName };
   const tmp15 = LinearGradientDefault;
-  items3[0] = metroImportAll(Text_Text.Text, obj10);
+  items2[0] = metroImportAll(Text_Text.Text, obj10);
   let tmp14Result = !hidePrice;
   if (tmp14Result) {
-    const obj11 = { style: tmp.priceVariantsContainer, children: items4 };
+    const obj11 = { style: tmp.priceVariantsContainer, children: items3 };
     const obj12 = { product, hasShopDiscount: canUseShopDiscountsResult, discountSource: shopDiscountSource, styles: tmp, collectibleProductState, isFetchingGoogleSkus: stateFromStores, preferVCPrice, isDisabled };
-    items4 = [metroImportAll(unpackModuleId, obj12), ];
+    items3 = [metroImportAll(unpackModuleId, obj12), ];
     const obj13 = { product };
-    items4[1] = metroImportAll(CollectiblesShopCardVariantsDefault, obj13);
+    items3[1] = metroImportAll(CollectiblesShopCardVariantsDefault, obj13);
     tmp14Result = tmp14(View, obj11);
   }
-  items3[1] = tmp14Result;
+  items2[1] = tmp14Result;
   return React4(tmp15, obj9);
 }));
 size = size_mod;

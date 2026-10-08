@@ -1,33 +1,33 @@
-// Module ID: 9656
-// Function ID: 9657
+// Module ID: 9467
+// Function ID: 9468
 // Name: PremiumFeatureUpsell
-// Dependencies: [109, 19, 17, 4919, 1379, 1085, 6951, 21, 7494, 4534, 1126, 4896, 587, 558, 576, 9657, 8848, 7498, 8856, 1252, 7491, 9658, 1188, 9659, 9655, 4892, 8346, 5612, 1105, 5604, 5605, 6664, 9137, 7952, 4618, 9660, 2]
+// Dependencies: [109, 19, 17, 5108, 1391, 1085, 7140, 21, 9219, 4726, 1126, 5090, 587, 558, 576, 9394, 9208, 9220, 9468, 1264, 9216, 9451, 1200, 9469, 9470, 5086, 9005, 5387, 1105, 5374, 5378, 6841, 9471, 8370, 4810, 9381, 2]
 
-// Module 9656 (PremiumFeatureUpsell)
+// Module 9467 (PremiumFeatureUpsell)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl7 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PremiumUtils from "PremiumUtils" /* 4534 */;
-import spring from "spring" /* 5604 */;
-import springPresets from "springPresets" /* 5605 */;
-import LinearGradientDefault from "LinearGradient" /* 5612 */;
-import ColorConstants from "ColorConstants" /* 6951 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 7491 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7494 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PremiumUtils from "PremiumUtils" /* 4726 */;
+import spring from "spring" /* 5374 */;
+import springPresets from "springPresets" /* 5378 */;
+import LinearGradientDefault from "LinearGradient" /* 5387 */;
+import ColorConstants from "ColorConstants" /* 7140 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9216 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9219 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, flag, obj1, shouldShow, trackResult;
+let _require, flag, obj1, trackResult;
 
 let c10;
 let c9;
@@ -93,7 +93,7 @@ let closure_17 = createStyles.createStyles((arg0) => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((featureName) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatureUpsellPill(featureName) {
   let items;
   let items1;
   let showShadow;
@@ -298,13 +298,13 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((featureName) =
                         let tmpResult;
                         if (closure_4) {
                           const obj2 = { size: "xxs", color: nativeDefault.colors.WHITE, style: items };
-                          const NitroWheelIcon = tmp2(8346).NitroWheelIcon;
+                          const NitroWheelIcon = tmp2(9005).NitroWheelIcon;
                           items = [closure_3.nitroWheelIcon, loading && closure_3.nitroWheelDisabled];
                           tmpResult = tmp(NitroWheelIcon, obj2);
                         } else {
                           const items1 = [closure_3.nitroWheelButton, ];
                           let nitroWheelDisabled = loading;
-                          const NitroWheel = tmp2(1188).NitroWheel;
+                          const NitroWheel = tmp2(1200).NitroWheel;
                           if (loading) {
                             nitroWheelDisabled = closure_3.nitroWheelDisabled;
                           }
@@ -391,7 +391,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((featureName) =
   cResult[5] = featureName;
   cResult[6] = fn;
   tmp12 = fn;
-}) : ((featureName) => {
+}) : (function PremiumFeatureUpsellPill(featureName) {
   let _location;
   let items1;
   let items2;
@@ -471,13 +471,13 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((featureName) =
       let tmpResult;
       if (mobileEmojiPickerUpsellRestyleEnabledForFeature) {
         const obj2 = { size: "xxs", color: nativeDefault.colors.WHITE, style: items };
-        const NitroWheelIcon = tmp2(8346).NitroWheelIcon;
+        const NitroWheelIcon = tmp2(9005).NitroWheelIcon;
         items = [closure_3.nitroWheelIcon, loading && closure_3.nitroWheelDisabled];
         tmpResult = tmp(NitroWheelIcon, obj2);
       } else {
         const items1 = [closure_3.nitroWheelButton, ];
         let nitroWheelDisabled = loading;
-        const NitroWheel = tmp2(1188).NitroWheel;
+        const NitroWheel = tmp2(1200).NitroWheel;
         if (loading) {
           nitroWheelDisabled = closure_3.nitroWheelDisabled;
         }
@@ -528,7 +528,7 @@ animationEnterExit.__closure = obj;
 animationEnterExit.__workletHash = 15470414797897;
 animationEnterExit.__initData = { code: "function animationEnterExit_PremiumFeatureUpsellTsx1(visible,cleanUp){const{withSpring,springStandard}=this.__closure;return{opacity:withSpring(visible,springStandard,'respect-motion-settings',function(finished){cleanUp===null||cleanUp===void 0||cleanUp(finished);})};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((shouldShow) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatureUpsell(shouldShow) {
   let _location;
   let analyticsLocations;
   let closure_4;
@@ -658,7 +658,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((shouldShow) => {
   cResult[7] = tmp10;
   cResult[8] = N;
   cResult[9] = items;
-}) : ((shouldShow) => {
+}) : (function PremiumFeatureUpsell(shouldShow) {
   shouldShow = shouldShow.shouldShow;
   let merged = Object.assign(shouldShow, Object.assign({ shouldShow: 0 }));
   let analyticsLocations;

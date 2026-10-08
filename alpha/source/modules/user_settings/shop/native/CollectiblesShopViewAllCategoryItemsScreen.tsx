@@ -1,20 +1,20 @@
-// Module ID: 15789
-// Function ID: 15790
+// Module ID: 16047
+// Function ID: 16048
 // Name: CollectiblesShopViewAllCategoryItemsScreen
-// Dependencies: [19, 21, 558, 576, 6497, 1490, 15790, 2]
+// Dependencies: [19, 21, 558, 576, 6674, 1502, 16048, 2]
 
-// Module 15789 (CollectiblesShopViewAllCategoryItemsScreen)
+// Module 16047 (CollectiblesShopViewAllCategoryItemsScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useNavigation from "useNavigation" /* 1490 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6497 */;
-import CollectiblesShopViewAllCategoryItemsDefault from "CollectiblesShopViewAllCategoryItems" /* 15790 */;
+import useNavigation from "useNavigation" /* 1502 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6674 */;
+import CollectiblesShopViewAllCategoryItemsDefault from "CollectiblesShopViewAllCategoryItems" /* 16048 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollectiblesShopViewAllCategoryItemsScreen() {
   let tmp5;
   let tmp6;
   let tmp8;
@@ -25,7 +25,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj3 = useNavigation;
   const stackNavigation = obj3.useStackNavigation();
   if (cResult[0] !== stackNavigation) {
-    const fn = function n() {
+    const fn = function o() {
       stackNavigation.setOptions({ headerShown: false });
     };
     const items = [stackNavigation];
@@ -50,7 +50,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[4];
   }
   return tmp8;
-}) : (() => {
+}) : (function CollectiblesShopViewAllCategoryItemsScreen() {
   const obj = useSettingNavigationRoute;
   const settingNavigationRoute = obj.useSettingNavigationRoute();
   const obj2 = useNavigation;

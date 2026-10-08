@@ -1,34 +1,34 @@
-// Module ID: 10967
-// Function ID: 10968
+// Module ID: 11160
+// Function ID: 11161
 // Name: AnalyticsHooks
-// Dependencies: [19, 1085, 558, 576, 10929, 7215, 7196, 7231, 7225, 7174, 1266, 1369, 7227, 5633, 5637, 1252, 2]
+// Dependencies: [19, 1085, 558, 576, 10580, 7395, 7375, 7410, 7404, 7353, 1278, 1381, 7406, 5980, 5984, 1264, 2]
 
-// Module 10967 (AnalyticsHooks)
+// Module 11160 (AnalyticsHooks)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import v1 from "v1" /* 1266 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import AdCreativeType from "AdCreativeType" /* 5637 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7174 */;
-import QuestDataUtils from "QuestDataUtils" /* 7196 */;
-import AnalyticsActions from "AnalyticsActions" /* 7215 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7225 */;
-import QuestHomeSearchSession from "QuestHomeSearchSession" /* 7227 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import v1 from "v1" /* 1278 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import AdCreativeType from "AdCreativeType" /* 5984 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7353 */;
+import QuestDataUtils from "QuestDataUtils" /* 7375 */;
+import AnalyticsActions from "AnalyticsActions" /* 7395 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7404 */;
+import QuestHomeSearchSession from "QuestHomeSearchSession" /* 7406 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, advertisingId, dependencyMap, questHomeHero;
+let _require, advertisingId, dependencyMap;
 
 let AnalyticEvents = Constants.AnalyticEvents;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackQuestEventWithImpression() {
   let getQuestImpressionId;
   let tmp3;
   let obj = getQuestImpressionId(576);
   const cResult = obj.c(2);
-  let obj2 = getQuestImpressionId(10929);
+  let obj2 = getQuestImpressionId(10580);
   getQuestImpressionId = obj2.useGetQuestImpressionId();
   if (cResult[0] !== getQuestImpressionId) {
     const fn = function t(properties) {
@@ -48,9 +48,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
+}) : (function useTrackQuestEventWithImpression() {
   let getQuestImpressionId;
-  let obj = getQuestImpressionId(10929);
+  let obj = getQuestImpressionId(10580);
   getQuestImpressionId = obj.useGetQuestImpressionId();
   const items = [getQuestImpressionId];
   return react.useCallback((properties) => {
@@ -66,7 +66,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 let closure_5 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackQuestContentClickedWithImpression() {
   let closure_0;
   let tmp3;
   let obj = require("react");
@@ -155,7 +155,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
+}) : (function useTrackQuestContentClickedWithImpression() {
   let tmp = closure_5();
   let closure_0 = tmp;
   const items = [tmp];
@@ -235,12 +235,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackAdContentEventWithImpression() {
   let getQuestImpressionId;
   let tmp3;
   let obj = getQuestImpressionId(576);
   const cResult = obj.c(2);
-  let obj2 = getQuestImpressionId(10929);
+  let obj2 = getQuestImpressionId(10580);
   getQuestImpressionId = obj2.useGetQuestImpressionId();
   if (cResult[0] !== getQuestImpressionId) {
     const fn = function t(properties) {
@@ -260,9 +260,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
+}) : (function useTrackAdContentEventWithImpression() {
   let getQuestImpressionId;
-  let obj = getQuestImpressionId(10929);
+  let obj = getQuestImpressionId(10580);
   getQuestImpressionId = obj.useGetQuestImpressionId();
   const items = [getQuestImpressionId];
   return react.useCallback((properties) => {
@@ -278,7 +278,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 let closure_6 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackAdContentClickedWithImpression() {
   let closure_0;
   let tmp3;
   let obj = require("react");
@@ -355,7 +355,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
+}) : (function useTrackAdContentClickedWithImpression() {
   let tmp = closure_6();
   let closure_0 = tmp;
   const items = [tmp];
@@ -423,7 +423,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestsEmbedFallbackAnalytics(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;
@@ -449,7 +449,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[3] = items;
   tmp3 = items;
   tmp2 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useQuestsEmbedFallbackAnalytics(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   const items = [arg0, arg1];
@@ -459,7 +459,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyCarouselEmptyStateAnalytics(arg0) {
   let closure_0;
   let tmp2;
   let tmp3;
@@ -484,7 +484,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp3 = cResult[2];
   }
   const effect = react.useEffect(tmp2, tmp3);
-}) : ((arg0) => {
+}) : (function useBountyCarouselEmptyStateAnalytics(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   const effect = react.useEffect(() => {
@@ -495,7 +495,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((questHomeHero) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestHomeEntrypointAnalyticsEvents(questHomeHero) {
   let closure_4;
   let sourceQuestContent;
   let tmp5;
@@ -505,11 +505,11 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((questHomeHero) => {
   const cResult = obj.c(19);
   questHomeHero = questHomeHero.questHomeHero;
   const shouldShowQuestHomeHeroContent = questHomeHero.shouldShowQuestHomeHeroContent;
-  const QuestContent = questHomeHero(5633).QuestContent;
+  const QuestContent = questHomeHero(5980).QuestContent;
   const tmp4 = shouldShowQuestHomeHeroContent ? QuestContent.QUEST_HOME_ENTRYPOINT_THEMED : QuestContent.QUEST_HOME_ENTRYPOINT;
   dependencyMap = tmp4;
   if (cResult[0] !== tmp4) {
-    const tmpResult = tmp(7225);
+    const tmpResult = tmp(7404);
     const contentProperties = tmpResult.getContentProperties(tmp4);
     delete tmp6["row_index"];
     cResult[0] = tmp4;
@@ -585,29 +585,48 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((questHomeHero) => {
           }
           let obj2 = { handleMouseEnter: tmp8, handleMouseLeave: tmp9, handleOnboardingPopoutRender: tmp11, handleEntrypointClick: tmp12 };
           cResult[15] = tmp12;
-          cResult[16] = tmp8;
+          class I {
+            constructor() {
+              let obj3;
+              const track = AnalyticsUtilsDefault.track;
+              const QUEST_CONTENT_CLICKED = AnalyticEvents.QUEST_CONTENT_CLICKED;
+              const obj = { is_targeted: false };
+              AnalyticsUtilsDefault;
+              const merged = Object.assign(properties);
+              if (null != questHomeHero) {
+                obj3 = { ad_content_id: tmp3.id };
+                const obj2 = { ad_content_id: tmp3.id };
+              } else {
+                obj3 = {};
+              }
+              const merged1 = Object.assign(obj3);
+              track(QUEST_CONTENT_CLICKED, obj);
+            }
+          }
           cResult[17] = tmp9;
           cResult[18] = obj2;
         }
-        const fn3 = function k() {
-          let obj3;
-          const track = AnalyticsUtilsDefault.track;
-          const QUEST_CONTENT_CLICKED = AnalyticEvents.QUEST_CONTENT_CLICKED;
-          const obj = { is_targeted: false };
-          AnalyticsUtilsDefault;
-          const merged = Object.assign(properties);
-          if (null != questHomeHero) {
-            obj3 = { ad_content_id: tmp3.id };
-            const obj2 = { ad_content_id: tmp3.id };
-          } else {
-            obj3 = {};
+        class I {
+          constructor() {
+            let obj3;
+            const track = AnalyticsUtilsDefault.track;
+            const QUEST_CONTENT_CLICKED = AnalyticEvents.QUEST_CONTENT_CLICKED;
+            const obj = { is_targeted: false };
+            AnalyticsUtilsDefault;
+            const merged = Object.assign(properties);
+            if (null != questHomeHero) {
+              obj3 = { ad_content_id: tmp3.id };
+              const obj2 = { ad_content_id: tmp3.id };
+            } else {
+              obj3 = {};
+            }
+            const merged1 = Object.assign(obj3);
+            track(QUEST_CONTENT_CLICKED, obj);
           }
-          const merged1 = Object.assign(obj3);
-          track(QUEST_CONTENT_CLICKED, obj);
-        };
+        }
         cResult[12] = tmp5;
         cResult[13] = questHomeHero;
-        cResult[14] = fn3;
+        cResult[14] = I;
         class C {
           constructor(event) {
             if (null != questHomeHero) {
@@ -647,12 +666,12 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((questHomeHero) => {
   cResult[5] = shouldShowQuestHomeHeroContent;
   cResult[6] = C;
   tmp7 = C;
-}) : ((questHomeHero) => {
+}) : (function useQuestHomeEntrypointAnalyticsEvents(questHomeHero) {
   let sourceQuestContent;
   questHomeHero = questHomeHero.questHomeHero;
   const shouldShowQuestHomeHeroContent = questHomeHero.shouldShowQuestHomeHeroContent;
   let memo;
-  const QuestContent = questHomeHero(5633).QuestContent;
+  const QuestContent = questHomeHero(5980).QuestContent;
   const tmp = shouldShowQuestHomeHeroContent ? QuestContent.QUEST_HOME_ENTRYPOINT_THEMED : QuestContent.QUEST_HOME_ENTRYPOINT;
   dependencyMap = tmp;
   const items = [tmp];

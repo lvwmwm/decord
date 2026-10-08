@@ -1,13 +1,13 @@
-// Module ID: 12903
-// Function ID: 12904
+// Module ID: 13052
+// Function ID: 13053
 // Name: GameRelationshipStoreHooks
-// Dependencies: [32, 7155, 1085, 558, 576, 504, 5596, 2]
+// Dependencies: [32, 7335, 1085, 558, 576, 504, 5962, 2]
 // Exports: useGameFriendsForUser, useIncomingGameRelationshipsForUser
 
-// Module 12903 (GameRelationshipStoreHooks)
+// Module 13052 (GameRelationshipStoreHooks)
 import Constants from "Constants" /* 1085 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7155 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7335 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let _require, dependencyMap;
 
 const RelationshipTypes = Constants.RelationshipTypes;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameRelationshipsByType(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -48,7 +48,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = require("get initialized");
   return _slicedToArray(tmpResult.useStateFromStores(first, tmp6, tmp7, require("SecondaryIndexMapUtils").isVersionEqual), 1)[0];
-}) : ((arg0) => {
+}) : (function useGameRelationshipsByType(arg0) {
   let closure_0;
   _require = arg0;
   let items = [GameRelationshipStore];
@@ -60,7 +60,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1, require("SecondaryIndexMapUtils").isVersionEqual), 1)[0];
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameRelationshipsForUserByType(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -96,7 +96,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => 
   cResult[4] = items1;
   tmp7 = items1;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useGameRelationshipsForUserByType(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -114,7 +114,7 @@ ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasGameRelationshipsForUser(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -147,7 +147,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = require("get initialized");
   return _slicedToArray(tmpResult.useStateFromStores(first, tmp6, tmp7, require("SecondaryIndexMapUtils").isVersionEqual), 1)[0];
-}) : ((arg0) => {
+}) : (function useHasGameRelationshipsForUser(arg0) {
   let closure_0;
   _require = arg0;
   let items = [GameRelationshipStore];
@@ -160,7 +160,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1, require("SecondaryIndexMapUtils").isVersionEqual), 1)[0];
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasGameRelationshipsForUserByType(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -197,7 +197,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = items1;
   tmp7 = items1;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useHasGameRelationshipsForUserByType(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -211,12 +211,16 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     return items;
   }, items1, require("SecondaryIndexMapUtils").isVersionEqual), 1)[0];
 });
-let fn = (arg0) => closure_5(arg0, RelationshipTypes.FRIEND);
-const fn2 = (arg0) => closure_5(arg0, RelationshipTypes.PENDING_INCOMING);
+function useGameFriendsForUser(id) {
+  return closure_5(id, RelationshipTypes.FRIEND);
+}
+function useIncomingGameRelationshipsForUser(id) {
+  return closure_5(id, RelationshipTypes.PENDING_INCOMING);
+}
 const result2 = size.fileFinishedImporting("modules/game_relationships/GameRelationshipStoreHooks.tsx");
 
 export const useGameRelationshipsByType = tmp2;
-export const useGameFriendsForUser = fn;
-export const useIncomingGameRelationshipsForUser = fn2;
+export { useGameFriendsForUser };
+export { useIncomingGameRelationshipsForUser };
 export const useHasGameRelationshipsForUser = tmp5;
 export const useHasGameRelationshipsForUserByType = tmp6;

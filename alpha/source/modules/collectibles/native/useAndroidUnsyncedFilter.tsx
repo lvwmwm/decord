@@ -1,18 +1,20 @@
-// Module ID: 14894
-// Function ID: 14895
+// Module ID: 15156
+// Function ID: 15157
 // Name: useAndroidUnsyncedFilter
-// Dependencies: [19, 4895, 6931, 558, 576, 504, 4547, 8539, 2]
+// Dependencies: [19, 5089, 7120, 558, 576, 504, 4739, 9024, 2]
 
-// Module 14894 (useAndroidUnsyncedFilter)
+// Module 15156 (useAndroidUnsyncedFilter)
 import react from "react" /* 19 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 4547 */;
-import DevSettingsStore from "DevSettingsStore" /* 4895 */;
-import IAPStore from "IAPStore" /* 6931 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 4739 */;
+import DevSettingsStore from "DevSettingsStore" /* 5089 */;
+import IAPStore from "IAPStore" /* 7120 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let tmp3;
+
 const useCallback = react.useCallback;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAndroidUnsyncedFilter() {
   let fetchingGoogleSkus;
   let stateFromStores;
   let stateFromStores1;
@@ -24,7 +26,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(7);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [IAPStore];
-    const fn = function l() {
+    const fn = function n() {
       return fetchingGoogleSkus.isFetchingGoogleSkus();
     };
     cResult[0] = items;
@@ -58,28 +60,32 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return tmp12;
   }
-  const fn3 = function y(arr) {
-    let obj = BillingPlatformUtils;
-    let found = arr;
-    if (obj.isGooglePlayBillingSupported()) {
-      found = arr;
-      if (!stateFromStores1) {
-        found = arr;
-        if (!stateFromStores) {
-          found = arr.filter((item) => {
-            const obj = stateFromStores(stateFromStores1[7]);
-            return obj.isGPlaySynced(item);
-          });
+  class S {
+    constructor(arg0) {
+      obj = closure_0(closure_1[6]);
+      found = arg0;
+      if (obj.isGooglePlayBillingSupported()) {
+        tmp2 = closure_1;
+        found = arg0;
+        if (!closure_1) {
+          tmp3 = closure_0;
+          found = arg0;
+          if (!closure_0) {
+            found = arg0.filter((item) => {
+              const obj = stateFromStores(stateFromStores1[7]);
+              return obj.isGPlaySynced(item);
+            });
+          }
         }
       }
+      return found;
     }
-    return found;
-  };
+  }
   cResult[4] = stateFromStores1;
   cResult[5] = stateFromStores;
-  cResult[6] = fn3;
-  tmp12 = fn3;
-}) : (() => {
+  cResult[6] = S;
+  tmp12 = S;
+}) : (function useAndroidUnsyncedFilter() {
   let fetchingGoogleSkus;
   let stateFromStores;
   let stateFromStores1;

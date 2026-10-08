@@ -1,22 +1,22 @@
-// Module ID: 12214
-// Function ID: 12215
+// Module ID: 12293
+// Function ID: 12294
 // Name: GuildPowerupsDeactivateAlert
-// Dependencies: [17, 21, 4896, 587, 558, 576, 12215, 12216, 12217, 4806, 1126, 2553, 4892, 5720, 5720, 2]
+// Dependencies: [17, 21, 5090, 587, 558, 576, 12294, 12295, 12296, 5000, 1126, 2597, 5086, 5303, 5303, 2]
 
-// Module 12214 (GuildPowerupsDeactivateAlert)
+// Module 12293 (GuildPowerupsDeactivateAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef2553 from "module_2553" /* 2553 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useGuildPowerupOnDeactivateDefault from "useGuildPowerupOnDeactivate" /* 12215 */;
-import useDeactivateWarningTextDefault from "useDeactivateWarningText" /* 12216 */;
+import _modDef2597 from "module_2597" /* 2597 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import useGuildPowerupOnDeactivateDefault from "useGuildPowerupOnDeactivate" /* 12294 */;
+import useDeactivateWarningTextDefault from "useDeactivateWarningText" /* 12295 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault, stopPropagationResult;
+let _require, importDefault;
 
 let closure_4;
 let hasOwnProperty;
@@ -30,10 +30,10 @@ size = { width: 64, height: 64, alignItems: "center", justifyContent: "center", 
 createStyles = createStyles.createStyles;
 obj2 = { paddingHorizontal: nativeDefault.space.PX_12 };
 let closure_6 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupsDeactivateAlert(arg0) {
   let first;
   let guildId;
-  let intl3;
+  let intl4;
   let items;
   let onDeactivate;
   let powerup;
@@ -47,15 +47,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ guildId, powerup } = arg0);
   const tmp4 = closure_6();
   _require = tmp4;
-  const tmp6 = onDeactivate(12215)(guildId, powerup);
+  const tmp6 = onDeactivate(12294)(guildId, powerup);
   onDeactivate = tmp6.onDeactivate;
   const error = tmp6.error;
-  const arr = onDeactivate(12216)(guildId, powerup);
+  const arr = onDeactivate(12295)(guildId, powerup);
   const obj2 = require("GuildPowerupAnalytics");
   const logPowerupModalOpened = obj2.useLogPowerupModalOpened(guildId, powerup, require("GuildPowerupAnalytics").ModalType.DEACTIVATE);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { color: onDeactivate(587).colors.INTERACTIVE_ICON_DEFAULT, size: "custom", style: { width: 40, height: 40 } };
-    const CircleErrorIcon = tmp(4806).CircleErrorIcon;
+    const CircleErrorIcon = tmp(5000).CircleErrorIcon;
     const tmp10 = closure_4(CircleErrorIcon, obj3);
     cResult[0] = tmp10;
     first = tmp10;
@@ -74,7 +74,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[3] !== powerup.title) {
     const intl = tmp(1126).intl;
     const obj5 = { perk: powerup.title };
-    const formatToPlainStringResult = intl.formatToPlainString(onDeactivate(2553).iEBw1M, obj5);
+    const formatToPlainStringResult = intl.formatToPlainString(onDeactivate(2597).iEBw1M, obj5);
     cResult[3] = powerup.title;
     cResult[4] = formatToPlainStringResult;
     tmp15 = formatToPlainStringResult;
@@ -84,7 +84,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[5] !== powerup.title) {
     const intl2 = tmp(1126).intl;
     const obj6 = { perk: powerup.title };
-    const formatToPlainStringResult1 = intl2.formatToPlainString(onDeactivate(2553)["7o0K+2"], obj6);
+    const formatToPlainStringResult1 = intl2.formatToPlainString(onDeactivate(2597)["7o0K+2"], obj6);
     cResult[5] = powerup.title;
     cResult[6] = formatToPlainStringResult1;
     tmp17 = formatToPlainStringResult1;
@@ -94,238 +94,158 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[7] === error) {
     let tmp19;
     let tmp22;
-    let tmp26;
+    let tmp23;
+    let tmp25;
     let tmp28;
+    let tmp29;
     if (cResult[8] === tmp4.warningText) {
       tmp19 = cResult[9];
     }
     if (cResult[10] !== onDeactivate) {
-      class C {
-        constructor(arg0) {
-          stopPropagationResult = arg0.stopPropagation();
-          return onDeactivate();
-        }
-      }
+      const fn = function p(stopPropagation) {
+        stopPropagation.stopPropagation();
+        return onDeactivate();
+      };
       cResult[10] = onDeactivate;
-      cResult[11] = C;
+      cResult[11] = fn;
+      tmp22 = fn;
     } else {
-      class C {
-        constructor(arg0) {
-          stopPropagationResult = arg0.stopPropagation();
-          return onDeactivate();
-        }
-      }
+      tmp22 = cResult[11];
     }
     const _Symbol = Symbol;
     if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-      class C {
-        constructor(arg0) {
-          stopPropagationResult = arg0.stopPropagation();
-          return onDeactivate();
-        }
-      }
-      const stringResult = obj8.string(onDeactivate(2553).PYPdl4);
+      const intl3 = tmp(1126).intl;
+      const stringResult = intl3.string(onDeactivate(2597).PYPdl4);
       cResult[12] = stringResult;
-      tmp22 = stringResult;
+      tmp23 = stringResult;
     } else {
-      class C {
-        constructor(arg0) {
-          stopPropagationResult = arg0.stopPropagation();
-          return onDeactivate();
-        }
-      }
+      tmp23 = cResult[12];
     }
-    if (cResult[13] !== tmp21) {
-      class C {
-        constructor(arg0) {
-          stopPropagationResult = arg0.stopPropagation();
-          return onDeactivate();
-        }
-      }
+    if (cResult[13] !== tmp22) {
       let str = "deactivate";
-      const obj7 = { variant: "destructive", onPress: tmp21, text: tmp22 };
-      cResult[13] = tmp21;
-      cResult[14] = closure_4(tmp(5720).AlertActionButton, obj7, "deactivate");
-      const tmp25 = closure_4(tmp(5720).AlertActionButton, obj7, "deactivate");
+      const obj7 = { variant: "destructive", onPress: tmp22, text: tmp23 };
+      const tmp27 = closure_4(tmp(5303).AlertActionButton, obj7, "deactivate");
+      cResult[13] = tmp22;
+      cResult[14] = tmp27;
+      tmp25 = tmp27;
     } else {
-      class C {
-        constructor(arg0) {
-          stopPropagationResult = arg0.stopPropagation();
-          return onDeactivate();
-        }
-      }
+      tmp25 = cResult[14];
     }
     const _Symbol2 = Symbol;
     if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-      class C {
-        constructor(arg0) {
-          stopPropagationResult = arg0.stopPropagation();
-          return onDeactivate();
-        }
-      }
-      cResult[15] = tmp27;
-      tmp26 = tmp27;
+      const fn2 = function v() {
+
+      };
+      cResult[15] = fn2;
+      tmp28 = fn2;
     } else {
-      class C {
-        constructor(arg0) {
-          stopPropagationResult = arg0.stopPropagation();
-          return onDeactivate();
-        }
-      }
+      tmp28 = cResult[15];
     }
     const _Symbol3 = Symbol;
     if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-      class C {
-        constructor(arg0) {
-          stopPropagationResult = arg0.stopPropagation();
-          return onDeactivate();
-        }
-      }
-      const obj9 = { onPress: tmp26, variant: "secondary", text: intl3.string(tmp(1126).t["ETE/oC"]) };
-      const AlertActionButton = tmp(5720).AlertActionButton;
-      intl3 = tmp(1126).intl;
+      const obj8 = { onPress: tmp28, variant: "secondary", text: intl4.string(tmp(1126).t["ETE/oC"]) };
+      const AlertActionButton = tmp(5303).AlertActionButton;
+      intl4 = tmp(1126).intl;
       let str2 = "cancel";
-      const tmp29 = closure_4(AlertActionButton, obj9, "cancel");
-      cResult[16] = tmp29;
-      tmp28 = tmp29;
+      const tmp31 = closure_4(AlertActionButton, obj8, "cancel");
+      cResult[16] = tmp31;
+      tmp29 = tmp31;
     } else {
-      class C {
-        constructor(arg0) {
-          stopPropagationResult = arg0.stopPropagation();
-          return onDeactivate();
-        }
-      }
+      tmp29 = cResult[16];
     }
     if (cResult[17] === tmp19) {
-      let tmp35;
-      class C {
-        constructor(arg0) {
-          stopPropagationResult = arg0.stopPropagation();
-          return onDeactivate();
-        }
+      let tmp32;
+      let tmp37;
+      if (cResult[18] === tmp25) {
+        tmp32 = cResult[19];
       }
       if (cResult[20] === tmp4.warningText) {
-        class C {
-          constructor(arg0) {
-            stopPropagationResult = arg0.stopPropagation();
-            return onDeactivate();
-          }
+        let tmp36;
+        if (cResult[21] === arr) {
+          tmp36 = cResult[22];
         }
         if (cResult[25] === tmp4.extraContentContainer) {
-          class C {
-            constructor(arg0) {
-              stopPropagationResult = arg0.stopPropagation();
-              return onDeactivate();
-            }
+          let tmp39;
+          if (cResult[26] === tmp36) {
+            tmp39 = cResult[27];
           }
-          if (cResult[28] === tmp30) {
-            class C {
-              constructor(arg0) {
-                stopPropagationResult = arg0.stopPropagation();
-                return onDeactivate();
+          if (cResult[28] === tmp32) {
+            if (cResult[29] === tmp39) {
+              if (cResult[30] === tmp11) {
+                if (cResult[31] === tmp15) {
+                  let tmp43;
+                  if (cResult[32] === tmp17) {
+                    tmp43 = cResult[33];
+                  }
+                  return tmp43;
+                }
               }
             }
           }
-          const obj10 = { header: tmp11, title: tmp15, content: tmp17, actions: tmp30, extraContent: tmp37 };
-          cResult[28] = tmp30;
-          cResult[29] = tmp37;
+          const obj9 = { header: tmp11, title: tmp15, content: tmp17, actions: tmp32, extraContent: tmp39 };
+          const tmp45 = closure_4(tmp(5303).AlertModal, obj9);
+          cResult[28] = tmp32;
+          cResult[29] = tmp39;
           cResult[30] = tmp11;
           cResult[31] = tmp15;
           cResult[32] = tmp17;
-          cResult[33] = closure_4(tmp(5720).AlertModal, obj10);
-          const tmp43 = closure_4(tmp(5720).AlertModal, obj10);
+          cResult[33] = tmp45;
+          tmp43 = tmp45;
         }
-        const obj11 = { style: tmp33, children: tmp34 };
+        const obj10 = { style: tmp35, children: tmp36 };
+        const tmp42 = closure_4(View, obj10);
         cResult[25] = tmp4.extraContentContainer;
-        cResult[26] = tmp34;
-        cResult[27] = closure_4(View, obj11);
-        const tmp40 = closure_4(View, obj11);
+        cResult[26] = tmp36;
+        cResult[27] = tmp42;
+        tmp39 = tmp42;
       }
       if (cResult[23] !== tmp4.warningText) {
-        class D {
-          constructor(arg0, arg1) {
-            tmp = jsx;
-            obj = { style: closure_0.warningText, variant: null, color: null, children: null };
-            str = "text-sm/medium";
-            Text = closure_0(closure_2[12]).Text;
-            if (arg0.critical) {
-              str = "text-sm/semibold";
-            }
-            obj.variant = str;
-            str2 = undefined;
-            if (arg0.critical) {
-              str2 = "text-feedback-critical";
-            }
-            obj.color = str2;
-            obj.children = arg0.text;
-            return tmp(Text, obj, arg1);
+        const fn3 = function k(critical, arg1) {
+          let str;
+          let str2;
+          const obj = { style: warningText.warningText, variant: str, color: str2, children: critical.text };
+          str = "text-sm/medium";
+          const Text = Text_Text.Text;
+          const tmp = React3;
+          if (critical.critical) {
+            str = "text-sm/semibold";
           }
-        }
+          str2 = undefined;
+          if (critical.critical) {
+            str2 = "text-feedback-critical";
+          }
+          return tmp(Text, obj, arg1);
+        };
         cResult[23] = tmp4.warningText;
-        cResult[24] = D;
-        tmp35 = D;
+        cResult[24] = fn3;
+        tmp37 = fn3;
       } else {
-        class D {
-          constructor(arg0, arg1) {
-            tmp = jsx;
-            obj = { style: closure_0.warningText, variant: null, color: null, children: null };
-            str = "text-sm/medium";
-            Text = closure_0(closure_2[12]).Text;
-            if (arg0.critical) {
-              str = "text-sm/semibold";
-            }
-            obj.variant = str;
-            str2 = undefined;
-            if (arg0.critical) {
-              str2 = "text-feedback-critical";
-            }
-            obj.color = str2;
-            obj.children = arg0.text;
-            return tmp(Text, obj, arg1);
-          }
-        }
+        tmp37 = cResult[24];
       }
-      const mapped = arr.map(tmp35);
+      const mapped = arr.map(tmp37);
       cResult[20] = tmp4.warningText;
       cResult[21] = arr;
       cResult[22] = mapped;
+      tmp36 = mapped;
     }
-    const obj12 = { children: items };
-    items = [tmp19, tmp24, tmp28];
+    const obj11 = { children: items };
+    items = [tmp19, tmp25, tmp29];
+    const tmp34 = closure_5(tmp(5303).AlertActions, obj11);
     cResult[17] = tmp19;
-    cResult[18] = tmp24;
-    cResult[19] = closure_5(tmp(5720).AlertActions, obj12);
-    const tmp32 = closure_5(tmp(5720).AlertActions, obj12);
+    cResult[18] = tmp25;
+    cResult[19] = tmp34;
+    tmp32 = tmp34;
   }
   let tmp20 = null != error;
   if (tmp20) {
-    class D {
-      constructor(arg0, arg1) {
-        tmp = jsx;
-        obj = { style: closure_0.warningText, variant: null, color: null, children: null };
-        str = "text-sm/medium";
-        Text = closure_0(closure_2[12]).Text;
-        if (arg0.critical) {
-          str = "text-sm/semibold";
-        }
-        obj.variant = str;
-        str2 = undefined;
-        if (arg0.critical) {
-          str2 = "text-feedback-critical";
-        }
-        obj.color = str2;
-        obj.children = arg0.text;
-        return tmp(Text, obj, arg1);
-      }
-    }
-    const obj13 = { style: tmp4.warningText, variant: "text-xs/semibold", color: "text-feedback-critical", children: error };
-    tmp20 = closure_4(tmp(4892).Text, obj13);
+    const obj12 = { style: tmp4.warningText, variant: "text-xs/semibold", color: "text-feedback-critical", children: error };
+    tmp20 = closure_4(tmp(5086).Text, obj12);
   }
   cResult[7] = error;
   cResult[8] = tmp4.warningText;
   cResult[9] = tmp20;
   tmp19 = tmp20;
-}) : ((arg0) => {
+}) : (function GuildPowerupsDeactivateAlert(arg0) {
   let AlertActions;
   let CircleErrorIcon;
   let _undefined;
@@ -356,7 +276,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const arr = useDeactivateWarningTextDefault(guildId, powerup);
   let obj = require("GuildPowerupAnalytics");
   const logPowerupModalOpened = obj.useLogPowerupModalOpened(guildId, powerup, require("GuildPowerupAnalytics").ModalType.DEACTIVATE);
-  const obj2 = { header: closure_4(View, obj3), title: intl.formatToPlainString(_modDef2553.iEBw1M, obj5), content: intl2.formatToPlainString(_modDef2553["7o0K+2"], obj6), actions: tmp9(AlertActions, obj8), extraContent: closure_4(tmp8, obj11) };
+  const obj2 = { header: closure_4(View, obj3), title: intl.formatToPlainString(_modDef2597.iEBw1M, obj5), content: intl2.formatToPlainString(_modDef2597["7o0K+2"], obj6), actions: tmp9(AlertActions, obj8), extraContent: closure_4(tmp8, obj11) };
   obj3 = { style: tmp.headerContainer, children: closure_4(CircleErrorIcon, obj4) };
   const AlertModal = require("AlertModal").AlertModal;
   obj4 = { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT, size: "custom", style: { width: 40, height: 40 } };
@@ -371,7 +291,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   tmp9 = closure_5;
   if (tmp7Result) {
     const obj7 = { style: tmp.warningText, variant: "text-xs/semibold", color: "text-feedback-critical", children: error };
-    tmp7Result = tmp7(tmp5(4892).Text, obj7);
+    tmp7Result = tmp7(tmp5(5086).Text, obj7);
   }
   obj8 = { children: items };
   items = [tmp7Result, , ];
@@ -381,9 +301,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       stopPropagation.stopPropagation();
       return _undefined();
     },
-    text: intl3.string(_modDef2553.PYPdl4)
+    text: intl3.string(_modDef2597.PYPdl4)
   };
-  const AlertActionButton = tmp5(5720).AlertActionButton;
+  const AlertActionButton = tmp5(5303).AlertActionButton;
   intl3 = tmp5(1126).intl;
   items[1] = closure_4(AlertActionButton, obj9, "deactivate");
   const obj10 = {
@@ -393,7 +313,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     variant: "secondary",
     text: intl4.string(require("intl").t["ETE/oC"])
   };
-  const AlertActionButton2 = tmp5(5720).AlertActionButton;
+  const AlertActionButton2 = tmp5(5303).AlertActionButton;
   intl4 = tmp5(1126).intl;
   items[2] = closure_4(AlertActionButton2, obj10, "cancel");
   obj11 = {

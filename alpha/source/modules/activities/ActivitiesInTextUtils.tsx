@@ -1,14 +1,14 @@
-// Module ID: 9033
-// Function ID: 9034
+// Module ID: 8488
+// Function ID: 8489
 // Name: ActivitiesInTextUtils
-// Dependencies: [2051, 4515, 1096, 1106, 558, 576, 504, 2]
+// Dependencies: [2063, 4707, 1096, 1106, 558, 576, 504, 2]
 // Exports: getIsAppLauncherEnabled, isActivitiesInTextEnabled
 
-// Module 9033 (ActivitiesInTextUtils)
+// Module 8488 (ActivitiesInTextUtils)
 import Constants from "Constants" /* 1096 */;
 import ChannelTypes from "ChannelTypes" /* 1106 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ function isActivityInTextSupportedForChannel(channel) {
 }
 const Permissions = Constants.Permissions;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsActivitiesInTextEnabled(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -83,7 +83,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7);
-}) : ((arg0) => {
+}) : (function useIsActivitiesInTextEnabled(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -119,7 +119,7 @@ function getIsAppLauncherEnabled(channel) {
   const tmp2 = null != guild_id || isActivityInTextSupportedForChannel(channel);
   return tmp2;
 }
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsAppLauncherEnabled(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -157,7 +157,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useIsAppLauncherEnabled(arg0) {
   let closure_0;
   _require = arg0;
   const items = [ChannelStore];

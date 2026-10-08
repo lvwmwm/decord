@@ -1,18 +1,18 @@
-// Module ID: 6644
-// Function ID: 6645
+// Module ID: 6821
+// Function ID: 6822
 // Name: FormArrow
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4892, 1188, 6645, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 5086, 1200, 6822, 2]
 
-// Module 6644 (FormArrow)
+// Module 6821 (FormArrow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6645 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6822 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ const View = react_native.View;
 let obj = { wrapper: { flexDirection: "row", alignItems: "center" }, icon: obj2 };
 obj2 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, marginRight: -8, marginLeft: 8 };
 let closure_6 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormArrow(arg0) {
   let items;
   let items1;
   let items2;
@@ -71,7 +71,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const obj4 = { style: items1, source: AssetRegistryDefault, size: native.Icon.Sizes.MEDIUM };
     items1 = [tmp4.icon, style];
-    const Icon2 = tmp(1188).Icon;
+    const Icon2 = tmp(1200).Icon;
     const tmp15 = React3(Icon2, obj4);
     cResult[2] = style;
     cResult[3] = tmp4.icon;
@@ -85,7 +85,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const obj5 = { style: items2, source: AssetRegistryDefault, size: native.Icon.Sizes.MEDIUM };
     items2 = [tmp4.icon, style];
-    const Icon = tmp(1188).Icon;
+    const Icon = tmp(1200).Icon;
     const tmp8 = React3(Icon, obj5);
     cResult[9] = style;
     cResult[10] = tmp4.icon;
@@ -93,7 +93,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp5 = tmp8;
   }
   return tmp5;
-}) : ((arg0) => {
+}) : (function FormArrow(arg0) {
   let items;
   let items1;
   let items2;

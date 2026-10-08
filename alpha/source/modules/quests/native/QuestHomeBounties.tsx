@@ -1,26 +1,26 @@
-// Module ID: 14884
-// Function ID: 14885
+// Module ID: 15146
+// Function ID: 15147
 // Name: QuestHomeBounties
-// Dependencies: [32, 19, 17, 7199, 2048, 21, 587, 4896, 558, 576, 2036, 6901, 14885, 584, 14889, 10924, 504, 14896, 14902, 2]
+// Dependencies: [32, 19, 17, 7378, 2060, 21, 587, 5090, 558, 576, 2048, 7090, 15147, 584, 15151, 10575, 504, 15158, 15164, 2]
 
-// Module 14884 (QuestHomeBounties)
+// Module 15146 (QuestHomeBounties)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 10924 */;
-import openBountiesNuxPromoSheetDefault from "openBountiesNuxPromoSheet" /* 14885 */;
-import usePopularOrbShopProducts from "usePopularOrbShopProducts" /* 14889 */;
-import BountiesCtaHeaderDefault from "BountiesCtaHeader" /* 14896 */;
-import QuestHomeOrbShopCarouselDefault from "QuestHomeOrbShopCarousel" /* 14902 */;
+import dismissible_content from "dismissible_content" /* 2048 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 10575 */;
+import openBountiesNuxPromoSheetDefault from "openBountiesNuxPromoSheet" /* 15147 */;
+import usePopularOrbShopProducts from "usePopularOrbShopProducts" /* 15151 */;
+import BountiesCtaHeaderDefault from "BountiesCtaHeader" /* 15158 */;
+import QuestHomeOrbShopCarouselDefault from "QuestHomeOrbShopCarousel" /* 15164 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import BountyStore from "BountyStore" /* 7199 */;
+import BountyStore from "BountyStore" /* 7378 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let closure_11 = createStyles.createStyles(() => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountiesNux(arg0) {
   let closure_1;
   let first;
   let ref;
@@ -51,7 +51,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[0] !== arg0) {
     let items1;
     if (arg0) {
-      const items = [tmp(2036).DismissibleContent.BOUNTIES_NUX_PROMO_SHEET];
+      const items = [tmp(2048).DismissibleContent.BOUNTIES_NUX_PROMO_SHEET];
       items1 = items;
     } else {
       items1 = [];
@@ -62,7 +62,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     tmp4 = cResult[1];
   }
-  const tmpResult = tmp(6901);
+  const tmpResult = tmp(7090);
   const tmp5 = _slicedToArray(tmpResult.useSelectedDismissibleContent(tmp4), 2);
   first = tmp5[0];
   importDefault = tmp7;
@@ -124,18 +124,18 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = items3;
   tmp12 = items3;
   tmp11 = S;
-}) : ((arg0) => {
+}) : (function useBountiesNux(arg0) {
   let first;
   let items1;
   let ref;
   let tmp = arg0;
   if (tmp) {
-    const items = [first(2036).DismissibleContent.BOUNTIES_NUX_PROMO_SHEET];
+    const items = [first(2048).DismissibleContent.BOUNTIES_NUX_PROMO_SHEET];
     items1 = items;
   } else {
     items1 = [];
   }
-  let obj = first(6901);
+  let obj = first(7090);
   const tmp4 = _slicedToArray(obj.useSelectedDismissibleContent(items1), 2);
   first = tmp4[0];
   let closure_1 = tmp6;
@@ -167,7 +167,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeBounties(arg0) {
   let PX_20;
   let buttonVariant;
   let clickable;
@@ -189,15 +189,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   const length = questHomeBounties.length;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [BountyStore];
-    class H {
-      constructor() {
-        return closure_1_6.areAllBountiesCompleted();
-      }
-    }
+    const fn = function f() {
+      return BountyStore.areAllBountiesCompleted();
+    };
     cResult[0] = items;
-    cResult[1] = H;
+    cResult[1] = fn;
     tmp7 = items;
-    tmp8 = H;
+    tmp8 = fn;
   } else {
     [tmp7, tmp8] = cResult;
   }
@@ -218,122 +216,109 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
               if (cResult[12] === (undefined !== showOrbShopPlaceholderCarousel && showOrbShopPlaceholderCarousel)) {
                 tmp12 = cResult[13];
               }
-              class H {
-                constructor() {
-                  return closure_1_6.areAllBountiesCompleted();
-                }
-              }
               let tmp19;
-              if ("replace_media" === placement) {
+              if ("inside" === placement) {
                 tmp19 = tmp12;
+              }
+              let tmp20;
+              if ("replace_media" === placement) {
+                tmp20 = tmp12;
               }
               if (cResult[14] === questHomeBounties) {
                 if (cResult[15] === buttonVariant) {
-                  if (cResult[16] === undefined) {
-                    let tmp20;
-                    if (cResult[17] === tmp19) {
-                      tmp20 = cResult[18];
+                  if (cResult[16] === tmp19) {
+                    let tmp21;
+                    if (cResult[17] === tmp20) {
+                      tmp21 = cResult[18];
                     }
-                    class H {
-                      constructor() {
-                        return closure_1_6.areAllBountiesCompleted();
-                      }
+                    let tmp25 = null;
+                    if ("outside" === placement) {
+                      tmp25 = tmp12;
                     }
                     if (cResult[19] === tmp5.container) {
-                      if (cResult[20] === tmp20) {
-                        let tmp25;
-                        if (cResult[21] === null) {
-                          tmp25 = cResult[22];
+                      if (cResult[20] === tmp21) {
+                        let tmp26;
+                        if (cResult[21] === tmp25) {
+                          tmp26 = cResult[22];
                         }
-                        return tmp25;
+                        return tmp26;
                       }
                     }
                     const obj2 = { style: tmp5.container, children: items1 };
-                    items1 = [tmp20, null];
-                    const tmp28 = React4(View, obj2);
+                    items1 = [tmp21, tmp25];
+                    const tmp29 = React4(View, obj2);
                     cResult[19] = tmp5.container;
-                    cResult[20] = tmp20;
-                    cResult[21] = null;
-                    cResult[22] = tmp28;
-                    tmp25 = tmp28;
+                    cResult[20] = tmp21;
+                    cResult[21] = tmp25;
+                    cResult[22] = tmp29;
+                    tmp26 = tmp29;
                   }
                 }
               }
-              const obj3 = { bounties: questHomeBounties, shopCarouselButtonVariant: buttonVariant, footer: undefined, replaceHeaderMediaWith: tmp19 };
-              const tmp23 = metroImportAll(BountiesCtaHeaderDefault, obj3);
+              const obj3 = { bounties: questHomeBounties, shopCarouselButtonVariant: buttonVariant, footer: tmp19, replaceHeaderMediaWith: tmp20 };
+              const tmp24 = metroImportAll(BountiesCtaHeaderDefault, obj3);
               cResult[14] = questHomeBounties;
               cResult[15] = buttonVariant;
-              cResult[16] = undefined;
-              cResult[17] = tmp19;
-              cResult[18] = tmp23;
-              tmp20 = tmp23;
+              cResult[16] = tmp19;
+              cResult[17] = tmp20;
+              cResult[18] = tmp24;
+              tmp21 = tmp24;
             }
           }
         }
       }
-      const tmp13 = "none" !== placement && obtainableOrbRewards > 0;
-      class H {
-        constructor() {
-          return closure_1_6.areAllBountiesCompleted();
-        }
+      let tmp13 = "none" !== placement && obtainableOrbRewards > 0;
+      if (tmp13) {
+        tmp13 = orbShopProducts.length >= usePopularOrbShopProducts.MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || undefined !== showOrbShopPlaceholderCarousel && showOrbShopPlaceholderCarousel;
+        orbShopProducts.length >= usePopularOrbShopProducts.MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || undefined !== showOrbShopPlaceholderCarousel && showOrbShopPlaceholderCarousel;
       }
-      let tmp15Result = null;
+      let tmp16Result = null;
       if (tmp13) {
         const obj4 = { embedded: "inside" === placement, replacesHeaderMedia: "replace_media" === placement, listEdgeSpacing: PX_20, orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel: undefined !== showOrbShopPlaceholderCarousel && showOrbShopPlaceholderCarousel, clickable: tmp11 };
-        const tmp15 = metroImportAll;
-        const tmp16 = importDefault;
-        class H {
-          constructor() {
-            return closure_1_6.areAllBountiesCompleted();
-          }
-        }
-        const tmp17 = QuestHomeOrbShopCarouselDefault;
+        const tmp16 = metroImportAll;
+        const tmp17 = importDefault;
+        const tmp18 = QuestHomeOrbShopCarouselDefault;
         if ("outside" === placement) {
           PX_20 = PX_16;
         } else {
-          PX_20 = tmp16(587).space.PX_20;
+          PX_20 = tmp17(587).space.PX_20;
         }
-        tmp15Result = tmp15(tmp17, obj4);
+        tmp16Result = tmp16(tmp18, obj4);
       }
       cResult[8] = tmp11;
       cResult[9] = obtainableOrbRewards;
       cResult[10] = orbShopProducts;
       cResult[11] = placement;
       cResult[12] = undefined !== showOrbShopPlaceholderCarousel && showOrbShopPlaceholderCarousel;
-      cResult[13] = tmp15Result;
-      tmp12 = tmp15Result;
+      cResult[13] = tmp16Result;
+      tmp12 = tmp16Result;
     }
   }
   if (cResult[2] === questHomeBounties) {
-    let tmp29;
+    let tmp30;
     if (cResult[3] === buttonVariant) {
-      tmp29 = cResult[4];
+      tmp30 = cResult[4];
     }
     if (cResult[5] === tmp5.container) {
-      let tmp31;
-      if (cResult[6] === tmp29) {
-        tmp31 = cResult[7];
+      let tmp32;
+      if (cResult[6] === tmp30) {
+        tmp32 = cResult[7];
       }
-      return tmp31;
+      return tmp32;
     }
-    class H {
-      constructor() {
-        return closure_1_6.areAllBountiesCompleted();
-      }
-    }
-    const obj5 = { style: tmp5.container, children: tmp29 };
-    const tmp33 = metroImportAll(View, obj5);
+    const obj5 = { style: tmp5.container, children: tmp30 };
+    const tmp35 = metroImportAll(View, obj5);
     cResult[5] = tmp5.container;
-    cResult[6] = tmp29;
-    cResult[7] = tmp33;
-    tmp31 = tmp33;
+    cResult[6] = tmp30;
+    cResult[7] = tmp35;
+    tmp32 = tmp35;
   }
-  const tmp30 = metroImportAll(BountiesCtaHeaderDefault, { bounties: questHomeBounties, shopCarouselButtonVariant: buttonVariant, isEmptyOrCompleted: true });
+  const tmp31 = metroImportAll(BountiesCtaHeaderDefault, { bounties: questHomeBounties, shopCarouselButtonVariant: buttonVariant, isEmptyOrCompleted: true });
   cResult[2] = questHomeBounties;
   cResult[3] = buttonVariant;
-  cResult[4] = tmp30;
-  tmp29 = tmp30;
-}) : ((shopCarouselConfig) => {
+  cResult[4] = tmp31;
+  tmp30 = tmp31;
+}) : (function QuestHomeBounties(shopCarouselConfig) {
   let PX_20;
   let buttonVariant;
   let clickable;
@@ -366,7 +351,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     if (!stateFromStores) {
       let tmp7 = "none" !== placement && obtainableOrbRewards > 0;
       if (tmp7) {
-        tmp7 = orbShopProducts.length >= tmp(14889).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+        tmp7 = orbShopProducts.length >= tmp(15151).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
         orbShopProducts.length >= usePopularOrbShopProducts.MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
       }
       let tmp10Result = null;

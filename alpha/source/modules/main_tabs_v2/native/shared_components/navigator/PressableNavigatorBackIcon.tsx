@@ -1,33 +1,33 @@
-// Module ID: 7511
-// Function ID: 7512
+// Module ID: 9234
+// Function ID: 9235
 // Name: PressableNavigatorBackIcon
-// Dependencies: [109, 19, 17, 2051, 7134, 2103, 21, 4896, 1188, 587, 558, 576, 504, 4586, 4702, 1126, 7512, 7513, 7515, 5916, 2]
+// Dependencies: [109, 19, 17, 2063, 6082, 2115, 21, 5090, 1200, 587, 558, 576, 504, 4778, 4896, 1126, 9235, 9236, 9238, 6189, 2]
 
-// Module 7511 (PressableNavigatorBackIcon)
+// Module 9234 (PressableNavigatorBackIcon)
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7512 */;
-import MaskedBadgeDefault from "MaskedBadge" /* 7513 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 7515 */;
+import native from "native" /* 1200 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9235 */;
+import MaskedBadgeDefault from "MaskedBadge" /* 9236 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9238 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7134 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6082 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, channel, currentlySelectedChannelId, importDefault, navigation, totalMentionCount;
+let _require, channel, currentlySelectedChannelId, importDefault, totalMentionCount;
 
 let closure_12;
 let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
-let closure_3 = ["navigation", "onPress", "badgeCutoutColor"];
+let closure_3 = ["navigation", "onPress", "badgeCutoutColor", "ref"];
 ({ View: metroRequire, Image: metroImportDefault } = react_native);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 let closure_13 = createStyles.createStyles(() => {
@@ -38,47 +38,52 @@ let closure_13 = createStyles.createStyles(() => {
   ({ tintColor: nativeDefault.colors.ICON_SUBTLE });
   return obj;
 });
-const forwardRef = react.forwardRef;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((navigation, ref) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PressableNavigatorBackIcon(navigation) {
   let PressableOpacity;
+  let badgeCutoutColor;
   let closure_0;
   let closure_1;
   let items1;
   let obj11;
   let obj6;
   let obj8;
-  let tmp12;
+  let ref;
   let tmp13;
-  let tmp18;
+  let tmp14;
+  let tmp19;
   let tmp4;
   let tmp7;
+  let tmp8;
   const tmp = _require;
   let obj = require("react");
-  const cResult = obj.c(31);
+  const cResult = obj.c(32);
   if (cResult[0] !== navigation) {
     navigation = navigation.navigation;
     _require = navigation;
     const onPress = navigation.onPress;
     importDefault = onPress;
-    const badgeCutoutColor = navigation.badgeCutoutColor;
-    const tmp10 = _objectWithoutProperties(navigation, closure_3);
+    ({ badgeCutoutColor, ref } = navigation);
+    const tmp11 = _objectWithoutProperties(navigation, closure_3);
     cResult[0] = navigation;
     cResult[1] = badgeCutoutColor;
     cResult[2] = navigation;
     cResult[3] = onPress;
-    cResult[4] = tmp10;
-    tmp7 = tmp10;
+    cResult[4] = tmp11;
+    cResult[5] = ref;
+    tmp8 = ref;
+    tmp7 = tmp11;
     tmp4 = badgeCutoutColor;
   } else {
     tmp4 = cResult[1];
     _require = cResult[2];
     importDefault = cResult[3];
     tmp7 = cResult[4];
+    tmp8 = cResult[5];
   }
-  const tmp11 = closure_13();
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+  const tmp12 = closure_13();
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildReadStateStore, SelectedChannelStore, ChannelStore];
-    const fn = function f() {
+    const fn = function p() {
       const obj = totalMentionCount;
       totalMentionCount = totalMentionCount.getTotalMentionCount();
       currentlySelectedChannelId = currentlySelectedChannelId.getCurrentlySelectedChannelId();
@@ -96,59 +101,59 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
         return totalMentionCount - obj.getHighImportanceMentionCountForChannel(guild_id, currentlySelectedChannelId);
       }
     };
-    cResult[5] = items;
-    cResult[6] = fn;
-    tmp13 = fn;
-    tmp12 = items;
+    cResult[6] = items;
+    cResult[7] = fn;
+    tmp14 = fn;
+    tmp13 = items;
   } else {
-    tmp12 = cResult[5];
     tmp13 = cResult[6];
+    tmp14 = cResult[7];
   }
   const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(tmp12, tmp13);
+  const stateFromStores = tmpResult.useStateFromStores(tmp13, tmp14);
   if (stateFromStores >= 10) {
     if (stateFromStores < 100) {
-      let tmp20;
+      let tmp21;
       const _Symbol2 = Symbol;
-      if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj2 = { minWidth: tmp(1188).BADGE_SIZE + 8 };
-        cResult[7] = obj2;
-        tmp20 = obj2;
-      } else {
-        tmp20 = cResult[7];
-      }
-      tmp18 = tmp20;
-    } else {
-      let tmp19;
-      const _Symbol = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj3 = { minWidth: tmp(1188).BADGE_SIZE + 12 };
-        cResult[8] = obj3;
-        tmp19 = obj3;
+        const obj2 = { minWidth: tmp(1200).BADGE_SIZE + 8 };
+        cResult[8] = obj2;
+        tmp21 = obj2;
       } else {
-        tmp19 = cResult[8];
+        tmp21 = cResult[8];
       }
-      tmp18 = tmp19;
+      tmp19 = tmp21;
+    } else {
+      let tmp20;
+      const _Symbol = Symbol;
+      if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+        const obj3 = { minWidth: tmp(1200).BADGE_SIZE + 12 };
+        cResult[9] = obj3;
+        tmp20 = obj3;
+      } else {
+        tmp20 = cResult[9];
+      }
+      tmp19 = tmp20;
     }
   }
-  const tmpResult3 = tmp(4586);
+  const tmpResult3 = tmp(4778);
   let backgroundColor = tmpResult3.useToken(tmp4);
-  const useGradientValue = tmp(4702).useGradientValue;
-  tmp(4702);
+  const useGradientValue = tmp(4896).useGradientValue;
+  tmp(4896);
   if (backgroundColor == null) {
-    backgroundColor = useGradientValue(tmp(4702).GradientPercentage.START);
+    backgroundColor = useGradientValue(tmp(4896).GradientPercentage.START);
   }
   if (backgroundColor == null) {
-    backgroundColor = tmp11.maskStroke.backgroundColor;
+    backgroundColor = tmp12.maskStroke.backgroundColor;
   }
-  if (cResult[9] === tmp5) {
-    let tmp22;
+  if (cResult[10] === tmp5) {
     let tmp23;
-    let tmp25;
-    if (cResult[10] === tmp6) {
-      tmp22 = cResult[11];
+    let tmp24;
+    let tmp26;
+    if (cResult[11] === tmp6) {
+      tmp23 = cResult[12];
     }
-    if (cResult[12] !== stateFromStores) {
+    if (cResult[13] !== stateFromStores) {
       let formatToPlainStringResult;
       if (stateFromStores > 0) {
         const intl2 = tmp(1126).intl;
@@ -158,42 +163,42 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
         const intl = tmp(1126).intl;
         formatToPlainStringResult = intl.string(tmp(1126).t["13/7kX"]);
       }
-      cResult[12] = stateFromStores;
-      cResult[13] = formatToPlainStringResult;
-      tmp23 = formatToPlainStringResult;
+      cResult[13] = stateFromStores;
+      cResult[14] = formatToPlainStringResult;
+      tmp24 = formatToPlainStringResult;
     } else {
-      tmp23 = cResult[13];
+      tmp24 = cResult[14];
     }
-    if (cResult[14] !== tmp11.actionButtonIcon.tintColor) {
+    if (cResult[15] !== tmp12.actionButtonIcon.tintColor) {
       const obj5 = { source: AssetRegistryDefault, style: obj6 };
-      obj6 = { tintColor: tmp11.actionButtonIcon.tintColor };
-      const tmp29 = closure_11(closure_7, obj5);
-      cResult[14] = tmp11.actionButtonIcon.tintColor;
-      cResult[15] = tmp29;
-      tmp25 = tmp29;
+      obj6 = { tintColor: tmp12.actionButtonIcon.tintColor };
+      const tmp30 = closure_11(closure_7, obj5);
+      cResult[15] = tmp12.actionButtonIcon.tintColor;
+      cResult[16] = tmp30;
+      tmp26 = tmp30;
     } else {
-      tmp25 = cResult[15];
+      tmp26 = cResult[16];
     }
-    if (cResult[16] === stateFromStores) {
-      if (cResult[17] === backgroundColor) {
-        if (cResult[18] === tmp11.maskWrapper) {
-          let tmp30;
-          if (cResult[19] === tmp18) {
-            tmp30 = cResult[20];
+    if (cResult[17] === stateFromStores) {
+      if (cResult[18] === backgroundColor) {
+        if (cResult[19] === tmp12.maskWrapper) {
+          let tmp31;
+          if (cResult[20] === tmp19) {
+            tmp31 = cResult[21];
           }
-          if (cResult[21] === tmp25) {
-            let tmp35;
-            if (cResult[22] === tmp30) {
-              tmp35 = cResult[23];
+          if (cResult[22] === tmp26) {
+            let tmp36;
+            if (cResult[23] === tmp31) {
+              tmp36 = cResult[24];
             }
-            if (cResult[24] === tmp22) {
-              if (cResult[25] === tmp7) {
-                if (cResult[26] === ref) {
-                  if (cResult[27] === tmp11.actionButtonPressable) {
-                    if (cResult[28] === tmp23) {
+            if (cResult[25] === tmp23) {
+              if (cResult[26] === tmp7) {
+                if (cResult[27] === tmp8) {
+                  if (cResult[28] === tmp12.actionButtonPressable) {
+                    if (cResult[29] === tmp24) {
                       let tmp40;
-                      if (cResult[29] === tmp35) {
-                        tmp40 = cResult[30];
+                      if (cResult[30] === tmp36) {
+                        tmp40 = cResult[31];
                       }
                       return tmp40;
                     }
@@ -202,14 +207,15 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
               }
             }
             const obj7 = { children: closure_11(PressableOpacity, obj8) };
-            obj8 = { ref, accessibilityRole: "button", accessibilityLabel: tmp23, onPress: tmp22, style: tmp11.actionButtonPressable, children: tmp35 };
+            obj8 = { ref: tmp8, accessibilityRole: "button", accessibilityLabel: tmp24, onPress: tmp23, style: tmp12.actionButtonPressable, children: tmp36 };
             const tmp43 = PressableNavigatorButtonWrapperDefault;
-            PressableOpacity = tmp(5916).PressableOpacity;
+            PressableOpacity = tmp(6189).PressableOpacity;
             const merged = Object.assign(tmp7);
             const tmp47 = closure_11(tmp43, obj7);
-            cResult[24] = tmp22;
-            cResult[25] = tmp7;
-            cResult[26] = ref;
+            cResult[25] = tmp23;
+            cResult[26] = tmp7;
+            cResult[27] = tmp8;
+            cResult[28] = tmp12.actionButtonPressable;
             class W {
               constructor() {
                 if (null == closure_1) {
@@ -222,33 +228,33 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
                 }
               }
             }
-            cResult[28] = tmp23;
-            cResult[29] = tmp35;
-            cResult[30] = tmp47;
+            cResult[29] = tmp24;
+            cResult[30] = tmp36;
+            cResult[31] = tmp47;
             tmp40 = tmp47;
           }
           const obj9 = { children: items1 };
-          items1 = [tmp25, tmp30];
-          const tmp38 = closure_12(closure_6, obj9);
-          cResult[21] = tmp25;
-          cResult[22] = tmp30;
-          cResult[23] = tmp38;
-          tmp35 = tmp38;
+          items1 = [tmp26, tmp31];
+          const tmp39 = closure_12(closure_6, obj9);
+          cResult[22] = tmp26;
+          cResult[23] = tmp31;
+          cResult[24] = tmp39;
+          tmp36 = tmp39;
         }
       }
     }
-    let tmp31 = null;
+    let tmp32 = null;
     if (stateFromStores > 0) {
-      const obj10 = { style: tmp11.maskWrapper, children: closure_11(MaskedBadgeDefault, obj11) };
-      obj11 = { value: stateFromStores, maxValue: 99, backgroundColor, unread: false, style: tmp18 };
-      tmp31 = closure_11(closure_6, obj10);
+      const obj10 = { style: tmp12.maskWrapper, children: closure_11(MaskedBadgeDefault, obj11) };
+      obj11 = { value: stateFromStores, maxValue: 99, backgroundColor, unread: false, style: tmp19 };
+      tmp32 = closure_11(closure_6, obj10);
     }
-    cResult[16] = stateFromStores;
-    cResult[17] = backgroundColor;
-    cResult[18] = tmp11.maskWrapper;
-    cResult[19] = tmp18;
-    cResult[20] = tmp31;
-    tmp30 = tmp31;
+    cResult[17] = stateFromStores;
+    cResult[18] = backgroundColor;
+    cResult[19] = tmp12.maskWrapper;
+    cResult[20] = tmp19;
+    cResult[21] = tmp32;
+    tmp31 = tmp32;
   }
   class W {
     constructor() {
@@ -262,19 +268,21 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       }
     }
   }
-  cResult[9] = tmp5;
-  cResult[10] = tmp6;
-  cResult[11] = W;
-  tmp22 = W;
-}) : ((navigation, ref) => {
+  cResult[10] = tmp5;
+  cResult[11] = tmp6;
+  cResult[12] = W;
+  tmp23 = W;
+}) : (function PressableNavigatorBackIcon(navigation) {
+  let badgeCutoutColor;
   let formatToPlainStringResult;
   let items3;
   let obj8;
+  let ref;
   let tmp15;
   navigation = navigation.navigation;
   const onPress = navigation.onPress;
-  const badgeCutoutColor = navigation.badgeCutoutColor;
-  const merged = Object.assign(navigation, Object.assign({ navigation: 0, onPress: 0, badgeCutoutColor: 0 }));
+  ({ badgeCutoutColor, ref } = navigation);
+  const merged = Object.assign(navigation, Object.assign({ navigation: 0, onPress: 0, badgeCutoutColor: 0, ref: 0 }));
   let stateFromStores;
   const tmp2 = closure_13();
   let obj = navigation(stateFromStores[12]);
@@ -358,7 +366,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   items3[1] = tmp10Result;
   const obj9 = { children: closure_11(PressableOpacity, obj4) };
   return closure_11(tmp12, obj9);
-}));
+});
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/navigator/PressableNavigatorBackIcon.tsx");
 
-export const PressableNavigatorBackIcon = forwardRefResult;
+export const PressableNavigatorBackIcon = tmp4;

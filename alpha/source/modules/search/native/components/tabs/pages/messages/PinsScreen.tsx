@@ -1,20 +1,20 @@
-// Module ID: 16922
-// Function ID: 16923
+// Module ID: 17203
+// Function ID: 17204
 // Name: messages/PinsScreen
-// Dependencies: [19, 11312, 6794, 11994, 7524, 7523, 1085, 21, 504, 16837, 11311, 16833, 12001, 16897, 16841, 16840, 558, 576, 16920, 2]
+// Dependencies: [19, 12805, 6067, 12067, 9247, 9246, 1085, 21, 504, 17116, 12804, 17112, 12074, 17178, 17120, 17119, 558, 576, 17201, 2]
 
-// Module 16922 (messages/PinsScreen)
+// Module 17203 (messages/PinsScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import TrackingConstants from "TrackingConstants" /* 7523 */;
-import ChannelPinActionCreatorsDefault from "ChannelPinActionCreators" /* 11311 */;
-import ChannelPinsStore2 from "ChannelPinsStore" /* 11312 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12001 */;
-import MessagesScreenDefault from "MessagesScreen" /* 16920 */;
+import TrackingConstants from "TrackingConstants" /* 9246 */;
+import tracking_TrackingDefault from "tracking/Tracking" /* 12074 */;
+import ChannelPinActionCreatorsDefault from "ChannelPinActionCreators" /* 12804 */;
+import ChannelPinsStore2 from "ChannelPinsStore" /* 12805 */;
+import MessagesScreenDefault from "MessagesScreen" /* 17201 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 6794 */;
-import SearchQueryStore from "SearchQueryStore" /* 11994 */;
-import SearchConstants from "SearchConstants" /* 7524 */;
+import SearchMessageStore from "SearchMessageStore" /* 6067 */;
+import SearchQueryStore from "SearchQueryStore" /* 12067 */;
+import SearchConstants from "SearchConstants" /* 9247 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -72,7 +72,7 @@ function InitialPinsScreen(searchContext) {
     const message = SearchMessageStore.getMessage(messageId);
     const obj = { searchContext, channelId, messageId, userId: id, index, entityType: constants2.MESSAGE };
     id = undefined;
-    const trackSearchResultClicked = search_tracking_TrackingDefault.trackSearchResultClicked;
+    const trackSearchResultClicked = tracking_TrackingDefault.trackSearchResultClicked;
     if (message != null) {
       const author = message.author;
       if (author != null) {
@@ -143,7 +143,7 @@ const FetchState = ChannelPinsStore2.FetchState;
 let closure_11 = TrackingConstants.SearchResultContentEntityTypes;
 const SearchTypes = Constants.SearchTypes;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function PinsScreen(searchContext) {
   let first;
   let isFocused;
   let tab;
@@ -212,7 +212,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
   cResult[10] = tab;
   cResult[11] = tmp14;
   tmp13 = tmp14;
-}) : ((searchContext) => {
+}) : (function PinsScreen(searchContext) {
   let isFocused;
   let tab;
   let tmp5;

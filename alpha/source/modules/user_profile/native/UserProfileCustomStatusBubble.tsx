@@ -1,52 +1,51 @@
-// Module ID: 10840
-// Function ID: 10841
+// Module ID: 10489
+// Function ID: 10490
 // Name: UserProfileCustomStatusBubble
-// Dependencies: [32, 19, 17, 6714, 1380, 1096, 21, 4896, 587, 558, 576, 8169, 2028, 1402, 5981, 1369, 4892, 6632, 4586, 7872, 10626, 10736, 4860, 10841, 6688, 1126, 5916, 10996, 2]
+// Dependencies: [32, 109, 19, 17, 6891, 1392, 1096, 21, 5090, 587, 558, 576, 7550, 2040, 1414, 6164, 1381, 5086, 6809, 4778, 8290, 10224, 10490, 5054, 10492, 6865, 1126, 6189, 11220, 2]
 
-// Module 10840 (UserProfileCustomStatusBubble)
+// Module 10489 (UserProfileCustomStatusBubble)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
-import intl6 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Pressables from "Pressables" /* 5916 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import EmojiDefault from "Emoji" /* 6632 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6688 */;
-import Constants2 from "Constants" /* 6714 */;
-import inlineStyles from "inlineStyles" /* 8169 */;
-import CustomStatusUtils from "CustomStatusUtils" /* 10841 */;
-import CirclePlusIcon2 from "CirclePlusIcon" /* 10996 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import EmojiDefault from "Emoji" /* 6809 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6865 */;
+import Constants2 from "Constants" /* 6891 */;
+import inlineStyles from "inlineStyles" /* 7550 */;
+import CustomStatusUtils from "CustomStatusUtils" /* 10492 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const inlineStylesDefault = inlineStyles;
-let _require, num4, obj1;
+let _require, importDefault;
 
-let c10;
-let c9;
-let hasOwnProperty;
-let metroRequire;
+let closure_12;
+let map1;
+let metroImportAll;
+let metroImportDefault;
 let unpackModuleId;
+let closure_3 = ["ref"];
 let react = react_mod;
-({ PixelRatio: hasOwnProperty, View: metroRequire } = react_native);
+({ PixelRatio: metroImportDefault, View: metroImportAll } = react_native);
 const UserProfileThemeTypes = Constants2.UserProfileThemeTypes;
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
-const Fonts = Constants.Fonts;
-({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = Fragment);
+let Fonts = Constants.Fonts;
+({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = Fragment);
 let createStyles = createStyles_mod;
-let closure_12 = createStyles.createStyles((arg0) => {
+let closure_14 = createStyles.createStyles((arg0) => {
   let BACKGROUND_SURFACE_HIGH;
   let colors2;
   let obj2;
@@ -70,7 +69,7 @@ let closure_12 = createStyles.createStyles((arg0) => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function StatusBubbleConnector(arg0) {
   let backgroundColor;
   let borderColor;
   let items;
@@ -82,7 +81,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ backgroundColor, borderColor, style } = arg0);
   if (cResult[0] !== backgroundColor) {
     const obj2 = { d: "M0 10 A10 10 0 0 1 20 10 L20 11 L0 11 Z", fill: backgroundColor };
-    const tmp6 = React4(inlineStyles.Path, obj2);
+    const tmp6 = unpackModuleId(inlineStyles.Path, obj2);
     cResult[0] = backgroundColor;
     cResult[1] = tmp6;
     tmp4 = tmp6;
@@ -91,7 +90,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[2] !== borderColor) {
     const obj3 = { d: "M0.5 10 A9.5 9.5 0 0 1 19.5 10", fill: "none", stroke: borderColor, strokeWidth: 1 };
-    const tmp9 = React4(inlineStyles.Path, obj3);
+    const tmp9 = unpackModuleId(inlineStyles.Path, obj3);
     cResult[2] = borderColor;
     cResult[3] = tmp9;
     tmp7 = tmp9;
@@ -109,13 +108,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   size = { pointerEvents: "none", style, width: 20, height: 11, viewBox: "0 0 20 11", children: items };
   items = [tmp4, tmp7];
-  const tmp11 = authStore(inlineStylesDefault, size);
+  const tmp11 = closure_12(inlineStylesDefault, size);
   cResult[4] = style;
   cResult[5] = tmp4;
   cResult[6] = tmp7;
   cResult[7] = tmp11;
   tmp10 = tmp11;
-}) : ((arg0) => {
+}) : (function StatusBubbleConnector(arg0) {
   let backgroundColor;
   let borderColor;
   let items;
@@ -124,14 +123,14 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   size = { pointerEvents: "none", style, width: 20, height: 11, viewBox: "0 0 20 11", children: items };
   items = [, ];
   const tmp = inlineStylesDefault;
-  items[0] = React4(inlineStyles.Path, { d: "M0 10 A10 10 0 0 1 20 10 L20 11 L0 11 Z", fill: backgroundColor });
-  items[1] = React4(inlineStyles.Path, { d: "M0.5 10 A9.5 9.5 0 0 1 19.5 10", fill: "none", stroke: borderColor, strokeWidth: 1 });
-  return authStore(tmp, size);
+  items[0] = unpackModuleId(inlineStyles.Path, { d: "M0 10 A10 10 0 0 1 20 10 L20 11 L0 11 Z", fill: backgroundColor });
+  items[1] = unpackModuleId(inlineStyles.Path, { d: "M0.5 10 A9.5 9.5 0 0 1 19.5 10", fill: "none", stroke: borderColor, strokeWidth: 1 });
+  return closure_12(tmp, size);
 });
-let closure_14 = { textVariant: "text-md/normal", emojiOnlyEmojiSize: 32, textMinWidth: 42, statusBubblePaddingHorizontal: 12, statusBubblePaddingVertical: 7 };
-let closure_15 = { [UserProfileThemeTypes.PREVIEW]: { textVariant: "text-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
+let closure_16 = { textVariant: "text-md/normal", emojiOnlyEmojiSize: 32, textMinWidth: 42, statusBubblePaddingHorizontal: 12, statusBubblePaddingVertical: 7 };
+let closure_17 = { [UserProfileThemeTypes.PREVIEW]: { textVariant: "text-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiImage(arg0) {
   let animated;
   let emojiId;
   let style;
@@ -177,7 +176,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return tmp16;
         }
         const obj3 = { style: tmp7, source: tmp15, resizeMode: "contain" };
-        const tmp19 = React4(FastImageDefault, obj3);
+        const tmp19 = unpackModuleId(FastImageDefault, obj3);
         cResult[11] = tmp7;
         cResult[12] = tmp15;
         cResult[13] = tmp19;
@@ -201,7 +200,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp6;
   cResult[4] = items;
   tmp7 = items;
-}) : ((emojiId) => {
+}) : (function EmojiImage(emojiId) {
   let animated;
   let getEmojiURL;
   let items;
@@ -223,10 +222,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   AvatarUtilsDefault;
   tmp5 = Boolean(animated) && setting;
   ({ uri: getEmojiURL(obj2) });
-  return React4(tmp3, obj);
+  return unpackModuleId(tmp3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPlaceholderText) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextStatusContent(isPlaceholderText) {
   let emoji;
   let items;
   let lineClamp;
@@ -247,7 +246,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPlaceholderT
     let tmp7 = tmp4;
     if (tmp7) {
       let obj3;
-      const tmpResult = tmp(1369);
+      const tmpResult = tmp(1381);
       if (tmpResult.isAndroid()) {
         let obj2 = { fontFamily: Fonts.PRIMARY_NORMAL_ITALIC };
         obj3 = obj2;
@@ -275,148 +274,30 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPlaceholderT
       }
       if (cResult[8] !== tmp11) {
         const tmp11Result = tmp11();
-        class P {
-          constructor() {
-            tmp = emoji;
-            id = undefined;
-            if (emoji != null) {
-              id = tmp.id;
-            }
-            if (null != id) {
-              tmp10 = jsxs;
-              tmp11 = Fragment;
-              obj1 = { children: null };
-              tmp12 = jsx;
-              tmp13 = View;
-              obj10 = { children: null };
-              tmp14 = jsx;
-              tmp15 = f55949;
-              obj11 = { emojiId: null, size: null, animated: null, style: null };
-              obj11.emojiId = tmp.id;
-              tmp16 = lineHeight;
-              num2 = 0.9;
-              obj11.size = 0.9 * lineHeight;
-              obj11.animated = tmp.animated;
-              obj12 = { marginBottom: null };
-              num3 = 0.1;
-              obj12.marginBottom = 0.1 * -lineHeight;
-              obj11.style = obj12;
-              obj10.children = jsx(f55949, obj11);
-              items = [, ];
-              items[0] = jsx(View, obj10);
-              tmp17 = jsx;
-              tmp18 = View;
-              obj13 = { style: null };
-              obj14 = { width: null };
-              num4 = 0.5;
-              obj14.width = 0.5 * lineHeight;
-              obj13.style = obj14;
-              items[1] = jsx(View, obj13);
-              obj1.children = items;
-              tmp4 = jsxs(Fragment, obj1);
-            } else {
-              name = undefined;
-              if (tmp != null) {
-                name = tmp.name;
-              }
-              tmp4 = null;
-              if (null != name) {
-                tmp5 = jsxs;
-                tmp6 = Fragment;
-                obj = { children: null };
-                items1 = [, ];
-                items1[0] = tmp.name;
-                tmp7 = jsx;
-                tmp8 = View;
-                obj15 = { style: null };
-                obj16 = { width: null };
-                tmp9 = lineHeight;
-                num = 0.4;
-                obj16.width = 0.4 * lineHeight;
-                obj15.style = obj16;
-                items1[1] = jsx(View, obj15);
-                obj.children = items1;
-                tmp4 = jsxs(Fragment, obj);
-              }
-            }
-            return tmp4;
-          }
-        }
+        cResult[8] = tmp11;
         cResult[9] = tmp11Result;
         tmp12 = tmp11Result;
       } else {
         tmp12 = cResult[9];
       }
-      class P {
-        constructor() {
-          tmp = emoji;
-          id = undefined;
-          if (emoji != null) {
-            id = tmp.id;
-          }
-          if (null != id) {
-            tmp10 = jsxs;
-            tmp11 = Fragment;
-            obj1 = { children: null };
-            tmp12 = jsx;
-            tmp13 = View;
-            obj10 = { children: null };
-            tmp14 = jsx;
-            tmp15 = f55949;
-            obj11 = { emojiId: null, size: null, animated: null, style: null };
-            obj11.emojiId = tmp.id;
-            tmp16 = lineHeight;
-            num2 = 0.9;
-            obj11.size = 0.9 * lineHeight;
-            obj11.animated = tmp.animated;
-            obj12 = { marginBottom: null };
-            num3 = 0.1;
-            obj12.marginBottom = 0.1 * -lineHeight;
-            obj11.style = obj12;
-            obj10.children = jsx(f55949, obj11);
-            items = [, ];
-            items[0] = jsx(View, obj10);
-            tmp17 = jsx;
-            tmp18 = View;
-            obj13 = { style: null };
-            obj14 = { width: null };
-            num4 = 0.5;
-            obj14.width = 0.5 * lineHeight;
-            obj13.style = obj14;
-            items[1] = jsx(View, obj13);
-            obj1.children = items;
-            tmp4 = jsxs(Fragment, obj1);
-          } else {
-            name = undefined;
-            if (tmp != null) {
-              name = tmp.name;
-            }
-            tmp4 = null;
-            if (null != name) {
-              tmp5 = jsxs;
-              tmp6 = Fragment;
-              obj = { children: null };
-              items1 = [, ];
-              items1[0] = tmp.name;
-              tmp7 = jsx;
-              tmp8 = View;
-              obj15 = { style: null };
-              obj16 = { width: null };
-              tmp9 = lineHeight;
-              num = 0.4;
-              obj16.width = 0.4 * lineHeight;
-              obj15.style = obj16;
-              items1[1] = jsx(View, obj15);
-              obj.children = items1;
-              tmp4 = jsxs(Fragment, obj);
+      if (cResult[10] === lineClamp) {
+        if (cResult[11] === onTextLayout) {
+          if (cResult[12] === tmp12) {
+            if (cResult[13] === text) {
+              if (cResult[14] === tmp9) {
+                let tmp14;
+                if (cResult[15] === textVariant) {
+                  tmp14 = cResult[16];
+                }
+                return tmp14;
+              }
             }
           }
-          return tmp4;
         }
       }
       let obj4 = { variant: textVariant, color: "text-default", lineClamp, onTextLayout, style: tmp9, children: items };
       items = [tmp12, text];
-      const tmp16 = closure_10(tmp(4892).Text, obj4);
+      const tmp16 = closure_12(tmp(5086).Text, obj4);
       cResult[10] = lineClamp;
       cResult[11] = onTextLayout;
       cResult[12] = tmp12;
@@ -424,78 +305,51 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPlaceholderT
       cResult[14] = tmp9;
       cResult[15] = textVariant;
       cResult[16] = tmp16;
+      tmp14 = tmp16;
     }
-    class P {
-      constructor() {
-        tmp = emoji;
-        id = undefined;
-        if (emoji != null) {
-          id = tmp.id;
-        }
-        if (null != id) {
-          tmp10 = jsxs;
-          tmp11 = Fragment;
-          obj1 = { children: null };
-          tmp12 = jsx;
-          tmp13 = View;
-          obj10 = { children: null };
-          tmp14 = jsx;
-          tmp15 = f55949;
-          obj11 = { emojiId: null, size: null, animated: null, style: null };
-          obj11.emojiId = tmp.id;
-          tmp16 = lineHeight;
-          num2 = 0.9;
-          obj11.size = 0.9 * lineHeight;
-          obj11.animated = tmp.animated;
-          obj12 = { marginBottom: null };
-          num3 = 0.1;
-          obj12.marginBottom = 0.1 * -lineHeight;
-          obj11.style = obj12;
-          obj10.children = jsx(f55949, obj11);
-          items = [, ];
-          items[0] = jsx(View, obj10);
-          tmp17 = jsx;
-          tmp18 = View;
-          obj13 = { style: null };
-          obj14 = { width: null };
-          num4 = 0.5;
-          obj14.width = 0.5 * lineHeight;
-          obj13.style = obj14;
-          items[1] = jsx(View, obj13);
-          obj1.children = items;
-          tmp4 = jsxs(Fragment, obj1);
-        } else {
-          name = undefined;
-          if (tmp != null) {
-            name = tmp.name;
-          }
-          tmp4 = null;
-          if (null != name) {
-            tmp5 = jsxs;
-            tmp6 = Fragment;
-            obj = { children: null };
-            items1 = [, ];
-            items1[0] = tmp.name;
-            tmp7 = jsx;
-            tmp8 = View;
-            obj15 = { style: null };
-            obj16 = { width: null };
-            tmp9 = lineHeight;
-            num = 0.4;
-            obj16.width = 0.4 * lineHeight;
-            obj15.style = obj16;
-            items1[1] = jsx(View, obj15);
-            obj.children = items1;
-            tmp4 = jsxs(Fragment, obj);
-          }
-        }
-        return tmp4;
+    function renderInlineEmojiWithSpacer() {
+      let items;
+      let items1;
+      let obj4;
+      let obj5;
+      let obj7;
+      let obj9;
+      let tmp4;
+      let id;
+      if (emoji != null) {
+        id = tmp.id;
       }
+      if (null != id) {
+        const obj2 = { children: items };
+        const obj3 = { children: unpackModuleId(closure_18, obj4) };
+        obj4 = { emojiId: emoji.id, size: 0.9 * lineHeight, animated: emoji.animated, style: obj5 };
+        obj5 = { marginBottom: 0.1 * -lineHeight };
+        items = [unpackModuleId(metroImportAll, obj3), ];
+        const obj6 = { style: obj7 };
+        obj7 = { width: 0.5 * lineHeight };
+        items[1] = unpackModuleId(metroImportAll, obj6);
+        tmp4 = closure_12(map1, obj2);
+      } else {
+        let name;
+        if (emoji != null) {
+          name = tmp.name;
+        }
+        tmp4 = null;
+        if (null != name) {
+          const obj = { children: items1 };
+          items1 = [emoji.name, ];
+          const obj8 = { style: obj9 };
+          obj9 = { width: 0.4 * lineHeight };
+          items1[1] = unpackModuleId(metroImportAll, obj8);
+          tmp4 = closure_12(map1, obj);
+        }
+      }
+      return tmp4;
     }
     cResult[5] = emoji;
     cResult[6] = lineHeight;
-    cResult[7] = P;
-    tmp11 = P;
+    cResult[7] = renderInlineEmojiWithSpacer;
+    tmp11 = renderInlineEmojiWithSpacer;
   }
   let obj5 = { paddingVertical: result };
   const merged = Object.assign(tmp6);
@@ -503,7 +357,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPlaceholderT
   cResult[3] = tmp6;
   cResult[4] = obj5;
   tmp9 = obj5;
-}) : ((arg0) => {
+}) : (function TextStatusContent(arg0) {
   let emoji;
   let isPlaceholderText;
   let items;
@@ -545,14 +399,14 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPlaceholderT
   }
   if (null != id) {
     const obj6 = { children: items };
-    const obj7 = { children: React4(closure_16, obj8) };
+    const obj7 = { children: unpackModuleId(closure_18, obj8) };
     obj8 = { emojiId: emoji.id, size: 0.9 * lineHeight, animated: emoji.animated, style: obj9 };
     obj9 = { marginBottom: 0.1 * -lineHeight };
-    items = [React4(metroRequire, obj7), ];
+    items = [unpackModuleId(metroImportAll, obj7), ];
     const obj10 = { style: obj11 };
     obj11 = { width: 0.5 * lineHeight };
-    items[1] = React4(metroRequire, obj10);
-    tmp5Result = tmp5(unpackModuleId, obj6);
+    items[1] = unpackModuleId(metroImportAll, obj10);
+    tmp5Result = tmp5(map1, obj6);
   } else {
     let name;
     if (emoji != null) {
@@ -564,24 +418,24 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPlaceholderT
       items1 = [emoji.name, ];
       const obj13 = { style: obj14 };
       obj14 = { width: 0.4 * lineHeight };
-      items1[1] = React4(metroRequire, obj13);
-      tmp5Result = tmp5(unpackModuleId, obj12);
+      items1[1] = unpackModuleId(metroImportAll, obj13);
+      tmp5Result = tmp5(map1, obj12);
     }
   }
   items2 = [tmp5Result, text];
-  return authStore(Text, obj5);
+  return closure_12(Text, obj5);
 });
 createStyles = createStyles_mod;
-let closure_18 = createStyles.createStyles(() => ({ container: { alignItems: "center" } }));
+let closure_20 = createStyles.createStyles(() => ({ container: { alignItems: "center" } }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiOnlyStatusContent(arg0) {
   let _Boolean;
   let animated;
   let emoji;
   const obj = react2;
   const cResult = obj.c(14);
   ({ emoji, size } = arg0);
-  const tmp3 = closure_18();
+  const tmp3 = closure_20();
   const AnimateEmoji = UserSettings.AnimateEmoji;
   const setting = AnimateEmoji.useSetting();
   if (cResult[0] === setting) {
@@ -625,7 +479,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             return tmp21;
           }
           const obj3 = { style: tmp3.container, children: tmp17 };
-          const tmp24 = React4(metroRequire, obj3);
+          const tmp24 = unpackModuleId(metroImportAll, obj3);
           cResult[11] = tmp3.container;
           cResult[12] = tmp17;
           cResult[13] = tmp24;
@@ -634,7 +488,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj4 = { textEmojiStyle: tmp14, fastImageStyle: tmp15, src: tmp5, name: str };
-    const tmp20 = React4(EmojiDefault, obj4);
+    const tmp20 = unpackModuleId(EmojiDefault, obj4);
     cResult[6] = tmp5;
     cResult[7] = tmp14;
     cResult[8] = tmp15;
@@ -663,7 +517,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = emoji;
   cResult[2] = emojiURL;
   tmp5 = emojiURL;
-}) : ((arg0) => {
+}) : (function EmojiOnlyStatusContent(arg0) {
   let _Boolean;
   let animated;
   let emoji;
@@ -671,7 +525,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let str;
   let tmp14;
   ({ emoji, size } = arg0);
-  const tmp = closure_18();
+  const tmp = closure_20();
   const AnimateEmoji = UserSettings.AnimateEmoji;
   let id;
   const setting = AnimateEmoji.useSetting();
@@ -691,10 +545,10 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     _Boolean(animated) && setting;
     emojiURL = getEmojiURL(obj);
   }
-  const obj2 = { style: tmp.container, children: React4(tmp14, obj3) };
+  const obj2 = { style: tmp.container, children: unpackModuleId(tmp14, obj3) };
   obj3 = { textEmojiStyle: { fontSize: size }, fastImageStyle: { width: size, height: size }, src: emojiURL, name: str };
   str = undefined;
-  const tmp13 = metroRequire;
+  const tmp13 = metroImportAll;
   tmp14 = EmojiDefault;
   if (emoji != null) {
     str = emoji.name;
@@ -702,99 +556,105 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (str == null) {
     str = "";
   }
-  return React4(tmp13, obj2);
+  return unpackModuleId(tmp13, obj2);
 });
-const forwardRef = react.forwardRef;
 ReactCompilerGating = ReactCompilerGating_mod;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((prompt, ref) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileCustomStatusBubble(ref) {
   let BACKGROUND_SURFACE_HIGH;
+  let Text;
   let _prompt;
-  let closure_4;
+  let closure_1;
+  let closure_10;
+  let closure_6;
   let customStatusActivity;
   let editEnabled;
-  let first;
-  let gameMentionsAsPlainText;
+  let emojiOnlyEmojiSize;
+  let emojiOnlyStyle;
+  let first1;
+  let formatToPlainStringResult;
   let hasCustomProfileTheme;
-  let items;
-  let items1;
+  let intl2;
+  let intl4;
+  let items2;
   let items3;
-  let items4;
+  let items5;
+  let items6;
+  let items7;
   let num2;
   let num3;
+  let obj11;
+  let obj12;
   let obj7;
   let onPressTruncatedStatus;
   let placeholderText;
   let previewEmoji;
   let previewText;
+  let require;
   let showFullStatus;
   let statusBubblePaddingHorizontal;
   let statusBubblePaddingVertical;
   let style;
   let textMinWidth;
+  let textVariant;
   let themeType;
-  let tmp9;
-  let tmp = onPressTruncatedStatus;
-  let tmp2 = _prompt;
-  let obj = onPressTruncatedStatus(_prompt[10]);
-  const cResult = obj.c(21);
-  ({ customStatusActivity, themeType, hasCustomProfileTheme, editEnabled, showFullStatus, onPressTruncatedStatus } = prompt);
-  ({ style, previewEmoji, previewText, placeholderText } = prompt);
-  _prompt = prompt.prompt;
-  let tmp4 = undefined !== editEnabled;
-  const emojiOnlyStyle = prompt.emojiOnlyStyle;
-  if (tmp4) {
-    tmp4 = editEnabled;
+  let tmp10;
+  let tmp11;
+  let tmp36;
+  let tmp61;
+  let tmp = require;
+  let obj = require("react");
+  const cResult = obj.c(10);
+  ref = ref.ref;
+  const tmp4 = previewEmoji(ref, emojiOnlyEmojiSize);
+  ({ customStatusActivity, themeType, hasCustomProfileTheme, editEnabled, showFullStatus, onPressTruncatedStatus, previewEmoji, previewText, placeholderText, prompt: require } = tmp4);
+  let tmp5 = undefined !== editEnabled;
+  ({ style, emojiOnlyStyle } = tmp4);
+  if (tmp5) {
+    tmp5 = editEnabled;
   }
-  editEnabled = tmp4;
-  let tmp5 = undefined !== showFullStatus && showFullStatus;
-  react = tmp5;
-  let tmp6 = gameMentionsAsPlainText(hasCustomProfileTheme);
-  const addStatusIconSpacer = tmp6;
-  let tmp8 = placeholderText;
-  const useToken = tmp(tmp2[18]).useToken;
-  tmp(tmp2[18]);
-  const colors = placeholderText(tmp2[8]).colors;
+  importDefault = tmp6;
+  const tmp7 = closure_14(hasCustomProfileTheme);
+  let tmp9 = importDefault;
+  const useToken = tmp(tmp2[19]).useToken;
+  tmp(textVariant[19]);
+  const colors = require("native").colors;
   if (hasCustomProfileTheme) {
     BACKGROUND_SURFACE_HIGH = colors.CUSTOM_STATUS_BUBBLE_BG;
-    tmp9 = tmp8;
+    tmp10 = tmp9;
+    tmp11 = tmp9;
   } else {
     BACKGROUND_SURFACE_HIGH = colors.BACKGROUND_SURFACE_HIGH;
-    tmp9 = tmp8;
+    tmp10 = tmp9;
+    tmp11 = tmp9;
   }
   const token = useToken(BACKGROUND_SURFACE_HIGH);
-  const useToken2 = tmp(tmp2[18]).useToken;
-  tmp(tmp2[18]);
-  const colors2 = tmp9(tmp2[8]).colors;
+  const useToken2 = tmp(tmp2[19]).useToken;
+  tmp(textVariant[19]);
+  const colors2 = tmp11(tmp2[9]).colors;
   const token2 = useToken2(hasCustomProfileTheme ? colors2.BORDER_MUTED : colors2.BORDER_SUBTLE);
-  let tmp13;
+  let tmp15;
   if (null != themeType) {
-    tmp13 = closure_15[themeType];
+    tmp15 = closure_17[themeType];
   }
-  if (tmp13 == null) {
-    tmp13 = closure_14;
+  if (tmp15 == null) {
+    tmp15 = closure_16;
   }
-  const textVariant = tmp13.textVariant;
-  const emojiOnlyEmojiSize = tmp13.emojiOnlyEmojiSize;
-  ({ statusBubblePaddingHorizontal, statusBubblePaddingVertical, textMinWidth } = tmp13);
-  const tmpResult6 = tmp(tmp2[19]);
-  const trackUserProfileAction = tmpResult6.useUserProfileAnalyticsContext().trackUserProfileAction;
-  const useGameMentionsAsPlainText = tmp(tmp2[20]).useGameMentionsAsPlainText;
-  tmp(tmp2[20]);
+  textVariant = tmp15.textVariant;
+  emojiOnlyEmojiSize = tmp15.emojiOnlyEmojiSize;
+  ({ statusBubblePaddingHorizontal, statusBubblePaddingVertical, textMinWidth } = tmp15);
+  const tmpResult8 = tmp(textVariant[20]);
+  const trackUserProfileAction = tmpResult8.useUserProfileAnalyticsContext().trackUserProfileAction;
+  const useGameMentionsAsPlainText = tmp(tmp2[21]).useGameMentionsAsPlainText;
+  tmp(textVariant[21]);
   if (undefined === previewText) {
     let state;
     if (customStatusActivity != null) {
       state = customStatusActivity.state;
     }
     previewText = state;
-  } else {
-    let str = "";
   }
-  gameMentionsAsPlainText = useGameMentionsAsPlainText(previewText);
-  let tmp18 = null != gameMentionsAsPlainText;
-  if (tmp18) {
-    let str2 = "";
-    tmp18 = "" !== gameMentionsAsPlainText;
-  }
+  const gameMentionsAsPlainText = useGameMentionsAsPlainText(previewText);
+  let tmp20 = null != gameMentionsAsPlainText && "" !== gameMentionsAsPlainText;
   if (undefined === previewEmoji) {
     let emoji;
     if (customStatusActivity != null) {
@@ -802,333 +662,266 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     }
     previewEmoji = emoji;
   }
-  let closure_10 = tmp21;
-  let tmp22 = !tmp18 && !tmp20 && undefined !== placeholderText;
-  if (tmp22) {
-    let str3 = "";
-    tmp22 = "" !== placeholderText;
+  react = tmp23;
+  let tmp24 = !tmp20 && !tmp22 && undefined !== placeholderText && "" !== placeholderText;
+  const isPlaceholderText = tmp24;
+  let str4 = gameMentionsAsPlainText;
+  if (tmp24) {
+    str4 = placeholderText;
   }
-  const isPlaceholderText = tmp22;
-  if (isPlaceholderText) {
-    gameMentionsAsPlainText = placeholderText;
+  let closure_9 = tmp25;
+  if (!tmp20) {
+    tmp20 = tmp22;
   }
-  closure_13 = tmp23;
-  if (!tmp18) {
-    tmp18 = tmp20;
+  if (!tmp20) {
+    tmp20 = !tmp5 && tmp24;
   }
-  if (!tmp18) {
-    tmp18 = !tmp4 && tmp22;
-    const tmp24 = !tmp4 && tmp22;
-  }
-  closure_14 = tmp25;
-  let obj3 = react;
-  [closure_15, closure_16] = editEnabled(react.useState(false), 2);
+  const tmp28 = trackUserProfileAction(react.useState(false), 2);
+  Fonts = tmp28[1];
   let num = 0;
-  const tmp26 = editEnabled(react.useState(false), 2);
-  if (null != gameMentionsAsPlainText && "" !== gameMentionsAsPlainText) {
+  const first = tmp28[0];
+  if (null != str4 && "" !== str4) {
     num = textMinWidth;
   }
   let obj2 = { minWidth: num, minHeight: num2, paddingVertical: num3, paddingHorizontal: statusBubblePaddingHorizontal };
   num2 = 0;
-  if (null != previewEmoji && !tmp18) {
+  if (null != previewEmoji && !tmp20) {
     num2 = emojiOnlyEmojiSize + 2 * statusBubblePaddingVertical;
   }
-  if (null != gameMentionsAsPlainText && "" !== gameMentionsAsPlainText) {
+  if (null != str4 && "" !== str4) {
     num3 = statusBubblePaddingVertical;
   } else {
     num3 = 0;
   }
-  const hitSlop = { top: statusBubblePaddingVertical, bottom: statusBubblePaddingVertical, left: statusBubblePaddingHorizontal, right: statusBubblePaddingHorizontal };
-  ref = obj3.useRef(null);
+  const rect = { top: statusBubblePaddingVertical, bottom: statusBubblePaddingVertical, left: statusBubblePaddingHorizontal, right: statusBubblePaddingHorizontal };
+  const ref1 = obj3.useRef(null);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function s() {
-      return ref.current;
+      return ref1.current;
     };
     cResult[0] = fn;
-    first = fn;
+    first1 = fn;
   } else {
-    first = cResult[0];
+    first1 = cResult[0];
   }
-  const imperativeHandle = obj3.useImperativeHandle(ref, first);
-  const tmpResult8 = tmp(tmp2[21]);
-  const scaledTextLineHeight = tmpResult8.useScaledTextLineHeight(textVariant);
-  if (!tmp18) {
-    if (!(!tmp18 && tmp4)) {
+  const imperativeHandle = obj3.useImperativeHandle(ref, first1);
+  const tmpResult10 = tmp(textVariant[22]);
+  const scaledTextLineHeight = tmpResult10.useScaledTextLineHeight(textVariant);
+  if (!tmp20) {
+    if (!(!tmp20 && tmp5)) {
       return null;
     }
   }
-  if (cResult[1] === _prompt) {
-    let tmp31;
-    if (cResult[2] === trackUserProfileAction) {
-      tmp31 = cResult[3];
+  let name;
+  if (previewEmoji != null) {
+    name = previewEmoji.name;
+  }
+  let items = [name, str4];
+  const found = items.filter((item) => null != item);
+  const joined = found.join(" ");
+  if (cResult[1] !== joined) {
+    const obj4 = { text: joined };
+    cResult[1] = joined;
+    cResult[2] = obj4;
+    tmp36 = obj4;
+  } else {
+    tmp36 = cResult[2];
+  }
+  if (cResult[3] === tmp7.bubble) {
+    let tmp37;
+    if (cResult[4] === tmp7.smallCircle) {
+      tmp37 = cResult[5];
     }
-    const onPress = tmp31;
-    function renderStatusContent() {
-      let rounded;
-      let tmp8Result;
-      const tmp = closure_13;
-      if (tmp) {
-        const obj2 = { text: gameMentionsAsPlainText, isPlaceholderText, emoji: previewEmoji, textVariant, lineClamp: rounded, lineHeight: scaledTextLineHeight };
-        rounded = undefined;
-        const tmp8 = React4;
-        const tmp9 = closure_17;
-        if (!closure_4) {
-          const _Math = Math;
-          rounded = Math.ceil(2 * hasOwnProperty.getFontScale());
+    if (cResult[6] === token) {
+      if (cResult[7] === token2) {
+        let tmp39;
+        let tmp50Result;
+        if (cResult[8] === tmp7.largeCircle) {
+          tmp39 = cResult[9];
         }
-        tmp8Result = tmp8(tmp9, obj2);
-      } else if (closure_10) {
-        const obj = { emoji: previewEmoji, size: emojiOnlyEmojiSize };
-        tmp8Result = React4(closure_19, obj);
-      }
-      return tmp8Result;
-    }
-    let name;
-    if (previewEmoji != null) {
-      name = previewEmoji.name;
-    }
-    if (cResult[4] === name) {
-      let obj6;
-      let tmp35;
-      if (cResult[5] === gameMentionsAsPlainText) {
-        obj6 = cResult[6];
-      }
-      const joined = obj6.join(" ");
-      if (cResult[7] !== joined) {
-        let obj4 = { text: joined };
-        cResult[7] = joined;
-        cResult[8] = obj4;
-        tmp35 = obj4;
-      } else {
-        tmp35 = cResult[8];
-      }
-      const accessibilityValue = tmp35;
-      let tmp36;
-      if (null != previewEmoji && !tmp18) {
-        tmp36 = emojiOnlyStyle;
-      }
-      if (cResult[9] === style) {
-        let tmp37;
-        if (cResult[10] === tmp36) {
-          tmp37 = cResult[11];
+        const items1 = [style, ];
+        let tmp45;
+        if (null != previewEmoji && !tmp20) {
+          tmp45 = emojiOnlyStyle;
         }
-        if (cResult[12] === tmp6.bubble) {
-          let tmp38;
-          let tmp42;
-          if (cResult[13] === tmp6.smallCircle) {
-            tmp38 = cResult[14];
-          }
-          if (null != onPressTruncatedStatus) {
-            if (!tmp5) {
-              if (null != gameMentionsAsPlainText && "" !== gameMentionsAsPlainText) {
-                let obj5 = { style: items, children: previewEmoji(hitSlop, obj7) };
-                items = [, , , ];
-                ({ bubble: arr4[0], statusBubble: arr4[1] } = tmp6);
-                items[2] = obj2;
-                items[3] = tmp6.statusBubbleMeasureable;
-                obj7 = {
-                  text: gameMentionsAsPlainText,
-                  isPlaceholderText: tmp22,
-                  emoji: previewEmoji,
-                  textVariant,
-                  onTextLayout(nativeEvent) {
-                                  closure_16(nativeEvent.nativeEvent.lines.length > Math.ceil(2 * hasOwnProperty.getFontScale()));
-                                },
-                  lineHeight: scaledTextLineHeight
-                };
-                tmp42 = previewEmoji(textVariant, obj5);
-              }
+        const obj5 = { style: items1, children: items2 };
+        items1[1] = tmp45;
+        items2 = [tmp37, , ];
+        let tmp46;
+        if (null != onPressTruncatedStatus) {
+          if (!(undefined !== showFullStatus && showFullStatus)) {
+            if (null != str4 && "" !== str4) {
+              const obj6 = { style: items3, children: ref1(closure_19, obj7) };
+              items3 = [, , , ];
+              ({ bubble: arr5[0], statusBubble: arr5[1] } = tmp7);
+              items3[2] = obj2;
+              items3[3] = tmp7.statusBubbleMeasureable;
+              obj7 = {
+                text: str4,
+                isPlaceholderText: tmp24,
+                emoji: previewEmoji,
+                textVariant,
+                onTextLayout(nativeEvent) {
+                              closure_10(nativeEvent.nativeEvent.lines.length > Math.ceil(2 * metroImportDefault.getFontScale()));
+                            },
+                lineHeight: scaledTextLineHeight
+              };
+              tmp46 = ref1(tmp44, obj6);
             }
           }
-          if (cResult[15] === token) {
-            if (cResult[16] === token2) {
-              let tmp46;
-              let tmp50;
-              if (cResult[17] === tmp6.largeCircle) {
-                tmp46 = cResult[18];
+        }
+        items2[1] = tmp46;
+        const items4 = [, , , ];
+        ({ bubble: arr6[0], statusBubble: arr6[1] } = tmp7);
+        items4[2] = obj2;
+        function handlePressAddOrEditStatus() {
+          let items;
+          trackUserProfileAction({ action: "PRESS_EDIT_CUSTOM_STATUS" });
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet();
+          const obj2 = { analyticsLocations: items, prompt: require };
+          const openEditCustomStatusModal = CustomStatusUtils.openEditCustomStatusModal;
+          items = [];
+          CustomStatusUtils;
+          items[0] = AnalyticsLocationDefault.USER_PROFILE_CUSTOM_STATUS_BUBBLE;
+          const result = openEditCustomStatusModal(obj2);
+        }
+        const obj8 = { style: items4, ref: ref1, children: items5 };
+        const tmp49 = !(null != previewEmoji && !tmp20) && tmp7.statusBubbleLeftAligned;
+        items4[3] = tmp49;
+        items5 = [tmp39, ];
+        if (!tmp20 && tmp5) {
+          let stringResult = placeholderText;
+          if (!tmp24) {
+            const intl3 = tmp(tmp2[26]).intl;
+            stringResult = intl3.string(tmp(tmp2[26]).t.Vq4UmS);
+          }
+          const obj9 = { accessibilityRole: "button", accessibilityLabel: intl4.string(tmp(textVariant[26]).t["zrpF/b"]), accessibilityHint: formatToPlainStringResult, onPress: handlePressAddOrEditStatus, hitSlop: rect, children: scaledTextLineHeight(Text, obj11) };
+          const PressableOpacity3 = tmp(tmp2[27]).PressableOpacity;
+          intl4 = tmp(tmp2[26]).intl;
+          formatToPlainStringResult = undefined;
+          if (tmp24) {
+            const intl5 = tmp(tmp2[26]).intl;
+            const obj10 = { prompt: placeholderText };
+            formatToPlainStringResult = intl5.formatToPlainString(tmp(tmp2[26]).t.ioWOMP, obj10);
+          }
+          let str7 = "text-md/medium";
+          Text = tmp(tmp2[17]).Text;
+          if (tmp24) {
+            str7 = "text-md/normal";
+          }
+          let _Math = Math;
+          obj11 = { variant: str7, color: "control-secondary-text-default", lineClamp: Math.ceil(2 * isPlaceholderText.getFontScale()), style: obj12, children: items6 };
+          obj12 = { paddingVertical: scaledTextLineHeight / 10 };
+          if (tmp24) {
+            let obj14;
+            const tmpResult11 = tmp(textVariant[16]);
+            if (tmpResult11.isAndroid()) {
+              obj14 = { fontFamily: Fonts.PRIMARY_NORMAL_ITALIC };
+              const obj13 = { fontFamily: Fonts.PRIMARY_NORMAL_ITALIC };
+            } else {
+              obj14 = { fontStyle: "italic" };
+            }
+            tmp24 = obj14;
+          }
+          const merged = Object.assign(tmp24);
+          const obj15 = { color: tmp10(textVariant[9]).colors.CONTROL_SECONDARY_TEXT_DEFAULT, size: "xs", style: tmp61 };
+          const CirclePlusIcon = tmp(tmp2[28]).CirclePlusIcon;
+          tmp61 = undefined;
+          const tmpResult12 = tmp(textVariant[16]);
+          if (tmpResult12.isAndroid()) {
+            tmp61 = { marginBottom: 0.1 * -scaledTextLineHeight };
+            const obj16 = { marginBottom: 0.1 * -scaledTextLineHeight };
+          }
+          const obj17 = { children: ref1(CirclePlusIcon, obj15) };
+          items6 = [ref1(str4, obj17), , ];
+          const obj18 = { style: tmp7.addStatusIconSpacer };
+          items6[1] = ref1(str4, obj18);
+          items6[2] = stringResult;
+          tmp50Result = tmp54(PressableOpacity3, obj9);
+        } else {
+          function renderStatusContent() {
+            let rounded;
+            let tmp8Result;
+            const tmp = closure_9;
+            if (tmp) {
+              const obj2 = { text: str4, isPlaceholderText, emoji: previewEmoji, textVariant, lineClamp: rounded, lineHeight: scaledTextLineHeight };
+              rounded = undefined;
+              const tmp8 = unpackModuleId;
+              const tmp9 = closure_19;
+              if (!closure_1) {
+                const _Math = Math;
+                rounded = Math.ceil(2 * metroImportDefault.getFontScale());
               }
-              function renderStatusContentMaybeWithPressable() {
-                let Text;
-                let formatToPlainStringResult;
-                let intl2;
-                let intl4;
-                let items;
-                let obj4;
-                let obj5;
-                let str2;
-                let tmp49;
-                let tmp70;
-                const tmp = closure_14;
-                if (tmp) {
-                  let stringResult;
-                  let tmp28 = isPlaceholderText;
-                  if (tmp28) {
-                    stringResult = placeholderText;
-                  } else {
-                    const intl3 = intl6.intl;
-                    stringResult = intl3.string(intl6.t.Vq4UmS);
+              tmp8Result = tmp8(tmp9, obj2);
+            } else if (closure_6) {
+              const obj = { emoji: previewEmoji, size: emojiOnlyEmojiSize };
+              tmp8Result = unpackModuleId(closure_21, obj);
+            }
+            return tmp8Result;
+          }
+          if (tmp5) {
+            const obj19 = { accessibilityRole: "button", accessibilityLabel: intl2.string(tmp(textVariant[26]).t.QdHxos), accessibilityValue: tmp36, onPress: handlePressAddOrEditStatus, hitSlop: rect, children: renderStatusContent() };
+            const PressableOpacity2 = tmp(tmp2[27]).PressableOpacity;
+            intl2 = tmp(tmp2[26]).intl;
+            tmp50Result = ref1(PressableOpacity2, obj19);
+          } else {
+            if (null != onPressTruncatedStatus) {
+              if (first) {
+                if (!tmp24) {
+                  const PressableOpacity = tmp(tmp2[27]).PressableOpacity;
+                  const intl = tmp(tmp2[26]).intl;
+                  const formatToPlainString = intl.formatToPlainString;
+                  let str6;
+                  const UpF5Qa = tmp(tmp2[26]).t.UpF5Qa;
+                  const tmp50 = ref1;
+                  if (previewEmoji != null) {
+                    str6 = previewEmoji.name;
                   }
-                  const obj2 = { accessibilityRole: "button", accessibilityLabel: intl4.string(intl6.t["zrpF/b"]), accessibilityHint: formatToPlainStringResult, onPress, hitSlop, children: tmp49(Text, obj4) };
-                  const PressableOpacity3 = Pressables.PressableOpacity;
-                  intl4 = intl6.intl;
-                  formatToPlainStringResult = undefined;
-                  const tmp34 = React4;
-                  if (tmp28) {
-                    const intl5 = intl6.intl;
-                    const obj3 = { prompt: placeholderText };
-                    formatToPlainStringResult = intl5.formatToPlainString(intl6.t.ioWOMP, obj3);
+                  if (str6 == null) {
+                    str6 = "";
                   }
-                  let str3 = "text-md/medium";
-                  Text = Text_Text.Text;
-                  tmp49 = authStore;
-                  if (tmp28) {
-                    str3 = "text-md/normal";
+                  const obj20 = { emoji: str6, status: str4 };
+                  if (str4 == null) {
+                    str4 = "";
                   }
-                  const _Math = Math;
-                  obj4 = { variant: str3, color: "control-secondary-text-default", lineClamp: Math.ceil(2 * hasOwnProperty.getFontScale()), style: obj5, children: items };
-                  obj5 = { paddingVertical: scaledTextLineHeight / 10 };
-                  const tmp54 = scaledTextLineHeight;
-                  if (tmp28) {
-                    let obj7;
-                    const obj8 = PlatformUtils;
-                    if (obj8.isAndroid()) {
-                      obj7 = { fontFamily: Fonts.PRIMARY_NORMAL_ITALIC };
-                      const obj6 = { fontFamily: Fonts.PRIMARY_NORMAL_ITALIC };
-                    } else {
-                      obj7 = { fontStyle: "italic" };
-                    }
-                    tmp28 = obj7;
-                  }
-                  const merged = Object.assign(tmp28);
-                  const obj9 = { color: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT, size: "xs", style: tmp70 };
-                  const CirclePlusIcon = CirclePlusIcon2.CirclePlusIcon;
-                  tmp70 = undefined;
-                  const obj12 = PlatformUtils;
-                  const tmp61 = React4;
-                  const tmp63 = React4;
-                  if (obj12.isAndroid()) {
-                    tmp70 = { marginBottom: 0.1 * -tmp54 };
-                    const obj10 = { marginBottom: 0.1 * -tmp54 };
-                  }
-                  const obj11 = { children: tmp63(CirclePlusIcon, obj9) };
-                  items = [tmp61(metroRequire, obj11), , ];
-                  const obj13 = { style: addStatusIconSpacer.addStatusIconSpacer };
-                  items[1] = React4(metroRequire, obj13);
-                  items[2] = stringResult;
-                  return tmp34(PressableOpacity3, obj2);
-                } else {
-                  let tmp6Result;
-                  const tmp2 = editEnabled;
-                  if (tmp2) {
-                    const obj14 = { accessibilityRole: "button", accessibilityLabel: intl2.string(intl6.t.QdHxos), accessibilityValue, onPress, hitSlop, children: renderStatusContent() };
-                    const PressableOpacity2 = Pressables.PressableOpacity;
-                    intl2 = intl6.intl;
-                    tmp6Result = React4(PressableOpacity2, obj14);
-                  } else {
-                    if (null != onPressTruncatedStatus) {
-                      const tmp73 = closure_15;
-                      if (tmp73) {
-                        const tmp5 = isPlaceholderText;
-                        if (!tmp5) {
-                          const PressableOpacity = Pressables.PressableOpacity;
-                          const intl = intl6.intl;
-                          const formatToPlainString = intl.formatToPlainString;
-                          let str;
-                          const UpF5Qa = intl6.t.UpF5Qa;
-                          const tmp6 = React4;
-                          if (previewEmoji != null) {
-                            str = previewEmoji.name;
-                          }
-                          if (str == null) {
-                            str = "";
-                          }
-                          const obj = { emoji: str, status: str2 };
-                          str2 = gameMentionsAsPlainText;
-                          if (gameMentionsAsPlainText == null) {
-                            str2 = "";
-                          }
-                          const obj15 = { accessibilityRole: "button", accessibilityLabel: formatToPlainString(UpF5Qa, obj), onPress: tmp3, hitSlop, children: renderStatusContent() };
-                          tmp6Result = tmp6(PressableOpacity, obj15);
-                        }
-                      }
-                    }
-                    tmp6Result = renderStatusContent();
-                  }
-                  return tmp6Result;
+                  const obj21 = { accessibilityRole: "button", accessibilityLabel: formatToPlainString(UpF5Qa, obj20), onPress: onPressTruncatedStatus, hitSlop: rect, children: renderStatusContent() };
+                  tmp50Result = tmp50(PressableOpacity, obj21);
                 }
               }
-              if (cResult[19] !== renderStatusContentMaybeWithPressable) {
-                let result = renderStatusContentMaybeWithPressable();
-                cResult[19] = renderStatusContentMaybeWithPressable;
-                cResult[20] = result;
-                tmp50 = result;
-              } else {
-                tmp50 = cResult[20];
-              }
-              let obj8 = { style: tmp37, children: items1 };
-              items1 = [tmp38, tmp42, ];
-              const items2 = [, , , ];
-              ({ bubble: arr6[0], statusBubble: arr6[1] } = tmp6);
-              items2[2] = obj2;
-              let tmp54 = !tmp21 && tmp6.statusBubbleLeftAligned;
-              let obj9 = { style: items2, ref, children: items3 };
-              items2[3] = tmp54;
-              items3 = [tmp46, tmp50];
-              items1[2] = closure_10(textVariant, obj9);
-              return closure_10(textVariant, obj8);
             }
+            tmp50Result = renderStatusContent();
           }
-          let obj10 = { style: tmp6.largeCircle, backgroundColor: token, borderColor: token2 };
-          let tmp49 = previewEmoji(closure_13, obj10);
-          cResult[15] = token;
-          cResult[16] = token2;
-          cResult[17] = tmp6.largeCircle;
-          cResult[18] = tmp49;
-          tmp46 = tmp49;
         }
-        let obj11 = { style: items4 };
-        items4 = [, ];
-        ({ bubble: arr3[0], smallCircle: arr3[1] } = tmp6);
-        const tmp41 = previewEmoji(textVariant, obj11);
-        cResult[12] = tmp6.bubble;
-        cResult[13] = tmp6.smallCircle;
-        cResult[14] = tmp41;
-        tmp38 = tmp41;
+        items5[1] = tmp50Result;
+        items2[2] = scaledTextLineHeight(str4, obj8);
+        return scaledTextLineHeight(str4, obj5);
       }
-      const items5 = [style, tmp36];
-      cResult[9] = style;
-      cResult[10] = tmp36;
-      cResult[11] = items5;
-      tmp37 = items5;
     }
-    const items6 = [name, gameMentionsAsPlainText];
-    const found = items6.filter((item) => null != item);
-    cResult[4] = name;
-    cResult[5] = gameMentionsAsPlainText;
-    cResult[6] = found;
-    obj6 = found;
+    const obj22 = { style: tmp7.largeCircle, backgroundColor: token, borderColor: token2 };
+    const tmp42 = ref1(closure_15, obj22);
+    cResult[6] = token;
+    cResult[7] = token2;
+    cResult[8] = tmp7.largeCircle;
+    cResult[9] = tmp42;
+    tmp39 = tmp42;
   }
-  function re() {
-    let items;
-    trackUserProfileAction({ action: "PRESS_EDIT_CUSTOM_STATUS" });
-    const obj = ActionSheetActionCreatorsDefault;
-    obj.hideActionSheet();
-    const obj2 = { analyticsLocations: items, prompt: _prompt };
-    const openEditCustomStatusModal = CustomStatusUtils.openEditCustomStatusModal;
-    items = [];
-    CustomStatusUtils;
-    items[0] = AnalyticsLocationDefault.USER_PROFILE_CUSTOM_STATUS_BUBBLE;
-    const result = openEditCustomStatusModal(obj2);
-  }
-  cResult[1] = _prompt;
-  cResult[2] = trackUserProfileAction;
-  cResult[3] = re;
-  tmp31 = re;
-}) : ((showFullStatus, ref) => {
+  const obj23 = { style: items7 };
+  items7 = [, ];
+  ({ bubble: arr2[0], smallCircle: arr2[1] } = tmp7);
+  const tmp38 = ref1(str4, obj23);
+  cResult[3] = tmp7.bubble;
+  cResult[4] = tmp7.smallCircle;
+  cResult[5] = tmp38;
+  tmp37 = tmp38;
+}) : (function UserProfileCustomStatusBubble(ref) {
   let BACKGROUND_SURFACE_HIGH;
   let Text;
   let _prompt;
+  let c1;
   let closure_0;
+  let closure_10;
+  let closure_6;
   let customStatusActivity;
   let editEnabled;
   let emojiOnlyStyle;
@@ -1151,54 +944,67 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let placeholderText;
   let previewEmoji;
   let previewText;
-  let scaledTextLineHeight;
   let statusBubblePaddingHorizontal;
   let statusBubblePaddingVertical;
   let style;
   let textMinWidth;
-  let textVariant;
   let themeType;
-  let tmp35Result2;
-  let tmp48;
-  let tmp8;
+  let tmp10;
+  let tmp36Result2;
+  let tmp49;
   let tmp9;
-  ({ customStatusActivity, themeType, hasCustomProfileTheme, editEnabled } = showFullStatus);
-  let tmp = undefined !== editEnabled && editEnabled;
-  showFullStatus = showFullStatus.showFullStatus;
-  _require = tmp2;
-  ({ onPressTruncatedStatus, previewEmoji, previewText, placeholderText, prompt: importDefault } = showFullStatus);
-  ({ style, emojiOnlyStyle } = showFullStatus);
-  const tmp3 = scaledTextLineHeight(hasCustomProfileTheme);
+  ref = ref.ref;
+  const merged = Object.assign(ref, Object.assign({ ref: 0 }));
+  importDefault = undefined;
+  let textVariant;
+  let emojiOnlyEmojiSize;
+  let trackUserProfileAction;
+  previewEmoji = undefined;
+  react = undefined;
+  let isPlaceholderText;
+  let str4;
+  let closure_9;
+  Fonts = undefined;
+  let ref1;
+  let scaledTextLineHeight;
+  ({ customStatusActivity, themeType, hasCustomProfileTheme, editEnabled } = merged);
+  const showFullStatus = merged.showFullStatus;
+  const tmp3 = undefined !== showFullStatus && showFullStatus;
+  _require = tmp3;
+  ({ onPressTruncatedStatus, previewEmoji, previewText, placeholderText, prompt: c1 } = merged);
+  ({ style, emojiOnlyStyle } = merged);
+  const tmp4 = closure_14(hasCustomProfileTheme);
+  let tmp8 = importDefault;
   const useToken = require("useToken").useToken;
-  const tmp6 = require("useToken");
+  const tmp7 = require("useToken");
   const colors = require("native").colors;
   if (hasCustomProfileTheme) {
     BACKGROUND_SURFACE_HIGH = colors.CUSTOM_STATUS_BUBBLE_BG;
-    tmp8 = tmp7;
-    tmp9 = tmp7;
+    tmp9 = tmp8;
+    tmp10 = tmp8;
   } else {
     BACKGROUND_SURFACE_HIGH = colors.BACKGROUND_SURFACE_HIGH;
-    tmp8 = tmp7;
-    tmp9 = tmp7;
+    tmp9 = tmp8;
+    tmp10 = tmp8;
   }
   const token = useToken(BACKGROUND_SURFACE_HIGH);
-  const useToken2 = tmp4(tmp5[18]).useToken;
+  const useToken2 = tmp5(tmp6[19]).useToken;
   require("useToken");
-  const colors2 = tmp9(tmp5[8]).colors;
-  let tmp13;
+  const colors2 = tmp10(tmp6[9]).colors;
+  let tmp14;
   const token2 = useToken2(hasCustomProfileTheme ? colors2.BORDER_MUTED : colors2.BORDER_SUBTLE);
   if (null != themeType) {
-    tmp13 = closure_15[themeType];
+    tmp14 = closure_17[themeType];
   }
-  if (tmp13 == null) {
-    tmp13 = closure_14;
+  if (tmp14 == null) {
+    tmp14 = closure_16;
   }
-  textVariant = tmp13.textVariant;
-  const emojiOnlyEmojiSize = tmp13.emojiOnlyEmojiSize;
-  ({ statusBubblePaddingHorizontal, statusBubblePaddingVertical, textMinWidth } = tmp13);
-  const tmp4Result6 = require("UserProfileAnalyticsContext");
-  const trackUserProfileAction = tmp4Result6.useUserProfileAnalyticsContext().trackUserProfileAction;
-  const useGameMentionsAsPlainText = tmp4(tmp5[20]).useGameMentionsAsPlainText;
+  textVariant = tmp14.textVariant;
+  emojiOnlyEmojiSize = tmp14.emojiOnlyEmojiSize;
+  ({ statusBubblePaddingHorizontal, statusBubblePaddingVertical, textMinWidth } = tmp14);
+  const tmp5Result6 = require("UserProfileAnalyticsContext");
+  trackUserProfileAction = tmp5Result6.useUserProfileAnalyticsContext().trackUserProfileAction;
+  const useGameMentionsAsPlainText = tmp5(tmp6[21]).useGameMentionsAsPlainText;
   require("useGameMentionsAsPlainText");
   if (undefined === previewText) {
     let state;
@@ -1208,7 +1014,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     previewText = state;
   }
   const gameMentionsAsPlainText = useGameMentionsAsPlainText(previewText);
-  let tmp18 = null != gameMentionsAsPlainText && "" !== gameMentionsAsPlainText;
+  let tmp19 = null != gameMentionsAsPlainText && "" !== gameMentionsAsPlainText;
   if (undefined === previewEmoji) {
     let emoji;
     if (customStatusActivity != null) {
@@ -1216,31 +1022,31 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     }
     previewEmoji = emoji;
   }
-  let closure_6 = tmp21;
-  let tmp22 = !tmp18 && !tmp20 && undefined !== placeholderText && "" !== placeholderText;
-  const isPlaceholderText = tmp22;
-  let str4 = gameMentionsAsPlainText;
-  if (tmp22) {
+  react = tmp22;
+  let tmp23 = !tmp19 && !tmp21 && undefined !== placeholderText && "" !== placeholderText;
+  isPlaceholderText = tmp23;
+  str4 = gameMentionsAsPlainText;
+  if (tmp23) {
     str4 = placeholderText;
   }
-  let closure_9 = tmp23;
-  if (!tmp18) {
-    tmp18 = tmp20;
+  closure_9 = tmp24;
+  if (!tmp19) {
+    tmp19 = tmp21;
   }
-  if (!tmp18) {
-    tmp18 = !tmp && tmp22;
+  if (!tmp19) {
+    tmp19 = !tmp2 && tmp23;
   }
-  let obj2 = trackUserProfileAction;
-  const tmp26 = emojiOnlyEmojiSize(trackUserProfileAction.useState(false), 2);
-  let closure_10 = tmp26[1];
+  let obj2 = react;
+  const tmp27 = trackUserProfileAction(react.useState(false), 2);
+  Fonts = tmp27[1];
   let num = 0;
-  const first = tmp26[0];
+  const first = tmp27[0];
   if (null != str4 && "" !== str4) {
     num = textMinWidth;
   }
   let obj = { minWidth: num, minHeight: num2, paddingVertical: num3, paddingHorizontal: statusBubblePaddingHorizontal };
   num2 = 0;
-  if (null != previewEmoji && !tmp18) {
+  if (null != previewEmoji && !tmp19) {
     num2 = emojiOnlyEmojiSize + 2 * statusBubblePaddingVertical;
   }
   if (null != str4 && "" !== str4) {
@@ -1249,12 +1055,12 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     num3 = 0;
   }
   const rect = { top: statusBubblePaddingVertical, bottom: statusBubblePaddingVertical, left: statusBubblePaddingHorizontal, right: statusBubblePaddingHorizontal };
-  ref = obj2.useRef(null);
-  const imperativeHandle = obj2.useImperativeHandle(ref, () => ref.current);
-  const tmp4Result8 = require("useScaledTextLineHeight");
-  scaledTextLineHeight = tmp4Result8.useScaledTextLineHeight(textVariant);
-  if (!tmp18) {
-    if (!(!tmp18 && tmp)) {
+  ref1 = obj2.useRef(null);
+  const imperativeHandle = obj2.useImperativeHandle(ref, () => ref1.current);
+  const tmp5Result8 = require("useScaledTextLineHeight");
+  scaledTextLineHeight = tmp5Result8.useScaledTextLineHeight(textVariant);
+  if (!tmp19) {
+    if (!(!tmp19 && (undefined !== editEnabled && editEnabled))) {
       return null;
     }
   }
@@ -1266,145 +1072,145 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   const obj3 = { text: found.join(" ") };
   found = items.filter((item) => null != item);
   const items1 = [style, ];
-  let tmp34;
-  if (null != previewEmoji && !tmp18) {
-    tmp34 = emojiOnlyStyle;
+  let tmp35;
+  if (null != previewEmoji && !tmp19) {
+    tmp35 = emojiOnlyStyle;
   }
   const obj4 = { style: items1, children: items3 };
-  items1[1] = tmp34;
+  items1[1] = tmp35;
   const obj5 = { style: items2 };
   items2 = [, ];
-  ({ bubble: arr3[0], smallCircle: arr3[1] } = tmp3);
-  items3 = [closure_9(closure_6, obj5), , ];
-  let tmp35Result;
+  ({ bubble: arr3[0], smallCircle: arr3[1] } = tmp4);
+  items3 = [ref1(str4, obj5), , ];
+  let tmp36Result;
   if (null != onPressTruncatedStatus) {
-    if (!(undefined !== showFullStatus && showFullStatus)) {
+    if (!tmp3) {
       if (null != str4 && "" !== str4) {
-        const obj6 = { style: items4, children: closure_9(closure_17, obj7) };
+        const obj6 = { style: items4, children: ref1(closure_19, obj7) };
         items4 = [, , , ];
-        ({ bubble: arr5[0], statusBubble: arr5[1] } = tmp3);
+        ({ bubble: arr5[0], statusBubble: arr5[1] } = tmp4);
         items4[2] = obj;
-        items4[3] = tmp3.statusBubbleMeasureable;
+        items4[3] = tmp4.statusBubbleMeasureable;
         obj7 = {
           text: str4,
-          isPlaceholderText: tmp22,
+          isPlaceholderText: tmp23,
           emoji: previewEmoji,
           textVariant,
           onTextLayout(nativeEvent) {
-                  closure_10(nativeEvent.nativeEvent.lines.length > Math.ceil(2 * hasOwnProperty.getFontScale()));
+                  closure_10(nativeEvent.nativeEvent.lines.length > Math.ceil(2 * metroImportDefault.getFontScale()));
                 },
           lineHeight: scaledTextLineHeight
         };
-        tmp35Result = tmp35(tmp33, obj6);
+        tmp36Result = tmp36(tmp34, obj6);
       }
     }
   }
-  items3[1] = tmp35Result;
+  items3[1] = tmp36Result;
   const items5 = [, , , ];
-  ({ bubble: arr6[0], statusBubble: arr6[1] } = tmp3);
+  ({ bubble: arr6[0], statusBubble: arr6[1] } = tmp4);
   items5[2] = obj;
   function handlePressAddOrEditStatus() {
     let items;
     trackUserProfileAction({ action: "PRESS_EDIT_CUSTOM_STATUS" });
     const obj = ActionSheetActionCreatorsDefault;
     obj.hideActionSheet();
-    const obj2 = { analyticsLocations: items, prompt: importDefault };
+    const obj2 = { analyticsLocations: items, prompt: _prompt };
     const openEditCustomStatusModal = CustomStatusUtils.openEditCustomStatusModal;
     items = [];
     CustomStatusUtils;
     items[0] = AnalyticsLocationDefault.USER_PROFILE_CUSTOM_STATUS_BUBBLE;
     const result = openEditCustomStatusModal(obj2);
   }
-  const obj8 = { style: items5, ref, children: items6 };
-  const tmp38 = !(null != previewEmoji && !tmp18) && tmp3.statusBubbleLeftAligned;
-  items5[3] = tmp38;
+  const obj8 = { style: items5, ref: ref1, children: items6 };
+  const tmp39 = !(null != previewEmoji && !tmp19) && tmp4.statusBubbleLeftAligned;
+  items5[3] = tmp39;
   items6 = [, ];
-  const obj9 = { style: tmp3.largeCircle, backgroundColor: token, borderColor: token2 };
-  items6[0] = closure_9(closure_13, obj9);
-  if (!tmp18 && tmp) {
+  const obj9 = { style: tmp4.largeCircle, backgroundColor: token, borderColor: token2 };
+  items6[0] = ref1(closure_15, obj9);
+  if (!tmp19 && (undefined !== editEnabled && editEnabled)) {
     let stringResult = placeholderText;
-    if (!tmp22) {
-      const intl3 = tmp4(tmp5[25]).intl;
-      stringResult = intl3.string(tmp4(tmp5[25]).t.Vq4UmS);
+    if (!tmp23) {
+      const intl3 = tmp5(tmp6[26]).intl;
+      stringResult = intl3.string(tmp5(tmp6[26]).t.Vq4UmS);
     }
-    const obj10 = { accessibilityRole: "button", accessibilityLabel: intl4.string(require("intl").t["zrpF/b"]), accessibilityHint: formatToPlainStringResult, onPress: handlePressAddOrEditStatus, hitSlop: rect, children: closure_10(Text, obj12) };
-    const PressableOpacity3 = tmp4(tmp5[26]).PressableOpacity;
-    intl4 = tmp4(tmp5[25]).intl;
+    const obj10 = { accessibilityRole: "button", accessibilityLabel: intl4.string(require("intl").t["zrpF/b"]), accessibilityHint: formatToPlainStringResult, onPress: handlePressAddOrEditStatus, hitSlop: rect, children: scaledTextLineHeight(Text, obj12) };
+    const PressableOpacity3 = tmp5(tmp6[27]).PressableOpacity;
+    intl4 = tmp5(tmp6[26]).intl;
     formatToPlainStringResult = undefined;
-    if (tmp22) {
-      const intl5 = tmp4(tmp5[25]).intl;
+    if (tmp23) {
+      const intl5 = tmp5(tmp6[26]).intl;
       const obj11 = { prompt: placeholderText };
-      formatToPlainStringResult = intl5.formatToPlainString(tmp4(tmp5[25]).t.ioWOMP, obj11);
+      formatToPlainStringResult = intl5.formatToPlainString(tmp5(tmp6[26]).t.ioWOMP, obj11);
     }
     let str7 = "text-md/medium";
-    Text = tmp4(tmp5[16]).Text;
-    if (tmp22) {
+    Text = tmp5(tmp6[17]).Text;
+    if (tmp23) {
       str7 = "text-md/normal";
     }
     let _Math = Math;
-    obj12 = { variant: str7, color: "control-secondary-text-default", lineClamp: Math.ceil(2 * previewEmoji.getFontScale()), style: obj13, children: items7 };
+    obj12 = { variant: str7, color: "control-secondary-text-default", lineClamp: Math.ceil(2 * isPlaceholderText.getFontScale()), style: obj13, children: items7 };
     obj13 = { paddingVertical: scaledTextLineHeight / 10 };
-    if (tmp22) {
+    if (tmp23) {
       let obj15;
-      const tmp4Result9 = require("PlatformUtils");
-      if (tmp4Result9.isAndroid()) {
-        obj15 = { fontFamily: str4.PRIMARY_NORMAL_ITALIC };
-        const obj14 = { fontFamily: str4.PRIMARY_NORMAL_ITALIC };
+      const tmp5Result9 = require("PlatformUtils");
+      if (tmp5Result9.isAndroid()) {
+        obj15 = { fontFamily: Fonts.PRIMARY_NORMAL_ITALIC };
+        const obj14 = { fontFamily: Fonts.PRIMARY_NORMAL_ITALIC };
       } else {
         obj15 = { fontStyle: "italic" };
       }
-      tmp22 = obj15;
+      tmp23 = obj15;
     }
-    const merged = Object.assign(tmp22);
-    const obj16 = { color: tmp8(textVariant[8]).colors.CONTROL_SECONDARY_TEXT_DEFAULT, size: "xs", style: tmp48 };
-    const CirclePlusIcon = tmp4(tmp5[27]).CirclePlusIcon;
-    tmp48 = undefined;
-    const tmp4Result10 = require("PlatformUtils");
-    if (tmp4Result10.isAndroid()) {
-      tmp48 = { marginBottom: 0.1 * -scaledTextLineHeight };
+    const merged1 = Object.assign(tmp23);
+    const obj16 = { color: tmp9(textVariant[9]).colors.CONTROL_SECONDARY_TEXT_DEFAULT, size: "xs", style: tmp49 };
+    const CirclePlusIcon = tmp5(tmp6[28]).CirclePlusIcon;
+    tmp49 = undefined;
+    const tmp5Result10 = require("PlatformUtils");
+    if (tmp5Result10.isAndroid()) {
+      tmp49 = { marginBottom: 0.1 * -scaledTextLineHeight };
       const obj17 = { marginBottom: 0.1 * -scaledTextLineHeight };
     }
-    const obj18 = { children: closure_9(CirclePlusIcon, obj16) };
-    items7 = [closure_9(closure_6, obj18), , ];
-    const obj19 = { style: tmp3.addStatusIconSpacer };
-    items7[1] = closure_9(closure_6, obj19);
+    const obj18 = { children: ref1(CirclePlusIcon, obj16) };
+    items7 = [ref1(str4, obj18), , ];
+    const obj19 = { style: tmp4.addStatusIconSpacer };
+    items7[1] = ref1(str4, obj19);
     items7[2] = stringResult;
-    tmp35Result2 = tmp35(PressableOpacity3, obj10);
+    tmp36Result2 = tmp36(PressableOpacity3, obj10);
   } else {
     function renderStatusContent() {
       let rounded;
       let tmp8Result;
-      const tmp = c9;
+      const tmp = closure_9;
       if (tmp) {
         const obj2 = { text: str4, isPlaceholderText, emoji: previewEmoji, textVariant, lineClamp: rounded, lineHeight: scaledTextLineHeight };
         rounded = undefined;
-        const tmp8 = React4;
-        const tmp9 = closure_17;
+        const tmp8 = unpackModuleId;
+        const tmp9 = closure_19;
         if (!closure_0) {
           const _Math = Math;
-          rounded = Math.ceil(2 * hasOwnProperty.getFontScale());
+          rounded = Math.ceil(2 * metroImportDefault.getFontScale());
         }
         tmp8Result = tmp8(tmp9, obj2);
       } else if (closure_6) {
         const obj = { emoji: previewEmoji, size: emojiOnlyEmojiSize };
-        tmp8Result = React4(closure_19, obj);
+        tmp8Result = unpackModuleId(closure_21, obj);
       }
       return tmp8Result;
     }
-    if (tmp) {
+    if (undefined !== editEnabled && editEnabled) {
       const obj20 = { accessibilityRole: "button", accessibilityLabel: intl2.string(require("intl").t.QdHxos), accessibilityValue: obj3, onPress: handlePressAddOrEditStatus, hitSlop: rect, children: renderStatusContent() };
-      const PressableOpacity2 = tmp4(tmp5[26]).PressableOpacity;
-      intl2 = tmp4(tmp5[25]).intl;
-      tmp35Result2 = tmp35(PressableOpacity2, obj20);
+      const PressableOpacity2 = tmp5(tmp6[27]).PressableOpacity;
+      intl2 = tmp5(tmp6[26]).intl;
+      tmp36Result2 = tmp36(PressableOpacity2, obj20);
     } else {
       if (null != onPressTruncatedStatus) {
         if (first) {
-          if (!tmp22) {
-            const PressableOpacity = tmp4(tmp5[26]).PressableOpacity;
-            const intl = tmp4(tmp5[25]).intl;
+          if (!tmp23) {
+            const PressableOpacity = tmp5(tmp6[27]).PressableOpacity;
+            const intl = tmp5(tmp6[26]).intl;
             const formatToPlainString = intl.formatToPlainString;
             let str6;
-            const UpF5Qa = tmp4(tmp5[25]).t.UpF5Qa;
+            const UpF5Qa = tmp5(tmp6[26]).t.UpF5Qa;
             if (previewEmoji != null) {
               str6 = previewEmoji.name;
             }
@@ -1416,18 +1222,18 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
               str4 = "";
             }
             const obj22 = { accessibilityRole: "button", accessibilityLabel: formatToPlainString(UpF5Qa, obj21), onPress: onPressTruncatedStatus, hitSlop: rect, children: renderStatusContent() };
-            tmp35Result2 = tmp35(PressableOpacity, obj22);
+            tmp36Result2 = tmp36(PressableOpacity, obj22);
           }
         }
       }
-      tmp35Result2 = renderStatusContent();
+      tmp36Result2 = renderStatusContent();
     }
   }
-  items6[1] = tmp35Result2;
-  items3[2] = closure_10(closure_6, obj8);
-  return closure_10(closure_6, obj4);
-}));
+  items6[1] = tmp36Result2;
+  items3[2] = scaledTextLineHeight(str4, obj8);
+  return scaledTextLineHeight(str4, obj4);
+});
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileCustomStatusBubble.tsx");
 
-export default forwardRefResult;
+export default tmp4;

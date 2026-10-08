@@ -1,15 +1,15 @@
-// Module ID: 9280
-// Function ID: 9281
+// Module ID: 8611
+// Function ID: 8612
 // Name: EditGuildEventStepHeader
-// Dependencies: [19, 17, 21, 4896, 558, 576, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 5086, 2]
 
-// Module 9280 (EditGuildEventStepHeader)
+// Module 8611 (EditGuildEventStepHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 4892 */;
+import Text_Text from "Text/Text" /* 5086 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let closure_4;
 const View = react_native.View;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let closure_5 = createStyles.createStyles({ header: { alignItems: "center", paddingBottom: 24 }, headerTitle: { marginTop: 8, marginBottom: 8 }, headerSubtitle: { textAlign: "center" } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildEventStepHeader(arg0) {
   let items;
   let subtitle;
   let title;
@@ -59,7 +59,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp9 = null;
       if ("" !== subtitle) {
         const obj3 = { style: tmp4.headerSubtitle, variant: "text-sm/medium", color: "text-default", children: subtitle };
-        tmp9 = _false(tmp(4892).Text, obj3);
+        tmp9 = _false(tmp(5086).Text, obj3);
       }
     }
     cResult[3] = tmp4.headerSubtitle;
@@ -73,7 +73,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = title;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((subtitle) => {
+}) : (function EditGuildEventStepHeader(subtitle) {
   let items;
   subtitle = subtitle.subtitle;
   const title = subtitle.title;

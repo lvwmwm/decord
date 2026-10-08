@@ -1,15 +1,15 @@
-// Module ID: 6910
-// Function ID: 6911
+// Module ID: 7099
+// Function ID: 7100
 // Name: EntitlementRecord
-// Dependencies: [1392, 5703, 1391, 1085, 4534, 6911, 2]
+// Dependencies: [1404, 6093, 1403, 1085, 4726, 7100, 2]
 
-// Module 6910 (EntitlementRecord)
+// Module 7099 (EntitlementRecord)
 import Constants from "Constants" /* 1085 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4534 */;
-import EntitlementTenantFulfillmentStatus from "EntitlementTenantFulfillmentStatus" /* 6911 */;
-import Record from "Record" /* 1392 */;
-import SKURecord from "SKURecord" /* 5703 */;
-import UserRecord from "UserRecord" /* 1391 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4726 */;
+import EntitlementTenantFulfillmentStatus from "EntitlementTenantFulfillmentStatus" /* 7100 */;
+import Record from "Record" /* 1404 */;
+import SKURecord from "SKURecord" /* 6093 */;
+import UserRecord from "UserRecord" /* 1403 */;
 import size from "module_2" /* 2 */;
 
 const EntitlementTypes = Constants.EntitlementTypes;

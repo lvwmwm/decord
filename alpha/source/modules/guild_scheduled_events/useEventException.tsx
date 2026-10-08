@@ -1,19 +1,19 @@
-// Module ID: 9202
-// Function ID: 9203
+// Module ID: 8501
+// Function ID: 8502
 // Name: useEventException
-// Dependencies: [7050, 558, 576, 504, 2]
+// Dependencies: [6059, 558, 576, 504, 2]
 // Exports: getEventException
 
-// Module 9202 (useEventException)
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7050 */;
+// Module 8501 (useEventException)
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6059 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f99830 = (event_exception_id) => event_exception_id.event_exception_id === constants;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const f98067 = (event_exception_id) => event_exception_id.event_exception_id === constants;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEventException(arg0, arg1) {
   let closure_0;
   let first;
   let tmp6;
@@ -58,13 +58,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   _require = arg0;
   let found;
   if (stateFromStoresArray != null) {
-    found = stateFromStoresArray.find(f99830);
+    found = stateFromStoresArray.find(f98067);
   }
   cResult[3] = stateFromStoresArray;
   cResult[4] = arg0;
   cResult[5] = found;
   tmp7 = found;
-}) : ((arg0, arg1) => {
+}) : (function useEventException(arg0, arg1) {
   let closure_0;
   _require = arg1;
   const items = [GuildScheduledEventStore];
@@ -83,7 +83,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   _require = arg0;
   let found;
   if (stateFromStoresArray != null) {
-    found = stateFromStoresArray.find(f99830);
+    found = stateFromStoresArray.find(f98067);
   }
   return found;
 });
@@ -102,7 +102,7 @@ export const getEventException = function getEventException(recurrenceId, eventI
   let closure_0 = recurrenceId;
   let found;
   if (prop != null) {
-    found = prop.find(f99830);
+    found = prop.find(f98067);
   }
   return found;
 };

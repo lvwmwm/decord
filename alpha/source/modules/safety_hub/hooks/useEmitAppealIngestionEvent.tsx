@@ -1,13 +1,13 @@
-// Module ID: 11513
-// Function ID: 11514
+// Module ID: 11505
+// Function ID: 11506
 // Name: useEmitAppealIngestionEvent
-// Dependencies: [19, 8139, 8126, 1085, 558, 576, 504, 11505, 11507, 1252, 2]
+// Dependencies: [19, 5920, 5921, 1085, 558, 576, 504, 11497, 11499, 1264, 2]
 
-// Module 11513 (useEmitAppealIngestionEvent)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8126 */;
+// Module 11505 (useEmitAppealIngestionEvent)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 5921 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8139 */;
+import SafetyHubStore from "SafetyHubStore" /* 5920 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ let metroImportDefault;
 let metroRequire;
 let closure_5 = SafetyHubConstants.SafetyHubAnalyticsActionSource;
 ({ EMPTY_STRING_SNOWFLAKE_ID: metroRequire, AnalyticEvents: metroImportDefault } = Constants);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmitAppealIngestionEvent() {
   let AppealIngestion;
   let safetyHubAccountStanding;
   let stateFromStores;
@@ -53,14 +53,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   safetyHubAccountStanding = tmpResult5.useSafetyHubAccountStanding();
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [SafetyHubStore];
-    class S {
-      constructor() {
-        return SafetyHubStore.getIsDsaEligible();
-      }
-    }
+    const fn2 = function p() {
+      return SafetyHubStore.getIsDsaEligible();
+    };
     cResult[2] = items1;
-    cResult[3] = S;
-    tmp13 = S;
+    cResult[3] = fn2;
+    tmp13 = fn2;
     tmp12 = items1;
   } else {
     tmp12 = cResult[2];
@@ -79,7 +77,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
   }
-  const fn2 = function y(action) {
+  const fn3 = function b(action) {
     let tmp3;
     const obj = { action, account_standing: safetyHubAccountStanding.state, classification_ids: tmp3, source: AppealIngestion.AppealIngestion, is_dsa_eligible: stateFromStores1, violation_type: safetyHubClassification.violationType };
     tmp3 = null;
@@ -97,9 +95,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[5] = stateFromStores;
   cResult[6] = safetyHubClassification.violationType;
   cResult[7] = stateFromStores1;
-  cResult[8] = fn2;
-  tmp16 = fn2;
-}) : (() => {
+  cResult[8] = fn3;
+  tmp16 = fn3;
+}) : (function useEmitAppealIngestionEvent() {
   let AppealIngestion;
   let safetyHubAccountStanding;
   let stateFromStores;

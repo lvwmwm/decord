@@ -1,16 +1,18 @@
-// Module ID: 12019
-// Function ID: 12020
+// Module ID: 12092
+// Function ID: 12093
 // Name: SmartSearchActionCreators
-// Dependencies: [5, 4525, 1377, 11984, 11981, 1085, 11983, 12020, 12021, 12004, 584, 1282, 11985, 5118, 2]
-// Exports: fetchAnswer
+// Dependencies: [5, 4717, 1389, 12057, 12054, 1085, 12056, 12093, 12094, 12077, 584, 1294, 12058, 5430, 2]
+// Exports: fetchAnswer, setResultFeedback
 
-// Module 12019 (SmartSearchActionCreators)
+// Module 12092 (SmartSearchActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import SmartSearchResultsStoreDefault from "SmartSearchResultsStore" /* 11984 */;
+import SmartSearchResultsStoreDefault from "SmartSearchResultsStore" /* 12057 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 12077 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 11981 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 12054 */;
 import size from "module_2" /* 2 */;
 
 let obj = function _fetchAnswer() {
@@ -167,4 +169,14 @@ let result = size.fileFinishedImporting("modules/intelligence_layer/search/Smart
 
 export const fetchAnswer = function fetchAnswer() {
   return obj(...arguments);
+};
+export const setResultFeedback = function setResultFeedback(SearchSessionAnalyticsManager) {
+  let hasPositiveFeedback;
+  let smartSearchQuery;
+  ({ smartSearchQuery, hasPositiveFeedback } = SearchSessionAnalyticsManager);
+  SearchSessionAnalyticsManager = SearchSessionAnalyticsManager.SearchSessionAnalyticsManager;
+  obj = DispatcherDefault;
+  obj.dispatch({ type: "SMART_SEARCH_SET_RESULT_FEEDBACK", smartSearchQuery, hasPositiveFeedback });
+  const obj2 = SmartSearchAnalyticsManagerDefault;
+  const result = obj2.trackSmartSearchFeedbackGiven({ smartSearchQuery, hasPositiveFeedback }, SearchSessionAnalyticsManager);
 };

@@ -1,20 +1,20 @@
-// Module ID: 6853
-// Function ID: 6854
+// Module ID: 7041
+// Function ID: 7042
 // Name: useGuildIdsToFetchSoundsFor
-// Dependencies: [19, 2074, 5687, 558, 576, 573, 2]
+// Dependencies: [19, 2086, 5424, 558, 576, 573, 2]
 // Exports: getGuildIdsToFetchSoundsFor
 
-// Module 6853 (useGuildIdsToFetchSoundsFor)
+// Module 7041 (useGuildIdsToFetchSoundsFor)
 import react from "react" /* 19 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import SoundboardStore from "SoundboardStore" /* 5687 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import SoundboardStore from "SoundboardStore" /* 5424 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const useMemo = react.useMemo;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildIdsToFetchSoundsFor() {
   let guildIds;
   let sounds;
   let tmp4;
@@ -64,7 +64,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[5] = stateFromStores;
   cResult[6] = found;
   tmp11 = found;
-}) : (() => {
+}) : (function useGuildIdsToFetchSoundsFor() {
   let guildIds;
   let sounds;
   let stateFromStores;

@@ -1,12 +1,12 @@
-// Module ID: 13771
-// Function ID: 13772
+// Module ID: 13993
+// Function ID: 13994
 // Name: GuildBadgeDog
-// Dependencies: [109, 19, 21, 558, 576, 13748, 8169, 2]
+// Dependencies: [109, 19, 21, 558, 576, 13970, 7550, 2]
 
-// Module 13771 (GuildBadgeDog)
+// Module 13993 (GuildBadgeDog)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 8169 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 13748 */;
+import inlineStyles from "inlineStyles" /* 7550 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 13970 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -23,7 +23,7 @@ const primaryTintLuminances = [0.05, 0.4];
 let items = [{ base: 5, tint: 1 }, { base: 3, tint: 1 }];
 const secondaryTintLuminances = [0.8];
 const items1 = [{ base: 6, tint: 1 }];
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgeDog(arg0) {
   let height;
   let primaryColorsTransformed;
   let primaryTintColor;
@@ -273,7 +273,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj9 = { width: num7, height: num8, viewBox: "0 0 16 16", fill: "none", children: items };
-    const Svg = tmp(8169).Svg;
+    const Svg = tmp(7550).Svg;
     const merged = Object.assign(tmp5);
     items = [tmp14, tmp17, tmp21, tmp24, tmp25, tmp31, tmp29, tmp30, tmp36, tmp39, tmp42, tmp45, tmp48, tmp49, tmp50, tmp51, tmp52, tmp53, tmp54, tmp55, tmp56, tmp57, tmp58, tmp59, tmp60, tmp61];
     const tmp82 = hasOwnProperty(Svg, obj9);
@@ -297,7 +297,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = tmp6;
   cResult[8] = transformedBadgeColors;
   tmp12 = transformedBadgeColors;
-}) : ((width) => {
+}) : (function GuildBadgeDog(width) {
   let primaryTintColor;
   let secondaryTintColor;
   let num = width.width;

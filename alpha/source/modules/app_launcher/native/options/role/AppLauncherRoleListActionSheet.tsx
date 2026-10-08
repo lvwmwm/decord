@@ -1,40 +1,40 @@
-// Module ID: 11819
-// Function ID: 11820
+// Module ID: 11904
+// Function ID: 11905
 // Name: AppLauncherRoleListActionSheet
-// Dependencies: [32, 109, 19, 6630, 2107, 2106, 1085, 21, 558, 576, 9267, 11820, 504, 6631, 4892, 5880, 6000, 5709, 4860, 11803, 11805, 2]
+// Dependencies: [32, 109, 19, 6807, 2119, 2118, 1085, 21, 558, 576, 8597, 11905, 504, 6808, 5086, 8192, 6184, 6099, 5054, 11870, 11872, 2]
 
-// Module 11819 (AppLauncherRoleListActionSheet)
+// Module 11904 (AppLauncherRoleListActionSheet)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 2107 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5709 */;
-import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 6631 */;
-import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 11820 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 2119 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6099 */;
+import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 6808 */;
+import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 11905 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import react from "react" /* 19 */;
-import GuildRoleMemberCountStore_mod from "GuildRoleMemberCountStore" /* 6630 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
+import react_mod from "react" /* 19 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 6807 */;
+import GuildRoleStore from "GuildRoleStore" /* 2118 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, guildRole, importDefault, onRolePress;
+let _require;
 
 let closure_12;
 let map1;
 let tmp;
-const ShieldUserIcon2 = tmp(9267);
+const ShieldUserIcon2 = tmp(8597);
 let closure_4 = ["guildRole", "guildId"];
-let GuildRoleMemberCountStore = GuildRoleMemberCountStore_mod;
+let react = react_mod;
 const isEveryoneRole = GuildRoleRecord.isEveryoneRole;
 const DEFAULT_ROLE_COLOR_HEX = Constants.DEFAULT_ROLE_COLOR_HEX;
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
-const AppLauncherRoleListActionSheet = "AppLauncherRoleListActionSheet";
+const AppLauncherRoleListActionSheet_str = "AppLauncherRoleListActionSheet";
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIcon(role) {
   let first;
   let tmp8;
   const obj = react2;
@@ -93,7 +93,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
   cResult[8] = tmp8;
   cResult[9] = tmp12;
   tmp11 = tmp12;
-}) : ((role) => {
+}) : (function RoleIcon(role) {
   role = role.role;
   let str = "interactive-text-default";
   const tmp3 = AppLauncherOptionIconDefault;
@@ -106,9 +106,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
 });
 let closure_15 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildRole) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleRow(guildRole) {
   let closure_0;
-  let id;
   let items2;
   let tmp10;
   let tmp6;
@@ -117,27 +116,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildRole) => {
   const cResult = obj.c(26);
   if (cResult[0] !== guildRole) {
     guildRole = guildRole.guildRole;
-    importDefault = guildRole;
+    let id = guildRole;
     const guildId = guildRole.guildId;
     _require = guildId;
+    const tmp9 = _objectWithoutProperties(guildRole, closure_4);
     cResult[0] = guildRole;
     cResult[1] = guildId;
     cResult[2] = guildRole;
-    const tmp9 = _objectWithoutProperties(guildRole, closure_4);
-    class L {
-      constructor() {
-        const roleMemberCount = GuildRoleMemberCountStore.getRoleMemberCount(closure_0);
-        let tmp2;
-        if (roleMemberCount != null) {
-          tmp2 = roleMemberCount[id.id];
-        }
-        return tmp2;
-      }
-    }
+    cResult[3] = tmp9;
     tmp6 = tmp9;
   } else {
     _require = cResult[1];
-    importDefault = cResult[2];
+    id = cResult[2];
     tmp6 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
@@ -152,8 +142,6 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildRole) => {
     let tmp14;
     let tmp18;
     let tmp17;
-    let tmp21;
-    let tmp24;
     if (cResult[6] === tmp5.id) {
       tmp12 = cResult[7];
     }
@@ -168,118 +156,130 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildRole) => {
       tmp14 = cResult[9];
     }
     if (cResult[10] !== tmp4) {
-      const fn = function b() {
-        const obj = GuildRoleMemberActionCreatorsAll;
-        const memberCounts = obj.fetchMemberCounts(closure_0);
-      };
+      class C {
+        constructor() {
+          const obj = GuildRoleMemberActionCreatorsAll;
+          const memberCounts = obj.fetchMemberCounts(closure_0);
+        }
+      }
       const items1 = [tmp4];
       cResult[10] = tmp4;
-      cResult[11] = fn;
+      cResult[11] = C;
       cResult[12] = items1;
       tmp18 = items1;
-      tmp17 = fn;
+      tmp17 = C;
     } else {
-      tmp17 = cResult[11];
+      class C {
+        constructor() {
+          const obj = GuildRoleMemberActionCreatorsAll;
+          const memberCounts = obj.fetchMemberCounts(closure_0);
+        }
+      }
       tmp18 = cResult[12];
     }
     const effect = react.useEffect(tmp17, tmp18);
     if (cResult[13] !== tmp5.name) {
+      class C {
+        constructor() {
+          const obj = GuildRoleMemberActionCreatorsAll;
+          const memberCounts = obj.fetchMemberCounts(closure_0);
+        }
+      }
       const obj2 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp5.name };
-      const tmp23 = closure_12(require("Text/Text").Text, obj2);
       cResult[13] = tmp5.name;
-      cResult[14] = tmp23;
-      tmp21 = tmp23;
+      cResult[14] = closure_12(require("Text/Text").Text, obj2);
+      const tmp22 = closure_12(require("Text/Text").Text, obj2);
     } else {
-      tmp21 = cResult[14];
+      class C {
+        constructor() {
+          const obj = GuildRoleMemberActionCreatorsAll;
+          const memberCounts = obj.fetchMemberCounts(closure_0);
+        }
+      }
     }
     if (cResult[15] !== tmp5) {
+      class C {
+        constructor() {
+          const obj = GuildRoleMemberActionCreatorsAll;
+          const memberCounts = obj.fetchMemberCounts(closure_0);
+        }
+      }
       const obj3 = { role: tmp5 };
-      const tmp27 = closure_12(closure_15, obj3);
       cResult[15] = tmp5;
-      cResult[16] = tmp27;
-      tmp24 = tmp27;
+      cResult[16] = closure_12(closure_15, obj3);
+      const tmp25 = closure_12(closure_15, obj3);
     } else {
-      tmp24 = cResult[16];
+      class C {
+        constructor() {
+          const obj = GuildRoleMemberActionCreatorsAll;
+          const memberCounts = obj.fetchMemberCounts(closure_0);
+        }
+      }
     }
     if (cResult[17] === tmp14) {
-      let tmp28;
-      if (cResult[18] === stateFromStores) {
-        tmp28 = cResult[19];
+      class C {
+        constructor() {
+          const obj = GuildRoleMemberActionCreatorsAll;
+          const memberCounts = obj.fetchMemberCounts(closure_0);
+        }
       }
       if (cResult[20] === tmp5.id) {
-        if (cResult[21] === tmp6) {
-          if (cResult[22] === tmp21) {
-            if (cResult[23] === tmp24) {
-              let tmp33;
-              if (cResult[24] === tmp28) {
-                tmp33 = cResult[25];
-              }
-              return tmp33;
-            }
+        class C {
+          constructor() {
+            const obj = GuildRoleMemberActionCreatorsAll;
+            const memberCounts = obj.fetchMemberCounts(closure_0);
           }
         }
       }
-      const obj4 = { label: tmp21, icon: tmp24, trailing: tmp28 };
-      const TableRow = tmp(6000).TableRow;
+      const obj4 = { label: tmp21, icon: tmp23, trailing: tmp26 };
+      const TableRow = tmp(6184).TableRow;
       const merged = Object.assign(tmp6);
-      const tmp38 = closure_12(TableRow, obj4, tmp5.id);
       cResult[20] = tmp5.id;
-      class L {
-        constructor() {
-          const roleMemberCount = GuildRoleMemberCountStore.getRoleMemberCount(closure_0);
-          let tmp2;
-          if (roleMemberCount != null) {
-            tmp2 = roleMemberCount[id.id];
-          }
-          return tmp2;
-        }
-      }
       cResult[21] = tmp6;
       cResult[22] = tmp21;
-      cResult[23] = tmp24;
-      cResult[24] = tmp28;
-      cResult[25] = tmp38;
-      tmp33 = tmp38;
+      cResult[23] = tmp23;
+      cResult[24] = tmp26;
+      cResult[25] = closure_12(TableRow, obj4, tmp5.id);
+      const tmp35 = closure_12(TableRow, obj4, tmp5.id);
     }
-    let tmp30 = null;
+    let tmp28 = null;
     if (!tmp14) {
-      tmp30 = null;
-      if (null != stateFromStores) {
-        const obj5 = { variant: "text-sm/normal", color: "text-muted", children: items2 };
-        const Text = tmp(4892).Text;
-        items2 = [closure_12(require("GroupIcon").GroupIcon, { size: "xxs", color: "text-muted" }), " ", stateFromStores];
-        tmp30 = closure_13(Text, obj5);
-      }
-    }
-    class L {
-      constructor() {
-        const roleMemberCount = GuildRoleMemberCountStore.getRoleMemberCount(closure_0);
-        let tmp2;
-        if (roleMemberCount != null) {
-          tmp2 = roleMemberCount[id.id];
+      class C {
+        constructor() {
+          const obj = GuildRoleMemberActionCreatorsAll;
+          const memberCounts = obj.fetchMemberCounts(closure_0);
         }
-        return tmp2;
+      }
+      if (null != stateFromStores) {
+        class C {
+          constructor() {
+            const obj = GuildRoleMemberActionCreatorsAll;
+            const memberCounts = obj.fetchMemberCounts(closure_0);
+          }
+        }
+        const obj5 = { variant: "text-sm/normal", color: "text-muted", children: items2 };
+        const Text = tmp(5086).Text;
+        items2 = [closure_12(require("GroupIcon").GroupIcon, { size: "xxs", color: "text-muted" }), " ", stateFromStores];
+        tmp28 = closure_13(Text, obj5);
       }
     }
+    cResult[17] = tmp14;
     cResult[18] = stateFromStores;
-    cResult[19] = tmp30;
-    tmp28 = tmp30;
+    cResult[19] = tmp28;
   }
-  class L {
-    constructor() {
-      const roleMemberCount = GuildRoleMemberCountStore.getRoleMemberCount(closure_0);
-      let tmp2;
-      if (roleMemberCount != null) {
-        tmp2 = roleMemberCount[id.id];
-      }
-      return tmp2;
+  const fn = function v() {
+    const roleMemberCount = GuildRoleMemberCountStore.getRoleMemberCount(closure_0);
+    let tmp2;
+    if (roleMemberCount != null) {
+      tmp2 = roleMemberCount[id.id];
     }
-  }
+    return tmp2;
+  };
   cResult[5] = tmp4;
   cResult[6] = tmp5.id;
-  cResult[7] = L;
-  tmp12 = L;
-}) : ((guildRole) => {
+  cResult[7] = fn;
+  tmp12 = fn;
+}) : (function RoleRow(guildRole) {
   let items2;
   let obj3;
   let tmp8;
@@ -303,16 +303,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildRole) => {
     const obj = GuildRoleMemberActionCreatorsAll;
     const memberCounts = obj.fetchMemberCounts(guildId);
   }, items1);
-  const obj2 = { label: closure_12(guildRole(4892).Text, obj3), icon: closure_12(closure_15, { role: guildRole }), trailing: tmp8 };
-  const TableRow = guildRole(6000).TableRow;
+  const obj2 = { label: closure_12(guildRole(5086).Text, obj3), icon: closure_12(closure_15, { role: guildRole }), trailing: tmp8 };
+  const TableRow = guildRole(6184).TableRow;
   tmp8 = null;
   obj3 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: guildRole.name };
   if (!tmp5) {
     tmp8 = null;
     if (null != stateFromStores) {
       const obj4 = { variant: "text-sm/normal", color: "text-muted", children: items2 };
-      const Text = tmp2(4892).Text;
-      items2 = [closure_12(tmp2(5880).GroupIcon, { size: "xxs", color: "text-muted" }), " ", stateFromStores];
+      const Text = tmp2(5086).Text;
+      items2 = [closure_12(tmp2(8192).GroupIcon, { size: "xxs", color: "text-muted" }), " ", stateFromStores];
       tmp8 = closure_13(Text, obj4);
     }
   }
@@ -321,8 +321,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildRole) => {
 });
 let closure_16 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onRolePress) => {
-  let closure_8;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherRoleListActionSheet(onRolePress) {
+  let closure_7;
   let first;
   let first1;
   let ref;
@@ -333,12 +333,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onRolePress) => {
   const cResult = obj.c(27);
   onRolePress = onRolePress.onRolePress;
   const onActionSheetDismiss = onRolePress.onActionSheetDismiss;
+  const option = onRolePress.option;
   const guild_id = onRolePress.channel.guild_id;
-  let tmp4 = ref(O.useState(""), 2);
-  const tmp2 = first;
+  let tmp4 = ref(react.useState(""), 2);
   first = tmp4[0];
   closure_4 = tmp4[1];
-  ref = O.useRef(null);
+  ref = react.useRef(null);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildRoleStore];
     cResult[0] = items;
@@ -356,115 +356,232 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onRolePress) => {
   } else {
     tmp9 = cResult[2];
   }
-  const tmpResult = tmp(tmp2[12]);
+  const tmpResult = tmp(first[12]);
   const stateFromStores = tmpResult.useStateFromStores(first1, tmp9);
   if (cResult[3] === first) {
     let arr3;
+    let tmp12;
     if (cResult[4] === stateFromStores) {
       arr3 = cResult[5];
     }
     if (cResult[8] !== onActionSheetDismiss) {
-      class O {
-        constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet(AppLauncherRoleListActionSheet);
-          onActionSheetDismiss();
-        }
+      function hideActionSheet() {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet(AppLauncherRoleListActionSheet_str);
+        onActionSheetDismiss();
       }
       cResult[8] = onActionSheetDismiss;
-      cResult[9] = O;
+      cResult[9] = hideActionSheet;
+      tmp12 = hideActionSheet;
     } else {
-      class O {
-        constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet(AppLauncherRoleListActionSheet);
-          onActionSheetDismiss();
-        }
-      }
+      tmp12 = cResult[9];
     }
-    O = tmp13;
-    if (cResult[10] === tmp13) {
-      class O {
-        constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet(AppLauncherRoleListActionSheet);
-          onActionSheetDismiss();
-        }
+    react = tmp12;
+    if (cResult[10] === tmp12) {
+      let tmp13;
+      if (cResult[11] === onRolePress) {
+        tmp13 = cResult[12];
       }
-      GuildRoleMemberCountStore = tmp14;
+      let closure_8 = tmp13;
       if (cResult[13] === guild_id) {
-        class O {
-          constructor() {
-            const obj = ActionSheetActionCreatorsDefault;
-            obj.hideActionSheet(AppLauncherRoleListActionSheet);
-            onActionSheetDismiss();
+        if (cResult[14] === tmp13) {
+          let tmp14;
+          let tmp17;
+          let tmp22Result;
+          if (cResult[15] === arr3.length) {
+            tmp14 = cResult[16];
           }
+          const _Symbol = Symbol;
+          class Item {
+            constructor(arg0) {
+              item = onRolePress.item;
+              index = onRolePress.index;
+              obj = {
+                guildId: guild_id,
+                guildRole: item,
+                onPress() {
+                              const obj = { role: item };
+                              return closure_8(obj);
+                            },
+                start: 0 === index,
+                end: index === closure_6.length - 1
+              };
+              return closure_1_12(closure_1_16, obj);
+            }
+          }
+          const _Symbol2 = Symbol;
+          if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
+            class Item {
+              constructor(arg0) {
+                item = onRolePress.item;
+                index = onRolePress.index;
+                obj = {
+                  guildId: guild_id,
+                  guildRole: item,
+                  onPress() {
+                                  const obj = { role: item };
+                                  return closure_8(obj);
+                                },
+                  start: 0 === index,
+                  end: index === closure_6.length - 1
+                };
+                return closure_1_12(closure_1_16, obj);
+              }
+            }
+            cResult[18] = tmp19;
+            tmp17 = tmp19;
+          } else {
+            tmp17 = cResult[18];
+          }
+          if (cResult[19] === tmp14) {
+            if (cResult[20] === arr3) {
+              let tmp21;
+              if (cResult[21] === 0 === arr3.length) {
+                tmp21 = cResult[22];
+              }
+              if (cResult[23] === onActionSheetDismiss) {
+                if (cResult[24] === option) {
+                  let tmp25;
+                  if (cResult[25] === tmp21) {
+                    tmp25 = cResult[26];
+                  }
+                  return tmp25;
+                }
+              }
+              class Item {
+                constructor(arg0) {
+                  item = onRolePress.item;
+                  index = onRolePress.index;
+                  obj = {
+                    guildId: guild_id,
+                    guildRole: item,
+                    onPress() {
+                                      const obj = { role: item };
+                                      return closure_8(obj);
+                                    },
+                    start: 0 === index,
+                    end: index === closure_6.length - 1
+                  };
+                  return closure_1_12(closure_1_16, obj);
+                }
+              }
+              tmp27[0] = option;
+              tmp27[1] = onActionSheetDismiss;
+              const items1 = [tmp17, tmp21];
+              tmp27[2] = items1;
+              const tmp28 = closure_13(tmp(first[20]).AppLauncherCommandOptionActionSheet, tmp27);
+              cResult[23] = onActionSheetDismiss;
+              cResult[24] = option;
+              cResult[25] = tmp21;
+              cResult[26] = tmp28;
+              tmp25 = tmp28;
+            }
+          }
+          const tmpResult2 = tmp(first[19]);
+          if (0 === arr3.length) {
+            tmp22Result = tmp22(tmpResult2.AppLauncherListEmptyState, {});
+          } else {
+            const obj3 = { ref, data: arr3, renderItem: null };
+            class Item {
+              constructor(arg0) {
+                item = onRolePress.item;
+                index = onRolePress.index;
+                obj = {
+                  guildId: guild_id,
+                  guildRole: item,
+                  onPress() {
+                                  const obj = { role: item };
+                                  return closure_8(obj);
+                                },
+                  start: 0 === index,
+                  end: index === closure_6.length - 1
+                };
+                return closure_1_12(closure_1_16, obj);
+              }
+            }
+            tmp22Result = tmp22(tmpResult2.AppLauncherList, obj3);
+          }
+          cResult[19] = tmp14;
+          cResult[20] = arr3;
+          cResult[21] = 0 === arr3.length;
+          cResult[22] = tmp22Result;
+          tmp21 = tmp22Result;
         }
       }
-      const fn2 = function z(item) {
-        item = item.item;
-        const index = item.index;
-        let obj = {
+      class Item {
+        constructor(arg0) {
+          item = onRolePress.item;
+          index = onRolePress.index;
+          obj = {
+            guildId: guild_id,
+            guildRole: item,
+            onPress() {
+                      const obj = { role: item };
+                      return closure_8(obj);
+                    },
+            start: 0 === index,
+            end: index === closure_6.length - 1
+          };
+          return closure_1_12(closure_1_16, obj);
+        }
+      }
+      cResult[13] = guild_id;
+      cResult[14] = tmp13;
+      cResult[15] = arr3.length;
+      cResult[16] = Item;
+      tmp14 = Item;
+    }
+    function handleRolePress(role) {
+      const obj = { role: role.role };
+      onRolePress(obj);
+      closure_7();
+    }
+    cResult[10] = tmp12;
+    cResult[11] = onRolePress;
+    cResult[12] = handleRolePress;
+    tmp13 = handleRolePress;
+  }
+  if (cResult[6] !== first) {
+    const fn2 = function y(id) {
+      let tmp = first === id.id;
+      const str = first;
+      if (!tmp) {
+        const str2 = id.name;
+        const tmp4 = fuzzysearchDefault;
+        const trimmed = str.trim();
+        tmp = tmp4(trimmed, str2.toLowerCase());
+      }
+      return tmp;
+    };
+    cResult[6] = first;
+    class Item {
+      constructor(arg0) {
+        item = onRolePress.item;
+        index = onRolePress.index;
+        obj = {
           guildId: guild_id,
           guildRole: item,
           onPress() {
-            const obj = { role: item };
-            return GuildRoleMemberCountStore(obj);
-          },
+                  const obj = { role: item };
+                  return closure_8(obj);
+                },
           start: 0 === index,
-          end: index === arr3.length - 1
+          end: index === closure_6.length - 1
         };
         return closure_1_12(closure_1_16, obj);
-      };
-      cResult[13] = guild_id;
-      class M {
-        constructor(role) {
-          const obj = { role: role.role };
-          onRolePress(obj);
-          O();
-        }
-      }
-      cResult[14] = tmp14;
-      cResult[15] = arr3.length;
-      cResult[16] = fn2;
-    }
-    class M {
-      constructor(role) {
-        const obj = { role: role.role };
-        onRolePress(obj);
-        O();
       }
     }
-    cResult[10] = tmp13;
-    cResult[11] = onRolePress;
-    cResult[12] = M;
-  }
-  if (cResult[6] !== first) {
-    class O {
-      constructor() {
-        const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet(AppLauncherRoleListActionSheet);
-        onActionSheetDismiss();
-      }
-    }
-    cResult[6] = first;
-    cResult[7] = tmp11;
-    tmp10 = tmp11;
+    cResult[7] = fn2;
+    tmp10 = fn2;
   } else {
-    class O {
-      constructor() {
-        const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet(AppLauncherRoleListActionSheet);
-        onActionSheetDismiss();
-      }
-    }
+    tmp10 = cResult[7];
   }
   const found = stateFromStores.filter(tmp10);
   cResult[3] = first;
   cResult[4] = stateFromStores;
   cResult[5] = found;
   arr3 = found;
-}) : ((channel) => {
+}) : (function AppLauncherRoleListActionSheet(channel) {
   let items2;
   let onActionSheetDismiss;
   let require;
@@ -499,7 +616,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onRolePress) => {
   const AppLauncherCommandOptionActionSheet = require("AppLauncherCommandOptionActionSheet").AppLauncherCommandOptionActionSheet;
   items2 = [, ];
   const obj3 = {
-    onChange(str) {
+    onChange: function handleQueryUpdate(str) {
       closure_4(str.toLowerCase());
       const current = ref.current;
       if (current != null) {
@@ -515,7 +632,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onRolePress) => {
     const obj4 = {
       ref,
       data: memo,
-      renderItem(item) {
+      renderItem: function Item(item) {
           item = item.item;
           const index = item.index;
           let obj = {

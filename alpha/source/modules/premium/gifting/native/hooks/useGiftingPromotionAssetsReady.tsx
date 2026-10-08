@@ -1,27 +1,27 @@
-// Module ID: 17166
-// Function ID: 17167
+// Module ID: 17447
+// Function ID: 17448
 // Name: useGiftingPromotionAssetsReady
-// Dependencies: [32, 19, 558, 576, 10498, 1886, 2]
+// Dependencies: [32, 19, 558, 576, 10095, 1898, 2]
 
-// Module 17166 (useGiftingPromotionAssetsReady)
+// Module 17447 (useGiftingPromotionAssetsReady)
 import react2 from "react" /* 576 */;
-import react_nativeDefault from "react-native" /* 1886 */;
+import react_nativeDefault from "react-native" /* 1898 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let asset, c0;
+let c0;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCoachmarkAssetReady(arg0) {
   let themeAndReducedMotionAwareAssetUrl;
   let tmp4;
   let tmp5;
   let tmp6;
   let obj = themeAndReducedMotionAwareAssetUrl(576);
   const cResult = obj.c(3);
-  let obj2 = themeAndReducedMotionAwareAssetUrl(10498);
+  let obj2 = themeAndReducedMotionAwareAssetUrl(10095);
   themeAndReducedMotionAwareAssetUrl = obj2.useThemeAndReducedMotionAwareAssetUrl(arg0);
   let tmp3 = _slicedToArray(react.useState(null), 2);
   [tmp4, importDefault] = tmp3;
@@ -63,11 +63,11 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const effect = obj3.useEffect(tmp5, tmp6);
   return null == themeAndReducedMotionAwareAssetUrl || tmp4 === themeAndReducedMotionAwareAssetUrl;
-}) : ((arg0) => {
+}) : (function useCoachmarkAssetReady(arg0) {
   let closure_1;
   let first;
   let themeAndReducedMotionAwareAssetUrl;
-  let obj = themeAndReducedMotionAwareAssetUrl(10498);
+  let obj = themeAndReducedMotionAwareAssetUrl(10095);
   themeAndReducedMotionAwareAssetUrl = obj.useThemeAndReducedMotionAwareAssetUrl(arg0);
   [first, closure_1] = react.useState(null);
   const items = [themeAndReducedMotionAwareAssetUrl];
@@ -98,7 +98,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return null == themeAndReducedMotionAwareAssetUrl || first === themeAndReducedMotionAwareAssetUrl;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((asset, asset2) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGiftingPromotionAssetsReady(asset, asset2) {
   const obj = react2;
   const cResult = obj.c(3);
   asset = undefined;
@@ -123,7 +123,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((asset, asset2) => 
   cResult[1] = tmp2Result2;
   cResult[2] = obj2;
   tmp7 = obj2;
-}) : ((asset, asset2) => {
+}) : (function useGiftingPromotionAssetsReady(asset, asset2) {
   let asset1;
   asset = undefined;
   if (asset != null) {

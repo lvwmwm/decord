@@ -1,24 +1,22 @@
-// Module ID: 15708
-// Function ID: 15709
+// Module ID: 15988
+// Function ID: 15989
 // Name: UserSettingsDesignSystemAIShimmer
-// Dependencies: [32, 19, 17, 21, 4896, 558, 576, 5601, 4892, 14231, 6002, 5600, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 558, 576, 5375, 5086, 14055, 6186, 5373, 2]
 
-// Module 15708 (UserSettingsDesignSystemAIShimmer)
+// Module 15988 (UserSettingsDesignSystemAIShimmer)
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Stack_Stack from "Stack/Stack" /* 5600 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import Card_Card from "Card/Card" /* 6002 */;
-import AIShimmer from "AIShimmer" /* 14231 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Stack_Stack from "Stack/Stack" /* 5373 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import Card_Card from "Card/Card" /* 6186 */;
+import AIShimmer from "AIShimmer" /* 14055 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let children, onChange;
 
 let closure_4;
 let hasOwnProperty;
@@ -31,7 +29,7 @@ const text = ["Reading the channel", "Finding the highlights", "Writing it up"];
 const options = ["text-xs/normal", "text-sm/normal", "text-md/normal", "text-lg/semibold"];
 const options2 = ["text-default", "text-subtle"];
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Picker(onChange) {
   let tmp4;
   let value;
   let obj = require("react");
@@ -94,7 +92,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
   cResult[5] = value;
   cResult[6] = fn;
   tmp5 = fn;
-}) : ((arg0) => {
+}) : (function Picker(arg0) {
   ({ options, value: require, onChange: dependencyMap } = arg0);
   let obj = {
     style: closure_8().buttonRow,
@@ -120,7 +118,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
   return closure_6(closure_5, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Stage(children) {
   const obj = react2;
   const cResult = obj.c(3);
   children = children.children;
@@ -138,12 +136,12 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[1] = tmp2.stage;
   cResult[2] = tmp4;
   tmp3 = tmp4;
-}) : ((children) => {
+}) : (function Stage(children) {
   const obj = { style: closure_8().stage, children: children.children };
   return metroRequire(hasOwnProperty, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsDesignSystemAIShimmer() {
   let first;
   let first1;
   let first2;
@@ -349,7 +347,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
           if (cResult[31] !== tmp73) {
             const obj13 = { children: metroImportDefault(Stack_Stack.Stack, obj14) };
-            const Card3 = tmp(6002).Card;
+            const Card3 = tmp(6186).Card;
             obj14 = { children: items1 };
             items1 = [tmp61, tmp62, tmp73, tmp77];
             const tmp85 = metroRequire(Card3, obj13);
@@ -391,7 +389,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       const obj17 = { children: metroImportDefault(Stack_Stack.Stack, obj18) };
-      const Card2 = tmp(6002).Card;
+      const Card2 = tmp(6186).Card;
       obj18 = { children: items3 };
       items3 = [tmp32, tmp33, tmp34, tmp39, tmp44, tmp47, tmp52];
       const tmp60 = metroRequire(Card2, obj17);
@@ -410,7 +408,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp52 = tmp56;
   }
   const obj21 = { children: metroImportDefault(Stack_Stack.Stack, obj22) };
-  const Card = tmp(6002).Card;
+  const Card = tmp(6186).Card;
   obj22 = { children: items4 };
   items4 = [tmp15, tmp16, tmp20, tmp25];
   const tmp31 = metroRequire(Card, obj21);
@@ -418,7 +416,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[7] = tmp25;
   cResult[8] = tmp31;
   tmp30 = tmp31;
-}) : (() => {
+}) : (function UserSettingsDesignSystemAIShimmer() {
   let Stack;
   let Stack2;
   let Stack3;

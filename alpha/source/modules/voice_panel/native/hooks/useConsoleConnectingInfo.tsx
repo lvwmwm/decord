@@ -1,26 +1,27 @@
-// Module ID: 17344
-// Function ID: 17345
+// Module ID: 17625
+// Function ID: 17626
 // Name: useConsoleConnectingInfo
-// Dependencies: [4913, 4914, 558, 576, 9458, 573, 17345, 9476, 17346, 17347, 2]
+// Dependencies: [5109, 5110, 558, 576, 9109, 573, 17626, 12895, 17627, 17628, 2]
 
-// Module 17344 (useConsoleConnectingInfo)
-import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 9458 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 9476 */;
-import useShouldDisplayCancelConsoleTransferDefault from "useShouldDisplayCancelConsoleTransfer" /* 17345 */;
-import getConsoleColorDefault from "getConsoleColor" /* 17347 */;
-import GameConsoleStore from "GameConsoleStore" /* 4913 */;
-import SessionsStore from "SessionsStore" /* 4914 */;
+// Module 17625 (useConsoleConnectingInfo)
+import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 9109 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 12895 */;
+import useShouldDisplayCancelConsoleTransferDefault from "useShouldDisplayCancelConsoleTransfer" /* 17626 */;
+import getConsoleColorDefault from "getConsoleColor" /* 17628 */;
+import GameConsoleStore from "GameConsoleStore" /* 5109 */;
+import SessionsStore from "SessionsStore" /* 5110 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConsoleConnectingInfo(arg0) {
   let awaitingRemoteSessionInfo;
+  let channelId;
   let tmp11;
   let tmp15;
-  let tmp22;
+  let tmp23;
   let tmp7;
   let tmp8;
   const obj = require("react");
@@ -62,22 +63,20 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (tmp5 != null) {
       sessionId1 = tmp5.sessionId;
     }
-    class S {
-      constructor() {
-        let str;
-        const getSessionById = SessionsStore.getSessionById;
-        if (sessionId != null) {
-          str = sessionId.sessionId;
-        }
-        if (str == null) {
-          str = "";
-        }
-        return getSessionById(str);
+    const fn2 = function f() {
+      let str;
+      const getSessionById = SessionsStore.getSessionById;
+      if (sessionId != null) {
+        str = sessionId.sessionId;
       }
-    }
+      if (str == null) {
+        str = "";
+      }
+      return getSessionById(str);
+    };
     cResult[3] = sessionId1;
-    cResult[4] = S;
-    tmp15 = S;
+    cResult[4] = fn2;
+    tmp15 = fn2;
   } else {
     tmp15 = cResult[4];
   }
@@ -88,128 +87,80 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     str = stateFromStores.type;
   }
   if (str == null) {
+    let os;
     if (stateFromStores1 != null) {
-      const os = stateFromStores1.clientInfo.os;
+      os = stateFromStores1.clientInfo.os;
     }
-    class S {
-      constructor() {
-        let str;
-        const getSessionById = SessionsStore.getSessionById;
-        if (sessionId != null) {
-          str = sessionId.sessionId;
-        }
-        if (str == null) {
-          str = "";
-        }
-        return getSessionById(str);
-      }
-    }
+    str = os;
   }
   if (str == null) {
     str = "";
   }
-  const tmp18 = useShouldDisplayCancelConsoleTransferDefault(stateFromStores);
+  const tmp19 = useShouldDisplayCancelConsoleTransferDefault(stateFromStores);
   if (stateFromStores != null) {
-    const channelId = stateFromStores.channelId;
+    channelId = stateFromStores.channelId;
   }
   let channelId2;
   if (stateFromStores != null) {
     channelId2 = stateFromStores.channelId;
   }
   if (cResult[5] !== str) {
-    const tmp23 = getConsoleIconDefault(str);
-    class S {
-      constructor() {
-        let str;
-        const getSessionById = SessionsStore.getSessionById;
-        if (sessionId != null) {
-          str = sessionId.sessionId;
-        }
-        if (str == null) {
-          str = "";
-        }
-        return getSessionById(str);
-      }
-    }
-    cResult[6] = tmp23;
-    tmp22 = tmp23;
+    const tmp24 = getConsoleIconDefault(str);
+    cResult[5] = str;
+    cResult[6] = tmp24;
+    tmp23 = tmp24;
   } else {
-    tmp22 = cResult[6];
+    tmp23 = cResult[6];
   }
   if (cResult[7] === stateFromStores) {
     if (cResult[8] === channelId1 === arg0) {
-      let tmp24;
-      let tmp26;
+      let tmp25;
+      let tmp27;
       if (cResult[9] === stateFromStores1) {
-        tmp24 = cResult[10];
+        tmp25 = cResult[10];
       }
       if (cResult[11] !== str) {
-        const tmp27 = getConsoleColorDefault(str);
-        class S {
-          constructor() {
-            let str;
-            const getSessionById = SessionsStore.getSessionById;
-            if (sessionId != null) {
-              str = sessionId.sessionId;
-            }
-            if (str == null) {
-              str = "";
-            }
-            return getSessionById(str);
-          }
-        }
-        cResult[12] = tmp27;
-        tmp26 = tmp27;
+        const tmp28 = getConsoleColorDefault(str);
+        cResult[11] = str;
+        cResult[12] = tmp28;
+        tmp27 = tmp28;
       } else {
-        tmp26 = cResult[12];
+        tmp27 = cResult[12];
       }
-      class S {
-        constructor() {
-          let str;
-          const getSessionById = SessionsStore.getSessionById;
-          if (sessionId != null) {
-            str = sessionId.sessionId;
-          }
-          if (str == null) {
-            str = "";
-          }
-          return getSessionById(str);
-        }
-      }
-      if (cResult[13] === tmp18) {
-        if (cResult[14] === tmp28) {
+      if (cResult[13] === tmp19) {
+        if (cResult[14] === channelId === arg0) {
           if (cResult[15] === (channelId2 === arg0 || channelId1 === arg0)) {
-            if (cResult[16] === tmp22) {
-              if (cResult[17] === tmp24) {
-                let tmp29;
-                if (cResult[18] === tmp26) {
-                  tmp29 = cResult[19];
+            if (cResult[16] === tmp23) {
+              if (cResult[17] === tmp25) {
+                let tmp30;
+                if (cResult[18] === tmp27) {
+                  tmp30 = cResult[19];
                 }
-                return tmp29;
+                return tmp30;
               }
             }
           }
         }
       }
-      const obj2 = { isConnectingToConsole: tmp28, isConnectingOrConnectedToConsole: channelId2 === arg0 || channelId1 === arg0, icon: tmp22, text: tmp24, color: tmp26, displayCancel: tmp18 };
-      cResult[13] = tmp18;
-      cResult[14] = tmp28;
+      const obj2 = { isConnectingToConsole: channelId === arg0, isConnectingOrConnectedToConsole: channelId2 === arg0 || channelId1 === arg0, icon: tmp23, text: tmp25, color: tmp27, displayCancel: tmp19 };
+      cResult[13] = tmp19;
+      cResult[14] = channelId === arg0;
       cResult[15] = channelId2 === arg0 || channelId1 === arg0;
-      cResult[16] = tmp22;
-      cResult[17] = tmp24;
-      cResult[18] = tmp26;
+      cResult[16] = tmp23;
+      cResult[17] = tmp25;
+      cResult[18] = tmp27;
       cResult[19] = obj2;
-      tmp29 = obj2;
+      tmp30 = obj2;
     }
   }
   const tmpResult4 = require("getConsoleConnectingText");
-  const consoleConnectingText = tmpResult4.getConsoleConnectingText(stateFromStores1, stateFromStores, tmp20);
+  const consoleConnectingText = tmpResult4.getConsoleConnectingText(stateFromStores1, stateFromStores, tmp21);
   cResult[7] = stateFromStores;
   cResult[8] = channelId1 === arg0;
   cResult[9] = stateFromStores1;
   cResult[10] = consoleConnectingText;
-  tmp24 = consoleConnectingText;
-}) : ((arg0) => {
+  tmp25 = consoleConnectingText;
+}) : (function useConsoleConnectingInfo(arg0) {
   let awaitingRemoteSessionInfo;
   let channelId2;
   let sessionId;
@@ -261,7 +212,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (stateFromStores != null) {
     channelId2 = stateFromStores.channelId;
   }
-  tmp5Result = tmp5(17346);
+  tmp5Result = tmp5(17627);
   return obj3;
 });
 const result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useConsoleConnectingInfo.tsx");

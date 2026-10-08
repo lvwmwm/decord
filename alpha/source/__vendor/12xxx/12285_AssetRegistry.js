@@ -1,0 +1,10 @@
+// Module ID: 12285
+// Function ID: 12286
+// Name: AssetRegistry
+// Dependencies: [1132]
+
+// Module 12285 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1132 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "4e1581119cf1ddaae8c3aa4ebdd90f99", name: "StickerIcon", type: "png" });

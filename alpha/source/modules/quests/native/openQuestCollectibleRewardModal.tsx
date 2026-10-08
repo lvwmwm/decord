@@ -1,23 +1,23 @@
-// Module ID: 10981
-// Function ID: 10982
+// Module ID: 11174
+// Function ID: 11175
 // Name: openQuestCollectibleRewardModal
-// Dependencies: [1377, 5630, 21, 4896, 587, 558, 576, 504, 10018, 10924, 4892, 1126, 7206, 10826, 2]
+// Dependencies: [1389, 5977, 21, 5090, 587, 558, 576, 504, 9549, 10575, 5086, 1126, 7386, 11175, 2]
 // Exports: openQuestCollectibleRewardModal
 
-// Module 10981 (openQuestCollectibleRewardModal)
+// Module 11174 (openQuestCollectibleRewardModal)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import QuestConstants from "QuestConstants" /* 5630 */;
-import getQuestLogger from "getQuestLogger" /* 7206 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 10018 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 10826 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 10924 */;
-import UserStore from "UserStore" /* 1377 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import QuestConstants from "QuestConstants" /* 5977 */;
+import getQuestLogger from "getQuestLogger" /* 7386 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9549 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 10575 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 11175 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ const QuestsExperimentLocations = QuestConstants.QuestsExperimentLocations;
 let obj = { title: obj2 };
 obj2 = { textAlign: "center", marginHorizontal: nativeDefault.space.PX_32 };
 let closure_8 = createStyles.createStyles(obj);
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestCollectibleRewardModalMessages(quest) {
   let currentUser;
   let items1;
   let tmp5;
@@ -57,7 +57,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   const defaultRewardNameWithArticle = tmpResult3.getDefaultRewardNameWithArticle(quest.config, stateFromStores);
   const tmpResult4 = hooks_QuestHooks;
   const claimedCollectibleRewardMessage = tmpResult4.useClaimedCollectibleRewardMessage(quest.config);
-  const Text = tmp(4892).Text;
+  const Text = tmp(5086).Text;
   const title = tmp4.title;
   const intl = tmp(1126).intl;
   const formatResult = intl.format(intl2.t.YNaxMp, { itemName: defaultRewardNameWithArticle });
@@ -101,7 +101,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   cResult[4] = formatResult;
   cResult[5] = tmp13;
   tmp12 = tmp13;
-}) : ((quest) => {
+}) : (function QuestCollectibleRewardModalMessages(quest) {
   let currentUser;
   let intl;
   let items1;

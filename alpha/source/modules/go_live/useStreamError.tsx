@@ -1,18 +1,16 @@
-// Module ID: 9138
-// Function ID: 9139
+// Module ID: 10708
+// Function ID: 10709
 // Name: useStreamError
-// Dependencies: [9130, 9131, 558, 576, 504, 2]
+// Dependencies: [10702, 5287, 558, 576, 504, 2]
 
-// Module 9138 (useStreamError)
-import AVError from "AVError" /* 9131 */;
-import AVErrorStore from "AVErrorStore" /* 9130 */;
+// Module 10708 (useStreamError)
+import AVError from "AVError" /* 5287 */;
+import AVErrorStore from "AVErrorStore" /* 10702 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let id;
-
 let closure_3 = { [AVError.AVError.STREAM_SOUNDSHARE_FAILED]: 0, [AVError.AVError.STREAM_SEND_HIGH_PACKET_LOSS]: 1, [AVError.AVError.STREAM_VIEW_HIGH_PACKET_LOSS]: 1, [AVError.AVError.STREAM_SEND_LOW_FPS]: 2, [AVError.AVError.STREAM_VIEW_LOW_FPS]: 2, [AVError.AVError.STREAM_BAD_NETWORK_QUALITY]: 3 };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStreamError(id) {
   let first;
   let tmp6;
   let tmp7;
@@ -64,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((id) => {
+}) : (function useStreamError(id) {
   id = id.id;
   const items = [AVErrorStore];
   const items1 = [id];

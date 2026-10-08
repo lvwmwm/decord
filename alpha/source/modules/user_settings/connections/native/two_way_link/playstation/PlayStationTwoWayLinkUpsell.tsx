@@ -1,21 +1,21 @@
-// Module ID: 14792
-// Function ID: 14793
+// Module ID: 15053
+// Function ID: 15054
 // Name: PlayStationTwoWayLinkUpsell
-// Dependencies: [19, 1085, 21, 4896, 558, 576, 2115, 14790, 1126, 5981, 14793, 8796, 2036, 2]
+// Dependencies: [19, 1085, 21, 5090, 558, 576, 2127, 15051, 1126, 6164, 15054, 9148, 2048, 2]
 
-// Module 14792 (PlayStationTwoWayLinkUpsell)
+// Module 15053 (PlayStationTwoWayLinkUpsell)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 8796 */;
-import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 14790 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14793 */;
+import dismissible_content from "dismissible_content" /* 2048 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 9148 */;
+import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 15051 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15054 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,8 +25,7 @@ let hasOwnProperty;
 ({ HelpdeskArticles: c3, AnalyticsLocations: closure_4, PlatformTypes: hasOwnProperty } = Constants);
 const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ upsellImage: { alignSelf: "center", width: 84, marginLeft: 16 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  let constants2;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStationTwoWayLinkUpsell() {
   let tmp13;
   let tmp18;
   let tmp19;
@@ -39,7 +38,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = HelpdeskUtilsDefault;
     const articleURL = obj2.getArticleURL(constants.PS_CONNECTION);
-    const OneWayToTwoWayLinkUpsell = tmp(14790).OneWayToTwoWayLinkUpsell;
+    const OneWayToTwoWayLinkUpsell = tmp(15051).OneWayToTwoWayLinkUpsell;
     const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t.v20wwm);
     const intl2 = tmp(1126).intl;
@@ -63,27 +62,51 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp13 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function u() {
-      const items = [constants.RELINK_UPSELL];
-      const obj = PlayStationLinkModalActionCreatorsDefault;
-      return obj.showModal(items, constants2.PLAYSTATION);
-    };
-    cResult[5] = fn;
-    tmp18 = fn;
+    class T {
+      constructor() {
+        obj = closure_1_1(closure_1_2[11]);
+        items = [];
+        items[0] = closure_1_4.RELINK_UPSELL;
+        return obj.showModal(items, closure_1_5.PLAYSTATION);
+      }
+    }
+    cResult[5] = T;
+    tmp18 = T;
   } else {
-    tmp18 = cResult[5];
+    class T {
+      constructor() {
+        obj = closure_1_1(closure_1_2[11]);
+        items = [];
+        items[0] = closure_1_4.RELINK_UPSELL;
+        return obj.showModal(items, closure_1_5.PLAYSTATION);
+      }
+    }
   }
   if (cResult[6] !== tmp13) {
-    const tmp21 = <tmp5 title={tmp6} body={tmp7} img={tmp13} newIndicatorDismissibleContent={dismissible_content.DismissibleContent.PS_ONE_WAY_RECONNECT} onPress={tmp18} />;
+    class T {
+      constructor() {
+        obj = closure_1_1(closure_1_2[11]);
+        items = [];
+        items[0] = closure_1_4.RELINK_UPSELL;
+        return obj.showModal(items, closure_1_5.PLAYSTATION);
+      }
+    }
+    const tmp20 = <tmp5 title={tmp6} body={tmp7} img={tmp13} newIndicatorDismissibleContent={dismissible_content.DismissibleContent.PS_ONE_WAY_RECONNECT} onPress={tmp18} />;
     cResult[6] = tmp13;
-    cResult[7] = tmp21;
-    tmp19 = tmp21;
+    cResult[7] = tmp20;
+    tmp19 = tmp20;
   } else {
-    tmp19 = cResult[7];
+    class T {
+      constructor() {
+        obj = closure_1_1(closure_1_2[11]);
+        items = [];
+        items[0] = closure_1_4.RELINK_UPSELL;
+        return obj.showModal(items, closure_1_5.PLAYSTATION);
+      }
+    }
   }
   return tmp19;
-}) : (() => {
-  let constants2;
+}) : (function PlayStationTwoWayLinkUpsell() {
   const tmp = closure_7();
   let obj = HelpdeskUtilsDefault;
   const articleURL = obj.getArticleURL(constants.PS_CONNECTION);

@@ -1,35 +1,35 @@
-// Module ID: 13295
-// Function ID: 13296
+// Module ID: 13595
+// Function ID: 13596
 // Name: PremiumFeaturesCarouselSection
-// Dependencies: [32, 19, 17, 1085, 6951, 1379, 21, 587, 4896, 558, 576, 5612, 1105, 4892, 5981, 1126, 13296, 13297, 13298, 13299, 5777, 1615, 10504, 1188, 6664, 1484, 1252, 2]
+// Dependencies: [32, 19, 17, 1085, 7140, 1391, 21, 587, 5090, 558, 576, 5387, 1105, 5086, 6164, 1126, 13596, 13597, 13598, 13599, 5360, 1627, 10101, 1200, 6841, 1496, 1264, 2]
 
-// Module 13295 (PremiumFeaturesCarouselSection)
+// Module 13595 (PremiumFeaturesCarouselSection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl5 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import LinearGradientDefault from "LinearGradient" /* 5612 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5777 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import ColorConstants from "ColorConstants" /* 6951 */;
-import PaginationDefault from "Pagination" /* 10504 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13296 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13297 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13298 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13299 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5360 */;
+import LinearGradientDefault from "LinearGradient" /* 5387 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import ColorConstants from "ColorConstants" /* 7140 */;
+import PaginationDefault from "Pagination" /* 10101 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13596 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13597 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13598 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13599 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, flag, obj1, set, set2, set3, tmp3, trackResult;
+let _require, dependencyMap, set, set2, set3;
 
 let c10;
 let hasOwnProperty;
@@ -40,9 +40,9 @@ let obj5;
 let obj6;
 let tmp;
 let unpackModuleId;
-const native = tmp(1188);
-const MetaQuestUtils = tmp(1615);
-const Text_Text = tmp(4892);
+const native = tmp(1200);
+const MetaQuestUtils = tmp(1627);
+const Text_Text = tmp(5086);
 let _slicedToArray = _slicedToArray_mod;
 ({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -66,7 +66,7 @@ let closure_15 = createStyles2(obj4);
 createStyles = createStyles_mod;
 let closure_16 = createStyles.createStyles({ emojiImage: { alignSelf: "flex-end" } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeaturesCardBackground(arg0) {
   let children;
   let style;
   const obj = react2;
@@ -110,7 +110,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.card;
   cResult[2] = items;
   tmp5 = items;
-}) : ((arg0) => {
+}) : (function PremiumFeaturesCardBackground(arg0) {
   let children;
   let items;
   let obj2;
@@ -126,7 +126,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_17 = tmp6;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function CarouselCard(arg0) {
   let imageSrc;
   let imageStyle;
   let items;
@@ -188,7 +188,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = title;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((arg0) => {
+}) : (function CarouselCard(arg0) {
   let imageSrc;
   let imageStyle;
   let items;
@@ -207,7 +207,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return unpackModuleId(closure_17, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumFeatureCardData(arg0) {
   let arr5;
   let closure_0;
   let first;
@@ -333,7 +333,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
   cResult[13] = arg0;
   cResult[14] = mapped;
   tmp38 = mapped;
-}) : ((arg0) => {
+}) : (function usePremiumFeatureCardData(arg0) {
   let closure_0 = arg0;
   const tmp = closure_16();
   const emojiImage = tmp;
@@ -380,7 +380,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeaturesCarousel(arg0) {
   let items;
   let obj8;
   let onEndReached;
@@ -394,7 +394,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
   const tmp6 = _slicedToArray(react.useState(0), 2);
   const first = tmp6[0];
-  let closure_2 = tmp8;
+  dependencyMap = tmp8;
   const arr = closure_19(width);
   const obj3 = react;
   if (cResult[0] === arr.length) {
@@ -444,6 +444,11 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         const obj4 = { style: tmp4.carouselContainer, children: items };
                         items = [tmp19, tmp25];
                         const tmp31 = unpackModuleId(metroRequire, obj4);
+                        class P {
+                          constructor(nativeEvent) {
+                            closure_2(Math.max(0, Math.min(arr.length - 1, Math.round(nativeEvent.nativeEvent.contentOffset.x / sum))));
+                          }
+                        }
                         cResult[20] = tmp4.carouselContainer;
                         cResult[21] = tmp19;
                         cResult[22] = tmp25;
@@ -454,7 +459,11 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     const obj5 = { containerStyle: tmp4.indicators, numberOfItems: arr.length, currentIndex: first };
                     const tmp27 = authStore(native.CarouselPagination, obj5);
                     cResult[16] = arr.length;
-                    cResult[17] = first;
+                    class P {
+                      constructor(nativeEvent) {
+                        closure_2(Math.max(0, Math.min(arr.length - 1, Math.round(nativeEvent.nativeEvent.contentOffset.x / sum))));
+                      }
+                    }
                     cResult[18] = tmp4.indicators;
                     cResult[19] = tmp27;
                     tmp25 = tmp27;
@@ -490,22 +499,34 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           cResult[10] = isScreenReaderEnabled;
           cResult[11] = sum;
           cResult[12] = bound;
+          class P {
+            constructor(nativeEvent) {
+              closure_2(Math.max(0, Math.min(arr.length - 1, Math.round(nativeEvent.nativeEvent.contentOffset.x / sum))));
+            }
+          }
           cResult[13] = tmp4.carousel;
           cResult[14] = width;
           cResult[15] = tmp22;
           tmp19 = tmp22;
         }
-        const obj7 = { style: tmp4.carousel, contentContainerStyle: obj8, horizontal: true, showsHorizontalScrollIndicator: false, decelerationRate: "fast", snapToOffsets: arr.map((item, index) => index * sum), scrollEventThrottle: 100, onScroll: tmp18, children: arr };
+        const obj7 = { style: tmp4.carousel, contentContainerStyle: obj8, horizontal: true, showsHorizontalScrollIndicator: false, decelerationRate: "fast", snapToOffsets: null, scrollEventThrottle: 100, onScroll: tmp18, children: arr };
         obj8 = { paddingHorizontal: bound, gap: tmp14 };
+        class P {
+          constructor(nativeEvent) {
+            closure_2(Math.max(0, Math.min(arr.length - 1, Math.round(nativeEvent.nativeEvent.contentOffset.x / sum))));
+          }
+        }
         tmp22 = authStore(hasOwnProperty, obj7);
       }
-      const fn2 = function w(nativeEvent) {
-        closure_2(Math.max(0, Math.min(arr.length - 1, Math.round(nativeEvent.nativeEvent.contentOffset.x / sum))));
-      };
+      class P {
+        constructor(nativeEvent) {
+          closure_2(Math.max(0, Math.min(arr.length - 1, Math.round(nativeEvent.nativeEvent.contentOffset.x / sum))));
+        }
+      }
       cResult[5] = arr.length;
       cResult[6] = sum;
-      cResult[7] = fn2;
-      tmp18 = fn2;
+      cResult[7] = P;
+      tmp18 = P;
     }
   }
   const fn = function o() {
@@ -523,7 +544,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = items1;
   tmp10 = items1;
   tmp9 = fn;
-}) : ((arg0) => {
+}) : (function PremiumFeaturesCarousel(arg0) {
   let onEndReached;
   let width;
   ({ width, onEndReached } = arg0);
@@ -588,7 +609,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   tmp16 = authStore;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeaturesCarouselSection(style) {
   let analyticsLocations;
   let closure_2;
   let first;
@@ -600,11 +621,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   const cResult = obj.c(18);
   style = style.style;
   const tmp4 = closure_14();
-  analyticsLocations = first(6664)().analyticsLocations;
+  analyticsLocations = first(6841)().analyticsLocations;
   let obj2 = react;
   [first, dependencyMap] = react.useState(false);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(1484);
+    const tmpResult = tmp(1496);
     const windowDimensions = tmpResult.getWindowDimensions();
     cResult[0] = windowDimensions;
     first1 = windowDimensions;
@@ -622,86 +643,68 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
       let tmp13;
       let tmp14;
       let tmp15;
+      let tmp17;
       if (cResult[5] === tmp4.container) {
         tmp13 = cResult[6];
       }
       const _Symbol = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        class M {
-          constructor(arg0) {
-            return closure_3(style.nativeEvent.layout.width);
-          }
-        }
-        cResult[7] = M;
-        tmp14 = M;
+        const fn = function w(nativeEvent) {
+          return _slicedToArray(nativeEvent.nativeEvent.layout.width);
+        };
+        cResult[7] = fn;
+        tmp14 = fn;
       } else {
-        class M {
-          constructor(arg0) {
-            return closure_3(style.nativeEvent.layout.width);
-          }
-        }
+        tmp14 = cResult[7];
       }
       const _Symbol2 = Symbol;
       const headerText = tmp4.headerText;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        class M {
-          constructor(arg0) {
-            return closure_3(style.nativeEvent.layout.width);
-          }
-        }
-        const stringResult = obj4.string(tmp(1126).t.RGadQR);
+        const intl = tmp(1126).intl;
+        const stringResult = intl.string(tmp(1126).t.RGadQR);
         cResult[8] = stringResult;
         tmp15 = stringResult;
       } else {
-        class M {
-          constructor(arg0) {
-            return closure_3(style.nativeEvent.layout.width);
-          }
-        }
+        tmp15 = cResult[8];
       }
       if (cResult[9] !== tmp4.headerText) {
-        class M {
-          constructor(arg0) {
-            return closure_3(style.nativeEvent.layout.width);
-          }
-        }
         const obj3 = { style: headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: tmp15 };
+        const tmp19 = closure_10(tmp(5086).Text, obj3);
         cResult[9] = tmp4.headerText;
-        cResult[10] = closure_10(tmp(4892).Text, obj3);
-        const tmp18 = closure_10(tmp(4892).Text, obj3);
+        cResult[10] = tmp19;
+        tmp17 = tmp19;
       } else {
-        class M {
-          constructor(arg0) {
-            return closure_3(style.nativeEvent.layout.width);
-          }
-        }
+        tmp17 = cResult[10];
       }
       if (cResult[11] === tmp11) {
-        class M {
-          constructor(arg0) {
-            return closure_3(style.nativeEvent.layout.width);
-          }
+        let tmp20;
+        if (cResult[12] === tmp12) {
+          tmp20 = cResult[13];
         }
         if (cResult[14] === tmp13) {
-          class M {
-            constructor(arg0) {
-              return closure_3(style.nativeEvent.layout.width);
+          if (cResult[15] === tmp17) {
+            let tmp24;
+            if (cResult[16] === tmp20) {
+              tmp24 = cResult[17];
             }
+            return tmp24;
           }
         }
-        const obj5 = { style: tmp13, onLayout: tmp14, children: items };
-        items = [tmp17, tmp19];
+        const obj4 = { style: tmp13, onLayout: tmp14, children: items };
+        items = [tmp17, tmp20];
+        const tmp27 = closure_11(closure_6, obj4);
         cResult[14] = tmp13;
         cResult[15] = tmp17;
-        cResult[16] = tmp19;
-        cResult[17] = closure_11(closure_6, obj5);
-        const tmp26 = closure_11(closure_6, obj5);
+        cResult[16] = tmp20;
+        cResult[17] = tmp27;
+        tmp24 = tmp27;
       }
-      const obj6 = { width: tmp11, onEndReached: tmp12 };
+      const obj5 = { width: tmp11, onEndReached: tmp12 };
+      const tmp23 = closure_10(closure_20, obj5);
       cResult[11] = tmp11;
       cResult[12] = tmp12;
-      cResult[13] = closure_10(closure_20, obj6);
-      const tmp22 = closure_10(closure_20, obj6);
+      cResult[13] = tmp23;
+      tmp20 = tmp23;
     }
     const items1 = [tmp4.container, style];
     cResult[4] = style;
@@ -711,28 +714,20 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   }
   class E {
     constructor() {
-      tmp = closure_1;
+      const tmp = first;
       if (!tmp) {
-        tmp2 = closure_1;
-        tmp3 = closure_2;
-        obj = closure_1(closure_2[26]);
-        tmp4 = AnalyticEvents;
-        obj1 = { location_stack: null };
-        tmp5 = analyticsLocations;
-        obj1.location_stack = analyticsLocations;
-        trackResult = obj.track(AnalyticEvents.PREMIUM_MARKETING_SCROLLED_TO_LAST, obj1);
-        tmp7 = closure_2;
-        flag = true;
-        tmp8 = closure_2(true);
+        const obj2 = { location_stack: analyticsLocations };
+        const obj = AnalyticsUtilsDefault;
+        obj.track(AnalyticEvents.PREMIUM_MARKETING_SCROLLED_TO_LAST, obj2);
+        closure_2(true);
       }
-      return;
     }
   }
   cResult[1] = analyticsLocations;
   cResult[2] = first;
   cResult[3] = E;
   tmp12 = E;
-}) : ((style) => {
+}) : (function PremiumFeaturesCarouselSection(style) {
   let closure_2;
   let closure_3;
   let first;
@@ -745,10 +740,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   _slicedToArray = undefined;
   style = style.style;
   let tmp = closure_14();
-  const analyticsLocations = first(6664)().analyticsLocations;
+  const analyticsLocations = first(6841)().analyticsLocations;
   [first, dependencyMap] = react.useState(false);
   const useState = react.useState;
-  let obj = analyticsLocations(1484);
+  let obj = analyticsLocations(1496);
   [first1, _slicedToArray] = useState(obj.getWindowDimensions().width);
   const items = [analyticsLocations, first];
   let obj2 = {
@@ -769,7 +764,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     }
   }, items);
   const obj3 = { style: tmp.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: intl.string(analyticsLocations(1126).t.RGadQR) };
-  const Text = analyticsLocations(4892).Text;
+  const Text = analyticsLocations(5086).Text;
   intl = analyticsLocations(1126).intl;
   items2 = [closure_10(Text, obj3), closure_10(closure_20, { width: first1, onEndReached: callback })];
   return closure_11(closure_6, obj2);

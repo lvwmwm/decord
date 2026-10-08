@@ -1,20 +1,18 @@
-// Module ID: 10621
-// Function ID: 10622
+// Module ID: 10219
+// Function ID: 10220
 // Name: AcceptRequestConfirmationModal
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1126, 5714, 4892, 5790, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1126, 5297, 5086, 5394, 2]
 
-// Module 10621 (AcceptRequestConfirmationModal)
+// Module 10219 (AcceptRequestConfirmationModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5714 */;
-import AlertDefault from "Alert" /* 5790 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5297 */;
+import AlertDefault from "Alert" /* 5394 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let closeResult;
 
 let closure_4;
 let hasOwnProperty;
@@ -24,16 +22,19 @@ const View = react_native.View;
 let obj = { bodyText: obj2, text: { textAlign: "center" } };
 obj2 = { textAlign: "center", alignItems: "center", gap: nativeDefault.space.PX_8 };
 let closure_6 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptRequestConfirmationModal(arg0) {
   let bodyText;
   let items;
   let onCancel;
   let onConfirm;
   let text;
   let tmp10;
-  let tmp14;
+  let tmp12;
+  let tmp15;
+  let tmp17;
   let tmp5;
   let tmp6;
+  let tmp9;
   let obj = onConfirm(576);
   const cResult = obj.c(18);
   ({ onCancel, onConfirm } = arg0);
@@ -42,143 +43,95 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const intl = tmp(1126).intl;
     const stringResult = intl.string(onConfirm(1126).t.MMlhsr);
     const intl2 = tmp(1126).intl;
-    cResult[0] = stringResult;
-    cResult[1] = intl2.string(onConfirm(1126).t["ETE/oC"]);
     const stringResult1 = intl2.string(onConfirm(1126).t["ETE/oC"]);
+    cResult[0] = stringResult;
+    cResult[1] = stringResult1;
+    tmp5 = stringResult;
+    tmp6 = stringResult1;
   } else {
     [tmp5, tmp6] = cResult;
   }
   if (cResult[2] !== onConfirm) {
-    class T {
-      constructor() {
-        tmp = onConfirm();
-        obj = closure_1(closure_2[8]);
-        closeResult = obj.close();
-        return;
-      }
-    }
+    const fn = function f() {
+      onConfirm();
+      const obj = AlertActionCreatorsDefault;
+      obj.close();
+    };
     cResult[2] = onConfirm;
-    cResult[3] = T;
+    cResult[3] = fn;
+    tmp9 = fn;
   } else {
-    class T {
-      constructor() {
-        tmp = onConfirm();
-        obj = closure_1(closure_2[8]);
-        closeResult = obj.close();
-        return;
-      }
-    }
+    tmp9 = cResult[3];
   }
   ({ bodyText, text } = tmp4);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class T {
-      constructor() {
-        tmp = onConfirm();
-        obj = closure_1(closure_2[8]);
-        closeResult = obj.close();
-        return;
-      }
-    }
-    const stringResult2 = obj2.string(onConfirm(1126).t.eJzSDT);
+    const intl3 = tmp(1126).intl;
+    const stringResult2 = intl3.string(onConfirm(1126).t.eJzSDT);
     cResult[4] = stringResult2;
     tmp10 = stringResult2;
   } else {
-    class T {
-      constructor() {
-        tmp = onConfirm();
-        obj = closure_1(closure_2[8]);
-        closeResult = obj.close();
-        return;
-      }
-    }
+    tmp10 = cResult[4];
   }
   if (cResult[5] !== tmp4.text) {
-    class T {
-      constructor() {
-        tmp = onConfirm();
-        obj = closure_1(closure_2[8]);
-        closeResult = obj.close();
-        return;
-      }
-    }
-    const obj3 = { variant: "heading-lg/bold", color: "text-strong", style: text, children: tmp10 };
+    const obj2 = { variant: "heading-lg/bold", color: "text-strong", style: text, children: tmp10 };
+    const tmp14 = closure_4(onConfirm(5086).Text, obj2);
     cResult[5] = tmp4.text;
-    cResult[6] = closure_4(onConfirm(4892).Text, obj3);
-    const tmp13 = closure_4(onConfirm(4892).Text, obj3);
+    cResult[6] = tmp14;
+    tmp12 = tmp14;
   } else {
-    class T {
-      constructor() {
-        tmp = onConfirm();
-        obj = closure_1(closure_2[8]);
-        closeResult = obj.close();
-        return;
-      }
-    }
+    tmp12 = cResult[6];
   }
   const text2 = tmp4.text;
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    class T {
-      constructor() {
-        tmp = onConfirm();
-        obj = closure_1(closure_2[8]);
-        closeResult = obj.close();
-        return;
-      }
-    }
-    const stringResult3 = obj4.string(onConfirm(1126).t.GB4jUw);
+    const intl4 = tmp(1126).intl;
+    const stringResult3 = intl4.string(onConfirm(1126).t.GB4jUw);
     cResult[7] = stringResult3;
-    tmp14 = stringResult3;
+    tmp15 = stringResult3;
   } else {
-    class T {
-      constructor() {
-        tmp = onConfirm();
-        obj = closure_1(closure_2[8]);
-        closeResult = obj.close();
-        return;
-      }
-    }
+    tmp15 = cResult[7];
   }
   if (cResult[8] !== tmp4.text) {
-    class T {
-      constructor() {
-        tmp = onConfirm();
-        obj = closure_1(closure_2[8]);
-        closeResult = obj.close();
-        return;
-      }
-    }
-    const obj5 = { variant: "text-md/medium", color: "text-subtle", style: text2, children: tmp14 };
+    const obj3 = { variant: "text-md/medium", color: "text-subtle", style: text2, children: tmp15 };
+    const tmp19 = closure_4(onConfirm(5086).Text, obj3);
     cResult[8] = tmp4.text;
-    cResult[9] = closure_4(onConfirm(4892).Text, obj5);
-    const tmp17 = closure_4(onConfirm(4892).Text, obj5);
+    cResult[9] = tmp19;
+    tmp17 = tmp19;
   } else {
-    class T {
-      constructor() {
-        tmp = onConfirm();
-        obj = closure_1(closure_2[8]);
-        closeResult = obj.close();
-        return;
-      }
-    }
+    tmp17 = cResult[9];
   }
   if (cResult[10] === tmp4.bodyText) {
-    class T {
-      constructor() {
-        tmp = onConfirm();
-        obj = closure_1(closure_2[8]);
-        closeResult = obj.close();
-        return;
+    if (cResult[11] === tmp17) {
+      let tmp20;
+      if (cResult[12] === tmp12) {
+        tmp20 = cResult[13];
       }
+      if (cResult[14] === onCancel) {
+        if (cResult[15] === tmp20) {
+          let tmp22;
+          if (cResult[16] === tmp9) {
+            tmp22 = cResult[17];
+          }
+          return tmp22;
+        }
+      }
+      const obj4 = { confirmText: tmp5, cancelText: tmp6, onConfirm: tmp9, onCancel, children: tmp20 };
+      const tmp25 = closure_4(AlertDefault, obj4);
+      cResult[14] = onCancel;
+      cResult[15] = tmp20;
+      cResult[16] = tmp9;
+      cResult[17] = tmp25;
+      tmp22 = tmp25;
     }
   }
-  const obj6 = { style: bodyText, children: items };
-  items = [tmp12, tmp16];
+  const obj5 = { style: bodyText, children: items };
+  items = [tmp12, tmp17];
+  const tmp21 = closure_5(View, obj5);
   cResult[10] = tmp4.bodyText;
-  cResult[11] = tmp16;
+  cResult[11] = tmp17;
   cResult[12] = tmp12;
-  cResult[13] = closure_5(View, obj6);
-  closure_5(View, obj6);
-}) : ((onConfirm) => {
+  cResult[13] = tmp21;
+  tmp20 = tmp21;
+}) : (function AcceptRequestConfirmationModal(onConfirm) {
   let intl;
   let intl2;
   let intl3;
@@ -204,11 +157,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   intl2 = onConfirm(1126).intl;
   obj2 = { style: tmp.bodyText, children: items };
   const obj3 = { variant: "heading-lg/bold", color: "text-strong", style: tmp.text, children: intl3.string(onConfirm(1126).t.eJzSDT) };
-  const Text = onConfirm(4892).Text;
+  const Text = onConfirm(5086).Text;
   intl3 = onConfirm(1126).intl;
   items = [closure_4(Text, obj3), ];
   const obj4 = { variant: "text-md/medium", color: "text-subtle", style: tmp.text, children: intl4.string(onConfirm(1126).t.GB4jUw) };
-  const Text2 = onConfirm(4892).Text;
+  const Text2 = onConfirm(5086).Text;
   intl4 = onConfirm(1126).intl;
   items[1] = closure_4(Text2, obj4);
   return closure_4(tmp2, obj);

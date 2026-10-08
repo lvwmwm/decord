@@ -1,11 +1,11 @@
-// Module ID: 2091
-// Function ID: 2092
+// Module ID: 2103
+// Function ID: 2104
 // Name: GuildEntityDao
-// Dependencies: [2083, 2085, 2]
+// Dependencies: [2095, 2097, 2]
 
-// Module 2091 (GuildEntityDao)
-import Table from "Table" /* 2083 */;
-import TableId from "TableId" /* 2085 */;
+// Module 2103 (GuildEntityDao)
+import Table from "Table" /* 2095 */;
+import TableId from "TableId" /* 2097 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

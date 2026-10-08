@@ -1,25 +1,25 @@
-// Module ID: 12142
-// Function ID: 12143
+// Module ID: 12221
+// Function ID: 12222
 // Name: ChannelAccessInfo
-// Dependencies: [19, 17, 2070, 2112, 2106, 21, 4896, 587, 558, 576, 1126, 9250, 504, 11243, 1375, 4892, 5916, 1188, 12141, 5880, 9269, 9267, 9615, 2]
+// Dependencies: [19, 17, 2082, 2124, 2118, 21, 5090, 587, 558, 576, 1126, 8579, 504, 11358, 1387, 5086, 6189, 1200, 12220, 8192, 8599, 8597, 10808, 2]
 
-// Module 12142 (ChannelAccessInfo)
+// Module 12221 (ChannelAccessInfo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import GuildRecord from "GuildRecord" /* 2070 */;
-import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 9250 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11243 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import GuildRecord from "GuildRecord" /* 2082 */;
+import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8579 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11358 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildRoleStore from "GuildRoleStore" /* 2118 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let assertNeverResult, dependencyMap, guild, obj1, obj12, obj13, obj14, tmp19, tmp2, tmp20, tmp21, tmp22, tmp23, tmp24;
+let dependencyMap;
 
 let c10;
 let c9;
@@ -34,7 +34,7 @@ let obj = { section: obj2, sectionContent: { alignItems: "center", flexDirection
 obj2 = { alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, color: nativeDefault.colors.TEXT_DEFAULT, flexDirection: "row", marginBottom: 8, marginTop: 8, padding: 16 };
 let closure_12 = createStyles.createStyles(obj);
 const constants = { MEMBERS: 0, [0]: "MEMBERS", ROLES: 1, [1]: "ROLES" };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelAccessInfo(guild) {
   let closure_2;
   let first;
   let intl2;
@@ -102,75 +102,74 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                   }
                   if (cResult[30] === tmp11) {
                     if (cResult[31] === tmp15) {
-                      let tmp42;
-                      let tmp45;
+                      let tmp41;
+                      let tmp44;
                       if (cResult[32] === tmp16) {
-                        tmp42 = cResult[33];
+                        tmp41 = cResult[33];
                       }
                       const _Symbol2 = Symbol;
                       if (cResult[34] === Symbol.for("react.memo_cache_sentinel")) {
-                        let obj2 = { source: channel(9615), size: tmp(1188).Icon.Sizes.SMALL };
-                        const Icon = tmp(1188).Icon;
-                        const tmp48 = closure_8(Icon, obj2);
-                        cResult[34] = tmp48;
-                        tmp45 = tmp48;
+                        let obj2 = { source: channel(10808), size: tmp(1200).Icon.Sizes.SMALL };
+                        const Icon = tmp(1200).Icon;
+                        const tmp47 = closure_8(Icon, obj2);
+                        cResult[34] = tmp47;
+                        tmp44 = tmp47;
                       } else {
-                        tmp45 = cResult[34];
+                        tmp44 = cResult[34];
                       }
                       if (cResult[35] === tmp12) {
                         if (cResult[36] === tmp13) {
-                          if (cResult[37] === tmp42) {
+                          if (cResult[37] === tmp41) {
                             if (cResult[38] === tmp17) {
                               if (cResult[39] === str) {
-                                let tmp49;
+                                let tmp48;
                                 if (cResult[40] === tmp18) {
-                                  tmp49 = cResult[41];
+                                  tmp48 = cResult[41];
                                 }
                                 if (cResult[42] === tmp14) {
-                                  let tmp52;
-                                  if (cResult[43] === tmp49) {
-                                    tmp52 = cResult[44];
+                                  let tmp51;
+                                  if (cResult[43] === tmp48) {
+                                    tmp51 = cResult[44];
                                   }
-                                  return tmp52;
+                                  return tmp51;
                                 }
                                 let obj3 = { children: items1 };
-                                items1 = [tmp14, tmp49];
-                                const tmp55 = closure_9(closure_10, obj3);
+                                items1 = [tmp14, tmp48];
+                                const tmp54 = closure_9(closure_10, obj3);
                                 cResult[42] = tmp14;
-                                cResult[43] = tmp49;
-                                cResult[44] = tmp55;
-                                tmp52 = tmp55;
+                                cResult[43] = tmp48;
+                                cResult[44] = tmp54;
+                                tmp51 = tmp54;
                               }
                             }
                           }
                         }
                       }
                       let obj4 = { accessibilityLabel: tmp17, accessibilityRole: str, onPress: tmp18, style: tmp13, children: items2 };
-                      items2 = [tmp42, tmp45];
-                      const tmp51 = closure_9(tmp12, obj4);
+                      items2 = [tmp41, tmp44];
+                      const tmp50 = closure_9(tmp12, obj4);
                       cResult[35] = tmp12;
                       cResult[36] = tmp13;
-                      cResult[37] = tmp42;
-                      class K {
+                      cResult[37] = tmp41;
+                      class T {
                         constructor() {
-                          obj = closure_0(closure_2[13]);
-                          result = obj.openChannelMembersActionSheet(channel.id, channel.guild_id);
-                          return;
+                          const obj = ChannelPermissionsUtils;
+                          return obj.getExistingRoles(guild, GuildRoleStore.getSortedRoles(guild.id), channel, channel.accessPermissions);
                         }
                       }
                       cResult[39] = str;
                       cResult[40] = tmp18;
-                      cResult[41] = tmp51;
-                      tmp49 = tmp51;
+                      cResult[41] = tmp50;
+                      tmp48 = tmp50;
                     }
                   }
                   let obj5 = { style: tmp15, children: tmp16 };
-                  const tmp44 = closure_8(tmp11, obj5);
+                  const tmp43 = closure_8(tmp11, obj5);
                   cResult[30] = tmp11;
                   cResult[31] = tmp15;
                   cResult[32] = tmp16;
-                  cResult[33] = tmp44;
-                  tmp42 = tmp44;
+                  cResult[33] = tmp43;
+                  tmp41 = tmp43;
                 }
               }
             }
@@ -184,7 +183,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       id = guild.id;
     }
     const memberIds = getMemberIds(id);
-    const tmpResult2 = guild(9250);
+    const tmpResult2 = guild(8579);
     const tmp25 = channel;
     const existingMembers = tmpResult2.getExistingMembers(memberIds, channel, guild, channel.accessPermissions);
     let first1 = null;
@@ -198,375 +197,67 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         tmp30 = cResult[25];
       }
       if (cResult[26] === tmp4.labelDetail) {
-        let tmp31;
+        let tmp32;
         let tmp33;
-        let obj11;
+        let obj12;
         if (cResult[27] === tmp4.sectionIcon) {
-          tmp31 = cResult[28];
+          tmp32 = cResult[28];
         }
         const _Symbol = Symbol;
-        class Q {
-          constructor(arg0, arg1, arg2, arg3) {
-            if (0 === arg1) {
-              tmp23 = null;
-              return null;
-            } else {
-              tmp24 = guild;
-              if (closure_13.MEMBERS === guild) {
-                if (arg1 > c11) {
-                  tmp16 = closure_0;
-                  tmp17 = closure_2;
-                  intl4 = closure_0(closure_2[10]).intl;
-                  obj1 = { count: null };
-                  obj1.count = tmp12;
-                  formatToPlainStringResult = intl4.formatToPlainString(closure_0(closure_2[10]).t.PR5l07, obj1);
-                  tmp14 = closure_2;
-                  tmp13 = closure_0;
-                } else {
-                  tmp13 = closure_0;
-                  tmp14 = closure_2;
-                  intl3 = closure_0(closure_2[10]).intl;
-                  obj9 = { count: null };
-                  obj9.count = arg1;
-                  formatToPlainStringResult = intl3.formatToPlainString(closure_0(closure_2[10]).t.bu5sya, obj9);
-                }
-                tmp2 = tmp14;
-                tmp4 = tmp13;
-                tmp5 = formatToPlainStringResult;
-              } else if (tmp25.ROLES === guild) {
-                if (arg1 > c11) {
-                  tmp10 = closure_0;
-                  tmp11 = closure_2;
-                  intl2 = closure_0(closure_2[10]).intl;
-                  obj10 = { count: null };
-                  obj10.count = tmp6;
-                  formatToPlainStringResult1 = intl2.formatToPlainString(closure_0(closure_2[10]).t["+OYnFQ"], obj10);
-                  tmp8 = closure_2;
-                  tmp7 = closure_0;
-                } else {
-                  tmp7 = closure_0;
-                  tmp8 = closure_2;
-                  intl = closure_0(closure_2[10]).intl;
-                  obj11 = { count: null };
-                  obj11.count = arg1;
-                  formatToPlainStringResult1 = intl.formatToPlainString(closure_0(closure_2[10]).t.T2BEtm, obj11);
-                }
-                tmp2 = tmp8;
-                tmp4 = tmp7;
-                tmp5 = formatToPlainStringResult1;
-              } else {
-                tmp = closure_0;
-                tmp2 = closure_2;
-                obj = closure_0(closure_2[14]);
-                assertNeverResult = obj.assertNever(guild);
-                tmp4 = closure_0;
-              }
-              tmp18 = arg3;
-              tmp19 = jsxs;
-              tmp20 = closure_3;
-              obj12 = { children: null };
-              tmp21 = jsx;
-              obj13 = { size: "sm", style: null };
-              tmp22 = closure_2;
-              obj13.style = closure_2.sectionIcon;
-              Fragment = closure_3.Fragment;
-              items = [, ];
-              items[0] = jsx(arg3, obj13);
-              obj14 = { style: null, variant: "text-sm/medium", children: null };
-              obj14.style = closure_2.labelDetail;
-              obj14.children = tmp5;
-              items[1] = jsx(tmp4(tmp2[15]).Text, obj14);
-              obj12.children = items;
-              return jsxs(Fragment, obj12);
-            }
-          }
-        }
-        if (tmp32 === Symbol.for("react.memo_cache_sentinel")) {
-          let obj6 = { variant: "eyebrow", children: null };
-          class Q {
-            constructor(arg0, arg1, arg2, arg3) {
-              if (0 === arg1) {
-                tmp23 = null;
-                return null;
-              } else {
-                tmp24 = guild;
-                if (closure_13.MEMBERS === guild) {
-                  if (arg1 > c11) {
-                    tmp16 = closure_0;
-                    tmp17 = closure_2;
-                    intl4 = closure_0(closure_2[10]).intl;
-                    obj1 = { count: null };
-                    obj1.count = tmp12;
-                    formatToPlainStringResult = intl4.formatToPlainString(closure_0(closure_2[10]).t.PR5l07, obj1);
-                    tmp14 = closure_2;
-                    tmp13 = closure_0;
-                  } else {
-                    tmp13 = closure_0;
-                    tmp14 = closure_2;
-                    intl3 = closure_0(closure_2[10]).intl;
-                    obj9 = { count: null };
-                    obj9.count = arg1;
-                    formatToPlainStringResult = intl3.formatToPlainString(closure_0(closure_2[10]).t.bu5sya, obj9);
-                  }
-                  tmp2 = tmp14;
-                  tmp4 = tmp13;
-                  tmp5 = formatToPlainStringResult;
-                } else if (tmp25.ROLES === guild) {
-                  if (arg1 > c11) {
-                    tmp10 = closure_0;
-                    tmp11 = closure_2;
-                    intl2 = closure_0(closure_2[10]).intl;
-                    obj10 = { count: null };
-                    obj10.count = tmp6;
-                    formatToPlainStringResult1 = intl2.formatToPlainString(closure_0(closure_2[10]).t["+OYnFQ"], obj10);
-                    tmp8 = closure_2;
-                    tmp7 = closure_0;
-                  } else {
-                    tmp7 = closure_0;
-                    tmp8 = closure_2;
-                    intl = closure_0(closure_2[10]).intl;
-                    obj11 = { count: null };
-                    obj11.count = arg1;
-                    formatToPlainStringResult1 = intl.formatToPlainString(closure_0(closure_2[10]).t.T2BEtm, obj11);
-                  }
-                  tmp2 = tmp8;
-                  tmp4 = tmp7;
-                  tmp5 = formatToPlainStringResult1;
-                } else {
-                  tmp = closure_0;
-                  tmp2 = closure_2;
-                  obj = closure_0(closure_2[14]);
-                  assertNeverResult = obj.assertNever(guild);
-                  tmp4 = closure_0;
-                }
-                tmp18 = arg3;
-                tmp19 = jsxs;
-                tmp20 = closure_3;
-                obj12 = { children: null };
-                tmp21 = jsx;
-                obj13 = { size: "sm", style: null };
-                tmp22 = closure_2;
-                obj13.style = closure_2.sectionIcon;
-                Fragment = closure_3.Fragment;
-                items = [, ];
-                items[0] = jsx(arg3, obj13);
-                obj14 = { style: null, variant: "text-sm/medium", children: null };
-                obj14.style = closure_2.labelDetail;
-                obj14.children = tmp5;
-                items[1] = jsx(tmp4(tmp2[15]).Text, obj14);
-                obj12.children = items;
-                return jsxs(Fragment, obj12);
-              }
-            }
-          }
-          const tmp35 = closure_8(guild(4892).Text, obj6);
+        if (cResult[29] === Symbol.for("react.memo_cache_sentinel")) {
+          let obj6 = { variant: "eyebrow", children: first };
+          const tmp35 = closure_8(guild(5086).Text, obj6);
           cResult[29] = tmp35;
           tmp33 = tmp35;
         } else {
           tmp33 = cResult[29];
         }
-        const PressableOpacity = tmp(5916).PressableOpacity;
+        const PressableOpacity = tmp(6189).PressableOpacity;
         const section = tmp4.section;
         const sectionContent = tmp4.sectionContent;
         const tmp38 = closure_10;
         if (null != first1) {
           let obj7 = { children: null };
-          class Q {
-            constructor(arg0, arg1, arg2, arg3) {
-              if (0 === arg1) {
-                tmp23 = null;
-                return null;
-              } else {
-                tmp24 = guild;
-                if (closure_13.MEMBERS === guild) {
-                  if (arg1 > c11) {
-                    tmp16 = closure_0;
-                    tmp17 = closure_2;
-                    intl4 = closure_0(closure_2[10]).intl;
-                    obj1 = { count: null };
-                    obj1.count = tmp12;
-                    formatToPlainStringResult = intl4.formatToPlainString(closure_0(closure_2[10]).t.PR5l07, obj1);
-                    tmp14 = closure_2;
-                    tmp13 = closure_0;
-                  } else {
-                    tmp13 = closure_0;
-                    tmp14 = closure_2;
-                    intl3 = closure_0(closure_2[10]).intl;
-                    obj9 = { count: null };
-                    obj9.count = arg1;
-                    formatToPlainStringResult = intl3.formatToPlainString(closure_0(closure_2[10]).t.bu5sya, obj9);
-                  }
-                  tmp2 = tmp14;
-                  tmp4 = tmp13;
-                  tmp5 = formatToPlainStringResult;
-                } else if (tmp25.ROLES === guild) {
-                  if (arg1 > c11) {
-                    tmp10 = closure_0;
-                    tmp11 = closure_2;
-                    intl2 = closure_0(closure_2[10]).intl;
-                    obj10 = { count: null };
-                    obj10.count = tmp6;
-                    formatToPlainStringResult1 = intl2.formatToPlainString(closure_0(closure_2[10]).t["+OYnFQ"], obj10);
-                    tmp8 = closure_2;
-                    tmp7 = closure_0;
-                  } else {
-                    tmp7 = closure_0;
-                    tmp8 = closure_2;
-                    intl = closure_0(closure_2[10]).intl;
-                    obj11 = { count: null };
-                    obj11.count = arg1;
-                    formatToPlainStringResult1 = intl.formatToPlainString(closure_0(closure_2[10]).t.T2BEtm, obj11);
-                  }
-                  tmp2 = tmp8;
-                  tmp4 = tmp7;
-                  tmp5 = formatToPlainStringResult1;
-                } else {
-                  tmp = closure_0;
-                  tmp2 = closure_2;
-                  obj = closure_0(closure_2[14]);
-                  assertNeverResult = obj.assertNever(guild);
-                  tmp4 = closure_0;
-                }
-                tmp18 = arg3;
-                tmp19 = jsxs;
-                tmp20 = closure_3;
-                obj12 = { children: null };
-                tmp21 = jsx;
-                obj13 = { size: "sm", style: null };
-                tmp22 = closure_2;
-                obj13.style = closure_2.sectionIcon;
-                Fragment = closure_3.Fragment;
-                items = [, ];
-                items[0] = jsx(arg3, obj13);
-                obj14 = { style: null, variant: "text-sm/medium", children: null };
-                obj14.style = closure_2.labelDetail;
-                obj14.children = tmp5;
-                items[1] = jsx(tmp4(tmp2[15]).Text, obj14);
-                obj12.children = items;
-                return jsxs(Fragment, obj12);
-              }
-            }
-          }
-          tmp40[0] = tmp4.avatar;
-          tmp40[1] = first1;
-          tmp40[2] = guild.id;
-          const Avatar = tmp(1188).Avatar;
-          tmp40[3] = guild(1188).AvatarSizes.XSMALL;
-          const items3 = [closure_8(Avatar, tmp40), ];
-          let obj8 = { children: items4 };
-          const obj9 = { variant: "text-sm/semibold", children: first1.tag };
-          items4 = [closure_8(tmp(4892).Text, obj9), ];
-          const obj10 = { variant: "text-xs/medium", children: intl2.string(guild(1126).t.rt0ERW) };
-          const Text = tmp(4892).Text;
+          let obj8 = { style: tmp4.avatar, user: first1, guildId: guild.id, size: tmp(1200).AvatarSizes.XSMALL };
+          const Avatar = tmp(1200).Avatar;
+          const items3 = [closure_8(Avatar, obj8), ];
+          const obj10 = { variant: "text-sm/semibold", children: first1.tag };
+          const obj9 = { children: items4 };
+          items4 = [closure_8(tmp(5086).Text, obj10), ];
+          const obj11 = { variant: "text-xs/medium", children: intl2.string(guild(1126).t.rt0ERW) };
+          const Text = tmp(5086).Text;
           intl2 = tmp(1126).intl;
-          items4[1] = closure_8(Text, obj10);
-          items3[1] = closure_9(View, obj8);
-          class K {
+          items4[1] = closure_8(Text, obj11);
+          items3[1] = closure_9(View, obj9);
+          class T {
             constructor() {
-              obj = closure_0(closure_2[13]);
-              result = obj.openChannelMembersActionSheet(channel.id, channel.guild_id);
-              return;
+              const obj = ChannelPermissionsUtils;
+              return obj.getExistingRoles(guild, GuildRoleStore.getSortedRoles(guild.id), channel, channel.accessPermissions);
             }
           }
-          obj11 = obj7;
+          obj12 = obj7;
         } else {
-          obj11 = { children: items5 };
-          class Q {
-            constructor(arg0, arg1, arg2, arg3) {
-              if (0 === arg1) {
-                tmp23 = null;
-                return null;
-              } else {
-                tmp24 = guild;
-                if (closure_13.MEMBERS === guild) {
-                  if (arg1 > c11) {
-                    tmp16 = closure_0;
-                    tmp17 = closure_2;
-                    intl4 = closure_0(closure_2[10]).intl;
-                    obj1 = { count: null };
-                    obj1.count = tmp12;
-                    formatToPlainStringResult = intl4.formatToPlainString(closure_0(closure_2[10]).t.PR5l07, obj1);
-                    tmp14 = closure_2;
-                    tmp13 = closure_0;
-                  } else {
-                    tmp13 = closure_0;
-                    tmp14 = closure_2;
-                    intl3 = closure_0(closure_2[10]).intl;
-                    obj9 = { count: null };
-                    obj9.count = arg1;
-                    formatToPlainStringResult = intl3.formatToPlainString(closure_0(closure_2[10]).t.bu5sya, obj9);
-                  }
-                  tmp2 = tmp14;
-                  tmp4 = tmp13;
-                  tmp5 = formatToPlainStringResult;
-                } else if (tmp25.ROLES === guild) {
-                  if (arg1 > c11) {
-                    tmp10 = closure_0;
-                    tmp11 = closure_2;
-                    intl2 = closure_0(closure_2[10]).intl;
-                    obj10 = { count: null };
-                    obj10.count = tmp6;
-                    formatToPlainStringResult1 = intl2.formatToPlainString(closure_0(closure_2[10]).t["+OYnFQ"], obj10);
-                    tmp8 = closure_2;
-                    tmp7 = closure_0;
-                  } else {
-                    tmp7 = closure_0;
-                    tmp8 = closure_2;
-                    intl = closure_0(closure_2[10]).intl;
-                    obj11 = { count: null };
-                    obj11.count = arg1;
-                    formatToPlainStringResult1 = intl.formatToPlainString(closure_0(closure_2[10]).t.T2BEtm, obj11);
-                  }
-                  tmp2 = tmp8;
-                  tmp4 = tmp7;
-                  tmp5 = formatToPlainStringResult1;
-                } else {
-                  tmp = closure_0;
-                  tmp2 = closure_2;
-                  obj = closure_0(closure_2[14]);
-                  assertNeverResult = obj.assertNever(guild);
-                  tmp4 = closure_0;
-                }
-                tmp18 = arg3;
-                tmp19 = jsxs;
-                tmp20 = closure_3;
-                obj12 = { children: null };
-                tmp21 = jsx;
-                obj13 = { size: "sm", style: null };
-                tmp22 = closure_2;
-                obj13.style = closure_2.sectionIcon;
-                Fragment = closure_3.Fragment;
-                items = [, ];
-                items[0] = jsx(arg3, obj13);
-                obj14 = { style: null, variant: "text-sm/medium", children: null };
-                obj14.style = closure_2.labelDetail;
-                obj14.children = tmp5;
-                items[1] = jsx(tmp4(tmp2[15]).Text, obj14);
-                obj12.children = items;
-                return jsxs(Fragment, obj12);
-              }
-            }
-          }
+          obj12 = { children: items5 };
+          const MEMBERS = constants.MEMBERS;
           items5 = [, ];
           const length = existingMembers.length;
-          const tmp59 = channel(12141);
-          items5[0] = tmp31(tmp57, length, tmp59, guild(5880).GroupIcon);
+          const tmp57 = channel(12220);
+          items5[0] = tmp32(MEMBERS, length, tmp57, guild(8192).GroupIcon);
           const ROLES = constants.ROLES;
           const length2 = stateFromStoresArray.length;
-          const tmp61 = channel(9269);
-          items5[1] = tmp31(ROLES, length2, tmp61, guild(9267).ShieldUserIcon);
+          const tmp59 = channel(8599);
+          items5[1] = tmp32(ROLES, length2, tmp59, guild(8597).ShieldUserIcon);
         }
-        const tmp37Result = closure_9(tmp38, obj11);
+        const tmp37Result = closure_9(tmp38, obj12);
         cResult[6] = channel;
         cResult[7] = guild;
         cResult[8] = stateFromStoresArray.length;
         cResult[9] = tmp4.avatar;
         cResult[10] = tmp4.labelDetail;
-        class K {
+        class T {
           constructor() {
-            obj = closure_0(closure_2[13]);
-            result = obj.openChannelMembersActionSheet(channel.id, channel.guild_id);
-            return;
+            const obj = ChannelPermissionsUtils;
+            return obj.getExistingRoles(guild, GuildRoleStore.getSortedRoles(guild.id), channel, channel.accessPermissions);
           }
         }
         cResult[12] = tmp4.sectionContent;
@@ -590,103 +281,79 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         tmp12 = PressableOpacity;
         tmp11 = tmp36;
       }
-      class Q {
-        constructor(arg0, arg1, arg2, arg3) {
-          if (0 === arg1) {
-            tmp23 = null;
-            return null;
-          } else {
-            tmp24 = guild;
-            if (closure_13.MEMBERS === guild) {
-              if (arg1 > c11) {
-                tmp16 = closure_0;
-                tmp17 = closure_2;
-                intl4 = closure_0(closure_2[10]).intl;
-                obj1 = { count: null };
-                obj1.count = tmp12;
-                formatToPlainStringResult = intl4.formatToPlainString(closure_0(closure_2[10]).t.PR5l07, obj1);
-                tmp14 = closure_2;
-                tmp13 = closure_0;
-              } else {
-                tmp13 = closure_0;
-                tmp14 = closure_2;
-                intl3 = closure_0(closure_2[10]).intl;
-                obj9 = { count: null };
-                obj9.count = arg1;
-                formatToPlainStringResult = intl3.formatToPlainString(closure_0(closure_2[10]).t.bu5sya, obj9);
-              }
-              tmp2 = tmp14;
-              tmp4 = tmp13;
-              tmp5 = formatToPlainStringResult;
-            } else if (tmp25.ROLES === guild) {
-              if (arg1 > c11) {
-                tmp10 = closure_0;
-                tmp11 = closure_2;
-                intl2 = closure_0(closure_2[10]).intl;
-                obj10 = { count: null };
-                obj10.count = tmp6;
-                formatToPlainStringResult1 = intl2.formatToPlainString(closure_0(closure_2[10]).t["+OYnFQ"], obj10);
-                tmp8 = closure_2;
-                tmp7 = closure_0;
-              } else {
-                tmp7 = closure_0;
-                tmp8 = closure_2;
-                intl = closure_0(closure_2[10]).intl;
-                obj11 = { count: null };
-                obj11.count = arg1;
-                formatToPlainStringResult1 = intl.formatToPlainString(closure_0(closure_2[10]).t.T2BEtm, obj11);
-              }
-              tmp2 = tmp8;
-              tmp4 = tmp7;
-              tmp5 = formatToPlainStringResult1;
+      function renderCounts(arg0, count, arg2, arg3) {
+        let items;
+        if (0 === count) {
+          return null;
+        } else {
+          let tmp4;
+          let tmp5;
+          if (constants.MEMBERS === arg0) {
+            let formatToPlainStringResult;
+            let tmp13;
+            if (count > c11) {
+              const intl4 = intl5.intl;
+              const obj2 = { count: tmp12 };
+              formatToPlainStringResult = intl4.formatToPlainString(intl5.t.PR5l07, obj2);
+              tmp13 = require;
             } else {
-              tmp = closure_0;
-              tmp2 = closure_2;
-              obj = closure_0(closure_2[14]);
-              assertNeverResult = obj.assertNever(guild);
-              tmp4 = closure_0;
+              tmp13 = require;
+              const intl3 = intl5.intl;
+              const obj3 = { count };
+              formatToPlainStringResult = intl3.formatToPlainString(intl5.t.bu5sya, obj3);
             }
-            tmp18 = arg3;
-            tmp19 = jsxs;
-            tmp20 = closure_3;
-            obj12 = { children: null };
-            tmp21 = jsx;
-            obj13 = { size: "sm", style: null };
-            tmp22 = closure_2;
-            obj13.style = closure_2.sectionIcon;
-            Fragment = closure_3.Fragment;
-            items = [, ];
-            items[0] = jsx(arg3, obj13);
-            obj14 = { style: null, variant: "text-sm/medium", children: null };
-            obj14.style = closure_2.labelDetail;
-            obj14.children = tmp5;
-            items[1] = jsx(tmp4(tmp2[15]).Text, obj14);
-            obj12.children = items;
-            return jsxs(Fragment, obj12);
+            tmp4 = tmp13;
+            tmp5 = formatToPlainStringResult;
+          } else if (tmp25.ROLES === arg0) {
+            let formatToPlainStringResult1;
+            let tmp7;
+            if (count > c11) {
+              const intl2 = intl5.intl;
+              const obj4 = { count: tmp6 };
+              formatToPlainStringResult1 = intl2.formatToPlainString(intl5.t["+OYnFQ"], obj4);
+              tmp7 = require;
+            } else {
+              tmp7 = require;
+              const intl = intl5.intl;
+              const obj5 = { count };
+              formatToPlainStringResult1 = intl.formatToPlainString(intl5.t.T2BEtm, obj5);
+            }
+            tmp4 = tmp7;
+            tmp5 = formatToPlainStringResult1;
+          } else {
+            const obj = GlobalUtils;
+            obj.assertNever(arg0);
+            tmp4 = require;
           }
+          const Fragment = react.Fragment;
+          const obj6 = { children: items };
+          const obj7 = { size: "sm", style: closure_2.sectionIcon };
+          items = [metroImportAll(arg3, obj7), ];
+          const obj8 = { style: closure_2.labelDetail, variant: "text-sm/medium", children: tmp5 };
+          items[1] = metroImportAll(tmp4(5086).Text, obj8);
+          return React4(Fragment, obj6);
         }
       }
       cResult[26] = tmp4.labelDetail;
       cResult[27] = tmp4.sectionIcon;
-      cResult[28] = Q;
-      tmp31 = Q;
+      cResult[28] = renderCounts;
+      tmp32 = renderCounts;
     }
-    class K {
+    class T {
       constructor() {
-        obj = closure_0(closure_2[13]);
-        result = obj.openChannelMembersActionSheet(channel.id, channel.guild_id);
-        return;
+        const obj = ChannelPermissionsUtils;
+        return obj.getExistingRoles(guild, GuildRoleStore.getSortedRoles(guild.id), channel, channel.accessPermissions);
       }
     }
     cResult[23] = channel.guild_id;
     cResult[24] = channel.id;
-    cResult[25] = K;
-    tmp30 = K;
+    cResult[25] = tmp31;
+    tmp30 = tmp31;
   }
   class T {
     constructor() {
-      obj = closure_0(closure_2[11]);
-      return obj.getExistingRoles(guild, closure_7.getSortedRoles(guild.id), channel, channel.accessPermissions);
+      const obj = ChannelPermissionsUtils;
+      return obj.getExistingRoles(guild, GuildRoleStore.getSortedRoles(guild.id), channel, channel.accessPermissions);
     }
   }
   const items6 = [guild, channel];
@@ -696,7 +363,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   cResult[5] = items6;
   tmp10 = items6;
   tmp9 = T;
-}) : ((guild) => {
+}) : (function ChannelAccessInfo(guild) {
   let closure_2;
   let intl2;
   let items3;
@@ -724,7 +391,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     id = guild.id;
   }
   const memberIds = getMemberIds(id);
-  const tmp2Result = guild(9250);
+  const tmp2Result = guild(8579);
   const existingMembers = tmp2Result.getExistingMembers(memberIds, channel, guild, channel.accessPermissions);
   const tmp8 = 0 === stateFromStoresArray.length && 1 === existingMembers.length && isGuildOwner(guild, existingMembers[0]);
   let first = null;
@@ -733,11 +400,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   }
   const tmp12 = closure_10;
   let tmp13 = closure_8;
-  const items2 = [closure_8(tmp2(4892).Text, { variant: "eyebrow", children: stringResult }), ];
+  const items2 = [closure_8(tmp2(5086).Text, { variant: "eyebrow", children: stringResult }), ];
   let obj2 = {
     accessibilityLabel: stringResult,
     accessibilityRole: "button",
-    onPress() {
+    onPress: function handleSectionPressed() {
       const obj = channel_permissions_ChannelPermissionsUtils;
       const result = obj.openChannelMembersActionSheet(channel.id, channel.guild_id);
     },
@@ -746,17 +413,17 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   };
   const tmp14 = View;
   let obj3 = { style: tmp.sectionContent, children: tmp11(tmp12, obj9) };
-  const PressableOpacity = tmp2(5916).PressableOpacity;
+  const PressableOpacity = tmp2(6189).PressableOpacity;
   if (null != first) {
     let obj4 = { children: items3 };
-    let obj5 = { style: tmp.avatar, user: first, guildId: guild.id, size: tmp2(1188).AvatarSizes.XSMALL };
-    const Avatar = tmp2(1188).Avatar;
+    let obj5 = { style: tmp.avatar, user: first, guildId: guild.id, size: tmp2(1200).AvatarSizes.XSMALL };
+    const Avatar = tmp2(1200).Avatar;
     items3 = [tmp13(Avatar, obj5), ];
     let obj6 = { children: items4 };
     let obj7 = { variant: "text-sm/semibold", children: first.tag };
-    items4 = [tmp13(tmp2(4892).Text, obj7), ];
+    items4 = [tmp13(tmp2(5086).Text, obj7), ];
     let obj8 = { variant: "text-xs/medium", children: intl2.string(tmp2(1126).t.rt0ERW) };
-    const Text = tmp2(4892).Text;
+    const Text = tmp2(5086).Text;
     intl2 = tmp2(1126).intl;
     items4[1] = tmp13(Text, obj8);
     items3[1] = closure_9(tmp14, obj6);
@@ -811,24 +478,24 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         const obj7 = { size: "sm", style: closure_2.sectionIcon };
         items = [metroImportAll(GroupIcon, obj7), ];
         const obj8 = { style: closure_2.labelDetail, variant: "text-sm/medium", children: tmp5 };
-        items[1] = metroImportAll(tmp4(4892).Text, obj8);
+        items[1] = metroImportAll(tmp4(5086).Text, obj8);
         return React4(Fragment, obj6);
       }
     }
     obj9 = { children: items5 };
     const MEMBERS = constants.MEMBERS;
     const length = existingMembers.length;
-    channel(12141);
-    items5 = [renderCounts(MEMBERS, length, 0, tmp2(5880).GroupIcon), ];
+    channel(12220);
+    items5 = [renderCounts(MEMBERS, length, 0, tmp2(8192).GroupIcon), ];
     const ROLES = constants.ROLES;
     const length2 = stateFromStoresArray.length;
-    channel(9269);
-    items5[1] = renderCounts(ROLES, length2, 0, guild(9267).ShieldUserIcon);
+    channel(8599);
+    items5[1] = renderCounts(ROLES, length2, 0, guild(8597).ShieldUserIcon);
   }
   const obj10 = { children: items2 };
   items6 = [tmp13(tmp14, obj3), ];
-  const obj11 = { source: channel(9615), size: guild(1188).Icon.Sizes.SMALL };
-  const Icon = tmp2(1188).Icon;
+  const obj11 = { source: channel(10808), size: guild(1200).Icon.Sizes.SMALL };
+  const Icon = tmp2(1200).Icon;
   items6[1] = tmp13(Icon, obj11);
   items2[1] = closure_9(PressableOpacity, obj2);
   return closure_9(tmp12, obj10);

@@ -1,19 +1,19 @@
-// Module ID: 14451
-// Function ID: 14452
+// Module ID: 14679
+// Function ID: 14680
 // Name: EditUserProfileAvatar
-// Dependencies: [19, 17, 4885, 21, 4896, 6664, 6688, 4534, 7841, 7851, 14452, 4860, 14453, 1987, 14454, 14454, 7839, 7848, 504, 4618, 4897, 7940, 14433, 1126, 5916, 14455, 1188, 2]
+// Dependencies: [19, 17, 5079, 21, 5090, 6841, 6865, 4726, 8259, 8269, 14680, 5054, 14681, 1999, 14670, 14670, 8257, 8266, 504, 4810, 5091, 8358, 14672, 1126, 6189, 14682, 1200, 2]
 // Exports: default
 
-// Module 14451 (EditUserProfileAvatar)
+// Module 14679 (EditUserProfileAvatar)
 import react_native from "react-native" /* 17 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import timing from "timing" /* 4897 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import timing from "timing" /* 5091 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -21,7 +21,7 @@ let set;
 let metroImportDefault;
 let metroRequire;
 let tmp3;
-const ProfileCustomizationUtils = tmp3(7848);
+const ProfileCustomizationUtils = tmp3(8266);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ editIcon: { position: "absolute", right: -3 }, editButton: { position: "absolute", top: -8, right: -8 } });
@@ -90,20 +90,20 @@ export default function EditUserProfileAvatar(user) {
   let items = [user, analyticsLocations, pendingAvatar, setPendingAvatar, tmp10, tmp6, avatarDecoration, flag, isUserProfileEditingRefresh];
   onPress = isUserProfileEditingRefresh.useCallback(() => {
     let currentAvatarDecoration;
-    let fn;
+    let editAvatarDecoration;
     let tmp3Result;
     const tmp2 = ActionSheetActionCreatorsDefault;
     let openLazy = tmp2.openLazy;
     let tmp3 = require;
     let obj = {
       showAnimatedAvatarUpsell,
-      handleRemoveAvatarSelect() {
+      handleRemoveAvatarSelect: function removeAvatar() {
         const obj = flag(flag2[11]);
         obj.hideActionSheet();
         setPendingAvatar(null);
       },
       handleUploadAvatarSelect,
-      handleUploadGIFAvatarSelect() {
+      handleUploadGIFAvatarSelect: function uploadAvatarGIF() {
         let GIFSelectionContext;
         const obj = flag(flag2[11]);
         obj.hideActionSheet();
@@ -114,12 +114,12 @@ export default function EditUserProfileAvatar(user) {
         GIFSelectionContext = user(flag2[15]).GIFSelectionContext;
         openLazy(tmp3, "Select GIF Avatar", obj2);
       },
-      handleEditAvatarDecorationSelect: fn,
+      handleEditAvatarDecorationSelect: editAvatarDecoration,
       showRemoveAvatar: tmp3Result.showRemoveAvatar(pendingAvatar, user.avatar)
     };
-    const tmp4 = asyncRequire(14453, dependencyMap.paths);
+    const tmp4 = asyncRequire(14681, dependencyMap.paths);
     if (!flag) {
-      fn = () => {
+      editAvatarDecoration = function editAvatarDecoration() {
         const obj = user(flag2[16]);
         const obj2 = { user, currentAvatarDecoration, analyticsLocations };
         const result = obj.openAvatarDecorationActionSheet(obj2);

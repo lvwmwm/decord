@@ -1,19 +1,19 @@
-// Module ID: 5578
-// Function ID: 5579
+// Module ID: 5888
+// Function ID: 5889
 // Name: StageChannelsConstants
-// Dependencies: [1085, 1126, 2115, 2]
+// Dependencies: [1085, 1126, 2127, 2]
 // Exports: getStagePublicInfoText
 
-// Module 5578 (StageChannelsConstants)
+// Module 5888 (StageChannelsConstants)
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;
 const result = size.fileFinishedImporting("modules/stage_channels/StageChannelsConstants.tsx");
 
-export const MAX_STAGE_TOPIC_LENGTH = 240;
+export const MAX_STAGE_TOPIC_LENGTH = 120;
 export const MAX_AUDIENCE_ROW_LIMIT = 4;
 export const STAGE_APPLICATION_ID = "834488117758001152";
 export const REQUEST_TO_SPEAK_SHEET_KEY = "request-to-speak-list";

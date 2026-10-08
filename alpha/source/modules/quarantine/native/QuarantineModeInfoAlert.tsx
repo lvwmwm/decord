@@ -1,24 +1,22 @@
-// Module ID: 5921
-// Function ID: 5922
+// Module ID: 6105
+// Function ID: 6106
 // Name: QuarantineModeInfoAlert
-// Dependencies: [19, 1085, 21, 4896, 5922, 587, 558, 576, 1126, 1188, 4892, 5790, 2]
+// Dependencies: [19, 1085, 21, 5090, 5902, 587, 558, 576, 1126, 1200, 5086, 5394, 2]
 
-// Module 5921 (QuarantineModeInfoAlert)
+// Module 6105 (QuarantineModeInfoAlert)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import AlertDefault from "Alert" /* 5790 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import AlertDefault from "Alert" /* 5394 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import TextStyles from "TextStyles" /* 5922 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import TextStyles from "TextStyles" /* 5902 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let onClose;
 
 let c3;
 let closure_4;
@@ -31,7 +29,7 @@ obj2 = { textAlign: "center", marginVertical: 12 };
 createStyles = createStyles.createStyles;
 const merged = Object.assign(TextStyles(Fonts.PRIMARY_BOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
 let closure_5 = createStyles(obj);
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuarantineModeInfoAlert(onClose) {
   let first;
   let items;
   let tmp10;
@@ -94,7 +92,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   cResult[8] = tmp12;
   cResult[9] = tmp16;
   tmp15 = tmp16;
-}) : ((onClose) => {
+}) : (function QuarantineModeInfoAlert(onClose) {
   let intl;
   let intl2;
   let items;

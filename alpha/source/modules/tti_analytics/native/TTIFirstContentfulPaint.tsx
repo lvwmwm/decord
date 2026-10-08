@@ -1,21 +1,19 @@
-// Module ID: 11520
-// Function ID: 11521
+// Module ID: 11518
+// Function ID: 11519
 // Name: TTIFirstContentfulPaint
-// Dependencies: [19, 21, 558, 576, 4743, 9, 7164, 11521, 2]
+// Dependencies: [19, 21, 558, 576, 4937, 9, 7344, 11519, 2]
 
-// Module 11520 (TTIFirstContentfulPaint)
+// Module 11518 (TTIFirstContentfulPaint)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import Fragment from "Fragment" /* 21 */;
-import RootNavigationRef from "RootNavigationRef" /* 4743 */;
-import PostTTIScheduler from "PostTTIScheduler" /* 7164 */;
+import RootNavigationRef from "RootNavigationRef" /* 4937 */;
+import PostTTIScheduler from "PostTTIScheduler" /* 7344 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let checkFocusedScreen;
-
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((checkFocusedScreen) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TTIFirstContentfulPaint(checkFocusedScreen) {
   let tmp4;
   let tmp5;
   let obj = checkFocusedScreen(576);
@@ -44,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((checkFocusedScreen
     tmp4 = cResult[1];
   }
   if (cResult[2] !== tmp4) {
-    const tmp7 = jsx(tmp(11521).TTIMeasurementView, { onMeasurement: tmp4 });
+    const tmp7 = jsx(tmp(11519).TTIMeasurementView, { onMeasurement: tmp4 });
     cResult[2] = tmp4;
     cResult[3] = tmp7;
     tmp5 = tmp7;
@@ -52,7 +50,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((checkFocusedScreen
     tmp5 = cResult[3];
   }
   return tmp5;
-}) : ((checkFocusedScreen) => {
+}) : (function TTIFirstContentfulPaint(checkFocusedScreen) {
   checkFocusedScreen = checkFocusedScreen.checkFocusedScreen;
   const items = [checkFocusedScreen];
   const onMeasurement = react.useCallback((nativeEvent) => {
@@ -69,7 +67,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((checkFocusedScreen
     const obj3 = PostTTIScheduler;
     obj3.notifyAboutTTI();
   }, items);
-  return jsx(checkFocusedScreen(11521).TTIMeasurementView, { onMeasurement });
+  return jsx(checkFocusedScreen(11519).TTIMeasurementView, { onMeasurement });
 });
 const result = size.fileFinishedImporting("modules/tti_analytics/native/TTIFirstContentfulPaint.tsx");
 

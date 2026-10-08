@@ -1,31 +1,31 @@
-// Module ID: 13435
-// Function ID: 13436
+// Module ID: 13735
+// Function ID: 13736
 // Name: PremiumGuildPreview
-// Dependencies: [19, 17, 1193, 1085, 21, 4896, 587, 5627, 4735, 13436, 13437, 13438, 13439, 13440, 13441, 13442, 13443, 558, 576, 7677, 1188, 504, 5978, 2]
+// Dependencies: [19, 17, 1205, 1085, 21, 5090, 587, 5974, 4929, 13736, 13737, 13738, 13739, 13740, 13741, 13742, 13743, 558, 576, 7998, 1200, 504, 6161, 2]
 
-// Module 13435 (PremiumGuildPreview)
+// Module 13735 (PremiumGuildPreview)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1188 */;
-import shared from "shared" /* 4735 */;
-import LegacyTokens from "LegacyTokens" /* 5627 */;
-import GuildIcon from "GuildIcon" /* 5978 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 7677 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13436 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13437 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13438 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13439 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 13440 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 13441 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 13442 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 13443 */;
+import native from "native" /* 1200 */;
+import shared from "shared" /* 4929 */;
+import LegacyTokens from "LegacyTokens" /* 5974 */;
+import GuildIcon from "GuildIcon" /* 6161 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 7998 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13736 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13737 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13738 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13739 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 13740 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 13741 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 13742 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 13743 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -86,7 +86,7 @@ obj4 = { marginTop: 8, padding: 4, paddingRight: 8, alignSelf: "flex-start", fle
 obj5 = { fontSize: 12, lineHeight: 16, marginLeft: 4, color: LegacyTokens.DARK_WHITE_500_LIGHT_PRIMARY_660 };
 let closure_9 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGuildTierPill(arg0) {
   let items;
   let theme;
   let tier;
@@ -157,7 +157,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tier;
   cResult[2] = tmp8;
   tmp7 = tmp8;
-}) : ((tier) => {
+}) : (function PremiumGuildTierPill(tier) {
   let items;
   let obj4;
   tier = tier.tier;
@@ -174,7 +174,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroImportAll(_false, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGuildPreview(arg0) {
   let guild;
   let items1;
   let items2;
@@ -279,7 +279,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp4.guild;
   cResult[4] = items3;
   tmp9 = items3;
-}) : ((guild) => {
+}) : (function PremiumGuildPreview(guild) {
   let items1;
   let items2;
   let items3;

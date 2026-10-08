@@ -1,21 +1,21 @@
-// Module ID: 9804
-// Function ID: 9805
+// Module ID: 10367
+// Function ID: 10368
 // Name: useInappropriateConversationBannerForChannel
-// Dependencies: [9799, 558, 576, 9805, 9806, 9803, 9802, 2]
+// Dependencies: [10266, 558, 576, 10368, 10369, 10366, 10365, 2]
 
-// Module 9804 (useInappropriateConversationBannerForChannel)
+// Module 10367 (useInappropriateConversationBannerForChannel)
 import react from "react" /* 576 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 9799 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10266 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useChannelSafetyWarning = tmp(9802);
-const useInappropriateConversationWarningsForChannel = tmp(9803);
-const SelfModInappropriateConversationExperiment = tmp(9805);
-const useSafetyAlertsSettingOrDefault = tmp(9806);
+const useChannelSafetyWarning = tmp(10365);
+const useInappropriateConversationWarningsForChannel = tmp(10366);
+const SelfModInappropriateConversationExperiment = tmp(10368);
+const useSafetyAlertsSettingOrDefault = tmp(10369);
 const SafetyWarningTypes = ChannelSafetyWarningsStore.SafetyWarningTypes;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, location) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInappropriateConversationBannerForChannel(arg0, location) {
   let tmp4;
   const tmp = require;
   let tmp2 = dependencyMap;
@@ -52,7 +52,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, location) => {
       }
     }
   }
-}) : ((arg0, location) => {
+}) : (function useInappropriateConversationBannerForChannel(arg0, location) {
   const obj = SelfModInappropriateConversationExperiment;
   const obj2 = { location };
   const isEligibleForInappropriateConversationWarning = obj.useIsEligibleForInappropriateConversationWarning(obj2);

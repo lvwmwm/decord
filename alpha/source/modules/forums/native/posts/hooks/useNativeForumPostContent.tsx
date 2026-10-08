@@ -1,21 +1,21 @@
-// Module ID: 11652
-// Function ID: 11653
+// Module ID: 11717
+// Function ID: 11718
 // Name: useNativeForumPostContent
-// Dependencies: [1085, 4896, 558, 576, 1126, 6783, 5435, 2]
+// Dependencies: [1085, 5090, 558, 576, 1126, 6084, 5745, 2]
 
-// Module 11652 (useNativeForumPostContent)
+// Module 11717 (useNativeForumPostContent)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl10 from "intl" /* 1126 */;
-import StickersUtils from "StickersUtils" /* 5435 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6783 */;
-import createStyles from "createStyles" /* 4896 */;
+import StickersUtils from "StickersUtils" /* 5745 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6084 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const MessageFlags = Constants.MessageFlags;
 let closure_4 = createStyles.createStyles({ italics: { fontStyle: "italic" } });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNativeForumPostContent(arg0) {
   let isMessageDeleted;
   let message;
   let messageContent;
@@ -233,7 +233,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const intl8 = tmp(1126).intl;
     stringResult7 = intl8.string(tmp(1126).t.Lkp2fB);
   }
-}) : ((arg0) => {
+}) : (function useNativeForumPostContent(arg0) {
   let intl9;
   let isMessageDeleted;
   let message;

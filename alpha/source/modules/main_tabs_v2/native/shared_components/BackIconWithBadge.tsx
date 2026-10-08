@@ -1,42 +1,42 @@
-// Module ID: 16385
-// Function ID: 16386
+// Module ID: 16645
+// Function ID: 16646
 // Name: BackIconWithBadge
-// Dependencies: [19, 17, 7134, 21, 4896, 587, 558, 576, 504, 16376, 1188, 8502, 1370, 6021, 6024, 4801, 2]
+// Dependencies: [19, 17, 6082, 21, 5090, 587, 558, 576, 504, 16636, 1200, 8986, 1382, 6207, 6210, 4995, 2]
 
-// Module 16385 (BackIconWithBadge)
+// Module 16645 (BackIconWithBadge)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1370 */;
-import XLargeIcon from "XLargeIcon" /* 4801 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6021 */;
-import XSmallIcon from "XSmallIcon" /* 6024 */;
-import ClipView from "ClipView" /* 8502 */;
-import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 16376 */;
+import native from "native" /* 1200 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
+import XLargeIcon from "XLargeIcon" /* 4995 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6207 */;
+import XSmallIcon from "XSmallIcon" /* 6210 */;
+import ClipView from "ClipView" /* 8986 */;
+import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 16636 */;
 import react from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7134 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6082 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, count, navigation;
+let _require;
 
 let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp10;
-const ClipViewDefault = tmp10(8502);
+const ClipViewDefault = tmp10(8986);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let obj = { badgeWrapper: { position: "absolute", top: 16, left: 12 }, backIcon: { height: 24, width: 24 }, iconWithBadge: obj2 };
 obj2 = { display: "flex", flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, borderRadius: nativeDefault.modules.button.BORDER_RADIUS, padding: 7, backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
 let closure_8 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconWithBadge(arg0) {
   let BADGE_SIZE;
   let Icon;
   let includeNotificationsCount;
@@ -79,12 +79,12 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const sum = num3 + num4;
   if (sum < 10) {
-    BADGE_SIZE = tmp(1188).BADGE_SIZE;
+    BADGE_SIZE = tmp(1200).BADGE_SIZE;
   } else {
-    BADGE_SIZE = tmp(1188).BADGE_SIZE + 8;
+    BADGE_SIZE = tmp(1200).BADGE_SIZE + 8;
   }
   if (0 !== sum) {
-    const sum1 = BADGE_SIZE + 2 * tmp(1188).BADGE_PADDING;
+    const sum1 = BADGE_SIZE + 2 * tmp(1200).BADGE_PADDING;
     if (cResult[2] !== sum1) {
       size = { shape: ClipView.CutoutShape.RoundedRect, x: null, y: 16 - native.BADGE_PADDING, width: sum1, height: native.BADGE_SIZE + 2 * native.BADGE_PADDING, cornerRadius: (native.BADGE_SIZE + 2 * native.BADGE_PADDING) / 2 };
       class I {
@@ -204,7 +204,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = tmp5.backIcon;
   cResult[9] = tmp17;
   tmp16 = tmp17;
-}) : ((includeNotificationsCount) => {
+}) : (function IconWithBadge(includeNotificationsCount) {
   let c0;
   let items4;
   let items5;
@@ -225,7 +225,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => totalMentionCount.getTotalMentionCount());
   let num = 0;
-  const value = memo(16376)().value;
+  const value = memo(16636)().value;
   const tmp5 = memo;
   if (null != stateFromStores) {
     num = stateFromStores;
@@ -262,7 +262,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj2 = { style: size, children: tmp11(View, obj3) };
   obj3 = { style: tmp.backIcon, children: items5 };
   tmp11 = closure_7;
-  const tmp5Result = tmp5(8502);
+  const tmp5Result = tmp5(8986);
   if (null != memo1) {
     const items3 = [memo1];
     items4 = items3;
@@ -282,7 +282,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return closure_6(View, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsLeftIconWithBadge(arg0) {
   let includeNotificationsCount;
   let tmp11;
   let tmp5;
@@ -319,7 +319,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp5.index > 0;
   cResult[4] = tmp9Result;
   tmp8 = tmp9Result;
-}) : ((navigation) => {
+}) : (function SettingsLeftIconWithBadge(navigation) {
   let tmp5;
   navigation = navigation.navigation;
   let flag = navigation.includeNotificationsCount;
@@ -340,7 +340,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp(tmp2, tmp5);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((includeNotificationsCount) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeftBackIconWithBadge(includeNotificationsCount) {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(2);
@@ -355,7 +355,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((includeNotifications
     tmp5 = cResult[1];
   }
   return tmp5;
-}) : ((includeNotificationsCount) => {
+}) : (function LeftBackIconWithBadge(includeNotificationsCount) {
   let flag = includeNotificationsCount.includeNotificationsCount;
   if (flag === undefined) {
     flag = false;
@@ -364,7 +364,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((includeNotifications
   return metroRequire(closure_9, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((count) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CloseIconWithBadgeOnSide(count) {
   let first;
   let items;
   let tmp8;
@@ -383,7 +383,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((count) => {
     let tmp9 = null;
     if (count > 0) {
       const obj2 = { value: count };
-      tmp9 = metroRequire(tmp(1188).Badge, obj2);
+      tmp9 = metroRequire(tmp(1200).Badge, obj2);
     }
     cResult[1] = count;
     cResult[2] = tmp9;
@@ -405,7 +405,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((count) => {
   cResult[4] = tmp8;
   cResult[5] = tmp12;
   tmp11 = tmp12;
-}) : ((count) => {
+}) : (function CloseIconWithBadgeOnSide(count) {
   let items;
   count = count.count;
   const obj = { style: closure_8().iconWithBadge, children: items };

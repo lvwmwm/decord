@@ -1,44 +1,45 @@
-// Module ID: 14518
-// Function ID: 14519
+// Module ID: 14778
+// Function ID: 14779
 // Name: SettingRenderer
-// Dependencies: [32, 109, 19, 17, 2116, 14517, 2074, 11143, 21, 4896, 587, 1188, 6000, 1490, 14519, 558, 576, 504, 1126, 10560, 5978, 14521, 14522, 4892, 6706, 6705, 4602, 6079, 6078, 6695, 4573, 9679, 4861, 4862, 6002, 5600, 1888, 1369, 14294, 5916, 5601, 4586, 6500, 1881, 2]
+// Dependencies: [32, 109, 19, 17, 2128, 14777, 2086, 11263, 21, 5090, 587, 1200, 6184, 504, 1502, 14779, 558, 576, 1126, 10157, 6161, 14781, 14782, 5086, 6883, 6882, 4794, 6265, 6264, 6872, 4765, 10868, 5055, 5056, 6186, 5373, 1900, 1381, 14118, 6189, 5375, 4778, 14783, 1893, 2]
 // Exports: renderSettingItem, renderSettingSearchResultItem, renderSettingSearchResultPlaceholderItem
 
-// Module 14518 (SettingRenderer)
+// Module 14778 (SettingRenderer)
 import react_native from "react-native" /* 17 */;
+import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1881 */;
-import ToastUtils from "ToastUtils" /* 4573 */;
-import useToken from "useToken" /* 4586 */;
-import react3 from "react" /* 4602 */;
-import HapticUtils from "HapticUtils" /* 4861 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4862 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import GuildIcon from "GuildIcon" /* 5978 */;
-import Tracking from "Tracking" /* 6500 */;
-import ClipboardUtils from "ClipboardUtils" /* 6695 */;
-import FormSwitch from "FormSwitch" /* 6706 */;
-import VolumeSliderDefault from "VolumeSlider" /* 9679 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 14519 */;
-import useHighlightSettingItem from "useHighlightSettingItem" /* 14521 */;
-import SettingListItemHighlightDefault from "SettingListItemHighlight" /* 14522 */;
+import native from "native" /* 1200 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1893 */;
+import ToastUtils from "ToastUtils" /* 4765 */;
+import useToken from "useToken" /* 4778 */;
+import react3 from "react" /* 4794 */;
+import HapticUtils from "HapticUtils" /* 5055 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5056 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import GuildIcon from "GuildIcon" /* 6161 */;
+import ClipboardUtils from "ClipboardUtils" /* 6872 */;
+import FormSwitch from "FormSwitch" /* 6883 */;
+import VolumeSliderDefault from "VolumeSlider" /* 10868 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 14779 */;
+import useHighlightSettingItem from "useHighlightSettingItem" /* 14781 */;
+import SettingListItemHighlightDefault from "SettingListItemHighlight" /* 14782 */;
+import settings_tracking_Tracking from "settings/tracking/Tracking" /* 14783 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14517 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11143 */;
+import LocaleStore from "LocaleStore" /* 2128 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14777 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11263 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const GuildIconDefault = GuildIcon;
-let _require, dependencyMap, useSelectedGuildId;
+let _require, dependencyMap;
 
 let closure_12;
 let closure_14;
@@ -51,9 +52,10 @@ let obj4;
 let size;
 let tmp;
 let tmp2;
-const TableRow2 = tmp(6000);
-const TableRadioGroup2 = tmp2(6079);
-const ClydeIcon = tmp(10560);
+const TableRow2 = tmp(6184);
+const TableRadioGroup2 = tmp2(6265);
+const ClydeIcon = tmp(10157);
+const f118347 = () => _undefined.locale;
 function RouteSettingSearchResult(setting) {
   let IconComponent;
   let breadcrumbs;
@@ -64,7 +66,7 @@ function RouteSettingSearchResult(setting) {
   const index = setting.index;
   const total = setting.total;
   ({ IconComponent, breadcrumbs } = setting);
-  let obj = title(index[13]);
+  let obj = title(index[14]);
   const stackNavigation = obj.useStackNavigation();
   const screen = settingData.screen;
   const usePreNavigationAction = settingData.usePreNavigationAction;
@@ -78,7 +80,7 @@ function RouteSettingSearchResult(setting) {
   const callback = react.useCallback(() => {
     const obj = { selected: setting };
     UserSettingSearchStore.setState(obj);
-    const obj2 = Tracking;
+    const obj2 = settings_tracking_Tracking;
     const obj3 = { setting, title, route: screen.route, searchResultPosition: index, numSearchResults: total };
     const result = obj2.trackSettingSearchResultPress(obj3);
     const obj4 = SettingRendererUtils;
@@ -108,7 +110,7 @@ function StaticSettingSearchResult(title) {
   const callback = react.useCallback(() => {
     if (null != trailing) {
       const obj2 = { setting, title, searchResultPosition: index, numSearchResults: total };
-      const obj = Tracking;
+      const obj = settings_tracking_Tracking;
       const result = obj.trackSettingSearchResultPress(obj2);
       const obj3 = ClipboardUtils;
       obj3.copy(tmp);
@@ -145,15 +147,15 @@ obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, justifyContent:
 size = { width: native.AVATAR_SIZE_MAP[native.AvatarSizes.REFRESH_MEDIUM_32], height: native.AVATAR_SIZE_MAP[native.AvatarSizes.REFRESH_MEDIUM_32], borderRadius: nativeDefault.radii.xl, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 obj4 = { height: 20, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 let closure_17 = createStyles(obj);
-let closure_18 = react.memo((arg0) => {
+let closure_18 = react.memo(function RouteSetting(arg0) {
   let IconComponent;
   let accessibilityHint;
   let end;
   let onPress;
   let screen;
   let start;
-  let tmp14Result;
-  let tmp16;
+  let tmp15Result;
+  let tmp17;
   let useDescription;
   let useIsDisabled;
   let usePreNavigationAction;
@@ -164,8 +166,11 @@ let closure_18 = react.memo((arg0) => {
   ({ useDescription, useIsDisabled, IconComponent } = arg0);
   let preNavigationAction;
   ({ useTitle, variant, start, end } = arg0);
-  let obj = screen(preNavigationAction[13]);
+  let obj = screen(preNavigationAction[14]);
   const stackNavigation = obj.useStackNavigation();
+  let obj2 = screen(preNavigationAction[13]);
+  const items = [LocaleStore];
+  const stateFromStores = obj2.useStateFromStores(items, f118347);
   preNavigationAction = undefined;
   const title = useTitle();
   if (usePreNavigationAction != null) {
@@ -183,56 +188,56 @@ let closure_18 = react.memo((arg0) => {
   if (useTrailing != null) {
     trailing = useTrailing();
   }
-  const items = [stackNavigation, screen, preNavigationAction];
-  let tmp10;
+  const items1 = [stackNavigation, screen, preNavigationAction];
+  let tmp11;
   const callback = react.useCallback(() => {
     const obj = SettingRendererUtils;
     const obj2 = { navigation: stackNavigation, screen, preNavigationAction };
     const result = obj.onRouteSettingOnPress(obj2);
-  }, items);
+  }, items1);
   if (typeof isDisabled === "object") {
-    tmp10 = isDisabled;
+    tmp11 = isDisabled;
   }
-  let tmp11 = description;
-  if (null != tmp10) {
-    let obj2 = { disabledActionLabel: tmp10.label, description };
-    tmp11 = closure_14(closure_23, obj2);
+  let tmp12 = description;
+  if (null != tmp11) {
+    const obj3 = { disabledActionLabel: tmp11.label, description };
+    tmp12 = closure_14(closure_23, obj3);
   }
-  const obj3 = { label: title, subLabel: tmp11, disabled: true === isDisabled, arrow: true, variant, icon: tmp14Result, trailing: tmp16, onPress, accessibilityHint, start, end };
-  tmp14Result = null;
+  const obj4 = { label: title, subLabel: tmp12, disabled: true === isDisabled, arrow: true, variant, icon: tmp15Result, trailing: tmp17, onPress, accessibilityHint, start, end };
+  tmp15Result = null;
   const TableRow = tmp(tmp2[12]).TableRow;
   if (null != IconComponent) {
-    const obj4 = { IconComponent };
-    tmp14Result = tmp14(tmp(tmp2[12]).TableRow.Icon, obj4);
+    const obj5 = { IconComponent };
+    tmp15Result = tmp15(tmp(tmp2[12]).TableRow.Icon, obj5);
   }
-  tmp16 = null;
+  tmp17 = null;
   if (null != trailing) {
-    let tmp17;
+    let tmp18;
     if (null != trailing) {
-      let tmp14Result2 = trailing;
+      let tmp15Result2 = trailing;
       if (typeof trailing === "string") {
-        const obj5 = { text: trailing };
-        tmp14Result2 = tmp14(tmp(tmp2[12]).TableRow.TrailingText, obj5);
+        const obj6 = { text: trailing };
+        tmp15Result2 = tmp15(tmp(tmp2[12]).TableRow.TrailingText, obj6);
       }
-      tmp17 = tmp14Result2;
+      tmp18 = tmp15Result2;
     }
-    tmp16 = tmp17;
+    tmp17 = tmp18;
   }
   onPress = undefined;
-  if (tmp10 != null) {
-    onPress = tmp10.onPress;
+  if (tmp11 != null) {
+    onPress = tmp11.onPress;
   }
   if (onPress == null) {
     onPress = callback;
   }
   accessibilityHint = undefined;
-  if (tmp10 != null) {
-    accessibilityHint = tmp10.accessibilityHint;
+  if (tmp11 != null) {
+    accessibilityHint = tmp11.accessibilityHint;
   }
-  return closure_14(TableRow, obj3);
+  return closure_14(TableRow, obj4);
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTitle(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -298,7 +303,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return tmp9;
-}) : ((arg0) => {
+}) : (function useGuildTitle(arg0) {
   let closure_0;
   let stringResult;
   _require = arg0;
@@ -321,7 +326,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return stringResult;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((size) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSelectDefaultIcon(size) {
   const obj = react2;
   const cResult = obj.c(9);
   size = size.size;
@@ -373,7 +378,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((size) => {
   cResult[2] = tmp4.defaultIcon;
   cResult[3] = obj4;
   tmp6 = obj4;
-}) : ((size) => {
+}) : (function GuildSelectDefaultIcon(size) {
   let obj2;
   let str = size.size;
   if (str === undefined) {
@@ -390,7 +395,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((size) => {
   return authStore2(View, obj);
 });
 let closure_20 = tmp5;
-let closure_21 = react.memo((useSelectedGuildId) => {
+let closure_21 = react.memo(function GuildSelectorSetting(useSelectedGuildId) {
   let callback;
   let closure_2;
   let memoResult;
@@ -404,7 +409,7 @@ let closure_21 = react.memo((useSelectedGuildId) => {
   dependencyMap = tmp3;
   const items1 = [tmp3];
   const obj2 = { type: constants.PRESSABLE, useTitle: callback, withArrow: true, IconComponent: memoResult };
-  memoResult = react.memo(() => {
+  memoResult = react.memo(function SelectorGuildIcon() {
     let tmp7;
     if (null == closure_1) {
       tmp7 = authStore2(closure_20, {});
@@ -419,14 +424,14 @@ let closure_21 = react.memo((useSelectedGuildId) => {
   const merged1 = Object.assign(merged);
   return closure_14(closure_22, obj2);
 });
-let closure_22 = react.memo((arg0) => {
+let closure_22 = react.memo(function PressableSetting(arg0) {
   let IconComponent;
   let end;
   let onPress;
   let setting;
   let start;
-  let tmp10Result;
-  let tmp12;
+  let tmp11Result;
+  let tmp13;
   let useDescription;
   let useIsDisabled;
   let useTitle;
@@ -437,6 +442,9 @@ let closure_22 = react.memo((arg0) => {
   ({ setting, onPress, useTitle, withArrow } = arg0);
   const obj = useHighlightSettingItem;
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
+  const items = [LocaleStore];
+  const obj2 = get_initialized;
+  const stateFromStores = obj2.useStateFromStores(items, f118347);
   let description;
   const title = useTitle();
   if (useDescription != null) {
@@ -450,34 +458,34 @@ let closure_22 = react.memo((arg0) => {
   if (useTrailing != null) {
     trailing = useTrailing();
   }
-  const obj2 = { label: title, subLabel: description, arrow: withArrow, variant, icon: tmp10Result, onPress, disabled: true === isDisabled, trailing: tmp12, start, end };
-  tmp10Result = null;
-  const TableRow = tmp(6000).TableRow;
-  const tmp8 = authStore3;
-  const tmp9 = closure_15;
+  const obj3 = { label: title, subLabel: description, arrow: withArrow, variant, icon: tmp11Result, onPress, disabled: true === isDisabled, trailing: tmp13, start, end };
+  tmp11Result = null;
+  const TableRow = tmp(6184).TableRow;
+  const tmp10 = authStore3;
+  const tmp9 = authStore4;
   if (null != IconComponent) {
-    const obj3 = { IconComponent, variant };
-    tmp10Result = tmp10(tmp(6000).TableRow.Icon, obj3);
+    const obj4 = { IconComponent, variant };
+    tmp11Result = tmp11(tmp(6184).TableRow.Icon, obj4);
   }
-  tmp12 = undefined;
+  tmp13 = undefined;
   if (null != trailing) {
-    let tmp10Result2 = trailing;
+    let tmp11Result2 = trailing;
     if (typeof trailing === "string") {
-      const obj4 = { text: trailing };
-      tmp10Result2 = tmp10(tmp(6000).TableRow.TrailingText, obj4);
+      const obj5 = { text: trailing };
+      tmp11Result2 = tmp11(tmp(6184).TableRow.TrailingText, obj5);
     }
-    tmp12 = tmp10Result2;
+    tmp13 = tmp11Result2;
   }
-  const children = [authStore2(TableRow, obj2), ];
+  const children = [authStore2(TableRow, obj3), ];
   if (highlightSettingItem) {
-    const obj5 = { start, end };
-    highlightSettingItem = tmp10(SettingListItemHighlightDefault, obj5);
+    const obj6 = { start, end };
+    highlightSettingItem = tmp11(SettingListItemHighlightDefault, obj6);
   }
   children[1] = highlightSettingItem;
-  return tmp8(tmp9, { children });
+  return tmp9(tmp10, { children });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisabledActionDescriptionWithLink(arg0) {
   let description;
   let descriptionColor;
   let descriptionVariant;
@@ -515,7 +523,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const obj3 = { children: items };
         items = [tmp4, tmp7];
-        const tmp14 = authStore3(View, obj3);
+        const tmp14 = authStore4(View, obj3);
         cResult[6] = tmp7;
         cResult[7] = tmp4;
         cResult[8] = tmp14;
@@ -525,7 +533,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp10Result = description;
     if (!react.isValidElement(description)) {
       let str = descriptionVariant;
-      const Text = tmp(4892).Text;
+      const Text = tmp(5086).Text;
       const tmp10 = authStore2;
       if (descriptionVariant == null) {
         str = "text-xs/medium";
@@ -543,7 +551,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[5] = tmp10Result;
     tmp7 = tmp10Result;
   }
-}) : ((children) => {
+}) : (function DisabledActionDescriptionWithLink(children) {
   let description;
   let descriptionColor;
   let descriptionVariant;
@@ -568,22 +576,22 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const obj2 = { children: items };
     items = [tmp4, tmpResult];
-    return authStore3(View, obj2);
+    return authStore4(View, obj2);
   }
 });
-let closure_24 = react.memo((arg0) => {
+let closure_24 = react.memo(function ToggleSetting(arg0) {
   let IconComponent;
   let end;
   let hasIcon;
-  let obj6;
   let obj7;
   let obj8;
+  let obj9;
   let onValueChange;
   let setting;
   let start;
-  let tmp16;
   let tmp17;
-  let tmp8;
+  let tmp18;
+  let tmp9;
   let useDescription;
   let useIsDisabled;
   let useTitle;
@@ -593,6 +601,9 @@ let closure_24 = react.memo((arg0) => {
   ({ setting, onValueChange, useTitle, useValue, hasIcon } = arg0);
   const obj = useHighlightSettingItem;
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
+  const items = [LocaleStore];
+  const obj2 = get_initialized;
+  const stateFromStores = obj2.useStateFromStores(items, f118347);
   const title = useTitle();
   const value = useValue();
   let description;
@@ -603,46 +614,46 @@ let closure_24 = react.memo((arg0) => {
   if (useIsDisabled != null) {
     isDisabled = useIsDisabled();
   }
-  const obj2 = { label: title, subLabel: description, icon: tmp8, variant, start, end };
-  tmp8 = null;
+  const obj3 = { label: title, subLabel: description, icon: tmp9, variant, start, end };
+  tmp9 = null;
   if (null != IconComponent) {
-    const obj3 = { IconComponent, variant };
-    tmp8 = authStore2(tmp(6000).TableRow.Icon, obj3);
+    const obj4 = { IconComponent, variant };
+    tmp9 = authStore2(tmp(6184).TableRow.Icon, obj4);
   }
   if (typeof isDisabled === "object") {
-    const obj5 = { subLabel: authStore2(closure_23, obj6), accessible: true, trailing: authStore2(View, obj7) };
-    const TableRow = tmp(6000).TableRow;
-    const merged = Object.assign(obj2);
-    obj6 = { disabledActionLabel: isDisabled.label, description, descriptionVariant: "text-md/semibold", descriptionColor: "mobile-text-heading-primary" };
-    ({ accessibilityHint: obj4.accessibilityHint, onPress: obj4.onPress } = isDisabled);
-    obj7 = { style: { opacity: 0.5 }, children: authStore2(FormSwitch.FormSwitch, obj8) };
-    obj8 = { "aria-hidden": true, value, disabled: true };
-    tmp16 = authStore2(TableRow, obj5);
-    tmp17 = authStore2;
+    const obj6 = { subLabel: authStore2(closure_23, obj7), accessible: true, trailing: authStore2(View, obj8) };
+    const TableRow = tmp(6184).TableRow;
+    const merged = Object.assign(obj3);
+    obj7 = { disabledActionLabel: isDisabled.label, description, descriptionVariant: "text-md/semibold", descriptionColor: "mobile-text-heading-primary" };
+    ({ accessibilityHint: obj5.accessibilityHint, onPress: obj5.onPress } = isDisabled);
+    obj8 = { style: { opacity: 0.5 }, children: authStore2(FormSwitch.FormSwitch, obj9) };
+    obj9 = { "aria-hidden": true, value, disabled: true };
+    tmp17 = authStore2(TableRow, obj6);
+    tmp18 = authStore2;
   } else {
-    const obj9 = { disabled: isDisabled, onValueChange, value };
-    const TableSwitchRow = tmp(6705).TableSwitchRow;
-    const merged1 = Object.assign(obj2);
-    tmp16 = authStore2(TableSwitchRow, obj9);
-    tmp17 = authStore2;
+    const obj10 = { disabled: isDisabled, onValueChange, value };
+    const TableSwitchRow = tmp(6882).TableSwitchRow;
+    const merged1 = Object.assign(obj3);
+    tmp17 = authStore2(TableSwitchRow, obj10);
+    tmp18 = authStore2;
   }
-  let tmp17Result = tmp16;
-  const tmp18 = authStore3;
-  const tmp19 = closure_15;
+  let tmp18Result = tmp17;
+  const tmp19 = authStore4;
+  const tmp20 = authStore3;
   if (true === hasIcon) {
-    const obj10 = { children: tmp16 };
-    tmp17Result = tmp17(closure_25, obj10);
+    const obj11 = { children: tmp17 };
+    tmp18Result = tmp18(closure_25, obj11);
   }
-  const children = [tmp17Result, ];
+  const children = [tmp18Result, ];
   if (highlightSettingItem) {
-    const obj19 = { start, end };
-    highlightSettingItem = tmp17(SettingListItemHighlightDefault, obj19);
+    const obj20 = { start, end };
+    highlightSettingItem = tmp18(SettingListItemHighlightDefault, obj20);
   }
   children[1] = highlightSettingItem;
-  return tmp18(tmp19, { children });
+  return tmp19(tmp20, { children });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForceSwitchIcons(children) {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(5);
@@ -669,7 +680,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[3] = tmp5;
   cResult[4] = tmp10;
   tmp9 = tmp10;
-}) : ((children) => {
+}) : (function ForceSwitchIcons(children) {
   children = children.children;
   const context = react.useContext(react3.AccessibilityPreferencesContext);
   const items = [context];
@@ -680,7 +691,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   }, items);
   return authStore2(react3.AccessibilityPreferencesContext.Provider, { value, children });
 });
-let closure_26 = react.memo((arg0) => {
+let closure_26 = react.memo(function RadioSetting(arg0) {
   let onValueChange;
   let setting;
   let useOptions;
@@ -690,6 +701,9 @@ let closure_26 = react.memo((arg0) => {
   const tmp = closure_17();
   let obj = useHighlightSettingItem;
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
+  const items = [LocaleStore];
+  const obj2 = get_initialized;
+  const stateFromStores = obj2.useStateFromStores(items, f118347);
   const title = useTitle();
   const value = useValue();
   const options = useOptions();
@@ -698,7 +712,7 @@ let closure_26 = react.memo((arg0) => {
     let _HermesInternal = HermesInternal;
     combined = "" + value;
   }
-  const obj2 = {
+  const obj3 = {
     title,
     defaultValue: combined,
     onChange: onValueChange,
@@ -716,25 +730,25 @@ let closure_26 = react.memo((arg0) => {
     })
   };
   const TableRadioGroup = TableRadioGroup2.TableRadioGroup;
-  const children = [authStore2(TableRadioGroup, obj2, combined), ];
-  const tmp10 = closure_15;
-  const tmp11 = authStore2;
-  const tmp9 = authStore3;
+  const children = [authStore2(TableRadioGroup, obj3, combined), ];
+  const tmp10 = authStore4;
+  const tmp11 = authStore3;
+  const tmp12 = authStore2;
   if (highlightSettingItem) {
-    const obj3 = { start: true, end: true, style: tmp.radioSettingHighlight };
-    highlightSettingItem = tmp11(SettingListItemHighlightDefault, obj3);
+    const obj4 = { start: true, end: true, style: tmp.radioSettingHighlight };
+    highlightSettingItem = tmp12(SettingListItemHighlightDefault, obj4);
   }
   children[1] = highlightSettingItem;
-  return tmp9(tmp10, { children });
+  return tmp10(tmp11, { children });
 });
-let closure_27 = react.memo((arg0) => {
+let closure_27 = react.memo(function StaticSetting(arg0) {
   let IconComponent;
   let end;
   let setting;
   let start;
-  let tmp11Result;
-  let tmp11Result2;
-  let tmp12;
+  let tmp12Result;
+  let tmp12Result2;
+  let tmp13;
   let useDescription;
   let useIsDisabled;
   let useTitle;
@@ -744,8 +758,11 @@ let closure_27 = react.memo((arg0) => {
   let trailing;
   const tmp = trailing;
   ({ setting, useTitle } = arg0);
-  let obj = trailing(14521);
+  let obj = trailing(14781);
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
+  let obj2 = trailing(504);
+  const items = [LocaleStore];
+  const stateFromStores = obj2.useStateFromStores(items, f118347);
   trailing = undefined;
   const title = useTitle();
   if (useTrailing != null) {
@@ -759,7 +776,7 @@ let closure_27 = react.memo((arg0) => {
   if (useIsDisabled != null) {
     isDisabled = useIsDisabled();
   }
-  const items = [trailing];
+  const items1 = [trailing];
   const callback = react.useCallback(() => {
     if (null != trailing) {
       const obj = ClipboardUtils;
@@ -767,37 +784,37 @@ let closure_27 = react.memo((arg0) => {
       const obj2 = ToastUtils;
       const result = obj2.presentCopiedToClipboard();
     }
-  }, items);
-  let obj2 = { label: title, subLabel: description, onPress: tmp12, variant, disabled: isDisabled, icon: tmp11Result, trailing: tmp11Result2, start, end };
-  tmp12 = null;
-  const TableRow = tmp(6000).TableRow;
-  const tmp10 = closure_15;
-  const tmp9 = closure_16;
+  }, items1);
+  const obj3 = { label: title, subLabel: description, onPress: tmp13, variant, disabled: isDisabled, icon: tmp12Result, trailing: tmp12Result2, start, end };
+  tmp13 = null;
+  const TableRow = tmp(6184).TableRow;
+  const tmp10 = closure_16;
+  const tmp11 = closure_15;
   if (null != trailing) {
-    tmp12 = callback;
+    tmp13 = callback;
   }
-  tmp11Result = null;
+  tmp12Result = null;
   if (null != IconComponent) {
-    const obj3 = { IconComponent, variant };
-    tmp11Result = tmp11(tmp(6000).TableRow.Icon, obj3);
+    const obj4 = { IconComponent, variant };
+    tmp12Result = tmp12(tmp(6184).TableRow.Icon, obj4);
   }
-  tmp11Result2 = null;
+  tmp12Result2 = null;
   if (null != trailing) {
-    const obj4 = { text: trailing };
-    tmp11Result2 = tmp11(tmp(6000).TableRow.TrailingText, obj4);
+    const obj5 = { text: trailing };
+    tmp12Result2 = tmp12(tmp(6184).TableRow.TrailingText, obj5);
   }
-  const children = [closure_14(TableRow, obj2), ];
+  const children = [closure_14(TableRow, obj3), ];
   if (highlightSettingItem) {
-    const obj5 = { start, end };
-    highlightSettingItem = tmp11(SettingListItemHighlightDefault, obj5);
+    const obj6 = { start, end };
+    highlightSettingItem = tmp12(SettingListItemHighlightDefault, obj6);
   }
   children[1] = highlightSettingItem;
-  return tmp9(tmp10, { children });
+  return tmp10(tmp11, { children });
 });
-let closure_28 = react.memo((arg0) => {
+let closure_28 = react.memo(function VolumeSliderSetting(arg0) {
   let end;
   let maximum;
-  let obj3;
+  let obj4;
   let onValueChange;
   let setting;
   let start;
@@ -807,27 +824,30 @@ let closure_28 = react.memo((arg0) => {
   ({ setting, useTitle, onValueChange, maximum } = arg0);
   const obj = useHighlightSettingItem;
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
+  const items = [LocaleStore];
   const tmp4 = closure_17();
+  const obj2 = get_initialized;
+  const stateFromStores = obj2.useStateFromStores(items, f118347);
   const title = useTitle();
   let value;
   if (useValue != null) {
     value = useValue();
   }
-  const obj2 = { label: title, start, end, subLabel: authStore2(View, obj3) };
-  obj3 = { style: tmp4.slider, children: authStore2(VolumeSliderDefault, { value, maxVolume: maximum, onValueChange, accessibilityLabel: title }) };
+  const obj3 = { label: title, start, end, subLabel: authStore2(View, obj4) };
+  obj4 = { style: tmp4.slider, children: authStore2(VolumeSliderDefault, { value, maxVolume: maximum, onValueChange, accessibilityLabel: title }) };
   const TableRow = TableRow2.TableRow;
-  const children = [authStore2(TableRow, obj2), ];
-  const tmp7 = authStore3;
-  const tmp8 = closure_15;
-  const tmp9 = authStore2;
+  const children = [authStore2(TableRow, obj3), ];
+  const tmp10 = authStore2;
+  const tmp8 = authStore4;
+  const tmp9 = authStore3;
   if (highlightSettingItem) {
-    const obj4 = { start, end };
-    highlightSettingItem = tmp9(SettingListItemHighlightDefault, obj4);
+    const obj5 = { start, end };
+    highlightSettingItem = tmp10(SettingListItemHighlightDefault, obj5);
   }
   children[1] = highlightSettingItem;
-  return tmp7(tmp8, { children });
+  return tmp8(tmp9, { children });
 });
-let closure_29 = react.memo((useTrailing) => {
+let closure_29 = react.memo(function SliderSetting(useTrailing) {
   let Slider;
   let Stack;
   let _undefined;
@@ -837,15 +857,17 @@ let closure_29 = react.memo((useTrailing) => {
   let endIcon;
   let formatPercentResult;
   let intl;
-  let items7;
+  let items8;
   let obj6;
   let obj7;
   let start;
   let startIcon;
-  let tmp11;
+  let tmp13;
   let useProps;
+  let useTitle;
   let valueLabel;
   useTrailing = useTrailing.useTrailing;
+  let onSlidingComplete;
   let num2;
   let num4;
   let num3;
@@ -856,12 +878,17 @@ let closure_29 = react.memo((useTrailing) => {
   c9 = undefined;
   let callback1;
   let callback3;
-  ({ start, end, useProps } = useTrailing);
-  const title = useTrailing.useTitle();
+  const tmp2 = num2;
+  ({ useTitle, start, end, useProps } = useTrailing);
+  let obj = onSlidingComplete(num2[13]);
+  const items = [c9];
+  const stateFromStores = obj.useStateFromStores(items, f118347);
+  const title = useTitle();
   const props = useProps();
-  const onSlidingComplete = props.onSlidingComplete;
+  onSlidingComplete = props.onSlidingComplete;
   const step = props.step;
   let num = 0.1;
+  const tmp3 = c9;
   if (undefined !== step) {
     num = step;
   }
@@ -882,23 +909,23 @@ let closure_29 = react.memo((useTrailing) => {
     num3 = defaultValue;
   }
   onValueChange = props.onValueChange;
-  const tmp3 = _objectWithoutProperties(props, num4);
-  _objectWithoutProperties = tmp3;
-  const tmp4 = closure_17();
-  let obj = onSlidingComplete(num2[17]);
-  const items = [c9];
-  const stateFromStores = obj.useStateFromStores(items, () => _undefined.locale);
-  const tmp8 = onValueChange(value.useState(() => {
+  const tmp7 = _objectWithoutProperties(props, num4);
+  _objectWithoutProperties = tmp7;
+  const tmp8 = closure_17();
+  const items1 = [tmp3];
+  const tmpResult = onSlidingComplete(tmp2[13]);
+  const stateFromStores1 = tmpResult.useStateFromStores(items1, () => _undefined.locale);
+  const tmp10 = onValueChange(value.useState(() => {
     value = value.value;
     if (value == null) {
       value = num3;
     }
     return value;
   }), 2);
-  value = tmp8[0];
-  closure_8 = tmp8[1];
-  [tmp11, c9] = onValueChange(value.useState(false), 2);
-  const items1 = [onValueChange];
+  value = tmp10[0];
+  closure_8 = tmp10[1];
+  [tmp13, c9] = onValueChange(value.useState(false), 2);
+  const items2 = [onValueChange];
   onValueChange(value.useState(false), 2);
   const callback = value.useCallback(() => {
     _undefined(true);
@@ -908,82 +935,82 @@ let closure_29 = react.memo((useTrailing) => {
     if (onValueChange != null) {
       onValueChange(arg0);
     }
-  }, items1);
-  const items2 = [onSlidingComplete];
-  const items3 = [callback1, onSlidingComplete];
+  }, items2);
+  const items3 = [onSlidingComplete];
+  const items4 = [callback1, onSlidingComplete];
   const callback2 = value.useCallback((arg0) => {
     _undefined(false);
     if (onSlidingComplete != null) {
       tmp2(arg0);
     }
-  }, items2);
+  }, items3);
   callback3 = value.useCallback((arg0) => {
     callback1(arg0);
     if (onSlidingComplete != null) {
       onSlidingComplete(arg0);
     }
-  }, items3);
-  const items4 = [num3, callback3];
-  const items5 = [callback3, num4, num, value];
-  const callback4 = value.useCallback(() => callback3(num3), items4);
-  const items6 = [callback3, num2, num, value];
+  }, items4);
+  const items5 = [num3, callback3];
+  const items6 = [callback3, num4, num, value];
+  const callback4 = value.useCallback(() => callback3(num3), items5);
+  const items7 = [callback3, num2, num, value];
   const callback5 = value.useCallback(() => {
     callback3(Math.min(num4, first + num));
     const obj = HapticUtils;
     const result = obj.triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
-  }, items5);
+  }, items6);
   let trailing;
   const callback6 = value.useCallback(() => {
     callback3(Math.max(num2, first - num));
     const obj = HapticUtils;
     const result = obj.triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
-  }, items6);
+  }, items7);
   if (useTrailing != null) {
     trailing = useTrailing();
   }
   const obj2 = { start, end, shadow: "none", border: "none", children: closure_16(Stack, obj7) };
-  const Card = tmp5(tmp6[34]).Card;
-  Stack = tmp5(tmp6[35]).Stack;
-  const obj3 = { style: tmp4.sliderTitle, children: items7 };
-  const Stack2 = tmp5(tmp6[35]).Stack;
-  items7 = [closure_14(onSlidingComplete(num2[23]).Text, { variant: "text-md/semibold", children: title }), trailing];
-  const items8 = [closure_16(closure_8, obj3), ];
-  let tmp20Result = null != value;
-  const tmp22 = closure_8;
-  if (tmp20Result) {
-    const Text = tmp5(tmp6[23]).Text;
+  const Card = tmp(tmp2[34]).Card;
+  Stack = tmp(tmp2[35]).Stack;
+  const obj3 = { style: tmp8.sliderTitle, children: items8 };
+  const Stack2 = tmp(tmp2[35]).Stack;
+  items8 = [closure_14(tmp(tmp2[23]).Text, { variant: "text-md/semibold", children: title }), trailing];
+  const items9 = [closure_16(closure_8, obj3), ];
+  let tmp22Result = null != value;
+  const tmp24 = closure_8;
+  if (tmp22Result) {
+    const Text = tmp(tmp2[23]).Text;
     if (formatPercentResult == null) {
-      const tmp5Result = onSlidingComplete(num2[36]);
-      formatPercentResult = tmp5Result.formatPercent(stateFromStores, value);
+      const tmpResult3 = onSlidingComplete(tmp2[36]);
+      formatPercentResult = tmpResult3.formatPercent(stateFromStores1, value);
     }
     const obj4 = { variant: "text-sm/medium", color: "text-muted", children: formatPercentResult };
-    tmp20Result = tmp20(Text, obj4);
+    tmp22Result = tmp22(Text, obj4);
   }
-  items8[1] = tmp20Result;
-  const items9 = [closure_16(Stack2, { direction: "horizontal", justify: "space-between", children: items8 }), , ];
+  items9[1] = tmp22Result;
+  const items10 = [closure_16(Stack2, { direction: "horizontal", justify: "space-between", children: items9 }), , ];
   let slider;
-  const tmp5Result2 = onSlidingComplete(num2[37]);
-  if (tmp5Result2.isAndroid()) {
-    slider = tmp4.slider;
+  const tmpResult4 = onSlidingComplete(tmp2[37]);
+  if (tmpResult4.isAndroid()) {
+    slider = tmp8.slider;
   }
   const obj5 = { style: slider, children: closure_14(Slider, obj6) };
-  obj6 = { accessibilityLabel: title, step: num, onValueChange: callback1, value, minimumValue: num2, maximumValue: num4, onSlidingStart: callback, onSlidingComplete: callback2, startIcon: closure_14(onSlidingComplete(num2[39]).PressableOpacity, { accessible: false, onPress: callback6, children: startIcon }), endIcon: closure_14(onSlidingComplete(num2[39]).PressableOpacity, { accessible: false, onPress: callback5, children: endIcon }) };
-  Slider = tmp5(tmp6[38]).Slider;
-  const merged = Object.assign(tmp3);
-  items9[1] = closure_14(tmp22, obj5);
-  let tmp26 = !tmp11;
-  const Button = tmp5(tmp6[40]).Button;
-  if (!tmp11) {
-    tmp26 = value === num3;
+  obj6 = { accessibilityLabel: title, step: num, onValueChange: callback1, value, minimumValue: num2, maximumValue: num4, onSlidingStart: callback, onSlidingComplete: callback2, startIcon: closure_14(onSlidingComplete(tmp2[39]).PressableOpacity, { accessible: false, onPress: callback6, children: startIcon }), endIcon: closure_14(onSlidingComplete(tmp2[39]).PressableOpacity, { accessible: false, onPress: callback5, children: endIcon }) };
+  Slider = tmp(tmp2[38]).Slider;
+  const merged = Object.assign(tmp7);
+  items10[1] = closure_14(tmp24, obj5);
+  let tmp28 = !tmp13;
+  const Button = tmp(tmp2[40]).Button;
+  if (!tmp13) {
+    tmp28 = value === num3;
   }
-  obj7 = { children: items9 };
-  const obj8 = { disabled: tmp26, variant: "secondary", text: intl.string(onSlidingComplete(num2[18]).t["3b//lO"]), onPress: callback4 };
-  intl = tmp5(tmp6[18]).intl;
-  items9[2] = closure_14(Button, obj8);
+  obj7 = { children: items10 };
+  const obj8 = { disabled: tmp28, variant: "secondary", text: intl.string(onSlidingComplete(tmp2[18]).t["3b//lO"]), onPress: callback4 };
+  intl = tmp(tmp2[18]).intl;
+  items10[2] = closure_14(Button, obj8);
   return closure_14(Card, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((breadcrumbs) => {
+let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingSearchResultBreadcrumbs(breadcrumbs) {
   const obj = react2;
   const cResult = obj.c(4);
   breadcrumbs = breadcrumbs.breadcrumbs;
@@ -1011,7 +1038,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((breadcrumbs) =
     tmp4 = tmp7;
   }
   return tmp4;
-}) : ((breadcrumbs) => {
+}) : (function SettingSearchResultBreadcrumbs(breadcrumbs) {
   breadcrumbs = breadcrumbs.breadcrumbs;
   let tmp = null;
   if (0 !== breadcrumbs.length) {
@@ -1022,7 +1049,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((breadcrumbs) =
   return tmp;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((IconComponent) => {
+let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingSearchResultIcon(IconComponent) {
   let obj4;
   let tmp5;
   const obj = react2;
@@ -1053,7 +1080,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((IconComponent)
     tmp5 = cResult[3];
   }
   return tmp5;
-}) : ((IconComponent) => {
+}) : (function SettingSearchResultIcon(IconComponent) {
   let obj3;
   let tmp6;
   IconComponent = IconComponent.IconComponent;
@@ -1069,13 +1096,13 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((IconComponent)
   return tmp6;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
+let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? (function PressableSettingSearchResult(index) {
   let IconComponent;
   let breadcrumbs;
   let setting;
   let settingData;
   let title;
-  let obj = title(index[16]);
+  let obj = title(index[17]);
   const cResult = obj.c(18);
   const tmp = title;
   ({ settingData, IconComponent, title } = index);
@@ -1146,7 +1173,7 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
     }
   }
   const fn = function n() {
-    const obj = Tracking;
+    const obj = settings_tracking_Tracking;
     const obj2 = { setting, title, searchResultPosition: index, numSearchResults: total };
     const result = obj.trackSettingSearchResultPress(obj2);
     const obj3 = KeyboardManagerUtils;
@@ -1160,7 +1187,7 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
   cResult[4] = total;
   cResult[5] = fn;
   tmp4 = fn;
-}) : ((setting) => {
+}) : (function PressableSettingSearchResult(setting) {
   let IconComponent;
   let breadcrumbs;
   let settingData;
@@ -1174,7 +1201,7 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
   ({ IconComponent, breadcrumbs } = setting);
   const withArrow = settingData.withArrow;
   const callback = react.useCallback(() => {
-    const obj = Tracking;
+    const obj = settings_tracking_Tracking;
     const obj2 = { setting, title, searchResultPosition: index, numSearchResults: total };
     const result = obj.trackSettingSearchResultPress(obj2);
     const obj3 = KeyboardManagerUtils;
@@ -1186,7 +1213,7 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
   return closure_14(TableRow, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingSearchResultPlaceholder(arg0) {
   let end;
   let first;
   let items;
@@ -1248,7 +1275,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = first1;
   cResult[3] = tmp8;
   tmp7 = tmp8;
-}) : ((arg0) => {
+}) : (function SettingSearchResultPlaceholder(arg0) {
   let end;
   let items;
   let obj2;

@@ -1,13 +1,13 @@
-// Module ID: 7897
-// Function ID: 7898
+// Module ID: 8317
+// Function ID: 8318
 // Name: useMaybeFetchEquippedCollectibleProducts
-// Dependencies: [19, 1377, 558, 576, 504, 7868, 7898, 7899, 7900, 2]
+// Dependencies: [19, 1389, 558, 576, 504, 8286, 6058, 8318, 8319, 2]
 
-// Module 7897 (useMaybeFetchEquippedCollectibleProducts)
-import useDisplayProfileDefault from "useDisplayProfile" /* 7868 */;
-import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 7900 */;
+// Module 8317 (useMaybeFetchEquippedCollectibleProducts)
+import useDisplayProfileDefault from "useDisplayProfile" /* 8286 */;
+import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8319 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 let _require;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, guildId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEquippedCollectibleSkuIds(arg0, guildId) {
   let closure_0;
   let first;
   let tmp6;
@@ -103,7 +103,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, guildId) => {
   cResult[5] = stateFromStores;
   cResult[6] = obj2;
   tmp11 = obj2;
-}) : ((arg0, guildId) => {
+}) : (function useEquippedCollectibleSkuIds(arg0, guildId) {
   let closure_0;
   let skuId;
   let skuId1;
@@ -149,7 +149,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, guildId) => {
 });
 let closure_5 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetchEquippedCollectibleProducts(arg0, arg1, arg2) {
   let closure_0;
   _require = arg2;
   let obj = require("react");
@@ -180,7 +180,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
   cResult[3] = items;
   tmp4 = items;
   tmp3 = fn;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useMaybeFetchEquippedCollectibleProducts(arg0, arg1, arg2) {
   let closure_0 = arg2;
   let tmp = closure_5(arg0, arg1);
   const skuIds = tmp;

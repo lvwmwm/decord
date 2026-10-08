@@ -1,32 +1,32 @@
-// Module ID: 17876
-// Function ID: 17877
+// Module ID: 18163
+// Function ID: 18164
 // Name: GuildSettingsModalCommunityIntro
-// Dependencies: [19, 17, 2074, 4515, 9283, 1085, 21, 4896, 587, 10121, 1126, 4892, 9970, 4818, 558, 576, 1490, 504, 584, 9282, 17877, 17881, 4573, 2115, 5601, 6543, 2]
+// Dependencies: [19, 17, 2086, 4707, 8614, 1085, 21, 5090, 587, 9706, 1126, 5086, 9497, 5012, 558, 576, 1502, 504, 584, 8613, 18164, 18168, 4765, 2127, 5375, 6719, 2]
 
-// Module 17876 (GuildSettingsModalCommunityIntro)
+// Module 18163 (GuildSettingsModalCommunityIntro)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
-import ToastUtils from "ToastUtils" /* 4573 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 4818 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import LightbulbIcon2 from "LightbulbIcon" /* 9970 */;
-import AnalyticsIcon2 from "AnalyticsIcon" /* 10121 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 17881 */;
+import ToastUtils from "ToastUtils" /* 4765 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5012 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import LightbulbIcon2 from "LightbulbIcon" /* 9497 */;
+import AnalyticsIcon2 from "AnalyticsIcon" /* 9706 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 18168 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9283 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8614 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let contentContainerStyle, guildId, navigation, obj1, tmp2, tmp3, waitResult;
+let navigation, obj1, tmp2, tmp3, waitResult;
 
 let c10;
 let closure_12;
@@ -112,7 +112,7 @@ createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, borderRadius: 40, marginRight: 16, padding: 8 };
 let closure_17 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function FeatureCard(arg0) {
   let body;
   let featureCard;
   let featureIcon;
@@ -176,7 +176,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const obj4 = { style: featureCard, children: items };
         items = [tmp7, tmp15];
-        const tmp22 = closure_15(React3, obj4);
+        const tmp22 = authStore3(React3, obj4);
         cResult[13] = tmp4.featureCard;
         cResult[14] = tmp7;
         cResult[15] = tmp15;
@@ -186,7 +186,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const obj5 = { style: tmp4.featureDescription, children: items1 };
     items1 = [tmp9, tmp12];
-    const tmp18 = closure_15(React3, obj5);
+    const tmp18 = authStore3(React3, obj5);
     cResult[9] = tmp4.featureDescription;
     cResult[10] = tmp9;
     cResult[11] = tmp12;
@@ -198,7 +198,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp5;
   cResult[4] = tmp8;
   tmp7 = tmp8;
-}) : ((arg0) => {
+}) : (function FeatureCard(arg0) {
   let body;
   let header;
   let icon;
@@ -212,11 +212,11 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items[0] = authStore2(React3, obj2);
   const obj3 = { style: tmp.featureDescription, children: items1 };
   items1 = [authStore2(Text_Text.Heading, { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: header }), authStore2(Text_Text.Text, { variant: "text-sm/medium", color: "text-default", children: body })];
-  items[1] = closure_15(React3, obj3);
-  return closure_15(React3, obj);
+  items[1] = authStore3(React3, obj3);
+  return authStore3(React3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsModalCommunityIntro(guildId) {
   let first;
   let submitting;
   let tmp10;
@@ -316,14 +316,14 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
     }
     const items2 = [GuildSettingsStore];
-    class H {
+    class G {
       constructor() {
         return closure_1_9.isSubmitting();
       }
     }
     cResult[6] = items2;
-    cResult[7] = H;
-    tmp14 = H;
+    cResult[7] = G;
+    tmp14 = G;
     tmp13 = items2;
   } else {
     class F {
@@ -381,7 +381,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
     }
   }
-  class Y {
+  class H {
     constructor() {
       tmp = !closure_5;
       if (tmp) {
@@ -398,7 +398,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         tmp5 = closure_1;
         tmp6 = closure_2;
         obj = closure_1(closure_2[18]);
-        waitResult = obj.wait(() => { /* body not rendered: F149456 */ });
+        waitResult = obj.wait(() => { /* body not rendered: F150982 */ });
         tmp8 = closure_2;
         tmp9 = GuildSettingsSections;
         obj1 = { onClose: null };
@@ -413,8 +413,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[9] = stateFromStores2;
   cResult[10] = navigation;
   cResult[11] = onClose;
-  cResult[12] = Y;
-}) : ((contentContainerStyle) => {
+  cResult[12] = H;
+}) : (function GuildSettingsModalCommunityIntro(contentContainerStyle) {
   let arr7;
   let format;
   let intl;
@@ -488,7 +488,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   items5[2] = closure_14(Text, obj10);
   const obj13 = {
     text: intl3.string(require("intl").t.LhlgY9),
-    onPress() {
+    onPress: function handlePress() {
       const tmp = stateFromStores1;
       if (tmp) {
         const obj2 = EnableCommunityModalActionCreatorsDefault;

@@ -1,20 +1,20 @@
-// Module ID: 9218
-// Function ID: 9219
+// Module ID: 8513
+// Function ID: 8514
 // Name: EditGuildEventModalNavbar
-// Dependencies: [32, 19, 17, 21, 4896, 9214, 1375, 558, 576, 6476, 6626, 4892, 1126, 6890, 4815, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 8495, 1387, 558, 576, 6654, 6803, 5086, 1126, 7079, 5009, 2]
 
-// Module 9218 (EditGuildEventModalNavbar)
+// Module 8513 (EditGuildEventModalNavbar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4815 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6476 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 9214 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5009 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6654 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8495 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let metroRequire;
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ header: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 4, paddingVertical: 8 }, headerTitle: { lineHeight: 28, textTransform: "uppercase" }, buttonContainer: { width: 60 }, rightButton: { marginLeft: 12 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildEventModalNavbar(arg0) {
   let flag;
   let items;
   let items1;
@@ -126,7 +126,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       tmp33 = tmp36;
                     }
                     const obj5 = { accessibilityLabel: tmp27, onPress: onClose, source: AssetRegistryDefault, style: tmp4.rightButton };
-                    const HeaderActionButton = tmp(6890).HeaderActionButton;
+                    const HeaderActionButton = tmp(7079).HeaderActionButton;
                     const tmp32 = hasOwnProperty(HeaderActionButton, obj5);
                     cResult[27] = onClose;
                     cResult[28] = tmp4.rightButton;
@@ -162,7 +162,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   [tmp15, tmp16] = items1;
   _slicedToArray(items1, 2);
-  const SafeAreaPaddingView = tmp(6626).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp(6803).SafeAreaPaddingView;
   const header = tmp4.header;
   if (cResult[15] !== tmp4.buttonContainer) {
     const obj7 = { style: tmp4.buttonContainer };
@@ -173,7 +173,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     tmp17 = cResult[16];
   }
-  const Text = tmp(4892).Text;
+  const Text = tmp(5086).Text;
   if (cResult[17] === typeConsolidationEyebrow.style) {
     let tmp21;
     if (cResult[18] === tmp4.headerTitle) {
@@ -213,7 +213,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[18] = tmp4.headerTitle;
   cResult[19] = items2;
   tmp21 = items2;
-}) : ((screen) => {
+}) : (function EditGuildEventModalNavbar(screen) {
   let HeaderActionButton;
   let intl;
   let intl2;
@@ -242,16 +242,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj2 = { top: true, style: tmp.header, children: items1 };
   const obj3 = { style: tmp.buttonContainer };
   _slicedToArray(items, 2);
-  const SafeAreaPaddingView = tmp2(6626).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp2(6803).SafeAreaPaddingView;
   items1 = [hasOwnProperty(View, obj3), , ];
   const obj4 = { style: items2, variant: typeConsolidationEyebrow.variant, color: "text-default", children: intl.format(intl3.t["42HaFY"], { step: tmp7, total: tmp8 }) };
   items2 = [tmp.headerTitle, typeConsolidationEyebrow.style];
-  const Text = tmp2(4892).Text;
+  const Text = tmp2(5086).Text;
   intl = tmp2(1126).intl;
   items1[1] = hasOwnProperty(Text, obj4);
   const obj5 = { style: tmp.buttonContainer, children: hasOwnProperty(HeaderActionButton, obj6) };
   obj6 = { accessibilityLabel: intl2.string(intl3.t.cpT0Cq), onPress: onClose, source: AssetRegistryDefault, style: tmp.rightButton };
-  HeaderActionButton = tmp2(6890).HeaderActionButton;
+  HeaderActionButton = tmp2(7079).HeaderActionButton;
   intl2 = tmp2(1126).intl;
   items1[2] = hasOwnProperty(View, obj5);
   return metroRequire(SafeAreaPaddingView, obj2);

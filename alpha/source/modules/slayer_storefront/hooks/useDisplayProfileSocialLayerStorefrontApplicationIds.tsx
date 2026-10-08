@@ -1,20 +1,20 @@
-// Module ID: 8478
-// Function ID: 8479
+// Module ID: 8964
+// Function ID: 8965
 // Name: useDisplayProfileSocialLayerStorefrontApplicationIds
-// Dependencies: [19, 6743, 558, 576, 7868, 8479, 7126, 7128, 504, 12, 2]
+// Dependencies: [19, 6919, 558, 576, 8286, 8965, 7311, 7314, 504, 12, 2]
 
-// Module 8478 (useDisplayProfileSocialLayerStorefrontApplicationIds)
+// Module 8964 (useDisplayProfileSocialLayerStorefrontApplicationIds)
 import _mod12 from "module_12" /* 12 */;
-import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7126 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7311 */;
 import react from "react" /* 19 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6743 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6919 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, arr1, closure_0, set, tmp16, tmp3, tmp7, tmp9;
+let _require, set;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDisplayProfileSocialLayerStorefrontApplicationIds(userId) {
   let stateFromStoresArray;
   let tmp10;
   let tmp13;
@@ -87,130 +87,57 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
     if (tmp4 != null) {
       widgets1 = tmp4.widgets;
     }
-    class S {
-      constructor() {
-        tmp = closure_0;
-        widgets = undefined;
-        if (closure_0 != null) {
-          widgets = tmp.widgets;
-        }
-        if (null == widgets) {
-          return [];
-        } else {
-          tmp16 = globalThis;
-          _Set = Set;
-          self = this;
-          self2 = this;
-          set = new Set();
-          tmp17 = set;
-          closure_0 = set;
-          widgets1 = undefined;
-          if (tmp != null) {
-            widgets1 = tmp.widgets;
-          }
-          if (widgets1 == null) {
-            widgets1 = [];
-          }
-          tmp3 = widgets1;
-          tmp4 = widgets1;
-          for (const item10011 of widgets1) {
-            tmp5 = item10011;
-            tmp6 = closure_0;
-            tmp7 = closure_2;
-            tmp8 = item10011;
-            if (item10011 instanceof closure_0(closure_2[6]).BaseGameWidget) {
-              games = tmp5.games;
-              item = games.forEach((gameId) => {
-                applicationIdFromDetectableId = applicationIdFromDetectableId.getApplicationIdFromDetectableId(gameId.gameId);
-                if (null != applicationIdFromDetectableId) {
-                  set.add(applicationIdFromDetectableId);
-                }
-              });
-            } else if (!(tmp5 instanceof tmp6(tmp7[7]).ApplicationWidget)) {
-            } else {
-              tmp9 = closure_4;
-              tmp10 = item10011;
-              applicationIdFromDetectableId = closure_4.getApplicationIdFromDetectableId(tmp5.applicationId);
-              if (null == applicationIdFromDetectableId) {
-              } else {
-                tmp13 = applicationIdFromDetectableId;
-                addResult = set.add(tmp12);
-              }
-            }
-            continue;
-          }
-          _Array = Array;
-          arr1 = Array.from(set);
-          return arr1.sort();
-        }
+    const fn = function y() {
+      let widgets;
+      if (application != null) {
+        widgets = tmp.widgets;
       }
-    }
+      if (null == widgets) {
+        return [];
+      } else {
+        const _Set = Set;
+        const self = this;
+        const self2 = this;
+        set = new Set();
+        let widgets1;
+        if (application != null) {
+          widgets1 = tmp.widgets;
+        }
+        if (widgets1 == null) {
+          widgets1 = [];
+        }
+        for (const item10011 of widgets1) {
+          let tmp5 = item10011;
+          let tmp6 = require;
+          if (item10011 instanceof UserProfileGameWidgetTypes.BaseGameWidget) {
+            let games = tmp5.games;
+            let item = games.forEach((gameId) => {
+              applicationIdFromDetectableId = applicationIdFromDetectableId.getApplicationIdFromDetectableId(gameId.gameId);
+              if (null != applicationIdFromDetectableId) {
+                set.add(applicationIdFromDetectableId);
+              }
+            });
+          } else if (tmp5 instanceof tmp6(7314).ApplicationWidget) {
+            let applicationIdFromDetectableId = SocialLayerStorefrontStore.getApplicationIdFromDetectableId(tmp5.applicationId);
+            if (null != applicationIdFromDetectableId) {
+              let addResult = set.add(tmp12);
+            }
+          }
+          continue;
+        }
+        const _Array = Array;
+        const arr = Array.from(set);
+        return arr.sort();
+      }
+    };
     cResult[7] = widgets1;
-    cResult[8] = S;
-    tmp17 = S;
+    cResult[8] = fn;
+    tmp17 = fn;
   } else {
     tmp17 = cResult[8];
   }
   if (cResult[9] !== tmp4) {
     const items3 = [tmp4];
-    class S {
-      constructor() {
-        tmp = closure_0;
-        widgets = undefined;
-        if (closure_0 != null) {
-          widgets = tmp.widgets;
-        }
-        if (null == widgets) {
-          return [];
-        } else {
-          tmp16 = globalThis;
-          _Set = Set;
-          self = this;
-          self2 = this;
-          set = new Set();
-          tmp17 = set;
-          closure_0 = set;
-          widgets1 = undefined;
-          if (tmp != null) {
-            widgets1 = tmp.widgets;
-          }
-          if (widgets1 == null) {
-            widgets1 = [];
-          }
-          tmp3 = widgets1;
-          tmp4 = widgets1;
-          for (const item10011 of widgets1) {
-            tmp5 = item10011;
-            tmp6 = closure_0;
-            tmp7 = closure_2;
-            tmp8 = item10011;
-            if (item10011 instanceof closure_0(closure_2[6]).BaseGameWidget) {
-              games = tmp5.games;
-              item = games.forEach((gameId) => {
-                applicationIdFromDetectableId = applicationIdFromDetectableId.getApplicationIdFromDetectableId(gameId.gameId);
-                if (null != applicationIdFromDetectableId) {
-                  set.add(applicationIdFromDetectableId);
-                }
-              });
-            } else if (!(tmp5 instanceof tmp6(tmp7[7]).ApplicationWidget)) {
-            } else {
-              tmp9 = closure_4;
-              tmp10 = item10011;
-              applicationIdFromDetectableId = closure_4.getApplicationIdFromDetectableId(tmp5.applicationId);
-              if (null == applicationIdFromDetectableId) {
-              } else {
-                tmp13 = applicationIdFromDetectableId;
-                addResult = set.add(tmp12);
-              }
-            }
-            continue;
-          }
-          _Array = Array;
-          arr1 = Array.from(set);
-          return arr1.sort();
-        }
-      }
-    }
     cResult[9] = tmp4;
     cResult[10] = items3;
     tmp19 = items3;
@@ -229,129 +156,19 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
       if (cResult[13] === usersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds) {
         if (cResult[14] === areUsersInSocialLayerStorefrontMutualGuildsApplicationIds) {
           let tmp23;
+          let tmp25;
           if (cResult[15] === usersPlayingStorefrontEnabledGamesApplicationIds) {
             tmp23 = cResult[16];
           }
           if (cResult[17] !== tmp23) {
             const tmp23Result = tmp23();
-            class S {
-              constructor() {
-                tmp = closure_0;
-                widgets = undefined;
-                if (closure_0 != null) {
-                  widgets = tmp.widgets;
-                }
-                if (null == widgets) {
-                  return [];
-                } else {
-                  tmp16 = globalThis;
-                  _Set = Set;
-                  self = this;
-                  self2 = this;
-                  set = new Set();
-                  tmp17 = set;
-                  closure_0 = set;
-                  widgets1 = undefined;
-                  if (tmp != null) {
-                    widgets1 = tmp.widgets;
-                  }
-                  if (widgets1 == null) {
-                    widgets1 = [];
-                  }
-                  tmp3 = widgets1;
-                  tmp4 = widgets1;
-                  for (const item10011 of widgets1) {
-                    tmp5 = item10011;
-                    tmp6 = closure_0;
-                    tmp7 = closure_2;
-                    tmp8 = item10011;
-                    if (item10011 instanceof closure_0(closure_2[6]).BaseGameWidget) {
-                      games = tmp5.games;
-                      item = games.forEach((gameId) => {
-                        applicationIdFromDetectableId = applicationIdFromDetectableId.getApplicationIdFromDetectableId(gameId.gameId);
-                        if (null != applicationIdFromDetectableId) {
-                          set.add(applicationIdFromDetectableId);
-                        }
-                      });
-                    } else if (!(tmp5 instanceof tmp6(tmp7[7]).ApplicationWidget)) {
-                    } else {
-                      tmp9 = closure_4;
-                      tmp10 = item10011;
-                      applicationIdFromDetectableId = closure_4.getApplicationIdFromDetectableId(tmp5.applicationId);
-                      if (null == applicationIdFromDetectableId) {
-                      } else {
-                        tmp13 = applicationIdFromDetectableId;
-                        addResult = set.add(tmp12);
-                      }
-                    }
-                    continue;
-                  }
-                  _Array = Array;
-                  arr1 = Array.from(set);
-                  return arr1.sort();
-                }
-              }
-            }
+            cResult[17] = tmp23;
             cResult[18] = tmp23Result;
+            tmp25 = tmp23Result;
+          } else {
+            tmp25 = cResult[18];
           }
-          class S {
-            constructor() {
-              tmp = closure_0;
-              widgets = undefined;
-              if (closure_0 != null) {
-                widgets = tmp.widgets;
-              }
-              if (null == widgets) {
-                return [];
-              } else {
-                tmp16 = globalThis;
-                _Set = Set;
-                self = this;
-                self2 = this;
-                set = new Set();
-                tmp17 = set;
-                closure_0 = set;
-                widgets1 = undefined;
-                if (tmp != null) {
-                  widgets1 = tmp.widgets;
-                }
-                if (widgets1 == null) {
-                  widgets1 = [];
-                }
-                tmp3 = widgets1;
-                tmp4 = widgets1;
-                for (const item10011 of widgets1) {
-                  tmp5 = item10011;
-                  tmp6 = closure_0;
-                  tmp7 = closure_2;
-                  tmp8 = item10011;
-                  if (item10011 instanceof closure_0(closure_2[6]).BaseGameWidget) {
-                    games = tmp5.games;
-                    item = games.forEach((gameId) => {
-                      applicationIdFromDetectableId = applicationIdFromDetectableId.getApplicationIdFromDetectableId(gameId.gameId);
-                      if (null != applicationIdFromDetectableId) {
-                        set.add(applicationIdFromDetectableId);
-                      }
-                    });
-                  } else if (!(tmp5 instanceof tmp6(tmp7[7]).ApplicationWidget)) {
-                  } else {
-                    tmp9 = closure_4;
-                    tmp10 = item10011;
-                    applicationIdFromDetectableId = closure_4.getApplicationIdFromDetectableId(tmp5.applicationId);
-                    if (null == applicationIdFromDetectableId) {
-                    } else {
-                      tmp13 = applicationIdFromDetectableId;
-                      addResult = set.add(tmp12);
-                    }
-                  }
-                  continue;
-                }
-                _Array = Array;
-                arr1 = Array.from(set);
-                return arr1.sort();
-              }
-            }
-          }
+          return tmp25;
         }
       }
     }
@@ -360,7 +177,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   if (tmp4 != null) {
     application1 = tmp4.application;
   }
-  const fn = function w() {
+  const fn2 = function w() {
     let items;
     application = undefined;
     if (application != null) {
@@ -382,9 +199,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[13] = usersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds;
   cResult[14] = areUsersInSocialLayerStorefrontMutualGuildsApplicationIds;
   cResult[15] = usersPlayingStorefrontEnabledGamesApplicationIds;
-  cResult[16] = fn;
-  tmp23 = fn;
-}) : ((userId) => {
+  cResult[16] = fn2;
+  tmp23 = fn2;
+}) : (function useDisplayProfileSocialLayerStorefrontApplicationIds(userId) {
   let usersPlayingStorefrontEnabledGamesApplicationIds;
   let usersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds;
   let areUsersInSocialLayerStorefrontMutualGuildsApplicationIds;
@@ -445,7 +262,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
               set.add(applicationIdFromDetectableId);
             }
           });
-        } else if (tmp5 instanceof tmp6(7128).ApplicationWidget) {
+        } else if (tmp5 instanceof tmp6(7314).ApplicationWidget) {
           let applicationIdFromDetectableId = SocialLayerStorefrontStore.getApplicationIdFromDetectableId(tmp5.applicationId);
           if (null != applicationIdFromDetectableId) {
             let addResult = set.add(tmp12);

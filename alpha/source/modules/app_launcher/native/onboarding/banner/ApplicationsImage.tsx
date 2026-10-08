@@ -1,17 +1,17 @@
-// Module ID: 11678
-// Function ID: 11679
+// Module ID: 11743
+// Function ID: 11744
 // Name: ApplicationsImage
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 11679, 5981, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 11744, 6164, 2]
 
-// Module 11678 (ApplicationsImage)
+// Module 11743 (ApplicationsImage)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11679 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11744 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ obj4 = { left: nativeDefault.space.PX_32, transform: items1 };
 items1 = [{ rotate: "15deg" }];
 size = { borderRadius: nativeDefault.radii.sm, width: 36, height: 36 };
 let closure_7 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationsImage(arg0) {
   let firstApplication;
   let items;
   let secondApplication;
@@ -162,7 +162,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = tmp4.appIcon;
   cResult[6] = tmp10;
   tmp9 = tmp10;
-}) : ((arg0) => {
+}) : (function ApplicationsImage(arg0) {
   let firstApplication;
   let items;
   let items1;

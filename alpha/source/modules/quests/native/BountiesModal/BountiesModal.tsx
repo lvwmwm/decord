@@ -1,22 +1,20 @@
-// Module ID: 14828
-// Function ID: 14829
+// Module ID: 15089
+// Function ID: 15090
 // Name: BountiesModal
-// Dependencies: [19, 21, 558, 576, 14829, 14830, 14880, 10977, 10989, 2]
+// Dependencies: [19, 21, 558, 576, 15090, 15091, 15142, 11170, 11213, 2]
 
-// Module 14828 (BountiesModal)
+// Module 15089 (BountiesModal)
 import Fragment from "Fragment" /* 21 */;
-import BountiesModalTypes from "BountiesModalTypes" /* 14829 */;
-import BountiesModalContentScrollDefault from "BountiesModalContentScroll" /* 14830 */;
-import BountiesModalContentDefault from "BountiesModalContent" /* 14880 */;
+import BountiesModalTypes from "BountiesModalTypes" /* 15090 */;
+import BountiesModalContentScrollDefault from "BountiesModalContentScroll" /* 15091 */;
+import BountiesModalContentDefault from "BountiesModalContent" /* 15142 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let bountyId;
-
 const jsx = Fragment.jsx;
 const bounty_main = "bounty_main";
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((bountyId) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesModal(bountyId) {
   let first;
   let obj4;
   let variant;
@@ -138,7 +136,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((b
   cResult[4] = variant;
   cResult[5] = obj3;
   tmp5 = obj3;
-}) : ((bountyId) => {
+}) : (function BountiesModal(bountyId) {
   bountyId = bountyId.bountyId;
   const sourceQuestContent = bountyId.sourceQuestContent;
   const variant = bountyId.variant;

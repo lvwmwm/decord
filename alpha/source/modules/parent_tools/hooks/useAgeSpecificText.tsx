@@ -1,11 +1,11 @@
-// Module ID: 11544
-// Function ID: 11545
+// Module ID: 11558
+// Function ID: 11559
 // Name: useAgeSpecificText
-// Dependencies: [558, 8329, 2]
+// Dependencies: [558, 7712, 2]
 // Exports: useAgeSpecificText
 
-// Module 11544 (useAgeSpecificText)
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8329 */;
+// Module 11558 (useAgeSpecificText)
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7712 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -13,10 +13,10 @@ let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const result1 = size.fileFinishedImporting("modules/parent_tools/hooks/useAgeSpecificText.tsx");
 
-export const useAgeSpecificText = (arg0, arg1) => {
-  let tmp = arg0;
+export const useAgeSpecificText = function useAgeSpecificText(cResult, cResult2) {
+  let tmp = cResult;
   if (useIsInAdultAgeGroupDefault()) {
-    tmp = arg1;
+    tmp = cResult2;
   }
   return tmp;
 };

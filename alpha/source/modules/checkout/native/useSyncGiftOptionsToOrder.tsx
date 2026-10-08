@@ -1,31 +1,29 @@
-// Module ID: 10570
-// Function ID: 10571
+// Module ID: 10167
+// Function ID: 10168
 // Name: useSyncGiftOptionsToOrder
-// Dependencies: [32, 19, 6943, 3, 558, 576, 10445, 6948, 4549, 2]
+// Dependencies: [32, 19, 7132, 3, 558, 576, 10042, 7137, 4741, 2]
 
-// Module 10570 (useSyncGiftOptionsToOrder)
+// Module 10167 (useSyncGiftOptionsToOrder)
 import LoggerDefault from "Logger" /* 3 */;
-import BillingUtils from "BillingUtils" /* 4549 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 6943 */;
-import useGiftOptionsSyncDebounceDefault from "useGiftOptionsSyncDebounce" /* 10445 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import BillingUtils from "BillingUtils" /* 4741 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7132 */;
+import useGiftOptionsSyncDebounceDefault from "useGiftOptionsSyncDebounce" /* 10042 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, cleanupPromise, clearTimeoutResult, dependencyMap, flag, flag2, flag3, importDefault, num, num2, obj1, obj4, ref3, ref4, tmp11, tmp14, tmp17, tmp18, tmp20, tmp21, tmp22, tmp24, tmp25, tmp6;
+let _require, cleanupPromise, clearTimeoutResult, dependencyMap, flag, flag2, flag3, importDefault, num, num2, obj1, obj4, ref, ref4, ref5, ref6, tmp11, tmp14, tmp17, tmp18, tmp20, tmp21, tmp22, tmp24, tmp25, tmp6;
 
-let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
-let ref = NativeCheckoutStore.useNativeCheckoutStoreOrNull;
+let ref2 = NativeCheckoutStore.useNativeCheckoutStoreOrNull;
 const tmp2 = new LoggerDefault("useSyncGiftOptionsToOrder");
-let ref2 = tmp2;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, current) => {
+let ref3 = tmp2;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncGiftOptionsToOrder(arg0, current) {
   let closure_0;
   let closure_10;
   let first;
-  let ref5;
   let ref7;
   let ref8;
   let tmp10;
@@ -39,14 +37,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, current) => {
   const cResult = obj.c(22);
   let obj2 = react;
   dependencyMap = react.useRef(null);
-  _slicedToArray = react.useRef(null);
+  ref = react.useRef(null);
   react = react.useRef(false);
-  ref = react.useRef(undefined);
-  ref2 = react.useRef(null);
-  const ref6 = react.useRef(0);
+  ref2 = react.useRef(undefined);
   ref3 = react.useRef(null);
-  ref4 = react.useRef(null);
-  const tmp3 = _slicedToArray(react.useState(0), 2);
+  ref4 = react.useRef(0);
+  ref5 = react.useRef(null);
+  ref6 = react.useRef(null);
+  const tmp3 = ref(react.useState(0), 2);
   [tmp4, tmp5] = tmp3;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function o(setOrderRevision) {
@@ -57,7 +55,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, current) => {
   } else {
     first = cResult[0];
   }
-  let tmp7 = ref(first);
+  let tmp7 = ref2(first);
   let closure_11 = tmp7;
   let tmp8 = useGiftOptionsSyncDebounceDefault(tmp5);
   const waitForPause = tmp8.waitForPause;
@@ -110,7 +108,28 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, current) => {
                         }
                         if (cResult[20] !== tmp15) {
                           let obj3 = { awaitSync: tmp15 };
-                          cResult[20] = tmp15;
+                          class G {
+                            constructor() {
+                              if (null != closure_0) {
+                                if (ref.current !== ref2.current) {
+                                  if (ref6.current >= 3) {
+                                    tmp3.current = 0;
+                                  }
+                                  current = ref3.current;
+                                  const tmp5 = flush(tmp2.current);
+                                  const tmp7 = waitForSync();
+                                  if (!current) {
+                                    current = null != ref8.current;
+                                  }
+                                  if (!current) {
+                                    tmp5((arg0) => arg0 + 1);
+                                  }
+                                  return tmp7;
+                                }
+                              }
+                              return Promise.resolve(true);
+                            }
+                          }
                           cResult[21] = obj3;
                           tmp16 = obj3;
                         } else {
@@ -119,37 +138,39 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, current) => {
                         return tmp16;
                       }
                     }
-                    const fn3 = function b() {
-                      if (null != closure_0) {
-                        if (ref.current !== ref2.current) {
-                          if (ref6.current >= 3) {
-                            tmp3.current = 0;
+                    class G {
+                      constructor() {
+                        if (null != closure_0) {
+                          if (ref.current !== ref2.current) {
+                            if (ref6.current >= 3) {
+                              tmp3.current = 0;
+                            }
+                            current = ref3.current;
+                            const tmp5 = flush(tmp2.current);
+                            const tmp7 = waitForSync();
+                            if (!current) {
+                              current = null != ref8.current;
+                            }
+                            if (!current) {
+                              tmp5((arg0) => arg0 + 1);
+                            }
+                            return tmp7;
                           }
-                          current = ref3.current;
-                          const tmp5 = flush(tmp2.current);
-                          const tmp7 = waitForSync();
-                          if (!current) {
-                            current = null != ref8.current;
-                          }
-                          if (!current) {
-                            tmp5((arg0) => arg0 + 1);
-                          }
-                          return tmp7;
                         }
+                        return Promise.resolve(true);
                       }
-                      return Promise.resolve(true);
-                    };
+                    }
                     cResult[16] = flush;
                     cResult[17] = arg0;
                     cResult[18] = waitForSync;
-                    cResult[19] = fn3;
-                    tmp15 = fn3;
+                    cResult[19] = G;
+                    tmp15 = G;
                   }
                 }
               }
             }
           }
-          const items1 = [arg0, current, tmp4, resolveSyncs, tmp7, waitForPause];
+          const items1 = [, current, tmp4, resolveSyncs, tmp7, waitForPause];
           cResult[9] = current;
           cResult[10] = arg0;
           cResult[11] = resolveSyncs;
@@ -254,7 +275,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, current) => {
                     closure_1_10((arg0) => arg0 + 1);
                   } else if (ref4.current < 3) {
                     const _setTimeout = setTimeout;
-                    ref8.current = setTimeout(() => closure_1_10(() => { /* body not rendered: F154975 */ }), 500 * 2 ** (ref4.current - 1));
+                    ref8.current = setTimeout(() => closure_1_10(() => { /* body not rendered: F156399 */ }), 500 * 2 ** (ref4.current - 1));
                   } else {
                     resolveSyncs(false);
                   }
@@ -284,22 +305,22 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, current) => {
   cResult[7] = waitForPause;
   cResult[8] = E;
   tmp12 = E;
-}) : ((arg0, current) => {
-  let first;
-  let tmp3;
+}) : (function useSyncGiftOptionsToOrder(arg0, current) {
   let closure_0 = arg0;
   importDefault = current;
   dependencyMap = react.useRef(null);
-  _slicedToArray = react.useRef(null);
+  ref = react.useRef(null);
   react = react.useRef(false);
-  ref = react.useRef(undefined);
-  const ref5 = react.useRef(null);
-  const ref6 = react.useRef(0);
+  ref2 = react.useRef(undefined);
+  ref5 = react.useRef(null);
+  ref6 = react.useRef(0);
   const ref7 = react.useRef(null);
   const ref8 = react.useRef(null);
-  [first, tmp3] = react.useState(0);
+  let tmp = ref(react.useState(0), 2);
+  const tmp3 = tmp[1];
   let closure_10 = tmp3;
-  const tmp4 = ref((setOrderRevision) => setOrderRevision.setOrderRevision);
+  const first = tmp[0];
+  const tmp4 = ref2((setOrderRevision) => setOrderRevision.setOrderRevision);
   let closure_11 = tmp4;
   let tmp5 = useGiftOptionsSyncDebounceDefault(tmp3);
   const waitForPause = tmp5.waitForPause;

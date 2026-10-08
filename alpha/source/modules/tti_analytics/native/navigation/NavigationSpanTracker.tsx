@@ -1,14 +1,14 @@
-// Module ID: 16523
-// Function ID: 16524
+// Module ID: 11514
+// Function ID: 11515
 // Name: NavigationSpanTracker
-// Dependencies: [109, 3, 16524, 1266, 16525, 16522, 2]
+// Dependencies: [109, 3, 11515, 1278, 11516, 11517, 2]
 
-// Module 16523 (NavigationSpanTracker)
+// Module 11514 (NavigationSpanTracker)
 import LoggerDefault from "Logger" /* 3 */;
-import v1 from "v1" /* 1266 */;
-import NavigationSpanTypes from "NavigationSpanTypes" /* 16522 */;
-import NavigationTTIAnalytics from "NavigationTTIAnalytics" /* 16524 */;
-import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 16525 */;
+import v1 from "v1" /* 1278 */;
+import NavigationTTIAnalytics from "NavigationTTIAnalytics" /* 11515 */;
+import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 11516 */;
+import NavigationSpanTypes from "NavigationSpanTypes" /* 11517 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;
 
@@ -17,15 +17,22 @@ let obj = new LoggerDefault("NavTTI");
 obj.enableNativeLogger(true);
 class NavigationSpanTracker {
   constructor() {
-    const merged = Object.assign({ active: null, lastBundle: null, listenersBySurface: null, debugBundleListeners: null });
-    merged[2] = new Map();
+    const merged = Object.assign({ active: null, lastBundle: null, lastBundleSurfaceKey: null, listenersBySurface: null, debugBundleListeners: null });
+    merged[3] = new Map();
     new Map();
-    merged[3] = new Set();
+    merged[4] = new Set();
     new Set();
     return merged;
   }
   getLastBundle() {
     return this.lastBundle;
+  }
+  getLastBundleForSurface(definition, navigationKey) {
+    let lastBundle = null;
+    if (this.lastBundleSurfaceKey === this.getSurfaceKey(definition, navigationKey)) {
+      lastBundle = this.lastBundle;
+    }
+    return lastBundle;
   }
   getActiveTraceId(definition, navigationKey) {
     const self = this;
@@ -86,6 +93,8 @@ class NavigationSpanTracker {
     };
   }
   subscribeDebugBundle(arg0) {
+    let active;
+    let setLastBundle;
     const self = this;
     let closure_0 = arg0;
     let tmp = 0 === this.debugBundleListeners.size && null != self.active;
@@ -95,7 +104,8 @@ class NavigationSpanTracker {
       tmp = null != self.active;
     }
     if (tmp) {
-      self.lastBundle = self.buildBundle(self.active, false, null);
+      ({ setLastBundle, active } = self);
+      setLastBundle(active, self.buildBundle(self.active, false, null));
     }
     return () => {
       const debugBundleListeners = self.debugBundleListeners;
@@ -111,7 +121,7 @@ class NavigationSpanTracker {
       self.flush("interrupted", { notifySubscribers: false });
     }
     const timestamp = Date.now();
-    const active = { traceId: obj2.v4(), navigationSpanId: obj3.v4(), surfaceKey: self.getSurfaceKey(definition.definition, definition.destinationKey), definition: null, destinationKey: null, properties: null, startEpochMs: timestamp, startMonotonicMs: nowResult, components: [], firstPaint: null, deadlineTimer: setTimeout(() => self.flush("deadline_exceeded"), 30000) };
+    const active = { traceId: obj2.v4(), navigationSpanId: obj3.v4(), surfaceKey: self.getSurfaceKey(definition.definition, definition.destinationKey), definition: null, destinationKey: null, properties: null, startEpochMs: timestamp, startMonotonicMs: nowResult, components: [], firstPaint: null, contentReadyAtMonotonicMs: null, contentChangesetRequired: false, minimumContentChangesetUpdateId: null, firstContentfulPaintMs: null, deadlineTimer: setTimeout(() => self.flush("deadline_exceeded"), 30000) };
     nowResult = performance.now();
     obj2 = v1;
     ({ definition: obj.definition, destinationKey: obj.destinationKey, properties: obj.properties } = definition);
@@ -139,7 +149,7 @@ class NavigationSpanTracker {
       if (Number.isFinite(endMonotonicMs.endMonotonicMs)) {
         const _Math = Math;
         const _Math2 = Math;
-        const tmp2 = null == active.firstPaint;
+        const tmp2 = null == active.firstPaint && null == active.firstContentfulPaintMs;
         const bound = Math.max(0, Math.round(endMonotonicMs.endMonotonicMs - active.startMonotonicMs));
         const components = active.components;
         const push = components.push;
@@ -163,10 +173,133 @@ class NavigationSpanTracker {
           const tmp4Result2 = NavigationTTIDebugFreeze;
           const result1 = tmp4Result2.emitNavigationTTIDebugCheckpoint(obj5, logActiveBundle);
         }
+        const result2 = self.tryRecordContentPainted(active);
         return true;
       } else {
         return false;
       }
+    }
+  }
+  requireContentChangeset(activeTraceId) {
+    const active = this.active;
+    let traceId;
+    if (active != null) {
+      traceId = active.traceId;
+    }
+    let flag = traceId === activeTraceId && null == active.firstContentfulPaintMs;
+    if (flag) {
+      active.contentChangesetRequired = true;
+      active.contentReadyAtMonotonicMs = null;
+      flag = true;
+    }
+    return flag;
+  }
+  recordExpectedChangeset(activeTraceId, arg1) {
+    const active = this.active;
+    let traceId;
+    if (active != null) {
+      traceId = active.traceId;
+    }
+    let tmp2 = traceId !== activeTraceId || null != active.firstContentfulPaintMs;
+    if (!tmp2) {
+      const _Number = Number;
+      tmp2 = !Number.isInteger(arg1);
+    }
+    let flag = !tmp2;
+    if (flag) {
+      active.contentChangesetRequired = true;
+      let num = active.minimumContentChangesetUpdateId;
+      const _Math = Math;
+      if (num == null) {
+        num = 0;
+      }
+      active.minimumContentChangesetUpdateId = max(num, arg1);
+      active.contentReadyAtMonotonicMs = null;
+      flag = true;
+    }
+    return flag;
+  }
+  recordExpectedChangesetForDestination(CHANNEL_NAVIGATION_TTI, channelId, arg2) {
+    const self = this;
+    const activeTraceId = this.getActiveTraceId(CHANNEL_NAVIGATION_TTI, channelId);
+    const result = null != activeTraceId && self.recordExpectedChangeset(activeTraceId, arg2);
+    return result;
+  }
+  recordContentPaintedWhenReady(activeTraceId, monotonicTimestamp, changesetUpdateId) {
+    const self = this;
+    const active = this.active;
+    let traceId;
+    if (active != null) {
+      traceId = active.traceId;
+    }
+    let tmp2 = traceId !== activeTraceId;
+    if (!tmp2) {
+      const _Number = Number;
+      tmp2 = !Number.isFinite(monotonicTimestamp);
+    }
+    let tmp4 = !tmp2;
+    if (tmp4) {
+      const contentChangesetRequired = active.contentChangesetRequired;
+      let flag = !contentChangesetRequired;
+      if (contentChangesetRequired) {
+        flag = !(null == active.minimumContentChangesetUpdateId || null == changesetUpdateId || changesetUpdateId < active.minimumContentChangesetUpdateId);
+      }
+      if (flag) {
+        let bound = monotonicTimestamp;
+        if (null != active.contentReadyAtMonotonicMs) {
+          const _Math = Math;
+          bound = Math.min(active.contentReadyAtMonotonicMs, monotonicTimestamp);
+        }
+        active.contentReadyAtMonotonicMs = bound;
+        const result = self.tryRecordContentPainted(active);
+        flag = true;
+      }
+      tmp4 = flag;
+    }
+    return tmp4;
+  }
+  clearContentPaintedReadiness(activeTraceId) {
+    const active = this.active;
+    let traceId;
+    if (active != null) {
+      traceId = active.traceId;
+    }
+    let flag = traceId === activeTraceId && null == active.firstContentfulPaintMs;
+    if (flag) {
+      active.contentReadyAtMonotonicMs = null;
+      flag = true;
+    }
+    return flag;
+  }
+  tryRecordContentPainted(active) {
+    let contentReadyAtMonotonicMs;
+    let firstPaint;
+    ({ contentReadyAtMonotonicMs, firstPaint } = active);
+    if (null != contentReadyAtMonotonicMs) {
+      if (null != firstPaint) {
+        const self = this;
+        const _Math = Math;
+        const _Math2 = Math;
+        const _Math3 = Math;
+        const result = this.recordContentPaintedOffset(active, Math.max(firstPaint.atMs, Math.max(0, Math.round(contentReadyAtMonotonicMs - active.startMonotonicMs))));
+      }
+    }
+  }
+  recordContentPaintedOffset(firstContentfulPaintMs, arg1) {
+    const self = this;
+    firstContentfulPaintMs = firstContentfulPaintMs.firstContentfulPaintMs;
+    let bound = arg1;
+    if (null != firstContentfulPaintMs) {
+      const _Math = Math;
+      bound = Math.min(firstContentfulPaintMs, arg1);
+    }
+    firstContentfulPaintMs.firstContentfulPaintMs = bound;
+    self.publishDebugBundle();
+    if (null == firstContentfulPaintMs) {
+      const traceId = firstContentfulPaintMs.traceId;
+      const obj2 = { kind: "milestone", name: "first_contentful_paint", traceId, destinationKey: firstContentfulPaintMs.destinationKey };
+      obj = NavigationTTIDebugFreeze;
+      const result = obj.emitNavigationTTIDebugCheckpoint(obj2, () => self.logActiveBundle(traceId));
     }
   }
   recordLateComponentLayout(traceId, arg1, endMonotonicMs) {
@@ -207,10 +340,13 @@ class NavigationSpanTracker {
     return false;
   }
   publishDebugBundle() {
+    let active;
+    let setLastBundle;
     const self = this;
     const tmp = null != this.active && 0 !== self.debugBundleListeners.size;
     if (tmp) {
-      self.lastBundle = self.buildBundle(self.active, false, null);
+      ({ setLastBundle, active } = self);
+      setLastBundle(active, self.buildBundle(self.active, false, null));
       self.notifyDebugBundle();
     }
   }
@@ -242,9 +378,12 @@ class NavigationSpanTracker {
     }
   }
   publishTraceState() {
+    let active;
+    let setLastBundle;
     const self = this;
     if (null != this.active) {
-      self.lastBundle = self.buildBundle(self.active, false, null);
+      ({ setLastBundle, active } = self);
+      setLastBundle(active, self.buildBundle(self.active, false, null));
       self.notifySurface(self.active.definition, self.active.destinationKey);
       self.notifyDebugBundle();
     }
@@ -292,7 +431,7 @@ class NavigationSpanTracker {
         INTERRUPTED = NavigationSpanTypes.NavigationSpanStatus.INTERRUPTED;
       }
       const bundle = self.buildBundle(active, true, INTERRUPTED);
-      self.lastBundle = bundle;
+      self.setLastBundle(active, bundle);
       emitNavigationSpanBundle(bundle);
       if (flag) {
         self.notifySurface(active.definition, active.destinationKey);
@@ -302,6 +441,10 @@ class NavigationSpanTracker {
   }
   getSurfaceKey(definition, destinationKey) {
     return "" + definition.rootEventName + ":" + definition.componentEventName + ":" + destinationKey;
+  }
+  setLastBundle(active, bundle) {
+    this.lastBundle = bundle;
+    this.lastBundleSurfaceKey = active.surfaceKey;
   }
   notifySurface(definition, destinationKey) {
     const listenersBySurface = this.listenersBySurface;
@@ -342,7 +485,7 @@ class NavigationSpanTracker {
     if (atMs == null) {
       atMs = null;
     }
-    const spanTtiProperties = { trace_id: traceId, span_id: navigationSpanId, parent_span_id: null, span_name: definition.rootEventName, start_ms: 0, end_ms: bound, first_paint_ms: atMs, first_contentful_paint_ms: null, largest_contentful_paint_ms: null, interactive_ms: null, trace_start_timestamp_ms: startEpochMs, span_status: INTERRUPTED };
+    const spanTtiProperties = { trace_id: traceId, span_id: navigationSpanId, parent_span_id: null, span_name: definition.rootEventName, start_ms: 0, end_ms: bound, first_paint_ms: atMs, first_contentful_paint_ms: active.firstContentfulPaintMs, largest_contentful_paint_ms: null, interactive_ms: null, trace_start_timestamp_ms: startEpochMs, span_status: INTERRUPTED };
     const merged = Object.assign(active.properties);
     const obj2 = { navigation: { spanTtiName: definition.rootEventName, spanTtiProperties }, components: items, firstPaint, settled };
     items = [...active.components];
@@ -350,11 +493,11 @@ class NavigationSpanTracker {
   }
 }
 const prototype = NavigationSpanTracker.prototype;
-let merged = Object.assign({ active: null, lastBundle: null, listenersBySurface: null, debugBundleListeners: null });
+let merged = Object.assign({ active: null, lastBundle: null, lastBundleSurfaceKey: null, listenersBySurface: null, debugBundleListeners: null });
 const map = new Map();
-merged[2] = map;
+merged[3] = map;
 let set = new Set();
-merged[3] = set;
+merged[4] = set;
 let result = size.fileFinishedImporting("modules/tti_analytics/native/navigation/NavigationSpanTracker.tsx");
 
 export default merged;

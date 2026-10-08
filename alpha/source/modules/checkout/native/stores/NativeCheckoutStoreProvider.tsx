@@ -1,24 +1,24 @@
-// Module ID: 10551
-// Function ID: 10552
+// Module ID: 10148
+// Function ID: 10149
 // Name: NativeCheckoutStoreProvider
-// Dependencies: [5, 32, 19, 17, 6943, 1085, 4875, 1096, 21, 4896, 558, 576, 5991, 8900, 584, 6948, 6949, 5975, 1266, 1242, 10552, 1252, 5597, 10554, 2]
+// Dependencies: [5, 32, 19, 17, 7132, 1085, 5069, 1096, 21, 5090, 558, 576, 6174, 9333, 584, 7137, 7138, 6158, 1278, 1254, 10149, 1264, 5392, 10151, 2]
 
-// Module 10551 (NativeCheckoutStoreProvider)
+// Module 10148 (NativeCheckoutStoreProvider)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import Constants2 from "Constants" /* 1096 */;
-import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import v1 from "v1" /* 1266 */;
-import PaymentConstants from "PaymentConstants" /* 4875 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10552 */;
-import OrderUtils from "OrderUtils" /* 10554 */;
+import SentryUtilsDefault from "SentryUtils" /* 1254 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import v1 from "v1" /* 1278 */;
+import PaymentConstants from "PaymentConstants" /* 5069 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10149 */;
+import OrderUtils from "OrderUtils" /* 10151 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 6943 */;
-import createStyles from "createStyles" /* 4896 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7132 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ const PaymentGateways = Constants2.PaymentGateways;
 const jsx = Fragment.jsx;
 let closure_14 = createStyles.createStyles({ loadingSpinnerContainer: { display: "flex", alignItems: "center", justifyContent: "center", height: "100%" } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((orderRequired) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeCheckoutStoreProviderWrapper(orderRequired) {
   let analyticsInitialStep;
   let checkoutAnalyticsFields;
   let children;
@@ -87,7 +87,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((orderRequired) => 
   const tmp6Result = tmp6(tmp[13]);
   const mobileStoreFront = tmp6Result.useMobileStoreFront();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    class W {
+    class K {
       constructor() {
         obj = paymentGateway(isGift[14]);
         dispatchResult = obj.dispatch({ type: "IAP_CHECKOUT_START" });
@@ -98,12 +98,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((orderRequired) => 
       }
     }
     let items = [];
-    cResult[0] = W;
+    cResult[0] = K;
     cResult[1] = items;
     tmp12 = items;
-    tmp11 = W;
+    tmp11 = K;
   } else {
-    class W {
+    class K {
       constructor() {
         obj = paymentGateway(isGift[14]);
         dispatchResult = obj.dispatch({ type: "IAP_CHECKOUT_START" });
@@ -117,7 +117,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((orderRequired) => 
   }
   const effect = obj2.useEffect(tmp11, tmp12);
   if (cResult[2] === initialExternalGatewayFacet) {
-    class W {
+    class K {
       constructor() {
         obj = paymentGateway(isGift[14]);
         dispatchResult = obj.dispatch({ type: "IAP_CHECKOUT_START" });
@@ -201,7 +201,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((orderRequired) => 
   cResult[4] = onOrderCreated;
   cResult[5] = paymentGateway;
   if (mobileStoreFront != null) {
-    class W {
+    class K {
       constructor() {
         obj = paymentGateway(isGift[14]);
         dispatchResult = obj.dispatch({ type: "IAP_CHECKOUT_START" });
@@ -212,12 +212,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((orderRequired) => 
       }
     }
   }
-  const fn = function() {
+  function t4() {
     return closure_0(...arguments);
-  };
+  }
   cResult[6] = undefined;
-  cResult[7] = fn;
-}) : ((orderRequired) => {
+  cResult[7] = t4;
+}) : (function NativeCheckoutStoreProviderWrapper(orderRequired) {
   let analyticsInitialStep;
   let c9;
   let checkoutAnalyticsFields;
@@ -444,7 +444,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((orderRequired) => 
   return tmp18;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((checkoutInitParameters) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeCheckoutStoreProvider(checkoutInitParameters) {
   let analyticsFields;
   let contextMetadata;
   let paymentGateway;
@@ -837,7 +837,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((checkoutInitPa
   cResult[4] = paymentGateway;
   cResult[5] = E;
   tmp9 = E;
-}) : ((children) => {
+}) : (function NativeCheckoutStoreProvider(children) {
   let analyticsFields;
   let checkoutInitParameters;
   let closure_7;
@@ -850,7 +850,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((checkoutInitPa
   ({ checkoutInitParameters: require, order } = children);
   ({ paymentGateway: dependencyMap, orderRequired: _asyncToGenerator, onOrderRetryCancellation: _slicedToArray, initialSubscriptionFacet: react, checkoutAnalyticsFields: View, analyticsInitialStep: closure_7 } = children);
   children = children.children;
-  const contextMetadata = order(5991)(() => {
+  const contextMetadata = order(6174)(() => {
     let id;
     if (order != null) {
       id = order.id;
@@ -865,7 +865,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((checkoutInitPa
     const obj4 = { loadId: id, startTime: Date.now() };
     return obj4;
   });
-  redux = order(5991)(() => {
+  redux = order(6174)(() => {
     const obj = { load_id: contextMetadata.loadId, payment_gateway };
     const merged = Object.assign(View);
     return obj;
@@ -874,7 +874,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((checkoutInitPa
     const obj = { order, checkoutInitParameters: require, contextMetadata, analyticsFields, paymentGateway, orderRequired: _asyncToGenerator, onOrderRetryCancellation: _slicedToArray, initialSubscriptionFacet: react };
     return metroImportDefault(obj);
   }), 1)[0];
-  const tmp2 = order(5597)(() => {
+  const tmp2 = order(5392)(() => {
     if (null != View) {
       let obj = PaymentFlowStartedTriggerPoint;
       const result = obj.trackPaymentFlowStartedAnalyticsAndCTP(analyticsFields);

@@ -1,16 +1,16 @@
-// Module ID: 15317
-// Function ID: 15318
+// Module ID: 15579
+// Function ID: 15580
 // Name: ClearWebBrowserDataSetting
-// Dependencies: [5, 7645, 5720, 1126, 4857, 4574, 11142, 1369, 1105, 2]
+// Dependencies: [5, 7966, 5303, 1126, 5051, 4766, 11262, 1381, 1105, 2]
 
-// Module 15317 (ClearWebBrowserDataSetting)
+// Module 15579 (ClearWebBrowserDataSetting)
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl4 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import BrowserManager from "BrowserManager" /* 4857 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import BrowserManager from "BrowserManager" /* 5051 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,7 +35,7 @@ let obj = {
       title: intl.string(require("intl").t.HNqvOh),
       content: intl2.string(require("intl").t.IyXIFu),
       confirmText: intl3.string(require("intl").t.HNqvOh),
-      onConfirm: function() {
+      onConfirm() {
         return closure_0(...arguments);
       }
     };

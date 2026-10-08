@@ -1,33 +1,30 @@
-// Module ID: 8805
-// Function ID: 8806
+// Module ID: 9158
+// Function ID: 9159
 // Name: PlayStationLinkSuccess
-// Dependencies: [19, 17, 21, 4896, 558, 576, 8774, 8790, 1126, 4892, 5601, 6626, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 9120, 9159, 6164, 1126, 5086, 5375, 6803, 2]
 
-// Module 8805 (PlayStationLinkSuccess)
+// Module 9158 (PlayStationLinkSuccess)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6626 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 8774 */;
-import _modDef8790 from "module_8790" /* 8790 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6803 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9120 */;
+import _modDef9159 from "module_9159" /* 9159 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let onClose;
-
-let closure_4;
 let hasOwnProperty;
-let metroImportDefault;
 let metroRequire;
-({ Image: closure_4, View: hasOwnProperty } = react_native);
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let closure_8 = createStyles.createStyles({ image: { width: 124, height: 160, marginBottom: 24 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+const View = react_native.View;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let closure_7 = createStyles.createStyles({ image: { width: 124, height: 160, marginBottom: 24 } });
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStationLinkSuccess(onClose) {
   let container;
   let content;
   let first;
@@ -43,11 +40,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   const obj = react2;
   const cResult = obj.c(27);
   onClose = onClose.onClose;
-  const tmp4 = closure_8();
+  const tmp4 = closure_7();
   const obj2 = TwoWayLinkStyles;
   const twoWayLinkStyles = obj2.useTwoWayLinkStyles();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { uri: _modDef8790 };
+    const obj3 = { uri: _modDef9159 };
     cResult[0] = obj3;
     first = obj3;
   } else {
@@ -56,7 +53,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   ({ container, content } = twoWayLinkStyles);
   if (cResult[1] !== tmp4.image) {
     const obj4 = { source: first, style: tmp4.image };
-    const tmp11 = metroRequire(React3, obj4);
+    const tmp11 = hasOwnProperty(FastImageDefault, obj4);
     cResult[1] = tmp4.image;
     cResult[2] = tmp11;
     tmp8 = tmp11;
@@ -74,7 +71,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   }
   if (cResult[4] !== twoWayLinkStyles.title) {
     const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: title, children: tmp12 };
-    const tmp16 = metroRequire(Text_Text.Text, obj5);
+    const tmp16 = hasOwnProperty(Text_Text.Text, obj5);
     cResult[4] = twoWayLinkStyles.title;
     cResult[5] = tmp16;
     tmp14 = tmp16;
@@ -92,7 +89,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   }
   if (cResult[7] !== twoWayLinkStyles.body) {
     const obj6 = { variant: "text-md/normal", color: "text-default", style: body, children: tmp17 };
-    const tmp21 = metroRequire(Text_Text.Text, obj6);
+    const tmp21 = hasOwnProperty(Text_Text.Text, obj6);
     cResult[7] = twoWayLinkStyles.body;
     cResult[8] = tmp21;
     tmp19 = tmp21;
@@ -120,7 +117,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
         }
         if (cResult[15] !== onClose) {
           const obj7 = { size: "md", text: tmp24, onPress: onClose };
-          const tmp28 = metroRequire(components_Button_Button.Button, obj7);
+          const tmp28 = hasOwnProperty(components_Button_Button.Button, obj7);
           cResult[15] = onClose;
           cResult[16] = tmp28;
           tmp26 = tmp28;
@@ -148,7 +145,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
             }
             const obj8 = { style: container, children: items };
             items = [tmp22, tmp33];
-            const tmp39 = metroImportDefault(hasOwnProperty, obj8);
+            const tmp39 = metroRequire(View, obj8);
             cResult[23] = twoWayLinkStyles.container;
             cResult[24] = tmp22;
             cResult[25] = tmp33;
@@ -156,14 +153,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
             tmp36 = tmp39;
           }
           const obj9 = { bottom: true, style: footerContainer, children: tmp29 };
-          const tmp35 = metroRequire(common_SafeAreaView.SafeAreaPaddingView, obj9);
+          const tmp35 = hasOwnProperty(common_SafeAreaView.SafeAreaPaddingView, obj9);
           cResult[20] = twoWayLinkStyles.footerContainer;
           cResult[21] = tmp29;
           cResult[22] = tmp35;
           tmp33 = tmp35;
         }
         const obj10 = { style: footerButton, children: tmp26 };
-        const tmp32 = metroRequire(hasOwnProperty, obj10);
+        const tmp32 = hasOwnProperty(View, obj10);
         cResult[17] = twoWayLinkStyles.footerButton;
         cResult[18] = tmp26;
         cResult[19] = tmp32;
@@ -173,14 +170,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   }
   const obj11 = { style: content, children: items1 };
   items1 = [tmp8, tmp14, tmp19];
-  const tmp23 = metroImportDefault(hasOwnProperty, obj11);
+  const tmp23 = metroRequire(View, obj11);
   cResult[9] = twoWayLinkStyles.content;
   cResult[10] = tmp19;
   cResult[11] = tmp8;
   cResult[12] = tmp14;
   cResult[13] = tmp23;
   tmp22 = tmp23;
-}) : ((onClose) => {
+}) : (function PlayStationLinkSuccess(onClose) {
   let Button;
   let intl;
   let intl2;
@@ -190,38 +187,36 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   let obj8;
   let obj9;
   onClose = onClose.onClose;
-  const tmp = closure_8();
+  const tmp = closure_7();
   let obj = TwoWayLinkStyles;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
-  const obj3 = { style: twoWayLinkStyles.content, children: items };
-  items = [, , ];
   const obj2 = { style: twoWayLinkStyles.container, children: items1 };
-  const obj4 = {
-    source: react.useMemo(() => {
-      const obj = { uri: _modDef8790 };
-      return obj;
-    }, []),
-    style: tmp.image
-  };
-  items[0] = metroRequire(React3, obj4);
+  const obj3 = { style: twoWayLinkStyles.content, children: items };
+  const memo = react.useMemo(() => {
+    const obj = { uri: _modDef9159 };
+    return obj;
+  }, []);
+  items = [, , ];
+  const obj4 = { source: memo, style: tmp.image };
+  items[0] = hasOwnProperty(FastImageDefault, obj4);
   const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: intl.string(intl4.t.e6SOl0) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
-  items[1] = metroRequire(Text, obj5);
+  items[1] = hasOwnProperty(Text, obj5);
   const obj6 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: intl2.string(intl4.t.QjAZAQ) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
-  items[2] = metroRequire(Text2, obj6);
-  items1 = [metroImportDefault(hasOwnProperty, obj3), ];
-  const obj7 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: metroRequire(hasOwnProperty, obj8) };
-  obj8 = { style: twoWayLinkStyles.footerButton, children: metroRequire(Button, obj9) };
+  items[2] = hasOwnProperty(Text2, obj6);
+  items1 = [metroRequire(View, obj3), ];
+  const obj7 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: hasOwnProperty(View, obj8) };
+  obj8 = { style: twoWayLinkStyles.footerButton, children: hasOwnProperty(Button, obj9) };
   const SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
   obj9 = { size: "md", text: intl3.string(intl4.t.i4jeWR), onPress: onClose };
   Button = components_Button_Button.Button;
   intl3 = intl4.intl;
-  items1[1] = metroRequire(SafeAreaPaddingView, obj7);
-  return metroImportDefault(hasOwnProperty, obj2);
+  items1[1] = hasOwnProperty(SafeAreaPaddingView, obj7);
+  return metroRequire(View, obj2);
 });
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkSuccess.tsx");
 
-export const PlayStationLinkSuccess = tmp4;
+export const PlayStationLinkSuccess = tmp3;

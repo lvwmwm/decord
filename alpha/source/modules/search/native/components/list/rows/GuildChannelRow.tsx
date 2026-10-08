@@ -1,21 +1,21 @@
-// Module ID: 16849
-// Function ID: 16850
+// Module ID: 17128
+// Function ID: 17129
 // Name: GuildChannelRow
-// Dependencies: [109, 19, 17, 7524, 21, 4896, 587, 558, 576, 5049, 16850, 5819, 16852, 16828, 2]
+// Dependencies: [109, 19, 17, 9247, 21, 5090, 587, 558, 576, 5417, 17129, 8134, 17131, 17107, 2]
 
-// Module 16849 (GuildChannelRow)
+// Module 17128 (GuildChannelRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useChannelNameDefault from "useChannelName" /* 5049 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5819 */;
-import SearchConstants from "SearchConstants" /* 7524 */;
-import SearchListRow2 from "SearchListRow" /* 16828 */;
-import renderChannelItem from "renderChannelItem" /* 16852 */;
+import useChannelNameDefault from "useChannelName" /* 5417 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8134 */;
+import SearchConstants from "SearchConstants" /* 9247 */;
+import SearchListRow2 from "SearchListRow" /* 17107 */;
+import renderChannelItem from "renderChannelItem" /* 17131 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let hasOwnProperty;
 let metroRequire;
 let size;
 let tmp;
-const ChannelContent = tmp(16850);
+const ChannelContent = tmp(17129);
 let closure_3 = ["channel", "subtitle", "trailing", "extras", "onPress", "voiceStates"];
 ({ Image: hasOwnProperty, View: metroRequire } = react_native);
 const layout = SearchConstants.CHANNEL_LIST_SEARCH_LAYOUT;
@@ -32,7 +32,7 @@ let obj = { container: { paddingVertical: 10 }, content: { flexDirection: "row",
 size = { width: 20, height: 20, marginRight: 8, tintColor: nativeDefault.colors.TEXT_MUTED };
 let closure_9 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildChannelLabel(channel) {
   const obj = react2;
   const cResult = obj.c(6);
   channel = channel.channel;
@@ -63,7 +63,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[1] = tmp5;
   cResult[2] = renderChannelContentResult;
   tmp7 = renderChannelContentResult;
-}) : ((channel) => {
+}) : (function GuildChannelLabel(channel) {
   channel = channel.channel;
   const tmp2 = useChannelNameDefault(channel);
   const obj2 = ChannelContent;
@@ -71,7 +71,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   return <metroRequire style={closure_9().content}>{obj2.renderChannelContent(obj3)}</metroRequire>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildChannelRow(arg0) {
   let channel;
   let extras;
   let icon;
@@ -163,7 +163,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
           }
         }
       }
-      const SearchListRow = tmp(16828).SearchListRow;
+      const SearchListRow = tmp(17107).SearchListRow;
       const merged = Object.assign(tmp15);
       const merged1 = Object.assign(tmp7);
       ({ container: obj7.containerStyle, iconContainer: obj7.iconContainerStyle } = tmp14);
@@ -196,7 +196,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[9] = tmp10;
   cResult[10] = channelAccessibilityProps;
   tmp15 = channelAccessibilityProps;
-}) : ((channel) => {
+}) : (function GuildChannelRow(channel) {
   let extras;
   let onPress;
   let subtitle;

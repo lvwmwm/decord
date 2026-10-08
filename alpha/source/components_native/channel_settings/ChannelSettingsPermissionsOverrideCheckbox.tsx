@@ -1,15 +1,15 @@
-// Module ID: 17040
-// Function ID: 17041
+// Module ID: 17321
+// Function ID: 17322
 // Name: ChannelSettingsPermissionsOverrideCheckbox
-// Dependencies: [19, 17, 21, 587, 4896, 4520, 1126, 7599, 8484, 17041, 558, 576, 4600, 2]
+// Dependencies: [19, 17, 21, 587, 5090, 4712, 1126, 9306, 8820, 17322, 558, 576, 4792, 2]
 
-// Module 17040 (ChannelSettingsPermissionsOverrideCheckbox)
+// Module 17321 (ChannelSettingsPermissionsOverrideCheckbox)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import PermissionUtils from "PermissionUtils" /* 4520 */;
+import PermissionUtils from "PermissionUtils" /* 4712 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,15 +22,15 @@ let obj3;
 let obj4;
 function getIcon(arg0, arg1, icon) {
   if (PermissionUtils.DENY === arg0) {
-    const DenyIcon = tmp(7599).DenyIcon;
+    const DenyIcon = tmp(9306).DenyIcon;
     const colors3 = nativeDefault.colors;
     return <DenyIcon size="sm" style={arg2.icon} color={arg1 ? colors3.WHITE : colors3.ICON_FEEDBACK_CRITICAL} />;
   } else if (PermissionUtils.ALLOW === arg0) {
-    const CheckmarkLargeBoldIcon = tmp(8484).CheckmarkLargeBoldIcon;
+    const CheckmarkLargeBoldIcon = tmp(8820).CheckmarkLargeBoldIcon;
     const colors2 = nativeDefault.colors;
     return <CheckmarkLargeBoldIcon size="sm" style={arg2.icon} color={arg1 ? colors2.WHITE : colors2.ICON_FEEDBACK_POSITIVE} />;
   } else if (PermissionUtils.PASSTHROUGH === arg0) {
-    const SlashIcon = tmp(17041).SlashIcon;
+    const SlashIcon = tmp(17322).SlashIcon;
     const colors = nativeDefault.colors;
     return <SlashIcon size="sm" style={arg2.icon} color={arg1 ? colors.WHITE : colors.INTERACTIVE_TEXT_DEFAULT} />;
   } else {
@@ -55,7 +55,7 @@ obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL };
 let closure_6 = createStyles(obj);
 let items = [PermissionUtils.DENY, PermissionUtils.PASSTHROUGH, PermissionUtils.ALLOW];
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function OverrideOption(selected) {
   let accessibilityRole;
   let accessibilityState;
   let permissionTitle;
@@ -132,7 +132,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
                 }
               }
             }
-            class I {
+            class O {
               constructor(arg0) {
                 tmp = selected;
                 if (!tmp) {
@@ -177,7 +177,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
             tmp14 = tmp18;
           }
         }
-        class I {
+        class O {
           constructor(arg0) {
             tmp = selected;
             if (!tmp) {
@@ -212,7 +212,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
         tmp11 = tmp13;
       }
     }
-    class I {
+    class O {
       constructor(arg0) {
         tmp = selected;
         if (!tmp) {
@@ -243,8 +243,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
     cResult[7] = selected;
     cResult[8] = styles;
     cResult[9] = type;
-    cResult[10] = I;
-    tmp10 = I;
+    cResult[10] = O;
+    tmp10 = O;
   }
   items = [permissionTitle, tmp6];
   const found = items.filter(Boolean);
@@ -252,7 +252,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
   cResult[5] = tmp6;
   cResult[6] = found;
   obj4 = found;
-}) : ((type) => {
+}) : (function OverrideOption(type) {
   let accessibilityState;
   let found;
   let onPress;
@@ -310,7 +310,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
   return tmp4(tmp5, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((permissionTitle) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSettingsPermissionsOverrideCheckbox(permissionTitle) {
   let disabled;
   let onValueChange;
   const obj = permissionTitle(onValueChange[11]);
@@ -384,7 +384,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((p
   cResult[1] = tmp2 && tmp3.disabled;
   cResult[2] = items;
   tmp5 = items;
-}) : ((permissionTitle) => {
+}) : (function ChannelSettingsPermissionsOverrideCheckbox(permissionTitle) {
   let disabled;
   let str;
   permissionTitle = permissionTitle.permissionTitle;

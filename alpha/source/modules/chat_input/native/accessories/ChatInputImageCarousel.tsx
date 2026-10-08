@@ -1,24 +1,24 @@
-// Module ID: 11877
-// Function ID: 11878
+// Module ID: 11949
+// Function ID: 11950
 // Name: ChatInputImageCarousel
-// Dependencies: [19, 7419, 7044, 7280, 9100, 21, 558, 576, 504, 10373, 2]
+// Dependencies: [19, 7894, 7232, 7880, 9318, 21, 558, 576, 504, 9970, 2]
 
-// Module 11877 (ChatInputImageCarousel)
+// Module 11949 (ChatInputImageCarousel)
 import Fragment from "Fragment" /* 21 */;
-import DraftStore from "DraftStore" /* 7044 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9100 */;
+import DraftStore from "DraftStore" /* 7232 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9318 */;
 import react from "react" /* 19 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 7419 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7280 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 7894 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7880 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let canUpload, dependencyMap;
+let dependencyMap;
 
 const DraftType = DraftStore.DraftType;
 let closure_6 = useChatBottomManagerUIStore.useChatShowingAutoComplete;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((canUpload) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputImageCarousel(canUpload) {
   let closure_2;
   let first;
   let tmp = canUpload;
@@ -55,7 +55,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       }
       let tmp12 = null;
       if (null != stateFromStores) {
-        tmp12 = jsx(channelId(10373), { attachments: stateFromStores, channelId });
+        tmp12 = jsx(channelId(9970), { attachments: stateFromStores, channelId });
       }
       cResult[6] = stateFromStores;
       cResult[7] = channelId;
@@ -86,7 +86,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   cResult[5] = items1;
   tmp9 = items1;
   tmp8 = fn;
-}) : ((canUpload) => {
+}) : (function ChatInputImageCarousel(canUpload) {
   let closure_2;
   canUpload = canUpload.canUpload;
   const channelId = canUpload.channelId;
@@ -113,7 +113,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   let tmp4 = null;
   if (null != stateFromStores) {
     let tmp5 = jsx;
-    tmp4 = jsx(channelId(10373), { attachments: stateFromStores, channelId });
+    tmp4 = jsx(channelId(9970), { attachments: stateFromStores, channelId });
   }
   return tmp4;
 }));

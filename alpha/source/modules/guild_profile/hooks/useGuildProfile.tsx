@@ -1,19 +1,19 @@
-// Module ID: 9263
-// Function ID: 9264
+// Module ID: 8593
+// Function ID: 8594
 // Name: useGuildProfile
-// Dependencies: [5, 19, 9262, 558, 576, 504, 9264, 2]
+// Dependencies: [5, 19, 8592, 558, 576, 504, 8594, 2]
 
-// Module 9263 (useGuildProfile)
+// Module 8593 (useGuildProfile)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildProfileStore from "GuildProfileStore" /* 9262 */;
+import GuildProfileStore from "GuildProfileStore" /* 8592 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c1, c2, c3, c4, closure_0;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProfile(arg0) {
   let first;
   let tmp10;
   let tmp12;
@@ -31,7 +31,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function n() {
+    const fn = function f() {
       return GuildProfileStore.getProfile(closure_0);
     };
     cResult[1] = arg0;
@@ -114,12 +114,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     });
-    const fn3 = function() {
+    function t4() {
       return closure_0(...arguments);
-    };
+    }
     cResult[6] = arg0;
-    cResult[7] = fn3;
-    tmp12 = fn3;
+    cResult[7] = t4;
+    tmp12 = t4;
   } else {
     tmp12 = cResult[7];
   }
@@ -138,7 +138,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[10] = stateFromStores;
   cResult[11] = obj2;
   tmp14 = obj2;
-}) : ((arg0) => {
+}) : (function useGuildProfile(arg0) {
   let items2;
   let stateFromStores1;
   _require = arg0;

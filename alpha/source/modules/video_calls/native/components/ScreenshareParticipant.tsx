@@ -1,21 +1,20 @@
-// Module ID: 9721
-// Function ID: 9722
+// Module ID: 10926
+// Function ID: 10927
 // Name: ScreenshareParticipant
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 9126, 9127, 1126, 4892, 5601, 9644, 6147, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 10698, 10699, 1126, 5086, 5375, 10839, 6326, 2]
 
-// Module 9721 (ScreenshareParticipant)
+// Module 10926 (ScreenshareParticipant)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 9126 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9127 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 10698 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10699 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let participant;
 
 let closure_4;
 let hasOwnProperty;
@@ -24,17 +23,16 @@ let metroRequire;
 let obj2;
 let tmp;
 const intl4 = tmp(1126);
-const Text_Text = tmp(4892);
-const components_Button_Button = tmp(5601);
-const LegacyBaseButton = tmp(6147);
-const useScreenshareUtils = tmp(9644);
+const Text_Text = tmp(5086);
+const LegacyBaseButton = tmp(6326);
+const useScreenshareUtils = tmp(10839);
 ({ View: closure_4, Image: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let obj = { container: obj2, image: { marginBottom: 12 }, title: { textAlign: "center", marginBottom: 8 }, description: { lineHeight: 18, textAlign: "center", marginBottom: 16 } };
 obj2 = { alignItems: "center", justifyContent: "center", flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 let closure_8 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => {
-  let intl3;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScreenshareParticipant(participant) {
+  let intl;
   let items;
   const tmp = require;
   const obj = react2;
@@ -54,138 +52,223 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => {
         tmp5 = cResult[5];
       }
       if (cResult[6] === tmp5) {
-        let tmp6;
-        if (cResult[7] === tmp4) {
-          tmp6 = cResult[8];
-        }
-        const tmp8 = useParticipantTileTapGestureDefault(tmp6);
-        const tmp10 = closure_8();
-        const tmp7 = importDefault;
-        if (cResult[9] === containerStyle) {
-          let tmp11;
-          let tmp12;
-          let tmp17;
-          let tmp19;
-          let tmp22;
-          let tmp24;
-          let tmp27;
-          if (cResult[10] === tmp10.container) {
-            tmp11 = cResult[11];
+        const tmp8 = importDefault;
+        class S {
+          constructor() {
+            let tmpResult;
+            if (onDoubleTap != null) {
+              tmpResult = tmp(participant);
+            }
+            return tmpResult;
           }
-          if (cResult[12] !== tmp10.image) {
-            const obj2 = { source: tmp7(9127), style: tmp10.image };
-            const tmp15 = metroRequire(hasOwnProperty, obj2);
-            cResult[12] = tmp10.image;
-            cResult[13] = tmp15;
-            tmp12 = tmp15;
+        }
+        const tmp11 = closure_8();
+        if (cResult[9] === containerStyle) {
+          let tmp12;
+          let tmp13;
+          let tmp18;
+          let tmp20;
+          let tmp23;
+          let tmp25;
+          let tmp28;
+          if (cResult[10] === tmp11.container) {
+            tmp12 = cResult[11];
+          }
+          if (cResult[12] !== tmp11.image) {
+            class S {
+              constructor() {
+                let tmpResult;
+                if (onDoubleTap != null) {
+                  tmpResult = tmp(participant);
+                }
+                return tmpResult;
+              }
+            }
+            tmp16[0] = tmp8(10699);
+            tmp16[1] = tmp11.image;
+            const tmp17 = metroRequire(hasOwnProperty, tmp16);
+            cResult[12] = tmp11.image;
+            cResult[13] = tmp17;
+            tmp13 = tmp17;
           } else {
-            tmp12 = cResult[13];
+            tmp13 = cResult[13];
+          }
+          class S {
+            constructor() {
+              let tmpResult;
+              if (onDoubleTap != null) {
+                tmpResult = tmp(participant);
+              }
+              return tmpResult;
+            }
           }
           const _Symbol = Symbol;
-          const title = tmp10.title;
+          const title = tmp11.title;
           if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl = intl4.intl;
-            const stringResult = intl.string(intl4.t.gMOwov);
-            cResult[14] = stringResult;
-            tmp17 = stringResult;
+            const string = intl4.intl.string;
+            class S {
+              constructor() {
+                let tmpResult;
+                if (onDoubleTap != null) {
+                  tmpResult = tmp(participant);
+                }
+                return tmpResult;
+              }
+            }
+            cResult[14] = tmp19;
+            tmp18 = tmp19;
           } else {
-            tmp17 = cResult[14];
+            tmp18 = cResult[14];
           }
-          if (cResult[15] !== tmp10.title) {
-            const obj3 = { style: title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp17 };
-            const tmp21 = metroRequire(Text_Text.Text, obj3);
-            cResult[15] = tmp10.title;
-            cResult[16] = tmp21;
-            tmp19 = tmp21;
+          if (cResult[15] !== tmp11.title) {
+            const obj2 = { style: null, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp18 };
+            class S {
+              constructor() {
+                let tmpResult;
+                if (onDoubleTap != null) {
+                  tmpResult = tmp(participant);
+                }
+                return tmpResult;
+              }
+            }
+            const tmp22 = metroRequire(Text_Text.Text, obj2);
+            cResult[15] = tmp11.title;
+            cResult[16] = tmp22;
+            tmp20 = tmp22;
           } else {
-            tmp19 = cResult[16];
+            tmp20 = cResult[16];
           }
           const _Symbol2 = Symbol;
-          const description = tmp10.description;
+          const description = tmp11.description;
           if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl2 = intl4.intl;
-            const stringResult1 = intl2.string(intl4.t.dKeLGt);
-            cResult[17] = stringResult1;
-            tmp22 = stringResult1;
+            const string2 = intl4.intl.string;
+            class S {
+              constructor() {
+                let tmpResult;
+                if (onDoubleTap != null) {
+                  tmpResult = tmp(participant);
+                }
+                return tmpResult;
+              }
+            }
+            cResult[17] = tmp24;
+            tmp23 = tmp24;
           } else {
-            tmp22 = cResult[17];
+            tmp23 = cResult[17];
           }
-          if (cResult[18] !== tmp10.description) {
-            const obj4 = { style: description, variant: "text-sm/medium", color: "interactive-text-default", children: tmp22 };
-            const tmp26 = metroRequire(Text_Text.Text, obj4);
-            cResult[18] = tmp10.description;
-            cResult[19] = tmp26;
-            tmp24 = tmp26;
+          if (cResult[18] !== tmp11.description) {
+            const obj3 = { style: null, variant: "text-sm/medium", color: "interactive-text-default", children: tmp23 };
+            class S {
+              constructor() {
+                let tmpResult;
+                if (onDoubleTap != null) {
+                  tmpResult = tmp(participant);
+                }
+                return tmpResult;
+              }
+            }
+            const tmp27 = metroRequire(Text_Text.Text, obj3);
+            cResult[18] = tmp11.description;
+            cResult[19] = tmp27;
+            tmp25 = tmp27;
           } else {
-            tmp24 = cResult[19];
+            tmp25 = cResult[19];
           }
           const _Symbol3 = Symbol;
           if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-            const obj5 = { variant: "primary-overlay", text: intl3.string(intl4.t.CpkXwZ), onPress: useScreenshareUtils.stopScreenshare };
-            const Button = components_Button_Button.Button;
-            intl3 = intl4.intl;
-            const tmp29 = metroRequire(Button, obj5);
-            cResult[20] = tmp29;
-            tmp27 = tmp29;
+            const obj4 = { variant: "primary-overlay", text: intl.string(intl4.t.CpkXwZ), onPress: useScreenshareUtils.stopScreenshare };
+            class S {
+              constructor() {
+                let tmpResult;
+                if (onDoubleTap != null) {
+                  tmpResult = tmp(participant);
+                }
+                return tmpResult;
+              }
+            }
+            intl = intl4.intl;
+            const tmp31 = metroRequire(tmp30, obj4);
+            cResult[20] = tmp31;
+            tmp28 = tmp31;
           } else {
-            tmp27 = cResult[20];
+            tmp28 = cResult[20];
           }
-          if (cResult[21] === tmp24) {
-            if (cResult[22] === tmp11) {
-              if (cResult[23] === tmp12) {
-                let tmp30;
-                if (cResult[24] === tmp19) {
-                  tmp30 = cResult[25];
+          if (cResult[21] === tmp25) {
+            if (cResult[22] === tmp12) {
+              if (cResult[23] === tmp13) {
+                let tmp32;
+                if (cResult[24] === tmp20) {
+                  tmp32 = cResult[25];
                 }
-                if (cResult[26] === tmp8) {
-                  let tmp34;
-                  if (cResult[27] === tmp30) {
-                    tmp34 = cResult[28];
+                if (cResult[26] === tmp9) {
+                  let tmp36;
+                  if (cResult[27] === tmp32) {
+                    tmp36 = cResult[28];
                   }
-                  return tmp34;
+                  return tmp36;
                 }
-                const obj6 = { gesture: tmp8, children: tmp30 };
-                const tmp36 = metroRequire(LegacyBaseButton.GestureDetector, obj6);
-                cResult[26] = tmp8;
-                cResult[27] = tmp30;
-                cResult[28] = tmp36;
-                tmp34 = tmp36;
+                class S {
+                  constructor() {
+                    let tmpResult;
+                    if (onDoubleTap != null) {
+                      tmpResult = tmp(participant);
+                    }
+                    return tmpResult;
+                  }
+                }
+                const obj5 = { gesture: tmp9, children: tmp32 };
+                const tmp37 = metroRequire(LegacyBaseButton.GestureDetector, obj5);
+                cResult[26] = tmp9;
+                cResult[27] = tmp32;
+                cResult[28] = tmp37;
+                tmp36 = tmp37;
               }
             }
           }
-          const obj7 = { style: tmp11, children: items };
-          items = [tmp12, tmp19, tmp24, tmp27];
-          const tmp33 = metroImportDefault(React3, obj7);
-          cResult[21] = tmp24;
-          cResult[22] = tmp11;
-          cResult[23] = tmp12;
-          cResult[24] = tmp19;
-          cResult[25] = tmp33;
-          tmp30 = tmp33;
+          const obj6 = { style: tmp12, children: items };
+          items = [tmp13, tmp20, tmp25, tmp28];
+          const tmp35 = metroImportDefault(React3, obj6);
+          cResult[21] = tmp25;
+          cResult[22] = tmp12;
+          cResult[23] = tmp13;
+          cResult[24] = tmp20;
+          cResult[25] = tmp35;
+          tmp32 = tmp35;
         }
-        const items1 = [tmp10.container, containerStyle];
+        const items1 = [tmp11.container, containerStyle];
         cResult[9] = containerStyle;
-        cResult[10] = tmp10.container;
+        cResult[10] = tmp11.container;
         cResult[11] = items1;
-        tmp11 = items1;
+        tmp12 = items1;
       }
-      const obj8 = { onSingleTapStart: tmp4, onDoubleTapStart: tmp5 };
+      class S {
+        constructor() {
+          let tmpResult;
+          if (onDoubleTap != null) {
+            tmpResult = tmp(participant);
+          }
+          return tmpResult;
+        }
+      }
+      tmp7[0] = tmp4;
+      tmp7[1] = tmp5;
       cResult[6] = tmp5;
       cResult[7] = tmp4;
-      cResult[8] = obj8;
-      tmp6 = obj8;
+      cResult[8] = tmp7;
     }
-    const fn2 = function b() {
-      let tmpResult;
-      if (onDoubleTap != null) {
-        tmpResult = tmp(participant);
+    class S {
+      constructor() {
+        let tmpResult;
+        if (onDoubleTap != null) {
+          tmpResult = tmp(participant);
+        }
+        return tmpResult;
       }
-      return tmpResult;
-    };
+    }
     cResult[3] = onDoubleTap;
     cResult[4] = participant;
-    cResult[5] = fn2;
-    tmp5 = fn2;
+    cResult[5] = S;
+    tmp5 = S;
   }
   const fn = function n() {
     let tmpResult;
@@ -198,7 +281,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => {
   cResult[1] = participant;
   cResult[2] = fn;
   tmp4 = fn;
-}) : ((participant) => {
+}) : (function ScreenshareParticipant(participant) {
   let intl;
   let intl2;
   let intl3;

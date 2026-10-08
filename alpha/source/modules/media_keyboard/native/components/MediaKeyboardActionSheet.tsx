@@ -1,18 +1,18 @@
-// Module ID: 10379
-// Function ID: 10380
+// Module ID: 9976
+// Function ID: 9977
 // Name: MediaKeyboardActionSheet
-// Dependencies: [19, 1614, 1085, 21, 558, 576, 4618, 1126, 10380, 10382, 10384, 4861, 4862, 1252, 5597, 5878, 10386, 1615, 10387, 6652, 2]
+// Dependencies: [19, 1626, 1085, 21, 558, 576, 4810, 1126, 9977, 9979, 9981, 5055, 5056, 1264, 5392, 8190, 9983, 1627, 9984, 6829, 2]
 
-// Module 10379 (MediaKeyboardActionSheet)
+// Module 9976 (MediaKeyboardActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1614 */;
-import ImageIcon from "ImageIcon" /* 5878 */;
-import PollsIcon from "PollsIcon" /* 10380 */;
-import AttachmentIcon from "AttachmentIcon" /* 10382 */;
-import MediaKeyboardBottomSheetHeaderSimpleDefault from "MediaKeyboardBottomSheetHeaderSimple" /* 10384 */;
-import MediaKeyboardBottomSheetActionsDefault from "MediaKeyboardBottomSheetActions" /* 10386 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
+import ImageIcon from "ImageIcon" /* 8190 */;
+import PollsIcon from "PollsIcon" /* 9977 */;
+import AttachmentIcon from "AttachmentIcon" /* 9979 */;
+import MediaKeyboardBottomSheetHeaderSimpleDefault from "MediaKeyboardBottomSheetHeaderSimple" /* 9981 */;
+import MediaKeyboardBottomSheetActionsDefault from "MediaKeyboardBottomSheetActions" /* 9983 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -22,7 +22,7 @@ let BottomSheet;
 const constants = MediaKeyboardConstants.MediaPickerActionSheetEngagedActions;
 const AnalyticEvents = Constants.AnalyticEvents;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onBack) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaKeyboardActionSheet(onBack) {
   let allowCamera;
   let channel;
   let constants2;
@@ -272,7 +272,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onBack) => {
   cResult[5] = sharedValue;
   cResult[6] = onBack;
   cResult[7] = fn;
-}) : ((onAttachPress) => {
+}) : (function MediaKeyboardActionSheet(onAttachPress) {
   let allowCamera;
   let channel;
   let disableWhenReachedLimit;

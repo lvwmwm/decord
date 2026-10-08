@@ -1,17 +1,17 @@
-// Module ID: 12440
-// Function ID: 12441
+// Module ID: 12536
+// Function ID: 12537
 // Name: TabsGradient
-// Dependencies: [19, 1085, 21, 4618, 5612, 4896, 558, 5604, 576, 2]
+// Dependencies: [19, 1085, 21, 4810, 5387, 5090, 558, 5374, 576, 2]
 
-// Module 12440 (TabsGradient)
+// Module 12536 (TabsGradient)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4618 */;
-import spring from "spring" /* 5604 */;
-import LinearGradientDefault from "LinearGradient" /* 5612 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4810 */;
+import spring from "spring" /* 5374 */;
+import LinearGradientDefault from "LinearGradient" /* 5387 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let closure_9 = createStyles.createStyles({ gradient: { width: 50, position: "ab
 const __initData = { code: "function TabsGradientNativeTsx1(){const{withSpring,visible,SPRING_CONFIG}=this.__closure;return{opacity:withSpring(visible.get()?1:0,SPRING_CONFIG)};}" };
 const __initData2 = { code: "function TabsGradientNativeTsx2(){const{withSpring,visible,SPRING_CONFIG}=this.__closure;return{opacity:withSpring(visible.get()?1:0,SPRING_CONFIG)};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGradientAnimatedStyle(visible) {
   _require = visible;
   let obj = require("ReanimatedRexport");
   const fn = function s() {
@@ -48,7 +48,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   fn.__initData = __initData;
   ({ withSpring: require("spring").withSpring, visible, SPRING_CONFIG });
   return obj.useAnimatedStyle(fn);
-}) : ((visible) => {
+}) : (function useGradientAnimatedStyle(visible) {
   _require = visible;
   let obj = require("ReanimatedRexport");
   const fn = function s() {
@@ -74,7 +74,7 @@ const __initData6 = { code: "function TabsGradientNativeTsx6(){const{itemDimensi
 const __initData7 = { code: "function TabsGradientNativeTsx7(){const{scrollOffset,totalItemWidth,pageWidth}=this.__closure;return scrollOffset.get()>0&&totalItemWidth.get()>pageWidth;}" };
 const __initData8 = { code: "function TabsGradientNativeTsx8(){const{scrollOffset,totalItemWidth,pageWidth}=this.__closure;return scrollOffset.get()<totalItemWidth.get()-pageWidth&&totalItemWidth.get()>pageWidth;}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TabsGradient(state) {
   let items1;
   let tmp6;
   const obj = react2;
@@ -205,7 +205,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   cResult[4] = rect.left;
   cResult[5] = items3;
   tmp11 = items3;
-}) : ((state) => {
+}) : (function TabsGradient(state) {
   let items1;
   let items2;
   let items3;

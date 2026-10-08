@@ -1,23 +1,21 @@
-// Module ID: 13604
-// Function ID: 13605
+// Module ID: 13426
+// Function ID: 13427
 // Name: NUFVoiceChannelsTemplate
-// Dependencies: [19, 21, 558, 576, 1126, 13605, 13606, 13594, 1881, 5575, 2]
+// Dependencies: [19, 21, 558, 576, 1126, 13427, 13428, 13416, 1893, 5885, 2]
 
-// Module 13604 (NUFVoiceChannelsTemplate)
+// Module 13426 (NUFVoiceChannelsTemplate)
 import Fragment from "Fragment" /* 21 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1881 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5575 */;
-import NUFChannelsManagerDefault from "NUFChannelsManager" /* 13594 */;
-import NUFTemplateDefault from "NUFTemplate" /* 13605 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13606 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1893 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5885 */;
+import NUFChannelsManagerDefault from "NUFChannelsManager" /* 13416 */;
+import NUFTemplateDefault from "NUFTemplate" /* 13427 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13428 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channel;
-
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NUFVoiceChannelsTemplate(channel) {
   let tmp10;
   let tmp4;
   let tmp5;
@@ -62,7 +60,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     tmp10 = cResult[4];
   }
   return tmp10;
-}) : ((channel) => {
+}) : (function NUFVoiceChannelsTemplate(channel) {
   channel = channel.channel;
   NUFTemplateDefault;
   const intl = channel(1126).intl;

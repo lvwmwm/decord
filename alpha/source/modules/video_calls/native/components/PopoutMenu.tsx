@@ -1,34 +1,34 @@
-// Module ID: 9186
-// Function ID: 9187
+// Module ID: 10754
+// Function ID: 10755
 // Name: PopoutMenu
-// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 1188, 8924, 6640, 1484, 1618, 12, 4618, 4897, 4863, 6147, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 587, 558, 576, 1200, 8555, 6817, 1496, 1630, 12, 4810, 5091, 5057, 6326, 2]
 
-// Module 9186 (PopoutMenu)
+// Module 10754 (PopoutMenu)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Patterns from "Patterns" /* 4863 */;
-import timing from "timing" /* 4897 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6147 */;
-import FormRowDefault from "FormRow" /* 6640 */;
+import Patterns from "Patterns" /* 5057 */;
+import timing from "timing" /* 5091 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6326 */;
+import FormRowDefault from "FormRow" /* 6817 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let dependencyMap, onClose;
+let dependencyMap;
 
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const native = tmp(1188);
-const ReanimatedRexport = tmp(4618);
-const Form = tmp(8924);
+const native = tmp(1200);
+const ReanimatedRexport = tmp(4810);
+const Form = tmp(8555);
 let react = react_mod;
 let View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
@@ -37,7 +37,7 @@ let obj = { container: obj2, popoutMenuRow: { flex: 1 }, popoutMenuRowLabel: { w
 obj2 = { position: "absolute", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.sm };
 let closure_10 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutMenuRow(onClose) {
   let icon;
   let onClick;
   let text;
@@ -109,7 +109,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   cResult[1] = onClose;
   cResult[2] = fn;
   tmp5 = fn;
-}) : ((onClose) => {
+}) : (function PopoutMenuRow(onClose) {
   let icon;
   let obj3;
   let onClick;
@@ -146,7 +146,7 @@ let closure_17 = { code: "function PopoutMenuTsx6(finished){const{runOnJS,handle
 let closure_18 = { code: "function PopoutMenuTsx7(){const{runOnJS,handleLongPress}=this.__closure;runOnJS(handleLongPress)();}" };
 let closure_19 = { code: "function PopoutMenuTsx8(){const{runOnJS,_setClose}=this.__closure;runOnJS(_setClose)(true);}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((onClose, ref) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutMenu(onClose) {
   let c9;
   let closure_2;
   let closure_4;
@@ -161,10 +161,10 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   let size2;
   let style;
   let title;
-  let tmp19;
+  let tmp18;
+  let tmp20;
   let tmp21;
   let tmp22;
-  let tmp23;
   let top;
   let trigger;
   let width;
@@ -173,23 +173,23 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   const cResult = obj.c(32);
   ({ disabled, title, trigger, rows, style, onOpen } = onClose);
   onClose = onClose.onClose;
+  const ref = onClose.ref;
   const tmp4 = closure_10();
-  let tmp5 = onClose;
-  ({ width, height } = onClose(1484)());
+  let tmp5 = onClose(1496)();
+  ({ width, height } = tmp5);
   let obj2 = react;
-  onClose(1484)();
-  const bottom = onClose(1618)().bottom;
-  const tmp8 = first1(react.useState(0), 2);
-  dependencyMap = tmp8[1];
-  const first = tmp8[0];
-  const tmp10 = first1(react.useState(false), 2);
-  first1 = tmp10[0];
-  react = tmp12;
-  const tmp13 = first1(react.useState(false), 2);
-  const first2 = tmp13[0];
-  let closure_6 = tmp13[1];
-  ref = react.useRef(null);
+  const bottom = onClose(1630)().bottom;
+  const tmp7 = first1(react.useState(0), 2);
+  dependencyMap = tmp7[1];
+  const first = tmp7[0];
+  const tmp9 = first1(react.useState(false), 2);
+  first1 = tmp9[0];
+  react = tmp11;
+  const tmp12 = first1(react.useState(false), 2);
+  const first2 = tmp12[0];
+  let closure_6 = tmp12[1];
   const ref1 = react.useRef(null);
+  const ref2 = react.useRef(null);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const size1 = { top: 0, left: 0, width: 0, height: 0 };
     cResult[0] = size1;
@@ -203,16 +203,17 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
     const size3 = { width: 0, height: 0 };
     let num = 1;
     cResult[1] = size3;
-    tmp19 = size3;
+    tmp18 = size3;
   } else {
-    tmp19 = cResult[1];
+    tmp18 = cResult[1];
   }
-  [size2, closure_10] = first1(obj2.useState(tmp19), 2);
-  first1(obj2.useState(tmp19), 2);
+  [size2, closure_10] = first1(obj2.useState(tmp18), 2);
+  first1(obj2.useState(tmp18), 2);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    function ne() {
-      if (ref != null) {
-        let current = ref.current;
+    function calculateDimensions() {
+      let ref;
+      if (ref1 != null) {
+        let current = ref1.current;
         if (current != null) {
           current.measureInWindow((left, arg1, width, height) => {
             size = { top: Math.max(arg1, 0), left, width, height };
@@ -232,19 +233,19 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
         }
       });
     }
-    cResult[2] = ne;
-    tmp21 = ne;
+    cResult[2] = calculateDimensions;
+    tmp20 = calculateDimensions;
   } else {
-    tmp21 = cResult[2];
+    tmp20 = cResult[2];
   }
-  closure_11 = tmp21;
+  closure_11 = tmp20;
   if (cResult[3] !== first2) {
     function ue() {
       let tmp = first2;
       if (tmp) {
         let current;
-        if (ref != null) {
-          current = ref.current;
+        if (ref1 != null) {
+          current = ref1.current;
         }
         tmp = null != current;
       }
@@ -257,13 +258,13 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
     cResult[3] = first2;
     cResult[4] = ue;
     cResult[5] = items;
-    tmp23 = items;
-    tmp22 = ue;
+    tmp22 = items;
+    tmp21 = ue;
   } else {
-    tmp22 = cResult[4];
-    tmp23 = cResult[5];
+    tmp21 = cResult[4];
+    tmp22 = cResult[5];
   }
-  const effect = obj2.useEffect(tmp22, tmp23);
+  const effect = obj2.useEffect(tmp21, tmp22);
   let sum = -size2.height;
   if (size.top + size.height + size2.height + 8 + bottom < height) {
     sum = size.height + 16;
@@ -273,20 +274,20 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
     num6 = size.width - size2.width;
   }
   if (cResult[6] === num6) {
-    let tmp26;
+    let tmp25;
     if (cResult[7] === sum) {
-      tmp26 = cResult[8];
+      tmp25 = cResult[8];
     }
-    ({ top, left } = tmp26);
+    ({ top, left } = tmp25);
     if (cResult[9] === left) {
-      let tmp27;
-      let tmp29;
+      let tmp26;
       let tmp28;
+      let tmp27;
       let debounceResult;
-      let tmp32;
-      let tmp39;
+      let tmp30;
+      let tmp37;
       if (cResult[10] === top) {
-        tmp27 = cResult[11];
+        tmp26 = cResult[11];
       }
       const _Symbol = Symbol;
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
@@ -299,11 +300,11 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
             };
           }
         }
-        const items1 = [tmp10[1]];
+        const items1 = [tmp9[1]];
         cResult[12] = Ae;
         cResult[13] = items1;
-        tmp29 = items1;
-        tmp28 = Ae;
+        tmp28 = items1;
+        tmp27 = Ae;
       } else {
         class Ae {
           constructor() {
@@ -314,9 +315,9 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
             };
           }
         }
-        tmp29 = cResult[13];
+        tmp28 = cResult[13];
       }
-      const imperativeHandle = obj2.useImperativeHandle(ref, tmp28, tmp29);
+      const imperativeHandle = obj2.useImperativeHandle(ref, tmp27, tmp28);
       const _Symbol2 = Symbol;
       if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
         class Ae {
@@ -332,7 +333,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
           closure_2(arg0);
         }, 16);
         cResult[14] = debounceResult;
-        tmp32 = debounceResult;
+        tmp30 = debounceResult;
       } else {
         class Ae {
           constructor() {
@@ -344,8 +345,8 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
           }
         }
       }
-      debounceResult = tmp32;
-      __initData = tmp34;
+      debounceResult = tmp30;
+      __initData = tmp32;
       function handleClose() {
         const tmp = first1;
         if (tmp) {
@@ -353,7 +354,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
           closure_6(false);
         }
       }
-      const tmpResult = tmp(4618);
+      const tmpResult = tmp(4810);
       class De {
         constructor() {
           let fn;
@@ -392,7 +393,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
           return obj;
         }
       }
-      const obj3 = { withTiming: tmp(4897).withTiming, animateIn: first > 0 && !first1, STANDARD_EASING: tmp(1188).STANDARD_EASING, ANIMATION_DURATION: v250, runOnJS: tmp(4618).runOnJS, handleClose, EXTRA_PADDING: 8 };
+      const obj3 = { withTiming: tmp(5091).withTiming, animateIn: first > 0 && !first1, STANDARD_EASING: tmp(1200).STANDARD_EASING, ANIMATION_DURATION: v250, runOnJS: tmp(4810).runOnJS, handleClose, EXTRA_PADDING: 8 };
       const useAnimatedStyle = tmpResult.useAnimatedStyle;
       De.__closure = obj3;
       De.__workletHash = 4709130936628;
@@ -406,7 +407,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
           }
         }
         cResult[15] = Ie;
-        tmp39 = Ie;
+        tmp37 = Ie;
       } else {
         class Ie {
           constructor() {
@@ -414,7 +415,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
           }
         }
       }
-      Ie = tmp39;
+      Ie = tmp37;
       if (cResult[16] !== onOpen) {
         class Oe {
           constructor() {
@@ -438,8 +439,8 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
           }
         }
       }
-      Oe = tmp40;
-      if (cResult[18] !== tmp40) {
+      Oe = tmp38;
+      if (cResult[18] !== tmp38) {
         class Oe {
           constructor() {
             closure_4(false);
@@ -457,7 +458,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
               return;
             }
           }
-          let obj4 = { runOnJS: tmp(4618).runOnJS, _setClose: tmp10[1] };
+          let obj4 = { runOnJS: tmp(4810).runOnJS, _setClose: tmp9[1] };
           PopoutMenuTsx4.__closure = obj4;
           PopoutMenuTsx4.__workletHash = 15929711498886;
           PopoutMenuTsx4.__initData = Ie;
@@ -471,17 +472,17 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
             }
           }
         }
-        const Gesture = tmp(6147).Gesture;
+        const Gesture = tmp(6326).Gesture;
         const LongPressResult = Gesture.LongPress();
-        function ve() {
+        function be() {
           const obj = ReanimatedRexport;
           obj.runOnJS(Oe)();
         }
-        let obj5 = { runOnJS: tmp(4618).runOnJS, handleLongPress: tmp40 };
-        const onStart = LongPressResult.onBegin(tmp42).onStart;
-        LongPressResult.onBegin(tmp42);
-        ve.__closure = obj5;
-        ve.__workletHash = 1649917173815;
+        let obj5 = { runOnJS: tmp(4810).runOnJS, handleLongPress: tmp38 };
+        const onStart = LongPressResult.onBegin(tmp40).onStart;
+        LongPressResult.onBegin(tmp40);
+        be.__closure = obj5;
+        be.__workletHash = 1649917173815;
         class De {
           constructor() {
             let fn;
@@ -520,9 +521,10 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
             return obj;
           }
         }
-        cResult[18] = tmp40;
-        cResult[19] = onStart(ve);
-        const onStartResult = onStart(ve);
+        be.__initData = handleClose;
+        cResult[18] = tmp38;
+        cResult[19] = onStart(be);
+        const onStartResult = onStart(be);
       } else {
         class PopoutMenuTsx4 {
           constructor() {
@@ -541,7 +543,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
           }
         }
       }
-      let tmp49Result2 = trigger;
+      let tmp46Result = trigger;
       if (!disabled) {
         class PopoutMenuTsx4 {
           constructor() {
@@ -550,88 +552,11 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
             return;
           }
         }
-        const obj6 = { gesture: tmp41, children: closure_6(first2, obj8) };
-        obj8 = { ref, children: trigger };
-        const GestureDetector = tmp(6147).GestureDetector;
+        const obj6 = { gesture: tmp39, children: closure_6(first2, obj8) };
+        obj8 = { ref: ref1, children: trigger };
+        const GestureDetector = tmp(6326).GestureDetector;
         const items2 = [closure_6(GestureDetector, obj6), ];
-        let tmp49Result = null;
-        const tmp50 = ref1;
-        const tmp51 = closure_6;
-        if (first2) {
-          class PopoutMenuTsx4 {
-            constructor() {
-              obj = closure_0(closure_2[14]);
-              tmp = obj.runOnJS(closure_4)(true);
-              return;
-            }
-          }
-          tmp54[0] = ref1;
-          const items3 = [tmp4.container, style, tmp27, animatedStyle];
-          tmp54[1] = items3;
-          tmp54[2] = function onLayout(nativeEvent) {
-            debounceResult(nativeEvent.nativeEvent.layout.height);
-          };
-          let tmp51Result = null;
-          View = tmp5(4618).View;
-          if (null != title) {
-            class PopoutMenuTsx4 {
-              constructor() {
-                obj = closure_0(closure_2[14]);
-                tmp = obj.runOnJS(closure_4)(true);
-                return;
-              }
-            }
-            const obj9 = { text: title };
-            tmp51Result = tmp51(closure_11, obj9);
-          }
-          const items4 = [tmp51Result, , ];
-          class De {
-            constructor() {
-              let fn;
-              let items;
-              let obj2;
-              let obj5;
-              let tmp = require;
-              let num = 0;
-              const withTiming = timing.withTiming;
-              if (__initData) {
-                num = 1;
-              }
-              let obj = { opacity: withTiming(num, obj2, "respect-motion-settings", fn), transform: items };
-              fn = function n(arg0) {
-                const tmp = arg0;
-                if (tmp) {
-                  const obj = onOpen(closure_2[14]);
-                  obj.runOnJS(handleClose)();
-                }
-              };
-              obj2 = { easing: native.STANDARD_EASING, duration };
-              fn.__closure = { runOnJS: ReanimatedRexport.runOnJS, handleClose };
-              fn.__workletHash = 7805688342878;
-              fn.__initData = __initData;
-              ({ runOnJS: ReanimatedRexport.runOnJS, handleClose });
-              let num2 = 0;
-              const withTiming2 = timing.withTiming;
-              timing;
-              const tmp5 = duration;
-              if (__initData) {
-                num2 = -8;
-              }
-              const obj4 = { translateY: withTiming2(num2, obj5) };
-              items = [obj4];
-              obj5 = { easing: native.STANDARD_EASING, duration: tmp5 };
-              return obj;
-            }
-          }
-          items4[1] = null;
-          items4[2] = rows.map((item, index) => {
-            const obj = { onClose: Ie };
-            const merged = Object.assign(item);
-            return metroRequire(closure_11, obj, index);
-          });
-          tmp54[3] = items4;
-          tmp49Result = tmp49(View, tmp54);
-        }
+        const tmp47 = ref2;
         class De {
           constructor() {
             let fn;
@@ -670,34 +595,34 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
             return obj;
           }
         }
-        items2[1] = tmp49Result;
-        tmp57[0] = items2;
-        tmp49Result2 = tmp49(tmp50, tmp57);
+        const obj9 = { children: items2 };
+        items2[1] = null;
+        tmp46Result = tmp46(tmp47, obj9);
       }
       cResult[21] = animatedStyle;
       cResult[22] = disabled;
-      cResult[23] = tmp41;
-      cResult[24] = tmp27;
+      cResult[23] = tmp39;
+      cResult[24] = tmp26;
       cResult[25] = first2;
       cResult[26] = rows;
       cResult[27] = style;
       cResult[28] = tmp4;
       cResult[29] = title;
       cResult[30] = trigger;
-      cResult[31] = tmp49Result2;
+      cResult[31] = tmp46Result;
     }
     const rect = { left, top };
     cResult[9] = left;
     cResult[10] = top;
     cResult[11] = rect;
-    tmp27 = rect;
+    tmp26 = rect;
   }
   const rect1 = { top: sum, left: num6 };
   cResult[6] = num6;
   cResult[7] = sum;
   cResult[8] = rect1;
-  tmp26 = rect1;
-}) : ((onClose, ref) => {
+  tmp25 = rect1;
+}) : (function PopoutMenu(onClose) {
   let closure_16;
   let disabled;
   let items7;
@@ -705,6 +630,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   let left;
   let obj5;
   let onOpen;
+  let ref;
   let rows;
   let style;
   let title;
@@ -713,10 +639,10 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   ({ title, trigger, rows, onOpen } = onClose);
   onClose = onClose.onClose;
   let width;
-  ref = undefined;
-  ({ disabled, style } = onClose);
+  let ref1;
+  ({ disabled, style, ref } = onClose);
   let tmp3 = width;
-  let tmp = ref();
+  let tmp = ref1();
   const tmp2 = onClose;
   size = onClose(width[11])();
   width = size.width;
@@ -732,8 +658,8 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   const tmp10 = height(bottom.useState(false), 2);
   const first2 = tmp10[0];
   const v250 = tmp10[1];
-  ref = bottom.useRef(null);
-  const ref1 = bottom.useRef(null);
+  ref1 = bottom.useRef(null);
+  const ref2 = bottom.useRef(null);
   const tmp14 = height(bottom.useState({ top: 0, left: 0, width: 0, height: 0 }), 2);
   const first3 = tmp14[0];
   let closure_13 = tmp14[1];
@@ -742,17 +668,18 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   closure_15 = tmp16[1];
   let items = [first2];
   const effect = bottom.useEffect(() => {
+    let ref;
     let tmp = first2;
     if (tmp) {
       let current1;
-      if (ref != null) {
-        current1 = ref.current;
+      if (ref1 != null) {
+        current1 = ref1.current;
       }
       tmp = null != current1;
     }
     if (tmp) {
-      if (ref != null) {
-        let current = ref.current;
+      if (ref1 != null) {
+        let current = ref1.current;
         if (current != null) {
           current.measureInWindow((left, arg1, width, height) => {
             size = { top: Math.max(arg1, 0), left, width, height };
@@ -865,13 +792,13 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   let tmp28Result2 = trigger;
   if (!disabled) {
     let obj4 = { gesture: tmp26, children: first1(closure_5, obj5) };
-    obj5 = { ref, children: trigger };
+    obj5 = { ref: ref1, children: trigger };
     const GestureDetector = tmp23(tmp3[17]).GestureDetector;
     const items6 = [first1(GestureDetector, obj4), ];
     let tmp28Result = null;
     if (first2) {
       const obj6 = {
-        ref: ref1,
+        ref: ref2,
         style: items7,
         onLayout(nativeEvent) {
               closure_16(nativeEvent.nativeEvent.layout.height);
@@ -886,7 +813,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
       View = tmp2(tmp3[14]).View;
       if (null != title) {
         const obj7 = { text: title };
-        tmp30Result = tmp30(ref1, obj7);
+        tmp30Result = tmp30(ref2, obj7);
       }
       items8 = [tmp30Result, , ];
       let tmp30Result2 = null;
@@ -906,8 +833,8 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
     tmp28Result2 = tmp28(tmp29, obj8);
   }
   return tmp28Result2;
-}));
+});
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/video_calls/native/components/PopoutMenu.tsx");
 
-export default forwardRefResult;
+export default tmp3;

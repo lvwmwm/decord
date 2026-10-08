@@ -10,7 +10,7 @@ import SnowflakeUtils from "SnowflakeUtils" /* 11 */;
 import _mod12 from "module_12" /* 12 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 
-const size_mod = _modAll2;
+const size = _modAll2;
 let c2, c3, log;
 
 function serialize(arg0, arg1) {
@@ -863,13 +863,16 @@ class TTITracker extends TTITrackers {
     const cachedChannelCounts = this.cachedChannelCounts;
     const result = cachedChannelCounts.set(arg0, length);
     if (this.cachedChannelCounts.size > 100) {
-      do {
-        let cachedChannelCounts2 = self.cachedChannelCounts;
-        let iter = cachedChannelCounts2.keys();
+      const cachedChannelCounts2 = self.cachedChannelCounts;
+      const iter = cachedChannelCounts2.keys();
+      const iter2 = iter.next();
+      while (!iter2.done) {
         let cachedChannelCounts3 = self.cachedChannelCounts;
-        let deleteResult = cachedChannelCounts3.delete(iter.next().value);
-        size = self.cachedChannelCounts.size;
-      } while (size > 100);
+        let deleteResult = cachedChannelCounts3.delete(iter2.value);
+        if (self.cachedChannelCounts.size <= 100) {
+          break;
+        }
+      }
     }
   }
   attachReadyPayloadProperties(readyProperties) {
@@ -1300,7 +1303,6 @@ class TTITracker extends TTITrackers {
 }
 const prototype2 = TTITracker.prototype;
 const tTITracker = new TTITracker();
-let size = size_mod;
 let result = size.fileFinishedImporting("modules/tti_analytics/TTITracker.tsx");
 
 export default tTITracker;

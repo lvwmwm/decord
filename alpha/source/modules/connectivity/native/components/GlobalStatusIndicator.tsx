@@ -1,21 +1,21 @@
-// Module ID: 9624
-// Function ID: 9625
+// Module ID: 10817
+// Function ID: 10818
 // Name: GlobalStatusIndicator
-// Dependencies: [19, 17, 4567, 4912, 9625, 2051, 4919, 21, 558, 576, 9458, 504, 9123, 5103, 1126, 9626, 4618, 9620, 2]
+// Dependencies: [19, 17, 4759, 6041, 9645, 2063, 5108, 21, 558, 576, 9109, 504, 10339, 7476, 1126, 10818, 4810, 10813, 2]
 
-// Module 9624 (GlobalStatusIndicator)
+// Module 10817 (GlobalStatusIndicator)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5103 */;
-import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 9620 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7476 */;
+import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 10813 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ActionSheetStore from "ActionSheetStore" /* 4567 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4912 */;
-import NativeMenuStore from "NativeMenuStore" /* 9625 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
+import ActionSheetStore from "ActionSheetStore" /* 4759 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
+import NativeMenuStore from "NativeMenuStore" /* 9645 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -136,16 +136,16 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
       current = tmp21;
       let closure_6 = stateFromStores1.useRef(tmp21);
       if (cResult[13] !== tmp21) {
-        class T {
+        class H {
           constructor() {
             closure_6.current = current;
           }
         }
         cResult[13] = tmp21;
-        cResult[14] = T;
-        tmp22 = T;
+        cResult[14] = H;
+        tmp22 = H;
       } else {
-        class T {
+        class H {
           constructor() {
             closure_6.current = current;
           }
@@ -154,7 +154,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
       const effect = obj5.useEffect(tmp22);
       const _Symbol = Symbol;
       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-        class O {
+        class R {
           constructor() {
             closure_0 = closure_1_15.addListener("StatusBarTapped", () => {
               ref.current();
@@ -167,10 +167,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
             };
           }
         }
-        cResult[15] = O;
-        tmp24 = O;
+        cResult[15] = R;
+        tmp24 = R;
       } else {
-        class O {
+        class R {
           constructor() {
             closure_0 = closure_1_15.addListener("StatusBarTapped", () => {
               ref.current();
@@ -185,7 +185,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
         }
       }
       if (cResult[16] !== stateFromStores) {
-        class O {
+        class R {
           constructor() {
             closure_0 = closure_1_15.addListener("StatusBarTapped", () => {
               ref.current();
@@ -203,7 +203,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
         cResult[17] = tmp26;
         tmp25 = tmp26;
       } else {
-        class O {
+        class R {
           constructor() {
             closure_0 = closure_1_15.addListener("StatusBarTapped", () => {
               ref.current();
@@ -219,7 +219,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
       }
       const effect1 = obj5.useEffect(tmp24, tmp25);
       if (null != stateFromStores1) {
-        class O {
+        class R {
           constructor() {
             closure_0 = closure_1_15.addListener("StatusBarTapped", () => {
               ref.current();
@@ -235,7 +235,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
       }
       if (cResult[18] !== stateFromStores1) {
         let stringResult;
-        class O {
+        class R {
           constructor() {
             closure_0 = closure_1_15.addListener("StatusBarTapped", () => {
               ref.current();
@@ -249,7 +249,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
           }
         }
         if (null != stateFromStores1) {
-          class O {
+          class R {
             constructor() {
               closure_0 = closure_1_15.addListener("StatusBarTapped", () => {
                 ref.current();
@@ -267,7 +267,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
         cResult[18] = stateFromStores1;
         cResult[19] = stringResult;
       } else {
-        class O {
+        class R {
           constructor() {
             closure_0 = closure_1_15.addListener("StatusBarTapped", () => {
               ref.current();
@@ -283,7 +283,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
       }
       const _Symbol2 = Symbol;
       if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-        class O {
+        class R {
           constructor() {
             closure_0 = closure_1_15.addListener("StatusBarTapped", () => {
               ref.current();
@@ -301,7 +301,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
         cResult[20] = tmp32;
         tmp30 = tmp32;
       } else {
-        class O {
+        class R {
           constructor() {
             closure_0 = closure_1_15.addListener("StatusBarTapped", () => {
               ref.current();
@@ -316,7 +316,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
         }
       }
       if (cResult[21] === tmp21) {
-        class O {
+        class R {
           constructor() {
             closure_0 = closure_1_15.addListener("StatusBarTapped", () => {
               ref.current();
@@ -338,7 +338,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
       const tmp36 = closure_12(closure_6, obj3);
     }
   }
-  class V {
+  class E {
     constructor() {
       if (null != stateFromStores1) {
         if (null != openVoice) {
@@ -357,8 +357,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   cResult[9] = stateFromStores1;
   cResult[10] = onPress;
   cResult[11] = openVoice;
-  cResult[12] = V;
-  tmp21 = V;
+  cResult[12] = E;
+  tmp21 = E;
 }) : ((onPress) => {
   let callback;
   let obj5;
@@ -441,7 +441,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   return closure_12(tmp13, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((height) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGlobalStatusIndicatorHeightSharedValue(height) {
   let closure_0 = height;
   const obj = react2;
   const cResult = obj.c(4);
@@ -467,7 +467,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((height) => {
   cResult[3] = items;
   tmp4 = items;
   tmp3 = fn;
-}) : ((height) => {
+}) : (function useGlobalStatusIndicatorHeightSharedValue(height) {
   let closure_0 = height;
   const obj = ReanimatedRexport;
   const sharedValue = obj.useSharedValue(height.height);
@@ -478,7 +478,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((height) => {
   return sharedValue;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStatusIndicator(arg0) {
   let children;
   let content;
   let forceHide;
@@ -499,7 +499,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const globalStatusIndicatorState = tmpResult.useGlobalStatusIndicatorState(tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ActionSheetStore];
-    const fn = function o() {
+    const fn = function s() {
       return null != content.getContent();
     };
     cResult[0] = items;
@@ -513,14 +513,14 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const stateFromStores = tmpResult3.useStateFromStores(tmp7, tmp8);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [NativeMenuStore];
-    class I {
+    class P {
       constructor() {
         return open.isOpen();
       }
     }
     cResult[2] = items1;
-    cResult[3] = I;
-    tmp12 = I;
+    cResult[3] = P;
+    tmp12 = P;
     tmp11 = items1;
   } else {
     tmp11 = cResult[2];
@@ -543,7 +543,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[4] !== num5) {
     const items2 = [hasOwnProperty.absoluteFill, ];
-    class I {
+    class P {
       constructor() {
         return open.isOpen();
       }
@@ -575,7 +575,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
             return tmp23;
           }
-          class I {
+          class P {
             constructor() {
               return open.isOpen();
             }
@@ -588,7 +588,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           cResult[16] = tmp25;
           tmp23 = tmp25;
         }
-        class I {
+        class P {
           constructor() {
             return open.isOpen();
           }
@@ -607,7 +607,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[9] = tmp16;
   cResult[10] = tmp20;
   tmp19 = tmp20;
-}) : ((children) => {
+}) : (function GlobalStatusIndicator(children) {
   let content;
   let open;
   children = children.children;

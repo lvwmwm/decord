@@ -1,11 +1,11 @@
-// Module ID: 6728
-// Function ID: 6729
+// Module ID: 6904
+// Function ID: 6905
 // Name: useNSFWAllowed
-// Dependencies: [1377, 558, 576, 504, 2]
+// Dependencies: [1389, 558, 576, 504, 2]
 
-// Module 6728 (useNSFWAllowed)
+// Module 6904 (useNSFWAllowed)
 import react from "react" /* 576 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -13,14 +13,14 @@ let currentUser;
 
 let tmp;
 const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNSFWAllowed() {
   let tmp4;
   let tmp5;
   const obj = react;
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    const fn = function s() {
+    const fn = function l() {
       currentUser = currentUser.getCurrentUser();
       let nsfwAllowed;
       if (currentUser != null) {
@@ -40,7 +40,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useNSFWAllowed() {
   const items = [UserStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => {

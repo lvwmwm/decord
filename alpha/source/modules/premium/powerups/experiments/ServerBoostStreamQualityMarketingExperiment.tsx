@@ -1,11 +1,11 @@
-// Module ID: 13415
-// Function ID: 13416
+// Module ID: 13715
+// Function ID: 13716
 // Name: ServerBoostStreamQualityMarketingExperiment
-// Dependencies: [1441, 2]
+// Dependencies: [1453, 2]
 // Exports: getServerBoostStreamQualityMarketingResolution
 
-// Module 13415 (ServerBoostStreamQualityMarketingExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1441 */;
+// Module 13715 (ServerBoostStreamQualityMarketingExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

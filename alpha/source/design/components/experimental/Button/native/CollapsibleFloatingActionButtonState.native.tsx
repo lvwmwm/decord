@@ -1,11 +1,11 @@
-// Module ID: 8610
-// Function ID: 8611
+// Module ID: 8525
+// Function ID: 8526
 // Name: CollapsibleFloatingActionButtonState
-// Dependencies: [19, 558, 576, 4618, 2]
+// Dependencies: [19, 558, 576, 4810, 2]
 
-// Module 8610 (CollapsibleFloatingActionButtonState)
+// Module 8525 (CollapsibleFloatingActionButtonState)
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ let set;
 let ReactCompilerGating = ReactCompilerGating_mod;
 const __initData = { code: "function CollapsibleFloatingActionButtonStateNativeTsx1(t3){const{initialScrollStart,previousOffset,MINIMUM_SCROLL_DISTANCE_TO_CLOSE,collapseText,SCROLL_OFFSET_THRESHOLD}=this.__closure;const{nativeEvent:nativeEvent}=t3;if(nativeEvent==null){return;}const{contentOffset:t4,contentSize:t5,layoutMeasurement:t6}=nativeEvent;const{y:currentOffset}=t4;const{height:contentHeight}=t5;const{height:layoutHeight}=t6;if(currentOffset<initialScrollStart){return;}const contentHeightAsOffset=currentOffset+layoutHeight;if(contentHeightAsOffset>contentHeight){return;}const offsetChanged=currentOffset-previousOffset.get();if(currentOffset<MINIMUM_SCROLL_DISTANCE_TO_CLOSE){collapseText.set(0);}else{if(Math.abs(offsetChanged)>SCROLL_OFFSET_THRESHOLD){collapseText.set(offsetChanged<0?0:1);}}previousOffset.set(currentOffset);}" };
 const __initData2 = { code: "function CollapsibleFloatingActionButtonStateNativeTsx2({nativeEvent:nativeEvent}){const{initialScrollStart,previousOffset,MINIMUM_SCROLL_DISTANCE_TO_CLOSE,collapseText,SCROLL_OFFSET_THRESHOLD}=this.__closure;if(nativeEvent==null)return;const{contentOffset:{y:currentOffset},contentSize:{height:contentHeight},layoutMeasurement:{height:layoutHeight}}=nativeEvent;if(currentOffset<initialScrollStart)return;const contentHeightAsOffset=currentOffset+layoutHeight;if(contentHeightAsOffset>contentHeight)return;const offsetChanged=currentOffset-previousOffset.get();if(currentOffset<MINIMUM_SCROLL_DISTANCE_TO_CLOSE){collapseText.set(0);}else{if(Math.abs(offsetChanged)>SCROLL_OFFSET_THRESHOLD){collapseText.set(offsetChanged<0?0:1);}}previousOffset.set(currentOffset);}" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCollapsibleFloatingActionButtonState() {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
@@ -30,14 +30,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
+}) : (function useCollapsibleFloatingActionButtonState() {
   let obj2;
   const obj = { collapseText: obj2.useSharedValue(0) };
   obj2 = ReanimatedRexport;
   return obj;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((collapseText, point) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCollapsibleFloatingActionButtonScroll(collapseText, point) {
   let obj = react2;
   const cResult = obj.c(4);
   collapseText = collapseText.collapseText;
@@ -90,7 +90,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((collapseText, point)
   cResult[2] = sharedValue;
   cResult[3] = fn;
   tmp5 = fn;
-}) : ((collapseText, point) => {
+}) : (function useCollapsibleFloatingActionButtonScroll(collapseText, point) {
   collapseText = collapseText.collapseText;
   let num = point;
   if (point === undefined) {

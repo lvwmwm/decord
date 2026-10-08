@@ -1,14 +1,15 @@
-// Module ID: 6708
-// Function ID: 6709
+// Module ID: 6885
+// Function ID: 6886
 // Name: ActionSheet
-// Dependencies: [19, 21, 4896, 587, 558, 576, 6652, 2]
+// Dependencies: [109, 19, 21, 5090, 587, 558, 576, 6829, 2]
 
-// Module 6708 (ActionSheet)
+// Module 6885 (ActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,45 +17,59 @@ let BottomSheet;
 
 let obj2;
 let tmp;
-const Sheet_BottomSheet = tmp(6652);
+const Sheet_BottomSheet = tmp(6829);
+let closure_2 = ["ref"];
 const jsx = Fragment.jsx;
 let obj = { content: obj2, body: { gap: 24 } };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_16 };
-let closure_3 = createStyles.createStyles(obj);
-const forwardRef = react.forwardRef;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+let closure_5 = createStyles.createStyles(obj);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionSheet(ref) {
+  let tmp4;
+  let tmp5;
   const obj = react2;
-  const cResult = obj.c(5);
-  const tmp4 = closure_3();
-  if (cResult[0] === arg0) {
-    if (cResult[1] === ref) {
-      if (cResult[2] === tmp4.body) {
-        let tmp5;
-        if (cResult[3] === tmp4.content) {
-          tmp5 = cResult[4];
+  const cResult = obj.c(8);
+  if (cResult[0] !== ref) {
+    const tmp8 = _objectWithoutProperties(ref, closure_2);
+    cResult[0] = ref;
+    cResult[1] = tmp8;
+    cResult[2] = ref.ref;
+    tmp5 = ref;
+    tmp4 = tmp8;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+  }
+  const tmp9 = closure_5();
+  if (cResult[3] === tmp4) {
+    if (cResult[4] === tmp5) {
+      if (cResult[5] === tmp9.body) {
+        let tmp10;
+        if (cResult[6] === tmp9.content) {
+          tmp10 = cResult[7];
         }
-        return tmp5;
+        return tmp10;
       }
     }
   }
   BottomSheet = Sheet_BottomSheet.BottomSheet;
-  const merged = Object.assign(arg0);
-  ({ content: obj2.contentStyles, body: obj2.bodyStyles } = tmp4);
-  const tmp7 = <BottomSheet ref={arg1} />;
-  cResult[0] = arg0;
-  cResult[1] = ref;
-  cResult[2] = tmp4.body;
-  cResult[3] = tmp4.content;
-  cResult[4] = tmp7;
-  tmp5 = tmp7;
-}) : ((arg0, ref) => {
-  const obj = { ref };
-  const tmp = closure_3();
+  const merged = Object.assign(tmp4);
+  ({ content: obj2.contentStyles, body: obj2.bodyStyles } = tmp9);
+  const tmp12 = <BottomSheet ref={tmp5} />;
+  cResult[3] = tmp4;
+  cResult[4] = tmp5;
+  cResult[5] = tmp9.body;
+  cResult[6] = tmp9.content;
+  cResult[7] = tmp12;
+  tmp10 = tmp12;
+}) : (function ActionSheet(ref) {
+  const merged = Object.assign(ref, Object.assign({ ref: 0 }));
+  const obj = { ref: ref.ref };
+  const tmp2 = closure_5();
   BottomSheet = Sheet_BottomSheet.BottomSheet;
-  const merged = Object.assign(arg0);
-  ({ content: obj.contentStyles, body: obj.bodyStyles } = tmp);
-  return <BottomSheet ref={arg1} />;
-}));
+  const merged1 = Object.assign(merged);
+  ({ content: obj.contentStyles, body: obj.bodyStyles } = tmp2);
+  return <BottomSheet ref={arg0.ref} />;
+});
 const result = size.fileFinishedImporting("design/components/Sheet/native/ActionSheet.native.tsx");
 
-export const ActionSheet = forwardRefResult;
+export const ActionSheet = tmp3;

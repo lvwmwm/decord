@@ -1,19 +1,19 @@
-// Module ID: 11839
-// Function ID: 11840
+// Module ID: 6077
+// Function ID: 6078
 // Name: isChannelFocused
-// Dependencies: [32, 19, 4912, 6841, 5104, 4744, 4742, 4743, 4745, 558, 576, 2]
+// Dependencies: [32, 19, 6041, 6078, 6079, 4938, 4936, 4937, 4939, 558, 576, 2]
 // Exports: isChannelFocused, isChannelFocusedForReadStateAck
 
-// Module 11839 (isChannelFocused)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4742 */;
-import RootNavigationRef from "RootNavigationRef" /* 4743 */;
-import getInitialNavigationStateDefault from "getInitialNavigationState" /* 4744 */;
-import useChatLayout from "useChatLayout" /* 4745 */;
-import NavigationHistoryStore2 from "NavigationHistoryStore" /* 6841 */;
+// Module 6077 (isChannelFocused)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4936 */;
+import RootNavigationRef from "RootNavigationRef" /* 4937 */;
+import getInitialNavigationStateDefault from "getInitialNavigationState" /* 4938 */;
+import useChatLayout from "useChatLayout" /* 4939 */;
+import NavigationHistoryStore2 from "NavigationHistoryStore" /* 6078 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4912 */;
-import VoicePanelStore from "VoicePanelStore" /* 5104 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
+import VoicePanelStore from "VoicePanelStore" /* 6079 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -159,7 +159,7 @@ let channelId2 = null;
 function isChannelFocused() {
   return null != getFocusedChannelId();
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsChannelFocused() {
   let closure_0;
   let first;
   let first1;
@@ -170,7 +170,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj = require("react");
   const cResult = obj.c(6);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function u() {
+    const fn = function s() {
       return null != getFocusedChannelId();
     };
     cResult[0] = fn;
@@ -223,7 +223,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const effect1 = obj2.useEffect(tmp10, tmp11);
   return first1;
-}) : (() => {
+}) : (function useIsChannelFocused() {
   let closure_0;
   let first;
   [first, closure_0] = react.useState(() => null != getFocusedChannelId());

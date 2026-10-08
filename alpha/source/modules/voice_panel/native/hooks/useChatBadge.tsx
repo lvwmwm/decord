@@ -1,17 +1,17 @@
-// Module ID: 17298
-// Function ID: 17299
+// Module ID: 17579
+// Function ID: 17580
 // Name: useChatBadge
-// Dependencies: [4911, 558, 576, 504, 2]
+// Dependencies: [6040, 558, 576, 504, 2]
 
-// Module 17298 (useChatBadge)
-import ReadStateStore from "ReadStateStore" /* 4911 */;
+// Module 17579 (useChatBadge)
+import ReadStateStore from "ReadStateStore" /* 6040 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChatBadge(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -48,7 +48,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useChatBadge(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");

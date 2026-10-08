@@ -1,13 +1,13 @@
-// Module ID: 17746
-// Function ID: 17747
+// Module ID: 18033
+// Function ID: 18034
 // Name: ApplicationTriggerFields
-// Dependencies: [19, 21, 17747, 1126, 4892, 6081, 6000, 5616, 4860, 17749, 1987, 2]
+// Dependencies: [19, 21, 18034, 1126, 5086, 6267, 6184, 5391, 5054, 18036, 1999, 2]
 // Exports: default
 
-// Module 17746 (ApplicationTriggerFields)
+// Module 18033 (ApplicationTriggerFields)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ export default function ApplicationTriggerFields(rule) {
     label: intl2.string(tmp(tmp2[3]).t.tWkvsa),
     trailing: tmp5Result,
     arrow: true,
-    onPress() {
+    onPress: function handlePress() {
       let tmp;
       if (null != guildBotApplications) {
         let tmp2 = importDefault;
@@ -76,7 +76,7 @@ export default function ApplicationTriggerFields(rule) {
               return tmp(obj);
             }
         };
-        obj.openLazy(asyncRequire(17749, dependencyMap.paths), "AutomodSelectApplication", obj2);
+        obj.openLazy(asyncRequire(18036, dependencyMap.paths), "AutomodSelectApplication", obj2);
       }
     }
   };

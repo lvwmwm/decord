@@ -1,17 +1,17 @@
-// Module ID: 18053
-// Function ID: 18054
+// Module ID: 18340
+// Function ID: 18341
 // Name: QuestFetchManager
-// Dependencies: [7200, 1102, 6620, 10925, 1242, 10007, 1369, 10028, 18054, 2]
+// Dependencies: [7379, 1102, 6797, 10576, 1254, 9537, 1381, 6076, 18341, 2]
 
-// Module 18053 (QuestFetchManager)
+// Module 18340 (QuestFetchManager)
 import DurationsDefault from "Durations" /* 1102 */;
-import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import QuestActionCreators from "QuestActionCreators" /* 10007 */;
-import QuestsEligibility from "QuestsEligibility" /* 10925 */;
-import QuestFetchReconnectJitterExperiment from "QuestFetchReconnectJitterExperiment" /* 18054 */;
-import QuestStore from "QuestStore" /* 7200 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6620 */;
+import SentryUtilsDefault from "SentryUtils" /* 1254 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import QuestActionCreators from "QuestActionCreators" /* 9537 */;
+import QuestsEligibility from "QuestsEligibility" /* 10576 */;
+import QuestFetchReconnectJitterExperiment from "QuestFetchReconnectJitterExperiment" /* 18341 */;
+import QuestStore from "QuestStore" /* 7379 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6797 */;
 import size from "module_2" /* 2 */;
 
 const DAY = DurationsDefault.Millis.DAY;
@@ -77,7 +77,7 @@ class QuestFetchManager extends AutomaticLifecycleManager {
           }, rounded + Math.floor(Math.random() * questHomeHeroJitterMs));
         }
       }
-      DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(18054).DEFAULT_QUEST_FETCH_JITTER_CONFIG;
+      DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(18341).DEFAULT_QUEST_FETCH_JITTER_CONFIG;
     };
     applyArgumentsResult.handleRunningGamesChange = function handleRunningGamesChange() {
 
@@ -131,7 +131,7 @@ class QuestFetchManager extends AutomaticLifecycleManager {
       const tmp6 = importDefault;
       const tmpResult2 = PlatformUtils;
       if (tmpResult2.isMac()) {
-        const tmp6Result = tmp6(10028);
+        const tmp6Result = tmp6(6076);
         const state = tmp6Result.getState();
       }
     }

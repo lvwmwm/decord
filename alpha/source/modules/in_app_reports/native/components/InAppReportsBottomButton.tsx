@@ -1,24 +1,22 @@
-// Module ID: 12740
-// Function ID: 12741
+// Module ID: 13408
+// Function ID: 13409
 // Name: InAppReportsBottomButton
-// Dependencies: [19, 17, 1096, 21, 4896, 587, 558, 576, 1126, 2653, 4892, 5601, 1188, 2]
+// Dependencies: [19, 17, 1096, 21, 5090, 587, 558, 576, 1126, 2697, 5086, 5375, 1200, 2]
 
-// Module 12740 (InAppReportsBottomButton)
+// Module 13408 (InAppReportsBottomButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import intl8 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import _modDef2653 from "module_2653" /* 2653 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
+import native from "native" /* 1200 */;
+import _modDef2697 from "module_2697" /* 2697 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let button;
 
 let closure_4;
 let hasOwnProperty;
@@ -33,7 +31,7 @@ obj2 = { height: 1, alignSelf: "stretch", backgroundColor: nativeDefault.colors.
 createStyles = createStyles.createStyles;
 obj3 = { color: nativeDefault.unsafe_rawColors.RED_400, fontSize: 12, lineHeight: 16, fontFamily: Fonts.PRIMARY_SEMIBOLD, textAlign: "center", marginTop: 12 };
 let closure_6 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((button) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InAppReportsBottomButton(button) {
   let disabled;
   let hasError;
   let isModeratorReport;
@@ -68,7 +66,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((button) => {
         const _Symbol4 = Symbol;
         if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
           const intl6 = tmp(1126).intl;
-          const stringResult1 = intl6.string(_modDef2653.ZUyreS);
+          const stringResult1 = intl6.string(_modDef2697.ZUyreS);
           cResult[1] = stringResult1;
           tmp16 = stringResult1;
         } else {
@@ -125,7 +123,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((button) => {
       const intl7 = tmp(1126).intl;
       const string = intl7.string;
       if (isModeratorReport) {
-        stringResult5 = string(_modDef2653.psKFdJ);
+        stringResult5 = string(_modDef2697.psKFdJ);
       } else {
         stringResult5 = string(tmp(1126).t.h6D8Vy);
       }
@@ -270,14 +268,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((button) => {
           return onPress(button);
         }
       }
-      tmp27 = React3(tmp(4892).Text, obj7);
+      tmp27 = React3(tmp(5086).Text, obj7);
     }
     cResult[10] = tmp7;
     cResult[11] = tmp4.descriptionText;
     cResult[12] = tmp27;
     tmp26 = tmp27;
   }
-}) : ((button) => {
+}) : (function InAppReportsBottomButton(button) {
   let closure_129_1;
   let disabled;
   let hasError;
@@ -300,7 +298,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((button) => {
       const intl2 = tmp15(1126).intl;
       const string = intl2.string;
       if (isModeratorReport) {
-        stringResult = string(_modDef2653.ZUyreS);
+        stringResult = string(_modDef2697.ZUyreS);
       } else {
         const stringResult1 = string(intl8.t["G+vU89"]);
         const intl3 = tmp15(1126).intl;
@@ -323,7 +321,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((button) => {
     const intl4 = tmp15(1126).intl;
     const string2 = intl4.string;
     if (isModeratorReport) {
-      string2Result = string2(_modDef2653.psKFdJ);
+      string2Result = string2(_modDef2697.psKFdJ);
     } else {
       string2Result = string2(tmp15(1126).t.h6D8Vy);
     }
@@ -334,7 +332,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((button) => {
     const obj3 = { style: tmp.paddingHorizontal, children: items1 };
     if (null != tmp3) {
       const obj4 = { style: tmp.descriptionText, variant: "text-xs/medium", color: "text-default", children: tmp3 };
-      tmp12Result = tmp12(tmp15(4892).Text, obj4);
+      tmp12Result = tmp12(tmp15(5086).Text, obj4);
     }
     items1 = [tmp12Result, , ];
     const obj5 = {
@@ -349,7 +347,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((button) => {
     let tmp12Result2 = null;
     if (hasError) {
       const obj6 = { style: tmp.errorText, children: string2Result };
-      tmp12Result2 = tmp12(tmp15(1188).LegacyText, obj6);
+      tmp12Result2 = tmp12(tmp15(1200).LegacyText, obj6);
     }
     items1[2] = tmp12Result2;
     items[1] = hasOwnProperty(View, obj3);

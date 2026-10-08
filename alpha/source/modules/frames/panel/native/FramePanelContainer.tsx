@@ -1,16 +1,16 @@
-// Module ID: 17221
-// Function ID: 17222
+// Module ID: 17502
+// Function ID: 17503
 // Name: FramePanelContainer
-// Dependencies: [19, 9000, 8738, 21, 558, 576, 504, 9180, 17222, 17224, 2]
+// Dependencies: [19, 10612, 10613, 21, 558, 576, 504, 10748, 17503, 17505, 2]
 
-// Module 17221 (FramePanelContainer)
+// Module 17502 (FramePanelContainer)
 import react2 from "react" /* 576 */;
-import FramesConstants from "FramesConstants" /* 8738 */;
-import WakeLockDefault from "WakeLock" /* 9180 */;
-import FramePanelControllerDefault from "FramePanelController" /* 17222 */;
-import FramePanelUIDefault from "FramePanelUI" /* 17224 */;
+import FramesConstants from "FramesConstants" /* 10613 */;
+import WakeLockDefault from "WakeLock" /* 10748 */;
+import FramePanelControllerDefault from "FramePanelController" /* 17503 */;
+import FramePanelUIDefault from "FramePanelUI" /* 17505 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 9000 */;
+import FramesStore from "FramesStore" /* 10612 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -23,7 +23,7 @@ const get_initialized = tmp(504);
 const isLaunched = FramesConstants.isLaunched;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 const FrameActivities = "FrameActivities";
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function FramePanelContainer() {
   let items1;
   let mainFrame;
   let tmp4;
@@ -63,7 +63,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     tmp8 = cResult[3];
   }
   return tmp8;
-}) : (() => {
+}) : (function FramePanelContainer() {
   let items1;
   let mainFrame;
   const items = [FramesStore];

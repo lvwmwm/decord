@@ -1,774 +1,410 @@
 // Module ID: 1685
 // Function ID: 1686
-// Dependencies: [32, 1654]
-// Exports: addMatrices, decomposeMatrixIntoMatricesAndAngles, getRotationMatrix, multiplyMatrices, scaleMatrix, subtractMatrices
+// Dependencies: [32, 1658, 1686, 1666, 1680, 1671, 1659]
+// Exports: makeShareableCloneOnUIRecursive
 
 // Module 1685
-import ReanimatedError from "ReanimatedError" /* 1654 */;
+import shareableMappingFlag from "shareableMappingFlag" /* 1686 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
+import module_1658_mod from "module_1658" /* 1658 */;
 
-const f135428 = (item) => {
-  let tmp = typeof item === "number";
-  if (typeof item === "number") {
-    const _isNaN = isNaN;
-    tmp = !isNaN(item);
-  }
-  return tmp;
-};
-const f135429 = (arr) => {
-  const isArray = Array.isArray(arr) && 4 === arr.length && arr.every((item) => {
-    let tmp = typeof item === "number";
-    if (typeof item === "number") {
-      const _isNaN = isNaN;
-      tmp = !isNaN(item);
-    }
-    return tmp;
-  });
-  return isArray;
-};
-function isAffineMatrixFlat(arr) {
-  const isArray = Array.isArray(arr) && 16 === arr.length && arr.every(f135428);
-  return isArray;
-}
-isAffineMatrixFlat.__closure = {};
-isAffineMatrixFlat.__workletHash = 7766400476414;
-isAffineMatrixFlat.__initData = { code: "function isAffineMatrixFlat_Pnpm_matrixUtilsTsx1(x){return Array.isArray(x)&&x.length===16&&x.every(function(element){return typeof element==='number'&&!isNaN(element);});}" };
-function isAffineMatrix(arr) {
-  const isArray = Array.isArray(arr) && 4 === arr.length && arr.every(f135429);
-  return isArray;
-}
-isAffineMatrix.__closure = {};
-isAffineMatrix.__workletHash = 3452211777657;
-isAffineMatrix.__initData = { code: "function isAffineMatrix_Pnpm_matrixUtilsTsx2(x){return Array.isArray(x)&&x.length===4&&x.every(function(row){return Array.isArray(row)&&row.length===4&&row.every(function(element){return typeof element==='number'&&!isNaN(element);});});}" };
-function flatten(arr) {
-  return arr.flat();
-}
-flatten.__closure = {};
-flatten.__workletHash = 9900628528512;
-flatten.__initData = { code: "function flatten_Pnpm_matrixUtilsTsx3(matrix){return matrix.flat();}" };
-function unflatten(arg0) {
-  const items = [, , , ];
-  [arr[0], arr[1], arr[2], arr[3]] = arg0;
-  const items1 = [items, , , ];
-  const items2 = [arg0[4], arg0[5], arg0[6], arg0[7]];
-  items1[1] = items2;
-  const items3 = [arg0[8], arg0[9], arg0[10], arg0[11]];
-  items1[2] = items3;
-  const items4 = [arg0[12], arg0[13], arg0[14], arg0[15]];
-  items1[3] = items4;
-  return items1;
-}
-unflatten.__closure = {};
-unflatten.__workletHash = 17503333305803;
-unflatten.__initData = { code: "function unflatten_Pnpm_matrixUtilsTsx4(m){return[[m[0],m[1],m[2],m[3]],[m[4],m[5],m[6],m[7]],[m[8],m[9],m[10],m[11]],[m[12],m[13],m[14],m[15]]];}" };
-function maybeFlattenMatrix(arr) {
-  if (typeof isAffineMatrix === "function") {
-    const _Array = Array;
-    const isArray = Array.isArray(arr) && 4 === arr.length && arr.every(f135429);
-    let flatResult = arr;
-    if (isArray) {
-      if (typeof flatten === "function") {
-        flatResult = arr.flat();
-      } else {
-        throw new TypeError("Trying to call a non-function");
-      }
-    }
-    return flatResult;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-}
-maybeFlattenMatrix.__closure = { isAffineMatrix, flatten };
-maybeFlattenMatrix.__workletHash = 13544286880330;
-maybeFlattenMatrix.__initData = { code: "function maybeFlattenMatrix_Pnpm_matrixUtilsTsx5(matrix){const{isAffineMatrix,flatten}=this.__closure;return isAffineMatrix(matrix)?flatten(matrix):matrix;}" };
-function multiplyMatrices(arg0, arg1) {
-  const items = [arg0[0][0] * arg1[0][0] + arg0[0][1] * arg1[1][0] + arg0[0][2] * arg1[2][0] + arg0[0][3] * arg1[3][0], arg0[0][0] * arg1[0][1] + arg0[0][1] * arg1[1][1] + arg0[0][2] * arg1[2][1] + arg0[0][3] * arg1[3][1], arg0[0][0] * arg1[0][2] + arg0[0][1] * arg1[1][2] + arg0[0][2] * arg1[2][2] + arg0[0][3] * arg1[3][2], arg0[0][0] * arg1[0][3] + arg0[0][1] * arg1[1][3] + arg0[0][2] * arg1[2][3] + arg0[0][3] * arg1[3][3]];
-  const items1 = [items, , , ];
-  const items2 = [arg0[1][0] * arg1[0][0] + arg0[1][1] * arg1[1][0] + arg0[1][2] * arg1[2][0] + arg0[1][3] * arg1[3][0], arg0[1][0] * arg1[0][1] + arg0[1][1] * arg1[1][1] + arg0[1][2] * arg1[2][1] + arg0[1][3] * arg1[3][1], arg0[1][0] * arg1[0][2] + arg0[1][1] * arg1[1][2] + arg0[1][2] * arg1[2][2] + arg0[1][3] * arg1[3][2], arg0[1][0] * arg1[0][3] + arg0[1][1] * arg1[1][3] + arg0[1][2] * arg1[2][3] + arg0[1][3] * arg1[3][3]];
-  items1[1] = items2;
-  const items3 = [arg0[2][0] * arg1[0][0] + arg0[2][1] * arg1[1][0] + arg0[2][2] * arg1[2][0] + arg0[2][3] * arg1[3][0], arg0[2][0] * arg1[0][1] + arg0[2][1] * arg1[1][1] + arg0[2][2] * arg1[2][1] + arg0[2][3] * arg1[3][1], arg0[2][0] * arg1[0][2] + arg0[2][1] * arg1[1][2] + arg0[2][2] * arg1[2][2] + arg0[2][3] * arg1[3][2], arg0[2][0] * arg1[0][3] + arg0[2][1] * arg1[1][3] + arg0[2][2] * arg1[2][3] + arg0[2][3] * arg1[3][3]];
-  items1[2] = items3;
-  const items4 = [arg0[3][0] * arg1[0][0] + arg0[3][1] * arg1[1][0] + arg0[3][2] * arg1[2][0] + arg0[3][3] * arg1[3][0], arg0[3][0] * arg1[0][1] + arg0[3][1] * arg1[1][1] + arg0[3][2] * arg1[2][1] + arg0[3][3] * arg1[3][1], arg0[3][0] * arg1[0][2] + arg0[3][1] * arg1[1][2] + arg0[3][2] * arg1[2][2] + arg0[3][3] * arg1[3][2], arg0[3][0] * arg1[0][3] + arg0[3][1] * arg1[1][3] + arg0[3][2] * arg1[2][3] + arg0[3][3] * arg1[3][3]];
-  items1[3] = items4;
-  return items1;
-}
-multiplyMatrices.__closure = {};
-multiplyMatrices.__workletHash = 4575994159882;
-multiplyMatrices.__initData = { code: "function multiplyMatrices_Pnpm_matrixUtilsTsx6(a,b){return[[a[0][0]*b[0][0]+a[0][1]*b[1][0]+a[0][2]*b[2][0]+a[0][3]*b[3][0],a[0][0]*b[0][1]+a[0][1]*b[1][1]+a[0][2]*b[2][1]+a[0][3]*b[3][1],a[0][0]*b[0][2]+a[0][1]*b[1][2]+a[0][2]*b[2][2]+a[0][3]*b[3][2],a[0][0]*b[0][3]+a[0][1]*b[1][3]+a[0][2]*b[2][3]+a[0][3]*b[3][3]],[a[1][0]*b[0][0]+a[1][1]*b[1][0]+a[1][2]*b[2][0]+a[1][3]*b[3][0],a[1][0]*b[0][1]+a[1][1]*b[1][1]+a[1][2]*b[2][1]+a[1][3]*b[3][1],a[1][0]*b[0][2]+a[1][1]*b[1][2]+a[1][2]*b[2][2]+a[1][3]*b[3][2],a[1][0]*b[0][3]+a[1][1]*b[1][3]+a[1][2]*b[2][3]+a[1][3]*b[3][3]],[a[2][0]*b[0][0]+a[2][1]*b[1][0]+a[2][2]*b[2][0]+a[2][3]*b[3][0],a[2][0]*b[0][1]+a[2][1]*b[1][1]+a[2][2]*b[2][1]+a[2][3]*b[3][1],a[2][0]*b[0][2]+a[2][1]*b[1][2]+a[2][2]*b[2][2]+a[2][3]*b[3][2],a[2][0]*b[0][3]+a[2][1]*b[1][3]+a[2][2]*b[2][3]+a[2][3]*b[3][3]],[a[3][0]*b[0][0]+a[3][1]*b[1][0]+a[3][2]*b[2][0]+a[3][3]*b[3][0],a[3][0]*b[0][1]+a[3][1]*b[1][1]+a[3][2]*b[2][1]+a[3][3]*b[3][1],a[3][0]*b[0][2]+a[3][1]*b[1][2]+a[3][2]*b[2][2]+a[3][3]*b[3][2],a[3][0]*b[0][3]+a[3][1]*b[1][3]+a[3][2]*b[2][3]+a[3][3]*b[3][3]]];}" };
-function subtractMatrices(arr, arr2) {
-  if (typeof isAffineMatrixFlat === "function") {
-    const _Array = Array;
-    const isArray = Array.isArray(arr) && 16 === arr.length && arr.every(f135428);
-    if (typeof maybeFlattenMatrix === "function") {
-      if (typeof isAffineMatrix === "function") {
-        const _Array2 = Array;
-        const isArray1 = Array.isArray(arr) && 4 === arr.length && arr.every(f135429);
-        let flatResult = arr;
-        if (isArray1) {
-          if (typeof flatten === "function") {
-            flatResult = arr.flat();
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        }
-        if (typeof tmp4 === "function") {
-          if (typeof tmp5 === "function") {
-            const _Array3 = Array;
-            const isArray2 = Array.isArray(arr2) && 4 === arr2.length && arr2.every(f135429);
-            let flatResult1 = arr2;
-            if (isArray2) {
-              if (typeof flatten === "function") {
-                flatResult1 = arr2.flat();
-              } else {
-                throw new TypeError("Trying to call a non-function");
-              }
-            }
-            const mapped = flatResult.map((item, index) => flatResult[index] - flatResult1[index]);
-            let tmp13 = mapped;
-            if (!isArray) {
-              if (typeof unflatten === "function") {
-                const items = [, , , ];
-                [arr2[0], arr2[1], arr2[2], arr2[3]] = mapped;
-                const items1 = [items, , , ];
-                const items2 = [mapped[4], mapped[5], mapped[6], mapped[7]];
-                items1[1] = items2;
-                const items3 = [mapped[8], mapped[9], mapped[10], mapped[11]];
-                items1[2] = items3;
-                const items4 = [mapped[12], mapped[13], mapped[14], mapped[15]];
-                items1[3] = items4;
-                tmp13 = items1;
-              } else {
-                throw new TypeError("Trying to call a non-function");
-              }
-            }
-            return tmp13;
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
-      } else {
-        throw new TypeError("Trying to call a non-function");
-      }
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-}
-subtractMatrices.__closure = { isAffineMatrixFlat, maybeFlattenMatrix, unflatten };
-subtractMatrices.__workletHash = 12538691088788;
-subtractMatrices.__initData = { code: "function subtractMatrices_Pnpm_matrixUtilsTsx7(maybeFlatA,maybeFlatB){const{isAffineMatrixFlat,maybeFlattenMatrix,unflatten}=this.__closure;const isFlatOnStart=isAffineMatrixFlat(maybeFlatA);const a=maybeFlattenMatrix(maybeFlatA);const b=maybeFlattenMatrix(maybeFlatB);const c=a.map(function(_,i){return a[i]-b[i];});return isFlatOnStart?c:unflatten(c);}" };
-function addMatrices(arr, arr2) {
-  if (typeof isAffineMatrixFlat === "function") {
-    const _Array = Array;
-    const isArray = Array.isArray(arr) && 16 === arr.length && arr.every(f135428);
-    if (typeof maybeFlattenMatrix === "function") {
-      if (typeof isAffineMatrix === "function") {
-        const _Array2 = Array;
-        const isArray1 = Array.isArray(arr) && 4 === arr.length && arr.every(f135429);
-        let flatResult = arr;
-        if (isArray1) {
-          if (typeof flatten === "function") {
-            flatResult = arr.flat();
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        }
-        if (typeof tmp4 === "function") {
-          if (typeof tmp5 === "function") {
-            const _Array3 = Array;
-            const isArray2 = Array.isArray(arr2) && 4 === arr2.length && arr2.every(f135429);
-            let flatResult1 = arr2;
-            if (isArray2) {
-              if (typeof flatten === "function") {
-                flatResult1 = arr2.flat();
-              } else {
-                throw new TypeError("Trying to call a non-function");
-              }
-            }
-            const mapped = flatResult.map((item, index) => flatResult[index] + flatResult1[index]);
-            let tmp13 = mapped;
-            if (!isArray) {
-              if (typeof unflatten === "function") {
-                const items = [, , , ];
-                [arr2[0], arr2[1], arr2[2], arr2[3]] = mapped;
-                const items1 = [items, , , ];
-                const items2 = [mapped[4], mapped[5], mapped[6], mapped[7]];
-                items1[1] = items2;
-                const items3 = [mapped[8], mapped[9], mapped[10], mapped[11]];
-                items1[2] = items3;
-                const items4 = [mapped[12], mapped[13], mapped[14], mapped[15]];
-                items1[3] = items4;
-                tmp13 = items1;
-              } else {
-                throw new TypeError("Trying to call a non-function");
-              }
-            }
-            return tmp13;
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
-      } else {
-        throw new TypeError("Trying to call a non-function");
-      }
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-}
-addMatrices.__closure = { isAffineMatrixFlat, maybeFlattenMatrix, unflatten };
-addMatrices.__workletHash = 17429737879880;
-addMatrices.__initData = { code: "function addMatrices_Pnpm_matrixUtilsTsx8(maybeFlatA,maybeFlatB){const{isAffineMatrixFlat,maybeFlattenMatrix,unflatten}=this.__closure;const isFlatOnStart=isAffineMatrixFlat(maybeFlatA);const a=maybeFlattenMatrix(maybeFlatA);const b=maybeFlattenMatrix(maybeFlatB);const c=a.map(function(_,i){return a[i]+b[i];});return isFlatOnStart?c:unflatten(c);}" };
-function scaleMatrix(arr, arg1) {
-  let closure_0 = arg1;
-  if (typeof isAffineMatrixFlat === "function") {
-    let tmp = arr;
-    const _Array = Array;
-    const isArray = Array.isArray(arr) && 16 === arr.length && arr.every(f135428);
-    if (typeof maybeFlattenMatrix === "function") {
-      if (typeof isAffineMatrix === "function") {
-        const _Array2 = Array;
-        const isArray1 = Array.isArray(arr) && 4 === arr.length && arr.every(f135429);
-        let flatResult = arr;
-        if (isArray1) {
-          if (typeof flatten === "function") {
-            flatResult = arr.flat();
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        }
-        const mapped = flatResult.map((item) => item * closure_0);
-        let tmp9 = mapped;
-        if (!isArray) {
-          if (typeof unflatten === "function") {
-            const items = [, , , ];
-            [arr2[0], arr2[1], arr2[2], arr2[3]] = mapped;
-            const items1 = [items, , , ];
-            const items2 = [mapped[4], mapped[5], mapped[6], mapped[7]];
-            items1[1] = items2;
-            const items3 = [mapped[8], mapped[9], mapped[10], mapped[11]];
-            items1[2] = items3;
-            const items4 = [mapped[12], mapped[13], mapped[14], mapped[15]];
-            items1[3] = items4;
-            tmp9 = items1;
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        }
-        return tmp9;
-      } else {
-        throw new TypeError("Trying to call a non-function");
-      }
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-}
-scaleMatrix.__closure = { isAffineMatrixFlat, maybeFlattenMatrix, unflatten };
-scaleMatrix.__workletHash = 11907224908685;
-scaleMatrix.__initData = { code: "function scaleMatrix_Pnpm_matrixUtilsTsx9(maybeFlatA,scalar){const{isAffineMatrixFlat,maybeFlattenMatrix,unflatten}=this.__closure;const isFlatOnStart=isAffineMatrixFlat(maybeFlatA);const a=maybeFlattenMatrix(maybeFlatA);const b=a.map(function(x){return x*scalar;});return isFlatOnStart?b:unflatten(b);}" };
-function getRotationMatrix(sum, item) {
-  let str = item;
-  if (item === undefined) {
-    str = "z";
-  }
-  const cosResult = Math.cos(sum);
-  const sinResult = Math.sin(sum);
-  if ("z" === str) {
-    const items = [cosResult, sinResult, 0, 0];
-    const items1 = [items, , , ];
-    const items2 = [-sinResult, cosResult, 0, 0];
-    items1[1] = items2;
-    items1[2] = [0, 0, 1, 0];
-    items1[3] = [0, 0, 0, 1];
-    return items1;
-  } else if ("y" === str) {
-    const items3 = [cosResult, 0, -sinResult, 0];
-    const items4 = [items3, [0, 1, 0, 0], , ];
-    const items5 = [sinResult, 0, cosResult, 0];
-    items4[2] = items5;
-    items4[3] = [0, 0, 0, 1];
-    return items4;
-  } else if ("x" === str) {
-    const items6 = [[1, 0, 0, 0], , , ];
-    const items7 = [0, cosResult, sinResult, 0];
-    items6[1] = items7;
-    const items8 = [0, -sinResult, cosResult, 0];
-    items6[2] = items8;
-    items6[3] = [0, 0, 0, 1];
-    return items6;
-  }
-}
-getRotationMatrix.__closure = {};
-getRotationMatrix.__workletHash = 14367317296086;
-getRotationMatrix.__initData = { code: "function getRotationMatrix_Pnpm_matrixUtilsTsx10(angle,axis='z'){const cos=Math.cos(angle);const sin=Math.sin(angle);switch(axis){case'z':return[[cos,sin,0,0],[-sin,cos,0,0],[0,0,1,0],[0,0,0,1]];case'y':return[[cos,0,-sin,0],[0,1,0,0],[sin,0,cos,0],[0,0,0,1]];case'x':return[[1,0,0,0],[0,cos,sin,0],[0,-sin,cos,0],[0,0,0,1]];}}" };
-function norm3d(arg0, arg1, arg2) {
-  return Math.sqrt(arg0 * arg0 + arg1 * arg1 + arg2 * arg2);
-}
-norm3d.__closure = {};
-norm3d.__workletHash = 3613705554848;
-norm3d.__initData = { code: "function norm3d_Pnpm_matrixUtilsTsx11(x,y,z){return Math.sqrt(x*x+y*y+z*z);}" };
-function transposeMatrix(arr) {
-  if (typeof flatten === "function") {
-    const flatResult = arr.flat();
-    const items = [flatResult[0], flatResult[4], flatResult[8], flatResult[12]];
-    const items1 = [items, , , ];
-    const items2 = [flatResult[1], flatResult[5], flatResult[9], flatResult[13]];
-    items1[1] = items2;
-    const items3 = [flatResult[2], flatResult[6], flatResult[10], flatResult[14]];
-    items1[2] = items3;
-    const items4 = [flatResult[3], flatResult[7], flatResult[11], flatResult[15]];
-    items1[3] = items4;
-    return items1;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-}
-transposeMatrix.__closure = { flatten };
-transposeMatrix.__workletHash = 17306716053169;
-transposeMatrix.__initData = { code: "function transposeMatrix_Pnpm_matrixUtilsTsx12(matrix){const{flatten}=this.__closure;const m=flatten(matrix);return[[m[0],m[4],m[8],m[12]],[m[1],m[5],m[9],m[13]],[m[2],m[6],m[10],m[14]],[m[3],m[7],m[11],m[15]]];}" };
-function assertVectorsHaveEqualLengths(arg0, arg1) {
+const require = globalThis.__r;
+
+let fn;
+function freezeObjectInDev(arg0) {
 
 }
-assertVectorsHaveEqualLengths.__closure = { __DEV__: false };
-assertVectorsHaveEqualLengths.__workletHash = 14349158134583;
-assertVectorsHaveEqualLengths.__initData = { code: "function assertVectorsHaveEqualLengths_Pnpm_matrixUtilsTsx13(a,b){const{__DEV__}=this.__closure;if(__DEV__&&a.length!==b.length){throw new ReanimatedError(\"Cannot calculate inner product of two vectors of different lengths. Length of \"+a.toString()+\" is \"+a.length+\" and length of \"+b.toString()+\" is \"+b.length+\".\");}}" };
-function innerProduct(arr, arg1) {
-  let closure_0 = arr;
-  let closure_1 = arg1;
-  if (typeof assertVectorsHaveEqualLengths === "function") {
-    return arr.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0);
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
+let module_1658 = module_1658_mod;
+module_1658 = module_1658.shouldBeUseWeb();
+const REANIMATED_MAGIC_KEY = "REANIMATED_MAGIC_KEY";
+function isHostObject(__remoteFunction) {
+  return REANIMATED_MAGIC_KEY in __remoteFunction;
 }
-innerProduct.__closure = { assertVectorsHaveEqualLengths };
-innerProduct.__workletHash = 6022428100775;
-innerProduct.__initData = { code: "function innerProduct_Pnpm_matrixUtilsTsx14(a,b){const{assertVectorsHaveEqualLengths}=this.__closure;assertVectorsHaveEqualLengths(a,b);return a.reduce(function(acc,_,i){return acc+a[i]*b[i];},0);}" };
-function projection(arr, arg1) {
-  if (typeof assertVectorsHaveEqualLengths === "function") {
-    if (typeof innerProduct === "function") {
-      let closure_0 = arr;
-      let closure_1 = arg1;
-      if (typeof assertVectorsHaveEqualLengths === "function") {
-        if (typeof tmp2 === "function") {
-          closure_0 = arr;
-          closure_1 = arr;
-          if (typeof assertVectorsHaveEqualLengths === "function") {
-            closure_0 = tmp5 / arr.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0);
-            return arr.map((item) => item * closure_0);
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        } else {
-          throw new TypeError("Trying to call a non-function");
+isHostObject.__closure = { MAGIC_KEY: "REANIMATED_MAGIC_KEY" };
+isHostObject.__workletHash = 10372729533958;
+isHostObject.__initData = { code: "function isHostObject_Pnpm_shareablesTs1(value){const{MAGIC_KEY}=this.__closure;return MAGIC_KEY in value;}" };
+let obj = { __init: fn };
+fn = function u() {
+  obj = {
+    get(arg0, arg1) {
+      if ("_isReanimatedSharedValue" !== arg1) {
+        if ("__remoteFunction" !== arg1) {
+          const _String = String;
+          const _HermesInternal = HermesInternal;
+          const self = this;
+          const self2 = this;
+          const reanimatedError = new require("ReanimatedError").ReanimatedError("Trying to access property `" + String(arg1) + "` of an object which cannot be sent to the UI runtime.");
+          throw reanimatedError;
         }
-      } else {
-        throw new TypeError("Trying to call a non-function");
       }
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-}
-projection.__closure = { assertVectorsHaveEqualLengths, innerProduct };
-projection.__workletHash = 12191208971941;
-projection.__initData = { code: "function projection_Pnpm_matrixUtilsTsx15(u,a){const{assertVectorsHaveEqualLengths,innerProduct}=this.__closure;assertVectorsHaveEqualLengths(u,a);const s=innerProduct(u,a)/innerProduct(u,u);return u.map(function(e){return e*s;});}" };
-function subtractVectors(arr, arg1) {
-  let closure_0 = arr;
-  let closure_1 = arg1;
-  if (typeof assertVectorsHaveEqualLengths === "function") {
-    return arr.map((item, index) => mapped4[index] - closure_1[index]);
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-}
-subtractVectors.__closure = { assertVectorsHaveEqualLengths };
-subtractVectors.__workletHash = 9047017498478;
-subtractVectors.__initData = { code: "function subtractVectors_Pnpm_matrixUtilsTsx16(a,b){const{assertVectorsHaveEqualLengths}=this.__closure;assertVectorsHaveEqualLengths(a,b);return a.map(function(_,i){return a[i]-b[i];});}" };
-function scaleVector(arr, arg1) {
-  let closure_0 = arg1;
-  return arr.map((item) => item * closure_0);
-}
-scaleVector.__closure = {};
-scaleVector.__workletHash = 11236256734309;
-scaleVector.__initData = { code: "function scaleVector_Pnpm_matrixUtilsTsx17(u,a){return u.map(function(e){return e*a;});}" };
-function gramSchmidtAlgorithm(items7) {
-  let arr;
-  let arr10;
-  let arr11;
-  let arr2;
-  let arr3;
-  let arr8;
-  let arr9;
-  let items12;
-  let tmp3;
-  const f135437 = (arr) => {
-    if (typeof innerProduct === "function") {
-      let closure_0 = arr;
-      let closure_1 = arr;
-      if (typeof assertVectorsHaveEqualLengths === "function") {
-        if (typeof tmp === "function") {
-          closure_0 = 1 / tmp3(arr.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0));
-          return arr.map((item) => item * closure_0);
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
-      } else {
-        throw new TypeError("Trying to call a non-function");
-      }
-    } else {
-      throw new TypeError("Trying to call a non-function");
+      return false;
+    },
+    set() {
+      const reanimatedError = new require("ReanimatedError").ReanimatedError("Trying to write to an object which cannot be sent to the UI runtime.");
+      throw reanimatedError;
     }
   };
-  const tmp = _slicedToArray;
-  [tmp3, arr, arr2, arr3] = items7;
-  _slicedToArray(items7, 4);
-  if (typeof subtractVectors === "function") {
-    let closure_1 = tmp5;
-    if (typeof assertVectorsHaveEqualLengths === "function") {
-      const mapped = arr.map((item, index) => mapped4[index] - closure_1[index]);
-      if (typeof subtractVectors === "function") {
-        closure_1 = tmp8;
-        if (typeof assertVectorsHaveEqualLengths === "function") {
-          const mapped1 = arr2.map((item, index) => mapped4[index] - closure_1[index]);
-          if (typeof subtractVectors === "function") {
-            closure_1 = tmp9;
-            if (typeof assertVectorsHaveEqualLengths === "function") {
-              const mapped2 = mapped1.map((item, index) => mapped4[index] - closure_1[index]);
-              const items = [tmp3, mapped, mapped2, ];
-              if (typeof subtractVectors === "function") {
-                closure_1 = tmp11;
-                if (typeof assertVectorsHaveEqualLengths === "function") {
-                  const mapped3 = arr3.map((item, index) => mapped4[index] - closure_1[index]);
-                  if (typeof subtractVectors === "function") {
-                    closure_1 = tmp12;
-                    if (typeof assertVectorsHaveEqualLengths === "function") {
-                      const mapped4 = mapped3.map((item, index) => mapped4[index] - closure_1[index]);
-                      if (typeof subtractVectors === "function") {
-                        closure_1 = tmp13;
-                        if (typeof assertVectorsHaveEqualLengths === "function") {
-                          items[3] = mapped4.map((item, index) => mapped4[index] - closure_1[index]);
-                          [arr8, arr9, arr10, arr11] = tmp(items.map(f135437), 4);
-                          const items1 = [arr8[0], arr9[0], arr10[0], arr11[0]];
-                          const items2 = [items1, , , ];
-                          const items3 = [arr8[1], arr9[1], arr10[1], arr11[1]];
-                          items2[1] = items3;
-                          const items4 = [arr8[2], arr9[2], arr10[2], arr11[2]];
-                          items2[2] = items4;
-                          const items5 = [arr8[3], arr9[3], arr10[3], arr11[3]];
-                          items2[3] = items5;
-                          tmp(items.map(f135437), 4);
-                          if (typeof innerProduct === "function") {
-                            closure_1 = tmp3;
-                            if (typeof assertVectorsHaveEqualLengths === "function") {
-                              const items6 = [arr8.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0), , , ];
-                              if (typeof innerProduct === "function") {
-                                if (typeof assertVectorsHaveEqualLengths === "function") {
-                                  items6[1] = arr8.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0);
-                                  if (typeof innerProduct === "function") {
-                                    if (typeof assertVectorsHaveEqualLengths === "function") {
-                                      items6[2] = arr8.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0);
-                                      if (typeof innerProduct === "function") {
-                                        if (typeof assertVectorsHaveEqualLengths === "function") {
-                                          items6[3] = arr8.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0);
-                                          items7 = [items6, , , ];
-                                          if (typeof innerProduct === "function") {
-                                            if (typeof assertVectorsHaveEqualLengths === "function") {
-                                              const items8 = [0, arr9.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0)];
-                                              if (typeof innerProduct === "function") {
-                                                if (typeof assertVectorsHaveEqualLengths === "function") {
-                                                  items8[2] = arr9.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0);
-                                                  if (typeof innerProduct === "function") {
-                                                    if (typeof assertVectorsHaveEqualLengths === "function") {
-                                                      items8[3] = arr9.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0);
-                                                      items7[1] = items8;
-                                                      if (typeof innerProduct === "function") {
-                                                        if (typeof assertVectorsHaveEqualLengths === "function") {
-                                                          const items9 = [0, 0, arr10.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0)];
-                                                          if (typeof innerProduct === "function") {
-                                                            if (typeof assertVectorsHaveEqualLengths === "function") {
-                                                              items9[3] = arr10.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0);
-                                                              items7[2] = items9;
-                                                              if (typeof innerProduct === "function") {
-                                                                if (typeof assertVectorsHaveEqualLengths === "function") {
-                                                                  const items10 = [0, 0, 0, arr11.reduce((acc, item, index) => acc + closure_0[index] * closure_1[index], 0)];
-                                                                  items7[3] = items10;
-                                                                  if (typeof transposeMatrix === "function") {
-                                                                    if (typeof flatten === "function") {
-                                                                      const obj = { rotationMatrix: items12, skewMatrix: null };
-                                                                      const flatResult = items2.flat();
-                                                                      const items11 = [flatResult[0], flatResult[4], flatResult[8], flatResult[12]];
-                                                                      items12 = [items11, , , ];
-                                                                      const items13 = [flatResult[1], flatResult[5], flatResult[9], flatResult[13]];
-                                                                      items12[1] = items13;
-                                                                      const items14 = [flatResult[2], flatResult[6], flatResult[10], flatResult[14]];
-                                                                      items12[2] = items14;
-                                                                      const items15 = [flatResult[3], flatResult[7], flatResult[11], flatResult[15]];
-                                                                      items12[3] = items15;
-                                                                      if (typeof tmp16 === "function") {
-                                                                        if (typeof tmp17 === "function") {
-                                                                          const flatResult1 = items7.flat();
-                                                                          const items16 = [flatResult1[0], flatResult1[4], flatResult1[8], flatResult1[12]];
-                                                                          const items17 = [items16, , , ];
-                                                                          const items18 = [flatResult1[1], flatResult1[5], flatResult1[9], flatResult1[13]];
-                                                                          items17[1] = items18;
-                                                                          const items19 = [flatResult1[2], flatResult1[6], flatResult1[10], flatResult1[14]];
-                                                                          items17[2] = items19;
-                                                                          const items20 = [flatResult1[3], flatResult1[7], flatResult1[11], flatResult1[15]];
-                                                                          items17[3] = items20;
-                                                                          obj.skewMatrix = items17;
-                                                                          return obj;
-                                                                        } else {
-                                                                          throw new TypeError("Trying to call a non-function");
-                                                                        }
-                                                                      } else {
-                                                                        throw new TypeError("Trying to call a non-function");
-                                                                      }
-                                                                    } else {
-                                                                      throw new TypeError("Trying to call a non-function");
-                                                                    }
-                                                                  } else {
-                                                                    throw new TypeError("Trying to call a non-function");
-                                                                  }
-                                                                } else {
-                                                                  throw new TypeError("Trying to call a non-function");
-                                                                }
-                                                              } else {
-                                                                throw new TypeError("Trying to call a non-function");
-                                                              }
-                                                            } else {
-                                                              throw new TypeError("Trying to call a non-function");
-                                                            }
-                                                          } else {
-                                                            throw new TypeError("Trying to call a non-function");
-                                                          }
-                                                        } else {
-                                                          throw new TypeError("Trying to call a non-function");
-                                                        }
-                                                      } else {
-                                                        throw new TypeError("Trying to call a non-function");
-                                                      }
-                                                    } else {
-                                                      throw new TypeError("Trying to call a non-function");
-                                                    }
-                                                  } else {
-                                                    throw new TypeError("Trying to call a non-function");
-                                                  }
-                                                } else {
-                                                  throw new TypeError("Trying to call a non-function");
-                                                }
-                                              } else {
-                                                throw new TypeError("Trying to call a non-function");
-                                              }
-                                            } else {
-                                              throw new TypeError("Trying to call a non-function");
-                                            }
-                                          } else {
-                                            throw new TypeError("Trying to call a non-function");
-                                          }
-                                        } else {
-                                          throw new TypeError("Trying to call a non-function");
-                                        }
-                                      } else {
-                                        throw new TypeError("Trying to call a non-function");
-                                      }
-                                    } else {
-                                      throw new TypeError("Trying to call a non-function");
-                                    }
-                                  } else {
-                                    throw new TypeError("Trying to call a non-function");
-                                  }
-                                } else {
-                                  throw new TypeError("Trying to call a non-function");
-                                }
+  const proxy = new Proxy({}, obj);
+  return proxy;
+};
+fn.__closure = {};
+fn.__workletHash = 15880119471501;
+fn.__initData = { code: "function pnpm_shareablesTs2(){return new Proxy({},{get:function(_,prop){if(prop==='_isReanimatedSharedValue'||prop==='__remoteFunction'){return false;}throw new ReanimatedError(\"Trying to access property `\"+String(prop)+\"` of an object which cannot be sent to the UI runtime.\");},set:function(){throw new ReanimatedError('Trying to write to an object which cannot be sent to the UI runtime.');}});}" };
+const VALID_ARRAY_VIEWS_NAMES = ["Int8Array", "Uint8Array", "Uint8ClampedArray", "Int16Array", "Uint16Array", "Int32Array", "Uint32Array", "Float32Array", "Float64Array", "BigInt64Array", "BigUint64Array", "DataView"];
+let tmp3 = module_1658 ? (function makeShareableCloneRecursiveWeb(arg0) {
+  return arg0;
+}) : (function makeShareableCloneRecursiveNative(__workletContextObjectFactory, flag) {
+  let c7;
+  let fn;
+  let fn2;
+  let fn3;
+  let fn4;
+  let name;
+  function cloneWorklet(__stackDetails, flag, arg2) {
+    let tmp7;
+    let tmp9;
+    if (__stackDetails.__stackDetails) {
+      delete tmp["__stackDetails"];
+    }
+    obj = { __initData: closure_1_10(__stackDetails.__initData, true, arg2 + 1) };
+    const entries = Object.entries(__stackDetails);
+    const tmp3 = entries[Symbol.iterator]();
+    while (tmp3 !== undefined) {
+      let tmp6 = _slicedToArray(tmp4, 2);
+      [tmp7, tmp9] = tmp6;
+      let tmp10 = "__initData" === tmp7;
+      let tmp8 = tmp7;
+      if (tmp10) {
+        tmp10 = undefined !== obj.__initData;
+      }
+      if (!tmp10) {
+        obj[tmp8] = closure_1_10(tmp9, flag, arg2 + 1);
+      }
+      continue;
+    }
+    const WorkletsModule = name(dependencyMap[5]).WorkletsModule;
+    const shareableClone = WorkletsModule.makeShareableClone(obj, true, __stackDetails);
+    const shareableMappingCache = name(dependencyMap[2]).shareableMappingCache;
+    const result = shareableMappingCache.set(__stackDetails, shareableClone);
+    const shareableMappingCache2 = name(dependencyMap[2]).shareableMappingCache;
+    const result1 = shareableMappingCache2.set(shareableClone);
+    freezeObjectInDev(0);
+    return shareableClone;
+  }
+  function clonePlainJSObject(__workletContextObjectFactory, flag, arg2) {
+    let tmp6;
+    let tmp8;
+    obj = {};
+    const entries = Object.entries(__workletContextObjectFactory);
+    const tmp2 = entries[Symbol.iterator]();
+    while (tmp2 !== undefined) {
+      let tmp5 = _slicedToArray(tmp3, 2);
+      [tmp6, tmp8] = tmp5;
+      let tmp9 = "__initData" === tmp6;
+      let tmp7 = tmp6;
+      if (tmp9) {
+        tmp9 = undefined !== obj.__initData;
+      }
+      if (!tmp9) {
+        obj[tmp7] = closure_1_10(tmp8, flag, arg2 + 1);
+      }
+      continue;
+    }
+    const WorkletsModule = name(dependencyMap[5]).WorkletsModule;
+    const shareableClone = WorkletsModule.makeShareableClone(obj, flag, __workletContextObjectFactory);
+    const shareableMappingCache = name(dependencyMap[2]).shareableMappingCache;
+    const result = shareableMappingCache.set(__workletContextObjectFactory, shareableClone);
+    const shareableMappingCache2 = name(dependencyMap[2]).shareableMappingCache;
+    const result1 = shareableMappingCache2.set(shareableClone);
+    freezeObjectInDev(0);
+    return shareableClone;
+  }
+  if (flag === undefined) {
+    flag = false;
+  }
+  let num = arg2;
+  if (arg2 === undefined) {
+    num = 0;
+  }
+  if (num >= 30) {
+    if (30 === num) {
+      c7 = __workletContextObjectFactory;
+    } else {
+      const tmp = c7;
+      if (__workletContextObjectFactory === c7) {
+        let tmp2 = name;
+        let tmp3 = dependencyMap;
+        let self = this;
+        let self2 = this;
+        let reanimatedError = new name(1666).ReanimatedError("Trying to convert a cyclic object to a shareable. This is not supported.");
+        let tmp5 = reanimatedError;
+        throw reanimatedError;
+      }
+    }
+  } else {
+    c7 = undefined;
+  }
+  if (typeof __workletContextObjectFactory === "object") {
+    let tmp6 = null;
+    if (null !== __workletContextObjectFactory) {
+      const shareableMappingCache14 = name(1686).shareableMappingCache;
+      let value = shareableMappingCache14.get(__workletContextObjectFactory);
+      if (value === name(1686).shareableMappingFlag) {
+        value = __workletContextObjectFactory;
+      }
+      if (undefined === value) {
+        let shareableClone1;
+        const _Array = Array;
+        if (Array.isArray(__workletContextObjectFactory)) {
+          const mapped = __workletContextObjectFactory.map((item) => closure_2_10(item, flag, num + 1));
+          const WorkletsModule4 = tmp44(1671).WorkletsModule;
+          let shareableClone = WorkletsModule4.makeShareableClone(mapped, flag, __workletContextObjectFactory);
+          const shareableMappingCache12 = tmp44(1686).shareableMappingCache;
+          let result = shareableMappingCache12.set(__workletContextObjectFactory, shareableClone);
+          const shareableMappingCache13 = tmp44(1686).shareableMappingCache;
+          let result1 = shareableMappingCache13.set(shareableClone);
+          shareableClone1 = shareableClone;
+        } else {
+          if (typeof __workletContextObjectFactory === "function") {
+            const tmp44Result = name(1680);
+            if (!tmp44Result.isWorkletFunction(__workletContextObjectFactory)) {
+              let WorkletsModule = tmp44(1671).WorkletsModule;
+              shareableClone1 = WorkletsModule.makeShareableClone(__workletContextObjectFactory, flag, __workletContextObjectFactory);
+              let shareableMappingCache = tmp44(1686).shareableMappingCache;
+              const result2 = shareableMappingCache.set(__workletContextObjectFactory, shareableClone1);
+              let shareableMappingCache2 = tmp44(1686).shareableMappingCache;
+              const result3 = shareableMappingCache2.set(shareableClone1);
+            }
+          }
+          let tmp11 = isHostObject;
+          if (typeof isHostObject === "function") {
+            let tmp15;
+            let tmp12 = REANIMATED_MAGIC_KEY;
+            if (REANIMATED_MAGIC_KEY in __workletContextObjectFactory) {
+              const WorkletsModule3 = tmp44(1671).WorkletsModule;
+              const shareableClone2 = WorkletsModule3.makeShareableClone(__workletContextObjectFactory, flag, __workletContextObjectFactory);
+              const shareableMappingCache10 = tmp44(1686).shareableMappingCache;
+              const result4 = shareableMappingCache10.set(__workletContextObjectFactory, shareableClone2);
+              const shareableMappingCache11 = tmp44(1686).shareableMappingCache;
+              const result5 = shareableMappingCache11.set(shareableClone2);
+              tmp15 = shareableClone2;
+            } else {
+              const _Object = Object;
+              const _Object2 = Object;
+              if (Object.getPrototypeOf(__workletContextObjectFactory) === Object.prototype) {
+                if (__workletContextObjectFactory.__workletContextObjectFactory) {
+                  __workletContextObjectFactory = __workletContextObjectFactory.__workletContextObjectFactory;
+                  obj = { __init: fn4 };
+                  fn4 = function c() {
+                    return __workletContextObjectFactory();
+                  };
+                  const obj2 = { workletContextObjectFactory: __workletContextObjectFactory };
+                  fn4.__closure = obj2;
+                  fn4.__workletHash = 16264240301234;
+                  fn4.__initData = __initData;
+                  const tmp35 = closure_10(obj);
+                  const shareableMappingCache9 = tmp44(1686).shareableMappingCache;
+                  const result6 = shareableMappingCache9.set(__workletContextObjectFactory, tmp35);
+                  tmp15 = tmp35;
+                }
+              }
+              const _Object3 = Object;
+              const _Object4 = Object;
+              if (Object.getPrototypeOf(__workletContextObjectFactory) === Object.prototype) {
+                const tmp44Result2 = name(1680);
+                if (tmp44Result2.isWorkletFunction(__workletContextObjectFactory)) {
+                  tmp15 = cloneWorklet(__workletContextObjectFactory, flag, num);
+                }
+              }
+              const _Object5 = Object;
+              const _Object6 = Object;
+              if (Object.getPrototypeOf(__workletContextObjectFactory) !== Object.prototype) {
+                if (typeof __workletContextObjectFactory !== "function") {
+                  const _RegExp = RegExp;
+                  if (__workletContextObjectFactory instanceof RegExp) {
+                    const source = __workletContextObjectFactory.source;
+                    const flags = __workletContextObjectFactory.flags;
+                    const obj3 = { __init: fn3 };
+                    fn3 = function s() {
+                      const regExp = new RegExp(source, flags);
+                      return regExp;
+                    };
+                    const obj4 = { pattern: source, flags };
+                    fn3.__closure = obj4;
+                    fn3.__workletHash = 17343605339188;
+                    fn3.__initData = __initData2;
+                    const tmp31 = closure_10(obj3);
+                    const shareableMappingCache8 = tmp44(1686).shareableMappingCache;
+                    const result7 = shareableMappingCache8.set(__workletContextObjectFactory, tmp31);
+                    tmp15 = tmp31;
+                  } else {
+                    const _Error = Error;
+                    if (__workletContextObjectFactory instanceof Error) {
+                      const name2 = __workletContextObjectFactory.name;
+                      const message = __workletContextObjectFactory.message;
+                      const stack = __workletContextObjectFactory.stack;
+                      const obj5 = { __init: fn2 };
+                      fn2 = function u() {
+                        const error = new Error();
+                        error.name = name2;
+                        error.message = message;
+                        error.stack = stack;
+                        return error;
+                      };
+                      let error = { name: name2, message, stack };
+                      fn2.__closure = error;
+                      fn2.__workletHash = 1273124072033;
+                      fn2.__initData = __initData3;
+                      const tmp27 = closure_10(obj5);
+                      const shareableMappingCache7 = tmp44(1686).shareableMappingCache;
+                      const result8 = shareableMappingCache7.set(__workletContextObjectFactory, tmp27);
+                      tmp15 = tmp27;
+                    } else {
+                      const _ArrayBuffer = ArrayBuffer;
+                      if (__workletContextObjectFactory instanceof ArrayBuffer) {
+                        const WorkletsModule2 = tmp44(1671).WorkletsModule;
+                        const shareableClone3 = WorkletsModule2.makeShareableClone(__workletContextObjectFactory, flag, __workletContextObjectFactory);
+                        const shareableMappingCache5 = tmp44(1686).shareableMappingCache;
+                        const result9 = shareableMappingCache5.set(__workletContextObjectFactory, shareableClone3);
+                        const shareableMappingCache6 = tmp44(1686).shareableMappingCache;
+                        const result10 = shareableMappingCache6.set(shareableClone3);
+                        tmp15 = shareableClone3;
+                      } else {
+                        const _ArrayBuffer2 = ArrayBuffer;
+                        if (ArrayBuffer.isView(__workletContextObjectFactory)) {
+                          const buffer = __workletContextObjectFactory.buffer;
+                          name = __workletContextObjectFactory.constructor.name;
+                          const obj6 = { __init: fn };
+                          fn = function s() {
+                            if (VALID_ARRAY_VIEWS_NAMES.includes(name)) {
+                              if (undefined === global[name]) {
+                                const _HermesInternal2 = HermesInternal;
+                                const self5 = this;
+                                const self6 = this;
+                                const reanimatedError = new require("ReanimatedError").ReanimatedError("[Reanimated] Constructor for `" + tmp + "` not found.");
+                                throw reanimatedError;
                               } else {
-                                throw new TypeError("Trying to call a non-function");
+                                const self3 = this;
+                                const self4 = this;
+                                const tmp82 = new global[name](buffer);
+                                return tmp82;
                               }
                             } else {
-                              throw new TypeError("Trying to call a non-function");
+                              const _HermesInternal = HermesInternal;
+                              const self = this;
+                              const self2 = this;
+                              const reanimatedError1 = new require("ReanimatedError").ReanimatedError("[Reanimated] Invalid array view name `" + tmp + "`.");
+                              throw reanimatedError1;
                             }
-                          } else {
-                            throw new TypeError("Trying to call a non-function");
-                          }
+                          };
+                          const obj7 = { VALID_ARRAY_VIEWS_NAMES, typeName: name, buffer };
+                          fn.__closure = obj7;
+                          fn.__workletHash = 2440560686150;
+                          fn.__initData = __initData4;
+                          const tmp20 = closure_10(obj6);
+                          const shareableMappingCache4 = tmp44(1686).shareableMappingCache;
+                          const result11 = shareableMappingCache4.set(__workletContextObjectFactory, tmp20);
+                          tmp15 = tmp20;
                         } else {
-                          throw new TypeError("Trying to call a non-function");
+                          let tmp13 = closure_10;
+                          tmp15 = closure_10(obj);
+                          const shareableMappingCache3 = tmp44(1686).shareableMappingCache;
+                          const result12 = shareableMappingCache3.set(__workletContextObjectFactory, tmp15);
                         }
-                      } else {
-                        throw new TypeError("Trying to call a non-function");
                       }
-                    } else {
-                      throw new TypeError("Trying to call a non-function");
                     }
-                  } else {
-                    throw new TypeError("Trying to call a non-function");
                   }
-                } else {
-                  throw new TypeError("Trying to call a non-function");
                 }
-              } else {
-                throw new TypeError("Trying to call a non-function");
               }
-            } else {
-              throw new TypeError("Trying to call a non-function");
+              tmp15 = clonePlainJSObject(__workletContextObjectFactory, flag, num);
             }
+            shareableClone1 = tmp15;
           } else {
             throw new TypeError("Trying to call a non-function");
           }
-        } else {
-          throw new TypeError("Trying to call a non-function");
         }
-      } else {
-        throw new TypeError("Trying to call a non-function");
+        value = shareableClone1;
       }
-    } else {
-      throw new TypeError("Trying to call a non-function");
+      return value;
     }
-  } else {
-    throw new TypeError("Trying to call a non-function");
   }
+  const WorkletsModule5 = name(1671).WorkletsModule;
+  return WorkletsModule5.makeShareableClone(__workletContextObjectFactory, flag);
+});
+let closure_10 = tmp3;
+const __initData = { code: "function pnpm_shareablesTs3(){const{workletContextObjectFactory}=this.__closure;return workletContextObjectFactory();}" };
+const __initData2 = { code: "function pnpm_shareablesTs4(){const{pattern,flags}=this.__closure;return new RegExp(pattern,flags);}" };
+const __initData3 = { code: "function pnpm_shareablesTs5(){const{name,message,stack}=this.__closure;const error=new Error();error.name=name;error.message=message;error.stack=stack;return error;}" };
+const __initData4 = { code: "function pnpm_shareablesTs6(){const{VALID_ARRAY_VIEWS_NAMES,typeName,buffer}=this.__closure;if(!VALID_ARRAY_VIEWS_NAMES.includes(typeName)){throw new ReanimatedError(\"[Reanimated] Invalid array view name `\"+typeName+\"`.\");}const constructor=global[typeName];if(constructor===undefined){throw new ReanimatedError(\"[Reanimated] Constructor for `\"+typeName+\"` not found.\");}return new constructor(buffer);}" };
+function isRemoteFunction(__remoteFunction) {
+  return __remoteFunction.__remoteFunction;
 }
-gramSchmidtAlgorithm.__closure = { subtractVectors, projection, scaleVector, innerProduct, transposeMatrix };
-gramSchmidtAlgorithm.__workletHash = 1839555089531;
-gramSchmidtAlgorithm.__initData = { code: "function gramSchmidtAlgorithm_Pnpm_matrixUtilsTsx18(matrix){const{subtractVectors,projection,scaleVector,innerProduct,transposeMatrix}=this.__closure;const[a0,a1,a2,a3]=matrix;const u0=a0;const u1=subtractVectors(a1,projection(u0,a1));const u2=subtractVectors(subtractVectors(a2,projection(u0,a2)),projection(u1,a2));const u3=subtractVectors(subtractVectors(subtractVectors(a3,projection(u0,a3)),projection(u1,a3)),projection(u2,a3));const[e0,e1,e2,e3]=[u0,u1,u2,u3].map(function(u){return scaleVector(u,1/Math.sqrt(innerProduct(u,u)));});const rotationMatrix=[[e0[0],e1[0],e2[0],e3[0]],[e0[1],e1[1],e2[1],e3[1]],[e0[2],e1[2],e2[2],e3[2]],[e0[3],e1[3],e2[3],e3[3]]];const skewMatrix=[[innerProduct(e0,a0),innerProduct(e0,a1),innerProduct(e0,a2),innerProduct(e0,a3)],[0,innerProduct(e1,a1),innerProduct(e1,a2),innerProduct(e1,a3)],[0,0,innerProduct(e2,a2),innerProduct(e2,a3)],[0,0,0,innerProduct(e3,a3)]];return{rotationMatrix:transposeMatrix(rotationMatrix),skewMatrix:transposeMatrix(skewMatrix)};}" };
-function decomposeMatrix(arr) {
-  if (typeof maybeFlattenMatrix === "function") {
-    let tmp = isAffineMatrix;
-    if (typeof isAffineMatrix === "function") {
-      const _Array = Array;
-      let isArray = Array.isArray(arr);
-      if (isArray) {
-        isArray = 4 === arr.length;
-      }
-      if (isArray) {
-        isArray = arr.every(f135429);
-      }
-      let flatResult = arr;
-      if (isArray) {
-        if (typeof flatten === "function") {
-          flatResult = arr.flat();
-        } else {
-          throw new TypeError("Trying to call a non-function");
+isRemoteFunction.__closure = {};
+isRemoteFunction.__workletHash = 12817663616448;
+isRemoteFunction.__initData = { code: "function isRemoteFunction_Pnpm_shareablesTs7(value){return!!value.__remoteFunction;}" };
+function makeShareableCloneOnUIRecursive(fn) {
+  const tmp = module_1658;
+  if (tmp) {
+    return fn;
+  } else {
+    function cloneRecursive(__remoteFunction) {
+      if (typeof __remoteFunction !== "object") {
+        if (typeof __remoteFunction !== "function") {
+          return global._makeShareableClone(__remoteFunction, undefined);
         }
       }
-      if (0 === flatResult[15]) {
-        const self = this;
-        const self2 = this;
-        const reanimatedError = new ReanimatedError.ReanimatedError("Invalid transform matrix.");
-        throw reanimatedError;
+      if (isHostObject(__remoteFunction)) {
+        return global._makeShareableClone(__remoteFunction, undefined);
+      } else if (isRemoteFunction(__remoteFunction)) {
+        return __remoteFunction.__remoteFunction;
       } else {
-        const item = flatResult.forEach((item, index) => {
-          const result = flatResult[index] / flatResult[15];
-          flatResult[index] = result;
-          return result;
-        });
-        const items = [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], ];
-        const items1 = [flatResult[12], flatResult[13], flatResult[14], 1];
-        items[3] = items1;
-        const first = flatResult[0];
-        if (typeof norm3d === "function") {
-          const _Math = Math;
-          let result = tmp24 * Math.sqrt(first * first + tmp27 * tmp27 + tmp28 * tmp28);
-          if (typeof norm3d === "function") {
-            const _Math2 = Math;
-            const result1 = tmp7 * Math.sqrt(tmp8 * tmp8 + tmp9 * tmp9 + tmp10 * tmp10);
-            if (typeof norm3d === "function") {
-              const _Math3 = Math;
-              const result2 = tmp12 * Math.sqrt(tmp13 * tmp13 + tmp14 * tmp14 + tmp15 * tmp15);
-              const items2 = [result, 0, 0, 0];
-              const items3 = [items2, , , ];
-              const items4 = [0, result1, 0, 0];
-              items3[1] = items4;
-              const items5 = [0, 0, result2, 0];
-              items3[2] = items5;
-              items3[3] = [0, 0, 0, 1];
-              const items6 = [flatResult[0] / result, flatResult[1] / result, flatResult[2] / result, 0];
-              const items7 = [items6, , , ];
-              const items8 = [flatResult[4] / result1, flatResult[5] / result1, flatResult[6] / result1, 0];
-              items7[1] = items8;
-              const items9 = [flatResult[8] / result2, flatResult[9] / result2, flatResult[10] / result2, 0];
-              items7[2] = items9;
-              items7[3] = [0, 0, 0, 1];
-              const obj = { translationMatrix: items, scaleMatrix: items3, rotationMatrix: null, skewMatrix: null };
-              ({ rotationMatrix: obj.rotationMatrix, skewMatrix: obj.skewMatrix } = gramSchmidtAlgorithm(items7));
-              gramSchmidtAlgorithm(items7);
-              return obj;
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          } else {
-            throw new TypeError("Trying to call a non-function");
+        const _Array = Array;
+        if (Array.isArray(__remoteFunction)) {
+          return global._makeShareableClone(__remoteFunction.map(cloneRecursive), undefined);
+        } else {
+          obj = {};
+          const _Object = Object;
+          const entries = Object.entries(__remoteFunction);
+          const tmp5 = entries[Symbol.iterator]();
+          while (tmp5 !== undefined) {
+            let tmp10 = _slicedToArray(tmp7, 2);
+            obj[tmp10[0]] = cloneRecursive(tmp10[1]);
+            continue;
           }
-        } else {
-          throw new TypeError("Trying to call a non-function");
+          return global._makeShareableClone(obj, __remoteFunction);
         }
       }
-    } else {
-      throw new TypeError("Trying to call a non-function");
     }
-  } else {
-    throw new TypeError("Trying to call a non-function");
+    return cloneRecursive(fn);
   }
 }
-decomposeMatrix.__closure = { maybeFlattenMatrix, norm3d, gramSchmidtAlgorithm };
-decomposeMatrix.__workletHash = 244684068165;
-decomposeMatrix.__initData = { code: "function decomposeMatrix_Pnpm_matrixUtilsTsx19(unknownTypeMatrix){const{maybeFlattenMatrix,norm3d,gramSchmidtAlgorithm}=this.__closure;const matrix=maybeFlattenMatrix(unknownTypeMatrix);if(matrix[15]===0){throw new ReanimatedError('Invalid transform matrix.');}matrix.forEach(function(_,i){return matrix[i]/=matrix[15];});const translationMatrix=[[1,0,0,0],[0,1,0,0],[0,0,1,0],[matrix[12],matrix[13],matrix[14],1]];const sx=matrix[15]*norm3d(matrix[0],matrix[4],matrix[8]);const sy=matrix[15]*norm3d(matrix[1],matrix[5],matrix[9]);const sz=matrix[15]*norm3d(matrix[2],matrix[6],matrix[10]);const scaleMatrix=[[sx,0,0,0],[0,sy,0,0],[0,0,sz,0],[0,0,0,1]];const rotationAndSkewMatrix=[[matrix[0]/sx,matrix[1]/sx,matrix[2]/sx,0],[matrix[4]/sy,matrix[5]/sy,matrix[6]/sy,0],[matrix[8]/sz,matrix[9]/sz,matrix[10]/sz,0],[0,0,0,1]];const{rotationMatrix:rotationMatrix,skewMatrix:skewMatrix}=gramSchmidtAlgorithm(rotationAndSkewMatrix);return{translationMatrix:translationMatrix,scaleMatrix:scaleMatrix,rotationMatrix:rotationMatrix,skewMatrix:skewMatrix};}" };
-function decomposeMatrixIntoMatricesAndAngles(toValue) {
-  let scaleMatrix;
-  let skewMatrix;
-  let translationMatrix;
-  const tmp = decomposeMatrix(toValue);
-  const rotationMatrix = tmp.rotationMatrix;
-  ({ scaleMatrix, translationMatrix, skewMatrix } = tmp);
-  let num = Math.asin(tmp2);
-  if (1 !== -rotationMatrix[0][2]) {
-    let num3;
-    let num4;
-    if (-1 !== -rotationMatrix[0][2]) {
-      const _Math = Math;
-      num3 = Math.atan2(rotationMatrix[0][1], rotationMatrix[0][0]);
-      const _Math2 = Math;
-      num4 = Math.atan2(rotationMatrix[1][2], rotationMatrix[2][2]);
-    }
-    const obj = { scaleMatrix, rotationMatrix, translationMatrix, skewMatrix, rx: num4, ry: num, rz: num3 };
-    if (!num4) {
-      num4 = 0;
-    }
-    if (!num) {
-      num = 0;
-    }
-    if (!num3) {
-      num3 = 0;
-    }
-    return obj;
-  }
-  num4 = Math.atan2(tmp2 * rotationMatrix[0][1], tmp2 * rotationMatrix[0][2]);
-  num3 = 0;
-}
-decomposeMatrixIntoMatricesAndAngles.__closure = { decomposeMatrix };
-decomposeMatrixIntoMatricesAndAngles.__workletHash = 633682731757;
-decomposeMatrixIntoMatricesAndAngles.__initData = { code: "function decomposeMatrixIntoMatricesAndAngles_Pnpm_matrixUtilsTsx20(matrix){const{decomposeMatrix}=this.__closure;const{scaleMatrix:scaleMatrix,rotationMatrix:rotationMatrix,translationMatrix:translationMatrix,skewMatrix:skewMatrix}=decomposeMatrix(matrix);const sinRy=-rotationMatrix[0][2];const ry=Math.asin(sinRy);let rx;let rz;if(sinRy===1||sinRy===-1){rz=0;rx=Math.atan2(sinRy*rotationMatrix[0][1],sinRy*rotationMatrix[0][2]);}else{rz=Math.atan2(rotationMatrix[0][1],rotationMatrix[0][0]);rx=Math.atan2(rotationMatrix[1][2],rotationMatrix[2][2]);}return{scaleMatrix:scaleMatrix,rotationMatrix:rotationMatrix,translationMatrix:translationMatrix,skewMatrix:skewMatrix,rx:rx||0,ry:ry||0,rz:rz||0};}" };
+makeShareableCloneOnUIRecursive.__closure = { SHOULD_BE_USE_WEB: module_1658, isHostObject, isRemoteFunction };
+makeShareableCloneOnUIRecursive.__workletHash = 10912061747670;
+makeShareableCloneOnUIRecursive.__initData = { code: "function makeShareableCloneOnUIRecursive_Pnpm_shareablesTs8(value){const{SHOULD_BE_USE_WEB,isHostObject,isRemoteFunction}=this.__closure;if(SHOULD_BE_USE_WEB){return value;}function cloneRecursive(value){if(typeof value==='object'&&value!==null||typeof value==='function'){if(isHostObject(value)){return global._makeShareableClone(value,undefined);}if(isRemoteFunction(value)){return value.__remoteFunction;}if(Array.isArray(value)){return global._makeShareableClone(value.map(cloneRecursive),undefined);}const toAdapt={};for(const[key,element]of Object.entries(value)){toAdapt[key]=cloneRecursive(element);}return global._makeShareableClone(toAdapt,value);}return global._makeShareableClone(value,undefined);}return cloneRecursive(value);}" };
+const __initData5 = { code: "function pnpm_shareablesTs9(){const{value}=this.__closure;return value;}" };
 
-export { isAffineMatrixFlat };
-export { isAffineMatrix };
-export { flatten };
-export { unflatten };
-export { multiplyMatrices };
-export { subtractMatrices };
-export { addMatrices };
-export { scaleMatrix };
-export { getRotationMatrix };
-export { decomposeMatrix };
-export { decomposeMatrixIntoMatricesAndAngles };
+export const makeShareableCloneRecursive = tmp3;
+export { makeShareableCloneOnUIRecursive };
+export const makeShareable = module_1658 ? (function makeShareableJS(arg0) {
+  return arg0;
+}) : (function makeShareableNative(value) {
+  let fn;
+  let closure_0 = value;
+  const shareableMappingCache = shareableMappingFlag.shareableMappingCache;
+  if (shareableMappingCache.get(value)) {
+    return value;
+  } else {
+    obj = { __init: fn };
+    fn = function n() {
+      return closure_0;
+    };
+    const obj2 = { value };
+    fn.__closure = obj2;
+    fn.__workletHash = 5731865988281;
+    fn.__initData = __initData5;
+    const tmp5 = closure_10(obj);
+    const shareableMappingCache2 = shareableMappingFlag.shareableMappingCache;
+    const result = shareableMappingCache2.set(value, tmp5);
+    return value;
+  }
+});

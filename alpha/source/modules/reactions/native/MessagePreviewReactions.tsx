@@ -1,17 +1,17 @@
-// Module ID: 9998
-// Function ID: 9999
+// Module ID: 9528
+// Function ID: 9529
 // Name: MessagePreviewReactions
-// Dependencies: [19, 7116, 7121, 8047, 21, 558, 576, 504, 6664, 6688, 9987, 2]
+// Dependencies: [19, 7302, 7307, 8456, 21, 558, 576, 504, 6841, 6865, 9517, 2]
 
-// Module 9998 (MessagePreviewReactions)
+// Module 9528 (MessagePreviewReactions)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 6664 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6688 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 6841 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6865 */;
 import react from "react" /* 19 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7116 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7121 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 8047 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7302 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7307 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 8456 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let _require;
 const jsx = Fragment.jsx;
 let closure_7 = [];
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreviewMessageReactions(arg0, arg1) {
   let closure_0;
   let first;
   _require = arg0;
@@ -47,7 +47,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => 
     const tmpResult = tmp(504);
     return tmpResult.useStateFromStores(first, tmp8, tmp9);
   }
-  class E {
+  class M {
     constructor() {
       tmp = closure_1;
       message = closure_5.getMessage(closure_1);
@@ -66,11 +66,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => 
   const items1 = [arg0, arg1];
   cResult[1] = arg0;
   cResult[2] = arg1;
-  cResult[3] = E;
+  cResult[3] = M;
   cResult[4] = items1;
   tmp9 = items1;
-  tmp8 = E;
-}) : ((arg0, arg1) => {
+  tmp8 = M;
+}) : (function usePreviewMessageReactions(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;
@@ -89,7 +89,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => 
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePreviewReactions(arg0) {
   let channelId;
   let emoji;
   let messageId;
@@ -123,9 +123,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   if (arr.length > 0) {
-    tmp7 = jsx(tmp(9987).MessageReactionsContent, { channelId, messageId, emoji, reactions: arr });
+    tmp7 = jsx(tmp(9517).MessageReactionsContent, { channelId, messageId, emoji, reactions: arr });
   } else {
-    tmp7 = jsx(tmp(9987).MessageReactionsEmpty, {});
+    tmp7 = jsx(tmp(9517).MessageReactionsEmpty, {});
   }
   cResult[0] = channelId;
   cResult[1] = emoji;
@@ -133,7 +133,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = arr;
   cResult[4] = tmp7;
   tmp5 = tmp7;
-}) : ((emoji) => {
+}) : (function MessagePreviewReactions(emoji) {
   let channelId;
   let messageId;
   let tmp3Result;
@@ -144,9 +144,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const AnalyticsLocationProvider = useAnalyticsLocations.AnalyticsLocationProvider;
   if (arr.length > 0) {
     const obj2 = { channelId, messageId, emoji, reactions: arr };
-    tmp3Result = tmp3(tmp4(9987).MessageReactionsContent, obj2);
+    tmp3Result = tmp3(tmp4(9517).MessageReactionsContent, obj2);
   } else {
-    tmp3Result = tmp3(tmp4(9987).MessageReactionsEmpty, {});
+    tmp3Result = tmp3(tmp4(9517).MessageReactionsEmpty, {});
   }
   return <AnalyticsLocationProvider value={tmp2(AnalyticsLocationDefault.MESSAGE_PREVIEW_REACTIONS).analyticsLocations}>{tmp3Result}</AnalyticsLocationProvider>;
 });

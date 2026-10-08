@@ -1,20 +1,20 @@
-// Module ID: 8556
-// Function ID: 8557
+// Module ID: 9040
+// Function ID: 9041
 // Name: CollectiblesShopPricePlaceholder
-// Dependencies: [19, 21, 4896, 587, 558, 576, 4618, 4897, 2]
+// Dependencies: [19, 21, 5090, 587, 558, 576, 4810, 5091, 2]
 
-// Module 8556 (CollectiblesShopPricePlaceholder)
+// Module 9040 (CollectiblesShopPricePlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
-let set, style;
+let set;
 
 let obj2;
 const jsx = Fragment.jsx;
@@ -23,7 +23,7 @@ obj2 = { height: 16, flex: 1, borderRadius: nativeDefault.radii.xs, backgroundCo
 let closure_5 = createStyles.createStyles(obj);
 const __initData = { code: "function CollectiblesShopPricePlaceholderTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
 const __initData2 = { code: "function CollectiblesShopPricePlaceholderTsx2(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollectiblesShopPricePlaceholder(style) {
   let sharedValue;
   let tmp6;
   let tmp7;
@@ -32,7 +32,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   const cResult = obj.c(7);
   style = style.style;
   const tmp4 = closure_5();
-  const obj2 = sharedValue(4618);
+  const obj2 = sharedValue(4810);
   sharedValue = obj2.useSharedValue(0.3);
   if (cResult[0] !== sharedValue) {
     const fn = function n() {
@@ -53,15 +53,17 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     tmp7 = cResult[2];
   }
   const effect = react.useEffect(tmp6, tmp7);
-  const fn2 = function f() {
-    const obj = { opacity: sharedValue.get() };
-    return obj;
-  };
-  fn2.__closure = { opacity: sharedValue };
-  fn2.__workletHash = 10107093534072;
-  fn2.__initData = __initData;
-  const tmpResult = tmp(4618);
-  const animatedStyle = tmpResult.useAnimatedStyle(fn2);
+  const tmpResult = tmp(4810);
+  class C {
+    constructor() {
+      const obj = { opacity: sharedValue.get() };
+      return obj;
+    }
+  }
+  C.__closure = { opacity: sharedValue };
+  C.__workletHash = 10107093534072;
+  C.__initData = __initData;
+  const animatedStyle = tmpResult.useAnimatedStyle(C);
   if (cResult[3] === animatedStyle) {
     if (cResult[4] === style) {
       let tmp10;
@@ -78,11 +80,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   cResult[5] = tmp4.skeletonContainer;
   cResult[6] = tmp11;
   tmp10 = tmp11;
-}) : ((style) => {
+}) : (function CollectiblesShopPricePlaceholder(style) {
   let sharedValue;
   style = style.style;
   const tmp = closure_5();
-  let obj = sharedValue(4618);
+  let obj = sharedValue(4810);
   sharedValue = obj.useSharedValue(0.3);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
@@ -92,14 +94,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     const obj = timing;
     const result = set(withRepeat(obj.withTiming(1, { duration: 650 }), -1, true));
   }, items);
-  const fn = function _() {
+  const fn = function h() {
     const obj = { opacity: sharedValue.get() };
     return obj;
   };
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 5265836727291;
   fn.__initData = __initData2;
-  const obj2 = sharedValue(4618);
+  const obj2 = sharedValue(4810);
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const items1 = [tmp.skeletonContainer, style, animatedStyle];
   return jsx(ReanimatedRexportDefault.View, { style: items1 });

@@ -1,30 +1,30 @@
-// Module ID: 12456
-// Function ID: 12457
+// Module ID: 12552
+// Function ID: 12553
 // Name: useCreateGameInvitePost
-// Dependencies: [5, 32, 19, 11129, 5445, 7184, 1085, 2058, 558, 576, 6785, 9079, 11406, 504, 8840, 7185, 2]
+// Dependencies: [5, 32, 19, 11248, 5755, 7363, 1085, 2070, 558, 576, 6960, 10609, 11389, 504, 9199, 7364, 2]
 
-// Module 12456 (useCreateGameInvitePost)
+// Module 12552 (useCreateGameInvitePost)
 import Constants from "Constants" /* 1085 */;
-import ChannelConstants from "ChannelConstants" /* 2058 */;
-import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 6785 */;
-import SlowmodeStore2 from "SlowmodeStore" /* 7184 */;
-import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11406 */;
+import ChannelConstants from "ChannelConstants" /* 2070 */;
+import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 6960 */;
+import SlowmodeStore2 from "SlowmodeStore" /* 7363 */;
+import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11389 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import LocalActivityStore from "LocalActivityStore" /* 11129 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5445 */;
+import LocalActivityStore from "LocalActivityStore" /* 11248 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5755 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const SlowmodeStore = SlowmodeStore2;
-let c1, c3, parentChannel, tmp10, tmp3, tmp4;
+let c1, c3, tmp10, tmp3, tmp4;
 
 let react = react_mod;
 const SlowmodeType = SlowmodeStore2.SlowmodeType;
 const ActivityActionTypes = Constants.ActivityActionTypes;
 const ChannelFlags = ChannelConstants.ChannelFlags;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateGameInvitePost(parentChannel) {
   let applicationIdsForGame;
   let appliedTagIds;
   let first;
@@ -380,7 +380,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => {
   cResult[16] = upload;
   cResult[17] = voiceChatEnabled;
   cResult[18] = obj4;
-}) : ((parentChannel) => {
+}) : (function useCreateGameInvitePost(parentChannel) {
   let _undefined;
   let _undefined2;
   let c6;

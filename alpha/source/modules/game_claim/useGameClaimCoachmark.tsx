@@ -1,11 +1,11 @@
-// Module ID: 16237
-// Function ID: 16238
+// Module ID: 16497
+// Function ID: 16498
 // Name: useGameClaimCoachmark
-// Dependencies: [4515, 1085, 558, 576, 16238, 504, 16156, 2]
+// Dependencies: [4707, 1085, 558, 576, 16498, 504, 16416, 2]
 
-// Module 16237 (useGameClaimCoachmark)
+// Module 16497 (useGameClaimCoachmark)
 import Constants from "Constants" /* 1085 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 let _require;
 
 const Permissions = Constants.Permissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanShowGameClaimCoachmark(guildId) {
   let first;
   let tmp7;
   let tmp8;
@@ -53,7 +53,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     gameClaimCoachmarkEnabled = tmpResult2.useHasUnclaimedGames(guildId, gameClaimCoachmarkEnabled);
   }
   return gameClaimCoachmarkEnabled;
-}) : ((guildId) => {
+}) : (function useCanShowGameClaimCoachmark(guildId) {
   _require = guildId;
   let obj = require("GameClaimCoachmarkExperiment");
   let gameClaimCoachmarkEnabled = obj.useGameClaimCoachmarkEnabled(guildId, "useCanShowGameClaimCoachmark");
@@ -67,7 +67,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       return PermissionStore.canWithPartialContext(Permissions.ADMINISTRATOR, obj);
     }, items1);
   }
-  const tmpResult = tmp(16156);
+  const tmpResult = tmp(16416);
   if (gameClaimCoachmarkEnabled) {
     gameClaimCoachmarkEnabled = tmpResult.useHasUnclaimedGames(guildId, gameClaimCoachmarkEnabled);
   }

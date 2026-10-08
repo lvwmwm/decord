@@ -1,12 +1,12 @@
-// Module ID: 13777
-// Function ID: 13778
+// Module ID: 13999
+// Function ID: 14000
 // Name: GuildBadgeTrophy
-// Dependencies: [109, 19, 21, 558, 576, 13748, 8169, 2]
+// Dependencies: [109, 19, 21, 558, 576, 13970, 7550, 2]
 
-// Module 13777 (GuildBadgeTrophy)
+// Module 13999 (GuildBadgeTrophy)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 8169 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 13748 */;
+import inlineStyles from "inlineStyles" /* 7550 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 13970 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -20,7 +20,7 @@ let closure_2 = ["width", "height", "primaryTintColor"];
 const primaryBaseColors = ["#FD6214", "#FFB84B", "#FFE361"];
 const primaryTintLuminances = [0.3, 0.56, 0.77];
 let items = [{ base: 5, tint: 1 }, { base: 3, tint: 1 }, { base: 3, tint: 1 }];
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgeTrophy(arg0) {
   let height;
   let primaryTintColor;
   let tmp100;
@@ -390,7 +390,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const obj18 = { width: num6, height: num7, viewBox: "0 0 16 16", fill: "none", children: items };
-  const Svg = tmp(8169).Svg;
+  const Svg = tmp(7550).Svg;
   const merged = Object.assign(tmp5);
   items = [tmp16, tmp19, tmp22, tmp28, tmp29, tmp30, tmp25, tmp26, tmp27, tmp38, tmp41, tmp42, tmp46, tmp49, tmp52, tmp53, tmp57, tmp60, tmp63, tmp66, tmp69, tmp72, tmp75, tmp78, tmp79, tmp80, tmp85, tmp88, tmp89, tmp90, tmp91, tmp97, tmp100, tmp101, tmp102, tmp103, tmp104, tmp105];
   const tmp115 = hasOwnProperty(Svg, obj18);
@@ -414,7 +414,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[76] = num6;
   cResult[77] = tmp115;
   tmp113 = tmp115;
-}) : ((width) => {
+}) : (function GuildBadgeTrophy(width) {
   let num = width.width;
   if (num === undefined) {
     num = 24;

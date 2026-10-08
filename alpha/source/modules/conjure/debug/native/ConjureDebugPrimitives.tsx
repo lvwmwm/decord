@@ -1,20 +1,20 @@
-// Module ID: 16780
-// Function ID: 16781
+// Module ID: 17055
+// Function ID: 17056
 // Name: ConjureDebugPrimitives
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4892, 1126, 3753, 16777, 5601, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 5086, 1126, 3827, 17052, 5375, 2]
 
-// Module 16780 (ConjureDebugPrimitives)
+// Module 17055 (ConjureDebugPrimitives)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import _modDef3753 from "module_3753" /* 3753 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 16777 */;
+import _modDef3827 from "module_3827" /* 3827 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 17052 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ obj7 = { height: "100%", backgroundColor: nativeDefault.colors.TEXT_BRAND };
 obj8 = { backgroundColor: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
 let closure_7 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugSnapshotToolbar(arg0) {
   let INVO50;
   let fetchState;
   let formatToPlainString;
@@ -73,7 +73,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
         const intl3 = tmp(1126).intl;
-        const stringResult = intl3.string(_modDef3753.oKEgiu);
+        const stringResult = intl3.string(_modDef3827.oKEgiu);
         cResult[6] = stringResult;
         tmp19 = stringResult;
       } else {
@@ -116,19 +116,19 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if ("loading" === fetchState) {
     tmp9 = hasOwnProperty(_false, { size: "small" });
   } else if ("failed" === fetchState) {
-    const obj5 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3753.ZVByPX) };
-    const Text2 = tmp(4892).Text;
+    const obj5 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3827.ZVByPX) };
+    const Text2 = tmp(5086).Text;
     intl2 = tmp(1126).intl;
     tmp9 = hasOwnProperty(Text2, obj5);
   } else {
     tmp9 = null;
     if (null != generatedAt) {
       const obj6 = { variant: "text-xs/normal", color: "text-muted", children: formatToPlainString(INVO50, obj7) };
-      const Text = tmp(4892).Text;
+      const Text = tmp(5086).Text;
       const intl = tmp(1126).intl;
       formatToPlainString = intl.formatToPlainString;
       obj7 = { time: tmpResult.formatObservedAt(generatedAt) };
-      INVO50 = _modDef3753.INVO50;
+      INVO50 = _modDef3827.INVO50;
       tmpResult = ConjureDebugFormat;
       tmp9 = hasOwnProperty(Text, obj6);
     }
@@ -137,7 +137,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = generatedAt;
   cResult[2] = tmp9;
   tmp6 = tmp9;
-}) : ((onRefresh) => {
+}) : (function DebugSnapshotToolbar(onRefresh) {
   let INVO50;
   let fetchState;
   let formatToPlainString;
@@ -157,7 +157,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if ("loading" === fetchState) {
     tmp4Result = tmp4(_false, { size: "small" });
   } else if ("failed" === fetchState) {
-    const obj3 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3753.ZVByPX) };
+    const obj3 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3827.ZVByPX) };
     const Text2 = Text_Text.Text;
     intl2 = intl4.intl;
     tmp4Result = tmp4(Text2, obj3);
@@ -169,20 +169,20 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const intl = intl4.intl;
       formatToPlainString = intl.formatToPlainString;
       obj6 = { time: obj5.formatObservedAt(generatedAt) };
-      INVO50 = _modDef3753.INVO50;
+      INVO50 = _modDef3827.INVO50;
       obj5 = ConjureDebugFormat;
       tmp4Result = tmp4(Text, obj4);
     }
   }
   items = [hasOwnProperty(React3, obj2), ];
-  const obj7 = { variant: "secondary", size: "sm", text: intl3.string(_modDef3753.oKEgiu), onPress: onRefresh };
+  const obj7 = { variant: "secondary", size: "sm", text: intl3.string(_modDef3827.oKEgiu), onPress: onRefresh };
   const Button = components_Button_Button.Button;
   intl3 = intl4.intl;
   items[1] = hasOwnProperty(Button, obj7);
   return tmp2(React3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugSection(arg0) {
   let children;
   let items;
   let title;
@@ -217,7 +217,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = tmp5;
   cResult[5] = tmp9;
   tmp8 = tmp9;
-}) : ((arg0) => {
+}) : (function DebugSection(arg0) {
   let children;
   let items;
   let title;
@@ -227,7 +227,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroRequire(React3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugNote(children) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -242,9 +242,11 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : ((children) => hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", children: children.children }));
+}) : (function DebugNote(children) {
+  return hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", children: children.children });
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugStatRow(arg0) {
   let critical;
   let hint;
   let items;
@@ -292,7 +294,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               let tmp19 = null;
               if (null != hint) {
                 const obj3 = { variant: "text-xs/normal", color: "text-muted", children: hint };
-                tmp19 = hasOwnProperty(tmp(4892).Text, obj3);
+                tmp19 = hasOwnProperty(tmp(5086).Text, obj3);
               }
               cResult[13] = hint;
               cResult[14] = tmp19;
@@ -343,7 +345,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp6;
   cResult[4] = tmp10;
   tmp9 = tmp10;
-}) : ((arg0) => {
+}) : (function DebugStatRow(arg0) {
   let critical;
   let hint;
   let items;
@@ -378,7 +380,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroRequire(React3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugMeter(arg0) {
   let formatValue;
   let items;
   let items1;
@@ -548,7 +550,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = used;
   cResult[2] = formatValueResult1;
   tmp6 = formatValueResult1;
-}) : ((arg0) => {
+}) : (function DebugMeter(arg0) {
   let formatValue;
   let items;
   let items1;

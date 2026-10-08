@@ -1,19 +1,19 @@
-// Module ID: 9025
-// Function ID: 9026
+// Module ID: 11127
+// Function ID: 11128
 // Name: useThermalState
-// Dependencies: [1369, 9017, 558, 576, 2]
+// Dependencies: [1381, 5294, 558, 576, 2]
 // Exports: getThermalState
 
-// Module 9025 (useThermalState)
+// Module 11127 (useThermalState)
 import react from "react" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import ThermalUtilsDefault from "ThermalUtils" /* 9017 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import ThermalUtilsDefault from "ThermalUtils" /* 5294 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ThermalStates = { UNHANDLED: -1, [-1]: "UNHANDLED", NOMINAL: 0, [0]: "NOMINAL", FAIR: 1, [1]: "FAIR", SERIOUS: 2, [2]: "SERIOUS", CRITICAL: 3, [3]: "CRITICAL" };
 let obj2 = { NONE: 0, [0]: "NONE", LIGHT: 1, [1]: "LIGHT", MODERATE: 2, [2]: "MODERATE", SEVERE: 3, [3]: "SEVERE", CRITICAL: 4, [4]: "CRITICAL", EMERGENCY: 5, [5]: "EMERGENCY", SHUTDOWN: 6, [6]: "SHUTDOWN" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useThermalState() {
   let tmp5;
   const obj = react;
   const cResult = obj.c(2);
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[1];
   }
   return tmp5;
-}) : (() => {
+}) : (function useThermalState() {
   let UNHANDLED;
   const obj = ThermalUtilsDefault;
   const rawThermalState = obj.useRawThermalState();
@@ -73,7 +73,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj3 = PlatformUtils;
     const tmp11 = require;
     if (!obj3.isIOS()) {
-      const tmp11Result = tmp11(1369);
+      const tmp11Result = tmp11(1381);
       if (tmp11Result.isAndroid()) {
         if (obj2.NONE === rawThermalState) {
           UNHANDLED = obj.NOMINAL;
@@ -119,7 +119,7 @@ export const getThermalState = function getThermalState() {
     const obj3 = PlatformUtils;
     const tmp11 = require;
     if (!obj3.isIOS()) {
-      const tmp11Result = tmp11(1369);
+      const tmp11Result = tmp11(1381);
       if (tmp11Result.isAndroid()) {
         if (obj2.NONE === rawThermalState) {
           UNHANDLED = obj.NOMINAL;

@@ -1,26 +1,26 @@
-// Module ID: 12344
-// Function ID: 12345
+// Module ID: 12440
+// Function ID: 12441
 // Name: ContactSyncUtils
-// Dependencies: [5, 17, 5447, 12343, 12342, 1085, 1370, 5089, 1260, 584, 12345, 2028, 1242, 558, 576, 504, 1390, 2115, 4571, 5099, 2]
+// Dependencies: [5, 17, 5757, 12439, 12438, 1085, 1382, 5944, 1272, 584, 12441, 2040, 1254, 558, 576, 504, 1402, 2127, 4763, 5940, 2]
 // Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getOpenLearnMoreUrl, getStoredContacts, handleOpenLearnMoreLink, isContactSyncAvailable, isContactSyncEnabled, transitionToAddFriendsLandingPage, uploadContacts
 
-// Module 12344 (ContactSyncUtils)
+// Module 12440 (ContactSyncUtils)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
-import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1370 */;
-import FlagUtils from "FlagUtils" /* 1390 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import LinkingDefault from "Linking" /* 4571 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5089 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
-import ContactSyncManager from "ContactSyncManager" /* 12345 */;
+import SentryUtilsDefault from "SentryUtils" /* 1254 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
+import FlagUtils from "FlagUtils" /* 1402 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
+import LinkingDefault from "Linking" /* 4763 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5944 */;
+import ContactSyncManager from "ContactSyncManager" /* 12441 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5447 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 12343 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12342 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5757 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 12439 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12438 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -141,7 +141,7 @@ const error = new Error("No contact permissions");
 const error1 = new Error("No phone number");
 const error2 = new Error("Failed to fetch contact image");
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useContactSyncAccount() {
   let localAccount;
   let tmp4;
   let tmp5;
@@ -161,14 +161,14 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useContactSyncAccount() {
   let localAccount;
   const items = [ConnectedAccountsStore];
   obj = get_initialized;
   return obj.useStateFromStores(items, () => localAccount.getLocalAccount(constants.CONTACTS));
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useContactSyncEnabled() {
   let tmp4;
   let tmp5;
   obj = react;
@@ -188,7 +188,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useContactSyncEnabled() {
   const items = [ConnectedAccountsStore];
   obj = get_initialized;
   return obj.useStateFromStores(items, () => {
@@ -197,7 +197,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useContactSyncUserIsDiscoverable() {
   let tmp5;
   let tmp8;
   obj = react;
@@ -237,7 +237,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[6] = tmp5 || tmp8;
   cResult[7] = obj2;
   tmp12 = obj2;
-}) : (() => {
+}) : (function useContactSyncUserIsDiscoverable() {
   const FriendDiscoverySettings = UserSettings.FriendDiscoverySettings;
   const setting = FriendDiscoverySettings.useSetting();
   obj = FlagUtils;

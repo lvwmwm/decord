@@ -1,375 +1,134 @@
-// Module ID: 6457
-// Function ID: 6458
+// Module ID: 6635
+// Function ID: 6636
 // Name: PhoneOrEmailInput
-// Dependencies: [32, 109, 19, 21, 558, 576, 6458, 6459, 1126, 6461, 2]
+// Dependencies: [32, 109, 19, 21, 558, 576, 6636, 6637, 1126, 6639, 2]
 
-// Module 6457 (PhoneOrEmailInput)
+// Module 6635 (PhoneOrEmailInput)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
-import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 6458 */;
-import useStableCallbackDefault from "useStableCallback" /* 6459 */;
+import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 6636 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, importDefault, onChange;
+let _require, dependencyMap;
 
-let closure_3 = ["onChange", "alpha2", "countryCode", "onPressCountrySelector", "forceMode"];
+let closure_3 = ["onChange", "alpha2", "countryCode", "onPressCountrySelector", "forceMode", "ref"];
 let _slicedToArray = _slicedToArray_mod;
-let _objectWithoutProperties = _objectWithoutProperties_mod;
 let react = react_mod;
 const jsx = Fragment.jsx;
-const forwardRef = react.forwardRef;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((onChange, ref) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PhoneOrEmailInput(onChange) {
   let alpha2;
   let closure_0;
-  let closure_1;
   let closure_2;
-  let closure_5;
   let countryCode;
   let forceMode;
   let onPressCountrySelector;
-  let tmp15;
+  let ref1;
   let tmp16;
-  let tmp24;
-  let tmp4;
-  let tmp8;
+  let tmp17;
+  let tmp6;
+  let tmp7;
   let tmp9;
   let tmp = _require;
   let obj = require("react");
-  const cResult = obj.c(27);
+  const cResult = obj.c(28);
   if (cResult[0] !== onChange) {
     onChange = onChange.onChange;
     dependencyMap = onChange;
     ({ alpha2, countryCode } = onChange);
     _require = countryCode;
     ({ onPressCountrySelector, forceMode } = onChange);
-    importDefault = forceMode;
-    const tmp12 = _objectWithoutProperties(onChange, closure_3);
+    let closure_1 = forceMode;
     cResult[0] = onChange;
     cResult[1] = alpha2;
     cResult[2] = countryCode;
     cResult[3] = forceMode;
     cResult[4] = onChange;
     cResult[5] = onPressCountrySelector;
-    cResult[6] = tmp12;
-    tmp9 = tmp12;
-    tmp8 = onPressCountrySelector;
-    class L {
-      constructor(cResult) {
-        closure_3(cResult);
-        let str = "";
-        const obj = PhoneOrEmailUtils;
-        if (obj.shouldShowCountryCodeSelector(closure_1, cResult)) {
+    cResult[6] = onChange.ref;
+    const tmp13 = _objectWithoutProperties(onChange, closure_3);
+    class E {
+      constructor(arg0) {
+        tmp = closure_3(onChange);
+        obj = closure_0(closure_2[6]);
+        str = "";
+        if (obj.shouldShowCountryCodeSelector(closure_1, onChange)) {
           str = closure_0;
         }
         if (closure_2 != null) {
-          closure_2(cResult, str);
+          tmp2 = closure_2(onChange, str);
         }
+        return;
       }
     }
-    tmp4 = alpha2;
+    cResult[7] = tmp13;
+    tmp9 = ref;
+    tmp6 = forceMode;
+    tmp7 = onChange;
   } else {
-    tmp4 = cResult[1];
     _require = cResult[2];
-    importDefault = cResult[3];
+    closure_1 = cResult[3];
     dependencyMap = cResult[4];
-    tmp8 = cResult[5];
     tmp9 = cResult[6];
   }
-  closure_3 = ref(react.useState(""), 2)[1];
-  ref(react.useState(""), 2);
-  ref = react.useRef(null);
-  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function p() {
-      return {
-        blur() {
-          const current = ref.current;
-          let blurResult;
-          if (current != null) {
-            blurResult = current.blur();
-          }
-          return blurResult;
-        },
-        focus() {
-          const current = ref.current;
-          let focusResult;
-          if (current != null) {
-            focusResult = current.focus();
-          }
-          return focusResult;
-        },
-        isFocused() {
-          const current = ref.current;
-          let flag;
-          if (current != null) {
-            flag = current.isFocused();
-          }
-          if (flag == null) {
-            flag = false;
-          }
-          return flag;
-        },
-        setText(arg0) {
-          closure_1_3(arg0);
-          const current = ref.current;
-          if (current != null) {
-            current.setText(arg0);
-          }
-        },
-        getText() {
-          const current = ref.current;
-          let str;
-          if (current != null) {
-            str = current.getText();
-          }
-          if (str == null) {
-            str = "";
-          }
-          return str;
-        },
-        measure(arg0) {
-          const current = ref.current;
-          let measureResult;
-          if (current != null) {
-            measureResult = current.measure(arg0);
-          }
-          return measureResult;
-        },
-        measureInWindow(arg0) {
-          const current = ref.current;
-          let measureInWindowResult;
-          if (current != null) {
-            measureInWindowResult = current.measureInWindow(arg0);
-          }
-          return measureInWindowResult;
-        },
-        measureLayout(arg0, arg1, arg2) {
-          const current = ref.current;
-          let measureLayoutResult;
-          if (current != null) {
-            measureLayoutResult = current.measureLayout(arg0, arg1, arg2);
-          }
-          return measureLayoutResult;
-        }
-      };
-    };
+  closure_3 = ref1(react.useState(""), 2)[1];
+  ref1(react.useState(""), 2);
+  ref1 = react.useRef(null);
+  const obj2 = react;
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        obj = { blur() { /* body not rendered: F138959 */ }, focus() { /* body not rendered: F138960 */ }, isFocused() { /* body not rendered: F138961 */ }, setText() { /* body not rendered: F138962 */ }, getText() { /* body not rendered: F138963 */ }, measure() { /* body not rendered: F138964 */ }, measureInWindow() { /* body not rendered: F138965 */ }, measureLayout() { /* body not rendered: F138966 */ } };
+        return obj;
+      }
+    }
     const items = [];
-    cResult[7] = fn;
-    cResult[8] = items;
-    tmp16 = items;
-    tmp15 = fn;
+    cResult[8] = S;
+    cResult[9] = items;
+    tmp17 = items;
+    tmp16 = S;
   } else {
-    tmp15 = cResult[7];
-    tmp16 = cResult[8];
+    class S {
+      constructor() {
+        obj = { blur() { /* body not rendered: F138959 */ }, focus() { /* body not rendered: F138960 */ }, isFocused() { /* body not rendered: F138961 */ }, setText() { /* body not rendered: F138962 */ }, getText() { /* body not rendered: F138963 */ }, measure() { /* body not rendered: F138964 */ }, measureInWindow() { /* body not rendered: F138965 */ }, measureLayout() { /* body not rendered: F138966 */ } };
+        return obj;
+      }
+    }
+    tmp17 = cResult[9];
   }
-  const imperativeHandle = obj2.useImperativeHandle(ref, tmp15, tmp16);
-  tmp(6458);
-  if (cResult[9] === tmp5) {
-    if (cResult[10] === tmp6) {
-      let tmp20;
-      let tmp23;
-      if (cResult[11] === tmp7) {
-        tmp20 = cResult[12];
+  const imperativeHandle = obj2.useImperativeHandle(tmp9, tmp16, tmp17);
+  tmp(6636);
+  if (cResult[10] === tmp5) {
+    class S {
+      constructor() {
+        obj = { blur() { /* body not rendered: F138959 */ }, focus() { /* body not rendered: F138960 */ }, isFocused() { /* body not rendered: F138961 */ }, setText() { /* body not rendered: F138962 */ }, getText() { /* body not rendered: F138963 */ }, measure() { /* body not rendered: F138964 */ }, measureInWindow() { /* body not rendered: F138965 */ }, measureLayout() { /* body not rendered: F138966 */ } };
+        return obj;
       }
-      const tmp22 = useStableCallbackDefault(tmp20);
-      _objectWithoutProperties = tmp22;
-      if (cResult[13] !== tmp22) {
-        class W {
-          constructor() {
-            const current = ref.current;
-            let str;
-            const tmp = closure_5;
-            if (current != null) {
-              str = current.getText();
-            }
-            if (str == null) {
-              str = "";
-            }
-            tmp(str);
-          }
-        }
-        cResult[13] = tmp22;
-        cResult[14] = W;
-        tmp23 = W;
-      } else {
-        class W {
-          constructor() {
-            const current = ref.current;
-            let str;
-            const tmp = closure_5;
-            if (current != null) {
-              str = current.getText();
-            }
-            if (str == null) {
-              str = "";
-            }
-            tmp(str);
-          }
-        }
-      }
-      if (cResult[15] === tmp5) {
-        let tmp28;
-        class W {
-          constructor() {
-            const current = ref.current;
-            let str;
-            const tmp = closure_5;
-            if (current != null) {
-              str = current.getText();
-            }
-            if (str == null) {
-              str = "";
-            }
-            tmp(str);
-          }
-        }
-        const effect = obj2.useEffect(tmp23, tmp24);
-        let combined;
-        if (tmp19) {
-          class W {
-            constructor() {
-              const current = ref.current;
-              let str;
-              const tmp = closure_5;
-              if (current != null) {
-                str = current.getText();
-              }
-              if (str == null) {
-                str = "";
-              }
-              tmp(str);
-            }
-          }
-          const _HermesInternal = HermesInternal;
-          let str = " ";
-          combined = "" + tmp4 + " " + tmp5;
-        }
-        if (combined == null) {
-          class W {
-            constructor() {
-              const current = ref.current;
-              let str;
-              const tmp = closure_5;
-              if (current != null) {
-                str = current.getText();
-              }
-              if (str == null) {
-                str = "";
-              }
-              tmp(str);
-            }
-          }
-        }
-        const _Symbol = Symbol;
-        if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-          class W {
-            constructor() {
-              const current = ref.current;
-              let str;
-              const tmp = closure_5;
-              if (current != null) {
-                str = current.getText();
-              }
-              if (str == null) {
-                str = "";
-              }
-              tmp(str);
-            }
-          }
-          const stringResult = obj3.string(tmp(1126).t.GwAW3k);
-          cResult[18] = stringResult;
-          tmp28 = stringResult;
-        } else {
-          class W {
-            constructor() {
-              const current = ref.current;
-              let str;
-              const tmp = closure_5;
-              if (current != null) {
-                str = current.getText();
-              }
-              if (str == null) {
-                str = "";
-              }
-              tmp(str);
-            }
-          }
-        }
-        if (cResult[19] === tmp8) {
-          class W {
-            constructor() {
-              const current = ref.current;
-              let str;
-              const tmp = closure_5;
-              if (current != null) {
-                str = current.getText();
-              }
-              if (str == null) {
-                str = "";
-              }
-              tmp(str);
-            }
-          }
-          if (cResult[22] === combined) {
-            class W {
-              constructor() {
-                const current = ref.current;
-                let str;
-                const tmp = closure_5;
-                if (current != null) {
-                  str = current.getText();
-                }
-                if (str == null) {
-                  str = "";
-                }
-                tmp(str);
-              }
-            }
-          }
-          const SplitTextInput = tmp(6461).SplitTextInput;
-          const merged = Object.assign(tmp9);
-          const tmp36 = <SplitTextInput ref={ref} onChange={tmp20} leadingText={combined} leadingPressableProps={tmp30} />;
-          cResult[22] = combined;
-          cResult[23] = tmp20;
-          cResult[24] = tmp30;
-          cResult[25] = tmp9;
-          cResult[26] = tmp36;
-        }
-        const obj5 = { onPress: tmp8, accessibilityRole: "button", accessibilityLabel: combined, accessibilityHint: tmp28 };
-        cResult[19] = tmp8;
-        cResult[20] = combined;
-        cResult[21] = obj5;
-      }
-      const items1 = [tmp5, tmp22];
-      cResult[15] = tmp5;
-      cResult[16] = tmp22;
-      cResult[17] = items1;
-      tmp24 = items1;
     }
   }
-  class L {
-    constructor(cResult) {
-      closure_3(cResult);
-      let str = "";
-      const obj = PhoneOrEmailUtils;
-      if (obj.shouldShowCountryCodeSelector(closure_1, cResult)) {
+  class E {
+    constructor(arg0) {
+      tmp = closure_3(onChange);
+      obj = closure_0(closure_2[6]);
+      str = "";
+      if (obj.shouldShowCountryCodeSelector(closure_1, onChange)) {
         str = closure_0;
       }
       if (closure_2 != null) {
-        closure_2(cResult, str);
+        tmp2 = closure_2(onChange, str);
       }
+      return;
     }
   }
-  cResult[9] = tmp5;
-  cResult[10] = tmp6;
-  cResult[11] = tmp7;
-  cResult[12] = L;
-  tmp20 = L;
-}) : ((onChange, ref) => {
+  cResult[10] = tmp5;
+  cResult[11] = tmp6;
+  cResult[12] = tmp7;
+  cResult[13] = E;
+}) : (function PhoneOrEmailInput(onChange) {
   let _undefined;
   let alpha2;
   let c4;
@@ -380,16 +139,17 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   ({ alpha2, countryCode } = onChange);
   const onPressCountrySelector = onChange.onPressCountrySelector;
   const forceMode = onChange.forceMode;
-  const merged = Object.assign(onChange, Object.assign({ onChange: 0, alpha2: 0, countryCode: 0, onPressCountrySelector: 0, forceMode: 0 }));
+  const ref = onChange.ref;
+  const merged = Object.assign(onChange, Object.assign({ onChange: 0, alpha2: 0, countryCode: 0, onPressCountrySelector: 0, forceMode: 0, ref: 0 }));
   _slicedToArray = undefined;
   react = undefined;
   let obj = react;
   [tmp3, c4] = _slicedToArray(react.useState(""), 2);
   const tmp2 = _slicedToArray(react.useState(""), 2);
-  ref = react.useRef(null);
+  const ref1 = react.useRef(null);
   const imperativeHandle = react.useImperativeHandle(ref, () => ({
     blur() {
-      const current = ref.current;
+      const current = ref1.current;
       let blurResult;
       if (current != null) {
         blurResult = current.blur();
@@ -397,7 +157,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       return blurResult;
     },
     focus() {
-      const current = ref.current;
+      const current = ref1.current;
       let focusResult;
       if (current != null) {
         focusResult = current.focus();
@@ -405,7 +165,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       return focusResult;
     },
     isFocused() {
-      const current = ref.current;
+      const current = ref1.current;
       let flag;
       if (current != null) {
         flag = current.isFocused();
@@ -417,13 +177,13 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     },
     setText(arg0) {
       _undefined(arg0);
-      const current = ref.current;
+      const current = ref1.current;
       if (current != null) {
         current.setText(arg0);
       }
     },
     getText() {
-      const current = ref.current;
+      const current = ref1.current;
       let str;
       if (current != null) {
         str = current.getText();
@@ -434,7 +194,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       return str;
     },
     measure(arg0) {
-      const current = ref.current;
+      const current = ref1.current;
       let measureResult;
       if (current != null) {
         measureResult = current.measure(arg0);
@@ -442,7 +202,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       return measureResult;
     },
     measureInWindow(arg0) {
-      const current = ref.current;
+      const current = ref1.current;
       let measureInWindowResult;
       if (current != null) {
         measureInWindowResult = current.measureInWindow(arg0);
@@ -450,7 +210,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       return measureInWindowResult;
     },
     measureLayout(arg0, arg1, arg2) {
-      const current = ref.current;
+      const current = ref1.current;
       let measureLayoutResult;
       if (current != null) {
         measureLayoutResult = current.measureLayout(arg0, arg1, arg2);
@@ -476,7 +236,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   react = tmp10;
   const items1 = [countryCode, tmp10];
   const effect = react.useEffect(() => {
-    const current = ref.current;
+    const current = ref1.current;
     let str;
     const tmp = closure_6;
     if (current != null) {
@@ -510,11 +270,11 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     intl = intl2.intl;
     return obj;
   }, items2);
-  const obj3 = { ref, onChange: callback, leadingText: combined, leadingPressableProps: memo };
+  const obj3 = { ref: ref1, onChange: callback, leadingText: combined, leadingPressableProps: memo };
   const SplitTextInput = tmp6(tmp7[9]).SplitTextInput;
   const merged1 = Object.assign(merged);
   return combined(SplitTextInput, obj3);
-}));
+});
 let result = size.fileFinishedImporting("modules/phone/native/PhoneOrEmailInput.tsx");
 
-export default forwardRefResult;
+export default tmp2;

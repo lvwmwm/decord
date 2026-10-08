@@ -1,21 +1,19 @@
-// Module ID: 9769
-// Function ID: 9770
+// Module ID: 10972
+// Function ID: 10973
 // Name: ModeratorStartStageHeader
-// Dependencies: [19, 17, 21, 4896, 6075, 558, 576, 9730, 9724, 2]
+// Dependencies: [19, 17, 21, 5090, 6261, 558, 576, 10933, 10929, 2]
 
-// Module 9769 (ModeratorStartStageHeader)
+// Module 10972 (ModeratorStartStageHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import NavigatorConstants from "NavigatorConstants" /* 6075 */;
-import StageActionHeader from "StageActionHeader" /* 9724 */;
-import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 9730 */;
+import NavigatorConstants from "NavigatorConstants" /* 6261 */;
+import StageActionHeader from "StageActionHeader" /* 10929 */;
+import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 10933 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channel;
 
 let closure_4;
 let hasOwnProperty;
@@ -26,7 +24,7 @@ let obj = { header: obj2 };
 obj2 = { height: NavigatorConstants.NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", paddingHorizontal: 8, marginTop: 4, overflow: "visible" };
 let closure_6 = createStyles.createStyles(obj);
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ModeratorStartStageHeader(channel) {
   let items;
   let tmp7;
   let tmp8;
@@ -95,13 +93,13 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
   let tmp13 = speaker;
   if (tmp13) {
     const obj6 = { channelId: channel.id };
-    tmp13 = React3(tmp(9724).MusicMuteButton, obj6);
+    tmp13 = React3(tmp(10929).MusicMuteButton, obj6);
   }
   cResult[3] = channel.id;
   cResult[4] = speaker;
   cResult[5] = tmp13;
   tmp12 = tmp13;
-}) : ((channel) => {
+}) : (function ModeratorStartStageHeader(channel) {
   let items;
   channel = channel.channel;
   const tmp = closure_6();
@@ -116,7 +114,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
   const tmp6 = View;
   if (speaker) {
     const obj2 = { channelId: channel.id };
-    speaker = tmp7(tmp8(9724).MusicMuteButton, obj2);
+    speaker = tmp7(tmp8(10929).MusicMuteButton, obj2);
   }
   items[2] = speaker;
   const obj3 = { channelId: channel.id };

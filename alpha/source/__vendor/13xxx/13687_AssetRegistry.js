@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/contact_sync/native/images", width: 40, height: 40, scales: [2, 3], hash: "1d68443a64aaff8d1d20c2355b47322a", name: "cta", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 250, height: 125, scales: [2, 3], hash: "055ef15e97264c0633986165b3aae3ac", name: "img_outbound_promotion_redemption", type: "png" });

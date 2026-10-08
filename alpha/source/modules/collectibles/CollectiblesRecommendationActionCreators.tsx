@@ -1,13 +1,13 @@
-// Module ID: 14505
-// Function ID: 14506
+// Module ID: 14765
+// Function ID: 14766
 // Name: CollectiblesRecommendationActionCreators
-// Dependencies: [5, 1085, 584, 1282, 5319, 6852, 2]
+// Dependencies: [5, 1085, 584, 1294, 5631, 7040, 2]
 // Exports: maybeFetchCollectiblesRecommendations
 
-// Module 14505 (CollectiblesRecommendationActionCreators)
+// Module 14765 (CollectiblesRecommendationActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

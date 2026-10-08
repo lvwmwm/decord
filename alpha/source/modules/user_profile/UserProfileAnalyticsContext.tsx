@@ -1,24 +1,24 @@
-// Module ID: 7872
-// Function ID: 7873
+// Module ID: 8290
+// Function ID: 8291
 // Name: UserProfileAnalyticsContext
-// Dependencies: [19, 21, 6664, 7873, 558, 576, 1266, 2]
+// Dependencies: [19, 21, 6841, 8291, 558, 576, 1278, 2]
 // Exports: UserProfileAnalyticsProvider
 
-// Module 7872 (UserProfileAnalyticsContext)
+// Module 8290 (UserProfileAnalyticsContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6664 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 7873 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6841 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8291 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const v1 = tmp(1266);
+const v1 = tmp(1278);
 const jsx = Fragment.jsx;
 let context = react.createContext(null);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateUserProfileAnalyticsContext(arg0) {
   let channelId;
   let first;
   let guildId;
@@ -77,7 +77,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = userId;
   cResult[9] = obj2;
   tmp8 = obj2;
-}) : ((layout) => {
+}) : (function useCreateUserProfileAnalyticsContext(layout) {
   layout = layout.layout;
   const userId = layout.userId;
   const guildId = layout.guildId;
@@ -109,13 +109,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfileAnalyticsContext() {
   let analyticsLocations;
   let context;
   let obj = context(576);
   const cResult = obj.c(18);
   context = react.useContext(closure_5);
-  analyticsLocations = analyticsLocations(6664)().analyticsLocations;
+  analyticsLocations = analyticsLocations(6841)().analyticsLocations;
   if (cResult[0] === analyticsLocations) {
     let tmp3;
     if (cResult[1] === context) {
@@ -149,7 +149,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               }
             }
           }
-          class P {
+          class I {
             constructor(arg0) {
               if (null != context) {
                 const obj = { analyticsLocations };
@@ -174,7 +174,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           cResult[17] = tmp10;
           tmp9 = tmp10;
         }
-        class P {
+        class I {
           constructor(arg0) {
             if (null != context) {
               const obj = { analyticsLocations };
@@ -188,8 +188,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
         cResult[9] = analyticsLocations;
         cResult[10] = context;
-        cResult[11] = P;
-        tmp8 = P;
+        cResult[11] = I;
+        tmp8 = I;
       }
       cResult[6] = analyticsLocations;
       cResult[7] = context;
@@ -201,7 +201,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[5] = tmp5;
     tmp4 = tmp5;
   }
-  const fn = function o(arg0) {
+  const fn = function s(arg0) {
     if (null != context) {
       const obj = { analyticsLocations };
       const trackUserProfileAction = UserProfileAnalyticsUtils.trackUserProfileAction;
@@ -215,14 +215,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = context;
   cResult[2] = fn;
   tmp3 = fn;
-}) : (() => {
+}) : (function useUserProfileAnalyticsContext() {
   let analyticsLocations;
   let items;
   let items1;
   let items2;
   let items3;
   const context = react.useContext(closure_5);
-  analyticsLocations = analyticsLocations(6664)().analyticsLocations;
+  analyticsLocations = analyticsLocations(6841)().analyticsLocations;
   let obj = {
     context,
     trackUserProfileAction: react.useCallback((arg0) => {

@@ -1,12 +1,12 @@
-// Module ID: 13221
-// Function ID: 13222
+// Module ID: 13521
+// Function ID: 13522
 // Name: MobileNitroManageSubscriptionsSettingsExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1452, 558, 576, 2]
 // Exports: getMobileNitroManageSubscriptionsSettingsExperiment
 
-// Module 13221 (MobileNitroManageSubscriptionsSettingsExperiment)
+// Module 13521 (MobileNitroManageSubscriptionsSettingsExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let obj = { name: "2026-06-macaron", kind: "user", defaultConfig: { enabled: fal
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMobileNitroManageSubscriptionsSettingsExperiment(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -29,7 +29,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return apexExperiment.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useMobileNitroManageSubscriptionsSettingsExperiment(location) {
   const obj = { location: location.location };
   return apexExperiment.useConfig(obj).enabled;
 });

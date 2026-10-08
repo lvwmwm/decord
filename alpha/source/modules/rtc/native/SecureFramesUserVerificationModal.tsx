@@ -1,33 +1,31 @@
-// Module ID: 9384
-// Function ID: 9385
+// Module ID: 8805
+// Function ID: 8806
 // Name: SecureFramesUserVerificationModal
-// Dependencies: [32, 19, 17, 2051, 1377, 9380, 1085, 1192, 21, 4896, 587, 558, 576, 504, 5048, 9385, 9387, 9359, 9388, 9378, 5099, 4574, 4798, 1126, 9389, 9382, 8048, 6664, 7861, 9390, 1188, 6021, 5916, 4892, 5600, 9391, 9393, 5601, 6626, 2]
+// Dependencies: [32, 19, 17, 2063, 1389, 8801, 1085, 1204, 21, 5090, 587, 558, 576, 504, 5405, 8806, 8808, 8781, 8809, 8800, 5940, 4766, 4992, 1126, 8810, 8803, 8457, 6841, 8279, 8811, 1200, 6207, 6189, 5086, 5373, 8812, 8814, 5375, 6803, 2]
 
-// Module 9384 (SecureFramesUserVerificationModal)
+// Module 8805 (SecureFramesUserVerificationModal)
 import nativeDefault from "native" /* 587 */;
 import intl8 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import FormConstants from "FormConstants" /* 1192 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 4798 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
-import showShareActionSheet from "showShareActionSheet" /* 8048 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9378 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 9382 */;
+import native from "native" /* 1200 */;
+import FormConstants from "FormConstants" /* 1204 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 4992 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
+import showShareActionSheet from "showShareActionSheet" /* 8457 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 8800 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 8803 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import UserStore from "UserStore" /* 1377 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9380 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import UserStore from "UserStore" /* 1389 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 8801 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let userId;
 
 let c10;
 let c9;
@@ -48,13 +46,13 @@ const ANDROID_FOREGROUND_RIPPLE = FormConstants.ANDROID_FOREGROUND_RIPPLE;
 let obj = { container: obj2, footer: { flex: 1, gap: 16, justifyContent: "flex-end" }, footerText: { textAlign: "center" }, header: { height: 56, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, subtitle: { textAlign: "center" }, code: { marginTop: 24 }, helpMessage: { marginBottom: 16 } };
 obj2 = { flex: 1, padding: 16, flexDirection: "column", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 let closure_18 = createStyles.createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFramesUserVerificationModal(userId) {
   let first;
   let name;
   let sourceAnalyticsLocations;
   let tmp10;
-  let tmp14;
-  let tmp17;
+  let tmp13;
+  let tmp16;
   let tmp7;
   let tmp9;
   const tmp = userId;
@@ -105,18 +103,28 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
     }
   }
   if (cResult[4] !== channelId) {
-    class I {
+    class V {
       constructor() {
-        return closure_8.getUser(userId);
+        channel = closure_7.getChannel(channelId);
+        guildId = undefined;
+        if (channel != null) {
+          guildId = channel.getGuildId();
+        }
+        return guildId;
       }
     }
     cResult[4] = channelId;
-    cResult[5] = tmp11;
-    tmp10 = tmp11;
+    cResult[5] = V;
+    tmp10 = V;
   } else {
-    class I {
+    class V {
       constructor() {
-        return closure_8.getUser(userId);
+        channel = closure_7.getChannel(channelId);
+        guildId = undefined;
+        if (channel != null) {
+          guildId = channel.getGuildId();
+        }
+        return guildId;
       }
     }
   }
@@ -125,51 +133,76 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   let obj4 = channelId(tmp2[14]);
   name = obj4.useName(stateFromStores1, null, stateFromStores);
   if (cResult[6] !== userId) {
-    class I {
+    class V {
       constructor() {
-        return closure_8.getUser(userId);
+        channel = closure_7.getChannel(channelId);
+        guildId = undefined;
+        if (channel != null) {
+          guildId = channel.getGuildId();
+        }
+        return guildId;
       }
     }
-    tmp15[0] = userId;
+    tmp14[0] = userId;
     cResult[6] = userId;
-    cResult[7] = tmp15;
-    tmp14 = tmp15;
+    cResult[7] = tmp14;
+    tmp13 = tmp14;
   } else {
-    class I {
+    class V {
       constructor() {
-        return closure_8.getUser(userId);
+        channel = closure_7.getChannel(channelId);
+        guildId = undefined;
+        if (channel != null) {
+          guildId = channel.getGuildId();
+        }
+        return guildId;
       }
     }
   }
   const tmpResult5 = tmp(name[15]);
-  const secureFramesPairwiseFingerprint = tmpResult5.useSecureFramesPairwiseFingerprint(tmp14);
+  const secureFramesPairwiseFingerprint = tmpResult5.useSecureFramesPairwiseFingerprint(tmp13);
   const fingerprint = secureFramesPairwiseFingerprint.fingerprint;
   const fingerprintUserKey = secureFramesPairwiseFingerprint.fingerprintUserKey;
   if (cResult[8] !== fingerprint) {
-    class I {
+    class V {
       constructor() {
-        return closure_8.getUser(userId);
+        channel = closure_7.getChannel(channelId);
+        guildId = undefined;
+        if (channel != null) {
+          guildId = channel.getGuildId();
+        }
+        return guildId;
       }
     }
-    tmp18[0] = fingerprint;
-    tmp18[1] = closure_9;
-    tmp18[2] = closure_10;
+    tmp17[0] = fingerprint;
+    tmp17[1] = closure_9;
+    tmp17[2] = closure_10;
     cResult[8] = fingerprint;
-    cResult[9] = tmp18;
-    tmp17 = tmp18;
+    cResult[9] = tmp17;
+    tmp16 = tmp17;
   } else {
-    class I {
+    class V {
       constructor() {
-        return closure_8.getUser(userId);
+        channel = closure_7.getChannel(channelId);
+        guildId = undefined;
+        if (channel != null) {
+          guildId = channel.getGuildId();
+        }
+        return guildId;
       }
     }
   }
   const tmpResult6 = tmp(name[16]);
-  const readableSecureFramesFingerprint = tmpResult6.useReadableSecureFramesFingerprint(tmp17);
+  const readableSecureFramesFingerprint = tmpResult6.useReadableSecureFramesFingerprint(tmp16);
   if (cResult[10] === channelId) {
-    class I {
+    class V {
       constructor() {
-        return closure_8.getUser(userId);
+        channel = closure_7.getChannel(channelId);
+        guildId = undefined;
+        if (channel != null) {
+          guildId = channel.getGuildId();
+        }
+        return guildId;
       }
     }
   }
@@ -178,7 +211,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[11] = fingerprintUserKey;
   cResult[12] = userId;
   cResult[13] = obj2;
-}) : ((userId) => {
+}) : (function SecureFramesUserVerificationModal(userId) {
   let Text;
   let intl;
   let intl2;
@@ -196,7 +229,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   let tmp18;
   let tmp19;
   let tmp24Result2;
-  const f100516 = () => {
+  const f99075 = () => {
     let items1;
     const intl = intl8.intl;
     const string = intl.string;
@@ -312,9 +345,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   const alertIfSecureFramesKeyInconsistent = obj10.useAlertIfSecureFramesKeyInconsistent(obj11);
   const items6 = [isUserSecureFramesVerified];
   const items7 = [isCurrentUserKeyPersistent, isOtherUserKeyPersistent, name];
-  [tmp18, tmp19] = fingerprint(fingerprintUserKey.useMemo(f100516, items6), 2);
+  [tmp18, tmp19] = fingerprint(fingerprintUserKey.useMemo(f99075, items6), 2);
   const items8 = [channelId, userId];
-  fingerprint(fingerprintUserKey.useMemo(f100516, items6), 2);
+  fingerprint(fingerprintUserKey.useMemo(f99075, items6), 2);
   const memo = fingerprintUserKey.useMemo(() => {
     const obj = SecureFramesUtils;
     const obj2 = { isCurrentUserKeyPersistent, isOtherUserKeyPersistent, otherUserNickname: name };

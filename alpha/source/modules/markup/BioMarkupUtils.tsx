@@ -1,17 +1,17 @@
-// Module ID: 8971
-// Function ID: 8972
+// Module ID: 11225
+// Function ID: 11226
 // Name: BioMarkupUtils
-// Dependencies: [5793, 5794, 4884, 1444, 7657, 4883, 1936, 12, 2]
+// Dependencies: [5397, 5398, 5078, 1456, 7978, 5077, 1948, 12, 2]
 // Exports: getOrParseBioAST, parseBioReact, parseBioReactWithCachedAST
 
-// Module 8971 (BioMarkupUtils)
-import LRUCacheDefault from "LRUCache" /* 1444 */;
-import _modDef1936 from "module_1936" /* 1936 */;
-import MarkupReactRulesDefault from "MarkupReactRules" /* 4884 */;
-import MarkupRulesDefault from "MarkupRules" /* 5794 */;
-import combineMarkupRules_mod from "combineMarkupRules" /* 5793 */;
-import MarkupParser_mod from "MarkupParser" /* 7657 */;
-import MarkupUtils from "MarkupUtils" /* 4883 */;
+// Module 11225 (BioMarkupUtils)
+import LRUCacheDefault from "LRUCache" /* 1456 */;
+import _modDef1948 from "module_1948" /* 1948 */;
+import MarkupReactRulesDefault from "MarkupReactRules" /* 5078 */;
+import MarkupRulesDefault from "MarkupRules" /* 5398 */;
+import combineMarkupRules_mod from "combineMarkupRules" /* 5397 */;
+import MarkupParser_mod from "MarkupParser" /* 7978 */;
+import MarkupUtils from "MarkupUtils" /* 5077 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -49,31 +49,44 @@ export const parseBioReact = function parseBioReact(bio, arg1, arg2, arg3) {
   const merged1 = Object.assign(arg2);
   return closure_5(bio, arg1, obj, arg3);
 };
-export const getOrParseBioAST = function getOrParseBioAST(arg0) {
-  let value = closure_3.get(arg0);
+export const getOrParseBioAST = function getOrParseBioAST(arg0, guildId) {
+  let str = guildId;
+  if (guildId == null) {
+    str = "";
+  }
+  const combined = "" + str + ":" + arg0;
+  let value = closure_3.get(combined);
   const obj = closure_3;
   if (null == value) {
-    const tmp3 = closure_6(arg0, true);
-    const result = obj.set(arg0, tmp3);
-    value = tmp3;
+    const obj2 = { guildId };
+    const tmp4 = closure_6(arg0, true, obj2);
+    const result = obj.set(combined, tmp4);
+    value = tmp4;
   }
   return value;
 };
-export const parseBioReactWithCachedAST = function parseBioReactWithCachedAST(cResult) {
+export const parseBioReactWithCachedAST = function parseBioReactWithCachedAST(cResult, guildId) {
   if (0 === cResult.trim().length) {
     return null;
   } else {
-    let value = closure_3.get(cResult);
+    let str = guildId;
+    if (guildId == null) {
+      str = "";
+    }
+    const _HermesInternal = HermesInternal;
+    const combined = "" + str + ":" + cResult;
+    let value = closure_3.get(combined);
     const obj = closure_3;
     if (null == value) {
-      const tmp4 = closure_6(cResult, true);
-      const result = obj.set(cResult, tmp4);
-      value = tmp4;
+      const obj2 = { guildId };
+      const tmp5 = closure_6(cResult, true, obj2);
+      const result = obj.set(combined, tmp5);
+      value = tmp5;
     }
-    const reactFor = _modDef1936.reactFor;
-    _modDef1936;
-    const obj2 = _modDef1936;
-    return reactFor(obj2.ruleOutput(c2, "react"))(value);
+    const reactFor = _modDef1948.reactFor;
+    _modDef1948;
+    const obj3 = _modDef1948;
+    return reactFor(obj3.ruleOutput(c2, "react"))(value);
   }
 };
 export const parseBioReactWithoutScrolling = reactParserForResult;

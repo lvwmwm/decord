@@ -1,39 +1,39 @@
-// Module ID: 11564
-// Function ID: 11565
+// Module ID: 11627
+// Function ID: 11628
 // Name: createAppMessageEmbed
-// Dependencies: [32, 1377, 7833, 5124, 1489, 8738, 10037, 6665, 11565, 7615, 1126, 11566, 8826, 7832, 9027, 11567, 11568, 1402, 1371, 11569, 6688, 10958, 7047, 9019, 4751, 1616, 8741, 6695, 4573, 1375, 2]
+// Dependencies: [32, 1389, 8251, 5436, 1501, 10613, 9567, 6842, 11628, 7861, 1126, 11629, 9185, 8250, 10617, 11630, 11631, 1414, 1383, 11632, 6865, 11153, 7235, 10618, 4945, 1628, 10640, 6872, 4765, 1387, 2]
 // Exports: createAppMessageEmbed, getAppLinkGateResult, handleTapAppMessageEmbed
 
-// Module 11564 (createAppMessageEmbed)
+// Module 11627 (createAppMessageEmbed)
 import intl7 from "intl" /* 1126 */;
-import URLUtilsDefault from "URLUtils" /* 1371 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import AvatarUtils from "AvatarUtils" /* 1402 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1489 */;
-import ToastUtils from "ToastUtils" /* 4573 */;
-import ChatInputUtils from "ChatInputUtils" /* 4751 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6665 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6688 */;
-import ClipboardUtils from "ClipboardUtils" /* 6695 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7047 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7615 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 7832 */;
-import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 7833 */;
-import FramesConstants from "FramesConstants" /* 8738 */;
-import ApplicationUtils from "ApplicationUtils" /* 8741 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 8826 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 9019 */;
-import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 9027 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 10037 */;
-import AppLauncherPlayUtils from "AppLauncherPlayUtils" /* 10958 */;
-import ContentClassificationVisibility from "ContentClassificationVisibility" /* 11565 */;
-import CodedLinksTypes from "CodedLinksTypes" /* 11566 */;
-import getPlayInContext from "getPlayInContext" /* 11567 */;
-import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 11568 */;
-import joinOrStartActivityInChannel2 from "joinOrStartActivityInChannel" /* 11569 */;
+import URLUtilsDefault from "URLUtils" /* 1383 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import AvatarUtils from "AvatarUtils" /* 1414 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
+import ToastUtils from "ToastUtils" /* 4765 */;
+import ChatInputUtils from "ChatInputUtils" /* 4945 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6842 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6865 */;
+import ClipboardUtils from "ClipboardUtils" /* 6872 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7235 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7861 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8250 */;
+import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 8251 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9185 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 9567 */;
+import FramesConstants from "FramesConstants" /* 10613 */;
+import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 10617 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10618 */;
+import ApplicationUtils from "ApplicationUtils" /* 10640 */;
+import AppLauncherPlayUtils from "AppLauncherPlayUtils" /* 11153 */;
+import ContentClassificationVisibility from "ContentClassificationVisibility" /* 11628 */;
+import CodedLinksTypes from "CodedLinksTypes" /* 11629 */;
+import getPlayInContext from "getPlayInContext" /* 11630 */;
+import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 11631 */;
+import joinOrStartActivityInChannel2 from "joinOrStartActivityInChannel" /* 11632 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1377 */;
-import ApplicationStore from "ApplicationStore" /* 5124 */;
+import UserStore from "UserStore" /* 1389 */;
+import ApplicationStore from "ApplicationStore" /* 5436 */;
 import size from "module_2" /* 2 */;
 
 const ApplicationAssetsStore = ApplicationAssetsStore2;
@@ -277,7 +277,7 @@ export const handleTapAppMessageEmbed = function handleTapAppMessageEmbed(appId)
     const tmp14 = require;
     if (bestActiveInput != null) {
       const openCustomKeyboard = bestActiveInput.openCustomKeyboard;
-      const obj12 = { type: tmp14(1616).KeyboardTypes.APP_LAUNCHER, context: obj13 };
+      const obj12 = { type: tmp14(1628).KeyboardTypes.APP_LAUNCHER, context: obj13 };
       obj13 = { initialRouteName: AppLauncherRouteName.APPLICATION_VIEW, initiallyExpanded: true, applicationId: appId.appId, referrerId: id, customId: value2 };
       openCustomKeyboard(obj12);
     }

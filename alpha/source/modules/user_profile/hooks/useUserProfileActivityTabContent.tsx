@@ -1,29 +1,27 @@
-// Module ID: 12935
-// Function ID: 12936
+// Module ID: 13214
+// Function ID: 13215
 // Name: useUserProfileActivityTabContent
-// Dependencies: [19, 8480, 4936, 5445, 4915, 7124, 1085, 3, 558, 576, 12936, 12882, 12884, 8027, 504, 2]
+// Dependencies: [19, 8966, 5106, 5755, 5111, 7309, 1085, 3, 558, 576, 13215, 13031, 13033, 8435, 504, 2]
 
-// Module 12935 (useUserProfileActivityTabContent)
+// Module 13214 (useUserProfileActivityTabContent)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1085 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8027 */;
-import maybeFetchContentInventoryOutboxDefault from "maybeFetchContentInventoryOutbox" /* 12936 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8435 */;
+import maybeFetchContentInventoryOutboxDefault from "maybeFetchContentInventoryOutbox" /* 13215 */;
 import react_mod from "react" /* 19 */;
-import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8480 */;
-import PresenceStore from "PresenceStore" /* 4936 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5445 */;
-import VoiceStateStore from "VoiceStateStore" /* 4915 */;
-import UserProfileStore from "UserProfileStore" /* 7124 */;
+import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8966 */;
+import PresenceStore from "PresenceStore" /* 5106 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5755 */;
+import VoiceStateStore from "VoiceStateStore" /* 5111 */;
+import UserProfileStore from "UserProfileStore" /* 7309 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let userId;
 
 let react = react_mod;
 const StatusTypes = Constants.StatusTypes;
 let tmp2 = new LoggerDefault("useUserProfileActivityTabContent");
 let closure_10 = tmp2;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfileActivityTabContent(userId) {
   let arr7;
   let closure_3;
   let currentUserId;
@@ -44,7 +42,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   userId = userId.userId;
   ({ guildId, currentUserId } = userId);
   if (cResult[0] !== userId) {
-    const fn = function f() {
+    const fn = function h() {
       const promise = maybeFetchContentInventoryOutboxDefault(userId);
       if (promise != null) {
         promise.catch((error) => {
@@ -95,16 +93,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
       tmp13 = cResult[8];
     }
     if (cResult[9] !== userId) {
-      class L {
+      class T {
         constructor() {
           return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
         }
       }
       cResult[9] = userId;
-      cResult[10] = L;
-      tmp15 = L;
+      cResult[10] = T;
+      tmp15 = T;
     } else {
-      class L {
+      class T {
         constructor() {
           return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
         }
@@ -115,7 +113,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
     react = tmp17;
     const _Symbol2 = Symbol;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      class L {
+      class T {
         constructor() {
           return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
         }
@@ -124,7 +122,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
       cResult[11] = items2;
       tmp18 = items2;
     } else {
-      class L {
+      class T {
         constructor() {
           return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
         }
@@ -133,7 +131,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
     if (cResult[12] === userId === currentUserId) {
       let tmp22;
       let tmp23;
-      class L {
+      class T {
         constructor() {
           return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
         }
@@ -142,7 +140,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
       const stateFromStores1 = tmpResult4.useStateFromStores(tmp18, tmp20);
       const _Symbol3 = Symbol;
       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-        class L {
+        class T {
           constructor() {
             return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
           }
@@ -151,14 +149,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
         cResult[15] = items3;
         tmp22 = items3;
       } else {
-        class L {
+        class T {
           constructor() {
             return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
           }
         }
       }
       if (cResult[16] !== userId) {
-        class L {
+        class T {
           constructor() {
             return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
           }
@@ -167,7 +165,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
         cResult[17] = tmp24;
         tmp23 = tmp24;
       } else {
-        class L {
+        class T {
           constructor() {
             return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
           }
@@ -177,7 +175,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
       const stateFromStores2 = tmpResult5.useStateFromStores(tmp22, tmp23);
       const _Symbol4 = Symbol;
       if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-        class L {
+        class T {
           constructor() {
             return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
           }
@@ -185,14 +183,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
         const items4 = [VoiceStateStore];
         cResult[18] = items4;
       } else {
-        class L {
+        class T {
           constructor() {
             return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
           }
         }
       }
       if (cResult[19] !== voiceChannel) {
-        class L {
+        class T {
           constructor() {
             return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
           }
@@ -200,7 +198,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
         cResult[19] = voiceChannel;
         cResult[20] = tmp28;
       } else {
-        class L {
+        class T {
           constructor() {
             return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
           }
@@ -208,14 +206,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
       }
       tmp(voiceActivity[14]);
       if (cResult[21] === live) {
-        class L {
+        class T {
           constructor() {
             return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
           }
         }
         let tmp32 = stateFromStores1 || stateFromStores2;
         if (tmp32) {
-          class L {
+          class T {
             constructor() {
               return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
             }
@@ -223,7 +221,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
           tmp32 = null != voiceChannel;
         }
         if (tmp32) {
-          class L {
+          class T {
             constructor() {
               return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
             }
@@ -231,20 +229,20 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
         }
         let tmp33 = !tmp32 && !stateFromStores1;
         if (tmp33) {
-          class L {
+          class T {
             constructor() {
               return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
             }
           }
           let tmp34 = arr7.length > 0;
           if (!tmp34) {
-            class L {
+            class T {
               constructor() {
                 return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
               }
             }
             if (tmp35) {
-              class L {
+              class T {
                 constructor() {
                   return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
                 }
@@ -253,13 +251,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
             tmp34 = tmp35;
           }
           if (!tmp34) {
-            class L {
+            class T {
               constructor() {
                 return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
               }
             }
             if (tmp36) {
-              class L {
+              class T {
                 constructor() {
                   return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
                 }
@@ -267,14 +265,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
               tmp36 = null != stream;
             }
             if (tmp36) {
-              class L {
+              class T {
                 constructor() {
                   return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
                 }
               }
               const channelId = stream.channelId;
               if (voiceChannel != null) {
-                class L {
+                class T {
                   constructor() {
                     return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
                   }
@@ -287,7 +285,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
           tmp33 = tmp34;
         }
         if (cResult[24] === tmp33) {
-          class L {
+          class T {
             constructor() {
               return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
             }
@@ -314,7 +312,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
         cResult[29] = obj2;
       }
       if (null != voiceActivity) {
-        class L {
+        class T {
           constructor() {
             return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
           }
@@ -358,7 +356,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[4] = userId;
   cResult[5] = obj3;
   tmp9 = obj3;
-}) : ((userId) => {
+}) : (function useUserProfileActivityTabContent(userId) {
   let currentUserId;
   let guildId;
   let live;

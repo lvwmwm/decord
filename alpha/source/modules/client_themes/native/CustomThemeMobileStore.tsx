@@ -1,24 +1,24 @@
-// Module ID: 1238
-// Function ID: 1239
+// Module ID: 1250
+// Function ID: 1251
 // Name: CustomThemeMobileStore
-// Dependencies: [1194, 1193, 1195, 1231, 1095, 1239, 4731, 1197, 584, 504, 2]
+// Dependencies: [1206, 1205, 1207, 1243, 1095, 1251, 4925, 1209, 584, 504, 2]
 
-// Module 1238 (CustomThemeMobileStore)
+// Module 1250 (CustomThemeMobileStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
-import isPerModeThemingActive from "isPerModeThemingActive" /* 4731 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1194 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
+import ClientThemesUtils from "ClientThemesUtils" /* 1251 */;
+import isPerModeThemingActive from "isPerModeThemingActive" /* 4925 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1206 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
 import size from "module_2" /* 2 */;
 
 let c5, closure_3, prop;
 
-const f83792 = () => {
+const f84669 = () => {
   const obj = DispatcherDefault;
   return obj.dispatch({ type: "REFRESH_THEME" });
 };
@@ -50,7 +50,7 @@ function loadFromProtoSettings() {
         prop = clientThemeSettings.customUserThemeSettings;
       }
       const obj2 = DispatcherDefault;
-      obj2.wait(f83792);
+      obj2.wait(f84669);
     }
   }
 }
@@ -70,7 +70,7 @@ function handleSelectivelySyncedUserSettingsUpdate() {
         prop = clientThemeSettings.customUserThemeSettings;
       }
       const obj2 = DispatcherDefault;
-      obj2.wait(f83792);
+      obj2.wait(f84669);
     }
   }
 }
@@ -102,7 +102,7 @@ class CustomThemeMobileStore extends PersistedStore {
       obj = { theme, customTheme: prop };
       const obj2 = { theme, customTheme: prop };
     } else {
-      obj = { theme: "start", customTheme: "unicodeVersion" };
+      obj = { theme: "Array", customTheme: "Reflect" };
     }
     return obj;
   }
@@ -185,7 +185,7 @@ class CustomThemeMobileStore extends PersistedStore {
         if (null == prop) {
           theme = tmp3.theme;
         } else {
-          const tmp10Result = tmp10(1239);
+          const tmp10Result = tmp10(1251);
           theme = tmp10Result.getCustomThemeBaseTheme(tmp3.theme);
         }
         obj = { baseTheme: theme, customTheme: prop };
@@ -283,7 +283,7 @@ let obj = {
           prop = clientThemeSettings.customUserThemeSettings;
         }
         const obj2 = DispatcherDefault;
-        obj2.wait(f83792);
+        obj2.wait(f84669);
       }
     }
   },

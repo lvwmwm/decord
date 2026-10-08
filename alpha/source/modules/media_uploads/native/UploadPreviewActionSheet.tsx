@@ -1,28 +1,28 @@
-// Module ID: 10376
-// Function ID: 10377
+// Module ID: 9973
+// Function ID: 9974
 // Name: UploadPreviewActionSheet
-// Dependencies: [32, 19, 17, 7044, 1085, 6653, 21, 4896, 587, 558, 576, 38, 7260, 1484, 1618, 5597, 4860, 8842, 7298, 10377, 1252, 4574, 4806, 7287, 11045, 11046, 4892, 1369, 7993, 10395, 6081, 6000, 11047, 11049, 1126, 5997, 11051, 5878, 11053, 5601, 4853, 5600, 6119, 6652, 2]
+// Dependencies: [32, 19, 17, 7232, 1085, 6830, 21, 5090, 587, 558, 576, 38, 7731, 1496, 1630, 5392, 5054, 9201, 7742, 9974, 1264, 4766, 5000, 7741, 12791, 12792, 5086, 1381, 8401, 9992, 6267, 6184, 11899, 12793, 1126, 6181, 12795, 8190, 12797, 5375, 5047, 5373, 6298, 6829, 2]
 
-// Module 10376 (UploadPreviewActionSheet)
+// Module 9973 (UploadPreviewActionSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6653 */;
-import DraftStore from "DraftStore" /* 7044 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 7287 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8842 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10377 */;
-import AddImageDescriptionModalActionCreatorsDefault from "AddImageDescriptionModalActionCreators" /* 11049 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6830 */;
+import DraftStore from "DraftStore" /* 7232 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 7741 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9201 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 9974 */;
+import AddImageDescriptionModalActionCreatorsDefault from "AddImageDescriptionModalActionCreators" /* 12793 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet, cropRect, onAdd;
+let BottomSheet, cropRect;
 
 let c10;
 let hasOwnProperty;
@@ -41,7 +41,7 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding:
 createStyles = createStyles.createStyles;
 obj3 = { overflow: "hidden", alignSelf: "center", borderRadius: nativeDefault.radii.md - nativeDefault.space.PX_4 };
 let closure_12 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAdd) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadPreviewActionSheet(onAdd) {
   let disableAddDescription;
   let height;
   let isImage;
@@ -120,18 +120,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAdd) => {
         }
       }
     }
-    const fn = function q() {
+    function markSpoiler() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
       const obj2 = UploadAttachmentActionCreatorsDefault;
       const obj3 = { spoiler: !spoiler };
       obj2.update(channelId, id, DraftType.ChannelMessage, obj3);
-    };
+    }
     cResult[8] = channelId;
     cResult[9] = spoiler;
     cResult[10] = id;
-    cResult[11] = fn;
-    const tmp14 = fn;
+    cResult[11] = markSpoiler;
+    const tmp14 = markSpoiler;
   }
   if (cResult[6] !== diff) {
     class O {
@@ -158,7 +158,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAdd) => {
       }
     }
   }
-}) : ((onAdd) => {
+}) : (function UploadPreviewActionSheet(onAdd) {
   let _undefined;
   let c11;
   let disableAddDescription;
@@ -408,7 +408,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAdd) => {
       if (tmp14) {
         const obj16 = {
           icon: width(onAdd(tmp4[36]).SpoilerIcon, {}),
-          onPress() {
+          onPress: function markSpoiler() {
                   const obj = ActionSheetActionCreatorsDefault;
                   obj.hideActionSheet();
                   const obj2 = UploadAttachmentActionCreatorsDefault;

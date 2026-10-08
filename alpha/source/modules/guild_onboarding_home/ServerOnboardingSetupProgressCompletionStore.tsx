@@ -1,10 +1,10 @@
-// Module ID: 16231
-// Function ID: 16232
+// Module ID: 16491
+// Function ID: 16492
 // Name: ServerOnboardingSetupProgressCompletionStore
 // Dependencies: [504, 584, 558, 576, 2]
 // Exports: markServerOnboardingSetupProgressComplete
 
-// Module 16231 (ServerOnboardingSetupProgressCompletionStore)
+// Module 16491 (ServerOnboardingSetupProgressCompletionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -47,7 +47,7 @@ let obj = {
   }
 };
 const serverOnboardingSetupProgressCompletionStore = new ServerOnboardingSetupProgressCompletionStore(DispatcherDefault, obj);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsServerOnboardingSetupProgressComplete(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -64,7 +64,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function s() {
+    const fn = function n() {
       return serverOnboardingSetupProgressCompletionStore.isComplete(closure_0);
     };
     const items1 = [arg0];
@@ -79,7 +79,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useIsServerOnboardingSetupProgressComplete(arg0) {
   let closure_0;
   _require = arg0;
   const items = [serverOnboardingSetupProgressCompletionStore];

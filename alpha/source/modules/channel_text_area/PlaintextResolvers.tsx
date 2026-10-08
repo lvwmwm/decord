@@ -1,28 +1,28 @@
-// Module ID: 8967
-// Function ID: 8968
+// Module ID: 9757
+// Function ID: 9758
 // Name: PlaintextResolvers
-// Dependencies: [32, 5645, 5698, 2051, 4513, 2112, 2106, 2074, 4515, 4525, 1377, 1085, 1380, 7183, 5049, 11, 5628, 4529, 4533, 2]
+// Dependencies: [32, 5992, 6039, 2063, 4705, 2124, 2118, 2086, 4707, 4717, 1389, 1085, 1392, 7362, 5417, 11, 5975, 4721, 4725, 2]
 // Exports: resolveApplicationCommandOption
 
-// Module 8967 (PlaintextResolvers)
+// Module 9757 (PlaintextResolvers)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1085 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4513 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4529 */;
-import useChannelName from "useChannelName" /* 5049 */;
-import AutocompleteUtils from "AutocompleteUtils" /* 5628 */;
-import SlateUtils from "SlateUtils" /* 7183 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4705 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4721 */;
+import useChannelName from "useChannelName" /* 5417 */;
+import AutocompleteUtils from "AutocompleteUtils" /* 5975 */;
+import SlateUtils from "SlateUtils" /* 7362 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmojiStore from "EmojiStore" /* 5645 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5698 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
+import EmojiStore from "EmojiStore" /* 5992 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6039 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildRoleStore from "GuildRoleStore" /* 2118 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 const GuildChannelStore = GuildChannelStore2;
@@ -219,7 +219,7 @@ function resolvePlaintextInlineVoid(text, id5, id, arg3) {
         let obj2 = { emoji: value, channel, intention: EmojiIntention.CHAT };
         let tmp13 = EmojiIntention;
         tmp7 = null;
-        const tmp4Result = tmp4(4533);
+        const tmp4Result = tmp4(4725);
         if (!tmp4Result.isEmojiFiltered(obj2)) {
           const obj3 = { emojiId: value.id, name: null, animated: null, jumboable: false };
           if ("require_colons" in value) {

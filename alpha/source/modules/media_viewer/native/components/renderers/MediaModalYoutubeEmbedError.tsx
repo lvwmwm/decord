@@ -1,19 +1,17 @@
-// Module ID: 12793
-// Function ID: 12794
+// Module ID: 12940
+// Function ID: 12941
 // Name: MediaModalYoutubeEmbedError
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1126, 4892, 5601, 4571, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1126, 5086, 5375, 4763, 2]
 
-// Module 12793 (MediaModalYoutubeEmbedError)
+// Module 12940 (MediaModalYoutubeEmbedError)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import LinkingDefault from "Linking" /* 4571 */;
+import LinkingDefault from "Linking" /* 4763 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let videoId;
 
 let closure_4;
 let hasOwnProperty;
@@ -27,7 +25,7 @@ obj2 = { backgroundColor: nativeDefault.colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND
 createStyles = createStyles.createStyles;
 obj3 = { marginBottom: nativeDefault.space.PX_8, textAlign: "center" };
 let closure_6 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((videoId) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MediaModalYoutubeEmbedError(videoId) {
   let container;
   let first;
   let items;
@@ -50,7 +48,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((v
   }
   if (cResult[1] !== tmp4.text) {
     const obj2 = { style: text, variant: "text-md/semibold", color: "text-overlay-light", children: first };
-    const tmp9 = closure_4(videoId(4892).Text, obj2);
+    const tmp9 = closure_4(videoId(5086).Text, obj2);
     cResult[1] = tmp4.text;
     cResult[2] = tmp9;
     tmp7 = tmp9;
@@ -77,7 +75,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((v
           obj.openURL("https://youtube.com/watch?v=" + videoId);
         }
     };
-    const tmp14 = closure_4(videoId(5601).Button, obj3);
+    const tmp14 = closure_4(videoId(5375).Button, obj3);
     cResult[4] = videoId;
     cResult[5] = tmp14;
     tmp12 = tmp14;
@@ -101,7 +99,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((v
   cResult[8] = tmp12;
   cResult[9] = tmp16;
   tmp15 = tmp16;
-}) : ((videoId) => {
+}) : (function MediaModalYoutubeEmbedError(videoId) {
   let intl;
   let intl2;
   let items;
@@ -109,7 +107,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((v
   const tmp = closure_6();
   let obj = { style: tmp.container, children: items };
   const obj2 = { style: tmp.text, variant: "text-md/semibold", color: "text-overlay-light", children: intl.string(videoId(1126).t.u7vKPs) };
-  const Text = videoId(4892).Text;
+  const Text = videoId(5086).Text;
   intl = videoId(1126).intl;
   items = [closure_4(Text, obj2), ];
   const obj3 = {
@@ -123,7 +121,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((v
       obj.openURL("https://youtube.com/watch?v=" + videoId);
     }
   };
-  const Button = videoId(5601).Button;
+  const Button = videoId(5375).Button;
   intl2 = videoId(1126).intl;
   items[1] = closure_4(Button, obj3);
   return closure_5(View, obj);

@@ -1,21 +1,22 @@
-// Module ID: 5925
-// Function ID: 5926
+// Module ID: 6108
+// Function ID: 6109
 // Name: MemberVerificationAlertSuccess
-// Dependencies: [109, 19, 17, 4885, 2074, 21, 4896, 558, 576, 504, 1126, 5926, 5927, 4892, 5790, 2]
+// Dependencies: [109, 19, 17, 5079, 2086, 21, 5090, 558, 576, 504, 1126, 6109, 6110, 5086, 5394, 2]
 
-// Module 5925 (MemberVerificationAlertSuccess)
+// Module 6108 (MemberVerificationAlertSuccess)
 import react_native from "react-native" /* 17 */;
+import LottieAnimationViewDefault from "LottieAnimationView" /* 6110 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, guildId, importDefault, onCloseResult, tmp;
+let _require, dependencyMap, importDefault;
 
 let c9;
 let metroImportAll;
@@ -23,13 +24,15 @@ let closure_3 = ["guildId", "handleConfirmAndAck"];
 const View = react_native.View;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let closure_10 = createStyles.createStyles({ alert: { marginTop: 120 }, header: { marginTop: 40, textAlign: "center" }, text: { marginVertical: 8, lineHeight: 18, textAlign: "center" }, illustrationContainer: { position: "absolute", display: "flex", flexDirection: "column", alignItems: "center", left: 0, right: 0, top: -220 }, illustration: { height: 246, width: 240 } });
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerificationAlertSuccess(guildId) {
+  let _alert;
   let closure_0;
   let closure_1;
+  let illustrationContainer;
   let tmp11;
   let tmp13;
   let tmp14;
-  let tmp6;
+  let tmp5;
   let useReducedMotion;
   const obj = require("react");
   const cResult = obj.c(36);
@@ -44,13 +47,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     cResult[1] = guildId;
     cResult[2] = handleConfirmAndAck;
     cResult[3] = tmp9;
-    tmp6 = tmp9;
+    tmp5 = handleConfirmAndAck;
   } else {
     _require = cResult[1];
     importDefault = cResult[2];
     dependencyMap = cResult[3];
   }
-  closure_10();
+  const tmp10 = closure_10();
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildStore];
     cResult[4] = items;
@@ -59,80 +62,125 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     tmp11 = cResult[4];
   }
   if (cResult[5] !== tmp4) {
-    class S {
-      constructor() {
-        return closure_7.getGuild(closure_0);
-      }
-    }
+    const fn = function b() {
+      return GuildStore.getGuild(closure_0);
+    };
     const items1 = [tmp4];
     cResult[5] = tmp4;
-    cResult[6] = S;
+    cResult[6] = fn;
     cResult[7] = items1;
     tmp14 = items1;
-    tmp13 = S;
+    tmp13 = fn;
   } else {
-    class S {
-      constructor() {
-        return closure_7.getGuild(closure_0);
-      }
-    }
+    tmp13 = cResult[6];
     tmp14 = cResult[7];
   }
   const tmpResult = require("get initialized");
   const stateFromStores = tmpResult.useStateFromStores(tmp11, tmp13, tmp14);
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor() {
-        return closure_7.getGuild(closure_0);
-      }
-    }
     const items2 = [AccessibilityStore];
-    class N {
+    class M {
       constructor() {
-        return closure_1_6.useReducedMotion;
+        return useReducedMotion.useReducedMotion;
       }
     }
     cResult[8] = items2;
-    cResult[9] = N;
-  } else {
-    class S {
-      constructor() {
-        return closure_7.getGuild(closure_0);
-      }
-    }
+    cResult[9] = M;
   }
   require("get initialized");
   if (null == stateFromStores) {
-    class S {
-      constructor() {
-        return closure_7.getGuild(closure_0);
-      }
-    }
+    return null;
   } else {
-    class S {
-      constructor() {
-        return closure_7.getGuild(closure_0);
-      }
-    }
-    class F {
-      constructor() {
-        tmp = closure_1();
-        onClose = closure_2.onClose;
-        if (onClose != null) {
-          onCloseResult = onClose();
+    if (cResult[10] === tmp5) {
+      let tmp23;
+      const _Symbol = Symbol;
+      class M {
+        constructor() {
+          return useReducedMotion.useReducedMotion;
         }
-        return;
+      }
+      const _Symbol2 = Symbol;
+      ({ alert: _alert, illustrationContainer } = tmp10);
+      if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+        cResult[14] = require("module_6109");
+        require("module_6109");
+        class M {
+          constructor() {
+            return useReducedMotion.useReducedMotion;
+          }
+        }
+      } else {
+        tmp23 = cResult[14];
+      }
+      if (cResult[15] === tmp10.illustration) {
+        let tmp26;
+        if (cResult[16] === !tmp20) {
+          tmp26 = cResult[17];
+        }
+        if (cResult[18] === tmp10.illustrationContainer) {
+          let tmp33;
+          const header = tmp10.header;
+          if (cResult[21] !== stateFromStores.name) {
+            const intl = tmp(1126).intl;
+            const format = intl.format;
+            const obj2 = { guildName: null };
+            class M {
+              constructor() {
+                return useReducedMotion.useReducedMotion;
+              }
+            }
+            const formatResult = format(require("intl").t["7hhNEn"], obj2);
+            cResult[21] = stateFromStores.name;
+            cResult[22] = formatResult;
+            tmp33 = formatResult;
+          } else {
+            tmp33 = cResult[22];
+          }
+          class M {
+            constructor() {
+              return useReducedMotion.useReducedMotion;
+            }
+          }
+          const obj3 = { style: header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp33 };
+          cResult[23] = tmp10.header;
+          cResult[24] = tmp33;
+          cResult[25] = closure_8(require("Text/Text").Heading, obj3);
+          const tmp37 = closure_8(require("Text/Text").Heading, obj3);
+        }
+        class M {
+          constructor() {
+            return useReducedMotion.useReducedMotion;
+          }
+        }
+        const obj4 = { style: illustrationContainer, children: tmp26 };
+        cResult[18] = tmp10.illustrationContainer;
+        cResult[19] = tmp26;
+        cResult[20] = closure_8(View, obj4);
+        const tmp32 = closure_8(View, obj4);
+      }
+      const obj5 = { source: tmp23, autoPlay: !tmp20, style: tmp10.illustration };
+      const tmp29 = closure_8(LottieAnimationViewDefault, obj5);
+      cResult[15] = tmp10.illustration;
+      cResult[16] = !tmp20;
+      cResult[17] = tmp29;
+      tmp26 = tmp29;
+    }
+    function onConfirm() {
+      closure_1();
+      onClose = onClose.onClose;
+      if (onClose != null) {
+        onClose();
       }
     }
-    class N {
+    class M {
       constructor() {
-        return closure_1_6.useReducedMotion;
+        return useReducedMotion.useReducedMotion;
       }
     }
     cResult[11] = tmp6;
-    cResult[12] = F;
+    cResult[12] = onConfirm;
   }
-}) : ((guildId) => {
+}) : (function MemberVerificationAlertSuccess(guildId) {
   let intl;
   let intl2;
   let intl3;

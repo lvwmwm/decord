@@ -1,19 +1,19 @@
-// Module ID: 8364
-// Function ID: 8365
+// Module ID: 8862
+// Function ID: 8863
 // Name: useInAppBrowserReturn
-// Dependencies: [19, 8360, 558, 576, 1370, 4857, 8358, 8352, 2]
+// Dependencies: [19, 8858, 558, 576, 1382, 5051, 8856, 8850, 2]
 
-// Module 8364 (useInAppBrowserReturn)
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8352 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8358 */;
+// Module 8862 (useInAppBrowserReturn)
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8850 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8856 */;
 import react from "react" /* 19 */;
-import GameProfileStore from "GameProfileStore" /* 8360 */;
+import GameProfileStore from "GameProfileStore" /* 8858 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c0, gameId;
+let c0;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInAppBrowserReturn(gameId) {
   let obj = gameId(576);
   const cResult = obj.c(4);
   gameId = gameId.gameId;
@@ -75,7 +75,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
   cResult[3] = items;
   tmp3 = items;
   tmp2 = fn;
-}) : ((gameId) => {
+}) : (function useInAppBrowserReturn(gameId) {
   gameId = gameId.gameId;
   const scrollY = gameId.scrollY;
   const items = [gameId, scrollY];

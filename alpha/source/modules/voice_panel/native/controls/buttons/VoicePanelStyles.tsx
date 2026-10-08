@@ -1,17 +1,17 @@
-// Module ID: 17355
-// Function ID: 17356
+// Module ID: 17636
+// Function ID: 17637
 // Name: VoicePanelStyles
-// Dependencies: [4896, 587, 558, 576, 7952, 2]
+// Dependencies: [5090, 587, 558, 576, 8370, 2]
 
-// Module 17355 (VoicePanelStyles)
+// Module 17636 (VoicePanelStyles)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useStateFromSharedValue = tmp(7952);
+const useStateFromSharedValue = tmp(8370);
 let closure_3 = createStyles.createStyles((arg0) => {
   let colors;
   let colors2;
@@ -25,7 +25,7 @@ let closure_3 = createStyles.createStyles((arg0) => {
   colors2 = tmp(587).colors;
   return obj;
 });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelButtonStyles(arg0) {
   let first;
   const obj = react;
   const cResult = obj.c(1);
@@ -40,7 +40,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = useStateFromSharedValue;
   return closure_3(tmpResult.useDerivedStateFromSharedValue(arg0, first));
-}) : ((arg0) => {
+}) : (function useVoicePanelButtonStyles(arg0) {
   const obj = useStateFromSharedValue;
   return closure_3(obj.useDerivedStateFromSharedValue(arg0, (drawerMode) => drawerMode.drawerMode));
 });

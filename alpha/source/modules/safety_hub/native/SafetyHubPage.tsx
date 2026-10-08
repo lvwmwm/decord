@@ -1,37 +1,37 @@
-// Module ID: 14567
-// Function ID: 14568
+// Module ID: 14828
+// Function ID: 14829
 // Name: SafetyHubPage
-// Dependencies: [19, 17, 8139, 8126, 1085, 21, 6089, 11508, 8307, 558, 576, 1188, 5601, 1126, 504, 3137, 4892, 14568, 1385, 14569, 4896, 587, 14570, 11535, 11507, 14564, 5597, 11506, 1252, 5416, 5421, 4860, 14571, 1987, 14572, 14574, 2]
+// Dependencies: [19, 17, 5920, 5921, 1085, 21, 5936, 11500, 7690, 558, 576, 1200, 5375, 1126, 504, 3181, 5086, 14829, 1397, 14830, 5090, 587, 14831, 11533, 11499, 14825, 5392, 11498, 1264, 5725, 5730, 5054, 14832, 1999, 14833, 14835, 2]
 // Exports: default
 
-// Module 14567 (SafetyHubPage)
+// Module 14828 (SafetyHubPage)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import _modDef3137 from "module_3137" /* 3137 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5416 */;
-import MetricEvents from "MetricEvents" /* 5421 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6089 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8126 */;
-import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8307 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 11506 */;
-import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 11508 */;
-import useAvailableAgeVerificationMethods from "useAvailableAgeVerificationMethods" /* 14568 */;
-import useShouldShowInitialGoogleWalletBanner from "useShouldShowInitialGoogleWalletBanner" /* 14569 */;
+import native from "native" /* 1200 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import _modDef3181 from "module_3181" /* 3181 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5725 */;
+import MetricEvents from "MetricEvents" /* 5730 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 5921 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 5936 */;
+import ManualReviewActionCreators from "ManualReviewActionCreators" /* 7690 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 11498 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 11500 */;
+import useAvailableAgeVerificationMethods from "useAvailableAgeVerificationMethods" /* 14829 */;
+import useShouldShowInitialGoogleWalletBanner from "useShouldShowInitialGoogleWalletBanner" /* 14830 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SafetyHubStore from "SafetyHubStore" /* 8139 */;
+import SafetyHubStore from "SafetyHubStore" /* 5920 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -63,7 +63,7 @@ const AgeCheckStatus = SafetyHubConstants.AgeCheckStatus;
 ({ AnalyticEvents: c10, Routes: unpackModuleId } = Constants);
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function RetryBanner() {
   let Button;
   let first;
   let intl;
@@ -73,9 +73,9 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { messageType: native.HelpMessageTypes.ERROR, button: closure_12(Button, obj3), children: intl2.string(intl7.t.dqbMbn) };
-    const HelpMessage = tmp(1188).HelpMessage;
+    const HelpMessage = tmp(1200).HelpMessage;
     obj3 = { variant: "secondary", size: "sm", text: intl.string(intl7.t.IcA9iD), onPress: handleRetryClick };
-    Button = tmp(5601).Button;
+    Button = tmp(5375).Button;
     intl = tmp(1126).intl;
     intl2 = tmp(1126).intl;
     const tmp7 = closure_12(HelpMessage, obj2);
@@ -85,7 +85,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => {
+}) : (function RetryBanner() {
   let Button;
   let intl;
   let intl2;
@@ -99,7 +99,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return closure_12(HelpMessage, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeCheckLoadingBanner() {
   let isExpressiveModalV2Enabled;
   let tmp10;
   let tmp4;
@@ -134,7 +134,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[4] !== tmp8) {
     const obj2 = { messageType: native.HelpMessageTypes.INFO, children: tmp8 };
-    const HelpMessage = tmp(1188).HelpMessage;
+    const HelpMessage = tmp(1200).HelpMessage;
     const tmp12 = closure_12(HelpMessage, obj2);
     cResult[4] = tmp8;
     cResult[5] = tmp12;
@@ -143,7 +143,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp10 = cResult[5];
   }
   return tmp10;
-}) : (() => {
+}) : (function AgeCheckLoadingBanner() {
   let isExpressiveModalV2Enabled;
   let string;
   let t;
@@ -158,7 +158,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return closure_12(HelpMessage, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManualOrAutomatedReviewBanner() {
   let first;
   let intl;
   let link;
@@ -170,7 +170,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   _require = tmp4;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "secondary", size: "sm", text: intl.string(require("intl").t.IcA9iD), onPress: handleRetryClick };
-    const Button = tmp(5601).Button;
+    const Button = tmp(5375).Button;
     intl = tmp(1126).intl;
     const tmp8 = closure_12(Button, obj2);
     cResult[0] = tmp8;
@@ -186,7 +186,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return closure_12(Text_Text.Text, obj, arg1);
         }
     };
-    const formatResult = intl2.format(_modDef3137.vPoM8y, obj3);
+    const formatResult = intl2.format(_modDef3181.vPoM8y, obj3);
     cResult[1] = tmp4;
     cResult[2] = formatResult;
     tmp9 = formatResult;
@@ -195,7 +195,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[3] !== tmp9) {
     const obj4 = { messageType: require("native").HelpMessageTypes.ERROR, button: first, children: tmp9 };
-    const HelpMessage = tmp(1188).HelpMessage;
+    const HelpMessage = tmp(1200).HelpMessage;
     const tmp14 = closure_12(HelpMessage, obj4);
     cResult[3] = tmp9;
     cResult[4] = tmp14;
@@ -204,7 +204,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp12 = cResult[4];
   }
   return tmp12;
-}) : (() => {
+}) : (function ManualOrAutomatedReviewBanner() {
   let Button;
   let intl;
   let intl2;
@@ -212,7 +212,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj2;
   let obj3;
   _require = closure_22();
-  let obj = { messageType: require("native").HelpMessageTypes.ERROR, button: closure_12(Button, obj2), children: intl2.format(_modDef3137.vPoM8y, obj3) };
+  let obj = { messageType: require("native").HelpMessageTypes.ERROR, button: closure_12(Button, obj2), children: intl2.format(_modDef3181.vPoM8y, obj3) };
   const HelpMessage = require("native").HelpMessage;
   obj2 = { variant: "secondary", size: "sm", text: intl.string(require("intl").t.IcA9iD), onPress: handleRetryClick };
   Button = require("components/Button/Button").Button;
@@ -227,7 +227,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return closure_12(HelpMessage, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManualReviewBanner() {
   let Button;
   let intl;
   let intl2;
@@ -279,9 +279,9 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const _Symbol3 = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { messageType: native.HelpMessageTypes.ERROR, button: closure_12(Button, obj4), children: intl2.string(intl7.t.VTgFYh) };
-      const HelpMessage = tmp(1188).HelpMessage;
+      const HelpMessage = tmp(1200).HelpMessage;
       obj4 = { variant: "secondary", size: "sm", text: intl.string(intl7.t.NkTGsC), onPress: handleManualReviewClick };
-      Button = tmp(5601).Button;
+      Button = tmp(5375).Button;
       intl = tmp(1126).intl;
       intl2 = tmp(1126).intl;
       const tmp20 = closure_12(HelpMessage, obj3);
@@ -293,7 +293,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = tmp17;
   }
   return tmp7;
-}) : (() => {
+}) : (function ManualReviewBanner() {
   let Button;
   let intl;
   let intl2;
@@ -315,9 +315,9 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     const obj2 = { messageType: native.HelpMessageTypes.ERROR, button: closure_12(Button, obj3), children: intl2.string(intl7.t.VTgFYh) };
-    const HelpMessage = tmp(1188).HelpMessage;
+    const HelpMessage = tmp(1200).HelpMessage;
     obj3 = { variant: "secondary", size: "sm", text: intl.string(intl7.t.NkTGsC), onPress: handleManualReviewClick };
-    Button = tmp(5601).Button;
+    Button = tmp(5375).Button;
     intl = tmp(1126).intl;
     intl2 = tmp(1126).intl;
     tmp5Result = closure_12(HelpMessage, obj2);
@@ -325,7 +325,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return tmp5Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutomatedUnderageAppealStatus() {
   let Button;
   let ageCheckStatus;
   let intl;
@@ -376,7 +376,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const _Symbol8 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { messageType: native.HelpMessageTypes.SUCCESS, children: intl6.format(intl7.t.hyh4ls, obj3) };
-      const HelpMessage5 = tmp(1188).HelpMessage;
+      const HelpMessage5 = tmp(1200).HelpMessage;
       intl6 = tmp(1126).intl;
       obj3 = {
         loginHook(children) {
@@ -404,9 +404,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const _Symbol7 = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { messageType: native.HelpMessageTypes.SUCCESS, button: closure_12(Button, obj5), children: intl5.string(intl7.t["2Qe65J"]) };
-      const HelpMessage4 = tmp(1188).HelpMessage;
+      const HelpMessage4 = tmp(1200).HelpMessage;
       obj5 = { variant: "secondary", size: "sm", text: intl4.string(intl7.t["2jvQ6K"]), onPress: handleLogInClick };
-      Button = tmp(5601).Button;
+      Button = tmp(5375).Button;
       intl4 = tmp(1126).intl;
       intl5 = tmp(1126).intl;
       const tmp34 = closure_12(HelpMessage4, obj4);
@@ -421,7 +421,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const _Symbol6 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       const obj6 = { messageType: native.HelpMessageTypes.SUCCESS, children: intl3.string(intl7.t.Ie7p1Q) };
-      const HelpMessage3 = tmp(1188).HelpMessage;
+      const HelpMessage3 = tmp(1200).HelpMessage;
       intl3 = tmp(1126).intl;
       const tmp30 = closure_12(HelpMessage3, obj6);
       cResult[6] = tmp30;
@@ -435,7 +435,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const _Symbol5 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       const obj7 = { messageType: native.HelpMessageTypes.ERROR, children: intl2.string(intl7.t["4sILBU"]) };
-      const HelpMessage2 = tmp(1188).HelpMessage;
+      const HelpMessage2 = tmp(1200).HelpMessage;
       intl2 = tmp(1126).intl;
       const tmp27 = closure_12(HelpMessage2, obj7);
       cResult[7] = tmp27;
@@ -449,7 +449,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const _Symbol4 = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       const obj8 = { messageType: native.HelpMessageTypes.ERROR, children: intl.string(intl7.t["40R63o"]) };
-      const HelpMessage = tmp(1188).HelpMessage;
+      const HelpMessage = tmp(1200).HelpMessage;
       intl = tmp(1126).intl;
       const tmp24 = closure_12(HelpMessage, obj8);
       cResult[8] = tmp24;
@@ -491,7 +491,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   return tmp10;
-}) : (() => {
+}) : (function AutomatedUnderageAppealStatus() {
   let Button;
   let ageCheckStatus;
   let intl;
@@ -515,7 +515,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = tmp20;
   } else if (stateFromStores === AgeCheckStatus.SUCCESS) {
     const obj2 = { messageType: native.HelpMessageTypes.SUCCESS, children: intl6.format(intl7.t.hyh4ls, obj3) };
-    const HelpMessage5 = tmp(1188).HelpMessage;
+    const HelpMessage5 = tmp(1200).HelpMessage;
     intl6 = tmp(1126).intl;
     obj3 = {
       loginHook(children) {
@@ -534,25 +534,25 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = closure_12(HelpMessage5, obj2);
   } else if (stateFromStores === AgeCheckStatus.VERIFIED) {
     const obj4 = { messageType: native.HelpMessageTypes.SUCCESS, button: closure_12(Button, obj5), children: intl5.string(intl7.t["2Qe65J"]) };
-    const HelpMessage4 = tmp(1188).HelpMessage;
+    const HelpMessage4 = tmp(1200).HelpMessage;
     obj5 = { variant: "secondary", size: "sm", text: intl4.string(intl7.t["2jvQ6K"]), onPress: handleLogInClick };
-    Button = tmp(5601).Button;
+    Button = tmp(5375).Button;
     intl4 = tmp(1126).intl;
     intl5 = tmp(1126).intl;
     tmp9 = closure_12(HelpMessage4, obj4);
   } else if (stateFromStores === AgeCheckStatus.VERIFIED_OTHER_VIOLATIONS_REMAIN) {
     const obj6 = { messageType: native.HelpMessageTypes.SUCCESS, children: intl3.string(intl7.t.Ie7p1Q) };
-    const HelpMessage3 = tmp(1188).HelpMessage;
+    const HelpMessage3 = tmp(1200).HelpMessage;
     intl3 = tmp(1126).intl;
     tmp9 = closure_12(HelpMessage3, obj6);
   } else if (stateFromStores === AgeCheckStatus.ERROR) {
     const obj7 = { messageType: native.HelpMessageTypes.ERROR, children: intl2.string(intl7.t["4sILBU"]) };
-    const HelpMessage2 = tmp(1188).HelpMessage;
+    const HelpMessage2 = tmp(1200).HelpMessage;
     intl2 = tmp(1126).intl;
     tmp9 = closure_12(HelpMessage2, obj7);
   } else if (stateFromStores === AgeCheckStatus.FAILURE) {
     const obj8 = { messageType: native.HelpMessageTypes.ERROR, children: intl.string(intl7.t["40R63o"]) };
-    const HelpMessage = tmp(1188).HelpMessage;
+    const HelpMessage = tmp(1200).HelpMessage;
     intl = tmp(1126).intl;
     tmp9 = closure_12(HelpMessage, obj8);
   } else if (stateFromStores === AgeCheckStatus.UNDERAGE) {
@@ -611,7 +611,7 @@ export default function SafetyHubPage(visible) {
     if (tmp) {
       if (null != safetyHubFetchError) {
         const obj2 = ActionSheetActionCreatorsDefault;
-        obj2.openLazy(asyncRequire(14571, dependencyMap.paths), "SafetyHubErrorActionSheet", {});
+        obj2.openLazy(asyncRequire(14832, dependencyMap.paths), "SafetyHubErrorActionSheet", {});
       }
     }
     const obj = ActionSheetActionCreatorsDefault;

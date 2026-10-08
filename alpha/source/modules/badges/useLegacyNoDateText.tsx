@@ -1,9 +1,9 @@
-// Module ID: 10907
-// Function ID: 10908
+// Module ID: 10558
+// Function ID: 10559
 // Name: useLegacyNoDateText
 // Dependencies: [32, 19, 1126, 558, 2]
 
-// Module 10907 (useLegacyNoDateText)
+// Module 10558 (useLegacyNoDateText)
 import intl2 from "intl" /* 1126 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -16,7 +16,7 @@ function chooseRandomLegacyNoDateText() {
   return intl.string(items[rounded]);
 }
 const items = [intl2.t["6zFA/T"], intl2.t.wzZHKl, intl2.t["+ED/nf"]];
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLegacyNoDateText(arg0) {
   let tmp2;
   let tmp3;
   [tmp2, tmp3] = react.useState(chooseRandomLegacyNoDateText);
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp3(intl.string(items[rounded]));
   }
   return tmp2;
-}) : ((arg0) => {
+}) : (function useLegacyNoDateText(arg0) {
   let tmp2;
   let tmp3;
   [tmp2, tmp3] = react.useState(chooseRandomLegacyNoDateText);

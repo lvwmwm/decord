@@ -1,28 +1,28 @@
-// Module ID: 17266
-// Function ID: 17267
+// Module ID: 17547
+// Function ID: 17548
 // Name: SoundboardHooks
-// Dependencies: [5, 19, 4885, 1193, 17258, 6653, 558, 576, 1484, 504, 4735, 2033, 6851, 2]
+// Dependencies: [5, 19, 5079, 1205, 17539, 6830, 558, 576, 1496, 504, 4929, 2045, 7038, 2]
 
-// Module 17266 (SoundboardHooks)
+// Module 17547 (SoundboardHooks)
 import react2 from "react" /* 576 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6653 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6830 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 17258 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 17539 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c0, c1, shouldFetch;
+let c0, c1;
 
 let metroImportAll;
 let metroImportDefault;
 ({ SOUNDS_PER_ROW: metroImportDefault, SOUND_ROW_PADDING: metroImportAll } = SoundboardStyleConstants);
 const ACTION_SHEET_MAX_WIDTH = ActionSheetConstants.ACTION_SHEET_MAX_WIDTH;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundButtonStyleConfig() {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
@@ -36,15 +36,15 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
+}) : (function useSoundButtonStyleConfig() {
   const obj = { buttonWidth: (Math.min(ACTION_SHEET_MAX_WIDTH, useWindowDimensionsDefault().width) - metroImportAll) / metroImportDefault };
   return obj;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((shouldFetch) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetchSoundboardSounds(shouldFetch) {
   let saturation;
   let theme;
-  let tmp12;
+  let tmp13;
   let tmp4;
   let tmp5;
   let tmp8;
@@ -56,13 +56,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((shouldFetch) => {
   shouldFetch = shouldFetch.shouldFetch;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
-    const fn = function h() {
-      return saturation.saturation;
-    };
+    class S {
+      constructor() {
+        return saturation.saturation;
+      }
+    }
     cResult[0] = items;
-    cResult[1] = fn;
+    cResult[1] = S;
     tmp4 = items;
-    tmp5 = fn;
+    tmp5 = S;
   } else {
     [tmp4, tmp5] = cResult;
   }
@@ -70,13 +72,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((shouldFetch) => {
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [ThemeStore];
-    const fn2 = function y() {
-      const obj = shouldFetch(dependencyMap[10]);
-      return obj.isThemeDark(theme.theme);
-    };
+    class S {
+      constructor() {
+        return saturation.saturation;
+      }
+    }
     cResult[2] = items1;
-    cResult[3] = fn2;
-    tmp9 = fn2;
+    cResult[3] = tmp11;
+    tmp9 = tmp11;
     tmp8 = items1;
   } else {
     tmp8 = cResult[2];
@@ -85,7 +88,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((shouldFetch) => {
   const tmpResult2 = tmp(504);
   const stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp9);
   if (cResult[4] !== shouldFetch) {
-    const fn3 = function b() {
+    const fn = function _() {
       function fetchAndHydrateColors() {
         return closure_0(...arguments);
       }
@@ -145,18 +148,28 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((shouldFetch) => {
       fetchAndHydrateColors();
     };
     cResult[4] = shouldFetch;
-    cResult[5] = fn3;
-    tmp12 = fn3;
+    class S {
+      constructor() {
+        return saturation.saturation;
+      }
+    }
+    cResult[5] = fn;
+    tmp13 = fn;
   } else {
-    tmp12 = cResult[5];
+    tmp13 = cResult[5];
   }
   if (cResult[6] === stateFromStores1) {
     if (cResult[7] === stateFromStores) {
-      let tmp13;
+      let tmp14;
       if (cResult[8] === shouldFetch) {
-        tmp13 = cResult[9];
+        tmp14 = cResult[9];
       }
-      const effect = react.useEffect(tmp12, tmp13);
+      const effect = react.useEffect(tmp13, tmp14);
+      class S {
+        constructor() {
+          return saturation.saturation;
+        }
+      }
     }
   }
   const items2 = [stateFromStores, stateFromStores1, shouldFetch];
@@ -164,8 +177,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((shouldFetch) => {
   cResult[7] = stateFromStores;
   cResult[8] = shouldFetch;
   cResult[9] = items2;
-  tmp13 = items2;
-}) : ((shouldFetch) => {
+  tmp14 = items2;
+}) : (function useMaybeFetchSoundboardSounds(shouldFetch) {
   let saturation;
   let theme;
   shouldFetch = shouldFetch.shouldFetch;

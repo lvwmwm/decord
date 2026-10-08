@@ -1,16 +1,16 @@
-// Module ID: 7846
-// Function ID: 7847
+// Module ID: 8264
+// Function ID: 8265
 // Name: UserProfileSettingsActionCreators
-// Dependencies: [2112, 1377, 7124, 5016, 7847, 584, 2]
+// Dependencies: [2124, 1389, 7309, 5200, 8265, 584, 2]
 // Exports: setPendingChanges
 
-// Module 7846 (UserProfileSettingsActionCreators)
+// Module 8264 (UserProfileSettingsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import isEqualDefault from "isEqual" /* 5016 */;
-import GuildTagUtils from "GuildTagUtils" /* 7847 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import UserStore from "UserStore" /* 1377 */;
-import UserProfileStore from "UserProfileStore" /* 7124 */;
+import isEqualDefault from "isEqual" /* 5200 */;
+import GuildTagUtils from "GuildTagUtils" /* 8265 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import UserStore from "UserStore" /* 1389 */;
+import UserProfileStore from "UserProfileStore" /* 7309 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/UserProfileSettingsActionCreators.tsx");

@@ -1,23 +1,23 @@
-// Module ID: 16632
-// Function ID: 16633
+// Module ID: 16894
+// Function ID: 16895
 // Name: FrameRenderTarget
-// Dependencies: [19, 21, 4896, 558, 576, 16633, 7983, 2]
+// Dependencies: [19, 21, 5090, 558, 576, 16895, 7511, 2]
 
-// Module 16632 (FrameRenderTarget)
+// Module 16894 (FrameRenderTarget)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useFramePoolBorrowDefault from "useFramePoolBorrow" /* 16633 */;
+import useFramePoolBorrowDefault from "useFramePoolBorrow" /* 16895 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const WebView = tmp(7983);
+const WebView = tmp(7511);
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ target: { flex: 1 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMemoizedPresentation(arg0) {
   let landscapeSafeAreasConfig;
   let layoutMode;
   let portraitSafeAreasConfig;
@@ -39,7 +39,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = portraitSafeAreasConfig;
   cResult[3] = obj2;
   tmp2 = obj2;
-}) : ((layoutMode) => {
+}) : (function useMemoizedPresentation(layoutMode) {
   layoutMode = layoutMode.layoutMode;
   const portraitSafeAreasConfig = layoutMode.portraitSafeAreasConfig;
   const landscapeSafeAreasConfig = layoutMode.landscapeSafeAreasConfig;
@@ -47,7 +47,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return react.useMemo(() => ({ layoutMode, portraitSafeAreasConfig, landscapeSafeAreasConfig }), items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameRenderTarget(arg0) {
   let frameId;
   let level;
   let presentation;
@@ -79,7 +79,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp8 = tmp10;
   }
   return tmp7;
-}) : ((arg0) => {
+}) : (function FrameRenderTarget(arg0) {
   let frameId;
   let level;
   let presentation;

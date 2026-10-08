@@ -1,23 +1,21 @@
-// Module ID: 7978
-// Function ID: 7979
+// Module ID: 8395
+// Function ID: 8396
 // Name: MediaViewerDimensionsContext
-// Dependencies: [19, 21, 558, 576, 1484, 38, 2]
+// Dependencies: [19, 21, 558, 576, 1496, 38, 2]
 
-// Module 7978 (MediaViewerDimensionsContext)
+// Module 8395 (MediaViewerDimensionsContext)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let children;
-
 const jsx = Fragment.jsx;
 const redux = react.createContext(null);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaViewerDimensionsProvider(children) {
   let first;
   const obj = react2;
   const cResult = obj.c(4);
@@ -42,13 +40,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[2] = tmp4;
   cResult[3] = tmp6;
   tmp5 = tmp6;
-}) : ((children) => <redux.Provider value={useWindowDimensionsDefault({ ignoreKeyboard: true })}>{arg0.children}</redux.Provider>);
+}) : (function MediaViewerDimensionsProvider(children) {
+  return <redux.Provider value={useWindowDimensionsDefault({ ignoreKeyboard: true })}>{arg0.children}</redux.Provider>;
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaViewerDimensions() {
   const context = react.useContext(redux);
   _modDef38(null != context, "useMediaViewerDimensions must be used inside MediaViewerDimensionsProvider");
   return context;
-}) : (() => {
+}) : (function useMediaViewerDimensions() {
   const context = react.useContext(redux);
   _modDef38(null != context, "useMediaViewerDimensions must be used inside MediaViewerDimensionsProvider");
   return context;

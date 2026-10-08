@@ -4,7 +4,7 @@
 
 // Module 1917
 const obj = {
-  locale: "no",
+  locale: "el",
   pluralRuleFunction(arg0, arg1) {
     let str = "other";
     let str2 = "other";
@@ -18,3 +18,4 @@ const obj = {
   }
 };
 globalThis.IntlMessageFormat.__addLocaleData(obj);
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "el-CY", parentLocale: "el" });

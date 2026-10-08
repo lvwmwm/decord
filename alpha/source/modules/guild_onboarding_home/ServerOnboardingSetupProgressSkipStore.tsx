@@ -1,10 +1,10 @@
-// Module ID: 16232
-// Function ID: 16233
+// Module ID: 16492
+// Function ID: 16493
 // Name: ServerOnboardingSetupProgressSkipStore
 // Dependencies: [504, 584, 558, 576, 2]
 // Exports: skipServerOnboardingSetupProgress
 
-// Module 16232 (ServerOnboardingSetupProgressSkipStore)
+// Module 16492 (ServerOnboardingSetupProgressSkipStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -47,7 +47,7 @@ let obj = {
   }
 };
 const serverOnboardingSetupProgressSkipStore = new ServerOnboardingSetupProgressSkipStore(DispatcherDefault, obj);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsServerOnboardingSetupProgressSkipped(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -79,7 +79,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useIsServerOnboardingSetupProgressSkipped(arg0) {
   let closure_0;
   _require = arg0;
   const items = [serverOnboardingSetupProgressSkipStore];

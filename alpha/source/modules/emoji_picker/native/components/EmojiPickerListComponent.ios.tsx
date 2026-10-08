@@ -1,17 +1,16 @@
-// Module ID: 9942
-// Function ID: 9943
+// Module ID: 9464
+// Function ID: 9465
 // Name: components/EmojiPickerListComponent
-// Dependencies: [19, 9882, 21, 558, 576, 9918, 9931, 9943, 9939, 8404, 2]
+// Dependencies: [19, 9362, 21, 558, 576, 9439, 9453, 9465, 9461, 8600, 2]
 
-// Module 9942 (components/EmojiPickerListComponent)
+// Module 9464 (components/EmojiPickerListComponent)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9882 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9362 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let categoryIndexActive;
 
 let closure_4;
 let hasOwnProperty;
@@ -19,28 +18,31 @@ let metroImportDefault;
 let metroRequire;
 ({ ROW_HEIGHT: closure_4, LABEL_HEIGHT: hasOwnProperty, LABEL_TOP_PADDING: metroRequire, LABEL_BOTTOM_PADDING: metroImportDefault } = EmojiPickerListConstants);
 const jsx = Fragment.jsx;
-const forwardRef = react.forwardRef;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((categoryIndexActive, ref) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiPickerListComponent(categoryIndexActive) {
   let data;
   let data2;
   let headerIndices;
+  let onShowNitroUpsell;
   let paddingBottom;
   let paddingTop;
+  let ref;
+  let ref1;
   let renderItem;
   let tmp10;
   let tmp = categoryIndexActive;
-  let tmp2 = ref;
-  let obj = categoryIndexActive(ref[4]);
+  let tmp2 = ref1;
+  let obj = categoryIndexActive(ref1[4]);
   const cResult = obj.c(16);
   categoryIndexActive = categoryIndexActive.categoryIndexActive;
   ({ data, paddingTop, paddingBottom, renderItem } = categoryIndexActive);
   ({ data: data2, headerIndices } = data);
-  const onShowNitroUpsell = categoryIndexActive.onShowNitroUpsell;
-  ref = react.useRef(null);
+  ({ onShowNitroUpsell, ref } = categoryIndexActive);
+  ref1 = react.useRef(null);
   const obj2 = react;
   if (cResult[0] === paddingBottom) {
     let tmp5;
     let tmp7;
+    let tmp8;
     let tmp9;
     if (cResult[1] === paddingTop) {
       tmp5 = cResult[2];
@@ -58,26 +60,29 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     }
     const _Symbol2 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn2 = function b(type, arg1) {
+      const fn2 = function h(type, arg1) {
         return "" + type.type + "-" + arg1;
       };
       let num2 = 4;
       cResult[4] = fn2;
+      tmp8 = fn2;
+    } else {
+      tmp8 = cResult[4];
     }
     const _Symbol3 = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       class O {
         constructor(arg0, type) {
           type = type.type;
-          if (categoryIndexActive(ref[5]).EmojiPickerItemType.PLACEHOLDER === type) {
+          if (categoryIndexActive(ref1[5]).EmojiPickerItemType.PLACEHOLDER === type) {
             arg0.size = 0;
-          } else if (categoryIndexActive(ref[5]).EmojiPickerItemType.TITLE === type) {
+          } else if (categoryIndexActive(ref1[5]).EmojiPickerItemType.TITLE === type) {
             arg0.size = closure_1_5 + closure_1_6 + closure_1_7;
           } else {
-            if (categoryIndexActive(ref[5]).EmojiPickerItemType.EMOJI_ROW !== type) {
-              if (categoryIndexActive(ref[5]).EmojiPickerItemType.EMOJI_ROW_NSFW !== type) {
-                if (categoryIndexActive(ref[5]).EmojiPickerItemType.FOOTER_UPSELL === type) {
-                  arg0.size = categoryIndexActive(ref[6]).PREMIUM_EXPRESSION_PICKER_SEARCH_UPSELL_HEIGHT;
+            if (categoryIndexActive(ref1[5]).EmojiPickerItemType.EMOJI_ROW !== type) {
+              if (categoryIndexActive(ref1[5]).EmojiPickerItemType.EMOJI_ROW_NSFW !== type) {
+                if (categoryIndexActive(ref1[5]).EmojiPickerItemType.FOOTER_UPSELL === type) {
+                  arg0.size = categoryIndexActive(ref1[6]).PREMIUM_EXPRESSION_PICKER_SEARCH_UPSELL_HEIGHT;
                 }
               }
             }
@@ -92,15 +97,15 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       class O {
         constructor(arg0, type) {
           type = type.type;
-          if (categoryIndexActive(ref[5]).EmojiPickerItemType.PLACEHOLDER === type) {
+          if (categoryIndexActive(ref1[5]).EmojiPickerItemType.PLACEHOLDER === type) {
             arg0.size = 0;
-          } else if (categoryIndexActive(ref[5]).EmojiPickerItemType.TITLE === type) {
+          } else if (categoryIndexActive(ref1[5]).EmojiPickerItemType.TITLE === type) {
             arg0.size = closure_1_5 + closure_1_6 + closure_1_7;
           } else {
-            if (categoryIndexActive(ref[5]).EmojiPickerItemType.EMOJI_ROW !== type) {
-              if (categoryIndexActive(ref[5]).EmojiPickerItemType.EMOJI_ROW_NSFW !== type) {
-                if (categoryIndexActive(ref[5]).EmojiPickerItemType.FOOTER_UPSELL === type) {
-                  arg0.size = categoryIndexActive(ref[6]).PREMIUM_EXPRESSION_PICKER_SEARCH_UPSELL_HEIGHT;
+            if (categoryIndexActive(ref1[5]).EmojiPickerItemType.EMOJI_ROW !== type) {
+              if (categoryIndexActive(ref1[5]).EmojiPickerItemType.EMOJI_ROW_NSFW !== type) {
+                if (categoryIndexActive(ref1[5]).EmojiPickerItemType.FOOTER_UPSELL === type) {
+                  arg0.size = categoryIndexActive(ref1[6]).PREMIUM_EXPRESSION_PICKER_SEARCH_UPSELL_HEIGHT;
                 }
               }
             }
@@ -113,15 +118,15 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       class O {
         constructor(arg0, type) {
           type = type.type;
-          if (categoryIndexActive(ref[5]).EmojiPickerItemType.PLACEHOLDER === type) {
+          if (categoryIndexActive(ref1[5]).EmojiPickerItemType.PLACEHOLDER === type) {
             arg0.size = 0;
-          } else if (categoryIndexActive(ref[5]).EmojiPickerItemType.TITLE === type) {
+          } else if (categoryIndexActive(ref1[5]).EmojiPickerItemType.TITLE === type) {
             arg0.size = closure_1_5 + closure_1_6 + closure_1_7;
           } else {
-            if (categoryIndexActive(ref[5]).EmojiPickerItemType.EMOJI_ROW !== type) {
-              if (categoryIndexActive(ref[5]).EmojiPickerItemType.EMOJI_ROW_NSFW !== type) {
-                if (categoryIndexActive(ref[5]).EmojiPickerItemType.FOOTER_UPSELL === type) {
-                  arg0.size = categoryIndexActive(ref[6]).PREMIUM_EXPRESSION_PICKER_SEARCH_UPSELL_HEIGHT;
+            if (categoryIndexActive(ref1[5]).EmojiPickerItemType.EMOJI_ROW !== type) {
+              if (categoryIndexActive(ref1[5]).EmojiPickerItemType.EMOJI_ROW_NSFW !== type) {
+                if (categoryIndexActive(ref1[5]).EmojiPickerItemType.FOOTER_UPSELL === type) {
+                  arg0.size = categoryIndexActive(ref1[6]).PREMIUM_EXPRESSION_PICKER_SEARCH_UPSELL_HEIGHT;
                 }
               }
             }
@@ -137,15 +142,15 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
         class O {
           constructor(arg0, type) {
             type = type.type;
-            if (categoryIndexActive(ref[5]).EmojiPickerItemType.PLACEHOLDER === type) {
+            if (categoryIndexActive(ref1[5]).EmojiPickerItemType.PLACEHOLDER === type) {
               arg0.size = 0;
-            } else if (categoryIndexActive(ref[5]).EmojiPickerItemType.TITLE === type) {
+            } else if (categoryIndexActive(ref1[5]).EmojiPickerItemType.TITLE === type) {
               arg0.size = closure_1_5 + closure_1_6 + closure_1_7;
             } else {
-              if (categoryIndexActive(ref[5]).EmojiPickerItemType.EMOJI_ROW !== type) {
-                if (categoryIndexActive(ref[5]).EmojiPickerItemType.EMOJI_ROW_NSFW !== type) {
-                  if (categoryIndexActive(ref[5]).EmojiPickerItemType.FOOTER_UPSELL === type) {
-                    arg0.size = categoryIndexActive(ref[6]).PREMIUM_EXPRESSION_PICKER_SEARCH_UPSELL_HEIGHT;
+              if (categoryIndexActive(ref1[5]).EmojiPickerItemType.EMOJI_ROW !== type) {
+                if (categoryIndexActive(ref1[5]).EmojiPickerItemType.EMOJI_ROW_NSFW !== type) {
+                  if (categoryIndexActive(ref1[5]).EmojiPickerItemType.FOOTER_UPSELL === type) {
+                    arg0.size = categoryIndexActive(ref1[6]).PREMIUM_EXPRESSION_PICKER_SEARCH_UPSELL_HEIGHT;
                   }
                 }
               }
@@ -210,8 +215,8 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       cResult[12] = onViewableItemsChanged;
       cResult[13] = isPortalKeyboardInModal;
       cResult[14] = renderItem;
-      cResult[15] = jsx(tmp(tmp2[9]).BottomSheetFlashList, { contentContainerStyle: tmp5, data: data2, getItemType: tmp7, keyboardShouldPersistTaps: "always", keyExtractor: null, onViewableItemsChanged, overrideItemLayout: tmp9, preventNativeModalDismiss: isPortalKeyboardInModal, ref, renderItem, stickyHeaderIndices: headerIndices });
-      const tmp17 = jsx(tmp(tmp2[9]).BottomSheetFlashList, { contentContainerStyle: tmp5, data: data2, getItemType: tmp7, keyboardShouldPersistTaps: "always", keyExtractor: null, onViewableItemsChanged, overrideItemLayout: tmp9, preventNativeModalDismiss: isPortalKeyboardInModal, ref, renderItem, stickyHeaderIndices: headerIndices });
+      cResult[15] = jsx(tmp(tmp2[9]).BottomSheetFlashList, { contentContainerStyle: tmp5, data: data2, getItemType: tmp7, keyboardShouldPersistTaps: "always", keyExtractor: tmp8, onViewableItemsChanged: null, overrideItemLayout: tmp9, preventNativeModalDismiss: isPortalKeyboardInModal, ref: ref1, renderItem, stickyHeaderIndices: headerIndices });
+      const tmp16 = jsx(tmp(tmp2[9]).BottomSheetFlashList, { contentContainerStyle: tmp5, data: data2, getItemType: tmp7, keyboardShouldPersistTaps: "always", keyExtractor: tmp8, onViewableItemsChanged: null, overrideItemLayout: tmp9, preventNativeModalDismiss: isPortalKeyboardInModal, ref: ref1, renderItem, stickyHeaderIndices: headerIndices });
     }
     class C {
       constructor() {
@@ -273,17 +278,18 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   cResult[1] = paddingTop;
   cResult[2] = obj4;
   tmp5 = obj4;
-}) : ((paddingTop, ref) => {
+}) : (function EmojiPickerListComponent(paddingTop) {
   let data;
   let onShowNitroUpsell;
+  let ref;
   let renderItem;
   ({ categoryIndexActive: require, data } = paddingTop);
   const stickyHeaderIndices = data.headerIndices;
   paddingTop = paddingTop.paddingTop;
   const paddingBottom = paddingTop.paddingBottom;
   const data2 = data.data;
-  ({ onShowNitroUpsell, renderItem } = paddingTop);
-  ref = paddingBottom.useRef(null);
+  ({ onShowNitroUpsell, renderItem, ref } = paddingTop);
+  const ref2 = paddingBottom.useRef(null);
   const items = [paddingTop, paddingBottom];
   const contentContainerStyle = paddingBottom.useMemo(() => ({ paddingTop, paddingBottom }), items);
   const getItemType = paddingBottom.useCallback((type) => type.type, []);
@@ -302,11 +308,12 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           }
         }
       }
-      arg0.size = ref;
+      arg0.size = ref2;
     }
   }, []);
   const imperativeHandle = paddingBottom.useImperativeHandle(ref, () => {
     let length;
+    let ref;
     let obj = {
       scrollToHeaderIndex(animated) {
         let flag = animated.animated;
@@ -356,8 +363,8 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   const onViewableItemsChanged = stickyHeaderIndices(paddingTop[7])(onShowNitroUpsell).onViewableItemsChanged;
   let obj = require("PortalKeyboardModalContext");
   const preventNativeModalDismiss = obj.useIsPortalKeyboardInModal();
-  return jsx(require("defaultMVCPConfig").BottomSheetFlashList, { contentContainerStyle, data: data2, getItemType, keyboardShouldPersistTaps: "always", keyExtractor, onViewableItemsChanged, overrideItemLayout, preventNativeModalDismiss, ref, renderItem, stickyHeaderIndices });
-}));
+  return jsx(require("defaultMVCPConfig").BottomSheetFlashList, { contentContainerStyle, data: data2, getItemType, keyboardShouldPersistTaps: "always", keyExtractor, onViewableItemsChanged, overrideItemLayout, preventNativeModalDismiss, ref: ref2, renderItem, stickyHeaderIndices });
+});
 let result = size.fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerListComponent.ios.tsx");
 
-export default forwardRefResult;
+export default tmp3;

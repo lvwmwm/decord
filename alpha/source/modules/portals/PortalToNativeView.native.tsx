@@ -1,14 +1,14 @@
-// Module ID: 6574
-// Function ID: 6575
+// Module ID: 6750
+// Function ID: 6751
 // Name: PortalToNativeView
-// Dependencies: [19, 17, 21, 4896, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 2]
 
-// Module 6574 (PortalToNativeView)
+// Module 6750 (PortalToNativeView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const requireNativeComponent = react_native.requireNativeComponent;
 const jsx = Fragment.jsx;
 let closure_3 = requireNativeComponent("PortalToNativeView");
 let closure_4 = createStyles.createStyles({ portal: { position: "absolute", opacity: 0, height: 0, right: 0, left: 0, top: 0 } });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PortalToNativeView(arg0) {
   let children;
   let portalId;
   const obj = react2;
@@ -38,7 +38,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tmp2.portal;
   cResult[3] = tmp4;
   tmp3 = tmp4;
-}) : ((arg0) => {
+}) : (function PortalToNativeView(arg0) {
   let children;
   let portalId;
   ({ portalId, children } = arg0);

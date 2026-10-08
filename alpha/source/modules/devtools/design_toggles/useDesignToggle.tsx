@@ -1,17 +1,17 @@
-// Module ID: 6019
-// Function ID: 6020
+// Module ID: 6205
+// Function ID: 6206
 // Name: useDesignToggle
-// Dependencies: [6020, 558, 576, 504, 2]
+// Dependencies: [6206, 558, 576, 504, 2]
 
-// Module 6019 (useDesignToggle)
-import DesignTogglesStore from "DesignTogglesStore" /* 6020 */;
+// Module 6205 (useDesignToggle)
+import DesignTogglesStore from "DesignTogglesStore" /* 6206 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDesignToggle(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -43,7 +43,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useDesignToggle(arg0) {
   let closure_0;
   _require = arg0;
   const items = [DesignTogglesStore];

@@ -1,19 +1,19 @@
-// Module ID: 9708
-// Function ID: 9709
+// Module ID: 10913
+// Function ID: 10914
 // Name: LabeledActionBarButton
-// Dependencies: [109, 19, 17, 1096, 21, 4896, 5627, 587, 558, 576, 1188, 5916, 2]
+// Dependencies: [109, 19, 17, 1096, 21, 5090, 5974, 587, 558, 576, 1200, 6189, 2]
 
-// Module 9708 (LabeledActionBarButton)
+// Module 10913 (LabeledActionBarButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
-import LegacyTokens from "LegacyTokens" /* 5627 */;
-import Pressables from "Pressables" /* 5916 */;
+import LegacyTokens from "LegacyTokens" /* 5974 */;
+import Pressables from "Pressables" /* 6189 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp7;
-const native = tmp7(1188);
+const native = tmp7(1200);
 let closure_2 = ["backgroundColor", "imageStyle", "children", "source", "disabled", "label", "iconPosition"];
 ({ Image: closure_4, View: hasOwnProperty } = react_native);
 const Fonts = Constants.Fonts;
@@ -36,7 +36,7 @@ createStyles = createStyles.createStyles;
 obj3 = { marginStart: 8, fontSize: 14, color: nativeDefault.colors.WHITE, fontFamily: Fonts.PRIMARY_SEMIBOLD, paddingStart: 3 };
 let closure_8 = createStyles(obj);
 let obj4 = { LEFT: 0, [0]: "LEFT", RIGHT: 1, [1]: "RIGHT" };
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledActionButton(arg0) {
   let LEFT;
   let backgroundColor;
   let children;
@@ -204,7 +204,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                     }
                                   }
                                   const obj6 = { accessibilityRole: "button", disabled: tmp6, style: tmp15.pressable, children: tmp42 };
-                                  const PressableOpacity = tmp(5916).PressableOpacity;
+                                  const PressableOpacity = tmp(6189).PressableOpacity;
                                   const merged = Object.assign(tmp9);
                                   const tmp51 = metroRequire(PressableOpacity, obj6);
                                   cResult[47] = tmp6;
@@ -254,7 +254,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               if (null != tmp8) {
                 const items2 = [tmp15.buttonText, ];
                 let rightTextMargin = LEFT === obj4.RIGHT;
-                const LegacyText = tmp(1188).LegacyText;
+                const LegacyText = tmp(1200).LegacyText;
                 const tmp31 = metroRequire;
                 if (rightTextMargin) {
                   rightTextMargin = tmp15.rightTextMargin;
@@ -301,7 +301,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[10] = containerWithLabel;
   cResult[11] = items5;
   tmp17 = items5;
-}) : ((children) => {
+}) : (function LabeledActionButton(children) {
   let PressableOpacity;
   let backgroundColor;
   let disabled;

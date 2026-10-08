@@ -1,52 +1,52 @@
-// Module ID: 17321
-// Function ID: 17322
+// Module ID: 17602
+// Function ID: 17603
 // Name: VoicePanelCardFloatingControls
-// Dependencies: [19, 17, 4885, 2050, 4918, 4919, 11916, 11914, 11919, 1085, 4917, 21, 4618, 1188, 4896, 587, 558, 576, 11915, 17277, 17322, 9761, 17323, 17250, 1126, 9680, 9350, 9349, 5983, 4806, 5604, 17248, 5038, 4948, 9024, 17217, 17324, 17325, 504, 17307, 17326, 6577, 4595, 9406, 8356, 5903, 8354, 8352, 9409, 17327, 5777, 6664, 7861, 9359, 5312, 9403, 4892, 9444, 17328, 2]
+// Dependencies: [19, 17, 5079, 2062, 5893, 5108, 11989, 11987, 11992, 1085, 5113, 21, 4810, 1200, 5090, 587, 558, 576, 11988, 17558, 17603, 10962, 17604, 17531, 1126, 10869, 8772, 8771, 6166, 5000, 5374, 17529, 7438, 5896, 10623, 17498, 17605, 17606, 504, 17588, 17607, 6753, 4787, 8827, 8854, 8213, 8852, 8850, 8830, 17608, 5360, 6841, 8279, 8781, 5624, 8825, 5086, 9105, 17609, 2]
 
-// Module 17321 (VoicePanelCardFloatingControls)
+// Module 17602 (VoicePanelCardFloatingControls)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 4948 */;
-import StreamActionCreators from "StreamActionCreators" /* 5038 */;
-import spring from "spring" /* 5604 */;
-import NativeViewDefault from "NativeView" /* 5983 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8352 */;
-import useShouldOpenGameProfileModal from "useShouldOpenGameProfileModal" /* 8354 */;
-import useResolveGameForProfileDefault from "useResolveGameForProfile" /* 8356 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 9024 */;
-import VoiceStateIcons from "VoiceStateIcons" /* 9349 */;
-import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9350 */;
-import usePlayingGameActivitiesDefault from "usePlayingGameActivities" /* 9406 */;
-import GuildTagDefault from "GuildTag" /* 9409 */;
-import VoiceXIcon from "VoiceXIcon" /* 9680 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11914 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11915 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11919 */;
-import useStableParticipant from "useStableParticipant" /* 17248 */;
-import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 17250 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17277 */;
-import getRandomNumberInRangeDefault from "getRandomNumberInRange" /* 17307 */;
-import GameTagChipletDefault from "GameTagChiplet" /* 17327 */;
+import native from "native" /* 1200 */;
+import spring from "spring" /* 5374 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 5896 */;
+import NativeViewDefault from "NativeView" /* 6166 */;
+import StreamActionCreators from "StreamActionCreators" /* 7438 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
+import VoiceStateIcons from "VoiceStateIcons" /* 8771 */;
+import VoiceStateIconUtils from "VoiceStateIconUtils" /* 8772 */;
+import usePlayingGameActivitiesDefault from "usePlayingGameActivities" /* 8827 */;
+import GuildTagDefault from "GuildTag" /* 8830 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8850 */;
+import useShouldOpenGameProfileModal from "useShouldOpenGameProfileModal" /* 8852 */;
+import useResolveGameForProfileDefault from "useResolveGameForProfile" /* 8854 */;
+import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 10623 */;
+import VoiceXIcon from "VoiceXIcon" /* 10869 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11987 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11988 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11992 */;
+import useStableParticipant from "useStableParticipant" /* 17529 */;
+import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 17531 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17558 */;
+import getRandomNumberInRangeDefault from "getRandomNumberInRange" /* 17588 */;
+import GameTagChipletDefault from "GameTagChiplet" /* 17608 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4918 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11916 */;
-import CallConstants from "CallConstants" /* 4917 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5893 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11989 */;
+import CallConstants from "CallConstants" /* 5113 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 4618 */;
-import createStyles from "createStyles" /* 4896 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 4810 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, icon, importDefault, participantId, set, voicePlatform;
+let _require, dependencyMap, importDefault, set;
 
 let Platform;
 let Pressable;
@@ -58,8 +58,8 @@ let closure_16;
 let closure_17;
 let closure_18;
 let tmp;
-const native2 = tmp(4595);
-const useGameProfileObscuredDefault = tmp(5903);
+const native2 = tmp(4787);
+const useGameProfileObscuredDefault = tmp(8213);
 function getAccessibilityLabel(tmp4ResultResult, label) {
   if (null != tmp4ResultResult.find((type) => type.type === require("useVoicePanelCardUserStateIcons").VoicePanelCardUserStateIconType.STREAM_ICON)) {
     const intl3 = intl5.intl;
@@ -112,7 +112,7 @@ let closure_22 = createStyles.createStyles(() => {
 const __initData = { code: "function VoicePanelCardFloatingControlsTsx1(){const{controlsSpecs,VoicePanelControlsModes,GAP}=this.__closure;const hidden=controlsSpecs.get().mode===VoicePanelControlsModes.HIDDEN;return{marginLeft:hidden?2:GAP,marginRight:hidden?2:0};}" };
 const __initData2 = { code: "function VoicePanelCardFloatingControlsTsx2(){const{controlsSpecs,VoicePanelControlsModes,GAP}=this.__closure;const hidden=controlsSpecs.get().mode===VoicePanelControlsModes.HIDDEN;return{marginLeft:hidden?2:GAP,marginRight:hidden?2:0};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((voicePlatform) => {
+let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamIcon(voicePlatform) {
   let controlsSpecs;
   let tmp = dependencyMap;
   let obj = controlsSpecs(576);
@@ -138,15 +138,15 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((voicePlatform)
   fn.__closure = obj3;
   fn.__workletHash = 3270040588948;
   fn.__initData = __initData;
-  const obj2 = controlsSpecs(4618);
+  const obj2 = controlsSpecs(4810);
   const animatedStyle = obj2.useAnimatedStyle(fn);
   let tmp4Result = AssetRegistryDefault;
   if (voicePlatform === constants2.XBOX) {
-    tmp4Result = tmp4(17322);
+    tmp4Result = tmp4(17603);
   } else if (voicePlatform === constants2.MOBILE) {
-    tmp4Result = tmp4(9761);
+    tmp4Result = tmp4(10962);
   } else if (voicePlatform === constants2.QUEST) {
-    tmp4Result = tmp4(17323);
+    tmp4Result = tmp4(17604);
   }
   if (cResult[0] === animatedStyle) {
     let tmp8;
@@ -174,12 +174,12 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((voicePlatform)
   cResult[1] = tmp3.iconWithoutBackground;
   cResult[2] = items;
   tmp8 = items;
-}) : ((voicePlatform) => {
+}) : (function StreamIcon(voicePlatform) {
   let items;
   voicePlatform = voicePlatform.voicePlatform;
   let tmp = closure_22();
   const controlsSpecs = react.useContext(VoicePanelStateContextDefault).controlsSpecs;
-  let obj = controlsSpecs(4618);
+  let obj = controlsSpecs(4810);
   const fn = function o() {
     let num2;
     const tmp = controlsSpecs.get().mode === VoicePanelControlsModes.HIDDEN;
@@ -201,18 +201,18 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((voicePlatform)
   const animatedStyle = obj.useAnimatedStyle(fn);
   let tmp2Result = AssetRegistryDefault;
   if (voicePlatform === constants2.XBOX) {
-    tmp2Result = tmp2(17322);
+    tmp2Result = tmp2(17603);
   } else if (voicePlatform === constants2.MOBILE) {
-    tmp2Result = tmp2(9761);
+    tmp2Result = tmp2(10962);
   } else if (voicePlatform === constants2.QUEST) {
-    tmp2Result = tmp2(17323);
+    tmp2Result = tmp2(17604);
   }
   const obj3 = { source: tmp2Result, style: items };
   items = [tmp.iconWithoutBackground, animatedStyle];
   return closure_16(closure_19, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
+let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnimatedLabelIcon(icon) {
   let obj6;
   let obj8;
   const obj = react2;
@@ -224,7 +224,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
     let tmp47;
     if (cResult[0] !== icon.voicePlatform) {
       const obj2 = { voicePlatform: icon.voicePlatform };
-      const tmp50 = authStore3(closure_25, obj2);
+      const tmp50 = authStore4(closure_25, obj2);
       cResult[0] = icon.voicePlatform;
       cResult[1] = tmp50;
       tmp47 = tmp50;
@@ -248,7 +248,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
     }
     if (cResult[3] !== tmp4.iconWithoutBackground) {
       const obj3 = { style: tmp4.iconWithoutBackground };
-      const tmp42 = authStore3(VoiceXIcon.VoiceXIcon, obj3);
+      const tmp42 = authStore4(VoiceXIcon.VoiceXIcon, obj3);
       cResult[3] = tmp4.iconWithoutBackground;
       cResult[4] = tmp42;
       tmp40 = tmp42;
@@ -265,7 +265,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
       }
     }
     const obj4 = { style: speakerMuteIcon, hitSlop: 12, onPress: onPress2, accessibilityRole: "button", accessibilityLabel: tmp38, children: tmp40 };
-    const tmp46 = authStore3(Pressable, obj4);
+    const tmp46 = authStore4(Pressable, obj4);
     cResult[5] = icon.onPress;
     cResult[6] = tmp4.speakerMuteIcon;
     cResult[7] = tmp40;
@@ -303,14 +303,14 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
       }
     }
     if (null != icon.onPress) {
-      const obj5 = { style: tmp4.iconContainer, onPress: icon.onPress, accessibilityRole: "button", accessibilityLabel: tmp27, children: authStore3(VoiceStateIcons.VideoIcon, obj6) };
+      const obj5 = { style: tmp4.iconContainer, onPress: icon.onPress, accessibilityRole: "button", accessibilityLabel: tmp27, children: authStore4(VoiceStateIcons.VideoIcon, obj6) };
       obj6 = { style: tmp4.icon, state: icon.videoIconState };
-      tmp34 = authStore3(Pressable, obj5);
+      tmp34 = authStore4(Pressable, obj5);
     } else {
-      const obj7 = { style: tmp4.iconContainer, accessible: true, accessibilityRole: "image", accessibilityLabel: tmp27, children: authStore3(VoiceStateIcons.VideoIcon, obj8) };
+      const obj7 = { style: tmp4.iconContainer, accessible: true, accessibilityRole: "image", accessibilityLabel: tmp27, children: authStore4(VoiceStateIcons.VideoIcon, obj8) };
       obj8 = { style: tmp4.icon, state: icon.videoIconState };
       const tmp33 = NativeViewDefault;
-      tmp34 = authStore3(tmp33, obj7);
+      tmp34 = authStore4(tmp33, obj7);
     }
     cResult[11] = icon.onPress;
     cResult[12] = icon.videoIconState;
@@ -338,21 +338,21 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
           return tmp23;
         }
         const obj9 = { style: tmp4.iconContainer, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp19 };
-        const tmp26 = authStore3(NativeViewDefault, obj9);
+        const tmp26 = authStore4(NativeViewDefault, obj9);
         cResult[23] = tmp4.iconContainer;
         cResult[24] = tmp19;
         cResult[25] = tmp26;
         tmp23 = tmp26;
       }
       const obj10 = { onPress: icon.onPress, hitSlop: 12, children: tmp16 };
-      const tmp22 = authStore3(Pressable, obj10);
+      const tmp22 = authStore4(Pressable, obj10);
       cResult[20] = icon.onPress;
       cResult[21] = tmp16;
       cResult[22] = tmp22;
       tmp19 = tmp22;
     }
     const obj11 = { style: tmp4.icon, state: icon.muteDeafenIconState, alwaysWhite: true };
-    const tmp18 = authStore3(VoiceStateIcons.MuteDeafenIcon, obj11);
+    const tmp18 = authStore4(VoiceStateIcons.MuteDeafenIcon, obj11);
     cResult[17] = icon.muteDeafenIconState;
     cResult[18] = tmp4.icon;
     cResult[19] = tmp18;
@@ -367,8 +367,8 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
       const intl = tmp(1126).intl;
       const stringResult2 = intl.string(intl5.t.HFwRpk);
       const obj12 = { size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
-      const CircleErrorIcon = tmp(4806).CircleErrorIcon;
-      const tmp11 = authStore3(CircleErrorIcon, obj12);
+      const CircleErrorIcon = tmp(5000).CircleErrorIcon;
+      const tmp11 = authStore4(CircleErrorIcon, obj12);
       cResult[26] = stringResult2;
       cResult[27] = tmp11;
       tmp7 = tmp11;
@@ -385,13 +385,13 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
       return tmp12;
     }
     const obj13 = { style: iconContainer, onPress, accessibilityRole: "button", accessibilityLabel: tmp6, children: tmp7 };
-    const tmp15 = authStore3(Pressable, obj13);
+    const tmp15 = authStore4(Pressable, obj13);
     cResult[28] = icon.onPress;
     cResult[29] = tmp4.iconContainer;
     cResult[30] = tmp15;
     tmp12 = tmp15;
   }
-}) : ((icon) => {
+}) : (function AnimatedLabelIcon(icon) {
   let CircleErrorIcon;
   let intl;
   let intl4;
@@ -406,12 +406,12 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
   const type = icon.type;
   if (useVoicePanelCardUserStateIcons.VoicePanelCardUserStateIconType.STREAM_ICON === type) {
     const obj2 = { voicePlatform: icon.voicePlatform };
-    return authStore3(closure_25, obj2);
+    return authStore4(closure_25, obj2);
   } else if (useVoicePanelCardUserStateIcons.VoicePanelCardUserStateIconType.SPEAKER_MUTE_ICON === type) {
-    const obj3 = { style: tmp.speakerMuteIcon, hitSlop: 12, onPress: icon.onPress, accessibilityRole: "button", accessibilityLabel: intl4.string(intl5.t.Q8Uzof), children: authStore3(VoiceXIcon.VoiceXIcon, obj4) };
+    const obj3 = { style: tmp.speakerMuteIcon, hitSlop: 12, onPress: icon.onPress, accessibilityRole: "button", accessibilityLabel: intl4.string(intl5.t.Q8Uzof), children: authStore4(VoiceXIcon.VoiceXIcon, obj4) };
     intl4 = tmp2(1126).intl;
     obj4 = { style: tmp.iconWithoutBackground };
-    return authStore3(Pressable, obj3);
+    return authStore4(Pressable, obj3);
   } else if (useVoicePanelCardUserStateIcons.VoicePanelCardUserStateIconType.USER_VIDEO_ICON === type) {
     let stringResult;
     let tmp16;
@@ -423,34 +423,34 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
       stringResult = intl2.string(tmp2(1126).t["PXMZ/+"]);
     }
     if (null != icon.onPress) {
-      const obj5 = { style: tmp.iconContainer, onPress: icon.onPress, accessibilityRole: "button", accessibilityLabel: stringResult, children: authStore3(VoiceStateIcons.VideoIcon, obj6) };
+      const obj5 = { style: tmp.iconContainer, onPress: icon.onPress, accessibilityRole: "button", accessibilityLabel: stringResult, children: authStore4(VoiceStateIcons.VideoIcon, obj6) };
       obj6 = { style: tmp.icon, state: icon.videoIconState };
-      tmp16 = authStore3(Pressable, obj5);
+      tmp16 = authStore4(Pressable, obj5);
     } else {
-      const obj7 = { style: tmp.iconContainer, accessible: true, accessibilityRole: "image", accessibilityLabel: stringResult, children: authStore3(VoiceStateIcons.VideoIcon, obj8) };
+      const obj7 = { style: tmp.iconContainer, accessible: true, accessibilityRole: "image", accessibilityLabel: stringResult, children: authStore4(VoiceStateIcons.VideoIcon, obj8) };
       obj8 = { style: tmp.icon, state: icon.videoIconState };
       const tmp15 = NativeViewDefault;
-      tmp16 = authStore3(tmp15, obj7);
+      tmp16 = authStore4(tmp15, obj7);
     }
     return tmp16;
   } else if (useVoicePanelCardUserStateIcons.VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON === type) {
-    const obj9 = { style: tmp.iconContainer, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: authStore3(Pressable, obj10) };
-    obj10 = { onPress: icon.onPress, hitSlop: 12, children: authStore3(VoiceStateIcons.MuteDeafenIcon, obj11) };
+    const obj9 = { style: tmp.iconContainer, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: authStore4(Pressable, obj10) };
+    obj10 = { onPress: icon.onPress, hitSlop: 12, children: authStore4(VoiceStateIcons.MuteDeafenIcon, obj11) };
     obj11 = { style: tmp.icon, state: icon.muteDeafenIconState, alwaysWhite: true };
     const tmp9 = NativeViewDefault;
-    return authStore3(tmp9, obj9);
+    return authStore4(tmp9, obj9);
   } else if (useVoicePanelCardUserStateIcons.VoicePanelCardUserStateIconType.USER_DISCONNECTED_ICON === type) {
-    const obj = { style: tmp.iconContainer, onPress: icon.onPress, accessibilityRole: "button", accessibilityLabel: intl.string(intl5.t.HFwRpk), children: authStore3(CircleErrorIcon, obj12) };
+    const obj = { style: tmp.iconContainer, onPress: icon.onPress, accessibilityRole: "button", accessibilityLabel: intl.string(intl5.t.HFwRpk), children: authStore4(CircleErrorIcon, obj12) };
     intl = tmp2(1126).intl;
     obj12 = { size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
-    CircleErrorIcon = tmp2(4806).CircleErrorIcon;
-    return authStore3(Pressable, obj);
+    CircleErrorIcon = tmp2(5000).CircleErrorIcon;
+    return authStore4(Pressable, obj);
   }
 });
 const __initData3 = { code: "function VoicePanelCardFloatingControlsTsx3(){const{controlsHidden,FLOATING_BAR_HEIGHT,VOICE_PANEL_CARD_INNER_PADDING,withSpring,MODE_CHANGE_PHYSICS}=this.__closure;const hidden=controlsHidden.get();return{position:\"absolute\",top:hidden?-(FLOATING_BAR_HEIGHT+VOICE_PANEL_CARD_INNER_PADDING*2):VOICE_PANEL_CARD_INNER_PADDING,left:VOICE_PANEL_CARD_INNER_PADDING,opacity:withSpring(hidden?0:1,MODE_CHANGE_PHYSICS),zIndex:1};}" };
 const __initData4 = { code: "function VoicePanelCardFloatingControlsTsx4(){const{controlsHidden,FLOATING_BAR_HEIGHT,VOICE_PANEL_CARD_INNER_PADDING,withSpring,MODE_CHANGE_PHYSICS}=this.__closure;const hidden=controlsHidden.get();return{position:'absolute',top:hidden?-(FLOATING_BAR_HEIGHT+VOICE_PANEL_CARD_INNER_PADDING*2):VOICE_PANEL_CARD_INNER_PADDING,left:VOICE_PANEL_CARD_INNER_PADDING,opacity:withSpring(hidden?0:1,MODE_CHANGE_PHYSICS),zIndex:1};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((controlsHidden) => {
+let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTopLeftButtonStyles(controlsHidden) {
   let left;
   _require = controlsHidden;
   const fn = function n() {
@@ -478,7 +478,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((controlsHidden
   fn.__initData = __initData3;
   ({ controlsHidden, FLOATING_BAR_HEIGHT: v28, VOICE_PANEL_CARD_INNER_PADDING, withSpring: require("spring").withSpring, MODE_CHANGE_PHYSICS });
   return obj.useAnimatedStyle(fn);
-}) : ((controlsHidden) => {
+}) : (function useTopLeftButtonStyles(controlsHidden) {
   let left;
   _require = controlsHidden;
   const fn = function n() {
@@ -509,7 +509,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((controlsHidden
 });
 const memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_31 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => {
+let closure_31 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function CloseButton(participant) {
   let guildId;
   let isSelf;
   let layout;
@@ -518,7 +518,7 @@ let closure_31 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((participa
   participant = participant.participant;
   ({ isSelf, layout } = participant);
   const controlsHidden = participant.controlsHidden;
-  guildId = react.useContext(guildId(11915)).guildId;
+  guildId = react.useContext(guildId(11988)).guildId;
   const tmp5 = closure_30(controlsHidden);
   if (cResult[0] === guildId) {
     let tmp6;
@@ -542,8 +542,8 @@ let closure_31 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((participa
           }
         }
       }
-      let obj2 = { icon: tmp4(17324), onPress: tmp6, style: tmp5, layout, accessibilityLabel: tmp7 };
-      const tmp4Result = guildId(17217);
+      let obj2 = { icon: tmp4(17605), onPress: tmp6, style: tmp5, layout, accessibilityLabel: tmp7 };
+      const tmp4Result = guildId(17498);
       const tmp13 = closure_16(tmp4Result, obj2);
       cResult[6] = tmp6;
       cResult[7] = layout;
@@ -552,7 +552,7 @@ let closure_31 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((participa
       cResult[10] = tmp13;
       tmp10 = tmp13;
     }
-    const tmpResult = tmp(17248);
+    const tmpResult = tmp(17529);
     const result = tmpResult.isStableActivityParticipant(participant);
     const intl = tmp(1126).intl;
     const string = intl.string;
@@ -597,7 +597,7 @@ let closure_31 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((participa
   cResult[1] = participant;
   cResult[2] = fn;
   tmp6 = fn;
-}) : ((participant) => {
+}) : (function CloseButton(participant) {
   let controlsHidden;
   let isSelf;
   let layout;
@@ -605,7 +605,7 @@ let closure_31 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((participa
   participant = participant.participant;
   let guildId;
   ({ controlsHidden, isSelf, layout } = participant);
-  guildId = react.useContext(guildId(11915)).guildId;
+  guildId = react.useContext(guildId(11988)).guildId;
   const items = [guildId, participant];
   const tmp = closure_30(controlsHidden);
   const callback = react.useCallback(() => {
@@ -633,9 +633,9 @@ let closure_31 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((participa
     }
   }, items);
   const tmp3 = closure_16;
-  let obj = { icon: guildId(17324), onPress: callback, style: tmp, layout, accessibilityLabel: stringResult };
-  const tmp4 = guildId(17217);
-  let obj2 = participant(17248);
+  let obj = { icon: guildId(17605), onPress: callback, style: tmp, layout, accessibilityLabel: stringResult };
+  const tmp4 = guildId(17498);
+  let obj2 = participant(17529);
   const result = obj2.isStableActivityParticipant(participant);
   const intl = participant(1126).intl;
   const string = intl.string;
@@ -653,7 +653,7 @@ const __initData5 = { code: "function VoicePanelCardFloatingControlsTsx5(){const
 const __initData6 = { code: "function VoicePanelCardFloatingControlsTsx6(){const{controlsHidden,mode,VoicePanelModes,FLOATING_BAR_HEIGHT,VOICE_PANEL_CARD_INNER_PADDING,withSpring,MODE_CHANGE_PHYSICS}=this.__closure;const hidden=controlsHidden.get()||mode.get()===VoicePanelModes.PIP;return{position:'absolute',top:hidden?-(FLOATING_BAR_HEIGHT+VOICE_PANEL_CARD_INNER_PADDING*2):VOICE_PANEL_CARD_INNER_PADDING,right:VOICE_PANEL_CARD_INNER_PADDING,opacity:withSpring(hidden?0:1,MODE_CHANGE_PHYSICS),zIndex:1};}" };
 const memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_34 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((participantId) => {
+let closure_34 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function CardFocusButton(participantId) {
   let isActivityParticipant;
   let layout;
   let mode;
@@ -751,7 +751,7 @@ let closure_34 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((particip
   cResult[1] = setFocused;
   cResult[2] = fn;
   tmp6 = fn;
-}) : ((participantId) => {
+}) : (function CardFocusButton(participantId) {
   let isActivityParticipant;
   let layout;
   let right;
@@ -824,7 +824,7 @@ const __initData13 = { code: "function VoicePanelCardFloatingControlsTsx17(){con
 const __initData14 = { code: "function VoicePanelCardFloatingControlsTsx18(){const{angle}=this.__closure;return{transform:[{rotate:angle.get()+\"deg\"}]};}" };
 const memo3 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_48 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((controlsHidden) => {
+let closure_48 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (function RingingIcon(controlsHidden) {
   let sharedValue1;
   let tmp7;
   let tmp8;
@@ -973,7 +973,7 @@ let closure_48 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((controls
   cResult[3] = animatedStyle;
   cResult[4] = items1;
   tmp16 = items1;
-}) : ((controlsHidden) => {
+}) : (function RingingIcon(controlsHidden) {
   let Icon;
   let items1;
   let obj10;
@@ -1078,17 +1078,17 @@ let closure_48 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((controls
 }));
 const memo4 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_49 = memo4(ReactCompilerGating.isReactCompilerEnabled() ? ((controlsHidden) => {
+let closure_49 = memo4(ReactCompilerGating.isReactCompilerEnabled() ? (function RingingIconWrapper(controlsHidden) {
   let obj3;
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
   controlsHidden = controlsHidden.controlsHidden;
   if (cResult[0] !== controlsHidden) {
-    const obj2 = { theme: ThemeTypes.LIGHT, children: authStore3(closure_48, obj3) };
+    const obj2 = { theme: ThemeTypes.LIGHT, children: authStore4(closure_48, obj3) };
     obj3 = { controlsHidden };
     const ThemeContextProvider = native2.ThemeContextProvider;
-    const tmp8 = authStore3(ThemeContextProvider, obj2);
+    const tmp8 = authStore4(ThemeContextProvider, obj2);
     cResult[0] = controlsHidden;
     cResult[1] = tmp8;
     tmp4 = tmp8;
@@ -1096,15 +1096,15 @@ let closure_49 = memo4(ReactCompilerGating.isReactCompilerEnabled() ? ((controls
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : ((controlsHidden) => {
+}) : (function RingingIconWrapper(controlsHidden) {
   controlsHidden = controlsHidden.controlsHidden;
-  const obj = { theme: ThemeTypes.LIGHT, children: authStore3(closure_48, { controlsHidden }) };
+  const obj = { theme: ThemeTypes.LIGHT, children: authStore4(closure_48, { controlsHidden }) };
   const ThemeContextProvider = native2.ThemeContextProvider;
-  return authStore3(ThemeContextProvider, obj);
+  return authStore4(ThemeContextProvider, obj);
 }));
 const memo5 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_50 = memo5(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_50 = memo5(ReactCompilerGating.isReactCompilerEnabled() ? (function UserTagChiplet(arg0) {
   let closure_1;
   let gameRecord;
   let ref;
@@ -1128,8 +1128,8 @@ let closure_50 = memo5(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
   } else {
     tmp6 = cResult[1];
   }
-  gameRecord = tmp3(8356)(tmp6).gameRecord;
-  let tmp7 = tmp3(5903)(gameRecord);
+  gameRecord = tmp3(8854)(tmp6).gameRecord;
+  let tmp7 = tmp3(8213)(gameRecord);
   importDefault = tmp7;
   dependencyMap = react.useRef(false);
   const obj3 = react;
@@ -1200,7 +1200,7 @@ let closure_50 = memo5(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
   cResult[5] = items;
   tmp9 = items;
   tmp8 = fn;
-}) : ((arg0) => {
+}) : (function UserTagChiplet(arg0) {
   let closure_1;
   let ref;
   let textColor;
@@ -1262,7 +1262,7 @@ const __initData23 = { code: "function VoicePanelCardFloatingControlsTsx27(){con
 const __initData24 = { code: "function VoicePanelCardFloatingControlsTsx28(){const{connected,isScreenReaderEnabled,controlsSpecs,VoicePanelControlsModes,hasIcon,GAP}=this.__closure;const hidden_0=!connected.get()||!isScreenReaderEnabled&&controlsSpecs.get().mode===VoicePanelControlsModes.HIDDEN&&hasIcon;const shouldCollapseWidth=hidden_0&&hasIcon;return{width:shouldCollapseWidth?0:'auto',marginRight:hidden_0?-GAP:0};}" };
 const memo6 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_61 = memo6(ReactCompilerGating.isReactCompilerEnabled() ? ((controlsHidden) => {
+let closure_61 = memo6(ReactCompilerGating.isReactCompilerEnabled() ? (function FloatingParticipantLabel(controlsHidden) {
   let channelId;
   let closure_9;
   let controlsSpecs;
@@ -1772,7 +1772,7 @@ let closure_61 = memo6(ReactCompilerGating.isReactCompilerEnabled() ? ((controls
   cResult[1] = channelId;
   cResult[2] = id;
   cResult[3] = fn;
-}) : ((controlsHidden) => {
+}) : (function FloatingParticipantLabel(controlsHidden) {
   let channelId;
   let closure_9;
   let guildId;
@@ -1993,7 +1993,7 @@ let closure_61 = memo6(ReactCompilerGating.isReactCompilerEnabled() ? ((controls
 const __initData25 = { code: "function VoicePanelCardFloatingControlsTsx29(){const{controlsSpecs,VoicePanelControlsModes,focused,mode,VoicePanelModes}=this.__closure;return controlsSpecs.get().mode===VoicePanelControlsModes.HIDDEN||focused.get()!=null||mode.get()===VoicePanelModes.PIP;}" };
 const __initData26 = { code: "function VoicePanelCardFloatingControlsTsx30(){const{controlsSpecs,VoicePanelControlsModes,focused,mode,VoicePanelModes}=this.__closure;return controlsSpecs.get().mode===VoicePanelControlsModes.HIDDEN||focused.get()!=null||mode.get()===VoicePanelModes.PIP;}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function FloatingControls(arg0) {
   let connected;
   let controlsSpecs;
   let focused;
@@ -2237,7 +2237,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[4] = participant;
   cResult[5] = T;
   tmp14 = T;
-}) : ((arg0) => {
+}) : (function FloatingControls(arg0) {
   let connected;
   let isRinging;
   let label;

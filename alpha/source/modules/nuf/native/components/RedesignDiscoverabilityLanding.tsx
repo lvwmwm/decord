@@ -1,27 +1,25 @@
-// Module ID: 17637
-// Function ID: 17638
+// Module ID: 17919
+// Function ID: 17920
 // Name: RedesignDiscoverabilityLanding
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1618, 6075, 1126, 4892, 5981, 12434, 12344, 5601, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1630, 6261, 1126, 5086, 6164, 12530, 12440, 5375, 2]
 
-// Module 17637 (RedesignDiscoverabilityLanding)
+// Module 17919 (RedesignDiscoverabilityLanding)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import NavigatorConstants from "NavigatorConstants" /* 6075 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12344 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12434 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import NavigatorConstants from "NavigatorConstants" /* 6261 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12440 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12530 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let onNext;
 
 let c3;
 let closure_4;
@@ -43,7 +41,7 @@ obj4 = { width: "100%", marginBottom: nativeDefault.space.PX_32 };
 obj5 = { textAlign: "center", marginBottom: nativeDefault.space.PX_16 };
 obj6 = { textAlign: "center", marginBottom: nativeDefault.space.PX_32 };
 let closure_7 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignDiscoverabilityLanding(onNext) {
   let items;
   let items1;
   let tmp12;
@@ -140,7 +138,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
   if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
     const intl4 = tmp(1126).intl;
     const obj7 = {
-      learnMoreHook(children, arg1) {
+      learnMoreHook: function LearnMore(children, arg1) {
           const obj = { onPress: ContactSyncUtils.handleOpenLearnMoreLink, variant: "text-sm/medium", color: "text-link", children };
           const Text = Text_Text.Text;
           return closure_1_5(Text, obj, arg1);
@@ -223,7 +221,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
   cResult[29] = tmp19;
   cResult[30] = tmp43;
   tmp42 = tmp43;
-}) : ((onNext) => {
+}) : (function RedesignDiscoverabilityLanding(onNext) {
   let bottom;
   let intl;
   let intl2;
@@ -256,7 +254,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
   items1 = [intl3.string(intl6.t.ci12MJ), " ", ];
   const intl4 = intl6.intl;
   const obj8 = {
-    learnMoreHook(children, arg1) {
+    learnMoreHook: function LearnMore(children, arg1) {
       const obj = { onPress: ContactSyncUtils.handleOpenLearnMoreLink, variant: "text-sm/medium", color: "text-link", children };
       const Text = Text_Text.Text;
       return closure_1_5(Text, obj, arg1);

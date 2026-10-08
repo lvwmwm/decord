@@ -1,0 +1,10 @@
+// Module ID: 4094
+// Function ID: 4095
+// Name: AssetRegistry
+// Dependencies: [1132]
+
+// Module 4094 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1132 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9lbW9qaXMvZGVmYXVsdF9lbW9qaXM=", scales: [1], hash: "f6b14b055f794744bc38119dbb910c44", name: "hi.messages.f6b14b055f794744bc38119dbb910c44.compiled.messages", type: "jsona" });

@@ -1,41 +1,41 @@
-// Module ID: 14500
-// Function ID: 14501
+// Module ID: 14760
+// Function ID: 14761
 // Name: GuildProfileEditForm
-// Dependencies: [109, 19, 17, 2112, 7124, 1085, 1379, 21, 4534, 6664, 6688, 14432, 4860, 14434, 1987, 7848, 1126, 7846, 8848, 558, 576, 14449, 14445, 6478, 14501, 587, 4892, 14466, 7924, 7844, 6117, 10849, 14495, 504, 7868, 10839, 7925, 7851, 13792, 14502, 7910, 7921, 14503, 14456, 4728, 14457, 14468, 14470, 14471, 14475, 14479, 8943, 8896, 4595, 10855, 10840, 10856, 2]
+// Dependencies: [109, 19, 17, 2124, 7309, 1085, 1391, 21, 4726, 6841, 6865, 14671, 5054, 14659, 1999, 8266, 1126, 8264, 14670, 14670, 9208, 558, 576, 14677, 14673, 6656, 14761, 587, 5086, 14694, 8343, 8262, 6296, 10500, 14755, 504, 8286, 10488, 8344, 8269, 14014, 14762, 8329, 8340, 14763, 14683, 4922, 14684, 14696, 14700, 14701, 14705, 14709, 9328, 9329, 4787, 10506, 10489, 10507, 2]
 
-// Module 14500 (GuildProfileEditForm)
+// Module 14760 (GuildProfileEditForm)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4534 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6664 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6688 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 7846 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 7848 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 8848 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8896 */;
-import openPremiumModalDefault from "openPremiumModal" /* 8943 */;
-import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 14432 */;
-import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 14445 */;
-import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 14449 */;
-import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 14466 */;
-import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 14501 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4726 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6841 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6865 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8264 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8266 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9208 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9328 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9329 */;
+import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 14671 */;
+import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 14673 */;
+import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 14677 */;
+import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 14694 */;
+import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 14761 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import UserProfileStore from "UserProfileStore" /* 7124 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import UserProfileStore from "UserProfileStore" /* 7309 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let currentUser, importDefault;
+let importDefault;
 
 let AnalyticsPages;
 let AnalyticsSections;
@@ -48,7 +48,6 @@ let metroImportAll;
 let metroImportDefault;
 let unpackModuleId;
 function EditGuildProfileBanner(user) {
-  let banner;
   let disabled;
   let displayProfile;
   let guildMember;
@@ -64,10 +63,10 @@ function EditGuildProfileBanner(user) {
   let obj = PremiumUtilsDefault;
   let result = obj.canUsePremiumGuildMemberProfile(user);
   let c4 = result;
-  const tmp3 = useAnalyticsLocationsDefault;
+  let tmp3 = useAnalyticsLocationsDefault;
   const analyticsLocations = tmp3(AnalyticsLocationDefault.EDIT_BANNER).analyticsLocations;
   let obj2 = { value: analyticsLocations, children: tmp4(tmp6, obj3) };
-  const AnalyticsLocationProvider = user(6664).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = user(6841).AnalyticsLocationProvider;
   obj3 = {
     user,
     displayProfile,
@@ -76,7 +75,8 @@ function EditGuildProfileBanner(user) {
     pendingThemeColors,
     showProfilePreviewButton: false,
     showEditButton: result,
-    onPressEdit() {
+    onPressEdit: function handleEditBanner() {
+      let banner;
       let guildId;
       let intl;
       let obj3;
@@ -84,31 +84,41 @@ function EditGuildProfileBanner(user) {
       let showRemoveBanner;
       let tmp19;
       if (c4) {
-        const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+        let openLazy = ActionSheetActionCreatorsDefault.openLazy;
         let obj = {
           user,
           analyticsLocations,
-          showRemoveBanner: showRemoveBanner(tmp19, dependencyMap),
+          showRemoveBanner: showRemoveBanner(tmp19, banner),
           removeText: intl.string(intl7.t.jHlJNS),
           onBannerChange(dependencyMap) {
               const obj = user(dependencyMap[17]);
               const obj2 = { guildId, banner: dependencyMap };
               return obj.setPendingChanges(obj2);
+            },
+          onGifBannerSelect: function openGifPicker() {
+              const obj = ActionSheetActionCreatorsDefault;
+              obj.hideActionSheet();
+              const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+              const obj2 = { profileAssetType: user(dependencyMap[19]).ProfileAssetType.BANNER, selectionContext: user(dependencyMap[19]).GIFSelectionContext.PROFILE_EDIT, guildId };
+              ActionSheetActionCreatorsDefault;
+              const tmp3 = user(dependencyMap[14])(dependencyMap[18], dependencyMap.paths);
+              openLazy(tmp3, "Select GIF Banner", obj2);
             }
         };
         ActionSheetActionCreatorsDefault;
-        const tmp14 = asyncRequire(14434, dependencyMap.paths);
-        dependencyMap = undefined;
+        banner = undefined;
+        const tmp14 = asyncRequire(14659, dependencyMap.paths);
         showRemoveBanner = ProfileCustomizationUtils.showRemoveBanner;
         ProfileCustomizationUtils;
         tmp19 = pendingBanner;
         if (dependencyMap != null) {
-          dependencyMap = dependencyMap.banner;
+          banner = dependencyMap.banner;
         }
         intl = tmp10(1126).intl;
         openLazy(tmp14, "Change Banner", obj);
       } else {
         let obj2 = { initialUpsellKey: constants.PREMIUM_GUILD_PROFILE, analyticsLocation: obj3, analyticsLocations, analyticsProperties: obj4 };
+        let tmp3 = constants;
         obj3 = { section: AnalyticsSections.PREMIUM_GUILD_MEMBER_PROFILE, object: unpackModuleId.EDIT_GUILD_PROFILE_BANNER };
         obj4 = { type: PremiumUpsellTypes.PREMIUM_GUILD_IDENTITY_MODAL };
         const tmpResult2 = PremiumUpsellUtilsDefault;
@@ -134,7 +144,7 @@ const PremiumUpsellTypes = PremiumConstants.PremiumUpsellTypes;
 ({ jsx: closure_17, jsxs: closure_18 } = Fragment);
 let closure_19 = { page: AnalyticsPages.USER_SETTINGS, section: AnalyticsSections.SETTINGS_CUSTOMIZE_PROFILE };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfileTryItOutUpsellExperimentWrapper(arg0) {
   let intl2;
   let onButtonPress;
   let onLayout;
@@ -211,7 +221,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const _Symbol2 = Symbol;
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
         const obj6 = { variant: "text-sm/normal", children: intl2.string(intl7.t.YIZS5B) };
-        const Text = tmp(4892).Text;
+        const Text = tmp(5086).Text;
         intl2 = tmp(1126).intl;
         const tmp16 = closure_17(Text, obj6);
         cResult[12] = tmp16;
@@ -239,7 +249,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[10] = items;
     tmp11 = items;
   }
-}) : ((onButtonPress) => {
+}) : (function GuildProfileTryItOutUpsellExperimentWrapper(onButtonPress) {
   let Text;
   let intl;
   let intl2;
@@ -267,14 +277,14 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const tmp4Result2 = UserProfileUpsellCardDefault;
     intl = tmp(1126).intl;
     obj5 = { variant: "text-sm/normal", children: intl2.string(intl7.t.YIZS5B) };
-    Text = tmp(4892).Text;
+    Text = tmp(5086).Text;
     intl2 = tmp(1126).intl;
     tmp7Result = tmp7(tmp4Result2, obj3);
   }
   return tmp7Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfileEditForm(currentUser) {
   let avatarBackground;
   let bio;
   let containerBackground;
@@ -288,13 +298,22 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
   let guild;
   let guild_tag;
   let id2;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
   let isDisabled;
+  let items10;
+  let items11;
   let items4;
   let items5;
   let items6;
   let items7;
   let items8;
+  let items9;
   let nick;
+  let obj23;
   let obj5;
   let obj7;
   let obj9;
@@ -314,13 +333,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
   let theme;
   let tmp127;
   let tmp14;
+  let tmp144;
+  let tmp146;
   let tmp15;
+  let tmp152;
   let tmp16;
   let tmp17;
   let tmp18;
   let tmp20;
+  let tmp4Result12;
+  let tmp4Result9;
   let tmp = currentUser;
-  let obj = currentUser(guild[20]);
+  let obj = currentUser(guild[22]);
   const cResult = obj.c(186);
   currentUser = currentUser.currentUser;
   const tmp5 = require("UserProfileSharedStyles")();
@@ -333,9 +357,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
   } else {
     first = cResult[0];
   }
-  const tmpResult = tmp(guild[29]);
+  const tmpResult = tmp(guild[31]);
   const bioMaxLength = tmpResult.useBioMaxLength(first);
-  let tmp9 = tmp4(tmp2[30])();
+  let tmp9 = tmp4(tmp2[32])();
   const ref = first3.useRef(null);
   const ref1 = first3.useRef(null);
   const ref2 = first3.useRef(null);
@@ -347,8 +371,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
   } else {
     tmp14 = cResult[1];
   }
-  const insets = tmp4(tmp2[23])(tmp14).insets;
-  const PX_16 = tmp4(tmp2[25]).space.PX_16;
+  const insets = tmp4(tmp2[25])(tmp14).insets;
+  const PX_16 = tmp4(tmp2[27]).space.PX_16;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { ref: ref1, offset: obj5 };
     obj5 = { type: "toRef", ref: ref2, extraOffset: PX_16 };
@@ -383,7 +407,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
   } else {
     tmp18 = cResult[6];
   }
-  const onFocus = tmp4(tmp2[31])(tmp18).onFocus;
+  const onFocus = tmp4(tmp2[33])(tmp18).onFocus;
   const tmp19 = require("useGuildProfileEditForm")();
   guild = tmp19.guild;
   ({ errors, isDisabled, pendingNickname, pendingAvatar, pendingBanner, pendingThemeColors, pendingPronouns, pendingBio, pendingAvatarDecoration, pendingProfileEffect, pendingProfileFrame, pendingNameplate, pendingDisplayNameStyles } = tmp19);
@@ -400,7 +424,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
     if (cResult[9] === guild) {
       tmp22 = cResult[10];
     }
-    const tmpResult9 = tmp(guild[33]);
+    const tmpResult9 = tmp(guild[35]);
     const stateFromStores = tmpResult9.useStateFromStores(tmp20, tmp22);
     const _Symbol = Symbol;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
@@ -415,7 +439,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
       if (cResult[13] === guild) {
         tmp26 = cResult[14];
       }
-      const tmpResult10 = tmp(guild[33]);
+      const tmpResult10 = tmp(guild[35]);
       const stateFromStores1 = tmpResult10.useStateFromStores(tmp24, tmp26);
       let id1;
       let id = currentUser.id;
@@ -424,7 +448,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
         id1 = guild.id;
       }
       const tmp4ResultResult = tmp4Result(id, id1);
-      const tmpResult11 = tmp(guild[35]);
+      const tmpResult11 = tmp(guild[37]);
       const customStatusActivity = tmpResult11.useCustomStatusActivity();
       const tmp32 = require("useBadges")(tmp4ResultResult);
       if (cResult[15] === currentUser.id) {
@@ -433,11 +457,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
         if (cResult[16] === pendingAvatar) {
           tmp33 = cResult[17];
         }
-        const tmpResult12 = tmp(guild[38]);
+        const tmpResult12 = tmp(guild[40]);
         const canEditNickname = tmpResult12.useGuildActionSheetPermissions(guild).canEditNickname;
         if (cResult[18] !== currentUser) {
-          const tmp4Result4 = require("PremiumUtils");
-          const result = tmp4Result4.canUsePremiumGuildMemberProfile(currentUser);
+          const tmp4Result8 = require("PremiumUtils");
+          const result = tmp4Result8.canUsePremiumGuildMemberProfile(currentUser);
           cResult[18] = currentUser;
           cResult[19] = result;
           tmp35 = result;
@@ -454,7 +478,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
           if (cResult[21] === themeColors) {
             tmp38 = cResult[22];
           }
-          const tmpResult13 = tmp(guild[24]);
+          const tmpResult13 = tmp(guild[26]);
           const floatingUpsellHeight = tmpResult13.useFloatingUpsellHeight();
           const onLayout = floatingUpsellHeight.onLayout;
           let str;
@@ -519,10 +543,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
                   let tmp78;
                   let tmp77;
                   let tmp75;
+                  let first2;
                   if (cResult[30] === theme) {
                     tmp46 = cResult[31];
                   }
-                  const tmpResult14 = tmp(guild[41]);
+                  const tmpResult14 = tmp(guild[43]);
                   const userProfileColors = tmpResult14.useUserProfileColors(tmp46);
                   ({ gradientFallbackBackground, gradientSecondaryBackground, containerBackground, avatarBackground } = userProfileColors);
                   let num30 = 0;
@@ -531,7 +556,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
                     num30 = height;
                   }
                   const sum = bottom + num30;
-                  const sum1 = sum + tmp4(tmp2[25]).space.PX_16;
+                  const sum1 = sum + tmp4(tmp2[27]).space.PX_16;
                   if (cResult[32] === analyticsLocations) {
                     if (cResult[33] === avatarBackground) {
                       if (cResult[34] === tmp32) {
@@ -631,123 +656,123 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
                                                                                                             if (cResult[152] === tmp60) {
                                                                                                               if (cResult[153] === tmp61) {
                                                                                                                 if (cResult[154] === tmp62) {
-                                                                                                                  let tmp135;
+                                                                                                                  let tmp154;
                                                                                                                   if (cResult[155] === tmp63) {
-                                                                                                                    tmp135 = cResult[156];
+                                                                                                                    tmp154 = cResult[156];
                                                                                                                   }
                                                                                                                   if (cResult[157] === tmp51) {
                                                                                                                     if (cResult[158] === tmp64) {
-                                                                                                                      let tmp138;
-                                                                                                                      if (cResult[159] === tmp135) {
-                                                                                                                        tmp138 = cResult[160];
+                                                                                                                      let tmp157;
+                                                                                                                      if (cResult[159] === tmp154) {
+                                                                                                                        tmp157 = cResult[160];
                                                                                                                       }
                                                                                                                       if (cResult[161] === tmp52) {
                                                                                                                         if (cResult[162] === tmp65) {
                                                                                                                           if (cResult[163] === tmp66) {
-                                                                                                                            let tmp141;
-                                                                                                                            if (cResult[164] === tmp138) {
-                                                                                                                              tmp141 = cResult[165];
+                                                                                                                            let tmp160;
+                                                                                                                            if (cResult[164] === tmp157) {
+                                                                                                                              tmp160 = cResult[165];
                                                                                                                             }
                                                                                                                             if (cResult[166] === tmp53) {
                                                                                                                               if (cResult[167] === tmp67) {
                                                                                                                                 if (cResult[168] === tmp68) {
-                                                                                                                                  let tmp144;
-                                                                                                                                  if (cResult[169] === tmp141) {
-                                                                                                                                    tmp144 = cResult[170];
+                                                                                                                                  let tmp163;
+                                                                                                                                  if (cResult[169] === tmp160) {
+                                                                                                                                    tmp163 = cResult[170];
                                                                                                                                   }
                                                                                                                                   if (cResult[171] === tmp56) {
                                                                                                                                     if (cResult[172] === onLayout) {
-                                                                                                                                      let tmp147;
+                                                                                                                                      let tmp166;
                                                                                                                                       if (cResult[173] === (!tmp35 && !tmp9)) {
-                                                                                                                                        tmp147 = cResult[174];
+                                                                                                                                        tmp166 = cResult[174];
                                                                                                                                       }
                                                                                                                                       if (cResult[175] === tmp54) {
                                                                                                                                         if (cResult[176] === tmp69) {
-                                                                                                                                          if (cResult[177] === tmp144) {
-                                                                                                                                            let tmp151;
-                                                                                                                                            if (cResult[178] === tmp147) {
-                                                                                                                                              tmp151 = cResult[179];
+                                                                                                                                          if (cResult[177] === tmp163) {
+                                                                                                                                            let tmp170;
+                                                                                                                                            if (cResult[178] === tmp166) {
+                                                                                                                                              tmp170 = cResult[179];
                                                                                                                                             }
                                                                                                                                             if (cResult[180] === tmp55) {
                                                                                                                                               if (cResult[181] === tmp70) {
                                                                                                                                                 if (cResult[182] === tmp71) {
                                                                                                                                                   if (cResult[183] === tmp72) {
-                                                                                                                                                    let tmp154;
-                                                                                                                                                    if (cResult[184] === tmp151) {
-                                                                                                                                                      tmp154 = cResult[185];
+                                                                                                                                                    let tmp173;
+                                                                                                                                                    if (cResult[184] === tmp170) {
+                                                                                                                                                      tmp173 = cResult[185];
                                                                                                                                                     }
-                                                                                                                                                    tmp73 = tmp154;
+                                                                                                                                                    tmp73 = tmp173;
                                                                                                                                                   }
                                                                                                                                                 }
                                                                                                                                               }
                                                                                                                                             }
-                                                                                                                                            const obj11 = { theme: tmp70, primaryColor: tmp71, secondaryColor: tmp72, children: tmp151 };
-                                                                                                                                            const tmp156 = closure_17(tmp55, obj11);
+                                                                                                                                            const obj11 = { theme: tmp70, primaryColor: tmp71, secondaryColor: tmp72, children: tmp170 };
+                                                                                                                                            const tmp175 = closure_17(tmp55, obj11);
                                                                                                                                             cResult[180] = tmp55;
                                                                                                                                             cResult[181] = tmp70;
                                                                                                                                             cResult[182] = tmp71;
                                                                                                                                             cResult[183] = tmp72;
-                                                                                                                                            cResult[184] = tmp151;
-                                                                                                                                            cResult[185] = tmp156;
-                                                                                                                                            tmp154 = tmp156;
+                                                                                                                                            cResult[184] = tmp170;
+                                                                                                                                            cResult[185] = tmp175;
+                                                                                                                                            tmp173 = tmp175;
                                                                                                                                           }
                                                                                                                                         }
                                                                                                                                       }
                                                                                                                                       const obj12 = { style: tmp69, children: items4 };
-                                                                                                                                      items4 = [tmp144, tmp147];
-                                                                                                                                      const tmp153 = closure_18(tmp54, obj12);
+                                                                                                                                      items4 = [tmp163, tmp166];
+                                                                                                                                      const tmp172 = closure_18(tmp54, obj12);
                                                                                                                                       cResult[175] = tmp54;
                                                                                                                                       cResult[176] = tmp69;
-                                                                                                                                      cResult[177] = tmp144;
-                                                                                                                                      cResult[178] = tmp147;
-                                                                                                                                      cResult[179] = tmp153;
-                                                                                                                                      tmp151 = tmp153;
+                                                                                                                                      cResult[177] = tmp163;
+                                                                                                                                      cResult[178] = tmp166;
+                                                                                                                                      cResult[179] = tmp172;
+                                                                                                                                      tmp170 = tmp172;
                                                                                                                                     }
                                                                                                                                   }
-                                                                                                                                  let tmp148 = tmp40;
-                                                                                                                                  if (tmp148) {
+                                                                                                                                  let tmp167 = tmp40;
+                                                                                                                                  if (tmp167) {
                                                                                                                                     const obj13 = { onButtonPress: tmp56, onLayout };
-                                                                                                                                    tmp148 = closure_17(closure_21, obj13);
+                                                                                                                                    tmp167 = closure_17(closure_21, obj13);
                                                                                                                                   }
                                                                                                                                   cResult[171] = tmp56;
                                                                                                                                   cResult[172] = onLayout;
                                                                                                                                   cResult[173] = !tmp35 && !tmp9;
-                                                                                                                                  cResult[174] = tmp148;
-                                                                                                                                  tmp147 = tmp148;
+                                                                                                                                  cResult[174] = tmp167;
+                                                                                                                                  tmp166 = tmp167;
                                                                                                                                 }
                                                                                                                               }
                                                                                                                             }
                                                                                                                             const obj14 = { ref: tmp67, children: items5 };
-                                                                                                                            items5 = [tmp68, tmp141];
-                                                                                                                            const tmp146 = closure_18(tmp53, obj14);
+                                                                                                                            items5 = [tmp68, tmp160];
+                                                                                                                            const tmp165 = closure_18(tmp53, obj14);
                                                                                                                             cResult[166] = tmp53;
                                                                                                                             cResult[167] = tmp67;
                                                                                                                             cResult[168] = tmp68;
-                                                                                                                            cResult[169] = tmp141;
-                                                                                                                            cResult[170] = tmp146;
-                                                                                                                            tmp144 = tmp146;
+                                                                                                                            cResult[169] = tmp160;
+                                                                                                                            cResult[170] = tmp165;
+                                                                                                                            tmp163 = tmp165;
                                                                                                                           }
                                                                                                                         }
                                                                                                                       }
                                                                                                                       const obj15 = { style: tmp65, children: items6 };
-                                                                                                                      items6 = [tmp66, tmp138];
-                                                                                                                      const tmp143 = closure_18(tmp52, obj15);
+                                                                                                                      items6 = [tmp66, tmp157];
+                                                                                                                      const tmp162 = closure_18(tmp52, obj15);
                                                                                                                       cResult[161] = tmp52;
                                                                                                                       cResult[162] = tmp65;
                                                                                                                       cResult[163] = tmp66;
-                                                                                                                      cResult[164] = tmp138;
-                                                                                                                      cResult[165] = tmp143;
-                                                                                                                      tmp141 = tmp143;
+                                                                                                                      cResult[164] = tmp157;
+                                                                                                                      cResult[165] = tmp162;
+                                                                                                                      tmp160 = tmp162;
                                                                                                                     }
                                                                                                                   }
                                                                                                                   const obj16 = { children: items7 };
-                                                                                                                  items7 = [tmp64, tmp135];
-                                                                                                                  const tmp140 = closure_18(tmp51, obj16);
+                                                                                                                  items7 = [tmp64, tmp154];
+                                                                                                                  const tmp159 = closure_18(tmp51, obj16);
                                                                                                                   cResult[157] = tmp51;
                                                                                                                   cResult[158] = tmp64;
-                                                                                                                  cResult[159] = tmp135;
-                                                                                                                  cResult[160] = tmp140;
-                                                                                                                  tmp138 = tmp140;
+                                                                                                                  cResult[159] = tmp154;
+                                                                                                                  cResult[160] = tmp159;
+                                                                                                                  tmp157 = tmp159;
                                                                                                                 }
                                                                                                               }
                                                                                                             }
@@ -757,7 +782,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
                                                                                                     }
                                                                                                     const obj17 = { fallbackBackground: tmp57, primaryColor: tmp58, secondaryColor: tmp59, containerStyle: tmp60, children: items8 };
                                                                                                     items8 = [tmp61, tmp62, tmp63];
-                                                                                                    const tmp137 = closure_18(tmp50, obj17);
+                                                                                                    const tmp156 = closure_18(tmp50, obj17);
                                                                                                     cResult[148] = tmp50;
                                                                                                     cResult[149] = tmp57;
                                                                                                     cResult[150] = tmp58;
@@ -766,8 +791,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
                                                                                                     cResult[153] = tmp61;
                                                                                                     cResult[154] = tmp62;
                                                                                                     cResult[155] = tmp63;
-                                                                                                    cResult[156] = tmp137;
-                                                                                                    tmp135 = tmp137;
+                                                                                                    cResult[156] = tmp156;
+                                                                                                    tmp154 = tmp156;
                                                                                                   }
                                                                                                   return tmp73;
                                                                                                 }
@@ -812,7 +837,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
                   }
                   const _Symbol3 = Symbol;
                   const obj18 = { backgroundColor: avatarBackground };
-                  Symbol.for("react.early_return_sentinel");
+                  const forResult = Symbol.for("react.early_return_sentinel");
                   if (cResult[97] !== errors) {
                     ({ nick, bio, guild_tag } = errors);
                     const tmp81 = first1(errors, analyticsLocations);
@@ -837,7 +862,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
                   }
                   const pronouns = errors.pronouns;
                   if (pronouns != null) {
-                    const first2 = pronouns[0];
+                    first2 = pronouns[0];
                   }
                   first3 = undefined;
                   if (tmp75 != null) {
@@ -847,182 +872,89 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
                   if (tmp77 != null) {
                     first4 = tmp77[0];
                   }
+                  let tmp86 = null;
+                  let tmp87;
+                  let tmp88;
+                  let tmp89;
+                  let tmp90;
+                  let tmp91;
+                  let tmp92;
+                  let tmp93;
+                  let tmp94;
+                  let tmp95;
+                  let tmp96;
+                  let tmp97;
+                  let tmp98;
+                  let tmp99;
+                  let tmp100;
+                  let tmp101;
+                  let tmp102;
+                  let tmp103;
+                  let tmp104;
+                  let tmp105;
+                  let tmp106;
+                  let tmp107;
+                  let tmp108;
+                  let tmp109;
                   if (null != guild) {
                     if (cResult[102] === first3) {
                       if (cResult[103] === tmp76) {
                         if (cResult[104] === first4) {
                           if (cResult[105] === first1) {
-                            let tmp112;
-                            class Nn {
-                              constructor() {
-                                let obj2;
-                                if (null == first3) {
-                                  if (null == first1) {
-                                    let tmp8 = first4;
-                                    if (null == first4) {
-                                      const _Object = Object;
-                                      let stringResult = null;
-                                      if (Object.keys(closure_4).length > 0) {
-                                        const intl = intl7.intl;
-                                        stringResult = intl.string(intl7.t.s35OuK);
-                                      }
-                                      tmp8 = stringResult;
-                                    }
-                                    let tmp9 = null;
-                                    if (null != tmp8) {
-                                      tmp9 = null;
-                                      if ("" !== tmp8) {
-                                        const obj = { style: errorContainer.errorContainer, children: closure_17(Text_Text.Text, obj2) };
-                                        obj2 = { variant: "text-sm/bold", color: "text-feedback-critical", children: tmp8 };
-                                        tmp9 = closure_17(metroImportAll, obj);
-                                      }
-                                    }
-                                    return tmp9;
-                                  }
-                                }
-                                return null;
-                              }
+                            let tmp110;
+                            let tmp111;
+                            let tmp113;
+                            if (cResult[106] === tmp6.errorContainer) {
+                              tmp110 = cResult[107];
                             }
-                            const ThemeContextProvider = tmp(tmp2[53]).ThemeContextProvider;
-                            if (cResult[110] !== gradientSecondaryBackground) {
-                              const obj19 = { backgroundColor: null };
-                              class Nn {
-                                constructor() {
-                                  let obj2;
-                                  if (null == first3) {
-                                    if (null == first1) {
-                                      let tmp8 = first4;
-                                      if (null == first4) {
-                                        const _Object = Object;
-                                        let stringResult = null;
-                                        if (Object.keys(closure_4).length > 0) {
-                                          const intl = intl7.intl;
-                                          stringResult = intl.string(intl7.t.s35OuK);
-                                        }
-                                        tmp8 = stringResult;
-                                      }
-                                      let tmp9 = null;
-                                      if (null != tmp8) {
-                                        tmp9 = null;
-                                        if ("" !== tmp8) {
-                                          const obj = { style: errorContainer.errorContainer, children: closure_17(Text_Text.Text, obj2) };
-                                          obj2 = { variant: "text-sm/bold", color: "text-feedback-critical", children: tmp8 };
-                                          tmp9 = closure_17(metroImportAll, obj);
-                                        }
-                                      }
-                                      return tmp9;
-                                    }
-                                  }
-                                  return null;
-                                }
+                            if (cResult[108] !== analyticsLocations) {
+                              function handleUpsellPress() {
+                                let obj2;
+                                const obj = { analyticsLocation: obj2, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_2_LEADING };
+                                obj2 = { object: unpackModuleId.BUTTON_CTA };
+                                const tmp = openPremiumModalDefault;
+                                const merged = Object.assign(closure_19);
+                                tmp(obj);
                               }
+                              cResult[108] = analyticsLocations;
+                              cResult[109] = handleUpsellPress;
+                              tmp111 = handleUpsellPress;
+                            } else {
+                              tmp111 = cResult[109];
+                            }
+                            const ThemeContextProvider = tmp(tmp2[55]).ThemeContextProvider;
+                            if (cResult[110] !== gradientSecondaryBackground) {
+                              const obj19 = { backgroundColor: gradientSecondaryBackground };
                               cResult[110] = gradientSecondaryBackground;
                               cResult[111] = obj19;
-                              tmp112 = obj19;
+                              tmp113 = obj19;
                             } else {
-                              tmp112 = cResult[111];
+                              tmp113 = cResult[111];
                             }
                             if (cResult[112] === tmp6.container) {
-                              class Nn {
-                                constructor() {
-                                  let obj2;
-                                  if (null == first3) {
-                                    if (null == first1) {
-                                      let tmp8 = first4;
-                                      if (null == first4) {
-                                        const _Object = Object;
-                                        let stringResult = null;
-                                        if (Object.keys(closure_4).length > 0) {
-                                          const intl = intl7.intl;
-                                          stringResult = intl.string(intl7.t.s35OuK);
-                                        }
-                                        tmp8 = stringResult;
-                                      }
-                                      let tmp9 = null;
-                                      if (null != tmp8) {
-                                        tmp9 = null;
-                                        if ("" !== tmp8) {
-                                          const obj = { style: errorContainer.errorContainer, children: closure_17(Text_Text.Text, obj2) };
-                                          obj2 = { variant: "text-sm/bold", color: "text-feedback-critical", children: tmp8 };
-                                          tmp9 = closure_17(metroImportAll, obj);
-                                        }
-                                      }
-                                      return tmp9;
-                                    }
-                                  }
-                                  return null;
-                                }
+                              let tmp114;
+                              let tmp116;
+                              let tmp119;
+                              if (cResult[113] === tmp113) {
+                                tmp114 = cResult[114];
                               }
+                              const tmp115 = first4;
                               if (cResult[115] !== tmp6.bounceOffset) {
-                                class Nn {
-                                  constructor() {
-                                    let obj2;
-                                    if (null == first3) {
-                                      if (null == first1) {
-                                        let tmp8 = first4;
-                                        if (null == first4) {
-                                          const _Object = Object;
-                                          let stringResult = null;
-                                          if (Object.keys(closure_4).length > 0) {
-                                            const intl = intl7.intl;
-                                            stringResult = intl.string(intl7.t.s35OuK);
-                                          }
-                                          tmp8 = stringResult;
-                                        }
-                                        let tmp9 = null;
-                                        if (null != tmp8) {
-                                          tmp9 = null;
-                                          if ("" !== tmp8) {
-                                            const obj = { style: errorContainer.errorContainer, children: closure_17(Text_Text.Text, obj2) };
-                                            obj2 = { variant: "text-sm/bold", color: "text-feedback-critical", children: tmp8 };
-                                            tmp9 = closure_17(metroImportAll, obj);
-                                          }
-                                        }
-                                        return tmp9;
-                                      }
-                                    }
-                                    return null;
-                                  }
-                                }
-                                tmp116[0] = tmp6.bounceOffset;
+                                const obj20 = { style: tmp6.bounceOffset };
+                                const tmp118 = closure_17(closure_8, obj20);
                                 cResult[115] = tmp6.bounceOffset;
-                                cResult[116] = closure_17(closure_8, tmp116);
-                                const tmp117 = closure_17(closure_8, tmp116);
+                                cResult[116] = tmp118;
+                                tmp116 = tmp118;
+                              } else {
+                                tmp116 = cResult[116];
                               }
                               if (cResult[117] !== gradientSecondaryBackground) {
-                                const obj20 = { backgroundColor: null };
-                                class Nn {
-                                  constructor() {
-                                    let obj2;
-                                    if (null == first3) {
-                                      if (null == first1) {
-                                        let tmp8 = first4;
-                                        if (null == first4) {
-                                          const _Object = Object;
-                                          let stringResult = null;
-                                          if (Object.keys(closure_4).length > 0) {
-                                            const intl = intl7.intl;
-                                            stringResult = intl.string(intl7.t.s35OuK);
-                                          }
-                                          tmp8 = stringResult;
-                                        }
-                                        let tmp9 = null;
-                                        if (null != tmp8) {
-                                          tmp9 = null;
-                                          if ("" !== tmp8) {
-                                            const obj = { style: errorContainer.errorContainer, children: closure_17(Text_Text.Text, obj2) };
-                                            obj2 = { variant: "text-sm/bold", color: "text-feedback-critical", children: tmp8 };
-                                            tmp9 = closure_17(metroImportAll, obj);
-                                          }
-                                        }
-                                        return tmp9;
-                                      }
-                                    }
-                                    return null;
-                                  }
-                                }
+                                const obj21 = { backgroundColor: gradientSecondaryBackground };
                                 cResult[117] = gradientSecondaryBackground;
-                                cResult[118] = obj20;
+                                cResult[118] = obj21;
+                                tmp119 = obj21;
+                              } else {
+                                tmp119 = cResult[118];
                               }
                               if (cResult[119] === currentUser) {
                                 if (cResult[120] === tmp4ResultResult) {
@@ -1032,76 +964,21 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
                                         if (cResult[124] === isDisabled) {
                                           if (cResult[125] === tmp33) {
                                             if (cResult[126] === pendingBanner) {
+                                              let tmp120;
                                               let tmp130;
-                                              class Nn {
-                                                constructor() {
-                                                  let obj2;
-                                                  if (null == first3) {
-                                                    if (null == first1) {
-                                                      let tmp8 = first4;
-                                                      if (null == first4) {
-                                                        const _Object = Object;
-                                                        let stringResult = null;
-                                                        if (Object.keys(closure_4).length > 0) {
-                                                          const intl = intl7.intl;
-                                                          stringResult = intl.string(intl7.t.s35OuK);
-                                                        }
-                                                        tmp8 = stringResult;
-                                                      }
-                                                      let tmp9 = null;
-                                                      if (null != tmp8) {
-                                                        tmp9 = null;
-                                                        if ("" !== tmp8) {
-                                                          const obj = { style: errorContainer.errorContainer, children: closure_17(Text_Text.Text, obj2) };
-                                                          obj2 = { variant: "text-sm/bold", color: "text-feedback-critical", children: tmp8 };
-                                                          tmp9 = closure_17(metroImportAll, obj);
-                                                        }
-                                                      }
-                                                      return tmp9;
-                                                    }
-                                                  }
-                                                  return null;
-                                                }
+                                              if (cResult[127] === pendingThemeColors) {
+                                                tmp120 = cResult[128];
                                               }
+                                              let tmp125Result = null;
                                               if (null != guild) {
-                                                class Nn {
-                                                  constructor() {
-                                                    let obj2;
-                                                    if (null == first3) {
-                                                      if (null == first1) {
-                                                        let tmp8 = first4;
-                                                        if (null == first4) {
-                                                          const _Object = Object;
-                                                          let stringResult = null;
-                                                          if (Object.keys(closure_4).length > 0) {
-                                                            const intl = intl7.intl;
-                                                            stringResult = intl.string(intl7.t.s35OuK);
-                                                          }
-                                                          tmp8 = stringResult;
-                                                        }
-                                                        let tmp9 = null;
-                                                        if (null != tmp8) {
-                                                          tmp9 = null;
-                                                          if ("" !== tmp8) {
-                                                            const obj = { style: errorContainer.errorContainer, children: closure_17(Text_Text.Text, obj2) };
-                                                            obj2 = { variant: "text-sm/bold", color: "text-feedback-critical", children: tmp8 };
-                                                            tmp9 = closure_17(metroImportAll, obj);
-                                                          }
-                                                        }
-                                                        return tmp9;
-                                                      }
-                                                    }
-                                                    return null;
-                                                  }
-                                                }
-                                                const items9 = [, , , ];
+                                                const obj22 = { style: items9, children: closure_17(tmp4Result9, obj23) };
+                                                items9 = [, , , ];
                                                 ({ avatarBackground: arr6[0], avatarPosition: arr6[1] } = tmp5);
                                                 items9[2] = tmp6.avatarContainer;
                                                 items9[3] = obj18;
-                                                tmp125[0] = items9;
-                                                const obj21 = { userId: currentUser.id, disabled: tmp127, disableStatus: false, guildId: id2, statusStyle: obj18 };
+                                                obj23 = { userId: currentUser.id, disabled: tmp127, disableStatus: false, guildId: id2, statusStyle: obj18 };
                                                 tmp127 = isDisabled;
-                                                const tmp4Result5 = require("EditGuildIdentityAvatar");
+                                                tmp4Result9 = require("EditGuildIdentityAvatar");
                                                 if (!isDisabled) {
                                                   tmp127 = !tmp35;
                                                 }
@@ -1109,97 +986,237 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
                                                 if (guild != null) {
                                                   id2 = guild.id;
                                                 }
-                                                tmp125[1] = closure_17(tmp4Result5, obj21);
-                                                closure_17(closure_8, tmp125);
+                                                tmp125Result = tmp125(tmp112, obj22);
                                               }
-                                              require("UserProfileGradientContainer");
+                                              const tmp4Result10 = require("UserProfileGradientContainer");
                                               if (cResult[129] !== sum1) {
-                                                const obj22 = { paddingTop: 0, paddingBottom: null };
-                                                class Nn {
-                                                  constructor() {
-                                                    let obj2;
-                                                    if (null == first3) {
-                                                      if (null == first1) {
-                                                        let tmp8 = first4;
-                                                        if (null == first4) {
-                                                          const _Object = Object;
-                                                          let stringResult = null;
-                                                          if (Object.keys(closure_4).length > 0) {
-                                                            const intl = intl7.intl;
-                                                            stringResult = intl.string(intl7.t.s35OuK);
-                                                          }
-                                                          tmp8 = stringResult;
-                                                        }
-                                                        let tmp9 = null;
-                                                        if (null != tmp8) {
-                                                          tmp9 = null;
-                                                          if ("" !== tmp8) {
-                                                            const obj = { style: errorContainer.errorContainer, children: closure_17(Text_Text.Text, obj2) };
-                                                            obj2 = { variant: "text-sm/bold", color: "text-feedback-critical", children: tmp8 };
-                                                            tmp9 = closure_17(metroImportAll, obj);
-                                                          }
-                                                        }
-                                                        return tmp9;
-                                                      }
-                                                    }
-                                                    return null;
-                                                  }
-                                                }
+                                                const obj24 = { paddingTop: 0, paddingBottom: sum1 };
                                                 cResult[129] = sum1;
-                                                cResult[130] = obj22;
-                                                tmp130 = obj22;
+                                                cResult[130] = obj24;
+                                                tmp130 = obj24;
                                               } else {
                                                 tmp130 = cResult[130];
                                               }
                                               if (cResult[131] === tmp5.profileContent) {
                                                 if (cResult[132] === tmp5.profileContentWrapper) {
-                                                  class Nn {
-                                                    constructor() {
-                                                      let obj2;
-                                                      if (null == first3) {
-                                                        if (null == first1) {
-                                                          let tmp8 = first4;
-                                                          if (null == first4) {
-                                                            const _Object = Object;
-                                                            let stringResult = null;
-                                                            if (Object.keys(closure_4).length > 0) {
-                                                              const intl = intl7.intl;
-                                                              stringResult = intl.string(intl7.t.s35OuK);
-                                                            }
-                                                            tmp8 = stringResult;
-                                                          }
-                                                          let tmp9 = null;
-                                                          if (null != tmp8) {
-                                                            tmp9 = null;
-                                                            if ("" !== tmp8) {
-                                                              const obj = { style: errorContainer.errorContainer, children: closure_17(Text_Text.Text, obj2) };
-                                                              obj2 = { variant: "text-sm/bold", color: "text-feedback-critical", children: tmp8 };
-                                                              tmp9 = closure_17(metroImportAll, obj);
-                                                            }
-                                                          }
-                                                          return tmp9;
+                                                  let tmp131;
+                                                  if (cResult[133] === tmp130) {
+                                                    tmp131 = cResult[134];
+                                                  }
+                                                  if (cResult[135] === customStatusActivity) {
+                                                    if (cResult[136] === null != primaryColor) {
+                                                      if (cResult[137] === tmp5.customStatusBubble) {
+                                                        let tmp132;
+                                                        if (cResult[138] === tmp5.emojiOnlyCustomStatusBubble) {
+                                                          tmp132 = cResult[139];
                                                         }
+                                                        let tmp135 = pendingNickname;
+                                                        if (pendingNickname == null) {
+                                                          tmp135 = str;
+                                                        }
+                                                        let tmp136 = str3;
+                                                        if ("" !== pendingPronouns) {
+                                                          tmp136 = pendingPronouns;
+                                                        }
+                                                        if (cResult[140] === tmp32) {
+                                                          if (cResult[141] === containerBackground) {
+                                                            if (cResult[142] === currentUser) {
+                                                              if (cResult[143] === guild.id) {
+                                                                if (cResult[144] === pendingDisplayNameStyles) {
+                                                                  if (cResult[145] === tmp135) {
+                                                                    let tmp137;
+                                                                    if (cResult[146] === tmp136) {
+                                                                      tmp137 = cResult[147];
+                                                                    }
+                                                                    let tmp141Result = null;
+                                                                    if (null != guild) {
+                                                                      const obj25 = { style: items10, children: items11 };
+                                                                      items10 = [tmp6.formContainer, ];
+                                                                      const obj26 = { backgroundColor: containerBackground, paddingBottom: 20 };
+                                                                      items10[1] = obj26;
+                                                                      items11 = [tmp110(), , , , , , , , , ];
+                                                                      const obj27 = {
+                                                                        inputRef: ref1,
+                                                                        label: intl.string(tmp(guild[16]).t.me1lRk),
+                                                                        errorMessage: first1,
+                                                                        value: tmp144,
+                                                                        onFocus,
+                                                                        onChange(nickname) {
+                                                                                                                                              const obj = UserProfileSettingsActionCreators;
+                                                                                                                                              const obj2 = { guildId: guild.id, nickname };
+                                                                                                                                              return obj.setPendingChanges(obj2);
+                                                                                                                                            },
+                                                                        placeholder: tmp4Result12.getName(currentUser),
+                                                                        maxLength,
+                                                                        disabled: tmp146
+                                                                      };
+                                                                      const tmp4Result11 = require("UserProfileEditFormTextField");
+                                                                      intl = tmp(tmp2[16]).intl;
+                                                                      tmp144 = pendingNickname;
+                                                                      const tmp141 = closure_18;
+                                                                      if (pendingNickname == null) {
+                                                                        tmp144 = str;
+                                                                      }
+                                                                      tmp146 = !canEditNickname;
+                                                                      tmp4Result12 = require("UserUtils");
+                                                                      if (canEditNickname) {
+                                                                        tmp146 = isDisabled;
+                                                                      }
+                                                                      items11[1] = closure_17(tmp4Result11, obj27);
+                                                                      let tmp142Result = tmp35;
+                                                                      if (tmp142Result) {
+                                                                        const obj28 = { user: currentUser, guildId: guild.id };
+                                                                        tmp142Result = tmp142(tmp4(tmp2[47]), obj28);
+                                                                      }
+                                                                      items11[2] = tmp142Result;
+                                                                      const obj29 = {
+                                                                        inputRef: ref2,
+                                                                        label: intl2.string(tmp(guild[16]).t["+T3RI/"]),
+                                                                        errorMessage: first2,
+                                                                        description: intl3.string(tmp(guild[16]).t.NZqtIp),
+                                                                        value: pendingPronouns,
+                                                                        onFocus,
+                                                                        onChange(pronouns) {
+                                                                                                                                              const obj = UserProfileSettingsActionCreators;
+                                                                                                                                              const obj2 = { guildId: guild.id, pronouns };
+                                                                                                                                              return obj.setPendingChanges(obj2);
+                                                                                                                                            },
+                                                                        placeholder: str3,
+                                                                        maxLength: maxLength2,
+                                                                        spellCheck: false,
+                                                                        autoCorrect: false,
+                                                                        disabled: isDisabled
+                                                                      };
+                                                                      const tmp4Result13 = require("UserProfileEditFormTextField");
+                                                                      intl2 = tmp(tmp2[16]).intl;
+                                                                      intl3 = tmp(tmp2[16]).intl;
+                                                                      items11[3] = closure_17(tmp4Result13, obj29);
+                                                                      let tmp142Result2 = null;
+                                                                      if (tmp35) {
+                                                                        const obj30 = {
+                                                                          inputRef: ref3,
+                                                                          label: intl4.string(tmp(guild[16]).t.ZzAR2Y),
+                                                                          errorMessage: first3,
+                                                                          description: intl5.string(tmp(guild[16]).t.S5O8U2),
+                                                                          value: tmp152,
+                                                                          onFocus,
+                                                                          onChange(bio) {
+                                                                                                                                                  const obj = UserProfileSettingsActionCreators;
+                                                                                                                                                  const obj2 = { guildId: guild.id, bio };
+                                                                                                                                                  return obj.setPendingChanges(obj2);
+                                                                                                                                                },
+                                                                          placeholder: str5,
+                                                                          maxLength: bioMaxLength,
+                                                                          numberOfLines: 5,
+                                                                          disabled: isDisabled
+                                                                        };
+                                                                        const tmp4Result14 = require("UserProfileEditFormTextField");
+                                                                        intl4 = tmp(tmp2[16]).intl;
+                                                                        intl5 = tmp(tmp2[16]).intl;
+                                                                        tmp152 = pendingBio;
+                                                                        if (pendingBio == null) {
+                                                                          tmp152 = str4;
+                                                                        }
+                                                                        tmp142Result2 = tmp142(tmp4Result14, obj30);
+                                                                      }
+                                                                      items11[4] = tmp142Result2;
+                                                                      const obj31 = {
+                                                                        pendingAvatarSrc: tmp33,
+                                                                        pendingThemeColors,
+                                                                        user: currentUser,
+                                                                        guildId: guild.id,
+                                                                        onProfileThemeColorsChanged(themeColors) {
+                                                                                                                                              const obj = UserProfileSettingsActionCreators;
+                                                                                                                                              const obj2 = { guildId: guild.id, themeColors };
+                                                                                                                                              return obj.setPendingChanges(obj2);
+                                                                                                                                            },
+                                                                        showResetMenu: tmp38
+                                                                      };
+                                                                      items11[5] = closure_17(require("UserProfileEditTheme"), obj31);
+                                                                      class X {
+                                                                        constructor() {
+                                                                          let member = null;
+                                                                          if (null != guild) {
+                                                                            member = GuildMemberStore.getMember(tmp.id, currentUser.id);
+                                                                          }
+                                                                          return member;
+                                                                        }
+                                                                      }
+                                                                      tmp153[0] = currentUser;
+                                                                      tmp153[1] = guild.id;
+                                                                      tmp153[2] = pendingAvatarDecoration;
+                                                                      items11[6] = closure_17(require("UserProfileAvatarDecorationEditButton"), tmp153);
+                                                                      const obj33 = { user: currentUser, guildId: guild.id, pendingProfileEffect, displayProfile: tmp4ResultResult };
+                                                                      items11[7] = closure_17(require("UserProfileEffectEditButton"), obj33);
+                                                                      const obj34 = { user: currentUser, guildId: guild.id, pendingProfileFrame, displayProfile: tmp4ResultResult };
+                                                                      items11[8] = closure_17(require("UserProfileFrameEditButton"), obj34);
+                                                                      const obj35 = { user: currentUser, pendingNameplate, guildId: guild.id };
+                                                                      items11[9] = closure_17(require("UserProfileNameplateEditButton"), obj35);
+                                                                      tmp141Result = tmp141(tmp112, obj25);
+                                                                    }
+                                                                    tmp96 = tmp141Result;
+                                                                    tmp86 = forResult;
+                                                                    tmp87 = secondaryColor;
+                                                                    tmp88 = primaryColor;
+                                                                    tmp89 = theme;
+                                                                    tmp90 = tmp114;
+                                                                    tmp91 = tmp116;
+                                                                    tmp92 = ref;
+                                                                    tmp93 = tmp120;
+                                                                    tmp94 = tmp119;
+                                                                    tmp95 = tmp125Result;
+                                                                    tmp97 = tmp137;
+                                                                    tmp98 = tmp132;
+                                                                    tmp99 = tmp131;
+                                                                    tmp100 = secondaryColor;
+                                                                    tmp101 = primaryColor;
+                                                                    tmp102 = gradientFallbackBackground;
+                                                                    tmp103 = tmp111;
+                                                                    tmp104 = ThemeContextProvider;
+                                                                    tmp105 = tmp112;
+                                                                    tmp106 = tmp115;
+                                                                    tmp107 = tmp112;
+                                                                    tmp108 = tmp112;
+                                                                    tmp109 = tmp4Result10;
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                        const obj36 = { user: currentUser, displayName: tmp135, pronouns: tmp136, badges: tmp32, badgeContainerBackground: containerBackground, displayNameAccessibilityRole: "header", guildId: guild.id, pendingDisplayNameStyles };
+                                                        const tmp139 = closure_17(require("UserProfilePrimaryInfo"), obj36);
+                                                        cResult[140] = tmp32;
+                                                        cResult[141] = containerBackground;
+                                                        cResult[142] = currentUser;
+                                                        cResult[143] = guild.id;
+                                                        cResult[144] = pendingDisplayNameStyles;
+                                                        cResult[145] = tmp135;
+                                                        cResult[146] = tmp136;
+                                                        cResult[147] = tmp139;
+                                                        tmp137 = tmp139;
                                                       }
-                                                      return null;
                                                     }
                                                   }
-                                                  const obj23 = { customStatusActivity, hasCustomProfileTheme: null != primaryColor, style: null, emojiOnlyStyle: null, editEnabled: true };
-                                                  ({ customStatusBubble: obj30.style, emojiOnlyCustomStatusBubble: obj30.emojiOnlyStyle } = tmp5);
+                                                  const obj37 = { customStatusActivity, hasCustomProfileTheme: null != primaryColor, style: null, emojiOnlyStyle: null, editEnabled: true };
+                                                  ({ customStatusBubble: obj32.style, emojiOnlyCustomStatusBubble: obj32.emojiOnlyStyle } = tmp5);
+                                                  const tmp134 = closure_17(require("UserProfileCustomStatusBubble"), obj37);
                                                   cResult[135] = customStatusActivity;
                                                   cResult[136] = null != primaryColor;
                                                   cResult[137] = tmp5.customStatusBubble;
                                                   cResult[138] = tmp5.emojiOnlyCustomStatusBubble;
-                                                  cResult[139] = closure_17(require("UserProfileCustomStatusBubble"), obj23);
-                                                  const tmp134 = closure_17(require("UserProfileCustomStatusBubble"), obj23);
+                                                  cResult[139] = tmp134;
+                                                  tmp132 = tmp134;
                                                 }
                                               }
-                                              const items10 = [, , ];
+                                              const items12 = [, , ];
                                               ({ profileContentWrapper: arr7[0], profileContent: arr7[1] } = tmp5);
-                                              items10[2] = tmp130;
+                                              items12[2] = tmp130;
                                               cResult[131] = tmp5.profileContent;
                                               cResult[132] = tmp5.profileContentWrapper;
                                               cResult[133] = tmp130;
-                                              cResult[134] = items10;
+                                              cResult[134] = items12;
+                                              tmp131 = items12;
                                             }
                                           }
                                         }
@@ -1208,7 +1225,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
                                   }
                                 }
                               }
-                              const obj24 = { user: currentUser, displayProfile: tmp4ResultResult, guildId: guild.id, guildMember: stateFromStores, guildMemberProfile: stateFromStores1, pendingAvatarSrc: tmp33, pendingBanner, pendingThemeColors, disabled: isDisabled };
+                              const obj38 = { user: currentUser, displayProfile: tmp4ResultResult, guildId: guild.id, guildMember: stateFromStores, guildMemberProfile: stateFromStores1, pendingAvatarSrc: tmp33, pendingBanner, pendingThemeColors, disabled: isDisabled };
+                              const tmp123 = closure_17(EditGuildProfileBanner, obj38);
                               cResult[119] = currentUser;
                               cResult[120] = tmp4ResultResult;
                               cResult[121] = guild.id;
@@ -1218,53 +1236,53 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
                               cResult[125] = tmp33;
                               cResult[126] = pendingBanner;
                               cResult[127] = pendingThemeColors;
-                              cResult[128] = closure_17(EditGuildProfileBanner, obj24);
-                              const tmp122 = closure_17(EditGuildProfileBanner, obj24);
+                              cResult[128] = tmp123;
+                              tmp120 = tmp123;
                             }
-                            const items11 = [tmp6.container, tmp112];
+                            const items13 = [tmp6.container, tmp113];
                             cResult[112] = tmp6.container;
-                            cResult[113] = tmp112;
-                            cResult[114] = items11;
+                            cResult[113] = tmp113;
+                            cResult[114] = items13;
+                            tmp114 = items13;
                           }
                         }
                       }
                     }
-                    class Nn {
-                      constructor() {
-                        let obj2;
-                        if (null == first3) {
-                          if (null == first1) {
-                            let tmp8 = first4;
-                            if (null == first4) {
-                              const _Object = Object;
-                              let stringResult = null;
-                              if (Object.keys(closure_4).length > 0) {
-                                const intl = intl7.intl;
-                                stringResult = intl.string(intl7.t.s35OuK);
-                              }
-                              tmp8 = stringResult;
+                    function renderFormError() {
+                      let obj2;
+                      if (null == first3) {
+                        if (null == first1) {
+                          let tmp8 = first4;
+                          if (null == first4) {
+                            const _Object = Object;
+                            let stringResult = null;
+                            if (Object.keys(closure_4).length > 0) {
+                              const intl = intl7.intl;
+                              stringResult = intl.string(intl7.t.s35OuK);
                             }
-                            let tmp9 = null;
-                            if (null != tmp8) {
-                              tmp9 = null;
-                              if ("" !== tmp8) {
-                                const obj = { style: errorContainer.errorContainer, children: closure_17(Text_Text.Text, obj2) };
-                                obj2 = { variant: "text-sm/bold", color: "text-feedback-critical", children: tmp8 };
-                                tmp9 = closure_17(metroImportAll, obj);
-                              }
-                            }
-                            return tmp9;
+                            tmp8 = stringResult;
                           }
+                          let tmp9 = null;
+                          if (null != tmp8) {
+                            tmp9 = null;
+                            if ("" !== tmp8) {
+                              const obj = { style: errorContainer.errorContainer, children: closure_17(Text_Text.Text, obj2) };
+                              obj2 = { variant: "text-sm/bold", color: "text-feedback-critical", children: tmp8 };
+                              tmp9 = closure_17(metroImportAll, obj);
+                            }
+                          }
+                          return tmp9;
                         }
-                        return null;
                       }
+                      return null;
                     }
                     cResult[102] = first3;
                     cResult[103] = tmp76;
                     cResult[104] = first4;
                     cResult[105] = first1;
                     cResult[106] = tmp6.errorContainer;
-                    cResult[107] = Nn;
+                    cResult[107] = renderFormError;
+                    tmp110 = renderFormError;
                   }
                   cResult[32] = analyticsLocations;
                   cResult[33] = avatarBackground;
@@ -1315,30 +1333,30 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
                   cResult[70] = tmp5;
                   cResult[71] = tmp38;
                   cResult[72] = theme;
-                  cResult[73] = undefined;
-                  cResult[74] = undefined;
-                  cResult[75] = undefined;
-                  cResult[76] = undefined;
-                  cResult[77] = undefined;
-                  cResult[78] = undefined;
-                  cResult[79] = undefined;
-                  cResult[80] = undefined;
-                  cResult[81] = undefined;
-                  cResult[82] = undefined;
-                  cResult[83] = undefined;
-                  cResult[84] = undefined;
-                  cResult[85] = undefined;
-                  cResult[86] = undefined;
-                  cResult[87] = undefined;
-                  cResult[88] = undefined;
-                  cResult[89] = undefined;
-                  cResult[90] = undefined;
-                  cResult[91] = undefined;
-                  cResult[92] = undefined;
-                  cResult[93] = undefined;
-                  cResult[94] = undefined;
-                  cResult[95] = undefined;
-                  cResult[96] = null;
+                  cResult[73] = tmp109;
+                  cResult[74] = tmp108;
+                  cResult[75] = tmp107;
+                  cResult[76] = tmp106;
+                  cResult[77] = tmp105;
+                  cResult[78] = tmp104;
+                  cResult[79] = tmp103;
+                  cResult[80] = tmp102;
+                  cResult[81] = tmp101;
+                  cResult[82] = tmp100;
+                  cResult[83] = tmp99;
+                  cResult[84] = tmp98;
+                  cResult[85] = tmp97;
+                  cResult[86] = tmp96;
+                  cResult[87] = tmp95;
+                  cResult[88] = tmp94;
+                  cResult[89] = tmp93;
+                  cResult[90] = tmp92;
+                  cResult[91] = tmp91;
+                  cResult[92] = tmp90;
+                  cResult[93] = tmp89;
+                  cResult[94] = tmp88;
+                  cResult[95] = tmp87;
+                  cResult[96] = tmp86;
                   tmp73 = tmp86;
                   tmp72 = tmp87;
                   tmp71 = tmp88;
@@ -1365,31 +1383,31 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
                   tmp50 = tmp109;
                 }
               }
-              const obj25 = { theme, primaryColor, secondaryColor };
+              const obj39 = { theme, primaryColor, secondaryColor };
               cResult[28] = primaryColor;
               cResult[29] = secondaryColor;
               cResult[30] = theme;
-              cResult[31] = obj25;
-              tmp46 = obj25;
+              cResult[31] = obj39;
+              tmp46 = obj39;
             }
           }
-          const obj26 = { user: currentUser, displayProfile: tmp4ResultResult, pendingThemeColors };
+          const obj40 = { user: currentUser, displayProfile: tmp4ResultResult, pendingThemeColors };
           cResult[24] = currentUser;
           cResult[25] = tmp4ResultResult;
           cResult[26] = pendingThemeColors;
-          cResult[27] = obj26;
-          tmp43 = obj26;
+          cResult[27] = obj40;
+          tmp43 = obj40;
         }
-        const tmpResult15 = tmp(guild[39]);
+        const tmpResult15 = tmp(guild[41]);
         const canResetThemeColorsResult = tmpResult15.canResetThemeColors(pendingThemeColors, themeColors);
         cResult[20] = pendingThemeColors;
         cResult[21] = themeColors;
         cResult[22] = canResetThemeColorsResult;
         tmp38 = canResetThemeColorsResult;
       }
-      const obj27 = { userId: currentUser.id, image: pendingAvatar };
-      const tmpResult16 = tmp(guild[37]);
-      const pendingAvatarSrc = tmpResult16.getPendingAvatarSrc(obj27);
+      const obj41 = { userId: currentUser.id, image: pendingAvatar };
+      const tmpResult16 = tmp(guild[39]);
+      const pendingAvatarSrc = tmpResult16.getPendingAvatarSrc(obj41);
       cResult[15] = currentUser.id;
       cResult[16] = pendingAvatar;
       cResult[17] = pendingAvatarSrc;
@@ -1426,7 +1444,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
   cResult[9] = guild;
   cResult[10] = X;
   tmp22 = X;
-}) : ((currentUser) => {
+}) : (function GuildProfileEditForm(currentUser) {
   let avatarBackground;
   let bio;
   let containerBackground;
@@ -1487,17 +1505,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
   let guild;
   let analyticsLocations;
   let tmp = guild;
-  const tmp3 = guild(analyticsLocations[28])();
-  const tmp4 = guild(analyticsLocations[22])();
-  let obj = currentUser(analyticsLocations[29]);
+  const tmp3 = guild(analyticsLocations[30])();
+  const tmp4 = guild(analyticsLocations[24])();
+  let obj = currentUser(analyticsLocations[31]);
   const bioMaxLength = obj.useBioMaxLength({ location: "guild_profile_edit_form" });
-  const tmp7 = guild(analyticsLocations[30])();
+  const tmp7 = guild(analyticsLocations[32])();
   const ref = react.useRef(null);
   const ref1 = react.useRef(null);
   const ref2 = react.useRef(null);
   const ref3 = react.useRef(null);
-  const insets = guild(analyticsLocations[23])({ includeKeyboardHeight: true }).insets;
-  const PX_16 = guild(analyticsLocations[25]).space.PX_16;
+  const insets = guild(analyticsLocations[25])({ includeKeyboardHeight: true }).insets;
+  const PX_16 = guild(analyticsLocations[27]).space.PX_16;
   let obj2 = { insets, inputs: items, scrollViewRef: ref };
   items = [, , ];
   const obj3 = { ref: ref1, offset: { type: "toRef", ref: ref2, extraOffset: PX_16 } };
@@ -1505,15 +1523,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
   const obj4 = { ref: ref2, offset: { type: "toRef", ref: ref3, extraOffset: PX_16 } };
   items[1] = obj4;
   const obj5 = { ref: ref3, offset: obj6 };
-  obj6 = { type: "toValue", value: guild(analyticsLocations[25]).space.PX_64 };
+  obj6 = { type: "toValue", value: guild(analyticsLocations[27]).space.PX_64 };
   items[2] = obj5;
-  const tmp12 = guild(analyticsLocations[31]);
+  const tmp12 = guild(analyticsLocations[33]);
   const onFocus = tmp12(obj2).onFocus;
-  const tmp13 = guild(analyticsLocations[32])();
+  const tmp13 = guild(analyticsLocations[34])();
   guild = tmp13.guild;
   ({ errors, isDisabled, pendingNickname, pendingThemeColors, pendingPronouns, pendingBio, pendingAvatar, pendingBanner, pendingAvatarDecoration, pendingProfileEffect, pendingProfileFrame, pendingNameplate, pendingDisplayNameStyles } = tmp13);
   const items1 = [GuildMemberStore];
-  const obj7 = currentUser(analyticsLocations[33]);
+  const obj7 = currentUser(analyticsLocations[35]);
   const stateFromStores = obj7.useStateFromStores(items1, () => {
     let member = null;
     if (null != guild) {
@@ -1522,7 +1540,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
     return member;
   });
   const items2 = [UserProfileStore];
-  const obj8 = currentUser(analyticsLocations[33]);
+  const obj8 = currentUser(analyticsLocations[35]);
   const stateFromStores1 = obj8.useStateFromStores(items2, () => {
     let guildMemberProfile = null;
     if (null != guild) {
@@ -1538,24 +1556,24 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
   });
   let id1;
   let id = currentUser.id;
-  const tmp16 = guild(analyticsLocations[34]);
+  const tmp16 = guild(analyticsLocations[36]);
   if (guild != null) {
     id1 = guild.id;
   }
   const tmp16Result = tmp16(id, id1);
-  const tmp5Result = currentUser(analyticsLocations[35]);
+  const tmp5Result = currentUser(analyticsLocations[37]);
   const customStatusActivity = tmp5Result.useCustomStatusActivity();
   const obj9 = { userId: currentUser.id, image: pendingAvatar };
-  const tmp20 = tmp(analyticsLocations[36])(tmp16Result);
-  const tmp5Result6 = currentUser(analyticsLocations[37]);
+  const tmp20 = tmp(analyticsLocations[38])(tmp16Result);
+  const tmp5Result6 = currentUser(analyticsLocations[39]);
   const pendingAvatarSrc = tmp5Result6.getPendingAvatarSrc(obj9);
-  const tmp5Result7 = currentUser(analyticsLocations[38]);
+  const tmp5Result7 = currentUser(analyticsLocations[40]);
   const canEditNickname = tmp5Result7.useGuildActionSheetPermissions(guild).canEditNickname;
   const tmpResult = tmp(tmp2[8]);
   const result = tmpResult.canUsePremiumGuildMemberProfile(currentUser);
   let themeColors;
-  const canResetThemeColors = currentUser(analyticsLocations[39]).canResetThemeColors;
-  currentUser(analyticsLocations[39]);
+  const canResetThemeColors = currentUser(analyticsLocations[41]).canResetThemeColors;
+  currentUser(analyticsLocations[41]);
   if (stateFromStores1 != null) {
     themeColors = stateFromStores1.themeColors;
   }
@@ -1564,7 +1582,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
   if (!result) {
     tmp60Result8 = !tmp7;
   }
-  const tmp5Result9 = currentUser(analyticsLocations[24]);
+  const tmp5Result9 = currentUser(analyticsLocations[26]);
   const floatingUpsellHeight = tmp5Result9.useFloatingUpsellHeight();
   let str;
   ({ height, onLayout } = floatingUpsellHeight);
@@ -1609,9 +1627,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
   const tmpResult9 = tmp(analyticsLocations[9]);
   items3[0] = tmp(analyticsLocations[10]).USER_SETTINGS;
   analyticsLocations = tmpResult9(items3).analyticsLocations;
-  ({ theme, primaryColor, secondaryColor } = tmp(analyticsLocations[40])({ user: currentUser, displayProfile: tmp16Result, pendingThemeColors }));
-  tmp(analyticsLocations[40])({ user: currentUser, displayProfile: tmp16Result, pendingThemeColors });
-  const tmp5Result10 = currentUser(analyticsLocations[41]);
+  ({ theme, primaryColor, secondaryColor } = tmp(analyticsLocations[42])({ user: currentUser, displayProfile: tmp16Result, pendingThemeColors }));
+  tmp(analyticsLocations[42])({ user: currentUser, displayProfile: tmp16Result, pendingThemeColors });
+  const tmp5Result10 = currentUser(analyticsLocations[43]);
   const userProfileColors = tmp5Result10.useUserProfileColors({ theme, primaryColor, secondaryColor });
   ({ gradientSecondaryBackground, containerBackground } = userProfileColors);
   let num = 0;
@@ -1623,7 +1641,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
   const sum = bottom + num;
   const obj10 = { backgroundColor: avatarBackground };
   ({ nick, bio, guild_tag } = errors);
-  const sum1 = sum + tmp(tmp2[25]).space.PX_16;
+  const sum1 = sum + tmp(tmp2[27]).space.PX_16;
   const tmp33 = _objectWithoutProperties(errors, closure_4);
   if (nick != null) {
     first = nick[0];
@@ -1648,7 +1666,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
     items4[1] = obj13;
     const obj14 = { ref, children: items5 };
     const obj15 = { style: tmp4.bounceOffset };
-    const ThemeContextProvider = tmp5(tmp2[53]).ThemeContextProvider;
+    const ThemeContextProvider = tmp5(tmp2[55]).ThemeContextProvider;
     items5 = [closure_17(closure_8, obj15), ];
     const obj16 = { style: obj17, children: items6 };
     obj17 = { backgroundColor: gradientSecondaryBackground };
@@ -1664,7 +1682,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
       items7[3] = obj10;
       obj20 = { userId: currentUser.id, disabled: tmp39, disableStatus: false, guildId: id2, statusStyle: obj10 };
       tmp39 = isDisabled;
-      tmpResult10 = tmp(analyticsLocations[42]);
+      tmpResult10 = tmp(analyticsLocations[44]);
       if (!isDisabled) {
         tmp39 = !result;
       }
@@ -1683,11 +1701,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
     const obj24 = { customStatusActivity, hasCustomProfileTheme: null != primaryColor, style: null, emojiOnlyStyle: null, editEnabled: true };
     ({ customStatusBubble: obj21.style, emojiOnlyCustomStatusBubble: obj21.emojiOnlyStyle } = tmp3);
     items10 = [, , ];
-    const tmpResult11 = tmp(analyticsLocations[54]);
-    items10[0] = closure_17(tmp(analyticsLocations[55]), obj24);
+    const tmpResult11 = tmp(analyticsLocations[56]);
+    items10[0] = closure_17(tmp(analyticsLocations[57]), obj24);
     const obj25 = { user: currentUser, displayName: tmp44, pronouns: tmp45, badges: tmp20, badgeContainerBackground: containerBackground, displayNameAccessibilityRole: "header", guildId: guild.id, pendingDisplayNameStyles };
     tmp44 = pendingNickname;
-    const tmpResult12 = tmp(analyticsLocations[56]);
+    const tmpResult12 = tmp(analyticsLocations[58]);
     if (pendingNickname == null) {
       tmp44 = str;
     }
@@ -1719,7 +1737,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
           if (null != first3) {
             tmp60Result5 = null;
             if ("" !== first3) {
-              const obj28 = { style: tmp4.errorContainer, children: closure_17(currentUser(analyticsLocations[26]).Text, obj29) };
+              const obj28 = { style: tmp4.errorContainer, children: closure_17(currentUser(analyticsLocations[28]).Text, obj29) };
               obj29 = { variant: "text-sm/bold", color: "text-feedback-critical", children: first3 };
               tmp60Result5 = tmp60(tmp62, obj28);
             }
@@ -1743,13 +1761,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
         maxLength,
         disabled: tmp53
       };
-      const tmpResult13 = tmp(analyticsLocations[43]);
+      const tmpResult13 = tmp(analyticsLocations[45]);
       intl2 = tmp5(tmp2[16]).intl;
       if (pendingNickname == null) {
         pendingNickname = str;
       }
       tmp53 = !canEditNickname;
-      tmpResult14 = tmp(analyticsLocations[44]);
+      tmpResult14 = tmp(analyticsLocations[46]);
       if (canEditNickname) {
         tmp53 = isDisabled;
       }
@@ -1757,7 +1775,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
       let tmp60Result6 = result;
       if (tmp60Result6) {
         const obj31 = { user: currentUser, guildId: guild.id };
-        tmp60Result6 = tmp60(tmp(tmp2[45]), obj31);
+        tmp60Result6 = tmp60(tmp(tmp2[47]), obj31);
       }
       items12[2] = tmp60Result6;
       const obj32 = {
@@ -1778,7 +1796,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
         autoCorrect: false,
         disabled: isDisabled
       };
-      const tmpResult15 = tmp(analyticsLocations[43]);
+      const tmpResult15 = tmp(analyticsLocations[45]);
       intl3 = tmp5(tmp2[16]).intl;
       intl4 = tmp5(tmp2[16]).intl;
       items12[3] = closure_17(tmpResult15, obj32);
@@ -1801,7 +1819,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
           numberOfLines: 5,
           disabled: isDisabled
         };
-        const tmpResult16 = tmp(analyticsLocations[43]);
+        const tmpResult16 = tmp(analyticsLocations[45]);
         intl5 = tmp5(tmp2[16]).intl;
         intl6 = tmp5(tmp2[16]).intl;
         if (pendingBio == null) {
@@ -1822,15 +1840,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
             },
         showResetMenu: canResetThemeColorsResult
       };
-      items12[5] = closure_17(tmp(analyticsLocations[46]), obj34);
+      items12[5] = closure_17(tmp(analyticsLocations[48]), obj34);
       const obj35 = { user: currentUser, guildId: guild.id, pendingAvatarDecoration };
-      items12[6] = closure_17(tmp(analyticsLocations[47]), obj35);
+      items12[6] = closure_17(tmp(analyticsLocations[49]), obj35);
       const obj36 = { user: currentUser, guildId: guild.id, pendingProfileEffect, displayProfile: tmp16Result };
-      items12[7] = closure_17(tmp(analyticsLocations[48]), obj36);
+      items12[7] = closure_17(tmp(analyticsLocations[50]), obj36);
       const obj37 = { user: currentUser, guildId: guild.id, pendingProfileFrame, displayProfile: tmp16Result };
-      items12[8] = closure_17(tmp(analyticsLocations[49]), obj37);
+      items12[8] = closure_17(tmp(analyticsLocations[51]), obj37);
       const obj38 = { user: currentUser, pendingNameplate, guildId: guild.id };
-      items12[9] = closure_17(tmp(analyticsLocations[50]), obj38);
+      items12[9] = closure_17(tmp(analyticsLocations[52]), obj38);
       tmp61Result = tmp61(tmp62, obj26);
     }
     const obj39 = { children: items8 };
@@ -1841,7 +1859,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
     items13 = [closure_18(tmp63, obj14), ];
     if (tmp60Result8) {
       const obj40 = {
-        onButtonPress() {
+        onButtonPress: function handleUpsellPress() {
               let obj2;
               const obj = { analyticsLocation: obj2, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_2_LEADING };
               obj2 = { object: unpackModuleId.BUTTON_CTA };

@@ -1,21 +1,21 @@
-// Module ID: 9488
-// Function ID: 9489
+// Module ID: 8652
+// Function ID: 8653
 // Name: LiveStageNotificationsUtils
-// Dependencies: [4786, 4515, 1096, 558, 576, 504, 2]
+// Dependencies: [4980, 4707, 1096, 558, 576, 504, 2]
 
-// Module 9488 (LiveStageNotificationsUtils)
+// Module 8652 (LiveStageNotificationsUtils)
 import Constants from "Constants" /* 1096 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4786 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4980 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, guild_id;
+let _require;
 
 const Permissions = Constants.Permissions;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanSendStageStartNotification(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -32,7 +32,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function u() {
+    const fn = function l() {
       const canResult = null != closure_0 && PermissionStore.can(Permissions.MENTION_EVERYONE, tmp);
       return canResult;
     };
@@ -48,7 +48,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useCanSendStageStartNotification(arg0) {
   let closure_0;
   _require = arg0;
   const items = [PermissionStore];
@@ -60,7 +60,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDefaultSendStartStageNotificationToggle(guild_id) {
   let first;
   let tmp7;
   let tmp8;
@@ -79,7 +79,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
     first = cResult[0];
   }
   if (cResult[1] !== guild_id) {
-    const fn = function l() {
+    const fn = function u() {
       return GuildMemberCountStore.getMemberCount(guild_id);
     };
     const items1 = [guild_id];
@@ -100,7 +100,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
     const tmp11 = null == stateFromStores || stateFromStores > 50000;
   }
   return tmp10;
-}) : ((guild_id) => {
+}) : (function useDefaultSendStartStageNotificationToggle(guild_id) {
   guild_id = undefined;
   if (guild_id != null) {
     guild_id = guild_id.guild_id;

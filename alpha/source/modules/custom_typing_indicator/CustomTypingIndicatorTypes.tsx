@@ -1,11 +1,11 @@
-// Module ID: 1398
-// Function ID: 1399
+// Module ID: 1410
+// Function ID: 1411
 // Name: CustomTypingIndicatorTypes
-// Dependencies: [1385, 2]
-// Exports: getEffectiveCustomTypingIndicatorAnimation, hasCustomTypingIndicatorEmojis, isValidCustomTypingIndicatorEmojiSelection, parseServerTypingIndicatorStyle, serializeTypingIndicatorStyle
+// Dependencies: [1397, 2]
+// Exports: getCustomTypingIndicatorEmojisKey, getEffectiveCustomTypingIndicatorAnimation, hasCustomTypingIndicatorEmojis, isValidCustomTypingIndicatorEmojiSelection, parseServerTypingIndicatorStyle, serializeTypingIndicatorStyle
 
-// Module 1398 (CustomTypingIndicatorTypes)
-import user from "user" /* 1385 */;
+// Module 1410 (CustomTypingIndicatorTypes)
+import user from "user" /* 1397 */;
 import size from "module_2" /* 2 */;
 
 let obj = { emojis: [], typingSuggestion: user.TypingSuggestion.UNSPECIFIED, animation: user.TypingIndicatorAnimation.UNSPECIFIED };
@@ -18,6 +18,26 @@ export const hasCustomTypingIndicatorEmojis = function hasCustomTypingIndicatorE
 };
 export const isValidCustomTypingIndicatorEmojiSelection = function isValidCustomTypingIndicatorEmojiSelection(arg0) {
   return 0 === arg0.length || 3 === arg0.length;
+};
+export const getCustomTypingIndicatorEmojisKey = function getCustomTypingIndicatorEmojisKey(emojis) {
+  const mapped = emojis.map((id) => {
+    let str;
+    if (id != null) {
+      str = id.id;
+    }
+    if (str == null) {
+      let name;
+      if (id != null) {
+        name = id.name;
+      }
+      str = name;
+    }
+    if (str == null) {
+      str = "";
+    }
+    return str;
+  });
+  return mapped.join(":");
 };
 export const getEffectiveCustomTypingIndicatorAnimation = function getEffectiveCustomTypingIndicatorAnimation(config) {
   let UNSPECIFIED;

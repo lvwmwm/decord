@@ -1,21 +1,21 @@
-// Module ID: 10794
-// Function ID: 10795
+// Module ID: 12746
+// Function ID: 12747
 // Name: PremiumGiftDuration
-// Dependencies: [19, 17, 1379, 21, 4896, 587, 558, 576, 10443, 6000, 8926, 10496, 4600, 1126, 4892, 2]
+// Dependencies: [19, 17, 1391, 21, 5090, 587, 558, 576, 10040, 6184, 8557, 10093, 4792, 1126, 5086, 2]
 
-// Module 10794 (PremiumGiftDuration)
+// Module 12746 (PremiumGiftDuration)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import react_native2 from "react-native" /* 4600 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import NativeGiftContext from "NativeGiftContext" /* 10443 */;
-import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 10496 */;
+import react_native2 from "react-native" /* 4792 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import NativeGiftContext from "NativeGiftContext" /* 10040 */;
+import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 10093 */;
 import react from "react" /* 19 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ obj3 = { borderColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: nativ
 obj4 = { marginStart: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, paddingHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.round };
 let closure_9 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftDurationButton(arg0) {
   let RowButton;
   let Text;
   let accessibilityRole;
@@ -60,9 +60,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const premiumType = nativeGiftContext.premiumType;
   const tmp5 = closure_9();
   if (selected) {
-    RowButton = tmp(6000).TableRow;
+    RowButton = tmp(6184).TableRow;
   } else {
-    RowButton = tmp(8926).RowButton;
+    RowButton = tmp(8557).RowButton;
   }
   let combined = null;
   const tmp6 = SubscriptionIntervalTypes;
@@ -129,7 +129,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp23 = cResult[15];
           }
           if (cResult[16] !== tmp10) {
-            class M {
+            class D {
               constructor() {
                 tmp = setPlanInterval(planInterval);
                 return;
@@ -162,7 +162,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         }
                         return tmp34;
                       }
-                      class M {
+                      class D {
                         constructor() {
                           tmp = setPlanInterval(planInterval);
                           return;
@@ -179,7 +179,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 }
               }
             }
-            class M {
+            class D {
               constructor() {
                 tmp = setPlanInterval(planInterval);
                 return;
@@ -200,7 +200,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             cResult[27] = tmp33;
             tmp30 = tmp33;
           }
-          class M {
+          class D {
             constructor() {
               tmp = setPlanInterval(planInterval);
               return;
@@ -208,8 +208,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           cResult[18] = planInterval;
           cResult[19] = setPlanInterval;
-          cResult[20] = M;
-          tmp29 = M;
+          cResult[20] = D;
+          tmp29 = D;
         }
       }
       const obj7 = { style: tmp5.labelContainer, children: items };
@@ -224,14 +224,14 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp20 = null != combined;
     if (tmp20) {
       const obj8 = { style: null, children: metroRequire(Text, obj9) };
-      class M {
+      class D {
         constructor() {
           tmp = setPlanInterval(planInterval);
           return;
         }
       }
       obj9 = { variant: "text-md/bold", color: "text-overlay-light", children: str3.toUpperCase() };
-      Text = tmp(4892).Text;
+      Text = tmp(5086).Text;
       const intl3 = tmp(1126).intl;
       const obj10 = { discount: combined };
       str3 = intl3.formatToPlainString(intl4.t.IAybsG, obj10);
@@ -247,7 +247,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = selected;
   cResult[4] = items1;
   tmp13 = items1;
-}) : ((arg0) => {
+}) : (function PremiumGiftDurationButton(arg0) {
   let RowButton;
   let Text2;
   let accessibilityRole;
@@ -266,9 +266,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const premiumType = nativeGiftContext.premiumType;
   const tmp4 = closure_9();
   if (selected) {
-    RowButton = tmp(6000).TableRow;
+    RowButton = tmp(6184).TableRow;
   } else {
-    RowButton = tmp(8926).RowButton;
+    RowButton = tmp(8557).RowButton;
   }
   let combined = null;
   const tmp5 = SubscriptionIntervalTypes;
@@ -287,7 +287,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items[1] = selected;
   const obj2 = { style: items, children: metroRequire(RowButton, obj7) };
   const obj3 = { style: tmp4.labelContainer, children: items1 };
-  const Text = tmp(4892).Text;
+  const Text = tmp(5086).Text;
   const tmp13 = metroImportDefault;
   if (planInterval === tmp5.MONTH) {
     const intl2 = tmp(1126).intl;
@@ -301,7 +301,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (tmp11Result) {
     const obj4 = { style: tmp4.labelPromo, children: metroRequire(Text2, obj5) };
     obj5 = { variant: "text-md/bold", color: "text-overlay-light", children: str3.toUpperCase() };
-    Text2 = tmp(4892).Text;
+    Text2 = tmp(5086).Text;
     const intl3 = tmp(1126).intl;
     const obj6 = { discount: combined };
     str3 = intl3.formatToPlainString(intl4.t.IAybsG, obj6);
@@ -329,7 +329,7 @@ const createStyles2 = createStyles.createStyles;
 obj7 = { marginTop: nativeDefault.space.PX_24 };
 let closure_11 = createStyles2(obj5);
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftDuration() {
   let durationContainer;
   let durationTitle;
   let first;
@@ -339,7 +339,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj = planInterval(576);
   const cResult = obj.c(9);
   const tmp4 = closure_11();
-  const obj2 = planInterval(10443);
+  const obj2 = planInterval(10040);
   planInterval = obj2.useNativeGiftContext().planInterval;
   ({ durationContainer, durationTitle } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -352,7 +352,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] !== tmp4.durationTitle) {
     const obj3 = { style: durationTitle, variant: "text-sm/semibold", children: first };
-    const tmp9 = closure_6(planInterval(4892).Text, obj3);
+    const tmp9 = closure_6(planInterval(5086).Text, obj3);
     cResult[1] = tmp4.durationTitle;
     cResult[2] = tmp9;
     tmp7 = tmp9;
@@ -387,15 +387,15 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[7] = tmp10;
   cResult[8] = tmp14;
   tmp13 = tmp14;
-}) : (() => {
+}) : (function PremiumGiftDuration() {
   let intl;
   let planInterval;
   const tmp = closure_11();
-  let obj = planInterval(10443);
+  let obj = planInterval(10040);
   planInterval = obj.useNativeGiftContext().planInterval;
   const obj2 = { style: tmp.durationContainer, children: items };
   const obj3 = { style: tmp.durationTitle, variant: "text-sm/semibold", children: intl.string(planInterval(1126).t["8XT6Nf"]) };
-  const Text = planInterval(4892).Text;
+  const Text = planInterval(5086).Text;
   intl = planInterval(1126).intl;
   items = [closure_6(Text, obj3), ];
   items[1] = items.map((planInterval, index) => {

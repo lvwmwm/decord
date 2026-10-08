@@ -1,34 +1,34 @@
-// Module ID: 12478
-// Function ID: 12479
+// Module ID: 12574
+// Function ID: 12575
 // Name: ChannelContainer
-// Dependencies: [19, 17, 4516, 2051, 2103, 1085, 2048, 21, 4896, 558, 576, 4745, 12479, 504, 9118, 7957, 4704, 2036, 12562, 12563, 9632, 2]
+// Dependencies: [19, 17, 4708, 2063, 2115, 1085, 2060, 21, 5090, 558, 576, 4939, 12575, 504, 10691, 5928, 4898, 2048, 12693, 12694, 10827, 2]
 
-// Module 12478 (ChannelContainer)
+// Module 12574 (ChannelContainer)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4704 */;
-import useChatLayoutDefault from "useChatLayout" /* 4745 */;
+import dismissible_content from "dismissible_content" /* 2048 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4898 */;
+import useChatLayoutDefault from "useChatLayout" /* 4939 */;
 import react_mod from "react" /* 19 */;
-import LurkingStore from "LurkingStore" /* 4516 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import LurkingStore from "LurkingStore" /* 4708 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, guildId;
+let dependencyMap;
 
 let c10;
 let tmp;
 let tmp4;
 let unpackModuleId;
-const common_NotificationsDefault = tmp4(12479);
-const useChannelStylesShared = tmp(12562);
+const common_NotificationsDefault = tmp4(12575);
+const useChannelStylesShared = tmp(12693);
 let react = react_mod;
 const View = react_native.View;
 const ChannelTypes = Constants.ChannelTypes;
@@ -36,7 +36,7 @@ const ContentDismissActionType = DismissibleContentConstants.ContentDismissActio
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 let closure_12 = createStyles.createStyles({ container: { position: "absolute", left: 0, right: 0, backgroundColor: "transparent", marginTop: 8 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotificationsContainer() {
   const obj = react2;
   const cResult = obj.c(3);
   const tmp3 = closure_12();
@@ -64,7 +64,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = tmp10;
   }
   return tmp5;
-}) : (() => {
+}) : (function NotificationsContainer() {
   let tmp4 = null;
   const tmp = closure_12();
   if (useChatLayoutDefault().isChatBesideChannelList) {
@@ -74,7 +74,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return tmp4;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelContainer(guildId) {
   let channel;
   let closure_2;
   let closure_3;
@@ -127,7 +127,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let voiceChannelId = stateFromStoresObject.voiceChannelId;
   let tmp10 = !isStageChannel;
   if (isStageChannel) {
-    tmp10 = channelId(9118)(voiceChannelId);
+    tmp10 = channelId(10691)(voiceChannelId);
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [LurkingStore];
@@ -158,9 +158,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     tmp15 = cResult[7];
   }
   dependencyMap = tmp15;
-  const tmp18 = channelId(7957)(tmp15);
+  const tmp18 = channelId(5928)(tmp15);
   react = tmp18;
-  const tmp19 = channelId(7957)(channelId);
+  const tmp19 = channelId(5928)(channelId);
   let closure_4 = tmp19;
   if (cResult[8] === channelId) {
     if (cResult[9] === tmp15) {
@@ -172,7 +172,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           tmp21 = cResult[13];
         }
         const effect = react.useEffect(tmp20, tmp21);
-        const tmpResult4 = tmp(12562);
+        const tmpResult4 = tmp(12693);
         const channelStyles = tmpResult4.useChannelStyles();
         if (cResult[14] === channel) {
           let tmp25;
@@ -230,7 +230,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           let tmp32 = tmp10;
           if (tmp32) {
             const obj4 = { style: channelStyles.callPTTButton };
-            tmp32 = closure_10(tmp9(9632), obj4);
+            tmp32 = closure_10(tmp9(10827), obj4);
           }
           cResult[17] = channelStyles.callPTTButton;
           cResult[18] = tmp10;
@@ -246,7 +246,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           tmp29 = null;
           if (stateFromStores) {
             const obj5 = { channel };
-            tmp29 = closure_10(tmp9(12563), obj5);
+            tmp29 = closure_10(tmp9(12694), obj5);
           }
         }
         cResult[14] = channel;
@@ -283,7 +283,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[13] = items4;
   tmp21 = items4;
   tmp20 = fn3;
-}) : ((children) => {
+}) : (function ChannelContainer(children) {
   let c2;
   let channel;
   let channelId;
@@ -317,7 +317,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let voiceChannelId = stateFromStoresObject.voiceChannelId;
   let tmp5 = !isStageChannel;
   if (isStageChannel) {
-    tmp5 = channelId(9118)(voiceChannelId);
+    tmp5 = channelId(10691)(voiceChannelId);
   }
   const items1 = [LurkingStore];
   let isPrivateResult = null != channel;
@@ -330,9 +330,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     isPrivateResult = channel.isPrivate();
   }
   dependencyMap = isPrivateResult;
-  const tmp8 = channelId(7957)(isPrivateResult);
+  const tmp8 = channelId(5928)(isPrivateResult);
   react = tmp8;
-  const tmp9 = channelId(7957)(channelId);
+  const tmp9 = channelId(5928)(channelId);
   closure_4 = tmp9;
   const items2 = [channelId, tmp9, isPrivateResult, tmp8];
   const effect = react.useEffect(() => {
@@ -366,13 +366,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     tmp15 = null;
     if (stateFromStores) {
       const obj4 = { channel };
-      tmp15 = closure_10(tmp4(12563), obj4);
+      tmp15 = closure_10(tmp4(12694), obj4);
     }
   }
   items3 = [tmp15, children, ];
   if (tmp5) {
     const obj5 = { style: channelStyles.callPTTButton };
-    tmp5 = closure_10(tmp4(9632), obj5);
+    tmp5 = closure_10(tmp4(10827), obj5);
   }
   items3[2] = tmp5;
   items4 = [closure_11(closure_4, obj3), closure_10(closure_13, {})];

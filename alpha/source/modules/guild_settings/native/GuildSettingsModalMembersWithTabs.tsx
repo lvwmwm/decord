@@ -1,68 +1,81 @@
-// Module ID: 16565
-// Function ID: 16566
+// Module ID: 16820
+// Function ID: 16821
 // Name: GuildSettingsModalMembersWithTabs
-// Dependencies: [109, 32, 19, 17, 2074, 4515, 1377, 21, 4896, 587, 558, 576, 16179, 504, 6778, 1126, 16566, 16567, 16574, 4708, 1490, 7590, 16569, 6890, 9325, 9317, 12297, 10987, 2]
+// Dependencies: [109, 32, 19, 17, 2086, 4707, 1389, 21, 5090, 587, 558, 576, 16439, 504, 6954, 1126, 16821, 16822, 16829, 4902, 1502, 9297, 16824, 7079, 8646, 8505, 12395, 11211, 2]
 
-// Module 16565 (GuildSettingsModalMembersWithTabs)
+// Module 16820 (GuildSettingsModalMembersWithTabs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4708 */;
-import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 6778 */;
-import ContextMenu2 from "ContextMenu" /* 7590 */;
-import MemberSafetyPageTypes from "MemberSafetyPageTypes" /* 16566 */;
-import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 16567 */;
-import GuildSettingsModalMemberApplicationsDefault from "GuildSettingsModalMemberApplications" /* 16574 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4902 */;
+import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 6954 */;
+import ContextMenu2 from "ContextMenu" /* 9297 */;
+import MemberSafetyPageTypes from "MemberSafetyPageTypes" /* 16821 */;
+import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 16822 */;
+import GuildSettingsModalMemberApplicationsDefault from "GuildSettingsModalMemberApplications" /* 16829 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import UserStore from "UserStore" /* 1377 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let guildId, navigation;
+let navigation;
 
 let closure_12;
 let obj2;
 let tmp2;
 let unpackModuleId;
-const showMembersManagementActionSheet = tmp2(16569);
+const showMembersManagementActionSheet = tmp2(16824);
 let closure_3 = ["ref"];
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
 const View = react_native.View;
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 let obj = { container: obj2, content: { flex: 1 }, tabContainer: { marginTop: 12, minHeight: 32 } };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 let closure_13 = createStyles.createStyles(obj);
 let memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsModalMembersWithTabs(guildId) {
+  let closure_5;
+  let closure_6;
   let first;
-  let options;
+  let items4;
+  let obj10;
+  let obj5;
+  let obj8;
   let stateFromStores;
-  let tmp11;
-  let tmp14;
+  let tmp10;
+  let tmp12;
   let tmp15;
-  let tmp17;
+  let tmp16;
+  let tmp18;
+  let tmp20;
   let tmp23;
-  let tmp8;
+  let tmp26;
+  let tmp37;
+  let tmp43;
+  let tmp5;
   let tmp9;
   let tmp = guildId;
   let tmp2 = stateFromStores;
   let obj = guildId(stateFromStores[11]);
   const cResult = obj.c(59);
   guildId = guildId.guildId;
+  let obj2 = react;
   const tmp4 = _slicedToArray(react.useState(0), 2);
-  [r10017, importDefault] = tmp4;
-  let obj2 = guildId(stateFromStores[12]);
-  let num = obj2.useSubmittedGuildJoinRequestTotal({ guildId });
+  [tmp5, importDefault] = tmp4;
+  const obj3 = guildId(stateFromStores[12]);
+  let num = obj3.useSubmittedGuildJoinRequestTotal({ guildId });
   if (num == null) {
     num = 0;
   }
-  closure_13();
+  const tmp6 = closure_13();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildStore];
     cResult[0] = items;
@@ -78,325 +91,472 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId
     cResult[1] = guildId;
     cResult[2] = fn;
     cResult[3] = items1;
-    tmp9 = items1;
-    tmp8 = fn;
+    tmp10 = items1;
+    tmp9 = fn;
   } else {
-    tmp8 = cResult[2];
-    tmp9 = cResult[3];
+    tmp9 = cResult[2];
+    tmp10 = cResult[3];
   }
   const tmpResult = tmp(tmp2[13]);
-  stateFromStores = tmpResult.useStateFromStores(first, tmp8, tmp9);
+  stateFromStores = tmpResult.useStateFromStores(first, tmp9, tmp10);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [PermissionStore, UserStore];
     cResult[4] = items2;
-    tmp11 = items2;
+    tmp12 = items2;
   } else {
-    tmp11 = cResult[4];
+    tmp12 = cResult[4];
   }
   if (cResult[5] !== stateFromStores) {
-    class G {
-      constructor() {
-        let canPruneGuildMembersResult = null != stateFromStores;
-        if (canPruneGuildMembersResult) {
-          const obj = MemberSafetyPermissionsUtils;
-          canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
-        }
-        return canPruneGuildMembersResult;
+    const fn2 = function x() {
+      let canPruneGuildMembersResult = null != stateFromStores;
+      if (canPruneGuildMembersResult) {
+        const obj = MemberSafetyPermissionsUtils;
+        canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
       }
-    }
+      return canPruneGuildMembersResult;
+    };
     const items3 = [stateFromStores];
     cResult[5] = stateFromStores;
-    cResult[6] = G;
+    cResult[6] = fn2;
     cResult[7] = items3;
-    tmp15 = items3;
-    tmp14 = G;
+    tmp16 = items3;
+    tmp15 = fn2;
   } else {
-    class G {
-      constructor() {
-        let canPruneGuildMembersResult = null != stateFromStores;
-        if (canPruneGuildMembersResult) {
-          const obj = MemberSafetyPermissionsUtils;
-          canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
-        }
-        return canPruneGuildMembersResult;
-      }
-    }
-    tmp15 = cResult[7];
+    tmp15 = cResult[6];
+    tmp16 = cResult[7];
   }
-  const tmpResult2 = tmp(tmp2[13]);
-  const stateFromStores1 = tmpResult2.useStateFromStores(tmp11, tmp14, tmp15);
+  const tmpResult4 = tmp(tmp2[13]);
+  const stateFromStores1 = tmpResult4.useStateFromStores(tmp12, tmp15, tmp16);
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    class G {
-      constructor() {
-        let canPruneGuildMembersResult = null != stateFromStores;
-        if (canPruneGuildMembersResult) {
-          const obj = MemberSafetyPermissionsUtils;
-          canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
-        }
-        return canPruneGuildMembersResult;
-      }
-    }
-    const stringResult = obj5.string(tmp(tmp2[15]).t.NOOm1Z);
+    let intl = tmp(tmp2[15]).intl;
+    const stringResult = intl.string(tmp(tmp2[15]).t.NOOm1Z);
     cResult[8] = stringResult;
-    tmp17 = stringResult;
+    tmp18 = stringResult;
   } else {
-    class G {
-      constructor() {
-        let canPruneGuildMembersResult = null != stateFromStores;
-        if (canPruneGuildMembersResult) {
-          const obj = MemberSafetyPermissionsUtils;
-          canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
-        }
-        return canPruneGuildMembersResult;
-      }
-    }
+    tmp18 = cResult[8];
   }
   if (cResult[9] !== guildId) {
-    class G {
-      constructor() {
-        let canPruneGuildMembersResult = null != stateFromStores;
-        if (canPruneGuildMembersResult) {
-          const obj = MemberSafetyPermissionsUtils;
-          canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
-        }
-        return canPruneGuildMembersResult;
-      }
-    }
-    tmp20[0] = tmp17;
-    tmp20[1] = tmp(tmp2[16]).MemberSafetyPageTab.ALL_MEMBERS;
-    const obj3 = { guildId };
-    tmp20[2] = closure_11(require("GuildSettingsModalMembers"), obj3);
+    const obj4 = { label: tmp18, id: tmp(tmp2[16]).MemberSafetyPageTab.ALL_MEMBERS, page: closure_11(require("GuildSettingsModalMembers"), obj5) };
+    obj5 = { guildId };
     cResult[9] = guildId;
-    cResult[10] = tmp20;
+    cResult[10] = obj4;
+    tmp20 = obj4;
   } else {
-    class G {
-      constructor() {
-        let canPruneGuildMembersResult = null != stateFromStores;
-        if (canPruneGuildMembersResult) {
-          const obj = MemberSafetyPermissionsUtils;
-          canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
-        }
-        return canPruneGuildMembersResult;
-      }
-    }
+    tmp20 = cResult[10];
   }
   if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-    class G {
-      constructor() {
-        let canPruneGuildMembersResult = null != stateFromStores;
-        if (canPruneGuildMembersResult) {
-          const obj = MemberSafetyPermissionsUtils;
-          canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
-        }
-        return canPruneGuildMembersResult;
-      }
-    }
-    const stringResult1 = obj7.string(tmp(tmp2[15]).t["4eQVBO"]);
+    const intl2 = tmp(tmp2[15]).intl;
+    const stringResult1 = intl2.string(tmp(tmp2[15]).t["4eQVBO"]);
     cResult[11] = stringResult1;
     tmp23 = stringResult1;
   } else {
-    class G {
-      constructor() {
-        let canPruneGuildMembersResult = null != stateFromStores;
-        if (canPruneGuildMembersResult) {
-          const obj = MemberSafetyPermissionsUtils;
-          canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
-        }
-        return canPruneGuildMembersResult;
-      }
-    }
+    tmp23 = cResult[11];
   }
+  let tmp25;
   if (num > 0) {
-    class G {
-      constructor() {
-        let canPruneGuildMembersResult = null != stateFromStores;
-        if (canPruneGuildMembersResult) {
-          const obj = MemberSafetyPermissionsUtils;
-          canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
-        }
-        return canPruneGuildMembersResult;
-      }
-    }
+    tmp25 = num;
   }
   if (cResult[12] !== guildId) {
-    class G {
-      constructor() {
-        let canPruneGuildMembersResult = null != stateFromStores;
-        if (canPruneGuildMembersResult) {
-          const obj = MemberSafetyPermissionsUtils;
-          canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
-        }
-        return canPruneGuildMembersResult;
-      }
-    }
-    const obj4 = { guildId, applicationStatus: tmp(tmp2[19]).GuildJoinRequestApplicationStatuses.SUBMITTED };
-    const tmp28 = require("GuildSettingsModalMemberApplications");
+    const obj6 = { guildId, applicationStatus: tmp(tmp2[19]).GuildJoinRequestApplicationStatuses.SUBMITTED };
+    const tmp29 = require("GuildSettingsModalMemberApplications");
+    const tmp30 = closure_11(tmp29, obj6);
     cResult[12] = guildId;
-    cResult[13] = closure_11(tmp28, obj4);
-    const tmp29 = closure_11(tmp28, obj4);
+    cResult[13] = tmp30;
+    tmp26 = tmp30;
   } else {
-    class G {
-      constructor() {
-        let canPruneGuildMembersResult = null != stateFromStores;
-        if (canPruneGuildMembersResult) {
-          const obj = MemberSafetyPermissionsUtils;
-          canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
-        }
-        return canPruneGuildMembersResult;
-      }
-    }
+    tmp26 = cResult[13];
   }
-  if (cResult[14] === undefined) {
+  if (cResult[14] === tmp25) {
     let tmp31;
+    let tmp32;
+    let tmp34;
     let tmp38;
-    class G {
-      constructor() {
-        let canPruneGuildMembersResult = null != stateFromStores;
-        if (canPruneGuildMembersResult) {
-          const obj = MemberSafetyPermissionsUtils;
-          canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
-        }
-        return canPruneGuildMembersResult;
-      }
+    let tmp40;
+    if (cResult[15] === tmp26) {
+      tmp31 = cResult[16];
     }
     const _Symbol = Symbol;
     if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-      class G {
-        constructor() {
-          let canPruneGuildMembersResult = null != stateFromStores;
-          if (canPruneGuildMembersResult) {
-            const obj = MemberSafetyPermissionsUtils;
-            canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
-          }
-          return canPruneGuildMembersResult;
-        }
-      }
-      const stringResult2 = obj10.string(tmp(tmp2[15]).t.bSZkla);
+      const intl3 = tmp(tmp2[15]).intl;
+      const stringResult2 = intl3.string(tmp(tmp2[15]).t.bSZkla);
       cResult[17] = stringResult2;
-      tmp31 = stringResult2;
+      tmp32 = stringResult2;
     } else {
-      class G {
-        constructor() {
-          let canPruneGuildMembersResult = null != stateFromStores;
-          if (canPruneGuildMembersResult) {
-            const obj = MemberSafetyPermissionsUtils;
-            canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
-          }
-          return canPruneGuildMembersResult;
-        }
-      }
+      tmp32 = cResult[17];
     }
     if (cResult[18] !== guildId) {
-      class G {
-        constructor() {
-          let canPruneGuildMembersResult = null != stateFromStores;
-          if (canPruneGuildMembersResult) {
-            const obj = MemberSafetyPermissionsUtils;
-            canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
-          }
-          return canPruneGuildMembersResult;
-        }
-      }
-      tmp34[0] = tmp31;
-      tmp34[1] = tmp(tmp2[16]).MemberSafetyPageTab.REJECTED;
-      const obj6 = { guildId, applicationStatus: tmp(tmp2[19]).GuildJoinRequestApplicationStatuses.REJECTED };
-      const tmp37 = require("GuildSettingsModalMemberApplications");
-      tmp34[2] = closure_11(tmp37, obj6);
+      const obj7 = { label: tmp32, id: tmp(tmp2[16]).MemberSafetyPageTab.REJECTED, page: closure_11(tmp37, obj8) };
+      obj8 = { guildId, applicationStatus: tmp(tmp2[19]).GuildJoinRequestApplicationStatuses.REJECTED };
       cResult[18] = guildId;
-      cResult[19] = tmp34;
+      cResult[19] = obj7;
+      tmp34 = obj7;
+      tmp37 = require("GuildSettingsModalMemberApplications");
     } else {
-      class G {
-        constructor() {
-          let canPruneGuildMembersResult = null != stateFromStores;
-          if (canPruneGuildMembersResult) {
-            const obj = MemberSafetyPermissionsUtils;
-            canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
-          }
-          return canPruneGuildMembersResult;
-        }
-      }
+      tmp34 = cResult[19];
     }
     const _Symbol2 = Symbol;
     if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-      class G {
-        constructor() {
-          let canPruneGuildMembersResult = null != stateFromStores;
-          if (canPruneGuildMembersResult) {
-            const obj = MemberSafetyPermissionsUtils;
-            canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
-          }
-          return canPruneGuildMembersResult;
-        }
-      }
-      const stringResult3 = obj12.string(tmp(tmp2[15]).t.aURgY2);
+      const intl4 = tmp(tmp2[15]).intl;
+      const stringResult3 = intl4.string(tmp(tmp2[15]).t.aURgY2);
       cResult[20] = stringResult3;
       tmp38 = stringResult3;
     } else {
-      class G {
-        constructor() {
-          let canPruneGuildMembersResult = null != stateFromStores;
-          if (canPruneGuildMembersResult) {
-            const obj = MemberSafetyPermissionsUtils;
-            canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
-          }
-          return canPruneGuildMembersResult;
-        }
-      }
+      tmp38 = cResult[20];
     }
     if (cResult[21] !== guildId) {
-      class G {
-        constructor() {
-          let canPruneGuildMembersResult = null != stateFromStores;
-          if (canPruneGuildMembersResult) {
-            const obj = MemberSafetyPermissionsUtils;
-            canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
-          }
-          return canPruneGuildMembersResult;
-        }
-      }
-      tmp41[0] = tmp38;
-      tmp41[1] = tmp(tmp2[16]).MemberSafetyPageTab.APPROVED;
-      const obj8 = { guildId, applicationStatus: tmp(tmp2[19]).GuildJoinRequestApplicationStatuses.APPROVED };
-      const tmp44 = require("GuildSettingsModalMemberApplications");
-      tmp41[2] = closure_11(tmp44, obj8);
+      const obj9 = { label: tmp38, id: tmp(tmp2[16]).MemberSafetyPageTab.APPROVED, page: closure_11(tmp43, obj10) };
+      obj10 = { guildId, applicationStatus: tmp(tmp2[19]).GuildJoinRequestApplicationStatuses.APPROVED };
       cResult[21] = guildId;
-      cResult[22] = tmp41;
+      cResult[22] = obj9;
+      tmp40 = obj9;
+      tmp43 = require("GuildSettingsModalMemberApplications");
     } else {
-      class G {
-        constructor() {
-          let canPruneGuildMembersResult = null != stateFromStores;
-          if (canPruneGuildMembersResult) {
-            const obj = MemberSafetyPermissionsUtils;
-            canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
+      tmp40 = cResult[22];
+    }
+    if (cResult[23] === tmp31) {
+      if (cResult[24] === tmp34) {
+        if (cResult[25] === tmp40) {
+          let tmp44;
+          if (cResult[26] === tmp20) {
+            tmp44 = cResult[27];
           }
-          return canPruneGuildMembersResult;
+          const tmpResult5 = tmp(tmp2[20]);
+          navigation = tmpResult5.useNavigation();
+          if (cResult[28] === stateFromStores1) {
+            let tmp46;
+            if (cResult[29] === stateFromStores) {
+              tmp46 = cResult[30];
+            }
+            _slicedToArray = tmp46;
+            if (cResult[31] === navigation) {
+              let tmp47;
+              let tmp49;
+              if (cResult[32] === tmp46) {
+                tmp47 = cResult[33];
+              }
+              react = tmp47;
+              const _Symbol3 = Symbol;
+              class X {
+                constructor(arg0) {
+                  let closure_0 = arg0;
+                  const obj = {
+                    headerRight() {
+                      let tmp = null;
+                      if (0 === closure_0) {
+                        tmp = closure_5();
+                      }
+                      return tmp;
+                    }
+                  };
+                  navigation.setOptions(obj);
+                }
+              }
+              if (tmp48 === Symbol.for("react.memo_cache_sentinel")) {
+                const fn4 = function $(nativeEvent) {
+                  importDefault(nativeEvent.nativeEvent.layout.width);
+                };
+                cResult[34] = fn4;
+                class X {
+                  constructor(arg0) {
+                    let closure_0 = arg0;
+                    const obj = {
+                      headerRight() {
+                        let tmp = null;
+                        if (0 === closure_0) {
+                          tmp = closure_5();
+                        }
+                        return tmp;
+                      }
+                    };
+                    navigation.setOptions(obj);
+                  }
+                }
+              } else {
+                tmp49 = cResult[34];
+              }
+              let num32 = 0;
+              if (num > 0) {
+                num32 = 1;
+              }
+              if (cResult[35] === tmp5) {
+                if (cResult[36] === tmp44) {
+                  if (cResult[37] === tmp47) {
+                    let tmp50;
+                    if (cResult[38] === num32) {
+                      tmp50 = cResult[39];
+                    }
+                    const tmpResult6 = tmp(tmp2[25]);
+                    const segmentedControlState = tmpResult6.useSegmentedControlState(tmp50);
+                    class X {
+                      constructor(arg0) {
+                        let closure_0 = arg0;
+                        const obj = {
+                          headerRight() {
+                            let tmp = null;
+                            if (0 === closure_0) {
+                              tmp = closure_5();
+                            }
+                            return tmp;
+                          }
+                        };
+                        navigation.setOptions(obj);
+                      }
+                    }
+                    if (cResult[40] === segmentedControlState.activeIndex) {
+                      let tmp52;
+                      let tmp53;
+                      let tmp57;
+                      if (cResult[41] === tmp47) {
+                        tmp52 = cResult[42];
+                        tmp53 = cResult[43];
+                      }
+                      const effect = obj2.useEffect(tmp52, tmp53);
+                      const _Symbol4 = Symbol;
+                      class X {
+                        constructor(arg0) {
+                          let closure_0 = arg0;
+                          const obj = {
+                            headerRight() {
+                              let tmp = null;
+                              if (0 === closure_0) {
+                                tmp = closure_5();
+                              }
+                              return tmp;
+                            }
+                          };
+                          navigation.setOptions(obj);
+                        }
+                      }
+                      if (tmp55 === Symbol.for("react.memo_cache_sentinel")) {
+                        function ie(toLocaleString) {
+                          const obj = guildId(stateFromStores[26]);
+                          return "(" + obj.defaultCountFormatter(toLocaleString) + ")";
+                        }
+                        cResult[44] = ie;
+                        class X {
+                          constructor(arg0) {
+                            let closure_0 = arg0;
+                            const obj = {
+                              headerRight() {
+                                let tmp = null;
+                                if (0 === closure_0) {
+                                  tmp = closure_5();
+                                }
+                                return tmp;
+                              }
+                            };
+                            navigation.setOptions(obj);
+                          }
+                        }
+                      }
+                      if (cResult[45] !== segmentedControlState) {
+                        const obj11 = { state: segmentedControlState, grow: true, formatCount: null };
+                        class X {
+                          constructor(arg0) {
+                            let closure_0 = arg0;
+                            const obj = {
+                              headerRight() {
+                                let tmp = null;
+                                if (0 === closure_0) {
+                                  tmp = closure_5();
+                                }
+                                return tmp;
+                              }
+                            };
+                            navigation.setOptions(obj);
+                          }
+                        }
+                        const tmp59 = closure_11(tmp(tmp2[26]).Tabs, obj11);
+                        cResult[45] = segmentedControlState;
+                        cResult[46] = tmp59;
+                        tmp57 = tmp59;
+                      } else {
+                        tmp57 = cResult[46];
+                      }
+                      if (cResult[47] === tmp6.tabContainer) {
+                        let tmp60;
+                        let tmp64;
+                        if (cResult[48] === tmp57) {
+                          tmp60 = cResult[49];
+                        }
+                        if (cResult[50] !== segmentedControlState) {
+                          class X {
+                            constructor(arg0) {
+                              let closure_0 = arg0;
+                              const obj = {
+                                headerRight() {
+                                  let tmp = null;
+                                  if (0 === closure_0) {
+                                    tmp = closure_5();
+                                  }
+                                  return tmp;
+                                }
+                              };
+                              navigation.setOptions(obj);
+                            }
+                          }
+                          cResult[50] = segmentedControlState;
+                          cResult[51] = tmp66;
+                          tmp64 = tmp66;
+                        } else {
+                          tmp64 = cResult[51];
+                        }
+                        if (cResult[52] === tmp6.content) {
+                          let tmp67;
+                          if (cResult[53] === tmp64) {
+                            tmp67 = cResult[54];
+                          }
+                          if (cResult[55] === tmp6.container) {
+                            if (cResult[56] === tmp60) {
+                              let tmp70;
+                              if (cResult[57] === tmp67) {
+                                tmp70 = cResult[58];
+                              }
+                              return tmp70;
+                            }
+                          }
+                          class X {
+                            constructor(arg0) {
+                              let closure_0 = arg0;
+                              const obj = {
+                                headerRight() {
+                                  let tmp = null;
+                                  if (0 === closure_0) {
+                                    tmp = closure_5();
+                                  }
+                                  return tmp;
+                                }
+                              };
+                              navigation.setOptions(obj);
+                            }
+                          }
+                          const obj13 = { style: tmp6.container, children: items4 };
+                          items4 = [tmp60, tmp67];
+                          const tmp72 = closure_12(View, obj13);
+                          cResult[55] = tmp6.container;
+                          cResult[56] = tmp60;
+                          cResult[57] = tmp67;
+                          cResult[58] = tmp72;
+                          tmp70 = tmp72;
+                        }
+                        class X {
+                          constructor(arg0) {
+                            let closure_0 = arg0;
+                            const obj = {
+                              headerRight() {
+                                let tmp = null;
+                                if (0 === closure_0) {
+                                  tmp = closure_5();
+                                }
+                                return tmp;
+                              }
+                            };
+                            navigation.setOptions(obj);
+                          }
+                        }
+                        const obj14 = { style: tmp6.content, onLayout: tmp49, children: tmp64 };
+                        const tmp69 = closure_11(View, obj14);
+                        cResult[52] = tmp6.content;
+                        cResult[53] = tmp64;
+                        cResult[54] = tmp69;
+                        tmp67 = tmp69;
+                      }
+                      const obj15 = { style: tmp6.tabContainer, children: tmp57 };
+                      const tmp63 = closure_11(View, obj15);
+                      cResult[47] = tmp6.tabContainer;
+                      cResult[48] = tmp57;
+                      cResult[49] = tmp63;
+                      tmp60 = tmp63;
+                    }
+                    function ae() {
+                      activeIndex = activeIndex.activeIndex;
+                      closure_6(activeIndex.get());
+                    }
+                    const items5 = [segmentedControlState.activeIndex, tmp47];
+                    cResult[40] = segmentedControlState.activeIndex;
+                    cResult[41] = tmp47;
+                    cResult[42] = ae;
+                    cResult[43] = items5;
+                    tmp53 = items5;
+                    tmp52 = ae;
+                  }
+                }
+              }
+              const obj16 = { pageWidth: tmp5, items: tmp44, defaultIndex: num32, onSetActiveIndex: tmp47 };
+              cResult[35] = tmp5;
+              cResult[36] = tmp44;
+              cResult[37] = tmp47;
+              cResult[38] = num32;
+              cResult[39] = obj16;
+              tmp50 = obj16;
+            }
+            class X {
+              constructor(arg0) {
+                let closure_0 = arg0;
+                const obj = {
+                  headerRight() {
+                    let tmp = null;
+                    if (0 === closure_0) {
+                      tmp = closure_5();
+                    }
+                    return tmp;
+                  }
+                };
+                navigation.setOptions(obj);
+              }
+            }
+            cResult[31] = navigation;
+            cResult[32] = tmp46;
+            cResult[33] = X;
+            tmp47 = X;
+          }
+          const fn3 = function j() {
+            let membersManagementActions;
+            let tmp = unpackModuleId;
+            const ContextMenu = ContextMenu2.ContextMenu;
+            if (null != stateFromStores) {
+              let obj = { guild: tmp4, canPrune: stateFromStores1 };
+              const tmp2Result = showMembersManagementActionSheet;
+              membersManagementActions = tmp2Result.getMembersManagementActions(obj);
+            } else {
+              membersManagementActions = [];
+            }
+            const obj2 = {
+              items: membersManagementActions,
+              children(ref) {
+                let intl;
+                ref = ref.ref;
+                const obj = { source: closure_1_1(stateFromStores[24]), accessibilityLabel: intl.string(guildId(stateFromStores[15]).t.ogxXGq), ref };
+                const tmp = navigation(ref, stateFromStores1);
+                const HeaderActionButton = guildId(stateFromStores[23]).HeaderActionButton;
+                intl = guildId(stateFromStores[15]).intl;
+                const merged = Object.assign(tmp);
+                return closure_1_11(HeaderActionButton, obj);
+              }
+            };
+            return tmp(ContextMenu, obj2);
+          };
+          cResult[28] = stateFromStores1;
+          cResult[29] = stateFromStores;
+          cResult[30] = fn3;
+          tmp46 = fn3;
         }
       }
     }
-    if (cResult[23] === tmp30) {
-      class G {
-        constructor() {
-          let canPruneGuildMembersResult = null != stateFromStores;
-          if (canPruneGuildMembersResult) {
-            const obj = MemberSafetyPermissionsUtils;
-            canPruneGuildMembersResult = obj.canPruneGuildMembers(tmp, UserStore.getCurrentUser(), PermissionStore);
-          }
-          return canPruneGuildMembersResult;
-        }
-      }
-    }
-    const items4 = [tmp19, tmp30, tmp33, tmp40];
-    cResult[23] = tmp30;
-    cResult[24] = tmp33;
+    const items6 = [tmp20, tmp31, tmp34, tmp40];
+    cResult[23] = tmp31;
+    cResult[24] = tmp34;
     cResult[25] = tmp40;
-    cResult[26] = tmp19;
-    cResult[27] = items4;
+    cResult[26] = tmp20;
+    cResult[27] = items6;
+    tmp44 = items6;
   }
-  cResult[14] = undefined;
+  const obj17 = { label: tmp23, id: tmp(tmp2[16]).MemberSafetyPageTab.PENDING, count: tmp25, page: tmp26 };
+  cResult[14] = tmp25;
   cResult[15] = tmp26;
-  cResult[16] = { label: tmp23, id: tmp(tmp2[16]).MemberSafetyPageTab.PENDING, count: undefined, page: tmp26 };
-  const obj9 = { label: tmp23, id: tmp(tmp2[16]).MemberSafetyPageTab.PENDING, count: undefined, page: tmp26 };
-}) : ((guildId) => {
+  cResult[16] = obj17;
+  tmp31 = obj17;
+}) : (function GuildSettingsModalMembersWithTabs(guildId) {
   let callback3;
   let items8;
   let num2;

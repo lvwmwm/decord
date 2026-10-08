@@ -1,23 +1,23 @@
-// Module ID: 8818
-// Function ID: 8819
+// Module ID: 9176
+// Function ID: 9177
 // Name: DomainVerifyModal
-// Dependencies: [32, 19, 17, 1085, 21, 4896, 587, 558, 576, 1490, 1282, 1126, 4892, 6104, 8819, 5601, 6626, 5099, 6017, 6503, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5090, 587, 558, 576, 1502, 1294, 1126, 5086, 6282, 9177, 5375, 6803, 5940, 6203, 6679, 2]
 
-// Module 8818 (DomainVerifyModal)
+// Module 9176 (DomainVerifyModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import useNavigation from "useNavigation" /* 1490 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6626 */;
-import DomainVerifyUtils from "DomainVerifyUtils" /* 8819 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import useNavigation from "useNavigation" /* 1502 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6803 */;
+import DomainVerifyUtils from "DomainVerifyUtils" /* 9177 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRad
 let closure_10 = createStyles.createStyles(obj);
 const constants2 = { DOMAIN: "DOMAIN", PROOF_DNS: "PROOF_DNS", PROOF_HTTP: "PROOF_HTTP" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function DomainScreen(onClose) {
   let container;
   let description;
   let first;
@@ -161,7 +161,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
       tmp22 = tmp26;
     }
   }
-  const fn = function o() {
+  function verify() {
     react(true);
     let tmp2 = _slicedToArray(null);
     const HTTP = HTTPUtils.HTTP;
@@ -215,13 +215,13 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
     catchPromise.finally(() => {
       closure_1_4(false);
     });
-  };
+  }
   cResult[0] = first;
   cResult[1] = navigation;
   cResult[2] = onClose;
-  cResult[3] = fn;
-  tmp13 = fn;
-}) : ((onClose) => {
+  cResult[3] = verify;
+  tmp13 = verify;
+}) : (function DomainScreen(onClose) {
   let closure_1;
   let closure_3;
   let closure_4;
@@ -315,7 +315,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   return closure_9(SafeAreaPaddingView, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function DNSProofScreen(onClose) {
   let intl;
   let intl2;
   let intl3;
@@ -576,7 +576,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
     cResult[9] = tmp22;
     tmp20 = tmp22;
   }
-  const fn = function c() {
+  function verify() {
     let tmp = View(true);
     react(null);
     const HTTP = HTTPUtils.HTTP;
@@ -620,12 +620,12 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
     catchPromise.finally(() => {
       closure_1_5(false);
     });
-  };
+  }
   cResult[0] = domain;
   cResult[1] = onClose;
-  cResult[2] = fn;
-  tmp10 = fn;
-}) : ((proof) => {
+  cResult[2] = verify;
+  tmp10 = verify;
+}) : (function DNSProofScreen(proof) {
   let Button;
   let Button2;
   let _undefined;
@@ -697,7 +697,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   obj14 = {
     loading: tmp7,
     text: intl5.string(require("intl").t["13ofGu"]),
-    onPress() {
+    onPress: function verify() {
       let tmp = _undefined2(true);
       _undefined(null);
       const HTTP = HTTPUtils.HTTP;
@@ -761,7 +761,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   return tmp8(SafeAreaPaddingView, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function HTTPProofScreen(onClose) {
   let intl;
   let intl2;
   let intl3;
@@ -989,7 +989,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
     cResult[9] = tmp22;
     tmp20 = tmp22;
   }
-  const fn = function c() {
+  function verify() {
     let tmp = react(true);
     _slicedToArray(null);
     const HTTP = HTTPUtils.HTTP;
@@ -1033,12 +1033,12 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
     catchPromise.finally(() => {
       closure_1_4(false);
     });
-  };
+  }
   cResult[0] = domain;
   cResult[1] = onClose;
-  cResult[2] = fn;
-  tmp10 = fn;
-}) : ((proof) => {
+  cResult[2] = verify;
+  tmp10 = verify;
+}) : (function HTTPProofScreen(proof) {
   let Button;
   let Button2;
   let _undefined;
@@ -1096,14 +1096,14 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   const tmp8 = closure_9;
   if (tmp9Result) {
     const obj10 = { variant: "text-md/normal", color: "text-feedback-critical", style: tmp.error, children: tmp5 };
-    tmp9Result = tmp9(tmp2(4892).Text, obj10);
+    tmp9Result = tmp9(tmp2(5086).Text, obj10);
   }
   items[2] = tmp9Result;
   const obj11 = { style: tmp.button, children: closure_8(Button, obj12) };
   obj12 = {
     loading: tmp7,
     text: intl4.string(intl7.t["13ofGu"]),
-    onPress() {
+    onPress: function verify() {
       let tmp = _undefined2(true);
       _undefined(null);
       const HTTP = HTTPUtils.HTTP;
@@ -1149,7 +1149,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
       });
     }
   };
-  Button = tmp2(5601).Button;
+  Button = tmp2(5375).Button;
   intl4 = tmp2(1126).intl;
   items[3] = closure_8(View, obj11);
   const obj13 = { style: tmp.button, children: closure_8(Button2, obj14) };
@@ -1160,13 +1160,13 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
       closure_2.pop();
     }
   };
-  Button2 = tmp2(5601).Button;
+  Button2 = tmp2(5375).Button;
   intl5 = tmp2(1126).intl;
   items[4] = closure_8(View, obj13);
   return tmp8(SafeAreaPaddingView, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DomainVerifyModal() {
   let intl;
   let intl2;
   let intl3;
@@ -1182,12 +1182,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj = onClose(576);
   const cResult = obj.c(5);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function e() {
+    onClose = function onClose() {
       const arr = ModalActionCreatorsDefault;
       return arr.pop();
     };
-    cResult[0] = fn;
-    onClose = fn;
+    cResult[0] = onClose;
   } else {
     onClose = cResult[0];
   }
@@ -1203,7 +1202,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     intl = tmp(1126).intl;
     cResult[1] = obj2;
     tmp5 = obj2;
-    tmpResult = onClose(6017);
+    tmpResult = onClose(6203);
   } else {
     tmp5 = cResult[1];
   }
@@ -1219,7 +1218,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     intl2 = tmp(1126).intl;
     cResult[2] = obj3;
     tmp6 = obj3;
-    tmpResult3 = onClose(6017);
+    tmpResult3 = onClose(6203);
   } else {
     tmp6 = cResult[2];
   }
@@ -1240,13 +1239,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     obj4[PROOF_HTTP] = obj5;
     cResult[3] = obj4;
     tmp7 = obj4;
-    tmpResult4 = onClose(6017);
+    tmpResult4 = onClose(6203);
   } else {
     tmp7 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj6 = { screens: tmp7, initialRouteName: constants2.DOMAIN, headerBackTitle: intl4.string(onClose(1126).t["13/7kX"]) };
-    const Navigator = tmp(6503).Navigator;
+    const Navigator = tmp(6679).Navigator;
     intl4 = tmp(1126).intl;
     const tmp12 = closure_8(Navigator, obj6);
     cResult[4] = tmp12;
@@ -1255,7 +1254,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = cResult[4];
   }
   return tmp9;
-}) : ((arg0) => {
+}) : (function DomainVerifyModal(arg0) {
   let intl;
   let intl2;
   let intl3;
@@ -1282,7 +1281,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     };
     intl = onClose(1126).intl;
     obj[DOMAIN] = obj2;
-    obj3 = onClose(6017);
+    obj3 = onClose(6203);
     const PROOF_DNS = constants2.PROOF_DNS;
     const obj4 = {
       headerTitle: intl2.string(onClose(1126).t["7lo8+e"]),
@@ -1294,7 +1293,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     };
     intl2 = onClose(1126).intl;
     obj[PROOF_DNS] = obj4;
-    obj5 = onClose(6017);
+    obj5 = onClose(6203);
     const PROOF_HTTP = constants2.PROOF_HTTP;
     const obj6 = {
       headerTitle: intl3.string(onClose(1126).t["7lo8+e"]),
@@ -1306,9 +1305,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     };
     intl3 = onClose(1126).intl;
     obj[PROOF_HTTP] = obj6;
-    obj7 = onClose(6017);
+    obj7 = onClose(6203);
     const obj8 = { screens: obj, initialRouteName: constants2.DOMAIN, headerBackTitle: intl4.string(onClose(1126).t["13/7kX"]) };
-    const Navigator = onClose(6503).Navigator;
+    const Navigator = onClose(6679).Navigator;
     intl4 = onClose(1126).intl;
     return closure_8(Navigator, obj8);
   }

@@ -1,21 +1,19 @@
-// Module ID: 7938
-// Function ID: 7939
+// Module ID: 8103
+// Function ID: 8104
 // Name: GifTag
-// Dependencies: [17, 21, 4896, 587, 683, 558, 576, 1126, 4892, 2]
+// Dependencies: [17, 21, 5090, 587, 683, 558, 576, 1126, 5086, 2]
 
-// Module 7938 (GifTag)
+// Module 8103 (GifTag)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import module_683 from "module_683" /* 683 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let style;
 
 let alphaResult;
 let obj2;
@@ -30,7 +28,7 @@ const importDefaultResultResult = module_683(nativeDefault.unsafe_rawColors.WHIT
 alphaResult = importDefaultResultResult.alpha(0.9);
 obj3 = { color: nativeDefault.unsafe_rawColors.PRIMARY_800 };
 let closure_4 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GifTag(style) {
   const obj = react;
   const cResult = obj.c(9);
   style = style.style;
@@ -78,7 +76,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   cResult[1] = tmp4.gifTag;
   cResult[2] = items;
   tmp5 = items;
-}) : ((style) => {
+}) : (function GifTag(style) {
   let intl;
   style = style.style;
   const tmp = closure_4();

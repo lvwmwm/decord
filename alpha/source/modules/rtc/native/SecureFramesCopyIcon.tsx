@@ -1,21 +1,21 @@
-// Module ID: 9396
-// Function ID: 9397
+// Module ID: 8817
+// Function ID: 8818
 // Name: SecureFramesCopyIcon
-// Dependencies: [19, 21, 558, 576, 4573, 6695, 4849, 1126, 7586, 2]
+// Dependencies: [19, 21, 558, 576, 4765, 6872, 5043, 1126, 8106, 2]
 
-// Module 9396 (SecureFramesCopyIcon)
+// Module 8817 (SecureFramesCopyIcon)
 import Fragment from "Fragment" /* 21 */;
-import ToastUtils from "ToastUtils" /* 4573 */;
-import ClipboardUtils from "ClipboardUtils" /* 6695 */;
+import ToastUtils from "ToastUtils" /* 4765 */;
+import ClipboardUtils from "ClipboardUtils" /* 6872 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, chunks;
+let _require;
 
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((chunks) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFramesCopyIcon(chunks) {
   let closure_0;
   let tmp10;
   let tmp12;
@@ -71,7 +71,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((chunks) => {
     tmp12 = cResult[7];
   }
   return tmp12;
-}) : ((chunks) => {
+}) : (function SecureFramesCopyIcon(chunks) {
   chunks = chunks.chunks;
   const items = [chunks];
   const memo = react.useMemo(() => chunks.join(" "), items);

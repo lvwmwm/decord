@@ -1,13 +1,13 @@
-// Module ID: 15973
-// Function ID: 15974
+// Module ID: 16233
+// Function ID: 16234
 // Name: getJankScreenName
-// Dependencies: [15974, 4743, 15975, 2]
+// Dependencies: [16234, 4937, 16235, 2]
 // Exports: default, getBaseScreenName, getChatPanelScreenName, getComponentDisplayName, getPanelListScreenName, getWideViewScreenName, isModalScreenName
 
-// Module 15973 (getJankScreenName)
-import RootNavigationRef from "RootNavigationRef" /* 4743 */;
-import getScreenAnalyticsName from "getScreenAnalyticsName" /* 15975 */;
-import JankScreenConstants from "JankScreenConstants" /* 15974 */;
+// Module 16233 (getJankScreenName)
+import RootNavigationRef from "RootNavigationRef" /* 4937 */;
+import getScreenAnalyticsName from "getScreenAnalyticsName" /* 16235 */;
+import JankScreenConstants from "JankScreenConstants" /* 16234 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -15,7 +15,7 @@ let c3;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
-const f122229 = (name) => name.name === tabs;
+const f123403 = (name) => name.name === tabs;
 function resolveScreenName(items) {
   const params = tmp.params;
   if (items[items.length - 1].name === channel) {
@@ -109,9 +109,12 @@ const result = size.fileFinishedImporting("modules/jank_stats/native/getJankScre
 export default function getJankScreenName() {
   let concat2;
   let focused;
+  let index4;
   let items2;
   let mapped;
+  let mapped1;
   let rendered;
+  let routes4;
   const obj = RootNavigationRef;
   const rootNavigationRef = obj.getRootNavigationRef();
   let rootState = null;
@@ -125,22 +128,21 @@ export default function getJankScreenName() {
   if (null != rootState) {
     while (true) {
       let index = rootState.index;
-      let tmp2 = rootState;
       let routes = rootState.routes;
       if (index == null) {
-        index = tmp2.routes.length - 1;
+        index = rootState.routes.length - 1;
       }
       let tmp3 = routes[index];
       if (null == tmp3) {
         break;
       } else {
         let obj5;
-        let obj15;
+        let obj10;
         if (tmp3.name === channel) {
           let items1 = [];
-          let tmp5 = tmp2;
+          let tmp5 = rootState;
           let concat = items.concat;
-          if (null != tmp2) {
+          if (null != rootState) {
             while (true) {
               let index2 = tmp5.index;
               let routes2 = tmp5.routes;
@@ -160,42 +162,71 @@ export default function getJankScreenName() {
               }
             }
           }
-          obj5 = { focused: concat(items1), rendered: concat2(items2) };
+          obj5 = { focused: concat(items1), rendered: concat2(items2), chatScreens: mapped.join(",") };
           items2 = [];
+          let tmp9 = rootState;
           concat2 = items.concat;
-          if (null != tmp2) {
+          if (null != rootState) {
             while (true) {
-              let index3 = tmp2.index;
-              let routes3 = tmp2.routes;
+              let index3 = tmp9.index;
+              let routes3 = tmp9.routes;
               if (index3 == null) {
-                index3 = tmp2.routes.length - 1;
+                index3 = tmp9.routes.length - 1;
               }
-              let tmp10 = routes3[index3];
+              let tmp11 = routes3[index3];
               let name;
-              if (tmp10 != null) {
-                name = tmp10.name;
+              if (tmp11 != null) {
+                name = tmp11.name;
               }
-              let tmp13 = tmp10;
+              let tmp14 = tmp11;
               if (name === channel) {
-                let routes1 = tmp2.routes;
-                let found = routes1.find(f122229);
+                let routes1 = tmp9.routes;
+                let found = routes1.find(f123403);
                 if (found == null) {
-                  found = tmp10;
+                  found = tmp11;
                 }
-                tmp13 = found;
+                tmp14 = found;
               }
-              if (null == tmp13) {
+              if (null == tmp14) {
                 break;
               } else {
                 let obj7 = { name: null, key: null, params: null };
-                ({ name: obj6.name, key: obj6.key, params: obj6.params } = tmp13);
+                ({ name: obj6.name, key: obj6.key, params: obj6.params } = tmp14);
                 let arr2 = items2.push(obj7);
-                if (null == tmp13.state) {
+                if (null == tmp14.state) {
                   break;
                 }
               }
             }
           }
+          ({ routes: routes4, index: index4 } = rootState);
+          let slice = routes4.slice;
+          if (index4 == null) {
+            index4 = rootState.routes.length - 1;
+          }
+          let substr = slice(0, index4 + 1);
+          let found1 = substr.filter((name) => name.name === channel);
+          mapped = found1.map((params) => {
+            params = params.params;
+            let guildId;
+            if (params != null) {
+              guildId = params.guildId;
+            }
+            let channelId;
+            if (params != null) {
+              channelId = params.channelId;
+            }
+            let showCreateThread;
+            if (params != null) {
+              showCreateThread = params.showCreateThread;
+            }
+            let str = "";
+            if (true === showCreateThread) {
+              str = "/thread";
+            }
+            return "" + guildId + "/" + channelId + str;
+          });
+          let str = ",";
         } else {
           let obj8 = { name: null, key: null, params: null };
           ({ name: obj3.name, key: obj3.key, params: obj3.params } = tmp3);
@@ -209,18 +240,18 @@ export default function getJankScreenName() {
         }
         ({ focused, rendered } = obj5);
         if (0 === focused.length) {
-          let obj9 = { screen: metroRequire, expectedScreenIds: "", focusedRoute: "unicodeVersion" };
-          obj15 = obj9;
+          let obj9 = { screen: metroRequire, expectedScreenIds: "", focusedRoute: "Array", chatScreens: "encodedBodySize" };
+          obj10 = obj9;
         } else {
-          obj15 = { screen: resolveScreenName(focused), expectedScreenIds: mapped.join(","), focusedRoute: focused[focused.length - 1] };
-          mapped = rendered.map((key) => key.key);
-          let str = ",";
+          obj10 = { screen: resolveScreenName(focused), expectedScreenIds: mapped1.join(","), focusedRoute: focused[focused.length - 1], chatScreens: tmp17 };
+          mapped1 = rendered.map((key) => key.key);
+          let str2 = ",";
         }
-        return obj15;
+        return obj10;
       }
     }
   }
-  obj5 = { focused: items, rendered: items };
+  obj5 = { focused: items, rendered: items, chatScreens: null };
 };
 export const CHAT_PANEL_ROUTE = "channel";
 export const getComponentDisplayName = function getComponentDisplayName(type) {
@@ -296,7 +327,7 @@ export const getPanelListScreenName = function getPanelListScreenName() {
         let tmp6 = tmp3;
         if (name === channel) {
           let routes1 = rootState.routes;
-          let found = routes1.find(f122229);
+          let found = routes1.find(f123403);
           if (found == null) {
             found = tmp3;
           }

@@ -1,25 +1,25 @@
-// Module ID: 8949
-// Function ID: 8950
+// Module ID: 11551
+// Function ID: 11552
 // Name: ExplicitMediaSenderFalsePositiveActionSheet
-// Dependencies: [19, 6806, 7123, 21, 558, 576, 573, 8950, 8948, 8953, 8954, 4860, 7122, 2]
+// Dependencies: [19, 6977, 6979, 21, 558, 576, 573, 11492, 11550, 11493, 11494, 5054, 8218, 2]
 
-// Module 8949 (ExplicitMediaSenderFalsePositiveActionSheet)
+// Module 11551 (ExplicitMediaSenderFalsePositiveActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7123 */;
-import ExplicitMediaFalsePositiveActionCreatorsDefault from "ExplicitMediaFalsePositiveActionCreators" /* 8948 */;
-import ExplicitMediaFalsePositiveActionSheet2 from "ExplicitMediaFalsePositiveActionSheet" /* 8950 */;
-import ExplicitMediaRedactionActionCreators from "ExplicitMediaRedactionActionCreators" /* 8953 */;
+import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 6979 */;
+import ExplicitMediaFalsePositiveActionSheet2 from "ExplicitMediaFalsePositiveActionSheet" /* 11492 */;
+import ExplicitMediaRedactionActionCreators from "ExplicitMediaRedactionActionCreators" /* 11493 */;
+import ExplicitMediaFalsePositiveActionCreatorsDefault from "ExplicitMediaFalsePositiveActionCreators" /* 11550 */;
 import react_mod from "react" /* 19 */;
-import ExplicitMediaStore from "ExplicitMediaStore" /* 6806 */;
+import ExplicitMediaStore from "ExplicitMediaStore" /* 6977 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channelId, dependencyMap;
+let dependencyMap;
 
 let react = react_mod;
 let closure_5 = ExplicitMediaRedactionConstants.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_ACTION_SHEET_KEY;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExplicitMediaObscuredFalsePositiveActionSheet(channelId) {
   let closure_2;
   let first;
   let tmp6;
@@ -73,15 +73,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     let tmp12;
     const _Symbol2 = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      class F {
+      class I {
         constructor(filename) {
           return filename.filename;
         }
       }
-      cResult[8] = F;
-      tmp12 = F;
+      cResult[8] = I;
+      tmp12 = I;
     } else {
-      class F {
+      class I {
         constructor(filename) {
           return filename.filename;
         }
@@ -92,7 +92,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     cResult[6] = stateFromStores.attachments;
     cResult[7] = mapped1;
   } else {
-    class F {
+    class I {
       constructor(filename) {
         return filename.filename;
       }
@@ -100,28 +100,28 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   }
   mapped1 = tmp11;
   if (cResult[9] === channelId) {
-    class F {
+    class I {
       constructor(filename) {
         return filename.filename;
       }
     }
     const _Symbol3 = Symbol;
     if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-      class F {
+      class I {
         constructor(filename) {
           return filename.filename;
         }
       }
       cResult[12] = tmp15;
     } else {
-      class F {
+      class I {
         constructor(filename) {
           return filename.filename;
         }
       }
     }
     if (cResult[13] === tmp11) {
-      class F {
+      class I {
         constructor(filename) {
           return filename.filename;
         }
@@ -148,7 +148,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[9] = channelId;
   cResult[10] = messageId;
   cResult[11] = fn3;
-}) : ((channelId) => {
+}) : (function ExplicitMediaObscuredFalsePositiveActionSheet(channelId) {
   let closure_2;
   let closure_3;
   channelId = channelId.channelId;
@@ -161,7 +161,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   dependencyMap = attachments.map((id) => id.id);
   const attachments1 = stateFromStores.attachments;
   react = attachments1.map((filename) => filename.filename);
-  let obj2 = channelId(8954);
+  let obj2 = channelId(11494);
   const obj3 = {
     onSuccess() {
       const obj = ExplicitMediaFalsePositiveActionSheet2;
@@ -182,15 +182,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   reportFalsePositive = explicitMediaActions.reportFalsePositive;
   const isReportFalsePositiveLoading = explicitMediaActions.isReportFalsePositiveLoading;
   if (stateFromStores.attachments.length <= 0) {
-    const obj4 = messageId(4860);
+    const obj4 = messageId(5054);
     obj4.hideActionSheet();
   }
   const items1 = [reportFalsePositive];
   const callback = react.useCallback(() => {
     reportFalsePositive();
   }, items1);
-  const ExplicitMediaFalsePositiveActionSheet = tmp(8950).ExplicitMediaFalsePositiveActionSheet;
-  return <ExplicitMediaFalsePositiveActionSheet channelId={channelId} messageId={messageId} isReportFalsePositiveLoading={isReportFalsePositiveLoading} onConfirmPress={callback} analyticsContext={channelId(7122).TrackMediaRedactionContext.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW} />;
+  const ExplicitMediaFalsePositiveActionSheet = tmp(11492).ExplicitMediaFalsePositiveActionSheet;
+  return <ExplicitMediaFalsePositiveActionSheet channelId={channelId} messageId={messageId} isReportFalsePositiveLoading={isReportFalsePositiveLoading} onConfirmPress={callback} analyticsContext={channelId(8218).TrackMediaRedactionContext.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW} />;
 });
 let result = size.fileFinishedImporting("modules/explicit_media_redaction/native/false_positive_reporting/ExplicitMediaSenderFalsePositiveActionSheet.tsx");
 

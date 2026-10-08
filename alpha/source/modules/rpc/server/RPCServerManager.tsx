@@ -1,40 +1,40 @@
-// Module ID: 14316
-// Function ID: 14317
+// Module ID: 14541
+// Function ID: 14542
 // Name: RPCServerManager
-// Dependencies: [32, 9000, 7200, 2051, 2112, 2074, 1999, 4936, 4919, 4525, 2103, 1377, 4915, 5323, 1085, 2011, 8738, 4921, 1369, 584, 1252, 14317, 504, 1375, 9064, 9025, 14322, 9065, 7221, 2]
+// Dependencies: [32, 10612, 7379, 2063, 2124, 2086, 2011, 5106, 5108, 4717, 2115, 1389, 5111, 5635, 1085, 2023, 10613, 5115, 1381, 584, 1264, 14542, 504, 1387, 11142, 14547, 11127, 14548, 11143, 7401, 2]
 
-// Module 14316 (RPCServerManager)
+// Module 14541 (RPCServerManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import Constants2 from "Constants" /* 2011 */;
-import Constants3 from "Constants" /* 4921 */;
-import Constants4 from "Constants" /* 5323 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7221 */;
-import FramesConstants from "FramesConstants" /* 8738 */;
-import useThermalState from "useThermalState" /* 9025 */;
-import RPCHelpers from "RPCHelpers" /* 9064 */;
-import transformUserDefault from "transformUser" /* 9065 */;
-import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 14317 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14322 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import Constants2 from "Constants" /* 2023 */;
+import Constants3 from "Constants" /* 5115 */;
+import Constants4 from "Constants" /* 5635 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7401 */;
+import FramesConstants from "FramesConstants" /* 10613 */;
+import useThermalState from "useThermalState" /* 11127 */;
+import RPCHelpers from "RPCHelpers" /* 11142 */;
+import transformUserDefault from "transformUser" /* 11143 */;
+import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 14542 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14548 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import FramesStore from "FramesStore" /* 9000 */;
-import QuestStore from "QuestStore" /* 7200 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import PresenceStore from "PresenceStore" /* 4936 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import UserStore from "UserStore" /* 1377 */;
-import VoiceStateStore from "VoiceStateStore" /* 4915 */;
+import FramesStore from "FramesStore" /* 10612 */;
+import QuestStore from "QuestStore" /* 7379 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import PresenceStore from "PresenceStore" /* 5106 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import UserStore from "UserStore" /* 1389 */;
+import VoiceStateStore from "VoiceStateStore" /* 5111 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
-let frameByIframeId, set;
+let frameByEmbeddedContext, set;
 
 let closure_17;
 let closure_18;
@@ -163,7 +163,7 @@ class RPCServerManager {
         obj3 = RPCHelpers;
         const tmp8 = require;
         if (null != icon) {
-          const tmp8Result = tmp8(9064);
+          const tmp8Result = tmp8(11142);
           remoteIconURL = tmp8Result.getRemoteIconURL(icon);
         }
         const result = dispatchToSubscriptions(NOTIFICATION_CREATE, {}, obj);
@@ -220,12 +220,13 @@ class RPCServerManager {
           FOCUSED = ActivityLayoutMode.FOCUSED;
         }
         function targetsFrame(socket) {
-          let tmp = socket.socket.source.type === constants.POST_MESSAGE;
+          socket = socket.socket;
+          let tmp = closure_2_1(closure_2_2[25])(socket);
           if (tmp) {
-            frameByIframeId = frameByIframeId.getFrameByIframeId(socket.socket.source.iframeId);
+            frameByEmbeddedContext = frameByEmbeddedContext.getFrameByEmbeddedContext(socket.context, socket.source.iframeId);
             let id;
-            if (frameByIframeId != null) {
-              id = frameByIframeId.id;
+            if (frameByEmbeddedContext != null) {
+              id = frameByEmbeddedContext.id;
             }
             tmp = id === frameId;
           }
@@ -585,14 +586,27 @@ class RPCServerManager {
       obj.dispatch(obj2);
       const obj3 = AnalyticsUtilsDefault;
       const obj4 = { app_id: app_id.application.id, transport: app_id.transport };
-      obj3.track(constants.AUTHORIZED_APP_CONNECTED, obj4);
+      obj3.track(constants2.AUTHORIZED_APP_CONNECTED, obj4);
     };
     this.rpcServer.onDisconnect = (id, reason) => {
       const obj = ConjureVoiceSessionCoordinatorDefault;
       obj.releaseSocket(id.id);
-      const obj2 = DispatcherDefault;
-      const obj3 = { type: "RPC_APP_DISCONNECTED", socketId: id.id, application: id.application, source: id.source, reason };
-      obj2.dispatch(obj3);
+      const obj2 = { type: "RPC_APP_DISCONNECTED", socketId: id.id, application: id.application, reason };
+      const source = id.source;
+      if (source.type === constants.POST_MESSAGE) {
+        const context = id.context;
+        const obj3 = { source, context };
+        const dispatch2 = DispatcherDefault.dispatch;
+        DispatcherDefault;
+        const merged = Object.assign(obj2);
+        dispatch2(obj3);
+      } else {
+        const obj4 = { source };
+        const dispatch = DispatcherDefault.dispatch;
+        DispatcherDefault;
+        const merged1 = Object.assign(obj2);
+        dispatch(obj4);
+      }
     };
     const items = [ChannelStore, GuildMemberStore, PresenceStore, VoiceStateStore, MediaEngineStore, RTCConnectionStore];
     const batchedStoreListener = new self(504).BatchedStoreListener(items.concat(this.stores), () => {

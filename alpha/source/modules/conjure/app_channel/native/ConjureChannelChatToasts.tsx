@@ -1,20 +1,20 @@
-// Module ID: 16797
-// Function ID: 16798
+// Module ID: 17077
+// Function ID: 17078
 // Name: ConjureChannelChatToasts
-// Dependencies: [19, 17, 21, 4896, 587, 1126, 558, 576, 4728, 1188, 4892, 6002, 16798, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 1126, 558, 576, 4922, 1200, 5086, 6186, 17078, 2]
 
-// Module 16797 (ConjureChannelChatToasts)
+// Module 17077 (ConjureChannelChatToasts)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import UserUtils from "UserUtils" /* 4728 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Card_Card from "Card/Card" /* 6002 */;
-import useConjureChatToastMessagesDefault from "useConjureChatToastMessages" /* 16798 */;
+import native from "native" /* 1200 */;
+import UserUtils from "UserUtils" /* 4922 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Card_Card from "Card/Card" /* 6186 */;
+import useConjureChatToastMessagesDefault from "useConjureChatToastMessages" /* 17078 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ obj2 = { width: 304, maxWidth: "100%", backgroundColor: nativeDefault.colors.BAC
 obj3 = { padding: nativeDefault.space.PX_8, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 let closure_7 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatToast(message) {
   let items;
   let items1;
   let tmp6;
@@ -74,8 +74,8 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
       tmp9 = cResult[4];
     }
     if (cResult[5] !== message.author) {
-      const obj3 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "Array" };
-      const Avatar = tmp(1188).Avatar;
+      const obj3 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "r" };
+      const Avatar = tmp(1200).Avatar;
       const tmp12 = hasOwnProperty(Avatar, obj3);
       cResult[5] = message.author;
       cResult[6] = tmp12;
@@ -150,14 +150,14 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     cResult[14] = tmp22;
     tmp19 = tmp22;
   }
-  const fn = function x() {
+  const fn = function b() {
     return onOpenChat(message);
   };
   cResult[2] = message;
   cResult[3] = onOpenChat;
   cResult[4] = fn;
   tmp9 = fn;
-}) : ((message) => {
+}) : (function ChatToast(message) {
   let Card;
   let items1;
   let items2;
@@ -185,9 +185,9 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   const obj2 = { style: tmp.opaque, children: metroRequire(Card, obj3) };
   const callback = react.useCallback(() => onOpenChat(message), items);
   obj3 = { variant: "primary", shadow: "high", border: "subtle", style: tmp.card, onPress: callback, children: items1 };
-  Card = tmp2(6002).Card;
-  const obj4 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "Array" };
-  const Avatar = tmp2(1188).Avatar;
+  Card = tmp2(6186).Card;
+  const obj4 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "r" };
+  const Avatar = tmp2(1200).Avatar;
   items1 = [hasOwnProperty(Avatar, obj4), ];
   const obj5 = { style: tmp.body, children: items2 };
   items2 = [hasOwnProperty(Text_Text.Text, { variant: "text-xs/semibold", color: "text-default", lineClamp: 1, children: name }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-default", lineClamp: 1, children: trimmed })];
@@ -195,7 +195,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   return hasOwnProperty(View, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onOpenChat) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureChannelChatToasts(onOpenChat) {
   let obj = onOpenChat(576);
   const cResult = obj.c(8);
   onOpenChat = onOpenChat.onOpenChat;
@@ -226,7 +226,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onOpenChat) => {
       tmp6 = tmp9;
     }
     if (cResult[3] !== onOpenChat) {
-      const fn = function x(message) {
+      const fn = function b(message) {
         const obj = { message, onOpenChat };
         return hasOwnProperty(closure_8, obj, message.id);
       };
@@ -242,7 +242,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onOpenChat) => {
     cResult[2] = mapped;
     tmp3 = mapped;
   }
-}) : ((onOpenChat) => {
+}) : (function ConjureChannelChatToasts(onOpenChat) {
   onOpenChat = onOpenChat.onOpenChat;
   const channelId = onOpenChat.channelId;
   const tmp = closure_7();

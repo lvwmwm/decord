@@ -1,9 +1,9 @@
-// Module ID: 12966
-// Function ID: 12967
+// Module ID: 13245
+// Function ID: 13246
 // Name: WishlistAnalyticsContext
 // Dependencies: [19, 21, 558, 576, 2]
 
-// Module 12966 (WishlistAnalyticsContext)
+// Module 13245 (WishlistAnalyticsContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -14,15 +14,17 @@ const jsx = Fragment.jsx;
 let context = react.createContext(null);
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const useWishlistAnalyticsContext = () => react.useContext(context);
+function useWishlistAnalyticsContext() {
+  return react.useContext(context);
+}
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistAnalyticsProvider(arg0) {
   let children;
   let newValue;
   const obj = react2;
   const cResult = obj.c(6);
   ({ newValue, children } = arg0);
-  if (typeof fn === "function") {
+  if (typeof useWishlistAnalyticsContext === "function") {
     context = react.useContext(context);
     if (cResult[0] === newValue) {
       let tmp5;
@@ -52,9 +54,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-}) : ((newValue) => {
+}) : (function WishlistAnalyticsProvider(newValue) {
   newValue = newValue.newValue;
-  if (typeof fn === "function") {
+  if (typeof useWishlistAnalyticsContext === "function") {
     const obj = {};
     const merged = Object.assign(react.useContext(context));
     const merged1 = Object.assign(newValue);

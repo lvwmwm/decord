@@ -1,26 +1,26 @@
-// Module ID: 16895
-// Function ID: 16896
+// Module ID: 17176
+// Function ID: 17177
 // Name: useSearchScreenError
-// Dependencies: [19, 6794, 11994, 7524, 558, 576, 11987, 504, 1126, 4574, 4814, 2]
+// Dependencies: [19, 6067, 12067, 9247, 558, 576, 12060, 504, 1126, 4766, 5008, 2]
 
-// Module 16895 (useSearchScreenError)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4814 */;
-import SearchConstants from "SearchConstants" /* 7524 */;
-import SearchUtils from "SearchUtils" /* 11987 */;
+// Module 17176 (useSearchScreenError)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5008 */;
+import SearchConstants from "SearchConstants" /* 9247 */;
+import SearchUtils from "SearchUtils" /* 12060 */;
 import react from "react" /* 19 */;
-import SearchMessageStore_mod from "SearchMessageStore" /* 6794 */;
-import SearchQueryStore from "SearchQueryStore" /* 11994 */;
+import SearchMessageStore_mod from "SearchMessageStore" /* 6067 */;
+import SearchQueryStore from "SearchQueryStore" /* 12067 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let content, searchContext;
+let content;
 
 let SearchMessageStore = SearchMessageStore_mod;
 let closure_6 = SearchConstants.SEARCH_MESSAGE_TAB_SENTINEL;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageSearchErrorScreen(searchContext) {
   let first;
   let ref;
   let stateFromStores;
@@ -83,7 +83,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
         }
       }
       const obj2 = { hasError: null != stateFromStores, errorText: tmp8, isErrorFullscreen: null != stateFromStores && !hasListItems, isErrorToast: null != stateFromStores && hasListItems, showErrorToast: null };
-      class R {
+      class C {
         constructor() {
           if (stateFromStores !== ref.current) {
             const obj = { key: "SEARCH_ERROR_TOAST", icon: AssetRegistryDefault, content };
@@ -102,7 +102,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
       cResult[14] = obj2;
       tmp17 = obj2;
     }
-    class R {
+    class C {
       constructor() {
         if (stateFromStores !== ref.current) {
           const obj = { key: "SEARCH_ERROR_TOAST", icon: AssetRegistryDefault, content };
@@ -115,8 +115,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
     }
     cResult[6] = stateFromStores;
     cResult[7] = tmp8;
-    cResult[8] = R;
-    tmp13 = R;
+    cResult[8] = C;
+    tmp13 = C;
   }
   const fn = function l() {
     const searchResultsQuery = SearchQueryStore.getSearchResultsQuery(searchContext);
@@ -127,7 +127,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
   cResult[2] = tab;
   cResult[3] = fn;
   tmp7 = fn;
-}) : ((arg0) => {
+}) : (function useMessageSearchErrorScreen(arg0) {
   let callback;
   let hasListItems;
   let tmp5;
@@ -170,7 +170,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
   return obj2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageTabCountsErrorText(searchContext) {
   let first;
   let tmp7;
   const tmp2 = dependencyMap;
@@ -219,7 +219,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => 
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7);
-}) : ((searchContext) => {
+}) : (function useMessageTabCountsErrorText(searchContext) {
   searchContext = searchContext.searchContext;
   let obj = searchContext(504);
   const items = [SearchQueryStore, SearchMessageStore];

@@ -1,32 +1,32 @@
-// Module ID: 10757
-// Function ID: 10758
+// Module ID: 12711
+// Function ID: 12712
 // Name: CollectiblesShopGiftModal
-// Dependencies: [19, 7066, 1085, 1096, 21, 558, 576, 8899, 1369, 4547, 10758, 10756, 10759, 10762, 10571, 10564, 10551, 10484, 7879, 7866, 504, 6688, 6664, 2018, 7065, 1126, 10567, 2]
+// Dependencies: [19, 7252, 1085, 1096, 21, 558, 576, 9332, 1381, 4739, 12712, 12710, 12713, 12716, 10168, 10161, 10148, 10081, 8297, 8284, 504, 6865, 6841, 2030, 7251, 1126, 10164, 2]
 
-// Module 10757 (CollectiblesShopGiftModal)
+// Module 12711 (CollectiblesShopGiftModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import Constants2 from "Constants" /* 1096 */;
-import StringUtils from "StringUtils" /* 2018 */;
-import BadgeId from "BadgeId" /* 7866 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7879 */;
-import openGiftModal from "openGiftModal" /* 10756 */;
-import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 10759 */;
-import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 10762 */;
+import StringUtils from "StringUtils" /* 2030 */;
+import BadgeId from "BadgeId" /* 8284 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8297 */;
+import openGiftModal from "openGiftModal" /* 12710 */;
+import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 12713 */;
+import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 12716 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7066 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7252 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let product, skuId;
+let _Promise, dependencyMap, flag, resolved;
 
 let tmp;
-const CollectiblesActionCreators = tmp(7065);
+const CollectiblesActionCreators = tmp(7251);
 const application_id = Constants.COLLECTIBLES_APPLICATION_ID;
 const PaymentGateways = Constants2.PaymentGateways;
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollectiblesShopGiftModalContent(product) {
   let GOOGLE;
   let analyticsLocations;
   let first;
@@ -96,7 +96,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
   }
   if (cResult[8] === analyticsLocations) {
     if (cResult[11] !== product) {
-      class M {
+      class L {
         constructor(arg0) {
           let isValidRecipient;
           let recipientUser;
@@ -105,17 +105,9 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
         }
       }
       cResult[11] = product;
-      class P {
-        constructor(arg0) {
-          let giftOptions;
-          let isPurchaseDisabled;
-          ({ isPurchaseDisabled, giftOptions } = arg0);
-          return jsx(CollectiblesShopGiftPurchaseSectionDefault, { product: require, isPurchaseDisabled, giftOptions, giftingOrigin });
-        }
-      }
-      cResult[12] = M;
+      cResult[12] = L;
     } else {
-      class M {
+      class L {
         constructor(arg0) {
           let isValidRecipient;
           let recipientUser;
@@ -125,7 +117,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
       }
     }
     if (cResult[13] === giftingOrigin) {
-      class M {
+      class L {
         constructor(arg0) {
           let isValidRecipient;
           let recipientUser;
@@ -134,7 +126,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
         }
       }
       if (cResult[16] === analyticsLocations) {
-        class M {
+        class L {
           constructor(arg0) {
             let isValidRecipient;
             let recipientUser;
@@ -143,22 +135,6 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
           }
         }
       }
-      class P {
-        constructor(arg0) {
-          let giftOptions;
-          let isPurchaseDisabled;
-          ({ isPurchaseDisabled, giftOptions } = arg0);
-          return jsx(CollectiblesShopGiftPurchaseSectionDefault, { product: require, isPurchaseDisabled, giftOptions, giftingOrigin });
-        }
-      }
-      tmp20[0] = product.skuId;
-      tmp20[1] = analyticsLocations;
-      tmp20[2] = lockedRecipientUser;
-      tmp20[3] = onGiftModalDismiss;
-      tmp20[4] = giftingOrigin;
-      tmp20[5] = validateRecipient;
-      tmp20[6] = tmp16;
-      tmp20[7] = tmp17;
       cResult[16] = analyticsLocations;
       cResult[17] = giftingOrigin;
       cResult[18] = lockedRecipientUser;
@@ -167,26 +143,24 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
       cResult[21] = tmp16;
       cResult[22] = tmp17;
       cResult[23] = validateRecipient;
-      cResult[24] = jsx(tmp10(giftingOrigin[14]), tmp20);
-      const tmp21 = jsx(tmp10(giftingOrigin[14]), tmp20);
+      cResult[24] = jsx(tmp10(giftingOrigin[14]), { skuId: product.skuId, analyticsLocations, lockedRecipientUser, onGiftModalDismiss, giftingOrigin, validateRecipient, renderProductDetails: tmp16, renderPurchaseSection: tmp17 });
+      const tmp20 = jsx(tmp10(giftingOrigin[14]), { skuId: product.skuId, analyticsLocations, lockedRecipientUser, onGiftModalDismiss, giftingOrigin, validateRecipient, renderProductDetails: tmp16, renderPurchaseSection: tmp17 });
     }
-    class P {
-      constructor(arg0) {
-        let giftOptions;
-        let isPurchaseDisabled;
-        ({ isPurchaseDisabled, giftOptions } = arg0);
-        return jsx(CollectiblesShopGiftPurchaseSectionDefault, { product: require, isPurchaseDisabled, giftOptions, giftingOrigin });
-      }
-    }
+    const fn2 = function h(arg0) {
+      let giftOptions;
+      let isPurchaseDisabled;
+      ({ isPurchaseDisabled, giftOptions } = arg0);
+      return jsx(CollectiblesShopGiftPurchaseSectionDefault, { product: require, isPurchaseDisabled, giftOptions, giftingOrigin });
+    };
     cResult[13] = giftingOrigin;
     cResult[14] = product;
-    cResult[15] = P;
+    cResult[15] = fn2;
   }
-  const obj3 = { is_gift: true, location_stack: analyticsLocations, payment_type: "sku", sku_id: product.skuId, application_id };
+  const obj4 = { is_gift: true, location_stack: analyticsLocations, payment_type: "sku", sku_id: product.skuId, application_id };
   cResult[8] = analyticsLocations;
   cResult[9] = product.skuId;
-  cResult[10] = obj3;
-}) : ((product) => {
+  cResult[10] = obj4;
+}) : (function CollectiblesShopGiftModalContent(product) {
   let GOOGLE;
   let analyticsLocations;
   let lockedRecipientUser;
@@ -233,21 +207,21 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
   return <NativePaymentContextProvider skuIDs={[]} activeSubscription={null}>{null}</NativePaymentContextProvider>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollectiblesShopGiftModal(skuId) {
   let analyticsLocations;
+  let c2;
   let first;
   let giftingOrigin;
   let lockedRecipientUser;
   let onGiftModalDismiss;
-  let skuId1;
+  let tmp10;
   let tmp11;
-  let tmp12;
   let tmp14;
   let tmp6;
   let tmp7;
   let tmp9;
-  let tmp3 = skuId1;
-  let obj = skuId(skuId1[6]);
+  let tmp3 = dependencyMap;
+  let obj = skuId(576);
   const cResult = obj.c(22);
   skuId = skuId.skuId;
   ({ analyticsLocations, lockedRecipientUser, onGiftModalDismiss, giftingOrigin } = skuId);
@@ -258,229 +232,366 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   } else {
     first = cResult[0];
   }
-  const GiftingBadgeExperiment = tmp2(tmp3[17]).GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = tmp2(10081).GiftingBadgeExperiment;
   const enabled = GiftingBadgeExperiment.useConfig(first).enabled;
   if (cResult[1] !== enabled) {
-    const fn = function k() {
-      const tmp = enabled;
-      if (tmp) {
-        const obj = BadgeDirectoryActionCreators;
-        const badge = obj.fetchBadge(BadgeId.BadgeId.GIFTING);
+    class O {
+      constructor() {
+        tmp = enabled;
+        if (tmp) {
+          tmp2 = closure_0;
+          tmp3 = closure_2;
+          obj = closure_0(closure_2[18]);
+          badge = obj.fetchBadge(closure_0(closure_2[19]).BadgeId.GIFTING);
+        }
+        return;
       }
-    };
+    }
     const items = [enabled];
     cResult[1] = enabled;
-    cResult[2] = fn;
+    cResult[2] = O;
     cResult[3] = items;
     tmp7 = items;
-    tmp6 = fn;
+    tmp6 = O;
   } else {
-    tmp6 = cResult[2];
+    class O {
+      constructor() {
+        tmp = enabled;
+        if (tmp) {
+          tmp2 = closure_0;
+          tmp3 = closure_2;
+          obj = closure_0(closure_2[18]);
+          badge = obj.fetchBadge(closure_0(closure_2[19]).BadgeId.GIFTING);
+        }
+        return;
+      }
+    }
     tmp7 = cResult[3];
   }
   const effect = react.useEffect(tmp6, tmp7);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    class O {
+      constructor() {
+        tmp = enabled;
+        if (tmp) {
+          tmp2 = closure_0;
+          tmp3 = closure_2;
+          obj = closure_0(closure_2[18]);
+          badge = obj.fetchBadge(closure_0(closure_2[19]).BadgeId.GIFTING);
+        }
+        return;
+      }
+    }
     const items1 = [CollectiblesCategoryStore];
     cResult[4] = items1;
     tmp9 = items1;
   } else {
-    tmp9 = cResult[4];
+    class O {
+      constructor() {
+        tmp = enabled;
+        if (tmp) {
+          tmp2 = closure_0;
+          tmp3 = closure_2;
+          obj = closure_0(closure_2[18]);
+          badge = obj.fetchBadge(closure_0(closure_2[19]).BadgeId.GIFTING);
+        }
+        return;
+      }
+    }
   }
   if (cResult[5] !== skuId) {
-    const fn2 = function _() {
-      return CollectiblesCategoryStore.getProduct(skuId);
-    };
+    class O {
+      constructor() {
+        tmp = enabled;
+        if (tmp) {
+          tmp2 = closure_0;
+          tmp3 = closure_2;
+          obj = closure_0(closure_2[18]);
+          badge = obj.fetchBadge(closure_0(closure_2[19]).BadgeId.GIFTING);
+        }
+        return;
+      }
+    }
     const items2 = [skuId];
     cResult[5] = skuId;
-    cResult[6] = fn2;
+    cResult[6] = tmp12;
     cResult[7] = items2;
-    tmp12 = items2;
-    tmp11 = fn2;
+    tmp11 = items2;
+    tmp10 = tmp12;
   } else {
-    tmp11 = cResult[6];
-    tmp12 = cResult[7];
+    class O {
+      constructor() {
+        tmp = enabled;
+        if (tmp) {
+          tmp2 = closure_0;
+          tmp3 = closure_2;
+          obj = closure_0(closure_2[18]);
+          badge = obj.fetchBadge(closure_0(closure_2[19]).BadgeId.GIFTING);
+        }
+        return;
+      }
+    }
+    tmp11 = cResult[7];
   }
-  const tmp2Result = skuId(tmp3[20]);
-  const stateFromStores = tmp2Result.useStateFromStores(tmp9, tmp11, tmp12);
+  const tmp2Result = skuId(504);
+  const stateFromStores = tmp2Result.useStateFromStores(tmp9, tmp10, tmp11);
   if (cResult[8] !== analyticsLocations) {
-    const items3 = [];
-    const arraySpreadResult = HermesBuiltin.arraySpread(items3, analyticsLocations, 0);
-    items3[arraySpreadResult] = enabled(tmp3[21]).COLLECTIBLES_MOBILE_GIFT_MODAL;
+    class O {
+      constructor() {
+        tmp = enabled;
+        if (tmp) {
+          tmp2 = closure_0;
+          tmp3 = closure_2;
+          obj = closure_0(closure_2[18]);
+          badge = obj.fetchBadge(closure_0(closure_2[19]).BadgeId.GIFTING);
+        }
+        return;
+      }
+    }
+    const arraySpreadResult = HermesBuiltin.arraySpread(tmp15, analyticsLocations, 0);
+    tmp15[arraySpreadResult] = enabled(6865).COLLECTIBLES_MOBILE_GIFT_MODAL;
     cResult[8] = analyticsLocations;
-    cResult[9] = items3;
-    tmp14 = items3;
+    cResult[9] = tmp15;
+    tmp14 = tmp15;
   } else {
-    tmp14 = cResult[9];
+    class O {
+      constructor() {
+        tmp = enabled;
+        if (tmp) {
+          tmp2 = closure_0;
+          tmp3 = closure_2;
+          obj = closure_0(closure_2[18]);
+          badge = obj.fetchBadge(closure_0(closure_2[19]).BadgeId.GIFTING);
+        }
+        return;
+      }
+    }
   }
-  const analyticsLocations2 = enabled(tmp3[22])(tmp14).analyticsLocations;
-  skuId1 = undefined;
-  const tmp19 = enabled;
+  const analyticsLocations2 = enabled(6841)(tmp14).analyticsLocations;
+  const tmp20 = enabled;
   if (stateFromStores != null) {
-    skuId1 = stateFromStores.skuId;
+    class O {
+      constructor() {
+        tmp = enabled;
+        if (tmp) {
+          tmp2 = closure_0;
+          tmp3 = closure_2;
+          obj = closure_0(closure_2[18]);
+          badge = obj.fetchBadge(closure_0(closure_2[19]).BadgeId.GIFTING);
+        }
+        return;
+      }
+    }
   }
-  if (cResult[10] !== skuId1) {
-    class L {
+  dependencyMap = tmp21;
+  if (cResult[10] !== undefined) {
+    class M {
       constructor(arg0) {
-        let resolved;
-        const obj = StringUtils;
-        const tmp3 = skuId1;
-        if (obj.isNullOrEmpty(skuId1)) {
+        tmp = closure_0;
+        tmp2 = closure_2;
+        obj = closure_0(closure_2[23]);
+        tmp3 = skuId;
+        if (obj.isNullOrEmpty(skuId)) {
+          tmp6 = globalThis;
+          _Promise = Promise;
+          flag = false;
           resolved = Promise.resolve(false);
         } else {
-          const tmpResult = CollectiblesActionCreators;
-          resolved = tmpResult.validateCollectiblesRecipient(arg0, tmp3);
+          tmp4 = skuId;
+          tmpResult = tmp(tmp2[24]);
+          resolved = tmpResult.validateCollectiblesRecipient(skuId, tmp3);
         }
         return resolved;
       }
     }
-    cResult[10] = skuId1;
-    cResult[11] = L;
+    cResult[10] = undefined;
+    cResult[11] = M;
   } else {
-    class L {
+    class M {
       constructor(arg0) {
-        let resolved;
-        const obj = StringUtils;
-        const tmp3 = skuId1;
-        if (obj.isNullOrEmpty(skuId1)) {
+        tmp = closure_0;
+        tmp2 = closure_2;
+        obj = closure_0(closure_2[23]);
+        tmp3 = skuId;
+        if (obj.isNullOrEmpty(skuId)) {
+          tmp6 = globalThis;
+          _Promise = Promise;
+          flag = false;
           resolved = Promise.resolve(false);
         } else {
-          const tmpResult = CollectiblesActionCreators;
-          resolved = tmpResult.validateCollectiblesRecipient(arg0, tmp3);
+          tmp4 = skuId;
+          tmpResult = tmp(tmp2[24]);
+          resolved = tmpResult.validateCollectiblesRecipient(skuId, tmp3);
         }
         return resolved;
       }
     }
   }
-  let tmp22 = null;
+  let tmp23 = null;
   if (null != stateFromStores) {
-    let tmp25;
-    class L {
+    let tmp26;
+    class M {
       constructor(arg0) {
-        let resolved;
-        const obj = StringUtils;
-        const tmp3 = skuId1;
-        if (obj.isNullOrEmpty(skuId1)) {
+        tmp = closure_0;
+        tmp2 = closure_2;
+        obj = closure_0(closure_2[23]);
+        tmp3 = skuId;
+        if (obj.isNullOrEmpty(skuId)) {
+          tmp6 = globalThis;
+          _Promise = Promise;
+          flag = false;
           resolved = Promise.resolve(false);
         } else {
-          const tmpResult = CollectiblesActionCreators;
-          resolved = tmpResult.validateCollectiblesRecipient(arg0, tmp3);
+          tmp4 = skuId;
+          tmpResult = tmp(tmp2[24]);
+          resolved = tmpResult.validateCollectiblesRecipient(skuId, tmp3);
         }
         return resolved;
       }
     }
     if (obj4.isCollectibleGiftingSupported()) {
-      class L {
+      class M {
         constructor(arg0) {
-          let resolved;
-          const obj = StringUtils;
-          const tmp3 = skuId1;
-          if (obj.isNullOrEmpty(skuId1)) {
+          tmp = closure_0;
+          tmp2 = closure_2;
+          obj = closure_0(closure_2[23]);
+          tmp3 = skuId;
+          if (obj.isNullOrEmpty(skuId)) {
+            tmp6 = globalThis;
+            _Promise = Promise;
+            flag = false;
             resolved = Promise.resolve(false);
           } else {
-            const tmpResult = CollectiblesActionCreators;
-            resolved = tmpResult.validateCollectiblesRecipient(arg0, tmp3);
+            tmp4 = skuId;
+            tmpResult = tmp(tmp2[24]);
+            resolved = tmpResult.validateCollectiblesRecipient(skuId, tmp3);
           }
           return resolved;
         }
       }
-      const tmp30 = <closure_8 product={stateFromStores} analyticsLocations={analyticsLocations2} lockedRecipientUser={lockedRecipientUser} onGiftModalDismiss={onGiftModalDismiss} giftingOrigin={giftingOrigin} validateRecipient={tmp21} />;
+      const tmp31 = <closure_8 product={stateFromStores} analyticsLocations={analyticsLocations2} lockedRecipientUser={lockedRecipientUser} onGiftModalDismiss={onGiftModalDismiss} giftingOrigin={giftingOrigin} validateRecipient={tmp22} />;
       cResult[15] = analyticsLocations2;
       cResult[16] = giftingOrigin;
       cResult[17] = lockedRecipientUser;
       cResult[18] = onGiftModalDismiss;
       cResult[19] = stateFromStores;
-      cResult[20] = tmp21;
-      cResult[21] = tmp30;
+      cResult[20] = tmp22;
+      cResult[21] = tmp31;
     } else {
-      let tmp23;
-      class L {
+      let tmp24;
+      class M {
         constructor(arg0) {
-          let resolved;
-          const obj = StringUtils;
-          const tmp3 = skuId1;
-          if (obj.isNullOrEmpty(skuId1)) {
+          tmp = closure_0;
+          tmp2 = closure_2;
+          obj = closure_0(closure_2[23]);
+          tmp3 = skuId;
+          if (obj.isNullOrEmpty(skuId)) {
+            tmp6 = globalThis;
+            _Promise = Promise;
+            flag = false;
             resolved = Promise.resolve(false);
           } else {
-            const tmpResult = CollectiblesActionCreators;
-            resolved = tmpResult.validateCollectiblesRecipient(arg0, tmp3);
+            tmp4 = skuId;
+            tmpResult = tmp(tmp2[24]);
+            resolved = tmpResult.validateCollectiblesRecipient(skuId, tmp3);
           }
           return resolved;
         }
       }
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-        class L {
+        class M {
           constructor(arg0) {
-            let resolved;
-            const obj = StringUtils;
-            const tmp3 = skuId1;
-            if (obj.isNullOrEmpty(skuId1)) {
+            tmp = closure_0;
+            tmp2 = closure_2;
+            obj = closure_0(closure_2[23]);
+            tmp3 = skuId;
+            if (obj.isNullOrEmpty(skuId)) {
+              tmp6 = globalThis;
+              _Promise = Promise;
+              flag = false;
               resolved = Promise.resolve(false);
             } else {
-              const tmpResult = CollectiblesActionCreators;
-              resolved = tmpResult.validateCollectiblesRecipient(arg0, tmp3);
+              tmp4 = skuId;
+              tmpResult = tmp(tmp2[24]);
+              resolved = tmpResult.validateCollectiblesRecipient(skuId, tmp3);
             }
             return resolved;
           }
         }
-        const stringResult = obj5.string(skuId(tmp3[25]).t["JCFN/y"]);
+        const stringResult = obj5.string(skuId(1126).t["JCFN/y"]);
         cResult[12] = stringResult;
-        tmp23 = stringResult;
+        tmp24 = stringResult;
       } else {
-        class L {
+        class M {
           constructor(arg0) {
-            let resolved;
-            const obj = StringUtils;
-            const tmp3 = skuId1;
-            if (obj.isNullOrEmpty(skuId1)) {
+            tmp = closure_0;
+            tmp2 = closure_2;
+            obj = closure_0(closure_2[23]);
+            tmp3 = skuId;
+            if (obj.isNullOrEmpty(skuId)) {
+              tmp6 = globalThis;
+              _Promise = Promise;
+              flag = false;
               resolved = Promise.resolve(false);
             } else {
-              const tmpResult = CollectiblesActionCreators;
-              resolved = tmpResult.validateCollectiblesRecipient(arg0, tmp3);
+              tmp4 = skuId;
+              tmpResult = tmp(tmp2[24]);
+              resolved = tmpResult.validateCollectiblesRecipient(skuId, tmp3);
             }
             return resolved;
           }
         }
       }
       if (cResult[13] !== onGiftModalDismiss) {
-        class L {
+        class M {
           constructor(arg0) {
-            let resolved;
-            const obj = StringUtils;
-            const tmp3 = skuId1;
-            if (obj.isNullOrEmpty(skuId1)) {
+            tmp = closure_0;
+            tmp2 = closure_2;
+            obj = closure_0(closure_2[23]);
+            tmp3 = skuId;
+            if (obj.isNullOrEmpty(skuId)) {
+              tmp6 = globalThis;
+              _Promise = Promise;
+              flag = false;
               resolved = Promise.resolve(false);
             } else {
-              const tmpResult = CollectiblesActionCreators;
-              resolved = tmpResult.validateCollectiblesRecipient(arg0, tmp3);
+              tmp4 = skuId;
+              tmpResult = tmp(tmp2[24]);
+              resolved = tmpResult.validateCollectiblesRecipient(skuId, tmp3);
             }
             return resolved;
           }
         }
-        const tmp26 = jsx(tmp19(tmp3[26]), { onDismiss: onGiftModalDismiss, title: tmp23 });
+        const tmp27 = jsx(tmp20(10164), { onDismiss: onGiftModalDismiss, title: tmp24 });
         cResult[13] = onGiftModalDismiss;
-        cResult[14] = tmp26;
-        tmp25 = tmp26;
+        cResult[14] = tmp27;
+        tmp26 = tmp27;
       } else {
-        class L {
+        class M {
           constructor(arg0) {
-            let resolved;
-            const obj = StringUtils;
-            const tmp3 = skuId1;
-            if (obj.isNullOrEmpty(skuId1)) {
+            tmp = closure_0;
+            tmp2 = closure_2;
+            obj = closure_0(closure_2[23]);
+            tmp3 = skuId;
+            if (obj.isNullOrEmpty(skuId)) {
+              tmp6 = globalThis;
+              _Promise = Promise;
+              flag = false;
               resolved = Promise.resolve(false);
             } else {
-              const tmpResult = CollectiblesActionCreators;
-              resolved = tmpResult.validateCollectiblesRecipient(arg0, tmp3);
+              tmp4 = skuId;
+              tmpResult = tmp(tmp2[24]);
+              resolved = tmpResult.validateCollectiblesRecipient(skuId, tmp3);
             }
             return resolved;
           }
         }
       }
     }
-    tmp22 = tmp25;
+    tmp23 = tmp26;
   }
-  return tmp22;
-}) : ((skuId) => {
+  return tmp23;
+}) : (function CollectiblesShopGiftModal(skuId) {
   let analyticsLocations;
   let giftingOrigin;
   let intl;

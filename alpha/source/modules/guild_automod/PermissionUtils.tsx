@@ -1,13 +1,13 @@
-// Module ID: 17038
-// Function ID: 17039
+// Module ID: 17319
+// Function ID: 17320
 // Name: guild_automod/PermissionUtils
-// Dependencies: [2074, 4515, 11487, 1085, 558, 576, 504, 2]
+// Dependencies: [2086, 4707, 11473, 1085, 558, 576, 504, 2]
 // Exports: canCurrentUserManageAutomod, canCurrentUserManageMessageFilters, hasMentionRaidLimitAccess
 
-// Module 17038 (guild_automod/PermissionUtils)
-import Constants2 from "Constants" /* 11487 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+// Module 17319 (guild_automod/PermissionUtils)
+import Constants2 from "Constants" /* 11473 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ let metroRequire;
 const AutomodTriggerType = Constants2.AutomodTriggerType;
 ({ GuildFeatures: hasOwnProperty, Permissions: metroRequire } = Constants);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanCurrentUserManageAutomod(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : ((arg0) => {
+}) : (function useCanCurrentUserManageAutomod(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -77,7 +77,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasMentionRaidLimitAccess(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -121,7 +121,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useHasMentionRaidLimitAccess(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -144,7 +144,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsUndeletableMentionSpamRule(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -190,7 +190,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = items1;
   tmp7 = items1;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useIsUndeletableMentionSpamRule(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -213,7 +213,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsUserProfileRuleEnabled(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -254,7 +254,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useIsUserProfileRuleEnabled(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildStore];

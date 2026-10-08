@@ -1,23 +1,23 @@
-// Module ID: 1402
-// Function ID: 1403
+// Module ID: 1414
+// Function ID: 1415
 // Name: AvatarUtils
-// Dependencies: [1085, 1403, 1405, 1369, 1437, 1478, 1887, 1888, 14, 1972, 1974, 1975, 11, 1373, 2]
-// Exports: getAvatarDecorationURL, getEmojiURL, getGuildMemberAvatarSource, getGuildMemberAvatarURL, getGuildMemberBannerURL, getGuildTemplateIconURL, getNewMemberActionIconURL, getResourceChannelIconURL, getUserBannerURL, getVideoFilterAssetURL, hasAnimatedGuildIcon, isAnimatedIconHash, isAnimatedImageURL, isDataUri, isVideoAssetHash, isVideoURL, makeSource
+// Dependencies: [1085, 1415, 1417, 1381, 1449, 1490, 1899, 1900, 14, 1984, 1986, 1987, 11, 1385, 2]
+// Exports: getAvatarDecorationURL, getEmojiURL, getGuildMemberAvatarSource, getGuildMemberAvatarURL, getGuildMemberBannerURL, getGuildTemplateIconURL, getNewMemberActionIconURL, getResourceChannelIconURL, getUserAvatarURL, getUserBannerURL, getVideoFilterAssetURL, hasAnimatedGuildIcon, isAnimatedIconHash, isAnimatedImageURL, isDataUri, isVideoAssetHash, isVideoURL, makeSource
 
-// Module 1402 (AvatarUtils)
+// Module 1414 (AvatarUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef14 from "module_14" /* 14 */;
-import urlParse from "urlParse" /* 1373 */;
-import AvatarDecorationConstants from "AvatarDecorationConstants" /* 1403 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1405 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1437 */;
-import _modDef1478 from "module_1478" /* 1478 */;
-import NumberUtils from "NumberUtils" /* 1888 */;
-import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1972 */;
-import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 1974 */;
-import AssetRegistryDefault from "AssetRegistry" /* 1975 */;
+import urlParse from "urlParse" /* 1385 */;
+import AvatarDecorationConstants from "AvatarDecorationConstants" /* 1415 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1417 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1449 */;
+import _modDef1490 from "module_1490" /* 1490 */;
+import NumberUtils from "NumberUtils" /* 1900 */;
+import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1984 */;
+import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 1986 */;
+import AssetRegistryDefault from "AssetRegistry" /* 1987 */;
 import Constants from "Constants" /* 1085 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -25,7 +25,7 @@ let set;
 let c3;
 let closure_4;
 let tmp2;
-const ForceSdrEmojisStickersExperiment = tmp2(1887);
+const ForceSdrEmojisStickersExperiment = tmp2(1899);
 function getAvatarURL(endpoint) {
   let format;
   let hash;
@@ -122,7 +122,7 @@ function getAvatarURL(endpoint) {
           obj3.animated = true;
         }
         const _HermesInternal2 = HermesInternal;
-        const obj2 = _modDef1478;
+        const obj2 = _modDef1490;
         return combined + "?" + obj2.stringify(obj3);
       }
     }
@@ -166,12 +166,11 @@ function getDefaultAvatarURL(id, discriminator, isProvisional, size) {
   }
   return first;
 }
-function getUserAvatarURL(user, flag, size, format, SUPPORTS_WEBP) {
-  let avatar;
-  let bot;
+function getUserAvatarURLWithoutFallback(bot, flag, size, format, canUseWebpResult) {
   let discriminator;
-  let first;
   let id;
+  const avatar = bot.avatar;
+  ({ id, discriminator, bot } = bot);
   if (flag === undefined) {
     flag = false;
   }
@@ -183,41 +182,25 @@ function getUserAvatarURL(user, flag, size, format, SUPPORTS_WEBP) {
   if (format === undefined) {
     tmp2 = null;
   }
-  let tmp3 = SUPPORTS_WEBP;
-  if (SUPPORTS_WEBP === undefined) {
+  let tmp3 = canUseWebpResult;
+  if (canUseWebpResult === undefined) {
     tmp3 = unpackModuleId;
   }
-  ({ avatar, id, discriminator, bot } = user);
-  if (flag === undefined) {
-    flag = false;
-  }
-  let tmp4 = tmp;
-  if (tmp === undefined) {
-    tmp4 = closure_4;
-  }
-  if (tmp2 === undefined) {
-    tmp2 = null;
-  }
-  if (tmp3 === undefined) {
-    tmp3 = unpackModuleId;
-  }
-  if (!bot) {
-    const obj = { endpoint: _false.AVATAR, path: "avatars", id, hash: avatar, size: tmp4, canAnimate: flag, format: tmp2, canWebP: tmp3 };
-    first = getAvatarURL(obj);
-  } else {
-    first = utils_AvatarUtils.default.BOT_AVATARS[avatar];
-    if (!first) {
-      if (null == avatar) {
-        if ("0000" === discriminator) {
-          first = DEFAULT_AVATARS[0];
-        }
+  if (bot) {
+    let tmp5;
+    if (null != avatar) {
+      tmp5 = utils_AvatarUtils.default.BOT_AVATARS[avatar];
+    }
+    if (tmp5) {
+      return tmp5;
+    } else if (null == avatar) {
+      if ("0000" === discriminator) {
+        return DEFAULT_AVATARS[0];
       }
     }
   }
-  if (first == null) {
-    first = getDefaultAvatarURL(user.id, user.discriminator, user.isProvisional, tmp);
-  }
-  return first;
+  const obj = { endpoint: _false.AVATAR, path: "avatars", id, hash: avatar, size: tmp, canAnimate: flag, format: tmp2, canWebP: tmp3 };
+  return getAvatarURL(obj);
 }
 function getGuildMemberAvatarURLSimple(size) {
   let avatar;
@@ -283,7 +266,7 @@ function getGuildMemberAvatarURLSimple(size) {
   if (tmp21) {
     obj.animated = true;
   }
-  const obj3 = _modDef1478;
+  const obj3 = _modDef1490;
   return combined + "?" + obj3.stringify(obj);
 }
 function getGuildBannerURL(guild, flag) {
@@ -340,21 +323,15 @@ function getGuildBannerURL(guild, flag) {
       obj.animated = true;
     }
     const _HermesInternal2 = HermesInternal;
-    const obj2 = _modDef1478;
+    const obj2 = _modDef1490;
     return combined + "?" + obj2.stringify(obj);
   }
 }
 function getApplicationIconURL(id) {
   let bot;
-  let bot2;
-  let bot3;
   let botIconFirst;
-  let discriminator;
-  let discriminator2;
   let fallbackAvatar;
   let icon;
-  let id2;
-  let id3;
   ({ icon, size } = id);
   id = id.id;
   if (size === undefined) {
@@ -373,78 +350,40 @@ function getApplicationIconURL(id) {
   if (null != id1) {
     if (null != guildMember) {
       if (null != guildMember.avatar) {
-        const obj2 = { userId: bot.id, guildId: null, avatar: null, canAnimate: false, size };
-        ({ guildId: obj4.guildId, avatar: obj4.avatar } = guildMember);
-        return getGuildMemberAvatarURLSimple(obj2);
+        const obj3 = { userId: bot.id, guildId: null, avatar: null, canAnimate: false, size };
+        ({ guildId: obj2.guildId, avatar: obj2.avatar } = guildMember);
+        return getGuildMemberAvatarURLSimple(obj3);
       }
     }
   }
   if (null != bot) {
     if (botIconFirst) {
-      let first;
-      const avatar = bot.avatar;
-      let tmp2 = size;
-      ({ id: id2, discriminator, bot: bot2 } = bot);
-      if (size === undefined) {
-        tmp2 = closure_4;
-      }
-      if (!bot2) {
-        const obj = { endpoint: _false.AVATAR, path: "avatars", id: id2, hash: avatar, size: tmp2, canAnimate: false, format: null, canWebP: tmp3 };
-        first = getAvatarURL(obj);
-      } else {
-        first = utils_AvatarUtils.default.BOT_AVATARS[avatar];
-        if (!first) {
-          if (null == avatar) {
-            if ("0000" === discriminator) {
-              first = DEFAULT_AVATARS[0];
-            }
-          }
-        }
-      }
-      if (null != first) {
-        return first;
+      const tmp3 = getUserAvatarURLWithoutFallback(bot, false, size);
+      if (null != tmp3) {
+        return tmp3;
       }
     }
   }
   if (null != icon) {
     const isMatch = null != icon && re6.test(icon);
-    let tmp23 = icon;
+    let tmp11 = icon;
     if (!isMatch) {
-      const obj3 = { endpoint: _false.APPLICATION_ICON, path: "app-icons", id, hash: icon, size, canAnimate: false, canWebP: false, keepAspectRatio };
-      tmp23 = getAvatarURL(obj3);
+      const obj = { endpoint: _false.APPLICATION_ICON, path: "app-icons", id, hash: icon, size, canAnimate: false, canWebP: false, keepAspectRatio };
+      tmp11 = getAvatarURL(obj);
     }
-    return tmp23;
+    return tmp11;
   } else {
     if (null != bot) {
-      let first1;
-      const avatar2 = bot.avatar;
-      let tmp10 = size;
-      ({ id: id3, discriminator: discriminator2, bot: bot3 } = bot);
-      if (size === undefined) {
-        tmp10 = closure_4;
-      }
-      if (!bot3) {
-        const obj7 = { endpoint: _false.AVATAR, path: "avatars", id: id3, hash: avatar2, size: tmp10, canAnimate: false, format: null, canWebP: tmp11 };
-        first1 = getAvatarURL(obj7);
-      } else {
-        first1 = utils_AvatarUtils.default.BOT_AVATARS[avatar2];
-        if (!first1) {
-          if (null == avatar2) {
-            if ("0000" === discriminator2) {
-              first1 = DEFAULT_AVATARS[0];
-            }
-          }
-        }
-      }
-      if (null != first1) {
-        return first1;
+      const tmp5 = getUserAvatarURLWithoutFallback(bot, false, size);
+      if (null != tmp5) {
+        return tmp5;
       }
     }
-    let tmp18;
+    let tmp6;
     if (fallbackAvatar) {
-      tmp18 = AssetRegistryDefault;
+      tmp6 = AssetRegistryDefault;
     }
-    return tmp18;
+    return tmp6;
   }
 }
 function getChannelIconURL(arg0) {
@@ -556,6 +495,28 @@ function getEmojiURL(size) {
     return combined1;
   }
 }
+function getUserAvatarURL(user, flag, size, format, SUPPORTS_WEBP) {
+  if (flag === undefined) {
+    flag = false;
+  }
+  let tmp = size;
+  if (size === undefined) {
+    tmp = closure_4;
+  }
+  let tmp2 = format;
+  if (format === undefined) {
+    tmp2 = null;
+  }
+  let tmp3 = SUPPORTS_WEBP;
+  if (SUPPORTS_WEBP === undefined) {
+    tmp3 = unpackModuleId;
+  }
+  let tmp4 = getUserAvatarURLWithoutFallback(user, flag, tmp, tmp2, tmp3);
+  if (tmp4 == null) {
+    tmp4 = getDefaultAvatarURL(user.id, user.discriminator, user.isProvisional, tmp);
+  }
+  return tmp4;
+}
 function getGuildMemberAvatarURL(avatar, flag) {
   let guildId;
   let userId;
@@ -646,7 +607,7 @@ function getUserBannerURL(arg0) {
       obj.animated = true;
     }
     const _HermesInternal2 = HermesInternal;
-    const obj3 = _modDef1478;
+    const obj3 = _modDef1490;
     return combined + "?" + obj3.stringify(obj);
   }
 }
@@ -768,7 +729,7 @@ function getGuildMemberBannerURL(arg0) {
         obj.animated = true;
       }
       const _HermesInternal2 = HermesInternal;
-      const obj3 = _modDef1478;
+      const obj3 = _modDef1490;
       return combined + "?" + obj3.stringify(obj);
     }
   }
@@ -988,13 +949,23 @@ let obj = {
   hasAnimatedGuildIcon,
   isAnimatedIconHash,
   getUserAvatarSource(stateFromStores, flag, size) {
-    const tmp = getUserAvatarURL(stateFromStores, flag, size);
-    let tmp2 = tmp;
-    if (typeof tmp !== "number") {
-      tmp2 = { uri: tmp };
-      const obj = { uri: tmp };
+    if (flag === undefined) {
+      flag = false;
     }
-    return tmp2;
+    let tmp = size;
+    if (size === undefined) {
+      tmp = closure_4;
+    }
+    let tmp2 = getUserAvatarURLWithoutFallback(stateFromStores, flag, tmp, null, unpackModuleId);
+    if (tmp2 == null) {
+      tmp2 = getDefaultAvatarURL(stateFromStores.id, stateFromStores.discriminator, stateFromStores.isProvisional, tmp3);
+    }
+    let tmp6 = tmp2;
+    if (typeof tmp2 !== "number") {
+      tmp6 = { uri: tmp2 };
+      const obj = { uri: tmp2 };
+    }
+    return tmp6;
   },
   getGuildIconURL,
   getGuildSplashURL,

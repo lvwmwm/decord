@@ -1,34 +1,34 @@
-// Module ID: 17832
-// Function ID: 17833
+// Module ID: 18119
+// Function ID: 18120
 // Name: AddMembersActionSheet
-// Dependencies: [32, 19, 17, 17826, 21, 4896, 587, 558, 576, 4600, 5998, 10693, 6478, 4880, 1188, 11, 4596, 1126, 5711, 17831, 8404, 9270, 9275, 6824, 9282, 4860, 5601, 6651, 4892, 6652, 2]
+// Dependencies: [32, 19, 17, 18113, 21, 5090, 587, 558, 576, 4792, 6182, 10281, 6656, 5074, 1200, 11, 4788, 1126, 6101, 18118, 8600, 8601, 8606, 6997, 8613, 5054, 5375, 6828, 5086, 6829, 2]
 
-// Module 17832 (AddMembersActionSheet)
+// Module 18119 (AddMembersActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4596 */;
-import react_native2 from "react-native" /* 4600 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import RegexUtilsDefault from "RegexUtils" /* 4880 */;
-import GuildUtilsDefault from "GuildUtils" /* 5711 */;
-import FormCheckbox from "FormCheckbox" /* 5998 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9282 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10693 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 17826 */;
-import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 17831 */;
+import native from "native" /* 1200 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4788 */;
+import react_native2 from "react-native" /* 4792 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import RegexUtilsDefault from "RegexUtils" /* 5074 */;
+import GuildUtilsDefault from "GuildUtils" /* 6101 */;
+import FormCheckbox from "FormCheckbox" /* 6182 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8613 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10281 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 18113 */;
+import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 18118 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, announceResult, guild, obj1;
+let BottomSheet;
 
 let c9;
 let metroImportAll;
@@ -40,7 +40,7 @@ let obj5;
 let size;
 let react = react_mod;
 const View = react_native.View;
-let MAX_BULK_ROLE_MEMBERS_ADD = GuildSettingsRoleConstants.MAX_BULK_ROLE_MEMBERS_ADD;
+const MAX_BULK_ROLE_MEMBERS_ADD = GuildSettingsRoleConstants.MAX_BULK_ROLE_MEMBERS_ADD;
 ({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, inputContainer: obj3, tagAvatar: size, emptyStateText: obj4, addMembersDescription: obj5 };
@@ -52,7 +52,7 @@ obj4 = { color: nativeDefault.colors.TEXT_DEFAULT };
 obj5 = { marginHorizontal: nativeDefault.space.PX_16 };
 let closure_10 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberRow(arg0) {
   let accessibilityRole;
   let accessibilityState;
   let checked;
@@ -123,7 +123,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = disabled;
   cResult[2] = obj4;
   tmp4 = obj4;
-}) : ((arg0) => {
+}) : (function MemberRow(arg0) {
   let accessibilityRole;
   let accessibilityState;
   let checked;
@@ -143,17 +143,21 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroImportDefault(tmp2, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddMembersBody(guild) {
+  let PX_12;
   let autoFocusSearch;
+  let bottom;
   let closure_4;
-  let closure_6;
-  let count;
   let inActionSheet;
   let maxCount;
   let members;
   let pendingAdditions;
-  let tmp7;
-  let tmp = pendingAdditions;
+  let regExp;
+  let stringResult1;
+  let tmp17;
+  let tmp8;
+  let tmp = guild;
+  let tmp2 = pendingAdditions;
   let obj = guild(pendingAdditions[8]);
   const cResult = obj.c(52);
   guild = guild.guild;
@@ -161,261 +165,432 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   ({ members, pendingAdditions } = guild);
   const setPendingAdditions = guild.setPendingAdditions;
   ({ autoFocusSearch, inActionSheet, maxCount } = guild);
-  let tmp3 = closure_10();
-  react = tmp3;
-  let tmp4 = setPendingAdditions(react.useState(""), 2);
-  const first = tmp4[0];
-  MAX_BULK_ROLE_MEMBERS_ADD = tmp4[1];
-  const tmp6 = !inActionSheet;
-  if (cResult[0] !== tmp6) {
-    let obj2 = { isKeyboardAwareOnAndroid: tmp6 };
-    cResult[0] = tmp6;
-    cResult[1] = obj2;
-    tmp7 = obj2;
+  let tmp4 = closure_10();
+  react = tmp4;
+  let obj2 = react;
+  let tmp5 = setPendingAdditions(react.useState(""), 2);
+  const query = tmp5[0];
+  let closure_6 = tmp5[1];
+  if (cResult[0] !== !inActionSheet) {
+    const obj3 = { isKeyboardAwareOnAndroid: !inActionSheet };
+    cResult[0] = !inActionSheet;
+    cResult[1] = obj3;
+    tmp8 = obj3;
   } else {
-    tmp7 = cResult[1];
+    tmp8 = cResult[1];
   }
-  const insets = role(tmp[12])(tmp7).insets;
-  const tmp8 = role;
+  const insets = role(tmp2[12])(tmp8).insets;
   if (cResult[2] === members) {
-    let arr;
-    if (cResult[3] === first) {
-      arr = cResult[4];
+    let data;
+    if (cResult[3] === query) {
+      data = cResult[4];
     }
     if (cResult[5] === role.id) {
       if (cResult[6] === setPendingAdditions) {
-        let tmp11;
-        if (cResult[7] === tmp3.tagAvatar) {
-          tmp11 = cResult[8];
+        let tmp12;
+        if (cResult[7] === tmp4.tagAvatar) {
+          tmp12 = cResult[8];
         }
-        let closure_9 = tmp11;
+        let closure_9 = tmp12;
         if (cResult[9] === pendingAdditions) {
+          let tmp13;
+          let tmp14;
+          if (cResult[10] === setPendingAdditions) {
+            tmp13 = cResult[11];
+          }
           if (cResult[12] !== guild.id) {
-            class X {
-              constructor(str) {
-                str = str.trim();
-                const formatted = str.toLowerCase();
-                const obj = GuildUtilsDefault;
-                const members = obj.requestMembers(guild.id, formatted, GuildSettingsRolesUtils.ADD_MEMBER_QUERY_LIMIT);
-                closure_6(formatted);
-              }
+            function handleQueryChange(str) {
+              str = str.trim();
+              const formatted = str.toLowerCase();
+              const obj = GuildUtilsDefault;
+              const members = obj.requestMembers(guild.id, formatted, GuildSettingsRolesUtils.ADD_MEMBER_QUERY_LIMIT);
+              closure_6(formatted);
             }
             cResult[12] = guild.id;
-            class L {
-              constructor(arg0) {
-                tmp = closure_2;
-                obj = closure_1(closure_2[15]);
-                tmp2 = obj.keys(pendingAdditions)[guild];
-                closure_0 = tmp2;
-                tmp3 = pendingAdditions[tmp2];
-                if (null != tmp3) {
-                  tmp4 = setPendingAdditions;
-                  tmp5 = setPendingAdditions((arg0) => {
-                    const obj = {};
-                    const merged = Object.assign(arg0);
-                    delete obj[closure_0];
-                    return obj;
-                  });
-                  tmp6 = closure_0;
-                  AccessibilityAnnouncer = closure_0(tmp[16]).AccessibilityAnnouncer;
-                  announce = AccessibilityAnnouncer.announce;
-                  intl = closure_0(tmp[17]).intl;
-                  obj1 = { text: null };
-                  obj1.text = tmp3.display.text;
-                  str = "polite";
-                  announceResult = announce(intl.formatToPlainString(closure_0(tmp[17]).t.srlxB8, obj1), "polite");
-                }
-                return;
-              }
-            }
-            cResult[13] = X;
+            cResult[13] = handleQueryChange;
+            tmp14 = handleQueryChange;
           } else {
-            class X {
-              constructor(str) {
-                str = str.trim();
-                const formatted = str.toLowerCase();
-                const obj = GuildUtilsDefault;
-                const members = obj.requestMembers(guild.id, formatted, GuildSettingsRolesUtils.ADD_MEMBER_QUERY_LIMIT);
-                closure_6(formatted);
-              }
-            }
+            tmp14 = cResult[13];
           }
           if (cResult[14] === maxCount) {
-            class X {
-              constructor(str) {
-                str = str.trim();
-                const formatted = str.toLowerCase();
-                const obj = GuildUtilsDefault;
-                const members = obj.requestMembers(guild.id, formatted, GuildSettingsRolesUtils.ADD_MEMBER_QUERY_LIMIT);
-                closure_6(formatted);
-              }
+            let tmp15;
+            if (cResult[15] === pendingAdditions) {
+              tmp15 = cResult[16];
             }
-            closure_10 = tmp14;
-            if (cResult[17] === arr.length) {
-              class X {
-                constructor(str) {
-                  str = str.trim();
-                  const formatted = str.toLowerCase();
-                  const obj = GuildUtilsDefault;
-                  const members = obj.requestMembers(guild.id, formatted, GuildSettingsRolesUtils.ADD_MEMBER_QUERY_LIMIT);
-                  closure_6(formatted);
+            closure_10 = tmp15;
+            if (cResult[17] === data.length) {
+              if (cResult[18] === guild.id) {
+                if (cResult[19] === tmp15) {
+                  if (cResult[20] === pendingAdditions) {
+                    if (cResult[21] === role.id) {
+                      let tmp19;
+                      if (cResult[22] === tmp12) {
+                        tmp19 = cResult[23];
+                      }
+                      const length = data.length;
+                      if (cResult[24] === query) {
+                        let tmp20;
+                        let tmp21;
+                        let tmp25;
+                        let tmp27;
+                        if (cResult[25] === length) {
+                          tmp20 = cResult[26];
+                          tmp21 = cResult[27];
+                        }
+                        const effect = obj2.useEffect(tmp21, tmp20);
+                        const tmpResult = tmp(tmp2[20]);
+                        const tmp24 = inActionSheet ? tmpResult.BottomSheetFlashList : tmpResult.FlashList;
+                        class K {
+                          constructor() {
+                            if ("" !== first) {
+                              const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                              const announce = AccessibilityAnnouncer.announce;
+                              const intl = intl4.intl;
+                              const obj = { count: length };
+                              announce(intl.formatToPlainString(intl4.t.ZGVL3g, obj), "polite");
+                            }
+                          }
+                        }
+                        const _Symbol = Symbol;
+                        let str = "react.memo_cache_sentinel";
+                        const inputContainer = tmp4.inputContainer;
+                        if (cResult[28] === Symbol.for("react.memo_cache_sentinel")) {
+                          let intl = tmp(tmp2[17]).intl;
+                          const stringResult = intl.string(tmp(tmp2[17]).t.vMiCaQ);
+                          class K {
+                            constructor() {
+                              if ("" !== first) {
+                                const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                                const announce = AccessibilityAnnouncer.announce;
+                                const intl = intl4.intl;
+                                const obj = { count: length };
+                                announce(intl.formatToPlainString(intl4.t.ZGVL3g, obj), "polite");
+                              }
+                            }
+                          }
+                          tmp25 = stringResult;
+                        } else {
+                          tmp25 = cResult[28];
+                        }
+                        if (cResult[29] !== pendingAdditions) {
+                          const _Object2 = Object;
+                          const values = Object.values(pendingAdditions);
+                          const mapped = values.map((display) => {
+                            const obj = { id: display.row.id };
+                            const merged = Object.assign(display.display);
+                            return obj;
+                          });
+                          class K {
+                            constructor() {
+                              if ("" !== first) {
+                                const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                                const announce = AccessibilityAnnouncer.announce;
+                                const intl = intl4.intl;
+                                const obj = { count: length };
+                                announce(intl.formatToPlainString(intl4.t.ZGVL3g, obj), "polite");
+                              }
+                            }
+                          }
+                          cResult[30] = mapped;
+                          tmp27 = mapped;
+                        } else {
+                          tmp27 = cResult[30];
+                        }
+                        if (cResult[31] === autoFocusSearch) {
+                          if (cResult[32] === tmp14) {
+                            if (cResult[33] === tmp13) {
+                              if (cResult[34] === inActionSheet) {
+                                let tmp29;
+                                if (cResult[35] === tmp27) {
+                                  tmp29 = cResult[36];
+                                }
+                                if (cResult[37] === tmp4.inputContainer) {
+                                  let tmp32;
+                                  let tmp46Result;
+                                  if (cResult[38] === tmp29) {
+                                    tmp32 = cResult[39];
+                                  }
+                                  if (cResult[40] === tmp24) {
+                                    if (cResult[41] === data) {
+                                      if (cResult[42] === inActionSheet) {
+                                        if (cResult[43] === insets) {
+                                          if (cResult[44] === pendingAdditions) {
+                                            if (cResult[45] === query) {
+                                              if (cResult[46] === tmp19) {
+                                                let tmp37;
+                                                if (cResult[47] === tmp4.emptyStateText) {
+                                                  tmp37 = cResult[48];
+                                                }
+                                                if (cResult[49] === tmp32) {
+                                                  let tmp41;
+                                                  if (cResult[50] === tmp37) {
+                                                    tmp41 = cResult[51];
+                                                  }
+                                                  return tmp41;
+                                                }
+                                                class K {
+                                                  constructor() {
+                                                    if ("" !== first) {
+                                                      const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                                                      const announce = AccessibilityAnnouncer.announce;
+                                                      const intl = intl4.intl;
+                                                      const obj = { count: length };
+                                                      announce(intl.formatToPlainString(intl4.t.ZGVL3g, obj), "polite");
+                                                    }
+                                                  }
+                                                }
+                                                const items = [tmp32, tmp37];
+                                                tmp44[0] = items;
+                                                const tmp45 = closure_9(data, tmp44);
+                                                cResult[49] = tmp32;
+                                                cResult[50] = tmp37;
+                                                cResult[51] = tmp45;
+                                                tmp41 = tmp45;
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  if (0 === data.length) {
+                                    let obj4 = { Illustration: tmp(tmp2[22]).NoResultsAlt, bodyStyle: null, body: stringResult1 };
+                                    const EmptyState = tmp(tmp2[14]).EmptyState;
+                                    const tmp39 = regExp;
+                                    class K {
+                                      constructor() {
+                                        if ("" !== first) {
+                                          const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                                          const announce = AccessibilityAnnouncer.announce;
+                                          const intl = intl4.intl;
+                                          const obj = { count: length };
+                                          announce(intl.formatToPlainString(intl4.t.ZGVL3g, obj), "polite");
+                                        }
+                                      }
+                                    }
+                                    if ("" !== query) {
+                                      const format = tmp(tmp2[17]).intl.format;
+                                      class K {
+                                        constructor() {
+                                          if ("" !== first) {
+                                            const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                                            const announce = AccessibilityAnnouncer.announce;
+                                            const intl = intl4.intl;
+                                            const obj = { count: length };
+                                            announce(intl.formatToPlainString(intl4.t.ZGVL3g, obj), "polite");
+                                          }
+                                        }
+                                      }
+                                    } else {
+                                      const intl2 = tmp(tmp2[17]).intl;
+                                      stringResult1 = intl2.string(tmp(tmp2[17]).t.oB9grQ);
+                                    }
+                                    tmp46Result = tmp39(EmptyState, obj4);
+                                  } else {
+                                    const obj6 = { paddingHorizontal: role(tmp2[6]).space.PX_16, paddingTop: role(tmp2[6]).space.PX_12, paddingBottom: PX_12 + bottom };
+                                    const tmp46 = regExp;
+                                    class K {
+                                      constructor() {
+                                        if ("" !== first) {
+                                          const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                                          const announce = AccessibilityAnnouncer.announce;
+                                          const intl = intl4.intl;
+                                          const obj = { count: length };
+                                          announce(intl.formatToPlainString(intl4.t.ZGVL3g, obj), "polite");
+                                        }
+                                      }
+                                    }
+                                    PX_12 = tmp9(tmp2[6]).space.PX_12;
+                                    if (inActionSheet) {
+                                      bottom = insets.bottom;
+                                    }
+                                    let obj7 = { contentContainerStyle: obj6, renderItem: tmp19, data, extraData: pendingAdditions, keyboardShouldPersistTaps: "always" };
+                                    tmp46Result = tmp46(tmp24, obj7);
+                                  }
+                                  class K {
+                                    constructor() {
+                                      if ("" !== first) {
+                                        const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                                        const announce = AccessibilityAnnouncer.announce;
+                                        const intl = intl4.intl;
+                                        const obj = { count: length };
+                                        announce(intl.formatToPlainString(intl4.t.ZGVL3g, obj), "polite");
+                                      }
+                                    }
+                                  }
+                                  cResult[40] = tmp24;
+                                  cResult[41] = data;
+                                  cResult[42] = inActionSheet;
+                                  cResult[43] = insets;
+                                  cResult[44] = pendingAdditions;
+                                  cResult[45] = query;
+                                  cResult[46] = tmp19;
+                                  cResult[47] = tmp4.emptyStateText;
+                                  cResult[48] = tmp46Result;
+                                  tmp37 = tmp46Result;
+                                }
+                                class K {
+                                  constructor() {
+                                    if ("" !== first) {
+                                      const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                                      const announce = AccessibilityAnnouncer.announce;
+                                      const intl = intl4.intl;
+                                      const obj = { count: length };
+                                      announce(intl.formatToPlainString(intl4.t.ZGVL3g, obj), "polite");
+                                    }
+                                  }
+                                }
+                                tmp35[0] = inputContainer;
+                                tmp35[1] = tmp29;
+                                const tmp36 = regExp(query, tmp35);
+                                cResult[37] = tmp4.inputContainer;
+                                cResult[38] = tmp29;
+                                cResult[39] = tmp36;
+                                tmp32 = tmp36;
+                              }
+                            }
+                          }
+                        }
+                        const obj8 = { placeholder: tmp25, tags: tmp27, onChangeText: tmp14, onRemove: tmp13, autoFocus: autoFocusSearch, inActionSheet };
+                        const tmp31 = regExp(role(tmp2[21]), obj8);
+                        cResult[31] = autoFocusSearch;
+                        cResult[32] = tmp14;
+                        cResult[33] = tmp13;
+                        cResult[34] = inActionSheet;
+                        cResult[35] = tmp27;
+                        cResult[36] = tmp31;
+                        tmp29 = tmp31;
+                      }
+                      class K {
+                        constructor() {
+                          if ("" !== first) {
+                            const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                            const announce = AccessibilityAnnouncer.announce;
+                            const intl = intl4.intl;
+                            const obj = { count: length };
+                            announce(intl.formatToPlainString(intl4.t.ZGVL3g, obj), "polite");
+                          }
+                        }
+                      }
+                      const items1 = [length, query];
+                      cResult[24] = query;
+                      cResult[25] = length;
+                      cResult[26] = items1;
+                      cResult[27] = K;
+                      tmp21 = K;
+                      tmp20 = items1;
+                    }
+                  }
                 }
               }
             }
-            class L {
-              constructor(arg0) {
-                tmp = closure_2;
-                obj = closure_1(closure_2[15]);
-                tmp2 = obj.keys(pendingAdditions)[guild];
-                closure_0 = tmp2;
-                tmp3 = pendingAdditions[tmp2];
-                if (null != tmp3) {
-                  tmp4 = setPendingAdditions;
-                  tmp5 = setPendingAdditions((arg0) => {
-                    const obj = {};
-                    const merged = Object.assign(arg0);
-                    delete obj[closure_0];
-                    return obj;
-                  });
-                  tmp6 = closure_0;
-                  AccessibilityAnnouncer = closure_0(tmp[16]).AccessibilityAnnouncer;
-                  announce = AccessibilityAnnouncer.announce;
-                  intl = closure_0(tmp[17]).intl;
-                  obj1 = { text: null };
-                  obj1.text = tmp3.display.text;
-                  str = "polite";
-                  announceResult = announce(intl.formatToPlainString(closure_0(tmp[17]).t.srlxB8, obj1), "polite");
-                }
-                return;
+            function renderItem(item) {
+              let tmp5;
+              item = item.item;
+              const index = item.index;
+              const roles = item.roles;
+              let hasItem = roles.includes(role.id);
+              const obj = {
+                start: 0 === index,
+                end: index === arr.length - 1,
+                guildId: item.id,
+                userId: item.id,
+                onPress() {
+                  return closure_9(item);
+                },
+                disabled: tmp5,
+                checked: hasItem
+              };
+              tmp5 = hasItem;
+              const tmp3 = regExp;
+              const tmp4 = length;
+              if (!hasItem) {
+                tmp5 = closure_10 && !(item.id in pendingAdditions);
               }
+              if (!hasItem) {
+                hasItem = tmp2;
+              }
+              return tmp3(tmp4, obj);
             }
-            cResult[17] = arr.length;
+            cResult[17] = data.length;
             cResult[18] = guild.id;
-            cResult[19] = tmp14;
+            cResult[19] = tmp15;
             cResult[20] = pendingAdditions;
             cResult[21] = role.id;
-            cResult[22] = tmp11;
-            cResult[23] = tmp17;
+            cResult[22] = tmp12;
+            cResult[23] = renderItem;
+            tmp19 = renderItem;
           }
-          class L {
-            constructor(arg0) {
-              tmp = closure_2;
-              obj = closure_1(closure_2[15]);
-              tmp2 = obj.keys(pendingAdditions)[guild];
-              closure_0 = tmp2;
-              tmp3 = pendingAdditions[tmp2];
-              if (null != tmp3) {
-                tmp4 = setPendingAdditions;
-                tmp5 = setPendingAdditions((arg0) => {
-                  const obj = {};
-                  const merged = Object.assign(arg0);
-                  delete obj[closure_0];
-                  return obj;
-                });
-                tmp6 = closure_0;
-                AccessibilityAnnouncer = closure_0(tmp[16]).AccessibilityAnnouncer;
-                announce = AccessibilityAnnouncer.announce;
-                intl = closure_0(tmp[17]).intl;
-                obj1 = { text: null };
-                obj1.text = tmp3.display.text;
-                str = "polite";
-                announceResult = announce(intl.formatToPlainString(closure_0(tmp[17]).t.srlxB8, obj1), "polite");
-              }
-              return;
-            }
-          }
-          let tmp15 = null != maxCount;
-          if (tmp15) {
-            class X {
-              constructor(str) {
-                str = str.trim();
-                const formatted = str.toLowerCase();
-                const obj = GuildUtilsDefault;
-                const members = obj.requestMembers(guild.id, formatted, GuildSettingsRolesUtils.ADD_MEMBER_QUERY_LIMIT);
-                closure_6(formatted);
-              }
-            }
+          if (tmp17) {
             const _Object = Object;
-            tmp15 = Object.keys(pendingAdditions).length >= maxCount;
+            tmp17 = Object.keys(pendingAdditions).length >= maxCount;
           }
           cResult[14] = maxCount;
           cResult[15] = pendingAdditions;
-          cResult[16] = tmp15;
+          cResult[16] = tmp17;
+          tmp15 = tmp17;
         }
-        class L {
-          constructor(arg0) {
-            tmp = closure_2;
-            obj = closure_1(closure_2[15]);
-            tmp2 = obj.keys(pendingAdditions)[guild];
-            closure_0 = tmp2;
-            tmp3 = pendingAdditions[tmp2];
-            if (null != tmp3) {
-              tmp4 = setPendingAdditions;
-              tmp5 = setPendingAdditions((arg0) => {
-                const obj = {};
-                const merged = Object.assign(arg0);
-                delete obj[closure_0];
-                return obj;
-              });
-              tmp6 = closure_0;
-              AccessibilityAnnouncer = closure_0(tmp[16]).AccessibilityAnnouncer;
-              announce = AccessibilityAnnouncer.announce;
-              intl = closure_0(tmp[17]).intl;
-              obj1 = { text: null };
-              obj1.text = tmp3.display.text;
-              str = "polite";
-              announceResult = announce(intl.formatToPlainString(closure_0(tmp[17]).t.srlxB8, obj1), "polite");
-            }
-            return;
+        function handleRemoveTag(arg0) {
+          let obj = SnowflakeUtilsDefault;
+          const tmp2 = obj.keys(pendingAdditions)[arg0];
+          let closure_0 = tmp2;
+          if (null != pendingAdditions[tmp2]) {
+            setPendingAdditions((arg0) => {
+              const obj = {};
+              const merged = Object.assign(arg0);
+              delete obj[closure_0];
+              return obj;
+            });
+            const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+            const announce = AccessibilityAnnouncer.announce;
+            const intl = intl4.intl;
+            const obj2 = { text: pendingAdditions[tmp2].display.text };
+            announce(intl.formatToPlainString(intl4.t.srlxB8, obj2), "polite");
           }
         }
         cResult[9] = pendingAdditions;
         cResult[10] = setPendingAdditions;
-        cResult[11] = L;
+        cResult[11] = handleRemoveTag;
+        tmp13 = handleRemoveTag;
       }
     }
-    class F {
-      constructor(arg0) {
-        closure_0 = guild;
-        roles = guild.roles;
-        if (!roles.includes(role.id)) {
-          tmp = setPendingAdditions;
-          tmp2 = setPendingAdditions((arg0) => {
-            let obj4;
-            const obj = {};
-            const merged = Object.assign(arg0);
-            if (roles.id in obj) {
-              delete obj[roles.id];
-            } else {
-              const obj2 = { text: roles.name, icon: metroImportDefault(native.Avatar, obj4) };
-              obj4 = { source: roles.avatarSource, avatarStyle: null, style: null };
-              ({ tagAvatar: obj3.avatarStyle, tagAvatar: obj3.style } = closure_4);
-              const obj7 = { display: obj2, row: roles };
-              obj[roles.id] = obj7;
-            }
-            return obj;
-          });
-        }
-        return;
+    function togglePendingAddition(roles) {
+      roles = roles.roles;
+      if (!roles.includes(role.id)) {
+        setPendingAdditions((arg0) => {
+          let obj4;
+          const obj = {};
+          const merged = Object.assign(arg0);
+          if (roles.id in obj) {
+            delete obj[roles.id];
+          } else {
+            const obj2 = { text: roles.name, icon: metroImportDefault(native.Avatar, obj4) };
+            obj4 = { source: roles.avatarSource, avatarStyle: null, style: null };
+            ({ tagAvatar: obj3.avatarStyle, tagAvatar: obj3.style } = closure_4);
+            const obj7 = { display: obj2, row: roles };
+            obj[roles.id] = obj7;
+          }
+          return obj;
+        });
       }
     }
     cResult[5] = role.id;
     cResult[6] = setPendingAdditions;
-    cResult[7] = tmp3.tagAvatar;
-    cResult[8] = F;
-    tmp11 = F;
+    cResult[7] = tmp4.tagAvatar;
+    cResult[8] = togglePendingAddition;
+    tmp12 = togglePendingAddition;
   }
-  const tmp8Result = tmp8(tmp[13]);
-  const regExp = new RegExp(tmp8Result.escape(first), "i");
+  const tmp9Result = role(tmp2[13]);
+  regExp = new RegExp(tmp9Result.escape(query), "i");
   const found = members.filter((name) => {
     const tmp = regExp.test(name.name) || regExp.test(name.userTag);
     return tmp;
   });
   cResult[2] = members;
-  cResult[3] = first;
+  cResult[3] = query;
   cResult[4] = found;
-  arr = found;
-}) : ((pendingAdditions) => {
+  data = found;
+}) : (function AddMembersBody(pendingAdditions) {
   let FlashList;
   let PX_12;
   let formatResult;
@@ -490,14 +665,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       const merged = Object.assign(row.display);
       return obj;
     }),
-    onChangeText(str) {
+    onChangeText: function handleQueryChange(str) {
       str = str.trim();
       const formatted = str.toLowerCase();
       const obj = GuildUtilsDefault;
       members = obj.requestMembers(require.id, formatted, GuildSettingsRolesUtils.ADD_MEMBER_QUERY_LIMIT);
       closure_7(formatted);
     },
-    onRemove(arg0) {
+    onRemove: function handleRemoveTag(arg0) {
       let obj = SnowflakeUtilsDefault;
       const tmp2 = obj.keys(pendingAdditions)[arg0];
       let closure_0 = tmp2;
@@ -604,7 +779,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
 });
 let closure_12 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddMembersActionSheet(guild) {
   let addMembersDescription;
   let container;
   let first;
@@ -673,18 +848,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
             const _Object3 = Object;
             tmp17 = Object.keys(first1).length > MAX_BULK_ROLE_MEMBERS_ADD;
           }
-          class T {
-            constructor() {
-              const bulkAddMemberRoles = GuildSettingsActionCreatorsDefault.bulkAddMemberRoles;
-              const id = guild.id;
-              const id2 = role.id;
-              GuildSettingsActionCreatorsDefault;
-              const obj = SnowflakeUtilsDefault;
-              bulkAddMemberRoles(id, id2, obj.keys(first1));
-              const obj2 = ActionSheetActionCreatorsDefault;
-              obj2.hideActionSheet();
-            }
-          }
+          cResult[12] = first1;
           cResult[13] = tmp17;
           tmp16 = tmp17;
         } else {
@@ -693,52 +857,19 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         const _Symbol = Symbol;
         if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
           const intl = tmp(tmp2[17]).intl;
-          cResult[14] = intl.string(tmp(first1[17]).t.ZYOK46);
-          intl.string(tmp(first1[17]).t.ZYOK46);
-          class T {
-            constructor() {
-              const bulkAddMemberRoles = GuildSettingsActionCreatorsDefault.bulkAddMemberRoles;
-              const id = guild.id;
-              const id2 = role.id;
-              GuildSettingsActionCreatorsDefault;
-              const obj = SnowflakeUtilsDefault;
-              bulkAddMemberRoles(id, id2, obj.keys(first1));
-              const obj2 = ActionSheetActionCreatorsDefault;
-              obj2.hideActionSheet();
-            }
-          }
+          const stringResult = intl.string(tmp(first1[17]).t.ZYOK46);
+          cResult[14] = stringResult;
+          tmp19 = stringResult;
         } else {
           tmp19 = cResult[14];
         }
-        class T {
-          constructor() {
-            const bulkAddMemberRoles = GuildSettingsActionCreatorsDefault.bulkAddMemberRoles;
-            const id = guild.id;
-            const id2 = role.id;
-            GuildSettingsActionCreatorsDefault;
-            const obj = SnowflakeUtilsDefault;
-            bulkAddMemberRoles(id, id2, obj.keys(first1));
-            const obj2 = ActionSheetActionCreatorsDefault;
-            obj2.hideActionSheet();
-          }
-        }
+        const _Symbol2 = Symbol;
         const name = role.name;
         if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
           const intl2 = tmp(tmp2[17]).intl;
-          cResult[15] = intl2.string(tmp(first1[17]).t.OYkgVk);
-          intl2.string(tmp(first1[17]).t.OYkgVk);
-          class T {
-            constructor() {
-              const bulkAddMemberRoles = GuildSettingsActionCreatorsDefault.bulkAddMemberRoles;
-              const id = guild.id;
-              const id2 = role.id;
-              GuildSettingsActionCreatorsDefault;
-              const obj = SnowflakeUtilsDefault;
-              bulkAddMemberRoles(id, id2, obj.keys(first1));
-              const obj2 = ActionSheetActionCreatorsDefault;
-              obj2.hideActionSheet();
-            }
-          }
+          const stringResult1 = intl2.string(tmp(first1[17]).t.OYkgVk);
+          cResult[15] = stringResult1;
+          tmp21 = stringResult1;
         } else {
           tmp21 = cResult[15];
         }
@@ -754,139 +885,89 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
             }
             if (cResult[20] === role.name) {
               let tmp26;
-              let tmp31;
+              let tmp29;
+              let tmp32;
               if (cResult[21] === tmp23) {
                 tmp26 = cResult[22];
               }
-              const _Symbol2 = Symbol;
+              const _Symbol3 = Symbol;
               ({ container, addMembersDescription } = tmp4);
-              class T {
-                constructor() {
-                  const bulkAddMemberRoles = GuildSettingsActionCreatorsDefault.bulkAddMemberRoles;
-                  const id = guild.id;
-                  const id2 = role.id;
-                  GuildSettingsActionCreatorsDefault;
-                  const obj = SnowflakeUtilsDefault;
-                  bulkAddMemberRoles(id, id2, obj.keys(first1));
-                  const obj2 = ActionSheetActionCreatorsDefault;
-                  obj2.hideActionSheet();
-                }
+              if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
+                const intl3 = tmp(tmp2[17]).intl;
+                const obj3 = { numMembers: MAX_BULK_ROLE_MEMBERS_ADD };
+                const formatResult = intl3.format(tmp(first1[17]).t["3OxP4q"], obj3);
+                cResult[23] = formatResult;
+                tmp29 = formatResult;
+              } else {
+                tmp29 = cResult[23];
               }
               if (cResult[24] !== tmp4.addMembersDescription) {
-                const obj3 = { variant: "text-sm/normal", style: addMembersDescription, children: tmp30 };
-                const tmp33 = closure_7(tmp(first1[28]).Text, obj3);
-                class T {
-                  constructor() {
-                    const bulkAddMemberRoles = GuildSettingsActionCreatorsDefault.bulkAddMemberRoles;
-                    const id = guild.id;
-                    const id2 = role.id;
-                    GuildSettingsActionCreatorsDefault;
-                    const obj = SnowflakeUtilsDefault;
-                    bulkAddMemberRoles(id, id2, obj.keys(first1));
-                    const obj2 = ActionSheetActionCreatorsDefault;
-                    obj2.hideActionSheet();
-                  }
-                }
+                const obj4 = { variant: "text-sm/normal", style: addMembersDescription, children: tmp29 };
+                const tmp34 = closure_7(tmp(first1[28]).Text, obj4);
                 cResult[24] = tmp4.addMembersDescription;
-                cResult[25] = tmp33;
-                tmp31 = tmp33;
+                cResult[25] = tmp34;
+                tmp32 = tmp34;
               } else {
-                tmp31 = cResult[25];
+                tmp32 = cResult[25];
               }
               if (cResult[26] === guild) {
                 if (cResult[27] === guildMembers) {
                   if (cResult[28] === first1) {
-                    let tmp34;
+                    let tmp35;
                     if (cResult[29] === role) {
-                      tmp34 = cResult[30];
+                      tmp35 = cResult[30];
                     }
                     if (cResult[31] === tmp4.container) {
-                      if (cResult[32] === tmp31) {
-                        let tmp39;
-                        if (cResult[33] === tmp34) {
-                          tmp39 = cResult[34];
+                      if (cResult[32] === tmp32) {
+                        let tmp40;
+                        if (cResult[33] === tmp35) {
+                          tmp40 = cResult[34];
                         }
                         if (cResult[35] === tmp26) {
-                          let tmp43;
-                          if (cResult[36] === tmp39) {
-                            tmp43 = cResult[37];
+                          let tmp44;
+                          if (cResult[36] === tmp40) {
+                            tmp44 = cResult[37];
                           }
-                          return tmp43;
+                          return tmp44;
                         }
-                        const obj4 = { scrollable: true, header: tmp26, startExpanded: true, children: null };
-                        class T {
-                          constructor() {
-                            const bulkAddMemberRoles = GuildSettingsActionCreatorsDefault.bulkAddMemberRoles;
-                            const id = guild.id;
-                            const id2 = role.id;
-                            GuildSettingsActionCreatorsDefault;
-                            const obj = SnowflakeUtilsDefault;
-                            bulkAddMemberRoles(id, id2, obj.keys(first1));
-                            const obj2 = ActionSheetActionCreatorsDefault;
-                            obj2.hideActionSheet();
-                          }
-                        }
-                        const tmp45 = closure_7(tmp(first1[29]).BottomSheet, obj4);
+                        const obj5 = { scrollable: true, header: tmp26, startExpanded: true, children: tmp40 };
+                        const tmp46 = closure_7(tmp(first1[29]).BottomSheet, obj5);
                         cResult[35] = tmp26;
-                        cResult[36] = tmp39;
-                        cResult[37] = tmp45;
-                        tmp43 = tmp45;
+                        cResult[36] = tmp40;
+                        cResult[37] = tmp46;
+                        tmp44 = tmp46;
                       }
                     }
-                    const obj5 = { style: null, children: items };
-                    class T {
-                      constructor() {
-                        const bulkAddMemberRoles = GuildSettingsActionCreatorsDefault.bulkAddMemberRoles;
-                        const id = guild.id;
-                        const id2 = role.id;
-                        GuildSettingsActionCreatorsDefault;
-                        const obj = SnowflakeUtilsDefault;
-                        bulkAddMemberRoles(id, id2, obj.keys(first1));
-                        const obj2 = ActionSheetActionCreatorsDefault;
-                        obj2.hideActionSheet();
-                      }
-                    }
-                    items = [tmp31, tmp34];
-                    const tmp42 = closure_9(View, obj5);
+                    const obj6 = { style: container, children: items };
+                    items = [tmp32, tmp35];
+                    const tmp43 = closure_9(View, obj6);
                     cResult[31] = tmp4.container;
-                    cResult[32] = tmp31;
-                    cResult[33] = tmp34;
-                    cResult[34] = tmp42;
-                    tmp39 = tmp42;
+                    cResult[32] = tmp32;
+                    cResult[33] = tmp35;
+                    cResult[34] = tmp43;
+                    tmp40 = tmp43;
                   }
                 }
               }
-              const obj6 = { guild, role, members: guildMembers, pendingAdditions: first1, setPendingAdditions: tmp8, autoFocusSearch: true, maxCount: MAX_BULK_ROLE_MEMBERS_ADD, inActionSheet: true };
-              const tmp38 = closure_7(closure_12, obj6);
+              const obj7 = { guild, role, members: guildMembers, pendingAdditions: first1, setPendingAdditions: tmp8, autoFocusSearch: true, maxCount: MAX_BULK_ROLE_MEMBERS_ADD, inActionSheet: true };
+              const tmp39 = closure_7(closure_12, obj7);
               cResult[26] = guild;
               cResult[27] = guildMembers;
               cResult[28] = first1;
               cResult[29] = role;
-              cResult[30] = tmp38;
-              tmp34 = tmp38;
+              cResult[30] = tmp39;
+              tmp35 = tmp39;
             }
-            const obj7 = { title: tmp19, subtitle: null, trailing: tmp23 };
-            class T {
-              constructor() {
-                const bulkAddMemberRoles = GuildSettingsActionCreatorsDefault.bulkAddMemberRoles;
-                const id = guild.id;
-                const id2 = role.id;
-                GuildSettingsActionCreatorsDefault;
-                const obj = SnowflakeUtilsDefault;
-                bulkAddMemberRoles(id, id2, obj.keys(first1));
-                const obj2 = ActionSheetActionCreatorsDefault;
-                obj2.hideActionSheet();
-              }
-            }
-            const tmp28 = closure_7(tmp(first1[27]).BottomSheetTitleHeader, obj7);
+            const obj8 = { title: tmp19, subtitle: name, trailing: tmp23 };
+            const tmp28 = closure_7(tmp(first1[27]).BottomSheetTitleHeader, obj8);
             cResult[20] = role.name;
             cResult[21] = tmp23;
             cResult[22] = tmp28;
             tmp26 = tmp28;
           }
         }
-        const obj8 = { size: "sm", text: tmp21, onPress: tmp15, variant: str2, disabled: tmp16 };
-        const tmp25 = closure_7(tmp(first1[26]).Button, obj8);
+        const obj9 = { size: "sm", text: tmp21, onPress: tmp15, variant: str2, disabled: tmp16 };
+        const tmp25 = closure_7(tmp(first1[26]).Button, obj9);
         cResult[16] = tmp15;
         cResult[17] = tmp16;
         cResult[18] = str2;
@@ -894,31 +975,29 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         tmp23 = tmp25;
       }
     }
-    class T {
-      constructor() {
-        const bulkAddMemberRoles = GuildSettingsActionCreatorsDefault.bulkAddMemberRoles;
-        const id = guild.id;
-        const id2 = role.id;
-        GuildSettingsActionCreatorsDefault;
-        const obj = SnowflakeUtilsDefault;
-        bulkAddMemberRoles(id, id2, obj.keys(first1));
-        const obj2 = ActionSheetActionCreatorsDefault;
-        obj2.hideActionSheet();
-      }
+    function handleAddPressed() {
+      const bulkAddMemberRoles = GuildSettingsActionCreatorsDefault.bulkAddMemberRoles;
+      const id = guild.id;
+      const id2 = role.id;
+      GuildSettingsActionCreatorsDefault;
+      const obj = SnowflakeUtilsDefault;
+      bulkAddMemberRoles(id, id2, obj.keys(first1));
+      const obj2 = ActionSheetActionCreatorsDefault;
+      obj2.hideActionSheet();
     }
     cResult[8] = guild.id;
     cResult[9] = first1;
     cResult[10] = role.id;
-    cResult[11] = T;
-    tmp15 = T;
+    cResult[11] = handleAddPressed;
+    tmp15 = handleAddPressed;
   }
-  const obj9 = {};
-  obj9[id] = tmp11;
+  const obj10 = {};
+  obj10[id] = tmp11;
   cResult[5] = guild.id;
   cResult[6] = tmp11;
-  cResult[7] = obj9;
-  tmp13 = obj9;
-}) : ((guild) => {
+  cResult[7] = obj10;
+  tmp13 = obj10;
+}) : (function AddMembersActionSheet(guild) {
   let Button;
   let id;
   let intl;
@@ -959,7 +1038,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   obj5 = {
     size: "sm",
     text: intl2.string(guild(pendingAdditions[17]).t.OYkgVk),
-    onPress() {
+    onPress: function handleAddPressed() {
       const bulkAddMemberRoles = GuildSettingsActionCreatorsDefault.bulkAddMemberRoles;
       const id = guild.id;
       const id2 = role.id;

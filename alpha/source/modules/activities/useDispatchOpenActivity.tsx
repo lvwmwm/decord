@@ -1,17 +1,15 @@
-// Module ID: 9179
-// Function ID: 9180
+// Module ID: 10747
+// Function ID: 10748
 // Name: useDispatchOpenActivity
 // Dependencies: [19, 558, 576, 584, 2]
 
-// Module 9179 (useDispatchOpenActivity)
+// Module 10747 (useDispatchOpenActivity)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let connectedEmbeddedActivity;
-
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((connectedEmbeddedActivity) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDispatchOpenActivity(connectedEmbeddedActivity) {
   let obj = connectedEmbeddedActivity(576);
   const cResult = obj.c(4);
   connectedEmbeddedActivity = connectedEmbeddedActivity.connectedEmbeddedActivity;
@@ -47,7 +45,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((connectedEmbeddedAct
   cResult[3] = items;
   tmp4 = items;
   tmp3 = fn;
-}) : ((connectedEmbeddedActivity) => {
+}) : (function useDispatchOpenActivity(connectedEmbeddedActivity) {
   connectedEmbeddedActivity = connectedEmbeddedActivity.connectedEmbeddedActivity;
   let applicationId;
   if (connectedEmbeddedActivity != null) {

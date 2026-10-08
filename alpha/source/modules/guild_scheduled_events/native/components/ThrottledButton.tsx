@@ -1,9 +1,9 @@
-// Module ID: 9302
-// Function ID: 9303
+// Module ID: 8748
+// Function ID: 8749
 // Name: ThrottledButton
-// Dependencies: [109, 19, 21, 558, 576, 5601, 2]
+// Dependencies: [109, 19, 21, 558, 576, 5375, 2]
 
-// Module 9302 (ThrottledButton)
+// Module 8748 (ThrottledButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -12,12 +12,12 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const components_Button_Button = tmp(5601);
+const components_Button_Button = tmp(5375);
 let closure_2 = ["onPress", "onPressIn", "onPressOut", "throttleMs"];
 const jsx = Fragment.jsx;
 let c6 = 500;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useThrottledActionHandler(arg0) {
   let tmp3;
   let tmp4;
   let tmp5;
@@ -31,7 +31,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let closure_1 = react.useRef(null);
   const obj2 = react;
   if (cResult[0] !== tmp) {
-    const fn = function t(arg0) {
+    function createThrottleActionHandler(arg0) {
       let ref;
       closure_0 = arg0;
       return (arg0) => {
@@ -48,30 +48,30 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }, closure_0);
         }
       };
-    };
+    }
     cResult[0] = tmp;
-    cResult[1] = fn;
-    tmp3 = fn;
+    cResult[1] = createThrottleActionHandler;
+    tmp3 = createThrottleActionHandler;
   } else {
     tmp3 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function f() {
+    const fn = function f() {
       let ref;
       return () => clearTimeout(ref.current);
     };
     const items = [];
-    cResult[2] = fn2;
+    cResult[2] = fn;
     cResult[3] = items;
     tmp5 = items;
-    tmp4 = fn2;
+    tmp4 = fn;
   } else {
     tmp4 = cResult[2];
     tmp5 = cResult[3];
   }
   const effect = obj2.useEffect(tmp4, tmp5);
   return tmp3;
-}) : (() => {
+}) : (function useThrottledActionHandler() {
   let num = arg0;
   if (arg0 === undefined) {
     num = 500;
@@ -81,7 +81,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let ref;
     return () => clearTimeout(ref.current);
   }, []);
-  return (arg0) => {
+  return function createThrottleActionHandler(arg0) {
     let ref;
     let closure_0 = arg0;
     return (arg0) => {
@@ -102,7 +102,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_7 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThrottledButton(arg0) {
   let onPress;
   let onPressIn;
   let onPressOut;
@@ -193,7 +193,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = tmp4;
   cResult[8] = tmp12ResultResult2;
   tmp14 = tmp12ResultResult2;
-}) : ((throttleMs) => {
+}) : (function ThrottledButton(throttleMs) {
   let onPress;
   let onPressIn;
   let onPressOut;

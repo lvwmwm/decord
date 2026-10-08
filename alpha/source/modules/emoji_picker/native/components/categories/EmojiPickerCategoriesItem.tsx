@@ -1,23 +1,21 @@
-// Module ID: 9968
-// Function ID: 9969
+// Module ID: 9495
+// Function ID: 9496
 // Name: EmojiPickerCategoriesItem
-// Dependencies: [32, 19, 17, 5649, 1085, 21, 4896, 587, 558, 576, 4618, 4897, 4900, 5978, 9969, 5886, 5916, 2]
+// Dependencies: [32, 19, 17, 5996, 1085, 21, 5090, 587, 558, 576, 4810, 5091, 5094, 6161, 9496, 8198, 6189, 2]
 
-// Module 9968 (EmojiPickerCategoriesItem)
+// Module 9495 (EmojiPickerCategoriesItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 5649 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 5996 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let category;
 
 let CATEGORY_ICON_SIZE;
 let NODE_SIZE;
@@ -30,7 +28,7 @@ let size;
 let size1;
 let size2;
 let tmp;
-const timingPresets = tmp(4900);
+const timingPresets = tmp(5094);
 let View = react_native.View;
 let EmojiCategoryTypes = EmojiPickerConstants.EmojiCategoryTypes;
 ({ CATEGORY_ICON_RIPPLE_CONFIG: metroImportDefault, CATEGORY_ICON_SIZE, NODE_SIZE } = Constants);
@@ -50,10 +48,9 @@ const __initData3 = { code: "function EmojiPickerCategoriesItemTsx3(active,prev)
 const __initData4 = { code: "function EmojiPickerCategoriesItemTsx4(){const{withTiming,categoryIndexActive,index,timingStandard,styleColorActive,styleColorTransparent}=this.__closure;return{opacity:withTiming(categoryIndexActive.get()===index?1:0.5,timingStandard),backgroundColor:categoryIndexActive.get()===index?styleColorActive:styleColorTransparent};}" };
 const __initData5 = { code: "function EmojiPickerCategoriesItemTsx5(){const{categoryIndexActive,index}=this.__closure;return categoryIndexActive.get()===index;}" };
 const __initData6 = { code: "function EmojiPickerCategoriesItemTsx6(active,prev){const{runOnJS,setIsSelected}=this.__closure;if(active!==prev){runOnJS(setIsSelected)(active);}}" };
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((category) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiPickerCategoriesItem(category) {
   let closure_6;
   let handlePressCategory;
-  let items;
   let loadingStyle;
   let locked;
   let obj10;
@@ -98,28 +95,28 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
     [tmp10, tmp11] = index(backgroundColor.useState(tmp6), 2);
     EmojiCategoryTypes = tmp11;
     index(backgroundColor.useState(tmp6), 2);
-    const fn3 = function j() {
-      return categoryIndexActive.get() === index;
-    };
-    const obj4 = { categoryIndexActive, index };
-    fn3.__closure = obj4;
-    fn3.__workletHash = 12996370114251;
-    fn3.__initData = __initData2;
     const tmpResult = tmp(handlePressCategory[10]);
     class L {
-      constructor(arg0, arg1) {
-        if (arg0 !== arg1) {
-          const obj = ReanimatedRexport;
-          obj.runOnJS(EmojiCategoryTypes)(arg0);
-        }
+      constructor() {
+        return categoryIndexActive.get() === index;
       }
     }
+    const obj4 = { categoryIndexActive, index };
+    L.__closure = obj4;
+    L.__workletHash = 12996370114251;
+    L.__initData = __initData2;
+    const fn3 = function j(arg0, arg1) {
+      if (arg0 !== arg1) {
+        const obj = ReanimatedRexport;
+        obj.runOnJS(EmojiCategoryTypes)(arg0);
+      }
+    };
     const useAnimatedReaction = tmpResult.useAnimatedReaction;
-    L.__closure = { runOnJS: tmp(handlePressCategory[10]).runOnJS, setIsSelected: tmp11 };
-    L.__workletHash = 6056273557261;
-    L.__initData = __initData3;
+    fn3.__closure = { runOnJS: tmp(handlePressCategory[10]).runOnJS, setIsSelected: tmp11 };
+    fn3.__workletHash = 6056273557261;
+    fn3.__initData = __initData3;
     const obj5 = { runOnJS: tmp(handlePressCategory[10]).runOnJS, setIsSelected: tmp11 };
-    const animatedReaction = useAnimatedReaction(fn3, L);
+    const animatedReaction = useAnimatedReaction(L, fn3);
     if (cResult[3] === category) {
       if (cResult[4] === handlePressCategory) {
         let tmp16;
@@ -181,39 +178,34 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
                               }
                             }
                           }
-                          const obj7 = { androidRippleConfig, style, onPress: tmp16, accessibilityRole: "tab", accessibilityLabel: name, accessibilityState: tmp18, children: tmp31 };
+                          const obj7 = { androidRippleConfig, style, onPress: tmp16, accessibilityRole: "tab", accessibilityLabel: name, accessibilityState: null, children: tmp31 };
+                          class L {
+                            constructor() {
+                              return categoryIndexActive.get() === index;
+                            }
+                          }
                           const tmp38 = closure_8(tmp(handlePressCategory[16]).PressableOpacity, obj7);
                           cResult[26] = tmp16;
                           cResult[27] = style;
                           cResult[28] = name;
-                          class L {
-                            constructor(arg0, arg1) {
-                              if (arg0 !== arg1) {
-                                const obj = ReanimatedRexport;
-                                obj.runOnJS(EmojiCategoryTypes)(arg0);
-                              }
-                            }
-                          }
                           cResult[29] = tmp18;
                           cResult[30] = tmp31;
                           cResult[31] = tmp38;
                           tmp35 = tmp38;
                         }
                       }
-                      const obj8 = { style: tmp19, children: items };
-                      items = [tmp20, tmp27];
+                      const items = [tmp20, tmp27];
+                      const obj8 = { style: tmp19, children: null };
+                      class L {
+                        constructor() {
+                          return categoryIndexActive.get() === index;
+                        }
+                      }
+                      const tmp34 = closure_9(categoryIndexActive(handlePressCategory[10]).View, obj8);
                       cResult[22] = tmp19;
                       cResult[23] = tmp20;
                       cResult[24] = tmp27;
-                      const tmp34 = closure_9(categoryIndexActive(handlePressCategory[10]).View, obj8);
-                      class L {
-                        constructor(arg0, arg1) {
-                          if (arg0 !== arg1) {
-                            const obj = ReanimatedRexport;
-                            obj.runOnJS(EmojiCategoryTypes)(arg0);
-                          }
-                        }
-                      }
+                      cResult[25] = tmp34;
                       tmp31 = tmp34;
                     }
                   }
@@ -225,7 +217,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
                   }
                   cResult[18] = locked;
                   cResult[19] = tmp4.lock;
-                  cResult[20] = tmp4.lockContainer;
+                  class L {
+                    constructor() {
+                      return categoryIndexActive.get() === index;
+                    }
+                  }
                   cResult[21] = tmp28;
                   tmp27 = tmp28;
                 }
@@ -243,13 +239,22 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
           cResult[12] = category.guild;
           cResult[13] = category.id;
           cResult[14] = category.type;
+          class L {
+            constructor() {
+              return categoryIndexActive.get() === index;
+            }
+          }
           cResult[15] = loadingStyle;
           cResult[16] = tmp4.guildItem;
           cResult[17] = tmp23;
           tmp20 = tmp23;
         }
         const items1 = [tmp4.itemInner, animatedStyle];
-        cResult[9] = tmp4.itemInner;
+        class L {
+          constructor() {
+            return categoryIndexActive.get() === index;
+          }
+        }
         cResult[10] = animatedStyle;
         cResult[11] = items1;
         tmp19 = items1;
@@ -273,7 +278,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   cResult[1] = index;
   cResult[2] = fn2;
   tmp6 = fn2;
-}) : ((category) => {
+}) : (function EmojiPickerCategoriesItem(category) {
   let closure_6;
   let items1;
   let items2;

@@ -1,17 +1,15 @@
-// Module ID: 11666
-// Function ID: 11667
+// Module ID: 11731
+// Function ID: 11732
 // Name: useActivityApplications
-// Dependencies: [19, 558, 576, 11667, 9026, 2]
+// Dependencies: [19, 558, 576, 11732, 10635, 2]
 
-// Module 11666 (useActivityApplications)
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 9026 */;
+// Module 11731 (useActivityApplications)
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10635 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let guildId;
-
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityApplications(guildId) {
   let tmp3;
   let tmp4;
   let tmp = dependencyMap;
@@ -27,12 +25,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   } else {
     tmp3 = cResult[1];
   }
-  const arr = fetchesShelf(11667)(tmp3);
+  const arr = fetchesShelf(11732)(tmp3);
   if (cResult[2] !== arr) {
     let tmp6;
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function s(application) {
+      const fn = function p(application) {
         return application.application;
       };
       cResult[4] = fn;
@@ -72,11 +70,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[8] = items;
   tmp9 = items;
   tmp8 = fn2;
-}) : ((guildId) => {
+}) : (function useActivityApplications(guildId) {
   guildId = guildId.guildId;
   const fetchesShelf = guildId.fetchesShelf;
   const items = [fetchesShelf, guildId];
-  const arr = fetchesShelf(11667)({ guildId });
+  const arr = fetchesShelf(11732)({ guildId });
   const mapped = arr.map((application) => application.application);
   const effect = react.useEffect(() => {
     const tmp = fetchesShelf;

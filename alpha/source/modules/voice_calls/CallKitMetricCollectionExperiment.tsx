@@ -1,10 +1,10 @@
-// Module ID: 15331
-// Function ID: 15332
+// Module ID: 15593
+// Function ID: 15594
 // Name: CallKitMetricCollectionExperiment
-// Dependencies: [1440, 2]
+// Dependencies: [1452, 2]
 
-// Module 15331 (CallKitMetricCollectionExperiment)
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+// Module 15593 (CallKitMetricCollectionExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

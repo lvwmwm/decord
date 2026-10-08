@@ -1,16 +1,16 @@
-// Module ID: 16527
-// Function ID: 16528
+// Module ID: 16782
+// Function ID: 16783
 // Name: NavigationTTIRegionHierarchy
 // Dependencies: [32, 19, 3, 558, 576, 2]
 
-// Module 16527 (NavigationTTIRegionHierarchy)
+// Module 16782 (NavigationTTIRegionHierarchy)
 import LoggerDefault from "Logger" /* 3 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let map, name;
+let map;
 
 function getNavigationTTIRegionHierarchyViolation(arg0, arg1, arg2, arg3, arg4) {
   let combined;
@@ -74,7 +74,7 @@ let react = react_mod;
 let obj2 = new LoggerDefault("NavTTIVisualizer");
 obj2.enableNativeLogger(true);
 let context = react.createContext(null);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNavigationTTIRegionHierarchy(name) {
   let descendantTracking;
   let first;
   let fn2;
@@ -118,7 +118,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
   }
   const sum = num2 + 1;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    class C {
+    class I {
       constructor(arg0, arg1) {
         let closure_0 = arg0;
         let closure_1 = arg1;
@@ -150,10 +150,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
         });
       }
     }
-    cResult[1] = C;
-    tmp9 = C;
+    cResult[1] = I;
+    tmp9 = I;
   } else {
-    class C {
+    class I {
       constructor(arg0, arg1) {
         let closure_0 = arg0;
         let closure_1 = arg1;
@@ -187,7 +187,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
     }
   }
   if (cResult[2] !== sum) {
-    class C {
+    class I {
       constructor(arg0, arg1) {
         let closure_0 = arg0;
         let closure_1 = arg1;
@@ -224,7 +224,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
     cResult[2] = sum;
     cResult[3] = tmp11;
   } else {
-    class C {
+    class I {
       constructor(arg0, arg1) {
         let closure_0 = arg0;
         let closure_1 = arg1;
@@ -263,7 +263,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
   let sum2 = 0;
   const values = obj3.values();
   for (const item10066 of values) {
-    class C {
+    class I {
       constructor(arg0, arg1) {
         let closure_0 = arg0;
         let closure_1 = arg1;
@@ -303,7 +303,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
   }
   const num6 = 0;
   if ("include" === tracking) {
-    class C {
+    class I {
       constructor(arg0, arg1) {
         let closure_0 = arg0;
         let closure_1 = arg1;
@@ -338,7 +338,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
   }
   const num7 = 0;
   if ("exclude" === tracking) {
-    class C {
+    class I {
       constructor(arg0, arg1) {
         let closure_0 = arg0;
         let closure_1 = arg1;
@@ -459,7 +459,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
   cResult[7] = tmp20;
   cResult[8] = fn2;
   cResult[9] = items2;
-}) : ((name) => {
+}) : (function useNavigationTTIRegionHierarchy(name) {
   let _undefined;
   let c3;
   let descendantTracking;

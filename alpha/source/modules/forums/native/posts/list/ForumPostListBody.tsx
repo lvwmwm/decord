@@ -1,21 +1,21 @@
-// Module ID: 11650
-// Function ID: 11651
+// Module ID: 11715
+// Function ID: 11716
 // Name: ForumPostListBody
-// Dependencies: [19, 17, 6786, 21, 4896, 558, 576, 6785, 11643, 11633, 11642, 11644, 11651, 11637, 2]
+// Dependencies: [19, 17, 6961, 21, 5090, 558, 576, 6960, 11708, 11697, 11707, 11709, 11716, 11702, 2]
 
-// Module 11650 (ForumPostListBody)
+// Module 11715 (ForumPostListBody)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 6785 */;
-import ForumConstants from "ForumConstants" /* 6786 */;
-import ForumPostUsername from "ForumPostUsername" /* 11633 */;
-import ForumPostTimestampDefault from "ForumPostTimestamp" /* 11642 */;
-import ForumPostNewTagDefault from "ForumPostNewTag" /* 11643 */;
-import ForumPostTitleDefault from "ForumPostTitle" /* 11644 */;
-import ForumPostMessageContentDefault from "ForumPostMessageContent" /* 11651 */;
+import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 6960 */;
+import ForumConstants from "ForumConstants" /* 6961 */;
+import ForumPostUsername from "ForumPostUsername" /* 11697 */;
+import ForumPostTimestampDefault from "ForumPostTimestamp" /* 11707 */;
+import ForumPostNewTagDefault from "ForumPostNewTag" /* 11708 */;
+import ForumPostTitleDefault from "ForumPostTitle" /* 11709 */;
+import ForumPostMessageContentDefault from "ForumPostMessageContent" /* 11716 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ const View = react_native.View;
 const ForumTimestampFormats = ForumConstants.ForumTimestampFormats;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ body: { display: "flex", flexDirection: "row", alignItems: "flex-start" }, contentContainer: { flex: 1 }, thumbnailContainer: { marginLeft: 12 }, details: { flexDirection: "row", alignItems: "center", marginBottom: 6 }, newTagContainer: { marginEnd: 8 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostListBody(arg0) {
   let containerStyle;
   let firstMessage;
   let firstMessageLoaded;
@@ -145,7 +145,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                   if (null != media) {
                                     const obj4 = { channel: thread, media, isEmbed, isLocalDeviceMedia, firstMessageId: id1, containerStyle: tmp4.thumbnailContainer };
                                     id1 = undefined;
-                                    const ForumPostMediaThumbnail = tmp(11637).ForumPostMediaThumbnail;
+                                    const ForumPostMediaThumbnail = tmp(11702).ForumPostMediaThumbnail;
                                     const tmp42 = hasOwnProperty;
                                     if (firstMessage != null) {
                                       id1 = firstMessage.id;
@@ -246,7 +246,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.body;
   cResult[2] = items3;
   tmp6 = items3;
-}) : ((arg0) => {
+}) : (function ForumPostListBody(arg0) {
   let containerStyle;
   let firstMessage;
   let firstMessageLoaded;
@@ -283,7 +283,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp9Result = !isGameInvitesPost;
   if (tmp9Result) {
     const obj7 = { title: thread.name, lineClamp: 2, ellipsizeMode: "tail", hasUnreads };
-    tmp9Result = tmp9(tmp10(11644), obj7);
+    tmp9Result = tmp9(tmp10(11709), obj7);
   }
   items2[1] = tmp9Result;
   items2[2] = hasOwnProperty(ForumPostMessageContentDefault, { messageContent, message: firstMessage, isMessageDeleted: false, messageLoaded: firstMessageLoaded, hasUnreads, senderModifier });
@@ -298,7 +298,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (null != media) {
       const obj8 = { channel: thread, media, isEmbed, isLocalDeviceMedia, firstMessageId: id, containerStyle: tmp.thumbnailContainer };
       id = undefined;
-      const ForumPostMediaThumbnail = tmp2(11637).ForumPostMediaThumbnail;
+      const ForumPostMediaThumbnail = tmp2(11702).ForumPostMediaThumbnail;
       if (firstMessage != null) {
         id = firstMessage.id;
       }

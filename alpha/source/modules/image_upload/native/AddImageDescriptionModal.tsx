@@ -1,19 +1,19 @@
-// Module ID: 11050
-// Function ID: 11051
+// Module ID: 12794
+// Function ID: 12795
 // Name: AddImageDescriptionModal
-// Dependencies: [32, 19, 17, 7044, 7280, 21, 4896, 587, 558, 576, 504, 1484, 1490, 6478, 10849, 7509, 1126, 8842, 11049, 6587, 10674, 2]
+// Dependencies: [32, 19, 17, 7232, 7880, 21, 5090, 587, 558, 576, 504, 1496, 1502, 6656, 10500, 9232, 1126, 9201, 12793, 6763, 9587, 2]
 
-// Module 11050 (AddImageDescriptionModal)
+// Module 12794 (AddImageDescriptionModal)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import DraftStore from "DraftStore" /* 7044 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10674 */;
+import DraftStore from "DraftStore" /* 7232 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 9587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7280 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7880 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ size = { width: "100%", resizeMode: "contain", height: "Array", borderRadius: na
 obj4 = { color: nativeDefault.colors.TEXT_MUTED };
 let closure_12 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddDescription(id) {
   let channelId;
   let closure_4;
   let first;
@@ -202,7 +202,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   cResult[2] = id;
   cResult[3] = R;
   tmp7 = R;
-}) : ((id) => {
+}) : (function AddDescription(id) {
   let channelId;
   let closure_4;
   let first;
@@ -306,7 +306,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   return closure_11(closure_7, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddImageDescriptionModal(source) {
   let first;
   let id;
   let obj = source(id[9]);
@@ -345,7 +345,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
   cResult[3] = source;
   cResult[4] = tmp7;
   tmp6 = tmp7;
-}) : ((arg0) => {
+}) : (function AddImageDescriptionModal(arg0) {
   let channelId;
   let id;
   let intl;

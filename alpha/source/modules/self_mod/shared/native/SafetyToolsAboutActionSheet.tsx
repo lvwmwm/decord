@@ -1,25 +1,25 @@
-// Module ID: 9859
-// Function ID: 9860
+// Module ID: 10419
+// Function ID: 10420
 // Name: SafetyToolsAboutActionSheet
-// Dependencies: [32, 19, 17, 9797, 1085, 21, 4896, 587, 558, 576, 9843, 4860, 9811, 9812, 9860, 1126, 4573, 2115, 4892, 5601, 9848, 2]
+// Dependencies: [32, 19, 17, 10361, 1085, 21, 5090, 587, 558, 576, 10404, 5054, 10374, 10375, 10420, 1126, 4765, 2127, 5086, 5375, 10409, 2]
 
-// Module 9859 (SafetyToolsAboutActionSheet)
+// Module 10419 (SafetyToolsAboutActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Constants2 from "Constants" /* 9797 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 9811 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 9812 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Constants2 from "Constants" /* 10361 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10374 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10375 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let catchPromise, channelId, flag, tmp5;
+let catchPromise, flag, tmp5;
 
 let c9;
 let metroImportAll;
@@ -37,7 +37,7 @@ createStyles = createStyles.createStyles;
 obj3 = { alignSelf: "center", textAlign: "center", marginBottom: nativeDefault.space.PX_24 };
 obj4 = { alignSelf: "center", textAlign: "center", marginTop: nativeDefault.space.PX_8 };
 let closure_10 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyToolsAboutScreen(channelId) {
   let aboutContainer;
   let closure_5;
   let description;
@@ -578,7 +578,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[4] = warningType;
   cResult[5] = T;
   tmp8 = T;
-}) : ((channelId) => {
+}) : (function SafetyToolsAboutScreen(channelId) {
   let format;
   let intl;
   let intl3;

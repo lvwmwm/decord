@@ -1,12 +1,12 @@
-// Module ID: 1938
-// Function ID: 1939
+// Module ID: 1950
+// Function ID: 1951
 // Name: updateRules
-// Dependencies: [19, 21, 1936, 2]
+// Dependencies: [19, 21, 1948, 2]
 // Exports: default
 
-// Module 1938 (updateRules)
+// Module 1950 (updateRules)
 import Fragment from "Fragment" /* 21 */;
-import _mod1936 from "module_1936" /* 1936 */;
+import _mod1948 from "module_1948" /* 1948 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -14,18 +14,18 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("../discord_common/js/packages/i18n/updateRules.web.tsx");
 
 export default function updateRules(paragraph) {
-  paragraph.heading = _mod1936.defaultRules.heading;
-  paragraph.lheading = _mod1936.defaultRules.lheading;
-  paragraph.list = _mod1936.defaultRules.list;
+  paragraph.heading = _mod1948.defaultRules.heading;
+  paragraph.lheading = _mod1948.defaultRules.lheading;
+  paragraph.list = _mod1948.defaultRules.list;
   let obj = {
-    react(content, fn, key) {
+    react: function Paragraph(content, fn, key) {
       return <p key={arg2.key}>{arg1(arg0.content, arg2)}</p>;
     }
   };
   let merged = Object.assign(paragraph.paragraph);
   paragraph.paragraph = obj;
   let obj2 = {
-    react(context, fn, key) {
+    react: function Link(context, fn, key) {
       const obj = {};
       if (null != context.context) {
         if (context.context[context.target]) {
@@ -36,7 +36,7 @@ export default function updateRules(paragraph) {
         obj.onClick = context.context[context.target];
       }
       if (null == obj.onClick) {
-        const obj2 = _mod1936;
+        const obj2 = _mod1948;
         obj.href = obj2.sanitizeUrl(context.target);
         obj.target = "_blank";
         const sanitizeUrlResult = obj2.sanitizeUrl(context.target);

@@ -1,23 +1,23 @@
-// Module ID: 16072
-// Function ID: 16073
+// Module ID: 16332
+// Function ID: 16333
 // Name: useFavoritesGuildCategoryFullNotice
-// Dependencies: [2054, 2065, 1085, 558, 576, 504, 10049, 2077, 1126, 3395, 2]
+// Dependencies: [2066, 2077, 1085, 558, 576, 504, 10294, 2089, 1126, 3439, 2]
 
-// Module 16072 (useFavoritesGuildCategoryFullNotice)
+// Module 16332 (useFavoritesGuildCategoryFullNotice)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import FavoritesConstants from "FavoritesConstants" /* 2065 */;
-import FavoritesUtils from "FavoritesUtils" /* 2077 */;
-import _modDef3395 from "module_3395" /* 3395 */;
-import FavoritesHooks from "FavoritesHooks" /* 10049 */;
-import FavoriteStore from "FavoriteStore" /* 2054 */;
+import FavoritesConstants from "FavoritesConstants" /* 2077 */;
+import FavoritesUtils from "FavoritesUtils" /* 2089 */;
+import _modDef3439 from "module_3439" /* 3439 */;
+import FavoritesHooks from "FavoritesHooks" /* 10294 */;
+import FavoriteStore from "FavoriteStore" /* 2066 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4 = FavoritesConstants.FAVORITES_AUTO_ADDED_THREADS_CATEGORY_NAME;
 const ChannelTypes = Constants.ChannelTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((getGuildId, str) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesGuildCategoryFullNotice(getGuildId, str) {
   let autoAddJoinedThreads;
   let intl;
   let intl2;
@@ -27,7 +27,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((getGuildId, str) =
   const cResult = obj.c(3);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [FavoriteStore];
-    const fn = function _() {
+    const fn = function c() {
       return autoAddJoinedThreads.autoAddJoinedThreads;
     };
     cResult[0] = items;
@@ -58,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((getGuildId, str) =
               let tmp14;
               const _Symbol = Symbol;
               if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-                const obj2 = { label: intl.string(_modDef3395.WsUrMD), tooltip: intl2.string(_modDef3395.dW9Kov) };
+                const obj2 = { label: intl.string(_modDef3439.WsUrMD), tooltip: intl2.string(_modDef3439.dW9Kov) };
                 intl = tmp(1126).intl;
                 intl2 = tmp(1126).intl;
                 cResult[2] = obj2;
@@ -74,7 +74,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((getGuildId, str) =
     }
   }
   return tmp10;
-}) : ((getGuildId, str) => {
+}) : (function useFavoritesGuildCategoryFullNotice(getGuildId, str) {
   let autoAddJoinedThreads;
   let intl;
   let intl2;
@@ -97,7 +97,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((getGuildId, str) =
             const formatted = str.toLowerCase();
             tmp6 = null;
             if (formatted === closure_4.toLowerCase()) {
-              const obj2 = { label: intl.string(_modDef3395.WsUrMD), tooltip: intl2.string(_modDef3395.dW9Kov) };
+              const obj2 = { label: intl.string(_modDef3439.WsUrMD), tooltip: intl2.string(_modDef3439.dW9Kov) };
               intl = tmp(1126).intl;
               intl2 = tmp(1126).intl;
               tmp6 = obj2;

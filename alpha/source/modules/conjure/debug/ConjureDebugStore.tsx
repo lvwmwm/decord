@@ -1,17 +1,18 @@
-// Module ID: 16773
-// Function ID: 16774
+// Module ID: 17048
+// Function ID: 17049
 // Name: ConjureDebugStore
-// Dependencies: [504, 6757, 584, 2]
+// Dependencies: [504, 6933, 584, 2]
 
-// Module 16773 (ConjureDebugStore)
+// Module 17048 (ConjureDebugStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureTypes from "ConjureTypes" /* 6757 */;
+import ConjureTypes from "ConjureTypes" /* 6933 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
 let closure_2 = [];
+let closure_3 = [];
 const map = new Map();
 const map1 = new Map();
 const map2 = new Map();
@@ -19,6 +20,7 @@ const map3 = new Map();
 const map4 = new Map();
 const map5 = new Map();
 const map6 = new Map();
+const map7 = new Map();
 const Store = get_initializedDefault.Store;
 class ConjureDebugStore extends Store {
   getStatus(arg0) {
@@ -70,6 +72,25 @@ class ConjureDebugStore extends Store {
     }
     return str;
   }
+  getTimingTraces(projectId) {
+    let value = map7.get(projectId);
+    if (value == null) {
+      value = closure_3;
+    }
+    return value;
+  }
+  getTimingTrace(projectId, traceId) {
+    let closure_0 = traceId;
+    const value = map7.get(projectId);
+    let found;
+    if (value != null) {
+      found = value.find((id) => id.id === closure_0);
+    }
+    if (found == null) {
+      found = null;
+    }
+    return found;
+  }
 }
 const prototype = ConjureDebugStore.prototype;
 let obj = {
@@ -82,7 +103,9 @@ let obj = {
             if (0 === map4.size) {
               if (0 === map5.size) {
                 if (0 === map6.size) {
-                  return false;
+                  if (0 === map7.size) {
+                    return false;
+                  }
                 }
               }
             }
@@ -97,6 +120,7 @@ let obj = {
     map4.clear();
     map5.clear();
     map6.clear();
+    map7.clear();
   },
   CONJURE_DEBUG_STATUS_REQUESTED: function handleStatusRequested(projectId) {
     const result = map1.set(projectId.projectId, "loading");
@@ -182,6 +206,20 @@ let obj = {
     }
     const result = set(projectId, substr);
   },
+  CONJURE_DEBUG_TIMING_TRACE: function handleTimingTrace(arg0) {
+    let projectId;
+    let trace;
+    ({ projectId, trace } = arg0);
+    let items = map7.get(projectId);
+    const obj = map7;
+    if (items == null) {
+      items = [];
+    }
+    const found = items.filter((id) => id.id !== trace.id);
+    const combined = found.concat(trace);
+    const sorted = combined.sort((started_at, started_at2) => started_at.started_at - started_at2.started_at);
+    const result = obj.set(projectId, sorted.slice(-100));
+  },
   CONJURE_CHAT_USAGE_SET: function handleChatUsageSet(turn) {
     turn = turn.turn;
     const projectId = turn.projectId;
@@ -201,6 +239,7 @@ let obj = {
     map4.delete(projectId);
     map5.delete(projectId);
     map6.delete(projectId);
+    map7.delete(projectId);
   }
 };
 const conjureDebugStore = new ConjureDebugStore(DispatcherDefault, obj);

@@ -1,19 +1,19 @@
-// Module ID: 5788
-// Function ID: 5789
+// Module ID: 5371
+// Function ID: 5372
 // Name: KeyCommands
-// Dependencies: [19, 5789, 558, 576, 2]
+// Dependencies: [19, 5372, 558, 576, 2]
 // Exports: subscribeKeyCommand
 
-// Module 5788 (KeyCommands)
+// Module 5371 (KeyCommands)
 import react from "react" /* 19 */;
-import react_native_mod from "react-native" /* 5789 */;
+import react_native_mod from "react-native" /* 5372 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, map;
 
-const f91030 = () => {
+const f91257 = () => {
   c5 = false;
   map = new Map();
   for (const item10012 of closure_1_4) {
@@ -52,7 +52,7 @@ function registerKeyCommand(arg0) {
   if (!tmp4) {
     c5 = true;
     const _queueMicrotask = queueMicrotask;
-    queueMicrotask(f91030);
+    queueMicrotask(f91257);
   }
 }
 function unregisterKeyCommand(arg0) {
@@ -62,7 +62,7 @@ function unregisterKeyCommand(arg0) {
   if (!tmp) {
     c5 = true;
     const _queueMicrotask = queueMicrotask;
-    queueMicrotask(f91030);
+    queueMicrotask(f91257);
   }
 }
 let react_native = react_native_mod;
@@ -70,7 +70,7 @@ let closure_4 = [];
 let c5 = false;
 let closure_6 = null;
 react_native = react_native.getConstants();
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyCommands(arg0) {
   let closure_0;
   let tmp2;
   let tmp3;
@@ -78,7 +78,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = require("react");
   const cResult = obj.c(3);
   if (cResult[0] !== arg0) {
-    const fn = function i() {
+    const fn = function o() {
       let tmp2 = closure_0[Symbol.iterator]();
       while (tmp2 !== undefined) {
         let tmp4 = registerKeyCommand;
@@ -104,7 +104,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp3 = cResult[2];
   }
   const effect = react.useEffect(tmp2, tmp3);
-}) : ((arg0) => {
+}) : (function useKeyCommands(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   const effect = react.useEffect(() => {
@@ -154,7 +154,7 @@ export const subscribeKeyCommand = function subscribeKeyCommand(arg0) {
   if (!tmp4) {
     c5 = true;
     let _queueMicrotask = queueMicrotask;
-    queueMicrotask(f91030);
+    queueMicrotask(f91257);
   }
   return () => {
     items = items.filter((item) => item !== closure_0);
@@ -162,7 +162,7 @@ export const subscribeKeyCommand = function subscribeKeyCommand(arg0) {
     if (!tmp) {
       c5 = true;
       const _queueMicrotask = queueMicrotask;
-      queueMicrotask(f91030);
+      queueMicrotask(f91257);
     }
   };
 };

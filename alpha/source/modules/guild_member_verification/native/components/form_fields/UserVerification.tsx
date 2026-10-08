@@ -1,16 +1,16 @@
-// Module ID: 6012
-// Function ID: 6013
+// Module ID: 6198
+// Function ID: 6199
 // Name: UserVerification
-// Dependencies: [19, 21, 4896, 558, 576, 4708, 6013, 1126, 4892, 2]
+// Dependencies: [19, 21, 5090, 558, 576, 4902, 6199, 1126, 5086, 2]
 
-// Module 6012 (UserVerification)
+// Module 6198 (UserVerification)
 import react2 from "react" /* 576 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4708 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import IdentityVerificationFieldDefault from "IdentityVerificationField" /* 6013 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4902 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import IdentityVerificationFieldDefault from "IdentityVerificationField" /* 6199 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let closure_4;
 let hasOwnProperty;
 ({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ emailPhoneNote: { marginTop: 8, marginBottom: 12 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserVerification(arg0) {
   let field;
   let items;
   let verification;
@@ -94,7 +94,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[9] = tmp20;
       tmp18 = tmp20;
     }
-    let tmp6 = platform === tmp(4708).UserVerificationFieldPlatforms.PHONE;
+    let tmp6 = platform === tmp(4902).UserVerificationFieldPlatforms.PHONE;
     if (tmp6) {
       const obj5 = { passesVerification: verification[MemberVerificationTypes.UserVerificationFieldPlatforms.PHONE], platform: MemberVerificationTypes.UserVerificationFieldPlatforms.PHONE };
       const tmp9 = IdentityVerificationFieldDefault;
@@ -105,7 +105,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[2] = tmp6;
     tmp5 = tmp6;
   }
-}) : ((arg0) => {
+}) : (function UserVerification(arg0) {
   let field;
   let stringResult;
   let verification;
@@ -127,7 +127,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const tmp8 = IdentityVerificationFieldDefault;
     items[1] = _false(tmp8, obj2);
     const obj3 = { style: tmp.emailPhoneNote, variant: "heading-deprecated-12/medium", color: "text-default", children: stringResult };
-    const Text = tmp12(4892).Text;
+    const Text = tmp12(5086).Text;
     const tmp6 = _false;
     if (platform === MemberVerificationTypes.UserVerificationFieldPlatforms.PHONE) {
       const intl2 = tmp12(1126).intl;

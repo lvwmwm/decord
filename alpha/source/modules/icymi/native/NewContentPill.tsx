@@ -1,28 +1,27 @@
-// Module ID: 16503
-// Function ID: 16504
+// Module ID: 16763
+// Function ID: 16764
 // Name: NewContentPill
-// Dependencies: [32, 19, 17, 2074, 8021, 21, 4896, 587, 558, 576, 8502, 5978, 504, 4797, 8034, 8038, 4618, 5604, 1493, 15641, 4892, 1126, 5916, 4735, 2]
+// Dependencies: [32, 19, 17, 2086, 8429, 21, 5090, 587, 558, 576, 8986, 6161, 504, 4991, 8442, 8446, 4810, 5374, 1505, 15921, 5086, 1126, 6189, 4929, 2]
 
-// Module 16503 (NewContentPill)
+// Module 16763 (NewContentPill)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import spring from "spring" /* 5604 */;
-import GuildIcon from "GuildIcon" /* 5978 */;
-import ICYMITypes from "ICYMITypes" /* 8034 */;
-import ClipView from "ClipView" /* 8502 */;
+import spring from "spring" /* 5374 */;
+import GuildIcon from "GuildIcon" /* 6161 */;
+import ICYMITypes from "ICYMITypes" /* 8442 */;
+import ClipView from "ClipView" /* 8986 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore_mod from "GuildStore" /* 2074 */;
-import ICYMIStore_mod from "ICYMIStore" /* 8021 */;
+import GuildStore_mod from "GuildStore" /* 2086 */;
+import ICYMIStore_mod from "ICYMIStore" /* 8429 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
 const ClipViewDefault = ClipView;
-let onPress;
 
 let c10;
 let c9;
@@ -31,7 +30,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const ICYMIUtils = tmp(8038);
+const ICYMIUtils = tmp(8446);
 let _slicedToArray = _slicedToArray_mod;
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = react_native);
 let GuildStore = GuildStore_mod;
@@ -45,7 +44,7 @@ obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 let closure_11 = createStyles(obj);
 const springConfig = { overshootClamping: true, stiffness: 20, damping: 15, mass: 0.03 };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function CutoutGuildIcon(guild) {
   let first;
   let obj3;
   let obj4;
@@ -88,7 +87,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   cResult[3] = tmp4.guildIconBG;
   cResult[4] = tmp11;
   tmp8 = tmp11;
-}) : ((guild) => {
+}) : (function CutoutGuildIcon(guild) {
   let items;
   let obj2;
   let obj3;
@@ -110,7 +109,7 @@ const __initData2 = { code: "function NewContentPillTsx2(){const{showingPill}=th
 const __initData3 = { code: "function NewContentPillTsx3(){const{withSpring,showingPill,springConfig}=this.__closure;return{transform:[{translateY:withSpring(showingPill?12:0,springConfig)}],opacity:withSpring(showingPill?1:0,springConfig,'respect-motion-settings')};}" };
 const __initData4 = { code: "function NewContentPillTsx4(){const{showingPill}=this.__closure;return{pointerEvents:showingPill?'box-none':'none'};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewContentPill(onPress) {
   let arr4;
   let closure_5;
   let closure_7;
@@ -254,7 +253,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
       items = [{ translateY: withSpring(num, springConfig) }];
       ({ translateY: withSpring(num, springConfig) });
       num2 = 0;
-      withSpring2 = tmp(5604).withSpring;
+      withSpring2 = tmp(5374).withSpring;
       spring;
       tmp5 = springConfig;
       if (closure_8) {
@@ -323,7 +322,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   cResult[12] = first;
   cResult[13] = V;
   cResult[14] = items5;
-}) : ((onPress) => {
+}) : (function NewContentPill(onPress) {
   let PressableOpacity;
   let PressableOpacity2;
   let intl;
@@ -401,7 +400,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     items = [{ translateY: withSpring(num, springConfig) }];
     ({ translateY: withSpring(num, springConfig) });
     num2 = 0;
-    withSpring2 = tmp(5604).withSpring;
+    withSpring2 = tmp(5374).withSpring;
     spring;
     tmp5 = springConfig;
     if (closure_8) {

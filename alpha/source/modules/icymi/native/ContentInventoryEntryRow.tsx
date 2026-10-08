@@ -1,21 +1,19 @@
-// Module ID: 16484
-// Function ID: 16485
+// Module ID: 16744
+// Function ID: 16745
 // Name: ContentInventoryEntryRow
-// Dependencies: [19, 4525, 21, 558, 576, 504, 7824, 16485, 16492, 2]
+// Dependencies: [19, 4717, 21, 558, 576, 504, 8243, 16745, 16752, 2]
 
-// Module 16484 (ContentInventoryEntryRow)
+// Module 16744 (ContentInventoryEntryRow)
 import Fragment from "Fragment" /* 21 */;
-import GamingLikeEntryRowDefault from "GamingLikeEntryRow" /* 16485 */;
-import CustomStatusEntryRowDefault from "CustomStatusEntryRow" /* 16492 */;
+import GamingLikeEntryRowDefault from "GamingLikeEntryRow" /* 16745 */;
+import CustomStatusEntryRowDefault from "CustomStatusEntryRow" /* 16752 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let content;
-
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((content) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContentInventoryEntryRow(content) {
   let first;
   let renderForScreenshot;
   let tmp7;
@@ -46,9 +44,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((content) => {
     return null;
   } else {
     const content_type = content.content_type;
-    if (content(7824).ContentInventoryEntryType.TOP_GAME !== content_type) {
-      if (content(7824).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
-        if (content(7824).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
+    if (content(8243).ContentInventoryEntryType.TOP_GAME !== content_type) {
+      if (content(8243).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
+        if (content(8243).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
           if (visible == null) {
             visible = false;
           }
@@ -85,7 +83,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((content) => {
     cResult[5] = tmp17;
     tmp14 = tmp17;
   }
-}) : ((content) => {
+}) : (function ContentInventoryEntryRow(content) {
   content = content.content;
   let flag = content.renderForScreenshot;
   if (flag === undefined) {
@@ -98,9 +96,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((content) => {
     return null;
   } else {
     const content_type = content.content_type;
-    if (content(7824).ContentInventoryEntryType.TOP_GAME !== content_type) {
-      if (content(7824).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
-        if (content(7824).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
+    if (content(8243).ContentInventoryEntryType.TOP_GAME !== content_type) {
+      if (content(8243).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
+        if (content(8243).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
           const obj2 = { content, renderForScreenshot: flag, visible: flag2 };
           const tmp4 = jsx;
           const tmp6 = CustomStatusEntryRowDefault;

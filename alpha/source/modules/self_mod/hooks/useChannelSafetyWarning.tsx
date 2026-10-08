@@ -1,17 +1,17 @@
-// Module ID: 9802
-// Function ID: 9803
+// Module ID: 10365
+// Function ID: 10366
 // Name: useChannelSafetyWarning
-// Dependencies: [9799, 558, 576, 504, 2]
+// Dependencies: [10266, 558, 576, 504, 2]
 
-// Module 9802 (useChannelSafetyWarning)
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 9799 */;
+// Module 10365 (useChannelSafetyWarning)
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10266 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelSafetyWarning(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -55,7 +55,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     return tmp8;
   }
   if (cResult[7] !== arg1) {
-    const fn2 = function y(type) {
+    const fn2 = function p(type) {
       return type.type === closure_1;
     };
     cResult[7] = arg1;
@@ -66,35 +66,56 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   }
   const found = stateFromStores.filter(tmp9);
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn3 = function _(dismiss_timestamp) {
-      let tmp = null == dismiss_timestamp.dismiss_timestamp;
-      if (tmp) {
-        let expiry;
-        if (dismiss_timestamp != null) {
-          expiry = dismiss_timestamp.expiry;
+    class S {
+      constructor(dismiss_timestamp) {
+        let tmp = null == dismiss_timestamp.dismiss_timestamp;
+        if (tmp) {
+          let expiry;
+          if (dismiss_timestamp != null) {
+            expiry = dismiss_timestamp.expiry;
+          }
+          let tmp3 = null == expiry;
+          if (!tmp3) {
+            const _Date = Date;
+            const _Date2 = Date;
+            const parsed = Date.parse(dismiss_timestamp.expiry);
+            tmp3 = parsed > Date.now();
+          }
+          tmp = tmp3;
         }
-        let tmp3 = null == expiry;
-        if (!tmp3) {
-          const _Date = Date;
-          const _Date2 = Date;
-          const parsed = Date.parse(dismiss_timestamp.expiry);
-          tmp3 = parsed > Date.now();
-        }
-        tmp = tmp3;
+        return tmp;
       }
-      return tmp;
-    };
-    cResult[9] = fn3;
-    tmp10 = fn3;
+    }
+    cResult[9] = S;
+    tmp10 = S;
   } else {
-    tmp10 = cResult[9];
+    class S {
+      constructor(dismiss_timestamp) {
+        let tmp = null == dismiss_timestamp.dismiss_timestamp;
+        if (tmp) {
+          let expiry;
+          if (dismiss_timestamp != null) {
+            expiry = dismiss_timestamp.expiry;
+          }
+          let tmp3 = null == expiry;
+          if (!tmp3) {
+            const _Date = Date;
+            const _Date2 = Date;
+            const parsed = Date.parse(dismiss_timestamp.expiry);
+            tmp3 = parsed > Date.now();
+          }
+          tmp = tmp3;
+        }
+        return tmp;
+      }
+    }
   }
   const found1 = found.find(tmp10);
   cResult[4] = stateFromStores;
   cResult[5] = arg1;
   cResult[6] = found1;
   tmp8 = found1;
-}) : ((arg0, arg1) => {
+}) : (function useChannelSafetyWarning(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;

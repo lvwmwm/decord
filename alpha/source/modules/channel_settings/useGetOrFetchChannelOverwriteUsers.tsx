@@ -1,31 +1,31 @@
-// Module ID: 17031
-// Function ID: 17032
+// Module ID: 17312
+// Function ID: 17313
 // Name: useGetOrFetchChannelOverwriteUsers
-// Dependencies: [32, 19, 2112, 1377, 1985, 558, 576, 504, 17032, 5712, 1375, 2]
+// Dependencies: [32, 19, 2124, 1389, 1997, 558, 576, 504, 17313, 6102, 1387, 2]
 
-// Module 17031 (useGetOrFetchChannelOverwriteUsers)
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5712 */;
-import createAggregatorDefault from "createAggregator" /* 17032 */;
+// Module 17312 (useGetOrFetchChannelOverwriteUsers)
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6102 */;
+import createAggregatorDefault from "createAggregator" /* 17313 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import UserStore from "UserStore" /* 1377 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f128216 = (id) => id.id;
+const f129570 = (id) => id.id;
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetchChannelOverwriteUsers(arg0, arg1) {
   let closure_0;
   let first;
   let first1;
+  let items5;
   let length;
-  let mapped;
   let tmp10;
   let tmp6;
   let tmp7;
@@ -62,40 +62,38 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     if (cResult[5] === arg1) {
       tmp9 = cResult[6];
     }
-    const tmp15 = _slicedToArray(tmp9, 2);
-    first1 = tmp15[0];
-    _slicedToArray = tmp17;
+    const tmp14 = _slicedToArray(tmp9, 2);
+    first1 = tmp14[0];
+    _slicedToArray = tmp16;
     if (cResult[9] === arg0) {
+      let tmp17;
       let tmp18;
-      let tmp19;
-      let tmp22;
+      let tmp21;
+      let tmp23;
       let tmp24;
-      let tmp25;
-      if (cResult[10] === tmp15[1]) {
-        tmp18 = cResult[11];
-        tmp19 = cResult[12];
+      if (cResult[10] === tmp14[1]) {
+        tmp17 = cResult[11];
+        tmp18 = cResult[12];
       }
-      const effect = react.useEffect(tmp18, tmp19);
+      const effect = react.useEffect(tmp17, tmp18);
       const _Symbol = Symbol;
       if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
         const items2 = [UserStore];
         cResult[13] = items2;
-        tmp22 = items2;
+        tmp21 = items2;
       } else {
-        tmp22 = cResult[13];
+        tmp21 = cResult[13];
       }
       if (cResult[14] !== first1) {
-        class I {
-          constructor() {
-            const mapped = first1.map(UserStore.getUser);
-            return mapped.filter(GlobalUtils.isNotNullish);
-          }
-        }
+        const fn3 = function p() {
+          const mapped = first1.map(UserStore.getUser);
+          return mapped.filter(GlobalUtils.isNotNullish);
+        };
         const items3 = [first1];
         cResult[14] = first1;
-        cResult[15] = I;
+        cResult[15] = fn3;
         cResult[16] = items3;
-        class F {
+        class S {
           constructor() {
             let tmp2 = length.length > 0;
             const tmp = length;
@@ -108,20 +106,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
             }
           }
         }
-        tmp24 = I;
+        tmp23 = fn3;
       } else {
-        class I {
-          constructor() {
-            const mapped = first1.map(UserStore.getUser);
-            return mapped.filter(GlobalUtils.isNotNullish);
-          }
-        }
-        tmp25 = cResult[16];
+        tmp23 = cResult[15];
+        tmp24 = cResult[16];
       }
       const tmpResult2 = tmp(tmp2[7]);
-      return tmpResult2.useStateFromStoresArray(tmp22, tmp24, tmp25);
+      return tmpResult2.useStateFromStoresArray(tmp21, tmp23, tmp24);
     }
-    class F {
+    class S {
       constructor() {
         let tmp2 = length.length > 0;
         const tmp = length;
@@ -134,57 +127,39 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
         }
       }
     }
-    const items4 = [tmp15[1], arg0];
+    const items4 = [tmp14[1], arg0];
     cResult[9] = arg0;
-    cResult[10] = tmp15[1];
-    cResult[11] = F;
+    cResult[10] = tmp14[1];
+    cResult[11] = S;
     cResult[12] = items4;
-    tmp19 = items4;
-    tmp18 = F;
+    tmp18 = items4;
+    tmp17 = S;
   }
   if (cResult[7] !== stateFromStoresArray) {
-    class I {
-      constructor() {
-        const mapped = first1.map(UserStore.getUser);
-        return mapped.filter(GlobalUtils.isNotNullish);
-      }
-    }
+    const fn2 = function y(arg0) {
+      return stateFromStoresArray.includes(arg0);
+    };
     cResult[7] = stateFromStoresArray;
-    cResult[8] = S;
-    tmp10 = S;
+    cResult[8] = fn2;
+    tmp10 = fn2;
   } else {
-    class I {
-      constructor() {
-        const mapped = first1.map(UserStore.getUser);
-        return mapped.filter(GlobalUtils.isNotNullish);
-      }
-    }
+    tmp10 = cResult[8];
   }
   const tmp11 = stateFromStoresArray(tmp2[8]);
   if (null == arg1) {
-    class I {
-      constructor() {
-        const mapped = first1.map(UserStore.getUser);
-        return mapped.filter(GlobalUtils.isNotNullish);
-      }
-    }
+    items5 = [];
   } else {
-    class I {
-      constructor() {
-        const mapped = first1.map(UserStore.getUser);
-        return mapped.filter(GlobalUtils.isNotNullish);
-      }
-    }
+    const _Object = Object;
     const values = Object.values(arg1);
     const found = values.filter((type) => type.type === closure_1_0(stateFromStoresArray[4]).PermissionOverwriteType.MEMBER);
-    mapped = found.map(f128216);
+    items5 = found.map(f129570);
   }
-  const tmp11Result = tmp11(mapped, tmp10);
+  const tmp11Result = tmp11(items5, tmp10);
   cResult[4] = stateFromStoresArray;
   cResult[5] = arg1;
   cResult[6] = tmp11Result;
   tmp9 = tmp11Result;
-}) : ((arg0, arg1) => {
+}) : (function useGetOrFetchChannelOverwriteUsers(arg0, arg1) {
   let closure_0;
   let first;
   let length;
@@ -205,7 +180,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       const _Object = Object;
       const values = Object.values(tmp2);
       const found = values.filter((type) => type.type === closure_1_0(stateFromStoresArray[4]).PermissionOverwriteType.MEMBER);
-      items = found.map(f128216);
+      items = found.map(f129570);
     }
     return tmp(items, (arg0) => stateFromStoresArray.includes(arg0));
   }, items2), 2);

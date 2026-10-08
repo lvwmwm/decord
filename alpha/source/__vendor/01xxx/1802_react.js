@@ -1,47 +1,34 @@
 // Module ID: 1802
 // Function ID: 1803
 // Name: react
-// Dependencies: [19, 1803]
-// Exports: useFrameCallback
+// Dependencies: [19, 1760]
+// Exports: useEvent
 
 // Module 1802 (react)
-import _modDef1803 from "module_1803" /* 1803 */;
 import react from "react" /* 19 */;
+import WorkletEventHandler from "WorkletEventHandler" /* 1760 */;
 
-let _window;
-let map;
-({ useEffect: _window, useRef: map } = react);
-let closure_2 = new _modDef1803();
-new _modDef1803();
+const useRef = react.useRef;
 
-export const useFrameCallback = function useFrameCallback(fn, arg1) {
-  let closure_0 = fn;
-  let flag = arg1;
-  if (arg1 === undefined) {
-    flag = true;
+export const useEvent = function useEvent(fn, cResult, doDependenciesDiffer) {
+  let items = cResult;
+  if (cResult === undefined) {
+    items = [];
   }
-  let closure_1;
-  const obj = {
-    setActive(isActive) {
-      const result = closure_2.manageStateFrameCallback(closure_1.current.callbackId, isActive);
-      closure_1.current.isActive = isActive;
-    },
-    isActive: flag,
-    callbackId: -1
-  };
-  const tmp = closure_1(obj);
-  closure_1 = tmp;
-  const items = [fn, flag];
-  closure_0(() => {
-    let closure_129_0;
-    let current;
-    closure_1.current.callbackId = closure_2.registerFrameCallback(fn);
-    ({ current: closure_129_0, current } = closure_1);
-    current.setActive(closure_1.current.isActive);
-    return () => {
-      const result = closure_2_2.unregisterFrameCallback(callbackId.callbackId);
-      callbackId.callbackId = -1;
-    };
-  }, items);
+  let flag = doDependenciesDiffer;
+  if (doDependenciesDiffer === undefined) {
+    flag = false;
+  }
+  const tmp = useRef(null);
+  if (null === tmp.current) {
+    const self = this;
+    const self2 = this;
+    tmp.current = { workletEventHandler: new WorkletEventHandler.WorkletEventHandler(fn, items) };
+    const obj2 = { workletEventHandler: new WorkletEventHandler.WorkletEventHandler(fn, items) };
+  } else if (flag) {
+    tmp.current.workletEventHandler.updateEventHandler(fn, items);
+    const obj = { workletEventHandler: tmp.current.workletEventHandler };
+    tmp.current = obj;
+  }
   return tmp.current;
 };

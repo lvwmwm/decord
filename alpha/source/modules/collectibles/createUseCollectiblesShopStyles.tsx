@@ -1,15 +1,15 @@
-// Module ID: 10829
-// Function ID: 10830
+// Module ID: 11178
+// Function ID: 11179
 // Name: createUseCollectiblesShopStyles
-// Dependencies: [32, 4885, 7912, 7076, 573, 2]
+// Dependencies: [32, 5079, 8331, 7262, 573, 2]
 // Exports: default
 
-// Module 10829 (createUseCollectiblesShopStyles)
+// Module 11178 (createUseCollectiblesShopStyles)
 import useStateFromStores from "useStateFromStores" /* 573 */;
-import _modDef7076 from "module_7076" /* 7076 */;
-import UserProfileGradientUtils from "UserProfileGradientUtils" /* 7912 */;
+import _modDef7262 from "module_7262" /* 7262 */;
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8331 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/createUseCollectiblesShopStyles.tsx");
@@ -110,7 +110,7 @@ export default function createUseCollectiblesShopStyles(arg0) {
           const obj9 = { r: tmp9, g: tmp10, b: tmp11 };
           _slicedToArray(tmpResult.getValueInColorGradientByPercentage(items1, items2, 50), 3);
           [obj7, obj8] = backgroundColors;
-          obj6 = _modDef7076(obj9);
+          obj6 = _modDef7262(obj9);
           const toRgbResult2 = obj7.toRgb();
           const items3 = [, , ];
           ({ r: arr4[0], g: arr4[1], b: arr4[2] } = toRgbResult2);
@@ -121,7 +121,7 @@ export default function createUseCollectiblesShopStyles(arg0) {
           [tmp16, tmp17, tmp18] = tmpResult3.getValueInColorGradientByPercentage(items3, items4, 50);
           const obj10 = { r: tmp16, g: tmp17, b: tmp18 };
           _slicedToArray(tmpResult3.getValueInColorGradientByPercentage(items3, items4, 50), 3);
-          obj11 = _modDef7076(obj10);
+          obj11 = _modDef7262(obj10);
         }
         tmp19 = obj5;
       }
@@ -147,7 +147,7 @@ export default function createUseCollectiblesShopStyles(arg0) {
           [tmp42, tmp43, tmp44] = tmpResult4.getValueInColorGradientByPercentage(items5, items6, 50);
           const obj16 = { r: tmp42, g: tmp43, b: tmp44 };
           _slicedToArray(tmpResult4.getValueInColorGradientByPercentage(items5, items6, 50), 3);
-          obj36 = _modDef7076(obj16);
+          obj36 = _modDef7262(obj16);
         }
         tmp20 = obj14;
       }
@@ -159,7 +159,7 @@ export default function createUseCollectiblesShopStyles(arg0) {
         let tmp28;
         if (null != obj12.backgroundColors) {
           const primary = obj12.backgroundColors.primary;
-          const obj18 = { primary: _modDef7076(obj19), secondary: _modDef7076(obj20), tertiary: tmp24, border: _modDef7076(obj22), label: _modDef7076(obj23) };
+          const obj18 = { primary: _modDef7262(obj19), secondary: _modDef7262(obj20), tertiary: tmp24, border: _modDef7262(obj22), label: _modDef7262(obj23) };
           const toHslResult = primary.toHsl();
           ({ h, s, l } = toHslResult);
           const secondary = obj12.backgroundColors.secondary;
@@ -173,7 +173,7 @@ export default function createUseCollectiblesShopStyles(arg0) {
             ({ h: h3, s: s3, l: l3 } = tertiary.toHsl());
             const obj21 = { h: h3, s: s3 * stateFromStores, l: l3 };
             tertiary.toHsl();
-            tmp24 = tmp22(7076)(obj21);
+            tmp24 = tmp22(7262)(obj21);
           }
           const border = obj12.backgroundColors.border;
           ({ h: h4, s: s4, l: l4 } = border.toHsl());
@@ -201,7 +201,7 @@ export default function createUseCollectiblesShopStyles(arg0) {
         tmp29 = undefined;
         if (null != obj12.buttonColors) {
           const primary2 = obj12.buttonColors.primary;
-          const obj25 = { primary: _modDef7076(obj26), secondary: _modDef7076(obj27), text: _modDef7076(obj28) };
+          const obj25 = { primary: _modDef7262(obj26), secondary: _modDef7262(obj27), text: _modDef7262(obj28) };
           ({ h: h6, s: s6, l: l6 } = primary2.toHsl());
           obj26 = { h: h6, s: s6 * stateFromStores, l: l6 };
           primary2.toHsl();

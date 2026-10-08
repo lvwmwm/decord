@@ -1,9 +1,9 @@
-// Module ID: 6079
-// Function ID: 6080
+// Module ID: 6265
+// Function ID: 6266
 // Name: TableRadioGroup
-// Dependencies: [32, 19, 1085, 21, 558, 576, 6080, 6078, 6081, 2]
+// Dependencies: [32, 19, 1085, 21, 558, 576, 6266, 6264, 6267, 2]
 
-// Module 6079 (TableRadioGroup)
+// Module 6265 (TableRadioGroup)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -18,7 +18,7 @@ let react = react_mod;
 const NOOP = Constants.NOOP;
 let jsx = Fragment.jsx;
 let context = react.createContext({ selectedValue: null, onSelect: NOOP });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupRef) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRadioGroup(groupRef) {
   let accessibilityLabel;
   let c3;
   let children;
@@ -65,7 +65,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupRef) => {
         tmp9 = cResult[4];
       }
       const imperativeHandle = obj2.useImperativeHandle(groupRef, tmp8, tmp9);
-      context = obj2.useContext(tmp(6080).RedesignCompatContext);
+      context = obj2.useContext(tmp(6266).RedesignCompatContext);
       if (cResult[5] === tmp4) {
         let tmp12;
         if (cResult[6] === onChange) {
@@ -110,7 +110,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupRef) => {
               }
             }
             const obj4 = { accessibilityRole: "radiogroup", accessibilityLabel, title, description, helperText, hasIcons, children: tmp14 };
-            const tmp19 = context(tmp(6081).TableRowGroup, obj4);
+            const tmp19 = context(tmp(6267).TableRowGroup, obj4);
             cResult[16] = accessibilityLabel;
             cResult[17] = description;
             cResult[18] = hasIcons;
@@ -172,7 +172,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupRef) => {
       tmp12 = fn2;
     }
   }
-  const fn = function u() {
+  const fn = function s() {
     return {
       setValue(arg0) {
         const tmp = closure_1_1;
@@ -196,7 +196,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupRef) => {
   cResult[4] = items;
   tmp9 = items;
   tmp8 = fn;
-}) : ((arg0) => {
+}) : (function TableRadioGroup(arg0) {
   let Children;
   let _undefined;
   let accessibilityLabel;
@@ -254,7 +254,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupRef) => {
       return selectedValue;
     }
   }), items);
-  jsx = obj.useContext(onChange(6080).RedesignCompatContext);
+  jsx = obj.useContext(onChange(6266).RedesignCompatContext);
   const items1 = [tmp, onChange];
   onSelect = obj.useCallback((arg0) => {
     const tmp = closure_1;
@@ -283,7 +283,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupRef) => {
     })
   });
   Children = obj.Children;
-  const TableRowGroup = onChange(6081).TableRowGroup;
+  const TableRowGroup = onChange(6267).TableRowGroup;
   return <Provider value={react.useMemo(() => ({ selectedValue, onSelect }), items2)}>{null}</Provider>;
 });
 const result = size.fileFinishedImporting("design/components/TableRow/native/TableRadioGroup.native.tsx");

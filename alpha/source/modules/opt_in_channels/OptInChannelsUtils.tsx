@@ -1,28 +1,28 @@
-// Module ID: 11189
-// Function ID: 11190
+// Module ID: 11306
+// Function ID: 11307
 // Name: OptInChannelsUtils
-// Dependencies: [19, 2051, 6613, 4911, 4525, 1377, 1085, 2058, 7058, 5078, 6737, 5709, 5049, 6614, 7052, 11190, 6612, 1112, 558, 576, 4704, 2036, 504, 1126, 4467, 11, 2]
+// Dependencies: [19, 2063, 6790, 6040, 4717, 1389, 1085, 2070, 7245, 5972, 6911, 6099, 5417, 6791, 7239, 11307, 6789, 1112, 558, 576, 4898, 2048, 504, 1126, 4659, 11, 2]
 // Exports: clearRecentChannels, getActiveAgoTimestamp, getFirstRouteFor, useFilterCategoriesByQuery
 
-// Module 11189 (OptInChannelsUtils)
+// Module 11306 (OptInChannelsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef4467 from "module_4467" /* 4467 */;
-import useChannelName from "useChannelName" /* 5049 */;
-import ReadStateConstants from "ReadStateConstants" /* 5078 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5709 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 6612 */;
-import ChannelListState from "ChannelListState" /* 7052 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 7058 */;
-import RecentChannelsActionCreators from "RecentChannelsActionCreators" /* 11190 */;
+import _modDef4659 from "module_4659" /* 4659 */;
+import useChannelName from "useChannelName" /* 5417 */;
+import ReadStateConstants from "ReadStateConstants" /* 5972 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6099 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 6789 */;
+import ChannelListState from "ChannelListState" /* 7239 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 7245 */;
+import RecentChannelsActionCreators from "RecentChannelsActionCreators" /* 11307 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 6613 */;
-import ReadStateStore from "ReadStateStore" /* 4911 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 6790 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
-import ChannelConstants from "ChannelConstants" /* 2058 */;
+import ChannelConstants from "ChannelConstants" /* 2070 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ function setIndex(arg0, index) {
 const ChannelListGuildActionRow = GuildSidebarConstants.ChannelListGuildActionRow;
 const ReadStateTypes = ReadStateConstants.ReadStateTypes;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, _categories, arg2, rowHeight) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelBrowserSections(arg0, _categories, arg2, rowHeight) {
   let closure_0;
   let closure_2;
   let first;
@@ -153,7 +153,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, _categories, a
   cResult[12] = arg2;
   cResult[13] = E;
   tmp11 = E;
-}) : ((arg0, _categories, arg2, rowHeight) => {
+}) : (function useChannelBrowserSections(arg0, _categories, arg2, rowHeight) {
   let closure_0;
   let closure_2;
   _require = arg0;
@@ -207,7 +207,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, _categories, a
   return mapped;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelBrowserChannelCount(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -257,7 +257,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return num5;
   }
-}) : ((arg0) => {
+}) : (function useChannelBrowserChannelCount(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildCategoryStore];
@@ -400,7 +400,7 @@ export const getActiveAgoTimestamp = function getActiveAgoTimestamp(id) {
   const intl = intl2.intl;
   const formatToPlainString = intl.formatToPlainString;
   const v8N0BHR = intl2.t["8N0BHR"];
-  const tmp2 = _modDef4467;
+  const tmp2 = _modDef4659;
   const extractTimestamp = SnowflakeUtilsDefault.extractTimestamp;
   SnowflakeUtilsDefault;
   let lastMessageIdResult = ReadStateStore.lastMessageId(id);

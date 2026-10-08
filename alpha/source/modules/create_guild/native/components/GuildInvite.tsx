@@ -1,39 +1,39 @@
-// Module ID: 12394
-// Function ID: 12395
+// Module ID: 12490
+// Function ID: 12491
 // Name: GuildInvite
-// Dependencies: [32, 19, 17, 9567, 2051, 9495, 4513, 9507, 6475, 1085, 21, 4896, 6075, 587, 1252, 558, 576, 5880, 1126, 6000, 9566, 1490, 5777, 504, 5786, 9521, 5597, 6017, 4735, 7268, 12372, 9494, 5076, 4892, 12395, 1188, 9534, 5916, 9564, 5601, 6626, 2]
+// Dependencies: [32, 19, 17, 8738, 2063, 8659, 4705, 8673, 6653, 1085, 21, 5090, 6261, 587, 1264, 558, 576, 8192, 1126, 6184, 8737, 1502, 5360, 504, 5369, 8691, 5392, 6203, 4929, 8669, 12468, 8658, 5105, 5086, 12491, 1200, 8705, 6189, 8735, 5375, 6803, 2]
 
-// Module 12394 (GuildInvite)
+// Module 12490 (GuildInvite)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5076 */;
-import react_native from "react-native" /* 5786 */;
-import GroupIcon from "GroupIcon" /* 5880 */;
-import TableRow2 from "TableRow" /* 6000 */;
-import NavigatorHeader from "NavigatorHeader" /* 6017 */;
-import NavigatorConstants from "NavigatorConstants" /* 6075 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 6475 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9494 */;
-import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 9521 */;
-import InstantInviteRowDefault from "InstantInviteRow" /* 9566 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9567 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 12372 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5105 */;
+import react_native from "react-native" /* 5369 */;
+import TableRow2 from "TableRow" /* 6184 */;
+import NavigatorHeader from "NavigatorHeader" /* 6203 */;
+import NavigatorConstants from "NavigatorConstants" /* 6261 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 6653 */;
+import GroupIcon from "GroupIcon" /* 8192 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8658 */;
+import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 8691 */;
+import InstantInviteRowDefault from "InstantInviteRow" /* 8737 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 8738 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 12468 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import ChannelStore_mod from "ChannelStore" /* 2051 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 9495 */;
-import GuildChannelStore from "GuildChannelStore" /* 4513 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 9507 */;
+import ChannelStore_mod from "ChannelStore" /* 2063 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 8659 */;
+import GuildChannelStore from "GuildChannelStore" /* 4705 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 8673 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let defaultChannel, importDefault, invite, navigation, setOptionsResult;
+let defaultChannel, importDefault, navigation, ref, setOptionsResult;
 
 let StyleSheet;
 let closure_14;
@@ -67,7 +67,7 @@ size = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, height: 3
 obj5 = { height: StyleSheet.hairlineWidth, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginStart: nativeDefault.modules.mobile.TABLE_ROW_DIVIDER_PADDING };
 let closure_21 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((openInviteSheet) => {
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function SeeMoreFooter(openInviteSheet) {
   let first;
   let tmp12;
   let tmp8;
@@ -111,7 +111,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((openInviteShee
   cResult[5] = tmp8;
   cResult[6] = tmp15;
   tmp14 = tmp15;
-}) : ((openInviteSheet) => {
+}) : (function SeeMoreFooter(openInviteSheet) {
   let intl;
   let obj2;
   openInviteSheet = openInviteSheet.openInviteSheet;
@@ -122,9 +122,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((openInviteShee
   return closure_19(TableRow, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((invite) => {
+let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInviteSuggestionRows(invite) {
   let openInviteSheet;
-  let separator;
   let suggestions;
   let tmp3;
   let obj = invite(576);
@@ -132,7 +131,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((invite) => {
   invite = invite.invite;
   ({ suggestions, openInviteSheet } = invite);
   const tmp2 = closure_21();
-  importDefault = tmp2;
+  const separator = tmp2;
   if (cResult[0] !== suggestions) {
     const substr = suggestions.slice(0, 6);
     cResult[0] = suggestions;
@@ -144,90 +143,76 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((invite) => {
   if (0 === suggestions.length) {
     return null;
   } else {
+    let tmp5;
     if (cResult[2] !== invite.code) {
-      class S {
-        constructor(arg0) {
-          ({ item, index } = invite);
-          obj = { row: item, code: invite.code, start: 0 === index };
-          return jsx(closure_1(closure_2[20]), obj);
-        }
+      function renderSuggestionRow(arg0) {
+        let index;
+        let item;
+        ({ item, index } = arg0);
+        const obj = { row: item, code: invite.code, start: 0 === index };
+        return closure_19(InstantInviteRowDefault, obj);
       }
       cResult[2] = invite.code;
-      cResult[3] = S;
+      cResult[3] = renderSuggestionRow;
+      tmp5 = renderSuggestionRow;
     } else {
-      class S {
-        constructor(arg0) {
-          ({ item, index } = invite);
-          obj = { row: item, code: invite.code, start: 0 === index };
-          return jsx(closure_1(closure_2[20]), obj);
-        }
-      }
+      tmp5 = cResult[3];
     }
     if (cResult[4] === openInviteSheet) {
-      let tmp12;
-      class S {
-        constructor(arg0) {
-          ({ item, index } = invite);
-          obj = { row: item, code: invite.code, start: 0 === index };
-          return jsx(closure_1(closure_2[20]), obj);
-        }
+      let tmp6;
+      let tmp9;
+      let tmp11;
+      if (cResult[5] === suggestions.length) {
+        tmp6 = cResult[6];
       }
       if (cResult[7] !== tmp2.separator) {
-        class S {
-          constructor(arg0) {
-            ({ item, index } = invite);
-            obj = { row: item, code: invite.code, start: 0 === index };
-            return jsx(closure_1(closure_2[20]), obj);
-          }
-        }
+        const fn = function f() {
+          const obj = { style: separator.separator };
+          return closure_19(metroRequire, obj);
+        };
         cResult[7] = tmp2.separator;
-        cResult[8] = tmp10;
+        cResult[8] = fn;
+        tmp9 = fn;
       } else {
-        class S {
-          constructor(arg0) {
-            ({ item, index } = invite);
-            obj = { row: item, code: invite.code, start: 0 === index };
-            return jsx(closure_1(closure_2[20]), obj);
-          }
-        }
+        tmp9 = cResult[8];
       }
       const _Symbol = Symbol;
       if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
         class E {
-          constructor(arg0) {
-            return invite.item.id;
+          constructor(item) {
+            return item.item.id;
           }
         }
         cResult[9] = E;
-        tmp12 = E;
+        tmp11 = E;
       } else {
         class E {
-          constructor(arg0) {
-            return invite.item.id;
+          constructor(item) {
+            return item.item.id;
           }
         }
       }
       if (cResult[10] === tmp3) {
         class E {
-          constructor(arg0) {
-            return invite.item.id;
+          constructor(item) {
+            return item.item.id;
           }
         }
       }
-      const obj2 = { data: tmp3, renderItem: tmp5, contentContainerStyle: tmp2.suggestionRowsContainer, ListFooterComponent: tmp6, ItemSeparatorComponent: tmp9, keyExtractor: tmp12 };
+      const obj2 = { data: tmp3, renderItem: tmp5, contentContainerStyle: tmp2.suggestionRowsContainer, ListFooterComponent: tmp6, ItemSeparatorComponent: tmp9, keyExtractor: tmp11 };
       cResult[10] = tmp3;
       cResult[11] = tmp5;
       cResult[12] = tmp2.suggestionRowsContainer;
       cResult[13] = tmp6;
       cResult[14] = tmp9;
       cResult[15] = closure_19(closure_7, obj2);
-      const tmp16 = closure_19(closure_7, obj2);
+      const tmp15 = closure_19(closure_7, obj2);
     }
     let tmp7 = null;
     if (suggestions.length > 6) {
       class E {
-        constructor(arg0) {
-          return invite.item.id;
+        constructor(item) {
+          return item.item.id;
         }
       }
       const obj3 = { openInviteSheet };
@@ -236,8 +221,9 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((invite) => {
     cResult[4] = openInviteSheet;
     cResult[5] = suggestions.length;
     cResult[6] = tmp7;
+    tmp6 = tmp7;
   }
-}) : ((openInviteSheet) => {
+}) : (function GuildInviteSuggestionRows(openInviteSheet) {
   let code;
   let obj3;
   let require;
@@ -254,7 +240,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((invite) => {
     const obj2 = { style: tmp.suggestionsContainer, children: closure_19(tmp8, obj3) };
     obj3 = {
       data: tmp2,
-      renderItem(arg0) {
+      renderItem: function renderSuggestionRow(arg0) {
           let index;
           let item;
           ({ item, index } = arg0);
@@ -283,19 +269,19 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((invite) => {
   return tmp6Result2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInvite(arg0) {
   let closeOnEditInviteLink;
   let closure_1;
   let inviteSuggestionRows;
+  let items4;
   let onClose;
-  let ref;
   let tmp11;
   let tmp12;
   let tmp15;
   let tmp16;
   let tmp21;
+  let tmp29;
   let tmp30;
-  let tmp31;
   let tmp = onClose;
   let tmp2 = navigation;
   let obj = onClose(navigation[16]);
@@ -360,45 +346,62 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult6 = tmp(tmp2[23]);
   const stateFromStores1 = tmpResult6.useStateFromStores(tmp15, tmp16);
   if (cResult[4] !== isScreenReaderEnabled) {
-    const fn2 = function z() {
-      const tmp = isScreenReaderEnabled && null != ref.current;
-      if (tmp) {
-        const obj2 = { ref, delay: 100 };
-        const obj = react_native;
-        const result = obj.setAccessibilityFocus(obj2);
+    class W {
+      constructor() {
+        const tmp = isScreenReaderEnabled && null != ref.current;
+        if (tmp) {
+          const obj2 = { ref, delay: 100 };
+          const obj = react_native;
+          const result = obj.setAccessibilityFocus(obj2);
+        }
       }
-    };
+    }
     cResult[4] = isScreenReaderEnabled;
-    cResult[5] = fn2;
-    tmp21 = fn2;
+    cResult[5] = W;
+    tmp21 = W;
   } else {
-    tmp21 = cResult[5];
+    class W {
+      constructor() {
+        const tmp = isScreenReaderEnabled && null != ref.current;
+        if (tmp) {
+          const obj2 = { ref, delay: 100 };
+          const obj = react_native;
+          const result = obj.setAccessibilityFocus(obj2);
+        }
+      }
+    }
   }
   if (cResult[6] === stateFromStores) {
-    let tmp22;
-    let tmp24;
-    let tmp27;
-    if (cResult[7] === isScreenReaderEnabled) {
-      tmp22 = cResult[8];
+    let tmp23;
+    let tmp26;
+    class W {
+      constructor() {
+        const tmp = isScreenReaderEnabled && null != ref.current;
+        if (tmp) {
+          const obj2 = { ref, delay: 100 };
+          const obj = react_native;
+          const result = obj.setAccessibilityFocus(obj2);
+        }
+      }
     }
-    const effect = obj4.useEffect(tmp21, tmp22);
+    const effect = obj4.useEffect(tmp21, items4);
     const _Symbol = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      class M {
+      class H {
         constructor() {
           return inviteSuggestionRows.getInviteSuggestionRows();
         }
       }
-      cResult[9] = M;
-      tmp24 = M;
+      cResult[9] = H;
+      tmp23 = H;
     } else {
-      class M {
+      class H {
         constructor() {
           return inviteSuggestionRows.getInviteSuggestionRows();
         }
       }
     }
-    const first1 = tmp8(obj4.useState(tmp24), 1)[0];
+    const first1 = tmp8(obj4.useState(tmp23), 1)[0];
     class P {
       constructor() {
         const inviteSettings = CreateInviteModalStore.getInviteSettings();
@@ -419,8 +422,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     }
-    const tmp26 = stateFromStores1();
-    ChannelStore = tmp26;
+    const tmp25 = stateFromStores1();
+    ChannelStore = tmp25;
     if (cResult[10] !== stateFromStores1) {
       class Y {
         constructor() {
@@ -433,7 +436,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       cResult[10] = stateFromStores1;
       cResult[11] = Y;
-      tmp27 = Y;
+      tmp26 = Y;
     } else {
       class Y {
         constructor() {
@@ -445,8 +448,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     }
-    require("useMountEffect")(tmp27);
-    if (cResult[12] === tmp26) {
+    require("useMountEffect")(tmp26);
+    if (cResult[12] === tmp25) {
       class Y {
         constructor() {
           const obj = { omitUserIds: new Set(), channel: stateFromStores1 };
@@ -456,7 +459,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const inviteSuggestions = loadInviteSuggestions(obj);
         }
       }
-      const effect1 = obj4.useEffect(tmp30, tmp31);
+      const effect1 = obj4.useEffect(tmp29, tmp30);
       if (cResult[16] === first) {
         class Y {
           constructor() {
@@ -547,20 +550,19 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     }
-    const items3 = [tmp26, stateFromStores];
-    cResult[12] = tmp26;
+    const items3 = [tmp25, stateFromStores];
+    cResult[12] = tmp25;
     cResult[13] = stateFromStores;
     cResult[14] = K;
     cResult[15] = items3;
-    tmp30 = K;
-    tmp31 = items3;
+    tmp29 = K;
+    tmp30 = items3;
   }
-  const items4 = [isScreenReaderEnabled, stateFromStores];
+  items4 = [isScreenReaderEnabled, stateFromStores];
   cResult[6] = stateFromStores;
   cResult[7] = isScreenReaderEnabled;
   cResult[8] = items4;
-  tmp22 = items4;
-}) : ((closeOnEditInviteLink) => {
+}) : (function GuildInvite(closeOnEditInviteLink) {
   let Button;
   let intl;
   let intl2;
@@ -578,7 +580,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const onClose = closeOnEditInviteLink.onClose;
   navigation = undefined;
-  let ref;
+  ref = undefined;
   channel = undefined;
   let closure_10;
   let tmp = closure_21();
@@ -706,7 +708,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (stateFromStores != null) {
         code = stateFromStores.code;
       }
-      const tmp2Result = tmp2(9494);
+      const tmp2Result = tmp2(8658);
       handleOpenShareSheet(code, tmp, tmp2Result.getShareMessage(closure_10));
       closure_6(true);
     }

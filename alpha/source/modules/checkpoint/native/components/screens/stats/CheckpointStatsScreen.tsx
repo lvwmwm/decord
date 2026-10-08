@@ -1,20 +1,18 @@
-// Module ID: 15559
-// Function ID: 15560
+// Module ID: 15830
+// Function ID: 15831
 // Name: CheckpointStatsScreen
-// Dependencies: [17, 21, 4896, 587, 558, 576, 15555, 15557, 2]
+// Dependencies: [17, 21, 5090, 587, 558, 576, 15821, 15823, 2]
 
-// Module 15559 (CheckpointStatsScreen)
+// Module 15830 (CheckpointStatsScreen)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import CheckpointTextDefault from "CheckpointText" /* 15555 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 15557 */;
+import CheckpointTextDefault from "CheckpointText" /* 15821 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 15823 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let name;
 
 let closure_4;
 let hasOwnProperty;
@@ -24,7 +22,7 @@ const View = react_native.View;
 let obj = { container: obj2, name: { textTransform: "uppercase" } };
 obj2 = { flexGrow: 1, justifyContent: "center", gap: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_64 };
 let closure_6 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointStatsScreen(name) {
   let first;
   let items;
   let obj3;
@@ -67,7 +65,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
   cResult[2] = tmp3.name;
   cResult[3] = tmp9;
   tmp8 = tmp9;
-}) : ((name) => {
+}) : (function CheckpointStatsScreen(name) {
   let items;
   let obj2;
   name = name.name;

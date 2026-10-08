@@ -1,29 +1,27 @@
-// Module ID: 16336
-// Function ID: 16337
+// Module ID: 16596
+// Function ID: 16597
 // Name: UnreadBars
-// Dependencies: [19, 17, 4885, 1085, 21, 4896, 5922, 587, 4733, 4595, 4861, 4862, 1188, 1126, 558, 576, 504, 12080, 2]
+// Dependencies: [19, 17, 5079, 1085, 21, 5090, 5902, 587, 4927, 4787, 5055, 5056, 1200, 1126, 558, 576, 504, 12154, 2]
 
-// Module 16336 (UnreadBars)
+// Module 16596 (UnreadBars)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import native2 from "native" /* 4595 */;
-import HapticUtils from "HapticUtils" /* 4861 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4862 */;
-import TransitionGroup2 from "TransitionGroup" /* 12080 */;
+import native from "native" /* 1200 */;
+import native2 from "native" /* 4787 */;
+import HapticUtils from "HapticUtils" /* 5055 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5056 */;
+import TransitionGroup2 from "TransitionGroup" /* 12154 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
-import TextStyles from "TextStyles" /* 5922 */;
-import ColorUtils_mod from "ColorUtils" /* 4733 */;
+import createStyles from "createStyles" /* 5090 */;
+import TextStyles from "TextStyles" /* 5902 */;
+import ColorUtils_mod from "ColorUtils" /* 4927 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let scrollToLocation;
 
 let ColorUtils;
 let c9;
@@ -195,7 +193,7 @@ class UnreadBar extends PureComponent {
 const prototype = UnreadBar.prototype;
 UnreadBar.defaultProps = { bottom: false };
 UnreadBar.contextType = native2.ThemeContext;
-const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollToLocation) => {
+const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadBars(scrollToLocation) {
   let afterItem;
   let beforeItem;
   let compact;
@@ -238,18 +236,18 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollToLocation) 
   const tmpResult = scrollToLocation(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
   if (cResult[4] !== scrollToLocation) {
-    const fn = function _(section) {
+    function handlePress(section) {
       const obj = { section: section.section, item: section.row, animated: true };
       scrollToLocation(obj);
-    };
+    }
     cResult[4] = scrollToLocation;
     class T {
       constructor() {
         return useReducedMotion.useReducedMotion;
       }
     }
-    cResult[5] = fn;
-    tmp10 = fn;
+    cResult[5] = handlePress;
+    tmp10 = handlePress;
   } else {
     tmp10 = cResult[5];
   }
@@ -284,7 +282,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollToLocation) 
                   tmp20[0] = react.Fragment;
                   const items1 = [tmp11, tmp16];
                   tmp20[1] = items1;
-                  const tmp22 = closure_9(scrollToLocation(12080).TransitionGroup, tmp20);
+                  const tmp22 = closure_9(scrollToLocation(12154).TransitionGroup, tmp20);
                   cResult[18] = tmp11;
                   cResult[19] = tmp16;
                   cResult[20] = tmp22;
@@ -326,7 +324,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollToLocation) 
   cResult[10] = stateFromStores;
   cResult[11] = tmp12;
   tmp11 = tmp12;
-}) : ((contentInset) => {
+}) : (function UnreadBars(contentInset) {
   let afterItem;
   let beforeItem;
   let compact;

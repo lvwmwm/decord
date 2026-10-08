@@ -1,19 +1,19 @@
-// Module ID: 7855
-// Function ID: 7856
+// Module ID: 8273
+// Function ID: 8274
 // Name: useCollectiblesData
-// Dependencies: [32, 7066, 7081, 558, 576, 573, 2]
+// Dependencies: [32, 7252, 7267, 558, 576, 573, 2]
 
-// Module 7855 (useCollectiblesData)
+// Module 8273 (useCollectiblesData)
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7066 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7081 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7252 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7267 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCollectiblesData(arg0) {
   let closure_0;
   let first;
   let tmp10;
@@ -79,7 +79,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = stateFromStores;
   cResult[9] = obj2;
   tmp14 = obj2;
-}) : ((arg0) => {
+}) : (function useCollectiblesData(arg0) {
   let closure_0;
   let items1;
   let obj3;

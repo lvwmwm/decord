@@ -1,23 +1,22 @@
-// Module ID: 15671
-// Function ID: 15672
+// Module ID: 15951
+// Function ID: 15952
 // Name: UserSettingsDesignSystemSegmentedControl
-// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 4892, 9317, 9318, 10987, 4596, 5601, 5600, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 587, 558, 576, 5086, 8505, 8752, 11211, 4788, 5375, 5373, 2]
 
-// Module 15671 (UserSettingsDesignSystemSegmentedControl)
+// Module 15951 (UserSettingsDesignSystemSegmentedControl)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4596 */;
-import Text_Text from "Text/Text" /* 4892 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4788 */;
+import Text_Text from "Text/Text" /* 5086 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let announceResult;
 
 let closure_4;
 let hasOwnProperty;
@@ -30,7 +29,7 @@ let obj = { container: { margin: 16, flex: 1, alignItems: "center", padding: 40 
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderWidth: 2, borderColor: nativeDefault.colors.BORDER_STRONG, flex: 1, alignItems: "center", justifyContent: "center", height: 400 };
 let closure_8 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSegmentedControlItems(arg0) {
   let items1;
   let obj3;
   let obj4;
@@ -65,7 +64,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp2.item;
   cResult[2] = items;
   tmp3 = items;
-}) : ((arg0) => {
+}) : (function useSegmentedControlItems(arg0) {
   let closure_0 = arg0;
   const tmp = closure_8();
   const item = tmp;
@@ -95,7 +94,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsDesignSystemSegmentedControl() {
   let closure_2;
   let first;
   let items;
@@ -112,6 +111,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] === tmp9) {
     let tmp10;
     let tmp15;
+    let tmp14;
     if (cResult[1] === tmp5) {
       tmp10 = cResult[2];
     }
@@ -119,53 +119,32 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const segmentedControlState = tmpResult.useSegmentedControlState(tmp10);
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      class I {
-        constructor(arg0) {
-          tmp = closure_0(arg0.nativeEvent.layout.width);
-          return;
-        }
-      }
-      cResult[3] = I;
-    } else {
-      class I {
-        constructor(arg0) {
-          tmp = closure_0(arg0.nativeEvent.layout.width);
-          return;
-        }
-      }
+      const fn = function _(nativeEvent) {
+        _require(nativeEvent.nativeEvent.layout.width);
+      };
+      cResult[3] = fn;
     }
     if (cResult[4] !== segmentedControlState) {
-      class I {
-        constructor(arg0) {
-          tmp = closure_0(arg0.nativeEvent.layout.width);
-          return;
-        }
-      }
       const obj2 = { state: segmentedControlState };
+      const tmp17 = closure_7(require("SegmentedControl").SegmentedControl, obj2);
       const obj3 = { state: segmentedControlState };
-      const tmp16 = closure_7(require("SegmentedControl").SegmentedControl, obj2);
-      const tmp17 = closure_7(require("SegmentedControlPages").SegmentedControlPages, obj3);
+      const tmp18 = closure_7(require("SegmentedControlPages").SegmentedControlPages, obj3);
       cResult[4] = segmentedControlState;
-      cResult[5] = tmp16;
-      cResult[6] = tmp17;
-      tmp15 = tmp17;
+      cResult[5] = tmp17;
+      cResult[6] = tmp18;
+      tmp15 = tmp18;
+      tmp14 = tmp17;
     } else {
-      class I {
-        constructor(arg0) {
-          tmp = closure_0(arg0.nativeEvent.layout.width);
-          return;
-        }
-      }
+      tmp14 = cResult[5];
       tmp15 = cResult[6];
     }
     if (cResult[7] !== first) {
       class P {
         constructor() {
-          sum = closure_1 + 1;
-          tmp2 = closure_2(sum);
-          AccessibilityAnnouncer = closure_0(closure_1[12]).AccessibilityAnnouncer;
-          announceResult = AccessibilityAnnouncer.announce("Tab added, " + sum + " tabs", "polite");
-          return;
+          const sum = first + 1;
+          closure_2(sum);
+          const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+          AccessibilityAnnouncer.announce("Tab added, " + sum + " tabs", "polite");
         }
       }
       cResult[7] = first;
@@ -173,111 +152,104 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     } else {
       class P {
         constructor() {
-          sum = closure_1 + 1;
-          tmp2 = closure_2(sum);
-          AccessibilityAnnouncer = closure_0(closure_1[12]).AccessibilityAnnouncer;
-          announceResult = AccessibilityAnnouncer.announce("Tab added, " + sum + " tabs", "polite");
-          return;
+          const sum = first + 1;
+          closure_2(sum);
+          const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+          AccessibilityAnnouncer.announce("Tab added, " + sum + " tabs", "polite");
         }
       }
     }
     if (cResult[9] === first >= 5) {
       class P {
         constructor() {
-          sum = closure_1 + 1;
-          tmp2 = closure_2(sum);
-          AccessibilityAnnouncer = closure_0(closure_1[12]).AccessibilityAnnouncer;
-          announceResult = AccessibilityAnnouncer.announce("Tab added, " + sum + " tabs", "polite");
-          return;
+          const sum = first + 1;
+          closure_2(sum);
+          const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+          AccessibilityAnnouncer.announce("Tab added, " + sum + " tabs", "polite");
         }
       }
       if (cResult[12] !== first) {
-        class O {
+        class D {
           constructor() {
-            diff = closure_1 - 1;
-            tmp2 = closure_2(diff);
-            AccessibilityAnnouncer = closure_0(closure_1[12]).AccessibilityAnnouncer;
-            announceResult = AccessibilityAnnouncer.announce("Tab removed, " + diff + " tabs", "polite");
-            return;
+            const diff = first - 1;
+            closure_2(diff);
+            const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+            AccessibilityAnnouncer.announce("Tab removed, " + diff + " tabs", "polite");
           }
         }
         cResult[12] = first;
-        cResult[13] = O;
+        cResult[13] = D;
       } else {
-        class O {
+        class D {
           constructor() {
-            diff = closure_1 - 1;
-            tmp2 = closure_2(diff);
-            AccessibilityAnnouncer = closure_0(closure_1[12]).AccessibilityAnnouncer;
-            announceResult = AccessibilityAnnouncer.announce("Tab removed, " + diff + " tabs", "polite");
-            return;
+            const diff = first - 1;
+            closure_2(diff);
+            const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+            AccessibilityAnnouncer.announce("Tab removed, " + diff + " tabs", "polite");
           }
         }
       }
       if (cResult[14] === 2 === first) {
-        class O {
+        class D {
           constructor() {
-            diff = closure_1 - 1;
-            tmp2 = closure_2(diff);
-            AccessibilityAnnouncer = closure_0(closure_1[12]).AccessibilityAnnouncer;
-            announceResult = AccessibilityAnnouncer.announce("Tab removed, " + diff + " tabs", "polite");
-            return;
+            const diff = first - 1;
+            closure_2(diff);
+            const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+            AccessibilityAnnouncer.announce("Tab removed, " + diff + " tabs", "polite");
           }
         }
-        if (cResult[17] === tmp20) {
-          class O {
+        if (cResult[17] === tmp21) {
+          class D {
             constructor() {
-              diff = closure_1 - 1;
-              tmp2 = closure_2(diff);
-              AccessibilityAnnouncer = closure_0(closure_1[12]).AccessibilityAnnouncer;
-              announceResult = AccessibilityAnnouncer.announce("Tab removed, " + diff + " tabs", "polite");
-              return;
+              const diff = first - 1;
+              closure_2(diff);
+              const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+              AccessibilityAnnouncer.announce("Tab removed, " + diff + " tabs", "polite");
             }
           }
-          if (cResult[20] === tmp28) {
-            class O {
+          if (cResult[20] === tmp29) {
+            class D {
               constructor() {
-                diff = closure_1 - 1;
-                tmp2 = closure_2(diff);
-                AccessibilityAnnouncer = closure_0(closure_1[12]).AccessibilityAnnouncer;
-                announceResult = AccessibilityAnnouncer.announce("Tab removed, " + diff + " tabs", "polite");
-                return;
+                const diff = first - 1;
+                closure_2(diff);
+                const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                AccessibilityAnnouncer.announce("Tab removed, " + diff + " tabs", "polite");
               }
             }
           }
           const obj4 = { spacing: 24, children: items };
-          items = [tmp14, tmp15, tmp28];
-          cResult[20] = tmp28;
+          items = [tmp14, tmp15, tmp29];
+          cResult[20] = tmp29;
           cResult[21] = tmp14;
           cResult[22] = tmp15;
           cResult[23] = closure_6(require("Stack/Stack").Stack, obj4);
-          const tmp33 = closure_6(require("Stack/Stack").Stack, obj4);
+          const tmp34 = closure_6(require("Stack/Stack").Stack, obj4);
         }
         const obj5 = { spacing: 8, direction: "horizontal", children: items1 };
-        items1 = [tmp20, tmp25];
-        cResult[17] = tmp20;
-        cResult[18] = tmp25;
+        items1 = [tmp21, tmp26];
+        cResult[17] = tmp21;
+        cResult[18] = tmp26;
         cResult[19] = closure_6(require("Stack/Stack").Stack, obj5);
-        const tmp30 = closure_6(require("Stack/Stack").Stack, obj5);
+        const tmp31 = closure_6(require("Stack/Stack").Stack, obj5);
       }
-      const obj6 = { text: "Remove Tab", variant: "destructive", size: "sm", disabled: 2 === first, onPress: tmp23 };
+      const obj6 = { text: "Remove Tab", variant: "destructive", size: "sm", disabled: 2 === first, onPress: tmp24 };
       cResult[14] = 2 === first;
-      cResult[15] = tmp23;
+      cResult[15] = tmp24;
       cResult[16] = closure_7(require("components/Button/Button").Button, obj6);
-      const tmp27 = closure_7(require("components/Button/Button").Button, obj6);
+      const tmp28 = closure_7(require("components/Button/Button").Button, obj6);
     }
-    const obj7 = { text: "Add Tab", variant: "active", size: "sm", disabled: first >= 5, onPress: tmp19 };
+    const obj7 = { text: "Add Tab", variant: "active", size: "sm", disabled: first >= 5, onPress: tmp20 };
     cResult[9] = first >= 5;
-    cResult[10] = tmp19;
+    cResult[10] = tmp20;
     cResult[11] = closure_7(require("components/Button/Button").Button, obj7);
-    const tmp22 = closure_7(require("components/Button/Button").Button, obj7);
+    const tmp23 = closure_7(require("components/Button/Button").Button, obj7);
   }
   const obj8 = { items: tmp9, pageWidth: tmp5, defaultIndex: 1 };
   cResult[0] = tmp9;
   cResult[1] = tmp5;
   cResult[2] = obj8;
   tmp10 = obj8;
-}) : (() => {
+}) : (function UserSettingsDesignSystemSegmentedControl() {
   let Stack;
   let closure_0;
   let closure_2;

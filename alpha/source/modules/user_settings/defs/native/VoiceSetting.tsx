@@ -1,17 +1,17 @@
-// Module ID: 15079
-// Function ID: 15080
+// Module ID: 15341
+// Function ID: 15342
 // Name: VoiceSetting
-// Dependencies: [1999, 1085, 558, 576, 504, 1126, 11142, 9702, 15080, 2]
+// Dependencies: [2011, 1085, 558, 576, 504, 1126, 11262, 10891, 15342, 2]
 
-// Module 15079 (VoiceSetting)
+// Module 15341 (VoiceSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 9702 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 10891 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -19,7 +19,7 @@ const require = globalThis.__r;
 let UserSettingsSections;
 let c3;
 ({ InputModes: c3, UserSettingsSections } = Constants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceSettingTrailing() {
   let mode;
   let tmp4;
   let tmp5;
@@ -56,7 +56,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[3];
   }
   return tmp8;
-}) : (() => {
+}) : (function useVoiceSettingTrailing() {
   let mode;
   let stringResult;
   const items = [MediaEngineStore];

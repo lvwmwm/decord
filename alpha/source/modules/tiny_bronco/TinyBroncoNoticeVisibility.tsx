@@ -1,22 +1,22 @@
-// Module ID: 14543
-// Function ID: 14544
+// Module ID: 14804
+// Function ID: 14805
 // Name: TinyBroncoNoticeVisibility
-// Dependencies: [1377, 1985, 5587, 5588, 558, 576, 504, 2]
+// Dependencies: [1389, 1997, 5918, 5917, 558, 576, 504, 2]
 // Exports: shouldShowAgeNotice
 
-// Module 14543 (TinyBroncoNoticeVisibility)
+// Module 14804 (TinyBroncoNoticeVisibility)
 import react from "react" /* 576 */;
-import Server from "Server" /* 1985 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5587 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5588 */;
-import UserStore from "UserStore" /* 1377 */;
+import Server from "Server" /* 1997 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5917 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5918 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowAgeNotice() {
   let tmp5;
   let tmp6;
   const obj = react;
@@ -25,7 +25,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let isFeatureAgeGated = obj2.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.NOTICE);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    const fn = function u() {
+    const fn = function o() {
       currentUser = currentUser.getCurrentUser();
       let prop;
       if (currentUser != null) {
@@ -46,7 +46,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     isFeatureAgeGated = tmpResult.useStateFromStores(tmp5, tmp6);
   }
   return isFeatureAgeGated;
-}) : (() => {
+}) : (function useShouldShowAgeNotice() {
   const obj = RegionalFeatureConfigUtils;
   let isFeatureAgeGated = obj.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.NOTICE);
   const items = [UserStore];
@@ -65,7 +65,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return isFeatureAgeGated;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowAgeNoticePromo() {
   let tmp5;
   let tmp6;
   const obj = react;
@@ -74,7 +74,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let isFeatureAgeGated = obj2.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.NOTICE);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    const fn = function u() {
+    const fn = function o() {
       currentUser = currentUser.getCurrentUser();
       let prop;
       if (currentUser != null) {
@@ -95,7 +95,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     isFeatureAgeGated = tmpResult.useStateFromStores(tmp5, tmp6);
   }
   return isFeatureAgeGated;
-}) : (() => {
+}) : (function useShouldShowAgeNoticePromo() {
   const obj = RegionalFeatureConfigUtils;
   let isFeatureAgeGated = obj.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.NOTICE);
   const items = [UserStore];

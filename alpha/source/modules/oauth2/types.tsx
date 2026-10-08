@@ -1,9 +1,9 @@
-// Module ID: 8761
-// Function ID: 8762
+// Module ID: 9142
+// Function ID: 9143
 // Name: types
 // Dependencies: [2]
 
-// Module 8761 (types)
+// Module 9142 (types)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/oauth2/types.tsx");

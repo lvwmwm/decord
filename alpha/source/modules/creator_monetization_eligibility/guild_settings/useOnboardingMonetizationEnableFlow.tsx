@@ -1,25 +1,25 @@
-// Module ID: 17953
-// Function ID: 17954
+// Module ID: 18240
+// Function ID: 18241
 // Name: useOnboardingMonetizationEnableFlow
-// Dependencies: [19, 2070, 1377, 1085, 558, 576, 6774, 573, 17954, 17955, 17956, 6766, 1126, 2115, 17957, 2]
+// Dependencies: [19, 2082, 1389, 1085, 558, 576, 6950, 573, 18241, 18242, 18243, 6942, 1126, 2127, 18244, 2]
 
-// Module 17953 (useOnboardingMonetizationEnableFlow)
-import GuildRecord from "GuildRecord" /* 2070 */;
+// Module 18240 (useOnboardingMonetizationEnableFlow)
+import GuildRecord from "GuildRecord" /* 2082 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, features, tmp4;
+let _require, dependencyMap, tmp4;
 
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 const isGuildOwner = GuildRecord.isGuildOwner;
 ({ GuildFeatures: metroRequire, HelpdeskArticles: metroImportDefault, MarketingURLs: metroImportAll } = Constants);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardingMonetizationEnableFlow(features) {
   let closure_2;
   let createEnableRequest;
   let error;
@@ -120,7 +120,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
   }
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(tmp17, tmp19);
-  const tmp22 = refresh(17954);
+  const tmp22 = refresh(18241);
   if (features != null) {
     class T {
       constructor() {
@@ -135,7 +135,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
   }
   ({ error, loading, createEnableRequest, submittedRequest } = tmp22(undefined));
   tmp22(undefined);
-  const tmp21Result = refresh(17955);
+  const tmp21Result = refresh(18242);
   if (features != null) {
     class T {
       constructor() {
@@ -151,8 +151,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
   const tmp21ResultResult = tmp21Result(undefined);
   ({ loading: loading2, error: error2, refresh } = tmp21ResultResult);
   const eligibility = tmp21ResultResult.eligibility;
-  ({ isApplicationRejected, requestCooldownDuration } = refresh(17956)(eligibility));
-  refresh(17956)(eligibility);
+  ({ isApplicationRejected, requestCooldownDuration } = refresh(18243)(eligibility));
+  refresh(18243)(eligibility);
   const tmp27 = cResult[7];
   if (features != null) {
     class T {
@@ -246,8 +246,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
       }
     }
   }
-  const useIsMonetizationReapplicationDisabled = tmp(6766).useIsMonetizationReapplicationDisabled;
-  tmp(6766);
+  const useIsMonetizationReapplicationDisabled = tmp(6942).useIsMonetizationReapplicationDisabled;
+  tmp(6942);
   if (features != null) {
     class T {
       constructor() {
@@ -311,7 +311,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
     const format = tmp39.format;
     const obj3 = { faqUrl: tmp21Result2.getArticleURL(constants2.CREATOR_FAQ) };
     const aJUdOi = tmp(1126).t.aJUdOi;
-    tmp21Result2 = refresh(2115);
+    tmp21Result2 = refresh(2127);
     cResult[9] = format(aJUdOi, obj3);
     const formatResult = format(aJUdOi, obj3);
   } else {
@@ -473,7 +473,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
       }
     }
   }
-}) : ((features) => {
+}) : (function useOnboardingMonetizationEnableFlow(features) {
   let canApply;
   let closure_2;
   let createEnableRequest;
@@ -509,23 +509,23 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
     return tmp3;
   });
   let id;
-  const tmp10 = refresh(17954);
+  const tmp10 = refresh(18241);
   if (features != null) {
     id = features.id;
   }
   ({ submittedRequest, error, loading, createEnableRequest } = tmp10(id));
   let id1;
   tmp10(id);
-  const tmp9Result = refresh(17955);
+  const tmp9Result = refresh(18242);
   if (features != null) {
     id1 = features.id;
   }
   const tmp9ResultResult = tmp9Result(id1);
   refresh = tmp9ResultResult.refresh;
   ({ eligibility, loading: loading2, error: error2 } = tmp9ResultResult);
-  ({ isApplicationRejected, requestCooldownDuration } = refresh(17956)(eligibility));
+  ({ isApplicationRejected, requestCooldownDuration } = refresh(18243)(eligibility));
   let hasItem2;
-  refresh(17956)(eligibility);
+  refresh(18243)(eligibility);
   if (features != null) {
     const features3 = features.features;
     hasItem2 = features3.has(constants.CREATOR_MONETIZABLE_RESTRICTED);
@@ -540,8 +540,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
     tmp19 = true === hasItem3;
   }
   let id2;
-  const useIsMonetizationReapplicationDisabled = tmp(6766).useIsMonetizationReapplicationDisabled;
-  tmp(6766);
+  const useIsMonetizationReapplicationDisabled = tmp(6942).useIsMonetizationReapplicationDisabled;
+  tmp(6942);
   if (features != null) {
     id2 = features.id;
   }
@@ -559,7 +559,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
   }
   const intl = tmp(1126).intl;
   const aJUdOi = tmp(1126).t.aJUdOi;
-  const tmp9Result3 = refresh(2115);
+  const tmp9Result3 = refresh(2127);
   ({ faqUrl: null }.faqUrl) = tmp9Result3.getArticleURL(constants2.CREATOR_FAQ);
   const tmp26 = constants2;
   if (isApplicationRejected) {
@@ -581,7 +581,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
       isExpeditedOnboardingGuild = false === hasItem;
     }
     let formatResult1;
-    const tmpResult4 = tmp(17957);
+    const tmpResult4 = tmp(18244);
     const creatorMonetizationAcceptTermsCheckboxText = tmpResult4.getCreatorMonetizationAcceptTermsCheckboxText();
     if (isApplicationRejected) {
       if (true === canApply) {
@@ -613,7 +613,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
     const format = intl2.format;
     const obj5 = { requestCooldownDuration, creatorRevenuePolicyUrl: tmp9Result4.getArticleURL(tmp26.CREATOR_POLICY) };
     const TvX207 = tmp(1126).t.TvX207;
-    tmp9Result4 = refresh(2115);
+    tmp9Result4 = refresh(2127);
     formatResult2 = format(TvX207, obj5);
   }
 });

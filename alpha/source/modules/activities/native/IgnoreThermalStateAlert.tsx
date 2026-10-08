@@ -1,27 +1,27 @@
-// Module ID: 9121
-// Function ID: 9122
+// Module ID: 10694
+// Function ID: 10695
 // Name: IgnoreThermalStateAlert
-// Dependencies: [109, 19, 21, 4896, 558, 576, 1126, 9026, 4892, 5790, 2]
+// Dependencies: [109, 19, 21, 5090, 558, 576, 1126, 10635, 5086, 5394, 2]
 
-// Module 9121 (IgnoreThermalStateAlert)
-import AlertDefault from "Alert" /* 5790 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 9026 */;
+// Module 10694 (IgnoreThermalStateAlert)
+import AlertDefault from "Alert" /* 5394 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10635 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, onConfirm;
+let _require;
 
 let hasOwnProperty;
 let metroRequire;
 let closure_3 = ["onConfirm"];
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ text: { marginTop: 16, lineHeight: 20, textAlign: "center" }, header: { textAlign: "center" } });
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IgnoreThermalStateAlert(onConfirm) {
   let closure_0;
   let items;
   let tmp10;
@@ -89,7 +89,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   }
   if (cResult[8] !== tmp9.header) {
     const obj2 = { style: header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp15 };
-    const tmp19 = closure_5(tmp(4892).Text, obj2);
+    const tmp19 = closure_5(tmp(5086).Text, obj2);
     cResult[8] = tmp9.header;
     cResult[9] = tmp19;
     tmp17 = tmp19;
@@ -107,7 +107,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   }
   if (cResult[11] !== tmp9.text) {
     const obj3 = { style: text, variant: "text-md/medium", children: tmp20 };
-    const tmp24 = closure_5(tmp(4892).Text, obj3);
+    const tmp24 = closure_5(tmp(5086).Text, obj3);
     cResult[11] = tmp9.text;
     cResult[12] = tmp24;
     tmp22 = tmp24;
@@ -136,7 +136,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   cResult[16] = tmp22;
   cResult[17] = tmp28;
   tmp25 = tmp28;
-}) : ((onConfirm) => {
+}) : (function IgnoreThermalStateAlert(onConfirm) {
   let intl;
   let intl2;
   let intl3;
@@ -162,11 +162,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   intl = onConfirm(1126).intl;
   intl2 = onConfirm(1126).intl;
   const obj2 = { style: tmp2.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl3.string(onConfirm(1126).t.v5X4fZ) };
-  const Text = onConfirm(4892).Text;
+  const Text = onConfirm(5086).Text;
   intl3 = onConfirm(1126).intl;
   items = [closure_5(Text, obj2), ];
   const obj3 = { style: tmp2.text, variant: "text-md/medium", children: intl4.string(onConfirm(1126).t.VOgTjy) };
-  const Text2 = onConfirm(4892).Text;
+  const Text2 = onConfirm(5086).Text;
   intl4 = onConfirm(1126).intl;
   items[1] = closure_5(Text2, obj3);
   return closure_6(tmp3, obj);

@@ -1,20 +1,18 @@
-// Module ID: 8933
-// Function ID: 8934
+// Module ID: 8564
+// Function ID: 8565
 // Name: FormSelect
-// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 4600, 4892, 5916, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 587, 558, 576, 4792, 5086, 6189, 2]
 
-// Module 8933 (FormSelect)
+// Module 8564 (FormSelect)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let onChange;
 
 let StyleSheet;
 let c3;
@@ -26,9 +24,9 @@ let obj3;
 let obj4;
 let obj7;
 let tmp;
-const react_native = tmp(4600);
-const Text_Text = tmp(4892);
-const Pressables = tmp(5916);
+const react_native = tmp(4792);
+const Text_Text = tmp(5086);
+const Pressables = tmp(6189);
 function extractKey(value) {
   return "" + value.value;
 }
@@ -44,7 +42,7 @@ obj4 = { fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 14, color: nativeDefault.
 ({ color: nativeDefault.unsafe_rawColors.BRAND_100 });
 let closure_7 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function OptionButton(item) {
   let accessibilityRole;
   let accessibilityState;
   let onPress;
@@ -149,7 +147,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   cResult[3] = onPress;
   cResult[4] = fn;
   tmp7 = fn;
-}) : ((item) => {
+}) : (function OptionButton(item) {
   let Text;
   let accessibilityRole;
   let accessibilityState;
@@ -193,7 +191,7 @@ const obj6 = { row: { paddingVertical: 12, paddingHorizontal: 16 }, label: obj7,
 obj7 = { fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 13, color: nativeDefault.colors.TEXT_MUTED };
 let closure_9 = createStyles.createStyles(obj6);
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormSelect(onChange) {
   let items;
   let label;
   let options;
@@ -271,7 +269,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
     cResult[5] = tmp9;
     tmp7 = tmp9;
   }
-  const fn = function l(item) {
+  function renderItem(item) {
     const obj = {
       item: item.item,
       selected: item.item.value === require,
@@ -284,12 +282,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
       }
     };
     return hasOwnProperty(closure_8, obj);
-  };
+  }
   cResult[0] = onChange;
   cResult[1] = value;
-  cResult[2] = fn;
-  tmp6 = fn;
-}) : ((onChange) => {
+  cResult[2] = renderItem;
+  tmp6 = renderItem;
+}) : (function FormSelect(onChange) {
   let items;
   let label;
   let onScrollBeginDrag;

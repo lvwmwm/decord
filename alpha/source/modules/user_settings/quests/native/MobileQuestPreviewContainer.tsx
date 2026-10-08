@@ -1,14 +1,14 @@
-// Module ID: 14990
-// Function ID: 14991
+// Module ID: 15252
+// Function ID: 15253
 // Name: MobileQuestPreviewContainer
-// Dependencies: [17, 21, 4896, 587, 558, 576, 4892, 2]
+// Dependencies: [17, 21, 5090, 587, 558, 576, 5086, 2]
 
-// Module 14990 (MobileQuestPreviewContainer)
+// Module 15252 (MobileQuestPreviewContainer)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let closure_4;
 let obj2;
 let obj3;
 let tmp;
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 const View = react_native.View;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let createStyles = createStyles_mod;
@@ -26,7 +26,7 @@ obj2 = { marginTop: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.
 createStyles = createStyles.createStyles;
 obj3 = { marginBottom: nativeDefault.space.PX_16 };
 let closure_5 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MobileQuestPreviewContainer(arg0) {
   let children;
   let items;
   let title;
@@ -66,7 +66,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = title;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((title) => {
+}) : (function MobileQuestPreviewContainer(title) {
   let items;
   title = title.title;
   const children = title.children;

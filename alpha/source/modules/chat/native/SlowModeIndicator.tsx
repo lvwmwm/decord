@@ -1,21 +1,19 @@
-// Module ID: 11611
-// Function ID: 11612
+// Module ID: 11675
+// Function ID: 11676
 // Name: SlowModeIndicator
-// Dependencies: [19, 7184, 21, 4896, 587, 558, 576, 504, 7185, 4574, 11240, 4892, 5916, 2]
+// Dependencies: [19, 7363, 21, 5090, 587, 558, 576, 504, 7364, 4766, 11355, 5086, 6189, 2]
 
-// Module 11611 (SlowModeIndicator)
+// Module 11675 (SlowModeIndicator)
 import nativeDefault from "native" /* 587 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import SlowmodeUtils from "SlowmodeUtils" /* 7185 */;
-import TimerIcon from "TimerIcon" /* 11240 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import SlowmodeUtils from "SlowmodeUtils" /* 7364 */;
+import TimerIcon from "TimerIcon" /* 11355 */;
 import react from "react" /* 19 */;
-import SlowmodeStore from "SlowmodeStore" /* 7184 */;
+import SlowmodeStore from "SlowmodeStore" /* 7363 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channel;
 
 let hasOwnProperty;
 let metroRequire;
@@ -24,7 +22,7 @@ let obj2;
 let obj = { container: { alignItems: "center", flexDirection: "row" }, icon: obj2 };
 obj2 = { marginLeft: nativeDefault.space.PX_4 };
 let closure_7 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SlowModeIndicator(channel) {
   let first;
   let items1;
   let tmp = channel;
@@ -49,7 +47,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
     }
     const tmpResult = tmp(504);
     const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-    const tmpResult3 = tmp(7185);
+    const tmpResult3 = tmp(7364);
     const canBypassSlowmode = tmpResult3.useCanBypassSlowmode(channel);
     if (hasTypingText) {
       let tmp13;
@@ -75,7 +73,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       }
       if (cResult[9] !== tmp10) {
         let obj2 = { lineClamp: 1, allowFontScaling: false, variant: "text-xs/medium", color: "interactive-text-default", children: tmp10 };
-        const tmp16 = closure_5(tmp(4892).Text, obj2);
+        const tmp16 = closure_5(tmp(5086).Text, obj2);
         cResult[9] = tmp10;
         cResult[10] = tmp16;
         tmp14 = tmp16;
@@ -84,7 +82,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       }
       if (cResult[11] !== tmp4.icon) {
         const obj3 = { style: tmp4.icon, size: "xxs" };
-        const tmp19 = closure_5(tmp(11240).TimerIcon, obj3);
+        const tmp19 = closure_5(tmp(11355).TimerIcon, obj3);
         cResult[11] = tmp4.icon;
         cResult[12] = tmp19;
         tmp17 = tmp19;
@@ -104,7 +102,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       }
       const obj4 = { onPress: tmp13, style: tmp4.container, children: items1 };
       items1 = [tmp14, tmp17];
-      const tmp22 = closure_6(tmp(5916).PressableOpacity, obj4);
+      const tmp22 = closure_6(tmp(6189).PressableOpacity, obj4);
       cResult[13] = tmp13;
       cResult[14] = tmp4.container;
       cResult[15] = tmp14;
@@ -119,7 +117,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       }
       tmp10 = tmp11;
     }
-    const tmpResult4 = tmp(7185);
+    const tmpResult4 = tmp(7364);
     const slowmodeIndicatorText = tmpResult4.getSlowmodeIndicatorText(stateFromStores, canBypassSlowmode);
     cResult[4] = canBypassSlowmode;
     cResult[5] = stateFromStores;
@@ -133,7 +131,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   cResult[2] = slowmodeType;
   cResult[3] = fn;
   tmp7 = fn;
-}) : ((channel) => {
+}) : (function SlowModeIndicator(channel) {
   let items3;
   channel = channel.channel;
   const hasTypingText = channel.hasTypingText;

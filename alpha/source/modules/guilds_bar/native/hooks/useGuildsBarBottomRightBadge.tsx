@@ -1,24 +1,22 @@
-// Module ID: 16277
-// Function ID: 16278
+// Module ID: 16537
+// Function ID: 16538
 // Name: useGuildsBarBottomRightBadge
-// Dependencies: [32, 19, 21, 4896, 558, 576, 1188, 4586, 587, 16278, 16279, 16283, 2]
+// Dependencies: [32, 19, 21, 5090, 558, 576, 1200, 4778, 587, 16538, 16539, 16543, 2]
 
-// Module 16277 (useGuildsBarBottomRightBadge)
+// Module 16537 (useGuildsBarBottomRightBadge)
 import Fragment from "Fragment" /* 21 */;
-import native from "native" /* 1188 */;
-import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 16278 */;
+import native from "native" /* 1200 */;
+import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 16538 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let mentionCount;
 
 let react = react_mod;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ bottomRightBadge: { position: "absolute", right: 9, backgroundColor: "transparent", borderColor: "transparent" } });
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((mentionCount) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildsBarBottomRightBadge(mentionCount) {
   let closure_2;
   let first;
   let isMentionLowImportance;
@@ -48,11 +46,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((mentionCount) => {
     tmp5 = cResult[1];
   }
   [first, dependencyMap] = react.useState(tmp5);
-  const tmpResult = mentionCount(4586);
+  const tmpResult = mentionCount(4778);
   const token = tmpResult.useToken(first(587).modules.mobile.GUILD_BAR_ITEM_SIZE);
-  const tmpResult2 = mentionCount(4586);
+  const tmpResult2 = mentionCount(4778);
   const token1 = tmpResult2.useToken(first(587).modules.mobile.GUILD_BAR_ITEM_MARGIN);
-  const diff = token1 - tmp(1188).BADGE_PADDING;
+  const diff = token1 - tmp(1200).BADGE_PADDING;
   if (cResult[2] !== diff) {
     const obj2 = { bottom: diff };
     cResult[2] = diff;
@@ -68,7 +66,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((mentionCount) => {
       tmp13 = cResult[6];
     }
     if (mentionCount > 0) {
-      const diff1 = first - 2 * tmp(1188).BADGE_PADDING;
+      const diff1 = first - 2 * tmp(1200).BADGE_PADDING;
       if (cResult[7] === token) {
         if (cResult[10] !== first) {
           class L {
@@ -105,14 +103,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((mentionCount) => {
         cResult[13] = isMentionLowImportance;
         cResult[14] = mentionCount;
         cResult[15] = tmp24;
-        cResult[16] = jsx(mentionCount(1188).MaskedBadge, { maskStyle: tmp13, value: mentionCount, isMentionLowImportance, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", onLayout: tmp24 });
-        const tmp27 = jsx(mentionCount(1188).MaskedBadge, { maskStyle: tmp13, value: mentionCount, isMentionLowImportance, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", onLayout: tmp24 });
+        cResult[16] = jsx(mentionCount(1200).MaskedBadge, { maskStyle: tmp13, value: mentionCount, isMentionLowImportance, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", onLayout: tmp24 });
+        const tmp27 = jsx(mentionCount(1200).MaskedBadge, { maskStyle: tmp13, value: mentionCount, isMentionLowImportance, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", onLayout: tmp24 });
       }
       const obj4 = { position: "bottom-right", containerSize: token, width: diff1 };
       cResult[7] = token;
       cResult[8] = diff1;
-      cResult[9] = first(16278)(obj4);
-      const tmp23 = first(16278)(obj4);
+      cResult[9] = first(16538)(obj4);
+      const tmp23 = first(16538)(obj4);
     } else {
       class L {
         constructor(nativeEvent) {
@@ -190,8 +188,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((mentionCount) => {
         }
         cResult[25] = tmp13;
         cResult[26] = joinRequestState;
-        cResult[27] = jsx(first(16279), { style: tmp13, joinRequestState });
-        const tmp17 = jsx(first(16279), { style: tmp13, joinRequestState });
+        cResult[27] = jsx(first(16539), { style: tmp13, joinRequestState });
+        const tmp17 = jsx(first(16539), { style: tmp13, joinRequestState });
       }
     }
     return tmp20;
@@ -201,7 +199,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((mentionCount) => {
   cResult[5] = tmp12;
   cResult[6] = items;
   tmp13 = items;
-}) : ((mentionCount) => {
+}) : (function useGuildsBarBottomRightBadge(mentionCount) {
   let bottomRightBadge;
   mentionCount = mentionCount.mentionCount;
   const isMentionLowImportance = mentionCount.isMentionLowImportance;
@@ -261,7 +259,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((mentionCount) => {
         items2 = [tmp5];
         return obj8;
       } else {
-        return { badge: null, cutout: "Array", cutouts: "parent" };
+        return { badge: null, cutout: "Array", cutouts: "toCharArray$esjava$1" };
       }
     }
   }, items1);

@@ -1,14 +1,14 @@
-// Module ID: 17291
-// Function ID: 17292
+// Module ID: 17572
+// Function ID: 17573
 // Name: useConsoleConnectedAccountForVoiceUpsell
-// Dependencies: [5447, 5445, 4913, 8781, 1085, 558, 576, 504, 17292, 2]
+// Dependencies: [5757, 5755, 5109, 9127, 1085, 558, 576, 504, 17573, 2]
 
-// Module 17291 (useConsoleConnectedAccountForVoiceUpsell)
+// Module 17572 (useConsoleConnectedAccountForVoiceUpsell)
 import Constants from "Constants" /* 1085 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 8781 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5447 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5445 */;
-import GameConsoleStore from "GameConsoleStore" /* 4913 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 9127 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5757 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5755 */;
+import GameConsoleStore from "GameConsoleStore" /* 5109 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let account;
 
 const CONSOLE_VOICE_PLATFORMS = GameConsoleConstants.CONSOLE_VOICE_PLATFORMS;
 const ActivityTypes = Constants.ActivityTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConsoleConnectedAccountForVoiceUpsell() {
   let activities;
   let arr3;
   let awaitingRemoteSessionInfo;
@@ -47,7 +47,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let tmp7;
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn2 = function v(platform) {
+      const fn2 = function p(platform) {
         platform = platform.platform;
         const hasItem = platform.type === constants.PLAYING && null != platform && set.has(platform);
         return hasItem;
@@ -96,24 +96,22 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp13 = cResult[7];
   }
   if (cResult[8] !== arr3) {
-    class F {
-      constructor() {
-        mapped = closure_0.map((platform) => {
-          platform = platform.platform;
-          if (null == platform) {
-            return null;
-          } else {
-            const tmp3 = closure_1_1(closure_1_2[8])(platform);
-            account = null;
-            if (null != tmp3) {
-              account = account.getAccount(null, tmp3);
-            }
-            return account;
+    const fn3 = function y() {
+      const mapped = arr3.map((platform) => {
+        platform = platform.platform;
+        if (null == platform) {
+          return null;
+        } else {
+          const tmp3 = closure_1_1(closure_1_2[8])(platform);
+          account = null;
+          if (null != tmp3) {
+            account = account.getAccount(null, tmp3);
           }
-        });
-        return mapped.find((item) => null != item);
-      }
-    }
+          return account;
+        }
+      });
+      return mapped.find((item) => null != item);
+    };
     cResult[8] = arr3;
     class A {
       constructor() {
@@ -121,92 +119,25 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return tmp;
       }
     }
-    cResult[9] = F;
-    tmp15 = F;
+    cResult[9] = fn3;
+    tmp15 = fn3;
   } else {
-    class F {
-      constructor() {
-        mapped = closure_0.map((platform) => {
-          platform = platform.platform;
-          if (null == platform) {
-            return null;
-          } else {
-            const tmp3 = closure_1_1(closure_1_2[8])(platform);
-            account = null;
-            if (null != tmp3) {
-              account = account.getAccount(null, tmp3);
-            }
-            return account;
-          }
-        });
-        return mapped.find((item) => null != item);
-      }
-    }
+    tmp15 = cResult[9];
   }
   const tmpResult4 = tmp(504);
   const stateFromStores2 = tmpResult4.useStateFromStores(tmp13, tmp15);
+  let tmp17 = null;
   if (arr3.length > 0) {
-    class F {
-      constructor() {
-        mapped = closure_0.map((platform) => {
-          platform = platform.platform;
-          if (null == platform) {
-            return null;
-          } else {
-            const tmp3 = closure_1_1(closure_1_2[8])(platform);
-            account = null;
-            if (null != tmp3) {
-              account = account.getAccount(null, tmp3);
-            }
-            return account;
-          }
-        });
-        return mapped.find((item) => null != item);
-      }
-    }
+    tmp17 = null;
     if (null != stateFromStores2) {
-      class F {
-        constructor() {
-          mapped = closure_0.map((platform) => {
-            platform = platform.platform;
-            if (null == platform) {
-              return null;
-            } else {
-              const tmp3 = closure_1_1(closure_1_2[8])(platform);
-              account = null;
-              if (null != tmp3) {
-                account = account.getAccount(null, tmp3);
-              }
-              return account;
-            }
-          });
-          return mapped.find((item) => null != item);
-        }
-      }
+      tmp17 = null;
       if (!stateFromStores1) {
-        class F {
-          constructor() {
-            mapped = closure_0.map((platform) => {
-              platform = platform.platform;
-              if (null == platform) {
-                return null;
-              } else {
-                const tmp3 = closure_1_1(closure_1_2[8])(platform);
-                account = null;
-                if (null != tmp3) {
-                  account = account.getAccount(null, tmp3);
-                }
-                return account;
-              }
-            });
-            return mapped.find((item) => null != item);
-          }
-        }
+        tmp17 = stateFromStores2;
       }
     }
   }
-  return null;
-}) : (() => {
+  return tmp17;
+}) : (function useConsoleConnectedAccountForVoiceUpsell() {
   let activities;
   let awaitingRemoteSessionInfo;
   let found;

@@ -1,10 +1,10 @@
-// Module ID: 3523
-// Function ID: 3524
-// Dependencies: [1130, 3524, 1165, 2]
+// Module ID: 3567
+// Function ID: 3568
+// Dependencies: [1130, 3568, 1165, 2]
 
-// Module 3523
+// Module 3567
 import AssetJsonUtils from "AssetJsonUtils" /* 1130 */;
-import AssetRegistry from "AssetRegistry" /* 3524 */;
+import AssetRegistry from "AssetRegistry" /* 3568 */;
 import module_1165_mod from "module_1165" /* 1165 */;
 import size from "module_2" /* 2 */;
 

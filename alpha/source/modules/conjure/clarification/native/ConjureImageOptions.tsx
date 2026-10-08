@@ -1,24 +1,24 @@
-// Module ID: 16741
-// Function ID: 16742
+// Module ID: 17016
+// Function ID: 17017
 // Name: clarification/ConjureImageOptions
-// Dependencies: [5, 32, 19, 17, 12923, 21, 4896, 587, 558, 576, 16678, 5872, 1126, 3753, 4892, 4600, 5998, 6082, 16738, 6002, 7586, 4853, 16742, 7944, 16743, 5601, 16745, 2]
+// Dependencies: [5, 32, 19, 17, 13072, 21, 5090, 587, 558, 576, 16941, 8184, 1126, 3827, 5086, 6164, 4792, 6182, 6268, 17013, 6186, 8106, 5047, 17017, 8362, 17018, 5375, 17020, 2]
 
-// Module 16741 (clarification/ConjureImageOptions)
+// Module 17016 (clarification/ConjureImageOptions)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3753 from "module_3753" /* 3753 */;
-import react_native from "react-native" /* 4600 */;
-import FormCheckboxDefault from "FormCheckbox" /* 5998 */;
-import openMediaModal from "openMediaModal" /* 7944 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 12923 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 16678 */;
-import ConjureImageOptions from "ConjureImageOptions" /* 16738 */;
+import _modDef3827 from "module_3827" /* 3827 */;
+import react_native from "react-native" /* 4792 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import openMediaModal from "openMediaModal" /* 8362 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13072 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 16941 */;
+import ConjureImageOptions2 from "ConjureImageOptions" /* 17013 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const require = globalThis.__r;
 let _Promise, c3, closure_2, map, nextPromise, tmp4Result;
 
 let c10;
-let metroImportAll;
+let c9;
 let metroImportDefault;
 let metroRequire;
 let obj10;
@@ -41,16 +41,15 @@ let obj7;
 let obj8;
 let obj9;
 let tmp;
-let unpackModuleId;
 const intl5 = tmp(1126);
-const Text_Text = tmp(4892);
-const ImageWarningIcon2 = tmp(5872);
+const Text_Text = tmp(5086);
+const ImageWarningIcon2 = tmp(8184);
 let react = react_mod;
-({ Image: metroRequire, ScrollView: metroImportDefault, View: metroImportAll } = react_native2);
+({ ScrollView: metroRequire, View: metroImportDefault } = react_native2);
 const getAttachmentUrl = ConjureConnectionStore.getAttachmentUrl;
-({ jsx: c10, jsxs: unpackModuleId } = Fragment);
-let c12 = 1024;
-let c13 = 104;
+({ jsx: c9, jsxs: c10 } = Fragment);
+let c11 = 1024;
+let c12 = 104;
 let createStyles = createStyles_mod;
 let obj = { row: obj2, own: obj3, galleryContent: obj4, rowTile: { flex: 1, minWidth: 0 }, card: obj5, ring: obj6, ringSelected: obj7, frame: obj8, frameInert: { opacity: 0.5 }, image: { width: "100%", height: "100%" }, broken: obj9, brokenText: { textAlign: "center" }, indicator: obj10, caption: obj11, view: obj12 };
 obj2 = { flexDirection: "row", gap: nativeDefault.space.PX_8 };
@@ -65,9 +64,9 @@ obj9 = { gap: nativeDefault.space.PX_4, alignItems: "center", paddingHorizontal:
 obj10 = { position: "absolute", top: nativeDefault.space.PX_4, end: nativeDefault.space.PX_4, padding: 2, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM };
 obj11 = { paddingHorizontal: nativeDefault.space.PX_4, paddingBottom: nativeDefault.space.PX_4 };
 obj12 = { position: "absolute", end: nativeDefault.space.PX_8 };
-let closure_14 = createStyles(obj);
+let closure_13 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageOptionPicture(onMeasured) {
   let attachmentId;
   let handleError;
   let inert;
@@ -80,7 +79,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
   const cResult = obj.c(21);
   onMeasured = onMeasured.onMeasured;
   ({ projectId, attachmentId, inert } = onMeasured);
-  const tmp4 = closure_14();
+  const tmp4 = closure_13();
   const obj2 = useConjureAttachmentImage;
   const conjureAttachmentImage = obj2.useConjureAttachmentImage(projectId, attachmentId);
   ({ src, handleError } = conjureAttachmentImage);
@@ -103,7 +102,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
         const obj3 = { size: "md", color: nativeDefault.colors.ICON_MUTED };
         const ImageWarningIcon = ImageWarningIcon2.ImageWarningIcon;
-        const tmp20 = authStore(ImageWarningIcon, obj3);
+        const tmp20 = React4(ImageWarningIcon, obj3);
         cResult[3] = tmp20;
         tmp17 = tmp20;
       } else {
@@ -113,7 +112,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
       const brokenText = tmp4.brokenText;
       if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
         const intl = intl5.intl;
-        const stringResult = intl.string(_modDef3753.lhgD88);
+        const stringResult = intl.string(_modDef3827.lhgD88);
         cResult[4] = stringResult;
         tmp21 = stringResult;
       } else {
@@ -121,7 +120,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
       }
       if (cResult[5] !== tmp4.brokenText) {
         const obj4 = { variant: "text-xs/medium", color: "text-muted", style: brokenText, children: tmp21 };
-        const tmp26 = authStore(Text_Text.Text, obj4);
+        const tmp26 = React4(Text_Text.Text, obj4);
         cResult[5] = tmp4.brokenText;
         cResult[6] = tmp26;
         tmp24 = tmp26;
@@ -141,7 +140,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
           return tmp31;
         }
         const obj5 = { style: tmp7, children: tmp27 };
-        const tmp34 = authStore(metroImportAll, obj5);
+        const tmp34 = React4(metroImportDefault, obj5);
         cResult[10] = tmp7;
         cResult[11] = tmp27;
         cResult[12] = tmp34;
@@ -149,7 +148,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
       }
       const obj6 = { style: broken, children: items };
       items = [tmp17, tmp24];
-      const tmp30 = unpackModuleId(metroImportAll, obj6);
+      const tmp30 = authStore(metroImportDefault, obj6);
       cResult[7] = tmp4.broken;
       cResult[8] = tmp24;
       cResult[9] = tmp30;
@@ -170,7 +169,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
               return tmp12;
             }
             const obj7 = { style: tmp7, children: tmp8 };
-            const tmp15 = authStore(metroImportAll, obj7);
+            const tmp15 = React4(metroImportDefault, obj7);
             cResult[18] = tmp7;
             cResult[19] = tmp8;
             cResult[20] = tmp15;
@@ -187,7 +186,12 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
           onLoad(nativeEvent) {
                   let height;
                   let width;
-                  ({ width, height } = nativeEvent.nativeEvent.source);
+                  nativeEvent = nativeEvent.nativeEvent;
+                  let source = nativeEvent;
+                  if ("source" in nativeEvent) {
+                    source = nativeEvent.source;
+                  }
+                  ({ width, height } = source);
                   const tmp = width > 0 && height > 0;
                   if (tmp) {
                     size = { width, height };
@@ -198,7 +202,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
           accessible: false
         };
         obj9 = { uri: src };
-        tmp9 = authStore(metroRequire, obj8);
+        tmp9 = React4(FastImageDefault, obj8);
       }
       cResult[13] = handleError;
       cResult[14] = onMeasured;
@@ -213,7 +217,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
   cResult[1] = frameInert;
   cResult[2] = items1;
   tmp7 = items1;
-}) : ((onMeasured) => {
+}) : (function ImageOptionPicture(onMeasured) {
   let attachmentId;
   let gone;
   let handleError;
@@ -225,30 +229,28 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
   let tmp10;
   onMeasured = onMeasured.onMeasured;
   ({ projectId, attachmentId, inert } = onMeasured);
-  let tmp = closure_14();
-  const tmp3 = dependencyMap;
-  let obj = useConjureAttachmentImage;
+  let tmp = closure_13();
+  const obj = useConjureAttachmentImage;
   const conjureAttachmentImage = obj.useConjureAttachmentImage(projectId, attachmentId);
   const src = conjureAttachmentImage.src;
-  let items = [tmp.frame, ];
+  const items = [tmp.frame, ];
   let frameInert = null;
   ({ gone, handleError } = conjureAttachmentImage);
   if (inert) {
     frameInert = tmp.frameInert;
   }
   items[1] = frameInert;
-  let tmp6 = authStore;
-  let obj2 = { style: items, children: null };
+  const obj2 = { style: items, children: null };
   if (gone) {
-    let obj3 = { style: tmp.broken, children: items1 };
-    let obj4 = { size: "md", color: nativeDefault.colors.ICON_MUTED };
-    const ImageWarningIcon = tmp2(5872).ImageWarningIcon;
-    items1 = [tmp6(ImageWarningIcon, obj4), ];
-    let obj5 = { variant: "text-xs/medium", color: "text-muted", style: tmp.brokenText, children: intl.string(_modDef3753.lhgD88) };
-    const Text = tmp2(4892).Text;
+    const obj3 = { style: tmp.broken, children: items1 };
+    const obj4 = { size: "md", color: nativeDefault.colors.ICON_MUTED };
+    const ImageWarningIcon = tmp2(8184).ImageWarningIcon;
+    items1 = [React4(ImageWarningIcon, obj4), ];
+    const obj5 = { variant: "text-xs/medium", color: "text-muted", style: tmp.brokenText, children: intl.string(_modDef3827.lhgD88) };
+    const Text = tmp2(5086).Text;
     intl = tmp2(1126).intl;
-    items1[1] = tmp6(Text, obj5);
-    obj2.children = unpackModuleId(metroImportAll, obj3);
+    items1[1] = React4(Text, obj5);
+    obj2.children = authStore(metroImportDefault, obj3);
     tmp10 = obj2;
   } else {
     let tmp6Result = null;
@@ -260,7 +262,12 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
         onLoad(nativeEvent) {
               let height;
               let width;
-              ({ width, height } = nativeEvent.nativeEvent.source);
+              nativeEvent = nativeEvent.nativeEvent;
+              let source = nativeEvent;
+              if ("source" in nativeEvent) {
+                source = nativeEvent.source;
+              }
+              ({ width, height } = source);
               const tmp = width > 0 && height > 0;
               if (tmp) {
                 size = { width, height };
@@ -271,15 +278,15 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
         accessible: false
       };
       obj7 = { uri: src };
-      tmp6Result = tmp6(metroRequire, obj6);
+      tmp6Result = tmp6(FastImageDefault, obj6);
     }
     obj2.children = tmp6Result;
     tmp10 = obj2;
   }
-  return tmp6(metroImportAll, tmp10);
+  return React4(metroImportDefault, tmp10);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageOptionTile(onView) {
   let accessibilityRole;
   let accessibilityState;
   let disabled;
@@ -299,7 +306,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
   ({ onMeasured, onPick } = onView);
   onView = onView.onView;
   const onRemove = onView.onRemove;
-  const tmp4 = closure_14();
+  const tmp4 = closure_13();
   if (cResult[0] === disabled) {
     react_native;
     if (cResult[3] === disabled) {
@@ -316,7 +323,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
         const intl = tmp(1126).intl;
-        const stringResult = intl.string(_modDef3753["4/eeDD"]);
+        const stringResult = intl.string(_modDef3827["4/eeDD"]);
         cResult[6] = stringResult;
         tmp11 = stringResult;
       } else {
@@ -341,8 +348,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
                   const intl2 = tmp(1126).intl;
                   const obj2 = { answer: option.label };
                   cResult[18] = option.label;
-                  cResult[19] = intl2.formatToPlainString(_modDef3753.AQbxhf, obj2);
-                  const formatToPlainStringResult = intl2.formatToPlainString(_modDef3753.AQbxhf, obj2);
+                  cResult[19] = intl2.formatToPlainString(_modDef3827.AQbxhf, obj2);
+                  const formatToPlainStringResult = intl2.formatToPlainString(_modDef3827.AQbxhf, obj2);
                 }
                 if (cResult[20] === onRemove) {
                   if (cResult[23] === onRemove) {
@@ -423,7 +430,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
                         tmp38[1] = option.image.attachment_id;
                         tmp38[2] = disabled;
                         tmp38[3] = onMeasured;
-                        tmp36 = authStore(closure_15, tmp38);
+                        tmp36 = React4(closure_14, tmp38);
                       } else {
                         class V {
                           constructor(arg0) {
@@ -448,7 +455,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
                           }
                         }
                         tmp35[0] = tmp4.frame;
-                        tmp36 = authStore(metroImportAll, tmp35);
+                        tmp36 = React4(metroImportDefault, tmp35);
                       }
                       cResult[29] = disabled;
                       cResult[30] = onMeasured;
@@ -504,7 +511,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
                       return;
                     }
                   }
-                  tmp30[1] = intl3.string(_modDef3753.HQEXJM);
+                  tmp30[1] = intl3.string(_modDef3827.HQEXJM);
                   const items = [tmp30];
                   tmp27 = items;
                 } else {
@@ -611,7 +618,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
   cResult[0] = disabled;
   cResult[1] = selected;
   cResult[2] = obj4;
-}) : ((option) => {
+}) : (function ImageOptionTile(option) {
   let IconButton;
   let closure_129_1;
   let closure_129_2;
@@ -645,7 +652,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
   option = option.option;
   ({ multi, galleryWidth, selected, disabled, frameHeight, onFrameHeight: closure_129_1, onPick: closure_129_2, onView: closure_129_3, onRemove } = option);
   ({ projectId, onMeasured } = option);
-  const tmp = closure_14();
+  const tmp = closure_13();
   const obj = react_native;
   const checkboxA11yNative = obj.useCheckboxA11yNative({ checked: selected, disabled });
   const obj2 = react_native;
@@ -654,7 +661,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
     radioA11yNative = checkboxA11yNative;
   }
   const intl = tmp2(1126).intl;
-  const stringResult = intl.string(_modDef3753["4/eeDD"]);
+  const stringResult = intl.string(_modDef3827["4/eeDD"]);
   if (null != galleryWidth) {
     rowTile = { width: galleryWidth };
     const obj3 = { width: galleryWidth };
@@ -673,7 +680,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
     onPress: fn,
     accessibilityRole: null,
     accessibilityState: null,
-    accessibilityLabel: intl2.formatToPlainString(_modDef3753.AQbxhf, obj7),
+    accessibilityLabel: intl2.formatToPlainString(_modDef3827.AQbxhf, obj7),
     accessibilityActions: tmp11,
     onAccessibilityAction(nativeEvent) {
       nativeEvent = nativeEvent.nativeEvent;
@@ -689,7 +696,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
     children: items4
   };
   fn = undefined;
-  const Card = tmp2(6002).Card;
+  const Card = tmp2(6186).Card;
   if (!disabled) {
     fn = () => closure_1_2(option);
   }
@@ -697,7 +704,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
   intl2 = tmp2(1126).intl;
   obj7 = { answer: option.label };
   if (null != onRemove) {
-    const obj8 = { name: "remove", label: intl3.string(_modDef3753.HQEXJM) };
+    const obj8 = { name: "remove", label: intl3.string(_modDef3827.HQEXJM) };
     intl3 = tmp2(1126).intl;
     const items1 = [obj8];
     tmp11 = items1;
@@ -708,40 +715,40 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
   }
   const obj10 = {
     onLayout(nativeEvent) {
-      return closure_1_1(nativeEvent.nativeEvent.layout.height);
+      return ref(nativeEvent.nativeEvent.layout.height);
     },
     children: items3
   };
   if (null != option.image) {
     const obj11 = { projectId, attachmentId: option.image.attachment_id, inert: disabled, onMeasured };
-    tmp13 = authStore(closure_15, obj11);
-    tmp12 = authStore;
+    tmp13 = React4(closure_14, obj11);
+    tmp12 = React4;
   } else {
-    tmp12 = authStore;
+    tmp12 = React4;
     const obj12 = { style: tmp.frame };
-    tmp13 = authStore(tmp9, obj12);
+    tmp13 = React4(tmp9, obj12);
   }
   items3 = [tmp13, ];
   if (multi) {
     const obj13 = { style: tmp.indicator, children: tmp12Result };
     if (multi) {
       const obj14 = { checked: selected };
-      tmp12Result = tmp12(tmp2(5998).FormCheckbox, obj14);
+      tmp12Result = tmp12(tmp2(6182).FormCheckbox, obj14);
     } else {
       const obj15 = { selected };
-      tmp12Result = tmp12(tmp2(6082).FormRadio, obj15);
+      tmp12Result = tmp12(tmp2(6268).FormRadio, obj15);
     }
     tmp12Result3 = tmp12(tmp9, obj13);
   } else {
     tmp12Result3 = null;
   }
   items3[1] = tmp12Result3;
-  items4 = [unpackModuleId(metroImportAll, obj10), ];
+  items4 = [authStore(metroImportDefault, obj10), ];
   const obj16 = { variant: "text-xs/normal", color: "text-muted", lineClamp: 1, style: tmp.caption, children: tmp2Result.imageOptionCaption(option) };
-  const Text = tmp2(4892).Text;
-  tmp2Result = ConjureImageOptions;
+  const Text = tmp2(5086).Text;
+  tmp2Result = ConjureImageOptions2;
   items4[1] = tmp12(Text, obj16);
-  items5 = [unpackModuleId(Card, obj6), ];
+  items5 = [authStore(Card, obj6), ];
   let tmp12Result4 = null;
   if (null != option.image) {
     tmp12Result4 = null;
@@ -751,13 +758,13 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
       items6 = [tmp.view, ];
       items6[1] = { top: frameHeight - nativeDefault.space.PX_32 };
       const obj18 = { top: frameHeight - nativeDefault.space.PX_32 };
-      IconButton = tmp2(7586).IconButton;
+      IconButton = tmp2(8106).IconButton;
       if (null != onRemove) {
-        MaximizeIcon = tmp2(4853).TrashIcon;
+        MaximizeIcon = tmp2(5047).TrashIcon;
       } else {
-        MaximizeIcon = tmp2(16742).MaximizeIcon;
+        MaximizeIcon = tmp2(17017).MaximizeIcon;
       }
-      obj19 = { icon: tmp12(MaximizeIcon, { size: "xs" }), size: "sm", variant: "secondary-overlay", onPress: onRemove, accessibilityLabel: intl4.formatToPlainString(_modDef3753.JGjZMs, obj20) };
+      obj19 = { icon: tmp12(MaximizeIcon, { size: "xs" }), size: "sm", variant: "secondary-overlay", onPress: onRemove, accessibilityLabel: intl4.formatToPlainString(_modDef3827.JGjZMs, obj20) };
       if (null == onRemove) {
         onRemove = () => closure_1_3(option);
       }
@@ -767,21 +774,23 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
     }
   }
   items5[1] = tmp12Result4;
-  return unpackModuleId(metroImportAll, obj4);
+  return authStore(metroImportDefault, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId) {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureImageOptions(projectId) {
   let closure_10;
   let disabled;
-  let maxResult;
+  let items1;
+  let items2;
   let multi;
+  let num4;
   let question;
   let selectedIds;
-  let tmp15;
+  let tmp17;
   let tmp18;
-  let tmp19;
   let tmp6;
   let tmp8;
+  let tmpResult3;
   let tmp = projectId;
   let tmp2 = disabled;
   let obj = projectId(disabled[9]);
@@ -791,11 +800,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
   disabled = projectId.disabled;
   const onPick = projectId.onPick;
   const own = projectId.own;
-  maxResult();
+  const tmp4 = closure_13();
   react = tmp5;
   const options = question.options;
   if (cResult[0] !== options) {
-    const tmpResult = tmp(tmp2[18]);
+    const tmpResult = tmp(tmp2[19]);
     const imageOptionsLayoutResult = tmpResult.imageOptionsLayout(options);
     cResult[0] = options;
     cResult[1] = imageOptionsLayoutResult;
@@ -813,114 +822,261 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
   } else {
     tmp8 = cResult[2];
   }
+  let obj3 = react;
   let closure_7 = react.useRef(tmp8);
   const tmp11 = own(react.useState(null), 2);
   const frameHeight = tmp11[0];
   const onFrameHeight = tmp13;
-  [tmp15, closure_10] = own(react.useState(null), 2);
-  own(react.useState(null), 2);
+  [num4, closure_10] = own(react.useState(null), 2);
+  const tmp14 = own(react.useState(null), 2);
   const ref = react.useRef(null);
   const image = own.image;
   let id;
-  const obj3 = react;
   if (image != null) {
     id = image.attachment.id;
   }
   if (cResult[3] !== id) {
-    class O {
-      constructor() {
-        if (null != id) {
-          const current = ref.current;
-          if (current != null) {
-            current.scrollToEnd({ animated: true });
-          }
+    const fn = function j() {
+      if (null != id) {
+        const current = ref.current;
+        if (current != null) {
+          current.scrollToEnd({ animated: true });
         }
       }
-    }
+    };
     const items = [id];
     cResult[3] = id;
-    cResult[4] = O;
+    cResult[4] = fn;
     cResult[5] = items;
-    tmp19 = items;
-    tmp18 = O;
+    tmp18 = items;
+    tmp17 = fn;
   } else {
-    class O {
-      constructor() {
-        if (null != id) {
-          const current = ref.current;
-          if (current != null) {
-            current.scrollToEnd({ animated: true });
-          }
-        }
-      }
-    }
-    tmp19 = cResult[5];
+    tmp17 = cResult[4];
+    tmp18 = cResult[5];
   }
-  const effect = obj3.useEffect(tmp18, tmp19);
+  const effect = obj3.useEffect(tmp17, tmp18);
+  let num8 = 0;
   const length = options.length;
   if (null != own.image) {
-    class O {
-      constructor() {
-        if (null != id) {
-          const current = ref.current;
-          if (current != null) {
-            current.scrollToEnd({ animated: true });
-          }
-        }
-      }
-    }
+    num8 = 1;
   }
-  const sum = length;
-  let tmp22 = null != tmp15;
-  if (tmp22) {
-    class O {
-      constructor() {
-        if (null != id) {
-          const current = ref.current;
-          if (current != null) {
-            current.scrollToEnd({ animated: true });
-          }
-        }
-      }
-    }
-    tmp22 = (tmp15 - selectedIds(tmp2[7]).space.PX_8 * (sum - 1)) / sum < closure_13;
+  const sum = length + num8;
+  let tmp21 = null != num4;
+  if (tmp21) {
+    tmp21 = (num4 - selectedIds(tmp2[7]).space.PX_8 * (sum - 1)) / sum < id;
   }
   closure_13 = tmp24;
   const _Math = Math;
   const _Math2 = Math;
-  const tmp25 = closure_13;
-  if (tmp15 == null) {
-    class O {
-      constructor() {
-        if (null != id) {
-          const current = ref.current;
-          if (current != null) {
-            current.scrollToEnd({ animated: true });
-          }
-        }
-      }
-    }
-  }
-  maxResult = max(tmp25, min(136, (tmp15 - 2 * selectedIds(tmp2[7]).space.PX_8) / 2.4));
+  const tmp25 = id;
+  const maxResult = max(tmp25, min(136, (num4 - 2 * selectedIds(tmp2[7]).space.PX_8) / 2.4));
   if (cResult[6] === options) {
-    class O {
-      constructor() {
-        if (null != id) {
-          const current = ref.current;
-          if (current != null) {
-            current.scrollToEnd({ animated: true });
-          }
-        }
-      }
+    let tmp27;
+    if (cResult[7] === projectId) {
+      tmp27 = cResult[8];
     }
     const onView = tmp27;
     if (cResult[9] === disabled) {
-      class O {
-        constructor() {
-          if (null != id) {
-            const current = ref.current;
-            if (current != null) {
-              current.scrollToEnd({ animated: true });
+      if (cResult[10] === frameHeight) {
+        if (cResult[11] === maxResult) {
+          if (cResult[12] === true === question.multi_select) {
+            if (cResult[13] === onPick) {
+              if (cResult[14] === options) {
+                if (cResult[15] === own.image) {
+                  if (cResult[16] === own.onPick) {
+                    if (cResult[17] === own.onRemove) {
+                      if (cResult[18] === own.selected) {
+                        if (cResult[19] === projectId) {
+                          if (cResult[20] === ("gallery" === tmp6 || tmp21)) {
+                            if (cResult[21] === selectedIds) {
+                              let tmp28;
+                              if (cResult[22] === tmp27) {
+                                tmp28 = cResult[23];
+                              }
+                              if (cResult[38] === own) {
+                                let tmp39;
+                                let tmp41;
+                                let tmp43Result;
+                                if (cResult[39] === projectId) {
+                                  tmp39 = cResult[40];
+                                }
+                                let closure_16 = tmp39;
+                                const _Symbol3 = Symbol;
+                                if (cResult[41] === Symbol.for("react.memo_cache_sentinel")) {
+                                  function oe(nativeEvent) {
+                                    return closure_10(nativeEvent.nativeEvent.layout.width);
+                                  }
+                                  cResult[41] = oe;
+                                  tmp41 = oe;
+                                } else {
+                                  tmp41 = cResult[41];
+                                }
+                                if (cResult[42] === ("gallery" === tmp6 || tmp21)) {
+                                  if (cResult[43] === tmp4.galleryContent) {
+                                    if (cResult[44] === tmp4.row) {
+                                      let tmp42;
+                                      if (cResult[45] === tmp28) {
+                                        tmp42 = cResult[46];
+                                      }
+                                      if (cResult[47] === disabled) {
+                                        if (cResult[48] === own.busy) {
+                                          if (cResult[49] === own.error) {
+                                            if (cResult[50] === tmp39) {
+                                              if (cResult[51] === question) {
+                                                let tmp47;
+                                                if (cResult[52] === tmp4.own) {
+                                                  tmp47 = cResult[53];
+                                                }
+                                                if (cResult[54] === tmp42) {
+                                                  let tmp53;
+                                                  if (cResult[55] === tmp47) {
+                                                    tmp53 = cResult[56];
+                                                  }
+                                                  return tmp53;
+                                                }
+                                                let obj2 = { onLayout: tmp41, children: items1 };
+                                                items1 = [tmp42, tmp47];
+                                                const tmp56 = closure_10(closure_7, obj2);
+                                                cResult[54] = tmp42;
+                                                cResult[55] = tmp47;
+                                                cResult[56] = tmp56;
+                                                tmp53 = tmp56;
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                      let tmp49Result = null;
+                                      if (!disabled) {
+                                        let obj4 = { style: tmp4.own, children: items2 };
+                                        let obj5 = {
+                                          variant: "secondary",
+                                          size: "sm",
+                                          icon: onFrameHeight(tmp(tmp2[27]).ImagePlusIcon, { size: "xs" }),
+                                          text: tmpResult3.ownImageUploadText(question),
+                                          loading: "upload" === own.busy,
+                                          onPress() {
+                                                                                  const promise = closure_16();
+                                                                                  promise.catch(() => {
+
+                                                                                  });
+                                                                                }
+                                        };
+                                        const Button = tmp(tmp2[26]).Button;
+                                        tmpResult3 = tmp(tmp2[19]);
+                                        items2 = [onFrameHeight(Button, obj5), ];
+                                        let tmp51Result = null;
+                                        const tmp49 = closure_10;
+                                        const tmp50 = closure_7;
+                                        const tmp51 = onFrameHeight;
+                                        if (null != own.error) {
+                                          let obj6 = { variant: "text-xs/normal", color: "text-feedback-critical", accessibilityLiveRegion: "polite", children: own.error.text };
+                                          tmp51Result = tmp51(tmp(tmp2[14]).Text, obj6);
+                                        }
+                                        items2[1] = tmp51Result;
+                                        tmp49Result = tmp49(tmp50, obj4);
+                                      }
+                                      cResult[47] = disabled;
+                                      cResult[48] = own.busy;
+                                      cResult[49] = own.error;
+                                      cResult[50] = tmp39;
+                                      cResult[51] = question;
+                                      cResult[52] = tmp4.own;
+                                      cResult[53] = tmp49Result;
+                                      tmp47 = tmp49Result;
+                                    }
+                                  }
+                                }
+                                if ("gallery" === tmp6 || tmp21) {
+                                  const obj7 = { ref, horizontal: true, showsHorizontalScrollIndicator: false, contentContainerStyle: tmp4.galleryContent, children: tmp28 };
+                                  tmp43Result = tmp43(options, obj7);
+                                } else {
+                                  const obj8 = { style: tmp4.row, children: tmp28 };
+                                  tmp43Result = tmp43(closure_7, obj8);
+                                }
+                                cResult[42] = "gallery" === tmp6 || tmp21;
+                                cResult[43] = tmp4.galleryContent;
+                                cResult[44] = tmp4.row;
+                                cResult[45] = tmp28;
+                                cResult[46] = tmp43Result;
+                                tmp42 = tmp43Result;
+                              }
+                              projectId = onPick(function*(arg0, value) {
+                                let obj3;
+                                let onUpload;
+                                if (c3 === 2) {
+                                  c3 = 3;
+                                  throw new TypeError("Generator functions may not be called on executing generators");
+                                } else if (tmp3 === 3) {
+                                  if (arg0 === 1) {
+                                    throw value;
+                                  } else if (arg0 === 2) {
+                                    const obj2 = { value, done: true };
+                                    return obj2;
+                                  } else {
+                                    return { value: "IconComponent", done: null };
+                                  }
+                                } else {
+                                  try {
+                                    let tmp;
+                                    let closure_1;
+                                    c3 = 2;
+                                    if (0 === c2) {
+                                      if (arg0 === 1) {
+                                        c3 = 3;
+                                        throw value;
+                                      } else if (arg0 === 2) {
+                                        c3 = 3;
+                                        const obj4 = { value, done: true };
+                                        return obj4;
+                                      } else {
+                                        tmp = undefined;
+                                        closure_1 = undefined;
+                                        c2 = 1;
+                                        c3 = 1;
+                                        const obj5 = { value: obj3.pickConjurePhotos("photo", 1), done: false };
+                                        obj3 = tmp(disabled[25]);
+                                        return obj5;
+                                      }
+                                    } else if (arg0 === 1) {
+                                      c3 = 3;
+                                      throw value;
+                                    } else if (arg0 === 2) {
+                                      c3 = 3;
+                                      const obj6 = { value, done: true };
+                                      return obj6;
+                                    } else {
+                                      tmp = value;
+                                      closure_1 = own(tmp, 1)[0];
+                                      if (null != closure_1) {
+                                        onUpload = onUpload.onUpload;
+                                        const obj = tmp(disabled[25]);
+                                        onUpload(obj.uploadConjurePickedFile(tmp, closure_1));
+                                      }
+                                      c3 = 3;
+                                      return { value: "IconComponent", done: null };
+                                    }
+                                  } catch (tmp15) {
+                                    c3 = 3;
+                                    throw tmp15;
+                                  }
+                                }
+                              });
+                              function t6() {
+                                return closure_0(...arguments);
+                              }
+                              cResult[38] = own;
+                              cResult[39] = projectId;
+                              cResult[40] = t6;
+                              tmp39 = t6;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -946,114 +1102,84 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
         onView
       };
       tmp3 = null;
-      const tmp = closure_10;
-      const tmp2 = closure_1_16;
+      const tmp = onFrameHeight;
+      const tmp2 = onView;
       if (closure_13) {
         tmp3 = closure_14;
       }
       return tmp(tmp2, obj, option.id);
     });
     if (null != own.image) {
+      let tmp29;
       let tmp32;
-      let tmp34;
-      class O {
-        constructor() {
-          if (null != id) {
-            const current = ref.current;
-            if (current != null) {
-              current.scrollToEnd({ animated: true });
-            }
-          }
-        }
+      let tmp33;
+      if (cResult[24] !== own.image) {
+        const tmpResult4 = tmp(tmp2[19]);
+        const ownImageOptionResult = tmpResult4.ownImageOption(own.image);
+        cResult[24] = own.image;
+        cResult[25] = ownImageOptionResult;
+        tmp29 = ownImageOptionResult;
+      } else {
+        tmp29 = cResult[25];
       }
-      if ("gallery" === tmp6 || tmp22) {
-        class O {
-          constructor() {
-            if (null != id) {
-              const current = ref.current;
-              if (current != null) {
-                current.scrollToEnd({ animated: true });
-              }
-            }
-          }
-        }
+      let tmp31 = null;
+      if ("gallery" === tmp6 || tmp21) {
+        tmp31 = maxResult;
       }
       const _Symbol = Symbol;
       if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
-        class O {
-          constructor() {
-            if (null != id) {
-              const current = ref.current;
-              if (current != null) {
-                current.scrollToEnd({ animated: true });
-              }
-            }
-          }
+        function ie() {
+
         }
-        cResult[26] = tmp33;
-        tmp32 = tmp33;
+        cResult[26] = ie;
+        tmp32 = ie;
       } else {
-        class O {
-          constructor() {
-            if (null != id) {
-              const current = ref.current;
-              if (current != null) {
-                current.scrollToEnd({ animated: true });
-              }
-            }
-          }
-        }
+        tmp32 = cResult[26];
       }
       const _Symbol2 = Symbol;
       if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
-        class O {
-          constructor() {
-            if (null != id) {
-              const current = ref.current;
-              if (current != null) {
-                current.scrollToEnd({ animated: true });
-              }
-            }
-          }
+        function te() {
+
         }
-        cResult[27] = tmp35;
-        tmp34 = tmp35;
+        cResult[27] = te;
+        tmp33 = te;
       } else {
-        class O {
-          constructor() {
-            if (null != id) {
-              const current = ref.current;
-              if (current != null) {
-                current.scrollToEnd({ animated: true });
-              }
-            }
-          }
-        }
+        tmp33 = cResult[27];
       }
       if (cResult[28] === disabled) {
-        class O {
-          constructor() {
-            if (null != id) {
-              const current = ref.current;
-              if (current != null) {
-                current.scrollToEnd({ animated: true });
+        if (cResult[29] === frameHeight) {
+          if (cResult[30] === true === question.multi_select) {
+            if (cResult[31] === own.onPick) {
+              if (cResult[32] === own.onRemove) {
+                if (cResult[33] === own.selected) {
+                  if (cResult[34] === tmp29) {
+                    if (cResult[35] === projectId) {
+                      let tmp34;
+                      if (cResult[36] === tmp31) {
+                        tmp34 = cResult[37];
+                      }
+                      mapped.push(tmp34);
+                    }
+                  }
+                }
               }
             }
           }
         }
       }
-      let obj2 = { projectId, option: tmp30, multi: tmp5, galleryWidth: null, selected: own.selected, disabled, frameHeight, onFrameHeight: tmp11[1], onMeasured: tmp32, onPick: own.onPick, onView: tmp34, onRemove: own.onRemove };
+      const obj9 = { projectId, option: tmp29, multi: true === question.multi_select, galleryWidth: tmp31, selected: own.selected, disabled, frameHeight, onFrameHeight: tmp11[1], onMeasured: tmp32, onPick: own.onPick, onView: tmp33, onRemove: own.onRemove };
+      const tmp37 = onFrameHeight(onView, obj9, tmp29.id);
       cResult[28] = disabled;
       cResult[29] = frameHeight;
       cResult[30] = true === question.multi_select;
       cResult[31] = own.onPick;
       cResult[32] = own.onRemove;
       cResult[33] = own.selected;
-      cResult[34] = tmp30;
+      cResult[34] = tmp29;
       cResult[35] = projectId;
-      cResult[36] = null;
-      cResult[37] = closure_10(closure_16, obj2, tmp30.id);
-      const tmp39 = closure_10(closure_16, obj2, tmp30.id);
+      cResult[36] = tmp31;
+      cResult[37] = tmp37;
+      tmp34 = tmp37;
     }
     cResult[9] = disabled;
     cResult[10] = frameHeight;
@@ -1066,15 +1192,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
     cResult[17] = own.onRemove;
     cResult[18] = own.selected;
     cResult[19] = projectId;
-    cResult[20] = "gallery" === tmp6 || tmp22;
+    cResult[20] = "gallery" === tmp6 || tmp21;
     cResult[21] = selectedIds;
     cResult[22] = tmp27;
     cResult[23] = mapped;
+    tmp28 = mapped;
   }
   class G {
     constructor(arg0) {
       closure_0 = projectId;
-      obj = projectId(disabled[18]);
+      obj = projectId(disabled[19]);
       viewableImageOptionsResult = obj.viewableImageOptions(options);
       closure_1 = viewableImageOptionsResult;
       findIndexResult = viewableImageOptionsResult.findIndex((id) => id.id === id.id);
@@ -1082,7 +1209,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
       if (findIndexResult >= 0) {
         tmp2 = globalThis;
         _Promise = Promise;
-        allPromises = Promise.all(viewableImageOptionsResult.map((image) => onFrameHeight(id, image.image.attachment_id)));
+        allPromises = Promise.all(viewableImageOptionsResult.map((image) => first(id, image.image.attachment_id)));
         nextPromise = allPromises.then((arr) => {
           const mapped = arr.map((uri, mediaIndex) => {
             let height;
@@ -1092,7 +1219,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
             let result = null;
             const tmp = closure_1_1;
             if (null != value) {
-              const obj = projectId(disabled[18]);
+              const obj = projectId(disabled[19]);
               result = obj.imageOptionViewerSize(value);
             }
             size = { uri, mediaIndex, width, height, accessoryType: "embed", description: tmp[mediaIndex].label, disableDownload: true };
@@ -1101,14 +1228,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
               width = result.width;
             }
             if (width == null) {
-              width = id;
+              width = ref;
             }
             height = undefined;
             if (result != null) {
               height = result.height;
             }
             if (height == null) {
-              height = id;
+              height = ref;
             }
             return size;
           });
@@ -1125,7 +1252,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
   cResult[6] = options;
   cResult[7] = projectId;
   cResult[8] = G;
-}) : ((projectId) => {
+  tmp27 = G;
+}) : (function ConjureImageOptions(projectId) {
   let _undefined;
   let c10;
   let disabled;
@@ -1144,17 +1272,17 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
   ({ question, selectedIds: importDefault, disabled } = projectId);
   ({ onPick: _asyncToGenerator, own } = projectId);
   c10 = undefined;
-  let closure_13;
+  closure_13 = undefined;
   let c14;
   let onView;
-  closure_16 = undefined;
-  let tmp = c14();
+  let closure_16;
+  let tmp = closure_13();
   let tmp2 = true === question.multi_select;
   react = tmp2;
   const options = question.options;
   let tmp3 = projectId;
   const tmp4 = disabled;
-  let obj = projectId(disabled[18]);
+  let obj = projectId(disabled[19]);
   let obj2 = react;
   const useRef = react.useRef;
   const imageOptionsLayoutResult = obj.imageOptionsLayout(options);
@@ -1188,24 +1316,24 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
   const sum = length + num2;
   let tmp15 = null != num;
   if (tmp15) {
-    tmp15 = (num - require("native").space.PX_8 * (sum - 1)) / sum < closure_13;
+    tmp15 = (num - require("native").space.PX_8 * (sum - 1)) / sum < id;
   }
   closure_13 = tmp18;
   const _Math = Math;
   const _Math2 = Math;
-  const tmp19 = closure_13;
+  const tmp19 = id;
   const maxResult = max(tmp19, min(136, (num - 2 * require("native").space.PX_8) / 2.4));
   c14 = maxResult;
   const items1 = [options, projectId];
   onView = obj2.useCallback((arg0) => {
     id = arg0;
-    let obj = projectId(disabled[18]);
+    let obj = projectId(disabled[19]);
     const viewableImageOptionsResult = obj.viewableImageOptions(options);
     let closure_1 = viewableImageOptionsResult;
     const findIndexResult = viewableImageOptionsResult.findIndex((id) => id.id === id.id);
     disabled = findIndexResult;
     if (findIndexResult >= 0) {
-      const allPromises = Promise.all(viewableImageOptionsResult.map((image) => onFrameHeight(id, image.image.attachment_id)));
+      const allPromises = Promise.all(viewableImageOptionsResult.map((image) => first(id, image.image.attachment_id)));
       allPromises.then((arr) => {
         const mapped = arr.map((uri, mediaIndex) => {
           let height;
@@ -1215,7 +1343,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
           let result = null;
           const tmp = closure_1_1;
           if (null != value) {
-            const obj = projectId(disabled[18]);
+            const obj = projectId(disabled[19]);
             result = obj.imageOptionViewerSize(value);
           }
           size = { uri, mediaIndex, width, height, accessoryType: "embed", description: tmp[mediaIndex].label, disableDownload: true };
@@ -1224,14 +1352,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
             width = result.width;
           }
           if (width == null) {
-            width = id;
+            width = ref;
           }
           height = undefined;
           if (result != null) {
             height = result.height;
           }
           if (height == null) {
-            height = id;
+            height = ref;
           }
           return size;
         });
@@ -1263,15 +1391,15 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
       onView
     };
     tmp3 = null;
-    const tmp = c10;
-    const tmp2 = closure_16;
+    const tmp = onFrameHeight;
+    const tmp2 = onView;
     if (closure_13) {
       tmp3 = c14;
     }
     return tmp(tmp2, obj, option.id);
   });
   if (null != own.image) {
-    const tmp3Result = tmp3(tmp4[18]);
+    const tmp3Result = tmp3(tmp4[19]);
     const ownImageOptionResult = tmp3Result.ownImageOption(own.image);
     let obj3 = {
       projectId,
@@ -1293,8 +1421,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
     };
     tmp21 = null;
     const push = mapped.push;
-    const tmp32 = c10;
-    const tmp33 = closure_16;
+    const tmp32 = onFrameHeight;
+    const tmp33 = onView;
     if ("gallery" === imageOptionsLayoutResult || tmp15) {
       tmp21 = maxResult;
     }
@@ -1332,7 +1460,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
           } else {
             tmp = undefined;
             closure_1 = undefined;
-            const obj3 = tmp(disabled[24]);
+            const obj3 = tmp(disabled[25]);
             disabled = 1;
             c3 = 1;
             const obj5 = { value: obj3.pickConjurePhotos("photo", 1), done: false };
@@ -1350,7 +1478,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
           closure_1 = own(tmp, 1)[0];
           if (null != closure_1) {
             const onUpload = closure_129_4.onUpload;
-            const obj = tmp(disabled[24]);
+            const obj = tmp(disabled[25]);
             onUpload(obj.uploadConjurePickedFile(closure_129_0, closure_1));
           }
           c3 = 3;
@@ -1370,7 +1498,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
   };
   if ("gallery" === imageOptionsLayoutResult || tmp15) {
     let obj5 = { ref, horizontal: true, showsHorizontalScrollIndicator: false, contentContainerStyle: tmp.galleryContent, children: mapped };
-    tmp25Result = tmp25(closure_7, obj5);
+    tmp25Result = tmp25(options, obj5);
     tmp27 = tmp25;
   } else {
     let obj6 = { style: tmp.row, children: mapped };
@@ -1384,7 +1512,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
     const obj8 = {
       variant: "secondary",
       size: "sm",
-      icon: tmp27(tmp3(tmp4[26]).ImagePlusIcon, { size: "xs" }),
+      icon: tmp27(tmp3(tmp4[27]).ImagePlusIcon, { size: "xs" }),
       text: tmp3Result2.ownImageUploadText(question),
       loading: "upload" === own.busy,
       onPress() {
@@ -1394,8 +1522,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
           });
         }
     };
-    const Button = tmp3(tmp4[25]).Button;
-    tmp3Result2 = tmp3(tmp4[18]);
+    const Button = tmp3(tmp4[26]).Button;
+    tmp3Result2 = tmp3(tmp4[19]);
     items4 = [tmp27(Button, obj8), ];
     let tmp27Result = null;
     if (null != own.error) {
@@ -1406,7 +1534,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
     tmp23Result = tmp23(tmp24, obj7);
   }
   items3[1] = tmp23Result;
-  return ref(frameHeight, obj4);
+  return c10(closure_7, obj4);
 });
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/conjure/clarification/native/ConjureImageOptions.tsx");

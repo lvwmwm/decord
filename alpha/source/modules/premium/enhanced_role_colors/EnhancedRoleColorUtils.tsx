@@ -1,10 +1,10 @@
-// Module ID: 2109
-// Function ID: 2110
+// Module ID: 2121
+// Function ID: 2122
 // Name: EnhancedRoleColorUtils
 // Dependencies: [1085, 1103, 2]
 // Exports: extractColorStringsFromServerColors, getAuthorHasGradientRole, getIsDefaultErc
 
-// Module 2109 (EnhancedRoleColorUtils)
+// Module 2121 (EnhancedRoleColorUtils)
 import Constants from "Constants" /* 1085 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
 import size from "module_2" /* 2 */;

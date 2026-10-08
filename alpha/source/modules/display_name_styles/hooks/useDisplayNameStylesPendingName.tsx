@@ -1,19 +1,19 @@
-// Module ID: 15170
-// Function ID: 15171
+// Module ID: 15432
+// Function ID: 15433
 // Name: useDisplayNameStylesPendingName
-// Dependencies: [7842, 2112, 558, 576, 4728, 504, 2]
+// Dependencies: [8260, 2124, 558, 576, 4922, 504, 2]
 
-// Module 15170 (useDisplayNameStylesPendingName)
-import UserUtilsDefault from "UserUtils" /* 4728 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7842 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+// Module 15432 (useDisplayNameStylesPendingName)
+import UserUtilsDefault from "UserUtils" /* 4922 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8260 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, importDefault;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDisplayNameStylesPendingName(id, arg1) {
   let closure_1;
   let first;
   _require = id;
@@ -66,7 +66,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
   if (id != null) {
     id1 = id.id;
   }
-  const fn = function u() {
+  const fn = function o() {
     let pendingGlobalName;
     const pendingChanges = UserProfileSettingsStore.getPendingChanges(closure_1);
     const tmp = closure_1;
@@ -89,14 +89,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
   cResult[2] = id1;
   cResult[3] = fn;
   tmp11 = fn;
-}) : ((guildId, arg1) => {
+}) : (function useDisplayNameStylesPendingName(arg0, arg1) {
   let closure_1;
-  _require = guildId;
+  _require = arg0;
   importDefault = arg1;
   const obj = UserUtilsDefault;
-  const name = obj.useName(guildId);
+  const name = obj.useName(arg0);
   const items = [UserProfileSettingsStore, GuildMemberStore];
-  const items1 = [arg1, guildId];
+  const items1 = [arg1, arg0];
   const obj2 = require("get initialized");
   let str = obj2.useStateFromStores(items, () => {
     let pendingGlobalName;
@@ -105,10 +105,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
     if (null != closure_1) {
       let pendingNickname = pendingChanges.pendingNickname;
       if (pendingNickname == null) {
-        let id;
+        id = undefined;
         const getNick = GuildMemberStore.getNick;
-        if (guildId != null) {
-          id = guildId.id;
+        if (id != null) {
+          id = id.id;
         }
         pendingNickname = getNick(tmp, id);
       }

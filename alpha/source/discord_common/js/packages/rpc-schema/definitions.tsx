@@ -1,12 +1,14 @@
-// Module ID: 14336
-// Function ID: 14337
+// Module ID: 14561
+// Function ID: 14562
 // Name: definitions
-// Dependencies: [14337, 8025, 14338, 2]
+// Dependencies: [14562, 8433, 10742, 14563, 8586, 2]
 
-// Module 14336 (definitions)
-import OAuth2Scopes from "OAuth2Scopes" /* 8025 */;
-import helpers from "helpers" /* 14337 */;
-import contextMenuIcons from "contextMenuIcons" /* 14338 */;
+// Module 14561 (definitions)
+import OAuth2Scopes from "OAuth2Scopes" /* 8433 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8586 */;
+import ActivityPlatform from "ActivityPlatform" /* 10742 */;
+import helpers from "helpers" /* 14562 */;
+import contextMenuIcons from "contextMenuIcons" /* 14563 */;
 import size_mod from "module_2" /* 2 */;
 
 function VoiceCapabilities(object) {
@@ -366,12 +368,6 @@ function ContextMenuItem(string, arg1) {
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-}
-function ActionRowComponent(arg0) {
-
-}
-function ButtonComponent(arg0) {
-
 }
 const obj11 = {
   request(string) {
@@ -952,6 +948,33 @@ const obj26 = {
   response: "Reflect"
 };
 const obj27 = {
+  request: "Array",
+  response(object) {
+    let metaResult;
+    let obj2;
+    let objectResult;
+    let stringResult;
+    let stringResult1;
+    let stringResult2;
+    const obj = { surface: obj2.required(), launch: objectResult.required(), platform: metaResult.required() };
+    obj2 = EmbeddedSurface(object);
+    object = object.object;
+    const obj3 = { custom_id: stringResult.optional(), referrer_id: stringResult1.optional(), interaction_id: stringResult2.optional() };
+    stringResult = object.string();
+    stringResult1 = object.string();
+    stringResult2 = object.string();
+    objectResult = object(obj3);
+    const valid = object.string().valid;
+    object.string();
+    const joiEnum = helpers.joiEnum;
+    const items = [...joiEnum(ActivityPlatform.ActivityPlatform)];
+    helpers;
+    const applyResult = valid.apply(items);
+    metaResult = applyResult.meta({ className: "ActivityPlatform" });
+    return obj;
+  }
+};
+const obj28 = {
   embeddedAppSDK: true,
   request(string) {
     let maxResult;
@@ -960,12 +983,12 @@ const obj27 = {
     maxResult = stringResult.max(64);
     return obj;
   },
-  response(object) {
-    const obj = User(object);
+  response(arg0) {
+    const obj = User(arg0);
     return obj.allow(null);
   }
 };
-const obj28 = {
+const obj29 = {
   embeddedAppSDK: true,
   request(string) {
     let requiredResult;
@@ -986,7 +1009,7 @@ const obj28 = {
     return obj;
   }
 };
-const obj29 = {
+const obj30 = {
   embeddedAppSDK: true,
   request(string) {
     let requiredResult;
@@ -1002,7 +1025,7 @@ const obj29 = {
     return obj;
   }
 };
-const obj30 = {
+const obj31 = {
   embeddedAppSDK: true,
   request: "Array",
   response(string) {
@@ -1020,7 +1043,7 @@ const obj30 = {
     return obj;
   }
 };
-const obj31 = {
+const obj32 = {
   embeddedAppSDK: true,
   request: "Array",
   response(string) {
@@ -1030,7 +1053,7 @@ const obj31 = {
     return obj;
   }
 };
-const obj32 = {
+const obj33 = {
   request(boolean) {
     let booleanResult;
     const obj = { enabled: booleanResult.required() };
@@ -1044,7 +1067,81 @@ const obj32 = {
     return obj;
   }
 };
+class EmbeddedSurface {
+  constructor(alternatives) {
+    let optionalResult;
+    let optionalResult1;
+    let optionalResult2;
+    let optionalResult3;
+    let optionalResult4;
+    let requiredResult;
+    let requiredResult1;
+    let requiredResult2;
+    let requiredResult3;
+    let requiredResult4;
+    let requiredResult5;
+    let requiredResult6;
+    let requiredResult7;
+    const obj = { type: requiredResult.meta({ className: "EmbeddedSurfaceType.MAIN" }), channel_id: optionalResult.meta({ className: "ChannelId" }), guild_id: optionalResult1.meta({ className: "GuildId" }) };
+    const _try = alternatives.alternatives().try;
+    const object = alternatives.object;
+    alternatives.alternatives();
+    const numberResult = alternatives.number();
+    const validResult = numberResult.valid(EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN);
+    requiredResult = validResult.required();
+    const stringResult = alternatives.string();
+    optionalResult = stringResult.optional();
+    const stringResult1 = alternatives.string();
+    optionalResult1 = stringResult1.optional();
+    const object2 = alternatives.object;
+    const obj2 = { type: requiredResult1.meta({ className: "EmbeddedSurfaceType.APP_CHANNEL" }), channel_id: requiredResult2.meta({ className: "ChannelId" }), guild_id: optionalResult2.meta({ className: "GuildId" }) };
+    const objectResult = object(obj);
+    const numberResult1 = alternatives.number();
+    const validResult5 = numberResult1.valid(EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL);
+    requiredResult1 = validResult5.required();
+    const stringResult2 = alternatives.string();
+    requiredResult2 = stringResult2.required();
+    const stringResult3 = alternatives.string();
+    optionalResult2 = stringResult3.optional();
+    const object3 = alternatives.object;
+    const obj3 = { type: requiredResult3.meta({ className: "EmbeddedSurfaceType.VOICE_CHANNEL" }), channel_id: requiredResult4.meta({ className: "ChannelId" }), guild_id: optionalResult3.meta({ className: "GuildId" }) };
+    const object1Result = object2(obj2);
+    const numberResult2 = alternatives.number();
+    const validResult6 = numberResult2.valid(EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL);
+    requiredResult3 = validResult6.required();
+    const stringResult4 = alternatives.string();
+    requiredResult4 = stringResult4.required();
+    const stringResult5 = alternatives.string();
+    optionalResult3 = stringResult5.optional();
+    const object4 = alternatives.object;
+    const obj4 = { type: requiredResult5.meta({ className: "EmbeddedSurfaceType.INTERACTION_MODAL" }), channel_id: requiredResult6.meta({ className: "ChannelId" }), guild_id: optionalResult4.meta({ className: "GuildId" }) };
+    const object6Result = object3(obj3);
+    const numberResult3 = alternatives.number();
+    const validResult7 = numberResult3.valid(EmbeddedSurfaceType.EmbeddedSurfaceType.INTERACTION_MODAL);
+    requiredResult5 = validResult7.required();
+    const stringResult6 = alternatives.string();
+    requiredResult6 = stringResult6.required();
+    const stringResult7 = alternatives.string();
+    optionalResult4 = stringResult7.optional();
+    const object5 = alternatives.object;
+    const obj5 = { type: requiredResult7.meta({ className: "EmbeddedSurfaceType.OVERLAY" }) };
+    const object7Result = object4(obj4);
+    const numberResult4 = alternatives.number();
+    const validResult8 = numberResult4.valid(EmbeddedSurfaceType.EmbeddedSurfaceType.OVERLAY);
+    requiredResult7 = validResult8.required();
+    const _tryResult = _try(objectResult, object1Result, object6Result, object7Result, object5(obj5));
+    return _tryResult.meta({ className: "EmbeddedSurface" });
+  }
+}
+function ActionRowComponent(arg0) {
+
+}
+function ButtonComponent(arg0) {
+
+}
+let items = [EmbeddedSurface];
 let size = size_mod;
 const result = size.fileFinishedImporting("../discord_common/js/packages/rpc-schema/definitions.tsx");
 
-export const RPCCommandSchemas = { [helpers.RPCCommand.INITIATE_IMAGE_UPLOAD]: obj3, [helpers.RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj4, [helpers.RPCCommand.AUTHENTICATE]: obj5, [helpers.RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: obj6, [helpers.RPCCommand.RELAUNCH_FRAME]: obj7, [helpers.RPCCommand.GET_VOICE_CAPABILITIES]: obj8, [helpers.RPCCommand.GET_VOICE_SESSION_PARTICIPANTS]: obj9, [helpers.RPCCommand.START_VOICE_SESSION]: obj10, [helpers.RPCCommand.UPDATE_VOICE_SPATIAL]: obj11, [helpers.RPCCommand.ENABLE_VOICE_SPATIAL]: obj, [helpers.RPCCommand.DISABLE_VOICE_SPATIAL]: obj, [helpers.RPCCommand.STOP_VOICE_SESSION]: obj, [helpers.RPCCommand.GET_APPLICATION_STREAMING_VIEW_CAPABILITIES]: obj12, [helpers.RPCCommand.START_APPLICATION_STREAMING_VIEW]: obj2, [helpers.RPCCommand.SUSPEND_APPLICATION_STREAMING_VIEW]: obj, [helpers.RPCCommand.RESUME_APPLICATION_STREAMING_VIEW]: obj, [helpers.RPCCommand.WATCH_APPLICATION_STREAMING_VIEW_ON_DISCORD]: obj, [helpers.RPCCommand.STOP_APPLICATION_STREAMING_VIEW]: obj, [helpers.RPCCommand.GET_CAMERA_VIEW_CAPABILITIES]: obj13, [helpers.RPCCommand.START_CAMERA_VIEW]: obj2, [helpers.RPCCommand.SUSPEND_CAMERA_VIEW]: obj, [helpers.RPCCommand.RESUME_CAMERA_VIEW]: obj, [helpers.RPCCommand.STOP_CAMERA_VIEW]: obj, [helpers.RPCCommand.SHARE_INTERACTION]: obj14, [helpers.RPCCommand.SHARE_LINK]: obj15, [helpers.RPCCommand.SHARE_CONTENT]: obj16, [helpers.RPCCommand.OPEN_CONTEXT_MENU]: obj17, [helpers.RPCCommand.OPEN_USER_POPOUT]: obj18, [helpers.RPCCommand.OPEN_MEDIA_VIEWER]: obj19, [helpers.RPCCommand.OPEN_USER_PROFILE]: obj20, [helpers.RPCCommand.SHOW_TOOLTIP]: obj21, [helpers.RPCCommand.HIDE_TOOLTIP]: obj22, [helpers.RPCCommand.SHOW_TOAST]: obj23, [helpers.RPCCommand.SHOW_CONFIRM_MODAL]: obj24, [helpers.RPCCommand.GET_RELATIONSHIPS]: obj25, [helpers.RPCCommand.INVITE_USER_EMBEDDED]: obj26, [helpers.RPCCommand.GET_USER]: obj27, [helpers.RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: obj28, [helpers.RPCCommand.QUEST_START_TIMER]: obj29, [helpers.RPCCommand.GET_QUEST]: obj30, [helpers.RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: obj31, [helpers.RPCCommand.SET_PREFERS_PICTURE_IN_PICTURE_ON_NAVIGATE_AWAY]: obj32 };
+export const RPCCommandSchemas = { [helpers.RPCCommand.INITIATE_IMAGE_UPLOAD]: obj3, [helpers.RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj4, [helpers.RPCCommand.AUTHENTICATE]: obj5, [helpers.RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: obj6, [helpers.RPCCommand.RELAUNCH_FRAME]: obj7, [helpers.RPCCommand.GET_VOICE_CAPABILITIES]: obj8, [helpers.RPCCommand.GET_VOICE_SESSION_PARTICIPANTS]: obj9, [helpers.RPCCommand.START_VOICE_SESSION]: obj10, [helpers.RPCCommand.UPDATE_VOICE_SPATIAL]: obj11, [helpers.RPCCommand.ENABLE_VOICE_SPATIAL]: obj, [helpers.RPCCommand.DISABLE_VOICE_SPATIAL]: obj, [helpers.RPCCommand.STOP_VOICE_SESSION]: obj, [helpers.RPCCommand.GET_APPLICATION_STREAMING_VIEW_CAPABILITIES]: obj12, [helpers.RPCCommand.START_APPLICATION_STREAMING_VIEW]: obj2, [helpers.RPCCommand.SUSPEND_APPLICATION_STREAMING_VIEW]: obj, [helpers.RPCCommand.RESUME_APPLICATION_STREAMING_VIEW]: obj, [helpers.RPCCommand.WATCH_APPLICATION_STREAMING_VIEW_ON_DISCORD]: obj, [helpers.RPCCommand.STOP_APPLICATION_STREAMING_VIEW]: obj, [helpers.RPCCommand.GET_CAMERA_VIEW_CAPABILITIES]: obj13, [helpers.RPCCommand.START_CAMERA_VIEW]: obj2, [helpers.RPCCommand.SUSPEND_CAMERA_VIEW]: obj, [helpers.RPCCommand.RESUME_CAMERA_VIEW]: obj, [helpers.RPCCommand.STOP_CAMERA_VIEW]: obj, [helpers.RPCCommand.SHARE_INTERACTION]: obj14, [helpers.RPCCommand.SHARE_LINK]: obj15, [helpers.RPCCommand.SHARE_CONTENT]: obj16, [helpers.RPCCommand.OPEN_CONTEXT_MENU]: obj17, [helpers.RPCCommand.OPEN_USER_POPOUT]: obj18, [helpers.RPCCommand.OPEN_MEDIA_VIEWER]: obj19, [helpers.RPCCommand.OPEN_USER_PROFILE]: obj20, [helpers.RPCCommand.SHOW_TOOLTIP]: obj21, [helpers.RPCCommand.HIDE_TOOLTIP]: obj22, [helpers.RPCCommand.SHOW_TOAST]: obj23, [helpers.RPCCommand.SHOW_CONFIRM_MODAL]: obj24, [helpers.RPCCommand.GET_RELATIONSHIPS]: obj25, [helpers.RPCCommand.INVITE_USER_EMBEDDED]: obj26, [helpers.RPCCommand.GET_CONTEXT]: obj27, [helpers.RPCCommand.GET_USER]: obj28, [helpers.RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: obj29, [helpers.RPCCommand.QUEST_START_TIMER]: obj30, [helpers.RPCCommand.GET_QUEST]: obj31, [helpers.RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: obj32, [helpers.RPCCommand.SET_PREFERS_PICTURE_IN_PICTURE_ON_NAVIGATE_AWAY]: obj33 };
+export const RPCNamedSchemas = items;

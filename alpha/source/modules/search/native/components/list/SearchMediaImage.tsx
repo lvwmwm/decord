@@ -1,55 +1,55 @@
-// Module ID: 16860
-// Function ID: 16861
+// Module ID: 17139
+// Function ID: 17140
 // Name: SearchMediaImage
-// Dependencies: [109, 32, 19, 17, 2051, 6794, 1085, 21, 4896, 558, 576, 4797, 4735, 6809, 11051, 5872, 5780, 504, 7956, 1483, 11640, 1369, 1126, 8442, 11316, 1390, 6842, 7950, 8401, 11056, 2]
+// Dependencies: [109, 32, 19, 17, 2063, 6067, 1085, 21, 5090, 558, 576, 4991, 4929, 6981, 12795, 8184, 5363, 504, 8374, 1495, 11705, 1381, 6164, 1126, 8928, 11491, 1402, 5949, 8368, 8899, 11884, 2]
 
-// Module 16860 (SearchMediaImage)
+// Module 17139 (SearchMediaImage)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import FlagUtils from "FlagUtils" /* 1390 */;
-import shared from "shared" /* 4735 */;
-import useThemeDefault from "useTheme" /* 4797 */;
-import ImageWarningIcon from "ImageWarningIcon" /* 5872 */;
-import ObscureMediaModels from "ObscureMediaModels" /* 6809 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6842 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 7950 */;
-import generated_SpoilerIcon from "generated/SpoilerIcon" /* 11051 */;
-import useContentHarmTypes from "useContentHarmTypes" /* 11316 */;
-import MessageAttachmentUtils from "MessageAttachmentUtils" /* 11640 */;
+import FlagUtils from "FlagUtils" /* 1402 */;
+import shared from "shared" /* 4929 */;
+import useThemeDefault from "useTheme" /* 4991 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 5949 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import ObscureMediaModels from "ObscureMediaModels" /* 6981 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 8184 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8368 */;
+import useContentHarmTypes from "useContentHarmTypes" /* 11491 */;
+import MessageAttachmentUtils from "MessageAttachmentUtils" /* 11705 */;
+import generated_SpoilerIcon from "generated/SpoilerIcon" /* 12795 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import SearchMessageStore from "SearchMessageStore" /* 6794 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import SearchMessageStore from "SearchMessageStore" /* 6067 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, embed, flag;
+let _require, dependencyMap, flag;
 
 let c10;
 let c9;
+let closure_14;
 let closure_15;
 let closure_16;
-let closure_17;
 let tmp;
 let tmp5;
-let unpackModuleId;
-const VisualEffectViewDefault = tmp5(5780);
-const CirclePlayIcon = tmp(8401);
-const AttachmentPreview = tmp(11056);
+const VisualEffectViewDefault = tmp5(5363);
+const CirclePlayIcon = tmp(8899);
+const AttachmentPreview = tmp(11884);
 let closure_3 = ["attachment", "channelId", "authorId"];
 let closure_4 = ["embed", "sources", "messageId", "channelId", "authorId"];
 let closure_5 = ["unfurledMediaItem", "sources", "channelId", "authorId", "isBot"];
-({ ImageBackground: c9, StyleSheet: c10, View: unpackModuleId } = react_native);
+({ StyleSheet: c9, View: c10 } = react_native);
 const MessageAttachmentFlags = Constants.MessageAttachmentFlags;
-({ jsx: closure_15, Fragment: closure_16, jsxs: closure_17 } = Fragment);
-let closure_18 = createStyles.createStyles({ container: { justifyContent: "center", alignItems: "center" }, sound: { justifyContent: "center", alignItems: "center" } });
+({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = Fragment);
+let closure_17 = createStyles.createStyles({ container: { justifyContent: "center", alignItems: "center" }, sound: { justifyContent: "center", alignItems: "center" } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchMediaObscurityIcon(arg0) {
   let height;
   let items1;
   let items2;
@@ -58,7 +58,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = react2;
   const cResult = obj.c(16);
   ({ obscureReason, height, width } = arg0);
-  const tmp4 = closure_18();
+  const tmp4 = closure_17();
   let str = "light";
   const tmp6 = useThemeDefault();
   const obj2 = shared;
@@ -76,7 +76,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp14;
       const _Symbol2 = Symbol;
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp16 = closure_15(generated_SpoilerIcon.SpoilerIcon, { size: "lg" });
+        const tmp16 = authStore2(generated_SpoilerIcon.SpoilerIcon, { size: "lg" });
         cResult[3] = tmp16;
         tmp14 = tmp16;
       } else {
@@ -96,7 +96,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const _Symbol = Symbol;
       if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp12 = closure_15(ImageWarningIcon.ImageWarningIcon, { size: "lg" });
+        const tmp12 = authStore2(ImageWarningIcon.ImageWarningIcon, { size: "lg" });
         cResult[4] = tmp12;
         tmp10 = tmp12;
       } else {
@@ -105,7 +105,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp8 = tmp10;
     }
     if (cResult[5] !== tmp7) {
-      const items = [authStore.absoluteFill, tmp7];
+      const items = [React4.absoluteFill, tmp7];
       cResult[5] = tmp7;
       cResult[6] = items;
       tmp17 = items;
@@ -131,7 +131,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const obj3 = { children: items1 };
         items1 = [tmp19, tmp22];
-        const tmp31 = closure_17(authStore3, obj3);
+        const tmp31 = authStore4(authStore3, obj3);
         cResult[13] = tmp19;
         cResult[14] = tmp22;
         cResult[15] = tmp31;
@@ -140,8 +140,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp24 = null != tmp8;
       if (tmp24) {
         const obj4 = { style: items2, children: tmp8 };
-        items2 = [authStore.absoluteFill, tmp4.container];
-        tmp24 = closure_15(unpackModuleId, obj4);
+        items2 = [React4.absoluteFill, tmp4.container];
+        tmp24 = authStore2(authStore, obj4);
       }
       cResult[10] = tmp8;
       cResult[11] = tmp4;
@@ -149,7 +149,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp22 = tmp24;
     }
     const obj5 = { blurTheme: str, style: tmp17 };
-    const tmp21 = closure_15(VisualEffectViewDefault, obj5);
+    const tmp21 = authStore2(VisualEffectViewDefault, obj5);
     cResult[7] = str;
     cResult[8] = tmp17;
     cResult[9] = tmp21;
@@ -160,13 +160,13 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = width;
   cResult[2] = size;
   tmp7 = size;
-}) : ((obscureReason) => {
+}) : (function SearchMediaObscurityIcon(obscureReason) {
   let items2;
   let items4;
   obscureReason = obscureReason.obscureReason;
   const height = obscureReason.height;
   const width = obscureReason.width;
-  const tmp = closure_18();
+  const tmp = closure_17();
   let str = "light";
   const tmp4 = height(width[11])();
   const obj = obscureReason(width[12]);
@@ -183,7 +183,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items);
   const memo1 = react.useMemo(() => {
     if (ObscureMediaModels.ObscureReason.SPOILER === obscureReason) {
-      return closure_15(generated_SpoilerIcon.SpoilerIcon, { size: "lg" });
+      return authStore2(generated_SpoilerIcon.SpoilerIcon, { size: "lg" });
     } else {
       if (ObscureMediaModels.ObscureReason.EXPLICIT_CONTENT !== obscureReason) {
         if (ObscureMediaModels.ObscureReason.GORE_CONTENT !== obscureReason) {
@@ -194,33 +194,33 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
       }
-      return closure_15(ImageWarningIcon.ImageWarningIcon, { size: "lg" });
+      return authStore2(ImageWarningIcon.ImageWarningIcon, { size: "lg" });
     }
   }, items1);
   const obj2 = { blurTheme: str, style: items2 };
-  items2 = [absoluteFill.absoluteFill, memo];
-  const children = [closure_15(tmp2(tmp3[16]), obj2), ];
+  items2 = [closure_9.absoluteFill, memo];
+  const children = [closure_14(tmp2(tmp3[16]), obj2), ];
   let tmp9Result = null != memo1;
-  const tmp10 = absoluteFill;
-  const tmp7 = closure_17;
-  const tmp8 = closure_16;
-  const tmp9 = closure_15;
+  const tmp10 = closure_9;
+  const tmp7 = closure_16;
+  const tmp8 = closure_15;
+  const tmp9 = closure_14;
   if (tmp9Result) {
     const obj3 = { style: items4, children: memo1 };
     items4 = [tmp10.absoluteFill, tmp.container];
-    tmp9Result = tmp9(closure_11, obj3);
+    tmp9Result = tmp9(closure_10, obj3);
   }
   children[1] = tmp9Result;
   return tmp7(tmp8, { children });
 });
 let memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SearchMediaImage(channelId) {
   let containerHeight;
   let containerStyle;
   let containerWidth;
-  let items1;
   let items2;
+  let items3;
   let mediaHeight;
   let mediaUrl;
   let mediaWidth;
@@ -232,7 +232,7 @@ let closure_20 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId
   let tmp18;
   let tmp19;
   const obj = channelId(576);
-  const cResult = obj.c(43);
+  const cResult = obj.c(48);
   channelId = channelId.channelId;
   ({ mediaUrl, mediaHeight, mediaWidth, containerStyle, placeholder, placeholderVersion, renderFallback, obscureReason, containerHeight, containerWidth, scale } = channelId);
   if (cResult[0] === containerHeight) {
@@ -240,7 +240,7 @@ let closure_20 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId
     let tmp6;
     let tmp8;
     let tmp11;
-    let tmp45;
+    let tmp51;
     if (cResult[1] === containerWidth) {
       tmp4 = cResult[2];
     }
@@ -264,9 +264,9 @@ let closure_20 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId
     }
     const tmpResult = channelId(504);
     const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp8);
-    const tmpResult6 = channelId(7956);
+    const tmpResult6 = channelId(8374);
     const shouldDisplaySpoilerObscurity = tmpResult6.useShouldDisplaySpoilerObscurity(stateFromStores);
-    if (obscureReason !== channelId(6809).ObscureReason.SPOILER) {
+    if (obscureReason !== channelId(6981).ObscureReason.SPOILER) {
       tmp11 = obscureReason;
     } else {
       tmp11 = null;
@@ -274,7 +274,7 @@ let closure_20 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId
     if (null != mediaUrl) {
       if (null != mediaHeight) {
         if (null != mediaWidth) {
-          let items4;
+          let items5;
           if (cResult[8] === containerHeight) {
             if (cResult[9] === containerWidth) {
               if (cResult[10] === mediaHeight) {
@@ -286,7 +286,7 @@ let closure_20 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId
                       tmp13 = cResult[14];
                     }
                     if (cResult[15] !== tmp11) {
-                      const tmpResult7 = channelId(11640);
+                      const tmpResult7 = channelId(11705);
                       const obscuredAlt = tmpResult7.getObscuredAlt(tmp11);
                       cResult[15] = tmp11;
                       cResult[16] = obscuredAlt;
@@ -301,109 +301,130 @@ let closure_20 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId
                         if (cResult[19] === tmp11) {
                           tmp23 = cResult[20];
                         }
-                        const tmpResult8 = channelId(1369);
+                        const tmpResult8 = channelId(1381);
                         if (tmpResult8.isAndroid()) {
                           if (null != tmp11) {
                             let tmp36;
-                            if (cResult[21] !== tmp13) {
-                              const obj2 = { uri: tmp13 };
-                              cResult[21] = tmp13;
-                              cResult[22] = obj2;
-                              tmp36 = obj2;
+                            let tmp38;
+                            if (cResult[21] !== tmp4) {
+                              const items1 = [closure_9.absoluteFill, tmp4];
+                              cResult[21] = tmp4;
+                              cResult[22] = items1;
+                              tmp36 = items1;
                             } else {
                               tmp36 = cResult[22];
                             }
-                            if (cResult[23] === tmp21) {
-                              if (cResult[24] === tmp4) {
-                                let tmp37;
-                                if (cResult[25] === tmp36) {
-                                  tmp37 = cResult[26];
+                            if (cResult[23] !== tmp13) {
+                              const obj2 = { uri: tmp13 };
+                              cResult[23] = tmp13;
+                              cResult[24] = obj2;
+                              tmp38 = obj2;
+                            } else {
+                              tmp38 = cResult[24];
+                            }
+                            if (cResult[25] === tmp21) {
+                              if (cResult[26] === tmp36) {
+                                let tmp39;
+                                if (cResult[27] === tmp38) {
+                                  tmp39 = cResult[28];
                                 }
-                                if (cResult[27] === containerStyle) {
-                                  if (cResult[28] === tmp23) {
-                                    let tmp41;
-                                    if (cResult[29] === tmp37) {
-                                      tmp41 = cResult[30];
-                                    }
-                                    return tmp41;
+                                if (cResult[29] === tmp4) {
+                                  let tmp43;
+                                  if (cResult[30] === tmp39) {
+                                    tmp43 = cResult[31];
                                   }
+                                  if (cResult[32] === containerStyle) {
+                                    if (cResult[33] === tmp23) {
+                                      let tmp47;
+                                      if (cResult[34] === tmp43) {
+                                        tmp47 = cResult[35];
+                                      }
+                                      return tmp47;
+                                    }
+                                  }
+                                  const obj3 = { style: containerStyle, children: items2 };
+                                  items2 = [tmp43, tmp23];
+                                  const tmp50 = closure_16(closure_10, obj3);
+                                  cResult[32] = containerStyle;
+                                  cResult[33] = tmp23;
+                                  cResult[34] = tmp43;
+                                  cResult[35] = tmp50;
+                                  tmp47 = tmp50;
                                 }
-                                const obj3 = { style: containerStyle, children: items1 };
-                                items1 = [tmp37, tmp23];
-                                const tmp44 = closure_17(closure_11, obj3);
-                                cResult[27] = containerStyle;
-                                cResult[28] = tmp23;
-                                cResult[29] = tmp37;
-                                cResult[30] = tmp44;
-                                tmp41 = tmp44;
+                                const obj4 = { style: tmp4, children: tmp39 };
+                                const tmp46 = closure_14(closure_10, obj4);
+                                cResult[29] = tmp4;
+                                cResult[30] = tmp39;
+                                cResult[31] = tmp46;
+                                tmp43 = tmp46;
                               }
                             }
-                            const obj4 = { style: tmp4, source: tmp36, blurRadius: 10, resizeMode: "cover", accessibilityLabel: tmp21 };
-                            const tmp40 = closure_15(closure_9, obj4);
-                            cResult[23] = tmp21;
-                            cResult[24] = tmp4;
-                            cResult[25] = tmp36;
-                            cResult[26] = tmp40;
-                            tmp37 = tmp40;
+                            const obj5 = { style: tmp36, source: tmp38, blurRadius: 10, resizeMode: "cover", accessibilityLabel: tmp21 };
+                            const tmp42 = closure_14(FastImageDefault, obj5);
+                            cResult[25] = tmp21;
+                            cResult[26] = tmp36;
+                            cResult[27] = tmp38;
+                            cResult[28] = tmp42;
+                            tmp39 = tmp42;
                           }
                         }
-                        if (cResult[31] !== tmp21) {
+                        if (cResult[36] !== tmp21) {
                           let stringResult = tmp21;
-                          const tmpResult9 = channelId(1369);
+                          const tmpResult9 = channelId(1381);
                           if (tmpResult9.isAndroid()) {
                             const intl = tmp(1126).intl;
                             stringResult = intl.string(tmp(1126).t.jes7FG);
                           }
-                          cResult[31] = tmp21;
-                          cResult[32] = stringResult;
+                          cResult[36] = tmp21;
+                          cResult[37] = stringResult;
                           tmp27 = stringResult;
                         } else {
-                          tmp27 = cResult[32];
+                          tmp27 = cResult[37];
                         }
-                        if (cResult[33] === tmp27) {
-                          if (cResult[34] === placeholder) {
-                            if (cResult[35] === placeholderVersion) {
-                              if (cResult[36] === tmp4) {
+                        if (cResult[38] === tmp27) {
+                          if (cResult[39] === placeholder) {
+                            if (cResult[40] === placeholderVersion) {
+                              if (cResult[41] === tmp4) {
                                 let tmp29;
-                                if (cResult[37] === tmp13) {
-                                  tmp29 = cResult[38];
+                                if (cResult[42] === tmp13) {
+                                  tmp29 = cResult[43];
                                 }
-                                if (cResult[39] === containerStyle) {
-                                  if (cResult[40] === tmp23) {
+                                if (cResult[44] === containerStyle) {
+                                  if (cResult[45] === tmp23) {
                                     let tmp32;
-                                    if (cResult[41] === tmp29) {
-                                      tmp32 = cResult[42];
+                                    if (cResult[46] === tmp29) {
+                                      tmp32 = cResult[47];
                                     }
                                     return tmp32;
                                   }
                                 }
-                                const obj5 = { style: containerStyle, children: items2 };
-                                items2 = [tmp29, tmp23];
-                                const tmp35 = closure_17(closure_11, obj5);
-                                cResult[39] = containerStyle;
-                                cResult[40] = tmp23;
-                                cResult[41] = tmp29;
-                                cResult[42] = tmp35;
+                                const obj6 = { style: containerStyle, children: items3 };
+                                items3 = [tmp29, tmp23];
+                                const tmp35 = closure_16(closure_10, obj6);
+                                cResult[44] = containerStyle;
+                                cResult[45] = tmp23;
+                                cResult[46] = tmp29;
+                                cResult[47] = tmp35;
                                 tmp32 = tmp35;
                               }
                             }
                           }
                         }
-                        const obj6 = { style: tmp4, uri: tmp13, placeholder, placeholderVersion, alt: tmp27 };
-                        const tmp31 = closure_15(channelId(8442).ImageWithPlaceholder, obj6);
-                        cResult[33] = tmp27;
-                        cResult[34] = placeholder;
-                        cResult[35] = placeholderVersion;
-                        cResult[36] = tmp4;
-                        cResult[37] = tmp13;
-                        cResult[38] = tmp31;
+                        const obj7 = { style: tmp4, uri: tmp13, placeholder, placeholderVersion, alt: tmp27 };
+                        const tmp31 = closure_14(channelId(8928).ImageWithPlaceholder, obj7);
+                        cResult[38] = tmp27;
+                        cResult[39] = placeholder;
+                        cResult[40] = placeholderVersion;
+                        cResult[41] = tmp4;
+                        cResult[42] = tmp13;
+                        cResult[43] = tmp31;
                         tmp29 = tmp31;
                       }
                     }
                     let tmp24 = null;
                     if (null != tmp11) {
                       size = { obscureReason: tmp11, height: containerHeight, width: containerWidth };
-                      tmp24 = closure_15(closure_19, size);
+                      tmp24 = closure_14(closure_18, size);
                     }
                     cResult[17] = containerHeight;
                     cResult[18] = containerWidth;
@@ -419,18 +440,18 @@ let closure_20 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId
           const result1 = containerWidth * scale;
           if (mediaWidth > mediaHeight) {
             const _Math2 = Math;
-            const items3 = [Math.round(mediaWidth * (result1 / mediaHeight)), result1];
-            items4 = items3;
+            const items4 = [Math.round(mediaWidth * (result1 / mediaHeight)), result1];
+            items5 = items4;
           } else {
-            items4 = [result, ];
+            items5 = [result, ];
             const _Math = Math;
-            items4[1] = Math.round(mediaHeight * (result / mediaWidth));
+            items5[1] = Math.round(mediaHeight * (result / mediaWidth));
           }
-          [tmp18, tmp19] = items4;
-          _slicedToArray(items4, 2);
-          const obj7 = { src: mediaUrl, sourceWidth: mediaWidth, sourceHeight: mediaHeight, targetWidth: tmp18, targetHeight: tmp19, format: "png" };
-          const tmpResult10 = channelId(1483);
-          const srcWithWidthAndHeight = tmpResult10.getSrcWithWidthAndHeight(obj7);
+          [tmp18, tmp19] = items5;
+          _slicedToArray(items5, 2);
+          const obj8 = { src: mediaUrl, sourceWidth: mediaWidth, sourceHeight: mediaHeight, targetWidth: tmp18, targetHeight: tmp19, format: "png" };
+          const tmpResult10 = channelId(1495);
+          const srcWithWidthAndHeight = tmpResult10.getSrcWithWidthAndHeight(obj8);
           cResult[8] = containerHeight;
           cResult[9] = containerWidth;
           cResult[10] = mediaHeight;
@@ -443,33 +464,35 @@ let closure_20 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId
       }
     }
     if (cResult[6] !== renderFallback) {
-      let tmp46 = null;
+      let tmp52 = null;
       if (null != renderFallback) {
-        const obj8 = { children: renderFallback() };
-        tmp46 = closure_15(closure_16, obj8);
+        const obj9 = { children: renderFallback() };
+        tmp52 = closure_14(closure_15, obj9);
       }
       cResult[6] = renderFallback;
-      cResult[7] = tmp46;
-      tmp45 = tmp46;
+      cResult[7] = tmp52;
+      tmp51 = tmp52;
     } else {
-      tmp45 = cResult[7];
+      tmp51 = cResult[7];
     }
-    return tmp45;
+    return tmp51;
   }
   const size1 = { height: containerHeight, width: containerWidth };
   cResult[0] = containerHeight;
   cResult[1] = containerWidth;
   cResult[2] = size1;
   tmp4 = size1;
-}) : ((containerWidth) => {
+}) : (function SearchMediaImage(containerWidth) {
   let containerHeight;
   let containerStyle;
   let items4;
   let items5;
+  let items6;
   let mediaHeight;
   let mediaUrl;
   let mediaWidth;
   let obj6;
+  let obj7;
   let obscureReason;
   let placeholder;
   let placeholderVersion;
@@ -522,40 +545,42 @@ let closure_20 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId
         let tmp15 = null;
         if (null != tmp6) {
           size = { obscureReason: tmp6, height: containerHeight, width: containerWidth };
-          tmp15 = closure_15(closure_19, size);
+          tmp15 = closure_14(closure_18, size);
         }
         const tmp2Result5 = require("PlatformUtils");
         if (tmp2Result5.isAndroid()) {
           if (null != tmp6) {
-            const obj5 = { style: memo, source: obj6, blurRadius: 10, resizeMode: "cover", accessibilityLabel: obscuredAlt };
-            const obj4 = { style: containerStyle, children: items4 };
-            obj6 = { uri: srcWithWidthAndHeight };
-            items4 = [closure_15(closure_9, obj5), tmp15];
-            return closure_17(closure_11, obj4);
+            const obj4 = { style: containerStyle, children: items5 };
+            const obj5 = { style: memo, children: closure_14(containerHeight(containerWidth[22]), obj6) };
+            obj6 = { style: items4, source: obj7, blurRadius: 10, resizeMode: "cover", accessibilityLabel: obscuredAlt };
+            items4 = [closure_9.absoluteFill, memo];
+            obj7 = { uri: srcWithWidthAndHeight };
+            items5 = [closure_14(closure_10, obj5), tmp15];
+            return closure_16(closure_10, obj4);
           }
         }
         let stringResult = obscuredAlt;
         const tmp2Result6 = require("PlatformUtils");
         if (tmp2Result6.isAndroid()) {
-          const intl = tmp2(tmp3[22]).intl;
-          stringResult = intl.string(tmp2(tmp3[22]).t.jes7FG);
+          const intl = tmp2(tmp3[23]).intl;
+          stringResult = intl.string(tmp2(tmp3[23]).t.jes7FG);
         }
-        const obj7 = { style: containerStyle, children: items5 };
-        const obj8 = { style: memo, uri: srcWithWidthAndHeight, placeholder, placeholderVersion, alt: stringResult };
-        items5 = [closure_15(require("ImageWithPlaceholder").ImageWithPlaceholder, obj8), tmp15];
-        return closure_17(closure_11, obj7);
+        const obj8 = { style: containerStyle, children: items6 };
+        const obj9 = { style: memo, uri: srcWithWidthAndHeight, placeholder, placeholderVersion, alt: stringResult };
+        items6 = [closure_14(require("ImageWithPlaceholder").ImageWithPlaceholder, obj9), tmp15];
+        return closure_16(closure_10, obj8);
       }
     }
   }
-  let tmp26 = null;
+  let tmp27 = null;
   if (null != renderFallback) {
-    const obj9 = { children: renderFallback() };
-    tmp26 = closure_15(closure_16, obj9);
+    const obj10 = { children: renderFallback() };
+    tmp27 = closure_14(closure_15, obj10);
   }
-  return tmp26;
+  return tmp27;
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchAttachmentMediaImage(arg0) {
   let attachment;
   let authorId;
   let channelId;
@@ -623,7 +648,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj2 = { channelId: tmp5, obscureReason: tmp15, mediaUrl: tmp17 };
         const merged = Object.assign(tmp6);
         ({ height: obj6.mediaHeight, width: obj6.mediaWidth } = size);
-        const tmp25 = closure_15(closure_20, obj2);
+        const tmp25 = authStore2(closure_19, obj2);
         cResult[14] = size.height;
         cResult[15] = size.width;
         cResult[16] = tmp5;
@@ -657,7 +682,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = tmp5;
   cResult[7] = hasFlagResult;
   tmp11 = hasFlagResult;
-}) : ((attachment) => {
+}) : (function SearchAttachmentMediaImage(attachment) {
   let attachmentUrl;
   let c2;
   attachment = attachment.attachment;
@@ -665,17 +690,17 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const authorId = attachment.authorId;
   const merged = Object.assign(attachment, Object.assign({ attachment: 0, channelId: 0, authorId: 0 }));
   dependencyMap = undefined;
-  let obj = attachment(11316);
+  let obj = attachment(11491);
   const enabledHarmTypesBitmaskForChannelAndAuthorId = obj.useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId);
   let num = attachment.flags;
-  const hasFlag = attachment(1390).hasFlag;
-  attachment(1390);
+  const hasFlag = attachment(1402).hasFlag;
+  attachment(1402);
   if (num == null) {
     num = 0;
   }
   let hasFlagResult = hasFlag(num, MessageAttachmentFlags.IS_SPOILER);
   if (!hasFlagResult) {
-    const tmp2Result = attachment(6842);
+    const tmp2Result = attachment(5949);
     hasFlagResult = tmp2Result.isChannelSpoilerGated(ChannelStore.getChannel(channelId));
   }
   dependencyMap = hasFlagResult;
@@ -685,14 +710,14 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return obj.getObscureReasonForAttachment(attachment, enabledHarmTypesBitmaskForChannelAndAuthorId, c2);
   }, items);
   const obj2 = { channelId, obscureReason: memo, mediaUrl: attachmentUrl };
-  const tmp2Result2 = attachment(7950);
+  const tmp2Result2 = attachment(8368);
   attachmentUrl = tmp2Result2.getAttachmentUrl(attachment);
   const merged1 = Object.assign(merged);
   ({ height: obj4.mediaHeight, width: obj4.mediaWidth } = attachment);
-  return closure_15(closure_20, obj2);
+  return closure_14(closure_19, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((embed) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchEmbedMediaImage(embed) {
   let authorId;
   let channelId;
   let closure_0;
@@ -720,15 +745,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((embed) => {
     cResult[3] = embed;
     cResult[4] = messageId;
     const tmp12 = _objectWithoutProperties(embed, isChannelSpoilerGated);
-    class C {
+    class M {
       constructor() {
-        message = closure_13.getMessage(closure_1);
+        message = closure_12.getMessage(closure_1);
         if (null == message) {
           return null;
         } else {
           tmp2 = closure_0;
           tmp3 = closure_2;
-          obj = closure_0(closure_2[27]);
+          obj = closure_0(closure_2[28]);
           tmp4 = closure_2;
           flag = false;
           flattenSourceResult = obj.flattenSource(closure_2, false);
@@ -846,16 +871,16 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((embed) => {
           }
           const obj2 = { channelId: tmp5, obscureReason: stateFromStores, mediaUrl: url, mediaHeight: height, mediaWidth: width };
           const merged = Object.assign(tmp8);
-          const tmp31 = closure_15(closure_20, obj2);
-          class C {
+          const tmp31 = closure_14(closure_19, obj2);
+          class M {
             constructor() {
-              message = closure_13.getMessage(closure_1);
+              message = closure_12.getMessage(closure_1);
               if (null == message) {
                 return null;
               } else {
                 tmp2 = closure_0;
                 tmp3 = closure_2;
-                obj = closure_0(closure_2[27]);
+                obj = closure_0(closure_2[28]);
                 tmp4 = closure_2;
                 flag = false;
                 flattenSourceResult = obj.flattenSource(closure_2, false);
@@ -893,15 +918,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((embed) => {
       }
     }
   }
-  class C {
+  class M {
     constructor() {
-      message = closure_13.getMessage(closure_1);
+      message = closure_12.getMessage(closure_1);
       if (null == message) {
         return null;
       } else {
         tmp2 = closure_0;
         tmp3 = closure_2;
-        obj = closure_0(closure_2[27]);
+        obj = closure_0(closure_2[28]);
         tmp4 = closure_2;
         flag = false;
         flattenSourceResult = obj.flattenSource(closure_2, false);
@@ -932,9 +957,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((embed) => {
   cResult[12] = isChannelSpoilerGated;
   cResult[13] = tmp7;
   cResult[14] = tmp9;
-  cResult[15] = C;
-  tmp20 = C;
-}) : ((embed) => {
+  cResult[15] = M;
+  tmp20 = M;
+}) : (function SearchEmbedMediaImage(embed) {
   let channelId;
   let height;
   let width;
@@ -943,9 +968,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((embed) => {
   const authorId = embed.authorId;
   const merged = Object.assign(embed, Object.assign({ embed: 0, sources: 0, messageId: 0, channelId: 0, authorId: 0 }));
   let tmp2 = embed;
-  let obj = embed(11316);
+  let obj = embed(11491);
   closure_3 = obj.useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId);
-  const obj2 = embed(6842);
+  const obj2 = embed(5949);
   closure_4 = obj2.useIsChannelSpoilerGated(ChannelStore.getChannel(channelId));
   const items = [SearchMessageStore];
   const thumbnail = embed.thumbnail;
@@ -965,19 +990,19 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((embed) => {
       if (flag2 == null) {
         flag2 = false;
       }
-      const getObscureReasonForEmbed = tmp2(11640).getObscureReasonForEmbed;
-      const tmp2Result = tmp2(11640);
+      const getObscureReasonForEmbed = tmp2(11705).getObscureReasonForEmbed;
+      const tmp2Result = tmp2(11705);
       if (!flag2) {
         flag2 = closure_4;
       }
       return getObscureReasonForEmbed(embed, message, flag2, closure_3);
     }
   });
-  const obj4 = embed(7950);
+  const obj4 = embed(8368);
   size = obj4.getEmbedMedia(embed);
   let embedUrl = null;
   if (null != size) {
-    let tmp2Result = tmp2(7950);
+    let tmp2Result = tmp2(8368);
     embedUrl = tmp2Result.getEmbedUrl(size);
   }
   if (null != thumbnail) {
@@ -995,17 +1020,17 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((embed) => {
   }
   const obj5 = { channelId, obscureReason: stateFromStores, mediaUrl: embedUrl, mediaHeight: height, mediaWidth: width };
   const merged1 = Object.assign(merged);
-  return closure_15(closure_20, obj5);
+  return closure_14(closure_19, obj5);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchSoundMediaImage(arg0) {
   let containerStyle;
   let height;
   let width;
   const obj = react2;
   const cResult = obj.c(10);
   ({ height, width, containerStyle } = arg0);
-  const tmp4 = closure_18();
+  const tmp4 = closure_17();
   if (cResult[0] === height) {
     let tmp5;
     if (cResult[1] === width) {
@@ -1021,7 +1046,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const _Symbol = Symbol;
         if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp10 = closure_15(CirclePlayIcon.CirclePlayIcon, { size: "lg", color: "interactive-text-default" });
+          const tmp10 = authStore2(CirclePlayIcon.CirclePlayIcon, { size: "lg", color: "interactive-text-default" });
           cResult[7] = tmp10;
           tmp8 = tmp10;
         } else {
@@ -1029,7 +1054,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         if (cResult[8] !== tmp6) {
           const obj2 = { style: tmp6, children: tmp8 };
-          const tmp14 = closure_15(unpackModuleId, obj2);
+          const tmp14 = authStore2(authStore, obj2);
           cResult[8] = tmp6;
           cResult[9] = tmp14;
           tmp11 = tmp14;
@@ -1051,23 +1076,23 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = width;
   cResult[2] = size;
   tmp5 = size;
-}) : ((height) => {
+}) : (function SearchSoundMediaImage(height) {
   let items1;
   height = height.height;
   const width = height.width;
   const containerStyle = height.containerStyle;
   const items = [height, width];
-  const obj = { style: items1, children: closure_15(CirclePlayIcon.CirclePlayIcon, { size: "lg", color: "interactive-text-default" }) };
-  items1 = [closure_18().sound, containerStyle, ];
-  closure_18();
+  const obj = { style: items1, children: authStore2(CirclePlayIcon.CirclePlayIcon, { size: "lg", color: "interactive-text-default" }) };
+  items1 = [closure_17().sound, containerStyle, ];
+  closure_17();
   items1[2] = react.useMemo(() => {
     size = { height, width };
     return size;
   }, items);
-  return closure_15(unpackModuleId, obj);
+  return authStore2(authStore, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchFileMediaImage(arg0) {
   let containerStyle;
   let fileName;
   let height;
@@ -1075,7 +1100,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = react2;
   const cResult = obj.c(12);
   ({ fileName, height, width, containerStyle } = arg0);
-  const tmp4 = closure_18();
+  const tmp4 = closure_17();
   if (cResult[0] === height) {
     let tmp5;
     if (cResult[1] === width) {
@@ -1090,7 +1115,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         if (cResult[7] !== fileName) {
           const obj2 = { fileName };
-          const tmp9 = closure_15(AttachmentPreview.AttachmentIcon, obj2);
+          const tmp9 = authStore2(AttachmentPreview.AttachmentIcon, obj2);
           cResult[7] = fileName;
           cResult[8] = tmp9;
           tmp7 = tmp9;
@@ -1105,7 +1130,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return tmp10;
         }
         const obj3 = { style: tmp6, children: tmp7 };
-        const tmp13 = closure_15(unpackModuleId, obj3);
+        const tmp13 = authStore2(authStore, obj3);
         cResult[9] = tmp6;
         cResult[10] = tmp7;
         cResult[11] = tmp13;
@@ -1124,7 +1149,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = width;
   cResult[2] = size;
   tmp5 = size;
-}) : ((height) => {
+}) : (function SearchFileMediaImage(height) {
   let containerStyle;
   let fileName;
   let items1;
@@ -1132,17 +1157,17 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const width = height.width;
   ({ fileName, containerStyle } = height);
   const items = [height, width];
-  const obj = { style: items1, children: closure_15(AttachmentPreview.AttachmentIcon, { fileName }) };
-  items1 = [closure_18().sound, containerStyle, ];
-  closure_18();
+  const obj = { style: items1, children: authStore2(AttachmentPreview.AttachmentIcon, { fileName }) };
+  items1 = [closure_17().sound, containerStyle, ];
+  closure_17();
   items1[2] = react.useMemo(() => {
     size = { height, width };
     return size;
   }, items);
-  return closure_15(unpackModuleId, obj);
+  return authStore2(authStore, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchComponentMediaImage(arg0) {
   let authorId;
   let channelId;
   let isBot;
@@ -1222,7 +1247,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const obj2 = { channelId: tmp5, obscureReason: tmp21 };
           const merged = Object.assign(tmp7);
           ({ proxyUrl: obj6.mediaUrl, height: obj6.mediaHeight, width: obj6.mediaWidth } = size);
-          const tmp34 = closure_15(closure_20, obj2);
+          const tmp34 = authStore2(closure_19, obj2);
           cResult[17] = tmp5;
           cResult[18] = tmp21;
           cResult[19] = tmp7;
@@ -1253,7 +1278,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[10] = tmp8;
   cResult[11] = spoiler || isChannelSpoilerGated;
   tmp17 = tmp20;
-}) : ((unfurledMediaItem) => {
+}) : (function SearchComponentMediaImage(unfurledMediaItem) {
   let channelId;
   let isBot;
   let memo;
@@ -1262,9 +1287,9 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ channelId, isBot } = unfurledMediaItem);
   const authorId = unfurledMediaItem.authorId;
   const merged = Object.assign(unfurledMediaItem, Object.assign({ unfurledMediaItem: 0, sources: 0, channelId: 0, authorId: 0, isBot: 0 }));
-  let obj = unfurledMediaItem(isBot[24]);
+  let obj = unfurledMediaItem(isBot[25]);
   const enabledHarmTypesBitmaskForChannelAndAuthorId = obj.useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId);
-  const obj2 = unfurledMediaItem(isBot[26]);
+  const obj2 = unfurledMediaItem(isBot[27]);
   const isChannelSpoilerGated = obj2.useIsChannelSpoilerGated(ChannelStore.getChannel(channelId));
   const items = [unfurledMediaItem, enabledHarmTypesBitmaskForChannelAndAuthorId, sources, isBot, isChannelSpoilerGated];
   const obj4 = { channelId, obscureReason: memo };
@@ -1284,7 +1309,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items);
   const merged1 = Object.assign(merged);
   ({ proxyUrl: obj3.mediaUrl, height: obj3.mediaHeight, width: obj3.mediaWidth } = unfurledMediaItem);
-  return closure_15(closure_20, obj4);
+  return closure_14(closure_19, obj4);
 });
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/search/native/components/list/SearchMediaImage.tsx");

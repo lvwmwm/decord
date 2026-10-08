@@ -1,10 +1,10 @@
-// Module ID: 7321
-// Function ID: 7322
+// Module ID: 7765
+// Function ID: 7766
 // Name: ICYMIAttachmentUploadTarget
-// Dependencies: [1085, 7256, 2]
+// Dependencies: [1085, 7732, 2]
 
-// Module 7321 (ICYMIAttachmentUploadTarget)
-import UploadUtils from "UploadUtils" /* 7256 */;
+// Module 7765 (ICYMIAttachmentUploadTarget)
+import UploadUtils from "UploadUtils" /* 7732 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

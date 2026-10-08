@@ -1,20 +1,20 @@
-// Module ID: 12180
-// Function ID: 12181
+// Module ID: 12259
+// Function ID: 12260
 // Name: useFeaturedExpiringPowerup
-// Dependencies: [19, 7683, 4773, 558, 576, 504, 12181, 7078, 2]
+// Dependencies: [19, 8004, 4967, 558, 576, 504, 12260, 7264, 2]
 
-// Module 12180 (useFeaturedExpiringPowerup)
-import CollectiblesUtils from "CollectiblesUtils" /* 7078 */;
+// Module 12259 (useFeaturedExpiringPowerup)
+import CollectiblesUtils from "CollectiblesUtils" /* 7264 */;
 import react from "react" /* 19 */;
-import GameServerStore from "GameServerStore" /* 7683 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4773 */;
+import GameServerStore from "GameServerStore" /* 8004 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4967 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFeaturedExpiringPowerup(arg0) {
   let closure_0;
   let first;
   let tmp11;
@@ -51,7 +51,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
     tmp9 = cResult[3];
   }
   if (cResult[4] !== arg0) {
-    const fn2 = function p() {
+    const fn2 = function _() {
       return GameServerStore.getStateForGuild(closure_0);
     };
     cResult[4] = arg0;
@@ -90,7 +90,6 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
       }
     }
   }
-  let tmp22;
   if (expiringPowerupCoachmarkEnabled) {
     let unlockedPowerups1;
     const _Object = Object;
@@ -131,41 +130,105 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
       let tmp29;
       const _Symbol = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const fn3 = function x(ends_at, ends_at2) {
-          let tmp = ends_at;
-          if (ends_at2.ends_at > ends_at.ends_at) {
-            tmp = ends_at2;
+        class S {
+          constructor(ends_at, ends_at2) {
+            let tmp = ends_at;
+            if (ends_at2.ends_at > ends_at.ends_at) {
+              tmp = ends_at2;
+            }
+            return tmp;
           }
-          return tmp;
-        };
-        cResult[11] = fn3;
-        tmp29 = fn3;
+        }
+        cResult[11] = S;
+        tmp29 = S;
       } else {
-        tmp29 = cResult[11];
+        class S {
+          constructor(ends_at, ends_at2) {
+            let tmp = ends_at;
+            if (ends_at2.ends_at > ends_at.ends_at) {
+              tmp = ends_at2;
+            }
+            return tmp;
+          }
+        }
       }
       const reduced = found.reduce(tmp29);
-      let title;
       if (stateFromStores != null) {
-        if (stateFromStores.allPowerups[reduced.sku_id] != null) {
-          title = tmp32.title;
+        class S {
+          constructor(ends_at, ends_at2) {
+            let tmp = ends_at;
+            if (ends_at2.ends_at > ends_at.ends_at) {
+              tmp = ends_at2;
+            }
+            return tmp;
+          }
         }
-      }
-      if (title == null) {
-        title = null;
-      }
-      const sku = reduced.sku;
-      let game_server;
-      if (sku != null) {
-        const tenant_metadata = sku.tenant_metadata;
-        if (tenant_metadata != null) {
-          const guild_monetization = tenant_metadata.guild_monetization;
-          if (guild_monetization != null) {
-            game_server = guild_monetization.game_server;
+        if (tmp32 != null) {
+          class S {
+            constructor(ends_at, ends_at2) {
+              let tmp = ends_at;
+              if (ends_at2.ends_at > ends_at.ends_at) {
+                tmp = ends_at2;
+              }
+              return tmp;
+            }
           }
         }
       }
-      if (null !== title) {
-        const _Math = Math;
+      if (undefined == null) {
+        class S {
+          constructor(ends_at, ends_at2) {
+            let tmp = ends_at;
+            if (ends_at2.ends_at > ends_at.ends_at) {
+              tmp = ends_at2;
+            }
+            return tmp;
+          }
+        }
+      }
+      if (reduced.sku != null) {
+        class S {
+          constructor(ends_at, ends_at2) {
+            let tmp = ends_at;
+            if (ends_at2.ends_at > ends_at.ends_at) {
+              tmp = ends_at2;
+            }
+            return tmp;
+          }
+        }
+        if (tmp34 != null) {
+          class S {
+            constructor(ends_at, ends_at2) {
+              let tmp = ends_at;
+              if (ends_at2.ends_at > ends_at.ends_at) {
+                tmp = ends_at2;
+              }
+              return tmp;
+            }
+          }
+          if (tmp35 != null) {
+            class S {
+              constructor(ends_at, ends_at2) {
+                let tmp = ends_at;
+                if (ends_at2.ends_at > ends_at.ends_at) {
+                  tmp = ends_at2;
+                }
+                return tmp;
+              }
+            }
+          }
+        }
+      }
+      if (null !== undefined) {
+        class S {
+          constructor(ends_at, ends_at2) {
+            let tmp = ends_at;
+            if (ends_at2.ends_at > ends_at.ends_at) {
+              tmp = ends_at2;
+            }
+            return tmp;
+          }
+        }
         const _Date = Date;
         const self = this;
         const self2 = this;
@@ -173,57 +236,99 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
         require("CollectiblesUtils");
         const date = new Date(reduced.ends_at);
         const maxResult = max(0, getDaysRemaining(date));
-        let metadata = reduced.metadata;
-        let num10;
-        if (metadata != null) {
-          num10 = metadata.num_expiring_boosts;
-        }
-        if (num10 == null) {
-          num10 = 0;
-        }
-        if (cResult[12] === maxResult) {
-          if (cResult[13] === reduced) {
-            if (cResult[14] === null != game_server) {
-              if (cResult[15] === title) {
-                let tmp39;
-                if (cResult[16] === num10) {
-                  tmp39 = cResult[17];
-                }
-                tmp22 = tmp39;
+        if (reduced.metadata != null) {
+          class S {
+            constructor(ends_at, ends_at2) {
+              let tmp = ends_at;
+              if (ends_at2.ends_at > ends_at.ends_at) {
+                tmp = ends_at2;
               }
+              return tmp;
             }
           }
         }
-        const obj2 = { name: title, daysUntilExpiry: maxResult, numExpiringBoosts: num10, isGameServer: null != game_server, skuId: reduced.sku_id };
+        if (undefined == null) {
+          class S {
+            constructor(ends_at, ends_at2) {
+              let tmp = ends_at;
+              if (ends_at2.ends_at > ends_at.ends_at) {
+                tmp = ends_at2;
+              }
+              return tmp;
+            }
+          }
+        }
+        if (cResult[12] === maxResult) {
+          class S {
+            constructor(ends_at, ends_at2) {
+              let tmp = ends_at;
+              if (ends_at2.ends_at > ends_at.ends_at) {
+                tmp = ends_at2;
+              }
+              return tmp;
+            }
+          }
+        }
+        const obj2 = { name: undefined, daysUntilExpiry: maxResult, numExpiringBoosts: undefined, isGameServer: null != undefined, skuId: reduced.sku_id };
         cResult[12] = maxResult;
         cResult[13] = reduced;
-        cResult[14] = null != game_server;
-        cResult[15] = title;
-        cResult[16] = num10;
+        cResult[14] = null != undefined;
+        cResult[15] = undefined;
+        cResult[16] = undefined;
         cResult[17] = obj2;
-        tmp39 = obj2;
+      } else {
+        class S {
+          constructor(ends_at, ends_at2) {
+            let tmp = ends_at;
+            if (ends_at2.ends_at > ends_at.ends_at) {
+              tmp = ends_at2;
+            }
+            return tmp;
+          }
+        }
       }
     }
   }
   cResult[6] = expiringPowerupCoachmarkEnabled;
-  let entitlements2;
   if (stateFromStores1 != null) {
-    entitlements2 = stateFromStores1.entitlements;
+    class S {
+      constructor(ends_at, ends_at2) {
+        let tmp = ends_at;
+        if (ends_at2.ends_at > ends_at.ends_at) {
+          tmp = ends_at2;
+        }
+        return tmp;
+      }
+    }
   }
-  cResult[7] = entitlements2;
-  let allPowerups1;
+  cResult[7] = undefined;
   if (stateFromStores != null) {
-    allPowerups1 = stateFromStores.allPowerups;
+    class S {
+      constructor(ends_at, ends_at2) {
+        let tmp = ends_at;
+        if (ends_at2.ends_at > ends_at.ends_at) {
+          tmp = ends_at2;
+        }
+        return tmp;
+      }
+    }
   }
-  cResult[8] = allPowerups1;
-  let unlockedPowerups2;
+  cResult[8] = undefined;
   if (stateFromStores != null) {
-    unlockedPowerups2 = stateFromStores.unlockedPowerups;
+    class S {
+      constructor(ends_at, ends_at2) {
+        let tmp = ends_at;
+        if (ends_at2.ends_at > ends_at.ends_at) {
+          tmp = ends_at2;
+        }
+        return tmp;
+      }
+    }
   }
-  cResult[9] = unlockedPowerups2;
-  cResult[10] = tmp22;
+  cResult[9] = undefined;
+  cResult[10] = undefined;
   tmp21 = tmp22;
-}) : ((arg0) => {
+}) : (function useFeaturedExpiringPowerup(arg0) {
   let closure_0;
   let expiringPowerupCoachmarkEnabled;
   let stateFromStores;

@@ -1,15 +1,15 @@
-// Module ID: 10499
-// Function ID: 10500
+// Module ID: 10096
+// Function ID: 10097
 // Name: SlayerStorefrontTimeUtils
-// Dependencies: [32, 19, 4467, 1102, 558, 576, 6967, 1126, 3623, 2]
+// Dependencies: [32, 19, 4659, 1102, 558, 576, 7156, 1126, 3697, 2]
 
-// Module 10499 (SlayerStorefrontTimeUtils)
+// Module 10096 (SlayerStorefrontTimeUtils)
 import react2 from "react" /* 576 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import intl4 from "intl" /* 1126 */;
-import _modDef3623 from "module_3623" /* 3623 */;
-import _modDef4467 from "module_4467" /* 4467 */;
-import useIntervalDefault from "useInterval" /* 6967 */;
+import _modDef3697 from "module_3697" /* 3697 */;
+import _modDef4659 from "module_4659" /* 4659 */;
+import useIntervalDefault from "useInterval" /* 7156 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -26,8 +26,8 @@ function getLimitedOfferTimeLeft(arg0) {
   if (null == arg0) {
     return null;
   } else {
-    const obj2 = _modDef4467(arg0);
-    const diffResult = obj2.diff(_modDef4467(), "seconds");
+    const obj2 = _modDef4659(arg0);
+    const diffResult = obj2.diff(_modDef4659(), "seconds");
     let tmp4 = null;
     if (diffResult > 0) {
       const time = { days: Math.floor(diffResult / DurationsDefault.Seconds.DAY), hours: floor(result / DurationsDefault.Seconds.HOUR), minutes: floor2(result1 / DurationsDefault.Seconds.MINUTE), seconds: diffResult % DurationsDefault.Seconds.MINUTE };
@@ -59,20 +59,20 @@ function formatLimitedOfferTimeLeft(arg0) {
     } else if (hours > 0) {
       const intl2 = intl4.intl;
       const obj3 = { hours };
-      formatToPlainStringResult = intl2.formatToPlainString(_modDef3623.PPaJSw, obj3);
+      formatToPlainStringResult = intl2.formatToPlainString(_modDef3697.PPaJSw, obj3);
     } else {
       const intl = intl4.intl;
       const formatToPlainString = intl.formatToPlainString;
       const _Math = Math;
       const obj = { minutes: Math.max(tmp13, 1) };
-      const prop = _modDef3623["7Z+aIf"];
+      const prop = _modDef3697["7Z+aIf"];
       formatToPlainStringResult = formatToPlainString(prop, obj);
     }
     return formatToPlainStringResult;
   }
 }
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsLimitedOfferExpired(arg0) {
   let tmp3;
   let tmp7;
   const obj = react2;
@@ -86,7 +86,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp3 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function u(arg0) {
+    const fn = function o(arg0) {
       return arg0 + 1;
     };
     cResult[2] = fn;
@@ -105,7 +105,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   tmp10(tmp8, SECOND);
   return tmp3;
-}) : ((arg0) => {
+}) : (function useIsLimitedOfferExpired(arg0) {
   const tmp = null != arg0 && null == getLimitedOfferTimeLeft(arg0);
   let SECOND = null;
   const tmp3 = _slicedToArray(react.useReducer((arg0) => arg0 + 1, 0), 2)[1];
@@ -120,7 +120,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTickingFormattedLimitedOfferTimeLeft(arg0, arg1) {
   let closure_0;
   let tmp4;
   let tmp6;
@@ -128,7 +128,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   const obj = require("react");
   const cResult = obj.c(4);
   if (cResult[0] !== arg0) {
-    const fn = function o() {
+    const fn = function u() {
       return formatLimitedOfferTimeLeft(closure_0);
     };
     cResult[0] = arg0;
@@ -172,7 +172,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     }
   }
   return null;
-}) : ((arg0) => {
+}) : (function useTickingFormattedLimitedOfferTimeLeft(arg0) {
   let closure_1;
   let first;
   let closure_0 = arg0;

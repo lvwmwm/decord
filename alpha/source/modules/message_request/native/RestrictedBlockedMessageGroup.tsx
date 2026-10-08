@@ -1,19 +1,19 @@
-// Module ID: 17107
-// Function ID: 17108
+// Module ID: 17388
+// Function ID: 17389
 // Name: RestrictedBlockedMessageGroup
-// Dependencies: [32, 19, 17, 21, 4896, 17105, 587, 558, 576, 1126, 4892, 5916, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 17386, 587, 558, 576, 1126, 5086, 6189, 2]
 
-// Module 17107 (RestrictedBlockedMessageGroup)
+// Module 17388 (RestrictedBlockedMessageGroup)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Pressables from "Pressables" /* 5916 */;
-import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 17105 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Pressables from "Pressables" /* 6189 */;
+import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 17386 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ const View = react_native.View;
 let obj = { toggle: obj2 };
 obj2 = { marginLeft: RestrictedMessagePreviewLayout.RESTRICTED_CONTENT_INSET, marginVertical: nativeDefault.space.PX_8 };
 let closure_7 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedBlockedMessageGroup(arg0) {
   let first;
   let items;
   let messages;
@@ -73,7 +73,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[5] !== tmp9) {
     const obj4 = { variant: "text-sm/medium", color: "text-muted", children: tmp9 };
-    const tmp13 = closure_5(renderMessage(4892).Text, obj4);
+    const tmp13 = closure_5(renderMessage(5086).Text, obj4);
     cResult[5] = tmp9;
     cResult[6] = tmp13;
     tmp11 = tmp13;
@@ -119,13 +119,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp16 = tmp17;
     }
   }
-  const tmp15 = closure_5(renderMessage(5916).PressableOpacity, { style: toggle, accessibilityRole: "button", accessibilityState: tmp8, onPress: first, children: tmp11 });
+  const tmp15 = closure_5(renderMessage(6189).PressableOpacity, { style: toggle, accessibilityRole: "button", accessibilityState: tmp8, onPress: first, children: tmp11 });
   cResult[7] = tmp4.toggle;
   cResult[8] = tmp8;
   cResult[9] = tmp11;
   cResult[10] = tmp15;
   tmp14 = tmp15;
-}) : ((arg0) => {
+}) : (function RestrictedBlockedMessageGroup(arg0) {
   let Text;
   let _undefined;
   let c1;

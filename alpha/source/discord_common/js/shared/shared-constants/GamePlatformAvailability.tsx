@@ -1,9 +1,9 @@
-// Module ID: 12043
-// Function ID: 12044
+// Module ID: 12116
+// Function ID: 12117
 // Name: GamePlatformAvailability
 // Dependencies: [2]
 
-// Module 12043 (GamePlatformAvailability)
+// Module 12116 (GamePlatformAvailability)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/GamePlatformAvailability.tsx");

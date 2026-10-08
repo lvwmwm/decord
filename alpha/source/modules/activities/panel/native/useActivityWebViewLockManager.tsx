@@ -1,11 +1,11 @@
-// Module ID: 17195
-// Function ID: 17196
+// Module ID: 17476
+// Function ID: 17477
 // Name: useActivityWebViewLockManager
-// Dependencies: [32, 19, 4618, 4595, 2]
+// Dependencies: [32, 19, 4810, 4787, 2]
 // Exports: default, useLockedWebView
 
-// Module 17195 (useActivityWebViewLockManager)
-import native from "native" /* 4595 */;
+// Module 17476 (useActivityWebViewLockManager)
+import native from "native" /* 4787 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ export default function useActivityWebViewLockManager() {
     }
     set = new Set();
     map = new Map();
-    return () => {
+    return function useActivityWebviewLock() {
       let id = getCanRender.useId();
       let tmp2 = map(getCanRender.useState(() => {
         let tmp2 = 0 === set.size;
@@ -76,7 +76,7 @@ export default function useActivityWebViewLockManager() {
       }, items);
       const items1 = [id, tmp4];
       const layoutEffect = getCanRender.useLayoutEffect(() => {
-        const f153879 = () => {
+        const f155420 = () => {
           let tmp6;
           let tmp8;
           const tmp2 = closure_1_2[Symbol.iterator]();
@@ -100,12 +100,12 @@ export default function useActivityWebViewLockManager() {
         if (null == id) {
           const tmp = globalThis;
           let resolved = Promise.resolve();
-          id = resolved.then(f153879);
+          id = resolved.then(f155420);
         }
         return () => {
           if (null == closure_0) {
             const resolved = Promise.resolve();
-            closure_0 = resolved.then(f153879);
+            closure_0 = resolved.then(f155420);
           }
         };
       }, items1);

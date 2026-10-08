@@ -1,19 +1,19 @@
-// Module ID: 10753
-// Function ID: 10754
+// Module ID: 11618
+// Function ID: 11619
 // Name: PileOverflow
-// Dependencies: [19, 17, 2116, 21, 4896, 587, 558, 576, 573, 1888, 4892, 2]
+// Dependencies: [19, 17, 2128, 21, 5090, 587, 558, 576, 573, 1900, 5086, 2]
 
-// Module 10753 (PileOverflow)
+// Module 11618 (PileOverflow)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import NumberUtils from "NumberUtils" /* 1888 */;
-import Text_Text from "Text/Text" /* 4892 */;
+import NumberUtils from "NumberUtils" /* 1900 */;
+import Text_Text from "Text/Text" /* 5086 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
+import LocaleStore from "LocaleStore" /* 2128 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ obj2 = { alignItems: "center", justifyContent: "center", backgroundColor: native
 let closure_6 = createStyles.createStyles(obj);
 let items = [[64, "text-lg/semibold"], [48, "text-md/semibold"], [40, "text-md/semibold"], [30, "text-sm/semibold"], [24, "text-xs/semibold"], [16, "text-xxs/semibold"]];
 const map = new Map(items);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PileOverflow(arg0) {
   let borderRadius;
   let items1;
   let locale;
@@ -131,7 +131,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = num3;
   cResult[5] = obj4;
   tmp9 = obj4;
-}) : ((size) => {
+}) : (function PileOverflow(size) {
   let Text;
   let borderRadius;
   let items2;
@@ -155,7 +155,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   items1[1] = obj2;
   const obj3 = { style: items1, children: tmp6(Text, obj4) };
-  Text = tmp(4892).Text;
+  Text = tmp(5086).Text;
   let str = map.get(size);
   tmp6 = React3;
   if (str == null) {

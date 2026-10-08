@@ -1,33 +1,33 @@
-// Module ID: 8503
-// Function ID: 8504
+// Module ID: 8987
+// Function ID: 8988
 // Name: CutoutBackgroundContext
-// Dependencies: [19, 21, 558, 576, 683, 8504, 587, 4586, 2]
+// Dependencies: [19, 21, 558, 576, 683, 8988, 587, 4778, 2]
 
-// Module 8503 (CutoutBackgroundContext)
+// Module 8987 (CutoutBackgroundContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
-import useToken from "useToken" /* 4586 */;
+import useToken from "useToken" /* 4778 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let children;
-
 let tmp;
-const colors = tmp(8504);
+const colors = tmp(8988);
 const jsx = Fragment.jsx;
 let context = react.createContext(undefined);
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const useCutoutBackgroundColor = () => react.useContext(closure_5);
+function useCutoutBackgroundColor() {
+  return react.useContext(closure_5);
+}
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CutoutBackgroundProvider(children) {
   const obj = react2;
   const cResult = obj.c(6);
   children = children.children;
-  if (typeof fn === "function") {
+  if (typeof useCutoutBackgroundColor === "function") {
     let tmp11;
     const context = react.useContext(closure_5);
     const tmp9 = closure_7(tmp4);
@@ -69,8 +69,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-}) : ((arg0) => {
-  if (typeof fn === "function") {
+}) : (function CutoutBackgroundProvider(arg0) {
+  if (typeof useCutoutBackgroundColor === "function") {
     let result;
     const context = react.useContext(closure_5);
     const tmp7 = closure_7(tmp);
@@ -92,7 +92,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((BACKGROUND_BASE_LOW) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTokenOrColor(BACKGROUND_BASE_LOW) {
   const internal = nativeDefault.internal;
   let tmp2;
   if (internal.isSemanticColor(BACKGROUND_BASE_LOW)) {
@@ -108,7 +108,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((BACKGROUND_BASE
     tmp4 = token;
   }
   return tmp4;
-}) : ((BACKGROUND_BASE_LOW) => {
+}) : (function useTokenOrColor(BACKGROUND_BASE_LOW) {
   const internal = nativeDefault.internal;
   let tmp2;
   if (internal.isSemanticColor(BACKGROUND_BASE_LOW)) {

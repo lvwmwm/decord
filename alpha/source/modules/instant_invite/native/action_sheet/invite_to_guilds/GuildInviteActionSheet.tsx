@@ -1,26 +1,26 @@
-// Module ID: 12811
-// Function ID: 12812
+// Module ID: 12958
+// Function ID: 12959
 // Name: GuildInviteActionSheet
-// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 1126, 1188, 12812, 12813, 12809, 12814, 4892, 6478, 10854, 6651, 6554, 9496, 6652, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 587, 558, 576, 1126, 1200, 12959, 12960, 12956, 12961, 5086, 6656, 10505, 6828, 6730, 8660, 6829, 2]
 
-// Module 12811 (GuildInviteActionSheet)
+// Module 12958 (GuildInviteActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import SearchField2 from "SearchField" /* 6554 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6651 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6652 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9496 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12812 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12813 */;
-import GuildInviteRowDefault from "GuildInviteRow" /* 12814 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import SearchField2 from "SearchField" /* 6730 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6828 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6829 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 8660 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12959 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12960 */;
+import GuildInviteRowDefault from "GuildInviteRow" /* 12961 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ obj3 = { rowGap: 8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BAC
 obj4 = { paddingBottom: 6, paddingTop: 24, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 let closure_8 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyGuildList() {
   let tmp5;
   let tmp6;
   let tmp9;
@@ -64,7 +64,7 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() =>
   }
   if (cResult[2] !== tmp4.emptyStateContainer) {
     const obj2 = { containerStyle: emptyStateContainer, title: tmp5, body: tmp6, darkSource: AssetRegistryDefault, lightSource: AssetRegistryDefault2 };
-    const ThemedEmptyState = tmp(1188).ThemedEmptyState;
+    const ThemedEmptyState = tmp(1200).ThemedEmptyState;
     const tmp12 = metroRequire(ThemedEmptyState, obj2);
     cResult[2] = tmp4.emptyStateContainer;
     cResult[3] = tmp12;
@@ -73,7 +73,7 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() =>
     tmp9 = cResult[3];
   }
   return tmp9;
-}) : (() => {
+}) : (function EmptyGuildList() {
   let intl;
   let intl2;
   const obj = { containerStyle: closure_8().emptyStateContainer, title: intl.string(intl4.t["2bfiLk"]), body: intl2.string(intl4.t.V6nAfF), darkSource: AssetRegistryDefault, lightSource: AssetRegistryDefault2 };
@@ -83,9 +83,10 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() =>
   return metroRequire(ThemedEmptyState, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((recipientId) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildList(recipientId) {
   let arr;
   let arr2;
+  let closure_3;
   let intl2;
   let items;
   let sectionTitle;
@@ -98,7 +99,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((recipientId) =
   const query = recipientId.query;
   const tmp4 = closure_8();
   dependencyMap = tmp4;
-  const obj2 = recipientId(12809);
+  const obj2 = recipientId(12956);
   [arr, arr2] = _slicedToArray(obj2.useServerInviteRows(recipientId, query), 2);
   const tmp5 = _slicedToArray(obj2.useServerInviteRows(recipientId, query), 2);
   if (cResult[0] === (0 === arr.length && 0 === arr2.length)) {
@@ -108,242 +109,147 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((recipientId) =
         tmp7 = cResult[3];
       }
       if (cResult[4] === recipientId) {
-        let tmp10;
+        let tmp9;
         let tmp11;
         if (cResult[5] === source) {
-          tmp10 = cResult[6];
+          tmp9 = cResult[6];
         }
         if (cResult[7] !== tmp4) {
-          class E {
-            constructor(arg0) {
-              tmp = null;
-              if (recipientId.data.length > 0) {
-                tmp2 = jsx;
-                tmp3 = closure_0;
-                tmp4 = closure_2;
-                obj = { style: null, variant: "text-sm/semibold", color: "text-default", children: null };
-                tmp5 = closure_2;
-                obj.style = closure_2.sectionTitle;
-                obj.children = recipientId.title;
-                tmp = jsx(closure_0(closure_2[14]).Text, obj);
-              }
-              return tmp;
+          function renderSectionHeader(data) {
+            let tmp = null;
+            if (data.data.length > 0) {
+              const obj = { style: sectionTitle.sectionTitle, variant: "text-sm/semibold", color: "text-default", children: data.title };
+              tmp = metroRequire(Text_Text.Text, obj);
             }
+            return tmp;
           }
-          class T {
-            constructor(arg0) {
-              ({ item, start, end } = recipientId);
-              obj = { row: item, recipientId, source, start, end };
-              return jsx(closure_1(closure_2[13]), obj);
-            }
-          }
-          cResult[8] = E;
-          tmp11 = E;
+          cResult[7] = tmp4;
+          cResult[8] = renderSectionHeader;
+          tmp11 = renderSectionHeader;
         } else {
-          class E {
-            constructor(arg0) {
-              tmp = null;
-              if (recipientId.data.length > 0) {
-                tmp2 = jsx;
-                tmp3 = closure_0;
-                tmp4 = closure_2;
-                obj = { style: null, variant: "text-sm/semibold", color: "text-default", children: null };
-                tmp5 = closure_2;
-                obj.style = closure_2.sectionTitle;
-                obj.children = recipientId.title;
-                tmp = jsx(closure_0(closure_2[14]).Text, obj);
-              }
-              return tmp;
-            }
-          }
+          tmp11 = cResult[8];
         }
-        class T {
-          constructor(arg0) {
-            ({ item, start, end } = recipientId);
-            obj = { row: item, recipientId, source, start, end };
-            return jsx(closure_1(closure_2[13]), obj);
-          }
-        }
-        const insets = source(6478)().insets;
+        _slicedToArray = tmp11;
+        let tmp13 = 0 === arr.length;
+        const insets = source(6656)().insets;
         const tmp12 = source;
-        if (0 !== arr.length) {
-          class E {
-            constructor(arg0) {
-              tmp = null;
-              if (recipientId.data.length > 0) {
-                tmp2 = jsx;
-                tmp3 = closure_0;
-                tmp4 = closure_2;
-                obj = { style: null, variant: "text-sm/semibold", color: "text-default", children: null };
-                tmp5 = closure_2;
-                obj.style = closure_2.sectionTitle;
-                obj.children = recipientId.title;
-                tmp = jsx(closure_0(closure_2[14]).Text, obj);
-              }
-              return tmp;
-            }
-          }
+        if (!tmp13) {
+          tmp13 = 0 === arr2.length;
         }
         let closure_4 = tmp13;
-        if (0 === arr.length) {
-          class E {
-            constructor(arg0) {
-              tmp = null;
-              if (recipientId.data.length > 0) {
-                tmp2 = jsx;
-                tmp3 = closure_0;
-                tmp4 = closure_2;
-                obj = { style: null, variant: "text-sm/semibold", color: "text-default", children: null };
-                tmp5 = closure_2;
-                obj.style = closure_2.sectionTitle;
-                obj.children = recipientId.title;
-                tmp = jsx(closure_0(closure_2[14]).Text, obj);
-              }
-              return tmp;
-            }
-          }
+        let num6 = 0;
+        if (tmp13) {
+          num6 = 24;
         }
         const sum = insets.bottom + tmp12(587).space.PX_16;
-        if (cResult[9] === 0) {
-          class E {
-            constructor(arg0) {
-              tmp = null;
-              if (recipientId.data.length > 0) {
-                tmp2 = jsx;
-                tmp3 = closure_0;
-                tmp4 = closure_2;
-                obj = { style: null, variant: "text-sm/semibold", color: "text-default", children: null };
-                tmp5 = closure_2;
-                obj.style = closure_2.sectionTitle;
-                obj.children = recipientId.title;
-                tmp = jsx(closure_0(closure_2[14]).Text, obj);
-              }
-              return tmp;
-            }
+        if (cResult[9] === num6) {
+          let tmp15;
+          if (cResult[10] === sum) {
+            tmp15 = cResult[11];
           }
-          if (cResult[12] === 0 === arr.length) {
-            let tmp19;
-            class E {
-              constructor(arg0) {
-                tmp = null;
-                if (recipientId.data.length > 0) {
-                  tmp2 = jsx;
-                  tmp3 = closure_0;
-                  tmp4 = closure_2;
-                  obj = { style: null, variant: "text-sm/semibold", color: "text-default", children: null };
-                  tmp5 = closure_2;
-                  obj.style = closure_2.sectionTitle;
-                  obj.children = recipientId.title;
-                  tmp = jsx(closure_0(closure_2[14]).Text, obj);
-                }
-                return tmp;
-              }
+          if (cResult[12] === tmp13) {
+            let tmp16;
+            let tmp18;
+            if (cResult[13] === tmp11) {
+              tmp16 = cResult[14];
             }
-            class T {
+            class A {
               constructor(arg0) {
-                ({ item, start, end } = recipientId);
-                obj = { row: item, recipientId, source, start, end };
-                return jsx(closure_1(closure_2[13]), obj);
+                let tmp2 = null;
+                if (!closure_4) {
+                  tmp2 = closure_3(tmp);
+                }
+                return tmp2;
               }
             }
             if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+              const fn = function k(guild) {
+                return guild.guild.id;
+              };
               class A {
                 constructor(arg0) {
-                  return recipientId.guild.id;
+                  let tmp2 = null;
+                  if (!closure_4) {
+                    tmp2 = closure_3(tmp);
+                  }
+                  return tmp2;
                 }
               }
-              class T {
-                constructor(arg0) {
-                  ({ item, start, end } = recipientId);
-                  obj = { row: item, recipientId, source, start, end };
-                  return jsx(closure_1(closure_2[13]), obj);
-                }
-              }
-              tmp19 = A;
+              tmp18 = fn;
             } else {
-              class A {
-                constructor(arg0) {
-                  return recipientId.guild.id;
+              tmp18 = cResult[15];
+            }
+            if (cResult[16] === tmp9) {
+              if (cResult[17] === tmp7) {
+                if (cResult[18] === tmp15) {
+                  let tmp19;
+                  if (cResult[19] === tmp16) {
+                    tmp19 = cResult[20];
+                  }
+                  return tmp19;
                 }
               }
             }
-            if (cResult[16] === tmp10) {
-              class A {
-                constructor(arg0) {
-                  return recipientId.guild.id;
-                }
-              }
-            }
-            const obj3 = { renderItem: tmp10, contentContainerStyle: tmp15, sections: tmp7, renderSectionHeader: tmp16, stickySectionHeadersEnabled: true, keyExtractor: tmp19, ListEmptyComponent };
-            cResult[16] = tmp10;
+            const obj3 = { renderItem: tmp9, contentContainerStyle: tmp15, sections: tmp7, renderSectionHeader: tmp16, stickySectionHeadersEnabled: true, keyExtractor: tmp18, ListEmptyComponent };
+            const tmp22 = closure_6(tmp(10505).UserProfileStackedActionSheetSectionList, obj3);
+            cResult[16] = tmp9;
             cResult[17] = tmp7;
             cResult[18] = tmp15;
             cResult[19] = tmp16;
-            cResult[20] = closure_6(tmp(10854).UserProfileStackedActionSheetSectionList, obj3);
-            const tmp23 = closure_6(tmp(10854).UserProfileStackedActionSheetSectionList, obj3);
+            cResult[20] = tmp22;
+            tmp19 = tmp22;
           }
-          class T {
+          class A {
             constructor(arg0) {
-              ({ item, start, end } = recipientId);
-              obj = { row: item, recipientId, source, start, end };
-              return jsx(closure_1(closure_2[13]), obj);
+              let tmp2 = null;
+              if (!closure_4) {
+                tmp2 = closure_3(tmp);
+              }
+              return tmp2;
             }
           }
-          cResult[12] = 0 === arr.length;
+          cResult[12] = tmp13;
           cResult[13] = tmp11;
-          cResult[14] = tmp17;
+          cResult[14] = A;
+          tmp16 = A;
         }
-        const obj4 = { paddingTop: 0, paddingBottom: sum };
-        cResult[9] = 0;
+        const obj4 = { paddingTop: num6, paddingBottom: sum };
+        cResult[9] = num6;
         cResult[10] = sum;
         cResult[11] = obj4;
-      }
-      class T {
-        constructor(arg0) {
-          ({ item, start, end } = recipientId);
-          obj = { row: item, recipientId, source, start, end };
-          return jsx(closure_1(closure_2[13]), obj);
-        }
+        tmp15 = obj4;
       }
       cResult[4] = recipientId;
       cResult[5] = source;
-      cResult[6] = T;
-      tmp10 = T;
+      cResult[6] = tmp10;
+      tmp9 = tmp10;
     }
   }
   if (0 === arr.length && 0 === arr2.length) {
-    class A {
-      constructor(arg0) {
-        return recipientId.guild.id;
-      }
-    }
+    items = [];
   } else {
+    const obj5 = { title: tmp8(tmp(1126).t["u+Ithu"]), data: arr };
+    const intl = tmp(1126).intl;
     class A {
       constructor(arg0) {
-        return recipientId.guild.id;
+        let tmp2 = null;
+        if (!closure_4) {
+          tmp2 = closure_3(tmp);
+        }
+        return tmp2;
       }
     }
-    const intl = tmp(1126).intl;
-    class T {
-      constructor(arg0) {
-        ({ item, start, end } = recipientId);
-        obj = { row: item, recipientId, source, start, end };
-        return jsx(closure_1(closure_2[13]), obj);
-      }
-    }
-    tmp8[0] = tmp9(tmp(1126).t["u+Ithu"]);
-    tmp8[1] = arr;
-    items = [tmp8, ];
-    const obj5 = { title: intl2.string(tmp(1126).t["c5T+X/"]), data: arr2 };
+    items = [obj5, ];
+    const obj6 = { title: intl2.string(tmp(1126).t["c5T+X/"]), data: arr2 };
     intl2 = tmp(1126).intl;
-    items[1] = obj5;
+    items[1] = obj6;
   }
   cResult[0] = 0 === arr.length && 0 === arr2.length;
   cResult[1] = arr;
   cResult[2] = arr2;
   cResult[3] = items;
   tmp7 = items;
-}) : ((recipientId) => {
+}) : (function GuildList(recipientId) {
   let arr;
   let arr2;
   let closure_3;
@@ -359,7 +265,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((recipientId) =
   dependencyMap = closure_8();
   let tmp = recipientId;
   let tmp2 = dependencyMap;
-  let obj = recipientId(12809);
+  let obj = recipientId(12956);
   [arr, arr2] = _slicedToArray(obj.useServerInviteRows(recipientId, query), 2);
   const tmp3 = _slicedToArray(obj.useServerInviteRows(recipientId, query), 2);
   if (0 === arr.length) {
@@ -367,7 +273,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((recipientId) =
       items = [];
     }
     let tmp5 = 0 === arr.length;
-    const insets = source(6478)().insets;
+    const insets = source(6656)().insets;
     const tmp4 = source;
     if (!tmp5) {
       tmp5 = 0 === arr2.length;
@@ -404,7 +310,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((recipientId) =
         },
       ListEmptyComponent
     };
-    const UserProfileStackedActionSheetSectionList = tmp(10854).UserProfileStackedActionSheetSectionList;
+    const UserProfileStackedActionSheetSectionList = tmp(10505).UserProfileStackedActionSheetSectionList;
     const tmp6 = closure_6;
     if (tmp5) {
       num = 24;
@@ -420,7 +326,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((recipientId) =
   items[1] = obj5;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInviteActionSheet(arg0) {
   let closure_129_0;
   let first;
   let format;
@@ -444,17 +350,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   [tmp6, closure_129_0] = react.useState("");
   _slicedToArray(react.useState(""), 2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function h(arg0) {
+    function handleQueryChange(arg0) {
       closure_1_0(arg0);
-    };
-    cResult[0] = fn;
-    first = fn;
+    }
+    cResult[0] = handleQueryChange;
+    first = handleQueryChange;
   } else {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: intl.string(intl4.t.HvoZQD) };
-    const BottomSheetTitleHeader = tmp(6651).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(6828).BottomSheetTitleHeader;
     intl = tmp(1126).intl;
     const tmp10 = metroRequire(BottomSheetTitleHeader, obj2);
     cResult[1] = tmp10;
@@ -464,7 +370,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { onChange: first, placeholder: intl2.string(intl4.t.uohsSv) };
-    const SearchField = tmp(6554).SearchField;
+    const SearchField = tmp(6730).SearchField;
     intl2 = tmp(1126).intl;
     const tmp13 = metroRequire(SearchField, obj3);
     cResult[2] = tmp13;
@@ -474,7 +380,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { variant: "text-xs/medium", color: "text-subtle", children: format(v4UyUHh, obj5) };
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     const intl3 = tmp(1126).intl;
     format = intl3.format;
     obj5 = { xDays: InstantInviteUtilsDefault.INVITE_OPTIONS_7_DAYS.label };
@@ -526,7 +432,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = source;
   cResult[9] = tmp24;
   tmp23 = tmp24;
-}) : ((arg0) => {
+}) : (function GuildInviteActionSheet(arg0) {
   let closure_0;
   let first;
   let format;
@@ -549,7 +455,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj3 = { style: tmp.searchbarWrapper, children: items };
   BottomSheet = Sheet_BottomSheet.BottomSheet;
   const obj4 = {
-    onChange(arg0) {
+    onChange: function handleQueryChange(arg0) {
       closure_0(arg0);
     },
     placeholder: intl2.string(intl4.t.uohsSv)

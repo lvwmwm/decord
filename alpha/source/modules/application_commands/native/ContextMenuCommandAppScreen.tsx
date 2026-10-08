@@ -1,25 +1,26 @@
-// Module ID: 17076
-// Function ID: 17077
+// Module ID: 17357
+// Function ID: 17358
 // Name: ContextMenuCommandAppScreen
-// Dependencies: [19, 21, 4896, 587, 558, 576, 6478, 6553, 17075, 6559, 2]
+// Dependencies: [19, 21, 5090, 587, 558, 576, 6656, 6729, 17356, 6735, 2]
 
-// Module 17076 (ContextMenuCommandAppScreen)
+// Module 17357 (ContextMenuCommandAppScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let section;
 
 let obj2;
 const jsx = Fragment.jsx;
 let obj = { list: obj2 };
 obj2 = { marginHorizontal: nativeDefault.space.PX_16 };
 let closure_5 = createStyles.createStyles(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMenuCommandAppScreen(route) {
   let first;
   let onPressCommand;
-  let section;
   let tmp6;
   const tmp = onPressCommand;
   const obj = section(onPressCommand[5]);
@@ -37,7 +38,6 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   }
   const insets = commands(tmp[6])(first).insets;
   const tmp5 = commands(tmp[7])();
-  const tmp4 = commands;
   if (cResult[1] !== commands.length) {
     const items = [commands.length];
     cResult[1] = commands.length;
@@ -66,38 +66,41 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
           }
         }
       }
-      const tmp12 = jsx(tmp4(tmp[9]), { style: tmp9.list, sections: tmp6, estimatedListSize: "windowSize", itemSize: tmp5, insetEnd: insets.bottom, renderItem: tmp7 });
       cResult[7] = insets.bottom;
       cResult[8] = tmp5;
       cResult[9] = tmp6;
       cResult[10] = tmp7;
       cResult[11] = tmp9.list;
-      cResult[12] = tmp12;
-      tmp10 = tmp12;
+      cResult[12] = jsx(commands(tmp[9]), { style: tmp9.list, sections: tmp6, estimatedListSize: "windowSize", itemSize: tmp5, insetEnd: insets.bottom, renderItem: tmp7 });
+      jsx(commands(tmp[9]), { style: tmp9.list, sections: tmp6, estimatedListSize: "windowSize", itemSize: tmp5, insetEnd: insets.bottom, renderItem: tmp7 });
+      class C {
+        constructor(arg0, arg1) {
+          tmp = commands[arg1];
+          closure_0 = tmp;
+          diff = commands.length - 1;
+          obj = { item: tmp, onPress() { /* body not rendered: F149651 */ }, section: closure_0, start: 0 === arg1, end: arg1 === diff };
+          return closure_1_4(commands(onPressCommand[8]), obj, tmp.id);
+        }
+      }
     }
   }
-  const fn = function _(arg0, arg1) {
-    let closure_0;
-    section = tmp;
-    const diff = commands.length - 1;
-    return jsx(commands(onPressCommand[8]), {
-      item: commands[arg1],
-      onPress() {
-        return onPressCommand(closure_0);
-      },
-      section,
-      start: 0 === arg1,
-      end: arg1 === diff
-    }, commands[arg1].id);
-  };
+  class C {
+    constructor(arg0, arg1) {
+      tmp = commands[arg1];
+      closure_0 = tmp;
+      diff = commands.length - 1;
+      obj = { item: tmp, onPress() { /* body not rendered: F149651 */ }, section: closure_0, start: 0 === arg1, end: arg1 === diff };
+      return closure_1_4(commands(onPressCommand[8]), obj, tmp.id);
+    }
+  }
   cResult[3] = commands;
   cResult[4] = onPressCommand;
   cResult[5] = section;
-  cResult[6] = fn;
-  tmp7 = fn;
-}) : ((route) => {
+  cResult[6] = C;
+  tmp7 = C;
+}) : (function ContextMenuCommandAppScreen(route) {
   const params = route.route.params;
-  let section = params.section;
+  section = params.section;
   const commands = params.commands;
   const onPressCommand = params.onPressCommand;
   const insets = commands(onPressCommand[6])({ includeKeyboardHeight: true }).insets;

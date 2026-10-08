@@ -1,24 +1,24 @@
-// Module ID: 17433
-// Function ID: 17434
+// Module ID: 17715
+// Function ID: 17716
 // Name: ChannelSubtitle
-// Dependencies: [19, 11711, 21, 16853, 4892, 558, 576, 16195, 11709, 2]
+// Dependencies: [19, 11776, 21, 17132, 5086, 558, 576, 16455, 11774, 2]
 // Exports: renderChannelSubtitle
 
-// Module 17433 (ChannelSubtitle)
+// Module 17715 (ChannelSubtitle)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11709 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11711 */;
-import getChannelSubtitleData from "getChannelSubtitleData" /* 16195 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 16853 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11774 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11776 */;
+import getChannelSubtitleData from "getChannelSubtitleData" /* 16455 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 17132 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const SUBTITLE_OPACITY_NORMAL = RedesignChannelListConstants.SUBTITLE_OPACITY_NORMAL;
 const jsx = Fragment.jsx;
-let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSubtitle(arg0) {
   let channelId;
   let connected;
   let flag;
@@ -79,7 +79,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp13;
   if (null != channelSubtitleData) {
     const tmp14 = "voice" === channelSubtitleData.type && connected;
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     const obj3 = { content: channelSubtitleData.subtitle, muted: flag, channelId, guildId, disableAnimatedEmoji: !tmp14, color: str2 };
     flag = muted;
     const renderMessagePreviewMarkup = MessagePreviewMarkup.renderMessagePreviewMarkup;
@@ -110,7 +110,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   tmp6 = result;
   tmp5 = tmp12;
   tmp4 = tmp13;
-}) : ((arg0) => {
+}) : (function ChannelSubtitle(arg0) {
   let channelId;
   let connected;
   let flag;
@@ -130,7 +130,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     const obj2 = { children: renderMessagePreviewMarkup(obj3) };
     const tmp4 = "voice" === channelSubtitleData.type && connected;
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     const merged = Object.assign(textProps);
     obj3 = { content: channelSubtitleData.subtitle, muted: flag, channelId, guildId, disableAnimatedEmoji: !tmp4, color: str };
     flag = muted;

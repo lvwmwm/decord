@@ -1,17 +1,17 @@
-// Module ID: 11093
-// Function ID: 11094
+// Module ID: 10457
+// Function ID: 10458
 // Name: useAllowedChatOverlays
-// Dependencies: [2050, 2051, 11091, 9001, 558, 576, 573, 4504, 9047, 2]
+// Dependencies: [2062, 2063, 10455, 6072, 558, 576, 573, 4696, 10458, 2]
 
-// Module 11093 (useAllowedChatOverlays)
+// Module 10457 (useAllowedChatOverlays)
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react from "react" /* 576 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4504 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 9001 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 9047 */;
-import ChatOverlayConstants from "ChatOverlayConstants" /* 11091 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4696 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6072 */;
+import ChatOverlayConstants from "ChatOverlayConstants" /* 10455 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 10458 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ obj[ActivityPanelModes.PIP] = items3;
 const items4 = [, , ];
 ({ NEW_MESSAGES: arr5[0], OPT_IN_CHANNEL: arr5[1], SUMMARIES: arr5[2] } = ChatOverlays);
 obj[ActivityPanelModes.ACTIVITY_POPOUT_WINDOW] = items4;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAllowedChatOverlays() {
   let tmp4;
   let tmp5;
   let tmp8;
@@ -86,7 +86,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
   }
-}) : (() => {
+}) : (function useAllowedChatOverlays() {
   obj = useStateFromStores;
   const items = [EmbeddedActivitiesStore];
   const stateFromStores = obj.useStateFromStores(items, () => EmbeddedActivitiesStore.getCurrentEmbeddedActivity());

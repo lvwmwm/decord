@@ -1,9 +1,9 @@
-// Module ID: 8454
-// Function ID: 8455
+// Module ID: 8940
+// Function ID: 8941
 // Name: CollectiblesAnalyticsContext
 // Dependencies: [19, 21, 558, 576, 2]
 
-// Module 8454 (CollectiblesAnalyticsContext)
+// Module 8940 (CollectiblesAnalyticsContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -14,15 +14,17 @@ const jsx = Fragment.jsx;
 let context = react.createContext(null);
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const useCollectiblesAnalyticsContext = () => react.useContext(context);
+function useCollectiblesAnalyticsContext() {
+  return react.useContext(context);
+}
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollectiblesAnalyticsProvider(arg0) {
   let children;
   let newValue;
   const obj = react2;
   const cResult = obj.c(6);
   ({ newValue, children } = arg0);
-  if (typeof fn === "function") {
+  if (typeof useCollectiblesAnalyticsContext === "function") {
     context = react.useContext(context);
     if (cResult[0] === newValue) {
       let tmp5;
@@ -52,10 +54,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-}) : ((newValue) => {
+}) : (function CollectiblesAnalyticsProvider(newValue) {
   newValue = newValue.newValue;
   context = undefined;
-  if (typeof fn === "function") {
+  if (typeof useCollectiblesAnalyticsContext === "function") {
     context = react.useContext(context);
     const items = [context, newValue];
     return <context.Provider value={react.useMemo(() => {

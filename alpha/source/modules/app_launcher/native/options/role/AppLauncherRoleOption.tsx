@@ -1,17 +1,17 @@
-// Module ID: 11823
-// Function ID: 11824
+// Module ID: 11908
+// Function ID: 11909
 // Name: AppLauncherRoleOption
-// Dependencies: [32, 19, 2106, 21, 573, 11816, 4860, 11819, 1987, 11819, 2]
+// Dependencies: [32, 19, 2118, 21, 573, 11901, 5054, 11904, 1999, 11904, 2]
 // Exports: default
 
-// Module 11823 (AppLauncherRoleOption)
+// Module 11908 (AppLauncherRoleOption)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import AppLauncherRoleListActionSheet from "AppLauncherRoleListActionSheet" /* 11819 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import AppLauncherRoleListActionSheet from "AppLauncherRoleListActionSheet" /* 11904 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
+import GuildRoleStore from "GuildRoleStore" /* 2118 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -73,7 +73,7 @@ export default function AppLauncherRoleOption(option) {
     hasError,
     selected: null != stateFromStores,
     selectedItemName: name,
-    onPress() {
+    onPress: function handleRowPress() {
       if (onPress != null) {
         tmp();
       }
@@ -89,7 +89,7 @@ export default function AppLauncherRoleOption(option) {
         },
         onActionSheetDismiss: _slicedToArray
       };
-      const tmp4 = asyncRequire(11819, dependencyMap.paths);
+      const tmp4 = asyncRequire(11904, dependencyMap.paths);
       openLazy(tmp4, AppLauncherRoleListActionSheet.APP_LAUNCHER_ROLE_LIST_ACTION_SHEET_KEY, obj);
     },
     leading: guild_id(tmp3(tmp4[9]).RoleIcon, { role: stateFromStores }),

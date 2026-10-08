@@ -1,28 +1,28 @@
-// Module ID: 12735
-// Function ID: 12736
+// Module ID: 13403
+// Function ID: 13404
 // Name: InAppReportsSettingsUpsellsElement
-// Dependencies: [32, 19, 17, 2051, 1085, 21, 4896, 587, 558, 576, 8316, 5597, 6893, 12728, 504, 8323, 1126, 6081, 6895, 5076, 4892, 2]
+// Dependencies: [32, 19, 17, 2063, 1085, 21, 5090, 587, 558, 576, 7699, 5392, 7082, 13397, 504, 7706, 1126, 6267, 7084, 5105, 5086, 2]
 
-// Module 12735 (InAppReportsSettingsUpsellsElement)
+// Module 13403 (InAppReportsSettingsUpsellsElement)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5076 */;
-import useMountEffectDefault from "useMountEffect" /* 5597 */;
-import SettingsIcon from "SettingsIcon" /* 6893 */;
-import openUserSettings from "openUserSettings" /* 6895 */;
-import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8316 */;
-import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 12728 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5105 */;
+import useMountEffectDefault from "useMountEffect" /* 5392 */;
+import SettingsIcon from "SettingsIcon" /* 7082 */;
+import openUserSettings from "openUserSettings" /* 7084 */;
+import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 7699 */;
+import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 13397 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let dependencyMap, settingsUpsells;
+let dependencyMap;
 
 let c10;
 let c9;
@@ -42,7 +42,7 @@ obj3 = { width: "100%", marginBottom: nativeDefault.space.PX_8 };
 obj4 = { marginTop: nativeDefault.space.PX_4 };
 let closure_11 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackSettingsUpsellsAction) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsUpsellsTableRow(trackSettingsUpsellsAction) {
   let description;
   let disabledTitle;
   let onButtonClick;
@@ -57,7 +57,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackSettingsU
   [tmp5, dependencyMap] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
   if (cResult[0] !== trackSettingsUpsellsAction) {
-    const fn = function o() {
+    const fn = function l() {
       trackSettingsUpsellsAction(in_app_reports_ReportUtils.TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_VIEWED);
     };
     cResult[0] = trackSettingsUpsellsAction;
@@ -66,7 +66,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackSettingsU
   } else {
     tmp6 = cResult[1];
   }
-  trackSettingsUpsellsAction(5597)(tmp6);
+  trackSettingsUpsellsAction(5392)(tmp6);
   const tmp7 = trackSettingsUpsellsAction;
   if (cResult[2] === onButtonClick) {
     let tmp9;
@@ -76,7 +76,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackSettingsU
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp13 = closure_9(tmp(6893).SettingsIcon, {});
+      const tmp13 = closure_9(tmp(7082).SettingsIcon, {});
       cResult[5] = tmp13;
       tmp11 = tmp13;
     } else {
@@ -96,7 +96,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackSettingsU
       }
     }
     const obj2 = { title, disabledTitle, description, disabled: tmp5, onPress: tmp9, icon: tmp11 };
-    const tmp16 = closure_9(tmp7(12728), obj2);
+    const tmp16 = closure_9(tmp7(13397), obj2);
     cResult[6] = description;
     cResult[7] = disabledTitle;
     cResult[8] = tmp5;
@@ -105,7 +105,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackSettingsU
     cResult[11] = tmp16;
     tmp14 = tmp16;
   }
-  const fn2 = function l() {
+  const fn2 = function o() {
     onButtonClick();
     dependencyMap(true);
     trackSettingsUpsellsAction(in_app_reports_ReportUtils.TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_APPLY_CLICKED);
@@ -114,7 +114,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackSettingsU
   cResult[3] = trackSettingsUpsellsAction;
   cResult[4] = fn2;
   tmp9 = fn2;
-}) : ((arg0) => {
+}) : (function SettingsUpsellsTableRow(arg0) {
   let closure_2;
   let description;
   let disabledTitle;
@@ -143,7 +143,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackSettingsU
   return closure_9(tmp4, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((settingsUpsells) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsUpsellElement(settingsUpsells) {
   let container;
   let first;
   let items1;
@@ -166,7 +166,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((settingsUpsells) =
     first = cResult[0];
   }
   if (cResult[1] !== channelId) {
-    const fn = function l() {
+    const fn = function o() {
       return ChannelStore.getChannel(channelId);
     };
     cResult[1] = channelId;
@@ -309,7 +309,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((settingsUpsells) =
     cResult[10] = fn2;
     tmp15 = fn2;
   }
-}) : ((settingsUpsells) => {
+}) : (function SettingsUpsellElement(settingsUpsells) {
   let TableRowGroup;
   let intl;
   let intl2;

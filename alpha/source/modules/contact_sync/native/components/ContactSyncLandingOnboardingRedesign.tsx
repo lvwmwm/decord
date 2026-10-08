@@ -1,25 +1,25 @@
-// Module ID: 12356
-// Function ID: 12357
+// Module ID: 12452
+// Function ID: 12453
 // Name: ContactSyncLandingOnboardingRedesign
-// Dependencies: [5, 19, 17, 5105, 21, 4896, 587, 6075, 558, 576, 7288, 12357, 1126, 4892, 5601, 12358, 12350, 2]
+// Dependencies: [5, 19, 17, 7477, 21, 5090, 587, 6261, 558, 576, 7494, 12453, 1126, 5086, 5375, 12454, 12446, 2]
 
-// Module 12356 (ContactSyncLandingOnboardingRedesign)
+// Module 12452 (ContactSyncLandingOnboardingRedesign)
 import nativeDefault from "native" /* 587 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 5105 */;
-import NavigatorConstants from "NavigatorConstants" /* 6075 */;
-import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7288 */;
-import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 12350 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12357 */;
-import ContactSyncErrorDefault from "ContactSyncError" /* 12358 */;
+import NavigatorConstants from "NavigatorConstants" /* 6261 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7477 */;
+import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7494 */;
+import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 12446 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12453 */;
+import ContactSyncErrorDefault from "ContactSyncError" /* 12454 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let c1, c2, onNext;
+let c1, c2;
 
 let c10;
 let c9;
@@ -47,7 +47,7 @@ obj4 = { marginBottom: nativeDefault.space.PX_24 };
 size1 = { height: 48, width: "100%", paddingHorizontal: nativeDefault.space.PX_16 };
 obj5 = { paddingBottom: nativeDefault.space.PX_4, justifyContent: "flex-end", paddingHorizontal: nativeDefault.space.PX_16 };
 let closure_11 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncLandingOnboardingRedesign(onNext) {
   let discoverabilityEnabled;
   let error;
   let items;
@@ -120,12 +120,12 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
         }
       }
     });
-    const fn = function() {
+    function t1() {
       return closure_0(...arguments);
-    };
+    }
     cResult[0] = onNext;
-    cResult[1] = fn;
-    tmp5 = fn;
+    cResult[1] = t1;
+    tmp5 = t1;
   } else {
     tmp5 = cResult[1];
   }
@@ -151,7 +151,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
   }
   if (cResult[5] !== tmp4.title) {
     let obj3 = { style: title, variant: "heading-xl/bold", children: tmp12 };
-    const tmp16 = closure_8(onNext(4892).Text, obj3);
+    const tmp16 = closure_8(onNext(5086).Text, obj3);
     cResult[5] = tmp4.title;
     cResult[6] = tmp16;
     tmp14 = tmp16;
@@ -169,7 +169,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
   }
   if (cResult[8] !== tmp4.subtitle) {
     let obj4 = { style: subtitle, variant: "text-sm/medium", children: tmp17 };
-    const tmp21 = closure_8(onNext(4892).Text, obj4);
+    const tmp21 = closure_8(onNext(5086).Text, obj4);
     cResult[8] = tmp4.subtitle;
     cResult[9] = tmp21;
     tmp19 = tmp21;
@@ -276,12 +276,12 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
     cResult[16] = tmp29;
     tmp26 = tmp29;
   }
-  const tmp25 = closure_8(onNext(5601).Button, { variant: "primary", size: "lg", text: tmp22, onPress: tmp5, loading });
+  const tmp25 = closure_8(onNext(5375).Button, { variant: "primary", size: "lg", text: tmp22, onPress: tmp5, loading });
   cResult[11] = tmp5;
   cResult[12] = loading;
   cResult[13] = tmp25;
   tmp24 = tmp25;
-}) : ((onNext) => {
+}) : (function ContactSyncLandingOnboardingRedesign(onNext) {
   let Button;
   let discoverabilityEnabled;
   let error;
@@ -355,16 +355,16 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
   }), items);
   items1 = [closure_8(closure_6, obj3), , , , ];
   let obj4 = { style: tmp.title, variant: "heading-xl/bold", children: intl.string(onNext(1126).t["/G+nci"]) };
-  const Text = onNext(4892).Text;
+  const Text = onNext(5086).Text;
   intl = onNext(1126).intl;
   items1[1] = closure_8(Text, obj4);
   let obj5 = { style: tmp.subtitle, variant: "text-sm/medium", children: intl2.string(onNext(1126).t.G8zcHt) };
-  const Text2 = onNext(4892).Text;
+  const Text2 = onNext(5086).Text;
   intl2 = onNext(1126).intl;
   items1[2] = closure_8(Text2, obj5);
   const obj6 = { style: tmp.buttonContainer, children: closure_8(Button, obj7) };
   obj7 = { variant: "primary", size: "lg", text: intl3.string(onNext(1126).t.LhlgY9), onPress: callback, loading };
-  Button = onNext(5601).Button;
+  Button = onNext(5375).Button;
   intl3 = onNext(1126).intl;
   items1[3] = closure_8(closure_5, obj6);
   items1[4] = closure_8(ContactSyncErrorDefault, { error });

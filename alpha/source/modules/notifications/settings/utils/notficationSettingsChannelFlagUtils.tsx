@@ -1,21 +1,21 @@
-// Module ID: 9864
-// Function ID: 9865
+// Module ID: 10424
+// Function ID: 10425
 // Name: notficationSettingsChannelFlagUtils
-// Dependencies: [32, 2051, 5077, 1085, 5078, 1095, 558, 576, 573, 5080, 9862, 6621, 9865, 6616, 2]
+// Dependencies: [32, 2063, 5971, 1085, 5972, 1095, 558, 576, 573, 7886, 10422, 6798, 10425, 6793, 2]
 // Exports: updateChannelNotificationSetting, updateChannelPreset, updateChannelToGuildDefault, updateChannelUnreadSetting
 
-// Module 9864 (notficationSettingsChannelFlagUtils)
+// Module 10424 (notficationSettingsChannelFlagUtils)
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import ReadStateConstants from "ReadStateConstants" /* 5078 */;
-import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 5080 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6616 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6621 */;
-import notifications_NotificationUtils from "notifications/NotificationUtils" /* 9862 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 9865 */;
+import ReadStateConstants from "ReadStateConstants" /* 5972 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6793 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6798 */;
+import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 7886 */;
+import notifications_NotificationUtils from "notifications/NotificationUtils" /* 10422 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10425 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const UserNotificationSettings = Constants.UserNotificationSettings;
 const UnreadSetting = ReadStateConstants.UnreadSetting;
 const constants = UserSettingsConstants.ChannelNotificationSettingsFlags;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelPresetSettings(arg0) {
   let closure_0;
   let first;
   let tmp10;
@@ -62,29 +62,34 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp8 = cResult[3];
   }
   if (cResult[4] !== arg0) {
-    const fn2 = function u() {
-      return UserGuildSettingsStore.resolvedMessageNotifications(closure_0);
-    };
+    class S {
+      constructor() {
+        return UserGuildSettingsStore.resolvedMessageNotifications(closure_0);
+      }
+    }
     cResult[4] = arg0;
-    cResult[5] = fn2;
-    tmp10 = fn2;
+    cResult[5] = S;
+    tmp10 = S;
   } else {
-    tmp10 = cResult[5];
+    class S {
+      constructor() {
+        return UserGuildSettingsStore.resolvedMessageNotifications(closure_0);
+      }
+    }
   }
   const tmpResult3 = require("useStateFromStores");
   const stateFromStores1 = tmpResult3.useStateFromStores(tmp8, tmp10);
   if (cResult[6] === stateFromStores1) {
-    let tmp12;
-    if (cResult[7] === stateFromStores) {
-      tmp12 = cResult[8];
+    class S {
+      constructor() {
+        return UserGuildSettingsStore.resolvedMessageNotifications(closure_0);
+      }
     }
     if (cResult[9] === stateFromStores1) {
-      if (cResult[10] === tmp12) {
-        let tmp14;
-        if (cResult[11] === stateFromStores) {
-          tmp14 = cResult[12];
+      class S {
+        constructor() {
+          return UserGuildSettingsStore.resolvedMessageNotifications(closure_0);
         }
-        return tmp14;
       }
     }
     const obj2 = { unread: stateFromStores, notification: stateFromStores1, preset: tmp12 };
@@ -92,15 +97,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[10] = tmp12;
     cResult[11] = stateFromStores;
     cResult[12] = obj2;
-    tmp14 = obj2;
   }
   const tmpResult4 = require("notificationSettingsPresetUtils");
-  const presetFromSettingsResult = tmpResult4.presetFromSettings(stateFromStores, stateFromStores1);
   cResult[6] = stateFromStores1;
   cResult[7] = stateFromStores;
-  cResult[8] = presetFromSettingsResult;
-  tmp12 = presetFromSettingsResult;
-}) : ((arg0) => {
+  cResult[8] = tmpResult4.presetFromSettings(stateFromStores, stateFromStores1);
+  const presetFromSettingsResult = tmpResult4.presetFromSettings(stateFromStores, stateFromStores1);
+}) : (function useChannelPresetSettings(arg0) {
   let closure_0;
   let obj4;
   _require = arg0;
@@ -115,9 +118,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelPresetInheritance(guild_id) {
   let first;
+  let tmp14;
+  let tmp15;
   let tmp6;
+  let tmp7;
   _require = guild_id;
   const tmp = _require;
   let obj = require("react");
@@ -130,52 +136,66 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
     first = cResult[0];
   }
   if (cResult[1] !== guild_id.guild_id) {
-    class S {
-      constructor() {
-        const obj = notifications_NotificationUtils;
-        return obj.filterOverrides(UserGuildSettingsStore.getChannelOverrides(guild_id.guild_id), { ignoreMute: true, ignoreUnreadSetting: false, ignoreNotificationSetting: false });
-      }
-    }
+    const fn = function u() {
+      const obj = notifications_NotificationUtils;
+      return obj.filterOverrides(UserGuildSettingsStore.getChannelOverrides(guild_id.guild_id), { ignoreMute: true, ignoreUnreadSetting: false, ignoreNotificationSetting: false });
+    };
     cResult[1] = guild_id.guild_id;
-    cResult[2] = S;
-    tmp6 = S;
+    cResult[2] = fn;
+    tmp6 = fn;
   } else {
-    class S {
-      constructor() {
-        const obj = notifications_NotificationUtils;
-        return obj.filterOverrides(UserGuildSettingsStore.getChannelOverrides(guild_id.guild_id), { ignoreMute: true, ignoreUnreadSetting: false, ignoreNotificationSetting: false });
-      }
-    }
+    tmp6 = cResult[2];
   }
   const tmpResult = tmp(573);
   const stateFromStoresArray = tmpResult.useStateFromStoresArray(first, tmp6);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor() {
-        const obj = notifications_NotificationUtils;
-        return obj.filterOverrides(UserGuildSettingsStore.getChannelOverrides(guild_id.guild_id), { ignoreMute: true, ignoreUnreadSetting: false, ignoreNotificationSetting: false });
-      }
-    }
     let items1 = [UserGuildSettingsStore, ];
     items1[1] = ChannelStore;
     cResult[3] = items1;
+    tmp7 = items1;
   } else {
-    class S {
-      constructor() {
-        const obj = notifications_NotificationUtils;
-        return obj.filterOverrides(UserGuildSettingsStore.getChannelOverrides(guild_id.guild_id), { ignoreMute: true, ignoreUnreadSetting: false, ignoreNotificationSetting: false });
-      }
-    }
+    tmp7 = cResult[3];
   }
   if (cResult[4] === guild_id.guild_id) {
-    class S {
-      constructor() {
-        const obj = notifications_NotificationUtils;
-        return obj.filterOverrides(UserGuildSettingsStore.getChannelOverrides(guild_id.guild_id), { ignoreMute: true, ignoreUnreadSetting: false, ignoreNotificationSetting: false });
+    if (cResult[5] === guild_id.parent_id) {
+      let tmp10;
+      let tmp11;
+      if (cResult[6] === stateFromStoresArray) {
+        tmp10 = cResult[7];
+        tmp11 = cResult[8];
       }
+      const tmpResult2 = tmp(573);
+      [tmp14, tmp15] = tmpResult2.useStateFromStoresArray(tmp7, tmp10, tmp11);
+      _slicedToArray(tmpResult2.useStateFromStoresArray(tmp7, tmp10, tmp11), 2);
+      if (cResult[9] === guild_id.id) {
+        let tmp16;
+        if (cResult[10] === stateFromStoresArray) {
+          tmp16 = cResult[11];
+        }
+        if (cResult[12] === tmp14) {
+          if (cResult[13] === tmp15) {
+            let tmp19;
+            if (cResult[14] === !tmp16) {
+              tmp19 = cResult[15];
+            }
+            return tmp19;
+          }
+        }
+        const obj2 = { inherited: !tmp16, inheritedFrom: tmp14, inheritedPreset: tmp15 };
+        cResult[12] = tmp14;
+        cResult[13] = tmp15;
+        cResult[14] = !tmp16;
+        cResult[15] = obj2;
+        tmp19 = obj2;
+      }
+      const hasItem = stateFromStoresArray.includes(guild_id.id);
+      cResult[9] = guild_id.id;
+      cResult[10] = stateFromStoresArray;
+      cResult[11] = hasItem;
+      tmp16 = hasItem;
     }
   }
-  const fn = function h() {
+  const fn2 = function h() {
     const channel = ChannelStore.getChannel(guild_id.parent_id);
     if (null != channel) {
       let items1;
@@ -203,9 +223,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
   cResult[4] = guild_id.guild_id;
   cResult[5] = guild_id.parent_id;
   cResult[6] = stateFromStoresArray;
-  cResult[7] = fn;
+  cResult[7] = fn2;
   cResult[8] = items2;
-}) : ((id) => {
+  tmp11 = items2;
+  tmp10 = fn2;
+}) : (function useChannelPresetInheritance(id) {
   let tmp2;
   let tmp3;
   _require = id;

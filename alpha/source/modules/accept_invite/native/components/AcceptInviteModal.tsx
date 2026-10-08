@@ -1,13 +1,13 @@
-// Module ID: 17471
-// Function ID: 17472
+// Module ID: 17753
+// Function ID: 17754
 // Name: AcceptInviteModal
-// Dependencies: [19, 6475, 21, 1260, 4878, 12397, 8425, 558, 576, 6503, 2]
+// Dependencies: [19, 6653, 21, 1272, 5072, 12493, 8922, 558, 576, 6679, 2]
 
-// Module 17471 (AcceptInviteModal)
+// Module 17753 (AcceptInviteModal)
 import Fragment from "Fragment" /* 21 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 4878 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 6475 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 5072 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 6653 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -23,7 +23,7 @@ function render() {
 }
 const CreateGuildModalStates = CreateGuildConstants.CreateGuildModalStates;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((deeplinkAttemptId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptInviteModal(deeplinkAttemptId) {
   let obj4;
   let tmp4;
   let tmp5;
@@ -70,7 +70,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((deeplinkAttemptId)
     tmp9 = cResult[5];
   }
   return tmp9;
-}) : ((arg0) => {
+}) : (function AcceptInviteModal(arg0) {
   let closure_0;
   _require = arg0;
   const effect = react.useEffect(() => () => {

@@ -1,18 +1,18 @@
-// Module ID: 13537
-// Function ID: 13538
+// Module ID: 13834
+// Function ID: 13835
 // Name: DontBadgeMutedVcsExperiment
-// Dependencies: [1441, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: getIsDontBadgeMutedVcsEnabled
 
-// Module 13537 (DontBadgeMutedVcsExperiment)
+// Module 13834 (DontBadgeMutedVcsExperiment)
 import react from "react" /* 576 */;
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1441 */;
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj = { kind: "user", name: "2026-06-dont-badge-muted-vcs", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
 let closure_2 = apex_ApexExperimentDefault(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsDontBadgeMutedVcsEnabled(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -25,7 +25,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useIsDontBadgeMutedVcsEnabled(location) {
   const obj = { location };
   return closure_2.useConfig(obj).enabled;
 });

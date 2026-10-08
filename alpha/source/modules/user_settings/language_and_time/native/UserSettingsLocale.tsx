@@ -1,20 +1,20 @@
-// Module ID: 15260
-// Function ID: 15261
+// Module ID: 15522
+// Function ID: 15523
 // Name: UserSettingsLocale
-// Dependencies: [5, 19, 17, 2117, 2116, 21, 4896, 587, 8091, 558, 576, 504, 1126, 6078, 15261, 6626, 6079, 2]
+// Dependencies: [5, 19, 17, 2129, 2128, 21, 5090, 587, 5258, 558, 576, 504, 1126, 6264, 15523, 6803, 6265, 2]
 
-// Module 15260 (UserSettingsLocale)
+// Module 15522 (UserSettingsLocale)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2117 */;
-import TableRadioRow2 from "TableRadioRow" /* 6078 */;
-import flags from "flags" /* 15261 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2129 */;
+import TableRadioRow2 from "TableRadioRow" /* 6264 */;
+import flags from "flags" /* 15523 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
-import createStyles from "createStyles" /* 4896 */;
+import LocaleStore from "LocaleStore" /* 2128 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -88,7 +88,7 @@ const jsx = Fragment.jsx;
 obj = { content: obj2, flagImage: { width: 27, height: 18 } };
 obj2 = { padding: nativeDefault.space.PX_16 };
 let closure_9 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsLocale() {
   let flagImage;
   let locale;
   let tmp5;
@@ -150,13 +150,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     cResult[9] = tmp16;
     tmp13 = tmp16;
   }
-  const SafeAreaPaddingView = tmp(6626).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp(6803).SafeAreaPaddingView;
   const tmp12 = <SafeAreaPaddingView bottom>{null}</SafeAreaPaddingView>;
   cResult[4] = stateFromStores;
   cResult[5] = tmp9;
   cResult[6] = tmp12;
   tmp11 = tmp12;
-}) : (() => {
+}) : (function UserSettingsLocale() {
   let availableLocales;
   let flagImage;
   let locale;

@@ -1,15 +1,15 @@
-// Module ID: 16663
-// Function ID: 16664
+// Module ID: 16925
+// Function ID: 16926
 // Name: useConjureHistoryData
-// Dependencies: [32, 19, 12923, 558, 576, 16664, 16658, 2]
+// Dependencies: [32, 19, 13072, 558, 576, 16926, 16920, 2]
 
-// Module 16663 (useConjureHistoryData)
+// Module 16925 (useConjureHistoryData)
 import react2 from "react" /* 576 */;
-import ConjureHistoryFormat from "ConjureHistoryFormat" /* 16658 */;
-import ConjureRestorePanelOp from "ConjureRestorePanelOp" /* 16664 */;
+import ConjureHistoryFormat from "ConjureHistoryFormat" /* 16920 */;
+import ConjureRestorePanelOp from "ConjureRestorePanelOp" /* 16926 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 12923 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13072 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let _require, dependencyMap, map, obj1, obj5, obj6, set, str, str2;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
-const f125921 = (result) => {
+const f127115 = (result) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = result;
@@ -28,9 +28,10 @@ const f125921 = (result) => {
 let react = react_mod;
 ({ fetchDatabaseRestorePoints: closure_4, fetchDatabaseRestoreWindow: hasOwnProperty, fetchVersionHistory: metroRequire } = ConjureConnectionStore);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHistoryLoad(arg0) {
   let closure_129_1;
   let closure_129_2;
+  let obj3;
   let tmp3;
   let tmp5;
   let tmp6;
@@ -43,7 +44,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   [tmp5, closure_129_2] = _slicedToArray(react.useState(null), 2);
   const tmp4 = _slicedToArray(react.useState(null), 2);
   if (cResult[0] !== arg0) {
-    const fn = function o() {
+    const fn = function n() {
       let load;
       let c0 = false;
       const promise = c0();
@@ -77,14 +78,13 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp7;
     let tmp10;
     let tmp11;
-    let tmp12;
     if (cResult[3] === tmp3) {
       tmp7 = cResult[4];
     }
     const effect = obj2.useEffect(tmp6, tmp7);
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn2 = function u() {
+      const fn2 = function l() {
         closure_1_2(null);
         closure_1_1((arg0) => arg0 + 1);
       };
@@ -95,47 +95,66 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn3 = function y() {
-        return closure_1_1((arg0) => arg0 + 1);
-      };
-      cResult[6] = fn3;
-      tmp11 = fn3;
+      class B {
+        constructor() {
+          return closure_1_1((arg0) => arg0 + 1);
+        }
+      }
+      cResult[6] = B;
+      tmp11 = B;
     } else {
-      tmp11 = cResult[6];
+      class B {
+        constructor() {
+          return closure_1_1((arg0) => arg0 + 1);
+        }
+      }
     }
     if (cResult[7] === arg0) {
       let tmp13;
-      if (cResult[8] === tmp5) {
-        tmp12 = cResult[9];
+      class B {
+        constructor() {
+          return closure_1_1((arg0) => arg0 + 1);
+        }
       }
       if (cResult[10] !== tmp12) {
-        const obj3 = { state: tmp12, retry: tmp10, refresh: tmp11 };
+        class B {
+          constructor() {
+            return closure_1_1((arg0) => arg0 + 1);
+          }
+        }
+        tmp14[0] = tmp12;
+        tmp14[1] = tmp10;
+        tmp14[2] = tmp11;
         cResult[10] = tmp12;
-        cResult[11] = obj3;
-        tmp13 = obj3;
+        cResult[11] = tmp14;
+        tmp13 = tmp14;
       } else {
-        tmp13 = cResult[11];
+        class B {
+          constructor() {
+            return closure_1_1((arg0) => arg0 + 1);
+          }
+        }
       }
       return tmp13;
     }
     if (null != tmp5) {
-      let state;
-      if (tmp5.load === arg0) {
-        state = tmp5.state;
+      class B {
+        constructor() {
+          return closure_1_1((arg0) => arg0 + 1);
+        }
       }
       cResult[7] = arg0;
       cResult[8] = tmp5;
-      cResult[9] = state;
-      tmp12 = state;
+      cResult[9] = obj3;
     }
-    state = { status: "loading" };
+    obj3 = { status: "loading" };
   }
   const items = [arg0, tmp3];
   cResult[2] = arg0;
   cResult[3] = tmp3;
   cResult[4] = items;
   tmp7 = items;
-}) : ((arg0) => {
+}) : (function useHistoryLoad(arg0) {
   let closure_1;
   let closure_129_2;
   let first;
@@ -183,7 +202,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_8 = [];
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1) {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHistoryData(arg0, arg1) {
   let arr;
   let refresh3;
   let tmp11;
@@ -195,7 +214,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1) 
   const cResult = obj.c(38);
   const tmp2 = _require;
   if (cResult[0] !== arg1) {
-    const tmp2Result = tmp2(16664);
+    const tmp2Result = tmp2(16926);
     const result = tmp2Result.restorePanelEnvironments(arg1);
     cResult[0] = arg1;
     cResult[1] = result;
@@ -227,7 +246,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1) 
     const fn2 = function k() {
       const items = [React3(closure_0, "stable"), hasOwnProperty(closure_0, "stable")];
       const allResult = all(items);
-      return allResult.then(f125921);
+      return allResult.then(f127115);
     };
     cResult[6] = arg0;
     cResult[7] = fn2;
@@ -252,7 +271,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1) 
       const tmp12Result4 = refresh3(tmp18);
       let state2 = tmp12Result4;
       const refresh = tmp12Result.refresh;
-      class M {
+      class D {
         constructor() {
           let resolved;
           const tmp = closure_1;
@@ -286,7 +305,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1) 
                     tmp24 = cResult[29];
                   }
                   state2 = tmp12Result3.state;
-                  class T {
+                  class L {
                     constructor(arg0) {
                       obj = { environment: arg0, backups: null };
                       if ("preview" === arg0) {
@@ -337,7 +356,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1) 
                       return obj;
                     }
                   }
-                  class M {
+                  class D {
                     constructor() {
                       let resolved;
                       const tmp = closure_1;
@@ -353,31 +372,49 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1) 
                     if (cResult[31] === tmp20) {
                       if (cResult[32] === "loading" === state2.status) {
                         if (cResult[33] === !tmp9) {
-                          if (cResult[34] === tmp30) {
+                          if (cResult[34] === tmp28) {
                             if (cResult[35] === tmp24) {
-                              let tmp32;
+                              let tmp30;
                               if (cResult[36] === tmp13) {
-                                tmp32 = cResult[37];
+                                tmp30 = cResult[37];
                               }
-                              return tmp32;
+                              return tmp30;
                             }
                           }
                         }
                       }
                     }
                   }
-                  let obj2 = { sharedDatabase: !tmp9, versions: tmp13, databases: tmp21, previewBackups: tmp30, previewBackupsLoading: "loading" === state2.status, refreshAllBackups: tmp20, versionTitles: tmp24 };
+                  let obj2 = { sharedDatabase: !tmp9, versions: null, databases: tmp21, previewBackups: tmp28, previewBackupsLoading: "loading" === state2.status, refreshAllBackups: tmp20, versionTitles: tmp24 };
+                  class P {
+                    constructor() {
+                      closure_1_5();
+                      refresh2();
+                      refresh3();
+                    }
+                  }
                   cResult[30] = tmp21;
                   cResult[31] = tmp20;
-                  cResult[32] = "loading" === state2.status;
+                  class B {
+                    constructor() {
+                      let resolved;
+                      const tmp = closure_1;
+                      if (tmp) {
+                        resolved = React3(closure_0, "preview");
+                      } else {
+                        resolved = Promise.resolve(closure_8);
+                      }
+                      return resolved;
+                    }
+                  }
                   cResult[33] = !tmp9;
-                  cResult[34] = tmp30;
+                  cResult[34] = tmp28;
                   cResult[35] = tmp24;
                   cResult[36] = tmp13;
                   cResult[37] = obj2;
-                  tmp32 = obj2;
+                  tmp30 = obj2;
                 }
-                class T {
+                class L {
                   constructor(arg0) {
                     obj = { environment: arg0, backups: null };
                     if ("preview" === arg0) {
@@ -428,7 +465,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1) 
                     return obj;
                   }
                 }
-                class M {
+                class D {
                   constructor() {
                     let resolved;
                     const tmp = closure_1;
@@ -443,58 +480,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1) 
                 const self = this;
                 const self2 = this;
                 map = new Map();
-                if ("loaded" === state.status) {
-                  const entries = state.data.entries;
-                  class T {
-                    constructor(arg0) {
-                      obj = { environment: arg0, backups: null };
-                      if ("preview" === arg0) {
-                        tmp2 = closure_3;
-                        tmp3 = closure_4;
-                        closure_0 = closure_3;
-                        closure_1 = closure_4;
-                        state = closure_3.state;
-                        state2 = closure_4.state;
-                        str = "failed";
-                        if ("failed" !== state.status) {
-                          if ("failed" !== state2.status) {
-                            str2 = "loading";
-                            if ("loading" !== state.status) {
-                              if ("loading" !== state2.status) {
-                                tmp4 = null;
-                                if (null == state2.data) {
-                                  obj1 = { status: "failed" };
-                                } else {
-                                  obj1 = { status: "loaded", data: null, nowMs: null };
-                                  obj5 = { points: null, window: null };
-                                  obj5.points = state.data;
-                                  obj5.window = state2.data;
-                                  obj1.data = obj5;
-                                  obj1.nowMs = state.nowMs;
-                                }
-                              }
-                            }
-                            obj1 = { status: "loading" };
-                          }
-                          obj6 = { state: null, retry: null, refresh: null };
-                          obj6.state = obj1;
-                          obj6.retry = function retry() {
-                            closure_0.retry();
-                            closure_1.retry();
-                          };
-                          obj6.refresh = function refresh() {
-                            closure_0.refresh();
-                            closure_1.refresh();
-                          };
-                          tmp = obj6;
-                        }
-                        obj1 = { status: "failed" };
-                      } else {
-                        tmp = closure_2;
-                      }
-                      obj.backups = tmp;
-                      return obj;
-                    }
+                class P {
+                  constructor() {
+                    closure_1_5();
+                    refresh2();
+                    refresh3();
                   }
                 }
                 cResult[27] = state.data;
@@ -511,7 +501,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1) 
                 tmp22 = cResult[26];
               }
               const mapped = arr.map(tmp22);
-              class T {
+              class L {
                 constructor(arg0) {
                   obj = { environment: arg0, backups: null };
                   if ("preview" === arg0) {
@@ -562,7 +552,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1) 
                   return obj;
                 }
               }
-              class M {
+              class D {
                 constructor() {
                   let resolved;
                   const tmp = closure_1;
@@ -577,11 +567,18 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1) 
               cResult[19] = tmp12Result;
               cResult[20] = tmp12Result3;
               cResult[21] = tmp12Result4;
+              class P {
+                constructor() {
+                  closure_1_5();
+                  refresh2();
+                  refresh3();
+                }
+              }
               cResult[22] = mapped;
               tmp21 = mapped;
             }
           }
-          class T {
+          class L {
             constructor(arg0) {
               obj = { environment: arg0, backups: null };
               if ("preview" === arg0) {
@@ -632,7 +629,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1) 
               return obj;
             }
           }
-          class M {
+          class D {
             constructor() {
               let resolved;
               const tmp = closure_1;
@@ -647,22 +644,31 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1) 
           cResult[23] = tmp12Result;
           cResult[24] = tmp12Result3;
           cResult[25] = tmp12Result4;
-          cResult[26] = T;
-          tmp22 = T;
+          class P {
+            constructor() {
+              closure_1_5();
+              refresh2();
+              refresh3();
+            }
+          }
+          cResult[26] = L;
+          tmp22 = L;
         }
       }
-      const fn4 = function _() {
-        closure_1_5();
-        refresh2();
-        refresh3();
-      };
+      class P {
+        constructor() {
+          closure_1_5();
+          refresh2();
+          refresh3();
+        }
+      }
       cResult[14] = refresh;
       cResult[15] = refresh2;
       cResult[16] = refresh3;
-      cResult[17] = fn4;
-      tmp20 = fn4;
+      cResult[17] = P;
+      tmp20 = P;
     }
-    class M {
+    class D {
       constructor() {
         let resolved;
         const tmp = closure_1;
@@ -676,24 +682,25 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1) 
     }
     cResult[11] = tmp9;
     cResult[12] = arg0;
-    cResult[13] = M;
-    tmp18 = M;
+    tmp18 = D;
   }
-  const fn3 = function y() {
-    let resolved;
-    const tmp = closure_1;
-    if (tmp) {
-      resolved = React3(closure_0, "preview");
-    } else {
-      resolved = Promise.resolve(closure_8);
+  class B {
+    constructor() {
+      let resolved;
+      const tmp = closure_1;
+      if (tmp) {
+        resolved = React3(closure_0, "preview");
+      } else {
+        resolved = Promise.resolve(closure_8);
+      }
+      return resolved;
     }
-    return resolved;
-  };
+  }
   cResult[8] = tmp9;
   cResult[9] = arg0;
-  cResult[10] = fn3;
-  tmp16 = fn3;
-}) : ((arg0, arg1) => {
+  cResult[10] = B;
+  tmp16 = B;
+}) : (function useConjureHistoryData(arg0, arg1) {
   let closure_3;
   let refresh2;
   let closure_0 = arg0;
@@ -710,7 +717,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1) 
   const tmp3 = refresh2(react.useCallback(() => {
     const items = [React3(closure_0, "stable"), hasOwnProperty(closure_0, "stable")];
     const allResult = all(items);
-    return allResult.then(f125921);
+    return allResult.then(f127115);
   }, items2));
   react = tmp3;
   const items3 = [arg0, hasItem];

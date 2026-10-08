@@ -1,32 +1,32 @@
-// Module ID: 7509
-// Function ID: 7510
+// Module ID: 9232
+// Function ID: 9233
 // Name: HeaderShared
-// Dependencies: [109, 19, 17, 7510, 21, 4896, 587, 4892, 558, 576, 4586, 6018, 6026, 7511, 1369, 7516, 1618, 1491, 7518, 6480, 568, 7521, 13123, 1188, 5916, 2]
+// Dependencies: [109, 19, 17, 9233, 21, 5090, 587, 5086, 558, 576, 4778, 6204, 6212, 9234, 1381, 9239, 1630, 1503, 9241, 6658, 568, 9244, 12838, 1200, 6189, 2]
 // Exports: getDefaultChannelStackHeaderProps, getDefaultStackHeaderProps, getRenderBackImage, getRenderHeaderTextButton, getRenderModalBackImage, getRenderModalCloseImage, renderHeader
 
-// Module 7509 (HeaderShared)
+// Module 9232 (HeaderShared)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import useToken2 from "useToken" /* 4586 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Pressables from "Pressables" /* 5916 */;
-import react_native from "react-native" /* 7510 */;
-import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 7516 */;
-import ChannelActionsDefault from "ChannelActions" /* 7521 */;
-import ChannelHeaderDefault from "ChannelHeader" /* 13123 */;
+import native from "native" /* 1200 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import useToken2 from "useToken" /* 4778 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Pressables from "Pressables" /* 6189 */;
+import react_native from "react-native" /* 9233 */;
+import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 9239 */;
+import ChannelActionsDefault from "ChannelActions" /* 9244 */;
+import ChannelHeaderDefault from "ChannelHeader" /* 12838 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault, labelStyle;
+let _require, importDefault;
 
 let Platform;
 let c10;
@@ -38,8 +38,8 @@ let obj4;
 let obj5;
 let tmp;
 let tmp6;
-const HeaderDebugOverlayDefault = tmp6(6018);
-const _mod6026 = tmp(6026);
+const HeaderDebugOverlayDefault = tmp6(6204);
+const _mod6212 = tmp(6212);
 function renderGenericTitle(children) {
   const obj = { title: children.children };
   return React4(closure_12, obj);
@@ -60,7 +60,7 @@ let merged = Object.assign(Text_Text.TextStyleSheet["text-md/semibold"]);
 obj5 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 let closure_11 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
+tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GenericHeaderTitle(title) {
   let children;
   let closure_0;
   let closure_5;
@@ -211,7 +211,7 @@ tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
       }
     }
   }
-  const fn = function v(accessibilityRole) {
+  function renderTitleContainer(accessibilityRole) {
     let items;
     let tmp10;
     if (null != closure_0) {
@@ -225,7 +225,7 @@ tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
       tmp10 = React4(Text_Text.Text, obj);
     }
     return tmp10;
-  };
+  }
   cResult[8] = str;
   cResult[9] = tmp4;
   cResult[10] = num9;
@@ -233,9 +233,9 @@ tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
   cResult[12] = tmp16.titleContainer;
   cResult[13] = tmp10;
   cResult[14] = variant;
-  cResult[15] = fn;
-  tmp18 = fn;
-}) : ((subtitleColor) => {
+  cResult[15] = renderTitleContainer;
+  tmp18 = renderTitleContainer;
+}) : (function GenericHeaderTitle(subtitleColor) {
   let children;
   let color;
   let maxFontSizeMultiplier;
@@ -278,7 +278,7 @@ tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
   }
   const tmp6 = closure_11();
   closure_5 = tmp6;
-  const tmp7 = tmp5(6018)("os-drawn");
+  const tmp7 = tmp5(6204)("os-drawn");
   if (null == subtitle) {
     let renderTitleContainerResult;
     if (null == tmp7) {
@@ -300,7 +300,7 @@ tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
 });
 let closure_12 = tmp6;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((labelStyle) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderTextButton(labelStyle) {
   let tmp4;
   let tmp5;
   const obj = react2;
@@ -343,7 +343,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((labelStyle) => {
     }
     const obj3 = { labelStyle: tmp10, displayMode: "default", backImage: tmp12, truncatedLabel: null, accessibilityLabel: null };
     ({ label: obj2.truncatedLabel, label: obj2.accessibilityLabel } = tmp5);
-    const HeaderBackButton = _mod6026.HeaderBackButton;
+    const HeaderBackButton = _mod6212.HeaderBackButton;
     const merged = Object.assign(tmp5);
     const tmp18 = React4(HeaderBackButton, obj3);
     cResult[7] = tmp5;
@@ -356,7 +356,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((labelStyle) => {
   cResult[4] = tmp9.backButtonLabel;
   cResult[5] = items;
   tmp10 = items;
-}) : ((labelStyle) => {
+}) : (function HeaderTextButton(labelStyle) {
   let items;
   labelStyle = labelStyle.labelStyle;
   const merged = Object.assign(labelStyle, Object.assign({ labelStyle: 0 }));
@@ -371,13 +371,13 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((labelStyle) => {
   };
   items = [closure_11().backButtonLabel, labelStyle];
   closure_11();
-  const HeaderBackButton = _mod6026.HeaderBackButton;
+  const HeaderBackButton = _mod6212.HeaderBackButton;
   const merged1 = Object.assign(merged);
   return React4(HeaderBackButton, obj);
 });
 let closure_14 = tmp7;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderInner(arg0) {
   let back;
   let headerLeft;
   let headerRight;
@@ -405,9 +405,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       return closure_2_9(PressableNavigatorBackIcon, obj);
     };
   }
-  const tmpResult = navigation(1491);
+  const tmpResult = navigation(1503);
   const text = tmpResult.useTheme().colors.text;
-  const tmpResult2 = navigation(7518);
+  const tmpResult2 = navigation(9241);
   const gradientTop = tmpResult2.useGradientTop();
   const sum = num + MIN_HEADER_HEIGHT;
   if (cResult[0] === num) {
@@ -524,7 +524,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[1] = sum;
   cResult[2] = obj6;
   tmp9 = obj6;
-}) : ((route) => {
+}) : (function HeaderInner(route) {
   let back;
   let headerRight;
   let headerTitle;
@@ -626,7 +626,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   return tmpResultResult;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderChannelActions(arg0) {
   let route;
   let screenIndex;
   const obj = react2;
@@ -651,7 +651,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tmp3.headerRightContainer;
   cResult[3] = tmp7;
   tmp4 = tmp7;
-}) : ((arg0) => {
+}) : (function HeaderChannelActions(arg0) {
   let route;
   let screenIndex;
   ({ route, screenIndex } = arg0);
@@ -661,7 +661,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return React4(tmp2, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderIconButton(arg0) {
   let accessibilityLabel;
   let color;
   let onPress;
@@ -707,7 +707,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = color;
   cResult[3] = tmp6;
   tmp5 = tmp6;
-}) : ((color) => {
+}) : (function HeaderIconButton(color) {
   let Icon;
   let accessibilityLabel;
   let onPress;
@@ -742,7 +742,7 @@ export { renderGenericTitle };
 export const HeaderTextButton = tmp7;
 export function getRenderHeaderTextButton(intl, onPress) {
   const label = intl;
-  return (arg0) => {
+  return function renderHeaderTextButton(arg0) {
     const obj = { label, onPress };
     const merged = Object.assign(arg0);
     return React4(closure_14, obj);
@@ -799,13 +799,13 @@ export const getDefaultChannelStackHeaderProps = function getDefaultChannelStack
       const merged1 = Object.assign(c1);
       return closure_2_9(PressableNavigatorBackIcon, obj);
     },
-    headerTitle() {
+    headerTitle: function renderHeader() {
       const obj = { isNavigationScreen: true, screenIndex: str };
       const tmp = ChannelHeaderDefault;
       const merged = Object.assign(route.params);
       return React4(tmp, obj);
     },
-    headerRight() {
+    headerRight: function renderActions() {
       const obj = { route, screenIndex: str };
       return React4(closure_16, obj);
     },

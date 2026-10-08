@@ -1,23 +1,23 @@
-// Module ID: 15964
-// Function ID: 15965
+// Module ID: 16224
+// Function ID: 16225
 // Name: MainTabsNavigatorPanel
-// Dependencies: [32, 19, 17, 1085, 21, 3, 4896, 587, 558, 576, 1491, 4745, 11157, 11156, 15965, 4751, 15966, 4743, 4907, 1121, 15967, 4909, 15970, 4618, 6019, 7520, 15971, 15972, 15979, 16511, 16512, 16513, 16941, 16187, 6147, 16364, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 3, 5090, 587, 558, 576, 1503, 4939, 11278, 11277, 16225, 4945, 16226, 4937, 5101, 1121, 16227, 7001, 16230, 4810, 6205, 9243, 16231, 16232, 16239, 16771, 16772, 16773, 17222, 16447, 6326, 16624, 2]
 
-// Module 15964 (MainTabsNavigatorPanel)
+// Module 16224 (MainTabsNavigatorPanel)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 587 */;
-import RootNavigationRef from "RootNavigationRef" /* 4743 */;
-import ChatInputUtils from "ChatInputUtils" /* 4751 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4909 */;
-import PanelsNavigationUtils from "PanelsNavigationUtils" /* 15965 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 15966 */;
-import ChannelScreenAnimatedFrameDefault from "ChannelScreenAnimatedFrame" /* 15970 */;
+import RootNavigationRef from "RootNavigationRef" /* 4937 */;
+import ChatInputUtils from "ChatInputUtils" /* 4945 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7001 */;
+import PanelsNavigationUtils from "PanelsNavigationUtils" /* 16225 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 16226 */;
+import ChannelScreenAnimatedFrameDefault from "ChannelScreenAnimatedFrame" /* 16230 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 let closure_13 = createStyles.createStyles(obj);
 let closure_14 = { code: "function MainTabsNavigatorPanelTsx1(){const{translateX,highestFullyRenderedScreenIndex}=this.__closure;return{opacity:translateX.get()>0&&highestFullyRenderedScreenIndex.get()<1?1:0};}" };
 let __initData = { code: "function MainTabsNavigatorPanelTsx2(){const{translateX,highestFullyRenderedScreenIndex}=this.__closure;return{opacity:translateX.get()>0&&highestFullyRenderedScreenIndex.get()<1?1:0};}" };
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MainTabsNavigatorPanel() {
   let closure_11;
   let closure_4;
   let closure_5;
@@ -122,7 +122,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   _slicedToArray(react.useState(tmp16), 2);
   const ref2 = obj4.useRef(first1);
   if (cResult[3] !== first1) {
-    class I {
+    class P {
       constructor() {
         ref2.current = first1;
       }
@@ -130,12 +130,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     const items1 = [first1];
     let num4 = 3;
     cResult[3] = first1;
-    cResult[4] = I;
+    cResult[4] = P;
     cResult[5] = items1;
     tmp22 = items1;
-    tmp21 = I;
+    tmp21 = P;
   } else {
-    class I {
+    class P {
       constructor() {
         ref2.current = first1;
       }
@@ -504,7 +504,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
           }
           if ("modal" !== name) {
             tmp3.current = true;
-            const tmp15Result = tmp15(4907);
+            const tmp15Result = tmp15(5101);
             tmp15Result.transitionToChannel(tmp6.current.channelId);
           }
         }
@@ -516,7 +516,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   cResult[18] = tmp24;
   cResult[19] = navigation;
   cResult[20] = ie;
-}) : (() => {
+}) : (function MainTabsNavigatorPanel() {
   let SidebarCoachmarkOverlay;
   let channelId1;
   let closure_4;
@@ -546,7 +546,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   let tmp61;
   let tmp65;
   let type1;
-  const f122192 = () => first4;
+  const f123366 = () => first4;
   let tmp = closure_13();
   const tmp3 = drawerWidth;
   let obj = navigation(drawerWidth[10]);
@@ -623,9 +623,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     const obj = useChannelScreensFromNavigation;
     return obj.isActiveTabsGuilds(navigation.getState());
   });
-  [tmp23, closure_13] = react.useState(f122192);
+  [tmp23, closure_13] = react.useState(f123366);
   const items3 = [navigation];
-  _slicedToArray(react.useState(f122192), 2);
+  _slicedToArray(react.useState(f123366), 2);
   const effect1 = obj3.useEffect(() => {
     function handleStateChange(data) {
       const obj = navigation(drawerWidth[16]);
@@ -672,7 +672,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
           }
           if ("modal" !== name) {
             tmp3.current = true;
-            const tmp15Result = tmp15(4907);
+            const tmp15Result = tmp15(5101);
             tmp15Result.transitionToChannel(tmp6.current.channelId);
           }
         }
@@ -766,7 +766,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
           movePanel(true, false, 0, true);
         }
       } else if (movePanel(false, false, 0, false)) {
-        const tmp4Result = tmp4(4751);
+        const tmp4Result = tmp4(4945);
         tmp4Result.dismissKeyboard();
       }
     }

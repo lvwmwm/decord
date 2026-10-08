@@ -1,13 +1,13 @@
-// Module ID: 6664
-// Function ID: 6665
+// Module ID: 6841
+// Function ID: 6842
 // Name: useAnalyticsLocations
-// Dependencies: [32, 19, 21, 558, 576, 12, 1342, 2]
+// Dependencies: [32, 19, 21, 558, 576, 12, 1354, 2]
 
-// Module 6664 (useAnalyticsLocations)
+// Module 6841 (useAnalyticsLocations)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import _modDef1342 from "module_1342" /* 1342 */;
+import _modDef1354 from "module_1354" /* 1354 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -18,7 +18,7 @@ let dependencyMap;
 const jsx = Fragment.jsx;
 let context = react.createContext([]);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnalyticsLocationProvider(arg0) {
   let children;
   let value;
   const obj = react2;
@@ -36,9 +36,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = value;
   cResult[2] = tmp3;
   tmp2 = tmp3;
-}) : ((value) => <context.Provider value={arg0.value}>{arg0.children}</context.Provider>);
+}) : (function AnalyticsLocationProvider(value) {
+  return <context.Provider value={arg0.value}>{arg0.children}</context.Provider>;
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAnalyticsLocations() {
   let closure_2;
   let first;
   let items = [...arguments];
@@ -89,7 +91,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       const fn = function x() {
         const tmp = items;
-        if (!_modDef1342(items, first)) {
+        if (!_modDef1354(items, first)) {
           closure_2(tmp);
         }
       };
@@ -127,7 +129,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = context;
   cResult[2] = tmp6;
   arr3 = tmp6;
-}) : (() => {
+}) : (function useAnalyticsLocations() {
   let items = [...arguments];
   context = undefined;
   let tmp = context(react.useState(items), 2);
@@ -162,7 +164,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const items3 = [items, first];
   const effect = react.useEffect(() => {
     const tmp = items;
-    if (!_modDef1342(items, first)) {
+    if (!_modDef1354(items, first)) {
       closure_2(tmp);
     }
   }, items3);
@@ -170,7 +172,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return obj;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLocationStackFromLocationContext() {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
@@ -187,7 +189,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
+}) : (function useLocationStackFromLocationContext() {
   context = react.useContext(context);
   if (context == null) {
     context = [];

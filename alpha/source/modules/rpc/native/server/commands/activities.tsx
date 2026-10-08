@@ -1,18 +1,18 @@
-// Module ID: 14374
-// Function ID: 14375
+// Module ID: 14600
+// Function ID: 14601
 // Name: commands/activities
-// Dependencies: [5, 5323, 1085, 5105, 8025, 14339, 9059, 9494, 14335, 14330, 7288, 7298, 9026, 5320, 2]
+// Dependencies: [5, 5635, 1085, 7477, 8433, 14567, 11134, 8658, 14560, 14547, 10616, 12368, 7494, 7742, 10635, 5632, 2]
 
-// Module 14374 (commands/activities)
-import NativePermissionConstants from "NativePermissionConstants" /* 5105 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8025 */;
-import RPCErrorDefault from "RPCError" /* 9059 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9494 */;
-import validateOpenInviteDialog from "validateOpenInviteDialog" /* 14339 */;
+// Module 14600 (commands/activities)
+import NativePermissionConstants from "NativePermissionConstants" /* 7477 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8433 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8658 */;
+import RPCErrorDefault from "RPCError" /* 11134 */;
+import validateOpenInviteDialog from "validateOpenInviteDialog" /* 14567 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants_mod from "Constants" /* 5323 */;
+import Constants_mod from "Constants" /* 5635 */;
 import Constants_mod2 from "Constants" /* 1085 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14335 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14560 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;
@@ -38,7 +38,7 @@ let obj2 = {
     socket = socket.socket;
     const obj = validateOpenInviteDialog;
     const result = obj.validateOpenInviteDialog(socket);
-    if (null != result.frame) {
+    if (null != result.frameId) {
       const self = this;
       const self2 = this;
       const obj2 = { errorCode: hasOwnProperty.UNKNOWN_ERROR };
@@ -47,7 +47,7 @@ let obj2 = {
     } else {
       const obj3 = { source: constants.ACTIVITY_INVITE, targetApplicationId: id };
       id = socket.application.id;
-      const showInstantInviteActionSheet = tmp(9494).showInstantInviteActionSheet;
+      const showInstantInviteActionSheet = tmp(8658).showInstantInviteActionSheet;
       instant_invite_InstantInviteUtils;
       const result1 = showInstantInviteActionSheet(tmp4, obj3);
     }
@@ -67,7 +67,6 @@ let obj4 = {
     return (async function(arg0, value) {
       let closure_0;
       let closure_1;
-      let tmp;
       if (c3 === 2) {
         c3 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -82,7 +81,7 @@ let obj4 = {
         }
       } else {
         try {
-          let id1;
+          let tmp;
           let closure_2;
           let closure_3;
           let id;
@@ -96,7 +95,7 @@ let obj4 = {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              id1 = undefined;
+              tmp = undefined;
               closure_2 = undefined;
               closure_3 = undefined;
               id = socket.application.id;
@@ -104,22 +103,22 @@ let obj4 = {
                 const obj4 = { errorCode: constants.INVALID_COMMAND };
                 const self9 = this;
                 const self10 = this;
-                const tmp51 = new tmp(c2[6])(obj4, "No application.");
-                throw tmp51;
+                const tmp55 = new tmp(c2[6])(obj4, "No application.");
+                throw tmp55;
               } else {
-                const tmp79 = tmp(c2[9])(tmp75);
-                id1 = undefined;
-                if (tmp79 != null) {
-                  id1 = tmp79.id;
+                let tmp39;
+                if (tmp(c2[9])(socket)) {
+                  tmp39 = tmp(c2[10])(tmp79.context.surface);
                 }
-                if (null == id1) {
+                tmp = tmp39;
+                if (null == tmp39) {
                   const obj5 = { errorCode: constants.UNKNOWN_ERROR };
                   const self7 = this;
                   const self8 = this;
-                  const tmp45 = new tmp(c2[6])(obj5, "Unable to find selected channel");
-                  throw tmp45;
+                  const tmp49 = new tmp(c2[6])(obj5, "Unable to find selected channel");
+                  throw tmp49;
                 } else {
-                  const obj12 = tmp(c2[10]);
+                  const obj12 = tmp(c2[12]);
                   const permission = obj12.requestPermission(constants2.PHOTOS);
                   c2 = 1;
                   c3 = 1;
@@ -144,10 +143,10 @@ let obj4 = {
               const obj7 = { value, done: true };
               return obj7;
             } else if (value) {
-              const tmp73Result = tmp(c2[11]);
+              const tmp77Result = tmp(c2[13]);
               c2 = 2;
               c3 = 1;
-              const obj8 = { value: tmp73Result.launchImageLibraryAsync({ mediaType: "photo", includeBase64: false, selectionLimit: 1 }), done: false };
+              const obj8 = { value: tmp77Result.launchImageLibraryAsync({ mediaType: "photo", includeBase64: false, selectionLimit: 1 }), done: false };
               return obj8;
             } else {
               const obj9 = { errorCode: constants.UNKNOWN_ERROR };
@@ -174,10 +173,10 @@ let obj4 = {
                 throw tmp31;
               } else {
                 const obj13 = { name: closure_2.fileName, type: closure_2.type, uri: closure_2.uri };
-                const obj18 = tmp2(c2[12]);
+                const obj18 = tmp2(c2[14]);
                 c2 = 3;
                 c3 = 1;
-                const obj14 = { value: obj18.uploadImageAttachment(id, id1, obj13), done: false };
+                const obj14 = { value: obj18.uploadImageAttachment(id, tmp, obj13), done: false };
                 return obj14;
               }
             }
@@ -192,7 +191,7 @@ let obj4 = {
             closure_3 = value;
             if (null != closure_3) {
               if (null != closure_3.url) {
-                if (!(closure_3 instanceof tmp(c2[13]))) {
+                if (!(closure_3 instanceof tmp(c2[15]))) {
                   let obj = { image_url: closure_3.url };
                   c3 = 3;
                   const obj16 = { value: obj, done: true };
@@ -208,9 +207,9 @@ let obj4 = {
             const tmp192 = new tmp19(obj17, JSON.stringify(closure_3));
             throw tmp192;
           }
-        } catch (tmp53) {
+        } catch (tmp57) {
           c3 = 3;
-          throw tmp53;
+          throw tmp57;
         }
       }
     })();

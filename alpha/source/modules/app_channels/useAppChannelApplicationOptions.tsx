@@ -1,12 +1,12 @@
-// Module ID: 9255
-// Function ID: 9256
+// Module ID: 8584
+// Function ID: 8585
 // Name: useAppChannelApplicationOptions
-// Dependencies: [19, 558, 576, 9256, 8547, 6665, 2]
+// Dependencies: [19, 558, 576, 8585, 8586, 6842, 2]
 
-// Module 9255 (useAppChannelApplicationOptions)
+// Module 8584 (useAppChannelApplicationOptions)
 import react2 from "react" /* 576 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6665 */;
-import useGuildEmbeddedApplications2 from "useGuildEmbeddedApplications" /* 9256 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6842 */;
+import useGuildEmbeddedApplications2 from "useGuildEmbeddedApplications" /* 8585 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,7 @@ function compareOptions(status, status2) {
   }
   return localeCompareResult;
 }
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChannelApplicationOptions(arg0, arg1, arg2, arg3) {
   let data;
   let isLoading;
   const obj = react2;
@@ -34,7 +34,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
   const useGuildEmbeddedApplications = useGuildEmbeddedApplications2.useGuildEmbeddedApplications;
   let tmp6;
   useGuildEmbeddedApplications2;
-  const APP_CHANNEL = tmp(8547).EmbeddedSurfaceType.APP_CHANNEL;
+  const APP_CHANNEL = tmp(8586).EmbeddedSurfaceType.APP_CHANNEL;
   if (!tmp4) {
     tmp6 = arg0;
   }
@@ -85,7 +85,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
   cResult[1] = data2;
   cResult[2] = sorted;
   tmp10 = sorted;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useAppChannelApplicationOptions(arg0, arg1, arg2) {
   let items;
   let flag = arg3;
   if (arg3 === undefined) {

@@ -1,29 +1,27 @@
-// Module ID: 17784
-// Function ID: 17785
+// Module ID: 18071
+// Function ID: 18072
 // Name: EmojiOverflowActionSheet
-// Dependencies: [5, 19, 17, 21, 4896, 558, 576, 1402, 4892, 4853, 1126, 6000, 9952, 10071, 5319, 4573, 6024, 6081, 6708, 2]
+// Dependencies: [5, 19, 17, 21, 5090, 558, 576, 1414, 6164, 5086, 5047, 1126, 6184, 9479, 9675, 5631, 4765, 6210, 6267, 6885, 2]
 
-// Module 17784 (EmojiOverflowActionSheet)
-import EmojiActionCreators from "EmojiActionCreators" /* 9952 */;
+// Module 18071 (EmojiOverflowActionSheet)
+import react_native from "react-native" /* 17 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9479 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let c5, c6, closure_3, emoji;
+let c5, c6;
 
-let closure_4;
-let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
-({ Image: closure_4, View: hasOwnProperty } = react_native);
+const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ header: { paddingHorizontal: 8, flexDirection: "row", alignItems: "center", gap: 16 }, emojiImage: { width: 30, height: 30, resizeMode: "contain" } });
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiOverflowActionSheet(emoji) {
   let Text3;
   let intl;
   let intl2;
@@ -33,14 +31,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
   let items1;
   let items2;
   let obj12;
-  let onSelectRolesForEmoji;
+  let onEdit;
   const tmp = emoji;
-  let obj = emoji(onSelectRolesForEmoji[6]);
+  let obj = emoji(onEdit[6]);
   const cResult = obj.c(42);
   emoji = emoji.emoji;
   const guildId = emoji.guildId;
-  onSelectRolesForEmoji = emoji.onSelectRolesForEmoji;
-  const onEdit = emoji.onEdit;
+  const onSelectRolesForEmoji = emoji.onSelectRolesForEmoji;
+  onEdit = emoji.onEdit;
   const onClose = emoji.onClose;
   const tmp4 = closure_8();
   if (cResult[0] === emoji.animated) {
@@ -67,7 +65,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
       const combined = ":" + emoji.name + ":";
       if (cResult[8] !== combined) {
         let obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: combined };
-        const tmp18 = closure_6(tmp(onSelectRolesForEmoji[8]).Text, obj4);
+        const tmp18 = closure_6(tmp(onEdit[9]).Text, obj4);
         cResult[8] = combined;
         cResult[9] = tmp18;
         tmp16 = tmp18;
@@ -84,7 +82,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
           }
           const _Symbol = Symbol;
           if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp25 = closure_6(tmp(onSelectRolesForEmoji[9]).TrashIcon, { color: "text-feedback-critical" });
+            const tmp25 = closure_6(tmp(onEdit[10]).TrashIcon, { color: "text-feedback-critical" });
             cResult[14] = tmp25;
             tmp23 = tmp25;
           } else {
@@ -92,9 +90,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
           }
           const _Symbol2 = Symbol;
           if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-            let obj5 = { variant: "text-md/semibold", color: "text-feedback-critical", children: intl.string(tmp(tmp2[10]).t.oyYWHE) };
-            const Text = tmp(tmp2[8]).Text;
-            intl = tmp(tmp2[10]).intl;
+            let obj5 = { variant: "text-md/semibold", color: "text-feedback-critical", children: intl.string(tmp(tmp2[11]).t.oyYWHE) };
+            const Text = tmp(tmp2[9]).Text;
+            intl = tmp(tmp2[11]).intl;
             const tmp28 = closure_6(Text, obj5);
             cResult[15] = tmp28;
             tmp26 = tmp28;
@@ -111,7 +109,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
               }
               const _Symbol3 = Symbol;
               if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-                const tmp34 = closure_6(tmp(onSelectRolesForEmoji[13]).PencilIcon, {});
+                const tmp34 = closure_6(tmp(onEdit[14]).PencilIcon, {});
                 cResult[20] = tmp34;
                 tmp32 = tmp34;
               } else {
@@ -119,9 +117,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
               }
               const _Symbol4 = Symbol;
               if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-                let obj6 = { variant: "text-md/semibold", children: intl2.string(tmp(tmp2[10]).t.bt75uw) };
-                const Text2 = tmp(tmp2[8]).Text;
-                intl2 = tmp(tmp2[10]).intl;
+                let obj6 = { variant: "text-md/semibold", children: intl2.string(tmp(tmp2[11]).t.bt75uw) };
+                const Text2 = tmp(tmp2[9]).Text;
+                intl2 = tmp(tmp2[11]).intl;
                 const tmp37 = closure_6(Text2, obj6);
                 cResult[21] = tmp37;
                 tmp35 = tmp37;
@@ -145,7 +143,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
                       }
                       const _Symbol5 = Symbol;
                       if (cResult[30] === Symbol.for("react.memo_cache_sentinel")) {
-                        const tmp47 = closure_6(tmp(onSelectRolesForEmoji[16]).XSmallIcon, {});
+                        const tmp47 = closure_6(tmp(onEdit[17]).XSmallIcon, {});
                         cResult[30] = tmp47;
                         tmp45 = tmp47;
                       } else {
@@ -153,9 +151,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
                       }
                       const _Symbol6 = Symbol;
                       if (cResult[31] === Symbol.for("react.memo_cache_sentinel")) {
-                        let obj7 = { variant: "text-md/semibold", children: intl4.string(tmp(tmp2[10]).t["ETE/oC"]) };
-                        const Text4 = tmp(tmp2[8]).Text;
-                        intl4 = tmp(tmp2[10]).intl;
+                        let obj7 = { variant: "text-md/semibold", children: intl4.string(tmp(tmp2[11]).t["ETE/oC"]) };
+                        const Text4 = tmp(tmp2[9]).Text;
+                        intl4 = tmp(tmp2[11]).intl;
                         const tmp50 = closure_6(Text4, obj7);
                         cResult[31] = tmp50;
                         tmp48 = tmp50;
@@ -164,7 +162,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
                       }
                       if (cResult[32] !== onClose) {
                         let obj8 = { icon: tmp45, label: tmp48, onPress: onClose };
-                        const tmp53 = closure_6(tmp(onSelectRolesForEmoji[11]).TableRow, obj8);
+                        const tmp53 = closure_6(tmp(onEdit[12]).TableRow, obj8);
                         cResult[32] = onClose;
                         cResult[33] = tmp53;
                         tmp51 = tmp53;
@@ -187,7 +185,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
                             }
                             const obj9 = { children: items };
                             items = [tmp19, tmp54];
-                            const tmp59 = closure_7(tmp(onSelectRolesForEmoji[18]).ActionSheet, obj9);
+                            const tmp59 = closure_7(tmp(onEdit[19]).ActionSheet, obj9);
                             cResult[39] = tmp54;
                             cResult[40] = tmp19;
                             cResult[41] = tmp59;
@@ -197,7 +195,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
                       }
                       const obj10 = { hasIcons: true, children: items1 };
                       items1 = [tmp29, tmp38, tmp41, tmp51];
-                      const tmp56 = closure_7(tmp(onSelectRolesForEmoji[17]).TableRowGroup, obj10);
+                      const tmp56 = closure_7(tmp(onEdit[18]).TableRowGroup, obj10);
                       cResult[34] = tmp29;
                       cResult[35] = tmp38;
                       cResult[36] = tmp41;
@@ -210,10 +208,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
                 let tmp42 = null;
                 if (null != onSelectRolesForEmoji) {
                   const obj11 = {
-                    icon: closure_6(tmp(onSelectRolesForEmoji[13]).PencilIcon, {}),
+                    icon: closure_6(tmp(onEdit[14]).PencilIcon, {}),
                     label: closure_6(Text3, obj12),
-                    onPress: onEdit(function*(arg0, value) {
-                                      let closure_2;
+                    onPress: onClose(function*(arg0, value) {
+                                      let closure_3;
                                       let obj2;
                                       if (c6 === 2) {
                                         c6 = 3;
@@ -242,7 +240,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
                                               const obj4 = { value, done: true };
                                               return obj4;
                                             } else {
-                                              onSelectRolesForEmoji = tmp;
+                                              let closure_2 = tmp;
                                               roles = undefined;
                                               anyErrorMessage = undefined;
                                               c4 = 1;
@@ -254,15 +252,15 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
                                           } else {
                                             if (1 === c5) {
                                               c4 = 0;
-                                              anyErrorMessage = closure_3;
-                                              if (anyErrorMessage instanceof roles(onSelectRolesForEmoji[14]).APIError) {
-                                                const presentError = roles(onSelectRolesForEmoji[15]).presentError;
-                                                const tmp23 = roles(onSelectRolesForEmoji[15]);
+                                              anyErrorMessage = onEdit;
+                                              if (anyErrorMessage instanceof roles(onEdit[15]).APIError) {
+                                                const presentError = roles(onEdit[16]).presentError;
+                                                const tmp23 = roles(onEdit[16]);
                                                 anyErrorMessage = anyErrorMessage.getAnyErrorMessage();
                                                 roles = anyErrorMessage;
                                                 if (anyErrorMessage == null) {
-                                                  const intl = roles(onSelectRolesForEmoji[10]).intl;
-                                                  roles = intl.string(roles(onSelectRolesForEmoji[10]).t.R0RpRX);
+                                                  const intl = roles(onEdit[11]).intl;
+                                                  roles = intl.string(roles(onEdit[11]).t.R0RpRX);
                                                 }
                                                 presentError(roles);
                                               }
@@ -281,7 +279,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
                                                 c5 = 3;
                                                 c6 = 1;
                                                 const obj8 = { value: obj2.updateEmoji(obj7), done: false };
-                                                obj2 = roles(onSelectRolesForEmoji[12]);
+                                                obj2 = roles(onEdit[13]);
                                                 return obj8;
                                               }
                                             } else if (arg0 === 1) {
@@ -300,7 +298,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
                                             return { value: "IconComponent", done: null };
                                           }
                                         } catch (tmp38) {
-                                          closure_3 = tmp38;
+                                          onEdit = tmp38;
                                           if (0 === c4) {
                                             c6 = 3;
                                             throw tmp38;
@@ -311,10 +309,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
                                       }
                                     })
                   };
-                  const TableRow = tmp(tmp2[11]).TableRow;
-                  obj12 = { variant: "text-md/semibold", children: intl3.string(tmp(onSelectRolesForEmoji[10]).t["+riKdA"]) };
-                  Text3 = tmp(tmp2[8]).Text;
-                  intl3 = tmp(tmp2[10]).intl;
+                  const TableRow = tmp(tmp2[12]).TableRow;
+                  obj12 = { variant: "text-md/semibold", children: intl3.string(tmp(onEdit[11]).t["+riKdA"]) };
+                  Text3 = tmp(tmp2[9]).Text;
+                  intl3 = tmp(tmp2[11]).intl;
                   tmp42 = closure_6(TableRow, obj11);
                 }
                 cResult[25] = emoji;
@@ -332,7 +330,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
                               onClose();
                             }
               };
-              const tmp40 = closure_6(tmp(onSelectRolesForEmoji[11]).TableRow, obj13);
+              const tmp40 = closure_6(tmp(onEdit[12]).TableRow, obj13);
               cResult[22] = onClose;
               cResult[23] = onEdit;
               cResult[24] = tmp40;
@@ -348,7 +346,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
                       onClose();
                     }
           };
-          const tmp31 = closure_6(tmp(onSelectRolesForEmoji[11]).TableRow, obj14);
+          const tmp31 = closure_6(tmp(onEdit[12]).TableRow, obj14);
           cResult[16] = emoji.id;
           cResult[17] = guildId;
           cResult[18] = onClose;
@@ -358,7 +356,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
       }
       const obj15 = { style: tmp5, children: items2 };
       items2 = [tmp10, tmp16];
-      const tmp22 = closure_7(closure_5, obj15);
+      const tmp22 = closure_7(View, obj15);
       cResult[10] = tmp4.header;
       cResult[11] = tmp10;
       cResult[12] = tmp16;
@@ -366,20 +364,20 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
       tmp19 = tmp22;
     }
     const obj16 = { style: tmp6, source: tmp9 };
-    const tmp13 = closure_6(onClose, obj16);
+    const tmp13 = closure_6(guildId(onEdit[8]), obj16);
     cResult[5] = tmp4.emojiImage;
     cResult[6] = tmp9;
     cResult[7] = tmp13;
     tmp10 = tmp13;
   }
-  let obj2 = guildId(tmp2[7]);
+  let obj2 = onSelectRolesForEmoji(tmp2[7]);
   const obj17 = { id: emoji.id, animated: emoji.animated, size: 48 };
   const emojiURL = obj2.getEmojiURL(obj17);
   cResult[0] = emoji.animated;
   cResult[1] = emoji.id;
   cResult[2] = emojiURL;
   tmp7 = emojiURL;
-}) : ((emoji) => {
+}) : (function EmojiOverflowActionSheet(emoji) {
   let Text2;
   let Text3;
   let Text4;
@@ -399,57 +397,57 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
   let onClose;
   let onSelectRolesForEmoji;
   emoji = emoji.emoji;
-  ({ guildId: importAll, onSelectRolesForEmoji } = emoji);
-  ({ onEdit: _asyncToGenerator, onClose } = emoji);
+  ({ guildId: importDefault, onSelectRolesForEmoji } = emoji);
+  ({ onEdit: dependencyMap, onClose } = emoji);
   const tmp = closure_8();
   const tmp3 = emoji;
-  const tmp4 = onSelectRolesForEmoji;
+  const tmp4 = dependencyMap;
   let obj = { style: tmp.header, children: items };
+  const ActionSheet = emoji(6885).ActionSheet;
   let obj2 = { style: tmp.emojiImage, source: obj3 };
   obj3 = { uri: obj4.getEmojiURL(obj5) };
-  const ActionSheet = emoji(onSelectRolesForEmoji[18]).ActionSheet;
-  obj4 = require("AvatarUtils");
+  const tmp6 = FastImageDefault;
+  obj4 = onSelectRolesForEmoji(1414);
   obj5 = { id: emoji.id, animated: emoji.animated, size: 48 };
-  items = [closure_6(onClose, obj2), ];
+  items = [closure_6(tmp6, obj2), ];
   let obj6 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: ":" + emoji.name + ":" };
-  const Text = emoji(onSelectRolesForEmoji[8]).Text;
+  const Text = emoji(5086).Text;
   items[1] = closure_6(Text, obj6);
-  const items1 = [closure_7(closure_5, obj), ];
-  const TableRowGroup = emoji(onSelectRolesForEmoji[17]).TableRowGroup;
+  const items1 = [closure_7(View, obj), ];
+  const TableRowGroup = emoji(6267).TableRowGroup;
   let obj7 = {
-    icon: closure_6(emoji(onSelectRolesForEmoji[9]).TrashIcon, { color: "text-feedback-critical" }),
+    icon: closure_6(emoji(5047).TrashIcon, { color: "text-feedback-critical" }),
     label: closure_6(Text2, obj8),
     onPress() {
       const obj = EmojiActionCreators;
-      obj.deleteEmoji(importAll, emoji.id);
+      obj.deleteEmoji(importDefault, emoji.id);
       onClose();
     }
   };
-  const TableRow = emoji(onSelectRolesForEmoji[11]).TableRow;
-  obj8 = { variant: "text-md/semibold", color: "text-feedback-critical", children: intl.string(emoji(onSelectRolesForEmoji[10]).t.oyYWHE) };
-  Text2 = emoji(onSelectRolesForEmoji[8]).Text;
-  intl = emoji(onSelectRolesForEmoji[10]).intl;
+  const TableRow = emoji(6184).TableRow;
+  obj8 = { variant: "text-md/semibold", color: "text-feedback-critical", children: intl.string(emoji(1126).t.oyYWHE) };
+  Text2 = emoji(5086).Text;
+  intl = emoji(1126).intl;
   const items2 = [closure_6(TableRow, obj7), , , ];
   const obj9 = {
-    icon: closure_6(emoji(onSelectRolesForEmoji[13]).PencilIcon, {}),
+    icon: closure_6(emoji(9675).PencilIcon, {}),
     label: closure_6(Text3, obj10),
     onPress() {
-      _asyncToGenerator();
+      dependencyMap();
       onClose();
     }
   };
-  const TableRow2 = emoji(onSelectRolesForEmoji[11]).TableRow;
-  obj10 = { variant: "text-md/semibold", children: intl2.string(emoji(onSelectRolesForEmoji[10]).t.bt75uw) };
-  Text3 = emoji(onSelectRolesForEmoji[8]).Text;
-  intl2 = emoji(onSelectRolesForEmoji[10]).intl;
+  const TableRow2 = emoji(6184).TableRow;
+  obj10 = { variant: "text-md/semibold", children: intl2.string(emoji(1126).t.bt75uw) };
+  Text3 = emoji(5086).Text;
+  intl2 = emoji(1126).intl;
   items2[1] = closure_6(TableRow2, obj9);
   let tmp5Result = null;
   if (null != onSelectRolesForEmoji) {
     const obj11 = {
-      icon: closure_6(tmp3(tmp4[13]).PencilIcon, {}),
+      icon: closure_6(tmp3(9675).PencilIcon, {}),
       label: closure_6(Text4, obj12),
-      onPress: _asyncToGenerator(async (arg0, value) => {
-          let closure_2;
+      onPress: onClose(function*(arg0, value) {
           let obj2;
           if (c6 === 2) {
             c6 = 3;
@@ -478,7 +476,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
                   const obj4 = { value, done: true };
                   return obj4;
                 } else {
-                  onSelectRolesForEmoji = tmp;
+                  let closure_2 = tmp;
                   anyErrorMessage = tmp4;
                   roles = undefined;
                   c4 = 1;
@@ -491,14 +489,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
                 if (1 === c5) {
                   c4 = 0;
                   anyErrorMessage = closure_3;
-                  if (anyErrorMessage instanceof roles(onSelectRolesForEmoji[14]).APIError) {
-                    const presentError = roles(onSelectRolesForEmoji[15]).presentError;
-                    const tmp23 = roles(onSelectRolesForEmoji[15]);
+                  if (anyErrorMessage instanceof roles(closure_3[15]).APIError) {
+                    const presentError = roles(closure_3[16]).presentError;
+                    const tmp23 = roles(closure_3[16]);
                     anyErrorMessage = anyErrorMessage.getAnyErrorMessage();
                     roles = anyErrorMessage;
                     if (anyErrorMessage == null) {
-                      const intl = roles(onSelectRolesForEmoji[10]).intl;
-                      roles = intl.string(roles(onSelectRolesForEmoji[10]).t.R0RpRX);
+                      const intl = roles(closure_3[11]).intl;
+                      roles = intl.string(roles(closure_3[11]).t.R0RpRX);
                     }
                     presentError(roles);
                   }
@@ -517,7 +515,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
                     c5 = 3;
                     c6 = 1;
                     const obj8 = { value: obj2.updateEmoji(obj7), done: false };
-                    obj2 = roles(onSelectRolesForEmoji[12]);
+                    obj2 = roles(closure_3[13]);
                     return obj8;
                   }
                 } else if (arg0 === 1) {
@@ -547,24 +545,24 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
           }
         })
     };
-    const TableRow3 = tmp3(tmp4[11]).TableRow;
-    obj12 = { variant: "text-md/semibold", children: intl3.string(tmp3(tmp4[10]).t["+riKdA"]) };
-    Text4 = tmp3(tmp4[8]).Text;
-    intl3 = tmp3(tmp4[10]).intl;
+    const TableRow3 = tmp3(6184).TableRow;
+    obj12 = { variant: "text-md/semibold", children: intl3.string(tmp3(1126).t["+riKdA"]) };
+    Text4 = tmp3(5086).Text;
+    intl3 = tmp3(1126).intl;
     tmp5Result = tmp5(TableRow3, obj11);
   }
   const obj13 = { children: items1 };
   const obj14 = { hasIcons: true, children: items2 };
   items2[2] = tmp5Result;
-  const obj15 = { icon: closure_6(tmp3(tmp4[16]).XSmallIcon, {}), label: closure_6(Text5, obj16), onPress: onClose };
-  const TableRow4 = tmp3(tmp4[11]).TableRow;
-  obj16 = { variant: "text-md/semibold", children: intl4.string(tmp3(tmp4[10]).t["ETE/oC"]) };
-  Text5 = tmp3(tmp4[8]).Text;
-  intl4 = tmp3(tmp4[10]).intl;
+  const obj15 = { icon: closure_6(tmp3(6210).XSmallIcon, {}), label: closure_6(Text5, obj16), onPress: onClose };
+  const TableRow4 = tmp3(6184).TableRow;
+  obj16 = { variant: "text-md/semibold", children: intl4.string(tmp3(1126).t["ETE/oC"]) };
+  Text5 = tmp3(5086).Text;
+  intl4 = tmp3(1126).intl;
   items2[3] = closure_6(TableRow4, obj15);
   items1[1] = closure_7(TableRowGroup, obj14);
   return closure_7(ActionSheet, obj13);
 });
 const result = size.fileFinishedImporting("modules/guild_settings/native/EmojiOverflowActionSheet.tsx");
 
-export default tmp5;
+export default tmp4;

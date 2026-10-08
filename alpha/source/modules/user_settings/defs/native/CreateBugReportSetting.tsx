@@ -1,24 +1,24 @@
-// Module ID: 15646
-// Function ID: 15647
+// Module ID: 15926
+// Function ID: 15927
 // Name: CreateBugReportSetting
-// Dependencies: [1357, 1358, 12553, 558, 576, 504, 1369, 11142, 1126, 15404, 15633, 2]
+// Dependencies: [1369, 1370, 12651, 558, 576, 504, 1381, 11262, 1126, 15666, 15913, 2]
 
-// Module 15646 (CreateBugReportSetting)
+// Module 15926 (CreateBugReportSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import DeveloperOptionsActionCreators from "DeveloperOptionsActionCreators" /* 1358 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import BugReportManagerDefault from "BugReportManager" /* 12553 */;
-import WrenchIcon from "WrenchIcon" /* 15404 */;
-import BugReporterSetting from "BugReporterSetting" /* 15633 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1357 */;
+import DeveloperOptionsActionCreators from "DeveloperOptionsActionCreators" /* 1370 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import BugReportManagerDefault from "BugReportManager" /* 12651 */;
+import WrenchIcon from "WrenchIcon" /* 15666 */;
+import BugReporterSetting from "BugReporterSetting" /* 15913 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1369 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateBugReportSettingToggleValue() {
   let isBugReporterEnabled;
   let tmp4;
   let tmp5;
@@ -38,7 +38,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useCreateBugReportSettingToggleValue() {
   let isBugReporterEnabled;
   const items = [DeveloperOptionsStore];
   const obj = get_initialized;

@@ -1,13 +1,13 @@
-// Module ID: 9458
-// Function ID: 9459
+// Module ID: 9109
+// Function ID: 9110
 // Name: useVoiceStateForRemoteSession
-// Dependencies: [502, 4915, 4913, 558, 576, 504, 2]
+// Dependencies: [502, 5111, 5109, 558, 576, 504, 2]
 
-// Module 9458 (useVoiceStateForRemoteSession)
+// Module 9109 (useVoiceStateForRemoteSession)
 import react from "react" /* 576 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import VoiceStateStore from "VoiceStateStore" /* 4915 */;
-import GameConsoleStore from "GameConsoleStore" /* 4913 */;
+import VoiceStateStore from "VoiceStateStore" /* 5111 */;
+import GameConsoleStore from "GameConsoleStore" /* 5109 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let id, voiceStateForSession;
 
 let tmp;
 const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceStateForRemoteSession() {
   let remoteSessionId;
   let tmp4;
   let tmp5;
@@ -41,7 +41,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5, tmp6);
-}) : (() => {
+}) : (function useVoiceStateForRemoteSession() {
   let remoteSessionId;
   const items = [AuthenticationStore, VoiceStateStore, GameConsoleStore];
   const obj = get_initialized;

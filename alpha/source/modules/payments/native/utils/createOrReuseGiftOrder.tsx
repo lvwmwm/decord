@@ -1,15 +1,15 @@
-// Module ID: 10487
-// Function ID: 10488
+// Module ID: 10084
+// Function ID: 10085
 // Name: createOrReuseGiftOrder
-// Dependencies: [5, 19, 4875, 1379, 1096, 3, 6948, 1369, 4467, 4549, 2]
+// Dependencies: [5, 19, 5069, 1391, 1096, 3, 7137, 1381, 4659, 4741, 2]
 // Exports: useCreateOrReuseGiftOrder
 
-// Module 10487 (createOrReuseGiftOrder)
+// Module 10084 (createOrReuseGiftOrder)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1096 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import _modDef4467 from "module_4467" /* 4467 */;
-import PaymentConstants from "PaymentConstants" /* 4875 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import _modDef4659 from "module_4659" /* 4659 */;
+import PaymentConstants from "PaymentConstants" /* 5069 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -105,7 +105,7 @@ export const useCreateOrReuseGiftOrder = function useCreateOrReuseGiftOrder(Gift
                 } else {
                   APPLE = tmp60.APPLE;
                 }
-                const obj6 = _modDef4467();
+                const obj6 = _modDef4659();
                 const utcResult = obj6.utc();
                 subtractResult = utcResult.subtract(location(dependencyMap[6]).DRAFT_ORDER_LOOKBACK_DAYS, "days");
                 obj7 = { line_items: items };

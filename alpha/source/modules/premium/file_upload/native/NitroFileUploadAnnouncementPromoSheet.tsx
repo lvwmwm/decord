@@ -1,21 +1,21 @@
-// Module ID: 17159
-// Function ID: 17160
+// Module ID: 17440
+// Function ID: 17441
 // Name: NitroFileUploadAnnouncementPromoSheet
-// Dependencies: [19, 17, 2048, 21, 4896, 587, 558, 576, 5597, 17160, 1126, 2621, 5601, 10058, 2]
+// Dependencies: [19, 17, 2060, 21, 5090, 587, 558, 576, 5392, 17441, 1126, 2665, 5375, 10303, 2]
 
-// Module 17159 (NitroFileUploadAnnouncementPromoSheet)
+// Module 17440 (NitroFileUploadAnnouncementPromoSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import _modDef2621 from "module_2621" /* 2621 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import _modDef2665 from "module_2665" /* 2665 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let dependencyMap, importDefault, markAsDismissed;
+let dependencyMap, importDefault;
 
 let obj2;
 const View = react_native.View;
@@ -24,14 +24,14 @@ const jsx = Fragment.jsx;
 let obj = { illustration: obj2 };
 obj2 = { paddingTop: nativeDefault.space.PX_12 };
 let closure_7 = createStyles.createStyles(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroFileUploadAnnouncementPromoSheet(markAsDismissed) {
   let closure_2;
   let ref;
-  let tmp10;
-  let tmp16;
-  let tmp20;
+  let tmp15;
+  let tmp19;
   let tmp5;
   let tmp6;
+  let tmp9;
   const tmp = markAsDismissed;
   const obj = markAsDismissed(576);
   const cResult = obj.c(18);
@@ -53,135 +53,129 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
   }
   dependencyMap = tmp5;
   if (cResult[2] !== tmp5) {
-    class I {
-      constructor() {
-        closure_2(ContentDismissActionType.AUTO_DISMISS);
-      }
-    }
+    const fn2 = function h() {
+      closure_2(ContentDismissActionType.AUTO_DISMISS);
+    };
     cResult[2] = tmp5;
-    cResult[3] = I;
-    tmp6 = I;
+    cResult[3] = fn2;
+    tmp6 = fn2;
   } else {
-    class I {
-      constructor() {
-        closure_2(ContentDismissActionType.AUTO_DISMISS);
-      }
-    }
+    tmp6 = cResult[3];
   }
-  const tmpResult = tmp(5597);
+  const tmpResult = tmp(5392);
   const unmountEffect = tmpResult.useUnmountEffect(tmp6);
   if (cResult[4] !== tmp5) {
     class I {
       constructor() {
-        closure_2(ContentDismissActionType.AUTO_DISMISS);
+        closure_2(ContentDismissActionType.USER_DISMISS);
       }
     }
     cResult[4] = tmp5;
-    cResult[5] = tmp9;
+    cResult[5] = I;
   } else {
     class I {
       constructor() {
-        closure_2(ContentDismissActionType.AUTO_DISMISS);
+        closure_2(ContentDismissActionType.USER_DISMISS);
       }
     }
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class I {
       constructor() {
-        closure_2(ContentDismissActionType.AUTO_DISMISS);
+        closure_2(ContentDismissActionType.USER_DISMISS);
       }
     }
-    const tmp11 = jsx(tmp(17160).FileUploadSpotIllustration, { accessible: false, resizeMode: "contain" });
-    cResult[6] = tmp11;
-    tmp10 = tmp11;
+    const tmp10 = jsx(tmp(17441).FileUploadSpotIllustration, { accessible: false, resizeMode: "contain" });
+    cResult[6] = tmp10;
+    tmp9 = tmp10;
   } else {
     class I {
       constructor() {
-        closure_2(ContentDismissActionType.AUTO_DISMISS);
+        closure_2(ContentDismissActionType.USER_DISMISS);
       }
     }
   }
   if (cResult[7] !== tmp4.illustration) {
     class I {
       constructor() {
-        closure_2(ContentDismissActionType.AUTO_DISMISS);
+        closure_2(ContentDismissActionType.USER_DISMISS);
       }
     }
-    const tmp14 = <View style={tmp4.illustration}>{tmp10}</View>;
+    const tmp13 = <View style={tmp4.illustration}>{tmp9}</View>;
     cResult[7] = tmp4.illustration;
-    cResult[8] = tmp14;
+    cResult[8] = tmp13;
   } else {
     class I {
       constructor() {
-        closure_2(ContentDismissActionType.AUTO_DISMISS);
+        closure_2(ContentDismissActionType.USER_DISMISS);
       }
     }
   }
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
     class I {
       constructor() {
-        closure_2(ContentDismissActionType.AUTO_DISMISS);
+        closure_2(ContentDismissActionType.USER_DISMISS);
       }
     }
-    const stringResult = obj4.string(_modDef2621.IyCdAU);
+    const stringResult = obj4.string(_modDef2665.IyCdAU);
     const intl = tmp(1126).intl;
-    const stringResult1 = intl.string(_modDef2621.LhfXZN);
+    const stringResult1 = intl.string(_modDef2665.LhfXZN);
     cResult[9] = stringResult;
     cResult[10] = stringResult1;
-    tmp16 = stringResult1;
+    tmp15 = stringResult1;
   } else {
     class I {
       constructor() {
-        closure_2(ContentDismissActionType.AUTO_DISMISS);
+        closure_2(ContentDismissActionType.USER_DISMISS);
       }
     }
-    tmp16 = cResult[10];
+    tmp15 = cResult[10];
   }
   if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
     class I {
       constructor() {
-        closure_2(ContentDismissActionType.AUTO_DISMISS);
+        closure_2(ContentDismissActionType.USER_DISMISS);
       }
     }
     const stringResult2 = obj5.string(tmp(1126).t["NX+WJN"]);
     cResult[11] = stringResult2;
-    tmp20 = stringResult2;
+    tmp19 = stringResult2;
   } else {
     class I {
       constructor() {
-        closure_2(ContentDismissActionType.AUTO_DISMISS);
+        closure_2(ContentDismissActionType.USER_DISMISS);
       }
     }
   }
   if (cResult[12] !== tmp8) {
     class I {
       constructor() {
-        closure_2(ContentDismissActionType.AUTO_DISMISS);
+        closure_2(ContentDismissActionType.USER_DISMISS);
       }
     }
     cResult[12] = tmp8;
-    cResult[13] = jsx(tmp(5601).Button, { grow: true, size: "lg", variant: "primary", text: tmp20, onPress: tmp8 });
-    const tmp23 = jsx(tmp(5601).Button, { grow: true, size: "lg", variant: "primary", text: tmp20, onPress: tmp8 });
+    cResult[13] = jsx(tmp(5375).Button, { grow: true, size: "lg", variant: "primary", text: tmp19, onPress: tmp8 });
+    const tmp22 = jsx(tmp(5375).Button, { grow: true, size: "lg", variant: "primary", text: tmp19, onPress: tmp8 });
   } else {
     class I {
       constructor() {
-        closure_2(ContentDismissActionType.AUTO_DISMISS);
+        closure_2(ContentDismissActionType.USER_DISMISS);
       }
     }
   }
   if (cResult[14] === tmp8) {
     class I {
       constructor() {
-        closure_2(ContentDismissActionType.AUTO_DISMISS);
+        closure_2(ContentDismissActionType.USER_DISMISS);
       }
     }
   }
   cResult[14] = tmp8;
-  cResult[15] = tmp12;
-  cResult[16] = tmp22;
-  cResult[17] = jsx(tmp(10058).PromoSheet, { illustration: tmp12, title: tmp15, description: tmp16, onDismiss: tmp8, actions: tmp22 });
-  jsx(tmp(10058).PromoSheet, { illustration: tmp12, title: tmp15, description: tmp16, onDismiss: tmp8, actions: tmp22 });
-}) : ((markAsDismissed) => {
+  cResult[15] = tmp11;
+  cResult[16] = tmp21;
+  cResult[17] = jsx(tmp(10303).PromoSheet, { illustration: tmp11, title: tmp14, description: tmp15, onDismiss: tmp8, actions: tmp21 });
+  jsx(tmp(10303).PromoSheet, { illustration: tmp11, title: tmp14, description: tmp15, onDismiss: tmp8, actions: tmp21 });
+}) : (function NitroFileUploadAnnouncementPromoSheet(markAsDismissed) {
   let intl3;
   let ref;
   markAsDismissed = markAsDismissed.markAsDismissed;
@@ -208,7 +202,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
   ({ grow: true, size: "lg", variant: "primary", text: intl3.string(markAsDismissed(callback[10]).t["NX+WJN"]), onPress: callback1 });
   const Button = markAsDismissed(callback[12]).Button;
   intl3 = markAsDismissed(callback[10]).intl;
-  return <PromoSheet illustration={null} title={intl.string(require("module_2621").IyCdAU)} description={intl2.string(require("module_2621").LhfXZN)} onDismiss={callback1} actions={null} />;
+  return <PromoSheet illustration={null} title={intl.string(require("module_2665").IyCdAU)} description={intl2.string(require("module_2665").LhfXZN)} onDismiss={callback1} actions={null} />;
 });
 const result = size.fileFinishedImporting("modules/premium/file_upload/native/NitroFileUploadAnnouncementPromoSheet.tsx");
 

@@ -1,20 +1,20 @@
-// Module ID: 14531
-// Function ID: 14532
+// Module ID: 14792
+// Function ID: 14793
 // Name: UserSettingsChangeUsername
-// Dependencies: [5, 32, 19, 17, 1377, 1085, 21, 4896, 587, 5081, 14532, 4892, 1126, 558, 576, 1490, 504, 4534, 14533, 6494, 6484, 1282, 1491, 7509, 6105, 6501, 6432, 2]
+// Dependencies: [5, 32, 19, 17, 1389, 1085, 21, 5090, 587, 5741, 14793, 5086, 1126, 558, 576, 1502, 504, 4726, 14794, 6671, 6662, 1294, 1503, 9232, 6283, 6677, 6610, 2]
 
-// Module 14531 (UserSettingsChangeUsername)
+// Module 14792 (UserSettingsChangeUsername)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
+import Text_Text from "Text/Text" /* 5086 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,18 +32,18 @@ function UsernameStatusMessage(showHint) {
   let P2;
   showHint = showHint.showHint;
   const usernameStatus = showHint.usernameStatus;
-  const str = showHint(5081);
+  const str = showHint(5741);
   const match = str.match(usernameStatus);
-  let obj = { type: showHint(14532).NameValidationState.ERROR, message: P.select() };
+  let obj = { type: showHint(14793).NameValidationState.ERROR, message: P.select() };
   const _with = match.with;
-  P = showHint(5081).P;
+  P = showHint(5741).P;
   const _withResult = _with(obj, (children) => {
     const obj = { variant: "text-xs/medium", color: "text-feedback-critical", children };
     return closure_1_11(showHint(dependencyMap[11]).Text, obj);
   });
   const _with2 = _withResult.with;
-  const obj2 = { type: showHint(14532).NameValidationState.AVAILABLE, message: P2.select() };
-  P2 = showHint(5081).P;
+  const obj2 = { type: showHint(14793).NameValidationState.AVAILABLE, message: P2.select() };
+  P2 = showHint(5741).P;
   const _with2Result = _with2(obj2, (children) => {
     const obj = { variant: "text-xs/medium", color: "text-feedback-positive", children };
     return closure_1_11(showHint(dependencyMap[11]).Text, obj);
@@ -70,7 +70,7 @@ createStyles = createStyles.createStyles;
 obj3 = { width: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, marginBottom: 8 };
 obj4 = { flex: 1, marginVertical: 12, backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_SELECTED };
 let closure_13 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsChangeUsername() {
   let currentUser;
   let first;
   let first1;
@@ -219,7 +219,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[9] = username2;
   cResult[10] = first;
   cResult[11] = tmp27;
-}) : (() => {
+}) : (function UserSettingsChangeUsername() {
   let first1;
   let intl;
   let intl2;
@@ -324,7 +324,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const tmp4 = constants;
       obj.setSection(constants.ACCOUNT_CONFIRM_PASSWORD);
       const obj2 = {
-        onSubmit: function() {
+        onSubmit() {
             return closure_0(...arguments);
           },
         onSuccess() {
@@ -490,7 +490,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       textContentType: "username",
       value,
       enableAndroidSanitizedInputWorkaround: stateFromStores.hasUniqueUsername(),
-      onChange(str) {
+      onChange: function onChangeUsername(str) {
           let hasUniqueUsernameResult;
           const obj = stateFromStores;
           if (stateFromStores != null) {

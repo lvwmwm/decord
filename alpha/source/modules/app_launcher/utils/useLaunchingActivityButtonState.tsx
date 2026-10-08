@@ -1,19 +1,18 @@
-// Module ID: 11779
-// Function ID: 11780
+// Module ID: 11846
+// Function ID: 11847
 // Name: useLaunchingActivityButtonState
-// Dependencies: [19, 2050, 9000, 558, 576, 6670, 504, 9027, 7957, 2]
+// Dependencies: [19, 2062, 10612, 558, 576, 6847, 504, 10617, 5928, 2]
 
-// Module 11779 (useLaunchingActivityButtonState)
+// Module 11846 (useLaunchingActivityButtonState)
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import FramesStore from "FramesStore" /* 9000 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
+import FramesStore from "FramesStore" /* 10612 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let applicationId;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLaunchingActivityButtonState(applicationId) {
   let first;
   let onSubmissionComplete;
   let tmp = applicationId;
@@ -102,25 +101,27 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
           tmp22 = obj3;
         }
       }
-      const fn3 = function _() {
-        const tmp = !stateFromStores1 && closure_4;
-        if (tmp) {
-          if (onSubmissionComplete != null) {
-            tmp2();
+      class I {
+        constructor() {
+          const tmp = !stateFromStores1 && closure_4;
+          if (tmp) {
+            if (onSubmissionComplete != null) {
+              tmp2();
+            }
           }
         }
-      };
+      }
       const items2 = [stateFromStores1, tmp16, onSubmissionComplete];
       cResult[8] = onSubmissionComplete;
       cResult[9] = stateFromStores1;
       cResult[10] = tmp16;
-      cResult[11] = fn3;
+      cResult[11] = I;
       cResult[12] = items2;
       tmp18 = items2;
-      tmp17 = fn3;
+      tmp17 = I;
     }
   }
-  const fn = function u() {
+  const fn = function l() {
     let id;
     const getLaunchState = EmbeddedActivitiesStore.getLaunchState;
     const tmp2 = applicationId;
@@ -134,7 +135,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
   cResult[3] = context.type;
   cResult[4] = fn;
   tmp7 = fn;
-}) : ((applicationId) => {
+}) : (function useLaunchingActivityButtonState(applicationId) {
   let onSubmissionComplete;
   applicationId = applicationId.applicationId;
   ({ context: importDefault, onSubmissionComplete } = applicationId);

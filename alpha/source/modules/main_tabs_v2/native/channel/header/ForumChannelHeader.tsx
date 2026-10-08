@@ -1,29 +1,29 @@
-// Module ID: 13134
-// Function ID: 13135
+// Module ID: 12849
+// Function ID: 12850
 // Name: ForumChannelHeader
-// Dependencies: [19, 17, 7510, 21, 4896, 558, 576, 13135, 13117, 13136, 2]
+// Dependencies: [19, 17, 9233, 21, 5090, 558, 576, 12850, 12831, 12851, 2]
 
-// Module 13134 (ForumChannelHeader)
+// Module 12849 (ForumChannelHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import react_native2 from "react-native" /* 7510 */;
-import useIsForumChannelSearchActive from "useIsForumChannelSearchActive" /* 13135 */;
-import GuildChannelHeaderDefault from "GuildChannelHeader" /* 13136 */;
+import react_native2 from "react-native" /* 9233 */;
+import useIsForumChannelSearchActive from "useIsForumChannelSearchActive" /* 12850 */;
+import GuildChannelHeaderDefault from "GuildChannelHeader" /* 12851 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ForumChannelSearch = tmp(13117);
+const ForumChannelSearch = tmp(12831);
 const View = react_native.View;
 const MIN_HEADER_HEIGHT = react_native2.MIN_HEADER_HEIGHT;
 const jsx = Fragment.jsx;
 let obj = { search: { flex: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", paddingStart: 4, height: MIN_HEADER_HEIGHT } };
 let closure_5 = createStyles.createStyles(obj);
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ForumChannelHeader(arg0) {
   let channelId;
   let guildId;
   let isGuildMemberCountVisible;
@@ -89,7 +89,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     tmp5 = tmp8;
   }
   return tmp5;
-}) : ((arg0) => {
+}) : (function ForumChannelHeader(arg0) {
   let channelId;
   let guildId;
   let isGuildMemberCountVisible;

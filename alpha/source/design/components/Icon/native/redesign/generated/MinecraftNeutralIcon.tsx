@@ -1,16 +1,16 @@
-// Module ID: 8381
-// Function ID: 8382
+// Module ID: 8879
+// Function ID: 8880
 // Name: MinecraftNeutralIcon
-// Dependencies: [109, 19, 17, 21, 558, 576, 587, 8382, 4585, 8383, 8384, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 587, 8880, 4777, 8881, 8882, 2]
 
-// Module 8381 (MinecraftNeutralIcon)
+// Module 8879 (MinecraftNeutralIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage4 from "BaseIconImage" /* 4585 */;
-import AssetRegistry from "AssetRegistry" /* 8382 */;
-import AssetRegistry2 from "AssetRegistry" /* 8383 */;
-import AssetRegistry3 from "AssetRegistry" /* 8384 */;
+import BaseIconImage4 from "BaseIconImage" /* 4777 */;
+import AssetRegistry from "AssetRegistry" /* 8880 */;
+import AssetRegistry2 from "AssetRegistry" /* 8881 */;
+import AssetRegistry3 from "AssetRegistry" /* 8882 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -22,7 +22,7 @@ let metroRequire;
 let closure_3 = ["style", "color", "secondaryColor", "tertiaryColor"];
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MinecraftNeutralIcon(arg0) {
   let INTERACTIVE_ICON_DEFAULT;
   let color;
   let items4;
@@ -171,7 +171,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
           const obj5 = { source: tmp29, color: str2, style: tmp31 };
-          const BaseIconImage3 = tmp2(4585).BaseIconImage;
+          const BaseIconImage3 = tmp2(4777).BaseIconImage;
           const merged = Object.assign(tmp5);
           const tmp39 = metroRequire(BaseIconImage3, obj5);
           cResult[23] = tmp5;
@@ -182,7 +182,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const obj6 = { source: tmp18, color: str, style: tmp20 };
-      const BaseIconImage2 = tmp2(4585).BaseIconImage;
+      const BaseIconImage2 = tmp2(4777).BaseIconImage;
       const merged1 = Object.assign(tmp5);
       const tmp28 = metroRequire(BaseIconImage2, obj6);
       cResult[15] = tmp5;
@@ -193,7 +193,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const obj7 = { source: tmp13, color: INTERACTIVE_ICON_DEFAULT, style: tmp6 };
-  const BaseIconImage = tmp2(4585).BaseIconImage;
+  const BaseIconImage = tmp2(4777).BaseIconImage;
   const merged2 = Object.assign(tmp5);
   const tmp17 = metroRequire(BaseIconImage, obj7);
   cResult[7] = INTERACTIVE_ICON_DEFAULT;
@@ -201,7 +201,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[9] = tmp6;
   cResult[10] = tmp17;
   tmp15 = tmp17;
-}) : ((secondaryColor) => {
+}) : (function MinecraftNeutralIcon(secondaryColor) {
   let color;
   let items;
   let items2;

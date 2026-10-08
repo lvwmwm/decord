@@ -1,16 +1,16 @@
-// Module ID: 8321
-// Function ID: 8322
+// Module ID: 7704
+// Function ID: 7705
 // Name: Arrow
-// Dependencies: [19, 21, 4896, 587, 558, 576, 1188, 8322, 2]
+// Dependencies: [19, 21, 5090, 587, 558, 576, 1200, 7705, 2]
 
-// Module 8321 (Arrow)
+// Module 7704 (Arrow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8322 */;
+import native from "native" /* 1200 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7705 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,13 +19,13 @@ const jsx = Fragment.jsx;
 let obj = { tintColor: obj2 };
 obj2 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 let closure_4 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Arrow() {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(2);
   const tmp4 = closure_4();
   if (cResult[0] !== tmp4.tintColor) {
-    const Icon = tmp(1188).Icon;
+    const Icon = tmp(1200).Icon;
     const tmp8 = <Icon source={AssetRegistryDefault} size={native.Icon.Sizes.MEDIUM} style={tmp4.tintColor} />;
     cResult[0] = tmp4.tintColor;
     cResult[1] = tmp8;
@@ -34,7 +34,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[1];
   }
   return tmp5;
-}) : (() => {
+}) : (function Arrow() {
   const tmp = closure_4();
   const Icon = native.Icon;
   return <Icon source={AssetRegistryDefault} size={native.Icon.Sizes.MEDIUM} style={tmp.tintColor} />;

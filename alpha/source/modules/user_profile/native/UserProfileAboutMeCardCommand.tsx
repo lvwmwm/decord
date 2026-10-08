@@ -1,26 +1,25 @@
-// Module ID: 11003
-// Function ID: 11004
+// Module ID: 11228
+// Function ID: 11229
 // Name: UserProfileAboutMeCardCommand
-// Dependencies: [19, 1085, 21, 4896, 587, 558, 576, 4751, 11004, 1252, 5076, 4860, 11009, 7043, 7047, 4892, 2]
+// Dependencies: [19, 1085, 21, 5090, 587, 558, 576, 4945, 11229, 1264, 5105, 5054, 11235, 7231, 7235, 5086, 2]
 
-// Module 11003 (UserProfileAboutMeCardCommand)
+// Module 11228 (UserProfileAboutMeCardCommand)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5076 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7043 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7047 */;
-import MarkupReactCommandRule from "MarkupReactCommandRule" /* 11004 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 11009 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5105 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7231 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7235 */;
+import MarkupReactCommandRule from "MarkupReactCommandRule" /* 11229 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 11235 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let application;
 
 let obj2;
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -28,7 +27,7 @@ const jsxs = Fragment.jsxs;
 let obj = { commandClickable: obj2 };
 obj2 = { color: nativeDefault.colors.MENTION_FOREGROUND, backgroundColor: nativeDefault.colors.MENTION_BACKGROUND, marginEnd: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_12 };
 let closure_5 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((application) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileAboutMeCardCommand(application) {
   let channel;
   let tmp = application;
   let obj = application(channel[6]);
@@ -149,7 +148,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[2] = command;
   cResult[3] = fn;
   tmp5 = fn;
-}) : ((channel) => {
+}) : (function UserProfileAboutMeCardCommand(channel) {
   let command;
   ({ application: require, command } = channel);
   channel = channel.channel;

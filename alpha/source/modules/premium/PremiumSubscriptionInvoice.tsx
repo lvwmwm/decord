@@ -1,27 +1,27 @@
-// Module ID: 13213
-// Function ID: 13214
+// Module ID: 13513
+// Function ID: 13514
 // Name: PremiumSubscriptionInvoice
-// Dependencies: [109, 32, 5, 19, 4543, 1085, 4534, 1282, 584, 5319, 38, 5329, 558, 576, 2]
+// Dependencies: [109, 32, 5, 19, 4735, 1085, 4726, 1294, 584, 5631, 38, 5640, 558, 576, 2]
 // Exports: getItemUnitPriceWithDiscount, useFetchSubscriptionInvoicePreview
 
-// Module 13213 (PremiumSubscriptionInvoice)
+// Module 13513 (PremiumSubscriptionInvoice)
 import Constants from "Constants" /* 1085 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import InvoiceRecord from "InvoiceRecord" /* 4543 */;
+import InvoiceRecord from "InvoiceRecord" /* 4735 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_12, dependencyMap, payment_source_id, planId, preventFetch, sku_subscription_plan_id;
+let _require, closure_12, dependencyMap, payment_source_id, planId, sku_subscription_plan_id;
 
 let c10;
 let c9;
 let metroImportAll;
 let metroImportDefault;
-const f114309 = (enabled) => enabled.enabled;
+const f115589 = (enabled) => enabled.enabled;
 function createSubscriptionInvoicePreview() {
   return obj(...arguments);
 }
@@ -540,7 +540,7 @@ let closure_3 = ["subscriptionId"];
 ({ useCallback: metroImportDefault, useEffect: metroImportAll, useState: c9, useRef: c10 } = react);
 const Endpoints = Constants.Endpoints;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch, arg1, arg2) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGenericInvoicePreview(preventFetch, arg1, arg2) {
   let tmp4;
   let tmp6;
   _require = arg1;
@@ -553,6 +553,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch, arg1, 
   [tmp4, dependencyMap] = tmp3;
   [tmp6, closure_3] = _slicedToArray(closure_9(null), 2);
   const tmp5 = _slicedToArray(closure_9(null), 2);
+  let closure_4 = closure_10(null);
   if (cResult[0] === arg1) {
     let tmp7;
     if (cResult[1] === tmp2) {
@@ -607,6 +608,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch, arg1, 
       } else {
         let c3;
         try {
+          let current;
           c5 = 2;
           if (0 === c4) {
             if (arg0 === 1) {
@@ -617,22 +619,23 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch, arg1, 
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              closure_1 = tmp;
-              closure_0 = undefined;
+              current = undefined;
+              closure_1 = undefined;
               c3 = 1;
               closure_2_3(null);
               c4 = 2;
               c5 = 1;
-              const obj4 = { value: closure_0(), done: false };
+              const obj4 = { value: current(ref.current), done: false };
               return obj4;
             }
           } else {
             if (1 === c4) {
               c3 = 0;
               closure_1 = closure_2;
-              const tmp15 = closure_0;
-              if (!tmp15) {
-                closure_2_3(tmp13);
+              const tmp17 = current;
+              if (!tmp17) {
+                ref.current = null;
+                closure_2_3(closure_1);
                 closure_2_2(null);
               }
             } else if (arg0 === 1) {
@@ -644,21 +647,22 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch, arg1, 
               obj = { value, done: true };
               return obj;
             } else {
-              closure_0 = value;
-              const tmp7 = closure_0;
+              current = value;
+              const tmp7 = current;
               if (!tmp7) {
-                closure_2_2(closure_0);
+                ref.current = current;
+                closure_2_2(current);
               }
               c3 = 0;
             }
             c5 = 3;
             return { value: "IconComponent", done: null };
           }
-        } catch (tmp23) {
-          closure_2 = tmp23;
+        } catch (tmp28) {
+          closure_2 = tmp28;
           if (0 === c3) {
             c5 = 3;
-            throw tmp23;
+            throw tmp28;
           } else {
             c4 = 1;
           }
@@ -677,7 +681,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch, arg1, 
   cResult[1] = tmp2;
   cResult[2] = fn;
   tmp7 = fn;
-}) : ((preventFetch, arg1, arg2) => {
+}) : (function useFetchGenericInvoicePreview(preventFetch, arg1, arg2) {
   let c2;
   let first;
   let tmp2;
@@ -691,6 +695,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch, arg1, 
   let tmp = _slicedToArray(closure_9(null), 2);
   [tmp2, c2] = tmp;
   [first, closure_3] = closure_9(null);
+  let closure_4 = closure_10(null);
   const items = [flag, arg1, arg2];
   closure_8(() => {
     function loadPreview() {
@@ -716,9 +721,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch, arg1, 
         } else {
           let c3;
           try {
-            let closure_0;
+            let current;
             c5 = 2;
-            if (0 === c4) {
+            if (0 === ref) {
               if (arg0 === 1) {
                 c5 = 3;
                 throw value;
@@ -727,22 +732,23 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch, arg1, 
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                closure_0 = undefined;
+                current = undefined;
                 c3 = 1;
                 c3(null);
-                c4 = 2;
+                ref = 2;
                 c5 = 1;
-                const obj4 = { value: tmp(), done: false };
+                const obj4 = { value: tmp(ref.current), done: false };
                 return obj4;
               }
             } else {
-              if (1 === c4) {
+              if (1 === ref) {
                 c3 = 0;
-                tmp = tmp23;
-                const tmp15 = closure_129_0;
-                if (!tmp15) {
-                  c3(tmp13);
-                  tmp23(null);
+                tmp = tmp28;
+                const tmp17 = closure_129_0;
+                if (!tmp17) {
+                  ref.current = null;
+                  c3(tmp);
+                  tmp28(null);
                 }
               } else if (arg0 === 1) {
                 c5 = 3;
@@ -753,22 +759,23 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch, arg1, 
                 obj = { value, done: true };
                 return obj;
               } else {
-                closure_0 = value;
+                current = value;
                 const tmp7 = closure_129_0;
                 if (!tmp7) {
-                  tmp23(closure_0);
+                  ref.current = current;
+                  tmp28(current);
                 }
                 c3 = 0;
               }
               c5 = 3;
               return { value: "IconComponent", done: null };
             }
-          } catch (tmp23) {
+          } catch (tmp28) {
             if (0 === c3) {
               c5 = 3;
-              throw tmp23;
+              throw tmp28;
             } else {
-              c4 = 1;
+              ref = 1;
             }
           }
         }
@@ -903,7 +910,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSer
         }
         tmp6 = null;
         if (null != payment_sources) {
-          const found = payment_sources.find(f114309);
+          const found = payment_sources.find(f115589);
           let id;
           if (found != null) {
             id = found.id;
@@ -957,7 +964,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSer
         }
         tmp6 = null;
         if (null != payment_sources) {
-          const found = payment_sources.find(f114309);
+          const found = payment_sources.find(f115589);
           let id;
           if (found != null) {
             id = found.id;

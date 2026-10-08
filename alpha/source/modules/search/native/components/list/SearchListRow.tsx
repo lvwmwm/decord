@@ -1,24 +1,24 @@
-// Module ID: 16828
-// Function ID: 16829
+// Module ID: 17107
+// Function ID: 17108
 // Name: SearchListRow
-// Dependencies: [19, 17, 7524, 21, 4896, 587, 558, 576, 4892, 5916, 2]
+// Dependencies: [19, 17, 9247, 21, 5090, 587, 558, 576, 5086, 6189, 2]
 
-// Module 16828 (SearchListRow)
+// Module 17107 (SearchListRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Pressables from "Pressables" /* 5916 */;
-import SearchConstants from "SearchConstants" /* 7524 */;
+import Pressables from "Pressables" /* 6189 */;
+import SearchConstants from "SearchConstants" /* 9247 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
 let tmp4;
-const Text_Text = tmp4(4892);
+const Text_Text = tmp4(5086);
 const View = react_native.View;
 const paddingVertical = SearchConstants.SEARCH_ROW_TAP_STATE_PADDING;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -32,7 +32,7 @@ let closure_7 = createStyles.createStyles((marginLeft) => {
   return obj;
 });
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SearchListRow(arg0) {
   let accessibilityActions;
   let accessibilityHint;
   let accessibilityLabel;
@@ -48,7 +48,6 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   let items;
   let items1;
   let items2;
-  let items3;
   let label;
   let onAccessibilityAction;
   let onPress;
@@ -156,8 +155,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
                       }
                       let tmp25 = null != extras;
                       if (tmp25) {
-                        const obj3 = { style: items1, children: extras };
-                        items1 = [tmp5Result.extrasContainer];
+                        const obj3 = { style: tmp5Result.extrasContainer, children: extras };
                         tmp25 = hasOwnProperty(View, obj3);
                       }
                       cResult[24] = extras;
@@ -167,8 +165,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
                     }
                   }
                 }
-                const obj4 = { style: tmp8, children: items2 };
-                items2 = [tmp10, tmp16, trailing];
+                const obj4 = { style: tmp8, children: items1 };
+                items1 = [tmp10, tmp16, trailing];
                 const tmp23 = metroRequire(View, obj4);
                 cResult[19] = tmp8;
                 cResult[20] = tmp10;
@@ -178,8 +176,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
                 tmp20 = tmp23;
               }
             }
-            const obj5 = { style: tmp5Result.labels, children: items3 };
-            items3 = [tmp14, subLabel];
+            const obj5 = { style: tmp5Result.labels, children: items2 };
+            items2 = [tmp14, subLabel];
             const tmp19 = metroRequire(View, obj5);
             cResult[15] = tmp5Result.labels;
             cResult[16] = subLabel;
@@ -190,7 +188,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
           let tmp15 = label;
           if (typeof label === "string") {
             const obj6 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp5Result.text, children: label };
-            tmp15 = hasOwnProperty(tmp(4892).Text, obj6);
+            tmp15 = hasOwnProperty(tmp(5086).Text, obj6);
           }
           cResult[12] = label;
           cResult[13] = tmp5Result.text;
@@ -204,24 +202,24 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
         cResult[11] = tmp13;
         tmp10 = tmp13;
       }
-      const items4 = [tmp5Result.iconContainer, iconContainerStyle];
+      const items3 = [tmp5Result.iconContainer, iconContainerStyle];
       cResult[6] = iconContainerStyle;
       cResult[7] = tmp5Result.iconContainer;
-      cResult[8] = items4;
-      tmp9 = items4;
+      cResult[8] = items3;
+      tmp9 = items3;
     }
-    const items5 = [tmp5Result.body, bodyStyle];
+    const items4 = [tmp5Result.body, bodyStyle];
     cResult[3] = bodyStyle;
     cResult[4] = tmp5Result.body;
-    cResult[5] = items5;
-    tmp8 = items5;
+    cResult[5] = items4;
+    tmp8 = items4;
   }
-  const items6 = [tmp5Result.pressable, containerStyle];
+  const items5 = [tmp5Result.pressable, containerStyle];
   cResult[0] = containerStyle;
   cResult[1] = tmp5Result.pressable;
-  cResult[2] = items6;
-  tmp7 = items6;
-}) : ((accessibilityRole) => {
+  cResult[2] = items5;
+  tmp7 = items5;
+}) : (function SearchListRow(accessibilityRole) {
   let accessibilityActions;
   let accessibilityHint;
   let accessibilityLabel;
@@ -239,7 +237,6 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   let items3;
   let items4;
   let items5;
-  let items6;
   let label;
   let onAccessibilityAction;
   let onPress;
@@ -281,8 +278,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   items1[1] = metroRequire(View, obj2);
   let tmp7Result2 = null != extras;
   if (tmp7Result2) {
-    const obj6 = { style: items6, children: extras };
-    items6 = [tmpResult.extrasContainer];
+    const obj6 = { style: tmpResult.extrasContainer, children: extras };
     tmp7Result2 = tmp7(tmp6, obj6);
   }
   items1[2] = tmp7Result2;

@@ -1,21 +1,19 @@
-// Module ID: 11314
-// Function ID: 11315
+// Module ID: 11489
+// Function ID: 11490
 // Name: ExplicitMediaObscuredFalsePositiveActionSheet
-// Dependencies: [19, 7123, 21, 558, 576, 11315, 8950, 8953, 8954, 4860, 7122, 2]
+// Dependencies: [19, 6979, 21, 558, 576, 11490, 11492, 11493, 11494, 5054, 8218, 2]
 
-// Module 11314 (ExplicitMediaObscuredFalsePositiveActionSheet)
+// Module 11489 (ExplicitMediaObscuredFalsePositiveActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7123 */;
-import ExplicitMediaRedactionActionCreators from "ExplicitMediaRedactionActionCreators" /* 8953 */;
+import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 6979 */;
+import ExplicitMediaRedactionActionCreators from "ExplicitMediaRedactionActionCreators" /* 11493 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channelId;
-
 let closure_4 = ExplicitMediaRedactionConstants.EXPLICIT_MEDIA_FALSE_POSITIVE_ACTION_SHEET_KEY;
 const jsx = Fragment.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExplicitMediaObscuredFalsePositiveActionSheet(channelId) {
   let attachmentId;
   let embedId;
   let redactableMediaAttachmentsForMessage;
@@ -157,7 +155,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[5] = redactableMediaEmbedsForMessage;
   cResult[6] = obj5;
   tmp6 = obj5;
-}) : ((channelId) => {
+}) : (function ExplicitMediaObscuredFalsePositiveActionSheet(channelId) {
   let attachmentId;
   let embedId;
   let first;

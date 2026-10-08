@@ -1,30 +1,30 @@
-// Module ID: 18034
-// Function ID: 18035
+// Module ID: 18321
+// Function ID: 18322
 // Name: NotificationSettingChannelOverrides
-// Dependencies: [32, 19, 17, 2055, 6613, 4525, 1377, 1085, 21, 4896, 587, 558, 576, 504, 6478, 6614, 5049, 5709, 1126, 4596, 6553, 6000, 6006, 5819, 10613, 6554, 1188, 7915, 6559, 2]
+// Dependencies: [32, 19, 17, 2067, 6790, 4717, 1389, 1085, 21, 5090, 587, 558, 576, 504, 6656, 6791, 5417, 6099, 1126, 4788, 6729, 6184, 6192, 8134, 10210, 6730, 1200, 8334, 6735, 2]
 
-// Module 18034 (NotificationSettingChannelOverrides)
+// Module 18321 (NotificationSettingChannelOverrides)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4596 */;
-import useChannelName from "useChannelName" /* 5049 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5709 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 6614 */;
+import ChannelRecord from "ChannelRecord" /* 2067 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4788 */;
+import useChannelName from "useChannelName" /* 5417 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6099 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 6791 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 6613 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 6790 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let closure_0, guildId, navigation, obj1;
+let closure_0, navigation, obj1;
 
 let c10;
 let closure_12;
@@ -42,7 +42,7 @@ obj2 = { marginHorizontal: nativeDefault.space.PX_8, flex: 1 };
 createStyles = createStyles.createStyles;
 obj3 = { paddingVertical: nativeDefault.space.PX_16 };
 let closure_14 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function NotificationSettingChannelOverrides(guildId) {
   let channels;
   let first;
   let first1;
@@ -476,7 +476,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
   cResult[4] = first1;
   cResult[5] = mapped;
   arr2 = mapped;
-}) : ((arg0) => {
+}) : (function NotificationSettingChannelOverrides(arg0) {
   let SearchField;
   let intl;
   let intl2;

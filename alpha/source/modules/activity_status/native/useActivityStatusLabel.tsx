@@ -1,28 +1,28 @@
-// Module ID: 13127
-// Function ID: 13128
+// Module ID: 12842
+// Function ID: 12843
 // Name: useActivityStatusLabel
-// Dependencies: [4918, 2051, 4515, 4936, 4525, 4915, 1085, 558, 576, 504, 10626, 10624, 10625, 10632, 1126, 10635, 10640, 2]
+// Dependencies: [5893, 2063, 4707, 5106, 4717, 5111, 1085, 558, 576, 504, 10224, 10222, 10223, 10230, 1126, 10235, 10240, 2]
 
-// Module 13127 (useActivityStatusLabel)
+// Module 12842 (useActivityStatusLabel)
 import Constants from "Constants" /* 1085 */;
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10624 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 10625 */;
-import isGameActivityDefault from "isGameActivity" /* 10632 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 10635 */;
-import VoiceActivityStatus from "VoiceActivityStatus" /* 10640 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4918 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import PresenceStore from "PresenceStore" /* 4936 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import VoiceStateStore from "VoiceStateStore" /* 4915 */;
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10222 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 10223 */;
+import isGameActivityDefault from "isGameActivity" /* 10230 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 10235 */;
+import VoiceActivityStatus from "VoiceActivityStatus" /* 10240 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5893 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import PresenceStore from "PresenceStore" /* 5106 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import VoiceStateStore from "VoiceStateStore" /* 5111 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let type, userId;
+let type;
 
 const ActivityTypes = Constants.ActivityTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityStatusLabel(userId) {
   let first;
   let gameMentionsAsPlainText;
   let tmp10;
@@ -182,7 +182,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[9] = items3;
   tmp18 = items3;
   tmp17 = U;
-}) : ((userId) => {
+}) : (function useActivityStatusLabel(userId) {
   userId = userId.userId;
   const guildId = userId.guildId;
   let gameMentionsAsPlainText;

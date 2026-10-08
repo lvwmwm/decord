@@ -1,25 +1,23 @@
-// Module ID: 11371
-// Function ID: 11372
+// Module ID: 12809
+// Function ID: 12810
 // Name: ContextMenuSubmenuActionSheetHeader
-// Dependencies: [19, 17, 21, 4896, 558, 576, 1126, 9230, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 1126, 8538, 2]
 
-// Module 11371 (ContextMenuSubmenuActionSheetHeader)
+// Module 12809 (ContextMenuSubmenuActionSheetHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import ActionSheetHeaderPressableText2 from "ActionSheetHeaderPressableText" /* 9230 */;
+import ActionSheetHeaderPressableText2 from "ActionSheetHeaderPressableText" /* 8538 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let onBack;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ headerContainer: { paddingVertical: 12, paddingHorizontal: 16, alignItems: "flex-start" } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onBack) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMenuSubmenuActionSheetHeader(onBack) {
   let first;
   let tmp7;
   let tmp9;
@@ -69,7 +67,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onBack) => {
   cResult[6] = tmp9;
   cResult[7] = tmp13;
   tmp12 = tmp13;
-}) : ((onBack) => {
+}) : (function ContextMenuSubmenuActionSheetHeader(onBack) {
   let intl;
   let fn = onBack.onBack;
   ({ label: intl.string(intl2.t["13/7kX"]), onPress: fn });

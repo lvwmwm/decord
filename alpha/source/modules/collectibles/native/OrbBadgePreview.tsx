@@ -1,25 +1,25 @@
-// Module ID: 12996
-// Function ID: 12997
+// Module ID: 13274
+// Function ID: 13275
 // Name: OrbBadgePreview
-// Dependencies: [19, 17, 21, 4896, 558, 576, 7860, 8539, 1126, 10838, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 8278, 9024, 1126, 10487, 2]
 
-// Module 12996 (OrbBadgePreview)
+// Module 13274 (OrbBadgePreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import useCurrentUser from "useCurrentUser" /* 7860 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 8539 */;
-import UserProfilePreviewDefault from "UserProfilePreview" /* 10838 */;
+import useCurrentUser from "useCurrentUser" /* 8278 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9024 */;
+import UserProfilePreviewDefault from "UserProfilePreview" /* 10487 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ container: { flex: 1, justifyContent: "center", alignItems: "center" } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbBadgePreview() {
   let tmp6;
   let tmp7;
   let tmp9;
@@ -62,7 +62,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[5] = tmp9;
   cResult[6] = tmp14;
   tmp13 = tmp14;
-}) : (() => {
+}) : (function OrbBadgePreview() {
   let intl;
   let items;
   const tmp = closure_5();

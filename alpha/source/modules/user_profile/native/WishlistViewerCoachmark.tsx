@@ -1,42 +1,41 @@
-// Module ID: 12981
-// Function ID: 12982
+// Module ID: 13259
+// Function ID: 13260
 // Name: WishlistViewerCoachmark
-// Dependencies: [19, 17, 2048, 21, 4896, 558, 576, 12982, 1126, 9895, 2]
+// Dependencies: [19, 17, 2060, 21, 5090, 558, 576, 13260, 6164, 1126, 9375, 2]
 
-// Module 12981 (WishlistViewerCoachmark)
+// Module 13259 (WishlistViewerCoachmark)
+import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import _modDef12982 from "module_12982" /* 12982 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import _modDef13260 from "module_13260" /* 13260 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_4;
-let hasOwnProperty;
-({ View: closure_4, Image: hasOwnProperty } = react_native);
+const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
-let closure_8 = createStyles.createStyles({ imageContainer: { alignItems: "center", justifyContent: "center" }, image: { width: 160, height: 106 } });
+let closure_7 = createStyles.createStyles({ imageContainer: { alignItems: "center", justifyContent: "center" }, image: { width: 160, height: 106 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function CoachmarkImage() {
   let first;
   let tmp6;
   const obj = react2;
   const cResult = obj.c(6);
-  const tmp3 = closure_8();
+  const tmp3 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef12982 };
+    const obj2 = { uri: _modDef13260 };
     cResult[0] = obj2;
     first = obj2;
   } else {
     first = cResult[0];
   }
   if (cResult[1] !== tmp3.image) {
-    const tmp9 = <hasOwnProperty source={first} style={tmp3.image} />;
+    const tmp9 = jsx(FastImageDefault, { source: first, style: tmp3.image });
     cResult[1] = tmp3.image;
     cResult[2] = tmp9;
     tmp6 = tmp9;
@@ -50,19 +49,19 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return tmp10;
   }
-  const tmp11 = <React3 style={tmp3.imageContainer}>{tmp6}</React3>;
+  const tmp11 = <View style={tmp3.imageContainer}>{tmp6}</View>;
   cResult[3] = tmp3.imageContainer;
   cResult[4] = tmp6;
   cResult[5] = tmp11;
   tmp10 = tmp11;
-}) : (() => {
-  const tmp = closure_8();
-  ({ source: { uri: _modDef12982 }, style: tmp.image });
-  ({ uri: _modDef12982 });
-  return <React3 style={tmp.imageContainer}>{null}</React3>;
+}) : (function CoachmarkImage() {
+  const tmp = closure_7();
+  const obj3 = { uri: _modDef13260 };
+  FastImageDefault;
+  return <View style={tmp.imageContainer}>{null}</View>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onViewWishlist) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistViewerCoachmark(onViewWishlist) {
   let isVisible;
   let markAsDismissed;
   let tmp10;
@@ -111,7 +110,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onViewWishlist) => {
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const fn3 = function _() {
-      return <closure_1_9 />;
+      return <closure_1_8 />;
     };
     const intl3 = tmp(1126).intl;
     const stringResult2 = intl3.string(markAsDismissed(1126).t.TxBQzD);
@@ -129,7 +128,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onViewWishlist) => {
       if (cResult[10] === tmp9) {
         tmp13 = cResult[11];
       }
-      const tmpResult = markAsDismissed(9895);
+      const tmpResult = markAsDismissed(9375);
       const coachmark = tmpResult.useCoachmark(anchorRef, tmp13);
       return null;
     }
@@ -140,7 +139,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onViewWishlist) => {
   cResult[10] = tmp9;
   cResult[11] = obj2;
   tmp13 = obj2;
-}) : ((isVisible) => {
+}) : (function WishlistViewerCoachmark(isVisible) {
   isVisible = isVisible.isVisible;
   const markAsDismissed = isVisible.markAsDismissed;
   const onViewWishlist = isVisible.onViewWishlist;
@@ -164,7 +163,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onViewWishlist) => {
         return markAsDismissed(constants.USER_DISMISS);
       },
       renderImgComponent() {
-        return closure_1_7(closure_1_9, {});
+        return closure_1_6(closure_1_8, {});
       },
       buttonLabel: intl3.string(intl4.t.TxBQzD),
       buttonVariant: "primary",
@@ -175,10 +174,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onViewWishlist) => {
     intl3 = intl4.intl;
     return obj;
   }, items1);
-  let obj = isVisible(onViewWishlist[9]);
+  let obj = isVisible(onViewWishlist[10]);
   const coachmark = obj.useCoachmark(anchorRef, memo);
   return null;
 });
 const result = size.fileFinishedImporting("modules/user_profile/native/WishlistViewerCoachmark.tsx");
 
-export default tmp3;
+export default tmp2;

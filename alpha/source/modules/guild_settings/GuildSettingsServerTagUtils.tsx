@@ -1,15 +1,15 @@
-// Module ID: 9285
-// Function ID: 9286
+// Module ID: 8616
+// Function ID: 8617
 // Name: GuildSettingsServerTagUtils
-// Dependencies: [2074, 4515, 1085, 9286, 7847, 2]
+// Dependencies: [2086, 4707, 1085, 8617, 8265, 2]
 // Exports: canUseMobileServerTagSettings, canViewMobileServerTag, isServerTagDraftDirty
 
-// Module 9285 (GuildSettingsServerTagUtils)
+// Module 8616 (GuildSettingsServerTagUtils)
 import Constants from "Constants" /* 1085 */;
-import GuildTagUtils from "GuildTagUtils" /* 7847 */;
-import MobileServerTagExperimentDefault from "MobileServerTagExperiment" /* 9286 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import GuildTagUtils from "GuildTagUtils" /* 8265 */;
+import MobileServerTagExperimentDefault from "MobileServerTagExperiment" /* 8617 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;

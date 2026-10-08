@@ -1,15 +1,15 @@
-// Module ID: 8604
-// Function ID: 8605
+// Module ID: 8519
+// Function ID: 8520
 // Name: TwinButtons
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 5609, 5601, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 5382, 5375, 2]
 
-// Module 8604 (TwinButtons)
+// Module 8519 (TwinButtons)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let closure_6 = createStyles.createStyles((arg0) => {
   space = nativeDefault.space;
   return { container, button: { flex: 1 } };
 });
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwinButtons(children) {
   let button;
   let tmp5;
   const obj = require("react");
@@ -78,7 +78,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[1] = tmp2.button;
   cResult[2] = mapped;
   tmp4 = mapped;
-}) : ((children) => {
+}) : (function TwinButtons(children) {
   let button;
   _require = undefined;
   children = children.children;

@@ -1,31 +1,31 @@
-// Module ID: 14715
-// Function ID: 14716
+// Module ID: 14976
+// Function ID: 14977
 // Name: FamilyCenterModalDataTooltip
-// Dependencies: [32, 19, 17, 7062, 21, 5862, 11545, 4837, 13413, 5864, 8160, 4855, 10779, 4896, 587, 558, 576, 4892, 1126, 2521, 11544, 8329, 8331, 8128, 8129, 11549, 5601, 5099, 6017, 10989, 2]
+// Dependencies: [32, 19, 17, 7248, 21, 8174, 11559, 5031, 13713, 8176, 7541, 5049, 11561, 5090, 587, 558, 576, 5086, 1126, 2565, 11558, 7712, 7714, 7506, 7507, 11564, 5375, 5940, 6203, 11213, 2]
 
-// Module 14715 (FamilyCenterModalDataTooltip)
+// Module 14976 (FamilyCenterModalDataTooltip)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import _modDef2521 from "module_2521" /* 2521 */;
-import FriendsIcon from "FriendsIcon" /* 4837 */;
-import ClockIcon from "ClockIcon" /* 4855 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import ChatIcon from "ChatIcon" /* 5862 */;
-import ThreadIcon from "ThreadIcon" /* 5864 */;
-import NavigatorHeader from "NavigatorHeader" /* 6017 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7062 */;
-import CreditCardIcon from "CreditCardIcon" /* 8160 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8329 */;
-import GiftIcon from "GiftIcon" /* 10779 */;
-import Modal2 from "Modal" /* 10989 */;
-import PhoneIcon from "PhoneIcon" /* 11545 */;
-import ServerGridIcon from "ServerGridIcon" /* 13413 */;
+import _modDef2565 from "module_2565" /* 2565 */;
+import FriendsIcon from "FriendsIcon" /* 5031 */;
+import ClockIcon from "ClockIcon" /* 5049 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import NavigatorHeader from "NavigatorHeader" /* 6203 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7248 */;
+import CreditCardIcon from "CreditCardIcon" /* 7541 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7712 */;
+import ChatIcon from "ChatIcon" /* 8174 */;
+import ThreadIcon from "ThreadIcon" /* 8176 */;
+import Modal2 from "Modal" /* 11213 */;
+import PhoneIcon from "PhoneIcon" /* 11559 */;
+import GiftIcon from "GiftIcon" /* 11561 */;
+import ServerGridIcon from "ServerGridIcon" /* 13713 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let obj5;
 let obj7;
 let size;
 let tmp11;
-const ModalActionCreatorsDefault = tmp11(5099);
+const ModalActionCreatorsDefault = tmp11(5940);
 function headerTitle() {
   return null;
 }
@@ -69,7 +69,7 @@ obj4 = { marginBottom: nativeDefault.space.PX_4 };
 obj5 = { tintColor: nativeDefault.colors.TEXT_BRAND };
 let closure_9 = createStyles(obj2);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Row(arg0) {
   let IconComponent;
   let description;
   let header;
@@ -158,7 +158,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.icon;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((arg0) => {
+}) : (function Row(arg0) {
   let IconComponent;
   let description;
   let header;
@@ -186,7 +186,7 @@ const createStyles2 = createStyles.createStyles;
 ({ marginBottom: nativeDefault.space.PX_24 });
 let closure_11 = createStyles2(obj6);
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterModalDataTooltipScreen() {
   let Button;
   let closure_0;
   let intl3;
@@ -208,9 +208,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_11();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
-    const stringResult = intl.string(_modDef2521.n6LOrh);
+    const stringResult = intl.string(_modDef2565.n6LOrh);
     const intl2 = tmp(1126).intl;
-    const stringResult1 = intl2.string(_modDef2521.JNLpDZ);
+    const stringResult1 = intl2.string(_modDef2565.JNLpDZ);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
     tmp5 = stringResult;
@@ -218,7 +218,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     [tmp5, tmp6] = cResult;
   }
-  const tmpResult = tmp(11544);
+  const tmpResult = tmp(11558);
   const ageSpecificText = tmpResult.useAgeSpecificText(tmp5, tmp6);
   const tmp12 = useIsInAdultAgeGroupDefault();
   _require = tmp12;
@@ -249,9 +249,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 const _Symbol = Symbol;
                 if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
                   let obj2 = { children: closure_6(Button, obj3) };
-                  const ModalFooter = tmp(11549).ModalFooter;
+                  const ModalFooter = tmp(11564).ModalFooter;
                   obj3 = { variant: "primary", text: intl3.string(tmp(1126).t["NX+WJN"]), onPress: ModalActionCreatorsDefault.pop };
-                  Button = tmp(5601).Button;
+                  Button = tmp(5375).Button;
                   intl3 = tmp(1126).intl;
                   const tmp32 = closure_6(ModalFooter, obj2);
                   cResult[25] = tmp32;
@@ -295,10 +295,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
   }
-  const tmpResult2 = tmp(8331);
+  const tmpResult2 = tmp(7714);
   const sortedActivityTypeConfigs = tmpResult2.getSortedActivityTypeConfigs();
-  const ModalScreen = tmp(8128).ModalScreen;
-  const ModalContent = tmp(8129).ModalContent;
+  const ModalScreen = tmp(7506).ModalScreen;
+  const ModalContent = tmp(7507).ModalContent;
   const container = tmp4.container;
   if (cResult[12] === ageSpecificText) {
     let tmp20;
@@ -307,13 +307,13 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       tmp20 = cResult[14];
     }
     if (cResult[15] !== tmp12) {
-      class N {
+      class M {
         constructor(arg0) {
           tmp = closure_3(arg0, 2);
           [tmp2, obj] = tmp;
           obj1 = { IconComponent: closure_8[tmp2], header: obj.tooltipHeader(), description: null };
           tmp3 = jsx;
-          tmp4 = f68386;
+          tmp4 = Row;
           tmp5 = closure_0;
           tooltipDescription = obj.tooltipDescription;
           obj1.description = tooltipDescription(tmp5);
@@ -321,16 +321,16 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       cResult[15] = tmp12;
-      cResult[16] = N;
-      tmp22 = N;
+      cResult[16] = M;
+      tmp22 = M;
     } else {
-      class N {
+      class M {
         constructor(arg0) {
           tmp = closure_3(arg0, 2);
           [tmp2, obj] = tmp;
           obj1 = { IconComponent: closure_8[tmp2], header: obj.tooltipHeader(), description: null };
           tmp3 = jsx;
-          tmp4 = f68386;
+          tmp4 = Row;
           tmp5 = closure_0;
           tooltipDescription = obj.tooltipDescription;
           obj1.description = tooltipDescription(tmp5);
@@ -357,12 +357,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp13 = tmp19;
   }
   const obj7 = { style: tmp4.groupHeader, variant: "text-lg/bold", color: "mobile-text-heading-primary", children: ageSpecificText };
-  const tmp21 = closure_6(tmp(4892).Text, obj7);
+  const tmp21 = closure_6(tmp(5086).Text, obj7);
   cResult[12] = ageSpecificText;
   cResult[13] = tmp4.groupHeader;
   cResult[14] = tmp21;
   tmp20 = tmp21;
-}) : (() => {
+}) : (function FamilyCenterModalDataTooltipScreen() {
   let Button;
   let closure_0;
   let intl3;
@@ -374,9 +374,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp2 = require("useAgeSpecificText");
   const useAgeSpecificText = tmp2.useAgeSpecificText;
   const intl = require("intl").intl;
-  const stringResult = intl.string(_modDef2521.n6LOrh);
+  const stringResult = intl.string(_modDef2565.n6LOrh);
   const intl2 = require("intl").intl;
-  const ageSpecificText = useAgeSpecificText(stringResult, intl2.string(_modDef2521.JNLpDZ));
+  const ageSpecificText = useAgeSpecificText(stringResult, intl2.string(_modDef2565.JNLpDZ));
   _require = useIsInAdultAgeGroupDefault();
   obj = require("FamilyCenterUtils");
   const sortedActivityTypeConfigs = obj.getSortedActivityTypeConfigs();
@@ -406,7 +406,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return closure_7(ModalScreen, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterModalDataTooltip() {
   let first;
   let intl;
   let obj3;
@@ -425,7 +425,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { initialRouteName: "DATA_TOOLTIP", screens: first, headerBackTitle: intl.string(intl4.t["13/7kX"]) };
-    const Modal = tmp(10989).Modal;
+    const Modal = tmp(11213).Modal;
     intl = tmp(1126).intl;
     const tmp8 = metroRequire(Modal, obj4);
     cResult[1] = tmp8;
@@ -434,7 +434,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp6 = cResult[1];
   }
   return tmp6;
-}) : (() => {
+}) : (function FamilyCenterModalDataTooltip() {
   let intl;
   const memo = react.useMemo(() => {
     let obj2;

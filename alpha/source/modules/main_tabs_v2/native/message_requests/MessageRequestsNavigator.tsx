@@ -1,19 +1,19 @@
-// Module ID: 17079
-// Function ID: 17080
+// Module ID: 17360
+// Function ID: 17361
 // Name: MessageRequestsNavigator
-// Dependencies: [109, 19, 17, 21, 7568, 4896, 587, 558, 576, 6503, 6997, 1618, 7509, 1126, 10675, 17080, 17099, 17100, 2]
+// Dependencies: [109, 19, 17, 21, 9279, 5090, 587, 558, 576, 6679, 7185, 1630, 9232, 1126, 9588, 17361, 17380, 17381, 2]
 
-// Module 17079 (MessageRequestsNavigator)
+// Module 17360 (MessageRequestsNavigator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import HeaderShared from "HeaderShared" /* 7509 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10675 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import HeaderShared from "HeaderShared" /* 9232 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 9588 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 7568 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import NativeStackView from "NativeStackView" /* 9279 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }
 createStyles = createStyles.createStyles;
 obj3 = { borderBottomWidth: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" };
 let closure_10 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRequestsNavigator() {
   let closure_0;
   let intl;
   let intl2;
@@ -64,8 +64,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     [tmp6, tmp7] = cResult;
   }
   const layoutEffect = react.useLayoutEffect(tmp6, tmp7);
-  ({ left, right } = accessibilityNativeStackOptions(1618)());
-  accessibilityNativeStackOptions(1618)();
+  ({ left, right } = accessibilityNativeStackOptions(1630)());
+  accessibilityNativeStackOptions(1630)();
   if (cResult[2] === left) {
     let tmp11;
     if (cResult[3] === right) {
@@ -136,7 +136,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const Screen = closure_9.Screen;
           const obj3 = { title: intl.string(tmp(1126).t.e7GWjQ) };
           intl = tmp(1126).intl;
-          let merged = Object.assign(tmp9(10675)());
+          let merged = Object.assign(tmp9(9588)());
           tmp19[1] = obj3;
           tmp19[2] = function getComponent() {
             return closure_0(dependencyMap[15]).default;
@@ -175,7 +175,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const Screen2 = closure_9.Screen;
           const obj4 = { title: intl2.string(tmp(1126).t.ulKXHp) };
           intl2 = tmp(1126).intl;
-          const merged1 = Object.assign(tmp9(10675)());
+          const merged1 = Object.assign(tmp9(9588)());
           tmp26[1] = obj4;
           tmp26[2] = function getComponent() {
             return closure_0(dependencyMap[16]).default;
@@ -214,7 +214,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const Screen3 = closure_9.Screen;
           const obj5 = { title: intl3.string(tmp(1126).t.iilwGH) };
           intl3 = tmp(1126).intl;
-          const merged2 = Object.assign(tmp9(10675)());
+          const merged2 = Object.assign(tmp9(9588)());
           tmp33[1] = obj5;
           tmp33[2] = function getComponent() {
             return closure_0(dependencyMap[17]).default;
@@ -313,7 +313,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = right;
   cResult[4] = obj7;
   tmp11 = obj7;
-}) : (() => {
+}) : (function MessageRequestsNavigator() {
   let Navigator;
   let Screen;
   let closure_0;

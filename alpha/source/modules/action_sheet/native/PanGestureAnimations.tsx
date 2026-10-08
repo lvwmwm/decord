@@ -1,12 +1,12 @@
-// Module ID: 12564
-// Function ID: 12565
+// Module ID: 10977
+// Function ID: 10978
 // Name: PanGestureAnimations
-// Dependencies: [1188, 5604, 4897, 558, 576, 4618, 6147, 2]
+// Dependencies: [1200, 5374, 5091, 558, 576, 4810, 6326, 2]
 
-// Module 12564 (PanGestureAnimations)
-import native from "native" /* 1188 */;
-import timing from "timing" /* 4897 */;
-import spring from "spring" /* 5604 */;
+// Module 10977 (PanGestureAnimations)
+import native from "native" /* 1200 */;
+import timing from "timing" /* 5091 */;
+import spring from "spring" /* 5374 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -133,7 +133,7 @@ const __initData3 = { code: "function PanGestureAnimationsTsx9(){const{isGesture
 const __initData4 = { code: "function PanGestureAnimationsTsx10(event_1,success){const{start,translate,snapPositions,velocity,swipeVelocityThreshold,getNearestValue,withPanGestureSpring,withPanGestureTiming,onEnd}=this.__closure;start.set(translate.get());if(snapPositions!=null){var _onEnd;const swipeVelocity=Math.abs(velocity.get())>swipeVelocityThreshold?velocity.get():0;const snapPoint=getNearestValue(snapPositions.get(),translate.get(),swipeVelocity);if(swipeVelocity!==0){translate.set(withPanGestureSpring(snapPoint,velocity.get()));}else{translate.set(withPanGestureTiming(snapPoint));}(_onEnd=onEnd)===null||_onEnd===void 0||_onEnd(event_1,{success:success,destination:snapPoint,startPosition:start.get()});}}" };
 const __initData5 = { code: "function PanGestureAnimationsTsx11(event_0){const{start,vertical,lowerBounds,upperBounds,velocity,translate,onChange}=this.__closure;var _onChange;const{velocityY:velocityY,translationY:translationY,velocityX:velocityX,translationX:translationX}=event_0;let next=start.get()+(vertical?translationY:translationX);if(lowerBounds!=null&&next<lowerBounds){next=lowerBounds;}else if(upperBounds!=null&&next>upperBounds){next=upperBounds;}velocity.set(vertical?velocityY:velocityX);translate.set(next);(_onChange=onChange)===null||_onChange===void 0||_onChange(event_0,{destination:translate.get(),startPosition:start.get()});}" };
 const __initData6 = { code: "function PanGestureAnimationsTsx12(event){const{start,translate,velocity,isGestureInProgress,onStart}=this.__closure;var _onStart;start.set(translate.get());velocity.set(0);if(isGestureInProgress!=null){isGestureInProgress.set(true);}(_onStart=onStart)===null||_onStart===void 0||_onStart(event,{destination:start.get(),startPosition:start.get()});}" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((lowerBounds) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePanGesture(lowerBounds) {
   let closure_9;
   let isGestureInProgress;
   let swipeVelocityThreshold;
@@ -287,7 +287,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((lowerBounds) => {
   const onChangeResult = onStartResult.onChange(fn2);
   const onEndResult = onChangeResult.onEnd(fn3);
   return onEndResult.onFinalize(tmp7);
-}) : ((lowerBounds) => {
+}) : (function usePanGesture(lowerBounds) {
   lowerBounds = lowerBounds.lowerBounds;
   const upperBounds = lowerBounds.upperBounds;
   const snapPositions = lowerBounds.snapPositions;

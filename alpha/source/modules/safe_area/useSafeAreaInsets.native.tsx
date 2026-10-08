@@ -1,17 +1,17 @@
-// Module ID: 1618
-// Function ID: 1619
+// Module ID: 1630
+// Function ID: 1631
 // Name: useSafeAreaInsets
-// Dependencies: [1487, 1619, 558, 576, 2]
+// Dependencies: [1499, 1631, 558, 576, 2]
 // Exports: getSafeAreaInsets
 
-// Module 1618 (useSafeAreaInsets)
+// Module 1630 (useSafeAreaInsets)
 import react from "react" /* 576 */;
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1487 */;
-import SafeAreaStoreDefault from "SafeAreaStore" /* 1619 */;
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1499 */;
+import SafeAreaStoreDefault from "SafeAreaStore" /* 1631 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafeAreaInsets() {
   let tmp4;
   const obj = react;
   const cResult = obj.c(2);
@@ -28,7 +28,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = cResult[1];
   }
   return SafeAreaStoreDefault(tmp4);
-}) : (() => {
+}) : (function useSafeAreaInsets() {
   const obj = AppEntryKeyContext;
   let closure_0 = obj.useAppEntryKey();
   return SafeAreaStoreDefault((arg0) => arg0.byAppEntry[closure_0].safeAreaInsets);

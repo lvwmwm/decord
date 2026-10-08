@@ -1,36 +1,36 @@
-// Module ID: 9869
-// Function ID: 9870
+// Module ID: 9320
+// Function ID: 9321
 // Name: SuperReactionUpsellActionSheet
-// Dependencies: [19, 17, 1377, 1085, 21, 2036, 9870, 9871, 9872, 9873, 9874, 9875, 9876, 4896, 587, 558, 576, 6664, 504, 4534, 8943, 8896, 12, 9877, 7434, 1126, 7423, 1188, 4860, 9878, 2]
+// Dependencies: [19, 17, 1389, 1085, 21, 2048, 9321, 9322, 9323, 9324, 9325, 9326, 9327, 5090, 587, 558, 576, 6841, 504, 4726, 9328, 9329, 12, 9357, 7909, 1126, 7898, 1200, 5054, 9358, 2]
 
-// Module 9869 (SuperReactionUpsellActionSheet)
+// Module 9320 (SuperReactionUpsellActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1188 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import _mod7434 from "module_7434" /* 7434 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8896 */;
-import openPremiumModalDefault from "openPremiumModal" /* 8943 */;
-import AssetRegistry from "AssetRegistry" /* 9870 */;
-import AssetRegistry2 from "AssetRegistry" /* 9871 */;
-import AssetRegistry3 from "AssetRegistry" /* 9872 */;
-import AssetRegistry4 from "AssetRegistry" /* 9873 */;
-import AssetRegistry5 from "AssetRegistry" /* 9874 */;
-import AssetRegistry6 from "AssetRegistry" /* 9875 */;
-import AssetRegistry7 from "AssetRegistry" /* 9876 */;
-import SuperReactionLocalImageAnimationDefault from "SuperReactionLocalImageAnimation" /* 9877 */;
+import native from "native" /* 1200 */;
+import dismissible_content from "dismissible_content" /* 2048 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import _mod7909 from "module_7909" /* 7909 */;
+import AssetRegistry from "AssetRegistry" /* 9321 */;
+import AssetRegistry2 from "AssetRegistry" /* 9322 */;
+import AssetRegistry3 from "AssetRegistry" /* 9323 */;
+import AssetRegistry4 from "AssetRegistry" /* 9324 */;
+import AssetRegistry5 from "AssetRegistry" /* 9325 */;
+import AssetRegistry6 from "AssetRegistry" /* 9326 */;
+import AssetRegistry7 from "AssetRegistry" /* 9327 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9328 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9329 */;
+import SuperReactionLocalImageAnimationDefault from "SuperReactionLocalImageAnimation" /* 9357 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1377 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import UserStore from "UserStore" /* 1389 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, onDismiss;
+let _require;
 
 let StyleSheet;
 let closure_4;
@@ -49,7 +49,7 @@ createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 size = { tintColor: nativeDefault.colors.WHITE, width: 32, height: 32, marginVertical: -8, marginRight: -4 };
 let closure_10 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDismiss) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuperReactionCoachmarkActionSheet(onDismiss) {
   let analyticsLocation;
   let analyticsLocations;
   let closure_3;
@@ -75,14 +75,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDismiss) => {
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     items = [UserStore];
-    class I {
+    class C {
       constructor() {
         return currentUser.getCurrentUser();
       }
     }
     cResult[1] = items;
-    cResult[2] = I;
-    tmp9 = I;
+    cResult[2] = C;
+    tmp9 = C;
     tmp8 = items;
   } else {
     tmp8 = cResult[1];
@@ -93,19 +93,19 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDismiss) => {
   const tmpResult2 = tmp(analyticsLocation[19]);
   const isPremiumResult = tmpResult2.isPremium(stateFromStores);
   if (cResult[3] !== analyticsLocations) {
-    const fn = function b() {
+    function handlePremiumUpsellPress() {
       const obj = { analyticsLocation, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_2_LEADING };
       const tmp = openPremiumModalDefault;
       tmp(obj);
-    };
+    }
     cResult[3] = analyticsLocations;
-    class I {
+    class C {
       constructor() {
         return currentUser.getCurrentUser();
       }
     }
-    cResult[4] = fn;
-    tmp13 = fn;
+    cResult[4] = handlePremiumUpsellPress;
+    tmp13 = handlePremiumUpsellPress;
   } else {
     tmp13 = cResult[4];
   }
@@ -113,7 +113,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDismiss) => {
   const tmp5Result = analyticsLocations(analyticsLocation[22]);
   const tmp14 = items[tmp5Result.random(tmp5Result, 0, items.length - 1)];
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class I {
+    class C {
       constructor() {
         return currentUser.getCurrentUser();
       }
@@ -125,7 +125,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDismiss) => {
     tmp15 = cResult[5];
   }
   if (cResult[6] !== tmp4.fill) {
-    class I {
+    class C {
       constructor() {
         return currentUser.getCurrentUser();
       }
@@ -145,7 +145,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDismiss) => {
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       const intl = tmp(tmp2[25]).intl;
       const stringResult = intl.string(tmp(analyticsLocation[25]).t.Wfl5zp);
-      class I {
+      class C {
         constructor() {
           return currentUser.getCurrentUser();
         }
@@ -155,7 +155,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDismiss) => {
     } else {
       tmp23 = cResult[8];
     }
-    class I {
+    class C {
       constructor() {
         return currentUser.getCurrentUser();
       }
@@ -164,7 +164,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDismiss) => {
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
       const intl2 = tmp(tmp2[25]).intl;
       const stringResult1 = intl2.string(tmp(analyticsLocation[25]).t.eikz43);
-      class I {
+      class C {
         constructor() {
           return currentUser.getCurrentUser();
         }
@@ -179,7 +179,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDismiss) => {
     if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
       const intl3 = tmp(tmp2[25]).intl;
       const stringResult2 = intl3.string(tmp(analyticsLocation[25]).t.sEAnVH);
-      class I {
+      class C {
         constructor() {
           return currentUser.getCurrentUser();
         }
@@ -196,7 +196,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDismiss) => {
         }
       }
       cResult[13] = tmp4.nitroIcon;
-      class I {
+      class C {
         constructor() {
           return currentUser.getCurrentUser();
         }
@@ -218,7 +218,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDismiss) => {
         }
       }
       cResult[15] = tmp13;
-      class I {
+      class C {
         constructor() {
           return currentUser.getCurrentUser();
         }
@@ -243,7 +243,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDismiss) => {
         }
       }
       const stringResult3 = obj8.string(tmp(analyticsLocation[25]).t.TulDPl);
-      class I {
+      class C {
         constructor() {
           return currentUser.getCurrentUser();
         }
@@ -276,7 +276,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDismiss) => {
     cResult[23] = jsx(analyticsLocations(analyticsLocation[29]), { title: tmp23, backdropProps: tmp25, description: tmp26, descriptionStyle: description, dismissibleContent, primaryButtonText: tmp28, primaryButtonIcon: tmp30, onPrimaryButtonPress: tmp31, secondaryButtonText: tmp32, onDismiss });
     const tmp37 = jsx(analyticsLocations(analyticsLocation[29]), { title: tmp23, backdropProps: tmp25, description: tmp26, descriptionStyle: description, dismissibleContent, primaryButtonText: tmp28, primaryButtonIcon: tmp30, onPrimaryButtonPress: tmp31, secondaryButtonText: tmp32, onDismiss });
   }
-}) : ((onDismiss) => {
+}) : (function SuperReactionCoachmarkActionSheet(onDismiss) {
   let currentUser;
   let nitroIcon;
   let analyticsLocations;

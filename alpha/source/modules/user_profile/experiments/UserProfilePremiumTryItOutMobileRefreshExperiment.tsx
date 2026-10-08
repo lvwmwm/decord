@@ -1,11 +1,11 @@
-// Module ID: 14449
-// Function ID: 14450
+// Module ID: 14677
+// Function ID: 14678
 // Name: UserProfilePremiumTryItOutMobileRefreshExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1452, 558, 576, 2]
 
-// Module 14449 (UserProfilePremiumTryItOutMobileRefreshExperiment)
+// Module 14677 (UserProfilePremiumTryItOutMobileRefreshExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ let obj = { name: "2026-09-user-profile-premium-try-it-out-mobile-refresh", kind
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
 let closure_2 = ApexExperiment.createApexExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsTryItOutMobileRefreshEnabled(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -27,7 +27,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useIsTryItOutMobileRefreshEnabled(location) {
   const obj = { location };
   return closure_2.useConfig(obj).enabled;
 });

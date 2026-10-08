@@ -1,52 +1,13 @@
 // Module ID: 6423
 // Function ID: 6424
-// Dependencies: [19, 21, 6124, 6147]
+// Dependencies: [26, 65]
 
 // Module 6423
-import Fragment from "Fragment" /* 21 */;
-import _mod6124 from "module_6124" /* 6124 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6147 */;
-import react_mod from "react" /* 19 */;
+import _mod26 from "module_26" /* 26 */;
+import module_65 from "module_65" /* 65 */;
 
-let onFocus;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNGestureHandlerButton", validAttributes: { exclusive: true, foreground: true, borderless: true, enabled: true, rippleColor: _mod26.colorAttribute, rippleRadius: true, touchSoundDisabled: true, pointerEvents: true, tapAnimationInDuration: true, tapAnimationOutDuration: true, longPressDuration: true, longPressAnimationOutDuration: true, needsOffscreenAlphaCompositing: true, activeOpacity: true, activeScale: true, activeUnderlayOpacity: true, hoverOpacity: true, hoverScale: true, hoverUnderlayOpacity: true, hoverAnimationInDuration: true, hoverAnimationOutDuration: true, defaultOpacity: true, defaultScale: true, defaultUnderlayOpacity: true, underlayColor: _mod26.colorAttribute, borderWidth: true, borderColor: _mod26.colorAttribute, borderStyle: true, overflow: true, borderLeftWidth: true, borderRightWidth: true, borderTopWidth: true, borderBottomWidth: true, borderStartWidth: true, borderEndWidth: true, borderLeftColor: _mod26.colorAttribute, borderRightColor: _mod26.colorAttribute, borderTopColor: _mod26.colorAttribute, borderBottomColor: _mod26.colorAttribute, borderStartColor: _mod26.colorAttribute, borderEndColor: _mod26.colorAttribute, borderBlockColor: _mod26.colorAttribute, borderBlockEndColor: _mod26.colorAttribute, borderBlockStartColor: _mod26.colorAttribute, borderRadius: true, borderTopLeftRadius: true, borderTopRightRadius: true, borderBottomLeftRadius: true, borderBottomRightRadius: true, borderTopStartRadius: true, borderTopEndRadius: true, borderBottomStartRadius: true, borderBottomEndRadius: true, borderEndEndRadius: true, borderEndStartRadius: true, borderStartEndRadius: true, borderStartStartRadius: true } };
+({ exclusive: true, foreground: true, borderless: true, enabled: true, rippleColor: _mod26.colorAttribute, rippleRadius: true, touchSoundDisabled: true, pointerEvents: true, tapAnimationInDuration: true, tapAnimationOutDuration: true, longPressDuration: true, longPressAnimationOutDuration: true, needsOffscreenAlphaCompositing: true, activeOpacity: true, activeScale: true, activeUnderlayOpacity: true, hoverOpacity: true, hoverScale: true, hoverUnderlayOpacity: true, hoverAnimationInDuration: true, hoverAnimationOutDuration: true, defaultOpacity: true, defaultScale: true, defaultUnderlayOpacity: true, underlayColor: _mod26.colorAttribute, borderWidth: true, borderColor: _mod26.colorAttribute, borderStyle: true, overflow: true, borderLeftWidth: true, borderRightWidth: true, borderTopWidth: true, borderBottomWidth: true, borderStartWidth: true, borderEndWidth: true, borderLeftColor: _mod26.colorAttribute, borderRightColor: _mod26.colorAttribute, borderTopColor: _mod26.colorAttribute, borderBottomColor: _mod26.colorAttribute, borderStartColor: _mod26.colorAttribute, borderEndColor: _mod26.colorAttribute, borderBlockColor: _mod26.colorAttribute, borderBlockEndColor: _mod26.colorAttribute, borderBlockStartColor: _mod26.colorAttribute, borderRadius: true, borderTopLeftRadius: true, borderTopRightRadius: true, borderBottomLeftRadius: true, borderBottomRightRadius: true, borderTopStartRadius: true, borderTopEndRadius: true, borderBottomStartRadius: true, borderBottomEndRadius: true, borderEndEndRadius: true, borderEndStartRadius: true, borderStartEndRadius: true, borderStartStartRadius: true });
 
-let c2;
-let c3;
-let forwardRef;
-let memo;
-let react = react_mod;
-({ useCallback: c2, useEffect: c3 } = react);
-({ memo, forwardRef } = react);
-react = react_mod;
-const jsx = Fragment.jsx;
-const memoResult = memo(forwardRef((onFocus, ref) => {
-  onFocus = onFocus.onFocus;
-  const onBlur = onFocus.onBlur;
-  const merged = Object.assign(onFocus, Object.assign({ onFocus: 0, onBlur: 0 }));
-  const obj = _mod6124;
-  const shouldHandleKeyboardEvents = obj.useBottomSheetInternal().shouldHandleKeyboardEvents;
-  const items = [onFocus, shouldHandleKeyboardEvents];
-  const items1 = [onBlur, shouldHandleKeyboardEvents];
-  const items2 = [shouldHandleKeyboardEvents];
-  const tmp2 = React2((arg0) => {
-    shouldHandleKeyboardEvents.value = true;
-    if (onFocus) {
-      tmp(arg0);
-    }
-  }, items);
-  const tmp3 = React2((arg0) => {
-    shouldHandleKeyboardEvents.value = false;
-    if (onBlur) {
-      tmp(arg0);
-    }
-  }, items1);
-  _false(() => () => {
-    shouldHandleKeyboardEvents.value = false;
-  }, items2);
-  const TextInput = LegacyBaseButton.TextInput;
-  const merged1 = Object.assign(merged);
-  return <TextInput ref={arg1} onFocus={tmp2} onBlur={tmp3} />;
-}));
-memoResult.displayName = "BottomSheetTextInput";
-
-export default memoResult;
+export default module_65.get("RNGestureHandlerButton", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

@@ -1,12 +1,12 @@
-// Module ID: 6771
-// Function ID: 6772
+// Module ID: 6947
+// Function ID: 6948
 // Name: GuildProductsEligibility
-// Dependencies: [2074, 1085, 558, 576, 504, 2]
+// Dependencies: [2086, 1085, 558, 576, 504, 2]
 // Exports: isGuildEligibleForGuildProducts
 
-// Module 6771 (GuildProductsEligibility)
+// Module 6947 (GuildProductsEligibility)
 import Constants from "Constants" /* 1085 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require;
 
 const GuildFeatures = Constants.GuildFeatures;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildEligibleForGuildProducts(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -63,7 +63,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useGuildEligibleForGuildProducts(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildStore];

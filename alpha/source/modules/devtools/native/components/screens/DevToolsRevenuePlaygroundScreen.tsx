@@ -1,36 +1,36 @@
-// Module ID: 15578
-// Function ID: 15579
+// Module ID: 15858
+// Function ID: 15859
 // Name: DevToolsRevenuePlaygroundScreen
-// Dependencies: [5, 32, 19, 17, 7759, 7156, 1231, 2051, 2103, 1377, 4895, 1379, 21, 584, 573, 1282, 4574, 6000, 6007, 6081, 6701, 6978, 1188, 587, 10485, 4896, 6969, 4860, 15579, 1987, 558, 576, 6705, 15584, 10796, 11414, 5099, 15585, 15588, 15592, 15594, 15597, 2]
+// Dependencies: [5, 32, 19, 17, 8080, 7336, 1243, 2063, 2115, 1389, 5089, 1391, 21, 584, 573, 1294, 4766, 6184, 6193, 6267, 6878, 7167, 1200, 587, 10082, 5090, 7158, 5054, 15859, 1999, 558, 576, 6882, 15864, 12748, 11397, 5940, 15865, 15868, 15872, 15874, 15877, 2]
 
-// Module 15578 (DevToolsRevenuePlaygroundScreen)
+// Module 15858 (DevToolsRevenuePlaygroundScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import DevSettingsStore2 from "DevSettingsStore" /* 4895 */;
-import TableRow6 from "TableRow" /* 6000 */;
-import TableRowArrow from "TableRowArrow" /* 6007 */;
-import TableRowGroup4 from "TableRowGroup" /* 6081 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6701 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 6705 */;
-import IAPUtils from "IAPUtils" /* 10796 */;
-import BundleUpdaterDefault from "BundleUpdater" /* 11414 */;
-import DevSettingsActions from "DevSettingsActions" /* 15584 */;
+import native from "native" /* 1200 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import DevSettingsStore2 from "DevSettingsStore" /* 5089 */;
+import TableRow6 from "TableRow" /* 6184 */;
+import TableRowArrow from "TableRowArrow" /* 6193 */;
+import TableRowGroup4 from "TableRowGroup" /* 6267 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6878 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 6882 */;
+import BundleUpdaterDefault from "BundleUpdater" /* 11397 */;
+import IAPUtils from "IAPUtils" /* 12748 */;
+import DevSettingsActions from "DevSettingsActions" /* 15864 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 7759 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7156 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import UserStore from "UserStore" /* 1377 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8080 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7336 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import UserStore from "UserStore" /* 1389 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -478,7 +478,7 @@ function FriendAnniversary() {
     label: "Number of anniversaries",
     subLabel: "Current: " + str,
     trailing: closure_17(tmp(tmp2[18]).TableRowArrow, {}),
-    onPress() {
+    onPress: function openCountPicker() {
       let obj = Sheet_showSimpleActionSheet;
       let obj2 = {
         key: "dev-tools-friend-anniversary-count",
@@ -512,7 +512,7 @@ function FriendAnniversary() {
   const obj7 = {
     label: "Trigger Mobile FA message in current DM",
     subLabel: "Sends an ephemeral GIFTING_PROMPT into the selected channel",
-    onPress() {
+    onPress: function triggerCardInCurrentDM() {
       const channelId = first1.getChannelId();
       if (null != channelId) {
         channel = channel.getChannel(channelId);
@@ -593,7 +593,7 @@ function FriendAnniversary() {
     label: "Reconcile now",
     subLabel: "Fetch + merge server dismissals into the local store",
     disabled: tmp11,
-    onPress() {
+    onPress: function handleReconcileNow() {
       const tmp = channel(() => {
         let num = stateFromStores3;
         const fetchAndReconcileGiftIntentDismissals = require("PremiumGiftingIntentActionCreators").fetchAndReconcileGiftIntentDismissals;
@@ -612,7 +612,7 @@ function FriendAnniversary() {
     subLabel: "POST a server dismissal for a generated friend",
     trailing: closure_17(tmp(tmp2[18]).TableRowArrow, {}),
     disabled: tmp11 || recipientUserId || 0 === fromResult.length,
-    onPress() {
+    onPress: function openSeedPicker() {
       let intent_type;
       let obj = Sheet_showSimpleActionSheet;
       const obj2 = {
@@ -658,7 +658,7 @@ function FriendAnniversary() {
     label: "Clear all server dismissals (staff)",
     subLabel: "DELETE every server dismissal for this user",
     disabled: tmp11,
-    onPress() {
+    onPress: function handleClearAllServerDismissals() {
       channel(() => {
         const HTTP = closure_1_0(stateFromStores2[15]).HTTP;
         const obj = { url: "" + closure_1_21 + "/" + closure_1_22, rejectWithError: true };
@@ -671,7 +671,7 @@ function FriendAnniversary() {
     variant: "danger",
     label: "Reset local message cooldown",
     subLabel: "Clears messageGiftIntentLastShownMap on this device",
-    onPress() {
+    onPress: function handleResetLocalCooldown() {
       const obj = stateFromStores1(stateFromStores2[13]);
       obj.dispatch({ type: "DEV_TOOLS_GIFT_MESSAGE_COOLDOWN_RESET" });
       const obj2 = stateFromStores1(stateFromStores2[16]);
@@ -689,10 +689,10 @@ function TrialOfferSheetExample() {
   }
   const tmp = premiumTrialOffer;
   const tmp2 = dependencyMap;
-  let obj = premiumTrialOffer(6969);
+  let obj = premiumTrialOffer(7158);
   premiumTrialOffer = obj.usePremiumTrialOffer();
-  const TableRowGroup = premiumTrialOffer(6081).TableRowGroup;
-  const TableRow = premiumTrialOffer(6000).TableRow;
+  const TableRowGroup = premiumTrialOffer(6267).TableRowGroup;
+  const TableRow = premiumTrialOffer(6184).TableRow;
   let obj2 = {
     label: "Trial Offer Nitro Basic",
     subLabel: str2,
@@ -701,12 +701,12 @@ function TrialOfferSheetExample() {
       if (null != premiumTrialOffer) {
         const obj2 = { fallbackPremiumType: tmp, userTrialOffer: tmp2, markAsDismissed };
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequire(15579, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        obj.openLazy(asyncRequire(15859, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };
   items = [closure_17(TableRow, obj2), ];
-  const TableRow2 = tmp(6000).TableRow;
+  const TableRow2 = tmp(6184).TableRow;
   const obj3 = { title: "Trial Offers", hasIcons: false, children: items };
   const obj4 = {
     label: "Trial Offer Nitro",
@@ -716,7 +716,7 @@ function TrialOfferSheetExample() {
       if (null != premiumTrialOffer) {
         const obj2 = { fallbackPremiumType: tmp, userTrialOffer: tmp2, markAsDismissed };
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequire(15579, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        obj.openLazy(asyncRequire(15859, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };
@@ -823,7 +823,7 @@ createStyles = createStyles.createStyles;
 obj3 = { padding: nativeDefault.space.PX_16 };
 let closure_25 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumToggles() {
   let tmp11;
   let tmp4;
   let tmp5;
@@ -890,7 +890,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp11 = cResult[7];
   }
   return tmp11;
-}) : (() => {
+}) : (function PremiumToggles() {
   let obj = useStateFromStores;
   items = [DevSettingsStore];
   const stateFromStores = obj.useStateFromStores(items, () => {
@@ -924,7 +924,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return closure_17(TableRowGroup, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForceMockIAP() {
   let obj3;
   let tmp11;
   let tmp12;
@@ -969,9 +969,9 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp11 = cResult[3];
   }
   if (cResult[4] !== (tmp8 || stateFromStores)) {
-    const TableRowGroup = tmp(6081).TableRowGroup;
+    const TableRowGroup = tmp(6267).TableRowGroup;
     let str = "Replaces StoreKit with hardcoded fixture data. App will restart when toggled.";
-    const TableSwitchRow = tmp(6705).TableSwitchRow;
+    const TableSwitchRow = tmp(6882).TableSwitchRow;
     if (tmp8) {
       str = "Forced on - the current device can't fetch real StoreKit products.";
     }
@@ -985,7 +985,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp12 = cResult[5];
   }
   return tmp12;
-}) : (() => {
+}) : (function ForceMockIAP() {
   let tmp4;
   let obj = useStateFromStores;
   items = [DevSettingsStore];
@@ -1016,7 +1016,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return closure_17(TableRowGroup, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsRevenuePlaygroundScreen() {
   let tmp10;
   let tmp11;
   let tmp12;
@@ -1040,35 +1040,35 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const tmp24 = closure_17(TrialOfferSheetExample, {});
     const obj2 = { size: nativeDefault.space.PX_16 };
-    const Spacer = tmp(1188).Spacer;
+    const Spacer = tmp(1200).Spacer;
     const tmp26 = closure_17(Spacer, obj2);
     const tmp28 = closure_17(closure_27, {});
     const obj3 = { size: nativeDefault.space.PX_16 };
-    const Spacer2 = tmp(1188).Spacer;
+    const Spacer2 = tmp(1200).Spacer;
     const tmp29 = closure_17(Spacer2, obj3);
     const tmp31 = closure_17(closure_28, {});
     const obj4 = { size: nativeDefault.space.PX_16 };
-    const Spacer3 = tmp(1188).Spacer;
+    const Spacer3 = tmp(1200).Spacer;
     const tmp32 = closure_17(Spacer3, obj4);
     const tmp34 = closure_17(PaymentFlowTest, {});
     const obj5 = { size: nativeDefault.space.PX_16 };
-    const Spacer4 = tmp(1188).Spacer;
+    const Spacer4 = tmp(1200).Spacer;
     const tmp35 = closure_17(Spacer4, obj5);
     const tmp37 = closure_17(Orbs, {});
     const obj6 = { size: nativeDefault.space.PX_16 };
-    const Spacer5 = tmp(1188).Spacer;
+    const Spacer5 = tmp(1200).Spacer;
     const tmp38 = closure_17(Spacer5, obj6);
     const tmp40 = closure_17(RevenueSmokeTests, {});
     const obj7 = { size: nativeDefault.space.PX_16 };
-    const Spacer6 = tmp(1188).Spacer;
+    const Spacer6 = tmp(1200).Spacer;
     const tmp41 = closure_17(Spacer6, obj7);
     const tmp43 = closure_17(GuildPowerups, {});
     const obj8 = { size: nativeDefault.space.PX_16 };
-    const Spacer7 = tmp(1188).Spacer;
+    const Spacer7 = tmp(1200).Spacer;
     const tmp44 = closure_17(Spacer7, obj8);
     const tmp46 = closure_17(GuildTagBadges, {});
     const obj9 = { size: nativeDefault.space.PX_16 };
-    const Spacer8 = tmp(1188).Spacer;
+    const Spacer8 = tmp(1200).Spacer;
     const tmp47 = closure_17(Spacer8, obj9);
     const tmp49 = closure_17(FriendAnniversary, {});
     cResult[0] = tmp24;
@@ -1117,12 +1117,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const obj10 = { style: tmp4.container, contentContainerStyle: tmp4.scrollContainer, children: items };
   items = [tmp5, tmp6, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20, tmp21, tmp7, tmp8, tmp9, tmp10, tmp11, tmp12, tmp13];
-  const tmp51 = authStore4(ScrollView, obj10);
+  const tmp51 = authStore5(ScrollView, obj10);
   cResult[17] = tmp4.container;
   cResult[18] = tmp4.scrollContainer;
   cResult[19] = tmp51;
   tmp50 = tmp51;
-}) : (() => {
+}) : (function DevToolsRevenuePlaygroundScreen() {
   const tmp = closure_25();
   const obj = { style: tmp.container, contentContainerStyle: tmp.scrollContainer, children: items };
   items = [closure_17(TrialOfferSheetExample, {}), , , , , , , , , , , , , , , , ];
@@ -1158,7 +1158,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const Spacer8 = native.Spacer;
   items[15] = closure_17(Spacer8, obj9);
   items[16] = closure_17(FriendAnniversary, {});
-  return authStore4(ScrollView, obj);
+  return authStore5(ScrollView, obj);
 });
 let result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsRevenuePlaygroundScreen.tsx");
 

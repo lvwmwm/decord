@@ -1,26 +1,26 @@
-// Module ID: 17441
-// Function ID: 17442
+// Module ID: 17723
+// Function ID: 17724
 // Name: ParentalConsentWarningBanner
-// Dependencies: [19, 17, 7062, 1085, 21, 587, 4896, 558, 576, 1618, 14690, 14689, 17442, 9620, 4586, 7076, 1252, 7063, 6895, 4892, 5612, 1126, 2521, 2]
+// Dependencies: [19, 17, 7248, 1085, 21, 587, 5090, 558, 576, 1630, 14951, 14950, 17724, 10813, 4778, 7262, 1264, 7249, 7084, 5086, 5387, 1126, 2565, 2]
 
-// Module 17441 (ParentalConsentWarningBanner)
+// Module 17723 (ParentalConsentWarningBanner)
 import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import openUserSettings from "openUserSettings" /* 6895 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7062 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7063 */;
-import _modDef7076 from "module_7076" /* 7076 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import openUserSettings from "openUserSettings" /* 7084 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7248 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7249 */;
+import _modDef7262 from "module_7262" /* 7262 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, children, obj1, openUserSettingsResult, trackResult;
+let _require, obj1, openUserSettingsResult, trackResult;
 
 let StyleSheet;
 let c10;
@@ -48,7 +48,7 @@ obj2 = { flexDirection: "row", alignItems: "center", justifyContent: "center", p
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj3 = { paddingRight: nativeDefault.space.PX_8 };
 let closure_16 = createStyles(obj);
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParentalConsentWarningBanner(children) {
   let Text;
   let daysRemaining;
   let formatResult;
@@ -62,7 +62,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   children = children.children;
   const tmp4 = closure_16();
   _require = tmp4;
-  const tmp6 = daysRemaining(1618)();
+  const tmp6 = daysRemaining(1630)();
   let obj2 = require("useParentalConsentWarning");
   const parentalConsentWarning = obj2.useParentalConsentWarning();
   let obj3 = require("useIsParentalConsentBannerActive");
@@ -74,7 +74,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   const obj6 = require("useToken");
   const token = obj6.useToken(daysRemaining(587).colors.BACKGROUND_FEEDBACK_WARNING);
   if (cResult[0] !== token) {
-    const obj7 = daysRemaining(7076)(token);
+    const obj7 = daysRemaining(7262)(token);
     const setAlphaResult = obj7.setAlpha(0);
     const toRgbStringResult = setAlphaResult.toRgbString();
     cResult[0] = token;
@@ -128,16 +128,16 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
       }
     }
     if (cResult[7] !== tmp4.link) {
-      class H {
+      class W {
         constructor(arg0, arg1) {
           obj = { variant: "text-sm/medium", color: "text-strong", style: closure_0.link, children };
           return jsx(closure_0(closure_2[19]).Text, obj, arg1);
         }
       }
       cResult[7] = tmp4.link;
-      cResult[8] = H;
+      cResult[8] = W;
     } else {
-      class H {
+      class W {
         constructor(arg0, arg1) {
           obj = { variant: "text-sm/medium", color: "text-strong", style: closure_0.link, children };
           return jsx(closure_0(closure_2[19]).Text, obj, arg1);
@@ -145,7 +145,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
       }
     }
     if (isOnMainSurface && isParentalConsentBannerActive && !isVisible && null != daysRemaining && daysRemaining >= 0) {
-      class H {
+      class W {
         constructor(arg0, arg1) {
           obj = { variant: "text-sm/medium", color: "text-strong", style: closure_0.link, children };
           return jsx(closure_0(closure_2[19]).Text, obj, arg1);
@@ -153,7 +153,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
       }
     }
     if (cResult[9] !== 0) {
-      class H {
+      class W {
         constructor(arg0, arg1) {
           obj = { variant: "text-sm/medium", color: "text-strong", style: closure_0.link, children };
           return jsx(closure_0(closure_2[19]).Text, obj, arg1);
@@ -165,7 +165,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
       cResult[9] = 0;
       cResult[10] = items;
     } else {
-      class H {
+      class W {
         constructor(arg0, arg1) {
           obj = { variant: "text-sm/medium", color: "text-strong", style: closure_0.link, children };
           return jsx(closure_0(closure_2[19]).Text, obj, arg1);
@@ -173,14 +173,14 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
       }
     }
     if (cResult[11] === children) {
-      class H {
+      class W {
         constructor(arg0, arg1) {
           obj = { variant: "text-sm/medium", color: "text-strong", style: closure_0.link, children };
           return jsx(closure_0(closure_2[19]).Text, obj, arg1);
         }
       }
       if (cResult[14] === tmp20) {
-        class H {
+        class W {
           constructor(arg0, arg1) {
             obj = { variant: "text-sm/medium", color: "text-strong", style: closure_0.link, children };
             return jsx(closure_0(closure_2[19]).Text, obj, arg1);
@@ -189,14 +189,14 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
       }
       let tmp28Result = null;
       if (isOnMainSurface && isParentalConsentBannerActive && !isVisible && null != daysRemaining && daysRemaining >= 0) {
-        class H {
+        class W {
           constructor(arg0, arg1) {
             obj = { variant: "text-sm/medium", color: "text-strong", style: closure_0.link, children };
             return jsx(closure_0(closure_2[19]).Text, obj, arg1);
           }
         }
         if (null != daysRemaining) {
-          class H {
+          class W {
             constructor(arg0, arg1) {
               obj = { variant: "text-sm/medium", color: "text-strong", style: closure_0.link, children };
               return jsx(closure_0(closure_2[19]).Text, obj, arg1);
@@ -208,35 +208,35 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
           tmp30[0] = items1;
           const obj10 = { pointerEvents: "none", style: StyleSheet.absoluteFill, colors: tmp13, locations, start: null, end: null };
           ({ START: obj12.start, END: obj12.end } = closure_10);
-          const items2 = [closure_11(daysRemaining(5612), obj10), ];
-          const obj11 = { accessibilityRole: "button", accessibilityHint: intl.string(daysRemaining(2521).O2HKdA), onPress: tmp19, style: items3, children: closure_11(Text, obj14) };
+          const items2 = [closure_11(daysRemaining(5387), obj10), ];
+          const obj11 = { accessibilityRole: "button", accessibilityHint: intl.string(daysRemaining(2565).O2HKdA), onPress: tmp19, style: items3, children: closure_11(Text, obj14) };
           intl = tmp(1126).intl;
           items3 = [tmp4.pressable, ];
           const obj13 = { paddingTop: tmp6.top + 8 };
           items3[1] = obj13;
           obj14 = { variant: "text-sm/medium", color: "text-strong", lineClamp: 1, style: tmp4.label, children: formatResult };
-          Text = tmp(4892).Text;
+          Text = tmp(5086).Text;
           const tmp28 = closure_12;
           const tmp29 = View;
           const tmp35 = closure_4;
           if (0 === daysRemaining) {
-            class H {
+            class W {
               constructor(arg0, arg1) {
                 obj = { variant: "text-sm/medium", color: "text-strong", style: closure_0.link, children };
                 return jsx(closure_0(closure_2[19]).Text, obj, arg1);
               }
             }
             const obj15 = { connectHook: tmp20 };
-            formatResult = obj18.format(tmp5(2521).Gfqlpa, obj15);
+            formatResult = obj18.format(tmp5(2565).Gfqlpa, obj15);
           } else {
-            class H {
+            class W {
               constructor(arg0, arg1) {
                 obj = { variant: "text-sm/medium", color: "text-strong", style: closure_0.link, children };
                 return jsx(closure_0(closure_2[19]).Text, obj, arg1);
               }
             }
             const obj17 = { count: daysRemaining, connectHook: tmp20 };
-            formatResult = obj16.format(tmp5(2521).ZBK5mM, obj17);
+            formatResult = obj16.format(tmp5(2565).ZBK5mM, obj17);
           }
           items2[1] = closure_11(tmp35, obj11);
           tmp30[2] = items2;
@@ -266,7 +266,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[3] = token;
   cResult[4] = items4;
   tmp13 = items4;
-}) : ((children) => {
+}) : (function ParentalConsentWarningBanner(children) {
   let Text;
   let formatResult;
   let intl;
@@ -295,7 +295,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   daysRemaining = undefined;
   const memo = react.useMemo(() => {
     const items = [token, ];
-    const obj = _modDef7076(token);
+    const obj = _modDef7262(token);
     const setAlphaResult = obj.setAlpha(0);
     items[1] = setAlphaResult.toRgbString();
     return items;

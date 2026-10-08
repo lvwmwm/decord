@@ -1,27 +1,27 @@
-// Module ID: 16858
-// Function ID: 16859
+// Module ID: 17137
+// Function ID: 17138
 // Name: GuildTextChannelRow
-// Dependencies: [109, 19, 7524, 21, 558, 576, 11, 16846, 11987, 16849, 2]
+// Dependencies: [109, 19, 9247, 21, 558, 576, 11, 17125, 12060, 17128, 2]
 
-// Module 16858 (GuildTextChannelRow)
+// Module 17137 (GuildTextChannelRow)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import SearchConstants from "SearchConstants" /* 7524 */;
-import SearchUtils from "SearchUtils" /* 11987 */;
-import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 16846 */;
-import GuildChannelRowDefault from "GuildChannelRow" /* 16849 */;
+import SearchConstants from "SearchConstants" /* 9247 */;
+import SearchUtils from "SearchUtils" /* 12060 */;
+import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 17125 */;
+import GuildChannelRowDefault from "GuildChannelRow" /* 17128 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channel;
+let importDefault, tmp;
 
 let closure_3 = ["channel", "trailing", "lastMessageId", "onPress"];
 const layout = SearchConstants.CHANNEL_LIST_SEARCH_LAYOUT;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildTextChannelRow(channel) {
   let guild_id;
   let id;
   let lastMessageId;
@@ -35,9 +35,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   const cResult = obj.c(21);
   if (cResult[0] !== channel) {
     channel = channel.channel;
-    let closure_0 = channel;
+    let _require = channel;
     ({ trailing, lastMessageId, onPress } = channel);
-    let closure_1 = onPress;
+    importDefault = onPress;
     const tmp11 = _objectWithoutProperties(channel, closure_3);
     cResult[0] = channel;
     cResult[1] = channel;
@@ -49,9 +49,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
     tmp7 = tmp11;
     tmp5 = lastMessageId;
   } else {
-    closure_0 = cResult[1];
+    _require = cResult[1];
     tmp5 = cResult[2];
-    closure_1 = cResult[3];
+    importDefault = cResult[3];
     tmp7 = cResult[4];
     tmp8 = cResult[5];
   }
@@ -92,28 +92,37 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
             }
           }
         }
+        class A {
+          constructor() {
+            tmp = closure_1(closure_0.id);
+            return;
+          }
+        }
         GuildChannelRowDefault;
         const merged = Object.assign(tmp7);
-        const tmp27 = <tmp23 subtitle={tmp15} channel={tmp4} trailing={tmp8} onPress={tmp19} />;
+        const tmp26 = <tmp22 subtitle={tmp15} channel={tmp4} trailing={tmp8} onPress={tmp19} />;
         cResult[15] = tmp4;
         cResult[16] = tmp19;
         cResult[17] = tmp7;
         cResult[18] = tmp15;
         cResult[19] = tmp8;
-        cResult[20] = tmp27;
-        tmp20 = tmp27;
+        cResult[20] = tmp26;
+        tmp20 = tmp26;
       }
-      const fn = function f() {
-        closure_1(id.id);
-      };
+      class A {
+        constructor() {
+          tmp = closure_1(closure_0.id);
+          return;
+        }
+      }
       cResult[12] = tmp4.id;
       cResult[13] = tmp6;
-      cResult[14] = fn;
-      tmp19 = fn;
+      cResult[14] = A;
+      tmp19 = A;
     }
   }
   let channelActiveAgoTimestamp = null;
-  const renderChannelSubtitle = tmp(16846).renderChannelSubtitle;
+  const renderChannelSubtitle = tmp(17125).renderChannelSubtitle;
   guild_channels_ChannelSubtitle;
   if (null != tmp12) {
     const tmpResult2 = SearchUtils;
@@ -126,7 +135,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   cResult[10] = tmp12;
   cResult[11] = result;
   tmp15 = result;
-}) : ((channel) => {
+}) : (function GuildTextChannelRow(channel) {
   let lastMessageId;
   let onPress;
   channel = channel.channel;

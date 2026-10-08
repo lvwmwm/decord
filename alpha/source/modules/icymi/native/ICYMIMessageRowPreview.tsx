@@ -1,29 +1,28 @@
-// Module ID: 16478
-// Function ID: 16479
+// Module ID: 16738
+// Function ID: 16739
 // Name: ICYMIMessageRowPreview
-// Dependencies: [109, 19, 1085, 21, 558, 576, 7551, 7525, 7604, 6815, 4797, 4896, 587, 7820, 1126, 2028, 7602, 8336, 2]
+// Dependencies: [109, 19, 1085, 21, 558, 576, 8454, 9248, 7721, 6988, 4991, 5090, 587, 8239, 1126, 2040, 7719, 9308, 2]
 
-// Module 16478 (ICYMIMessageRowPreview)
+// Module 16738 (ICYMIMessageRowPreview)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import useThemeDefault from "useTheme" /* 4797 */;
-import createStyles from "createStyles" /* 4896 */;
-import isForwardMessageDefault from "isForwardMessage" /* 6815 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7525 */;
-import RowGeneratorDefault from "RowGenerator" /* 7602 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 7820 */;
-import ChatItemDefault from "ChatItem" /* 8336 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import useThemeDefault from "useTheme" /* 4991 */;
+import createStyles from "createStyles" /* 5090 */;
+import isForwardMessageDefault from "isForwardMessage" /* 6988 */;
+import RowGeneratorDefault from "RowGenerator" /* 7719 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8239 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9248 */;
+import ChatItemDefault from "ChatItem" /* 9308 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let dependencyMap, importDefault, tmp2;
+let dependencyMap, importDefault, type;
 
 let closure_3 = ["message", "messageOptions"];
 let closure_4 = ["message", "messageOptions"];
@@ -33,7 +32,7 @@ const jsx = Fragment.jsx;
 let memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
 const memo2 = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MediaOnlyRowPreview(arg0) {
   let message;
   let messageOptions;
   let obj2;
@@ -60,32 +59,41 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     const result = obj2.set("content", null);
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function v(type) {
-        type = type.type;
-        return type === constants.IMAGE || type === constants.GIFV;
-      };
-      cResult[7] = fn;
-      tmp12 = fn;
+      class C {
+        constructor(arg0) {
+          type = arg0.type;
+          tmp = type === closure_1_8.IMAGE || type === closure_1_8.GIFV;
+          return tmp;
+        }
+      }
+      cResult[7] = C;
+      tmp12 = C;
     } else {
-      tmp12 = cResult[7];
+      class C {
+        constructor(arg0) {
+          type = arg0.type;
+          tmp = type === closure_1_8.IMAGE || type === closure_1_8.GIFV;
+          return tmp;
+        }
+      }
     }
     const embeds = result.embeds;
     const result1 = result.set("embeds", embeds.filter(tmp12));
     const _Symbol2 = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       class M {
-        constructor(filename) {
-          const obj = require("ForumPostMediaUtils");
-          return obj.isMediaAttachment(filename);
+        constructor(arg0) {
+          obj = closure_1_0(closure_1_2[6]);
+          return obj.isMediaAttachment(arg0);
         }
       }
       cResult[8] = M;
       tmp13 = M;
     } else {
       class M {
-        constructor(filename) {
-          const obj = require("ForumPostMediaUtils");
-          return obj.isMediaAttachment(filename);
+        constructor(arg0) {
+          obj = closure_1_0(closure_1_2[6]);
+          return obj.isMediaAttachment(arg0);
         }
       }
     }
@@ -98,9 +106,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     tmp9 = result3;
   } else {
     class M {
-      constructor(filename) {
-        const obj = require("ForumPostMediaUtils");
-        return obj.isMediaAttachment(filename);
+      constructor(arg0) {
+        obj = closure_1_0(closure_1_2[6]);
+        return obj.isMediaAttachment(arg0);
       }
     }
     tmp9 = cResult[6];
@@ -108,17 +116,17 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   const muted = tmp5.muted;
   if (muted == null) {
     class M {
-      constructor(filename) {
-        const obj = require("ForumPostMediaUtils");
-        return obj.isMediaAttachment(filename);
+      constructor(arg0) {
+        obj = closure_1_0(closure_1_2[6]);
+        return obj.isMediaAttachment(arg0);
       }
     }
   }
   if (cResult[9] === tmp9) {
     class M {
-      constructor(filename) {
-        const obj = require("ForumPostMediaUtils");
-        return obj.isMediaAttachment(filename);
+      constructor(arg0) {
+        obj = closure_1_0(closure_1_2[6]);
+        return obj.isMediaAttachment(arg0);
       }
     }
   }
@@ -127,7 +135,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   cResult[11] = muted;
   cResult[12] = { message: tmp9, layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COZY, muted, lineClamp: tmp5.lineClamp };
   ({ message: tmp9, layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COZY, muted, lineClamp: tmp5.lineClamp });
-}) : ((message) => {
+}) : (function MediaOnlyRowPreview(message) {
   message = message.message;
   const messageOptions = message.messageOptions;
   const merged = Object.assign(message, Object.assign({ message: 0, messageOptions: 0 }));
@@ -166,7 +174,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
 const memo3 = react.memo;
-const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function NonMediaEmbedsRowPreview(arg0) {
   let message;
   let messageOptions;
   let obj2;
@@ -193,14 +201,23 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
     const result = obj2.set("content", null);
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function v(type) {
-        type = type.type;
-        return !(type === constants.IMAGE || type === constants.GIFV);
-      };
-      cResult[7] = fn;
-      tmp12 = fn;
+      class C {
+        constructor(arg0) {
+          type = arg0.type;
+          tmp = type === closure_1_8.IMAGE || type === closure_1_8.GIFV;
+          return !tmp;
+        }
+      }
+      cResult[7] = C;
+      tmp12 = C;
     } else {
-      tmp12 = cResult[7];
+      class C {
+        constructor(arg0) {
+          type = arg0.type;
+          tmp = type === closure_1_8.IMAGE || type === closure_1_8.GIFV;
+          return !tmp;
+        }
+      }
     }
     const embeds = result.embeds;
     const found = embeds.filter(tmp12);
@@ -208,18 +225,18 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
     const _Symbol2 = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       class M {
-        constructor(filename) {
-          const obj = require("ForumPostMediaUtils");
-          return !obj.isMediaAttachment(filename);
+        constructor(arg0) {
+          obj = closure_1_0(closure_1_2[6]);
+          return !obj.isMediaAttachment(arg0);
         }
       }
       cResult[8] = M;
       tmp13 = M;
     } else {
       class M {
-        constructor(filename) {
-          const obj = require("ForumPostMediaUtils");
-          return !obj.isMediaAttachment(filename);
+        constructor(arg0) {
+          obj = closure_1_0(closure_1_2[6]);
+          return !obj.isMediaAttachment(arg0);
         }
       }
     }
@@ -233,9 +250,9 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
     tmp9 = result3;
   } else {
     class M {
-      constructor(filename) {
-        const obj = require("ForumPostMediaUtils");
-        return !obj.isMediaAttachment(filename);
+      constructor(arg0) {
+        obj = closure_1_0(closure_1_2[6]);
+        return !obj.isMediaAttachment(arg0);
       }
     }
     tmp9 = cResult[6];
@@ -243,17 +260,17 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
   const muted = tmp5.muted;
   if (muted == null) {
     class M {
-      constructor(filename) {
-        const obj = require("ForumPostMediaUtils");
-        return !obj.isMediaAttachment(filename);
+      constructor(arg0) {
+        obj = closure_1_0(closure_1_2[6]);
+        return !obj.isMediaAttachment(arg0);
       }
     }
   }
   if (cResult[9] === tmp9) {
     class M {
-      constructor(filename) {
-        const obj = require("ForumPostMediaUtils");
-        return !obj.isMediaAttachment(filename);
+      constructor(arg0) {
+        obj = closure_1_0(closure_1_2[6]);
+        return !obj.isMediaAttachment(arg0);
       }
     }
   }
@@ -262,7 +279,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
   cResult[11] = muted;
   cResult[12] = { message: tmp9, layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COZY, muted, lineClamp: tmp5.lineClamp };
   ({ message: tmp9, layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COZY, muted, lineClamp: tmp5.lineClamp });
-}) : ((message) => {
+}) : (function NonMediaEmbedsRowPreview(message) {
   message = message.message;
   const messageOptions = message.messageOptions;
   const merged = Object.assign(message, Object.assign({ message: 0, messageOptions: 0 }));
@@ -302,7 +319,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
   return <closure_10 messageOptions={obj2} />;
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRowPreview(arg0) {
   let message;
   let messageOptions;
   let tmp4;
@@ -365,7 +382,7 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
           tmp20 = tmp26;
         }
         const obj3 = { ignoreMentioned: true, renderReplies: false, renderThreadEmbeds: false, renderReactions: false, gifAutoPlay: true, animateEmoji: true, renderPolls: true, renderForumPostActions: false, renderAttachments: tmp11, renderEmbeds: tmp11, inlineEmbedMedia: tmp11 };
-        const merged1 = Object.assign(tmp(7604).DEFAULT_OPTIONS);
+        const merged1 = Object.assign(tmp(7721).DEFAULT_OPTIONS);
         const merged2 = Object.assign(tmp5);
         cResult[11] = tmp11;
         cResult[12] = tmp5;
@@ -381,7 +398,7 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
   cResult[7] = flag;
   cResult[8] = obj4;
   tmp10 = obj4;
-}) : ((message) => {
+}) : (function MessageRowPreview(message) {
   message = message.message;
   const messageOptions = message.messageOptions;
   const merged = Object.assign(message, Object.assign({ message: 0, messageOptions: 0 }));
@@ -398,15 +415,15 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
     }
     return obj;
   }, items);
-  const tmp3 = merged(6815)(message);
+  const tmp3 = merged(6988)(message);
   const merged1 = Object.assign(memo);
   const obj2 = { ignoreMentioned: true, renderReplies: false, renderThreadEmbeds: false, renderReactions: false, gifAutoPlay: true, animateEmoji: true, renderPolls: true, renderForumPostActions: false, renderAttachments: tmp3, renderEmbeds: tmp3, inlineEmbedMedia: tmp3 };
-  const merged2 = Object.assign(message(7604).DEFAULT_OPTIONS);
+  const merged2 = Object.assign(message(7721).DEFAULT_OPTIONS);
   const merged3 = Object.assign(messageOptions);
   return <closure_10 messageOptions={obj2} seeMoreLabel="..." />;
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIMessageRowPreview(arg0) {
   let lineClamp;
   let maxHeight;
   let message;
@@ -427,8 +444,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
   const tmp5 = useThemeDefault();
   if (cResult[0] !== tmp5) {
     const obj2 = { seeMoreLabelColor: nativeDefault.colors.TEXT_DEFAULT };
-    const createNativeStyleProperties = tmp(4896).createNativeStyleProperties;
-    tmp(4896);
+    const createNativeStyleProperties = tmp(5090).createNativeStyleProperties;
+    tmp(5090);
     const tmp8 = createNativeStyleProperties(obj2)(tmp5);
     cResult[0] = tmp5;
     cResult[1] = tmp8;
@@ -448,7 +465,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const RenderEmbeds = tmp(2028).RenderEmbeds;
+      const RenderEmbeds = tmp(2040).RenderEmbeds;
       const setting = RenderEmbeds.getSetting();
       cResult[5] = setting;
       tmp11 = setting;
@@ -457,7 +474,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
     }
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const InlineEmbedMedia = tmp(2028).InlineEmbedMedia;
+      const InlineEmbedMedia = tmp(2040).InlineEmbedMedia;
       const setting1 = InlineEmbedMedia.getSetting();
       cResult[6] = setting1;
       tmp13 = setting1;
@@ -466,7 +483,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
     }
     const _Symbol3 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const InlineAttachmentMedia = tmp(2028).InlineAttachmentMedia;
+      const InlineAttachmentMedia = tmp(2040).InlineAttachmentMedia;
       const setting2 = InlineAttachmentMedia.getSetting();
       cResult[7] = setting2;
       tmp15 = setting2;
@@ -502,24 +519,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
         }
       }
     }
-    class M {
-      constructor(arg0) {
-        tmp = closure_0;
-        tmp2 = closure_2;
-        arg0.contextType = closure_0(closure_2[13]).MessageContextType.SEARCH;
-        if (null != lineClamp) {
-          obj = { numberOfLines: null, expandable: false, seeMoreLabel: null, seeMoreLabelColor: null };
-          obj.numberOfLines = tmp3;
-          intl = tmp(tmp2[14]).intl;
-          obj.seeMoreLabel = intl.string(tmp(tmp2[14]).t.qCozu3);
-          tmp4 = closure_1;
-          obj.seeMoreLabelColor = closure_1.seeMoreLabelColor;
-          arg0.truncation = obj;
-        }
-        return;
-      }
-    }
-    const tmp26 = jsx(ChatItemDefault, { pointerEvents: str, horizontalOffset: 0, modifyRow: tmp9, message, rowGenerator: tmp17, messageSizeCacheRef, maxHeight: null });
+    const tmp26 = jsx(ChatItemDefault, { pointerEvents: str, horizontalOffset: 0, modifyRow: tmp9, message, rowGenerator: tmp17, messageSizeCacheRef, maxHeight });
     cResult[10] = maxHeight;
     cResult[11] = message;
     cResult[12] = messageSizeCacheRef;
@@ -529,28 +529,20 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
     cResult[16] = tmp26;
     tmp24 = tmp26;
   }
-  class M {
-    constructor(arg0) {
-      tmp = closure_0;
-      tmp2 = closure_2;
-      arg0.contextType = closure_0(closure_2[13]).MessageContextType.SEARCH;
-      if (null != lineClamp) {
-        obj = { numberOfLines: null, expandable: false, seeMoreLabel: null, seeMoreLabelColor: null };
-        obj.numberOfLines = tmp3;
-        intl = tmp(tmp2[14]).intl;
-        obj.seeMoreLabel = intl.string(tmp(tmp2[14]).t.qCozu3);
-        tmp4 = closure_1;
-        obj.seeMoreLabelColor = closure_1.seeMoreLabelColor;
-        arg0.truncation = obj;
-      }
-      return;
+  function modifyRow(arg0) {
+    let intl;
+    arg0.contextType = RowGeneratorTypes.MessageContextType.SEARCH;
+    if (null != lineClamp) {
+      const obj = { numberOfLines: tmp3, expandable: false, seeMoreLabel: intl.string(intl2.t.qCozu3), seeMoreLabelColor: seeMoreLabelColor.seeMoreLabelColor };
+      intl = tmp(1126).intl;
+      arg0.truncation = obj;
     }
   }
   cResult[2] = lineClamp;
   cResult[3] = tmp6;
-  cResult[4] = M;
-  tmp9 = M;
-}) : ((pointerEvents) => {
+  cResult[4] = modifyRow;
+  tmp9 = modifyRow;
+}) : (function ICYMIMessageRowPreview(pointerEvents) {
   let maxHeight;
   let message;
   let messageOptions;
@@ -563,7 +555,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
   if (str === undefined) {
     str = "none";
   }
-  let tmp = messageOptions(4797)();
+  let tmp = messageOptions(4991)();
   let obj = createStyles;
   const obj2 = { seeMoreLabelColor: messageOptions(587).colors.TEXT_DEFAULT };
   dependencyMap = obj.createNativeStyleProperties(obj2)(tmp);
@@ -582,7 +574,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
     setOptions(obj);
     return tmp;
   }, items);
-  return jsx(messageOptions(8336), {
+  return jsx(messageOptions(9308), {
     pointerEvents: str,
     horizontalOffset: 0,
     modifyRow(arg0) {

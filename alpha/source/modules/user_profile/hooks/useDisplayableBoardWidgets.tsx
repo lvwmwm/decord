@@ -1,13 +1,13 @@
-// Module ID: 12719
-// Function ID: 12720
+// Module ID: 13211
+// Function ID: 13212
 // Name: useDisplayableBoardWidgets
-// Dependencies: [19, 7128, 7129, 7126, 558, 576, 12720, 2]
+// Dependencies: [19, 7314, 7315, 7311, 558, 576, 13212, 2]
 
-// Module 12719 (useDisplayableBoardWidgets)
+// Module 13211 (useDisplayableBoardWidgets)
 import react2 from "react" /* 576 */;
-import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7126 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7128 */;
-import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 12720 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7311 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7314 */;
+import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 13212 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 function isNonEmptyBoardWidget(games) {
   let tmp3 = games instanceof UserProfileApplicationWidgetTypes.ApplicationWidget;
   if (!tmp3) {
-    let tmp4 = games instanceof tmp(7129).UserProfilePersonalWidget;
+    let tmp4 = games instanceof tmp(7315).UserProfilePersonalWidget;
     if (!tmp4) {
       const tmpResult = UserProfileGameWidgetTypes;
       tmp4 = tmpResult.isGameWidget(games) && games.games.length > 0;
@@ -25,7 +25,7 @@ function isNonEmptyBoardWidget(games) {
   }
   return tmp3;
 }
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDisplayableBoardWidgets(arg0) {
   let tmp2;
   const obj = react2;
   const cResult = obj.c(2);
@@ -39,7 +39,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = cResult[1];
   }
   return tmp2;
-}) : ((arg0) => {
+}) : (function useDisplayableBoardWidgets(arg0) {
   const tmp = useUserProfileWidgetsDefault(arg0);
   let closure_0 = tmp;
   const items = [tmp];

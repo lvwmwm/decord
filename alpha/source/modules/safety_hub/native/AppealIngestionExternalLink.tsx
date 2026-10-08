@@ -1,23 +1,21 @@
-// Module ID: 11525
-// Function ID: 11526
+// Module ID: 11523
+// Function ID: 11524
 // Name: AppealIngestionExternalLink
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4571, 4892, 1188, 8322, 5916, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 4763, 5086, 1200, 7705, 6189, 2]
 
-// Module 11525 (AppealIngestionExternalLink)
+// Module 11523 (AppealIngestionExternalLink)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import LinkingDefault from "Linking" /* 4571 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Pressables from "Pressables" /* 5916 */;
-import AssetRegistry from "AssetRegistry" /* 8322 */;
+import native from "native" /* 1200 */;
+import LinkingDefault from "Linking" /* 4763 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Pressables from "Pressables" /* 6189 */;
+import AssetRegistry from "AssetRegistry" /* 7705 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let onPress;
 
 let closure_4;
 let hasOwnProperty;
@@ -33,7 +31,7 @@ createStyles = createStyles.createStyles;
 obj3 = { minHeight: 60, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, paddingVertical: 16, paddingStart: 16, paddingEnd: 8, borderRadius: nativeDefault.radii.xs };
 obj4 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 let closure_6 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngestionExternalLink(onPress) {
   let items;
   let text;
   let url;
@@ -55,8 +53,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
         tmp6 = cResult[5];
       }
       if (cResult[6] !== tmp4.chevron.color) {
-        const obj2 = { source: tmp(8322), color: tmp4.chevron.color };
-        const Icon = tmp(1188).Icon;
+        const obj2 = { source: tmp(7705), color: tmp4.chevron.color };
+        const Icon = tmp(1200).Icon;
         const tmp11 = closure_4(Icon, obj2);
         cResult[6] = tmp4.chevron.color;
         cResult[7] = tmp11;
@@ -80,7 +78,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
             }
           }
           const obj3 = { style: tmp4.childButton, accessibilityRole: "button", onPress: tmp5, children: tmp12 };
-          const tmp18 = closure_4(tmp(5916).PressableHighlight, obj3);
+          const tmp18 = closure_4(tmp(6189).PressableHighlight, obj3);
           cResult[12] = tmp5;
           cResult[13] = tmp4.childButton;
           cResult[14] = tmp12;
@@ -98,24 +96,24 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
       tmp12 = tmp15;
     }
     const obj5 = { style: tmp4.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: text };
-    const tmp8 = closure_4(tmp(4892).Text, obj5);
+    const tmp8 = closure_4(tmp(5086).Text, obj5);
     cResult[3] = tmp4.childButtonText;
     cResult[4] = text;
     cResult[5] = tmp8;
     tmp6 = tmp8;
   }
-  const fn = function s() {
+  function handlePress() {
     if (onPress != null) {
       tmp();
     }
     const obj = LinkingDefault;
     obj.openURL(url);
-  };
+  }
   cResult[0] = onPress;
   cResult[1] = url;
-  cResult[2] = fn;
-  tmp5 = fn;
-}) : ((text) => {
+  cResult[2] = handlePress;
+  tmp5 = handlePress;
+}) : (function AppealIngestionExternalLink(text) {
   let items;
   let obj2;
   ({ url: require, onPress: importDefault } = text);
@@ -124,7 +122,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   let obj = {
     style: tmp.childButton,
     accessibilityRole: "button",
-    onPress() {
+    onPress: function handlePress() {
       if (importDefault != null) {
         tmp();
       }

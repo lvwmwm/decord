@@ -1,15 +1,15 @@
-// Module ID: 10436
-// Function ID: 10437
+// Module ID: 10033
+// Function ID: 10034
 // Name: admin_editor_test_component
-// Dependencies: [32, 1198, 10414, 10424, 10415, 10416, 10422, 2]
+// Dependencies: [32, 1210, 10011, 10021, 10012, 10013, 10019, 2]
 
-// Module 10436 (admin_editor_test_component)
-import _mod1198 from "module_1198" /* 1198 */;
-import localized_string from "localized_string" /* 10414 */;
-import help_article from "help_article" /* 10415 */;
-import cta_button from "cta_button" /* 10416 */;
-import gradient from "gradient" /* 10422 */;
-import theme_aware_asset from "theme_aware_asset" /* 10424 */;
+// Module 10033 (admin_editor_test_component)
+import _mod1210 from "module_1210" /* 1210 */;
+import localized_string from "localized_string" /* 10011 */;
+import help_article from "help_article" /* 10012 */;
+import cta_button from "cta_button" /* 10013 */;
+import gradient from "gradient" /* 10019 */;
+import theme_aware_asset from "theme_aware_asset" /* 10021 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ const T7 = function T() {
   return items;
 };
 const AdminEditorTestSelectOption = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", FIRST: 1, [1]: "FIRST", SECOND: 2, [2]: "SECOND" };
-const MessageType = _mod1198.MessageType;
+const MessageType = _mod1210.MessageType;
 class AdminEditorTestComponent$Type extends MessageType {
   constructor() {
     let items = [{ no: 1, name: "deprecated_field", kind: "scalar", T: 9 }, { no: 2, name: "localized_text_field", kind: "message", T: T2 }, { no: 3, name: "plain_text_field", kind: "scalar", T: 9 }, { no: 4, name: "textarea_field", kind: "message", T: T3 }, { no: 5, name: "checkbox_field", kind: "scalar", T: 8 }, { no: 6, name: "asset_field", kind: "scalar", T: 9 }, { no: 7, name: "themed_asset_field", kind: "message", T: T4 }, { no: 8, name: "help_article_field", kind: "message", T: T5 }, { no: 9, name: "cta_field", kind: "message", T: T6 }, , ];
@@ -56,9 +56,9 @@ class AdminEditorTestComponent$Type extends MessageType {
     const obj = { deprecatedField: "", plainTextField: "", checkboxField: false, assetField: "", selectField: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1198.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1210.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1198;
+      const tmpResult = _mod1210;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -77,42 +77,42 @@ class AdminEditorTestComponent$Type extends MessageType {
   }
   internalBinaryWrite(deprecatedField, tag, writeUnknownFields) {
     if ("" !== deprecatedField.deprecatedField) {
-      const tagResult = tag.tag(1, _mod1198.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1210.WireType.LengthDelimited);
       tagResult.string(deprecatedField.deprecatedField);
     }
     if (deprecatedField.localizedTextField) {
       const LocalizedString = localized_string.LocalizedString;
       internalBinaryWrite = LocalizedString.internalBinaryWrite;
       const localizedTextField = deprecatedField.localizedTextField;
-      const tagResult1 = tag.tag(2, _mod1198.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1210.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(localizedTextField, tagResult1.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if ("" !== deprecatedField.plainTextField) {
-      const tagResult2 = tag.tag(3, _mod1198.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1210.WireType.LengthDelimited);
       tagResult2.string(deprecatedField.plainTextField);
     }
     if (deprecatedField.textareaField) {
       const LocalizedString2 = localized_string.LocalizedString;
       internalBinaryWrite2 = LocalizedString2.internalBinaryWrite;
       const textareaField = deprecatedField.textareaField;
-      const tagResult3 = tag.tag(4, _mod1198.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1210.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(textareaField, tagResult3.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     if (false !== deprecatedField.checkboxField) {
-      const tagResult4 = tag.tag(5, _mod1198.WireType.Varint);
+      const tagResult4 = tag.tag(5, _mod1210.WireType.Varint);
       tagResult4.bool(deprecatedField.checkboxField);
     }
     if ("" !== deprecatedField.assetField) {
-      const tagResult5 = tag.tag(6, _mod1198.WireType.LengthDelimited);
+      const tagResult5 = tag.tag(6, _mod1210.WireType.LengthDelimited);
       tagResult5.string(deprecatedField.assetField);
     }
     if (deprecatedField.themedAssetField) {
       const ThemeAwareAsset = theme_aware_asset.ThemeAwareAsset;
       internalBinaryWrite3 = ThemeAwareAsset.internalBinaryWrite;
       const themedAssetField = deprecatedField.themedAssetField;
-      const tagResult6 = tag.tag(7, _mod1198.WireType.LengthDelimited);
+      const tagResult6 = tag.tag(7, _mod1210.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(themedAssetField, tagResult6.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
@@ -120,7 +120,7 @@ class AdminEditorTestComponent$Type extends MessageType {
       const HelpArticle = help_article.HelpArticle;
       internalBinaryWrite4 = HelpArticle.internalBinaryWrite;
       const helpArticleField = deprecatedField.helpArticleField;
-      const tagResult7 = tag.tag(8, _mod1198.WireType.LengthDelimited);
+      const tagResult7 = tag.tag(8, _mod1210.WireType.LengthDelimited);
       const internalBinaryWrite4Result = internalBinaryWrite4(helpArticleField, tagResult7.fork(), writeUnknownFields);
       const joined3 = internalBinaryWrite4Result.join();
     }
@@ -128,7 +128,7 @@ class AdminEditorTestComponent$Type extends MessageType {
       const CTAButton = cta_button.CTAButton;
       internalBinaryWrite5 = CTAButton.internalBinaryWrite;
       const ctaField = deprecatedField.ctaField;
-      const tagResult8 = tag.tag(9, _mod1198.WireType.LengthDelimited);
+      const tagResult8 = tag.tag(9, _mod1210.WireType.LengthDelimited);
       const internalBinaryWrite5Result = internalBinaryWrite5(ctaField, tagResult8.fork(), writeUnknownFields);
       const joined4 = internalBinaryWrite5Result.join();
     }
@@ -136,18 +136,18 @@ class AdminEditorTestComponent$Type extends MessageType {
       const Gradient = gradient.Gradient;
       internalBinaryWrite6 = Gradient.internalBinaryWrite;
       const gradientField = deprecatedField.gradientField;
-      const tagResult9 = tag.tag(10, _mod1198.WireType.LengthDelimited);
+      const tagResult9 = tag.tag(10, _mod1210.WireType.LengthDelimited);
       const internalBinaryWrite6Result = internalBinaryWrite6(gradientField, tagResult9.fork(), writeUnknownFields);
       const joined5 = internalBinaryWrite6Result.join();
     }
     if (0 !== deprecatedField.selectField) {
-      const tagResult10 = tag.tag(11, _mod1198.WireType.Varint);
+      const tagResult10 = tag.tag(11, _mod1210.WireType.Varint);
       tagResult10.int32(deprecatedField.selectField);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1198.UnknownFieldHandler.onWrite;
+        onWrite = _mod1210.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, deprecatedField, tag);

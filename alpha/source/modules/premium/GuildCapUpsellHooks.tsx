@@ -1,22 +1,22 @@
-// Module ID: 6718
-// Function ID: 6719
+// Module ID: 6894
+// Function ID: 6895
 // Name: GuildCapUpsellHooks
-// Dependencies: [2074, 1377, 1085, 558, 576, 504, 6719, 4534, 2]
+// Dependencies: [2086, 1389, 1085, 558, 576, 504, 6895, 4726, 2]
 // Exports: hasIncreasedGuildCap, hideInlineGuildCapUpsell, isAtGuildCapAndNonPremium
 
-// Module 6718 (GuildCapUpsellHooks)
+// Module 6894 (GuildCapUpsellHooks)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4534 */;
-import HotspotStore2 from "HotspotStore" /* 6719 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import UserStore from "UserStore" /* 1377 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4726 */;
+import HotspotStore2 from "HotspotStore" /* 6895 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const MAX_USER_GUILDS = Constants.MAX_USER_GUILDS;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowInlineGuildCapUpsell() {
   let currentUser;
   let guildCount;
   let tmp11;
@@ -43,7 +43,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [HotspotStore2.HotspotStore];
-    const fn2 = function c() {
+    const fn2 = function p() {
       const HotspotStore = HotspotStore2.HotspotStore;
       return HotspotStore.hasHotspot(HotspotStore2.HotspotLocations.GUILD_CAP_INLINE_UPSELL);
     };
@@ -82,7 +82,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     stateFromStores = stateFromStoresObject;
   }
   return stateFromStores;
-}) : (() => {
+}) : (function useShouldShowInlineGuildCapUpsell() {
   let currentUser;
   let guildCount;
   let obj = get_initialized;

@@ -1,15 +1,15 @@
-// Module ID: 11797
-// Function ID: 11798
+// Module ID: 11864
+// Function ID: 11865
 // Name: useLatch
 // Dependencies: [19, 558, 576, 2]
 
-// Module 11797 (useLatch)
+// Module 11864 (useLatch)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLatch(arg0) {
   let first;
   let tmp3;
   let tmp4;
@@ -18,7 +18,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(5);
   let closure_1 = react.useRef(false);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function n(current) {
+    const fn = function u(current) {
       ref.current = current;
       return current;
     };
@@ -49,7 +49,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp4 = cResult[4];
   }
   return tmp4;
-}) : ((arg0) => {
+}) : (function useLatch(arg0) {
   let items;
   let closure_0 = arg0;
   let closure_1 = react.useRef(false);

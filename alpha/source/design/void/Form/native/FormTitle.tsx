@@ -1,17 +1,17 @@
-// Module ID: 8932
-// Function ID: 8933
+// Module ID: 8563
+// Function ID: 8564
 // Name: FormTitle
-// Dependencies: [19, 17, 1085, 21, 1369, 4896, 587, 558, 576, 1188, 2]
+// Dependencies: [19, 17, 1085, 21, 1381, 5090, 587, 558, 576, 1200, 2]
 
-// Module 8932 (FormTitle)
+// Module 8563 (FormTitle)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1369 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let closure_4;
 let obj2;
 let obj3;
 let tmp;
-const native = tmp(1188);
+const native = tmp(1200);
 ({ View: c2, Platform } = react_native);
 const Fonts = Constants.Fonts;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
@@ -42,7 +42,7 @@ obj2 = { fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 13, color: nativeDefault.
 createStyles = createStyles.createStyles;
 obj3 = { color: nativeDefault.unsafe_rawColors.RED_400 };
 let closure_5 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormTitle(arg0) {
   let error;
   let icon;
   let inset;
@@ -142,7 +142,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = viewStyle;
   cResult[4] = items2;
   tmp8 = items2;
-}) : ((thinTitle) => {
+}) : (function FormTitle(thinTitle) {
   let formatted;
   let icon;
   let items2;

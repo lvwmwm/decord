@@ -1,26 +1,26 @@
-// Module ID: 15097
-// Function ID: 15098
+// Module ID: 15359
+// Function ID: 15360
 // Name: SettingsAppearanceScreen
-// Dependencies: [19, 4703, 1194, 1193, 15098, 7645, 1085, 21, 558, 576, 1490, 1369, 7509, 1126, 10737, 1259, 3395, 2115, 15099, 5597, 573, 11142, 14515, 2]
+// Dependencies: [19, 4897, 1206, 1205, 15360, 7966, 1085, 21, 558, 576, 1502, 1381, 9232, 1126, 10491, 1271, 3439, 2127, 15361, 5392, 573, 11262, 14775, 2]
 
-// Module 15097 (SettingsAppearanceScreen)
+// Module 15359 (SettingsAppearanceScreen)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import _modDef3395 from "module_3395" /* 3395 */;
-import useMountEffectDefault from "useMountEffect" /* 5597 */;
-import HeaderShared from "HeaderShared" /* 7509 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
+import _modDef3439 from "module_3439" /* 3439 */;
+import useMountEffectDefault from "useMountEffect" /* 5392 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import HeaderShared from "HeaderShared" /* 9232 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import react from "react" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4703 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1194 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
-import FontScaleStore from "FontScaleStore" /* 15098 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4897 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1206 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
+import FontScaleStore from "FontScaleStore" /* 15360 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let _require, gradientPreset;
 let metroImportAll;
 let metroImportDefault;
 let tmp5;
-const SettingLayoutDefault = tmp5(14515);
+const SettingLayoutDefault = tmp5(14775);
 function getAppearanceSettings() {
   let GR2KOG;
   let format;
@@ -73,7 +73,7 @@ function getAppearanceSettings() {
   const intl3 = intl6.intl;
   format = intl3.format;
   obj7 = { helpCenterLink: obj8.getArticleURL(HelpdeskArticles.FAVORITES_GUILD) };
-  GR2KOG = _modDef3395.GR2KOG;
+  GR2KOG = _modDef3439.GR2KOG;
   items1[5] = obj6;
   obj8 = HelpdeskUtilsDefault;
   const obj9 = { label: intl4.string(intl6.t.lEde7i), settings: items7 };
@@ -94,7 +94,7 @@ const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const HelpdeskArticles = Constants.HelpdeskArticles;
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFontScalingData() {
   let closure_0;
   let obj = require("react");
   const cResult = obj.c(9);
@@ -118,7 +118,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const _Symbol = Symbol;
           const obj3 = react;
           if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-            const fn2 = function l() {
+            const fn2 = function c() {
               return () => {
                 let state;
                 const obj = closure_1_0(closure_1_2[15]);
@@ -146,7 +146,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (obj.isAndroid()) {
       if (closure_0.persistedFontScale === closure_0.fontScale) {
         if (closure_0.persistedIsClassicChatFontScaleEnabled === closure_0.isClassicChatFontScaleEnabled) {
-          nativeStackNavigation.setOptions({ headerRight: "r" });
+          nativeStackNavigation.setOptions({ headerRight: "create" });
         }
       }
       const setOptions = nativeStackNavigation.setOptions;
@@ -173,7 +173,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[6] = items1;
   tmp5 = items1;
   tmp4 = fn;
-}) : (() => {
+}) : (function useFontScalingData() {
   let closure_0;
   const tmp = closure_8();
   _require = tmp;
@@ -188,7 +188,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (obj.isAndroid()) {
       if (closure_0.persistedFontScale === closure_0.fontScale) {
         if (closure_0.persistedIsClassicChatFontScaleEnabled === closure_0.isClassicChatFontScaleEnabled) {
-          nativeStackNavigation.setOptions({ headerRight: "r" });
+          nativeStackNavigation.setOptions({ headerRight: "create" });
         }
       }
       const setOptions = nativeStackNavigation.setOptions;
@@ -212,7 +212,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 const memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAppearanceScreen() {
   let first;
   let gradientPresetId;
   let theme;
@@ -264,7 +264,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   closure_12();
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: getAppearanceSettings() };
-    const createList = tmp(11142).createList;
+    const createList = tmp(11262).createList;
     SettingBuilders;
     const list = createList(obj2);
     cResult[3] = list;
@@ -282,7 +282,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp18 = cResult[5];
   }
   return tmp18;
-}) : (() => {
+}) : (function SettingsAppearanceScreen() {
   let gradientPresetId;
   let theme;
   useMountEffectDefault(() => {

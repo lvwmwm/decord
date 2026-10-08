@@ -1,12 +1,12 @@
-// Module ID: 10067
-// Function ID: 10068
+// Module ID: 10323
+// Function ID: 10324
 // Name: markChannelUnread
-// Dependencies: [4911, 10068, 558, 576, 504, 2]
+// Dependencies: [6040, 10324, 558, 576, 504, 2]
 // Exports: default
 
-// Module 10067 (markChannelUnread)
-import ReadStateStore2 from "ReadStateStore" /* 4911 */;
-import markUnreadDefault from "markUnread" /* 10068 */;
+// Module 10323 (markChannelUnread)
+import ReadStateStore2 from "ReadStateStore" /* 6040 */;
+import markUnreadDefault from "markUnread" /* 10324 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const ReadStateStore = ReadStateStore2;
 let _require;
 
 const ReadState = ReadStateStore2.ReadState;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanMarkChannelUnread(arg0) {
   let first;
   let id;
   let tmp6;
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function o() {
+    const fn = function l() {
       const tmp = ReadStateStore.canBeUnread(id.id) && ReadStateStore.hasLastMessage(id.id) && !id.isCategory();
       return tmp;
     };
@@ -43,7 +43,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useCanMarkChannelUnread(arg0) {
   let id;
   _require = arg0;
   const items = [ReadStateStore];

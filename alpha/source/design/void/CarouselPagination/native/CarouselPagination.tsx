@@ -1,23 +1,23 @@
-// Module ID: 13962
-// Function ID: 13963
+// Module ID: 14261
+// Function ID: 14262
 // Name: CarouselPagination
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4618, 4897, 13953, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 4810, 5091, 14044, 2]
 
-// Module 13962 (CarouselPagination)
+// Module 14261 (CarouselPagination)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
 let size;
 let tmp;
-const Easing = tmp(13953);
+const Easing = tmp(14044);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -32,7 +32,7 @@ const __initData3 = { code: "function CarouselPaginationTsx3(){const{withTiming,
 const __initData4 = { code: "function CarouselPaginationTsx4(){const{interpolate,progress,interpolateColor,backgroundColor,brand500}=this.__closure;return{width:interpolate(progress.get(),[0,1],[8,16]),backgroundColor:interpolateColor(progress.get(),[0,1],[backgroundColor,brand500]),opacity:interpolate(progress.get(),[0,1],[0.3,1])};}" };
 const memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((active) => {
+let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function Dot(active) {
   let BRAND_500;
   let tmp = BRAND_500;
   let obj = active(BRAND_500[6]);
@@ -89,7 +89,7 @@ let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((active) =
   cResult[1] = tmp3.dot;
   cResult[2] = tmp8;
   tmp7 = tmp8;
-}) : ((active) => {
+}) : (function Dot(active) {
   active = active.active;
   let BRAND_500;
   let tmp = closure_5();
@@ -133,7 +133,7 @@ let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((active) =
   return jsx(derivedValue(BRAND_500[7]).View, { style: items });
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((containerStyle) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CarouselPagination(containerStyle) {
   let currentIndex;
   let numberOfItems;
   const obj = currentIndex(576);
@@ -188,7 +188,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((containerStyle) => {
   cResult[1] = tmp2.container;
   cResult[2] = items;
   tmp3 = items;
-}) : ((currentIndex) => {
+}) : (function CarouselPagination(currentIndex) {
   let containerStyle;
   let numberOfItems;
   currentIndex = currentIndex.currentIndex;

@@ -1,16 +1,16 @@
-// Module ID: 10633
-// Function ID: 10634
+// Module ID: 10231
+// Function ID: 10232
 // Name: PresenceActivityStatus
-// Dependencies: [19, 1085, 21, 7242, 10634, 8771, 5897, 9584, 10629, 558, 576, 10635, 10628, 10631, 2]
+// Dependencies: [19, 1085, 21, 7421, 10232, 9117, 8209, 10233, 10227, 558, 576, 10235, 10226, 10229, 2]
 
-// Module 10633 (PresenceActivityStatus)
+// Module 10231 (PresenceActivityStatus)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7242 */;
-import ActivityStatusIconDefault from "ActivityStatusIcon" /* 10628 */;
-import ActivityStatusTextDefault from "ActivityStatusText" /* 10631 */;
-import conjurePresenceActivity from "conjurePresenceActivity" /* 10634 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 10635 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7421 */;
+import ActivityStatusIconDefault from "ActivityStatusIcon" /* 10226 */;
+import ActivityStatusTextDefault from "ActivityStatusText" /* 10229 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 10232 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 10235 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -27,33 +27,33 @@ function getActivityStatusIcon(activity) {
     const obj = conjurePresenceActivity;
     if (!obj.isConjurePresenceActivity(activity)) {
       if (activity.type === ActivityTypes.PLAYING) {
-        GameControllerIcon = tmp2(8771).GameControllerIcon;
+        GameControllerIcon = tmp2(9117).GameControllerIcon;
       } else if (activity.type === ActivityTypes.LISTENING) {
-        GameControllerIcon = tmp2(9584).MusicIcon;
+        GameControllerIcon = tmp2(10233).MusicIcon;
       } else {
         if (activity.type !== ActivityTypes.WATCHING) {
           if (activity.type !== ActivityTypes.STREAMING) {
             GameControllerIcon = null;
             if (activity.type === ActivityTypes.COMPETING) {
-              GameControllerIcon = tmp2(8771).GameControllerIcon;
+              GameControllerIcon = tmp2(9117).GameControllerIcon;
             }
           }
         }
-        GameControllerIcon = tmp2(10629).TvIcon;
+        GameControllerIcon = tmp2(10227).TvIcon;
       }
     }
     return GameControllerIcon;
   }
   if (flag) {
-    AppsIcon = tmp5(8771).GameControllerIcon;
+    AppsIcon = tmp5(9117).GameControllerIcon;
   } else {
-    AppsIcon = tmp5(5897).AppsIcon;
+    AppsIcon = tmp5(8209).AppsIcon;
   }
   GameControllerIcon = AppsIcon;
 }
 const ActivityTypes = Constants.ActivityTypes;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PresenceActivityStatus(arg0) {
   let activity;
   let hideIcon;
   let hideText;
@@ -141,7 +141,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = iconStyle;
   cResult[7] = tmp12;
   tmp11 = tmp12;
-}) : ((hideText) => {
+}) : (function PresenceActivityStatus(hideText) {
   let activity;
   let hideIcon;
   let iconStyle;
@@ -171,13 +171,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (tmp6) {
     const obj = { icon: tmp3, style: iconStyle };
-    tmp6 = React3(tmp(10628), obj);
+    tmp6 = React3(tmp(10226), obj);
   }
   const children = [tmp6, ];
   let tmp9 = !flag;
   if (tmp9) {
     const obj2 = { style: textStyle, maxFontSizeMultiplier, children: text };
-    tmp9 = React3(tmp(10631), obj2);
+    tmp9 = React3(tmp(10229), obj2);
   }
   children[1] = tmp9;
   return tmp4(tmp5, { children });

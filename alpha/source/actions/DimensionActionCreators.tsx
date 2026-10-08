@@ -1,9 +1,9 @@
-// Module ID: 10730
-// Function ID: 10731
+// Module ID: 11276
+// Function ID: 11277
 // Name: DimensionActionCreators
 // Dependencies: [584, 2]
 
-// Module 10730 (DimensionActionCreators)
+// Module 11276 (DimensionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 

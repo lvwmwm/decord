@@ -1,18 +1,18 @@
-// Module ID: 10986
-// Function ID: 10987
+// Module ID: 11210
+// Function ID: 11211
 // Name: BadgeTierGrid
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4892, 1126, 10902, 10895, 5886, 9964, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 5086, 1126, 10553, 10546, 8198, 9491, 2]
 
-// Module 10986 (BadgeTierGrid)
+// Module 11210 (BadgeTierGrid)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let badge, owned;
+let owned;
 
 let closure_4;
 let hasOwnProperty;
@@ -32,7 +32,7 @@ obj4 = { width: "33.333333333333336%", alignItems: "center", paddingHorizontal: 
 obj5 = { marginTop: nativeDefault.space.PX_8 };
 obj6 = { marginBottom: nativeDefault.space.PX_4 };
 let closure_6 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((badge) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeTierGrid(badge) {
   let intl;
   let isViewerOnUpgradeableNitro;
   let items;
@@ -253,7 +253,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((badge) => {
   cResult[2] = targetUsername;
   cResult[3] = tmp9;
   tmp8 = tmp9;
-}) : ((badge) => {
+}) : (function BadgeTierGrid(badge) {
   let intl;
   let items;
   let obj3;
@@ -275,7 +275,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((badge) => {
     const tmp6 = badge;
     const tmp7 = dependencyMap;
     let obj2 = { variant: "text-sm/medium", color: "text-default", style: tmp.progressLabel, children: intl.formatToPlainString(badge(1126).t.KyTwIh, obj3) };
-    let Text = badge(4892).Text;
+    let Text = badge(5086).Text;
     intl = badge(1126).intl;
     obj3 = { username: targetUsername };
     isViewingOtherUser = closure_4(Text, obj2);
@@ -365,7 +365,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((badge) => {
     })
   };
   let tiers = badge.tiers;
-  let tmp9 = isViewingOtherUser(9964);
+  let tmp9 = isViewingOtherUser(9491);
   const tmp8 = closure_4;
   if (tiers == null) {
     tiers = [];

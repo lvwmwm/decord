@@ -1,22 +1,22 @@
-// Module ID: 8918
-// Function ID: 8919
+// Module ID: 9351
+// Function ID: 9352
 // Name: PremiumFeaturesWumpus
-// Dependencies: [19, 1379, 21, 4896, 558, 576, 6440, 8919, 8920, 6955, 8921, 8922, 6957, 5981, 2]
+// Dependencies: [19, 1391, 21, 5090, 558, 576, 6618, 9352, 9353, 7144, 9354, 9355, 7146, 6164, 2]
 
-// Module 8918 (PremiumFeaturesWumpus)
+// Module 9351 (PremiumFeaturesWumpus)
 import react2 from "react" /* 576 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6440 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6955 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 6957 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6618 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7144 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7146 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let importDefault, premiumType;
+let importDefault;
 
 let hasOwnProperty;
 let items;
@@ -29,7 +29,7 @@ let obj = { clouds: { position: "absolute", top: 0, right: 0 }, wumpus: { positi
 obj2 = { transform: items };
 items = [{ scaleX: -1 }];
 let closure_8 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeaturesWumpus(premiumType) {
   let cloudsImageSource;
   let items;
   let tmp8;
@@ -41,7 +41,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => {
   const tmp5 = useIsWindowLargeDefault();
   if (premiumType === PremiumTypes.TIER_0) {
     let tmp10;
-    const tmp4Result = importDefault(tmp5 ? 8919 : 8920);
+    const tmp4Result = importDefault(tmp5 ? 9352 : 9353);
     if (cResult[0] !== tmp4Result) {
       const obj2 = { wumpusImageSource: AssetRegistryDefault, cloudsImageSource: tmp4Result };
       cResult[0] = tmp4Result;
@@ -52,7 +52,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => {
     }
     tmp8 = tmp10;
   } else {
-    const tmp4Result2 = importDefault(tmp5 ? 8921 : 8922);
+    const tmp4Result2 = importDefault(tmp5 ? 9354 : 9355);
     if (cResult[2] !== tmp4Result2) {
       const obj3 = { wumpusImageSource: AssetRegistryDefault2, cloudsImageSource: tmp4Result2 };
       cResult[2] = tmp4Result2;
@@ -112,7 +112,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => {
   cResult[5] = tmp3.clouds;
   cResult[6] = tmp12;
   tmp11 = tmp12;
-}) : ((premiumType) => {
+}) : (function PremiumFeaturesWumpus(premiumType) {
   let closure_1;
   let cloudsImageSource;
   let wumpusImageSource;
@@ -125,14 +125,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => {
     let obj;
     let tmpResult;
     if (premiumType === PremiumTypes.TIER_0) {
-      obj = { wumpusImageSource: AssetRegistryDefault, cloudsImageSource: importDefault(closure_1 ? 8919 : 8920) };
-      const obj2 = { wumpusImageSource: AssetRegistryDefault, cloudsImageSource: importDefault(closure_1 ? 8919 : 8920) };
+      obj = { wumpusImageSource: AssetRegistryDefault, cloudsImageSource: importDefault(closure_1 ? 9352 : 9353) };
+      const obj2 = { wumpusImageSource: AssetRegistryDefault, cloudsImageSource: importDefault(closure_1 ? 9352 : 9353) };
     } else {
       let tmp4;
       if (closure_1) {
-        tmp4 = 8921;
+        tmp4 = 9354;
       } else {
-        tmp4 = 8922;
+        tmp4 = 9355;
       }
       obj = { wumpusImageSource: AssetRegistryDefault2, cloudsImageSource: tmpResult };
       tmpResult = importDefault(tmp4);

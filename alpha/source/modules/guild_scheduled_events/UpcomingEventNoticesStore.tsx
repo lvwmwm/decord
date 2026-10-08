@@ -1,15 +1,15 @@
-// Module ID: 9196
-// Function ID: 9197
+// Module ID: 8631
+// Function ID: 8632
 // Name: UpcomingEventNoticesStore
-// Dependencies: [502, 7050, 2057, 9197, 504, 584, 2]
+// Dependencies: [502, 6059, 2069, 8632, 504, 584, 2]
 
-// Module 9196 (UpcomingEventNoticesStore)
+// Module 8631 (UpcomingEventNoticesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GuildScheduledEventUtils from "GuildScheduledEventUtils" /* 9197 */;
+import GuildScheduledEventUtils from "GuildScheduledEventUtils" /* 8632 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7050 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6059 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2069 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

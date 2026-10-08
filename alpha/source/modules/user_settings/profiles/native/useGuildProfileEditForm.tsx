@@ -1,18 +1,18 @@
-// Module ID: 14495
-// Function ID: 14496
+// Module ID: 14755
+// Function ID: 14756
 // Name: useGuildProfileEditForm
-// Dependencies: [109, 5, 19, 7842, 7124, 2074, 5623, 1377, 1085, 558, 576, 504, 11496, 2046, 584, 9433, 14496, 10835, 6492, 14447, 7849, 5319, 1126, 2]
+// Dependencies: [109, 5, 19, 8260, 7309, 2086, 5968, 1389, 1085, 558, 576, 504, 11482, 2058, 584, 9097, 14756, 11184, 6669, 14675, 8267, 5631, 1126, 2]
 
-// Module 14495 (useGuildProfileEditForm)
+// Module 14755 (useGuildProfileEditForm)
 import Constants from "Constants" /* 1085 */;
-import UserProfileSettingsStore2 from "UserProfileSettingsStore" /* 7842 */;
+import UserProfileSettingsStore2 from "UserProfileSettingsStore" /* 8260 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7124 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import SortedGuildStore from "SortedGuildStore" /* 5623 */;
-import UserStore_mod from "UserStore" /* 1377 */;
+import UserProfileStore from "UserProfileStore" /* 7309 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import SortedGuildStore from "SortedGuildStore" /* 5968 */;
+import UserStore_mod from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let closure_4 = ["bannerOriginalMd5"];
 const IGNORE_GUILD_IDS = UserProfileSettingsStore2.IGNORE_GUILD_IDS;
 let UserStore = UserStore_mod;
 let FormStates = Constants.FormStates;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProfileEditForm() {
   let currentUser;
   let pendingAvatarDecoration;
   let pendingNameplate;
@@ -63,15 +63,17 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     items1[1] = pendingNameplate;
-    const fn = function y() {
-      const selectedGuildId = pendingAvatarDecoration.selectedGuildId;
-      const obj = { errors: pendingAvatarDecoration.getErrors(selectedGuildId), selectedGuild: pendingNameplate.getGuild(selectedGuildId), formState: pendingAvatarDecoration.getFormState() };
-      const merged = Object.assign(pendingAvatarDecoration.getPendingChanges(selectedGuildId));
-      return obj;
-    };
+    class F {
+      constructor() {
+        const selectedGuildId = pendingAvatarDecoration.selectedGuildId;
+        const obj = { errors: pendingAvatarDecoration.getErrors(selectedGuildId), selectedGuild: pendingNameplate.getGuild(selectedGuildId), formState: pendingAvatarDecoration.getFormState() };
+        const merged = Object.assign(pendingAvatarDecoration.getPendingChanges(selectedGuildId));
+        return obj;
+      }
+    }
     cResult[2] = items1;
-    cResult[3] = fn;
-    tmp9 = fn;
+    cResult[3] = F;
+    tmp9 = F;
     tmp8 = items1;
   } else {
     tmp8 = cResult[2];
@@ -107,15 +109,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     items2[1] = pendingProfileFrame;
-    class C {
+    class A {
       constructor() {
         const isSubmitting = pendingAvatarDecoration.getFormState() === constants.SUBMITTING || pendingProfileFrame.isSubmitting;
         return isSubmitting;
       }
     }
     cResult[4] = items2;
-    cResult[5] = C;
-    tmp16 = C;
+    cResult[5] = A;
+    tmp16 = A;
     tmp15 = items2;
   } else {
     tmp15 = cResult[4];
@@ -134,15 +136,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     UserStore = tmp23;
-    class C {
+    class A {
       constructor() {
         const isSubmitting = pendingAvatarDecoration.getFormState() === constants.SUBMITTING || pendingProfileFrame.isSubmitting;
         return isSubmitting;
       }
     }
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn2 = function x() {
-        return () => {
+      const fn = function x() {
+        return function cleanup() {
           currentUser.cancel();
           const obj = pendingAvatar(pendingNickname[14]);
           obj.wait(stateFromStores(pendingNickname[15]).resetAllPending);
@@ -154,8 +156,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return UserStore.getCurrentUser();
         }
       }
-      cResult[10] = fn2;
-      class C {
+      cResult[10] = fn;
+      class A {
         constructor() {
           const isSubmitting = pendingAvatarDecoration.getFormState() === constants.SUBMITTING || pendingProfileFrame.isSubmitting;
           return isSubmitting;
@@ -163,7 +165,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       cResult[11] = items3;
       tmp25 = items3;
-      tmp24 = fn2;
+      tmp24 = fn;
     } else {
       tmp24 = cResult[10];
       tmp25 = cResult[11];
@@ -180,7 +182,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       items4[1] = pendingDisplayNameStyles;
-      class C {
+      class A {
         constructor() {
           const isSubmitting = pendingAvatarDecoration.getFormState() === constants.SUBMITTING || pendingProfileFrame.isSubmitting;
           return isSubmitting;
@@ -215,7 +217,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       cResult[14] = V;
-      class C {
+      class A {
         constructor() {
           const isSubmitting = pendingAvatarDecoration.getFormState() === constants.SUBMITTING || pendingProfileFrame.isSubmitting;
           return isSubmitting;
@@ -451,12 +453,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     }
-    const fn3 = function() {
+    function t12() {
       return closure_0(...arguments);
-    };
+    }
     cResult[27] = undefined;
     cResult[28] = stateFromStores;
-    cResult[29] = fn3;
+    cResult[29] = t12;
   }
   let obj2 = {};
   let merged = Object.assign(guildAutomodProfileQuarantineErrors);
@@ -464,7 +466,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[6] = guildAutomodProfileQuarantineErrors;
   cResult[7] = stateFromStoresObject.errors;
   cResult[8] = obj2;
-}) : (() => {
+}) : (function useGuildProfileEditForm() {
   let memo;
   let pendingAvatarDecoration;
   let pendingNameplate;
@@ -522,11 +524,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return delayedCall;
   }, []);
   const items3 = [memo];
-  const effect = selectedGuild.useEffect(() => () => {
+  const effect = selectedGuild.useEffect(() => (function cleanup() {
     memo.cancel();
     const obj = pendingAvatar(pendingNickname[14]);
     obj.wait(stateFromStores(pendingNickname[15]).resetAllPending);
-  }, items3);
+  }), items3);
   FormStates = pendingAvatar(tmp2[16])();
   const items4 = [tmp5, pendingDisplayNameStyles];
   let tmp17 = stateFromStores1;

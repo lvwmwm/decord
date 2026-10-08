@@ -1,19 +1,19 @@
-// Module ID: 9527
-// Function ID: 9528
+// Module ID: 8697
+// Function ID: 8698
 // Name: InstantInviteEmptyState
-// Dependencies: [19, 17, 9495, 21, 4896, 587, 558, 576, 504, 9496, 1126, 1188, 9528, 6433, 6893, 5916, 4892, 5601, 2]
+// Dependencies: [19, 17, 8659, 21, 5090, 587, 558, 576, 504, 8660, 1126, 1200, 8698, 6611, 7082, 6189, 5086, 5375, 2]
 
-// Module 9527 (InstantInviteEmptyState)
+// Module 8697 (InstantInviteEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
-import FreeFormTextInputDefault from "FreeFormTextInput" /* 6433 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9496 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9528 */;
+import FreeFormTextInputDefault from "FreeFormTextInput" /* 6611 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 8660 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8698 */;
 import react from "react" /* 19 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 9495 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 8659 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ const View = react_native.View;
 let obj = { container: { padding: 16 }, emptyStateContainer: { padding: 0, marginBottom: 16 }, emptyStateArt: { marginBottom: 16 }, emptyStateTitle: { marginBottom: 4 }, linkContainer: { maxWidth: "100%", flexDirection: "row", marginBottom: 8, gap: 8 }, inviteInput: { flexShrink: 1 }, expireCaption: { marginBottom: 16 }, settingsButton: size };
 size = { width: 48, height: 48, justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.xs };
 let closure_7 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInviteEmptyState(arg0) {
   let container;
   let emptyStateArt;
   let emptyStateContainer;
@@ -63,7 +63,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult = tmp(504);
   stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   if (cResult[2] !== stateFromStores) {
-    const fn2 = function h() {
+    function getLinkSublabel() {
       let maxUses;
       if (null == stateFromStores) {
         return null;
@@ -73,19 +73,23 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj2 = InstantInviteUtilsDefault;
         const maxAgeOptionByValue = obj2.getMaxAgeOptionByValue(tmp.maxAge);
         let str2 = "";
-        let str = "";
         const tmp5 = importDefault;
         if (null != maxAgeOptionByValue) {
-          let descriptiveLabel = maxAgeOptionByValue.descriptiveLabel;
-          if (descriptiveLabel == null) {
-            descriptiveLabel = str2;
+          let str = maxAgeOptionByValue.descriptiveLabel;
+          if (str == null) {
+            str = "";
           }
-          str = descriptiveLabel;
+          str2 = str;
         }
-        const getMaxUsesOptions = tmp5(9496).getMaxUsesOptions;
+        const getMaxUsesOptions = tmp5(8660).getMaxUsesOptions;
         const found = getMaxUsesOptions.find((value) => value.value === maxUses.maxUses);
+        let str3 = "";
         if (null != found) {
-          str2 = found.descriptiveLabel;
+          let str4 = found.descriptiveLabel;
+          if (str4 == null) {
+            str4 = "";
+          }
+          str3 = str4;
         }
         if (0 === stateFromStores.maxAge) {
           dqPWMN = intl6.t["99ISmn"];
@@ -95,13 +99,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           dqPWMN = intl6.t.dqPWMN;
         }
         const intl = tmp3(1126).intl;
-        const obj = { maxAge: str, maxUses: str2 };
+        const obj = { maxAge: str2, maxUses: str3 };
         return intl.format(dqPWMN, obj);
       }
-    };
+    }
     cResult[2] = stateFromStores;
-    cResult[3] = fn2;
-    tmp9 = fn2;
+    cResult[3] = getLinkSublabel;
+    tmp9 = getLinkSublabel;
   } else {
     tmp9 = cResult[3];
   }
@@ -148,7 +152,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           const _Symbol2 = Symbol;
           if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp26 = closure_5(tmp(6893).SettingsIcon, {});
+            const tmp26 = closure_5(tmp(7082).SettingsIcon, {});
             cResult[15] = tmp26;
             tmp24 = tmp26;
           } else {
@@ -193,7 +197,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   }
                   if (cResult[29] !== onShare) {
                     let obj2 = { text: tmp39, onPress: onShare };
-                    const tmp43 = closure_5(tmp(5601).Button, obj2);
+                    const tmp43 = closure_5(tmp(5375).Button, obj2);
                     cResult[29] = onShare;
                     cResult[30] = tmp43;
                     tmp41 = tmp43;
@@ -225,7 +229,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   tmp44 = tmp47;
                 }
                 const obj4 = { style: expireCaption, variant: "text-xs/medium", color: "text-muted", children: tmp34 };
-                const tmp38 = closure_5(tmp(4892).Text, obj4);
+                const tmp38 = closure_5(tmp(5086).Text, obj4);
                 cResult[25] = tmp4.expireCaption;
                 cResult[26] = tmp34;
                 cResult[27] = tmp38;
@@ -242,14 +246,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp30 = tmp33;
           }
           const obj6 = { accessibilityLabel: tmp22, accessibilityRole: "button", onPress: onPressSettings, style: tmp4.settingsButton, children: tmp24 };
-          const tmp29 = closure_5(tmp(5916).PressableOpacity, obj6);
+          const tmp29 = closure_5(tmp(6189).PressableOpacity, obj6);
           cResult[16] = onPressSettings;
           cResult[17] = tmp4.settingsButton;
           cResult[18] = tmp29;
           tmp27 = tmp29;
         }
       }
-      const obj7 = { accessibilityRole: "button", onPress: onCopy, editable: false, value: link, style: tmp4.inviteInput, forceAccessibleContainer: true, clearButtonVisibility: tmp(1188).ClearButtonVisibility.NEVER };
+      const obj7 = { accessibilityRole: "button", onPress: onCopy, editable: false, value: link, style: tmp4.inviteInput, forceAccessibleContainer: true, clearButtonVisibility: tmp(1200).ClearButtonVisibility.NEVER };
       const tmp20 = FreeFormTextInputDefault;
       const tmp21 = closure_5(tmp20, obj7);
       cResult[10] = onCopy;
@@ -260,14 +264,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const obj8 = { containerStyle: emptyStateContainer, imageStyle: emptyStateArt, titleStyle: emptyStateTitle, source: AssetRegistryDefault, title: tmp10, body: tmp11 };
-  const RefreshEmptyState = tmp(1188).RefreshEmptyState;
+  const RefreshEmptyState = tmp(1200).RefreshEmptyState;
   const tmp15 = closure_5(RefreshEmptyState, obj8);
   cResult[6] = tmp4.emptyStateArt;
   cResult[7] = tmp4.emptyStateContainer;
   cResult[8] = tmp4.emptyStateTitle;
   cResult[9] = tmp15;
   tmp14 = tmp15;
-}) : ((link) => {
+}) : (function InstantInviteEmptyState(link) {
   let formatResult;
   let intl;
   let intl2;
@@ -288,42 +292,46 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   stateFromStores = obj.useStateFromStores(items, () => inviteSettings.getInviteSettings());
   const obj2 = { style: tmp.container, children: items1 };
   const obj3 = { containerStyle: tmp.emptyStateContainer, imageStyle: tmp.emptyStateArt, titleStyle: tmp.emptyStateTitle, source: AssetRegistryDefault, title: intl.string(stateFromStores(1126).t.tQc0l8), body: intl2.string(stateFromStores(1126).t.DXgdcD) };
-  const RefreshEmptyState = stateFromStores(1188).RefreshEmptyState;
+  const RefreshEmptyState = stateFromStores(1200).RefreshEmptyState;
   intl = stateFromStores(1126).intl;
   intl2 = stateFromStores(1126).intl;
   items1 = [closure_5(RefreshEmptyState, obj3), , , ];
   const obj4 = { style: tmp.linkContainer, children: items2 };
-  const obj5 = { accessibilityRole: "button", onPress: onCopy, editable: false, value: str, style: tmp.inviteInput, forceAccessibleContainer: true, clearButtonVisibility: stateFromStores(1188).ClearButtonVisibility.NEVER };
+  const obj5 = { accessibilityRole: "button", onPress: onCopy, editable: false, value: str, style: tmp.inviteInput, forceAccessibleContainer: true, clearButtonVisibility: stateFromStores(1200).ClearButtonVisibility.NEVER };
   const tmp9 = FreeFormTextInputDefault;
   if (str == null) {
     str = "";
   }
   items2 = [closure_5(tmp9, obj5), ];
-  const obj6 = { accessibilityLabel: intl3.string(stateFromStores(1126).t["3D5yo/"]), accessibilityRole: "button", onPress: onPressSettings, style: tmp.settingsButton, children: closure_5(stateFromStores(6893).SettingsIcon, {}) };
-  const PressableOpacity = tmp2(5916).PressableOpacity;
+  const obj6 = { accessibilityLabel: intl3.string(stateFromStores(1126).t["3D5yo/"]), accessibilityRole: "button", onPress: onPressSettings, style: tmp.settingsButton, children: closure_5(stateFromStores(7082).SettingsIcon, {}) };
+  const PressableOpacity = tmp2(6189).PressableOpacity;
   intl3 = tmp2(1126).intl;
   items2[1] = closure_5(PressableOpacity, obj6);
   items1[1] = closure_6(View, obj4);
   const obj7 = { style: tmp.expireCaption, variant: "text-xs/medium", color: "text-muted", children: formatResult };
   formatResult = null;
-  const Text = tmp2(4892).Text;
+  const Text = tmp2(5086).Text;
   if (null != stateFromStores) {
     let dqPWMN;
     const tmp8Result = InstantInviteUtilsDefault;
     const maxAgeOptionByValue = tmp8Result.getMaxAgeOptionByValue(stateFromStores.maxAge);
-    let str2 = "";
     let str3 = "";
     if (null != maxAgeOptionByValue) {
-      let descriptiveLabel = maxAgeOptionByValue.descriptiveLabel;
-      if (descriptiveLabel == null) {
-        descriptiveLabel = str2;
+      let str4 = maxAgeOptionByValue.descriptiveLabel;
+      if (str4 == null) {
+        str4 = "";
       }
-      str3 = descriptiveLabel;
+      str3 = str4;
     }
-    const getMaxUsesOptions = tmp8(9496).getMaxUsesOptions;
+    const getMaxUsesOptions = tmp8(8660).getMaxUsesOptions;
     const found = getMaxUsesOptions.find((value) => value.value === stateFromStores.maxUses);
+    let str5 = "";
     if (null != found) {
-      str2 = found.descriptiveLabel;
+      let str6 = found.descriptiveLabel;
+      if (str6 == null) {
+        str6 = "";
+      }
+      str5 = str6;
     }
     if (0 === stateFromStores.maxAge) {
       dqPWMN = tmp2(1126).t["99ISmn"];
@@ -331,12 +339,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       dqPWMN = tmp2(1126).t.dqPWMN;
     }
     const intl4 = tmp2(1126).intl;
-    const obj8 = { maxAge: str3, maxUses: str2 };
+    const obj8 = { maxAge: str3, maxUses: str5 };
     formatResult = intl4.format(dqPWMN, obj8);
   }
   items1[2] = closure_5(Text, obj7);
   const obj9 = { text: intl5.string(stateFromStores(1126).t.Ej3B3Y), onPress: onShare };
-  const Button = tmp2(5601).Button;
+  const Button = tmp2(5375).Button;
   intl5 = tmp2(1126).intl;
   items1[3] = closure_5(Button, obj9);
   return closure_6(View, obj2);

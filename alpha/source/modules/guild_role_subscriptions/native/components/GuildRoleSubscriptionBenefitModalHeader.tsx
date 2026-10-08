@@ -1,24 +1,24 @@
-// Module ID: 17997
-// Function ID: 17998
+// Module ID: 18284
+// Function ID: 18285
 // Name: GuildRoleSubscriptionBenefitModalHeader
-// Dependencies: [32, 19, 17, 1085, 21, 4896, 587, 5922, 558, 576, 15060, 1126, 4892, 9455, 1188, 6626, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5090, 587, 5902, 558, 576, 15322, 1126, 5086, 7013, 1200, 6803, 2]
 
-// Module 17997 (GuildRoleSubscriptionBenefitModalHeader)
+// Module 18284 (GuildRoleSubscriptionBenefitModalHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6626 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9455 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15060 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6803 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 7013 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15322 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import TextStyles_mod from "TextStyles" /* 5922 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import TextStyles_mod from "TextStyles" /* 5902 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ obj5 = { textAlign: "center" };
 TextStyles = TextStyles_mod;
 const merged2 = Object.assign(TextStyles(Fonts.DISPLAY_EXTRABOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
 let closure_8 = createStyles(obj);
-let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
+let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionBenefitModalHeader(listingId) {
   let canSave;
   let items;
   let items3;
@@ -227,7 +227,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
   ({ headerButtonContainer: tmp3[0], headerButtonStart: tmp3[1] } = tmp4);
   cResult[2] = items4;
   tmp7 = items4;
-}) : ((canSave) => {
+}) : (function GuildRoleSubscriptionBenefitModalHeader(canSave) {
   let LegacyText;
   let Text;
   let intl;

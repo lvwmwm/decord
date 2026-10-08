@@ -1,21 +1,21 @@
-// Module ID: 5976
-// Function ID: 5977
+// Module ID: 6159
+// Function ID: 6160
 // Name: MemberVerificationGuildHeader
-// Dependencies: [19, 17, 5971, 21, 4896, 587, 1402, 5977, 558, 576, 1618, 4618, 5612, 5978, 5984, 1126, 4892, 2]
+// Dependencies: [19, 17, 6154, 21, 5090, 587, 1414, 6160, 558, 576, 1630, 4810, 5387, 6161, 6167, 1126, 5086, 2]
 
-// Module 5976 (MemberVerificationGuildHeader)
+// Module 6159 (MemberVerificationGuildHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
 import react from "react" /* 19 */;
-import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 5971 */;
+import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 6154 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let hasManualFormFields, importDefault;
+let importDefault;
 
 let AVATAR_BORDER_WIDTH;
 let AVATAR_SIZE;
@@ -40,7 +40,7 @@ const __initData3 = { code: "function MemberVerificationGuildHeaderTsx3(){const{
 const __initData4 = { code: "function MemberVerificationGuildHeaderTsx4(){const{scrollTop}=this.__closure;return scrollTop.get()*-1;}" };
 const __initData5 = { code: "function MemberVerificationGuildHeaderTsx5(){const{height,interpolate,scrollTop,safeAreaTop,scrollTopNegative}=this.__closure;return{width:'100%',height:height,opacity:interpolate(scrollTop.get(),[0,height-safeAreaTop],[1,0],'clamp'),transform:[{translateY:interpolate(scrollTopNegative.get(),[0,height],[0,-height],'clamp')},{scale:interpolate(scrollTopNegative.get(),[0,height],[1,1.08],'clamp')}]};}" };
 const __initData6 = { code: "function MemberVerificationGuildHeaderTsx6(){const{interpolate,scrollTopNegative,height,ANIMATION_GOLDEN_RATIO,AVATAR_SIZE}=this.__closure;return{transform:[{translateY:interpolate(scrollTopNegative.get(),[0,height],[0,-(height/ANIMATION_GOLDEN_RATIO)],'clamp')},{scale:interpolate(scrollTopNegative.get(),[0,AVATAR_SIZE],[1,ANIMATION_GOLDEN_RATIO],'clamp')}]};}" };
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasManualFormFields) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerificationGuildHeader(hasManualFormFields) {
   let guild;
   let guildBannerSource;
   let height;
@@ -352,7 +352,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasManualFormField
   cResult[3] = tmp12;
   cResult[4] = tmp14;
   tmp13 = tmp14;
-}) : ((hasManualFormFields) => {
+}) : (function MemberVerificationGuildHeader(hasManualFormFields) {
   let formatResult;
   let guild;
   let guildBannerSource;

@@ -1,13 +1,13 @@
-// Module ID: 12208
-// Function ID: 12209
+// Module ID: 12287
+// Function ID: 12288
 // Name: useCanGuildPowerupBeToggled
-// Dependencies: [19, 4773, 4774, 558, 576, 504, 12174, 1126, 2553, 2]
+// Dependencies: [19, 4967, 4968, 558, 576, 504, 12253, 1126, 2597, 2]
 
-// Module 12208 (useCanGuildPowerupBeToggled)
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4774 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12174 */;
+// Module 12287 (useCanGuildPowerupBeToggled)
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4968 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12253 */;
 import react from "react" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4773 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4967 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 let _require, closure_4, dependencyMap, importDefault, sku;
 
 const PowerupActiveStatusType = GuildPowerupsConstants.PowerupActiveStatusType;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, dependencies, arg2) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanGuildPowerupBeToggled(arg0, dependencies, arg2) {
   let allPowerups;
   let closure_0;
   let first;
@@ -151,7 +151,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, dependencies, 
     }
   }
   return tmp10;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useCanGuildPowerupBeToggled(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
   let closure_2;

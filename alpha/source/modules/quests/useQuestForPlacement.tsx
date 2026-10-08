@@ -1,17 +1,17 @@
-// Module ID: 14935
-// Function ID: 14936
+// Module ID: 15197
+// Function ID: 15198
 // Name: useQuestForPlacement
-// Dependencies: [19, 7197, 7200, 1102, 10925, 10028, 10007, 558, 576, 504, 7198, 7196, 5637, 2]
+// Dependencies: [19, 7376, 7379, 1102, 10576, 6076, 9537, 558, 576, 504, 7377, 7385, 5984, 2]
 
-// Module 14935 (useQuestForPlacement)
+// Module 15197 (useQuestForPlacement)
 import DurationsDefault from "Durations" /* 1102 */;
-import AdCreativeType from "AdCreativeType" /* 5637 */;
-import QuestActionCreators from "QuestActionCreators" /* 10007 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 10028 */;
-import QuestsEligibility from "QuestsEligibility" /* 10925 */;
+import AdCreativeType from "AdCreativeType" /* 5984 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 6076 */;
+import QuestActionCreators from "QuestActionCreators" /* 9537 */;
+import QuestsEligibility from "QuestsEligibility" /* 10576 */;
 import react from "react" /* 19 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7197 */;
-import QuestStore from "QuestStore" /* 7200 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7376 */;
+import QuestStore from "QuestStore" /* 7379 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ function maybeRefreshAd(fetchedAt, MOBILE_HOME_DOCK_AREA, arg2) {
 ({ useEffect: c3, useMemo: closure_4, useRef: hasOwnProperty } = react);
 let closure_8 = 30 * DurationsDefault.Millis.SECOND;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAdDecisionForPlacement(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -91,7 +91,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useAdDecisionForPlacement(arg0) {
   let closure_0;
   _require = arg0;
   const items = [AdDeliveryStore];
@@ -108,7 +108,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_10 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAdRefreshLoop(arg0) {
   let closure_0;
   let closure_2;
   _require = arg0;
@@ -160,7 +160,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = items;
   tmp4 = items;
   tmp3 = fn;
-}) : ((arg0) => {
+}) : (function useAdRefreshLoop(arg0) {
   let closure_0 = arg0;
   const ref = closure_5(null);
   let tmp = closure_10(arg0);
@@ -196,16 +196,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_11 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDeliveredCreativeForPlacement(arg0, arg1) {
   let closure_0;
   let first;
   let tmp11;
   let tmp13;
   let tmp15;
   let tmp16;
-  let tmp18;
-  let tmp21;
-  let tmp23;
   let tmp6;
   let tmp7;
   _require = arg1;
@@ -235,15 +232,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     tmp7 = cResult[3];
   }
   const tmpResult = tmp(504);
-  let stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
   const tmp9 = closure_10(arg0);
   let creative;
   if (tmp9 != null) {
     creative = tmp9.creative;
   }
   if (cResult[4] !== creative) {
-    const tmpResult5 = tmp(7198);
-    const deliveredQuestId = tmpResult5.getDeliveredQuestId(creative);
+    const tmpResult3 = tmp(7377);
+    const deliveredQuestId = tmpResult3.getDeliveredQuestId(creative);
     cResult[4] = creative;
     cResult[5] = deliveredQuestId;
     tmp11 = deliveredQuestId;
@@ -259,95 +256,209 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     tmp13 = cResult[6];
   }
   if (cResult[7] !== tmp11) {
-    const fn2 = function b() {
-      let tmp2 = null;
-      if (null != closure_1) {
-        const quests = QuestStore.quests;
-        let value = quests.get(tmp);
-        if (value == null) {
-          value = null;
+    class F {
+      constructor() {
+        let tmp2 = null;
+        if (null != closure_1) {
+          const quests = QuestStore.quests;
+          let value = quests.get(tmp);
+          if (value == null) {
+            value = null;
+          }
+          tmp2 = value;
         }
-        tmp2 = value;
+        return tmp2;
       }
-      return tmp2;
-    };
+    }
     const items3 = [tmp11];
     cResult[7] = tmp11;
-    cResult[8] = fn2;
+    cResult[8] = F;
     cResult[9] = items3;
     tmp16 = items3;
-    tmp15 = fn2;
+    tmp15 = F;
   } else {
-    tmp15 = cResult[8];
+    class F {
+      constructor() {
+        let tmp2 = null;
+        if (null != closure_1) {
+          const quests = QuestStore.quests;
+          let value = quests.get(tmp);
+          if (value == null) {
+            value = null;
+          }
+          tmp2 = value;
+        }
+        return tmp2;
+      }
+    }
     tmp16 = cResult[9];
   }
-  const tmpResult6 = tmp(504);
-  const stateFromStores1 = tmpResult6.useStateFromStores(tmp13, tmp15, tmp16);
+  const tmpResult4 = tmp(504);
+  const stateFromStores1 = tmpResult4.useStateFromStores(tmp13, tmp15, tmp16);
   if (cResult[10] !== stateFromStores1) {
-    let tmp19 = null;
+    class F {
+      constructor() {
+        let tmp2 = null;
+        if (null != closure_1) {
+          const quests = QuestStore.quests;
+          let value = quests.get(tmp);
+          if (value == null) {
+            value = null;
+          }
+          tmp2 = value;
+        }
+        return tmp2;
+      }
+    }
     if (null != stateFromStores1) {
-      tmp19 = null;
-      const tmpResult7 = tmp(7196);
-      if (!tmpResult7.isQuestExpired(stateFromStores1)) {
-        tmp19 = stateFromStores1;
+      class F {
+        constructor() {
+          let tmp2 = null;
+          if (null != closure_1) {
+            const quests = QuestStore.quests;
+            let value = quests.get(tmp);
+            if (value == null) {
+              value = null;
+            }
+            tmp2 = value;
+          }
+          return tmp2;
+        }
+      }
+      if (!obj5.isQuestExpired(stateFromStores1)) {
+        class F {
+          constructor() {
+            let tmp2 = null;
+            if (null != closure_1) {
+              const quests = QuestStore.quests;
+              let value = quests.get(tmp);
+              if (value == null) {
+                value = null;
+              }
+              tmp2 = value;
+            }
+            return tmp2;
+          }
+        }
       }
     }
     cResult[10] = stateFromStores1;
     cResult[11] = tmp19;
-    tmp18 = tmp19;
   } else {
-    tmp18 = cResult[11];
+    class F {
+      constructor() {
+        let tmp2 = null;
+        if (null != closure_1) {
+          const quests = QuestStore.quests;
+          let value = quests.get(tmp);
+          if (value == null) {
+            value = null;
+          }
+          tmp2 = value;
+        }
+        return tmp2;
+      }
+    }
   }
   if (stateFromStores == null) {
-    stateFromStores = tmp18;
+    class F {
+      constructor() {
+        let tmp2 = null;
+        if (null != closure_1) {
+          const quests = QuestStore.quests;
+          let value = quests.get(tmp);
+          if (value == null) {
+            value = null;
+          }
+          tmp2 = value;
+        }
+        return tmp2;
+      }
+    }
   }
-  let creative1;
   if (tmp9 != null) {
-    creative1 = tmp9.creative;
+    class F {
+      constructor() {
+        let tmp2 = null;
+        if (null != closure_1) {
+          const quests = QuestStore.quests;
+          let value = quests.get(tmp);
+          if (value == null) {
+            value = null;
+          }
+          tmp2 = value;
+        }
+        return tmp2;
+      }
+    }
   }
-  if (cResult[12] !== creative1) {
-    const tmpResult8 = tmp(7198);
-    const deliveredBounty = tmpResult8.getDeliveredBounty(creative1);
-    cResult[12] = creative1;
+  if (cResult[12] !== undefined) {
+    class F {
+      constructor() {
+        let tmp2 = null;
+        if (null != closure_1) {
+          const quests = QuestStore.quests;
+          let value = quests.get(tmp);
+          if (value == null) {
+            value = null;
+          }
+          tmp2 = value;
+        }
+        return tmp2;
+      }
+    }
+    const deliveredBounty = obj6.getDeliveredBounty(tmp20);
+    cResult[12] = undefined;
     cResult[13] = deliveredBounty;
-    tmp21 = deliveredBounty;
   } else {
-    tmp21 = cResult[13];
+    class F {
+      constructor() {
+        let tmp2 = null;
+        if (null != closure_1) {
+          const quests = QuestStore.quests;
+          let value = quests.get(tmp);
+          if (value == null) {
+            value = null;
+          }
+          tmp2 = value;
+        }
+        return tmp2;
+      }
+    }
   }
   if (null == stateFromStores) {
-    if (null == tmp21) {
-      let tmp25;
-      const _Symbol = Symbol;
-      if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj2 = { type: tmp(5637).AdCreativeType.NO_FILL };
-        cResult[18] = obj2;
-        tmp25 = obj2;
-      } else {
-        tmp25 = cResult[18];
+    class F {
+      constructor() {
+        let tmp2 = null;
+        if (null != closure_1) {
+          const quests = QuestStore.quests;
+          let value = quests.get(tmp);
+          if (value == null) {
+            value = null;
+          }
+          tmp2 = value;
+        }
+        return tmp2;
       }
-      tmp23 = tmp25;
-    } else {
-      let tmp24;
-      if (cResult[16] !== tmp21) {
-        const obj3 = { type: tmp(5637).AdCreativeType.BOUNTY, bounty: tmp21 };
-        cResult[16] = tmp21;
-        cResult[17] = obj3;
-        tmp24 = obj3;
-      } else {
-        tmp24 = cResult[17];
-      }
-      tmp23 = tmp24;
     }
-  } else if (cResult[14] !== stateFromStores) {
-    const obj4 = { type: tmp(5637).AdCreativeType.QUEST, quest: stateFromStores };
-    cResult[14] = stateFromStores;
-    cResult[15] = obj4;
-    tmp23 = obj4;
   } else {
-    tmp23 = cResult[15];
+    class F {
+      constructor() {
+        let tmp2 = null;
+        if (null != closure_1) {
+          const quests = QuestStore.quests;
+          let value = quests.get(tmp);
+          if (value == null) {
+            value = null;
+          }
+          tmp2 = value;
+        }
+        return tmp2;
+      }
+    }
   }
   return tmp23;
-}) : ((arg0, arg1) => {
+}) : (function useDeliveredCreativeForPlacement(arg0, arg1) {
   let closure_0;
   let stateFromStores;
   _require = arg1;
@@ -415,7 +526,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   }, items4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchQuestForAdPlacement(arg0) {
   let closure_0;
   let tmp11;
   let tmp7;
@@ -431,7 +542,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     creative = tmp5.creative;
   }
   if (cResult[0] !== creative) {
-    const tmpResult = tmp(7198);
+    const tmpResult = tmp(7377);
     const deliveredQuestId = tmpResult.getDeliveredQuestId(creative);
     cResult[0] = creative;
     cResult[1] = deliveredQuestId;
@@ -471,13 +582,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp13 = null;
   if (null != stateFromStores) {
     tmp13 = null;
-    const tmpResult4 = tmp(7196);
+    const tmpResult4 = tmp(7385);
     if (!tmpResult4.isQuestExpired(stateFromStores)) {
       tmp13 = stateFromStores;
     }
   }
   return tmp13;
-}) : ((arg0) => {
+}) : (function useFetchQuestForAdPlacement(arg0) {
   let closure_0;
   const tmp = closure_11(arg0);
   let tmp2 = closure_10(arg0);
@@ -505,7 +616,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp8 = null;
   if (null != stateFromStores) {
     tmp8 = null;
-    const tmp3Result2 = require("QuestDataUtils");
+    const tmp3Result2 = require("QuestExpirationUtils");
     if (!tmp3Result2.isQuestExpired(stateFromStores)) {
       tmp8 = stateFromStores;
     }

@@ -1,18 +1,18 @@
-// Module ID: 14275
-// Function ID: 14276
+// Module ID: 14099
+// Function ID: 14100
 // Name: ContextMenuItem
-// Dependencies: [19, 17, 21, 4618, 4896, 7592, 587, 558, 576, 7591, 5604, 5605, 5603, 4892, 2]
+// Dependencies: [19, 17, 21, 4810, 5090, 9299, 587, 558, 576, 9298, 5374, 5378, 5377, 5086, 2]
 
-// Module 14275 (ContextMenuItem)
+// Module 14099 (ContextMenuItem)
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4618 */;
-import spring from "spring" /* 5604 */;
-import ContextMenuState from "ContextMenuState" /* 7591 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 7592 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4810 */;
+import spring from "spring" /* 5374 */;
+import ContextMenuState from "ContextMenuState" /* 9298 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 9299 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 let tmp3;
-const springPresets = tmp3(5605);
+const springPresets = tmp3(5378);
 ({ View: closure_4, Pressable } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = ReanimatedRexport.createAnimatedComponent(Pressable);
@@ -51,7 +51,7 @@ const __initData5 = { code: "function ContextMenuItemNativeTsx5(){const{pan}=thi
 const __initData6 = { code: "function ContextMenuItemNativeTsx6(_current,previous){const{measure,ref,index,INDEX_BOUNDS_OFFSET,itemMeasurements,INDEX_BOUNDS_PAGE_X_OFFSET,INDEX_BOUNDS_PAGE_Y_OFFSET,INDEX_BOUNDS_WIDTH_OFFSET,INDEX_BOUNDS_HEIGHT_OFFSET}=this.__closure;if(previous==null||_current===previous)return;const measurements=measure(ref);if(measurements!=null){const{pageX:pageX,pageY:pageY,width:width,height:height}=measurements;const offset=index*INDEX_BOUNDS_OFFSET;itemMeasurements.get()[offset+INDEX_BOUNDS_PAGE_X_OFFSET]=pageX;itemMeasurements.get()[offset+INDEX_BOUNDS_PAGE_Y_OFFSET]=pageY;itemMeasurements.get()[offset+INDEX_BOUNDS_WIDTH_OFFSET]=width;itemMeasurements.get()[offset+INDEX_BOUNDS_HEIGHT_OFFSET]=height;}}" };
 const __initData7 = { code: "function ContextMenuItemNativeTsx7(){const{activeIndex,index,pressed,withSpring,backgroundColor,SUBTLE_SPRING}=this.__closure;const isActive=activeIndex.get()===index||pressed.get()===1;return{backgroundColor:withSpring(isActive?backgroundColor:'transparent',SUBTLE_SPRING,'animate-always')};}" };
 let closure_16 = { code: "function ContextMenuItemNativeTsx8(){const{activeIndex,index}=this.__closure;activeIndex.set(index);}" };
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMenuItem(arg0) {
   let IconComponent;
   let accessibilityRole;
   let end;
@@ -100,7 +100,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const measureResult = obj.measure(animatedRef);
         if (null != measureResult) {
           ({ pageX, pageY, width, height } = measureResult);
-          const result = index * tmp2(7591).INDEX_BOUNDS_OFFSET;
+          const result = index * tmp2(9298).INDEX_BOUNDS_OFFSET;
           const value = itemMeasurements.get();
           value[result + ContextMenuState.INDEX_BOUNDS_PAGE_X_OFFSET] = pageX;
           const value4 = itemMeasurements.get();
@@ -327,7 +327,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = iconSource;
   cResult[2] = tmp6.icon;
   cResult[3] = tmp11;
-}) : ((accessibilityRole) => {
+}) : (function ContextMenuItem(accessibilityRole) {
   let IconComponent;
   let callback2;
   let end;
@@ -382,7 +382,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const measureResult = obj.measure(animatedRef);
         if (null != measureResult) {
           ({ pageX, pageY, width, height } = measureResult);
-          const result = index * tmp2(7591).INDEX_BOUNDS_OFFSET;
+          const result = index * tmp2(9298).INDEX_BOUNDS_OFFSET;
           const value = itemMeasurements.get();
           value[result + ContextMenuState.INDEX_BOUNDS_PAGE_X_OFFSET] = pageX;
           const value4 = itemMeasurements.get();

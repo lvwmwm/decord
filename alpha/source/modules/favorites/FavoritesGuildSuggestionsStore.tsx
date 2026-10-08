@@ -1,16 +1,16 @@
-// Module ID: 16166
-// Function ID: 16167
+// Module ID: 16426
+// Function ID: 16427
 // Name: FavoritesGuildSuggestionsStore
-// Dependencies: [32, 19, 2042, 1085, 2048, 570, 558, 576, 10049, 2036, 6901, 2]
+// Dependencies: [32, 19, 2055, 1085, 2060, 570, 558, 576, 10294, 2048, 7090, 2]
 // Exports: setFavoritesGuildSuggestions
 
-// Module 16166 (FavoritesGuildSuggestionsStore)
+// Module 16426 (FavoritesGuildSuggestionsStore)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2042 */;
+import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2055 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -23,7 +23,7 @@ const ContentDismissActionType = DismissibleContentConstants.ContentDismissActio
 let items = [];
 let closure_8 = module_570.create(() => ({ suggestions: items, dismiss: NOOP }));
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesGuildSuggestions() {
   let first;
   const obj = react2;
   const cResult = obj.c(1);
@@ -37,9 +37,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return closure_8(first);
-}) : (() => closure_8((suggestions) => suggestions.suggestions));
+}) : (function useFavoritesGuildSuggestions() {
+  return closure_8((suggestions) => suggestions.suggestions);
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesGuildSuggestionCount() {
   let first;
   const obj = react2;
   const cResult = obj.c(1);
@@ -53,9 +55,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return closure_8(first);
-}) : (() => closure_8((suggestions) => suggestions.suggestions.length));
+}) : (function useFavoritesGuildSuggestionCount() {
+  return closure_8((suggestions) => suggestions.suggestions.length);
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasFavoritesGuildSuggestions() {
   let first;
   const obj = react2;
   const cResult = obj.c(1);
@@ -69,133 +73,141 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return closure_8(first);
-}) : (() => closure_8((suggestions) => suggestions.suggestions.length > 0));
+}) : (function useHasFavoritesGuildSuggestions() {
+  return closure_8((suggestions) => suggestions.suggestions.length > 0);
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesGuildSuggestionsVisibility() {
   let closure_0;
+  let first;
   let obj3;
   let suggestions;
+  let tmp11;
   let tmp12;
-  let tmp13;
+  let tmp14;
   let tmp15;
-  let tmp16;
-  let tmp5;
   let tmp7;
   let obj = require("react");
   const cResult = obj.c(11);
   const obj2 = require("FavoritesHooks");
   const favoritesAccess = obj2.useFavoritesAccess();
-  const hasAccess = favoritesAccess.hasAccess;
+  let hasAccess = favoritesAccess.hasAccess;
+  const isFreemium = favoritesAccess.isFreemium;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor(arg0) {
-        return arg0.postConnectionOpen;
-      }
-    }
-    cResult[0] = S;
-    tmp5 = S;
+    const fn = function c(postConnectionOpen) {
+      return postConnectionOpen.postConnectionOpen;
+    };
+    cResult[0] = fn;
+    first = fn;
   } else {
-    class S {
-      constructor(arg0) {
-        return arg0.postConnectionOpen;
-      }
-    }
+    first = cResult[0];
   }
-  DismissibleContentShownStateStore(tmp5);
+  const tmp6 = DismissibleContentShownStateStore(first);
   if (hasAccess) {
-    class S {
-      constructor(arg0) {
-        return arg0.postConnectionOpen;
-      }
-    }
+    hasAccess = isFreemium;
   }
   if (hasAccess) {
-    class S {
-      constructor(arg0) {
-        return arg0.postConnectionOpen;
-      }
-    }
+    hasAccess = tmp6;
   }
   if (cResult[1] !== hasAccess) {
-    class S {
-      constructor(arg0) {
-        return arg0.postConnectionOpen;
-      }
+    let items1;
+    if (hasAccess) {
+      items = [tmp(2048).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS];
+      items1 = items;
+    } else {
+      items1 = [];
     }
     cResult[1] = hasAccess;
-    cResult[2] = tmp8;
-    tmp7 = tmp8;
+    cResult[2] = items1;
+    tmp7 = items1;
   } else {
-    class S {
-      constructor(arg0) {
-        return arg0.postConnectionOpen;
-      }
-    }
+    tmp7 = cResult[2];
   }
   const tmpResult = require("useSelectedDismissibleContent");
-  const tmp9 = _slicedToArray(tmpResult.useSelectedDismissibleContent(tmp7), 2);
-  _require = tmp11;
-  const first = tmp9[0];
-  const FAVORITES_GUILD_SUGGESTIONS = tmp(2036).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS;
-  if (cResult[3] !== tmp9[1]) {
+  const tmp8 = _slicedToArray(tmpResult.useSelectedDismissibleContent(tmp7), 2);
+  _require = tmp10;
+  const first1 = tmp8[0];
+  const FAVORITES_GUILD_SUGGESTIONS = tmp(2048).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS;
+  if (cResult[3] !== tmp8[1]) {
     class I {
       constructor() {
-        obj = { dismiss() { /* body not rendered: F145779 */ } };
+        obj = {
+          dismiss() {
+                  closure_1_0(constants.USER_DISMISS);
+                  const obj = { suggestions };
+                  closure_2_8.setState(obj);
+                }
+        };
         setStateResult = closure_8.setState(obj);
         return;
       }
     }
-    items = [tmp9[1]];
-    cResult[3] = tmp9[1];
+    const items2 = [tmp8[1]];
+    cResult[3] = tmp8[1];
     cResult[4] = I;
-    cResult[5] = items;
-    tmp13 = items;
-    tmp12 = I;
+    cResult[5] = items2;
+    tmp12 = items2;
+    tmp11 = I;
   } else {
     class I {
       constructor() {
-        obj = { dismiss() { /* body not rendered: F145779 */ } };
+        obj = {
+          dismiss() {
+                  closure_1_0(constants.USER_DISMISS);
+                  const obj = { suggestions };
+                  closure_2_8.setState(obj);
+                }
+        };
         setStateResult = closure_8.setState(obj);
         return;
       }
     }
-    tmp13 = cResult[5];
+    tmp12 = cResult[5];
   }
-  const layoutEffect = react.useLayoutEffect(tmp12, tmp13);
+  const layoutEffect = react.useLayoutEffect(tmp11, tmp12);
   const obj4 = react;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class O {
+    class D {
       constructor() {
-        return () => { /* body not rendered: F145780 */ };
+        return () => {
+          const obj = { dismiss };
+          return state.setState(obj);
+        };
       }
     }
-    const items1 = [];
-    cResult[6] = O;
-    cResult[7] = items1;
-    tmp16 = items1;
-    tmp15 = O;
+    const items3 = [];
+    cResult[6] = D;
+    cResult[7] = items3;
+    tmp15 = items3;
+    tmp14 = D;
   } else {
-    class O {
+    class D {
       constructor() {
-        return () => { /* body not rendered: F145780 */ };
+        return () => {
+          const obj = { dismiss };
+          return state.setState(obj);
+        };
       }
     }
-    tmp16 = cResult[7];
+    tmp15 = cResult[7];
   }
-  const layoutEffect1 = obj4.useLayoutEffect(tmp15, tmp16);
+  const layoutEffect1 = obj4.useLayoutEffect(tmp14, tmp15);
   if (cResult[8] === hasAccess) {
-    class O {
+    class D {
       constructor() {
-        return () => { /* body not rendered: F145780 */ };
+        return () => {
+          const obj = { dismiss };
+          return state.setState(obj);
+        };
       }
     }
     return obj3;
   }
-  obj3 = { isEligible: hasAccess, isSelected: first === FAVORITES_GUILD_SUGGESTIONS };
+  obj3 = { isEligible: hasAccess, isSelected: first1 === FAVORITES_GUILD_SUGGESTIONS };
   cResult[8] = hasAccess;
-  cResult[9] = first === FAVORITES_GUILD_SUGGESTIONS;
+  cResult[9] = first1 === FAVORITES_GUILD_SUGGESTIONS;
   cResult[10] = obj3;
-}) : (() => {
+}) : (function useFavoritesGuildSuggestionsVisibility() {
   let closure_0;
   let items1;
   let suggestions;
@@ -210,10 +222,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (hasAccess) {
     hasAccess = tmp4;
   }
-  const useSelectedDismissibleContent = tmp(6901).useSelectedDismissibleContent;
+  const useSelectedDismissibleContent = tmp(7090).useSelectedDismissibleContent;
   require("useSelectedDismissibleContent");
   if (hasAccess) {
-    items = [tmp(2036).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS];
+    items = [tmp(2048).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS];
     items1 = items;
   } else {
     items1 = [];
@@ -222,7 +234,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   _require = tmp8;
   const first = tmp6[0];
   const items2 = [tmp6[1]];
-  const FAVORITES_GUILD_SUGGESTIONS = tmp(2036).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS;
+  const FAVORITES_GUILD_SUGGESTIONS = tmp(2048).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS;
   const layoutEffect = react.useLayoutEffect(() => {
     let obj = {
       dismiss() {
@@ -244,7 +256,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return { isEligible: hasAccess, isSelected: first === FAVORITES_GUILD_SUGGESTIONS };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesGuildSuggestionsDismissal() {
   let first;
   const obj = react2;
   const cResult = obj.c(1);
@@ -258,7 +270,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return closure_8(first);
-}) : (() => closure_8((dismiss) => dismiss.dismiss));
+}) : (function useFavoritesGuildSuggestionsDismissal() {
+  return closure_8((dismiss) => dismiss.dismiss);
+});
 function setFavoritesGuildSuggestions(suggestions) {
   const obj = { suggestions };
   closure_8.setState(obj);

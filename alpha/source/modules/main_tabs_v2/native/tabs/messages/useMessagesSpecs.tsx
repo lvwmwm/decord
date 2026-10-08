@@ -1,16 +1,16 @@
-// Module ID: 15992
-// Function ID: 15993
+// Module ID: 16252
+// Function ID: 16253
 // Name: useMessagesSpecs
-// Dependencies: [109, 19, 1085, 558, 576, 5609, 1618, 15993, 15996, 16008, 587, 2]
+// Dependencies: [109, 19, 1085, 558, 576, 5382, 1630, 16253, 16256, 16268, 587, 2]
 
-// Module 15992 (useMessagesSpecs)
+// Module 16252 (useMessagesSpecs)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import useFontScale from "useFontScale" /* 5609 */;
-import MessagesHeader from "MessagesHeader" /* 15993 */;
-import MessagesItemChannel from "MessagesItemChannel" /* 15996 */;
-import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 16008 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import useFontScale from "useFontScale" /* 5382 */;
+import MessagesHeader from "MessagesHeader" /* 16253 */;
+import MessagesItemChannel from "MessagesItemChannel" /* 16256 */;
+import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 16268 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -21,7 +21,7 @@ const nativeDefault = tmp5(587);
 let closure_3 = ["height"];
 let closure_4 = ["height"];
 const DM_WIDTH = Constants.DM_WIDTH;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessagesSpecs() {
   let tmp10;
   let tmp15;
   let tmp7;
@@ -85,12 +85,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[11] = tmp15;
   cResult[12] = obj4;
   tmp17 = obj4;
-}) : (() => {
+}) : (function useMessagesSpecs() {
   let fontScale;
   let top;
-  let obj = fontScale(5609);
+  let obj = fontScale(5382);
   fontScale = obj.useFontScale();
-  top = top(1618)().top;
+  top = top(1630)().top;
   const items = [fontScale, top];
   return react.useMemo(() => {
     let obj4;

@@ -8,7 +8,7 @@
 import SDK_PACKAGE_NAME from "SDK_PACKAGE_NAME" /* 989 */;
 
 const require = globalThis.__r;
-let _require, c0, dependencyMap;
+let _require, c0, dependencyMap, version;
 
 let items;
 let fn = this && this.__awaiter || ((arg0, arg1, arg2, arg3) => {
@@ -154,7 +154,7 @@ export const sdkInfoIntegration = () => {
               name = c3.name;
             }
             sdk.name = name;
-            let version = closure_130_0.sdk.version;
+            version = closure_130_0.sdk.version;
             const sdk2 = closure_130_0.sdk;
             if (!version) {
               version = c3.version;

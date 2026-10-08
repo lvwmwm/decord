@@ -1,9 +1,9 @@
-// Module ID: 17567
-// Function ID: 17568
+// Module ID: 17849
+// Function ID: 17850
 // Name: ActionRowLayoutComponent
 // Dependencies: [19, 17, 21, 558, 576, 2]
 
-// Module 17567 (ActionRowLayoutComponent)
+// Module 17849 (ActionRowLayoutComponent)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionRowLayoutComponent(arg0) {
   let components;
   let renderComponents;
   const obj = react2;
@@ -47,7 +47,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return tmp2;
-}) : ((components) => {
+}) : (function ActionRowLayoutComponent(components) {
   components = components.components;
   let tmp2 = null;
   if (null != components) {

@@ -1,18 +1,16 @@
-// Module ID: 16580
-// Function ID: 16581
+// Module ID: 16835
+// Function ID: 16836
 // Name: useSortedMemberApplications
-// Dependencies: [19, 5939, 558, 576, 504, 4708, 2]
+// Dependencies: [19, 6122, 558, 576, 504, 4902, 2]
 
-// Module 16580 (useSortedMemberApplications)
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4708 */;
+// Module 16835 (useSortedMemberApplications)
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4902 */;
 import react from "react" /* 19 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5939 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6122 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let guildId;
-
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSortedMemberApplications(guildId) {
   let applicationStatus;
   let first;
   const obj = guildId(applicationStatus[3]);
@@ -72,7 +70,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[4] = items2;
   tmp8 = items2;
   tmp7 = fn;
-}) : ((guildId) => {
+}) : (function useSortedMemberApplications(guildId) {
   let items2;
   guildId = guildId.guildId;
   const applicationStatus = guildId.applicationStatus;

@@ -1,24 +1,24 @@
-// Module ID: 9315
-// Function ID: 9316
+// Module ID: 8491
+// Function ID: 8492
 // Name: GuildScheduledEventDetailsActionSheet
-// Dependencies: [32, 19, 17, 2074, 7050, 2057, 21, 4896, 587, 1126, 558, 576, 6664, 6688, 504, 9305, 9316, 9306, 9217, 1618, 9317, 9296, 9318, 6119, 9320, 9326, 6652, 2]
+// Dependencies: [32, 19, 17, 2086, 6059, 2069, 21, 5090, 587, 1126, 558, 576, 6841, 6865, 504, 8492, 8503, 8493, 8504, 1630, 8505, 8506, 8752, 6298, 8754, 8755, 6829, 2]
 
-// Module 9315 (GuildScheduledEventDetailsActionSheet)
+// Module 8491 (GuildScheduledEventDetailsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9306 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8493 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7050 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6059 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2069 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, eventId;
+let BottomSheet;
 
 let c10;
 let c9;
@@ -33,7 +33,7 @@ const View = react_native.View;
 let obj = { segmentedControl: obj2, header: { flexDirection: "column" } };
 obj2 = { paddingTop: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_12 };
 let closure_12 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((eventId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildScheduledEventDetailsActionSheet(eventId) {
   let closure_3;
   let error;
   let first;
@@ -88,17 +88,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((eventId) => {
       if (stateFromStores != null) {
         guild_id1 = stateFromStores.guild_id;
       }
-      const fn = function x() {
-        let guild_id;
-        const getGuild = GuildStore.getGuild;
-        if (stateFromStores != null) {
-          guild_id = stateFromStores.guild_id;
+      class G {
+        constructor() {
+          let guild_id;
+          const getGuild = GuildStore.getGuild;
+          if (stateFromStores != null) {
+            guild_id = stateFromStores.guild_id;
+          }
+          return null != getGuild(guild_id);
         }
-        return null != getGuild(guild_id);
-      };
+      }
       cResult[6] = guild_id1;
-      cResult[7] = fn;
-      tmp21 = fn;
+      cResult[7] = G;
+      tmp21 = G;
     } else {
       tmp21 = cResult[7];
     }
@@ -124,21 +126,36 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((eventId) => {
     }
     if (cResult[8] === arr4) {
       let guild_id3;
-      const tmp34 = cResult[11];
+      class G {
+        constructor() {
+          let guild_id;
+          const getGuild = GuildStore.getGuild;
+          if (stateFromStores != null) {
+            guild_id = stateFromStores.guild_id;
+          }
+          return null != getGuild(guild_id);
+        }
+      }
       if (stateFromStores != null) {
         guild_id3 = stateFromStores.guild_id;
       }
-      if (tmp34 === guild_id3) {
-        let tmp38;
-        let id1;
-        const tmp36 = cResult[12];
-        if (stateFromStores != null) {
-          id1 = stateFromStores.id;
+      if (tmp33 === guild_id3) {
+        let tmp37;
+        const tmp35 = cResult[12];
+        class G {
+          constructor() {
+            let guild_id;
+            const getGuild = GuildStore.getGuild;
+            if (stateFromStores != null) {
+              guild_id = stateFromStores.guild_id;
+            }
+            return null != getGuild(guild_id);
+          }
         }
-        if (tmp36 === id1) {
-          tmp38 = cResult[13];
+        if (tmp35 === undefined) {
+          tmp37 = cResult[13];
         }
-        const tmp8Result = _slicedToArray(event(stateFromStores[18])(tmp38), 2);
+        const tmp8Result = _slicedToArray(event(stateFromStores[18])(tmp37), 2);
         first2 = tmp8Result[0];
         ({ loading, error } = tmp8Result[1]);
         const tmp8Result3 = _slicedToArray(first2.useState(0), 2);
@@ -168,7 +185,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((eventId) => {
               GuildStore(nativeEvent.nativeEvent.layout.height);
             }
           }
-          cResult[14] = X;
+          class G {
+            constructor() {
+              let guild_id;
+              const getGuild = GuildStore.getGuild;
+              if (stateFromStores != null) {
+                guild_id = stateFromStores.guild_id;
+              }
+              return null != getGuild(guild_id);
+            }
+          }
         } else {
           class X {
             constructor(nativeEvent) {
@@ -183,7 +209,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((eventId) => {
               GuildStore(nativeEvent.nativeEvent.layout.height);
             }
           }
-          cResult[15] = tmp48;
+          class G {
+            constructor() {
+              let guild_id;
+              const getGuild = GuildStore.getGuild;
+              if (stateFromStores != null) {
+                guild_id = stateFromStores.guild_id;
+              }
+              return null != getGuild(guild_id);
+            }
+          }
         } else {
           class X {
             constructor(nativeEvent) {
@@ -191,7 +226,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((eventId) => {
             }
           }
         }
-        if (cResult[16] === tmp44) {
+        if (cResult[16] === tmp43) {
           class X {
             constructor(nativeEvent) {
               GuildStore(nativeEvent.nativeEvent.layout.height);
@@ -223,15 +258,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((eventId) => {
             return guildScheduledEvent;
           }
         }
-        cResult[16] = tmp44;
+        cResult[16] = tmp43;
         cResult[17] = first2;
         cResult[18] = stateFromStores1;
         cResult[19] = tmp6ResultResult;
         cResult[20] = items2;
         cResult[21] = 0;
-        cResult[22] = tmp44;
+        cResult[22] = tmp43;
         cResult[23] = ue;
-        cResult[24] = tmp54;
+        cResult[24] = tmp53;
         cResult[25] = useSegmentedControlState;
       }
       if (stateFromStores != null) {
@@ -266,7 +301,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((eventId) => {
       }
       cResult[12] = undefined;
       cResult[13] = M;
-      tmp38 = M;
+      tmp37 = M;
     }
     let tmp30 = arr4;
     if (num6 > 0) {
@@ -279,6 +314,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((eventId) => {
         class X {
           constructor(nativeEvent) {
             GuildStore(nativeEvent.nativeEvent.layout.height);
+          }
+        }
+        class G {
+          constructor() {
+            let guild_id;
+            const getGuild = GuildStore.getGuild;
+            if (stateFromStores != null) {
+              guild_id = stateFromStores.guild_id;
+            }
+            return null != getGuild(guild_id);
           }
         }
         const obj3 = { count: num6 };
@@ -315,7 +360,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((eventId) => {
   cResult[4] = items3;
   tmp14 = items3;
   tmp13 = S;
-}) : ((eventId) => {
+}) : (function GuildScheduledEventDetailsActionSheet(eventId) {
   let _undefined;
   let _undefined2;
   let _undefined3;
@@ -336,7 +381,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((eventId) => {
   let tmp23;
   let tmp36Result2;
   let tmp8;
-  const f100292 = () => {
+  const f98036 = () => {
     let id;
     const getGuildEventUsers = GuildScheduledEventManagerDefault.getGuildEventUsers;
     GuildScheduledEventManagerDefault;
@@ -421,9 +466,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((eventId) => {
     }
     return tmp5;
   }, items3);
-  [c5, tmp19] = tmp5(tmp2(tmp3[18])(f100292), 2);
+  [c5, tmp19] = tmp5(tmp2(tmp3[18])(f98036), 2);
   ({ loading, error } = tmp19);
-  tmp5(tmp2(tmp3[18])(f100292), 2);
+  tmp5(tmp2(tmp3[18])(f98036), 2);
   [tmp21, c6] = tmp5(obj.useState(0), 2);
   tmp5(obj.useState(0), 2);
   [tmp23, c7] = tmp5(obj.useState(0), 2);

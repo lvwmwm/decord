@@ -1,17 +1,17 @@
-// Module ID: 9844
-// Function ID: 9845
+// Module ID: 10405
+// Function ID: 10406
 // Name: useInappropriateConversationSafetyToolsWarningForChannel
-// Dependencies: [558, 576, 9805, 9806, 9803, 2]
+// Dependencies: [558, 576, 10368, 10369, 10366, 2]
 
-// Module 9844 (useInappropriateConversationSafetyToolsWarningForChannel)
+// Module 10405 (useInappropriateConversationSafetyToolsWarningForChannel)
 import react from "react" /* 576 */;
-import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 9803 */;
-import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 9805 */;
-import useSafetyAlertsSettingOrDefault from "useSafetyAlertsSettingOrDefault" /* 9806 */;
+import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 10366 */;
+import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 10368 */;
+import useSafetyAlertsSettingOrDefault from "useSafetyAlertsSettingOrDefault" /* 10369 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInappropriateConversationSafetyToolsWarningForChannel(arg0) {
   let first;
   const obj = react;
   const cResult = obj.c(6);
@@ -87,7 +87,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return first1;
     }
   }
-}) : ((arg0) => {
+}) : (function useInappropriateConversationSafetyToolsWarningForChannel(arg0) {
   const obj = SelfModInappropriateConversationExperiment;
   const isEligibleForInappropriateConversationWarning = obj.useIsEligibleForInappropriateConversationWarning({ location: "safety-tools-button" });
   const obj2 = useSafetyAlertsSettingOrDefault;

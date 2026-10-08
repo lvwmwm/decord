@@ -1,17 +1,17 @@
-// Module ID: 17899
-// Function ID: 17900
+// Module ID: 18186
+// Function ID: 18187
 // Name: GuildSettingsAnalyticsUtils
-// Dependencies: [19, 4786, 2074, 17900, 1085, 558, 576, 504, 1126, 17918, 1888, 2]
+// Dependencies: [19, 4980, 2086, 18187, 1085, 558, 576, 504, 1126, 18205, 1900, 2]
 // Exports: getGuildAnalyticsCardProps
 
-// Module 17899 (GuildSettingsAnalyticsUtils)
+// Module 18186 (GuildSettingsAnalyticsUtils)
 import intl3 from "intl" /* 1126 */;
-import NumberUtils from "NumberUtils" /* 1888 */;
-import GuildSettingsAnalyticsActionCreators from "GuildSettingsAnalyticsActionCreators" /* 17918 */;
+import NumberUtils from "NumberUtils" /* 1900 */;
+import GuildSettingsAnalyticsActionCreators from "GuildSettingsAnalyticsActionCreators" /* 18205 */;
 import react from "react" /* 19 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4786 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import GuildSettingsAnalyticsStore from "GuildSettingsAnalyticsStore" /* 17900 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4980 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import GuildSettingsAnalyticsStore from "GuildSettingsAnalyticsStore" /* 18187 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -23,7 +23,7 @@ let metroImportDefault;
 let metroRequire;
 ({ AbortCodes: metroRequire, GuildFeatures: metroImportDefault } = Constants);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFailsMemberCount(arg0) {
   let closure_0;
   let first;
   let tmp11;
@@ -42,7 +42,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function s() {
+    const fn = function u() {
       return GuildStore.getGuild(closure_0);
     };
     const items1 = [arg0];
@@ -65,57 +65,38 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp9 = cResult[4];
   }
   if (cResult[5] !== arg0) {
-    class E {
-      constructor() {
-        return GuildMemberCountStore.getMemberCount(closure_0);
-      }
-    }
+    const fn2 = function y() {
+      return GuildMemberCountStore.getMemberCount(closure_0);
+    };
     const items3 = [arg0];
     cResult[5] = arg0;
-    cResult[6] = E;
+    cResult[6] = fn2;
     cResult[7] = items3;
     tmp12 = items3;
-    tmp11 = E;
+    tmp11 = fn2;
   } else {
-    class E {
-      constructor() {
-        return GuildMemberCountStore.getMemberCount(closure_0);
-      }
-    }
+    tmp11 = cResult[6];
     tmp12 = cResult[7];
   }
   const tmpResult2 = require("get initialized");
   const stateFromStores1 = tmpResult2.useStateFromStores(tmp9, tmp11, tmp12);
   let tmp14 = null == stateFromStores || null == stateFromStores1;
   if (!tmp14) {
-    class E {
-      constructor() {
-        return GuildMemberCountStore.getMemberCount(closure_0);
-      }
-    }
-    const hasItem = obj4.has(constants2.PARTNERED);
+    const features = stateFromStores.features;
+    const hasItem = features.has(constants2.PARTNERED);
     let tmp17 = !hasItem;
     const tmp15 = constants2;
     if (tmp17) {
-      class E {
-        constructor() {
-          return GuildMemberCountStore.getMemberCount(closure_0);
-        }
-      }
-      tmp17 = !obj5.has(tmp15.VERIFIED);
+      const features2 = stateFromStores.features;
+      tmp17 = !features2.has(tmp15.VERIFIED);
     }
     if (tmp17) {
-      class E {
-        constructor() {
-          return GuildMemberCountStore.getMemberCount(closure_0);
-        }
-      }
       tmp17 = stateFromStores1 < 500;
     }
     tmp14 = tmp17;
   }
   return tmp14;
-}) : ((arg0) => {
+}) : (function useFailsMemberCount(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildStore];
@@ -144,7 +125,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAnalyticsOverview(arg0) {
   let analytics;
   let closure_0;
   let closure_1;
@@ -169,7 +150,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function s() {
+    const fn = function u() {
       let overviewAnalytics = null;
       if (null != closure_0) {
         overviewAnalytics = GuildSettingsAnalyticsStore.getOverviewAnalytics(tmp);
@@ -235,27 +216,25 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     intl2 = tmp(1126).intl;
     tmp16 = obj4;
   }
-  class E {
-    constructor() {
-      const tmp2 = null == closure_0 || closure_1;
-      if (!tmp2) {
-        const obj = GuildSettingsAnalyticsActionCreators;
-        const engagementOverview = obj.fetchEngagementOverview(tmp);
-        const obj2 = GuildSettingsAnalyticsActionCreators;
-        const growthActivationOverview = obj2.fetchGrowthActivationOverview(tmp);
-        const obj3 = GuildSettingsAnalyticsActionCreators;
-        const growthActivationRetention = obj3.fetchGrowthActivationRetention(tmp);
-      }
+  const fn2 = function y() {
+    const tmp2 = null == closure_0 || closure_1;
+    if (!tmp2) {
+      const obj = GuildSettingsAnalyticsActionCreators;
+      const engagementOverview = obj.fetchEngagementOverview(tmp);
+      const obj2 = GuildSettingsAnalyticsActionCreators;
+      const growthActivationOverview = obj2.fetchGrowthActivationOverview(tmp);
+      const obj3 = GuildSettingsAnalyticsActionCreators;
+      const growthActivationRetention = obj3.fetchGrowthActivationRetention(tmp);
     }
-  }
+  };
   const items2 = [arg0, tmp4];
   cResult[4] = tmp4;
   cResult[5] = arg0;
-  cResult[6] = E;
+  cResult[6] = fn2;
   cResult[7] = items2;
   tmp11 = items2;
-  tmp10 = E;
-}) : ((arg0) => {
+  tmp10 = fn2;
+}) : (function useGuildAnalyticsOverview(arg0) {
   let closure_0;
   let closure_1;
   let intl;

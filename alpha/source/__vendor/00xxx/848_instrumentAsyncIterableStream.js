@@ -303,7 +303,7 @@ let obj = function _instrumentAsyncIterableStream() {
                 closure_3 = undefined;
                 value4 = undefined;
                 value5 = undefined;
-                obj5 = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "duration", cacheCreationInputTokens: "code", cacheReadInputTokens: "Array", toolCalls: [], activeToolBlocks: {} };
+                obj5 = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "__packager_asset", cacheCreationInputTokens: "sk", cacheReadInputTokens: "fill", toolCalls: [], activeToolBlocks: {} };
                 closure_4 = false;
                 c5 = false;
                 c9 = 4;
@@ -1062,21 +1062,21 @@ export const instrumentAsyncIterableStream = function instrumentAsyncIterableStr
 export const instrumentMessageStream = function instrumentMessageStream(applyResult, arg1, flag) {
   let closure_0 = arg1;
   let closure_1 = flag;
-  let closure_2 = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "duration", cacheCreationInputTokens: "code", cacheReadInputTokens: "Array", toolCalls: [], activeToolBlocks: {} };
+  obj = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "__packager_asset", cacheCreationInputTokens: "sk", cacheReadInputTokens: "fill", toolCalls: [], activeToolBlocks: {} };
   applyResult.on("streamEvent", (arg0) => {
-    processEvent(arg0, closure_2, flag, closure_0);
+    processEvent(arg0, obj, flag, closure_0);
   });
   applyResult.on("message", () => {
     let tmp2 = closure_1;
     if (closure_0.isRecording()) {
-      if (closure_2.responseId) {
+      if (obj.responseId) {
         const obj2 = {};
-        obj2[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_RESPONSE_ID_ATTRIBUTE] = closure_2.responseId;
+        obj2[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_RESPONSE_ID_ATTRIBUTE] = obj.responseId;
         closure_0.setAttributes(obj2);
       }
-      if (closure_2.responseModel) {
+      if (obj.responseModel) {
         const obj3 = {};
-        obj3[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_RESPONSE_MODEL_ATTRIBUTE] = closure_2.responseModel;
+        obj3[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_RESPONSE_MODEL_ATTRIBUTE] = obj.responseModel;
         closure_0.setAttributes(obj3);
       }
       const obj4 = _mod836;
@@ -1085,14 +1085,14 @@ export const instrumentMessageStream = function instrumentMessageStream(applyRes
       closure_1 = true;
       obj5[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_RESPONSE_STREAMING_ATTRIBUTE] = true;
       closure_0.setAttributes(obj5);
-      if (closure_2.finishReasons.length > 0) {
+      if (obj.finishReasons.length > 0) {
         const obj6 = {};
         const setAttributes = obj.setAttributes;
         const _JSON = JSON;
-        obj6[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_RESPONSE_FINISH_REASONS_ATTRIBUTE] = JSON.stringify(closure_2.finishReasons);
+        obj6[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_RESPONSE_FINISH_REASONS_ATTRIBUTE] = JSON.stringify(obj.finishReasons);
         setAttributes(obj6);
       }
-      const tmp21 = tmp2 && closure_2.responseTexts.length > 0;
+      const tmp21 = tmp2 && obj.responseTexts.length > 0;
       if (tmp21) {
         const obj7 = {};
         const setAttributes2 = obj.setAttributes;
@@ -1107,7 +1107,7 @@ export const instrumentMessageStream = function instrumentMessageStream(applyRes
         const obj8 = {};
         const setAttributes3 = obj.setAttributes;
         const _JSON2 = JSON;
-        obj8[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_RESPONSE_TOOL_CALLS_ATTRIBUTE] = JSON.stringify(closure_2.toolCalls);
+        obj8[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_RESPONSE_TOOL_CALLS_ATTRIBUTE] = JSON.stringify(obj.toolCalls);
         setAttributes3(obj8);
       }
       closure_0.end();

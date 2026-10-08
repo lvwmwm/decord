@@ -1,16 +1,16 @@
-// Module ID: 7672
-// Function ID: 7673
+// Module ID: 7993
+// Function ID: 7994
 // Name: WelcomeCTAUtils
-// Dependencies: [1377, 7673, 1085, 11, 6978, 1252, 2]
+// Dependencies: [1389, 7994, 1085, 11, 7167, 1264, 2]
 // Exports: handleWelcomeCtaClicked, pickHelloSticker, pickWelcomeSticker
 
-// Module 7672 (WelcomeCTAUtils)
+// Module 7993 (WelcomeCTAUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6978 */;
-import WelcomeCTAConstants from "WelcomeCTAConstants" /* 7673 */;
-import UserStore from "UserStore" /* 1377 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7167 */;
+import WelcomeCTAConstants from "WelcomeCTAConstants" /* 7994 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 const WELCOME_STICKERS = WelcomeCTAConstants.WELCOME_STICKERS;

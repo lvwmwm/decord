@@ -1,37 +1,37 @@
-// Module ID: 16567
-// Function ID: 16568
+// Module ID: 16822
+// Function ID: 16823
 // Name: GuildSettingsModalMembers
-// Dependencies: [109, 32, 19, 17, 502, 4786, 2112, 2106, 2074, 4515, 1377, 9283, 1085, 21, 9509, 4896, 587, 558, 576, 1490, 10698, 5048, 4728, 1126, 10693, 1618, 504, 6778, 16568, 9250, 7590, 16569, 6890, 9325, 5712, 9282, 11, 4596, 6554, 8404, 1188, 7915, 6543, 2]
+// Dependencies: [109, 32, 19, 17, 502, 4980, 2124, 2118, 2086, 4707, 1389, 8614, 1085, 21, 8675, 5090, 587, 558, 576, 1502, 10286, 5405, 4922, 1126, 10281, 1630, 504, 6954, 16823, 8579, 9297, 16824, 7079, 8646, 6102, 8613, 11, 4788, 6730, 8600, 1200, 8334, 6719, 2]
 
-// Module 16567 (GuildSettingsModalMembers)
+// Module 16822 (GuildSettingsModalMembers)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4596 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5712 */;
-import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 6778 */;
-import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 9250 */;
-import _mod9509 from "module_9509" /* 9509 */;
-import RolePillDefault from "RolePill" /* 10698 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4788 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6102 */;
+import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 6954 */;
+import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8579 */;
+import _mod8675 from "module_8675" /* 8675 */;
+import RolePillDefault from "RolePill" /* 10286 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4786 */;
-import GuildMemberStore_mod from "GuildMemberStore" /* 2112 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import UserStore from "UserStore" /* 1377 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9283 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4980 */;
+import GuildMemberStore_mod from "GuildMemberStore" /* 2124 */;
+import GuildRoleStore from "GuildRoleStore" /* 2118 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import UserStore from "UserStore" /* 1389 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8614 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const _modDef9509 = _mod9509;
-let closure_11, closure_12, dependencyMap, guildId, navigation;
+const _modDef8675 = _mod8675;
+let closure_11, closure_12, dependencyMap, navigation;
 
 let closure_17;
 let closure_18;
@@ -43,7 +43,7 @@ const View = react_native.View;
 let GuildMemberStore = GuildMemberStore_mod;
 const GuildSettingsSections = Constants.GuildSettingsSections;
 ({ jsx: closure_17, jsxs: closure_18, Fragment: closure_19 } = Fragment);
-let items = [_mod9509.AutocompleterResultTypes.USER];
+let items = [_mod8675.AutocompleterResultTypes.USER];
 let createStyles = createStyles_mod;
 let obj = { containerInner: obj2, searchFieldContainer: obj3, roleList: { flexDirection: "row", flexWrap: "wrap", overflow: "hidden", paddingTop: 4 } };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_12, flex: 1 };
@@ -52,7 +52,7 @@ obj3 = { paddingVertical: nativeDefault.space.PX_12 };
 let closure_21 = createStyles(obj);
 let memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsModalMember(guild) {
   let end;
   let sortedGuildRoles;
   let start;
@@ -69,6 +69,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
   } else {
     if (cResult[0] === guild.ownerId) {
       let tmp6;
+      let tmp9;
       let tmp10;
       if (cResult[1] === guildMember.userId) {
         tmp6 = cResult[2];
@@ -83,14 +84,14 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
               arr = cResult[8];
             }
             if (cResult[14] === arr) {
-              let tmp19;
+              let tmp21;
               if (cResult[15] === tmp4) {
-                tmp19 = cResult[16];
+                tmp21 = cResult[16];
               }
               if (cResult[17] === guildMember.userId) {
-                let tmp24;
+                let tmp25;
                 if (cResult[18] === navigation) {
-                  tmp24 = cResult[19];
+                  tmp25 = cResult[19];
                 }
                 if (cResult[20] === end) {
                   if (cResult[21] === guild.id) {
@@ -98,12 +99,12 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
                       if (cResult[23] === tmp6) {
                         if (cResult[24] === tmp8) {
                           if (cResult[25] === start) {
-                            if (cResult[26] === tmp19) {
-                              let tmp25;
-                              if (cResult[27] === tmp24) {
-                                tmp25 = cResult[28];
+                            if (cResult[26] === tmp21) {
+                              let tmp26;
+                              if (cResult[27] === tmp25) {
+                                tmp26 = cResult[28];
                               }
-                              return tmp25;
+                              return tmp26;
                             }
                           }
                         }
@@ -111,102 +112,123 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
                     }
                   }
                 }
-                class G {
-                  constructor() {
-                    const obj = { userId: guildMember.userId };
-                    navigation.push(GuildSettingsSections.MEMBER_EDIT, obj);
-                  }
-                }
-                const obj4 = { userId: guildMember.userId, guildId: guild.id, accessibilityLabel: tmp8, subLabel: tmp19, disabled: tmp6, onPress: tmp24, arrow: true, start, end };
-                const tmp27 = closure_17(guildMember(navigation[24]), obj4);
+                const obj5 = { userId: guildMember.userId, guildId: guild.id, accessibilityLabel: tmp8, subLabel: tmp21, disabled: tmp6, onPress: tmp25, arrow: true, start, end };
+                const tmp29 = closure_17(guildMember(navigation[24]), obj5);
                 cResult[20] = end;
                 cResult[21] = guild.id;
                 cResult[22] = guildMember.userId;
                 cResult[23] = tmp6;
                 cResult[24] = tmp8;
                 cResult[25] = start;
-                cResult[26] = tmp19;
-                cResult[27] = tmp24;
-                cResult[28] = tmp27;
-                tmp25 = tmp27;
+                cResult[26] = tmp21;
+                cResult[27] = tmp25;
+                cResult[28] = tmp29;
+                tmp26 = tmp29;
               }
-              class G {
-                constructor() {
-                  const obj = { userId: guildMember.userId };
-                  navigation.push(GuildSettingsSections.MEMBER_EDIT, obj);
-                }
-              }
+              const fn = function _() {
+                const obj = { userId: guildMember.userId };
+                navigation.push(GuildSettingsSections.MEMBER_EDIT, obj);
+              };
               cResult[17] = guildMember.userId;
               cResult[18] = navigation;
-              cResult[19] = G;
-              tmp24 = G;
+              cResult[19] = fn;
+              tmp25 = fn;
             }
-            let tmp20 = null;
+            let tmp22 = null;
             if (arr.length > 0) {
-              class G {
-                constructor() {
-                  const obj = { userId: guildMember.userId };
-                  navigation.push(GuildSettingsSections.MEMBER_EDIT, obj);
-                }
-              }
-              tmp23[0] = tmp4.roleList;
-              tmp23[2] = arr;
-              tmp20 = closure_17(View, tmp23);
+              const obj6 = { style: tmp4.roleList, pointerEvents: "none", children: arr };
+              tmp22 = closure_17(View, obj6);
             }
             cResult[14] = arr;
             cResult[15] = tmp4;
-            cResult[16] = tmp20;
-            tmp19 = tmp20;
+            cResult[16] = tmp22;
+            tmp21 = tmp22;
+          }
+        }
+      }
+      if (cResult[9] !== guildMember.roles) {
+        class C {
+          constructor(id) {
+            const roles = guildMember.roles;
+            return roles.includes(id.id);
+          }
+        }
+        cResult[9] = guildMember.roles;
+        cResult[10] = C;
+        tmp9 = C;
+      } else {
+        class C {
+          constructor(id) {
+            const roles = guildMember.roles;
+            return roles.includes(id.id);
           }
         }
       }
       const found = sortedGuildRoles.filter(tmp9);
       if (cResult[11] !== guild.id) {
-        const fn = function x(role) {
-          const obj = { role, guildId: guild.id };
-          return closure_17(RolePillDefault, obj, role.id);
-        };
-        class G {
-          constructor() {
-            const obj = { userId: guildMember.userId };
-            navigation.push(GuildSettingsSections.MEMBER_EDIT, obj);
+        class C {
+          constructor(id) {
+            const roles = guildMember.roles;
+            return roles.includes(id.id);
           }
         }
-        cResult[12] = fn;
-        tmp10 = fn;
+        cResult[11] = guild.id;
+        cResult[12] = tmp11;
+        tmp10 = tmp11;
       } else {
-        tmp10 = cResult[12];
+        class C {
+          constructor(id) {
+            const roles = guildMember.roles;
+            return roles.includes(id.id);
+          }
+        }
       }
       const mapped = found.map(tmp10);
       let formatToPlainStringResult;
       if (found.length > 0) {
-        let tmp17;
+        let tmp19;
+        class C {
+          constructor(id) {
+            const roles = guildMember.roles;
+            return roles.includes(id.id);
+          }
+        }
         const user = UserStore.getUser(guildMember.userId);
-        class G {
-          constructor() {
-            const obj = { userId: guildMember.userId };
-            navigation.push(GuildSettingsSections.MEMBER_EDIT, obj);
-          }
-        }
         const obj3 = guildMember(navigation[21]);
-        let str = obj3.getNickname(guild.id, undefined, user);
-        if (str == null) {
-          const tmp15Result = tmp15(navigation[22]);
-          str = tmp15Result.getGlobalName(user);
-        }
-        if (str == null) {
-          if (user != null) {
-            const username = user.username;
-          }
-          class G {
-            constructor() {
-              const obj = { userId: guildMember.userId };
-              navigation.push(GuildSettingsSections.MEMBER_EDIT, obj);
+        let nickname = obj3.getNickname(guild.id, undefined, user);
+        if (nickname == null) {
+          class C {
+            constructor(id) {
+              const roles = guildMember.roles;
+              return roles.includes(id.id);
             }
           }
+          nickname = obj4.getGlobalName(user);
         }
-        if (str == null) {
-          str = "";
+        if (nickname == null) {
+          class C {
+            constructor(id) {
+              const roles = guildMember.roles;
+              return roles.includes(id.id);
+            }
+          }
+          if (user != null) {
+            class C {
+              constructor(id) {
+                const roles = guildMember.roles;
+                return roles.includes(id.id);
+              }
+            }
+          }
+          nickname = tmp17;
+        }
+        if (nickname == null) {
+          class C {
+            constructor(id) {
+              const roles = guildMember.roles;
+              return roles.includes(id.id);
+            }
+          }
         }
         const _Symbol = Symbol;
         if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
@@ -215,13 +237,8 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
               return name.name;
             }
           }
-          class G {
-            constructor() {
-              const obj = { userId: guildMember.userId };
-              navigation.push(GuildSettingsSections.MEMBER_EDIT, obj);
-            }
-          }
-          tmp17 = P;
+          cResult[13] = P;
+          tmp19 = P;
         } else {
           class P {
             constructor(name) {
@@ -229,11 +246,11 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
             }
           }
         }
-        const mapped1 = found.map(tmp17);
+        const mapped1 = found.map(tmp19);
         const joined = mapped1.join(", ");
         const intl = tmp(tmp2[23]).intl;
-        const obj5 = { memberName: str, roleNames: joined };
-        formatToPlainStringResult = intl.formatToPlainString(tmp(tmp2[23]).t["6eGpWx"], obj5);
+        const obj7 = { memberName: nickname, roleNames: joined };
+        formatToPlainStringResult = intl.formatToPlainString(tmp(tmp2[23]).t["6eGpWx"], obj7);
       }
       cResult[3] = guild.id;
       cResult[4] = guildMember.roles;
@@ -244,12 +261,21 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
       tmp8 = formatToPlainStringResult;
       arr = mapped;
     }
+    let tmp7 = guildMember.userId === guild.ownerId;
+    if (tmp7) {
+      class P {
+        constructor(name) {
+          return name.name;
+        }
+      }
+      tmp7 = AuthenticationStore.getId() === guild.ownerId;
+    }
     cResult[0] = guild.ownerId;
     cResult[1] = guildMember.userId;
-    cResult[2] = guildMember.userId === guild.ownerId;
+    cResult[2] = tmp7;
     tmp6 = tmp7;
   }
-}) : ((guild) => {
+}) : (function GuildSettingsModalMember(guild) {
   let closure_2;
   let end;
   let start;
@@ -259,7 +285,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
   const sortedGuildRoles = guild.sortedGuildRoles;
   ({ start, end } = guild);
   const tmp = closure_21();
-  let obj = guild(1490);
+  let obj = guild(1502);
   dependencyMap = obj.useNavigation();
   if (null == guild) {
     return null;
@@ -276,11 +302,11 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
     let formatToPlainStringResult;
     if (found.length > 0) {
       const user = UserStore.getUser(guildMember.userId);
-      const obj2 = guildMember(5048);
+      const obj2 = guildMember(5405);
       let str = obj2.getNickname(guild.id, undefined, user);
       const tmp9 = guildMember;
       if (str == null) {
-        const tmp9Result = tmp9(4728);
+        const tmp9Result = tmp9(4922);
         str = tmp9Result.getGlobalName(user);
       }
       if (str == null) {
@@ -314,7 +340,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
       end
     };
     tmp12Result = null;
-    const tmp14 = guildMember(10693);
+    const tmp14 = guildMember(10281);
     if (mapped.length > 0) {
       const obj5 = { style: tmp.roleList, pointerEvents: "none", children: mapped };
       tmp12Result = tmp12(View, obj5);
@@ -323,7 +349,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
   }
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsModalMembers(guildId) {
   let closure_10;
   let first;
   let guild;
@@ -699,7 +725,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
       cResult[24] = stateFromStores1;
       cResult[25] = items7;
     }
-    function fe(roles) {
+    function guildRoleIsFiltered(roles) {
       let tmp2 = null != stateFromStores1;
       if (tmp2) {
         const obj = ChannelPermissionsUtils;
@@ -713,7 +739,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
     }
     cResult[26] = guildId;
     cResult[27] = stateFromStores1;
-    cResult[28] = fe;
+    cResult[28] = guildRoleIsFiltered;
   }
   class X {
     constructor() {
@@ -729,7 +755,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
   cResult[11] = guildLoaded;
   cResult[12] = items8;
   cResult[13] = X;
-}) : ((guildId) => {
+}) : (function GuildSettingsModalMembers(guildId) {
   let SearchField;
   let _undefined;
   let intl;
@@ -740,8 +766,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
   let obj10;
   let obj12;
   let tmp33Result;
-  const f125292 = () => {
-    const tmp = new _modDef9509((arg0) => {
+  const f126461 = () => {
+    const tmp = new _modDef8675((arg0) => {
       closure_1_10(arg0);
       closure_1_14(false);
     }, items, 100);
@@ -811,9 +837,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
   const tmp16 = stateFromStores(stateFromStores1.useState(false), 2);
   first2 = tmp16[0];
   closure_14 = tmp16[1];
-  first3 = stateFromStores(stateFromStores1.useState(f125292), 2)[0];
+  first3 = stateFromStores(stateFromStores1.useState(f126461), 2)[0];
   const items8 = [guildId, stateFromStoresArray, first, stateFromStores1, first1];
-  const tmp18 = stateFromStores(stateFromStores1.useState(f125292), 2);
+  const tmp18 = stateFromStores(stateFromStores1.useState(f126461), 2);
   const memo = stateFromStores1.useMemo(() => {
     function guildRoleIsFiltered(roles) {
       let tmp2 = null != stateFromStores1;
@@ -834,7 +860,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
       const nextResult = iter2.next();
       while (iter2 !== undefined) {
         let tmp21 = nextResult;
-        if (nextResult.type === _mod9509.AutocompleterResultTypes.USER) {
+        if (nextResult.type === _mod8675.AutocompleterResultTypes.USER) {
           let member = GuildMemberStore.getMember(guildId, tmp21.record.id);
           let tmp28 = member;
           let guildRoleIsFilteredResult = null == member;

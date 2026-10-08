@@ -1,21 +1,21 @@
-// Module ID: 11144
-// Function ID: 11145
+// Module ID: 11264
+// Function ID: 11265
 // Name: useSubscribeMissingActivities
-// Dependencies: [32, 19, 11145, 4936, 558, 576, 504, 11147, 2]
+// Dependencies: [32, 19, 11265, 5106, 558, 576, 504, 11267, 2]
 
-// Module 11144 (useSubscribeMissingActivities)
+// Module 11264 (useSubscribeMissingActivities)
 import react2 from "react" /* 576 */;
-import PresenceSubscriptionsActionCreators from "PresenceSubscriptionsActionCreators" /* 11147 */;
+import PresenceSubscriptionsActionCreators from "PresenceSubscriptionsActionCreators" /* 11267 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PresenceSubscriptionsStore from "PresenceSubscriptionsStore" /* 11145 */;
-import PresenceStore from "PresenceStore" /* 4936 */;
+import PresenceSubscriptionsStore from "PresenceSubscriptionsStore" /* 11265 */;
+import PresenceStore from "PresenceStore" /* 5106 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let _require, application_id, dependencyMap;
 
-const f106662 = (application) => {
+const f107156 = (application) => {
   application = application.application;
   let id;
   if (application != null) {
@@ -32,12 +32,12 @@ const f106662 = (application) => {
   }
   return tmp2;
 };
-const f106663 = (id) => id.id;
+const f107157 = (id) => id.id;
 let closure_6 = [];
 let closure_7 = [];
 let closure_8 = [];
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr, isPrivate) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMissingActivities(arr, isPrivate) {
   let first;
   let items5;
   let tmp = first;
@@ -160,8 +160,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr, isPrivate)
     tmp16 = items3;
   }
   if (isPrivate.isPrivate()) {
-    const found = arr.filter(f106662);
-    const items4 = [found, found.map(f106663)];
+    const found = arr.filter(f107156);
+    const items4 = [found, found.map(f107157)];
     items5 = items4;
   } else {
     items5 = [closure_8, closure_7];
@@ -170,7 +170,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr, isPrivate)
   cResult[1] = arr;
   cResult[2] = items5;
   tmp4 = items5;
-}) : ((arg0, arg1) => {
+}) : (function useMissingActivities(arg0, arg1) {
   let _private;
   let first;
   let stateFromStoresArray;
@@ -181,8 +181,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr, isPrivate)
     let items1;
     const arr = closure_0;
     if (_private.isPrivate()) {
-      const found = arr.filter(f106662);
-      const items = [found, found.map(f106663)];
+      const found = arr.filter(f107156);
+      const items = [found, found.map(f107157)];
       items1 = items;
     } else {
       items1 = [closure_8, ];
@@ -268,7 +268,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr, isPrivate)
   return items3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSubscribeMissingActivities(arg0, arg1) {
   let closure_0;
   let tmp3;
   let tmp4;
@@ -313,7 +313,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = tmp4;
   cResult[5] = items1;
   tmp8 = items1;
-}) : ((arg0, arg1) => {
+}) : (function useSubscribeMissingActivities(arg0, arg1) {
   let first;
   let tmp3;
   [first, tmp3] = closure_9(arg0, arg1);

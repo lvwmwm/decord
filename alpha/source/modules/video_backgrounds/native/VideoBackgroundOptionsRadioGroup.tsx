@@ -1,40 +1,39 @@
-// Module ID: 9693
-// Function ID: 9694
+// Module ID: 10882
+// Function ID: 10883
 // Name: VideoBackgroundOptionsRadioGroup
-// Dependencies: [19, 1085, 21, 558, 576, 9137, 8089, 9694, 8085, 8087, 1126, 6078, 6079, 2]
+// Dependencies: [19, 1085, 21, 558, 576, 9471, 5256, 10883, 5251, 5254, 1126, 6264, 6265, 2]
 
-// Module 9693 (VideoBackgroundOptionsRadioGroup)
+// Module 10882 (VideoBackgroundOptionsRadioGroup)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import applyBackgroundOption from "applyBackgroundOption" /* 8085 */;
-import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 8087 */;
-import VideoBackgroundOptions from "VideoBackgroundOptions" /* 9694 */;
+import applyBackgroundOption from "applyBackgroundOption" /* 5251 */;
+import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 5254 */;
+import VideoBackgroundOptions from "VideoBackgroundOptions" /* 10883 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, title;
+let _require;
 
 const NOOP = Constants.NOOP;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoBackgroundOptionsRadioGroup(title) {
   let analyticsContext;
-  let tmp11;
   let tmp6;
   let tmp7;
   let tmp9;
   let obj = analyticsContext(576);
   const cResult = obj.c(13);
   title = title.title;
-  let obj2 = analyticsContext(9137);
+  let obj2 = analyticsContext(9471);
   analyticsContext = obj2.useAnalyticsContext();
-  let obj3 = analyticsContext(8089);
+  let obj3 = analyticsContext(5256);
   const lastUsedVideoBackgroundOption = obj3.useLastUsedVideoBackgroundOption();
-  let obj4 = analyticsContext(9694);
+  let obj4 = analyticsContext(10883);
   const videoBackgroundRadioOptions = obj4.useVideoBackgroundRadioOptions();
   if (cResult[0] !== analyticsContext.location) {
-    const fn = function l(arg0) {
+    function handleChange(arg0) {
       const obj = VideoBackgroundOptions;
       const result = obj.fromVideoBackgroundRadioValue(arg0);
       const obj2 = applyBackgroundOption;
@@ -44,15 +43,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
       const obj4 = VideoBackgroundActionCreators;
       const result2 = obj4.saveLastUsedBackgroundOption(result);
       result2.catch(NOOP);
-    };
+    }
     cResult[0] = analyticsContext.location;
-    cResult[1] = fn;
-    tmp6 = fn;
+    cResult[1] = handleChange;
+    tmp6 = handleChange;
   } else {
     tmp6 = cResult[1];
   }
   if (cResult[2] !== lastUsedVideoBackgroundOption) {
-    const tmpResult = analyticsContext(9694);
+    const tmpResult = analyticsContext(10883);
     let result = tmpResult.toVideoBackgroundRadioValue(lastUsedVideoBackgroundOption);
     cResult[2] = lastUsedVideoBackgroundOption;
     cResult[3] = result;
@@ -72,40 +71,44 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
     let tmp12;
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn2 = function h(value) {
-        return jsx(analyticsContext(dependencyMap[11]).TableRadioRow, { value: value.value, label: value.label, icon: value.icon }, value.value);
-      };
-      cResult[7] = fn2;
-      tmp12 = fn2;
+      class R {
+        constructor(value) {
+          return jsx(analyticsContext(dependencyMap[11]).TableRadioRow, { value: value.value, label: value.label, icon: value.icon }, value.value);
+        }
+      }
+      cResult[7] = R;
+      tmp12 = R;
     } else {
-      tmp12 = cResult[7];
+      class R {
+        constructor(value) {
+          return jsx(analyticsContext(dependencyMap[11]).TableRadioRow, { value: value.value, label: value.label, icon: value.icon }, value.value);
+        }
+      }
     }
     const mapped = videoBackgroundRadioOptions.map(tmp12);
     cResult[5] = videoBackgroundRadioOptions;
     cResult[6] = mapped;
-    tmp11 = mapped;
   } else {
-    tmp11 = cResult[6];
-  }
-  if (cResult[8] === tmp6) {
-    if (cResult[9] === tmp7) {
-      if (cResult[10] === tmp11) {
-        let tmp14;
-        if (cResult[11] === title) {
-          tmp14 = cResult[12];
-        }
-        return tmp14;
+    class R {
+      constructor(value) {
+        return jsx(analyticsContext(dependencyMap[11]).TableRadioRow, { value: value.value, label: value.label, icon: value.icon }, value.value);
       }
     }
   }
-  const tmp15 = jsx(analyticsContext(6079).TableRadioGroup, { hasIcons: true, title, value: tmp7, onChange: tmp6, accessibilityLabel: tmp9, children: tmp11 });
+  if (cResult[8] === tmp6) {
+    class R {
+      constructor(value) {
+        return jsx(analyticsContext(dependencyMap[11]).TableRadioRow, { value: value.value, label: value.label, icon: value.icon }, value.value);
+      }
+    }
+  }
   cResult[8] = tmp6;
   cResult[9] = tmp7;
   cResult[10] = tmp11;
   cResult[11] = title;
-  cResult[12] = tmp15;
-  tmp14 = tmp15;
-}) : ((title) => {
+  cResult[12] = jsx(analyticsContext(6265).TableRadioGroup, { hasIcons: true, title, value: tmp7, onChange: tmp6, accessibilityLabel: tmp9, children: tmp11 });
+  jsx(analyticsContext(6265).TableRadioGroup, { hasIcons: true, title, value: tmp7, onChange: tmp6, accessibilityLabel: tmp9, children: tmp11 });
+}) : (function VideoBackgroundOptionsRadioGroup(title) {
   let closure_0;
   _require = undefined;
   title = title.title;
@@ -118,7 +121,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
   const TableRadioGroup = require("TableRadioGroup").TableRadioGroup;
   const obj5 = require("VideoBackgroundOptions");
   const intl = require("intl").intl;
-  return <TableRadioGroup hasIcons title={title} value={obj5.toVideoBackgroundRadioValue(lastUsedVideoBackgroundOption)} onChange={function onChange(arg0) {
+  return <TableRadioGroup hasIcons title={title} value={obj5.toVideoBackgroundRadioValue(lastUsedVideoBackgroundOption)} onChange={function handleChange(arg0) {
     const obj = VideoBackgroundOptions;
     const result = obj.fromVideoBackgroundRadioValue(arg0);
     const obj2 = applyBackgroundOption;

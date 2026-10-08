@@ -1,9 +1,9 @@
-// Module ID: 17990
-// Function ID: 17991
+// Module ID: 18277
+// Function ID: 18278
 // Name: EditStateContextProvider
 // Dependencies: [109, 19, 21, 558, 576, 2]
 
-// Module 17990 (EditStateContextProvider)
+// Module 18277 (EditStateContextProvider)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -11,13 +11,11 @@ import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let children;
-
 let closure_2 = ["children"];
 const jsx = Fragment.jsx;
 const redux = react.createContext(undefined);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEditStateContext() {
   const context = react.useContext(redux);
   if (null == context) {
     const _Error = Error;
@@ -28,7 +26,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   } else {
     return context;
   }
-}) : (function() {
+}) : (function useEditStateContext() {
   const context = react.useContext(redux);
   if (null == context) {
     const _Error = Error;
@@ -41,7 +39,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditStateContextProvider(children) {
   let tmp2;
   let tmp3;
   const obj = react2;
@@ -70,7 +68,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[4] = tmp3;
   cResult[5] = tmp8;
   tmp7 = tmp8;
-}) : ((children) => <redux.Provider value={Object.assign(arg0, Object.assign({ children: 0 }))}>{arg0.children}</redux.Provider>);
+}) : (function EditStateContextProvider(children) {
+  return <redux.Provider value={Object.assign(arg0, Object.assign({ children: 0 }))}>{arg0.children}</redux.Provider>;
+});
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/edit_state/EditStateContextProvider.tsx");
 
 export const useEditStateContext = tmp2;

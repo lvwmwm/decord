@@ -1,16 +1,16 @@
-// Module ID: 9759
-// Function ID: 9760
+// Module ID: 10960
+// Function ID: 10961
 // Name: useFetchStreamPreview
-// Dependencies: [19, 5040, 2051, 4515, 2103, 1096, 558, 576, 504, 5038, 2]
+// Dependencies: [19, 7440, 2063, 4707, 2115, 1096, 558, 576, 504, 7438, 2]
 
-// Module 9759 (useFetchStreamPreview)
+// Module 10960 (useFetchStreamPreview)
 import Constants from "Constants" /* 1096 */;
-import StreamActionCreators from "StreamActionCreators" /* 5038 */;
+import StreamActionCreators from "StreamActionCreators" /* 7438 */;
 import react_mod from "react" /* 19 */;
-import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 5040 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 7440 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let _require, closure_4, dependencyMap;
 
 let react = react_mod;
 const BasicPermissions = Constants.BasicPermissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchStreamPreview(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
   let first;
@@ -144,7 +144,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
   cResult[12] = null == arg1 || null == arg2;
   cResult[13] = arg2;
   cResult[14] = fn3;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useFetchStreamPreview(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
   let closure_2;

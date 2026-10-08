@@ -1,10 +1,10 @@
-// Module ID: 16740
-// Function ID: 16741
+// Module ID: 17015
+// Function ID: 17016
 // Name: ConjureClarification
 // Dependencies: [2]
 // Exports: clarificationAnswerAttachments, clarificationAnswersPayload, followingClarificationStep, formatClarificationAnswers, isClarificationComplete, multiSelectAnswer, nextClarificationStep, toggleClarificationOption
 
-// Module 16740 (ConjureClarification)
+// Module 17015 (ConjureClarification)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/clarification/ConjureClarification.tsx");

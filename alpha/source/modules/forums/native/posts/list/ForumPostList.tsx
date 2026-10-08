@@ -1,20 +1,20 @@
-// Module ID: 11649
-// Function ID: 11650
+// Module ID: 11714
+// Function ID: 11715
 // Name: ForumPostList
-// Dependencies: [32, 19, 17, 2058, 21, 4896, 558, 576, 6788, 11631, 11641, 11650, 11653, 2]
+// Dependencies: [32, 19, 17, 2070, 21, 5090, 558, 576, 6963, 11695, 11706, 11715, 11718, 2]
 
-// Module 11649 (ForumPostList)
+// Module 11714 (ForumPostList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ChannelConstants from "ChannelConstants" /* 2058 */;
-import ForumTagHooks from "ForumTagHooks" /* 6788 */;
-import ForumPostPinIconDefault from "ForumPostPinIcon" /* 11631 */;
-import ForumPostListBodyDefault from "ForumPostListBody" /* 11650 */;
-import ForumPostListFooterDefault from "ForumPostListFooter" /* 11653 */;
+import ChannelConstants from "ChannelConstants" /* 2070 */;
+import ForumTagHooks from "ForumTagHooks" /* 6963 */;
+import ForumPostPinIconDefault from "ForumPostPinIcon" /* 11695 */;
+import ForumPostListBodyDefault from "ForumPostListBody" /* 11715 */;
+import ForumPostListFooterDefault from "ForumPostListFooter" /* 11718 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,12 +22,12 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const ForumPostAppliedTags = tmp(11641);
+const ForumPostAppliedTags = tmp(11706);
 const View = react_native.View;
 const ChannelFlags = ChannelConstants.ChannelFlags;
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
 let closure_9 = createStyles.createStyles({ header: { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: 8 }, content: { flex: 1, marginBottom: 12 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostList(arg0) {
   let arr;
   let firstMessage;
   let firstMessageLoaded;
@@ -181,7 +181,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = tmp4.header;
   cResult[7] = tmp12Result;
   tmp10 = tmp12Result;
-}) : ((arg0) => {
+}) : (function ForumPostList(arg0) {
   let first;
   let firstMessage;
   let firstMessageLoaded;

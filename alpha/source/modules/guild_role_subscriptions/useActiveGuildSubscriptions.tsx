@@ -1,26 +1,25 @@
-// Module ID: 15044
-// Function ID: 15045
+// Module ID: 15306
+// Function ID: 15307
 // Name: useActiveGuildSubscriptions
-// Dependencies: [19, 4540, 15038, 558, 576, 15039, 504, 5411, 2]
+// Dependencies: [19, 4732, 15300, 558, 576, 15301, 504, 5720, 2]
 
-// Module 15044 (useActiveGuildSubscriptions)
-import actions_BillingActionCreatorsAll from "actions/BillingActionCreators" /* 5411 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15038 */;
-import useUserRoleSubscriptionRelationshipDefault from "useUserRoleSubscriptionRelationship" /* 15039 */;
+// Module 15306 (useActiveGuildSubscriptions)
+import actions_BillingActionCreatorsAll from "actions/BillingActionCreators" /* 5720 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15300 */;
+import useUserRoleSubscriptionRelationshipDefault from "useUserRoleSubscriptionRelationship" /* 15301 */;
 import react from "react" /* 19 */;
-import SubscriptionStore from "SubscriptionStore" /* 4540 */;
+import SubscriptionStore from "SubscriptionStore" /* 4732 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, activeGuildSubscriptions, importAll, importDefault, tmp10, tmp9;
+let _require, activeGuildSubscriptions, importDefault;
 
 const constants = GuildRoleSubscriptionsConstants.UserGuildRoleSubscriptionRelationship;
 let closure_7 = [];
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActiveGuildSubscriptions(arg0) {
   let closure_0;
   let closure_1;
-  let ref;
   let tmp4;
   let tmp7;
   let tmp8;
@@ -49,7 +48,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const items = [SubscriptionStore];
     class S {
       constructor() {
-        return closure_1_5.getActiveGuildSubscriptions();
+        return activeGuildSubscriptions.getActiveGuildSubscriptions();
       }
     }
     cResult[2] = items;
@@ -62,7 +61,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp7, tmp8);
-  importAll = react.useRef(false);
+  const ref = react.useRef(false);
   const obj4 = react;
   if (cResult[4] === tmp5) {
     let tmp11;
@@ -74,59 +73,50 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const effect = obj4.useEffect(tmp11, tmp12);
     class S {
       constructor() {
-        return closure_1_5.getActiveGuildSubscriptions();
+        return activeGuildSubscriptions.getActiveGuildSubscriptions();
       }
     }
     return stateFromStores;
   }
-  class F {
-    constructor() {
-      tmp = ensureFresh;
-      current = closure_2.current;
-      obj = closure_5;
-      tmp2 = closure_1;
-      tmp3 = closure_2;
-      activeGuildSubscriptions = closure_5.getActiveGuildSubscriptions();
-      num = undefined;
-      if (activeGuildSubscriptions != null) {
-        num = activeGuildSubscriptions.length;
-      }
-      if (num == null) {
-        num = 0;
-      }
-      tmp4 = 0 !== num || !tmp2;
-      tmp5 = !tmp4;
-      if (tmp4) {
-        tmp6 = !tmp;
-        if (tmp) {
-          tmp6 = current;
-        }
-        tmp7 = !tmp6;
-        if (tmp6) {
-          tmp8 = !current && !obj.hasFetchedSubscriptions();
-          tmp7 = tmp8;
-        }
-        tmp5 = tmp7;
-      }
-      if (tmp5) {
-        flag = true;
-        tmp3.current = true;
-        tmp9 = closure_2;
-        tmp10 = closure_3;
-        obj2 = closure_2(closure_3[7]);
-        subscriptions = obj2.fetchSubscriptions();
-      }
-      return;
+  const fn = function v() {
+    const current = ref.current;
+    activeGuildSubscriptions = SubscriptionStore.getActiveGuildSubscriptions();
+    let num;
+    const tmp2 = closure_1;
+    const tmp3 = ref;
+    if (activeGuildSubscriptions != null) {
+      num = activeGuildSubscriptions.length;
     }
-  }
+    if (num == null) {
+      num = 0;
+    }
+    let tmp5 = !tmp4;
+    if (0 !== num || !tmp2) {
+      let tmp6 = !tmp;
+      if (closure_0) {
+        tmp6 = current;
+      }
+      let tmp7 = !tmp6;
+      if (tmp6) {
+        tmp7 = !current && !obj.hasFetchedSubscriptions();
+        !current && !SubscriptionStore.hasFetchedSubscriptions();
+      }
+      tmp5 = tmp7;
+    }
+    if (tmp5) {
+      tmp3.current = true;
+      const obj2 = actions_BillingActionCreatorsAll;
+      const subscriptions = obj2.fetchSubscriptions();
+    }
+  };
   const items1 = [tmp5, tmp6];
   cResult[4] = tmp5;
   cResult[5] = tmp6;
-  cResult[6] = F;
+  cResult[6] = fn;
   cResult[7] = items1;
   tmp12 = items1;
-  tmp11 = F;
-}) : (() => {
+  tmp11 = fn;
+}) : (function useActiveGuildSubscriptions() {
   let closure_1;
   let obj = arg0;
   if (arg0 === undefined) {

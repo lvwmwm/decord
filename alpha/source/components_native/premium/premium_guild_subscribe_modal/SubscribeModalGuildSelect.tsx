@@ -1,27 +1,27 @@
-// Module ID: 5622
-// Function ID: 5623
+// Module ID: 5967
+// Function ID: 5968
 // Name: SubscribeModalGuildSelect
-// Dependencies: [32, 19, 17, 2074, 5623, 5621, 21, 4896, 587, 5627, 558, 576, 1490, 5628, 504, 6889, 1126, 5619, 5916, 5978, 1188, 6626, 2]
+// Dependencies: [32, 19, 17, 2086, 5968, 5966, 21, 5090, 587, 5974, 558, 576, 1502, 5975, 504, 7078, 1126, 5964, 6189, 6161, 1200, 6803, 2]
 
-// Module 5622 (SubscribeModalGuildSelect)
+// Module 5967 (SubscribeModalGuildSelect)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import BoostingActionCreatorsAll from "BoostingActionCreators" /* 5619 */;
-import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 5621 */;
-import LegacyTokens from "LegacyTokens" /* 5627 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5628 */;
-import SearchBarNavDefault from "SearchBarNav" /* 6889 */;
+import BoostingActionCreatorsAll from "BoostingActionCreators" /* 5964 */;
+import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 5966 */;
+import LegacyTokens from "LegacyTokens" /* 5974 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5975 */;
+import SearchBarNavDefault from "SearchBarNav" /* 7078 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import SortedGuildStore from "SortedGuildStore" /* 5623 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import SortedGuildStore from "SortedGuildStore" /* 5968 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let array1, dependencyMap, guild, importAll, navigation, obj1, premiumGuildSubscription, queryGuildsResult, set, tmp2, tmp3, tmp9;
+let array1, dependencyMap, guild, importAll, navigation, obj1, queryGuildsResult, set, tmp2, tmp3, tmp9;
 
 let c10;
 let obj2;
@@ -29,7 +29,7 @@ let obj3;
 let unpackModuleId;
 let _slicedToArray = _slicedToArray_mod;
 const ScrollView = react_native.ScrollView;
-const constants = PremiumGuildSubscribeConstants.PremiumGuildSubscribeModalScenes;
+let closure_9 = PremiumGuildSubscribeConstants.PremiumGuildSubscribeModalScenes;
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { safeArea: obj2, guildList: { padding: 16 }, guildOption: { flexDirection: "row", alignItems: "center", paddingVertical: 10 }, guildName: obj3 };
@@ -37,7 +37,7 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flexGrow: 1,
 createStyles = createStyles.createStyles;
 obj3 = { marginLeft: 32, fontSize: 16, lineHeight: 20, color: LegacyTokens.DARK_WHITE_500_LIGHT_PRIMARY_660 };
 let closure_12 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildBoostSlots) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubscribeModalGuildSelect(guildBoostSlots) {
   let closure_3;
   let first;
   let items1;
@@ -51,7 +51,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildBoostSl
   importAll = onResult;
   dependencyMap = closure_12();
   const tmp4 = closure_12();
-  let obj2 = guildBoostSlots(1490);
+  let obj2 = guildBoostSlots(1502);
   navigation = obj2.useNavigation();
   const tmp6 = navigation(first.useState(""), 2);
   first = tmp6[0];
@@ -62,23 +62,23 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildBoostSl
       let tmp14;
       const _Symbol2 = Symbol;
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-        class P {
-          constructor(arg0) {
-            premiumGuildSubscription = guildBoostSlots.premiumGuildSubscription;
-            guildId = undefined;
+        class M {
+          constructor(premiumGuildSubscription) {
+            premiumGuildSubscription = premiumGuildSubscription.premiumGuildSubscription;
+            let guildId;
             if (premiumGuildSubscription != null) {
               guildId = premiumGuildSubscription.guildId;
             }
             return null != guildId;
           }
         }
-        cResult[3] = P;
-        tmp13 = P;
+        cResult[3] = M;
+        tmp13 = M;
       } else {
-        class P {
-          constructor(arg0) {
-            premiumGuildSubscription = guildBoostSlots.premiumGuildSubscription;
-            guildId = undefined;
+        class M {
+          constructor(premiumGuildSubscription) {
+            premiumGuildSubscription = premiumGuildSubscription.premiumGuildSubscription;
+            let guildId;
             if (premiumGuildSubscription != null) {
               guildId = premiumGuildSubscription.guildId;
             }
@@ -88,23 +88,23 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildBoostSl
       }
       const _Symbol3 = Symbol;
       if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-        class R {
-          constructor(arg0) {
-            premiumGuildSubscription = guildBoostSlots.premiumGuildSubscription;
-            guildId = undefined;
+        class P {
+          constructor(premiumGuildSubscription) {
+            premiumGuildSubscription = premiumGuildSubscription.premiumGuildSubscription;
+            let guildId;
             if (premiumGuildSubscription != null) {
               guildId = premiumGuildSubscription.guildId;
             }
             return guildId;
           }
         }
-        cResult[4] = R;
-        tmp14 = R;
+        cResult[4] = P;
+        tmp14 = P;
       } else {
-        class R {
-          constructor(arg0) {
-            premiumGuildSubscription = guildBoostSlots.premiumGuildSubscription;
-            guildId = undefined;
+        class P {
+          constructor(premiumGuildSubscription) {
+            premiumGuildSubscription = premiumGuildSubscription.premiumGuildSubscription;
+            let guildId;
             if (premiumGuildSubscription != null) {
               guildId = premiumGuildSubscription.guildId;
             }
@@ -121,10 +121,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildBoostSl
       cResult[2] = set;
       tmp11 = set;
     } else {
-      class R {
-        constructor(arg0) {
-          premiumGuildSubscription = guildBoostSlots.premiumGuildSubscription;
-          guildId = undefined;
+      class P {
+        constructor(premiumGuildSubscription) {
+          premiumGuildSubscription = premiumGuildSubscription.premiumGuildSubscription;
+          let guildId;
           if (premiumGuildSubscription != null) {
             guildId = premiumGuildSubscription.guildId;
           }
@@ -134,10 +134,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildBoostSl
     }
     tmp8 = tmp11;
   } else {
-    class R {
-      constructor(arg0) {
-        premiumGuildSubscription = guildBoostSlots.premiumGuildSubscription;
-        guildId = undefined;
+    class P {
+      constructor(premiumGuildSubscription) {
+        premiumGuildSubscription = premiumGuildSubscription.premiumGuildSubscription;
+        let guildId;
         if (premiumGuildSubscription != null) {
           guildId = premiumGuildSubscription.guildId;
         }
@@ -146,10 +146,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildBoostSl
     }
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      class R {
-        constructor(arg0) {
-          premiumGuildSubscription = guildBoostSlots.premiumGuildSubscription;
-          guildId = undefined;
+      class P {
+        constructor(premiumGuildSubscription) {
+          premiumGuildSubscription = premiumGuildSubscription.premiumGuildSubscription;
+          let guildId;
           if (premiumGuildSubscription != null) {
             guildId = premiumGuildSubscription.guildId;
           }
@@ -162,10 +162,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildBoostSl
       cResult[0] = set1;
       tmp8 = set1;
     } else {
-      class R {
-        constructor(arg0) {
-          premiumGuildSubscription = guildBoostSlots.premiumGuildSubscription;
-          guildId = undefined;
+      class P {
+        constructor(premiumGuildSubscription) {
+          premiumGuildSubscription = premiumGuildSubscription.premiumGuildSubscription;
+          let guildId;
           if (premiumGuildSubscription != null) {
             guildId = premiumGuildSubscription.guildId;
           }
@@ -176,10 +176,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildBoostSl
   }
   set1 = tmp8;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
-      constructor(arg0) {
-        premiumGuildSubscription = guildBoostSlots.premiumGuildSubscription;
-        guildId = undefined;
+    class P {
+      constructor(premiumGuildSubscription) {
+        premiumGuildSubscription = premiumGuildSubscription.premiumGuildSubscription;
+        let guildId;
         if (premiumGuildSubscription != null) {
           guildId = premiumGuildSubscription.guildId;
         }
@@ -190,10 +190,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildBoostSl
     cResult[5] = items;
     tmp17 = items;
   } else {
-    class R {
-      constructor(arg0) {
-        premiumGuildSubscription = guildBoostSlots.premiumGuildSubscription;
-        guildId = undefined;
+    class P {
+      constructor(premiumGuildSubscription) {
+        premiumGuildSubscription = premiumGuildSubscription.premiumGuildSubscription;
+        let guildId;
         if (premiumGuildSubscription != null) {
           guildId = premiumGuildSubscription.guildId;
         }
@@ -202,10 +202,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildBoostSl
     }
   }
   if (cResult[6] === tmp8) {
-    class R {
-      constructor(arg0) {
-        premiumGuildSubscription = guildBoostSlots.premiumGuildSubscription;
-        guildId = undefined;
+    class P {
+      constructor(premiumGuildSubscription) {
+        premiumGuildSubscription = premiumGuildSubscription.premiumGuildSubscription;
+        let guildId;
         if (premiumGuildSubscription != null) {
           guildId = premiumGuildSubscription.guildId;
         }
@@ -215,10 +215,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildBoostSl
     const tmpResult = tmp(504);
     const stateFromStoresArray = tmpResult.useStateFromStoresArray(tmp17, C, items1);
     if (cResult[10] === guildBoostSlots) {
-      class R {
-        constructor(arg0) {
-          premiumGuildSubscription = guildBoostSlots.premiumGuildSubscription;
-          guildId = undefined;
+      class P {
+        constructor(premiumGuildSubscription) {
+          premiumGuildSubscription = premiumGuildSubscription.premiumGuildSubscription;
+          let guildId;
           if (premiumGuildSubscription != null) {
             guildId = premiumGuildSubscription.guildId;
           }
@@ -226,18 +226,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildBoostSl
         }
       }
     }
-    class F {
-      constructor(arg0) {
-        obj = { guildId: guildBoostSlots.id, guildBoostSlots, intent, onResult };
-        replaced = closure_4.replace(closure_9.CONFIRMATION, obj);
-        return;
-      }
+    function handleGuildSelect(guildId) {
+      const obj = { guildId: guildId.id, guildBoostSlots, intent, onResult: importAll };
+      const replaced = navigation.replace(constants.CONFIRMATION, obj);
     }
     cResult[10] = guildBoostSlots;
     cResult[11] = intent;
     cResult[12] = navigation;
     cResult[13] = guildBoostSlots.onResult;
-    cResult[14] = F;
+    cResult[14] = handleGuildSelect;
   }
   class C {
     constructor() {
@@ -251,7 +248,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildBoostSl
         reduce2 = flattenedGuildIds.reduce;
         array = new Array();
         tmp11 = array;
-        reduce2Result = reduce2(() => { /* body not rendered: F137057 */ }, array);
+        reduce2Result = reduce2((arr, arg1) => {
+          guild = guild.getGuild(arg1);
+          const hasItem = null == guild || set.has(guild.id);
+          if (!hasItem) {
+            arr.push(guild);
+          }
+          return arr;
+        }, array);
       } else {
         tmp2 = closure_1;
         tmp3 = closure_3;
@@ -266,7 +270,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildBoostSl
         reduce = queryGuildsResult.reduce;
         array1 = new Array();
         tmp6 = array1;
-        reduce2Result = reduce(() => { /* body not rendered: F137058 */ }, array1);
+        reduce2Result = reduce((arr, record) => {
+          record = record.record;
+          if (!set.has(record.id)) {
+            arr.push(record);
+          }
+          return arr;
+        }, array1);
       }
       return reduce2Result;
     }
@@ -276,7 +286,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildBoostSl
   cResult[7] = first;
   cResult[8] = C;
   cResult[9] = items1;
-}) : ((guildBoostSlots) => {
+}) : (function SubscribeModalGuildSelect(guildBoostSlots) {
   let SafeAreaPaddingView2;
   let closure_3;
   let closure_4;
@@ -292,7 +302,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildBoostSl
   first = undefined;
   let tmp = closure_12();
   dependencyMap = tmp;
-  let obj = guildBoostSlots(1490);
+  let obj = guildBoostSlots(1502);
   _slicedToArray = obj.useNavigation();
   [first, tmp4] = first.useState("");
   let items = [guildBoostSlots];
@@ -366,7 +376,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildBoostSl
     return reduce2Result;
   }, items2);
   let obj3 = { top: true, style: tmp.safeArea, children: items3 };
-  const SafeAreaPaddingView = guildBoostSlots(6626).SafeAreaPaddingView;
+  const SafeAreaPaddingView = guildBoostSlots(6803).SafeAreaPaddingView;
   const obj4 = { placeholder: intl.string(guildBoostSlots(1126).t.vf3ZTa), onChange: tmp4, onClose: BoostingActionCreatorsAll.closeApplyBoostModal };
   const tmp6 = SearchBarNavDefault;
   intl = guildBoostSlots(1126).intl;
@@ -394,7 +404,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildBoostSl
       return closure_1_11(PressableOpacity, obj, guild.id);
     })
   };
-  SafeAreaPaddingView2 = guildBoostSlots(6626).SafeAreaPaddingView;
+  SafeAreaPaddingView2 = guildBoostSlots(6803).SafeAreaPaddingView;
   items3[1] = closure_10(memo, obj5);
   return closure_11(SafeAreaPaddingView, obj3);
 });

@@ -1,12 +1,12 @@
-// Module ID: 11315
-// Function ID: 11316
+// Module ID: 11490
+// Function ID: 11491
 // Name: useExplicitMediaAttachmentsForMessage
-// Dependencies: [5116, 558, 576, 573, 11316, 6805, 6810, 2]
+// Dependencies: [5428, 558, 576, 573, 11491, 6976, 6982, 2]
 
-// Module 11315 (useExplicitMediaAttachmentsForMessage)
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6805 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 6810 */;
-import MessageStore from "MessageStore" /* 5116 */;
+// Module 11490 (useExplicitMediaAttachmentsForMessage)
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6976 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 6982 */;
+import MessageStore from "MessageStore" /* 5428 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRedactableMediaAttachmentsForMessage(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
   let first;
@@ -38,7 +38,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
     }
     const tmpResult = tmp(573);
     const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-    const tmpResult2 = tmp(11316);
+    const tmpResult2 = tmp(11491);
     const enabledHarmTypesBitmaskForMessage = tmpResult2.useEnabledHarmTypesBitmaskForMessage(stateFromStores);
     if (null == stateFromStores) {
       let tmp16;
@@ -106,7 +106,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
   cResult[2] = arg1;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useRedactableMediaAttachmentsForMessage(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -134,7 +134,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRedactableMediaEmbedsForMessage(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
   let first;
@@ -225,7 +225,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
   cResult[2] = arg1;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useRedactableMediaEmbedsForMessage(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
   _require = arg0;

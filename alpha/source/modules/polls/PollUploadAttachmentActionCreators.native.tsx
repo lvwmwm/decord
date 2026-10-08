@@ -1,15 +1,15 @@
-// Module ID: 11847
-// Function ID: 11848
+// Module ID: 11931
+// Function ID: 11932
 // Name: PollUploadAttachmentActionCreators
-// Dependencies: [5, 7044, 7468, 11848, 7887, 7287, 7282, 7260, 8842, 2]
+// Dependencies: [5, 7232, 7943, 11932, 8307, 7741, 7730, 7731, 9201, 2]
 // Exports: handlePollGifAttachmentAdd, handlePollMediaAttachmentAdd, removeAllPollUploadAttachments, removePollUploadAttachment
 
-// Module 11847 (PollUploadAttachmentActionCreators)
-import DraftStore from "DraftStore" /* 7044 */;
-import PollsConstants from "PollsConstants" /* 7468 */;
-import FileManagerUtils from "FileManagerUtils" /* 7887 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8842 */;
-import PollAttachmentUtils from "PollAttachmentUtils" /* 11848 */;
+// Module 11931 (PollUploadAttachmentActionCreators)
+import DraftStore from "DraftStore" /* 7232 */;
+import PollsConstants from "PollsConstants" /* 7943 */;
+import FileManagerUtils from "FileManagerUtils" /* 8307 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9201 */;
+import PollAttachmentUtils from "PollAttachmentUtils" /* 11932 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

@@ -1,46 +1,46 @@
-// Module ID: 12445
-// Function ID: 12446
+// Module ID: 12541
+// Function ID: 12542
 // Name: ForumChannel
-// Dependencies: [19, 17, 4516, 5699, 2051, 7044, 5577, 11629, 1085, 1096, 21, 4896, 587, 5922, 558, 576, 7518, 1126, 4892, 7539, 6817, 504, 12446, 6785, 9, 8352, 8354, 8358, 6674, 5916, 4860, 12448, 1987, 5601, 11789, 12449, 8557, 7554, 12450, 5049, 11655, 11628, 12451, 7276, 8404, 5918, 4574, 4821, 6782, 6664, 6688, 5848, 11092, 7552, 12454, 7416, 10072, 10091, 4861, 4862, 10089, 5967, 6478, 11090, 8609, 12457, 11929, 2]
+// Dependencies: [19, 17, 4708, 6065, 2063, 7232, 5887, 11693, 1085, 1096, 21, 5090, 587, 5902, 558, 576, 9241, 1126, 5086, 9261, 6990, 504, 12542, 6960, 9, 8850, 8852, 8856, 6851, 6189, 5054, 12544, 1999, 5375, 11856, 12545, 9041, 9265, 12546, 5417, 11720, 11692, 12547, 7876, 8600, 10211, 4766, 5015, 6958, 6841, 6865, 8163, 10456, 9263, 12550, 7891, 9643, 9674, 5055, 5056, 9672, 6149, 6656, 10454, 8524, 12553, 12002, 2]
 
-// Module 12445 (ForumChannel)
+// Module 12541 (ForumChannel)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants2 from "Constants" /* 1096 */;
 import intl3 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4821 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import ForumPostDataLoader from "ForumPostDataLoader" /* 6817 */;
-import tracking_Tracking from "tracking/Tracking" /* 7276 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 7416 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 7518 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8352 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8358 */;
-import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 10072 */;
-import ForumPostDefault from "ForumPost" /* 11628 */;
-import ForumChannelStore from "ForumChannelStore" /* 11629 */;
-import ForumPostPlaceholderDefault from "ForumPostPlaceholder" /* 11655 */;
-import CreateGameInvitePostModalActionCreators from "CreateGameInvitePostModalActionCreators" /* 12454 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5015 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import ForumPostDataLoader from "ForumPostDataLoader" /* 6990 */;
+import Tracking from "Tracking" /* 7876 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 7891 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8850 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8856 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 9241 */;
+import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 9643 */;
+import ForumPostDefault from "ForumPost" /* 11692 */;
+import ForumChannelStore from "ForumChannelStore" /* 11693 */;
+import ForumPostPlaceholderDefault from "ForumPostPlaceholder" /* 11720 */;
+import CreateGameInvitePostModalActionCreators from "CreateGameInvitePostModalActionCreators" /* 12550 */;
 import react from "react" /* 19 */;
-import LurkingStore from "LurkingStore" /* 4516 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 5699 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import DraftStore from "DraftStore" /* 7044 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5577 */;
+import LurkingStore from "LurkingStore" /* 4708 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6065 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import DraftStore from "DraftStore" /* 7232 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5887 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import TextStyles_mod from "TextStyles" /* 5922 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import TextStyles_mod from "TextStyles" /* 5902 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault;
+let _require, importDefault, preloadForumThreadsResult, recordRenderResult;
 
 let closure_12;
 let closure_14;
@@ -54,7 +54,7 @@ let obj5;
 let size;
 let tmp;
 let unpackModuleId;
-const MemberVerificationModalActionCreators = tmp(5967);
+const MemberVerificationModalActionCreators = tmp(6149);
 function forumKeyExtractor(arg0, arg1) {
   let combined = arg0;
   if (arg0 === loading_section) {
@@ -78,10 +78,10 @@ function SortAndViewOptions(channel) {
         obj.hideActionSheet(combined);
       }
     };
-    obj.openLazy(asyncRequire(12448, dependencyMap.paths), combined, obj2);
+    obj.openLazy(asyncRequire(12544, dependencyMap.paths), combined, obj2);
   }, items);
   const isMediaChannelResult = channel.isMediaChannel();
-  const Button = id(5601).Button;
+  const Button = id(5375).Button;
   const intl = id(1126).intl;
   const string = intl.string;
   const t = id(1126).t;
@@ -91,7 +91,7 @@ function SortAndViewOptions(channel) {
   } else {
     stringResult = string(t.xyYt8A);
   }
-  let obj = { variant: "secondary", text: stringResult, onPress: callback, size: "sm", icon: tmp3(tmp4(11789).ArrowsUpDownIcon, { size: "xxs" }) };
+  let obj = { variant: "secondary", text: stringResult, onPress: callback, size: "sm", icon: tmp3(tmp4(11856).ArrowsUpDownIcon, { size: "xxs" }) };
   return closure_14(Button, obj);
 }
 function TagFilter(channel) {
@@ -100,15 +100,15 @@ function TagFilter(channel) {
   let obj = {
     variant: "secondary",
     text: intl.string(channel(1126).t["112vVE"]),
-    onPress() {
+    onPress: function handlePress() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { channel };
-      obj.openLazy(asyncRequire(12449, dependencyMap.paths), "ForumTagFilterActionSheet", obj2);
+      obj.openLazy(asyncRequire(12545, dependencyMap.paths), "ForumTagFilterActionSheet", obj2);
     },
     size: "sm",
-    icon: closure_14(channel(8557).TagIcon, { size: "xxs" })
+    icon: closure_14(channel(9041).TagIcon, { size: "xxs" })
   };
-  const Button = channel(5601).Button;
+  const Button = channel(5375).Button;
   intl = channel(1126).intl;
   return closure_14(Button, obj);
 }
@@ -178,7 +178,7 @@ TextStyles = TextStyles_mod;
 const merged1 = Object.assign(TextStyles(Fonts.PRIMARY_NORMAL, nativeDefault.colors.TEXT_MUTED, 12));
 let closure_24 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function ArchivedSection() {
   const obj = react2;
   const cResult = obj.c(9);
   const tmp4 = closure_24();
@@ -229,7 +229,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = clientThemesOverride;
   cResult[2] = items;
   tmp6 = items;
-}) : (() => {
+}) : (function ArchivedSection() {
   let Text;
   let intl;
   let items;
@@ -245,7 +245,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return authStore2(View, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchSection(arg0) {
   let numPosts;
   let searchQuery;
   let stringResult;
@@ -296,7 +296,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = searchQuery;
   cResult[2] = stringResult;
   tmp5 = stringResult;
-}) : ((numPosts) => {
+}) : (function SearchSection(numPosts) {
   let Text;
   let obj2;
   let stringResult;
@@ -318,7 +318,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return authStore2(tmp3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelName) => {
+let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function ArchivedMissingReadHistoryPermission(channelName) {
   let missingPermissionContainer;
   let missingPermissionText;
   let tmp5;
@@ -361,7 +361,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelName) =
   cResult[3] = tmp5;
   cResult[4] = tmp8;
   tmp7 = tmp8;
-}) : ((channelName) => {
+}) : (function ArchivedMissingReadHistoryPermission(channelName) {
   let Text;
   let intl;
   let obj2;
@@ -374,7 +374,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelName) =
   return authStore2(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelName) => {
+let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchMissingReadHistoryPermission(channelName) {
   let missingPermissionText;
   let section;
   let tmp5;
@@ -417,7 +417,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelName) =
   cResult[3] = tmp5;
   cResult[4] = tmp8;
   tmp7 = tmp8;
-}) : ((channelName) => {
+}) : (function SearchMissingReadHistoryPermission(channelName) {
   let Text;
   let intl;
   let obj2;
@@ -430,9 +430,10 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelName) =
   return authStore2(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel, sortOrder, tagFilter, tagSetting) => {
+let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumData(channel, sortOrder, tagFilter, tagSetting) {
   let activeThreadIds;
   let canLoadMore;
+  let closure_1;
   let isSearchLoading;
   let loadMore;
   let loading;
@@ -457,76 +458,121 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel, sortO
           const substr = forumActiveThreadIds.slice(0, tmp(tmp2[20]).BATCH_SIZE);
           const joined = substr.join();
           cResult[5] = forumActiveThreadIds;
+          class C {
+            constructor() {
+              if ("" !== closure_1) {
+                tmp = closure_0;
+                tmp2 = closure_2;
+                obj = closure_0(closure_2[20]);
+                tmp3 = closure_0;
+                preloadForumThreadsResult = obj.preloadForumThreads(closure_0);
+              }
+              return;
+            }
+          }
           cResult[6] = joined;
           tmp5 = joined;
         } else {
           tmp5 = cResult[6];
         }
-        let closure_1 = tmp5;
+        importDefault = tmp5;
         if (cResult[7] === channel) {
           let tmp7;
           let tmp8;
-          let tmp12;
-          let tmp15;
-          let tmp17;
+          let tmp13;
+          let tmp16;
           if (cResult[8] === tmp5) {
             tmp7 = cResult[9];
             tmp8 = cResult[10];
           }
           const effect = activeThreadIds.useEffect(tmp7, tmp8);
           const _Symbol = Symbol;
-          if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+          class C {
+            constructor() {
+              if ("" !== closure_1) {
+                tmp = closure_0;
+                tmp2 = closure_2;
+                obj = closure_0(closure_2[20]);
+                tmp3 = closure_0;
+                preloadForumThreadsResult = obj.preloadForumThreads(closure_0);
+              }
+              return;
+            }
+          }
+          if (tmp11 === Symbol.for("react.memo_cache_sentinel")) {
             const items = [ActiveThreadsStore, LurkingStore];
-            cResult[11] = items;
-            tmp12 = items;
+            class C {
+              constructor() {
+                if ("" !== closure_1) {
+                  tmp = closure_0;
+                  tmp2 = closure_2;
+                  obj = closure_0(closure_2[20]);
+                  tmp3 = closure_0;
+                  preloadForumThreadsResult = obj.preloadForumThreads(closure_0);
+                }
+                return;
+              }
+            }
+            tmp13 = items;
           } else {
-            tmp12 = cResult[11];
+            tmp13 = cResult[11];
           }
           if (cResult[12] !== channel.guild_id) {
-            class T {
+            class S {
               constructor() {
-                const hasLoadedResult = ActiveThreadsStore.hasLoaded(channel.guild_id);
-                const tmp2 = !hasLoadedResult && !LurkingStore.isLurking(channel.guild_id);
+                hasLoadedResult = closure_6.hasLoaded(closure_0.guild_id);
+                tmp2 = !hasLoadedResult && !closure_5.isLurking(closure_0.guild_id);
                 return tmp2;
               }
             }
             cResult[12] = channel.guild_id;
-            cResult[13] = T;
-            tmp15 = T;
+            cResult[13] = S;
+            tmp16 = S;
           } else {
-            class T {
+            class S {
               constructor() {
-                const hasLoadedResult = ActiveThreadsStore.hasLoaded(channel.guild_id);
-                const tmp2 = !hasLoadedResult && !LurkingStore.isLurking(channel.guild_id);
+                hasLoadedResult = closure_6.hasLoaded(closure_0.guild_id);
+                tmp2 = !hasLoadedResult && !closure_5.isLurking(closure_0.guild_id);
                 return tmp2;
               }
             }
           }
           const tmpResult8 = require("get initialized");
-          stateFromStores = tmpResult8.useStateFromStores(tmp12, tmp15);
+          stateFromStores = tmpResult8.useStateFromStores(tmp13, tmp16);
           if (cResult[14] !== channel.id) {
-            class T {
+            class S {
               constructor() {
-                const hasLoadedResult = ActiveThreadsStore.hasLoaded(channel.guild_id);
-                const tmp2 = !hasLoadedResult && !LurkingStore.isLurking(channel.guild_id);
+                hasLoadedResult = closure_6.hasLoaded(closure_0.guild_id);
+                tmp2 = !hasLoadedResult && !closure_5.isLurking(closure_0.guild_id);
                 return tmp2;
               }
             }
-            tmp18[0] = channel.id;
+            tmp19[0] = channel.id;
             cResult[14] = channel.id;
-            cResult[15] = tmp18;
-            tmp17 = tmp18;
-          } else {
-            class T {
+            cResult[15] = tmp19;
+            class C {
               constructor() {
-                const hasLoadedResult = ActiveThreadsStore.hasLoaded(channel.guild_id);
-                const tmp2 = !hasLoadedResult && !LurkingStore.isLurking(channel.guild_id);
+                if ("" !== closure_1) {
+                  tmp = closure_0;
+                  tmp2 = closure_2;
+                  obj = closure_0(closure_2[20]);
+                  tmp3 = closure_0;
+                  preloadForumThreadsResult = obj.preloadForumThreads(closure_0);
+                }
+                return;
+              }
+            }
+          } else {
+            class S {
+              constructor() {
+                hasLoadedResult = closure_6.hasLoaded(closure_0.guild_id);
+                tmp2 = !hasLoadedResult && !closure_5.isLurking(closure_0.guild_id);
                 return tmp2;
               }
             }
           }
           const tmpResult9 = require("ForumHooks");
-          const forumSearchState = tmpResult9.useForumSearchState(tmp17);
+          const forumSearchState = tmpResult9.useForumSearchState(tmp18);
           ({ searchResults, isSearchLoading } = forumSearchState);
           const tmpResult10 = require("ForumHooks");
           const automaticForumSearch = tmpResult10.useAutomaticForumSearch(channel, tagFilter, tagSetting);
@@ -541,70 +587,79 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel, sortO
           const gameInvitesActiveAndArchivedThreads = tmpResult14.useGameInvitesActiveAndArchivedThreads(channel, forumActiveThreadIds, threadIds);
           activeThreadIds = gameInvitesActiveAndArchivedThreads.activeThreadIds;
           const archivedThreadIds = gameInvitesActiveAndArchivedThreads.archivedThreadIds;
-          let tmp36 = null == searchResults && canViewArchivedPosts;
-          if (tmp36) {
-            class T {
+          let tmp37 = null == searchResults && canViewArchivedPosts;
+          if (tmp37) {
+            class S {
               constructor() {
-                const hasLoadedResult = ActiveThreadsStore.hasLoaded(channel.guild_id);
-                const tmp2 = !hasLoadedResult && !LurkingStore.isLurking(channel.guild_id);
+                hasLoadedResult = closure_6.hasLoaded(closure_0.guild_id);
+                tmp2 = !hasLoadedResult && !closure_5.isLurking(closure_0.guild_id);
                 return tmp2;
               }
             }
-            tmp36 = !tmp37;
+            tmp37 = !tmp38;
           }
-          if (tmp36) {
-            class T {
+          if (tmp37) {
+            class S {
               constructor() {
-                const hasLoadedResult = ActiveThreadsStore.hasLoaded(channel.guild_id);
-                const tmp2 = !hasLoadedResult && !LurkingStore.isLurking(channel.guild_id);
+                hasLoadedResult = closure_6.hasLoaded(closure_0.guild_id);
+                tmp2 = !hasLoadedResult && !closure_5.isLurking(closure_0.guild_id);
                 return tmp2;
               }
             }
-            tmp36 = 0 === activeThreadIds.length;
+            tmp37 = 0 === activeThreadIds.length;
           }
-          if (tmp36) {
-            class T {
+          if (tmp37) {
+            class S {
               constructor() {
-                const hasLoadedResult = ActiveThreadsStore.hasLoaded(channel.guild_id);
-                const tmp2 = !hasLoadedResult && !LurkingStore.isLurking(channel.guild_id);
+                hasLoadedResult = closure_6.hasLoaded(closure_0.guild_id);
+                tmp2 = !hasLoadedResult && !closure_5.isLurking(closure_0.guild_id);
                 return tmp2;
               }
             }
-            tmp36 = 0 === archivedThreadIds.length;
+            tmp37 = 0 === archivedThreadIds.length;
           }
           if (cResult[16] === activeThreadIds.length) {
-            class T {
+            class S {
               constructor() {
-                const hasLoadedResult = ActiveThreadsStore.hasLoaded(channel.guild_id);
-                const tmp2 = !hasLoadedResult && !LurkingStore.isLurking(channel.guild_id);
+                hasLoadedResult = closure_6.hasLoaded(closure_0.guild_id);
+                tmp2 = !hasLoadedResult && !closure_5.isLurking(closure_0.guild_id);
                 return tmp2;
               }
             }
           }
-          const fn2 = function w() {
-            const obj = TTITrackerDefault;
-            obj.recordRender(activeThreadIds.length + archivedThreadIds.length, !stateFromStores);
-          };
+          class R {
+            constructor() {
+              obj = closure_1(closure_2[24]);
+              recordRenderResult = obj.recordRender(activeThreadIds.length + archivedThreadIds.length, !closure_2);
+              return;
+            }
+          }
           const items1 = [activeThreadIds.length, archivedThreadIds.length, stateFromStores];
           cResult[16] = activeThreadIds.length;
           cResult[17] = stateFromStores;
           cResult[18] = archivedThreadIds.length;
-          cResult[19] = fn2;
+          cResult[19] = R;
           cResult[20] = items1;
         }
-        const fn = function f() {
-          if ("" !== closure_1) {
-            const obj = ForumPostDataLoader;
-            obj.preloadForumThreads(channel);
+        class C {
+          constructor() {
+            if ("" !== closure_1) {
+              tmp = closure_0;
+              tmp2 = closure_2;
+              obj = closure_0(closure_2[20]);
+              tmp3 = closure_0;
+              preloadForumThreadsResult = obj.preloadForumThreads(closure_0);
+            }
+            return;
           }
-        };
+        }
         const items2 = [channel, tmp5];
         cResult[7] = channel;
         cResult[8] = tmp5;
-        cResult[9] = fn;
+        cResult[9] = C;
         cResult[10] = items2;
         tmp8 = items2;
-        tmp7 = fn;
+        tmp7 = C;
       }
     }
   }
@@ -615,7 +670,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel, sortO
   cResult[3] = tagSetting;
   cResult[4] = obj2;
   tmp4 = obj2;
-}) : ((channel, sortOrder, tagFilter, tagSetting) => {
+}) : (function useForumData(channel, sortOrder, tagFilter, tagSetting) {
   let activeThreadIds;
   let activeThreadsLoading;
   let canLoadMore;
@@ -680,7 +735,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel, sortO
   return { activeThreadIds, archivedThreadIds, canLoadMore, loadMore, activeThreadsLoading, archivedThreadsLoading, isSearchLoading, isEmpty, searchResults };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameInvitesChannelHeaderGameIcon(channel) {
   let gameId;
   let gameProfileModalChecks;
   let shouldOpenGameProfile;
@@ -768,7 +823,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     cResult[5] = fn;
     tmp9 = fn;
   }
-}) : ((channel) => {
+}) : (function GameInvitesChannelHeaderGameIcon(channel) {
   let gameProfileModalChecks;
   let obj4;
   let tmp3Result;
@@ -821,7 +876,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
 });
 const viewabilityConfig = { waitForInteraction: false, viewAreaCoveragePercentThreshold: 50, minimumViewTime: 100 };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumChannelContent(channel) {
   let activeThreadIds;
   let activeThreadsLoading;
   let archivedThreadIds;
@@ -1031,7 +1086,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
                                               tmp73 = tmp80;
                                             }
                                             function he() {
-                                              const obj = tracking_Tracking;
+                                              const obj = Tracking;
                                               const obj2 = { guildId: channel.guild_id, channelId: channel.id };
                                               return obj.trackForumScrolled(obj2);
                                             }
@@ -1194,7 +1249,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         }
       }
     }
-    class B {
+    class D {
       constructor() {
         const tmp = null == searchResults && canViewArchivedPosts && !archivedThreadsLoading && canLoadMore;
         if (tmp) {
@@ -1207,15 +1262,15 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     cResult[8] = canViewArchivedPosts;
     cResult[9] = loadMore;
     cResult[10] = searchResults;
-    cResult[11] = B;
-    tmp24 = B;
+    cResult[11] = D;
+    tmp24 = D;
   }
   const obj9 = { guildId: channel.guild_id, channelId: channel.id };
   cResult[0] = channel.guild_id;
   cResult[1] = channel.id;
   cResult[2] = obj9;
   tmp7 = obj9;
-}) : ((channel) => {
+}) : (function ForumChannelContent(channel) {
   let FlashList;
   let items5;
   let items6;
@@ -1367,7 +1422,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       data: memo,
       onScroll: callback1,
       onScrollBeginDrag() {
-          const obj = tracking_Tracking;
+          const obj = Tracking;
           const obj2 = { guildId: channel.guild_id, channelId: channel.id };
           return obj.trackForumScrolled(obj2);
         },
@@ -1390,7 +1445,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumChannel(channel) {
   let analyticsLocations;
   let closure_1;
   let constants2;
@@ -1478,7 +1533,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const stateFromStores1 = tmpResult8.useStateFromStores(tmp15, tmp17, tmp18);
   tmp11(tmp2[52])(channel);
   if (cResult[9] !== channel.id) {
-    class M {
+    class O {
       constructor() {
         return () => {
           if (null != id.id) {
@@ -1490,12 +1545,12 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
     const items3 = [channel.id];
     cResult[9] = channel.id;
-    cResult[10] = M;
+    cResult[10] = O;
     cResult[11] = items3;
     tmp22 = items3;
-    tmp21 = M;
+    tmp21 = O;
   } else {
-    class M {
+    class O {
       constructor() {
         return () => {
           if (null != id.id) {
@@ -1509,7 +1564,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }
   const effect = searchQuery.useEffect(tmp21, tmp22);
   if (cResult[12] === analyticsLocations) {
-    class M {
+    class O {
       constructor() {
         return () => {
           if (null != id.id) {
@@ -1524,7 +1579,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[13] = channel;
   cResult[14] = searchQuery;
   if (stateFromStores1 != null) {
-    class M {
+    class O {
       constructor() {
         return () => {
           if (null != id.id) {
@@ -1535,55 +1590,53 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
     }
   }
-  class R {
-    constructor(analyticsLocationObject) {
-      if (channel.isGameInvitesChannel()) {
-        const obj2 = { parentChannelId: channel.id, analyticsLocations };
-        const obj5 = CreateGameInvitePostModalActionCreators;
-        const result = obj5.openCreateGameInvitePostModal(obj2);
-      } else {
-        const obj = DraftActionCreatorsDefault;
-        obj.changeThreadSettings(channel.id, { isPrivate: false });
-        let name;
-        if (stateFromStores1 != null) {
-          name = tmp5.name;
-        }
-        let tmp8 = null != name;
-        if (tmp8) {
-          let length;
-          if (stateFromStores1 != null) {
-            if (stateFromStores1.name != null) {
-              const trimmed = str.trim();
-              if (trimmed != null) {
-                length = trimmed.length;
-              }
-            }
-          }
-          tmp8 = 0 !== length;
-        }
-        if (!tmp8) {
-          let trimmed1;
-          const changeThreadSettings = tmp2(7416).changeThreadSettings;
-          const id = tmp.id;
-          DraftActionCreatorsDefault;
-          if (null != searchQuery) {
-            if (searchQuery.trim().length > 0) {
-              trimmed1 = str2.trim();
-            }
-          }
-          const obj6 = { name: trimmed1 };
-          changeThreadSettings(id, obj6);
-        }
-        const obj9 = { guildId: null, parentChannelId: null, analyticsLocationObject, analyticsLocations };
-        ({ guild_id: obj4.guildId, id: obj4.parentChannelId } = channel);
-        const obj3 = ForumComposerModalActionCreators;
-        const result1 = obj3.openCreateForumPostModal(obj9);
+  const fn2 = function w(analyticsLocationObject) {
+    if (channel.isGameInvitesChannel()) {
+      const obj2 = { parentChannelId: channel.id, analyticsLocations };
+      const obj5 = CreateGameInvitePostModalActionCreators;
+      const result = obj5.openCreateGameInvitePostModal(obj2);
+    } else {
+      const obj = DraftActionCreatorsDefault;
+      obj.changeThreadSettings(channel.id, { isPrivate: false });
+      let name;
+      if (stateFromStores1 != null) {
+        name = tmp5.name;
       }
+      let tmp8 = null != name;
+      if (tmp8) {
+        let length;
+        if (stateFromStores1 != null) {
+          if (stateFromStores1.name != null) {
+            const trimmed = str.trim();
+            if (trimmed != null) {
+              length = trimmed.length;
+            }
+          }
+        }
+        tmp8 = 0 !== length;
+      }
+      if (!tmp8) {
+        let trimmed1;
+        const changeThreadSettings = tmp2(7891).changeThreadSettings;
+        const id = tmp.id;
+        DraftActionCreatorsDefault;
+        if (null != searchQuery) {
+          if (searchQuery.trim().length > 0) {
+            trimmed1 = str2.trim();
+          }
+        }
+        const obj6 = { name: trimmed1 };
+        changeThreadSettings(id, obj6);
+      }
+      const obj9 = { guildId: null, parentChannelId: null, analyticsLocationObject, analyticsLocations };
+      ({ guild_id: obj4.guildId, id: obj4.parentChannelId } = channel);
+      const obj3 = ForumComposerModalActionCreators;
+      const result1 = obj3.openCreateForumPostModal(obj9);
     }
-  }
+  };
   cResult[15] = undefined;
-  cResult[16] = R;
-}) : ((channel) => {
+  cResult[16] = fn2;
+}) : (function ForumChannel(channel) {
   let closure_1;
   let constants2;
   let constants3;
@@ -1663,7 +1716,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
       if (!tmp8) {
         let trimmed1;
-        const changeThreadSettings = tmp2(7416).changeThreadSettings;
+        const changeThreadSettings = tmp2(7891).changeThreadSettings;
         const id = tmp.id;
         DraftActionCreatorsDefault;
         if (null != searchQuery) {
@@ -1707,7 +1760,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       callback(obj5);
     }
     let tmp = require;
-    let obj = tracking_Tracking;
+    let obj = Tracking;
     let obj2 = { guildId: channel.guild_id, channelId: channel.id };
     let result = obj.trackForumCreateNewPostClick(obj2);
     const tmp3 = channel;

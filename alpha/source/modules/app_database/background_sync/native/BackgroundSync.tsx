@@ -1,32 +1,32 @@
-// Module ID: 17492
-// Function ID: 17493
+// Module ID: 17774
+// Function ID: 17775
 // Name: background_sync/BackgroundSync
-// Dependencies: [32, 5, 2055, 2051, 4911, 1986, 7001, 1085, 5694, 5645, 2074, 3, 1102, 510, 7264, 1369, 584, 1242, 1252, 2078, 1282, 11, 12, 7150, 7153, 7151, 13495, 15416, 6999, 1375, 7009, 2]
+// Dependencies: [32, 5, 2067, 2063, 6040, 1998, 7189, 1085, 6035, 5992, 2086, 3, 1102, 510, 9653, 1381, 584, 1254, 1264, 2090, 1294, 11, 12, 7330, 7333, 7331, 13795, 15678, 7187, 1387, 7197, 2]
 // Exports: backgroundSync
 
-// Module 17492 (background_sync/BackgroundSync)
+// Module 17774 (background_sync/BackgroundSync)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Storage4 from "Storage" /* 510 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2078 */;
-import modules_Messages from "modules/Messages" /* 6999 */;
-import GuildVersionsDefault from "GuildVersions" /* 7150 */;
-import KvCacheVersionDefault from "KvCacheVersion" /* 7151 */;
-import NonGuildVersionsDefault from "NonGuildVersions" /* 7153 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2090 */;
+import modules_Messages from "modules/Messages" /* 7187 */;
+import GuildVersionsDefault from "GuildVersions" /* 7330 */;
+import KvCacheVersionDefault from "KvCacheVersion" /* 7331 */;
+import NonGuildVersionsDefault from "NonGuildVersions" /* 7333 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
+import ChannelRecord from "ChannelRecord" /* 2067 */;
 import "ChannelStore";
-import ReadStateStore from "ReadStateStore" /* 4911 */;
-import AppStateStore from "AppStateStore" /* 1986 */;
-import FileSystemStore from "FileSystemStore" /* 7001 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
+import AppStateStore from "AppStateStore" /* 1998 */;
+import FileSystemStore from "FileSystemStore" /* 7189 */;
 import Constants from "Constants" /* 1085 */;
-import StickersStore from "StickersStore" /* 5694 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import EmojiStore from "EmojiStore" /* 5645 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import StickersStore from "StickersStore" /* 6035 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import EmojiStore from "EmojiStore" /* 5992 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import size from "module_2" /* 2 */;
 
 let basicChannel, c1, c11, c21, c22, closure_13, config, readStatesByChannel;

@@ -1,18 +1,18 @@
-// Module ID: 15141
-// Function ID: 15142
+// Module ID: 15403
+// Function ID: 15404
 // Name: DarkModeThemeSetting
-// Dependencies: [1193, 1196, 7645, 1085, 558, 576, 504, 11142, 1126, 15139, 15142, 2]
+// Dependencies: [1205, 1208, 7966, 1085, 558, 576, 504, 11262, 1126, 15401, 15404, 2]
 
-// Module 15141 (DarkModeThemeSetting)
+// Module 15403 (DarkModeThemeSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import ThemeConstants from "ThemeConstants" /* 1196 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import useSyncedModeThemeName from "useSyncedModeThemeName" /* 15139 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
+import ThemeConstants from "ThemeConstants" /* 1208 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import useSyncedModeThemeName from "useSyncedModeThemeName" /* 15401 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,7 +22,7 @@ const get_initialized = tmp(504);
 const SystemTheme = ThemeConstants.SystemTheme;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserSettingsSections = Constants.UserSettingsSections;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncedModePickerVisible() {
   let sameAsDeviceThemeEnabled;
   let tmp4;
   let tmp5;
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useSyncedModePickerVisible() {
   let sameAsDeviceThemeEnabled;
   const items = [ThemeStore];
   const obj = get_initialized;

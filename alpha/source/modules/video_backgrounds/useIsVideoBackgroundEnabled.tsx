@@ -1,18 +1,18 @@
-// Module ID: 9674
-// Function ID: 9675
+// Module ID: 10863
+// Function ID: 10864
 // Name: useIsVideoBackgroundEnabled
-// Dependencies: [558, 576, 8100, 9675, 1369, 2]
+// Dependencies: [558, 576, 5267, 10864, 1381, 2]
 
-// Module 9674 (useIsVideoBackgroundEnabled)
+// Module 10863 (useIsVideoBackgroundEnabled)
 import react from "react" /* 576 */;
-import VirtualBackgroundsIosExperimentDefault from "VirtualBackgroundsIosExperiment" /* 8100 */;
-import useIsVideoBackgroundSupportedDefault from "useIsVideoBackgroundSupported" /* 9675 */;
+import VirtualBackgroundsIosExperimentDefault from "VirtualBackgroundsIosExperiment" /* 5267 */;
+import useIsVideoBackgroundSupportedDefault from "useIsVideoBackgroundSupported" /* 10864 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const PlatformUtils = tmp(1369);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const PlatformUtils = tmp(1381);
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVideoBackgroundEnabled(location) {
   let tmp4;
   const obj = react;
   const cResult = obj.c(2);
@@ -37,7 +37,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp5 = tmp7;
   }
   return tmp5;
-}) : ((location) => {
+}) : (function useIsVideoBackgroundEnabled(location) {
   const obj = VirtualBackgroundsIosExperimentDefault;
   const obj2 = { location };
   const enabled = obj.useConfig(obj2).enabled;

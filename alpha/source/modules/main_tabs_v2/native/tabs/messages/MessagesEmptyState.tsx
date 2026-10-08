@@ -1,24 +1,24 @@
-// Module ID: 16017
-// Function ID: 16018
+// Module ID: 16277
+// Function ID: 16278
 // Name: MessagesEmptyState
-// Dependencies: [32, 19, 17, 21, 4896, 558, 576, 1484, 1490, 1260, 8455, 5919, 14917, 16018, 1126, 4892, 5601, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 558, 576, 1496, 1502, 1272, 8941, 8302, 15179, 16278, 1126, 5086, 5375, 2]
 
-// Module 16017 (MessagesEmptyState)
+// Module 16277 (MessagesEmptyState)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import useNavigation from "useNavigation" /* 1490 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5919 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8455 */;
-import useYouBarTotalHeight from "useYouBarTotalHeight" /* 14917 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16018 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import useNavigation from "useNavigation" /* 1502 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8302 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8941 */;
+import useYouBarTotalHeight from "useYouBarTotalHeight" /* 15179 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16278 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let metroRequire;
 let c10 = 622;
 let c11 = 350;
 let closure_12 = createStyles.createStyles({ container: { flex: 1, justifyContent: "center" }, scrollViewContentContainer: { flexGrow: 2 }, innerContainer: { alignItems: "center", justifyContent: "center" }, imageContainer: { alignItems: "center", marginBottom: 24 }, textWrapper: { paddingHorizontal: 48 }, body: { marginBottom: 24, textAlign: "center" }, title: { textAlign: "center", fontSize: 18, marginBottom: 8 }, buttonWrapper: { paddingHorizontal: 16, paddingBottom: 16 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesEmptyState() {
   let closure_129_0;
   let container;
   let imageContainer;
@@ -266,7 +266,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[4] = isScreenLandscape;
   cResult[5] = youBarTotalHeight;
   cResult[6] = tmp18;
-}) : (() => {
+}) : (function MessagesEmptyState() {
   let Button;
   let closure_129_0;
   let intl;
@@ -327,18 +327,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   items2 = [metroImportAll(hasOwnProperty, obj7), ];
   const obj9 = { style: tmp.textWrapper, children: items3 };
   const obj10 = { color: "mobile-text-heading-primary", variant: "heading-md/bold", style: tmp.title, children: intl.string(intl4.t["8JZof8"]) };
-  const Heading = tmp7(4892).Heading;
+  const Heading = tmp7(5086).Heading;
   intl = tmp7(1126).intl;
   items3 = [metroImportAll(Heading, obj10), ];
   const obj11 = { color: "text-default", variant: "text-md/medium", style: tmp.body, children: intl2.string(intl4.t["qm+H7x"]) };
-  const Text = tmp7(4892).Text;
+  const Text = tmp7(5086).Text;
   intl2 = tmp7(1126).intl;
   items3[1] = metroImportAll(Text, obj11);
   items2[1] = React4(hasOwnProperty, obj9);
   items4 = [React4(hasOwnProperty, obj6), ];
   const obj12 = { style: tmp.buttonWrapper, children: metroImportAll(Button, obj13) };
   obj13 = { text: intl3.string(intl4.t.zIJnA6), onPress: callback1, size: "lg" };
-  Button = tmp7(5601).Button;
+  Button = tmp7(5375).Button;
   intl3 = tmp7(1126).intl;
   items4[1] = metroImportAll(hasOwnProperty, obj12);
   return metroImportAll(tmp17, obj4);

@@ -1,18 +1,18 @@
-// Module ID: 12237
-// Function ID: 12238
+// Module ID: 12316
+// Function ID: 12317
 // Name: GuildPowerupsLevelsSection
-// Dependencies: [19, 17, 21, 587, 1370, 4896, 558, 576, 12226, 1126, 2553, 12238, 12242, 2]
+// Dependencies: [19, 17, 21, 587, 1382, 5090, 558, 576, 12305, 1126, 2597, 12317, 12321, 2]
 
-// Module 12237 (GuildPowerupsLevelsSection)
+// Module 12316 (GuildPowerupsLevelsSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import GuildPowerupsLevelCardDefault from "GuildPowerupsLevelCard" /* 12238 */;
-import MarketingCardsScroller2 from "MarketingCardsScroller" /* 12242 */;
+import GuildPowerupsLevelCardDefault from "GuildPowerupsLevelCard" /* 12317 */;
+import MarketingCardsScroller2 from "MarketingCardsScroller" /* 12321 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1370 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1382 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ obj2 = { height: num, paddingBottom: nativeDefault.space.PX_8 };
 createStyles = createStyles.createStyles;
 obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
 let closure_9 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupsLevelsSection(guildId) {
   let arr2;
   let cardContainer;
   let intl;
@@ -118,7 +118,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         return "singleLevel" === type.type;
       }
     }
-    let obj2 = { title: intl.string(require("module_2553")["TXY/b0"]), description: intl2.string(require("module_2553").aJv4PB) };
+    let obj2 = { title: intl.string(require("module_2597")["TXY/b0"]), description: intl2.string(require("module_2597").aJv4PB) };
     const tmp14 = require("GuildPowerupsSectionHeader");
     intl = tmp(tmp2[9]).intl;
     intl2 = tmp(tmp2[9]).intl;
@@ -148,7 +148,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[7] = arr2;
   cResult[8] = tmp4.cardContainer;
   cResult[9] = mapped1;
-}) : ((arg0) => {
+}) : (function GuildPowerupsLevelsSection(arg0) {
   let cardContainer;
   let guildId;
   let intl;
@@ -169,8 +169,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const callback = memo.useCallback((current) => {
     isScrollingRef.current = current;
   }, []);
-  let obj2 = { title: intl.string(listings(2553)["TXY/b0"]), description: intl2.string(listings(2553).aJv4PB) };
-  const tmp3 = listings(12226);
+  let obj2 = { title: intl.string(listings(2597)["TXY/b0"]), description: intl2.string(listings(2597).aJv4PB) };
+  const tmp3 = listings(12305);
   intl = intl3.intl;
   intl2 = intl3.intl;
   items1 = [closure_5(tmp3, obj2), ];

@@ -1,11 +1,11 @@
-// Module ID: 9991
-// Function ID: 9992
+// Module ID: 9521
+// Function ID: 9522
 // Name: useCanRemoveAllReactions
-// Dependencies: [4515, 1085, 558, 576, 6782, 504, 2]
+// Dependencies: [4707, 1085, 558, 576, 6958, 504, 2]
 
-// Module 9991 (useCanRemoveAllReactions)
+// Module 9521 (useCanRemoveAllReactions)
 import Constants from "Constants" /* 1085 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 let _require;
 
 const Permissions = Constants.Permissions;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanRemoveAllReactions(arg0) {
   let closure_0;
   let first;
   let isActiveChannelOrUnarchivableThread;
@@ -53,7 +53,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = items1;
   tmp8 = items1;
   tmp7 = fn;
-}) : ((arg0) => {
+}) : (function useCanRemoveAllReactions(arg0) {
   let closure_0;
   let isActiveChannelOrUnarchivableThread;
   _require = arg0;

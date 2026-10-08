@@ -1,22 +1,22 @@
-// Module ID: 14636
-// Function ID: 14637
+// Module ID: 14897
+// Function ID: 14898
 // Name: SensitiveContentFiltersScreen
-// Dependencies: [19, 7645, 21, 1126, 558, 576, 14637, 11142, 14515, 2]
+// Dependencies: [19, 7966, 21, 1126, 558, 576, 14898, 11262, 14775, 2]
 
-// Module 14636 (SensitiveContentFiltersScreen)
+// Module 14897 (SensitiveContentFiltersScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
-import SettingLayoutDefault from "SettingLayout" /* 14515 */;
-import SettingsScreenNoticesDefault from "SettingsScreenNotices" /* 14637 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
+import SettingLayoutDefault from "SettingLayout" /* 14775 */;
+import SettingsScreenNoticesDefault from "SettingsScreenNotices" /* 14898 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const SettingsScreenNotices = tmp(14637);
+const SettingsScreenNotices = tmp(14898);
 function getContentCategory() {
   let intl;
   let intl2;
@@ -41,7 +41,7 @@ function getContentCategory() {
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const ListHeaderComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const ListHeaderComponent = ReactCompilerGating.isReactCompilerEnabled() ? (function SensitiveContentFiltersNotices() {
   let first;
   const obj = react2;
   const cResult = obj.c(1);
@@ -54,12 +54,12 @@ const ListHeaderComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() =
     first = cResult[0];
   }
   return first;
-}) : (() => {
+}) : (function SensitiveContentFiltersNotices() {
   SettingsScreenNoticesDefault;
   return <tmp isListHeader screen={SettingsScreenNotices.SettingsScreen.SENSITIVE_CONTENT_FILTERS} />;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsSensitiveContentFilters() {
   let first;
   let items;
   let tmp12;
@@ -67,7 +67,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: items, ListHeaderComponent };
-    const createList = tmp2(11142).createList;
+    const createList = tmp2(11262).createList;
     items = [];
     SettingBuilders;
     HermesBuiltin.arraySpread(items, getContentCategory(), 0);
@@ -85,7 +85,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp12 = cResult[1];
   }
   return tmp12;
-}) : (() => {
+}) : (function UserSettingsSensitiveContentFilters() {
   const node = react.useMemo(() => {
     let items;
     const obj2 = { sections: items, ListHeaderComponent };

@@ -1,14 +1,14 @@
-// Module ID: 9129
-// Function ID: 9130
+// Module ID: 10701
+// Function ID: 10702
 // Name: useVideoStreamError
-// Dependencies: [502, 9130, 4921, 558, 576, 9131, 504, 2]
+// Dependencies: [502, 10702, 5115, 558, 576, 5287, 504, 2]
 // Exports: default
 
-// Module 9129 (useVideoStreamError)
-import Constants from "Constants" /* 4921 */;
-import AVError from "AVError" /* 9131 */;
+// Module 10701 (useVideoStreamError)
+import Constants from "Constants" /* 5115 */;
+import AVError from "AVError" /* 5287 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AVErrorStore from "AVErrorStore" /* 9130 */;
+import AVErrorStore from "AVErrorStore" /* 10702 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let _require, arraySpreadResult1, arraySpreadResult2, arraySpreadResult3, arrayS
 
 const MediaEngineContextTypes = Constants.MediaEngineContextTypes;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoStreamErrorContext(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -100,7 +100,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[2] = arg1;
   cResult[3] = T;
   tmp7 = T;
-}) : ((arg0, arg1) => {
+}) : (function useVideoStreamErrorContext(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -142,7 +142,7 @@ ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const result1 = size.fileFinishedImporting("modules/errors/hooks/useVideoStreamError.tsx");
 
-export default (arg0, arg1) => {
+export default function useVideoStreamError(arg0, arg1) {
   const tmp = closure_5(arg0, arg1);
   let type;
   if (tmp != null) {

@@ -1,9 +1,9 @@
-// Module ID: 16185
-// Function ID: 16186
+// Module ID: 16445
+// Function ID: 16446
 // Name: MentionsBadge
-// Dependencies: [19, 21, 558, 576, 1188, 2]
+// Dependencies: [19, 21, 558, 576, 1200, 2]
 
-// Module 16185 (MentionsBadge)
+// Module 16445 (MentionsBadge)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -11,9 +11,9 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const native = tmp(1188);
+const native = tmp(1200);
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MentionsBadge(arg0) {
   let isMentionLowImportance;
   let mentionsCount;
   const obj = react2;
@@ -31,7 +31,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = mentionsCount;
   cResult[2] = tmp5;
   tmp4 = tmp5;
-}) : ((arg0) => {
+}) : (function MentionsBadge(arg0) {
   let isMentionLowImportance;
   let mentionsCount;
   ({ mentionsCount, isMentionLowImportance } = arg0);

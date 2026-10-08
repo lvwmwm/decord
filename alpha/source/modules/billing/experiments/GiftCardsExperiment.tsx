@@ -1,22 +1,20 @@
-// Module ID: 6900
-// Function ID: 6901
+// Module ID: 7089
+// Function ID: 7090
 // Name: GiftCardsExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1452, 558, 576, 2]
 
-// Module 6900 (GiftCardsExperiment)
+// Module 7089 (GiftCardsExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let cResult;
 
 let obj2;
 let obj = { name: "2026-02-gift-cards", kind: "user", defaultConfig: { enabled: false }, variations: obj2 };
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGiftCardsExperimentConfig(cResult) {
   let tmp3;
   const obj = react;
   cResult = obj.c(2);
@@ -30,7 +28,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : ((cResult) => {
+}) : (function useGiftCardsExperimentConfig(cResult) {
   const obj = { enabled: apexExperiment.useConfig(cResult).enabled };
   return obj;
 });

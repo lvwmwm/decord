@@ -1,24 +1,24 @@
-// Module ID: 16309
-// Function ID: 16310
+// Module ID: 16569
+// Function ID: 16570
 // Name: useGuildsBarBadges
-// Dependencies: [109, 19, 11173, 4706, 2112, 2074, 4515, 1377, 1085, 21, 4896, 558, 576, 504, 4707, 16310, 4586, 587, 1188, 16314, 16278, 16277, 2]
+// Dependencies: [109, 19, 11293, 4900, 2124, 2086, 4707, 1389, 1085, 21, 5090, 558, 576, 504, 4901, 16570, 4778, 587, 1200, 16574, 16538, 16537, 2]
 
-// Module 16309 (useGuildsBarBadges)
+// Module 16569 (useGuildsBarBadges)
 import Fragment from "Fragment" /* 21 */;
-import native from "native" /* 1188 */;
-import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 4707 */;
-import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 16278 */;
-import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 16314 */;
+import native from "native" /* 1200 */;
+import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 4901 */;
+import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 16538 */;
+import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 16574 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11173 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4706 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import UserStore from "UserStore" /* 1377 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11293 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4900 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let closure_4 = ["guildActivityIndicatorSource"];
 ({ GuildFeatures: map1, Permissions: closure_14 } = Constants);
 const jsx = Fragment.jsx;
 let closure_16 = createStyles.createStyles({ topRightBadge: { position: "absolute", right: 9, backgroundColor: "transparent", borderColor: "transparent" } });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildsBarBadges(arg0, arg1, arg2) {
   let closure_0;
   let first;
   let items5;
@@ -51,7 +51,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    class D {
+    class B {
       constructor() {
         guild = closure_10.getGuild(closure_0);
         flag = undefined;
@@ -67,10 +67,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
       }
     }
     cResult[1] = arg0;
-    cResult[2] = D;
-    tmp7 = D;
+    cResult[2] = B;
+    tmp7 = B;
   } else {
-    class D {
+    class B {
       constructor() {
         guild = closure_10.getGuild(closure_0);
         flag = undefined;
@@ -89,7 +89,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class D {
+    class B {
       constructor() {
         guild = closure_10.getGuild(closure_0);
         flag = undefined;
@@ -111,7 +111,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
     cResult[3] = items1;
     tmp9 = items1;
   } else {
-    class D {
+    class B {
       constructor() {
         guild = closure_10.getGuild(closure_0);
         flag = undefined;
@@ -131,7 +131,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
     let tmp13;
     let tmp17;
     let tmp16;
-    class D {
+    class B {
       constructor() {
         guild = closure_10.getGuild(closure_0);
         flag = undefined;
@@ -150,7 +150,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
     const stateFromStores1 = tmpResult5.useStateFromStores(tmp9, C, items5);
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      class D {
+      class B {
         constructor() {
           guild = closure_10.getGuild(closure_0);
           flag = undefined;
@@ -171,7 +171,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
       cResult[8] = items2;
       tmp13 = items2;
     } else {
-      class D {
+      class B {
         constructor() {
           guild = closure_10.getGuild(closure_0);
           flag = undefined;
@@ -293,12 +293,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
     }
     const tmpResult6 = tmp(504);
     const stateFromStores2 = tmpResult6.useStateFromStores(tmp13, tmp16, tmp17);
-    const tmp20 = stateFromStores(16310)(arg0);
-    const tmpResult7 = tmp(4586);
+    const tmp20 = stateFromStores(16570)(arg0);
+    const tmpResult7 = tmp(4778);
     const token = tmpResult7.useToken(stateFromStores(587).modules.mobile.GUILD_BAR_ITEM_SIZE);
-    const tmpResult8 = tmp(4586);
+    const tmpResult8 = tmp(4778);
     const token1 = tmpResult8.useToken(stateFromStores(587).modules.mobile.GUILD_BAR_ITEM_MARGIN);
-    const diff = token1 - tmp(1188).BADGE_PADDING;
+    const diff = token1 - tmp(1200).BADGE_PADDING;
     if (cResult[12] !== diff) {
       class U {
         constructor() {
@@ -852,7 +852,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
   cResult[5] = stateFromStores;
   cResult[6] = C;
   cResult[7] = items5;
-}) : ((arg0, mentionCount, isMentionLowImportance) => {
+}) : (function useGuildsBarBadges(arg0, mentionCount, isMentionLowImportance) {
   let closure_0;
   let cutout;
   let cutoutTopRight;

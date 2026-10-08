@@ -1,21 +1,22 @@
-// Module ID: 6108
-// Function ID: 6109
+// Module ID: 6288
+// Function ID: 6289
 // Name: useTextField
-// Dependencies: [32, 19, 558, 576, 5786, 2]
+// Dependencies: [32, 19, 558, 576, 5369, 2]
 
-// Module 6108 (useTextField)
+// Module 6288 (useTextField)
 import react2 from "react" /* 576 */;
-import react_native from "react-native" /* 5786 */;
+import react_native from "react-native" /* 5369 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
+import react_mod from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, onClear;
+let _require;
 
+let react = react_mod;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClear) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTextFieldState(onClear) {
   let first;
   let onChange;
   let tmp5;
@@ -38,7 +39,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClear) => {
     first = tmp3[0];
   }
   if (cResult[0] !== onChange) {
-    const fn = function s(arg0) {
+    const fn = function n(arg0) {
       closure_2(arg0);
       if (onChange != null) {
         onChange(arg0);
@@ -50,7 +51,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClear) => {
   } else {
     tmp5 = cResult[1];
   }
-  let closure_3 = tmp5;
+  react = tmp5;
   if (cResult[2] === onClear) {
     let tmp6;
     if (cResult[3] === tmp5) {
@@ -75,17 +76,19 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClear) => {
     cResult[9] = obj2;
     tmp7 = obj2;
   }
-  const fn2 = function h() {
-    closure_3("");
-    if (onClear != null) {
-      onClear();
+  class V {
+    constructor() {
+      closure_3("");
+      if (onClear != null) {
+        onClear();
+      }
     }
-  };
+  }
   cResult[2] = onClear;
   cResult[3] = tmp5;
-  cResult[4] = fn2;
-  tmp6 = fn2;
-}) : ((onClear) => {
+  cResult[4] = V;
+  tmp6 = V;
+}) : (function useTextFieldState(onClear) {
   let first;
   let onChange;
   let value;
@@ -128,7 +131,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClear) => {
 });
 let closure_4 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClear, ref) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTextField(onClear, ref) {
   let tmp3;
   _require = onClear;
   let obj = require("react");
@@ -165,7 +168,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClear, ref) => {
     const tmp7 = closure_4(tmp4);
     let closure_2 = tmp7;
     if (cResult[5] !== tmp7) {
-      const fn2 = function b() {
+      const fn2 = function f() {
         let obj = {
           blur() {
             const current = ref.current;
@@ -275,7 +278,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClear, ref) => {
   cResult[3] = onClear;
   cResult[4] = obj5;
   tmp4 = obj5;
-}) : ((onClear, ref) => {
+}) : (function useTextField(onClear, ref) {
   let callback;
   let obj3;
   ref = react.useRef(null);

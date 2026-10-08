@@ -1,22 +1,22 @@
-// Module ID: 12373
-// Function ID: 12374
+// Module ID: 12469
+// Function ID: 12470
 // Name: CreateGuildModal
-// Dependencies: [19, 17, 4513, 6475, 1085, 21, 12145, 9500, 1252, 5712, 12372, 1260, 6017, 12374, 12389, 11975, 1126, 12394, 7509, 12396, 12397, 12409, 558, 576, 7556, 6503, 2]
+// Dependencies: [19, 17, 4705, 6653, 1085, 21, 12224, 8665, 1264, 6102, 12468, 1272, 6203, 12470, 12485, 12048, 1126, 12490, 9232, 12492, 12493, 12505, 558, 576, 9267, 6679, 2]
 
-// Module 12373 (CreateGuildModal)
+// Module 12469 (CreateGuildModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5712 */;
-import Navigator2 from "Navigator" /* 6503 */;
-import useIsWindowSmall from "useIsWindowSmall" /* 7556 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 12372 */;
-import components_JoinServerDefault from "components/JoinServer" /* 12396 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6102 */;
+import Navigator2 from "Navigator" /* 6679 */;
+import useIsWindowSmall from "useIsWindowSmall" /* 9267 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 12468 */;
+import components_JoinServerDefault from "components/JoinServer" /* 12492 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4513 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 6475 */;
+import GuildChannelStore from "GuildChannelStore" /* 4705 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 6653 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -152,7 +152,7 @@ function getScreens(arg0, initialRoute, arg2) {
     }
   };
   impressionProperties[constants.JOIN_SERVER] = obj7;
-  impressionProperties[tmp.ACCEPT_INVITE] = { impressionName: tmp2(1260).ImpressionNames.GUILD_ADD_ACCEPT_INVITE, impressionProperties, fullscreen: true, headerTitle: headerTitle2, headerLeft, render: render2 };
+  impressionProperties[tmp.ACCEPT_INVITE] = { impressionName: tmp2(1272).ImpressionNames.GUILD_ADD_ACCEPT_INVITE, impressionProperties, fullscreen: true, headerTitle: headerTitle2, headerLeft, render: render2 };
   const obj9 = {
     impressionName: "Array",
     impressionProperties,
@@ -169,7 +169,7 @@ function getScreens(arg0, initialRoute, arg2) {
     }
   };
   impressionProperties[tmp.JOIN_STUDENT_HUB] = obj9;
-  ({ impressionName: tmp2(1260).ImpressionNames.GUILD_ADD_ACCEPT_INVITE, impressionProperties, fullscreen: true, headerTitle: headerTitle2, headerLeft, render: render2 });
+  ({ impressionName: tmp2(1272).ImpressionNames.GUILD_ADD_ACCEPT_INVITE, impressionProperties, fullscreen: true, headerTitle: headerTitle2, headerLeft, render: render2 });
   return impressionProperties;
 }
 const Keyboard = react_native.Keyboard;
@@ -177,7 +177,7 @@ const Keyboard = react_native.Keyboard;
 ({ AnalyticEvents: metroImportAll, AnalyticsSections: c9 } = Constants);
 const jsx = Fragment.jsx;
 let impressionProperties = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.GUILD_ADD_FLOW };
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateGuildModal(arg0) {
   let channel;
   let first;
   let initialState;
@@ -257,7 +257,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = onSuccess;
   cResult[6] = tmp12;
   tmp11 = tmp12;
-}) : ((channel) => {
+}) : (function CreateGuildModal(channel) {
   channel = channel.channel;
   const initialState = channel.initialState;
   const onSuccess = channel.onSuccess;

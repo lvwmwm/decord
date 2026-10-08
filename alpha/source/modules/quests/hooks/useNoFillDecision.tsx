@@ -1,20 +1,20 @@
-// Module ID: 15034
-// Function ID: 15035
+// Module ID: 15296
+// Function ID: 15297
 // Name: useNoFillDecision
-// Dependencies: [32, 19, 7197, 7200, 558, 576, 15035, 504, 10925, 2]
+// Dependencies: [32, 19, 7376, 7379, 558, 576, 15297, 504, 10576, 2]
 
-// Module 15034 (useNoFillDecision)
+// Module 15296 (useNoFillDecision)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7197 */;
-import QuestStore from "QuestStore" /* 7200 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7376 */;
+import QuestStore from "QuestStore" /* 7379 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, num, tmp3;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, location) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNoFillDecision(arg0, location) {
   let closure_0;
   let stateFromStores;
   let tmp10;
@@ -38,7 +38,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, location) => {
   } else {
     tmp4 = cResult[1];
   }
-  const obj3 = stateFromStores(15035);
+  const obj3 = stateFromStores(15297);
   const enableNoFill = obj3.useConfig(tmp4).enableNoFill;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AdDeliveryStore];
@@ -262,14 +262,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, location) => {
   cResult[13] = stateFromStores1;
   cResult[14] = stateFromStores;
   cResult[15] = tmp18;
-}) : ((arg0, location) => {
+}) : (function useNoFillDecision(arg0, location) {
   let closure_0;
   let closure_2;
   let first;
   let stateFromStores;
   _require = arg0;
   const tmp = dependencyMap;
-  const obj = stateFromStores(15035);
+  const obj = stateFromStores(15297);
   const obj2 = { location };
   const enableNoFill = obj.useConfig(obj2).enableNoFill;
   const items = [AdDeliveryStore];
@@ -300,7 +300,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, location) => {
       tmp8 = null;
       if (stateFromStores.decisionId !== first) {
         tmp8 = null;
-        const tmp2Result = tmp2(10925);
+        const tmp2Result = tmp2(10576);
         if (tmp2Result.getIsEligibleForQuests()) {
           tmp8 = null;
           if (!stateFromStores1) {

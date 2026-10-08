@@ -1,13 +1,13 @@
-// Module ID: 9687
-// Function ID: 9688
+// Module ID: 10876
+// Function ID: 10877
 // Name: NoiseCancellationUtils
-// Dependencies: [1999, 9688, 558, 576, 504, 2]
+// Dependencies: [2011, 10877, 558, 576, 504, 2]
 // Exports: getNoiseCancellationDeferredToSystem
 
-// Module 9687 (NoiseCancellationUtils)
+// Module 10876 (NoiseCancellationUtils)
 import react from "react" /* 576 */;
-import getEffectiveNoiseCancellationDefault from "getEffectiveNoiseCancellation" /* 9688 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import getEffectiveNoiseCancellationDefault from "getEffectiveNoiseCancellation" /* 10877 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ function getNoiseCancellationDeferredToSystem(MediaEngineStore) {
   const systemMicrophoneMode = obj.getSystemMicrophoneMode();
   return !getEffectiveNoiseCancellationDefault(true, systemMicrophoneMode);
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNoiseCancellationDeferredToSystem() {
   let tmp4;
   let tmp5;
   const obj = react;
@@ -41,7 +41,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useNoiseCancellationDeferredToSystem() {
   const items = [MediaEngineStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => {

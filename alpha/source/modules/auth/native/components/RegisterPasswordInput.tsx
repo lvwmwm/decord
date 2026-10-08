@@ -1,52 +1,53 @@
-// Module ID: 15932
-// Function ID: 15933
+// Module ID: 16192
+// Function ID: 16193
 // Name: RegisterPasswordInput
-// Dependencies: [109, 32, 19, 6437, 15906, 21, 4896, 587, 4618, 558, 576, 15929, 1126, 4892, 14289, 6452, 5113, 504, 4591, 6463, 6465, 6105, 2]
+// Dependencies: [32, 109, 19, 6615, 16165, 21, 5090, 587, 4810, 558, 576, 16189, 1126, 5086, 14113, 6630, 5910, 504, 4783, 6641, 6643, 6283, 2]
 
-// Module 15932 (RegisterPasswordInput)
+// Module 16192 (RegisterPasswordInput)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 14289 */;
-import usePasswordScore from "usePasswordScore" /* 15929 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 14113 */;
+import usePasswordScore from "usePasswordScore" /* 16189 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import PhoneStore from "PhoneStore" /* 6437 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 15906 */;
+import PhoneStore from "PhoneStore" /* 6615 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 16165 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let importDefault;
+let importDefault, tmp3;
 
 let FadeIn;
 let FadeOut;
 let c10;
-let c9;
 let closure_12;
+let closure_14;
 let easingResult;
 let map1;
 let obj2;
 let obj3;
 let obj4;
-let tmp7;
+let tmp12;
 let unpackModuleId;
-const getErrorDefault = tmp7(6452);
-let closure_3 = ["password"];
+const getErrorDefault = tmp12(6630);
+let user = ["ref"];
 let closure_4 = ["password"];
-({ setRegistrationErrors: c9, useRegistrationUIStore: c10 } = RegistrationUIStore);
-({ jsxs: unpackModuleId, jsx: closure_12, Fragment: map1 } = Fragment);
+let closure_5 = ["password"];
+({ setRegistrationErrors: c10, useRegistrationUIStore: unpackModuleId } = RegistrationUIStore);
+({ jsxs: closure_12, jsx: map1, Fragment: closure_14 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { weak: obj2, medium: obj3, strong: obj4, passwordStrength: { marginTop: 4, marginBottom: 4 }, inputHint: { width: "100%" } };
 obj2 = { color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
 createStyles = createStyles.createStyles;
 obj3 = { color: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
 obj4 = { color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE };
-let closure_14 = createStyles(obj);
+let closure_15 = createStyles(obj);
 let obj5 = { entering: FadeIn.duration(300), exiting: FadeOut.duration(300) };
 FadeIn = ReanimatedRexport.FadeIn;
 FadeOut = ReanimatedRexport.FadeOut;
@@ -56,7 +57,7 @@ const easing = LinearTransition.easing;
 const Easing = ReanimatedRexport.Easing;
 easingResult = easing(Easing.inOut(ReanimatedRexport.Easing.quad));
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((passwordScore) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function PasswordStrength(passwordScore) {
   let isPasswordFocused;
   let items;
   let password;
@@ -65,7 +66,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((passwordScore)
   const cResult = obj.c(10);
   passwordScore = passwordScore.passwordScore;
   ({ password, isPasswordFocused, passwordError } = passwordScore);
-  const tmp4 = closure_14();
+  const tmp4 = closure_15();
   if (null != passwordScore) {
     if (isPasswordFocused) {
       if (0 !== password.length) {
@@ -138,11 +139,11 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((passwordScore)
               return tmp17;
             }
             const obj2 = { variant: "text-xs/medium", style: tmp13, animated: true, children: items };
-            const Text = tmp(4892).Text;
+            const Text = tmp(5086).Text;
             const merged = Object.assign(obj5);
             const merged1 = Object.assign(obj6);
             items = [tmp15, ": ", str];
-            const tmp25 = unpackModuleId(Text, obj2);
+            const tmp25 = closure_12(Text, obj2);
             cResult[7] = str;
             cResult[8] = tmp13;
             cResult[9] = tmp25;
@@ -158,7 +159,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((passwordScore)
     }
   }
   return null;
-}) : ((passwordScore) => {
+}) : (function PasswordStrength(passwordScore) {
   let isPasswordFocused;
   let items;
   let items1;
@@ -166,7 +167,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((passwordScore)
   let passwordError;
   passwordScore = passwordScore.passwordScore;
   ({ password, isPasswordFocused, passwordError } = passwordScore);
-  const tmp = closure_14();
+  const tmp = closure_15();
   if (null != passwordScore) {
     if (isPasswordFocused) {
       if (0 !== password.length) {
@@ -190,22 +191,21 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((passwordScore)
             }
           }
           const obj = { variant: "text-xs/medium", style: items, animated: true, children: items1 };
-          const Text = tmp9(4892).Text;
+          const Text = tmp9(5086).Text;
           const merged = Object.assign(obj5);
           const merged1 = Object.assign(obj6);
           items = [tmp.passwordStrength, strong];
           const intl3 = tmp9(1126).intl;
           items1 = [intl3.string(intl5.t["5gbdUX"]), ": ", str];
-          return unpackModuleId(Text, obj);
+          return closure_12(Text, obj);
         }
       }
     }
   }
   return null;
 });
-const forwardRef = react.forwardRef;
 ReactCompilerGating = ReactCompilerGating_mod;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterPasswordInput(ref) {
   let autoFocus;
   let countryCode;
   let onPasswordChange;
@@ -213,392 +213,425 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let password;
   let passwordScore;
   let returnKeyType;
-  let tmp10;
-  let tmp12;
-  let tmp13;
-  let tmp6;
+  let tmp11;
+  let tmp15;
+  let tmp17;
+  let tmp18;
+  let tmp4;
+  let tmp5;
   const tmp = onPasswordChange;
   const obj = onPasswordChange(576);
-  const cResult = obj.c(48);
-  closure_14();
-  ({ password, onPasswordChange } = arg0);
-  ({ onSubmitEditing, passwordScore, returnKeyType, autoFocus } = arg0);
-  ref = react.useRef(null);
+  const cResult = obj.c(51);
+  if (cResult[0] !== ref) {
+    const tmp8 = _objectWithoutProperties(ref, user);
+    let num = 0;
+    cResult[0] = ref;
+    cResult[1] = tmp8;
+    cResult[2] = ref.ref;
+    tmp5 = ref;
+    tmp4 = tmp8;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+  }
+  closure_15();
+  ({ password, onPasswordChange } = tmp4);
+  ({ onSubmitEditing, passwordScore, returnKeyType, autoFocus } = tmp4);
+  const ref1 = react.useRef(null);
   if (autoFocus == null) {
     autoFocus = false;
   }
-  if (cResult[0] !== autoFocus) {
-    const obj3 = { inputRef: ref, enabled: autoFocus };
-    let num = 0;
-    cResult[0] = autoFocus;
-    cResult[1] = obj3;
-    tmp6 = obj3;
+  if (cResult[3] !== autoFocus) {
+    const obj3 = { inputRef: ref1, enabled: autoFocus };
+    cResult[3] = autoFocus;
+    cResult[4] = obj3;
+    tmp11 = obj3;
   } else {
-    tmp6 = cResult[1];
+    tmp11 = cResult[4];
   }
-  useFocusRefOnNavigationDefault(tmp6);
-  [tmp10, importDefault] = react.useState(false);
+  useFocusRefOnNavigationDefault(tmp11);
+  [tmp15, importDefault] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
-  [tmp12, dependencyMap] = react.useState(false);
+  [tmp17, dependencyMap] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    class M {
-      constructor(errors) {
-        return errors.errors;
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class V {
+      constructor(arg0) {
+        return ref.errors;
       }
     }
-    cResult[2] = M;
-    tmp13 = M;
+    cResult[5] = V;
+    tmp18 = V;
   } else {
-    class M {
-      constructor(errors) {
-        return errors.errors;
+    class V {
+      constructor(arg0) {
+        return ref.errors;
       }
     }
   }
-  const tmp14 = closure_10(tmp13);
-  const user = tmp14;
-  if (cResult[3] !== tmp14) {
-    class M {
-      constructor(errors) {
-        return errors.errors;
+  const tmp19 = closure_11(tmp18);
+  user = tmp19;
+  if (cResult[6] !== tmp19) {
+    class V {
+      constructor(arg0) {
+        return ref.errors;
       }
     }
-    cResult[3] = tmp14;
-    cResult[4] = getErrorDefault("password", tmp14);
-    const tmp16 = getErrorDefault("password", tmp14);
+    cResult[6] = tmp19;
+    cResult[7] = getErrorDefault("password", tmp19);
+    const tmp21 = getErrorDefault("password", tmp19);
   } else {
-    class M {
-      constructor(errors) {
-        return errors.errors;
+    class V {
+      constructor(arg0) {
+        return ref.errors;
       }
     }
   }
-  if (cResult[5] === tmp14) {
-    let tmp19;
-    let tmp18;
-    let tmp33;
-    let tmp32;
-    class M {
-      constructor(errors) {
-        return errors.errors;
+  if (cResult[8] === tmp19) {
+    let tmp24;
+    let tmp23;
+    let tmp36;
+    let tmp35;
+    class V {
+      constructor(arg0) {
+        return ref.errors;
       }
     }
     const _Symbol = Symbol;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      class M {
-        constructor(errors) {
-          return errors.errors;
+    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+      class V {
+        constructor(arg0) {
+          return ref.errors;
         }
       }
       const items = [PhoneStore];
-      class W {
+      class Y {
         constructor() {
-          const FRANCE_AND_FRENCH_REGION = onPasswordChange(dependencyMap[16]).CountryCodesSets.FRANCE_AND_FRENCH_REGION;
-          let num = 8;
-          if (FRANCE_AND_FRENCH_REGION.has(countryCode.getCountryCode().alpha2)) {
+          FRANCE_AND_FRENCH_REGION = onPasswordChange(closure_2[16]).CountryCodesSets.FRANCE_AND_FRENCH_REGION;
+          num = 8;
+          if (FRANCE_AND_FRENCH_REGION.has(closure_1_9.getCountryCode().alpha2)) {
             num = 12;
           }
           return num;
         }
       }
-      cResult[8] = items;
-      cResult[9] = W;
-      tmp19 = W;
-      tmp18 = items;
+      cResult[11] = items;
+      cResult[12] = Y;
+      tmp24 = Y;
+      tmp23 = items;
     } else {
-      class M {
-        constructor(errors) {
-          return errors.errors;
+      class V {
+        constructor(arg0) {
+          return ref.errors;
         }
       }
-      tmp19 = cResult[9];
+      tmp24 = cResult[12];
     }
     const tmpResult = tmp(504);
-    const stateFromStores = tmpResult.useStateFromStores(tmp18, tmp19);
-    if (tmp12) {
-      class M {
-        constructor(errors) {
-          return errors.errors;
+    const stateFromStores = tmpResult.useStateFromStores(tmp23, tmp24);
+    if (tmp17) {
+      class V {
+        constructor(arg0) {
+          return ref.errors;
         }
       }
     }
     const _Symbol2 = Symbol;
-    if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-      class M {
-        constructor(errors) {
-          return errors.errors;
+    if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+      class V {
+        constructor(arg0) {
+          return ref.errors;
         }
       }
-      cResult[12] = tmp24;
-      class W {
+      cResult[15] = tmp29;
+      class Y {
         constructor() {
-          const FRANCE_AND_FRENCH_REGION = onPasswordChange(dependencyMap[16]).CountryCodesSets.FRANCE_AND_FRENCH_REGION;
-          let num = 8;
-          if (FRANCE_AND_FRENCH_REGION.has(countryCode.getCountryCode().alpha2)) {
+          FRANCE_AND_FRENCH_REGION = onPasswordChange(closure_2[16]).CountryCodesSets.FRANCE_AND_FRENCH_REGION;
+          num = 8;
+          if (FRANCE_AND_FRENCH_REGION.has(closure_1_9.getCountryCode().alpha2)) {
             num = 12;
           }
           return num;
         }
       }
     } else {
-      class M {
-        constructor(errors) {
-          return errors.errors;
+      class V {
+        constructor(arg0) {
+          return ref.errors;
         }
       }
     }
     const _Symbol3 = Symbol;
-    if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-      class M {
-        constructor(errors) {
-          return errors.errors;
+    if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
+      class V {
+        constructor(arg0) {
+          return ref.errors;
         }
       }
-      cResult[13] = tmp26;
-      class W {
+      cResult[16] = tmp30;
+      class Y {
         constructor() {
-          const FRANCE_AND_FRENCH_REGION = onPasswordChange(dependencyMap[16]).CountryCodesSets.FRANCE_AND_FRENCH_REGION;
-          let num = 8;
-          if (FRANCE_AND_FRENCH_REGION.has(countryCode.getCountryCode().alpha2)) {
+          FRANCE_AND_FRENCH_REGION = onPasswordChange(closure_2[16]).CountryCodesSets.FRANCE_AND_FRENCH_REGION;
+          num = 8;
+          if (FRANCE_AND_FRENCH_REGION.has(closure_1_9.getCountryCode().alpha2)) {
             num = 12;
           }
           return num;
         }
       }
     } else {
-      class M {
-        constructor(errors) {
-          return errors.errors;
+      class V {
+        constructor(arg0) {
+          return ref.errors;
         }
       }
     }
     const _Symbol4 = Symbol;
-    if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-      class M {
-        constructor(errors) {
-          return errors.errors;
+    if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
+      class V {
+        constructor(arg0) {
+          return ref.errors;
         }
       }
-      cResult[14] = tmp28;
-      class W {
+      cResult[17] = tmp32;
+      class Y {
         constructor() {
-          const FRANCE_AND_FRENCH_REGION = onPasswordChange(dependencyMap[16]).CountryCodesSets.FRANCE_AND_FRENCH_REGION;
-          let num = 8;
-          if (FRANCE_AND_FRENCH_REGION.has(countryCode.getCountryCode().alpha2)) {
+          FRANCE_AND_FRENCH_REGION = onPasswordChange(closure_2[16]).CountryCodesSets.FRANCE_AND_FRENCH_REGION;
+          num = 8;
+          if (FRANCE_AND_FRENCH_REGION.has(closure_1_9.getCountryCode().alpha2)) {
             num = 12;
           }
           return num;
         }
       }
     } else {
-      class M {
-        constructor(errors) {
-          return errors.errors;
+      class V {
+        constructor(arg0) {
+          return ref.errors;
         }
       }
     }
-    if (cResult[15] !== ref) {
-      class M {
-        constructor(errors) {
-          return errors.errors;
+    if (cResult[18] !== tmp5) {
+      class V {
+        constructor(arg0) {
+          return ref.errors;
         }
       }
-      const mergeRefsResult = obj5.mergeRefs(ref, ref);
-      class W {
+      const mergeRefsResult = obj5.mergeRefs(tmp5, ref1);
+      class Y {
         constructor() {
-          const FRANCE_AND_FRENCH_REGION = onPasswordChange(dependencyMap[16]).CountryCodesSets.FRANCE_AND_FRENCH_REGION;
-          let num = 8;
-          if (FRANCE_AND_FRENCH_REGION.has(countryCode.getCountryCode().alpha2)) {
+          FRANCE_AND_FRENCH_REGION = onPasswordChange(closure_2[16]).CountryCodesSets.FRANCE_AND_FRENCH_REGION;
+          num = 8;
+          if (FRANCE_AND_FRENCH_REGION.has(closure_1_9.getCountryCode().alpha2)) {
             num = 12;
           }
           return num;
         }
       }
-      cResult[16] = mergeRefsResult;
+      cResult[19] = mergeRefsResult;
     } else {
-      class M {
-        constructor(errors) {
-          return errors.errors;
+      class V {
+        constructor(arg0) {
+          return ref.errors;
         }
       }
     }
     const _Symbol5 = Symbol;
-    if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-      class M {
-        constructor(errors) {
-          return errors.errors;
+    if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
+      class V {
+        constructor(arg0) {
+          return ref.errors;
         }
       }
       const stringResult = obj6.string(tmp(1126).t["CIGa+7"]);
-      class W {
+      class Y {
         constructor() {
-          const FRANCE_AND_FRENCH_REGION = onPasswordChange(dependencyMap[16]).CountryCodesSets.FRANCE_AND_FRENCH_REGION;
-          let num = 8;
-          if (FRANCE_AND_FRENCH_REGION.has(countryCode.getCountryCode().alpha2)) {
+          FRANCE_AND_FRENCH_REGION = onPasswordChange(closure_2[16]).CountryCodesSets.FRANCE_AND_FRENCH_REGION;
+          num = 8;
+          if (FRANCE_AND_FRENCH_REGION.has(closure_1_9.getCountryCode().alpha2)) {
             num = 12;
           }
           return num;
         }
       }
       const stringResult1 = obj7.string(tmp(1126).t.cUVsEG);
-      cResult[17] = stringResult;
-      cResult[18] = stringResult1;
-      tmp33 = stringResult1;
-      tmp32 = stringResult;
+      cResult[20] = stringResult;
+      cResult[21] = stringResult1;
+      tmp36 = stringResult1;
+      tmp35 = stringResult;
     } else {
-      class M {
-        constructor(errors) {
-          return errors.errors;
+      class V {
+        constructor(arg0) {
+          return ref.errors;
         }
       }
-      tmp33 = cResult[18];
+      tmp36 = cResult[21];
     }
     if (returnKeyType == null) {
-      class M {
-        constructor(errors) {
-          return errors.errors;
+      class V {
+        constructor(arg0) {
+          return ref.errors;
         }
       }
     }
-    if (tmp10) {
-      class M {
-        constructor(errors) {
-          return errors.errors;
+    if (tmp15) {
+      class V {
+        constructor(arg0) {
+          return ref.errors;
         }
       }
     } else {
-      class M {
-        constructor(errors) {
-          return errors.errors;
+      class V {
+        constructor(arg0) {
+          return ref.errors;
         }
       }
     }
-    if (cResult[19] !== tmp10) {
-      class M {
-        constructor(errors) {
-          return errors.errors;
+    if (cResult[22] !== tmp15) {
+      class V {
+        constructor(arg0) {
+          return ref.errors;
         }
       }
-      const string = tmp39.string;
+      const string = tmp42.string;
       const t = tmp(1126).t;
-      class W {
+      class Y {
         constructor() {
-          const FRANCE_AND_FRENCH_REGION = onPasswordChange(dependencyMap[16]).CountryCodesSets.FRANCE_AND_FRENCH_REGION;
-          let num = 8;
-          if (FRANCE_AND_FRENCH_REGION.has(countryCode.getCountryCode().alpha2)) {
+          FRANCE_AND_FRENCH_REGION = onPasswordChange(closure_2[16]).CountryCodesSets.FRANCE_AND_FRENCH_REGION;
+          num = 8;
+          if (FRANCE_AND_FRENCH_REGION.has(closure_1_9.getCountryCode().alpha2)) {
             num = 12;
           }
           return num;
         }
       }
-      cResult[19] = tmp10;
-      cResult[20] = tmp40;
+      cResult[22] = tmp15;
+      cResult[23] = tmp43;
     } else {
-      class M {
-        constructor(errors) {
-          return errors.errors;
+      class V {
+        constructor(arg0) {
+          return ref.errors;
         }
       }
     }
     const _Symbol6 = Symbol;
-    if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-      class M {
-        constructor(errors) {
-          return errors.errors;
+    if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
+      class V {
+        constructor(arg0) {
+          return ref.errors;
         }
       }
-      cResult[21] = tmp41;
-      class W {
+      cResult[24] = tmp44;
+      class Y {
         constructor() {
-          const FRANCE_AND_FRENCH_REGION = onPasswordChange(dependencyMap[16]).CountryCodesSets.FRANCE_AND_FRENCH_REGION;
-          let num = 8;
-          if (FRANCE_AND_FRENCH_REGION.has(countryCode.getCountryCode().alpha2)) {
+          FRANCE_AND_FRENCH_REGION = onPasswordChange(closure_2[16]).CountryCodesSets.FRANCE_AND_FRENCH_REGION;
+          num = 8;
+          if (FRANCE_AND_FRENCH_REGION.has(closure_1_9.getCountryCode().alpha2)) {
             num = 12;
           }
           return num;
         }
       }
     } else {
-      class M {
-        constructor(errors) {
-          return errors.errors;
+      class V {
+        constructor(arg0) {
+          return ref.errors;
         }
       }
     }
-    if (cResult[22] !== tmp38) {
-      class M {
-        constructor(errors) {
-          return errors.errors;
+    if (cResult[25] !== tmp41) {
+      class V {
+        constructor(arg0) {
+          return ref.errors;
         }
       }
-      tmp43[0] = tmp38;
-      tmp43[1] = tmp27;
-      class W {
+      tmp46[0] = tmp41;
+      tmp46[1] = tmp31;
+      class Y {
         constructor() {
-          const FRANCE_AND_FRENCH_REGION = onPasswordChange(dependencyMap[16]).CountryCodesSets.FRANCE_AND_FRENCH_REGION;
-          let num = 8;
-          if (FRANCE_AND_FRENCH_REGION.has(countryCode.getCountryCode().alpha2)) {
+          FRANCE_AND_FRENCH_REGION = onPasswordChange(closure_2[16]).CountryCodesSets.FRANCE_AND_FRENCH_REGION;
+          num = 8;
+          if (FRANCE_AND_FRENCH_REGION.has(closure_1_9.getCountryCode().alpha2)) {
             num = 12;
           }
           return num;
         }
       }
-      cResult[22] = tmp38;
-      cResult[23] = tmp43;
+      cResult[25] = tmp41;
+      cResult[26] = tmp46;
     } else {
-      class M {
-        constructor(errors) {
-          return errors.errors;
+      class V {
+        constructor(arg0) {
+          return ref.errors;
         }
       }
     }
-    if (null != tmp15) {
-      class M {
-        constructor(errors) {
-          return errors.errors;
+    if (null != tmp20) {
+      class V {
+        constructor(arg0) {
+          return ref.errors;
         }
       }
     }
-    if (cResult[24] === tmp17) {
-      class M {
-        constructor(errors) {
-          return errors.errors;
+    if (cResult[27] === tmp22) {
+      class V {
+        constructor(arg0) {
+          return ref.errors;
         }
       }
     }
-    const obj4 = { ref: tmp30, textContentType: "newPassword", autoComplete: "new-password", onChange: tmp17, value: password, label: tmp32, accessibilityHint: tmp33, secureTextEntry: !tmp10, returnKeyType, autoCapitalize: "none", onSubmitEditing, onFocus: tmp23, onBlur: tmp25, trailingIcon: tmp37, trailingPressableProps: tmp42, errorMessage: tmp15, status: undefined };
-    cResult[24] = tmp17;
-    cResult[25] = onSubmitEditing;
-    cResult[26] = password;
-    cResult[27] = tmp15;
-    cResult[28] = tmp30;
-    cResult[29] = !tmp10;
-    cResult[30] = returnKeyType;
-    cResult[31] = tmp37;
-    cResult[32] = tmp42;
-    cResult[33] = undefined;
-    cResult[34] = closure_12(tmp(6105).TextInput, obj4);
-    const tmp47 = closure_12(tmp(6105).TextInput, obj4);
+    const obj4 = { ref: tmp33, textContentType: "newPassword", autoComplete: "new-password", onChange: tmp22, value: password, label: tmp35, accessibilityHint: tmp36, secureTextEntry: !tmp15, returnKeyType, autoCapitalize: "none", onSubmitEditing, onFocus: tmp28, onBlur: null, trailingIcon: tmp40, trailingPressableProps: tmp45, errorMessage: tmp20, status: undefined };
+    class W {
+      constructor(arg0) {
+        tmp = closure_3;
+        if (null != closure_3.password) {
+          password = tmp.password;
+          tmp2 = closure_7;
+          tmp3 = closure_4;
+          tmp4 = setRegistrationErrors;
+          tmp5 = setRegistrationErrors(closure_7(tmp, closure_4));
+        }
+        tmp6 = onPasswordChange(ref);
+        return;
+      }
+    }
+    cResult[27] = tmp22;
+    cResult[28] = onSubmitEditing;
+    cResult[29] = password;
+    cResult[30] = tmp20;
+    cResult[31] = tmp33;
+    cResult[32] = !tmp15;
+    cResult[33] = returnKeyType;
+    cResult[34] = tmp40;
+    cResult[35] = tmp45;
+    cResult[36] = undefined;
+    cResult[37] = closure_13(tmp(6283).TextInput, obj4);
+    const tmp50 = closure_13(tmp(6283).TextInput, obj4);
   }
-  const fn = function q(arg0) {
-    if (null != user.password) {
-      const password = tmp.password;
-      React4(_objectWithoutProperties(user, user));
+  class W {
+    constructor(arg0) {
+      tmp = closure_3;
+      if (null != closure_3.password) {
+        password = tmp.password;
+        tmp2 = closure_7;
+        tmp3 = closure_4;
+        tmp4 = setRegistrationErrors;
+        tmp5 = setRegistrationErrors(closure_7(tmp, closure_4));
+      }
+      tmp6 = onPasswordChange(ref);
+      return;
     }
-    onPasswordChange(arg0);
-  };
-  cResult[5] = tmp14;
-  cResult[6] = onPasswordChange;
-  cResult[7] = fn;
-}) : ((arg0, ref) => {
+  }
+  cResult[8] = tmp19;
+  cResult[9] = onPasswordChange;
+  cResult[10] = W;
+}) : (function RegisterPasswordInput(ref) {
   let EyeIcon;
+  let _undefined;
   let autoFocus;
-  let closure_1;
   let countryCode;
   let intl;
   let intl2;
-  let isPasswordFocused;
   let onPasswordChange;
   let onSubmitEditing;
   let password;
@@ -606,41 +639,49 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let returnKeyType;
   let str;
   let stringResult;
-  let tmp8;
+  let tmp10;
   let tmp9;
-  ({ password, onPasswordChange } = arg0);
-  ({ returnKeyType, autoFocus } = arg0);
+  ref = ref.ref;
+  const merged = Object.assign(ref, Object.assign({ ref: 0 }));
+  onPasswordChange = undefined;
+  importDefault = undefined;
+  let isPasswordFocused;
+  let closure_3;
+  user = undefined;
+  let stateFromStores;
+  ({ password, onPasswordChange } = merged);
+  ({ returnKeyType, autoFocus } = merged);
   let obj = react;
-  const tmp = closure_14();
-  ({ onSubmitEditing, passwordScore } = arg0);
-  ref = react.useRef(null);
-  const obj2 = { inputRef: ref, enabled: autoFocus };
-  const tmp3 = importDefault;
-  const tmp5 = require("useFocusRefOnNavigation");
+  ({ onSubmitEditing, passwordScore } = merged);
+  const tmp2 = closure_15();
+  const ref1 = react.useRef(null);
+  const obj2 = { inputRef: ref1, enabled: autoFocus };
+  const tmp4 = importDefault;
+  const tmp6 = require("useFocusRefOnNavigation");
   if (autoFocus == null) {
     autoFocus = false;
   }
-  tmp5(obj2);
-  [tmp8, tmp9] = obj.useState(false);
-  importDefault = tmp9;
+  tmp6(obj2);
+  [tmp9, tmp10] = obj.useState(false);
+  importDefault = tmp10;
   _slicedToArray(obj.useState(false), 2);
-  const tmp10 = _slicedToArray(obj.useState(false), 2);
-  isPasswordFocused = tmp10[0];
-  closure_3 = tmp12;
-  const tmp13 = closure_10((errors) => errors.errors);
-  const user = tmp13;
-  const tmp14 = tmp3(isPasswordFocused[15])("password", tmp13);
-  const items = [onPasswordChange, tmp13];
+  const tmp11 = _slicedToArray(obj.useState(false), 2);
+  isPasswordFocused = tmp11[0];
+  closure_3 = tmp13;
+  const tmp14 = closure_11((errors) => errors.errors);
+  user = tmp14;
+  const tmp15 = tmp4(isPasswordFocused[15])("password", tmp14);
+  const items = [onPasswordChange, tmp14];
   const callback = obj.useCallback((arg0) => {
     if (null != user.password) {
       const password = tmp.password;
-      React4(_objectWithoutProperties(user, user));
+      authStore(_objectWithoutProperties(user, closure_5));
     }
     onPasswordChange(arg0);
   }, items);
   const items1 = [PhoneStore];
   const obj3 = onPasswordChange(isPasswordFocused[17]);
-  const stateFromStores = obj3.useStateFromStores(items1, () => {
+  stateFromStores = obj3.useStateFromStores(items1, () => {
     const FRANCE_AND_FRENCH_REGION = onPasswordChange(first[16]).CountryCodesSets.FRANCE_AND_FRENCH_REGION;
     let num = 8;
     if (FRANCE_AND_FRENCH_REGION.has(countryCode.getCountryCode().alpha2)) {
@@ -656,60 +697,60 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       return intl.format(intl5.t.VUUJ6V, obj);
     }
   }, items2);
-  const items3 = [tmp10[1]];
-  const items4 = [tmp10[1]];
+  const items3 = [tmp11[1]];
+  const items4 = [tmp11[1]];
   const callback1 = obj.useCallback(() => {
     closure_3(true);
   }, items3);
-  const items5 = [tmp9];
+  const items5 = [tmp10];
   const callback2 = obj.useCallback(() => {
     closure_3(false);
   }, items4);
   const callback3 = obj.useCallback(() => {
-    tmp9((arg0) => !arg0);
+    _undefined((arg0) => !arg0);
   }, items5);
-  const obj4 = { ref: obj5.mergeRefs(ref, ref), textContentType: "newPassword", autoComplete: "new-password", onChange: callback, value: password, label: intl.string(onPasswordChange(isPasswordFocused[12]).t["CIGa+7"]), accessibilityHint: intl2.string(onPasswordChange(isPasswordFocused[12]).t.cUVsEG), secureTextEntry: !tmp8, returnKeyType, autoCapitalize: "none", onSubmitEditing, onFocus: callback1, onBlur: callback2, trailingIcon: EyeIcon, trailingPressableProps: { accessibilityLabel: stringResult, onPress: callback3, hitSlop: { top: 8, bottom: 8 } }, errorMessage: tmp14, status: str };
-  const TextInput = onPasswordChange(tmp4[21]).TextInput;
+  const obj4 = { ref: obj5.mergeRefs(ref, ref1), textContentType: "newPassword", autoComplete: "new-password", onChange: callback, value: password, label: intl.string(onPasswordChange(isPasswordFocused[12]).t["CIGa+7"]), accessibilityHint: intl2.string(onPasswordChange(isPasswordFocused[12]).t.cUVsEG), secureTextEntry: !tmp9, returnKeyType, autoCapitalize: "none", onSubmitEditing, onFocus: callback1, onBlur: callback2, trailingIcon: EyeIcon, trailingPressableProps: { accessibilityLabel: stringResult, onPress: callback3, hitSlop: { top: 8, bottom: 8 } }, errorMessage: tmp15, status: str };
+  const TextInput = onPasswordChange(tmp5[21]).TextInput;
   obj5 = onPasswordChange(isPasswordFocused[18]);
-  intl = onPasswordChange(tmp4[12]).intl;
-  intl2 = onPasswordChange(tmp4[12]).intl;
-  const tmp22 = closure_11;
-  const tmp23 = closure_13;
+  intl = onPasswordChange(tmp5[12]).intl;
+  intl2 = onPasswordChange(tmp5[12]).intl;
+  const tmp23 = closure_12;
+  const tmp24 = closure_14;
   if (returnKeyType == null) {
     returnKeyType = "next";
   }
-  if (tmp8) {
-    EyeIcon = tmp16(tmp4[19]).EyeSlashIcon;
+  if (tmp9) {
+    EyeIcon = tmp17(tmp5[19]).EyeSlashIcon;
   } else {
-    EyeIcon = tmp16(tmp4[20]).EyeIcon;
+    EyeIcon = tmp17(tmp5[20]).EyeIcon;
   }
-  const intl3 = tmp16(tmp4[12]).intl;
+  const intl3 = tmp17(tmp5[12]).intl;
   const string = intl3.string;
-  const t = tmp16(tmp4[12]).t;
-  if (tmp8) {
+  const t = tmp17(tmp5[12]).t;
+  if (tmp9) {
     stringResult = string(t.Nusip4);
   } else {
     stringResult = string(t.nFzpM5);
   }
   str = undefined;
-  if (null != tmp14) {
+  if (null != tmp15) {
     str = "error";
   }
-  const children = [closure_12(TextInput, obj4), closure_12(closure_17, { password, isPasswordFocused, passwordError: tmp14, passwordScore }), ];
-  let tmp24Result = null;
+  const children = [closure_13(TextInput, obj4), closure_13(closure_18, { password, isPasswordFocused, passwordError: tmp15, passwordScore }), ];
+  let tmp25Result = null;
   if (null != memo) {
-    tmp24Result = null;
-    if (null == tmp14) {
-      obj6 = { style: tmp.inputHint, variant: "text-xs/medium", color: "text-muted", animated: true, children: memo };
-      const Text = tmp16(tmp4[13]).Text;
-      const merged = Object.assign(obj5);
-      const merged1 = Object.assign(obj6);
-      tmp24Result = tmp24(Text, obj6);
+    tmp25Result = null;
+    if (null == tmp15) {
+      obj6 = { style: tmp2.inputHint, variant: "text-xs/medium", color: "text-muted", animated: true, children: memo };
+      const Text = tmp17(tmp5[13]).Text;
+      const merged1 = Object.assign(obj5);
+      const merged2 = Object.assign(obj6);
+      tmp25Result = tmp25(Text, obj6);
     }
   }
-  children[2] = tmp24Result;
-  return tmp22(tmp23, { children });
-}));
+  children[2] = tmp25Result;
+  return tmp23(tmp24, { children });
+});
 const result = size.fileFinishedImporting("modules/auth/native/components/RegisterPasswordInput.tsx");
 
-export const RegisterPasswordInput = forwardRefResult;
+export const RegisterPasswordInput = tmp5;

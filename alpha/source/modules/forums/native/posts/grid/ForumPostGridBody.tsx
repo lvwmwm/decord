@@ -1,29 +1,29 @@
-// Module ID: 11634
-// Function ID: 11635
+// Module ID: 11698
+// Function ID: 11699
 // Name: ForumPostGridBody
-// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 1188, 11635, 11636, 11055, 4892, 1484, 1375, 11637, 6788, 7551, 11641, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 587, 558, 576, 1200, 11699, 11700, 11701, 5086, 1496, 1387, 11702, 6963, 8454, 11706, 2]
 
-// Module 11634 (ForumPostGridBody)
+// Module 11698 (ForumPostGridBody)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import ForumPostMediaUtils from "ForumPostMediaUtils" /* 7551 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11055 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11635 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11636 */;
-import ForumPostMedia from "ForumPostMedia" /* 11637 */;
+import native from "native" /* 1200 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8454 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11699 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11700 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11701 */;
+import ForumPostMedia from "ForumPostMedia" /* 11702 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, extraMediaCount, importDefault;
+let _require, dependencyMap, importDefault, obj1;
 
 let metroImportDefault;
 let metroRequire;
@@ -47,14 +47,14 @@ obj4 = { height: 225, flexDirection: "row", borderRadius: nativeDefault.radii.xs
 obj5 = { color: nativeDefault.colors.TEXT_SUBTLE };
 let closure_10 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFIcon() {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(2);
   const tmp4 = closure_10();
   if (cResult[0] !== tmp4.gifIcon) {
-    const obj2 = { size: native.Icon.Sizes.CUSTOM, source: AssetRegistryDefault2, disableColor: true, style: tmp4.gifIcon };
-    const Icon = tmp(1188).Icon;
+    const obj2 = { size: native.Icon.Sizes.CUSTOM, source: AssetRegistryDefault, disableColor: true, style: tmp4.gifIcon };
+    const Icon = tmp(1200).Icon;
     const tmp8 = metroRequire(Icon, obj2);
     cResult[0] = tmp4.gifIcon;
     cResult[1] = tmp8;
@@ -63,21 +63,21 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[1];
   }
   return tmp5;
-}) : (() => {
+}) : (function GIFIcon() {
   let tmp;
-  const obj = { size: native.Icon.Sizes.CUSTOM, source: AssetRegistryDefault2, disableColor: true, style: tmp.gifIcon };
+  const obj = { size: native.Icon.Sizes.CUSTOM, source: AssetRegistryDefault, disableColor: true, style: tmp.gifIcon };
   tmp = closure_10();
   const Icon = native.Icon;
   return metroRequire(Icon, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayIcon() {
   let first;
   const obj = react2;
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { size: native.Icon.Sizes.SMALL_20, source: AssetRegistryDefault3, disableColor: true };
-    const Icon = tmp(1188).Icon;
+    const obj2 = { size: native.Icon.Sizes.SMALL_20, source: AssetRegistryDefault2, disableColor: true };
+    const Icon = tmp(1200).Icon;
     const tmp7 = metroRequire(Icon, obj2);
     cResult[0] = tmp7;
     first = tmp7;
@@ -85,21 +85,21 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => {
-  const obj = { size: native.Icon.Sizes.SMALL_20, source: AssetRegistryDefault3, disableColor: true };
+}) : (function PlayIcon() {
+  const obj = { size: native.Icon.Sizes.SMALL_20, source: AssetRegistryDefault2, disableColor: true };
   const Icon = native.Icon;
   return metroRequire(Icon, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((extraMediaCount) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExtraMediaIcon(extraMediaCount) {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(9);
   extraMediaCount = extraMediaCount.extraMediaCount;
   const tmp4 = closure_10();
   if (cResult[0] !== tmp4.icon.color) {
-    const obj2 = { source: AssetRegistryDefault, color: tmp4.icon.color, size: native.Icon.Sizes.REFRESH_SMALL_16 };
-    const Icon = tmp(1188).Icon;
+    const obj2 = { source: AssetRegistryDefault3, color: tmp4.icon.color, size: native.Icon.Sizes.REFRESH_SMALL_16 };
+    const Icon = tmp(1200).Icon;
     const tmp8 = metroRequire(Icon, obj2);
     cResult[0] = tmp4.icon.color;
     cResult[1] = tmp8;
@@ -137,11 +137,11 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((extraMediaCoun
   cResult[3] = combined;
   cResult[4] = tmp11;
   tmp10 = tmp11;
-}) : ((extraMediaCount) => {
+}) : (function ExtraMediaIcon(extraMediaCount) {
   extraMediaCount = extraMediaCount.extraMediaCount;
   const tmp = closure_10();
   const obj = { style: tmp.extraMediaCountContainer, children: items };
-  const obj2 = { source: AssetRegistryDefault, color: tmp.icon.color, size: native.Icon.Sizes.REFRESH_SMALL_16 };
+  const obj2 = { source: AssetRegistryDefault3, color: tmp.icon.color, size: native.Icon.Sizes.REFRESH_SMALL_16 };
   const Icon = native.Icon;
   items = [metroRequire(Icon, obj2), ];
   const obj3 = { style: tmp.extraMediaCount, lineClamp: 1, variant: "text-xs/normal", color: "text-default", children: "+" + extraMediaCount };
@@ -151,7 +151,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((extraMediaCoun
 });
 let items = [[0, 3], [1, 2]];
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaGridLayout(arg0, arg1) {
   let closure_0;
   let closure_1;
   let tmp3;
@@ -250,7 +250,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
   cResult[1] = bound;
   cResult[2] = found;
   arr = found;
-}) : ((arg0, arg1) => {
+}) : (function useMediaGridLayout(arg0, arg1) {
   let closure_1;
   let width;
   let length = arg0;
@@ -289,7 +289,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaGridColumn(arg0) {
   let column;
   let thread;
   let tmp5;
@@ -329,7 +329,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-  const found = column.filter(tmp(1375).isNotNullish);
+  const found = column.filter(tmp(1387).isNotNullish);
   const column2 = tmp4.column;
   if (cResult[7] === tmp4.rowSpacer) {
     let tmp9;
@@ -366,7 +366,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = thread;
   cResult[9] = fn;
   tmp9 = fn;
-}) : ((arg0) => {
+}) : (function MediaGridColumn(arg0) {
   let channel;
   let column;
   let require;
@@ -394,15 +394,13 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return closure_6(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostGridBody(thread) {
   let arr;
+  let columnSpacer;
   let containsGif;
   let containsVideo;
   let hasUnreads;
-  let items1;
   let media;
-  let obj10;
-  let obj5;
   let tmp11;
   let tmp13;
   let tmp6;
@@ -414,8 +412,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
   thread = thread.thread;
   ({ hasUnreads, media } = thread);
   const tmp4 = closure_10();
-  const columnSpacer = tmp4;
-  let obj2 = thread(6788);
+  importDefault = tmp4;
+  let obj2 = thread(6963);
   [arr, tmp6] = _slicedToArray(obj2.useSomeAppliedTags(thread, 2), 2);
   const tmp5 = _slicedToArray(obj2.useSomeAppliedTags(thread, 2), 2);
   if (cResult[0] !== media) {
@@ -438,7 +436,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
   const arr2 = closure_15(tmp8, tmp11);
   let wideAspectRatioGrid = tmp11;
   if (cResult[4] !== media) {
-    const tmpResult = tmp(7551);
+    const tmpResult = tmp(8454);
     const result = tmpResult.messageContainsGifOrVideo(media);
     cResult[4] = media;
     cResult[5] = result;
@@ -457,19 +455,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
     }
     if (cResult[9] === tmp4.grid) {
       let tmp17;
-      let tmp18;
+      let tmp19;
       if (cResult[10] === wideAspectRatioGrid) {
         tmp17 = cResult[11];
       }
       if (cResult[12] === arr2) {
         if (cResult[13] === tmp4.columnSpacer) {
           if (cResult[14] === thread) {
-            tmp18 = cResult[15];
+            tmp19 = cResult[15];
           }
           if (cResult[19] === tmp17) {
-            let tmp21;
-            if (cResult[20] === tmp18) {
-              tmp21 = cResult[21];
+            let tmp22;
+            if (cResult[20] === tmp19) {
+              tmp22 = cResult[21];
             }
             if (cResult[22] === tmp6) {
               if (cResult[23] === arr) {
@@ -482,145 +480,255 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
                     if (cResult[28] === containsGif) {
                       if (cResult[29] === containsVideo) {
                         if (cResult[30] === tmp4.headerLeftContainer) {
-                          let tmp29;
+                          let tmp27;
                           if (cResult[31] === tmp4.mediaIconContainer) {
-                            tmp29 = cResult[32];
+                            tmp27 = cResult[32];
                           }
                           if (cResult[33] === bound) {
-                            let tmp39;
+                            let tmp29;
                             if (cResult[34] === tmp4.footerRightContainer) {
-                              tmp39 = cResult[35];
+                              tmp29 = cResult[35];
                             }
                             if (cResult[36] === tmp25) {
-                              if (cResult[37] === tmp29) {
-                                if (cResult[38] === tmp39) {
+                              if (cResult[37] === tmp27) {
+                                if (cResult[38] === tmp29) {
                                   if (cResult[39] === tmp16) {
-                                    let tmp44;
-                                    if (cResult[40] === tmp21) {
-                                      tmp44 = cResult[41];
+                                    let tmp31;
+                                    if (cResult[40] === tmp22) {
+                                      tmp31 = cResult[41];
                                     }
-                                    return tmp44;
+                                    return tmp31;
                                   }
                                 }
                               }
                             }
+                            class W {
+                              constructor(arg0, arg1) {
+                                tmp2 = arg1 > 0;
+                                tmp = jsxs;
+                                Fragment = closure_4.Fragment;
+                                if (tmp2) {
+                                  tmp3 = jsx;
+                                  tmp4 = View;
+                                  obj = { style: null };
+                                  tmp5 = closure_1;
+                                  obj.style = closure_1.columnSpacer;
+                                  tmp2 = jsx(View, obj);
+                                }
+                                obj1 = { children: null };
+                                items = [, ];
+                                items[0] = tmp2;
+                                obj4 = { column: thread, thread };
+                                items[1] = jsx(MediaGridColumn, obj4);
+                                obj1.children = items;
+                                return tmp(Fragment, obj1, "" + thread + "-" + arg1);
+                              }
+                            }
                             let obj3 = { style: tmp16, children: items };
-                            items = [tmp21, tmp25, tmp29, tmp39];
-                            const tmp47 = closure_7(View, obj3);
+                            items = [tmp22, tmp25, tmp27, tmp29];
+                            const tmp33 = closure_7(View, obj3);
                             cResult[36] = tmp25;
-                            cResult[37] = tmp29;
-                            cResult[38] = tmp39;
+                            cResult[37] = tmp27;
+                            cResult[38] = tmp29;
                             cResult[39] = tmp16;
-                            cResult[40] = tmp21;
-                            cResult[41] = tmp47;
-                            tmp44 = tmp47;
+                            cResult[40] = tmp22;
+                            cResult[41] = tmp33;
+                            tmp31 = tmp33;
                           }
-                          let tmp40 = 0 !== bound;
-                          if (tmp40) {
-                            const obj4 = { style: tmp4.footerRightContainer, children: closure_6(closure_13, obj5) };
-                            obj5 = { extraMediaCount: bound };
-                            tmp40 = closure_6(View, obj4);
+                          class W {
+                            constructor(arg0, arg1) {
+                              tmp2 = arg1 > 0;
+                              tmp = jsxs;
+                              Fragment = closure_4.Fragment;
+                              if (tmp2) {
+                                tmp3 = jsx;
+                                tmp4 = View;
+                                obj = { style: null };
+                                tmp5 = closure_1;
+                                obj.style = closure_1.columnSpacer;
+                                tmp2 = jsx(View, obj);
+                              }
+                              obj1 = { children: null };
+                              items = [, ];
+                              items[0] = tmp2;
+                              obj4 = { column: thread, thread };
+                              items[1] = jsx(MediaGridColumn, obj4);
+                              obj1.children = items;
+                              return tmp(Fragment, obj1, "" + thread + "-" + arg1);
+                            }
                           }
                           cResult[33] = bound;
                           cResult[34] = tmp4.footerRightContainer;
-                          cResult[35] = tmp40;
-                          tmp39 = tmp40;
+                          cResult[35] = 0 !== bound;
+                          tmp29 = tmp30;
                         }
                       }
                     }
-                    let tmp31Result = containsGif || containsVideo;
-                    if (tmp31Result) {
-                      let tmp33 = containsGif;
-                      const obj6 = { style: tmp4.headerLeftContainer, children: items1 };
-                      const tmp31 = closure_7;
-                      if (containsGif) {
-                        const obj7 = { style: tmp4.mediaIconContainer, children: closure_6(closure_11, {}) };
-                        tmp33 = closure_6(tmp32, obj7);
+                    class W {
+                      constructor(arg0, arg1) {
+                        tmp2 = arg1 > 0;
+                        tmp = jsxs;
+                        Fragment = closure_4.Fragment;
+                        if (tmp2) {
+                          tmp3 = jsx;
+                          tmp4 = View;
+                          obj = { style: null };
+                          tmp5 = closure_1;
+                          obj.style = closure_1.columnSpacer;
+                          tmp2 = jsx(View, obj);
+                        }
+                        obj1 = { children: null };
+                        items = [, ];
+                        items[0] = tmp2;
+                        obj4 = { column: thread, thread };
+                        items[1] = jsx(MediaGridColumn, obj4);
+                        obj1.children = items;
+                        return tmp(Fragment, obj1, "" + thread + "-" + arg1);
                       }
-                      items1 = [tmp33, ];
-                      let tmp36 = containsVideo;
-                      if (tmp36) {
-                        const obj8 = { style: tmp4.mediaIconContainer, children: closure_6(closure_12, {}) };
-                        tmp36 = closure_6(tmp32, obj8);
-                      }
-                      items1[1] = tmp36;
-                      tmp31Result = tmp31(tmp32, obj6);
                     }
                     cResult[28] = containsGif;
                     cResult[29] = containsVideo;
                     cResult[30] = tmp4.headerLeftContainer;
                     cResult[31] = tmp4.mediaIconContainer;
-                    cResult[32] = tmp31Result;
-                    tmp29 = tmp31Result;
+                    cResult[32] = containsGif || containsVideo;
+                    tmp27 = tmp28;
                   }
                 }
               }
             }
-            let tmp26 = tmp7;
-            if (tmp26) {
-              const obj9 = { style: tmp4.footerLeftContainer, children: closure_6(tmp(11641).ForumPostAppliedTagPills, obj10) };
-              obj10 = { appliedTags: arr, additionalTagsCount: tmp6, hasUnreads };
-              tmp26 = closure_6(View, obj9);
+            class W {
+              constructor(arg0, arg1) {
+                tmp2 = arg1 > 0;
+                tmp = jsxs;
+                Fragment = closure_4.Fragment;
+                if (tmp2) {
+                  tmp3 = jsx;
+                  tmp4 = View;
+                  obj = { style: null };
+                  tmp5 = closure_1;
+                  obj.style = closure_1.columnSpacer;
+                  tmp2 = jsx(View, obj);
+                }
+                obj1 = { children: null };
+                items = [, ];
+                items[0] = tmp2;
+                obj4 = { column: thread, thread };
+                items[1] = jsx(MediaGridColumn, obj4);
+                obj1.children = items;
+                return tmp(Fragment, obj1, "" + thread + "-" + arg1);
+              }
             }
             cResult[22] = tmp6;
             cResult[23] = arr;
             cResult[24] = arr.length > 0;
             cResult[25] = hasUnreads;
             cResult[26] = tmp4.footerLeftContainer;
-            cResult[27] = tmp26;
+            cResult[27] = arr.length > 0;
             tmp25 = tmp26;
           }
-          const obj11 = { style: tmp17, children: tmp18 };
-          const tmp24 = closure_6(View, obj11);
+          class W {
+            constructor(arg0, arg1) {
+              tmp2 = arg1 > 0;
+              tmp = jsxs;
+              Fragment = closure_4.Fragment;
+              if (tmp2) {
+                tmp3 = jsx;
+                tmp4 = View;
+                obj = { style: null };
+                tmp5 = closure_1;
+                obj.style = closure_1.columnSpacer;
+                tmp2 = jsx(View, obj);
+              }
+              obj1 = { children: null };
+              items = [, ];
+              items[0] = tmp2;
+              obj4 = { column: thread, thread };
+              items[1] = jsx(MediaGridColumn, obj4);
+              obj1.children = items;
+              return tmp(Fragment, obj1, "" + thread + "-" + arg1);
+            }
+          }
+          const obj4 = { style: tmp17, children: tmp19 };
+          const tmp24 = closure_6(View, obj4);
           cResult[19] = tmp17;
-          cResult[20] = tmp18;
+          cResult[20] = tmp19;
           cResult[21] = tmp24;
-          tmp21 = tmp24;
+          tmp22 = tmp24;
         }
       }
       if (cResult[16] === tmp4.columnSpacer) {
-        let tmp19;
+        let tmp20;
         if (cResult[17] === thread) {
-          tmp19 = cResult[18];
+          tmp20 = cResult[18];
         }
-        const mapped = arr2.map(tmp19);
-        cResult[12] = arr2;
+        const mapped = arr2.map(tmp20);
+        class W {
+          constructor(arg0, arg1) {
+            tmp2 = arg1 > 0;
+            tmp = jsxs;
+            Fragment = closure_4.Fragment;
+            if (tmp2) {
+              tmp3 = jsx;
+              tmp4 = View;
+              obj = { style: null };
+              tmp5 = closure_1;
+              obj.style = closure_1.columnSpacer;
+              tmp2 = jsx(View, obj);
+            }
+            obj1 = { children: null };
+            items = [, ];
+            items[0] = tmp2;
+            obj4 = { column: thread, thread };
+            items[1] = jsx(MediaGridColumn, obj4);
+            obj1.children = items;
+            return tmp(Fragment, obj1, "" + thread + "-" + arg1);
+          }
+        }
         cResult[13] = tmp4.columnSpacer;
         cResult[14] = thread;
         cResult[15] = mapped;
-        tmp18 = mapped;
+        tmp19 = mapped;
       }
-      const fn = function j(column, arg1) {
-        let tmp2 = arg1 > 0;
-        const Fragment = react.Fragment;
-        const tmp = metroImportDefault;
-        if (tmp2) {
-          const obj = { style: columnSpacer.columnSpacer };
-          tmp2 = metroRequire(View, obj);
+      class W {
+        constructor(arg0, arg1) {
+          tmp2 = arg1 > 0;
+          tmp = jsxs;
+          Fragment = closure_4.Fragment;
+          if (tmp2) {
+            tmp3 = jsx;
+            tmp4 = View;
+            obj = { style: null };
+            tmp5 = closure_1;
+            obj.style = closure_1.columnSpacer;
+            tmp2 = jsx(View, obj);
+          }
+          obj1 = { children: null };
+          items = [, ];
+          items[0] = tmp2;
+          obj4 = { column: thread, thread };
+          items[1] = jsx(MediaGridColumn, obj4);
+          obj1.children = items;
+          return tmp(Fragment, obj1, "" + thread + "-" + arg1);
         }
-        const obj2 = { children: items };
-        items = [tmp2, ];
-        const obj3 = { column, thread };
-        items[1] = metroRequire(closure_16, obj3);
-        return tmp(Fragment, obj2, "" + column + "-" + arg1);
-      };
+      }
       cResult[16] = tmp4.columnSpacer;
       cResult[17] = thread;
-      cResult[18] = fn;
-      tmp19 = fn;
+      cResult[18] = W;
+      tmp20 = W;
     }
-    const items2 = [tmp4.grid, wideAspectRatioGrid];
+    tmp18[0] = tmp4.grid;
+    tmp18[1] = wideAspectRatioGrid;
     cResult[9] = tmp4.grid;
     cResult[10] = wideAspectRatioGrid;
-    cResult[11] = items2;
-    tmp17 = items2;
+    cResult[11] = tmp18;
+    tmp17 = tmp18;
   }
-  const items3 = [tmp4.container, wideAspectRatioGrid && tmp4.wideAspectRatioContainer];
+  const items1 = [tmp4.container, wideAspectRatioGrid && tmp4.wideAspectRatioContainer];
   cResult[6] = tmp4.container;
   cResult[7] = wideAspectRatioGrid && tmp4.wideAspectRatioContainer;
-  cResult[8] = items3;
-  tmp16 = items3;
-}) : ((thread) => {
+  cResult[8] = items1;
+  tmp16 = items1;
+}) : (function ForumPostGridBody(thread) {
   let columnSpacer;
   let containsGif;
   let containsVideo;
@@ -636,7 +744,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
   let tmp = closure_10();
   dependencyMap = tmp;
   let tmp2 = thread;
-  let obj = thread(6788);
+  let obj = thread(6963);
   [first, tmp5] = obj.useSomeAppliedTags(thread, 2);
   let tmp14Result = first.length > 0;
   items = [media];
@@ -676,7 +784,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
   items3[1] = tmp15;
   items4 = [closure_6(View, obj3), , , ];
   if (tmp14Result) {
-    const obj4 = { style: tmp.footerLeftContainer, children: closure_6(tmp2(11641).ForumPostAppliedTagPills, obj5) };
+    const obj4 = { style: tmp.footerLeftContainer, children: closure_6(tmp2(11706).ForumPostAppliedTagPills, obj5) };
     obj5 = { appliedTags: first, additionalTagsCount: tmp5, hasUnreads };
     tmp14Result = tmp14(tmp12, obj4);
   }

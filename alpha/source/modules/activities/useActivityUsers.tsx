@@ -1,18 +1,18 @@
-// Module ID: 17318
-// Function ID: 17319
+// Module ID: 17599
+// Function ID: 17600
 // Name: useActivityUsers
-// Dependencies: [1377, 2050, 558, 576, 573, 2]
+// Dependencies: [1389, 2062, 558, 576, 573, 2]
 
-// Module 17318 (useActivityUsers)
-import UserStore from "UserStore" /* 1377 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
+// Module 17599 (useActivityUsers)
+import UserStore from "UserStore" /* 1389 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityUsers(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -38,7 +38,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     const tmpResult = tmp(573);
     return tmpResult.useStateFromStoresArray(first, tmp7, tmp8);
   }
-  const fn = function s() {
+  const fn = function a() {
     let user;
     if (null == closure_1) {
       return [];
@@ -64,7 +64,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = items1;
   tmp8 = items1;
   tmp7 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useActivityUsers(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;

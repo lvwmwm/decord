@@ -1,22 +1,22 @@
-// Module ID: 14976
-// Function ID: 14977
+// Module ID: 15238
+// Function ID: 15239
 // Name: VideoQuestModalContentCompleted
-// Dependencies: [32, 19, 17, 21, 4896, 587, 14950, 558, 576, 14945, 10013, 14974, 10826, 14941, 10924, 4618, 5604, 7219, 8048, 10023, 10977, 14913, 7952, 1126, 4892, 14967, 5600, 14968, 5601, 14936, 6577, 11377, 5916, 5633, 5981, 12730, 6626, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 587, 15212, 558, 576, 15207, 9544, 15236, 11175, 15203, 10575, 4810, 5374, 7399, 8457, 9554, 11170, 15175, 8370, 1126, 5086, 15229, 5373, 15230, 5375, 15198, 6753, 12633, 6189, 5980, 6164, 12920, 6803, 2]
 
-// Module 14976 (VideoQuestModalContentCompleted)
+// Module 15238 (VideoQuestModalContentCompleted)
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import spring from "spring" /* 5604 */;
-import QuestTypes from "QuestTypes" /* 5633 */;
-import showShareActionSheet2 from "showShareActionSheet" /* 8048 */;
-import AssetUtils from "AssetUtils" /* 10013 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 10023 */;
-import QuestProgressIndicator from "QuestProgressIndicator" /* 14950 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import spring from "spring" /* 5374 */;
+import QuestTypes from "QuestTypes" /* 5980 */;
+import showShareActionSheet2 from "showShareActionSheet" /* 8457 */;
+import AssetUtils from "AssetUtils" /* 9544 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9554 */;
+import QuestProgressIndicator from "QuestProgressIndicator" /* 15212 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ obj6 = { height: 210, marginBottom: nativeDefault.space.PX_24, borderRadius: nat
 let closure_12 = createStyles(obj);
 const __initData = { code: "function VideoQuestModalContentCompletedTsx1(){const{withDelay,ANIMATION_DELAY,withSpring,isComponentMounted,ANIMATED_CONTENT_SPRING_CONFIG,interpolate,ANIMATED_CONTENT_OFFSET_Y}=this.__closure;return{opacity:withDelay(ANIMATION_DELAY,withSpring(isComponentMounted.get(),ANIMATED_CONTENT_SPRING_CONFIG)),transform:[{translateY:withDelay(ANIMATION_DELAY,withSpring(interpolate(isComponentMounted.get(),[0,1],[ANIMATED_CONTENT_OFFSET_Y,0]),ANIMATED_CONTENT_SPRING_CONFIG))}]};}" };
 const __initData2 = { code: "function VideoQuestModalContentCompletedTsx2(){const{withDelay,ANIMATION_DELAY,withSpring,isComponentMounted,ANIMATED_CONTENT_SPRING_CONFIG,interpolate,ANIMATED_CONTENT_OFFSET_Y}=this.__closure;return{opacity:withDelay(ANIMATION_DELAY,withSpring(isComponentMounted.get(),ANIMATED_CONTENT_SPRING_CONFIG)),transform:[{translateY:withDelay(ANIMATION_DELAY,withSpring(interpolate(isComponentMounted.get(),[0,1],[ANIMATED_CONTENT_OFFSET_Y,0]),ANIMATED_CONTENT_SPRING_CONFIG))}]};}" };
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VideoQuestModalContentCompleted(arg0) {
   let claim;
   let content;
   let headerContentCopy;
@@ -370,7 +370,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[4] = sourceQuestContent;
   cResult[5] = obj9;
   tmp9 = obj9;
-}) : ((onRestartVideo) => {
+}) : (function VideoQuestModalContentCompleted(onRestartVideo) {
   let RetryIcon;
   let ShareIcon;
   let claim;

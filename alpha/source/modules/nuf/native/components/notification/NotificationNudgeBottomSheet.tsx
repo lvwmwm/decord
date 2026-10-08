@@ -1,20 +1,20 @@
-// Module ID: 16507
-// Function ID: 16508
+// Module ID: 16767
+// Function ID: 16768
 // Name: NotificationNudgeBottomSheet
-// Dependencies: [19, 17, 12068, 1085, 2048, 21, 4896, 587, 558, 576, 1252, 4860, 12069, 16508, 4892, 1126, 5601, 5599, 6652, 2]
+// Dependencies: [19, 17, 12141, 1085, 2060, 21, 5090, 587, 558, 576, 1264, 5054, 12142, 16768, 5086, 1126, 5375, 5963, 6829, 2]
 
-// Module 16507 (NotificationNudgeBottomSheet)
+// Module 16767 (NotificationNudgeBottomSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12069 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12142 */;
 import react from "react" /* 19 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12068 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12141 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let obj2;
 let obj3;
 let obj4;
 let obj5;
-const View = react_native.View;
+let View = react_native.View;
 ({ EventActionType: hasOwnProperty, NotificationNudgeAnalyticsAction: metroRequire } = NotificationPermissionConstants);
 const AnalyticEvents = Constants.AnalyticEvents;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -41,9 +41,10 @@ obj3 = { marginVertical: nativeDefault.space.PX_24 };
 obj4 = { textAlign: "center", marginTop: nativeDefault.space.PX_8 };
 obj5 = { marginTop: nativeDefault.space.PX_8, width: "100%" };
 let closure_11 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((surface) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotificationNudgeBottomSheet(surface) {
   let actionLocation;
   let body;
+  let closure_4;
   let markAsDismissed;
   let title;
   let tmp3;
@@ -56,71 +57,73 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((surface) => {
   const onHide = surface.onHide;
   closure_11();
   if (cResult[0] !== surface) {
-    const fn = function _() {
-      const obj = AnalyticsUtilsDefault;
-      const obj2 = { action: metroRequire.IMPRESSION, prompt_type: surface };
-      obj.track(AnalyticEvents.CONTEXTUAL_REMINDER_ACTION, obj2);
-    };
+    class S {
+      constructor() {
+        const obj = AnalyticsUtilsDefault;
+        const obj2 = { action: metroRequire.IMPRESSION, prompt_type: surface };
+        obj.track(AnalyticEvents.CONTEXTUAL_REMINDER_ACTION, obj2);
+      }
+    }
     const items = [surface];
     cResult[0] = surface;
-    cResult[1] = fn;
+    cResult[1] = S;
     cResult[2] = items;
     tmp4 = items;
-    tmp3 = fn;
+    tmp3 = S;
   } else {
-    tmp3 = cResult[1];
+    class S {
+      constructor() {
+        const obj = AnalyticsUtilsDefault;
+        const obj2 = { action: metroRequire.IMPRESSION, prompt_type: surface };
+        obj.track(AnalyticEvents.CONTEXTUAL_REMINDER_ACTION, obj2);
+      }
+    }
     tmp4 = cResult[2];
   }
   const effect = onHide.useEffect(tmp3, tmp4);
   if (cResult[3] !== onHide) {
-    class I {
+    class S {
       constructor() {
-        const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet();
-        if (onHide != null) {
-          onHide();
-        }
+        const obj = AnalyticsUtilsDefault;
+        const obj2 = { action: metroRequire.IMPRESSION, prompt_type: surface };
+        obj.track(AnalyticEvents.CONTEXTUAL_REMINDER_ACTION, obj2);
       }
     }
     cResult[3] = onHide;
-    cResult[4] = I;
+    cResult[4] = tmp7;
   } else {
-    class I {
+    class S {
       constructor() {
-        const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet();
-        if (onHide != null) {
-          onHide();
-        }
+        const obj = AnalyticsUtilsDefault;
+        const obj2 = { action: metroRequire.IMPRESSION, prompt_type: surface };
+        obj.track(AnalyticEvents.CONTEXTUAL_REMINDER_ACTION, obj2);
       }
     }
   }
-  I = tmp6;
+  View = tmp6;
   if (cResult[5] === actionLocation) {
-    class I {
+    class S {
       constructor() {
-        const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet();
-        if (onHide != null) {
-          onHide();
-        }
+        const obj = AnalyticsUtilsDefault;
+        const obj2 = { action: metroRequire.IMPRESSION, prompt_type: surface };
+        obj.track(AnalyticEvents.CONTEXTUAL_REMINDER_ACTION, obj2);
       }
     }
   }
-  const fn2 = function x() {
+  const fn = function x() {
     const obj = AnalyticsUtilsDefault;
     const obj2 = { action: metroRequire.ACCEPT, prompt_type: surface };
     obj.track(AnalyticEvents.CONTEXTUAL_REMINDER_ACTION, obj2);
     markAsDismissed(ContentDismissActionType.USER_DISMISS);
     const obj3 = NotificationPermissionUtil;
-    const pushNotificationPermission = obj3.requestPushNotificationPermission(hasOwnProperty.ALLOW_TO_REQUEST, actionLocation, I);
+    const pushNotificationPermission = obj3.requestPushNotificationPermission(hasOwnProperty.ALLOW_TO_REQUEST, actionLocation, View);
   };
   cResult[5] = actionLocation;
   cResult[6] = tmp6;
   cResult[7] = markAsDismissed;
   cResult[8] = surface;
-  cResult[9] = fn2;
-}) : ((actionLocation) => {
+  cResult[9] = fn;
+}) : (function NotificationNudgeBottomSheet(actionLocation) {
   let ButtonGroup;
   let body;
   let intl;

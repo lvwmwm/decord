@@ -1,10 +1,10 @@
-// Module ID: 12240
-// Function ID: 12241
+// Module ID: 12319
+// Function ID: 12320
 // Name: useGuildPowerupOnShowMore
-// Dependencies: [19, 558, 576, 12189, 2]
+// Dependencies: [19, 558, 576, 12268, 2]
 
-// Module 12240 (useGuildPowerupOnShowMore)
-import openGuildPowerupsBottomSheetDefault from "openGuildPowerupsBottomSheet" /* 12189 */;
+// Module 12319 (useGuildPowerupOnShowMore)
+import openGuildPowerupsBottomSheetDefault from "openGuildPowerupsBottomSheet" /* 12268 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -12,7 +12,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowerupOnShowMore(guildId, arg1) {
   _require = guildId;
   let closure_1 = arg1;
   let obj = require("react");
@@ -24,7 +24,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, arg1) => {
     }
     return tmp2;
   }
-  const fn = function n() {
+  const fn = function l() {
     if (null != closure_1) {
       const obj = { guildId, powerup: tmp };
       openGuildPowerupsBottomSheetDefault(obj);
@@ -34,7 +34,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, arg1) => {
   cResult[1] = arg1;
   cResult[2] = fn;
   tmp2 = fn;
-}) : ((guildId, arg1) => {
+}) : (function useGuildPowerupOnShowMore(guildId, arg1) {
   let closure_1 = arg1;
   const items = [guildId, arg1];
   return react.useCallback(() => {

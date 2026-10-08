@@ -1,13 +1,13 @@
-// Module ID: 14918
-// Function ID: 14919
+// Module ID: 15180
+// Function ID: 15181
 // Name: useConnectionBannerHeight
-// Dependencies: [13513, 14915, 558, 576, 13514, 504, 2]
+// Dependencies: [13810, 15177, 558, 576, 13811, 504, 2]
 
-// Module 14918 (useConnectionBannerHeight)
+// Module 15180 (useConnectionBannerHeight)
 import react from "react" /* 576 */;
-import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 13513 */;
-import ConnectionIndicatorExperimentDefault from "ConnectionIndicatorExperiment" /* 13514 */;
-import YouBarConstants from "YouBarConstants" /* 14915 */;
+import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 13810 */;
+import ConnectionIndicatorExperimentDefault from "ConnectionIndicatorExperiment" /* 13811 */;
+import YouBarConstants from "YouBarConstants" /* 15177 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let tmp;
 const get_initialized = tmp(504);
 const constants = ConnectivityIndicatorStateStore2.ConnectivityIndicatorState;
 const CONNECTION_BANNER_HEIGHT = YouBarConstants.CONNECTION_BANNER_HEIGHT;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConnectionBannerHeight() {
   let first;
   let hidden;
   let state;
@@ -54,7 +54,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   return num4;
-}) : (() => {
+}) : (function useConnectionBannerHeight() {
   let hidden;
   let state;
   let timeoutMs;

@@ -1,12 +1,12 @@
-// Module ID: 4888
-// Function ID: 4889
+// Module ID: 5082
+// Function ID: 5083
 // Name: GameModeExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1452, 558, 576, 2]
 // Exports: getGameModeExperimentConfig
 
-// Module 4888 (GameModeExperiment)
+// Module 5082 (GameModeExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let obj = { name: "2026-08-game-mode", kind: "user", defaultConfig: { enabled: f
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
 let closure_2 = ApexExperiment.createApexExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameModeExperimentConfig(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -29,7 +29,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2);
-}) : ((location) => {
+}) : (function useGameModeExperimentConfig(location) {
   const obj = { location: location.location };
   return closure_2.useConfig(obj);
 });

@@ -1,20 +1,18 @@
-// Module ID: 16966
-// Function ID: 16967
+// Module ID: 17247
+// Function ID: 17248
 // Name: IncomingRequestRowActions
-// Dependencies: [19, 17, 21, 4896, 558, 576, 4618, 4897, 16010, 7586, 14747, 4811, 5600, 1126, 4892, 5601, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 4810, 5091, 16270, 8106, 15008, 5005, 5373, 1126, 5086, 5375, 2]
 
-// Module 16966 (IncomingRequestRowActions)
+// Module 17247 (IncomingRequestRowActions)
 import react_native from "react-native" /* 17 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16010 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16270 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let user;
 
 let hasOwnProperty;
 let metroRequire;
@@ -31,7 +29,7 @@ const __initData5 = { code: "function IncomingRequestRowActionsTsx7(){const{butt
 const __initData6 = { code: "function IncomingRequestRowActionsTsx8(){const{waveWidth,waveHeight}=this.__closure;return{transform:[{translateX:waveWidth.get()/2},{translateY:waveHeight.get()/2}]};}" };
 const __initData7 = { code: "function IncomingRequestRowActionsTsx9(){const{withDelay,withRepeat,withTiming,pressed,Easing,waveWidth,waveHeight}=this.__closure;return{transform:[{rotateZ:withDelay(450,withRepeat(withTiming(pressed.get()?'8deg':'-2deg',{duration:150,easing:Easing.inOut(Easing.quad)}),4,true))},{translateX:-waveWidth.get()/2},{translateY:-waveHeight.get()/2}]};}" };
 const __initData8 = { code: "function IncomingRequestRowActionsTsx10(){const{pressed}=this.__closure;return{pointerEvents:!pressed.get()?'none':'none'};}" };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IncomingRequestRowActions(user) {
   let acceptRequestAccessibilityLabel;
   let ignoreRequestAccessibilityLabel;
   let pressed;
@@ -41,7 +39,6 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   const cResult = obj.c(51);
   user = user.user;
   const applicationId = user.applicationId;
-  const tmp2 = pressed;
   pressed = user.pressed;
   const onAcceptIncomingRequest = user.onAcceptIncomingRequest;
   const onDeclineIncomingRequest = user.onDeclineIncomingRequest;
@@ -174,7 +171,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     const obj = { transform: items };
     const obj2 = { rotateZ: withDelay(450, withRepeat(withTiming(str, obj3), 4, true)) };
     obj3 = { duration: 150, easing: Easing.inOut(ReanimatedRexport.Easing.quad) };
-    Easing = tmp(4618).Easing;
+    Easing = tmp(4810).Easing;
     items = [obj2, { translateX: -sharedValue2.get() / 2 }, ];
     ({ translateX: -sharedValue2.get() / 2 });
     items[2] = { translateY: -sharedValue3.get() / 2 };
@@ -188,45 +185,24 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   ({ withDelay: user(pressed[6]).withDelay, withRepeat: user(pressed[6]).withRepeat, withTiming: user(pressed[7]).withTiming, pressed, Easing: user(pressed[6]).Easing, waveWidth: sharedValue2, waveHeight: sharedValue3 });
   const animatedStyle3 = obj11.useAnimatedStyle(fn4);
   if (cResult[0] !== sharedValue) {
-    class T {
-      constructor(nativeEvent) {
-        const result = sharedValue.set(nativeEvent.nativeEvent.layout.width);
-      }
+    function handleIconButtonsLayout(nativeEvent) {
+      const result = sharedValue.set(nativeEvent.nativeEvent.layout.width);
     }
     cResult[0] = sharedValue;
     let num = 1;
-    cResult[1] = T;
-  } else {
-    class T {
-      constructor(nativeEvent) {
-        const result = sharedValue.set(nativeEvent.nativeEvent.layout.width);
-      }
-    }
+    cResult[1] = handleIconButtonsLayout;
   }
   if (cResult[2] !== sharedValue1) {
-    class P {
-      constructor(nativeEvent) {
-        const result = sharedValue1.set(nativeEvent.nativeEvent.layout.width);
-      }
+    function handleButtonsLayout(nativeEvent) {
+      const result = sharedValue1.set(nativeEvent.nativeEvent.layout.width);
     }
     let num2 = 2;
     cResult[2] = sharedValue1;
     let num3 = 3;
-    cResult[3] = P;
-  } else {
-    class P {
-      constructor(nativeEvent) {
-        const result = sharedValue1.set(nativeEvent.nativeEvent.layout.width);
-      }
-    }
+    cResult[3] = handleButtonsLayout;
   }
   if (cResult[4] === sharedValue3) {
-    class P {
-      constructor(nativeEvent) {
-        const result = sharedValue1.set(nativeEvent.nativeEvent.layout.width);
-      }
-    }
-    const tmpResult = tmp(tmp2[6]);
+    const tmpResult = tmp(pressed[6]);
     class C {
       constructor() {
         const value = pressed.get();
@@ -240,9 +216,75 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     C.__initData = __initData3;
     const animatedProps = tmpResult.useAnimatedProps(C);
     if (cResult[7] === applicationId) {
-      class P {
-        constructor(nativeEvent) {
-          const result = sharedValue1.set(nativeEvent.nativeEvent.layout.width);
+      if (cResult[8] === onAcceptIncomingRequest) {
+        if (cResult[9] === pressed) {
+          if (cResult[12] === applicationId) {
+            if (cResult[13] === onDeclineIncomingRequest) {
+              let tmp19;
+              if (cResult[14] === user.id) {
+                tmp19 = cResult[15];
+              }
+              if (cResult[16] !== user.id) {
+                class K {
+                  constructor() {
+                    const obj = AddFriendsScreenUtils;
+                    obj.sendWave(user.id, true, "Incoming Friend Request");
+                  }
+                }
+                class G {
+                  constructor() {
+                    onDeclineIncomingRequest(user.id, applicationId);
+                    const obj = AddFriendsScreenUtils;
+                    const obj2 = { userId: user.id, applicationId };
+                    const result = obj.dismissIncomingRequest(obj2);
+                  }
+                }
+                cResult[17] = K;
+              } else {
+                class K {
+                  constructor() {
+                    const obj = AddFriendsScreenUtils;
+                    obj.sendWave(user.id, true, "Incoming Friend Request");
+                  }
+                }
+              }
+              class G {
+                constructor() {
+                  onDeclineIncomingRequest(user.id, applicationId);
+                  const obj = AddFriendsScreenUtils;
+                  const obj2 = { userId: user.id, applicationId };
+                  const result = obj.dismissIncomingRequest(obj2);
+                }
+              }
+              const obj14 = { size: "sm", variant: "tertiary", icon: applicationId(pressed[10]), onPress: tmp19, accessibilityLabel: ignoreRequestAccessibilityLabel, maxFontSizeMultiplier: 2 };
+              const IconButton = tmp(tmp2[9]).IconButton;
+              const tmp24 = animate(IconButton, obj14);
+              class Z {
+                constructor() {
+                  const result = pressed.set(true);
+                  const obj = AddFriendsScreenUtils;
+                  const obj2 = { userId: user.id, applicationId };
+                  const result1 = obj.acceptIncomingRequest(obj2);
+                  onAcceptIncomingRequest(user.id, applicationId);
+                }
+              }
+              cResult[19] = ignoreRequestAccessibilityLabel;
+              cResult[20] = tmp24;
+            }
+          }
+          class G {
+            constructor() {
+              onDeclineIncomingRequest(user.id, applicationId);
+              const obj = AddFriendsScreenUtils;
+              const obj2 = { userId: user.id, applicationId };
+              const result = obj.dismissIncomingRequest(obj2);
+            }
+          }
+          cResult[12] = applicationId;
+          cResult[13] = onDeclineIncomingRequest;
+          cResult[14] = user.id;
+          cResult[15] = G;
+          tmp19 = G;
         }
       }
     }
@@ -261,16 +303,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     cResult[10] = user.id;
     cResult[11] = Z;
   }
-  class M {
-    constructor(nativeEvent) {
-      const result = sharedValue2.set(nativeEvent.nativeEvent.layout.width);
-      const result1 = sharedValue3.set(nativeEvent.nativeEvent.layout.height);
-    }
+  function handleWaveLayout(nativeEvent) {
+    const result = sharedValue2.set(nativeEvent.nativeEvent.layout.width);
+    const result1 = sharedValue3.set(nativeEvent.nativeEvent.layout.height);
   }
   cResult[4] = sharedValue3;
   cResult[5] = sharedValue2;
-  cResult[6] = M;
-}) : ((user) => {
+  cResult[6] = handleWaveLayout;
+}) : (function IncomingRequestRowActions(user) {
   let Button;
   let Stack;
   let View3;
@@ -304,7 +344,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   const sharedValue3 = obj4.useSharedValue(-1);
   const obj5 = user(pressed[6]);
   const tmp2 = user;
-  class I {
+  class E {
     constructor() {
       let num;
       let obj;
@@ -335,11 +375,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       return obj2;
     }
   }
-  I.__closure = { animate, pressed, withTiming: user(pressed[7]).withTiming };
-  I.__workletHash = 5108795838134;
-  I.__initData = __initData4;
+  E.__closure = { animate, pressed, withTiming: user(pressed[7]).withTiming };
+  E.__workletHash = 5108795838134;
+  E.__initData = __initData4;
   ({ animate, pressed, withTiming: user(pressed[7]).withTiming });
-  const animatedStyle = obj5.useAnimatedStyle(I);
+  const animatedStyle = obj5.useAnimatedStyle(E);
   const obj7 = user(pressed[6]);
   class X {
     constructor() {
@@ -425,7 +465,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     const obj = { transform: items };
     const obj2 = { rotateZ: withDelay(450, withRepeat(withTiming(str, obj3), 4, true)) };
     obj3 = { duration: 150, easing: Easing.inOut(ReanimatedRexport.Easing.quad) };
-    Easing = tmp(4618).Easing;
+    Easing = tmp(4810).Easing;
     items = [obj2, { translateX: -sharedValue2.get() / 2 }, ];
     ({ translateX: -sharedValue2.get() / 2 });
     items[2] = { translateY: -sharedValue3.get() / 2 };
@@ -471,7 +511,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     obj.sendWave(user.id, true, "Incoming Friend Request");
   }, items2);
   const obj14 = {
-    onLayout(nativeEvent) {
+    onLayout: function handleIconButtonsLayout(nativeEvent) {
       const result = sharedValue.set(nativeEvent.nativeEvent.layout.width);
     },
     style: animatedStyle,
@@ -489,7 +529,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   items4 = [animate(View, obj14), ];
   const obj18 = {
     style: animatedStyle1,
-    onLayout(nativeEvent) {
+    onLayout: function handleButtonsLayout(nativeEvent) {
       const result = sharedValue1.set(nativeEvent.nativeEvent.layout.width);
     },
     children: animate(Button, obj19)
@@ -515,7 +555,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   }
   obj21 = {
     style: tmp22,
-    onLayout(nativeEvent) {
+    onLayout: function handleWaveLayout(nativeEvent) {
       const result = sharedValue2.set(nativeEvent.nativeEvent.layout.width);
       const result1 = sharedValue3.set(nativeEvent.nativeEvent.layout.height);
     },

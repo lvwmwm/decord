@@ -1,20 +1,20 @@
-// Module ID: 10693
-// Function ID: 10694
+// Module ID: 10281
+// Function ID: 10282
 // Name: DetailedGuildIdentityUserRow
-// Dependencies: [19, 17, 1377, 21, 4896, 587, 558, 576, 5048, 4728, 9331, 1188, 504, 8924, 6000, 2]
+// Dependencies: [19, 17, 1389, 21, 5090, 587, 558, 576, 5405, 4922, 8740, 1200, 504, 8555, 6184, 2]
 
-// Module 10693 (DetailedGuildIdentityUserRow)
+// Module 10281 (DetailedGuildIdentityUserRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5048 */;
-import DiscordTagDefault from "DiscordTag" /* 9331 */;
+import native from "native" /* 1200 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5405 */;
+import DiscordTagDefault from "DiscordTag" /* 8740 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp6;
-const UserUtilsDefault = tmp6(4728);
+const UserUtilsDefault = tmp6(4922);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -34,7 +34,7 @@ obj3 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, fontSize: 12 };
 let closure_7 = createStyles(obj);
 const memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function DetailedGuildIdentityUser(arg0) {
   let contentHeight;
   let guildId;
   let items;
@@ -103,7 +103,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
           const tmp18 = View;
           if (tmp8) {
             const obj6 = { size: native.AvatarSizes.SIZE_16, style: tmp4.primaryAvatar, user, guildId: "Array" };
-            const Avatar = tmp(1188).Avatar;
+            const Avatar = tmp(1200).Avatar;
             tmp19 = hasOwnProperty(Avatar, obj6);
           }
           items1 = [tmp19, ];
@@ -143,7 +143,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   cResult[1] = user;
   cResult[2] = nickname;
   tmp5 = nickname;
-}) : ((contentHeight) => {
+}) : (function DetailedGuildIdentityUser(contentHeight) {
   let guildId;
   let items;
   let items1;
@@ -181,7 +181,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
 }));
 const metroImportAll = memoResult;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function DetailedGuildIdentityUserRow(arg0) {
   let accessibilityLabel;
   let accessibilityRole;
   let accessibilityState;
@@ -261,7 +261,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
                 }
               }
               const obj2 = { accessibilityLabel, disabled, leading: tmp19, label: tmp22, onPress, subLabel, trailing, accessibilityRole, accessibilityState };
-              const tmp28 = closure_5(userId(8924).FormRow, obj2);
+              const tmp28 = closure_5(userId(8555).FormRow, obj2);
               cResult[11] = accessibilityLabel;
               cResult[12] = accessibilityRole;
               cResult[13] = accessibilityState;
@@ -286,8 +286,8 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
       }
       let tmp20 = leading;
       if (leading == null) {
-        const obj4 = { source: stateFromStores.getAvatarSource(guildId), size: userId(1188).AvatarSizes.SMALL };
-        const Avatar2 = tmp(1188).Avatar;
+        const obj4 = { source: stateFromStores.getAvatarSource(guildId), size: userId(1200).AvatarSizes.SMALL };
+        const Avatar2 = tmp(1200).Avatar;
         tmp20 = closure_5(Avatar2, obj4);
       }
       cResult[3] = guildId;
@@ -334,7 +334,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
                 }
               }
               const obj5 = { accessibilityLabel, arrow, disabled, end, icon: tmp9, label: tmp12, onPress, start, subLabel, trailing, accessibilityRole, accessibilityState };
-              const tmp18 = closure_5(userId(6000).TableRow, obj5);
+              const tmp18 = closure_5(userId(6184).TableRow, obj5);
               cResult[29] = accessibilityLabel;
               cResult[30] = accessibilityRole;
               cResult[31] = accessibilityState;
@@ -362,8 +362,8 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
       }
       let tmp10 = leading;
       if (leading == null) {
-        const obj7 = { source: stateFromStores.getAvatarSource(guildId), size: userId(1188).AvatarSizes.SMALL };
-        const Avatar = tmp(1188).Avatar;
+        const obj7 = { source: stateFromStores.getAvatarSource(guildId), size: userId(1200).AvatarSizes.SMALL };
+        const Avatar = tmp(1200).Avatar;
         tmp10 = closure_5(Avatar, obj7);
       }
       cResult[21] = guildId;
@@ -375,7 +375,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
     tmp8 = tmp16;
   }
   return tmp8;
-}) : ((arrow) => {
+}) : (function DetailedGuildIdentityUserRow(arrow) {
   let accessibilityLabel;
   let accessibilityRole;
   let accessibilityState;
@@ -407,10 +407,10 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
     let tmp4Result;
     if (deprecatedFormRow) {
       const obj2 = { accessibilityLabel, disabled, leading, label: closure_5(closure_8, obj4), onPress, subLabel, trailing, accessibilityRole, accessibilityState };
-      const FormRow = tmp(8924).FormRow;
+      const FormRow = tmp(8555).FormRow;
       if (leading == null) {
         const obj3 = { source: stateFromStores.getAvatarSource(guildId), size: native.AvatarSizes.SMALL };
-        const Avatar2 = tmp(1188).Avatar;
+        const Avatar2 = tmp(1200).Avatar;
         leading = tmp4(Avatar2, obj3);
       }
       obj4 = { contentHeight, user: stateFromStores, guildId };
@@ -418,10 +418,10 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
     } else {
       const obj5 = { accessibilityLabel, arrow, disabled, end, icon: tmp4Result2, label: closure_5(closure_8, obj7), onPress, start, subLabel, trailing, accessibilityRole, accessibilityState };
       tmp4Result2 = leading;
-      const TableRow = tmp(6000).TableRow;
+      const TableRow = tmp(6184).TableRow;
       if (leading == null) {
         const obj6 = { source: stateFromStores.getAvatarSource(guildId), size: native.AvatarSizes.SMALL };
-        const Avatar = tmp(1188).Avatar;
+        const Avatar = tmp(1200).Avatar;
         tmp4Result2 = tmp4(Avatar, obj6);
       }
       obj7 = { contentHeight, user: stateFromStores, guildId };

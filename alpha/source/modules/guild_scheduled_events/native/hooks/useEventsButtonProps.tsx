@@ -1,20 +1,20 @@
-// Module ID: 12026
-// Function ID: 12027
+// Module ID: 12099
+// Function ID: 12100
 // Name: useEventsButtonProps
-// Dependencies: [19, 4911, 5077, 5078, 504, 9195, 5848, 5967, 9209, 4860, 12027, 1987, 1126, 12031, 2]
+// Dependencies: [19, 6040, 5971, 5972, 504, 8630, 8163, 6149, 8510, 5054, 12100, 1999, 1126, 12104, 2]
 // Exports: default
 
-// Module 12026 (useEventsButtonProps)
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import ReadStateConstants from "ReadStateConstants" /* 5078 */;
-import useShowMemberVerificationGate from "useShowMemberVerificationGate" /* 5848 */;
-import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 5967 */;
-import useGuildScheduledEventsDefault from "useGuildScheduledEvents" /* 9195 */;
-import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9209 */;
+// Module 12099 (useEventsButtonProps)
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import ReadStateConstants from "ReadStateConstants" /* 5972 */;
+import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 6149 */;
+import useShowMemberVerificationGate from "useShowMemberVerificationGate" /* 8163 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8510 */;
+import useGuildScheduledEventsDefault from "useGuildScheduledEvents" /* 8630 */;
 import react from "react" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 4911 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -52,7 +52,7 @@ export default function useEventsButtonProps(id) {
       const tmpResult = MemberVerificationModalActionCreators;
       result = tmpResult.openMemberVerificationModal(tmp3.id);
     } else {
-      const tmpResult2 = GuildScheduledEventModalActionCreators;
+      const tmpResult2 = guild_scheduled_events_GuildScheduledEventModalActionCreators;
       result = tmpResult2.openGuildEventListActionSheet(tmp3);
     }
     return result;
@@ -61,7 +61,7 @@ export default function useEventsButtonProps(id) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { guildId: user.id };
-    const tmp2 = asyncRequire(12027, dependencyMap.paths);
+    const tmp2 = asyncRequire(12100, dependencyMap.paths);
     openLazy(tmp2, "UpcomingEventsLongPress-" + user.id, obj);
   }, items4);
   if (arr4.length > 0) {
@@ -72,10 +72,10 @@ export default function useEventsButtonProps(id) {
     const intl = tmp(1126).intl;
     name = intl.string(tmp(1126).t.tlopTM);
   }
-  let mode = tmp(12031).ChannelModes.DEFAULT;
+  let mode = tmp(12104).ChannelModes.DEFAULT;
   const tmp8 = hasUnread && !eventsMuted;
   if (tmp8) {
-    mode = tmp(12031).ChannelModes.UNREAD_IMPORTANT;
+    mode = tmp(12104).ChannelModes.UNREAD_IMPORTANT;
   }
   return { hasUnread, mentionCount, mode, name, eventsMuted, handlePress, handleLongPress };
 };

@@ -1,22 +1,20 @@
-// Module ID: 13385
-// Function ID: 13386
+// Module ID: 13685
+// Function ID: 13686
 // Name: OutboundPromotionClaimAlert
-// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 13386, 6664, 6688, 13247, 13387, 4892, 1126, 5601, 6695, 13388, 4571, 5790, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 587, 558, 576, 13686, 6841, 6865, 13547, 13687, 5086, 1126, 5375, 6872, 13688, 4763, 5394, 2]
 
-// Module 13385 (OutboundPromotionClaimAlert)
+// Module 13685 (OutboundPromotionClaimAlert)
 import nativeDefault from "native" /* 587 */;
-import LinkingDefault from "Linking" /* 4571 */;
-import ClipboardUtils from "ClipboardUtils" /* 6695 */;
-import PromotionUtils from "PromotionUtils" /* 13247 */;
+import LinkingDefault from "Linking" /* 4763 */;
+import ClipboardUtils from "ClipboardUtils" /* 6872 */;
+import PromotionUtils from "PromotionUtils" /* 13547 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let onCancel;
 
 let c10;
 let c9;
@@ -37,7 +35,7 @@ createStyles = createStyles.createStyles;
 obj3 = { borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.xs, padding: 8, marginBottom: 8, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
 obj4 = { borderColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
 let closure_11 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancel) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutboundPromotionClaimAlert(onCancel) {
   let closure_5;
   let code;
   let items;
@@ -325,7 +323,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancel) => {
   cResult[7] = items1;
   tmp14 = items1;
   tmp13 = fn;
-}) : ((onCancel) => {
+}) : (function OutboundPromotionClaimAlert(onCancel) {
   let Button;
   let _undefined;
   let c4;

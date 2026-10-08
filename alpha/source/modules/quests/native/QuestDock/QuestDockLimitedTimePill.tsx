@@ -1,18 +1,18 @@
-// Module ID: 15032
-// Function ID: 15033
+// Module ID: 15294
+// Function ID: 15295
 // Name: QuestDockLimitedTimePill
-// Dependencies: [19, 17, 21, 587, 4896, 558, 576, 11240, 1126, 4892, 2]
+// Dependencies: [19, 17, 21, 587, 5090, 558, 576, 11355, 1126, 5086, 2]
 
-// Module 15032 (QuestDockLimitedTimePill)
+// Module 15294 (QuestDockLimitedTimePill)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import TimerIcon2 from "TimerIcon" /* 11240 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import TimerIcon2 from "TimerIcon" /* 11355 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ const NEUTRAL_79 = nativeDefault.unsafe_rawColors.NEUTRAL_79;
 let obj = { pill: obj2, text: { textTransform: "uppercase" } };
 obj2 = { alignItems: "center", alignSelf: "flex-start", backgroundColor: NEUTRAL_79, borderRadius: nativeDefault.radii.round, flexDirection: "row", gap: nativeDefault.space.PX_4, paddingHorizontal: 6, paddingVertical: 2 };
 let closure_6 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockLimitedTimePill() {
   let first;
   let items;
   let tmp11;
@@ -36,7 +36,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   const pill = tmp4.pill;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xxs", color: nativeDefault.colors.ICON_OVERLAY_LIGHT };
-    const TimerIcon = tmp(11240).TimerIcon;
+    const TimerIcon = tmp(11355).TimerIcon;
     const tmp8 = React3(TimerIcon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -75,7 +75,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   cResult[5] = tmp11;
   cResult[6] = tmp15;
   tmp14 = tmp15;
-}) : (() => {
+}) : (function QuestDockLimitedTimePill() {
   let intl;
   let items;
   const tmp = closure_6();

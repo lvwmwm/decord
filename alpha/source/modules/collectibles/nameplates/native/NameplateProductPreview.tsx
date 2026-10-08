@@ -1,32 +1,32 @@
-// Module ID: 12992
-// Function ID: 12993
+// Module ID: 13270
+// Function ID: 13271
 // Name: NameplateProductPreview
-// Dependencies: [19, 17, 4885, 21, 4896, 587, 558, 576, 7853, 1977, 1126, 4892, 5612, 7860, 7848, 7941, 504, 4728, 5312, 10646, 10647, 1188, 10659, 6000, 2]
+// Dependencies: [19, 17, 5079, 21, 5090, 587, 558, 576, 8271, 1989, 1126, 5086, 5387, 8278, 8266, 8359, 504, 4922, 5624, 10246, 10247, 1200, 10259, 6184, 2]
 
-// Module 12992 (NameplateProductPreview)
+// Module 13270 (NameplateProductPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import utils from "utils" /* 1977 */;
-import UserUtilsDefault from "UserUtils" /* 4728 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 5312 */;
-import LinearGradientDefault from "LinearGradient" /* 5612 */;
-import TableRow2 from "TableRow" /* 6000 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 7848 */;
-import useShopProductItems from "useShopProductItems" /* 7853 */;
-import useCurrentUser from "useCurrentUser" /* 7860 */;
-import useAvatarDecorationIfNotExpiredDefault from "useAvatarDecorationIfNotExpired" /* 7941 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10646 */;
-import types from "types" /* 10647 */;
-import UserNameplateRow from "UserNameplateRow" /* 10659 */;
+import native from "native" /* 1200 */;
+import utils from "utils" /* 1989 */;
+import UserUtilsDefault from "UserUtils" /* 4922 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import LinearGradientDefault from "LinearGradient" /* 5387 */;
+import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 5624 */;
+import TableRow2 from "TableRow" /* 6184 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8266 */;
+import useShopProductItems from "useShopProductItems" /* 8271 */;
+import useCurrentUser from "useCurrentUser" /* 8278 */;
+import useAvatarDecorationIfNotExpiredDefault from "useAvatarDecorationIfNotExpired" /* 8359 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10246 */;
+import types from "types" /* 10247 */;
+import UserNameplateRow from "UserNameplateRow" /* 10259 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ obj3 = { paddingVertical: nativeDefault.space.PX_8 };
 rect = { position: "absolute", right: 0, left: 0, top: 0, bottom: 0, color: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 let closure_8 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((avatarDecorationOverride) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplateProductPreview(avatarDecorationOverride) {
   let items;
   let items1;
   let items2;
@@ -360,7 +360,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((avatarDecorationOver
   tmp5 = tmp19;
   tmp7 = tmp14;
   tmp6 = nameplateData;
-}) : ((arg0) => {
+}) : (function NameplateProductPreview(arg0) {
   let avatarDecorationOverride;
   let intl;
   let items;
@@ -388,7 +388,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((avatarDecorationOver
     const obj7 = { user: nameplateSampleUsers.mallow, end: true };
     items = [metroRequire(closure_10, obj7), , , , , , ];
     const obj8 = { maxFontSizeMultiplier: 2, variant: "text-sm/semibold", accessibilityRole: "header", color: "interactive-text-default", style: tmp.memberListTitle, children: items1 };
-    const Text = tmp2(4892).Text;
+    const Text = tmp2(5086).Text;
     const intl2 = tmp2(1126).intl;
     items1 = [intl2.string(intl4.t["yzW/fZ"]), " \u2014 3"];
     items[1] = metroImportDefault(Text, obj8);
@@ -399,7 +399,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((avatarDecorationOver
     const obj11 = { user: nameplateSampleUsers.locke, end: true };
     items[4] = metroRequire(closure_10, obj11);
     const obj12 = { maxFontSizeMultiplier: 2, variant: "text-sm/semibold", accessibilityRole: "header", color: "interactive-text-default", style: tmp.memberListTitle, children: items2 };
-    const Text2 = tmp2(4892).Text;
+    const Text2 = tmp2(5086).Text;
     const intl3 = tmp2(1126).intl;
     items2 = [intl3.string(intl4.t["NG43/6"]), " \u2014 12"];
     items[5] = metroImportDefault(Text2, obj12);
@@ -424,7 +424,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((avatarDecorationOver
   return tmp6;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplateUser(arg0) {
   let previewAvatarDecoration;
   let previewNameplate;
   let useReducedMotion;
@@ -522,7 +522,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj6 = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration: tmp9, animate: !stateFromStores, autoStatusCutout: false, "aria-hidden": false };
-    const Avatar = tmp(1188).Avatar;
+    const Avatar = tmp(1200).Avatar;
     const tmp26 = metroRequire(Avatar, obj6);
     cResult[12] = tmp9;
     cResult[13] = !stateFromStores;
@@ -536,7 +536,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = avatarDecoration;
   cResult[2] = profilePreviewValue;
   tmp6 = profilePreviewValue;
-}) : ((arg0) => {
+}) : (function NameplateUser(arg0) {
   let avatarDecoration;
   let previewAvatarDecoration;
   let previewNameplate;
@@ -578,7 +578,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return closure_6(currentUser(stateFromStores[22]).UserNameplateRow, { nameplate, icon, label, isPreviewRow: true });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlaceholderUser(arg0) {
   let end;
   let obj3;
   let start;
@@ -590,7 +590,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[0] !== user.avatarSrc) {
     const obj2 = { source: obj3, size: native.AvatarSizes.NORMAL, "aria-hidden": true };
     obj3 = { uri: user.avatarSrc };
-    const Avatar = tmp(1188).Avatar;
+    const Avatar = tmp(1200).Avatar;
     const tmp8 = metroRequire(Avatar, obj2);
     cResult[0] = user.avatarSrc;
     cResult[1] = tmp8;
@@ -617,7 +617,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = user.name;
   cResult[6] = tmp10;
   tmp9 = tmp10;
-}) : ((end) => {
+}) : (function PlaceholderUser(end) {
   let Avatar;
   let obj2;
   let start;

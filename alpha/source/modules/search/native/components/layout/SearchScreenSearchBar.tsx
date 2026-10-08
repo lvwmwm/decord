@@ -1,18 +1,18 @@
-// Module ID: 16812
-// Function ID: 16813
+// Module ID: 17091
+// Function ID: 17092
 // Name: SearchScreenSearchBar
-// Dependencies: [19, 17, 21, 4896, 558, 576, 4591, 6117, 1881, 16813, 16815, 16820, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 4783, 6296, 1893, 17092, 17094, 17099, 2]
 
-// Module 16812 (SearchScreenSearchBar)
+// Module 17091 (SearchScreenSearchBar)
 import react_native from "react-native" /* 17 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1881 */;
-import mergeProps from "mergeProps" /* 4591 */;
-import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6117 */;
-import SearchBarDefault from "SearchBar" /* 16813 */;
-import SearchFilterSuggestionsDefault from "SearchFilterSuggestions" /* 16815 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1893 */;
+import mergeProps from "mergeProps" /* 4783 */;
+import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6296 */;
+import SearchBarDefault from "SearchBar" /* 17092 */;
+import SearchFilterSuggestionsDefault from "SearchFilterSuggestions" /* 17094 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,26 +21,27 @@ let dependencyMap, importDefault, tmp2;
 let hasOwnProperty;
 let metroRequire;
 let tmp8;
-const SearchFilterButtonDefault = tmp8(16820);
+const SearchFilterButtonDefault = tmp8(17099);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ header: { flexDirection: "row", alignItems: "center", paddingLeft: 16, zIndex: 10 }, headerWithBackButton: { paddingLeft: 0 }, headerSearch: { flex: 1, flexGrow: 1 }, headerControlsRight: { paddingRight: 16, paddingLeft: 12 }, suggestionsAnchor: { height: 0 }, suggestions: { position: "absolute", left: 0, right: -50, top: 8 }, suggestionsWithBackButton: { left: -28 } });
-const forwardRef = react.forwardRef;
-const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SearchScreenSearchBar(arg0) {
   let backButton;
   let items;
+  let ref;
+  let ref1;
   let searchContext;
   let tmp6;
-  let obj = ref(576);
+  let obj = ref1(576);
   const cResult = obj.c(33);
-  ({ searchContext, backButton } = arg0);
+  ({ searchContext, backButton, ref } = arg0);
   const tmp4 = closure_7();
   let obj2 = react;
-  const tmp = ref;
-  ref = react.useRef(null);
+  const tmp = ref1;
+  ref1 = react.useRef(null);
   if (cResult[0] !== ref) {
-    const tmpResult = tmp(4591);
-    const mergeRefsResult = tmpResult.mergeRefs(ref, ref);
+    const tmpResult = tmp(4783);
+    const mergeRefsResult = tmpResult.mergeRefs(ref, ref1);
     cResult[0] = ref;
     cResult[1] = mergeRefsResult;
     tmp6 = mergeRefsResult;
@@ -49,29 +50,16 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
   }
   importDefault = obj2.useRef(false);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    class B {
-      constructor() {
-        obj = closure_0(closure_2[7]);
-        closure_1.current = obj.getKeyboardIsOpen();
-        obj2 = closure_0(closure_2[8]);
-        result = obj2.dismissGlobalKeyboard();
-        return;
-      }
-    }
-    cResult[2] = B;
-  } else {
-    class B {
-      constructor() {
-        obj = closure_0(closure_2[7]);
-        closure_1.current = obj.getKeyboardIsOpen();
-        obj2 = closure_0(closure_2[8]);
-        result = obj2.dismissGlobalKeyboard();
-        return;
-      }
-    }
+    const fn = function b() {
+      const obj = useKeyboardIsOpen;
+      ref.current = obj.getKeyboardIsOpen();
+      const obj2 = KeyboardManagerUtils;
+      const result = obj2.dismissGlobalKeyboard();
+    };
+    cResult[2] = fn;
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
+    class R {
       constructor(arg0) {
         current = arg0;
         if (current) {
@@ -81,14 +69,19 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
         if (current) {
           tmp2 = globalThis;
           _requestAnimationFrame = requestAnimationFrame;
-          animationFrame = requestAnimationFrame(() => { /* body not rendered: F146791 */ });
+          animationFrame = requestAnimationFrame(() => {
+            const current = ref.current;
+            if (current != null) {
+              current.focus();
+            }
+          });
         }
         return;
       }
     }
-    cResult[3] = S;
+    cResult[3] = R;
   } else {
-    class S {
+    class R {
       constructor(arg0) {
         current = arg0;
         if (current) {
@@ -98,14 +91,19 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
         if (current) {
           tmp2 = globalThis;
           _requestAnimationFrame = requestAnimationFrame;
-          animationFrame = requestAnimationFrame(() => { /* body not rendered: F146791 */ });
+          animationFrame = requestAnimationFrame(() => {
+            const current = ref.current;
+            if (current != null) {
+              current.focus();
+            }
+          });
         }
         return;
       }
     }
   }
   if (cResult[4] === tmp4.header) {
-    class S {
+    class R {
       constructor(arg0) {
         current = arg0;
         if (current) {
@@ -115,13 +113,18 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
         if (current) {
           tmp2 = globalThis;
           _requestAnimationFrame = requestAnimationFrame;
-          animationFrame = requestAnimationFrame(() => { /* body not rendered: F146791 */ });
+          animationFrame = requestAnimationFrame(() => {
+            const current = ref.current;
+            if (current != null) {
+              current.focus();
+            }
+          });
         }
         return;
       }
     }
     if (cResult[7] === tmp6) {
-      class S {
+      class R {
         constructor(arg0) {
           current = arg0;
           if (current) {
@@ -131,13 +134,18 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
           if (current) {
             tmp2 = globalThis;
             _requestAnimationFrame = requestAnimationFrame;
-            animationFrame = requestAnimationFrame(() => { /* body not rendered: F146791 */ });
+            animationFrame = requestAnimationFrame(() => {
+              const current = ref.current;
+              if (current != null) {
+                current.focus();
+              }
+            });
           }
           return;
         }
       }
       if (cResult[10] === tmp4.suggestions) {
-        class S {
+        class R {
           constructor(arg0) {
             current = arg0;
             if (current) {
@@ -147,13 +155,18 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
             if (current) {
               tmp2 = globalThis;
               _requestAnimationFrame = requestAnimationFrame;
-              animationFrame = requestAnimationFrame(() => { /* body not rendered: F146791 */ });
+              animationFrame = requestAnimationFrame(() => {
+                const current = ref.current;
+                if (current != null) {
+                  current.focus();
+                }
+              });
             }
             return;
           }
         }
         if (cResult[13] === searchContext) {
-          class S {
+          class R {
             constructor(arg0) {
               current = arg0;
               if (current) {
@@ -163,13 +176,18 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
               if (current) {
                 tmp2 = globalThis;
                 _requestAnimationFrame = requestAnimationFrame;
-                animationFrame = requestAnimationFrame(() => { /* body not rendered: F146791 */ });
+                animationFrame = requestAnimationFrame(() => {
+                  const current = ref.current;
+                  if (current != null) {
+                    current.focus();
+                  }
+                });
               }
               return;
             }
           }
           if (cResult[16] === tmp4.suggestionsAnchor) {
-            class S {
+            class R {
               constructor(arg0) {
                 current = arg0;
                 if (current) {
@@ -179,13 +197,18 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
                 if (current) {
                   tmp2 = globalThis;
                   _requestAnimationFrame = requestAnimationFrame;
-                  animationFrame = requestAnimationFrame(() => { /* body not rendered: F146791 */ });
+                  animationFrame = requestAnimationFrame(() => {
+                    const current = ref.current;
+                    if (current != null) {
+                      current.focus();
+                    }
+                  });
                 }
                 return;
               }
             }
             if (cResult[19] === tmp4.headerSearch) {
-              class S {
+              class R {
                 constructor(arg0) {
                   current = arg0;
                   if (current) {
@@ -195,7 +218,12 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
                   if (current) {
                     tmp2 = globalThis;
                     _requestAnimationFrame = requestAnimationFrame;
-                    animationFrame = requestAnimationFrame(() => { /* body not rendered: F146791 */ });
+                    animationFrame = requestAnimationFrame(() => {
+                      const current = ref.current;
+                      if (current != null) {
+                        current.focus();
+                      }
+                    });
                   }
                   return;
                 }
@@ -236,7 +264,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
   cResult[4] = tmp4.header;
   cResult[5] = null != backButton && tmp4.headerWithBackButton;
   cResult[6] = items2;
-}) : ((arg0, arg1) => {
+}) : (function SearchScreenSearchBar(arg0) {
   let backButton;
   let closure_1;
   let items2;
@@ -246,14 +274,13 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
   let ref;
   let searchContext;
   let tmp10;
-  ({ searchContext, backButton } = arg0);
-  let closure_0 = arg1;
+  ({ searchContext, backButton, ref } = arg0);
   const tmp = closure_7();
   importDefault = react.useRef(null);
-  const items = [arg1];
+  const items = [ref];
   const memo = react.useMemo(() => {
     const obj = mergeProps;
-    return obj.mergeRefs(closure_0, closure_1);
+    return obj.mergeRefs(ref, closure_1);
   }, items);
   dependencyMap = react.useRef(false);
   const callback = react.useCallback(() => {
@@ -298,7 +325,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
   const obj5 = { style: tmp.headerControlsRight, children: closure_5(SearchFilterButtonDefault, { searchContext, onOpen: callback, onClose: callback1 }) };
   items2[2] = closure_5(View, obj5);
   return closure_6(View, obj);
-})));
+}));
 let result = size.fileFinishedImporting("modules/search/native/components/layout/SearchScreenSearchBar.tsx");
 
 export default memoResult;

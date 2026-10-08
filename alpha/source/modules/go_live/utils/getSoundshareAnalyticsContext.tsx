@@ -1,11 +1,11 @@
-// Module ID: 5031
-// Function ID: 5032
+// Module ID: 7435
+// Function ID: 7436
 // Name: getSoundshareAnalyticsContext
-// Dependencies: [2006, 2]
+// Dependencies: [2018, 2]
 // Exports: default
 
-// Module 5031 (getSoundshareAnalyticsContext)
-import RunningGameStore from "RunningGameStore" /* 2006 */;
+// Module 7435 (getSoundshareAnalyticsContext)
+import RunningGameStore from "RunningGameStore" /* 2018 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/go_live/utils/getSoundshareAnalyticsContext.tsx");

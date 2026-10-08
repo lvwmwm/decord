@@ -1,15 +1,15 @@
-// Module ID: 14420
-// Function ID: 14421
+// Module ID: 14646
+// Function ID: 14647
 // Name: SafeAreaProvider
-// Dependencies: [19, 17, 21, 1615, 1620, 1369, 1619, 1630, 1259, 558, 576, 1621, 1487, 2]
+// Dependencies: [19, 17, 21, 1627, 1632, 1381, 1631, 1642, 1271, 558, 576, 1633, 1499, 2]
 
-// Module 14420 (SafeAreaProvider)
+// Module 14646 (SafeAreaProvider)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import react_native2 from "react-native" /* 1259 */;
-import SafeAreaConstants from "SafeAreaConstants" /* 1620 */;
-import _mod1621 from "module_1621" /* 1621 */;
+import react_native2 from "react-native" /* 1271 */;
+import SafeAreaConstants from "SafeAreaConstants" /* 1632 */;
+import _mod1633 from "module_1633" /* 1633 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -20,14 +20,14 @@ const View = react_native.View;
 const jsx = Fragment.jsx;
 const style = { position: "absolute", width: 0, height: 0 };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafeAreaReporter() {
   let ref;
   let safeAreaInsets;
   let obj = safeAreaInsets(576);
   const cResult = obj.c(9);
-  const obj2 = safeAreaInsets(1621);
+  const obj2 = safeAreaInsets(1633);
   safeAreaInsets = obj2.useSafeAreaInsets();
-  const obj3 = safeAreaInsets(1487);
+  const obj3 = safeAreaInsets(1499);
   const appEntryKey = obj3.useAppEntryKey();
   if (cResult[0] === appEntryKey) {
     let tmp4;
@@ -54,7 +54,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       return tmp9;
     }
-    const fn2 = function y() {
+    const fn2 = function p() {
       if (!ref.current) {
         tmp.current = true;
         let closure_0 = safeAreaInsets;
@@ -113,7 +113,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[6] = fn2;
     tmp8 = fn2;
   }
-  const fn = function u() {
+  const fn = function f() {
     let closure_0 = safeAreaInsets;
     let closure_1 = appEntryKey;
     const obj = react_native2;
@@ -171,12 +171,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = items;
   tmp5 = items;
   tmp4 = fn;
-}) : (() => {
+}) : (function SafeAreaReporter() {
   let ref;
   let safeAreaInsets;
-  let obj = safeAreaInsets(1621);
+  let obj = safeAreaInsets(1633);
   safeAreaInsets = obj.useSafeAreaInsets();
-  let obj2 = safeAreaInsets(1487);
+  let obj2 = safeAreaInsets(1499);
   const appEntryKey = obj2.useAppEntryKey();
   const items = [safeAreaInsets, appEntryKey];
   const layoutEffect = react.useLayoutEffect(() => {
@@ -292,7 +292,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }, items1)} />;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafeAreaProvider(arg0) {
   let children;
   const obj = react2;
   const cResult = obj.c(3);
@@ -304,16 +304,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return tmp4;
   }
-  const SafeAreaProvider = tmp(1621).SafeAreaProvider;
+  const SafeAreaProvider = tmp(1633).SafeAreaProvider;
   const tmp5 = <SafeAreaProvider initialMetrics={SafeAreaConstants.INITIAL_SAFE_AREA_METRICS} style={style}>{children}</SafeAreaProvider>;
   cResult[0] = children;
   cResult[1] = style;
   cResult[2] = tmp5;
   tmp4 = tmp5;
-}) : ((arg0) => {
+}) : (function SafeAreaProvider(arg0) {
   let children;
   ({ children, style } = arg0);
-  const SafeAreaProvider = _mod1621.SafeAreaProvider;
+  const SafeAreaProvider = _mod1633.SafeAreaProvider;
   return <SafeAreaProvider initialMetrics={SafeAreaConstants.INITIAL_SAFE_AREA_METRICS} style={style}>{children}</SafeAreaProvider>;
 });
 const result = size.fileFinishedImporting("modules/safe_area/SafeAreaProvider.native.tsx");

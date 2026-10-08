@@ -1,16 +1,16 @@
-// Module ID: 18095
-// Function ID: 18096
+// Module ID: 18382
+// Function ID: 18383
 // Name: StreamFullAlert
-// Dependencies: [19, 17, 21, 558, 576, 9131, 1126, 4892, 18096, 5790, 2]
+// Dependencies: [19, 17, 21, 558, 576, 5287, 1126, 5086, 18383, 5394, 2]
 
-// Module 18095 (StreamFullAlert)
+// Module 18382 (StreamFullAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import AlertDefault from "Alert" /* 5790 */;
-import AVError from "AVError" /* 9131 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18096 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import AVError from "AVError" /* 5287 */;
+import AlertDefault from "Alert" /* 5394 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18383 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -21,7 +21,7 @@ let hasOwnProperty;
 const Image = react_native.Image;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = { image: { alignSelf: "center", marginTop: 32 }, body: { marginTop: 16 } };
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamFullAlert(arg0) {
   let first;
   let intl3;
   let items;
@@ -34,7 +34,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(7);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const tmpResult = AVError;
-    const errorInfo = tmpResult.getErrorInfo(tmp(9131).AVError.STREAM_FULL);
+    const errorInfo = tmpResult.getErrorInfo(tmp(5287).AVError.STREAM_FULL);
     let errorCode;
     if (errorInfo != null) {
       errorCode = errorInfo.errorCode;
@@ -57,7 +57,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-md/normal", style: closure_6.body, children: intl3.string(intl4.t.VVZDBL) };
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     intl3 = tmp(1126).intl;
     const tmp16 = React3(Text, obj3);
     const obj4 = { variant: "text-md/normal", selectable: true, color: "text-muted", style: closure_6.body, children: first };
@@ -88,7 +88,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp21 = cResult[6];
   }
   return tmp21;
-}) : ((arg0) => {
+}) : (function StreamFullAlert(arg0) {
   let intl2;
   let intl3;
   let items;
@@ -105,7 +105,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const merged = Object.assign(arg0);
   intl2 = tmp(1126).intl;
   const obj3 = { variant: "text-md/normal", style: closure_6.body, children: intl3.string(intl4.t.VVZDBL) };
-  const Text = tmp(4892).Text;
+  const Text = tmp(5086).Text;
   intl3 = tmp(1126).intl;
   items = [React3(Text, obj3), , ];
   const obj4 = { variant: "text-md/normal", selectable: true, color: "text-muted", style: closure_6.body, children: formatToPlainStringResult };

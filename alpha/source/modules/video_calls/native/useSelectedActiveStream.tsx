@@ -1,18 +1,18 @@
-// Module ID: 13620
-// Function ID: 13621
+// Module ID: 13443
+// Function ID: 13444
 // Name: useSelectedActiveStream
-// Dependencies: [4912, 4918, 558, 576, 504, 2]
+// Dependencies: [6041, 5893, 558, 576, 504, 2]
 
-// Module 13620 (useSelectedActiveStream)
-import ChannelRTCStore from "ChannelRTCStore" /* 4912 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4918 */;
+// Module 13443 (useSelectedActiveStream)
+import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5893 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedActiveStream(id) {
   let first;
   let tmp7;
   _require = id;
@@ -43,7 +43,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7);
-}) : ((arg0) => {
+}) : (function useSelectedActiveStream(arg0) {
   let id;
   _require = arg0;
   const items = [ChannelRTCStore, ApplicationStreamingStore];

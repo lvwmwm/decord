@@ -1,22 +1,20 @@
-// Module ID: 16821
-// Function ID: 16822
+// Module ID: 17100
+// Function ID: 17101
 // Name: SearchScreenLayout
-// Dependencies: [19, 17, 11994, 21, 4896, 558, 576, 16504, 504, 16822, 16930, 2]
+// Dependencies: [19, 17, 12067, 21, 5090, 558, 576, 16764, 504, 17101, 17211, 2]
 
-// Module 16821 (SearchScreenLayout)
+// Module 17100 (SearchScreenLayout)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import AppFreezerDefault from "AppFreezer" /* 16504 */;
-import SearchTabsLayoutDefault from "SearchTabsLayout" /* 16822 */;
-import AutocompleteScreenDefault from "AutocompleteScreen" /* 16930 */;
+import AppFreezerDefault from "AppFreezer" /* 16764 */;
+import SearchTabsLayoutDefault from "SearchTabsLayout" /* 17101 */;
+import AutocompleteScreenDefault from "AutocompleteScreen" /* 17211 */;
 import react from "react" /* 19 */;
-import SearchQueryStore from "SearchQueryStore" /* 11994 */;
+import SearchQueryStore from "SearchQueryStore" /* 12067 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let searchContext;
 
 let hasOwnProperty;
 let metroImportDefault;
@@ -25,7 +23,7 @@ const View = react_native.View;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ hidden: { opacity: 0 }, visible: { flex: 1 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchFreezeContainer(arg0) {
   let children;
   let containerStyle;
   let visible;
@@ -73,7 +71,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp5;
   cResult[2] = items;
   tmp6 = items;
-}) : ((visible) => {
+}) : (function SearchFreezeContainer(visible) {
   let children;
   let containerStyle;
   let obj2;
@@ -89,7 +87,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 const memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SearchScreenLayout(searchContext) {
   let containerStyle;
   let first;
   let items2;
@@ -189,7 +187,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchC
   cResult[5] = width;
   cResult[6] = tmp11;
   tmp10 = tmp11;
-}) : ((searchContext) => {
+}) : (function SearchScreenLayout(searchContext) {
   let items2;
   searchContext = searchContext.searchContext;
   const containerStyle = searchContext.containerStyle;

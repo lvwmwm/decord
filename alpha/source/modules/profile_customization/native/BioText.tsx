@@ -1,21 +1,21 @@
-// Module ID: 11000
-// Function ID: 11001
+// Module ID: 11224
+// Function ID: 11225
 // Name: BioText
-// Dependencies: [19, 17, 1085, 2102, 21, 4896, 558, 576, 4571, 1252, 4892, 8971, 1369, 2101, 1126, 2]
+// Dependencies: [19, 17, 1085, 2114, 21, 5090, 558, 576, 4763, 1264, 5086, 11225, 1381, 2113, 1126, 2]
 
-// Module 11000 (BioText)
+// Module 11224 (BioText)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import isChangelogUserDefault from "isChangelogUser" /* 2101 */;
-import ChangelogConstants from "ChangelogConstants" /* 2102 */;
-import LinkingDefault from "Linking" /* 4571 */;
-import BioMarkupUtils from "BioMarkupUtils" /* 8971 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import isChangelogUserDefault from "isChangelogUser" /* 2113 */;
+import ChangelogConstants from "ChangelogConstants" /* 2114 */;
+import LinkingDefault from "Linking" /* 4763 */;
+import BioMarkupUtils from "BioMarkupUtils" /* 11225 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,14 +23,14 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 const Pressable = react_native.Pressable;
 const AnalyticEvents = Constants.AnalyticEvents;
 const CHANGELOG_URL = ChangelogConstants.CHANGELOG_URL;
 ({ jsxs: metroImportDefault, jsx: metroImportAll, Fragment: c9 } = Fragment);
 let closure_10 = createStyles.createStyles({ text: { alignSelf: "stretch", textAlignVertical: "top", width: "100%", flexGrow: 1, paddingTop: 2, lineHeight: 24 }, span: { alignSelf: "stretch", textAlignVertical: "bottom", width: "100%", flexGrow: 1, display: "flex", paddingBottom: 2 }, link: { alignSelf: "stretch", textAlignVertical: "bottom", width: "100%", flexGrow: 1, bottom: -4, position: "relative" } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkButton(arg0) {
   let first;
   let items;
   let lineClamp;
@@ -41,15 +41,15 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ lineClamp, text } = arg0);
   const tmp4 = closure_10();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function c() {
+    function handlePress() {
       const obj = LinkingDefault;
       obj.openURL(target);
       const obj2 = AnalyticsUtilsDefault;
       const obj3 = { cta_type: "profile_bio", target };
       obj2.track(constants.CHANGE_LOG_CTA_CLICKED, obj3);
-    };
-    cResult[0] = fn;
-    first = fn;
+    }
+    cResult[0] = handlePress;
+    first = handlePress;
   } else {
     first = cResult[0];
   }
@@ -82,7 +82,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = text;
   cResult[4] = tmp7;
   tmp6 = tmp7;
-}) : ((arg0) => {
+}) : (function LinkButton(arg0) {
   let items;
   let lineClamp;
   let obj2;
@@ -91,7 +91,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ lineClamp, text } = arg0);
   const tmp = closure_10();
   let obj = {
-    onPress() {
+    onPress: function handlePress() {
       const obj = LinkingDefault;
       obj.openURL(target);
       const obj2 = AnalyticsUtilsDefault;
@@ -106,7 +106,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroImportAll(Pressable, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BioText(arg0) {
   let bio;
   let items;
   let items1;
@@ -201,7 +201,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
             }
             const obj4 = { variant: str, color: str3, lineClamp, style: span, children: tmp21 };
-            const tmp25 = closure_8(lineClamp(4892).Text, obj4, "changelog-cta");
+            const tmp25 = closure_8(lineClamp(5086).Text, obj4, "changelog-cta");
             cResult[11] = lineClamp;
             cResult[12] = tmp4.span;
             cResult[13] = str3;
@@ -214,7 +214,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const obj5 = { variant: str, color: str4, lineClamp, style: text, children: items1 };
       items1 = [tmp16, "\n"];
-      const tmp20 = closure_7(lineClamp(4892).Text, obj5, "changelog-bio");
+      const tmp20 = closure_7(lineClamp(5086).Text, obj5, "changelog-bio");
       cResult[4] = lineClamp;
       cResult[5] = tmp4.text;
       cResult[6] = str4;
@@ -248,7 +248,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const obj6 = { variant: str, color: str2, lineClamp, style: tmp4.text, children: tmp5 };
-      const tmp14 = closure_8(lineClamp(4892).Text, obj6);
+      const tmp14 = closure_8(lineClamp(5086).Text, obj6);
       cResult[20] = lineClamp;
       cResult[21] = tmp4.text;
       cResult[22] = str2;
@@ -259,10 +259,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const obj7 = { linkVariant: str, textVariant: str, customEmojiOffsetY: num };
-  const parseBioReact = lineClamp(8971).parseBioReact;
-  lineClamp(8971);
+  const parseBioReact = lineClamp(11225).parseBioReact;
+  lineClamp(11225);
   num = undefined;
-  const tmpResult2 = lineClamp(1369);
+  const tmpResult2 = lineClamp(1381);
   if (tmpResult2.isAndroid()) {
     num = 3;
   }
@@ -271,7 +271,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = str;
   cResult[2] = parseBioReactResult;
   tmp5 = parseBioReactResult;
-}) : ((lineClamp) => {
+}) : (function BioText(lineClamp) {
   let bio;
   let intl2;
   let items1;

@@ -1,20 +1,20 @@
-// Module ID: 16793
-// Function ID: 16794
+// Module ID: 17073
+// Function ID: 17074
 // Name: AppChannel
-// Dependencies: [19, 17, 8738, 21, 4896, 558, 576, 1884, 8547, 16794, 16630, 16631, 6756, 7526, 16632, 16636, 16797, 16800, 1126, 16801, 2]
+// Dependencies: [19, 17, 10613, 21, 5090, 558, 576, 1896, 8586, 17074, 16892, 16893, 6932, 9249, 16894, 16898, 17077, 17080, 1126, 17081, 2]
 
-// Module 16793 (AppChannel)
+// Module 17073 (AppChannel)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl6 from "intl" /* 1126 */;
-import AppChannelChat from "AppChannelChat" /* 7526 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8547 */;
-import FramesConstants from "FramesConstants" /* 8738 */;
-import FrameSurfaceState from "FrameSurfaceState" /* 16800 */;
-import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 16801 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8586 */;
+import AppChannelChat from "AppChannelChat" /* 9249 */;
+import FramesConstants from "FramesConstants" /* 10613 */;
+import FrameSurfaceState from "FrameSurfaceState" /* 17080 */;
+import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 17081 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let closure_8 = createStyles.createStyles((paddingBottom) => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppChannel(arg0) {
   let applicationId;
   let channel;
   let frame;
@@ -44,7 +44,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj = id(576);
   const cResult = obj.c(25);
   ({ applicationId, channel } = arg0);
-  const tmp5 = closure_8(guild_id(1884)());
+  const tmp5 = closure_8(guild_id(1896)());
   if (cResult[0] === channel.guild_id) {
     let tmp6;
     if (cResult[1] === channel.id) {
@@ -55,17 +55,17 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (cResult[4] === tmp6) {
         tmp7 = cResult[5];
       }
-      ({ frame, state } = guild_id(16794)(tmp7));
-      guild_id(16794)(tmp7);
-      const tmp4Result = guild_id(16630);
-      tmp4Result(state === id(16794).FrameLifecycleState.Launched);
+      ({ frame, state } = guild_id(17074)(tmp7));
+      guild_id(17074)(tmp7);
+      const tmp4Result = guild_id(16892);
+      tmp4Result(state === id(17074).FrameLifecycleState.Launched);
       let tmp12 = null;
-      const tmp4Result3 = guild_id(16631);
-      if (state === id(16794).FrameLifecycleState.Launched) {
+      const tmp4Result3 = guild_id(16893);
+      if (state === id(17074).FrameLifecycleState.Launched) {
         tmp12 = applicationId;
       }
       tmp4Result3(tmp12);
-      const tmpResult = id(6756);
+      const tmpResult = id(6932);
       const isConjureChannelCandidate = tmpResult.useIsConjureChannelCandidate(channel, "AppChannel");
       id = channel.id;
       guild_id = channel.guild_id;
@@ -74,7 +74,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (cResult[7] === guild_id) {
           tmp15 = cResult[8];
         }
-        if (id(16794).FrameLifecycleState.Launched === state) {
+        if (id(17074).FrameLifecycleState.Launched === state) {
           let tmp37;
           let tmp39;
           const _Symbol6 = Symbol;
@@ -86,8 +86,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp37 = cResult[9];
           }
           if (cResult[10] !== frame.id) {
-            const obj3 = { frameId: frame.id, level: id(16636).FrameStackLevel.WithinAppContent, presentation: tmp37 };
-            const tmp4Result4 = guild_id(16632);
+            const obj3 = { frameId: frame.id, level: id(16898).FrameStackLevel.WithinAppContent, presentation: tmp37 };
+            const tmp4Result4 = guild_id(16894);
             const tmp42 = closure_6(tmp4Result4, obj3);
             cResult[10] = frame.id;
             cResult[11] = tmp42;
@@ -123,19 +123,19 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp44 = null;
           if (isConjureChannelCandidate) {
             const obj5 = { channelId: id, onOpenChat: tmp15 };
-            tmp44 = closure_6(tmp4(16797), obj5);
+            tmp44 = closure_6(tmp4(17077), obj5);
           }
           cResult[12] = id;
           cResult[13] = tmp15;
           cResult[14] = isConjureChannelCandidate;
           cResult[15] = tmp44;
           tmp43 = tmp44;
-        } else if (id(16794).FrameLifecycleState.RenderingElsewhere === state) {
+        } else if (id(17074).FrameLifecycleState.RenderingElsewhere === state) {
           let tmp33;
           const _Symbol5 = Symbol;
           if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
             const obj6 = { description: intl5.string(id(1126).t["2KIDX+"]) };
-            const FrameSurfaceExplanation4 = tmp(16800).FrameSurfaceExplanation;
+            const FrameSurfaceExplanation4 = tmp(17080).FrameSurfaceExplanation;
             intl5 = tmp(1126).intl;
             const tmp35 = closure_6(FrameSurfaceExplanation4, obj6);
             cResult[20] = tmp35;
@@ -144,12 +144,12 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp33 = cResult[20];
           }
           return tmp33;
-        } else if (id(16794).FrameLifecycleState.NoApplication === state) {
+        } else if (id(17074).FrameLifecycleState.NoApplication === state) {
           let tmp29;
           const _Symbol4 = Symbol;
           if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
             const obj7 = { description: intl4.string(id(1126).t.izggZO) };
-            const FrameSurfaceExplanation3 = tmp(16800).FrameSurfaceExplanation;
+            const FrameSurfaceExplanation3 = tmp(17080).FrameSurfaceExplanation;
             intl4 = tmp(1126).intl;
             const tmp31 = closure_6(FrameSurfaceExplanation3, obj7);
             cResult[21] = tmp31;
@@ -158,12 +158,12 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp29 = cResult[21];
           }
           return tmp29;
-        } else if (id(16794).FrameLifecycleState.DoesNotSupportSurface === state) {
+        } else if (id(17074).FrameLifecycleState.DoesNotSupportSurface === state) {
           let tmp25;
           const _Symbol3 = Symbol;
           if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
             const obj8 = { description: intl3.string(id(1126).t["iUWcU/"]) };
-            const FrameSurfaceExplanation2 = tmp(16800).FrameSurfaceExplanation;
+            const FrameSurfaceExplanation2 = tmp(17080).FrameSurfaceExplanation;
             intl3 = tmp(1126).intl;
             const tmp27 = closure_6(FrameSurfaceExplanation2, obj8);
             cResult[22] = tmp27;
@@ -172,12 +172,12 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp25 = cResult[22];
           }
           return tmp25;
-        } else if (id(16794).FrameLifecycleState.Error === state) {
+        } else if (id(17074).FrameLifecycleState.Error === state) {
           let tmp21;
           const _Symbol2 = Symbol;
           if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
             const obj9 = { heading: intl.string(id(1126).t.VquUff), error: intl2.string(id(1126).t["Sd9D/R"]) };
-            const FrameSurfaceExplanation = tmp(16800).FrameSurfaceExplanation;
+            const FrameSurfaceExplanation = tmp(17080).FrameSurfaceExplanation;
             intl = tmp(1126).intl;
             intl2 = tmp(1126).intl;
             const tmp23 = closure_6(FrameSurfaceExplanation, obj9);
@@ -191,7 +191,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp17;
           const _Symbol = Symbol;
           if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp19 = closure_6(id(16800).FrameSurfaceLoading, {});
+            const tmp19 = closure_6(id(17080).FrameSurfaceLoading, {});
             cResult[24] = tmp19;
             tmp17 = tmp19;
           } else {
@@ -215,12 +215,12 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[5] = obj10;
     tmp7 = obj10;
   }
-  const obj11 = { type: id(8547).EmbeddedSurfaceType.APP_CHANNEL, channelId: channel.id, guildId: channel.guild_id };
+  const obj11 = { type: id(8586).EmbeddedSurfaceType.APP_CHANNEL, channelId: channel.id, guildId: channel.guild_id };
   cResult[0] = channel.guild_id;
   cResult[1] = channel.id;
   cResult[2] = obj11;
   tmp6 = obj11;
-}) : ((arg0) => {
+}) : (function AppChannel(arg0) {
   let applicationId;
   let channel;
   let frame;
@@ -304,7 +304,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedAppChannel(channel) {
   let intl;
   let intl2;
   let tmp5;
@@ -318,7 +318,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { heading: intl.string(intl6.t.tU5fiM), description: intl2.string(intl6.t.E94mJf) };
-      const FrameSurfaceExplanation = tmp(16800).FrameSurfaceExplanation;
+      const FrameSurfaceExplanation = tmp(17080).FrameSurfaceExplanation;
       intl = tmp(1126).intl;
       intl2 = tmp(1126).intl;
       const tmp12 = metroRequire(FrameSurfaceExplanation, obj2);
@@ -342,7 +342,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     tmp5 = tmp8;
   }
   return tmp5;
-}) : ((channel) => {
+}) : (function ConnectedAppChannel(channel) {
   let intl;
   let intl2;
   let tmp5;

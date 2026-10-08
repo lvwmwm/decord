@@ -1,24 +1,24 @@
-// Module ID: 16902
-// Function ID: 16903
+// Module ID: 17183
+// Function ID: 17184
 // Name: ChannelsScreen
-// Dependencies: [19, 4920, 12007, 11994, 7524, 7523, 21, 558, 576, 11987, 504, 16206, 16833, 1126, 4596, 16837, 12001, 16895, 16829, 16841, 2]
+// Dependencies: [19, 5114, 12080, 12067, 9247, 9246, 21, 558, 576, 12060, 504, 16466, 17112, 1126, 4788, 17116, 12074, 17176, 17108, 17120, 2]
 
-// Module 16902 (ChannelsScreen)
+// Module 17183 (ChannelsScreen)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1126 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4596 */;
-import TrackingConstants from "TrackingConstants" /* 7523 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12001 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4788 */;
+import TrackingConstants from "TrackingConstants" /* 9246 */;
+import tracking_TrackingDefault from "tracking/Tracking" /* 12074 */;
 import react from "react" /* 19 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4920 */;
-import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 12007 */;
-import SearchQueryStore from "SearchQueryStore" /* 11994 */;
-import SearchConstants from "SearchConstants" /* 7524 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5114 */;
+import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 12080 */;
+import SearchQueryStore from "SearchQueryStore" /* 12067 */;
+import SearchConstants from "SearchConstants" /* 9247 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let channel, importDefault, searchContext;
+let importDefault;
 
 let c9;
 let metroImportAll;
@@ -26,7 +26,7 @@ let metroImportDefault;
 ({ EMPTY_VOICE_STATES: metroImportDefault, SearchListItemTypes: metroImportAll, CHANNELS_ESTIMATED_ITEM_SIZE: c9 } = SearchConstants);
 let closure_10 = TrackingConstants.SearchResultContentEntityTypes;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelsScreen(searchContext) {
   let closure_1;
   let stateFromStores;
   let stateFromStores2;
@@ -219,7 +219,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
   cResult[24] = stateFromStores.length;
   cResult[25] = stateFromStores1.length;
   cResult[26] = Y;
-}) : ((searchContext) => {
+}) : (function ChannelsScreen(searchContext) {
   let tmp18;
   searchContext = searchContext.searchContext;
   let stateFromStores;
@@ -274,14 +274,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
   const items8 = [onPressGuildTextChannel, searchContext];
   const callback = stateFromStores1.useCallback((channelId, index) => {
     onPressGuildTextChannel(channelId);
-    const obj = search_tracking_TrackingDefault;
+    const obj = tracking_TrackingDefault;
     const obj2 = { searchContext, channelId, index, entityType: fullscreenPlaceholderCount.CHANNEL };
     const result = obj.trackSearchResultClicked(obj2);
   }, items8);
   const items9 = [onPressGuildVoiceChannel, searchContext];
   const callback1 = stateFromStores1.useCallback((channelId, index) => {
     onPressGuildVoiceChannel(channelId);
-    const obj = search_tracking_TrackingDefault;
+    const obj = tracking_TrackingDefault;
     const obj2 = { searchContext, channelId, index, entityType: fullscreenPlaceholderCount.CHANNEL };
     const result = obj.trackSearchResultClicked(obj2);
   }, items9);
@@ -325,7 +325,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
       push3(element1);
       let closure_0 = stateFromStores2;
       closure_1 = closure_5;
-      const sorted = obj.sort((channel, channel2) => {
+      const sorted = obj.sort(function sort(channel, channel2) {
         channel = channel.channel;
         let tmp = closure_0;
         let tmp3 = closure_0;

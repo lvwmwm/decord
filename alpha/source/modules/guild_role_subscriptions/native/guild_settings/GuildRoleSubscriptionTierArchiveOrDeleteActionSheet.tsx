@@ -1,29 +1,29 @@
-// Module ID: 17977
-// Function ID: 17978
+// Module ID: 18264
+// Function ID: 18265
 // Name: GuildRoleSubscriptionTierArchiveOrDeleteActionSheet
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1618, 38, 17978, 4892, 1188, 5601, 4860, 1126, 6119, 6652, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1630, 38, 18265, 5086, 1200, 5375, 5054, 1126, 6298, 6829, 2]
 
-// Module 17977 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
+// Module 18264 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import BottomSheetModal from "BottomSheetModal" /* 6119 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6652 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 17978 */;
+import native from "native" /* 1200 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import BottomSheetModal from "BottomSheetModal" /* 6298 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6829 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18265 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, groupListingId;
+let BottomSheet;
 
 let c3;
 let closure_4;
@@ -35,7 +35,7 @@ let obj2;
 let obj = { container: obj2, cancel: { alignSelf: "center" } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 24 };
 let closure_7 = createStyles.createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupListingId) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionTierArchiveOrDeleteActionSheet(groupListingId) {
   let archiving;
   let buttonText;
   let deleting;
@@ -46,6 +46,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupListingId) =>
   let headerText;
   let intl;
   let items;
+  let obj8;
   let tmp11;
   let tmp14;
   let tmp17;
@@ -109,6 +110,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupListingId) =>
       let tmp22;
       let tmp25;
       let tmp26;
+      let tmp29;
       if (cResult[10] === deleting) {
         tmp20 = cResult[11];
       }
@@ -122,80 +124,72 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupListingId) =>
       }
       const _Symbol2 = Symbol;
       if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-        class D {
-          constructor() {
-            obj = closure_1_1(closure_1_2[13]);
-            return obj.hideActionSheet();
-          }
-        }
-        cResult[13] = D;
-        tmp25 = D;
+        const fn = function w() {
+          const obj = ActionSheetActionCreatorsDefault;
+          return obj.hideActionSheet();
+        };
+        cResult[13] = fn;
+        tmp25 = fn;
       } else {
-        class D {
-          constructor() {
-            obj = closure_1_1(closure_1_2[13]);
-            return obj.hideActionSheet();
-          }
-        }
+        tmp25 = cResult[13];
       }
       const _Symbol3 = Symbol;
       if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-        class D {
-          constructor() {
-            obj = closure_1_1(closure_1_2[13]);
-            return obj.hideActionSheet();
-          }
-        }
         const obj5 = { variant: "text-sm/semibold", color: "interactive-text-active", children: intl.string(intl2.t["ETE/oC"]) };
-        const Text = tmp(4892).Text;
+        const Text = tmp(5086).Text;
         intl = tmp(1126).intl;
-        const tmp27 = hasOwnProperty(Text, obj5);
-        cResult[14] = tmp27;
-        tmp26 = tmp27;
+        const tmp28 = hasOwnProperty(Text, obj5);
+        cResult[14] = tmp28;
+        tmp26 = tmp28;
       } else {
-        class D {
-          constructor() {
-            obj = closure_1_1(closure_1_2[13]);
-            return obj.hideActionSheet();
-          }
-        }
+        tmp26 = cResult[14];
       }
       if (cResult[15] !== tmp4.cancel) {
-        class D {
-          constructor() {
-            obj = closure_1_1(closure_1_2[13]);
-            return obj.hideActionSheet();
-          }
-        }
         const obj6 = { onPress: tmp25, style: tmp4.cancel, activeOpacity: 0.5, children: tmp26 };
+        const tmp32 = hasOwnProperty(_false, obj6);
         cResult[15] = tmp4.cancel;
-        cResult[16] = hasOwnProperty(_false, obj6);
-        const tmp30 = hasOwnProperty(_false, obj6);
+        cResult[16] = tmp32;
+        tmp29 = tmp32;
       } else {
-        class D {
-          constructor() {
-            obj = closure_1_1(closure_1_2[13]);
-            return obj.hideActionSheet();
-          }
-        }
+        tmp29 = cResult[16];
       }
       if (cResult[17] === tmp7) {
-        class D {
-          constructor() {
-            obj = closure_1_1(closure_1_2[13]);
-            return obj.hideActionSheet();
+        if (cResult[18] === tmp29) {
+          if (cResult[19] === tmp8) {
+            if (cResult[20] === tmp14) {
+              let tmp33;
+              if (cResult[21] === tmp20) {
+                tmp33 = cResult[22];
+              }
+              if (cResult[23] === tmp4.container) {
+                let tmp36;
+                if (cResult[24] === tmp33) {
+                  tmp36 = cResult[25];
+                }
+                return tmp36;
+              }
+              const obj7 = { backdropOpacity: 0.8, children: hasOwnProperty(React3, obj8) };
+              obj8 = { style: tmp4.container, children: tmp33 };
+              BottomSheet = tmp(6829).BottomSheet;
+              const tmp39 = hasOwnProperty(BottomSheet, obj7);
+              cResult[23] = tmp4.container;
+              cResult[24] = tmp33;
+              cResult[25] = tmp39;
+              tmp36 = tmp39;
+            }
           }
         }
       }
-      const obj7 = { contentContainerStyle: tmp7, children: items };
-      items = [tmp8, tmp11, tmp14, tmp17, tmp20, tmp22, tmp28];
+      const obj9 = { contentContainerStyle: tmp7, children: items };
+      items = [tmp8, tmp11, tmp14, tmp17, tmp20, tmp22, tmp29];
+      const tmp35 = metroRequire(BottomSheetModal.BottomSheetScrollView, obj9);
       cResult[17] = tmp7;
-      cResult[18] = tmp28;
+      cResult[18] = tmp29;
       cResult[19] = tmp8;
       cResult[20] = tmp14;
       cResult[21] = tmp20;
-      cResult[22] = metroRequire(BottomSheetModal.BottomSheetScrollView, obj7);
-      const tmp33 = metroRequire(BottomSheetModal.BottomSheetScrollView, obj7);
+      cResult[22] = tmp35;
+      tmp33 = tmp35;
     }
   }
   const tmp21 = hasOwnProperty(components_Button_Button.Button, { text: buttonText, variant: "destructive", grow: true, onPress: handleArchiveOrDelete, disabled: deleting });
@@ -204,7 +198,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupListingId) =>
   cResult[10] = deleting;
   cResult[11] = tmp21;
   tmp20 = tmp21;
-}) : ((groupListingId) => {
+}) : (function GuildRoleSubscriptionTierArchiveOrDeleteActionSheet(groupListingId) {
   let BottomSheetScrollView;
   let Text;
   let archiving;
@@ -252,7 +246,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupListingId) =>
     children: hasOwnProperty(Text, obj6)
   };
   obj6 = { variant: "text-sm/semibold", color: "interactive-text-active", children: intl.string(intl2.t["ETE/oC"]) };
-  Text = tmp6(4892).Text;
+  Text = tmp6(5086).Text;
   intl = tmp6(1126).intl;
   items[6] = hasOwnProperty(_false, obj5);
   return hasOwnProperty(BottomSheet, obj4);

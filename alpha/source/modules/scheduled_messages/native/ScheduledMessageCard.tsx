@@ -1,23 +1,23 @@
-// Module ID: 11857
-// Function ID: 11858
+// Module ID: 12860
+// Function ID: 12861
 // Name: ScheduledMessageCard
-// Dependencies: [19, 17, 2051, 1085, 21, 4896, 587, 558, 576, 504, 1112, 5099, 11858, 5975, 11859, 10382, 4892, 1126, 6002, 7486, 11860, 11861, 11852, 2]
+// Dependencies: [19, 17, 2063, 1085, 21, 5090, 587, 558, 576, 504, 1112, 5940, 12681, 6158, 12682, 9979, 5086, 1126, 6186, 9228, 12861, 12680, 11936, 2]
 
-// Module 11857 (ScheduledMessageCard)
+// Module 12860 (ScheduledMessageCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import router_utils from "router_utils" /* 1112 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
-import ScheduledMessageUtils from "ScheduledMessageUtils" /* 7486 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 11852 */;
-import ScheduledMessageCardActionButtonsDefault from "ScheduledMessageCardActionButtons" /* 11860 */;
-import ForLaterCardStatusHeader2 from "ForLaterCardStatusHeader" /* 11861 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9228 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 11936 */;
+import ForLaterCardStatusHeader2 from "ForLaterCardStatusHeader" /* 12680 */;
+import ScheduledMessageCardActionButtonsDefault from "ScheduledMessageCardActionButtons" /* 12861 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = { card: { gap: 16, marginBottom: 16 }, cardDivider: obj2, attachmentCo
 obj2 = { marginHorizontal: -16, height: 1, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 let closure_9 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledMessageCard(scheduledMessage) {
   let first;
   let intl;
   let items1;
@@ -62,7 +62,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
   const tmpResult = scheduledMessage(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
   if (cResult[3] !== stateFromStores) {
-    class R {
+    class I {
       constructor() {
         if (null != stateFromStores) {
           const obj2 = router_utils;
@@ -73,9 +73,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
       }
     }
     cResult[3] = stateFromStores;
-    cResult[4] = R;
+    cResult[4] = I;
   } else {
-    class R {
+    class I {
       constructor() {
         if (null != stateFromStores) {
           const obj2 = router_utils;
@@ -87,7 +87,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
     }
   }
   if (null == stateFromStores) {
-    class R {
+    class I {
       constructor() {
         if (null != stateFromStores) {
           const obj2 = router_utils;
@@ -98,7 +98,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
       }
     }
   } else {
-    class R {
+    class I {
       constructor() {
         if (null != stateFromStores) {
           const obj2 = router_utils;
@@ -110,7 +110,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
     }
     if (cResult[5] === isPendingRemoval) {
       let tmp20Result;
-      class R {
+      class I {
         constructor() {
           if (null != stateFromStores) {
             const obj2 = router_utils;
@@ -121,7 +121,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
         }
       }
       if (cResult[8] !== stateFromStores) {
-        class R {
+        class I {
           constructor() {
             if (null != stateFromStores) {
               const obj2 = router_utils;
@@ -133,10 +133,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
         }
         let obj2 = { channel: stateFromStores, actions: null };
         cResult[8] = stateFromStores;
-        cResult[9] = closure_7(scheduledMessage(11858).ForLaterCardHeader, obj2);
-        const tmp15 = closure_7(scheduledMessage(11858).ForLaterCardHeader, obj2);
+        cResult[9] = closure_7(scheduledMessage(12681).ForLaterCardHeader, obj2);
+        const tmp15 = closure_7(scheduledMessage(12681).ForLaterCardHeader, obj2);
       } else {
-        class R {
+        class I {
           constructor() {
             if (null != stateFromStores) {
               const obj2 = router_utils;
@@ -148,7 +148,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
         }
       }
       if (cResult[10] !== tmp4.cardDivider) {
-        class R {
+        class I {
           constructor() {
             if (null != stateFromStores) {
               const obj2 = router_utils;
@@ -163,7 +163,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
         cResult[11] = closure_7(View, obj3);
         const tmp18 = closure_7(View, obj3);
       } else {
-        class R {
+        class I {
           constructor() {
             if (null != stateFromStores) {
               const obj2 = router_utils;
@@ -175,7 +175,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
         }
       }
       if (cResult[12] === tmp26) {
-        class R {
+        class I {
           constructor() {
             if (null != stateFromStores) {
               const obj2 = router_utils;
@@ -187,7 +187,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
         }
       }
       if (isPendingRemoval) {
-        class R {
+        class I {
           constructor() {
             if (null != stateFromStores) {
               const obj2 = router_utils;
@@ -197,10 +197,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
             }
           }
         }
-        const obj4 = { style: tmp4.pendingRemoval, children: closure_7(scheduledMessage(5975).ActivityIndicator, { size: "small" }) };
+        const obj4 = { style: tmp4.pendingRemoval, children: closure_7(scheduledMessage(6158).ActivityIndicator, { size: "small" }) };
         tmp20Result = tmp20(View, obj4);
       } else {
-        class R {
+        class I {
           constructor() {
             if (null != stateFromStores) {
               const obj2 = router_utils;
@@ -212,9 +212,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
         }
         tmp21[0] = scheduledMessage.record;
         let tmp22;
-        const ForLaterMessageRow = tmp(11859).ForLaterMessageRow;
+        const ForLaterMessageRow = tmp(12682).ForLaterMessageRow;
         if (tmp26 > 0) {
-          class R {
+          class I {
             constructor() {
               if (null != stateFromStores) {
                 const obj2 = router_utils;
@@ -226,10 +226,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
           }
           const obj5 = { style: tmp4.attachmentCount, children: items1 };
           const obj6 = { size: "xxs", color: stateFromStores(587).colors.TEXT_MUTED };
-          const AttachmentIcon = tmp(10382).AttachmentIcon;
+          const AttachmentIcon = tmp(9979).AttachmentIcon;
           items1 = [closure_7(AttachmentIcon, obj6), ];
           const obj7 = { variant: "text-sm/normal", color: "text-muted", children: intl.format(scheduledMessage(1126).t.ZJ1tPW, obj8) };
-          const Text = tmp(4892).Text;
+          const Text = tmp(5086).Text;
           intl = tmp(1126).intl;
           obj8 = { count: tmp26 };
           items1[1] = closure_7(Text, obj7);
@@ -251,7 +251,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
     cResult[7] = closure_7(closure_10, obj9);
     const tmp13 = closure_7(closure_10, obj9);
   }
-}) : ((scheduledMessage) => {
+}) : (function ScheduledMessageCard(scheduledMessage) {
   let intl;
   let items1;
   let items2;
@@ -270,26 +270,26 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
     let tmp10Result;
     let obj2 = { variant: "primary", border: "subtle", shadow: "none", style: tmp.card, onPress: tmp5, children: items1 };
     const obj3 = { scheduledMessage, isPendingRemoval };
-    const Card = tmp2(6002).Card;
+    const Card = tmp2(6186).Card;
     items1 = [closure_7(closure_10, obj3), , , ];
     const obj4 = { channel: stateFromStores, actions: null };
-    items1[1] = closure_7(scheduledMessage(11858).ForLaterCardHeader, obj4);
+    items1[1] = closure_7(scheduledMessage(12681).ForLaterCardHeader, obj4);
     const obj5 = { style: tmp.cardDivider };
     items1[2] = closure_7(View, obj5);
     if (isPendingRemoval) {
-      const obj6 = { style: tmp.pendingRemoval, children: closure_7(scheduledMessage(5975).ActivityIndicator, { size: "small" }) };
+      const obj6 = { style: tmp.pendingRemoval, children: closure_7(scheduledMessage(6158).ActivityIndicator, { size: "small" }) };
       tmp10Result = tmp10(tmp12, obj6);
     } else {
       const obj7 = { message: scheduledMessage.record, lineClamp: 10, maxHeight: 400, footer: tmp9Result };
       tmp9Result = undefined;
-      const ForLaterMessageRow = tmp2(11859).ForLaterMessageRow;
+      const ForLaterMessageRow = tmp2(12682).ForLaterMessageRow;
       if (scheduledMessage.attachmentUploads.length > 0) {
         const obj8 = { style: tmp.attachmentCount, children: items2 };
         const obj9 = { size: "xxs", color: stateFromStores(587).colors.TEXT_MUTED };
-        const AttachmentIcon = tmp2(10382).AttachmentIcon;
+        const AttachmentIcon = tmp2(9979).AttachmentIcon;
         items2 = [closure_7(AttachmentIcon, obj9), ];
         const obj10 = { variant: "text-sm/normal", color: "text-muted", children: intl.format(scheduledMessage(1126).t.ZJ1tPW, obj11) };
-        const Text = tmp2(4892).Text;
+        const Text = tmp2(5086).Text;
         intl = tmp2(1126).intl;
         obj11 = { count: scheduledMessage.attachmentUploads.length };
         items2[1] = closure_7(Text, obj10);
@@ -302,7 +302,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledMessageCardStatusHeader(arg0) {
   let date;
   let isError;
   let isPendingRemoval;
@@ -343,7 +343,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
           }
         }
         const obj2 = { IconComponent: CalendarPlusIcon.CalendarPlusIcon, label: tmp6, isCritical: isError, lineClamp: 2, actions: tmp10 };
-        const ForLaterCardStatusHeader = tmp(11861).ForLaterCardStatusHeader;
+        const ForLaterCardStatusHeader = tmp(12680).ForLaterCardStatusHeader;
         const tmp16 = metroImportDefault(ForLaterCardStatusHeader, obj2);
         cResult[9] = isError;
         cResult[10] = tmp6;
@@ -376,7 +376,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
   cResult[4] = stateMessage;
   cResult[5] = formatToPlainStringResult;
   tmp6 = formatToPlainStringResult;
-}) : (function(scheduledMessage) {
+}) : (function ScheduledMessageCardStatusHeader(scheduledMessage) {
   let date;
   let isError;
   let stateMessage;

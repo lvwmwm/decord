@@ -1,31 +1,31 @@
-// Module ID: 12362
-// Function ID: 12363
+// Module ID: 12458
+// Function ID: 12459
 // Name: ContactSyncSuggestions
-// Dependencies: [32, 19, 17, 1085, 12363, 21, 4896, 587, 6075, 558, 5609, 576, 4892, 4728, 1402, 1188, 1126, 5997, 4586, 4733, 11, 1252, 8924, 8404, 5612, 1105, 5601, 2]
+// Dependencies: [32, 19, 17, 1085, 12459, 21, 5090, 587, 6261, 558, 5382, 576, 5086, 4922, 1414, 1200, 1126, 6181, 4778, 4927, 11, 1264, 8555, 8600, 5387, 1105, 5375, 2]
 
-// Module 12362 (ContactSyncSuggestions)
+// Module 12458 (ContactSyncSuggestions)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import UserUtils from "UserUtils" /* 4728 */;
-import useFontScale from "useFontScale" /* 5609 */;
-import TableCheckboxRow2 from "TableCheckboxRow" /* 5997 */;
-import NavigatorConstants from "NavigatorConstants" /* 6075 */;
-import Form from "Form" /* 8924 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 12363 */;
+import native from "native" /* 1200 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import UserUtils from "UserUtils" /* 4922 */;
+import useFontScale from "useFontScale" /* 5382 */;
+import TableCheckboxRow2 from "TableCheckboxRow" /* 6181 */;
+import NavigatorConstants from "NavigatorConstants" /* 6261 */;
+import Form from "Form" /* 8555 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 12459 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, friendSuggestions, label, onSelect;
+let dependencyMap, onSelect;
 
 let c10;
 let c9;
@@ -37,7 +37,7 @@ let obj5;
 let obj6;
 let obj7;
 let tmp;
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 let react = react_mod;
 const View = react_native.View;
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -55,19 +55,19 @@ obj6 = { position: "absolute", width: "100%", bottom: 0, padding: nativeDefault.
 obj7 = { marginBottom: nativeDefault.space.PX_8, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
 let closure_11 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScaledButtonHeight() {
   const obj = useFontScale;
   const fontScale = obj.useFontScale();
   const sum = nativeDefault.space.PX_16 + nativeDefault.space.PX_32 + 40;
   return sum + Math.max(18 * Math.min(fontScale, 2) - 18, 0);
-}) : (() => {
+}) : (function useScaledButtonHeight() {
   const obj = useFontScale;
   const fontScale = obj.useFontScale();
   const sum = nativeDefault.space.PX_16 + nativeDefault.space.PX_32 + 40;
   return sum + Math.max(18 * Math.min(fontScale, 2) - 18, 0);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((label) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuggestedFriendsSectionHeader(label) {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(5);
@@ -95,13 +95,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((label) => {
   cResult[3] = tmp5;
   cResult[4] = tmp9;
   tmp8 = tmp9;
-}) : ((label) => {
+}) : (function SuggestedFriendsSectionHeader(label) {
   label = label.label;
   const obj = { style: closure_11().sectionHeader, children: metroImportAll(Text_Text.Text, { color: "text-muted", variant: "text-sm/semibold", children: label }) };
   return metroImportAll(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuggestionRow(arg0) {
   let end;
   let intl;
   let items;
@@ -150,7 +150,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[4] !== tmp9) {
     const obj2 = { source: tmp9, size: native.AvatarSizes.REFRESH_MEDIUM_32 };
-    const Avatar = tmp(1188).Avatar;
+    const Avatar = tmp(1200).Avatar;
     const tmp14 = metroImportAll(Avatar, obj2);
     cResult[4] = tmp9;
     cResult[5] = tmp14;
@@ -171,7 +171,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp19 = null != suggestion.mutual_friends_count;
     if (tmp19) {
       const obj5 = { variant: "text-xs/medium", color: "text-muted", children: intl.format(intl4.t.z7y34b, obj6) };
-      const Text = tmp(4892).Text;
+      const Text = tmp(5086).Text;
       intl = tmp(1126).intl;
       obj6 = { count: suggestion.mutual_friends_count };
       tmp19 = metroImportAll(Text, obj5);
@@ -209,7 +209,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
       }
-      class A {
+      class B {
         constructor() {
           return onSelect(suggestion.suggested_user.id);
         }
@@ -226,15 +226,15 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[23] = tmp25;
       tmp24 = tmp25;
     }
-    class A {
+    class B {
       constructor() {
         return onSelect(suggestion.suggested_user.id);
       }
     }
     cResult[13] = onSelect;
     cResult[14] = suggestion.suggested_user.id;
-    cResult[15] = A;
-    tmp23 = A;
+    cResult[15] = B;
+    tmp23 = B;
   }
   const obj8 = { children: items };
   items = [tmp15, tmp18];
@@ -243,7 +243,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[11] = tmp18;
   cResult[12] = tmp22;
   tmp21 = tmp22;
-}) : ((suggestion) => {
+}) : (function SuggestionRow(suggestion) {
   let Avatar;
   let end;
   let intl;
@@ -284,16 +284,16 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return onSelect(suggestion.suggested_user.id);
     }
   };
-  const TableCheckboxRow = tmp3(5997).TableCheckboxRow;
+  const TableCheckboxRow = tmp3(6181).TableCheckboxRow;
   obj4 = { source: userAvatarSource, size: native.AvatarSizes.REFRESH_MEDIUM_32 };
-  Avatar = tmp3(1188).Avatar;
+  Avatar = tmp3(1200).Avatar;
   items = [metroImportAll(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted", children: userTag }), ];
   let tmp8Result = null != suggestion.mutual_friends_count;
   tmp10 = React4;
   tmp9 = authStore;
   if (tmp8Result) {
     const obj5 = { variant: "text-xs/medium", color: "text-muted", children: intl.format(intl4.t.z7y34b, obj6) };
-    const Text = tmp3(4892).Text;
+    const Text = tmp3(5086).Text;
     intl = tmp3(1126).intl;
     obj6 = { count: suggestion.mutual_friends_count };
     tmp8Result = tmp8(Text, obj5);
@@ -302,7 +302,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroImportAll(TableCheckboxRow, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((friendSuggestions) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncSuggestions(friendSuggestions) {
   let closure_2;
   let closure_4;
   let first;
@@ -336,10 +336,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((friendSuggestions) =
   } else {
     tmp5 = cResult[1];
   }
-  const tmpResult = friendSuggestions(4586);
+  const tmpResult = friendSuggestions(4778);
   const token = tmpResult.useToken(onSubmit(587).colors.BACKGROUND_BASE_LOW);
   if (cResult[3] !== token) {
-    const tmpResult3 = friendSuggestions(4733);
+    const tmpResult3 = friendSuggestions(4927);
     const hexOpacityToRgbaResult = tmpResult3.hexOpacityToRgba(token, 0);
     cResult[3] = token;
     cResult[4] = hexOpacityToRgbaResult;
@@ -348,7 +348,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((friendSuggestions) =
     tmp10 = cResult[4];
   }
   if (cResult[5] !== token) {
-    const tmpResult4 = friendSuggestions(4733);
+    const tmpResult4 = friendSuggestions(4927);
     const hexOpacityToRgbaResult1 = tmpResult4.hexOpacityToRgba(token, 100);
     cResult[5] = token;
     cResult[6] = hexOpacityToRgbaResult1;
@@ -362,7 +362,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((friendSuggestions) =
     react = tmp17[1];
     closure_12();
     if (cResult[10] !== first) {
-      class F {
+      class D {
         constructor(arg0) {
           const obj = {};
           const merged = Object.assign(first);
@@ -371,9 +371,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((friendSuggestions) =
         }
       }
       cResult[10] = first;
-      cResult[11] = F;
+      cResult[11] = D;
     } else {
-      class F {
+      class D {
         constructor(arg0) {
           const obj = {};
           const merged = Object.assign(first);
@@ -382,9 +382,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((friendSuggestions) =
         }
       }
     }
-    F = tmp21;
+    D = tmp21;
     if (cResult[12] === onSubmit) {
-      class F {
+      class D {
         constructor(arg0) {
           const obj = {};
           const merged = Object.assign(first);
@@ -393,7 +393,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((friendSuggestions) =
         }
       }
       if (cResult[15] !== first) {
-        class F {
+        class D {
           constructor(arg0) {
             const obj = {};
             const merged = Object.assign(first);
@@ -406,7 +406,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((friendSuggestions) =
         cResult[15] = first;
         cResult[16] = someResult;
       } else {
-        class F {
+        class D {
           constructor(arg0) {
             const obj = {};
             const merged = Object.assign(first);
@@ -416,7 +416,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((friendSuggestions) =
         }
       }
       if (cResult[17] === friendSuggestions) {
-        class F {
+        class D {
           constructor(arg0) {
             const obj = {};
             const merged = Object.assign(first);
@@ -425,7 +425,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((friendSuggestions) =
           }
         }
         if (cResult[20] === friendSuggestions.length) {
-          class F {
+          class D {
             constructor(arg0) {
               const obj = {};
               const merged = Object.assign(first);
@@ -463,7 +463,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((friendSuggestions) =
               const friendSuggestion = item.props.friendSuggestion;
               const id = friendSuggestion.suggested_user.id;
               const Fragment = react.Fragment;
-              const obj7 = { start: 1 === index, end: index === friendSuggestions.length, suggestion: friendSuggestion, selected: item.props.selected, onSelect: F };
+              const obj7 = { start: 1 === index, end: index === friendSuggestions.length, suggestion: friendSuggestion, selected: item.props.selected, onSelect: D };
               const items2 = [metroImportAll(closure_14, obj7), ];
               let tmp5 = null;
               const tmp31 = authStore;
@@ -482,20 +482,6 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((friendSuggestions) =
         cResult[22] = tmp4.header;
         cResult[23] = tmp4.subtitle;
         cResult[24] = tmp4.title;
-        class N {
-          constructor() {
-            obj = closure_1(closure_2[20]);
-            keys = obj.keys(closure_3);
-            found = keys.filter((item) => first[item]);
-            tmp = onSubmit(found);
-            item = found.forEach((suggested_user_id) => {
-              const obj = onSubmit(closure_1_2[21]);
-              const obj2 = { suggested_user_id, suggestion_source: constants2.USER_SUGGESTIONS, location: "Contact Sync Suggestions" };
-              obj.track(constants.FRIEND_SUGGESTION_ADDED, obj2);
-            });
-            return;
-          }
-        }
         cResult[25] = tmp21;
         cResult[26] = L;
       }
@@ -510,44 +496,28 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((friendSuggestions) =
       cResult[17] = friendSuggestions;
       cResult[18] = first;
       cResult[19] = items;
-      class N {
-        constructor() {
-          obj = closure_1(closure_2[20]);
-          keys = obj.keys(closure_3);
-          found = keys.filter((item) => first[item]);
-          tmp = onSubmit(found);
-          item = found.forEach((suggested_user_id) => {
-            const obj = onSubmit(closure_1_2[21]);
-            const obj2 = { suggested_user_id, suggestion_source: constants2.USER_SUGGESTIONS, location: "Contact Sync Suggestions" };
-            obj.track(constants.FRIEND_SUGGESTION_ADDED, obj2);
-          });
-          return;
-        }
-      }
     }
-    class N {
-      constructor() {
-        obj = closure_1(closure_2[20]);
-        keys = obj.keys(closure_3);
-        found = keys.filter((item) => first[item]);
-        tmp = onSubmit(found);
-        item = found.forEach((suggested_user_id) => {
-          const obj = onSubmit(closure_1_2[21]);
-          const obj2 = { suggested_user_id, suggestion_source: constants2.USER_SUGGESTIONS, location: "Contact Sync Suggestions" };
-          obj.track(constants.FRIEND_SUGGESTION_ADDED, obj2);
-        });
-        return;
-      }
+    function handleSubmit() {
+      let constants2;
+      let obj = SnowflakeUtilsDefault;
+      const keys = obj.keys(first);
+      const found = keys.filter((item) => first[item]);
+      onSubmit(found);
+      const item = found.forEach((suggested_user_id) => {
+        const obj = onSubmit(closure_1_2[21]);
+        const obj2 = { suggested_user_id, suggestion_source: constants2.USER_SUGGESTIONS, location: "Contact Sync Suggestions" };
+        obj.track(constants.FRIEND_SUGGESTION_ADDED, obj2);
+      });
     }
     cResult[12] = onSubmit;
     cResult[13] = first;
-    cResult[14] = N;
+    cResult[14] = handleSubmit;
   }
   let items1 = [tmp10, tmp12];
   cResult[7] = tmp10;
   cResult[8] = tmp12;
   cResult[9] = items1;
-}) : ((friendSuggestions) => {
+}) : (function ContactSyncSuggestions(friendSuggestions) {
   let Button;
   let closure_2;
   let closure_4;
@@ -566,11 +536,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((friendSuggestions) =
     acc[suggested_user.suggested_user.id] = true;
     return acc;
   }, {});
-  let obj = friendSuggestions(4586);
+  let obj = friendSuggestions(4778);
   const token = obj.useToken(onSubmit(587).colors.BACKGROUND_BASE_LOW);
-  let obj2 = friendSuggestions(4733);
+  let obj2 = friendSuggestions(4927);
   let items = [obj2.hexOpacityToRgba(token, 0), ];
-  let obj3 = friendSuggestions(4733);
+  let obj3 = friendSuggestions(4927);
   items[1] = obj3.hexOpacityToRgba(token, 100);
   const tmp4 = first(react.useState(reduced), 2);
   first = tmp4[0];
@@ -648,17 +618,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((friendSuggestions) =
   }, items3);
   let obj6 = { contentContainerStyle: obj7, data: memo, renderItem: callback1 };
   obj7 = { paddingHorizontal: onSubmit(587).space.PX_16, paddingBottom: tmp6 };
-  const FlashList = friendSuggestions(8404).FlashList;
+  const FlashList = friendSuggestions(8600).FlashList;
   items5 = [closure_8(FlashList, obj6), , ];
   let obj8 = { style: tmp.linearGradient, start: friendSuggestions(1105).VerticalGradient.START, end: friendSuggestions(1105).VerticalGradient.END, pointerEvents: "none", colors: items };
-  const tmp11 = onSubmit(5612);
+  const tmp11 = onSubmit(5387);
   items5[1] = closure_8(tmp11, obj8);
   const obj9 = { style: tmp.redesignButton, children: closure_8(Button, obj10) };
   obj10 = {
     variant: "primary",
     size: "lg",
     text: intl.string(friendSuggestions(1126).t["J5/69j"]),
-    onPress() {
+    onPress: function handleSubmit() {
       let constants2;
       let obj = SnowflakeUtilsDefault;
       const keys = obj.keys(first);
@@ -672,7 +642,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((friendSuggestions) =
     },
     disabled: !someResult
   };
-  Button = friendSuggestions(5601).Button;
+  Button = friendSuggestions(5375).Button;
   intl = friendSuggestions(1126).intl;
   items5[2] = closure_8(onSelect, obj9);
   return closure_10(onSelect, obj5);

@@ -1,27 +1,27 @@
-// Module ID: 14654
-// Function ID: 14655
+// Module ID: 14915
+// Function ID: 14916
 // Name: ExplicitMediaFiltersGuildsSetting
-// Dependencies: [7645, 558, 8327, 14641, 576, 14649, 7122, 6811, 1126, 14650, 1197, 11142, 2]
+// Dependencies: [7966, 558, 7710, 14902, 576, 14910, 8218, 6983, 1126, 14911, 1209, 11262, 2]
 
-// Module 14654 (ExplicitMediaFiltersGuildsSetting)
+// Module 14915 (ExplicitMediaFiltersGuildsSetting)
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 6811 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import useUserIsTeen from "useUserIsTeen" /* 8327 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14641 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 14649 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 14650 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
+import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 6983 */;
+import useUserIsTeen from "useUserIsTeen" /* 7710 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14902 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 14910 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 14911 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ExplicitMediaRedactionUtils = tmp(7122);
+const ExplicitMediaRedactionUtils = tmp(8218);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsDisabled() {
   const obj = useUserIsTeen;
   let userIsTeen = obj.useUserIsTeen();
   const obj2 = useParentalControlSettings;
@@ -29,7 +29,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     userIsTeen = obj2.useIsParentallyControlled();
   }
   return userIsTeen;
-}) : (() => {
+}) : (function useIsDisabled() {
   const obj = useUserIsTeen;
   let userIsTeen = obj.useUserIsTeen();
   const obj2 = useParentalControlSettings;
@@ -43,7 +43,7 @@ function getTitle() {
   const intl = intl4.intl;
   return intl.string(intl4.t["FP+a42"]);
 }
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useObscuredContentGuildsSettingValue() {
   let tmp4;
   const obj = react;
   const cResult = obj.c(2);
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : (() => {
+}) : (function useObscuredContentGuildsSettingValue() {
   const obj = useExplicitContentSettingsOrDefault;
   const explicitContentGuilds = obj.useExplicitContentSettingOrDefault().explicitContentGuilds;
   const obj2 = ExplicitMediaRedactionUtils;

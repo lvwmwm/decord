@@ -1,20 +1,20 @@
-// Module ID: 15640
-// Function ID: 15641
+// Module ID: 15920
+// Function ID: 15921
 // Name: useSortedDevToolsScreens
-// Dependencies: [32, 7216, 15424, 15420, 558, 576, 504, 2]
+// Dependencies: [32, 7396, 15686, 15682, 558, 576, 504, 2]
 // Exports: updateSortOrder
 
-// Module 15640 (useSortedDevToolsScreens)
+// Module 15920 (useSortedDevToolsScreens)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import DevToolsActionCreators from "DevToolsActionCreators" /* 15420 */;
-import DevToolsScreens from "DevToolsScreens" /* 15424 */;
+import DevToolsActionCreators from "DevToolsActionCreators" /* 15682 */;
+import DevToolsScreens from "DevToolsScreens" /* 15686 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7216 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7396 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const f121186 = (item) => {
+const f122365 = (item) => {
   let obj;
   [, obj] = item;
   const tmp = null == obj.predicate || obj.predicate();
@@ -26,7 +26,7 @@ function getSortedDevToolsScreens() {
     sortedScreenKeys = DevToolsSettingsStore.sortedScreenKeys;
   }
   const entries = Object.entries(DevToolsScreens.DevToolsScreens);
-  const found = entries.filter(f121186);
+  const found = entries.filter(f122365);
   return found.sort((arg0, arg1) => {
     let num2;
     let tmp;
@@ -51,7 +51,7 @@ function getSortedDevToolsScreens() {
     return num2;
   });
 }
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSortedDevToolsScreens() {
   let tmp4;
   let tmp5;
   let tmp8;
@@ -77,8 +77,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       sortedScreenKeys = DevToolsSettingsStore.sortedScreenKeys;
     }
     const _Object = Object;
-    const entries = Object.entries(tmp(15424).DevToolsScreens);
-    const found = entries.filter(f121186);
+    const entries = Object.entries(tmp(15686).DevToolsScreens);
+    const found = entries.filter(f122365);
     const sorted = found.sort((arg0, arg1) => {
       let num2;
       let tmp;
@@ -109,7 +109,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[3];
   }
   return tmp8;
-}) : (() => {
+}) : (function useSortedDevToolsScreens() {
   let tmp = require;
   const tmp2 = dependencyMap;
   const obj = get_initialized;
@@ -121,7 +121,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     sortedScreenKeys = tmp3.sortedScreenKeys;
   }
   const entries = Object.entries(DevToolsScreens.DevToolsScreens);
-  const found = entries.filter(f121186);
+  const found = entries.filter(f122365);
   return found.sort((arg0, arg1) => {
     let num2;
     let tmp;

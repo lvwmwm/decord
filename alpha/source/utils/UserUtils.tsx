@@ -1,15 +1,15 @@
-// Module ID: 4728
-// Function ID: 4729
+// Module ID: 4922
+// Function ID: 4923
 // Name: UserUtils
-// Dependencies: [4729, 1377, 1085, 558, 576, 504, 1126, 2]
+// Dependencies: [4923, 1389, 1085, 558, 576, 504, 1126, 2]
 // Exports: accountAgeInRange, ageEligibleForPremiumUpsell, getFormattedName, getGlobalName, getName, getUserIsStaff, getUserTag, humanizeStatus, isNewUser, useName
 
-// Module 4728 (UserUtils)
+// Module 4922 (UserUtils)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import intl7 from "intl" /* 1126 */;
-import StreamerModeStore from "StreamerModeStore" /* 4729 */;
-import UserStore from "UserStore" /* 1377 */;
+import StreamerModeStore from "StreamerModeStore" /* 4923 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -92,7 +92,7 @@ let closure_8 = { mode: "full", decoration: "never", identifiable: "auto" };
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_10 = ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((username, arg1) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserTag(username, arg1) {
   let tmp6;
   let tmp7;
   const obj = react;
@@ -114,7 +114,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((username, arg1) => {
   }
   const tmpResult = get_initialized;
   return presentUserTag(username, obj2, tmpResult.useStateFromStores(tmp6, tmp7));
-}) : ((username, arg1) => {
+}) : (function useUserTag(username, arg1) {
   const obj = {};
   const merged = Object.assign(closure_8);
   const merged1 = Object.assign(arg1);
@@ -123,7 +123,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((username, arg1) => {
   return presentUserTag(username, obj, obj2.useStateFromStores(items, () => StreamerModeStore.hidePersonalInformation));
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDirectMessageRecipient(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -159,7 +159,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useDirectMessageRecipient(arg0) {
   let closure_0;
   _require = arg0;
   const obj = require("get initialized");
@@ -201,7 +201,7 @@ function getName(username) {
     return combined;
   }
 }
-function useName(guildId) {
+function useName(username) {
   let tmp15;
   let tmp16;
   let tmp6;
@@ -224,18 +224,18 @@ function useName(guildId) {
     const tmpResult3 = get_initialized;
     const stateFromStores = tmpResult3.useStateFromStores(tmp15, tmp16);
     let tmp20;
-    if (null != guildId) {
+    if (null != username) {
       if (cResult[2] === stateFromStores) {
         let tmp21;
-        if (cResult[3] === guildId) {
+        if (cResult[3] === username) {
           tmp21 = cResult[4];
         }
         tmp20 = tmp21;
       }
-      const obj5 = nameFromUser(guildId);
+      const obj5 = nameFromUser(username);
       let tmp23 = stateFromStores;
       if (tmp23) {
-        const username2 = guildId.username;
+        const username2 = username.username;
         let toLocaleLowerCaseResult1;
         const toLocaleLowerCaseResult = obj5.toLocaleLowerCase();
         if (username2 != null) {
@@ -244,7 +244,7 @@ function useName(guildId) {
         tmp23 = toLocaleLowerCaseResult === toLocaleLowerCaseResult1;
       }
       if (tmp23) {
-        tmp23 = "0" === guildId.discriminator;
+        tmp23 = "0" === username.discriminator;
       }
       let combined = obj5;
       if (tmp23) {
@@ -252,7 +252,7 @@ function useName(guildId) {
         combined = "" + obj5[0] + "\u2026";
       }
       cResult[2] = stateFromStores;
-      cResult[3] = guildId;
+      cResult[3] = username;
       cResult[4] = combined;
       tmp21 = combined;
     }
@@ -261,11 +261,11 @@ function useName(guildId) {
     const items1 = [StreamerModeStore];
     const tmpResult4 = get_initialized;
     const stateFromStores1 = tmpResult4.useStateFromStores(items1, () => StreamerModeStore.hidePersonalInformation);
-    if (null != guildId) {
-      const obj2 = nameFromUser(guildId);
+    if (null != username) {
+      const obj2 = nameFromUser(username);
       let tmp8 = stateFromStores1;
       if (tmp8) {
-        const username = guildId.username;
+        username = username.username;
         let toLocaleLowerCaseResult3;
         const toLocaleLowerCaseResult2 = obj2.toLocaleLowerCase();
         if (username != null) {
@@ -274,7 +274,7 @@ function useName(guildId) {
         tmp8 = toLocaleLowerCaseResult2 === toLocaleLowerCaseResult3;
       }
       if (tmp8) {
-        tmp8 = "0" === guildId.discriminator;
+        tmp8 = "0" === username.discriminator;
       }
       let combined1 = obj2;
       if (tmp8) {

@@ -1,19 +1,19 @@
-// Module ID: 12254
-// Function ID: 12255
+// Module ID: 12333
+// Function ID: 12334
 // Name: useMaybeGetSortedBoosts
-// Dependencies: [32, 19, 12236, 5590, 2112, 2074, 558, 576, 504, 12255, 7679, 11, 1126, 2]
+// Dependencies: [32, 19, 12315, 5956, 2124, 2086, 558, 576, 504, 12334, 8000, 11, 1126, 2]
 
-// Module 12254 (useMaybeGetSortedBoosts)
+// Module 12333 (useMaybeGetSortedBoosts)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl2 from "intl" /* 1126 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 7679 */;
-import getBoostLifecyclePhase from "getBoostLifecyclePhase" /* 12255 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8000 */;
+import getBoostLifecyclePhase from "getBoostLifecyclePhase" /* 12334 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 12236 */;
-import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 5590 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 12315 */;
+import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 5956 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ const require = globalThis.__r;
 let _require, boost, dependencyMap, set;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeGetSortedBoosts(arg0, arg1) {
   let closure_0;
   let closure_2;
   let first;
@@ -136,7 +136,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
               return;
             }
           }
-          class G {
+          class A {
             constructor() {
               set = new Set();
               closure_0 = set;
@@ -178,7 +178,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
                 return;
               }
             }
-            class G {
+            class A {
               constructor() {
                 set = new Set();
                 closure_0 = set;
@@ -243,7 +243,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
                 return;
               }
             }
-            class G {
+            class A {
               constructor() {
                 set = new Set();
                 closure_0 = set;
@@ -276,7 +276,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
               }
             }
           }
-          class R {
+          class N {
             constructor() {
               const tmp = stateFromStores === length && stateFromStores1;
               if (!tmp) {
@@ -290,7 +290,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
           cResult[32] = stateFromStores;
           cResult[33] = arg0;
           cResult[34] = stateFromStores1;
-          cResult[35] = R;
+          cResult[35] = N;
           cResult[36] = items6;
         }
         class M {
@@ -302,7 +302,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
             return;
           }
         }
-        class G {
+        class A {
           constructor() {
             set = new Set();
             closure_0 = set;
@@ -324,7 +324,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
         tmp21 = tmp22;
         tmp20 = M;
       }
-      class G {
+      class A {
         constructor() {
           set = new Set();
           closure_0 = set;
@@ -340,10 +340,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       const items7 = [arg0, tmp10];
       cResult[13] = arg0;
       cResult[14] = tmp10;
-      cResult[15] = G;
+      cResult[15] = A;
       cResult[16] = items7;
       tmp18 = items7;
-      tmp17 = G;
+      tmp17 = A;
     }
   }
   if (cResult[9] !== first1) {
@@ -393,7 +393,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[7] = first1;
   cResult[8] = substr;
   tmp10 = substr;
-}) : ((arg0, arg1) => {
+}) : (function useMaybeGetSortedBoosts(arg0, arg1) {
   let closure_0;
   let first;
   let memo;
@@ -480,7 +480,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   return memo;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(id) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetBoostUserConfig(id) {
   let roleColor;
   let roleColorStrings;
   let tmp4;
@@ -559,7 +559,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(id) {
   if (user2 != null) {
     username2 = user2.username;
   }
-  const fn = function n() {
+  const fn = function a() {
     let colorString;
     let colorStrings;
     const member = GuildMemberStore.getMember(id.guildId, id.userId);
@@ -598,7 +598,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(id) {
   cResult[5] = id.userId;
   cResult[6] = fn;
   tmp14 = fn;
-}) : ((id) => {
+}) : (function useGetBoostUserConfig(id) {
   _require = id;
   let obj = SnowflakeUtilsDefault;
   const items = [GuildMemberStore];

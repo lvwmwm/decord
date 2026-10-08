@@ -1,26 +1,26 @@
-// Module ID: 12908
-// Function ID: 12909
+// Module ID: 13057
+// Function ID: 13058
 // Name: BadgeDirectoryNuxCoachmark
-// Dependencies: [19, 17, 2048, 21, 4896, 587, 558, 576, 12909, 12911, 12913, 12906, 12915, 12917, 10895, 1126, 10899, 9895, 2]
+// Dependencies: [19, 17, 2060, 21, 5090, 587, 558, 576, 13058, 13060, 13062, 13055, 13064, 13066, 10546, 1126, 10550, 9375, 2]
 
-// Module 12908 (BadgeDirectoryNuxCoachmark)
+// Module 13057 (BadgeDirectoryNuxCoachmark)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import BadgeArtImageDefault from "BadgeArtImage" /* 10895 */;
-import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 10899 */;
-import GameTimeTier9LargeBadge from "GameTimeTier9LargeBadge" /* 12909 */;
-import StreamingTier10LargeBadge from "StreamingTier10LargeBadge" /* 12911 */;
-import GameDiversityTier8LargeBadge from "GameDiversityTier8LargeBadge" /* 12913 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import BadgeArtImageDefault from "BadgeArtImage" /* 10546 */;
+import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 10550 */;
+import GameTimeTier9LargeBadge from "GameTimeTier9LargeBadge" /* 13058 */;
+import StreamingTier10LargeBadge from "StreamingTier10LargeBadge" /* 13060 */;
+import GameDiversityTier8LargeBadge from "GameDiversityTier8LargeBadge" /* 13062 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, badgeIconUrls, userId;
+let _require;
 
 let metroImportDefault;
 let metroRequire;
@@ -37,7 +37,7 @@ createStyles = createStyles.createStyles;
 obj3 = { gap: nativeDefault.space.PX_12 };
 let closure_9 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoProgressGraphic() {
   let items;
   const obj = react2;
   const cResult = obj.c(8);
@@ -85,7 +85,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = tmp4.noProgressGraphicRow;
   cResult[2] = items1;
   tmp5 = items1;
-}) : (() => {
+}) : (function NoProgressGraphic() {
   let items;
   let items1;
   const obj = { style: items, children: items1 };
@@ -99,7 +99,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return metroImportDefault(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((badgeIconUrls) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressGraphic(badgeIconUrls) {
   let closure_0;
   let items;
   let mapped;
@@ -148,17 +148,17 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((badgeIconUrls)
     _require = tmp24;
     const graphicRow = tmp4.graphicRow;
     if (cResult[11] !== closure_8[badgeDirectoryNuxGraphicLayout.type]) {
-      class B {
+      class R {
         constructor(arg0, arg1) {
           obj = { url: badgeIconUrls, height: closure_0[arg1] };
           return jsx(closure_1(closure_2[14]), obj, badgeIconUrls);
         }
       }
       cResult[11] = closure_8[badgeDirectoryNuxGraphicLayout.type];
-      cResult[12] = B;
-      tmp26 = B;
+      cResult[12] = R;
+      tmp26 = R;
     } else {
-      class B {
+      class R {
         constructor(arg0, arg1) {
           obj = { url: badgeIconUrls, height: closure_0[arg1] };
           return jsx(closure_1(closure_2[14]), obj, badgeIconUrls);
@@ -172,14 +172,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((badgeIconUrls)
     let tmp13;
     let tmp12;
     let tmp11;
-    class B {
+    class R {
       constructor(arg0, arg1) {
         obj = { url: badgeIconUrls, height: closure_0[arg1] };
         return jsx(closure_1(closure_2[14]), obj, badgeIconUrls);
       }
     }
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      class B {
+      class R {
         constructor(arg0, arg1) {
           obj = { url: badgeIconUrls, height: closure_0[arg1] };
           return jsx(closure_1(closure_2[14]), obj, badgeIconUrls);
@@ -195,7 +195,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((badgeIconUrls)
       tmp12 = tmp15;
       tmp11 = tmp14;
     } else {
-      class B {
+      class R {
         constructor(arg0, arg1) {
           obj = { url: badgeIconUrls, height: closure_0[arg1] };
           return jsx(closure_1(closure_2[14]), obj, badgeIconUrls);
@@ -205,7 +205,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((badgeIconUrls)
       tmp13 = cResult[8];
     }
     if (cResult[9] !== tmp4.graphicRow) {
-      class B {
+      class R {
         constructor(arg0, arg1) {
           obj = { url: badgeIconUrls, height: closure_0[arg1] };
           return jsx(closure_1(closure_2[14]), obj, badgeIconUrls);
@@ -218,7 +218,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((badgeIconUrls)
       cResult[10] = tmp19;
       tmp17 = tmp19;
     } else {
-      class B {
+      class R {
         constructor(arg0, arg1) {
           obj = { url: badgeIconUrls, height: closure_0[arg1] };
           return jsx(closure_1(closure_2[14]), obj, badgeIconUrls);
@@ -236,7 +236,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((badgeIconUrls)
   tmp7 = mapped;
   tmp6 = tmp21;
   tmp5 = tmp22;
-}) : ((badgeIconUrls) => {
+}) : (function ProgressGraphic(badgeIconUrls) {
   let closure_0;
   let iconUrls;
   let items;
@@ -263,7 +263,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((badgeIconUrls)
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirectoryNuxCoachmark(userId) {
   let formatToPlainStringResult;
   let markAsDismissed;
   let tmp5;
@@ -305,7 +305,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
         tmp9 = cResult[7];
       }
       if (cResult[8] !== markAsDismissed) {
-        const fn2 = function h() {
+        const fn2 = function l() {
           return markAsDismissed(ContentDismissActionType.USER_DISMISS);
         };
         cResult[8] = markAsDismissed;
@@ -355,7 +355,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
         cResult[20] = obj2;
         tmp15 = obj2;
       }
-      const fn3 = function y() {
+      const fn3 = function w() {
         markAsDismissed(ContentDismissActionType.TAKE_ACTION);
         const obj = openBadgeDirectoryScreen;
         const obj2 = { targetUserId: userId };
@@ -366,7 +366,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
       cResult[13] = fn3;
       tmp14 = fn3;
     }
-    const fn = function l() {
+    const fn = function h() {
       let tmpResult;
       if (closure_3) {
         const obj = { badgeIconUrls: variantProps.badgeIconUrls };
@@ -392,7 +392,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[3] = variantProps.newBadgeCount;
   cResult[4] = formatToPlainStringResult;
   tmp7 = formatToPlainStringResult;
-}) : ((userId) => {
+}) : (function BadgeDirectoryNuxCoachmark(userId) {
   userId = userId.userId;
   const variantProps = userId.variantProps;
   const visible = userId.visible;

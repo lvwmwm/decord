@@ -1,20 +1,18 @@
-// Module ID: 14843
-// Function ID: 14844
+// Module ID: 15104
+// Function ID: 15105
 // Name: useBountiesModalTiming
-// Dependencies: [32, 19, 5630, 558, 576, 2]
+// Dependencies: [32, 19, 5977, 558, 576, 2]
 
-// Module 14843 (useBountiesModalTiming)
-import QuestConstants from "QuestConstants" /* 5630 */;
+// Module 15104 (useBountiesModalTiming)
+import QuestConstants from "QuestConstants" /* 5977 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let endMode;
-
 let closure_4 = QuestConstants.BOUNTY_CTA_TIMER_MILLISECONDS;
 const BountyVideoEndMode = { END_CARD: "END_CARD", END_CARD_WITH_CTA: "END_CARD_WITH_CTA", LOOP: "LOOP", APP_STORE_LOOP: "APP_STORE_LOOP" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((endMode) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountiesModalTiming(endMode) {
   let closure_11;
   let closure_13;
   let closure_14;
@@ -126,11 +124,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((endMode) => {
               }
               const _Symbol = Symbol;
               if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-                function oe() {
+                function ie() {
                   closure_11(true);
                 }
-                cResult[14] = oe;
-                tmp21 = oe;
+                cResult[14] = ie;
+                tmp21 = ie;
               } else {
                 tmp21 = cResult[14];
               }
@@ -294,7 +292,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((endMode) => {
   cResult[1] = num3;
   cResult[2] = fn;
   tmp8 = fn;
-}) : ((endMode) => {
+}) : (function useBountiesModalTiming(endMode) {
   let _undefined;
   let _undefined2;
   let _undefined3;
@@ -312,7 +310,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((endMode) => {
   let tmp5;
   let tmp7;
   let tmp9;
-  const f118376 = () => {
+  const f119462 = () => {
     num = 0;
     if (null != num3) {
       num = num / tmp;
@@ -365,8 +363,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((endMode) => {
   }
   [tmp5, c11] = onRewardEarned(useState(tmp), 2);
   const tmp4 = onRewardEarned(useState(tmp), 2);
-  [tmp7, c12] = onRewardEarned(obj.useState(f118376), 2);
-  const tmp6 = onRewardEarned(obj.useState(f118376), 2);
+  [tmp7, c12] = onRewardEarned(obj.useState(f119462), 2);
+  const tmp6 = onRewardEarned(obj.useState(f119462), 2);
   let tmp8 = onRewardEarned(obj.useState(null), 2);
   [tmp9, c13] = tmp8;
   [tmp11, c14] = onRewardEarned(obj.useState(num2), 2);

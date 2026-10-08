@@ -1,12 +1,12 @@
-// Module ID: 12318
-// Function ID: 12319
+// Module ID: 12416
+// Function ID: 12417
 // Name: PortalKeyboardInlineComponent
-// Dependencies: [19, 17, 4885, 558, 576, 4753, 1884, 6117, 1616, 4754, 4751, 5597, 4757, 9789, 2]
+// Dependencies: [19, 17, 5079, 558, 576, 4947, 1896, 6296, 1628, 4948, 4945, 5392, 4951, 10354, 2]
 
-// Module 12318 (PortalKeyboardInlineComponent)
+// Module 12416 (PortalKeyboardInlineComponent)
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let closure_4;
 let hasOwnProperty;
 let react = react_mod;
 ({ NativeModules: closure_4, findNodeHandle: hasOwnProperty } = react_native);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function InlinePortalKeyboard(arg0) {
   let channelId;
   let closure_2;
   let closure_3;
@@ -28,9 +28,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   ({ channelId, messagesRef } = arg0);
   let obj2 = react;
   const id = react.useId();
-  const tmp6 = id(4753)();
+  const tmp6 = id(4947)();
   dependencyMap = tmp6;
-  id(1884)();
+  id(1896)();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let obj3 = { includeCustomKeyboard: false };
     cResult[0] = obj3;
@@ -38,10 +38,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   } else {
     first = cResult[0];
   }
-  const tmp9 = id(6117)(first);
+  const tmp9 = id(6296)(first);
   react = tmp9;
-  let tmpResult = tmp(4753);
-  const keyboardContextForType = tmpResult.useKeyboardContextForType(tmp(1616).KeyboardTypes.SYSTEM);
+  let tmpResult = tmp(4947);
+  const keyboardContextForType = tmpResult.useKeyboardContextForType(tmp(1628).KeyboardTypes.SYSTEM);
   if (cResult[1] !== id) {
     class K {
       constructor() {
@@ -78,10 +78,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       }
     }
   }
-  id(5597)(tmp11);
-  let PortalKeyboardUIStore = tmp(4754).PortalKeyboardUIStore;
+  id(5392)(tmp11);
+  let PortalKeyboardUIStore = tmp(4948).PortalKeyboardUIStore;
   let field = PortalKeyboardUIStore.useField("keyboard");
-  const PortalKeyboardUIStore2 = tmp(4754).PortalKeyboardUIStore;
+  const PortalKeyboardUIStore2 = tmp(4948).PortalKeyboardUIStore;
   const field1 = PortalKeyboardUIStore2.useField("state");
   const ref = obj2.useRef(false);
   if (cResult[3] === id) {
@@ -181,21 +181,21 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[8] = keyboardContextForType;
   cResult[9] = tmp9;
   cResult[10] = fn;
-}) : ((messagesRef) => {
+}) : (function InlinePortalKeyboard(messagesRef) {
   let closure_2;
   let closure_3;
   messagesRef = messagesRef.messagesRef;
   react = undefined;
   const channelId = messagesRef.channelId;
   const id = react.useId();
-  const tmp2 = id(4753)();
+  const tmp2 = id(4947)();
   dependencyMap = tmp2;
-  const tmp3 = id(1884)();
-  let tmp4 = id(6117)({ includeCustomKeyboard: false });
+  const tmp3 = id(1896)();
+  let tmp4 = id(6296)({ includeCustomKeyboard: false });
   react = tmp4;
-  let obj = messagesRef(4753);
-  const keyboardContextForType = obj.useKeyboardContextForType(messagesRef(1616).KeyboardTypes.SYSTEM);
-  id(5597)(() => () => {
+  let obj = messagesRef(4947);
+  const keyboardContextForType = obj.useKeyboardContextForType(messagesRef(1628).KeyboardTypes.SYSTEM);
+  id(5392)(() => () => {
     const PortalKeyboardUIStore = messagesRef(closure_2[9]).PortalKeyboardUIStore;
     field = PortalKeyboardUIStore.getField("keyboard");
     const tmp4 = null != field && field.handlerId === id;
@@ -206,9 +206,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       tmpResult2.closePortalKeyboard();
     }
   });
-  let PortalKeyboardUIStore = messagesRef(4754).PortalKeyboardUIStore;
+  let PortalKeyboardUIStore = messagesRef(4948).PortalKeyboardUIStore;
   let field = PortalKeyboardUIStore.useField("keyboard");
-  const PortalKeyboardUIStore2 = messagesRef(4754).PortalKeyboardUIStore;
+  const PortalKeyboardUIStore2 = messagesRef(4948).PortalKeyboardUIStore;
   const field1 = PortalKeyboardUIStore2.useField("state");
   const ref = react.useRef(false);
   const items = [channelId, id, field, field1, tmp2, messagesRef, keyboardContextForType, tmp3, tmp4];

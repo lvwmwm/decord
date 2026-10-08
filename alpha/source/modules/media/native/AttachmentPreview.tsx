@@ -1,36 +1,36 @@
-// Module ID: 11056
-// Function ID: 11057
+// Module ID: 11884
+// Function ID: 11885
 // Name: AttachmentPreview
-// Dependencies: [19, 17, 21, 4896, 587, 11057, 11058, 11059, 11060, 11061, 11062, 11063, 11064, 11065, 11066, 11067, 11068, 11069, 11070, 558, 576, 7283, 4892, 1369, 5981, 1188, 8401, 7993, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 11885, 11886, 11887, 11888, 11889, 11890, 11891, 11892, 11893, 11894, 11895, 11896, 11897, 11898, 558, 576, 7737, 5086, 1381, 6164, 1200, 8899, 8401, 2]
 // Exports: default
 
-// Module 11056 (AttachmentPreview)
+// Module 11884 (AttachmentPreview)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import FileUtils from "FileUtils" /* 7283 */;
-import common_Video from "common/Video" /* 7993 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11057 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11058 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11059 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11060 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11061 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 11062 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 11063 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 11064 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 11065 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 11066 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 11067 */;
-import AssetRegistryDefault12 from "AssetRegistry" /* 11068 */;
-import AssetRegistryDefault13 from "AssetRegistry" /* 11069 */;
-import AssetRegistryDefault14 from "AssetRegistry" /* 11070 */;
+import native from "native" /* 1200 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import FileUtils from "FileUtils" /* 7737 */;
+import common_Video from "common/Video" /* 8401 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11885 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11886 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11887 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11888 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11889 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 11890 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 11891 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 11892 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 11893 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 11894 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 11895 */;
+import AssetRegistryDefault12 from "AssetRegistry" /* 11896 */;
+import AssetRegistryDefault13 from "AssetRegistry" /* 11897 */;
+import AssetRegistryDefault14 from "AssetRegistry" /* 11898 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ obj2 = { flexDirection: "row", alignItems: "center", overflow: "hidden", borderR
 let closure_8 = createStyles.createStyles(obj);
 let obj3 = { archive: AssetRegistryDefault, acrobat: AssetRegistryDefault2, ae: AssetRegistryDefault3, ai: AssetRegistryDefault4, audio: AssetRegistryDefault5, code: AssetRegistryDefault6, document: AssetRegistryDefault7, image: AssetRegistryDefault8, photoshop: AssetRegistryDefault9, sketch: AssetRegistryDefault10, spreadsheet: AssetRegistryDefault11, unknown: AssetRegistryDefault12, video: AssetRegistryDefault13, webcode: AssetRegistryDefault14 };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((fileName) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AttachmentIcon(fileName) {
   const obj = react2;
   const cResult = obj.c(3);
   let str = fileName.fileName;
@@ -73,7 +73,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((fileName) => {
   cResult[1] = tmp3.attachmentFileIcon;
   cResult[2] = tmp8;
   tmp7 = tmp8;
-}) : ((fileName) => {
+}) : (function AttachmentIcon(fileName) {
   fileName = fileName.fileName;
   const items = [fileName];
   const tmp = closure_8();
@@ -97,7 +97,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((fileName) => {
 });
 let closure_10 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((fileName) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function FilenameText(fileName) {
   let items;
   const obj = react2;
   const cResult = obj.c(21);
@@ -173,9 +173,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((fileName) => {
   let tmp13 = null != fileName && "" !== fileName;
   if (tmp13) {
     const obj4 = { style: tmp4.attachmentFileName, ellipsizeMode: "middle", lineClamp: 1, variant: "text-xs/medium", color: "mobile-text-heading-primary", children: fileName };
-    tmp13 = metroRequire(tmp(4892).Text, obj4);
+    tmp13 = metroRequire(tmp(5086).Text, obj4);
   }
-  const Text = tmp(4892).Text;
+  const Text = tmp(5086).Text;
   const attachmentFileName = tmp4.attachmentFileName;
   let str5 = "UNKNOWN";
   if (null != match) {
@@ -203,7 +203,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((fileName) => {
   tmp7 = attachmentFileName;
   tmp6 = tmp12;
   tmp5 = Text;
-}) : ((fileName) => {
+}) : (function FilenameText(fileName) {
   let str3;
   fileName = fileName.fileName;
   const tmp = closure_8();
@@ -240,7 +240,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((fileName) => {
   return tmp4(tmp5, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function DefaultAttachmentPreview(arg0) {
   let borderRadius;
   let fileName;
   let items;
@@ -304,7 +304,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = maxFileWidth;
   cResult[2] = obj5;
   tmp3 = obj5;
-}) : ((fileName) => {
+}) : (function DefaultAttachmentPreview(fileName) {
   let borderRadius;
   let items;
   let items1;
@@ -318,7 +318,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 const memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ImageThumbnail(arg0) {
   let borderRadius;
   let fileName;
   let height;
@@ -327,7 +327,7 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
   let uri;
   let width;
   const obj = react2;
-  const cResult = obj.c(34);
+  const cResult = obj.c(36);
   ({ uri, width, height, borderRadius, style, fileName } = arg0);
   if (cResult[0] === height) {
     if (cResult[1] === uri) {
@@ -371,34 +371,43 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
               }
               if (cResult[12] === style) {
                 let tmp22;
+                let tmp23;
                 if (cResult[13] === tmp5) {
                   tmp22 = cResult[14];
                 }
-                if (cResult[15] === tmp4) {
-                  let tmp23;
-                  if (cResult[16] === tmp22) {
-                    tmp23 = cResult[17];
-                  }
-                  if (cResult[18] === tmp21) {
-                    let tmp27;
-                    if (cResult[19] === tmp23) {
-                      tmp27 = cResult[20];
-                    }
-                    tmp15 = tmp27;
-                  }
-                  obj3 = { style: tmp21, children: tmp23 };
-                  const tmp30 = metroRequire(hasOwnProperty, obj3);
-                  cResult[18] = tmp21;
-                  cResult[19] = tmp23;
-                  cResult[20] = tmp30;
-                  tmp27 = tmp30;
+                if (cResult[15] !== uri) {
+                  obj3 = { uri };
+                  cResult[15] = uri;
+                  cResult[16] = obj3;
+                  tmp23 = obj3;
+                } else {
+                  tmp23 = cResult[16];
                 }
-                const obj5 = { style: tmp22, source: tmp4, resizeMode: "cover", enableAnimation: true };
-                const tmp26 = metroRequire(FastImageDefault, obj5);
-                cResult[15] = tmp4;
-                cResult[16] = tmp22;
-                cResult[17] = tmp26;
-                tmp23 = tmp26;
+                if (cResult[17] === tmp22) {
+                  let tmp24;
+                  if (cResult[18] === tmp23) {
+                    tmp24 = cResult[19];
+                  }
+                  if (cResult[20] === tmp21) {
+                    let tmp28;
+                    if (cResult[21] === tmp24) {
+                      tmp28 = cResult[22];
+                    }
+                    tmp15 = tmp28;
+                  }
+                  const obj5 = { style: tmp21, children: tmp24 };
+                  const tmp31 = metroRequire(hasOwnProperty, obj5);
+                  cResult[20] = tmp21;
+                  cResult[21] = tmp24;
+                  cResult[22] = tmp31;
+                  tmp28 = tmp31;
+                }
+                const obj6 = { style: tmp22, source: tmp23, resizeMode: "cover", enableAnimation: true };
+                const tmp27 = metroRequire(FastImageDefault, obj6);
+                cResult[17] = tmp22;
+                cResult[18] = tmp23;
+                cResult[19] = tmp27;
+                tmp24 = tmp27;
               }
               const items = [tmp5, style];
               cResult[12] = style;
@@ -413,57 +422,57 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
             tmp21 = items1;
           }
           const _Symbol = Symbol;
-          if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-            const obj6 = { overflow: "hidden" };
-            cResult[21] = obj6;
-            tmp9 = obj6;
+          if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
+            const obj7 = { overflow: "hidden" };
+            cResult[23] = obj7;
+            tmp9 = obj7;
           } else {
-            tmp9 = cResult[21];
+            tmp9 = cResult[23];
           }
-          if (cResult[22] === style) {
+          if (cResult[24] === style) {
             let tmp10;
-            if (cResult[23] === tmp5) {
-              tmp10 = cResult[24];
+            if (cResult[25] === tmp5) {
+              tmp10 = cResult[26];
             }
-            if (cResult[25] === style) {
+            if (cResult[27] === style) {
               let tmp11;
-              if (cResult[26] === tmp5) {
-                tmp11 = cResult[27];
+              if (cResult[28] === tmp5) {
+                tmp11 = cResult[29];
               }
-              if (cResult[28] === tmp4) {
+              if (cResult[30] === tmp4) {
                 let tmp12;
-                if (cResult[29] === tmp11) {
-                  tmp12 = cResult[30];
+                if (cResult[31] === tmp11) {
+                  tmp12 = cResult[32];
                 }
-                if (cResult[31] === tmp10) {
-                  if (cResult[32] === tmp12) {
-                    tmp15 = cResult[33];
+                if (cResult[33] === tmp10) {
+                  if (cResult[34] === tmp12) {
+                    tmp15 = cResult[35];
                   }
                 }
-                const obj7 = { style: tmp10, children: tmp12 };
-                const tmp18 = metroRequire(hasOwnProperty, obj7);
-                cResult[31] = tmp10;
-                cResult[32] = tmp12;
-                cResult[33] = tmp18;
+                const obj8 = { style: tmp10, children: tmp12 };
+                const tmp18 = metroRequire(hasOwnProperty, obj8);
+                cResult[33] = tmp10;
+                cResult[34] = tmp12;
+                cResult[35] = tmp18;
                 tmp15 = tmp18;
               }
-              const obj8 = { style: tmp11, source: tmp4, localImageSource: tmp4 };
-              const tmp14 = metroRequire(native.ThumbnailImage, obj8);
-              cResult[28] = tmp4;
-              cResult[29] = tmp11;
-              cResult[30] = tmp14;
+              const obj9 = { style: tmp11, source: tmp4, localImageSource: tmp4 };
+              const tmp14 = metroRequire(native.ThumbnailImage, obj9);
+              cResult[30] = tmp4;
+              cResult[31] = tmp11;
+              cResult[32] = tmp14;
               tmp12 = tmp14;
             }
             const items2 = [tmp5, style];
-            cResult[25] = style;
-            cResult[26] = tmp5;
-            cResult[27] = items2;
+            cResult[27] = style;
+            cResult[28] = tmp5;
+            cResult[29] = items2;
             tmp11 = items2;
           }
           const items3 = [tmp5, style, tmp9];
-          cResult[22] = style;
-          cResult[23] = tmp5;
-          cResult[24] = items3;
+          cResult[24] = style;
+          cResult[25] = tmp5;
+          cResult[26] = items3;
           tmp10 = items3;
         }
       }
@@ -481,12 +490,13 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
   cResult[2] = width;
   cResult[3] = size1;
   tmp4 = size1;
-}) : ((borderRadius) => {
+}) : (function ImageThumbnail(borderRadius) {
   let fileName;
   let height;
   let items;
   let items1;
   let items2;
+  let obj5;
   let style;
   let tmp10;
   let uri;
@@ -507,7 +517,7 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
       isIOSResult = uri.startsWith("ph://");
     }
     if (!isIOSResult) {
-      const tmp2Result = tmp2(1369);
+      const tmp2Result = tmp2(1381);
       isIOSResult = tmp2Result.isAndroid() && uri.startsWith("content://");
       const isAndroidResult = tmp2Result.isAndroid() && uri.startsWith("content://");
     }
@@ -517,14 +527,15 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
   items = [size1, style, { overflow: "hidden" }];
   const tmp7 = hasOwnProperty;
   if (isMatch) {
-    const obj2 = { style: items1, source: size, resizeMode: "cover", enableAnimation: true };
+    const obj2 = { style: items1, source: obj5, resizeMode: "cover", enableAnimation: true };
     items1 = [size1, style];
+    obj5 = { uri };
     obj.children = metroRequire(FastImageDefault, obj2);
     tmp10 = obj;
   } else {
-    const obj5 = { style: items2, source: size, localImageSource: size };
+    const obj6 = { style: items2, source: size, localImageSource: size };
     items2 = [size1, style];
-    obj.children = metroRequire(native.ThumbnailImage, obj5);
+    obj.children = metroRequire(native.ThumbnailImage, obj6);
     tmp10 = obj;
   }
   return metroRequire(tmp7, tmp10);
@@ -598,7 +609,7 @@ export default function AttachmentPreview(isImage) {
       const size2 = { uri, width, height: num, borderRadius, style, fileName };
       const obj7 = { style, children: items };
       items = [metroRequire(closure_13, size2), ];
-      const obj8 = { style: tmp5.videoIcon, children: metroRequire(tmp8(8401).CirclePlayIcon, { size: "md", color: "white", secondaryColor: "black" }) };
+      const obj8 = { style: tmp5.videoIcon, children: metroRequire(tmp8(8899).CirclePlayIcon, { size: "md", color: "white", secondaryColor: "black" }) };
       items[1] = metroRequire(hasOwnProperty, obj8);
       tmp16 = metroImportDefault(hasOwnProperty, obj7);
     } else {

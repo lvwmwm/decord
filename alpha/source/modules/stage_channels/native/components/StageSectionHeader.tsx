@@ -1,17 +1,17 @@
-// Module ID: 9750
-// Function ID: 9751
+// Module ID: 10951
+// Function ID: 10952
 // Name: StageSectionHeader
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4618, 4897, 4892, 1188, 6660, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 4810, 5091, 5086, 1200, 6837, 2]
 
-// Module 9750 (StageSectionHeader)
+// Module 10951 (StageSectionHeader)
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6660 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6837 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ obj3 = { height: 48, flex: 1, flexDirection: "row", alignItems: "center", border
 let closure_7 = createStyles(obj);
 const __initData = { code: "function StageSectionHeaderTsx1(){const{withTiming,collapsed}=this.__closure;return{transform:[{rotate:withTiming(collapsed?\"180deg\":\"0deg\",{duration:150})}]};}" };
 const __initData2 = { code: "function StageSectionHeaderTsx2(){const{withTiming,collapsed}=this.__closure;return{transform:[{rotate:withTiming(collapsed?'180deg':'0deg',{duration:150})}]};}" };
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageSectionHeader(arg0) {
   let children;
   let collapsed;
   let count;
@@ -47,7 +47,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ label, count, collapsed } = arg0);
   ({ onToggleCollapse, children } = arg0);
   const tmp4 = closure_7();
-  const obj2 = collapsed(4618);
+  const obj2 = collapsed(4810);
   const fn = function n() {
     let items;
     let str = "0deg";
@@ -61,10 +61,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     ({ rotate: withTiming(str, { duration: 150 }) });
     return obj;
   };
-  fn.__closure = { withTiming: collapsed(4897).withTiming, collapsed };
+  fn.__closure = { withTiming: collapsed(5091).withTiming, collapsed };
   fn.__workletHash = 8513320305499;
   fn.__initData = __initData;
-  ({ withTiming: collapsed(4897).withTiming, collapsed });
+  ({ withTiming: collapsed(5091).withTiming, collapsed });
   const animatedStyle = obj2.useAnimatedStyle(fn);
   if (cResult[0] === count) {
     let tmp6;
@@ -79,7 +79,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[6] !== tmp4.collapseIcon) {
         const obj4 = { source: AssetRegistryDefault, style: tmp4.collapseIcon };
-        const Icon = tmp(1188).Icon;
+        const Icon = tmp(1200).Icon;
         const tmp16 = closure_6(Icon, obj4);
         cResult[6] = tmp4.collapseIcon;
         cResult[7] = tmp16;
@@ -159,12 +159,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const obj10 = { variant: "text-md/semibold", color: "text-overlay-light", accessibilityRole: "header", children: items1 };
   items1 = [label, " \u2014 ", count];
-  const tmp7 = closure_5(tmp(4892).Text, obj10);
+  const tmp7 = closure_5(tmp(5086).Text, obj10);
   cResult[0] = count;
   cResult[1] = label;
   cResult[2] = tmp7;
   tmp6 = tmp7;
-}) : ((collapsed) => {
+}) : (function StageSectionHeader(collapsed) {
   let Icon;
   let View;
   let count;
@@ -181,7 +181,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const children = collapsed.children;
   ({ label, count, onToggleCollapse } = collapsed);
   const tmp = closure_7();
-  let obj = collapsed(4618);
+  let obj = collapsed(4810);
   const tmp2 = collapsed;
   class T {
     constructor() {
@@ -199,7 +199,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return obj;
     }
   }
-  const obj2 = { withTiming: collapsed(4897).withTiming, collapsed };
+  const obj2 = { withTiming: collapsed(5091).withTiming, collapsed };
   T.__closure = obj2;
   T.__workletHash = 13209446315864;
   T.__initData = __initData2;
@@ -208,7 +208,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const animatedStyle = obj.useAnimatedStyle(T);
   const obj5 = { variant: "text-md/semibold", color: "text-overlay-light", accessibilityRole: "header", children: items };
   items = [label, " \u2014 ", count];
-  items1 = [closure_5(collapsed(4892).Text, obj5), , ];
+  items1 = [closure_5(collapsed(5086).Text, obj5), , ];
   let tmp5Result = null != children;
   tmp7 = closure_5;
   tmp8 = closure_3;
@@ -221,7 +221,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj8 = { style: animatedStyle, children: closure_6(Icon, obj9) };
   View = ReanimatedRexportDefault.View;
   obj9 = { source: AssetRegistryDefault, style: tmp.collapseIcon };
-  Icon = tmp2(1188).Icon;
+  Icon = tmp2(1200).Icon;
   items1[2] = closure_6(closure_4, obj7);
   return closure_6(closure_4, obj3);
 });

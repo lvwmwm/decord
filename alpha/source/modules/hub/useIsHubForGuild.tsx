@@ -1,11 +1,11 @@
-// Module ID: 12025
-// Function ID: 12026
+// Module ID: 12098
+// Function ID: 12099
 // Name: useIsHubForGuild
-// Dependencies: [2074, 1085, 558, 576, 504, 2]
+// Dependencies: [2086, 1085, 558, 576, 504, 2]
 
-// Module 12025 (useIsHubForGuild)
+// Module 12098 (useIsHubForGuild)
 import Constants from "Constants" /* 1085 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 let _require;
 
 const GuildFeatures = Constants.GuildFeatures;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsHubForGuild(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -58,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useIsHubForGuild(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildStore];

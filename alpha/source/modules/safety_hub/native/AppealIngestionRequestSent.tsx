@@ -1,16 +1,16 @@
-// Module ID: 11530
-// Function ID: 11531
+// Module ID: 11528
+// Function ID: 11529
 // Name: AppealIngestionRequestSent
-// Dependencies: [19, 17, 8126, 21, 4896, 558, 576, 11513, 1126, 11531, 11511, 4892, 11525, 2]
+// Dependencies: [19, 17, 5921, 21, 5090, 558, 576, 11505, 1126, 11529, 11503, 5086, 11523, 2]
 
-// Module 11530 (AppealIngestionRequestSent)
-import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 11525 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11531 */;
+// Module 11528 (AppealIngestionRequestSent)
+import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 11523 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11529 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8126 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 5921 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let metroRequire;
 ({ SafetyHubAnalyticsActions: hasOwnProperty, SafetyHubLinks: metroRequire } = SafetyHubConstants);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = createStyles.createStyles({ container: { flex: 1, padding: 8 }, actionsHeader: { marginTop: 31, marginBottom: 16 }, checkboxPng: { width: 86, height: 78.33, marginLeft: -2, alignSelf: "center" } });
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngestionRequestSent() {
   let emitAppealIngestionEvent;
   let first;
   let items;
@@ -43,7 +43,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp8;
   const obj = emitAppealIngestionEvent(576);
   const cResult = obj.c(20);
-  const obj2 = emitAppealIngestionEvent(11513);
+  const obj2 = emitAppealIngestionEvent(11505);
   emitAppealIngestionEvent = obj2.useEmitAppealIngestionEvent();
   const tmp5 = closure_9();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -74,7 +74,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { headerText: first, subHeaderText: tmp8 };
-    const tmp17 = closure_7(emitAppealIngestionEvent(11511).AppealIngestionModalHeader, obj4);
+    const tmp17 = closure_7(emitAppealIngestionEvent(11503).AppealIngestionModalHeader, obj4);
     cResult[4] = tmp17;
     tmp15 = tmp17;
   } else {
@@ -91,7 +91,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[6] !== tmp5.actionsHeader) {
     const obj5 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", style: actionsHeader, children: tmp18 };
-    const tmp22 = closure_7(emitAppealIngestionEvent(4892).Text, obj5);
+    const tmp22 = closure_7(emitAppealIngestionEvent(5086).Text, obj5);
     cResult[6] = tmp5.actionsHeader;
     cResult[7] = tmp22;
     tmp20 = tmp22;
@@ -160,7 +160,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj8 = { children: closure_8(closure_3, obj9) };
   obj9 = { style: container, children: items };
   items = [tmp10, tmp15, tmp20, tmp25, tmp32];
-  const AppealIngestionModalScreen = tmp(11511).AppealIngestionModalScreen;
+  const AppealIngestionModalScreen = tmp(11503).AppealIngestionModalScreen;
   const tmp38 = closure_7(AppealIngestionModalScreen, obj8);
   cResult[14] = tmp5.container;
   cResult[15] = tmp32;
@@ -169,7 +169,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[18] = tmp25;
   cResult[19] = tmp38;
   tmp37 = tmp38;
-}) : (() => {
+}) : (function AppealIngestionRequestSent() {
   let closure_0;
   let intl3;
   let intl4;

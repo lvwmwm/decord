@@ -1,30 +1,30 @@
-// Module ID: 8840
-// Function ID: 8841
+// Module ID: 9199
+// Function ID: 9200
 // Name: ThreadCreationHooks
-// Dependencies: [32, 5, 19, 6818, 502, 2051, 7044, 5116, 7184, 1125, 1085, 4889, 558, 6782, 7179, 6787, 576, 1126, 8841, 11, 1282, 7416, 8842, 7181, 1390, 7256, 8844, 7276, 5076, 6978, 5714, 584, 4735, 1102, 7262, 8945, 2]
+// Dependencies: [32, 5, 19, 6991, 502, 2063, 7232, 5428, 7363, 1125, 1085, 5083, 558, 6958, 7358, 6962, 576, 1126, 9200, 11, 1294, 7891, 9201, 7360, 1402, 7732, 9203, 7876, 5105, 7167, 5297, 584, 4929, 1102, 9758, 12874, 2]
 // Exports: createThread
 
-// Module 8840 (ThreadCreationHooks)
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import MessageConstants from "MessageConstants" /* 4889 */;
-import ThreadHooks from "ThreadHooks" /* 6782 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6978 */;
-import DraftStore from "DraftStore" /* 7044 */;
-import MessageParserDefault from "MessageParser" /* 7179 */;
-import SlowmodeStore from "SlowmodeStore" /* 7184 */;
+// Module 9199 (ThreadCreationHooks)
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import MessageConstants from "MessageConstants" /* 5083 */;
+import ThreadHooks from "ThreadHooks" /* 6958 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7167 */;
+import DraftStore from "DraftStore" /* 7232 */;
+import MessageParserDefault from "MessageParser" /* 7358 */;
+import SlowmodeStore from "SlowmodeStore" /* 7363 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 6818 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 6991 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import MessageStore from "MessageStore" /* 5116 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import MessageStore from "MessageStore" /* 5428 */;
 import ThreadConstants from "ThreadConstants" /* 1125 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let andDeleteMostRecentUserCreatedThreadId, c3, c4, getChannel, guildId, parentChannel;
+let andDeleteMostRecentUserCreatedThreadId, c3, c4, getChannel, guildId;
 
 let closure_12;
 let closure_14;
@@ -105,7 +105,7 @@ function getDefaultThreadName(stateFromStores, parentMessageId) {
       str3 = "";
     }
     const str4 = unparse(str3, stateFromStores.id, true);
-    const tmp17Result = tmp17(6787);
+    const tmp17Result = tmp17(6962);
     const str6 = tmp17Result(str4.split("\n")[0], true);
     let str7 = str6.replace(/^[ #-]+/, "");
     const items = [];
@@ -570,7 +570,7 @@ const SlowmodeType = SlowmodeStore.SlowmodeType;
 const MessageSendLocation = MessageConstants.MessageSendLocation;
 obj = { Disabled: 1, [1]: "Disabled", Enabled: 2, [2]: "Enabled", PrivateOnly: 3, [3]: "PrivateOnly" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivateThreadMode(arg0) {
   let Disabled;
   obj = ThreadHooks;
   const canStartPublicThread = obj.useCanStartPublicThread(arg0);
@@ -581,7 +581,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     Disabled = tmp2.Disabled;
   }
   return Disabled;
-}) : ((arg0) => {
+}) : (function usePrivateThreadMode(arg0) {
   let Disabled;
   obj = ThreadHooks;
   const canStartPublicThread = obj.useCanStartPublicThread(arg0);
@@ -594,7 +594,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return Disabled;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateThreadCommon(parentChannel) {
   let threadSettings;
   let uploadHandler;
   obj = parentChannel(threadSettings[16]);
@@ -751,9 +751,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => 
       }
     })();
   });
-  const fn = function() {
+  function t1() {
     return closure_0(...arguments);
-  };
+  }
   cResult[0] = _location;
   cResult[1] = onThreadCreated;
   cResult[2] = parentChannel;
@@ -762,9 +762,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => 
   cResult[5] = threadSettings;
   cResult[6] = parentChannel.uploadHandler;
   cResult[7] = useDefaultThreadName;
-  cResult[8] = fn;
-  tmp2 = fn;
-}) : ((parentChannel) => {
+  cResult[8] = t1;
+  tmp2 = t1;
+}) : (function useCreateThreadCommon(parentChannel) {
   parentChannel = parentChannel.parentChannel;
   const parentMessageId = parentChannel.parentMessageId;
   const threadSettings = parentChannel.threadSettings;
@@ -906,7 +906,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => 
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateForumPostCommon(parentChannel) {
   let appliedTags;
   obj = parentChannel(appliedTags[16]);
   const cResult = obj.c(10);
@@ -1158,9 +1158,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => {
       }
     })();
   });
-  const fn = function() {
+  function t1() {
     return closure_0(...arguments);
-  };
+  }
   cResult[0] = activityAction;
   cResult[1] = analyticsLocations;
   cResult[2] = applicationId;
@@ -1170,9 +1170,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => {
   cResult[6] = parentChannel;
   cResult[7] = upload;
   cResult[8] = voiceChatEnabled;
-  cResult[9] = fn;
-  tmp2 = fn;
-}) : ((parentChannel) => {
+  cResult[9] = t1;
+  tmp2 = t1;
+}) : (function useCreateForumPostCommon(parentChannel) {
   parentChannel = parentChannel.parentChannel;
   const name = parentChannel.name;
   const appliedTags = parentChannel.appliedTags;

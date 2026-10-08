@@ -1,23 +1,21 @@
-// Module ID: 16918
-// Function ID: 16919
+// Module ID: 17199
+// Function ID: 17200
 // Name: ThreadListEmpty
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1188, 11881, 1126, 4892, 5601, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1200, 11953, 1126, 5086, 5375, 2]
 
-// Module 16918 (ThreadListEmpty)
+// Module 17199 (ThreadListEmpty)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11881 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11953 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let onCreateThreadPress;
 
 let closure_4;
 let hasOwnProperty;
@@ -28,7 +26,7 @@ let obj = { container: { flex: 1, justifyContent: "center", alignItems: "center"
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: nativeDefault.radii.round, padding: 12 };
 let closure_6 = createStyles.createStyles(obj);
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onCreateThreadPress) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadListEmpty(onCreateThreadPress) {
   let first;
   let intl3;
   let items;
@@ -45,7 +43,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onCreat
   const container = tmp4.container;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { source: AssetRegistryDefault, size: native.Icon.Sizes.MEDIUM };
-    const Icon = tmp(1188).Icon;
+    const Icon = tmp(1200).Icon;
     const tmp8 = React3(Icon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -101,7 +99,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onCreat
     let tmp25 = null != onCreateThreadPress;
     if (tmp25) {
       const obj6 = { onPress: onCreateThreadPress, text: intl3.string(intl4.t.rBIGBL) };
-      const Button = tmp(5601).Button;
+      const Button = tmp(5375).Button;
       intl3 = tmp(1126).intl;
       tmp25 = React3(Button, obj6);
     }
@@ -134,7 +132,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onCreat
   cResult[15] = tmp20;
   cResult[16] = tmp28;
   tmp27 = tmp28;
-}) : ((onCreateThreadPress) => {
+}) : (function ThreadListEmpty(onCreateThreadPress) {
   let Icon;
   let intl;
   let intl2;
@@ -162,7 +160,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onCreat
   const tmp4 = React3;
   if (tmp4Result) {
     const obj6 = { onPress: onCreateThreadPress, text: intl3.string(intl4.t.rBIGBL) };
-    const Button = tmp5(5601).Button;
+    const Button = tmp5(5375).Button;
     intl3 = tmp5(1126).intl;
     tmp4Result = tmp4(Button, obj6);
   }

@@ -1,19 +1,19 @@
-// Module ID: 10909
-// Function ID: 10910
+// Module ID: 10560
+// Function ID: 10561
 // Name: useShowBadgePersonalizationNotice
-// Dependencies: [6091, 1085, 558, 576, 504, 10902, 2]
+// Dependencies: [5938, 1085, 558, 576, 504, 10553, 2]
 
-// Module 10909 (useShowBadgePersonalizationNotice)
+// Module 10560 (useShowBadgePersonalizationNotice)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import BadgeUtils from "BadgeUtils" /* 10902 */;
-import ConsentStore from "ConsentStore" /* 6091 */;
+import BadgeUtils from "BadgeUtils" /* 10553 */;
+import ConsentStore from "ConsentStore" /* 5938 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const Consents = Constants.Consents;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowBadgePersonalizationNotice(arg0) {
   let badge;
   let isViewingOtherUser;
   let tmp4;
@@ -51,7 +51,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = isViewingOtherUser;
   cResult[5] = tmp9;
   tmp8 = tmp9;
-}) : ((arg0) => {
+}) : (function useShowBadgePersonalizationNotice(arg0) {
   let badge;
   let isViewingOtherUser;
   ({ badge, isViewingOtherUser } = arg0);

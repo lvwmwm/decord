@@ -1,12 +1,12 @@
-// Module ID: 10683
-// Function ID: 10684
+// Module ID: 10271
+// Function ID: 10272
 // Name: LobbyUtils
-// Dependencies: [4515, 1085, 558, 576, 504, 2]
+// Dependencies: [4707, 1085, 558, 576, 504, 2]
 // Exports: canUnlinkLobbyChannel
 
-// Module 10683 (LobbyUtils)
+// Module 10271 (LobbyUtils)
 import Constants from "Constants" /* 1085 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require;
 
 const Permissions = Constants.Permissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanUnlinkLobbyChannel(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -30,7 +30,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function t() {
+    const fn = function b() {
       if (PermissionStore !== undefined) {
         let tmp3 = null != tmp;
         if (tmp3) {
@@ -48,7 +48,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useCanUnlinkLobbyChannel(arg0) {
   let closure_0;
   _require = arg0;
   const obj = require("get initialized");

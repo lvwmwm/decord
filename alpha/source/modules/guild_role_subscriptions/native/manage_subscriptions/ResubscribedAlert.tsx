@@ -1,24 +1,22 @@
-// Module ID: 15051
-// Function ID: 15052
+// Module ID: 15313
+// Function ID: 15314
 // Name: ResubscribedAlert
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1126, 15052, 1188, 4892, 5790, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1126, 15314, 1200, 5086, 5394, 2]
 
-// Module 15051 (ResubscribedAlert)
+// Module 15313 (ResubscribedAlert)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import AlertDefault from "Alert" /* 5790 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15052 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import AlertDefault from "Alert" /* 5394 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15314 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let onClose;
 
 let c3;
 let closure_4;
@@ -30,7 +28,7 @@ let obj2;
 let obj = { container: obj2, body: { alignItems: "center", textAlign: "center" }, centerText: { textAlign: "center" }, headerImage: { width: 87, height: 87 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
 let closure_7 = createStyles.createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ResubscribedAlert(onClose) {
   let body;
   let container;
   let first;
@@ -149,7 +147,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   cResult[14] = tmp17;
   cResult[15] = tmp29;
   tmp28 = tmp29;
-}) : ((onClose) => {
+}) : (function ResubscribedAlert(onClose) {
   let intl;
   let intl2;
   let intl3;

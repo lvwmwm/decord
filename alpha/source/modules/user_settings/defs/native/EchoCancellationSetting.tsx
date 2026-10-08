@@ -1,22 +1,22 @@
-// Module ID: 15090
-// Function ID: 15091
+// Module ID: 15352
+// Function ID: 15353
 // Name: EchoCancellationSetting
-// Dependencies: [1999, 7645, 558, 576, 504, 11142, 1126, 9686, 2]
+// Dependencies: [2011, 7966, 558, 576, 504, 11262, 1126, 10875, 2]
 
-// Module 15090 (EchoCancellationSetting)
+// Module 15352 (EchoCancellationSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 9686 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 10875 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEchoCancellationSettingValue() {
   let echoCancellation;
   let tmp4;
   let tmp5;
@@ -24,7 +24,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [MediaEngineStore];
-    const fn = function o() {
+    const fn = function l() {
       return echoCancellation.getEchoCancellation();
     };
     cResult[0] = items;
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useEchoCancellationSettingValue() {
   let echoCancellation;
   const items = [MediaEngineStore];
   const obj = get_initialized;

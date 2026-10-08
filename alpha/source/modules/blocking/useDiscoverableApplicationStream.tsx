@@ -1,12 +1,12 @@
-// Module ID: 10624
-// Function ID: 10625
+// Module ID: 10222
+// Function ID: 10223
 // Name: useDiscoverableApplicationStream
-// Dependencies: [4918, 4525, 1085, 558, 576, 504, 2]
+// Dependencies: [5893, 4717, 1085, 558, 576, 504, 2]
 
-// Module 10624 (useDiscoverableApplicationStream)
+// Module 10222 (useDiscoverableApplicationStream)
 import Constants from "Constants" /* 1085 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4918 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5893 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ function getDiscoverableApplicationStream(userId, items) {
   return tmp6;
 }
 const RelationshipTypes = Constants.RelationshipTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiscoverableApplicationStream(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -75,7 +75,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : ((arg0) => {
+}) : (function useDiscoverableApplicationStream(arg0) {
   let closure_0;
   _require = arg0;
   let items = [ApplicationStreamingStore, RelationshipStore];

@@ -1,29 +1,29 @@
-// Module ID: 15384
-// Function ID: 15385
+// Module ID: 15646
+// Function ID: 15647
 // Name: ChangeLogModal
-// Dependencies: [19, 17, 1085, 2102, 21, 4896, 587, 4595, 1252, 7944, 15385, 5981, 7993, 1126, 5916, 9455, 10136, 1188, 7774, 558, 576, 1484, 7775, 1491, 6017, 4467, 7776, 4892, 5099, 6503, 2]
+// Dependencies: [19, 17, 1085, 2114, 21, 5090, 587, 4787, 1264, 8362, 15647, 6164, 8401, 1126, 6189, 7013, 9721, 1200, 8095, 558, 576, 1496, 8096, 1503, 6203, 4659, 8097, 5086, 5940, 6679, 2]
 
-// Module 15384 (ChangeLogModal)
+// Module 15646 (ChangeLogModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import ChangelogConstants from "ChangelogConstants" /* 2102 */;
-import native from "native" /* 4595 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 6017 */;
-import Navigator from "Navigator" /* 6503 */;
-import ChangeLogStandardTemplateDefault from "ChangeLogStandardTemplate" /* 7774 */;
-import openMediaModal2 from "openMediaModal" /* 7944 */;
-import common_VideoDefault from "common/Video" /* 7993 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9455 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10136 */;
-import _modDef15385 from "module_15385" /* 15385 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import ChangelogConstants from "ChangelogConstants" /* 2114 */;
+import native from "native" /* 4787 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 6203 */;
+import Navigator from "Navigator" /* 6679 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 7013 */;
+import ChangeLogStandardTemplateDefault from "ChangeLogStandardTemplate" /* 8095 */;
+import openMediaModal2 from "openMediaModal" /* 8362 */;
+import common_VideoDefault from "common/Video" /* 8401 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9721 */;
+import _modDef15647 from "module_15647" /* 15647 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -199,7 +199,7 @@ class ChangeLog extends PureComponent2 {
               },
           useLocalHTML: true
         };
-        items = [closure_7(_modDef15385, obj4), ];
+        items = [closure_7(_modDef15647, obj4), ];
         let tmp6Result = null;
         const tmp4 = closure_8;
         const tmp5 = View;
@@ -209,7 +209,7 @@ class ChangeLog extends PureComponent2 {
           const obj5 = { style: tmp.videoOverlay, source: obj6 };
           const _HermesInternal = HermesInternal;
           obj6 = { uri: "https://i.ytimg.com/vi/" + youtube_video_id + "/hqdefault.jpg" };
-          const tmp7Result = tmp7(5981);
+          const tmp7Result = tmp7(6164);
           tmp6Result = tmp6(tmp7Result, obj5);
         }
         items[1] = tmp6Result;
@@ -241,8 +241,8 @@ class ChangeLog extends PureComponent2 {
     tmp14 = closure_8;
     if (null != video) {
       const obj9 = { accessibilityLabel: "Play Video", accessibilityRole: "button", style: tmp.videoOverlay, onPress: self.playVideo, children: closure_7(tmp15Result, obj10) };
-      const PressableOpacity = tmp18(5916).PressableOpacity;
-      obj10 = { accessibilityLabel: "Play Video", accessibilityRole: "button", source: AssetRegistryDefault, onPress: self.playVideo, style: tmp.playButton, iconSize: self(1188).IconSizes.CUSTOM, iconStyle: tmp.playIcon };
+      const PressableOpacity = tmp18(6189).PressableOpacity;
+      obj10 = { accessibilityLabel: "Play Video", accessibilityRole: "button", source: AssetRegistryDefault, onPress: self.playVideo, style: tmp.playButton, iconSize: self(1200).IconSizes.CUSTOM, iconStyle: tmp.playIcon };
       tmp15Result = TouchableHitBoxDefault;
       tmp12Result = tmp12(PressableOpacity, obj9);
     }
@@ -259,7 +259,7 @@ class ChangeLog extends PureComponent2 {
 const prototype2 = ChangeLog.prototype;
 ChangeLog.contextType = native.ThemeContext;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoDimensions() {
   const obj = react2;
   const cResult = obj.c(3);
   size = useWindowDimensionsDefault();
@@ -283,7 +283,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = diff;
   cResult[2] = size1;
   tmp7 = size1;
-}) : (() => {
+}) : (function useVideoDimensions() {
   size = useWindowDimensionsDefault();
   let diff = size.width - 36;
   const result = diff * c9;
@@ -296,7 +296,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return size1;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeLogScreen(onClose) {
   let changelog;
   let height;
   let intl;
@@ -502,7 +502,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   cResult[5] = items1;
   tmp10 = items1;
   tmp9 = fn2;
-}) : ((onClose) => {
+}) : (function ChangeLogScreen(onClose) {
   let Text2;
   let height;
   let intl2;
@@ -606,7 +606,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
 });
 let closure_14 = tmp6;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangelogModal() {
   let first;
   let obj3;
   let onClose;
@@ -639,7 +639,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp6 = cResult[1];
   }
   return tmp6;
-}) : (() => {
+}) : (function ChangelogModal() {
   const screens = react.useMemo(() => {
     let obj2;
     let obj3;

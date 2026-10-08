@@ -1,17 +1,17 @@
-// Module ID: 9931
-// Function ID: 9932
+// Module ID: 9453
+// Function ID: 9454
 // Name: PremiumExpressionPickerSearchUpsell
-// Dependencies: [19, 17, 21, 587, 4896, 558, 576, 4892, 5916, 2]
+// Dependencies: [19, 17, 21, 587, 5090, 558, 576, 5086, 6189, 2]
 
-// Module 9931 (PremiumExpressionPickerSearchUpsell)
+// Module 9453 (PremiumExpressionPickerSearchUpsell)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Pressables from "Pressables" /* 5916 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Pressables from "Pressables" /* 6189 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ obj2 = { paddingTop: nativeDefault.space.PX_8 };
 createStyles = createStyles.createStyles;
 obj3 = { height: 56, padding: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, flexDirection: "row", justifyContent: "space-between", alignItems: "center", alignContent: "center" };
 let closure_5 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumExpressionPickerSearchUpsell(arg0) {
   let body;
   let ctaText;
   let icon;
@@ -111,7 +111,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = tmp5;
   cResult[5] = tmp9;
   tmp8 = tmp9;
-}) : ((arg0) => {
+}) : (function PremiumExpressionPickerSearchUpsell(arg0) {
   let PressableOpacity;
   let body;
   let ctaText;

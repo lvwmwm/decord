@@ -1,24 +1,23 @@
-// Module ID: 2042
-// Function ID: 2043
+// Module ID: 2055
+// Function ID: 2056
 // Name: DismissibleContentShownStateStore
-// Dependencies: [5, 2043, 2044, 2045, 1085, 569, 1254, 2040, 1282, 2046, 1259, 558, 576, 504, 2047, 584, 2]
+// Dependencies: [5, 2056, 2057, 1085, 569, 1266, 2052, 1294, 2058, 1271, 558, 576, 504, 2059, 584, 2]
 // Exports: addCandidateContent, default, getCurrentFatigableWinner, getCurrentlyShownCounts, getLastShownDismissibleContent, isAnyContentShown, isContentShown, isPostConnectionOpen, isStateInCooldown, removeCandidateContent, reset, resetFatigueCooldown
 
-// Module 2042 (DismissibleContentShownStateStore)
+// Module 2055 (DismissibleContentShownStateStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 569 */;
 import react from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import react_native from "react-native" /* 1259 */;
-import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 2040 */;
-import DismissibleContentServerArbitrationConstants from "DismissibleContentServerArbitrationConstants" /* 2045 */;
-import Timers from "Timers" /* 2046 */;
-import isActionRequiredDefault from "isActionRequired" /* 2047 */;
+import react_native from "react-native" /* 1271 */;
+import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 2052 */;
+import Timers from "Timers" /* 2058 */;
+import isActionRequiredDefault from "isActionRequired" /* 2059 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2043 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2044 */;
+import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2056 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2057 */;
 import Constants from "Constants" /* 1085 */;
-import module_1254 from "module_1254" /* 1254 */;
+import module_1266 from "module_1266" /* 1266 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,14 +26,14 @@ let body, closure_3, closure_4, context, dependencyMap;
 
 let metroImportDefault;
 let metroRequire;
-const f85812 = (item) => {
+const f86689 = (item) => {
   content = undefined;
   if (content != null) {
     content = content.content;
   }
   return item !== content;
 };
-const f85814 = () => {
+const f86691 = () => {
   state.setState(() => {
     obj = { candidates: new Map(), shownFatigableCandidate: null, prevFatigableCandidate: null, recentlyShown: [], currentlyShown: new Set(), currentlyShownGroup: new Set(), lastWinnerTime: 0, postConnectionOpen: true };
     new Map();
@@ -148,25 +147,34 @@ let obj = function _arbitrateCandidates() {
               return { value, done: true };
             } else {
               body = undefined;
-              found = context.filter((item) => set.has(item));
-              const tmp28 = addWeightsToClientCandidates(context.filter((item) => !set.has(item)));
+              found = context.filter(require("DismissibleContentFatigueConfig").isServerArbitrated);
+              const tmp28 = addWeightsToClientCandidates(context.filter((item) => {
+                obj = context(candidates[6]);
+                return !obj.isServerArbitrated(item);
+              }));
               candidates = tmp28;
-              if (0 === found.length) {
+              let HTTP = found.length;
+              const tmp26 = _require;
+              const tmp27 = dependencyMap;
+              if (0 === HTTP) {
                 c5 = 3;
                 return { value: { context, candidates: tmp28, outcome: "client-only" }, done: true };
-              } else if (pending.pending) {
-                c5 = 3;
-                return { value: { context, candidates: tmp28, outcome: "server-backoff" }, done: true };
               } else {
-                c4 = 1;
-                const HTTP = require("HTTPUtils").HTTP;
-                const request = { url: constants.DISMISSIBLE_CONTENT_ARBITRATE, body: obj8, oldFormErrors: true, rejectWithError: true };
-                const post = HTTP.post;
-                c3 = 2;
-                c5 = 1;
-                obj8 = { candidates: found.map((content) => ({ content })) };
-                const obj9 = { value: post(request), done: false };
-                return obj9;
+                HTTP = pending.pending;
+                if (HTTP) {
+                  c5 = 3;
+                  return { value: { context, candidates: tmp28, outcome: "server-backoff" }, done: true };
+                } else {
+                  c4 = 1;
+                  HTTP = tmp26(tmp27[7]).HTTP;
+                  const request = { url: constants.DISMISSIBLE_CONTENT_ARBITRATE, body: obj8, oldFormErrors: true, rejectWithError: true };
+                  const post = HTTP.post;
+                  c3 = 2;
+                  c5 = 1;
+                  obj8 = { candidates: found.map((content) => ({ content })) };
+                  const obj9 = { value: post(request), done: false };
+                  return obj9;
+                }
               }
             }
           } else if (1 === tmp4) {
@@ -189,12 +197,13 @@ let obj = function _arbitrateCandidates() {
             HermesBuiltin.arraySpread(items, candidates, HermesBuiltin.arraySpread(items, candidates, 0));
             c4 = 0;
             c5 = 3;
-            return { value: obj13, done: true };
+            obj = { value: obj13, done: true };
+            return obj;
           }
-        } catch (tmp11) {
+        } catch (tmp9) {
           if (0 === c4) {
             c5 = 3;
-            throw tmp11;
+            throw tmp9;
           } else {
             c3 = 1;
           }
@@ -252,7 +261,7 @@ function withUpdateWinner(candidates, arg1) {
           const items1 = [];
           HermesBuiltin.arraySpread(items1, candidates3.keys(), 0);
           const shownFatigableCandidate = candidates.shownFatigableCandidate;
-          const found = items1.filter(f85812);
+          const found = items1.filter(f86689);
           const tmp9 = withContent;
           if (null != shownFatigableCandidate) {
             if (null != shownFatigableCandidate.content) {
@@ -328,22 +337,22 @@ function applyWinnerUpdateResult(c2, c3) {
     flag = false;
   }
   if ("settled" === c2.arbitration.type) {
-    closure_10 = {};
-    c11 = null;
-    closure_9.succeed();
+    closure_9 = {};
+    c10 = null;
+    closure_8.succeed();
     batchInvocationManager.reset();
   } else if (flag) {
-    closure_9.succeed();
+    closure_8.succeed();
   }
   if ("request" === c2.arbitration.type) {
     const isPendingResult = batchInvocationManager.isPending();
-    const tmp8 = !isPendingResult && !obj2.isInvoking() && closure_9.fails >= 3;
+    const tmp8 = !isPendingResult && !obj2.isInvoking() && closure_8.fails >= 3;
     if (tmp8) {
-      closure_9.succeed();
+      closure_8.succeed();
     }
-    if (closure_10 === closure_10) {
+    if (closure_9 === closure_9) {
       if (!batchInvocationManager.isPending()) {
-        c11 = { epoch: tmp13, source: "candidate" };
+        c10 = { epoch: tmp13, source: "candidate" };
         obj = { epoch: tmp13, source: "candidate" };
       }
       const queueResult = batchInvocationManager.queue(tmp12);
@@ -352,42 +361,40 @@ function applyWinnerUpdateResult(c2, c3) {
   }
 }
 function invalidateArbitration() {
-  closure_10 = {};
-  c11 = null;
-  closure_9.succeed();
+  closure_9 = {};
+  c10 = null;
+  closure_8.succeed();
   batchInvocationManager.reset();
 }
 function isInCooldown() {
-  const state = closure_12.getState();
+  const state = closure_11.getState();
   new Date();
   return null == state.shownFatigableCandidate && tmp3 - state.lastWinnerTime < 3600000;
 }
-const SERVER_ARBITRATION_CANDIDATES = DismissibleContentServerArbitrationConstants.SERVER_ARBITRATION_CANDIDATES;
 ({ Endpoints: metroRequire, NOOP: metroImportDefault } = Constants);
-const set = new Set(SERVER_ARBITRATION_CANDIDATES);
-let tmp5 = new BackoffDefault(1000, 60000);
-let closure_9 = tmp5;
-let closure_10 = {};
-let c11 = null;
-let closure_12 = module_1254.createWithEqualityFn(function initState() {
+let tmp4 = new BackoffDefault(1000, 60000);
+let closure_8 = tmp4;
+let closure_9 = {};
+let c10 = null;
+let closure_11 = module_1266.createWithEqualityFn(function initState() {
   obj = { candidates: new Map(), shownFatigableCandidate: null, prevFatigableCandidate: null, recentlyShown: [], currentlyShown: new Set(), currentlyShownGroup: new Set(), lastWinnerTime: 0, postConnectionOpen: false };
   new Map();
   new Set();
   new Set();
   return obj;
 });
-let closure_13 = false;
+let closure_12 = false;
 const BatchInvocationManager = Timers.BatchInvocationManager;
 let _require = _asyncToGenerator(async (arg0, value) => {
   let tmp;
   let tmp4;
   function arbitrateCandidates() {
-    return closure_1_15(...arguments);
+    return closure_1_14(...arguments);
   }
   function applyArbitrateCandidatesResult(outcome) {
     const tmp = "client-only" !== outcome.outcome && "server-success" !== outcome.outcome;
     if (!tmp) {
-      closure_9.succeed();
+      closure_8.succeed();
     }
     if ("server-failure" === outcome.outcome) {
       state = state.getState();
@@ -399,7 +406,7 @@ let _require = _asyncToGenerator(async (arg0, value) => {
       if (tmp4) {
         tmp4 = tmp13 - state.lastWinnerTime < 3600000;
       }
-      obj = closure_9;
+      obj = closure_8;
       if (tmp4) {
         obj.succeed();
       } else if (obj.fails >= 3) {
@@ -410,9 +417,9 @@ let _require = _asyncToGenerator(async (arg0, value) => {
           const items = [...candidates.keys()];
           let epoch = outcome.context.epoch;
           if (epoch === undefined) {
-            epoch = closure_2_10;
+            epoch = closure_2_9;
           }
-          if (epoch === closure_2_10) {
+          if (epoch === closure_2_9) {
             obj = pending;
             const queueResult = obj.queue(items);
             queueResult.catch(closure_2_7);
@@ -454,18 +461,18 @@ let _require = _asyncToGenerator(async (arg0, value) => {
           closure_1 = tmp;
           closure_0 = undefined;
           c1 = undefined;
-          c11 = null;
-          if (null != c11) {
-            if (c11.epoch === closure_1_10) {
+          c10 = null;
+          if (null != c10) {
+            if (c10.epoch === closure_1_9) {
               const str = "retry";
-              if ("retry" === c11.source) {
+              if ("retry" === c10.source) {
                 if (isInCooldown()) {
-                  const succeedResult = closure_1_9.succeed();
+                  const succeedResult = closure_1_8.succeed();
                 }
               }
               c3 = 1;
               c4 = 1;
-              const obj4 = { value: arbitrateCandidates(tmp35, c11), done: false };
+              const obj4 = { value: arbitrateCandidates(tmp35, c10), done: false };
               return obj4;
             }
           }
@@ -479,19 +486,19 @@ let _require = _asyncToGenerator(async (arg0, value) => {
         return obj5;
       } else {
         closure_0 = value;
-        if (closure_0.context.epoch === closure_1_10) {
+        if (closure_0.context.epoch === closure_1_9) {
           if ("retry" === closure_0.context.source) {
             let tmp5 = closure_2;
             let tmp6 = isInCooldown;
             if (isInCooldown()) {
-              const succeedResult1 = closure_1_9.succeed();
+              const succeedResult1 = closure_1_8.succeed();
             }
           }
           let tmp7 = closure_1;
           let tmp10 = applyArbitrateCandidatesResult(closure_0);
           c1 = false;
           let tmp11 = closure_0;
-          obj = closure_0(closure_2[10]);
+          obj = closure_0(closure_2[9]);
           obj.batchUpdates(() => {
             state.setState((candidates) => {
               function nextFatigableContent(prevFatigableCandidate, candidates) {
@@ -545,7 +552,7 @@ let _require = _asyncToGenerator(async (arg0, value) => {
               new Set(candidates.currentlyShown);
               new Set(candidates.currentlyShownGroup);
               const tmp5 = nextFatigableContent(obj, candidates.candidates);
-              if (!closure_2_9.pending) {
+              if (!closure_2_8.pending) {
                 let tmp7 = null;
                 closure_1 = null != tmp5;
                 closure_0 = tmp5;
@@ -553,8 +560,8 @@ let _require = _asyncToGenerator(async (arg0, value) => {
                 const items = [];
                 HermesBuiltin.arraySpread(items, candidates.keys(), 0);
                 const shownFatigableCandidate = obj.shownFatigableCandidate;
-                let found = items.filter(f85812);
-                const tmp11 = closure_2_14;
+                let found = items.filter(f86689);
+                const tmp11 = closure_2_13;
                 if (null != shownFatigableCandidate) {
                   if (null != shownFatigableCandidate.content) {
                     const currentlyShown = obj.currentlyShown;
@@ -598,7 +605,7 @@ const batchInvocationManager = new BatchInvocationManager(function() {
   return closure_0(...arguments);
 }, { delay: 250, maxConcurrentInvocations: 1 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsContentShown(arg0) {
   let tmp2;
   let closure_0 = arg0;
   obj = react;
@@ -614,16 +621,16 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     tmp2 = cResult[1];
   }
-  return closure_12(tmp2);
-}) : ((arg0) => {
+  return closure_11(tmp2);
+}) : (function useIsContentShown(arg0) {
   let closure_0 = arg0;
-  return closure_12((currentlyShown) => {
+  return closure_11((currentlyShown) => {
     currentlyShown = currentlyShown.currentlyShown;
     return currentlyShown.has(closure_0);
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsAnyContentShown(arg0) {
   let tmp2;
   let closure_0 = arg0;
   obj = react;
@@ -642,10 +649,10 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     tmp2 = cResult[1];
   }
-  return closure_12(tmp2);
-}) : ((arg0) => {
+  return closure_11(tmp2);
+}) : (function useIsAnyContentShown(arg0) {
   let closure_0 = arg0;
-  return closure_12((arg0) => {
+  return closure_11((arg0) => {
     closure_0 = arg0;
     return closure_0.some((item) => {
       currentlyShown = currentlyShown.currentlyShown;
@@ -659,10 +666,10 @@ function isStateInCooldown(shownFatigableCandidate) {
 }
 function reset() {
   obj = react_native;
-  obj.batchUpdates(f85814);
-  closure_10 = {};
-  c11 = null;
-  closure_9.succeed();
+  obj.batchUpdates(f86691);
+  closure_9 = {};
+  c10 = null;
+  closure_8.succeed();
   batchInvocationManager.reset();
 }
 const Store = get_initializedDefault.Store;
@@ -674,7 +681,7 @@ class DismissibleContentShownStateStore extends Store {
     this.syncWith(items, () => self.setHasRequiredAction());
   }
   setHasRequiredAction() {
-    closure_13 = isActionRequiredDefault(LoginRequiredActionStore, UserRequiredActionStore);
+    closure_12 = isActionRequiredDefault(LoginRequiredActionStore, UserRequiredActionStore);
   }
 }
 const prototype = DismissibleContentShownStateStore.prototype;
@@ -682,19 +689,19 @@ DismissibleContentShownStateStore.displayName = "DismissibleContentShownStateSto
 obj = {
   CONNECTION_OPEN() {
     obj = react_native;
-    obj.batchUpdates(f85814);
-    closure_10 = {};
-    c11 = null;
-    closure_9.succeed();
+    obj.batchUpdates(f86691);
+    closure_9 = {};
+    c10 = null;
+    closure_8.succeed();
     batchInvocationManager.reset();
   },
   LOGOUT() {
     let state;
     obj = react_native;
-    obj.batchUpdates(f85814);
-    closure_10 = {};
-    c11 = null;
-    closure_9.succeed();
+    obj.batchUpdates(f86691);
+    closure_9 = {};
+    c10 = null;
+    closure_8.succeed();
     batchInvocationManager.reset();
   }
 };
@@ -703,7 +710,9 @@ ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const result1 = size.fileFinishedImporting("modules/dismissible_content/DismissibleContentShownStateStore.tsx");
 
-export default (arg0, arg1) => closure_12(arg0, arg1);
+export default function useDismissibleContentShownStateStore(arg0, arg1) {
+  return closure_11(arg0, arg1);
+};
 export { isInCooldown };
 export { isStateInCooldown };
 export const addCandidateContent = function addCandidateContent(content) {
@@ -721,7 +730,7 @@ export const addCandidateContent = function addCandidateContent(content) {
       new Set(candidates.currentlyShown);
       let tmp5 = obj;
       new Set(candidates.currentlyShownGroup);
-      if (!closure_2_13) {
+      if (!closure_2_12) {
         const tmp6 = closure_1_1;
         if (tmp6) {
           withContent(obj, content);
@@ -823,22 +832,22 @@ export const removeCandidateContent = function removeCandidateContent(arg0, arg1
   } else {
     const tmp2 = c4;
     if (tmp2) {
-      closure_10 = {};
-      c11 = null;
-      closure_9.succeed();
+      closure_9 = {};
+      c10 = null;
+      closure_8.succeed();
       batchInvocationManager.reset();
     }
   }
 };
 export const getLastShownDismissibleContent = function getLastShownDismissibleContent() {
-  let first = closure_12.getState().recentlyShown[0];
+  let first = closure_11.getState().recentlyShown[0];
   if (first == null) {
     first = null;
   }
   return first;
 };
 export const getCurrentFatigableWinner = function getCurrentFatigableWinner() {
-  const shownFatigableCandidate = closure_12.getState().shownFatigableCandidate;
+  const shownFatigableCandidate = closure_11.getState().shownFatigableCandidate;
   let content;
   if (shownFatigableCandidate != null) {
     content = shownFatigableCandidate.content;
@@ -849,23 +858,23 @@ export const getCurrentFatigableWinner = function getCurrentFatigableWinner() {
   return content;
 };
 export const isContentShown = function isContentShown(DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL) {
-  const currentlyShown = closure_12.getState().currentlyShown;
+  const currentlyShown = closure_11.getState().currentlyShown;
   return currentlyShown.has(DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL);
 };
-export const useIsContentShown = tmp7;
-export const useIsAnyContentShown = tmp8;
+export const useIsContentShown = tmp6;
+export const useIsAnyContentShown = tmp7;
 export const isAnyContentShown = function isAnyContentShown(arr) {
-  const currentlyShown = closure_12.getState().currentlyShown;
+  const currentlyShown = closure_11.getState().currentlyShown;
   return arr.find((item) => currentlyShown.has(item));
 };
 export const getCurrentlyShownCounts = function getCurrentlyShownCounts() {
-  const items = [...closure_12.getState().currentlyShown];
+  const items = [...closure_11.getState().currentlyShown];
   const items1 = [, ];
   const length = items.filter((item) => {
     const CONTENT_TYPES_WITH_BYPASS_FATIGUE = require("DismissibleContentFatigueConfig").CONTENT_TYPES_WITH_BYPASS_FATIGUE;
     return !CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(item);
   }).length;
-  items1[0] = closure_12.getState().currentlyShown.size;
+  items1[0] = closure_11.getState().currentlyShown.size;
   items1[1] = length;
   return items1;
 };
@@ -885,6 +894,6 @@ export const resetFatigueCooldown = function resetFatigueCooldown() {
   });
 };
 export const isPostConnectionOpen = function isPostConnectionOpen() {
-  return closure_12.getState().postConnectionOpen;
+  return closure_11.getState().postConnectionOpen;
 };
 export { dismissibleContentShownStateStore };

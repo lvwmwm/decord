@@ -1,14 +1,14 @@
-// Module ID: 17856
-// Function ID: 17857
+// Module ID: 18143
+// Function ID: 18144
 // Name: GuildConfigGates
-// Dependencies: [5, 17857, 1085, 504, 1282, 584, 558, 2]
+// Dependencies: [5, 18144, 1085, 504, 1294, 584, 558, 2]
 // Exports: useApplicationIdentityLinkedRolesEnabled, useGuildVerificationRoleEnabled
 
-// Module 17856 (GuildConfigGates)
+// Module 18143 (GuildConfigGates)
 import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildConfigGatesStore from "GuildConfigGatesStore" /* 17857 */;
+import GuildConfigGatesStore from "GuildConfigGatesStore" /* 18144 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ let obj = {
     }
     return tmp;
   },
-  load: function() {
+  load() {
     return closure_3(...arguments);
   }
 };
@@ -118,7 +118,7 @@ ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const result2 = size.fileFinishedImporting("modules/guild_config_gates/GuildConfigGates.tsx");
 
-export const useGuildVerificationRoleEnabled = (arg0) => {
+export const useGuildVerificationRoleEnabled = function useGuildVerificationRoleEnabled(arg0) {
   const data = closure_6(arg0).data;
   let flag;
   if (data != null) {
@@ -129,7 +129,7 @@ export const useGuildVerificationRoleEnabled = (arg0) => {
   }
   return flag;
 };
-export const useApplicationIdentityLinkedRolesEnabled = (arg0) => {
+export const useApplicationIdentityLinkedRolesEnabled = function useApplicationIdentityLinkedRolesEnabled(arg0) {
   const data = closure_6(arg0).data;
   let flag;
   if (data != null) {

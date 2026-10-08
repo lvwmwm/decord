@@ -1,11 +1,11 @@
-// Module ID: 12956
-// Function ID: 12957
+// Module ID: 13235
+// Function ID: 13236
 // Name: useUserProfileApplicationRoleConnections
-// Dependencies: [19, 7124, 558, 576, 504, 2]
+// Dependencies: [19, 7309, 558, 576, 504, 2]
 
-// Module 12956 (useUserProfileApplicationRoleConnections)
+// Module 13235 (useUserProfileApplicationRoleConnections)
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7124 */;
+import UserProfileStore from "UserProfileStore" /* 7309 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ let _require;
 
 const useMemo = react.useMemo;
 let closure_4 = [];
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfileApplicationRoleConnections(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -46,7 +46,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     prop = stateFromStores.applicationRoleConnections;
   }
   return null != prop ? stateFromStores.applicationRoleConnections : closure_4;
-}) : ((arg0) => {
+}) : (function useUserProfileApplicationRoleConnections(arg0) {
   let closure_0;
   let stateFromStores;
   _require = arg0;

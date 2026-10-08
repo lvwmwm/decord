@@ -1,11 +1,11 @@
-// Module ID: 13946
-// Function ID: 13947
+// Module ID: 14249
+// Function ID: 14250
 // Name: useFlashListAnimationDisabler
-// Dependencies: [19, 558, 576, 4618, 2]
+// Dependencies: [19, 558, 576, 4810, 2]
 
-// Module 13946 (useFlashListAnimationDisabler)
+// Module 14249 (useFlashListAnimationDisabler)
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ const __initData3 = { code: "function useFlashListAnimationDisablerTsx3(finished
 const __initData4 = { code: "function useFlashListAnimationDisablerTsx4(){const{lastId}=this.__closure;return lastId.get();}" };
 const __initData5 = { code: "function useFlashListAnimationDisablerTsx5(current,prev){const{enableAnimation}=this.__closure;if(current!==prev){enableAnimation.set(false);}}" };
 const __initData6 = { code: "function useFlashListAnimationDisablerTsx6(finished){const{enableAnimation}=this.__closure;if(finished&&!enableAnimation.get()){enableAnimation.set(true);}}" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((point) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFlashListAnimationDisabler(point) {
   let closure_0 = point;
   let tmp = require;
   const obj = react2;
@@ -53,7 +53,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((point) => {
     const tmpResult = ReanimatedRexport;
     const animatedReaction = tmpResult.useAnimatedReaction(fn2, fn3);
     if (cResult[4] !== sharedValue) {
-      const fn4 = function b(arg0) {
+      const fn4 = function f(arg0) {
         const tmp = arg0 && !sharedValue.get();
         if (tmp) {
           const result = sharedValue.set(true);
@@ -92,7 +92,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((point) => {
   cResult[3] = items1;
   tmp7 = items1;
   tmp6 = fn;
-}) : ((point) => {
+}) : (function useFlashListAnimationDisabler(point) {
   let closure_0 = point;
   const obj = ReanimatedRexport;
   const sharedValue = obj.useSharedValue(false);
@@ -118,7 +118,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((point) => {
   fn2.__initData = __initData5;
   const obj3 = ReanimatedRexport;
   const animatedReaction = obj3.useAnimatedReaction(fn, fn2);
-  const fn3 = function f(arg0) {
+  const fn3 = function b(arg0) {
     const tmp = arg0 && !sharedValue.get();
     if (tmp) {
       const result = sharedValue.set(true);

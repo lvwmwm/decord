@@ -1,18 +1,18 @@
-// Module ID: 17171
-// Function ID: 17172
+// Module ID: 17452
+// Function ID: 17453
 // Name: useNativeThemeUpdater
-// Dependencies: [19, 1193, 558, 576, 17172, 17173, 2]
+// Dependencies: [19, 1205, 558, 576, 17453, 17454, 2]
 
-// Module 17171 (useNativeThemeUpdater)
+// Module 17452 (useNativeThemeUpdater)
 import react from "react" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNativeThemeUpdater() {
   let closure_0;
   let tmp2;
   let tmp3;
@@ -63,7 +63,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp6 = cResult[3];
   }
   const layoutEffect1 = obj2.useLayoutEffect(tmp5, tmp6);
-}) : (() => {
+}) : (function useNativeThemeUpdater() {
   let closure_0 = react.useRef(ThemeStore.theme);
   const layoutEffect = react.useLayoutEffect(() => {
     const obj = closure_0(dependencyMap[4]);

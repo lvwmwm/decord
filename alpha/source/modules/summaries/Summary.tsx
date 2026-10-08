@@ -1,10 +1,10 @@
-// Module ID: 9781
-// Function ID: 9782
+// Module ID: 9575
+// Function ID: 9576
 // Name: Summary
 // Dependencies: [2]
 // Exports: createSummaryFromServer
 
-// Module 9781 (Summary)
+// Module 9575 (Summary)
 import size from "module_2" /* 2 */;
 
 let set;

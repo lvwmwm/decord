@@ -1,24 +1,24 @@
-// Module ID: 16644
-// Function ID: 16645
+// Module ID: 16906
+// Function ID: 16907
 // Name: PortalKeyboardRendererComponent
-// Dependencies: [19, 2051, 21, 558, 576, 6736, 1616, 11663, 8961, 16645, 16651, 2]
+// Dependencies: [19, 2063, 21, 558, 576, 6910, 1628, 11728, 11233, 16907, 16913, 2]
 
-// Module 16644 (PortalKeyboardRendererComponent)
+// Module 16906 (PortalKeyboardRendererComponent)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import KeyboardTypes from "KeyboardTypes" /* 1616 */;
-import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 6736 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 8961 */;
-import AppLauncherKeyboardDefault from "AppLauncherKeyboard" /* 11663 */;
-import MediaKeyboardDefault from "MediaKeyboard" /* 16645 */;
-import ExpressionPickerKeyboardDefault from "ExpressionPickerKeyboard" /* 16651 */;
+import KeyboardTypes from "KeyboardTypes" /* 1628 */;
+import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 6910 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11233 */;
+import AppLauncherKeyboardDefault from "AppLauncherKeyboard" /* 11728 */;
+import MediaKeyboardDefault from "MediaKeyboard" /* 16907 */;
+import ExpressionPickerKeyboardDefault from "ExpressionPickerKeyboard" /* 16913 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function PortalKeyboardRendererComponent(arg0) {
   let FAKE_PLACEHOLDER_PRIVATE_CHANNEL;
   let channelId;
   let chatInputRef;
@@ -40,7 +40,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     FAKE_PLACEHOLDER_PRIVATE_CHANNEL = cResult[1];
   }
   if (channelId === FakePlaceholderPrivateChannel.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
-    FAKE_PLACEHOLDER_PRIVATE_CHANNEL = tmp(6736).FAKE_PLACEHOLDER_PRIVATE_CHANNEL;
+    FAKE_PLACEHOLDER_PRIVATE_CHANNEL = tmp(6910).FAKE_PLACEHOLDER_PRIVATE_CHANNEL;
   }
   if (cResult[2] !== FAKE_PLACEHOLDER_PRIVATE_CHANNEL) {
     let tmp8;
@@ -120,7 +120,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     }
   }
   return null;
-}) : ((item) => {
+}) : (function PortalKeyboardRendererComponent(item) {
   let chatInputRef;
   let cleanUp;
   let state;

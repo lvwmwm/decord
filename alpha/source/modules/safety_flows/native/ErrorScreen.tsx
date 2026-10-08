@@ -1,17 +1,17 @@
-// Module ID: 18126
-// Function ID: 18127
+// Module ID: 18413
+// Function ID: 18414
 // Name: ErrorScreen
-// Dependencies: [5, 32, 19, 17, 21, 4896, 587, 1490, 18106, 18110, 4892, 1126, 5600, 5601, 6089, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5090, 587, 1502, 18393, 18397, 5086, 1126, 5373, 5375, 5936, 2]
 // Exports: default
 
-// Module 18126 (ErrorScreen)
+// Module 18413 (ErrorScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

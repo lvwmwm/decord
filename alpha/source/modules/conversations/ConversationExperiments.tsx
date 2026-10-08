@@ -1,14 +1,14 @@
-// Module ID: 7559
-// Function ID: 7560
+// Module ID: 9270
+// Function ID: 9271
 // Name: ConversationExperiments
-// Dependencies: [2074, 1085, 1440, 558, 576, 504, 2]
+// Dependencies: [2086, 1085, 1452, 558, 576, 504, 2]
 // Exports: isConversationDebugUXEnabled, isTopicalNavEnabled
 
-// Module 7559 (ConversationExperiments)
+// Module 9270 (ConversationExperiments)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1440 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ obj8 = { 1: null };
 obj8[1] = { enabled: true };
 const apexExperiment3 = ApexExperiment.createApexExperiment(obj7);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildHasFeature(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -91,7 +91,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => 
   cResult[4] = items1;
   tmp7 = items1;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useGuildHasFeature(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -117,7 +117,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => 
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, location) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsConversationDebugUXEnabled(arg0, location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -131,14 +131,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, location) => {
   }
   const tmp3 = closure_8(arg0, GuildFeatures.CONVERSATIONS_EXTRACTION_PROCESSING) && apexExperiment.useConfig(tmp2).enabled;
   return tmp3;
-}) : ((arg0, location) => {
+}) : (function useIsConversationDebugUXEnabled(arg0, location) {
   const obj = { location };
   const tmp = closure_8(arg0, GuildFeatures.CONVERSATIONS_EXTRACTION_PROCESSING) && apexExperiment.useConfig(obj).enabled;
   return tmp;
 });
 let closure_9 = tmp6;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, location) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsTopicalNavEnabled(arg0, location) {
   let tmp3;
   const obj = react;
   const cResult = obj.c(5);
@@ -188,7 +188,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, location) => {
   cResult[3] = str;
   cResult[4] = obj3;
   tmp4 = obj3;
-}) : ((arg0, location) => {
+}) : (function useIsTopicalNavEnabled(arg0, location) {
   let str = arg0;
   const obj = { location };
   const tmp = closure_9(arg0, location);
@@ -222,7 +222,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, location) => {
 });
 let closure_10 = tmp7;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, location) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsConversationTopicHeaderEnabled(arg0, location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -239,7 +239,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, location) => {
     enabled = apexExperiment2.useConfig(tmp2).enabled;
   }
   return enabled;
-}) : ((arg0, location) => {
+}) : (function useIsConversationTopicHeaderEnabled(arg0, location) {
   let enabled = closure_10(arg0, location);
   const obj = { location };
   if (enabled) {

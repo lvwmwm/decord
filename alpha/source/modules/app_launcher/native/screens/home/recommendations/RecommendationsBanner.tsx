@@ -1,21 +1,21 @@
-// Module ID: 11730
-// Function ID: 11731
+// Module ID: 11796
+// Function ID: 11797
 // Name: RecommendationsBanner
-// Dependencies: [19, 17, 1391, 1085, 21, 4896, 558, 576, 11007, 11722, 9184, 5981, 7868, 7929, 1402, 7826, 2]
+// Dependencies: [19, 17, 1403, 1085, 21, 5090, 558, 576, 11232, 11787, 10752, 6164, 8286, 8348, 1414, 8244, 2]
 
-// Module 11730 (RecommendationsBanner)
+// Module 11796 (RecommendationsBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import useAvatarColorDefault from "useAvatarColor" /* 7826 */;
-import useDisplayProfileDefault from "useDisplayProfile" /* 7868 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9184 */;
-import AppLauncherContext from "AppLauncherContext" /* 11007 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import useAvatarColorDefault from "useAvatarColor" /* 8244 */;
+import useDisplayProfileDefault from "useDisplayProfile" /* 8286 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 10752 */;
+import AppLauncherContext from "AppLauncherContext" /* 11232 */;
 import react from "react" /* 19 */;
-import UserRecord from "UserRecord" /* 1391 */;
+import UserRecord from "UserRecord" /* 1403 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -25,16 +25,16 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let tmp3;
-const FastImageDefault = tmp3(5981);
-const UserProfileBannerDefault = tmp3(7929);
-const HeroMedia = tmp(11722);
+const FastImageDefault = tmp3(6164);
+const UserProfileBannerDefault = tmp3(8348);
+const HeroMedia = tmp(11787);
 const View = react_native.View;
 ({ BANNER_HEIGHT: metroRequire, EMPTY_STRING_SNOWFLAKE_ID: metroImportDefault } = Constants);
 const jsx = Fragment.jsx;
 let closure_9 = createStyles.createStyles({ imageContainer: { width: "100%", height: "100%" }, image: { width: "100%", height: "100%" } });
 let memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
+let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function RecommendationBannerEmbedded(applicationId) {
   let imageSource;
   let imageStyle;
   let tmp4;
@@ -113,7 +113,7 @@ let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((applicati
             return tmp17;
           }
           if (null != imageSource) {
-            tmp21 = jsx(tmp7(5981), { style: imageStyle, source: imageSource, resizeMode: "cover" });
+            tmp21 = jsx(tmp7(6164), { style: imageStyle, source: imageSource, resizeMode: "cover" });
           } else {
             tmp21 = <View style={imageStyle} />;
           }
@@ -142,7 +142,7 @@ let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((applicati
   cResult[4] = size.width;
   cResult[5] = obj10;
   tmp6 = obj10;
-}) : ((applicationId) => {
+}) : (function RecommendationBannerEmbedded(applicationId) {
   let imageSource;
   let imageStyle;
   let tmp8;
@@ -151,9 +151,9 @@ let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((applicati
   importDefault = undefined;
   applicationId = applicationId.applicationId;
   const tmp = dependencyMap;
-  let obj = heroMediaDimensions(11007);
+  let obj = heroMediaDimensions(11232);
   const width = obj.useRequiredAppLauncherContext().width;
-  let obj2 = heroMediaDimensions(11722);
+  let obj2 = heroMediaDimensions(11787);
   heroMediaDimensions = obj2.useHeroMediaDimensions({ width });
   let obj3 = { applicationId, size: heroMediaDimensions.width, names: ["embedded_cover"] };
   const tmp4 = useEmbeddedActivityBackgroundDefault(obj3);
@@ -184,7 +184,7 @@ let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((applicati
 }));
 const memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function(applicationBot) {
+let closure_11 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function ReccomendationBannerBot(applicationBot) {
   let tmp7;
   const obj = react2;
   const cResult = obj.c(5);
@@ -220,7 +220,7 @@ let closure_11 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function(
   cResult[3] = tmp7;
   cResult[4] = tmp13;
   tmp12 = tmp13;
-}) : ((applicationBot) => {
+}) : (function ReccomendationBannerBot(applicationBot) {
   applicationBot = applicationBot.applicationBot;
   let id;
   const tmp3 = useDisplayProfileDefault;
@@ -235,7 +235,7 @@ let closure_11 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function(
   return <tmpResult displayProfile={tmp3(id)} user={new UserRecord(applicationBot)} />;
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isActivity) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function RecommendationBanner(isActivity) {
   let applicationBot;
   let applicationIcon;
   let applicationId;
@@ -291,7 +291,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
           cResult[11] = tmp31;
           tmp28 = tmp31;
         }
-        const tmp27 = jsx(tmp6(5981), { style: tmp3.image, source: tmp24, resizeMode: "cover" });
+        const tmp27 = jsx(tmp6(6164), { style: tmp3.image, source: tmp24, resizeMode: "cover" });
         cResult[6] = tmp3.image;
         cResult[7] = tmp24;
         cResult[8] = tmp27;
@@ -336,7 +336,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
   cResult[2] = applicationId;
   cResult[3] = applicationIconSource;
   tmp4 = applicationIconSource;
-}) : ((arg0) => {
+}) : (function RecommendationBanner(arg0) {
   let applicationBot;
   let applicationIcon;
   let applicationId;

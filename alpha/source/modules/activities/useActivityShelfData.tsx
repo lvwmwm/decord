@@ -1,15 +1,15 @@
-// Module ID: 11668
-// Function ID: 11669
+// Module ID: 11733
+// Function ID: 11734
 // Name: useActivityShelfData
-// Dependencies: [19, 1377, 8548, 2050, 558, 576, 504, 6670, 1375, 8547, 8962, 1369, 8958, 2]
+// Dependencies: [19, 1389, 9032, 2062, 558, 576, 504, 6847, 1387, 8586, 10627, 1381, 9761, 2]
 
-// Module 11668 (useActivityShelfData)
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8547 */;
+// Module 11733 (useActivityShelfData)
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8586 */;
 import react from "react" /* 19 */;
-import UserStore_mod from "UserStore" /* 1377 */;
-import TestModeStore from "TestModeStore" /* 8548 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
+import UserStore_mod from "UserStore" /* 1389 */;
+import TestModeStore from "TestModeStore" /* 9032 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let _require, application, closure_0;
 
 let UserStore = UserStore_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityShelfData(arg0) {
   let args;
   let first;
   let tmp10;
@@ -229,7 +229,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function w(application_id) {
+    const fn2 = function h(application_id) {
       return application_id.application_id;
     };
     cResult[9] = fn2;
@@ -257,7 +257,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = stateFromStores1;
   cResult[8] = tmp18;
   tmp15 = tmp18;
-}) : ((arg0) => {
+}) : (function useActivityShelfData(arg0) {
   let closure_4;
   let memo;
   let memo1;

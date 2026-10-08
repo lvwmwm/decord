@@ -1,14 +1,13 @@
-// Module ID: 13653
-// Function ID: 13654
+// Module ID: 13888
+// Function ID: 13889
 // Name: VoiceStateAnalytics
-// Dependencies: [1999, 4915, 4920, 4921, 12, 2]
+// Dependencies: [5111, 5114, 5115, 12, 2]
 
-// Module 13653 (VoiceStateAnalytics)
+// Module 13888 (VoiceStateAnalytics)
 import _mod12 from "module_12" /* 12 */;
-import Constants from "Constants" /* 4921 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import VoiceStateStore from "VoiceStateStore" /* 4915 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4920 */;
+import Constants from "Constants" /* 5115 */;
+import VoiceStateStore from "VoiceStateStore" /* 5111 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5114 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -50,14 +49,13 @@ class VoiceStateAnalytics {
     const obj = { max_voice_state_count: this.maxVoiceStateCount, total_voice_state_count: this.totalParticipants.size, max_listener_count: this.maxListenerCount, total_listener_count: this.totalListeners.size, max_speaker_count: this.maxSpeakerCount, total_speaker_count: Object.keys(this.totalSpeakers).length };
     return obj;
   }
-  getUserVoiceSettingsStats(arg0) {
+  getUserVoiceSettingsStats(localMutes) {
     let arr;
     let arr2;
     let intersection;
     let intersection2;
-    const settings = MediaEngineStore.getSettings(arg0);
-    set = new Set(Object.keys(settings.localMutes));
-    const set1 = new Set(Object.keys(settings.localVolumes));
+    set = new Set(Object.keys(localMutes.localMutes));
+    const set1 = new Set(Object.keys(localMutes.localVolumes));
     set1.delete(this.userId);
     set.delete(this.userId);
     const obj = { num_local_voice_user_mutes: intersection(arr, Array.from(this.totalParticipants)).length, num_local_voice_volumes: intersection2(arr2, Array.from(this.totalParticipants)).length };

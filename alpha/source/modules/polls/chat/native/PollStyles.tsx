@@ -1,12 +1,12 @@
-// Module ID: 11362
-// Function ID: 11363
+// Module ID: 11539
+// Function ID: 11540
 // Name: PollStyles
-// Dependencies: [5081, 11363, 11364, 2]
+// Dependencies: [5741, 11540, 11541, 2]
 
-// Module 11362 (PollStyles)
-import merged5 from "merged5" /* 5081 */;
-import PollLayoutTypes from "PollLayoutTypes" /* 11363 */;
-import PollMessageChatDataTypes from "PollMessageChatDataTypes" /* 11364 */;
+// Module 11539 (PollStyles)
+import merged5 from "merged5" /* 5741 */;
+import PollLayoutTypes from "PollLayoutTypes" /* 11540 */;
+import PollMessageChatDataTypes from "PollMessageChatDataTypes" /* 11541 */;
 import size from "module_2" /* 2 */;
 
 function normal(border, arg1) {

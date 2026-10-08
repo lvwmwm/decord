@@ -1,23 +1,23 @@
-// Module ID: 15302
-// Function ID: 15303
+// Module ID: 15564
+// Function ID: 15565
 // Name: DataSavingModeSetting
-// Dependencies: [1195, 7645, 558, 576, 504, 15300, 2028, 11142, 1126, 2]
+// Dependencies: [1207, 7966, 558, 576, 504, 15562, 2040, 11262, 1126, 2]
 
-// Module 15302 (DataSavingModeSetting)
+// Module 15564 (DataSavingModeSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import UserSettingsText from "UserSettingsText" /* 15300 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import UserSettingsText from "UserSettingsText" /* 15562 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDataSavingModeSettingValue() {
   let dataSavingMode;
   let tmp4;
   let tmp5;
@@ -37,7 +37,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useDataSavingModeSettingValue() {
   let dataSavingMode;
   const items = [UnsyncedUserSettingsStore];
   const obj = get_initialized;

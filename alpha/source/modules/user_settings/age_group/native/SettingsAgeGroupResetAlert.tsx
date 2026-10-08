@@ -1,10 +1,10 @@
-// Module ID: 14560
-// Function ID: 14561
+// Module ID: 14821
+// Function ID: 14822
 // Name: SettingsAgeGroupResetAlert
-// Dependencies: [5, 21, 558, 576, 1490, 13591, 5716, 4573, 1126, 3073, 5720, 5720, 2]
+// Dependencies: [5, 21, 558, 576, 1502, 5929, 5299, 4765, 1126, 3117, 5303, 5303, 2]
 
-// Module 14560 (SettingsAgeGroupResetAlert)
-import _modDef3073 from "module_3073" /* 3073 */;
+// Module 14821 (SettingsAgeGroupResetAlert)
+import _modDef3117 from "module_3117" /* 3117 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -17,7 +17,7 @@ let closure_4;
 let hasOwnProperty;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let c6 = "settings-age-group-reset";
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAgeGroupResetAlert() {
   let intl4;
   let items;
   let obj6;
@@ -31,7 +31,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp = navigation;
   let obj = navigation(576);
   const cResult = obj.c(10);
-  let obj2 = navigation(1490);
+  let obj2 = navigation(1502);
   navigation = obj2.useNavigation();
   if (cResult[0] !== navigation) {
     let closure_0 = _asyncToGenerator(async function(arg0, value) {
@@ -117,9 +117,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     let intl = tmp(1126).intl;
-    const stringResult = intl.string(_modDef3073["bD//cU"]);
+    const stringResult = intl.string(_modDef3117["bD//cU"]);
     const intl2 = tmp(1126).intl;
-    const stringResult1 = intl2.string(_modDef3073.FbTAmI);
+    const stringResult1 = intl2.string(_modDef3117.FbTAmI);
     cResult[2] = stringResult;
     cResult[3] = stringResult1;
     tmp8 = stringResult1;
@@ -130,7 +130,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const intl3 = tmp(1126).intl;
-    const stringResult2 = intl3.string(_modDef3073.V822Mp);
+    const stringResult2 = intl3.string(_modDef3117.V822Mp);
     cResult[4] = stringResult2;
     tmp12 = stringResult2;
   } else {
@@ -138,7 +138,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[5] !== tmp5) {
     let obj3 = { variant: "destructive", onPress: tmp5, text: tmp12 };
-    const tmp17 = closure_4(tmp(5720).AlertActionButton, obj3, "confirm");
+    const tmp17 = closure_4(tmp(5303).AlertActionButton, obj3, "confirm");
     cResult[5] = tmp5;
     cResult[6] = tmp17;
     tmp15 = tmp17;
@@ -147,7 +147,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     let obj4 = { variant: "secondary", text: intl4.string(tmp(1126).t["ETE/oC"]) };
-    const AlertActionButton = tmp(5720).AlertActionButton;
+    const AlertActionButton = tmp(5303).AlertActionButton;
     intl4 = tmp(1126).intl;
     const tmp20 = closure_4(AlertActionButton, obj4, "cancel");
     cResult[7] = tmp20;
@@ -156,8 +156,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp18 = cResult[7];
   }
   if (cResult[8] !== tmp15) {
-    let obj5 = { title: tmp7, content: tmp8, actions: closure_5(tmp(5720).AlertActions, obj6) };
-    const AlertModal = tmp(5720).AlertModal;
+    let obj5 = { title: tmp7, content: tmp8, actions: closure_5(tmp(5303).AlertActions, obj6) };
+    const AlertModal = tmp(5303).AlertModal;
     obj6 = { children: items };
     items = [tmp15, tmp18];
     const tmp24 = closure_4(AlertModal, obj5);
@@ -168,7 +168,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp21 = cResult[9];
   }
   return tmp21;
-}) : (() => {
+}) : (function SettingsAgeGroupResetAlert() {
   let AlertActions;
   let closure_0;
   let intl;
@@ -253,7 +253,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   };
   obj = require("useNavigation");
   _require = obj.useNavigation();
-  let obj2 = { title: intl.string(obj(3073)["bD//cU"]), content: intl2.string(obj(3073).FbTAmI), actions: closure_5(AlertActions, obj3) };
+  let obj2 = { title: intl.string(obj(3117)["bD//cU"]), content: intl2.string(obj(3117).FbTAmI), actions: closure_5(AlertActions, obj3) };
   const AlertModal = require("AlertModal").AlertModal;
   intl = require("intl").intl;
   intl2 = require("intl").intl;
@@ -264,7 +264,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     onPress: function handleConfirm() {
       return obj(...arguments);
     },
-    text: intl3.string(obj(3073).V822Mp)
+    text: intl3.string(obj(3117).V822Mp)
   };
   const AlertActionButton = require("AlertModal").AlertActionButton;
   intl3 = require("intl").intl;

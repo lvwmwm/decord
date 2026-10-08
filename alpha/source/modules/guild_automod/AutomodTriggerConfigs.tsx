@@ -1,14 +1,14 @@
-// Module ID: 17725
-// Function ID: 17726
+// Module ID: 18012
+// Function ID: 18013
 // Name: AutomodTriggerConfigs
-// Dependencies: [19, 11487, 1126, 558, 576, 17038, 17726, 2]
+// Dependencies: [19, 11473, 1126, 558, 576, 17319, 18013, 2]
 // Exports: checkTriggerTypeForFlag, getAvailableActionTypes, getDefaultTriggerMetadataForTriggerType, validateRuleByTriggerConfigOrThrow
 
-// Module 17725 (AutomodTriggerConfigs)
+// Module 18012 (AutomodTriggerConfigs)
 import intl2 from "intl" /* 1126 */;
-import guild_automod_PermissionUtils from "guild_automod/PermissionUtils" /* 17038 */;
+import guild_automod_PermissionUtils from "guild_automod/PermissionUtils" /* 17319 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 11487 */;
+import Constants from "Constants" /* 11473 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -193,7 +193,7 @@ const obj12 = { [obj11.MEMBERS]: items12, [obj11.CONTENT]: items13 };
 items12 = [obj2[AutomodTriggerType.USER_PROFILE]];
 items13 = [obj2[AutomodTriggerType.SERVER_POLICY], obj2[AutomodTriggerType.MENTION_SPAM], obj2[AutomodTriggerType.ML_SPAM], obj2[AutomodTriggerType.DEFAULT_KEYWORD_LIST], obj2[AutomodTriggerType.KEYWORD], obj2[AutomodTriggerType.APPLICATION]];
 new Set();
-const tmp27 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp27 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvailableTriggerTypes(arg0) {
   let isApplicationRuleEnabled;
   let isUserProfileRuleEnabled;
   const obj = isUserProfileRuleEnabled(isApplicationRuleEnabled[4]);
@@ -232,7 +232,7 @@ const tmp27 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = isUserProfileRuleEnabled;
   cResult[2] = reduced;
   tmp4 = reduced;
-}) : ((arg0) => {
+}) : (function useAvailableTriggerTypes(arg0) {
   let isApplicationRuleEnabled;
   let isUserProfileRuleEnabled;
   const obj = isUserProfileRuleEnabled(isApplicationRuleEnabled[5]);

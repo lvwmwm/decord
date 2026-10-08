@@ -1,43 +1,50 @@
-// Module ID: 9183
-// Function ID: 9184
+// Module ID: 10751
+// Function ID: 10752
 // Name: EmbeddedActivityBackgroundImageWithOverlay
-// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 9184, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 587, 558, 576, 10752, 6164, 2]
 
-// Module 9183 (EmbeddedActivityBackgroundImageWithOverlay)
-import Fragment from "Fragment" /* 21 */;
+// Module 10751 (EmbeddedActivityBackgroundImageWithOverlay)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9184 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 10752 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4896 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import size from "module_2" /* 2 */;
+import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
+let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let obj2;
-({ ImageBackground: hasOwnProperty, View: metroRequire, StyleSheet: metroImportDefault } = react_native);
-const jsx = Fragment.jsx;
+let tmp8;
+const FastImageDefault = tmp8(6164);
+({ View: hasOwnProperty, StyleSheet: metroRequire } = react_native);
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let obj = { overlay: obj2 };
 obj2 = { flex: 1, opacity: 0.6, backgroundColor: nativeDefault.colors.BLACK };
 let closure_9 = createStyles.createStyles(obj);
 const names = ["embedded_background"];
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  let absoluteFillObject;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmbeddedActivityBackgroundImageWithOverlay(arg0) {
   let application;
   let borderRadius;
   let closure_129_0;
   let dimensionsStyle;
-  let obj5;
+  let height;
+  let items;
+  let items1;
+  let items2;
   let resizeMode;
+  let tmp10;
+  let tmp11;
   let tmp5;
   let tmp6;
-  let tmp9;
+  let width;
   const obj = react2;
-  const cResult = obj.c(12);
+  const cResult = obj.c(16);
   ({ application, dimensionsStyle, borderRadius, resizeMode } = arg0);
   let str = "contain";
   if (undefined !== resizeMode) {
@@ -66,83 +73,107 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj3 = { uri: url };
     cResult[2] = url;
     cResult[3] = obj3;
-    tmp9 = obj3;
+    tmp10 = obj3;
   } else {
-    tmp9 = cResult[3];
+    tmp10 = cResult[3];
   }
-  if (cResult[4] === tmp9) {
-    if (cResult[5] === url) {
-      if (cResult[6] === borderRadius) {
-        if (cResult[7] === dimensionsStyle) {
-          if (cResult[8] === tmp5) {
-            if (cResult[9] === str) {
-              let tmp10;
-              if (cResult[10] === tmp3) {
-                tmp10 = cResult[11];
+  if (cResult[4] !== dimensionsStyle) {
+    let flattenResult = metroRequire.flatten(dimensionsStyle);
+    if (flattenResult == null) {
+      flattenResult = {};
+    }
+    cResult[4] = dimensionsStyle;
+    cResult[5] = flattenResult;
+    tmp11 = flattenResult;
+  } else {
+    tmp11 = cResult[5];
+  }
+  ({ width, height } = tmp11);
+  if (cResult[6] === tmp10) {
+    if (cResult[7] === url) {
+      if (cResult[8] === borderRadius) {
+        if (cResult[9] === dimensionsStyle) {
+          if (cResult[10] === height) {
+            if (cResult[11] === tmp5) {
+              if (cResult[12] === str) {
+                if (cResult[13] === tmp3) {
+                  let tmp13;
+                  if (cResult[14] === width) {
+                    tmp13 = cResult[15];
+                  }
+                  return tmp13;
+                }
               }
-              return tmp10;
             }
           }
         }
       }
     }
   }
-  let tmp14Result = null;
+  let tmp18Result = null;
   if (!tmp5) {
-    tmp14Result = null;
+    tmp18Result = null;
     if (null != url) {
-      tmp14Result = null;
+      tmp18Result = null;
       if ("" !== url) {
-        const obj4 = {
+        let absoluteFillObject = dimensionsStyle;
+        const tmp18 = metroImportAll;
+        if (dimensionsStyle == null) {
+          absoluteFillObject = metroRequire.absoluteFillObject;
+        }
+        const obj5 = {
           resizeMode: str,
-          source: tmp9,
-          style: absoluteFillObject,
-          imageStyle: obj5,
+          source: tmp10,
+          style: items,
           onError() {
                   return closure_1_0(true);
-                },
-          children: null
+                }
         };
-        absoluteFillObject = dimensionsStyle;
-        const tmp15 = hasOwnProperty;
-        if (dimensionsStyle == null) {
-          absoluteFillObject = metroImportDefault.absoluteFillObject;
-        }
-        const items = [tmp3.overlay, ];
-        obj5 = { borderRadius };
+        items = [metroRequire.absoluteFill, ];
+        size = { width, height, borderRadius };
+        const obj4 = { style: absoluteFillObject, children: items1 };
+        items[1] = size;
+        items1 = [metroImportDefault(FastImageDefault, obj5), ];
+        const obj6 = { style: items2 };
+        items2 = [tmp3.overlay, ];
         const obj7 = { borderRadius };
-        items[1] = obj7;
-        tmp14Result = tmp14(tmp15, obj4);
+        items2[1] = obj7;
+        items1[1] = metroImportDefault(hasOwnProperty, obj6);
+        tmp18Result = tmp18(tmp19, obj4);
       }
     }
   }
-  cResult[4] = tmp9;
-  cResult[5] = url;
-  cResult[6] = borderRadius;
-  cResult[7] = dimensionsStyle;
-  cResult[8] = tmp5;
-  cResult[9] = str;
-  cResult[10] = tmp3;
-  cResult[11] = tmp14Result;
-  tmp10 = tmp14Result;
-}) : ((arg0) => {
+  cResult[6] = tmp10;
+  cResult[7] = url;
+  cResult[8] = borderRadius;
+  cResult[9] = dimensionsStyle;
+  cResult[10] = height;
+  cResult[11] = tmp5;
+  cResult[12] = str;
+  cResult[13] = tmp3;
+  cResult[14] = width;
+  cResult[15] = tmp18Result;
+  tmp13 = tmp18Result;
+}) : (function EmbeddedActivityBackgroundImageWithOverlay(arg0) {
   let application;
   let borderRadius;
-  let closure_0;
+  let c0;
   let dimensionsStyle;
-  let first;
-  let obj3;
-  let obj4;
+  let items;
+  let items1;
+  let items2;
   let resizeMode;
+  let tmp3;
   ({ application, dimensionsStyle, borderRadius, resizeMode } = arg0);
   if (resizeMode === undefined) {
     resizeMode = "contain";
   }
-  closure_0 = undefined;
+  c0 = undefined;
   const tmp = closure_9();
-  [first, closure_0] = react.useState(false);
+  [tmp3, c0] = react.useState(false);
   let str;
-  const tmp4 = useEmbeddedActivityBackgroundDefault;
+  _slicedToArray(react.useState(false), 2);
+  const tmp6 = useEmbeddedActivityBackgroundDefault;
   if (application != null) {
     str = application.id;
   }
@@ -150,38 +181,48 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     str = "";
   }
   const obj = { applicationId: str, names, size: 1024 };
-  const url = tmp4(obj).url;
-  let tmp8Result = null;
-  if (!first) {
-    tmp8Result = null;
+  const url = tmp6(obj).url;
+  let flattenResult = metroRequire.flatten(dimensionsStyle);
+  const tmp7 = url;
+  if (flattenResult == null) {
+    flattenResult = {};
+  }
+  let tmp13Result = null;
+  if (!tmp3) {
+    tmp13Result = null;
     if (null != url) {
-      tmp8Result = null;
+      tmp13Result = null;
       if ("" !== url) {
-        const obj2 = {
-          resizeMode,
-          source: obj3,
-          style: dimensionsStyle,
-          imageStyle: obj4,
-          onError() {
-                  return closure_0(true);
-                },
-          children: null
-        };
-        obj3 = { uri: url };
-        const tmp9 = hasOwnProperty;
+        let absoluteFillObject = dimensionsStyle;
+        const tmp13 = metroImportAll;
         if (dimensionsStyle == null) {
-          dimensionsStyle = metroImportDefault.absoluteFillObject;
+          absoluteFillObject = tmp8.absoluteFillObject;
         }
-        const items = [tmp.overlay, ];
-        obj4 = { borderRadius };
-        const obj6 = { borderRadius };
-        items[1] = obj6;
-        tmp8Result = tmp8(tmp9, obj2);
+        const obj3 = {
+          resizeMode,
+          source: { uri: tmp7 },
+          style: items,
+          onError() {
+                  return _undefined(true);
+                }
+        };
+        items = [metroRequire.absoluteFill, ];
+        size = { width: tmp9, height: tmp10, borderRadius };
+        const obj2 = { style: absoluteFillObject, children: items1 };
+        items[1] = size;
+        items1 = [metroImportDefault(FastImageDefault, obj3), ];
+        const obj4 = { style: items2 };
+        items2 = [tmp.overlay, ];
+        const obj5 = { borderRadius };
+        items2[1] = obj5;
+        items1[1] = metroImportDefault(hasOwnProperty, obj4);
+        tmp13Result = tmp13(tmp14, obj2);
       }
     }
   }
-  return tmp8Result;
+  return tmp13Result;
 });
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/activities/native/EmbeddedActivityBackgroundImageWithOverlay.tsx");
 
-export default tmp3;
+export default tmp4;

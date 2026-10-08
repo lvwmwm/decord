@@ -1,17 +1,15 @@
-// Module ID: 15748
-// Function ID: 15749
+// Module ID: 16006
+// Function ID: 16007
 // Name: useScrollToInitialIndexOnce
 // Dependencies: [19, 558, 576, 2]
 
-// Module 15748 (useScrollToInitialIndexOnce)
+// Module 16006 (useScrollToInitialIndexOnce)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let initialScrollIndex;
-
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialScrollIndex) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScrollToInitialIndexOnce(initialScrollIndex) {
   let afterMs;
   let resetKey;
   let obj = react2;
@@ -71,7 +69,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialScrollIndex) 
   cResult[6] = items;
   tmp3 = items;
   tmp2 = fn;
-}) : ((initialScrollIndex) => {
+}) : (function useScrollToInitialIndexOnce(initialScrollIndex) {
   initialScrollIndex = initialScrollIndex.initialScrollIndex;
   const shouldScroll = initialScrollIndex.shouldScroll;
   const flashListRef = initialScrollIndex.flashListRef;

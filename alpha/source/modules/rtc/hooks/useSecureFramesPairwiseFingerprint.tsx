@@ -1,21 +1,21 @@
-// Module ID: 9385
-// Function ID: 9386
+// Module ID: 8806
+// Function ID: 8807
 // Name: useSecureFramesPairwiseFingerprint
-// Dependencies: [32, 5, 19, 502, 1999, 4919, 9380, 4921, 206, 558, 576, 504, 38, 9386, 2]
+// Dependencies: [32, 5, 19, 502, 2011, 5108, 8801, 5115, 206, 558, 576, 504, 38, 8807, 2]
 
-// Module 9385 (useSecureFramesPairwiseFingerprint)
-import Constants from "Constants" /* 4921 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9380 */;
+// Module 8806 (useSecureFramesPairwiseFingerprint)
+import Constants from "Constants" /* 5115 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 8801 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import RTCConnectionStore_mod from "RTCConnectionStore" /* 4919 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import RTCConnectionStore_mod from "RTCConnectionStore" /* 5108 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c0, c3, c4, constants, flag, num, num2, obj, tmp8, userId;
+let c0, c3, c4, constants, flag, num, num2, obj, tmp8;
 
 function computeNativeDisplayPair() {
   return obj(...arguments);
@@ -103,7 +103,7 @@ let RTCConnectionStore = RTCConnectionStore_mod;
 let closure_9 = SecureFramesConstants.SECURE_FRAMES_GENERATE_FINGERPRINT_VERSION;
 let Features = Constants.Features;
 SecureFramesPairwiseFingerprintMode = { FROZEN: "frozen", LIVE: "live" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureFramesPairwiseFingerprint(userId) {
   let ref;
   let ref2;
   let stateFromStores;
@@ -255,7 +255,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
               c0 = 3;
               const obj3 = { value, done: true };
               return obj3;
-            } else if (fn.supports(constants.MLS_PAIRWISE_FINGERPRINTS)) {
+            } else if (t8.supports(constants.MLS_PAIRWISE_FINGERPRINTS)) {
               c1 = 2;
               c0 = 1;
               const obj5 = { value: computeNativeDisplayPair(c0), done: false };
@@ -295,16 +295,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
         }
       }
     });
-    let fn = function() {
+    function t8() {
       return closure_0(...arguments);
-    };
+    }
     class F {
       constructor() {
         return stateFromStores2.getId();
       }
     }
     cResult[8] = userId;
-    cResult[9] = fn;
+    cResult[9] = t8;
   } else {
     class D {
       constructor() {
@@ -312,7 +312,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
       }
     }
   }
-  fn = tmp19;
+  t8 = tmp19;
   RTCConnectionStore = obj3.useRef(0);
   closure_9 = obj3.useRef(null);
   Features = obj3.useRef(false);
@@ -345,8 +345,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
             num2 = 0;
             closure_9.current = setTimeout(() => {
               _asyncToGenerator(true);
-              const promise = fn();
-              promise.then(() => { /* body not rendered: F152297 */ });
+              const promise = t8();
+              promise.then(() => { /* body not rendered: F153332 */ });
             }, 0);
           } else {
             tmp4 = closure_10;
@@ -363,7 +363,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[13] = stateFromStores1;
   cResult[14] = items3;
   cResult[15] = L;
-}) : ((userId) => {
+}) : (function useSecureFramesPairwiseFingerprint(userId) {
   let closure_4;
   userId = userId.userId;
   let FROZEN = userId.mode;

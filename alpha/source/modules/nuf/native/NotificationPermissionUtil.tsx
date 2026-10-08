@@ -1,21 +1,21 @@
-// Module ID: 12069
-// Function ID: 12070
+// Module ID: 12142
+// Function ID: 12143
 // Name: NotificationPermissionUtil
-// Dependencies: [32, 5, 19, 17, 12067, 12068, 1085, 5105, 7295, 8998, 1252, 12070, 12075, 558, 576, 12076, 504, 2]
+// Dependencies: [32, 5, 19, 17, 12140, 12141, 1085, 7477, 7500, 10823, 1264, 12143, 12149, 558, 576, 12150, 504, 2]
 // Exports: enableProvisionalPushNotification, requestPushNotificationPermission
 
-// Module 12069 (NotificationPermissionUtil)
+// Module 12142 (NotificationPermissionUtil)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 5105 */;
-import react_nativeDefault from "react-native" /* 7295 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12068 */;
-import RegionalTeenUtils from "RegionalTeenUtils" /* 12076 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7477 */;
+import react_nativeDefault from "react-native" /* 7500 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12141 */;
+import RegionalTeenUtils from "RegionalTeenUtils" /* 12150 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12067 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12140 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -187,7 +187,7 @@ const EventActionType = NotificationPermissionConstants.EventActionType;
 const AnalyticEvents = Constants.AnalyticEvents;
 let closure_10 = NativePermissionConstants.NotificationAuthorizationStatus;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowReactivationPrompt() {
   let first;
   let tmp4;
   let tmp5;
@@ -264,7 +264,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const effect = obj2.useEffect(tmp4, tmp5);
   return first;
-}) : (() => {
+}) : (function useShowReactivationPrompt() {
   let require;
   let tmp2;
   const tmp = _slicedToArray(react.useState(false), 2);

@@ -1,26 +1,26 @@
-// Module ID: 14682
-// Function ID: 14683
+// Module ID: 14943
+// Function ID: 14944
 // Name: RequestYourDataSetting
-// Dependencies: [17, 1377, 7645, 1085, 21, 1254, 6484, 1259, 558, 576, 504, 4498, 14683, 1126, 4467, 11142, 14685, 2]
+// Dependencies: [17, 1389, 7966, 1085, 21, 1266, 6662, 1271, 558, 576, 504, 4690, 14944, 1126, 4659, 11262, 14946, 2]
 // Exports: fetchHarvestStatus
 
-// Module 14682 (RequestYourDataSetting)
+// Module 14943 (RequestYourDataSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import react_native2 from "react-native" /* 1259 */;
-import _modDef4467 from "module_4467" /* 4467 */;
-import _slicedToArray from "_slicedToArray" /* 4498 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6484 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import HarvesterUtils from "HarvesterUtils" /* 14683 */;
-import UserStore from "UserStore" /* 1377 */;
+import react_native2 from "react-native" /* 1271 */;
+import _modDef4659 from "module_4659" /* 4659 */;
+import _slicedToArray from "_slicedToArray" /* 4690 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6662 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import HarvesterUtils from "HarvesterUtils" /* 14944 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
-import module_1254 from "module_1254" /* 1254 */;
+import module_1266 from "module_1266" /* 1266 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,9 +31,9 @@ const ActivityIndicator = react_native.ActivityIndicator;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 ({ REQUEST_DATA_LIMIT_DAYS: hasOwnProperty, UserSettingsSections } = Constants);
 const jsx = Fragment.jsx;
-let closure_7 = module_1254.createWithEqualityFn(() => ({ isRequesting: false, harvestRequest: null }));
+let closure_7 = module_1266.createWithEqualityFn(() => ({ isRequesting: false, harvestRequest: null }));
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsHarvestRequestDisabled() {
   let currentUser;
   let tmp11;
   let tmp4;
@@ -43,7 +43,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(8);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    const fn = function s() {
+    const fn = function n() {
       return currentUser.getCurrentUser();
     };
     cResult[0] = items;
@@ -56,7 +56,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult = get_initialized;
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function u(harvestRequest) {
+    const fn2 = function l(harvestRequest) {
       return harvestRequest.harvestRequest;
     };
     cResult[2] = fn2;
@@ -99,7 +99,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp14 = harvestDisabledResult;
   }
   return tmp13;
-}) : (() => {
+}) : (function useIsHarvestRequestDisabled() {
   let currentUser;
   const items = [UserStore];
   const obj = get_initialized;
@@ -118,7 +118,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 let closure_8 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHarvestRequest() {
   let first;
   const obj = react;
   const cResult = obj.c(1);
@@ -132,9 +132,11 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return closure_7(first, _slicedToArray.shallow);
-}) : (() => closure_7((harvestRequest) => harvestRequest.harvestRequest, _slicedToArray.shallow));
+}) : (function useHarvestRequest() {
+  return closure_7((harvestRequest) => harvestRequest.harvestRequest, _slicedToArray.shallow);
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsRequestingHarvestState() {
   let first;
   const obj = react;
   const cResult = obj.c(1);
@@ -148,9 +150,11 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return closure_7(first, _slicedToArray.shallow);
-}) : (() => closure_7((isRequesting) => isRequesting.isRequesting, _slicedToArray.shallow));
+}) : (function useIsRequestingHarvestState() {
+  return closure_7((isRequesting) => isRequesting.isRequesting, _slicedToArray.shallow);
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHarvestRequestSettingTrailing() {
   let tmp3;
   const obj = react;
   const cResult = obj.c(2);
@@ -167,7 +171,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
+}) : (function useHarvestRequestSettingTrailing() {
   let tmp = null;
   if (closure_10()) {
     tmp = <ActivityIndicator />;
@@ -175,7 +179,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return tmp;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequestYourDataSettingDescription() {
   const obj = react;
   const cResult = obj.c(4);
   const tmp4 = closure_9();
@@ -202,11 +206,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (cResult[1] !== tmp4.created_at) {
       const _Symbol = Symbol;
       const forResult = Symbol.for("react.early_return_sentinel");
-      const obj3 = _modDef4467(tmp4.created_at);
+      const obj3 = _modDef4659(tmp4.created_at);
       const addResult = obj3.add(hasOwnProperty, "days");
       let tmp11 = null;
       let formatToPlainStringResult;
-      if (!addResult.isBefore(_modDef4467())) {
+      if (!addResult.isBefore(_modDef4659())) {
         const intl = tmp(1126).intl;
         const formatToPlainString = intl.formatToPlainString;
         const obj2 = { date: addResult.format("MMMM Do YYYY") };
@@ -229,7 +233,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return tmp5;
   }
-}) : (() => {
+}) : (function useRequestYourDataSettingDescription() {
   const tmp = closure_9();
   const currentUser = UserStore.getCurrentUser();
   if (null == currentUser) {
@@ -240,10 +244,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else if (null == tmp) {
     return null;
   } else {
-    const obj3 = _modDef4467(tmp.created_at);
+    const obj3 = _modDef4659(tmp.created_at);
     const addResult = obj3.add(hasOwnProperty, "days");
     let formatToPlainStringResult = null;
-    if (!addResult.isBefore(_modDef4467())) {
+    if (!addResult.isBefore(_modDef4659())) {
       const intl = intl3.intl;
       const formatToPlainString = intl.formatToPlainString;
       const obj = { date: addResult.format("MMMM Do YYYY") };
@@ -254,7 +258,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreNavigationAction() {
   let tmp3;
   const obj = react;
   const cResult = obj.c(2);
@@ -276,7 +280,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
+}) : (function usePreNavigationAction() {
   let closure_0 = closure_8();
   return (fn) => {
     let flag = !closure_0;

@@ -1,15 +1,15 @@
-// Module ID: 7920
-// Function ID: 7921
+// Module ID: 8339
+// Function ID: 8340
 // Name: UserProfileFixedBackground
-// Dependencies: [32, 19, 17, 21, 558, 576, 4595, 7921, 7922, 5612, 2]
+// Dependencies: [32, 19, 17, 21, 558, 576, 4787, 8340, 8341, 5387, 2]
 
-// Module 7920 (UserProfileFixedBackground)
+// Module 8339 (UserProfileFixedBackground)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import native from "native" /* 4595 */;
-import LinearGradientDefault from "LinearGradient" /* 5612 */;
-import useUserProfileColors from "useUserProfileColors" /* 7921 */;
-import useUserProfileGradientColors from "useUserProfileGradientColors" /* 7922 */;
+import native from "native" /* 4787 */;
+import LinearGradientDefault from "LinearGradient" /* 5387 */;
+import useUserProfileColors from "useUserProfileColors" /* 8340 */;
+import useUserProfileGradientColors from "useUserProfileGradientColors" /* 8341 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -21,7 +21,7 @@ let hasOwnProperty;
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
 const jsx = Fragment.jsx;
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileFixedBackground(arg0) {
   let bannerHeight;
   let gradientHeight;
   let primaryColor;
@@ -128,7 +128,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   cResult[2] = theme;
   cResult[3] = obj6;
   tmp5 = obj6;
-}) : ((style) => {
+}) : (function UserProfileFixedBackground(style) {
   let bannerHeight;
   let gradientHeight;
   let primaryColor;

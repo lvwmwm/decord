@@ -1,14 +1,14 @@
-// Module ID: 1469
-// Function ID: 1470
+// Module ID: 1481
+// Function ID: 1482
 // Name: utils/NetworkUtils
-// Dependencies: [1085, 3, 1470, 2]
+// Dependencies: [3, 1482, 2]
 
-// Module 1469 (utils/NetworkUtils)
+// Module 1481 (utils/NetworkUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants from "Constants" /* 1085 */;
-import configure_mod from "configure" /* 1470 */;
+import configure2 from "configure" /* 1482 */;
 import size from "module_2" /* 2 */;
 
+const configure_mod = configure2;
 let _null;
 
 function notifyListeners(isConnected) {
@@ -20,12 +20,11 @@ function notifyListeners(isConnected) {
   ({ type, details } = isConnected);
   obj = { type, effectiveSpeed: cellularGeneration, serviceProvider: carrier };
   cellularGeneration = null;
-  const tmp = NetworkConnectionTypes;
-  if (type === NetworkConnectionTypes.CELLULAR) {
+  if (type === configure2.NetInfoStateType.cellular) {
     cellularGeneration = details.cellularGeneration;
   }
   carrier = null;
-  if (type === tmp.CELLULAR) {
+  if (type === configure2.NetInfoStateType.cellular) {
     carrier = details.carrier;
   }
   flag = isConnected;
@@ -33,7 +32,7 @@ function notifyListeners(isConnected) {
   if (isConnected == null) {
     flag = false;
   }
-  obj.log("Network status changed: isConnected:" + isConnected + " type:" + isConnected.type + " speed:" + obj.cellularGeneration);
+  obj.log("Network status changed: isConnected:" + isConnected + " type:" + isConnected.type + " speed:" + obj.effectiveSpeed);
   const item = arr.forEach((fn) => {
     flag = isConnected;
     if (isConnected == null) {
@@ -43,7 +42,6 @@ function notifyListeners(isConnected) {
   });
   const item1 = closure_6.forEach((fn) => fn(obj));
 }
-const NetworkConnectionTypes = Constants.NetworkConnectionTypes;
 let obj = new LoggerDefault("NetworkUtils");
 obj.enableNativeLogger(true);
 let closure_4 = [];
@@ -125,12 +123,13 @@ const obj2 = {
       ({ type, details } = result);
       obj = { type, effectiveSpeed: cellularGeneration, serviceProvider: carrier };
       cellularGeneration = null;
-      const tmp = constants;
-      if (type === constants.CELLULAR) {
+      const tmp = require;
+      const tmp2 = dependencyMap;
+      if (type === configure2.NetInfoStateType.cellular) {
         cellularGeneration = details.cellularGeneration;
       }
       carrier = null;
-      if (type === tmp.CELLULAR) {
+      if (type === tmp(tmp2[1]).NetInfoStateType.cellular) {
         carrier = details.carrier;
       }
       return obj;

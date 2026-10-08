@@ -1,18 +1,18 @@
-// Module ID: 16890
-// Function ID: 16891
+// Module ID: 17171
+// Function ID: 17172
 // Name: useSearchHostSurface
-// Dependencies: [16834, 558, 1491, 4586, 587, 2]
+// Dependencies: [17113, 558, 1503, 4778, 587, 2]
 
-// Module 16890 (useSearchHostSurface)
+// Module 17171 (useSearchHostSurface)
 import nativeDefault from "native" /* 587 */;
-import Link from "Link" /* 1491 */;
-import useToken2 from "useToken" /* 4586 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 16834 */;
+import Link from "Link" /* 1503 */;
+import useToken2 from "useToken" /* 4778 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 17113 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const SearchNavigatorScreens = SearchNavigatorConstants.SearchNavigatorScreens;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSearchHostSurfaceColor() {
   let MOBILE_ACTIONSHEET_BACKGROUND;
   const obj = Link;
   const route = obj.useRoute();
@@ -24,7 +24,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     MOBILE_ACTIONSHEET_BACKGROUND = nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND;
   }
   return useToken(MOBILE_ACTIONSHEET_BACKGROUND);
-}) : (() => {
+}) : (function useSearchHostSurfaceColor() {
   let MOBILE_ACTIONSHEET_BACKGROUND;
   const obj = Link;
   const route = obj.useRoute();

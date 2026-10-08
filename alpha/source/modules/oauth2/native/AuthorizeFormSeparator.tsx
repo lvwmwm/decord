@@ -1,14 +1,14 @@
-// Module ID: 8975
-// Function ID: 8976
+// Module ID: 12880
+// Function ID: 12881
 // Name: AuthorizeFormSeparator
-// Dependencies: [17, 21, 4896, 587, 558, 576, 2]
+// Dependencies: [17, 21, 5090, 587, 558, 576, 2]
 
-// Module 8975 (AuthorizeFormSeparator)
+// Module 12880 (AuthorizeFormSeparator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ const jsx = Fragment.jsx;
 let obj = { separator: obj2 };
 obj2 = { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 let closure_4 = createStyles.createStyles(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AuthorizeFormSeparator() {
   let tmp3;
   const obj = react;
   const cResult = obj.c(2);
@@ -32,7 +32,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => <View style={closure_4().separator} />);
+}) : (function AuthorizeFormSeparator() {
+  return <View style={closure_4().separator} />;
+});
 const result = size.fileFinishedImporting("modules/oauth2/native/AuthorizeFormSeparator.tsx");
 
 export const AuthorizeFormSeparator = tmp2;

@@ -1,12 +1,12 @@
-// Module ID: 15791
-// Function ID: 15792
+// Module ID: 16049
+// Function ID: 16050
 // Name: CollectiblesProgressiveImage
-// Dependencies: [109, 19, 17, 21, 558, 576, 4618, 4897, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 4810, 5091, 2]
 
-// Module 15791 (CollectiblesProgressiveImage)
+// Module 16049 (CollectiblesProgressiveImage)
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -21,7 +21,7 @@ let metroRequire;
 let closure_3 = ["source", "style"];
 ({ View: hasOwnProperty, StyleSheet: metroRequire } = react_native);
 const jsx = Fragment.jsx;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollectiblesProgressiveImage(arg0) {
   let sharedValue;
   let source;
   let style;
@@ -48,10 +48,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp5 = cResult[2];
     tmp6 = cResult[3];
   }
-  const tmpResult = tmp(4618);
+  const tmpResult = tmp(4810);
   sharedValue = tmpResult.useSharedValue(0);
   if (cResult[4] !== sharedValue) {
-    const fn = function h() {
+    function handleImageLoad() {
       let Easing;
       set = sharedValue.set;
       const obj = { duration: 500, easing: Easing.inOut(ReanimatedRexport.Easing.ease) };
@@ -59,10 +59,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       timing;
       Easing = ReanimatedRexport.Easing;
       const result = set(withTiming(1, obj));
-    };
+    }
     cResult[4] = sharedValue;
-    cResult[5] = fn;
-    tmp11 = fn;
+    cResult[5] = handleImageLoad;
+    tmp11 = handleImageLoad;
   } else {
     tmp11 = cResult[5];
   }
@@ -106,13 +106,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[11] = tmp12;
   cResult[12] = tmp18;
   tmp16 = tmp18;
-}) : ((arg0) => {
+}) : (function CollectiblesProgressiveImage(arg0) {
   let source;
   let style;
   ({ source, style } = arg0);
   let sharedValue;
   const merged = Object.assign(arg0, Object.assign({ source: 0, style: 0 }));
-  let obj = sharedValue(4618);
+  let obj = sharedValue(4810);
   sharedValue = obj.useSharedValue(0);
   const Image = ReanimatedRexportDefault.Image;
   const merged1 = Object.assign(merged);

@@ -1,17 +1,17 @@
-// Module ID: 14227
-// Function ID: 14228
+// Module ID: 14051
+// Function ID: 14052
 // Name: AILoader
-// Dependencies: [19, 17, 14228, 21, 4896, 558, 576, 4618, 4897, 14229, 4595, 2]
+// Dependencies: [19, 17, 14052, 21, 5090, 558, 576, 4810, 5091, 14053, 4787, 2]
 
-// Module 14227 (AILoader)
+// Module 14051 (AILoader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
-import AIGlyphText from "AIGlyphText" /* 14229 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
+import AIGlyphText from "AIGlyphText" /* 14053 */;
 import react from "react" /* 19 */;
-import AILoaderConstants from "AILoaderConstants" /* 14228 */;
-import createStyles from "createStyles" /* 4896 */;
+import AILoaderConstants from "AILoaderConstants" /* 14052 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ let closure_16 = createStyles.createStyles((width) => {
 const __initData = { code: "function AILoaderNativeTsx2(){const{trackStepAt,progress,size}=this.__closure;return{transform:[{translateY:-trackStepAt(progress.get())*size}]};}" };
 const __initData2 = { code: "function AILoaderNativeTsx3(){const{trackStepAt,progress,size}=this.__closure;return{transform:[{translateY:-trackStepAt(progress.get())*size}]};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Slot(index) {
   let color;
   const tmp2 = color;
   let obj = index(color[6]);
@@ -212,7 +212,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
   cResult[5] = items;
   tmp7 = items;
   tmp6 = fn;
-}) : ((index) => {
+}) : (function Slot(index) {
   let color;
   let cycle;
   index = index.index;
@@ -221,7 +221,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
   const stagger = index.stagger;
   const tmp = closure_16(size);
   const glyph = tmp;
-  let obj = index(4618);
+  let obj = index(4810);
   const sharedValue = obj.useSharedValue(0);
   let items = [cycle, index, sharedValue, stagger];
   const effect = cycle.useEffect(() => {
@@ -240,7 +240,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
       return obj.cancelAnimation(sharedValue);
     };
   }, items);
-  let obj2 = index(4618);
+  let obj2 = index(4810);
   class R {
     constructor() {
       let items;
@@ -268,12 +268,12 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
   R.__initData = __initData2;
   const animatedStyle = obj2.useAnimatedStyle(R);
   ({ style: animatedStyle, children: closure_7.map((children) => jsx(AIGlyphText.AIGlyphText, { size, color: dependencyMap, allowFontScaling: false, style: glyph.glyph, children }, children)) });
-  View = size(4618).View;
+  View = size(4810).View;
   return <stagger style={tmp.slot}>{null}</stagger>;
 });
 const memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function AILoader(arg0) {
   let accessibilityLabel;
   let color;
   let cycle;
@@ -293,7 +293,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     str = color;
   }
   const tmp4 = closure_16(num);
-  const reducedMotion = num2.useContext(tmp(4595).AccessibilityPreferencesContext).reducedMotion;
+  const reducedMotion = num2.useContext(tmp(4787).AccessibilityPreferencesContext).reducedMotion;
   const tmp5 = reducedMotion.enabled ? closure_8 : closure_5;
   dependencyMap = tmp5;
   num2 = 0;
@@ -361,7 +361,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   cResult[1] = tmp4.loader;
   cResult[2] = items;
   tmp7 = items;
-}) : ((size) => {
+}) : (function AILoader(size) {
   let cycle;
   let items;
   let obj2;
@@ -379,7 +379,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   let num2;
   const style = size.style;
   const tmp = closure_16(num);
-  const reducedMotion = num2.useContext(num(4595).AccessibilityPreferencesContext).reducedMotion;
+  const reducedMotion = num2.useContext(num(4787).AccessibilityPreferencesContext).reducedMotion;
   dependencyMap = reducedMotion.enabled ? closure_8 : closure_5;
   num2 = 0;
   if (!reducedMotion.enabled) {

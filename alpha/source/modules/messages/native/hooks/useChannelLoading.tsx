@@ -1,18 +1,18 @@
-// Module ID: 11169
-// Function ID: 11170
+// Module ID: 11289
+// Function ID: 11290
 // Name: useChannelLoading
-// Dependencies: [32, 19, 558, 576, 11170, 9867, 5598, 2]
+// Dependencies: [32, 19, 558, 576, 11290, 9317, 5393, 2]
 
-// Module 11169 (useChannelLoading)
-import hooks_useMountEffectDefault from "hooks/useMountEffect" /* 5598 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9867 */;
-import ChannelLatestMessageLoadingStatsManagerDefault from "ChannelLatestMessageLoadingStatsManager" /* 11170 */;
+// Module 11289 (useChannelLoading)
+import hooks_useMountEffectDefault from "hooks/useMountEffect" /* 5393 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9317 */;
+import ChannelLatestMessageLoadingStatsManagerDefault from "ChannelLatestMessageLoadingStatsManager" /* 11290 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelLoading(channelId) {
   let first;
   let first1;
   let oldestUnreadMessageId;
@@ -49,46 +49,48 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
               tmp6 = cResult[9];
             }
             jumpTargetId(tmp[6])(tmp6);
-            if (cResult[10] === first1) {
-              let tmp9;
-              if (cResult[11] === tmp5) {
-                tmp9 = cResult[12];
+            class O {
+              constructor() {
+                tmp = closure_5(false);
+                return () => {
+                  first1.cancel();
+                };
               }
-              return tmp9;
             }
             let obj2 = { channelLatestMessageLoadingStatsManager: first1, startOrCancelLatestMessagesLoad: tmp5 };
             cResult[10] = first1;
             cResult[11] = tmp5;
             cResult[12] = obj2;
-            tmp9 = obj2;
           }
-          const fn3 = function p() {
-            closure_5(false);
-            return () => {
-              first1.cancel();
-            };
-          };
+          class O {
+            constructor() {
+              tmp = closure_5(false);
+              return () => {
+                first1.cancel();
+              };
+            }
+          }
           cResult[7] = first1;
           cResult[8] = tmp5;
-          cResult[9] = fn3;
-          tmp6 = fn3;
+          cResult[9] = O;
+          tmp6 = O;
         }
       }
     }
   }
-  const fn2 = function h(first1) {
+  function startOrCancelLatestMessagesLoad(first1) {
     const obj = messages_MessagesUtils;
     const obj2 = { jumpTargetId, oldestUnreadMessageId, shouldJumpToOriginalPost: shouldJumpToOriginalPost(first1), channelId, tracker: first1 };
     const result = obj.startOrCancelChannelLatestMessagesLoad(obj2);
-  };
+  }
   cResult[1] = channelId;
   cResult[2] = first1;
   cResult[3] = jumpTargetId;
   cResult[4] = oldestUnreadMessageId;
   cResult[5] = shouldJumpToOriginalPost;
-  cResult[6] = fn2;
-  tmp5 = fn2;
-}) : ((arg0) => {
+  cResult[6] = startOrCancelLatestMessagesLoad;
+  tmp5 = startOrCancelLatestMessagesLoad;
+}) : (function useChannelLoading(arg0) {
   let channelId;
   let first;
   let jumpTargetId;

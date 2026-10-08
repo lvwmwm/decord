@@ -1,174 +1,192 @@
 // Module ID: 1906
 // Function ID: 1907
-// Dependencies: []
+// Dependencies: [1907, 1909, 1911, 1908]
 
 // Module 1906
-const obj = {
-  locale: "en",
-  pluralRuleFunction(arg0, arg1) {
-    let str3;
-    const str = String(arg0);
-    const parts = str.split(".");
-    const tmp2 = parts[1];
-    let substr1 = Number(parts[0]) == arg0;
-    let substr = substr1;
-    if (substr) {
-      const first = parts[0];
-      substr = first.slice(-1);
+import extend from "extend" /* 1908 */;
+import _mod1909 from "module_1909" /* 1909 */;
+import Compiler from "Compiler" /* 1911 */;
+import defineProperty_mod from "defineProperty" /* 1907 */;
+
+let obj2;
+class MessageFormat {
+  constructor(str, arg1, arg2) {
+    let defineProperty;
+    let __parseResult = str;
+    if (typeof str === "string") {
+      __parseResult = MessageFormat.__parse(str);
     }
-    if (substr1) {
-      const first1 = parts[0];
-      substr1 = first1.slice(-2);
+    if (__parseResult) {
+      if ("messageFormatPattern" === __parseResult.type) {
+        const _mergeFormatsResult = this._mergeFormats(MessageFormat.formats, arg2);
+        const obj = { value: this._resolveLocale(arg1) };
+        defineProperty = defineProperty.defineProperty;
+        defineProperty;
+        defineProperty(this, "_locale", obj);
+        const self2 = this;
+        let closure_0 = this._compilePattern(__parseResult, arg1, _mergeFormatsResult, this._findPluralRuleFunction(this._locale));
+        const self = this;
+        this.format = (arg0) => self._format(closure_0, arg0);
+      }
     }
-    if (arg1) {
-      let str4;
-      if (1 != substr) {
-        let str5;
-        if (2 != substr) {
-          let str7 = "other";
-          if (3 == substr) {
-            str7 = "other";
-            if (13 != substr1) {
-              str7 = "few";
+    const typeError = new TypeError("A message must be provided as a String or AST.");
+    throw typeError;
+  }
+  resolvedOptions() {
+    return { locale: this._locale };
+  }
+  _compilePattern(arg0, arg1, arg2, arg3) {
+    const _default = new Compiler.default(arg1, arg2, arg3);
+    return _default.compile(arg0);
+  }
+  _findPluralRuleFunction(arg0) {
+    const __localeData__ = MessageFormat.__localeData__;
+    let tmp = __localeData__[arg0.toLowerCase(arg0)];
+    if (tmp) {
+      while (!tmp.pluralRuleFunction) {
+        let parentLocale = tmp.parentLocale;
+        if (parentLocale) {
+          let str = tmp.parentLocale;
+          parentLocale = __localeData__[str.toLowerCase(str)];
+        }
+        tmp = parentLocale;
+      }
+      return tmp.pluralRuleFunction;
+    }
+    const error = new Error("Locale data added to IntlMessageFormat is missing a `pluralRuleFunction` for :" + arg0);
+    throw error;
+  }
+  _format(arg0, arg1) {
+    let id;
+    const self = this;
+    let num = 0;
+    let str = "";
+    let str2 = "";
+    if (0 < arg0.length) {
+      while (true) {
+        let text;
+        let obj = arg0[num];
+        if (typeof obj !== "string") {
+          id = obj.id;
+          if (!arg1) {
+            break;
+          } else {
+            let hop = extend.hop;
+            if (!hop.call(arg1, id)) {
+              break;
+            } else {
+              let tmp8 = arg1[id];
+              if (obj.options) {
+                let _format = self._format;
+                text = `${_format(obj.getOption(tmp8), arg1)}`;
+              } else {
+                text = `${obj.format(tmp8)}`;
+              }
             }
           }
-          str5 = str7;
         } else {
-          str5 = "two";
+          text = str + obj;
         }
-        str4 = str5;
-      } else {
-        str4 = "one";
+        num = num + 1;
+        str = text;
+        str2 = text;
       }
-      str3 = str4;
-    } else {
-      str3 = "other";
-      if (1 == arg0) {
-        str3 = "other";
-        if (!tmp2) {
-          str3 = "one";
+      const _Error = Error;
+      const self2 = this;
+      const self3 = this;
+      const error = new Error("A value must be provided for: " + id);
+      throw error;
+    }
+    return str2;
+  }
+  _mergeFormats(obj, arg1) {
+    obj = {};
+    for (const key10006 in obj) {
+      let tmp5 = require;
+      let hop2 = extend.hop;
+      if (!hop2.call(obj, key10006)) {
+        continue;
+      } else {
+        let tmp5Result = tmp5(1907);
+        let objCreateResult = tmp5Result.objCreate(obj[key10006]);
+        obj[key10006] = objCreateResult;
+        let callResult = arg1;
+        if (callResult) {
+          let hop = tmp5(1908).hop;
+          callResult = hop.call(arg1, key10006);
         }
+        if (!callResult) {
+          continue;
+        } else {
+          let tmp5Result2 = tmp5(1908);
+          let extendResult = tmp5Result2.extend(objCreateResult, arg1[key10006]);
+          continue;
+        }
+        continue;
+      }
+      continue;
+    }
+    return obj;
+  }
+  _resolveLocale(str) {
+    let items1 = str;
+    if (typeof str === "string") {
+      const items = [str];
+      items1 = items;
+    }
+    if (!items1) {
+      items1 = [];
+    }
+    const combined = items1.concat(MessageFormat.defaultLocale);
+    let num = 0;
+    if (0 < combined.length) {
+      while (true) {
+        str = combined[num];
+        let str2 = str.toLowerCase();
+        let parts = str2.split("-");
+        if (parts.length) {
+          let tmp3 = tmp[parts.join(parts, "-")];
+          while (!tmp3) {
+            let arr = parts.pop();
+            continue;
+          }
+          return tmp3.locale;
+        }
+        num = num + 1;
       }
     }
-    return str3;
+    const arr2 = combined.pop();
+    const error = new Error("No locale data has been added to IntlMessageFormat for: " + combined.join(", ") + ", or the default locale: " + arr2);
+    throw error;
+  }
+}
+let defineProperty = defineProperty_mod;
+let obj = { enumerable: true, value: obj2 };
+obj2 = { number: { currency: { style: "currency" }, percent: { style: "percent" } }, date: { short: { month: "numeric", day: "numeric", year: "2-digit" }, medium: { month: "short", day: "numeric", year: "numeric" }, long: { month: "long", day: "numeric", year: "numeric" }, full: { weekday: "long", month: "long", day: "numeric", year: "numeric" } }, time: { short: { hour: "numeric", minute: "numeric" }, medium: { hour: "numeric", minute: "numeric", second: "numeric" }, long: { hour: "numeric", minute: "numeric", second: "numeric", timeZoneName: "short" }, full: { hour: "numeric", minute: "numeric", second: "numeric", timeZoneName: "short" } } };
+defineProperty.defineProperty(MessageFormat, "formats", obj);
+defineProperty = defineProperty_mod;
+const obj3 = { value: defineProperty.objCreate(null) };
+defineProperty = defineProperty_mod;
+defineProperty(MessageFormat, "__localeData__", obj3);
+defineProperty = defineProperty_mod;
+const obj4 = {
+  value(locale) {
+    const tmp = locale;
+    if (tmp) {
+      if (locale.locale) {
+        const str = locale.locale;
+        MessageFormat.__localeData__[str.toLowerCase()] = locale;
+      }
+    }
+    const error = new Error("Locale data provided to IntlMessageFormat is missing a `locale` property");
+    throw error;
   }
 };
-globalThis.IntlMessageFormat.__addLocaleData(obj);
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-001", parentLocale: "en" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-150", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-AG", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-AI", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-AS", parentLocale: "en" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-AT", parentLocale: "en-150" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-AU", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-BB", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-BE", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-BI", parentLocale: "en" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-BM", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-BS", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-BW", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-BZ", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-CA", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-CC", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-CH", parentLocale: "en-150" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-CK", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-CM", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-CX", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-CY", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-DE", parentLocale: "en-150" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-DG", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-DK", parentLocale: "en-150" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-DM", parentLocale: "en-001" });
-const obj2 = {
-  locale: "en-Dsrt",
-  pluralRuleFunction(arg0, arg1) {
-    return "other";
-  }
-};
-globalThis.IntlMessageFormat.__addLocaleData(obj2);
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-ER", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-FI", parentLocale: "en-150" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-FJ", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-FK", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-FM", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-GB", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-GD", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-GG", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-GH", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-GI", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-GM", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-GU", parentLocale: "en" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-GY", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-HK", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-IE", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-IL", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-IM", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-IN", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-IO", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-JE", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-JM", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-KE", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-KI", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-KN", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-KY", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-LC", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-LR", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-LS", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-MG", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-MH", parentLocale: "en" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-MO", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-MP", parentLocale: "en" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-MS", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-MT", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-MU", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-MW", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-MY", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-NA", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-NF", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-NG", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-NL", parentLocale: "en-150" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-NR", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-NU", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-NZ", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-PG", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-PH", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-PK", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-PN", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-PR", parentLocale: "en" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-PW", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-RW", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-SB", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-SC", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-SD", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-SE", parentLocale: "en-150" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-SG", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-SH", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-SI", parentLocale: "en-150" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-SL", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-SS", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-SX", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-SZ", parentLocale: "en-001" });
-const obj3 = {
-  locale: "en-Shaw",
-  pluralRuleFunction(arg0, arg1) {
-    return "other";
-  }
-};
-globalThis.IntlMessageFormat.__addLocaleData(obj3);
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-TC", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-TK", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-TO", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-TT", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-TV", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-TZ", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-UG", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-UM", parentLocale: "en" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-US", parentLocale: "en" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-VC", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-VG", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-VI", parentLocale: "en" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-VU", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-WS", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-ZA", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-ZM", parentLocale: "en-001" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "en-ZW", parentLocale: "en-001" });
+defineProperty.defineProperty(MessageFormat, "__addLocaleData", obj4);
+defineProperty = defineProperty_mod;
+const obj5 = { value: _mod1909.default.parse };
+defineProperty.defineProperty(MessageFormat, "__parse", obj5);
+defineProperty = defineProperty_mod;
+defineProperty.defineProperty(MessageFormat, "defaultLocale", { enumerable: true, writable: true, value: "emoji" });
+
+export default MessageFormat;

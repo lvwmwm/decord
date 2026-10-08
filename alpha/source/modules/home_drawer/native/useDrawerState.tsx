@@ -1,10 +1,10 @@
-// Module ID: 15991
-// Function ID: 15992
+// Module ID: 16251
+// Function ID: 16252
 // Name: useDrawerState
-// Dependencies: [32, 19, 558, 576, 1491, 4742, 2]
+// Dependencies: [32, 19, 558, 576, 1503, 4936, 2]
 
-// Module 15991 (useDrawerState)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4742 */;
+// Module 16251 (useDrawerState)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4936 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require, navigation;
 
 let _slicedToArray = _slicedToArray_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDrawerOpen(arg0) {
   let closure_0;
   let closure_2;
   let tmp = _require;
@@ -42,7 +42,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const effect = obj3.useEffect(tmp10, tmp11);
       return tmp9;
     }
-    const fn2 = function v() {
+    const fn2 = function l() {
       let handleStateChange;
       const tmp = handleStateChange;
       if (tmp) {
@@ -126,7 +126,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = navigation;
   cResult[2] = fn;
   tmp6 = fn;
-}) : (() => {
+}) : (function useDrawerOpen() {
   let closure_2;
   let first;
   let flag = arg0;

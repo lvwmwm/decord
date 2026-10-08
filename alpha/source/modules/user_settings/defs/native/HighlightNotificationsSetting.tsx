@@ -1,16 +1,16 @@
-// Module ID: 15361
-// Function ID: 15362
+// Module ID: 15623
+// Function ID: 15624
 // Name: HighlightNotificationsSetting
-// Dependencies: [2074, 7645, 1085, 558, 576, 504, 11142, 1126, 15362, 2]
+// Dependencies: [2086, 7966, 1085, 558, 576, 504, 11262, 1126, 15624, 2]
 
-// Module 15361 (HighlightNotificationsSetting)
+// Module 15623 (HighlightNotificationsSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -19,7 +19,7 @@ let tmp;
 const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserSettingsSections = Constants.UserSettingsSections;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHighlightNotifications() {
   let guildCount;
   let tmp4;
   let tmp5;
@@ -39,7 +39,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useHighlightNotifications() {
   let guildCount;
   const items = [GuildStore];
   const obj = get_initialized;

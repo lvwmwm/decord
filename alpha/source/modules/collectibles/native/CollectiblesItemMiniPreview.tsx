@@ -1,27 +1,27 @@
-// Module ID: 12989
-// Function ID: 12990
+// Module ID: 13267
+// Function ID: 13268
 // Name: CollectiblesItemMiniPreview
-// Dependencies: [19, 17, 7071, 1978, 7072, 7073, 7904, 8487, 21, 587, 4896, 558, 576, 8499, 8511, 8512, 5981, 8490, 1977, 8507, 2]
+// Dependencies: [19, 17, 7257, 1990, 7258, 7259, 8323, 8971, 21, 587, 5090, 558, 576, 8983, 8995, 8996, 6164, 8974, 1989, 8991, 2]
 
-// Module 12989 (CollectiblesItemMiniPreview)
+// Module 13267 (CollectiblesItemMiniPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import NameplateRecord from "NameplateRecord" /* 1978 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7071 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7072 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7073 */;
-import ProfileFrameConstants from "ProfileFrameConstants" /* 7904 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 8487 */;
-import ProfileEffectDefault from "ProfileEffect" /* 8490 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8499 */;
-import NameplateDefault from "Nameplate" /* 8507 */;
-import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 8511 */;
-import _modDef8512 from "module_8512" /* 8512 */;
+import NameplateRecord from "NameplateRecord" /* 1990 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7257 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7258 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7259 */;
+import ProfileFrameConstants from "ProfileFrameConstants" /* 8323 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 8971 */;
+import ProfileEffectDefault from "ProfileEffect" /* 8974 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8983 */;
+import NameplateDefault from "Nameplate" /* 8991 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 8995 */;
+import _modDef8996 from "module_8996" /* 8996 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let c9;
 let obj2;
 let size;
 let tmp;
-const utils = tmp(1977);
+const utils = tmp(1989);
 const View = react_native.View;
 const isAvatarDecorationRecord = AvatarDecorationRecord.isAvatarDecorationRecord;
 const isNameplateRecord = NameplateRecord.isNameplateRecord;
@@ -46,7 +46,7 @@ size = { overflow: "hidden", width: "100%", height: "100%", borderRadius: native
 createStyles = createStyles.createStyles;
 obj2 = { overflow: "hidden", borderTopRightRadius: nativeDefault.radii.xs, borderBottomRightRadius: nativeDefault.radii.xs };
 let closure_12 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function CollectiblesItemMiniPreview(arg0) {
   let item;
   let items;
   let tmp5;
@@ -144,7 +144,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       let tmp34;
       const _Symbol = Symbol;
       if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj7 = { uri: _modDef8512 };
+        const obj7 = { uri: _modDef8996 };
         cResult[21] = obj7;
         tmp28 = obj7;
       } else {
@@ -265,7 +265,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[3] = tmp5;
   cResult[4] = items2;
   tmp6 = items2;
-}) : ((arg0) => {
+}) : (function CollectiblesItemMiniPreview(arg0) {
   let item;
   let items1;
   let items2;
@@ -294,7 +294,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     const obj7 = { style: items, children: authStore(View, obj8) };
     obj8 = { style: tmp.profileEffect, accessible: false, importantForAccessibility: "no", children: items1 };
     const obj9 = { source: obj10, style: tmp.sampleProfile, resizeMode: "cover" };
-    obj10 = { uri: _modDef8512 };
+    obj10 = { uri: _modDef8996 };
     const tmp17 = FastImageDefault;
     items1 = [React4(tmp17, obj9), ];
     const obj11 = { skuId: item.skuId, bannerAdjustment: 0, useThumbnail: true };

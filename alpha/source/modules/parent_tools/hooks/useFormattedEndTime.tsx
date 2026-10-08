@@ -1,12 +1,12 @@
-// Module ID: 17465
-// Function ID: 17466
+// Module ID: 17747
+// Function ID: 17748
 // Name: useFormattedEndTime
-// Dependencies: [1377, 1126, 558, 576, 504, 2]
+// Dependencies: [1389, 1126, 558, 576, 504, 2]
 
-// Module 17465 (useFormattedEndTime)
+// Module 17747 (useFormattedEndTime)
 import react from "react" /* 576 */;
 import intl from "intl" /* 1126 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ let currentUser;
 
 let tmp;
 const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormattedEndTime() {
   let tmp4;
   let tmp5;
   const obj = react;
@@ -49,7 +49,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useFormattedEndTime() {
   const items = [UserStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, function() {

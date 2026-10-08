@@ -1,37 +1,36 @@
-// Module ID: 8406
-// Function ID: 8407
+// Module ID: 8903
+// Function ID: 8904
 // Name: GameProfileStoreLinks
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 8361, 4571, 5601, 1126, 4860, 8387, 8352, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 8859, 4763, 5375, 1126, 5054, 8885, 8850, 2]
 
-// Module 8406 (GameProfileStoreLinks)
+// Module 8903 (GameProfileStoreLinks)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import LinkingDefault from "Linking" /* 4571 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4860 */;
-import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 8361 */;
-import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 8387 */;
+import LinkingDefault from "Linking" /* 4763 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5054 */;
+import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 8859 */;
+import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 8885 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const GameProfileStoreLinksActionSheetDefault = GameProfileStoreLinksActionSheet;
-let data, websiteButtons;
 
 let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const components_Button_Button = tmp(5601);
+const components_Button_Button = tmp(5375);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { container: obj2 };
 obj2 = { flexDirection: "column", gap: nativeDefault.space.PX_8 };
 let closure_6 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((data) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebsiteGameStoreLinkButton(data) {
   const obj = react2;
   const cResult = obj.c(9);
   data = data.data;
@@ -76,7 +75,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((data) => {
   cResult[3] = trackAction;
   cResult[4] = fn;
   tmp6 = fn;
-}) : ((data) => {
+}) : (function WebsiteGameStoreLinkButton(data) {
   data = data.data;
   const trackAction = data.trackAction;
   const tmp = useOpenExternalUrlFromGameProfileDefault;
@@ -94,7 +93,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((data) => {
   return React3(components_Button_Button.Button, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((websiteButtons) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileStoreLinks(websiteButtons) {
   let game;
   let items;
   let items1;
@@ -248,7 +247,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((websiteButtons) => {
     }
   }
   return null;
-}) : ((websiteButtons) => {
+}) : (function GameProfileStoreLinks(websiteButtons) {
   let game;
   let intl;
   let items;

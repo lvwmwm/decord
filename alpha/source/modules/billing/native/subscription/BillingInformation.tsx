@@ -1,9 +1,9 @@
-// Module ID: 13217
-// Function ID: 13218
+// Module ID: 13517
+// Function ID: 13518
 // Name: BillingInformation
-// Dependencies: [5, 1085, 558, 576, 13210, 4534, 1370, 10796, 1126, 2]
+// Dependencies: [5, 1085, 558, 576, 13510, 4726, 1382, 12748, 1126, 2]
 
-// Module 13217 (BillingInformation)
+// Module 13517 (BillingInformation)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 let _require, c0, c1;
 
 const SubscriptionStatusTypes = Constants.SubscriptionStatusTypes;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPurchasedViaApple, subscriptionPeriodStart, arg2, arg3, arg4) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBillingInformationNative(isPurchasedViaApple, subscriptionPeriodStart, arg2, arg3, arg4) {
   let closure_0;
   let tmp6;
   const tmp2 = dependencyMap;
@@ -107,11 +107,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPurchasedViaApple,
                             }
                           }
                         });
-                        const fn = function() {
+                        function t6() {
                           return closure_0(...arguments);
-                        };
-                        cResult[10] = fn;
-                        tmp18 = fn;
+                        }
+                        cResult[10] = t6;
+                        tmp18 = t6;
                       } else {
                         tmp18 = cResult[10];
                       }
@@ -144,7 +144,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPurchasedViaApple,
     cResult[7] = billingInformationString;
     tmp7 = billingInformationString;
   }
-}) : ((isPurchasedViaApple, subscriptionPeriodStart, arg2, flag) => {
+}) : (function useBillingInformationNative(isPurchasedViaApple, subscriptionPeriodStart, arg2, flag) {
   let closure_0;
   let tmp = arg2;
   if (arg2 === undefined) {
@@ -165,10 +165,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPurchasedViaApple,
   if (null == subscriptionPeriodStart) {
     return null;
   } else {
-    const tmp2Result = tmp2(4534);
+    const tmp2Result = tmp2(4726);
     const billingInformationString = tmp2Result.getBillingInformationString(isPurchasedViaApple, subscriptionPeriodStart, tmp, flag, fractionalPremiumInfo);
     let formatResult = billingInformationString;
-    const tmp2Result2 = tmp2(1370);
+    const tmp2Result2 = tmp2(1382);
     if (tmp2Result2.isIOS()) {
       formatResult = billingInformationString;
       if (isPurchasedViaApple.isPurchasedViaApple) {
@@ -180,7 +180,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPurchasedViaApple,
             const format = intl.format;
             let obj3 = {
               renewalDate: subscriptionPeriodStart.subscriptionPeriodStart,
-              onSubscriptionManagementClick: function() {
+              onSubscriptionManagementClick() {
                           return closure_0(...arguments);
                         }
             };

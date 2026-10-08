@@ -1,9 +1,9 @@
-// Module ID: 4585
-// Function ID: 4586
+// Module ID: 4777
+// Function ID: 4778
 // Name: BaseIconImage
-// Dependencies: [19, 17, 21, 558, 576, 4586, 2]
+// Dependencies: [19, 17, 21, 558, 576, 4778, 2]
 
-// Module 4585 (BaseIconImage)
+// Module 4777 (BaseIconImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -12,11 +12,11 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useToken = tmp(4586);
+const useToken = tmp(4778);
 const Image = react_native.Image;
 const jsx = Fragment.jsx;
-let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "start", height: "unicodeVersion" }, refresh_sm: { width: 18, height: 18 } };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "Array", height: "Reflect" }, refresh_sm: { width: 18, height: 18 } };
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseIconImage(arg0) {
   let accessibilityLabel;
   let accessible;
   let color;
@@ -94,7 +94,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = tmp7;
   cResult[7] = items;
   tmp10 = items;
-}) : ((size) => {
+}) : (function BaseIconImage(size) {
   let accessibilityLabel;
   let accessible;
   let resizeMode;

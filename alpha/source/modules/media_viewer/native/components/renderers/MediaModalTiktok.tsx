@@ -1,112 +1,82 @@
-// Module ID: 7981
-// Function ID: 7982
+// Module ID: 8398
+// Function ID: 8399
 // Name: MediaModalTiktok
-// Dependencies: [32, 109, 19, 21, 7982, 558, 576, 7957, 7946, 7947, 7948, 2]
+// Dependencies: [32, 19, 21, 8399, 558, 576, 5928, 8364, 8365, 8366, 2]
 // Exports: createTiktokVideoControls
 
-// Module 7981 (MediaModalTiktok)
+// Module 8398 (MediaModalTiktok)
 import Fragment from "Fragment" /* 21 */;
-import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 7946 */;
-import useVideoControls from "useVideoControls" /* 7947 */;
-import MediaModalWebView from "MediaModalWebView" /* 7982 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
+import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8364 */;
+import useVideoControls from "useVideoControls" /* 8365 */;
+import MediaModalWebViewBase from "MediaModalWebViewBase" /* 8399 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, importDefault;
+let baseURL, c4;
 
-let closure_3 = ["visible", "style", "source", "controls"];
-let _slicedToArray = _slicedToArray_mod;
-let _objectWithoutProperties = _objectWithoutProperties_mod;
 let react = react_mod;
-const jsx = Fragment.jsx;
-let c8 = "https://www.tiktok.com/player/v1/";
-let closure_9 = { controls: 0, enable_music_info: 0, enable_timestamp: 0, utm_source: "discord.gg" };
-let c10 = "\n  window.addEventListener('message', function(event) {\n    if (!event.data[\"x-tiktok-player\"]) {\n      return;\n    }\n    window.ReactNativeWebView.postMessage(JSON.stringify(event.data));\n  }, true);\n";
-let obj = { "-1": MediaModalWebView.PlayerState.UNSTARTED, 0: null, 1: null, 2: null, 3: null };
-obj[0] = MediaModalWebView.PlayerState.ENDED;
-obj[1] = MediaModalWebView.PlayerState.PLAYING;
-obj[2] = MediaModalWebView.PlayerState.PAUSED;
-obj[3] = MediaModalWebView.PlayerState.BUFFERING;
+let jsx = Fragment.jsx;
+let c6 = "https://www.tiktok.com/player/v1/";
+let closure_7 = { controls: 0, enable_music_info: 0, enable_timestamp: 0, utm_source: "discord.gg" };
+let c8 = "\n  window.addEventListener('message', function(event) {\n    if (!event.data[\"x-tiktok-player\"]) {\n      return;\n    }\n    window.ReactNativeWebView.postMessage(JSON.stringify(event.data));\n  }, true);\n";
+let obj = { "-1": MediaModalWebViewBase.PlayerState.UNSTARTED, 0: null, 1: null, 2: null, 3: null };
+obj[0] = MediaModalWebViewBase.PlayerState.ENDED;
+obj[1] = MediaModalWebViewBase.PlayerState.PLAYING;
+obj[2] = MediaModalWebViewBase.PlayerState.PAUSED;
+obj[3] = MediaModalWebViewBase.PlayerState.BUFFERING;
 let memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function(visible) {
-  let closure_0;
-  let closure_1;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MediaModalTiktok(visible) {
+  let closure_3;
   let closure_4;
-  let closure_5;
   let controls;
-  let playerState;
-  let ref;
+  let first;
+  let onError;
+  let onLoad;
+  let onLoadStart;
+  let onToggleOverlay;
   let source;
   let style;
-  let tmp20;
-  let tmp22;
-  let tmp5;
-  let tmp6;
-  let tmp7;
-  let tmp8;
-  let tmp = _require;
-  obj = require("react");
-  const cResult = obj.c(31);
-  if (cResult[0] !== visible) {
-    visible = visible.visible;
-    importDefault = visible;
-    ({ style, source, controls } = visible);
-    _require = controls;
-    const tmp11 = _objectWithoutProperties(visible, closure_3);
-    cResult[0] = visible;
-    cResult[1] = controls;
-    cResult[2] = tmp11;
-    cResult[3] = source;
-    cResult[4] = style;
-    cResult[5] = visible;
-    tmp8 = visible;
-    tmp7 = style;
-    tmp6 = source;
-    tmp5 = tmp11;
-  } else {
-    _require = cResult[1];
-    tmp5 = cResult[2];
-    tmp6 = cResult[3];
-    tmp7 = cResult[4];
-    importDefault = cResult[5];
-  }
-  let obj2 = ref;
-  [playerState, closure_3] = ref.useState(tmp(playerState[4]).PlayerState.UNREADY);
-  const tmp15 = require("usePrevious")(playerState);
-  _slicedToArray = tmp15;
-  const tmp16 = require("usePrevious")(tmp8);
-  _objectWithoutProperties = tmp16;
-  ref = undefined;
-  const tmp14 = importDefault;
-  if (tmp4 != null) {
-    let props = tmp4.props;
+  let tmp13;
+  let tmp = visible;
+  obj = visible(first[5]);
+  const cResult = obj.c(28);
+  visible = visible.visible;
+  ({ style, source, controls } = visible);
+  ({ onError, onLoad, onLoadStart, onToggleOverlay } = visible);
+  const tmp2 = first;
+  [first, _slicedToArray] = react.useState(visible(first[3]).PlayerState.UNREADY);
+  const tmp6 = controls(first[6])(first);
+  react = tmp6;
+  const tmp7 = controls(first[6])(visible);
+  let closure_5 = tmp7;
+  let ref;
+  if (controls != null) {
+    let props = controls.props;
     if (props != null) {
       ref = props.ref;
     }
   }
   let props1;
-  const tmp18 = cResult[6];
-  if (tmp4 != null) {
-    props1 = tmp4.props;
+  const first1 = cResult[0];
+  if (controls != null) {
+    props1 = controls.props;
   }
-  if (tmp18 !== props1) {
+  if (first1 !== props1) {
     let props2;
-    if (tmp4 != null) {
-      props2 = tmp4.props;
+    if (controls != null) {
+      props2 = controls.props;
     }
-    const fn = function k(arg0) {
+    const fn = function y(arg0) {
       const iter = JSON.parse(arg0);
       const type = iter.type;
       if ("onPlayerReady" === type) {
-        closure_3(MediaModalWebView.PlayerState.READY);
+        closure_3(MediaModalWebViewBase.PlayerState.READY);
       } else if ("onStateChange" === type) {
         if (null != obj[iter.value]) {
-          if (closure_0 != null) {
-            const props2 = closure_0.props;
+          if (controls != null) {
+            const props2 = controls.props;
             if (props2 != null) {
               props2.onPlayerStateChange(obj[iter.value]);
             }
@@ -115,7 +85,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         }
       } else if ("onError" === type) {
         let str5;
-        closure_3(MediaModalWebView.PlayerState.ERRORED);
+        closure_3(MediaModalWebViewBase.PlayerState.ERRORED);
         const MediaViewerAnalytics = MediaViewerAnalyticsManager.MediaViewerAnalytics;
         const value = iter.value;
         const trackMessageEmbedsActionCompleted = MediaViewerAnalytics.trackMessageEmbedsActionCompleted;
@@ -134,7 +104,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         obj = { platform: "tiktok", action: "errored", error: str5 };
         const result = trackMessageEmbedsActionCompleted(obj);
       } else if ("onCurrentTime" === type) {
-        if (closure_0 != null) {
+        if (controls != null) {
           const props = tmp.props;
           if (props != null) {
             const onCurrentSecond = props.onCurrentSecond;
@@ -143,7 +113,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             }
           }
         }
-        if (closure_0 != null) {
+        if (controls != null) {
           const props3 = tmp.props;
           if (props3 != null) {
             const onDuration = props3.onDuration;
@@ -157,125 +127,30 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         obj2.setMuted(iter.value);
       }
     };
-    cResult[6] = props2;
-    cResult[7] = fn;
-    tmp20 = fn;
-  } else {
-    tmp20 = cResult[7];
+    cResult[0] = props2;
+    cResult[1] = fn;
   }
-  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function h(isMuted) {
-      return isMuted.isMuted;
-    };
-    cResult[8] = fn2;
-    tmp22 = fn2;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    class O {
+      constructor(isMuted) {
+        return isMuted.isMuted;
+      }
+    }
+    cResult[2] = O;
+    tmp13 = O;
   } else {
-    tmp22 = cResult[8];
+    class O {
+      constructor(isMuted) {
+        return isMuted.isMuted;
+      }
+    }
   }
-  const tmpResult = tmp(playerState[10]);
-  const mediaPlayerMutedStore = tmpResult.useMediaPlayerMutedStore(tmp22);
-  if (cResult[9] === mediaPlayerMutedStore) {
-    if (cResult[10] === playerState) {
-      if (cResult[11] === tmp15) {
-        if (cResult[12] === tmp16) {
-          if (cResult[13] === tmp8) {
-            let tmp24;
-            let tmp25;
-            let tmp28;
-            let tmp27;
-            let str;
-            if (cResult[14] === ref) {
-              tmp24 = cResult[15];
-              tmp25 = cResult[16];
-            }
-            const effect = obj2.useEffect(tmp24, tmp25);
-            const _Symbol = Symbol;
-            if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-              class Y {
-                constructor() {
-                  const MediaViewerAnalytics = closure_0(first[8]).MediaViewerAnalytics;
-                  const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted({ platform: "tiktok", action: "attempted" });
-                }
-              }
-              const items = [];
-              cResult[17] = Y;
-              cResult[18] = items;
-              tmp28 = items;
-              tmp27 = Y;
-            } else {
-              class Y {
-                constructor() {
-                  const MediaViewerAnalytics = closure_0(first[8]).MediaViewerAnalytics;
-                  const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted({ platform: "tiktok", action: "attempted" });
-                }
-              }
-              tmp28 = cResult[18];
-            }
-            const effect1 = obj2.useEffect(tmp27, tmp28);
-            if (cResult[19] !== tmp6.uri) {
-              class Y {
-                constructor() {
-                  const MediaViewerAnalytics = closure_0(first[8]).MediaViewerAnalytics;
-                  const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted({ platform: "tiktok", action: "attempted" });
-                }
-              }
-              const self = this;
-              const self2 = this;
-              str = new URL(tmp6.uri);
-              const tmp31 = str;
-              const _Object = Object;
-              const entries = Object.entries(closure_9);
-              const item = entries.forEach((item) => {
-                const tmp = _slicedToArray(item, 2);
-                const searchParams = str.searchParams;
-                searchParams.append(tmp[0], tmp[1].toString());
-              });
-              cResult[19] = tmp6.uri;
-              cResult[20] = str.toString();
-              const str1 = str.toString();
-            } else {
-              class Y {
-                constructor() {
-                  const MediaViewerAnalytics = closure_0(first[8]).MediaViewerAnalytics;
-                  const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted({ platform: "tiktok", action: "attempted" });
-                }
-              }
-            }
-            if (cResult[21] === tmp30) {
-              class Y {
-                constructor() {
-                  const MediaViewerAnalytics = closure_0(first[8]).MediaViewerAnalytics;
-                  const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted({ platform: "tiktok", action: "attempted" });
-                }
-              }
-              if (cResult[24] === tmp20) {
-                class Y {
-                  constructor() {
-                    const MediaViewerAnalytics = closure_0(first[8]).MediaViewerAnalytics;
-                    const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted({ platform: "tiktok", action: "attempted" });
-                  }
-                }
-              }
-              const obj3 = { ref, style: tmp7, source: tmp35, baseURL: str, injectedJavaScript, onDataReceived: tmp20, playerState };
-              const tmp14Result = tmp14(playerState[4]);
-              let merged = Object.assign(tmp5);
-              const tmp47 = mediaPlayerMutedStore(tmp14Result, obj3);
-              cResult[24] = tmp20;
-              cResult[25] = playerState;
-              cResult[26] = tmp5;
-              cResult[27] = tmp7;
-              cResult[28] = tmp35;
-              cResult[29] = ref;
-              cResult[30] = tmp47;
-              const tmp39 = tmp47;
-            }
-            const obj4 = { uri: tmp30 };
-            let merged1 = Object.assign(tmp6);
-            cResult[21] = tmp30;
-            cResult[22] = tmp6;
-            cResult[23] = obj4;
-          }
-        }
+  const tmpResult = tmp(tmp2[9]);
+  const mediaPlayerMutedStore = tmpResult.useMediaPlayerMutedStore(tmp13);
+  if (cResult[3] === mediaPlayerMutedStore) {
+    class O {
+      constructor(isMuted) {
+        return isMuted.isMuted;
       }
     }
   }
@@ -285,9 +160,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       if (ref != null) {
         current1 = tmp.current;
       }
-      const tmp3 = null != current1 && first !== MediaModalWebView.PlayerState.UNREADY;
+      const tmp3 = null != current1 && first !== MediaModalWebViewBase.PlayerState.UNREADY;
       if (tmp3) {
-        const tmp8 = closure_1 && closure_4 === MediaModalWebView.PlayerState.UNREADY && first === MediaModalWebView.PlayerState.READY;
+        const tmp8 = visible && closure_4 === MediaModalWebViewBase.PlayerState.UNREADY && first === MediaModalWebViewBase.PlayerState.READY;
         if (tmp8) {
           const _JSON = JSON;
           const merged = Object.assign({ type: "play" });
@@ -308,7 +183,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             current2.injectJavaScript("\n    window.postMessage(" + tmp25 + ", '*')\n  ");
           }
         }
-        const tmp27 = !closure_1 && closure_5;
+        const tmp27 = !visible && closure_5;
         if (tmp27) {
           const _JSON3 = JSON;
           const stringify3 = JSON.stringify;
@@ -319,7 +194,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             current3.injectJavaScript("\n    window.postMessage(" + tmp31 + ", '*')\n  ");
           }
         }
-        if (first === MediaModalWebView.PlayerState.ENDED) {
+        if (first === MediaModalWebViewBase.PlayerState.ENDED) {
           const _JSON6 = JSON;
           const stringify6 = JSON.stringify;
           const merged3 = Object.assign({ type: "seekTo", value: 0 });
@@ -353,41 +228,42 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       }
     }
   }
-  const items1 = [ref, tmp8, tmp16, tmp15, playerState, mediaPlayerMutedStore];
-  cResult[9] = mediaPlayerMutedStore;
-  cResult[10] = playerState;
-  cResult[11] = tmp15;
-  cResult[12] = tmp16;
-  cResult[13] = tmp8;
-  cResult[14] = ref;
-  cResult[15] = U;
-  cResult[16] = items1;
-  tmp25 = items1;
-  tmp24 = U;
-}) : ((visible) => {
+  const items = [ref, visible, tmp7, tmp6, first, mediaPlayerMutedStore];
+  cResult[3] = mediaPlayerMutedStore;
+  cResult[4] = first;
+  cResult[5] = tmp6;
+  cResult[6] = tmp7;
+  cResult[7] = visible;
+  cResult[8] = ref;
+  cResult[9] = U;
+  cResult[10] = items;
+}) : (function MediaModalTiktok(visible) {
   let closure_4;
+  let closure_5;
   let closure_6;
-  let obj3;
-  let playerState;
+  let onError;
+  let onLoad;
+  let onLoadStart;
+  let onToggleOverlay;
+  let style;
   visible = visible.visible;
   const source = visible.source;
   const controls = visible.controls;
-  const style = visible.style;
-  let merged = Object.assign(visible, Object.assign({ visible: 0, style: 0, source: 0, controls: 0 }));
-  playerState = undefined;
-  _slicedToArray = undefined;
+  let playerState;
   react = undefined;
   let mediaPlayerMutedStore;
   obj = react;
-  let tmp3 = controls;
-  [playerState, _slicedToArray] = react.useState(visible(controls[4]).PlayerState.UNREADY);
-  const tmp7 = source(controls[7])(playerState);
-  let closure_5 = tmp7;
-  let tmp8 = source(controls[7])(visible);
-  react = tmp8;
+  ({ style, onError, onLoad, onLoadStart, onToggleOverlay } = visible);
+  const tmp = visible;
+  let tmp3 = playerState(react.useState(visible(controls[3]).PlayerState.UNREADY), 2);
+  playerState = tmp3[0];
+  react = tmp3[1];
+  const tmp6 = source(controls[6])(playerState);
+  jsx = tmp6;
+  const tmp7 = source(controls[6])(visible);
+  baseURL = tmp7;
   let ref;
-  const tmp2 = visible;
-  const tmp6 = source;
+  const tmp5 = source;
   if (controls != null) {
     let props = controls.props;
     if (props != null) {
@@ -404,7 +280,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const iter = JSON.parse(arg0);
     const type = iter.type;
     if ("onPlayerReady" === type) {
-      closure_4(MediaModalWebView.PlayerState.READY);
+      closure_4(MediaModalWebViewBase.PlayerState.READY);
     } else if ("onStateChange" === type) {
       if (null != obj[iter.value]) {
         if (controls != null) {
@@ -417,7 +293,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       }
     } else if ("onError" === type) {
       let str5;
-      closure_4(MediaModalWebView.PlayerState.ERRORED);
+      closure_4(MediaModalWebViewBase.PlayerState.ERRORED);
       const MediaViewerAnalytics = MediaViewerAnalyticsManager.MediaViewerAnalytics;
       const value = iter.value;
       const trackMessageEmbedsActionCompleted = MediaViewerAnalytics.trackMessageEmbedsActionCompleted;
@@ -459,17 +335,17 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       obj2.setMuted(iter.value);
     }
   }, items);
-  const tmp2Result = tmp2(tmp3[10]);
-  mediaPlayerMutedStore = tmp2Result.useMediaPlayerMutedStore((isMuted) => isMuted.isMuted);
-  const items1 = [ref, visible, tmp8, tmp7, playerState, mediaPlayerMutedStore];
+  const tmpResult = tmp(controls[9]);
+  mediaPlayerMutedStore = tmpResult.useMediaPlayerMutedStore((isMuted) => isMuted.isMuted);
+  const items1 = [ref, visible, tmp7, tmp6, playerState, mediaPlayerMutedStore];
   const effect = obj.useEffect(() => {
     let current1;
     if (ref != null) {
       current1 = tmp.current;
     }
-    const tmp3 = null != current1 && first !== MediaModalWebView.PlayerState.UNREADY;
+    const tmp3 = null != current1 && first !== MediaModalWebViewBase.PlayerState.UNREADY;
     if (tmp3) {
-      const tmp8 = visible && closure_5 === MediaModalWebView.PlayerState.UNREADY && first === MediaModalWebView.PlayerState.READY;
+      const tmp8 = visible && closure_5 === MediaModalWebViewBase.PlayerState.UNREADY && first === MediaModalWebViewBase.PlayerState.READY;
       if (tmp8) {
         const _JSON = JSON;
         const merged = Object.assign({ type: "play" });
@@ -501,7 +377,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           current3.injectJavaScript("\n    window.postMessage(" + tmp31 + ", '*')\n  ");
         }
       }
-      if (first === MediaModalWebView.PlayerState.ENDED) {
+      if (first === MediaModalWebViewBase.PlayerState.ENDED) {
         const _JSON6 = JSON;
         const stringify6 = JSON.stringify;
         const merged3 = Object.assign({ type: "seekTo", value: 0 });
@@ -535,13 +411,13 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
   }, items1);
   const effect1 = obj.useEffect(() => {
-    const MediaViewerAnalytics = visible(controls[8]).MediaViewerAnalytics;
+    const MediaViewerAnalytics = visible(controls[7]).MediaViewerAnalytics;
     const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted({ platform: "tiktok", action: "attempted" });
   }, []);
   const items2 = [source.uri];
   const memo = obj.useMemo(() => {
     const str = new URL(source.uri);
-    const entries = Object.entries(closure_9);
+    const entries = Object.entries(closure_7);
     const item = entries.forEach((item) => {
       let tmp;
       [tmp, str] = item;
@@ -550,12 +426,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     });
     return str.toString();
   }, items2);
-  let obj2 = { ref, style, source: obj3, baseURL: mediaPlayerMutedStore, injectedJavaScript, onDataReceived: callback, playerState };
-  obj3 = { uri: memo };
-  const tmp6Result = tmp6(tmp3[4]);
-  let merged1 = Object.assign(source);
-  let merged2 = Object.assign(merged);
-  return ref(tmp6Result, obj2);
+  const obj3 = { uri: memo };
+  tmp5(controls[3]);
+  let merged = Object.assign(source);
+  return <tmp5Result ref={ref} style={style} source={obj3} baseURL={baseURL} injectedJavaScript={mediaPlayerMutedStore} onDataReceived={callback} playerState={playerState} onToggleOverlay={onToggleOverlay} onError={onError} onLoad={onLoad} onLoadStart={onLoadStart} />;
 }));
 let result = size.fileFinishedImporting("modules/media_viewer/native/components/renderers/MediaModalTiktok.tsx");
 
@@ -563,7 +437,7 @@ export default memoResult;
 export const createTiktokVideoControls = function createTiktokVideoControls() {
   const ref = react.createRef();
   let c3 = 0;
-  let c4 = 0;
+  react = 0;
   let c5 = false;
   obj = {
     seek(value) {
@@ -609,7 +483,7 @@ export const createTiktokVideoControls = function createTiktokVideoControls() {
       ref,
       onPlayerStateChange(arg0) {
         if (importDefault != null) {
-          const tmp5 = arg0 === MediaModalWebView.PlayerState.PAUSED || arg0 === MediaModalWebView.PlayerState.ENDED;
+          const tmp5 = arg0 === MediaModalWebViewBase.PlayerState.PAUSED || arg0 === MediaModalWebViewBase.PlayerState.ENDED;
           tmp(tmp5);
         }
       },

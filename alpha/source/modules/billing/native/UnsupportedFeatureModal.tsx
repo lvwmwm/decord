@@ -1,19 +1,19 @@
-// Module ID: 10567
-// Function ID: 10568
+// Module ID: 10164
+// Function ID: 10165
 // Name: UnsupportedFeatureModal
-// Dependencies: [19, 17, 21, 558, 576, 5099, 6017, 6503, 4892, 1126, 2]
+// Dependencies: [19, 17, 21, 558, 576, 5940, 6203, 6679, 5086, 1126, 2]
 
-// Module 10567 (UnsupportedFeatureModal)
+// Module 10164 (UnsupportedFeatureModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnsupportedFeatureModal(arg0) {
   let onDismiss;
   let title;
   let tmp4;
@@ -22,21 +22,21 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(7);
   ({ title, onDismiss } = arg0);
   if (cResult[0] !== onDismiss) {
-    const fn = function o() {
+    function handleClose() {
       const arr = ModalActionCreatorsDefault;
       arr.pop();
       if (onDismiss != null) {
         onDismiss();
       }
-    };
+    }
     cResult[0] = onDismiss;
-    cResult[1] = fn;
-    tmp4 = fn;
+    cResult[1] = handleClose;
+    tmp4 = handleClose;
   } else {
     tmp4 = cResult[1];
   }
   if (cResult[2] !== tmp4) {
-    const tmpResult = onDismiss(6017);
+    const tmpResult = onDismiss(6203);
     const headerCloseButton = tmpResult.getHeaderCloseButton(tmp4);
     cResult[2] = tmp4;
     cResult[3] = headerCloseButton;
@@ -64,19 +64,19 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   };
-  const tmp8 = jsx(onDismiss(6503).Navigator, { initialRouteName: "Unsupported", screens: obj3 });
+  const tmp8 = jsx(onDismiss(6679).Navigator, { initialRouteName: "Unsupported", screens: obj3 });
   cResult[4] = tmp5;
   cResult[5] = title;
   cResult[6] = tmp8;
   tmp7 = tmp8;
-}) : ((onDismiss) => {
+}) : (function UnsupportedFeatureModal(onDismiss) {
   let obj3;
   let obj4;
   onDismiss = onDismiss.onDismiss;
   const obj2 = { Unsupported: obj3 };
   obj3 = {
     title: onDismiss.title,
-    headerLeft: obj4.getHeaderCloseButton(() => {
+    headerLeft: obj4.getHeaderCloseButton(function handleClose() {
       const arr = ModalActionCreatorsDefault;
       arr.pop();
       if (onDismiss != null) {
@@ -91,8 +91,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return <View style={{ flex: 1, alignItems: "center", justifyContent: "center", padding: 24 }}>{null}</View>;
     }
   };
-  const Navigator = onDismiss(6503).Navigator;
-  obj4 = onDismiss(6017);
+  const Navigator = onDismiss(6679).Navigator;
+  obj4 = onDismiss(6203);
   return <Navigator initialRouteName="Unsupported" screens={obj2} />;
 });
 const result = size.fileFinishedImporting("modules/billing/native/UnsupportedFeatureModal.tsx");

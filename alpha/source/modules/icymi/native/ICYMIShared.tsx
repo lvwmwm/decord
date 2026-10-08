@@ -1,45 +1,45 @@
-// Module ID: 16475
-// Function ID: 16476
+// Module ID: 16735
+// Function ID: 16736
 // Name: ICYMIShared
-// Dependencies: [19, 17, 6819, 2051, 2112, 4515, 1377, 1085, 21, 8034, 9421, 5878, 8401, 9970, 6612, 6760, 6541, 6978, 4793, 16434, 1369, 587, 558, 576, 1188, 8502, 5978, 5609, 4892, 7139, 5916, 16476, 7588, 504, 5048, 8039, 7861, 5885, 8038, 6824, 9310, 1126, 16435, 4797, 4586, 4733, 4618, 4897, 4909, 5862, 6715, 4883, 2]
+// Dependencies: [19, 17, 6992, 2063, 2124, 4707, 1389, 1085, 21, 8442, 9085, 8190, 8899, 9497, 6789, 6936, 6717, 7167, 4987, 16694, 1381, 587, 558, 576, 1200, 8986, 6161, 5382, 5086, 6064, 6189, 16736, 9180, 504, 5405, 8447, 8279, 8197, 8446, 6997, 8639, 1126, 16695, 4991, 4778, 4927, 4810, 5091, 7001, 8174, 6892, 5077, 2]
 // Exports: navigateToPost, truncateUsername
 
-// Module 16475 (ICYMIShared)
+// Module 16735 (ICYMIShared)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import flow_Client from "flow/Client" /* 4793 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 4883 */;
-import timing from "timing" /* 4897 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4909 */;
-import GuildIcon from "GuildIcon" /* 5978 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 6612 */;
-import safeTransitionToDefault from "safeTransitionTo" /* 6760 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6978 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
-import ICYMIUtils from "ICYMIUtils" /* 8038 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8039 */;
-import ClipView from "ClipView" /* 8502 */;
-import openDetailsActionSheet2 from "openDetailsActionSheet" /* 16476 */;
+import native from "native" /* 1200 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import flow_Client from "flow/Client" /* 4987 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5077 */;
+import timing from "timing" /* 5091 */;
+import GuildIcon from "GuildIcon" /* 6161 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 6789 */;
+import safeTransitionToDefault from "safeTransitionTo" /* 6936 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7001 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7167 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
+import ICYMIUtils from "ICYMIUtils" /* 8446 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8447 */;
+import ClipView from "ClipView" /* 8986 */;
+import openDetailsActionSheet2 from "openDetailsActionSheet" /* 16736 */;
 import react from "react" /* 19 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 6819 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import UserStore from "UserStore" /* 1377 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 6992 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16434 */;
+import createICYMIStyles from "createICYMIStyles" /* 16694 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const GuildIconDefault = GuildIcon;
 const ClipViewDefault = ClipView;
-let _require, dependencyMap, importDefault, parentMessage, set;
+let _require, dependencyMap, feedItemActionedResult, importDefault, itemInteractedResult, obj1, set;
 
 let c10;
 let closure_12;
@@ -82,14 +82,14 @@ let closure_22 = createICYMIStyles.createICYMIStyles((paddingBottom) => {
   return obj2;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Separator() {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
   const tmp2 = closure_22();
   if (cResult[0] !== tmp2.separator) {
     const obj2 = { style: tmp2.separator };
-    const tmp6 = authStore4(View, obj2);
+    const tmp6 = authStore5(View, obj2);
     cResult[0] = tmp2.separator;
     cResult[1] = tmp6;
     tmp3 = tmp6;
@@ -97,13 +97,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
+}) : (function Separator() {
   const obj = { style: closure_22().separator };
-  return authStore4(View, obj);
+  return authStore5(View, obj);
 });
 let closure_23 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function CutoutGuildIconWithUser(arg0) {
   let author;
   let guild;
   const obj = react2;
@@ -124,7 +124,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp7;
       }
       const obj2 = { guild, icon: tmp5 };
-      const tmp10 = authStore4(closure_25, obj2);
+      const tmp10 = authStore5(closure_25, obj2);
       cResult[4] = guild;
       cResult[5] = tmp5;
       cResult[6] = tmp10;
@@ -132,25 +132,25 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const obj3 = { animate: true, style: tmp4.authorIcon, guildId: guild.id, user: author, size: native.AvatarSizes.XSMALL };
-  const Avatar = tmp(1188).Avatar;
-  const tmp6 = authStore4(Avatar, obj3);
+  const Avatar = tmp(1200).Avatar;
+  const tmp6 = authStore5(Avatar, obj3);
   cResult[0] = author;
   cResult[1] = guild.id;
   cResult[2] = tmp4.authorIcon;
   cResult[3] = tmp6;
   tmp5 = tmp6;
-}) : ((guild) => {
+}) : (function CutoutGuildIconWithUser(guild) {
   let Avatar;
   let obj2;
   guild = guild.guild;
   const author = guild.author;
-  const obj = { guild, icon: authStore4(Avatar, obj2) };
+  const obj = { guild, icon: authStore5(Avatar, obj2) };
   obj2 = { animate: true, style: closure_22().authorIcon, guildId: guild.id, user: author, size: native.AvatarSizes.XSMALL };
   Avatar = native.Avatar;
-  return authStore4(closure_25, obj);
+  return authStore5(closure_25, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CutoutGuildIcon(arg0) {
   let first;
   let guild;
   let icon;
@@ -178,11 +178,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp5 = cResult[1];
   }
   if (cResult[2] !== guild) {
-    const obj2 = { cutouts: tmp5, children: authStore4(tmp10, obj3) };
+    const obj2 = { cutouts: tmp5, children: authStore5(tmp10, obj3) };
     obj3 = { guild, size: GuildIcon.GuildIconSizes.NORMAL };
     const tmp9 = ClipViewDefault;
     tmp10 = GuildIconDefault;
-    const tmp11 = authStore4(tmp9, obj2);
+    const tmp11 = authStore5(tmp9, obj2);
     cResult[2] = guild;
     cResult[3] = tmp11;
     tmp6 = tmp11;
@@ -203,7 +203,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = tmp6;
   cResult[6] = tmp13;
   tmp12 = tmp13;
-}) : ((arg0) => {
+}) : (function CutoutGuildIcon(arg0) {
   let guild;
   let icon;
   let items;
@@ -212,18 +212,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp2;
   const obj = { style: { width: 40, height: 40 }, children: items1 };
   ({ guild, icon } = arg0);
-  const obj2 = { cutouts: items, children: authStore4(tmp2, obj3) };
+  const obj2 = { cutouts: items, children: authStore5(tmp2, obj3) };
   const point = { shape: ClipView.CutoutShape.Circle, x: 16, y: 14, size: 32 };
   items = [point];
   const tmp = ClipViewDefault;
   obj3 = { guild, size: GuildIcon.GuildIconSizes.NORMAL };
   tmp2 = GuildIconDefault;
-  items1 = [authStore4(tmp, obj2), icon];
+  items1 = [authStore5(tmp, obj2), icon];
   return closure_19(View, obj);
 });
 let closure_25 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildContentPost(guild) {
   let MoreHorizontalIcon;
   let avatar;
   let children;
@@ -449,7 +449,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   cResult[1] = timestamp;
   cResult[2] = tmp7;
   tmp6 = tmp7;
-}) : ((guild) => {
+}) : (function GuildContentPost(guild) {
   let MoreHorizontalIcon;
   let avatar;
   let children;
@@ -477,7 +477,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   ({ channel: importDefault, hideTimestamp, id: dependencyMap, type: react } = guild);
   ({ timestamp, children, avatar, title, subtitle, onHeaderPress, onHeaderLongPress, disableInteractions } = guild);
   const tmp = closure_22();
-  let obj = guild(5609);
+  let obj = guild(5382);
   const fontScale = obj.useFontScale();
   const obj2 = { onPress: onHeaderPress, onLongPress: onHeaderLongPress, style: tmp.content, children: closure_18(View, obj3) };
   obj3 = { style: fontScale > 1.8 ? tmp.channelNameAndAccessoryLarge : tmp.channelNameAndAccessory, children: closure_19(View, obj4) };
@@ -488,12 +488,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   let tmp7Result = !hideTimestamp;
   const obj5 = { style: tmp.headerInfo, children: items3 };
   const obj6 = { style: tmp.title, children: items2 };
-  const PressableHighlight = guild(5916).PressableHighlight;
+  const PressableHighlight = guild(6189).PressableHighlight;
   const tmp6 = closure_20;
   if (!hideTimestamp) {
     const obj8 = { lineClamp: 1, variant: "text-xs/normal", color: "text-muted", children: tmp2Result.getRelativeTimestamp(timestamp) };
-    const Text = tmp2(4892).Text;
-    tmp2Result = guild(7139);
+    const Text = tmp2(5086).Text;
+    tmp2Result = guild(6064);
     tmp7Result = tmp7(Text, obj8);
   }
   items1[1] = tmp7Result;
@@ -517,9 +517,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         hitSlop: 8,
         children: closure_18(MoreHorizontalIcon, obj10)
       };
-      const PressableOpacity = tmp2(5916).PressableOpacity;
+      const PressableOpacity = tmp2(6189).PressableOpacity;
       obj10 = { color: nativeDefault.colors.ICON_MUTED, size: "sm" };
-      MoreHorizontalIcon = tmp2(7588).MoreHorizontalIcon;
+      MoreHorizontalIcon = tmp2(9180).MoreHorizontalIcon;
       tmp7Result2 = tmp7(PressableOpacity, obj9);
     }
   }
@@ -535,7 +535,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
 });
 let closure_26 = tmp6;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnnouncementContentPost(guild) {
   let author;
   let children;
   let first;
@@ -714,7 +714,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         tmp12 = tmp15;
       }
     }
-    const fn2 = function _() {
+    const fn2 = function v() {
       const obj = ICYMIActionCreatorsDefault;
       obj.itemInteracted(id, "announcement", "open_profile");
       const obj2 = ICYMIActionCreatorsDefault;
@@ -736,7 +736,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   cResult[2] = guild.id;
   cResult[3] = fn;
   tmp7 = fn;
-}) : ((guild) => {
+}) : (function AnnouncementContentPost(guild) {
   let Text;
   let children;
   let items2;
@@ -800,7 +800,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   return closure_18(tmp8, element);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventPost(guild) {
   let children;
   let event;
   let items5;
@@ -1188,7 +1188,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   cResult[7] = creator_id;
   cResult[8] = M;
   tmp13 = M;
-}) : ((guild) => {
+}) : (function GuildEventPost(guild) {
   let Text;
   let children;
   let items1;
@@ -1336,7 +1336,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
 ReactCompilerGating = ReactCompilerGating_mod;
 const __initData = { code: "function ICYMISharedTsx1(){const{interpolateColor,progress,bgColor,bgColorHighlighted}=this.__closure;return{backgroundColor:interpolateColor(progress.get(),[0,1],[bgColor,bgColorHighlighted])};}" };
 const __initData2 = { code: "function ICYMISharedTsx2(){const{interpolateColor,progress,bgColor,bgColorHighlighted}=this.__closure;return{backgroundColor:interpolateColor(progress.get(),[0,1],[bgColor,bgColorHighlighted])};}" };
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageContentPost(guild) {
   let author;
   let children;
   let id;
@@ -1383,9 +1383,9 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       if (colorString == null) {
         colorString = closure_13;
       }
-      class E {
+      class P {
         constructor() {
-          return GuildMemberStore.getMember(guild.id, author.id);
+          return closure_7.getMember(guild.id, author.id);
         }
       }
       const name = obj4.useName(guild.id, channel.id, author);
@@ -1452,9 +1452,9 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                   const _HermesInternal = HermesInternal;
                   combined = "" + name.slice(0, 17) + "...";
                 }
-                class E {
+                class P {
                   constructor() {
-                    return GuildMemberStore.getMember(guild.id, author.id);
+                    return closure_7.getMember(guild.id, author.id);
                   }
                 }
                 if (cResult[25] === tmp14) {
@@ -1468,9 +1468,9 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                       const obj6 = { size: "sm", color: channel(author[21]).colors.TEXT_SUBTLE };
                       const tmp36 = closure_18(tmp13, obj6);
                       cResult[29] = tmp13;
-                      class E {
+                      class P {
                         constructor() {
-                          return GuildMemberStore.getMember(guild.id, author.id);
+                          return closure_7.getMember(guild.id, author.id);
                         }
                       }
                       cResult[30] = tmp36;
@@ -1512,10 +1512,22 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                               }
                             }
                           }
-                          const element = { guild, channel, timestamp: null, avatar: tmp16, title: tmp23, subtitle: tmp38, onHeaderPress, onHeaderLongPress, id, type, children };
-                          class E {
+                          const element = { guild, channel, timestamp: null, avatar: tmp16, title: tmp23, subtitle: tmp38, onHeaderPress: null, onHeaderLongPress, id, type, children };
+                          class P {
                             constructor() {
-                              return GuildMemberStore.getMember(guild.id, author.id);
+                              return closure_7.getMember(guild.id, author.id);
+                            }
+                          }
+                          class U {
+                            constructor() {
+                              obj = closure_1(closure_2[35]);
+                              itemInteractedResult = obj.itemInteracted(id, type, "open_profile");
+                              obj2 = closure_1(closure_2[35]);
+                              obj1 = { itemId: id, itemType: "message", actionParameters: { actionGestureType: "press", actionTargetElement: "item_header", actionIntentType: "open", actionDestinationType: "user" } };
+                              feedItemActionedResult = obj2.feedItemActioned(obj1);
+                              obj5 = { userId: author.id, channelId: channel.id };
+                              tmp3 = closure_1(closure_2[36])(obj5);
+                              return;
                             }
                           }
                           const tmp44 = closure_18(closure_26, element);
@@ -1536,12 +1548,24 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                       }
                     }
                     const obj7 = { lineClamp: 2, variant: "text-md/normal", color: "text-default", style: null, children: items1 };
-                    class E {
+                    class P {
                       constructor() {
-                        return GuildMemberStore.getMember(guild.id, author.id);
+                        return closure_7.getMember(guild.id, author.id);
                       }
                     }
-                    items1 = [tmp30, tmp33, text];
+                    items1 = [tmp30, tmp33, ];
+                    class U {
+                      constructor() {
+                        obj = closure_1(closure_2[35]);
+                        itemInteractedResult = obj.itemInteracted(id, type, "open_profile");
+                        obj2 = closure_1(closure_2[35]);
+                        obj1 = { itemId: id, itemType: "message", actionParameters: { actionGestureType: "press", actionTargetElement: "item_header", actionIntentType: "open", actionDestinationType: "user" } };
+                        feedItemActionedResult = obj2.feedItemActioned(obj1);
+                        obj5 = { userId: author.id, channelId: channel.id };
+                        tmp3 = closure_1(closure_2[36])(obj5);
+                        return;
+                      }
+                    }
                     const tmp40 = closure_19(guild(author[28]).Text, obj7);
                     cResult[31] = tmp30;
                     cResult[32] = tmp33;
@@ -1551,7 +1575,19 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                     tmp38 = tmp40;
                   }
                 }
-                const obj8 = { style: tmp27, onPress: tmp14, variant: "text-md/semibold", children: tmp29 };
+                const obj8 = { style: null, onPress: tmp14, variant: "text-md/semibold", children: tmp29 };
+                class U {
+                  constructor() {
+                    obj = closure_1(closure_2[35]);
+                    itemInteractedResult = obj.itemInteracted(id, type, "open_profile");
+                    obj2 = closure_1(closure_2[35]);
+                    obj1 = { itemId: id, itemType: "message", actionParameters: { actionGestureType: "press", actionTargetElement: "item_header", actionIntentType: "open", actionDestinationType: "user" } };
+                    feedItemActionedResult = obj2.feedItemActioned(obj1);
+                    obj5 = { userId: author.id, channelId: channel.id };
+                    tmp3 = closure_1(closure_2[36])(obj5);
+                    return;
+                  }
+                }
                 const tmp32 = closure_18(guild(author[28]).Text, obj8);
                 cResult[25] = tmp14;
                 cResult[26] = tmp27;
@@ -1560,25 +1596,48 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                 tmp30 = tmp32;
               }
               const obj9 = { style: null, lineClamp: 1, variant: "text-sm/medium", color: "text-default", children: guild.name };
-              class E {
+              class P {
                 constructor() {
-                  return GuildMemberStore.getMember(guild.id, author.id);
+                  return closure_7.getMember(guild.id, author.id);
                 }
               }
               const tmp25 = closure_18(guild(author[28]).Text, obj9, channel.id);
-              cResult[18] = channel.id;
+              class U {
+                constructor() {
+                  obj = closure_1(closure_2[35]);
+                  itemInteractedResult = obj.itemInteracted(id, type, "open_profile");
+                  obj2 = closure_1(closure_2[35]);
+                  obj1 = { itemId: id, itemType: "message", actionParameters: { actionGestureType: "press", actionTargetElement: "item_header", actionIntentType: "open", actionDestinationType: "user" } };
+                  feedItemActionedResult = obj2.feedItemActioned(obj1);
+                  obj5 = { userId: author.id, channelId: channel.id };
+                  tmp3 = closure_1(closure_2[36])(obj5);
+                  return;
+                }
+              }
               cResult[19] = guild.name;
               cResult[20] = tmp25;
               tmp23 = tmp25;
             }
-            class E {
+            class P {
               constructor() {
-                return GuildMemberStore.getMember(guild.id, author.id);
+                return closure_7.getMember(guild.id, author.id);
               }
             }
             tmp19[0] = guild;
             tmp19[1] = author;
             const tmp20 = closure_18(closure_24, tmp19);
+            class U {
+              constructor() {
+                obj = closure_1(closure_2[35]);
+                itemInteractedResult = obj.itemInteracted(id, type, "open_profile");
+                obj2 = closure_1(closure_2[35]);
+                obj1 = { itemId: id, itemType: "message", actionParameters: { actionGestureType: "press", actionTargetElement: "item_header", actionIntentType: "open", actionDestinationType: "user" } };
+                feedItemActionedResult = obj2.feedItemActioned(obj1);
+                obj5 = { userId: author.id, channelId: channel.id };
+                tmp3 = closure_1(closure_2[36])(obj5);
+                return;
+              }
+            }
             cResult[14] = author;
             cResult[15] = guild;
             cResult[16] = tmp20;
@@ -1586,31 +1645,33 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           }
         }
       }
-      const fn = function w() {
-        const obj = ICYMIActionCreatorsDefault;
-        obj.itemInteracted(id, type, "open_profile");
-        const obj2 = ICYMIActionCreatorsDefault;
-        const obj3 = { itemId: id, itemType: "message", actionParameters: { actionGestureType: "press", actionTargetElement: "item_header", actionIntentType: "open", actionDestinationType: "user" } };
-        obj2.feedItemActioned(obj3);
-        const obj4 = { userId: author.id, channelId: channel.id };
-        showUserProfileActionSheetDefault(obj4);
-      };
+      class U {
+        constructor() {
+          obj = closure_1(closure_2[35]);
+          itemInteractedResult = obj.itemInteracted(id, type, "open_profile");
+          obj2 = closure_1(closure_2[35]);
+          obj1 = { itemId: id, itemType: "message", actionParameters: { actionGestureType: "press", actionTargetElement: "item_header", actionIntentType: "open", actionDestinationType: "user" } };
+          feedItemActionedResult = obj2.feedItemActioned(obj1);
+          obj5 = { userId: author.id, channelId: channel.id };
+          tmp3 = closure_1(closure_2[36])(obj5);
+          return;
+        }
+      }
       cResult[9] = author.id;
       cResult[10] = channel.id;
       cResult[11] = id;
       cResult[12] = type;
-      cResult[13] = fn;
-      tmp14 = fn;
+      cResult[13] = U;
+      tmp14 = U;
     }
-    class E {
+    class P {
       constructor() {
-        return GuildMemberStore.getMember(guild.id, author.id);
+        return closure_7.getMember(guild.id, author.id);
       }
     }
     cResult[4] = author.id;
-    cResult[5] = guild.id;
-    cResult[6] = E;
-    tmp9 = E;
+    cResult[6] = P;
+    tmp9 = P;
   }
   const tmpResult4 = guild(author[38]);
   const determineContentTypeResult = tmpResult4.determineContentType(channel, message);
@@ -1618,7 +1679,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   cResult[1] = message;
   cResult[2] = determineContentTypeResult;
   tmp4 = determineContentTypeResult;
-}) : ((guild) => {
+}) : (function MessageContentPost(guild) {
   let LightbulbIcon;
   let Text;
   let children;
@@ -1697,7 +1758,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   return closure_18(tmp8, element);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function SimplePost(arg0) {
   let bgColorHighlighted;
   let children;
   let closure_0;
@@ -1861,7 +1922,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = items3;
   tmp14 = items3;
   tmp13 = fn;
-}) : ((arg0) => {
+}) : (function SimplePost(arg0) {
   let c2;
   let children;
   let hideDivider;
@@ -1874,14 +1935,14 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   let token;
   let tmp = closure_22();
-  const tmp4 = token(4797)();
-  let obj = highlight(4586);
+  const tmp4 = token(4991)();
+  let obj = highlight(4778);
   const tmp2 = token;
   token = obj.useToken(token(587).colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT, tmp4);
-  let obj2 = highlight(4733);
+  let obj2 = highlight(4927);
   const hexWithOpacityResult = obj2.hexWithOpacity(token(587).unsafe_rawColors.BRAND_360, 0.25);
   dependencyMap = hexWithOpacityResult;
-  const obj3 = highlight(4618);
+  const obj3 = highlight(4810);
   const sharedValue = obj3.useSharedValue(0);
   const fn = function c() {
     let items;
@@ -1891,12 +1952,12 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj2 = ReanimatedRexport;
     return obj;
   };
-  const obj4 = highlight(4618);
-  fn.__closure = { interpolateColor: highlight(4618).interpolateColor, progress: sharedValue, bgColor: token, bgColorHighlighted: hexWithOpacityResult };
+  const obj4 = highlight(4810);
+  fn.__closure = { interpolateColor: highlight(4810).interpolateColor, progress: sharedValue, bgColor: token, bgColorHighlighted: hexWithOpacityResult };
   fn.__workletHash = 11803325452646;
   fn.__initData = __initData2;
   let items = [highlight, sharedValue];
-  ({ interpolateColor: highlight(4618).interpolateColor, progress: sharedValue, bgColor: token, bgColorHighlighted: hexWithOpacityResult });
+  ({ interpolateColor: highlight(4810).interpolateColor, progress: sharedValue, bgColor: token, bgColorHighlighted: hexWithOpacityResult });
   const animatedStyle = obj4.useAnimatedStyle(fn);
   const effect = sharedValue.useEffect(() => {
     const tmp = highlight;
@@ -1918,7 +1979,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (highlight) {
     const obj7 = { style: items1, children };
     items1 = [tmp.simplePostContent, animatedStyle];
-    const items2 = [closure_18(tmp2(4618).View, obj7), ];
+    const items2 = [closure_18(tmp2(4810).View, obj7), ];
     let tmp12Result = null;
     if (!hideDivider) {
       tmp12Result = tmp12(closure_23, {});
@@ -1940,7 +2001,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp10(tmp11, tmp16);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, id2, arg2) => {
+let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function useThread(id, id2, arg2) {
   let closure_2;
   let first;
   let messageCount;
@@ -2032,7 +2093,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, id2, arg2)
   cResult[7] = items1;
   tmp10 = items1;
   tmp9 = T;
-}) : ((id, arg1, arg2) => {
+}) : (function useThread(id, arg1, arg2) {
   let closure_2;
   let messageCount;
   let mostRecentMessage;
@@ -2070,7 +2131,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, id2, arg2)
   return { thread, messageCount, mostRecentMessage };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage) => {
+let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadAsComments(parentMessage) {
   let first;
   let inForum;
   let items1;
@@ -2160,7 +2221,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage) => {
               }
               if (cResult[33] !== tmp4.commentsIcon) {
                 const obj2 = { style: tmp4.commentsIcon };
-                const tmp23 = closure_18(parentMessage(5862).ChatIcon, obj2);
+                const tmp23 = closure_18(parentMessage(8174).ChatIcon, obj2);
                 cResult[33] = tmp4.commentsIcon;
                 cResult[34] = tmp23;
                 tmp21 = tmp23;
@@ -2169,7 +2230,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage) => {
               }
               if (cResult[35] !== str) {
                 const obj3 = { variant: "text-sm/bold", color: "interactive-text-default", children: str };
-                const tmp26 = closure_18(parentMessage(4892).Text, obj3);
+                const tmp26 = closure_18(parentMessage(5086).Text, obj3);
                 cResult[35] = str;
                 cResult[36] = tmp26;
                 tmp24 = tmp26;
@@ -2178,7 +2239,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage) => {
               }
               if (cResult[37] !== tmp4.chevron) {
                 const obj5 = { style: tmp4.chevron, size: "xxs" };
-                const tmp29 = closure_18(parentMessage(6715).ChevronSmallRightIcon, obj5);
+                const tmp29 = closure_18(parentMessage(6892).ChevronSmallRightIcon, obj5);
                 cResult[37] = tmp4.chevron;
                 cResult[38] = tmp29;
                 tmp27 = tmp29;
@@ -2207,7 +2268,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage) => {
                     }
                     const obj6 = { style: tmp10, onPress, children: items1 };
                     items1 = [tmp12, tmp18, tmp30];
-                    const tmp36 = closure_19(parentMessage(5916).PressableHighlight, obj6);
+                    const tmp36 = closure_19(parentMessage(6189).PressableHighlight, obj6);
                     cResult[44] = onPress;
                     cResult[45] = tmp30;
                     cResult[46] = tmp10;
@@ -2229,14 +2290,14 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage) => {
               tmp30 = tmp33;
             }
             const obj8 = { variant: "text-sm/semibold", lineClamp: 1, style: tmp4.recentCommentText, children: tmp15 };
-            const tmp20 = closure_18(parentMessage(4892).Text, obj8);
+            const tmp20 = closure_18(parentMessage(5086).Text, obj8);
             cResult[30] = tmp4.recentCommentText;
             cResult[31] = tmp15;
             cResult[32] = tmp20;
             tmp18 = tmp20;
           }
-          const obj9 = { user: author, guildId: thread.guild_id, size: parentMessage(1188).AvatarSizes.XSMALL };
-          const Avatar = tmp(1188).Avatar;
+          const obj9 = { user: author, guildId: thread.guild_id, size: parentMessage(1200).AvatarSizes.XSMALL };
+          const Avatar = tmp(1200).Avatar;
           const tmp14 = closure_18(Avatar, obj9);
           cResult[25] = author;
           cResult[26] = thread.guild_id;
@@ -2271,7 +2332,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage) => {
       }
       if (cResult[7] !== tmp4.recentCommentText) {
         const obj10 = { variant: "text-md/semibold", color: "text-muted", lineClamp: 1, style: recentCommentText, children: tmp38 };
-        const tmp42 = closure_18(parentMessage(4892).Text, obj10);
+        const tmp42 = closure_18(parentMessage(5086).Text, obj10);
         cResult[7] = tmp4.recentCommentText;
         cResult[8] = tmp42;
         tmp40 = tmp42;
@@ -2280,7 +2341,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage) => {
       }
       if (cResult[9] !== tmp4.commentsIcon) {
         const obj11 = { style: tmp4.commentsIcon };
-        const tmp45 = closure_18(parentMessage(5862).ChatIcon, obj11);
+        const tmp45 = closure_18(parentMessage(8174).ChatIcon, obj11);
         cResult[9] = tmp4.commentsIcon;
         cResult[10] = tmp45;
         tmp43 = tmp45;
@@ -2289,7 +2350,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage) => {
       }
       if (cResult[11] !== tmp4.chevron) {
         const obj12 = { style: tmp4.chevron, size: "xxs" };
-        const tmp48 = closure_18(parentMessage(6715).ChevronSmallRightIcon, obj12);
+        const tmp48 = closure_18(parentMessage(6892).ChevronSmallRightIcon, obj12);
         cResult[11] = tmp4.chevron;
         cResult[12] = tmp48;
         tmp46 = tmp48;
@@ -2315,7 +2376,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage) => {
           }
           const obj13 = { style: tmp37, onPress, children: items4 };
           items4 = [tmp40, tmp49];
-          const tmp55 = closure_19(parentMessage(5916).PressableHighlight, obj13);
+          const tmp55 = closure_19(parentMessage(6189).PressableHighlight, obj13);
           cResult[17] = onPress;
           cResult[18] = tmp37;
           cResult[19] = tmp40;
@@ -2341,7 +2402,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage) => {
   } else {
     return null;
   }
-}) : ((parentMessage) => {
+}) : (function ThreadAsComments(parentMessage) {
   let inForum;
   let intl2;
   let items1;
@@ -2379,16 +2440,16 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage) => {
         }
         const obj2 = { style: items1, onPress, children: items2 };
         items1 = [tmp.comments, style];
-        const PressableHighlight = tmp4(5916).PressableHighlight;
+        const PressableHighlight = tmp4(6189).PressableHighlight;
         let author;
-        const Avatar = tmp4(1188).Avatar;
+        const Avatar = tmp4(1200).Avatar;
         if (mostRecentMessage != null) {
           author = mostRecentMessage.author;
         }
-        const obj3 = { user: author, guildId: thread.guild_id, size: parentMessage(1188).AvatarSizes.XSMALL };
+        const obj3 = { user: author, guildId: thread.guild_id, size: parentMessage(1200).AvatarSizes.XSMALL };
         items2 = [closure_18(Avatar, obj3), , ];
         const obj4 = { variant: "text-sm/semibold", lineClamp: 1, style: tmp.recentCommentText, children: parseInlineReplyResult };
-        const Text = tmp4(4892).Text;
+        const Text = tmp4(5086).Text;
         if (mostRecentMessage.content.length > 0) {
           const obj5 = MarkupUtilsDefault;
           parseInlineReplyResult = obj5.parseInlineReply(mostRecentMessage.content, true);
@@ -2399,27 +2460,27 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentMessage) => {
         items2[1] = closure_18(Text, obj4);
         const obj6 = { style: tmp.commentCount, children: items3 };
         const obj7 = { style: tmp.commentsIcon };
-        items3 = [closure_18(parentMessage(5862).ChatIcon, obj7), , ];
+        items3 = [closure_18(parentMessage(8174).ChatIcon, obj7), , ];
         const obj8 = { variant: "text-sm/bold", color: "interactive-text-default", children: str };
-        items3[1] = closure_18(parentMessage(4892).Text, obj8);
+        items3[1] = closure_18(parentMessage(5086).Text, obj8);
         const obj9 = { style: tmp.chevron, size: "xxs" };
-        items3[2] = closure_18(parentMessage(6715).ChevronSmallRightIcon, obj9);
+        items3[2] = closure_18(parentMessage(6892).ChevronSmallRightIcon, obj9);
         items2[2] = closure_19(View, obj6);
         return closure_19(PressableHighlight, obj2);
       }
     }
     const obj10 = { style: items4, onPress, children: items5 };
     items4 = [tmp.comments, style];
-    const PressableHighlight2 = tmp4(5916).PressableHighlight;
+    const PressableHighlight2 = tmp4(6189).PressableHighlight;
     const obj11 = { variant: "text-md/semibold", color: "text-muted", lineClamp: 1, style: tmp.recentCommentText, children: intl2.string(parentMessage(1126).t.VMWjXW) };
-    const Text2 = tmp4(4892).Text;
+    const Text2 = tmp4(5086).Text;
     intl2 = tmp4(1126).intl;
     items5 = [closure_18(Text2, obj11), ];
     const obj12 = { style: tmp.commentCount, children: items6 };
     const obj13 = { style: tmp.commentsIcon };
-    items6 = [closure_18(parentMessage(5862).ChatIcon, obj13), ];
+    items6 = [closure_18(parentMessage(8174).ChatIcon, obj13), ];
     const obj14 = { style: tmp.chevron, size: "xxs" };
-    items6[1] = closure_18(parentMessage(6715).ChevronSmallRightIcon, obj14);
+    items6[1] = closure_18(parentMessage(6892).ChevronSmallRightIcon, obj14);
     items5[1] = closure_19(View, obj12);
     return closure_19(PressableHighlight2, obj10);
   } else {

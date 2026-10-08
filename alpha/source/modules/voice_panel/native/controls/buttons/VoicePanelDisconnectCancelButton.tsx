@@ -1,29 +1,29 @@
-// Module ID: 17365
-// Function ID: 17366
+// Module ID: 17646
+// Function ID: 17647
 // Name: VoicePanelDisconnectCancelButton
-// Dependencies: [32, 19, 2050, 4918, 5104, 11916, 21, 4896, 587, 558, 576, 11915, 9049, 4618, 9024, 5097, 5038, 5575, 9589, 17366, 7536, 1126, 17356, 2]
+// Dependencies: [32, 19, 2062, 5893, 6079, 11989, 21, 5090, 587, 558, 576, 11988, 6043, 4810, 10623, 5104, 7438, 5885, 10782, 17647, 9258, 1126, 17637, 2]
 
-// Module 17365 (VoicePanelDisconnectCancelButton)
+// Module 17646 (VoicePanelDisconnectCancelButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import StreamActionCreators from "StreamActionCreators" /* 5038 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5097 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5575 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 9024 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9049 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11916 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5104 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5885 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6043 */;
+import StreamActionCreators from "StreamActionCreators" /* 7438 */;
+import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 10623 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11989 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4918 */;
-import VoicePanelStore from "VoicePanelStore" /* 5104 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5893 */;
+import VoicePanelStore from "VoicePanelStore" /* 6079 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, props;
+let _require;
 
 let obj2;
 let obj3;
@@ -41,7 +41,7 @@ const __initData = { code: "function VoicePanelDisconnectCancelButtonTsx1(){cons
 const __initData2 = { code: "function VoicePanelDisconnectCancelButtonTsx2(focusId_0,lastFocusId){const{runOnJS,handleFocusChange}=this.__closure;if(focusId_0!==lastFocusId){runOnJS(handleFocusChange)(focusId_0);}}" };
 const __initData3 = { code: "function VoicePanelDisconnectCancelButtonTsx3(){const{mode,VoicePanelModes,focused}=this.__closure;var _focused$get$id,_focused$get;if(mode.get()!==VoicePanelModes.PANEL){return null;}return(_focused$get$id=(_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id)!==null&&_focused$get$id!==void 0?_focused$get$id:null;}" };
 const __initData4 = { code: "function VoicePanelDisconnectCancelButtonTsx4(focusId_0,lastFocusId){const{runOnJS,handleFocusChange}=this.__closure;if(focusId_0!==lastFocusId){runOnJS(handleFocusChange)(focusId_0);}}" };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisconnectCancelButton(props) {
   let channelId;
   let closure_4;
   let first;
@@ -89,38 +89,38 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
     }
   }
   let obj2 = channelId(mode[13]);
-  class C {
-    constructor() {
-      let tmp = null;
-      if (mode.get() === VoicePanelModes.PANEL) {
-        const value = focused.get();
-        let id;
-        if (value != null) {
-          id = value.id;
-        }
-        if (id == null) {
-          id = null;
-        }
-        tmp = id;
+  const fn = function v() {
+    let tmp = null;
+    if (mode.get() === VoicePanelModes.PANEL) {
+      const value = focused.get();
+      let id;
+      if (value != null) {
+        id = value.id;
       }
-      return tmp;
+      if (id == null) {
+        id = null;
+      }
+      tmp = id;
+    }
+    return tmp;
+  };
+  let obj3 = { mode, VoicePanelModes, focused };
+  fn.__closure = obj3;
+  fn.__workletHash = 1109426015268;
+  fn.__initData = __initData;
+  class A {
+    constructor(arg0, arg1) {
+      if (arg0 !== arg1) {
+        const obj = ReanimatedRexport;
+        obj.runOnJS(handleFocusChange)(arg0);
+      }
     }
   }
-  let obj3 = { mode, VoicePanelModes, focused };
-  C.__closure = obj3;
-  C.__workletHash = 1109426015268;
-  C.__initData = __initData;
-  const fn = function v(arg0, arg1) {
-    if (arg0 !== arg1) {
-      const obj = ReanimatedRexport;
-      obj.runOnJS(handleFocusChange)(arg0);
-    }
-  };
-  fn.__closure = { runOnJS: channelId(mode[13]).runOnJS, handleFocusChange };
-  fn.__workletHash = 11963160980927;
-  fn.__initData = __initData2;
+  A.__closure = { runOnJS: channelId(mode[13]).runOnJS, handleFocusChange };
+  A.__workletHash = 11963160980927;
+  A.__initData = __initData2;
   ({ runOnJS: channelId(mode[13]).runOnJS, handleFocusChange });
-  const animatedReaction = obj2.useAnimatedReaction(C, fn);
+  const animatedReaction = obj2.useAnimatedReaction(fn, A);
   if (cResult[0] === channelId) {
     if (cResult[1] === first) {
       let tmp10;
@@ -229,7 +229,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
   cResult[2] = focused;
   cResult[3] = T;
   tmp10 = T;
-}) : ((props) => {
+}) : (function DisconnectCancelButton(props) {
   let icon;
   let items1;
   let stringResult;
@@ -277,38 +277,38 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
     }
   }, []);
   let obj2 = require("ReanimatedRexport");
-  class C {
-    constructor() {
-      let tmp = null;
-      if (mode.get() === VoicePanelModes.PANEL) {
-        const value = focused.get();
-        let id;
-        if (value != null) {
-          id = value.id;
-        }
-        if (id == null) {
-          id = null;
-        }
-        tmp = id;
+  const fn = function v() {
+    let tmp = null;
+    if (mode.get() === VoicePanelModes.PANEL) {
+      const value = focused.get();
+      let id;
+      if (value != null) {
+        id = value.id;
       }
-      return tmp;
+      if (id == null) {
+        id = null;
+      }
+      tmp = id;
+    }
+    return tmp;
+  };
+  let obj3 = { mode, VoicePanelModes, focused };
+  fn.__closure = obj3;
+  fn.__workletHash = 11003731851942;
+  fn.__initData = __initData3;
+  class C {
+    constructor(arg0, arg1) {
+      if (arg0 !== arg1) {
+        const obj = ReanimatedRexport;
+        obj.runOnJS(callback)(arg0);
+      }
     }
   }
-  let obj3 = { mode, VoicePanelModes, focused };
-  C.__closure = obj3;
-  C.__workletHash = 11003731851942;
-  C.__initData = __initData3;
-  const fn = function p(arg0, arg1) {
-    if (arg0 !== arg1) {
-      const obj = ReanimatedRexport;
-      obj.runOnJS(callback)(arg0);
-    }
-  };
-  fn.__closure = { runOnJS: require("ReanimatedRexport").runOnJS, handleFocusChange };
-  fn.__workletHash = 10967754441017;
-  fn.__initData = __initData4;
+  C.__closure = { runOnJS: require("ReanimatedRexport").runOnJS, handleFocusChange };
+  C.__workletHash = 10967754441017;
+  C.__initData = __initData4;
   ({ runOnJS: require("ReanimatedRexport").runOnJS, handleFocusChange });
-  const animatedReaction = obj2.useAnimatedReaction(C, fn);
+  const animatedReaction = obj2.useAnimatedReaction(fn, C);
   const items = [channelId, first, focused];
   const callback1 = first.useCallback(() => {
     let id;

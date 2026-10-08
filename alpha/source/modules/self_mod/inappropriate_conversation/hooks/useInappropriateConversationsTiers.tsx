@@ -1,20 +1,20 @@
-// Module ID: 10716
-// Function ID: 10717
+// Module ID: 12696
+// Function ID: 12697
 // Name: useInappropriateConversationsTiers
-// Dependencies: [1377, 9799, 558, 576, 9805, 504, 9804, 2]
+// Dependencies: [1389, 10266, 558, 576, 10368, 504, 10367, 2]
 
-// Module 10716 (useInappropriateConversationsTiers)
+// Module 12696 (useInappropriateConversationsTiers)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 9799 */;
-import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 9804 */;
-import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 9805 */;
-import UserStore from "UserStore" /* 1377 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10266 */;
+import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 10367 */;
+import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 10368 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const SafetyWarningTypes = ChannelSafetyWarningsStore.SafetyWarningTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInappropriateConversationsTiers(id) {
   let currentUser;
   let first;
   let tmp6;
@@ -86,7 +86,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     }
   }
   return null;
-}) : ((id) => {
+}) : (function useInappropriateConversationsTiers(id) {
   let currentUser;
   let tmp6;
   let type1;

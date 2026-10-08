@@ -1,19 +1,19 @@
-// Module ID: 17635
-// Function ID: 17636
+// Module ID: 17917
+// Function ID: 17918
 // Name: RedesignAddAvatarModal
-// Dependencies: [5, 32, 19, 17, 7842, 1085, 21, 4896, 587, 558, 576, 1618, 504, 14435, 17617, 7851, 7931, 7287, 7846, 7848, 1126, 4892, 17626, 17614, 5601, 2]
+// Dependencies: [5, 32, 19, 17, 8260, 1085, 21, 5090, 587, 558, 576, 1630, 504, 14660, 17899, 8269, 8350, 7741, 8264, 8266, 1126, 5086, 17908, 17896, 5375, 2]
 
-// Module 17635 (RedesignAddAvatarModal)
+// Module 17917 (RedesignAddAvatarModal)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 17614 */;
+import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 17896 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7842 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8260 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ obj3 = { flexGrow: 2, minHeight: nativeDefault.space.PX_24 };
 obj4 = { marginBottom: nativeDefault.space.PX_8, textAlign: "center" };
 obj5 = { alignSelf: "center", paddingTop: nativeDefault.space.PX_24 };
 let closure_12 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignAddAvatarModal(route) {
   let closure_3;
   let first;
   let items1;
@@ -71,15 +71,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   const bottom = require("useSafeAreaInsets")().bottom;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserProfileSettingsStore];
-    class A {
+    class C {
       constructor() {
         return pendingChanges.getPendingChanges().pendingAvatar;
       }
     }
     cResult[0] = items;
-    cResult[1] = A;
+    cResult[1] = C;
     tmp11 = items;
-    tmp12 = A;
+    tmp12 = C;
   } else {
     [tmp11, tmp12] = cResult;
   }
@@ -91,7 +91,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
       let obj2 = { imageUri: null, description: tmpResult5.generateAvatarDescription() };
       let createPendingImage = tmp(tmp2[13]).createPendingImage;
       tmp(tmp2[13]);
-      class A {
+      class C {
         constructor() {
           return pendingChanges.getPendingChanges().pendingAvatar;
         }
@@ -99,7 +99,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
       tmpResult5 = tmp(tmp2[15]);
       pendingImage = createPendingImage(obj2);
     }
-    class A {
+    class C {
       constructor() {
         return pendingChanges.getPendingChanges().pendingAvatar;
       }
@@ -120,7 +120,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   if (cResult[4] !== imageUri) {
     const tmpResult6 = tmp(tmp2[16]);
     const memoizedImageSourceResult = tmpResult6.memoizedImageSource(imageUri);
-    class A {
+    class C {
       constructor() {
         return pendingChanges.getPendingChanges().pendingAvatar;
       }
@@ -217,7 +217,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
     function handleSelectAvatar() {
       return closure_0(...arguments);
     }
-    class A {
+    class C {
       constructor() {
         return pendingChanges.getPendingChanges().pendingAvatar;
       }
@@ -231,7 +231,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   const sum = bottom + tmp10(tmp2[8]).space.PX_16;
   if (cResult[7] !== sum) {
     let obj3 = { paddingBottom: sum, paddingHorizontal: tmp10(tmp2[8]).space.PX_16 };
-    class A {
+    class C {
       constructor() {
         return pendingChanges.getPendingChanges().pendingAvatar;
       }
@@ -251,7 +251,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
     }
     const _Symbol = Symbol;
     const headerContainer = tmp4.headerContainer;
-    class A {
+    class C {
       constructor() {
         return pendingChanges.getPendingChanges().pendingAvatar;
       }
@@ -259,7 +259,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
     if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
       const intl = tmp(tmp2[20]).intl;
       const stringResult = intl.string(tmp(tmp2[20]).t.XQRWvR);
-      class A {
+      class C {
         constructor() {
           return pendingChanges.getPendingChanges().pendingAvatar;
         }
@@ -268,7 +268,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
     }
     if (cResult[13] !== tmp4.title) {
       let obj4 = { style: tmp27, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
-      class A {
+      class C {
         constructor() {
           return pendingChanges.getPendingChanges().pendingAvatar;
         }
@@ -285,7 +285,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
     if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
       const intl2 = tmp(tmp2[20]).intl;
       const stringResult1 = intl2.string(tmp(tmp2[20]).t.fH9TLT);
-      class A {
+      class C {
         constructor() {
           return pendingChanges.getPendingChanges().pendingAvatar;
         }
@@ -294,7 +294,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
     }
     if (cResult[16] !== tmp4.subtitle) {
       let obj5 = { style: subtitle, variant: "text-sm/medium", color: "text-default", children: null };
-      class A {
+      class C {
         constructor() {
           return pendingChanges.getPendingChanges().pendingAvatar;
         }
@@ -322,14 +322,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
           if (tmp46) {
             let obj6 = { variant: "text-sm/medium", color: "text-feedback-critical", children: obj12.string(tmp(tmp2[20]).t.XyLlVm) };
             const Text = tmp(tmp2[21]).Text;
-            class A {
+            class C {
               constructor() {
                 return pendingChanges.getPendingChanges().pendingAvatar;
               }
             }
             tmp46 = closure_10(Text, obj6);
           }
-          class A {
+          class C {
             constructor() {
               return pendingChanges.getPendingChanges().pendingAvatar;
             }
@@ -356,7 +356,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
                 }
                 if (cResult[34] !== first) {
                   let obj7 = { onAvatarSelect: tmp9, selectedAvatar: null };
-                  class A {
+                  class C {
                     constructor() {
                       return pendingChanges.getPendingChanges().pendingAvatar;
                     }
@@ -370,7 +370,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
                 }
                 if (cResult[36] !== tmp4.growContainer) {
                   let obj8 = { style: null };
-                  class A {
+                  class C {
                     constructor() {
                       return pendingChanges.getPendingChanges().pendingAvatar;
                     }
@@ -382,7 +382,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
                 } else {
                   tmp57 = cResult[37];
                 }
-                class A {
+                class C {
                   constructor() {
                     return pendingChanges.getPendingChanges().pendingAvatar;
                   }
@@ -391,7 +391,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
                 if (cResult[38] === Symbol.for("react.memo_cache_sentinel")) {
                   const intl3 = tmp(tmp2[20]).intl;
                   const stringResult2 = intl3.string(tmp(tmp2[20]).t.PDTjLN);
-                  class A {
+                  class C {
                     constructor() {
                       return pendingChanges.getPendingChanges().pendingAvatar;
                     }
@@ -432,7 +432,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
                             }
                           }
                         }
-                        class A {
+                        class C {
                           constructor() {
                             return pendingChanges.getPendingChanges().pendingAvatar;
                           }
@@ -449,7 +449,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
                         cResult[55] = tmp72;
                         tmp70 = tmp72;
                       }
-                      class A {
+                      class C {
                         constructor() {
                           return pendingChanges.getPendingChanges().pendingAvatar;
                         }
@@ -461,7 +461,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
                       cResult[48] = tmp69;
                       tmp67 = tmp69;
                     }
-                    class A {
+                    class C {
                       constructor() {
                         return pendingChanges.getPendingChanges().pendingAvatar;
                       }
@@ -495,7 +495,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
               }
             }
           }
-          class A {
+          class C {
             constructor() {
               return pendingChanges.getPendingChanges().pendingAvatar;
             }
@@ -510,7 +510,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
           cResult[33] = tmp53;
           tmp51 = tmp53;
         }
-        class A {
+        class C {
           constructor() {
             return pendingChanges.getPendingChanges().pendingAvatar;
           }
@@ -522,7 +522,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
         cResult[28] = tmp50;
         tmp48 = tmp50;
       }
-      class A {
+      class C {
         constructor() {
           return pendingChanges.getPendingChanges().pendingAvatar;
         }
@@ -547,7 +547,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   cResult[10] = tmp25;
   cResult[11] = items4;
   tmp26 = items4;
-}) : ((route) => {
+}) : (function RedesignAddAvatarModal(route) {
   let Button;
   let _undefined;
   let c1;

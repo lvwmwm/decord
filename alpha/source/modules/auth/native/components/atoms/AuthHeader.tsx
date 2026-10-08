@@ -1,22 +1,22 @@
-// Module ID: 6469
-// Function ID: 6470
+// Module ID: 6647
+// Function ID: 6648
 // Name: AuthHeader
-// Dependencies: [19, 1085, 21, 4896, 5922, 587, 558, 576, 1188, 2]
+// Dependencies: [19, 1085, 21, 5090, 5902, 587, 558, 576, 1200, 2]
 
-// Module 6469 (AuthHeader)
+// Module 6647 (AuthHeader)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import TextStyles from "TextStyles" /* 5922 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import TextStyles from "TextStyles" /* 5902 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const native = tmp(1188);
+const native = tmp(1200);
 const Fonts = Constants.Fonts;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -25,7 +25,7 @@ createStyles = createStyles.createStyles;
 obj2 = { textAlign: "center" };
 const merged = Object.assign(TextStyles(Fonts.DISPLAY_EXTRABOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
 let closure_3 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AuthHeader(arg0) {
   let children;
   let style;
   const obj = react2;
@@ -55,7 +55,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.header;
   cResult[2] = items;
   tmp5 = items;
-}) : ((arg0) => {
+}) : (function AuthHeader(arg0) {
   let children;
   let style;
   ({ children, style } = arg0);

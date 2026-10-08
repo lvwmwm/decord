@@ -1,23 +1,23 @@
-// Module ID: 9391
-// Function ID: 9392
+// Module ID: 8812
+// Function ID: 8813
 // Name: SecureFramesExistingVerificationsHelpMessage
-// Dependencies: [17, 21, 4896, 558, 576, 9392, 1126, 1188, 2]
+// Dependencies: [17, 21, 5090, 558, 576, 8813, 1126, 1200, 2]
 
-// Module 9391 (SecureFramesExistingVerificationsHelpMessage)
+// Module 8812 (SecureFramesExistingVerificationsHelpMessage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import useSecureFramesUserVerifiedKeysCount from "useSecureFramesUserVerifiedKeysCount" /* 9392 */;
-import createStyles from "createStyles" /* 4896 */;
+import native from "native" /* 1200 */;
+import useSecureFramesUserVerifiedKeysCount from "useSecureFramesUserVerifiedKeysCount" /* 8813 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ container: { width: "100%" } });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFramesExistingVerificationsHelpMessage(arg0) {
   let style;
   let userId;
   let userKey;
@@ -52,7 +52,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp9 = cResult[7];
         }
         if (cResult[8] !== tmp9) {
-          const HelpMessage = tmp(1188).HelpMessage;
+          const HelpMessage = tmp(1200).HelpMessage;
           const tmp13 = <HelpMessage messageType={native.HelpMessageTypes.INFO}>{tmp9}</HelpMessage>;
           cResult[8] = tmp9;
           cResult[9] = tmp13;
@@ -86,7 +86,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = userKey;
   cResult[2] = obj5;
   tmp5 = obj5;
-}) : ((arg0) => {
+}) : (function SecureFramesExistingVerificationsHelpMessage(arg0) {
   let intl;
   let obj4;
   let style;
@@ -100,7 +100,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (0 !== secureFramesUserVerifiedKeysCount) {
     const items = [tmp.container, style];
     ({ messageType: native.HelpMessageTypes.INFO, children: intl.format(intl2.t.uZDkz0, obj4) });
-    const HelpMessage = tmp2(1188).HelpMessage;
+    const HelpMessage = tmp2(1200).HelpMessage;
     intl = tmp2(1126).intl;
     tmp5 = <View style={items}>{null}</View>;
     obj4 = { count: secureFramesUserVerifiedKeysCount };

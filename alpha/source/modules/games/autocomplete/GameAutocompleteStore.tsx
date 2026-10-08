@@ -1,15 +1,17 @@
-// Module ID: 5899
-// Function ID: 5900
+// Module ID: 8211
+// Function ID: 8212
 // Name: GameAutocompleteStore
-// Dependencies: [1444, 504, 5900, 5901, 584, 2]
+// Dependencies: [1456, 504, 8212, 584, 2]
 
-// Module 5899 (GameAutocompleteStore)
+// Module 8211 (GameAutocompleteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import LRUCacheDefault from "LRUCache" /* 1444 */;
-import GameAutocompleteTypes from "GameAutocompleteTypes" /* 5900 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 5901 */;
+import LRUCacheDefault from "LRUCache" /* 1456 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8212 */;
 import size from "module_2" /* 2 */;
+
+const require = globalThis.__r;
+let _require;
 
 function getCacheKey(arg0, arg1) {
   return "" + arg0 + ":" + arg1;
@@ -21,25 +23,17 @@ let tmp4 = new LRUCacheDefault({ max: 500 });
 const hasOwnProperty = tmp4;
 const Store = get_initializedDefault.Store;
 class GameAutocompleteStore extends Store {
-  getResults(name) {
-    let DEFAULT = arg1;
-    if (arg1 === undefined) {
-      DEFAULT = GameAutocompleteTypes.GameAutocompleteProfile.DEFAULT;
-    }
+  getResults(name, arg1) {
     const obj = GameAutocompleteUtils;
     const result = obj.normalizeGameAutocompleteQuery(name);
     let peekResult;
     if (null != result) {
       const _HermesInternal = HermesInternal;
-      peekResult = navigation.peek("" + DEFAULT + ":" + result);
+      peekResult = navigation.peek("" + arg1 + ":" + result);
     }
     return peekResult;
   }
-  getClosestResults(result) {
-    let DEFAULT = arg1;
-    if (arg1 === undefined) {
-      DEFAULT = GameAutocompleteTypes.GameAutocompleteProfile.DEFAULT;
-    }
+  getClosestResults(result, DEFAULT) {
     const obj = GameAutocompleteUtils;
     result = obj.normalizeGameAutocompleteQuery(result);
     if (null != result) {
@@ -55,38 +49,33 @@ class GameAutocompleteStore extends Store {
       }
     }
   }
-  shouldSuppressFetch(name, DEFAULT) {
-    if (DEFAULT === undefined) {
-      DEFAULT = DEFAULT(5900).GameAutocompleteProfile.DEFAULT;
-    }
-    const obj = DEFAULT(5901);
-    const result = obj.normalizeGameAutocompleteQuery(name);
-    const tmp3 = DEFAULT;
+  shouldSuppressFetch(result, arg1) {
+    let closure_0;
+    _require = arg1;
+    const obj = require("GameAutocompleteUtils");
+    result = obj.normalizeGameAutocompleteQuery(result);
+    const tmp = _require;
     if (null == result) {
       return false;
     } else {
       const _HermesInternal = HermesInternal;
-      const combined = "" + DEFAULT + ":" + result;
+      const combined = "" + arg1 + ":" + result;
       const hasItem = navigation.has(combined);
       let result1 = !hasItem && !set.has(combined);
       if (result1) {
-        const tmp3Result = tmp3(5901);
-        result1 = tmp3Result.shouldSuppressAutocompleteFetch(result, (arg0) => navigation.peek("" + DEFAULT + ":" + arg0));
+        const tmpResult = tmp(8212);
+        result1 = tmpResult.shouldSuppressAutocompleteFetch(result, (arg0) => navigation.peek("" + closure_0 + ":" + arg0));
       }
       return result1;
     }
   }
-  isFetching(name) {
-    let DEFAULT = arg1;
-    if (arg1 === undefined) {
-      DEFAULT = GameAutocompleteTypes.GameAutocompleteProfile.DEFAULT;
-    }
+  isFetching(name, arg1) {
     const obj = GameAutocompleteUtils;
     const result = obj.normalizeGameAutocompleteQuery(name);
     let hasItem = null != result;
     if (hasItem) {
       const _HermesInternal = HermesInternal;
-      hasItem = set.has("" + DEFAULT + ":" + result);
+      hasItem = set.has("" + arg1 + ":" + result);
     }
     return hasItem;
   }
@@ -102,12 +91,12 @@ let obj = {
     new Set();
     navigation2.reset();
   },
-  GAME_AUTOCOMPLETE_FETCH: function handleFetch(profile) {
-    set.add("" + profile.profile + ":" + profile.query);
+  GAME_AUTOCOMPLETE_FETCH: function handleFetch(filterGroup) {
+    set.add("" + filterGroup.filterGroup + ":" + filterGroup.query);
   },
   GAME_AUTOCOMPLETE_FETCH_SUCCESS: function handleFetchSuccess(results) {
     results = results.results;
-    const tmp = getCacheKey(results.profile, results.query);
+    const tmp = getCacheKey(results.filterGroup, results.query);
     set.delete(tmp);
     const result = navigation.set(tmp, results);
     for (const item10017 of results) {
@@ -115,8 +104,8 @@ let obj = {
       continue;
     }
   },
-  GAME_AUTOCOMPLETE_FETCH_FAILURE: function handleFetchFailure(profile) {
-    set.delete("" + profile.profile + ":" + profile.query);
+  GAME_AUTOCOMPLETE_FETCH_FAILURE: function handleFetchFailure(filterGroup) {
+    set.delete("" + filterGroup.filterGroup + ":" + filterGroup.query);
   }
 };
 const gameAutocompleteStore = new GameAutocompleteStore(DispatcherDefault, obj);

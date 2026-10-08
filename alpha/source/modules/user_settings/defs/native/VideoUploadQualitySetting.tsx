@@ -1,17 +1,17 @@
-// Module ID: 15301
-// Function ID: 15302
+// Module ID: 15563
+// Function ID: 15564
 // Name: VideoUploadQualitySetting
-// Dependencies: [1195, 7645, 558, 576, 504, 15300, 2028, 1126, 11142, 2]
+// Dependencies: [1207, 7966, 558, 576, 504, 15562, 2040, 1126, 11262, 2]
 
-// Module 15301 (VideoUploadQualitySetting)
+// Module 15563 (VideoUploadQualitySetting)
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import UnsyncedUserSettingsStore2 from "UnsyncedUserSettingsStore" /* 1195 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import UserSettingsText from "UserSettingsText" /* 15300 */;
+import UnsyncedUserSettingsStore2 from "UnsyncedUserSettingsStore" /* 1207 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import UserSettingsText from "UserSettingsText" /* 15562 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const UnsyncedUserSettingsStore = UnsyncedUserSettingsStore2;
@@ -20,7 +20,7 @@ let tmp;
 const get_initialized = tmp(504);
 const VideoQualitySettings = UnsyncedUserSettingsStore2.VideoQualitySettings;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoUploadQualitySettingValue() {
   let tmp4;
   let tmp5;
   let videoUploadQuality;
@@ -28,7 +28,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UnsyncedUserSettingsStore];
-    const fn = function l() {
+    const fn = function o() {
       return videoUploadQuality.videoUploadQuality;
     };
     cResult[0] = items;
@@ -40,7 +40,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useVideoUploadQualitySettingValue() {
   let videoUploadQuality;
   const items = [UnsyncedUserSettingsStore];
   const obj = get_initialized;

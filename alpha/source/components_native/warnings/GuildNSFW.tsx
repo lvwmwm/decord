@@ -1,16 +1,16 @@
-// Module ID: 12331
-// Function ID: 12332
+// Module ID: 10975
+// Function ID: 10976
 // Name: GuildNSFW
-// Dependencies: [109, 19, 2074, 21, 558, 576, 504, 5106, 5712, 8117, 8119, 1126, 12332, 2]
+// Dependencies: [109, 19, 2086, 21, 558, 576, 504, 5930, 6102, 7492, 5915, 1126, 10976, 2]
 
-// Module 12331 (GuildNSFW)
+// Module 10975 (GuildNSFW)
 import Fragment from "Fragment" /* 21 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5712 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8117 */;
-import GatedContentDefault from "GatedContent" /* 12332 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6102 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7492 */;
+import GatedContentDefault from "GatedContent" /* 10976 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let _require;
 let closure_3 = ["modalType", "emphasiseDisagree"];
 let closure_4 = ["modalType", "emphasiseDisagree"];
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildNSFW(guildId) {
   let emphasiseDisagree;
   let first;
   let modalType;
@@ -63,7 +63,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     tmp9 = cResult[4];
   }
   if (cResult[7] !== guildId) {
-    const fn2 = function _() {
+    function handleDisagree() {
       if (false !== guildId.returnToSafety) {
         const obj = GuildActionCreatorsDefault;
         obj.nsfwReturnToSafety(guildId.guildId);
@@ -71,26 +71,17 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       if (guildId.onReturnToSafety != null) {
         guildId.onReturnToSafety();
       }
-    };
+    }
     cResult[7] = guildId;
-    cResult[8] = fn2;
+    cResult[8] = handleDisagree;
   }
   if (cResult[9] !== guildId.guildId) {
-    class A {
-      constructor() {
-        const obj = GuildActionCreatorsDefault;
-        obj.nsfwAgree(guildId.guildId);
-      }
+    function handleAgree() {
+      const obj = GuildActionCreatorsDefault;
+      obj.nsfwAgree(guildId.guildId);
     }
     cResult[9] = guildId.guildId;
-    cResult[10] = A;
-  } else {
-    class A {
-      constructor() {
-        const obj = GuildActionCreatorsDefault;
-        obj.nsfwAgree(guildId.guildId);
-      }
-    }
+    cResult[10] = handleAgree;
   }
   if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
     class T {
@@ -155,7 +146,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[14] = guildId.channelId;
   cResult[15] = undefined;
   cResult[16] = obj2;
-}) : ((channelId) => {
+}) : (function GuildNSFW(channelId) {
   let id;
   let intl;
   let str;

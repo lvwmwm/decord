@@ -1,12 +1,12 @@
-// Module ID: 11897
-// Function ID: 11898
+// Module ID: 11970
+// Function ID: 11971
 // Name: ChatInputCover
-// Dependencies: [19, 17, 21, 558, 576, 5777, 1616, 2]
+// Dependencies: [19, 17, 21, 558, 576, 5360, 1628, 2]
 
-// Module 11897 (ChatInputCover)
+// Module 11970 (ChatInputCover)
 import Fragment from "Fragment" /* 21 */;
-import KeyboardTypes from "KeyboardTypes" /* 1616 */;
-import react_mod from "react" /* 19 */;
+import KeyboardTypes from "KeyboardTypes" /* 1628 */;
+import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -14,12 +14,9 @@ import size from "module_2" /* 2 */;
 let c3;
 let closure_4;
 let hasOwnProperty;
-let react = react_mod;
 ({ StyleSheet: c3, TouchableWithoutFeedback: closure_4, View: hasOwnProperty } = react_native);
 const jsx = Fragment.jsx;
-const forwardRef = react.forwardRef;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((onSelectKeyboard, ref) => {
-  let closure_2;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputCover(onSelectKeyboard) {
   let enabled;
   let keyboardType;
   let tmp = keyboardType;
@@ -27,8 +24,12 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   const cResult = obj.c(13);
   ({ enabled, keyboardType } = onSelectKeyboard);
   onSelectKeyboard = onSelectKeyboard.onSelectKeyboard;
-  let tmp4 = undefined === enabled || enabled;
-  react = tmp4;
+  let tmp4 = undefined === enabled;
+  const ref = onSelectKeyboard.ref;
+  if (!tmp4) {
+    tmp4 = enabled;
+  }
+  enabled = tmp4;
   const tmpResult = tmp(onSelectKeyboard[5]);
   const isScreenReaderEnabled = tmpResult.useIsScreenReaderEnabled();
   if (cResult[0] === tmp4) {
@@ -40,7 +41,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           tmp6 = cResult[4];
         }
         if (cResult[5] !== onSelectKeyboard) {
-          const fn2 = function c() {
+          const fn2 = function b() {
             const obj = { type: KeyboardTypes.KeyboardTypes.SYSTEM };
             onSelectKeyboard(obj);
           };
@@ -56,7 +57,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
             tmp8 = cResult[9];
           }
           const openSystemKeyboard = tmp8.openSystemKeyboard;
-          const imperativeHandle = react.useImperativeHandle(ref, tmp8.imperativeHandle);
+          const imperativeHandle = enabled.useImperativeHandle(ref, tmp8.imperativeHandle);
           if (tmp4) {
             tmp4 = keyboardType !== tmp(tmp2[6]).KeyboardTypes.SYSTEM;
           }
@@ -64,20 +65,20 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
             tmp4 = !isScreenReaderEnabled;
           }
           if (cResult[10] === tmp4) {
-            let tmp12;
+            let tmp11;
             if (cResult[11] === openSystemKeyboard) {
-              tmp12 = cResult[12];
+              tmp11 = cResult[12];
             }
-            return tmp12;
+            return tmp11;
           }
-          let tmp13 = null;
+          let tmp12 = null;
           if (tmp4) {
-            tmp13 = <closure_4 accessible={false} accessibilityRole="none" onPress={openSystemKeyboard}>{null}</closure_4>;
+            tmp12 = <closure_4 accessible={false} accessibilityRole="none" onPress={openSystemKeyboard}>{null}</closure_4>;
           }
           cResult[10] = tmp4;
           cResult[11] = openSystemKeyboard;
-          cResult[12] = tmp13;
-          tmp12 = tmp13;
+          cResult[12] = tmp12;
+          tmp11 = tmp12;
         }
         const obj4 = { imperativeHandle: tmp6, openSystemKeyboard: tmp7 };
         cResult[7] = tmp6;
@@ -87,10 +88,10 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       }
     }
   }
-  const fn = function b() {
+  const fn = function p() {
     let obj = {
       focused(arg0) {
-        const tmp = closure_1_2 && arg0 && closure_1_0 !== keyboardType(onSelectKeyboard[6]).KeyboardTypes.SYSTEM && isScreenReaderEnabled;
+        const tmp = enabled && arg0 && closure_1_0 !== keyboardType(onSelectKeyboard[6]).KeyboardTypes.SYSTEM && isScreenReaderEnabled;
         if (tmp) {
           const obj = { type: keyboardType(onSelectKeyboard[6]).KeyboardTypes.SYSTEM };
           closure_1_1(obj);
@@ -105,7 +106,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   cResult[3] = onSelectKeyboard;
   cResult[4] = fn;
   tmp6 = fn;
-}) : ((enabled, ref) => {
+}) : (function ChatInputCover(enabled) {
   let flag = enabled.enabled;
   if (flag === undefined) {
     flag = true;
@@ -113,6 +114,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   const keyboardType = enabled.keyboardType;
   const onSelectKeyboard = enabled.onSelectKeyboard;
   let tmp = flag;
+  const ref = enabled.ref;
   let obj = flag(keyboardType[5]);
   const isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
   const items = [flag, isScreenReaderEnabled, keyboardType, onSelectKeyboard];
@@ -151,9 +153,9 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     }
   }
   return tmp6;
-}));
-forwardRefResult.displayName = "ChatInputCover";
-const memoResult = react.memo(forwardRefResult);
+});
+tmp3.displayName = "ChatInputCover";
+const memoResult = react.memo(tmp3);
 const result = size.fileFinishedImporting("modules/chat_input/native/accessories/ChatInputCover.tsx");
 
 export default memoResult;

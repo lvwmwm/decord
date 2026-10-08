@@ -61,7 +61,7 @@ class HTTPResponseError extends Error {
   }
 }
 const prototype = HTTPResponseError.prototype;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((colors) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMemoArray(colors) {
   let first;
   let tmp3;
   [first, tmp3] = metroImportDefault(colors);
@@ -74,7 +74,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((colors) => {
     tmp3(colors);
   }
   return first;
-}) : ((colors) => {
+}) : (function useMemoArray(colors) {
   let first;
   let tmp3;
   [first, tmp3] = metroImportDefault(colors);
@@ -101,7 +101,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
   let getUseStoreState;
   let loader;
   let retryConfig;
-  const f134252 = () => {
+  const f135641 = () => {
     obj = { isLoading: false, error: null, backoff: closure_1_7(), lastSuccessAt: null, failureLockedUntil: null };
     return obj;
   };
@@ -130,7 +130,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
       obj = map;
       if (null == value) {
         const obj2 = module_570;
-        const obj3 = obj2.create(f134252);
+        const obj3 = obj2.create(f135641);
         const result = obj.set(arg0, obj3);
         value = obj3;
       }
@@ -393,7 +393,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
       value = map.get(tmp4);
       if (null == value) {
         const obj2 = ApplicationStore(dependencyMap[6]);
-        const obj6 = obj2.create(f134252);
+        const obj6 = obj2.create(f135641);
         const result = obj.set(tmp4, obj6);
         value = obj6;
       }
@@ -499,7 +499,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
           const obj2 = closure_1_11;
           if (null == value) {
             const obj3 = closure_0(c2[6]);
-            const obj4 = obj3.create(f134252);
+            const obj4 = obj3.create(f135641);
             const result = obj2.set(tmp, obj4);
             value = obj4;
           }
@@ -528,7 +528,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
           value = closure_1_11.get(tmp);
           if (null == value) {
             const obj3 = closure_0(c2[6]);
-            const obj2 = obj3.create(f134252);
+            const obj2 = obj3.create(f135641);
             const result = obj.set(tmp, obj2);
             value = obj2;
           }

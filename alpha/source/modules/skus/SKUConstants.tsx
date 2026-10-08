@@ -1,9 +1,9 @@
-// Module ID: 5704
-// Function ID: 5705
+// Module ID: 6094
+// Function ID: 6095
 // Name: SKUConstants
 // Dependencies: [2]
 
-// Module 5704 (SKUConstants)
+// Module 6094 (SKUConstants)
 import size from "module_2" /* 2 */;
 
 const set = new Set(["500428425362931713", "451550535720501248", "471376328319303681", "466696214818193408"]);

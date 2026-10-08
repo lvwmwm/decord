@@ -1,21 +1,19 @@
-// Module ID: 16418
-// Function ID: 16419
+// Module ID: 16678
+// Function ID: 16679
 // Name: ForYouSuggestedFriendsSectionHeader
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1126, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1126, 5086, 2]
 
-// Module 16418 (ForYouSuggestedFriendsSectionHeader)
+// Module 16678 (ForYouSuggestedFriendsSectionHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
+import Text_Text from "Text/Text" /* 5086 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let showDivider;
 
 let obj2;
 let obj3;
@@ -27,7 +25,7 @@ obj2 = { borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, 
 createStyles = createStyles.createStyles;
 obj3 = { marginTop: nativeDefault.space.PX_16 };
 let closure_4 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((showDivider) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYouSuggestedFriendsSectionHeader(showDivider) {
   const obj = react2;
   const cResult = obj.c(9);
   showDivider = showDivider.showDivider;
@@ -75,7 +73,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((showDivider) => {
   cResult[1] = !showDivider && tmp4.noDivider;
   cResult[2] = items;
   tmp6 = items;
-}) : ((showDivider) => {
+}) : (function ForYouSuggestedFriendsSectionHeader(showDivider) {
   let intl;
   showDivider = showDivider.showDivider;
   const tmp = closure_4();

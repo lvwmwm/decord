@@ -1,15 +1,15 @@
-// Module ID: 17749
-// Function ID: 17750
+// Module ID: 18036
+// Function ID: 18037
 // Name: SelectApplicationActionSheet
-// Dependencies: [19, 21, 558, 576, 1126, 4860, 6651, 6078, 9257, 6708, 6079, 2]
+// Dependencies: [19, 21, 558, 576, 1126, 5054, 6828, 6264, 8587, 6885, 6265, 2]
 
-// Module 17749 (SelectApplicationActionSheet)
+// Module 18036 (SelectApplicationActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import TableRadioRow2 from "TableRadioRow" /* 6078 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 6079 */;
-import ActionSheet2 from "ActionSheet" /* 6708 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import TableRadioRow2 from "TableRadioRow" /* 6264 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 6265 */;
+import ActionSheet2 from "ActionSheet" /* 6885 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectApplicationActionSheet(arg0) {
   let applications;
   let first;
   let onSelectApplication;
@@ -37,19 +37,19 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== onSelectApplication) {
-    const fn = function h(dependencyMap) {
+    function handleChange(dependencyMap) {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
       onSelectApplication(dependencyMap);
-    };
+    }
     cResult[1] = onSelectApplication;
-    cResult[2] = fn;
-    tmp6 = fn;
+    cResult[2] = handleChange;
+    tmp6 = handleChange;
   } else {
     tmp6 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp9 = jsx(onSelectApplication(6651).BottomSheetTitleHeader, { title: first });
+    const tmp9 = jsx(onSelectApplication(6828).BottomSheetTitleHeader, { title: first });
     cResult[3] = tmp9;
     tmp7 = tmp9;
   } else {
@@ -59,12 +59,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp11;
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn2 = function v(application) {
+      const fn = function f(application) {
         const TableRadioRow = onSelectApplication(dependencyMap[7]).TableRadioRow;
         return <TableRadioRow key={arg0.id} value={arg0.id} label={arg0.name} icon={null} />;
       };
-      cResult[6] = fn2;
-      tmp11 = fn2;
+      cResult[6] = fn;
+      tmp11 = fn;
     } else {
       tmp11 = cResult[6];
     }
@@ -84,14 +84,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return tmp13;
     }
   }
-  const ActionSheet = tmp(6708).ActionSheet;
+  const ActionSheet = tmp(6885).ActionSheet;
   const tmp14 = <ActionSheet header={tmp7}>{null}</ActionSheet>;
   cResult[7] = tmp6;
   cResult[8] = selectedApplicationId;
   cResult[9] = tmp10;
   cResult[10] = tmp14;
   tmp13 = tmp14;
-}) : ((arg0) => {
+}) : (function SelectApplicationActionSheet(arg0) {
   let TableRadioGroup;
   let applications;
   let obj2;
@@ -105,7 +105,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     hasIcons: true,
     accessibilityLabel: stringResult,
     defaultValue: selectedApplicationId,
-    onChange(arg0) {
+    onChange: function handleChange(arg0) {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
       require(arg0);

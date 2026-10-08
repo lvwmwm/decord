@@ -1,14 +1,14 @@
-// Module ID: 8162
-// Function ID: 8163
+// Module ID: 7543
+// Function ID: 7544
 // Name: ShowExpressiveModalSubtitleAltFlag
-// Dependencies: [8139, 1440, 558, 576, 8125, 504, 2]
+// Dependencies: [5920, 1452, 558, 576, 5927, 504, 2]
 // Exports: shouldShowExpressiveModalSubtitleAlt
 
-// Module 8162 (ShowExpressiveModalSubtitleAltFlag)
+// Module 7543 (ShowExpressiveModalSubtitleAltFlag)
 import react from "react" /* 576 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8125 */;
-import SafetyHubStore from "SafetyHubStore" /* 8139 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 5927 */;
+import SafetyHubStore from "SafetyHubStore" /* 5920 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let obj = { kind: "user", name: "2026-08-show-expressive-modal-subtitle-alt", de
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
 let closure_3 = ApexExperiment.createApexExperiment(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowExpressiveModalSubtitleAlt(location) {
   let showExpressiveModalSubtitleAlt;
   let tmp5;
   let tmp6;
@@ -30,7 +30,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
   const isSuspendedUser = obj2.useIsSuspendedUser();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SafetyHubStore];
-    const fn = function n() {
+    const fn = function u() {
       return showExpressiveModalSubtitleAlt.getShowExpressiveModalSubtitleAlt();
     };
     cResult[0] = items;
@@ -55,7 +55,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     enabled = stateFromStores;
   }
   return enabled;
-}) : ((location) => {
+}) : (function useShouldShowExpressiveModalSubtitleAlt(location) {
   let showExpressiveModalSubtitleAlt;
   const obj = SafetyHubUtils;
   const isSuspendedUser = obj.useIsSuspendedUser();

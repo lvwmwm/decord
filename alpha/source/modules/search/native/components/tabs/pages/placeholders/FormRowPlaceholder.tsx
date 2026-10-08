@@ -1,22 +1,20 @@
-// Module ID: 16868
-// Function ID: 16869
+// Module ID: 17147
+// Function ID: 17148
 // Name: FormRowPlaceholder
-// Dependencies: [19, 17, 7524, 21, 4896, 587, 558, 576, 16837, 4618, 2]
+// Dependencies: [19, 17, 9247, 21, 5090, 587, 558, 576, 17116, 4810, 2]
 
-// Module 16868 (FormRowPlaceholder)
+// Module 17147 (FormRowPlaceholder)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4618 */;
-import SearchConstants from "SearchConstants" /* 7524 */;
-import usePlaceholderStyles from "usePlaceholderStyles" /* 16837 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4810 */;
+import SearchConstants from "SearchConstants" /* 9247 */;
+import usePlaceholderStyles from "usePlaceholderStyles" /* 17116 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let style;
 
 let closure_4;
 let hasOwnProperty;
@@ -33,7 +31,7 @@ createStyles = createStyles.createStyles;
 size1 = { width: "50%", borderRadius: nativeDefault.radii.md, height: 16, marginBottom: 8, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 size2 = { justifyContent: "center", width: "100%", borderRadius: nativeDefault.radii.md, height: 16, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 let closure_6 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormRowPlaceholderItem(style) {
   let items;
   let items1;
   const obj = react2;
@@ -119,7 +117,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   cResult[2] = tmp3.itemContainer;
   cResult[3] = items2;
   tmp5 = items2;
-}) : ((style) => {
+}) : (function FormRowPlaceholderItem(style) {
   let items;
   let items1;
   let items2;

@@ -1,19 +1,19 @@
-// Module ID: 15985
-// Function ID: 15986
+// Module ID: 16245
+// Function ID: 16246
 // Name: useGuildsRouteGuildId
-// Dependencies: [558, 1491, 576, 2]
+// Dependencies: [558, 1503, 576, 2]
 // Exports: default
 
-// Module 15985 (useGuildsRouteGuildId)
+// Module 16245 (useGuildsRouteGuildId)
 import react from "react" /* 576 */;
-import Link from "Link" /* 1491 */;
+import Link from "Link" /* 1503 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-const fn = () => {
+function useGuildsRouteGuildId() {
   const obj = Link;
   const params = obj.useRoute().params;
   let guildId;
@@ -21,8 +21,8 @@ const fn = () => {
     guildId = params.guildId;
   }
   return guildId;
-};
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+}
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildsRouteGuildAndChannelId() {
   const obj = react;
   const cResult = obj.c(3);
   const obj2 = Link;
@@ -53,7 +53,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = channelId;
   cResult[2] = items;
   tmp5 = items;
-}) : (() => {
+}) : (function useGuildsRouteGuildAndChannelId() {
   const obj = Link;
   const route = obj.useRoute();
   let guildId;
@@ -76,5 +76,5 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 const result1 = size.fileFinishedImporting("modules/main_tabs_v2/navigator/useGuildsRouteGuildId.tsx");
 
-export default fn;
+export default useGuildsRouteGuildId;
 export const useGuildsRouteGuildAndChannelId = tmp3;

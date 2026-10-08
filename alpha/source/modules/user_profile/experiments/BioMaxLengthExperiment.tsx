@@ -1,13 +1,13 @@
-// Module ID: 7844
-// Function ID: 7845
+// Module ID: 8262
+// Function ID: 8263
 // Name: BioMaxLengthExperiment
-// Dependencies: [1085, 1440, 558, 576, 2]
+// Dependencies: [1085, 1452, 558, 576, 2]
 // Exports: getBioMaxLength
 
-// Module 7844 (BioMaxLengthExperiment)
+// Module 8262 (BioMaxLengthExperiment)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let obj2;
 let obj = { name: "2026-08-user-bio-max-length", kind: "user", defaultConfig: { maxLength: BIO_MAX_LENGTH }, variations: obj2 };
 obj2 = { 0: { maxLength: BIO_MAX_LENGTH }, 1: { maxLength: BIO_MAX_LENGTH_INCREASED } };
 let closure_2 = ApexExperiment.createApexExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBioMaxLength(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -32,7 +32,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2).maxLength;
-}) : ((location) => {
+}) : (function useBioMaxLength(location) {
   const obj = { location: location.location };
   return closure_2.useConfig(obj).maxLength;
 });

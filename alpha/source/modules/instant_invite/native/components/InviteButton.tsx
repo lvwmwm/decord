@@ -1,17 +1,17 @@
-// Module ID: 9569
-// Function ID: 9570
+// Module ID: 8743
+// Function ID: 8744
 // Name: InviteButton
-// Dependencies: [19, 17, 7239, 21, 4896, 558, 576, 1126, 5601, 2]
+// Dependencies: [19, 17, 7418, 21, 5090, 558, 576, 1126, 5375, 2]
 
-// Module 9569 (InviteButton)
+// Module 8743 (InviteButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl6 from "intl" /* 1126 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import Constants from "Constants" /* 7239 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import Constants from "Constants" /* 7418 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ const View = react_native.View;
 const InviteSendStates = Constants.InviteSendStates;
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ buttonWrapper: { minWidth: 66, flexDirection: "row" } });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function InviteButton(arg0) {
   let disabled;
   let flag2;
   let onPressSend;
@@ -115,7 +115,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[6] = tmp8;
   cResult[7] = tmp20;
   tmp19 = tmp20;
-}) : ((onPressSend) => {
+}) : (function InviteButton(onPressSend) {
   let disabled;
   let flag;
   let sendState;
@@ -147,7 +147,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     stringResult1 = intl2.string(tmp2(1126).t.jYnGPG);
     flag = false;
   }
-  const Button = tmp2(5601).Button;
+  const Button = tmp2(5375).Button;
   if (!disabled) {
     disabled = flag;
   }

@@ -1,15 +1,15 @@
-// Module ID: 7932
-// Function ID: 7933
+// Module ID: 8351
+// Function ID: 8352
 // Name: useGetIsMounted
 // Dependencies: [19, 558, 576, 2]
 
-// Module 7932 (useGetIsMounted)
+// Module 8351 (useGetIsMounted)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetIsMounted() {
   let tmp2;
   let tmp3;
   let tmp5;
@@ -18,7 +18,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let closure_0 = react.useRef(true);
   const obj2 = react;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function n() {
+    const fn = function u() {
       return () => {
         ref.current = false;
       };
@@ -33,7 +33,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const effect = obj2.useEffect(tmp2, tmp3);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function u() {
+    const fn2 = function c() {
       return ref.current;
     };
     cResult[2] = fn2;
@@ -42,7 +42,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[2];
   }
   return tmp5;
-}) : (() => {
+}) : (function useGetIsMounted() {
   let closure_0 = react.useRef(true);
   const effect = react.useEffect(() => () => {
     ref.current = false;

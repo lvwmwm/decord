@@ -1,29 +1,27 @@
-// Module ID: 15997
-// Function ID: 15998
+// Module ID: 16257
+// Function ID: 16258
 // Name: MessagesItemChannelBase
-// Dependencies: [19, 17, 4936, 4911, 4525, 2103, 5077, 1377, 1085, 21, 4896, 587, 558, 576, 504, 15998, 7899, 1369, 4909, 4907, 10664, 9295, 8507, 15999, 7525, 7942, 16000, 8503, 16001, 5916, 2]
+// Dependencies: [19, 17, 5106, 6040, 4717, 2115, 5971, 1389, 1085, 21, 5090, 587, 558, 576, 504, 16258, 8318, 1381, 7001, 5101, 10264, 8626, 8991, 16259, 9248, 8360, 16260, 8987, 16261, 6189, 2]
 
-// Module 15997 (MessagesItemChannelBase)
+// Module 16257 (MessagesItemChannelBase)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import transitionToChannel from "transitionToChannel" /* 4907 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4909 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10664 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import transitionToChannel from "transitionToChannel" /* 5101 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7001 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10264 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 4936 */;
-import ReadStateStore from "ReadStateStore" /* 4911 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
-import UserStore from "UserStore" /* 1377 */;
+import PresenceStore from "PresenceStore" /* 5106 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channel;
 
 let closure_12;
 let map1;
@@ -40,7 +38,7 @@ let closure_14 = createStyles.createStyles(() => {
   ({ borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED });
   return obj;
 });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemChannelBase(channel) {
   let activities;
   let blocked;
   let favorite;
@@ -70,37 +68,77 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
     first = cResult[0];
   }
   if (cResult[1] !== channel.id) {
-    const fn = function _() {
-      let id;
-      const channelId = SelectedChannelStore.getChannelId(null);
-      if (channel != null) {
-        id = channel.id;
+    class M {
+      constructor() {
+        let id;
+        const channelId = SelectedChannelStore.getChannelId(null);
+        if (channel != null) {
+          id = channel.id;
+        }
+        return channelId === id;
       }
-      return channelId === id;
-    };
+    }
     cResult[1] = channel.id;
-    cResult[2] = fn;
-    tmp6 = fn;
+    cResult[2] = M;
+    tmp6 = M;
   } else {
-    tmp6 = cResult[2];
+    class M {
+      constructor() {
+        let id;
+        const channelId = SelectedChannelStore.getChannelId(null);
+        if (channel != null) {
+          id = channel.id;
+        }
+        return channelId === id;
+      }
+    }
   }
   const tmpResult = channel(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
   const tmp8 = closure_14();
   if (cResult[3] !== height) {
-    let obj2 = { height, overflow: "hidden" };
+    class M {
+      constructor() {
+        let id;
+        const channelId = SelectedChannelStore.getChannelId(null);
+        if (channel != null) {
+          id = channel.id;
+        }
+        return channelId === id;
+      }
+    }
+    tmp10[0] = height;
     cResult[3] = height;
-    cResult[4] = obj2;
+    cResult[4] = tmp10;
+  } else {
+    class M {
+      constructor() {
+        let id;
+        const channelId = SelectedChannelStore.getChannelId(null);
+        if (channel != null) {
+          id = channel.id;
+        }
+        return channelId === id;
+      }
+    }
   }
-  let rowSelected;
   if (stateFromStores) {
-    rowSelected = tmp8.rowSelected;
+    class M {
+      constructor() {
+        let id;
+        const channelId = SelectedChannelStore.getChannelId(null);
+        if (channel != null) {
+          id = channel.id;
+        }
+        return channelId === id;
+      }
+    }
   }
   if (cResult[5] === tmp8.pressable) {
     let tmp12;
-    let tmp14;
+    let tmp13;
+    let tmp15;
     let tmp16;
-    let tmp17;
     let tmp21;
     let tmp22;
     let tmp24;
@@ -108,16 +146,45 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
     let tmp27;
     let tmp28;
     let tmp31;
+    class M {
+      constructor() {
+        let id;
+        const channelId = SelectedChannelStore.getChannelId(null);
+        if (channel != null) {
+          id = channel.id;
+        }
+        return channelId === id;
+      }
+    }
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+      class M {
+        constructor() {
+          let id;
+          const channelId = SelectedChannelStore.getChannelId(null);
+          if (channel != null) {
+            id = channel.id;
+          }
+          return channelId === id;
+        }
+      }
       const items1 = [PresenceStore];
       cResult[8] = items1;
       tmp12 = items1;
     } else {
-      tmp12 = cResult[8];
+      class M {
+        constructor() {
+          let id;
+          const channelId = SelectedChannelStore.getChannelId(null);
+          if (channel != null) {
+            id = channel.id;
+          }
+          return channelId === id;
+        }
+      }
     }
     if (cResult[9] !== channel) {
-      class E {
+      class B {
         constructor() {
           let activities;
           let obj3;
@@ -128,16 +195,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
             obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
             const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
           } else {
-            obj3 = { status: "start", activities: "unicodeVersion" };
+            obj3 = { status: "Array", activities: "Reflect" };
           }
           return obj3;
         }
       }
       cResult[9] = channel;
-      cResult[10] = E;
-      tmp14 = E;
+      cResult[10] = B;
+      tmp13 = B;
     } else {
-      class E {
+      class B {
         constructor() {
           let activities;
           let obj3;
@@ -148,18 +215,18 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
             obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
             const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
           } else {
-            obj3 = { status: "start", activities: "unicodeVersion" };
+            obj3 = { status: "Array", activities: "Reflect" };
           }
           return obj3;
         }
       }
     }
     const tmpResult8 = channel(504);
-    const stateFromStoresObject = tmpResult8.useStateFromStoresObject(tmp12, tmp14);
+    const stateFromStoresObject = tmpResult8.useStateFromStoresObject(tmp12, tmp13);
     ({ status, activities } = stateFromStoresObject);
     const _Symbol2 = Symbol;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      class E {
+      class B {
         constructor() {
           let activities;
           let obj3;
@@ -170,16 +237,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
             obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
             const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
           } else {
-            obj3 = { status: "start", activities: "unicodeVersion" };
+            obj3 = { status: "Array", activities: "Reflect" };
           }
           return obj3;
         }
       }
       const items2 = [ReadStateStore];
       cResult[11] = items2;
-      tmp16 = items2;
+      tmp15 = items2;
     } else {
-      class E {
+      class B {
         constructor() {
           let activities;
           let obj3;
@@ -190,7 +257,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
             obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
             const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
           } else {
-            obj3 = { status: "start", activities: "unicodeVersion" };
+            obj3 = { status: "Array", activities: "Reflect" };
           }
           return obj3;
         }
@@ -199,51 +266,60 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
     if (cResult[12] !== channel) {
       class B {
         constructor() {
-          let tmp2;
-          const mentionCount = ReadStateStore.getMentionCount(channel.id);
-          const obj3 = { mentionCount, hasUnreadMessages: tmp2 };
-          tmp2 = mentionCount > 0;
-          if (!tmp2) {
-            tmp2 = null != channel.getGuildId() && obj.hasUnread(channel.id);
-            null != channel.getGuildId() && ReadStateStore.hasUnread(channel.id);
+          let activities;
+          let obj3;
+          if (channel.isDM()) {
+            activities = PresenceStore.getActivities(obj.getRecipientId());
+          }
+          if (channel.isDM()) {
+            obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
+            const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
+          } else {
+            obj3 = { status: "Array", activities: "Reflect" };
           }
           return obj3;
         }
       }
       cResult[12] = channel;
-      cResult[13] = B;
-      tmp17 = B;
+      cResult[13] = tmp17;
+      tmp16 = tmp17;
     } else {
       class B {
         constructor() {
-          let tmp2;
-          const mentionCount = ReadStateStore.getMentionCount(channel.id);
-          const obj3 = { mentionCount, hasUnreadMessages: tmp2 };
-          tmp2 = mentionCount > 0;
-          if (!tmp2) {
-            tmp2 = null != channel.getGuildId() && obj.hasUnread(channel.id);
-            null != channel.getGuildId() && ReadStateStore.hasUnread(channel.id);
+          let activities;
+          let obj3;
+          if (channel.isDM()) {
+            activities = PresenceStore.getActivities(obj.getRecipientId());
+          }
+          if (channel.isDM()) {
+            obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
+            const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
+          } else {
+            obj3 = { status: "Array", activities: "Reflect" };
           }
           return obj3;
         }
       }
     }
     const tmpResult9 = channel(504);
-    const stateFromStoresObject1 = tmpResult9.useStateFromStoresObject(tmp16, tmp17);
+    const stateFromStoresObject1 = tmpResult9.useStateFromStoresObject(tmp15, tmp16);
     ({ mentionCount, hasUnreadMessages } = stateFromStoresObject1);
-    ({ isIncomingCall, isOngoingCall } = setIsPressed(15998)(channel.id));
+    ({ isIncomingCall, isOngoingCall } = setIsPressed(16258)(channel.id));
     const _Symbol3 = Symbol;
-    setIsPressed(15998)(channel.id);
+    setIsPressed(16258)(channel.id);
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
       class B {
         constructor() {
-          let tmp2;
-          const mentionCount = ReadStateStore.getMentionCount(channel.id);
-          const obj3 = { mentionCount, hasUnreadMessages: tmp2 };
-          tmp2 = mentionCount > 0;
-          if (!tmp2) {
-            tmp2 = null != channel.getGuildId() && obj.hasUnread(channel.id);
-            null != channel.getGuildId() && ReadStateStore.hasUnread(channel.id);
+          let activities;
+          let obj3;
+          if (channel.isDM()) {
+            activities = PresenceStore.getActivities(obj.getRecipientId());
+          }
+          if (channel.isDM()) {
+            obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
+            const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
+          } else {
+            obj3 = { status: "Array", activities: "Reflect" };
           }
           return obj3;
         }
@@ -254,13 +330,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
     } else {
       class B {
         constructor() {
-          let tmp2;
-          const mentionCount = ReadStateStore.getMentionCount(channel.id);
-          const obj3 = { mentionCount, hasUnreadMessages: tmp2 };
-          tmp2 = mentionCount > 0;
-          if (!tmp2) {
-            tmp2 = null != channel.getGuildId() && obj.hasUnread(channel.id);
-            null != channel.getGuildId() && ReadStateStore.hasUnread(channel.id);
+          let activities;
+          let obj3;
+          if (channel.isDM()) {
+            activities = PresenceStore.getActivities(obj.getRecipientId());
+          }
+          if (channel.isDM()) {
+            obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
+            const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
+          } else {
+            obj3 = { status: "Array", activities: "Reflect" };
           }
           return obj3;
         }
@@ -401,7 +480,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
         }
       }
     }
-    const tmpResult13 = channel(7899);
+    const tmpResult13 = channel(8318);
     const nameplate = tmpResult13.useNameplate(tmp31);
     let tmp35 = null != nameplate;
     if (tmp35) {
@@ -415,7 +494,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       }
       tmp35 = tmp36;
     }
-    const tmpResult14 = channel(1369);
+    const tmpResult14 = channel(1381);
     if (tmpResult14.isIOS()) {
       class Z {
         constructor() {
@@ -456,11 +535,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
     cResult[27] = setIsPressed;
     cResult[28] = re;
   }
-  const items6 = [tmp8.pressable, rowSelected];
+  const items6 = [tmp8.pressable, undefined];
   cResult[5] = tmp8.pressable;
-  cResult[6] = rowSelected;
+  cResult[6] = undefined;
   cResult[7] = items6;
-}) : ((channel) => {
+}) : (function MessagesItemChannelBase(channel) {
   let PressableHighlight;
   let activities;
   let blocked;
@@ -522,7 +601,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
       const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
     } else {
-      obj3 = { status: "start", activities: "unicodeVersion" };
+      obj3 = { status: "Array", activities: "Reflect" };
     }
     return obj3;
   });

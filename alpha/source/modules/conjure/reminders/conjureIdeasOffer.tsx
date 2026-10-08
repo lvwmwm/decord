@@ -1,11 +1,11 @@
-// Module ID: 16726
-// Function ID: 16727
+// Module ID: 16999
+// Function ID: 17000
 // Name: conjureIdeasOffer
-// Dependencies: [12924, 2]
+// Dependencies: [13073, 2]
 // Exports: isIdeasOfferTurn
 
-// Module 16726 (conjureIdeasOffer)
-import ConjureChatStore from "ConjureChatStore" /* 12924 */;
+// Module 16999 (conjureIdeasOffer)
+import ConjureChatStore from "ConjureChatStore" /* 13073 */;
 import size from "module_2" /* 2 */;
 
 const turnSettled = ConjureChatStore.turnSettled;

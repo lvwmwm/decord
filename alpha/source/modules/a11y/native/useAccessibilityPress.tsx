@@ -1,17 +1,15 @@
-// Module ID: 9274
-// Function ID: 9275
+// Module ID: 8605
+// Function ID: 8606
 // Name: useAccessibilityPress
 // Dependencies: [19, 558, 576, 2]
 
-// Module 9274 (useAccessibilityPress)
+// Module 8605 (useAccessibilityPress)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let cResult;
-
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult, label) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccessibilityPress(cResult, label) {
   let items1;
   let tmp2;
   let tmp3;
@@ -23,7 +21,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult, label) => {
   let closure_1 = react.useRef(cResult);
   const obj2 = react;
   if (cResult[0] !== cResult) {
-    const fn = function s() {
+    const fn = function n() {
       ref.current = current;
     };
     const items = [cResult];
@@ -38,7 +36,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult, label) => {
   }
   const effect = obj2.useEffect(tmp2, tmp3);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function u(nativeEvent) {
+    const fn2 = function l(nativeEvent) {
       if ("activate" === nativeEvent.nativeEvent.actionName) {
         ref.current();
       }
@@ -59,7 +57,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult, label) => {
     tmp6 = cResult[5];
   }
   return tmp6;
-}) : ((cResult, arg1) => {
+}) : (function useAccessibilityPress(cResult, arg1) {
   let closure_0 = cResult;
   let closure_1 = arg1;
   let closure_2 = react.useRef(cResult);

@@ -1,21 +1,19 @@
-// Module ID: 16303
-// Function ID: 16304
+// Module ID: 16563
+// Function ID: 16564
 // Name: VoiceSubtitle
-// Dependencies: [19, 21, 558, 576, 5048, 1126, 4892, 2]
+// Dependencies: [19, 21, 558, 576, 5405, 1126, 5086, 2]
 
-// Module 16303 (VoiceSubtitle)
+// Module 16563 (VoiceSubtitle)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5048 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5405 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let guildId;
-
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceSubtitle(guildId) {
   let mapped;
   let tmp5;
   let obj = guildId(576);
@@ -29,7 +27,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       tmp4 = cResult[2];
     }
     if (cResult[5] !== tmp4) {
-      const tmp9 = jsx(guildId(4892).Text, { variant: "text-xs/medium", color: "text-voice-connected", lineClamp: 1, children: tmp4 });
+      const tmp9 = jsx(guildId(5086).Text, { variant: "text-xs/medium", color: "text-voice-connected", lineClamp: 1, children: tmp4 });
       cResult[5] = tmp4;
       cResult[6] = tmp9;
       tmp7 = tmp9;
@@ -39,7 +37,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     return tmp7;
   }
   if (cResult[3] !== guildId) {
-    const fn = function l(arg0) {
+    const fn = function n(arg0) {
       const obj = NicknameUtilsDefault;
       return obj.getName(guildId, null, arg0);
     };
@@ -60,7 +58,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[1] = voiceUsers;
   cResult[2] = formatResult;
   tmp4 = formatResult;
-}) : ((arg0) => {
+}) : (function VoiceSubtitle(arg0) {
   let mapped;
   let voiceUsers;
   ({ guildId: require, voiceUsers } = arg0);

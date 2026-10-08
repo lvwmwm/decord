@@ -1,22 +1,22 @@
-// Module ID: 14799
-// Function ID: 14800
+// Module ID: 15060
+// Function ID: 15061
 // Name: SettingsClipsScreen
-// Dependencies: [19, 7645, 21, 558, 576, 11142, 14515, 2]
+// Dependencies: [19, 7966, 21, 558, 576, 11262, 14775, 2]
 
-// Module 14799 (SettingsClipsScreen)
+// Module 15060 (SettingsClipsScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import SettingLayoutDefault from "SettingLayout" /* 14515 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import SettingLayoutDefault from "SettingLayout" /* 14775 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const SettingBuilders = tmp(11142);
+const SettingBuilders = tmp(11262);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClipsSettingsScreen() {
   let first;
   let items;
   let tmp7;
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[1];
   }
   return tmp7;
-}) : (() => {
+}) : (function ClipsSettingsScreen() {
   const node = react.useMemo(() => {
     let items;
     const obj = { settings: items };

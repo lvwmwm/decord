@@ -1,13 +1,13 @@
-// Module ID: 13522
-// Function ID: 13523
+// Module ID: 13819
+// Function ID: 13820
 // Name: ExplicitMediaSearchStore
-// Dependencies: [5118, 7122, 504, 584, 2]
+// Dependencies: [5430, 7308, 504, 584, 2]
 
-// Module 13522 (ExplicitMediaSearchStore)
+// Module 13819 (ExplicitMediaSearchStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5118 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7122 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5430 */;
+import handleExplicitMediaScanTimeoutForMessage from "handleExplicitMediaScanTimeoutForMessage" /* 7308 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, messages;
@@ -66,7 +66,7 @@ let obj = {
   MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: function handleScanTimeout(channelId) {
     const combined = "" + channelId.channelId + ":" + channelId.messageId;
     if (null != closure_2[combined]) {
-      const obj = ExplicitMediaRedactionUtils;
+      const obj = handleExplicitMediaScanTimeoutForMessage;
       closure_2[combined] = obj.handleExplicitMediaScanTimeoutForMessage(closure_2[combined]);
     }
   }

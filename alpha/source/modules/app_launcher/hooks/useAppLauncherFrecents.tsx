@@ -1,22 +1,22 @@
-// Module ID: 11757
-// Function ID: 11758
+// Module ID: 11823
+// Function ID: 11824
 // Name: useAppLauncherFrecents
-// Dependencies: [19, 6609, 1377, 11758, 2011, 5795, 1985, 558, 576, 8968, 504, 6672, 8025, 11759, 8958, 8826, 9034, 2]
+// Dependencies: [19, 6786, 1389, 11824, 2023, 5399, 1997, 558, 576, 9759, 504, 6849, 8433, 11825, 9761, 9185, 10637, 2]
 
-// Module 11757 (useAppLauncherFrecents)
+// Module 11823 (useAppLauncherFrecents)
 import react2 from "react" /* 576 */;
-import Server from "Server" /* 1985 */;
-import Constants from "Constants" /* 2011 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6609 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6672 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 8826 */;
-import isApplicationAgeRestrictedDefault from "isApplicationAgeRestricted" /* 8958 */;
-import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 8968 */;
-import getPrimaryAppCommand from "getPrimaryAppCommand" /* 9034 */;
+import Server from "Server" /* 1997 */;
+import Constants from "Constants" /* 2023 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6786 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6849 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9185 */;
+import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 9759 */;
+import isApplicationAgeRestrictedDefault from "isApplicationAgeRestricted" /* 9761 */;
+import getPrimaryAppCommand from "getPrimaryAppCommand" /* 10637 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
-import AppLauncherLastUsedCommandStore from "AppLauncherLastUsedCommandStore" /* 11758 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5795 */;
+import UserStore from "UserStore" /* 1389 */;
+import AppLauncherLastUsedCommandStore from "AppLauncherLastUsedCommandStore" /* 11824 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5399 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ const DISCOVERY_COMMANDS_QUERY_LIMIT = ApplicationCommandConstants.DISCOVERY_COM
 items = [Server.ApplicationCommandType.CHAT, Server.ApplicationCommandType.PRIMARY_ENTRY_POINT];
 const options = { placeholderCount: 0, limit: DISCOVERY_COMMANDS_QUERY_LIMIT, includeFrecency: true };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppLauncherFrecentApps(arg0) {
   let allowCommandFetch;
   let context;
   let includeAuthorizedAppsAndFetch;
@@ -87,7 +87,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = context;
   cResult[2] = obj5;
   tmp3 = obj5;
-}) : ((context) => {
+}) : (function useAppLauncherFrecentApps(context) {
   let allowCommandFetch;
   let includeAuthorizedAppsAndFetch;
   let onlyActivityApps;
@@ -100,7 +100,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppLauncherFrecentCommandsAndApps(arg0) {
   let commands;
   let commandsByActiveSection;
   let context;
@@ -111,7 +111,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp10;
   let tmp12;
   let tmp13;
-  let tmp21;
+  let tmp20;
   let tmp5;
   let tmp9;
   filters = filterSection(576);
@@ -160,14 +160,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const items1 = [AppLauncherLastUsedCommandStore];
-    class F {
+    class S {
       constructor() {
         return closure_1_8.getLastUsedCommandId();
       }
     }
     cResult[5] = items1;
-    cResult[6] = F;
-    tmp13 = F;
+    cResult[6] = S;
+    tmp13 = S;
     tmp12 = items1;
   } else {
     class A {
@@ -202,8 +202,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return;
         }
       }
-      cResult[12] = tmp25;
-      class F {
+      cResult[12] = tmp24;
+      class S {
         constructor() {
           return closure_1_8.getLastUsedCommandId();
         }
@@ -216,7 +216,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     }
-    class F {
+    class S {
       constructor() {
         return closure_1_8.getLastUsedCommandId();
       }
@@ -229,7 +229,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return;
       }
     }
-    class F {
+    class S {
       constructor() {
         return closure_1_8.getLastUsedCommandId();
       }
@@ -249,7 +249,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return;
         }
       }
-      tmp21 = tmp16;
+      tmp20 = tmp16;
       if (null != tmp17) {
         class A {
           constructor() {
@@ -258,35 +258,33 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         const items2 = [tmp17];
-        class F {
+        class S {
           constructor() {
             return closure_1_8.getLastUsedCommandId();
           }
         }
-        HermesBuiltin.arraySpread(items2, undefined.filter(tmp22), 1);
-        tmp21 = items2;
+        HermesBuiltin.arraySpread(items2, undefined.filter(tmp21), 1);
+        tmp20 = items2;
       }
     }
     if (cResult[16] !== stateFromStores) {
-      class A {
-        constructor() {
-          tmp = filterSection(BuiltInSectionId.FRECENCY);
-          return;
+      class L {
+        constructor(arg0) {
+          return arg0.id === closure_1;
         }
       }
       cResult[16] = stateFromStores;
-      class F {
+      class S {
         constructor() {
           return closure_1_8.getLastUsedCommandId();
         }
       }
-      cResult[17] = tmp19;
-      tmp18 = tmp19;
+      cResult[17] = L;
+      tmp18 = L;
     } else {
-      class A {
-        constructor() {
-          tmp = filterSection(BuiltInSectionId.FRECENCY);
-          return;
+      class L {
+        constructor(arg0) {
+          return arg0.id === closure_1;
         }
       }
     }
@@ -299,8 +297,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = commandsByActiveSection;
   cResult[9] = stateFromStores;
   cResult[10] = onlyActivityApps;
-  cResult[11] = tmp21;
-}) : ((arg0) => {
+  cResult[11] = tmp20;
+}) : (function useAppLauncherFrecentCommandsAndApps(arg0) {
   let context;
   let filterSection;
   let items2;
@@ -357,7 +355,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj4;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((includeAuthorizedAppsAndFetch) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrecentApps(includeAuthorizedAppsAndFetch) {
   let arr4;
   let context;
   let fetchState;
@@ -395,7 +393,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((includeAuthori
     let tmp16;
     let tmp22;
     let tmp21;
-    let tmp25;
+    let tmp26;
     if (cResult[3] === includeAuthorizedAppsAndFetch) {
       tmp8 = cResult[4];
       tmp9 = cResult[5];
@@ -425,7 +423,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((includeAuthori
           if (tmp) {
             tmp2 = closure_5;
             newestTokens = closure_5.getNewestTokens();
-            found = newestTokens.filter(() => { /* body not rendered: F141915 */ });
+            found = newestTokens.filter(() => { /* body not rendered: F143209 */ });
           } else {
             found = [];
           }
@@ -447,7 +445,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((includeAuthori
           if (tmp) {
             tmp2 = closure_5;
             newestTokens = closure_5.getNewestTokens();
-            found = newestTokens.filter(() => { /* body not rendered: F141915 */ });
+            found = newestTokens.filter(() => { /* body not rendered: F143209 */ });
           } else {
             found = [];
           }
@@ -464,7 +462,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((includeAuthori
           if (tmp) {
             tmp2 = closure_5;
             newestTokens = closure_5.getNewestTokens();
-            found = newestTokens.filter(() => { /* body not rendered: F141915 */ });
+            found = newestTokens.filter(() => { /* body not rendered: F143209 */ });
           } else {
             found = [];
           }
@@ -550,19 +548,14 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((includeAuthori
         }
       }
       const items2 = [UserStore];
-      class M {
+      class A {
         constructor() {
-          currentUser = closure_1_7.getCurrentUser();
-          nsfwAllowed = undefined;
-          if (currentUser != null) {
-            nsfwAllowed = currentUser.nsfwAllowed;
-          }
-          return nsfwAllowed;
+          return closure_1_5.getFetchState();
         }
       }
       cResult[14] = items2;
-      cResult[15] = M;
-      tmp22 = M;
+      cResult[15] = tmp23;
+      tmp22 = tmp23;
       tmp21 = items2;
     } else {
       class T {
@@ -575,7 +568,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((includeAuthori
     }
     const tmpResult6 = tmp(arr4[10]);
     stateFromStores1 = tmpResult6.useStateFromStores(tmp21, tmp22);
-    class F {
+    class S {
       constructor() {
         tmp = closure_1;
         if (tmp) {
@@ -593,7 +586,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((includeAuthori
       }
     }
     if (onlyActivityApps) {
-      let tmp32;
+      let tmp33;
       class T {
         constructor(arg0) {
           tmp2 = includeAuthorizedAppsAndFetch.id !== closure_1_10.FRECENCY && includeAuthorizedAppsAndFetch.id !== tmp.BUILT_IN;
@@ -621,14 +614,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((includeAuthori
           }
         }
         cResult[29] = context;
-        class M {
+        class A {
           constructor() {
-            currentUser = closure_1_7.getCurrentUser();
-            nsfwAllowed = undefined;
-            if (currentUser != null) {
-              nsfwAllowed = currentUser.nsfwAllowed;
-            }
-            return nsfwAllowed;
+            return closure_1_5.getFetchState();
           }
         }
         cResult[30] = H;
@@ -674,18 +662,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((includeAuthori
           }
         }
         cResult[31] = tmp19;
-        class M {
+        class A {
           constructor() {
-            currentUser = closure_1_7.getCurrentUser();
-            nsfwAllowed = undefined;
-            if (currentUser != null) {
-              nsfwAllowed = currentUser.nsfwAllowed;
-            }
-            return nsfwAllowed;
+            return closure_1_5.getFetchState();
           }
         }
-        cResult[32] = tmp33;
-        tmp32 = tmp33;
+        cResult[32] = tmp34;
+        tmp33 = tmp34;
       } else {
         class H {
           constructor(arg0) {
@@ -707,25 +690,20 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((includeAuthori
           }
         }
       }
-      class M {
+      class A {
         constructor() {
-          currentUser = closure_1_7.getCurrentUser();
-          nsfwAllowed = undefined;
-          if (currentUser != null) {
-            nsfwAllowed = currentUser.nsfwAllowed;
-          }
-          return nsfwAllowed;
+          return closure_1_5.getFetchState();
         }
       }
-      let found = arr7.filter(tmp32);
-      const found1 = found.filter(tmp24);
+      let found = arr7.filter(tmp33);
+      const found1 = found.filter(tmp25);
       cResult[24] = context;
       cResult[25] = tmp19;
       cResult[26] = sortApplicationsViaFrecency;
-      cResult[27] = tmp24;
+      cResult[27] = tmp25;
       cResult[28] = found1;
     } else {
-      let tmp26;
+      let tmp27;
       class H {
         constructor(arg0) {
           isActivityAppResult = null != includeAuthorizedAppsAndFetch.application;
@@ -766,18 +744,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((includeAuthori
           }
         }
         cResult[22] = tmp19;
-        class M {
+        class A {
           constructor() {
-            currentUser = closure_1_7.getCurrentUser();
-            nsfwAllowed = undefined;
-            if (currentUser != null) {
-              nsfwAllowed = currentUser.nsfwAllowed;
-            }
-            return nsfwAllowed;
+            return closure_1_5.getFetchState();
           }
         }
-        cResult[23] = tmp27;
-        tmp26 = tmp27;
+        cResult[23] = tmp28;
+        tmp27 = tmp28;
       } else {
         class H {
           constructor(arg0) {
@@ -799,26 +772,21 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((includeAuthori
           }
         }
       }
-      const found2 = sortApplicationsViaFrecency.filter(tmp26);
-      class M {
+      const found2 = sortApplicationsViaFrecency.filter(tmp27);
+      class A {
         constructor() {
-          currentUser = closure_1_7.getCurrentUser();
-          nsfwAllowed = undefined;
-          if (currentUser != null) {
-            nsfwAllowed = currentUser.nsfwAllowed;
-          }
-          return nsfwAllowed;
+          return closure_1_5.getFetchState();
         }
       }
       cResult[18] = tmp19;
       cResult[19] = sortApplicationsViaFrecency;
-      cResult[20] = tmp24;
-      cResult[21] = tmp29;
-      tmp25 = tmp29;
+      cResult[20] = tmp25;
+      cResult[21] = tmp30;
+      tmp26 = tmp30;
     }
-    return tmp25;
+    return tmp26;
   }
-  class F {
+  class S {
     constructor() {
       tmp = closure_1;
       if (tmp) {
@@ -838,11 +806,11 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((includeAuthori
   const items3 = [includeAuthorizedAppsAndFetch, stateFromStores];
   cResult[2] = stateFromStores;
   cResult[3] = includeAuthorizedAppsAndFetch;
-  cResult[4] = F;
+  cResult[4] = S;
   cResult[5] = items3;
   tmp9 = items3;
-  tmp8 = F;
-}) : ((onlyActivityApps) => {
+  tmp8 = S;
+}) : (function useFrecentApps(onlyActivityApps) {
   let closure_4;
   let context;
   let sectionDescriptors;

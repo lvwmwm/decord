@@ -1,15 +1,15 @@
-// Module ID: 6755
-// Function ID: 6756
+// Module ID: 6931
+// Function ID: 6932
 // Name: OrderActionCreators
-// Dependencies: [5, 1085, 3, 4556, 1282, 4549, 2]
+// Dependencies: [5, 1085, 3, 4748, 1294, 4741, 2]
 // Exports: fetchOrderEntitlementsWithRetry, getOrder, signOrder
 
-// Module 6755 (OrderActionCreators)
+// Module 6931 (OrderActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BillingError_mod from "BillingError" /* 4556 */;
+import BillingError_mod from "BillingError" /* 4748 */;
 import size from "module_2" /* 2 */;
 
 let c11, c12;
@@ -20,7 +20,8 @@ let obj = function _signOrder() {
     let c1;
     let c2;
     let c3;
-    let tmp44;
+    let c4;
+    let tmp49;
     function isOrderShape(body) {
       return null != body && typeof body === "object" && "id" in body && "status" in body;
     }
@@ -39,11 +40,12 @@ let obj = function _signOrder() {
         return { value: "IconComponent", done: null };
       }
     } else {
-      let c4;
+      let gateway_checkout_context;
       try {
         let expected_revision;
         let load_id;
         let purchase_token;
+        let closure_5;
         let body;
         c6 = 2;
         if (0 === c5) {
@@ -61,8 +63,9 @@ let obj = function _signOrder() {
             expected_revision = undefined;
             load_id = undefined;
             purchase_token = undefined;
-            ({ orderId: c0, expectedRevision: c1, loadId: c2, purchaseToken: c3 } = closure_0);
-            closure_4 = undefined;
+            gateway_checkout_context = undefined;
+            ({ orderId: c0, expectedRevision: c1, loadId: c2, purchaseToken: c3, gatewayCheckoutContext: c4 } = closure_0);
+            closure_5 = undefined;
             body = undefined;
             c5 = 1;
             c6 = 1;
@@ -84,15 +87,18 @@ let obj = function _signOrder() {
             if (null != purchase_token) {
               body.purchase_token = purchase_token;
             }
-            c4 = 1;
+            if (null != gateway_checkout_context) {
+              body.gateway_checkout_context = gateway_checkout_context;
+            }
+            gateway_checkout_context = 1;
             const HTTP = closure_130_0(closure_130_1[4]).HTTP;
-            const request = { url: closure_130_3.ORDER_SIGN(c0), body, context: tmp44, rejectWithError: true };
+            const request = { url: closure_130_3.ORDER_SIGN(c0), body, context: tmp49, rejectWithError: true };
             const post = HTTP.post;
-            tmp44 = undefined;
+            tmp49 = undefined;
             if (null != load_id) {
               if ("" !== load_id) {
                 const obj5 = { load_id };
-                tmp44 = obj5;
+                tmp49 = obj5;
               }
             }
             c5 = 3;
@@ -101,29 +107,29 @@ let obj = function _signOrder() {
             return obj6;
           }
         } else if (2 === c5) {
-          c4 = 0;
-          let closure_6 = closure_3;
-          if (closure_6 instanceof closure_130_0(closure_130_1[4]).HTTPResponseError) {
-            if (400 === closure_6.status) {
-              if (isOrderShape(closure_6.body)) {
+          gateway_checkout_context = 0;
+          let closure_7 = closure_3;
+          if (closure_7 instanceof closure_130_0(closure_130_1[4]).HTTPResponseError) {
+            if (400 === closure_7.status) {
+              if (isOrderShape(closure_7.body)) {
                 const self3 = this;
-                throw new closure_130_5(closure_6.body);
+                throw new closure_130_5(closure_7.body);
               }
             }
           }
-          throw closure_6;
+          throw closure_7;
         } else if (arg0 === 1) {
           c6 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c4 = 0;
+          gateway_checkout_context = 0;
           c6 = 3;
           const obj7 = { value, done: true };
           return obj7;
         } else {
-          closure_4 = value;
-          c4 = 0;
-          if (null == closure_4.body) {
+          closure_5 = value;
+          gateway_checkout_context = 0;
+          if (null == closure_5.body) {
             const _Error = Error;
             const self = this;
             const self2 = this;
@@ -132,15 +138,15 @@ let obj = function _signOrder() {
             throw error;
           } else {
             c6 = 3;
-            obj = { value: closure_4.body, done: true };
+            obj = { value: closure_5.body, done: true };
             return obj;
           }
         }
-      } catch (tmp49) {
-        closure_3 = tmp49;
-        if (0 === c4) {
+      } catch (tmp54) {
+        closure_3 = tmp54;
+        if (0 === gateway_checkout_context) {
           c6 = 3;
-          throw tmp49;
+          throw tmp54;
         } else {
           c5 = 2;
         }

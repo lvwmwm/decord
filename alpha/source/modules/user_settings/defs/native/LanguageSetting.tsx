@@ -1,22 +1,22 @@
-// Module ID: 15257
-// Function ID: 15258
+// Module ID: 15519
+// Function ID: 15520
 // Name: LanguageSetting
-// Dependencies: [2116, 1085, 558, 576, 504, 1126, 11142, 15258, 15260, 2]
+// Dependencies: [2128, 1085, 558, 576, 504, 1126, 11262, 15520, 15522, 2]
 
-// Module 15257 (LanguageSetting)
+// Module 15519 (LanguageSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import LanguageIcon from "LanguageIcon" /* 15258 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
+import LanguageIcon from "LanguageIcon" /* 15520 */;
+import LocaleStore from "LocaleStore" /* 2128 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const UserSettingsSections = Constants.UserSettingsSections;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLanguageSettingTrailing() {
   let locale;
   let stateFromStores;
   let tmp4;
@@ -54,7 +54,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[3];
   }
   return tmp8;
-}) : (() => {
+}) : (function useLanguageSettingTrailing() {
   let closure_0;
   let locale;
   const items = [LocaleStore];

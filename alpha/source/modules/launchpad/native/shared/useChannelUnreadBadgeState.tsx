@@ -1,12 +1,12 @@
-// Module ID: 16325
-// Function ID: 16326
+// Module ID: 16585
+// Function ID: 16586
 // Name: useChannelUnreadBadgeState
-// Dependencies: [7056, 4911, 5077, 558, 576, 504, 7059, 2]
+// Dependencies: [7243, 6040, 5971, 558, 576, 504, 6081, 2]
 
-// Module 16325 (useChannelUnreadBadgeState)
-import NewChannelsStore from "NewChannelsStore" /* 7056 */;
-import ReadStateStore from "ReadStateStore" /* 4911 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
+// Module 16585 (useChannelUnreadBadgeState)
+import NewChannelsStore from "NewChannelsStore" /* 7243 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelUnreadBadgeState(guild_id, arg1) {
   let first;
   let isMentionLowImportance;
   let mentionCount;
@@ -53,29 +53,27 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id, arg1) => {
       tmp11 = cResult[5];
     }
     if (cResult[6] !== guild_id) {
-      const fn2 = function b() {
-        return UserGuildSettingsStore.resolveUnreadSetting(guild_id);
-      };
+      class U {
+        constructor() {
+          return UserGuildSettingsStore.resolveUnreadSetting(guild_id);
+        }
+      }
       cResult[6] = guild_id;
-      cResult[7] = fn2;
-      tmp13 = fn2;
+      cResult[7] = U;
+      tmp13 = U;
     } else {
-      tmp13 = cResult[7];
+      class U {
+        constructor() {
+          return UserGuildSettingsStore.resolveUnreadSetting(guild_id);
+        }
+      }
     }
     const tmpResult4 = require("get initialized");
     const stateFromStores1 = tmpResult4.useStateFromStores(tmp11, tmp13);
     if (cResult[8] === isMentionLowImportance) {
-      if (cResult[9] === mentionCount) {
-        if (cResult[10] === stateFromStores) {
-          if (cResult[11] === optInEnabledForGuild) {
-            if (cResult[12] === stateFromStores1) {
-              let tmp15;
-              if (cResult[13] === unread) {
-                tmp15 = cResult[14];
-              }
-              return tmp15;
-            }
-          }
+      class U {
+        constructor() {
+          return UserGuildSettingsStore.resolveUnreadSetting(guild_id);
         }
       }
     }
@@ -87,7 +85,6 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id, arg1) => {
     cResult[12] = stateFromStores1;
     cResult[13] = unread;
     cResult[14] = obj2;
-    tmp15 = obj2;
   }
   const fn = function c() {
     return NewChannelsStore.shouldIndicateNewChannel(guild_id.guild_id, guild_id.id);
@@ -100,7 +97,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id, arg1) => {
   cResult[4] = items2;
   tmp8 = items2;
   tmp7 = fn;
-}) : ((guild_id, arg1) => {
+}) : (function useChannelUnreadBadgeState(guild_id, arg1) {
   let isMentionLowImportance;
   let items2;
   let mentionCount;
@@ -123,7 +120,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id, arg1) => {
   return obj3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBaseChannelUnreadBadgeState(id, arg1) {
   let closure_1;
   let first;
   _require = id;
@@ -155,7 +152,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
   cResult[2] = arg1;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useBaseChannelUnreadBadgeState(arg0, arg1) {
   let closure_1;
   let id;
   _require = arg0;

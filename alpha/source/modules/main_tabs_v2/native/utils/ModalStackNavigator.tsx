@@ -1,27 +1,27 @@
-// Module ID: 10674
-// Function ID: 10675
+// Module ID: 9587
+// Function ID: 9588
 // Name: ModalStackNavigator
-// Dependencies: [109, 19, 21, 7568, 558, 576, 6503, 7509, 10675, 1369, 2]
+// Dependencies: [109, 19, 21, 9279, 558, 576, 6679, 9232, 9588, 1381, 2]
 
-// Module 10674 (ModalStackNavigator)
+// Module 9587 (ModalStackNavigator)
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import Navigator2 from "Navigator" /* 6503 */;
-import HeaderShared from "HeaderShared" /* 7509 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10675 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import Navigator2 from "Navigator" /* 6679 */;
+import HeaderShared from "HeaderShared" /* 9232 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 9588 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import NativeStackView from "NativeStackView" /* 7568 */;
+import NativeStackView from "NativeStackView" /* 9279 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let dependencyMap, titleIcon;
+let dependencyMap;
 
 let closure_3 = ["children"];
 const jsx = Fragment.jsx;
 let Navigator = NativeStackView.createNativeStackNavigator();
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((titleIcon) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ModalStackNavigator(titleIcon) {
   let accessibilityNativeStackOptions;
   let screenKey;
   let title;
@@ -109,7 +109,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((t
   cResult[1] = titleIcon;
   cResult[2] = fn;
   tmp3 = fn;
-}) : ((render) => {
+}) : (function ModalStackNavigator(render) {
   let closure_2;
   let screenKey;
   let title;

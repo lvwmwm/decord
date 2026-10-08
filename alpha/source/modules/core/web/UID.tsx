@@ -1,20 +1,18 @@
-// Module ID: 7593
-// Function ID: 7594
+// Module ID: 9300
+// Function ID: 9301
 // Name: UID
-// Dependencies: [5100, 558, 576, 5991, 2]
+// Dependencies: [5941, 558, 576, 6174, 2]
 // Exports: uid
 
-// Module 7593 (UID)
+// Module 9300 (UID)
 import react from "react" /* 576 */;
-import uniqueIdDefault from "uniqueId" /* 5100 */;
-import useInitialValueDefault from "useInitialValue" /* 5991 */;
+import uniqueIdDefault from "uniqueId" /* 5941 */;
+import useInitialValueDefault from "useInitialValue" /* 6174 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let children;
-
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUID() {
   let first;
   const obj = react;
   const cResult = obj.c(1);
@@ -28,10 +26,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return useInitialValueDefault(first);
-}) : (() => useInitialValueDefault(() => uniqueIdDefault("uid_")));
+}) : (function useUID() {
+  return useInitialValueDefault(() => uniqueIdDefault("uid_"));
+});
 let closure_3 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UID(children) {
   const obj = react;
   const cResult = obj.c(3);
   children = children.children;
@@ -48,7 +48,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[1] = tmp2;
   cResult[2] = childrenResult;
   tmp3 = childrenResult;
-}) : ((children) => children.children(closure_3()));
+}) : (function UID(children) {
+  return children.children(closure_3());
+});
 function uid() {
   let str = arg0;
   if (arg0 === undefined) {

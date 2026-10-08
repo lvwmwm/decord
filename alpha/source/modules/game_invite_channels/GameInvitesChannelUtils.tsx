@@ -1,22 +1,22 @@
-// Module ID: 6785
-// Function ID: 6786
+// Module ID: 6960
+// Function ID: 6961
 // Name: GameInvitesChannelUtils
-// Dependencies: [109, 19, 2051, 1085, 2058, 6786, 6787, 558, 576, 504, 6788, 6817, 38, 6822, 6665, 6824, 6826, 5700, 2]
+// Dependencies: [109, 19, 2063, 1085, 2070, 6961, 6962, 558, 576, 504, 6963, 6990, 38, 6995, 6842, 6997, 6999, 6090, 2]
 // Exports: canInviteToActivity, deriveThreadName, maxedAppliedForumPostTags
 
-// Module 6785 (GameInvitesChannelUtils)
+// Module 6960 (GameInvitesChannelUtils)
 import react from "react" /* 19 */;
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
-import ChannelConstants from "ChannelConstants" /* 2058 */;
-import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 5700 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6665 */;
-import ForumConstants from "ForumConstants" /* 6786 */;
-import sanitizeThreadNameDefault from "sanitizeThreadName" /* 6787 */;
-import ForumTagHooks from "ForumTagHooks" /* 6788 */;
-import hasFlagDefault from "hasFlag" /* 6826 */;
+import ChannelConstants from "ChannelConstants" /* 2070 */;
+import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 6090 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6842 */;
+import ForumConstants from "ForumConstants" /* 6961 */;
+import sanitizeThreadNameDefault from "sanitizeThreadName" /* 6962 */;
+import ForumTagHooks from "ForumTagHooks" /* 6963 */;
+import hasFlagDefault from "hasFlag" /* 6999 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let c10;
 let c9;
 let metroImportAll;
 let tmp;
-const ForumPostDataLoader = tmp(6817);
+const ForumPostDataLoader = tmp(6990);
 let closure_3 = ["data"];
 let closure_4 = ["data"];
 const useMemo = react.useMemo;
@@ -37,7 +37,7 @@ const ChannelFlags = ChannelConstants.ChannelFlags;
 const MAX_FORUM_POST_TAGS = ForumConstants.MAX_FORUM_POST_TAGS;
 let c13 = "No Mic";
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsGameInvitesPost(arg0) {
   let first;
   let forumPost;
   let tmp6;
@@ -85,7 +85,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useIsGameInvitesPost(arg0) {
   let forumPost;
   _require = arg0;
   const obj = require("get initialized");
@@ -117,7 +117,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_14 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsGameInvitePostVoiceEnabled(arg0) {
   const obj = react2;
   const cResult = obj.c(3);
   const obj2 = ForumTagHooks;
@@ -147,14 +147,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     return false;
   }
-}) : ((arg0) => {
+}) : (function useIsGameInvitePostVoiceEnabled(arg0) {
   const obj = ForumTagHooks;
   const appliedTags = obj.useAppliedTags(arg0);
   const tmp = closure_14(arg0) && !appliedTags.some((name) => name.name === closure_1_13);
   return tmp;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, enabled) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFirstMessage(arg0, enabled) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -168,13 +168,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, enabled) => {
   }
   const tmpResult = ForumPostDataLoader;
   return tmpResult.useFirstForumPostMessage(arg0, tmp4);
-}) : ((arg0, enabled) => {
+}) : (function useFirstMessage(arg0, enabled) {
   const obj = ForumPostDataLoader;
   const obj2 = { enabled, allowArchived: true };
   return obj.useFirstForumPostMessage(arg0, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameInvitesChannelApplicationId(arg0) {
   let closure_0;
   let first;
   let tmp12;
@@ -226,7 +226,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp12 = cResult[4];
   }
   return tmp12;
-}) : ((arg0) => {
+}) : (function useGameInvitesChannelApplicationId(arg0) {
   let closure_0;
   _require = arg0;
   const items = [ChannelStore];
@@ -239,7 +239,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   tmp3(isGameInvitesChannelResult, "requires a game invites channel");
   let gameId;
-  const useGame = tmp(6822).useGame;
+  const useGame = tmp(6995).useGame;
   require("useGame");
   if (stateFromStores != null) {
     gameId = stateFromStores.gameId;
@@ -252,7 +252,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return officialApplicationId;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameInvitesChannelOfficialApplication(arg0) {
   let tmp4;
   let tmp5;
   const obj = react2;
@@ -285,10 +285,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = tmp5;
   cResult[5] = obj3;
   tmp9 = obj3;
-}) : ((arg0) => {
+}) : (function useGameInvitesChannelOfficialApplication(arg0) {
   let application;
   const tmp = closure_15(arg0);
-  let obj = application(6665);
+  let obj = application(6842);
   application = obj.useApplication(tmp);
   const items = [application];
   return useMemo(() => {
@@ -298,7 +298,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGameInvitesChannel, arg1) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSubscribeToGameInvitePostAuthors(isGameInvitesChannel, arg1) {
   let closure_0;
   let tmp4;
   let tmp6;
@@ -356,7 +356,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGameInvitesChannel
         tmp11 = cResult[7];
       }
     }
-    const tmpResult2 = tmp(6824);
+    const tmpResult2 = tmp(6997);
     const subscribeGuildMembers = tmpResult2.useSubscribeGuildMembers(tmp11, "GameInvitesChannelPostAuthors");
   }
   const fn = function c() {
@@ -397,7 +397,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGameInvitesChannel
   cResult[6] = items1;
   tmp9 = items1;
   tmp8 = fn;
-}) : ((isGameInvitesChannel, arg1) => {
+}) : (function useSubscribeToGameInvitePostAuthors(isGameInvitesChannel, arg1) {
   _require = isGameInvitesChannel;
   let closure_1 = arg1;
   const isGameInvitesChannelResult = isGameInvitesChannel.isGameInvitesChannel();
@@ -452,7 +452,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGameInvitesChannel
   const subscribeGuildMembers = obj2.useSubscribeGuildMembers(tmp3, "GameInvitesChannelPostAuthors");
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr, size) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameInviteVoiceChatState(arr, size) {
   let tmp2;
   const obj = react2;
   const cResult = obj.c(12);
@@ -508,7 +508,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr, size) => {
   cResult[3] = tmp2;
   cResult[4] = tmp6;
   tmp5 = tmp6;
-}) : ((arg0, has) => {
+}) : (function useGameInviteVoiceChatState(arg0, has) {
   let tmp3;
   let closure_0 = arg0;
   const items = [arg0];
@@ -530,7 +530,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr, size) => {
   return obj;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGameInvitesChannel, activeThreadIds, archivedThreadIds) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameInvitesActiveAndArchivedThreads(isGameInvitesChannel, activeThreadIds, archivedThreadIds) {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(12);
@@ -603,7 +603,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGameInvitesChannel
     tmp3 = obj4;
   }
   return tmp3;
-}) : ((isGameInvitesChannel, activeThreadIds, archivedThreadIds) => {
+}) : (function useGameInvitesActiveAndArchivedThreads(isGameInvitesChannel, activeThreadIds, archivedThreadIds) {
   const isGameInvitesChannelResult = isGameInvitesChannel.isGameInvitesChannel();
   dependencyMap = isGameInvitesChannelResult;
   let items = [isGameInvitesChannelResult, activeThreadIds, archivedThreadIds];

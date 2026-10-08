@@ -1,16 +1,16 @@
-// Module ID: 12241
-// Function ID: 12242
+// Module ID: 12320
+// Function ID: 12321
 // Name: GuildPowerupsCard
-// Dependencies: [109, 19, 17, 21, 4896, 683, 587, 558, 576, 6002, 2]
+// Dependencies: [109, 19, 17, 21, 5090, 683, 587, 558, 576, 6186, 2]
 
-// Module 12241 (GuildPowerupsCard)
+// Module 12320 (GuildPowerupsCard)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import module_683_mod from "module_683" /* 683 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -22,7 +22,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const Card_Card = tmp(6002);
+const Card_Card = tmp(6186);
 let closure_2 = ["children", "containerStyle", "status", "style"];
 const View = react_native.View;
 const jsx = Fragment.jsx;
@@ -42,7 +42,7 @@ module_683 = module_683_mod;
 const importDefaultResult2Result = module_683(nativeDefault.unsafe_rawColors.YELLOW_300);
 alphaResult2 = importDefaultResult2Result.alpha(0.35);
 let closure_6 = createStyles(obj);
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupsCard(arg0) {
   let children;
   let containerStyle;
   let status;
@@ -133,7 +133,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[9] = "removing" === type2 && tmp12.cardRemoving;
   cResult[10] = items;
   tmp19 = items;
-}) : ((status) => {
+}) : (function GuildPowerupsCard(status) {
   let children;
   let containerStyle;
   let style;

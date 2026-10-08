@@ -1,16 +1,16 @@
-// Module ID: 14577
-// Function ID: 14578
+// Module ID: 14838
+// Function ID: 14839
 // Name: AccountEditPassword
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 14578, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 14839, 2]
 
-// Module 14577 (AccountEditPassword)
+// Module 14838 (AccountEditPassword)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import UserSettingsAccountEditPasswordDefault from "UserSettingsAccountEditPassword" /* 14578 */;
+import UserSettingsAccountEditPasswordDefault from "UserSettingsAccountEditPassword" /* 14839 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_5 = createStyles(obj);
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function AccountEditPassword() {
   let first;
   let tmp8;
   const obj = react2;
@@ -48,7 +48,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[2];
   }
   return tmp8;
-}) : (() => <_false style={closure_5().container}>{jsx(UserSettingsAccountEditPasswordDefault, {})}</_false>));
+}) : (function AccountEditPassword() {
+  return <_false style={closure_5().container}>{jsx(UserSettingsAccountEditPasswordDefault, {})}</_false>;
+}));
 const result = size.fileFinishedImporting("modules/user_settings/account/native/AccountEditPassword.tsx");
 
 export default memoResult;

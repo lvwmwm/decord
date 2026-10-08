@@ -1,17 +1,17 @@
-// Module ID: 12725
-// Function ID: 12726
+// Module ID: 13394
+// Function ID: 13395
 // Name: InAppReportsBreadCrumbs
-// Dependencies: [32, 109, 19, 17, 21, 4896, 587, 558, 576, 12, 8315, 1126, 2653, 4892, 2]
+// Dependencies: [32, 109, 19, 17, 21, 5090, 587, 558, 576, 12, 7698, 1126, 2697, 5086, 2]
 
-// Module 12725 (InAppReportsBreadCrumbs)
+// Module 13394 (InAppReportsBreadCrumbs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4892 */;
+import Text_Text from "Text/Text" /* 5086 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ size = { marginStart: 2, marginTop: 8, width: 4, height: 4, borderRadius: 2, bac
 createStyles = createStyles.createStyles;
 rect = { position: "absolute", width: 2, top: 10, bottom: -12, left: 3, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 let closure_9 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Breadcrumbs(arg0) {
   let closure_0;
   let element;
   let found;
@@ -98,12 +98,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const container = tmp5.container;
         if (cResult[2] !== menuName) {
           let stringResult;
-          const REPORT_TO_MOD = tmp(8315).ReportMenuTypeSets.REPORT_TO_MOD;
+          const REPORT_TO_MOD = tmp(7698).ReportMenuTypeSets.REPORT_TO_MOD;
           const hasItem = REPORT_TO_MOD.has(menuName);
           const intl = tmp(1126).intl;
           const string = intl.string;
           if (hasItem) {
-            stringResult = string(tmp8(2653)["6mx/DP"]);
+            stringResult = string(tmp8(2697)["6mx/DP"]);
           } else {
             stringResult = string(tmp(1126).t["+3V9Tp"]);
           }
@@ -156,7 +156,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp16 = tmp18;
         }
         let obj4 = { style: tmp5.title, accessibilityRole: "header", variant: "text-xs/bold", children: tmp9 };
-        const tmp14 = closure_7(tmp(4892).Text, obj4);
+        const tmp14 = closure_7(tmp(5086).Text, obj4);
         cResult[4] = tmp5.title;
         cResult[5] = tmp9;
         cResult[6] = tmp14;
@@ -165,7 +165,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return null;
-}) : ((element) => {
+}) : (function Breadcrumbs(element) {
   let closure_0;
   let items;
   let stringResult;
@@ -216,7 +216,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const tmp8 = View;
         const tmp9 = closure_7;
         if (hasItem) {
-          stringResult = string(tmp5(2653)["6mx/DP"]);
+          stringResult = string(tmp5(2697)["6mx/DP"]);
         } else {
           stringResult = string(tmp10(1126).t["+3V9Tp"]);
         }

@@ -1,23 +1,23 @@
-// Module ID: 11375
-// Function ID: 11376
+// Module ID: 12813
+// Function ID: 12814
 // Name: EmojiReactionRowButton
-// Dependencies: [19, 17, 1380, 21, 4896, 587, 558, 576, 4735, 1126, 8444, 5916, 6632, 1402, 4532, 2]
+// Dependencies: [19, 17, 1392, 21, 5090, 587, 558, 576, 4929, 1126, 8930, 6189, 6809, 1414, 4724, 2]
 // Exports: getEmojiKey
 
-// Module 11375 (EmojiReactionRowButton)
+// Module 12813 (EmojiReactionRowButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
-import EmojiTypes from "EmojiTypes" /* 4532 */;
-import shared from "shared" /* 4735 */;
-import Pressables from "Pressables" /* 5916 */;
-import EmojiDefault from "Emoji" /* 6632 */;
-import ReactionIcon2 from "ReactionIcon" /* 8444 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
+import EmojiTypes from "EmojiTypes" /* 4724 */;
+import shared from "shared" /* 4929 */;
+import Pressables from "Pressables" /* 6189 */;
+import EmojiDefault from "Emoji" /* 6809 */;
+import ReactionIcon2 from "ReactionIcon" /* 8930 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let closure_7 = createStyles.createStyles((width, fontSize, lineHeight) => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiContainerSize) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiPickerRowButton(emojiContainerSize) {
   let first;
   let iconSize;
   let onPress;
@@ -100,7 +100,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiContainerSize) 
   cResult[2] = styles;
   cResult[3] = items;
   tmp9 = items;
-}) : ((iconSize) => {
+}) : (function EmojiPickerRowButton(iconSize) {
   let onPress;
   let styles;
   let str = iconSize.iconSize;
@@ -112,17 +112,17 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiContainerSize) 
   const isThemeLightResult = obj2.isThemeLight(theme);
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   const tmp5 = isThemeLightResult ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300;
-  const PressableOpacity = tmp2(5916).PressableOpacity;
+  const PressableOpacity = tmp2(6189).PressableOpacity;
   const intl = tmp2(1126).intl;
   const items = [tmp.emojiContainer, styles];
-  const ReactionIcon = tmp2(8444).ReactionIcon;
+  const ReactionIcon = tmp2(8930).ReactionIcon;
   if (str == null) {
     str = "md";
   }
   return <PressableOpacity activeOpacity={0.5} accessibilityRole="button" accessibilityLabel={intl.string(intl2.t.lfIHs4)} hitSlop={4} onPress={onPress} style={items}>{null}</PressableOpacity>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiContainerSize) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiReactionRowButton(emojiContainerSize) {
   let emoji;
   let emojiFontSize;
   let emojiLineHeight;
@@ -217,7 +217,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiContainerSize
       if (null != emoji.id) {
         const obj12 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
         ({ id: obj6.id, animated: obj6.animated } = emoji);
-        const tmp19Result = tmp19(1402);
+        const tmp19Result = tmp19(1414);
         url = tmp19Result.getEmojiURL(obj12);
       } else {
         url = emoji.url;
@@ -234,7 +234,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiContainerSize
   cResult[4] = styles;
   cResult[5] = items;
   tmp15 = items;
-}) : ((emoji) => {
+}) : (function EmojiReactionRowButton(emoji) {
   let emojiFontSize;
   let emojiLineHeight;
   let emojiSize;
@@ -269,7 +269,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiContainerSize
     if (null != emoji.id) {
       const obj6 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
       ({ id: obj4.id, animated: obj4.animated } = emoji);
-      const tmp9Result = tmp9(1402);
+      const tmp9Result = tmp9(1414);
       url = tmp9Result.getEmojiURL(obj6);
     } else {
       url = emoji.url;

@@ -1,11 +1,11 @@
-// Module ID: 12217
-// Function ID: 12218
+// Module ID: 12296
+// Function ID: 12297
 // Name: GuildPowerupAnalytics
-// Dependencies: [19, 1085, 558, 576, 1252, 2]
+// Dependencies: [19, 1085, 558, 576, 1264, 2]
 
-// Module 12217 (GuildPowerupAnalytics)
+// Module 12296 (GuildPowerupAnalytics)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 const AnalyticEvents = Constants.AnalyticEvents;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id, skuId, type) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLogPowerupModalOpened(guild_id, skuId, type) {
   _require = guild_id;
   dependencyMap = type;
   let obj = require("react");
@@ -43,7 +43,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id, skuId, typ
   cResult[4] = items;
   tmp3 = items;
   tmp2 = fn;
-}) : ((guild_id, skuId, type) => {
+}) : (function useLogPowerupModalOpened(guild_id, skuId, type) {
   const items = [type, guild_id, skuId.skuId];
   const effect = react.useEffect(() => {
     const obj = AnalyticsUtilsDefault;

@@ -1,12 +1,12 @@
-// Module ID: 8420
-// Function ID: 8421
+// Module ID: 8917
+// Function ID: 8918
 // Name: GameProfileSkeletonPulse
-// Dependencies: [19, 4885, 4618, 4897, 558, 576, 504, 2]
+// Dependencies: [19, 5079, 4810, 5091, 558, 576, 504, 2]
 
-// Module 8420 (GameProfileSkeletonPulse)
+// Module 8917 (GameProfileSkeletonPulse)
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 4618 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 4810 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ getPulseOpacity.__workletHash = 2217576423672;
 getPulseOpacity.__initData = { code: "function getPulseOpacity_GameProfileSkeletonPulseTsx1(phase,phaseOffset){const{MIN_OPACITY,MAX_OPACITY,DEFAULT_TIMING_EASING}=this.__closure;const shiftedPhase=(phase+phaseOffset)%1;const cyclePhase=shiftedPhase<0?shiftedPhase+1:shiftedPhase;const pulseProgress=cyclePhase<0.5?cyclePhase*2:(1-cyclePhase)*2;return MIN_OPACITY+(MAX_OPACITY-MIN_OPACITY)*DEFAULT_TIMING_EASING(pulseProgress);}" };
 const __initData = { code: "function GameProfileSkeletonPulseTsx2(){const{shouldReduceMotion,MAX_OPACITY,getPulseOpacity,pulsePhase,phaseOffset}=this.__closure;if(shouldReduceMotion){return{opacity:MAX_OPACITY};}return{opacity:getPulseOpacity(pulsePhase.get(),phaseOffset)};}" };
 const __initData2 = { code: "function GameProfileSkeletonPulseTsx3(){const{shouldReduceMotion,MAX_OPACITY,getPulseOpacity,pulsePhase,phaseOffset}=this.__closure;if(shouldReduceMotion){return{opacity:MAX_OPACITY};}return{opacity:getPulseOpacity(pulsePhase.get(),phaseOffset)};}" };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSkeletonPulseStyle(arg0) {
   let stateFromStores;
   let tmp11;
   let tmp12;
@@ -56,7 +56,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(7);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
-    const fn = function f() {
+    const fn = function _() {
       return AccessibilityStore.useReducedMotion;
     };
     cResult[0] = items;
@@ -280,7 +280,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const effect1 = obj3.useEffect(tmp11, tmp12);
   let result = -arg0 % c5 / c5;
   dependencyMap = result;
-  const tmpResult2 = tmp(4618);
+  const tmpResult2 = tmp(4810);
   class T {
     constructor() {
       let tmp7;
@@ -314,7 +314,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   T.__workletHash = 3992024948852;
   T.__initData = __initData;
   return tmpResult2.useAnimatedStyle(T);
-}) : ((arg0) => {
+}) : (function useSkeletonPulseStyle(arg0) {
   let stateFromStores;
   let obj = stateFromStores(504);
   const items = [AccessibilityStore];
@@ -383,8 +383,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
   let result = -arg0 % c5 / c5;
   dependencyMap = result;
-  let obj2 = stateFromStores(4618);
-  const fn = function f() {
+  let obj2 = stateFromStores(4810);
+  const fn = function _() {
     let tmp7;
     const obj = { opacity: null };
     if (stateFromStores) {

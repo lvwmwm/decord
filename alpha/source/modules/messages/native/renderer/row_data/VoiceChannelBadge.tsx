@@ -1,18 +1,19 @@
-// Module ID: 13040
-// Function ID: 13041
+// Module ID: 13318
+// Function ID: 13319
 // Name: VoiceChannelBadge
-// Dependencies: [17, 2051, 4515, 4915, 1085, 13041, 5819, 5106, 2]
+// Dependencies: [17, 2063, 4707, 5111, 1085, 13319, 8134, 5904, 5930, 2]
 // Exports: createVoiceChannelBadge
 
-// Module 13040 (VoiceChannelBadge)
+// Module 13318 (VoiceChannelBadge)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
-import AgeGateUtils from "AgeGateUtils" /* 5106 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5819 */;
-import VoiceChannelBadgeExperiment from "VoiceChannelBadgeExperiment" /* 13041 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import VoiceStateStore from "VoiceStateStore" /* 4915 */;
+import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 5904 */;
+import AgeGateUtils from "AgeGateUtils" /* 5930 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8134 */;
+import VoiceChannelBadgeExperiment from "VoiceChannelBadgeExperiment" /* 13319 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import VoiceStateStore from "VoiceStateStore" /* 5111 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
@@ -42,7 +43,7 @@ export const createVoiceChannelBadge = function createVoiceChannelBadge(id, guil
             uri = assetSource.uri;
           }
           if (null != uri) {
-            const tmpResult3 = AgeGateUtils;
+            const tmpResult3 = shouldAgeVerifyForAgeGate;
             let result = tmpResult3.shouldAgeVerifyForAgeGate();
             if (result) {
               const tmpResult4 = AgeGateUtils;

@@ -1,14 +1,14 @@
-// Module ID: 4562
-// Function ID: 4563
+// Module ID: 4754
+// Function ID: 4755
 // Name: react-native
 // Dependencies: [17, 2]
 
-// Module 4562 (react-native)
+// Module 4754 (react-native)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
 const TurboModuleRegistry = react_native.TurboModuleRegistry;
-const enforcing = TurboModuleRegistry.getEnforcing("NativeDateFormatUtilsModule");
+const value = TurboModuleRegistry.get("NativeDateFormatUtilsModule");
 const result = size.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeDateFormatUtilsModule.tsx");
 
-export default enforcing;
+export default value;

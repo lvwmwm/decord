@@ -1,18 +1,18 @@
-// Module ID: 16002
-// Function ID: 16003
+// Module ID: 16262
+// Function ID: 16263
 // Name: useRelativeTimestamp
-// Dependencies: [32, 19, 558, 576, 7139, 1102, 2]
+// Dependencies: [32, 19, 558, 576, 6064, 1102, 2]
 
-// Module 16002 (useRelativeTimestamp)
-import NotificationCenterUtils from "NotificationCenterUtils" /* 7139 */;
+// Module 16262 (useRelativeTimestamp)
+import NotificationCenterUtils from "NotificationCenterUtils" /* 6064 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, timestamp;
+let dependencyMap;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((timestamp) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRelativeTimestamp(timestamp) {
   let closure_2;
   let obj = timestamp(576);
   const cResult = obj.c(7);
@@ -38,7 +38,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((timestamp) => {
       const effect = obj2.useEffect(tmp7, tmp8);
       return tmp6;
     }
-    const fn2 = function p() {
+    const fn2 = function c() {
       let closure_0;
       let interval;
       let obj = timestamp(closure_2[4]);
@@ -75,7 +75,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((timestamp) => {
   cResult[1] = timestamp;
   cResult[2] = fn;
   tmp3 = fn;
-}) : ((timestamp) => {
+}) : (function useRelativeTimestamp(timestamp) {
   let closure_2;
   let first;
   timestamp = timestamp.timestamp;

@@ -1,13 +1,15 @@
-// Module ID: 6499
-// Function ID: 6500
+// Module ID: 6676
+// Function ID: 6677
 // Name: SettingSearchSessionAnalyticsManager
-// Dependencies: [1266, 6500, 2]
+// Dependencies: [1085, 1278, 1264, 2]
 
-// Module 6499 (SettingSearchSessionAnalyticsManager)
-import v1 from "v1" /* 1266 */;
-import Tracking from "Tracking" /* 6500 */;
+// Module 6676 (SettingSearchSessionAnalyticsManager)
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import v1 from "v1" /* 1278 */;
 import size from "module_2" /* 2 */;
 
+const AnalyticEvents = Constants.AnalyticEvents;
 class SettingSearchSessionAnalyticsManager {
   constructor() {
     return Object.assign({ searchSessionId: null, searchSessionStartTime: null, isQueryEnteredTracked: false });
@@ -25,10 +27,10 @@ class SettingSearchSessionAnalyticsManager {
     this.isQueryEnteredTracked = false;
   }
   maybeTrackQueryEntered() {
+    const self = this;
     if (!this.isQueryEnteredTracked) {
-      const obj = Tracking;
-      const result = obj.trackSettingSearchQueryEntered();
-      tmp.isQueryEnteredTracked = true;
+      self.trackQueryEntered();
+      self.isQueryEnteredTracked = true;
     }
   }
   terminate() {
@@ -36,18 +38,25 @@ class SettingSearchSessionAnalyticsManager {
     const tmp = null != this.searchSessionId && null != self.searchSessionStartTime;
     if (tmp) {
       const _Date = Date;
-      const obj = { searchSessionDuration: Date.now() - self.searchSessionStartTime };
-      const trackSettingSearchClosed = Tracking.trackSettingSearchClosed;
-      Tracking;
-      const result = trackSettingSearchClosed(obj);
+      self.trackClosed(Date.now() - self.searchSessionStartTime);
       self.searchSessionId = null;
       self.searchSessionStartTime = null;
       self.isQueryEnteredTracked = false;
     }
   }
+  trackQueryEntered() {
+    const obj = AnalyticsUtilsDefault;
+    const obj2 = { search_session_id: this.getSearchSessionId() };
+    obj.track(AnalyticEvents.USER_SETTINGS_SEARCH_QUERY_ENTERED, obj2);
+  }
+  trackClosed(search_session_duration_ms) {
+    const obj = AnalyticsUtilsDefault;
+    const obj2 = { search_session_id: this.getSearchSessionId(), search_session_duration_ms };
+    obj.track(AnalyticEvents.USER_SETTINGS_SEARCH_CLOSED, obj2);
+  }
 }
 const prototype = SettingSearchSessionAnalyticsManager.prototype;
 const prototype2 = SettingSearchSessionAnalyticsManager.prototype;
-let result = size.fileFinishedImporting("modules/settings/tracking/SettingSearchSessionAnalyticsManager.tsx");
+const result = size.fileFinishedImporting("modules/settings/tracking/SettingSearchSessionAnalyticsManager.tsx");
 
 export default Object.assign({ searchSessionId: null, searchSessionStartTime: null, isQueryEnteredTracked: false });

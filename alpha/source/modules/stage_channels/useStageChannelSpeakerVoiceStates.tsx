@@ -1,16 +1,16 @@
-// Module ID: 16206
-// Function ID: 16207
+// Module ID: 16466
+// Function ID: 16467
 // Name: useStageChannelSpeakerVoiceStates
-// Dependencies: [32, 2054, 2051, 4920, 5582, 558, 576, 2077, 11, 1375, 5589, 504, 5596, 2]
+// Dependencies: [32, 2066, 2063, 5114, 5892, 558, 576, 2089, 11, 1387, 5955, 504, 5962, 2]
 
-// Module 16206 (useStageChannelSpeakerVoiceStates)
+// Module 16466 (useStageChannelSpeakerVoiceStates)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import FavoritesUtils from "FavoritesUtils" /* 2077 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4920 */;
+import FavoritesUtils from "FavoritesUtils" /* 2089 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5114 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import FavoriteStore from "FavoriteStore" /* 2054 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5582 */;
+import FavoriteStore from "FavoriteStore" /* 2066 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5892 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ const require = globalThis.__r;
 let _require;
 
 let tmp;
-const GlobalUtils = tmp(1375);
+const GlobalUtils = tmp(1387);
 function transformParticipantToSortedVoiceState(user) {
   let userNick;
   let voiceState;
@@ -27,7 +27,7 @@ function transformParticipantToSortedVoiceState(user) {
   return obj;
 }
 const getComparator = SortedVoiceStateStore.getComparator;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStageChannelSpeakerVoiceStates(arg0) {
   let closure_0;
   let first;
   let tmp8;
@@ -83,8 +83,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp9 = cResult[3];
   }
   const tmpResult = tmp(504);
-  return _slicedToArray(tmpResult.useStateFromStores(first, tmp8, tmp9, tmp(5596).isVersionEqual), 1)[0];
-}) : ((arg0) => {
+  return _slicedToArray(tmpResult.useStateFromStores(first, tmp8, tmp9, tmp(5962).isVersionEqual), 1)[0];
+}) : (function useStageChannelSpeakerVoiceStates(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");

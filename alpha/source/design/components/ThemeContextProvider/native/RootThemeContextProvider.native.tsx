@@ -1,13 +1,13 @@
-// Module ID: 9771
-// Function ID: 9772
+// Module ID: 10974
+// Function ID: 10975
 // Name: ThemeContextProvider/RootThemeContextProvider
-// Dependencies: [19, 1096, 21, 558, 576, 4595, 2]
+// Dependencies: [19, 1096, 21, 558, 576, 4787, 2]
 
-// Module 9771 (ThemeContextProvider/RootThemeContextProvider)
+// Module 10974 (ThemeContextProvider/RootThemeContextProvider)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1096 */;
-import native from "native" /* 4595 */;
+import native from "native" /* 4787 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 const ThemeTypes = Constants.ThemeTypes;
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RootThemeContextProvider(arg0) {
   let children;
   let contrast;
   let density;
@@ -113,7 +113,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[10] = theme;
   cResult[11] = themedContext;
   tmp10 = themedContext;
-}) : ((theme) => {
+}) : (function RootThemeContextProvider(theme) {
   let gradient;
   let DARK = theme.theme;
   const children = theme.children;
@@ -166,7 +166,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return num(DARK(primaryColor[5]).ThemeContext.Provider, { value, children });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisableCustomTheme(children) {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(5);
@@ -196,9 +196,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[3] = tmp5;
   cResult[4] = tmp13;
   tmp12 = tmp13;
-}) : ((children) => {
+}) : (function DisableCustomTheme(children) {
   let themeContext;
-  let obj = themeContext(4595);
+  let obj = themeContext(4787);
   themeContext = obj.useThemeContext();
   const items = [themeContext];
   const memo = react.useMemo(() => {
@@ -208,7 +208,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     const merged = Object.assign(themeContext);
     return createThemedContext(obj);
   }, items);
-  return jsx(themeContext(4595).ThemeContext.Provider, { value: memo, children: children.children });
+  return jsx(themeContext(4787).ThemeContext.Provider, { value: memo, children: children.children });
 });
 const result = size.fileFinishedImporting("design/components/ThemeContextProvider/native/RootThemeContextProvider.native.tsx");
 

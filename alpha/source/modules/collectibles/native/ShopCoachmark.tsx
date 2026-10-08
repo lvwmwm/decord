@@ -1,27 +1,25 @@
-// Module ID: 16993
-// Function ID: 16994
+// Module ID: 17274
+// Function ID: 17275
 // Name: ShopCoachmark
-// Dependencies: [19, 2048, 21, 4896, 558, 576, 1188, 1126, 587, 9895, 2]
+// Dependencies: [19, 2060, 21, 5090, 558, 576, 1200, 1126, 587, 9375, 2]
 
-// Module 16993 (ShopCoachmark)
+// Module 17274 (ShopCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import native from "native" /* 1200 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let markAsDismissed;
 
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ image: { marginTop: 12 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CoachmarkImg(arg0) {
   let decorationAsset;
   let source;
   let tmp5;
@@ -46,14 +44,14 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return tmp6;
     }
   }
-  const Avatar = tmp(1188).Avatar;
+  const Avatar = tmp(1200).Avatar;
   const tmp7 = <Avatar style={tmp4.image} source={source} avatarDecoration={tmp5} size={native.AvatarSizes.XXLARGE} />;
   cResult[2] = source;
   cResult[3] = tmp4.image;
   cResult[4] = tmp5;
   cResult[5] = tmp7;
   tmp6 = tmp7;
-}) : ((arg0) => {
+}) : (function CoachmarkImg(arg0) {
   let decorationAsset;
   let source;
   ({ source, decorationAsset } = arg0);
@@ -61,7 +59,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return <Avatar style={closure_6().image} source={source} avatarDecoration={{ asset: decorationAsset }} size={native.AvatarSizes.XXLARGE} />;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopCoachmark(markAsDismissed) {
   let avatarSrc;
   let buttonRef;
   let decorationAsset;
@@ -140,7 +138,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
   cResult[4] = renderImgComponent;
   cResult[5] = fn2;
   tmp5 = fn2;
-}) : ((markAsDismissed) => {
+}) : (function ShopCoachmark(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
   const visible = markAsDismissed.visible;
   const title = markAsDismissed.title;

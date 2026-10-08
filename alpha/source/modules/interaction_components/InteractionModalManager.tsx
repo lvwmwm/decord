@@ -1,20 +1,20 @@
-// Module ID: 17563
-// Function ID: 17564
+// Module ID: 17845
+// Function ID: 17846
 // Name: InteractionModalManager
-// Dependencies: [5, 5124, 7611, 1085, 5126, 17564, 1987, 1252, 559, 1242, 17575, 17578, 6620, 2]
+// Dependencies: [5, 5436, 7856, 1085, 5438, 17846, 1999, 1264, 559, 1254, 17857, 11152, 8586, 17860, 6797, 2]
 
-// Module 17563 (InteractionModalManager)
+// Module 17845 (InteractionModalManager)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 17575 */;
-import closeIFrameModalDefault from "closeIFrameModal" /* 17578 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 11152 */;
+import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 17857 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5124 */;
-import InteractionStore from "InteractionStore" /* 7611 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6620 */;
+import ApplicationStore from "ApplicationStore" /* 5436 */;
+import InteractionStore from "InteractionStore" /* 7856 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6797 */;
 import size from "module_2" /* 2 */;
 
-let closure_2, data, interactionDebugContext;
+let closure_2, data, iFrameModal, interactionDebugContext;
 
 let obj = function _handleInteractionModalCreate() {
   let paths;
@@ -136,7 +136,6 @@ const AnalyticEvents = Constants.AnalyticEvents;
 const interaction_iframe_modal = "interaction_iframe_modal";
 class InteractionModalManager extends AutomaticLifecycleManager {
   constructor() {
-    let uiStore;
     const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     require = applyArgumentsResult;
     applyArgumentsResult.iframeModalOpenTimeMs = undefined;
@@ -167,16 +166,25 @@ class InteractionModalManager extends AutomaticLifecycleManager {
         obj.track(AnalyticEvents.MODAL_DISMISSED, obj2);
         tmp.iframeModalOpenTimeMs = undefined;
       },
-      RPC_APP_DISCONNECTED(application) {
-        application = application.application;
-        const iFrameModalApplicationId = uiStore.getIFrameModalApplicationId();
-        let tmp3 = application.id === iFrameModalApplicationId;
-        const iFrameModalKey = uiStore.getIFrameModalKey();
-        if (tmp3) {
-          tmp3 = null != iFrameModalApplicationId;
-        }
-        if (tmp3) {
-          closeIFrameModalDefault(iFrameModalApplicationId, iFrameModalKey);
+      RPC_APP_DISCONNECTED(context) {
+        iFrameModal = iFrameModal.getIFrameModal();
+        if (null != iFrameModal) {
+          const tmp7 = importDefault;
+          if (isPostMessageDisconnectDefault(context)) {
+            context = context.context;
+            let tmp3 = context.surface.type === require("EmbeddedSurfaceType").EmbeddedSurfaceType.INTERACTION_MODAL;
+            if (tmp3) {
+              const launch = context.launch;
+              let interactionId;
+              if (launch != null) {
+                interactionId = launch.interactionId;
+              }
+              tmp3 = interactionId === iFrameModal.interactionId;
+            }
+            if (tmp3) {
+              tmp7(dependencyMap[13])(iFrameModal.applicationId, iFrameModal.modalKey);
+            }
+          }
         }
       }
     };

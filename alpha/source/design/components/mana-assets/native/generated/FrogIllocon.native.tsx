@@ -1,18 +1,18 @@
-// Module ID: 16701
-// Function ID: 16702
+// Module ID: 16974
+// Function ID: 16975
 // Name: FrogIllocon
-// Dependencies: [21, 558, 576, 16702, 5981, 2]
+// Dependencies: [21, 558, 576, 16975, 6164, 2]
 
-// Module 16701 (FrogIllocon)
+// Module 16974 (FrogIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import _modDef16702 from "module_16702" /* 16702 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import _modDef16975 from "module_16975" /* 16975 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrogIllocon(arg0) {
   let accessibilityLabel;
   let accessible;
   let first;
@@ -26,7 +26,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef16702 };
+    const obj2 = { uri: _modDef16975 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -34,10 +34,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[1] !== num) {
     const size1 = { width: num, height: num };
-    const items = [size1];
     cResult[1] = num;
-    cResult[2] = items;
-    tmp5 = items;
+    cResult[2] = size1;
+    tmp5 = size1;
   } else {
     tmp5 = cResult[2];
   }
@@ -59,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = tmp5;
   cResult[7] = tmp7;
   tmp6 = tmp7;
-}) : ((size) => {
+}) : (function FrogIllocon(size) {
   let accessibilityLabel;
   let accessible;
   let resizeMode;
@@ -68,10 +67,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num === undefined) {
     num = 64;
   }
-  const obj2 = { uri: _modDef16702 };
+  const obj2 = { uri: _modDef16975 };
   FastImageDefault;
-  const items = [{ width: num, height: num }];
-  return <tmp fadeDuration={0} source={obj2} style={items} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
+  return <tmp fadeDuration={0} source={obj2} style={{ width: num, height: num }} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
 });
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/FrogIllocon.native.tsx");
 

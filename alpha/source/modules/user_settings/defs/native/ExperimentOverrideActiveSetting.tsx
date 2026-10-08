@@ -1,26 +1,26 @@
-// Module ID: 15638
-// Function ID: 15639
+// Module ID: 15918
+// Function ID: 15919
 // Name: ExperimentOverrideActiveSetting
-// Dependencies: [4782, 1246, 21, 14422, 558, 576, 504, 15639, 14666, 11142, 15429, 2]
+// Dependencies: [4976, 1258, 21, 14648, 558, 576, 504, 15919, 14927, 11262, 15691, 2]
 
-// Module 15638 (ExperimentOverrideActiveSetting)
+// Module 15918 (ExperimentOverrideActiveSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14422 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14666 */;
-import BeakerIcon from "BeakerIcon" /* 15429 */;
-import ExperimentStore from "ExperimentStore" /* 4782 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14648 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14927 */;
+import BeakerIcon from "BeakerIcon" /* 15691 */;
+import ExperimentStore from "ExperimentStore" /* 4976 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1258 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const DevToolsContent = tmp(15639);
+const DevToolsContent = tmp(15919);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExperimentOverrideActiveCount() {
   let allExperimentOverrideDescriptors;
   let clientOverrides;
   let tmp4;
@@ -58,7 +58,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult2 = get_initialized;
   return stateFromStores + tmpResult2.useStateFromStores(tmp8, tmp9);
-}) : (() => {
+}) : (function useExperimentOverrideActiveCount() {
   let allExperimentOverrideDescriptors;
   let clientOverrides;
   const items = [ExperimentStore];
@@ -69,7 +69,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return stateFromStores + obj2.useStateFromStores(items1, () => Object.keys(clientOverrides.getClientOverrides()).length);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExperimentOverrideActiveDescription() {
   let tmp4;
   let tmp6;
   const obj = react;
@@ -92,18 +92,18 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp6 = cResult[3];
   }
   return tmp6;
-}) : (() => {
+}) : (function useExperimentOverrideActiveDescription() {
   const str = closure_5();
   const DevToolsContentSubLabel = DevToolsContent.DevToolsContentSubLabel;
   return <DevToolsContentSubLabel label="Experiments overridden: " value={str.toString()} />;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasExperimentOverrideActive() {
   const obj = useIsStaffOrDeveloperSettingPredicate;
   const staffOrDeveloperSettingPredicate = obj.useStaffOrDeveloperSettingPredicate();
   const tmp2 = closure_5() > 0 && staffOrDeveloperSettingPredicate;
   return tmp2;
-}) : (() => {
+}) : (function useHasExperimentOverrideActive() {
   const obj = useIsStaffOrDeveloperSettingPredicate;
   const staffOrDeveloperSettingPredicate = obj.useStaffOrDeveloperSettingPredicate();
   const tmp2 = closure_5() > 0 && staffOrDeveloperSettingPredicate;

@@ -1,22 +1,20 @@
-// Module ID: 8388
-// Function ID: 8389
+// Module ID: 8886
+// Function ID: 8887
 // Name: ObscuredSurface
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 5872, 1126, 4892, 8389, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 8184, 1126, 5086, 8887, 2]
 
-// Module 8388 (ObscuredSurface)
+// Module 8886 (ObscuredSurface)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import ImageWarningIcon2 from "ImageWarningIcon" /* 5872 */;
-import ObscuredSurfaceContext from "ObscuredSurfaceContext" /* 8389 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import ImageWarningIcon2 from "ImageWarningIcon" /* 8184 */;
+import ObscuredSurfaceContext from "ObscuredSurfaceContext" /* 8887 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let obscured;
 
 let closure_4;
 let hasOwnProperty;
@@ -30,7 +28,7 @@ obj2 = { position: "absolute", inset: 0, zIndex: 1, backgroundColor: nativeDefau
 createStyles = createStyles.createStyles;
 obj3 = { position: "absolute", insetInlineStart: "50%", top: "50%", transform: "translate(-50%, -50%)", display: "flex", flexDirection: "column", alignItems: "center", gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_12, paddingVertical: nativeDefault.space.PX_8, textAlign: "center", userSelect: "none", zIndex: 2 };
 let closure_6 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((obscured) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ObscuredSurface(obscured) {
   let children;
   let description;
   let heading;
@@ -67,7 +65,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((obscured) => {
       const _Symbol = Symbol;
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
         const obj3 = { size: "lg", color: nativeDefault.colors.TEXT_DEFAULT };
-        const ImageWarningIcon = tmp(5872).ImageWarningIcon;
+        const ImageWarningIcon = tmp(8184).ImageWarningIcon;
         const tmp18 = React3(ImageWarningIcon, obj3);
         cResult[5] = tmp18;
         tmp15 = tmp18;
@@ -134,7 +132,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((obscured) => {
             }
           }
           const obj6 = { value: ObscuredSurfaceContext.OBSCURED_VALUE, children: hasOwnProperty(View, obj7) };
-          const Provider = tmp(8389).ObscuredSurfaceContext.Provider;
+          const Provider = tmp(8887).ObscuredSurfaceContext.Provider;
           obj7 = { style: tmp4.container, children: items };
           items = [tmp6, tmp10, tmp31];
           const tmp39 = React3(Provider, obj6);
@@ -163,7 +161,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((obscured) => {
     tmp6 = tmp9;
   }
   return tmp5;
-}) : ((obscured) => {
+}) : (function ObscuredSurface(obscured) {
   let children;
   let description;
   let heading;
@@ -193,7 +191,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((obscured) => {
     }
     const obj7 = { variant: "heading-md/semibold", color: "text-strong", children: heading };
     items1[1] = React3(Text, obj7);
-    const Text2 = tmp4(4892).Text;
+    const Text2 = tmp4(5086).Text;
     if (description == null) {
       const intl2 = tmp4(1126).intl;
       description = intl2.string(tmp4(1126).t["0fc/DG"]);

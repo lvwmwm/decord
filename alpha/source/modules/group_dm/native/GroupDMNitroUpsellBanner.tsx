@@ -1,31 +1,31 @@
-// Module ID: 16900
-// Function ID: 16901
+// Module ID: 17181
+// Function ID: 17182
 // Name: GroupDMNitroUpsellBanner
-// Dependencies: [32, 19, 17, 4885, 11228, 21, 587, 4896, 558, 576, 1618, 16621, 4586, 4618, 683, 5604, 5612, 504, 11229, 11226, 11233, 1126, 5601, 7733, 4892, 16901, 2]
+// Dependencies: [32, 19, 17, 5079, 11343, 21, 587, 5090, 558, 576, 1630, 16881, 4778, 4810, 683, 5374, 5387, 504, 11344, 11341, 11348, 1126, 5375, 8054, 5086, 17182, 2]
 
-// Module 16900 (GroupDMNitroUpsellBanner)
+// Module 17181 (GroupDMNitroUpsellBanner)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import intl4 from "intl" /* 1126 */;
-import spring from "spring" /* 5604 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7733 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11226 */;
-import GroupDMConstants from "GroupDMConstants" /* 11228 */;
-import GroupDMNitroCapExperimentDefault from "GroupDMNitroCapExperiment" /* 11229 */;
-import useGroupDMNitroUpsellActionDefault from "useGroupDMNitroUpsellAction" /* 11233 */;
-import GroupDMNitroCapBannerDefault from "GroupDMNitroCapBanner" /* 16901 */;
+import spring from "spring" /* 5374 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8054 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11341 */;
+import GroupDMConstants from "GroupDMConstants" /* 11343 */;
+import GroupDMNitroCapExperimentDefault from "GroupDMNitroCapExperiment" /* 11344 */;
+import useGroupDMNitroUpsellActionDefault from "useGroupDMNitroUpsellAction" /* 11348 */;
+import GroupDMNitroCapBannerDefault from "GroupDMNitroCapBanner" /* 17182 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let set, set2, visible;
+let set, set2;
 
 let c10;
 let c9;
@@ -51,7 +51,7 @@ const __initData2 = { code: "function GroupDMNitroUpsellBannerTsx2(){const{keybo
 const __initData3 = { code: "function GroupDMNitroUpsellBannerTsx3(){const{opacity,translateY}=this.__closure;return{opacity:opacity.get(),transform:[{translateY:translateY.get()}]};}" };
 const __initData4 = { code: "function GroupDMNitroUpsellBannerTsx4(){const{keyboardHeight,safeAreaBottom}=this.__closure;return{bottom:Math.max(keyboardHeight.get()-safeAreaBottom,0)};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
+let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function FloatingBanner(visible) {
   let bottom;
   let closure_3;
   let hideGradient;
@@ -98,7 +98,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
       const effect = obj3.useEffect(tmp15, tmp16);
       const _Symbol = Symbol;
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-        const fn2 = function h(nativeEvent) {
+        const fn2 = function p(nativeEvent) {
           const height = nativeEvent.nativeEvent.layout.height;
           let tmp = react((arg0) => {
             let tmp = height;
@@ -173,7 +173,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
                   const result2 = set(withSpring(num, closure_17));
                   let num2 = 0;
                   set2 = sharedValue1.set;
-                  const withSpring2 = tmp9(5604).withSpring;
+                  const withSpring2 = tmp9(5374).withSpring;
                   spring;
                   const tmp12 = closure_17;
                   if (!visible) {
@@ -225,7 +225,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
                     const result2 = set(withSpring(num, closure_17));
                     let num2 = 0;
                     set2 = sharedValue1.set;
-                    const withSpring2 = tmp9(5604).withSpring;
+                    const withSpring2 = tmp9(5374).withSpring;
                     spring;
                     const tmp12 = closure_17;
                     if (!visible) {
@@ -267,7 +267,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
                       const result2 = set(withSpring(num, closure_17));
                       let num2 = 0;
                       set2 = sharedValue1.set;
-                      const withSpring2 = tmp9(5604).withSpring;
+                      const withSpring2 = tmp9(5374).withSpring;
                       spring;
                       const tmp12 = closure_17;
                       if (!visible) {
@@ -303,7 +303,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
                         const result2 = set(withSpring(num, closure_17));
                         let num2 = 0;
                         set2 = sharedValue1.set;
-                        const withSpring2 = tmp9(5604).withSpring;
+                        const withSpring2 = tmp9(5374).withSpring;
                         spring;
                         const tmp12 = closure_17;
                         if (!visible) {
@@ -355,7 +355,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
                               const result2 = set(withSpring(num, closure_17));
                               let num2 = 0;
                               set2 = sharedValue1.set;
-                              const withSpring2 = tmp9(5604).withSpring;
+                              const withSpring2 = tmp9(5374).withSpring;
                               spring;
                               const tmp12 = closure_17;
                               if (!visible) {
@@ -397,7 +397,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
                             const result2 = set(withSpring(num, closure_17));
                             let num2 = 0;
                             set2 = sharedValue1.set;
-                            const withSpring2 = tmp9(5604).withSpring;
+                            const withSpring2 = tmp9(5374).withSpring;
                             spring;
                             const tmp12 = closure_17;
                             if (!visible) {
@@ -439,7 +439,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
                           const result2 = set(withSpring(num, closure_17));
                           let num2 = 0;
                           set2 = sharedValue1.set;
-                          const withSpring2 = tmp9(5604).withSpring;
+                          const withSpring2 = tmp9(5374).withSpring;
                           spring;
                           const tmp12 = closure_17;
                           if (!visible) {
@@ -494,7 +494,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
               const result2 = set(withSpring(num, closure_17));
               let num2 = 0;
               set2 = sharedValue1.set;
-              const withSpring2 = tmp9(5604).withSpring;
+              const withSpring2 = tmp9(5374).withSpring;
               spring;
               const tmp12 = closure_17;
               if (!visible) {
@@ -543,7 +543,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   cResult[4] = items4;
   tmp16 = items4;
   tmp15 = fn;
-}) : ((visible) => {
+}) : (function FloatingBanner(visible) {
   let View2;
   let _undefined;
   let c5;
@@ -640,7 +640,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
     const result2 = set(withSpring(num, closure_17));
     let num2 = 0;
     set2 = sharedValue1.set;
-    const withSpring2 = tmp9(5604).withSpring;
+    const withSpring2 = tmp9(5374).withSpring;
     spring;
     const tmp12 = closure_17;
     if (!visible) {
@@ -649,7 +649,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
     set2(withSpring2(num2, tmp12));
   }, items2);
   const tmp5Result3 = visible(bottom[13]);
-  class U {
+  class R {
     constructor() {
       let items;
       const obj = { opacity: sharedValue.get(), transform: items };
@@ -658,10 +658,10 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
       return obj;
     }
   }
-  U.__closure = { opacity: sharedValue, translateY: sharedValue1 };
-  U.__workletHash = 10761841231690;
-  U.__initData = __initData3;
-  const animatedStyle = tmp5Result3.useAnimatedStyle(U);
+  R.__closure = { opacity: sharedValue, translateY: sharedValue1 };
+  R.__workletHash = 10761841231690;
+  R.__initData = __initData3;
+  const animatedStyle = tmp5Result3.useAnimatedStyle(R);
   const tmp5Result4 = visible(bottom[13]);
   class X {
     constructor() {
@@ -697,7 +697,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   return closure_9(View, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNitroUpsellBanner(arg0) {
   let _location;
   let floating;
   let hideFloatingGradient;
@@ -794,7 +794,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 const _Symbol = Symbol;
                 if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
                   const obj3 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl4.t.KCD0Hp) };
-                  const Text = tmp(4892).Text;
+                  const Text = tmp(5086).Text;
                   intl2 = tmp(1126).intl;
                   const tmp29 = React4(Text, obj3);
                   cResult[21] = tmp29;
@@ -805,7 +805,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 const _Symbol2 = Symbol;
                 if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
                   const obj5 = { variant: "text-xs/medium", color: "mobile-text-heading-primary", children: intl3.formatToPlainString(intl4.t["8o8Zk5"], obj6) };
-                  const Text2 = tmp(4892).Text;
+                  const Text2 = tmp(5086).Text;
                   intl3 = tmp(1126).intl;
                   obj6 = { number };
                   const tmp33 = React4(Text2, obj5);
@@ -858,7 +858,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
             }
             const obj9 = { text: tmp21, size: "sm", variant: "experimental_premium-primary", shiny: tmp16 && !stateFromStores, icon: AssetRegistryDefault, onPress: tmp14 };
-            const Button = tmp(5601).Button;
+            const Button = tmp(5375).Button;
             const tmp26 = React4(Button, obj9);
             cResult[17] = tmp14;
             cResult[18] = tmp21;
@@ -892,7 +892,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = _location;
   cResult[6] = obj10;
   tmp13 = obj10;
-}) : ((wrapperStyle) => {
+}) : (function GroupDMNitroUpsellBanner(wrapperStyle) {
   let Button;
   let _location;
   let floating;
@@ -942,16 +942,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const obj6 = { showLeadingIcon: false, wrapperStyle: tmp13, trailing: React4(Button, obj7), children: items2 };
   obj7 = { text: string(tmp2Result.getGroupDMNitroCapCTAMessage(groupDMNitroAudience)), size: "sm", variant: "experimental_premium-primary", shiny: tmp9 && !stateFromStores, icon: AssetRegistryDefault, onPress: tmp7Result };
-  Button = tmp2(5601).Button;
+  Button = tmp2(5375).Button;
   const intl = tmp2(1126).intl;
   string = intl.string;
   tmp2Result = GroupDMNitroUpsellModel;
   const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl4.t.KCD0Hp) };
-  const Text = tmp2(4892).Text;
+  const Text = tmp2(5086).Text;
   intl2 = tmp2(1126).intl;
   items2 = [React4(Text, obj8), ];
   const obj9 = { variant: "text-xs/medium", color: "mobile-text-heading-primary", children: intl3.formatToPlainString(intl4.t["8o8Zk5"], obj10) };
-  const Text2 = tmp2(4892).Text;
+  const Text2 = tmp2(5086).Text;
   intl3 = tmp2(1126).intl;
   obj10 = { number };
   items2[1] = React4(Text2, obj9);

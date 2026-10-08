@@ -1,20 +1,20 @@
-// Module ID: 13965
-// Function ID: 13966
+// Module ID: 14264
+// Function ID: 14265
 // Name: RefreshEmptyState
-// Dependencies: [109, 19, 17, 1085, 21, 4896, 5922, 587, 558, 576, 8941, 5601, 4735, 2]
+// Dependencies: [109, 19, 17, 1085, 21, 5090, 5902, 587, 558, 576, 8572, 5375, 4929, 2]
 
-// Module 13965 (RefreshEmptyState)
+// Module 14264 (RefreshEmptyState)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import shared from "shared" /* 4735 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8941 */;
+import shared from "shared" /* 4929 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8572 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import TextStyles_mod from "TextStyles" /* 5922 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import TextStyles_mod from "TextStyles" /* 5902 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const components_Button_Button = tmp(5601);
+const components_Button_Button = tmp(5375);
 let closure_3 = ["lightSource", "darkSource"];
 ({ View: hasOwnProperty, Image: metroRequire } = react_native);
 const Fonts = Constants.Fonts;
@@ -41,7 +41,7 @@ TextStyles = TextStyles_mod;
 let merged1 = Object.assign(TextStyles(Fonts.PRIMARY_MEDIUM, nativeDefault.colors.TEXT_SUBTLE, 14));
 let closure_9 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState(arg0) {
   let body;
   let bodyStyle;
   let callToAction;
@@ -170,7 +170,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.container;
   cResult[2] = items4;
   tmp5 = items4;
-}) : ((arg0) => {
+}) : (function EmptyState(arg0) {
   let body;
   let bodyStyle;
   let callToAction;
@@ -220,7 +220,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_10 = tmp10;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThemedEmptyState(arg0) {
   let darkSource;
   let lightSource;
   let tmp4;
@@ -263,7 +263,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = tmp4;
   cResult[6] = tmp12;
   tmp10 = tmp12;
-}) : ((darkSource) => {
+}) : (function ThemedEmptyState(darkSource) {
   darkSource = darkSource.darkSource;
   const lightSource = darkSource.lightSource;
   const merged = Object.assign(darkSource, Object.assign({ lightSource: 0, darkSource: 0 }));

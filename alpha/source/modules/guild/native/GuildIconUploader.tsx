@@ -1,21 +1,22 @@
-// Module ID: 11422
-// Function ID: 11423
+// Module ID: 11405
+// Function ID: 11406
 // Name: GuildIconUploader
-// Dependencies: [19, 17, 1193, 21, 4896, 587, 4595, 4735, 11423, 11424, 4892, 1126, 11425, 11426, 5916, 2]
+// Dependencies: [19, 17, 1205, 21, 5090, 587, 4787, 6164, 4929, 11406, 11407, 5086, 1126, 11408, 11409, 6189, 2]
 
-// Module 11422 (GuildIconUploader)
+// Module 11405 (GuildIconUploader)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import native from "native" /* 4595 */;
-import shared from "shared" /* 4735 */;
-import Pressables from "Pressables" /* 5916 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11425 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11426 */;
+import native from "native" /* 4787 */;
+import shared from "shared" /* 4929 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import Pressables from "Pressables" /* 6189 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11408 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11409 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;
@@ -43,7 +44,7 @@ class GuildIconUploader extends PureComponent {
     let items2;
     let obj3;
     let str;
-    let tmp6Result;
+    let tmp7Result;
     const tmp = closure_8(this.context);
     const icon = this.props.icon;
     if (null != icon) {
@@ -51,31 +52,31 @@ class GuildIconUploader extends PureComponent {
       items = [, ];
       ({ guildIcon: arr2[0], guildPlaceholder: arr2[1] } = tmp);
       obj3 = { uri: icon };
-      tmp6Result = metroRequire(React3, obj2);
+      tmp7Result = metroRequire(FastImageDefault, obj2);
     } else {
-      let tmp13Result;
+      let tmp14Result;
       const obj4 = { style: items1, children: items2 };
       items1 = [, ];
       ({ guildIcon: arr3[0], emptyGuildIcon: arr3[1] } = tmp);
       const obj6 = shared;
-      const tmp6 = metroImportDefault;
-      const tmp7 = _false;
-      const tmp9 = React3;
+      const tmp10 = React3;
+      const tmp7 = metroImportDefault;
+      const tmp8 = _false;
       if (obj6.isThemeDark(ThemeStore.theme)) {
-        tmp13Result = tmp13(11423);
+        tmp14Result = tmp14(11406);
       } else {
-        tmp13Result = tmp13(11424);
+        tmp14Result = tmp14(11407);
       }
-      const obj = { source: tmp13Result };
-      items2 = [metroRequire(tmp9, obj), ];
+      const obj = { source: tmp14Result };
+      items2 = [metroRequire(tmp10, obj), ];
       const obj5 = { style: tmp.emptyGuildIconText, variant: "text-xs/bold", color: "text-default", children: str.toUpperCase() };
-      const Text = tmp10(4892).Text;
-      const intl = tmp10(1126).intl;
+      const Text = tmp11(5086).Text;
+      const intl = tmp11(1126).intl;
       str = intl.string(intl3.t["3UB9ad"]);
       items2[1] = metroRequire(Text, obj5);
-      tmp6Result = tmp6(tmp7, obj4);
+      tmp7Result = tmp7(tmp8, obj4);
     }
-    return tmp6Result;
+    return tmp7Result;
   }
   renderUpload() {
     let items;

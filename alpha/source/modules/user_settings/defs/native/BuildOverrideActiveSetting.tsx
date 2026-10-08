@@ -1,26 +1,26 @@
-// Module ID: 15645
-// Function ID: 15646
+// Module ID: 15925
+// Function ID: 15926
 // Name: BuildOverrideActiveSetting
-// Dependencies: [11095, 21, 14422, 558, 576, 11412, 504, 14666, 15639, 11142, 14794, 2]
+// Dependencies: [10460, 21, 14648, 558, 576, 11395, 504, 14927, 15919, 11262, 15055, 2]
 
-// Module 15645 (BuildOverrideActiveSetting)
+// Module 15925 (BuildOverrideActiveSetting)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11412 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14422 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14666 */;
-import RefreshIcon from "RefreshIcon" /* 14794 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11095 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11395 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14648 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14927 */;
+import RefreshIcon from "RefreshIcon" /* 15055 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 10460 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-const DevToolsContent = tmp(15639);
+const DevToolsContent = tmp(15919);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBuildOverrideActive() {
   let currentBuildOverride;
   let tmp4;
   let tmp5;
@@ -28,7 +28,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [BuildOverrideStore];
-    const fn = function l() {
+    const fn = function u() {
       const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
       let id;
       if (overrides != null) {
@@ -48,7 +48,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useBuildOverrideActive() {
   let currentBuildOverride;
   const items = [BuildOverrideStore];
   const obj = get_initialized;
@@ -65,19 +65,19 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasBuildOverrideActive() {
   const obj = useIsStaffOrDeveloperSettingPredicate;
   const staffOrDeveloperSettingPredicate = obj.useStaffOrDeveloperSettingPredicate();
   const tmp2 = null != closure_4() && staffOrDeveloperSettingPredicate;
   return tmp2;
-}) : (() => {
+}) : (function useHasBuildOverrideActive() {
   const obj = useIsStaffOrDeveloperSettingPredicate;
   const staffOrDeveloperSettingPredicate = obj.useStaffOrDeveloperSettingPredicate();
   const tmp2 = null != closure_4() && staffOrDeveloperSettingPredicate;
   return tmp2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBuildOverrideActiveDescription() {
   let tmp5;
   const obj = react;
   const cResult = obj.c(2);
@@ -94,7 +94,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[1];
   }
   return tmp5;
-}) : (() => {
+}) : (function useBuildOverrideActiveDescription() {
   const tmp = closure_4();
   let tmp2;
   if (null != tmp) {

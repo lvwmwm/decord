@@ -1,9 +1,9 @@
-// Module ID: 14365
-// Function ID: 14366
+// Module ID: 14592
+// Function ID: 14593
 // Name: platformBehaviors
 // Dependencies: [1096, 2]
 
-// Module 14365 (platformBehaviors)
+// Module 14592 (platformBehaviors)
 import Constants from "Constants" /* 1096 */;
 import size from "module_2" /* 2 */;
 

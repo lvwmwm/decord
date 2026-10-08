@@ -1,15 +1,15 @@
-// Module ID: 13248
-// Function ID: 13249
+// Module ID: 13548
+// Function ID: 13549
 // Name: useScrollToSection
 // Dependencies: [19, 558, 576, 2]
 
-// Module 13248 (useScrollToSection)
+// Module 13548 (useScrollToSection)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScrollToSection(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   let obj = react2;
@@ -31,7 +31,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     }
     return tmp3;
   }
-  const fn = function c(arg0) {
+  const fn = function o(arg0) {
     let ref2;
     const ref = arg0;
     return (nativeEvent) => {
@@ -50,7 +50,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[1] = arg0;
   cResult[2] = fn;
   tmp2 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useScrollToSection(arg0, arg1) {
   let items;
   let closure_0 = arg0;
   let closure_1 = arg1;

@@ -1,15 +1,15 @@
-// Module ID: 17400
-// Function ID: 17401
+// Module ID: 17682
+// Function ID: 17683
 // Name: usePanelOpenState
-// Dependencies: [32, 19, 5104, 11916, 1085, 558, 576, 4618, 1121, 12572, 4710, 4723, 12565, 9020, 2]
+// Dependencies: [32, 19, 6079, 11989, 1085, 558, 576, 4810, 1121, 10985, 4904, 4917, 10978, 10619, 2]
 
-// Module 17400 (usePanelOpenState)
+// Module 17682 (usePanelOpenState)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11916 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11989 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VoicePanelStore from "VoicePanelStore" /* 5104 */;
+import VoicePanelStore from "VoicePanelStore" /* 6079 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,7 @@ const __initData = { code: "function usePanelOpenStateTsx1(){const{connected}=th
 const __initData2 = { code: "function usePanelOpenStateTsx2(props,previous){const{runOnJS,doCloseChannel}=this.__closure;const isConnected=props.connected;const wasConnected=(previous===null||previous===void 0?void 0:previous.connected)===true;if(wasConnected&&!isConnected){runOnJS(doCloseChannel)();}}" };
 const __initData3 = { code: "function usePanelOpenStateTsx3(){const{connected}=this.__closure;return{connected:connected.get()};}" };
 const __initData4 = { code: "function usePanelOpenStateTsx4(props,previous){const{runOnJS,doCloseChannel}=this.__closure;const isConnected=props.connected;const wasConnected=(previous===null||previous===void 0?void 0:previous.connected)===true;if(wasConnected&&!isConnected){runOnJS(doCloseChannel)();}}" };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, connected) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePanelOpenState(arg0, arg1, arg2, connected) {
   let closure_1;
   let closure_2;
   let constants2;
@@ -41,16 +41,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, co
     return state.closeChannel(closure_0);
   }
   let obj2 = require("ReanimatedRexport");
-  class O {
+  class E {
     constructor() {
       const obj = { connected: connected.get() };
       return obj;
     }
   }
-  O.__closure = { connected };
-  O.__workletHash = 8350408810765;
-  O.__initData = __initData;
-  class E {
+  E.__closure = { connected };
+  E.__workletHash = 8350408810765;
+  E.__initData = __initData;
+  class O {
     constructor(connected, connected2) {
       let connected1;
       connected = connected.connected;
@@ -64,11 +64,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, co
       }
     }
   }
-  E.__closure = { runOnJS: require("ReanimatedRexport").runOnJS, doCloseChannel };
-  E.__workletHash = 9166012598595;
-  E.__initData = __initData2;
+  O.__closure = { runOnJS: require("ReanimatedRexport").runOnJS, doCloseChannel };
+  O.__workletHash = 9166012598595;
+  O.__initData = __initData2;
   ({ runOnJS: require("ReanimatedRexport").runOnJS, doCloseChannel });
-  const animatedReaction = obj2.useAnimatedReaction(O, E);
+  const animatedReaction = obj2.useAnimatedReaction(E, O);
   if (cResult[0] === arg0) {
     if (cResult[1] === connected) {
       if (cResult[2] === arg1) {
@@ -110,7 +110,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, co
           }
           const effect1 = obj4.useEffect(tmp11, tmp12);
         }
-        class I {
+        class L {
           constructor() {
             let obj = closure_1(closure_2[9]);
             closure_0 = obj.addRouteChangeListener((pathname) => {
@@ -144,7 +144,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, co
           }
         }
         const items = [, ];
-        class O {
+        class E {
           constructor() {
             const obj = { connected: connected.get() };
             return obj;
@@ -153,8 +153,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, co
         items[1] = first;
         cResult[7] = arg0;
         cResult[8] = first;
-        cResult[9] = I;
-        class E {
+        cResult[9] = L;
+        class O {
           constructor(connected, connected2) {
             let connected1;
             connected = connected.connected;
@@ -169,7 +169,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, co
           }
         }
         cResult[10] = items;
-        tmp11 = I;
+        tmp11 = L;
         tmp12 = items;
       }
     }
@@ -211,7 +211,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, co
   cResult[5] = items1;
   tmp4 = items1;
   tmp3 = fn;
-}) : ((arg0, arg1, arg2, connected) => {
+}) : (function usePanelOpenState(arg0, arg1, arg2, connected) {
   let closure_2;
   let constants2;
   _require = arg0;
@@ -222,16 +222,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, co
     return state.closeChannel(closure_0);
   }
   let obj = require("ReanimatedRexport");
-  class O {
+  class E {
     constructor() {
       const obj = { connected: connected.get() };
       return obj;
     }
   }
-  O.__closure = { connected };
-  O.__workletHash = 8132120691023;
-  O.__initData = __initData3;
-  class E {
+  E.__closure = { connected };
+  E.__workletHash = 8132120691023;
+  E.__initData = __initData3;
+  class O {
     constructor(connected, connected2) {
       let connected1;
       connected = connected.connected;
@@ -246,10 +246,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, co
     }
   }
   let obj2 = { runOnJS: require("ReanimatedRexport").runOnJS, doCloseChannel };
-  E.__closure = obj2;
-  E.__workletHash = 176531712901;
-  E.__initData = __initData4;
-  const animatedReaction = obj.useAnimatedReaction(O, E);
+  O.__closure = obj2;
+  O.__workletHash = 176531712901;
+  O.__initData = __initData4;
+  const animatedReaction = obj.useAnimatedReaction(E, O);
   const items = [arg0, arg1, arg2, connected];
   const effect = doCloseChannel.useEffect(() => {
     function componentActionOpen(channelId) {

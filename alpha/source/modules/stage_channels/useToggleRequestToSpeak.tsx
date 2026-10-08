@@ -1,14 +1,14 @@
-// Module ID: 9605
-// Function ID: 9606
+// Module ID: 10798
+// Function ID: 10799
 // Name: useToggleRequestToSpeak
-// Dependencies: [32, 19, 502, 558, 576, 504, 5043, 5586, 8117, 8119, 8107, 2]
+// Dependencies: [32, 19, 502, 558, 576, 504, 5412, 5954, 7492, 5915, 7482, 2]
 
-// Module 9605 (useToggleRequestToSpeak)
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5043 */;
-import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 5586 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 8107 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8117 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8119 */;
+// Module 10798 (useToggleRequestToSpeak)
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5412 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5915 */;
+import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 5954 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 7482 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7492 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -20,7 +20,7 @@ const useAudienceRequestToSpeakStateDefault = useAudienceRequestToSpeakState;
 let _require, dependencyMap, importDefault;
 
 let react = react_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useToggleRequestToSpeak(id) {
   let closure_1;
   let closure_2;
   let closure_4;
@@ -35,15 +35,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   const cResult = obj.c(12);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AuthenticationStore];
-    class E {
-      constructor() {
-        return id2.getId();
-      }
-    }
+    const fn = function _() {
+      return id2.getId();
+    };
     cResult[0] = items;
-    cResult[1] = E;
+    cResult[1] = fn;
     tmp4 = items;
-    tmp5 = E;
+    tmp5 = fn;
   } else {
     [tmp4, tmp5] = cResult;
   }
@@ -58,76 +56,56 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   const obj3 = react;
   react = tmp10[1];
   if (cResult[2] !== tmp9) {
-    const fn = function n() {
-      closure_4(closure_2);
-    };
-    const items1 = [tmp9];
     class E {
       constructor() {
-        return id2.getId();
+        closure_4(closure_2);
       }
     }
-    cResult[3] = fn;
+    const items1 = [tmp9];
+    cResult[2] = tmp9;
+    cResult[3] = E;
     cResult[4] = items1;
     tmp13 = items1;
-    tmp12 = fn;
+    tmp12 = E;
   } else {
-    tmp12 = cResult[3];
+    class E {
+      constructor() {
+        closure_4(closure_2);
+      }
+    }
     tmp13 = cResult[4];
   }
   const effect = obj3.useEffect(tmp12, tmp13);
   if (cResult[5] === id) {
-    if (cResult[6] === tmp8) {
-      let tmp15;
-      if (cResult[7] === first) {
-        tmp15 = cResult[8];
+    class E {
+      constructor() {
+        closure_4(closure_2);
       }
-      if (cResult[9] === tmp15) {
-        let tmp16;
-        if (cResult[10] === first) {
-          tmp16 = cResult[11];
-        }
-        return tmp16;
-      }
-      const items2 = [, ];
-      class E {
-        constructor() {
-          return id2.getId();
-        }
-      }
-      items2[1] = tmp15;
-      cResult[9] = tmp15;
-      cResult[10] = first;
-      cResult[11] = items2;
-      tmp16 = items2;
     }
   }
-  class T {
-    constructor() {
-      const obj = useStageSpeakingForCurrentUser;
-      if (obj.shouldAgeVerifyToSpeakForCurrentUser(id.id)) {
-        const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND };
-        const showAgeVerificationGetStartedModal = AgeVerificationActionCreatorsDefault.showAgeVerificationGetStartedModal;
-        AgeVerificationActionCreatorsDefault;
-        const result = showAgeVerificationGetStartedModal(obj2);
+  function handleToggleRequestToSpeak() {
+    const obj = useStageSpeakingForCurrentUser;
+    if (obj.shouldAgeVerifyToSpeakForCurrentUser(id.id)) {
+      const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND };
+      const showAgeVerificationGetStartedModal = AgeVerificationActionCreatorsDefault.showAgeVerificationGetStartedModal;
+      AgeVerificationActionCreatorsDefault;
+      const result = showAgeVerificationGetStartedModal(obj2);
+    } else {
+      if (closure_1 === useAudienceRequestToSpeakState.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) {
+        const tmpResult = StageChannelActionCreators;
+        const result1 = tmpResult.audienceAckRequestToSpeak(tmp3, true);
       } else {
-        if (closure_1 === useAudienceRequestToSpeakState.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) {
-          const tmpResult = StageChannelActionCreators;
-          const result1 = tmpResult.audienceAckRequestToSpeak(tmp3, true);
-        } else {
-          const tmpResult2 = StageChannelActionCreators;
-          tmpResult2.toggleRequestToSpeak(id, !first);
-        }
-        closure_4(!first);
+        const tmpResult2 = StageChannelActionCreators;
+        tmpResult2.toggleRequestToSpeak(id, !first);
       }
+      closure_4(!first);
     }
   }
   cResult[5] = id;
   cResult[6] = tmp8;
   cResult[7] = first;
-  cResult[8] = T;
-  tmp15 = T;
-}) : ((id) => {
+  cResult[8] = handleToggleRequestToSpeak;
+}) : (function useToggleRequestToSpeak(id) {
   let closure_1;
   let closure_2;
   let closure_4;
@@ -150,7 +128,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   }, items1);
   const items2 = [
     first,
-    () => {
+    function handleToggleRequestToSpeak() {
       const obj = useStageSpeakingForCurrentUser;
       if (obj.shouldAgeVerifyToSpeakForCurrentUser(id.id)) {
         const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND };

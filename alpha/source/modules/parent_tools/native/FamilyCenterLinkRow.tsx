@@ -1,17 +1,17 @@
-// Module ID: 14742
-// Function ID: 14743
+// Module ID: 15003
+// Function ID: 15004
 // Name: FamilyCenterLinkRow
-// Dependencies: [19, 17, 7062, 21, 4896, 558, 576, 14743, 14744, 2]
+// Dependencies: [19, 17, 7248, 21, 5090, 558, 576, 15004, 15005, 2]
 
-// Module 14742 (FamilyCenterLinkRow)
+// Module 15003 (FamilyCenterLinkRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7062 */;
-import FamilyCenterRequestorDetailsDefault from "FamilyCenterRequestorDetails" /* 14743 */;
-import FamilyCenterLinkWrapperDefault from "FamilyCenterLinkWrapper" /* 14744 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7248 */;
+import FamilyCenterRequestorDetailsDefault from "FamilyCenterRequestorDetails" /* 15004 */;
+import FamilyCenterLinkWrapperDefault from "FamilyCenterLinkWrapper" /* 15005 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ const View = react_native.View;
 const UserLinkStatus = FamilyCenterConstants.UserLinkStatus;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ actionContainer: { flexDirection: "row", alignItems: "center", justifyContent: "flex-end", height: "100%" } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterLinkRow(arg0) {
   let actions;
   let items;
   let otherUser;
@@ -68,7 +68,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp3.actionContainer;
   cResult[4] = tmp10;
   tmp9 = tmp10;
-}) : ((otherUser) => {
+}) : (function FamilyCenterLinkRow(otherUser) {
   let items;
   otherUser = otherUser.otherUser;
   const actions = otherUser.actions;

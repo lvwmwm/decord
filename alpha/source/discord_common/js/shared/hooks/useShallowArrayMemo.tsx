@@ -1,17 +1,17 @@
-// Module ID: 16088
-// Function ID: 16089
+// Module ID: 16348
+// Function ID: 16349
 // Name: useShallowArrayMemo
-// Dependencies: [558, 576, 16089, 568, 2]
+// Dependencies: [558, 576, 16349, 568, 2]
 
-// Module 16088 (useShallowArrayMemo)
+// Module 16348 (useShallowArrayMemo)
 import react from "react" /* 576 */;
-import useMemoWithEqualityFunctionDefault from "useMemoWithEqualityFunction" /* 16089 */;
+import useMemoWithEqualityFunctionDefault from "useMemoWithEqualityFunction" /* 16349 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const shallowEqual = tmp(568);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShallowArrayMemo(arg0) {
   let tmp4;
   let closure_0 = arg0;
   const obj = react;
@@ -28,7 +28,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmp5 = useMemoWithEqualityFunctionDefault;
   return tmp5(tmp4, arg0, shallowEqual.areArraysShallowEqual);
-}) : ((arg0) => {
+}) : (function useShallowArrayMemo(arg0) {
   let closure_0 = arg0;
   const tmp = useMemoWithEqualityFunctionDefault;
   return tmp(() => closure_0, arg0, shallowEqual.areArraysShallowEqual);

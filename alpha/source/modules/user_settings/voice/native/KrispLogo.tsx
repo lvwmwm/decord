@@ -1,19 +1,19 @@
-// Module ID: 9690
-// Function ID: 9691
+// Module ID: 10879
+// Function ID: 10880
 // Name: KrispLogo
-// Dependencies: [19, 17, 1193, 1085, 21, 2115, 1252, 1126, 4571, 558, 576, 504, 4735, 9691, 9692, 4892, 2]
+// Dependencies: [19, 17, 1205, 1085, 21, 2127, 1264, 1126, 4763, 558, 576, 504, 4929, 10880, 10881, 5086, 2]
 
-// Module 9690 (KrispLogo)
+// Module 10879 (KrispLogo)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import LinkingDefault from "Linking" /* 4571 */;
-import shared from "shared" /* 4735 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
+import LinkingDefault from "Linking" /* 4763 */;
+import shared from "shared" /* 4929 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -47,7 +47,7 @@ function handleKrispLinkPressed() {
 ({ AnalyticEvents: metroImportDefault, AnalyticsPages: metroImportAll, AnalyticsSections: c9, HelpdeskArticles: c10 } = Constants);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 let closure_13 = { logo: { marginLeft: 20, height: 30, width: 67 }, detailsView: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingBottom: 12, gap: 12 } };
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispLogo() {
   let Text;
   let intl3;
   let items1;
@@ -65,7 +65,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(9);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ThemeStore];
-    const fn = function o() {
+    const fn = function c() {
       return theme.theme;
     };
     cResult[0] = items;
@@ -79,9 +79,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   const tmpResult2 = shared;
   if (tmpResult2.isThemeLight(stateFromStores)) {
-    tmp8Result = tmp8(9691);
+    tmp8Result = tmp8(10880);
   } else {
-    tmp8Result = tmp8(9692);
+    tmp8Result = tmp8(10881);
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
@@ -111,7 +111,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { accessibilityRole: "link", accessibilityLabel: tmp17, onPress: handleKrispLinkPressed, children: unpackModuleId(Text, obj4) };
     obj4 = { variant: "text-sm/medium", color: "text-link", children: intl3.string(intl4.t.hvVgAZ) };
-    Text = tmp(4892).Text;
+    Text = tmp(5086).Text;
     intl3 = tmp(1126).intl;
     const tmp23 = unpackModuleId(hasOwnProperty, obj3);
     cResult[6] = tmp23;
@@ -130,7 +130,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp24 = cResult[8];
   }
   return tmp24;
-}) : (() => {
+}) : (function KrispLogo() {
   let Text;
   let intl;
   let intl2;
@@ -144,9 +144,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
   const obj2 = shared;
   if (obj2.isThemeLight(stateFromStores)) {
-    tmp4Result = tmp4(9691);
+    tmp4Result = tmp4(10880);
   } else {
-    tmp4Result = tmp4(9692);
+    tmp4Result = tmp4(10881);
   }
   const obj3 = { style: closure_13.detailsView, children: items1 };
   const obj4 = { style: closure_13.logo, source: tmp4Result, accessibilityLabel: intl.string(intl4.t.vFiCSx) };
@@ -155,7 +155,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj5 = { accessibilityRole: "link", accessibilityLabel: intl2.string(intl4.t.hvVgAZ), onPress: handleKrispLinkPressed, children: unpackModuleId(Text, obj6) };
   intl2 = tmp(1126).intl;
   obj6 = { variant: "text-sm/medium", color: "text-link", children: intl3.string(intl4.t.hvVgAZ) };
-  Text = tmp(4892).Text;
+  Text = tmp(5086).Text;
   intl3 = tmp(1126).intl;
   items1[1] = unpackModuleId(hasOwnProperty, obj5);
   return closure_12(React3, obj3);

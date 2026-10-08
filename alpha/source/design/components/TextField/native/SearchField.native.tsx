@@ -1,52 +1,68 @@
-// Module ID: 6554
-// Function ID: 6555
+// Module ID: 6730
+// Function ID: 6731
 // Name: SearchField
-// Dependencies: [19, 21, 558, 576, 1126, 6107, 6555, 2]
+// Dependencies: [109, 19, 21, 558, 576, 1126, 6287, 6731, 2]
 
-// Module 6554 (SearchField)
+// Module 6730 (SearchField)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import TextField2 from "TextField" /* 6107 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6555 */;
+import TextField2 from "TextField" /* 6287 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6731 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let closure_2 = ["ref"];
 const jsx = Fragment.jsx;
-const forwardRef = react.forwardRef;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
-  let first;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchField(ref) {
+  let tmp4;
+  let tmp5;
+  let tmp9;
   const obj = react2;
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+  const cResult = obj.c(7);
+  if (cResult[0] !== ref) {
+    const tmp8 = _objectWithoutProperties(ref, closure_2);
+    cResult[0] = ref;
+    cResult[1] = tmp8;
+    cResult[2] = ref.ref;
+    tmp5 = ref;
+    tmp4 = tmp8;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
     const stringResult = intl.string(intl2.t["5h0QOP"]);
-    cResult[0] = stringResult;
-    first = stringResult;
+    cResult[3] = stringResult;
+    tmp9 = stringResult;
   } else {
-    first = cResult[0];
+    tmp9 = cResult[3];
   }
-  if (cResult[1] === arg0) {
-    let tmp6;
-    if (cResult[2] === ref) {
-      tmp6 = cResult[3];
+  if (cResult[4] === tmp4) {
+    let tmp11;
+    if (cResult[5] === tmp5) {
+      tmp11 = cResult[6];
     }
-    return tmp6;
+    return tmp11;
   }
-  const TextField = tmp(6107).TextField;
-  const merged = Object.assign(arg0);
-  const tmp8 = <TextField placeholder={first} returnKeyType="search" ref={arg1} autoCorrect={false} autoCapitalize="none" accessibilityRole="search" leadingIcon={MagnifyingGlassIcon.MagnifyingGlassIcon} clearable />;
-  cResult[1] = arg0;
-  cResult[2] = ref;
-  cResult[3] = tmp8;
-  tmp6 = tmp8;
-}) : ((arg0, ref) => {
+  const TextField = tmp(6287).TextField;
+  const merged = Object.assign(tmp4);
+  const tmp13 = <TextField placeholder={tmp9} returnKeyType="search" ref={tmp5} autoCorrect={false} autoCapitalize="none" accessibilityRole="search" leadingIcon={MagnifyingGlassIcon.MagnifyingGlassIcon} clearable />;
+  cResult[4] = tmp4;
+  cResult[5] = tmp5;
+  cResult[6] = tmp13;
+  tmp11 = tmp13;
+}) : (function SearchField(ref) {
+  ref = ref.ref;
+  const merged = Object.assign(ref, Object.assign({ ref: 0 }));
   const TextField = TextField2.TextField;
   const intl = intl2.intl;
-  const merged = Object.assign(arg0);
-  return <TextField placeholder={intl.string(intl2.t["5h0QOP"])} returnKeyType="search" ref={arg1} autoCorrect={false} autoCapitalize="none" accessibilityRole="search" leadingIcon={MagnifyingGlassIcon.MagnifyingGlassIcon} clearable />;
-}));
+  const merged1 = Object.assign(merged);
+  return <TextField placeholder={intl.string(intl2.t["5h0QOP"])} returnKeyType="search" ref={ref} autoCorrect={false} autoCapitalize="none" accessibilityRole="search" leadingIcon={MagnifyingGlassIcon.MagnifyingGlassIcon} clearable />;
+});
 const result = size.fileFinishedImporting("design/components/TextField/native/SearchField.native.tsx");
 
-export const SearchField = forwardRefResult;
+export const SearchField = tmp3;

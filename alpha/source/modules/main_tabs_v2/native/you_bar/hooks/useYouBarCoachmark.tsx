@@ -1,33 +1,33 @@
-// Module ID: 16345
-// Function ID: 16346
+// Module ID: 16605
+// Function ID: 16606
 // Name: useYouBarCoachmark
-// Dependencies: [32, 19, 4705, 2048, 558, 576, 1126, 2036, 4618, 14542, 1491, 13527, 4925, 504, 6901, 16346, 9895, 2]
+// Dependencies: [32, 19, 4899, 2060, 558, 576, 1126, 2048, 4810, 14803, 1503, 13824, 5119, 504, 7090, 16606, 9375, 2]
 
-// Module 16345 (useYouBarCoachmark)
+// Module 16605 (useYouBarCoachmark)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import Link from "Link" /* 1491 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import TinyBroncoLazy from "TinyBroncoLazy" /* 14542 */;
+import Link from "Link" /* 1503 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import TinyBroncoLazy from "TinyBroncoLazy" /* 14803 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let isQuestRendered, obj1;
+let obj1;
 
 let tmp;
 const get_initialized = tmp(504);
-const dismissible_content = tmp(2036);
-const useSelectedDismissibleContent = tmp(6901);
-const useCoachmark = tmp(9895);
-const usePrivateProfileCoachmarkProps = tmp(16346);
+const dismissible_content = tmp(2048);
+const useSelectedDismissibleContent = tmp(7090);
+const useCoachmark = tmp(9375);
+const usePrivateProfileCoachmarkProps = tmp(16606);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 let closure_6 = [];
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSwipeCoachmarkProps(markAsDismissed) {
   let tmp4;
   let tmp5;
   let tmp8;
@@ -47,7 +47,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed
   } else {
     [tmp4, tmp5] = cResult;
   }
-  const YOU_BAR_DM_SWIPE_COACHMARK = tmp(2036).DismissibleContent.YOU_BAR_DM_SWIPE_COACHMARK;
+  const YOU_BAR_DM_SWIPE_COACHMARK = tmp(2048).DismissibleContent.YOU_BAR_DM_SWIPE_COACHMARK;
   if (cResult[2] !== markAsDismissed) {
     const fn = function c() {
       return markAsDismissed(ContentDismissActionType.USER_DISMISS);
@@ -70,7 +70,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed
   cResult[5] = tmp8;
   cResult[6] = obj2;
   tmp10 = obj2;
-}) : ((visibleContent) => {
+}) : (function useSwipeCoachmarkProps(visibleContent) {
   visibleContent = visibleContent.visibleContent;
   const markAsDismissed = visibleContent.markAsDismissed;
   const items = [markAsDismissed, visibleContent];
@@ -92,7 +92,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isQuestRendered) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarCoachmark(isQuestRendered) {
   let guildId;
   let tmp18;
   let tmp19;
@@ -229,7 +229,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isQuestRendered) => 
     cResult[7] = obj6;
   }
   tmp11 = closure_6;
-}) : ((isQuestRendered) => {
+}) : (function useYouBarCoachmark(isQuestRendered) {
   let guildId;
   let tmp7;
   let tmp8;

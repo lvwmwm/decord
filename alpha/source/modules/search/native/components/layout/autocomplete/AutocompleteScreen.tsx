@@ -1,24 +1,24 @@
-// Module ID: 16930
-// Function ID: 16931
+// Module ID: 17211
+// Function ID: 17212
 // Name: AutocompleteScreen
-// Dependencies: [32, 19, 2051, 4525, 1377, 16931, 11994, 7524, 1085, 21, 558, 576, 504, 16837, 11980, 12005, 12001, 4728, 5049, 11987, 16932, 11986, 11988, 16895, 16829, 1126, 16841, 2]
+// Dependencies: [32, 19, 2063, 4717, 1389, 17212, 12067, 9247, 1085, 21, 558, 576, 504, 17116, 12053, 12078, 12074, 4922, 5417, 12060, 17213, 12059, 12061, 17176, 17108, 1126, 17120, 2]
 
-// Module 16930 (AutocompleteScreen)
+// Module 17211 (AutocompleteScreen)
 import Fragment from "Fragment" /* 21 */;
-import UserUtilsDefault from "UserUtils" /* 4728 */;
-import useChannelName from "useChannelName" /* 5049 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11980 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12001 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12005 */;
-import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 16932 */;
+import UserUtilsDefault from "UserUtils" /* 4922 */;
+import useChannelName from "useChannelName" /* 5417 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12053 */;
+import tracking_TrackingDefault from "tracking/Tracking" /* 12074 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12078 */;
+import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 17213 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore_mod from "ChannelStore" /* 2051 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserStore from "UserStore" /* 1377 */;
-import SearchAutocompleteStore from "SearchAutocompleteStore" /* 16931 */;
-import SearchQueryStore from "SearchQueryStore" /* 11994 */;
-import SearchConstants from "SearchConstants" /* 7524 */;
+import ChannelStore_mod from "ChannelStore" /* 2063 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserStore from "UserStore" /* 1389 */;
+import SearchAutocompleteStore from "SearchAutocompleteStore" /* 17212 */;
+import SearchQueryStore from "SearchQueryStore" /* 12067 */;
+import SearchConstants from "SearchConstants" /* 9247 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -37,7 +37,7 @@ let ChannelStore = ChannelStore_mod;
 ({ SearchPopoutModes: map1, SearchTokenTypes: closure_14 } = Constants);
 const jsx = Fragment.jsx;
 let closure_16 = [];
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function(searchContext) {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function AutocompleteScreen(searchContext) {
   let autocompletes;
   let closure_3;
   let closure_4;
@@ -223,7 +223,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                     addTag(obj);
                     const result = setTextInputValue.restoreDraftTextInputValue();
                   });
-                  let obj2 = search_tracking_TrackingDefault;
+                  let obj2 = tracking_TrackingDefault;
                   const obj4 = { searchContext, searchTokenType: null, location: null };
                   ({ searchTokenType: obj3.searchTokenType, location: obj3.location } = prefixTag);
                   obj2.trackSearchFilterAdd(obj4);
@@ -285,7 +285,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                   addTag(obj);
                   const result = setTextInputValue.restoreDraftTextInputValue();
                 });
-                let obj2 = search_tracking_TrackingDefault;
+                let obj2 = tracking_TrackingDefault;
                 const obj4 = { searchContext, searchTokenType: null, location: null };
                 ({ searchTokenType: obj3.searchTokenType, location: obj3.location } = prefixTag);
                 obj2.trackSearchFilterAdd(obj4);
@@ -345,7 +345,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                     addTag(obj);
                     const result = setTextInputValue.restoreDraftTextInputValue();
                   });
-                  let obj2 = search_tracking_TrackingDefault;
+                  let obj2 = tracking_TrackingDefault;
                   const obj4 = { searchContext, searchTokenType: null, location: null };
                   ({ searchTokenType: obj3.searchTokenType, location: obj3.location } = prefixTag);
                   obj2.trackSearchFilterAdd(obj4);
@@ -438,7 +438,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                     addTag(obj);
                     const result = setTextInputValue.restoreDraftTextInputValue();
                   });
-                  let obj2 = search_tracking_TrackingDefault;
+                  let obj2 = tracking_TrackingDefault;
                   const obj4 = { searchContext, searchTokenType: null, location: null };
                   ({ searchTokenType: obj3.searchTokenType, location: obj3.location } = prefixTag);
                   obj2.trackSearchFilterAdd(obj4);
@@ -568,7 +568,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                     addTag(obj);
                     const result = setTextInputValue.restoreDraftTextInputValue();
                   });
-                  let obj2 = search_tracking_TrackingDefault;
+                  let obj2 = tracking_TrackingDefault;
                   const obj4 = { searchContext, searchTokenType: null, location: null };
                   ({ searchTokenType: obj3.searchTokenType, location: obj3.location } = prefixTag);
                   obj2.trackSearchFilterAdd(obj4);
@@ -662,7 +662,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                     addTag(obj);
                     const result = setTextInputValue.restoreDraftTextInputValue();
                   });
-                  let obj2 = search_tracking_TrackingDefault;
+                  let obj2 = tracking_TrackingDefault;
                   const obj4 = { searchContext, searchTokenType: null, location: null };
                   ({ searchTokenType: obj3.searchTokenType, location: obj3.location } = prefixTag);
                   obj2.trackSearchFilterAdd(obj4);
@@ -839,7 +839,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                         addTag(obj);
                         const result = setTextInputValue.restoreDraftTextInputValue();
                       });
-                      let obj2 = search_tracking_TrackingDefault;
+                      let obj2 = tracking_TrackingDefault;
                       const obj4 = { searchContext, searchTokenType: null, location: null };
                       ({ searchTokenType: obj3.searchTokenType, location: obj3.location } = prefixTag);
                       obj2.trackSearchFilterAdd(obj4);
@@ -910,7 +910,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                 addTag(obj);
                 const result = setTextInputValue.restoreDraftTextInputValue();
               });
-              let obj2 = search_tracking_TrackingDefault;
+              let obj2 = tracking_TrackingDefault;
               const obj4 = { searchContext, searchTokenType: null, location: null };
               ({ searchTokenType: obj3.searchTokenType, location: obj3.location } = prefixTag);
               obj2.trackSearchFilterAdd(obj4);
@@ -940,7 +940,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               addTag(obj);
               const result = setTextInputValue.restoreDraftTextInputValue();
             });
-            let obj2 = search_tracking_TrackingDefault;
+            let obj2 = tracking_TrackingDefault;
             const obj4 = { searchContext, searchTokenType: null, location: null };
             ({ searchTokenType: obj3.searchTokenType, location: obj3.location } = prefixTag);
             obj2.trackSearchFilterAdd(obj4);
@@ -968,7 +968,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         });
         const obj4 = { searchContext, searchTokenType: null, location: null };
         ({ searchTokenType: obj3.searchTokenType, location: obj3.location } = prefixTag);
-        const obj2 = search_tracking_TrackingDefault;
+        const obj2 = tracking_TrackingDefault;
         obj2.trackSearchFilterAdd(obj4);
         P();
       }
@@ -977,7 +977,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   cResult[11] = searchContext;
   cResult[12] = tmp19;
   cResult[13] = Q;
-}) : ((searchContext) => {
+}) : (function AutocompleteScreen(searchContext) {
   let closure_3;
   let first;
   let tmp18;
@@ -1021,7 +1021,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       });
       const obj4 = { searchContext, searchTokenType: null, location: null };
       ({ searchTokenType: obj3.searchTokenType, location: obj3.location } = prefixTag);
-      const obj2 = search_tracking_TrackingDefault;
+      const obj2 = tracking_TrackingDefault;
       obj2.trackSearchFilterAdd(obj4);
       callback();
     }
@@ -1042,7 +1042,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           addTag(obj);
           const result = setTextInputValue.restoreDraftTextInputValue();
         });
-        let obj2 = search_tracking_TrackingDefault;
+        let obj2 = tracking_TrackingDefault;
         const obj4 = { searchContext, searchTokenType: null, location: null };
         ({ searchTokenType: obj3.searchTokenType, location: obj3.location } = prefixTag);
         obj2.trackSearchFilterAdd(obj4);
@@ -1079,7 +1079,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         });
         let obj = { searchContext, searchTokenType: null, location: null };
         ({ searchTokenType: obj4.searchTokenType, location: obj4.location } = prefixTag);
-        const obj3 = search_tracking_TrackingDefault;
+        const obj3 = tracking_TrackingDefault;
         obj3.trackSearchFilterAdd(obj);
         callback();
       }

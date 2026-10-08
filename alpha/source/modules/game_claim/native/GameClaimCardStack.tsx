@@ -1,23 +1,20 @@
-// Module ID: 16155
-// Function ID: 16156
+// Module ID: 16415
+// Function ID: 16416
 // Name: GameClaimCardStack
-// Dependencies: [19, 17, 21, 587, 683, 4896, 558, 576, 8562, 2]
+// Dependencies: [19, 17, 21, 587, 683, 5090, 558, 576, 6164, 9046, 2]
 
-// Module 16155 (GameClaimCardStack)
+// Module 16415 (GameClaimCardStack)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
+import FastImageDefault from "FastImage" /* 6164 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import module_683_mod from "module_683" /* 683 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let imageSrc;
-
-let c2;
-let c3;
 let closure_4;
 let hasOwnProperty;
 let items;
@@ -27,8 +24,8 @@ let size;
 let size1;
 let size2;
 let tmp;
-const PlusSmallIcon = tmp(8562);
-({ Image: c2, View: c3 } = react_native);
+const PlusSmallIcon = tmp(9046);
+const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 const sum = nativeDefault.space.PX_12 + nativeDefault.space.PX_8 + 96;
 const sum1 = sum + 4 + nativeDefault.space.PX_16;
@@ -54,7 +51,7 @@ size1 = { width: 72, height: 96, borderRadius: nativeDefault.radii.xs, flexShrin
 items1 = [{ rotate: "6deg" }];
 size2 = { width: 21.599999999999998, height: 21.599999999999998, borderRadius: nativeDefault.radii.xs, backgroundColor: hexResult2, alignItems: "center", justifyContent: "center" };
 let closure_6 = createStyles(obj);
-const tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((imageSrc) => {
+let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameClaimCardStack(imageSrc) {
   let items;
   let tmp5;
   const obj = react2;
@@ -91,7 +88,7 @@ const tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((imageSrc) => {
       }
       if (cResult[9] !== tmp4.addIconWrapper) {
         const obj3 = { style: tmp4.addIconWrapper, children: tmp13 };
-        const tmp19 = React3(_false, obj3);
+        const tmp19 = React3(View, obj3);
         cResult[9] = tmp4.addIconWrapper;
         cResult[10] = tmp19;
         tmp16 = tmp19;
@@ -114,7 +111,7 @@ const tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((imageSrc) => {
         }
         const obj4 = { style: tmp4.container, children: items };
         items = [tmp8, tmp20];
-        const tmp27 = hasOwnProperty(_false, obj4);
+        const tmp27 = hasOwnProperty(View, obj4);
         cResult[14] = tmp4.container;
         cResult[15] = tmp8;
         cResult[16] = tmp20;
@@ -122,42 +119,42 @@ const tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((imageSrc) => {
         tmp24 = tmp27;
       }
       const obj5 = { style: tmp4.addCard, children: tmp16 };
-      const tmp23 = React3(_false, obj5);
+      const tmp23 = React3(View, obj5);
       cResult[11] = tmp4.addCard;
       cResult[12] = tmp16;
       cResult[13] = tmp23;
       tmp20 = tmp23;
     }
     const obj6 = { style: tmp4.gameCard, children: tmp6 };
-    const tmp11 = React3(_false, obj6);
+    const tmp11 = React3(View, obj6);
     cResult[5] = tmp4.gameCard;
     cResult[6] = tmp6;
     cResult[7] = tmp11;
     tmp8 = tmp11;
   }
   const obj7 = { style: tmp4.gameImage, source: tmp5, resizeMode: "cover" };
-  const tmp7 = React3(React2, obj7);
+  const tmp7 = React3(FastImageDefault, obj7);
   cResult[2] = tmp4.gameImage;
   cResult[3] = tmp5;
   cResult[4] = tmp7;
   tmp6 = tmp7;
-}) : ((imageSrc) => {
+}) : (function GameClaimCardStack(imageSrc) {
   let items;
   let obj3;
   let obj5;
   imageSrc = imageSrc.imageSrc;
   const tmp = closure_6();
   const obj = { style: tmp.container, children: items };
-  const obj2 = { style: tmp.gameCard, children: React3(React2, obj3) };
+  const obj2 = { style: tmp.gameCard, children: React3(FastImageDefault, obj3) };
   obj3 = { style: tmp.gameImage, source: { uri: imageSrc }, resizeMode: "cover" };
-  items = [React3(_false, obj2), ];
-  const obj4 = { style: tmp.addCard, children: React3(_false, obj5) };
+  items = [React3(View, obj2), ];
+  const obj4 = { style: tmp.addCard, children: React3(View, obj5) };
   obj5 = { style: tmp.addIconWrapper, children: React3(PlusSmallIcon.PlusSmallIcon, { size: "sm", color: "text-brand" }) };
-  items[1] = React3(_false, obj4);
-  return hasOwnProperty(_false, obj);
+  items[1] = React3(View, obj4);
+  return hasOwnProperty(View, obj);
 });
 size = size_mod;
 const result = size.fileFinishedImporting("modules/game_claim/native/GameClaimCardStack.tsx");
 
-export default tmp14;
+export default tmp13;
 export const CARD_STACK_HEIGHT = sum1;

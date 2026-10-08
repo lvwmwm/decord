@@ -1,20 +1,20 @@
-// Module ID: 9639
-// Function ID: 9640
+// Module ID: 10834
+// Function ID: 10835
 // Name: useHasVideoPermission
-// Dependencies: [2074, 4515, 558, 576, 7223, 504, 2]
+// Dependencies: [2086, 4707, 558, 576, 5903, 504, 2]
 // Exports: getVideoPermission
 
-// Module 9639 (useHasVideoPermission)
-import StreamPermissionUtils from "StreamPermissionUtils" /* 7223 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+// Module 10834 (useHasVideoPermission)
+import StreamPermissionUtils from "StreamPermissionUtils" /* 5903 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasVideoPermission(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -32,7 +32,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function l() {
+    const fn = function u() {
       let tmp = null != closure_0;
       if (tmp) {
         let isPrivateResult = obj.isPrivate();
@@ -56,7 +56,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : ((arg0) => {
+}) : (function useHasVideoPermission(arg0) {
   let closure_0;
   _require = arg0;
   const obj = require("get initialized");

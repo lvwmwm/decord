@@ -1,28 +1,27 @@
-// Module ID: 9566
-// Function ID: 9567
+// Module ID: 8737
+// Function ID: 8738
 // Name: InstantInviteRow
-// Dependencies: [19, 17, 2051, 9495, 2074, 9507, 1377, 9567, 7239, 21, 4896, 587, 558, 576, 504, 5049, 9496, 9568, 5916, 1188, 9331, 4728, 1126, 1402, 2018, 4892, 9569, 6000, 2]
+// Dependencies: [19, 17, 2063, 8659, 2086, 8673, 1389, 8738, 7418, 21, 5090, 587, 558, 576, 504, 5417, 8660, 8739, 6189, 1200, 8740, 4922, 1126, 1414, 2030, 5086, 8743, 6184, 2]
 
-// Module 9566 (InstantInviteRow)
+// Module 8737 (InstantInviteRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 7239 */;
-import InstantInviteUtils from "InstantInviteUtils" /* 9496 */;
-import InviteQueue from "InviteQueue" /* 9568 */;
+import Constants from "Constants" /* 7418 */;
+import InstantInviteUtils from "InstantInviteUtils" /* 8660 */;
+import InviteQueue from "InviteQueue" /* 8739 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 9495 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 9507 */;
-import UserStore from "UserStore" /* 1377 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9567 */;
-import createStyles from "createStyles" /* 4896 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 8659 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 8673 */;
+import UserStore from "UserStore" /* 1389 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 8738 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const InviteQueueDefault = InviteQueue;
-let enqueue2Result, enqueue3Result, enqueueResult, obj1, obj10, obj8, obj9, row, tmp10, tmp11, tmp12, tmp17, tmp21, tmp22, tmp23, tmp24, tmp25, tmp7, tmp8, tmp9;
 
 let c10;
 let c9;
@@ -34,7 +33,7 @@ const jsx = Fragment.jsx;
 let obj = { acronym: size };
 size = { width: 32, height: 32, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "center", overflow: "hidden", marginTop: 0, marginRight: 10, borderColor: nativeDefault.colors.BORDER_MUTED, borderStyle: "solid", borderWidth: 2 };
 let closure_13 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((row) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInviteRow(row) {
   let end;
   let onPressAvatar;
   let source;
@@ -54,15 +53,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((r
   const id = row.item.id;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [id];
-    class E {
+    class I {
       constructor() {
         return id.isSubmitting();
       }
     }
     cResult[0] = items;
-    cResult[1] = E;
+    cResult[1] = I;
     tmp5 = items;
-    tmp6 = E;
+    tmp6 = I;
   } else {
     [tmp5, tmp6] = cResult;
   }
@@ -140,88 +139,52 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((r
           return ChannelStore.getChannel(id);
         }
       }
-      class O {
-        constructor() {
-          tmp = code;
-          if (null != code) {
-            handleSendState = function handleSendState(arg0) {
-              if (null != code) {
-                closure_2_9(tmp, id, arg0 ? InviteSendStates.SENT : InviteSendStates.ERROR);
-                if (arg0) {
-                  if (onInviteSent != null) {
-                    onInviteSent();
-                  }
+      function handlePress() {
+        let obj3;
+        let obj4;
+        let obj6;
+        const tmp = code;
+        if (null != code) {
+          function handleSendState(arg0) {
+            if (null != code) {
+              closure_2_9(tmp, id, arg0 ? InviteSendStates.SENT : InviteSendStates.ERROR);
+              if (arg0) {
+                if (onInviteSent != null) {
+                  onInviteSent();
                 }
               }
-            };
-            tmp2 = setSendState;
-            tmp3 = id;
-            tmp4 = InviteSendStates;
-            tmp5 = setSendState(tmp, id, InviteSendStates.SENDING);
-            tmp6 = row;
-            type = row.type;
-            tmp7 = closure_0;
-            tmp8 = closure_2;
-            if (closure_0(closure_2[16]).RowTypes.FRIEND !== type) {
-              if (tmp7(tmp8[16]).RowTypes.DM !== type) {
-                if (tmp7(tmp8[16]).RowTypes.GROUP_DM === type) {
-                  if (null != tmp) {
-                    tmp15 = closure_1;
-                    tmp16 = closure_1(tmp8[17]);
-                    obj1 = { inviteKey: null, type: null, channel: null, location: "Invite Action Sheet", inviteAnalyticsMetadata: null };
-                    obj1.inviteKey = tmp;
-                    enqueue2 = tmp16.enqueue;
-                    obj1.type = tmp7(tmp8[17]).InvitePropertiesType.GROUP_DM;
-                    tmp17 = closure_4;
-                    obj1.channel = closure_4.getChannel(tmp3);
-                    obj7 = { suggestionData: null, source: null };
-                    tmp18 = closure_7;
-                    obj7.suggestionData = closure_7.getSelectedInviteMetadata(tmp6);
-                    tmp19 = source;
-                    obj7.source = source;
-                    obj1.inviteAnalyticsMetadata = obj7;
-                    enqueue2Result = enqueue2(obj1, handleSendState);
-                  }
-                } else if (tmp7(tmp8[16]).RowTypes.CHANNEL === type) {
-                  if (null != tmp) {
-                    tmp9 = closure_1;
-                    tmp10 = closure_1(tmp8[17]);
-                    obj = { inviteKey: null, type: null, channel: null, location: "Invite Action Sheet", inviteAnalyticsMetadata: null };
-                    obj.inviteKey = tmp;
-                    enqueue = tmp10.enqueue;
-                    obj.type = tmp7(tmp8[17]).InvitePropertiesType.CHANNEL;
-                    tmp11 = closure_4;
-                    obj.channel = closure_4.getChannel(tmp3);
-                    obj8 = { suggestionData: null, source: null };
-                    tmp12 = closure_7;
-                    obj8.suggestionData = closure_7.getSelectedInviteMetadata(tmp6);
-                    tmp13 = source;
-                    obj8.source = source;
-                    obj.inviteAnalyticsMetadata = obj8;
-                    enqueueResult = enqueue(obj, handleSendState);
-                  }
-                }
-              }
-            }
-            if (null != tmp) {
-              tmp21 = closure_1;
-              tmp22 = closure_1(tmp8[17]);
-              obj9 = { inviteKey: null, type: null, user: null, location: "Invite Action Sheet", inviteAnalyticsMetadata: null };
-              obj9.inviteKey = tmp;
-              enqueue3 = tmp22.enqueue;
-              obj9.type = tmp7(tmp8[17]).InvitePropertiesType.USER;
-              tmp23 = closure_8;
-              obj9.user = closure_8.getUser(tmp3);
-              obj10 = { suggestionData: null, source: null };
-              tmp24 = closure_7;
-              obj10.suggestionData = closure_7.getSelectedInviteMetadata(tmp6);
-              tmp25 = source;
-              obj10.source = source;
-              obj9.inviteAnalyticsMetadata = obj10;
-              enqueue3Result = enqueue3(obj9, handleSendState);
             }
           }
-          return;
+          React4(tmp, id, InviteSendStates.SENDING);
+          const type = row.type;
+          if (InstantInviteUtils.RowTypes.FRIEND !== type) {
+            if (InstantInviteUtils.RowTypes.DM !== type) {
+              if (InstantInviteUtils.RowTypes.GROUP_DM === type) {
+                if (null != tmp) {
+                  const obj2 = { inviteKey: tmp, type: InviteQueue.InvitePropertiesType.GROUP_DM, channel: ChannelStore.getChannel(id), location: "Invite Action Sheet", inviteAnalyticsMetadata: obj3 };
+                  const enqueue2 = InviteQueueDefault.enqueue;
+                  InviteQueueDefault;
+                  obj3 = { suggestionData: InviteSuggestionsStore.getSelectedInviteMetadata(row), source };
+                  enqueue2(obj2, handleSendState);
+                }
+              } else if (InstantInviteUtils.RowTypes.CHANNEL === type) {
+                if (null != tmp) {
+                  const obj = { inviteKey: tmp, type: InviteQueue.InvitePropertiesType.CHANNEL, channel: ChannelStore.getChannel(id), location: "Invite Action Sheet", inviteAnalyticsMetadata: obj4 };
+                  const enqueue = InviteQueueDefault.enqueue;
+                  InviteQueueDefault;
+                  obj4 = { suggestionData: InviteSuggestionsStore.getSelectedInviteMetadata(row), source };
+                  enqueue(obj, handleSendState);
+                }
+              }
+            }
+          }
+          if (null != tmp) {
+            const obj5 = { inviteKey: tmp, type: InviteQueue.InvitePropertiesType.USER, user: UserStore.getUser(id), location: "Invite Action Sheet", inviteAnalyticsMetadata: obj6 };
+            const enqueue3 = InviteQueueDefault.enqueue;
+            InviteQueueDefault;
+            obj6 = { suggestionData: InviteSuggestionsStore.getSelectedInviteMetadata(row), source };
+            enqueue3(obj5, handleSendState);
+          }
         }
       }
       class U {
@@ -233,7 +196,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((r
       cResult[12] = onInviteSent;
       cResult[13] = row;
       cResult[14] = source;
-      cResult[15] = O;
+      cResult[15] = handlePress;
     }
   }
   const fn = function k(arg0) {
@@ -251,9 +214,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((r
   cResult[5] = id;
   cResult[6] = fn;
   tmp13 = fn;
-}) : ((row) => {
+}) : (function InstantInviteRow(row) {
   let Avatar3;
   let end;
+  let fn;
   let obj15;
   let obj18;
   let source;
@@ -297,7 +261,6 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((r
     let type = row.type;
     if (tmp2(tmp3[16]).RowTypes.DM !== type) {
       let str2;
-      let T;
       let tmp15;
       if (tmp2(tmp3[16]).RowTypes.FRIEND !== type) {
         if (tmp2(tmp3[16]).RowTypes.GROUP_DM === type) {
@@ -315,7 +278,6 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((r
             str = "";
           }
           str2 = str;
-          T = undefined;
           tmp15 = tmp20;
         } else if (tmp2(tmp3[16]).RowTypes.CHANNEL === type) {
           let guild_id;
@@ -347,7 +309,6 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((r
               const _HermesInternal = HermesInternal;
               str2 = "#" + str;
             }
-            T = undefined;
           }
         } else {
           return null;
@@ -401,7 +362,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((r
           }
         }
       }
-      const obj11 = { start, end, icon: tmp15, label: str2, trailing: null, onPress: handlePress, disabled: tmp32, accessibilityActions: tmp19, onAccessibilityAction: T };
+      const obj11 = { start, end, icon: tmp15, label: str2, trailing: null, onPress: handlePress, disabled: tmp32, accessibilityActions: tmp19, onAccessibilityAction: fn };
       const TableRow = tmp2(tmp3[27]).TableRow;
       tmp32 = null != stateFromStores1 || stateFromStores;
       const tmp31 = jsx;
@@ -452,16 +413,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((r
       tmp29 = items3;
       obj18 = { username: tag };
     }
-    class T {
-      constructor(nativeEvent) {
-        const tmp = "viewProfile" === nativeEvent.nativeEvent.actionName && null !== onPressAvatar;
-        if (tmp) {
-          if (onPressAvatar != null) {
-            tmp4(id);
-          }
+    fn = function w(nativeEvent) {
+      const tmp = "viewProfile" === nativeEvent.nativeEvent.actionName && null !== onPressAvatar;
+      if (tmp) {
+        if (onPressAvatar != null) {
+          tmp4(id);
         }
       }
-    }
+    };
     str2 = tmp24Result2;
     tmp15 = tmp24Result;
     tmp19 = tmp29;

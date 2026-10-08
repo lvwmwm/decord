@@ -1,25 +1,27 @@
-// Module ID: 16801
-// Function ID: 16802
+// Module ID: 17081
+// Function ID: 17082
 // Name: useChannelAppFrameTeardown
-// Dependencies: [19, 2051, 4515, 9000, 8738, 1085, 558, 576, 504, 9076, 2]
+// Dependencies: [19, 2063, 4707, 10612, 10613, 1085, 558, 576, 504, 11149, 2]
 
-// Module 16801 (useChannelAppFrameTeardown)
+// Module 17081 (useChannelAppFrameTeardown)
 import Constants from "Constants" /* 1085 */;
-import FramesConstants from "FramesConstants" /* 8738 */;
-import getFramesManagerDefault from "getFramesManager" /* 9076 */;
+import FramesConstants from "FramesConstants" /* 10613 */;
+import getFramesManagerDefault from "getFramesManager" /* 11149 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import FramesStore from "FramesStore" /* 9000 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import FramesStore from "FramesStore" /* 10612 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, id;
+let _require;
 
 const getFrameSurfaceForChannel = FramesConstants.getFrameSurfaceForChannel;
 const Permissions = Constants.Permissions;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelAppFrameTeardown(id) {
+  let fn;
+  let items2;
   let stateFromStores;
   let tmp11;
   let tmp12;
@@ -54,33 +56,42 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     tmp8 = cResult[2];
   }
   if (cResult[3] !== id) {
-    const fn = function _() {
-      const channel = ChannelStore.getChannel(id);
-      const canResult = null != channel && PermissionStore.can(Permissions.VIEW_CHANNEL, channel);
-      return canResult;
-    };
+    class C {
+      constructor() {
+        const channel = ChannelStore.getChannel(id);
+        const canResult = null != channel && PermissionStore.can(Permissions.VIEW_CHANNEL, channel);
+        return canResult;
+      }
+    }
     const items1 = [id];
     cResult[3] = id;
-    cResult[4] = fn;
+    cResult[4] = C;
     cResult[5] = items1;
     tmp12 = items1;
-    tmp11 = fn;
+    tmp11 = C;
   } else {
-    tmp11 = cResult[4];
+    class C {
+      constructor() {
+        const channel = ChannelStore.getChannel(id);
+        const canResult = null != channel && PermissionStore.can(Permissions.VIEW_CHANNEL, channel);
+        return canResult;
+      }
+    }
     tmp12 = cResult[5];
   }
   const tmpResult = tmp(tmp2[8]);
   stateFromStores = tmpResult.useStateFromStores(tmp8, tmp11, tmp12);
   if (cResult[6] === stateFromStores) {
-    let tmp14;
-    let tmp15;
-    if (cResult[7] === tmp5) {
-      tmp14 = cResult[8];
-      tmp15 = cResult[9];
+    class C {
+      constructor() {
+        const channel = ChannelStore.getChannel(id);
+        const canResult = null != channel && PermissionStore.can(Permissions.VIEW_CHANNEL, channel);
+        return canResult;
+      }
     }
-    const effect = react.useEffect(tmp14, tmp15);
+    const effect = react.useEffect(fn, items2);
   }
-  const fn2 = function h() {
+  fn = function _() {
     if (null != closure_1) {
       const tmp2 = stateFromStores;
       if (!tmp2) {
@@ -93,14 +104,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
       }
     }
   };
-  const items2 = [tmp5, stateFromStores];
+  items2 = [tmp5, stateFromStores];
   cResult[6] = stateFromStores;
   cResult[7] = tmp5;
-  cResult[8] = fn2;
+  cResult[8] = fn;
   cResult[9] = items2;
-  tmp15 = items2;
-  tmp14 = fn2;
-}) : ((id) => {
+}) : (function useChannelAppFrameTeardown(id) {
   let stateFromStores;
   _require = id;
   id = undefined;

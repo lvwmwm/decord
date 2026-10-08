@@ -1,14 +1,14 @@
-// Module ID: 4551
-// Function ID: 4552
+// Module ID: 4743
+// Function ID: 4744
 // Name: BraintreeStore
-// Dependencies: [1085, 1369, 1282, 504, 584, 2]
+// Dependencies: [1085, 1381, 1294, 504, 584, 2]
 
-// Module 4551 (BraintreeStore)
+// Module 4743 (BraintreeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
 import Constants from "Constants" /* 1085 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import size from "module_2" /* 2 */;
 
 let state;
@@ -72,6 +72,10 @@ const obj2 = {
     if (paymentSourceType.paymentSourceType === metroRequire.PAYPAL) {
       if (tmp === state) {
         const _window = window;
+        let onComplete;
+        if (popupBridge != null) {
+          onComplete = popupBridge.onComplete;
+        }
         if (typeof onComplete === "function") {
           const obj = { path: tmp2, queryItems: tmp3 };
           onComplete(null, obj);

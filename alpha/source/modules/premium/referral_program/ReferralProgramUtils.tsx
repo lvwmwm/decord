@@ -1,19 +1,19 @@
-// Module ID: 7737
-// Function ID: 7738
+// Module ID: 8058
+// Function ID: 8059
 // Name: ReferralProgramUtils
-// Dependencies: [1231, 6974, 2048, 1102, 1126, 558, 4704, 2036, 11, 2037, 576, 7738, 504, 2]
+// Dependencies: [1243, 7163, 2060, 1102, 1126, 558, 4898, 2048, 11, 2049, 576, 8059, 504, 2]
 // Exports: getReferralTrialOfferExpirationCopy, isReferralProgramBadgeAcknowledged, markReferralIncentivePopoverSeen, markReferralProgramBadgeAcknowledged, markReferralProgramEntrypointBadgeAcknowledged, markReferralProgramPopoverSeen, useIsReferralProgramBadgeShowable, useIsReferralProgramEntrypointBadgeAcknowledged
 
-// Module 7737 (ReferralProgramUtils)
+// Module 8058 (ReferralProgramUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import intl4 from "intl" /* 1126 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2037 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4704 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 6974 */;
+import dismissible_content from "dismissible_content" /* 2048 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2049 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4898 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7163 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,11 +21,11 @@ const ContentDismissActionType = DismissibleContentConstants.ContentDismissActio
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-let fn = () => {
+function useIsReferralProgramEntrypointBadgeAcknowledged() {
   const obj = DismissibleContentUnsafeUtils;
   return obj.useIsDismissibleContentDismissed_UNSAFE(dismissible_content.DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_TAB_BADGE);
-};
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+}
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsReferralProgramPopoverShowable() {
   let stateFromStores1;
   let tmp10;
   let tmp5;
@@ -34,11 +34,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp = stateFromStores1;
   let obj = stateFromStores1(576);
   const cResult = obj.c(7);
-  const obj2 = stateFromStores1(7738);
+  const obj2 = stateFromStores1(8059);
   let isEligibleSenderForReferralProgram = obj2.useIsEligibleSenderForReferralProgram(false);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ReferralTrialStore];
-    const fn = function o() {
+    const fn = function t() {
       return ReferralTrialStore.getReferralsRemaining();
     };
     cResult[0] = items;
@@ -70,7 +70,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[4] = items2;
   }
   if (cResult[5] !== stateFromStores1) {
-    class E {
+    class P {
       constructor() {
         let isDismissed = null != stateFromStores1;
         if (isDismissed) {
@@ -81,9 +81,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     cResult[5] = stateFromStores1;
-    cResult[6] = E;
+    cResult[6] = P;
   } else {
-    class E {
+    class P {
       constructor() {
         let isDismissed = null != stateFromStores1;
         if (isDismissed) {
@@ -97,7 +97,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   tmp(504);
   let tmp17 = null != stateFromStores1;
   if (tmp17) {
-    class E {
+    class P {
       constructor() {
         let isDismissed = null != stateFromStores1;
         if (isDismissed) {
@@ -108,7 +108,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     if (isEligibleSenderForReferralProgram) {
-      class E {
+      class P {
         constructor() {
           let isDismissed = null != stateFromStores1;
           if (isDismissed) {
@@ -120,7 +120,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     if (isEligibleSenderForReferralProgram) {
-      class E {
+      class P {
         constructor() {
           let isDismissed = null != stateFromStores1;
           if (isDismissed) {
@@ -135,9 +135,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp17 = isEligibleSenderForReferralProgram;
   }
   return tmp17;
-}) : (() => {
+}) : (function useIsReferralProgramPopoverShowable() {
   let stateFromStores1;
-  let obj = stateFromStores1(7738);
+  let obj = stateFromStores1(8059);
   let isEligibleSenderForReferralProgram = obj.useIsEligibleSenderForReferralProgram(false);
   const items = [ReferralTrialStore];
   const obj2 = stateFromStores1(504);
@@ -199,7 +199,7 @@ export const getReferralTrialOfferExpirationCopy = function getReferralTrialOffe
   }
   return formatToPlainString3Result;
 };
-export const useIsReferralProgramEntrypointBadgeAcknowledged = fn;
+export { useIsReferralProgramEntrypointBadgeAcknowledged };
 export const markReferralProgramEntrypointBadgeAcknowledged = function markReferralProgramEntrypointBadgeAcknowledged() {
   const obj = DismissibleContentUnsafeUtils;
   const result = obj.UNSAFE_markDismissibleContentAsDismissed(dismissible_content.DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_TAB_BADGE);

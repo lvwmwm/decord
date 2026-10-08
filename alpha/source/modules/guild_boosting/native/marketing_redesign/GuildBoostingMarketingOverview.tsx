@@ -1,23 +1,23 @@
-// Module ID: 6897
-// Function ID: 6898
+// Module ID: 7086
+// Function ID: 7087
 // Name: GuildBoostingMarketingOverview
-// Dependencies: [32, 19, 17, 2074, 1377, 1085, 21, 4896, 558, 576, 6898, 504, 1490, 6664, 5991, 6908, 1385, 1252, 584, 6770, 5411, 6916, 13400, 13407, 13412, 13422, 13427, 13431, 2]
+// Dependencies: [32, 19, 17, 2086, 1389, 1085, 21, 5090, 558, 576, 7087, 504, 1502, 6841, 6174, 7097, 1397, 1264, 584, 6946, 5720, 7105, 13700, 13707, 13712, 13722, 13727, 13731, 2]
 
-// Module 6897 (GuildBoostingMarketingOverview)
+// Module 7086 (GuildBoostingMarketingOverview)
 import react_native from "react-native" /* 17 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 6916 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 7105 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore_mod from "GuildStore" /* 2074 */;
-import UserStore from "UserStore" /* 1377 */;
+import GuildStore_mod from "GuildStore" /* 2086 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let constants, guildId, navigation;
+let constants, navigation;
 
 let c10;
 let c9;
@@ -29,7 +29,7 @@ let GuildStore = GuildStore_mod;
 ({ AnalyticEvents: metroImportAll, AnalyticsPages: c9 } = Constants);
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
 let closure_13 = createStyles.createStyles({ wrapper: { paddingBottom: 24 } });
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostingMarketingOverview(guildId) {
   let closure_6;
   let first1;
   let stateFromStores;
@@ -194,7 +194,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[8] = guildBoostSlots;
   cResult[9] = navigation;
   cResult[10] = fn2;
-}) : ((guildId) => {
+}) : (function GuildBoostingMarketingOverview(guildId) {
   let UNSPECIFIED;
   let currentUser;
   let first;

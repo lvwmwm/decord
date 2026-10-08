@@ -1,28 +1,28 @@
-// Module ID: 13684
-// Function ID: 13685
+// Module ID: 13906
+// Function ID: 13907
 // Name: AddFriendById
-// Dependencies: [32, 19, 17, 1085, 21, 4896, 587, 1126, 558, 576, 4892, 6107, 13685, 9451, 9447, 4573, 1252, 4596, 6587, 5601, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5090, 587, 1126, 558, 576, 5086, 6287, 13907, 7008, 7004, 4765, 1264, 4788, 6763, 5375, 2]
 
-// Module 13684 (AddFriendById)
+// Module 13906 (AddFriendById)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ToastUtils from "ToastUtils" /* 4573 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4596 */;
-import TextField2 from "TextField" /* 6107 */;
-import FriendsUtils from "FriendsUtils" /* 9451 */;
-import FriendRequestMessageExperimentDefault from "FriendRequestMessageExperiment" /* 13685 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import ToastUtils from "ToastUtils" /* 4765 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4788 */;
+import TextField2 from "TextField" /* 6287 */;
+import FriendsUtils from "FriendsUtils" /* 7008 */;
+import FriendRequestMessageExperimentDefault from "FriendRequestMessageExperiment" /* 13907 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, errorMessage, importDefault;
+let dependencyMap, importDefault;
 
 let c10;
 let c9;
@@ -41,7 +41,7 @@ let obj8;
 let obj9;
 let tmp;
 let unpackModuleId;
-const Text_Text = tmp(4892);
+const Text_Text = tmp(5086);
 let react = react_mod;
 ({ View: hasOwnProperty, Keyboard: metroRequire } = react_native);
 ({ PLACEHOLDER_TAG: metroImportDefault, AnalyticEvents: metroImportAll } = Constants);
@@ -62,7 +62,7 @@ let closure_12 = createStyles(obj);
 const constants = { SUCCESS: 0, [0]: "SUCCESS", ERROR: 1, [1]: "ERROR", LOADING: 2, [2]: "LOADING", NONE: 3, [3]: "NONE" };
 const constants2 = { DISCORD_TAG: "DISCORD_TAG", MESSAGE: "MESSAGE" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((errorMessage) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ErrorMessage(errorMessage) {
   const obj = react2;
   const cResult = obj.c(6);
   errorMessage = errorMessage.errorMessage;
@@ -92,7 +92,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((errorMessage) 
   cResult[1] = tmp4.inputAccessoryText;
   cResult[2] = items;
   tmp5 = items;
-}) : ((errorMessage) => {
+}) : (function ErrorMessage(errorMessage) {
   let items;
   errorMessage = errorMessage.errorMessage;
   const obj = { variant: "text-xs/medium", color: "text-feedback-critical", style: items, children: errorMessage };
@@ -101,10 +101,11 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((errorMessage) 
   closure_12();
   return React4(Text_Text.Text, obj);
 });
-let closure_16 = react.forwardRef((headerTextStyle, ref) => {
+function AddFriendByIdInput(arg0) {
   let a11yMessage;
   let autoFocus;
   let headerText;
+  let headerTextStyle;
   let intl2;
   let intl3;
   let items;
@@ -114,17 +115,18 @@ let closure_16 = react.forwardRef((headerTextStyle, ref) => {
   let onKeyPress;
   let onSelectionChange;
   let onSubmitEditing;
+  let ref;
   let str2;
   let textState;
   let validationState;
-  ({ validationState, headerText } = headerTextStyle);
-  ({ textState, onChangeText, onSelectionChange, onKeyPress, onSubmitEditing, onFocus, autoFocus } = headerTextStyle);
+  ({ validationState, headerText } = arg0);
+  ({ textState, onChangeText, onSelectionChange, onKeyPress, onSubmitEditing, onFocus, autoFocus } = arg0);
   if (headerText === undefined) {
     const intl = intl4.intl;
     const str = intl.string(intl4.t.YegTF2);
     headerText = str.toUpperCase();
   }
-  headerTextStyle = headerTextStyle.headerTextStyle;
+  ({ headerTextStyle, ref } = arg0);
   const tmp3 = closure_12();
   let message;
   const tmp4 = constants;
@@ -161,10 +163,9 @@ let closure_16 = react.forwardRef((headerTextStyle, ref) => {
   }
   items1[2] = tmp9Result;
   return tmp7(tmp8, obj);
-});
-const forwardRef = react.forwardRef;
+}
 ReactCompilerGating = ReactCompilerGating_mod;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
   let autoFocusInput;
   let closure_2;
   let closure_4;
@@ -172,25 +173,30 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let first1;
   let headerText;
   let headerTextStyle;
+  let intl;
+  let intl2;
+  let items2;
+  let items3;
+  let items4;
   let onFocus;
   let sourcePage;
-  let str;
   let style;
-  let tmp14;
   let tmp15;
   let tmp16;
-  let tmp21;
-  let tmp8;
-  let tmp = dependencyMap;
+  let tmp35Result;
+  let tmp9;
+  let tmp = sourcePage;
+  let tmp2 = dependencyMap;
   let obj = sourcePage(576);
   const cResult = obj.c(65);
-  ({ style, onFocus, autoFocusInput, headerText, headerTextStyle, sourcePage } = arg0);
-  let tmp3 = closure_12();
+  ({ style, onFocus, autoFocusInput, headerText, headerTextStyle, sourcePage } = ref);
+  ref = ref.ref;
+  const tmp4 = closure_12();
   let obj2 = react;
   importDefault = react.useRef(0);
   dependencyMap = react.useRef("");
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function c() {
+    const fn = function u() {
       let intl;
       const obj = { validatedText: "", hint: intl.string(sourcePage(closure_2[7]).t["6p7Mhh"]) };
       intl = sourcePage(closure_2[7]).intl;
@@ -201,65 +207,56 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   } else {
     first = cResult[0];
   }
-  const tmp5 = first1;
-  const tmp6 = first1(obj2.useState(first), 2);
-  first1 = tmp6[0];
-  react = tmp6[1];
+  const tmp6 = first1;
+  const tmp7 = first1(obj2.useState(first), 2);
+  first1 = tmp7[0];
+  react = tmp7[1];
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     let obj3 = { status: constants.NONE };
-    let tmp9 = constants;
     let num = 1;
     cResult[1] = obj3;
-    tmp8 = obj3;
+    tmp9 = obj3;
   } else {
-    tmp8 = cResult[1];
+    tmp9 = cResult[1];
   }
-  const tmp5Result = tmp5(obj2.useState(tmp8), 2);
-  const first2 = tmp5Result[0];
-  let closure_6 = tmp5Result[1];
-  const tmp5Result2 = tmp5(obj2.useState(""), 2);
-  const first3 = tmp5Result2[0];
-  let closure_8 = tmp5Result2[1];
+  const tmp6Result = tmp6(obj2.useState(tmp9), 2);
+  const first2 = tmp6Result[0];
+  let closure_6 = tmp6Result[1];
+  const tmp6Result2 = tmp6(obj2.useState(""), 2);
+  const first3 = tmp6Result2[0];
+  let closure_8 = tmp6Result2[1];
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     let obj4 = { location: "AddFriendbyId" };
     cResult[2] = obj4;
-    tmp14 = obj4;
+    tmp15 = obj4;
   } else {
-    tmp14 = cResult[2];
+    tmp15 = cResult[2];
   }
   let obj5 = FriendRequestMessageExperimentDefault;
-  const enabled = obj5.useConfig(tmp14).enabled;
+  const enabled = obj5.useConfig(tmp15).enabled;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class V {
-      constructor(nativeEvent) {
-        closure_2.current = nativeEvent.nativeEvent.key;
-      }
+    function handleOnKeyPress(nativeEvent) {
+      closure_2.current = nativeEvent.nativeEvent.key;
     }
     let num2 = 3;
-    cResult[3] = V;
-    tmp15 = V;
+    cResult[3] = handleOnKeyPress;
+    tmp16 = handleOnKeyPress;
   } else {
-    class V {
-      constructor(nativeEvent) {
-        closure_2.current = nativeEvent.nativeEvent.key;
-      }
-    }
+    tmp16 = cResult[3];
   }
   if (cResult[4] === first2.field) {
-    class V {
-      constructor(nativeEvent) {
-        closure_2.current = nativeEvent.nativeEvent.key;
-      }
+    let tmp17;
+    if (cResult[5] === first2.status) {
+      tmp17 = cResult[6];
     }
     if (cResult[7] === first2.field) {
-      let tmp19;
-      class V {
-        constructor(nativeEvent) {
-          closure_2.current = nativeEvent.nativeEvent.key;
-        }
+      let tmp18;
+      let tmp20;
+      if (cResult[8] === first2.status) {
+        tmp18 = cResult[9];
       }
       const _Symbol = Symbol;
-      class J {
+      class Q {
         constructor(str) {
           closure_8(str.replace(/\n/g, ""));
           let tmp3 = first2.status === constants.ERROR;
@@ -273,13 +270,14 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           }
         }
       }
-      if (tmp18 === Symbol.for("react.memo_cache_sentinel")) {
-        class V {
-          constructor(nativeEvent) {
-            closure_2.current = nativeEvent.nativeEvent.key;
+      if (tmp19 === Symbol.for("react.memo_cache_sentinel")) {
+        function handleSelectionChange(nativeEvent) {
+          const start = nativeEvent.nativeEvent.selection.start;
+          if (start !== ref.current) {
+            ref.current = start;
           }
         }
-        class J {
+        class Q {
           constructor(str) {
             closure_8(str.replace(/\n/g, ""));
             let tmp3 = first2.status === constants.ERROR;
@@ -293,28 +291,23 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
             }
           }
         }
-        tmp19 = tmp20;
+        tmp20 = handleSelectionChange;
       } else {
-        class V {
-          constructor(nativeEvent) {
-            closure_2.current = nativeEvent.nativeEvent.key;
-          }
-        }
+        tmp20 = cResult[10];
       }
       if (cResult[11] === first3) {
-        class V {
-          constructor(nativeEvent) {
-            closure_2.current = nativeEvent.nativeEvent.key;
-          }
+        let tmp21;
+        if (cResult[12] === first1.validatedText) {
+          tmp21 = cResult[13];
         }
         if (cResult[14] !== sourcePage) {
-          class V {
-            constructor(nativeEvent) {
-              closure_2.current = nativeEvent.nativeEvent.key;
-            }
+          function se() {
+            const obj = AnalyticsUtilsDefault;
+            const obj2 = { friend_add_type: "Id", source_page: sourcePage };
+            obj.track(metroImportAll.FRIEND_ADD_VIEWED, obj2);
           }
           const items = [];
-          class J {
+          class Q {
             constructor(str) {
               closure_8(str.replace(/\n/g, ""));
               let tmp3 = first2.status === constants.ERROR;
@@ -330,16 +323,12 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           }
           cResult[14] = sourcePage;
           cResult[15] = items;
-          cResult[16] = tmp24;
+          cResult[16] = se;
           let tmp22 = items;
         } else {
-          class V {
-            constructor(nativeEvent) {
-              closure_2.current = nativeEvent.nativeEvent.key;
-            }
-          }
+          tmp22 = cResult[15];
         }
-        class J {
+        class Q {
           constructor(str) {
             closure_8(str.replace(/\n/g, ""));
             let tmp3 = first2.status === constants.ERROR;
@@ -354,19 +343,9 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           }
         }
         if (cResult[17] === first2.a11yMessage) {
-          class V {
-            constructor(nativeEvent) {
-              closure_2.current = nativeEvent.nativeEvent.key;
-            }
-          }
           if (cResult[20] !== first2) {
-            class V {
-              constructor(nativeEvent) {
-                closure_2.current = nativeEvent.nativeEvent.key;
-              }
-            }
-            tmp27[0] = first2;
-            class J {
+            const items1 = [first2];
+            class Q {
               constructor(str) {
                 closure_8(str.replace(/\n/g, ""));
                 let tmp3 = first2.status === constants.ERROR;
@@ -381,15 +360,9 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
               }
             }
             cResult[20] = first2;
-            cResult[21] = tmp27;
-          } else {
-            class V {
-              constructor(nativeEvent) {
-                closure_2.current = nativeEvent.nativeEvent.key;
-              }
-            }
+            cResult[21] = items1;
           }
-          class J {
+          class Q {
             constructor(str) {
               closure_8(str.replace(/\n/g, ""));
               let tmp3 = first2.status === constants.ERROR;
@@ -404,13 +377,9 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
             }
           }
           if (cResult[22] !== first1.validatedText) {
-            class V {
-              constructor(nativeEvent) {
-                closure_2.current = nativeEvent.nativeEvent.key;
-              }
-            }
+            let str = first1.validatedText;
             let trimmed = str.trim();
-            class J {
+            class Q {
               constructor(str) {
                 closure_8(str.replace(/\n/g, ""));
                 let tmp3 = first2.status === constants.ERROR;
@@ -426,20 +395,310 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
             }
             cResult[22] = first1.validatedText;
             cResult[23] = trimmed;
-          } else {
-            class V {
-              constructor(nativeEvent) {
-                closure_2.current = nativeEvent.nativeEvent.key;
-              }
-            }
           }
           if (cResult[24] === style) {
-            class V {
-              constructor(nativeEvent) {
-                closure_2.current = nativeEvent.nativeEvent.key;
+            let tmp29;
+            if (cResult[25] === tmp4.container) {
+              tmp29 = cResult[26];
+            }
+            if (cResult[27] === autoFocusInput) {
+              if (cResult[28] === tmp17) {
+                if (cResult[29] === tmp21) {
+                  if (cResult[30] === headerText) {
+                    if (cResult[31] === headerTextStyle) {
+                      if (cResult[32] === onFocus) {
+                        if (cResult[33] === ref) {
+                          if (cResult[34] === first1) {
+                            let tmp30;
+                            if (cResult[35] === first2) {
+                              tmp30 = cResult[36];
+                            }
+                            if (cResult[37] === first3) {
+                              if (cResult[38] === enabled) {
+                                if (cResult[39] === tmp18) {
+                                  if (cResult[40] === tmp21) {
+                                    if (cResult[41] === headerTextStyle) {
+                                      if (cResult[42] === tmp4.friendMessageContainer) {
+                                        if (cResult[43] === tmp4.inputHeaderText) {
+                                          if (cResult[44] === tmp4.messageFooterText) {
+                                            if (cResult[45] === tmp4.messageLabel) {
+                                              if (cResult[46] === first2.field) {
+                                                if (cResult[47] === first2.message) {
+                                                  let tmp33;
+                                                  if (cResult[48] === first2.status) {
+                                                    tmp33 = cResult[49];
+                                                  }
+                                                  if (cResult[50] === tmp29) {
+                                                    if (cResult[51] === tmp30) {
+                                                      let tmp44;
+                                                      let tmp47;
+                                                      let tmp52;
+                                                      if (cResult[52] === tmp33) {
+                                                        tmp44 = cResult[53];
+                                                      }
+                                                      if (cResult[54] !== tmp4.redesignGrow) {
+                                                        class Q {
+                                                          constructor(str) {
+                                                            closure_8(str.replace(/\n/g, ""));
+                                                            let tmp3 = first2.status === constants.ERROR;
+                                                            const tmp2 = constants;
+                                                            if (tmp3) {
+                                                              tmp3 = first2.field === constants2.MESSAGE;
+                                                            }
+                                                            if (tmp3) {
+                                                              const obj = { status: tmp2.NONE };
+                                                              closure_6(obj);
+                                                            }
+                                                          }
+                                                        }
+                                                        tmp50[0] = tmp4.redesignGrow;
+                                                        const tmp51 = closure_9(first2, tmp50);
+                                                        cResult[54] = tmp4.redesignGrow;
+                                                        cResult[55] = tmp51;
+                                                        tmp47 = tmp51;
+                                                      } else {
+                                                        tmp47 = cResult[55];
+                                                      }
+                                                      class Q {
+                                                        constructor(str) {
+                                                          closure_8(str.replace(/\n/g, ""));
+                                                          let tmp3 = first2.status === constants.ERROR;
+                                                          const tmp2 = constants;
+                                                          if (tmp3) {
+                                                            tmp3 = first2.field === constants2.MESSAGE;
+                                                          }
+                                                          if (tmp3) {
+                                                            const obj = { status: tmp2.NONE };
+                                                            closure_6(obj);
+                                                          }
+                                                        }
+                                                      }
+                                                      if (cResult[56] === Symbol.for("react.memo_cache_sentinel")) {
+                                                        const string = tmp(1126).intl.string;
+                                                        class Q {
+                                                          constructor(str) {
+                                                            closure_8(str.replace(/\n/g, ""));
+                                                            let tmp3 = first2.status === constants.ERROR;
+                                                            const tmp2 = constants;
+                                                            if (tmp3) {
+                                                              tmp3 = first2.field === constants2.MESSAGE;
+                                                            }
+                                                            if (tmp3) {
+                                                              const obj = { status: tmp2.NONE };
+                                                              closure_6(obj);
+                                                            }
+                                                          }
+                                                        }
+                                                        cResult[56] = tmp53;
+                                                        tmp52 = tmp53;
+                                                      } else {
+                                                        tmp52 = cResult[56];
+                                                      }
+                                                      if (cResult[57] === tmp21) {
+                                                        if (cResult[58] === tmp28 <= 0) {
+                                                          let tmp57;
+                                                          if (cResult[59] === first2.status === constants.LOADING) {
+                                                            tmp57 = cResult[60];
+                                                          }
+                                                          if (cResult[61] === tmp44) {
+                                                            if (cResult[62] === tmp47) {
+                                                              let tmp60;
+                                                              if (cResult[63] === tmp57) {
+                                                                tmp60 = cResult[64];
+                                                              }
+                                                              return tmp60;
+                                                            }
+                                                          }
+                                                          class Q {
+                                                            constructor(str) {
+                                                              closure_8(str.replace(/\n/g, ""));
+                                                              let tmp3 = first2.status === constants.ERROR;
+                                                              const tmp2 = constants;
+                                                              if (tmp3) {
+                                                                tmp3 = first2.field === constants2.MESSAGE;
+                                                              }
+                                                              if (tmp3) {
+                                                                const obj = { status: tmp2.NONE };
+                                                                closure_6(obj);
+                                                              }
+                                                            }
+                                                          }
+                                                          const obj6 = { children: items2 };
+                                                          items2 = [tmp44, tmp47, tmp57];
+                                                          const tmp62 = closure_10(closure_11, obj6);
+                                                          cResult[61] = tmp44;
+                                                          cResult[62] = tmp47;
+                                                          cResult[63] = tmp57;
+                                                          cResult[64] = tmp62;
+                                                          tmp60 = tmp62;
+                                                        }
+                                                      }
+                                                      const obj7 = { size: "lg", text: tmp52, disabled: tmp28 <= 0, onPress: tmp21, loading: first2.status === constants.LOADING, grow: false };
+                                                      const tmp59 = closure_9(tmp(5375).Button, obj7);
+                                                      cResult[57] = tmp21;
+                                                      cResult[58] = tmp28 <= 0;
+                                                      cResult[59] = first2.status === constants.LOADING;
+                                                      cResult[60] = tmp59;
+                                                      tmp57 = tmp59;
+                                                    }
+                                                  }
+                                                  class Q {
+                                                    constructor(str) {
+                                                      closure_8(str.replace(/\n/g, ""));
+                                                      let tmp3 = first2.status === constants.ERROR;
+                                                      const tmp2 = constants;
+                                                      if (tmp3) {
+                                                        tmp3 = first2.field === constants2.MESSAGE;
+                                                      }
+                                                      if (tmp3) {
+                                                        const obj = { status: tmp2.NONE };
+                                                        closure_6(obj);
+                                                      }
+                                                    }
+                                                  }
+                                                  const obj8 = { style: tmp29, children: items3 };
+                                                  items3 = [tmp30, tmp33];
+                                                  const tmp46 = closure_10(first2, obj8);
+                                                  cResult[50] = tmp29;
+                                                  cResult[51] = tmp30;
+                                                  cResult[52] = tmp33;
+                                                  cResult[53] = tmp46;
+                                                  tmp44 = tmp46;
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            class Q {
+                              constructor(str) {
+                                closure_8(str.replace(/\n/g, ""));
+                                let tmp3 = first2.status === constants.ERROR;
+                                const tmp2 = constants;
+                                if (tmp3) {
+                                  tmp3 = first2.field === constants2.MESSAGE;
+                                }
+                                if (tmp3) {
+                                  const obj = { status: tmp2.NONE };
+                                  closure_6(obj);
+                                }
+                              }
+                            }
+                            if (tmp35Result) {
+                              const obj9 = { style: tmp4.friendMessageContainer, children: null };
+                              class Q {
+                                constructor(str) {
+                                  closure_8(str.replace(/\n/g, ""));
+                                  let tmp3 = first2.status === constants.ERROR;
+                                  const tmp2 = constants;
+                                  if (tmp3) {
+                                    tmp3 = first2.field === constants2.MESSAGE;
+                                  }
+                                  if (tmp3) {
+                                    const obj = { status: tmp2.NONE };
+                                    closure_6(obj);
+                                  }
+                                }
+                              }
+                              const obj10 = { style: items4, variant: "text-sm/semibold", color: "text-muted", children: intl.string(tmp(1126).t.Yi6Mpu) };
+                              items4 = [, , ];
+                              ({ messageLabel: arr4[0], inputHeaderText: arr4[1] } = tmp4);
+                              items4[2] = headerTextStyle;
+                              const Text = tmp(5086).Text;
+                              intl = tmp(1126).intl;
+                              const items5 = [closure_9(Text, obj10), , ];
+                              const obj11 = { returnKeyType: "done", submitBehavior: "submit", value: first3, maxLength: 120, onSubmitEditing: tmp21, onChange: tmp18, status: undefined };
+                              const TextArea = tmp(6763).TextArea;
+                              const tmp35 = closure_10;
+                              const tmp36 = first2;
+                              const tmp38 = constants2;
+                              if (first2.field === constants2.MESSAGE) {
+                                class Q {
+                                  constructor(str) {
+                                    closure_8(str.replace(/\n/g, ""));
+                                    let tmp3 = first2.status === constants.ERROR;
+                                    const tmp2 = constants;
+                                    if (tmp3) {
+                                      tmp3 = first2.field === constants2.MESSAGE;
+                                    }
+                                    if (tmp3) {
+                                      const obj = { status: tmp2.NONE };
+                                      closure_6(obj);
+                                    }
+                                  }
+                                }
+                              }
+                              items5[1] = tmp37(TextArea, obj11);
+                              if (first2.status === constants.ERROR) {
+                                let tmp37Result;
+                                if (first2.field === tmp38.MESSAGE) {
+                                  const obj12 = { errorMessage: null };
+                                  class Q {
+                                    constructor(str) {
+                                      closure_8(str.replace(/\n/g, ""));
+                                      let tmp3 = first2.status === constants.ERROR;
+                                      const tmp2 = constants;
+                                      if (tmp3) {
+                                        tmp3 = first2.field === constants2.MESSAGE;
+                                      }
+                                      if (tmp3) {
+                                        const obj = { status: tmp2.NONE };
+                                        closure_6(obj);
+                                      }
+                                    }
+                                  }
+                                  tmp37Result = tmp37(closure_15, obj12);
+                                }
+                                items5[2] = tmp37Result;
+                                class Q {
+                                  constructor(str) {
+                                    closure_8(str.replace(/\n/g, ""));
+                                    let tmp3 = first2.status === constants.ERROR;
+                                    const tmp2 = constants;
+                                    if (tmp3) {
+                                      tmp3 = first2.field === constants2.MESSAGE;
+                                    }
+                                    if (tmp3) {
+                                      const obj = { status: tmp2.NONE };
+                                      closure_6(obj);
+                                    }
+                                  }
+                                }
+                                tmp35Result = tmp35(tmp36, obj9);
+                              }
+                              const obj13 = { style: tmp4.messageFooterText, variant: "text-xs/medium", color: "text-muted", children: intl2.string(tmp(1126).t.UtfQNw) };
+                              const Text2 = tmp(5086).Text;
+                              intl2 = tmp(1126).intl;
+                              tmp37Result = tmp37(Text2, obj13);
+                            }
+                            cResult[37] = first3;
+                            cResult[38] = enabled;
+                            cResult[39] = tmp18;
+                            cResult[40] = tmp21;
+                            cResult[41] = headerTextStyle;
+                            cResult[42] = tmp4.friendMessageContainer;
+                            cResult[43] = tmp4.inputHeaderText;
+                            cResult[44] = tmp4.messageFooterText;
+                            cResult[45] = tmp4.messageLabel;
+                            cResult[46] = first2.field;
+                            cResult[47] = first2.message;
+                            cResult[48] = first2.status;
+                            cResult[49] = tmp35Result;
+                            tmp33 = tmp35Result;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
               }
             }
-            class J {
+            class Q {
               constructor(str) {
                 closure_8(str.replace(/\n/g, ""));
                 let tmp3 = first2.status === constants.ERROR;
@@ -453,9 +712,10 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
                 }
               }
             }
-            const obj6 = { textState: first1, onChangeText: tmp16, onSelectionChange: tmp19, onKeyPress: tmp15, onSubmitEditing: tmp21, onFocus, validationState: first2, autoFocus: autoFocusInput, headerText, headerTextStyle, ref };
+            const obj14 = { textState: first1, onChangeText: tmp17, onSelectionChange: tmp20, onKeyPress: tmp16, onSubmitEditing: tmp21, onFocus, validationState: first2, autoFocus: autoFocusInput, headerText, headerTextStyle, ref };
+            const tmp32 = closure_9(AddFriendByIdInput, obj14);
             cResult[27] = autoFocusInput;
-            cResult[28] = tmp16;
+            cResult[28] = tmp17;
             cResult[29] = tmp21;
             cResult[30] = headerText;
             cResult[31] = headerTextStyle;
@@ -463,15 +723,16 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
             cResult[33] = ref;
             cResult[34] = first1;
             cResult[35] = first2;
-            cResult[36] = closure_9(closure_16, obj6);
-            const tmp35 = closure_9(closure_16, obj6);
+            cResult[36] = tmp32;
+            tmp30 = tmp32;
           }
-          const items1 = [tmp3.container, style];
+          const items6 = [tmp4.container, style];
           cResult[24] = style;
-          cResult[25] = tmp3.container;
-          cResult[26] = items1;
+          cResult[25] = tmp4.container;
+          cResult[26] = items6;
+          tmp29 = items6;
         }
-        function re() {
+        function ne() {
           const tmp2 = first2.status === constants.ERROR && null != tmp.a11yMessage;
           if (tmp2) {
             const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
@@ -480,9 +741,9 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
         }
         cResult[17] = first2.a11yMessage;
         cResult[18] = first2.status;
-        cResult[19] = re;
+        cResult[19] = ne;
       }
-      function te() {
+      function handleSubmitEditing() {
         let intl;
         let tmp9;
         const str = first1.validatedText;
@@ -590,10 +851,10 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       }
       cResult[11] = first3;
       cResult[12] = first1.validatedText;
-      cResult[13] = te;
-      tmp21 = te;
+      cResult[13] = handleSubmitEditing;
+      tmp21 = handleSubmitEditing;
     }
-    class J {
+    class Q {
       constructor(str) {
         closure_8(str.replace(/\n/g, ""));
         let tmp3 = first2.status === constants.ERROR;
@@ -609,45 +870,48 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     }
     cResult[7] = first2.field;
     cResult[8] = first2.status;
-    cResult[9] = J;
+    cResult[9] = Q;
+    tmp18 = Q;
   }
-  const fn2 = function j(validatedText) {
-    let intl;
-    let obj;
-    const tmp = closure_4;
-    if (validatedText.length <= 0) {
-      const obj2 = { validatedText: "", hint: intl.string(intl4.t["6p7Mhh"]) };
-      intl = intl4.intl;
-      obj = obj2;
-    } else {
-      const arr = _slicedToArray(validatedText.split("#"), 2)[1];
-      let str2 = "";
-      if (null != arr) {
-        let num2 = 0;
-        const slice = metroImportDefault.slice;
+  class Y {
+    constructor(validatedText) {
+      let intl;
+      let obj;
+      const tmp = closure_4;
+      if (validatedText.length <= 0) {
+        const obj2 = { validatedText: "", hint: intl.string(intl4.t["6p7Mhh"]) };
+        intl = intl4.intl;
+        obj = obj2;
+      } else {
+        const arr = _slicedToArray(validatedText.split("#"), 2)[1];
+        let str2 = "";
         if (null != arr) {
-          num2 = arr.length + 1;
+          let num2 = 0;
+          const slice = metroImportDefault.slice;
+          if (null != arr) {
+            num2 = arr.length + 1;
+          }
+          str2 = validatedText + slice(num2);
         }
-        str2 = validatedText + slice(num2);
+        obj = { validatedText, hint: str2 };
       }
-      obj = { validatedText, hint: str2 };
+      tmp(obj);
+      let tmp9 = first2.status === constants.ERROR;
+      const tmp8 = constants;
+      if (tmp9) {
+        tmp9 = first2.field === constants2.DISCORD_TAG;
+      }
+      if (tmp9) {
+        const obj3 = { status: tmp8.NONE };
+        closure_6(obj3);
+      }
     }
-    tmp(obj);
-    let tmp9 = first2.status === constants.ERROR;
-    const tmp8 = constants;
-    if (tmp9) {
-      tmp9 = first2.field === constants2.DISCORD_TAG;
-    }
-    if (tmp9) {
-      const obj3 = { status: tmp8.NONE };
-      closure_6(obj3);
-    }
-  };
+  }
   cResult[4] = first2.field;
   cResult[5] = first2.status;
-  cResult[6] = fn2;
-  tmp16 = fn2;
-}) : ((arg0, ref) => {
+  cResult[6] = Y;
+  tmp17 = Y;
+}) : ((arg0) => {
   let autoFocusInput;
   let closure_2;
   let closure_4;
@@ -661,6 +925,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let items6;
   let items8;
   let onFocus;
+  let ref;
   let sourcePage;
   let str2;
   let style;
@@ -773,7 +1038,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       }
     }
   }
-  ({ style, onFocus, autoFocusInput, headerText } = arg0);
+  ({ style, onFocus, autoFocusInput, headerText, ref } = arg0);
   let tmp = closure_12();
   importDefault = react.useRef(0);
   dependencyMap = react.useRef("");
@@ -864,13 +1129,13 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let obj4 = {
     textState,
     onChangeText: callback,
-    onSelectionChange(nativeEvent) {
+    onSelectionChange: function handleSelectionChange(nativeEvent) {
       const start = nativeEvent.nativeEvent.selection.start;
       if (start !== ref.current) {
         ref.current = start;
       }
     },
-    onKeyPress(nativeEvent) {
+    onKeyPress: function handleOnKeyPress(nativeEvent) {
       closure_2.current = nativeEvent.nativeEvent.key;
     },
     onSubmitEditing: handleSubmitEditing,
@@ -884,7 +1149,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   const tmp15 = closure_11;
   items5 = [, ];
   const length = str.trim().length;
-  items5[0] = closure_9(closure_16, obj4);
+  items5[0] = closure_9(AddFriendByIdInput, obj4);
   if (enabled) {
     let obj5 = { style: tmp.friendMessageContainer, children: null };
     const tmp18 = sourcePage;
@@ -892,12 +1157,12 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     items6 = [, , ];
     ({ messageLabel: arr7[0], inputHeaderText: arr7[1] } = tmp);
     items6[2] = headerTextStyle;
-    const Text = sourcePage(4892).Text;
+    const Text = sourcePage(5086).Text;
     intl = sourcePage(1126).intl;
     const items7 = [tmp17(Text, obj6), , ];
     const obj7 = { returnKeyType: "done", submitBehavior: "submit", value: first2, maxLength: 120, onSubmitEditing: handleSubmitEditing, onChange: callback1, status: str2 };
     str2 = undefined;
-    const TextArea = sourcePage(6587).TextArea;
+    const TextArea = sourcePage(6763).TextArea;
     const tmp19 = constants2;
     if (first1.field === constants2.MESSAGE) {
       if (first1.status === tmp4.ERROR) {
@@ -916,7 +1181,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       enabled = tmp14(tmp16, obj5);
     }
     const obj9 = { style: tmp.messageFooterText, variant: "text-xs/medium", color: "text-muted", children: intl2.string(tmp18(1126).t.UtfQNw) };
-    const Text2 = tmp18(4892).Text;
+    const Text2 = tmp18(5086).Text;
     intl2 = tmp18(1126).intl;
     tmp17Result = tmp17(Text2, obj9);
   }
@@ -926,11 +1191,11 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   const obj11 = { style: tmp.redesignGrow };
   items8[1] = closure_9(tmp16, obj11);
   const obj12 = { size: "lg", text: intl3.string(sourcePage(1126).t["PMsq/b"]), disabled: length <= 0, onPress: handleSubmitEditing, loading: first1.status === tmp4.LOADING, grow: false };
-  const Button = sourcePage(5601).Button;
+  const Button = sourcePage(5375).Button;
   intl3 = sourcePage(1126).intl;
   items8[2] = closure_9(Button, obj12);
   return tmp14(tmp15, obj10);
-}));
+});
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/AddFriendById.tsx");
 
-export default forwardRefResult;
+export default tmp6;

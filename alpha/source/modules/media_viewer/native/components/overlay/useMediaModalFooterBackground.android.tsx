@@ -1,18 +1,18 @@
-// Module ID: 12788
-// Function ID: 12789
+// Module ID: 12935
+// Function ID: 12936
 // Name: useMediaModalFooterBackground
-// Dependencies: [32, 558, 576, 683, 4586, 587, 2]
+// Dependencies: [32, 558, 576, 683, 4778, 587, 2]
 
-// Module 12788 (useMediaModalFooterBackground)
+// Module 12935 (useMediaModalFooterBackground)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
-import useToken from "useToken" /* 4586 */;
+import useToken from "useToken" /* 4778 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaModalFooterBackground() {
   let tmp4;
   let tmp5;
   let tmp6;
@@ -42,7 +42,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = tmp4;
   cResult[4] = obj3;
   tmp8 = obj3;
-}) : (() => {
+}) : (function useMediaModalFooterBackground() {
   const tmp = _modDef683;
   const obj = useToken;
   const tmpResult = tmp(obj.useToken(nativeDefault.colors.THEME_LOCKED_BLUR_FALLBACK));

@@ -1,15 +1,15 @@
-// Module ID: 16304
-// Function ID: 16305
+// Module ID: 16564
+// Function ID: 16565
 // Name: MentionSubtitle
-// Dependencies: [19, 17, 21, 558, 576, 16305, 5819, 5871, 1126, 4892, 2]
+// Dependencies: [19, 17, 21, 558, 576, 16565, 8134, 8183, 1126, 5086, 2]
 
-// Module 16304 (MentionSubtitle)
+// Module 16564 (MentionSubtitle)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5819 */;
-import useSubtitleStyles from "useSubtitleStyles" /* 16305 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8134 */;
+import useSubtitleStyles from "useSubtitleStyles" /* 16565 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -19,7 +19,7 @@ let c3;
 let closure_4;
 const View = react_native.View;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MentionSubtitle(arg0) {
   let channel;
   let channelName;
   let count;
@@ -103,13 +103,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     channelIconComponentWithGuild = tmpResult.getChannelIconComponentWithGuild(channel, guild);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(5871).TextIcon;
+    channelIconComponentWithGuild = tmp(8183).TextIcon;
   }
   cResult[0] = channel;
   cResult[1] = guild;
   cResult[2] = channelIconComponentWithGuild;
   tmp5 = channelIconComponentWithGuild;
-}) : ((channel) => {
+}) : (function MentionSubtitle(channel) {
   let channelName;
   let count;
   let guild;
@@ -126,14 +126,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     channelIconComponentWithGuild = tmpResult.getChannelIconComponentWithGuild(channel, guild);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(5871).TextIcon;
+    channelIconComponentWithGuild = tmp(8183).TextIcon;
   }
   const obj2 = { style: subtitleStyles.subtitleRow, children: items };
   items = [, ];
   const obj3 = { size: "xxs", color: "icon-muted", style: subtitleStyles.channelIcon };
   items[0] = _false(channelIconComponentWithGuild, obj3);
   const obj4 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, style: subtitleStyles.subtitleText, children: intl.format(intl2.t.L9YdGH, obj5) };
-  const Text = tmp(4892).Text;
+  const Text = tmp(5086).Text;
   intl = tmp(1126).intl;
   obj5 = {
     channelName,

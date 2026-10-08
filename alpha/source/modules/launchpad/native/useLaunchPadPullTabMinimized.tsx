@@ -1,11 +1,11 @@
-// Module ID: 17417
-// Function ID: 17418
+// Module ID: 17699
+// Function ID: 17700
 // Name: useLaunchPadPullTabMinimized
-// Dependencies: [19, 17, 558, 576, 4618, 9622, 2]
+// Dependencies: [19, 17, 558, 576, 4810, 10815, 2]
 
-// Module 17417 (useLaunchPadPullTabMinimized)
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import VoicePanelUtils from "VoicePanelUtils" /* 9622 */;
+// Module 17699 (useLaunchPadPullTabMinimized)
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import VoicePanelUtils from "VoicePanelUtils" /* 10815 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -23,13 +23,13 @@ if (DCDScrollTracker) {
 }
 let closure_3 = tmp32;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsMinimizedDuringScroll() {
   let sharedValue;
   let tmp3;
   let tmp4;
   let obj = sharedValue(576);
   const cResult = obj.c(3);
-  const obj2 = sharedValue(4618);
+  const obj2 = sharedValue(4810);
   sharedValue = obj2.useSharedValue(false);
   if (cResult[0] !== sharedValue) {
     const fn = function t() {
@@ -72,9 +72,9 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const effect = react.useEffect(tmp3, tmp4);
   return sharedValue;
-}) : (() => {
+}) : (function useIsMinimizedDuringScroll() {
   let sharedValue;
-  let obj = sharedValue(4618);
+  let obj = sharedValue(4810);
   sharedValue = obj.useSharedValue(false);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
@@ -110,7 +110,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 const __initData = { code: "function useLaunchPadPullTabMinimizedTsx1(){const{launchPadPullTabState,isVoicePanelOpen,launchPadSharedState,isMinimizedDuringScroll}=this.__closure;const isMinimized=(launchPadPullTabState.get().minimized||isVoicePanelOpen)&&launchPadSharedState.get()<=0;return isMinimized||isMinimizedDuringScroll.get();}" };
 const __initData2 = { code: "function useLaunchPadPullTabMinimizedTsx2(){const{launchPadPullTabState,isVoicePanelOpen,launchPadSharedState,isMinimizedDuringScroll}=this.__closure;const isMinimized=(launchPadPullTabState.get().minimized||isVoicePanelOpen)&&launchPadSharedState.get()<=0;return isMinimized||isMinimizedDuringScroll.get();}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((launchPadSharedState) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLaunchPadPullTabMinimized(launchPadSharedState) {
   launchPadSharedState = launchPadSharedState.launchPadSharedState;
   const launchPadPullTabState = launchPadSharedState.launchPadPullTabState;
   const obj = VoicePanelUtils;
@@ -126,7 +126,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((launchPadSharedSta
   fn.__initData = __initData;
   const obj2 = ReanimatedRexport;
   return obj2.useDerivedValue(fn);
-}) : ((launchPadSharedState) => {
+}) : (function useLaunchPadPullTabMinimized(launchPadSharedState) {
   launchPadSharedState = launchPadSharedState.launchPadSharedState;
   const launchPadPullTabState = launchPadSharedState.launchPadPullTabState;
   const obj = VoicePanelUtils;

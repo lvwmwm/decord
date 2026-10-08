@@ -1,16 +1,16 @@
-// Module ID: 4894
-// Function ID: 4895
+// Module ID: 5088
+// Function ID: 5089
 // Name: useManaTextMigrationHighlight
-// Dependencies: [17, 4895, 1193, 4896, 587, 558, 576, 504, 4735, 2]
+// Dependencies: [17, 5089, 1205, 5090, 587, 558, 576, 504, 4929, 2]
 // Exports: withManaTextMigrationHighlight
 
-// Module 4894 (useManaTextMigrationHighlight)
+// Module 5088 (useManaTextMigrationHighlight)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import DevSettingsStore from "DevSettingsStore" /* 4895 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import DevSettingsStore from "DevSettingsStore" /* 5089 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ obj2 = { borderWidth: 1, borderColor: nativeDefault.colors.STATUS_POSITIVE };
 createStyles = createStyles.createStyles;
 ({ borderWidth: 1, borderStyle: "dashed", borderColor: nativeDefault.colors.STATUS_DANGER });
 let closure_5 = createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useManaTextMigrationHighlight(arg0, arg1) {
   let tmp5;
   let tmp6;
   const obj = react;
@@ -87,7 +87,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     tmp11 = tmp13;
   }
   return tmp8;
-}) : ((arg0, arg1) => {
+}) : (function useManaTextMigrationHighlight(arg0, arg1) {
   const tmp = closure_5();
   const items = [DevSettingsStore];
   let tmp2 = null;

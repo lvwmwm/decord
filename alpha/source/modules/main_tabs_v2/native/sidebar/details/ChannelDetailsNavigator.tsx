@@ -1,28 +1,26 @@
-// Module ID: 17007
-// Function ID: 17008
+// Module ID: 17288
+// Function ID: 17289
 // Name: ChannelDetailsNavigator
-// Dependencies: [32, 19, 17, 2051, 10666, 1085, 16834, 21, 7568, 558, 576, 573, 6782, 11032, 1126, 7509, 12457, 1252, 10075, 17008, 6503, 4743, 6023, 1618, 17064, 1369, 17065, 17066, 7579, 7580, 17067, 17068, 17069, 16914, 2]
+// Dependencies: [32, 19, 17, 2063, 9581, 1085, 17113, 21, 9279, 558, 576, 573, 6958, 12174, 1126, 9232, 12553, 1264, 9648, 17289, 6679, 4937, 6209, 1630, 17345, 1381, 17346, 17347, 9290, 9291, 17348, 17349, 17350, 17195, 2]
 
-// Module 17007 (ChannelDetailsNavigator)
+// Module 17288 (ChannelDetailsNavigator)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import HeaderShared from "HeaderShared" /* 7509 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10666 */;
-import navigateToThreadCreation from "navigateToThreadCreation" /* 11032 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12457 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 16834 */;
-import ChannelSettingsModal from "ChannelSettingsModal" /* 17008 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import HeaderShared from "HeaderShared" /* 9232 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9581 */;
+import navigateToThreadCreation from "navigateToThreadCreation" /* 12174 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12553 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 17113 */;
+import ChannelSettingsModal from "ChannelSettingsModal" /* 17289 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 7568 */;
+import NativeStackView from "NativeStackView" /* 9279 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let obj1, tmp3, tmp4, trackResult;
 
 let c10;
 let unpackModuleId;
@@ -34,7 +32,7 @@ const SearchNavigatorScreens = SearchNavigatorConstants.SearchNavigatorScreens;
 let closure_12 = Object.freeze({});
 let closure_13 = NativeStackView.createNativeStackNavigator();
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedCreateThreadHeaderButton(channelId) {
   let first;
   let tmp6;
   const obj = channelId(576);
@@ -75,7 +73,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
     tmp8 = tmp9;
   }
   return tmp8;
-}) : ((channelId) => {
+}) : (function ConnectedCreateThreadHeaderButton(channelId) {
   channelId = channelId.channelId;
   const items = [ChannelStore];
   const obj = channelId(573);
@@ -88,12 +86,12 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   return tmp2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateThreadHeaderButton(channel) {
   let tmp5;
   let obj = channel(576);
   const cResult = obj.c(5);
   channel = channel.channel;
-  const obj2 = channel(6782);
+  const obj2 = channel(6958);
   const canStartThread = obj2.useCanStartThread(channel);
   if (cResult[0] !== channel) {
     const fn = function t() {
@@ -121,7 +119,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
     if (cResult[3] !== tmp5) {
       const obj3 = { accessibilityLabel: tmp8, onPress: tmp5, source: AssetRegistryDefault };
-      const HeaderIconButton = tmp(7509).HeaderIconButton;
+      const HeaderIconButton = tmp(9232).HeaderIconButton;
       const tmp13 = closure_10(HeaderIconButton, obj3);
       cResult[3] = tmp5;
       cResult[4] = tmp13;
@@ -132,16 +130,16 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     tmp6 = tmp10;
   }
   return tmp6;
-}) : ((channel) => {
+}) : (function CreateThreadHeaderButton(channel) {
   let intl;
   channel = channel.channel;
-  let obj = channel(6782);
+  let obj = channel(6958);
   [][0] = channel;
   const canStartThread = obj.useCanStartThread(channel);
   let tmp5 = null;
   if (canStartThread) {
     const obj2 = { accessibilityLabel: intl.string(channel(1126).t.rBIGBL), onPress: tmp4, source: AssetRegistryDefault };
-    const HeaderIconButton = tmp(7509).HeaderIconButton;
+    const HeaderIconButton = tmp(9232).HeaderIconButton;
     intl = tmp(1126).intl;
     tmp5 = closure_10(HeaderIconButton, obj2);
   }
@@ -149,10 +147,13 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
 });
 let memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelDetailsNavigator(navigation) {
   let Screen;
   let applicationId;
   let expandTopic;
+  let left;
+  let obj4;
+  let right;
   let search;
   let source;
   let tmp = navigation;
@@ -173,6 +174,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((navigat
       let tmp6;
       let tmp9;
       let tmp8;
+      let tmp14;
       if (cResult[2] === source) {
         tmp5 = cResult[3];
         tmp6 = cResult[4];
@@ -180,151 +182,352 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((navigat
       let obj2 = react;
       const effect = react.useEffect(tmp5, tmp6);
       if (cResult[5] !== navigation) {
-        class C {
-          constructor() {
-            return navigation.addListener("beforeRemove", () => { /* body not rendered: F148004 */ });
-          }
-        }
+        const fn = function _() {
+          return navigation.addListener("beforeRemove", () => {
+            const obj = channelId(source[18]);
+            return obj.close();
+          });
+        };
         const items = [navigation];
         cResult[5] = navigation;
-        cResult[6] = C;
+        cResult[6] = fn;
         cResult[7] = items;
         tmp9 = items;
-        tmp8 = C;
+        tmp8 = fn;
       } else {
-        class C {
-          constructor() {
-            return navigation.addListener("beforeRemove", () => { /* body not rendered: F148004 */ });
-          }
-        }
+        tmp8 = cResult[6];
         tmp9 = cResult[7];
       }
       const effect1 = obj2.useEffect(tmp8, tmp9);
       let tmpResult = tmp(tmp2[19]);
       const channelSettingsScreensStyles = tmpResult.useChannelSettingsScreensStyles();
       if (cResult[8] !== channelId) {
-        class C {
-          constructor() {
-            return navigation.addListener("beforeRemove", () => { /* body not rendered: F148004 */ });
-          }
-        }
-        let obj3 = { channelId };
-        tmp13[0] = obj3;
+        let obj3 = { initialParams: obj4 };
+        obj4 = { channelId };
         cResult[8] = channelId;
-        cResult[9] = tmp13;
-      } else {
-        class C {
-          constructor() {
-            return navigation.addListener("beforeRemove", () => { /* body not rendered: F148004 */ });
-          }
-        }
+        cResult[9] = obj3;
       }
-      let tmpResult2 = tmp(tmp2[20]);
-      const accessibilityNativeStackOptions = tmpResult2.useAccessibilityNativeStackOptions();
+      const tmpResult4 = tmp(tmp2[20]);
+      const accessibilityNativeStackOptions = tmpResult4.useAccessibilityNativeStackOptions();
       if (cResult[10] !== channelId) {
-        class C {
-          constructor() {
-            return navigation.addListener("beforeRemove", () => { /* body not rendered: F148004 */ });
-          }
-        }
         let channel = ChannelStore.getChannel(channelId);
+        let guildId;
         if (channel != null) {
-          class C {
-            constructor() {
-              return navigation.addListener("beforeRemove", () => { /* body not rendered: F148004 */ });
-            }
-          }
+          guildId = channel.getGuildId();
         }
         cResult[10] = channelId;
-        cResult[11] = undefined;
+        cResult[11] = guildId;
+        tmp14 = guildId;
       } else {
-        class C {
-          constructor() {
-            return navigation.addListener("beforeRemove", () => { /* body not rendered: F148004 */ });
-          }
-        }
+        tmp14 = cResult[11];
       }
       if (cResult[12] === channelId) {
-        class C {
-          constructor() {
-            return navigation.addListener("beforeRemove", () => { /* body not rendered: F148004 */ });
+        if (cResult[13] === tmp14) {
+          let tmp22;
+          const _Symbol = Symbol;
+          if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
+            const fn2 = function j() {
+              const obj = navigation(source[21]);
+              const rootNavigationRef = obj.getRootNavigationRef();
+              let tmp2 = !(null == rootNavigationRef || !rootNavigationRef.isReady());
+              null == rootNavigationRef || !rootNavigationRef.isReady();
+              if (tmp2) {
+                let flag = rootNavigationRef.canGoBack();
+                if (flag) {
+                  rootNavigationRef.goBack();
+                  flag = true;
+                }
+                tmp2 = flag;
+              }
+              return tmp2;
+            };
+            cResult[16] = fn2;
+            tmp22 = fn2;
+          } else {
+            tmp22 = cResult[16];
           }
+          const tmpResult5 = tmp(tmp2[22]);
+          tmpResult5.useNavigatorBackPressHandler(tmp22);
+          ({ left, right } = channelId(tmp2[23])());
+          channelId(tmp2[23])();
+          if (cResult[17] === left) {
+            let tmp26;
+            if (cResult[18] === right) {
+              tmp26 = cResult[19];
+            }
+            if (cResult[20] === channelSettingsScreensStyles.container) {
+              if (cResult[23] !== accessibilityNativeStackOptions) {
+                const obj5 = { headerTitle: tmp(tmp2[15]).renderGenericTitle, headerTitleAlign: "center" };
+                let merged = Object.assign(accessibilityNativeStackOptions);
+                cResult[23] = accessibilityNativeStackOptions;
+                cResult[24] = obj5;
+              }
+              if (cResult[25] === channelId) {
+                if (cResult[26] === expandTopic) {
+                  let tmp32;
+                  let tmp33;
+                  let tmp34;
+                  let tmp46;
+                  let tmp47;
+                  let tmp48;
+                  if (cResult[27] === search) {
+                    tmp32 = cResult[28];
+                  }
+                  const _Symbol2 = Symbol;
+                  if (cResult[29] === Symbol.for("react.memo_cache_sentinel")) {
+                    const obj6 = { headerShown: false };
+                    class K {
+                      constructor() {
+                        return navigation(source[24]).default;
+                      }
+                    }
+                    cResult[29] = obj6;
+                    cResult[30] = K;
+                    tmp33 = obj6;
+                    tmp34 = K;
+                  } else {
+                    tmp33 = cResult[29];
+                    class K {
+                      constructor() {
+                        return navigation(source[24]).default;
+                      }
+                    }
+                  }
+                  if (cResult[31] !== tmp32) {
+                    class K {
+                      constructor() {
+                        return navigation(source[24]).default;
+                      }
+                    }
+                    const obj7 = { initialParams: tmp32, name: constants.DETAILS, options: tmp33, getComponent: tmp34 };
+                    cResult[31] = tmp32;
+                    cResult[32] = closure_10(Screen.Screen, obj7);
+                    const tmp38 = closure_10(Screen.Screen, obj7);
+                  }
+                  const _Symbol3 = Symbol;
+                  if (cResult[33] === Symbol.for("react.memo_cache_sentinel")) {
+                    class K {
+                      constructor() {
+                        return navigation(source[24]).default;
+                      }
+                    }
+                    const obj8 = {
+                      name: SearchNavigatorScreens.SEARCH_CHAT_PREVIEW,
+                      options(route) {
+                                          let obj2;
+                                          route = route.route;
+                                          let obj = {
+                                            header(arg0) {
+                                              let obj2;
+                                              const obj = { shouldHandleSafeArea: obj2.isAndroid() };
+                                              const renderHeader = route(source[15]).renderHeader;
+                                              route(source[15]);
+                                              const merged = Object.assign(arg0);
+                                              obj2 = route(source[25]);
+                                              return renderHeader(obj);
+                                            },
+                                            headerTitle() {
+                                              const obj = { channelId: route.params.channelId };
+                                              return closure_2_10(channelId(source[26]), obj);
+                                            },
+                                            headerLeft: obj2.getRenderBackImage(navigation)
+                                          };
+                                          navigation = route.navigation;
+                                          obj2 = route(source[15]);
+                                          return obj;
+                                        },
+                      getComponent() {
+                                          return navigation(source[27]).default;
+                                        }
+                    };
+                    cResult[33] = closure_10(Screen.Screen, obj8);
+                    const tmp42 = closure_10(Screen.Screen, obj8);
+                  }
+                  const _Symbol4 = Symbol;
+                  if (cResult[34] === Symbol.for("react.memo_cache_sentinel")) {
+                    class K {
+                      constructor() {
+                        return navigation(source[24]).default;
+                      }
+                    }
+                    Screen = Screen.Screen;
+                    const obj9 = {
+                      name: tmp(tmp2[28]).ConversationNavigatorScreens.FOCUS,
+                      options(arg0) {
+                                          let route;
+                                          ({ route, navigation } = arg0);
+                                          const obj = navigation(source[29]);
+                                          return obj.conversationNavigatorFocusHeaderOptions(route, navigation);
+                                        },
+                      getComponent() {
+                                          return navigation(source[30]).default;
+                                        }
+                    };
+                    cResult[34] = closure_10(Screen, obj9);
+                    const tmp45 = closure_10(Screen, obj9);
+                  }
+                  if (cResult[35] !== channelId) {
+                    const obj10 = { channelId: null };
+                    class K {
+                      constructor() {
+                        return navigation(source[24]).default;
+                      }
+                    }
+                    cResult[35] = channelId;
+                    cResult[36] = obj10;
+                    tmp46 = obj10;
+                  } else {
+                    tmp46 = cResult[36];
+                  }
+                  if (cResult[37] !== DETAILS) {
+                    const fn3 = function $(navigation) {
+                      let intl;
+                      let renderModalCloseImage;
+                      navigation = navigation.navigation;
+                      const route = navigation.route;
+                      const obj = { title: intl.string(intl2.t["mp1N/2"]), headerLeft: renderModalCloseImage };
+                      intl = intl2.intl;
+                      if (DETAILS === route.name) {
+                        const tmpResult = HeaderShared;
+                        renderModalCloseImage = tmpResult.getRenderModalCloseImage(navigation);
+                      } else {
+                        const tmpResult2 = HeaderShared;
+                        renderModalCloseImage = tmpResult2.getRenderModalBackImage(navigation);
+                      }
+                      return obj;
+                    };
+                    class K {
+                      constructor() {
+                        return navigation(source[24]).default;
+                      }
+                    }
+                    cResult[37] = DETAILS;
+                    cResult[38] = fn3;
+                    tmp47 = fn3;
+                  } else {
+                    tmp47 = cResult[38];
+                  }
+                  const _Symbol5 = Symbol;
+                  if (cResult[39] === Symbol.for("react.memo_cache_sentinel")) {
+                    function ee() {
+                      return navigation(source[31]).default;
+                    }
+                    class K {
+                      constructor() {
+                        return navigation(source[24]).default;
+                      }
+                    }
+                    cResult[39] = ee;
+                    tmp48 = ee;
+                  } else {
+                    tmp48 = cResult[39];
+                  }
+                  if (cResult[40] === tmp46) {
+                    class K {
+                      constructor() {
+                        return navigation(source[24]).default;
+                      }
+                    }
+                    const obj11 = { channelId, applicationId };
+                    cResult[43] = applicationId;
+                    cResult[44] = channelId;
+                    cResult[45] = obj11;
+                  }
+                  const obj12 = { name: null, initialParams: tmp46, options: tmp47, getComponent: tmp48 };
+                  class I {
+                    constructor() {
+                      const channel = ChannelStore.getChannel(channelId);
+                      if (null != channel) {
+                        const obj = { channel_id: channel.id, guild_id: channel.getGuildId(), channel_type: channel.type, initial_route_name: DETAILS, source };
+                        const track = AnalyticsUtilsDefault.track;
+                        const CHANNEL_SIDEBAR_VIEWED = AnalyticEvents.CHANNEL_SIDEBAR_VIEWED;
+                        AnalyticsUtilsDefault;
+                        track(CHANNEL_SIDEBAR_VIEWED, obj);
+                      }
+                    }
+                  }
+                  cResult[40] = tmp46;
+                  cResult[41] = tmp47;
+                  cResult[42] = closure_10(Screen.Screen, obj12);
+                  const tmp53 = closure_10(Screen.Screen, obj12);
+                }
+              }
+              const obj13 = { channelId, search, expandTopic };
+              cResult[25] = channelId;
+              cResult[26] = expandTopic;
+              cResult[27] = search;
+              cResult[28] = obj13;
+              tmp32 = obj13;
+            }
+            const items1 = [channelSettingsScreensStyles.container, tmp26];
+            cResult[20] = channelSettingsScreensStyles.container;
+            cResult[21] = tmp26;
+            cResult[22] = items1;
+          }
+          const obj14 = { paddingLeft: left, paddingRight: right };
+          cResult[17] = left;
+          cResult[18] = right;
+          class I {
+            constructor() {
+              const channel = ChannelStore.getChannel(channelId);
+              if (null != channel) {
+                const obj = { channel_id: channel.id, guild_id: channel.getGuildId(), channel_type: channel.type, initial_route_name: DETAILS, source };
+                const track = AnalyticsUtilsDefault.track;
+                const CHANNEL_SIDEBAR_VIEWED = AnalyticEvents.CHANNEL_SIDEBAR_VIEWED;
+                AnalyticsUtilsDefault;
+                track(CHANNEL_SIDEBAR_VIEWED, obj);
+              }
+            }
+          }
+          tmp26 = obj14;
         }
       }
-      if (null != tmp15) {
-        class C {
+      if (null != tmp14) {
+        tmp(tmp2[19]);
+        class K {
           constructor() {
-            return navigation.addListener("beforeRemove", () => { /* body not rendered: F148004 */ });
-          }
-        }
-        const channelSettingsScreens = obj6.getChannelSettingsScreens(channelId, tmp15, channelSettingsScreensStyles);
-      } else {
-        class C {
-          constructor() {
-            return navigation.addListener("beforeRemove", () => { /* body not rendered: F148004 */ });
+            return navigation(source[24]).default;
           }
         }
       }
       cResult[12] = channelId;
-      cResult[13] = tmp15;
+      cResult[13] = tmp14;
       cResult[14] = channelSettingsScreensStyles;
-      class N {
+      class I {
         constructor() {
-          channel = closure_6.getChannel(channelId);
+          const channel = ChannelStore.getChannel(channelId);
           if (null != channel) {
-            tmp = closure_1;
-            tmp2 = closure_2;
-            tmp3 = closure_1(closure_2[17]);
-            tmp4 = AnalyticEvents;
-            obj1 = { channel_id: null, guild_id: null, channel_type: null, initial_route_name: null, source: null };
-            obj1.channel_id = channel.id;
-            track = tmp3.track;
-            CHANNEL_SIDEBAR_VIEWED = AnalyticEvents.CHANNEL_SIDEBAR_VIEWED;
-            obj1.guild_id = channel.getGuildId();
-            obj1.channel_type = channel.type;
-            tmp5 = DETAILS;
-            obj1.initial_route_name = DETAILS;
-            tmp6 = source;
-            obj1.source = source;
-            trackResult = track(CHANNEL_SIDEBAR_VIEWED, obj1);
+            const obj = { channel_id: channel.id, guild_id: channel.getGuildId(), channel_type: channel.type, initial_route_name: DETAILS, source };
+            const track = AnalyticsUtilsDefault.track;
+            const CHANNEL_SIDEBAR_VIEWED = AnalyticEvents.CHANNEL_SIDEBAR_VIEWED;
+            AnalyticsUtilsDefault;
+            track(CHANNEL_SIDEBAR_VIEWED, obj);
           }
-          return;
         }
       }
     }
   }
-  class N {
+  class I {
     constructor() {
-      channel = closure_6.getChannel(channelId);
+      const channel = ChannelStore.getChannel(channelId);
       if (null != channel) {
-        tmp = closure_1;
-        tmp2 = closure_2;
-        tmp3 = closure_1(closure_2[17]);
-        tmp4 = AnalyticEvents;
-        obj1 = { channel_id: null, guild_id: null, channel_type: null, initial_route_name: null, source: null };
-        obj1.channel_id = channel.id;
-        track = tmp3.track;
-        CHANNEL_SIDEBAR_VIEWED = AnalyticEvents.CHANNEL_SIDEBAR_VIEWED;
-        obj1.guild_id = channel.getGuildId();
-        obj1.channel_type = channel.type;
-        tmp5 = DETAILS;
-        obj1.initial_route_name = DETAILS;
-        tmp6 = source;
-        obj1.source = source;
-        trackResult = track(CHANNEL_SIDEBAR_VIEWED, obj1);
+        const obj = { channel_id: channel.id, guild_id: channel.getGuildId(), channel_type: channel.type, initial_route_name: DETAILS, source };
+        const track = AnalyticsUtilsDefault.track;
+        const CHANNEL_SIDEBAR_VIEWED = AnalyticEvents.CHANNEL_SIDEBAR_VIEWED;
+        AnalyticsUtilsDefault;
+        track(CHANNEL_SIDEBAR_VIEWED, obj);
       }
-      return;
     }
   }
-  const items1 = [channelId, DETAILS, source];
+  const items2 = [channelId, DETAILS, source];
   cResult[0] = channelId;
   cResult[1] = DETAILS;
   cResult[2] = source;
-  cResult[3] = N;
-  cResult[4] = items1;
-  tmp6 = items1;
-  tmp5 = N;
-}) : ((navigation) => {
+  cResult[3] = I;
+  cResult[4] = items2;
+  tmp6 = items2;
+  tmp5 = I;
+}) : (function ChannelDetailsNavigator(navigation) {
   let Navigator;
   let Screen;
   let applicationId;

@@ -1,13 +1,13 @@
-// Module ID: 9063
-// Function ID: 9064
+// Module ID: 11141
+// Function ID: 11142
 // Name: NativeRPCHelpers
-// Dependencies: [5, 5323, 1085, 9064, 9059, 2]
+// Dependencies: [5, 5635, 1085, 11142, 11134, 2]
 // Exports: getDeprecatedVoiceSettings, getVoiceSettings, validateSocketClient
 
-// Module 9063 (NativeRPCHelpers)
+// Module 11141 (NativeRPCHelpers)
 import Constants from "Constants" /* 1085 */;
-import Constants2 from "Constants" /* 5323 */;
-import RPCHelpers from "RPCHelpers" /* 9064 */;
+import Constants2 from "Constants" /* 5635 */;
+import RPCHelpers from "RPCHelpers" /* 11142 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -89,7 +89,7 @@ let closure_0 = _asyncToGenerator(async function(arg0, value, arg2) {
 });
 let result = size.fileFinishedImporting("modules/rpc/native/server/NativeRPCHelpers.tsx");
 
-export const validateSocketClient = function() {
+export const validateSocketClient = function validateSocketClient() {
   return closure_0(...arguments);
 };
 export const getDeprecatedVoiceSettings = () => {

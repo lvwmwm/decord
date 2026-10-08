@@ -1,24 +1,24 @@
-// Module ID: 5951
-// Function ID: 5952
+// Module ID: 6134
+// Function ID: 6135
 // Name: AppWindowContext
-// Dependencies: [32, 19, 1085, 21, 1121, 5952, 558, 576, 2021, 5953, 2]
+// Dependencies: [32, 19, 1085, 21, 1121, 6071, 558, 576, 2033, 6135, 2]
 // Exports: getAppWindowContextValue, getCurrentlyInteractingAppContext, getCurrentlyInteractingAppWindowContext, getWindowDispatchForElement, getWindowDispatchForEvent, useAppContext, useRenderWindow, useWindowDispatch
 
-// Module 5951 (AppWindowContext)
+// Module 6134 (AppWindowContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
-import DOMUtils from "DOMUtils" /* 2021 */;
-import WindowInteractingUtils from "WindowInteractingUtils" /* 5953 */;
+import DOMUtils from "DOMUtils" /* 2033 */;
+import WindowInteractingUtils from "WindowInteractingUtils" /* 6135 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import WindowIdUtils_mod from "WindowIdUtils" /* 5952 */;
+import WindowIdUtils_mod from "WindowIdUtils" /* 6071 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, children, dependencyMap;
+let _require, dependencyMap;
 
 let WindowIdUtils;
 let react = react_mod;
@@ -31,7 +31,7 @@ WindowIdUtils = WindowIdUtils_mod;
 const context = createContext(obj);
 const map = new Map();
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function(appContext, renderWindow) {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWindowContextValue(appContext, renderWindow) {
   let closure_2;
   let closure_3;
   let tmp4;
@@ -89,9 +89,9 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function(appCont
         class E {
           constructor() {
             result = closure_1_6.set(closure_1, closure_3);
-            handleUnload = function handleUnload() { /* body not rendered: F137181 */ };
+            handleUnload = function handleUnload() { /* body not rendered: F138572 */ };
             listener = handleUnload.addEventListener("unload", handleUnload);
-            return () => { /* body not rendered: F137182 */ };
+            return () => { /* body not rendered: F138573 */ };
           }
         }
         const items = [tmp11, renderWindow, windowId];
@@ -118,7 +118,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function(appCont
   cResult[5] = windowId;
   cResult[6] = obj2;
   tmp11 = obj2;
-}) : ((appContext, defaultView) => {
+}) : (function useWindowContextValue(appContext, defaultView) {
   let closure_3;
   let renderWindow;
   let windowId;
@@ -164,7 +164,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function(appCont
   return memo1;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppWindowContextProvider(children) {
   const obj = react2;
   const cResult = obj.c(3);
   children = children.children;
@@ -181,7 +181,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[1] = tmp2;
   cResult[2] = tmp4;
   tmp3 = tmp4;
-}) : ((appContext) => <context.Provider value={closure_7(arg0.appContext, arg0.renderWindow)}>{arg0.children}</context.Provider>);
+}) : (function AppWindowContextProvider(appContext) {
+  return <context.Provider value={closure_7(arg0.appContext, arg0.renderWindow)}>{arg0.children}</context.Provider>;
+});
 function getWindowDispatchForElement(ownerDocument) {
   const defaultView = ownerDocument.ownerDocument.defaultView;
   if (null != defaultView) {
@@ -267,6 +269,12 @@ export const getCurrentlyInteractingAppContext = function getCurrentlyInteractin
   return appContext;
 };
 export const AppWindowContextProvider = tmp6;
-export const useAppContext = () => react.useContext(context).appContext;
-export const useWindowDispatch = () => react.useContext(context).windowDispatch;
-export const useRenderWindow = () => react.useContext(context).renderWindow;
+export const useAppContext = function useAppContext() {
+  return react.useContext(context).appContext;
+};
+export const useWindowDispatch = function useWindowDispatch() {
+  return react.useContext(context).windowDispatch;
+};
+export const useRenderWindow = function useRenderWindow() {
+  return react.useContext(context).renderWindow;
+};

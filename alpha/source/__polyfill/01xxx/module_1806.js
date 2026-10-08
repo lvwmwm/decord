@@ -1,135 +1,274 @@
 // Module ID: 1806
 // Function ID: 1807
-// Dependencies: [19, 1646, 1795, 1647, 1790]
+// Dependencies: [1666]
+// Exports: processBoxShadow
 
 // Module 1806
-import react from "react" /* 19 */;
-import module_1646 from "module_1646" /* 1646 */;
+import ReanimatedError from "ReanimatedError" /* 1666 */;
 
-const require = globalThis.__r;
-let _require, closure_0, closure_2, workletEventHandler;
-
-let c2;
-let c3;
-let closure_4;
-function getWebScrollableElement(getScrollableNode) {
-  let scrollableNode;
-  if (getScrollableNode != null) {
-    scrollableNode = getScrollableNode.getScrollableNode();
+const isLength = function o(str) {
+  let endsWithResult = str.endsWith("px");
+  if (!endsWithResult) {
+    const _isNaN = isNaN;
+    const _Number = Number;
+    endsWithResult = !isNaN(Number(str));
   }
-  if (scrollableNode == null) {
-    scrollableNode = getScrollableNode;
+  return endsWithResult;
+};
+isLength.__closure = {};
+isLength.__workletHash = 6091944631530;
+isLength.__initData = { code: "function pnpm_processBoxShadowTs1(value){return value.endsWith('px')||!isNaN(Number(value));}" };
+function parseBoxShadowString(str) {
+  const items = [];
+  const parts = str.split(/,(?![^()]*\))/);
+  const mapped = parts.map((item) => item.trim());
+  const found = mapped.filter((item) => "" !== item);
+  const iter = found[Symbol.iterator]();
+  str = iter.next();
+  while (iter !== undefined) {
+    let obj = { offsetX: 0, offsetY: 0 };
+    let tmp2 = null;
+    let tmp3 = null;
+    let flag = false;
+    let num = 0;
+    let parts1 = str.split(/\s+(?![^(]*\))/);
+    for (const item10041 of parts1) {
+      let tmp7 = item10041;
+      if (fn(item10041)) {
+        if (0 === num) {
+          tmp2 = item10041;
+          num = num + 1;
+        } else if (1 === num) {
+          let tmp36 = flag;
+          if (tmp36) {
+            obj2.return();
+            let items1 = [];
+            iter.return();
+            return items1;
+          } else {
+            tmp3 = item10041;
+            num = num + 1;
+          }
+        } else if (2 === num) {
+          let tmp30 = flag;
+          if (tmp30) {
+            obj2.return();
+            let items2 = [];
+            iter.return();
+            return items2;
+          } else {
+            obj.blurRadius = tmp7;
+            num = num + 1;
+          }
+        } else if (3 === num) {
+          let tmp24 = flag;
+          if (tmp24) {
+            obj2.return();
+            let items3 = [];
+            iter.return();
+            return items3;
+          } else {
+            obj.spreadDistance = tmp7;
+            num = num + 1;
+          }
+        } else {
+          obj2.return();
+          let items4 = [];
+          iter.return();
+          return items4;
+        }
+        continue;
+      } else if ("inset" === tmp7) {
+        if (obj.inset) {
+          obj2.return();
+          let items5 = [];
+          iter.return();
+          return items5;
+        } else {
+          if (null !== tmp2) {
+            flag = true;
+          }
+          obj.inset = true;
+          continue;
+        }
+      } else if (obj.color) {
+        obj2.return();
+        let items6 = [];
+        iter.return();
+        return items6;
+      } else {
+        if (null != tmp2) {
+          flag = true;
+        }
+        obj.color = tmp7;
+      }
+      continue;
+    }
+    if (null !== tmp2) {
+      if (null !== tmp3) {
+        obj.offsetX = tmp2;
+        obj.offsetY = tmp3;
+        let arr = items.push(obj);
+        continue;
+      }
+    }
+    let items7 = [];
+    iter.return();
+    return items7;
   }
-  return scrollableNode;
+  return items;
 }
-({ useCallback: c2, useEffect: c3, useRef: closure_4 } = react);
-let c5 = "animatedRef is not initialized in useScrollViewOffset. Make sure to pass the animated ref to the scrollable component to get scroll offset updates.";
-const __initData = { code: "function pnpm_useScrollViewOffsetTs1(){const{animatedRef,getWebScrollableElement,offset}=this.__closure;if(animatedRef){const element=getWebScrollableElement(animatedRef.current);offset.value=element.scrollLeft===0?element.scrollTop:element.scrollLeft;}}" };
-const __initData2 = { code: "function pnpm_useScrollViewOffsetTs2(event){const{offset}=this.__closure;offset.value=event.contentOffset.x===0?event.contentOffset.y:event.contentOffset.x;}" };
-let closure_9 = ["onScroll", "onScrollBeginDrag", "onScrollEndDrag", "onMomentumScrollBegin", "onMomentumScrollEnd"];
-
-export const useScrollViewOffset = module_1646.isWeb() ? (function useScrollViewOffsetWeb(animatedRef, arg1) {
-  let current;
-  _require = animatedRef;
-  let sharedValue = arg1;
-  const obj = require("module_1795");
-  const tmp2 = closure_4;
-  if (arg1 == null) {
-    sharedValue = obj.useSharedValue(0);
-  }
-  current = tmp2(sharedValue).current;
-  const fn = function _() {
-    if (animatedRef) {
-      current = animatedRef.current;
-      let scrollableNode;
-      if (current != null) {
-        scrollableNode = current.getScrollableNode();
+parseBoxShadowString.__closure = { isLength };
+parseBoxShadowString.__workletHash = 13799106280870;
+parseBoxShadowString.__initData = { code: "function parseBoxShadowString_Pnpm_processBoxShadowTs2(rawBoxShadows){const{isLength}=this.__closure;const result=[];for(const rawBoxShadow of rawBoxShadows.split(/,(?![^()]*\\))/).map(function(bS){return bS.trim();}).filter(function(bS){return bS!=='';})){const boxShadow={offsetX:0,offsetY:0};let offsetX=null;let offsetY=null;let keywordDetectedAfterLength=false;let lengthCount=0;const args=rawBoxShadow.split(/\\s+(?![^(]*\\))/);for(const arg of args){if(isLength(arg)){switch(lengthCount){case 0:offsetX=arg;lengthCount++;break;case 1:if(keywordDetectedAfterLength){return[];}offsetY=arg;lengthCount++;break;case 2:if(keywordDetectedAfterLength){return[];}boxShadow.blurRadius=arg;lengthCount++;break;case 3:if(keywordDetectedAfterLength){return[];}boxShadow.spreadDistance=arg;lengthCount++;break;default:return[];}}else if(arg==='inset'){if(boxShadow.inset){return[];}if(offsetX!==null){keywordDetectedAfterLength=true;}boxShadow.inset=true;continue;}else{if(boxShadow.color){return[];}if(offsetX!=null){keywordDetectedAfterLength=true;}boxShadow.color=arg;continue;}}if(offsetX===null||offsetY===null){return[];}boxShadow.offsetX=offsetX;boxShadow.offsetY=offsetY;result.push(boxShadow);}return result;}" };
+function parseLength(str) {
+  const obj = /([+-]?\d*(\.\d+)?)([\w\W]+)?/g;
+  const match = obj.exec(str);
+  let NumberResult = null;
+  if (match) {
+    if (typeof fn === "function") {
+      let endsWithResult = str.endsWith("px");
+      if (!endsWithResult) {
+        const _isNaN = isNaN;
+        const _Number = Number;
+        endsWithResult = !isNaN(Number(str));
       }
-      if (scrollableNode == null) {
-        scrollableNode = current;
+      NumberResult = null;
+      if (endsWithResult) {
+        const _Number2 = Number;
+        NumberResult = Number(match[1]);
       }
-      current.value = 0 === scrollableNode.scrollLeft ? scrollableNode.scrollTop : scrollableNode.scrollLeft;
-    }
-  };
-  const obj2 = { animatedRef, getWebScrollableElement, offset: current };
-  fn.__closure = obj2;
-  fn.__workletHash = 2244034762234;
-  fn.__initData = __initData;
-  const items = [animatedRef, current];
-  const tmp3 = closure_2(fn, items);
-  closure_2 = tmp3;
-  const items1 = [animatedRef, tmp3];
-  closure_3(() => {
-    if (animatedRef) {
-      return animatedRef.observe((arg0) => {
-        let scrollableNode;
-        const tmp = arg0;
-        if (tmp) {
-          current = scrollableNode.current;
-          scrollableNode = undefined;
-          if (current != null) {
-            scrollableNode = current.getScrollableNode();
-          }
-          if (scrollableNode == null) {
-            scrollableNode = current;
-          }
-          const listener = scrollableNode.addEventListener("scroll", closure_2);
-          return () => {
-            const removed = scrollableNode.removeEventListener("scroll", closure_2_2);
-          };
-        } else {
-          const logger = animatedRef(closure_1_1[3]).logger;
-          logger.warn(closure_1_5);
-        }
-      });
-    }
-  }, items1);
-  return current;
-}) : (function useScrollViewOffsetNative(arg0, arg1) {
-  let current;
-  _require = arg0;
-  let sharedValue = arg1;
-  const obj = require("module_1795");
-  const tmp2 = _require;
-  const tmp3 = current;
-  const tmp4 = closure_4;
-  if (arg1 == null) {
-    sharedValue = obj.useSharedValue(0);
-  }
-  current = tmp4(sharedValue).current;
-  const fn = function _(contentOffset) {
-    let x;
-    const tmp = current;
-    if (0 === contentOffset.contentOffset.x) {
-      x = contentOffset.contentOffset.y;
     } else {
-      x = contentOffset.contentOffset.x;
+      throw new TypeError("Trying to call a non-function");
     }
-    tmp.value = x;
-  };
-  fn.__closure = { offset: current };
-  fn.__workletHash = 17316000082767;
-  fn.__initData = __initData2;
-  const tmp2Result = tmp2(tmp3[4]);
-  const event = tmp2Result.useEvent(fn, closure_9);
-  const items = [arg0, event];
-  closure_3(() => {
-    if (closure_0) {
-      return closure_0.observe((arg0) => {
-        closure_0 = arg0;
-        if (closure_0) {
-          workletEventHandler = workletEventHandler.workletEventHandler;
-          workletEventHandler.registerForEvents(arg0);
-          return () => {
-            workletEventHandler = event.workletEventHandler;
-            workletEventHandler.unregisterFromEvents(closure_0);
-          };
+  }
+  return NumberResult;
+}
+parseLength.__closure = { isLength };
+parseLength.__workletHash = 16787390997763;
+parseLength.__initData = { code: "function parseLength_Pnpm_processBoxShadowTs3(length){const{isLength}=this.__closure;const argsWithUnitsRegex=/([+-]?\\d*(\\.\\d+)?)([\\w\\W]+)?/g;const match=argsWithUnitsRegex.exec(length);if(!match||!isLength(length)){return null;}return Number(match[1]);}" };
+function processBoxShadow(boxShadow) {
+  const items = [];
+  if (null === boxShadow.boxShadow) {
+    return items;
+  } else {
+    let tmp6;
+    if (typeof boxShadow.boxShadow === "string") {
+      tmp6 = parseBoxShadowString(str.replace(/\n/g, " "));
+    } else {
+      const _Array = Array;
+      tmp6 = str;
+      if (!Array.isArray(boxShadow.boxShadow)) {
+        const _JSON = JSON;
+        const _HermesInternal = HermesInternal;
+        const self = this;
+        const self2 = this;
+        const reanimatedError = new ReanimatedError.ReanimatedError("Box shadow value must be an array of shadow objects or a string. Received: " + JSON.stringify(str));
+        throw reanimatedError;
+      }
+    }
+    const iter = tmp6[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp11 = nextResult;
+      let obj = { offsetX: 0, offsetY: 0 };
+      for (const key10047 in nextResult) {
+        if ("offsetX" === key10047) {
+          let offsetX;
+          if (typeof tmp11.offsetX === "string") {
+            offsetX = parseLength(tmp11.offsetX);
+          } else {
+            offsetX = tmp11.offsetX;
+          }
+          if (null === offsetX) {
+            let items1 = [];
+            iter.return();
+            return items1;
+          } else {
+            obj.offsetX = tmp42;
+            continue;
+          }
         } else {
-          const logger = closure_1_0(current[3]).logger;
-          logger.warn(closure_1_5);
+          if ("offsetY" === key10047) {
+            let offsetY;
+            if (typeof tmp11.offsetY === "string") {
+              offsetY = parseLength(tmp11.offsetY);
+            } else {
+              offsetY = tmp11.offsetY;
+            }
+            if (null === offsetY) {
+              let items2 = [];
+              iter.return();
+              return items2;
+            } else {
+              obj.offsetY = tmp35;
+              continue;
+            }
+          } else {
+            if ("spreadDistance" === key10047) {
+              let spreadDistance;
+              if (typeof tmp11.spreadDistance === "string") {
+                spreadDistance = parseLength(tmp11.spreadDistance);
+              } else {
+                spreadDistance = tmp11.spreadDistance;
+              }
+              if (null === spreadDistance) {
+                let items3 = [];
+                iter.return();
+                return items3;
+              } else {
+                obj.spreadDistance = tmp28;
+                continue;
+              }
+            } else {
+              if ("blurRadius" === key10047) {
+                let blurRadius;
+                if (typeof tmp11.blurRadius === "string") {
+                  blurRadius = parseLength(tmp11.blurRadius);
+                } else {
+                  blurRadius = tmp11.blurRadius;
+                }
+                let tmp20 = blurRadius;
+                if (null !== blurRadius) {
+                  if (tmp20 >= 0) {
+                    obj.blurRadius = tmp20;
+                    continue;
+                  }
+                }
+                let items4 = [];
+                iter.return();
+                return items4;
+              } else {
+                if ("color" === key10047) {
+                  obj.color = tmp11.color;
+                  continue;
+                } else {
+                  if ("inset" !== key10047) {
+                    continue;
+                  } else {
+                    obj.inset = tmp11.inset;
+                    continue;
+                  }
+                  continue;
+                }
+                continue;
+              }
+              continue;
+            }
+            continue;
+          }
+          continue;
         }
-      });
+        continue;
+      }
+      let arr = items.push(obj);
+      continue;
     }
-  }, items);
-  return current;
-});
+    boxShadow.boxShadow = items;
+  }
+}
+processBoxShadow.__closure = { parseBoxShadowString, parseLength };
+processBoxShadow.__workletHash = 5021783745910;
+processBoxShadow.__initData = { code: "function processBoxShadow_Pnpm_processBoxShadowTs4(props){const{parseBoxShadowString,parseLength}=this.__closure;const result=[];const rawBoxShadows=props.boxShadow;if(rawBoxShadows===null){return result;}let boxShadowList;if(typeof rawBoxShadows==='string'){boxShadowList=parseBoxShadowString(rawBoxShadows.replace(/\\n/g,' '));}else if(Array.isArray(rawBoxShadows)){boxShadowList=rawBoxShadows;}else{throw new ReanimatedError(\"Box shadow value must be an array of shadow objects or a string. Received: \"+JSON.stringify(rawBoxShadows));}for(const rawBoxShadow of boxShadowList){const parsedBoxShadow={offsetX:0,offsetY:0};let value;for(const arg in rawBoxShadow){switch(arg){case'offsetX':value=typeof rawBoxShadow.offsetX==='string'?parseLength(rawBoxShadow.offsetX):rawBoxShadow.offsetX;if(value===null){return[];}parsedBoxShadow.offsetX=value;break;case'offsetY':value=typeof rawBoxShadow.offsetY==='string'?parseLength(rawBoxShadow.offsetY):rawBoxShadow.offsetY;if(value===null){return[];}parsedBoxShadow.offsetY=value;break;case'spreadDistance':value=typeof rawBoxShadow.spreadDistance==='string'?parseLength(rawBoxShadow.spreadDistance):rawBoxShadow.spreadDistance;if(value===null){return[];}parsedBoxShadow.spreadDistance=value;break;case'blurRadius':value=typeof rawBoxShadow.blurRadius==='string'?parseLength(rawBoxShadow.blurRadius):rawBoxShadow.blurRadius;if(value===null||value<0){return[];}parsedBoxShadow.blurRadius=value;break;case'color':parsedBoxShadow.color=rawBoxShadow.color;break;case'inset':parsedBoxShadow.inset=rawBoxShadow.inset;}}result.push(parsedBoxShadow);}props.boxShadow=result;}" };
+
+export { processBoxShadow };

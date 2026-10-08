@@ -1,84 +1,74 @@
 // Module ID: 1803
 // Function ID: 1804
-// Dependencies: [41, 42, 1804, 1687]
+// Dependencies: [19, 1699, 1680]
+// Exports: useAnimatedKeyboard
 
 // Module 1803
-import _createClassDefault from "_createClass" /* 42 */;
-import startMapper from "startMapper" /* 1687 */;
-import prepareUIRegistry from "prepareUIRegistry" /* 1804 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
+import react from "react" /* 19 */;
 
-const require = globalThis.__r;
-let _require;
+let dependencyMap;
 
-const __initData = { code: "function pnpm_FrameCallbackRegistryJSTs1(){const{callback,callbackId}=this.__closure;global._frameCallbackRegistry.registerFrameCallback(callback,callbackId);}" };
-const __initData2 = { code: "function pnpm_FrameCallbackRegistryJSTs2(){const{callbackId}=this.__closure;global._frameCallbackRegistry.unregisterFrameCallback(callbackId);}" };
-const __initData3 = { code: "function pnpm_FrameCallbackRegistryJSTs3(){const{callbackId,state}=this.__closure;global._frameCallbackRegistry.manageStateFrameCallback(callbackId,state);}" };
-class FrameCallbackRegistryJS {
-  constructor() {
-    _classCallCheck(this, FrameCallbackRegistryJS);
-    this.nextCallbackId = 0;
-    const obj = prepareUIRegistry;
-    obj.prepareUIRegistry();
+let c2;
+let c3;
+({ useEffect: c2, useRef: c3 } = react);
+let closure_4 = { code: "function pnpm_useAnimatedKeyboardTs1(state,height){const{keyboardEventData}=this.__closure;keyboardEventData.state.value=state;keyboardEventData.height.value=height;}" };
+let closure_5 = { code: "function pnpm_useAnimatedKeyboardTs2(state,height){const{_keyboardEventData}=this.__closure;_keyboardEventData.state.value=state;_keyboardEventData.height.value=height;}" };
+
+export const useAnimatedKeyboard = function useAnimatedKeyboard() {
+  let obj3;
+  let obj4;
+  let ref;
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = { isStatusBarTranslucentAndroid: "Array", isNavigationBarTranslucentAndroid: "Reflect" };
   }
-}
-const entry = {
-  key: "registerFrameCallback",
-  value: function registerFrameCallback(callback) {
-    let closure_0 = callback;
-    if (closure_0) {
-      const self = this;
-      const nextCallbackId = this.nextCallbackId;
-      this.nextCallbackId = this.nextCallbackId + 1;
-      const fn = function c() {
-        const _frameCallbackRegistry = global._frameCallbackRegistry;
-        const result = _frameCallbackRegistry.registerFrameCallback(callback, nextCallbackId);
-      };
-      const obj2 = { callback, callbackId: nextCallbackId };
-      fn.__closure = obj2;
-      fn.__workletHash = 11361563554462;
-      fn.__initData = __initData;
-      const obj = nextCallbackId(1687);
-      obj.runOnUI(fn)();
-      return nextCallbackId;
-    } else {
-      return -1;
+  let ref2;
+  let obj2;
+  const tmp = ref2(null);
+  dependencyMap = tmp;
+  const tmp2 = ref2(-1);
+  let closure_2 = tmp2;
+  const tmp3 = ref2(false);
+  ref2 = tmp3;
+  if (null === tmp.current) {
+    obj2 = { state: obj3.makeMutable(obj(1680).KeyboardState.UNKNOWN), height: obj4.makeMutable(0) };
+    obj3 = obj(1699);
+    let fn = function c(value, value2) {
+      obj2.state.value = value;
+      obj2.height.value = value2;
+    };
+    const obj6 = { keyboardEventData: obj2 };
+    fn.__closure = obj6;
+    fn.__workletHash = 4393537867728;
+    fn.__initData = obj2;
+    obj4 = obj(1699);
+    const obj5 = obj(1699);
+    tmp2.current = obj5.subscribeForKeyboardEvents(fn, obj);
+    tmp.current = obj2;
+    tmp3.current = true;
+  }
+  closure_2(() => {
+    if (false === ref2.current) {
+      if (null !== ref.current) {
+        const current = ref.current;
+        obj = obj(ref[1]);
+        const fn = function u(value, value2) {
+          current.state.value = value;
+          current.height.value = value2;
+        };
+        obj2 = { _keyboardEventData: current };
+        fn.__closure = obj2;
+        fn.__workletHash = 5041909921996;
+        fn.__initData = __initData;
+        ref.current = obj.subscribeForKeyboardEvents(fn, current);
+        tmp.current = true;
+      }
     }
-  }
+    return () => {
+      obj = obj(closure_1[1]);
+      const result = obj.unsubscribeFromKeyboardEvents(ref.current);
+      ref2.current = false;
+    };
+  }, []);
+  return tmp.current;
 };
-const items = [
-  entry,
-  {
-    key: "unregisterFrameCallback",
-    value: function unregisterFrameCallback(callbackId) {
-      let closure_0 = callbackId;
-      const fn = function c() {
-        const _frameCallbackRegistry = global._frameCallbackRegistry;
-        const result = _frameCallbackRegistry.unregisterFrameCallback(callbackId);
-      };
-      fn.__closure = { callbackId };
-      fn.__workletHash = 9182274559334;
-      fn.__initData = __initData2;
-      const obj = startMapper;
-      obj.runOnUI(fn)();
-    }
-  },
-  {
-    key: "manageStateFrameCallback",
-    value: function manageStateFrameCallback(callbackId, state) {
-      let closure_0 = callbackId;
-      _require = state;
-      const fn = function t() {
-        const _frameCallbackRegistry = global._frameCallbackRegistry;
-        const result = _frameCallbackRegistry.manageStateFrameCallback(callbackId, state);
-      };
-      fn.__closure = { callbackId, state };
-      fn.__workletHash = 5244475777443;
-      fn.__initData = __initData3;
-      const obj = require("startMapper");
-      obj.runOnUI(fn)();
-    }
-  }
-];
-
-export default _createClassDefault(FrameCallbackRegistryJS, items);

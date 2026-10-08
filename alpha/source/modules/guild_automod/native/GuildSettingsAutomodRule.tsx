@@ -1,22 +1,22 @@
-// Module ID: 17739
-// Function ID: 17740
+// Module ID: 18026
+// Function ID: 18027
 // Name: GuildSettingsAutomodRule
-// Dependencies: [5, 32, 19, 17721, 17723, 11487, 21, 4896, 587, 558, 576, 1490, 17038, 2028, 17724, 5720, 1126, 6017, 6890, 11492, 4573, 5319, 6695, 4892, 6105, 6705, 17740, 17751, 17754, 6081, 6000, 5600, 8924, 6543, 2]
+// Dependencies: [5, 32, 19, 18008, 18010, 11473, 21, 5090, 587, 558, 576, 1502, 17319, 2040, 18011, 5303, 1126, 6203, 7079, 11478, 4765, 5631, 6872, 5086, 6283, 6882, 18027, 18038, 18041, 6267, 6184, 5373, 8555, 6719, 2]
 
-// Module 17739 (GuildSettingsAutomodRule)
+// Module 18026 (GuildSettingsAutomodRule)
 import nativeDefault from "native" /* 587 */;
-import ToastUtils from "ToastUtils" /* 4573 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 6017 */;
-import ClipboardUtils from "ClipboardUtils" /* 6695 */;
-import Constants from "Constants" /* 11487 */;
-import AutomodStore from "AutomodStore" /* 17721 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 17724 */;
+import ToastUtils from "ToastUtils" /* 4765 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 6203 */;
+import ClipboardUtils from "ClipboardUtils" /* 6872 */;
+import Constants from "Constants" /* 11473 */;
+import AutomodStore from "AutomodStore" /* 18008 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 18011 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 17723 */;
+import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 18010 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let c14 = "automod-unsaved-changes";
 let obj = { stack: obj2 };
 obj2 = { marginTop: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
 let closure_15 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsAutomodRule(guildId) {
   let contentContainerStyle;
   let errorMessage;
   let isLoading;
@@ -92,7 +92,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let obj5 = hasChanges;
   ref = hasChanges.useRef(null);
   if (cResult[2] !== errorMessage) {
-    class Y {
+    class D {
       constructor() {
         if (null != errorMessage) {
           const current = ref.current;
@@ -104,12 +104,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     const items = [errorMessage];
     cResult[2] = errorMessage;
-    cResult[3] = Y;
+    cResult[3] = D;
     cResult[4] = items;
     tmp15 = items;
-    tmp14 = Y;
+    tmp14 = D;
   } else {
-    class Y {
+    class D {
       constructor() {
         if (null != errorMessage) {
           const current = ref.current;
@@ -123,19 +123,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   }
   const effect = obj5.useEffect(tmp14, tmp15);
   if (cResult[5] !== cancelEditingRule) {
-    class G {
+    class Y {
       constructor() {
         return cancelEditingRule;
       }
     }
     const items1 = [cancelEditingRule];
     cResult[5] = cancelEditingRule;
-    cResult[6] = G;
+    cResult[6] = Y;
     cResult[7] = items1;
     tmp18 = items1;
-    tmp17 = G;
+    tmp17 = Y;
   } else {
-    class G {
+    class Y {
       constructor() {
         return cancelEditingRule;
       }
@@ -146,13 +146,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   [tmp21, c14] = editingRule(obj5.useState(false), 2);
   const tmp20 = editingRule(obj5.useState(false), 2);
   if (cResult[8] !== editingRule) {
-    class G {
+    class Y {
       constructor() {
         return cancelEditingRule;
       }
     }
     if (tmp23) {
-      class G {
+      class Y {
         constructor() {
           return cancelEditingRule;
         }
@@ -163,7 +163,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     cResult[9] = tmp23;
     tmp22 = tmp23;
   } else {
-    class G {
+    class Y {
       constructor() {
         return cancelEditingRule;
       }
@@ -171,7 +171,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   }
   closure_15 = (hasChanges || tmp22) && !tmp21;
   if (cResult[10] === tmp11) {
-    class G {
+    class Y {
       constructor() {
         return cancelEditingRule;
       }
@@ -235,15 +235,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
     }
   });
-  let fn = function() {
+  function t7() {
     return closure_0(...arguments);
-  };
+  }
   cResult[10] = tmp11;
   cResult[11] = navigation;
   cResult[12] = saveEditingRule;
   cResult[13] = updateRule;
-  cResult[14] = fn;
-}) : ((guildId) => {
+  cResult[14] = t7;
+}) : (function GuildSettingsAutomodRule(guildId) {
   let Stack;
   let intl;
   let intl2;
@@ -539,7 +539,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         const obj12 = {
           variant: "danger",
           label: intl4.string(tmp2(tmp3[16]).t["92m/01"]),
-          onPress() {
+          onPress: function handleDeleteRule() {
                   const tmp = editingRule;
                   if (null != editingRule) {
                     const id = tmp.id;
@@ -650,7 +650,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                           }
                         }
                       });
-                      obj2.onConfirm = function() {
+                      obj2.onConfirm = function onConfirm() {
                         return closure_0(...arguments);
                       };
                       showConfirmModal(obj2);
@@ -666,7 +666,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         if (tmp30Result4) {
           const obj13 = {
             label: intl5.string(tmp2(tmp3[16]).t.F64hjn),
-            onPress() {
+            onPress: function handleCopyRuleId() {
                       if (null != editingRule) {
                         const obj = ClipboardUtils;
                         obj.copy(tmp.id);

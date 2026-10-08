@@ -1,20 +1,20 @@
-// Module ID: 6740
-// Function ID: 6741
+// Module ID: 6916
+// Function ID: 6917
 // Name: GuildSpaceExperiment
-// Dependencies: [1085, 1440, 558, 576, 2]
+// Dependencies: [1085, 1452, 558, 576, 2]
 // Exports: getGuildSpaceExperimentEnabled
 
-// Module 6740 (GuildSpaceExperiment)
+// Module 6916 (GuildSpaceExperiment)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const EMPTY_STRING_SNOWFLAKE_ID = Constants.EMPTY_STRING_SNOWFLAKE_ID;
 let obj = { kind: "guild", name: "2026-09-guild-spaces", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, location) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildSpaceExperimentEnabled(arg0, location) {
   let tmp = arg0;
   const obj = react;
   const cResult = obj.c(3);
@@ -33,7 +33,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, location) => {
   cResult[1] = tmp;
   cResult[2] = obj2;
   tmp3 = obj2;
-}) : ((arg0, location) => {
+}) : (function useGuildSpaceExperimentEnabled(arg0, location) {
   let tmp = arg0;
   const useConfig = apexExperiment.useConfig;
   if (arg0 == null) {

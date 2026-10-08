@@ -1,56 +1,56 @@
-// Module ID: 9987
-// Function ID: 9988
+// Module ID: 9517
+// Function ID: 9518
 // Name: MessageReactionsContent
-// Dependencies: [32, 19, 17, 4885, 2051, 2112, 7271, 4515, 1085, 21, 4618, 4892, 4896, 587, 558, 576, 504, 4527, 1342, 7272, 7273, 12, 5991, 6664, 9988, 5048, 4728, 7861, 6640, 1188, 1402, 9331, 1369, 6024, 8928, 9989, 1126, 9990, 4733, 2028, 6632, 9991, 4897, 1484, 4853, 4860, 9992, 1987, 6715, 6694, 4861, 4862, 9993, 1618, 7915, 6119, 6652, 510, 6782, 7464, 9994, 6576, 7423, 2]
+// Dependencies: [32, 19, 17, 5079, 2063, 2124, 7871, 4707, 1085, 21, 4810, 5086, 5090, 587, 558, 576, 504, 4719, 1354, 7873, 7872, 12, 6174, 6841, 9518, 5405, 4922, 8279, 6817, 1200, 1414, 8740, 1381, 6210, 8559, 9519, 1126, 9520, 4927, 2040, 6809, 9521, 5091, 1496, 5047, 5054, 9522, 1999, 6892, 6871, 5055, 5056, 9523, 1630, 8334, 6298, 6829, 510, 6958, 7939, 9524, 6752, 7898, 2]
 
-// Module 9987 (MessageReactionsContent)
+// Module 9517 (MessageReactionsContent)
 import _modDef12 from "module_12" /* 12 */;
 import get_initialized from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import useWindowDimensions from "useWindowDimensions" /* 1484 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ColorUtils from "ColorUtils" /* 4733 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import HapticUtils from "HapticUtils" /* 4861 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4862 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import timing from "timing" /* 4897 */;
-import BottomSheetModal from "BottomSheetModal" /* 6119 */;
-import FastListDefault from "FastList" /* 6576 */;
-import EmojiDefault from "Emoji" /* 6632 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6652 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6664 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7272 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 7273 */;
-import BurstReactionAnimationPreviewDefault from "BurstReactionAnimationPreview" /* 7464 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
-import generated_NoResults from "generated/NoResults" /* 7915 */;
-import useEmojiColorPalette2 from "useEmojiColorPalette" /* 9990 */;
-import SwipeableFastListDefault from "SwipeableFastList" /* 9994 */;
+import native from "native" /* 1200 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import useWindowDimensions from "useWindowDimensions" /* 1496 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ColorUtils from "ColorUtils" /* 4927 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import HapticUtils from "HapticUtils" /* 5055 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5056 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import timing from "timing" /* 5091 */;
+import BottomSheetModal from "BottomSheetModal" /* 6298 */;
+import FastListDefault from "FastList" /* 6752 */;
+import EmojiDefault from "Emoji" /* 6809 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6829 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6841 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 7872 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7873 */;
+import BurstReactionAnimationPreviewDefault from "BurstReactionAnimationPreview" /* 7939 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
+import generated_NoResults from "generated/NoResults" /* 8334 */;
+import useEmojiColorPalette2 from "useEmojiColorPalette" /* 9520 */;
+import SwipeableFastListDefault from "SwipeableFastList" /* 9524 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import MessageReactionsStore from "MessageReactionsStore" /* 7271 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import MessageReactionsStore from "MessageReactionsStore" /* 7871 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const ReactionActionCreatorsAll = ReactionActionCreators;
-let BottomSheet, _require, c36, channel, dependencyMap, importDefault, member, set;
+let BottomSheet, _require, c36, channel, dependencyMap, importDefault, member, obj1, obj13, set, tmp14Result1, tmp4Result1, tmp4Result2;
 
 let Platform;
 let c9;
@@ -72,7 +72,7 @@ let obj7;
 let obj8;
 let obj9;
 let tmp4;
-const ReactionToProfileExperimentDefault = tmp4(9988);
+const ReactionToProfileExperimentDefault = tmp4(9518);
 function RemoveAllButton(channelId) {
   let View;
   let _undefined;
@@ -195,7 +195,7 @@ function EmojiOptionsButton(channelId) {
   const items = [ChannelStore];
   const items1 = [channelId];
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
-  const tmp3 = messageId(9991)(stateFromStores);
+  const tmp3 = messageId(9521)(stateFromStores);
   const canRemoveReactions = tmp3;
   dependencyMap = tmp4;
   const items2 = [channelId, messageId, reactions[reactionSelectedIndex], tmp3];
@@ -203,17 +203,17 @@ function EmojiOptionsButton(channelId) {
     onPress: react.useCallback(() => {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { channelId, messageId, reaction, canRemoveReactions };
-      obj.openLazy(asyncRequire(9992, dependencyMap.paths), "ReactionEmojiOptionsActionSheet", obj2, "replaceTopSheet");
+      obj.openLazy(asyncRequire(9522, dependencyMap.paths), "ReactionEmojiOptionsActionSheet", obj2, "replaceTopSheet");
     }, items2),
     style: tmp.emojiOptionsButton,
     children: items3
   };
   const obj3 = { variant: "text-xs/semibold", color: "text-subtle", children: intl.string(channelId(1126).t.pCaYID) };
-  const Text = channelId(4892).Text;
+  const Text = channelId(5086).Text;
   intl = channelId(1126).intl;
   items3 = [closure_17(Text, obj3), ];
   const obj4 = { color: messageId(587).colors.ICON_SUBTLE, size: "xs" };
-  const ChevronSmallRightIcon = channelId(6715).ChevronSmallRightIcon;
+  const ChevronSmallRightIcon = channelId(6892).ChevronSmallRightIcon;
   items3[1] = closure_17(ChevronSmallRightIcon, obj4);
   return closure_18(closure_7, obj2);
 }
@@ -238,7 +238,7 @@ obj10 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
 obj11 = { lineHeight: 24, fontSize: 20, textAlign: "center", color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 let closure_21 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanManageMessages(channelId) {
   let first;
   let tmp6;
   let tmp7;
@@ -270,7 +270,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((channelId) => {
+}) : (function useCanManageMessages(channelId) {
   _require = channelId;
   let obj = require("get initialized");
   const items = [PermissionStore];
@@ -281,7 +281,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((reactions) => {
+let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReactionSelected(reactions) {
   let obj = reactions(576);
   const cResult = obj.c(7);
   reactions = reactions.reactions;
@@ -351,7 +351,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((reactions) => 
   cResult[2] = reactions;
   cResult[3] = fn;
   tmp3 = fn;
-}) : ((reactions) => {
+}) : (function useReactionSelected(reactions) {
   let isSelectedBurst;
   reactions = reactions.reactions;
   ({ emoji: importDefault, isSelectedBurst } = reactions);
@@ -395,7 +395,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((reactions) => 
   return obj;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReactors(channelId) {
   let first;
   let reactionType;
   const obj = channelId(reactionType[15]);
@@ -472,7 +472,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[6] = items1;
   tmp7 = items1;
   tmp6 = fn;
-}) : ((channelId) => {
+}) : (function useReactors(channelId) {
   let tmp3;
   channelId = channelId.channelId;
   const messageId = channelId.messageId;
@@ -513,7 +513,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
 });
 let closure_24 = tmp6;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReactorsOnScrollNative(channelId) {
   let reactors;
   let reactorsHasMore;
   let ref;
@@ -540,69 +540,64 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
             let tmp7;
             let tmp6;
             let tmp10;
-            let tmp14;
+            let tmp13;
             if (cResult[5] === reactorsHasMore) {
               tmp4 = cResult[6];
             }
-            current = tmp4;
+            const current = tmp4;
             let closure_8 = obj2.useRef(tmp4);
             if (cResult[7] !== tmp4) {
-              class I {
-                constructor() {
-                  closure_8.current = current;
-                }
-              }
+              const fn2 = function v() {
+                closure_8.current = current;
+              };
               const items = [tmp4];
               cResult[7] = tmp4;
-              cResult[8] = I;
+              cResult[8] = fn2;
               cResult[9] = items;
               tmp7 = items;
-              tmp6 = I;
+              tmp6 = fn2;
             } else {
-              class I {
-                constructor() {
-                  closure_8.current = current;
-                }
-              }
+              tmp6 = cResult[8];
               tmp7 = cResult[9];
             }
             const effect = obj2.useEffect(tmp6, tmp7);
             const _Symbol = Symbol;
             if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-              class I {
+              const fn3 = function p() {
+                const obj = _modDef12;
+                return obj.debounce((AUTO_DISMISS, current) => ref.current(AUTO_DISMISS, current), 16);
+              };
+              cResult[10] = fn3;
+              tmp10 = fn3;
+            } else {
+              tmp10 = cResult[10];
+            }
+            const tmp12 = messageId(tmp[22])(tmp10);
+            let closure_9 = tmp12;
+            const tmp11 = messageId;
+            if (cResult[11] !== tmp12) {
+              class E {
                 constructor() {
-                  closure_8.current = current;
+                  return (nativeEvent) => {
+                    nativeEvent = nativeEvent.nativeEvent;
+                    return closure_1_9(nativeEvent.contentOffset.y, nativeEvent.contentSize.height);
+                  };
                 }
               }
-              cResult[10] = tmp11;
-              tmp10 = tmp11;
+              cResult[11] = tmp12;
+              cResult[12] = E;
+              tmp13 = E;
             } else {
-              class I {
+              class E {
                 constructor() {
-                  closure_8.current = current;
+                  return (nativeEvent) => {
+                    nativeEvent = nativeEvent.nativeEvent;
+                    return closure_1_9(nativeEvent.contentOffset.y, nativeEvent.contentSize.height);
+                  };
                 }
               }
             }
-            const tmp13 = messageId(tmp[22])(tmp10);
-            let closure_9 = tmp13;
-            const tmp12 = messageId;
-            if (cResult[11] !== tmp13) {
-              class I {
-                constructor() {
-                  closure_8.current = current;
-                }
-              }
-              cResult[11] = tmp13;
-              cResult[12] = tmp15;
-              tmp14 = tmp15;
-            } else {
-              class I {
-                constructor() {
-                  closure_8.current = current;
-                }
-              }
-            }
-            return tmp12(tmp[22])(tmp14);
+            return tmp11(tmp[22])(tmp13);
           }
         }
       }
@@ -628,7 +623,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[5] = reactorsHasMore;
   cResult[6] = fn;
   tmp4 = fn;
-}) : ((channelId) => {
+}) : (function useReactorsOnScrollNative(channelId) {
   let reactors;
   let reactorsHasMore;
   let ref;
@@ -638,7 +633,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   ({ reactors, reactorsHasMore } = channelId);
   const reactionType = channelId.reactionType;
   react = undefined;
-  current = undefined;
+  let current;
   let closure_8;
   let closure_9;
   let obj = react;
@@ -676,7 +671,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
 });
 let closure_25 = tmp7;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRenderFooter(arg0, arg1) {
   let length;
   _require = arg0;
   let closure_1 = arg1;
@@ -709,7 +704,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
   cResult[2] = tmp2;
   cResult[3] = fn;
   tmp3 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useRenderFooter(arg0, arg1) {
   let length;
   let closure_1 = arg1;
   let tmp = closure_21();
@@ -728,9 +723,10 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, burst_count, arg4) => {
+let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRenderItem(arg0, arg1, arg2, burst_count, arg4) {
   let closure_0;
   let closure_1;
+  let closure_5;
   let first;
   _require = arg0;
   importDefault = arg1;
@@ -741,7 +737,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, ar
   let obj = require("react");
   const cResult = obj.c(12);
   const tmp3 = closure_21();
-  let closure_5 = tmp3;
+  react = tmp3;
   const tmp4 = importDefault;
   const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -776,98 +772,94 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, ar
       }
     }
   }
-  const fn = function v(arg0, arg1) {
-    let NORMAL;
-    let channelId;
-    let emoji;
-    let guildMemberAvatarSource;
-    let items;
-    let openProfile;
-    let tmp10;
-    let tmp14Result;
-    let tmp21;
-    let user;
-    user = user[arg1];
-    const id = user.id;
-    const diff = user.length - 1;
-    channel = channel.getChannel(NORMAL);
-    let guildId = null;
-    const tmp2 = NORMAL;
-    if (null != channel) {
-      guildId = channel.getGuildId();
-    }
-    const obj3 = messageId(burst_count[25]);
-    let nickname = obj3.getNickname(guildId, tmp2, user);
-    if (nickname == null) {
-      const tmp4Result = messageId(burst_count[26]);
-      nickname = tmp4Result.getGlobalName(user);
-    }
-    member = null;
-    if (null != guildId) {
-      member = member.getMember(guildId, id);
-    }
-    if (burst_count.burst_count > 0) {
-      NORMAL = closure_0(tmp5[19]).ReactionTypes.BURST;
-      tmp10 = closure_0;
-    } else {
-      NORMAL = closure_0(tmp5[19]).ReactionTypes.NORMAL;
-      tmp10 = closure_0;
-    }
-    const obj2 = { style: closure_5.listRow, children: items };
-    const obj4 = { style: closure_5.avatar, size: tmp10(burst_count[29]).AvatarSizes.SMALL, source: guildMemberAvatarSource };
-    const tmp4Result3 = messageId(burst_count[28]);
-    const Avatar = tmp10(tmp5[29]).Avatar;
-    const avatarSource = user.getAvatarSource(guildId);
-    guildMemberAvatarSource = avatarSource;
-    const tmp12 = closure_1_18;
-    const tmp13 = closure_1_9;
-    if (null != guildId) {
-      let avatar;
-      if (member != null) {
-        avatar = member.avatar;
+  class I {
+    constructor(arg0, arg1) {
+      obj = closure_0[arg1];
+      closure_0 = obj;
+      id = obj.id;
+      diff = closure_0.length - 1;
+      tmp2 = NORMAL;
+      channel = closure_1_11.getChannel(NORMAL);
+      guildId = null;
+      if (null != channel) {
+        guildId = channel.getGuildId();
       }
+      tmp4 = closure_1;
+      tmp5 = closure_3;
+      obj3 = closure_1(closure_3[25]);
+      nickname = obj3.getNickname(guildId, tmp2, obj);
+      if (nickname == null) {
+        tmp4Result = tmp4(tmp5[26]);
+        nickname = tmp4Result.getGlobalName(obj);
+      }
+      member = null;
+      if (null != guildId) {
+        tmp8 = closure_1_12;
+        member = closure_1_12.getMember(guildId, id);
+      }
+      if (closure_3.burst_count > 0) {
+        tmp11 = closure_0;
+        NORMAL = closure_0(tmp5[19]).ReactionTypes.BURST;
+        tmp10 = closure_0;
+      } else {
+        tmp9 = closure_0;
+        NORMAL = closure_0(tmp5[19]).ReactionTypes.NORMAL;
+        tmp10 = closure_0;
+      }
+      obj1 = { style: closure_5.listRow, children: null };
+      tmp14 = closure_1_17;
+      tmp12 = closure_1_18;
+      tmp13 = closure_1_9;
+      tmp4Result1 = tmp4(tmp5[28]);
+      obj11 = { style: closure_5.avatar, size: null, source: null };
+      Avatar = tmp10(tmp5[29]).Avatar;
+      obj11.size = tmp10(tmp5[29]).AvatarSizes.SMALL;
+      avatarSource = obj.getAvatarSource(guildId);
       guildMemberAvatarSource = avatarSource;
-      if (null != avatar) {
-        const tmp4Result4 = messageId(burst_count[30]);
-        guildMemberAvatarSource = tmp4Result4.getGuildMemberAvatarSource(member, user);
+      if (null != guildId) {
+        avatar = undefined;
+        if (member != null) {
+          avatar = member.avatar;
+        }
+        guildMemberAvatarSource = avatarSource;
+        if (null != avatar) {
+          tmp4Result2 = tmp4(tmp5[30]);
+          guildMemberAvatarSource = tmp4Result2.getGuildMemberAvatarSource(member, obj);
+        }
       }
-    }
-    const obj5 = { leading: closure_1_17(Avatar, obj4), label: closure_1_17(messageId(burst_count[31]), { user, nick: nickname }), trailing: tmp14Result, onPress: tmp21, onLongPress: openProfile };
-    tmp14Result = null;
-    if (closure_4) {
+      obj12 = { leading: tmp14(Avatar, obj11), label: tmp14(tmp4(tmp5[31]), { user: obj, nick: nickname }), trailing: null, onPress: null, onLongPress: null };
+      obj11.source = guildMemberAvatarSource;
       tmp14Result = null;
-      const tmp10Result = tmp10(burst_count[32]);
-      if (tmp10Result.isAndroid()) {
-        const obj6 = {
-          onPress() {
-                const tmp = ReactionActionCreators;
-                obj = { channelId, messageId, emoji: emoji.emoji, location: ReactionActionCreators.ReactionLocations.MESSAGE, userId: obj.id, options: { burst: NORMAL === MessageReactionsTypes.ReactionTypes.BURST } };
-                const removeReaction = tmp.removeReaction;
-                ({ burst: NORMAL === MessageReactionsTypes.ReactionTypes.BURST });
-                return removeReaction(obj);
-              },
-          children: closure_1_17(tmp10(burst_count[33]).XSmallIcon, {})
-        };
-        tmp14Result = tmp14(reactionToProfileEnabled, obj6);
+      if (closure_4) {
+        tmp10Result = tmp10(tmp5[32]);
+        tmp14Result = null;
+        if (tmp10Result.isAndroid()) {
+          tmp20 = reactionToProfileEnabled;
+          obj13 = { onPress: null, children: null };
+          obj13.onPress = function onPress() { /* body not rendered: F141153 */ };
+          obj13.children = tmp14(tmp10(tmp5[33]).XSmallIcon, {});
+          tmp14Result = tmp14(reactionToProfileEnabled, obj13);
+        }
       }
+      openProfile = function openProfile() { /* body not rendered: F141152 */ };
+      obj12.trailing = tmp14Result;
+      tmp21 = undefined;
+      if (reactionToProfileEnabled) {
+        tmp21 = openProfile;
+      }
+      obj12.onPress = tmp21;
+      obj12.onLongPress = openProfile;
+      items = [, ];
+      items[0] = tmp14(tmp4Result1, obj12);
+      tmp14Result1 = null;
+      if (arg1 !== diff) {
+        tmp14Result1 = tmp14(tmp4(tmp5[34]), {});
+      }
+      items[1] = tmp14Result1;
+      obj1.children = items;
+      return tmp12(tmp13, obj1);
     }
-    openProfile = function openProfile() {
-      let localUser;
-      localUser = { userId: id, channelId, messageId, localUser, sourceAnalyticsLocations: analyticsLocations };
-      showUserProfileActionSheetDefault(localUser, "stack");
-    };
-    tmp21 = undefined;
-    if (reactionToProfileEnabled) {
-      tmp21 = openProfile;
-    }
-    items = [closure_1_17(tmp4Result3, obj5), ];
-    let tmp14Result2 = null;
-    if (arg1 !== diff) {
-      tmp14Result2 = tmp14(tmp4(tmp5[34]), {});
-    }
-    items[1] = tmp14Result2;
-    return tmp12(tmp13, obj2);
-  };
+  }
   cResult[1] = arg4;
   cResult[2] = analyticsLocations;
   cResult[3] = arg2;
@@ -878,9 +870,9 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, ar
   cResult[8] = arg0;
   cResult[9] = tmp3.avatar;
   cResult[10] = tmp3.listRow;
-  cResult[11] = fn;
-  tmp6 = fn;
-}) : ((arg0, arg1, arg2, arg3, arg4) => {
+  cResult[11] = I;
+  tmp6 = I;
+}) : (function useRenderItem(arg0, arg1, arg2, arg3, arg4) {
   let burst_count;
   let closure_1;
   let closure_5;
@@ -989,7 +981,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, ar
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, burst_count, arg3) => {
+let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRenderQuickActions(arg0, arg1, burst_count, arg3) {
   let closure_0;
   let closure_3;
   let height;
@@ -1015,7 +1007,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, bu
       }
     }
   }
-  const fn = function l(arg0, arg1) {
+  const fn = function s(arg0, arg1) {
     let emoji;
     let intl;
     let obj2;
@@ -1053,7 +1045,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, bu
   cResult[5] = tmp2.buttonRow;
   cResult[6] = fn;
   tmp3 = fn;
-}) : ((arg0, arg1, arg2, arg3) => {
+}) : (function useRenderQuickActions(arg0, arg1, arg2, arg3) {
   let height;
   let closure_0 = arg0;
   let closure_1 = arg1;
@@ -1094,7 +1086,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, bu
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactionTab(arg0) {
   let animated;
   let items1;
   let reaction;
@@ -1168,7 +1160,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult4 = get_initialized;
   const stateFromStores = tmpResult4.useStateFromStores(tmp15, tmp16);
-  const AnimateEmoji = tmp(2028).AnimateEmoji;
+  const AnimateEmoji = tmp(2040).AnimateEmoji;
   const tmp19 = !stateFromStores && AnimateEmoji.useSetting();
   if (cResult[8] === emoji.animated) {
     if (cResult[9] === emoji.id) {
@@ -1260,7 +1252,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                           }
                           const obj5 = { style: tmp27, accessible: true, accessibilityLabel: emoji.name, accessibilityState: tmp28, children: items1 };
                           items1 = [tmp31, tmp39];
-                          const tmp45 = authStore4(React4, obj5, name);
+                          const tmp45 = authStore5(React4, obj5, name);
                           cResult[36] = emoji.name;
                           cResult[37] = name;
                           cResult[38] = tmp28;
@@ -1335,7 +1327,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[10] = tmp19;
   cResult[11] = emojiURL;
   tmp20 = emojiURL;
-}) : ((arg0) => {
+}) : (function ReactionTab(arg0) {
   let animated;
   let items2;
   let items3;
@@ -1372,7 +1364,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items = [AccessibilityStore];
   const tmp3Result2 = get_initialized;
   const stateFromStores = tmp3Result2.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const AnimateEmoji = tmp3(2028).AnimateEmoji;
+  const AnimateEmoji = tmp3(2040).AnimateEmoji;
   let emojiURL;
   if (null != emoji.id) {
     const obj3 = { id: null, animated, size: 48 };
@@ -1389,7 +1381,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const items1 = [tmp.tabContainer, , ];
   let tabContainerSelected = null;
-  const tmp15 = authStore4;
+  const tmp15 = authStore5;
   const tmp16 = React4;
   if (selected) {
     tabContainerSelected = tmp.tabContainerSelected;
@@ -1412,7 +1404,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items4 = [closure_17(EmojiDefault, obj6), ];
   const items5 = [tmp.reactionCountText, , ];
   let prop = null;
-  const Text = tmp3(4892).Text;
+  const Text = tmp3(5086).Text;
   const tmp19 = closure_17;
   if (selected) {
     prop = tmp.reactionCountTextSelected;
@@ -1434,7 +1426,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 const __initData = { code: "function MessageReactionsContentTsx1(){const{useReducedMotion,buttonWidth,withTiming}=this.__closure;return{maxWidth:useReducedMotion?buttonWidth.get():withTiming(buttonWidth.get(),{duration:200})};}" };
 const __initData2 = { code: "function MessageReactionsContentTsx2(){const{useReducedMotion,textOpacity,withTiming}=this.__closure;return{opacity:useReducedMotion?textOpacity.get():withTiming(textOpacity.get(),{duration:125}),color:'white',fontSize:14,marginLeft:8,textAlignVertical:'center'};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((setReactionSelectedIndex) => {
+let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactionTabs(setReactionSelectedIndex) {
   let reactionSelectedIndex;
   let reactions;
   let tmp5;
@@ -1457,7 +1449,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((setReactionSel
   } else {
     [tmp5, tmp6] = cResult;
   }
-  const obj4 = setReactionSelectedIndex(6694);
+  const obj4 = setReactionSelectedIndex(6871);
   const tidaWebformEnabled = obj4.useExperiment(tmp5, tmp6).tidaWebformEnabled;
   const tmp7 = setReactionSelectedIndex;
   if (cResult[2] === reactionSelectedIndex) {
@@ -1497,8 +1489,8 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((setReactionSel
       }
     }
     ({ tab: obj5.tabStyle, tabActive: obj5.tabStyleActive, tabSelected: obj5.tabStyleSelected } = tmp4);
-    const obj8 = { tabs: tmp8, tabStyle: null, tabStyleActive: null, tabStyleSelected: null, tabIndexSelected: reactionSelectedIndex, onSelect: tmp11, initialNumTabsToRender: tmp(4527).MAX_REACTIONS };
-    const tmp7Result = tmp7(9993);
+    const obj8 = { tabs: tmp8, tabStyle: null, tabStyleActive: null, tabStyleSelected: null, tabIndexSelected: reactionSelectedIndex, onSelect: tmp11, initialNumTabsToRender: tmp(4719).MAX_REACTIONS };
+    const tmp7Result = tmp7(9523);
     cResult[9] = reactionSelectedIndex;
     cResult[10] = tmp4.tab;
     cResult[11] = tmp4.tabActive;
@@ -1535,7 +1527,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((setReactionSel
   cResult[3] = reactions;
   cResult[4] = mapped;
   tmp8 = mapped;
-}) : ((setReactionSelectedIndex) => {
+}) : (function ReactionTabs(setReactionSelectedIndex) {
   let items;
   let items1;
   let obj6;
@@ -1544,7 +1536,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((setReactionSel
   let tmp = closure_21();
   ({ reactions, reactionSelectedIndex } = setReactionSelectedIndex);
   setReactionSelectedIndex = setReactionSelectedIndex.setReactionSelectedIndex;
-  let obj = setReactionSelectedIndex(6694);
+  let obj = setReactionSelectedIndex(6871);
   let tmp2 = closure_18;
   const obj2 = { style: tmp.reactionTab, children: items };
   const tidaWebformEnabled = obj.useExperiment({ location: "ReactionTabs" }, { autoTrackExposure: false }).tidaWebformEnabled;
@@ -1568,15 +1560,15 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((setReactionSel
       const result = obj.triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
       setReactionSelectedIndex(arg0);
     },
-    initialNumTabsToRender: reactionSelectedIndex(4527).MAX_REACTIONS
+    initialNumTabsToRender: reactionSelectedIndex(4719).MAX_REACTIONS
   };
   ({ tab: obj3.tabStyle, tabActive: obj3.tabStyleActive, tabSelected: obj3.tabStyleSelected } = tmp);
-  const tmp5 = setReactionSelectedIndex(9993);
-  items = [closure_17(tmp5, obj4), closure_17(setReactionSelectedIndex(8928), { outer: true }), ];
+  const tmp5 = setReactionSelectedIndex(9523);
+  items = [closure_17(tmp5, obj4), closure_17(setReactionSelectedIndex(8559), { outer: true }), ];
   const obj5 = { style: tmp.removeButtonContainer, children: items1 };
   const obj7 = { style: tmp.emojiTextIdentifier, variant: "eyebrow", color: "text-default", children: obj6.getReactionEmojiName(reactions[reactionSelectedIndex].emoji) };
-  const Text = reactionSelectedIndex(4892).Text;
-  obj6 = reactionSelectedIndex(4527);
+  const Text = reactionSelectedIndex(5086).Text;
+  obj6 = reactionSelectedIndex(4719);
   items1 = [closure_17(Text, obj7), ];
   const obj12 = {};
   const tmp6 = tidaWebformEnabled ? EmojiOptionsButton : RemoveAllButton;
@@ -1587,7 +1579,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((setReactionSel
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 const MessageReactionsContent_SwipableBounced = "MessageReactionsContent_SwipableBounced";
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReactionsEmpty() {
   let tmp12;
   let tmp8;
   let tmp9;
@@ -1644,7 +1636,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[5] = tmp12;
   cResult[6] = tmp16;
   tmp15 = tmp16;
-}) : (() => {
+}) : (function MessageReactionsEmpty() {
   let BottomSheetView;
   let RefreshEmptyState;
   let intl;
@@ -1668,7 +1660,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 let Storage = Storage2.Storage;
 let closure_36 = Storage.get("MessageReactionsContent_SwipableBounced", false);
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReactionsContent(channelId) {
   let NORMAL;
   let disableManage;
   let disableTabs;
@@ -1805,7 +1797,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[2] = reactions;
   cResult[3] = obj4;
   tmp6 = obj4;
-}) : ((channelId) => {
+}) : (function MessageReactionsContent(channelId) {
   let NORMAL;
   let disableManage;
   let emoji;
@@ -1819,10 +1811,11 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   let reactors;
   let reactorsHasMore;
   let setReactionSelectedIndex;
-  let tmp18Result;
-  let tmp18Result3;
-  let tmp18Result4;
+  let tmp21Result;
+  let tmp21Result3;
+  let tmp21Result4;
   let tmp5;
+  let tmp7;
   channelId = channelId.channelId;
   ({ messageId, reactions, disableManage } = channelId);
   ({ emoji, isSelectedBurst } = channelId);
@@ -1838,62 +1831,65 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const reactionSelected = tmp2.reactionSelected;
   ({ reactionSelectedIndex, setReactionSelectedIndex } = tmp2);
   if (null != reactionSelected.me_vote) {
-    NORMAL = channelId(7272).ReactionTypes.VOTE;
+    NORMAL = channelId(7873).ReactionTypes.VOTE;
     tmp5 = channelId;
+    tmp7 = channelId;
   } else if (reactionSelected.burst_count > 0) {
-    NORMAL = channelId(7272).ReactionTypes.BURST;
+    NORMAL = channelId(7873).ReactionTypes.BURST;
     tmp5 = channelId;
+    tmp7 = channelId;
   } else {
-    NORMAL = channelId(7272).ReactionTypes.NORMAL;
+    NORMAL = channelId(7873).ReactionTypes.NORMAL;
     tmp5 = channelId;
+    tmp7 = channelId;
   }
   ({ reactors, reactorsHasMore } = closure_24({ channelId, messageId, reaction: reactionSelected, reactionType: NORMAL }));
   closure_24({ channelId, messageId, reaction: reactionSelected, reactionType: NORMAL });
   const items = [ChannelStore];
   const items1 = [channelId];
-  const tmp5Result = tmp5(504);
-  const stateFromStores = tmp5Result.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
-  const tmp5Result3 = tmp5(6782);
-  const isActiveChannelOrUnarchivableThread = tmp5Result3.useIsActiveChannelOrUnarchivableThread(stateFromStores);
-  const tmp14 = useSafeAreaInsetsDefault();
-  const tmp15 = closure_22(channelId) && !disableManage && isActiveChannelOrUnarchivableThread;
+  const tmp7Result = tmp7(504);
+  const stateFromStores = tmp7Result.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
+  const tmp7Result3 = tmp7(6958);
+  const isActiveChannelOrUnarchivableThread = tmp7Result3.useIsActiveChannelOrUnarchivableThread(stateFromStores);
+  const tmp17 = useSafeAreaInsetsDefault();
+  const tmp18 = closure_22(channelId) && !disableManage && isActiveChannelOrUnarchivableThread;
   let name = reactionSelected.emoji.id;
   if (name == null) {
     name = reactionSelected.emoji.name;
   }
-  const obj = { accessibilityLabel: intl.string(tmp5(1126).t.gHp0C4), footerSize: v48, insetBottom: tmp14.bottom, onScroll: closure_25({ channelId, messageId, reactionSelected, reactors, reactorsHasMore, reactionType: NORMAL }), renderFooter: closure_26(reactors, reactorsHasMore), renderItem: closure_27(reactors, messageId, channelId, reactionSelected, tmp15), renderQuickActions: closure_28(channelId, messageId, reactionSelected, reactors), itemSize: v48, sections: items2, style: tmp.container };
-  intl = tmp5(1126).intl;
+  const obj = { accessibilityLabel: intl.string(tmp7(1126).t.gHp0C4), footerSize: v48, insetBottom: tmp17.bottom, onScroll: closure_25({ channelId, messageId, reactionSelected, reactors, reactorsHasMore, reactionType: NORMAL }), renderFooter: closure_26(reactors, reactorsHasMore), renderItem: closure_27(reactors, messageId, channelId, reactionSelected, tmp18), renderQuickActions: closure_28(channelId, messageId, reactionSelected, reactors), itemSize: v48, sections: items2, style: tmp.container };
+  intl = tmp7(1126).intl;
   items2 = [reactors.length];
   const callback = react.useCallback(() => {
     c36 = true;
     const Storage = channelId(dependencyMap[57]).Storage;
     const result = Storage.set(MessageReactionsContent_SwipableBounced, true);
   }, []);
-  const tmp5Result4 = tmp5(1369);
-  const obj2 = { scrollable: true, backdropOpacity: tmp5(7423).BACKDROP_OPACITY, backdropChildren: tmp18Result, header: tmp18Result3, children: tmp18Result4 };
-  const tmp17 = tmp5Result4.isIOS() && tmp15;
-  BottomSheet = tmp5(6652).BottomSheet;
-  tmp18Result = null;
-  if (NORMAL === tmp5(7272).ReactionTypes.BURST) {
+  const tmp7Result4 = tmp7(1381);
+  const obj2 = { scrollable: true, backdropOpacity: tmp7(7898).BACKDROP_OPACITY, backdropChildren: tmp21Result, header: tmp21Result3, children: tmp21Result4 };
+  const tmp20 = tmp7Result4.isIOS() && tmp18;
+  BottomSheet = tmp7(6829).BottomSheet;
+  tmp21Result = null;
+  if (NORMAL === tmp5(7873).ReactionTypes.BURST) {
     const obj3 = { style: closure_8.absoluteFill, pointerEvents: "none", children: closure_17(BurstReactionAnimationPreviewDefault, obj4) };
     obj4 = { emoji: reactionSelected.emoji, reactionType: NORMAL, messageId, channelId };
-    tmp18Result = tmp18(closure_9, obj3);
+    tmp21Result = tmp21(closure_9, obj3);
   }
-  tmp18Result3 = null;
+  tmp21Result3 = null;
   if (true !== flag) {
     const obj5 = { reactions, reactionSelectedIndex, setReactionSelectedIndex, messageId, channelId };
-    tmp18Result3 = tmp18(closure_34, obj5);
+    tmp21Result3 = tmp21(closure_34, obj5);
   }
-  if (tmp17) {
+  if (tmp20) {
     const obj6 = { inActionSheet: true, bounceFirstRowOnMount: !c36, onBounceSwipable: callback };
-    const tmp13Result = SwipeableFastListDefault;
+    const tmp16Result = SwipeableFastListDefault;
     const merged = Object.assign(obj);
-    tmp18Result4 = tmp18(tmp13Result, obj6, name);
+    tmp21Result4 = tmp21(tmp16Result, obj6, name);
   } else {
     const obj7 = { inActionSheet: true };
-    const tmp13Result2 = FastListDefault;
+    const tmp16Result2 = FastListDefault;
     const merged1 = Object.assign(obj);
-    tmp18Result4 = tmp18(tmp13Result2, obj7, name);
+    tmp21Result4 = tmp21(tmp16Result2, obj7, name);
   }
   return closure_17(BottomSheet, obj2);
 });

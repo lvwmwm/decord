@@ -1,23 +1,23 @@
-// Module ID: 17081
-// Function ID: 17082
+// Module ID: 17362
+// Function ID: 17363
 // Name: MessageRequestList
-// Dependencies: [19, 17, 1085, 21, 4896, 587, 1126, 558, 576, 4574, 4813, 4907, 5099, 12099, 1252, 17082, 1188, 4811, 5916, 14747, 8924, 1618, 17087, 17089, 12098, 17092, 4892, 1369, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 587, 1126, 558, 576, 4766, 5007, 5101, 5940, 12177, 1264, 17363, 1200, 5005, 6189, 15008, 8555, 1630, 17368, 17370, 12176, 17373, 5086, 1381, 2]
 
-// Module 17081 (MessageRequestList)
+// Module 17362 (MessageRequestList)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import transitionToChannel from "transitionToChannel" /* 4907 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import transitionToChannel from "transitionToChannel" /* 5101 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let hasSingleMessageRequest, importDefault, isRestricted, obj1, tmp15, tmp4;
+let importDefault;
 
 let c9;
 let closure_4;
@@ -42,17 +42,20 @@ obj4 = { flex: 1, paddingHorizontal: 16, alignSelf: "stretch", backgroundColor: 
 let closure_11 = createStyles(obj);
 const constants = { ACCEPT_MESSAGE_REQUEST: "accept-message-request", IGNORE_MESSAGE_REQUEST: "ignore-message-request", PREVIEW_MESSAGE_REQUEST: "preview-message-request" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRestricted) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function PendingMessageRequestRow(isRestricted) {
   let first;
   let goToMessageRequestPreview;
+  let hasSingleMessageRequest;
   let intl;
   let intl2;
+  let intl3;
   let isAcceptLoading;
   let isLastRow;
   let isOptimisticAccepted;
   let isOptimisticRejected;
   let isRejectLoading;
   let isUserProfileLoading;
+  let items1;
   let items2;
   let items3;
   let messageRequest;
@@ -68,7 +71,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRestricted) 
   const channel = messageRequest.channel;
   const id = channel.id;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function n() {
+    const fn = function s() {
       let intl;
       const obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: intl.string(goToMessageRequestPreview(str[6]).t["EDYbS+"]), icon: hasSingleMessageRequest(str[10]) };
       const open = hasSingleMessageRequest(str[9]).open;
@@ -118,447 +121,303 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRestricted) 
               if (cResult[17] === tmp11) {
                 if (cResult[18] === tmp10) {
                   let tmp13;
+                  let tmp15;
                   if (cResult[19] === tmp12) {
                     tmp13 = cResult[20];
                   }
                   const _Symbol = Symbol;
-                  class V {
-                    constructor() {
-                      const obj = AnalyticsUtilsDefault;
-                      const obj2 = { is_spam: false, channel_id: channel.id, other_user_id: str.id };
-                      obj.track(AnalyticEvents.MESSAGE_REQUEST_PREVIEW_VIEWED, obj2);
-                      goToMessageRequestPreview();
-                    }
-                  }
-                  if (tmp16 === Symbol.for("react.memo_cache_sentinel")) {
-                    let obj2 = { name: constants.ACCEPT_MESSAGE_REQUEST, label: obj5.string(tmp(tmp2[6]).t.hSLLWi) };
-                    class V {
-                      constructor() {
-                        const obj = AnalyticsUtilsDefault;
-                        const obj2 = { is_spam: false, channel_id: channel.id, other_user_id: str.id };
-                        obj.track(AnalyticEvents.MESSAGE_REQUEST_PREVIEW_VIEWED, obj2);
-                        goToMessageRequestPreview();
-                      }
-                    }
-                    const items = [obj2, , ];
-                    ({ name: constants.IGNORE_MESSAGE_REQUEST, label: intl.string(tmp(str[6]).t.fIBuSD) });
+                  if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
+                    let obj2 = { name: constants.ACCEPT_MESSAGE_REQUEST, label: intl.string(tmp(tmp2[6]).t.hSLLWi) };
                     intl = tmp(tmp2[6]).intl;
-                    class P {
-                      constructor() {
-                        rejectMessageRequest(channel.id);
-                      }
-                    }
-                    const obj4 = { name: constants.PREVIEW_MESSAGE_REQUEST, label: intl2.string(tmp(str[6]).t.HjgsKJ) };
+                    const items = [obj2, , ];
+                    const obj3 = { name: constants.IGNORE_MESSAGE_REQUEST, label: intl2.string(tmp(str[6]).t.fIBuSD) };
                     intl2 = tmp(tmp2[6]).intl;
+                    items[1] = obj3;
+                    const obj4 = { name: constants.PREVIEW_MESSAGE_REQUEST, label: intl3.string(tmp(str[6]).t.HjgsKJ) };
+                    intl3 = tmp(tmp2[6]).intl;
                     items[2] = obj4;
                     cResult[21] = items;
+                    tmp15 = items;
+                  } else {
+                    tmp15 = cResult[21];
                   }
                   if (cResult[22] === (undefined !== isRestricted && isRestricted)) {
                     if (cResult[23] === messageRequest.channel) {
-                      let tmp21;
+                      let tmp19;
+                      let tmp23;
                       if (cResult[24] === messageRequest.user) {
-                        tmp21 = cResult[25];
+                        tmp19 = cResult[25];
                       }
                       const actionContainer = tmp5.actionContainer;
                       if (cResult[26] !== str) {
+                        const intl4 = tmp(tmp2[6]).intl;
+                        const formatToPlainString = intl4.formatToPlainString;
                         let str1;
-                        const intl3 = tmp(tmp2[6]).intl;
-                        const formatToPlainString = intl3.formatToPlainString;
-                        class V {
-                          constructor() {
-                            const obj = AnalyticsUtilsDefault;
-                            const obj2 = { is_spam: false, channel_id: channel.id, other_user_id: str.id };
-                            obj.track(AnalyticEvents.MESSAGE_REQUEST_PREVIEW_VIEWED, obj2);
-                            goToMessageRequestPreview();
-                          }
-                        }
                         const v6p0yBo = tmp(tmp2[6]).t["6p0yBo"];
                         if (str != null) {
                           str1 = str.toString();
                         }
-                        const obj6 = { name: str1 };
+                        const obj5 = { name: str1 };
+                        const formatToPlainStringResult = formatToPlainString(v6p0yBo, obj5);
                         cResult[26] = str;
-                        cResult[27] = formatToPlainString(v6p0yBo, obj6);
-                        formatToPlainString(v6p0yBo, obj6);
-                        class P {
-                          constructor() {
-                            rejectMessageRequest(channel.id);
-                          }
-                        }
+                        cResult[27] = formatToPlainStringResult;
+                        tmp23 = formatToPlainStringResult;
+                      } else {
+                        tmp23 = cResult[27];
                       }
-                      class V {
-                        constructor() {
-                          const obj = AnalyticsUtilsDefault;
-                          const obj2 = { is_spam: false, channel_id: channel.id, other_user_id: str.id };
-                          obj.track(AnalyticEvents.MESSAGE_REQUEST_PREVIEW_VIEWED, obj2);
-                          goToMessageRequestPreview();
-                        }
-                      }
+                      const tmp28 = undefined !== isRestricted && isRestricted ? tmp5.acceptButtonRestricted : tmp5.acceptButton;
                       if (cResult[28] === tmp5.actionButton) {
-                        let tmp31;
-                        let tmp32;
-                        if (cResult[29] === tmp30) {
-                          tmp31 = cResult[30];
+                        let tmp29;
+                        let tmp30;
+                        if (cResult[29] === tmp28) {
+                          tmp29 = cResult[30];
                         }
                         if (cResult[31] === isAcceptLoading) {
                           if (cResult[32] === isOptimisticAccepted) {
                             if (cResult[33] === isUserProfileLoading) {
                               if (cResult[34] === tmp5.activityIndicator) {
-                                tmp32 = cResult[35];
+                                tmp30 = cResult[35];
                               }
                               if (cResult[36] === (isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected)) {
                                 if (cResult[37] === tmp11) {
-                                  if (cResult[38] === tmp25) {
-                                    if (cResult[39] === tmp31) {
-                                      let tmp37;
-                                      if (cResult[40] === tmp32) {
-                                        tmp37 = cResult[41];
+                                  if (cResult[38] === tmp23) {
+                                    if (cResult[39] === tmp29) {
+                                      let tmp36;
+                                      let tmp39;
+                                      let tmp44;
+                                      if (cResult[40] === tmp30) {
+                                        tmp36 = cResult[41];
                                       }
                                       if (cResult[42] !== str) {
+                                        const intl5 = tmp(tmp2[6]).intl;
+                                        const formatToPlainString2 = intl5.formatToPlainString;
                                         let str2;
-                                        const intl4 = tmp(tmp2[6]).intl;
-                                        const formatToPlainString2 = intl4.formatToPlainString;
-                                        class V {
-                                          constructor() {
-                                            const obj = AnalyticsUtilsDefault;
-                                            const obj2 = { is_spam: false, channel_id: channel.id, other_user_id: str.id };
-                                            obj.track(AnalyticEvents.MESSAGE_REQUEST_PREVIEW_VIEWED, obj2);
-                                            goToMessageRequestPreview();
-                                          }
-                                        }
                                         const prop = tmp(tmp2[6]).t["C9Xe6+"];
                                         if (str != null) {
                                           str2 = str.toString();
                                         }
-                                        const obj7 = { name: str2 };
+                                        const obj6 = { name: str2 };
+                                        const formatToPlainString2Result = formatToPlainString2(prop, obj6);
                                         cResult[42] = str;
-                                        cResult[43] = formatToPlainString2(prop, obj7);
-                                        formatToPlainString2(prop, obj7);
-                                        class P {
-                                          constructor() {
-                                            rejectMessageRequest(channel.id);
-                                          }
-                                        }
+                                        cResult[43] = formatToPlainString2Result;
+                                        tmp39 = formatToPlainString2Result;
+                                      } else {
+                                        tmp39 = cResult[43];
                                       }
                                       if (cResult[44] === isOptimisticRejected) {
                                         if (cResult[45] === isRejectLoading) {
+                                          if (cResult[46] === tmp5.activityIndicator) {
+                                            tmp44 = cResult[47];
+                                          }
                                           if (cResult[48] === (isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected)) {
                                             if (cResult[49] === tmp10) {
                                               if (cResult[50] === tmp5.actionButton) {
-                                                if (cResult[51] === tmp41) {
+                                                if (cResult[51] === tmp39) {
                                                   let tmp50;
-                                                  if (cResult[52] === tmp46) {
+                                                  if (cResult[52] === tmp44) {
                                                     tmp50 = cResult[53];
                                                   }
                                                   if (cResult[54] === tmp5.actionContainer) {
-                                                    if (cResult[55] === tmp37) {
-                                                      let tmp54;
+                                                    if (cResult[55] === tmp36) {
+                                                      let tmp53;
                                                       if (cResult[56] === tmp50) {
-                                                        tmp54 = cResult[57];
+                                                        tmp53 = cResult[57];
                                                       }
                                                       if (cResult[58] === tmp5.rowContainer) {
-                                                        if (cResult[59] === tmp21) {
+                                                        if (cResult[59] === tmp19) {
                                                           let tmp57;
-                                                          let tmp60;
-                                                          if (cResult[60] === tmp54) {
+                                                          let tmp61;
+                                                          if (cResult[60] === tmp53) {
                                                             tmp57 = cResult[61];
                                                           }
                                                           if (cResult[62] !== isLastRow) {
-                                                            let tmp61 = null;
+                                                            let tmp62 = null;
                                                             if (!isLastRow) {
-                                                              tmp61 = closure_8(tmp(tmp2[20]).FormDivider, { iconPush: true, outer: true });
+                                                              tmp62 = closure_8(tmp(tmp2[20]).FormDivider, { iconPush: true, outer: true });
                                                             }
-                                                            class V {
-                                                              constructor() {
-                                                                const obj = AnalyticsUtilsDefault;
-                                                                const obj2 = { is_spam: false, channel_id: channel.id, other_user_id: str.id };
-                                                                obj.track(AnalyticEvents.MESSAGE_REQUEST_PREVIEW_VIEWED, obj2);
-                                                                goToMessageRequestPreview();
-                                                              }
-                                                            }
-                                                            cResult[63] = tmp61;
-                                                            tmp60 = tmp61;
+                                                            cResult[62] = isLastRow;
+                                                            cResult[63] = tmp62;
+                                                            tmp61 = tmp62;
                                                           } else {
-                                                            tmp60 = cResult[63];
+                                                            tmp61 = cResult[63];
                                                           }
                                                           if (cResult[64] === tmp13) {
                                                             if (cResult[65] === tmp12) {
                                                               if (cResult[66] === tmp5.pressableRow) {
                                                                 if (cResult[67] === tmp57) {
-                                                                  let tmp63;
-                                                                  if (cResult[68] === tmp60) {
-                                                                    tmp63 = cResult[69];
+                                                                  let tmp64;
+                                                                  if (cResult[68] === tmp61) {
+                                                                    tmp64 = cResult[69];
                                                                   }
-                                                                  return tmp63;
+                                                                  return tmp64;
                                                                 }
                                                               }
                                                             }
                                                           }
-                                                          class V {
-                                                            constructor() {
-                                                              const obj = AnalyticsUtilsDefault;
-                                                              const obj2 = { is_spam: false, channel_id: channel.id, other_user_id: str.id };
-                                                              obj.track(AnalyticEvents.MESSAGE_REQUEST_PREVIEW_VIEWED, obj2);
-                                                              goToMessageRequestPreview();
-                                                            }
-                                                          }
-                                                          const items1 = [tmp57, tmp60];
-                                                          class P {
-                                                            constructor() {
-                                                              rejectMessageRequest(channel.id);
-                                                            }
-                                                          }
+                                                          const obj8 = { onPress: tmp12, accessibilityRole: "button", accessibilityActions: tmp15, onAccessibilityAction: tmp13, style: tmp17, children: items1 };
+                                                          items1 = [tmp57, tmp61];
+                                                          const tmp66 = closure_9(tmp(str[18]).PressableOpacity, obj8);
                                                           cResult[64] = tmp13;
                                                           cResult[65] = tmp12;
                                                           cResult[66] = tmp5.pressableRow;
                                                           cResult[67] = tmp57;
-                                                          cResult[68] = tmp60;
-                                                          cResult[69] = tmp64;
-                                                          tmp63 = tmp64;
+                                                          cResult[68] = tmp61;
+                                                          cResult[69] = tmp66;
+                                                          tmp64 = tmp66;
                                                         }
                                                       }
-                                                      class V {
-                                                        constructor() {
-                                                          const obj = AnalyticsUtilsDefault;
-                                                          const obj2 = { is_spam: false, channel_id: channel.id, other_user_id: str.id };
-                                                          obj.track(AnalyticEvents.MESSAGE_REQUEST_PREVIEW_VIEWED, obj2);
-                                                          goToMessageRequestPreview();
-                                                        }
-                                                      }
-                                                      const obj10 = { style: tmp20, children: items2 };
-                                                      items2 = [tmp21, tmp54];
-                                                      const tmp59 = closure_9(acceptMessageRequest, obj10);
+                                                      const obj9 = { style: tmp18, children: items2 };
+                                                      items2 = [tmp19, tmp53];
+                                                      const tmp60 = closure_9(acceptMessageRequest, obj9);
                                                       cResult[58] = tmp5.rowContainer;
-                                                      class P {
-                                                        constructor() {
-                                                          rejectMessageRequest(channel.id);
-                                                        }
-                                                      }
-                                                      cResult[59] = tmp21;
-                                                      cResult[60] = tmp54;
-                                                      cResult[61] = tmp59;
-                                                      tmp57 = tmp59;
+                                                      cResult[59] = tmp19;
+                                                      cResult[60] = tmp53;
+                                                      cResult[61] = tmp60;
+                                                      tmp57 = tmp60;
                                                     }
                                                   }
-                                                  class V {
-                                                    constructor() {
-                                                      const obj = AnalyticsUtilsDefault;
-                                                      const obj2 = { is_spam: false, channel_id: channel.id, other_user_id: str.id };
-                                                      obj.track(AnalyticEvents.MESSAGE_REQUEST_PREVIEW_VIEWED, obj2);
-                                                      goToMessageRequestPreview();
-                                                    }
-                                                  }
-                                                  const obj11 = { style: actionContainer, children: items3 };
-                                                  items3 = [tmp37, tmp50];
-                                                  const tmp56 = closure_9(acceptMessageRequest, obj11);
+                                                  const obj10 = { style: actionContainer, children: items3 };
+                                                  items3 = [tmp36, tmp50];
+                                                  const tmp56 = closure_9(acceptMessageRequest, obj10);
                                                   cResult[54] = tmp5.actionContainer;
-                                                  class P {
-                                                    constructor() {
-                                                      rejectMessageRequest(channel.id);
-                                                    }
-                                                  }
-                                                  cResult[55] = tmp37;
+                                                  cResult[55] = tmp36;
                                                   cResult[56] = tmp50;
                                                   cResult[57] = tmp56;
-                                                  tmp54 = tmp56;
+                                                  tmp53 = tmp56;
                                                 }
                                               }
                                             }
                                           }
-                                          class V {
-                                            constructor() {
-                                              const obj = AnalyticsUtilsDefault;
-                                              const obj2 = { is_spam: false, channel_id: channel.id, other_user_id: str.id };
-                                              obj.track(AnalyticEvents.MESSAGE_REQUEST_PREVIEW_VIEWED, obj2);
-                                              goToMessageRequestPreview();
-                                            }
-                                          }
-                                          tmp52[1] = tmp41;
-                                          tmp52[2] = tmp10;
-                                          tmp52[3] = isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected;
-                                          tmp52[4] = tmp5.actionButton;
-                                          tmp52[5] = tmp46;
-                                          const tmp53 = closure_8(tmp(str[18]).PressableOpacity, tmp52);
+                                          const obj11 = { accessibilityRole: "button", accessibilityLabel: tmp39, onPress: tmp10, disabled: isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected, style: tmp5.actionButton, children: tmp44 };
+                                          const tmp52 = closure_8(tmp(str[18]).PressableOpacity, obj11);
                                           cResult[48] = isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected;
-                                          class P {
-                                            constructor() {
-                                              rejectMessageRequest(channel.id);
-                                            }
-                                          }
+                                          cResult[49] = tmp10;
                                           cResult[50] = tmp5.actionButton;
-                                          cResult[51] = tmp41;
-                                          cResult[52] = tmp46;
-                                          cResult[53] = tmp53;
-                                          tmp50 = tmp53;
+                                          cResult[51] = tmp39;
+                                          cResult[52] = tmp44;
+                                          cResult[53] = tmp52;
+                                          tmp50 = tmp52;
                                         }
                                       }
-                                      class V {
-                                        constructor() {
-                                          const obj = AnalyticsUtilsDefault;
-                                          const obj2 = { is_spam: false, channel_id: channel.id, other_user_id: str.id };
-                                          obj.track(AnalyticEvents.MESSAGE_REQUEST_PREVIEW_VIEWED, obj2);
-                                          goToMessageRequestPreview();
+                                      if (!isRejectLoading) {
+                                        let tmp47;
+                                        if (!isOptimisticRejected) {
+                                          const obj12 = { size: tmp(str[16]).Icon.Sizes.SMALL, disableColor: true, source: hasSingleMessageRequest(str[19]) };
+                                          const Icon2 = tmp(tmp2[16]).Icon;
+                                          tmp47 = closure_8(Icon2, obj12);
                                         }
+                                        cResult[44] = isOptimisticRejected;
+                                        cResult[45] = isRejectLoading;
+                                        cResult[46] = tmp5.activityIndicator;
+                                        cResult[47] = tmp47;
+                                        tmp44 = tmp47;
                                       }
-                                      const obj12 = { style: tmp5.activityIndicator };
-                                      closure_8(id, obj12);
+                                      const obj13 = { style: tmp5.activityIndicator };
+                                      tmp47 = closure_8(id, obj13);
                                     }
                                   }
                                 }
                               }
-                              class V {
-                                constructor() {
-                                  const obj = AnalyticsUtilsDefault;
-                                  const obj2 = { is_spam: false, channel_id: channel.id, other_user_id: str.id };
-                                  obj.track(AnalyticEvents.MESSAGE_REQUEST_PREVIEW_VIEWED, obj2);
-                                  goToMessageRequestPreview();
-                                }
-                              }
-                              tmp39[1] = tmp25;
-                              tmp39[2] = tmp11;
-                              tmp39[3] = isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected;
-                              tmp39[4] = tmp31;
-                              tmp39[5] = tmp32;
-                              const tmp40 = closure_8(tmp(str[18]).PressableOpacity, tmp39);
+                              const obj14 = { accessibilityRole: "button", accessibilityLabel: tmp23, onPress: tmp11, disabled: isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected, style: tmp29, children: tmp30 };
+                              const tmp38 = closure_8(tmp(str[18]).PressableOpacity, obj14);
                               cResult[36] = isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected;
-                              class P {
-                                constructor() {
-                                  rejectMessageRequest(channel.id);
-                                }
-                              }
-                              cResult[38] = tmp25;
-                              cResult[39] = tmp31;
-                              cResult[40] = tmp32;
-                              cResult[41] = tmp40;
-                              tmp37 = tmp40;
+                              cResult[37] = tmp11;
+                              cResult[38] = tmp23;
+                              cResult[39] = tmp29;
+                              cResult[40] = tmp30;
+                              cResult[41] = tmp38;
+                              tmp36 = tmp38;
                             }
                           }
                         }
                         if (!isAcceptLoading) {
                           if (!isUserProfileLoading) {
-                            let tmp35;
+                            let tmp33;
                             if (!isOptimisticAccepted) {
-                              const obj13 = { size: null, disableColor: true, source: hasSingleMessageRequest(str[17]) };
+                              const obj15 = { size: tmp(str[16]).Icon.Sizes.SMALL, disableColor: true, source: hasSingleMessageRequest(str[17]) };
                               const Icon = tmp(tmp2[16]).Icon;
-                              class V {
-                                constructor() {
-                                  const obj = AnalyticsUtilsDefault;
-                                  const obj2 = { is_spam: false, channel_id: channel.id, other_user_id: str.id };
-                                  obj.track(AnalyticEvents.MESSAGE_REQUEST_PREVIEW_VIEWED, obj2);
-                                  goToMessageRequestPreview();
-                                }
-                              }
-                              tmp35 = closure_8(Icon, obj13);
+                              tmp33 = closure_8(Icon, obj15);
                             }
                             cResult[31] = isAcceptLoading;
-                            class V {
-                              constructor() {
-                                const obj = AnalyticsUtilsDefault;
-                                const obj2 = { is_spam: false, channel_id: channel.id, other_user_id: str.id };
-                                obj.track(AnalyticEvents.MESSAGE_REQUEST_PREVIEW_VIEWED, obj2);
-                                goToMessageRequestPreview();
-                              }
-                            }
                             cResult[32] = isOptimisticAccepted;
                             cResult[33] = isUserProfileLoading;
                             cResult[34] = tmp5.activityIndicator;
-                            cResult[35] = tmp35;
-                            tmp32 = tmp35;
+                            cResult[35] = tmp33;
+                            tmp30 = tmp33;
                           }
                         }
-                        class V {
-                          constructor() {
-                            const obj = AnalyticsUtilsDefault;
-                            const obj2 = { is_spam: false, channel_id: channel.id, other_user_id: str.id };
-                            obj.track(AnalyticEvents.MESSAGE_REQUEST_PREVIEW_VIEWED, obj2);
-                            goToMessageRequestPreview();
-                          }
-                        }
-                        const obj14 = { style: tmp5.activityIndicator };
-                        tmp35 = closure_8(id, obj14);
+                        const obj16 = { style: tmp5.activityIndicator };
+                        tmp33 = closure_8(id, obj16);
                       }
-                      const items4 = [tmp5.actionButton, tmp30];
+                      const items4 = [tmp5.actionButton, tmp28];
                       cResult[28] = tmp5.actionButton;
-                      cResult[29] = tmp30;
-                      class P {
-                        constructor() {
-                          rejectMessageRequest(channel.id);
-                        }
-                      }
-                      tmp31 = items4;
+                      cResult[29] = tmp28;
+                      cResult[30] = items4;
+                      tmp29 = items4;
                     }
                   }
-                  const obj15 = { channel: null, otherUser: null, isRestricted: undefined !== isRestricted && isRestricted };
-                  ({ channel: obj8.channel, user: obj8.otherUser } = messageRequest);
-                  const tmp24 = closure_8(hasSingleMessageRequest(str[15]), obj15);
-                  class P {
-                    constructor() {
-                      rejectMessageRequest(channel.id);
-                    }
-                  }
+                  const obj17 = { channel: null, otherUser: null, isRestricted: undefined !== isRestricted && isRestricted };
+                  ({ channel: obj7.channel, user: obj7.otherUser } = messageRequest);
+                  const tmp22 = closure_8(hasSingleMessageRequest(str[15]), obj17);
                   cResult[22] = undefined !== isRestricted && isRestricted;
                   cResult[23] = messageRequest.channel;
                   cResult[24] = messageRequest.user;
-                  cResult[25] = tmp24;
-                  tmp21 = tmp24;
+                  cResult[25] = tmp22;
+                  tmp19 = tmp22;
                 }
               }
-              class V {
-                constructor() {
-                  const obj = AnalyticsUtilsDefault;
-                  const obj2 = { is_spam: false, channel_id: channel.id, other_user_id: str.id };
-                  obj.track(AnalyticEvents.MESSAGE_REQUEST_PREVIEW_VIEWED, obj2);
-                  goToMessageRequestPreview();
+              function handleAccessibilityAction(nativeEvent) {
+                const actionName = nativeEvent.nativeEvent.actionName;
+                if (constants.ACCEPT_MESSAGE_REQUEST === actionName) {
+                  return closure_8();
+                } else if (constants.IGNORE_MESSAGE_REQUEST === actionName) {
+                  return closure_7();
+                } else if (constants.PREVIEW_MESSAGE_REQUEST === actionName) {
+                  return closure_9();
                 }
               }
               cResult[17] = tmp11;
               cResult[18] = tmp10;
               cResult[19] = tmp12;
-              cResult[20] = tmp14;
-              tmp13 = tmp14;
+              cResult[20] = handleAccessibilityAction;
+              tmp13 = handleAccessibilityAction;
             }
           }
-          class V {
-            constructor() {
-              const obj = AnalyticsUtilsDefault;
-              const obj2 = { is_spam: false, channel_id: channel.id, other_user_id: str.id };
-              obj.track(AnalyticEvents.MESSAGE_REQUEST_PREVIEW_VIEWED, obj2);
-              goToMessageRequestPreview();
-            }
+          function handleSelectRow() {
+            const obj = AnalyticsUtilsDefault;
+            const obj2 = { is_spam: false, channel_id: channel.id, other_user_id: str.id };
+            obj.track(AnalyticEvents.MESSAGE_REQUEST_PREVIEW_VIEWED, obj2);
+            goToMessageRequestPreview();
           }
           cResult[13] = channel.id;
           cResult[14] = goToMessageRequestPreview;
           cResult[15] = str.id;
-          cResult[16] = V;
-          tmp12 = V;
+          cResult[16] = handleSelectRow;
+          tmp12 = handleSelectRow;
         }
-        class D {
-          constructor() {
-            acceptMessageRequest(channel.id);
-          }
+        function handleAcceptMessageRequest() {
+          acceptMessageRequest(channel.id);
         }
         cResult[10] = acceptMessageRequest;
         cResult[11] = channel.id;
-        cResult[12] = D;
-        tmp11 = D;
+        cResult[12] = handleAcceptMessageRequest;
+        tmp11 = handleAcceptMessageRequest;
       }
-      class P {
-        constructor() {
-          rejectMessageRequest(channel.id);
-        }
+      function handleRejectMessageRequest() {
+        rejectMessageRequest(channel.id);
       }
       cResult[7] = channel.id;
       cResult[8] = rejectMessageRequest;
-      cResult[9] = P;
-      tmp10 = P;
+      cResult[9] = handleRejectMessageRequest;
+      tmp10 = handleRejectMessageRequest;
     }
-    const obj16 = { user: null, onAcceptSuccess: tmp7, onError: first };
+    const obj18 = { user: str, onAcceptSuccess: tmp7, onError: first };
     cResult[4] = tmp7;
     cResult[5] = str;
-    cResult[6] = obj16;
-    tmp8 = obj16;
+    cResult[6] = obj18;
+    tmp8 = obj18;
   }
-  class I {
+  class C {
     constructor() {
       const tmp = hasSingleMessageRequest;
       if (tmp) {
@@ -571,15 +430,16 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRestricted) 
   }
   cResult[1] = id;
   cResult[2] = hasSingleMessageRequest;
-  cResult[3] = I;
-  tmp7 = I;
-}) : ((isRestricted) => {
+  cResult[3] = C;
+  tmp7 = C;
+}) : (function PendingMessageRequestRow(isRestricted) {
   let _undefined;
   let _undefined2;
   let c5;
   let c6;
   let handleAcceptMessageRequest;
   let handleRejectMessageRequest;
+  let hasSingleMessageRequest;
   let intl;
   let intl2;
   let intl3;
@@ -636,7 +496,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRestricted) 
     onPress: handleSelectRow,
     accessibilityRole: "button",
     accessibilityActions: items1,
-    onAccessibilityAction(nativeEvent) {
+    onAccessibilityAction: function handleAccessibilityAction(nativeEvent) {
       const actionName = nativeEvent.nativeEvent.actionName;
       if (constants.ACCEPT_MESSAGE_REQUEST === actionName) {
         _undefined(channel.id);
@@ -732,7 +592,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRestricted) 
   tmp10Result = tmp10(id, obj15);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPreview) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRequestList(goToMessageRequestPreview) {
   let arr;
   let intl;
   let sectionContainer;
@@ -750,14 +610,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
   const tmp6 = importDefault;
   if (0 === arr.length) {
     let first;
-    const _Symbol = Symbol;
+    const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       let obj4 = { bodyText: intl.string(tmp2(tmp3[6]).t.SXrqTf) };
       const tmp6Result = tmp6(arr[25]);
       intl = tmp2(tmp3[6]).intl;
-      const tmp30 = closure_8(tmp6Result, obj4);
-      cResult[0] = tmp30;
-      first = tmp30;
+      const tmp29 = closure_8(tmp6Result, obj4);
+      cResult[0] = tmp29;
+      first = tmp29;
     } else {
       first = cResult[0];
     }
@@ -765,52 +625,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
   } else {
     let tmp9;
     if (cResult[1] !== arr) {
-      const items = [];
-      class T {
-        constructor(arg0) {
-          item = goToMessageRequestPreview.item;
-          if (typeof item === "string") {
-            tmp6 = closure_1_8;
-            tmp7 = closure_1_5;
-            obj1 = { style: null, children: null };
-            tmp8 = closure_1;
-            obj1.style = closure_1.sectionContainer;
-            tmp9 = closure_1_8;
-            tmp10 = goToMessageRequestPreview;
-            tmp11 = closure_2;
-            obj5 = { variant: "eyebrow", color: "text-default", children: null };
-            Text = goToMessageRequestPreview(closure_2[26]).Text;
-            intl = goToMessageRequestPreview(closure_2[6]).intl;
-            obj6 = { pendingRequestNumber: null };
-            tmp12 = closure_2;
-            obj6.pendingRequestNumber = closure_2.length;
-            obj5.children = intl.format(goToMessageRequestPreview(closure_2[6]).t.evH4Yb, obj6);
-            obj1.children = closure_1_8(Text, obj5);
-            return closure_1_8(closure_1_5, obj1);
-          } else {
-            tmp13 = closure_2;
-            num = 1;
-            tmp14 = closure_2[closure_2.length - 1];
-            tmp15 = null;
-            id1 = undefined;
-            id = item.channel.id;
-            if (tmp14 != null) {
-              id1 = tmp14.channel.id;
-            }
-            tmp2 = closure_1_8;
-            tmp3 = closure_1_13;
-            obj = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null, isRestricted: null };
-            obj.messageRequest = item;
-            obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F148138 */ };
-            obj.isLastRow = id === id1;
-            tmp4 = closure_3;
-            obj.hasSingleMessageRequest = closure_3;
-            tmp5 = closure_4;
-            obj.isRestricted = closure_4;
-            return closure_1_8(closure_1_13, obj, item.channel.id);
-          }
-        }
-      }
+      const items = [c10];
       HermesBuiltin.arraySpread(items, arr, 1);
       cResult[1] = arr;
       cResult[2] = items;
@@ -823,332 +638,112 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
         if (cResult[5] === isMessageRequestRestrictedViewer) {
           if (cResult[6] === arr) {
             let tmp14;
+            let tmp15;
+            let tmp16;
             if (cResult[7] === tmp5.sectionContainer) {
               tmp14 = cResult[8];
             }
             if (cResult[9] !== bottom) {
-              goToMessageRequestPreview(arr[27]);
-              class T {
-                constructor(arg0) {
-                  item = goToMessageRequestPreview.item;
-                  if (typeof item === "string") {
-                    tmp6 = closure_1_8;
-                    tmp7 = closure_1_5;
-                    obj1 = { style: null, children: null };
-                    tmp8 = closure_1;
-                    obj1.style = closure_1.sectionContainer;
-                    tmp9 = closure_1_8;
-                    tmp10 = goToMessageRequestPreview;
-                    tmp11 = closure_2;
-                    obj5 = { variant: "eyebrow", color: "text-default", children: null };
-                    Text = goToMessageRequestPreview(closure_2[26]).Text;
-                    intl = goToMessageRequestPreview(closure_2[6]).intl;
-                    obj6 = { pendingRequestNumber: null };
-                    tmp12 = closure_2;
-                    obj6.pendingRequestNumber = closure_2.length;
-                    obj5.children = intl.format(goToMessageRequestPreview(closure_2[6]).t.evH4Yb, obj6);
-                    obj1.children = closure_1_8(Text, obj5);
-                    return closure_1_8(closure_1_5, obj1);
-                  } else {
-                    tmp13 = closure_2;
-                    num = 1;
-                    tmp14 = closure_2[closure_2.length - 1];
-                    tmp15 = null;
-                    id1 = undefined;
-                    id = item.channel.id;
-                    if (tmp14 != null) {
-                      id1 = tmp14.channel.id;
-                    }
-                    tmp2 = closure_1_8;
-                    tmp3 = closure_1_13;
-                    obj = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null, isRestricted: null };
-                    obj.messageRequest = item;
-                    obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F148138 */ };
-                    obj.isLastRow = id === id1;
-                    tmp4 = closure_3;
-                    obj.hasSingleMessageRequest = closure_3;
-                    tmp5 = closure_4;
-                    obj.isRestricted = closure_4;
-                    return closure_1_8(closure_1_13, obj, item.channel.id);
-                  }
-                }
+              let num10 = 0;
+              const tmp2Result = goToMessageRequestPreview(arr[27]);
+              if (tmp2Result.isAndroid()) {
+                num10 = bottom;
               }
               cResult[9] = bottom;
-              cResult[10] = 0;
+              cResult[10] = num10;
+              tmp15 = num10;
+            } else {
+              tmp15 = cResult[10];
             }
-            class T {
-              constructor(arg0) {
-                item = goToMessageRequestPreview.item;
-                if (typeof item === "string") {
-                  tmp6 = closure_1_8;
-                  tmp7 = closure_1_5;
-                  obj1 = { style: null, children: null };
-                  tmp8 = closure_1;
-                  obj1.style = closure_1.sectionContainer;
-                  tmp9 = closure_1_8;
-                  tmp10 = goToMessageRequestPreview;
-                  tmp11 = closure_2;
-                  obj5 = { variant: "eyebrow", color: "text-default", children: null };
-                  Text = goToMessageRequestPreview(closure_2[26]).Text;
-                  intl = goToMessageRequestPreview(closure_2[6]).intl;
-                  obj6 = { pendingRequestNumber: null };
-                  tmp12 = closure_2;
-                  obj6.pendingRequestNumber = closure_2.length;
-                  obj5.children = intl.format(goToMessageRequestPreview(closure_2[6]).t.evH4Yb, obj6);
-                  obj1.children = closure_1_8(Text, obj5);
-                  return closure_1_8(closure_1_5, obj1);
-                } else {
-                  tmp13 = closure_2;
-                  num = 1;
-                  tmp14 = closure_2[closure_2.length - 1];
-                  tmp15 = null;
-                  id1 = undefined;
-                  id = item.channel.id;
-                  if (tmp14 != null) {
-                    id1 = tmp14.channel.id;
-                  }
-                  tmp2 = closure_1_8;
-                  tmp3 = closure_1_13;
-                  obj = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null, isRestricted: null };
-                  obj.messageRequest = item;
-                  obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F148138 */ };
-                  obj.isLastRow = id === id1;
-                  tmp4 = closure_3;
-                  obj.hasSingleMessageRequest = closure_3;
-                  tmp5 = closure_4;
-                  obj.isRestricted = closure_4;
-                  return closure_1_8(closure_1_13, obj, item.channel.id);
-                }
-              }
+            if (cResult[11] !== tmp15) {
+              const obj5 = { marginBottom: tmp15 };
+              cResult[11] = tmp15;
+              cResult[12] = obj5;
+              tmp16 = obj5;
+            } else {
+              tmp16 = cResult[12];
             }
             if (cResult[13] === tmp5.list) {
-              let tmp18;
+              let tmp17;
+              let tmp19;
               let tmp20;
-              let tmp21;
-              if (cResult[14] === tmp17) {
-                tmp18 = cResult[15];
+              if (cResult[14] === tmp16) {
+                tmp17 = cResult[15];
               }
-              class T {
-                constructor(arg0) {
-                  item = goToMessageRequestPreview.item;
-                  if (typeof item === "string") {
-                    tmp6 = closure_1_8;
-                    tmp7 = closure_1_5;
-                    obj1 = { style: null, children: null };
-                    tmp8 = closure_1;
-                    obj1.style = closure_1.sectionContainer;
-                    tmp9 = closure_1_8;
-                    tmp10 = goToMessageRequestPreview;
-                    tmp11 = closure_2;
-                    obj5 = { variant: "eyebrow", color: "text-default", children: null };
-                    Text = goToMessageRequestPreview(closure_2[26]).Text;
-                    intl = goToMessageRequestPreview(closure_2[6]).intl;
-                    obj6 = { pendingRequestNumber: null };
-                    tmp12 = closure_2;
-                    obj6.pendingRequestNumber = closure_2.length;
-                    obj5.children = intl.format(goToMessageRequestPreview(closure_2[6]).t.evH4Yb, obj6);
-                    obj1.children = closure_1_8(Text, obj5);
-                    return closure_1_8(closure_1_5, obj1);
-                  } else {
-                    tmp13 = closure_2;
-                    num = 1;
-                    tmp14 = closure_2[closure_2.length - 1];
-                    tmp15 = null;
-                    id1 = undefined;
-                    id = item.channel.id;
-                    if (tmp14 != null) {
-                      id1 = tmp14.channel.id;
-                    }
-                    tmp2 = closure_1_8;
-                    tmp3 = closure_1_13;
-                    obj = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null, isRestricted: null };
-                    obj.messageRequest = item;
-                    obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F148138 */ };
-                    obj.isLastRow = id === id1;
-                    tmp4 = closure_3;
-                    obj.hasSingleMessageRequest = closure_3;
-                    tmp5 = closure_4;
-                    obj.isRestricted = closure_4;
-                    return closure_1_8(closure_1_13, obj, item.channel.id);
-                  }
-                }
-              }
+              const _Symbol = Symbol;
               if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-                const obj5 = { right: 0.01 };
-                class T {
-                  constructor(arg0) {
-                    item = goToMessageRequestPreview.item;
-                    if (typeof item === "string") {
-                      tmp6 = closure_1_8;
-                      tmp7 = closure_1_5;
-                      obj1 = { style: null, children: null };
-                      tmp8 = closure_1;
-                      obj1.style = closure_1.sectionContainer;
-                      tmp9 = closure_1_8;
-                      tmp10 = goToMessageRequestPreview;
-                      tmp11 = closure_2;
-                      obj5 = { variant: "eyebrow", color: "text-default", children: null };
-                      Text = goToMessageRequestPreview(closure_2[26]).Text;
-                      intl = goToMessageRequestPreview(closure_2[6]).intl;
-                      obj6 = { pendingRequestNumber: null };
-                      tmp12 = closure_2;
-                      obj6.pendingRequestNumber = closure_2.length;
-                      obj5.children = intl.format(goToMessageRequestPreview(closure_2[6]).t.evH4Yb, obj6);
-                      obj1.children = closure_1_8(Text, obj5);
-                      return closure_1_8(closure_1_5, obj1);
-                    } else {
-                      tmp13 = closure_2;
-                      num = 1;
-                      tmp14 = closure_2[closure_2.length - 1];
-                      tmp15 = null;
-                      id1 = undefined;
-                      id = item.channel.id;
-                      if (tmp14 != null) {
-                        id1 = tmp14.channel.id;
-                      }
-                      tmp2 = closure_1_8;
-                      tmp3 = closure_1_13;
-                      obj = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null, isRestricted: null };
-                      obj.messageRequest = item;
-                      obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F148138 */ };
-                      obj.isLastRow = id === id1;
-                      tmp4 = closure_3;
-                      obj.hasSingleMessageRequest = closure_3;
-                      tmp5 = closure_4;
-                      obj.isRestricted = closure_4;
-                      return closure_1_8(closure_1_13, obj, item.channel.id);
-                    }
-                  }
-                }
-                tmp20 = obj5;
+                const obj6 = { right: 0.01 };
+                cResult[16] = obj6;
+                tmp19 = obj6;
               } else {
-                tmp20 = cResult[16];
+                tmp19 = cResult[16];
               }
               if (cResult[17] !== bottom) {
-                const obj6 = { paddingBottom: bottom, paddingTop: 12 };
-                class T {
-                  constructor(arg0) {
-                    item = goToMessageRequestPreview.item;
-                    if (typeof item === "string") {
-                      tmp6 = closure_1_8;
-                      tmp7 = closure_1_5;
-                      obj1 = { style: null, children: null };
-                      tmp8 = closure_1;
-                      obj1.style = closure_1.sectionContainer;
-                      tmp9 = closure_1_8;
-                      tmp10 = goToMessageRequestPreview;
-                      tmp11 = closure_2;
-                      obj5 = { variant: "eyebrow", color: "text-default", children: null };
-                      Text = goToMessageRequestPreview(closure_2[26]).Text;
-                      intl = goToMessageRequestPreview(closure_2[6]).intl;
-                      obj6 = { pendingRequestNumber: null };
-                      tmp12 = closure_2;
-                      obj6.pendingRequestNumber = closure_2.length;
-                      obj5.children = intl.format(goToMessageRequestPreview(closure_2[6]).t.evH4Yb, obj6);
-                      obj1.children = closure_1_8(Text, obj5);
-                      return closure_1_8(closure_1_5, obj1);
-                    } else {
-                      tmp13 = closure_2;
-                      num = 1;
-                      tmp14 = closure_2[closure_2.length - 1];
-                      tmp15 = null;
-                      id1 = undefined;
-                      id = item.channel.id;
-                      if (tmp14 != null) {
-                        id1 = tmp14.channel.id;
-                      }
-                      tmp2 = closure_1_8;
-                      tmp3 = closure_1_13;
-                      obj = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null, isRestricted: null };
-                      obj.messageRequest = item;
-                      obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F148138 */ };
-                      obj.isLastRow = id === id1;
-                      tmp4 = closure_3;
-                      obj.hasSingleMessageRequest = closure_3;
-                      tmp5 = closure_4;
-                      obj.isRestricted = closure_4;
-                      return closure_1_8(closure_1_13, obj, item.channel.id);
-                    }
-                  }
-                }
+                const obj7 = { paddingBottom: bottom, paddingTop: 12 };
                 cResult[17] = bottom;
-                cResult[18] = obj6;
-                tmp21 = obj6;
+                cResult[18] = obj7;
+                tmp20 = obj7;
               } else {
-                tmp21 = cResult[18];
+                tmp20 = cResult[18];
               }
               if (cResult[19] === tmp9) {
                 if (cResult[20] === tmp14) {
-                  if (cResult[21] === tmp18) {
-                    let tmp22;
-                    if (cResult[22] === tmp21) {
-                      tmp22 = cResult[23];
+                  if (cResult[21] === tmp17) {
+                    let tmp21;
+                    if (cResult[22] === tmp20) {
+                      tmp21 = cResult[23];
                     }
-                    return tmp22;
+                    return tmp21;
                   }
                 }
               }
-              const obj7 = { style: tmp18, scrollIndicatorInsets: tmp20, contentContainerStyle: tmp21, renderItem: tmp14, data: tmp9 };
-              const tmp25 = closure_8(closure_6, obj7);
+              const obj8 = { style: tmp17, scrollIndicatorInsets: tmp19, contentContainerStyle: tmp20, renderItem: tmp14, data: tmp9 };
+              const tmp24 = closure_8(closure_6, obj8);
               cResult[19] = tmp9;
               cResult[20] = tmp14;
-              cResult[21] = tmp18;
-              cResult[22] = tmp21;
-              cResult[23] = tmp25;
-              tmp22 = tmp25;
+              cResult[21] = tmp17;
+              cResult[22] = tmp20;
+              cResult[23] = tmp24;
+              tmp21 = tmp24;
             }
-            const items1 = [tmp5.list, tmp17];
+            const items1 = [tmp5.list, tmp16];
             cResult[13] = tmp5.list;
-            cResult[14] = tmp17;
+            cResult[14] = tmp16;
             cResult[15] = items1;
-            tmp18 = items1;
+            tmp17 = items1;
           }
         }
       }
     }
-    class T {
-      constructor(arg0) {
-        item = goToMessageRequestPreview.item;
-        if (typeof item === "string") {
-          tmp6 = closure_1_8;
-          tmp7 = closure_1_5;
-          obj1 = { style: null, children: null };
-          tmp8 = closure_1;
-          obj1.style = closure_1.sectionContainer;
-          tmp9 = closure_1_8;
-          tmp10 = goToMessageRequestPreview;
-          tmp11 = closure_2;
-          obj5 = { variant: "eyebrow", color: "text-default", children: null };
-          Text = goToMessageRequestPreview(closure_2[26]).Text;
-          intl = goToMessageRequestPreview(closure_2[6]).intl;
-          obj6 = { pendingRequestNumber: null };
-          tmp12 = closure_2;
-          obj6.pendingRequestNumber = closure_2.length;
-          obj5.children = intl.format(goToMessageRequestPreview(closure_2[6]).t.evH4Yb, obj6);
-          obj1.children = closure_1_8(Text, obj5);
-          return closure_1_8(closure_1_5, obj1);
-        } else {
-          tmp13 = closure_2;
-          num = 1;
-          tmp14 = closure_2[closure_2.length - 1];
-          tmp15 = null;
-          id1 = undefined;
-          id = item.channel.id;
-          if (tmp14 != null) {
-            id1 = tmp14.channel.id;
-          }
-          tmp2 = closure_1_8;
-          tmp3 = closure_1_13;
-          obj = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null, isRestricted: null };
-          obj.messageRequest = item;
-          obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F148138 */ };
-          obj.isLastRow = id === id1;
-          tmp4 = closure_3;
-          obj.hasSingleMessageRequest = closure_3;
-          tmp5 = closure_4;
-          obj.isRestricted = closure_4;
-          return closure_1_8(closure_1_13, obj, item.channel.id);
+    function renderData(item) {
+      let Text;
+      let intl;
+      let obj3;
+      let obj4;
+      item = item.item;
+      if (typeof item === "string") {
+        const obj2 = { style: sectionContainer.sectionContainer, children: closure_1_8(Text, obj3) };
+        obj3 = { variant: "eyebrow", color: "text-default", children: intl.format(goToMessageRequestPreview(arr[6]).t.evH4Yb, obj4) };
+        Text = goToMessageRequestPreview(arr[26]).Text;
+        intl = goToMessageRequestPreview(arr[6]).intl;
+        obj4 = { pendingRequestNumber: arr.length };
+        return closure_1_8(closure_1_5, obj2);
+      } else {
+        let id1;
+        const id = item.channel.id;
+        if (arr[arr.length - 1] != null) {
+          id1 = tmp14.channel.id;
         }
+        const obj = {
+          messageRequest: item,
+          goToMessageRequestPreview() {
+              return goToMessageRequestPreview(item.channel.id);
+            },
+          isLastRow: id === id1,
+          hasSingleMessageRequest: listHasSingleMessageRequest,
+          isRestricted: isMessageRequestRestrictedViewer
+        };
+        return closure_1_8(closure_1_13, obj, item.channel.id);
       }
     }
     cResult[3] = goToMessageRequestPreview;
@@ -1156,10 +751,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
     cResult[5] = isMessageRequestRestrictedViewer;
     cResult[6] = arr;
     cResult[7] = tmp5.sectionContainer;
-    cResult[8] = T;
-    tmp14 = T;
+    cResult[8] = renderData;
+    tmp14 = renderData;
   }
-}) : ((goToMessageRequestPreview) => {
+}) : (function MessageRequestList(goToMessageRequestPreview) {
   let intl;
   let obj6;
   let sectionContainer;
@@ -1170,9 +765,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
   const bottom = require("useSafeAreaInsets")().bottom;
   arr = require("useSortedMessageRequests")();
   let obj = goToMessageRequestPreview(arr[23]);
-  hasSingleMessageRequest = obj.useListHasSingleMessageRequest();
+  const hasSingleMessageRequest = obj.useListHasSingleMessageRequest();
   let obj2 = goToMessageRequestPreview(arr[24]);
-  isRestricted = obj2.useIsMessageRequestRestrictedViewer();
+  const isRestricted = obj2.useIsMessageRequestRestrictedViewer();
   const tmp3 = importDefault;
   if (0 === arr.length) {
     let obj3 = { bodyText: intl.string(tmp5(tmp4[6]).t.SXrqTf) };
@@ -1194,7 +789,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
       style: items1,
       scrollIndicatorInsets: { right: 0.01 },
       contentContainerStyle: obj6,
-      renderItem(item) {
+      renderItem: function renderData(item) {
           let Text;
           let intl;
           let obj3;

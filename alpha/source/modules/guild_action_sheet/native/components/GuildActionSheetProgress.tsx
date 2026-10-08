@@ -1,29 +1,27 @@
-// Module ID: 13808
-// Function ID: 13809
+// Module ID: 14033
+// Function ID: 14034
 // Name: GuildActionSheetProgress
-// Dependencies: [19, 21, 4896, 587, 558, 576, 12145, 13809, 6002, 2]
+// Dependencies: [19, 21, 5090, 587, 558, 576, 12224, 14034, 6186, 2]
 
-// Module 13808 (GuildActionSheetProgress)
+// Module 14033 (GuildActionSheetProgress)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 12145 */;
-import GuildProgressOverviewDefault from "GuildProgressOverview" /* 13809 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 12224 */;
+import GuildProgressOverviewDefault from "GuildProgressOverview" /* 14034 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let guild;
-
 let obj2;
 let tmp;
-const Card_Card = tmp(6002);
+const Card_Card = tmp(6186);
 const jsx = Fragment.jsx;
 let obj = { title: obj2, cardStyle: { padding: 0 } };
 obj2 = { color: nativeDefault.colors.TEXT_DEFAULT };
 let closure_4 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActionSheetProgress(guild) {
   let completed;
   let dismissed;
   const obj = react2;
@@ -67,7 +65,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     }
   }
   return tmp6;
-}) : ((guild) => {
+}) : (function GuildActionSheetProgress(guild) {
   let completed;
   let dismissed;
   guild = guild.guild;

@@ -1,15 +1,15 @@
-// Module ID: 2008
-// Function ID: 2009
+// Module ID: 2020
+// Function ID: 2021
 // Name: GameRecord
-// Dependencies: [1392, 2009, 1985, 2017, 1402, 1375, 2]
+// Dependencies: [1404, 2021, 1997, 2029, 1414, 1387, 2]
 
-// Module 2008 (GameRecord)
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import AvatarUtils from "AvatarUtils" /* 1402 */;
-import Server from "Server" /* 1985 */;
-import ApplicationRecord2 from "ApplicationRecord" /* 2009 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2017 */;
-import Record from "Record" /* 1392 */;
+// Module 2020 (GameRecord)
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import AvatarUtils from "AvatarUtils" /* 1414 */;
+import Server from "Server" /* 1997 */;
+import ApplicationRecord2 from "ApplicationRecord" /* 2021 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2029 */;
+import Record from "Record" /* 1404 */;
 import size_mod from "module_2" /* 2 */;
 
 const ApplicationRecord = ApplicationRecord2;
@@ -223,14 +223,14 @@ class GameRecord extends Record {
     const mapped = screenshotUrls.map((item, index) => self.getScreenshotURL(index, closure_0));
     return mapped.filter(GlobalUtils.isNotNullish);
   }
-  getCompanyByRole(DEVELOPER) {
-    let closure_0 = DEVELOPER;
+  getCompanyByRole(PUBLISHER) {
+    let closure_0 = PUBLISHER;
     const companies = this.companies;
     let found;
     if (companies != null) {
       found = companies.filter((roles) => {
         roles = roles.roles;
-        return roles.includes(DEVELOPER);
+        return roles.includes(PUBLISHER);
       });
     }
     if (found == null) {

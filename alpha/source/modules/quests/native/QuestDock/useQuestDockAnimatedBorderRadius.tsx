@@ -1,10 +1,10 @@
-// Module ID: 15001
-// Function ID: 15002
+// Module ID: 15263
+// Function ID: 15264
 // Name: useQuestDockAnimatedBorderRadius
-// Dependencies: [19, 558, 14916, 4618, 2]
+// Dependencies: [19, 558, 15178, 4810, 2]
 
-// Module 15001 (useQuestDockAnimatedBorderRadius)
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+// Module 15263 (useQuestDockAnimatedBorderRadius)
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -14,7 +14,7 @@ let _require;
 
 const __initData = { code: "function useQuestDockAnimatedBorderRadiusTsx1(){const{interpolate,questDockOffset,minBorder,maxBorder,Extrapolation}=this.__closure;return interpolate(questDockOffset.get(),[0,50],[minBorder,maxBorder],Extrapolation.CLAMP);}" };
 const __initData2 = { code: "function useQuestDockAnimatedBorderRadiusTsx2(){const{interpolate,questDockOffset,minBorder,maxBorder,Extrapolation}=this.__closure;return interpolate(questDockOffset.get(),[0,50],[minBorder,maxBorder],Extrapolation.CLAMP);}" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((maxBorder, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestDockAnimatedBorderRadius(maxBorder, arg1) {
   let questDockOffset;
   _require = maxBorder;
   let num = 0;
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((maxBorder, arg1) =
   fn.__initData = __initData;
   ({ interpolate: require("ReanimatedRexport").interpolate, questDockOffset, minBorder: num, maxBorder, Extrapolation: require("ReanimatedRexport").Extrapolation });
   return obj.useDerivedValue(fn);
-}) : ((maxBorder) => {
+}) : (function useQuestDockAnimatedBorderRadius(maxBorder) {
   _require = maxBorder;
   let num = arg1;
   if (arg1 === undefined) {

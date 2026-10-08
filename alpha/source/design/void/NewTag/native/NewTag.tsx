@@ -1,20 +1,20 @@
-// Module ID: 13927
-// Function ID: 13928
+// Module ID: 14230
+// Function ID: 14231
 // Name: NewTag
-// Dependencies: [109, 19, 17, 1085, 21, 4896, 587, 558, 576, 1126, 4892, 5612, 2]
+// Dependencies: [109, 19, 17, 1085, 21, 5090, 587, 558, 576, 1126, 5086, 5387, 2]
 
-// Module 13927 (NewTag)
+// Module 14230 (NewTag)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import LinearGradientDefault from "LinearGradient" /* 5612 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import LinearGradientDefault from "LinearGradient" /* 5387 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ const jsx = Fragment.jsx;
 let obj = { tagContainer: obj2, tagText: { textTransform: "uppercase" } };
 obj2 = { height: "auto", backgroundColor: nativeDefault.unsafe_rawColors.RED_400, justifyContent: "center", alignItems: "center", paddingHorizontal: 4, marginBottom: 2, borderRadius: nativeDefault.radii.round };
 let closure_8 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewTag(arg0) {
   let borderRadius;
   let color;
   let colors;
@@ -170,7 +170,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
         }
-        const Text2 = tmp(4892).Text;
+        const Text2 = tmp(5086).Text;
         const merged = Object.assign(tmp9);
         const tmp47 = <Text2 variant={str} color={str2} style={tmp38}>{tmp40}</Text2>;
         cResult[20] = str2;
@@ -232,7 +232,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
         }
-        const Text = tmp(4892).Text;
+        const Text = tmp(5086).Text;
         const merged1 = Object.assign(tmp9);
         const tmp30 = <Text variant={str} color={str2} style={tmp21}>{tmp23}</Text>;
         cResult[39] = str2;
@@ -255,7 +255,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp20 = items4;
   }
   return tmp31;
-}) : ((color) => {
+}) : (function NewTag(color) {
   let containerStyle;
   let intl;
   let intl2;

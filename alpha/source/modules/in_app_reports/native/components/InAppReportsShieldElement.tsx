@@ -1,25 +1,23 @@
-// Module ID: 8332
-// Function ID: 8333
+// Module ID: 7715
+// Function ID: 7716
 // Name: InAppReportsShieldElement
-// Dependencies: [19, 17, 21, 4896, 558, 576, 8130, 2]
+// Dependencies: [19, 17, 21, 5090, 558, 576, 7508, 2]
 
-// Module 8332 (InAppReportsShieldElement)
+// Module 7715 (InAppReportsShieldElement)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let element;
-
 let tmp;
-const ShieldSpotIllustration = tmp(8130);
+const ShieldSpotIllustration = tmp(7508);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ container: { flex: 0, alignSelf: "center", marginBottom: 16 } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((element) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShieldElement(element) {
   const obj = react2;
   const cResult = obj.c(3);
   element = element.element;
@@ -50,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((element) => {
     }
   }
   return tmp5;
-}) : ((element) => {
+}) : (function ShieldElement(element) {
   element = element.element;
   let tmp2 = null;
   if (null != element) {

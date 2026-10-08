@@ -1,13 +1,13 @@
-// Module ID: 16122
-// Function ID: 16123
+// Module ID: 16382
+// Function ID: 16383
 // Name: useIsGuildThemePerkEnabled
-// Dependencies: [2074, 4773, 1085, 558, 576, 4777, 504, 2]
+// Dependencies: [2086, 4967, 1085, 558, 576, 4971, 504, 2]
 
-// Module 16122 (useIsGuildThemePerkEnabled)
+// Module 16382 (useIsGuildThemePerkEnabled)
 import Constants from "Constants" /* 1085 */;
-import Powerups from "Powerups" /* 4777 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4773 */;
+import Powerups from "Powerups" /* 4971 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4967 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 let _require;
 
 const GuildFeatures = Constants.GuildFeatures;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsGuildThemePerkEnabled(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -71,7 +71,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : ((arg0) => {
+}) : (function useIsGuildThemePerkEnabled(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildStore, GuildPowerupsStore];

@@ -1,14 +1,14 @@
-// Module ID: 10627
-// Function ID: 10628
+// Module ID: 10225
+// Function ID: 10226
 // Name: ApplicationStreamActivityStatus
-// Dependencies: [19, 21, 558, 576, 1126, 10628, 10629, 10631, 2]
+// Dependencies: [19, 21, 558, 576, 1126, 10226, 10227, 10229, 2]
 
-// Module 10627 (ApplicationStreamActivityStatus)
+// Module 10225 (ApplicationStreamActivityStatus)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import ActivityStatusIconDefault from "ActivityStatusIcon" /* 10628 */;
-import TvIcon from "TvIcon" /* 10629 */;
-import ActivityStatusTextDefault from "ActivityStatusText" /* 10631 */;
+import ActivityStatusIconDefault from "ActivityStatusIcon" /* 10226 */;
+import TvIcon from "TvIcon" /* 10227 */;
+import ActivityStatusTextDefault from "ActivityStatusText" /* 10229 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -18,7 +18,7 @@ let c3;
 let closure_4;
 let hasOwnProperty;
 ({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = Fragment);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationStreamActivityStatus(arg0) {
   let game;
   let hideIcon;
   let hideText;
@@ -114,7 +114,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = iconStyle;
   cResult[4] = tmp12;
   tmp11 = tmp12;
-}) : ((hideText) => {
+}) : (function ApplicationStreamActivityStatus(hideText) {
   let formatResult;
   let game;
   let hideIcon;
@@ -162,7 +162,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp10 = hasOwnProperty;
   const tmp11 = React3;
   if (!hideIcon) {
-    const obj2 = { icon: tmp7(10629).TvIcon, style: iconStyle };
+    const obj2 = { icon: tmp7(10227).TvIcon, style: iconStyle };
     const tmp15 = ActivityStatusIconDefault;
     tmp12 = _false(tmp15, obj2);
   }

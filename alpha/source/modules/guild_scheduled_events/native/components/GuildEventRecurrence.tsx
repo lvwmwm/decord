@@ -1,23 +1,21 @@
-// Module ID: 9324
-// Function ID: 9325
+// Module ID: 8645
+// Function ID: 8646
 // Name: GuildEventRecurrence
-// Dependencies: [19, 17, 2051, 2074, 7050, 21, 4896, 587, 558, 576, 504, 9202, 9204, 9201, 9198, 1126, 9209, 9296, 5916, 4892, 1188, 9325, 2]
+// Dependencies: [19, 17, 2063, 2086, 6059, 21, 5090, 587, 558, 576, 504, 8501, 8548, 8502, 8496, 1126, 8510, 8506, 6189, 5086, 1200, 8646, 2]
 
-// Module 9324 (GuildEventRecurrence)
+// Module 8645 (GuildEventRecurrence)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ScheduleUtils from "ScheduleUtils" /* 9198 */;
-import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9209 */;
+import ScheduleUtils from "ScheduleUtils" /* 8496 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8510 */;
 import react from "react" /* 19 */;
-import ChannelStore_mod from "ChannelStore" /* 2051 */;
-import GuildStore_mod from "GuildStore" /* 2074 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7050 */;
+import ChannelStore_mod from "ChannelStore" /* 2063 */;
+import GuildStore_mod from "GuildStore" /* 2086 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6059 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let recurrenceId;
 
 let c9;
 let metroImportAll;
@@ -35,7 +33,7 @@ createStyles = createStyles.createStyles;
 obj3 = { flexShrink: 0, alignItems: "center", flexDirection: "row", padding: 8, marginLeft: 8, borderRadius: nativeDefault.radii.xs };
 obj4 = { tintColor: nativeDefault.colors.TEXT_STRONG };
 let closure_10 = createStyles(obj);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((recurrenceId) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventRecurrence(recurrenceId) {
   let canManageGuildEventResult;
   let closure_6;
   let first;
@@ -193,7 +191,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((recurrenceId) => {
         }
       }
     }
-    class T {
+    class G {
       constructor() {
         let channel_id;
         const getChannel = ChannelStore.getChannel;
@@ -204,8 +202,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((recurrenceId) => {
       }
     }
     cResult[7] = tmp19;
-    cResult[8] = T;
-    tmp18 = T;
+    cResult[8] = G;
+    tmp18 = G;
   } else {
     class S {
       constructor() {
@@ -233,7 +231,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((recurrenceId) => {
       }
     }
     ChannelStore = canManageGuildEventResult;
-    class T {
+    class G {
       constructor() {
         let channel_id;
         const getChannel = ChannelStore.getChannel;
@@ -267,7 +265,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((recurrenceId) => {
         }
         toISOStringResult = obj6.toISOString();
       }
-      class T {
+      class G {
         constructor() {
           let channel_id;
           const getChannel = ChannelStore.getChannel;
@@ -308,7 +306,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((recurrenceId) => {
         }
         eventTimeData = obj7.getEventTimeData(tmp26);
       }
-      class T {
+      class G {
         constructor() {
           let channel_id;
           const getChannel = ChannelStore.getChannel;
@@ -341,7 +339,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((recurrenceId) => {
         }
       }
       const is_canceled = tmp31.is_canceled;
-      class T {
+      class G {
         constructor() {
           let channel_id;
           const getChannel = ChannelStore.getChannel;
@@ -358,7 +356,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((recurrenceId) => {
             return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
           }
         }
-        class T {
+        class G {
           constructor() {
             let channel_id;
             const getChannel = ChannelStore.getChannel;
@@ -384,7 +382,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((recurrenceId) => {
             return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
           }
         }
-        class T {
+        class G {
           constructor() {
             let channel_id;
             const getChannel = ChannelStore.getChannel;
@@ -403,7 +401,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((recurrenceId) => {
           }
         }
       }
-      const fn = function j(stopPropagation) {
+      function handlePress(stopPropagation) {
         stopPropagation.stopPropagation();
         const tmp2 = GuildStore;
         if (!tmp2) {
@@ -411,18 +409,18 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((recurrenceId) => {
             tmp3(recurrenceId);
           }
         }
-      };
+      }
       cResult[20] = tmp32;
       cResult[21] = onPress;
       cResult[22] = recurrenceId;
-      cResult[23] = fn;
+      cResult[23] = handlePress;
     }
   }
   canManageGuildEventResult = canManageGuildEvent(stateFromStores);
   cResult[9] = canManageGuildEvent;
   cResult[10] = stateFromStores;
   cResult[11] = canManageGuildEventResult;
-}) : ((recurrenceId) => {
+}) : (function GuildEventRecurrence(recurrenceId) {
   let Icon;
   let intl2;
   let intl3;
@@ -446,7 +444,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((recurrenceId) => {
   const stateFromStores = obj.useStateFromStores(items, () => GuildScheduledEventStore.getGuildScheduledEvent(guildEventId));
   let id;
   const tmp5 = guildEventId;
-  const tmp6 = guildEventId(9202);
+  const tmp6 = guildEventId(8501);
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
@@ -471,13 +469,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((recurrenceId) => {
     }
     return getChannel(channel_id);
   });
-  const useManageResourcePermissions = tmp2(9204).useManageResourcePermissions;
-  tmp2(9204);
+  const useManageResourcePermissions = tmp2(8548).useManageResourcePermissions;
+  tmp2(8548);
   if (stateFromStores2 == null) {
     stateFromStores2 = stateFromStores1;
   }
   closure_5 = useManageResourcePermissions(stateFromStores2).canManageGuildEvent(stateFromStores);
-  const tmp2Result6 = tmp2(9201);
+  const tmp2Result6 = tmp2(8502);
   const eventScheduleById = tmp2Result6.useEventScheduleById(guildEventId, recurrenceId);
   let toISOStringResult;
   if (eventScheduleById != null) {
@@ -527,7 +525,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((recurrenceId) => {
       accessible: true,
       accessibilityRole: "button",
       accessibilityLabel: sum1,
-      onPress(stopPropagation) {
+      onPress: function handlePress(stopPropagation) {
           stopPropagation.stopPropagation();
           const tmp2 = closure_7;
           if (!tmp2) {
@@ -537,15 +535,15 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((recurrenceId) => {
           }
         },
       style: tmp.eventHeader,
-      children: closure_8(tmp2(9296).GuildEventCardHeader, obj5)
+      children: closure_8(tmp2(8506).GuildEventCardHeader, obj5)
     };
-    const PressableOpacity = tmp2(5916).PressableOpacity;
+    const PressableOpacity = tmp2(6189).PressableOpacity;
     obj5 = { isActive, event: stateFromStores, showUserCount: false, showCreator: false, recurrenceId };
     items5 = [closure_8(PressableOpacity, obj4), ];
     const obj6 = { style: tmp.actions, children: items6 };
     if (tmp22Result) {
       const obj7 = { variant: "text-sm/semibold", color: "text-feedback-critical", children: intl2.string(tmp2(1126).t.fyBVRm) };
-      const Text = tmp2(4892).Text;
+      const Text = tmp2(5086).Text;
       intl2 = tmp2(1126).intl;
       tmp22Result = tmp22(Text, obj7);
     }
@@ -554,11 +552,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((recurrenceId) => {
       accessible: true,
       accessibilityRole: "button",
       accessibilityLabel: "" + intl3.string(tmp2(1126).t.HIgA5a) + ", " + sum1,
-      onPress(stopPropagation) {
+      onPress: function handlePressOverflow(stopPropagation) {
           if (null != stateFromStores) {
             stopPropagation.stopPropagation();
             if (null != stateFromStores1) {
-              const obj = GuildScheduledEventModalActionCreators;
+              const obj = guild_scheduled_events_GuildScheduledEventModalActionCreators;
               const result = obj.showGuildEventModeratorActionSheet(tmp, closure_5, recurrenceId);
             }
           }
@@ -566,11 +564,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((recurrenceId) => {
       style: tmp.secondarySmallButton,
       children: closure_8(Icon, obj9)
     };
-    const PressableOpacity2 = tmp2(5916).PressableOpacity;
+    const PressableOpacity2 = tmp2(6189).PressableOpacity;
     intl3 = tmp2(1126).intl;
     const _HermesInternal3 = HermesInternal;
-    obj9 = { source: tmp5(9325), size: tmp2(1188).Icon.Sizes.REFRESH_SMALL_16, style: tmp.secondarySmallIcon };
-    Icon = tmp2(1188).Icon;
+    obj9 = { source: tmp5(8646), size: tmp2(1200).Icon.Sizes.REFRESH_SMALL_16, style: tmp.secondarySmallIcon };
+    Icon = tmp2(1200).Icon;
     items6[1] = closure_8(PressableOpacity2, obj8);
     items5[1] = closure_9(stateFromStores1, obj6);
     return closure_9(stateFromStores1, obj3);

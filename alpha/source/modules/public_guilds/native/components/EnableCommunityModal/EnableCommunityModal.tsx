@@ -1,17 +1,17 @@
-// Module ID: 17882
-// Function ID: 17883
+// Module ID: 18169
+// Function ID: 18170
 // Name: EnableCommunityModal
-// Dependencies: [19, 21, 17881, 558, 576, 6023, 6017, 1126, 6890, 4815, 17883, 17884, 17896, 17897, 6503, 2]
+// Dependencies: [19, 21, 18168, 558, 576, 6209, 6203, 1126, 7079, 5009, 18170, 18171, 18183, 18184, 6679, 2]
 
-// Module 17882 (EnableCommunityModal)
+// Module 18169 (EnableCommunityModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import NavigatorHeader from "NavigatorHeader" /* 6017 */;
-import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 6023 */;
-import Navigator2 from "Navigator" /* 6503 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 17881 */;
-import EnableCommunitySharedNavigation from "EnableCommunitySharedNavigation" /* 17883 */;
+import NavigatorHeader from "NavigatorHeader" /* 6203 */;
+import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 6209 */;
+import Navigator2 from "Navigator" /* 6679 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 18168 */;
+import EnableCommunitySharedNavigation from "EnableCommunitySharedNavigation" /* 18170 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -47,7 +47,7 @@ function onModalClose() {
 }
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const headerLeft = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const headerLeft = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderBackButton(arg0) {
   let first;
   let tmp6;
   let obj = react2;
@@ -77,7 +77,7 @@ const headerLeft = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp6 = cResult[2];
   }
   return tmp6;
-}) : ((arg0) => {
+}) : (function HeaderBackButton(arg0) {
   let obj = useNavigatorBackPressHandler;
   obj.useNavigatorBackPressHandler(() => {
     const obj = EnableCommunityModalActionCreatorsDefault;
@@ -90,7 +90,7 @@ const headerLeft = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return getHeaderTextButton(intl.string(intl2.t["13/7kX"]), onModalClose)(arg0);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnableCommunityModal() {
   let first;
   let tmp6;
   const obj = react2;
@@ -110,7 +110,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const Navigator = tmp(6503).Navigator;
+    const Navigator = tmp(6679).Navigator;
     const intl = tmp(1126).intl;
     const tmp8 = <Navigator screens={first} initialRouteName={EnableCommunitySharedNavigation.EnableCommunityModalSteps.STEP_1} headerBackTitle={intl.string(intl2.t["13/7kX"])} />;
     cResult[1] = tmp8;
@@ -119,7 +119,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp6 = cResult[1];
   }
   return tmp6;
-}) : (() => {
+}) : (function EnableCommunityModal() {
   const memo = react.useMemo(() => {
     let onPress;
     const headerRight = headerRight2;

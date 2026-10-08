@@ -1,25 +1,25 @@
-// Module ID: 14653
-// Function ID: 14654
+// Module ID: 14914
+// Function ID: 14915
 // Name: ExplicitMediaFiltersNonFriendsDMsSetting
-// Dependencies: [7645, 558, 576, 14649, 7122, 6811, 1126, 14650, 11142, 14652, 2]
+// Dependencies: [7966, 558, 576, 14910, 8218, 6983, 1126, 14911, 11262, 14913, 2]
 // Exports: onObscuredContentNonFriendsDmOnPress
 
-// Module 14653 (ExplicitMediaFiltersNonFriendsDMsSetting)
+// Module 14914 (ExplicitMediaFiltersNonFriendsDMsSetting)
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 6811 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 14649 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 14650 */;
-import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 14652 */;
+import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 6983 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 14910 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 14911 */;
+import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 14913 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ExplicitMediaRedactionUtils = tmp(7122);
+const ExplicitMediaRedactionUtils = tmp(8218);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useObscuredContentNonFriendsDmSettingValue() {
   let tmp4;
   const obj = react;
   const cResult = obj.c(2);
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : (() => {
+}) : (function useObscuredContentNonFriendsDmSettingValue() {
   const obj = useExplicitContentSettingsOrDefault;
   const explicitContentNonFriendDm = obj.useExplicitContentSettingOrDefault().explicitContentNonFriendDm;
   const obj2 = ExplicitMediaRedactionUtils;

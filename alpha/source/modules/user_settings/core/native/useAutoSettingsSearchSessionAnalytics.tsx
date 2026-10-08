@@ -1,22 +1,22 @@
-// Module ID: 17112
-// Function ID: 17113
+// Module ID: 17393
+// Function ID: 17394
 // Name: useAutoSettingsSearchSessionAnalytics
-// Dependencies: [19, 1986, 14517, 558, 576, 1105, 504, 7957, 6499, 5597, 2]
+// Dependencies: [19, 1998, 14777, 558, 576, 1105, 504, 5928, 6676, 5392, 2]
 
-// Module 17112 (useAutoSettingsSearchSessionAnalytics)
-import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 6499 */;
-import usePreviousDefault from "usePrevious" /* 7957 */;
+// Module 17393 (useAutoSettingsSearchSessionAnalytics)
+import usePreviousDefault from "usePrevious" /* 5928 */;
+import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 6676 */;
 import react from "react" /* 19 */;
-import AppStateStore from "AppStateStore" /* 1986 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14517 */;
+import AppStateStore from "AppStateStore" /* 1998 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14777 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, isFocused, state;
 
 let tmp8;
-const useMountEffectDefault = tmp8(5597);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const useMountEffectDefault = tmp8(5392);
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAutoSettingsSearchSessionAnalytics() {
   let closure_1;
   let stateFromStores;
   let tmp10;
@@ -222,7 +222,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[6] = items2;
   tmp13 = items2;
   tmp12 = fn3;
-}) : (() => {
+}) : (function useAutoSettingsSearchSessionAnalytics() {
   let closure_1;
   let stateFromStores;
   let obj = stateFromStores(504);

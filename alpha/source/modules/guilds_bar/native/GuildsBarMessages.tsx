@@ -1,22 +1,22 @@
-// Module ID: 16288
-// Function ID: 16289
+// Module ID: 16548
+// Function ID: 16549
 // Name: GuildsBarMessages
-// Dependencies: [19, 4705, 1085, 21, 16289, 558, 576, 16274, 504, 16277, 587, 1126, 16290, 5862, 2]
+// Dependencies: [19, 4899, 1085, 21, 16549, 558, 576, 16534, 504, 16537, 587, 1126, 16550, 8174, 2]
 
-// Module 16288 (GuildsBarMessages)
+// Module 16548 (GuildsBarMessages)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import ChatIcon from "ChatIcon" /* 5862 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 16274 */;
-import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 16277 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16289 */;
-import HomeDrawerDirectMessagesRowDefault from "HomeDrawerDirectMessagesRow" /* 16290 */;
+import ChatIcon from "ChatIcon" /* 8174 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 16534 */;
+import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 16537 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16549 */;
+import HomeDrawerDirectMessagesRowDefault from "HomeDrawerDirectMessagesRow" /* 16550 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ const config = {
     transitionGuildsBarToGuildOrOpenSelectedChannelDefault(ME);
   }
 };
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildsBarMessages() {
   let badge;
   let cutouts;
   let tmp13;
@@ -113,7 +113,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   cResult[11] = tmp18;
   cResult[12] = tmp22;
   tmp21 = tmp22;
-}) : (() => {
+}) : (function GuildsBarMessages() {
   let badge;
   let cutouts;
   const obj = GuildsBarAnimatedItemWrapper;
@@ -129,7 +129,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   const colors = nativeDefault.colors;
   GuildsBarAnimatedItemWrapperDefault;
   const intl = tmp(1126).intl;
-  return <tmp5Result selected={stateFromStores} circle={false} unread={false} styles={guildsBarAnimatedWrapperStyles} cutouts={cutouts} config={config} overState="y" label={intl.string(intl2.t.YUU0RF)} externalChildren={badge} expandedChildren="Guild Scheduled Event Invite Button Embed">{"PUSH_FEEDBACK_RECEIVED_NOTIFICATION"}</tmp5Result>;
+  return <tmp5Result selected={stateFromStores} circle={false} unread={false} styles={guildsBarAnimatedWrapperStyles} cutouts={cutouts} config={config} overState="y" label={intl.string(intl2.t.YUU0RF)} externalChildren={badge} expandedChildren="ICYMI_JOINED_RECOMMENDED_GUILD">{"ICYMI_SET_VIDEOS_MUTED"}</tmp5Result>;
 }));
 const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarMessages.tsx");
 

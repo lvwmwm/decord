@@ -1,17 +1,17 @@
-// Module ID: 15794
-// Function ID: 15795
+// Module ID: 16052
+// Function ID: 16053
 // Name: useSecureFramesVerifiedUsers
-// Dependencies: [9362, 558, 576, 504, 2]
+// Dependencies: [8784, 558, 576, 504, 2]
 
-// Module 15794 (useSecureFramesVerifiedUsers)
+// Module 16052 (useSecureFramesVerifiedUsers)
 import react from "react" /* 576 */;
-import VerifiedKeyStore from "VerifiedKeyStore" /* 9362 */;
+import VerifiedKeyStore from "VerifiedKeyStore" /* 8784 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureFramesVerifiedUserIds() {
   let tmp4;
   let tmp5;
   let userIds;
@@ -19,7 +19,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [VerifiedKeyStore];
-    const fn = function o() {
+    const fn = function u() {
       return userIds.getUserIds();
     };
     cResult[0] = items;
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStoresArray(tmp4, tmp5);
-}) : (() => {
+}) : (function useSecureFramesVerifiedUserIds() {
   let userIds;
   const items = [VerifiedKeyStore];
   const obj = get_initialized;

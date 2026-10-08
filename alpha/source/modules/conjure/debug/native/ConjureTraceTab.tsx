@@ -1,35 +1,35 @@
-// Module ID: 16781
-// Function ID: 16782
+// Module ID: 17056
+// Function ID: 17057
 // Name: ConjureTraceTab
-// Dependencies: [5, 32, 19, 17, 8734, 21, 4896, 587, 558, 576, 16782, 16784, 1126, 3753, 16783, 6002, 4892, 1618, 504, 16785, 16786, 4860, 16787, 1266, 7887, 11034, 16779, 6554, 16591, 4851, 8404, 2]
+// Dependencies: [5, 32, 19, 17, 11251, 21, 5090, 587, 558, 576, 17057, 17059, 1126, 3827, 17058, 6186, 5086, 1630, 504, 17060, 17061, 5054, 17062, 1278, 8307, 12780, 17054, 6730, 16846, 5045, 8600, 2]
 
-// Module 16781 (ConjureTraceTab)
+// Module 17056 (ConjureTraceTab)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
-import v1 from "v1" /* 1266 */;
-import _modDef3753 from "module_3753" /* 3753 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import FileManagerUtils from "FileManagerUtils" /* 7887 */;
-import ConjureTraceFormat from "ConjureTraceFormat" /* 16782 */;
-import debug_ConjureTraceFormat from "debug/ConjureTraceFormat" /* 16783 */;
-import ConjureTraceUtils from "ConjureTraceUtils" /* 16784 */;
-import ConjureTimeFormat from "ConjureTimeFormat" /* 16786 */;
-import ConjureTraceDetailSheet from "ConjureTraceDetailSheet" /* 16787 */;
+import v1 from "v1" /* 1278 */;
+import _modDef3827 from "module_3827" /* 3827 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import FileManagerUtils from "FileManagerUtils" /* 8307 */;
+import ConjureTraceFormat from "ConjureTraceFormat" /* 17057 */;
+import debug_ConjureTraceFormat from "debug/ConjureTraceFormat" /* 17058 */;
+import ConjureTraceUtils from "ConjureTraceUtils" /* 17059 */;
+import ConjureTimeFormat from "ConjureTimeFormat" /* 17061 */;
+import ConjureTraceDetailSheet from "ConjureTraceDetailSheet" /* 17062 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 8734 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 11251 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const ConjureTraceDetailSheetDefault = ConjureTraceDetailSheet;
-let _require, c1, c2, catchPromise, cleanupPromise, combined, combined1, combined2, date, dependencyMap, entry, importDefault, nextPromise, projectId, traceExportPayload, turnId, writeFile, writeFileResult;
+let _require, c1, c2, catchPromise, cleanupPromise, combined, combined1, combined2, date, dependencyMap, importDefault, nextPromise, onPress, traceExportPayload, turnId, writeFile, writeFileResult;
 
 let c9;
 let metroImportAll;
@@ -72,7 +72,7 @@ obj13 = { gap: nativeDefault.space.PX_4 };
 obj14 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 let closure_10 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraceRow(entry) {
   let formatToPlainStringResult;
   let items;
   let items1;
@@ -100,7 +100,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   const obj = react2;
   const cResult = obj.c(74);
   entry = entry.entry;
-  const onPress = entry.onPress;
+  onPress = entry.onPress;
   const tmp4 = closure_10();
   const obj2 = ConjureTraceFormat;
   const traceCategoryTextStyles = obj2.useTraceCategoryTextStyles();
@@ -146,7 +146,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
                         let tmp44 = null;
                         if (null != tmp20) {
                           const obj3 = { variant: "text-xs/normal", color: "text-subtle", children: tmp20 };
-                          tmp44 = metroImportAll(tmp(4892).Text, obj3);
+                          tmp44 = metroImportAll(tmp(5086).Text, obj3);
                         }
                         cResult[44] = tmp20;
                         cResult[45] = tmp44;
@@ -173,7 +173,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
                                     let tmp54 = null;
                                     if (null != entry.error) {
                                       const obj4 = { variant: "text-xs/normal", color: "text-feedback-critical", lineClamp: 2, children: entry.error };
-                                      tmp54 = metroImportAll(tmp(4892).Text, obj4);
+                                      tmp54 = metroImportAll(tmp(5086).Text, obj4);
                                     }
                                     cResult[56] = entry.error;
                                     cResult[57] = tmp54;
@@ -246,7 +246,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
                                   tmp51 = null;
                                   if (null != entry.summary) {
                                     const obj8 = { variant: "text-xs/normal", color: "text-muted", lineClamp: 2, children: entry.summary };
-                                    tmp51 = metroImportAll(tmp(4892).Text, obj8);
+                                    tmp51 = metroImportAll(tmp(5086).Text, obj8);
                                   }
                                 }
                                 cResult[53] = entry.kind;
@@ -307,7 +307,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
         if (cResult[29] === rowNested) {
           tmp30 = cResult[30];
         }
-        const Card = tmp(6002).Card;
+        const Card = tmp(6186).Card;
         if (cResult[31] === entry) {
           let tmp31;
           let tmp32;
@@ -324,7 +324,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
           } else {
             tmp32 = cResult[35];
           }
-          const Text = tmp(4892).Text;
+          const Text = tmp(5086).Text;
           const tmpResult4 = debug_ConjureTraceFormat;
           const categoryLabelResult = tmpResult4.categoryLabel(traceCategoryResult);
           cResult[0] = traceCategoryTextStyles;
@@ -389,7 +389,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
       const intl = tmp(1126).intl;
       const formatToPlainString = intl.formatToPlainString;
       const obj13 = { tokens: tmpResult5.formatTokens(entry.promptTokens) };
-      const v6GQUgQ = _modDef3753["6GQUgQ"];
+      const v6GQUgQ = _modDef3827["6GQUgQ"];
       tmpResult5 = debug_ConjureTraceFormat;
       formatToPlainStringResult = formatToPlainString(v6GQUgQ, obj13);
     }
@@ -404,7 +404,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
     const tmpResult6 = debug_ConjureTraceFormat;
     formatToPlainStringResult = tmpResult6.formatDuration(entry.durationMs);
   }
-}) : ((entry) => {
+}) : (function TraceRow(entry) {
   let Card;
   let formatToPlainStringResult;
   let items1;
@@ -414,7 +414,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   let tmp2Result;
   let tmp2Result3;
   entry = entry.entry;
-  const onPress = entry.onPress;
+  onPress = entry.onPress;
   const tmp = closure_10();
   const obj = ConjureTraceFormat;
   const traceCategoryTextStyles = obj.useTraceCategoryTextStyles();
@@ -426,7 +426,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
       const intl = tmp2(1126).intl;
       const formatToPlainString = intl.formatToPlainString;
       const obj3 = { tokens: tmp2Result.formatTokens(entry.promptTokens) };
-      const v6GQUgQ = _modDef3753["6GQUgQ"];
+      const v6GQUgQ = _modDef3827["6GQUgQ"];
       tmp2Result = debug_ConjureTraceFormat;
       formatToPlainStringResult = formatToPlainString(v6GQUgQ, obj3);
     }
@@ -444,11 +444,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
     };
     obj6 = { style: tmp.rowBody, children: items2 };
     const obj7 = { style: tmp.rowTop, children: items1 };
-    Card = tmp2(6002).Card;
+    Card = tmp2(6186).Card;
     const obj8 = { status: entry.status };
     items1 = [metroImportAll(ConjureTraceFormat.TraceStatusDot, obj8), , , ];
     const obj9 = { variant: "text-xs/semibold", style: traceCategoryTextStyles[traceCategoryResult], children: tmp2Result3.categoryLabel(traceCategoryResult) };
-    const Text = tmp2(4892).Text;
+    const Text = tmp2(5086).Text;
     tmp2Result3 = debug_ConjureTraceFormat;
     items1[1] = metroImportAll(Text, obj9);
     const obj10 = { variant: "text-xs/semibold", color: "text-default", style: tmp.rowTitle, lineClamp: 1, children: tmp6 };
@@ -456,7 +456,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
     let tmp11Result = null;
     if (null != formatToPlainStringResult) {
       const obj11 = { variant: "text-xs/normal", color: "text-subtle", children: formatToPlainStringResult };
-      tmp11Result = tmp11(tmp2(4892).Text, obj11);
+      tmp11Result = tmp11(tmp2(5086).Text, obj11);
     }
     items1[3] = tmp11Result;
     items2 = [React4(View, obj7), , ];
@@ -465,14 +465,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
       tmp11Result3 = null;
       if (null != entry.summary) {
         const obj12 = { variant: "text-xs/normal", color: "text-muted", lineClamp: 2, children: entry.summary };
-        tmp11Result3 = tmp11(tmp2(4892).Text, obj12);
+        tmp11Result3 = tmp11(tmp2(5086).Text, obj12);
       }
     }
     items2[1] = tmp11Result3;
     let tmp11Result4 = null;
     if (null != entry.error) {
       const obj13 = { variant: "text-xs/normal", color: "text-feedback-critical", lineClamp: 2, children: entry.error };
-      tmp11Result4 = tmp11(tmp2(4892).Text, obj13);
+      tmp11Result4 = tmp11(tmp2(5086).Text, obj13);
     }
     items2[2] = tmp11Result4;
     return metroImportAll(View, obj4);
@@ -484,7 +484,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((entries) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraceOverview(entries) {
   let arr;
   let items;
   let tmp7;
@@ -599,7 +599,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((entries) => {
           const Text = Text_Text.Text;
           obj4 = debug_ConjureTraceFormat;
           items1[1] = metroImportAll(Text, obj3);
-          const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: intl.formatToPlainString(_modDef3753["3dQ1ly"], { percent: num2 }) };
+          const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: intl.formatToPlainString(_modDef3827["3dQ1ly"], { percent: num2 }) };
           const Text2 = Text_Text.Text;
           intl = intl7.intl;
           items1[2] = metroImportAll(Text2, obj5);
@@ -607,7 +607,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((entries) => {
           const intl2 = intl7.intl;
           const formatToPlainString = intl2.formatToPlainString;
           let num4;
-          const Ow0k34 = _modDef3753.Ow0k34;
+          const Ow0k34 = _modDef3827.Ow0k34;
           const tmp4 = React4;
           const tmp5 = View;
           if (found != null) {
@@ -621,7 +621,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((entries) => {
           let tmp6Result = null;
           if (0 !== num) {
             const obj7 = { variant: "text-xs/normal", color: "text-subtle", children: tmp7Result.formatDuration(num) };
-            const Text4 = tmp7(4892).Text;
+            const Text4 = tmp7(5086).Text;
             tmp7Result = debug_ConjureTraceFormat;
             tmp6Result = tmp6(Text4, obj7);
           }
@@ -668,7 +668,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((entries) => {
   cResult[5] = arr;
   cResult[6] = mapped1;
   tmp10 = mapped1;
-}) : ((arg0) => {
+}) : (function TraceOverview(arg0) {
   let TRACE_CATEGORIES;
   let closure_2;
   let items1;
@@ -677,7 +677,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((entries) => {
   let tmp = closure_10();
   let closure_1 = tmp;
   const tmp2 = entries;
-  let obj = entries(16782);
+  let obj = entries(17057);
   dependencyMap = obj.useTraceCategoryFillStyles();
   let items = [entries];
   const memo = react.useMemo(() => {
@@ -739,7 +739,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((entries) => {
       const Text = Text_Text.Text;
       obj4 = debug_ConjureTraceFormat;
       items1[1] = metroImportAll(Text, obj3);
-      const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: intl.formatToPlainString(_modDef3753["3dQ1ly"], { percent: num2 }) };
+      const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: intl.formatToPlainString(_modDef3827["3dQ1ly"], { percent: num2 }) };
       const Text2 = Text_Text.Text;
       intl = intl7.intl;
       items1[2] = metroImportAll(Text2, obj5);
@@ -747,7 +747,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((entries) => {
       const intl2 = intl7.intl;
       const formatToPlainString = intl2.formatToPlainString;
       let num4;
-      const Ow0k34 = _modDef3753.Ow0k34;
+      const Ow0k34 = _modDef3827.Ow0k34;
       const tmp4 = React4;
       const tmp5 = View;
       if (found != null) {
@@ -761,7 +761,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((entries) => {
       let tmp6Result = null;
       if (0 !== num) {
         const obj7 = { variant: "text-xs/normal", color: "text-subtle", children: tmp7Result.formatDuration(num) };
-        const Text4 = tmp7(4892).Text;
+        const Text4 = tmp7(5086).Text;
         tmp7Result = debug_ConjureTraceFormat;
         tmp6Result = tmp6(Text4, obj7);
       }
@@ -769,12 +769,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((entries) => {
       return tmp4(tmp5, obj, item);
     })
   };
-  TRACE_CATEGORIES = tmp2(16784).TRACE_CATEGORIES;
+  TRACE_CATEGORIES = tmp2(17059).TRACE_CATEGORIES;
   items1[1] = tmp7(tmp6, obj4);
   return tmp5(tmp6, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTraceTab(projectId) {
   let first;
   let first1;
   let groupHead;
@@ -841,8 +841,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   }
   const tmpResult3 = tmp(tmp2[18]);
   const stateFromStores = tmpResult3.useStateFromStores(tmp10, tmp12, tmp13);
-  let obj4 = X;
-  const tmp15 = first1(X.useState(""), 2);
+  let obj4 = F;
+  const tmp15 = first1(F.useState(""), 2);
   first1 = tmp15[0];
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     class I {
@@ -884,7 +884,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       }
     }
     if (cResult[14] !== projectId) {
-      class X {
+      class F {
         constructor(entryId) {
           let obj2;
           const tmp = ActionSheetActionCreators;
@@ -895,9 +895,42 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         }
       }
       cResult[14] = projectId;
-      cResult[15] = X;
+      class H {
+        constructor(item) {
+          let items;
+          let tmp13Result;
+          let tmp9Result;
+          item = item.item;
+          if ("entry" === item.kind) {
+            const obj2 = { entry: item.entry, onPress: F };
+            tmp9Result = metroImportAll(closure_11, obj2);
+          } else {
+            const obj3 = { style: groupHead.groupHead, children: items };
+            const obj4 = { variant: "text-xs/semibold", color: "text-muted", children: item.label };
+            items = [metroImportAll(Text_Text.Text, obj4), , ];
+            let tmp2 = null;
+            const tmp10 = View;
+            const tmp9 = React4;
+            if (null != item.started) {
+              const obj = { variant: "text-xs/normal", color: "text-subtle", children: item.started };
+              tmp2 = metroImportAll(tmp13(5086).Text, obj);
+            }
+            items[1] = tmp2;
+            let tmp3 = null;
+            if (null != item.spanMs) {
+              const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: tmp13Result.formatDuration(item.spanMs) };
+              const Text = tmp13(5086).Text;
+              tmp13Result = debug_ConjureTraceFormat;
+              tmp3 = metroImportAll(Text, obj5);
+            }
+            items[2] = tmp3;
+            tmp9Result = tmp9(tmp10, obj3);
+          }
+          return tmp9Result;
+        }
+      }
     } else {
-      class X {
+      class F {
         constructor(entryId) {
           let obj2;
           const tmp = ActionSheetActionCreators;
@@ -908,9 +941,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         }
       }
     }
-    X = tmp22;
+    F = tmp22;
     if (cResult[16] === tmp22) {
-      class X {
+      class F {
         constructor(entryId) {
           let obj2;
           const tmp = ActionSheetActionCreators;
@@ -921,7 +954,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         }
       }
       if (cResult[19] === stateFromStoresArray) {
-        class X {
+        class F {
           constructor(entryId) {
             let obj2;
             const tmp = ActionSheetActionCreators;
@@ -931,7 +964,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
             showActionSheet(obj);
           }
         }
-        class O {
+        class N {
           constructor() {
             combined = "vibegrations-trace-" + projectId + ".json";
             closure_0 = combined;
@@ -1041,7 +1074,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
           }
         }
       }
-      class O {
+      class N {
         constructor() {
           combined = "vibegrations-trace-" + projectId + ".json";
           closure_0 = combined;
@@ -1150,45 +1183,80 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
           return;
         }
       }
-      cResult[19] = stateFromStoresArray;
-      cResult[20] = projectId;
-      cResult[21] = O;
-    }
-    const fn3 = function j(item) {
-      let items;
-      let tmp13Result;
-      let tmp9Result;
-      item = item.item;
-      if ("entry" === item.kind) {
-        const obj2 = { entry: item.entry, onPress: X };
-        tmp9Result = metroImportAll(closure_11, obj2);
-      } else {
-        const obj3 = { style: groupHead.groupHead, children: items };
-        const obj4 = { variant: "text-xs/semibold", color: "text-muted", children: item.label };
-        items = [metroImportAll(Text_Text.Text, obj4), , ];
-        let tmp2 = null;
-        const tmp10 = View;
-        const tmp9 = React4;
-        if (null != item.started) {
-          const obj = { variant: "text-xs/normal", color: "text-subtle", children: item.started };
-          tmp2 = metroImportAll(tmp13(4892).Text, obj);
+      class H {
+        constructor(item) {
+          let items;
+          let tmp13Result;
+          let tmp9Result;
+          item = item.item;
+          if ("entry" === item.kind) {
+            const obj2 = { entry: item.entry, onPress: F };
+            tmp9Result = metroImportAll(closure_11, obj2);
+          } else {
+            const obj3 = { style: groupHead.groupHead, children: items };
+            const obj4 = { variant: "text-xs/semibold", color: "text-muted", children: item.label };
+            items = [metroImportAll(Text_Text.Text, obj4), , ];
+            let tmp2 = null;
+            const tmp10 = View;
+            const tmp9 = React4;
+            if (null != item.started) {
+              const obj = { variant: "text-xs/normal", color: "text-subtle", children: item.started };
+              tmp2 = metroImportAll(tmp13(5086).Text, obj);
+            }
+            items[1] = tmp2;
+            let tmp3 = null;
+            if (null != item.spanMs) {
+              const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: tmp13Result.formatDuration(item.spanMs) };
+              const Text = tmp13(5086).Text;
+              tmp13Result = debug_ConjureTraceFormat;
+              tmp3 = metroImportAll(Text, obj5);
+            }
+            items[2] = tmp3;
+            tmp9Result = tmp9(tmp10, obj3);
+          }
+          return tmp9Result;
         }
-        items[1] = tmp2;
-        let tmp3 = null;
-        if (null != item.spanMs) {
-          const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: tmp13Result.formatDuration(item.spanMs) };
-          const Text = tmp13(4892).Text;
-          tmp13Result = debug_ConjureTraceFormat;
-          tmp3 = metroImportAll(Text, obj5);
-        }
-        items[2] = tmp3;
-        tmp9Result = tmp9(tmp10, obj3);
       }
-      return tmp9Result;
-    };
+      cResult[20] = projectId;
+      cResult[21] = N;
+    }
+    class H {
+      constructor(item) {
+        let items;
+        let tmp13Result;
+        let tmp9Result;
+        item = item.item;
+        if ("entry" === item.kind) {
+          const obj2 = { entry: item.entry, onPress: F };
+          tmp9Result = metroImportAll(closure_11, obj2);
+        } else {
+          const obj3 = { style: groupHead.groupHead, children: items };
+          const obj4 = { variant: "text-xs/semibold", color: "text-muted", children: item.label };
+          items = [metroImportAll(Text_Text.Text, obj4), , ];
+          let tmp2 = null;
+          const tmp10 = View;
+          const tmp9 = React4;
+          if (null != item.started) {
+            const obj = { variant: "text-xs/normal", color: "text-subtle", children: item.started };
+            tmp2 = metroImportAll(tmp13(5086).Text, obj);
+          }
+          items[1] = tmp2;
+          let tmp3 = null;
+          if (null != item.spanMs) {
+            const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: tmp13Result.formatDuration(item.spanMs) };
+            const Text = tmp13(5086).Text;
+            tmp13Result = debug_ConjureTraceFormat;
+            tmp3 = metroImportAll(Text, obj5);
+          }
+          items[2] = tmp3;
+          tmp9Result = tmp9(tmp10, obj3);
+        }
+        return tmp9Result;
+      }
+    }
     cResult[16] = tmp22;
     cResult[17] = tmp4.groupHead;
-    cResult[18] = fn3;
+    cResult[18] = H;
   }
   const items4 = [];
   const tmpResult4 = tmp(tmp2[11]);
@@ -1206,7 +1274,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         turnId = index;
       }
       const _HermesInternal = HermesInternal;
-      const obj2 = { kind: "group", key: "group-" + turnId, label: intl.formatToPlainString(_modDef3753.gPwGYA, obj3), started: tmpResult.formatClockTime(turnId.startedAt), spanMs: turnId.spanMs };
+      const obj2 = { kind: "group", key: "group-" + turnId, label: intl.formatToPlainString(_modDef3827.gPwGYA, obj3), started: tmpResult.formatClockTime(turnId.startedAt), spanMs: turnId.spanMs };
       intl = tmp(1126).intl;
       obj3 = { number: index + 1 };
       tmpResult = ConjureTimeFormat;
@@ -1221,7 +1289,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   cResult[11] = stateFromStoresArray;
   cResult[12] = first1;
   cResult[13] = items4;
-}) : ((projectId) => {
+}) : (function ConjureTraceTab(projectId) {
   let ConjureHistoryPlaceholder;
   let SearchField;
   let Text;
@@ -1242,7 +1310,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   let tmp16;
   projectId = projectId.projectId;
   let stateFromStoresArray;
-  let onPress;
+  onPress = undefined;
   let tmp = closure_10();
   importDefault = tmp;
   let tmp2 = importDefault;
@@ -1280,7 +1348,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
           turnId = index;
         }
         const _HermesInternal = HermesInternal;
-        const obj2 = { kind: "group", key: "group-" + turnId, label: intl.formatToPlainString(_modDef3753.gPwGYA, obj3), started: tmpResult.formatClockTime(turnId.startedAt), spanMs: turnId.spanMs };
+        const obj2 = { kind: "group", key: "group-" + turnId, label: intl.formatToPlainString(_modDef3827.gPwGYA, obj3), started: tmpResult.formatClockTime(turnId.startedAt), spanMs: turnId.spanMs };
         intl = tmp(1126).intl;
         obj3 = { number: index + 1 };
         tmpResult = ConjureTimeFormat;
@@ -1321,13 +1389,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       const tmp9 = React4;
       if (null != item.started) {
         const obj = { variant: "text-xs/normal", color: "text-subtle", children: item.started };
-        tmp2 = metroImportAll(tmp13(4892).Text, obj);
+        tmp2 = metroImportAll(tmp13(5086).Text, obj);
       }
       items[1] = tmp2;
       let tmp3 = null;
       if (null != item.spanMs) {
         const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: tmp13Result.formatDuration(item.spanMs) };
-        const Text = tmp13(4892).Text;
+        const Text = tmp13(5086).Text;
         tmp13Result = debug_ConjureTraceFormat;
         tmp3 = metroImportAll(Text, obj5);
       }

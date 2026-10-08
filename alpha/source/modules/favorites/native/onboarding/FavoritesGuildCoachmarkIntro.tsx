@@ -1,24 +1,24 @@
-// Module ID: 16294
-// Function ID: 16295
+// Module ID: 16554
+// Function ID: 16555
 // Name: FavoritesGuildCoachmarkIntro
-// Dependencies: [32, 19, 16265, 1085, 2048, 21, 558, 576, 4618, 10057, 16289, 1126, 3395, 16295, 9895, 2]
+// Dependencies: [32, 19, 16525, 1085, 2060, 21, 558, 576, 4810, 10302, 16549, 1126, 3439, 16555, 9375, 2]
 
-// Module 16294 (FavoritesGuildCoachmarkIntro)
+// Module 16554 (FavoritesGuildCoachmarkIntro)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import _modDef3395 from "module_3395" /* 3395 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10057 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16289 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import _modDef3439 from "module_3439" /* 3439 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10302 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16549 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16265 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16525 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, markAsDismissed;
+let dependencyMap;
 
 let _slicedToArray = _slicedToArray_mod;
 const FAVORITES = Constants.FAVORITES;
@@ -28,7 +28,7 @@ const __initData = { code: "function FavoritesGuildCoachmarkIntroTsx1(){const{sc
 const __initData2 = { code: "function FavoritesGuildCoachmarkIntroTsx2(atTop,wasAtTop){const{runOnJS,setScrolledToTop}=this.__closure;if(atTop===wasAtTop){return;}runOnJS(setScrolledToTop)(atTop);}" };
 const __initData3 = { code: "function FavoritesGuildCoachmarkIntroTsx3(){const{scrollPosition}=this.__closure;return scrollPosition.get()<=0;}" };
 const __initData4 = { code: "function FavoritesGuildCoachmarkIntroTsx4(atTop,wasAtTop){const{runOnJS,setScrolledToTop}=this.__closure;if(atTop===wasAtTop){return;}runOnJS(setScrolledToTop)(atTop);}" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGuildCoachmarkIntro(markAsDismissed) {
   let closure_2;
   let first;
   let tmp10;
@@ -61,7 +61,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
   [tmp9, tmp10] = react.useState(tmp7);
   dependencyMap = tmp10;
   _slicedToArray(react.useState(tmp7), 2);
-  const tmpResult = markAsDismissed(4618);
+  const tmpResult = markAsDismissed(4810);
   class C {
     constructor() {
       return scrollPosition.get() <= 0;
@@ -76,10 +76,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
       obj.runOnJS(dependencyMap)(arg0);
     }
   };
-  fn2.__closure = { runOnJS: markAsDismissed(4618).runOnJS, setScrolledToTop: tmp10 };
+  fn2.__closure = { runOnJS: markAsDismissed(4810).runOnJS, setScrolledToTop: tmp10 };
   fn2.__workletHash = 13648062364539;
   fn2.__initData = __initData2;
-  ({ runOnJS: markAsDismissed(4618).runOnJS, setScrolledToTop: tmp10 });
+  ({ runOnJS: markAsDismissed(4810).runOnJS, setScrolledToTop: tmp10 });
   const animatedReaction = tmpResult.useAnimatedReaction(C, fn2);
   if (cResult[2] !== markAsDismissed) {
     class I {
@@ -126,9 +126,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
         markAsDismissed(ContentDismissActionType.TAKE_ACTION);
       }
     }
-    const stringResult = obj4.string(scrollPosition(3395)["bu/mLv"]);
+    const stringResult = obj4.string(scrollPosition(3439)["bu/mLv"]);
     const intl = tmp(1126).intl;
-    const stringResult1 = intl.string(scrollPosition(3395).kxQJ7q);
+    const stringResult1 = intl.string(scrollPosition(3439).kxQJ7q);
     cResult[6] = stringResult;
     cResult[7] = stringResult1;
     tmp15 = stringResult1;
@@ -145,19 +145,19 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
     tmp15 = cResult[7];
   }
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
+    class G {
       constructor() {
         return jsx(scrollPosition(dependencyMap[13]), {});
       }
     }
     const intl2 = tmp(1126).intl;
-    const stringResult2 = intl2.string(scrollPosition(3395)["vN/KQ9"]);
-    cResult[8] = R;
+    const stringResult2 = intl2.string(scrollPosition(3439)["vN/KQ9"]);
+    cResult[8] = G;
     cResult[9] = stringResult2;
     tmp20 = stringResult2;
-    tmp19 = R;
+    tmp19 = G;
   } else {
-    class R {
+    class G {
       constructor() {
         return jsx(scrollPosition(dependencyMap[13]), {});
       }
@@ -165,7 +165,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
     tmp20 = cResult[9];
   }
   if (cResult[10] === tmp13) {
-    class R {
+    class G {
       constructor() {
         return jsx(scrollPosition(dependencyMap[13]), {});
       }
@@ -176,7 +176,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
   cResult[11] = tmp12;
   cResult[12] = tmp9;
   cResult[13] = obj3;
-}) : ((markAsDismissed) => {
+}) : (function FavoritesGuildCoachmarkIntro(markAsDismissed) {
   let closure_3;
   let tmp3;
   let visible;
@@ -189,13 +189,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
   [visible, tmp3] = onDismiss.useState(() => scrollPosition.get() <= 0);
   _slicedToArray = tmp3;
   let obj = markAsDismissed(visible[8]);
-  const fn = function v() {
+  const fn = function p() {
     return scrollPosition.get() <= 0;
   };
   fn.__closure = { scrollPosition };
   fn.__workletHash = 16210171023746;
   fn.__initData = __initData3;
-  const fn2 = function p(arg0, arg1) {
+  const fn2 = function v(arg0, arg1) {
     if (arg0 !== arg1) {
       const obj = ReanimatedRexport;
       obj.runOnJS(closure_3)(arg0);
@@ -225,13 +225,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
     const obj = {
       visible,
       position: "bottom",
-      title: intl.string(_modDef3395["bu/mLv"]),
-      description: intl2.string(_modDef3395.kxQJ7q),
+      title: intl.string(_modDef3439["bu/mLv"]),
+      description: intl2.string(_modDef3439.kxQJ7q),
       onDismiss,
       renderImgComponent() {
         return closure_1_8(scrollPosition(visible[13]), {});
       },
-      buttonLabel: intl3.string(_modDef3395["vN/KQ9"]),
+      buttonLabel: intl3.string(_modDef3439["vN/KQ9"]),
       onButtonPress: callback1
     };
     intl = intl4.intl;

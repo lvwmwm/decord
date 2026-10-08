@@ -1,23 +1,23 @@
-// Module ID: 17806
-// Function ID: 17807
+// Module ID: 18093
+// Function ID: 18094
 // Name: GuildSettingsServerTagColorPickerActionSheet
-// Dependencies: [32, 19, 17, 7614, 21, 587, 4896, 14440, 4733, 558, 576, 1484, 4618, 9768, 1126, 9317, 4860, 6651, 13746, 9409, 4892, 9318, 14441, 9271, 5601, 5600, 6652, 2]
+// Dependencies: [32, 19, 17, 7860, 21, 587, 5090, 14665, 4927, 558, 576, 1496, 4810, 10971, 1126, 8505, 5054, 6828, 13968, 8830, 5086, 8752, 14666, 8602, 5375, 5373, 6829, 2]
 
-// Module 17806 (GuildSettingsServerTagColorPickerActionSheet)
+// Module 18093 (GuildSettingsServerTagColorPickerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ColorUtils from "ColorUtils" /* 4733 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import ColorPickerUtils from "ColorPickerUtils" /* 14440 */;
+import ColorUtils from "ColorUtils" /* 4927 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import ColorPickerUtils from "ColorPickerUtils" /* 14665 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildTagConstants from "GuildTagConstants" /* 7614 */;
+import GuildTagConstants from "GuildTagConstants" /* 7860 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet, secondaryColor;
+let BottomSheet;
 
 let c10;
 let c9;
@@ -41,18 +41,23 @@ let closure_13 = createStyles.createStyles((width) => {
   ({ marginTop: nativeDefault.space.PX_24 });
   return obj;
 });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((secondaryColor) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsServerTagColorPickerActionSheet(secondaryColor) {
+  let Stack2;
   let badge;
   let closure_3;
   let closure_6;
   let first1;
   let first2;
+  let intl3;
+  let items3;
+  let items4;
+  let obj7;
   let onSelectColor;
   let primaryColor;
   let ref;
   let sharedValue2;
   let tag;
-  let tmp24;
+  let tmp25;
   let tmp = primaryColor;
   let tmp2 = onSelectColor;
   let obj = primaryColor(onSelectColor[10]);
@@ -60,23 +65,25 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((secondaryColor) => {
   ({ tag, badge, primaryColor } = secondaryColor);
   secondaryColor = secondaryColor.secondaryColor;
   onSelectColor = secondaryColor.onSelectColor;
+  let tmp4 = secondaryColor;
   const bound = Math.max(240, Math.min(secondaryColor(onSelectColor[11])().width - 2 * ref, 358));
-  sharedValue2(bound);
-  _slicedToArray = tmp6;
+  const tmp6 = sharedValue2(bound);
+  let tmp7 = closure_6[badge] >= 2;
+  _slicedToArray = tmp7;
   const first = first2[0];
   let obj2 = first;
   [first1, closure_6] = first.useState(primaryColor);
-  let tmp11 = null;
+  let tmp12 = null;
   const useState = first.useState;
-  if (closure_6[badge] >= 2) {
-    tmp11 = secondaryColor;
+  if (tmp7) {
+    tmp12 = secondaryColor;
   }
-  const tmp8Result = _slicedToArray(useState(tmp11), 2);
-  first2 = tmp8Result[0];
-  let closure_8 = tmp8Result[1];
-  const tmp8Result3 = _slicedToArray(obj2.useState("primary"), 2);
-  const first3 = tmp8Result3[0];
-  let closure_10 = tmp8Result3[1];
+  const tmp9Result = _slicedToArray(useState(tmp12), 2);
+  first2 = tmp9Result[0];
+  let closure_8 = tmp9Result[1];
+  const tmp9Result3 = _slicedToArray(obj2.useState("primary"), 2);
+  const first3 = tmp9Result3[0];
+  let closure_10 = tmp9Result3[1];
   ref = obj2.useRef(false);
   let primary = first1;
   const hex2rgb2hsv = tmp(tmp2[8]).hex2rgb2hsv;
@@ -123,39 +130,39 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((secondaryColor) => {
     let formatted = str.toUpperCase();
     cResult[0] = str;
     cResult[1] = formatted;
-    tmp24 = formatted;
+    tmp25 = formatted;
   } else {
-    tmp24 = cResult[1];
+    tmp25 = cResult[1];
   }
-  const tmp8Result4 = _slicedToArray(obj2.useState(tmp24), 2);
-  let closure_15 = tmp8Result4[0];
-  let closure_16 = tmp8Result4[1];
+  const tmp9Result4 = _slicedToArray(obj2.useState(tmp25), 2);
+  const first4 = tmp9Result4[0];
+  let closure_16 = tmp9Result4[1];
   let primary2 = first1;
   if (first1 == null) {
     primary2 = first.primary;
   }
-  let tmp27 = null;
-  if (closure_6[badge] >= 2) {
+  let tmp29 = null;
+  if (tmp7) {
     let secondary = first2;
     if (first2 == null) {
       secondary = first.secondary;
     }
-    tmp27 = secondary;
+    tmp29 = secondary;
   }
-  secondary = tmp27;
+  secondary = tmp29;
   if (cResult[2] === primary2) {
-    let tmp28;
-    if (cResult[3] === tmp27) {
-      tmp28 = cResult[4];
+    let tmp30;
+    if (cResult[3] === tmp29) {
+      tmp30 = cResult[4];
     }
-    let closure_19 = tmp28;
+    let closure_19 = tmp30;
     if (cResult[5] === primaryColor) {
-      let tmp29;
-      let tmp30;
+      let tmp31;
+      let tmp32;
       if (cResult[6] === secondaryColor) {
-        tmp29 = cResult[7];
+        tmp31 = cResult[7];
       }
-      let closure_20 = tmp29;
+      let closure_20 = tmp31;
       const _Symbol = Symbol;
       let str2 = "react.memo_cache_sentinel";
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
@@ -174,37 +181,37 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((secondaryColor) => {
           }
         }
         cResult[8] = le;
-        tmp30 = le;
+        tmp32 = le;
       } else {
-        tmp30 = cResult[8];
+        tmp32 = cResult[8];
       }
-      let closure_21 = tmp30;
+      let closure_21 = tmp32;
       if (cResult[9] === sharedValue) {
         if (cResult[10] === sharedValue2) {
-          let tmp31;
+          let tmp33;
           if (cResult[11] === sharedValue3) {
-            tmp31 = cResult[12];
+            tmp33 = cResult[12];
           }
-          let closure_22 = tmp31;
+          let closure_22 = tmp33;
           if (cResult[13] === sharedValue) {
             if (cResult[14] === sharedValue2) {
-              let tmp32;
-              let tmp33;
-              let tmp39;
+              let tmp34;
+              let tmp35;
+              let tmp41;
               if (cResult[15] === sharedValue3) {
-                tmp32 = cResult[16];
+                tmp34 = cResult[16];
               }
-              let closure_23 = tmp32;
-              if (cResult[17] !== tmp32) {
-                const items = [tmp32];
-                cResult[17] = tmp32;
+              let closure_23 = tmp34;
+              if (cResult[17] !== tmp34) {
+                const items = [tmp34];
+                cResult[17] = tmp34;
                 cResult[18] = items;
-                tmp33 = items;
+                tmp35 = items;
               } else {
-                tmp33 = cResult[18];
+                tmp35 = cResult[18];
               }
-              const tmpResult8 = tmp(tmp2[13]);
-              const throttledFunction = tmpResult8.useThrottledFunction(tmp32, 32, tmp33, sharedValue);
+              const tmpResult10 = tmp(tmp2[13]);
+              const throttledFunction = tmpResult10.useThrottledFunction(tmp34, 32, tmp35, sharedValue);
               if (cResult[19] !== throttledFunction) {
                 function he() {
                   if (ref.current) {
@@ -222,40 +229,805 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((secondaryColor) => {
                 }
                 cResult[19] = throttledFunction;
                 cResult[20] = he;
-                tmp39 = he;
+                tmp41 = he;
               } else {
-                tmp39 = cResult[20];
+                tmp41 = cResult[20];
               }
-              let closure_25 = tmp39;
+              let closure_25 = tmp41;
               if (cResult[21] === first3) {
                 let tmp42;
-                let tmp41;
+                let tmp44;
+                let tmp43;
+                if (cResult[22] === throttledFunction) {
+                  tmp42 = cResult[23];
+                }
                 if (cResult[24] !== throttledFunction) {
-                  class Se {
-                    constructor() {
-                      return () => throttledFunction.cancel();
-                    }
+                  function ve() {
+                    return () => throttledFunction.cancel();
                   }
                   const items1 = [throttledFunction];
                   cResult[24] = throttledFunction;
-                  cResult[25] = Se;
+                  cResult[25] = ve;
                   cResult[26] = items1;
-                  tmp42 = items1;
-                  tmp41 = Se;
+                  tmp44 = items1;
+                  tmp43 = ve;
                 } else {
-                  class Se {
-                    constructor() {
-                      return () => throttledFunction.cancel();
-                    }
-                  }
-                  tmp42 = cResult[26];
+                  tmp43 = cResult[25];
+                  tmp44 = cResult[26];
                 }
-                const effect = obj2.useEffect(tmp41, tmp42);
+                const effect = obj2.useEffect(tmp43, tmp44);
                 if (cResult[27] === first3) {
-                  class Se {
-                    constructor() {
-                      return () => throttledFunction.cancel();
+                  if (cResult[28] === throttledFunction) {
+                    let tmp46;
+                    if (cResult[29] === tmp34) {
+                      tmp46 = cResult[30];
                     }
+                    if (cResult[31] === first3) {
+                      if (cResult[32] === throttledFunction) {
+                        let tmp47;
+                        if (cResult[33] === tmp33) {
+                          tmp47 = cResult[34];
+                        }
+                        if (cResult[35] === first3) {
+                          if (cResult[36] === tmp31) {
+                            if (cResult[37] === throttledFunction) {
+                              let tmp49;
+                              if (cResult[38] === tmp33) {
+                                tmp49 = cResult[39];
+                              }
+                              if (cResult[40] === first3) {
+                                if (cResult[41] === tmp41) {
+                                  if (cResult[42] === tmp30) {
+                                    if (cResult[43] === throttledFunction) {
+                                      let tmp51;
+                                      let tmp53;
+                                      let tmp55;
+                                      if (cResult[44] === tmp33) {
+                                        tmp51 = cResult[45];
+                                      }
+                                      const _Symbol2 = Symbol;
+                                      class Be {
+                                        constructor(arg0) {
+                                          let str = "secondary";
+                                          if (0 === arg0) {
+                                            str = "primary";
+                                          }
+                                          if (str !== first3) {
+                                            closure_25();
+                                            throttledFunction.cancel();
+                                            closure_10(str);
+                                            const str2 = closure_19(str);
+                                            const formatted = str2.toUpperCase();
+                                            closure_16(formatted);
+                                            closure_22(formatted);
+                                          }
+                                        }
+                                      }
+                                      if (tmp52 === Symbol.for("react.memo_cache_sentinel")) {
+                                        const obj3 = { id: "primary", label: tmp54(tmp(tmp2[14]).t.PHT1N2), page: null };
+                                        const intl = tmp(tmp2[14]).intl;
+                                        class Be {
+                                          constructor(arg0) {
+                                            let str = "secondary";
+                                            if (0 === arg0) {
+                                              str = "primary";
+                                            }
+                                            if (str !== first3) {
+                                              closure_25();
+                                              throttledFunction.cancel();
+                                              closure_10(str);
+                                              const str2 = closure_19(str);
+                                              const formatted = str2.toUpperCase();
+                                              closure_16(formatted);
+                                              closure_22(formatted);
+                                            }
+                                          }
+                                        }
+                                        cResult[46] = obj3;
+                                        tmp53 = obj3;
+                                      } else {
+                                        tmp53 = cResult[46];
+                                      }
+                                      const _Symbol3 = Symbol;
+                                      if (cResult[47] === Symbol.for("react.memo_cache_sentinel")) {
+                                        const items2 = [tmp53, ];
+                                        class Be {
+                                          constructor(arg0) {
+                                            let str = "secondary";
+                                            if (0 === arg0) {
+                                              str = "primary";
+                                            }
+                                            if (str !== first3) {
+                                              closure_25();
+                                              throttledFunction.cancel();
+                                              closure_10(str);
+                                              const str2 = closure_19(str);
+                                              const formatted = str2.toUpperCase();
+                                              closure_16(formatted);
+                                              closure_22(formatted);
+                                            }
+                                          }
+                                        }
+                                        const intl2 = tmp(tmp2[14]).intl;
+                                        tmp56[1] = intl2.string(tmp(tmp2[14]).t["9/wzjF"]);
+                                        items2[1] = tmp56;
+                                        cResult[47] = items2;
+                                        tmp55 = items2;
+                                      } else {
+                                        tmp55 = cResult[47];
+                                      }
+                                      if (cResult[48] === tmp51) {
+                                        tmp(tmp2[15]);
+                                        class Be {
+                                          constructor(arg0) {
+                                            let str = "secondary";
+                                            if (0 === arg0) {
+                                              str = "primary";
+                                            }
+                                            if (str !== first3) {
+                                              closure_25();
+                                              throttledFunction.cancel();
+                                              closure_10(str);
+                                              const str2 = closure_19(str);
+                                              const formatted = str2.toUpperCase();
+                                              closure_16(formatted);
+                                              closure_22(formatted);
+                                            }
+                                          }
+                                        }
+                                        if (cResult[51] === first1) {
+                                          if (cResult[52] === first2) {
+                                            if (cResult[53] === tmp41) {
+                                              if (cResult[54] === tmp7) {
+                                                if (cResult[55] === first4) {
+                                                  let tmp60;
+                                                  let tmp61;
+                                                  let tmp64;
+                                                  let tmp68;
+                                                  if (cResult[56] === onSelectColor) {
+                                                    tmp60 = cResult[57];
+                                                  }
+                                                  let str3 = "WUMP";
+                                                  class Be {
+                                                    constructor(arg0) {
+                                                      let str = "secondary";
+                                                      if (0 === arg0) {
+                                                        str = "primary";
+                                                      }
+                                                      if (str !== first3) {
+                                                        closure_25();
+                                                        throttledFunction.cancel();
+                                                        closure_10(str);
+                                                        const str2 = closure_19(str);
+                                                        const formatted = str2.toUpperCase();
+                                                        closure_16(formatted);
+                                                        closure_22(formatted);
+                                                      }
+                                                    }
+                                                  }
+                                                  if ("" !== tag) {
+                                                    str3 = tag;
+                                                  }
+                                                  if (cResult[58] !== first4) {
+                                                    const tmpResult12 = tmp(tmp2[8]);
+                                                    const hex2rgb2hsvResult1 = tmpResult12.hex2rgb2hsv(first4);
+                                                    class Be {
+                                                      constructor(arg0) {
+                                                        let str = "secondary";
+                                                        if (0 === arg0) {
+                                                          str = "primary";
+                                                        }
+                                                        if (str !== first3) {
+                                                          closure_25();
+                                                          throttledFunction.cancel();
+                                                          closure_10(str);
+                                                          const str2 = closure_19(str);
+                                                          const formatted = str2.toUpperCase();
+                                                          closure_16(formatted);
+                                                          closure_22(formatted);
+                                                        }
+                                                      }
+                                                    }
+                                                    cResult[58] = first4;
+                                                    cResult[59] = hex2rgb2hsvResult1;
+                                                    tmp61 = hex2rgb2hsvResult1;
+                                                  } else {
+                                                    tmp61 = cResult[59];
+                                                  }
+                                                  const _Symbol4 = Symbol;
+                                                  if (cResult[60] === Symbol.for("react.memo_cache_sentinel")) {
+                                                    const obj4 = { title: intl3.string(tmp(tmp2[14]).t.T1IxYH) };
+                                                    class Be {
+                                                      constructor(arg0) {
+                                                        let str = "secondary";
+                                                        if (0 === arg0) {
+                                                          str = "primary";
+                                                        }
+                                                        if (str !== first3) {
+                                                          closure_25();
+                                                          throttledFunction.cancel();
+                                                          closure_10(str);
+                                                          const str2 = closure_19(str);
+                                                          const formatted = str2.toUpperCase();
+                                                          closure_16(formatted);
+                                                          closure_22(formatted);
+                                                        }
+                                                      }
+                                                    }
+                                                    intl3 = tmp(tmp2[14]).intl;
+                                                    const tmp67 = first3(tmp66, obj4);
+                                                    cResult[60] = tmp67;
+                                                    tmp64 = tmp67;
+                                                  } else {
+                                                    tmp64 = cResult[60];
+                                                  }
+                                                  const container = tmp6.container;
+                                                  if (cResult[61] !== str3) {
+                                                    const intl4 = tmp(tmp2[14]).intl;
+                                                    const formatToPlainString = intl4.formatToPlainString;
+                                                    class Be {
+                                                      constructor(arg0) {
+                                                        let str = "secondary";
+                                                        if (0 === arg0) {
+                                                          str = "primary";
+                                                        }
+                                                        if (str !== first3) {
+                                                          closure_25();
+                                                          throttledFunction.cancel();
+                                                          closure_10(str);
+                                                          const str2 = closure_19(str);
+                                                          const formatted = str2.toUpperCase();
+                                                          closure_16(formatted);
+                                                          closure_22(formatted);
+                                                        }
+                                                      }
+                                                    }
+                                                    tmp69[0] = str3;
+                                                    const formatToPlainStringResult = formatToPlainString(tmp(tmp2[14]).t.R1AXap, tmp69);
+                                                    cResult[61] = str3;
+                                                    cResult[62] = formatToPlainStringResult;
+                                                    tmp68 = formatToPlainStringResult;
+                                                  } else {
+                                                    tmp68 = cResult[62];
+                                                  }
+                                                  let tmp71;
+                                                  if (tmp7) {
+                                                    tmp71 = first2;
+                                                  }
+                                                  if (cResult[63] === badge) {
+                                                    if (cResult[64] === first1) {
+                                                      let tmp72;
+                                                      if (cResult[65] === tmp71) {
+                                                        tmp72 = cResult[66];
+                                                      }
+                                                      if (cResult[67] === str3) {
+                                                        if (cResult[68] === tmp6.previewChiplet) {
+                                                          let tmp76;
+                                                          if (cResult[69] === tmp72) {
+                                                            tmp76 = cResult[70];
+                                                          }
+                                                          if (cResult[71] === tmp6.preview) {
+                                                            if (cResult[72] === tmp68) {
+                                                              let tmp79;
+                                                              let tmp83;
+                                                              if (cResult[73] === tmp76) {
+                                                                tmp79 = cResult[74];
+                                                              }
+                                                              if (cResult[75] === tmp59) {
+                                                                if (cResult[76] === tmp7) {
+                                                                  let tmp82;
+                                                                  if (cResult[77] === tmp6.colorTabs) {
+                                                                    tmp82 = cResult[78];
+                                                                  }
+                                                                  if (cResult[79] === tmp46) {
+                                                                    if (cResult[80] === tmp42) {
+                                                                      if (cResult[81] === sharedValue) {
+                                                                        if (cResult[82] === sharedValue2) {
+                                                                          if (cResult[83] === tmp6.hueColorBarInner) {
+                                                                            if (cResult[84] === tmp6.huePicker) {
+                                                                              if (cResult[85] === tmp6.saturationValueColorBox) {
+                                                                                if (cResult[86] === tmp6.saturationValueColorBoxInner) {
+                                                                                  if (cResult[87] === tmp6.saturationValuePicker) {
+                                                                                    if (cResult[88] === tmp6.selector) {
+                                                                                      let tmp87;
+                                                                                      let tmp90;
+                                                                                      if (cResult[89] === sharedValue3) {
+                                                                                        tmp87 = cResult[90];
+                                                                                      }
+                                                                                      const _Symbol5 = Symbol;
+                                                                                      class Be {
+                                                                                        constructor(arg0) {
+                                                                                          let str = "secondary";
+                                                                                          if (0 === arg0) {
+                                                                                            str = "primary";
+                                                                                          }
+                                                                                          if (str !== first3) {
+                                                                                            closure_25();
+                                                                                            throttledFunction.cancel();
+                                                                                            closure_10(str);
+                                                                                            const str2 = closure_19(str);
+                                                                                            const formatted = str2.toUpperCase();
+                                                                                            closure_16(formatted);
+                                                                                            closure_22(formatted);
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                      if (tmp89 === Symbol.for("react.memo_cache_sentinel")) {
+                                                                                        const string = tmp(tmp2[14]).intl.string;
+                                                                                        class Be {
+                                                                                          constructor(arg0) {
+                                                                                            let str = "secondary";
+                                                                                            if (0 === arg0) {
+                                                                                              str = "primary";
+                                                                                            }
+                                                                                            if (str !== first3) {
+                                                                                              closure_25();
+                                                                                              throttledFunction.cancel();
+                                                                                              closure_10(str);
+                                                                                              const str2 = closure_19(str);
+                                                                                              const formatted = str2.toUpperCase();
+                                                                                              closure_16(formatted);
+                                                                                              closure_22(formatted);
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                        cResult[91] = tmp91;
+                                                                                        tmp90 = tmp91;
+                                                                                      } else {
+                                                                                        tmp90 = cResult[91];
+                                                                                      }
+                                                                                      if (cResult[92] === tmp47) {
+                                                                                        if (cResult[93] === first4) {
+                                                                                          let tmp92;
+                                                                                          let tmp96;
+                                                                                          if (cResult[94] === tmp6.hexInput) {
+                                                                                            tmp92 = cResult[95];
+                                                                                          }
+                                                                                          const _Symbol6 = Symbol;
+                                                                                          class Be {
+                                                                                            constructor(arg0) {
+                                                                                              let str = "secondary";
+                                                                                              if (0 === arg0) {
+                                                                                                str = "primary";
+                                                                                              }
+                                                                                              if (str !== first3) {
+                                                                                                closure_25();
+                                                                                                throttledFunction.cancel();
+                                                                                                closure_10(str);
+                                                                                                const str2 = closure_19(str);
+                                                                                                const formatted = str2.toUpperCase();
+                                                                                                closure_16(formatted);
+                                                                                                closure_22(formatted);
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                          if (cResult[96] === Symbol.for("react.memo_cache_sentinel")) {
+                                                                                            const string2 = tmp(tmp2[14]).intl.string;
+                                                                                            class Be {
+                                                                                              constructor(arg0) {
+                                                                                                let str = "secondary";
+                                                                                                if (0 === arg0) {
+                                                                                                  str = "primary";
+                                                                                                }
+                                                                                                if (str !== first3) {
+                                                                                                  closure_25();
+                                                                                                  throttledFunction.cancel();
+                                                                                                  closure_10(str);
+                                                                                                  const str2 = closure_19(str);
+                                                                                                  const formatted = str2.toUpperCase();
+                                                                                                  closure_16(formatted);
+                                                                                                  closure_22(formatted);
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                            cResult[96] = tmp97;
+                                                                                            tmp96 = tmp97;
+                                                                                          } else {
+                                                                                            tmp96 = cResult[96];
+                                                                                          }
+                                                                                          if (cResult[97] === tmp60) {
+                                                                                            let tmp98;
+                                                                                            let tmp104;
+                                                                                            if (cResult[98] === null == tmp61) {
+                                                                                              tmp98 = cResult[99];
+                                                                                            }
+                                                                                            const _Symbol7 = Symbol;
+                                                                                            class Be {
+                                                                                              constructor(arg0) {
+                                                                                                let str = "secondary";
+                                                                                                if (0 === arg0) {
+                                                                                                  str = "primary";
+                                                                                                }
+                                                                                                if (str !== first3) {
+                                                                                                  closure_25();
+                                                                                                  throttledFunction.cancel();
+                                                                                                  closure_10(str);
+                                                                                                  const str2 = closure_19(str);
+                                                                                                  const formatted = str2.toUpperCase();
+                                                                                                  closure_16(formatted);
+                                                                                                  closure_22(formatted);
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                            if (tmp101 === Symbol.for("react.memo_cache_sentinel")) {
+                                                                                              const string3 = tmp(tmp2[14]).intl.string;
+                                                                                              class Be {
+                                                                                                constructor(arg0) {
+                                                                                                  let str = "secondary";
+                                                                                                  if (0 === arg0) {
+                                                                                                    str = "primary";
+                                                                                                  }
+                                                                                                  if (str !== first3) {
+                                                                                                    closure_25();
+                                                                                                    throttledFunction.cancel();
+                                                                                                    closure_10(str);
+                                                                                                    const str2 = closure_19(str);
+                                                                                                    const formatted = str2.toUpperCase();
+                                                                                                    closure_16(formatted);
+                                                                                                    closure_22(formatted);
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                              cResult[100] = tmp103;
+                                                                                            }
+                                                                                            if (cResult[101] !== tmp49) {
+                                                                                              const obj5 = { grow: true, variant: "secondary", text: null, onPress: tmp49 };
+                                                                                              class Be {
+                                                                                                constructor(arg0) {
+                                                                                                  let str = "secondary";
+                                                                                                  if (0 === arg0) {
+                                                                                                    str = "primary";
+                                                                                                  }
+                                                                                                  if (str !== first3) {
+                                                                                                    closure_25();
+                                                                                                    throttledFunction.cancel();
+                                                                                                    closure_10(str);
+                                                                                                    const str2 = closure_19(str);
+                                                                                                    const formatted = str2.toUpperCase();
+                                                                                                    closure_16(formatted);
+                                                                                                    closure_22(formatted);
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                              const tmp106 = first3(tmp(tmp2[24]).Button, obj5);
+                                                                                              cResult[101] = tmp49;
+                                                                                              cResult[102] = tmp106;
+                                                                                              tmp104 = tmp106;
+                                                                                            } else {
+                                                                                              tmp104 = cResult[102];
+                                                                                            }
+                                                                                            if (cResult[103] === tmp6.buttonGroup) {
+                                                                                              if (cResult[104] === tmp98) {
+                                                                                                let tmp107;
+                                                                                                if (cResult[105] === tmp104) {
+                                                                                                  tmp107 = cResult[106];
+                                                                                                }
+                                                                                                if (cResult[107] === tmp6.container) {
+                                                                                                  if (cResult[108] === tmp79) {
+                                                                                                    if (cResult[109] === tmp82) {
+                                                                                                      if (cResult[110] === tmp87) {
+                                                                                                        if (cResult[111] === tmp92) {
+                                                                                                          let tmp110;
+                                                                                                          if (cResult[112] === tmp107) {
+                                                                                                            tmp110 = cResult[113];
+                                                                                                          }
+                                                                                                          return tmp110;
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                                class Be {
+                                                                                                  constructor(arg0) {
+                                                                                                    let str = "secondary";
+                                                                                                    if (0 === arg0) {
+                                                                                                      str = "primary";
+                                                                                                    }
+                                                                                                    if (str !== first3) {
+                                                                                                      closure_25();
+                                                                                                      throttledFunction.cancel();
+                                                                                                      closure_10(str);
+                                                                                                      const str2 = closure_19(str);
+                                                                                                      const formatted = str2.toUpperCase();
+                                                                                                      closure_16(formatted);
+                                                                                                      closure_22(formatted);
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                                const obj6 = { startExpanded: true, keyboardShouldPersistTaps: "handled", header: tmp64, children: closure_10(Stack2, obj7) };
+                                                                                                BottomSheet = tmp(tmp2[26]).BottomSheet;
+                                                                                                obj7 = { spacing: tmp4(tmp2[5]).space.PX_8, style: container, children: items3 };
+                                                                                                Stack2 = tmp(tmp2[25]).Stack;
+                                                                                                items3 = [tmp79, tmp82, tmp87, tmp92, tmp107];
+                                                                                                const tmp112 = first3(BottomSheet, obj6);
+                                                                                                cResult[107] = tmp6.container;
+                                                                                                cResult[108] = tmp79;
+                                                                                                cResult[109] = tmp82;
+                                                                                                cResult[110] = tmp87;
+                                                                                                cResult[111] = tmp92;
+                                                                                                cResult[112] = tmp107;
+                                                                                                cResult[113] = tmp112;
+                                                                                                tmp110 = tmp112;
+                                                                                              }
+                                                                                            }
+                                                                                            const obj9 = { spacing: tmp4(tmp2[5]).space.PX_8, style: tmp95, children: items4 };
+                                                                                            const Stack = tmp(tmp2[25]).Stack;
+                                                                                            items4 = [tmp98, tmp104];
+                                                                                            const tmp109 = closure_10(Stack, obj9);
+                                                                                            cResult[103] = tmp6.buttonGroup;
+                                                                                            cResult[104] = tmp98;
+                                                                                            cResult[105] = tmp104;
+                                                                                            cResult[106] = tmp109;
+                                                                                            tmp107 = tmp109;
+                                                                                          }
+                                                                                          const obj10 = { grow: true, text: tmp96, onPress: tmp60, disabled: null == tmp61 };
+                                                                                          const tmp100 = first3(tmp(tmp2[24]).Button, obj10);
+                                                                                          cResult[97] = tmp60;
+                                                                                          cResult[98] = null == tmp61;
+                                                                                          cResult[99] = tmp100;
+                                                                                          tmp98 = tmp100;
+                                                                                        }
+                                                                                      }
+                                                                                      const obj11 = { accessibilityLabel: tmp90, value: first4, onChangeText: tmp47, maxLength: 7, autoCapitalize: "characters", autoCorrect: false, style: tmp6.hexInput };
+                                                                                      const tmp94 = first3(tmp(tmp2[23]).BottomSheetTextInput, obj11);
+                                                                                      cResult[92] = tmp47;
+                                                                                      cResult[93] = first4;
+                                                                                      cResult[94] = tmp6.hexInput;
+                                                                                      cResult[95] = tmp94;
+                                                                                      tmp92 = tmp94;
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                  class Be {
+                                                                    constructor(arg0) {
+                                                                      let str = "secondary";
+                                                                      if (0 === arg0) {
+                                                                        str = "primary";
+                                                                      }
+                                                                      if (str !== first3) {
+                                                                        closure_25();
+                                                                        throttledFunction.cancel();
+                                                                        closure_10(str);
+                                                                        const str2 = closure_19(str);
+                                                                        const formatted = str2.toUpperCase();
+                                                                        closure_16(formatted);
+                                                                        closure_22(formatted);
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                  const obj13 = { hue: sharedValue, saturation: sharedValue2, value: sharedValue3, saturationValuePickerStyle: null, saturationValueColorBoxStyle: null, saturationValueColorBoxInnerStyle: null, saturationValueSelectorStyle: null, huePickerStyle: null, hueColorBarInnerStyle: null, hueSliderStyle: null, onPanUpdate: tmp42, onPanFinalize: tmp46 };
+                                                                  ({ saturationValuePicker: obj12.saturationValuePickerStyle, saturationValueColorBox: obj12.saturationValueColorBoxStyle, saturationValueColorBoxInner: obj12.saturationValueColorBoxInnerStyle, selector: obj12.saturationValueSelectorStyle, huePicker: obj12.huePickerStyle, hueColorBarInner: obj12.hueColorBarInnerStyle, selector: obj12.hueSliderStyle } = tmp6);
+                                                                  const tmp88 = first3(tmp4(tmp2[22]), obj13);
+                                                                  cResult[79] = tmp46;
+                                                                  cResult[80] = tmp42;
+                                                                  cResult[81] = sharedValue;
+                                                                  cResult[82] = sharedValue2;
+                                                                  cResult[83] = tmp6.hueColorBarInner;
+                                                                  cResult[84] = tmp6.huePicker;
+                                                                  cResult[85] = tmp6.saturationValueColorBox;
+                                                                  cResult[86] = tmp6.saturationValueColorBoxInner;
+                                                                  cResult[87] = tmp6.saturationValuePicker;
+                                                                  cResult[88] = tmp6.selector;
+                                                                  cResult[89] = sharedValue3;
+                                                                  cResult[90] = tmp88;
+                                                                  tmp87 = tmp88;
+                                                                }
+                                                              }
+                                                              class Be {
+                                                                constructor(arg0) {
+                                                                  let str = "secondary";
+                                                                  if (0 === arg0) {
+                                                                    str = "primary";
+                                                                  }
+                                                                  if (str !== first3) {
+                                                                    closure_25();
+                                                                    throttledFunction.cancel();
+                                                                    closure_10(str);
+                                                                    const str2 = closure_19(str);
+                                                                    const formatted = str2.toUpperCase();
+                                                                    closure_16(formatted);
+                                                                    closure_22(formatted);
+                                                                  }
+                                                                }
+                                                              }
+                                                              if (tmp7) {
+                                                                class Be {
+                                                                  constructor(arg0) {
+                                                                    let str = "secondary";
+                                                                    if (0 === arg0) {
+                                                                      str = "primary";
+                                                                    }
+                                                                    if (str !== first3) {
+                                                                      closure_25();
+                                                                      throttledFunction.cancel();
+                                                                      closure_10(str);
+                                                                      const str2 = closure_19(str);
+                                                                      const formatted = str2.toUpperCase();
+                                                                      closure_16(formatted);
+                                                                      closure_22(formatted);
+                                                                    }
+                                                                  }
+                                                                }
+                                                                tmp86[0] = tmp6.colorTabs;
+                                                                const obj14 = { state: tmp59, variant: "experimental_Large", keyboardShouldPersistTaps: "handled" };
+                                                                tmp86[1] = first3(tmp(tmp2[21]).SegmentedControl, obj14);
+                                                                tmp83 = first3(first1, tmp86);
+                                                              }
+                                                              cResult[75] = tmp59;
+                                                              cResult[76] = tmp7;
+                                                              cResult[77] = tmp6.colorTabs;
+                                                              cResult[78] = tmp83;
+                                                              tmp82 = tmp83;
+                                                            }
+                                                          }
+                                                          class Be {
+                                                            constructor(arg0) {
+                                                              let str = "secondary";
+                                                              if (0 === arg0) {
+                                                                str = "primary";
+                                                              }
+                                                              if (str !== first3) {
+                                                                closure_25();
+                                                                throttledFunction.cancel();
+                                                                closure_10(str);
+                                                                const str2 = closure_19(str);
+                                                                const formatted = str2.toUpperCase();
+                                                                closure_16(formatted);
+                                                                closure_22(formatted);
+                                                              }
+                                                            }
+                                                          }
+                                                          const obj15 = { accessible: true, accessibilityLabel: tmp68, style: tmp6.preview, children: tmp76 };
+                                                          const tmp81 = first3(first1, obj15);
+                                                          cResult[71] = tmp6.preview;
+                                                          cResult[72] = tmp68;
+                                                          cResult[73] = tmp76;
+                                                          cResult[74] = tmp81;
+                                                          tmp79 = tmp81;
+                                                        }
+                                                      }
+                                                      class Be {
+                                                        constructor(arg0) {
+                                                          let str = "secondary";
+                                                          if (0 === arg0) {
+                                                            str = "primary";
+                                                          }
+                                                          if (str !== first3) {
+                                                            closure_25();
+                                                            throttledFunction.cancel();
+                                                            closure_10(str);
+                                                            const str2 = closure_19(str);
+                                                            const formatted = str2.toUpperCase();
+                                                            closure_16(formatted);
+                                                            closure_22(formatted);
+                                                          }
+                                                        }
+                                                      }
+                                                      const obj16 = { guildTag: str3, guildBadge: tmp72, textVariant: "heading-xxl/semibold", textStyle: tmp(tmp2[20]).TextStyleSheet["heading-xxl/semibold"], badgeSize: closure_8.SIZE_36, containerStyles: tmp6.previewChiplet };
+                                                      const BaseGuildTagChiplet = tmp(tmp2[19]).BaseGuildTagChiplet;
+                                                      const tmp78 = first3(BaseGuildTagChiplet, obj16);
+                                                      cResult[67] = str3;
+                                                      cResult[68] = tmp6.previewChiplet;
+                                                      cResult[69] = tmp72;
+                                                      cResult[70] = tmp78;
+                                                      tmp76 = tmp78;
+                                                    }
+                                                  }
+                                                  size = { badge, width: null, height: null, primaryTintColor: first1, secondaryTintColor: tmp71 };
+                                                  ({ SIZE_36: obj8.width, SIZE_36: obj8.height } = closure_8);
+                                                  const tmp75 = first3(tmp(tmp2[18]).GuildBadge, size);
+                                                  cResult[63] = badge;
+                                                  cResult[64] = first1;
+                                                  cResult[65] = tmp71;
+                                                  cResult[66] = tmp75;
+                                                  tmp72 = tmp75;
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                        function we() {
+                                          const obj = ColorUtils;
+                                          if (null != obj.hex2rgb2hsv(first4)) {
+                                            const tmp13 = closure_25();
+                                            let colorChannel;
+                                            if (tmp13 != null) {
+                                              colorChannel = tmp13.colorChannel;
+                                            }
+                                            const str2 = "primary" === colorChannel ? tmp13.hex : first1;
+                                            let colorChannel1;
+                                            if (tmp13 != null) {
+                                              colorChannel1 = tmp13.colorChannel;
+                                            }
+                                            const str4 = "secondary" === colorChannel1 ? tmp13.hex : first2;
+                                            let formatted;
+                                            const tmp4 = onSelectColor;
+                                            if (str2 != null) {
+                                              formatted = str2.toLowerCase();
+                                            }
+                                            if (formatted == null) {
+                                              formatted = null;
+                                            }
+                                            let tmp7 = null;
+                                            if (closure_3) {
+                                              let formatted1;
+                                              if (str4 != null) {
+                                                formatted1 = str4.toLowerCase();
+                                              }
+                                              if (formatted1 == null) {
+                                                formatted1 = null;
+                                              }
+                                              tmp7 = formatted1;
+                                            }
+                                            tmp4(formatted, tmp7);
+                                            const obj2 = ActionSheetActionCreatorsDefault;
+                                            obj2.hideActionSheet();
+                                          }
+                                        }
+                                        cResult[51] = first1;
+                                        cResult[52] = first2;
+                                        cResult[53] = tmp41;
+                                        cResult[54] = tmp7;
+                                        cResult[55] = first4;
+                                        cResult[56] = onSelectColor;
+                                        cResult[57] = we;
+                                        tmp60 = we;
+                                      }
+                                      const obj17 = { items: tmp55, pageWidth: bound, onSetActiveIndex: tmp51 };
+                                      cResult[48] = tmp51;
+                                      cResult[49] = bound;
+                                      cResult[50] = obj17;
+                                    }
+                                  }
+                                }
+                              }
+                              class Be {
+                                constructor(arg0) {
+                                  let str = "secondary";
+                                  if (0 === arg0) {
+                                    str = "primary";
+                                  }
+                                  if (str !== first3) {
+                                    closure_25();
+                                    throttledFunction.cancel();
+                                    closure_10(str);
+                                    const str2 = closure_19(str);
+                                    const formatted = str2.toUpperCase();
+                                    closure_16(formatted);
+                                    closure_22(formatted);
+                                  }
+                                }
+                              }
+                              cResult[40] = first3;
+                              cResult[41] = tmp41;
+                              cResult[42] = tmp30;
+                              cResult[43] = throttledFunction;
+                              cResult[44] = tmp33;
+                              cResult[45] = Be;
+                              tmp51 = Be;
+                            }
+                          }
+                        }
+                        cResult[35] = first3;
+                        cResult[36] = tmp31;
+                        cResult[37] = throttledFunction;
+                        cResult[38] = tmp33;
+                        cResult[39] = tmp50;
+                        tmp49 = tmp50;
+                      }
+                    }
+                    cResult[31] = first3;
+                    cResult[32] = throttledFunction;
+                    cResult[33] = tmp33;
+                    cResult[34] = tmp48;
+                    tmp47 = tmp48;
                   }
                 }
                 function me() {
@@ -265,8 +1037,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((secondaryColor) => {
                 }
                 cResult[27] = first3;
                 cResult[28] = throttledFunction;
-                cResult[29] = tmp32;
+                cResult[29] = tmp34;
                 cResult[30] = me;
+                tmp46 = me;
               }
               function ge() {
                 ref.current = true;
@@ -275,6 +1048,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((secondaryColor) => {
               cResult[21] = first3;
               cResult[22] = throttledFunction;
               cResult[23] = ge;
+              tmp42 = ge;
             }
           }
           function se(colorChannel) {
@@ -294,12 +1068,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((secondaryColor) => {
           cResult[14] = sharedValue2;
           cResult[15] = sharedValue3;
           cResult[16] = se;
-          tmp32 = se;
+          tmp34 = se;
         }
       }
-      function oe(combined) {
+      function oe(first4) {
         const obj = ColorUtils;
-        const hex2rgb2hsvResult = obj.hex2rgb2hsv(combined);
+        const hex2rgb2hsvResult = obj.hex2rgb2hsv(first4);
         if (null != hex2rgb2hsvResult) {
           const result = sharedValue.set(hex2rgb2hsvResult.h);
           const result1 = sharedValue2.set(hex2rgb2hsvResult.s / 100);
@@ -310,15 +1084,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((secondaryColor) => {
       cResult[10] = sharedValue2;
       cResult[11] = sharedValue3;
       cResult[12] = oe;
-      tmp31 = oe;
+      tmp33 = oe;
     }
-    function ae(arg0) {
+    function te(arg0) {
       return "primary" === arg0 ? primaryColor : secondaryColor;
     }
     cResult[5] = primaryColor;
     cResult[6] = secondaryColor;
-    cResult[7] = ae;
-    tmp29 = ae;
+    cResult[7] = te;
+    tmp31 = te;
   }
   class Q {
     constructor(arg0) {
@@ -335,10 +1109,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((secondaryColor) => {
     }
   }
   cResult[2] = primary2;
-  cResult[3] = tmp27;
+  cResult[3] = tmp29;
   cResult[4] = Q;
-  tmp28 = Q;
-}) : ((secondaryColor) => {
+  tmp30 = Q;
+}) : (function GuildSettingsServerTagColorPickerActionSheet(secondaryColor) {
   let BaseGuildTagChiplet;
   let BottomSheetTitleHeader;
   let GuildBadge;
@@ -495,9 +1269,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((secondaryColor) => {
     }
   }, []);
   const items2 = [sharedValue, sharedValue2, sharedValue3];
-  callback3 = obj.useCallback((combined) => {
+  callback3 = obj.useCallback((first4) => {
     const obj = ColorUtils;
-    const hex2rgb2hsvResult = obj.hex2rgb2hsv(combined);
+    const hex2rgb2hsvResult = obj.hex2rgb2hsv(first4);
     if (null != hex2rgb2hsvResult) {
       const result = sharedValue.set(hex2rgb2hsvResult.h);
       const result1 = sharedValue2.set(hex2rgb2hsvResult.s / 100);
@@ -551,11 +1325,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((secondaryColor) => {
     callback4(first3);
   }, items8);
   const items10 = [first3, first, callback1, callback2, throttledFunction, callback3];
-  const callback8 = obj.useCallback((combined) => {
-    if (combined.length > 0) {
-      if ("#" !== combined.charAt(0)) {
+  const callback8 = obj.useCallback((first4) => {
+    if (first4.length > 0) {
+      let combined;
+      if ("#" !== first4.charAt(0)) {
         const _HermesInternal = HermesInternal;
-        combined = "#" + combined.toUpperCase();
+        combined = "#" + first4.toUpperCase();
       }
       ref.current = false;
       throttledFunction.cancel();
@@ -566,7 +1341,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((secondaryColor) => {
         callback3(combined);
       }
     }
-    combined = combined.toUpperCase();
+    combined = first4.toUpperCase();
   }, items9);
   const items11 = [first3, callback5, callback, throttledFunction, callback3];
   const callback9 = obj.useCallback(() => {

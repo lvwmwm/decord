@@ -1,18 +1,18 @@
-// Module ID: 18124
-// Function ID: 18125
+// Module ID: 18411
+// Function ID: 18412
 // Name: PlaneIllocon
-// Dependencies: [21, 558, 576, 12152, 5981, 2]
+// Dependencies: [21, 558, 576, 12231, 6164, 2]
 
-// Module 18124 (PlaneIllocon)
+// Module 18411 (PlaneIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import _modDef12152 from "module_12152" /* 12152 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import _modDef12231 from "module_12231" /* 12231 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlaneIllocon(arg0) {
   let accessibilityLabel;
   let accessible;
   let first;
@@ -26,7 +26,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef12152 };
+    const obj2 = { uri: _modDef12231 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -34,10 +34,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[1] !== num) {
     const size1 = { width: num, height: num };
-    const items = [size1];
     cResult[1] = num;
-    cResult[2] = items;
-    tmp5 = items;
+    cResult[2] = size1;
+    tmp5 = size1;
   } else {
     tmp5 = cResult[2];
   }
@@ -59,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = tmp5;
   cResult[7] = tmp7;
   tmp6 = tmp7;
-}) : ((size) => {
+}) : (function PlaneIllocon(size) {
   let accessibilityLabel;
   let accessible;
   let resizeMode;
@@ -68,10 +67,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num === undefined) {
     num = 64;
   }
-  const obj2 = { uri: _modDef12152 };
+  const obj2 = { uri: _modDef12231 };
   FastImageDefault;
-  const items = [{ width: num, height: num }];
-  return <tmp fadeDuration={0} source={obj2} style={items} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
+  return <tmp fadeDuration={0} source={obj2} style={{ width: num, height: num }} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
 });
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/PlaneIllocon.native.tsx");
 

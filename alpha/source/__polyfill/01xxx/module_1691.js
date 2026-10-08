@@ -1,373 +1,280 @@
 // Module ID: 1691
 // Function ID: 1692
-// Dependencies: [1646, 1692, 1650]
-// Exports: startMapper, stopMapper
+// Dependencies: [1658, 1680, 1692, 1694, 1662]
 
 // Module 1691
-import setupMicrotasks from "setupMicrotasks" /* 1650 */;
+import LayoutAnimationType from "LayoutAnimationType" /* 1680 */;
 import _mod1692 from "module_1692" /* 1692 */;
-import module_1646_mod from "module_1646" /* 1646 */;
+import _mod1694 from "module_1694" /* 1694 */;
+import module_1658_mod from "module_1658" /* 1658 */;
+import setupMicrotasks from "setupMicrotasks" /* 1662 */;
 
-let map, set;
+const require = globalThis.__r;
+let _require, dependencyMap, map, map1;
 
-const updateMappersOrder2 = function updateMappersOrder() {
-  function dfs(item) {
-    set.add(item);
-    const tmp2 = item.inputs[Symbol.iterator]();
-    while (tmp2 !== undefined) {
-      let value = map.get(tmp3);
-      if (value) {
-        for (const item10022 of value) {
-          let tmp9 = item10022;
-          if (!set.has(item10022)) {
-            let tmp13 = dfs(tmp9);
-          }
-          continue;
-        }
-      }
-      continue;
-    }
-    items.push(item);
-  }
-  map = new Map();
-  const item = map.forEach((outputs) => {
-    if (outputs.outputs) {
-      outputs = outputs.outputs;
-      for (const item10009 of outputs) {
-        let obj = map;
-        let tmp3 = item10009;
-        let value = map.get(item10009);
-        let arr = value;
-        if (undefined === value) {
-          items = [outputs];
-          let result = obj.set(tmp3, items);
-        } else {
-          let arr2 = arr.push(outputs);
-        }
-        continue;
-      }
-    }
+let module_1658 = module_1658_mod;
+module_1658 = module_1658.isAndroid();
+function startObservingProgress(arg0, addListener, arg2) {
+  let closure_2;
+  let closure_0 = arg0;
+  _require = addListener;
+  dependencyMap = arg2 === require("LayoutAnimationType").LayoutAnimationType.SHARED_ELEMENT_TRANSITION;
+  addListener.addListener(arg0 + 1000000000, () => {
+    closure_0._notifyAboutProgress(closure_0, value2.value, closure_2);
   });
-  set = new Set();
-  items = [];
-  const item1 = map.forEach((item) => {
-    if (!set.has(item)) {
-      dfs(item);
-    }
-  });
-  let closure_1 = items;
-};
-let module_1646 = module_1646_mod;
-module_1646 = module_1646.isJest();
-function createMapperRegistry() {
-  const updateMappersOrder = updateMappersOrder2;
-  function mapperRun() {
-    c2 = false;
-    const tmp = c3;
-    if (!tmp) {
-      try {
-        c3 = true;
-        if (map.size !== length.length) {
-          updateMappersOrder();
-        }
-        for (const item10015 of length) {
-          let obj = item10015;
-          if (item10015.dirty) {
-            obj.dirty = false;
-            let workletResult = obj.worklet();
-          }
-          continue;
-        }
-        c3 = false;
-      } catch (tmp10) {
-        c3 = false;
-        throw tmp10;
-      }
-    }
-  }
-  function maybeRequestUpdates() {
-    const tmp = closure_2_3;
-    if (tmp) {
-      mapperRun();
-    } else {
-      const tmp2 = c2;
-      if (!tmp2) {
-        if (c3) {
-          const _requestAnimationFrame = requestAnimationFrame;
-          const animationFrame = requestAnimationFrame(mapperRun);
-        } else {
-          const _queueMicrotask = queueMicrotask;
-          queueMicrotask(mapperRun);
-        }
-        c2 = true;
-      }
-    }
-  }
-  function extractInputs(iter, items) {
-    if (Array.isArray(iter)) {
-      iter = iter[Symbol.iterator]();
-      const nextResult = iter.next();
-      while (iter !== undefined) {
-        if (nextResult) {
-          let tmp16 = extractInputs(tmp13, items);
-        }
-        continue;
-      }
-    } else {
-      const obj = items(items1[1]);
-      if (obj.isSharedValue(iter)) {
-        items.push(iter);
-      } else {
-        const _Object = Object;
-        const _Object2 = Object;
-        if (Object.getPrototypeOf(iter) === Object.prototype) {
-          const _Object3 = Object;
-          const values = Object.values(iter);
-          for (const item10021 of values) {
-            if (item10021) {
-              let tmp7 = extractInputs(tmp4, items);
-            }
-            continue;
-          }
-        }
-      }
-    }
-    return items;
-  }
-  new Map();
-  let closure_1 = [];
-  let c2 = false;
-  let c3 = false;
-  return {
-    start(id, worklet, iter, outputs) {
-      const obj = { id, dirty: true, worklet, inputs: items, outputs };
-      items = [];
-      let tmp = extractInputs(iter, items);
-      const result = obj.set(obj.id, obj);
-      let closure_1 = [];
-      const inputs = obj.inputs;
-      for (const item10018 of inputs) {
-        let addListenerResult = item10018.addListener(obj.id, () => {
-          obj.dirty = true;
-          const tmp = closure_1_3;
-          if (tmp) {
-            mapperRun();
-          } else {
-            const tmp2 = c2;
-            if (!tmp2) {
-              if (c3) {
-                const _requestAnimationFrame = requestAnimationFrame;
-                const animationFrame = requestAnimationFrame(mapperRun);
-              } else {
-                const _queueMicrotask = queueMicrotask;
-                queueMicrotask(mapperRun);
-              }
-              c2 = true;
-            }
-          }
-        });
-        continue;
-      }
-      maybeRequestUpdates();
-    },
-    stop(arg0) {
-      const value = map.get(arg0);
-      const obj = map;
-      if (value) {
-        obj.delete(value.id);
-        let closure_1 = [];
-        const inputs = value.inputs;
-        for (const item10013 of inputs) {
-          let removeListenerResult = item10013.removeListener(value.id);
-          continue;
-        }
-      }
-    }
-  };
 }
-let obj = { IS_JEST: module_1646, isSharedValue: _mod1692.isSharedValue };
-createMapperRegistry.__closure = obj;
-createMapperRegistry.__workletHash = 4849129099287;
-createMapperRegistry.__initData = { code: "function createMapperRegistry_Pnpm_mappersTs1(){const{IS_JEST,isSharedValue}=this.__closure;const mappers=new Map();let sortedMappers=[];let runRequested=false;let processingMappers=false;function updateMappersOrder(){const pre=new Map();mappers.forEach(function(mapper){if(mapper.outputs){for(const output of mapper.outputs){const preMappers=pre.get(output);if(preMappers===undefined){pre.set(output,[mapper]);}else{preMappers.push(mapper);}}}});const visited=new Set();const newOrder=[];function dfs(mapper){visited.add(mapper);for(const input of mapper.inputs){const preMappers=pre.get(input);if(preMappers){for(const preMapper of preMappers){if(!visited.has(preMapper)){dfs(preMapper);}}}}newOrder.push(mapper);}mappers.forEach(function(mapper){if(!visited.has(mapper)){dfs(mapper);}});sortedMappers=newOrder;}function mapperRun(){runRequested=false;if(processingMappers){return;}try{processingMappers=true;if(mappers.size!==sortedMappers.length){updateMappersOrder();}for(const mapper of sortedMappers){if(mapper.dirty){mapper.dirty=false;mapper.worklet();}}}finally{processingMappers=false;}}function maybeRequestUpdates(){if(IS_JEST){mapperRun();}else if(!runRequested){if(processingMappers){requestAnimationFrame(mapperRun);}else{queueMicrotask(mapperRun);}runRequested=true;}}function extractInputs(inputs,resultArray){if(Array.isArray(inputs)){for(const input of inputs){input&&extractInputs(input,resultArray);}}else if(isSharedValue(inputs)){resultArray.push(inputs);}else if(Object.getPrototypeOf(inputs)===Object.prototype){for(const element of Object.values(inputs)){element&&extractInputs(element,resultArray);}}return resultArray;}return{start:function(mapperID,worklet,inputs,outputs){const mapper={id:mapperID,dirty:true,worklet:worklet,inputs:extractInputs(inputs,[]),outputs:outputs};mappers.set(mapper.id,mapper);sortedMappers=[];for(const sv of mapper.inputs){sv.addListener(mapper.id,function(){mapper.dirty=true;maybeRequestUpdates();});}maybeRequestUpdates();},stop:function(mapperID){const mapper=mappers.get(mapperID);if(mapper){mappers.delete(mapper.id);sortedMappers=[];for(const sv of mapper.inputs){sv.removeListener(mapper.id);}}}};}" };
-let c5 = 9999;
-const __initData = { code: "function pnpm_mappersTs2(){const{createMapperRegistry,mapperID,worklet,inputs,outputs}=this.__closure;let mapperRegistry=global.__mapperRegistry;if(mapperRegistry===undefined){mapperRegistry=global.__mapperRegistry=createMapperRegistry();}mapperRegistry.start(mapperID,worklet,inputs,outputs);}" };
-const __initData2 = { code: "function pnpm_mappersTs3(){const{mapperID}=this.__closure;const mapperRegistry=global.__mapperRegistry;mapperRegistry===null||mapperRegistry===void 0||mapperRegistry.stop(mapperID);}" };
-
-export const startMapper = function startMapper(fn, values2, items) {
-  let closure_0 = fn;
-  items = values2;
-  if (values2 === undefined) {
-    items = [];
+let obj = { LayoutAnimationType: LayoutAnimationType.LayoutAnimationType, TAG_OFFSET: 1000000000 };
+startObservingProgress.__closure = obj;
+startObservingProgress.__workletHash = 15816248532180;
+startObservingProgress.__initData = { code: "function startObservingProgress_Pnpm_animationsManagerTs1(tag,sharedValue,animationType){const{LayoutAnimationType,TAG_OFFSET}=this.__closure;const isSharedTransition=animationType===LayoutAnimationType.SHARED_ELEMENT_TRANSITION;sharedValue.addListener(tag+TAG_OFFSET,function(){global._notifyAboutProgress(tag,sharedValue.value,isSharedTransition);});}" };
+function stopObservingProgress(arg0, removeListener) {
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = false;
   }
-  let items1 = items;
-  if (items === undefined) {
-    items1 = [];
-  }
-  const sum = c5 + 1;
-  c5 = sum;
-  module_1646 = sum;
-  let obj = items(items1[2]);
-  fn = function f() {
-    let tmp;
-    let __mapperRegistry = global.__mapperRegistry;
-    if (undefined === __mapperRegistry) {
-      let tmp6 = createMapperRegistry;
-      if (typeof createMapperRegistry === "function") {
-        const updateMappersOrder = updateMappersOrder2;
-        function mapperRun() {
-          c2 = false;
-          const tmp = c3;
-          if (!tmp) {
-            try {
-              c3 = true;
-              if (map.size !== length.length) {
-                updateMappersOrder();
-              }
-              for (const item10015 of length) {
-                let obj = item10015;
-                if (item10015.dirty) {
-                  obj.dirty = false;
-                  let workletResult = obj.worklet();
-                }
-                continue;
-              }
-              c3 = false;
-            } catch (tmp10) {
-              c3 = false;
-              throw tmp10;
-            }
-          }
+  removeListener.removeListener(arg0 + 1000000000);
+  global._notifyAboutEnd(arg0, flag);
+}
+stopObservingProgress.__closure = { TAG_OFFSET: 1000000000 };
+stopObservingProgress.__workletHash = 8517596296348;
+stopObservingProgress.__initData = { code: "function stopObservingProgress_Pnpm_animationsManagerTs2(tag,sharedValue,removeView=false){const{TAG_OFFSET}=this.__closure;sharedValue.removeListener(tag+TAG_OFFSET);global._notifyAboutEnd(tag,removeView);}" };
+function createLayoutAnimationManager() {
+  map = new Map();
+  map1 = new Map();
+  function startActually(arg0, arg1, arg2, fn) {
+    let closure_0;
+    let closure_1;
+    map = arg0;
+    map1 = arg1;
+    let tmp = map1;
+    if (arg1 !== map1(startActually[1]).LayoutAnimationType.SHARED_ELEMENT_TRANSITION_PROGRESS) {
+      const tmp6 = fn(arg2);
+      let closure_2 = tmp6;
+      let animations = tmp6.animations;
+      let obj = map;
+      const value = map.get(arg0);
+      if (value) {
+        const obj2 = {};
+        const merged = Object.assign(value);
+        let tmp11 = obj2;
+        const merged1 = Object.assign(tmp6.animations);
+        animations = obj2;
+      }
+      const result = obj.set(arg0, animations);
+      let value2 = map1.get(arg0);
+      let mutableUI = value2;
+      const obj3 = map1;
+      if (undefined === value2) {
+        const tmpResult = tmp(startActually[2]);
+        mutableUI = tmpResult.makeMutableUI(tmp6.initialValues);
+        const result1 = obj3.set(arg0, mutableUI);
+        value2 = mutableUI;
+      } else {
+        let tmp15 = stopObservingProgress;
+        if (typeof stopObservingProgress === "function") {
+          value2.removeListener(arg0 + 1000000000);
+          map._notifyAboutEnd(arg0, false);
+          value2._value = tmp6.initialValues;
+        } else {
+          throw new TypeError("Trying to call a non-function");
         }
-        function maybeRequestUpdates() {
-          const tmp = closure_2_3;
-          if (tmp) {
-            mapperRun();
+      }
+      const tmpResult2 = tmp(startActually[3]);
+      const withStyleAnimationResult = tmpResult2.withStyleAnimation(animations);
+      withStyleAnimationResult.callback = (arg0) => {
+        const tmp = arg0;
+        if (tmp) {
+          map.delete(closure_0);
+          map1.delete(closure_0);
+          const obj = mutableUI;
+          const tmp7 = closure_1;
+          if (typeof stopObservingProgress === "function") {
+            const tmp11 = tmp7 === LayoutAnimationType.LayoutAnimationType.EXITING;
+            obj.removeListener(closure_0 + 1000000000);
+            global._notifyAboutEnd(closure_0, tmp11);
           } else {
-            const tmp2 = c2;
-            if (!tmp2) {
-              if (c3) {
-                const _requestAnimationFrame = requestAnimationFrame;
-                const animationFrame = requestAnimationFrame(mapperRun);
-              } else {
-                const _queueMicrotask = queueMicrotask;
-                queueMicrotask(mapperRun);
-              }
-              c2 = true;
-            }
+            throw new TypeError("Trying to call a non-function");
           }
         }
-        function extractInputs(iter, items) {
-          if (Array.isArray(iter)) {
-            iter = iter[Symbol.iterator]();
-            const nextResult = iter.next();
-            while (iter !== undefined) {
-              if (nextResult) {
-                let tmp16 = extractInputs(tmp13, items);
-              }
-              continue;
-            }
-          } else {
-            const obj = items(items1[1]);
-            if (obj.isSharedValue(iter)) {
-              items.push(iter);
-            } else {
-              const _Object = Object;
-              const _Object2 = Object;
-              if (Object.getPrototypeOf(iter) === Object.prototype) {
-                const _Object3 = Object;
-                const values = Object.values(iter);
-                for (const item10021 of values) {
-                  if (item10021) {
-                    let tmp7 = extractInputs(tmp4, items);
-                  }
-                  continue;
-                }
-              }
-            }
+        const tmp15 = closure_2;
+        if (closure_2.callback) {
+          let tmp16 = undefined !== arg0;
+          const callback = tmp15.callback;
+          if (tmp16) {
+            tmp16 = arg0;
           }
-          return items;
+          callback(tmp16);
         }
-        let tmp2 = globalThis;
-        const _Map = Map;
-        const self = this;
-        const self2 = this;
-        map = new Map();
-        let tmp4 = map;
-        let closure_1 = [];
-        let c2 = false;
-        let c3 = false;
-        let obj = {
-          start(id, worklet, iter, outputs) {
-                const obj = { id, dirty: true, worklet, inputs: items, outputs };
-                items = [];
-                let tmp = extractInputs(iter, items);
-                const result = obj.set(obj.id, obj);
-                let closure_1 = [];
-                const inputs = obj.inputs;
-                for (const item10018 of inputs) {
-                  let addListenerResult = item10018.addListener(obj.id, () => {
-                    obj.dirty = true;
-                    const tmp = closure_1_3;
-                    if (tmp) {
-                      mapperRun();
-                    } else {
-                      const tmp2 = c2;
-                      if (!tmp2) {
-                        if (c3) {
-                          const _requestAnimationFrame = requestAnimationFrame;
-                          const animationFrame = requestAnimationFrame(mapperRun);
-                        } else {
-                          const _queueMicrotask = queueMicrotask;
-                          queueMicrotask(mapperRun);
-                        }
-                        c2 = true;
-                      }
-                    }
-                  });
-                  continue;
-                }
-                maybeRequestUpdates();
-              },
-          stop(arg0) {
-                const value = map.get(arg0);
-                const obj = map;
-                if (value) {
-                  obj.delete(value.id);
-                  let closure_1 = [];
-                  const inputs = value.inputs;
-                  for (const item10013 of inputs) {
-                    let removeListenerResult = item10013.removeListener(value.id);
-                    continue;
-                  }
-                }
-              }
-        };
-        tmp.__mapperRegistry = obj;
-        __mapperRegistry = obj;
+      };
+      if (typeof startObservingProgress === "function") {
+        map = arg0;
+        closure_2 = arg1 === tmp(tmp2[1]).LayoutAnimationType.SHARED_ELEMENT_TRANSITION;
+        value2.addListener(arg0 + 1000000000, () => {
+          closure_0._notifyAboutProgress(closure_0, value2.value, closure_2);
+        });
+        value2.value = withStyleAnimationResult;
       } else {
         throw new TypeError("Trying to call a non-function");
       }
+    } else {
+      const ProgressTransitionRegister = map.ProgressTransitionRegister;
+      ProgressTransitionRegister.onTransitionStart(arg0, arg2);
     }
-    __mapperRegistry.start(module_1646, fn, items, items1);
-  };
-  const obj2 = { createMapperRegistry, mapperID: sum, worklet: fn, inputs: items, outputs: items1 };
-  fn.__closure = obj2;
-  fn.__workletHash = 1517453109481;
-  fn.__initData = __initData;
-  let tmp2 = obj.runOnUI(fn)();
-  return sum;
-};
-export const stopMapper = function stopMapper(_inlinePropsMapperId) {
-  let closure_0 = _inlinePropsMapperId;
-  const fn = function t() {
-    const __mapperRegistry = global.__mapperRegistry;
-    if (__mapperRegistry != null) {
-      __mapperRegistry.stop(_inlinePropsMapperId);
+  }
+  const tmp3 = module_1658;
+  if (tmp3) {
+    startActually = (arg0, arg1, arg2, arg3) => {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      let closure_2 = arg2;
+      let closure_3 = arg3;
+      return requestAnimationFrame(() => {
+        startActually(closure_0, closure_1, closure_2, closure_3);
+      });
+    };
+  }
+  let obj = {
+    start: startActually,
+    stop(arg0) {
+      const value = map1.get(arg0);
+      if (value) {
+        if (typeof stopObservingProgress === "function") {
+          value.removeListener(arg0 + 1000000000);
+          global._notifyAboutEnd(arg0, false);
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+      }
     }
   };
-  fn.__closure = { mapperID: _inlinePropsMapperId };
-  fn.__workletHash = 1696829263429;
-  fn.__initData = __initData2;
-  const obj = setupMicrotasks;
-  obj.runOnUI(fn)();
+  return obj;
+}
+let obj2 = { LayoutAnimationType: LayoutAnimationType.LayoutAnimationType, makeMutableUI: _mod1692.makeMutableUI, stopObservingProgress, withStyleAnimation: _mod1694.withStyleAnimation, startObservingProgress, IS_ANDROID: module_1658 };
+createLayoutAnimationManager.__closure = obj2;
+createLayoutAnimationManager.__workletHash = 8526874600063;
+createLayoutAnimationManager.__initData = { code: "function createLayoutAnimationManager_Pnpm_animationsManagerTs3(){const{LayoutAnimationType,makeMutableUI,stopObservingProgress,withStyleAnimation,startObservingProgress,IS_ANDROID}=this.__closure;const currentAnimationForTag=new Map();const mutableValuesForTag=new Map();const startActually=function(tag,type,yogaValues,config){if(type===LayoutAnimationType.SHARED_ELEMENT_TRANSITION_PROGRESS){global.ProgressTransitionRegister.onTransitionStart(tag,yogaValues);return;}const style=config(yogaValues);let currentAnimation=style.animations;const previousAnimation=currentAnimationForTag.get(tag);if(previousAnimation){currentAnimation={...previousAnimation,...style.animations};}currentAnimationForTag.set(tag,currentAnimation);let value=mutableValuesForTag.get(tag);if(value===undefined){value=makeMutableUI(style.initialValues);mutableValuesForTag.set(tag,value);}else{stopObservingProgress(tag,value);value._value=style.initialValues;}const animation=withStyleAnimation(currentAnimation);animation.callback=function(finished){if(finished){currentAnimationForTag.delete(tag);mutableValuesForTag.delete(tag);const shouldRemoveView=type===LayoutAnimationType.EXITING;stopObservingProgress(tag,value,shouldRemoveView);}style.callback&&style.callback(finished===undefined?false:finished);};startObservingProgress(tag,value,type);value.value=animation;};let start;if(IS_ANDROID){start=function(tag,type,yogaValues,config){return requestAnimationFrame(function(){startActually(tag,type,yogaValues,config);});};}else{start=startActually;}return{start:start,stop:function(tag){const value=mutableValuesForTag.get(tag);if(!value){return;}stopObservingProgress(tag,value);}};}" };
+const fn = function t() {
+  if (typeof createLayoutAnimationManager === "function") {
+    const _Map = Map;
+    const self = this;
+    const self2 = this;
+    new Map();
+    const _Map2 = Map;
+    const self3 = this;
+    const self4 = this;
+    new Map();
+    function startActually(arg0, arg1, arg2, fn) {
+      let closure_0;
+      let closure_1;
+      map = arg0;
+      map1 = arg1;
+      let tmp = map1;
+      if (arg1 !== map1(startActually[1]).LayoutAnimationType.SHARED_ELEMENT_TRANSITION_PROGRESS) {
+        const tmp6 = fn(arg2);
+        let closure_2 = tmp6;
+        let animations = tmp6.animations;
+        let obj = map;
+        const value = map.get(arg0);
+        if (value) {
+          const obj2 = {};
+          const merged = Object.assign(value);
+          let tmp11 = obj2;
+          const merged1 = Object.assign(tmp6.animations);
+          animations = obj2;
+        }
+        const result = obj.set(arg0, animations);
+        let value2 = map1.get(arg0);
+        let mutableUI = value2;
+        const obj3 = map1;
+        if (undefined === value2) {
+          const tmpResult = tmp(startActually[2]);
+          mutableUI = tmpResult.makeMutableUI(tmp6.initialValues);
+          const result1 = obj3.set(arg0, mutableUI);
+          value2 = mutableUI;
+        } else {
+          let tmp15 = stopObservingProgress;
+          if (typeof stopObservingProgress === "function") {
+            value2.removeListener(arg0 + 1000000000);
+            map._notifyAboutEnd(arg0, false);
+            value2._value = tmp6.initialValues;
+          } else {
+            throw new TypeError("Trying to call a non-function");
+          }
+        }
+        const tmpResult2 = tmp(startActually[3]);
+        const withStyleAnimationResult = tmpResult2.withStyleAnimation(animations);
+        withStyleAnimationResult.callback = (arg0) => {
+          const tmp = arg0;
+          if (tmp) {
+            map.delete(closure_0);
+            map1.delete(closure_0);
+            const obj = mutableUI;
+            const tmp7 = closure_1;
+            if (typeof stopObservingProgress === "function") {
+              const tmp11 = tmp7 === LayoutAnimationType.LayoutAnimationType.EXITING;
+              obj.removeListener(closure_0 + 1000000000);
+              global._notifyAboutEnd(closure_0, tmp11);
+            } else {
+              throw new TypeError("Trying to call a non-function");
+            }
+          }
+          const tmp15 = closure_2;
+          if (closure_2.callback) {
+            let tmp16 = undefined !== arg0;
+            const callback = tmp15.callback;
+            if (tmp16) {
+              tmp16 = arg0;
+            }
+            callback(tmp16);
+          }
+        };
+        if (typeof startObservingProgress === "function") {
+          map = arg0;
+          closure_2 = arg1 === tmp(tmp2[1]).LayoutAnimationType.SHARED_ELEMENT_TRANSITION;
+          value2.addListener(arg0 + 1000000000, () => {
+            closure_0._notifyAboutProgress(closure_0, value2.value, closure_2);
+          });
+          value2.value = withStyleAnimationResult;
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+      } else {
+        const ProgressTransitionRegister = map.ProgressTransitionRegister;
+        ProgressTransitionRegister.onTransitionStart(arg0, arg2);
+      }
+    }
+    const tmp7 = module_1658;
+    if (tmp7) {
+      startActually = (arg0, arg1, arg2, arg3) => {
+        let closure_0 = arg0;
+        let closure_1 = arg1;
+        let closure_2 = arg2;
+        let closure_3 = arg3;
+        return requestAnimationFrame(() => {
+          startActually(closure_0, closure_1, closure_2, closure_3);
+        });
+      };
+    }
+    const obj = {
+      start: startActually,
+      stop(arg0) {
+          const value = map1.get(arg0);
+          if (value) {
+            if (typeof stopObservingProgress === "function") {
+              value.removeListener(arg0 + 1000000000);
+              global._notifyAboutEnd(arg0, false);
+            } else {
+              throw new TypeError("Trying to call a non-function");
+            }
+          }
+        }
+    };
+    tmp.LayoutAnimationsManager = obj;
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
 };
+fn.__closure = { createLayoutAnimationManager };
+fn.__workletHash = 11408639565737;
+fn.__initData = { code: "function pnpm_animationsManagerTs4(){const{createLayoutAnimationManager}=this.__closure;global.LayoutAnimationsManager=createLayoutAnimationManager();}" };
+const tmp2 = setupMicrotasks.runOnUIImmediately(fn)();

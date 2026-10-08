@@ -1,16 +1,16 @@
-// Module ID: 10613
-// Function ID: 10614
+// Module ID: 10210
+// Function ID: 10211
 // Name: useFastestListTableRowPlaceholderConfig
-// Dependencies: [19, 4896, 587, 1188, 5627, 558, 576, 6566, 2]
+// Dependencies: [19, 5090, 587, 1200, 5974, 558, 576, 6742, 2]
 
-// Module 10613 (useFastestListTableRowPlaceholderConfig)
+// Module 10210 (useFastestListTableRowPlaceholderConfig)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import LegacyTokens from "LegacyTokens" /* 5627 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6566 */;
+import native from "native" /* 1200 */;
+import LegacyTokens from "LegacyTokens" /* 5974 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6742 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ size = { width: native.AVATAR_SIZE_MAP[native.AvatarSizes.REFRESH_MEDIUM_32], he
 obj3 = { height: 20, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 obj4 = { backgroundColor: LegacyTokens.DIVIDER_BACKGROUND };
 const styles = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFastestListTableRowPlaceholderConfig() {
   const obj = react2;
   const cResult = obj.c(23);
   const tmp4 = styles();
@@ -126,7 +126,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = tmp4.placeholderUsername.height;
   cResult[4] = obj9;
   tmp5 = obj9;
-}) : (() => {
+}) : (function useFastestListTableRowPlaceholderConfig() {
   const tmp = styles();
   let closure_0 = tmp;
   const items = [tmp];

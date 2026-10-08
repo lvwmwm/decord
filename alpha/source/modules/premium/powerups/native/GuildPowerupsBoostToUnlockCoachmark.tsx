@@ -1,18 +1,18 @@
-// Module ID: 16134
-// Function ID: 16135
+// Module ID: 16394
+// Function ID: 16395
 // Name: GuildPowerupsBoostToUnlockCoachmark
-// Dependencies: [19, 558, 576, 12169, 16135, 2]
+// Dependencies: [19, 558, 576, 12248, 16395, 2]
 
-// Module 16134 (GuildPowerupsBoostToUnlockCoachmark)
+// Module 16394 (GuildPowerupsBoostToUnlockCoachmark)
 import react2 from "react" /* 576 */;
-import useGuildPowerupsCoachmarkDefault from "useGuildPowerupsCoachmark" /* 16135 */;
+import useGuildPowerupsCoachmarkDefault from "useGuildPowerupsCoachmark" /* 16395 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const GuildPowerupsNotification = tmp(12169);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const GuildPowerupsNotification = tmp(12248);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupsBoostToUnlockCoachmark(arg0) {
   let markAsDismissed;
   let powerup;
   const obj = react2;
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = powerup;
   cResult[2] = obj2;
   tmp6 = obj2;
-}) : ((powerup) => {
+}) : (function GuildPowerupsBoostToUnlockCoachmark(powerup) {
   let guildId;
   let targetRef;
   powerup = powerup.powerup;
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj = { type: GuildPowerupsNotification.GuildPowerupNotificationPopoutType.BOOST_TO_UNLOCK, powerup, markAsDismissed };
     return obj;
   }, items);
-  markAsDismissed(16135)(targetRef, guildId, memo);
+  markAsDismissed(16395)(targetRef, guildId, memo);
   return null;
 });
 const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsBoostToUnlockCoachmark.tsx");

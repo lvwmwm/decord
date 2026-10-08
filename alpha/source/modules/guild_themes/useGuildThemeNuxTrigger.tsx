@@ -1,10 +1,10 @@
-// Module ID: 16129
-// Function ID: 16130
+// Module ID: 16389
+// Function ID: 16390
 // Name: useGuildThemeNuxTrigger
-// Dependencies: [32, 19, 2048, 558, 576, 4769, 2036, 6901, 2]
+// Dependencies: [32, 19, 2060, 558, 576, 4963, 2048, 7090, 2]
 
-// Module 16129 (useGuildThemeNuxTrigger)
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+// Module 16389 (useGuildThemeNuxTrigger)
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -16,7 +16,7 @@ let _require, c0, ref, tmp3;
 let react = react_mod;
 let constants = DismissibleContentConstants.DismissibleContentGroupName;
 let c5 = 2000;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, isNuxOpen) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildThemeNuxTrigger(arg0, isNuxOpen) {
   let closure_0;
   let closure_3;
   let closure_4;
@@ -109,8 +109,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, isNuxOpen) => 
             tmp4 = globalThis;
             _setTimeout = setTimeout;
             tmp5 = closure_5;
-            closure_0 = setTimeout(() => { /* body not rendered: F145727 */ }, closure_5);
-            return () => { /* body not rendered: F145728 */ };
+            closure_0 = setTimeout(() => { /* body not rendered: F147215 */ }, closure_5);
+            return () => { /* body not rendered: F147216 */ };
           }
         }
       }
@@ -125,7 +125,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, isNuxOpen) => 
   cResult[9] = tmp8;
   cResult[10] = N;
   cResult[11] = items2;
-}) : ((arg0, isNuxOpen) => {
+}) : (function useGuildThemeNuxTrigger(arg0, isNuxOpen) {
   let closure_0;
   let closure_3;
   let closure_4;

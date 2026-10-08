@@ -1,18 +1,18 @@
-// Module ID: 14670
-// Function ID: 14671
+// Module ID: 14931
+// Function ID: 14932
 // Name: SyncContactsNameSetting
-// Dependencies: [7645, 1085, 1252, 5099, 14669, 1987, 558, 12344, 11142, 1126, 2]
+// Dependencies: [7966, 1085, 1264, 5940, 14930, 1999, 558, 12440, 11262, 1126, 2]
 
-// Module 14670 (SyncContactsNameSetting)
+// Module 14931 (SyncContactsNameSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12344 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12440 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -29,10 +29,10 @@ let obj = {
     const obj = AnalyticsUtilsDefault;
     obj.track(AnalyticEvents.OPEN_MODAL, { type: "Change Name", location: { page: "User Settings" } });
     const obj2 = ModalActionCreatorsDefault;
-    obj2.pushLazy(asyncRequire(14669, dependencyMap.paths), "Contact Sync Name Update Modal");
+    obj2.pushLazy(asyncRequire(14930, dependencyMap.paths), "Contact Sync Name Update Modal");
   },
   withArrow: true,
-  usePredicate: () => {
+  usePredicate: function useHasContactSyncAccount() {
     const obj = ContactSyncUtils;
     return null != obj.useContactSyncAccount();
   }

@@ -1,26 +1,26 @@
-// Module ID: 10501
-// Function ID: 10502
+// Module ID: 10098
+// Function ID: 10099
 // Name: PremiumGiftPromotionDetails
-// Dependencies: [109, 32, 19, 17, 4885, 21, 587, 4896, 558, 576, 4892, 504, 8497, 1370, 10502, 5981, 1980, 8459, 2]
+// Dependencies: [109, 32, 19, 17, 5079, 21, 587, 5090, 558, 576, 5086, 504, 8981, 1382, 10099, 6164, 1992, 8945, 2]
 
-// Module 10501 (PremiumGiftPromotionDetails)
+// Module 10098 (PremiumGiftPromotionDetails)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1370 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import SKUPreview from "SKUPreview" /* 8459 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1992 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import SKUPreview from "SKUPreview" /* 8945 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let _require, product;
+let _require;
 
 let c10;
 let obj2;
@@ -39,7 +39,7 @@ let closure_13 = createStyles.createStyles(() => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftPromotionDetailsBase(arg0) {
   let graphic;
   let items;
   let items1;
@@ -144,7 +144,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.container;
   cResult[2] = items2;
   tmp5 = items2;
-}) : ((arg0) => {
+}) : (function PremiumGiftPromotionDetailsBase(arg0) {
   let graphic;
   let items;
   let items1;
@@ -187,7 +187,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return unpackModuleId(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnimatedImage(arg0) {
   let aPNGPlayerControls;
   let closure_0;
   let first;
@@ -204,7 +204,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   _require = tmp4;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
-    const fn = function s() {
+    const fn = function o() {
       return useReducedMotion.useReducedMotion;
     };
     cResult[0] = items;
@@ -239,7 +239,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         let num6 = null;
         const tmp17 = stateFromStores;
-        class A {
+        class C {
           constructor() {
             const tmp = first;
             if (tmp) {
@@ -260,7 +260,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
             }
             const obj2 = { ref: null, url: imageUrl, autoplay: false, style };
-            class A {
+            class C {
               constructor() {
                 const tmp = first;
                 if (tmp) {
@@ -278,7 +278,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         if (cResult[13] !== imageUrl) {
           const obj4 = { uri: imageUrl };
-          class A {
+          class C {
             constructor() {
               const tmp = first;
               if (tmp) {
@@ -305,7 +305,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         cResult[17] = tmp26;
         tmp24 = tmp26;
       }
-      class A {
+      class C {
         constructor() {
           const tmp = first;
           if (tmp) {
@@ -315,8 +315,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       cResult[7] = aPNGPlayerControls;
       cResult[8] = first;
-      cResult[9] = A;
-      tmp16 = A;
+      cResult[9] = C;
+      tmp16 = C;
     }
   }
   const fn2 = function b() {
@@ -341,7 +341,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = items1;
   tmp14 = items1;
   tmp13 = fn2;
-}) : ((arg0) => {
+}) : (function AnimatedImage(arg0) {
   let first;
   let imageUrl;
   let shouldAnimate;
@@ -402,7 +402,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   tmp13 = closure_10(tmp9(tmp2[15]), obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftPromotionDetails(arg0) {
   let imageUrl;
   let shouldAnimate;
   let tmp2;
@@ -458,7 +458,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = tmp8;
   cResult[7] = tmp10;
   tmp9 = tmp10;
-}) : ((imageUrl) => {
+}) : (function PremiumGiftPromotionDetails(imageUrl) {
   imageUrl = imageUrl.imageUrl;
   const shouldAnimate = imageUrl.shouldAnimate;
   const merged = Object.assign(imageUrl, Object.assign({ imageUrl: 0, shouldAnimate: 0 }));
@@ -479,7 +479,7 @@ createStyles = createStyles.createStyles;
 obj2 = { borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1 };
 let closure_16 = createStyles(obj);
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftPromotionCollectibleRewardDetails(product) {
   let CollectiblesPreview;
   let obj11;
   let rounded;
@@ -555,7 +555,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
   if (tmp15Result) {
     const obj6 = { style: tmp9.preview, children: authStore(CollectiblesPreview, obj11) };
     obj11 = { collectiblesItemData: tmp10, size: rounded };
-    CollectiblesPreview = tmp(8459).CollectiblesPreview;
+    CollectiblesPreview = tmp(8945).CollectiblesPreview;
     const tmp16 = View;
     if ("bundle" === tmp10.type) {
       const _Math2 = Math;
@@ -573,7 +573,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
   cResult[9] = tmp9;
   cResult[10] = tmp15Result;
   tmp13 = tmp15Result;
-}) : ((product) => {
+}) : (function PremiumGiftPromotionCollectibleRewardDetails(product) {
   let CollectiblesPreview;
   let obj2;
   let rounded;
@@ -610,7 +610,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
       rounded = Math.floor(1.2 * tmp10);
     } else {
       rounded = tmp10;
-      if (memo.item.type === tmp8(1980).CollectiblesItemType.AVATAR_DECORATION) {
+      if (memo.item.type === tmp8(1992).CollectiblesItemType.AVATAR_DECORATION) {
         const _Math = Math;
         rounded = Math.floor(1.5 * tmp10);
       }

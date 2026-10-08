@@ -1,23 +1,23 @@
-// Module ID: 8333
-// Function ID: 8334
+// Module ID: 7716
+// Function ID: 7717
 // Name: InAppReportsTextLineElement
-// Dependencies: [5, 32, 19, 17, 21, 4896, 587, 558, 576, 5791, 5991, 6695, 4573, 1369, 4872, 4571, 4892, 1126, 5601, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5090, 587, 558, 576, 5395, 6174, 6872, 4765, 1381, 5066, 4763, 5086, 1126, 5375, 2]
 
-// Module 8333 (InAppReportsTextLineElement)
+// Module 7716 (InAppReportsTextLineElement)
 import nativeDefault from "native" /* 587 */;
-import ToastUtils from "ToastUtils" /* 4573 */;
-import CustomMarkupAll from "CustomMarkup" /* 5791 */;
-import ClipboardUtils from "ClipboardUtils" /* 6695 */;
+import ToastUtils from "ToastUtils" /* 4765 */;
+import ClipboardUtils from "ClipboardUtils" /* 6872 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let _require, c3, dependencyMap;
+const require = globalThis.__r;
+let c3, dependencyMap;
 
 let c10;
 let c9;
@@ -33,14 +33,15 @@ obj2 = { flex: 1, display: "flex", flexDirection: "row", alignItems: "center", j
 createStyles = createStyles.createStyles;
 obj3 = { borderColor: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND };
 let closure_11 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((element) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextLineElement(element) {
   let body;
   let closure_3;
   let first;
   let items;
+  let items1;
+  let items2;
   let sms;
   let title;
-  let tmp14;
   let tmp6;
   let tmp = sms;
   let tmp2 = dependencyMap;
@@ -55,7 +56,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((element) => {
   const tmp5 = _slicedToArray(react.useState(false), 2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function u() {
-      const obj = CustomMarkupAll;
+      const obj = require("CustomMarkup");
       return obj.getParser();
     };
     cResult[0] = fn;
@@ -63,261 +64,246 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((element) => {
   } else {
     first = cResult[0];
   }
-  const tmp8 = sms_body(5991)(first);
+  const tmp8 = sms_body(6174)(first);
   if (is_localized) {
     let tmp10;
+    let tmp11;
     if (cResult[1] !== sms) {
-      class T {
-        constructor() {
-          const obj = ClipboardUtils;
-          obj.copy(sms);
-          const obj2 = ToastUtils;
-          const result = obj2.presentCopiedToClipboard();
-          importAll(true);
-        }
+      function handleCopyPress() {
+        const obj = ClipboardUtils;
+        obj.copy(sms);
+        const obj2 = ToastUtils;
+        const result = obj2.presentCopiedToClipboard();
+        importAll(true);
       }
       cResult[1] = sms;
-      cResult[2] = T;
+      cResult[2] = handleCopyPress;
+      tmp10 = handleCopyPress;
     } else {
-      class T {
-        constructor() {
-          const obj = ClipboardUtils;
-          obj.copy(sms);
-          const obj2 = ToastUtils;
-          const result = obj2.presentCopiedToClipboard();
-          importAll(true);
-        }
-      }
+      tmp10 = cResult[2];
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      class T {
-        constructor() {
-          const obj = ClipboardUtils;
-          obj.copy(sms);
-          const obj2 = ToastUtils;
-          const result = obj2.presentCopiedToClipboard();
-          importAll(true);
+      function buildSmsUrl(arg0, arg1) {
+        let str = "?";
+        const obj = sms(closure_3[13]);
+        const tmp = sms;
+        const tmp2 = closure_3;
+        if (obj.isIOS()) {
+          let str2 = "&";
+          const tmpResult = tmp(tmp2[14]);
+          if (tmpResult.getSystemVersionMajor() < 8) {
+            str2 = ";";
+          }
+          str = str2;
         }
+        let str3 = "";
+        const combined = "sms:" + arg0;
+        if (null != arg1) {
+          const _encodeURIComponent = encodeURIComponent;
+          const _HermesInternal = HermesInternal;
+          str3 = "" + str + "body=" + encodeURIComponent(arg1);
+        }
+        return combined + str3;
       }
-      cResult[3] = tmp11;
-      tmp10 = tmp11;
+      cResult[3] = buildSmsUrl;
+      tmp11 = buildSmsUrl;
     } else {
-      class T {
-        constructor() {
-          const obj = ClipboardUtils;
-          obj.copy(sms);
-          const obj2 = ToastUtils;
-          const result = obj2.presentCopiedToClipboard();
-          importAll(true);
-        }
-      }
+      tmp11 = cResult[3];
     }
-    dependencyMap = tmp10;
+    dependencyMap = tmp11;
     if (cResult[4] === sms) {
-      class T {
-        constructor() {
-          const obj = ClipboardUtils;
-          obj.copy(sms);
-          const obj2 = ToastUtils;
-          const result = obj2.presentCopiedToClipboard();
-          importAll(true);
-        }
+      let tmp12;
+      if (cResult[5] === sms_body) {
+        tmp12 = cResult[6];
       }
       if (cResult[7] === tmp6) {
-        class T {
-          constructor() {
-            const obj = ClipboardUtils;
-            obj.copy(sms);
-            const obj2 = ToastUtils;
-            const result = obj2.presentCopiedToClipboard();
-            importAll(true);
-          }
+        let tmp14;
+        if (cResult[8] === tmp4.smsNumberContainerSuccess) {
+          tmp14 = cResult[9];
         }
         if (cResult[10] === tmp4.header) {
-          class T {
-            constructor() {
-              const obj = ClipboardUtils;
-              obj.copy(sms);
-              const obj2 = ToastUtils;
-              const result = obj2.presentCopiedToClipboard();
-              importAll(true);
-            }
+          let tmp17;
+          if (cResult[11] === title) {
+            tmp17 = cResult[12];
           }
           if (cResult[13] === body) {
-            class T {
-              constructor() {
-                const obj = ClipboardUtils;
-                obj.copy(sms);
-                const obj2 = ToastUtils;
-                const result = obj2.presentCopiedToClipboard();
-                importAll(true);
-              }
+            let tmp21;
+            if (cResult[14] === tmp8) {
+              tmp21 = cResult[15];
             }
             if (cResult[16] === tmp4.description) {
-              class T {
-                constructor() {
-                  const obj = ClipboardUtils;
-                  obj.copy(sms);
-                  const obj2 = ToastUtils;
-                  const result = obj2.presentCopiedToClipboard();
-                  importAll(true);
-                }
+              let tmp23;
+              if (cResult[17] === tmp21) {
+                tmp23 = cResult[18];
               }
               if (cResult[19] === tmp14) {
-                class T {
-                  constructor() {
-                    const obj = ClipboardUtils;
-                    obj.copy(sms);
-                    const obj2 = ToastUtils;
-                    const result = obj2.presentCopiedToClipboard();
-                    importAll(true);
-                  }
+                let tmp27;
+                let tmp28;
+                let tmp31;
+                if (cResult[20] === tmp4.smsNumberContainer) {
+                  tmp27 = cResult[21];
                 }
                 if (cResult[22] !== sms) {
-                  class T {
-                    constructor() {
-                      const obj = ClipboardUtils;
-                      obj.copy(sms);
-                      const obj2 = ToastUtils;
-                      const result = obj2.presentCopiedToClipboard();
-                      importAll(true);
-                    }
-                  }
                   let obj2 = { variant: "text-sm/semibold", color: "interactive-text-active", children: sms };
+                  const tmp30 = closure_9(tmp(5086).Text, obj2);
                   cResult[22] = sms;
-                  cResult[23] = closure_9(tmp(4892).Text, obj2);
-                  const tmp27 = closure_9(tmp(4892).Text, obj2);
+                  cResult[23] = tmp30;
+                  tmp28 = tmp30;
                 } else {
-                  class T {
-                    constructor() {
-                      const obj = ClipboardUtils;
-                      obj.copy(sms);
-                      const obj2 = ToastUtils;
-                      const result = obj2.presentCopiedToClipboard();
-                      importAll(true);
-                    }
-                  }
+                  tmp28 = cResult[23];
                 }
                 if (cResult[24] !== tmp6) {
-                  class T {
-                    constructor() {
-                      const obj = ClipboardUtils;
-                      obj.copy(sms);
-                      const obj2 = ToastUtils;
-                      const result = obj2.presentCopiedToClipboard();
-                      importAll(true);
-                    }
-                  }
-                  const string = tmp29.string;
+                  let stringResult;
+                  const intl = tmp(1126).intl;
+                  const string = intl.string;
                   const t = tmp(1126).t;
                   if (tmp6) {
-                    class T {
-                      constructor() {
-                        const obj = ClipboardUtils;
-                        obj.copy(sms);
-                        const obj2 = ToastUtils;
-                        const result = obj2.presentCopiedToClipboard();
-                        importAll(true);
-                      }
-                    }
+                    stringResult = string(t.t5VZ88);
                   } else {
-                    class T {
-                      constructor() {
-                        const obj = ClipboardUtils;
-                        obj.copy(sms);
-                        const obj2 = ToastUtils;
-                        const result = obj2.presentCopiedToClipboard();
-                        importAll(true);
-                      }
-                    }
+                    stringResult = string(t.OpuAlK);
                   }
                   cResult[24] = tmp6;
-                  cResult[25] = tmp30;
+                  cResult[25] = stringResult;
+                  tmp31 = stringResult;
                 } else {
-                  class T {
-                    constructor() {
-                      const obj = ClipboardUtils;
-                      obj.copy(sms);
-                      const obj2 = ToastUtils;
-                      const result = obj2.presentCopiedToClipboard();
-                      importAll(true);
-                    }
-                  }
+                  tmp31 = cResult[25];
                 }
-                if (cResult[26] === tmp9) {
-                  class T {
-                    constructor() {
-                      const obj = ClipboardUtils;
-                      obj.copy(sms);
-                      const obj2 = ToastUtils;
-                      const result = obj2.presentCopiedToClipboard();
-                      importAll(true);
-                    }
+                if (cResult[26] === tmp10) {
+                  let tmp33;
+                  if (cResult[27] === tmp31) {
+                    tmp33 = cResult[28];
                   }
                   if (cResult[29] === tmp4.trailingButtonContainer) {
-                    class T {
-                      constructor() {
-                        const obj = ClipboardUtils;
-                        obj.copy(sms);
-                        const obj2 = ToastUtils;
-                        const result = obj2.presentCopiedToClipboard();
-                        importAll(true);
-                      }
+                    let tmp36;
+                    if (cResult[30] === tmp33) {
+                      tmp36 = cResult[31];
                     }
-                    if (cResult[32] === tmp25) {
-                      class T {
-                        constructor() {
-                          const obj = ClipboardUtils;
-                          obj.copy(sms);
-                          const obj2 = ToastUtils;
-                          const result = obj2.presentCopiedToClipboard();
-                          importAll(true);
+                    if (cResult[32] === tmp27) {
+                      if (cResult[33] === tmp28) {
+                        let tmp40;
+                        let tmp44;
+                        let tmp46;
+                        if (cResult[34] === tmp36) {
+                          tmp40 = cResult[35];
                         }
+                        const _Symbol2 = Symbol;
+                        const startButtonContainer = tmp4.startButtonContainer;
+                        if (cResult[36] === Symbol.for("react.memo_cache_sentinel")) {
+                          const intl2 = tmp(1126).intl;
+                          const stringResult1 = intl2.string(tmp(1126).t.BDYHSe);
+                          cResult[36] = stringResult1;
+                          tmp44 = stringResult1;
+                        } else {
+                          tmp44 = cResult[36];
+                        }
+                        if (cResult[37] !== tmp12) {
+                          let obj3 = { text: tmp44, size: "md", onPress: tmp12 };
+                          const tmp48 = closure_9(tmp(5375).Button, obj3);
+                          cResult[37] = tmp12;
+                          cResult[38] = tmp48;
+                          tmp46 = tmp48;
+                        } else {
+                          tmp46 = cResult[38];
+                        }
+                        if (cResult[39] === tmp4.startButtonContainer) {
+                          let tmp49;
+                          if (cResult[40] === tmp46) {
+                            tmp49 = cResult[41];
+                          }
+                          if (cResult[42] === tmp4.smsInfoContainer) {
+                            if (cResult[43] === tmp40) {
+                              let tmp53;
+                              if (cResult[44] === tmp49) {
+                                tmp53 = cResult[45];
+                              }
+                              if (cResult[46] === tmp4.container) {
+                                if (cResult[47] === tmp23) {
+                                  if (cResult[48] === tmp53) {
+                                    let tmp57;
+                                    if (cResult[49] === tmp17) {
+                                      tmp57 = cResult[50];
+                                    }
+                                    return tmp57;
+                                  }
+                                }
+                              }
+                              let obj4 = { style: tmp16, children: items };
+                              items = [tmp17, tmp23, tmp53];
+                              const tmp60 = closure_10(closure_7, obj4);
+                              cResult[46] = tmp4.container;
+                              cResult[47] = tmp23;
+                              cResult[48] = tmp53;
+                              cResult[49] = tmp17;
+                              cResult[50] = tmp60;
+                              tmp57 = tmp60;
+                            }
+                          }
+                          let obj5 = { style: tmp26, children: items1 };
+                          items1 = [tmp40, tmp49];
+                          const tmp56 = closure_10(closure_7, obj5);
+                          cResult[42] = tmp4.smsInfoContainer;
+                          cResult[43] = tmp40;
+                          cResult[44] = tmp49;
+                          cResult[45] = tmp56;
+                          tmp53 = tmp56;
+                        }
+                        const obj6 = { style: startButtonContainer, children: tmp46 };
+                        const tmp52 = closure_9(closure_7, obj6);
+                        cResult[39] = tmp4.startButtonContainer;
+                        cResult[40] = tmp46;
+                        cResult[41] = tmp52;
+                        tmp49 = tmp52;
                       }
                     }
-                    let obj3 = { style: tmp25, children: items };
-                    items = [tmp26, tmp34];
-                    cResult[32] = tmp25;
-                    cResult[33] = tmp26;
-                    cResult[34] = tmp34;
-                    cResult[35] = closure_10(closure_7, obj3);
-                    const tmp41 = closure_10(closure_7, obj3);
+                    const obj7 = { style: tmp27, children: items2 };
+                    items2 = [tmp28, tmp36];
+                    const tmp43 = closure_10(closure_7, obj7);
+                    cResult[32] = tmp27;
+                    cResult[33] = tmp28;
+                    cResult[34] = tmp36;
+                    cResult[35] = tmp43;
+                    tmp40 = tmp43;
                   }
-                  let obj4 = { style: tmp4.trailingButtonContainer, children: tmp31 };
+                  const obj8 = { style: tmp4.trailingButtonContainer, children: tmp33 };
+                  const tmp39 = closure_9(closure_7, obj8);
                   cResult[29] = tmp4.trailingButtonContainer;
-                  cResult[30] = tmp31;
-                  cResult[31] = closure_9(closure_7, obj4);
-                  const tmp37 = closure_9(closure_7, obj4);
+                  cResult[30] = tmp33;
+                  cResult[31] = tmp39;
+                  tmp36 = tmp39;
                 }
-                let obj5 = { text: tmp28, size: "sm", onPress: tmp9, variant: "secondary" };
-                cResult[26] = tmp9;
-                cResult[27] = tmp28;
-                cResult[28] = closure_9(tmp(5601).Button, obj5);
-                const tmp33 = closure_9(tmp(5601).Button, obj5);
+                const obj9 = { text: tmp31, size: "sm", onPress: tmp10, variant: "secondary" };
+                const tmp35 = closure_9(tmp(5375).Button, obj9);
+                cResult[26] = tmp10;
+                cResult[27] = tmp31;
+                cResult[28] = tmp35;
+                tmp33 = tmp35;
               }
-              const items1 = [tmp4.smsNumberContainer, tmp14];
+              const items3 = [tmp4.smsNumberContainer, tmp14];
               cResult[19] = tmp14;
               cResult[20] = tmp4.smsNumberContainer;
-              cResult[21] = items1;
+              cResult[21] = items3;
+              tmp27 = items3;
             }
-            const obj6 = { style: tmp19, variant: "text-md/medium", children: tmp20 };
+            const obj10 = { style: tmp20, variant: "text-md/medium", children: tmp21 };
+            const tmp25 = closure_9(tmp(5086).Text, obj10);
             cResult[16] = tmp4.description;
-            cResult[17] = tmp20;
-            cResult[18] = closure_9(tmp(4892).Text, obj6);
-            const tmp24 = closure_9(tmp(4892).Text, obj6);
+            cResult[17] = tmp21;
+            cResult[18] = tmp25;
+            tmp23 = tmp25;
           }
+          const tmp8Result = tmp8(body);
           cResult[13] = body;
           cResult[14] = tmp8;
-          cResult[15] = tmp8(body);
-          const tmp8Result = tmp8(body);
+          cResult[15] = tmp8Result;
+          tmp21 = tmp8Result;
         }
-        const obj7 = { style: tmp4.header, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title };
-        const tmp18 = closure_9(tmp(4892).Text, obj7);
+        const obj11 = { style: tmp4.header, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title };
+        const tmp19 = closure_9(tmp(5086).Text, obj11);
         cResult[10] = tmp4.header;
         cResult[11] = title;
-        cResult[12] = tmp18;
-        const tmp16 = tmp18;
+        cResult[12] = tmp19;
+        tmp17 = tmp19;
       }
       const tmp15 = tmp6 ? tmp4.smsNumberContainerSuccess : {};
       cResult[7] = tmp6;
@@ -325,7 +311,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((element) => {
       cResult[9] = tmp15;
       tmp14 = tmp15;
     }
-    _require = _asyncToGenerator(async (arg0, value) => {
+    let closure_0 = _asyncToGenerator(async (arg0, value) => {
       let v3;
       if (c3 === 2) {
         c3 = 3;
@@ -369,7 +355,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((element) => {
             return obj5;
           } else {
             if (value) {
-              const obj = sms_body(dependencyMap[15]);
+              const obj = sms_body(closure_2_3[15]);
               obj.openURL(closure_0);
             }
             c3 = 3;
@@ -387,19 +373,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((element) => {
     cResult[4] = sms;
     cResult[5] = sms_body;
     cResult[6] = handleOpenSms;
+    tmp12 = handleOpenSms;
   } else {
-    class T {
-      constructor() {
-        const obj = ClipboardUtils;
-        obj.copy(sms);
-        const obj2 = ToastUtils;
-        const result = obj2.presentCopiedToClipboard();
-        importAll(true);
-      }
-    }
     return null;
   }
-}) : ((element) => {
+}) : (function TextLineElement(element) {
   let Button;
   let Button2;
   let _undefined;

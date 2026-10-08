@@ -1,22 +1,22 @@
-// Module ID: 10133
-// Function ID: 10134
+// Module ID: 9718
+// Function ID: 9719
 // Name: StickerPackDetailActionSheet
-// Dependencies: [32, 19, 10095, 1085, 6653, 21, 4896, 558, 576, 1484, 1618, 12, 1252, 6652, 10134, 10135, 6656, 6119, 10139, 5916, 10140, 2]
+// Dependencies: [32, 19, 9679, 1085, 6830, 21, 5090, 558, 576, 1496, 1630, 12, 1264, 6829, 9719, 9720, 6833, 6298, 9724, 6189, 9725, 2]
 
-// Module 10133 (StickerPackDetailActionSheet)
+// Module 9718 (StickerPackDetailActionSheet)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6653 */;
-import StickerPickerListRowDefault from "StickerPickerListRow" /* 10139 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6830 */;
+import StickerPickerListRowDefault from "StickerPickerListRow" /* 9724 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 10095 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 9679 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, stickerPack;
+let BottomSheet;
 
 let c10;
 let c9;
@@ -28,8 +28,8 @@ let _slicedToArray = _slicedToArray_mod;
 const AnalyticEvents = Constants.AnalyticEvents;
 const ACTION_SHEET_MAX_WIDTH = ActionSheetConstants.ACTION_SHEET_MAX_WIDTH;
 ({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = Fragment);
-let closure_12 = createStyles.createStyles({ focusedStickerPreviewContainer: { position: "absolute", left: 0, top: 0, height: "100%", width: "100%", alignItems: "center", justifyContent: "center", backgroundColor: "rgba(0, 0, 0, 0.85)" }, header: { marginHorizontal: 16, marginVertical: 8, backgroundColor: "transparent", height: "applicationId" }, stickers: { paddingHorizontal: 16, marginBottom: 16 }, popoutContainer: { position: "absolute", bottom: 50 } });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stickerPack) => {
+let closure_12 = createStyles.createStyles({ focusedStickerPreviewContainer: { position: "absolute", left: 0, top: 0, height: "100%", width: "100%", alignItems: "center", justifyContent: "center", backgroundColor: "rgba(0, 0, 0, 0.85)" }, header: { marginHorizontal: 16, marginVertical: 8, backgroundColor: "transparent", height: "children" }, stickers: { paddingHorizontal: 16, marginBottom: 16 }, popoutContainer: { position: "absolute", bottom: 50 } });
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function StickerPackDetailActionSheet(stickerPack) {
   let closure_5;
   let first;
   let first1;
@@ -59,16 +59,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
   closure_8 = first.useRef(onClose);
   const tmp5 = analyticsPopoutType;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function u(arg0) {
+    function onPressSticker(arg0) {
       _slicedToArray(arg0);
-    };
-    cResult[0] = fn;
-    first1 = fn;
+    }
+    cResult[0] = onPressSticker;
+    first1 = onPressSticker;
   } else {
     first1 = cResult[0];
   }
   if (cResult[1] !== first) {
-    const fn2 = function x() {
+    function toggleDisplayingPackDetails() {
       if (null != ref.current) {
         const _clearTimeout = clearTimeout;
         clearTimeout(ref.current);
@@ -78,23 +78,23 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
         const _setTimeout = setTimeout;
         ref.current = setTimeout(() => closure_1_5(false), 4000);
       }
-    };
+    }
     cResult[1] = first;
-    cResult[2] = fn2;
-    tmp12 = fn2;
+    cResult[2] = toggleDisplayingPackDetails;
+    tmp12 = toggleDisplayingPackDetails;
   } else {
     tmp12 = cResult[2];
   }
   if (cResult[3] !== onClose) {
-    const fn3 = function j() {
+    const fn = function j() {
       closure_8.current = onClose;
     };
     const items = [onClose];
     cResult[3] = onClose;
-    cResult[4] = fn3;
+    cResult[4] = fn;
     cResult[5] = items;
     tmp14 = items;
-    tmp13 = fn3;
+    tmp13 = fn;
   } else {
     tmp13 = cResult[4];
     tmp14 = cResult[5];
@@ -214,7 +214,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
   cResult[9] = stickerPack.id;
   cResult[10] = U;
   cResult[11] = items2;
-}) : ((stickerPack) => {
+}) : (function StickerPackDetailActionSheet(stickerPack) {
   let BottomSheetScrollView;
   let _undefined;
   let c3;

@@ -1,14 +1,14 @@
-// Module ID: 8913
-// Function ID: 8914
+// Module ID: 9346
+// Function ID: 9347
 // Name: useDiscountedPremiumProductInfo
-// Dependencies: [19, 1096, 558, 576, 8914, 6926, 6750, 2]
+// Dependencies: [19, 1096, 558, 576, 9347, 7115, 6926, 2]
 
-// Module 8913 (useDiscountedPremiumProductInfo)
+// Module 9346 (useDiscountedPremiumProductInfo)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1096 */;
-import PriceUtils from "PriceUtils" /* 6750 */;
-import ProductIds from "ProductIds" /* 6926 */;
-import useDiscountedPremiumPlan from "useDiscountedPremiumPlan" /* 8914 */;
+import PriceUtils from "PriceUtils" /* 6926 */;
+import ProductIds from "ProductIds" /* 7115 */;
+import useDiscountedPremiumPlan from "useDiscountedPremiumPlan" /* 9347 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let _require;
 
 const CurrencyCodes = Constants.CurrencyCodes;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiscountedPremiumProductInfo(arg0, arg1) {
   let discountedPlan;
   let discountedProduct;
   const obj = react2;
@@ -88,16 +88,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
             }
           }
           if (cResult[6] !== tmp8) {
-            class I {
+            class C {
               constructor(arg0) {
                 return arg0.offerId === closure_0;
               }
             }
             cResult[6] = tmp8;
-            cResult[7] = I;
-            tmp11 = I;
+            cResult[7] = C;
+            tmp11 = C;
           } else {
-            class I {
+            class C {
               constructor(arg0) {
                 return arg0.offerId === closure_0;
               }
@@ -117,7 +117,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[1] = discountedProduct;
   cResult[2] = formatPriceResult;
   tmp5 = formatPriceResult;
-}) : ((arg0, arg1) => {
+}) : (function useDiscountedPremiumProductInfo(arg0, arg1) {
   let discountedProduct;
   _require = arg0;
   const obj = require("useDiscountedPremiumPlan");
@@ -155,7 +155,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
                 if (null != found.pricingPhases) {
                   if (found.pricingPhases.length > 0) {
                     const result = found.pricingPhases[0].price / 100;
-                    const tmp6Result = tmp6(6750);
+                    const tmp6Result = tmp6(6926);
                     return tmp6Result.formatPrice(result, USD, { convertToMajorUnits: false });
                   }
                 }

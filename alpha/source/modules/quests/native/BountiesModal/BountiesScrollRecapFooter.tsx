@@ -1,27 +1,25 @@
-// Module ID: 14872
-// Function ID: 14873
+// Module ID: 15134
+// Function ID: 15135
 // Name: BountiesScrollRecapFooter
-// Dependencies: [19, 17, 4885, 21, 4896, 587, 1369, 558, 576, 6476, 1126, 4892, 8524, 504, 4668, 2]
+// Dependencies: [19, 17, 5079, 21, 5090, 587, 1381, 558, 576, 6654, 1126, 5086, 9009, 504, 4860, 2]
 
-// Module 14872 (BountiesScrollRecapFooter)
+// Module 15134 (BountiesScrollRecapFooter)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import BountiesScrollGradientRive2 from "BountiesScrollGradientRive" /* 4668 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6476 */;
-import OrbsIcon from "OrbsIcon" /* 8524 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import BountiesScrollGradientRive2 from "BountiesScrollGradientRive" /* 4860 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6654 */;
+import OrbsIcon from "OrbsIcon" /* 9009 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let orbAmount;
 
 let hasOwnProperty;
 let metroRequire;
@@ -40,7 +38,7 @@ let closure_7 = createStyles.createStyles(() => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((orbAmount) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesScrollRecapFooter(orbAmount) {
   let first;
   let items;
   let items1;
@@ -138,7 +136,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((orbAmount) => {
   cResult[2] = tmp4.headerLabel;
   cResult[3] = items2;
   tmp9 = items2;
-}) : ((orbAmount) => {
+}) : (function BountiesScrollRecapFooter(orbAmount) {
   let items;
   let items1;
   let items2;
@@ -161,7 +159,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((orbAmount) => {
   return metroRequire(View, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesScrollRecapFooterGradient() {
   let tmp5;
   let tmp6;
   let tmp8;
@@ -208,7 +206,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[5] = tmp8;
   cResult[6] = tmp12;
   tmp11 = tmp12;
-}) : (() => {
+}) : (function BountiesScrollRecapFooterGradient() {
   let BountiesScrollGradientRive;
   let str;
   let useReducedMotion;

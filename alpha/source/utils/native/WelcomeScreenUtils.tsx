@@ -1,17 +1,17 @@
-// Module ID: 12463
-// Function ID: 12464
+// Module ID: 12559
+// Function ID: 12560
 // Name: WelcomeScreenUtils
-// Dependencies: [19, 12464, 4513, 2074, 558, 576, 4716, 12465, 504, 12466, 4860, 12467, 1987, 2]
+// Dependencies: [19, 12560, 4705, 2086, 558, 576, 4910, 12561, 504, 12562, 5054, 12563, 1999, 2]
 // Exports: openWelcomeActionSheet
 
-// Module 12463 (WelcomeScreenUtils)
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import WelcomeScreenStore2 from "WelcomeScreenStore" /* 12464 */;
-import WelcomeScreenActionCreators from "WelcomeScreenActionCreators" /* 12466 */;
+// Module 12559 (WelcomeScreenUtils)
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import WelcomeScreenStore2 from "WelcomeScreenStore" /* 12560 */;
+import WelcomeScreenActionCreators from "WelcomeScreenActionCreators" /* 12562 */;
 import react_mod from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4513 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildChannelStore from "GuildChannelStore" /* 4705 */;
+import GuildStore from "GuildStore" /* 2086 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let _require, importDefault;
 let react = react_mod;
 const NO_WELCOME_SCREEN = WelcomeScreenStore2.NO_WELCOME_SCREEN;
 let closure_8 = { welcomeScreenModalVisible: false, shouldFetchGuildId: "a" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowWelcomeModal(arg0, arg1) {
   let closure_0;
   let closure_1;
   let closure_3;
@@ -63,29 +63,20 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
         shouldFetchGuildId = stateFromStoresObject.shouldFetchGuildId;
         const welcomeScreenModalVisible = stateFromStoresObject.welcomeScreenModalVisible;
         if (cResult[6] !== shouldFetchGuildId) {
-          class F {
-            constructor() {
-              if (null != shouldFetchGuildId) {
-                const obj = WelcomeScreenActionCreators;
-                const welcomeScreen = obj.fetchWelcomeScreen(tmp);
-              }
+          const fn2 = function v() {
+            if (null != shouldFetchGuildId) {
+              const obj = WelcomeScreenActionCreators;
+              const welcomeScreen = obj.fetchWelcomeScreen(tmp);
             }
-          }
+          };
           const items1 = [shouldFetchGuildId];
           cResult[6] = shouldFetchGuildId;
-          cResult[7] = F;
+          cResult[7] = fn2;
           cResult[8] = items1;
           tmp12 = items1;
-          tmp11 = F;
+          tmp11 = fn2;
         } else {
-          class F {
-            constructor() {
-              if (null != shouldFetchGuildId) {
-                const obj = WelcomeScreenActionCreators;
-                const welcomeScreen = obj.fetchWelcomeScreen(tmp);
-              }
-            }
-          }
+          tmp11 = cResult[7];
           tmp12 = cResult[8];
         }
         const effect = react.useEffect(tmp11, tmp12);
@@ -135,7 +126,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = tmp4;
   cResult[5] = fn;
   tmp9 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useShowWelcomeModal(arg0, arg1) {
   let closure_0;
   let closure_1;
   let closure_3;
@@ -203,6 +194,6 @@ export const openWelcomeActionSheet = function openWelcomeActionSheet(guildId) {
   const onHide = guildId.onHide;
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(12467, dependencyMap.paths);
+  const tmp2 = asyncRequire(12563, dependencyMap.paths);
   openLazy(tmp2, "GuildWelcomeActionSheet" + guildId, { guildId, onHide });
 };

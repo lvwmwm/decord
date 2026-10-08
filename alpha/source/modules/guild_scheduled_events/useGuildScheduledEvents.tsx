@@ -1,19 +1,19 @@
-// Module ID: 9195
-// Function ID: 9196
+// Module ID: 8630
+// Function ID: 8631
 // Name: useGuildScheduledEvents
-// Dependencies: [32, 19, 2051, 2074, 4515, 7050, 9196, 2057, 1085, 1102, 558, 576, 504, 9198, 9197, 9201, 2]
+// Dependencies: [32, 19, 2063, 2086, 4707, 6059, 8631, 2069, 1085, 1102, 558, 576, 504, 8496, 8632, 8502, 2]
 // Exports: getGuildActiveEvent
 
-// Module 9195 (useGuildScheduledEvents)
+// Module 8630 (useGuildScheduledEvents)
 import DurationsDefault from "Durations" /* 1102 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 7050 */;
-import UpcomingEventNoticesStore from "UpcomingEventNoticesStore" /* 9196 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6059 */;
+import UpcomingEventNoticesStore from "UpcomingEventNoticesStore" /* 8631 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2069 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ GuildScheduledEventStore = GuildScheduledEventStore_mod;
 let closure_15 = [];
 let closure_16 = 15 * DurationsDefault.Millis.MINUTE;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildEvents(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -93,7 +93,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = items1;
   tmp10 = items1;
   tmp9 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useGuildEvents(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -128,7 +128,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActiveEvent(arg0) {
   let closure_0;
   let first;
   let tmp8;
@@ -182,7 +182,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp8, tmp9);
-}) : ((arg0) => {
+}) : (function useActiveEvent(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildScheduledEventStore, ChannelStore, PermissionStore];
@@ -213,7 +213,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActiveEventsByChannel(arg0) {
   let closure_0;
   let closure_1;
   let first;
@@ -266,7 +266,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
     dependencyMap = cResult[5];
   }
   return tmp8;
-}) : ((arg0) => {
+}) : (function useActiveEventsByChannel(arg0) {
   let closure_0;
   let stateFromStoresArray;
   _require = arg0;
@@ -287,7 +287,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
   }, items2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildUpcomingEvents(arg0) {
   let closure_0;
   let first;
   let tmp8;
@@ -335,7 +335,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresArray(first, tmp8, tmp9);
-}) : ((arg0) => {
+}) : (function useGuildUpcomingEvents(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildScheduledEventStore, ChannelStore, PermissionStore];
@@ -361,7 +361,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_17 = tmp8;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildUpcomingEventsNotice(arg0) {
   let closure_0;
   let closure_1;
   let tmp10;
@@ -415,7 +415,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp13 = cResult[4];
   }
   if (cResult[5] !== tmp4) {
-    const fn3 = function h() {
+    const fn3 = function _() {
       let interestedInEventRecurrence;
       let reduced;
       const arr = closure_1;
@@ -494,7 +494,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-}) : ((arg0) => {
+}) : (function useGuildUpcomingEventsNotice(arg0) {
   let closure_0;
   let nextShownUpcomingEventNoticeType;
   let tmp8;
@@ -566,7 +566,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildActiveEvent(arg0) {
   let first;
   let tmp8;
   let tmp9;
@@ -621,7 +621,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp8, tmp9);
-}) : ((arg0) => {
+}) : (function useGuildActiveEvent(arg0) {
   _require = arg0;
   let obj = require("get initialized");
   const items = [GuildScheduledEventStore, ChannelStore, PermissionStore];
@@ -654,7 +654,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildChannelScheduledEvents(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -686,7 +686,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useGuildChannelScheduledEvents(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildScheduledEventStore];
@@ -695,7 +695,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj.useStateFromStores(items, () => GuildScheduledEventStore.getGuildScheduledEventsByIndex(metroImportAll.CHANNEL_EVENT_UPCOMING(closure_0)), items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFirstActiveEventChannel(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -735,7 +735,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : ((arg0) => {
+}) : (function useFirstActiveEventChannel(arg0) {
   let closure_0;
   _require = arg0;
   const items = [ChannelStore, GuildScheduledEventStore];
@@ -754,7 +754,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useImminentUpcomingGuildEvents(arg0) {
   let closure_0;
   let first;
   let items2;
@@ -954,7 +954,7 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = arg0;
   cResult[7] = tmp6;
   cResult[8] = items2;
-}) : ((arg0) => {
+}) : (function useImminentUpcomingGuildEvents(arg0) {
   let closure_0;
   let stateFromStores;
   let tmp2;

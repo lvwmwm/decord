@@ -1,20 +1,19 @@
-// Module ID: 8946
-// Function ID: 8947
+// Module ID: 12875
+// Function ID: 12876
 // Name: ForumExplicitMediaAlert
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1126, 4892, 5601, 8947, 5790, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1126, 5086, 5375, 11549, 5394, 2]
 
-// Module 8946 (ForumExplicitMediaAlert)
+// Module 12875 (ForumExplicitMediaAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ExplicitMediaActionCreators from "ExplicitMediaActionCreators" /* 8947 */;
+import ExplicitMediaActionCreators from "ExplicitMediaActionCreators" /* 11549 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let channelId;
 
 let closure_4;
 let hasOwnProperty;
@@ -32,7 +31,7 @@ obj3 = { marginBottom: nativeDefault.space.PX_16 };
 obj4 = { marginTop: nativeDefault.space.PX_16 };
 obj5 = { marginVertical: nativeDefault.space.PX_16 };
 let closure_6 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumExplicitMediaAlert(channelId) {
   let items;
   let onClose;
   let obj = channelId(onClose[6]);
@@ -198,7 +197,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[1] = tmp4.title;
   cResult[2] = items2;
   tmp6 = items2;
-}) : ((arg0) => {
+}) : (function ForumExplicitMediaAlert(arg0) {
   let Button;
   let intl;
   let intl2;

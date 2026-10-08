@@ -1,23 +1,21 @@
-// Module ID: 14743
-// Function ID: 14744
+// Module ID: 15004
+// Function ID: 15005
 // Name: FamilyCenterRequestorDetails
-// Dependencies: [19, 17, 21, 4896, 1188, 587, 558, 576, 8328, 14716, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 1200, 587, 558, 576, 7711, 14977, 5086, 2]
 
-// Module 14743 (FamilyCenterRequestorDetails)
+// Module 15004 (FamilyCenterRequestorDetails)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useUserLinks from "useUserLinks" /* 8328 */;
-import FamilyCenterUsernameHeaderDefault from "FamilyCenterUsernameHeader" /* 14716 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import useUserLinks from "useUserLinks" /* 7711 */;
+import FamilyCenterUsernameHeaderDefault from "FamilyCenterUsernameHeader" /* 14977 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let otherUser;
 
 let closure_4;
 let hasOwnProperty;
@@ -31,7 +29,7 @@ obj2 = { borderRadius: native.AVATAR_SIZE_MAP[native.AvatarSizes.NORMAL] / 2, ba
 createStyles = createStyles.createStyles;
 obj3 = { paddingLeft: nativeDefault.space.PX_12, paddingRight: nativeDefault.space.PX_4, flexGrow: 1, flexShrink: 1 };
 let closure_6 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((otherUser) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterRequestorDetails(otherUser) {
   let items;
   let items1;
   const obj = react2;
@@ -106,7 +104,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((otherUser) => {
   cResult[1] = tmp4.avatar;
   cResult[2] = tmp7;
   tmp6 = tmp7;
-}) : ((otherUser) => {
+}) : (function FamilyCenterRequestorDetails(otherUser) {
   let items;
   let items1;
   otherUser = otherUser.otherUser;

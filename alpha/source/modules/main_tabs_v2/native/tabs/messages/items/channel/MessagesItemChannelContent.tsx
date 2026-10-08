@@ -1,35 +1,33 @@
-// Module ID: 16001
-// Function ID: 16002
+// Module ID: 16261
+// Function ID: 16262
 // Name: MessagesItemChannelContent
-// Dependencies: [19, 17, 4911, 5078, 21, 4896, 587, 558, 576, 1188, 7600, 6464, 11078, 10706, 4797, 4593, 504, 15152, 4467, 7530, 11, 16002, 5049, 16003, 4586, 10646, 10647, 4892, 9409, 8990, 12503, 7525, 10622, 1126, 16005, 2]
+// Dependencies: [19, 17, 6040, 5972, 21, 5090, 587, 558, 576, 1200, 8300, 6642, 10441, 10313, 4991, 4785, 504, 15414, 4659, 6089, 11, 16262, 5417, 16263, 4778, 10246, 10247, 5086, 8830, 8741, 12599, 9248, 10220, 1126, 16265, 2]
 
-// Module 16001 (MessagesItemChannelContent)
+// Module 16261 (MessagesItemChannelContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import _modDef4467 from "module_4467" /* 4467 */;
-import useThemeDefault from "useTheme" /* 4797 */;
-import useChannelNameDefault from "useChannelName" /* 5049 */;
-import ReadStateConstants from "ReadStateConstants" /* 5078 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6464 */;
-import isChangelogChannelDefault from "isChangelogChannel" /* 7530 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 7600 */;
-import BotTagDefault from "BotTag" /* 8990 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10622 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10646 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 10706 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11078 */;
-import usePrivateChannelWaveDefault from "usePrivateChannelWave" /* 16003 */;
+import native from "native" /* 1200 */;
+import _modDef4659 from "module_4659" /* 4659 */;
+import useThemeDefault from "useTheme" /* 4991 */;
+import useChannelNameDefault from "useChannelName" /* 5417 */;
+import ReadStateConstants from "ReadStateConstants" /* 5972 */;
+import isChangelogChannelDefault from "isChangelogChannel" /* 6089 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6642 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8300 */;
+import BotTagDefault from "BotTag" /* 8741 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10220 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10246 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 10313 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 10441 */;
+import usePrivateChannelWaveDefault from "usePrivateChannelWave" /* 16263 */;
 import react from "react" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 4911 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channel;
 
 let metroImportAll;
 let metroImportDefault;
@@ -40,7 +38,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp4;
-const useMessagePreviewsDefault = tmp4(15152);
+const useMessagePreviewsDefault = tmp4(15414);
 const View = react_native.View;
 const UnreadSetting = ReadStateConstants.UnreadSetting;
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
@@ -90,7 +88,7 @@ let closure_11 = createStyles.createStyles((arg0) => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemChannelContentIcon(selected) {
   let blocked;
   let favorite;
   let ignored;
@@ -113,7 +111,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
       tmp5 = tmp18;
     }
     const obj2 = { source: AssetRegistryDefault2, size: native.Icon.Sizes.EXTRA_SMALL, style: items };
-    const Icon4 = tmp(1188).Icon;
+    const Icon4 = tmp(1200).Icon;
     items = [, ];
     ({ channelIcon: arr4[0], channelMutedIcon: arr4[1] } = tmp4);
     const tmp21 = metroRequire(Icon4, obj2);
@@ -130,7 +128,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
       tmp5 = tmp14;
     }
     const obj3 = { source: AssetRegistryDefault, size: native.Icon.Sizes.EXTRA_SMALL, style: items1 };
-    const Icon3 = tmp(1188).Icon;
+    const Icon3 = tmp(1200).Icon;
     items1 = [, ];
     ({ channelIcon: arr3[0], channelIgnoredIcon: arr3[1] } = tmp4);
     const tmp17 = metroRequire(Icon3, obj3);
@@ -147,7 +145,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
       tmp5 = tmp10;
     }
     const obj4 = { source: AssetRegistryDefault4, size: native.Icon.Sizes.EXTRA_SMALL, style: items2 };
-    const Icon2 = tmp(1188).Icon;
+    const Icon2 = tmp(1200).Icon;
     items2 = [, ];
     ({ channelIcon: arr2[0], channelMutedIcon: arr2[1] } = tmp4);
     const tmp13 = metroRequire(Icon2, obj4);
@@ -166,7 +164,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
         tmp5 = tmp6;
       }
       const obj5 = { source: AssetRegistryDefault3, size: native.Icon.Sizes.EXTRA_SMALL, style: items3 };
-      const Icon = tmp(1188).Icon;
+      const Icon = tmp(1200).Icon;
       items3 = [, ];
       ({ channelIcon: arr[0], channelFavoriteIcon: arr[1] } = tmp4);
       const tmp9 = metroRequire(Icon, obj5);
@@ -177,7 +175,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
     }
   }
   return tmp5;
-}) : ((selected) => {
+}) : (function MessagesItemChannelContentIcon(selected) {
   let blocked;
   let favorite;
   let ignored;
@@ -220,7 +218,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
   return tmp2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemChannelContent(channel) {
   let blocked;
   let channelSelected;
   let favorite;
@@ -239,7 +237,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   const resolvedUnreadSetting = channel.resolvedUnreadSetting;
   const tmp5 = useThemeDefault();
   if (cResult[0] !== tmp5) {
-    const tmpResult = channel(4593);
+    const tmpResult = channel(4785);
     cResult[0] = tmp5;
     cResult[1] = tmpResult.isThemeLight(tmp5);
     const isThemeLightResult = tmpResult.isThemeLight(tmp5);
@@ -320,7 +318,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   cResult[9] = hasUnreadMessages;
   cResult[10] = tmp19;
   cResult[11] = tmp20;
-}) : ((channel) => {
+}) : (function MessagesItemChannelContent(channel) {
   let EffectDisplayType;
   let blocked;
   let channelSelected;
@@ -345,7 +343,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   ({ channelSelected, muted, ignored, blocked, hasUnreadMessages, hasNameplate } = channel);
   ({ favorite, hasActivity, resolvedUnreadSetting } = channel);
   let tmp5 = hasUnreadMessages;
-  const obj = channel(4593);
+  const obj = channel(4785);
   const isThemeLightResult = obj.isThemeLight(useThemeDefault());
   if (hasUnreadMessages) {
     tmp5 = resolvedUnreadSetting === UnreadSetting.ALL_MESSAGES;
@@ -358,15 +356,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   const tmp11 = useMessagePreviewsDefault(channel, { unread: hasUnreadMessages });
   let tmp12 = null != tmp11;
   if (tmp12) {
-    const obj3 = _modDef4467();
+    const obj3 = _modDef4659();
     tmp12 = obj3.diff(tmp11.timestamp, "hours") < 1 || !hasActivity || hasUnreadMessages;
     obj3.diff(tmp11.timestamp, "hours") < 1 || !hasActivity || hasUnreadMessages;
   }
   if (tmp12) {
-    tmp12 = !tmp3(7530)(channel.id);
+    tmp12 = !tmp3(6089)(channel.id);
   }
-  const useRelativeTimestamp = channel(16002).useRelativeTimestamp;
-  channel(16002);
+  const useRelativeTimestamp = channel(16262).useRelativeTimestamp;
+  channel(16262);
   let id = stateFromStores;
   const extractTimestamp = SnowflakeUtilsDefault.extractTimestamp;
   SnowflakeUtilsDefault;
@@ -386,7 +384,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   const obj5 = { style: tmp8.content, children: null };
   const obj6 = { style: tmp8.channelNameAndAccessories, children: null };
   const obj7 = { style: tmp8.channelNameAndBadge, children: null };
-  tmpResult4 = channel(4586);
+  tmpResult4 = channel(4778);
   if (channel.isDM()) {
     if (null != channel.recipients) {
       let tmp25Result;
@@ -394,7 +392,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       if (channel.recipients.length > 0) {
         const obj8 = { userId: channel.recipients[0], userName: tmp18, effectDisplayType: channelSelected ? EffectDisplayType.STATIC : EffectDisplayType.PLAIN };
         const tmp3Result4 = UsernameWithEffectsDefault;
-        EffectDisplayType = tmp(10647).EffectDisplayType;
+        EffectDisplayType = tmp(10247).EffectDisplayType;
         const merged = Object.assign(obj4);
         tmp25Result = tmp25(tmp3Result4, obj8);
         tmp22 = tmp25;
@@ -403,7 +401,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       let tmp22Result = null;
       if (tmp17) {
         const obj9 = { userId: channel.recipients[0], disabledTooltip: true };
-        tmp22Result = tmp22(tmp3(9409), obj9);
+        tmp22Result = tmp22(tmp3(8830), obj9);
       }
       items2[1] = tmp22Result;
       let tmp22Result5 = null;
@@ -463,7 +461,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
         const obj18 = { style: items7, variant: "text-xs/medium", lineClamp: 1, children: relativeTimestamp };
         items7 = [, ];
         ({ channelText: arr8[0], timestamp: arr8[1] } = tmp9);
-        tmp22Result6 = tmp22(tmp(4892).Text, obj18);
+        tmp22Result6 = tmp22(tmp(5086).Text, obj18);
       }
       items6[1] = tmp22Result6;
       items3[1] = tmp22(View, obj11);
@@ -478,9 +476,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       const obj19 = { style: contentPadded, children: tmp22Result7 };
       if (tmp12) {
         let str6 = "text-muted";
-        const obj20 = { message: tmp11, channel, color: str7, layout: channel(7525).ChannelListLayoutTypes.COZY_DRAWER_SMOL, muted };
+        const obj20 = { message: tmp11, channel, color: str7, layout: channel(9248).ChannelListLayoutTypes.COZY_DRAWER_SMOL, muted };
         str7 = "text-muted";
-        const ChannelRowPreview = tmp(12503).ChannelRowPreview;
+        const ChannelRowPreview = tmp(12599).ChannelRowPreview;
         if (!((muted || ignored || blocked) && !channelSelected)) {
           if (channelSelected) {
             str6 = "mobile-text-heading-primary";
@@ -500,7 +498,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
         tmp22Result7 = null;
         if (isChangelogChannelDefault(channel.id)) {
           const obj22 = { variant: "text-xs/medium", style: tmp9.channelText, lineClamp: 1, children: intl.string(channel(1126).t.FL5T01) };
-          const Text2 = tmp(4892).Text;
+          const Text2 = tmp(5086).Text;
           intl = tmp(1126).intl;
           tmp22Result7 = tmp22(Text2, obj22);
         }
@@ -512,7 +510,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       const tmp43 = closure_8;
       if (waveShouldShow) {
         const obj23 = { wavePressed, hasNameplate };
-        tmp22Result8 = tmp22(tmp3(16005), obj23);
+        tmp22Result8 = tmp22(tmp3(16265), obj23);
       }
       const obj24 = { children: items9 };
       items9[1] = tmp22Result8;
@@ -521,7 +519,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   }
   tmp22 = closure_6;
   const obj25 = { children: tmp18 };
-  const Text = tmp(4892).Text;
+  const Text = tmp(5086).Text;
   const merged1 = Object.assign(obj4);
   tmp25Result = closure_6(Text, obj25);
 }));

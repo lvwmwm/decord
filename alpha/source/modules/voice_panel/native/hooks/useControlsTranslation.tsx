@@ -1,12 +1,12 @@
-// Module ID: 17351
-// Function ID: 17352
+// Module ID: 17632
+// Function ID: 17633
 // Name: useControlsTranslation
-// Dependencies: [19, 11916, 11919, 558, 11915, 4618, 5604, 2]
+// Dependencies: [19, 11989, 11992, 558, 11988, 4810, 5374, 2]
 
-// Module 17351 (useControlsTranslation)
-import spring from "spring" /* 5604 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11916 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11919 */;
+// Module 17632 (useControlsTranslation)
+import spring from "spring" /* 5374 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11989 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11992 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ const MODE_CHANGE_PHYSICS = VoicePanelConstants.MODE_CHANGE_PHYSICS;
 const CALL_TILE_GUTTER = VoicePanelCardConstants.CALL_TILE_GUTTER;
 const __initData = { code: "function useControlsTranslationTsx1(){const{withSpring,wrapperSpecs,MODE_CHANGE_PHYSICS,useReducedMotion,CALL_TILE_GUTTER,viewHeight}=this.__closure;return{transform:[{translateX:withSpring(wrapperSpecs.get().x,MODE_CHANGE_PHYSICS)},{translateY:withSpring(!useReducedMotion.get()&&wrapperSpecs.get().hidden?wrapperSpecs.get().height+CALL_TILE_GUTTER+viewHeight.get():wrapperSpecs.get().y,MODE_CHANGE_PHYSICS)}]};}" };
 const __initData2 = { code: "function useControlsTranslationTsx2(){const{withSpring,wrapperSpecs,MODE_CHANGE_PHYSICS,useReducedMotion,CALL_TILE_GUTTER,viewHeight}=this.__closure;return{transform:[{translateX:withSpring(wrapperSpecs.get().x,MODE_CHANGE_PHYSICS)},{translateY:withSpring(!useReducedMotion.get()&&wrapperSpecs.get().hidden?wrapperSpecs.get().height+CALL_TILE_GUTTER+viewHeight.get():wrapperSpecs.get().y,MODE_CHANGE_PHYSICS)}]};}" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, wrapperSpecs, viewHeight) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useControlsTranslation(arg0, wrapperSpecs, viewHeight) {
   let useReducedMotion;
   _require = wrapperSpecs;
   importDefault = viewHeight;
@@ -50,7 +50,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, wrapperSpecs
   fn.__workletHash = 11281989557090;
   fn.__initData = __initData;
   return obj.useAnimatedStyle(fn);
-}) : ((arg0, wrapperSpecs, viewHeight) => {
+}) : (function useControlsTranslation(arg0, wrapperSpecs, viewHeight) {
   let useReducedMotion;
   _require = wrapperSpecs;
   importDefault = viewHeight;

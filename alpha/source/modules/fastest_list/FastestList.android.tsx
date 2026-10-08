@@ -1,15 +1,15 @@
-// Module ID: 6559
-// Function ID: 6560
+// Module ID: 6735
+// Function ID: 6736
 // Name: FastestList
-// Dependencies: [377, 19, 21, 4618, 6560, 6119, 6561, 6562, 6564, 6565, 6567, 6570, 6571, 6575, 2]
+// Dependencies: [19, 21, 4810, 6736, 6298, 6737, 6738, 6740, 6741, 6743, 6746, 6747, 6751, 2]
+// Exports: default
 
-// Module 6559 (FastestList)
-import FastestListNativeComponentDefault from "FastestListNativeComponent" /* 6560 */;
-import _readOnlyError from "_readOnlyError" /* 377 */;
+// Module 6735 (FastestList)
+import FastestListNativeComponentDefault from "FastestListNativeComponent" /* 6736 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 4618 */;
-import BottomSheetModal from "BottomSheetModal" /* 6119 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 4810 */;
+import BottomSheetModal from "BottomSheetModal" /* 6298 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -22,7 +22,9 @@ ReanimatedRexport = ReanimatedRexport_mod;
 const FastestListNativeComponent = ReanimatedRexport.createAnimatedComponent(FastestListNativeComponentDefault);
 let closure_8 = BottomSheetModal.createBottomSheetScrollableComponent(BottomSheetModal.SCROLLABLE_TYPE.SCROLLVIEW, FastestListNativeComponent);
 let closure_9 = 0;
-const forwardRefResult = react.forwardRef(function FastestList(enabled, ref) {
+const result = size.fileFinishedImporting("modules/fastest_list/FastestList.android.tsx");
+
+export default function FastestList(ref) {
   let inActionSheet;
   let itemSize;
   let items5;
@@ -52,110 +54,123 @@ const forwardRefResult = react.forwardRef(function FastestList(enabled, ref) {
   let showsHorizontalScrollIndicator;
   let style;
   let style2;
-  let tmp10Result;
-  let tmp25;
+  let tmp11Result;
+  let tmp26;
   let wrapChildren;
-  let current = enabled;
-  enabled = enabled.enabled;
-  let tmp = undefined === enabled;
-  const accessibilityLabel = enabled.accessibilityLabel;
-  if (!tmp) {
-    tmp = enabled;
+  ref = ref.ref;
+  const merged = Object.assign(ref, Object.assign({ ref: 0 }));
+  let num;
+  let num2;
+  let listId;
+  let onContentLengthChange;
+  let ref1;
+  let ref2;
+  let ref3;
+  closure_8 = undefined;
+  let memo1;
+  const enabled = merged.enabled;
+  let tmp2 = undefined === enabled;
+  const accessibilityLabel = merged.accessibilityLabel;
+  if (!tmp2) {
+    tmp2 = enabled;
   }
-  const horizontal = enabled.horizontal;
-  let tmp2 = undefined !== horizontal;
-  const estimatedListSize = enabled.estimatedListSize;
-  if (tmp2) {
-    tmp2 = horizontal;
-  }
-  ({ keyboardDismissMode, inActionSheet } = enabled);
-  let tmp3 = undefined !== inActionSheet;
-  const keyExtractor = enabled.keyExtractor;
+  const horizontal = merged.horizontal;
+  let tmp3 = undefined !== horizontal;
+  const estimatedListSize = merged.estimatedListSize;
   if (tmp3) {
-    tmp3 = inActionSheet;
+    tmp3 = horizontal;
   }
-  const insetStart = enabled.insetStart;
-  let num = 0;
+  ({ keyboardDismissMode, inActionSheet } = merged);
+  let tmp4 = undefined !== inActionSheet;
+  const keyExtractor = merged.keyExtractor;
+  if (tmp4) {
+    tmp4 = inActionSheet;
+  }
+  const insetStart = merged.insetStart;
+  num = 0;
   if (undefined !== insetStart) {
     num = insetStart;
   }
-  const insetEnd = enabled.insetEnd;
-  let num2 = 0;
+  const insetEnd = merged.insetEnd;
+  num2 = 0;
   if (undefined !== insetEnd) {
     num2 = insetEnd;
   }
-  const listId = enabled.listId;
-  const onContentLengthChange = enabled.onContentLengthChange;
-  ({ placeholderConfig, renderAhead } = enabled);
+  listId = merged.listId;
+  onContentLengthChange = merged.onContentLengthChange;
+  ({ placeholderConfig, renderAhead } = merged);
   let str = "nominal";
-  ({ itemSize, listFooterSize, listFooterAlwaysMounted, listHeaderSize, listHeaderAlwaysMounted, onLayout, placeholdersForceEnabled } = enabled);
+  ({ itemSize, listFooterSize, listFooterAlwaysMounted, listHeaderSize, listHeaderAlwaysMounted, onLayout, placeholdersForceEnabled } = merged);
   if (undefined !== renderAhead) {
     str = renderAhead;
   }
-  const scrollEventThrottle = enabled.scrollEventThrottle;
+  const scrollEventThrottle = merged.scrollEventThrottle;
   let num3 = 32;
-  ({ renderItem, renderListFooter, renderListHeader, renderSectionHeader, renderSectionFooter } = enabled);
+  ({ renderItem, renderListFooter, renderListHeader, renderSectionHeader, renderSectionFooter } = merged);
   if (undefined !== scrollEventThrottle) {
     num3 = scrollEventThrottle;
   }
-  ({ scrollReporting, showsHorizontalScrollIndicator } = enabled);
-  let tmp4 = undefined === showsHorizontalScrollIndicator;
-  ({ sections, sectionHeaderSize, sectionFooterSize } = enabled);
-  if (!tmp4) {
-    tmp4 = showsHorizontalScrollIndicator;
+  ({ scrollReporting, showsHorizontalScrollIndicator } = merged);
+  let tmp5 = undefined === showsHorizontalScrollIndicator;
+  ({ sections, sectionHeaderSize, sectionFooterSize } = merged);
+  if (!tmp5) {
+    tmp5 = showsHorizontalScrollIndicator;
   }
-  const showsVerticalScrollIndicator = enabled.showsVerticalScrollIndicator;
-  const tmp5 = undefined === showsVerticalScrollIndicator || showsVerticalScrollIndicator;
-  ({ style, wrapChildren } = enabled);
-  ref = listId.useRef(null);
-  const ref1 = listId.useRef(null);
-  const ref2 = listId.useRef(enabled);
-  const items = [enabled];
+  const showsVerticalScrollIndicator = merged.showsVerticalScrollIndicator;
+  const tmp6 = undefined === showsVerticalScrollIndicator || showsVerticalScrollIndicator;
+  ({ style, wrapChildren } = merged);
+  ref1 = listId.useRef(null);
+  ref2 = listId.useRef(null);
+  ref3 = listId.useRef(merged);
+  const items = [merged];
   const effect = listId.useEffect(() => {
-    ref2.current = current;
+    ref3.current = merged;
   }, items);
-  ({ style: style2, marginEnd, marginStart } = num(num2[6])({ style }));
-  num(num2[6])({ style });
-  const imperativeHandle = listId.useImperativeHandle(ref, () => ({
-    scrollToTop() {
-      let flag = arg0;
-      if (arg0 === undefined) {
-        flag = false;
+  ({ style: style2, marginEnd, marginStart } = num(num2[5])({ style }));
+  num(num2[5])({ style });
+  const imperativeHandle = listId.useImperativeHandle(ref, () => {
+    let ref;
+    return {
+      scrollToTop() {
+        let flag = arg0;
+        if (arg0 === undefined) {
+          flag = false;
+        }
+        if (null != ref.current) {
+          const Commands = merged(num2[3]).Commands;
+          Commands.scrollToTop(tmp.current, flag);
+        }
+      },
+      scrollToLocation(paddingStart) {
+        let animated;
+        let item;
+        let section;
+        ({ section, item, animated } = paddingStart);
+        if (animated === undefined) {
+          animated = false;
+        }
+        num = paddingStart.paddingStart;
+        if (num === undefined) {
+          num = 0;
+        }
+        if (null != ref.current) {
+          const Commands = merged(num2[3]).Commands;
+          Commands.scrollToLocation(tmp.current, section, item, animated, num);
+        }
       }
-      if (null != ref.current) {
-        const Commands = current(num2[4]).Commands;
-        Commands.scrollToTop(tmp.current, flag);
-      }
-    },
-    scrollToLocation(paddingStart) {
-      let animated;
-      let item;
-      let section;
-      ({ section, item, animated } = paddingStart);
-      if (animated === undefined) {
-        animated = false;
-      }
-      num = paddingStart.paddingStart;
-      if (num === undefined) {
-        num = 0;
-      }
-      if (null != ref.current) {
-        const Commands = current(num2[4]).Commands;
-        Commands.scrollToLocation(tmp.current, section, item, animated, num);
-      }
-    }
-  }));
-  const items1 = [ref1];
-  const tmp14 = num(num2[7])(ref2);
+    };
+  });
+  const items1 = [ref2];
+  const tmp15 = num(num2[6])(ref3);
   const callback = listId.useCallback((nativeEvent) => {
-    current = ref1.current;
+    const current = ref2.current;
     if (current != null) {
       current.setVisibleItems(nativeEvent.nativeEvent);
     }
   }, items1);
-  num(num2[8])({ estimatedListSize, horizontal: tmp2 });
+  num(num2[7])({ estimatedListSize, horizontal: tmp3 });
   const items2 = [listId];
-  const tmp17 = num(num2[9])(placeholderConfig);
+  const tmp18 = num(num2[8])(placeholderConfig);
   const memo = listId.useMemo(() => {
     let str = "fst";
     if (null != listId) {
@@ -164,10 +179,10 @@ const forwardRefResult = react.forwardRef(function FastestList(enabled, ref) {
     closure_9 = tmp + 1;
     return "" + str + "-" + +closure_9;
   }, items2);
-  const tmp19 = num(num2[10])({ fastestListId: memo, itemSize, keyExtractor, listFooterSize, listHeaderSize, sections, sectionHeaderSize, sectionFooterSize });
-  closure_8 = tmp19;
-  const items3 = [num2, num, onContentLengthChange, tmp19];
-  const memo1 = listId.useMemo(() => {
+  const tmp20 = num(num2[9])({ fastestListId: memo, itemSize, keyExtractor, listFooterSize, listHeaderSize, sections, sectionHeaderSize, sectionFooterSize });
+  closure_8 = tmp20;
+  const items3 = [num2, num, onContentLengthChange, tmp20];
+  memo1 = listId.useMemo(() => {
     let closure_129_0;
     let closure_129_2;
     let closure_129_3;
@@ -242,35 +257,32 @@ const forwardRefResult = react.forwardRef(function FastestList(enabled, ref) {
       onContentLengthChange(tmp);
     }
   }, items4);
-  ({ onScroll, onScrollBeginDrag, onScrollEndDrag } = num(num2[11])(enabled, tmp2));
-  num(num2[11])(enabled, tmp2);
-  if (tmp3) {
-    tmp10Result = closure_8;
+  ({ onScroll, onScrollBeginDrag, onScrollEndDrag } = num(num2[10])(merged, tmp3));
+  num(num2[10])(merged, tmp3);
+  if (tmp4) {
+    tmp11Result = closure_8;
   } else {
     if ("animatedScrollPosition" !== scrollReporting) {
       if ("animatedCallbacks" !== scrollReporting) {
-        tmp10Result = tmp10(tmp11[4]);
+        tmp11Result = tmp11(tmp12[3]);
       }
     }
-    tmp10Result = ref2;
+    tmp11Result = ref3;
   }
-  const obj = { accessibilityLabel, horizontal: tmp2, insetStart: num, insetEnd: num2, keyboardDismissOnDrag: tmp25, onUnexpectedItemSize: tmp14, onLayout, onScroll, onScrollBeginDrag, onScrollEndDrag, onVisibleItemsChanged: callback, placeholderConfig: tmp17, ref, renderAhead: str, scrollEventThrottle: num3, sectionsVersioned: tmp19, showsHorizontalScrollIndicator: tmp4, showsVerticalScrollIndicator: tmp5, style: style2 };
-  tmp25 = "on-drag" === keyboardDismissMode || "interactive" === keyboardDismissMode;
-  const tmp24Result = onContentLengthChange(tmp10Result, obj);
-  if (tmp) {
-    let tmp24Result2;
+  const obj = { accessibilityLabel, horizontal: tmp3, insetStart: num, insetEnd: num2, keyboardDismissOnDrag: tmp26, onUnexpectedItemSize: tmp15, onLayout, onScroll, onScrollBeginDrag, onScrollEndDrag, onVisibleItemsChanged: callback, placeholderConfig: tmp18, ref: ref1, renderAhead: str, scrollEventThrottle: num3, sectionsVersioned: tmp20, showsHorizontalScrollIndicator: tmp5, showsVerticalScrollIndicator: tmp6, style: style2 };
+  tmp26 = "on-drag" === keyboardDismissMode || "interactive" === keyboardDismissMode;
+  const tmp25Result = onContentLengthChange(tmp11Result, obj);
+  if (tmp2) {
+    let tmp25Result2;
     if (null != placeholderConfig) {
       const obj2 = { children: items5 };
-      items5 = [tmp24Result, tmp27];
-      tmp24Result2 = ref1(ref, obj2);
+      items5 = [tmp25Result, tmp28];
+      tmp25Result2 = ref2(ref1, obj2);
     }
-    return tmp24Result2;
+    return tmp25Result2;
   }
   const obj3 = {};
-  const tmp10Result2 = num(num2[13]);
-  const merged = Object.assign(enabled);
-  tmp24Result2 = tmp24(tmp10Result2, obj3);
-});
-const result = size.fileFinishedImporting("modules/fastest_list/FastestList.android.tsx");
-
-export default forwardRefResult;
+  const tmp11Result2 = num(num2[12]);
+  const merged1 = Object.assign(merged);
+  tmp25Result2 = tmp25(tmp11Result2, obj3);
+};

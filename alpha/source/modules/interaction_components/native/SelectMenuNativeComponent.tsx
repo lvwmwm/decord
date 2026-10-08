@@ -1,22 +1,20 @@
-// Module ID: 15606
-// Function ID: 15607
+// Module ID: 15886
+// Function ID: 15887
 // Name: SelectMenuNativeComponent
-// Dependencies: [109, 19, 21, 558, 576, 15607, 2]
+// Dependencies: [109, 19, 21, 558, 576, 15887, 2]
 
-// Module 15606 (SelectMenuNativeComponent)
+// Module 15886 (SelectMenuNativeComponent)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import SelectActionComponentViewNativeComponentDefault from "SelectActionComponentViewNativeComponent" /* 15607 */;
+import SelectActionComponentViewNativeComponentDefault from "SelectActionComponentViewNativeComponent" /* 15887 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let model;
-
 let closure_3 = ["model"];
 const jsx = Fragment.jsx;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((model) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectMenuNativeComponent(model) {
   let tmp11;
   let tmp3;
   let tmp4;
@@ -65,7 +63,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((model) => {
   cResult[7] = tmp8;
   cResult[8] = tmp15;
   tmp12 = tmp15;
-}) : ((model) => {
+}) : (function SelectMenuNativeComponent(model) {
   model = model.model;
   const merged = Object.assign(model, Object.assign({ model: 0 }));
   SelectActionComponentViewNativeComponentDefault;

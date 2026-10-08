@@ -1,17 +1,17 @@
-// Module ID: 12007
-// Function ID: 12008
+// Module ID: 12080
+// Function ID: 12081
 // Name: SearchGuildChannelTabStore
-// Dependencies: [4513, 4911, 5707, 5628, 12, 11, 504, 584, 2]
+// Dependencies: [4705, 6040, 6097, 5975, 12, 11, 504, 584, 2]
 
-// Module 12007 (SearchGuildChannelTabStore)
+// Module 12080 (SearchGuildChannelTabStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _mod12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import AutocompleteUtils from "AutocompleteUtils" /* 5628 */;
-import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 5707 */;
-import GuildChannelStore from "GuildChannelStore" /* 4513 */;
-import ReadStateStore from "ReadStateStore" /* 4911 */;
+import AutocompleteUtils from "AutocompleteUtils" /* 5975 */;
+import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 6097 */;
+import GuildChannelStore from "GuildChannelStore" /* 4705 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
 import size from "module_2" /* 2 */;
 
 const AutocompleteUtilsDefault = AutocompleteUtils;

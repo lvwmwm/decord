@@ -1,11 +1,11 @@
-// Module ID: 10419
-// Function ID: 10420
+// Module ID: 10016
+// Function ID: 10017
 // Name: payment_modal_banner
-// Dependencies: [32, 1198, 10414, 2]
+// Dependencies: [32, 1210, 10011, 2]
 
-// Module 10419 (payment_modal_banner)
-import _mod1198 from "module_1198" /* 1198 */;
-import localized_string from "localized_string" /* 10414 */;
+// Module 10016 (payment_modal_banner)
+import _mod1210 from "module_1210" /* 1210 */;
+import localized_string from "localized_string" /* 10011 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let tmp;
 const T2 = function T() {
   return require("localized_string").LocalizedString;
 };
-const MessageType = _mod1198.MessageType;
+const MessageType = _mod1210.MessageType;
 class PaymentModalBanner$Type extends MessageType {
   constructor() {
     const items = [{ no: 1, name: "asset_url", kind: "scalar", T: 9 }, { no: 2, name: "header", kind: "scalar", T: 9 }, { no: 3, name: "body", kind: "scalar", T: 9 }, , ];
@@ -35,9 +35,9 @@ class PaymentModalBanner$Type extends MessageType {
     const obj = { assetUrl: "", header: "", body: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1198.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1210.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1198;
+      const tmpResult = _mod1210;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -84,7 +84,7 @@ class PaymentModalBanner$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1198.UnknownFieldHandler.onRead;
+                onRead = _mod1210.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -96,22 +96,22 @@ class PaymentModalBanner$Type extends MessageType {
   }
   internalBinaryWrite(assetUrl, tag, writeUnknownFields) {
     if ("" !== assetUrl.assetUrl) {
-      const tagResult = tag.tag(1, _mod1198.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1210.WireType.LengthDelimited);
       tagResult.string(assetUrl.assetUrl);
     }
     if ("" !== assetUrl.header) {
-      const tagResult1 = tag.tag(2, _mod1198.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1210.WireType.LengthDelimited);
       tagResult1.string(assetUrl.header);
     }
     if ("" !== assetUrl.body) {
-      const tagResult2 = tag.tag(3, _mod1198.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1210.WireType.LengthDelimited);
       tagResult2.string(assetUrl.body);
     }
     if (assetUrl.headerLocalized) {
       const LocalizedString = localized_string.LocalizedString;
       internalBinaryWrite = LocalizedString.internalBinaryWrite;
       const headerLocalized = assetUrl.headerLocalized;
-      const tagResult3 = tag.tag(4, _mod1198.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1210.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(headerLocalized, tagResult3.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
@@ -119,14 +119,14 @@ class PaymentModalBanner$Type extends MessageType {
       const LocalizedString2 = localized_string.LocalizedString;
       internalBinaryWrite2 = LocalizedString2.internalBinaryWrite;
       const bodyLocalized = assetUrl.bodyLocalized;
-      const tagResult4 = tag.tag(5, _mod1198.WireType.LengthDelimited);
+      const tagResult4 = tag.tag(5, _mod1210.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(bodyLocalized, tagResult4.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1198.UnknownFieldHandler.onWrite;
+        onWrite = _mod1210.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, assetUrl, tag);

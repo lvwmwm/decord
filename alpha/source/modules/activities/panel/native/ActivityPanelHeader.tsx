@@ -1,33 +1,33 @@
-// Module ID: 17206
-// Function ID: 17207
+// Module ID: 17487
+// Function ID: 17488
 // Name: ActivityPanelHeader
-// Dependencies: [32, 19, 17, 2050, 9001, 1096, 21, 4896, 587, 558, 576, 1618, 4618, 17203, 17207, 4595, 6147, 504, 6670, 17208, 17212, 17213, 17218, 17197, 2]
+// Dependencies: [32, 19, 17, 2062, 6072, 1096, 21, 5090, 587, 558, 576, 1630, 4810, 17484, 17488, 4787, 6326, 504, 6847, 17489, 17493, 17494, 17499, 17478, 2]
 
-// Module 17206 (ActivityPanelHeader)
+// Module 17487 (ActivityPanelHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import native from "native" /* 4595 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6147 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6670 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17197 */;
-import BlurVisualEffectViewDefault from "BlurVisualEffectView" /* 17207 */;
-import InviteActivityButtonDefault from "InviteActivityButton" /* 17208 */;
-import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 17212 */;
-import LeaveActivityButtonDefault from "LeaveActivityButton" /* 17218 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import native from "native" /* 4787 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6326 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6847 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17478 */;
+import BlurVisualEffectViewDefault from "BlurVisualEffectView" /* 17488 */;
+import InviteActivityButtonDefault from "InviteActivityButton" /* 17489 */;
+import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 17493 */;
+import LeaveActivityButtonDefault from "LeaveActivityButton" /* 17499 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 9001 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let context, dependencyMap;
+let dependencyMap;
 
 let StyleSheet;
 let c10;
@@ -55,7 +55,7 @@ let closure_14 = createStyles(obj);
 const __initData = { code: "function ActivityPanelHeaderTsx1(){const{runOnJS,setMode,ActivityPanelModes}=this.__closure;runOnJS(setMode)(ActivityPanelModes.PIP);}" };
 const __initData2 = { code: "function ActivityPanelHeaderTsx2(){const{runOnJS,setMode,ActivityPanelModes}=this.__closure;runOnJS(setMode)(ActivityPanelModes.PIP);}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBaseActivityPanelHeaderContent(arg0) {
   let landscape;
   let panelLandscape;
   let pipState;
@@ -121,12 +121,12 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   return;
                 }
               }
-              T.__closure = { runOnJS: setMode(4618).runOnJS, setMode, ActivityPanelModes };
+              T.__closure = { runOnJS: setMode(4810).runOnJS, setMode, ActivityPanelModes };
               T.__workletHash = 14504167937928;
               T.__initData = __initData;
               cResult[13] = setMode;
               cResult[14] = T;
-              const obj3 = { runOnJS: setMode(4618).runOnJS, setMode, ActivityPanelModes };
+              const obj3 = { runOnJS: setMode(4810).runOnJS, setMode, ActivityPanelModes };
             } else {
               class T {
                 constructor() {
@@ -148,8 +148,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             cResult[15] = tmp11;
             cResult[16] = pipState;
             cResult[17] = wrapperOffset;
-            cResult[18] = { mode: setMode(17203).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: tmp11, disableHorizontalSafeAreas: true };
-            const obj4 = { mode: setMode(17203).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: tmp11, disableHorizontalSafeAreas: true };
+            cResult[18] = { mode: setMode(17484).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: tmp11, disableHorizontalSafeAreas: true };
+            const obj4 = { mode: setMode(17484).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: tmp11, disableHorizontalSafeAreas: true };
           }
         }
         const items1 = [tmp4.panelHeader, panelLandscape, tmp9];
@@ -167,7 +167,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = num8;
   cResult[8] = obj5;
   tmp9 = obj5;
-}) : ((landscape) => {
+}) : (function useBaseActivityPanelHeaderContent(landscape) {
   let closure_2;
   let obj3;
   let pipState;
@@ -178,7 +178,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ wrapperOffset, pipState } = landscape);
   const tmp = closure_14();
   dependencyMap = tmp;
-  const tmp2 = setMode(1618)();
+  const tmp2 = setMode(1630)();
   let closure_3 = tmp2;
   let items = [landscape];
   const items1 = [landscape, tmp2, , ];
@@ -195,7 +195,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj = ReanimatedRexport;
     obj.runOnJS(setMode)(constants.PIP);
   };
-  let obj = { runOnJS: landscape(4618).runOnJS, setMode, ActivityPanelModes };
+  let obj = { runOnJS: landscape(4810).runOnJS, setMode, ActivityPanelModes };
   const memo1 = react.useMemo(() => {
     let num2;
     let num3;
@@ -233,13 +233,13 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items2 = [setMode];
   const obj2 = { gesture: tmp6(obj3), headerWrapperStyles: memo, headerStyles: memo1, styles: tmp };
   const callback = useCallback(fn, items2);
-  obj3 = { mode: landscape(17203).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: callback, disableHorizontalSafeAreas: true };
-  tmp6 = setMode(17203);
+  obj3 = { mode: landscape(17484).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: callback, disableHorizontalSafeAreas: true };
+  tmp6 = setMode(17484);
   return obj2;
 });
 let closure_17 = tmp7;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasConnectedActivity) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseActivityPanelContent(hasConnectedActivity) {
   let children;
   let gesture;
   let headerStyles;
@@ -287,7 +287,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasConnectedActivity
               tmp5 = tmp23;
             }
             const obj2 = { theme: ThemeTypes.DARK, children: closure_12(LegacyBaseButton.GestureDetector, obj3) };
-            const ThemeContextProvider = tmp(4595).ThemeContextProvider;
+            const ThemeContextProvider = tmp(4787).ThemeContextProvider;
             obj3 = { gesture, children: tmp19 };
             const tmp26 = closure_12(ThemeContextProvider, obj2);
             cResult[11] = gesture;
@@ -323,7 +323,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasConnectedActivity
     tmp11 = tmp12;
   }
   return tmp5;
-}) : ((landscape) => {
+}) : (function BaseActivityPanelContent(landscape) {
   let GestureDetector;
   let children;
   let gesture;
@@ -363,7 +363,7 @@ let obj3 = { buttonContainer: obj4, buttonContainerLandscape: { flexDirection: "
 obj4 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, flexShrink: 1 };
 const styles = createStyles.createStyles(obj3);
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_20 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityPanelHeaderContentInner(arg0) {
   let gesture;
   let headerStyles;
   let headerWrapperStyles;
@@ -393,7 +393,7 @@ let closure_20 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
         closure_17(tmp4);
         if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
           const items = [EmbeddedActivitiesStore];
-          const fn = function y() {
+          const fn = function f() {
             return EmbeddedActivitiesStore.getSelfEmbeddedActivityForLocation(EmbeddedActivitiesStore.getConnectedActivityLocation());
           };
           const items1 = [];
@@ -464,7 +464,7 @@ let closure_20 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
               let tmp34 = null != applicationId;
               if (tmp34) {
                 const obj3 = { applicationId };
-                tmp34 = closure_12(tmp16(17213), obj3);
+                tmp34 = closure_12(tmp16(17494), obj3);
               }
               cResult[18] = applicationId;
               cResult[19] = tmp34;
@@ -566,7 +566,7 @@ let closure_20 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
   cResult[3] = wrapperOffset;
   cResult[4] = obj8;
   tmp4 = obj8;
-}) : ((wrapperOffset) => {
+}) : (function ActivityPanelHeaderContentInner(wrapperOffset) {
   let gesture;
   let headerStyles;
   let headerWrapperStyles;
@@ -617,7 +617,7 @@ let closure_20 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
   let tmp8Result2 = null != applicationId;
   if (tmp8Result2) {
     const obj5 = { applicationId };
-    tmp8Result2 = tmp8(tmp5(17213), obj5);
+    tmp8Result2 = tmp8(tmp5(17494), obj5);
   }
   items3[1] = tmp8Result2;
   let tmp20 = null;
@@ -636,7 +636,7 @@ let closure_20 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
   return map1(tmp13, obj3);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBaseActivityPanelHeader(context) {
   let num;
   let pipState;
   let setMode;
@@ -711,7 +711,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
   cResult[3] = str2;
   cResult[4] = size;
   tmp5 = size;
-}) : ((context) => {
+}) : (function useBaseActivityPanelHeader(context) {
   let items;
   let pipState;
   let setMode;
@@ -753,7 +753,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
 let closure_21 = tmp10;
 let memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityPanelHeader() {
   let first;
   let headerStyles;
   let pipState;
@@ -802,7 +802,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[4] = wrapperOffset;
   cResult[5] = tmp7;
   tmp6 = tmp7;
-}) : (() => {
+}) : (function ActivityPanelHeader() {
   let obj3;
   const obj = { context: ActivityPanelStateContextDefault };
   const tmp = closure_21(obj);

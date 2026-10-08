@@ -1,24 +1,24 @@
-// Module ID: 7611
-// Function ID: 7612
+// Module ID: 7856
+// Function ID: 7857
 // Name: InteractionStore
-// Dependencies: [32, 502, 2051, 1102, 5127, 5126, 6978, 504, 584, 2]
+// Dependencies: [32, 502, 2063, 1102, 5439, 5438, 7167, 504, 584, 2]
 
-// Module 7611 (InteractionStore)
+// Module 7856 (InteractionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import InteractionTypes from "InteractionTypes" /* 5126 */;
-import interactions_InteractionTypes from "interactions/InteractionTypes" /* 5127 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6978 */;
+import InteractionTypes from "InteractionTypes" /* 5438 */;
+import interactions_InteractionTypes from "interactions/InteractionTypes" /* 5439 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7167 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import size from "module_2" /* 2 */;
 
-let closure_10, closure_13, closure_8, closure_9;
+let closure_10, closure_8, closure_9;
 
 function deleteNonce(nonce) {
-  if (null == closure_13[nonce]) {
+  if (null == closure_12[nonce]) {
     const tmp3 = closure_8[nonce];
     delete closure_8[nonce];
     if (null != closure_10[nonce]) {
@@ -26,10 +26,10 @@ function deleteNonce(nonce) {
     }
     delete closure_10[nonce];
     const _Date = Date;
-    closure_13[nonce] = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp3 };
-    const obj = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp3 };
+    closure_12[nonce] = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp3 };
+    obj = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp3 };
   } else {
-    delete closure_13[nonce];
+    delete closure_12[nonce];
   }
 }
 const result = 5 * DurationsDefault.Millis.MINUTE;
@@ -38,8 +38,8 @@ const result1 = 10 * DurationsDefault.Millis.SECOND;
 const metroImportAll = {};
 const React4 = {};
 const authStore = {};
-let modalKey;
-let c12;
+let obj;
+let closure_12 = {};
 const Store = get_initializedDefault.Store;
 class InteractionStore extends Store {
   initialize() {
@@ -53,7 +53,7 @@ class InteractionStore extends Store {
     return tmp2;
   }
   getMessageInteractionStates() {
-    const obj = {};
+    obj = {};
     const entries = Object.entries(closure_8);
     const tmp2 = entries[Symbol.iterator]();
     while (tmp2 !== undefined) {
@@ -75,11 +75,8 @@ class InteractionStore extends Store {
     }
     return !tmp2;
   }
-  getIFrameModalApplicationId() {
-    return c12;
-  }
-  getIFrameModalKey() {
-    return modalKey;
+  getIFrameModal() {
+    return obj;
   }
   getInteractionDebugContext(nonce) {
     if (null != nonce) {
@@ -87,9 +84,9 @@ class InteractionStore extends Store {
         return { interaction: closure_8[nonce], messageId: closure_10[nonce] };
       } else {
         let tmp5;
-        if (null != closure_13[nonce]) {
-          const obj = { interaction: null, messageId: null };
-          ({ interaction: obj.interaction, messageId: obj.messageId } = closure_13[nonce]);
+        if (null != closure_12[nonce]) {
+          obj = { interaction: null, messageId: null };
+          ({ interaction: obj.interaction, messageId: obj.messageId } = closure_12[nonce]);
           tmp5 = obj;
         }
         return tmp5;
@@ -99,20 +96,20 @@ class InteractionStore extends Store {
 }
 const prototype = InteractionStore.prototype;
 InteractionStore.displayName = "InteractionStore";
-let obj = {
+obj = {
   LOGOUT: function handleInit() {
     closure_8 = {};
     closure_9 = {};
     closure_10 = {};
-    closure_13 = {};
+    closure_12 = {};
     const timerId = setInterval(() => {
       const timestamp = Date.now();
-      const entries = Object.entries(closure_1_13);
+      const entries = Object.entries(closure_1_12);
       const tmp3 = entries[Symbol.iterator]();
       while (tmp3 !== undefined) {
         let tmp6 = _slicedToArray(tmp4, 2);
         if (timestamp - tmp6[1].insertedAt > result1) {
-          delete closure_1_13[tmp7];
+          delete closure_1_12[tmp7];
         }
         continue;
       }
@@ -143,7 +140,7 @@ let obj = {
       if (null != closure_8[nonce]) {
         const tmp4 = require;
         if (closure_8[nonce].state === interactions_InteractionTypes.InteractionState.QUEUED) {
-          closure_8[nonce].state = tmp4(5127).InteractionState.CREATED;
+          closure_8[nonce].state = tmp4(5439).InteractionState.CREATED;
           const onCreate = tmp3.onCreate;
           if (onCreate != null) {
             onCreate(tmp);
@@ -161,7 +158,7 @@ let obj = {
         if (onSuccess != null) {
           onSuccess();
         }
-        if (null == closure_13[nonce]) {
+        if (null == closure_12[nonce]) {
           const tmp4 = closure_8[nonce];
           delete closure_8[nonce];
           if (null != closure_10[nonce]) {
@@ -169,10 +166,10 @@ let obj = {
           }
           delete closure_10[nonce];
           const _Date = Date;
-          closure_13[nonce] = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp4 };
-          const obj = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp4 };
+          closure_12[nonce] = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp4 };
+          obj = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp4 };
         } else {
-          delete closure_13[nonce];
+          delete closure_12[nonce];
         }
       }
     }
@@ -195,7 +192,7 @@ let obj = {
       }
       const tmp7 = require;
       if (closure_8[nonce].data.interactionType === InteractionTypes.InteractionTypes.APPLICATION_COMMAND) {
-        if (null == closure_13[nonce]) {
+        if (null == closure_12[nonce]) {
           const tmp15 = closure_8[nonce];
           delete closure_8[nonce];
           if (null != closure_10[nonce]) {
@@ -203,13 +200,13 @@ let obj = {
           }
           delete closure_10[nonce];
           const _Date = Date;
-          closure_13[nonce] = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp15 };
+          closure_12[nonce] = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp15 };
           const obj2 = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp15 };
         } else {
-          delete closure_13[nonce];
+          delete closure_12[nonce];
         }
       } else {
-        const obj = { state: tmp7(5127).InteractionState.FAILED, errorCode, errorMessage, reasonCode };
+        obj = { state: tmp7(5439).InteractionState.FAILED, errorCode, errorMessage, reasonCode };
         const merged = Object.assign(tmp21);
         closure_8[nonce] = obj;
       }
@@ -227,7 +224,7 @@ let obj = {
         onSuccess();
       }
       const nonce = message.nonce;
-      if (null == closure_13[nonce]) {
+      if (null == closure_12[nonce]) {
         const tmp4 = closure_8[nonce];
         delete closure_8[nonce];
         if (null != closure_10[nonce]) {
@@ -235,10 +232,10 @@ let obj = {
         }
         delete closure_10[nonce];
         const _Date = Date;
-        closure_13[nonce] = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp4 };
-        const obj = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp4 };
+        closure_12[nonce] = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp4 };
+        obj = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp4 };
       } else {
-        delete closure_13[nonce];
+        delete closure_12[nonce];
       }
     }
   },
@@ -259,37 +256,42 @@ let obj = {
       }
     }
   },
-  INTERACTION_IFRAME_MODAL_CREATE: function handleIFrameModalCreate(nonce) {
-    nonce = nonce.nonce;
-    const id = nonce.application.id;
+  INTERACTION_IFRAME_MODAL_CREATE: function handleIFrameModalCreate(applicationId) {
+    const nonce = applicationId.nonce;
+    obj = { applicationId: applicationId.application.id, interactionId: applicationId.id, customId: applicationId.customId, channelId: applicationId.channelId, modalKey: "gap" };
     if (null != nonce) {
       if (null != closure_8[nonce]) {
         const onSuccess = tmp10.onSuccess;
         if (onSuccess != null) {
           onSuccess();
         }
-        if (null == closure_13[nonce]) {
+        if (null == closure_12[nonce]) {
           const tmp4 = closure_8[nonce];
           delete closure_8[nonce];
           if (null != closure_10[nonce]) {
             delete closure_9[closure_10[nonce]];
           }
           delete closure_10[nonce];
+          obj = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp4 };
           const _Date = Date;
-          closure_13[nonce] = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp4 };
-          const obj = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp4 };
+          closure_12[nonce] = obj;
         } else {
-          delete closure_13[nonce];
+          delete closure_12[nonce];
         }
       }
     }
   },
   INTERACTION_IFRAME_MODAL_CLOSE: function handleIFrameModalClose() {
-    modalKey = undefined;
-    c12 = undefined;
+
   },
-  INTERACTION_IFRAME_MODAL_KEY_CREATE: function handleIFrameModalKeyCreate(modalKey) {
-    modalKey = modalKey.modalKey;
+  INTERACTION_IFRAME_MODAL_KEY_CREATE: function handleIFrameModalKeyCreate(arg0) {
+    if (null != obj) {
+      if (obj.interactionId === tmp) {
+        obj = { modalKey: tmp2 };
+        const merged = Object.assign(obj);
+      }
+    }
+    return false;
   },
   INTERACTION_MODAL_CREATE: function handleInteractionModalCreate(nonce) {
     nonce = nonce.nonce;
@@ -299,7 +301,7 @@ let obj = {
         if (onSuccess != null) {
           onSuccess();
         }
-        if (null == closure_13[nonce]) {
+        if (null == closure_12[nonce]) {
           const tmp4 = closure_8[nonce];
           delete closure_8[nonce];
           if (null != closure_10[nonce]) {
@@ -307,10 +309,10 @@ let obj = {
           }
           delete closure_10[nonce];
           const _Date = Date;
-          closure_13[nonce] = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp4 };
-          const obj = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp4 };
+          closure_12[nonce] = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp4 };
+          obj = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp4 };
         } else {
-          delete closure_13[nonce];
+          delete closure_12[nonce];
         }
       }
     }
@@ -324,16 +326,16 @@ let obj = {
     const found = participants.find((user_id) => user_id.user_id === closure_1 && user_id.session_id === closure_0);
     if (null != found) {
       if (null != found.nonce) {
-        if (null == closure_13[found.nonce]) {
+        if (null == closure_12[found.nonce]) {
           messageId = closure_10[found.nonce];
           interaction = closure_8[found.nonce];
         } else {
-          ({ messageId, interaction } = closure_13[found.nonce]);
+          ({ messageId, interaction } = closure_12[found.nonce]);
         }
         const tmp4 = null != interaction && null != messageId;
         if (tmp4) {
           const nonce = found.nonce;
-          if (null == closure_13[nonce]) {
+          if (null == closure_12[nonce]) {
             const tmp7 = closure_8[nonce];
             delete closure_8[nonce];
             if (null != closure_10[nonce]) {
@@ -341,10 +343,10 @@ let obj = {
             }
             delete closure_10[nonce];
             const _Date = Date;
-            closure_13[nonce] = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp7 };
-            const obj = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp7 };
+            closure_12[nonce] = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp7 };
+            obj = { insertedAt: Date.now(), nonce, messageId: closure_10[nonce], interaction: tmp7 };
           } else {
-            delete closure_13[nonce];
+            delete closure_12[nonce];
           }
           const tmp12 = null != messageId && "channelId" in interaction.data;
           if (tmp12) {

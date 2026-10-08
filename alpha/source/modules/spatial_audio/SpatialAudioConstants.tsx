@@ -1,11 +1,16 @@
-// Module ID: 13833
-// Function ID: 13834
+// Module ID: 5243
+// Function ID: 5244
 // Name: SpatialAudioConstants
 // Dependencies: [2]
 
-// Module 13833 (SpatialAudioConstants)
+// Module 5243 (SpatialAudioConstants)
 import size from "module_2" /* 2 */;
 
+let obj2;
+let obj3;
 const result = size.fileFinishedImporting("modules/spatial_audio/SpatialAudioConstants.tsx");
+const obj = { isSpatial: false, limiterEnabled: true, binaural: { spatialBlend: 1, bilinearInterpolation: false, hrtfVolume: 1, hrtfNormalization: false }, distanceAttenuation: { enabled: false, minDistance: 1 }, airAbsorption: { enabled: false, coefficients: { low: 0.0002, mid: 0.0017, high: 0.0182 } }, reflections: obj2 };
+obj2 = { enabled: false, durationSeconds: 2, numRays: 4096, numBounces: 32, irradianceMinDistance: 1, binauralDecode: true, room: obj3 };
+obj3 = { minCorner: { x: -2.5, y: -2.5, z: -2.5 }, maxCorner: { x: 2.5, y: 2.5, z: 2.5 }, floor: { absorption: { low: 0.24, mid: 0.69, high: 0.73 }, scattering: 0.05 }, ceiling: { absorption: { low: 0.05, mid: 0.07, high: 0.08 }, scattering: 0.05 }, walls: { absorption: { low: 0.1, mid: 0.2, high: 0.3 }, scattering: 0.05 } };
 
-export const DEFAULT_AUDIO_MIXER_SETTINGS = { enabled: true, spatialBlend: 1, reflectionsEnabled: false, distanceAttenuationEnabled: false, mode: "arc", spread: 2, arcAngle: 20, gridColumns: 3, gridSpacing: 1, buckets: 10, listenerHeight: 0.15, distance: 5 };
+export const DEFAULT_SPATIAL_AUDIO_OPTIONS = obj;

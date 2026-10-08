@@ -1,18 +1,18 @@
-// Module ID: 9117
-// Function ID: 9118
+// Module ID: 10690
+// Function ID: 10691
 // Name: useIsPrivateChannelWithEnabledActivities
-// Dependencies: [2051, 558, 576, 573, 2]
+// Dependencies: [2063, 558, 576, 573, 2]
 // Exports: isPrivateChannelWithEnabledActivities
 
-// Module 9117 (useIsPrivateChannelWithEnabledActivities)
-import ChannelStore from "ChannelStore" /* 2051 */;
+// Module 10690 (useIsPrivateChannelWithEnabledActivities)
+import ChannelStore from "ChannelStore" /* 2063 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPrivateChannelWithEnabledActivities(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -55,7 +55,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp7 = cResult[4];
   }
   return tmp7;
-}) : ((arg0) => {
+}) : (function useIsPrivateChannelWithEnabledActivities(arg0) {
   let closure_0;
   _require = arg0;
   const items = [ChannelStore];

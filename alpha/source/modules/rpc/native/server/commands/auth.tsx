@@ -1,13 +1,13 @@
-// Module ID: 14375
-// Function ID: 14376
+// Module ID: 14601
+// Function ID: 14602
 // Name: auth
-// Dependencies: [5124, 1085, 9059, 2016, 1121, 14376, 2]
+// Dependencies: [5436, 1085, 11134, 2028, 1121, 14602, 2]
 
-// Module 14375 (auth)
+// Module 14601 (auth)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
-import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2016 */;
-import AuthCommandsFactoryDefault from "AuthCommandsFactory" /* 14376 */;
-import ApplicationStore from "ApplicationStore" /* 5124 */;
+import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2028 */;
+import AuthCommandsFactoryDefault from "AuthCommandsFactory" /* 14602 */;
+import ApplicationStore from "ApplicationStore" /* 5436 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

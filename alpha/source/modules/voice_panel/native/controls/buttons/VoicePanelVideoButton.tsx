@@ -1,39 +1,39 @@
-// Module ID: 17367
-// Function ID: 17368
+// Module ID: 17648
+// Function ID: 17649
 // Name: VoicePanelVideoButton
-// Dependencies: [19, 17, 9101, 2051, 2074, 1999, 4515, 4921, 21, 558, 576, 11915, 17355, 7223, 504, 13120, 5716, 13122, 1126, 17368, 9334, 9120, 13140, 17356, 11247, 4829, 4672, 2]
+// Dependencies: [19, 17, 10675, 2063, 2086, 2011, 4707, 5115, 21, 558, 576, 11988, 17636, 5903, 504, 12834, 5299, 12837, 1126, 17649, 8759, 10693, 12857, 17637, 11362, 5023, 4864, 2]
 
-// Module 17367 (VoicePanelVideoButton)
+// Module 17648 (VoicePanelVideoButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import CameraRive2 from "CameraRive" /* 4672 */;
-import Constants from "Constants" /* 4921 */;
-import useAlertStore from "useAlertStore" /* 5716 */;
-import StreamPermissionUtils from "StreamPermissionUtils" /* 7223 */;
-import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 9120 */;
-import CallsUtils from "CallsUtils" /* 9334 */;
-import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 13122 */;
-import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 17368 */;
+import CameraRive2 from "CameraRive" /* 4864 */;
+import Constants from "Constants" /* 5115 */;
+import useAlertStore from "useAlertStore" /* 5299 */;
+import StreamPermissionUtils from "StreamPermissionUtils" /* 5903 */;
+import CallsUtils from "CallsUtils" /* 8759 */;
+import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 10693 */;
+import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 12837 */;
+import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 17649 */;
 import react from "react" /* 19 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 9101 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 10675 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const VoicePanelVideoGuardErrorAlertDefault = VoicePanelVideoGuardErrorAlert;
 const VoicePanelNoVideoPermissionsAlertDefault = VoicePanelNoVideoPermissionsAlert;
-let closure_0, handleToggleVideoResult, obj1, openAlert2Result, openAlertResult, tmp11, tmp14, tmp15, tmp18, tmp19, tmp21, tmp27, tmp8;
+let closure_0, handleToggleVideoResult, obj1, openAlert2Result, openAlertResult, tmp11, tmp14, tmp15, tmp18, tmp19, tmp20, tmp22, tmp8;
 
 const View = react_native.View;
 const Features = Constants.Features;
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoButton(props) {
   let channelId;
   let first;
   let stateFromStores;
@@ -44,7 +44,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
   let tmp13;
   let tmp16;
   let tmp17;
-  let tmp20;
+  let tmp21;
   let tmp = channelId;
   let tmp2 = stateFromStores1;
   let obj = channelId(stateFromStores1[10]);
@@ -105,14 +105,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
   stateFromStores1 = tmpResult3.useStateFromStores(tmp12, tmp13);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [MediaEngineStore];
-    class P {
+    class O {
       constructor() {
-        return MediaEngineStore.supports(constants.VIDEO);
+        return MediaEngineStore.isVideoEnabled();
       }
     }
     cResult[5] = items2;
-    cResult[6] = P;
-    tmp17 = P;
+    cResult[6] = tmp19;
+    tmp17 = tmp19;
     tmp16 = items2;
   } else {
     tmp16 = cResult[5];
@@ -123,25 +123,25 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     let obj3 = { location: "VoicePanelVideoButton" };
     cResult[7] = obj3;
-    class P {
+    class O {
       constructor() {
-        return MediaEngineStore.supports(constants.VIDEO);
+        return MediaEngineStore.isVideoEnabled();
       }
     }
   } else {
-    tmp20 = cResult[7];
+    tmp21 = cResult[7];
   }
   const VideoGuardExperiment = tmp(tmp2[15]).VideoGuardExperiment;
-  const videoEnabled = VideoGuardExperiment.useConfig(tmp20).videoEnabled;
-  let closure_4 = tmp21;
+  const videoEnabled = VideoGuardExperiment.useConfig(tmp21).videoEnabled;
+  let closure_4 = tmp22;
   if (cResult[8] === channelId) {
     if (cResult[9] === stateFromStores) {
       if (cResult[10] === stateFromStores1) {
         if (cResult[11] === !videoEnabled) {
-          let tmp22;
+          let tmp23;
           let color;
           if (cResult[12] === stateFromStores2) {
-            tmp22 = cResult[13];
+            tmp23 = cResult[13];
           }
           if (stateFromStores2) {
             let color2;
@@ -155,86 +155,87 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
             color = voicePanelButtonStyles.iconFillMuted.color;
           }
           if (cResult[14] === color) {
-            let tmp23;
+            let tmp24;
             if (cResult[15] === stateFromStores1) {
-              tmp23 = cResult[16];
+              tmp24 = cResult[16];
             }
-            let tmp26 = !tmp21;
+            let tmp27 = !tmp22;
             if (videoEnabled) {
-              tmp26 = !stateFromStores2;
+              tmp27 = !stateFromStores2;
             }
-            class P {
+            class O {
               constructor() {
-                return MediaEngineStore.supports(constants.VIDEO);
+                return MediaEngineStore.isVideoEnabled();
               }
             }
-            const tmp28 = stateFromStores1 ? voicePanelButtonStyles.iconBgSelected : voicePanelButtonStyles.iconBg;
+            const tmp29 = stateFromStores1 ? voicePanelButtonStyles.iconBgSelected : voicePanelButtonStyles.iconBg;
             if (cResult[19] === voicePanelButtonStyles.iconFill) {
               if (cResult[20] === !videoEnabled) {
-                let tmp29;
-                if (cResult[21] === tmp23) {
-                  tmp29 = cResult[22];
+                let tmp30;
+                if (cResult[21] === tmp24) {
+                  tmp30 = cResult[22];
                 }
-                if (cResult[23] === tmp22) {
+                if (cResult[23] === tmp23) {
                   if (cResult[24] === props) {
-                    if (cResult[25] === tmp26) {
-                      if (cResult[26] === tmp27) {
-                        if (cResult[27] === tmp28) {
-                          let tmp32;
-                          if (cResult[28] === tmp29) {
-                            tmp32 = cResult[29];
+                    if (cResult[25] === tmp27) {
+                      if (cResult[26] === tmp28) {
+                        if (cResult[27] === tmp29) {
+                          let tmp33;
+                          if (cResult[28] === tmp30) {
+                            tmp33 = cResult[29];
                           }
-                          return tmp32;
+                          return tmp33;
                         }
                       }
                     }
                   }
                 }
-                class P {
+                class O {
                   constructor() {
-                    return MediaEngineStore.supports(constants.VIDEO);
+                    return MediaEngineStore.isVideoEnabled();
                   }
                 }
-                tmp34[0] = tmp22;
-                tmp34[1] = tmp26;
-                tmp34[2] = props;
-                tmp34[3] = tmp27;
-                tmp34[4] = tmp28;
-                tmp34[5] = tmp29;
-                const tmp35 = jsx(tmp4(tmp2[23]), tmp34);
-                cResult[23] = tmp22;
+                tmp35[0] = tmp23;
+                tmp35[1] = tmp27;
+                tmp35[2] = props;
+                tmp35[3] = tmp28;
+                tmp35[4] = tmp29;
+                tmp35[5] = tmp30;
+                const tmp36 = jsx(tmp4(tmp2[23]), tmp35);
+                cResult[23] = tmp23;
                 cResult[24] = props;
-                cResult[25] = tmp26;
-                cResult[26] = tmp27;
-                cResult[27] = tmp28;
-                cResult[28] = tmp29;
-                cResult[29] = tmp35;
-                tmp32 = tmp35;
+                cResult[25] = tmp27;
+                cResult[26] = tmp28;
+                cResult[27] = tmp29;
+                cResult[28] = tmp30;
+                cResult[29] = tmp36;
+                tmp33 = tmp36;
               }
             }
             if (!videoEnabled) {
-              class P {
+              class O {
                 constructor() {
-                  return MediaEngineStore.supports(constants.VIDEO);
+                  return MediaEngineStore.isVideoEnabled();
                 }
               }
             }
             cResult[19] = voicePanelButtonStyles.iconFill;
             cResult[20] = !videoEnabled;
-            cResult[21] = tmp23;
-            cResult[22] = tmp23;
-            tmp29 = tmp30;
+            cResult[21] = tmp24;
+            cResult[22] = tmp24;
+            tmp30 = tmp31;
           }
-          class P {
+          class O {
             constructor() {
-              return MediaEngineStore.supports(constants.VIDEO);
+              return MediaEngineStore.isVideoEnabled();
             }
           }
-          let tmp25 = <closure_12 isVideoEnabled={stateFromStores1} color={color} />;
+          let tmp25 = closure_12;
+          const tmp26 = <closure_12 isVideoEnabled={stateFromStores1} color={color} />;
           cResult[14] = color;
           cResult[15] = stateFromStores1;
-          cResult[16] = tmp25;
-          tmp23 = tmp25;
+          cResult[16] = tmp26;
+          tmp24 = tmp26;
         }
       }
     }
@@ -315,8 +316,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
   cResult[11] = !videoEnabled;
   cResult[12] = stateFromStores2;
   cResult[13] = T;
-  tmp22 = T;
-}) : ((arg0) => {
+  tmp23 = T;
+}) : (function VideoButton(arg0) {
   let props;
   let stringResult;
   let tmp13;
@@ -433,7 +434,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
   return jsx(tmpResult, element);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoButtonRive(arg0) {
   let color;
   let first;
   let isVideoEnabled;
@@ -480,9 +481,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const tmp7 = jsx;
     if (isVideoEnabled) {
-      VideoSlashIcon = tmp(11247).VideoIcon;
+      VideoSlashIcon = tmp(11362).VideoIcon;
     } else {
-      VideoSlashIcon = tmp(4829).VideoSlashIcon;
+      VideoSlashIcon = tmp(5023).VideoSlashIcon;
     }
     const obj4 = { color };
     const tmp7Result = tmp7(VideoSlashIcon, obj4);
@@ -496,7 +497,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = isVideoEnabled;
   cResult[3] = obj5;
   tmp5 = obj5;
-}) : ((arg0) => {
+}) : (function VideoButtonRive(arg0) {
   let color;
   let isVideoEnabled;
   ({ isVideoEnabled, color } = arg0);
@@ -506,9 +507,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     str = "CamOn";
   }
   if (isVideoEnabled) {
-    let VideoSlashIcon = tmp3(11247).VideoIcon;
+    let VideoSlashIcon = tmp3(11362).VideoIcon;
   } else {
-    VideoSlashIcon = tmp3(4829).VideoSlashIcon;
+    VideoSlashIcon = tmp3(5023).VideoSlashIcon;
   }
   return <tmp2 style={{ width: 24, height: 24, pointerEvents: "none" }}>{null}</tmp2>;
 });

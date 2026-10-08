@@ -1,38 +1,38 @@
-// Module ID: 11373
-// Function ID: 11374
+// Module ID: 12811
+// Function ID: 12812
 // Name: EmojiRow
-// Dependencies: [19, 17, 6653, 21, 4896, 4860, 4861, 7273, 4527, 6978, 9891, 558, 576, 4586, 587, 11374, 11375, 9868, 11376, 6688, 2]
+// Dependencies: [19, 17, 6830, 21, 5090, 5054, 5055, 7872, 4719, 7167, 9371, 558, 576, 4778, 587, 12812, 12813, 9319, 12814, 6865, 2]
 
-// Module 11373 (EmojiRow)
+// Module 12811 (EmojiRow)
 import react_native from "react-native" /* 17 */;
-import ReactionUtils from "ReactionUtils" /* 4527 */;
-import useToken from "useToken" /* 4586 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import HapticUtils from "HapticUtils" /* 4861 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6653 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 7273 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9868 */;
-import DoubleTapReminderToast from "DoubleTapReminderToast" /* 9891 */;
-import useEmojisForReactionRow from "useEmojisForReactionRow" /* 11374 */;
-import EmojiReactionRowButton2 from "EmojiReactionRowButton" /* 11375 */;
-import DoubleTapEmojiEditNudge2 from "DoubleTapEmojiEditNudge" /* 11376 */;
+import ReactionUtils from "ReactionUtils" /* 4719 */;
+import useToken from "useToken" /* 4778 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import HapticUtils from "HapticUtils" /* 5055 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6830 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 7872 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9319 */;
+import DoubleTapReminderToast from "DoubleTapReminderToast" /* 9371 */;
+import useEmojisForReactionRow from "useEmojisForReactionRow" /* 12812 */;
+import EmojiReactionRowButton2 from "EmojiReactionRowButton" /* 12813 */;
+import DoubleTapEmojiEditNudge2 from "DoubleTapEmojiEditNudge" /* 12814 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, message;
+let dependencyMap;
 
 let hasOwnProperty;
 let metroRequire;
 let tmp3;
-const MessageActionCreatorsDefault = tmp3(6978);
+const MessageActionCreatorsDefault = tmp3(7167);
 const View = react_native.View;
 const ACTION_SHEET_MAX_WIDTH = ActionSheetConstants.ACTION_SHEET_MAX_WIDTH;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ emojiRowContainer: { flexDirection: "column", justifyContent: "center", alignItems: "center" }, emojiRow: { height: 52, alignSelf: "stretch", flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginTop: 0, marginBottom: 0 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiRow(message) {
   let items;
   let items1;
   let tmp13;
@@ -40,6 +40,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   const tmp2 = token;
   let obj = message(token[12]);
   const cResult = obj.c(27);
+  const tmp = message;
   message = message.message;
   const channel = message.channel;
   let obj2 = message(token[13]);
@@ -76,61 +77,85 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
                 }
                 if (cResult[19] === tmp10.emojiRow) {
                   if (cResult[20] === tmp13) {
-                    let tmp20;
-                    let tmp25;
+                    let tmp19;
+                    let tmp23;
                     if (cResult[21] === tmp17) {
-                      tmp20 = cResult[22];
+                      tmp19 = cResult[22];
                     }
-                    const _Symbol = Symbol;
+                    class R {
+                      constructor() {
+                        const obj = reactions_ReactionUtils;
+                        return obj.handleAddNewReactions(channel, message.id, ReactionActionCreators.ReactionLocations.MESSAGE);
+                      }
+                    }
                     if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
                       const obj8 = { location: tmp4(tmp2[19]).MESSAGE_LONG_PRESS_MENU };
-                      const DoubleTapEmojiEditNudge = tmp(tmp2[18]).DoubleTapEmojiEditNudge;
-                      const tmp27 = token3(DoubleTapEmojiEditNudge, obj8);
-                      cResult[23] = tmp27;
-                      tmp25 = tmp27;
+                      class R {
+                        constructor() {
+                          const obj = reactions_ReactionUtils;
+                          return obj.handleAddNewReactions(channel, message.id, ReactionActionCreators.ReactionLocations.MESSAGE);
+                        }
+                      }
+                      const tmp26 = token3(tmp25, obj8);
+                      cResult[23] = tmp26;
+                      tmp23 = tmp26;
                     } else {
-                      tmp25 = cResult[23];
+                      tmp23 = cResult[23];
                     }
                     if (cResult[24] === tmp10.emojiRowContainer) {
-                      let tmp28;
-                      if (cResult[25] === tmp20) {
-                        tmp28 = cResult[26];
+                      let tmp27;
+                      if (cResult[25] === tmp19) {
+                        tmp27 = cResult[26];
                       }
-                      return tmp28;
+                      return tmp27;
                     }
                     const obj9 = { style: tmp11, children: items };
-                    items = [tmp20, tmp25];
-                    const tmp31 = closure_6(token1, obj9);
+                    items = [tmp19, tmp23];
+                    const tmp30 = closure_6(token1, obj9);
                     cResult[24] = tmp10.emojiRowContainer;
-                    cResult[25] = tmp20;
-                    cResult[26] = tmp31;
-                    tmp28 = tmp31;
+                    cResult[25] = tmp19;
+                    cResult[26] = tmp30;
+                    tmp27 = tmp30;
+                  }
+                }
+                class R {
+                  constructor() {
+                    const obj = reactions_ReactionUtils;
+                    return obj.handleAddNewReactions(channel, message.id, ReactionActionCreators.ReactionLocations.MESSAGE);
                   }
                 }
                 const obj10 = { style: tmp12, children: items1 };
                 items1 = [tmp13, tmp17];
-                const tmp23 = closure_6(token1, obj10);
+                const tmp21 = closure_6(token1, obj10);
                 cResult[19] = tmp10.emojiRow;
                 cResult[20] = tmp13;
                 cResult[21] = tmp17;
-                cResult[22] = tmp23;
-                tmp20 = tmp23;
+                cResult[22] = tmp21;
+                tmp19 = tmp21;
+              }
+              class R {
+                constructor() {
+                  const obj = reactions_ReactionUtils;
+                  return obj.handleAddNewReactions(channel, message.id, ReactionActionCreators.ReactionLocations.MESSAGE);
+                }
               }
               const obj11 = { emojiContainerSize: token3, onPress: tmp16 };
-              const tmp19 = token3(message(tmp2[16]).EmojiPickerRowButton, obj11);
+              const tmp18 = token3(tmp(tmp2[16]).EmojiPickerRowButton, obj11);
               cResult[16] = token3;
               cResult[17] = tmp16;
-              cResult[18] = tmp19;
-              tmp17 = tmp19;
+              cResult[18] = tmp18;
+              tmp17 = tmp18;
             }
-            const fn2 = function u() {
-              const obj = reactions_ReactionUtils;
-              return obj.handleAddNewReactions(channel, message.id, ReactionActionCreators.ReactionLocations.MESSAGE);
-            };
+            class R {
+              constructor() {
+                const obj = reactions_ReactionUtils;
+                return obj.handleAddNewReactions(channel, message.id, ReactionActionCreators.ReactionLocations.MESSAGE);
+              }
+            }
             cResult[13] = channel;
             cResult[14] = message.id;
-            cResult[15] = fn2;
-            tmp16 = fn2;
+            cResult[15] = R;
+            tmp16 = R;
           }
         }
       }
@@ -145,6 +170,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
             tmp14 = cResult[12];
           }
           const mapped = emojisForReactionRow.map(tmp14);
+          class R {
+            constructor() {
+              const obj = reactions_ReactionUtils;
+              return obj.handleAddNewReactions(channel, message.id, ReactionActionCreators.ReactionLocations.MESSAGE);
+            }
+          }
           cResult[0] = token3;
           cResult[1] = token1;
           cResult[2] = token2;
@@ -198,11 +229,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   cResult[11] = message;
   cResult[12] = fn;
   tmp14 = fn;
-}) : ((arg0) => {
+}) : (function EmojiRow(arg0) {
   let channel;
   let emojiSize;
   let items;
   let items1;
+  let require;
   ({ message: require, channel } = arg0);
   let obj = useToken;
   dependencyMap = obj.useToken(channel(587).modules.mobile.EMOJI_ROW_EMOJI_SIZE);
@@ -221,7 +253,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   const obj8 = { style: tmp3.emojiRow, children: items };
   items = [
     emojisForReactionRow.map((emoji, index) => {
-      require = emoji;
+      const require = emoji;
       let obj = {
         emoji,
         onPress() {
@@ -233,12 +265,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
             const obj2 = HapticUtils;
             const result = obj2.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_LIGHT);
             const addReaction = ReactionActionCreators.addReaction;
-            ({ channel_id, id } = require);
+            ({ channel_id, id } = _require);
             ReactionActionCreators;
             const obj3 = ReactionUtils;
             addReaction(channel_id, id, obj3.toReactionEmoji(emoji));
             const obj4 = { channelId: null, messageId: null };
-            ({ channel_id: obj5.channelId, id: obj5.messageId } = require);
+            ({ channel_id: obj5.channelId, id: obj5.messageId } = _require);
             const tmp3Result = MessageActionCreatorsDefault;
             tmp3Result.focusMessage(obj4);
             const obj6 = DoubleTapReminderToast;
@@ -260,12 +292,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     emojiContainerSize: token,
     onPress() {
       const obj = reactions_ReactionUtils;
-      return obj.handleAddNewReactions(channel, require.id, ReactionActionCreators.ReactionLocations.MESSAGE);
+      return obj.handleAddNewReactions(channel, _require.id, ReactionActionCreators.ReactionLocations.MESSAGE);
     }
   };
   items[1] = token(EmojiReactionRowButton2.EmojiPickerRowButton, obj9);
   items1 = [closure_6(emojiFontSize, obj8), ];
-  const obj10 = { location: channel(6688).MESSAGE_LONG_PRESS_MENU };
+  const obj10 = { location: channel(6865).MESSAGE_LONG_PRESS_MENU };
   const DoubleTapEmojiEditNudge = DoubleTapEmojiEditNudge2.DoubleTapEmojiEditNudge;
   items1[1] = token(DoubleTapEmojiEditNudge, obj10);
   return closure_6(emojiFontSize, obj7);

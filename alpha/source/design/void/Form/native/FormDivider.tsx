@@ -1,20 +1,20 @@
-// Module ID: 8928
-// Function ID: 8929
+// Module ID: 8559
+// Function ID: 8560
 // Name: FormDivider
-// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 4595, 6690, 4733, 6080, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 587, 558, 576, 4787, 6867, 4927, 6266, 2]
 
-// Module 8928 (FormDivider)
+// Module 8559 (FormDivider)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 4595 */;
-import ColorUtils from "ColorUtils" /* 4733 */;
-import RedesignCompat from "RedesignCompat" /* 6080 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 6690 */;
+import native from "native" /* 4787 */;
+import ColorUtils from "ColorUtils" /* 4927 */;
+import RedesignCompat from "RedesignCompat" /* 6266 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 6867 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let closure_7 = createStyles.createStyles(() => {
 });
 const DIVIDER_COLORS = { [LIGHT]: nativeDefault.unsafe_rawColors.BLACK, [ASH]: nativeDefault.unsafe_rawColors.WHITE, [DARK]: nativeDefault.unsafe_rawColors.WHITE, [ONYX]: nativeDefault.unsafe_rawColors.WHITE };
 ({ LIGHT, ASH, DARK, ONYX } = ThemeTypes);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Divider(arg0) {
   let iconPush;
   let outer;
   let primaryColor;
@@ -109,7 +109,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[9] = tmp18;
     tmp15 = tmp18;
   }
-}) : ((arg0) => {
+}) : (function Divider(arg0) {
   let primaryColor;
   let theme;
   let tmp2Result;

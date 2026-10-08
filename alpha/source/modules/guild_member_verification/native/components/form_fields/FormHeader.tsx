@@ -1,25 +1,23 @@
-// Module ID: 9490
-// Function ID: 9491
+// Module ID: 8654
+// Function ID: 8655
 // Name: FormHeader
-// Dependencies: [109, 19, 1096, 21, 4896, 5922, 587, 558, 576, 1188, 2]
+// Dependencies: [109, 19, 1096, 21, 5090, 5902, 587, 558, 576, 1200, 2]
 
-// Module 9490 (FormHeader)
+// Module 8654 (FormHeader)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import TextStyles from "TextStyles" /* 5922 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import TextStyles from "TextStyles" /* 5902 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let children;
-
 let obj2;
 let tmp;
-const native = tmp(1188);
+const native = tmp(1200);
 let closure_2 = ["children"];
 const Fonts = Constants.Fonts;
 const jsx = Fragment.jsx;
@@ -30,7 +28,7 @@ const DISPLAY_EXTRABOLD = Fonts.DISPLAY_EXTRABOLD;
 obj2 = { paddingBottom: 8 };
 let merged = Object.assign(TextStyles(DISPLAY_EXTRABOLD, nativeDefault.colors.TEXT_SUBTLE, 12, { uppercase: true }));
 let closure_5 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormHeader(children) {
   let tmp4;
   let tmp5;
   const obj = react2;
@@ -76,7 +74,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[4] = tmp9.fieldHeader;
   cResult[5] = items;
   tmp10 = items;
-}) : ((children) => {
+}) : (function FormHeader(children) {
   children = children.children;
   const merged = Object.assign(children, Object.assign({ children: 0 }));
   const tmp2 = closure_5();

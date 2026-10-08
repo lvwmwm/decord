@@ -1,10 +1,10 @@
-// Module ID: 15507
-// Function ID: 15508
+// Module ID: 15769
+// Function ID: 15770
 // Name: DevToolsProfilingUseStateFromStores
-// Dependencies: [32, 19, 21, 558, 576, 15508, 4892, 6081, 6705, 6000, 6107, 11240, 10121, 15509, 4853, 1126, 2]
+// Dependencies: [32, 19, 21, 558, 576, 15770, 5086, 6267, 6882, 6184, 6287, 11355, 9706, 15771, 5047, 1126, 2]
 
-// Module 15507 (DevToolsProfilingUseStateFromStores)
-import useStateFromStoresPerformanceDebugging from "useStateFromStoresPerformanceDebugging" /* 15508 */;
+// Module 15769 (DevToolsProfilingUseStateFromStores)
+import useStateFromStoresPerformanceDebugging from "useStateFromStoresPerformanceDebugging" /* 15770 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -15,7 +15,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsProfilingUseStateFromStores() {
   let closure_2;
   let closure_4;
   let closure_6;
@@ -101,7 +101,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   [first2, closure_8] = str2.useState(tmp19);
   if (cResult[5] !== first1) {
-    class V {
+    class N {
       constructor() {
         const obj = useStateFromStoresPerformanceDebugging;
         const result = obj.setUseStateFromStoresDebuggingEnabled(first1);
@@ -109,12 +109,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const items = [first1];
     cResult[5] = first1;
-    cResult[6] = V;
+    cResult[6] = N;
     cResult[7] = items;
     tmp24 = items;
-    tmp23 = V;
+    tmp23 = N;
   } else {
-    class V {
+    class N {
       constructor() {
         const obj = useStateFromStoresPerformanceDebugging;
         const result = obj.setUseStateFromStoresDebuggingEnabled(first1);
@@ -124,7 +124,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const effect = obj3.useEffect(tmp23, tmp24);
   if (cResult[8] !== str) {
-    class M {
+    class W {
       constructor() {
         const obj = useStateFromStoresPerformanceDebugging;
         const result = obj.setUseStateFromStoresExecutionWindowThresholdMs(str);
@@ -132,12 +132,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const items1 = [str];
     cResult[8] = str;
-    cResult[9] = M;
+    cResult[9] = W;
     cResult[10] = items1;
     tmp27 = items1;
-    tmp26 = M;
+    tmp26 = W;
   } else {
-    class M {
+    class W {
       constructor() {
         const obj = useStateFromStoresPerformanceDebugging;
         const result = obj.setUseStateFromStoresExecutionWindowThresholdMs(str);
@@ -217,26 +217,26 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const effect4 = obj3.useEffect(tmp35, tmp36);
   const ref = obj3.useRef(null);
   if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-    class J {
-      constructor(children) {
-        const obj = { variant: "text-xs/medium", color: "text-subtle", style: { marginBottom: 4 }, children };
-        return closure_4(first1(str[6]).Text, obj);
+    class G {
+      constructor() {
+        const obj = useStateFromStoresPerformanceDebugging;
+        const result = obj.setUseStateFromStoresExecutionCountWarningThreshold(str3);
       }
     }
-    cResult[20] = J;
+    cResult[20] = tmp41;
   } else {
-    class J {
-      constructor(children) {
-        const obj = { variant: "text-xs/medium", color: "text-subtle", style: { marginBottom: 4 }, children };
-        return closure_4(first1(str[6]).Text, obj);
+    class G {
+      constructor() {
+        const obj = useStateFromStoresPerformanceDebugging;
+        const result = obj.setUseStateFromStoresExecutionCountWarningThreshold(str3);
       }
     }
   }
   if (cResult[21] !== first1) {
-    class J {
-      constructor(children) {
-        const obj = { variant: "text-xs/medium", color: "text-subtle", style: { marginBottom: 4 }, children };
-        return closure_4(first1(str[6]).Text, obj);
+    class G {
+      constructor() {
+        const obj = useStateFromStoresPerformanceDebugging;
+        const result = obj.setUseStateFromStoresExecutionCountWarningThreshold(str3);
       }
     }
     const obj2 = { title: "useStateFromStores Profiling", hasIcons: false, children: closure_4(first1(str[8]).TableSwitchRow, obj4) };
@@ -244,29 +244,29 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     obj4 = { label: "Enable useStateFromStores profiling", subLabel: "May require app restart after changes.", onValueChange: tmp9, value: first1 };
     cResult[21] = first1;
     cResult[22] = closure_4(TableRowGroup, obj2);
-    const tmp42 = closure_4(TableRowGroup, obj2);
+    const tmp43 = closure_4(TableRowGroup, obj2);
   } else {
-    class J {
-      constructor(children) {
-        const obj = { variant: "text-xs/medium", color: "text-subtle", style: { marginBottom: 4 }, children };
-        return closure_4(first1(str[6]).Text, obj);
+    class G {
+      constructor() {
+        const obj = useStateFromStoresPerformanceDebugging;
+        const result = obj.setUseStateFromStoresExecutionCountWarningThreshold(str3);
       }
     }
   }
   if (cResult[23] === str3) {
-    class J {
-      constructor(children) {
-        const obj = { variant: "text-xs/medium", color: "text-subtle", style: { marginBottom: 4 }, children };
-        return closure_4(first1(str[6]).Text, obj);
+    class G {
+      constructor() {
+        const obj = useStateFromStoresPerformanceDebugging;
+        const result = obj.setUseStateFromStoresExecutionCountWarningThreshold(str3);
       }
     }
   }
-  let tmp43 = null;
+  let tmp44 = null;
   if (first1) {
-    class J {
-      constructor(children) {
-        const obj = { variant: "text-xs/medium", color: "text-subtle", style: { marginBottom: 4 }, children };
-        return closure_4(first1(str[6]).Text, obj);
+    class G {
+      constructor() {
+        const obj = useStateFromStoresPerformanceDebugging;
+        const result = obj.setUseStateFromStoresExecutionCountWarningThreshold(str3);
       }
     }
     const obj5 = { title: "useStateFromStores Config", hasIcons: false, children: items6 };
@@ -360,15 +360,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     intl = tmp(tmp2[15]).intl;
     items9[1] = closure_4(TextField4, obj17);
     items6[3] = closure_4(TableRow4, obj15);
-    tmp43 = closure_6(TableRowGroup2, obj5);
+    tmp44 = closure_6(TableRowGroup2, obj5);
   }
   cResult[23] = str3;
   cResult[24] = str2;
   cResult[25] = str;
   cResult[26] = first2;
   cResult[27] = first1;
-  cResult[28] = tmp43;
-}) : (() => {
+  cResult[28] = tmp44;
+}) : (function DevToolsProfilingUseStateFromStores() {
   let closure_2;
   let closure_4;
   let closure_6;

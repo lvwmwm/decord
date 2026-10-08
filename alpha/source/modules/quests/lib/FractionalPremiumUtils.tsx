@@ -1,18 +1,18 @@
-// Module ID: 10022
-// Function ID: 10023
+// Module ID: 9553
+// Function ID: 9554
 // Name: FractionalPremiumUtils
-// Dependencies: [4534, 1126, 7205, 4558, 1102, 2]
+// Dependencies: [4726, 1126, 7384, 4750, 1102, 2]
 // Exports: getDurationStringOfFractionalPremium, getFractionalPremiumQuestRewardName, getFractionalPremiumQuestRewards
 
-// Module 10022 (FractionalPremiumUtils)
+// Module 9553 (FractionalPremiumUtils)
 import DurationsDefault from "Durations" /* 1102 */;
 import intl3 from "intl" /* 1126 */;
-import PremiumUtils from "PremiumUtils" /* 4534 */;
-import DateUtils from "DateUtils" /* 4558 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 7205 */;
+import PremiumUtils from "PremiumUtils" /* 4726 */;
+import DateUtils from "DateUtils" /* 4750 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 7384 */;
 import size from "module_2" /* 2 */;
 
-const f102492 = (type) => type.type === QuestRewardTypes.QuestRewardTypes.FRACTIONAL_PREMIUM;
+const f101063 = (type) => type.type === QuestRewardTypes.QuestRewardTypes.FRACTIONAL_PREMIUM;
 const result = size.fileFinishedImporting("modules/quests/lib/FractionalPremiumUtils.tsx");
 
 export const getDurationStringOfFractionalPremium = function getDurationStringOfFractionalPremium(arr) {
@@ -32,12 +32,12 @@ export const getDurationStringOfFractionalPremium = function getDurationStringOf
 };
 export const getFractionalPremiumQuestRewards = function getFractionalPremiumQuestRewards(rewardsConfig) {
   const rewards = rewardsConfig.rewardsConfig.rewards;
-  return rewards.filter(f102492);
+  return rewards.filter(f101063);
 };
 export const getFractionalPremiumQuestRewardName = function getFractionalPremiumQuestRewardName(rewardsConfig) {
   let obj6;
   const rewards = rewardsConfig.rewardsConfig.rewards;
-  const found = rewards.filter(f102492);
+  const found = rewards.filter(f101063);
   const flatMapResult = found.flatMap((quantity) => {
     const ArrayResult = Array(quantity.quantity);
     return ArrayResult.fill(quantity.skuId);

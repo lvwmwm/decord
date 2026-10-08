@@ -1,9 +1,9 @@
-// Module ID: 16958
-// Function ID: 16959
+// Module ID: 17239
+// Function ID: 17240
 // Name: useOnMessageSend
 // Dependencies: [19, 1085, 558, 576, 584, 2]
 
-// Module 16958 (useOnMessageSend)
+// Module 17239 (useOnMessageSend)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import react from "react" /* 19 */;
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require;
 
 const MessageStates = Constants.MessageStates;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnMessageSend(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let obj = require("react");
@@ -71,7 +71,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[3] = items;
   tmp4 = items;
   tmp3 = fn;
-}) : ((arg0) => {
+}) : (function useOnMessageSend(arg0) {
   let closure_0 = arg0;
   const tmp = arg1;
   let closure_1 = tmp;

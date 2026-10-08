@@ -1,15 +1,15 @@
-// Module ID: 13623
-// Function ID: 13624
+// Module ID: 13446
+// Function ID: 13447
 // Name: OngoingCallStatusLabel
-// Dependencies: [19, 502, 5444, 4915, 21, 558, 576, 504, 1126, 13622, 1188, 2]
+// Dependencies: [19, 502, 5754, 5111, 21, 558, 576, 504, 1126, 13445, 1200, 2]
 
-// Module 13623 (OngoingCallStatusLabel)
+// Module 13446 (OngoingCallStatusLabel)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 5444 */;
-import VoiceStateStore from "VoiceStateStore" /* 4915 */;
+import CallStore from "CallStore" /* 5754 */;
+import VoiceStateStore from "VoiceStateStore" /* 5111 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,10 +17,10 @@ const require = globalThis.__r;
 let _require, num, num2, tmp6;
 
 let tmp;
-const native = tmp(1188);
+const native = tmp(1200);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOngoingCallStatus(arg0, arg1, arg2) {
   let closure_0;
   let first;
   let stringResult1;
@@ -298,7 +298,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg
   }
   const intl = tmp(tmp2[8]).intl;
   stringResult1 = intl.string(tmp(tmp2[8]).t["NGg/fm"]);
-}) : ((arg0, arg1) => {
+}) : (function useOngoingCallStatus(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let flag = arg2;
@@ -347,7 +347,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg
   stringResult1 = intl3.string(tmp2(tmp3[8]).t["NGg/fm"]);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OngoingCallStatusLabel(arg0) {
   let channel;
   let style;
   let useAllAloneText;
@@ -374,7 +374,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4Result;
   cResult[2] = tmp8;
   tmp7 = tmp8;
-}) : ((useAllAloneText) => {
+}) : (function OngoingCallStatusLabel(useAllAloneText) {
   let channel;
   let style;
   let voiceState;

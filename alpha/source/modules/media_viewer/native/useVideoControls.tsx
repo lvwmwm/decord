@@ -1,19 +1,19 @@
-// Module ID: 7947
-// Function ID: 7948
+// Module ID: 8365
+// Function ID: 8366
 // Name: useVideoControls
-// Dependencies: [32, 19, 4885, 21, 570, 1259, 7948, 4896, 558, 576, 504, 7949, 7957, 7950, 7945, 7958, 2]
+// Dependencies: [32, 19, 5079, 21, 570, 1271, 8366, 5090, 558, 576, 504, 8367, 5928, 8368, 8363, 8375, 2]
 // Exports: initVideoStateStore, setMuted, setPausedState, setVideoStateControls, toggleMuted, tryPauseCurrentVideo, unpauseCurrentVideoIfNeeded
 
-// Module 7947 (useVideoControls)
+// Module 8365 (useVideoControls)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 1259 */;
-import useMediaViewerSources from "useMediaViewerSources" /* 7945 */;
-import MediaPlayerMuteManager from "MediaPlayerMuteManager" /* 7948 */;
+import react_native from "react-native" /* 1271 */;
+import useMediaViewerSources from "useMediaViewerSources" /* 8363 */;
+import MediaPlayerMuteManager from "MediaPlayerMuteManager" /* 8366 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import module_570 from "module_570" /* 570 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let _slicedToArray = _slicedToArray_mod;
 const jsx = Fragment.jsx;
 const useVideoStateStore = module_570.create(() => ({ controls: "Reflect", paused: true }));
 let closure_8 = createStyles.createStyles({ slider: { marginBottom: 8 } });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, portal, controls) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoControls(arg0, portal, controls) {
   let closure_0;
   let closure_3;
   let mediaItemHasSpoiler;
@@ -87,16 +87,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, portal, contro
               }
               const effect = obj3.useEffect(tmp17, tmp18);
               if (cResult[11] !== arg0) {
-                class V {
+                class C {
                   constructor() {
                     const obj = useMediaViewerSources;
                     obj.removeSpoiler(closure_0);
                   }
                 }
                 cResult[11] = arg0;
-                cResult[12] = V;
+                cResult[12] = C;
               } else {
-                class V {
+                class C {
                   constructor() {
                     const obj = useMediaViewerSources;
                     obj.removeSpoiler(closure_0);
@@ -104,7 +104,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, portal, contro
                 }
               }
               if (result) {
-                class V {
+                class C {
                   constructor() {
                     const obj = useMediaViewerSources;
                     obj.removeSpoiler(closure_0);
@@ -119,7 +119,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, portal, contro
                 cResult[18] = videoURI(require("MediaSlider"), obj2, videoURI);
                 const tmp23 = videoURI(require("MediaSlider"), obj2, videoURI);
               } else {
-                class V {
+                class C {
                   constructor() {
                     const obj = useMediaViewerSources;
                     obj.removeSpoiler(closure_0);
@@ -132,19 +132,21 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, portal, contro
       }
     }
   }
-  const fn2 = function y() {
-    if (useReducedMotion !== closure_0) {
-      if (null != tmp) {
-        if (null != videoURI) {
-          if (closure_7 !== tmp3) {
-            controls.seek(0);
-            controls.pause(mediaItemHasSpoiler || stateFromStores);
-            tmp11(mediaItemHasSpoiler || stateFromStores);
+  class V {
+    constructor() {
+      if (useReducedMotion !== closure_0) {
+        if (null != tmp) {
+          if (null != videoURI) {
+            if (closure_7 !== tmp3) {
+              controls.seek(0);
+              controls.pause(mediaItemHasSpoiler || stateFromStores);
+              tmp11(mediaItemHasSpoiler || stateFromStores);
+            }
           }
         }
       }
     }
-  };
+  }
   const items1 = [controls, videoURI, stateFromStores, tmp16, mediaItemHasSpoiler, tmp14, arg0];
   cResult[2] = controls;
   cResult[3] = mediaItemHasSpoiler;
@@ -153,11 +155,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, portal, contro
   cResult[6] = tmp16;
   cResult[7] = videoURI;
   cResult[8] = stateFromStores;
-  cResult[9] = fn2;
+  cResult[9] = V;
   cResult[10] = items1;
   tmp18 = items1;
-  tmp17 = fn2;
-}) : ((arg0, portal, controls) => {
+  tmp17 = V;
+}) : (function useVideoControls(arg0, portal, controls) {
   let closure_0;
   let closure_3;
   let mediaItemHasSpoiler;

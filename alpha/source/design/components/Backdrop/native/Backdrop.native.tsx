@@ -1,20 +1,20 @@
-// Module ID: 5778
-// Function ID: 5779
+// Module ID: 5361
+// Function ID: 5362
 // Name: Backdrop
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1126, 4595, 1618, 5779, 4618, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1126, 4787, 1630, 5362, 4810, 2]
 
-// Module 5778 (Backdrop)
+// Module 5361 (Backdrop)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import native from "native" /* 4595 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4618 */;
-import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5779 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import native from "native" /* 4787 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4810 */;
+import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5362 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM };
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.MOBILE_BACKGROUND_SCRIM_OPAQUE };
 let closure_7 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Backdrop(arg0) {
   let accessibilityLabel;
   let accessibleDismissStyle;
   let animatedProps;
@@ -196,7 +196,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = tmp8.fill;
   cResult[6] = items3;
   tmp11 = items3;
-}) : ((animatedProps) => {
+}) : (function Backdrop(animatedProps) {
   let accessibilityLabel;
   let accessibleDismissStyle;
   let items;

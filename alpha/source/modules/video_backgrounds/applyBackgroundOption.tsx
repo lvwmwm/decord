@@ -1,22 +1,22 @@
-// Module ID: 8085
-// Function ID: 8086
+// Module ID: 5251
+// Function ID: 5252
 // Name: applyBackgroundOption
-// Dependencies: [5, 1377, 8086, 6491, 1085, 8087, 4951, 8092, 1402, 8097, 8090, 8089, 8098, 2]
+// Dependencies: [5, 1389, 5252, 5253, 1085, 5254, 5135, 5259, 1414, 5264, 5257, 5256, 5265, 2]
 // Exports: applyBackgroundOptionPreview, applyInitialVideoBackgroundOption
 
-// Module 8085 (applyBackgroundOption)
+// Module 5251 (applyBackgroundOption)
 import Constants from "Constants" /* 1085 */;
-import AvatarUtils from "AvatarUtils" /* 1402 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4951 */;
-import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 8087 */;
-import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 8089 */;
-import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 8092 */;
-import getFilterImageDefault from "getFilterImage" /* 8097 */;
-import isVideoBackgroundEnabledDefault from "isVideoBackgroundEnabled" /* 8098 */;
+import AvatarUtils from "AvatarUtils" /* 1414 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5135 */;
+import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 5254 */;
+import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 5256 */;
+import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 5259 */;
+import getFilterImageDefault from "getFilterImage" /* 5264 */;
+import isVideoBackgroundEnabledDefault from "isVideoBackgroundEnabled" /* 5265 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1377 */;
-import VideoBackgroundStore from "VideoBackgroundStore" /* 8086 */;
-import VideoBackgroundConstants from "VideoBackgroundConstants" /* 6491 */;
+import UserStore from "UserStore" /* 1389 */;
+import VideoBackgroundStore from "VideoBackgroundStore" /* 5252 */;
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5253 */;
 import size from "module_2" /* 2 */;
 
 let c8, c9;

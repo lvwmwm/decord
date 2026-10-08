@@ -1,22 +1,22 @@
-// Module ID: 6917
-// Function ID: 6918
+// Module ID: 7106
+// Function ID: 7107
 // Name: GuildBoostingSubscribeButton
-// Dependencies: [5, 19, 17, 6918, 1085, 5621, 1379, 21, 6919, 5099, 5619, 558, 576, 13399, 1490, 6664, 573, 1385, 12212, 1126, 5886, 5601, 2]
+// Dependencies: [5, 19, 17, 7107, 1085, 5966, 1391, 21, 7108, 5940, 5964, 558, 576, 13699, 1502, 6841, 573, 1397, 12291, 1126, 8198, 5375, 2]
 
-// Module 6917 (GuildBoostingSubscribeButton)
+// Module 7106 (GuildBoostingSubscribeButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 5621 */;
-import GuildBoostPurchasingUtils from "GuildBoostPurchasingUtils" /* 6919 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 5966 */;
+import GuildBoostPurchasingUtils from "GuildBoostPurchasingUtils" /* 7108 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 6918 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7107 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_3, guild, navigation;
+let closure_3, navigation;
 
 let c10;
 let c9;
@@ -97,7 +97,7 @@ let View = react_native.View;
 let closure_11 = PremiumGuildSubscribeConstants.PremiumGuildSubscribeModalScenes;
 const FractionalPremiumStates = PremiumConstants.FractionalPremiumStates;
 let jsx = Fragment.jsx;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostingSubscribeButton(guild) {
   let analyticsSection;
   let closure_13;
   let fractionalPremiumState;
@@ -126,7 +126,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const analyticsLocations = previousGuildSubscriptionSlot(analyticsSection[15])().analyticsLocations;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [boostSlots];
-    const fn = function n() {
+    const fn = function l() {
       const keys = Object.keys(boostSlots.boostSlots);
       return keys.some((item) => {
         const tmp = null == boostSlots.boostSlots[item].premiumGuildSubscription && !boostSlots.boostSlots[item].isOnCooldown();
@@ -350,7 +350,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   cResult[6] = guild.onResult;
   cResult[7] = fn2;
   tmp11 = fn2;
-}) : ((guild) => {
+}) : (function GuildBoostingSubscribeButton(guild) {
   let Button;
   let closure_13;
   let fractionalPremiumState;

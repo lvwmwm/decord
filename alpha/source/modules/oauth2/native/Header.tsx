@@ -1,21 +1,21 @@
-// Module ID: 8989
-// Function ID: 8990
+// Module ID: 12889
+// Function ID: 12890
 // Name: Header
-// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 1402, 1188, 4892, 8990, 1390, 1126, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 587, 558, 576, 1414, 1200, 5086, 8741, 1402, 1126, 2]
 
-// Module 8989 (Header)
+// Module 12889 (Header)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1188 */;
-import FlagUtils from "FlagUtils" /* 1390 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import BotTagDefault from "BotTag" /* 8990 */;
+import native from "native" /* 1200 */;
+import FlagUtils from "FlagUtils" /* 1402 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import BotTagDefault from "BotTag" /* 8741 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ obj2 = { paddingBottom: 16, marginHorizontal: 16, borderTopLeftRadius: nativeDef
 createStyles = createStyles.createStyles;
 size = { width: 4, height: 4, marginHorizontal: 2, backgroundColor: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, opacity: 0.1, borderRadius: 2 };
 let closure_7 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header(arg0) {
   let accountScopes;
   let application;
   let bot;
@@ -70,7 +70,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[5] !== tmp5) {
       const obj3 = { source: tmp5, size: native.AvatarSizes.XLARGE };
-      const Avatar = tmp(1188).Avatar;
+      const Avatar = tmp(1200).Avatar;
       const tmp13 = hasOwnProperty(Avatar, obj3);
       cResult[5] = tmp5;
       cResult[6] = tmp13;
@@ -107,7 +107,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           if (cResult[16] !== tmp7) {
             const obj8 = { source: tmp7, size: native.AvatarSizes.XLARGE };
-            const Avatar2 = tmp(1188).Avatar;
+            const Avatar2 = tmp(1200).Avatar;
             const tmp28 = hasOwnProperty(Avatar2, obj8);
             cResult[16] = tmp7;
             cResult[17] = tmp28;
@@ -248,7 +248,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = application.id;
   cResult[2] = applicationIconSource;
   tmp5 = applicationIconSource;
-}) : ((accountScopes) => {
+}) : (function Header(accountScopes) {
   let application;
   let bot;
   let hasFlagResult;
@@ -304,7 +304,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   items3[1] = tmp8Result;
   items2[1] = metroRequire(View, obj11);
-  const Text = tmp9(4892).Text;
+  const Text = tmp9(5086).Text;
   if (accountScopes.length > 0) {
     const intl2 = tmp9(1126).intl;
     stringResult = intl2.string(tmp9(1126).t.jFbDnJ);

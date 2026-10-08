@@ -1,26 +1,30 @@
 // Module ID: 14151
 // Function ID: 14152
-// Dependencies: [14152, 14156, 14159]
+// Dependencies: [14152]
 
 // Module 14151
 import _mod14152 from "module_14152" /* 14152 */;
-import _mod14156 from "module_14156" /* 14156 */;
-import _mod14159 from "module_14159" /* 14159 */;
 
-const obj = {};
-const _URL = _mod14152.URL;
-_URL.install(obj);
-const _URLSearchParams = _mod14152.URLSearchParams;
-_URLSearchParams.install(obj);
-({ URL: exports.URL, URLSearchParams: exports.URLSearchParams } = obj);
 
-export const parseURL = _mod14156.parseURL;
-export const basicURLParse = _mod14156.basicURLParse;
-export const serializeURL = _mod14156.serializeURL;
-export const serializeHost = _mod14156.serializeHost;
-export const serializeInteger = _mod14156.serializeInteger;
-export const serializeURLOrigin = _mod14156.serializeURLOrigin;
-export const setTheUsername = _mod14156.setTheUsername;
-export const setThePassword = _mod14156.setThePassword;
-export const cannotHaveAUsernamePasswordPort = _mod14156.cannotHaveAUsernamePasswordPort;
-export const percentDecode = _mod14159.percentDecode;
+export default function(arg0, arg1) {
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = false;
+  }
+  if (arg0 instanceof _mod14152) {
+    return arg0;
+  } else {
+    try {
+      const self = this;
+      const self2 = this;
+      const tmp5 = new _mod14152(arg0, arg1);
+      return tmp5;
+    } catch (tmp7) {
+      if (flag) {
+        throw tmp7;
+      } else {
+        return null;
+      }
+    }
+  }
+};

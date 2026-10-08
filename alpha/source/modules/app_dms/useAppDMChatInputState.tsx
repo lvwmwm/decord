@@ -1,36 +1,34 @@
-// Module ID: 13121
-// Function ID: 13122
+// Module ID: 12835
+// Function ID: 12836
 // Name: useAppDMChatInputState
-// Dependencies: [19, 8827, 5124, 7124, 2009, 1377, 1085, 1985, 558, 576, 504, 7869, 584, 6670, 2]
+// Dependencies: [19, 9186, 5436, 7309, 2021, 1389, 1085, 1997, 558, 576, 504, 8287, 584, 6847, 2]
 
-// Module 13121 (useAppDMChatInputState)
+// Module 12835 (useAppDMChatInputState)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import Server from "Server" /* 1985 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7869 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8827 */;
+import Server from "Server" /* 1997 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8287 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9186 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5124 */;
-import UserProfileStore from "UserProfileStore" /* 7124 */;
-import ApplicationRecord from "ApplicationRecord" /* 2009 */;
-import UserStore from "UserStore" /* 1377 */;
+import ApplicationStore from "ApplicationStore" /* 5436 */;
+import UserProfileStore from "UserProfileStore" /* 7309 */;
+import ApplicationRecord from "ApplicationRecord" /* 2021 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let user;
 
 const useQueryState = ApplicationCommandIndexStore.useQueryState;
 const EMPTY_STRING_SNOWFLAKE_ID = Constants.EMPTY_STRING_SNOWFLAKE_ID;
 let items = [Server.ApplicationCommandType.PRIMARY_ENTRY_POINT, Server.ApplicationCommandType.CHAT, Server.ApplicationCommandType.MESSAGE, Server.ApplicationCommandType.USER];
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
-  let fn2;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppDMChatInputState(context) {
+  let _require;
   let tmp13;
   let tmp16;
   let tmp18;
-  let tmp23;
-  let tmp37;
-  let tmp47;
+  let tmp45;
   let tmp9;
   const tmp = _require;
   let tmp2 = dependencyMap;
@@ -43,7 +41,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
     if (true === channel.isDM()) {
       let tmp5;
       if (cResult[0] !== channel) {
-        const user = UserStore.getUser(channel.getRecipientId());
+        user = UserStore.getUser(channel.getRecipientId());
         cResult[0] = channel;
         cResult[1] = user;
         tmp5 = user;
@@ -78,24 +76,36 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
     if (tmp4 != null) {
       id1 = tmp4.id;
     }
-    const fn = function y() {
-      let id;
-      const getAppIdForBotUserId = ApplicationStore.getAppIdForBotUserId;
-      if (user != null) {
-        id = user.id;
+    class M {
+      constructor() {
+        let id;
+        const getAppIdForBotUserId = ApplicationStore.getAppIdForBotUserId;
+        if (user != null) {
+          id = user.id;
+        }
+        return getAppIdForBotUserId(id);
       }
-      return getAppIdForBotUserId(id);
-    };
+    }
     cResult[3] = id1;
-    cResult[4] = fn;
-    tmp13 = fn;
+    cResult[4] = M;
+    tmp13 = M;
   } else {
     tmp13 = cResult[4];
   }
   const tmpResult = tmp(504);
-  let stateFromStores = tmpResult.useStateFromStores(tmp9, tmp13);
+  const stateFromStores = tmpResult.useStateFromStores(tmp9, tmp13);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [UserProfileStore];
+    const items1 = [];
+    class M {
+      constructor() {
+        let id;
+        const getAppIdForBotUserId = ApplicationStore.getAppIdForBotUserId;
+        if (user != null) {
+          id = user.id;
+        }
+        return getAppIdForBotUserId(id);
+      }
+    }
     cResult[5] = items1;
     tmp16 = items1;
   } else {
@@ -121,7 +131,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
         return tmp2;
       }
     }
-    cResult[6] = tmp4;
+    class M {
+      constructor() {
+        let id;
+        const getAppIdForBotUserId = ApplicationStore.getAppIdForBotUserId;
+        if (user != null) {
+          id = user.id;
+        }
+        return getAppIdForBotUserId(id);
+      }
+    }
     cResult[7] = E;
     tmp18 = E;
   } else {
@@ -145,8 +164,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
       }
     }
   }
-  const tmpResult3 = tmp(504);
-  const stateFromStores1 = tmpResult3.useStateFromStores(tmp16, tmp18);
+  const tmpResult2 = tmp(504);
+  const stateFromStores1 = tmpResult2.useStateFromStores(tmp16, tmp18);
   if (stateFromStores == null) {
     class E {
       constructor() {
@@ -188,7 +207,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
         }
       }
     }
-    stateFromStores = tmp20;
+    class M {
+      constructor() {
+        let id;
+        const getAppIdForBotUserId = ApplicationStore.getAppIdForBotUserId;
+        if (user != null) {
+          id = user.id;
+        }
+        return getAppIdForBotUserId(id);
+      }
+    }
   }
   if (cResult[8] === stateFromStores) {
     class E {
@@ -210,29 +238,18 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
         return tmp2;
       }
     }
-    const tmp21 = cResult[9];
-    if (tmp4 != null) {
-      class E {
-        constructor() {
-          let tmp2;
-          if (null !== user) {
-            let id;
-            const getUserProfile = UserProfileStore.getUserProfile;
-            if (user != null) {
-              id = tmp.id;
-            }
-            const userProfile = getUserProfile(id);
-            let application;
-            if (userProfile != null) {
-              application = userProfile.application;
-            }
-            tmp2 = application;
-          }
-          return tmp2;
+    const tmp20 = cResult[9];
+    class M {
+      constructor() {
+        let id;
+        const getAppIdForBotUserId = ApplicationStore.getAppIdForBotUserId;
+        if (user != null) {
+          id = user.id;
         }
+        return getAppIdForBotUserId(id);
       }
     }
-    if (tmp21 === tmp22) {
+    if (tmp20 === tmp21) {
       class E {
         constructor() {
           let tmp2;
@@ -254,10 +271,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
       }
     }
     if (cResult[11] === stateFromStores) {
+      let tmp23;
       let tmp25;
-      let tmp27;
-      let tmp30;
-      let tmp32;
       class E {
         constructor() {
           let tmp2;
@@ -277,10 +292,19 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
           return tmp2;
         }
       }
-      const effect = react.useEffect(fn2, tmp23);
       const obj4 = react;
+      class M {
+        constructor() {
+          let id;
+          const getAppIdForBotUserId = ApplicationStore.getAppIdForBotUserId;
+          if (user != null) {
+            id = user.id;
+          }
+          return getAppIdForBotUserId(id);
+        }
+      }
       if (cResult[14] !== tmp4) {
-        class U {
+        class D {
           constructor() {
             let id;
             if (user != null) {
@@ -293,11 +317,20 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
             }
           }
         }
-        cResult[14] = tmp4;
-        cResult[15] = U;
-        tmp25 = U;
+        class M {
+          constructor() {
+            let id;
+            const getAppIdForBotUserId = ApplicationStore.getAppIdForBotUserId;
+            if (user != null) {
+              id = user.id;
+            }
+            return getAppIdForBotUserId(id);
+          }
+        }
+        cResult[15] = D;
+        tmp23 = D;
       } else {
-        class U {
+        class D {
           constructor() {
             let id;
             if (user != null) {
@@ -312,7 +345,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
         }
       }
       if (tmp4 != null) {
-        class U {
+        class D {
           constructor() {
             let id;
             if (user != null) {
@@ -327,7 +360,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
         }
       }
       if (cResult[16] !== undefined) {
-        class U {
+        class D {
           constructor() {
             let id;
             if (user != null) {
@@ -340,12 +373,22 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
             }
           }
         }
-        tmp28[0] = undefined;
+        tmp26[0] = undefined;
+        class M {
+          constructor() {
+            let id;
+            const getAppIdForBotUserId = ApplicationStore.getAppIdForBotUserId;
+            if (user != null) {
+              id = user.id;
+            }
+            return getAppIdForBotUserId(id);
+          }
+        }
         cResult[16] = undefined;
-        cResult[17] = tmp28;
-        tmp27 = tmp28;
+        cResult[17] = tmp26;
+        tmp25 = tmp26;
       } else {
-        class U {
+        class D {
           constructor() {
             let id;
             if (user != null) {
@@ -359,9 +402,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
           }
         }
       }
-      const effect1 = obj4.useEffect(tmp25, tmp27);
+      const effect = obj4.useEffect(tmp23, tmp25);
       if (cResult[18] !== channel) {
-        class U {
+        class D {
           constructor() {
             let id;
             if (user != null) {
@@ -374,12 +417,21 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
             }
           }
         }
-        tmp31[0] = channel;
+        tmp29[0] = channel;
+        class M {
+          constructor() {
+            let id;
+            const getAppIdForBotUserId = ApplicationStore.getAppIdForBotUserId;
+            if (user != null) {
+              id = user.id;
+            }
+            return getAppIdForBotUserId(id);
+          }
+        }
         cResult[18] = channel;
-        cResult[19] = tmp31;
-        tmp30 = tmp31;
+        cResult[19] = tmp29;
       } else {
-        class U {
+        class D {
           constructor() {
             let id;
             if (user != null) {
@@ -395,7 +447,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
       }
       const _Symbol = Symbol;
       if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-        class U {
+        class D {
           constructor() {
             let id;
             if (user != null) {
@@ -408,11 +460,19 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
             }
           }
         }
-        tmp33[0] = items;
-        cResult[20] = tmp33;
-        tmp32 = tmp33;
+        class M {
+          constructor() {
+            let id;
+            const getAppIdForBotUserId = ApplicationStore.getAppIdForBotUserId;
+            if (user != null) {
+              id = user.id;
+            }
+            return getAppIdForBotUserId(id);
+          }
+        }
+        cResult[20] = tmp31;
       } else {
-        class U {
+        class D {
           constructor() {
             let id;
             if (user != null) {
@@ -427,7 +487,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
         }
       }
       if (tmp4 != null) {
-        class U {
+        class D {
           constructor() {
             let id;
             if (user != null) {
@@ -442,7 +502,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
         }
       }
       if (cResult[21] === stateFromStores) {
-        class U {
+        class D {
           constructor() {
             let id;
             if (user != null) {
@@ -455,9 +515,18 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
             }
           }
         }
-        const tmp39 = useQueryState(tmp30, tmp32, tmp37);
+        class M {
+          constructor() {
+            let id;
+            const getAppIdForBotUserId = ApplicationStore.getAppIdForBotUserId;
+            if (user != null) {
+              id = user.id;
+            }
+            return getAppIdForBotUserId(id);
+          }
+        }
         if (cResult[24] === stateFromStores) {
-          class U {
+          class D {
             constructor() {
               let id;
               if (user != null) {
@@ -470,9 +539,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
               }
             }
           }
-          if (cResult[27] !== tmp40) {
+          if (cResult[27] !== tmp38) {
             let fromServer;
-            class U {
+            class D {
               constructor() {
                 let id;
                 if (user != null) {
@@ -485,8 +554,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
                 }
               }
             }
-            if (null != tmp40) {
-              class U {
+            if (null != tmp38) {
+              class D {
                 constructor() {
                   let id;
                   if (user != null) {
@@ -499,12 +568,22 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
                   }
                 }
               }
-              fromServer = ApplicationRecord.createFromServer(tmp40);
+              fromServer = ApplicationRecord.createFromServer(tmp38);
             }
-            cResult[27] = tmp40;
+            class M {
+              constructor() {
+                let id;
+                const getAppIdForBotUserId = ApplicationStore.getAppIdForBotUserId;
+                if (user != null) {
+                  id = user.id;
+                }
+                return getAppIdForBotUserId(id);
+              }
+            }
+            cResult[27] = tmp38;
             cResult[28] = fromServer;
           } else {
-            class U {
+            class D {
               constructor() {
                 let id;
                 if (user != null) {
@@ -518,10 +597,19 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
               }
             }
           }
-          const useGetOrFetchApplication = tmp(6670).useGetOrFetchApplication;
-          tmp(6670);
-          if (null == tmp43) {
-            class U {
+          class M {
+            constructor() {
+              let id;
+              const getAppIdForBotUserId = ApplicationStore.getAppIdForBotUserId;
+              if (user != null) {
+                id = user.id;
+              }
+              return getAppIdForBotUserId(id);
+            }
+          }
+          const useGetOrFetchApplication = tmp43.useGetOrFetchApplication;
+          if (null == tmp41) {
+            class D {
               constructor() {
                 let id;
                 if (user != null) {
@@ -535,8 +623,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
               }
             }
           }
-          if (tmp43 == null) {
-            class U {
+          if (tmp41 == null) {
+            class D {
               constructor() {
                 let id;
                 if (user != null) {
@@ -550,8 +638,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
               }
             }
           }
-          if (tmp43 == null) {
-            class U {
+          if (tmp41 == null) {
+            class D {
               constructor() {
                 let id;
                 if (user != null) {
@@ -566,7 +654,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
             }
           }
           if (tmp4 != null) {
-            class U {
+            class D {
               constructor() {
                 let id;
                 if (user != null) {
@@ -581,7 +669,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
             }
           }
           if (undefined == null) {
-            class U {
+            class D {
               constructor() {
                 let id;
                 if (user != null) {
@@ -595,8 +683,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
               }
             }
           }
-          if (cResult[29] === tmp43) {
-            class U {
+          if (cResult[29] === tmp41) {
+            class D {
               constructor() {
                 let id;
                 if (user != null) {
@@ -609,15 +697,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
                 }
               }
             }
-            return tmp47;
+            return tmp45;
           }
-          let obj2 = { application: tmp43, isAppDM: undefined };
-          cResult[29] = tmp43;
+          let obj2 = { application: tmp41, isAppDM: undefined };
+          cResult[29] = tmp41;
           cResult[30] = undefined;
           cResult[31] = obj2;
-          tmp47 = obj2;
+          tmp45 = obj2;
         }
-        const descriptors = tmp39.descriptors;
+        const descriptors = tmp37.descriptors;
         const found = descriptors.find((application) => {
           application = application.application;
           let id;
@@ -627,7 +715,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
           return id === stateFromStores;
         });
         if (found != null) {
-          class U {
+          class D {
             constructor() {
               let id;
               if (user != null) {
@@ -642,24 +730,22 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
           }
         }
         cResult[24] = stateFromStores;
-        cResult[25] = tmp39.descriptors;
+        cResult[25] = tmp37.descriptors;
         cResult[26] = undefined;
       }
       const obj3 = { applicationId: stateFromStores, allowFetch: null != undefined, allowApplicationState: true };
       cResult[21] = stateFromStores;
       cResult[22] = null != undefined;
       cResult[23] = obj3;
-      tmp37 = obj3;
     }
     const items2 = [tmp4, stateFromStores];
     cResult[11] = stateFromStores;
     cResult[12] = tmp4;
     cResult[13] = items2;
-    tmp23 = items2;
   }
   cResult[8] = stateFromStores;
   if (tmp4 != null) {
-    class U {
+    class D {
       constructor() {
         let id;
         if (user != null) {
@@ -673,7 +759,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
       }
     }
   }
-  fn2 = function b() {
+  const fn = function b() {
     if (null == stateFromStores) {
       let id;
       const tmp3 = maybeFetchUserProfileDefault;
@@ -687,8 +773,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
     }
   };
   cResult[9] = undefined;
-  cResult[10] = fn2;
-}) : ((context) => {
+  cResult[10] = fn;
+}) : (function useAppDMChatInputState(context) {
   let flag;
   let id2;
   let tmp16;
@@ -700,7 +786,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
   const memo = application.useMemo(() => {
     if (null != channel) {
       if (true === channel.isDM()) {
-        const user = UserStore.getUser(obj.getRecipientId());
+        user = UserStore.getUser(obj.getRecipientId());
         let tmp3 = null;
         if (undefined !== user) {
           tmp3 = null;

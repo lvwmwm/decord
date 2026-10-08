@@ -1,27 +1,27 @@
-// Module ID: 10965
-// Function ID: 10966
+// Module ID: 11158
+// Function ID: 11159
 // Name: QuestRewardCodeClaimBottomSheet
-// Dependencies: [19, 17, 7200, 5630, 21, 4896, 587, 558, 576, 1618, 504, 10966, 4574, 1126, 4813, 4860, 10018, 6695, 4580, 4849, 10968, 6652, 6651, 4892, 4883, 6000, 6081, 5601, 10971, 2]
+// Dependencies: [19, 17, 7379, 5977, 21, 5090, 587, 558, 576, 1630, 504, 11159, 4766, 1126, 5007, 5054, 9549, 6872, 4772, 5043, 11161, 6829, 6828, 5086, 5077, 6184, 6267, 5375, 11164, 2]
 
-// Module 10965 (QuestRewardCodeClaimBottomSheet)
+// Module 11158 (QuestRewardCodeClaimBottomSheet)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4813 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import QuestConstants from "QuestConstants" /* 5630 */;
-import ClipboardUtils from "ClipboardUtils" /* 6695 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 10018 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5007 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import QuestConstants from "QuestConstants" /* 5977 */;
+import ClipboardUtils from "ClipboardUtils" /* 6872 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9549 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestStore from "QuestStore" /* 7200 */;
+import QuestStore from "QuestStore" /* 7379 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, quest, questId;
+let BottomSheet;
 
 let c9;
 let closure_4;
@@ -39,7 +39,7 @@ let closure_10 = createStyles.createStyles((paddingBottom) => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestRewardCodeClaimBottomSheet(quest) {
   let claimCode;
   let fetchCode;
   let first;
@@ -579,7 +579,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   cResult[7] = rewardCode;
   cResult[8] = obj20;
   tmp10 = obj20;
-}) : ((quest) => {
+}) : (function QuestRewardCodeClaimBottomSheet(quest) {
   let BottomSheetTitleHeader;
   let TableRowGroup;
   let c3;
@@ -810,7 +810,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   stringResult = intl2.string(tmp4(tmp2[13]).t["23SS+z"]);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestRewardCodeClaimBottomSheetConnected(questId) {
   let first;
   let questContentPosition;
   let tmp6;
@@ -887,7 +887,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
     tmp8 = fn2;
   }
   return tmp9;
-}) : ((questContentPosition) => {
+}) : (function QuestRewardCodeClaimBottomSheetConnected(questContentPosition) {
   let questContent;
   let tmp5;
   ({ questId: require, questContent } = questContentPosition);

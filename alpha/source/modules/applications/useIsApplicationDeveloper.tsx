@@ -1,13 +1,13 @@
-// Module ID: 12270
-// Function ID: 12271
+// Module ID: 12349
+// Function ID: 12350
 // Name: useIsApplicationDeveloper
-// Dependencies: [19, 12271, 12272, 558, 576, 2028, 504, 12273, 2]
+// Dependencies: [19, 12350, 12351, 558, 576, 2040, 504, 12352, 2]
 
-// Module 12270 (useIsApplicationDeveloper)
-import DeveloperApplicationsConstants from "DeveloperApplicationsConstants" /* 12272 */;
-import DeveloperApplicationsActionCreators from "DeveloperApplicationsActionCreators" /* 12273 */;
+// Module 12349 (useIsApplicationDeveloper)
+import DeveloperApplicationsConstants from "DeveloperApplicationsConstants" /* 12351 */;
+import DeveloperApplicationsActionCreators from "DeveloperApplicationsActionCreators" /* 12352 */;
 import react from "react" /* 19 */;
-import DeveloperApplicationsStore from "DeveloperApplicationsStore" /* 12271 */;
+import DeveloperApplicationsStore from "DeveloperApplicationsStore" /* 12350 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 let _require;
 
 const constants = DeveloperApplicationsConstants.DeveloperApplicationsFetchState;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsApplicationDeveloper(arg0) {
   let closure_0;
   let fetchState;
   let setting;
@@ -29,7 +29,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   setting = DeveloperMode.useSetting();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [DeveloperApplicationsStore];
-    const fn = function n() {
+    const fn = function c() {
       return fetchState.getFetchState();
     };
     cResult[0] = items;
@@ -46,26 +46,23 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[2] = items1;
   }
   if (cResult[3] !== arg0) {
-    class S {
-      constructor() {
-        return DeveloperApplicationsStore.isDeveloperOfApplication(closure_0);
-      }
-    }
+    const fn2 = function v() {
+      return DeveloperApplicationsStore.isDeveloperOfApplication(closure_0);
+    };
     cResult[3] = arg0;
-    cResult[4] = S;
-  } else {
-    class S {
-      constructor() {
-        return DeveloperApplicationsStore.isDeveloperOfApplication(closure_0);
-      }
-    }
+    cResult[4] = fn2;
   }
   tmp(setting[6]);
   if (cResult[5] === arg0) {
-    class S {
-      constructor() {
-        return DeveloperApplicationsStore.isDeveloperOfApplication(closure_0);
+    if (cResult[6] === setting) {
+      let tmp14;
+      let tmp15;
+      if (cResult[7] === stateFromStores) {
+        tmp14 = cResult[8];
+        tmp15 = cResult[9];
       }
+      const effect = stateFromStores.useEffect(tmp14, tmp15);
+      return tmp13;
     }
   }
   class D {
@@ -83,7 +80,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = stateFromStores;
   cResult[8] = D;
   cResult[9] = items2;
-}) : ((arg0) => {
+  tmp15 = items2;
+  tmp14 = D;
+}) : (function useIsApplicationDeveloper(arg0) {
   let closure_0;
   let fetchState;
   let setting;

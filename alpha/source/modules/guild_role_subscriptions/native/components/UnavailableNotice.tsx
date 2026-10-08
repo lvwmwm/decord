@@ -1,18 +1,18 @@
-// Module ID: 16530
-// Function ID: 16531
+// Module ID: 16785
+// Function ID: 16786
 // Name: UnavailableNotice
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 5981, 16212, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 6164, 16472, 5086, 2]
 
-// Module 16530 (UnavailableNotice)
+// Module 16785 (UnavailableNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16212 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16472 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 createStyles = createStyles.createStyles;
 obj3 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 let closure_6 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnavailableNotice(arg0) {
   let brightTitle;
   let description;
   let items;
@@ -127,7 +127,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.unavailableContainer;
   cResult[2] = items2;
   tmp5 = items2;
-}) : ((brightTitle) => {
+}) : (function UnavailableNotice(brightTitle) {
   let description;
   let items;
   let items1;

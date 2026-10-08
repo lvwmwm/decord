@@ -1,15 +1,15 @@
-// Module ID: 9786
-// Function ID: 9787
+// Module ID: 10350
+// Function ID: 10351
 // Name: useSafeAreaInsetsSharedValue
-// Dependencies: [4618, 1618, 9176, 9787, 1631, 558, 1487, 2]
+// Dependencies: [4810, 1630, 10351, 10352, 1643, 558, 1499, 2]
 
-// Module 9786 (useSafeAreaInsetsSharedValue)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1487 */;
-import AppEntryKey from "AppEntryKey" /* 1631 */;
-import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 9176 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 9787 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 4618 */;
-import useSafeAreaInsets_mod from "useSafeAreaInsets" /* 1618 */;
+// Module 10350 (useSafeAreaInsetsSharedValue)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1499 */;
+import AppEntryKey from "AppEntryKey" /* 1643 */;
+import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 10351 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10352 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 4810 */;
+import useSafeAreaInsets_mod from "useSafeAreaInsets" /* 1630 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -56,10 +56,10 @@ const tmp7 = (() => {
   getSafeAreaInsetsWorklet.__initData = __initData;
   return getSafeAreaInsetsWorklet;
 })();
-const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafeAreaInsetsSharedValue() {
   obj = AppEntryKeyContext;
   return obj[obj.useAppEntryKey(obj)];
-}) : (() => {
+}) : (function useSafeAreaInsetsSharedValue() {
   obj = AppEntryKeyContext;
   return obj[obj.useAppEntryKey(obj)];
 });

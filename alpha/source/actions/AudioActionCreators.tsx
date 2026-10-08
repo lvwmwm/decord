@@ -1,32 +1,33 @@
-// Module ID: 8079
-// Function ID: 8080
+// Module ID: 5241
+// Function ID: 5242
 // Name: AudioActionCreators
-// Dependencies: [5, 8080, 2051, 1999, 4919, 2103, 1377, 1085, 8081, 4921, 3, 1252, 551, 584, 8082, 8084, 8085, 8101, 2]
+// Dependencies: [5, 5242, 5245, 2063, 2011, 5108, 2115, 1389, 1085, 5246, 5115, 3, 1264, 551, 584, 5247, 5223, 5251, 5268, 2]
 
-// Module 8079 (AudioActionCreators)
+// Module 5241 (AudioActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import debounceDefault from "debounce" /* 551 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Constants2 from "Constants" /* 4921 */;
-import Constants3 from "Constants" /* 8081 */;
-import AudioSettingsUtils from "AudioSettingsUtils" /* 8082 */;
-import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 8084 */;
-import applyBackgroundOption from "applyBackgroundOption" /* 8085 */;
-import StreamQualityUtils from "StreamQualityUtils" /* 8101 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import Constants2 from "Constants" /* 5115 */;
+import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 5223 */;
+import Constants3 from "Constants" /* 5246 */;
+import AudioSettingsUtils from "AudioSettingsUtils" /* 5247 */;
+import applyBackgroundOption from "applyBackgroundOption" /* 5251 */;
+import StreamQualityUtils from "StreamQualityUtils" /* 5268 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CertifiedDeviceStore from "CertifiedDeviceStore" /* 8080 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import UserStore from "UserStore" /* 1377 */;
+import SpatialAudioStore from "SpatialAudioStore" /* 5242 */;
+import CertifiedDeviceStore from "CertifiedDeviceStore" /* 5245 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
 
-let c10;
+let closure_12;
 let unpackModuleId;
 function trackDeviceChanged(inputDevices, inputDeviceId, found, Video) {
   let getCertifiedDeviceName2;
@@ -44,7 +45,7 @@ function trackDeviceChanged(inputDevices, inputDeviceId, found, Video) {
     let str = "";
     let str2 = "";
     const track = AnalyticsUtilsDefault.track;
-    const MEDIA_DEVICE_CHANGED = unpackModuleId.MEDIA_DEVICE_CHANGED;
+    const MEDIA_DEVICE_CHANGED = constants2.MEDIA_DEVICE_CHANGED;
     const getCertifiedDeviceName = CertifiedDeviceStore.getCertifiedDeviceName;
     AnalyticsUtilsDefault;
     if (null != inputDevices[inputDeviceId]) {
@@ -62,15 +63,15 @@ function trackDeviceChanged(inputDevices, inputDeviceId, found, Video) {
     track(MEDIA_DEVICE_CHANGED, obj);
   }
 }
-({ InputModes: c10, AnalyticEvents: unpackModuleId } = Constants);
+({ InputModes: unpackModuleId, AnalyticEvents: closure_12 } = Constants);
 const SoundOutputChannel = Constants3.SoundOutputChannel;
 const MediaEngineContextTypes = Constants2.MediaEngineContextTypes;
 let obj = new LoggerDefault("AudioActionCreators");
 obj.enableNativeLogger(true);
-let closure_15 = debounceDefault((target_user_id, context, volume) => {
+let closure_16 = debounceDefault((target_user_id, context, volume) => {
   obj = AnalyticsUtilsDefault;
   const obj2 = { target_user_id, context, volume, media_session_id: RTCConnectionStore.getMediaSessionId(), rtc_connection_id: RTCConnectionStore.getRTCConnectionId() };
-  obj.track(unpackModuleId.USER_VOLUME_SETTING_UPDATED, obj2);
+  obj.track(constants2.USER_VOLUME_SETTING_UPDATED, obj2);
 }, 300);
 function isNotSupported() {
   return false;
@@ -255,28 +256,24 @@ let obj2 = {
     const obj2 = DispatcherDefault;
     const obj3 = { type: "AUDIO_SET_LOCAL_VOLUME", context: DEFAULT, userId, volume: snapVolumeToDefaultResult };
     obj2.dispatch(obj3);
-    closure_15(userId, DEFAULT, snapVolumeToDefaultResult);
+    closure_16(userId, DEFAULT, snapVolumeToDefaultResult);
   },
-  setAudioMixerSettings(settings) {
-    let DEFAULT = arg1;
-    if (arg1 === undefined) {
-      DEFAULT = MediaEngineContextTypes.DEFAULT;
-    }
+  setSpatialAudioOverrides(overrides) {
     obj = DispatcherDefault;
-    const obj2 = { type: "AUDIO_SET_AUDIO_MIXER_SETTINGS", context: DEFAULT, settings };
+    const obj2 = { type: "AUDIO_SET_SPATIAL_AUDIO_OVERRIDES", overrides };
     obj.dispatch(obj2);
   },
-  setSpatialAudio(enabled, arg1) {
-    let obj2;
+  setSpatialAudioEnabled(enabled) {
+    obj = DispatcherDefault;
+    const obj2 = { type: "AUDIO_SET_SPATIAL_AUDIO_ENABLED", enabled };
+    obj.dispatch(obj2);
+  },
+  setSpatialAudio(arg0, arg1) {
     if (typeof isNotSupported === "function") {
-      const audioMixerSettings = MediaEngineStore.getAudioMixerSettings();
-      trackVoiceAndVideoSettingsUpdateDefault("spatial_audio_enabled", enabled, audioMixerSettings.enabled, arg1);
-      obj = { type: "AUDIO_SET_AUDIO_MIXER_SETTINGS", context: MediaEngineContextTypes.DEFAULT, settings: obj2 };
-      obj2 = { enabled };
-      const dispatch = DispatcherDefault.dispatch;
-      DispatcherDefault;
-      const merged = Object.assign(audioMixerSettings);
-      dispatch(obj);
+      const self = this;
+      const result = SpatialAudioStore.isSpatialAudioEnabled();
+      trackVoiceAndVideoSettingsUpdateDefault("spatial_audio_enabled", arg0, result, arg1);
+      const result1 = this.setSpatialAudioEnabled(arg0);
     } else {
       throw new TypeError("Trying to call a non-function");
     }
@@ -335,13 +332,13 @@ let obj2 = {
         const obj6 = { mode, location_stack: analyticsLocations, voice_channel_type: type, input_device_name: str2, audio_subsystem: audioSubsystem, audio_layer: audioLayer };
         type = undefined;
         const track2 = AnalyticsUtilsDefault.track;
-        const VOICE_ACTIVATION_MODE_CHANGED = unpackModuleId.VOICE_ACTIVATION_MODE_CHANGED;
+        const VOICE_ACTIVATION_MODE_CHANGED = constants2.VOICE_ACTIVATION_MODE_CHANGED;
         AnalyticsUtilsDefault;
         if (channel != null) {
           type = channel.type;
         }
         track2(VOICE_ACTIVATION_MODE_CHANGED, obj6);
-      } else if (mode === constants.VOICE_ACTIVITY) {
+      } else if (mode === unpackModuleId.VOICE_ACTIVITY) {
         if (modeOptions !== obj) {
           const mediaEngine2 = obj3.getMediaEngine();
           const audioSubsystem1 = mediaEngine2.getAudioSubsystem();
@@ -361,7 +358,7 @@ let obj2 = {
           const obj7 = { location_stack: analyticsLocations, voice_channel_type: type1, input_device_name: str, audio_subsystem: audioSubsystem1, audio_layer: audioLayer1, old_threshold: modeOptions.threshold, new_threshold: obj.threshold, old_auto_threshold: modeOptions.autoThreshold, new_auto_threshold: obj.autoThreshold };
           type1 = undefined;
           const track = AnalyticsUtilsDefault.track;
-          const VOICE_ACTIVITY_THRESHOLD_CHANGED = unpackModuleId.VOICE_ACTIVITY_THRESHOLD_CHANGED;
+          const VOICE_ACTIVITY_THRESHOLD_CHANGED = constants2.VOICE_ACTIVITY_THRESHOLD_CHANGED;
           AnalyticsUtilsDefault;
           if (channel1 != null) {
             type1 = channel1.type;
@@ -395,8 +392,8 @@ let obj2 = {
       }
       const obj4 = { volume, location_stack: tmp, voice_channel_type: type };
       type = undefined;
-      const track = tmp3(1252).track;
-      const MEDIA_INPUT_VOLUME_CHANGED = unpackModuleId.MEDIA_INPUT_VOLUME_CHANGED;
+      const track = tmp3(1264).track;
+      const MEDIA_INPUT_VOLUME_CHANGED = constants2.MEDIA_INPUT_VOLUME_CHANGED;
       AnalyticsUtilsDefault;
       if (channel != null) {
         type = channel.type;
@@ -419,8 +416,8 @@ let obj2 = {
       }
       const obj4 = { volume, location_stack: tmp, voice_channel_type: type };
       type = undefined;
-      const track = tmp3(1252).track;
-      const MEDIA_OUTPUT_VOLUME_CHANGED = unpackModuleId.MEDIA_OUTPUT_VOLUME_CHANGED;
+      const track = tmp3(1264).track;
+      const MEDIA_OUTPUT_VOLUME_CHANGED = constants2.MEDIA_OUTPUT_VOLUME_CHANGED;
       AnalyticsUtilsDefault;
       if (channel != null) {
         type = channel.type;
@@ -672,7 +669,7 @@ let obj2 = {
             } else {
               closure_0 = tmp;
               isNotSupported();
-              const tmp14 = c1(c2[15]);
+              const tmp14 = c1(c2[16]);
               c1 = 1;
               c2 = 1;
               const obj4 = { value: tmp14("debug_logging_enabled", closure_0, debugLogging.getDebugLogging()), done: false };
@@ -687,7 +684,7 @@ let obj2 = {
             return obj5;
           } else {
             const obj6 = { type: "AUDIO_SET_DEBUG_LOGGING", enabled: closure_128_0 };
-            obj = c1(c2[13]);
+            obj = c1(c2[14]);
             obj.dispatch(obj6);
             c2 = 3;
             return { value: "IconComponent", done: null };
@@ -762,7 +759,7 @@ let obj2 = {
             } else {
               closure_0 = tmp;
               isNotSupported();
-              const tmp14 = c1(c2[15]);
+              const tmp14 = c1(c2[16]);
               c1 = 1;
               c2 = 1;
               const obj4 = { value: tmp14("audio_subsystem", closure_0, audioSubsystem.getAudioSubsystem()), done: false };
@@ -777,7 +774,7 @@ let obj2 = {
             return obj5;
           } else {
             const obj6 = { type: "AUDIO_SET_SUBSYSTEM", subsystem: closure_128_0 };
-            obj = c1(c2[13]);
+            obj = c1(c2[14]);
             obj.dispatch(obj6);
             c2 = 3;
             return { value: "IconComponent", done: null };

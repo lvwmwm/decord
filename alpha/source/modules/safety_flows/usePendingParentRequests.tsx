@@ -1,35 +1,35 @@
-// Module ID: 18120
-// Function ID: 18121
+// Module ID: 18407
+// Function ID: 18408
 // Name: usePendingParentRequests
-// Dependencies: [32, 19, 7061, 1377, 7062, 558, 576, 504, 8328, 11541, 2]
+// Dependencies: [32, 19, 7247, 1389, 7248, 558, 576, 504, 7711, 11555, 2]
 
-// Module 18120 (usePendingParentRequests)
+// Module 18407 (usePendingParentRequests)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7062 */;
-import useUserLinks from "useUserLinks" /* 8328 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7248 */;
+import useUserLinks from "useUserLinks" /* 7711 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7061 */;
-import UserStore from "UserStore" /* 1377 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7247 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, currentUser, dependencyMap, map, pendingRequests, set;
+let _require, currentUser, dependencyMap, map, set;
 
 let tmp;
-const useFamilyCenterActions = tmp(11541);
+const useFamilyCenterActions = tmp(11555);
 const UserLinkStatus = FamilyCenterConstants.UserLinkStatus;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arr, arg1) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDerivedPendingRequests(arr, arg1) {
+  let avatar;
   let linkedUsers;
-  let tmp27;
   let tmp4;
   let tmp5;
   let tmp8;
   let tmp9;
-  let user_id;
+  let username;
   const obj = react2;
   const cResult = obj.c(11);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -66,48 +66,39 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arr, arg1) {
   }
   const tmpResult2 = get_initialized;
   const stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp9);
-  const tmp12 = arr;
+  let tmp12 = arr;
   if (arg1) {
+    let obj4;
     if (cResult[4] !== arr) {
       let tmp13;
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        class A {
-          constructor(parent_id) {
-            const items = [parent_id.parent_id, parent_id];
-            return items;
-          }
-        }
-        cResult[6] = A;
-        tmp13 = A;
+        const fn3 = function h(parent_id) {
+          const items = [parent_id.parent_id, parent_id];
+          return items;
+        };
+        cResult[6] = fn3;
+        tmp13 = fn3;
       } else {
-        class A {
-          constructor(parent_id) {
-            const items = [parent_id.parent_id, parent_id];
-            return items;
-          }
-        }
+        tmp13 = cResult[6];
       }
       const _Map = Map;
       const self = this;
       const self2 = this;
-      cResult[4] = arr;
-      cResult[5] = new Map(arr.map(tmp13));
       map = new Map(arr.map(tmp13));
+      cResult[4] = arr;
+      cResult[5] = map;
+      obj4 = map;
     } else {
-      class A {
-        constructor(parent_id) {
-          const items = [parent_id.parent_id, parent_id];
-          return items;
-        }
-      }
+      obj4 = cResult[5];
     }
     if (cResult[7] === stateFromStores1) {
-      class A {
-        constructor(parent_id) {
-          const items = [parent_id.parent_id, parent_id];
-          return items;
+      if (cResult[8] === stateFromStores) {
+        let tmp16;
+        if (cResult[9] === obj4) {
+          tmp16 = cResult[10];
         }
+        tmp12 = tmp16;
       }
     }
     const items2 = [];
@@ -116,108 +107,42 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arr, arg1) {
     const iter = values[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
-      class A {
-        constructor(parent_id) {
-          const items = [parent_id.parent_id, parent_id];
-          return items;
-        }
-      }
+      let tmp23 = nextResult;
       if (null != nextResult) {
-        class A {
-          constructor(parent_id) {
-            const items = [parent_id.parent_id, parent_id];
-            return items;
-          }
-        }
         if (tmp23.link_status === UserLinkStatus.PENDING) {
-          class A {
-            constructor(parent_id) {
-              const items = [parent_id.parent_id, parent_id];
-              return items;
-            }
-          }
           if (tmp23.requestor_id !== stateFromStores1) {
-            class A {
-              constructor(parent_id) {
-                const items = [parent_id.parent_id, parent_id];
-                return items;
-              }
-            }
             let user = UserStore.getUser(tmp23.user_id);
-            let tmp34 = user;
+            let tmp40 = user;
             let value = obj4.get(tmp23.user_id);
-            let obj2 = { parent_id: tmp23.user_id, parent_username: user_id, parent_avatar: tmp27, created_at: tmp23.created_at };
-            user_id = undefined;
+            let obj2 = { parent_id: tmp23.user_id, parent_username: username, parent_avatar: avatar, created_at: tmp23.created_at };
+            username = undefined;
             let push = items2.push;
             if (user != null) {
-              class A {
-                constructor(parent_id) {
-                  const items = [parent_id.parent_id, parent_id];
-                  return items;
-                }
-              }
+              username = user.username;
             }
-            if (user_id == null) {
-              class A {
-                constructor(parent_id) {
-                  const items = [parent_id.parent_id, parent_id];
-                  return items;
-                }
-              }
-              let tmp25;
+            if (username == null) {
+              let parent_username;
               if (value != null) {
-                class A {
-                  constructor(parent_id) {
-                    const items = [parent_id.parent_id, parent_id];
-                    return items;
-                  }
-                }
+                parent_username = value.parent_username;
               }
-              user_id = tmp25;
+              username = parent_username;
             }
-            if (user_id == null) {
-              class A {
-                constructor(parent_id) {
-                  const items = [parent_id.parent_id, parent_id];
-                  return items;
-                }
-              }
-              user_id = tmp23.user_id;
+            if (username == null) {
+              username = tmp23.user_id;
             }
-            tmp27 = undefined;
-            if (tmp34 != null) {
-              class A {
-                constructor(parent_id) {
-                  const items = [parent_id.parent_id, parent_id];
-                  return items;
-                }
-              }
+            avatar = undefined;
+            if (tmp40 != null) {
+              avatar = tmp40.avatar;
             }
-            if (tmp27 == null) {
-              class A {
-                constructor(parent_id) {
-                  const items = [parent_id.parent_id, parent_id];
-                  return items;
-                }
-              }
-              let tmp28;
+            if (avatar == null) {
+              let parent_avatar;
               if (value != null) {
-                class A {
-                  constructor(parent_id) {
-                    const items = [parent_id.parent_id, parent_id];
-                    return items;
-                  }
-                }
+                parent_avatar = value.parent_avatar;
               }
-              tmp27 = tmp28;
+              avatar = parent_avatar;
             }
-            if (tmp27 == null) {
-              class A {
-                constructor(parent_id) {
-                  const items = [parent_id.parent_id, parent_id];
-                  return items;
-                }
-              }
+            if (avatar == null) {
+              avatar = null;
             }
             arr = push(obj2);
           }
@@ -229,9 +154,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arr, arg1) {
     cResult[8] = stateFromStores;
     cResult[9] = obj4;
     cResult[10] = items2;
+    tmp16 = items2;
   }
   return tmp12;
-}) : ((arg0, arg1) => {
+}) : (function useDerivedPendingRequests(arg0, arg1) {
   let closure_0;
   let closure_1;
   let linkedUsers;
@@ -319,7 +245,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arr, arg1) {
   }, items2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingRequests) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingRequestListController(pendingRequests) {
   let closure_129_2;
   let closure_129_6;
   let closure_129_7;
@@ -328,13 +254,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingRequests) => 
   let isDeclineLoading;
   let linkedUsersProcessed;
   let onActionError;
+  let tmp12;
   let tmp14;
+  let tmp18;
   let tmp19;
-  let tmp20;
+  let tmp21;
   let tmp22;
   let tmp7;
   let tmp9;
   let tmp = require;
+  let tmp2 = dependencyMap;
   const obj = react2;
   const cResult = obj.c(20);
   pendingRequests = pendingRequests.pendingRequests;
@@ -373,94 +302,111 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingRequests) => 
   ({ isAcceptLoading, isDeclineLoading } = familyCenterActions);
   let closure_5 = tmp11;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class A {
-      constructor() {
-        set = new Set();
-        return set;
-      }
-    }
-    cResult[3] = A;
+    const fn2 = function h() {
+      set = new Set();
+      return set;
+    };
+    cResult[3] = fn2;
+    tmp12 = fn2;
   } else {
-    class A {
-      constructor() {
-        set = new Set();
-        return set;
-      }
-    }
+    tmp12 = cResult[3];
   }
   [closure_129_6, closure_129_7] = _slicedToArray(react.useState(tmp12), 2);
   _slicedToArray(react.useState(tmp12), 2);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class A {
-      constructor() {
-        set = new Set();
-        return set;
-      }
-    }
-    cResult[4] = tmp15;
-    tmp14 = tmp15;
+    const fn3 = function b(arg0) {
+      let closure_0 = arg0;
+      let tmp = closure_1_7(function(has) {
+        const tmp = closure_0;
+        if (has.has(closure_0)) {
+          return has;
+        } else {
+          const _Set = Set;
+          const self = this;
+          const self2 = this;
+          set = new Set(has);
+          set.add(tmp);
+          return set;
+        }
+      });
+    };
+    cResult[4] = fn3;
+    tmp14 = fn3;
   } else {
-    class A {
-      constructor() {
-        set = new Set();
-        return set;
-      }
-    }
+    tmp14 = cResult[4];
   }
   let closure_8 = tmp14;
   if (cResult[5] === acceptLinkRequest) {
-    class A {
-      constructor() {
-        set = new Set();
-        return set;
-      }
+    let tmp15;
+    if (cResult[6] === (isAcceptLoading || isDeclineLoading)) {
+      tmp15 = cResult[7];
     }
     if (cResult[8] === declineLinkRequest) {
-      class A {
-        constructor() {
-          set = new Set();
-          return set;
-        }
+      let tmp16;
+      if (cResult[9] === (isAcceptLoading || isDeclineLoading)) {
+        tmp16 = cResult[10];
       }
-      [tmp19, tmp20] = _slicedToArray(react.useState(pendingRequests), 2);
+      [tmp18, tmp19] = _slicedToArray(react.useState(pendingRequests), 2);
       _slicedToArray(react.useState(pendingRequests), 2);
-      [tmp22, r10090] = _slicedToArray(react.useState(pendingRequests), 2);
+      [tmp21, tmp22] = _slicedToArray(react.useState(pendingRequests), 2);
       _slicedToArray(react.useState(pendingRequests), 2);
-      _slicedToArray(react.useState(linkedUsersProcessed), 2);
+      const tmp5Result6 = _slicedToArray(react.useState(linkedUsersProcessed), 2);
       if (linkedUsersProcessed) {
-        class A {
-          constructor() {
-            set = new Set();
-            return set;
-          }
+        if (!tmp5Result6[0]) {
+          tmp24(true);
+          tmp22(pendingRequests);
+          tmp19((arg0) => {
+            map = new Map();
+            const iter = arg0[Symbol.iterator]();
+            const nextResult = iter.next();
+            while (iter !== undefined) {
+              let tmp2 = nextResult;
+              if (set.has(nextResult.parent_id)) {
+                let result = map.set(tmp2.parent_id, tmp2);
+              }
+              continue;
+            }
+            for (const item10027 of pendingRequests) {
+              let result1 = map.set(item10027.parent_id, item10027);
+              continue;
+            }
+            return Array.from(map.values());
+          });
         }
         if (cResult[11] === tmp7) {
-          class A {
-            constructor() {
-              set = new Set();
-              return set;
+          if (cResult[12] === tmp15) {
+            if (cResult[13] === tmp16) {
+              if (cResult[14] === hasMaxConnections) {
+                if (cResult[15] === isAcceptLoading) {
+                  if (cResult[16] === isDeclineLoading) {
+                    if (cResult[17] === (isAcceptLoading || isDeclineLoading)) {
+                      let tmp30;
+                      if (cResult[18] === tmp18) {
+                        tmp30 = cResult[19];
+                      }
+                      return tmp30;
+                    }
+                  }
+                }
+              }
             }
           }
         }
-        const obj5 = { seenRequests: tmp19, hasMaxConnections, actioningUserId: tmp7, isAcceptLoading, isDeclineLoading, actionsDisabled: isAcceptLoading || isDeclineLoading, handleAccept: tmp16, handleDecline: tmp17 };
+        const obj5 = { seenRequests: tmp18, hasMaxConnections, actioningUserId: tmp7, isAcceptLoading, isDeclineLoading, actionsDisabled: isAcceptLoading || isDeclineLoading, handleAccept: tmp15, handleDecline: tmp16 };
         cResult[11] = tmp7;
-        cResult[12] = tmp16;
-        cResult[13] = tmp17;
+        cResult[12] = tmp15;
+        cResult[13] = tmp16;
         cResult[14] = hasMaxConnections;
         cResult[15] = isAcceptLoading;
         cResult[16] = isDeclineLoading;
         cResult[17] = isAcceptLoading || isDeclineLoading;
-        cResult[18] = tmp19;
+        cResult[18] = tmp18;
         cResult[19] = obj5;
+        tmp30 = obj5;
       }
-      if (pendingRequests !== tmp22) {
-        class A {
-          constructor() {
-            set = new Set();
-            return set;
-          }
-        }
-        tmp20((arr) => {
+      if (pendingRequests !== tmp21) {
+        tmp22(pendingRequests);
+        tmp19((arr) => {
           map = new Map(arr.map((parent_id) => {
             const items = [parent_id.parent_id, parent_id];
             return items;
@@ -473,23 +419,24 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingRequests) => 
         });
       }
     }
-    const fn2 = function w(arg0) {
+    const fn4 = function w(arg0) {
       const tmp = closure_5;
       if (!tmp) {
-        tmp15(arg0);
+        closure_8(arg0);
         closure_1_2(arg0);
         declineLinkRequest(arg0);
       }
     };
     cResult[8] = declineLinkRequest;
     cResult[9] = isAcceptLoading || isDeclineLoading;
-    cResult[10] = fn2;
+    cResult[10] = fn4;
+    tmp16 = fn4;
   }
   class M {
     constructor(arg0) {
       const tmp = closure_5;
       if (!tmp) {
-        tmp15(arg0);
+        closure_8(arg0);
         closure_1_2(arg0);
         acceptLinkRequest(arg0);
       }
@@ -498,7 +445,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingRequests) => 
   cResult[5] = acceptLinkRequest;
   cResult[6] = isAcceptLoading || isDeclineLoading;
   cResult[7] = M;
-}) : ((pendingRequests) => {
+  tmp15 = M;
+}) : (function usePendingRequestListController(pendingRequests) {
   let c2;
   let c6;
   let c7;
@@ -511,7 +459,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingRequests) => 
   let tmp15;
   let tmp16;
   let tmp4;
-  const f133307 = () => {
+  const f134696 = () => {
     set = new Set();
     return set;
   };
@@ -540,8 +488,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingRequests) => 
   const declineLinkRequest = familyCenterActions.declineLinkRequest;
   ({ isAcceptLoading, isDeclineLoading } = familyCenterActions);
   let closure_5 = tmp6;
-  [c6, c7] = tmp2(react.useState(f133307), 2);
-  tmp2(react.useState(f133307), 2);
+  [c6, c7] = tmp2(react.useState(f134696), 2);
+  tmp2(react.useState(f134696), 2);
   const callback = obj2.useCallback((arg0) => {
     let closure_0 = arg0;
     let tmp = _undefined3(function(has) {
@@ -621,7 +569,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingRequests) => 
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingRequestResolution(arg0) {
   let closure_0;
   let first;
   let stateFromStores;
@@ -715,12 +663,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = "connected" === tmp10 || "declined" === tmp10;
   cResult[8] = obj2;
   tmp26 = obj2;
-}) : ((arg0) => {
+}) : (function usePendingRequestResolution(arg0) {
   let closure_0;
   let stateFromStores;
   let tmp3;
   let tmp4;
-  const f133316 = () => {
+  const f134705 = () => {
     let str = "connected";
     if (stateFromStores !== UserLinkStatus.ACTIVE) {
       let str2;
@@ -744,8 +692,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return link_status;
   });
-  [tmp3, tmp4] = _slicedToArray(react.useState(f133316), 2);
-  const tmp2 = _slicedToArray(react.useState(f133316), 2);
+  [tmp3, tmp4] = _slicedToArray(react.useState(f134705), 2);
+  const tmp2 = _slicedToArray(react.useState(f134705), 2);
   const tmp5 = _slicedToArray(react.useState(stateFromStores), 2);
   const first = tmp5[0];
   if (stateFromStores !== first) {

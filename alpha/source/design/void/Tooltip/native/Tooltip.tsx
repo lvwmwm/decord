@@ -1,17 +1,17 @@
-// Module ID: 13934
-// Function ID: 13935
+// Module ID: 14237
+// Function ID: 14238
 // Name: Tooltip/Tooltip
-// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 1375, 4892, 1188, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 587, 558, 576, 1387, 5086, 1200, 2]
 
-// Module 13934 (Tooltip/Tooltip)
+// Module 14237 (Tooltip/Tooltip)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ createStyles = createStyles.createStyles;
 obj5 = { fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 12, color: nativeDefault.colors.WHITE };
 size = { width: 0, height: 0, borderStyle: "solid", borderLeftColor: "transparent", borderRightColor: "transparent", borderTopColor: nativeDefault.colors.BACKGROUND_BRAND, borderBottomColor: nativeDefault.colors.BACKGROUND_BRAND };
 let closure_8 = createStyles(obj3);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tooltip(arg0) {
   let LEFT;
   let UP;
   let arrowDirection;
@@ -218,7 +218,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 if (null != label) {
                   const obj9 = { style: items3, children: label };
                   items3 = [tmp6.label, labelStyle];
-                  tmp23 = React3(tmp(1188).LegacyText, obj9);
+                  tmp23 = React3(tmp(1200).LegacyText, obj9);
                 }
                 cResult[18] = label;
                 cResult[19] = labelStyle;
@@ -229,7 +229,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               let tmp20 = null;
               if (null != title) {
                 const obj10 = { style: tmp6.title, variant: "text-md/semibold", color: "text-overlay-light", children: title };
-                tmp20 = React3(tmp(4892).Heading, obj10);
+                tmp20 = React3(tmp(5086).Heading, obj10);
               }
               cResult[15] = tmp6.title;
               cResult[16] = title;
@@ -264,7 +264,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[10] = tmp6.arrow;
   cResult[11] = tmp15;
   tmp14 = tmp15;
-}) : ((arrowHeight) => {
+}) : (function Tooltip(arrowHeight) {
   let arrowStyle;
   let arrowWidth;
   let children;

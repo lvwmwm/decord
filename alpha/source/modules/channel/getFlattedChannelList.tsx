@@ -1,10 +1,10 @@
-// Module ID: 6614
-// Function ID: 6615
+// Module ID: 6791
+// Function ID: 6792
 // Name: getFlattedChannelList
 // Dependencies: [12, 2]
 // Exports: default
 
-// Module 6614 (getFlattedChannelList)
+// Module 6791 (getFlattedChannelList)
 import _modDef12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 

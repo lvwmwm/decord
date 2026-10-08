@@ -1,25 +1,24 @@
-// Module ID: 15693
-// Function ID: 15694
+// Module ID: 15973
+// Function ID: 15974
 // Name: UserSettingsDesignSystemModal
-// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 6017, 5099, 6890, 1126, 6105, 4571, 6503, 10989, 14290, 4892, 8129, 11549, 14292, 10742, 8128, 10741, 6705, 6081, 5601, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 587, 558, 576, 6203, 5940, 7079, 1126, 6283, 4763, 6679, 11213, 14114, 5086, 7507, 11564, 14116, 11613, 7506, 11612, 6882, 6267, 5375, 2]
 
-// Module 15693 (UserSettingsDesignSystemModal)
+// Module 15973 (UserSettingsDesignSystemModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import ModalScreen2 from "ModalScreen" /* 8128 */;
-import ModalContent2 from "ModalContent" /* 8129 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+import NavigatorHeader from "NavigatorHeader" /* 6203 */;
+import ModalScreen2 from "ModalScreen" /* 7506 */;
+import ModalContent2 from "ModalContent" /* 7507 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-const require = globalThis.__r;
 
 let hasOwnProperty;
 let metroImportAll;
@@ -28,9 +27,9 @@ let metroRequire;
 let obj2;
 let size;
 let tmp;
-const Navigator = tmp(6503);
-const Modal = tmp(10989);
-const StepModal = tmp(14290);
+const Navigator = tmp(6679);
+const Modal = tmp(11213);
+const StepModal = tmp(14114);
 function openDemoModal() {
   const arr = ModalActionCreatorsDefault;
   arr.push(closure_12);
@@ -49,7 +48,7 @@ size = { alignItems: "center", justifyContent: "center", width: 80, height: 80, 
 let closure_9 = createStyles(obj);
 const constants = { START: "Come on fhqwhgads", WHO_DAT: "Who's that?", EVERYBODY: "Everybody come on fhqwhgads", JOCKIN: "I see you jockin' me", LIMIT: "Everybody to the limit" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScreens() {
   let tmp4;
   let tmp5;
   let obj = react2;
@@ -96,7 +95,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       };
       obj[START] = obj2;
-      obj3 = require("NavigatorHeader");
+      obj3 = NavigatorHeader;
       const WHO_DAT = constants.WHO_DAT;
       const obj4 = {
         headerLeft: obj5.getHeaderBackButton(),
@@ -119,9 +118,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return closure_7(closure_14, obj);
         }
       };
-      obj5 = require("NavigatorHeader");
+      obj5 = NavigatorHeader;
       obj[WHO_DAT] = obj4;
-      obj6 = require("NavigatorHeader");
+      obj6 = NavigatorHeader;
       const EVERYBODY = constants.EVERYBODY;
       const obj7 = {
         headerLeft: obj8.getHeaderBackButton(),
@@ -140,9 +139,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return closure_7(closure_15, obj);
         }
       };
-      obj8 = require("NavigatorHeader");
+      obj8 = NavigatorHeader;
       obj[EVERYBODY] = obj7;
-      obj9 = require("NavigatorHeader");
+      obj9 = NavigatorHeader;
       const JOCKIN = constants.JOCKIN;
       const obj10 = {
         headerLeft: obj11.getHeaderBackButton(),
@@ -165,9 +164,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return closure_7(closure_14, obj);
         }
       };
-      obj11 = require("NavigatorHeader");
+      obj11 = NavigatorHeader;
       obj[JOCKIN] = obj10;
-      obj12 = require("NavigatorHeader");
+      obj12 = NavigatorHeader;
       const LIMIT = constants.LIMIT;
       const obj13 = {
         headerLeft: obj14.getHeaderBackButton(),
@@ -195,7 +194,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       };
       obj[LIMIT] = obj13;
-      obj14 = require("NavigatorHeader");
+      obj14 = NavigatorHeader;
       return obj;
     };
     const items = [];
@@ -208,7 +207,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = Navigator;
   return tmpResult.useNavigatorScreens(tmp4, tmp5);
-}) : (() => {
+}) : (function useScreens() {
   let obj = Navigator;
   return obj.useNavigatorScreens(() => {
     let obj11;
@@ -251,7 +250,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     };
     obj[START] = obj2;
-    obj3 = require("NavigatorHeader");
+    obj3 = NavigatorHeader;
     const WHO_DAT = constants.WHO_DAT;
     const obj4 = {
       headerLeft: obj5.getHeaderBackButton(),
@@ -274,9 +273,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return closure_7(closure_14, obj);
       }
     };
-    obj5 = require("NavigatorHeader");
+    obj5 = NavigatorHeader;
     obj[WHO_DAT] = obj4;
-    obj6 = require("NavigatorHeader");
+    obj6 = NavigatorHeader;
     const EVERYBODY = constants.EVERYBODY;
     const obj7 = {
       headerLeft: obj8.getHeaderBackButton(),
@@ -295,9 +294,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return closure_7(closure_15, obj);
       }
     };
-    obj8 = require("NavigatorHeader");
+    obj8 = NavigatorHeader;
     obj[EVERYBODY] = obj7;
-    obj9 = require("NavigatorHeader");
+    obj9 = NavigatorHeader;
     const JOCKIN = constants.JOCKIN;
     const obj10 = {
       headerLeft: obj11.getHeaderBackButton(),
@@ -320,9 +319,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return closure_7(closure_14, obj);
       }
     };
-    obj11 = require("NavigatorHeader");
+    obj11 = NavigatorHeader;
     obj[JOCKIN] = obj10;
-    obj12 = require("NavigatorHeader");
+    obj12 = NavigatorHeader;
     const LIMIT = constants.LIMIT;
     const obj13 = {
       headerLeft: obj14.getHeaderBackButton(),
@@ -350,12 +349,12 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     };
     obj[LIMIT] = obj13;
-    obj14 = require("NavigatorHeader");
+    obj14 = NavigatorHeader;
     return obj;
   }, []);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoModal() {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(2);
@@ -370,12 +369,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[1];
   }
   return tmp5;
-}) : (() => {
+}) : (function DemoModal() {
   const obj = { screens: closure_11(), initialRouteName: constants.START };
   return metroImportDefault(Modal.Modal, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoStepModal() {
   let first;
   let tmp7;
   const obj = react2;
@@ -399,7 +398,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[2];
   }
   return tmp7;
-}) : (() => {
+}) : (function DemoStepModal() {
   const tmp = closure_11();
   const memo = react.useMemo(() => {
     const items = [, , , , ];
@@ -410,7 +409,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return metroImportDefault(StepModal.StepModal, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoScreen(arg0) {
   let action;
   let children;
   let disclaimer;
@@ -475,23 +474,23 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             let tmp27Result = footer;
             if (footer == null) {
               let tmp19 = null != disclaimer;
-              const ModalFooter = tmp(11549).ModalFooter;
+              const ModalFooter = tmp(11564).ModalFooter;
               const tmp27 = metroImportAll;
               if (tmp19) {
                 const obj3 = { children: disclaimer };
-                tmp19 = metroImportDefault(tmp(14292).ModalDisclaimer, obj3);
+                tmp19 = metroImportDefault(tmp(14116).ModalDisclaimer, obj3);
               }
               const items1 = [tmp19, , ];
               let tmp20 = null != action;
               if (tmp20) {
                 const obj4 = { variant: "primary", text: action, onPress: onAction };
-                tmp20 = metroImportDefault(tmp(10742).ModalActionButton, obj4);
+                tmp20 = metroImportDefault(tmp(11613).ModalActionButton, obj4);
               }
               items1[1] = tmp20;
               let tmp22 = null != secondaryAction;
               if (tmp22) {
                 const obj5 = { variant: "secondary", text: secondaryAction, onPress: onSecondaryAction };
-                tmp22 = metroImportDefault(tmp(10742).ModalActionButton, obj5);
+                tmp22 = metroImportDefault(tmp(11613).ModalActionButton, obj5);
               }
               const obj6 = { children: items1 };
               items1[2] = tmp22;
@@ -535,7 +534,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tmp4.emojiContainer;
   cResult[3] = tmp6;
   tmp5 = tmp6;
-}) : ((arg0) => {
+}) : (function DemoScreen(arg0) {
   let action;
   let children;
   let disclaimer;
@@ -566,22 +565,22 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const children1 = [metroImportAll(ModalContent, obj3), ];
   if (footer == null) {
     let tmp8Result = null != disclaimer;
-    const ModalFooter = tmp3(11549).ModalFooter;
+    const ModalFooter = tmp3(11564).ModalFooter;
     if (tmp8Result) {
       const obj5 = { children: disclaimer };
-      tmp8Result = tmp8(tmp3(14292).ModalDisclaimer, obj5);
+      tmp8Result = tmp8(tmp3(14116).ModalDisclaimer, obj5);
     }
     const items2 = [tmp8Result, , ];
     let tmp8Result3 = null != action;
     if (tmp8Result3) {
       const obj6 = { variant: "primary", text: action, onPress: onAction };
-      tmp8Result3 = tmp8(tmp3(10742).ModalActionButton, obj6);
+      tmp8Result3 = tmp8(tmp3(11613).ModalActionButton, obj6);
     }
     items2[1] = tmp8Result3;
     let tmp8Result4 = null != secondaryAction;
     if (tmp8Result4) {
       const obj7 = { variant: "secondary", text: secondaryAction, onPress: onSecondaryAction };
-      tmp8Result4 = tmp8(tmp3(10742).ModalActionButton, obj7);
+      tmp8Result4 = tmp8(tmp3(11613).ModalActionButton, obj7);
     }
     const obj8 = { children: items2 };
     items2[2] = tmp8Result4;
@@ -591,12 +590,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroImportAll(ModalScreen, { children: children1 });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAction) => {
-  let arr2;
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SwitchesScreen(onAction) {
   let first;
-  let items;
+  let obj2;
   let parts;
-  let tmp7;
   let tmp = parts;
   let obj = parts(576);
   const cResult = obj.c(22);
@@ -612,134 +609,50 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAction) => {
   } else {
     first = cResult[0];
   }
-  [arr2, importDefault] = react.useState(parts.map(first));
+  [obj2, importDefault] = react.useState(parts.map(first));
   _slicedToArray(react.useState(parts.map(first)), 2);
-  if (cResult[1] !== arr2) {
+  if (cResult[1] !== obj2) {
     let tmp8;
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn2 = function b(arg0) {
-        return arg0;
-      };
-      cResult[3] = fn2;
-      tmp8 = fn2;
+      class A {
+        constructor(arg0) {
+          return arg0;
+        }
+      }
+      cResult[3] = A;
+      tmp8 = A;
     } else {
-      tmp8 = cResult[3];
+      class A {
+        constructor(arg0) {
+          return arg0;
+        }
+      }
     }
-    const someResult = arr2.some(tmp8);
-    cResult[1] = arr2;
-    cResult[2] = someResult;
-    tmp7 = someResult;
+    cResult[1] = obj2;
+    cResult[2] = obj2.some(tmp8);
+    const someResult = obj2.some(tmp8);
   } else {
-    tmp7 = cResult[2];
+    class A {
+      constructor(arg0) {
+        return arg0;
+      }
+    }
   }
   if (cResult[4] === onAction) {
-    if (cResult[5] === tmp4.screen.backgroundColor) {
-      let tmp10;
-      let tmp14;
-      if (cResult[6] === tmp7) {
-        tmp10 = cResult[7];
+    class A {
+      constructor(arg0) {
+        return arg0;
       }
-      if (cResult[8] === parts) {
-        let tmp13;
-        let tmp16;
-        if (cResult[9] === arr2) {
-          tmp13 = cResult[10];
-        }
-        if (cResult[13] !== tmp13) {
-          const obj2 = { hasIcons: false, children: tmp13 };
-          const tmp18 = closure_7(tmp(6081).TableRowGroup, obj2);
-          cResult[13] = tmp13;
-          cResult[14] = tmp18;
-          tmp16 = tmp18;
-        } else {
-          tmp16 = cResult[14];
-        }
-        if (cResult[15] === tmp4.tableRows) {
-          let tmp19;
-          let tmp23;
-          if (cResult[16] === tmp16) {
-            tmp19 = cResult[17];
-          }
-          const _Symbol2 = Symbol;
-          if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp25 = closure_7(tmp(10741).ModalFloatingActionSpacer, {});
-            cResult[18] = tmp25;
-            tmp23 = tmp25;
-          } else {
-            tmp23 = cResult[18];
-          }
-          if (cResult[19] === tmp10) {
-            let tmp26;
-            if (cResult[20] === tmp19) {
-              tmp26 = cResult[21];
-            }
-            return tmp26;
-          }
-          const obj3 = { title: "Everybody come on fhqwhgads.", emoji: "\u{1F44F}", footer: tmp10, children: items };
-          items = [tmp19, tmp23];
-          const tmp29 = closure_8(closure_14, obj3);
-          cResult[19] = tmp10;
-          cResult[20] = tmp19;
-          cResult[21] = tmp29;
-          tmp26 = tmp29;
-        }
-        const obj4 = { style: tmp12, children: tmp16 };
-        const tmp22 = closure_7(closure_5, obj4);
-        cResult[15] = tmp4.tableRows;
-        cResult[16] = tmp16;
-        cResult[17] = tmp22;
-        tmp19 = tmp22;
-      }
-      if (cResult[11] !== parts) {
-        class C {
-          constructor(arg0, arg1) {
-            closure_0 = arg1;
-            obj = {
-              label: closure_0[arg1],
-              value: onAction,
-              onValueChange(arg0) {
-                          closure_0 = arg0;
-                          let tmp = closure_1_1(() => { /* body not rendered: F153475 */ });
-                        }
-            };
-            return closure_1_7(closure_0(closure_1_2[24]).TableSwitchRow, obj, arg1);
-          }
-        }
-        cResult[11] = parts;
-        cResult[12] = C;
-        tmp14 = C;
-      } else {
-        class C {
-          constructor(arg0, arg1) {
-            closure_0 = arg1;
-            obj = {
-              label: closure_0[arg1],
-              value: onAction,
-              onValueChange(arg0) {
-                          closure_0 = arg0;
-                          let tmp = closure_1_1(() => { /* body not rendered: F153475 */ });
-                        }
-            };
-            return closure_1_7(closure_0(closure_1_2[24]).TableSwitchRow, obj, arg1);
-          }
-        }
-      }
-      const mapped = arr2.map(tmp14);
-      cResult[8] = parts;
-      cResult[9] = arr2;
-      cResult[10] = mapped;
-      tmp13 = mapped;
     }
   }
-  const obj5 = { isVisible: tmp7, floatingBackgroundColor: tmp4.screen.backgroundColor, text: "Come on fhqwhgads", onPress: onAction };
-  const tmp11 = closure_7(tmp(10741).ModalFloatingAction, obj5);
+  const obj3 = { isVisible: tmp7, floatingBackgroundColor: tmp4.screen.backgroundColor, text: "Come on fhqwhgads", onPress: onAction };
   cResult[4] = onAction;
   cResult[5] = tmp4.screen.backgroundColor;
   cResult[6] = tmp7;
-  cResult[7] = tmp11;
-  tmp10 = tmp11;
-}) : ((onAction) => {
+  cResult[7] = closure_7(tmp(11612).ModalFloatingAction, obj3);
+  closure_7(tmp(11612).ModalFloatingAction, obj3);
+}) : (function SwitchesScreen(onAction) {
   let ModalFloatingAction;
   let TableRowGroup;
   let arr2;
@@ -747,16 +660,16 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAction) => {
   let items;
   let obj2;
   let obj4;
-  const f121405 = () => false;
+  const f122586 = () => false;
   c1 = undefined;
   onAction = onAction.onAction;
   let tmp = closure_9();
   let parts = "I said ooh ah fhqwhgads, I said ooh ah fhqhgads!".split(" ");
-  [arr2, c1] = react.useState(parts.map(f121405));
+  [arr2, c1] = react.useState(parts.map(f122586));
   let obj = { title: "Everybody come on fhqwhgads.", emoji: "\u{1F44F}", footer: closure_7(ModalFloatingAction, obj2), children: items };
   obj2 = { isVisible: arr2.some((item) => item), floatingBackgroundColor: tmp.screen.backgroundColor, text: "Come on fhqwhgads", onPress: onAction };
-  _slicedToArray(react.useState(parts.map(f121405)), 2);
-  ModalFloatingAction = parts(10741).ModalFloatingAction;
+  _slicedToArray(react.useState(parts.map(f122586)), 2);
+  ModalFloatingAction = parts(11612).ModalFloatingAction;
   const obj3 = { style: tmp.tableRows, children: closure_7(TableRowGroup, obj4) };
   obj4 = {
     hasIcons: false,
@@ -779,12 +692,12 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAction) => {
       return closure_1_7(parts(dependencyMap[24]).TableSwitchRow, obj, index);
     })
   };
-  TableRowGroup = parts(6081).TableRowGroup;
-  items = [closure_7(closure_5, obj3), closure_7(parts(10741).ModalFloatingActionSpacer, {})];
+  TableRowGroup = parts(6267).TableRowGroup;
+  items = [closure_7(closure_5, obj3), closure_7(parts(11612).ModalFloatingActionSpacer, {})];
   return closure_8(closure_14, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsDesignSystemModal() {
   let items;
   let obj5;
   let tmp12;
@@ -817,7 +730,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp12 = cResult[3];
   }
   return tmp12;
-}) : (() => {
+}) : (function UserSettingsDesignSystemModal() {
   let items;
   let obj2;
   const obj = { children: metroImportAll(hasOwnProperty, obj2) };

@@ -1,43 +1,23 @@
 // Module ID: 1574
 // Function ID: 1575
 // Name: react
-// Dependencies: [19, 1520]
-// Exports: useFocusedListenersChildrenAdapter
+// Dependencies: [19, 1539]
+// Exports: useTheme
 
 // Module 1574 (react)
-import react2 from "react" /* 1520 */;
+import react2 from "react" /* 1539 */;
 import react from "react" /* 19 */;
 
 
-export const useFocusedListenersChildrenAdapter = function useFocusedListenersChildrenAdapter(navigation) {
-  navigation = navigation.navigation;
-  const focusedListeners = navigation.focusedListeners;
-  const addListener = react.useContext(react2.NavigationBuilderContext).addListener;
-  const items = [focusedListeners, navigation];
-  const callback = react.useCallback((fn) => {
-    if (navigation.isFocused()) {
-      for (const item10012 of focusedListeners) {
-        let item10012Result = item10012(fn);
-        let handled = item10012Result.handled;
-        let tmp4 = handled;
-        if (tmp4) {
-          let obj2 = { handled, result: tmp5 };
-          obj.return();
-          return obj2;
-        }
-      }
-      const obj3 = { handled: true, result: fn(navigation) };
-      return obj3;
-    } else {
-      return { handled: false, result: null };
-    }
-  }, items);
-  const items1 = [addListener, callback];
-  const effect = react.useEffect(() => {
-    let tmpResult;
-    if (addListener != null) {
-      tmpResult = tmp("focus", callback);
-    }
-    return tmpResult;
-  }, items1);
+export const useTheme = function useTheme() {
+  const context = react.useContext(react2.ThemeContext);
+  if (null == context) {
+    const _Error = Error;
+    const self = this;
+    const self2 = this;
+    const error = new Error("Couldn't find a theme. Is your component inside NavigationContainer or does it have a theme?");
+    throw error;
+  } else {
+    return context;
+  }
 };

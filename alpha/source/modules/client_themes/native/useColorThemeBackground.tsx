@@ -1,19 +1,19 @@
-// Module ID: 4738
-// Function ID: 4739
+// Module ID: 4932
+// Function ID: 4933
 // Name: useColorThemeBackground
-// Dependencies: [19, 1193, 4703, 1126, 1241, 4739, 558, 576, 4741, 573, 4794, 2]
+// Dependencies: [19, 1205, 4897, 1126, 1253, 4933, 558, 576, 4935, 573, 4988, 2]
 
-// Module 4738 (useColorThemeBackground)
+// Module 4932 (useColorThemeBackground)
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1241 */;
-import GuildThemePresets from "GuildThemePresets" /* 4739 */;
-import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 4741 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 4794 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1253 */;
+import GuildThemePresets from "GuildThemePresets" /* 4933 */;
+import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 4935 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 4988 */;
 import react from "react" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4703 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4897 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ function getGuildThemeBackground(type, stateFromStores) {
     }
     GUILD_THEME_DEFAULT_BASE_MIX = customUserThemeSettings.baseMix;
     if (GUILD_THEME_DEFAULT_BASE_MIX == null) {
-      GUILD_THEME_DEFAULT_BASE_MIX = tmp3(4739).GUILD_THEME_DEFAULT_BASE_MIX;
+      GUILD_THEME_DEFAULT_BASE_MIX = tmp3(4933).GUILD_THEME_DEFAULT_BASE_MIX;
     }
     return obj;
   } else {
@@ -62,7 +62,7 @@ function getGuildThemeBackground(type, stateFromStores) {
     return obj5;
   }
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useColorThemeBackground() {
   let gradientPreset;
   let theme;
   let tmp10;
@@ -120,12 +120,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[5] = stateFromStores;
   cResult[6] = tmp16;
   tmp15 = tmp16;
-}) : (() => {
+}) : (function useColorThemeBackground() {
   let closure_0;
   let gradientPreset;
   let stateFromStores;
   let theme;
-  const tmp = stateFromStores(4741)();
+  const tmp = stateFromStores(4935)();
   _require = tmp;
   const items = [ThemeStore];
   const obj = require("useStateFromStores");

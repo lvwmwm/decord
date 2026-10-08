@@ -4,4 +4,4 @@
 
 // Module 1322
 
-export default Math.round;
+export default Error;

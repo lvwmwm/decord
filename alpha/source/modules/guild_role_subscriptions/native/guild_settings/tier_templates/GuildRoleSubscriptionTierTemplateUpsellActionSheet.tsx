@@ -1,29 +1,29 @@
-// Module ID: 16218
-// Function ID: 16219
+// Module ID: 16478
+// Function ID: 16479
 // Name: GuildRoleSubscriptionTierTemplateUpsellActionSheet
-// Dependencies: [32, 19, 17, 4885, 1085, 2048, 21, 4896, 587, 558, 576, 9282, 5919, 573, 1126, 7993, 4892, 5601, 4860, 6652, 2]
+// Dependencies: [32, 19, 17, 5079, 1085, 2060, 21, 5090, 587, 558, 576, 8613, 8302, 573, 1126, 8401, 5086, 5375, 5054, 6829, 2]
 
-// Module 16218 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
+// Module 16478 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5919 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6652 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9282 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6829 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8302 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8613 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import react_mod from "react" /* 19 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet, dependencyMap, guildId;
+let BottomSheet, dependencyMap;
 
 let c10;
 let metroImportAll;
@@ -32,6 +32,7 @@ let obj2;
 let obj3;
 let unpackModuleId;
 let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
 const View = react_native.View;
 ({ GuildSettingsSections: metroImportDefault, GuildSettingsSubsections: metroImportAll } = Constants);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -44,38 +45,40 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: 16,
 createStyles = createStyles.createStyles;
 obj3 = { borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
 let closure_14 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionTierTemplateUpsellActionSheet(guildId) {
+  let closure_4;
   let isScreenLandscape;
   let tmp8;
   let useReducedMotion;
   let tmp2 = dependencyMap;
   let obj = guildId(576);
-  const cResult = obj.c(49);
+  const cResult = obj.c(47);
   guildId = guildId.guildId;
   const markAsDismissed = guildId.markAsDismissed;
   const tmp4 = closure_14();
   if (cResult[0] === guildId) {
     let tmp12;
     let tmp11;
+    let tmp15;
     let tmp17;
     let tmp16;
-    let tmp21;
-    [tmp8, dependencyMap] = isScreenLandscape(P.useState(0), 2);
-    isScreenLandscape(P.useState(0), 2);
-    const tmpResult = guildId(5919);
+    let tmp20;
+    [tmp8, dependencyMap] = isScreenLandscape(react.useState(0), 2);
+    isScreenLandscape(react.useState(0), 2);
+    const tmpResult = guildId(8302);
     isScreenLandscape = tmpResult.useIsScreenLandscape();
     const _Symbol = Symbol;
-    const obj2 = P;
+    const obj2 = react;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const items = [AccessibilityStore];
-      class E {
+      class C {
         constructor() {
           return useReducedMotion.useReducedMotion;
         }
       }
       cResult[3] = items;
-      cResult[4] = E;
-      tmp12 = E;
+      cResult[4] = C;
+      tmp12 = C;
       tmp11 = items;
     } else {
       tmp11 = cResult[3];
@@ -84,71 +87,48 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     const tmpResult2 = guildId(573);
     const stateFromStores = tmpResult2.useStateFromStores(tmp11, tmp12);
     if (cResult[5] !== isScreenLandscape) {
-      class P {
-        constructor(arg0) {
-          const diff = arg0 - 32;
-          let result = diff;
-          const tmp2 = dependencyMap;
-          if (isScreenLandscape) {
-            result = diff / 2;
-          }
-          tmp2(result);
+      function setWidth(arg0) {
+        const diff = arg0 - 32;
+        let result = diff;
+        const tmp2 = dependencyMap;
+        if (isScreenLandscape) {
+          result = diff / 2;
         }
+        tmp2(result);
       }
       cResult[5] = isScreenLandscape;
-      class E {
+      class C {
         constructor() {
           return useReducedMotion.useReducedMotion;
         }
       }
-      cResult[6] = P;
+      cResult[6] = setWidth;
+      tmp15 = setWidth;
     } else {
-      class P {
-        constructor(arg0) {
-          const diff = arg0 - 32;
-          let result = diff;
-          const tmp2 = dependencyMap;
-          if (isScreenLandscape) {
-            result = diff / 2;
-          }
-          tmp2(result);
-        }
-      }
+      tmp15 = cResult[6];
     }
-    P = tmp15;
+    react = tmp15;
     if (cResult[7] !== markAsDismissed) {
-      class P {
-        constructor(arg0) {
-          const diff = arg0 - 32;
-          let result = diff;
-          const tmp2 = dependencyMap;
-          if (isScreenLandscape) {
-            result = diff / 2;
-          }
-          tmp2(result);
+      class W {
+        constructor() {
+          return () => markAsDismissed(constants.UNKNOWN);
         }
       }
       const items1 = [markAsDismissed];
-      class E {
+      class C {
         constructor() {
           return useReducedMotion.useReducedMotion;
         }
       }
       cResult[7] = markAsDismissed;
-      cResult[8] = tmp18;
+      cResult[8] = W;
       cResult[9] = items1;
       tmp17 = items1;
-      tmp16 = tmp18;
+      tmp16 = W;
     } else {
-      class P {
-        constructor(arg0) {
-          const diff = arg0 - 32;
-          let result = diff;
-          const tmp2 = dependencyMap;
-          if (isScreenLandscape) {
-            result = diff / 2;
-          }
-          tmp2(result);
+      class W {
+        constructor() {
+          return () => markAsDismissed(constants.UNKNOWN);
         }
       }
       tmp17 = cResult[9];
@@ -156,73 +136,73 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     const effect = obj2.useEffect(tmp16, tmp17);
     const container = tmp4.container;
     if (cResult[10] !== tmp15) {
-      class F {
+      class G {
         constructor(nativeEvent) {
-          return P(nativeEvent.nativeEvent.layout.width);
+          return closure_4(nativeEvent.nativeEvent.layout.width);
         }
       }
       cResult[10] = tmp15;
-      class E {
+      class C {
         constructor() {
           return useReducedMotion.useReducedMotion;
         }
       }
-      cResult[11] = F;
+      cResult[11] = G;
     } else {
-      class F {
+      class G {
         constructor(nativeEvent) {
-          return P(nativeEvent.nativeEvent.layout.width);
+          return closure_4(nativeEvent.nativeEvent.layout.width);
         }
       }
     }
     const _Symbol2 = Symbol;
     if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-      class F {
+      class G {
         constructor(nativeEvent) {
-          return P(nativeEvent.nativeEvent.layout.width);
+          return closure_4(nativeEvent.nativeEvent.layout.width);
         }
       }
       const stringResult = obj5.string(guildId(1126).t.gCgirr);
-      class E {
+      class C {
         constructor() {
           return useReducedMotion.useReducedMotion;
         }
       }
       cResult[12] = stringResult;
-      tmp21 = stringResult;
+      tmp20 = stringResult;
     } else {
-      class F {
+      class G {
         constructor(nativeEvent) {
-          return P(nativeEvent.nativeEvent.layout.width);
+          return closure_4(nativeEvent.nativeEvent.layout.width);
         }
       }
     }
     let result = tmp8 / c12;
     if (cResult[13] === tmp4.videoContainer) {
-      class F {
+      class G {
         constructor(nativeEvent) {
-          return P(nativeEvent.nativeEvent.layout.width);
+          return closure_4(nativeEvent.nativeEvent.layout.width);
         }
       }
     }
-    const obj3 = { accessibilityRole: "image", accessibilityLabel: tmp21, children: closure_10(markAsDismissed(7993), size) };
+    const obj3 = { accessibilityRole: "image", accessibilityLabel: tmp20, children: closure_10(markAsDismissed(8401), size) };
     size = { style: tmp4.videoContainer, src, width: tmp8, height: result, muted: true, paused: stateFromStores, ariaHidden: true };
     cResult[13] = tmp4.videoContainer;
     cResult[14] = result;
     cResult[15] = stateFromStores;
     cResult[16] = tmp8;
     cResult[17] = closure_10(View, obj3);
-    const tmp30 = closure_10(View, obj3);
+    const tmp29 = closure_10(View, obj3);
   }
-  const fn = function b() {
+  function handleClickUseTemplate() {
     const obj = GuildSettingsActionCreatorsDefault;
     obj.open(guildId, metroImportDefault.ROLE_SUBSCRIPTIONS_TIERS, undefined, metroImportAll.ROLE_SUBSCRIPTION_TIER_TEMPLATE);
     markAsDismissed(ContentDismissActionType.UNKNOWN);
-  };
+  }
   cResult[0] = guildId;
   cResult[1] = markAsDismissed;
-  cResult[2] = fn;
-}) : ((arg0) => {
+  cResult[2] = handleClickUseTemplate;
+}) : (function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0) {
   let Button;
   let Button2;
   let _undefined;
@@ -236,7 +216,6 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let items2;
   let items3;
   let items4;
-  let items5;
   let markAsDismissed;
   let obj11;
   let obj13;
@@ -270,7 +249,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     },
     children: items2
   };
-  const obj5 = { accessibilityRole: "image", accessibilityLabel: intl.string(intl6.t.gCgirr), children: closure_10(markAsDismissed(7993), size) };
+  const obj5 = { accessibilityRole: "image", accessibilityLabel: intl.string(intl6.t.gCgirr), children: closure_10(markAsDismissed(8401), size) };
   BottomSheet = Sheet_BottomSheet.BottomSheet;
   intl = intl6.intl;
   size = { style: tmp.videoContainer, src, width: tmp3, height: tmp3 / c12, muted: true, paused: stateFromStores, ariaHidden: true };
@@ -285,12 +264,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   intl3 = intl6.intl;
   items3[1] = closure_10(Text2, obj8);
   items2[1] = closure_11(View, obj6);
-  const obj9 = { style: items4, children: items5 };
-  items4 = [tmp.footer];
+  const obj9 = { style: tmp.footer, children: items4 };
   const obj10 = { style: tmp.button, children: closure_10(Button, obj11) };
   obj11 = {
     text: intl4.string(intl6.t.BQq86h),
-    onPress() {
+    onPress: function handleClickUseTemplate() {
       const obj = GuildSettingsActionCreatorsDefault;
       obj.open(require, metroImportDefault.ROLE_SUBSCRIPTIONS_TIERS, undefined, metroImportAll.ROLE_SUBSCRIPTION_TIER_TEMPLATE);
       markAsDismissed(ContentDismissActionType.UNKNOWN);
@@ -298,7 +276,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   };
   Button = components_Button_Button.Button;
   intl4 = intl6.intl;
-  items5 = [closure_10(View, obj10), ];
+  items4 = [closure_10(View, obj10), ];
   const obj12 = { style: tmp.button, children: closure_10(Button2, obj13) };
   obj13 = {
     text: intl5.string(intl6.t.WAI6xu),
@@ -310,7 +288,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   };
   Button2 = components_Button_Button.Button;
   intl5 = intl6.intl;
-  items5[1] = closure_10(View, obj12);
+  items4[1] = closure_10(View, obj12);
   items2[2] = closure_11(View, obj9);
   return closure_10(BottomSheet, obj3);
 });

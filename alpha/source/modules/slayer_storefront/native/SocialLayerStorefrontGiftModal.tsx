@@ -1,27 +1,25 @@
-// Module ID: 10566
-// Function ID: 10567
+// Module ID: 10163
+// Function ID: 10164
 // Name: SocialLayerStorefrontGiftModal
-// Dependencies: [19, 5702, 1085, 21, 558, 576, 504, 6688, 6664, 1369, 8899, 1252, 10544, 5597, 4547, 1126, 10567, 10568, 10569, 10571, 10564, 10551, 2]
+// Dependencies: [19, 6092, 1085, 21, 558, 576, 504, 6865, 6841, 1381, 9332, 1264, 10141, 5392, 4739, 1126, 10164, 10165, 10166, 10168, 10161, 10148, 2]
 
-// Module 10566 (SocialLayerStorefrontGiftModal)
+// Module 10163 (SocialLayerStorefrontGiftModal)
 import Fragment from "Fragment" /* 21 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10544 */;
-import SocialLayerStorefrontGiftProductDetailsDefault from "SocialLayerStorefrontGiftProductDetails" /* 10568 */;
-import SocialLayerStorefrontGiftPurchaseSectionDefault from "SocialLayerStorefrontGiftPurchaseSection" /* 10569 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10141 */;
+import SocialLayerStorefrontGiftProductDetailsDefault from "SocialLayerStorefrontGiftProductDetails" /* 10165 */;
+import SocialLayerStorefrontGiftPurchaseSectionDefault from "SocialLayerStorefrontGiftPurchaseSection" /* 10166 */;
 import react from "react" /* 19 */;
-import SKUStore from "SKUStore" /* 5702 */;
+import SKUStore from "SKUStore" /* 6092 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let skuId;
 
 let closure_4;
 let hasOwnProperty;
 ({ AnalyticEvents: closure_4, PaymentGateways: hasOwnProperty } = Constants);
 const jsx = Fragment.jsx;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SocialLayerStorefrontGiftModal(skuId) {
   let GOOGLE;
   let analyticsLocations;
   let analyticsLocations2;
@@ -240,7 +238,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
       }
     }
   }
-  class R {
+  class G {
     constructor() {
       let applicationId;
       const tmp = AnalyticsUtilsDefault;
@@ -256,9 +254,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   }
   cResult[8] = undefined;
   cResult[9] = skuId;
-  cResult[10] = R;
-  tmp22 = R;
-}) : ((skuId) => {
+  cResult[10] = G;
+  tmp22 = G;
+}) : (function SocialLayerStorefrontGiftModal(skuId) {
   let GOOGLE;
   let analyticsLocations;
   let giftingOrigin;

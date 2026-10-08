@@ -1,25 +1,25 @@
-// Module ID: 9951
-// Function ID: 9952
+// Module ID: 9478
+// Function ID: 9479
 // Name: useMaybeAddPollsMarketingEasterEggNote
-// Dependencies: [2116, 558, 576, 504, 1126, 2]
+// Dependencies: [2128, 558, 576, 504, 1126, 2]
 
-// Module 9951 (useMaybeAddPollsMarketingEasterEggNote)
+// Module 9478 (useMaybeAddPollsMarketingEasterEggNote)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
+import LocaleStore from "LocaleStore" /* 2128 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let locale;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiName) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeAddPollsMarketingEasterEggNote(emojiName) {
   let tmp4;
   let tmp5;
   const obj = react;
   const cResult = obj.c(5);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [LocaleStore];
-    const fn = function l() {
+    const fn = function s() {
       locale = locale.locale;
       return locale.startsWith("en-");
     };
@@ -52,7 +52,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiName) => {
   cResult[3] = stateFromStores;
   cResult[4] = formatToPlainStringResult;
   tmp8 = formatToPlainStringResult;
-}) : ((emojiName) => {
+}) : (function useMaybeAddPollsMarketingEasterEggNote(emojiName) {
   get_initialized;
   [][0] = LocaleStore;
   let formatToPlainStringResult = emojiName;

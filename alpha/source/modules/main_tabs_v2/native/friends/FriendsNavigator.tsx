@@ -1,35 +1,35 @@
-// Module ID: 16950
-// Function ID: 16951
+// Module ID: 17231
+// Function ID: 17232
 // Name: FriendsNavigator
-// Dependencies: [109, 19, 17, 21, 7568, 4896, 587, 558, 576, 1126, 7515, 7509, 12276, 6997, 6503, 16951, 16957, 16960, 16961, 16962, 16969, 16970, 16971, 16973, 16976, 16977, 4738, 1618, 4595, 2]
+// Dependencies: [109, 19, 17, 21, 9279, 5090, 587, 558, 576, 1126, 9238, 9232, 12355, 7185, 6679, 17232, 17238, 17241, 17242, 17243, 17250, 17251, 17252, 17254, 17257, 17258, 4932, 1630, 4787, 2]
 
-// Module 16950 (FriendsNavigator)
+// Module 17231 (FriendsNavigator)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl10 from "intl" /* 1126 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4738 */;
-import HeaderShared from "HeaderShared" /* 7509 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 7515 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12276 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4932 */;
+import HeaderShared from "HeaderShared" /* 9232 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9238 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12355 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 7568 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import NativeStackView from "NativeStackView" /* 9279 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, onPress;
+let _require;
 
 let metroImportAll;
 let metroImportDefault;
 let obj2;
 let obj3;
 let tmp;
-const native = tmp(4595);
+const native = tmp(4787);
 let closure_3 = ["children"];
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -41,7 +41,7 @@ createStyles = createStyles.createStyles;
 obj3 = { borderBottomWidth: 0, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, shadowColor: "transparent" };
 let closure_10 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function RequestsSettingsModalButton(onPress) {
   let HeaderIconButton;
   let first;
   let obj3;
@@ -61,7 +61,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     const obj2 = { isModal: true, children: metroImportDefault(HeaderIconButton, obj3) };
     obj3 = { source: AssetRegistryDefault, onPress, accessibilityLabel: first };
     const tmp9 = PressableNavigatorButtonWrapperDefault;
-    HeaderIconButton = tmp(7509).HeaderIconButton;
+    HeaderIconButton = tmp(9232).HeaderIconButton;
     const tmp10 = metroImportDefault(tmp9, obj2);
     cResult[1] = onPress;
     cResult[2] = tmp10;
@@ -70,7 +70,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     tmp6 = cResult[2];
   }
   return tmp6;
-}) : ((onPress) => {
+}) : (function RequestsSettingsModalButton(onPress) {
   let HeaderIconButton;
   let intl;
   let obj2;
@@ -83,7 +83,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   return metroImportDefault(tmp, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function FriendsNavigator() {
   let closure_0;
   let intl;
   let intl2;
@@ -125,7 +125,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     [tmp5, tmp6] = cResult;
   }
   const layoutEffect = react.useLayoutEffect(tmp5, tmp6);
-  const tmpResult = tmp(6503);
+  const tmpResult = tmp(6679);
   const accessibilityNativeStackOptions = tmpResult.useAccessibilityNativeStackOptions();
   if (cResult[2] === accessibilityNativeStackOptions) {
     let tmp9;
@@ -135,12 +135,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let tmp22;
     let tmp26;
     let tmp30;
-    let tmp35;
-    let tmp39;
-    let tmp43;
-    let tmp47;
-    let tmp51;
-    let tmp55;
+    let tmp34;
+    let tmp38;
+    let tmp42;
+    let tmp46;
+    let tmp50;
+    let tmp54;
     if (cResult[3] === tmp4.header) {
       tmp9 = cResult[4];
     }
@@ -271,56 +271,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       tmp30 = cResult[10];
     }
     const _Symbol7 = Symbol;
-    class C {
-      constructor(arg0) {
-        let presentation;
-        let route;
-        ({ navigation, route } = arg0);
-        const params = route.params;
-        if (params != null) {
-          presentation = params.presentation;
-        }
-        let obj = {
-          headerStyle: closure_0.header,
-          headerShadowVisible: false,
-          headerTitle(children) {
-            children = children.children;
-            const obj = { title: children };
-            const tmp = closure_1_4(children, closure_1_3);
-            const GenericHeaderTitle = closure_1_0(closure_1_2[11]).GenericHeaderTitle;
-            const merged = Object.assign(tmp);
-            return closure_1_7(GenericHeaderTitle, obj);
-          },
-          headerTitleAlign: "center",
-          headerLeft: null,
-          fullScreenGestureEnabled: null
-        };
-        if (navigation.getState().routes[0].key === route.key) {
-          let renderModalCloseImage;
-          const params2 = route.params;
-          let presentation1;
-          if (params2 != null) {
-            presentation1 = params2.presentation;
-          }
-          if ("card" !== presentation1) {
-            const obj3 = HeaderShared;
-            renderModalCloseImage = obj3.getRenderModalCloseImage(navigation);
-          }
-          obj.headerLeft = renderModalCloseImage;
-          const params3 = route.params;
-          let presentation2;
-          if (params3 != null) {
-            presentation2 = params3.presentation;
-          }
-          obj.fullScreenGestureEnabled = "card" === presentation2 || "card" === presentation;
-          let merged = Object.assign(accessibilityNativeStackOptions);
-          return obj;
-        }
-        const obj2 = HeaderShared;
-        renderModalCloseImage = obj2.getRenderModalBackImage(navigation);
-      }
-    }
-    if (tmp34 === Symbol.for("react.memo_cache_sentinel")) {
+    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
       const obj13 = {
         name: "suggested-friends",
         options: obj14,
@@ -331,11 +282,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const Screen6 = closure_9.Screen;
       obj14 = { title: intl6.string(tmp(1126).t["1uAmCw"]) };
       intl6 = tmp(1126).intl;
-      const tmp38 = closure_7(Screen6, obj13);
-      cResult[11] = tmp38;
-      tmp35 = tmp38;
+      const tmp37 = closure_7(Screen6, obj13);
+      cResult[11] = tmp37;
+      tmp34 = tmp37;
     } else {
-      tmp35 = cResult[11];
+      tmp34 = cResult[11];
     }
     const _Symbol8 = Symbol;
     if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
@@ -349,11 +300,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const Screen7 = closure_9.Screen;
       obj16 = { title: intl7.string(tmp(1126).t.XT4hVl) };
       intl7 = tmp(1126).intl;
-      const tmp42 = closure_7(Screen7, obj15);
-      cResult[12] = tmp42;
-      tmp39 = tmp42;
+      const tmp41 = closure_7(Screen7, obj15);
+      cResult[12] = tmp41;
+      tmp38 = tmp41;
     } else {
-      tmp39 = cResult[12];
+      tmp38 = cResult[12];
     }
     const _Symbol9 = Symbol;
     if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
@@ -380,11 +331,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               return closure_0(dependencyMap[23]).default;
             }
       };
-      const tmp46 = closure_7(closure_9.Screen, obj17);
-      cResult[13] = tmp46;
-      tmp43 = tmp46;
+      const tmp45 = closure_7(closure_9.Screen, obj17);
+      cResult[13] = tmp45;
+      tmp42 = tmp45;
     } else {
-      tmp43 = cResult[13];
+      tmp42 = cResult[13];
     }
     const _Symbol10 = Symbol;
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
@@ -398,11 +349,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const Screen8 = closure_9.Screen;
       obj19 = { title: intl8.string(tmp(1126).t.oHVeHc) };
       intl8 = tmp(1126).intl;
-      const tmp50 = closure_7(Screen8, obj18);
-      cResult[14] = tmp50;
-      tmp47 = tmp50;
+      const tmp49 = closure_7(Screen8, obj18);
+      cResult[14] = tmp49;
+      tmp46 = tmp49;
     } else {
-      tmp47 = cResult[14];
+      tmp46 = cResult[14];
     }
     const _Symbol11 = Symbol;
     if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
@@ -416,127 +367,76 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const Screen9 = closure_9.Screen;
       obj21 = { title: intl9.string(tmp(1126).t.tFY5Zb) };
       intl9 = tmp(1126).intl;
-      const tmp54 = closure_7(Screen9, obj20);
-      cResult[15] = tmp54;
-      tmp51 = tmp54;
+      const tmp53 = closure_7(Screen9, obj20);
+      cResult[15] = tmp53;
+      tmp50 = tmp53;
     } else {
-      tmp51 = cResult[15];
+      tmp50 = cResult[15];
     }
     if (cResult[16] !== tmp9) {
       const obj22 = { screenOptions: tmp9, children: items1 };
-      items1 = [tmp10, tmp14, tmp18, tmp22, tmp26, tmp30, tmp35, tmp39, tmp43, tmp47, tmp51];
-      const tmp58 = closure_8(closure_9.Navigator, obj22);
+      items1 = [tmp10, tmp14, tmp18, tmp22, tmp26, tmp30, tmp34, tmp38, tmp42, tmp46, tmp50];
+      const tmp57 = closure_8(closure_9.Navigator, obj22);
       cResult[16] = tmp9;
-      class C {
-        constructor(arg0) {
-          let presentation;
-          let route;
-          ({ navigation, route } = arg0);
-          const params = route.params;
-          if (params != null) {
-            presentation = params.presentation;
-          }
-          let obj = {
-            headerStyle: closure_0.header,
-            headerShadowVisible: false,
-            headerTitle(children) {
-              children = children.children;
-              const obj = { title: children };
-              const tmp = closure_1_4(children, closure_1_3);
-              const GenericHeaderTitle = closure_1_0(closure_1_2[11]).GenericHeaderTitle;
-              const merged = Object.assign(tmp);
-              return closure_1_7(GenericHeaderTitle, obj);
-            },
-            headerTitleAlign: "center",
-            headerLeft: null,
-            fullScreenGestureEnabled: null
-          };
-          if (navigation.getState().routes[0].key === route.key) {
-            let renderModalCloseImage;
-            const params2 = route.params;
-            let presentation1;
-            if (params2 != null) {
-              presentation1 = params2.presentation;
-            }
-            if ("card" !== presentation1) {
-              const obj3 = HeaderShared;
-              renderModalCloseImage = obj3.getRenderModalCloseImage(navigation);
-            }
-            obj.headerLeft = renderModalCloseImage;
-            const params3 = route.params;
-            let presentation2;
-            if (params3 != null) {
-              presentation2 = params3.presentation;
-            }
-            obj.fullScreenGestureEnabled = "card" === presentation2 || "card" === presentation;
-            let merged = Object.assign(accessibilityNativeStackOptions);
-            return obj;
-          }
-          const obj2 = HeaderShared;
-          renderModalCloseImage = obj2.getRenderModalBackImage(navigation);
-        }
-      }
-      cResult[17] = tmp58;
-      tmp55 = tmp58;
+      cResult[17] = tmp57;
+      tmp54 = tmp57;
     } else {
-      tmp55 = cResult[17];
+      tmp54 = cResult[17];
     }
-    return tmp55;
+    return tmp54;
   }
-  class C {
-    constructor(arg0) {
-      let presentation;
-      let route;
-      ({ navigation, route } = arg0);
-      const params = route.params;
-      if (params != null) {
-        presentation = params.presentation;
-      }
-      let obj = {
-        headerStyle: closure_0.header,
-        headerShadowVisible: false,
-        headerTitle(children) {
-          children = children.children;
-          const obj = { title: children };
-          const tmp = closure_1_4(children, closure_1_3);
-          const GenericHeaderTitle = closure_1_0(closure_1_2[11]).GenericHeaderTitle;
-          const merged = Object.assign(tmp);
-          return closure_1_7(GenericHeaderTitle, obj);
-        },
-        headerTitleAlign: "center",
-        headerLeft: null,
-        fullScreenGestureEnabled: null
-      };
-      if (navigation.getState().routes[0].key === route.key) {
-        let renderModalCloseImage;
-        const params2 = route.params;
-        let presentation1;
-        if (params2 != null) {
-          presentation1 = params2.presentation;
-        }
-        if ("card" !== presentation1) {
-          const obj3 = HeaderShared;
-          renderModalCloseImage = obj3.getRenderModalCloseImage(navigation);
-        }
-        obj.headerLeft = renderModalCloseImage;
-        const params3 = route.params;
-        let presentation2;
-        if (params3 != null) {
-          presentation2 = params3.presentation;
-        }
-        obj.fullScreenGestureEnabled = "card" === presentation2 || "card" === presentation;
-        let merged = Object.assign(accessibilityNativeStackOptions);
-        return obj;
-      }
-      const obj2 = HeaderShared;
-      renderModalCloseImage = obj2.getRenderModalBackImage(navigation);
+  const fn2 = function _(arg0) {
+    let presentation;
+    let route;
+    ({ navigation, route } = arg0);
+    const params = route.params;
+    if (params != null) {
+      presentation = params.presentation;
     }
-  }
+    let obj = {
+      headerStyle: closure_0.header,
+      headerShadowVisible: false,
+      headerTitle(children) {
+        children = children.children;
+        const obj = { title: children };
+        const tmp = closure_1_4(children, closure_1_3);
+        const GenericHeaderTitle = closure_1_0(closure_1_2[11]).GenericHeaderTitle;
+        const merged = Object.assign(tmp);
+        return closure_1_7(GenericHeaderTitle, obj);
+      },
+      headerTitleAlign: "center",
+      headerLeft: null,
+      fullScreenGestureEnabled: null
+    };
+    if (navigation.getState().routes[0].key === route.key) {
+      let renderModalCloseImage;
+      const params2 = route.params;
+      let presentation1;
+      if (params2 != null) {
+        presentation1 = params2.presentation;
+      }
+      if ("card" !== presentation1) {
+        const obj3 = HeaderShared;
+        renderModalCloseImage = obj3.getRenderModalCloseImage(navigation);
+      }
+      obj.headerLeft = renderModalCloseImage;
+      const params3 = route.params;
+      let presentation2;
+      if (params3 != null) {
+        presentation2 = params3.presentation;
+      }
+      obj.fullScreenGestureEnabled = "card" === presentation2 || "card" === presentation;
+      let merged = Object.assign(accessibilityNativeStackOptions);
+      return obj;
+    }
+    const obj2 = HeaderShared;
+    renderModalCloseImage = obj2.getRenderModalBackImage(navigation);
+  };
   cResult[2] = accessibilityNativeStackOptions;
   cResult[3] = tmp4.header;
-  cResult[4] = C;
-  tmp9 = C;
-}) : (() => {
+  cResult[4] = fn2;
+  tmp9 = fn2;
+}) : (function FriendsNavigator() {
   let closure_0;
   let intl;
   let intl2;
@@ -770,7 +670,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return closure_8(Navigator, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThemedFriendsNavigator() {
   let left;
   let right;
   const obj = react2;
@@ -833,7 +733,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = right;
   cResult[2] = obj4;
   tmp7 = obj4;
-}) : (() => {
+}) : (function ThemedFriendsNavigator() {
   let items;
   let left;
   let obj2;

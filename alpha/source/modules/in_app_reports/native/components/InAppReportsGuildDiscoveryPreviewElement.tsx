@@ -1,27 +1,25 @@
-// Module ID: 12724
-// Function ID: 12725
+// Module ID: 13393
+// Function ID: 13394
 // Name: InAppReportsGuildDiscoveryPreviewElement
-// Dependencies: [19, 17, 4885, 21, 4896, 587, 558, 576, 6476, 504, 4733, 1126, 4892, 2066, 5978, 2]
+// Dependencies: [19, 17, 5079, 21, 5090, 587, 558, 576, 6654, 504, 4927, 1126, 5086, 2078, 6161, 2]
 
-// Module 12724 (InAppReportsGuildDiscoveryPreviewElement)
+// Module 13393 (InAppReportsGuildDiscoveryPreviewElement)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2066 */;
-import ColorUtils from "ColorUtils" /* 4733 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import GuildIconDefault from "GuildIcon" /* 5978 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6476 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2078 */;
+import ColorUtils from "ColorUtils" /* 4927 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import GuildIconDefault from "GuildIcon" /* 6161 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6654 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let guild;
 
 let hasOwnProperty;
 let metroRequire;
@@ -37,7 +35,7 @@ createStyles = createStyles.createStyles;
 obj3 = { minHeight: 40, borderRadius: nativeDefault.radii.sm, borderWidth: 1, padding: 8 };
 size = { borderRadius: nativeDefault.radii.xs, width: 18, height: 18 };
 let closure_7 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDiscoveryPreviewElement(guild) {
   let guildIcon;
   let guildInfo;
   let items1;
@@ -212,7 +210,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   cResult[5] = tmp4.title;
   cResult[6] = items4;
   tmp13 = items4;
-}) : ((guild) => {
+}) : (function GuildDiscoveryPreviewElement(guild) {
   let intl;
   let items1;
   let items2;

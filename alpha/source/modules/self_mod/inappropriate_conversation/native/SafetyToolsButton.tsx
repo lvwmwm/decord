@@ -1,23 +1,21 @@
-// Module ID: 13139
-// Function ID: 13140
+// Module ID: 12854
+// Function ID: 12855
 // Name: SafetyToolsButton
-// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 9843, 9845, 1126, 9811, 5597, 9812, 9838, 9896, 13116, 8951, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 587, 558, 576, 10404, 10406, 1126, 10374, 5392, 10375, 10401, 9376, 12830, 10387, 2]
 
-// Module 13139 (SafetyToolsButton)
+// Module 12854 (SafetyToolsButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 9811 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 9812 */;
-import SafetyToolsActionCreators from "SafetyToolsActionCreators" /* 9838 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10374 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10375 */;
+import SafetyToolsActionCreators from "SafetyToolsActionCreators" /* 10401 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channelId;
 
 let obj2;
 const View = react_native.View;
@@ -25,7 +23,7 @@ const jsx = Fragment.jsx;
 let obj = { safetyToolsButton: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 let closure_7 = createStyles.createStyles(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyToolsButton(channelId) {
   let closure_8;
   let tmp8;
   let warningId;
@@ -199,7 +197,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[1] = shouldShowInitialSafetyToolsButtonTooltip;
   cResult[2] = T;
   tmp9 = T;
-}) : ((channelId) => {
+}) : (function SafetyToolsButton(channelId) {
   let intl;
   let obj5;
   let tmp19;

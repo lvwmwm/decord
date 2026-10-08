@@ -1,12 +1,12 @@
-// Module ID: 10051
-// Function ID: 10052
+// Module ID: 10296
+// Function ID: 10297
 // Name: FavoritesGuildExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1452, 558, 576, 2]
 // Exports: getFavoritesGuildConfig
 
-// Module 10051 (FavoritesGuildExperiment)
+// Module 10296 (FavoritesGuildExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1440 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let obj3 = { name: "2026-08-favorites-server", kind: "user", defaultConfig: { en
 obj4 = { 1: null };
 obj4[1] = { enabled: true };
 let closure_3 = ApexExperiment.createApexExperiment(obj3);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesGuildConfig(location) {
   let tmp2;
   let tmp4;
   const obj = react;
@@ -58,7 +58,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
   cResult[5] = config1;
   cResult[6] = obj4;
   tmp6 = obj4;
-}) : ((location) => {
+}) : (function useFavoritesGuildConfig(location) {
   const _location = location.location;
   const config = closure_3.useConfig({ location: _location });
   const obj = { enabled: config.enabled || closure_2.useConfig({ location: _location }).enabled, isFreemium: config.enabled };

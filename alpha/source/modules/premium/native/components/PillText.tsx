@@ -1,29 +1,29 @@
-// Module ID: 13242
-// Function ID: 13243
+// Module ID: 13542
+// Function ID: 13543
 // Name: PillText
-// Dependencies: [1085, 21, 4896, 587, 558, 576, 13243, 4892, 5612, 2]
+// Dependencies: [1085, 21, 5090, 587, 558, 576, 13543, 5086, 5387, 2]
 
-// Module 13242 (PillText)
+// Module 13542 (PillText)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 13243 */;
-import createStyles from "createStyles" /* 4896 */;
+import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 13543 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
 let tmp5;
-const Text_Text = tmp(4892);
-const LinearGradientDefault = tmp5(5612);
+const Text_Text = tmp(5086);
+const LinearGradientDefault = tmp5(5387);
 const HorizontalGradient = Constants.HorizontalGradient;
 const jsx = Fragment.jsx;
 let obj = { pillTextContainer: obj2, pillText: { textTransform: "uppercase" } };
 obj2 = { paddingHorizontal: 8, borderRadius: nativeDefault.radii.lg, justifyContent: "center" };
 let closure_5 = createStyles.createStyles(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PillText(arg0) {
   let pillText;
   let style;
   const obj = react;
@@ -69,7 +69,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.pillTextContainer;
   cResult[2] = items;
   tmp7 = items;
-}) : ((arg0) => {
+}) : (function PillText(arg0) {
   let pillText;
   let style;
   ({ pillText, style } = arg0);

@@ -1,16 +1,16 @@
-// Module ID: 17198
-// Function ID: 17199
+// Module ID: 17479
+// Function ID: 17480
 // Name: ActivityPanelUI
-// Dependencies: [19, 17, 9001, 21, 17199, 17205, 558, 576, 17219, 4595, 6658, 17220, 17197, 2]
+// Dependencies: [19, 17, 6072, 21, 17480, 17486, 558, 576, 17500, 4787, 6835, 17501, 17478, 2]
 
-// Module 17198 (ActivityPanelUI)
+// Module 17479 (ActivityPanelUI)
 import react2 from "react" /* 576 */;
-import native from "native" /* 4595 */;
-import LayerScope2 from "LayerScope" /* 6658 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 9001 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17197 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 17219 */;
-import ActivityPanelSystemUIManagerDefault from "ActivityPanelSystemUIManager" /* 17220 */;
+import native from "native" /* 4787 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6072 */;
+import LayerScope2 from "LayerScope" /* 6835 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17478 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 17500 */;
+import ActivityPanelSystemUIManagerDefault from "ActivityPanelSystemUIManager" /* 17501 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -28,9 +28,9 @@ function renderActivityOrPIP(arg0, arg1, transitionState, transitionCleanUp) {
   const tmp = metroImportDefault;
   const tmp2 = importDefault;
   if ("pip" === arg1) {
-    tmp4 = 17199;
+    tmp4 = 17480;
   } else {
-    tmp4 = 17205;
+    tmp4 = 17486;
   }
   const obj = { transitionState, transitionCleanUp };
   return tmp(tmp2(tmp4), obj, arg0);
@@ -49,7 +49,7 @@ let closure_12 = [];
 let closure_13 = ["pip"];
 let closure_14 = ["activity"];
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseActivityPanelUI(context) {
   let items;
   let renderActivityPanelSystemUIManager;
   let tmp6;
@@ -98,7 +98,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
     tmp6 = mode === tmp5.PIP ? closure_13 : closure_14;
   }
   tmp6 = closure_12;
-}) : ((context) => {
+}) : (function BaseActivityPanelUI(context) {
   let closure_1;
   let items1;
   let renderActivityPanelSystemUIManager;
@@ -118,15 +118,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
     tmp4 = closure_12;
   }, items);
   const obj = { children: items1 };
-  const LayerScope = mode(6658).LayerScope;
+  const LayerScope = mode(6835).LayerScope;
   items1 = [renderActivityPanelSystemUIManager(), ];
   const obj2 = { items: memo, renderItem: renderActivityOrPIP, getItemKey: getKey, wrapChildren };
-  items1[1] = closure_7(mode(4595).TransitionGroup, obj2);
+  items1[1] = closure_7(mode(4787).TransitionGroup, obj2);
   return closure_8(LayerScope, obj);
 });
 let closure_15 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityPanelUI() {
   let first;
   let tmp4;
   const obj = react2;
@@ -149,7 +149,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : (() => {
+}) : (function ActivityPanelUI() {
   const renderActivityPanelSystemUIManager = react.useCallback(() => closure_1_7(ActivityPanelSystemUIManagerDefault, {}), []);
   const items = [renderActivityPanelSystemUIManager];
   return react.useMemo(() => {

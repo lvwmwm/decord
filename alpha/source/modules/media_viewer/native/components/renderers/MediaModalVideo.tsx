@@ -1,13 +1,13 @@
-// Module ID: 12794
-// Function ID: 12795
+// Module ID: 12941
+// Function ID: 12942
 // Name: MediaModalVideo
-// Dependencies: [19, 21, 558, 576, 12795, 12796, 7993, 12797, 2]
+// Dependencies: [19, 21, 558, 576, 12942, 12943, 8401, 12944, 2]
 
-// Module 12794 (MediaModalVideo)
+// Module 12941 (MediaModalVideo)
 import react2 from "react" /* 576 */;
-import useMediaLoadingDefault from "useMediaLoading" /* 12795 */;
-import MediaModalLoadingOverlayDefault from "MediaModalLoadingOverlay" /* 12796 */;
-import MediaModalSpoilerOverlayDefault from "MediaModalSpoilerOverlay" /* 12797 */;
+import useMediaLoadingDefault from "useMediaLoading" /* 12942 */;
+import MediaModalLoadingOverlayDefault from "MediaModalLoadingOverlay" /* 12943 */;
+import MediaModalSpoilerOverlayDefault from "MediaModalSpoilerOverlay" /* 12944 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -16,10 +16,10 @@ import size_mod from "module_2" /* 2 */;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const common_Video = tmp(7993);
+const common_Video = tmp(8401);
 let Fragment = Fragment_mod;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MediaModalVideo(arg0) {
   let controls;
   let handleError;
   let handleLoad;
@@ -119,7 +119,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
                           let tmp13 = null;
                           if (isLoadingVisible) {
                             const obj6 = { style, status: "loading" };
-                            tmp13 = React3(tmp5(12796), obj6);
+                            tmp13 = React3(tmp5(12943), obj6);
                           }
                           cResult[19] = isLoadingVisible;
                           cResult[20] = style;
@@ -163,7 +163,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[2] = onLoadingVisible;
   cResult[3] = obj8;
   tmp4 = obj8;
-}) : ((source) => {
+}) : (function MediaModalVideo(source) {
   let controls;
   let handleError;
   let handleLoad;
@@ -191,7 +191,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   const tmp4 = react;
   if (hasError) {
     const obj2 = { style, status: "error" };
-    tmp6Result = React3(tmp(12796), obj2);
+    tmp6Result = React3(tmp(12943), obj2);
   } else {
     const Fragment = tmp4.Fragment;
     const obj = { controls, muted, onError: handleError, onLoad: handleLoad, onLoadStart: handleLoadStart, paused, source: tmp5, style };
@@ -200,7 +200,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     const tmp6 = hasOwnProperty;
     if (isLoadingVisible) {
       const obj3 = { style, status: "loading" };
-      tmp7Result = tmp7(tmp(12796), obj3);
+      tmp7Result = tmp7(tmp(12943), obj3);
     }
     const obj4 = { children: items1 };
     items1[1] = tmp7Result;

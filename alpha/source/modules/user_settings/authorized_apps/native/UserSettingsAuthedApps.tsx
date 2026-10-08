@@ -1,26 +1,26 @@
-// Module ID: 14762
-// Function ID: 14763
+// Module ID: 15023
+// Function ID: 15024
 // Name: UserSettingsAuthedApps
-// Dependencies: [19, 17, 6609, 1085, 21, 587, 4896, 558, 576, 8755, 8584, 8983, 4818, 1618, 504, 1490, 6672, 1491, 4892, 1126, 6081, 6000, 9257, 6494, 6498, 2]
+// Dependencies: [19, 17, 6786, 1085, 21, 587, 5090, 558, 576, 9135, 9068, 12887, 5012, 1630, 504, 1502, 6849, 1503, 5086, 1126, 6267, 6184, 8587, 6671, 6675, 2]
 
-// Module 14762 (UserSettingsAuthedApps)
+// Module 15023 (UserSettingsAuthedApps)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4818 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import TableRowGroup from "TableRowGroup" /* 6081 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6494 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6498 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6609 */;
-import GlobeEarthIcon from "GlobeEarthIcon" /* 8584 */;
-import applications from "applications" /* 8755 */;
-import EmbedIcon from "EmbedIcon" /* 8983 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5012 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import TableRowGroup from "TableRowGroup" /* 6267 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6671 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6675 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6786 */;
+import GlobeEarthIcon from "GlobeEarthIcon" /* 9068 */;
+import applications from "applications" /* 9135 */;
+import EmbedIcon from "EmbedIcon" /* 12887 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ let obj = { spinner: { padding: 16 }, emptyText: { marginTop: 24 }, emptyContain
 obj2 = { paddingHorizontal: 16, paddingTop: nativeDefault.space.PX_24 };
 let closure_15 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisclosureIcon(arg0) {
   let disclosure;
   let style;
   let tmp4;
@@ -88,7 +88,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp4 = cResult[5];
   }
   return tmp4;
-}) : ((disclosure) => {
+}) : (function DisclosureIcon(disclosure) {
   disclosure = disclosure.disclosure;
   const style = disclosure.style;
   const items = [disclosure, style];
@@ -107,7 +107,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsAuthedApps() {
   let appAuthTokens;
   let closure_0;
   let items1;
@@ -140,34 +140,25 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult3 = require("useNavigation");
   navigation = tmpResult3.useNavigation();
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    class A {
-      constructor() {
-        const obj = appAuthTokens(navigation[16]);
-        return obj.fetch();
-      }
-    }
-    cResult[2] = A;
-    tmp10 = A;
+    const fn2 = function x() {
+      const obj = appAuthTokens(navigation[16]);
+      return obj.fetch();
+    };
+    cResult[2] = fn2;
+    tmp10 = fn2;
   } else {
-    class A {
-      constructor() {
-        const obj = appAuthTokens(navigation[16]);
-        return obj.fetch();
-      }
-    }
+    tmp10 = cResult[2];
   }
   const tmpResult4 = require("Link");
   const focusEffect = tmpResult4.useFocusEffect(tmp10);
   if (cResult[3] === tmp4.appListHeader) {
+    let tmp12;
     let tmp37;
-    class A {
-      constructor() {
-        const obj = appAuthTokens(navigation[16]);
-        return obj.fetch();
-      }
+    if (cResult[4] === tmp4.headerDescription) {
+      tmp12 = cResult[5];
     }
     if (cResult[6] !== navigation) {
-      class D {
+      class H {
         constructor(arg0) {
           item = arg0.item;
           index = arg0.index;
@@ -177,7 +168,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           obj1 = { application: item.application };
           obj.icon = closure_1_11(appAuthTokens(closure_2[22]), obj1);
           obj.label = item.application.name;
-          obj.onPress = function onPress() {
+          obj.onPress = function handleAppPress() {
             let obj4;
             const obj = UserSettingsModalActionCreatorsDefault;
             obj.setSection(constants2.AUTHORIZED_APP);
@@ -194,9 +185,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       cResult[6] = navigation;
-      cResult[7] = D;
+      cResult[7] = H;
     } else {
-      class D {
+      class H {
         constructor(arg0) {
           item = arg0.item;
           index = arg0.index;
@@ -206,7 +197,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           obj1 = { application: item.application };
           obj.icon = closure_1_11(appAuthTokens(closure_2[22]), obj1);
           obj.label = item.application.name;
-          obj.onPress = function onPress() {
+          obj.onPress = function handleAppPress() {
             let obj4;
             const obj = UserSettingsModalActionCreatorsDefault;
             obj.setSection(constants2.AUTHORIZED_APP);
@@ -223,9 +214,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     }
-    D = tmp13;
+    H = tmp13;
     if (null != appAuthTokens) {
-      class D {
+      class H {
         constructor(arg0) {
           item = arg0.item;
           index = arg0.index;
@@ -235,7 +226,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           obj1 = { application: item.application };
           obj.icon = closure_1_11(appAuthTokens(closure_2[22]), obj1);
           obj.label = item.application.name;
-          obj.onPress = function onPress() {
+          obj.onPress = function handleAppPress() {
             let obj4;
             const obj = UserSettingsModalActionCreatorsDefault;
             obj.setSection(constants2.AUTHORIZED_APP);
@@ -252,7 +243,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       if (fetchState === FetchState.FETCHED) {
-        class D {
+        class H {
           constructor(arg0) {
             item = arg0.item;
             index = arg0.index;
@@ -262,7 +253,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             obj1 = { application: item.application };
             obj.icon = closure_1_11(appAuthTokens(closure_2[22]), obj1);
             obj.label = item.application.name;
-            obj.onPress = function onPress() {
+            obj.onPress = function handleAppPress() {
               let obj4;
               const obj = UserSettingsModalActionCreatorsDefault;
               obj.setSection(constants2.AUTHORIZED_APP);
@@ -280,7 +271,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
         if (0 === appAuthTokens.length) {
           let tmp29;
-          class D {
+          class H {
             constructor(arg0) {
               item = arg0.item;
               index = arg0.index;
@@ -290,7 +281,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               obj1 = { application: item.application };
               obj.icon = closure_1_11(appAuthTokens(closure_2[22]), obj1);
               obj.label = item.application.name;
-              obj.onPress = function onPress() {
+              obj.onPress = function handleAppPress() {
                 let obj4;
                 const obj = UserSettingsModalActionCreatorsDefault;
                 obj.setSection(constants2.AUTHORIZED_APP);
@@ -307,7 +298,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
           }
           if (cResult[10] !== tmp12) {
-            class D {
+            class H {
               constructor(arg0) {
                 item = arg0.item;
                 index = arg0.index;
@@ -317,7 +308,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 obj1 = { application: item.application };
                 obj.icon = closure_1_11(appAuthTokens(closure_2[22]), obj1);
                 obj.label = item.application.name;
-                obj.onPress = function onPress() {
+                obj.onPress = function handleAppPress() {
                   let obj4;
                   const obj = UserSettingsModalActionCreatorsDefault;
                   obj.setSection(constants2.AUTHORIZED_APP);
@@ -336,7 +327,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             cResult[10] = tmp12;
             cResult[11] = tmp28;
           } else {
-            class D {
+            class H {
               constructor(arg0) {
                 item = arg0.item;
                 index = arg0.index;
@@ -346,7 +337,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 obj1 = { application: item.application };
                 obj.icon = closure_1_11(appAuthTokens(closure_2[22]), obj1);
                 obj.label = item.application.name;
-                obj.onPress = function onPress() {
+                obj.onPress = function handleAppPress() {
                   let obj4;
                   const obj = UserSettingsModalActionCreatorsDefault;
                   obj.setSection(constants2.AUTHORIZED_APP);
@@ -366,7 +357,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const _Symbol = Symbol;
           const emptyText = tmp4.emptyText;
           if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-            class D {
+            class H {
               constructor(arg0) {
                 item = arg0.item;
                 index = arg0.index;
@@ -376,7 +367,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 obj1 = { application: item.application };
                 obj.icon = closure_1_11(appAuthTokens(closure_2[22]), obj1);
                 obj.label = item.application.name;
-                obj.onPress = function onPress() {
+                obj.onPress = function handleAppPress() {
                   let obj4;
                   const obj = UserSettingsModalActionCreatorsDefault;
                   obj.setSection(constants2.AUTHORIZED_APP);
@@ -396,7 +387,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             cResult[12] = stringResult;
             tmp29 = stringResult;
           } else {
-            class D {
+            class H {
               constructor(arg0) {
                 item = arg0.item;
                 index = arg0.index;
@@ -406,7 +397,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 obj1 = { application: item.application };
                 obj.icon = closure_1_11(appAuthTokens(closure_2[22]), obj1);
                 obj.label = item.application.name;
-                obj.onPress = function onPress() {
+                obj.onPress = function handleAppPress() {
                   let obj4;
                   const obj = UserSettingsModalActionCreatorsDefault;
                   obj.setSection(constants2.AUTHORIZED_APP);
@@ -424,7 +415,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
           }
           if (cResult[13] !== tmp4.emptyText) {
-            class D {
+            class H {
               constructor(arg0) {
                 item = arg0.item;
                 index = arg0.index;
@@ -434,7 +425,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 obj1 = { application: item.application };
                 obj.icon = closure_1_11(appAuthTokens(closure_2[22]), obj1);
                 obj.label = item.application.name;
-                obj.onPress = function onPress() {
+                obj.onPress = function handleAppPress() {
                   let obj4;
                   const obj = UserSettingsModalActionCreatorsDefault;
                   obj.setSection(constants2.AUTHORIZED_APP);
@@ -455,7 +446,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             cResult[14] = closure_11(require("Text/Text").Text, obj2);
             const tmp32 = closure_11(require("Text/Text").Text, obj2);
           } else {
-            class D {
+            class H {
               constructor(arg0) {
                 item = arg0.item;
                 index = arg0.index;
@@ -465,7 +456,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 obj1 = { application: item.application };
                 obj.icon = closure_1_11(appAuthTokens(closure_2[22]), obj1);
                 obj.label = item.application.name;
-                obj.onPress = function onPress() {
+                obj.onPress = function handleAppPress() {
                   let obj4;
                   const obj = UserSettingsModalActionCreatorsDefault;
                   obj.setSection(constants2.AUTHORIZED_APP);
@@ -483,7 +474,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
           }
           if (cResult[15] === tmp4.emptyContainer) {
-            class D {
+            class H {
               constructor(arg0) {
                 item = arg0.item;
                 index = arg0.index;
@@ -493,7 +484,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 obj1 = { application: item.application };
                 obj.icon = closure_1_11(appAuthTokens(closure_2[22]), obj1);
                 obj.label = item.application.name;
-                obj.onPress = function onPress() {
+                obj.onPress = function handleAppPress() {
                   let obj4;
                   const obj = UserSettingsModalActionCreatorsDefault;
                   obj.setSection(constants2.AUTHORIZED_APP);
@@ -518,7 +509,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           cResult[18] = closure_12(closure_4, obj3);
           const tmp36 = closure_12(closure_4, obj3);
         } else {
-          class D {
+          class H {
             constructor(arg0) {
               item = arg0.item;
               index = arg0.index;
@@ -528,7 +519,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               obj1 = { application: item.application };
               obj.icon = closure_1_11(appAuthTokens(closure_2[22]), obj1);
               obj.label = item.application.name;
-              obj.onPress = function onPress() {
+              obj.onPress = function handleAppPress() {
                 let obj4;
                 const obj = UserSettingsModalActionCreatorsDefault;
                 obj.setSection(constants2.AUTHORIZED_APP);
@@ -546,7 +537,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
           const sum = bottom + PX_24;
           if (cResult[19] !== sum) {
-            class D {
+            class H {
               constructor(arg0) {
                 item = arg0.item;
                 index = arg0.index;
@@ -556,7 +547,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 obj1 = { application: item.application };
                 obj.icon = closure_1_11(appAuthTokens(closure_2[22]), obj1);
                 obj.label = item.application.name;
-                obj.onPress = function onPress() {
+                obj.onPress = function handleAppPress() {
                   let obj4;
                   const obj = UserSettingsModalActionCreatorsDefault;
                   obj.setSection(constants2.AUTHORIZED_APP);
@@ -576,7 +567,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             cResult[19] = sum;
             cResult[20] = tmp16;
           } else {
-            class D {
+            class H {
               constructor(arg0) {
                 item = arg0.item;
                 index = arg0.index;
@@ -586,7 +577,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 obj1 = { application: item.application };
                 obj.icon = closure_1_11(appAuthTokens(closure_2[22]), obj1);
                 obj.label = item.application.name;
-                obj.onPress = function onPress() {
+                obj.onPress = function handleAppPress() {
                   let obj4;
                   const obj = UserSettingsModalActionCreatorsDefault;
                   obj.setSection(constants2.AUTHORIZED_APP);
@@ -604,7 +595,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
           }
           if (cResult[21] === tmp4.container) {
-            class D {
+            class H {
               constructor(arg0) {
                 item = arg0.item;
                 index = arg0.index;
@@ -614,7 +605,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 obj1 = { application: item.application };
                 obj.icon = closure_1_11(appAuthTokens(closure_2[22]), obj1);
                 obj.label = item.application.name;
-                obj.onPress = function onPress() {
+                obj.onPress = function handleAppPress() {
                   let obj4;
                   const obj = UserSettingsModalActionCreatorsDefault;
                   obj.setSection(constants2.AUTHORIZED_APP);
@@ -631,7 +622,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               }
             }
             if (cResult[24] !== tmp12) {
-              class D {
+              class H {
                 constructor(arg0) {
                   item = arg0.item;
                   index = arg0.index;
@@ -641,7 +632,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   obj1 = { application: item.application };
                   obj.icon = closure_1_11(appAuthTokens(closure_2[22]), obj1);
                   obj.label = item.application.name;
-                  obj.onPress = function onPress() {
+                  obj.onPress = function handleAppPress() {
                     let obj4;
                     const obj = UserSettingsModalActionCreatorsDefault;
                     obj.setSection(constants2.AUTHORIZED_APP);
@@ -661,12 +652,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               class M {
                 constructor(item) {
                   const obj = { item: item.item, index: item.index, numItems: appAuthTokens.length };
-                  return D(obj);
+                  return H(obj);
                 }
               }
               cResult[25] = tmp19;
             } else {
-              class D {
+              class H {
                 constructor(arg0) {
                   item = arg0.item;
                   index = arg0.index;
@@ -676,7 +667,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   obj1 = { application: item.application };
                   obj.icon = closure_1_11(appAuthTokens(closure_2[22]), obj1);
                   obj.label = item.application.name;
-                  obj.onPress = function onPress() {
+                  obj.onPress = function handleAppPress() {
                     let obj4;
                     const obj = UserSettingsModalActionCreatorsDefault;
                     obj.setSection(constants2.AUTHORIZED_APP);
@@ -694,7 +685,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               }
             }
             if (cResult[26] === appAuthTokens.length) {
-              class D {
+              class H {
                 constructor(arg0) {
                   item = arg0.item;
                   index = arg0.index;
@@ -704,7 +695,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   obj1 = { application: item.application };
                   obj.icon = closure_1_11(appAuthTokens(closure_2[22]), obj1);
                   obj.label = item.application.name;
-                  obj.onPress = function onPress() {
+                  obj.onPress = function handleAppPress() {
                     let obj4;
                     const obj = UserSettingsModalActionCreatorsDefault;
                     obj.setSection(constants2.AUTHORIZED_APP);
@@ -721,7 +712,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 }
               }
               if (cResult[29] !== appAuthTokens) {
-                class D {
+                class H {
                   constructor(arg0) {
                     item = arg0.item;
                     index = arg0.index;
@@ -731,7 +722,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     obj1 = { application: item.application };
                     obj.icon = closure_1_11(appAuthTokens(closure_2[22]), obj1);
                     obj.label = item.application.name;
-                    obj.onPress = function onPress() {
+                    obj.onPress = function handleAppPress() {
                       let obj4;
                       const obj = UserSettingsModalActionCreatorsDefault;
                       obj.setSection(constants2.AUTHORIZED_APP);
@@ -758,7 +749,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   class M {
                     constructor(item) {
                       const obj = { item: item.item, index: item.index, numItems: appAuthTokens.length };
-                      return D(obj);
+                      return H(obj);
                     }
                   }
                 } else {
@@ -772,7 +763,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 class M {
                   constructor(item) {
                     const obj = { item: item.item, index: item.index, numItems: appAuthTokens.length };
-                    return D(obj);
+                    return H(obj);
                   }
                 }
                 cResult[29] = appAuthTokens;
@@ -796,7 +787,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               class M {
                 constructor(item) {
                   const obj = { item: item.item, index: item.index, numItems: appAuthTokens.length };
-                  return D(obj);
+                  return H(obj);
                 }
               }
               let obj4 = { contentContainerStyle: tmp17, ListHeaderComponent: tmp18, renderItem: tmp20, data: tmp21 };
@@ -810,7 +801,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             class M {
               constructor(item) {
                 const obj = { item: item.item, index: item.index, numItems: appAuthTokens.length };
-                return D(obj);
+                return H(obj);
               }
             }
             cResult[26] = appAuthTokens.length;
@@ -835,7 +826,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       class M {
         constructor(item) {
           const obj = { item: item.item, index: item.index, numItems: appAuthTokens.length };
-          return D(obj);
+          return H(obj);
         }
       }
       const tmp39 = closure_11(closure_5, obj5);
@@ -852,38 +843,37 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return tmp37;
   }
-  class E {
-    constructor() {
-      let TableRowGroupTitle;
-      let intl;
-      let intl2;
-      let intl3;
-      let items;
-      let items1;
-      let obj6;
-      const obj = { children: items1 };
-      const obj2 = { children: items };
-      const obj3 = { color: "mobile-text-heading-primary", variant: "heading-md/semibold", children: intl.string(intl4.t.HU3RFw) };
-      const Text = Text_Text.Text;
-      intl = intl4.intl;
-      items = [unpackModuleId(Text, obj3), ];
-      const obj4 = { style: closure_0.headerDescription, variant: "heading-sm/medium", children: intl2.string(intl4.t.Nu5Yi0) };
-      const Text2 = Text_Text.Text;
-      intl2 = intl4.intl;
-      items[1] = unpackModuleId(Text2, obj4);
-      items1 = [closure_12(React3, obj2), ];
-      const obj5 = { style: closure_0.appListHeader, children: unpackModuleId(TableRowGroupTitle, obj6) };
-      obj6 = { title: intl3.string(intl4.t.PHjkRE) };
-      TableRowGroupTitle = TableRowGroup.TableRowGroupTitle;
-      intl3 = intl4.intl;
-      items1[1] = unpackModuleId(React3, obj5);
-      return closure_12(map1, obj);
-    }
+  function renderHeader() {
+    let TableRowGroupTitle;
+    let intl;
+    let intl2;
+    let intl3;
+    let items;
+    let items1;
+    let obj6;
+    const obj = { children: items1 };
+    const obj2 = { children: items };
+    const obj3 = { color: "mobile-text-heading-primary", variant: "heading-md/semibold", children: intl.string(intl4.t.HU3RFw) };
+    const Text = Text_Text.Text;
+    intl = intl4.intl;
+    items = [unpackModuleId(Text, obj3), ];
+    const obj4 = { style: closure_0.headerDescription, variant: "heading-sm/medium", children: intl2.string(intl4.t.Nu5Yi0) };
+    const Text2 = Text_Text.Text;
+    intl2 = intl4.intl;
+    items[1] = unpackModuleId(Text2, obj4);
+    items1 = [closure_12(React3, obj2), ];
+    const obj5 = { style: closure_0.appListHeader, children: unpackModuleId(TableRowGroupTitle, obj6) };
+    obj6 = { title: intl3.string(intl4.t.PHjkRE) };
+    TableRowGroupTitle = TableRowGroup.TableRowGroupTitle;
+    intl3 = intl4.intl;
+    items1[1] = unpackModuleId(React3, obj5);
+    return closure_12(map1, obj);
   }
   cResult[3] = tmp4.appListHeader;
   cResult[4] = tmp4.headerDescription;
-  cResult[5] = E;
-}) : (() => {
+  cResult[5] = renderHeader;
+  tmp12 = renderHeader;
+}) : (function UserSettingsAuthedApps() {
   let appAuthTokens;
   let closure_0;
   let closure_3;
@@ -917,7 +907,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let obj = {
       icon: closure_1_11(appAuthTokens(navigation[22]), obj2),
       label: item.application.name,
-      onPress() {
+      onPress: function handleAppPress() {
         let obj4;
         const obj = UserSettingsModalActionCreatorsDefault;
         obj.setSection(constants2.AUTHORIZED_APP);

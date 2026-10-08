@@ -1,11 +1,11 @@
-// Module ID: 4574
-// Function ID: 4575
+// Module ID: 4766
+// Function ID: 4767
 // Name: ToastActionCreators
-// Dependencies: [4575, 4580, 4581, 584, 2]
+// Dependencies: [4767, 4772, 4773, 584, 2]
 
-// Module 4574 (ToastActionCreators)
+// Module 4766 (ToastActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import toastUtils from "toastUtils" /* 4575 */;
+import toastUtils from "toastUtils" /* 4767 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -26,7 +26,7 @@ let obj = {
       if (flag2) {
         let tmp6 = key === key && null != c3;
         if (tmp6) {
-          const useToastStore = tmp(4575).useToastStore;
+          const useToastStore = tmp(4767).useToastStore;
           const currentToastMap = useToastStore.getState().currentToastMap;
           const value = currentToastMap.get("app");
           let toast;
@@ -54,7 +54,7 @@ let obj = {
       });
     }
   },
-  openMana(DEV_IN_APP_NOTIF_TEST_ERROR, toManaToastResult) {
+  openMana(DEV_IN_APP_NOTIF_TEST_ERROR, arg1) {
     let tmp = c4 === DEV_IN_APP_NOTIF_TEST_ERROR && null != c3;
     if (tmp) {
       const useToastStore = toastUtils.useToastStore;
@@ -67,10 +67,10 @@ let obj = {
       tmp = toast === c3;
     }
     if (!tmp) {
-      c3 = toManaToastResult;
+      c3 = arg1;
       c4 = DEV_IN_APP_NOTIF_TEST_ERROR;
       const obj = toastUtils;
-      obj.showToast(toManaToastResult);
+      obj.showToast(arg1);
     }
   },
   close() {

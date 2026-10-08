@@ -1,23 +1,23 @@
-// Module ID: 9683
-// Function ID: 9684
+// Module ID: 10872
+// Function ID: 10873
 // Name: UserSettingsVoiceOverlay
-// Dependencies: [19, 9671, 21, 558, 576, 573, 1126, 9670, 6705, 9684, 2]
+// Dependencies: [19, 10860, 21, 558, 576, 573, 1126, 10859, 6882, 10873, 2]
 
-// Module 9683 (UserSettingsVoiceOverlay)
+// Module 10872 (UserSettingsVoiceOverlay)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 6705 */;
-import UserSettingsVoice from "UserSettingsVoice" /* 9670 */;
-import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 9684 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 6882 */;
+import UserSettingsVoice from "UserSettingsVoice" /* 10859 */;
+import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 10873 */;
 import react from "react" /* 19 */;
-import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 9671 */;
+import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 10860 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsVoiceOverlay() {
   let enabled;
   let tmp10;
   let tmp11;
@@ -63,9 +63,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp11 = cResult[4];
   }
   if (cResult[5] !== stateFromStores) {
-    const UserSettingsTableRowGroup = tmp(9670).UserSettingsTableRowGroup;
+    const UserSettingsTableRowGroup = tmp(10859).UserSettingsTableRowGroup;
     ({ label: tmp10, subLabel: tmp11, value: stateFromStores, onValueChange: MobileVoiceOverlayActionCreatorsDefault.setEnabled });
-    const TableSwitchRow = tmp(6705).TableSwitchRow;
+    const TableSwitchRow = tmp(6882).TableSwitchRow;
     const tmp17 = <UserSettingsTableRowGroup title={tmp8} hasIcons={false}>{null}</UserSettingsTableRowGroup>;
     cResult[5] = stateFromStores;
     cResult[6] = tmp17;
@@ -74,7 +74,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp14 = cResult[6];
   }
   return tmp14;
-}) : (() => {
+}) : (function UserSettingsVoiceOverlay() {
   let enabled;
   let intl2;
   let intl3;

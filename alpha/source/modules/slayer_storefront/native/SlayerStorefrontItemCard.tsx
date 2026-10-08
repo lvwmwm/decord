@@ -1,37 +1,50 @@
-// Module ID: 8514
-// Function ID: 8515
+// Module ID: 8998
+// Function ID: 8999
 // Name: SlayerStorefrontItemCard
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 6741, 8515, 7076, 5981, 5612, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 6917, 8999, 7262, 6164, 5387, 2]
 
-// Module 8514 (SlayerStorefrontItemCard)
-import Fragment from "Fragment" /* 21 */;
+// Module 8998 (SlayerStorefrontItemCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import LinearGradientDefault from "LinearGradient" /* 5612 */;
-import FastImageDefault from "FastImage" /* 5981 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6741 */;
-import _modDef7076 from "module_7076" /* 7076 */;
-import DominantColorUtils from "DominantColorUtils" /* 8515 */;
+import LinearGradientDefault from "LinearGradient" /* 5387 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6917 */;
+import _modDef7262 from "module_7262" /* 7262 */;
+import DominantColorUtils from "DominantColorUtils" /* 8999 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4896 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
+let StyleSheet;
 let closure_4;
 let hasOwnProperty;
+let metroRequire;
 let obj2;
-({ ImageBackground: closure_4, View: hasOwnProperty } = react_native);
-const jsx = Fragment.jsx;
-let obj = { cardContainer: obj2, cardImageBackground: { width: "100%", height: "100%", alignItems: "center", justifyContent: "center" }, cardImage: { width: "100%", height: "100%", resizeMode: "cover" } };
+let obj3;
+({ View: closure_4, StyleSheet } = react_native);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { cardContainer: obj2, cardImageBackground: { width: "100%", height: "100%", alignItems: "center", justifyContent: "center" }, backgroundImage: obj3, cardImage: { width: "100%", height: "100%", resizeMode: "cover" } };
 obj2 = { borderRadius: nativeDefault.radii.md, overflow: "hidden", shadowColor: "#000", shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.3, shadowRadius: 8, elevation: 8 };
-let closure_7 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+createStyles = createStyles.createStyles;
+obj3 = { width: "100%", height: "100%" };
+const merged = Object.assign(StyleSheet.absoluteFillObject);
+let closure_7 = createStyles(obj);
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SlayerStorefrontItemCard(arg0) {
   let containerStyle;
+  let items2;
+  let obj11;
+  let obj12;
+  let obj5;
+  let obj8;
   let size2;
   let sku;
+  let tmp40;
   const obj = react2;
-  const cResult = obj.c(31);
+  const cResult = obj.c(32);
   ({ sku, size, containerStyle } = arg0);
   let num = 220;
   if (undefined !== size) {
@@ -80,7 +93,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp16;
         let tmp19;
         if (cResult[11] !== dominantColorFromImage) {
-          const obj6 = _modDef7076(dominantColorFromImage);
+          const obj6 = _modDef7262(dominantColorFromImage);
           const brightenResult = obj6.brighten(20);
           const saturateResult = brightenResult.saturate(30);
           const setAlphaResult = saturateResult.setAlpha(0.8);
@@ -92,7 +105,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp16 = cResult[12];
         }
         if (cResult[13] !== dominantColorFromImage) {
-          const obj10 = _modDef7076(dominantColorFromImage);
+          const obj10 = _modDef7262(dominantColorFromImage);
           const saturateResult1 = obj10.saturate(50);
           const setAlphaResult1 = saturateResult1.setAlpha(0.9);
           const toRgbStringResult1 = setAlphaResult1.toRgbString();
@@ -131,67 +144,79 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           if (cResult[18] === containerStyle) {
             if (cResult[19] === size2) {
               let tmp24;
-              let tmp30;
+              let tmp32;
               if (cResult[20] === tmp4.cardContainer) {
                 tmp24 = cResult[21];
               }
               if (cResult[22] === str2) {
                 if (cResult[23] === str) {
                   if (cResult[24] === tmp14) {
-                    if (cResult[25] === tmp4.cardImage) {
-                      let tmp25;
-                      if (cResult[26] === tmp4.cardImageBackground) {
-                        tmp25 = cResult[27];
-                      }
-                      if (cResult[28] === tmp24) {
-                        let tmp31;
-                        if (cResult[29] === tmp25) {
-                          tmp31 = cResult[30];
+                    if (cResult[25] === tmp4.backgroundImage) {
+                      if (cResult[26] === tmp4.cardImage) {
+                        let tmp25;
+                        if (cResult[27] === tmp4.cardImageBackground) {
+                          tmp25 = cResult[28];
                         }
-                        tmp23 = tmp31;
+                        if (cResult[29] === tmp24) {
+                          let tmp33;
+                          if (cResult[30] === tmp25) {
+                            tmp33 = cResult[31];
+                          }
+                          tmp23 = tmp33;
+                        }
+                        const obj2 = { style: tmp24, children: tmp25 };
+                        const tmp36 = hasOwnProperty(React3, obj2);
+                        cResult[29] = tmp24;
+                        cResult[30] = tmp25;
+                        cResult[31] = tmp36;
+                        tmp33 = tmp36;
                       }
-                      const tmp34 = <hasOwnProperty style={tmp24}>{tmp25}</hasOwnProperty>;
-                      cResult[28] = tmp24;
-                      cResult[29] = tmp25;
-                      cResult[30] = tmp34;
-                      tmp31 = tmp34;
                     }
                   }
                 }
               }
               if (null != str2) {
-                const obj4 = { uri: str2.toString() };
-                const obj7 = { uri: str.toString() };
-                FastImageDefault;
-                tmp30 = <React3 source={obj4} style={tmp4.cardImageBackground}>{null}</React3>;
+                const obj3 = { style: tmp4.cardImageBackground, children: items2 };
+                const obj4 = { source: obj5, style: tmp4.backgroundImage };
+                obj5 = { uri: str2.toString() };
+                const tmp30 = FastImageDefault;
+                items2 = [hasOwnProperty(tmp30, obj4), ];
+                const obj7 = { source: obj8, style: tmp4.cardImage };
+                obj8 = { uri: str.toString() };
+                const tmp31 = FastImageDefault;
+                items2[1] = hasOwnProperty(tmp31, obj7);
+                tmp32 = metroRequire(React3, obj3);
               } else {
-                const obj11 = { uri: str.toString() };
-                LinearGradientDefault;
-                FastImageDefault;
-                tmp30 = <tmp37 colors={tmp14} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={tmp4.cardImageBackground}>{null}</tmp37>;
+                const obj9 = { colors: tmp14, start: { x: 0, y: 0 }, end: { x: 1, y: 1 }, style: tmp4.cardImageBackground, children: hasOwnProperty(tmp40, obj11) };
+                obj11 = { source: obj12, style: tmp4.cardImage };
+                obj12 = { uri: str.toString() };
+                const tmp39 = LinearGradientDefault;
+                tmp40 = FastImageDefault;
+                tmp32 = hasOwnProperty(tmp39, obj9);
               }
               cResult[22] = str2;
               cResult[23] = str;
               cResult[24] = tmp14;
-              cResult[25] = tmp4.cardImage;
-              cResult[26] = tmp4.cardImageBackground;
-              cResult[27] = tmp30;
-              tmp25 = tmp30;
+              cResult[25] = tmp4.backgroundImage;
+              cResult[26] = tmp4.cardImage;
+              cResult[27] = tmp4.cardImageBackground;
+              cResult[28] = tmp32;
+              tmp25 = tmp32;
             }
           }
-          const items2 = [tmp4.cardContainer, size2, containerStyle];
+          const items3 = [tmp4.cardContainer, size2, containerStyle];
           cResult[18] = containerStyle;
           cResult[19] = size2;
           cResult[20] = tmp4.cardContainer;
-          cResult[21] = items2;
-          tmp24 = items2;
+          cResult[21] = items3;
+          tmp24 = items3;
         }
       }
       return tmp23;
     }
-    const obj12 = { size: bound };
+    const obj13 = { size: bound };
     const tmpResult3 = SlayerStorefrontUtils;
-    const cardBackgroundImageURL = tmpResult3.getCardBackgroundImageURL(sku, obj12);
+    const cardBackgroundImageURL = tmpResult3.getCardBackgroundImageURL(sku, obj13);
     cResult[5] = bound;
     cResult[6] = sku;
     cResult[7] = cardBackgroundImageURL;
@@ -203,15 +228,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = sku;
   cResult[4] = cardImageURL;
   str = cardImageURL;
-}) : ((sku) => {
+}) : (function SlayerStorefrontItemCard(sku) {
   let items2;
-  let obj3;
+  let items3;
   let obj4;
-  let obj5;
-  let obj7;
+  let obj6;
   let obj8;
-  let tmp13;
-  let tmp17;
+  let obj9;
+  let tmp18;
   let tmp9Result;
   sku = sku.sku;
   let num = sku.size;
@@ -254,21 +278,24 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (null != str) {
       let obj = { style: items2, children: tmp9Result };
       items2 = [tmp.cardContainer, size, containerStyle];
-      const tmp10 = closure_5;
       if (null != str2) {
-        let obj2 = { source: obj3, style: tmp.cardImageBackground, children: tmp9(tmp13, obj4) };
-        obj3 = { uri: str2.toString() };
-        obj4 = { source: obj5, style: tmp.cardImage };
-        obj5 = { uri: str.toString() };
-        tmp13 = bound(dominantColorFromImage[10]);
-        tmp9Result = tmp9(closure_4, obj2);
+        let obj2 = { style: tmp.cardImageBackground, children: items3 };
+        const obj3 = { source: obj4, style: tmp.backgroundImage };
+        obj4 = { uri: str2.toString() };
+        const tmp13 = bound(dominantColorFromImage[10]);
+        items3 = [tmp9(tmp13, obj3), ];
+        let obj5 = { source: obj6, style: tmp.cardImage };
+        obj6 = { uri: str.toString() };
+        const tmp14 = bound(dominantColorFromImage[10]);
+        items3[1] = closure_5(tmp14, obj5);
+        tmp9Result = closure_6(tmp10, obj2);
       } else {
-        const obj6 = { colors: tmp7, start: { x: 0, y: 0 }, end: { x: 1, y: 1 }, style: tmp.cardImageBackground, children: jsx(tmp17, obj7) };
-        obj7 = { source: obj8, style: tmp.cardImage };
-        obj8 = { uri: str.toString() };
-        const tmp16 = bound(dominantColorFromImage[11]);
-        tmp17 = bound(dominantColorFromImage[10]);
-        tmp9Result = tmp9(tmp16, obj6);
+        const obj7 = { colors: tmp7, start: { x: 0, y: 0 }, end: { x: 1, y: 1 }, style: tmp.cardImageBackground, children: closure_5(tmp18, obj8) };
+        obj8 = { source: obj9, style: tmp.cardImage };
+        obj9 = { uri: str.toString() };
+        const tmp17 = bound(dominantColorFromImage[11]);
+        tmp18 = bound(dominantColorFromImage[10]);
+        tmp9Result = tmp9(tmp17, obj7);
       }
       tmp9Result2 = tmp9(tmp10, obj);
     }
@@ -278,4 +305,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/slayer_storefront/native/SlayerStorefrontItemCard.tsx");
 
-export default tmp3;
+export default tmp6;

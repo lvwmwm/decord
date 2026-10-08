@@ -1,21 +1,21 @@
-// Module ID: 9574
-// Function ID: 9575
+// Module ID: 10769
+// Function ID: 10770
 // Name: StageMusicManager
-// Dependencies: [2051, 1999, 2103, 4915, 5582, 2056, 9572, 9575, 558, 576, 504, 5595, 5589, 6620, 2]
+// Dependencies: [2063, 2011, 2115, 5111, 5892, 2068, 10767, 10770, 558, 576, 504, 5961, 5955, 6797, 2]
 // Exports: shouldShowStageMusicMuteButton
 
-// Module 9574 (StageMusicManager)
-import StageChannelParticipants from "StageChannelParticipants" /* 5589 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import VoiceStateStore from "VoiceStateStore" /* 4915 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5582 */;
-import StageInstanceStore from "StageInstanceStore" /* 2056 */;
-import StageMusicStore from "StageMusicStore" /* 9572 */;
-import SoundUtils from "SoundUtils" /* 9575 */;
+// Module 10769 (StageMusicManager)
+import StageChannelParticipants from "StageChannelParticipants" /* 5955 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import VoiceStateStore from "VoiceStateStore" /* 5111 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5892 */;
+import StageInstanceStore from "StageInstanceStore" /* 2068 */;
+import StageMusicStore from "StageMusicStore" /* 10767 */;
+import SoundUtils from "SoundUtils" /* 10770 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6620 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6797 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -77,7 +77,7 @@ function checkVoiceStates() {
 }
 let c9 = false;
 const authStore = SoundUtils.createSound("stage_waiting", "stage_waiting", MediaEngineStore.getOutputVolume() / 400);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowStageMusicMuteButton(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -92,7 +92,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function l() {
+    const fn = function u() {
       return SelectedChannelStore.getVoiceChannelId() === closure_0;
     };
     cResult[1] = arg0;
@@ -104,7 +104,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult = require("get initialized");
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
   const tmpResult3 = require("StageChannelParticipantStoreHooks");
-  const stageParticipants = tmpResult3.useStageParticipants(arg0, tmp(5589).StageChannelParticipantNamedIndex.SPEAKER);
+  const stageParticipants = tmpResult3.useStageParticipants(arg0, tmp(5955).StageChannelParticipantNamedIndex.SPEAKER);
   if (cResult[3] !== stageParticipants) {
     let tmp9;
     const _Symbol = Symbol;
@@ -188,7 +188,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return stateFromStores;
-}) : ((arg0) => {
+}) : (function useShowStageMusicMuteButton(arg0) {
   let closure_0;
   _require = arg0;
   const items = [SelectedChannelStore];

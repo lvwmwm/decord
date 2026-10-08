@@ -1,23 +1,23 @@
-// Module ID: 6482
-// Function ID: 6483
+// Module ID: 6660
+// Function ID: 6661
 // Name: EnterEmail
-// Dependencies: [5, 32, 19, 17, 1377, 6016, 1085, 21, 4896, 587, 558, 576, 1490, 504, 1105, 6483, 1252, 1126, 4892, 6104, 5601, 2]
+// Dependencies: [5, 32, 19, 17, 1389, 6202, 1085, 21, 5090, 587, 558, 576, 1502, 504, 1105, 6661, 1264, 1126, 5086, 6282, 5375, 2]
 
-// Module 6482 (EnterEmail)
+// Module 6660 (EnterEmail)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1377 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 6016 */;
+import UserStore from "UserStore" /* 1389 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 6202 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let arr, c1, c2, isChangeEmail, navigation;
+let arr, c1, c2, navigation;
 
 let c10;
 let closure_12;
@@ -35,7 +35,7 @@ const AnalyticEvents = Constants.AnalyticEvents;
 let obj = { background: obj2, container: { paddingVertical: 12, paddingHorizontal: 16 }, title: { textAlign: "center" }, prompt: { marginTop: 8, lineHeight: 18, textAlign: "center" }, input: { marginTop: 24, marginBottom: 16 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 let closure_16 = createStyles.createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isChangeEmail) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnterEmail(isChangeEmail) {
   let closure_5;
   let currentUser;
   let emailToken;
@@ -55,7 +55,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isChangeEmail) => 
   navigation = obj2.useNavigation();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    const fn = function _() {
+    const fn = function b() {
       return currentUser.getCurrentUser();
     };
     cResult[0] = items;
@@ -164,7 +164,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isChangeEmail) => 
           }
         }
       });
-      obj.onSubmit = function() {
+      obj.onSubmit = function onSubmit() {
         return closure_0(...arguments);
       };
       obj.onSuccess = function onSuccess() {
@@ -193,7 +193,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isChangeEmail) => 
   cResult[10] = tmp13;
   cResult[11] = stateFromStores;
   cResult[12] = D;
-}) : ((isChangeEmail) => {
+}) : (function EnterEmail(isChangeEmail) {
   let closure_5;
   let currentUser;
   let first1;
@@ -236,7 +236,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isChangeEmail) => 
     let change_email_reason_enum;
     const push = navigation.push;
     let obj = {
-      onSubmit: function() {
+      onSubmit() {
         return closure_0(...arguments);
       },
       onSuccess() {

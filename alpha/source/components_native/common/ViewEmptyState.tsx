@@ -1,18 +1,18 @@
-// Module ID: 6557
-// Function ID: 6558
+// Module ID: 6733
+// Function ID: 6734
 // Name: ViewEmptyState
-// Dependencies: [19, 17, 1085, 21, 4896, 5922, 587, 558, 576, 1188, 2]
+// Dependencies: [19, 17, 1085, 21, 5090, 5902, 587, 558, 576, 1200, 2]
 
-// Module 6557 (ViewEmptyState)
+// Module 6733 (ViewEmptyState)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1188 */;
+import native from "native" /* 1200 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import TextStyles from "TextStyles" /* 5922 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import TextStyles from "TextStyles" /* 5902 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ obj2 = { textAlign: "center", marginTop: 32, opacity: 0.8 };
 createStyles = createStyles.createStyles;
 const merged = Object.assign(TextStyles(Fonts.DISPLAY_SEMIBOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
 let closure_6 = createStyles(obj);
-const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewEmptyState(arg0) {
   let items;
   let items1;
   let label;
@@ -101,7 +101,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const obj4 = { style: items1, children: text };
           items1 = [, ];
           ({ emptyLabel: arr2[0], emptyText: arr2[1] } = tmp4);
-          tmp14 = React3(tmp(1188).LegacyText, obj4);
+          tmp14 = React3(tmp(1200).LegacyText, obj4);
         }
         cResult[9] = tmp4.emptyLabel;
         cResult[10] = tmp4.emptyText;
@@ -112,7 +112,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp11 = null;
       if (null != label) {
         const obj5 = { style: tmp4.emptyLabel, children: label.toUpperCase() };
-        const LegacyText = tmp(1188).LegacyText;
+        const LegacyText = tmp(1200).LegacyText;
         tmp11 = React3(LegacyText, obj5);
       }
       cResult[6] = label;
@@ -132,7 +132,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.emptyContainer;
   cResult[2] = items2;
   tmp5 = items2;
-}) : ((arg0) => {
+}) : (function ViewEmptyState(arg0) {
   let items;
   let items1;
   let items2;

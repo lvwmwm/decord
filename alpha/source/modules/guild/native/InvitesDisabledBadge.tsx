@@ -1,21 +1,19 @@
-// Module ID: 16283
-// Function ID: 16284
+// Module ID: 16543
+// Function ID: 16544
 // Name: InvitesDisabledBadge
-// Dependencies: [19, 17, 21, 4896, 587, 1188, 558, 576, 12407, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 1200, 558, 576, 12503, 2]
 
-// Module 16283 (InvitesDisabledBadge)
+// Module 16543 (InvitesDisabledBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12407 */;
+import native from "native" /* 1200 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12503 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let style;
 
 let size;
 let size1;
@@ -27,7 +25,7 @@ size = { borderRadius: 20, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_
 createStyles = createStyles.createStyles;
 size1 = { borderRadius: 20, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, position: "absolute", bottom: -native.BADGE_PADDING, right: -native.BADGE_PADDING, padding: native.BADGE_PADDING, height: 22, width: 22, alignContent: "center", justifyContent: "center" };
 let closure_5 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function InvitesDisabledBadge(style) {
   const obj = react2;
   const cResult = obj.c(11);
   style = style.style;
@@ -76,7 +74,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
   cResult[1] = tmp4.pauseRing;
   cResult[2] = items;
   tmp5 = items;
-}) : ((style) => {
+}) : (function InvitesDisabledBadge(style) {
   style = style.style;
   const tmp = closure_5();
   const items = [tmp.pauseRing, style];

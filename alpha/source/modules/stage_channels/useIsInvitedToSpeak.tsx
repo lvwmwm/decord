@@ -1,20 +1,20 @@
-// Module ID: 9619
-// Function ID: 9620
+// Module ID: 10812
+// Function ID: 10813
 // Name: useIsInvitedToSpeak
-// Dependencies: [502, 2103, 558, 576, 504, 5043, 2]
+// Dependencies: [502, 2115, 558, 576, 504, 5412, 2]
 
-// Module 9619 (useIsInvitedToSpeak)
+// Module 10812 (useIsInvitedToSpeak)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5043 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5412 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const useAudienceRequestToSpeakStateDefault = useAudienceRequestToSpeakState;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsInvitedToSpeak() {
   let id;
   let tmp4;
   let tmp5;
@@ -54,7 +54,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp9);
   const tmp12 = useAudienceRequestToSpeakStateDefault(stateFromStores1, stateFromStores);
   return tmp12 === useAudienceRequestToSpeakState.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
-}) : (() => {
+}) : (function useIsInvitedToSpeak() {
   let id;
   let voiceChannelId;
   const items = [SelectedChannelStore];

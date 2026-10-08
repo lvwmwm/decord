@@ -1,19 +1,19 @@
-// Module ID: 15754
-// Function ID: 15755
+// Module ID: 16012
+// Function ID: 16013
 // Name: useGetProductsFromSkus
-// Dependencies: [19, 7066, 558, 576, 504, 15755, 2]
+// Dependencies: [19, 7252, 558, 576, 504, 16013, 2]
 
-// Module 15754 (useGetProductsFromSkus)
+// Module 16012 (useGetProductsFromSkus)
 import react from "react" /* 19 */;
-import uniqByDefault from "uniqBy" /* 15755 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7066 */;
+import uniqByDefault from "uniqBy" /* 16013 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7252 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let productByStoreListingId;
 
 const useCallback = react.useCallback;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetProductsFromSkus() {
   let stateFromStores;
   let tmp4;
   let tmp5;
@@ -23,7 +23,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [CollectiblesCategoryStore];
-    const fn = function n() {
+    const fn = function u() {
       return productByStoreListingId.products;
     };
     cResult[0] = items;
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult = tmp(504);
   stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   if (cResult[2] !== stateFromStores) {
-    const fn2 = function s(arr) {
+    const fn2 = function n(arr) {
       const tmp = uniqByDefault;
       const mapped = arr.map((item) => {
         const value = stateFromStores.get(item);
@@ -58,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[3];
   }
   return tmp8;
-}) : (() => {
+}) : (function useGetProductsFromSkus() {
   let stateFromStores;
   const items = [CollectiblesCategoryStore];
   const obj = stateFromStores(504);

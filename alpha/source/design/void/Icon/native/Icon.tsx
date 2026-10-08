@@ -1,23 +1,21 @@
-// Module ID: 5603
-// Function ID: 5604
+// Module ID: 5377
+// Function ID: 5378
 // Name: Icon
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 2]
 // Exports: getIconSize, getIconStyle
 
-// Module 5603 (Icon)
+// Module 5377 (Icon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj;
 
-let forwardRef;
-let memo;
 const Image = react_native.Image;
 const jsx = Fragment.jsx;
 const IconSizes = { EXTRA_SMALL_10: "extraSmall10", EXTRA_SMALL: "extraSmall", SMALL: "small", SMALL_20: "small20", MEDIUM: "medium", LARGE: "large", CUSTOM: "custom", REFRESH_SMALL_16: "refreshSmall16", SMALL_14: "small14" };
@@ -26,7 +24,7 @@ let closure_6 = createStyles.createStyles(() => {
   ({ tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT });
   return obj;
 });
-({ memo, forwardRef } = react);
+const memo = react.memo;
 function getIconSize(arg0) {
   if (obj.EXTRA_SMALL_10 === arg0) {
     return 10;
@@ -74,18 +72,19 @@ function getIconStyle(MEDIUM) {
   }
   return { width, height: width };
 }
-const memoResult = memo(forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function Icon(arg0) {
   let accessibilityLabel;
   let accessible;
   let color;
   let disableColor;
+  let ref;
   let resizeMode;
   let source;
   let style;
   let tmp8;
   obj = react2;
   const cResult = obj.c(15);
-  ({ source, color, disableColor, size, style, resizeMode, accessible, accessibilityLabel } = arg0);
+  ({ source, color, disableColor, size, style, resizeMode, accessible, accessibilityLabel, ref } = arg0);
   const tmp2 = undefined !== disableColor && disableColor;
   if (undefined === size) {
     size = obj.MEDIUM;
@@ -157,25 +156,25 @@ const memoResult = memo(forwardRef(ReactCompilerGating.isReactCompilerEnabled() 
           if (cResult[10] === ref) {
             if (cResult[11] === str) {
               if (cResult[12] === source) {
-                let tmp12;
+                let tmp11;
                 if (cResult[13] === tmp10) {
-                  tmp12 = cResult[14];
+                  tmp11 = cResult[14];
                 }
-                return tmp12;
+                return tmp11;
               }
             }
           }
         }
       }
-      const tmp15 = <Image resizeMode={str} source={source} style={tmp10} accessible={accessible} accessibilityLabel={accessibilityLabel} fadeDuration={0} ref={arg1} />;
+      const tmp14 = <Image resizeMode={str} source={source} style={tmp10} accessible={accessible} accessibilityLabel={accessibilityLabel} fadeDuration={0} ref={ref} />;
       cResult[8] = accessibilityLabel;
       cResult[9] = accessible;
       cResult[10] = ref;
       cResult[11] = str;
       cResult[12] = source;
       cResult[13] = tmp10;
-      cResult[14] = tmp15;
-      tmp12 = tmp15;
+      cResult[14] = tmp14;
+      tmp11 = tmp14;
     }
   }
   const items = [tmp8, tmp5, style];
@@ -184,12 +183,13 @@ const memoResult = memo(forwardRef(ReactCompilerGating.isReactCompilerEnabled() 
   cResult[6] = tmp5;
   cResult[7] = items;
   tmp10 = items;
-}) : ((source, ref) => {
+}) : (function Icon(source) {
   let accessibilityLabel;
   let accessible;
   let color;
   let disableColor;
   let items;
+  let ref;
   let resizeMode;
   let style;
   ({ color, disableColor } = source);
@@ -205,7 +205,7 @@ const memoResult = memo(forwardRef(ReactCompilerGating.isReactCompilerEnabled() 
   if (resizeMode === undefined) {
     resizeMode = "cover";
   }
-  ({ accessible, accessibilityLabel } = source);
+  ({ accessible, accessibilityLabel, ref } = source);
   let tmp3;
   if (!disableColor) {
     let iconColor;
@@ -247,7 +247,7 @@ const memoResult = memo(forwardRef(ReactCompilerGating.isReactCompilerEnabled() 
   }
   items = [{ width: num, height: num }, tmp3, style];
   return tmp5(tmp6, obj2);
-})));
+}));
 memoResult.displayName = "Icon";
 memoResult.Sizes = IconSizes;
 let size = size_mod;

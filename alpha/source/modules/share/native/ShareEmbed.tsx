@@ -1,29 +1,29 @@
-// Module ID: 13735
-// Function ID: 13736
+// Module ID: 13957
+// Function ID: 13958
 // Name: ShareEmbed
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 5975, 4892, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 6158, 6164, 5086, 2]
 
-// Module 13735 (ShareEmbed)
+// Module 13957 (ShareEmbed)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5975 */;
-import react_mod from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6158 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let c3;
-let closure_4;
+let dependencyMap;
+
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let obj2;
 let size;
-let react = react_mod;
-({ Image: c3, View: closure_4 } = react_native);
+const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, containerRevamp: { borderWidth: 0 }, thumbnail: { width: 80 }, contentContainer: { flex: 1, flexDirection: "column", justifyContent: "center", paddingLeft: 12, paddingRight: 24 }, authorView: { flexDirection: "row", alignItems: "center", marginBottom: 3 }, authorThumbnail: size, loadingSpinner: { flex: 1 } };
@@ -31,7 +31,7 @@ obj2 = { flexDirection: "row", height: 80, backgroundColor: nativeDefault.colors
 createStyles = createStyles.createStyles;
 size = { height: 16, width: 16, borderRadius: nativeDefault.radii.sm, marginRight: 4 };
 let closure_8 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareEmbed(arg0) {
   let embed;
   let isLoadingEmbed;
   let isRevamp;
@@ -117,7 +117,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const obj5 = { style: tmp4.authorView, children: items };
       items = [tmp15, tmp19];
-      const tmp25 = metroRequire(React3, obj5);
+      const tmp25 = metroRequire(View, obj5);
       cResult[9] = tmp4.authorView;
       cResult[10] = tmp15;
       cResult[11] = tmp19;
@@ -128,7 +128,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (tmp16) {
       const obj6 = { style: tmp4.authorThumbnail, source: obj7, resizeMode: "cover" };
       obj7 = { uri: icon_url };
-      tmp16 = hasOwnProperty(_false, obj6);
+      tmp16 = hasOwnProperty(FastImageDefault, obj6);
     }
     cResult[4] = icon_url;
     cResult[5] = tmp4.authorThumbnail;
@@ -143,7 +143,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp28 = null;
     if (null != title) {
       const obj8 = { style: { marginVertical: 1 }, variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, ellipsizeMode: "tail", children: title };
-      tmp28 = hasOwnProperty(tmp(4892).Text, obj8);
+      tmp28 = hasOwnProperty(tmp(5086).Text, obj8);
     }
     cResult[13] = title;
     cResult[14] = tmp28;
@@ -170,7 +170,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp36 = null;
       if (null != url2) {
         const obj9 = { style: { marginVertical: 1 }, variant: "text-xs/medium", color: "text-link", lineClamp: 1, ellipsizeMode: "tail", children: url2 };
-        tmp36 = hasOwnProperty(tmp(4892).Text, obj9);
+        tmp36 = hasOwnProperty(tmp(5086).Text, obj9);
       }
       cResult[18] = url2;
       cResult[19] = tmp36;
@@ -215,13 +215,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const tmp45 = metroImportDefault;
         if (tmp40Result) {
           const obj11 = { style: tmp4.thumbnail, source: tmp5, resizeMode: "cover" };
-          tmp40Result = tmp40(_false, obj11);
+          tmp40Result = tmp40(FastImageDefault, obj11);
         }
         const obj12 = { children: items2 };
         items2 = [tmp40Result, ];
         const obj13 = { style: tmp4.contentContainer, children: items3 };
         items3 = [tmp14, tmp27, tmp31, tmp35];
-        items2[1] = metroRequire(React3, obj13);
+        items2[1] = metroRequire(View, obj13);
         tmp44Result = tmp44(tmp45, obj12);
       }
       tmp40Result2 = tmp40(tmp41, obj10);
@@ -246,25 +246,26 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp32 = null;
     if (null != description) {
       const obj14 = { style: { marginVertical: 1 }, variant: "text-xs/medium", color: "text-default", lineClamp: 1, ellipsizeMode: "tail", children: description };
-      tmp32 = hasOwnProperty(tmp(4892).Text, obj14);
+      tmp32 = hasOwnProperty(tmp(5086).Text, obj14);
     }
   }
   cResult[15] = description;
   cResult[16] = tmp27;
   cResult[17] = tmp32;
   tmp31 = tmp32;
-}) : ((embed) => {
+}) : (function ShareEmbed(embed) {
   let closure_2;
   let items6;
   let items7;
   let tmp9Result2;
   embed = embed.embed;
   const isLoadingEmbed = embed.isLoadingEmbed;
+  let memo3;
   const isRevamp = embed.isRevamp;
   let tmp = closure_8();
-  react = tmp;
+  dependencyMap = tmp;
   let items = [embed];
-  const memo = react.useMemo(() => {
+  const memo = memo3.useMemo(() => {
     if (null != embed) {
       const thumbnail = tmp.thumbnail;
       let url;
@@ -285,7 +286,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }, items);
   const items1 = [isLoadingEmbed, tmp];
-  let memo1 = react.useMemo(() => {
+  let memo1 = memo3.useMemo(() => {
     let tmp = null;
     if (isLoadingEmbed) {
       const obj = { style: closure_2.loadingSpinner };
@@ -295,7 +296,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
   const items2 = [embed, tmp];
   const items3 = [embed];
-  const memo2 = react.useMemo(() => {
+  const memo2 = memo3.useMemo(() => {
     let items;
     let obj3;
     let author;
@@ -312,11 +313,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp5 = null != icon_url;
       const obj = { style: closure_2.authorView, children: items };
       const tmp2 = metroRequire;
-      const tmp3 = React3;
+      const tmp3 = View;
       if (tmp5) {
         const obj2 = { style: tmp4.authorThumbnail, source: obj3, resizeMode: "cover" };
         obj3 = { uri: icon_url };
-        tmp5 = hasOwnProperty(_false, obj2);
+        tmp5 = hasOwnProperty(FastImageDefault, obj2);
       }
       items = [tmp5, ];
       const obj4 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", ellipsizeMode: "tail", lineClamp: 1, children: author.name };
@@ -324,7 +325,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return tmp2(tmp3, obj);
     }
   }, items2);
-  const memo3 = react.useMemo(() => {
+  memo3 = memo3.useMemo(() => {
     let title;
     if (embed != null) {
       title = embed.title;
@@ -338,7 +339,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items3);
   const items4 = [embed, memo3];
   [][0] = embed;
-  const memo4 = react.useMemo(() => {
+  const memo4 = memo3.useMemo(() => {
     let description;
     if (embed != null) {
       description = embed.description;
@@ -366,13 +367,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const tmp13 = closure_7;
       if (tmp9Result) {
         let obj2 = { style: tmp.thumbnail, source: memo, resizeMode: "cover" };
-        tmp9Result = tmp9(memo3, obj2);
+        tmp9Result = tmp9(isLoadingEmbed(6164), obj2);
       }
       let obj3 = { children: items6 };
       items6 = [tmp9Result, ];
       let obj4 = { style: tmp.contentContainer, children: items7 };
       items7 = [memo2, memo3, memo4, tmp7];
-      items6[1] = closure_6(closure_4, obj4);
+      items6[1] = closure_6(View, obj4);
       memo1 = tmp12(tmp13, obj3);
     }
     tmp9Result2 = tmp9(tmp10, obj);
@@ -384,4 +385,4 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 size = size_mod;
 const result = size.fileFinishedImporting("modules/share/native/ShareEmbed.tsx");
 
-export default tmp5;
+export default tmp4;

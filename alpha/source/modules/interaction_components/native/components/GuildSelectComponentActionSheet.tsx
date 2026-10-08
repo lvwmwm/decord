@@ -1,33 +1,33 @@
-// Module ID: 14499
-// Function ID: 14500
+// Module ID: 14759
+// Function ID: 14760
 // Name: GuildSelectComponentActionSheet
-// Dependencies: [32, 19, 17, 2074, 5623, 21, 4896, 558, 576, 5129, 1126, 4860, 5048, 1188, 4892, 5978, 11445, 5628, 2]
+// Dependencies: [32, 19, 17, 2086, 5968, 21, 5090, 558, 576, 5441, 1126, 5054, 5405, 1200, 5086, 6161, 11428, 5975, 2]
 
-// Module 14499 (GuildSelectComponentActionSheet)
+// Module 14759 (GuildSelectComponentActionSheet)
 import react_native from "react-native" /* 17 */;
-import native from "native" /* 1188 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5048 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 5129 */;
-import SelectComponentActionSheetDefault from "SelectComponentActionSheet" /* 11445 */;
+import native from "native" /* 1200 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5405 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 5441 */;
+import SelectComponentActionSheetDefault from "SelectComponentActionSheet" /* 11428 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import SortedGuildStore from "SortedGuildStore" /* 5623 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import SortedGuildStore from "SortedGuildStore" /* 5968 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let dependencyMap, flattenedGuildIds, obj1, tmp10, tmp9, user, value1;
+let dependencyMap, flattenedGuildIds;
 
 let c9;
 let metroImportAll;
 let tmp5;
 const intl2 = tmp5(1126);
-const f117172 = (arg0, arg1) => {
+const f118263 = (arg0, arg1) => {
   guild = guild.getGuild(arg1);
   if (null != guild) {
     const obj = { type: closure_1_0(guildIdentity[9]).SelectOptionType.GUILD, value: null, label: null, guild };
@@ -37,17 +37,18 @@ const f117172 = (arg0, arg1) => {
   }
   return arg0;
 };
-const f117173 = (record) => {
+const f118264 = (record) => {
   record = record.record;
   const obj = { type: closure_1_0(guildIdentity[9]).SelectOptionType.GUILD, value: record.id, label: record.name, guild: record };
   return obj;
 };
 let react = react_mod;
-const View = react_native.View;
+let View = react_native.View;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let closure_10 = createStyles.createStyles({ guildIdentity: { flexDirection: "row", alignItems: "center" }, iconContainer: { marginRight: 16 }, avatar: { marginRight: 4 } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSelectComponentActionSheet(user) {
   let closure_4;
+  let closure_5;
   let first;
   let guildIdentity;
   let intl;
@@ -68,7 +69,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   let tmp6 = first(react.useState(""), 2);
   [tmp7, r10022] = tmp6;
   if (cResult[0] !== selectedGuild) {
-    const obj4 = { type: tmp(5129).SelectOptionType.GUILD, value: null, label: null, guild: selectedGuild };
+    const obj4 = { type: tmp(5441).SelectOptionType.GUILD, value: null, label: null, guild: selectedGuild };
     ({ id: obj3.value, name: obj3.label } = selectedGuild);
     cResult[0] = selectedGuild;
     cResult[1] = obj4;
@@ -99,81 +100,66 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     cResult[4] = obj6;
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class D {
-      constructor(arg0) {
-        if (0 === user.length) {
-          tmp4 = closure_1_7;
-          flattenedGuildIds = closure_1_7.getFlattenedGuildIds();
-          tmp5 = globalThis;
-          _Array = Array;
-          self = this;
-          self2 = this;
-          reduce = flattenedGuildIds.reduce;
-          array = new Array();
-          tmp7 = array;
-          reduced = reduce(() => { /* body not rendered: F117172 */ }, array);
+    class T {
+      constructor(query) {
+        let reduced;
+        if (0 === query.length) {
+          flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+          const _Array = Array;
+          const self = this;
+          const self2 = this;
+          const reduce = flattenedGuildIds.reduce;
+          const array = new Array();
+          reduced = reduce(f118263, array);
         } else {
-          tmp = user;
-          tmp2 = closure_2;
-          obj = user(closure_2[17]);
-          obj1 = { query: null };
-          obj1.query = user;
-          queryGuildsResult = obj.queryGuilds(obj1);
-          reduced = queryGuildsResult.map(() => { /* body not rendered: F117173 */ });
+          const obj2 = { query };
+          const obj = user(guildIdentity[17]);
+          const queryGuildsResult = obj.queryGuilds(obj2);
+          reduced = queryGuildsResult.map(f118264);
         }
         return reduced;
       }
     }
-    cResult[5] = D;
+    cResult[5] = T;
   } else {
-    class D {
-      constructor(arg0) {
-        if (0 === user.length) {
-          tmp4 = closure_1_7;
-          flattenedGuildIds = closure_1_7.getFlattenedGuildIds();
-          tmp5 = globalThis;
-          _Array = Array;
-          self = this;
-          self2 = this;
-          reduce = flattenedGuildIds.reduce;
-          array = new Array();
-          tmp7 = array;
-          reduced = reduce(() => { /* body not rendered: F117172 */ }, array);
+    class T {
+      constructor(query) {
+        let reduced;
+        if (0 === query.length) {
+          flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+          const _Array = Array;
+          const self = this;
+          const self2 = this;
+          const reduce = flattenedGuildIds.reduce;
+          const array = new Array();
+          reduced = reduce(f118263, array);
         } else {
-          tmp = user;
-          tmp2 = closure_2;
-          obj = user(closure_2[17]);
-          obj1 = { query: null };
-          obj1.query = user;
-          queryGuildsResult = obj.queryGuilds(obj1);
-          reduced = queryGuildsResult.map(() => { /* body not rendered: F117173 */ });
+          const obj2 = { query };
+          const obj = user(guildIdentity[17]);
+          const queryGuildsResult = obj.queryGuilds(obj2);
+          reduced = queryGuildsResult.map(f118264);
         }
         return reduced;
       }
     }
   }
   if (cResult[6] !== tmp7) {
-    class D {
-      constructor(arg0) {
-        if (0 === user.length) {
-          tmp4 = closure_1_7;
-          flattenedGuildIds = closure_1_7.getFlattenedGuildIds();
-          tmp5 = globalThis;
-          _Array = Array;
-          self = this;
-          self2 = this;
-          reduce = flattenedGuildIds.reduce;
-          array = new Array();
-          tmp7 = array;
-          reduced = reduce(() => { /* body not rendered: F117172 */ }, array);
+    class T {
+      constructor(query) {
+        let reduced;
+        if (0 === query.length) {
+          flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+          const _Array = Array;
+          const self = this;
+          const self2 = this;
+          const reduce = flattenedGuildIds.reduce;
+          const array = new Array();
+          reduced = reduce(f118263, array);
         } else {
-          tmp = user;
-          tmp2 = closure_2;
-          obj = user(closure_2[17]);
-          obj1 = { query: null };
-          obj1.query = user;
-          queryGuildsResult = obj.queryGuilds(obj1);
-          reduced = queryGuildsResult.map(() => { /* body not rendered: F117173 */ });
+          const obj2 = { query };
+          const obj = user(guildIdentity[17]);
+          const queryGuildsResult = obj.queryGuilds(obj2);
+          reduced = queryGuildsResult.map(f118264);
         }
         return reduced;
       }
@@ -181,222 +167,357 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     cResult[6] = tmp7;
     cResult[7] = tmp16;
   } else {
-    class D {
-      constructor(arg0) {
-        if (0 === user.length) {
-          tmp4 = closure_1_7;
-          flattenedGuildIds = closure_1_7.getFlattenedGuildIds();
-          tmp5 = globalThis;
-          _Array = Array;
-          self = this;
-          self2 = this;
-          reduce = flattenedGuildIds.reduce;
-          array = new Array();
-          tmp7 = array;
-          reduced = reduce(() => { /* body not rendered: F117172 */ }, array);
+    class T {
+      constructor(query) {
+        let reduced;
+        if (0 === query.length) {
+          flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+          const _Array = Array;
+          const self = this;
+          const self2 = this;
+          const reduce = flattenedGuildIds.reduce;
+          const array = new Array();
+          reduced = reduce(f118263, array);
         } else {
-          tmp = user;
-          tmp2 = closure_2;
-          obj = user(closure_2[17]);
-          obj1 = { query: null };
-          obj1.query = user;
-          queryGuildsResult = obj.queryGuilds(obj1);
-          reduced = queryGuildsResult.map(() => { /* body not rendered: F117173 */ });
+          const obj2 = { query };
+          const obj = user(guildIdentity[17]);
+          const queryGuildsResult = obj.queryGuilds(obj2);
+          reduced = queryGuildsResult.map(f118264);
         }
         return reduced;
       }
     }
   }
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    class V {
-      constructor() {
-        obj = user(closure_2[11]);
-        return obj.hideActionSheet();
+    class T {
+      constructor(query) {
+        let reduced;
+        if (0 === query.length) {
+          flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+          const _Array = Array;
+          const self = this;
+          const self2 = this;
+          const reduce = flattenedGuildIds.reduce;
+          const array = new Array();
+          reduced = reduce(f118263, array);
+        } else {
+          const obj2 = { query };
+          const obj = user(guildIdentity[17]);
+          const queryGuildsResult = obj.queryGuilds(obj2);
+          reduced = queryGuildsResult.map(f118264);
+        }
+        return reduced;
       }
     }
-    cResult[8] = V;
-    tmp17 = V;
+    cResult[8] = tmp18;
+    tmp17 = tmp18;
   } else {
-    class V {
-      constructor() {
-        obj = user(closure_2[11]);
-        return obj.hideActionSheet();
+    class T {
+      constructor(query) {
+        let reduced;
+        if (0 === query.length) {
+          flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+          const _Array = Array;
+          const self = this;
+          const self2 = this;
+          const reduce = flattenedGuildIds.reduce;
+          const array = new Array();
+          reduced = reduce(f118263, array);
+        } else {
+          const obj2 = { query };
+          const obj = user(guildIdentity[17]);
+          const queryGuildsResult = obj.queryGuilds(obj2);
+          reduced = queryGuildsResult.map(f118264);
+        }
+        return reduced;
       }
     }
   }
-  V = tmp17;
+  View = tmp17;
   if (cResult[9] !== onSelectGuild) {
-    class M {
-      constructor(arg0, arg1) {
-        tmp = onSelectGuild(arg1.guild);
-        tmp2 = closure_4(arg1);
-        tmp3 = closure_5();
-        return;
+    class T {
+      constructor(query) {
+        let reduced;
+        if (0 === query.length) {
+          flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+          const _Array = Array;
+          const self = this;
+          const self2 = this;
+          const reduce = flattenedGuildIds.reduce;
+          const array = new Array();
+          reduced = reduce(f118263, array);
+        } else {
+          const obj2 = { query };
+          const obj = user(guildIdentity[17]);
+          const queryGuildsResult = obj.queryGuilds(obj2);
+          reduced = queryGuildsResult.map(f118264);
+        }
+        return reduced;
       }
     }
     cResult[9] = onSelectGuild;
-    cResult[10] = M;
+    cResult[10] = tmp20;
   } else {
-    class M {
-      constructor(arg0, arg1) {
-        tmp = onSelectGuild(arg1.guild);
-        tmp2 = closure_4(arg1);
-        tmp3 = closure_5();
-        return;
+    class T {
+      constructor(query) {
+        let reduced;
+        if (0 === query.length) {
+          flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+          const _Array = Array;
+          const self = this;
+          const self2 = this;
+          const reduce = flattenedGuildIds.reduce;
+          const array = new Array();
+          reduced = reduce(f118263, array);
+        } else {
+          const obj2 = { query };
+          const obj = user(guildIdentity[17]);
+          const queryGuildsResult = obj.queryGuilds(obj2);
+          reduced = queryGuildsResult.map(f118264);
+        }
+        return reduced;
       }
     }
   }
   if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-    class M {
-      constructor(arg0, arg1) {
-        tmp = onSelectGuild(arg1.guild);
-        tmp2 = closure_4(arg1);
-        tmp3 = closure_5();
-        return;
+    class T {
+      constructor(query) {
+        let reduced;
+        if (0 === query.length) {
+          flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+          const _Array = Array;
+          const self = this;
+          const self2 = this;
+          const reduce = flattenedGuildIds.reduce;
+          const array = new Array();
+          reduced = reduce(f118263, array);
+        } else {
+          const obj2 = { query };
+          const obj = user(guildIdentity[17]);
+          const queryGuildsResult = obj.queryGuilds(obj2);
+          reduced = queryGuildsResult.map(f118264);
+        }
+        return reduced;
       }
     }
-    cResult[11] = tmp20;
+    cResult[11] = tmp22;
   } else {
-    class M {
-      constructor(arg0, arg1) {
-        tmp = onSelectGuild(arg1.guild);
-        tmp2 = closure_4(arg1);
-        tmp3 = closure_5();
-        return;
+    class T {
+      constructor(query) {
+        let reduced;
+        if (0 === query.length) {
+          flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+          const _Array = Array;
+          const self = this;
+          const self2 = this;
+          const reduce = flattenedGuildIds.reduce;
+          const array = new Array();
+          reduced = reduce(f118263, array);
+        } else {
+          const obj2 = { query };
+          const obj = user(guildIdentity[17]);
+          const queryGuildsResult = obj.queryGuilds(obj2);
+          reduced = queryGuildsResult.map(f118264);
+        }
+        return reduced;
       }
     }
   }
-  const tmp21 = cResult[12];
+  const tmp23 = cResult[12];
   if (first != null) {
-    class M {
-      constructor(arg0, arg1) {
-        tmp = onSelectGuild(arg1.guild);
-        tmp2 = closure_4(arg1);
-        tmp3 = closure_5();
-        return;
+    class T {
+      constructor(query) {
+        let reduced;
+        if (0 === query.length) {
+          flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+          const _Array = Array;
+          const self = this;
+          const self2 = this;
+          const reduce = flattenedGuildIds.reduce;
+          const array = new Array();
+          reduced = reduce(f118263, array);
+        } else {
+          const obj2 = { query };
+          const obj = user(guildIdentity[17]);
+          const queryGuildsResult = obj.queryGuilds(obj2);
+          reduced = queryGuildsResult.map(f118264);
+        }
+        return reduced;
       }
     }
   }
-  if (tmp21 !== undefined) {
-    class M {
-      constructor(arg0, arg1) {
-        tmp = onSelectGuild(arg1.guild);
-        tmp2 = closure_4(arg1);
-        tmp3 = closure_5();
-        return;
+  if (tmp23 !== undefined) {
+    class T {
+      constructor(query) {
+        let reduced;
+        if (0 === query.length) {
+          flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+          const _Array = Array;
+          const self = this;
+          const self2 = this;
+          const reduce = flattenedGuildIds.reduce;
+          const array = new Array();
+          reduced = reduce(f118263, array);
+        } else {
+          const obj2 = { query };
+          const obj = user(guildIdentity[17]);
+          const queryGuildsResult = obj.queryGuilds(obj2);
+          reduced = queryGuildsResult.map(f118264);
+        }
+        return reduced;
       }
     }
     if (first != null) {
-      class M {
-        constructor(arg0, arg1) {
-          tmp = onSelectGuild(arg1.guild);
-          tmp2 = closure_4(arg1);
-          tmp3 = closure_5();
-          return;
+      class T {
+        constructor(query) {
+          let reduced;
+          if (0 === query.length) {
+            flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+            const _Array = Array;
+            const self = this;
+            const self2 = this;
+            const reduce = flattenedGuildIds.reduce;
+            const array = new Array();
+            reduced = reduce(f118263, array);
+          } else {
+            const obj2 = { query };
+            const obj = user(guildIdentity[17]);
+            const queryGuildsResult = obj.queryGuilds(obj2);
+            reduced = queryGuildsResult.map(f118264);
+          }
+          return reduced;
         }
       }
     }
-    class P {
-      constructor(arg0) {
-        value1 = undefined;
-        value = user.value;
-        if (closure_3 != null) {
-          value1 = closure_3.value;
-        }
-        return value === value1;
+    function isSelected(value) {
+      let value2;
+      value = value.value;
+      if (first != null) {
+        value2 = first.value;
       }
+      return value === value2;
     }
-    cResult[12] = tmp23;
-    cResult[13] = P;
+    cResult[12] = tmp25;
+    cResult[13] = isSelected;
   } else {
-    class M {
-      constructor(arg0, arg1) {
-        tmp = onSelectGuild(arg1.guild);
-        tmp2 = closure_4(arg1);
-        tmp3 = closure_5();
-        return;
+    class T {
+      constructor(query) {
+        let reduced;
+        if (0 === query.length) {
+          flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+          const _Array = Array;
+          const self = this;
+          const self2 = this;
+          const reduce = flattenedGuildIds.reduce;
+          const array = new Array();
+          reduced = reduce(f118263, array);
+        } else {
+          const obj2 = { query };
+          const obj = user(guildIdentity[17]);
+          const queryGuildsResult = obj.queryGuilds(obj2);
+          reduced = queryGuildsResult.map(f118264);
+        }
+        return reduced;
       }
     }
   }
   if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-    class H {
-      constructor(arg0) {
-        return user.label;
-      }
-    }
-    class P {
-      constructor(arg0) {
-        value1 = undefined;
-        value = user.value;
-        if (closure_3 != null) {
-          value1 = closure_3.value;
+    class T {
+      constructor(query) {
+        let reduced;
+        if (0 === query.length) {
+          flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+          const _Array = Array;
+          const self = this;
+          const self2 = this;
+          const reduce = flattenedGuildIds.reduce;
+          const array = new Array();
+          reduced = reduce(f118263, array);
+        } else {
+          const obj2 = { query };
+          const obj = user(guildIdentity[17]);
+          const queryGuildsResult = obj.queryGuilds(obj2);
+          reduced = queryGuildsResult.map(f118264);
         }
-        return value === value1;
+        return reduced;
       }
     }
+    cResult[14] = tmp27;
   } else {
-    class H {
-      constructor(arg0) {
-        return user.label;
+    class T {
+      constructor(query) {
+        let reduced;
+        if (0 === query.length) {
+          flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+          const _Array = Array;
+          const self = this;
+          const self2 = this;
+          const reduce = flattenedGuildIds.reduce;
+          const array = new Array();
+          reduced = reduce(f118263, array);
+        } else {
+          const obj2 = { query };
+          const obj = user(guildIdentity[17]);
+          const queryGuildsResult = obj.queryGuilds(obj2);
+          reduced = queryGuildsResult.map(f118264);
+        }
+        return reduced;
       }
     }
   }
   if (cResult[15] === tmp4.avatar) {
-    class H {
-      constructor(arg0) {
-        return user.label;
+    class T {
+      constructor(query) {
+        let reduced;
+        if (0 === query.length) {
+          flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+          const _Array = Array;
+          const self = this;
+          const self2 = this;
+          const reduce = flattenedGuildIds.reduce;
+          const array = new Array();
+          reduced = reduce(f118263, array);
+        } else {
+          const obj2 = { query };
+          const obj = user(guildIdentity[17]);
+          const queryGuildsResult = obj.queryGuilds(obj2);
+          reduced = queryGuildsResult.map(f118264);
+        }
+        return reduced;
       }
     }
   }
-  class Q {
-    constructor(arg0) {
-      tmp = user;
-      hasAvatarForGuildResult = user.hasAvatarForGuild(user.guild.id);
-      tmp3 = closure_2;
-      obj = closure_1(closure_2[12]);
-      username = obj.getNickname(user.guild.id, undefined, user);
-      if (!hasAvatarForGuildResult) {
-        tmp4 = null;
-        if (null == username) {
-          return;
-        }
-      }
-      obj1 = { style: closure_2.guildIdentity, children: null };
-      tmp8 = hasAvatarForGuildResult;
-      tmp5 = jsxs;
-      tmp6 = View;
-      if (hasAvatarForGuildResult) {
-        tmp9 = jsx;
-        tmp10 = closure_0;
-        obj4 = { size: null, style: null, user: null, guildId: null, animate: true };
-        Avatar = closure_0(tmp3[13]).Avatar;
-        obj4.size = closure_0(tmp3[13]).AvatarSizes.SIZE_16;
-        obj4.style = tmp7.avatar;
-        obj4.user = tmp;
-        obj4.guildId = user.guild.id;
-        tmp8 = jsx(Avatar, obj4);
-      }
-      items = [, ];
-      items[0] = tmp8;
-      tmp11 = jsx;
-      Text = closure_0(tmp3[14]).Text;
-      if (username == null) {
-        username = tmp.username;
-      }
-      items[1] = tmp11(Text, { variant: "text-sm/medium", color: "text-default", children: username });
-      obj1.children = items;
-      return tmp5(tmp6, obj1);
+  function renderDescription(guild) {
+    let items;
+    const hasAvatarForGuildResult = user.hasAvatarForGuild(guild.guild.id);
+    const obj = NicknameUtilsDefault;
+    let username = obj.getNickname(guild.guild.id, undefined, user);
+    let tmp8 = hasAvatarForGuildResult;
+    const obj2 = { style: guildIdentity.guildIdentity, children: items };
+    const tmp5 = React4;
+    const tmp6 = View;
+    if (hasAvatarForGuildResult) {
+      const obj3 = { size: native.AvatarSizes.SIZE_16, style: tmp7.avatar, user, guildId: guild.guild.id, animate: true };
+      const Avatar = native.Avatar;
+      tmp8 = metroImportAll(Avatar, obj3);
     }
+    items = [tmp8, ];
+    const Text = Text_Text.Text;
+    const tmp11 = metroImportAll;
+    if (username == null) {
+      username = tmp.username;
+    }
+    items[1] = tmp11(Text, { variant: "text-sm/medium", color: "text-default", children: username });
+    return tmp5(tmp6, obj2);
   }
   cResult[15] = tmp4.avatar;
   cResult[16] = tmp4.guildIdentity;
   cResult[17] = user;
-  cResult[18] = Q;
-}) : ((arg0) => {
+  cResult[18] = renderDescription;
+}) : (function GuildSelectComponentActionSheet(arg0) {
   let guildIdentity;
   let intl;
   let items1;
-  let require;
   let selectedGuild;
   ({ selectedGuild, onSelectGuild: require, user: importDefault } = arg0);
   let first;
@@ -435,25 +556,25 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       const self2 = this;
       const reduce = flattenedGuildIds.reduce;
       const array = new Array();
-      reduced = reduce(f117172, array);
+      reduced = reduce(f118263, array);
     } else {
       let obj = require("AutocompleteUtils");
       const obj2 = { query };
       const queryGuildsResult = obj.queryGuilds(obj2);
-      reduced = queryGuildsResult.map(f117173);
+      reduced = queryGuildsResult.map(f118264);
     }
     return reduced;
   }, []);
   const items2 = [first, callback];
   const memo = obj.useMemo(() => callback(first), items2);
   const obj4 = {
-    onPressOptionItem(arg0, guild) {
-      _require(guild.guild);
+    onPressOptionItem: function handlePressOptionItem(arg0, guild) {
+      require(guild.guild);
       closure_5(guild);
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
     },
-    onRemoveOptionItem() {
+    onRemoveOptionItem: function handleRemoveOptionItem() {
       closure_5(null);
     },
     renderIcon(guild) {
@@ -503,7 +624,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     },
     submitSelection,
     onQueryChange: tmp4,
-    itemAccessibilityLabel(label) {
+    itemAccessibilityLabel: function accessibilityLabel(label) {
       return label.label;
     },
     allowEmpty: false,

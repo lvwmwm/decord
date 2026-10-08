@@ -1,20 +1,20 @@
-// Module ID: 12274
-// Function ID: 12275
+// Module ID: 12353
+// Function ID: 12354
 // Name: useMessageRequestPreview
-// Dependencies: [5, 5116, 4911, 12275, 1085, 558, 576, 504, 12, 1282, 584, 2]
+// Dependencies: [5, 5428, 6040, 12354, 1085, 558, 576, 504, 12, 1294, 584, 2]
 
-// Module 12274 (useMessageRequestPreview)
+// Module 12353 (useMessageRequestPreview)
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MessageStore from "MessageStore" /* 5116 */;
-import ReadStateStore from "ReadStateStore" /* 4911 */;
-import MessageRequestPreviewStore from "MessageRequestPreviewStore" /* 12275 */;
+import MessageStore from "MessageStore" /* 5428 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
+import MessageRequestPreviewStore from "MessageRequestPreviewStore" /* 12354 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c1, c10, c11, c4, closure_4, id;
+let c1, c10, c11, c4, closure_4;
 
 function loadMessageRequestData() {
   return obj(...arguments);
@@ -220,7 +220,7 @@ obj = function _loadMessageRequestDataHelper() {
 const Endpoints = Constants.Endpoints;
 const set = new Set();
 let c9 = null;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageRequestPreview(id, arg1) {
   let closure_9;
   let error;
   let first;
@@ -331,7 +331,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
   cResult[10] = message;
   cResult[11] = obj3;
   tmp23 = obj3;
-}) : ((id) => {
+}) : (function useMessageRequestPreview(id) {
   let closure_9;
   let error;
   let loaded;

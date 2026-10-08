@@ -1,11 +1,11 @@
-// Module ID: 16225
-// Function ID: 16226
+// Module ID: 16485
+// Function ID: 16486
 // Name: ChannelListLegendList
-// Dependencies: [19, 21, 16226, 4618, 6576, 16063, 2]
+// Dependencies: [19, 21, 16486, 4810, 6752, 16323, 2]
 
-// Module 16225 (ChannelListLegendList)
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import FastList from "FastList" /* 6576 */;
+// Module 16485 (ChannelListLegendList)
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import FastList from "FastList" /* 6752 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -17,10 +17,10 @@ let hasOwnProperty;
 let metroRequire;
 ({ Fragment: closure_4, jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = [];
-let closure_8 = { item: "duration", positionPercentage: false };
+let closure_8 = { item: "emoji", positionPercentage: false };
 let closure_9 = { zIndex: 5 };
 let closure_10 = { code: "function ChannelListLegendListTsx1(event){const{scrollPosValue,onScrollWorklet,onScroll,runOnJS}=this.__closure;scrollPosValue.set(event.contentOffset.y);onScrollWorklet(event.contentOffset.y,event.contentSize.height,event.layoutMeasurement.height);if(onScroll!=null){runOnJS(onScroll)();}}" };
-const memoResult = react.memo(react.forwardRef(function ChannelListLegendList(listViewportHeight, ref) {
+const memoResult = react.memo(function ChannelListLegendList(listViewportHeight) {
   let _undefined;
   let _undefined2;
   let c13;
@@ -35,6 +35,7 @@ const memoResult = react.memo(react.forwardRef(function ChannelListLegendList(li
   let insetEnd;
   let items6;
   let onEndReached;
+  let ref;
   let renderAccessory;
   let require;
   let sections;
@@ -50,8 +51,8 @@ const memoResult = react.memo(react.forwardRef(function ChannelListLegendList(li
   c13 = undefined;
   c14 = undefined;
   contentSize = undefined;
-  ({ endReachedThreshold, getItemSize, getRecyclerKey, getSectionFooterSize, getSectionHeaderSize, onEndReached, renderAccessory, sections } = listViewportHeight);
-  ref = listViewportHeight.useRef(null);
+  ({ endReachedThreshold, getItemSize, getRecyclerKey, getSectionFooterSize, getSectionHeaderSize, onEndReached, renderAccessory, sections, ref } = listViewportHeight);
+  const ref1 = listViewportHeight.useRef(null);
   let tmp2 = insetEnd;
   let tmp3 = require("useChannelListFlatData")({ getItemSize, getRecyclerKey, getSectionFooterSize, getSectionHeaderSize, headerSize, sections });
   let getIndex = tmp3;
@@ -90,16 +91,17 @@ const memoResult = react.memo(react.forwardRef(function ChannelListLegendList(li
   }, []);
   let obj = require("ReanimatedRexport");
   const sharedValue = obj.useSharedValue(memo);
-  const ref1 = listViewportHeight.useRef(tmp3);
-  ref1.current = tmp3;
-  const ref2 = listViewportHeight.useRef(0);
-  ref2.current = contentSize + insetEnd;
+  const ref2 = listViewportHeight.useRef(tmp3);
+  ref2.current = tmp3;
+  const ref3 = listViewportHeight.useRef(0);
+  ref3.current = contentSize + insetEnd;
   let items = [listViewportHeight, sharedValue];
   const memo1 = listViewportHeight.useMemo(() => {
+    let ref;
     let obj = {
       scrollPosValue: sharedValue,
       getItems() {
-        const current = ref.current;
+        const current = ref1.current;
         let state;
         if (current != null) {
           state = current.getState();
@@ -109,13 +111,13 @@ const memoResult = react.memo(react.forwardRef(function ChannelListLegendList(li
         } else {
           const items = [];
           const _Math = Math;
-          const bound = Math.min(state.endBuffered, ref1.current.listData.length - 1);
+          const bound = Math.min(state.endBuffered, ref2.current.listData.length - 1);
           const _Math2 = Math;
           let bound1 = Math.max(0, state.startBuffered);
           if (bound1 <= bound) {
             do {
-              let tmp3 = ref1.current.listData[bound1];
-              let obj = { type: tmp3.type, key: bound1, layoutStart: ref1.current.offsets[bound1], layoutSize: ref1.current.sizes[bound1], section: tmp3.section, item: tmp3.item, recyclerKey: tmp3.key };
+              let tmp3 = ref2.current.listData[bound1];
+              let obj = { type: tmp3.type, key: bound1, layoutStart: ref2.current.offsets[bound1], layoutSize: ref2.current.sizes[bound1], section: tmp3.section, item: tmp3.item, recyclerKey: tmp3.key };
               let arr = items.push(obj);
               bound1 = bound1 + 1;
             } while (bound1 <= bound);
@@ -124,7 +126,7 @@ const memoResult = react.memo(react.forwardRef(function ChannelListLegendList(li
         }
       },
       getScrollPosition() {
-        const current = ref.current;
+        const current = ref1.current;
         let num;
         if (current != null) {
           num = current.getState().scroll;
@@ -136,7 +138,7 @@ const memoResult = react.memo(react.forwardRef(function ChannelListLegendList(li
       },
       getSectionItemFromPosition(arg0) {
         let num2;
-        const offsets = ref1.current.offsets;
+        const offsets = ref2.current.offsets;
         let diff = offsets.length - 1;
         let num = 0;
         let tmp3;
@@ -167,8 +169,8 @@ const memoResult = react.memo(react.forwardRef(function ChannelListLegendList(li
         if (null == tmp3) {
           return renderSectionFooter;
         } else {
-          const obj = { type: ref1.current.listData[tmp3].type, key: tmp3, layoutStart: ref1.current.offsets[tmp3], layoutSize: ref1.current.sizes[tmp3], section: null, item: null, recyclerKey: null };
-          ({ section: obj.section, item: obj.item, key: obj.recyclerKey } = ref1.current.listData[tmp3]);
+          const obj = { type: ref2.current.listData[tmp3].type, key: tmp3, layoutStart: ref2.current.offsets[tmp3], layoutSize: ref2.current.sizes[tmp3], section: null, item: null, recyclerKey: null };
+          ({ section: obj.section, item: obj.item, key: obj.recyclerKey } = ref2.current.listData[tmp3]);
           const obj2 = { item: obj, positionPercentage: num2 };
           num2 = 0;
           if (obj.layoutSize > 0) {
@@ -202,13 +204,13 @@ const memoResult = react.memo(react.forwardRef(function ChannelListLegendList(li
             return false;
           }
         }
-        const current = ref1.current;
+        const current = ref2.current;
         const index = current.getIndex(section, item);
         if (null == index) {
           return false;
         } else {
           let diff1;
-          const current4 = ref.current;
+          const current4 = ref1.current;
           let num4;
           if (current4 != null) {
             num4 = current4.getState().scrollLength;
@@ -228,17 +230,17 @@ const memoResult = react.memo(react.forwardRef(function ChannelListLegendList(li
             num6 = 0;
           }
           let str2 = "top";
-          if (ref1.current.sizes[index] < num4) {
+          if (ref2.current.sizes[index] < num4) {
             str2 = str;
           }
           if ("visible" === str2) {
             let diff;
-            if (ref1.current.offsets[index] >= num6 + num) {
-              if (ref1.current.offsets[index] + ref1.current.sizes[index] <= num6 + (num4 - num2)) {
+            if (ref2.current.offsets[index] >= num6 + num) {
+              if (ref2.current.offsets[index] + ref2.current.sizes[index] <= num6 + (num4 - num2)) {
                 return false;
               }
             }
-            if (ref1.current.offsets[index] < num6) {
+            if (ref2.current.offsets[index] < num6) {
               diff = tmp10 - num;
             } else {
               diff = tmp10 + tmp11 + num2 - num4;
@@ -268,7 +270,7 @@ const memoResult = react.memo(react.forwardRef(function ChannelListLegendList(li
         if (arg0 === undefined) {
           flag = true;
         }
-        const current = ref.current;
+        const current = ref1.current;
         if (current != null) {
           const obj = { offset: 0, animated: flag };
           current.scrollToOffset(obj);
@@ -277,7 +279,7 @@ const memoResult = react.memo(react.forwardRef(function ChannelListLegendList(li
     };
     Object.defineProperty(obj, "containerSize", {
       get: () => {
-        const current = ref.current;
+        const current = ref1.current;
         let num;
         if (current != null) {
           num = current.getState().scrollLength;
@@ -325,7 +327,7 @@ const memoResult = react.memo(react.forwardRef(function ChannelListLegendList(li
   const callback1 = listViewportHeight.useCallback((type) => type.type, []);
   const callback2 = listViewportHeight.useCallback((key) => key.key, []);
   const items3 = [memo1, renderHeader];
-  const callback3 = listViewportHeight.useCallback((arg0, arg1) => ref1.current.sizes[arg1], []);
+  const callback3 = listViewportHeight.useCallback((arg0, arg1) => ref2.current.sizes[arg1], []);
   const items4 = [insetEnd];
   const memo2 = listViewportHeight.useMemo(() => {
     const obj = { children: renderHeader(memo1) };
@@ -340,11 +342,11 @@ const memoResult = react.memo(react.forwardRef(function ChannelListLegendList(li
   }
   const obj4 = { children: items6 };
   items6 = [, ];
-  const obj5 = { ref, contentContainerStyle: memo3, data: listData, drawDistance: listViewportHeight, estimatedHeaderSize: headerSize, getFixedItemSize: callback3, getItemType: callback1, initialScrollOffset: memo, keyExtractor: callback2, ListHeaderComponent: memo2, ListHeaderComponentStyle: renderSectionHeader, onEndReached, onEndReachedThreshold: num, onScroll: animatedScrollHandler, recycleItems: true, renderItem: callback, scrollIndicatorInsets: memo4 };
+  const obj5 = { ref: ref1, contentContainerStyle: memo3, data: listData, drawDistance: listViewportHeight, estimatedHeaderSize: headerSize, getFixedItemSize: callback3, getItemType: callback1, initialScrollOffset: memo, keyExtractor: callback2, ListHeaderComponent: memo2, ListHeaderComponentStyle: renderSectionHeader, onEndReached, onEndReachedThreshold: num, onScroll: animatedScrollHandler, recycleItems: true, renderItem: callback, scrollIndicatorInsets: memo4 };
   items6[0] = onScrollWorklet(tmp5(tmp2[5]).AnimatedLegendList, obj5);
   items6[1] = renderAccessory(memo1);
   return renderHeader(onScroll, obj4);
-}));
+});
 let result = size.fileFinishedImporting("modules/channel_list_v2/native/ChannelListLegendList.tsx");
 
 export default memoResult;

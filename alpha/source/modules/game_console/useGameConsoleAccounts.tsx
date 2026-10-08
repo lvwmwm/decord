@@ -1,27 +1,27 @@
-// Module ID: 9457
-// Function ID: 9458
+// Module ID: 9108
+// Function ID: 9109
 // Name: useGameConsoleAccounts
-// Dependencies: [5447, 1085, 558, 576, 1375, 504, 2]
+// Dependencies: [5757, 1085, 558, 576, 1387, 504, 2]
 
-// Module 9457 (useGameConsoleAccounts)
+// Module 9108 (useGameConsoleAccounts)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5447 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5757 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 const PlatformTypes = Constants.PlatformTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameConsoleAccounts() {
   let tmp4;
   let tmp5;
   const obj = react;
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [ConnectedAccountsStore];
-    const fn = function o() {
+    const fn = function l() {
       const items = [ConnectedAccountsStore.getAccount(null, constants.XBOX), ConnectedAccountsStore.getAccount(null, constants.PLAYSTATION), ConnectedAccountsStore.getAccount(null, constants.PLAYSTATION_STAGING)];
       return items.filter(GlobalUtils.isNotNullish);
     };
@@ -34,7 +34,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStoresArray(tmp4, tmp5);
-}) : (() => {
+}) : (function useGameConsoleAccounts() {
   let items = [ConnectedAccountsStore];
   const obj = get_initialized;
   return obj.useStateFromStoresArray(items, () => {

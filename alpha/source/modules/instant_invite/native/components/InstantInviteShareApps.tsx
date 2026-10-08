@@ -1,20 +1,20 @@
-// Module ID: 9529
-// Function ID: 9530
+// Module ID: 8699
+// Function ID: 8700
 // Name: InstantInviteShareApps
-// Dependencies: [32, 19, 17, 9530, 21, 4896, 587, 558, 576, 5609, 6147, 9563, 7586, 9300, 2]
+// Dependencies: [32, 19, 17, 8700, 21, 5090, 587, 558, 576, 5382, 6326, 8734, 8106, 8704, 2]
 
-// Module 9529 (InstantInviteShareApps)
+// Module 8699 (InstantInviteShareApps)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import InstantInviteConstants from "components/InstantInviteConstants" /* 9530 */;
-import createStyles from "createStyles" /* 4896 */;
+import InstantInviteConstants from "components/InstantInviteConstants" /* 8700 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, onItemPressed;
+let dependencyMap;
 
 let hasOwnProperty;
 let metroImportAll;
@@ -27,7 +27,7 @@ const jsx = Fragment.jsx;
 let obj = { contentContainer: obj2 };
 obj2 = { padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_12, alignItems: "center" };
 let closure_10 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onItemPressed) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInviteShareApps(onItemPressed) {
   let arr;
   let first;
   let tmp10;
@@ -38,7 +38,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   onItemPressed = onItemPressed.onItemPressed;
   const contentContainerStyle = onItemPressed.contentContainerStyle;
   let tmp4 = closure_10();
-  let obj2 = onItemPressed(5609);
+  let obj2 = onItemPressed(5382);
   const fontScale = obj2.useFontScale();
   let obj3 = react;
   [arr, dependencyMap] = react.useState(closure_8);
@@ -50,7 +50,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   } else {
     first = cResult[0];
   }
-  let tmpResult = tmp(6147);
+  let tmpResult = tmp(6326);
   const nativeGesture = tmpResult.useNativeGesture(first);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function x() {
@@ -93,23 +93,113 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
             tmp16 = cResult[15];
           }
           if (cResult[16] === nativeGesture) {
-            let tmp20;
+            let tmp19;
             if (cResult[17] === tmp16) {
-              tmp20 = cResult[18];
+              tmp19 = cResult[18];
             }
-            return tmp20;
+            return tmp19;
           }
-          const tmp22 = jsx(tmp(6147).GestureDetector, { gesture: nativeGesture, children: tmp16 });
+          class M {
+            constructor(type) {
+              let IconComponent;
+              let fullIcon;
+              let getLabel;
+              let icon;
+              let tmpResult;
+              ({ fullIcon, getLabel, icon, IconComponent, onPress: onItemPressed } = type);
+              type = type.type;
+              const obj2 = { maxWidth: 76 * fontScale };
+              if (null != fullIcon) {
+                const obj3 = {
+                  image: fullIcon,
+                  label: getLabel(),
+                  onPress() {
+                      return onItemPressed(onItemPressed);
+                    },
+                  maxFontSizeMultiplier: 2
+                };
+                const ImageButton = onItemPressed(dependencyMap[11]).ImageButton;
+                tmpResult = tmp(ImageButton, obj3);
+              } else {
+                const IconButton = onItemPressed(dependencyMap[12]).IconButton;
+                const tmp4 = dependencyMap;
+                if (null == IconComponent) {
+                  if (icon == null) {
+                    icon = fontScale(tmp4[13]);
+                  }
+                  IconComponent = icon;
+                }
+                const obj4 = {
+                  variant: "secondary",
+                  icon: IconComponent,
+                  label: getLabel(),
+                  onPress() {
+                      return onItemPressed(onItemPressed);
+                    },
+                  maxFontSizeMultiplier: 2
+                };
+                tmpResult = tmp(IconButton, obj4);
+              }
+              return <tmp2 key={type} style={obj2}>{tmpResult}</tmp2>;
+            }
+          }
+          tmp21[0] = nativeGesture;
+          tmp21[1] = tmp16;
+          const tmp22 = jsx(tmp(6326).GestureDetector, tmp21);
           cResult[16] = nativeGesture;
           cResult[17] = tmp16;
           cResult[18] = tmp22;
-          tmp20 = tmp22;
+          tmp19 = tmp22;
         }
-        const tmp19 = <closure_6 contentContainerStyle={tmp12} showsHorizontalScrollIndicator={false} horizontal>{tmp13}</closure_6>;
+        class M {
+          constructor(type) {
+            let IconComponent;
+            let fullIcon;
+            let getLabel;
+            let icon;
+            let tmpResult;
+            ({ fullIcon, getLabel, icon, IconComponent, onPress: onItemPressed } = type);
+            type = type.type;
+            const obj2 = { maxWidth: 76 * fontScale };
+            if (null != fullIcon) {
+              const obj3 = {
+                image: fullIcon,
+                label: getLabel(),
+                onPress() {
+                    return onItemPressed(onItemPressed);
+                  },
+                maxFontSizeMultiplier: 2
+              };
+              const ImageButton = onItemPressed(dependencyMap[11]).ImageButton;
+              tmpResult = tmp(ImageButton, obj3);
+            } else {
+              const IconButton = onItemPressed(dependencyMap[12]).IconButton;
+              const tmp4 = dependencyMap;
+              if (null == IconComponent) {
+                if (icon == null) {
+                  icon = fontScale(tmp4[13]);
+                }
+                IconComponent = icon;
+              }
+              const obj4 = {
+                variant: "secondary",
+                icon: IconComponent,
+                label: getLabel(),
+                onPress() {
+                    return onItemPressed(onItemPressed);
+                  },
+                maxFontSizeMultiplier: 2
+              };
+              tmpResult = tmp(IconButton, obj4);
+            }
+            return <tmp2 key={type} style={obj2}>{tmpResult}</tmp2>;
+          }
+        }
+        const tmp18 = <closure_6 contentContainerStyle={tmp12} showsHorizontalScrollIndicator={false} horizontal>{tmp13}</closure_6>;
         cResult[13] = tmp12;
         cResult[14] = tmp13;
-        cResult[15] = tmp19;
-        tmp16 = tmp19;
+        cResult[15] = tmp18;
+        tmp16 = tmp18;
       }
     }
     if (cResult[10] === fontScale) {
@@ -118,65 +208,110 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
         tmp14 = cResult[12];
       }
       const mapped = arr.map(tmp14);
-      cResult[6] = fontScale;
+      class M {
+        constructor(type) {
+          let IconComponent;
+          let fullIcon;
+          let getLabel;
+          let icon;
+          let tmpResult;
+          ({ fullIcon, getLabel, icon, IconComponent, onPress: onItemPressed } = type);
+          type = type.type;
+          const obj2 = { maxWidth: 76 * fontScale };
+          if (null != fullIcon) {
+            const obj3 = {
+              image: fullIcon,
+              label: getLabel(),
+              onPress() {
+                  return onItemPressed(onItemPressed);
+                },
+              maxFontSizeMultiplier: 2
+            };
+            const ImageButton = onItemPressed(dependencyMap[11]).ImageButton;
+            tmpResult = tmp(ImageButton, obj3);
+          } else {
+            const IconButton = onItemPressed(dependencyMap[12]).IconButton;
+            const tmp4 = dependencyMap;
+            if (null == IconComponent) {
+              if (icon == null) {
+                icon = fontScale(tmp4[13]);
+              }
+              IconComponent = icon;
+            }
+            const obj4 = {
+              variant: "secondary",
+              icon: IconComponent,
+              label: getLabel(),
+              onPress() {
+                  return onItemPressed(onItemPressed);
+                },
+              maxFontSizeMultiplier: 2
+            };
+            tmpResult = tmp(IconButton, obj4);
+          }
+          return <tmp2 key={type} style={obj2}>{tmpResult}</tmp2>;
+        }
+      }
       cResult[7] = onItemPressed;
       cResult[8] = arr;
       cResult[9] = mapped;
       tmp13 = mapped;
     }
-    const fn2 = function w(type) {
-      let IconComponent;
-      let fullIcon;
-      let getLabel;
-      let icon;
-      let tmpResult;
-      ({ fullIcon, getLabel, icon, IconComponent, onPress: onItemPressed } = type);
-      type = type.type;
-      const obj2 = { maxWidth: 76 * fontScale };
-      if (null != fullIcon) {
-        const obj3 = {
-          image: fullIcon,
-          label: getLabel(),
-          onPress() {
-              return onItemPressed(onItemPressed);
-            },
-          maxFontSizeMultiplier: 2
-        };
-        const ImageButton = onItemPressed(dependencyMap[11]).ImageButton;
-        tmpResult = tmp(ImageButton, obj3);
-      } else {
-        const IconButton = onItemPressed(dependencyMap[12]).IconButton;
-        const tmp4 = dependencyMap;
-        if (null == IconComponent) {
-          if (icon == null) {
-            icon = fontScale(tmp4[13]);
+    class M {
+      constructor(type) {
+        let IconComponent;
+        let fullIcon;
+        let getLabel;
+        let icon;
+        let tmpResult;
+        ({ fullIcon, getLabel, icon, IconComponent, onPress: onItemPressed } = type);
+        type = type.type;
+        const obj2 = { maxWidth: 76 * fontScale };
+        if (null != fullIcon) {
+          const obj3 = {
+            image: fullIcon,
+            label: getLabel(),
+            onPress() {
+                return onItemPressed(onItemPressed);
+              },
+            maxFontSizeMultiplier: 2
+          };
+          const ImageButton = onItemPressed(dependencyMap[11]).ImageButton;
+          tmpResult = tmp(ImageButton, obj3);
+        } else {
+          const IconButton = onItemPressed(dependencyMap[12]).IconButton;
+          const tmp4 = dependencyMap;
+          if (null == IconComponent) {
+            if (icon == null) {
+              icon = fontScale(tmp4[13]);
+            }
+            IconComponent = icon;
           }
-          IconComponent = icon;
+          const obj4 = {
+            variant: "secondary",
+            icon: IconComponent,
+            label: getLabel(),
+            onPress() {
+                return onItemPressed(onItemPressed);
+              },
+            maxFontSizeMultiplier: 2
+          };
+          tmpResult = tmp(IconButton, obj4);
         }
-        const obj4 = {
-          variant: "secondary",
-          icon: IconComponent,
-          label: getLabel(),
-          onPress() {
-              return onItemPressed(onItemPressed);
-            },
-          maxFontSizeMultiplier: 2
-        };
-        tmpResult = tmp(IconButton, obj4);
+        return <tmp2 key={type} style={obj2}>{tmpResult}</tmp2>;
       }
-      return <tmp2 key={type} style={obj2}>{tmpResult}</tmp2>;
-    };
+    }
     cResult[10] = fontScale;
     cResult[11] = onItemPressed;
-    cResult[12] = fn2;
-    tmp14 = fn2;
+    cResult[12] = M;
+    tmp14 = M;
   }
   const items1 = [tmp4.contentContainer, contentContainerStyle];
   cResult[3] = contentContainerStyle;
   cResult[4] = tmp4.contentContainer;
   cResult[5] = items1;
   tmp12 = items1;
-}) : ((onItemPressed) => {
+}) : (function InstantInviteShareApps(onItemPressed) {
   let _undefined;
   let arr;
   let c2;
@@ -184,11 +319,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   dependencyMap = undefined;
   const contentContainerStyle = onItemPressed.contentContainerStyle;
   let tmp = closure_10();
-  const obj = onItemPressed(5609);
+  const obj = onItemPressed(5382);
   let closure_1 = obj.useFontScale();
   const tmp2 = _slicedToArray(react.useState(closure_8), 2);
   [arr, c2] = tmp2;
-  let obj2 = onItemPressed(6147);
+  let obj2 = onItemPressed(6326);
   const gesture = obj2.useNativeGesture({ disallowInterruption: true });
   const effect = react.useEffect(() => {
     const allPromises = Promise.all(metroImportDefault.map((isAvailable) => isAvailable.isAvailable));
@@ -246,7 +381,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
     }
     return <tmp2 key={type} style={obj2}>{tmpResult}</tmp2>;
   })}</closure_6>;
-  return jsx(onItemPressed(6147).GestureDetector, { gesture, children });
+  return jsx(onItemPressed(6326).GestureDetector, { gesture, children });
 }));
 const result = size.fileFinishedImporting("modules/instant_invite/native/components/InstantInviteShareApps.tsx");
 

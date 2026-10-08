@@ -1,27 +1,27 @@
-// Module ID: 15358
-// Function ID: 15359
+// Module ID: 15620
+// Function ID: 15621
 // Name: ScreenDowntimeScheduleSetting
-// Dependencies: [7645, 558, 14735, 8328, 11142, 1126, 2028, 2]
+// Dependencies: [7966, 558, 14996, 7711, 11262, 1126, 2040, 2]
 
-// Module 15358 (ScreenDowntimeScheduleSetting)
+// Module 15620 (ScreenDowntimeScheduleSetting)
 import intl2 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import useUserLinks from "useUserLinks" /* 8328 */;
-import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 14735 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import useUserLinks from "useUserLinks" /* 7711 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 14996 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePredicate() {
   let hasActiveParentLinks = useUserIsTeenAgeGroupDefault();
   const obj = useUserLinks;
   if (hasActiveParentLinks) {
     hasActiveParentLinks = obj.useHasActiveParentLinks();
   }
   return hasActiveParentLinks;
-}) : (() => {
+}) : (function usePredicate() {
   let hasActiveParentLinks = useUserIsTeenAgeGroupDefault();
   const obj = useUserLinks;
   if (hasActiveParentLinks) {

@@ -1,32 +1,32 @@
-// Module ID: 17779
-// Function ID: 17780
+// Module ID: 18066
+// Function ID: 18067
 // Name: GuildSettingsModalEmoji
-// Dependencies: [32, 19, 17, 2074, 17780, 21, 12, 9952, 4896, 587, 1126, 5650, 7677, 558, 576, 504, 9204, 4892, 17782, 17786, 1188, 17787, 5975, 6543, 1490, 6017, 2]
+// Dependencies: [32, 19, 17, 2086, 18067, 21, 12, 9479, 5090, 587, 1126, 5997, 7998, 558, 576, 504, 8548, 5086, 18069, 18073, 1200, 18074, 6158, 6719, 1502, 6203, 2]
 // Exports: computeSectionItem
 
-// Module 17779 (GuildSettingsModalEmoji)
+// Module 18066 (GuildSettingsModalEmoji)
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 5650 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9952 */;
-import GuildSettingsModalEmoji_EmojiRow from "GuildSettingsModalEmoji/EmojiRow" /* 17782 */;
-import HeaderRow from "HeaderRow" /* 17786 */;
-import EmptyServerSettingsEmoji from "EmptyServerSettingsEmoji" /* 17787 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 5997 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9479 */;
+import GuildSettingsModalEmoji_EmojiRow from "GuildSettingsModalEmoji/EmojiRow" /* 18069 */;
+import HeaderRow from "HeaderRow" /* 18073 */;
+import EmptyServerSettingsEmoji from "EmptyServerSettingsEmoji" /* 18074 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore_mod from "GuildStore" /* 2074 */;
-import GuildSettingsEmojiStore_mod from "GuildSettingsEmojiStore" /* 17780 */;
+import GuildStore_mod from "GuildStore" /* 2086 */;
+import GuildSettingsEmojiStore_mod from "GuildSettingsEmojiStore" /* 18067 */;
 import Fragment from "Fragment" /* 21 */;
 import module_12_mod from "module_12" /* 12 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, guildId, navigation, setOptionsResult, tmp3;
+let _require, navigation, setOptionsResult, tmp3;
 
 let c10;
 let c9;
@@ -57,7 +57,7 @@ const computeEmojiItems = module_12.memoize((arr, stateFromStores) => {
   let arr3;
   let items1;
   let items4;
-  const f132019 = (emoji) => !emoji.emoji.animated;
+  const f133409 = (emoji) => !emoji.emoji.animated;
   _require = stateFromStores;
   const found = arr.filter((item) => {
     const obj = RoleSubscriptionEmojiUtils;
@@ -68,8 +68,8 @@ const computeEmojiItems = module_12.memoize((arr, stateFromStores) => {
   const obj2 = require("GuildBoostingUtils");
   const maxEmojiSlots = obj2.getMaxEmojiSlots(stateFromStores);
   const obj3 = module_12;
-  [arr2, arr3] = obj3.partition(reversed, f132019);
-  _slicedToArray(obj3.partition(reversed, f132019), 2);
+  [arr2, arr3] = obj3.partition(reversed, f133409);
+  _slicedToArray(obj3.partition(reversed, f133409), 2);
   const intl = require("intl").intl;
   const stringResult = intl.string(require("intl").t.sMOuuS);
   const bound = Math.max(maxEmojiSlots - arr2.length, 0);
@@ -101,7 +101,7 @@ const computeEmojiItems = module_12.memoize((arr, stateFromStores) => {
   return items2;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((headerDescription) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManageEmojisModal(headerDescription) {
   let closure_8;
   let contentContainerStyle;
   let disabled;
@@ -272,7 +272,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((headerDescription) =
   cResult[7] = tmp9;
   cResult[8] = emojiItems;
   tmp11 = emojiItems;
-}) : ((disabled) => {
+}) : (function ManageEmojisModal(disabled) {
   let contentContainerStyle;
   let items7;
   let items8;
@@ -406,7 +406,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((headerDescription) =
 });
 let closure_16 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsModalEmoji(guildId) {
   let closure_4;
   let contentContainerStyle;
   let first;
@@ -538,7 +538,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[8] = items2;
   tmp11 = items2;
   tmp10 = I;
-}) : ((contentContainerStyle) => {
+}) : (function GuildSettingsModalEmoji(contentContainerStyle) {
   let closure_4;
   let isLandingScreen;
   let items2;

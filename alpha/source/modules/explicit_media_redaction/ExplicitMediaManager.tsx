@@ -1,36 +1,36 @@
-// Module ID: 17519
-// Function ID: 17520
+// Module ID: 17801
+// Function ID: 17802
 // Name: ExplicitMediaManager
-// Dependencies: [7115, 502, 6793, 2051, 5116, 2103, 4705, 13522, 7123, 1085, 1095, 7122, 6805, 6808, 6810, 584, 8953, 5416, 5421, 17520, 17521, 11, 5118, 5006, 6620, 2]
+// Dependencies: [7301, 502, 6066, 2063, 5428, 2115, 4899, 13819, 6979, 1085, 1095, 8218, 6976, 6980, 6982, 584, 11493, 5725, 5730, 17802, 17803, 11, 5430, 5190, 6797, 2]
 
-// Module 17519 (ExplicitMediaManager)
+// Module 17801 (ExplicitMediaManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import flattenDefault from "flatten" /* 5006 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5118 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6805 */;
-import HarmTypeConfiguration from "HarmTypeConfiguration" /* 6808 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 6810 */;
-import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7115 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7122 */;
-import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7123 */;
-import ExplicitMediaRedactionActionCreators from "ExplicitMediaRedactionActionCreators" /* 8953 */;
-import uniqWithDefault from "uniqWith" /* 17521 */;
+import flattenDefault from "flatten" /* 5190 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5430 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6976 */;
+import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 6979 */;
+import HarmTypeConfiguration from "HarmTypeConfiguration" /* 6980 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 6982 */;
+import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7301 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8218 */;
+import ExplicitMediaRedactionActionCreators from "ExplicitMediaRedactionActionCreators" /* 11493 */;
+import uniqWithDefault from "uniqWith" /* 17803 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6793 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import MessageStore from "MessageStore" /* 5116 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
-import ExplicitMediaSearchStore from "ExplicitMediaSearchStore" /* 13522 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6620 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6066 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import MessageStore from "MessageStore" /* 5428 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
+import ExplicitMediaSearchStore from "ExplicitMediaSearchStore" /* 13819 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6797 */;
 import size from "module_2" /* 2 */;
 
 const ReferencedMessageStore = ReferencedMessageStore2;
 let messageByReference, set;
 
-const f131055 = (channel_id) => {
+const f132423 = (channel_id) => {
   const tmp = obj;
   if (null == obj[channel_id.channel_id]) {
     tmp[channel_id.channel_id] = { numOfAttachments: 0, numOfAttachmentsPendingScan: 0, numOfEmbeds: 0, numOfEmbedsPendingScan: 0 };
@@ -216,7 +216,7 @@ function withoutScheduledTimeout(arg0) {
 }
 function handleUnscannedMessages(found2, isMessageUpdate) {
   let found1;
-  const f131049 = (id) => id.id;
+  const f132417 = (id) => id.id;
   let obj = isMessageUpdate;
   if (isMessageUpdate == null) {
     obj = {};
@@ -305,16 +305,16 @@ function handleUnscannedMessages(found2, isMessageUpdate) {
         if (tmp) {
           const result = obj.sendMultiChannelMessagesForScanning(found);
         } else {
-          const result1 = obj.sendMessagesForScanning(found[0].channel_id, found.map(f131049));
+          const result1 = obj.sendMessagesForScanning(found[0].channel_id, found.map(f132417));
         }
       }
     }, 800 * Math.random());
   } else if (0 !== found1.length) {
-    let obj2 = found1(8953);
+    let obj2 = found1(11493);
     if (tmp) {
       let result = obj2.sendMultiChannelMessagesForScanning(found1);
     } else {
-      let result1 = obj2.sendMessagesForScanning(found1[0].channel_id, found1.map(f131049));
+      let result1 = obj2.sendMessagesForScanning(found1[0].channel_id, found1.map(f132417));
     }
   }
 }
@@ -346,21 +346,23 @@ function processMessagesFromAction(firstMessages, isMessageUpdate) {
       }
     }
   });
-  const found1 = mapped.filter((item) => null != item);
+  const found1 = mapped.filter(function notNull(item) {
+    return null != item;
+  });
   let tmp3 = found;
   if (found1.length > 0) {
     const items = [];
     HermesBuiltin.arraySpread(items, found1, HermesBuiltin.arraySpread(items, found, 0));
     tmp3 = items;
   }
-  const arr4 = obj2(17521)(tmp3, (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id);
+  const arr4 = obj2(17803)(tmp3, (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id);
   const found2 = arr4.filter((item) => {
     obj = obj(dependencyMap[12]);
     return obj.hasUnscannedMedia(item);
   });
   let obj = {};
   obj2 = {};
-  const item = arr4.forEach(f131055);
+  const item = arr4.forEach(f132423);
   const obj3 = obj2(11);
   const entries = obj3.entries(obj);
   const item1 = entries.forEach((item) => {
@@ -539,7 +541,6 @@ function handleLoadPinnedMessages(pins) {
   return processMessagesFromAction(pins.map((message) => message.message));
 }
 function handleForumPostsLoad(threads) {
-  let tmp;
   threads = threads.threads;
   let tmp2 = null != threads;
   if (tmp2) {
@@ -626,7 +627,9 @@ function maybeScanMessagesForChannelId(channelId) {
         }
       }
     });
-    const found1 = mapped.filter((item) => null != item);
+    const found1 = mapped.filter(function notNull(item) {
+      return null != item;
+    });
     let tmp4 = found;
     if (found1.length > 0) {
       const items = [];
@@ -636,14 +639,14 @@ function maybeScanMessagesForChannelId(channelId) {
       HermesBuiltin.arraySpread(items, found1, HermesBuiltin.arraySpread(items, found, 0));
       tmp4 = items;
     }
-    const arr5 = obj2(17521)(tmp4, (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id);
+    const arr5 = obj2(17803)(tmp4, (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id);
     const found2 = arr5.filter((item) => {
       obj = obj(dependencyMap[12]);
       return obj.hasUnscannedMedia(item);
     });
     let obj = {};
     obj2 = {};
-    const item = arr5.forEach(f131055);
+    const item = arr5.forEach(f132423);
     const obj3 = obj2(11);
     const entries = obj3.entries(obj);
     const item1 = entries.forEach((item) => {

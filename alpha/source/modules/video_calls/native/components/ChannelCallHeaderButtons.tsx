@@ -1,29 +1,27 @@
-// Module ID: 9731
-// Function ID: 9732
+// Module ID: 10934
+// Function ID: 10935
 // Name: ChannelCallHeaderButtons
-// Dependencies: [19, 1999, 21, 558, 576, 504, 8079, 9600, 1126, 9732, 9088, 9089, 9733, 5097, 2]
+// Dependencies: [19, 2011, 21, 558, 576, 504, 5241, 10793, 1126, 10935, 10335, 10336, 10936, 5104, 2]
 
-// Module 9731 (ChannelCallHeaderButtons)
+// Module 10934 (ChannelCallHeaderButtons)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1126 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5097 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 8079 */;
-import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 9088 */;
-import useSelectedParticipantDefault from "useSelectedParticipant" /* 9089 */;
-import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 9600 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9732 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9733 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5104 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5241 */;
+import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 10335 */;
+import useSelectedParticipantDefault from "useSelectedParticipant" /* 10336 */;
+import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 10793 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10935 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10936 */;
 import react from "react" /* 19 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channel;
-
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CameraButton() {
   let isVideoEnabled;
   let tmp4;
   let tmp5;
@@ -32,7 +30,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(8);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [MediaEngineStore];
-    const fn = function l() {
+    const fn = function s() {
       const obj = { isVideoEnabled: MediaEngineStore.isVideoEnabled(), videoDeviceId: MediaEngineStore.getVideoDeviceId(), videoDevices: MediaEngineStore.getVideoDevices() };
       return obj;
     };
@@ -61,28 +59,28 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     let tmp10 = null;
     if (isVideoEnabled) {
-      videoDevices(9600);
+      videoDevices(10793);
       const intl = tmp(1126).intl;
-      tmp10 = <tmp13 accessibilityLabel={intl.string(videoDeviceId(1126).t["t9eQ/g"])} source={videoDevices(9732)} onPress={tmp8} disableBackground />;
+      tmp10 = <tmp13 accessibilityLabel={intl.string(videoDeviceId(1126).t["t9eQ/g"])} source={videoDevices(10935)} onPress={tmp8} disableBackground />;
     }
     cResult[5] = tmp8;
     cResult[6] = isVideoEnabled;
     cResult[7] = tmp10;
     tmp9 = tmp10;
   }
-  const fn2 = function o() {
+  function handleCamera() {
     const keys = Object.keys(videoDevices);
     const found = keys.find((item) => item !== videoDeviceId);
     if (null != found) {
       const obj = AudioActionCreatorsDefault;
       obj.setVideoDevice(found);
     }
-  };
+  }
   cResult[2] = videoDeviceId;
   cResult[3] = videoDevices;
-  cResult[4] = fn2;
-  tmp8 = fn2;
-}) : (() => {
+  cResult[4] = handleCamera;
+  tmp8 = handleCamera;
+}) : (function CameraButton() {
   let obj = get_initialized;
   const items = [MediaEngineStore];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
@@ -94,7 +92,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (stateFromStoresObject.isVideoEnabled) {
     ChannelCallNavigatorIconDefault;
     const intl = tmp(1126).intl;
-    tmp4 = <tmp7 accessibilityLabel={intl.string(intl2.t["t9eQ/g"])} source={AssetRegistryDefault} onPress={function onPress() {
+    tmp4 = <tmp7 accessibilityLabel={intl.string(intl2.t["t9eQ/g"])} source={AssetRegistryDefault} onPress={function handleCamera() {
       const keys = Object.keys(importDefault);
       const found = keys.find((item) => item !== closure_1_0);
       if (null != found) {
@@ -106,7 +104,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return tmp4;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GridButton(channel) {
   let obj = channel(576);
   const cResult = obj.c(4);
   channel = channel.channel;
@@ -138,7 +136,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[2] = tmp6;
   cResult[3] = tmp8;
   tmp7 = tmp8;
-}) : ((channel) => {
+}) : (function GridButton(channel) {
   channel = channel.channel;
   let tmp4 = null;
   const tmp3 = useIsPrivateAudioOnlyCallDefault(channel);

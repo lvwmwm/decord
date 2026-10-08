@@ -1,29 +1,29 @@
-// Module ID: 13938
-// Function ID: 13939
+// Module ID: 14241
+// Function ID: 14242
 // Name: Status
-// Dependencies: [32, 19, 17, 1189, 1085, 12871, 21, 4896, 13936, 587, 13939, 13940, 13941, 13942, 13943, 13944, 13945, 558, 576, 13937, 13946, 4618, 5604, 13923, 2]
+// Dependencies: [32, 19, 17, 1201, 1085, 13020, 21, 5090, 14239, 587, 14242, 14243, 14244, 14245, 14246, 14247, 14248, 558, 576, 14240, 14249, 4810, 5374, 14226, 2]
 
-// Module 13938 (Status)
+// Module 14241 (Status)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import StatusConstants from "StatusConstants" /* 1189 */;
-import spring from "spring" /* 5604 */;
-import Status_StatusUtils from "Status/StatusUtils" /* 13936 */;
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 13937 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13939 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13940 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13941 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13942 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 13943 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 13944 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 13945 */;
+import StatusConstants from "StatusConstants" /* 1201 */;
+import spring from "spring" /* 5374 */;
+import Status_StatusUtils from "Status/StatusUtils" /* 14239 */;
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 14240 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14242 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14243 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14244 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 14245 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 14246 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 14247 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 14248 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelAnimationConstants from "ChannelAnimationConstants" /* 12871 */;
+import ChannelAnimationConstants from "ChannelAnimationConstants" /* 13020 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -84,7 +84,7 @@ const __initData = { code: "function StatusTsx1(){const{enableAnimation,withSpri
 const __initData2 = { code: "function StatusTsx2(){const{withSpring,statusOpacity,CHANNEL_SPRING_CONFIG}=this.__closure;return{opacity:withSpring(statusOpacity,CHANNEL_SPRING_CONFIG)};}" };
 const __initData3 = { code: "function StatusTsx3(){const{enableAnimation,withSpring,width,CHANNEL_SPRING_CONFIG,height,onAnimationFinished,borderRadius,translateX}=this.__closure;const shouldAnimate=enableAnimation.get()?'respect-motion-settings':'animate-never';return{width:withSpring(width,CHANNEL_SPRING_CONFIG,shouldAnimate),height:withSpring(height,CHANNEL_SPRING_CONFIG,shouldAnimate,onAnimationFinished),borderRadius:withSpring(borderRadius,CHANNEL_SPRING_CONFIG,shouldAnimate),transform:[{translateX:withSpring(translateX,CHANNEL_SPRING_CONFIG,shouldAnimate)}]};}" };
 const __initData4 = { code: "function StatusTsx4(){const{withSpring,statusOpacity,CHANNEL_SPRING_CONFIG}=this.__closure;return{opacity:withSpring(statusOpacity,CHANNEL_SPRING_CONFIG)};}" };
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Status(arg0) {
   let isMobileOnline;
   let isVROnline;
   let status;
@@ -180,7 +180,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = size;
   cResult[3] = tmp8;
   tmp7 = tmp8;
-}) : ((isMobileOnline) => {
+}) : (function Status(isMobileOnline) {
   let items;
   let obj2;
   let status;
@@ -209,37 +209,37 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp3 = hasOwnProperty;
   tmp6 = React3;
   if (streaming) {
-    tmp4Result = tmp4(13939);
+    tmp4Result = tmp4(14242);
   } else if (flag2) {
-    tmp4Result = tmp4(13940);
+    tmp4Result = tmp4(14243);
   } else if (flag) {
-    tmp4Result = tmp4(13941);
+    tmp4Result = tmp4(14244);
   } else if (StatusTypes.IDLE === status) {
-    tmp4Result = tmp4(13942);
+    tmp4Result = tmp4(14245);
   } else if (StatusTypes.DND === status) {
-    tmp4Result = tmp4(13943);
+    tmp4Result = tmp4(14246);
   } else {
     if (StatusTypes.OFFLINE !== status) {
       if (StatusTypes.INVISIBLE !== status) {
         const ONLINE = tmp7.ONLINE;
-        tmp4Result = tmp4(13945);
+        tmp4Result = tmp4(14248);
       }
     }
-    tmp4Result = tmp4(13944);
+    tmp4Result = tmp4(14247);
   }
   return unpackModuleId(tmp3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function StatusWithTyping(arg0) {
   let closure_1;
   let enableAnimation;
   let height;
   let isMobileOnline;
   let isVROnline;
   let items;
-  let items1;
   let num2;
   let obj7;
+  let rect;
   let status;
   let streaming;
   let style;
@@ -410,9 +410,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       let tmp22 = typing;
       if (tmp22) {
-        let obj6 = { collapsable: false, entering, exiting, style: items1, children: closure_11(require("Ellipsis"), obj7) };
-        const rect = { position: "absolute", left: num2, top: num2 };
-        items1 = [rect];
+        let obj6 = { collapsable: false, entering, exiting, style: rect, children: closure_11(require("Ellipsis"), obj7) };
+        rect = { position: "absolute", left: num2, top: num2 };
         const View = tmp9(tmp2[21]).View;
         obj7 = { style: null, dotStyle: null, disableScale: true };
         ({ ellipsis: obj9.style, ellipsisDot: obj9.dotStyle } = tmp8);
@@ -424,19 +423,19 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp21 = tmp22;
     }
   }
-  const items2 = [size2, animatedStyle, style];
+  const items1 = [size2, animatedStyle, style];
   cResult[0] = animatedStyle;
   cResult[1] = size2;
   cResult[2] = style;
-  cResult[3] = items2;
-  tmp20 = items2;
-}) : ((isMobileOnline) => {
+  cResult[3] = items1;
+  tmp20 = items1;
+}) : (function StatusWithTyping(isMobileOnline) {
   let closure_1;
   let items;
   let items1;
-  let items2;
   let obj4;
   let obj6;
+  let rect;
   let status;
   let streaming;
   let style;
@@ -536,20 +535,19 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   fn.__workletHash = 9624745330520;
   fn.__initData = __initData4;
   const animatedStyle1 = tmp5Result4.useAnimatedStyle(fn);
-  let obj2 = { style: items, collapsable: false, children: items2 };
+  let obj2 = { style: items, collapsable: false, children: items1 };
   items = [size2, animatedStyle, style];
   const View = tmp3(tmp4[21]).View;
   const tmp16 = closure_12;
   if (typing) {
-    let obj3 = { collapsable: false, entering, exiting, style: items1, children: closure_11(require("Ellipsis"), obj4) };
-    const rect = { position: "absolute", left: num2, top: num2 };
-    items1 = [rect];
+    let obj3 = { collapsable: false, entering, exiting, style: rect, children: closure_11(require("Ellipsis"), obj4) };
+    rect = { position: "absolute", left: num2, top: num2 };
     const View2 = tmp3(tmp4[21]).View;
     obj4 = { style: null, dotStyle: null, disableScale: true };
     ({ ellipsis: obj9.style, ellipsisDot: obj9.dotStyle } = tmp2);
     typing = closure_11(View2, obj3);
   }
-  items2 = [typing, ];
+  items1 = [typing, ];
   const obj5 = { style: animatedStyle1, children: closure_11(tmp22, obj6) };
   obj6 = { style: tmp.statusIcon, source: tmp3Result, resizeMode: "stretch" };
   const View3 = tmp3(tmp4[21]).View;
@@ -573,7 +571,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     tmp3Result = tmp3(tmp4[15]);
   }
-  items2[1] = closure_11(View3, obj5);
+  items1[1] = closure_11(View3, obj5);
   return tmp16(View, obj2);
 });
 let size = size_mod;

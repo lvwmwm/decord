@@ -1,12 +1,12 @@
-// Module ID: 13778
-// Function ID: 13779
+// Module ID: 14000
+// Function ID: 14001
 // Name: GuildBadgeMoneyBag
-// Dependencies: [109, 19, 21, 558, 576, 13748, 8169, 2]
+// Dependencies: [109, 19, 21, 558, 576, 13970, 7550, 2]
 
-// Module 13778 (GuildBadgeMoneyBag)
+// Module 14000 (GuildBadgeMoneyBag)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 8169 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 13748 */;
+import inlineStyles from "inlineStyles" /* 7550 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 13970 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -20,7 +20,7 @@ let closure_2 = ["width", "height", "primaryTintColor"];
 const primaryBaseColors = ["#FFB84B", "#FFE361"];
 const primaryTintLuminances = [0.5, 0.77];
 let items = [{ base: 5, tint: 1 }, { base: 3, tint: 1 }];
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgeMoneyBag(arg0) {
   let height;
   let primaryTintColor;
   let tmp11;
@@ -325,7 +325,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const obj13 = { width: num6, height: num7, viewBox: "0 0 16 16", fill: "none", children: items };
-  const Svg = tmp(8169).Svg;
+  const Svg = tmp(7550).Svg;
   const merged = Object.assign(tmp5);
   items = [tmp16, tmp19, tmp22, tmp26, tmp27, tmp28, tmp25, tmp34, tmp35, tmp39, tmp40, tmp44, tmp47, tmp48, tmp49, tmp50, tmp51, tmp52, tmp53, tmp62, tmp63, tmp64, tmp65, tmp71, tmp72, tmp73, tmp74, tmp75, tmp76, tmp77, tmp86, tmp89, tmp90, tmp91, tmp92];
   const tmp100 = hasOwnProperty(Svg, obj13);
@@ -344,7 +344,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[60] = num6;
   cResult[61] = tmp100;
   tmp98 = tmp100;
-}) : ((width) => {
+}) : (function GuildBadgeMoneyBag(width) {
   let num = width.width;
   if (num === undefined) {
     num = 24;

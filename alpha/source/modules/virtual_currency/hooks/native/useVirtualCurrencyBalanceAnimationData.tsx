@@ -1,25 +1,25 @@
-// Module ID: 11015
-// Function ID: 11016
+// Module ID: 11190
+// Function ID: 11191
 // Name: useVirtualCurrencyBalanceAnimationData
-// Dependencies: [32, 19, 4885, 558, 576, 504, 7957, 2]
+// Dependencies: [32, 19, 5079, 558, 576, 504, 5928, 2]
 
-// Module 11015 (useVirtualCurrencyBalanceAnimationData)
+// Module 11190 (useVirtualCurrencyBalanceAnimationData)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let initialRenderedBalance, num, tmp3;
+let num, tmp3;
 
 let react = react_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialRenderedBalance) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVirtualCurrencyBalanceAnimationData(initialRenderedBalance) {
   let closure_11;
   let closure_4;
   let closure_7;
   let first;
   let stateFromStores;
-  let tmp19;
+  let tmp18;
   let tmp4;
   let tmp5;
   let useReducedMotion;
@@ -56,53 +56,50 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialRenderedBalan
   let closure_10 = balance(tmp2[6])(balance);
   balance(tmp2[6])(balance);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor() {
+    const fn2 = function y() {
 
-      }
-    }
-    cResult[2] = S;
-  } else {
-    class S {
-      constructor() {
-
-      }
-    }
+    };
+    cResult[2] = fn2;
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
+    class M {
       constructor() {
-
+        useReducedMotion.current = null;
+        closure_4(null);
       }
     }
-    cResult[3] = tmp17;
+    cResult[3] = M;
   } else {
-    class S {
+    class M {
       constructor() {
-
+        useReducedMotion.current = null;
+        closure_4(null);
       }
     }
   }
   if (cResult[4] !== first) {
-    class S {
+    class M {
       constructor() {
-
+        useReducedMotion.current = null;
+        closure_4(null);
       }
     }
     cResult[4] = first;
-    cResult[5] = tmp19;
+    cResult[5] = tmp18;
   } else {
-    class S {
+    class M {
       constructor() {
-
+        useReducedMotion.current = null;
+        closure_4(null);
       }
     }
   }
-  tmp19 = tmp18;
+  tmp18 = tmp17;
   if (cResult[6] === balance) {
-    class S {
+    class M {
       constructor() {
-
+        useReducedMotion.current = null;
+        closure_4(null);
       }
     }
   }
@@ -131,15 +128,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialRenderedBalan
       return;
     }
   }
-  const items1 = [initialRenderedBalance, balance, first1, stateFromStores, tmp18];
+  const items1 = [initialRenderedBalance, balance, first1, stateFromStores, tmp17];
   cResult[6] = balance;
   cResult[7] = first1;
   cResult[8] = initialRenderedBalance;
-  cResult[9] = tmp18;
+  cResult[9] = tmp17;
   cResult[10] = stateFromStores;
   cResult[11] = O;
   cResult[12] = items1;
-}) : ((initialRenderedBalance) => {
+}) : (function useVirtualCurrencyBalanceAnimationData(initialRenderedBalance) {
   let c7;
   let closure_4;
   let tmp6;

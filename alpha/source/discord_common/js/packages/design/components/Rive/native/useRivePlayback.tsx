@@ -1,9 +1,9 @@
-// Module ID: 4662
-// Function ID: 4663
+// Module ID: 4854
+// Function ID: 4855
 // Name: useRivePlayback
 // Dependencies: [19, 17, 558, 576, 2]
 
-// Module 4662 (useRivePlayback)
+// Module 4854 (useRivePlayback)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 let _require, closure_12, ref;
 
 const AppState = react_native.AppState;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, isReady) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRivePlayback(arg0, isReady) {
   let ref2;
   let tmp2;
   let tmp3;
@@ -216,7 +216,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, isReady) => {
       cResult[13] = arg0;
       cResult[14] = N;
     }
-    class P {
+    class M {
       constructor() {
         const obj = closure_0;
         if (closure_0 != null) {
@@ -228,10 +228,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, isReady) => {
     }
     cResult[8] = tmp7;
     cResult[9] = arg0;
-    cResult[10] = P;
-    tmp8 = P;
+    cResult[10] = M;
+    tmp8 = M;
   }
-  class I {
+  class C {
     constructor() {
       closure_10();
       const tmp2 = shouldShortLoopForReducedMotion;
@@ -243,9 +243,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, isReady) => {
   }
   cResult[5] = tmp6;
   cResult[6] = shouldShortLoopForReducedMotion;
-  cResult[7] = I;
-  tmp7 = I;
-}) : ((arg0, isReady) => {
+  cResult[7] = C;
+  tmp7 = C;
+}) : (function useRivePlayback(arg0, isReady) {
   let closure_0 = arg0;
   isReady = isReady.isReady;
   const appStatePlaybackEnabled = isReady.appStatePlaybackEnabled;

@@ -1,23 +1,23 @@
-// Module ID: 6007
-// Function ID: 6008
+// Module ID: 6193
+// Function ID: 6194
 // Name: TableRowArrow
-// Dependencies: [19, 21, 4896, 587, 558, 576, 5603, 6008, 2]
+// Dependencies: [19, 21, 5090, 587, 558, 576, 5377, 6194, 2]
 
-// Module 6007 (TableRowArrow)
+// Module 6193 (TableRowArrow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import IconDefault from "Icon" /* 5603 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6008 */;
+import IconDefault from "Icon" /* 5377 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6194 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
 let size;
 let tmp;
-const Icon = tmp(5603);
+const Icon = tmp(5377);
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
 let obj = { icon: size, iconColor: obj2 };
@@ -25,7 +25,7 @@ size = { width: nativeDefault.modules.mobile.TABLE_ROW_ARROW_WIDTH, height: 24, 
 createStyles = createStyles.createStyles;
 obj2 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 let closure_4 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRowArrow() {
   const obj = react2;
   const cResult = obj.c(3);
   const tmp4 = closure_4();
@@ -42,7 +42,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = tmp4.iconColor.color;
   cResult[2] = tmp7;
   tmp5 = tmp7;
-}) : (() => {
+}) : (function TableRowArrow() {
   const tmp = closure_4();
   IconDefault;
   return <tmp2 style={tmp.icon} color={tmp.iconColor.color} source={AssetRegistryDefault} size={Icon.IconSizes.CUSTOM} />;

@@ -1,14 +1,14 @@
-// Module ID: 15809
-// Function ID: 15810
+// Module ID: 16068
+// Function ID: 16069
 // Name: DisableStreamPreviewsSetting
-// Dependencies: [7645, 558, 2028, 11142, 1126, 2]
+// Dependencies: [7966, 558, 2040, 11262, 1126, 2]
 
-// Module 15809 (DisableStreamPreviewsSetting)
+// Module 16068 (DisableStreamPreviewsSetting)
 import intl2 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -24,7 +24,7 @@ const obj = {
     return intl.string(intl2.t.jTNPHM);
   },
   parent: MobileUserSettings.VOICE,
-  useValue: () => {
+  useValue() {
     const DisableStreamPreviews = UserSettings.DisableStreamPreviews;
     let flag = DisableStreamPreviews.useSetting();
     if (flag == null) {

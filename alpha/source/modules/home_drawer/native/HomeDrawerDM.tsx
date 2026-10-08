@@ -1,24 +1,24 @@
-// Module ID: 16324
-// Function ID: 16325
+// Module ID: 16584
+// Function ID: 16585
 // Name: HomeDrawerDM
-// Dependencies: [19, 17, 2055, 4525, 5077, 1377, 1096, 21, 4896, 558, 576, 504, 5049, 16325, 15152, 13148, 9826, 4892, 12503, 7525, 16286, 4748, 4745, 2]
+// Dependencies: [19, 17, 2067, 4717, 5971, 1389, 1096, 21, 5090, 558, 576, 504, 5417, 16585, 15414, 12677, 10325, 5086, 12599, 9248, 16546, 4942, 4939, 2]
 
-// Module 16324 (HomeDrawerDM)
+// Module 16584 (HomeDrawerDM)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1096 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useChannelName from "useChannelName" /* 5049 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7525 */;
-import ChannelRowPreview2 from "ChannelRowPreview" /* 12503 */;
-import useMessagePreviewsDefault from "useMessagePreviews" /* 15152 */;
+import ChannelRecord from "ChannelRecord" /* 2067 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import useChannelName from "useChannelName" /* 5417 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9248 */;
+import ChannelRowPreview2 from "ChannelRowPreview" /* 12599 */;
+import useMessagePreviewsDefault from "useMessagePreviews" /* 15414 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
-import UserStore from "UserStore" /* 1377 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,14 +27,14 @@ let dependencyMap, importDefault;
 let c10;
 let tmp;
 let unpackModuleId;
-const HomeDrawerExperiment = tmp(4748);
+const HomeDrawerExperiment = tmp(4942);
 const View = react_native.View;
 const isMultiUserDM = ChannelRecord.isMultiUserDM;
 const NOOP = Constants.NOOP;
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 let closure_12 = createStyles.createStyles({ title: { flexDirection: "row", alignItems: "center", gap: 4 }, titleText: { flexShrink: 1 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channel) {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDrawerDMExpandedChildren(channel) {
   let first;
   let items3;
   let tmp7;
@@ -53,7 +53,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channe
     first = cResult[0];
   }
   if (cResult[1] !== channel) {
-    const fn = function v() {
+    const fn = function _() {
       return UserStore.getUser(channel.getRecipientId());
     };
     cResult[1] = channel;
@@ -80,7 +80,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channe
     }
     const tmpResult4 = tmp(504);
     const stateFromStores1 = tmpResult4.useStateFromStores(tmp9, tmp12);
-    const tmpResult5 = tmp(16325);
+    const tmpResult5 = tmp(16585);
     const unread = tmpResult5.useBaseChannelUnreadBadgeState(channel, false).unread;
     if (cResult[7] !== unread) {
       const obj2 = { unread };
@@ -90,7 +90,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channe
     } else {
       tmp14 = cResult[8];
     }
-    const tmp16 = stateFromStores(15152)(channel, tmp14);
+    const tmp16 = stateFromStores(15414)(channel, tmp14);
     const _Symbol = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
       const items2 = [UserGuildSettingsStore];
@@ -162,9 +162,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channe
           isTemporary = tmp22.isTemporary;
         }
         if (isTemporary) {
-          BellSlashIcon = tmp(13148).BellZIcon;
+          BellSlashIcon = tmp(12677).BellZIcon;
         } else {
-          BellSlashIcon = tmp(9826).BellSlashIcon;
+          BellSlashIcon = tmp(10325).BellSlashIcon;
         }
         tmp32 = BellSlashIcon;
       } else {
@@ -201,12 +201,12 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channe
                   tmp44 = tmp45;
                 }
               }
-              const obj5 = { channel, message: tmp16, variant: "text-xs/medium", color: "text-strong", layout: tmp(7525).ChannelListLayoutTypes.COZY, muted: tmp22.isMuted };
-              const ChannelRowPreview = tmp(12503).ChannelRowPreview;
+              const obj5 = { channel, message: tmp16, variant: "text-xs/medium", color: "text-strong", layout: tmp(9248).ChannelListLayoutTypes.COZY, muted: tmp22.isMuted };
+              const ChannelRowPreview = tmp(12599).ChannelRowPreview;
               const tmp47 = closure_10(ChannelRowPreview, obj5);
               cResult[28] = channel;
               cResult[29] = tmp16;
-              class I {
+              class B {
                 constructor() {
                   return UserGuildSettingsStore.getChannelMuteConfig(channel.guild_id, channel.id);
                 }
@@ -223,10 +223,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channe
               return tmp48;
             }
             const obj6 = { title: tmp40, subtitle: tmp44 };
-            const tmp50 = closure_10(tmp(16286).HomeDrawerSharedItem, obj6);
+            const tmp50 = closure_10(tmp(16546).HomeDrawerSharedItem, obj6);
             cResult[32] = tmp44;
             cResult[33] = tmp40;
-            class I {
+            class B {
               constructor() {
                 return UserGuildSettingsStore.getChannelMuteConfig(channel.guild_id, channel.id);
               }
@@ -238,7 +238,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channe
         const obj7 = { style: tmp4.title, children: items3 };
         items3 = [tmp34, tmp37];
         const tmp43 = closure_11(View, obj7);
-        class I {
+        class B {
           constructor() {
             return UserGuildSettingsStore.getChannelMuteConfig(channel.guild_id, channel.id);
           }
@@ -248,7 +248,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channe
         cResult[27] = tmp43;
         tmp40 = tmp43;
       }
-      class I {
+      class B {
         constructor() {
           return UserGuildSettingsStore.getChannelMuteConfig(channel.guild_id, channel.id);
         }
@@ -258,37 +258,35 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channe
       cResult[21] = tmp36;
       tmp34 = tmp36;
     }
-    class I {
+    class B {
       constructor() {
         return UserGuildSettingsStore.getChannelMuteConfig(channel.guild_id, channel.id);
       }
     }
     cResult[10] = channel.guild_id;
     cResult[11] = channel.id;
-    cResult[12] = I;
-    tmp19 = I;
+    cResult[12] = B;
+    tmp19 = B;
   }
-  class M {
-    constructor() {
-      let tmp2 = null;
-      if (null != channel) {
-        let channelName;
-        if (isMultiUserDM(channel.type)) {
-          const obj = useChannelName;
-          channelName = obj.computeChannelName(tmp, UserStore, RelationshipStore);
-        } else {
-          channelName = null;
-        }
-        tmp2 = channelName;
+  const fn2 = function f() {
+    let tmp2 = null;
+    if (null != channel) {
+      let channelName;
+      if (isMultiUserDM(channel.type)) {
+        const obj = useChannelName;
+        channelName = obj.computeChannelName(tmp, UserStore, RelationshipStore);
+      } else {
+        channelName = null;
       }
-      return tmp2;
+      tmp2 = channelName;
     }
-  }
+    return tmp2;
+  };
   cResult[4] = channel;
   cResult[5] = stateFromStores;
-  cResult[6] = M;
-  tmp12 = M;
-}) : ((channel) => {
+  cResult[6] = fn2;
+  tmp12 = fn2;
+}) : (function HomeDrawerDMExpandedChildren(channel) {
   let closure_1;
   let closure_2;
   channel = channel.channel;
@@ -314,7 +312,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channe
     }
     return tmp2;
   });
-  const obj3 = channel(16325);
+  const obj3 = channel(16585);
   let tmp3 = useMessagePreviewsDefault(channel, { unread: obj3.useBaseChannelUnreadBadgeState(channel, false).unread });
   let closure_4 = tmp3;
   const items2 = [UserGuildSettingsStore];
@@ -359,9 +357,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channe
         isTemporary = tmp.isTemporary;
       }
       if (isTemporary) {
-        BellSlashIcon = tmp5(13148).BellZIcon;
+        BellSlashIcon = tmp5(12677).BellZIcon;
       } else {
-        BellSlashIcon = tmp5(9826).BellSlashIcon;
+        BellSlashIcon = tmp5(10325).BellSlashIcon;
       }
       tmp3 = BellSlashIcon;
     } else {
@@ -383,10 +381,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channe
     }
     return tmp2;
   }, items5);
-  return closure_10(channel(16286).HomeDrawerSharedItem, { title, subtitle });
+  return closure_10(channel(16546).HomeDrawerSharedItem, { title, subtitle });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDrawerDMExpandedChildrenWrapper(channel) {
   let first;
   const obj = react2;
   const cResult = obj.c(3);
@@ -417,7 +415,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
   }
   return tmp6;
-}) : ((channel) => {
+}) : (function HomeDrawerDMExpandedChildrenWrapper(channel) {
   channel = channel.channel;
   const MobileHomeDrawerExperiment = HomeDrawerExperiment.MobileHomeDrawerExperiment;
   let tmp2 = null;

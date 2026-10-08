@@ -1,18 +1,18 @@
-// Module ID: 12818
-// Function ID: 12819
+// Module ID: 12965
+// Function ID: 12966
 // Name: useShopThisLookMarketing
-// Dependencies: [32, 558, 576, 7897, 2036, 6901, 2]
+// Dependencies: [32, 558, 576, 8317, 2048, 7090, 2]
 
-// Module 12818 (useShopThisLookMarketing)
+// Module 12965 (useShopThisLookMarketing)
 import react from "react" /* 576 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6901 */;
-import useMaybeFetchEquippedCollectibleProducts from "useMaybeFetchEquippedCollectibleProducts" /* 7897 */;
+import dismissible_content from "dismissible_content" /* 2048 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7090 */;
+import useMaybeFetchEquippedCollectibleProducts from "useMaybeFetchEquippedCollectibleProducts" /* 8317 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShopThisLookMarketing(arg0, arg1, arg2) {
   let tmp5;
   const obj = react;
   const cResult = obj.c(6);
@@ -49,7 +49,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
     tmp5 = items1;
   }
   items1 = [];
-}) : ((arg0, arg1, arg2) => {
+}) : (function useShopThisLookMarketing(arg0, arg1, arg2) {
   const obj = useMaybeFetchEquippedCollectibleProducts;
   const tmp3 = obj.useEquippedCollectibleSkuIds(arg0, arg1).length > 0;
   useSelectedDismissibleContent;

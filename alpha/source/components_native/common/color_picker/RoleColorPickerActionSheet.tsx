@@ -1,23 +1,23 @@
-// Module ID: 16271
-// Function ID: 16272
+// Module ID: 16531
+// Function ID: 16532
 // Name: RoleColorPickerActionSheet
-// Dependencies: [32, 19, 17, 1085, 21, 4896, 587, 558, 576, 14439, 7556, 4860, 14437, 1126, 6651, 5601, 15187, 6652, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5090, 587, 558, 576, 14664, 9267, 5054, 14662, 1126, 6828, 5375, 15449, 6829, 2]
 
-// Module 16271 (RoleColorPickerActionSheet)
+// Module 16531 (RoleColorPickerActionSheet)
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14437 */;
-import ColorBlockDefault from "ColorBlock" /* 14439 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14662 */;
+import ColorBlockDefault from "ColorBlock" /* 14664 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, color;
+let BottomSheet;
 
 let ROLE_COLORS;
 let c9;
@@ -38,7 +38,7 @@ obj2 = { paddingVertical: nativeDefault.space.PX_16, flexGrow: 1, justifyContent
 createStyles = createStyles.createStyles;
 obj3 = { flexGrow: 1, flexDirection: "row", flexWrap: "wrap", justifyContent: "center", maxWidth: 340, marginBottom: nativeDefault.space.PX_16 };
 let closure_11 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleColorPickerActionSheet(color) {
   let Button;
   let closure_4;
   let colorBlock;
@@ -83,23 +83,23 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      class E {
+      class A {
         constructor(arg0) {
           closure_4(arg0);
         }
       }
-      cResult[5] = E;
-      tmp13 = E;
+      cResult[5] = A;
+      tmp13 = A;
     } else {
-      class E {
+      class A {
         constructor(arg0) {
           closure_4(arg0);
         }
       }
     }
-    E = tmp13;
+    A = tmp13;
     if (cResult[6] !== defaultColor) {
-      class E {
+      class A {
         constructor(arg0) {
           closure_4(arg0);
         }
@@ -107,7 +107,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
       cResult[6] = defaultColor;
       cResult[7] = tmp15;
     } else {
-      class E {
+      class A {
         constructor(arg0) {
           closure_4(arg0);
         }
@@ -115,14 +115,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
     }
     if (cResult[8] === color) {
       let tmp17;
-      class E {
+      class A {
         constructor(arg0) {
           closure_4(arg0);
         }
       }
       const _Symbol2 = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        class E {
+        class A {
           constructor(arg0) {
             closure_4(arg0);
           }
@@ -131,14 +131,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
         cResult[11] = stringResult;
         tmp17 = stringResult;
       } else {
-        class E {
+        class A {
           constructor(arg0) {
             closure_4(arg0);
           }
         }
       }
       if (cResult[12] === confirmLabel) {
-        class E {
+        class A {
           constructor(arg0) {
             closure_4(arg0);
           }
@@ -146,14 +146,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
         if (cResult[15] === colorBlock) {
           let tmp28;
           let tmp30;
-          class E {
+          class A {
             constructor(arg0) {
               closure_4(arg0);
             }
           }
           const _Symbol3 = Symbol;
           if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-            class E {
+            class A {
               constructor(arg0) {
                 closure_4(arg0);
               }
@@ -162,7 +162,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
             cResult[18] = stringResult1;
             tmp28 = stringResult1;
           } else {
-            class E {
+            class A {
               constructor(arg0) {
                 closure_4(arg0);
               }
@@ -170,7 +170,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
           }
           const _Symbol4 = Symbol;
           if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-            class E {
+            class A {
               constructor(arg0) {
                 closure_4(arg0);
               }
@@ -179,20 +179,20 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
             cResult[19] = tmp31;
             tmp30 = tmp31;
           } else {
-            class E {
+            class A {
               constructor(arg0) {
                 closure_4(arg0);
               }
             }
           }
           if (cResult[20] === colorBlock) {
-            class E {
+            class A {
               constructor(arg0) {
                 closure_4(arg0);
               }
             }
             if (cResult[23] === tmp4.colorWrap) {
-              class E {
+              class A {
                 constructor(arg0) {
                   closure_4(arg0);
                 }
@@ -200,7 +200,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
             }
             items = [tmp25, tmp32];
             const obj3 = { style: tmp24, children: null };
-            class A {
+            class T {
               constructor() {
                 const obj = { color, onSelect };
                 showCustomColorPickerActionSheetDefault(obj);
@@ -212,7 +212,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
             cResult[26] = closure_9(colorBlock, obj3);
             const tmp38 = closure_9(colorBlock, obj3);
           }
-          class A {
+          class T {
             constructor() {
               const obj = { color, onSelect };
               showCustomColorPickerActionSheetDefault(obj);
@@ -221,16 +221,16 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
           const obj4 = { style: colorBlock, onPress: tmp16, accessibilityLabel: tmp28, accessibilityRole: "button", children: tmp30 };
           cResult[20] = colorBlock;
           cResult[21] = tmp16;
-          cResult[22] = closure_8(E, obj4);
-          const tmp34 = closure_8(E, obj4);
+          cResult[22] = closure_8(A, obj4);
+          const tmp34 = closure_8(A, obj4);
         }
         const mapped = items.map((color) => {
-          const obj = { color, style: colorBlock, selected: color === first, onSelect: E };
+          const obj = { color, style: colorBlock, selected: color === first, onSelect: A };
           return metroImportAll(ColorBlockDefault, obj, color);
         });
         cResult[15] = colorBlock;
         cResult[16] = first;
-        class A {
+        class T {
           constructor() {
             const obj = { color, onSelect };
             showCustomColorPickerActionSheetDefault(obj);
@@ -239,7 +239,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
       }
       const obj6 = { title: tmp17, trailing: closure_8(Button, tmp21) };
       const BottomSheetTitleHeader = tmp(tmp2[14]).BottomSheetTitleHeader;
-      class A {
+      class T {
         constructor() {
           const obj = { color, onSelect };
           showCustomColorPickerActionSheetDefault(obj);
@@ -247,7 +247,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
       }
       Button = tmp(tmp2[15]).Button;
       if (null != confirmLabel) {
-        class E {
+        class A {
           constructor(arg0) {
             closure_4(arg0);
           }
@@ -255,7 +255,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
         tmp22[2] = confirmLabel;
         tmp22[3] = tmp11;
       } else {
-        class E {
+        class A {
           constructor(arg0) {
             closure_4(arg0);
           }
@@ -269,7 +269,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
       cResult[14] = closure_8(BottomSheetTitleHeader, obj6);
       const tmp20Result = closure_8(BottomSheetTitleHeader, obj6);
     }
-    class A {
+    class T {
       constructor() {
         const obj = { color, onSelect };
         showCustomColorPickerActionSheetDefault(obj);
@@ -277,7 +277,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
     }
     cResult[8] = color;
     cResult[9] = onSelect;
-    cResult[10] = A;
+    cResult[10] = T;
   }
   class O {
     constructor() {
@@ -290,7 +290,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
   cResult[3] = onSelect;
   cResult[4] = O;
   tmp11 = O;
-}) : ((color) => {
+}) : (function RoleColorPickerActionSheet(color) {
   let Button;
   let confirmLabel;
   let defaultColor;
@@ -375,7 +375,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
   const obj10 = {
     variant: "secondary",
     text: intl4.string(color(defaultColor[13]).t.yBZMsQ),
-    onPress() {
+    onPress: function handleReset() {
       closure_5(defaultColor);
     }
   };

@@ -1,18 +1,18 @@
-// Module ID: 14950
-// Function ID: 14951
+// Module ID: 15212
+// Function ID: 15213
 // Name: QuestProgressIndicator
-// Dependencies: [19, 17, 4885, 21, 4618, 8169, 4896, 587, 558, 576, 504, 4897, 5916, 1126, 5927, 14951, 10963, 2]
+// Dependencies: [19, 17, 5079, 21, 4810, 7550, 5090, 587, 558, 576, 504, 5091, 6189, 1126, 6110, 15213, 11156, 2]
 
-// Module 14950 (QuestProgressIndicator)
+// Module 15212 (QuestProgressIndicator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import timing from "timing" /* 4897 */;
-import inlineStyles from "inlineStyles" /* 8169 */;
+import timing from "timing" /* 5091 */;
+import inlineStyles from "inlineStyles" /* 7550 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import createStyles from "createStyles" /* 4896 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ const __initData3 = { code: "function QuestProgressIndicatorTsx3(){const{underla
 const __initData4 = { code: "function QuestProgressIndicatorTsx4(){const{glowOpacity}=this.__closure;return{shadowOpacity:glowOpacity.get()};}" };
 const __initData5 = { code: "function QuestProgressIndicatorTsx5(){const{circumference,animatedProgress}=this.__closure;return{strokeDashoffset:circumference-circumference*animatedProgress.get()};}" };
 const __initData6 = { code: "function QuestProgressIndicatorTsx6(){const{underlayOpacity,styles}=this.__closure;return{opacity:underlayOpacity.get(),...styles.opacityMask};}" };
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function QuestProgressIndicator(arg0) {
   let LinearGradient;
   let accessibilityLabel;
   let closure_1;
@@ -769,7 +769,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[8] = items7;
   tmp29 = items7;
   tmp28 = fn3;
-}) : ((loading) => {
+}) : (function QuestProgressIndicator(loading) {
   let LinearGradient;
   let PressableOpacity;
   let accessibilityLabel;

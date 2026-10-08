@@ -1,40 +1,40 @@
-// Module ID: 2037
-// Function ID: 2038
+// Module ID: 2049
+// Function ID: 2050
 // Name: DismissibleContentUtils
-// Dependencies: [32, 5, 1231, 2038, 2039, 2042, 2048, 1085, 2041, 2049, 11, 2033, 4726, 558, 576, 504, 2036, 584, 10060, 1252, 2040, 13824, 2]
+// Dependencies: [32, 5, 1243, 2050, 2051, 2055, 2060, 1085, 2054, 2061, 11, 2045, 4920, 558, 576, 504, 2048, 584, 10305, 1264, 2052, 14128, 2]
 // Exports: UNSAFE_addGuildDismissedContent, UNSAFE_addSnowflakeBoundGuildDismissedContent, UNSAFE_addTimeRecurringGuildDismissedContent, UNSAFE_isSnowflakeBoundGuildDismissibleContentDismissed, UNSAFE_isTimeRecurringGuildDismissibleContentDismissed, UNSAFE_removeGuildDismissedContent, UNSAFE_removeSnowflakeBoundGuildDismissedContent, UNSAFE_removeTimeRecurringGuildDismissedContent, getDismissedRecurringDismissibleContentState, getGuildNextNumTimesDismissed, isDismissibleContentBlockedByOverlay, isTimeRecurringDismissibleContentDismissed, isTimeRecurringSnowflakeBoundDismissibleContentDismissed, isVersionedDismissibleContentDismissed, markLatestVersionDismissibleContentAsDismissed, markSnowflakeBoundDismissibleContentAsDismissed, markTimeRecurringDismissibleContentAsDismissed, requestMarkDismissibleContentAsShown
 
-// Module 2037 (DismissibleContentUtils)
+// Module 2049 (DismissibleContentUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2033 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import DCFEventStore from "DCFEventStore" /* 2038 */;
-import DismissibleContentTypes from "DismissibleContentTypes" /* 2041 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import VersionedDismissibleContentUtils from "VersionedDismissibleContentUtils" /* 2049 */;
-import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 4726 */;
-import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 10060 */;
-import trackDismissibleContentActioned from "trackDismissibleContentActioned" /* 13824 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2045 */;
+import dismissible_content from "dismissible_content" /* 2048 */;
+import DCFEventStore from "DCFEventStore" /* 2050 */;
+import DismissibleContentTypes from "DismissibleContentTypes" /* 2054 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import VersionedDismissibleContentUtils from "VersionedDismissibleContentUtils" /* 2061 */;
+import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 4920 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 10305 */;
+import trackDismissibleContentActioned from "trackDismissibleContentActioned" /* 14128 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 2039 */;
-import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2042 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 2051 */;
+import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2055 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c2, c3, c4, importDefault;
+let _require, c2, c3, c4, importDefault, version;
 
 let c10;
 let c9;
 let metroImportAll;
 let tmp7;
 let unpackModuleId;
-const DismissibleContentFatigueConfig = tmp7(2040);
+const DismissibleContentFatigueConfig = tmp7(2052);
 function addVersionedDismissedContent(GUILD_POWERUP_NOTIFICATION, versionedDismissibleContentCurrentVersion, nextNumTimesDismissed) {
   let str;
   obj = { lastDismissedVersion: versionedDismissibleContentCurrentVersion, lastDismissedAtMs: str.toString(), lastDismissedObjectId: "0", numTimesDismissed: nextNumTimesDismissed };
@@ -339,7 +339,6 @@ function trackDismissibleContentShown(WISHLIST_MOBILE_NUX_ACTION_SHEET, groupNam
   let snowflakeId;
   let tmp3;
   let tmp4;
-  let version;
   let tmp = arg2;
   if (arg2 === undefined) {
     tmp = null;
@@ -383,7 +382,6 @@ function trackDismissibleContentDismissed(arg0, dismissAction) {
   let guildId1;
   let numTimesDismissed;
   let snowflakeId;
-  let version;
   dismissAction = undefined;
   if (dismissAction != null) {
     dismissAction = dismissAction.dismissAction;
@@ -476,7 +474,7 @@ const DCFEventTypes = DCFEventStore.DCFEventTypes;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const AnalyticEvents = Constants.AnalyticEvents;
 let c14 = 2592000000;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSingleUseGuildDismissibleContentDismissed(arg0, arg1) {
   let closure_0;
   let first;
   _require = arg0;
@@ -518,7 +516,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[2] = arg1;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useIsSingleUseGuildDismissibleContentDismissed(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;

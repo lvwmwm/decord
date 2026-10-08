@@ -1,20 +1,18 @@
-// Module ID: 9480
-// Function ID: 9481
+// Module ID: 8633
+// Function ID: 8634
 // Name: GuildEventsListView
-// Dependencies: [19, 17, 21, 587, 558, 576, 1618, 6119, 9481, 9482, 11, 2]
+// Dependencies: [19, 17, 21, 587, 558, 576, 1630, 6298, 8634, 8641, 11, 2]
 
-// Module 9480 (GuildEventsListView)
+// Module 8633 (GuildEventsListView)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import GuildEventsNoContentDefault from "GuildEventsNoContent" /* 9481 */;
-import GuildEventCardDefault from "GuildEventCard" /* 9482 */;
+import GuildEventsNoContentDefault from "GuildEventsNoContent" /* 8634 */;
+import GuildEventCardDefault from "GuildEventCard" /* 8641 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let onPressEvent;
 
 let c3;
 let closure_4;
@@ -28,7 +26,7 @@ const styles = { spacer: size, container: obj2 };
 size = { height: nativeDefault.space.PX_16, width: "100%" };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_16 };
 let ReactCompilerGating = ReactCompilerGating_mod;
-const ItemSeparatorComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const ItemSeparatorComponent = ReactCompilerGating.isReactCompilerEnabled() ? (function FormSeparator() {
   let first;
   const obj = react2;
   const cResult = obj.c(1);
@@ -40,13 +38,13 @@ const ItemSeparatorComponent = ReactCompilerGating.isReactCompilerEnabled() ? ((
     first = cResult[0];
   }
   return first;
-}) : (() => {
+}) : (function FormSeparator() {
   let obj;
   obj = { style: obj.spacer };
   return <_false style={obj.spacer} />;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressEvent) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventsListView(onPressEvent) {
   let events;
   let guild;
   let onCloseAction;
@@ -78,11 +76,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressEvent) => {
     let tmp6;
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function u(id) {
+      function extractKey(id) {
         return id.id;
-      };
-      cResult[3] = fn;
-      tmp6 = fn;
+      }
+      cResult[3] = extractKey;
+      tmp6 = extractKey;
     } else {
       tmp6 = cResult[3];
     }
@@ -106,7 +104,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressEvent) => {
           const sum = tmp4(tmp2[3]).space.PX_16 + tmp5;
           if (cResult[11] !== sum) {
             const obj4 = { paddingBottom: sum };
-            class A {
+            class P {
               constructor() {
                 return jsx(GuildEventsNoContentDefault, { onClose: onCloseAction, guild });
               }
@@ -128,7 +126,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressEvent) => {
               }
             }
           }
-          class A {
+          class P {
             constructor() {
               return jsx(GuildEventsNoContentDefault, { onClose: onCloseAction, guild });
             }
@@ -156,7 +154,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressEvent) => {
           cResult[17] = tmp10;
           cResult[18] = tmp15;
         }
-        class A {
+        class P {
           constructor() {
             return jsx(GuildEventsNoContentDefault, { onClose: onCloseAction, guild });
           }
@@ -178,8 +176,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressEvent) => {
           }
         }
         cResult[9] = onCloseAction;
-        cResult[10] = A;
-        tmp8 = A;
+        cResult[10] = P;
+        tmp8 = P;
       }
     }
     class E {
@@ -203,14 +201,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressEvent) => {
     cResult[7] = E;
     tmp7 = E;
   }
-}) : ((lastAckedId) => {
+}) : (function GuildEventsListView(lastAckedId) {
   let events;
   let guild;
   let obj;
   let obj4;
   let onCloseAction;
   let onPress;
-  function keyExtractor(id) {
+  function extractKey(id) {
     return id.id;
   }
   function renderItem(item) {
@@ -246,10 +244,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressEvent) => {
       BottomSheetFlatList = closure_4;
     }
     const tmp5 = jsx;
-    obj = { data: events, style: obj.container, keyExtractor, renderItem, ItemSeparatorComponent, initialNumToRender: 5, ListEmptyComponent, contentContainerStyle: obj4 };
+    obj = { data: events, style: obj.container, keyExtractor: extractKey, renderItem, ItemSeparatorComponent, initialNumToRender: 5, ListEmptyComponent, contentContainerStyle: obj4 };
     let tmp6 = obj;
     obj4 = { paddingBottom: tmp(tmp2[3]).space.PX_16 + tmp3 };
-    return <BottomSheetFlatList data={events} style={obj.container} keyExtractor={keyExtractor} renderItem={renderItem} ItemSeparatorComponent={ItemSeparatorComponent} initialNumToRender={5} ListEmptyComponent={ListEmptyComponent} contentContainerStyle={obj4} />;
+    return <BottomSheetFlatList data={events} style={obj.container} keyExtractor={extractKey} renderItem={renderItem} ItemSeparatorComponent={ItemSeparatorComponent} initialNumToRender={5} ListEmptyComponent={ListEmptyComponent} contentContainerStyle={obj4} />;
   }
 });
 size = size_mod;

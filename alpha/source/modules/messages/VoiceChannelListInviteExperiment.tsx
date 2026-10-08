@@ -1,12 +1,12 @@
-// Module ID: 10034
-// Function ID: 10035
+// Module ID: 9564
+// Function ID: 9565
 // Name: VoiceChannelListInviteExperiment
-// Dependencies: [4780, 558, 576, 2]
+// Dependencies: [4974, 558, 576, 2]
 // Exports: getVoiceChannelListInviteExperiment
 
-// Module 10034 (VoiceChannelListInviteExperiment)
+// Module 9564 (VoiceChannelListInviteExperiment)
 import react from "react" /* 576 */;
-import createExperiment from "module_4780" /* 4780 */;
+import createExperiment from "module_4974" /* 4974 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ let items;
 let obj = { kind: "guild", id: "2026-05_voice_channel_list_invite_embed", label: "Voice Channel List Invite Embed", defaultConfig: { enabled: false }, treatments: items };
 items = [{ id: 1, label: "Enable channel-list-style voice invite embed", config: { enabled: true } }];
 let closure_2 = createExperiment.createExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceChannelListInviteExperiment(arg0) {
   let _location;
   let guildId;
   const obj = react;
@@ -32,7 +32,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = _location;
   cResult[2] = obj2;
   tmp2 = obj2;
-}) : ((guildId) => {
+}) : (function useVoiceChannelListInviteExperiment(guildId) {
   const obj = { guildId: guildId.guildId, location: guildId.location };
   return closure_2.useExperiment(obj);
 });

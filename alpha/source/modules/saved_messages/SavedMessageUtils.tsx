@@ -1,17 +1,17 @@
-// Module ID: 11354
-// Function ID: 11355
+// Module ID: 12668
+// Function ID: 12669
 // Name: SavedMessageUtils
-// Dependencies: [5, 19, 2055, 2051, 1085, 1126, 4467, 558, 576, 504, 4909, 6760, 2]
+// Dependencies: [5, 19, 2067, 2063, 1085, 1126, 4659, 558, 576, 504, 7001, 6936, 2]
 // Exports: savedMessageJumpToMessage, useDueInString
 
-// Module 11354 (SavedMessageUtils)
+// Module 12668 (SavedMessageUtils)
 import intl2 from "intl" /* 1126 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import _modDef4467 from "module_4467" /* 4467 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4909 */;
+import ChannelRecord from "ChannelRecord" /* 2067 */;
+import _modDef4659 from "module_4659" /* 4659 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7001 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -134,7 +134,7 @@ let obj = function _savedMessageJumpToMessage() {
 const UnknownChannelRecord = ChannelRecord.UnknownChannelRecord;
 ({ ChannelTypes: metroImportDefault, Routes: metroImportAll } = Constants);
 obj = { LONG: 0, [0]: "LONG", SHORT: 1, [1]: "SHORT" };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(saveData) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSavedMessageChannel(saveData) {
   let first;
   let intl;
   let tmp6;
@@ -182,7 +182,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(saveData) 
     }
   }
   return stateFromStores;
-}) : ((arg0) => {
+}) : (function useSavedMessageChannel(arg0) {
   let closure_0;
   _require = arg0;
   obj = require("get initialized");
@@ -243,8 +243,8 @@ export const useDueInString = function useDueInString(arg0) {
     const intl = tmp(1126).intl;
     formatToPlainString = intl.formatToPlainString;
     obj2 = { duration: durationResult.humanize() };
-    const duration = _modDef4467.duration;
-    _modDef4467;
+    const duration = _modDef4659.duration;
+    _modDef4659;
     const time = dueAt.getTime();
     durationResult = duration(time - now.getTime(), "millisecond");
     return obj;

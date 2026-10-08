@@ -1,21 +1,21 @@
-// Module ID: 17254
-// Function ID: 17255
+// Module ID: 17535
+// Function ID: 17536
 // Name: useChannelFloatingCTAContent
-// Dependencies: [19, 1999, 4919, 558, 576, 573, 9457, 2036, 2]
+// Dependencies: [19, 2011, 5108, 558, 576, 573, 9108, 2048, 2]
 
-// Module 17254 (useChannelFloatingCTAContent)
-import dismissible_content from "dismissible_content" /* 2036 */;
-import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 9457 */;
+// Module 17535 (useChannelFloatingCTAContent)
+import dismissible_content from "dismissible_content" /* 2048 */;
+import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 9108 */;
 import react from "react" /* 19 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, importDefault;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelFloatingCTAContent(arg0) {
   let anyLocalVideoAutoDisabled;
   let closure_0;
   let first;
@@ -50,14 +50,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj3 = useGameConsoleAccountsDefault();
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [MediaEngineStore];
-    class C {
-      constructor() {
-        return anyLocalVideoAutoDisabled.isAnyLocalVideoAutoDisabled();
-      }
-    }
+    const fn2 = function _() {
+      return anyLocalVideoAutoDisabled.isAnyLocalVideoAutoDisabled();
+    };
     cResult[3] = items1;
-    cResult[4] = C;
-    tmp9 = C;
+    cResult[4] = fn2;
+    tmp9 = fn2;
     tmp8 = items1;
   } else {
     tmp8 = cResult[3];
@@ -76,20 +74,20 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const items2 = [];
   if (stateFromStores1) {
-    items2.push(tmp(2036).DismissibleContent.VOICE_PANEL_BAD_CONNECTION_CTA);
+    items2.push(tmp(2048).DismissibleContent.VOICE_PANEL_BAD_CONNECTION_CTA);
   }
   if (stateFromStores) {
-    items2.push(tmp(2036).DismissibleContent.SOUNDBOARD_MOBILE_FLOATING_CTA);
+    items2.push(tmp(2048).DismissibleContent.SOUNDBOARD_MOBILE_FLOATING_CTA);
   }
   if (obj3.some((twoWayLink) => twoWayLink.twoWayLink)) {
-    items2.push(tmp(2036).DismissibleContent.DONUT_MOBILE_NUX);
+    items2.push(tmp(2048).DismissibleContent.DONUT_MOBILE_NUX);
   }
   cResult[5] = obj3;
   cResult[6] = stateFromStores1;
   cResult[7] = stateFromStores;
   cResult[8] = items2;
   tmp12 = items2;
-}) : ((arg0) => {
+}) : (function useChannelFloatingCTAContent(arg0) {
   let anyLocalVideoAutoDisabled;
   let closure_0;
   let closure_1;

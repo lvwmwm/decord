@@ -1,27 +1,27 @@
-// Module ID: 12035
-// Function ID: 12036
+// Module ID: 12108
+// Function ID: 12109
 // Name: SelectDoubleTapEmojiRow
-// Dependencies: [19, 17, 4885, 6653, 1380, 21, 4896, 1369, 587, 558, 576, 504, 1402, 6632, 5916, 9883, 1484, 4533, 7638, 9879, 7272, 8444, 2]
+// Dependencies: [19, 17, 5079, 6830, 1392, 21, 5090, 1381, 587, 558, 576, 504, 1414, 6809, 6189, 9363, 1496, 4725, 7959, 9359, 7873, 8930, 2]
 
-// Module 12035 (SelectDoubleTapEmojiRow)
+// Module 12108 (SelectDoubleTapEmojiRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import EmojiDefault from "Emoji" /* 6632 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6653 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7272 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 7638 */;
-import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9879 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import EmojiDefault from "Emoji" /* 6809 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6830 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7873 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 7959 */;
+import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9359 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1369 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let dependencyMap, selectedEmoji;
+let dependencyMap;
 
 let c10;
 let c9;
@@ -38,7 +38,7 @@ let obj8;
 let size;
 let size1;
 let unpackModuleId;
-const View = react_native.View;
+let View = react_native.View;
 const ACTION_SHEET_MAX_WIDTH = ActionSheetConstants.ACTION_SHEET_MAX_WIDTH;
 ({ EMOJI_URL_BASE_SIZE: metroImportDefault, EmojiIntention: metroImportAll } = EmojiConstants);
 ({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = Fragment);
@@ -67,7 +67,7 @@ size1 = { height: 12, width: 12, color: nativeDefault.colors.CONTROL_PRIMARY_TEX
 let closure_12 = createStyles(obj);
 let memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
+let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiButton(emoji) {
   let animated;
   let tmp5;
   let tmp6;
@@ -152,7 +152,7 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) =>
                           }
                         }
                         const obj2 = { accessibilityRole: "button", disabled: null == emoji, onPress: tmp10, style: tmp12, children: tmp23 };
-                        const tmp29 = closure_9(emoji(5916).PressableOpacity, obj2);
+                        const tmp29 = closure_9(emoji(6189).PressableOpacity, obj2);
                         cResult[25] = tmp23;
                         cResult[26] = null == emoji;
                         cResult[27] = tmp10;
@@ -172,7 +172,7 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) =>
               }
               const obj5 = { style: null, fastImageStyle: null, textEmojiStyle: null, name: str, src: tmp15 };
               ({ emoji: obj4.style, customEmoji: obj4.fastImageStyle, textEmoji: obj4.textEmojiStyle } = tmp4);
-              const tmp22 = closure_9(onPress(6632), obj5);
+              const tmp22 = closure_9(onPress(6809), obj5);
               cResult[16] = tmp4.customEmoji;
               cResult[17] = tmp4.emoji;
               cResult[18] = tmp4.textEmoji;
@@ -186,8 +186,8 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) =>
         if (null != emoji.id) {
           const obj6 = { id: emoji.id, animated, size };
           animated = !stateFromStores;
-          const getEmojiURL = onPress(1402).getEmojiURL;
-          onPress(1402);
+          const getEmojiURL = onPress(1414).getEmojiURL;
+          onPress(1414);
           if (!stateFromStores) {
             animated = emoji.animated;
           }
@@ -221,7 +221,7 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) =>
   cResult[3] = onPress;
   cResult[4] = fn2;
   tmp10 = fn2;
-}) : ((emoji) => {
+}) : (function EmojiButton(emoji) {
   let animated;
   let items1;
   let obj3;
@@ -249,7 +249,7 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) =>
   };
   items1 = [tmp.emojiPressable, ];
   let prop;
-  const PressableOpacity = emoji(5916).PressableOpacity;
+  const PressableOpacity = emoji(6189).PressableOpacity;
   if (selected) {
     prop = tmp.selectedEmojiPressable;
   }
@@ -271,7 +271,7 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) =>
   if (null != emoji.id) {
     const obj5 = { id: emoji.id, animated, size };
     animated = !stateFromStores;
-    const getEmojiURL = tmp8(1402).getEmojiURL;
+    const getEmojiURL = tmp8(1414).getEmojiURL;
     AvatarUtilsDefault;
     if (!stateFromStores) {
       animated = emoji.animated;
@@ -284,10 +284,10 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) =>
 }));
 const memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((selectedEmoji) => {
+const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function SelectDoubleTapEmojiRow(selectedEmoji) {
   let closure_2;
   let tmp10;
-  let tmp20;
+  let tmp21;
   let tmp6;
   let tmp7;
   let useReducedMotion;
@@ -298,9 +298,9 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((selec
   const onPressEmoji = selectedEmoji.onPressEmoji;
   const style = selectedEmoji.style;
   const tmp4 = closure_12();
-  let obj2 = selectedEmoji(9883);
+  let obj2 = selectedEmoji(9363);
   const frequentlyUsedReactionEmojis = obj2.useFrequentlyUsedReactionEmojis(undefined);
-  const rounded = Math.floor(Math.min(onPressEmoji(1484)().width, ACTION_SHEET_MAX_WIDTH) / 60);
+  const rounded = Math.floor(Math.min(onPressEmoji(1496)().width, ACTION_SHEET_MAX_WIDTH) / 60);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
     const fn = function u() {
@@ -345,42 +345,42 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((selec
       }
       L = tmp16;
       if (cResult[13] !== onPressEmoji) {
-        class F {
+        class L {
           constructor(arg0) {
-            onPressEmoji(arg0, false);
+            onPressEmoji(arg0, true);
           }
         }
         cResult[13] = onPressEmoji;
-        cResult[14] = F;
-        tmp17 = F;
+        cResult[14] = tmp18;
+        tmp17 = tmp18;
       } else {
-        class F {
+        class L {
           constructor(arg0) {
-            onPressEmoji(arg0, false);
+            onPressEmoji(arg0, true);
           }
         }
       }
-      F = tmp17;
+      View = tmp17;
       if (cResult[15] === style) {
-        class F {
+        class L {
           constructor(arg0) {
-            onPressEmoji(arg0, false);
+            onPressEmoji(arg0, true);
           }
         }
         if (cResult[18] === arr3) {
-          class F {
+          class L {
             constructor(arg0) {
-              onPressEmoji(arg0, false);
+              onPressEmoji(arg0, true);
             }
           }
         }
         if (cResult[22] === tmp16) {
-          class F {
+          class L {
             constructor(arg0) {
-              onPressEmoji(arg0, false);
+              onPressEmoji(arg0, true);
             }
           }
-          const mapped = arr3.map(tmp20);
+          const mapped = arr3.map(tmp21);
           cResult[18] = arr3;
           cResult[19] = tmp16;
           cResult[20] = tmp13;
@@ -397,7 +397,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((selec
         cResult[22] = tmp16;
         cResult[23] = tmp13;
         cResult[24] = fn2;
-        tmp20 = fn2;
+        tmp21 = fn2;
       }
       const items1 = [style, tmp4.emojiRow];
       cResult[15] = style;
@@ -405,18 +405,18 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((selec
       cResult[17] = items1;
     }
     if (cResult[9] !== selectedEmoji) {
-      class F {
+      class L {
         constructor(arg0) {
-          onPressEmoji(arg0, false);
+          onPressEmoji(arg0, true);
         }
       }
       cResult[9] = selectedEmoji;
-      cResult[10] = U;
-      tmp14 = U;
+      cResult[10] = D;
+      tmp14 = D;
     } else {
-      class F {
+      class L {
         constructor(arg0) {
-          onPressEmoji(arg0, false);
+          onPressEmoji(arg0, true);
         }
       }
     }
@@ -427,17 +427,17 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((selec
     tmp13 = findIndexResult;
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class F {
+    class L {
       constructor(arg0) {
-        onPressEmoji(arg0, false);
+        onPressEmoji(arg0, true);
       }
     }
     cResult[5] = tmp11;
     tmp10 = tmp11;
   } else {
-    class F {
+    class L {
       constructor(arg0) {
-        onPressEmoji(arg0, false);
+        onPressEmoji(arg0, true);
       }
     }
   }
@@ -447,7 +447,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((selec
   cResult[3] = rounded;
   cResult[4] = substr;
   arr3 = substr;
-}) : ((selectedEmoji) => {
+}) : (function SelectDoubleTapEmojiRow(selectedEmoji) {
   let animated;
   let items4;
   let items5;

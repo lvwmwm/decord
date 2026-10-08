@@ -1,19 +1,19 @@
-// Module ID: 16036
-// Function ID: 16037
+// Module ID: 16296
+// Function ID: 16297
 // Name: HappeningNowCardUnifiedVC
-// Dependencies: [19, 2050, 4918, 4525, 21, 558, 576, 16037, 16049, 16050, 16027, 573, 2]
+// Dependencies: [19, 2062, 5893, 4717, 21, 558, 576, 16297, 16309, 16310, 16287, 573, 2]
 
-// Module 16036 (HappeningNowCardUnifiedVC)
+// Module 16296 (HappeningNowCardUnifiedVC)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import findActivityWithMostParticipantsDefault from "findActivityWithMostParticipants" /* 16027 */;
-import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 16037 */;
-import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 16049 */;
-import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 16050 */;
+import findActivityWithMostParticipantsDefault from "findActivityWithMostParticipants" /* 16287 */;
+import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 16297 */;
+import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 16309 */;
+import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 16310 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4918 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5893 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let _require;
 
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HappeningNowCardUnifiedVC(arg0) {
   let activity;
   let cardKey;
   let fullwidth;
@@ -113,7 +113,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp5 = tmp8;
   }
   return tmp5;
-}) : ((arg0) => {
+}) : (function HappeningNowCardUnifiedVC(arg0) {
   let activity;
   let cardKey;
   let fullwidth;
@@ -141,7 +141,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp5;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCallActivityData(arg0) {
   let closure_0;
   let first;
   let tmp8;
@@ -200,7 +200,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(573);
   return tmpResult.useStateFromStoresObject(first, tmp8, tmp9);
-}) : ((arg0) => {
+}) : (function useCallActivityData(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("useStateFromStores");

@@ -4,16 +4,10 @@
 
 // Module 1926
 const obj = {
-  locale: "vi",
+  locale: "ko",
   pluralRuleFunction(arg0, arg1) {
-    let str = "other";
-    if (arg1) {
-      str = "other";
-      if (1 == arg0) {
-        str = "one";
-      }
-    }
-    return str;
+    return "other";
   }
 };
 globalThis.IntlMessageFormat.__addLocaleData(obj);
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "ko-KP", parentLocale: "ko" });

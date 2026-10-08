@@ -1,33 +1,33 @@
-// Module ID: 12034
-// Function ID: 12035
+// Module ID: 12107
+// Function ID: 12108
 // Name: DoubleTapToReactActionSheet
-// Dependencies: [5, 32, 19, 17, 4885, 5645, 1085, 1380, 21, 4896, 1369, 587, 4618, 4897, 558, 576, 5597, 504, 5604, 2028, 4529, 7638, 1402, 6632, 1252, 6688, 9892, 4860, 4892, 1126, 11933, 12035, 5601, 6708, 2]
+// Dependencies: [5, 32, 19, 17, 5079, 5992, 1085, 1392, 21, 5090, 1381, 587, 4810, 5091, 558, 576, 5392, 504, 5374, 2040, 4721, 7959, 1414, 6809, 1264, 6865, 9372, 5054, 5086, 1126, 12006, 12108, 5375, 6885, 2]
 
-// Module 12034 (DoubleTapToReactActionSheet)
+// Module 12107 (DoubleTapToReactActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4529 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
-import timing from "timing" /* 4897 */;
-import spring from "spring" /* 5604 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4721 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import timing from "timing" /* 5091 */;
+import spring from "spring" /* 5374 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
-import EmojiStore from "EmojiStore" /* 5645 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import EmojiStore from "EmojiStore" /* 5992 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1369 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c3, emoji, set, set2, set3, set4, user;
+let _require, c3, set, set2, set3, set4, user;
 
 let closure_12;
 let num2;
@@ -41,7 +41,7 @@ let obj7;
 let obj8;
 let tmp;
 let unpackModuleId;
-const DoubleTapToReactUtils = tmp(7638);
+const DoubleTapToReactUtils = tmp(7959);
 function randomizeAnimationValues(leading) {
   let Easing;
   let opacityValue;
@@ -128,7 +128,7 @@ let closure_13 = createStyles(obj);
 const __initData = { code: "function DoubleTapToReactActionSheetTsx1(){const{sizeValue,left,rotationValue,top,positionValue,opacityValue}=this.__closure;return{position:\"absolute\",transform:[{scale:sizeValue.get()},{rotate:(left===true?-1:1)*rotationValue.get()+\"deg\"}],top:top===true?-positionValue.get():positionValue.get(),left:left===true?-positionValue.get()*1.5:positionValue.get()*1.5,opacity:opacityValue.get()};}" };
 const __initData2 = { code: "function DoubleTapToReactActionSheetTsx2(){const{sizeValue,left,rotationValue,top,positionValue,opacityValue}=this.__closure;return{position:'absolute',transform:[{scale:sizeValue.get()},{rotate:(left===true?-1:1)*rotationValue.get()+\"deg\"}],top:top===true?-positionValue.get():positionValue.get(),left:left===true?-positionValue.get()*1.5:positionValue.get()*1.5,opacity:opacityValue.get()};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((left) => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiConfetti(left) {
   let emojiComponent;
   let leading;
   let top;
@@ -207,7 +207,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((left) => {
       }
     }
   }
-  const fn = function n() {
+  const fn = function o() {
     const obj = { positionValue: sharedValue, rotationValue: sharedValue1, sizeValue: sharedValue2, opacityValue: sharedValue3, leading };
     randomizeAnimationValues(obj);
   };
@@ -218,7 +218,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((left) => {
   cResult[4] = sharedValue2;
   cResult[5] = fn;
   tmp8 = fn;
-}) : ((top) => {
+}) : (function EmojiConfetti(top) {
   let bottom;
   let leading;
   let left;
@@ -227,20 +227,20 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((left) => {
   ({ bottom, left } = top);
   ({ right, leading: dependencyMap } = top);
   const children = top.emojiComponent;
-  let obj = top(4618);
+  let obj = top(4810);
   const sharedValue = obj.useSharedValue(0);
-  const obj2 = top(4618);
+  const obj2 = top(4810);
   const sharedValue1 = obj2.useSharedValue(0);
-  const obj3 = top(4618);
+  const obj3 = top(4810);
   const sharedValue2 = obj3.useSharedValue(0.2);
-  let obj4 = top(4618);
+  let obj4 = top(4810);
   const sharedValue3 = obj4.useSharedValue(0);
-  const obj5 = top(5597);
+  const obj5 = top(5392);
   const mountLayoutEffect = obj5.useMountLayoutEffect(() => {
     const obj = { positionValue: sharedValue, rotationValue: sharedValue1, sizeValue: sharedValue2, opacityValue: sharedValue3, leading: dependencyMap };
     randomizeAnimationValues(obj);
   });
-  const obj6 = top(4618);
+  const obj6 = top(4810);
   class S {
     constructor() {
       let obj4;
@@ -275,10 +275,10 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((left) => {
   S.__workletHash = 17194622427708;
   S.__initData = __initData2;
   const style = obj6.useAnimatedStyle(S);
-  return closure_11(left(4618).View, { style, children });
+  return closure_11(left(4810).View, { style, children });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiComponent) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiBurstAnimation(emojiComponent) {
   let items;
   let tmp3;
   let tmp4;
@@ -335,7 +335,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiComponent
   cResult[9] = tmp6;
   cResult[10] = tmp14;
   tmp13 = tmp14;
-}) : ((emojiComponent) => {
+}) : (function EmojiBurstAnimation(emojiComponent) {
   let items;
   emojiComponent = emojiComponent.emojiComponent;
   const obj = { style: closure_13().burstContainer, children: items };
@@ -349,7 +349,7 @@ const __initData5 = { code: "function DoubleTapToReactActionSheetTsx6(){const{in
 const __initData6 = { code: "function DoubleTapToReactActionSheetTsx7(){const{scaleChangeValue,opacityChangeValue}=this.__closure;return{transform:[{scale:scaleChangeValue.get()}],opacity:opacityChangeValue.get()};}" };
 let closure_24 = { code: "function DoubleTapToReactActionSheetTsx8(){const{runOnJS,setAnimateConfetti}=this.__closure;return runOnJS(setAnimateConfetti)(true);}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DoubleTapToReactActionSheet(emoji) {
   let alignCenter;
   let animated;
   let closure_4;
@@ -769,7 +769,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
                             tmp40 = items5;
                           }
                         }
-                        function ce() {
+                        function me() {
                           let Easing;
                           closure_6(true);
                           if (stateFromStores) {
@@ -816,8 +816,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
                         cResult[23] = stateFromStores;
                         cResult[24] = sharedValue;
                         cResult[25] = tmp35;
-                        cResult[26] = ce;
-                        tmp37 = ce;
+                        cResult[26] = me;
+                        tmp37 = me;
                       }
                       _require = closure_3(function*(arg0, value) {
                         if (c3 === 2) {
@@ -883,13 +883,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
                           }
                         }
                       });
-                      const fn3 = function() {
+                      function t8() {
                         return closure_0(...arguments);
-                      };
+                      }
                       cResult[20] = tmp22;
                       cResult[21] = selectedEmoji;
-                      cResult[22] = fn3;
-                      tmp35 = fn3;
+                      cResult[22] = t8;
+                      tmp35 = t8;
                     }
                   }
                 }
@@ -964,7 +964,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
   cResult[5] = first1;
   cResult[6] = fn2;
   tmp21 = fn2;
-}) : ((emoji) => {
+}) : (function DoubleTapToReactActionSheet(emoji) {
   let closure_3;
   let closure_4;
   let closure_6;

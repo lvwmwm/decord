@@ -1,28 +1,28 @@
-// Module ID: 11868
-// Function ID: 11869
+// Module ID: 11940
+// Function ID: 11941
 // Name: PollAnswerInput
-// Dependencies: [19, 17, 2051, 7044, 7468, 1380, 21, 4896, 587, 558, 576, 11869, 1126, 7270, 1188, 5916, 9879, 8842, 4860, 11870, 1987, 8445, 8924, 4854, 11873, 2]
+// Dependencies: [19, 17, 2063, 7232, 7943, 1392, 21, 5090, 587, 558, 576, 11941, 1126, 7870, 1200, 6189, 9359, 9201, 5054, 11942, 1999, 8931, 8555, 5048, 11945, 2]
 // Exports: default
 
-// Module 11868 (PollAnswerInput)
+// Module 11940 (PollAnswerInput)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Pressables from "Pressables" /* 5916 */;
-import DraftStore from "DraftStore" /* 7044 */;
-import PollsUtils from "PollsUtils" /* 7270 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8842 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9879 */;
-import useRenderPollAnswerImageDefault from "useRenderPollAnswerImage" /* 11869 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Pressables from "Pressables" /* 6189 */;
+import DraftStore from "DraftStore" /* 7232 */;
+import PollsUtils from "PollsUtils" /* 7870 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9201 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9359 */;
+import useRenderPollAnswerImageDefault from "useRenderPollAnswerImage" /* 11941 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PollsConstants from "PollsConstants" /* 7468 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import PollsConstants from "PollsConstants" /* 7943 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ createStyles = createStyles.createStyles;
 obj3 = { paddingLeft: 6, height: 48, justifyContent: "center", color: nativeDefault.colors.TEXT_MUTED };
 obj4 = { borderColor: nativeDefault.colors.BORDER_FEEDBACK_CRITICAL, borderWidth: 2 };
 let closure_15 = createStyles(obj);
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageInput(arg0) {
   let answerIndex;
   let channelId;
   let containerStyle;
@@ -192,7 +192,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp21Result = tmp21(metroRequire, obj6);
     } else {
       const obj7 = { source: iconSrc };
-      tmp21Result = tmp21(tmp(1188).Icon, obj7);
+      tmp21Result = tmp21(tmp(1200).Icon, obj7);
     }
     cResult[13] = tmp14;
     cResult[14] = iconSrc;
@@ -205,7 +205,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[11] = null != upload && tmp4.uploadContainer;
   cResult[12] = items;
   tmp19 = items;
-}) : ((iconSrc) => {
+}) : (function ImageInput(iconSrc) {
   let answerIndex;
   let channelId;
   let emojiSize;
@@ -369,7 +369,7 @@ export default function PollAnswerInput(answer) {
     openImageInputActionSheet() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { channelId, index, answer, onSaveAltText: handleSaveAltText, onRemoveAnswerImage, openExpressionPicker };
-      obj.openLazy(asyncRequire(11870, dependencyMap.paths), authStore, obj2);
+      obj.openLazy(asyncRequire(11942, dependencyMap.paths), authStore, obj2);
     },
     iconSrc: index(channelId[21]),
     containerStyle: tmp.defaultImageContainer,

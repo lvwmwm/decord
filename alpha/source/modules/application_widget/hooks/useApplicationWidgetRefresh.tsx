@@ -1,11 +1,11 @@
-// Module ID: 12713
-// Function ID: 12714
+// Module ID: 13203
+// Function ID: 13204
 // Name: useApplicationWidgetRefresh
-// Dependencies: [32, 19, 558, 576, 12714, 12715, 2]
+// Dependencies: [32, 19, 558, 576, 13204, 13205, 2]
 
-// Module 12713 (useApplicationWidgetRefresh)
-import refreshApplicationWidget from "refreshApplicationWidget" /* 12714 */;
-import presentApplicationWidgetRefreshOutcomeDefault from "presentApplicationWidgetRefreshOutcome" /* 12715 */;
+// Module 13203 (useApplicationWidgetRefresh)
+import refreshApplicationWidget from "refreshApplicationWidget" /* 13204 */;
+import presentApplicationWidgetRefreshOutcomeDefault from "presentApplicationWidgetRefreshOutcome" /* 13205 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 let _require;
 
 let _slicedToArray = _slicedToArray_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplicationWidgetRefresh(arg0) {
   let closure_0;
   let closure_2;
   let closure_3;
@@ -29,7 +29,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   _slicedToArray = react.useRef(true);
   const obj2 = react;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function c() {
+    const fn = function s() {
       closure_3.current = true;
       return () => {
         closure_1_3.current = false;
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[7] = obj3;
     tmp8 = obj3;
   }
-  const fn2 = function s() {
+  const fn2 = function l() {
     let ref;
     let tmp = first;
     if (!tmp) {
@@ -84,7 +84,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = pending;
   cResult[4] = fn2;
   tmp7 = fn2;
-}) : ((arg0) => {
+}) : (function useApplicationWidgetRefresh(arg0) {
   let closure_2;
   let closure_3;
   let pending;

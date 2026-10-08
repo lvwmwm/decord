@@ -1,15 +1,15 @@
-// Module ID: 11820
-// Function ID: 11821
+// Module ID: 11905
+// Function ID: 11906
 // Name: AppLauncherOptionIcon
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 2]
 
-// Module 11820 (AppLauncherOptionIcon)
+// Module 11905 (AppLauncherOptionIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ const jsx = Fragment.jsx;
 let obj = { iconWrapper: obj2 };
 obj2 = { justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: nativeDefault.radii.round };
 const styles = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherOptionIcon(arg0) {
   let icon;
   let tmp3;
   let wrapperSize;
@@ -66,7 +66,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = wrapperStyle;
   cResult[5] = items;
   tmp4 = items;
-}) : ((wrapperSize) => {
+}) : (function AppLauncherOptionIcon(wrapperSize) {
   let num = wrapperSize.wrapperSize;
   const wrapperStyle = wrapperSize.wrapperStyle;
   if (num === undefined) {

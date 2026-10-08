@@ -1,22 +1,22 @@
-// Module ID: 15253
-// Function ID: 15254
+// Module ID: 15515
+// Function ID: 15516
 // Name: SyncReducedMotionWithDeviceSetting
-// Dependencies: [4885, 7645, 558, 576, 504, 14295, 11142, 1126, 2]
+// Dependencies: [5079, 7966, 558, 576, 504, 14520, 11262, 1126, 2]
 
-// Module 15253 (SyncReducedMotionWithDeviceSetting)
+// Module 15515 (SyncReducedMotionWithDeviceSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7645 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14295 */;
-import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import SettingsConstants from "SettingsConstants" /* 7966 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14520 */;
+import AccessibilityStore from "AccessibilityStore" /* 5079 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReducedMotionSyncSettingValue() {
   let tmp4;
   let tmp5;
   const obj = react;
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useReducedMotionSyncSettingValue() {
   const items = [AccessibilityStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => "auto" === AccessibilityStore.rawPrefersReducedMotion);

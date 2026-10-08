@@ -1,41 +1,39 @@
-// Module ID: 15781
-// Function ID: 15782
+// Module ID: 16039
+// Function ID: 16040
 // Name: ShelfBlock
-// Dependencies: [19, 17, 7066, 1087, 1085, 21, 4896, 587, 558, 576, 1490, 8454, 15752, 6664, 6688, 504, 15754, 14892, 7065, 8451, 4892, 5601, 1126, 6658, 8404, 2]
+// Dependencies: [19, 17, 7252, 1087, 1085, 21, 5090, 587, 558, 576, 1502, 8940, 16010, 6841, 6865, 504, 16012, 15154, 7251, 8937, 6164, 5086, 5375, 1126, 6835, 8600, 2]
 
-// Module 15781 (ShelfBlock)
+// Module 16039 (ShelfBlock)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6688 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7065 */;
-import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 8451 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8454 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6865 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7251 */;
+import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 8937 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8940 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7066 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7252 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let block, navigation;
 
-let c10;
 let c9;
-let closure_4;
-let hasOwnProperty;
+let metroImportAll;
 let obj2;
 let obj3;
 let obj4;
 let obj5;
 let obj6;
-({ Image: closure_4, View: hasOwnProperty } = react_native);
+const View = react_native.View;
 const constants = CollectiblesShopConstants.CollectiblesMobileShopScreen;
 const UserSettingsSections = Constants.UserSettingsSections;
-({ jsx: c9, jsxs: c10 } = Fragment);
-let c11 = "#ffffff";
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let c10 = "#ffffff";
 let createStyles = createStyles_mod;
 let obj = { container: obj2, containerWithBackground: obj3, backgroundImage: { position: "absolute", top: 0, left: 0, bottom: 0, minWidth: "100%", aspectRatio: 2.5, resizeMode: "cover" }, header: obj4, headingWrapper: { flexShrink: 1 }, listEdgeSpacer: obj5, listItemSeparator: obj6 };
 obj2 = { width: "100%", paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
@@ -44,16 +42,16 @@ obj3 = { marginTop: nativeDefault.space.PX_24, paddingTop: nativeDefault.space.P
 obj4 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_16, zIndex: 1 };
 obj5 = { width: nativeDefault.space.PX_16 };
 obj6 = { width: nativeDefault.space.PX_12 };
-let closure_12 = createStyles(obj);
+let closure_11 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListEdgeSpacer() {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
-  const tmp2 = closure_12();
+  const tmp2 = closure_11();
   if (cResult[0] !== tmp2.listEdgeSpacer) {
     const obj2 = { style: tmp2.listEdgeSpacer };
-    const tmp6 = React4(hasOwnProperty, obj2);
+    const tmp6 = metroImportAll(View, obj2);
     cResult[0] = tmp2.listEdgeSpacer;
     cResult[1] = tmp6;
     tmp3 = tmp6;
@@ -61,19 +59,19 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
-  const obj = { style: closure_12().listEdgeSpacer };
-  return React4(hasOwnProperty, obj);
+}) : (function ListEdgeSpacer() {
+  const obj = { style: closure_11().listEdgeSpacer };
+  return metroImportAll(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const ItemSeparatorComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const ItemSeparatorComponent = ReactCompilerGating.isReactCompilerEnabled() ? (function ListItemSeparator() {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
-  const tmp2 = closure_12();
+  const tmp2 = closure_11();
   if (cResult[0] !== tmp2.listItemSeparator) {
     const obj2 = { style: tmp2.listItemSeparator };
-    const tmp6 = React4(hasOwnProperty, obj2);
+    const tmp6 = metroImportAll(View, obj2);
     cResult[0] = tmp2.listItemSeparator;
     cResult[1] = tmp6;
     tmp3 = tmp6;
@@ -81,12 +79,12 @@ const ItemSeparatorComponent = ReactCompilerGating.isReactCompilerEnabled() ? ((
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
-  const obj = { style: closure_12().listItemSeparator };
-  return React4(hasOwnProperty, obj);
+}) : (function ListItemSeparator() {
+  const obj = { style: closure_11().listItemSeparator };
+  return metroImportAll(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((block) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((block) => {
   let first;
   let tmp11;
   const tmp = block;
@@ -94,7 +92,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((block) => {
   const cResult = obj.c(54);
   block = block.block;
   const preferVCPrice = block.preferVCPrice;
-  closure_12();
+  closure_11();
   let obj2 = block(navigation[10]);
   navigation = obj2.useNavigation();
   let obj3 = block(navigation[11]);
@@ -112,7 +110,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((block) => {
     first = cResult[0];
   }
   if (cResult[1] !== block.categorySkuId) {
-    const fn = function p() {
+    const fn = function y() {
       let category;
       if (null != block.categorySkuId) {
         category = CollectiblesCategoryStore.getCategory(tmp.categorySkuId);
@@ -138,7 +136,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((block) => {
     if (cResult[6] !== tmp14) {
       const obj5 = { products: tmp14 };
       cResult[6] = tmp14;
-      class R {
+      class A {
         constructor() {
           let items;
           if (null != stateFromStores) {
@@ -166,40 +164,48 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((block) => {
       if (cResult[9] === stateFromStores) {
         if (cResult[12] === block.name) {
           const _Symbol = Symbol;
-          class W {
+          class F {
             constructor(arg0) {
               let index;
               let item;
               let obj2;
               let obj3;
               ({ item, index } = arg0);
-              const obj = { newValue: obj2, children: React4(CollectiblesShopCardV2Default, obj3) };
+              const obj = { newValue: obj2, children: metroImportAll(CollectiblesShopCardV2Default, obj3) };
               obj2 = { tilePosition: index, pageSection: block.name };
               const CollectiblesAnalyticsProvider = CollectiblesAnalyticsContext.CollectiblesAnalyticsProvider;
               obj3 = { product: item, preferVCPrice };
-              return React4(CollectiblesAnalyticsProvider, obj);
+              return metroImportAll(CollectiblesAnalyticsProvider, obj);
             }
           }
           if (tmp20 === Symbol.for("react.memo_cache_sentinel")) {
-            const fn2 = function z(skuId) {
-              return skuId.skuId;
-            };
-            class W {
+            class X {
+              constructor(skuId) {
+                return skuId.skuId;
+              }
+            }
+            class F {
               constructor(arg0) {
                 let index;
                 let item;
                 let obj2;
                 let obj3;
                 ({ item, index } = arg0);
-                const obj = { newValue: obj2, children: React4(CollectiblesShopCardV2Default, obj3) };
+                const obj = { newValue: obj2, children: metroImportAll(CollectiblesShopCardV2Default, obj3) };
                 obj2 = { tilePosition: index, pageSection: block.name };
                 const CollectiblesAnalyticsProvider = CollectiblesAnalyticsContext.CollectiblesAnalyticsProvider;
                 obj3 = { product: item, preferVCPrice };
-                return React4(CollectiblesAnalyticsProvider, obj);
+                return metroImportAll(CollectiblesAnalyticsProvider, obj);
+              }
+            }
+          } else {
+            class X {
+              constructor(skuId) {
+                return skuId.skuId;
               }
             }
           }
-          class R {
+          class A {
             constructor() {
               let items;
               if (null != stateFromStores) {
@@ -218,22 +224,22 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((block) => {
             }
           }
         }
-        class W {
+        class F {
           constructor(arg0) {
             let index;
             let item;
             let obj2;
             let obj3;
             ({ item, index } = arg0);
-            const obj = { newValue: obj2, children: React4(CollectiblesShopCardV2Default, obj3) };
+            const obj = { newValue: obj2, children: metroImportAll(CollectiblesShopCardV2Default, obj3) };
             obj2 = { tilePosition: index, pageSection: block.name };
             const CollectiblesAnalyticsProvider = CollectiblesAnalyticsContext.CollectiblesAnalyticsProvider;
             obj3 = { product: item, preferVCPrice };
-            return React4(CollectiblesAnalyticsProvider, obj);
+            return metroImportAll(CollectiblesAnalyticsProvider, obj);
           }
         }
         cResult[12] = block.name;
-        class R {
+        class A {
           constructor() {
             let items;
             if (null != stateFromStores) {
@@ -252,10 +258,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((block) => {
           }
         }
         cResult[13] = preferVCPrice;
-        cResult[14] = W;
+        cResult[14] = F;
       }
     }
-    class R {
+    class A {
       constructor() {
         let items;
         if (null != stateFromStores) {
@@ -276,7 +282,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((block) => {
     cResult[8] = collectiblesAnalyticsContext;
     cResult[9] = stateFromStores;
     cResult[10] = navigation;
-    cResult[11] = R;
+    cResult[11] = A;
   }
   const tmp13Result = tmp13(rankedSkuIds);
   cResult[3] = tmp13;
@@ -296,7 +302,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((block) => {
   block = block.block;
   const preferVCPrice = block.preferVCPrice;
   navigation = undefined;
-  const tmp = closure_12();
+  let closure_5;
+  const tmp = closure_11();
   let obj = block(navigation[10]);
   navigation = obj.useNavigation();
   let obj2 = block(navigation[11]);
@@ -305,7 +312,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((block) => {
   const handleDismissCoachmarkOnScroll = obj3.useCollectiblesCoachmarkScrollDismissContext().handleDismissCoachmarkOnScroll;
   const tmp7 = preferVCPrice(navigation[13]);
   const analyticsLocations = tmp7(preferVCPrice(navigation[14]).COLLECTIBLES_SHOP_SHELF).analyticsLocations;
-  let items = [CollectiblesCategoryStore];
+  let items = [closure_5];
   const obj4 = block(navigation[15]);
   const stateFromStores = obj4.useStateFromStores(items, () => {
     let category;
@@ -315,7 +322,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((block) => {
     return category;
   });
   const tmp9 = preferVCPrice(navigation[16])();
-  let closure_5 = tmp9;
+  closure_5 = tmp9;
   const items1 = [block.rankedSkuIds, tmp9];
   const memo = collectiblesAnalyticsContext.useMemo(() => closure_5(block.rankedSkuIds), items1);
   const obj5 = block(navigation[17]);
@@ -344,19 +351,18 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((block) => {
     let obj2;
     let obj3;
     ({ item, index } = arg0);
-    const obj = { newValue: obj2, children: React4(CollectiblesShopCardV2Default, obj3) };
+    const obj = { newValue: obj2, children: metroImportAll(CollectiblesShopCardV2Default, obj3) };
     obj2 = { tilePosition: index, pageSection: block.name };
     const CollectiblesAnalyticsProvider = CollectiblesAnalyticsContext.CollectiblesAnalyticsProvider;
     obj3 = { product: item, preferVCPrice };
-    return React4(CollectiblesAnalyticsProvider, obj);
+    return metroImportAll(CollectiblesAnalyticsProvider, obj);
   }, items3);
-  const tmp6 = preferVCPrice;
   if (0 === filteredAndSortedProducts.length) {
     return null;
   } else {
     const items4 = [tmp.container, null != block.mobileBackgroundImage && tmp.containerWithBackground];
-    const obj6 = { value: analyticsLocations, children: closure_10(closure_5, obj7) };
-    let tmp14Result = tmp25;
+    const obj6 = { value: analyticsLocations, children: closure_9(stateFromStores, obj7) };
+    let tmp14Result = tmp24;
     obj7 = { style: items4, children: items5 };
     const AnalyticsLocationProvider = tmp2(tmp3[13]).AnalyticsLocationProvider;
     if (null != block.mobileBackgroundImage) {
@@ -365,44 +371,44 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((block) => {
     if (tmp14Result) {
       const obj8 = { style: tmp.backgroundImage, source: obj9 };
       obj9 = { uri: block.mobileBackgroundImage };
-      tmp14Result = tmp14(stateFromStores, obj8);
+      tmp14Result = tmp14(tmp6(tmp3[20]), obj8);
     }
     items5 = [tmp14Result, , ];
     const obj10 = { style: tmp.header, children: items6 };
-    let tmp19;
-    const obj11 = { style: tmp.headingWrapper, children: closure_9(Heading, obj13) };
-    Heading = tmp2(tmp3[20]).Heading;
+    let tmp18;
+    const obj11 = { style: tmp.headingWrapper, children: closure_8(Heading, obj13) };
+    Heading = tmp2(tmp3[21]).Heading;
     if (null != block.mobileBackgroundImage) {
       let titleColor = block.titleColor;
       if (titleColor == null) {
-        titleColor = c11;
+        titleColor = c10;
       }
-      tmp19 = { color: titleColor };
+      tmp18 = { color: titleColor };
       const obj12 = { color: titleColor };
     }
-    obj13 = { variant: "text-md/semibold", style: tmp19, children: block.name };
-    items6 = [closure_9(closure_5, obj11), ];
+    obj13 = { variant: "text-md/semibold", style: tmp18, children: block.name };
+    items6 = [closure_8(stateFromStores, obj11), ];
     let tmp14Result2 = block.showButton && null != stateFromStores;
     if (tmp14Result2) {
       let str = "secondary";
-      const Button = tmp2(tmp3[21]).Button;
+      const Button = tmp2(tmp3[22]).Button;
       if (null != block.mobileBackgroundImage) {
         str = "primary-overlay";
       }
-      const obj14 = { variant: str, size: "sm", shrink: true, grow: false, text: intl.string(block(navigation[22]).t.xFcotU), onPress: callback };
-      intl = tmp2(tmp3[22]).intl;
+      const obj14 = { variant: str, size: "sm", shrink: true, grow: false, text: intl.string(block(navigation[23]).t.xFcotU), onPress: callback };
+      intl = tmp2(tmp3[23]).intl;
       tmp14Result2 = tmp14(Button, obj14);
     }
     items6[1] = tmp14Result2;
-    items5[1] = closure_10(closure_5, obj10);
-    const obj15 = { children: closure_9(FlashList, obj16) };
-    const LayerScope = tmp2(tmp3[23]).LayerScope;
-    obj16 = { horizontal: true, accessibilityRole: "list", accessibilityLabel: block.name, data: filteredAndSortedProducts, keyExtractor: tmp13, onScroll: handleDismissCoachmarkOnScroll, renderItem: callback1, decelerationRate: "fast", snapToInterval: block(navigation[19]).COLLECTIBLES_SHOP_CARD_WIDTH + tmp6(navigation[7]).space.PX_12, showsHorizontalScrollIndicator: false, ListHeaderComponent: ListFooterComponent, ListFooterComponent, ItemSeparatorComponent };
-    FlashList = tmp2(tmp3[24]).FlashList;
-    items5[2] = closure_9(LayerScope, obj15);
-    return closure_9(AnalyticsLocationProvider, obj6);
+    items5[1] = closure_9(stateFromStores, obj10);
+    const obj15 = { children: closure_8(FlashList, obj16) };
+    const LayerScope = tmp2(tmp3[24]).LayerScope;
+    obj16 = { horizontal: true, accessibilityRole: "list", accessibilityLabel: block.name, data: filteredAndSortedProducts, keyExtractor: tmp13, onScroll: handleDismissCoachmarkOnScroll, renderItem: callback1, decelerationRate: "fast", snapToInterval: block(navigation[19]).COLLECTIBLES_SHOP_CARD_WIDTH + preferVCPrice(navigation[7]).space.PX_12, showsHorizontalScrollIndicator: false, ListHeaderComponent: ListFooterComponent, ListFooterComponent, ItemSeparatorComponent };
+    FlashList = tmp2(tmp3[25]).FlashList;
+    items5[2] = closure_8(LayerScope, obj15);
+    return closure_8(AnalyticsLocationProvider, obj6);
   }
 });
 let result = size.fileFinishedImporting("modules/collectibles/native/ShelfBlock.tsx");
 
-export default tmp5;
+export default tmp4;

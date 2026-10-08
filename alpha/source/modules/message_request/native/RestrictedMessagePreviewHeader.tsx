@@ -1,21 +1,21 @@
-// Module ID: 17102
-// Function ID: 17103
+// Module ID: 17383
+// Function ID: 17384
 // Name: RestrictedMessagePreviewHeader
-// Dependencies: [19, 17, 12100, 21, 4896, 587, 6664, 4728, 7861, 6695, 4573, 4860, 12284, 1987, 7873, 6855, 5099, 5916, 1126, 1188, 4892, 17085, 5978, 17103, 2]
+// Dependencies: [19, 17, 12178, 21, 5090, 587, 6841, 4922, 8279, 6872, 4765, 5054, 12382, 1999, 8291, 7043, 5940, 6189, 1126, 1200, 5086, 17366, 6161, 17384, 2]
 // Exports: default
 
-// Module 17102 (RestrictedMessagePreviewHeader)
+// Module 17383 (RestrictedMessagePreviewHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ToastUtils from "ToastUtils" /* 4573 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import ClipboardUtils from "ClipboardUtils" /* 6695 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
-import MessageRequestConstants from "MessageRequestConstants" /* 12100 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ToastUtils from "ToastUtils" /* 4765 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import ClipboardUtils from "ClipboardUtils" /* 6872 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
+import MessageRequestConstants from "MessageRequestConstants" /* 12178 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -80,7 +80,7 @@ export default function RestrictedMessagePreviewHeader(channel) {
         obj4.popWithKey(closure_1_5);
       }
     };
-    obj.openLazy(asyncRequire(12284, dependencyMap.paths), "MutualGuildsActionSheet", obj2);
+    obj.openLazy(asyncRequire(12382, dependencyMap.paths), "MutualGuildsActionSheet", obj2);
   }, items2);
   let obj4 = { accessibilityRole: "button", accessibilityLabel: intl.string(channel(analyticsLocations[18]).t.iXAna6), onPress: callback, children: closure_6(Avatar, obj5) };
   const PressableOpacity = channel(analyticsLocations[17]).PressableOpacity;

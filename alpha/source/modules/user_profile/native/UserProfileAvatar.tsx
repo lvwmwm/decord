@@ -1,15 +1,15 @@
-// Module ID: 7939
-// Function ID: 7940
+// Module ID: 8357
+// Function ID: 8358
 // Name: UserProfileAvatar
-// Dependencies: [109, 19, 17, 7865, 6714, 21, 558, 576, 7924, 7940, 7872, 7943, 1126, 2]
+// Dependencies: [109, 19, 17, 8283, 6891, 21, 558, 576, 8343, 8358, 8290, 8361, 1126, 2]
 
-// Module 7939 (UserProfileAvatar)
+// Module 8357 (UserProfileAvatar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 6714 */;
-import Constants2 from "Constants" /* 7865 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7924 */;
-import openUserProfileAvatarMediaViewerDefault from "openUserProfileAvatarMediaViewer" /* 7943 */;
+import Constants from "Constants" /* 6891 */;
+import Constants2 from "Constants" /* 8283 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8343 */;
+import openUserProfileAvatarMediaViewerDefault from "openUserProfileAvatarMediaViewer" /* 8361 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -17,123 +17,127 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let dependencyMap, guildId, importDefault, obj1, tmp;
+let dependencyMap, importDefault, obj1, tmp;
 
 let c10;
 let closure_12;
-let tmp9;
+let tmp10;
 let unpackModuleId;
-const HeaderAvatarDefault = tmp9(7940);
-let closure_3 = ["backgroundColor", "size"];
+const HeaderAvatarDefault = tmp10(8358);
+let closure_3 = ["backgroundColor", "size", "ref"];
 let closure_4 = ["animate", "user", "guildId"];
 const View = react_native.View;
 const TrackUserProfileActions = Constants2.TrackUserProfileActions;
 const AVATAR_SIZE_VARIANT = Constants.AVATAR_SIZE_VARIANT;
 ({ jsx: c10, Fragment: unpackModuleId, jsxs: closure_12 } = Fragment);
-const forwardRef = react.forwardRef;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileAvatar(arg0) {
   let backgroundColor;
   let items;
   let items2;
-  let tmp11;
+  let ref;
+  let tmp12;
   let tmp3;
   let tmp4;
   let tmp5;
+  let tmp6;
   const obj = react2;
-  const cResult = obj.c(21);
+  const cResult = obj.c(22);
   if (cResult[0] !== arg0) {
-    ({ backgroundColor, size } = arg0);
-    const tmp8 = _objectWithoutProperties(arg0, closure_3);
+    ({ backgroundColor, size, ref } = arg0);
+    const tmp9 = _objectWithoutProperties(arg0, closure_3);
     cResult[0] = arg0;
     cResult[1] = backgroundColor;
-    cResult[2] = tmp8;
-    cResult[3] = size;
-    tmp5 = size;
-    tmp4 = tmp8;
+    cResult[2] = tmp9;
+    cResult[3] = ref;
+    cResult[4] = size;
+    tmp6 = size;
+    tmp5 = ref;
+    tmp4 = tmp9;
     tmp3 = backgroundColor;
   } else {
     tmp3 = cResult[1];
     tmp4 = cResult[2];
     tmp5 = cResult[3];
+    tmp6 = cResult[4];
   }
-  if (undefined === tmp5) {
-    tmp5 = AVATAR_SIZE_VARIANT;
+  if (undefined === tmp6) {
+    tmp6 = AVATAR_SIZE_VARIANT;
   }
-  const tmp10 = UserProfileSharedStylesDefault();
-  if (cResult[4] !== tmp3) {
+  const tmp11 = UserProfileSharedStylesDefault();
+  if (cResult[5] !== tmp3) {
     const obj2 = { backgroundColor: tmp3 };
-    cResult[4] = tmp3;
-    cResult[5] = obj2;
-    tmp11 = obj2;
+    cResult[5] = tmp3;
+    cResult[6] = obj2;
+    tmp12 = obj2;
   } else {
-    tmp11 = cResult[5];
+    tmp12 = cResult[6];
   }
-  if (cResult[6] === tmp10.avatarBackground) {
-    if (cResult[7] === tmp10.avatarPosition) {
-      let tmp12;
-      if (cResult[8] === tmp11) {
-        tmp12 = cResult[9];
+  if (cResult[7] === tmp11.avatarBackground) {
+    if (cResult[8] === tmp11.avatarPosition) {
+      let tmp13;
+      if (cResult[9] === tmp12) {
+        tmp13 = cResult[10];
       }
-      if (cResult[10] === tmp10.avatar) {
-        let tmp14;
-        if (cResult[11] === tmp10.avatarPosition) {
-          tmp14 = cResult[12];
+      if (cResult[11] === tmp11.avatar) {
+        let tmp15;
+        if (cResult[12] === tmp11.avatarPosition) {
+          tmp15 = cResult[13];
         }
-        if (cResult[13] === tmp4) {
-          if (cResult[14] === ref) {
-            if (cResult[15] === tmp5) {
+        if (cResult[14] === tmp4) {
+          if (cResult[15] === tmp5) {
+            if (cResult[16] === tmp6) {
               let tmp16;
-              if (cResult[16] === tmp14) {
-                tmp16 = cResult[17];
+              if (cResult[17] === tmp15) {
+                tmp16 = cResult[18];
               }
-              if (cResult[18] === tmp12) {
+              if (cResult[19] === tmp13) {
                 let tmp23;
-                if (cResult[19] === tmp16) {
-                  tmp23 = cResult[20];
+                if (cResult[20] === tmp16) {
+                  tmp23 = cResult[21];
                 }
                 return tmp23;
               }
               const obj3 = { children: items };
-              items = [tmp12, tmp16];
+              items = [tmp13, tmp16];
               const tmp26 = closure_12(unpackModuleId, obj3);
-              cResult[18] = tmp12;
-              cResult[19] = tmp16;
-              cResult[20] = tmp26;
+              cResult[19] = tmp13;
+              cResult[20] = tmp16;
+              cResult[21] = tmp26;
               tmp23 = tmp26;
             }
           }
         }
-        const obj4 = { ref, style: tmp14, size: tmp5 };
-        const tmp9Result = HeaderAvatarDefault;
+        const obj4 = { ref: tmp5, style: tmp15, size: tmp6 };
+        const tmp10Result = HeaderAvatarDefault;
         const merged = Object.assign(tmp4);
-        const tmp22 = authStore(tmp9Result, obj4);
-        cResult[13] = tmp4;
-        cResult[14] = ref;
+        const tmp22 = authStore(tmp10Result, obj4);
+        cResult[14] = tmp4;
         cResult[15] = tmp5;
-        cResult[16] = tmp14;
-        cResult[17] = tmp22;
+        cResult[16] = tmp6;
+        cResult[17] = tmp15;
+        cResult[18] = tmp22;
         tmp16 = tmp22;
       }
       const items1 = [, ];
-      ({ avatar: arr2[0], avatarPosition: arr2[1] } = tmp10);
-      cResult[10] = tmp10.avatar;
-      cResult[11] = tmp10.avatarPosition;
-      cResult[12] = items1;
-      tmp14 = items1;
+      ({ avatar: arr2[0], avatarPosition: arr2[1] } = tmp11);
+      cResult[11] = tmp11.avatar;
+      cResult[12] = tmp11.avatarPosition;
+      cResult[13] = items1;
+      tmp15 = items1;
     }
   }
   const obj5 = { style: items2 };
   items2 = [, , ];
-  ({ avatarBackground: arr[0], avatarPosition: arr[1] } = tmp10);
-  items2[2] = tmp11;
-  const tmp13 = authStore(View, obj5);
-  cResult[6] = tmp10.avatarBackground;
-  cResult[7] = tmp10.avatarPosition;
-  cResult[8] = tmp11;
-  cResult[9] = tmp13;
-  tmp12 = tmp13;
-}) : ((size, ref) => {
+  ({ avatarBackground: arr[0], avatarPosition: arr[1] } = tmp11);
+  items2[2] = tmp12;
+  const tmp14 = authStore(View, obj5);
+  cResult[7] = tmp11.avatarBackground;
+  cResult[8] = tmp11.avatarPosition;
+  cResult[9] = tmp12;
+  cResult[10] = tmp14;
+  tmp13 = tmp14;
+}) : (function UserProfileAvatar(size) {
   let items;
   let items1;
   let items2;
@@ -142,7 +146,8 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   if (size === undefined) {
     size = AVATAR_SIZE_VARIANT;
   }
-  const merged = Object.assign(size, Object.assign({ backgroundColor: 0, size: 0 }));
+  const ref = size.ref;
+  const merged = Object.assign(size, Object.assign({ backgroundColor: 0, size: 0, ref: 0 }));
   const tmp2 = UserProfileSharedStylesDefault();
   const obj2 = { style: items };
   items = [, , ];
@@ -157,9 +162,10 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   const merged1 = Object.assign(merged);
   items1[1] = authStore(tmp3, obj3);
   return closure_12(unpackModuleId, obj);
-}));
+});
+let closure_13 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OpenableUserProfileAvatar(guildId) {
   let _require;
   let animate;
   let obj2;
@@ -202,7 +208,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       if (cResult[9] === tmp4) {
         if (cResult[10] === trackUserProfileAction) {
           let accessibilityLabel;
-          class R {
+          class C {
             constructor() {
               obj = { action: TrackUserProfileActions.VIEW_AVATAR };
               tmp = trackUserProfileAction(obj);
@@ -231,7 +237,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                 }
               }
             }
-            class R {
+            class C {
               constructor() {
                 obj = { action: TrackUserProfileActions.VIEW_AVATAR };
                 tmp = trackUserProfileAction(obj);
@@ -254,7 +260,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           }
           if (tmp12) {
             const string = tmp(1126).intl.string;
-            class R {
+            class C {
               constructor() {
                 obj = { action: TrackUserProfileActions.VIEW_AVATAR };
                 tmp = trackUserProfileAction(obj);
@@ -273,7 +279,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         }
       }
     }
-    class R {
+    class C {
       constructor() {
         obj = { action: TrackUserProfileActions.VIEW_AVATAR };
         tmp = trackUserProfileAction(obj);
@@ -286,14 +292,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     cResult[9] = tmp4;
     cResult[10] = trackUserProfileAction;
     cResult[11] = obj2;
-    cResult[12] = R;
+    cResult[12] = C;
   }
   const tmp13 = null != obj2.avatar || obj2.hasAvatarForGuild(tmp4);
   cResult[5] = tmp4;
   cResult[6] = obj2;
   cResult[7] = tmp13;
   tmp12 = tmp13;
-}) : ((animate) => {
+}) : (function OpenableUserProfileAvatar(animate) {
   let accessibilityLabel;
   let tmp10;
   let flag = animate.animate;
@@ -334,5 +340,5 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileAvatar.tsx");
 
-export default forwardRefResult;
-export const OpenableUserProfileAvatar = tmp5;
+export default tmp3;
+export const OpenableUserProfileAvatar = tmp4;

@@ -1,26 +1,26 @@
-// Module ID: 17060
-// Function ID: 17061
+// Module ID: 17341
+// Function ID: 17342
 // Name: ChannelSettingsEditForumTag
-// Dependencies: [32, 19, 17, 5645, 2051, 1380, 21, 4896, 587, 558, 576, 1490, 504, 4892, 1126, 7552, 6890, 9879, 5715, 6632, 1402, 8444, 5916, 1188, 4803, 6081, 6000, 6705, 5600, 2]
+// Dependencies: [32, 19, 17, 5992, 2063, 1392, 21, 5090, 587, 558, 576, 1502, 504, 5086, 1126, 9263, 7079, 9359, 5298, 6809, 1414, 8930, 6189, 1200, 4997, 6267, 6184, 6882, 5373, 2]
 
-// Module 17060 (ChannelSettingsEditForumTag)
+// Module 17341 (ChannelSettingsEditForumTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5715 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 7552 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9879 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5298 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 9263 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9359 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5645 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
+import EmojiStore from "EmojiStore" /* 5992 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let channelId, dependencyMap, navigation;
+let dependencyMap, navigation;
 
 let c10;
 let c9;
@@ -38,7 +38,7 @@ obj2 = { display: "flex", flex: 1, backgroundColor: nativeDefault.colors.BACKGRO
 createStyles = createStyles.createStyles;
 obj3 = { paddingHorizontal: 12, paddingTop: nativeDefault.space.PX_16 };
 let closure_12 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSettingsEditForumTag(channelId) {
   let closure_10;
   let closure_2;
   let closure_3;
@@ -62,7 +62,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   dependencyMap = ref();
   _slicedToArray = null == tag;
   const tmp4 = ref();
-  let obj2 = channelId(1490);
+  let obj2 = channelId(1502);
   navigation = obj2.useNavigation();
   if (cResult[0] !== tag) {
     let tmp7 = null;
@@ -102,16 +102,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     tmp17 = cResult[2];
   }
   if (cResult[3] !== channelId) {
-    class R {
+    class C {
       constructor() {
         return closure_7.getChannel(channelId);
       }
     }
     cResult[3] = channelId;
-    cResult[4] = R;
-    tmp19 = R;
+    cResult[4] = C;
+    tmp19 = C;
   } else {
-    class R {
+    class C {
       constructor() {
         return closure_7.getChannel(channelId);
       }
@@ -120,7 +120,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp17, tmp19);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
+    class C {
       constructor() {
         return closure_7.getChannel(channelId);
       }
@@ -129,7 +129,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     cResult[5] = items1;
     tmp21 = items1;
   } else {
-    class R {
+    class C {
       constructor() {
         return closure_7.getChannel(channelId);
       }
@@ -195,7 +195,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[9] = first2;
   cResult[10] = first1;
   cResult[11] = obj5;
-}) : ((channelId) => {
+}) : (function ChannelSettingsEditForumTag(channelId) {
   let TableRow2;
   let Text;
   let TextInput;
@@ -252,7 +252,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   dependencyMap = tmp;
   let tmp2 = null == tag;
   _slicedToArray = tmp2;
-  let obj = channelId(1490);
+  let obj = channelId(1502);
   navigation = obj.useNavigation();
   let obj2 = navigation;
   let tmp6 = null;
@@ -423,18 +423,18 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       };
       setOptions(obj);
     } else {
-      setOptions({ headerRight: "r" });
+      setOptions({ headerRight: "create" });
     }
   }, items5);
   const obj5 = { style: tmp.container, children: null };
   const obj6 = { spacing: 24, style: tmp.sections, children: null };
-  const Stack = tmp3(5600).Stack;
-  const TableRowGroup = tmp3(6081).TableRowGroup;
-  const TableRow = tmp3(6000).TableRow;
+  const Stack = tmp3(5373).Stack;
+  const TableRowGroup = tmp3(6267).TableRowGroup;
+  const TableRow = tmp3(6184).TableRow;
   const obj7 = {
     style: tmp.emojiIconWrapper,
     accessibilityRole: "button",
-    onPress() {
+    onPress: function handleTapEmoji() {
       const obj = openEmojiPickerActionSheet;
       const obj2 = { onPressEmoji: handlePressEmoji, pickerIntention: constants.COMMUNITY_CONTENT, channel };
       const result = obj.openEmojiPickerActionSheet(obj2);
@@ -452,23 +452,23 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
         autoCorrect: false,
         autoCapitalize: "none",
         returnKeyType: "done",
-        onChangeText(arg0) {
+        onChangeText: function handleSetName(arg0) {
               closure_8(arg0);
             },
         placeholder: intl.string(channelId(1126).t.aMSq0a)
       };
-      TextInput = tmp3(1188).TextInput;
+      TextInput = tmp3(1200).TextInput;
       intl = tmp3(1126).intl;
       if (null != emoji) {
         const obj12 = {
           accessibilityRole: "button",
-          onPress() {
+          onPress: function handleClear() {
                   closure_6(null);
                   closure_8("");
                 },
-          children: closure_10(channelId(4803).CircleXIcon, { size: "xs" })
+          children: closure_10(channelId(4997).CircleXIcon, { size: "xs" })
         };
-        const PressableOpacity = tmp3(5916).PressableOpacity;
+        const PressableOpacity = tmp3(6189).PressableOpacity;
         tmp27Result = tmp27(PressableOpacity, obj12);
       } else {
         tmp27Result = null;
@@ -478,15 +478,15 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       items6 = [closure_10(TableRowGroup, obj14), ];
       const obj15 = { style: tmp.hint, children: closure_10(Text, obj16) };
       obj16 = { variant: "text-sm/medium", color: "text-muted", children: intl2.string(channelId(1126).t["3v8kZH"]) };
-      Text = tmp3(4892).Text;
+      Text = tmp3(5086).Text;
       intl2 = tmp3(1126).intl;
       items6[1] = closure_10(emoji, obj15);
       const items7 = [channel(emoji, obj13), , ];
-      const TableRowGroup2 = tmp3(6081).TableRowGroup;
+      const TableRowGroup2 = tmp3(6267).TableRowGroup;
       const obj17 = {
         label: intl3.string(channelId(1126).t["rMH+rt"]),
         value: flag,
-        onValueChange() {
+        onValueChange: function handleToggleModerated() {
               let tmp2 = !flag;
               const tmp = closure_10;
               if (flag) {
@@ -499,7 +499,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
               tmp(tmp2);
             }
       };
-      const TableSwitchRow = tmp3(6705).TableSwitchRow;
+      const TableSwitchRow = tmp3(6882).TableSwitchRow;
       intl3 = tmp3(1126).intl;
       if (flag == null) {
         flag = false;
@@ -509,11 +509,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       let tmp27Result3 = null;
       if (!tmp2) {
         const obj19 = { hasIcons: false, children: closure_10(TableRow2, obj20) };
-        const TableRowGroup3 = tmp3(6081).TableRowGroup;
+        const TableRowGroup3 = tmp3(6267).TableRowGroup;
         obj20 = {
           variant: "danger",
           label: intl4.string(channelId(1126).t.huYSMr),
-          onPress() {
+          onPress: function handleDeleteTag() {
                   let id;
                   let intl;
                   let intl2;
@@ -542,7 +542,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
                   show(obj);
                 }
         };
-        TableRow2 = tmp3(6000).TableRow;
+        TableRow2 = tmp3(6184).TableRow;
         intl4 = tmp3(1126).intl;
         tmp27Result3 = tmp27(TableRowGroup3, obj19);
       }
@@ -555,11 +555,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     ({ textEmoji: obj9.textEmojiStyle, imageEmoji: obj9.fastImageStyle } = tmp);
     emojiURL = undefined;
     const tmp31 = tag;
-    const tmp32 = tag(6632);
+    const tmp32 = tag(6809);
     if (null != stateFromStores) {
       const obj22 = { id: null, animated: null, size };
       ({ id: obj11.id, animated: obj11.animated } = stateFromStores);
-      const tmp31Result = tmp31(1402);
+      const tmp31Result = tmp31(1414);
       emojiURL = tmp31Result.getEmojiURL(obj22);
     }
     str2 = undefined;
@@ -571,7 +571,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     }
     tmp27Result4 = tmp27(tmp32, obj21);
   }
-  tmp27Result4 = tmp27(tmp3(8444).ReactionIcon, {});
+  tmp27Result4 = tmp27(tmp3(8930).ReactionIcon, {});
 });
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/forums/native/ChannelSettingsEditForumTag.tsx");

@@ -1,19 +1,19 @@
-// Module ID: 8552
-// Function ID: 8553
+// Module ID: 9036
+// Function ID: 9037
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 4875, 4556, 4549, 6755, 8553, 1126, 8555, 2]
+// Dependencies: [5, 32, 19, 5069, 4748, 4741, 6931, 9037, 1126, 9039, 2]
 // Exports: useOrderSigning
 
-// Module 8552 (useOrderSigning)
-import BillingUtils from "BillingUtils" /* 4549 */;
-import BillingErrorDefault from "BillingError" /* 4556 */;
-import PaymentConstants from "PaymentConstants" /* 4875 */;
+// Module 9036 (useOrderSigning)
+import BillingUtils from "BillingUtils" /* 4741 */;
+import BillingErrorDefault from "BillingError" /* 4748 */;
+import PaymentConstants from "PaymentConstants" /* 5069 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let closure_2, loadId, order2, purchaseToken;
+let closure_3, gatewayCheckoutContext, loadId, purchaseToken;
 
 let hasOwnProperty;
 let metroRequire;
@@ -49,13 +49,13 @@ export const useOrderSigning = function useOrderSigning(order) {
     if (!(error instanceof BillingErrorDefault)) {
       const self = this;
       const self2 = this;
-      tmp3 = new tmp(4556)(error);
+      tmp3 = new tmp(4748)(error);
     }
     const obj = BillingUtils;
     if (!obj.isExpectedHttpClientError(error)) {
       const _Error = Error;
       let tmp8 = tmp3;
-      const captureBillingException = tmp5(4549).captureBillingException;
+      const captureBillingException = tmp5(4741).captureBillingException;
       BillingUtils;
       if (error instanceof Error) {
         tmp8 = error;
@@ -67,7 +67,7 @@ export const useOrderSigning = function useOrderSigning(order) {
     if (null != arg2) {
       const self3 = this;
       const self4 = this;
-      tmp3 = new tmp(4556)(arg2);
+      tmp3 = new tmp(4748)(arg2);
     }
     closure_5(tmp3);
     return tmp3;
@@ -83,6 +83,7 @@ export const useOrderSigning = function useOrderSigning(order) {
         let c0;
         let c1;
         let c2;
+        let c3;
         let obj21;
         if (c6 === 2) {
           c6 = 3;
@@ -96,6 +97,7 @@ export const useOrderSigning = function useOrderSigning(order) {
             return { value: "IconComponent", done: null };
           }
         } else {
+          let c4;
           try {
             let billing_facet;
             let orderSigningError;
@@ -108,15 +110,15 @@ export const useOrderSigning = function useOrderSigning(order) {
                 c6 = 3;
                 return { value, done: true };
               } else {
-                closure_2 = tmp;
                 loadId = undefined;
                 purchaseToken = undefined;
-                c2 = undefined;
+                gatewayCheckoutContext = undefined;
+                c3 = undefined;
                 let obj4 = loadId;
                 if (loadId === undefined) {
                   obj4 = {};
                 }
-                ({ loadId: c0, purchaseToken: c1, errorExtra: c2 } = obj4);
+                ({ loadId: c0, purchaseToken: c1, gatewayCheckoutContext: c2, errorExtra: c3 } = obj4);
                 order = undefined;
                 billing_facet = undefined;
                 orderSigningError = undefined;
@@ -134,7 +136,7 @@ export const useOrderSigning = function useOrderSigning(order) {
               } else if (null == closure_130_0) {
                 const self5 = this;
                 const self6 = this;
-                const tmp77 = new purchaseToken(closure_2[4])("Order not created yet");
+                const tmp77 = new purchaseToken(gatewayCheckoutContext[4])("Order not created yet");
                 closure_130_5(tmp77);
                 c6 = 3;
                 return { value: { type: "failed" }, done: true };
@@ -143,25 +145,25 @@ export const useOrderSigning = function useOrderSigning(order) {
                 c4 = 1;
                 c5 = 3;
                 c6 = 1;
-                const obj7 = { orderId: closure_130_0.id, loadId, purchaseToken };
+                const obj7 = { orderId: closure_130_0.id, loadId, purchaseToken, gatewayCheckoutContext };
                 const obj8 = { value: obj21.signOrder(obj7), done: false };
-                obj21 = loadId(closure_2[6]);
+                obj21 = loadId(gatewayCheckoutContext[6]);
                 return obj8;
               }
             } else if (2 === c5) {
               let obj9;
               c4 = 0;
-              order2 = order;
-              if (order2 instanceof loadId(closure_2[6]).OrderSigningFailedWithConstraintsError) {
+              let closure_7 = closure_3;
+              if (closure_7 instanceof loadId(gatewayCheckoutContext[6]).OrderSigningFailedWithConstraintsError) {
                 if (closure_130_2 != null) {
-                  tmp64(order2.order);
+                  tmp64(closure_7.order);
                 }
-                closure_130_5(order2);
+                closure_130_5(closure_7);
                 obj9 = { type: "failed" };
               } else {
                 const obj10 = { orderId: closure_130_0.id };
-                const merged = Object.assign(c2);
-                closure_130_6(order2, obj10);
+                const merged = Object.assign(c3);
+                closure_130_6(closure_7, obj10);
                 obj9 = { type: "failed" };
               }
               c6 = 3;
@@ -176,16 +178,16 @@ export const useOrderSigning = function useOrderSigning(order) {
                 return { value, done: true };
               } else {
                 order = value;
-                if (order.status === constants.SIGNED) {
+                if (order.status === closure_1_7.SIGNED) {
                   c4 = 0;
                   c6 = 3;
                   return { value: { type: "signed", order }, done: true };
-                } else if (order.status === constants.SIGNING_IN_PROGRESS) {
+                } else if (order.status === closure_1_7.SIGNING_IN_PROGRESS) {
                   billing_facet = order.billing_facet;
                   c4 = 2;
                   let prop = null;
-                  const performSigningDeferralAction = loadId(closure_2[7]).performSigningDeferralAction;
-                  loadId(closure_2[7]);
+                  const performSigningDeferralAction = loadId(gatewayCheckoutContext[7]).performSigningDeferralAction;
+                  loadId(gatewayCheckoutContext[7]);
                   if (null != billing_facet) {
                     prop = billing_facet.order_signing_deferral_context;
                   }
@@ -194,7 +196,7 @@ export const useOrderSigning = function useOrderSigning(order) {
                   const obj15 = { value: performSigningDeferralAction(prop), done: false };
                   return obj15;
                 } else {
-                  const obj20 = loadId(closure_2[9]);
+                  const obj20 = loadId(gatewayCheckoutContext[9]);
                   orderSigningError = obj20.getOrderSigningError(order);
                   if (null != orderSigningError) {
                     closure_130_5(orderSigningError);
@@ -220,9 +222,9 @@ export const useOrderSigning = function useOrderSigning(order) {
               }
             } else if (4 === c5) {
               const obj17 = { orderId: closure_130_0.id };
-              const merged1 = Object.assign(c2);
-              const intl = loadId(closure_2[8]).intl;
-              closure_130_6(order, obj17, intl.string(loadId(closure_2[8]).t.khEaRI));
+              const merged1 = Object.assign(c3);
+              const intl = loadId(gatewayCheckoutContext[8]).intl;
+              closure_130_6(closure_3, obj17, intl.string(loadId(gatewayCheckoutContext[8]).t.khEaRI));
               c4 = 0;
               c6 = 3;
               return { value: { type: "failed" }, done: true };
@@ -239,7 +241,7 @@ export const useOrderSigning = function useOrderSigning(order) {
               return { value: { type: "pending", order }, done: true };
             }
           } catch (tmp80) {
-            order = tmp80;
+            closure_3 = tmp80;
             if (0 === c4) {
               c6 = 3;
               throw tmp80;

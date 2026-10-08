@@ -1,28 +1,28 @@
-// Module ID: 8934
-// Function ID: 8935
+// Module ID: 8565
+// Function ID: 8566
 // Name: Form/FormSwitch
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4797, 4735, 2]
+// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 4991, 4929, 2]
 
-// Module 8934 (Form/FormSwitch)
+// Module 8565 (Form/FormSwitch)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useThemeDefault from "useTheme" /* 4797 */;
+import useThemeDefault from "useTheme" /* 4991 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const shared = tmp(4735);
+const shared = tmp(4929);
 const Switch = react_native.Switch;
 const jsx = Fragment.jsx;
 let obj = { switch: { marginVertical: -5 }, track: obj2 };
 obj2 = { color: nativeDefault.colors.REDESIGN_INPUT_CONTROL_SELECTED };
 let closure_5 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((tintColor) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormSwitch(tintColor) {
   let accessibilityHint;
   let accessibilityLabel;
   let accessible;
@@ -116,7 +116,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((tintColor) => {
   cResult[1] = borderColor;
   cResult[2] = obj4;
   tmp10 = obj4;
-}) : ((value) => {
+}) : (function FormSwitch(value) {
   let accessibilityHint;
   let accessibilityLabel;
   let accessible;

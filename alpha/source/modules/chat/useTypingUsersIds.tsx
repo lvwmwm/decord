@@ -1,19 +1,19 @@
-// Module ID: 11593
-// Function ID: 11594
+// Module ID: 11656
+// Function ID: 11657
 // Name: useTypingUsersIds
-// Dependencies: [4525, 11592, 1377, 558, 576, 504, 2]
+// Dependencies: [4717, 11655, 1389, 558, 576, 504, 2]
 
-// Module 11593 (useTypingUsersIds)
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import TypingStore from "TypingStore" /* 11592 */;
-import UserStore from "UserStore" /* 1377 */;
+// Module 11656 (useTypingUsersIds)
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import TypingStore from "TypingStore" /* 11655 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTypingUserIds(arg0, arg1) {
   let closure_0;
   let first;
   _require = arg0;
@@ -88,7 +88,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = items1;
   tmp10 = items1;
   tmp9 = fn;
-}) : ((arg0) => {
+}) : (function useTypingUserIds(arg0) {
   let closure_0;
   _require = arg0;
   let MAX_SAFE_INTEGER = arg1;

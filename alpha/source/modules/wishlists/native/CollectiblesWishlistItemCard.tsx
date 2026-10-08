@@ -1,26 +1,26 @@
-// Module ID: 10783
-// Function ID: 10784
+// Module ID: 12736
+// Function ID: 12737
 // Name: CollectiblesWishlistItemCard
-// Dependencies: [109, 19, 7070, 10784, 21, 558, 576, 504, 8456, 8459, 8460, 2]
+// Dependencies: [109, 19, 7256, 12737, 21, 558, 576, 504, 8942, 8945, 8946, 2]
 
-// Module 10783 (CollectiblesWishlistItemCard)
+// Module 12736 (CollectiblesWishlistItemCard)
 import Fragment from "Fragment" /* 21 */;
-import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7070 */;
-import SKUPreview from "SKUPreview" /* 8459 */;
-import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 8460 */;
+import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7256 */;
+import SKUPreview from "SKUPreview" /* 8945 */;
+import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 8946 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import SentGiftsStore from "SentGiftsStore" /* 10784 */;
+import SentGiftsStore from "SentGiftsStore" /* 12737 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, importDefault, sku;
+let _require, dependencyMap, importDefault;
 
 let closure_3 = ["sku", "isOwned", "source", "wishlistOwnerId", "size"];
 let closure_6 = CollectiblesItemRecord.transformSKUToCollectiblesItem;
 const jsx = Fragment.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollectiblesWishlistItemCard(sku) {
   let closure_2;
   let id;
   let isOwned;
@@ -44,7 +44,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
     const tmp12 = _objectWithoutProperties(sku, closure_3);
     cResult[0] = sku;
     cResult[1] = tmp12;
-    class I {
+    class O {
       constructor() {
         const hasSentGiftResult = null != closure_2 && SentGiftsStore.hasSentGift(id.id, tmp);
         return hasSentGiftResult;
@@ -86,7 +86,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
     const tmpResult = tmp(504);
     const stateFromStores = tmpResult.useStateFromStores(tmp14, tmp16, tmp17);
     if (cResult[12] !== tmp6) {
-      const tmpResult2 = tmp(8456);
+      const tmpResult2 = tmp(8942);
       const productNameAndTypeFromSku = tmpResult2.getProductNameAndTypeFromSku(tmp6);
       cResult[12] = tmp6;
       cResult[13] = productNameAndTypeFromSku;
@@ -131,7 +131,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
         WishlistItemCardBaseDefault;
         const merged = Object.assign(tmp4);
         const tmp32 = <tmp28 accessibilityLabel={tmp19} renderPreview={tmp24} source={tmp7} size={tmp5} overlay={OWNED} />;
-        class I {
+        class O {
           constructor() {
             const hasSentGiftResult = null != closure_2 && SentGiftsStore.hasSentGift(id.id, tmp);
             return hasSentGiftResult;
@@ -146,9 +146,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
         cResult[25] = tmp32;
         tmp25 = tmp32;
       }
-      OWNED = tmp(8460).WishlistItemCardOverlay.OWNED;
+      OWNED = tmp(8946).WishlistItemCardOverlay.OWNED;
     }
-    const fn = function p() {
+    const fn = function _() {
       let tmp2 = null;
       if (null != closure_3) {
         tmp2 = jsx(SKUPreview.CollectiblesPreview, { collectiblesItemData: tmp, size });
@@ -160,7 +160,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
     cResult[18] = fn;
     tmp24 = fn;
   }
-  class I {
+  class O {
     constructor() {
       const hasSentGiftResult = null != closure_2 && SentGiftsStore.hasSentGift(id.id, tmp);
       return hasSentGiftResult;
@@ -169,11 +169,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
   const items1 = [tmp6.id, tmp9];
   cResult[8] = tmp6.id;
   cResult[9] = tmp9;
-  cResult[10] = I;
+  cResult[10] = O;
   cResult[11] = items1;
   tmp17 = items1;
-  tmp16 = I;
-}) : ((sku) => {
+  tmp16 = O;
+}) : (function CollectiblesWishlistItemCard(sku) {
   sku = sku.sku;
   let flag = sku.isOwned;
   if (flag === undefined) {

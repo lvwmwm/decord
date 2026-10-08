@@ -1,10 +1,10 @@
-// Module ID: 1361
-// Function ID: 1362
+// Module ID: 1373
+// Function ID: 1374
 // Name: utils/GlobalUtils
 // Dependencies: [2]
 // Exports: getGlobalObject
 
-// Module 1361 (utils/GlobalUtils)
+// Module 1373 (utils/GlobalUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/utils/GlobalUtils.tsx");

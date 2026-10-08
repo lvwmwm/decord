@@ -1,10 +1,10 @@
-// Module ID: 12549
-// Function ID: 12550
+// Module ID: 12647
+// Function ID: 12648
 // Name: ComponentProfiler
 // Dependencies: [19, 21, 558, 576, 2]
 // Exports: clearComponentRenderStats, dumpStats, getComponentRenderStats, pauseComponentProfiler, resetComponentProfiler, resumeComponentProfiler, serializeComponentRenderAverages
 
-// Module 12549 (ComponentProfiler)
+// Module 12647 (ComponentProfiler)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -45,7 +45,7 @@ Object.defineProperty(StatCollector.prototype, "mean", {
 });
 let closure_5 = {};
 let c6 = true;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ComponentProfiler(arg0) {
   let children;
   let first;
   let id;
@@ -106,7 +106,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = id;
   cResult[3] = tmp4;
   tmp3 = tmp4;
-}) : ((arg0) => {
+}) : (function ComponentProfiler(arg0) {
   let children;
   let id;
   ({ id, children } = arg0);

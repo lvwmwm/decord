@@ -1,15 +1,15 @@
-// Module ID: 11505
-// Function ID: 11506
+// Module ID: 11497
+// Function ID: 11498
 // Name: useSafetyHubClassifications
-// Dependencies: [19, 8139, 8126, 558, 576, 504, 11, 8125, 8127, 11506, 2]
+// Dependencies: [19, 5920, 5921, 558, 576, 504, 11, 5927, 5922, 11498, 2]
 
-// Module 11505 (useSafetyHubClassifications)
+// Module 11497 (useSafetyHubClassifications)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react2 from "react" /* 576 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8126 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 11506 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 5921 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 11498 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8139 */;
+import SafetyHubStore from "SafetyHubStore" /* 5920 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let tmp;
 const get_initialized = tmp(504);
 const ViolationType = SafetyHubConstants.ViolationType;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafetyHubClassifications() {
   let classifications;
   let tmp4;
   let tmp5;
@@ -64,7 +64,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[3];
   }
   return tmp7;
-}) : (() => {
+}) : (function useSafetyHubClassifications() {
   let classifications;
   let obj = get_initialized;
   const items = [SafetyHubStore];
@@ -78,7 +78,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 let closure_7 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafetyHubClassification(arg0) {
   let USER;
   let closure_0;
   let first;
@@ -149,14 +149,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const stateFromStores2 = tmpResult6.useStateFromStores(tmp12, tmp13);
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     const items3 = [SafetyHubStore];
-    class E {
+    class C {
       constructor() {
         return SafetyHubStore.getIsAppealEligible();
       }
     }
     cResult[8] = items3;
-    cResult[9] = E;
-    tmp17 = E;
+    cResult[9] = C;
+    tmp17 = C;
     tmp16 = items3;
   } else {
     tmp16 = cResult[8];
@@ -164,16 +164,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult7 = tmp(504);
   const stateFromStores3 = tmpResult7.useStateFromStores(tmp16, tmp17);
-  const tmpResult8 = tmp(8125);
+  const tmpResult8 = tmp(5927);
   if (tmpResult8.isGuildClassification(stateFromStores)) {
     let GUILD_MEMBER;
     const guild_metadata = stateFromStores.guild_metadata;
-    class E {
+    class C {
       constructor() {
         return SafetyHubStore.getIsAppealEligible();
       }
     }
-    if (undefined === tmp(8127).MemberType.OWNER) {
+    if (undefined === tmp(5922).MemberType.OWNER) {
       GUILD_MEMBER = ViolationType.GUILD_OWNER;
     } else {
       GUILD_MEMBER = ViolationType.GUILD_MEMBER;
@@ -191,7 +191,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp26 = cResult[14];
       }
       const effect = react.useEffect(tmp25, tmp26);
-      class E {
+      class C {
         constructor() {
           return SafetyHubStore.getIsAppealEligible();
         }
@@ -242,7 +242,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[14] = items4;
   tmp26 = items4;
   tmp25 = D;
-}) : ((arg0) => {
+}) : (function useSafetyHubClassification(arg0) {
   let USER;
   let closure_0;
   _require = arg0;
@@ -267,7 +267,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (guild_metadata != null) {
       member_type = guild_metadata.member_type;
     }
-    if (member_type === tmp(8127).MemberType.OWNER) {
+    if (member_type === tmp(5922).MemberType.OWNER) {
       GUILD_MEMBER = ViolationType.GUILD_OWNER;
     } else {
       GUILD_MEMBER = ViolationType.GUILD_MEMBER;
@@ -294,7 +294,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj6;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActiveSafetyHubClassifications() {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(4);
@@ -330,7 +330,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
     tmp5 = cResult[2];
   }
   return tmp5;
-}) : (() => {
+}) : (function useActiveSafetyHubClassifications() {
   const arr = closure_7();
   let date = new Date();
   return arr.filter((max_expiration_time) => {
@@ -339,7 +339,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExpiredSafetyHubClassifications() {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(4);
@@ -375,7 +375,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
     tmp5 = cResult[2];
   }
   return tmp5;
-}) : (() => {
+}) : (function useExpiredSafetyHubClassifications() {
   const arr = closure_7();
   let date = new Date();
   return arr.filter((max_expiration_time) => {
@@ -384,7 +384,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafetyHubAppealSignal() {
   let appealSignal;
   let tmp4;
   let tmp5;
@@ -404,7 +404,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useSafetyHubAppealSignal() {
   let appealSignal;
   const items = [SafetyHubStore];
   const obj = get_initialized;

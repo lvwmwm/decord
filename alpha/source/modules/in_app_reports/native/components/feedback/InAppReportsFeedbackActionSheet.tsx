@@ -1,37 +1,35 @@
-// Module ID: 17538
-// Function ID: 17539
+// Module ID: 17820
+// Function ID: 17821
 // Name: InAppReportsFeedbackActionSheet
-// Dependencies: [19, 1085, 11262, 21, 558, 576, 17539, 1252, 17540, 11265, 4573, 17541, 1126, 11283, 2]
+// Dependencies: [19, 1085, 9602, 21, 558, 576, 17821, 1264, 17822, 9605, 4765, 17823, 1126, 9623, 2]
 
-// Module 17538 (InAppReportsFeedbackActionSheet)
+// Module 17820 (InAppReportsFeedbackActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ToastUtils from "ToastUtils" /* 4573 */;
-import Constants2 from "Constants" /* 11262 */;
-import FeedbackUtils from "FeedbackUtils" /* 11265 */;
-import FeedbackActionSheetDefault from "FeedbackActionSheet" /* 11283 */;
-import getInAppReportsFeedbackOptionsDefault from "getInAppReportsFeedbackOptions" /* 17539 */;
-import trackInAppReportsFeedbackDefault from "trackInAppReportsFeedback" /* 17540 */;
-import intl_migration from "intl/migration" /* 17541 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import ToastUtils from "ToastUtils" /* 4765 */;
+import Constants2 from "Constants" /* 9602 */;
+import FeedbackUtils from "FeedbackUtils" /* 9605 */;
+import FeedbackActionSheetDefault from "FeedbackActionSheet" /* 9623 */;
+import getInAppReportsFeedbackOptionsDefault from "getInAppReportsFeedbackOptions" /* 17821 */;
+import trackInAppReportsFeedbackDefault from "trackInAppReportsFeedback" /* 17822 */;
+import intl_migration from "intl/migration" /* 17823 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let reportId;
-
 const AnalyticEvents = Constants.AnalyticEvents;
 const FeedbackType = Constants2.FeedbackType;
 const jsx = Fragment.jsx;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InAppReportsFeedbackActionSheet(reportId) {
   let first;
   let obj = reportId(576);
   const cResult = obj.c(15);
   reportId = reportId.reportId;
   const reportType = reportId.reportType;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp6 = reportType(17539)();
+    const tmp6 = reportType(17821)();
     cResult[0] = tmp6;
     first = tmp6;
   } else {
@@ -54,7 +52,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportId) => {
       }
       const _Symbol = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmpResult = reportId(17541);
+        const tmpResult = reportId(17823);
         const result = tmpResult.improperGetEnglishIntlMessageText("CALL_FEEDBACK_OPTION_OTHER");
         cResult[7] = result;
         tmp9 = result;
@@ -99,13 +97,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportId) => {
         }
         return tmp18;
       }
-      const tmp21 = jsx(reportType(11283), { headerLabel: tmp11, showHeaderCloseButton: true, hideDontShowAgainCheckbox: true, ratingsBodyLabel: tmp13, reasonsHeaderLabel: tmp14, reasons: first, feedbackReasons: tmp17, otherKey: tmp9, trackOpen: tmp7, trackReport: tmp8 });
+      const tmp21 = jsx(reportType(9623), { headerLabel: tmp11, showHeaderCloseButton: true, hideDontShowAgainCheckbox: true, ratingsBodyLabel: tmp13, reasonsHeaderLabel: tmp14, reasons: first, feedbackReasons: tmp17, otherKey: tmp9, trackOpen: tmp7, trackReport: tmp8 });
       cResult[12] = tmp7;
       cResult[13] = tmp8;
       cResult[14] = tmp21;
       tmp18 = tmp21;
     }
-    const fn2 = function u(arg0) {
+    function trackReport(arg0) {
       let dontShowAgain;
       let feedback;
       let flag;
@@ -135,22 +133,22 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportId) => {
         const obj4 = ToastUtils;
         obj4.presentFeedbackSent();
       }
-    };
+    }
     cResult[4] = reportId;
     cResult[5] = reportType;
-    cResult[6] = fn2;
-    tmp8 = fn2;
+    cResult[6] = trackReport;
+    tmp8 = trackReport;
   }
-  const fn = function b() {
+  function trackOpen() {
     const obj = AnalyticsUtilsDefault;
     const obj2 = { report_id: reportId, report_type: reportType };
     obj.track(AnalyticEvents.IAR_FEEDBACK_MODAL_VIEWED, obj2);
-  };
+  }
   cResult[1] = reportId;
   cResult[2] = reportType;
-  cResult[3] = fn;
-  tmp7 = fn;
-}) : ((arg0) => {
+  cResult[3] = trackOpen;
+  tmp7 = trackOpen;
+}) : (function InAppReportsFeedbackActionSheet(arg0) {
   ({ reportId: require, reportType: importDefault } = arg0);
   const tmp = getInAppReportsFeedbackOptionsDefault();
   let obj = intl_migration;

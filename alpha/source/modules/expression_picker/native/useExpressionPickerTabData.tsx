@@ -1,20 +1,20 @@
-// Module ID: 10098
-// Function ID: 10099
+// Module ID: 9682
+// Function ID: 9683
 // Name: useExpressionPickerTabData
-// Dependencies: [19, 1229, 558, 576, 1126, 2]
+// Dependencies: [19, 1241, 558, 576, 1126, 2]
 
-// Module 10098 (useExpressionPickerTabData)
+// Module 9682 (useExpressionPickerTabData)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import react from "react" /* 19 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1229 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1241 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 ({ ExpressionPickerOrder: c3, ExpressionPickerViewType: closure_4 } = ExpressionPickerConstants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExpressionPickerTabData(arg0) {
   let expressionPickerTabStrings;
   let expressionPickerTabs;
   let expressionPickerTabsSorted;
@@ -25,8 +25,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj3;
   let obj4;
   let obj5;
+  let obj7;
   let tmp4;
-  let tmp5;
   let tmp6;
   const obj = react2;
   const cResult = obj.c(14);
@@ -55,13 +55,19 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     intl3 = tmp(1126).intl;
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function u(order) {
-        return order.order;
-      };
-      cResult[5] = fn;
-      tmp10 = fn;
+      class I {
+        constructor(order) {
+          return order.order;
+        }
+      }
+      cResult[5] = I;
+      tmp10 = I;
     } else {
-      tmp10 = cResult[5];
+      class I {
+        constructor(order) {
+          return order.order;
+        }
+      }
     }
     const _Object = Object;
     const values = Object.values(obj2);
@@ -69,38 +75,46 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const sorted = found.sort(tmp10);
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn2 = function f(label) {
-        return label.label;
-      };
-      cResult[6] = fn2;
-      tmp11 = fn2;
+      class S {
+        constructor(label) {
+          return label.label;
+        }
+      }
+      cResult[6] = S;
+      tmp11 = S;
     } else {
-      tmp11 = cResult[6];
+      class S {
+        constructor(label) {
+          return label.label;
+        }
+      }
     }
     const mapped = sorted.map(tmp11);
     cResult[2] = expressionPickerTabs;
     cResult[3] = sorted;
     cResult[4] = mapped;
     tmp6 = mapped;
-    tmp5 = sorted;
   } else {
-    tmp5 = cResult[3];
+    class S {
+      constructor(label) {
+        return label.label;
+      }
+    }
     tmp6 = cResult[4];
   }
   if (cResult[7] === tmp5) {
-    let tmp13;
-    if (cResult[8] === tmp6) {
-      tmp13 = cResult[9];
+    class S {
+      constructor(label) {
+        return label.label;
+      }
     }
-    ({ expressionPickerTabsSorted, expressionPickerTabStrings } = tmp13);
+    ({ expressionPickerTabsSorted, expressionPickerTabStrings } = obj7);
     const viewType = (tmp4 < expressionPickerTabsSorted.length ? expressionPickerTabsSorted[tmp4] : expressionPickerTabsSorted[0]).viewType;
     if (cResult[10] === tmp4) {
-      if (cResult[11] === expressionPickerTabStrings) {
-        let tmp14;
-        if (cResult[12] === viewType) {
-          tmp14 = cResult[13];
+      class S {
+        constructor(label) {
+          return label.label;
         }
-        return tmp14;
       }
     }
     const obj6 = { expressionPickerSelectedIndex: tmp4, expressionPickerViewType: viewType, expressionPickerTabStrings };
@@ -108,14 +122,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[11] = expressionPickerTabStrings;
     cResult[12] = viewType;
     cResult[13] = obj6;
-    tmp14 = obj6;
   }
-  const obj7 = { expressionPickerTabsSorted: tmp5, expressionPickerTabStrings: tmp6 };
+  obj7 = { expressionPickerTabsSorted: tmp5, expressionPickerTabStrings: tmp6 };
   cResult[7] = tmp5;
   cResult[8] = tmp6;
   cResult[9] = obj7;
-  tmp13 = obj7;
-}) : ((arg0) => {
+}) : (function useExpressionPickerTabData(arg0) {
   let expressionPickerTabs;
   let expressionType;
   ({ expressionType, expressionPickerTabs } = arg0);

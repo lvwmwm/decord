@@ -1,13 +1,13 @@
-// Module ID: 15819
-// Function ID: 15820
+// Module ID: 16078
+// Function ID: 16079
 // Name: useUserSafetySettingsSelectedGuildId
-// Dependencies: [2074, 15815, 1085, 558, 576, 504, 2]
+// Dependencies: [2086, 16074, 1085, 558, 576, 504, 2]
 // Exports: useAllServersOptionSelected
 
-// Module 15819 (useUserSafetySettingsSelectedGuildId)
+// Module 16078 (useUserSafetySettingsSelectedGuildId)
 import Constants from "Constants" /* 1085 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 15815 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 16074 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,18 +17,21 @@ let closure_4;
 const GuildFeatures = Constants.GuildFeatures;
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const useUserSafetySettingsSelectedGuildId = () => React3().selectedGuildId;
+function useUserSafetySettingsSelectedGuildId() {
+  return React3().selectedGuildId;
+}
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-const fn2 = () => React3().selectedGuildId === _false;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  let fn;
+function useAllServersOptionSelected() {
+  return React3().selectedGuildId === _false;
+}
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSelectedGuildAHub() {
   let selectedGuildId;
   const obj = selectedGuildId(576);
   const cResult = obj.c(5);
   const tmp = selectedGuildId;
-  if (typeof fn === "function") {
+  if (typeof useUserSafetySettingsSelectedGuildId === "function") {
     let first;
     let tmp8;
     let tmp13;
@@ -42,7 +45,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       first = cResult[0];
     }
     if (cResult[1] !== selectedGuildId) {
-      fn = function u() {
+      const fn = function u() {
         return GuildStore.getGuild(selectedGuildId);
       };
       cResult[1] = selectedGuildId;
@@ -81,8 +84,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-}) : (() => {
-  if (typeof fn === "function") {
+}) : (function useIsSelectedGuildAHub() {
+  if (typeof useUserSafetySettingsSelectedGuildId === "function") {
     const selectedGuildId = closure_4().selectedGuildId;
     const items = [GuildStore];
     const obj = selectedGuildId(504);
@@ -103,5 +106,5 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 const result2 = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/useUserSafetySettingsSelectedGuildId.tsx");
 
 export { useUserSafetySettingsSelectedGuildId };
-export const useAllServersOptionSelected = fn2;
+export { useAllServersOptionSelected };
 export const useIsSelectedGuildAHub = tmp5;

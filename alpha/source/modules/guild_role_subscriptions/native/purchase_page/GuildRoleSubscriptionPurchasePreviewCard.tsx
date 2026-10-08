@@ -1,31 +1,29 @@
-// Module ID: 16541
-// Function ID: 16542
+// Module ID: 16796
+// Function ID: 16797
 // Name: GuildRoleSubscriptionPurchasePreviewCard
-// Dependencies: [32, 19, 17, 2051, 21, 4896, 587, 558, 576, 6476, 4892, 4860, 16542, 1987, 9966, 15073, 1188, 504, 5049, 1126, 5819, 15060, 16537, 5981, 16543, 2]
+// Dependencies: [32, 19, 17, 2063, 21, 5090, 587, 558, 576, 6654, 5086, 5054, 16797, 1999, 9493, 15335, 1200, 504, 5417, 1126, 8134, 15322, 16792, 6164, 16798, 2]
 
-// Module 16541 (GuildRoleSubscriptionPurchasePreviewCard)
+// Module 16796 (GuildRoleSubscriptionPurchasePreviewCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import useChannelNameDefault from "useChannelName" /* 5049 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6476 */;
-import LayoutUtils from "LayoutUtils" /* 9966 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15060 */;
-import EmojiIconDefault from "EmojiIcon" /* 15073 */;
+import native from "native" /* 1200 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import useChannelNameDefault from "useChannelName" /* 5417 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6654 */;
+import LayoutUtils from "LayoutUtils" /* 9493 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15322 */;
+import EmojiIconDefault from "EmojiIcon" /* 15335 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let channelId, listingId, onPress;
 
 let c10;
 let c9;
@@ -53,7 +51,7 @@ obj4 = { paddingVertical: 16, paddingHorizontal: 20, justifyContent: "center", a
 rect = { position: "absolute", left: 0, right: 0, height: 1, bottom: 0, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 let closure_11 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContentHeader(arg0) {
   let count;
   let items;
   let title;
@@ -109,7 +107,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.contentHeader;
   cResult[2] = items1;
   tmp6 = items1;
-}) : ((arg0) => {
+}) : (function ContentHeader(arg0) {
   let count;
   let items;
   let items1;
@@ -129,7 +127,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return React4(Text, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Separator() {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
@@ -144,12 +142,12 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
+}) : (function Separator() {
   const obj = { style: closure_11().separator };
   return metroImportAll(metroRequire, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiGallery(arg0) {
   let emojiIds;
   let guildId;
   let items;
@@ -200,7 +198,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const substr = emojiIds.slice(0, maxEmojis);
   const diff = emojiIds.length - maxEmojis;
-  const GappedList = tmp(9966).GappedList;
+  const GappedList = tmp(9493).GappedList;
   const tmp12 = closure_6;
   if (cResult[10] !== guildId) {
     class I {
@@ -235,7 +233,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return jsx(closure_1(closure_3[15]), obj, arg0);
       }
     }
-    const obj4 = { style: tmp4.emojiTruncatedContainer, children: closure_9(guildId(4892).Text, obj5) };
+    const obj4 = { style: tmp4.emojiTruncatedContainer, children: closure_9(guildId(5086).Text, obj5) };
     obj5 = { variant: "text-sm/bold", color: "text-default", children: items };
     items = ["+", diff];
     tmp15 = closure_8(tmp12, obj4, "andMore");
@@ -244,7 +242,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[13] = diff;
   cResult[14] = tmp4.emojiTruncatedContainer;
   cResult[15] = tmp15;
-}) : ((arg0) => {
+}) : (function EmojiGallery(arg0) {
   let GappedList;
   let emojiIds;
   let guildId;
@@ -275,7 +273,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return closure_8(closure_6, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function BenefitShowCase(arg0) {
   let description;
   let items;
   let items1;
@@ -289,7 +287,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp5 = title;
     if (typeof title === "string") {
       const obj2 = { variant: "text-md/semibold", color: "text-default", children: title };
-      tmp5 = metroImportAll(tmp(4892).Text, obj2);
+      tmp5 = metroImportAll(tmp(5086).Text, obj2);
     }
     cResult[0] = title;
     cResult[1] = tmp5;
@@ -326,7 +324,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = tmp6;
   cResult[6] = tmp13;
   tmp12 = tmp13;
-}) : ((arg0) => {
+}) : (function BenefitShowCase(arg0) {
   let description;
   let items1;
   let title;
@@ -350,7 +348,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return React4(tmp2, { children });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelBenefitShowCase(channelId) {
   let first;
   let items2;
   let tmp10;
@@ -407,7 +405,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
       tmp12 = cResult[5];
     }
     if (cResult[6] !== stateFromStores) {
-      const tmpResult2 = channelId(5819);
+      const tmpResult2 = channelId(8134);
       const channelIcon = tmpResult2.getChannelIcon(stateFromStores);
       cResult[6] = stateFromStores;
       cResult[7] = channelIcon;
@@ -416,8 +414,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
       tmp13 = cResult[7];
     }
     if (cResult[8] !== tmp13) {
-      const obj3 = { size: channelId(1188).Icon.Sizes.REFRESH_SMALL_16, source: tmp13 };
-      const Icon = tmp(1188).Icon;
+      const obj3 = { size: channelId(1200).Icon.Sizes.REFRESH_SMALL_16, source: tmp13 };
+      const Icon = tmp(1200).Icon;
       const tmp17 = closure_8(Icon, obj3);
       cResult[8] = tmp13;
       cResult[9] = tmp17;
@@ -427,7 +425,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
     }
     const _Symbol = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp20 = closure_8(channelId(1188).Spacer, { size: 4 });
+      const tmp20 = closure_8(channelId(1200).Spacer, { size: 4 });
       cResult[10] = tmp20;
       tmp18 = tmp20;
     } else {
@@ -435,7 +433,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
     }
     if (cResult[11] !== tmp9) {
       const obj4 = { variant: "text-md/semibold", color: "text-default", children: tmp9 };
-      const tmp23 = closure_8(channelId(4892).Text, obj4);
+      const tmp23 = closure_8(channelId(5086).Text, obj4);
       cResult[11] = tmp9;
       cResult[12] = tmp23;
       tmp21 = tmp23;
@@ -469,7 +467,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   cResult[17] = tmp10;
   cResult[18] = tmp29;
   tmp28 = tmp29;
-}) : ((channelId) => {
+}) : (function ChannelBenefitShowCase(channelId) {
   let items2;
   let tmpResult;
   channelId = channelId.channelId;
@@ -483,18 +481,18 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   let title = intl.string(channelId(1126).t.bz1PZX);
   if (null != stateFromStores) {
     const obj2 = { style: { flexDirection: "row", alignItems: "center" }, children: items2 };
-    const obj3 = { size: channelId(1188).Icon.Sizes.REFRESH_SMALL_16, source: tmpResult.getChannelIcon(stateFromStores) };
-    const Icon = tmp(1188).Icon;
-    tmpResult = channelId(5819);
-    items2 = [closure_8(Icon, obj3), closure_8(channelId(1188).Spacer, { size: 4 }), ];
+    const obj3 = { size: channelId(1200).Icon.Sizes.REFRESH_SMALL_16, source: tmpResult.getChannelIcon(stateFromStores) };
+    const Icon = tmp(1200).Icon;
+    tmpResult = channelId(8134);
+    items2 = [closure_8(Icon, obj3), closure_8(channelId(1200).Spacer, { size: 4 }), ];
     const obj4 = { variant: "text-md/semibold", color: "text-default", children: tmp4 };
-    items2[2] = closure_8(channelId(4892).Text, obj4);
+    items2[2] = closure_8(channelId(5086).Text, obj4);
     title = closure_9(closure_6, obj2);
   }
   return closure_8(closure_15, { title, description });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShowAllButton(onPress) {
   let intl;
   let items;
   let tmp10;
@@ -506,7 +504,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   const tmp4 = closure_11();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "text-sm/semibold", color: "interactive-text-hover", style: { marginTop: -1 }, children: intl.string(intl4.t["hub6t/"]) };
-    const Text = tmp(4892).Text;
+    const Text = tmp(5086).Text;
     intl = tmp(1126).intl;
     const tmp8 = metroImportAll(Text, obj2);
     const tmp9 = metroImportAll(native.Spacer, { size: 3 });
@@ -545,7 +543,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   cResult[6] = tmp10;
   cResult[7] = tmp16;
   tmp15 = tmp16;
-}) : ((onPress) => {
+}) : (function ShowAllButton(onPress) {
   let intl;
   let items;
   let obj2;
@@ -562,7 +560,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   return metroImportAll(hasOwnProperty, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
   let GappedList;
   let intl;
   let intl2;
@@ -594,7 +592,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
   const first2 = _slicedToArray(obj5.useChannelBenefits(listingId), 1)[0];
   const obj6 = GuildRoleSubscriptionListingEditStateUtilsAll;
   const first3 = _slicedToArray(obj6.useIntangibleBenefits(listingId), 1)[0];
-  const obj7 = listingId(16537);
+  const obj7 = listingId(16792);
   const formattedSubscriptionPlan = obj7.useFormattedSubscriptionPlan(listingId);
   const first4 = first2[0];
   const first5 = first3[0];
@@ -627,7 +625,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
       }
       const _Symbol = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp22 = closure_8(tmp2(1188).Spacer, { size: 16 });
+        const tmp22 = closure_8(tmp2(1200).Spacer, { size: 16 });
         cResult[8] = tmp22;
         tmp20 = tmp22;
       } else {
@@ -635,7 +633,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
       }
       if (cResult[9] !== first) {
         const obj9 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: first };
-        const tmp25 = closure_8(tmp2(4892).Text, obj9);
+        const tmp25 = closure_8(tmp2(5086).Text, obj9);
         cResult[9] = first;
         cResult[10] = tmp25;
         tmp23 = tmp25;
@@ -644,7 +642,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
       }
       const _Symbol2 = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp28 = closure_8(tmp2(1188).Spacer, { size: 4 });
+        const tmp28 = closure_8(tmp2(1200).Spacer, { size: 4 });
         cResult[11] = tmp28;
         tmp26 = tmp28;
       } else {
@@ -652,7 +650,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
       }
       if (cResult[12] !== formattedSubscriptionPlan) {
         const obj10 = { variant: "heading-md/medium", color: "text-default", children: formattedSubscriptionPlan };
-        const tmp31 = closure_8(tmp2(4892).Text, obj10);
+        const tmp31 = closure_8(tmp2(5086).Text, obj10);
         cResult[12] = formattedSubscriptionPlan;
         cResult[13] = tmp31;
         tmp29 = tmp31;
@@ -674,7 +672,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
             }
             const _Symbol3 = Symbol;
             if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-              const tmp42 = closure_8(tmp2(1188).Spacer, { size: 16 });
+              const tmp42 = closure_8(tmp2(1200).Spacer, { size: 16 });
               cResult[21] = tmp42;
               tmp40 = tmp42;
             } else {
@@ -682,7 +680,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
             }
             if (cResult[22] !== listingId) {
               const obj11 = { listingId };
-              const tmp46 = closure_8(guildId(16543), obj11);
+              const tmp46 = closure_8(guildId(16798), obj11);
               cResult[22] = listingId;
               cResult[23] = tmp46;
               tmp43 = tmp46;
@@ -733,7 +731,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
             }
             let tmp49Result6 = tmp11;
             if (tmp49Result6) {
-              const items1 = [closure_8(tmp2(1188).Spacer, { size: 24 }), , ];
+              const items1 = [closure_8(tmp2(1200).Spacer, { size: 24 }), , ];
               const obj13 = { style: tmp5.contentContainer, children: closure_9(GappedList, obj14) };
               let tmp49Result = null;
               obj14 = {
@@ -742,18 +740,18 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
                             },
                 children: items4
               };
-              GappedList = tmp2(9966).GappedList;
+              GappedList = tmp2(9493).GappedList;
               const tmp50 = closure_10;
               if (size > 0) {
                 const obj15 = { children: items2 };
                 const obj16 = { title: intl.string(tmp2(1126).t.ebOU2b), count: size };
                 intl = tmp2(1126).intl;
-                items2 = [closure_8(closure_12, obj16), closure_8(tmp2(1188).Spacer, { size: 8 }), , ];
+                items2 = [closure_8(closure_12, obj16), closure_8(tmp2(1200).Spacer, { size: 8 }), , ];
                 const obj17 = { emojiIds: items3, guildId, maxEmojis: 5 };
                 items3 = [];
                 HermesBuiltin.arraySpread(items3, first1, 0);
                 items2[2] = closure_8(closure_14, obj17);
-                items2[3] = closure_8(tmp2(1188).Spacer, { size: 4 });
+                items2[3] = closure_8(tmp2(1200).Spacer, { size: 4 });
                 tmp49Result = tmp49(tmp52, obj15);
               }
               items4 = [tmp49Result, , ];
@@ -763,11 +761,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
                 const obj19 = { title: intl2.formatToPlainString(tmp2(1126).t.y7dUrm, obj20), count: first2.length };
                 intl2 = tmp2(1126).intl;
                 obj20 = { numChannels: first2.length };
-                items5 = [closure_8(closure_12, obj19), closure_8(tmp2(1188).Spacer, { size: 12 }), , ];
+                items5 = [closure_8(closure_12, obj19), closure_8(tmp2(1200).Spacer, { size: 12 }), , ];
                 const obj21 = { channelId: null, description: null };
                 ({ ref_id: obj23.channelId, description: obj23.description } = first4);
                 items5[2] = closure_8(closure_16, obj21);
-                items5[3] = closure_8(tmp2(1188).Spacer, { size: 6 });
+                items5[3] = closure_8(tmp2(1200).Spacer, { size: 6 });
                 tmp49Result4 = tmp49(tmp52, obj18);
               }
               items4[1] = tmp49Result4;
@@ -777,11 +775,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
                 const obj24 = { title: intl3.formatToPlainString(tmp2(1126).t.MR7oOF, obj25), count: first3.length };
                 intl3 = tmp2(1126).intl;
                 obj25 = { numBenefits: first3.length };
-                items6 = [closure_8(closure_12, obj24), closure_8(tmp2(1188).Spacer, { size: 12 }), , ];
+                items6 = [closure_8(closure_12, obj24), closure_8(tmp2(1200).Spacer, { size: 12 }), , ];
                 const obj26 = { title: null, description: null };
                 ({ name: obj27.title, description: obj27.description } = first5);
                 items6[2] = closure_8(closure_15, obj26);
-                items6[3] = closure_8(tmp2(1188).Spacer, { size: 6 });
+                items6[3] = closure_8(tmp2(1200).Spacer, { size: 6 });
                 tmp49Result5 = tmp49(tmp52, obj22);
               }
               const obj28 = { children: items1 };
@@ -823,24 +821,24 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
       tmp32 = tmp35;
     }
     const obj54 = { source: tmp14, style: tmp5.image };
-    const tmp18 = closure_8(guildId(5981), obj54);
+    const tmp18 = closure_8(guildId(6164), obj54);
     cResult[5] = tmp5.image;
     cResult[6] = tmp14;
     cResult[7] = tmp18;
     tmp15 = tmp18;
   }
-  const fn = function l() {
+  function handleShowAllPerks() {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { listingId, guildId };
-    const tmp2 = asyncRequire(16542, dependencyMap.paths);
+    const tmp2 = asyncRequire(16797, dependencyMap.paths);
     openLazy(tmp2, "PurchaseCard:" + listingId, obj);
-  };
+  }
   cResult[0] = guildId;
   cResult[1] = listingId;
-  cResult[2] = fn;
-  tmp12 = fn;
-}) : ((listingId) => {
+  cResult[2] = handleShowAllPerks;
+  tmp12 = handleShowAllPerks;
+}) : (function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
   let GappedList;
   let intl;
   let intl2;
@@ -874,24 +872,24 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
   size = first1.size;
   const obj7 = { style: tmp2.container, children: items2 };
   const obj8 = { style: tmp2.header, children: items };
-  const obj6 = listingId(16537);
+  const obj6 = listingId(16792);
   const formattedSubscriptionPlan = obj6.useFormattedSubscriptionPlan(listingId);
   const tmp13 = guildId;
-  const tmp14 = guildId(5981);
+  const tmp14 = guildId(6164);
   if (str == null) {
     str = "";
   }
   items = [, , ];
   const obj9 = { source: { uri: str }, style: tmp2.image };
   items[0] = closure_8(tmp14, obj9);
-  items[1] = closure_8(listingId(1188).Spacer, { size: 16 });
+  items[1] = closure_8(listingId(1200).Spacer, { size: 16 });
   const obj10 = { children: items1 };
-  items1 = [closure_8(listingId(4892).Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: first }), closure_8(listingId(1188).Spacer, { size: 4 }), closure_8(listingId(4892).Text, { variant: "heading-md/medium", color: "text-default", children: formattedSubscriptionPlan })];
+  items1 = [closure_8(listingId(5086).Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: first }), closure_8(listingId(1200).Spacer, { size: 4 }), closure_8(listingId(5086).Text, { variant: "heading-md/medium", color: "text-default", children: formattedSubscriptionPlan })];
   items[2] = closure_9(closure_6, obj10);
-  items2 = [closure_9(closure_6, obj8), closure_8(listingId(1188).Spacer, { size: 16 }), closure_8(tmp13(16543), { listingId }), ];
+  items2 = [closure_9(closure_6, obj8), closure_8(listingId(1200).Spacer, { size: 16 }), closure_8(tmp13(16798), { listingId }), ];
   let tmp10Result6 = length > 0 || size > 0 || length2 > 0;
   if (tmp10Result6) {
-    const items3 = [closure_8(listingId(1188).Spacer, { size: 24 }), , ];
+    const items3 = [closure_8(listingId(1200).Spacer, { size: 24 }), , ];
     const obj11 = { style: tmp2.contentContainer, children: closure_9(GappedList, obj12) };
     let tmp10Result = null;
     obj12 = {
@@ -900,18 +898,18 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
         },
       children: items6
     };
-    GappedList = tmp6(9966).GappedList;
+    GappedList = tmp6(9493).GappedList;
     const tmp16 = closure_10;
     if (size > 0) {
       const obj13 = { children: items4 };
       const obj14 = { title: intl.string(listingId(1126).t.ebOU2b), count: size };
       intl = tmp6(1126).intl;
-      items4 = [closure_8(closure_12, obj14), closure_8(listingId(1188).Spacer, { size: 8 }), , ];
+      items4 = [closure_8(closure_12, obj14), closure_8(listingId(1200).Spacer, { size: 8 }), , ];
       const obj15 = { emojiIds: items5, guildId, maxEmojis: 5 };
       items5 = [];
       HermesBuiltin.arraySpread(items5, first1, 0);
       items4[2] = closure_8(closure_14, obj15);
-      items4[3] = closure_8(listingId(1188).Spacer, { size: 4 });
+      items4[3] = closure_8(listingId(1200).Spacer, { size: 4 });
       tmp10Result = tmp10(tmp11, obj13);
     }
     items6 = [tmp10Result, , ];
@@ -921,11 +919,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
       const obj17 = { title: intl2.formatToPlainString(listingId(1126).t.y7dUrm, obj18), count: first2.length };
       intl2 = tmp6(1126).intl;
       obj18 = { numChannels: first2.length };
-      items7 = [closure_8(closure_12, obj17), closure_8(listingId(1188).Spacer, { size: 12 }), , ];
+      items7 = [closure_8(closure_12, obj17), closure_8(listingId(1200).Spacer, { size: 12 }), , ];
       const obj20 = { channelId: null, description: null };
       ({ ref_id: obj19.channelId, description: obj19.description } = first4);
       items7[2] = closure_8(closure_16, obj20);
-      items7[3] = closure_8(listingId(1188).Spacer, { size: 6 });
+      items7[3] = closure_8(listingId(1200).Spacer, { size: 6 });
       tmp10Result4 = tmp10(tmp11, obj16);
     }
     items6[1] = tmp10Result4;
@@ -935,22 +933,22 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
       const obj22 = { title: intl3.formatToPlainString(listingId(1126).t.MR7oOF, obj24), count: first3.length };
       intl3 = tmp6(1126).intl;
       obj24 = { numBenefits: first3.length };
-      items8 = [closure_8(closure_12, obj22), closure_8(listingId(1188).Spacer, { size: 12 }), , ];
+      items8 = [closure_8(closure_12, obj22), closure_8(listingId(1200).Spacer, { size: 12 }), , ];
       const obj25 = { title: null, description: null };
       ({ name: obj23.title, description: obj23.description } = first5);
       items8[2] = closure_8(closure_15, obj25);
-      items8[3] = closure_8(listingId(1188).Spacer, { size: 6 });
+      items8[3] = closure_8(listingId(1200).Spacer, { size: 6 });
       tmp10Result5 = tmp10(tmp11, obj21);
     }
     const obj44 = { children: items3 };
     items6[2] = tmp10Result5;
     items3[1] = closure_8(closure_6, obj11);
     const obj45 = {
-      onPress() {
+      onPress: function handleShowAllPerks() {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           ActionSheetActionCreatorsDefault;
           const obj = { listingId, guildId };
-          const tmp2 = asyncRequire(16542, dependencyMap.paths);
+          const tmp2 = asyncRequire(16797, dependencyMap.paths);
           openLazy(tmp2, "PurchaseCard:" + listingId, obj);
         }
     };

@@ -1,10 +1,10 @@
-// Module ID: 8044
-// Function ID: 8045
+// Module ID: 8452
+// Function ID: 8453
 // Name: generateHydrationId
 // Dependencies: [2]
 // Exports: generateHydrationId
 
-// Module 8044 (generateHydrationId)
+// Module 8452 (generateHydrationId)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/icymi/generateHydrationId.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 15592
-// Function ID: 15593
+// Module ID: 15872
+// Function ID: 15873
 // Name: RevenueSmokeTestModal
-// Dependencies: [109, 19, 21, 7568, 558, 576, 6503, 7509, 10675, 15593, 10564, 2]
+// Dependencies: [109, 19, 21, 9279, 558, 576, 6679, 9232, 9588, 15873, 10161, 2]
 
-// Module 15592 (RevenueSmokeTestModal)
+// Module 15872 (RevenueSmokeTestModal)
 import Fragment from "Fragment" /* 21 */;
-import HeaderShared from "HeaderShared" /* 7509 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10675 */;
-import BillingFlowsDefault from "BillingFlows" /* 15593 */;
+import HeaderShared from "HeaderShared" /* 9232 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 9588 */;
+import BillingFlowsDefault from "BillingFlows" /* 15873 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import NativeStackView from "NativeStackView" /* 7568 */;
+import NativeStackView from "NativeStackView" /* 9279 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let _require;
 let closure_3 = ["children"];
 const jsx = Fragment.jsx;
 let Screen = NativeStackView.createNativeStackNavigator();
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function RevenueSmokeTestModal() {
   let accessibilityNativeStackOptions;
   let first;
   let tmp12;
@@ -28,7 +28,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   let tmp = accessibilityNativeStackOptions;
   let obj = accessibilityNativeStackOptions(576);
   const cResult = obj.c(6);
-  let obj2 = accessibilityNativeStackOptions(6503);
+  let obj2 = accessibilityNativeStackOptions(6679);
   accessibilityNativeStackOptions = obj2.useAccessibilityNativeStackOptions();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [];
@@ -38,7 +38,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     first = cResult[0];
   }
   if (cResult[1] !== accessibilityNativeStackOptions) {
-    const fn = function s(navigation) {
+    const fn = function c(navigation) {
       let obj2;
       let obj = {
         headerTitle(children) {
@@ -72,7 +72,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     cResult[3] = tmp11;
   }
   if (cResult[4] !== tmp6) {
-    const NativePaymentContextProvider = tmp(10564).NativePaymentContextProvider;
+    const NativePaymentContextProvider = tmp(10161).NativePaymentContextProvider;
     const tmp15 = <NativePaymentContextProvider skuIDs={first} activeSubscription={null}>{null}</NativePaymentContextProvider>;
     cResult[4] = tmp6;
     cResult[5] = tmp15;
@@ -81,7 +81,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     tmp12 = cResult[5];
   }
   return tmp12;
-}) : (() => {
+}) : (function RevenueSmokeTestModal() {
   let Navigator;
   let closure_0;
   let obj = require("Navigator");

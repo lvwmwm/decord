@@ -1,23 +1,21 @@
-// Module ID: 14903
-// Function ID: 14904
+// Module ID: 15165
+// Function ID: 15166
 // Name: QuestHomeOrbShopRewardCard
-// Dependencies: [19, 17, 1377, 1087, 21, 4896, 587, 558, 576, 8451, 4534, 504, 8452, 6664, 8454, 8516, 7077, 8559, 4860, 7858, 14904, 8538, 5916, 2]
+// Dependencies: [19, 17, 1389, 1087, 21, 5090, 587, 558, 576, 8937, 4726, 504, 8938, 6841, 8940, 9000, 7263, 9043, 5054, 8276, 15166, 9023, 6189, 2]
 
-// Module 14903 (QuestHomeOrbShopRewardCard)
+// Module 15165 (QuestHomeOrbShopRewardCard)
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7077 */;
-import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 7858 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7263 */;
+import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 8276 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore_mod from "UserStore" /* 1377 */;
+import UserStore_mod from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let product;
 
 let StyleSheet;
 let c9;
@@ -37,7 +35,7 @@ createStyles = createStyles.createStyles;
 obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_10 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeOrbShopRewardCard(product) {
   let analyticsLocations;
   let cardHeight;
   let cardWidth;
@@ -346,7 +344,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
   cResult[3] = product;
   cResult[4] = obj8;
   tmp14 = obj8;
-}) : ((product) => {
+}) : (function QuestHomeOrbShopRewardCard(product) {
   let defaultVariantIndex;
   let obj7;
   product = product.product;

@@ -1,30 +1,30 @@
-// Module ID: 16311
-// Function ID: 16312
+// Module ID: 16571
+// Function ID: 16572
 // Name: useGuildMediaState
-// Dependencies: [2050, 2056, 2055, 4918, 502, 2051, 2074, 4515, 4525, 2103, 5077, 4915, 1085, 1106, 558, 576, 504, 13537, 9195, 4504, 13538, 9033, 11, 5580, 2]
+// Dependencies: [2062, 2068, 2067, 5893, 502, 2063, 2086, 4707, 4717, 2115, 5971, 5111, 1085, 1106, 558, 576, 504, 13834, 8630, 4696, 13835, 8488, 11, 5890, 2]
 
-// Module 16311 (useGuildMediaState)
+// Module 16571 (useGuildMediaState)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1085 */;
 import ChannelTypes from "ChannelTypes" /* 1106 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import BlockedUserUtils from "BlockedUserUtils" /* 13538 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import StageInstanceStore from "StageInstanceStore" /* 2056 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4918 */;
+import ChannelRecord from "ChannelRecord" /* 2067 */;
+import BlockedUserUtils from "BlockedUserUtils" /* 13835 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
+import StageInstanceStore from "StageInstanceStore" /* 2068 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5893 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4515 */;
-import RelationshipStore from "RelationshipStore" /* 4525 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
-import VoiceStateStore from "VoiceStateStore" /* 4915 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2086 */;
+import PermissionStore from "PermissionStore" /* 4707 */;
+import RelationshipStore from "RelationshipStore" /* 4717 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
+import VoiceStateStore from "VoiceStateStore" /* 5111 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, blockedOrIgnoredIDs, closure_2, getBasicChannel, obj1, tmp15, voiceChannelId;
+let _require, blockedOrIgnoredIDs, closure_2, getBasicChannel, obj1, voiceChannelId;
 
 function canConnectToChannel(type, arg1) {
   let obj = arg2;
@@ -36,14 +36,13 @@ function canConnectToChannel(type, arg1) {
 }
 const isVoiceChannel = ChannelRecord.isVoiceChannel;
 const BasicPermissions = Constants.BasicPermissions;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildMediaState(arg0) {
   let closure_0;
   let first;
   let isDontBadgeMutedVcsEnabled;
   let tmp10;
   let tmp13;
-  let tmp14;
-  let tmp17;
+  let tmp16;
   let tmp6;
   _require = arg0;
   let tmp = _require;
@@ -101,81 +100,90 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   if (cResult[4] !== arg0) {
-    class V {
+    class G {
       constructor() {
-        return closure_13.isMuted(closure_0);
+        embeddedActivitiesForGuild = closure_3.getEmbeddedActivitiesForGuild(closure_0);
+        return embeddedActivitiesForGuild.filter(() => { /* body not rendered: F147452 */ });
       }
     }
     cResult[4] = arg0;
-    cResult[5] = tmp14;
-    tmp13 = tmp14;
+    cResult[5] = G;
+    tmp13 = G;
   } else {
-    class V {
+    class G {
       constructor() {
-        return closure_13.isMuted(closure_0);
+        embeddedActivitiesForGuild = closure_3.getEmbeddedActivitiesForGuild(closure_0);
+        return embeddedActivitiesForGuild.filter(() => { /* body not rendered: F147452 */ });
       }
     }
   }
   const tmpResult7 = tmp(tmp2[16]);
   const stateFromStoresArray = tmpResult7.useStateFromStoresArray(tmp10, tmp13);
-  let tmp16;
+  let tmp15;
   if (stateFromStoresArray[0] != null) {
-    class V {
+    class G {
       constructor() {
-        return closure_13.isMuted(closure_0);
+        embeddedActivitiesForGuild = closure_3.getEmbeddedActivitiesForGuild(closure_0);
+        return embeddedActivitiesForGuild.filter(() => { /* body not rendered: F147452 */ });
       }
     }
   }
-  if (cResult[6] !== tmp16) {
-    class V {
+  if (cResult[6] !== tmp15) {
+    class G {
       constructor() {
-        return closure_13.isMuted(closure_0);
+        embeddedActivitiesForGuild = closure_3.getEmbeddedActivitiesForGuild(closure_0);
+        return embeddedActivitiesForGuild.filter(() => { /* body not rendered: F147452 */ });
       }
     }
-    const embeddedActivityLocationChannelId = obj6.getEmbeddedActivityLocationChannelId(tmp16);
-    cResult[6] = tmp16;
+    const embeddedActivityLocationChannelId = obj6.getEmbeddedActivityLocationChannelId(tmp15);
+    cResult[6] = tmp15;
     cResult[7] = embeddedActivityLocationChannelId;
-    tmp17 = embeddedActivityLocationChannelId;
+    tmp16 = embeddedActivityLocationChannelId;
   } else {
-    class V {
+    class G {
       constructor() {
-        return closure_13.isMuted(closure_0);
+        embeddedActivitiesForGuild = closure_3.getEmbeddedActivitiesForGuild(closure_0);
+        return embeddedActivitiesForGuild.filter(() => { /* body not rendered: F147452 */ });
       }
     }
   }
   const tmpResult8 = tmp(tmp2[21]);
-  const isActivitiesInTextEnabled = tmpResult8.useIsActivitiesInTextEnabled(tmp17);
+  const isActivitiesInTextEnabled = tmpResult8.useIsActivitiesInTextEnabled(tmp16);
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    class V {
+    class G {
       constructor() {
-        return closure_13.isMuted(closure_0);
+        embeddedActivitiesForGuild = closure_3.getEmbeddedActivitiesForGuild(closure_0);
+        return embeddedActivitiesForGuild.filter(() => { /* body not rendered: F147452 */ });
       }
     }
     const items2 = [SelectedChannelStore, , , , , ];
-    let tmp21 = VoiceStateStore;
+    let tmp20 = VoiceStateStore;
     items2[1] = VoiceStateStore;
-    let tmp22 = GuildStore;
+    let tmp21 = GuildStore;
     items2[2] = GuildStore;
+    let tmp22 = PermissionStore;
     items2[3] = PermissionStore;
     items2[4] = ChannelStore;
     items2[5] = UserGuildSettingsStore;
     cResult[8] = items2;
-    let tmp20 = items2;
+    let tmp19 = items2;
   } else {
-    class V {
+    class G {
       constructor() {
-        return closure_13.isMuted(closure_0);
+        embeddedActivitiesForGuild = closure_3.getEmbeddedActivitiesForGuild(closure_0);
+        return embeddedActivitiesForGuild.filter(() => { /* body not rendered: F147452 */ });
       }
     }
   }
   if (cResult[9] === arg0) {
-    class V {
+    class G {
       constructor() {
-        return closure_13.isMuted(closure_0);
+        embeddedActivitiesForGuild = closure_3.getEmbeddedActivitiesForGuild(closure_0);
+        return embeddedActivitiesForGuild.filter(() => { /* body not rendered: F147452 */ });
       }
     }
   }
-  class M {
+  class U {
     constructor() {
       voiceChannelId = closure_1_12.getVoiceChannelId();
       tmp3 = afkChannelId;
@@ -243,7 +251,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
       }
-      obj1 = { guildHasVoice: flag, guildHasVideo: (() => { /* body not rendered: F145965 */ })(), selectedVoiceChannelHasVideo: null };
+      obj1 = { guildHasVoice: flag, guildHasVideo: (() => { /* body not rendered: F147453 */ })(), selectedVoiceChannelHasVideo: null };
       hasVideoResult = null != voiceChannelId;
       if (hasVideoResult) {
         tmp21 = closure_1_14;
@@ -257,9 +265,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[9] = arg0;
   cResult[10] = stateFromStores;
   cResult[11] = isDontBadgeMutedVcsEnabled;
-  cResult[12] = M;
+  cResult[12] = U;
   cResult[13] = items3;
-}) : ((arg0) => {
+}) : (function useGuildMediaState(arg0) {
   let closure_0;
   let id;
   let isDontBadgeMutedVcsEnabled;

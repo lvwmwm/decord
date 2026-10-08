@@ -1,28 +1,28 @@
-// Module ID: 15699
-// Function ID: 15700
+// Module ID: 15979
+// Function ID: 15980
 // Name: UserSettingsDesignSystemSheets
-// Dependencies: [32, 19, 17, 1085, 21, 4896, 558, 576, 9230, 6703, 6651, 6105, 5600, 6704, 6708, 4860, 5601, 1126, 10058, 15700, 4892, 6002, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5090, 558, 576, 8538, 6880, 6828, 6283, 5373, 6881, 6885, 5054, 5375, 1126, 10303, 15980, 5086, 6186, 2]
 
-// Module 15699 (UserSettingsDesignSystemSheets)
+// Module 15979 (UserSettingsDesignSystemSheets)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Stack_Stack from "Stack/Stack" /* 5600 */;
-import components_Button_Button from "components/Button/Button" /* 5601 */;
-import Card_Card from "Card/Card" /* 6002 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 6105 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6651 */;
-import ActionSheetRow from "ActionSheetRow" /* 6704 */;
-import ActionSheet2 from "ActionSheet" /* 6708 */;
-import PromoSheet2 from "PromoSheet" /* 10058 */;
-import _modDef15700 from "module_15700" /* 15700 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Stack_Stack from "Stack/Stack" /* 5373 */;
+import components_Button_Button from "components/Button/Button" /* 5375 */;
+import Card_Card from "Card/Card" /* 6186 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 6283 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6828 */;
+import ActionSheetRow from "ActionSheetRow" /* 6881 */;
+import ActionSheet2 from "ActionSheet" /* 6885 */;
+import PromoSheet2 from "PromoSheet" /* 10303 */;
+import _modDef15980 from "module_15980" /* 15980 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ const NOOP = Constants.NOOP;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = createStyles.createStyles({ container: { padding: 16, alignItems: "center" } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoActionSheet() {
   let first;
   let first1;
   let items;
@@ -75,7 +75,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       let tmp24 = tmp5;
       if (tmp24) {
         const obj2 = { onPress: NOOP };
-        tmp24 = metroImportDefault(tmp(6703).ActionSheetCloseButton, obj2);
+        tmp24 = metroImportDefault(tmp(6880).ActionSheetCloseButton, obj2);
       }
       cResult[3] = tmp5;
       cResult[4] = tmp24;
@@ -150,28 +150,28 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               }
               const _Symbol2 = Symbol;
               if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
-                class N {
+                class M {
                   constructor() {
                     return tmp18("");
                   }
                 }
-                cResult[25] = N;
-                tmp51 = N;
+                cResult[25] = M;
+                tmp51 = M;
               } else {
-                class N {
+                class M {
                   constructor() {
                     return tmp18("");
                   }
                 }
               }
               if (cResult[26] === tmp17) {
-                class N {
+                class M {
                   constructor() {
                     return tmp18("");
                   }
                 }
                 if (cResult[29] === tmp47) {
-                  class N {
+                  class M {
                     constructor() {
                       return tmp18("");
                     }
@@ -219,19 +219,19 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   let tmp21 = first;
   if (tmp21) {
-    class N {
+    class M {
       constructor() {
         return tmp18("");
       }
     }
     const obj12 = { onPress: NOOP, label: tmp17 };
-    tmp21 = metroImportDefault(tmp(9230).ActionSheetHeaderPressableText, obj12);
+    tmp21 = metroImportDefault(tmp(8538).ActionSheetHeaderPressableText, obj12);
   }
   cResult[0] = tmp17;
   cResult[1] = first;
   cResult[2] = tmp21;
   tmp20 = tmp21;
-}) : (() => {
+}) : (function DemoActionSheet() {
   let Stack;
   let first;
   let first1;
@@ -270,18 +270,18 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   tmp16Result = first;
   if (tmp16Result) {
     const obj2 = { onPress: NOOP, label: tmp14 };
-    tmp16Result = tmp16(tmp17(9230).ActionSheetHeaderPressableText, obj2);
+    tmp16Result = tmp16(tmp17(8538).ActionSheetHeaderPressableText, obj2);
   }
   tmp16Result2 = tmp2;
   if (tmp16Result2) {
     const obj3 = { onPress: NOOP };
-    tmp16Result2 = tmp16(tmp17(6703).ActionSheetCloseButton, obj3);
+    tmp16Result2 = tmp16(tmp17(6880).ActionSheetCloseButton, obj3);
   }
   const obj4 = { header: metroImportDefault(BottomSheetTitleHeader, obj), children: metroImportAll(Stack, obj5) };
   obj5 = { spacing: 24, children: items1 };
-  Stack = tmp17(5600).Stack;
+  Stack = tmp17(5373).Stack;
   const obj6 = { children: items };
-  const Stack2 = tmp17(5600).Stack;
+  const Stack2 = tmp17(5373).Stack;
   items = [metroImportDefault(TextInput_TextInput.TextInput, { value: first1, onChange: tmp9, label: "Title" }), ];
   const obj7 = {
     value: tmp11,
@@ -296,7 +296,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   items[1] = metroImportDefault(TextInput_TextInput.TextInput, obj7);
   items1 = [metroImportAll(Stack2, obj6), , ];
   const obj8 = { hasIcons: false, children: items2 };
-  const Group = tmp17(6704).ActionSheetRow.Group;
+  const Group = tmp17(6881).ActionSheetRow.Group;
   items2 = [metroImportDefault(ActionSheetRow.ActionSheetSwitchRow, { value: first, onValueChange: tmp6, label: "Show Leading" }), metroImportDefault(ActionSheetRow.ActionSheetSwitchRow, { value: tmp2, onValueChange: tmp3, label: "Show Trailing" })];
   items1[1] = metroImportAll(Group, obj8);
   const obj9 = {
@@ -313,7 +313,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return metroImportDefault(ActionSheet, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoPromoSheet() {
   let first;
   let intl;
   let obj4;
@@ -330,7 +330,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         },
       text: intl.string(intl2.t.BddRzS)
     };
-    const Button = tmp(5601).Button;
+    const Button = tmp(5375).Button;
     intl = tmp(1126).intl;
     const tmp6 = metroImportDefault(Button, obj2);
     cResult[0] = tmp6;
@@ -341,8 +341,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { graphic: obj4, gradientColor: "purple", title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: first };
     obj4 = { type: "image", src: obj5, aspectRatio: "16/9" };
-    obj5 = { uri: _modDef15700 };
-    const PromoSheet = tmp(10058).PromoSheet;
+    obj5 = { uri: _modDef15980 };
+    const PromoSheet = tmp(10303).PromoSheet;
     const tmp10 = metroImportDefault(PromoSheet, obj3);
     cResult[1] = tmp10;
     tmp7 = tmp10;
@@ -350,7 +350,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[1];
   }
   return tmp7;
-}) : (() => {
+}) : (function DemoPromoSheet() {
   let intl;
   let obj3;
   let obj4;
@@ -367,13 +367,13 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   intl = intl2.intl;
   const obj2 = { graphic: obj3, gradientColor: "purple", title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: tmp };
   obj3 = { type: "image", src: obj4, aspectRatio: "16/9" };
-  obj4 = { uri: _modDef15700 };
+  obj4 = { uri: _modDef15980 };
   tmp = metroImportDefault(Button, obj);
   const PromoSheet = PromoSheet2.PromoSheet;
   return metroImportDefault(PromoSheet, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsDesignSystemSheets() {
   let Stack;
   let Stack3;
   let items;
@@ -401,10 +401,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { children: metroImportAll(Stack, obj3) };
-    const Card = tmp(6002).Card;
+    const Card = tmp(6186).Card;
     obj3 = { children: items };
     items = [tmp5, tmp6, ];
-    Stack = tmp(5600).Stack;
+    Stack = tmp(5373).Stack;
     const obj4 = {
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
@@ -422,11 +422,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { children: items1 };
     items1 = [tmp10, ];
-    const Stack2 = tmp(5600).Stack;
+    const Stack2 = tmp(5373).Stack;
     const obj6 = { children: metroImportAll(Stack3, obj7) };
-    const Card2 = tmp(6002).Card;
+    const Card2 = tmp(6186).Card;
     obj7 = { children: items2 };
-    Stack3 = tmp(5600).Stack;
+    Stack3 = tmp(5373).Stack;
     items2 = [metroImportDefault(Text_Text.Text, { variant: "text-lg/bold", children: "Promo Sheet" }), metroImportDefault(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "A sheet with an illustration, title, description, and actions." }), ];
     const obj8 = { onPress: showDemoPromoSheet, text: "Show Promo Sheet" };
     items2[2] = metroImportDefault(components_Button_Button.Button, obj8);
@@ -447,7 +447,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp19 = cResult[5];
   }
   return tmp19;
-}) : (() => {
+}) : (function UserSettingsDesignSystemSheets() {
   let Stack;
   let Stack2;
   let Stack3;

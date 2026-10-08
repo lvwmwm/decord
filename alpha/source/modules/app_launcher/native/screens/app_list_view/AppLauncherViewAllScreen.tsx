@@ -1,27 +1,27 @@
-// Module ID: 11835
-// Function ID: 11836
+// Module ID: 11920
+// Function ID: 11921
 // Name: AppLauncherViewAllScreen
-// Dependencies: [19, 17, 1489, 21, 4896, 587, 11769, 558, 576, 1618, 11007, 11679, 7047, 1126, 6021, 5916, 4892, 1188, 11731, 11684, 11767, 11736, 11739, 11740, 11680, 8961, 2]
+// Dependencies: [19, 17, 1501, 21, 5090, 587, 11836, 558, 576, 1630, 11232, 11744, 7235, 1126, 6207, 6189, 5086, 1200, 11797, 11749, 11834, 11802, 11805, 11806, 11745, 11233, 2]
 
-// Module 11835 (AppLauncherViewAllScreen)
+// Module 11920 (AppLauncherViewAllScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4892 */;
-import Pressables from "Pressables" /* 5916 */;
-import ArrowLargeLeftIcon2 from "ArrowLargeLeftIcon" /* 6021 */;
-import AppLauncherContext from "AppLauncherContext" /* 11007 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11679 */;
-import AppLauncherBackButton from "AppLauncherBackButton" /* 11769 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5086 */;
+import Pressables from "Pressables" /* 6189 */;
+import ArrowLargeLeftIcon2 from "ArrowLargeLeftIcon" /* 6207 */;
+import AppLauncherContext from "AppLauncherContext" /* 11232 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11744 */;
+import AppLauncherBackButton from "AppLauncherBackButton" /* 11836 */;
 import react from "react" /* 19 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1489 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let closure_12, navigation;
+let closure_12;
 
 let metroImportAll;
 let metroImportDefault;
@@ -30,7 +30,7 @@ let obj3;
 let obj4;
 let size;
 let tmp;
-const ApplicationCommandTypes = tmp(7047);
+const ApplicationCommandTypes = tmp(7235);
 const View = react_native.View;
 const DEFAULT_CONTENT_PADDING = AppLauncherNativeConstants.DEFAULT_CONTENT_PADDING;
 const FLASH_LIST_ITEM_IMPRESSION_VIEWABILITY_CONFIG = AppLauncherNativeConstants.FLASH_LIST_ITEM_IMPRESSION_VIEWABILITY_CONFIG;
@@ -44,7 +44,7 @@ obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "space-betw
 obj4 = { paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingBottom: nativeDefault.space.PX_4 };
 size = { width: AppLauncherBackButton.BACK_BUTTON_SIZE, height: AppLauncherBackButton.BACK_BUTTON_SIZE, alignItems: "center", justifyContent: "center" };
 let closure_10 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherViewAllScreen(navigation) {
   let analyticsLocation;
   let keyboardCloseReasonRef;
   let onExecuteCommand;
@@ -162,7 +162,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
   cResult[1] = keyboardCloseReasonRef;
   cResult[2] = navigation;
   cResult[3] = fn;
-}) : ((route) => {
+}) : (function AppLauncherViewAllScreen(route) {
   let bottomVisibilityInsetRef;
   let flashListRef;
   let items10;

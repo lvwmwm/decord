@@ -1,16 +1,20 @@
-// Module ID: 13561
-// Function ID: 13562
+// Module ID: 13857
+// Function ID: 13858
 // Name: SharedSpacesWarningStore
-// Dependencies: [570, 4756, 7204, 2]
-// Exports: dequeueBlockWarning, getChannelDismissTimestamp, getGlobalDismissTimestamp, getUserDismissTimestamp, isBlockedWarningQueued, queueBlockWarning, setDismissalTimeForChannel, setDismissalTimeForUser, setDismissalTimeForUsers
+// Dependencies: [1102, 570, 4950, 7383, 2]
+// Exports: dequeueBlockWarning, gdmBlockedWarningInCooldown, getChannelDismissTimestamp, getGlobalDismissTimestamp, getUserDismissTimestamp, isBlockedWarningQueued, queueBlockWarning, setDismissalTimeForChannel, setDismissalTimeForUser, setDismissalTimeForUsers, userBlockedWarningInCooldown, voiceBlockedWarningInCooldownForUsers
 
-// Module 13561 (SharedSpacesWarningStore)
+// Module 13857 (SharedSpacesWarningStore)
+import DurationsDefault from "Durations" /* 1102 */;
 import module_570 from "module_570" /* 570 */;
-import combine_mod from "combine" /* 4756 */;
+import combine_mod from "combine" /* 4950 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
+let closure_2 = 3 * DurationsDefault.Millis.DAY;
+let closure_3 = 2 * DurationsDefault.Millis.DAY;
+const HOUR = DurationsDefault.Millis.HOUR;
 const create = module_570.create;
 let combine = combine_mod;
 let obj = { name: "shared-spaces-warning-storage", storage: combine.createJSONStorage(() => require("LocalStorageWrapper")) };
@@ -71,4 +75,68 @@ export const setDismissalTimeForUsers = function setDismissalTimeForUsers(arg0) 
     const merged1 = Object.assign(closure_0);
     return obj;
   });
+};
+export const voiceBlockedWarningInCooldownForUsers = function voiceBlockedWarningInCooldownForUsers(arg0) {
+  let num = obj2.getState().globalDismissTimestamp;
+  if (num == null) {
+    num = 0;
+  }
+  let everyResult = num > Date.now() - HOUR;
+  if (!everyResult) {
+    const _Array = Array;
+    const arr = Array.from(arg0);
+    everyResult = arr.every((item) => {
+      let flag = true;
+      if (!flag) {
+        let num = obj2.getState().globalDismissTimestamp;
+        if (num == null) {
+          num = 0;
+        }
+        const _Date = Date;
+        flag = num <= Date.now() - HOUR;
+      }
+      let tmp5 = !flag;
+      if (flag) {
+        let num2 = obj2.getState().userDismissTimestamps[item];
+        if (num2 == null) {
+          num2 = 0;
+        }
+        const _Date2 = Date;
+        tmp5 = num2 > Date.now() - closure_1_3;
+      }
+      return tmp5;
+    });
+  }
+  return everyResult;
+};
+export const userBlockedWarningInCooldown = function userBlockedWarningInCooldown(arg0) {
+  let flag = arg1;
+  if (arg1 === undefined) {
+    flag = false;
+  }
+  if (!flag) {
+    let num = obj2.getState().globalDismissTimestamp;
+    if (num == null) {
+      num = 0;
+    }
+    const _Date = Date;
+    flag = num <= Date.now() - HOUR;
+  }
+  let tmp5 = !flag;
+  if (flag) {
+    let num2 = obj2.getState().userDismissTimestamps[arg0];
+    if (num2 == null) {
+      num2 = 0;
+    }
+    const _Date2 = Date;
+    tmp5 = num2 > Date.now() - closure_3;
+  }
+  return tmp5;
+};
+export const gdmBlockedWarningInCooldown = function gdmBlockedWarningInCooldown(arg0) {
+  let num = obj2.getState().channelDismissTimestamps[arg0];
+  if (num == null) {
+    num = 0;
+  }
+  return num > Date.now() - closure_2;
 };

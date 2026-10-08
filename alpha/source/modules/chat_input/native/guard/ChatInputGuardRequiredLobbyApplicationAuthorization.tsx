@@ -1,28 +1,25 @@
-// Module ID: 12131
-// Function ID: 12132
+// Module ID: 12210
+// Function ID: 12211
 // Name: ChatInputGuardRequiredLobbyApplicationAuthorization
-// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 12105, 1126, 4571, 2]
+// Dependencies: [19, 21, 5090, 587, 558, 576, 12183, 6164, 1126, 4763, 2]
 
-// Module 12131 (ChatInputGuardRequiredLobbyApplicationAuthorization)
-import react_native from "react-native" /* 17 */;
+// Module 12210 (ChatInputGuardRequiredLobbyApplicationAuthorization)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import LinkingDefault from "Linking" /* 4571 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12105 */;
+import LinkingDefault from "Linking" /* 4763 */;
+import FastImageDefault from "FastImage" /* 6164 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12183 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let requiredLinkedLobbyApplication;
-
 let size;
-const Image = react_native.Image;
 const jsx = Fragment.jsx;
 let obj = { icon: size };
 size = { height: 40, width: 40, resizeMode: "contain", borderRadius: nativeDefault.radii.md };
-let closure_5 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((requiredLinkedLobbyApplication) => {
+let closure_4 = createStyles.createStyles(obj);
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputGuardRequiredLobbyApplicationAuthorization(requiredLinkedLobbyApplication) {
   let connectionEntrypointUrl;
   let first;
   let shouldRelaunchLinkedLobbyApplication;
@@ -31,7 +28,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((r
   const cResult = obj.c(22);
   requiredLinkedLobbyApplication = requiredLinkedLobbyApplication.requiredLinkedLobbyApplication;
   ({ showLinkedLobbyApplicationLoadingIndicator, shouldRelaunchLinkedLobbyApplication } = requiredLinkedLobbyApplication);
-  const tmp4 = closure_5();
+  const tmp4 = closure_4();
   if (!showLinkedLobbyApplicationLoadingIndicator) {
     if (null != requiredLinkedLobbyApplication) {
       let tmp6;
@@ -135,7 +132,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((r
       }
       let tmp9;
       if (null != tmp6) {
-        tmp9 = <Image style={tmp4.icon} source={tmp6} />;
+        tmp9 = jsx(FastImageDefault, { style: tmp4.icon, source: tmp6 });
       }
       cResult[3] = tmp6;
       cResult[4] = tmp4;
@@ -151,7 +148,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((r
     first = cResult[0];
   }
   return first;
-}) : ((requiredLinkedLobbyApplication) => {
+}) : (function ChatInputGuardRequiredLobbyApplicationAuthorization(requiredLinkedLobbyApplication) {
   let fn;
   let intl;
   let obj5;
@@ -163,27 +160,27 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((r
   ({ showLinkedLobbyApplicationLoadingIndicator, shouldRelaunchLinkedLobbyApplication } = requiredLinkedLobbyApplication);
   if (!showLinkedLobbyApplicationLoadingIndicator) {
     if (null != requiredLinkedLobbyApplication) {
-      let tmp5;
+      let tmp6;
       const iconSource = requiredLinkedLobbyApplication.getIconSource(80);
       if (null != iconSource) {
-        tmp5 = <Image style={tmp.icon} source={iconSource} />;
+        tmp6 = jsx(FastImageDefault, { style: tmp.icon, source: iconSource });
       }
       if (shouldRelaunchLinkedLobbyApplication) {
         ChatInputGuardDefault;
         const intl3 = connectionEntrypointUrl(1126).intl;
         const obj3 = { name: requiredLinkedLobbyApplication.name };
-        return <tmp15 type="simple-action" icon={tmp5} message={intl3.format(connectionEntrypointUrl(1126).t["SU2mY/"], obj3)} />;
+        return <tmp16 type="simple-action" icon={tmp6} message={intl3.format(connectionEntrypointUrl(1126).t["SU2mY/"], obj3)} />;
       } else {
         connectionEntrypointUrl = requiredLinkedLobbyApplication.connectionEntrypointUrl;
-        const obj4 = { type: "simple-action", icon: tmp5, message: intl.format(connectionEntrypointUrl(1126).t.EvDn1D, obj5), actionLabel: stringResult, actionOnPress: fn };
-        const tmp9 = ChatInputGuardDefault;
+        const obj4 = { type: "simple-action", icon: tmp6, message: intl.format(connectionEntrypointUrl(1126).t.EvDn1D, obj5), actionLabel: stringResult, actionOnPress: fn };
+        const tmp10 = ChatInputGuardDefault;
         intl = connectionEntrypointUrl(1126).intl;
         stringResult = undefined;
         obj5 = { name: requiredLinkedLobbyApplication.name };
-        const tmp6 = jsx;
+        const tmp7 = jsx;
         if (null != connectionEntrypointUrl) {
-          const intl2 = tmp10(1126).intl;
-          stringResult = intl2.string(tmp10(1126).t.S0W8Z5);
+          const intl2 = tmp11(1126).intl;
+          stringResult = intl2.string(tmp11(1126).t.S0W8Z5);
         }
         fn = undefined;
         if (null != connectionEntrypointUrl) {
@@ -192,7 +189,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((r
             return obj.openURLExternally(connectionEntrypointUrl);
           };
         }
-        return tmp6(tmp9, obj4);
+        return tmp7(tmp10, obj4);
       }
     }
   }

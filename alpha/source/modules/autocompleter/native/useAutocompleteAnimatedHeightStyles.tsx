@@ -1,11 +1,11 @@
-// Module ID: 12051
-// Function ID: 12052
+// Module ID: 12124
+// Function ID: 12125
 // Name: useAutocompleteAnimatedHeightStyles
-// Dependencies: [558, 4752, 4618, 4897, 4900, 2]
+// Dependencies: [558, 4946, 4810, 5091, 5094, 2]
 
-// Module 12051 (useAutocompleteAnimatedHeightStyles)
-import timing from "timing" /* 4897 */;
-import timingPresets from "timingPresets" /* 4900 */;
+// Module 12124 (useAutocompleteAnimatedHeightStyles)
+import timing from "timing" /* 5091 */;
+import timingPresets from "timingPresets" /* 5094 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ let _require;
 
 const __initData = { code: "function useAutocompleteAnimatedHeightStylesTsx1(){const{withTiming,height,timingStandard,isFrozenSharedValue}=this.__closure;return{height:withTiming(height,timingStandard),display:!isFrozenSharedValue.get()?\"flex\":\"none\"};}" };
 const __initData2 = { code: "function useAutocompleteAnimatedHeightStylesTsx2(){const{withTiming,height,timingStandard,isFrozenSharedValue}=this.__closure;return{height:withTiming(height,timingStandard),display:!isFrozenSharedValue.get()?'flex':'none'};}" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((height, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAutocompleteAnimatedHeightStyles(height, arg1) {
   let isScreenIndexFrozenSharedValue;
   _require = height;
   let obj = require("ScreenIndexFrozen");
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((height, arg1) => {
   fn.__initData = __initData;
   ({ withTiming: require("timing").withTiming, height, timingStandard: require("timingPresets").timingStandard, isFrozenSharedValue: isScreenIndexFrozenSharedValue });
   return obj2.useAnimatedStyle(fn);
-}) : ((height, arg1) => {
+}) : (function useAutocompleteAnimatedHeightStyles(height, arg1) {
   let isScreenIndexFrozenSharedValue;
   _require = height;
   let obj = require("ScreenIndexFrozen");

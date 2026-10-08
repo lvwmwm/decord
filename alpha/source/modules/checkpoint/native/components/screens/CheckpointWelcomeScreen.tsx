@@ -1,24 +1,24 @@
-// Module ID: 15553
-// Function ID: 15554
+// Module ID: 15819
+// Function ID: 15820
 // Name: CheckpointWelcomeScreen
-// Dependencies: [17, 1377, 21, 4896, 587, 558, 576, 1484, 504, 4728, 1126, 3039, 15554, 3071, 15556, 15557, 2]
+// Dependencies: [17, 1389, 21, 5090, 587, 558, 576, 1496, 504, 4922, 1126, 3083, 15820, 3115, 15822, 15823, 2]
 
-// Module 15553 (CheckpointWelcomeScreen)
+// Module 15819 (CheckpointWelcomeScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import _modDef3039 from "module_3039" /* 3039 */;
-import _modDef3071 from "module_3071" /* 3071 */;
-import UserUtils from "UserUtils" /* 4728 */;
-import TextWritingAnimation from "TextWritingAnimation" /* 15554 */;
-import CheckpointKnickKnacksDefault from "CheckpointKnickKnacks" /* 15556 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 15557 */;
-import UserStore from "UserStore" /* 1377 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import _modDef3083 from "module_3083" /* 3083 */;
+import _modDef3115 from "module_3115" /* 3115 */;
+import UserUtils from "UserUtils" /* 4922 */;
+import TextWritingAnimation from "TextWritingAnimation" /* 15820 */;
+import CheckpointKnickKnacksDefault from "CheckpointKnickKnacks" /* 15822 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 15823 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ obj2 = { maxWidth: 327, marginTop: nativeDefault.space.PX_12 };
 createStyles = createStyles.createStyles;
 obj3 = { marginTop: nativeDefault.space.PX_16 };
 let closure_8 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointWelcomeScreen() {
   let container;
   let content;
   let currentUser;
@@ -88,7 +88,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const titleText = tmp4.titleText;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       const intl = tmp(1126).intl;
-      const stringResult = intl.string(_modDef3039["CdU/PF"]);
+      const stringResult = intl.string(_modDef3083["CdU/PF"]);
       cResult[7] = stringResult;
       tmp14 = stringResult;
     } else {
@@ -104,7 +104,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       if (cResult[11] !== name) {
         const intl2 = tmp(1126).intl;
         const obj4 = { username: name };
-        const formatToPlainStringResult = intl2.formatToPlainString(_modDef3071.xhZ23b, obj4);
+        const formatToPlainStringResult = intl2.formatToPlainString(_modDef3115.xhZ23b, obj4);
         cResult[11] = name;
         cResult[12] = formatToPlainStringResult;
         tmp20 = formatToPlainStringResult;
@@ -181,7 +181,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[5] = tmp12;
   cResult[6] = items3;
   tmp13 = items3;
-}) : (() => {
+}) : (function CheckpointWelcomeScreen() {
   let currentUser;
   let intl;
   let intl2;
@@ -200,7 +200,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj3 = { children: hasOwnProperty(View, obj4) };
   obj4 = { style: tmp.container, children: metroRequire(View, obj5) };
   obj5 = { style: tmp.content, children: items3 };
-  const obj6 = { style: items1, textStyle: tmp.titleText, text: intl.string(_modDef3039["CdU/PF"]), delay, variant: "display-lg" };
+  const obj6 = { style: items1, textStyle: tmp.titleText, text: intl.string(_modDef3083["CdU/PF"]), delay, variant: "display-lg" };
   items1 = [tmp.title, ];
   const obj7 = { transform: items2 };
   items2 = [{ scale: bound }];
@@ -209,7 +209,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp6 = TextWritingAnimationDefault;
   intl = intl3.intl;
   items3 = [hasOwnProperty(tmp6, obj6), , ];
-  const obj8 = { style: tmp.subtitle, text: intl2.formatToPlainString(_modDef3071.xhZ23b, { username: name }), delay: delay + TextWritingAnimation.DURATION, variant: "heading-xl/medium" };
+  const obj8 = { style: tmp.subtitle, text: intl2.formatToPlainString(_modDef3115.xhZ23b, { username: name }), delay: delay + TextWritingAnimation.DURATION, variant: "heading-xl/medium" };
   const tmp7 = TextWritingAnimationDefault;
   intl2 = intl3.intl;
   items3[1] = hasOwnProperty(tmp7, obj8);

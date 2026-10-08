@@ -1,19 +1,19 @@
-// Module ID: 1884
-// Function ID: 1885
+// Module ID: 1896
+// Function ID: 1897
 // Name: useSystemKeyboardHeight
-// Dependencies: [1487, 1488, 558, 576, 2]
+// Dependencies: [1499, 1500, 558, 576, 2]
 // Exports: getSystemKeyboardHeight
 
-// Module 1884 (useSystemKeyboardHeight)
+// Module 1896 (useSystemKeyboardHeight)
 import react from "react" /* 576 */;
-import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1488 */;
+import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1500 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const AppEntryKeyContext = tmp2(1487);
+const AppEntryKeyContext = tmp2(1499);
 let closure_3 = { excludeSafeAreaInsets: false };
-tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSystemKeyboardHeight(arg0) {
   let tmp = arg0;
   const obj = react;
   const cResult = obj.c(3);
@@ -38,7 +38,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = undefined !== excludeSafeAreaInsets && excludeSafeAreaInsets;
   cResult[2] = fn;
   tmp7 = fn;
-}) : (() => {
+}) : (function useSystemKeyboardHeight() {
   let tmp = arg0;
   if (arg0 === undefined) {
     tmp = closure_3;

@@ -1,28 +1,28 @@
-// Module ID: 8568
-// Function ID: 8569
+// Module ID: 9052
+// Function ID: 9053
 // Name: useGameProfileShopCollection
-// Dependencies: [19, 8360, 558, 576, 504, 8447, 8569, 2]
+// Dependencies: [19, 8858, 558, 576, 504, 8933, 9053, 2]
 // Exports: useGameProfileShopCollection
 
-// Module 8568 (useGameProfileShopCollection)
+// Module 9052 (useGameProfileShopCollection)
 import react2 from "react" /* 576 */;
-import GameProfileHttpUtils from "GameProfileHttpUtils" /* 8447 */;
+import GameProfileHttpUtils from "GameProfileHttpUtils" /* 8933 */;
 import react from "react" /* 19 */;
-import GameProfileStore from "GameProfileStore" /* 8360 */;
+import GameProfileStore from "GameProfileStore" /* 8858 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, state;
 
 let c2;
 let c3;
 let tmp;
-const useCollectiblesShopProducts = tmp(8569);
+const useCollectiblesShopProducts = tmp(9053);
 ({ useEffect: c2, useMemo: c3 } = react);
 let closure_5 = [];
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameProfileShopCollectionState(arg0) {
   let closure_0;
   let first;
   let hasFetched;
@@ -91,7 +91,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[10] = obj2;
     tmp13 = obj2;
   }
-  const fn2 = function u() {
+  const fn2 = function h() {
     const result = null == closure_0 || hasFetched || GameProfileStore.isShopCollectionFetching(tmp);
     if (!result) {
       const obj = GameProfileHttpUtils;
@@ -105,7 +105,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = items1;
   tmp9 = items1;
   tmp8 = fn2;
-}) : ((arg0) => {
+}) : (function useGameProfileShopCollectionState(arg0) {
   let closure_0;
   let hasFetched;
   _require = arg0;
@@ -143,7 +143,7 @@ let closure_6 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameProfileShopCollectionProducts(arg0) {
   let first;
   let hasFetched;
   let skuIds;
@@ -166,95 +166,119 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const collectiblesShopProducts = tmpResult.useCollectiblesShopProducts(skuIds, first);
   if (cResult[1] === collectiblesShopProducts) {
     let tmp7;
-    let tmp12;
+    let tmp13;
     if (cResult[2] === skuIds) {
       tmp7 = cResult[3];
     }
     if (cResult[7] === collectiblesShopProducts) {
-      let tmp11;
+      let tmp12;
       if (cResult[8] === skuIds) {
-        tmp11 = cResult[9];
+        tmp12 = cResult[9];
       }
-      let tmp15 = null != arg0;
-      if (tmp15) {
-        let tmp16 = !hasFetched;
+      let tmp16 = null != arg0;
+      if (tmp16) {
+        let tmp17 = !hasFetched;
         if (hasFetched) {
-          tmp16 = isFetching;
+          tmp17 = isFetching;
         }
-        if (!tmp16) {
-          tmp16 = skuIds.length > 0 && tmp11;
+        if (!tmp17) {
+          tmp17 = skuIds.length > 0 && tmp12;
         }
-        tmp15 = tmp16;
+        tmp16 = tmp17;
       }
       if (cResult[12] === tmp7) {
-        let tmp18;
-        if (cResult[13] === tmp15) {
-          tmp18 = cResult[14];
+        let tmp19;
+        if (cResult[13] === tmp16) {
+          tmp19 = cResult[14];
         }
-        return tmp18;
+        return tmp19;
       }
-      const obj3 = { products: tmp7, isLoading: tmp15 };
+      const obj3 = { products: tmp7, isLoading: tmp16 };
       cResult[12] = tmp7;
-      cResult[13] = tmp15;
+      cResult[13] = tmp16;
       cResult[14] = obj3;
-      tmp18 = obj3;
+      tmp19 = obj3;
     }
     if (cResult[10] !== collectiblesShopProducts) {
-      const fn = function v(arg0) {
-        let state;
-        if (collectiblesShopProducts[arg0] != null) {
-          state = tmp.state;
+      class P {
+        constructor(arg0) {
+          tmp = closure_0[arg0];
+          state = undefined;
+          if (tmp != null) {
+            state = tmp.state;
+          }
+          return "loading" === state;
         }
-        return "loading" === state;
-      };
+      }
       cResult[10] = collectiblesShopProducts;
-      cResult[11] = fn;
-      tmp12 = fn;
+      cResult[11] = P;
+      tmp13 = P;
     } else {
-      tmp12 = cResult[11];
+      class P {
+        constructor(arg0) {
+          tmp = closure_0[arg0];
+          state = undefined;
+          if (tmp != null) {
+            state = tmp.state;
+          }
+          return "loading" === state;
+        }
+      }
     }
-    const someResult = skuIds.some(tmp12);
+    const someResult = skuIds.some(tmp13);
     cResult[7] = collectiblesShopProducts;
     cResult[8] = skuIds;
     cResult[9] = someResult;
-    tmp11 = someResult;
+    tmp12 = someResult;
   }
   if (cResult[4] !== collectiblesShopProducts) {
-    class S {
+    class P {
       constructor(arg0) {
-        let product;
-        if (collectiblesShopProducts[arg0] != null) {
-          product = tmp.product;
+        tmp = closure_0[arg0];
+        state = undefined;
+        if (tmp != null) {
+          state = tmp.state;
         }
-        return product;
+        return "loading" === state;
       }
     }
     cResult[4] = collectiblesShopProducts;
     cResult[5] = S;
     tmp8 = S;
   } else {
-    class S {
+    class P {
       constructor(arg0) {
-        let product;
-        if (collectiblesShopProducts[arg0] != null) {
-          product = tmp.product;
+        tmp = closure_0[arg0];
+        state = undefined;
+        if (tmp != null) {
+          state = tmp.state;
         }
-        return product;
+        return "loading" === state;
       }
     }
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class F {
+    class P {
       constructor(arg0) {
-        return null != arg0;
+        tmp = closure_0[arg0];
+        state = undefined;
+        if (tmp != null) {
+          state = tmp.state;
+        }
+        return "loading" === state;
       }
     }
-    cResult[6] = F;
-    tmp9 = F;
+    cResult[6] = tmp10;
+    tmp9 = tmp10;
   } else {
-    class F {
+    class P {
       constructor(arg0) {
-        return null != arg0;
+        tmp = closure_0[arg0];
+        state = undefined;
+        if (tmp != null) {
+          state = tmp.state;
+        }
+        return "loading" === state;
       }
     }
   }
@@ -264,7 +288,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = skuIds;
   cResult[3] = found;
   tmp7 = found;
-}) : ((arg0) => {
+}) : (function useGameProfileShopCollectionProducts(arg0) {
   let tmp5;
   const tmp = closure_6(arg0);
   const skuIds = tmp.skuIds;
@@ -299,9 +323,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   return obj2;
 });
-let fn = (arg0) => closure_6(arg0).skuIds;
+function useGameProfileShopCollection(arg0) {
+  return closure_6(arg0).skuIds;
+}
 let result1 = size.fileFinishedImporting("modules/game_profile/hooks/useGameProfileShopCollection.tsx");
 
 export const useGameProfileShopCollectionState = tmp3;
-export const useGameProfileShopCollection = fn;
+export { useGameProfileShopCollection };
 export const useGameProfileShopCollectionProducts = tmp5;

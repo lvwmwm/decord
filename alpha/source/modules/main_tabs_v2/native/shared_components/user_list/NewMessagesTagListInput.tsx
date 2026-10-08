@@ -1,25 +1,24 @@
-// Module ID: 12011
-// Function ID: 12012
+// Module ID: 12084
+// Function ID: 12085
 // Name: NewMessagesTagListInput
-// Dependencies: [19, 17, 1377, 21, 4896, 587, 1369, 558, 576, 1375, 10608, 5916, 1126, 12012, 10996, 4892, 4596, 9270, 2]
+// Dependencies: [19, 17, 1389, 21, 5090, 587, 1381, 558, 576, 1387, 10205, 6189, 1126, 12085, 11220, 5086, 4788, 8601, 2]
 
-// Module 12011 (NewMessagesTagListInput)
+// Module 12084 (NewMessagesTagListInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4596 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 10608 */;
+import GlobalUtils from "GlobalUtils" /* 1387 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4788 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 10205 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
-import createStyles_mod from "createStyles" /* 4896 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import UserStore from "UserStore" /* 1389 */;
+import createStyles_mod from "createStyles" /* 5090 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let announceResult, tmp3, tmp5, tmp6;
 
 let num;
 let obj2;
@@ -38,7 +37,7 @@ if (PlatformUtils.isAndroid()) {
 }
 obj4 = { marginHorizontal: nativeDefault.space.PX_12 };
 let closure_7 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function NewMessagesTagListInput(arg0) {
   let autoFocus;
   let forceSearchResults;
   let hasQuery;
@@ -61,8 +60,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       items = [];
     }
     const mapped = items.map(UserStore.getUser);
-    const found = mapped.filter(tmp(1375).isNotNullish);
-    const mapped1 = found.map(tags(10608));
+    const found = mapped.filter(tmp(1387).isNotNullish);
+    const mapped1 = found.map(tags(10205));
     cResult[0] = selectedUserIds;
     cResult[1] = mapped1;
     tags = mapped1;
@@ -75,6 +74,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
         if (cResult[5] === tmp4.showSearchButton) {
           let tmp10;
           let tmp15;
+          let tmp17;
           if (cResult[6] === tags.length) {
             tmp10 = cResult[7];
           }
@@ -89,28 +89,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
             tmp15 = cResult[8];
           }
           if (cResult[9] !== tmp4.header) {
+            const tmp19 = jsx(tmp(5086).Text, { style: header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: tmp15 });
             cResult[9] = tmp4.header;
-            cResult[10] = jsx(tmp(4892).Text, { style: header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: tmp15 });
-            jsx(tmp(4892).Text, { style: header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: tmp15 });
-            class F {
-              constructor(arg0) {
-                tmp = closure_1[arg0];
-                user = closure_5.getUser(tmp.id);
-                if (null != user) {
-                  tmp3 = onSelectUser;
-                  tmp4 = onSelectUser(user);
-                  tmp5 = closure_0;
-                  tmp6 = closure_2;
-                  AccessibilityAnnouncer = closure_0(closure_2[16]).AccessibilityAnnouncer;
-                  announce = AccessibilityAnnouncer.announce;
-                  intl = closure_0(closure_2[12]).intl;
-                  obj = { text: null };
-                  obj.text = tmp.text;
-                  announceResult = announce(intl.formatToPlainString(closure_0(closure_2[12]).t.srlxB8, obj));
-                }
-                return;
-              }
-            }
+            cResult[10] = tmp19;
+            tmp17 = tmp19;
+          } else {
+            tmp17 = cResult[10];
           }
           if (cResult[11] === onSelectUser) {
             let tmp20;
@@ -146,25 +130,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
                             return tmp27;
                           }
                           const tmp30 = <View style={tmp9}>{tmp23}</View>;
-                          class F {
-                            constructor(arg0) {
-                              tmp = closure_1[arg0];
-                              user = closure_5.getUser(tmp.id);
-                              if (null != user) {
-                                tmp3 = onSelectUser;
-                                tmp4 = onSelectUser(user);
-                                tmp5 = closure_0;
-                                tmp6 = closure_2;
-                                AccessibilityAnnouncer = closure_0(closure_2[16]).AccessibilityAnnouncer;
-                                announce = AccessibilityAnnouncer.announce;
-                                intl = closure_0(closure_2[12]).intl;
-                                obj = { text: null };
-                                obj.text = tmp.text;
-                                announceResult = announce(intl.formatToPlainString(closure_0(closure_2[12]).t.srlxB8, obj));
-                              }
-                              return;
-                            }
-                          }
+                          cResult[24] = tmp4.searchBarContainer;
                           cResult[25] = tmp23;
                           cResult[26] = tmp30;
                           tmp27 = tmp30;
@@ -175,26 +141,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
                 }
               }
             }
-            class F {
-              constructor(arg0) {
-                tmp = closure_1[arg0];
-                user = closure_5.getUser(tmp.id);
-                if (null != user) {
-                  tmp3 = onSelectUser;
-                  tmp4 = onSelectUser(user);
-                  tmp5 = closure_0;
-                  tmp6 = closure_2;
-                  AccessibilityAnnouncer = closure_0(closure_2[16]).AccessibilityAnnouncer;
-                  announce = AccessibilityAnnouncer.announce;
-                  intl = closure_0(closure_2[12]).intl;
-                  obj = { text: null };
-                  obj.text = tmp.text;
-                  announceResult = announce(intl.formatToPlainString(closure_0(closure_2[12]).t.srlxB8, obj));
-                }
-                return;
-              }
-            }
-            const tmp26 = jsx(tags(9270), { autoFocus, focusOnAdd: true, footer: null, icon: tmp17, onChangeText, onFocus, onRemove: tmp20, placeholder: tmp21, tags, ref: tagListInputRef });
+            const tmp26 = jsx(tags(8601), { autoFocus, focusOnAdd: true, footer: tmp10, icon: tmp17, onChangeText, onFocus, onRemove: tmp20, placeholder: tmp21, tags, ref: tagListInputRef });
             cResult[15] = autoFocus;
             cResult[16] = onChangeText;
             cResult[17] = onFocus;
@@ -206,29 +153,21 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
             cResult[23] = tmp26;
             tmp23 = tmp26;
           }
-          class F {
-            constructor(arg0) {
-              tmp = closure_1[arg0];
-              user = closure_5.getUser(tmp.id);
-              if (null != user) {
-                tmp3 = onSelectUser;
-                tmp4 = onSelectUser(user);
-                tmp5 = closure_0;
-                tmp6 = closure_2;
-                AccessibilityAnnouncer = closure_0(closure_2[16]).AccessibilityAnnouncer;
-                announce = AccessibilityAnnouncer.announce;
-                intl = closure_0(closure_2[12]).intl;
-                obj = { text: null };
-                obj.text = tmp.text;
-                announceResult = announce(intl.formatToPlainString(closure_0(closure_2[12]).t.srlxB8, obj));
-              }
-              return;
+          const fn = function w(arg0) {
+            const user = UserStore.getUser(tmp.id);
+            if (null != user) {
+              onSelectUser(user);
+              const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+              const announce = AccessibilityAnnouncer.announce;
+              const intl = intl4.intl;
+              const obj = { text: arr[arg0].text };
+              announce(intl.formatToPlainString(intl4.t.srlxB8, obj));
             }
-          }
+          };
           cResult[11] = onSelectUser;
           cResult[12] = tags;
-          cResult[13] = F;
-          tmp20 = F;
+          cResult[13] = fn;
+          tmp20 = fn;
         }
       }
     }
@@ -238,7 +177,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     tmp12Result = null;
     if (tags.length > 0) {
       let stringResult2;
-      const PressableOpacity = tmp(5916).PressableOpacity;
+      const PressableOpacity = tmp(6189).PressableOpacity;
       let intl = tmp(1126).intl;
       const string = intl.string;
       const t = tmp(1126).t;
@@ -247,30 +186,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       } else {
         stringResult2 = string(t.fTcQm2);
       }
-      const obj5 = { accessibilityRole: "button", accessibilityLabel: stringResult2, onPress: onForceSearchResults, style: null, children: null };
-      class F {
-        constructor(arg0) {
-          tmp = closure_1[arg0];
-          user = closure_5.getUser(tmp.id);
-          if (null != user) {
-            tmp3 = onSelectUser;
-            tmp4 = onSelectUser(user);
-            tmp5 = closure_0;
-            tmp6 = closure_2;
-            AccessibilityAnnouncer = closure_0(closure_2[16]).AccessibilityAnnouncer;
-            announce = AccessibilityAnnouncer.announce;
-            intl = closure_0(closure_2[12]).intl;
-            obj = { text: null };
-            obj.text = tmp.text;
-            announceResult = announce(intl.formatToPlainString(closure_0(closure_2[12]).t.srlxB8, obj));
-          }
-          return;
-        }
-      }
+      const obj5 = { accessibilityRole: "button", accessibilityLabel: stringResult2, onPress: onForceSearchResults, style: tmp4.showSearchButton, children: null };
       if (forceSearchResults) {
-        let CirclePlusIcon = tmp(12012).ChevronLargeRightIcon;
+        let CirclePlusIcon = tmp(12085).ChevronLargeRightIcon;
       } else {
-        CirclePlusIcon = tmp(10996).CirclePlusIcon;
+        CirclePlusIcon = tmp(11220).CirclePlusIcon;
       }
       tmp12Result = tmp12(PressableOpacity, obj5);
     }
@@ -282,7 +202,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[6] = tags.length;
   cResult[7] = tmp12Result;
   tmp10 = tmp12Result;
-}) : ((forceSearchResults) => {
+}) : (function NewMessagesTagListInput(forceSearchResults) {
   let autoFocus;
   let hasQuery;
   let intl2;
@@ -290,7 +210,6 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   let onChangeText;
   let onFocus;
   let onForceSearchResults;
-  let require;
   let selectedUserIds;
   let tagListInputRef;
   let tmp2Result;
@@ -317,7 +236,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     onRemove(arg0) {
       const user = UserStore.getUser(tmp.id);
       if (null != user) {
-        _require(user);
+        require(user);
         const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
         const announce = AccessibilityAnnouncer.announce;
         const intl = intl4.intl;

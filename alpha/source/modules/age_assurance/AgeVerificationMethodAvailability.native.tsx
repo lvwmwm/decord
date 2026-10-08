@@ -1,13 +1,13 @@
-// Module ID: 8147
-// Function ID: 8148
+// Module ID: 7528
+// Function ID: 7529
 // Name: AgeVerificationMethodAvailability
-// Dependencies: [5, 32, 19, 1385, 1369, 8148, 558, 576, 8149, 2]
+// Dependencies: [5, 32, 19, 1397, 1381, 7529, 558, 576, 7530, 2]
 // Exports: getAvailableMethodsV2
 
-// Module 8147 (AgeVerificationMethodAvailability)
+// Module 7528 (AgeVerificationMethodAvailability)
 import react2 from "react" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import GoogleWalletActionCreators from "GoogleWalletActionCreators" /* 8149 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import GoogleWalletActionCreators from "GoogleWalletActionCreators" /* 7530 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -18,7 +18,7 @@ const require = globalThis.__r;
 let c5, c6, method;
 
 let tmp;
-const AppStoreAgeSignalSupport = tmp(8148);
+const AppStoreAgeSignalSupport = tmp(7529);
 function filterByAvailability(arr, arg1) {
   ({ googleWallet: require, appStoreSignal: dependencyMap } = arg1);
   return arr.filter((method) => {
@@ -106,7 +106,7 @@ let obj = function _getAvailableMethodsV() {
   });
   return obj(...arguments);
 };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvailableMethodsV2(arr) {
   let tmp5;
   let tmp6;
   let tmp7;
@@ -178,7 +178,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   cResult[4] = arr;
   cResult[5] = found;
   tmp11 = found;
-}) : ((arg0) => {
+}) : (function useAvailableMethodsV2(arg0) {
   let memo;
   let closure_0 = arg0;
   let tmp = memo(react.useState(false), 2);

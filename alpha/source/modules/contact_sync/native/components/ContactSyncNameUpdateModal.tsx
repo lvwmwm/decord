@@ -1,23 +1,23 @@
-// Module ID: 14669
-// Function ID: 14670
+// Module ID: 14930
+// Function ID: 14931
 // Name: ContactSyncNameUpdateModal
-// Dependencies: [5, 32, 19, 17, 12342, 21, 5099, 4896, 587, 6075, 558, 576, 12344, 12348, 4574, 1126, 4813, 12361, 6017, 6503, 2]
+// Dependencies: [5, 32, 19, 17, 12438, 21, 5940, 5090, 587, 6261, 558, 576, 12440, 12444, 4766, 1126, 5007, 12457, 6203, 6679, 2]
 
-// Module 14669 (ContactSyncNameUpdateModal)
+// Module 14930 (ContactSyncNameUpdateModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
-import NavigatorConstants from "NavigatorConstants" /* 6075 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12342 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12344 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+import NavigatorConstants from "NavigatorConstants" /* 6261 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12438 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12440 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4896 */;
+import createStyles from "createStyles" /* 5090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import NavigatorHeader_mod from "NavigatorHeader" /* 6017 */;
+import NavigatorHeader_mod from "NavigatorHeader" /* 6203 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -26,7 +26,7 @@ let _require, c2, c4;
 let NavigatorHeader;
 let obj2;
 let tmp;
-const Navigator = tmp(6503);
+const Navigator = tmp(6679);
 function onClose() {
   const arr = ModalActionCreatorsDefault;
   arr.pop();
@@ -38,7 +38,7 @@ let obj = { container: obj2 };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingTop: NavigatorConstants.NAV_BAR_HEIGHT + 32 };
 let closure_10 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncNameInputScreen() {
   let onNext;
   let require;
   let tmp13;
@@ -133,42 +133,42 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     onNext = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    class E {
+    class S {
       constructor() {
         return first(null);
       }
     }
-    cResult[1] = E;
-    tmp9 = E;
+    cResult[1] = S;
+    tmp9 = S;
   } else {
-    class E {
+    class S {
       constructor() {
         return first(null);
       }
     }
   }
   if (contactSyncAccount != null) {
-    class E {
+    class S {
       constructor() {
         return first(null);
       }
     }
   }
   if (undefined == null) {
-    class E {
+    class S {
       constructor() {
         return first(null);
       }
     }
   }
   if (cResult[2] === tmp6) {
-    class E {
+    class S {
       constructor() {
         return first(null);
       }
     }
     if (cResult[5] === tmp3.container) {
-      class E {
+      class S {
         constructor() {
           return first(null);
         }
@@ -181,11 +181,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[7] = tmp16;
     tmp13 = tmp16;
   }
-  const tmp12 = jsx(onNext(12361), { onNext, onRemoveName: tmp9, loading: tmp6, initialName: undefined });
+  const tmp12 = jsx(onNext(12457), { onNext, onRemoveName: tmp9, loading: tmp6, initialName: undefined });
   cResult[2] = tmp6;
   cResult[3] = undefined;
   cResult[4] = tmp12;
-}) : (() => {
+}) : (function ContactSyncNameInputScreen() {
   let str;
   let tmp6;
   function onNext() {
@@ -306,7 +306,7 @@ const NAME_INPUT = ContactSyncScenes.NAME_INPUT;
 NavigatorHeader = NavigatorHeader_mod;
 obj3[NAME_INPUT] = obj4;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncNameUpdateModal() {
   let first;
   const obj = react2;
   const cResult = obj.c(1);
@@ -318,7 +318,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => jsx(Navigator.Navigator, { initialRouteName: ContactSyncScenes.NAME_INPUT, screens: obj3 }));
+}) : (function ContactSyncNameUpdateModal() {
+  return jsx(Navigator.Navigator, { initialRouteName: ContactSyncScenes.NAME_INPUT, screens: obj3 });
+});
 const result = size.fileFinishedImporting("modules/contact_sync/native/components/ContactSyncNameUpdateModal.tsx");
 
 export default tmp2;

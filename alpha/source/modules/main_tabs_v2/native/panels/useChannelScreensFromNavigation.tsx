@@ -1,20 +1,20 @@
-// Module ID: 15966
-// Function ID: 15967
+// Module ID: 16226
+// Function ID: 16227
 // Name: useChannelScreensFromNavigation
-// Dependencies: [32, 19, 2051, 2103, 4705, 1085, 2058, 4743, 4742, 558, 576, 4745, 2]
+// Dependencies: [32, 19, 2063, 2115, 4899, 1085, 2070, 4937, 4936, 558, 576, 4939, 2]
 // Exports: isActiveTabsGuilds
 
-// Module 15966 (useChannelScreensFromNavigation)
+// Module 16226 (useChannelScreensFromNavigation)
 import Constants from "Constants" /* 1085 */;
-import ChannelConstants from "ChannelConstants" /* 2058 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4742 */;
-import RootNavigationRef from "RootNavigationRef" /* 4743 */;
-import useChatLayoutDefault from "useChatLayout" /* 4745 */;
+import ChannelConstants from "ChannelConstants" /* 2070 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4936 */;
+import RootNavigationRef from "RootNavigationRef" /* 4937 */;
+import useChatLayoutDefault from "useChatLayout" /* 4939 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
+import ChannelStore from "ChannelStore" /* 2063 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -154,7 +154,7 @@ let _slicedToArray = _slicedToArray_mod;
 const ME = Constants.ME;
 const isStaticChannelRoute = ChannelConstants.isStaticChannelRoute;
 const ChannelScreenType = { DEFAULT: 0, [0]: "DEFAULT", BACKGROUND_SAVED: 1, [1]: "BACKGROUND_SAVED", FALLBACK_RENDERED: 2, [2]: "FALLBACK_RENDERED" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelScreensFromNavigation(arg0) {
   let closure_0;
   let closure_1;
   let closure_2;
@@ -241,7 +241,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const effect = obj2.useEffect(tmp9, tmp10);
       if (cResult[8] !== arg0) {
-        class A {
+        class S {
           constructor() {
             function handleStateChange(data) {
               state = data.data.state;
@@ -256,12 +256,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         let items = [arg0, tmp8];
         cResult[8] = arg0;
-        cResult[9] = A;
+        cResult[9] = S;
         cResult[10] = items;
         tmp13 = items;
-        tmp12 = A;
+        tmp12 = S;
       } else {
-        class A {
+        class S {
           constructor() {
             function handleStateChange(data) {
               state = data.data.state;
@@ -316,7 +316,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = arg0;
   cResult[2] = fn;
   tmp3 = fn;
-}) : ((arg0) => {
+}) : (function useChannelScreensFromNavigation(arg0) {
   let callback;
   let closure_1;
   let tmp3;

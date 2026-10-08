@@ -1,23 +1,21 @@
-// Module ID: 9013
-// Function ID: 9014
+// Module ID: 11151
+// Function ID: 11152
 // Name: FramesManager
-// Dependencies: [9000, 1085, 5323, 6620, 9014, 8547, 1252, 584, 2]
+// Dependencies: [10612, 1085, 6797, 10625, 8586, 11152, 1264, 584, 2]
 
-// Module 9013 (FramesManager)
+// Module 11151 (FramesManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Constants2 from "Constants" /* 5323 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8547 */;
-import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 9014 */;
-import FramesStore from "FramesStore" /* 9000 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8586 */;
+import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 10625 */;
+import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 11152 */;
+import FramesStore from "FramesStore" /* 10612 */;
 import Constants from "Constants" /* 1085 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6620 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6797 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 ({ AnalyticEvents: closure_4, RPCCloseCodes: hasOwnProperty } = Constants);
-const TransportTypes = Constants2.TransportTypes;
 class FramesManager extends AutomaticLifecycleManager {
   constructor() {
     const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
@@ -62,7 +60,11 @@ class FramesManager extends AutomaticLifecycleManager {
           const allFrames = FramesStore.getAllFrames();
           for (const item10014 of allFrames) {
             let tmp5 = item10014;
+            let tmp6 = require;
             let tmp8 = item10014.surface.type !== EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN;
+            if (tmp8) {
+              tmp8 = tmp5.surface.type !== tmp6(8586).EmbeddedSurfaceType.OVERLAY;
+            }
             if (tmp8) {
               tmp8 = tmp5.surface.guildId === guild.id;
             }
@@ -102,21 +104,20 @@ class FramesManager extends AutomaticLifecycleManager {
         }
       }
     };
-    applyArgumentsResult.handleRPCDisconnect = function handleRPCDisconnect(arg0) {
-      let reason;
-      let source;
-      ({ reason, source } = arg0);
+    applyArgumentsResult.handleRPCDisconnect = function handleRPCDisconnect(reason) {
+      reason = reason.reason;
       if (null != reason) {
-        if (source.type === TransportTypes.POST_MESSAGE) {
-          const frameByIframeId = FramesStore.getFrameByIframeId(source.iframeId);
-          if (null != frameByIframeId) {
-            require.leaveFrame(frameByIframeId.id);
+        const tmp6 = importDefault;
+        if (isPostMessageDisconnectDefault(reason)) {
+          const frameByEmbeddedContext = FramesStore.getFrameByEmbeddedContext(reason.context, reason.source.iframeId);
+          if (null != frameByEmbeddedContext) {
+            require.leaveFrame(frameByEmbeddedContext.id);
             const obj3 = require;
             if (reason.code !== hasOwnProperty.CLOSE_NORMAL) {
-              const obj4 = { rpc_close_code: null, rpc_message: null, application_id: frameByIframeId.applicationId };
+              const obj = { rpc_close_code: null, rpc_message: null, application_id: frameByEmbeddedContext.applicationId };
               ({ code: obj2.rpc_close_code, message: obj2.rpc_message } = reason);
-              const obj = AnalyticsUtilsDefault;
-              obj.track(constants.ACTIVITY_CLOSED_RPC_ERROR, obj4);
+              const tmp6Result = tmp6(1264);
+              tmp6Result.track(constants.ACTIVITY_CLOSED_RPC_ERROR, obj);
               const result = obj3.showRPCDisconnectErrorUI(reason);
             }
           }

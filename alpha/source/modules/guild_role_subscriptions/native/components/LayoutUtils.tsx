@@ -1,10 +1,10 @@
-// Module ID: 9966
-// Function ID: 9967
+// Module ID: 9493
+// Function ID: 9494
 // Name: LayoutUtils
-// Dependencies: [19, 21, 558, 576, 1188, 2]
+// Dependencies: [19, 21, 558, 576, 1200, 2]
 
-// Module 9966 (LayoutUtils)
-import native from "native" /* 1188 */;
+// Module 9493 (LayoutUtils)
+import native from "native" /* 1200 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -14,7 +14,7 @@ let c3;
 let closure_4;
 let hasOwnProperty;
 ({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = Fragment);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GappedList(arg0) {
   let children;
   let found;
   let gap;
@@ -83,7 +83,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = renderGap;
   cResult[3] = mapped;
   tmp2 = mapped;
-}) : ((gap) => {
+}) : (function GappedList(gap) {
   let Children1;
   let num = gap.gap;
   let children = gap.children;

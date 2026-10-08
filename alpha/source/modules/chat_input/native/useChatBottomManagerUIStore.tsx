@@ -1,10 +1,10 @@
-// Module ID: 9100
-// Function ID: 9101
+// Module ID: 9318
+// Function ID: 9319
 // Name: useChatBottomManagerUIStore
-// Dependencies: [510, 570, 558, 576, 4751, 2]
+// Dependencies: [510, 570, 558, 576, 4945, 2]
 // Exports: updateChatInputContainerHeight, updateIsAtBottom, updateShouldShowJumpToPresentButton, updateShowingAutoComplete, updateSmallSuggestionBarHeight
 
-// Module 9100 (useChatBottomManagerUIStore)
+// Module 9318 (useChatBottomManagerUIStore)
 import Storage3 from "Storage" /* 510 */;
 import react from "react" /* 576 */;
 import module_570 from "module_570" /* 570 */;
@@ -25,7 +25,7 @@ let obj = module_570.create(() => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChatInputContainerHeight(arg0) {
   let closure_0;
   let tmp2;
   _require = arg0;
@@ -53,7 +53,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = cResult[1];
   }
   return obj(tmp2);
-}) : ((arg0) => {
+}) : (function useChatInputContainerHeight(arg0) {
   let closure_0 = arg0;
   return obj((chatInputContainerHeight) => {
     chatInputContainerHeight = chatInputContainerHeight.chatInputContainerHeight;
@@ -70,7 +70,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSmallSuggestionBarHeight(arg0) {
   let tmp2;
   let closure_0 = arg0;
   obj = react;
@@ -92,7 +92,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = cResult[1];
   }
   return obj(tmp2);
-}) : ((arg0) => {
+}) : (function useSmallSuggestionBarHeight(arg0) {
   let closure_0 = arg0;
   return obj((smallSuggestionBarHeight) => {
     smallSuggestionBarHeight = smallSuggestionBarHeight.smallSuggestionBarHeight;
@@ -104,7 +104,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChatShowingAutoComplete(arg0) {
   let tmp2;
   let closure_0 = arg0;
   obj = react;
@@ -125,7 +125,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = cResult[1];
   }
   return obj(tmp2);
-}) : ((arg0) => {
+}) : (function useChatShowingAutoComplete(arg0) {
   let closure_0 = arg0;
   return obj((showingAutoComplete) => {
     showingAutoComplete = showingAutoComplete.showingAutoComplete;
@@ -137,7 +137,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChatIsAtBottom(arg0) {
   let tmp2;
   let closure_0 = arg0;
   obj = react;
@@ -158,7 +158,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = cResult[1];
   }
   return obj(tmp2);
-}) : ((arg0) => {
+}) : (function useChatIsAtBottom(arg0) {
   let closure_0 = arg0;
   return obj((isAtBottom) => {
     isAtBottom = isAtBottom.isAtBottom;
@@ -170,7 +170,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBestActiveChatInputContainerHeight() {
   let first;
   obj = react;
   const cResult = obj.c(1);
@@ -206,31 +206,33 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return obj(first);
-}) : (() => obj((chatInputContainerHeight) => {
-  let value;
-  obj = require("ChatInputUtils");
-  const highestActiveScreenIndex = obj.getHighestActiveScreenIndex();
-  if (null == highestActiveScreenIndex) {
-    const Storage2 = tmp(tmp2[0]).Storage;
-    let num4 = Storage2.get(closure_1_2, 0);
-    if (num4 == null) {
-      num4 = 0;
-    }
-    value = num4;
-  } else {
-    chatInputContainerHeight = chatInputContainerHeight.chatInputContainerHeight;
-    value = chatInputContainerHeight.get(highestActiveScreenIndex);
-    if (value == null) {
-      const Storage = tmp(tmp2[0]).Storage;
-      let num2 = Storage.get(closure_1_2, 0);
-      if (num2 == null) {
-        num2 = 0;
+}) : (function useBestActiveChatInputContainerHeight() {
+  return obj((chatInputContainerHeight) => {
+    let value;
+    obj = require("ChatInputUtils");
+    const highestActiveScreenIndex = obj.getHighestActiveScreenIndex();
+    if (null == highestActiveScreenIndex) {
+      const Storage2 = tmp(tmp2[0]).Storage;
+      let num4 = Storage2.get(closure_1_2, 0);
+      if (num4 == null) {
+        num4 = 0;
       }
-      value = num2;
+      value = num4;
+    } else {
+      chatInputContainerHeight = chatInputContainerHeight.chatInputContainerHeight;
+      value = chatInputContainerHeight.get(highestActiveScreenIndex);
+      if (value == null) {
+        const Storage = tmp(tmp2[0]).Storage;
+        let num2 = Storage.get(closure_1_2, 0);
+        if (num2 == null) {
+          num2 = 0;
+        }
+        value = num2;
+      }
     }
-  }
-  return value;
-}));
+    return value;
+  });
+});
 let result = size.fileFinishedImporting("modules/chat_input/native/useChatBottomManagerUIStore.tsx");
 
 export default obj;

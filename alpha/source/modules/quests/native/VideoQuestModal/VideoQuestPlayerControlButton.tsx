@@ -1,16 +1,16 @@
-// Module ID: 14862
-// Function ID: 14863
+// Module ID: 15124
+// Function ID: 15125
 // Name: VideoQuestPlayerControlButton
-// Dependencies: [109, 19, 21, 4896, 587, 683, 558, 576, 5780, 5916, 2]
+// Dependencies: [109, 19, 21, 5090, 587, 683, 558, 576, 5363, 6189, 2]
 
-// Module 14862 (VideoQuestPlayerControlButton)
+// Module 15124 (VideoQuestPlayerControlButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5780 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5363 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4896 */;
+import createStyles_mod from "createStyles" /* 5090 */;
 import module_683 from "module_683" /* 683 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ let alphaResult;
 let obj2;
 let obj3;
 let tmp;
-const Pressables = tmp(5916);
+const Pressables = tmp(6189);
 let closure_3 = ["style", "children"];
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -31,7 +31,7 @@ const importDefaultResultResult = module_683(nativeDefault.unsafe_rawColors.BLAC
 alphaResult = importDefaultResultResult.alpha(0.5);
 let closure_6 = createStyles(obj);
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VideoQuestPlayerControlButton(arg0) {
   let children;
   let style;
   let tmp4;
@@ -97,7 +97,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   cResult[6] = tmp5.disabled && tmp10.disabled;
   cResult[7] = items;
   tmp12 = items;
-}) : ((arg0) => {
+}) : (function VideoQuestPlayerControlButton(arg0) {
   let children;
   let style;
   ({ style, children } = arg0);

@@ -1,25 +1,25 @@
-// Module ID: 15411
-// Function ID: 15412
+// Module ID: 15673
+// Function ID: 15674
 // Name: CacheActionsSetting
-// Dependencies: [5, 32, 19, 5443, 21, 4860, 4580, 4574, 4818, 1126, 558, 576, 504, 2028, 15412, 6651, 15380, 15416, 6000, 15413, 11814, 5975, 15417, 4857, 6081, 6708, 11142, 2]
+// Dependencies: [5, 32, 19, 5753, 21, 5054, 4772, 4766, 5012, 1126, 558, 576, 504, 2040, 15674, 6828, 15642, 15678, 6184, 15675, 11882, 6158, 15679, 5051, 6267, 6885, 11262, 2]
 
-// Module 15411 (CacheActionsSetting)
+// Module 15673 (CacheActionsSetting)
 import react from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
-import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4580 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
-import CacheActionsDiskUsageSection from "CacheActionsDiskUsageSection" /* 15412 */;
-import DiskUsageManagerDefault from "DiskUsageManager" /* 15413 */;
-import FileWarningIcon from "FileWarningIcon" /* 15417 */;
+import UserSettings from "UserSettings" /* 2040 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
+import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4772 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+import CacheActionsDiskUsageSection from "CacheActionsDiskUsageSection" /* 15674 */;
+import DiskUsageManagerDefault from "DiskUsageManager" /* 15675 */;
+import FileWarningIcon from "FileWarningIcon" /* 15679 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5443 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5753 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11142 */;
+import SettingBuilders from "SettingBuilders" /* 11262 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,14 +30,14 @@ let metroImportAll;
 let metroImportDefault;
 let tmp;
 const intl6 = tmp(1126);
-const CircleInformationIcon = tmp(4818);
-const ActivityIndicator_ActivityIndicator = tmp(5975);
-const TableRow4 = tmp(6000);
-const TableRowGroup2 = tmp(6081);
-const BottomSheetTitleHeader2 = tmp(6651);
-const ActionSheet2 = tmp(6708);
-const FileIcon = tmp(11814);
-const FileUpIcon = tmp(15380);
+const CircleInformationIcon = tmp(5012);
+const ActivityIndicator_ActivityIndicator = tmp(6158);
+const TableRow4 = tmp(6184);
+const TableRowGroup2 = tmp(6267);
+const BottomSheetTitleHeader2 = tmp(6828);
+const ActionSheet2 = tmp(6885);
+const FileIcon = tmp(11882);
+const FileUpIcon = tmp(15642);
 function handleCacheActionPress(text) {
   let tmp6;
   const obj = DesignSystemsNotificationComponentsExperiment;
@@ -59,14 +59,14 @@ function handleCacheActionPress(text) {
     obj2.open(obj4);
     tmp6 = tmp4;
   }
-  const tmp6Result = tmp6(4860);
-  tmp6Result.hideActionSheet(CacheActionsActionSheet);
+  const tmp6Result = tmp6(5054);
+  tmp6Result.hideActionSheet(CacheActionsActionSheet_str);
 }
 const useState = react.useState;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-const CacheActionsActionSheet = "CacheActionsActionSheet";
+const CacheActionsActionSheet_str = "CacheActionsActionSheet";
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCacheActionsPredicate() {
   let connected;
   let tmp4;
   let tmp5;
@@ -86,10 +86,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  const DeveloperMode = tmp(2028).DeveloperMode;
+  const DeveloperMode = tmp(2040).DeveloperMode;
   const tmp8 = DeveloperMode.useSetting() && stateFromStores;
   return tmp8;
-}) : (() => {
+}) : (function useCacheActionsPredicate() {
   let connected;
   const items = [GatewayConnectionStore];
   const obj = get_initialized;
@@ -99,7 +99,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return tmp2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function CacheActionsActionSheet() {
   let closure_0;
   let diskUsageState;
   let handleCalculateSize;
@@ -131,7 +131,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let obj3 = { title: intl.string(tmp(1126).t.ZVZVwR) };
-    const BottomSheetTitleHeader = tmp(6651).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(6828).BottomSheetTitleHeader;
     intl = tmp(1126).intl;
     const tmp11 = closure_7(BottomSheetTitleHeader, obj3);
     const intl2 = tmp(1126).intl;
@@ -144,7 +144,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     [tmp8, tmp9] = cResult;
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp16 = closure_7(tmp(15380).FileUpIcon, {});
+    const tmp16 = closure_7(tmp(15642).FileUpIcon, {});
     const intl3 = tmp(1126).intl;
     const stringResult1 = intl3.string(tmp(1126).t["/GUaXh"]);
     cResult[2] = tmp16;
@@ -206,17 +206,17 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     });
-    const fn = function() {
+    function t4() {
       return closure_0(...arguments);
-    };
-    cResult[4] = fn;
-    tmp18 = fn;
+    }
+    cResult[4] = t4;
+    tmp18 = t4;
   } else {
     tmp18 = cResult[4];
   }
   if (cResult[5] !== first) {
     let obj4 = { icon: tmp13, label: tmp14, disabled: first, onPress: tmp18 };
-    const tmp22 = closure_7(tmp(6000).TableRow, obj4);
+    const tmp22 = closure_7(tmp(6184).TableRow, obj4);
     cResult[5] = first;
     cResult[6] = tmp22;
     tmp20 = tmp22;
@@ -235,7 +235,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       const _Symbol = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp30 = closure_7(tmp(15417).FileWarningIcon, { color: "text-feedback-critical" });
+        const tmp30 = closure_7(tmp(15679).FileWarningIcon, { color: "text-feedback-critical" });
         const intl5 = tmp(1126).intl;
         const stringResult2 = intl5.string(tmp(1126).t.tgwiMO);
         cResult[11] = tmp30;
@@ -303,17 +303,17 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
           }
         });
-        const fn2 = function() {
+        function t9() {
           return closure_0(...arguments);
-        };
-        cResult[13] = fn2;
-        tmp32 = fn2;
+        }
+        cResult[13] = t9;
+        tmp32 = t9;
       } else {
         tmp32 = cResult[13];
       }
       if (cResult[14] !== first) {
         let obj5 = { variant: "danger", icon: tmp27, label: tmp28, disabled: first, onPress: tmp32 };
-        const tmp36 = closure_7(tmp(6000).TableRow, obj5);
+        const tmp36 = closure_7(tmp(6184).TableRow, obj5);
         cResult[14] = first;
         cResult[15] = tmp36;
         tmp34 = tmp36;
@@ -348,7 +348,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
           let obj7 = { header: tmp8, dismissAccessibilityLabel: tmp9, children: items };
           items = [tmp37, tmp40];
-          const tmp47 = closure_8(tmp(6708).ActionSheet, obj7);
+          const tmp47 = closure_8(tmp(6885).ActionSheet, obj7);
           cResult[22] = tmp37;
           cResult[23] = tmp40;
           cResult[24] = tmp47;
@@ -357,7 +357,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       const obj8 = { hasIcons: true, children: items1 };
       items1 = [tmp20, tmp23, tmp34];
-      const tmp39 = closure_8(tmp(6081).TableRowGroup, obj8);
+      const tmp39 = closure_8(tmp(6267).TableRowGroup, obj8);
       cResult[16] = tmp34;
       cResult[17] = tmp20;
       cResult[18] = tmp23;
@@ -367,14 +367,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   let tmp25Result2 = null != DiskUsageManagerDefault.calculateSize;
   if (tmp25Result2) {
-    const obj9 = { icon: closure_7(tmp(11814).FileIcon, {}), label: string(isCalculating ? t.Ynmbie : t.iAFGRu), trailing: tmp25Result, disabled: first, accessibilityState: obj10, onPress: handleCalculateSize };
-    const TableRow = tmp(6000).TableRow;
+    const obj9 = { icon: closure_7(tmp(11882).FileIcon, {}), label: string(isCalculating ? t.Ynmbie : t.iAFGRu), trailing: tmp25Result, disabled: first, accessibilityState: obj10, onPress: handleCalculateSize };
+    const TableRow = tmp(6184).TableRow;
     const intl4 = tmp(1126).intl;
     string = intl4.string;
     t = tmp(1126).t;
     tmp25Result = null;
     if (isCalculating) {
-      tmp25Result = tmp25(tmp(5975).ActivityIndicator, { size: "small", accessible: false });
+      tmp25Result = tmp25(tmp(6158).ActivityIndicator, { size: "small", accessible: false });
     }
     obj10 = { busy: isCalculating, disabled: first };
     tmp25Result2 = tmp25(TableRow, obj9);
@@ -384,7 +384,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[9] = isCalculating;
   cResult[10] = tmp25Result2;
   tmp23 = tmp25Result2;
-}) : (() => {
+}) : (function CacheActionsActionSheet() {
   let BottomSheetTitleHeader;
   let diskUsageState;
   let intl;
@@ -577,7 +577,7 @@ let obj = {
   onPress: function handleCacheActionsPress() {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { default: closure_11 };
-    obj.openLazy(Promise.resolve(obj2), CacheActionsActionSheet);
+    obj.openLazy(Promise.resolve(obj2), CacheActionsActionSheet_str);
   },
   usePredicate: tmp3,
   withArrow: true

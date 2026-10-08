@@ -1,14 +1,14 @@
-// Module ID: 4733
-// Function ID: 4734
+// Module ID: 4927
+// Function ID: 4928
 // Name: ColorUtils
-// Dependencies: [32, 683, 1126, 3, 4734, 2]
+// Dependencies: [32, 683, 1126, 3, 4928, 2]
 // Exports: findColorByHsv, getAccessibleForegroundColor, getColorLightnessAdjusted, getComplimentaryPaletteForColor, getSaturatedColorHex, hexOpacityToRgba, hexToColorName, hexToRgb, hexToRgbArray, hexToRgba, hexToRgbaString, hexWithOpacity, hslToString, interpolateColor, mixColors, rgbToHex, rgbToHsl, rgbaToHex
 
-// Module 4733 (ColorUtils)
+// Module 4927 (ColorUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef683 from "module_683" /* 683 */;
 import intl2 from "intl" /* 1126 */;
-import utils_ColorDefault from "utils/Color" /* 4734 */;
+import utils_ColorDefault from "utils/Color" /* 4928 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -70,9 +70,9 @@ function hslToHex(sum2, sum, sum1) {
   const str5 = str3.toString(16);
   return "#" + padStartResult + padStartResult1 + str5.padStart(2, "0");
 }
-function hex2rgb2hsv(combined) {
+function hex2rgb2hsv(first4) {
   obj = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i;
-  const match = obj.exec(combined);
+  const match = obj.exec(first4);
   if (null == match) {
     return null;
   } else {
@@ -317,12 +317,12 @@ function hexWithOpacity(color, overlayOpacity) {
 hexWithOpacity.__closure = {};
 hexWithOpacity.__workletHash = 1677228068105;
 hexWithOpacity.__initData = { code: "function hexWithOpacity_ColorUtilsTsx1(color,value){if(color.length===7){const alpha=value*255|0;return color+alpha.toString(16).padStart(2,'0').toUpperCase();}const hex=color.charAt(0)==='#'?color.slice(1):color;let r;let g;let b;let a;switch(hex.length){case 3:r=hex.charAt(0);g=hex.charAt(1);b=hex.charAt(2);r+=r;g+=g;b+=b;a=(value*255|0).toString(16).padStart(2,'0').toUpperCase();return'#'+r+g+b+a;case 4:r=hex.charAt(0);g=hex.charAt(1);b=hex.charAt(2);a=hex.charAt(3);r+=r;g+=g;b+=b;a+=a;const alpha4=parseInt(a,16)/255*value;const alpha4Hex=(alpha4*255|0).toString(16).padStart(2,'0').toUpperCase();return'#'+r+g+b+alpha4Hex;case 6:const alpha6=(value*255|0).toString(16).padStart(2,'0').toUpperCase();return'#'+hex+alpha6;case 8:const baseColor='#'+hex.slice(0,6);const existingAlpha=parseInt(hex.slice(6),16)/255;const alpha8=(existingAlpha*value*255|0).toString(16).padStart(2,'0').toUpperCase();return baseColor+alpha8;default:throw new Error('Invalid hex color format');}}" };
-function hexToRgbaString(tmpResult13, opacity) {
+function hexToRgbaString(colorHex, opacity) {
   let tmp3;
   let tmp4;
   let tmp5;
   let tmp = opacity;
-  obj = _modDef683(tmpResult13);
+  obj = _modDef683(colorHex);
   const tmp2 = _slicedToArray(obj.rgba(), 4);
   [tmp3, tmp4, tmp5] = tmp2;
   if (opacity == null) {

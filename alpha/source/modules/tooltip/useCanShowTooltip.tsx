@@ -1,19 +1,19 @@
-// Module ID: 9629
-// Function ID: 9630
+// Module ID: 10825
+// Function ID: 10826
 // Name: useCanShowTooltip
-// Dependencies: [19, 9630, 558, 576, 504, 9631, 2]
+// Dependencies: [19, 10826, 558, 576, 504, 9694, 2]
 
-// Module 9629 (useCanShowTooltip)
-import TooltipActionCreatorsDefault from "TooltipActionCreators" /* 9631 */;
+// Module 10825 (useCanShowTooltip)
+import TooltipActionCreatorsDefault from "TooltipActionCreators" /* 9694 */;
 import react from "react" /* 19 */;
-import TooltipStore from "TooltipStore" /* 9630 */;
+import TooltipStore from "TooltipStore" /* 10826 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanShowTooltip(arg0, arg1, arg2) {
   let closure_0;
   let closure_2;
   _require = arg0;
@@ -66,7 +66,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
   cResult[1] = undefined === arg2 || arg2;
   cResult[2] = arg0;
   cResult[3] = fn;
-}) : ((arg0) => {
+}) : (function useCanShowTooltip(arg0) {
   let closure_0;
   _require = arg0;
   let flag = arg1;
